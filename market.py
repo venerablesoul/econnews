@@ -30,6 +30,12 @@ INSTRUMENTS = [
     {"name": "Индекс Мосбиржи", "short": "IMOEX", "src": "moex", "sym": "IMOEX", "digits": 0},
     {"name": "USD/RUB (ЦБ)", "short": "USD/RUB", "src": "cbr", "sym": "R01235", "digits": 2},
     {"name": "CNY/RUB (ЦБ)", "short": "CNY/RUB", "src": "cbr", "sym": "R01375", "digits": 2},
+    # только на странице «Рынок онлайн» (chart: False — не попадают на картинку)
+    {"name": "Газ (Henry Hub)", "short": "Газ", "src": "yahoo", "sym": "NG=F", "digits": 3, "prefix": "$", "chart": False},
+    {"name": "Медь", "short": "Медь", "src": "yahoo", "sym": "HG=F", "digits": 3, "prefix": "$", "chart": False},
+    {"name": "Доходность США 3 мес", "short": "UST3M", "src": "yahoo", "sym": "^IRX", "digits": 2, "suffix": "%", "chart": False},
+    {"name": "Доходность США 5 лет", "short": "UST5", "src": "yahoo", "sym": "^FVX", "digits": 2, "suffix": "%", "chart": False},
+    {"name": "Доходность США 30 лет", "short": "UST30", "src": "yahoo", "sym": "^TYX", "digits": 2, "suffix": "%", "chart": False},
 ]
 
 # адреса вынесены, чтобы их можно было подменить в тестах

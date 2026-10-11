@@ -30,6 +30,7 @@ def render_market_png(quotes, now=None) -> bytes:
     from market import fmt_change, fmt_price
 
     now = (now or datetime.now(timezone.utc)).astimezone(MSK)
+    quotes = [q for q in quotes if q.get("chart", True)]
     n = len(quotes)
     cols = 2
     rows = (n + cols - 1) // cols
