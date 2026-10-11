@@ -1,0 +1,54 @@
+name: Economic news
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"   # каждые 30 минут (GitHub может запускать с опозданием на 5–15 мин)
+  workflow_dispatch:          # кнопка «Run workflow» для ручного запуска
+
+permissions:
+  contents: write             # чтобы сохранять state.json и данные страницы
+
+concurrency:
+  group: econ-news
+  cancel-in-progress: false
+
+jobs:
+  news:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: .github/workflows/news.yml
+
+      - name: Install chart library
+        run: pip install matplotlib
+
+      - name: Collect and send news
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          MIN_LEVEL: medium       # high = только самое важное
+          DIGEST_HOUR: "21"       # дневная сводка в 21:00 МСК; -1 = выключить
+          CHART_HOURS: "9,21"     # когда присылать картинку с графиками (часы МСК); пусто = никогда
+          MARKET_LINE: "yes"      # строка с котировками в шапке сообщений
+          QUIET_HOURS: "0-8"      # ночью без звука (кроме важных)
+          TRANSLATE: ru           # перевод заголовков на русский; off = не переводить
+          SHOW_ORIGINAL: "no"     # yes = под переводом показывать оригинал
+        run: |
+          # адрес страницы «Рынок онлайн» на GitHub Pages
+          export PAGES_URL="https://${GITHUB_REPOSITORY_OWNER,,}.github.io/${GITHUB_REPOSITORY#*/}/"
+          python news_bot.py
+
+      - name: Save state
+        if: always()
+        run: |
+          git config user.name "news-bot"
+          git config user.email "news-bot@users.noreply.github.com"
+          git add state.json 2>/dev/null || true
+          git add docs/data.json 2>/dev/null || true
+          git diff --cached --quiet || (git commit -m "news update" && git pull --rebase && git push)
