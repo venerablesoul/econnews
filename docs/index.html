@@ -60,6 +60,7 @@
   .news .orig{color:var(--faint);font-size:12.5px;margin-top:2px}
   .news .meta{color:var(--muted);font-size:12.5px;margin-top:4px;display:flex;gap:6px;flex-wrap:wrap}
   .day{color:var(--faint);font-size:12px;text-transform:uppercase;letter-spacing:.08em;margin:14px 2px 8px}
+  .note{color:var(--faint);font-size:12px;margin:0;padding:8px 14px 12px}
   .empty{color:var(--muted);text-align:center;padding:30px 10px}
   footer{color:var(--faint);font-size:12px;text-align:center;margin-top:22px}
 </style>
@@ -85,7 +86,9 @@
 
   <section class="panel on" id="p-charts">
     <div class="box"><div id="w-overview" style="height:440px"></div></div>
-    <div class="box"><h2>Все рынки</h2><div id="w-market" style="height:560px"></div></div>
+    <div class="box"><h2>Все рынки</h2><div id="w-market" style="height:640px"></div>
+      <p class="note">Облигации показаны ценой: когда цена растёт, доходность падает. Сами доходности США — в плитках вверху.</p></div>
+    <div class="box"><h2>Криптовалюты · тепловая карта</h2><div id="w-cryptomap" style="height:480px"></div></div>
   </section>
 
   <section class="panel" id="p-news">
@@ -128,6 +131,11 @@
     ['Золото','TVC:GOLD'], ['EUR/USD','FX:EURUSD'], ['USD/RUB','FX_IDC:USDRUB'],
     ['Индекс доллара','TVC:DXY'], ['Биткоин','BITSTAMP:BTCUSD']
   ];
+  var CRYPTO = [
+    ['BTC','Биткоин'], ['ETH','Ethereum'], ['SOL','Solana'], ['BNB','BNB'], ['XRP','XRP'], ['TON','Toncoin'],
+    ['DOGE','Dogecoin'], ['ADA','Cardano'], ['TRX','TRON'], ['AVAX','Avalanche'], ['LINK','Chainlink'],
+    ['DOT','Polkadot'], ['LTC','Litecoin'], ['SUI','Sui']
+  ];
   tv('tape','ticker-tape',{symbols:SYM.map(function(s){return {description:s[0],proName:s[1]}}), showSymbolLogo:true, displayMode:'adaptive'});
   function chartsTab(){
     tv('w-overview','symbol-overview',{
@@ -144,17 +152,23 @@
       belowLineFillColorFalling:'rgba(239,83,80,0.12)', gridLineColor:'rgba(35,43,55,0)', scaleFontColor:'#8b95a7',
       tabs:[
         {title:'Индексы', symbols:[{s:'FOREXCOM:SPXUSD',d:'S&P 500'},{s:'FOREXCOM:NSXUSD',d:'Nasdaq 100'},{s:'FOREXCOM:DJI',d:'Dow Jones'},{s:'INDEX:DEU40',d:'DAX'},{s:'INDEX:NKY',d:'Nikkei 225'},{s:'TVC:HSI',d:'Hang Seng'}]},
-        {title:'Сырьё', symbols:[{s:'TVC:UKOIL',d:'Нефть Brent'},{s:'TVC:USOIL',d:'Нефть WTI'},{s:'TVC:GOLD',d:'Золото'},{s:'TVC:SILVER',d:'Серебро'},{s:'NYMEX:NG1!',d:'Природный газ'},{s:'COMEX:HG1!',d:'Медь'}]},
+        {title:'Сырьё', symbols:[{s:'TVC:UKOIL',d:'Нефть Brent'},{s:'TVC:USOIL',d:'Нефть WTI'},{s:'TVC:GOLD',d:'Золото'},{s:'TVC:SILVER',d:'Серебро'},{s:'OANDA:NATGASUSD',d:'Природный газ'},{s:'OANDA:XCUUSD',d:'Медь'},{s:'OANDA:XPTUSD',d:'Платина'},{s:'OANDA:WHEATUSD',d:'Пшеница'}]},
         {title:'Валюты', symbols:[{s:'FX:EURUSD',d:'EUR/USD'},{s:'FX:USDJPY',d:'USD/JPY'},{s:'FX:GBPUSD',d:'GBP/USD'},{s:'FX_IDC:USDCNY',d:'USD/CNY'},{s:'FX_IDC:USDRUB',d:'USD/RUB'},{s:'TVC:DXY',d:'Индекс доллара'}]},
-        {title:'Облигации', symbols:[{s:'TVC:US02Y',d:'США 2 года'},{s:'TVC:US10Y',d:'США 10 лет'},{s:'TVC:DE10Y',d:'Германия 10 лет'},{s:'TVC:JP10Y',d:'Япония 10 лет'}]},
-        {title:'Крипто', symbols:[{s:'BITSTAMP:BTCUSD',d:'Биткоин'},{s:'BITSTAMP:ETHUSD',d:'Ethereum'}]}
+        {title:'Облигации', symbols:[{s:'OANDA:USB02YUSD',d:'США 2 года (цена)'},{s:'OANDA:USB10YUSD',d:'США 10 лет (цена)'},{s:'OANDA:USB30YUSD',d:'США 30 лет (цена)'},{s:'OANDA:DE10YBEUR',d:'Германия 10 лет (цена)'},{s:'OANDA:UK10YBGBP',d:'Великобритания 10 лет (цена)'},{s:'NASDAQ:TLT',d:'ETF длинных облигаций США'}]},
+        {title:'Крипто', symbols:CRYPTO.map(function(c){return {s:'BINANCE:'+c[0]+'USDT', d:c[1]}})}
       ]
     });
+  }
+  function cryptoMap(){
+    tv('w-cryptomap','crypto-coins-heatmap',{dataSource:'Crypto', blockSize:'market_cap_calc', blockColor:'24h_close_change|5',
+      locale:'ru', symbolUrl:'', hasTopBar:false, isDataSetEnabled:false, isZoomEnabled:true, hasSymbolTooltip:true,
+      isMonoSize:false, width:'100%', height:'100%'});
   }
   function calTab(){
     tv('w-cal','events',{width:'100%', height:'100%', importanceFilter:'0,1', countryFilter:'us,eu,cn,ru,gb,jp,de'});
   }
   chartsTab();
+  cryptoMap();
 
   // ---------- вкладки ----------
   var tabs = document.querySelectorAll('.tabs button');
