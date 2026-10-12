@@ -252,7 +252,12 @@
   "4c01ee3944f5687b": "2026-10-12T21:04:05.925954+00:00",
   "f7cb9804f098cabe": "2026-10-12T21:04:05.925954+00:00",
   "e4527e3ab550419f": "2026-10-12T21:04:05.925954+00:00",
-  "214ecf7c407dd69a": "2026-10-12T21:14:05.897243+00:00"
+  "214ecf7c407dd69a": "2026-10-12T21:14:05.897243+00:00",
+  "792442693243bf5d": "2026-10-12T21:24:05.882177+00:00",
+  "d82838bd055dadfb": "2026-10-12T21:24:05.882177+00:00",
+  "b323df3d586bee8a": "2026-10-12T21:24:05.882177+00:00",
+  "d0af0b62755b283c": "2026-10-12T21:24:05.882177+00:00",
+  "82f8b443362cee4d": "2026-10-12T21:24:05.882177+00:00"
  },
  "recent": [
   {
@@ -2445,6 +2450,25 @@
    "tags": [
     "облигации"
    ]
+  },
+  {
+   "title": "Coming Soon: Global Financial Stability Report, October 2026",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOb201ZDV4ZnJ5Nk00VTVFRnk2NlN3cjk1SnphQnh4aWhkb21HbDRNWTgyZW4wd2NmM1JjZTA3cDlGcmlUd1JBRHUwbG5aSE85NUNrcUJNMGZGRWdhdGhpQTRQVDhiOS0yam1LRlVpeUI4SmxnTjgtdE1rTmZVTzFpNGpiNHEyeFZQQW5vd1hpalplRDFTS3FCVW9FNEtHVkdPQVFzMEdCb0o?oc=5",
+   "sources": [
+    "МВФ"
+   ],
+   "score": 4,
+   "ts": "2026-10-12T21:24:05.882177+00:00",
+   "title_ru": "Скоро: Отчет о глобальной финансовой стабильности, октябрь 2026 г."
+  },
+  {
+   "title": "Nvidia and AMD shares fall as new AI announcements fail to re-energize investors",
+   "link": "https://www.marketwatch.com/story/nvidia-and-amd-shares-fall-as-new-ai-announcements-fail-to-re-energize-investors-4a0dd766?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 2,
+   "ts": "2026-10-12T21:24:05.882177+00:00"
   }
  ],
  "last_digest": "2026-10-12",
@@ -2470,7 +2494,7 @@
   "2026-10-12-21"
  ],
  "calendar": {
-  "fetched": "2026-10-12T15:17:20.333682+00:00",
+  "fetched": "2026-10-12T21:24:05.882177+00:00",
   "events": [
    {
     "title": "Bank Holiday",
@@ -2597,7 +2621,7 @@
     "country": "CNY",
     "ts": "2026-10-13T08:03:00+00:00",
     "impact": "Low",
-    "forecast": "7.5%",
+    "forecast": "7.4%",
     "previous": "7.5%"
    },
    {
@@ -2605,7 +2629,7 @@
     "country": "CNY",
     "ts": "2026-10-13T08:03:00+00:00",
     "impact": "Low",
-    "forecast": "300B",
+    "forecast": "1025B",
     "previous": "60B"
    },
    {
@@ -2613,7 +2637,7 @@
     "country": "USD",
     "ts": "2026-10-13T10:00:00+00:00",
     "impact": "Low",
-    "forecast": "98.0",
+    "forecast": "98.1",
     "previous": "98.7"
    },
    {
@@ -2647,14 +2671,6 @@
     "impact": "Low",
     "forecast": "",
     "previous": "0.5%"
-   },
-   {
-    "title": "MPC Member Dhingra Speaks",
-    "country": "GBP",
-    "ts": "2026-10-13T16:00:00+00:00",
-    "impact": "Low",
-    "forecast": "",
-    "previous": ""
    },
    {
     "title": "FOMC Member Barkin Speaks",
