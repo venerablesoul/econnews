@@ -36,6 +36,7 @@
   python news_bot.py --test      отправить тестовое сообщение в Telegram
   python news_bot.py --loop 5    работать постоянно, проверка каждые 5 минут
   python news_bot.py --loop 5 --git-sync   то же + отправлять данные на GitHub (для терминала)
+  LOOP_HOURS=5.5 python news_bot.py --loop 10 --git-sync   цикл, который сам завершится через 5,5 ч
 
 Переменные можно положить в файл .env рядом с ботом (см. .env.example).
 """
@@ -59,7 +60,8 @@ from email.utils import parsedate_to_datetime
 from sources import SOURCES
 
 MSK = timezone(timedelta(hours=3))
-UA = "Mozilla/5.0 (compatible; EconNewsBot/1.0; +https://github.com)"
+# браузерный User-Agent: часть официальных сайтов (bls.gov, imf.org) отвечает 403 «ботам»
+UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
 MAX_AGE_HOURS = 12          # новости старше не присылаем
 MAX_PER_MESSAGE_BATCH = 25  # не больше стольких новостей за один запуск
 KEEP_DAYS = 3               # сколько хранить историю в state.json
@@ -273,6 +275,13 @@ def load_source(src):
 # Отбор, оценка, дедупликация
 # ----------------------------------------------------------------------------
 GN_SUFFIX = re.compile(r"\s+[-–—]\s+(Reuters|Bloomberg(?:\.com)?|Bloomberg News|BNN Bloomberg)\s*$", re.I)
+# у любой новости из Google News в конце « - Название издания»
+GN_ANY_SUFFIX = re.compile(r"\s+[-–—]\s+[^-–—]{2,60}$")
+
+# Не экономика, хотя в заголовке попалось «market», «growth» и т. п.
+# («Боевики убили 20 человек по дороге на рынок», «у Папы обнаружили growth на лёгком»).
+NOISE = re.compile(r"(?<![\w])(kill(?:s|ed|ing)?|gunm[ae]n|shooting|murder\w*|stabb\w*|surgery|"
+                   r"dies|died|funeral|убил\w*|убит\w*|погиб\w*|стрельб\w*|операци[яюи] на)(?![\w])", re.I)
 STOP = set("the a an of to in on for and or is are as at by with from after over its it be has have will says said new".split())
 
 
@@ -328,11 +337,17 @@ def make_lead(title: str, summary: str, link: str) -> str:
 
 def evaluate(src, it):
     title = GN_SUFFIX.sub("", it["title"])
+    if "news.google.com" in (it["link"] or ""):
+        title = GN_ANY_SUFFIX.sub("", title)
+    if len(title.split()) < 3:
+        return None  # «Markets», «Economy» — это заголовки рубрик, а не новости
     if src.get("categories") and it["categories"]:
         if not any(c in src["categories"] for c in it["categories"]):
             return None
     kw, title_hit = score_text(title, it["summary"])
     kind = src["kind"]
+    if kind != "official" and kw < 3 and NOISE.search(title):
+        return None  # происшествие со случайным «экономическим» словом
     if kind == "general" and not title_hit:
         return None
     if kind == "econ" and kw == 0:
@@ -1021,9 +1036,11 @@ def git_sync(stage, repo):
     print("  ! git push не удался:", (r.stderr or r.stdout).strip()[:300])
 
 
-def loop(minutes, sync):
-    """Бесконечный цикл: запуск каждые `minutes` минут. Ошибка одного запуска не останавливает бота."""
+def loop(minutes, sync, max_hours=0.0):
+    """Цикл: запуск каждые `minutes` минут. Ошибка одного запуска не останавливает бота.
+    max_hours > 0 — остановиться через столько часов (для GitHub Actions, где задача живёт до 6 ч)."""
     repo = os.path.dirname(os.path.abspath(__file__))
+    deadline = time.time() + max_hours * 3600 if max_hours > 0 else None
     print(f"Бот запущен в постоянном режиме: проверка каждые {minutes:g} мин"
           + (", синхронизация с GitHub включена" if sync else "") + ". Остановить: Ctrl+C.")
     while True:
@@ -1039,7 +1056,11 @@ def loop(minutes, sync):
             return
         except Exception as e:
             print(f"  ! запуск завершился ошибкой: {type(e).__name__}: {e}")
-        time.sleep(max(30.0, minutes * 60 - (time.time() - started)))
+        pause = max(30.0, minutes * 60 - (time.time() - started))
+        if deadline and time.time() + pause > deadline:
+            print("Время работы истекло, выхожу.")
+            return
+        time.sleep(pause)
 
 
 def main():
@@ -1056,7 +1077,8 @@ def main():
         minutes = float(args[i + 1]) if i + 1 < len(args) and args[i + 1].replace(".", "", 1).isdigit() \
             else float(os.environ.get("INTERVAL_MINUTES", "5"))
         sync = "--git-sync" in args or os.environ.get("GIT_SYNC", "").lower() in ("1", "yes", "true")
-        loop(minutes, sync)
+        max_hours = float(os.environ.get("LOOP_HOURS", "0") or 0)
+        loop(minutes, sync, max_hours)
         return
     run(dry="--dry-run" in args)
 

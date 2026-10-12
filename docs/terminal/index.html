@@ -88,6 +88,8 @@ tr.row:hover td{background:var(--hl)}
 tr.row.sel td{background:#221700}
 td.nm{overflow:hidden;text-overflow:ellipsis;max-width:150px}
 td.nm small{color:var(--faint);margin-left:5px}
+td.nm small.u{color:#7a6a4a}
+.sec small b{font-weight:400;color:var(--muted);margin-right:8px}
 td.sp{width:64px;padding:0 4px}
 td.sp svg{display:block}
 .flash-up{animation:fu .9s} .flash-down{animation:fd .9s}
@@ -96,7 +98,11 @@ td.sp svg{display:block}
 .note{color:var(--faint);padding:6px 8px;font-size:11px}
 
 /* график */
-#tv{flex:1;min-height:0}
+#tv{flex:1;min-height:0;position:relative}
+#tvc,#ownc{position:absolute;inset:0}
+#ownc canvas{display:block;width:100%;height:100%}
+.chart-msg{position:absolute;left:8px;bottom:6px;color:var(--faint);font-size:11px;pointer-events:none}
+.ph .mode{background:#000;color:var(--amber);border:0;padding:0 6px;font:inherit;font-size:11px;cursor:pointer;margin-left:6px}
 .chart-tabs{display:flex;gap:1px;flex:none;background:var(--line);overflow-x:auto;scrollbar-width:none}
 .chart-tabs button{background:#0b0b0b;padding:3px 9px;color:var(--muted);white-space:nowrap}
 .chart-tabs button.on{color:#000;background:var(--amber)}
@@ -208,7 +214,7 @@ nav.tabs{display:none}
   </section>
 
   <section class="panel" id="p-chart">
-    <div class="ph"><span class="code">GP</span><span id="chart-title">ГРАФИК</span><span class="sub">TradingView · можно сменить тикер в окне графика</span></div>
+    <div class="ph"><span class="code">GP</span><span id="chart-title">ГРАФИК</span><span class="sub" id="chart-sub">TradingView</span><button class="mode" id="chart-mode" title="Переключить источник графика">⇄</button></div>
     <div class="chart-tabs" id="chart-tabs"></div>
     <div id="tv"></div>
   </section>
@@ -310,6 +316,15 @@ var GROUPS = [
   {code:'GLCO', title:'СЫРЬЁ', ids:['Brent','WTI','Газ','Золото','Серебро','Платина','Медь','Пшеница']},
   {code:'RATES', title:'ДОХОДНОСТИ США', ids:['UST3M','UST5','UST10','UST30']}
 ];
+// единицы измерения цены
+var UNIT = {
+  'DXY':'пт','VIX':'пт','EUR/USD':'$ за €','USDJPY':'¥ за $','GBPUSD':'$ за £','USDCNY':'юань за $','USDCHF':'франк за $',
+  'USD/RUB':'₽ за $','CNY/RUB':'₽ за юань',
+  'Brent':'$/барр','WTI':'$/барр','Газ':'$/MMBtu','Золото':'$/унц','Серебро':'$/унц',
+  'Платина':'$/унц','Медь':'$/фунт','Пшеница':'¢/бушель'};
+// подписи над колонками для каждой группы
+var GROUP_UNIT = {WEI:'цена в пунктах · изм. за день', US:'цена в $ за акцию · изм. за день', FX:'курс · изм. за день',
+  GLCO:'цена · изм. за день', RATES:'% годовых · изм. в б.п.'};
 var REGION = {'S&P':'США','Nasdaq':'США','DJI':'США','RTY':'США','VIX':'волатильность','SX5E':'Европа','DAX':'Германия',
   'UKX':'Британия','CAC':'Франция','NKY':'Япония','HSI':'Гонконг','SHCOMP':'Китай','SENSEX':'Индия','IMOEX':'Россия'};
 
@@ -434,6 +449,7 @@ function rowFor(q, isYield){
   if (q.id === curChart) tr.classList.add('sel');
   var c = cls(q.change);
   var nm = el('td', 'nm', q.name.replace(/^Доходность США /, 'UST ')); if (REGION[q.id]) nm.appendChild(el('small', null, REGION[q.id]));
+  var u = UNIT[q.id] || (STOCKS.some(function(x){ return x[0] === q.id }) ? '$' : ''); if (u) nm.appendChild(el('small', 'u', u));
   tr.appendChild(nm);
   var sp = el('td', 'sp'); sp.appendChild(spark(q.spark, c)); tr.appendChild(sp);
   var last = el('td', 'num', fmt(q.value, q.digits) + (isYield ? '%' : '')); last.dataset.k = 'last'; tr.appendChild(last);
@@ -445,7 +461,7 @@ function rowFor(q, isYield){
 function renderMarket(){
   var box = $('mkt'); var scroll = box.scrollTop; box.innerHTML = '';
   GROUPS.forEach(function(g){
-    var sec = el('div', 'sec'); sec.id = 'g-' + g.code; sec.appendChild(el('span', null, g.title)); sec.appendChild(el('small', null, g.code)); box.appendChild(sec);
+    var sec = el('div', 'sec'); sec.id = 'g-' + g.code; sec.appendChild(el('span', null, g.title)); var sm = el('small'); if (GROUP_UNIT[g.code]) sm.appendChild(el('b', null, GROUP_UNIT[g.code])); sm.appendChild(document.createTextNode(g.code)); sec.appendChild(sm); box.appendChild(sec);
     var t = el('table'), n = 0;
     g.ids.forEach(function(id){ if (Q[id]) { t.appendChild(rowFor(Q[id], g.code === 'RATES')); n++ } });
     if (g.code === 'RATES' && Q.UST10 && Q.UST3M) {
@@ -478,6 +494,7 @@ $('mkt').addEventListener('click', function(e){ var tr = e.target.closest('tr.ro
 function loadData(){
   fetch('../data.json?t=' + Date.now(), {cache:'no-store'}).then(function(r){ return r.json() }).then(function(d){
     data = d; ingestMarket(d.market); renderMarket(); renderNews(); renderEco();
+    if ($('ownc') && !($('tvc') && $('tvc').firstChild)) ownSeries(curChart, function(p){ drawOwn(p, ($('chart-title').textContent || '').replace('ГРАФИК · ', '')) });
     $('news-upd').textContent = d.updated ? 'обновлено ' + hm(d.updated) + ' МСК' : '';
   }).catch(function(){ $('mkt').innerHTML = ''; $('mkt').appendChild(el('div', 'note', 'Не удалось загрузить данные бота (docs/data.json).')) });
 }
@@ -671,18 +688,63 @@ function loadGlobal(){
 $('crypto').addEventListener('click', function(e){ var tr = e.target.closest('tr.row'); if (tr) openChart('BINANCE:' + tr.dataset.sym + 'USDT', tr.dataset.sym + '/USDT') });
 
 /* ======================= график ======================= */
-var tvReady = false, tvQueue = null;
+// Два источника: TradingView (полный график) и встроенный (по данным бота / Binance).
+// Встроенный рисуется сразу; TradingView кладётся поверх, только если реально загрузился.
+var tvReady = false, tvQueue = null, tvFailed = false, chartSeq = 0, ownTimer = null;
+function chartMode(){ return store('chart_mode') || 'tv' }
 function loadTV(cb){
   if (window.TradingView) return cb();
+  if (tvFailed) return;
   tvQueue = cb;
   if (document.getElementById('tvjs')) return;
   var s = document.createElement('script'); s.id = 'tvjs'; s.src = 'https://s3.tradingview.com/tv.js';
   s.onload = function(){ tvReady = true; if (tvQueue) tvQueue() };
-  s.onerror = function(){ $('tv').innerHTML = ''; $('tv').appendChild(el('div', 'note', 'Не удалось загрузить графики TradingView.')) };
+  s.onerror = function(){ tvFailed = true; if (chartMode() !== 'own') chartNote('TradingView недоступен — показан встроенный график. ⇄ — переключить') };
   document.head.appendChild(s);
 }
+function chartNote(t){ var n = $('chart-msg'); if (n) n.textContent = t || '' }
+function drawOwn(points, label){
+  var box = $('ownc'); if (!box) return;
+  box.innerHTML = '';
+  var cv = document.createElement('canvas'); box.appendChild(cv);
+  var w = box.clientWidth, h = box.clientHeight; if (!w || !h) return;
+  var dpr = window.devicePixelRatio || 1; cv.width = w * dpr; cv.height = h * dpr;
+  var g = cv.getContext('2d'); g.scale(dpr, dpr);
+  if (!points || points.length < 2) { g.fillStyle = '#5a5a5a'; g.font = '12px monospace'; g.fillText('Нет данных для встроенного графика: ' + label, 12, 24); return }
+  var lo = Math.min.apply(null, points), hi = Math.max.apply(null, points), pad = (hi - lo) * 0.08 || 1; lo -= pad; hi += pad;
+  var L = 8, R = 70, T = 14, B = 22, W = w - L - R, H = h - T - B;
+  var X = function(i){ return L + i / (points.length - 1) * W }, Y = function(v){ return T + (hi - v) / (hi - lo) * H };
+  var dg = Math.abs(hi) >= 1000 ? 0 : Math.abs(hi) >= 10 ? 2 : 4;
+  g.font = '11px monospace'; g.textBaseline = 'middle';
+  for (var k = 0; k <= 4; k++) {
+    var v = lo + (hi - lo) * k / 4, y = Y(v);
+    g.strokeStyle = 'rgba(255,255,255,0.05)'; g.beginPath(); g.moveTo(L, y); g.lineTo(L + W, y); g.stroke();
+    g.fillStyle = '#5a5a5a'; g.fillText(fmt(v, dg), L + W + 6, y);
+  }
+  var up = points[points.length - 1] >= points[0], col = up ? '#21c66f' : '#ff4b4b';
+  var grad = g.createLinearGradient(0, T, 0, T + H); grad.addColorStop(0, up ? 'rgba(33,198,111,0.25)' : 'rgba(255,75,75,0.25)'); grad.addColorStop(1, 'rgba(0,0,0,0)');
+  g.beginPath(); points.forEach(function(v, i){ i ? g.lineTo(X(i), Y(v)) : g.moveTo(X(i), Y(v)) });
+  g.lineTo(X(points.length - 1), T + H); g.lineTo(X(0), T + H); g.closePath(); g.fillStyle = grad; g.fill();
+  g.beginPath(); points.forEach(function(v, i){ i ? g.lineTo(X(i), Y(v)) : g.moveTo(X(i), Y(v)) });
+  g.strokeStyle = col; g.lineWidth = 1.5; g.stroke();
+  var last = points[points.length - 1], ly = Y(last);
+  g.fillStyle = col; g.fillRect(L + W + 2, ly - 8, R - 4, 16); g.fillStyle = '#000'; g.fillText(fmt(last, dg), L + W + 6, ly);
+  var ch = (last / points[0] - 1) * 100;
+  g.fillStyle = col; g.textBaseline = 'top'; g.fillText(label + '  ' + pct(ch) + '  · 5 дней', L + 4, 4);
+}
+function ownSeries(idOrSym, cb){
+  // встроенные данные: история бота (5 дней) или свечи Binance для крипты
+  var coin = null, m = /^BINANCE:([A-Z0-9]+)USDT$/.exec(idOrSym);
+  if (m) coin = m[1]; else if (idOrSym === 'BTC' || idOrSym === 'ETH') coin = idOrSym;
+  if (coin) {
+    fetch('https://api.binance.com/api/v3/klines?symbol=' + coin + 'USDT&interval=1h&limit=120')
+      .then(function(r){ return r.json() }).then(function(k){ cb(k.map(function(x){ return +x[4] })) }).catch(function(){ cb(null) });
+    return;
+  }
+  cb(Q[idOrSym] && Q[idOrSym].spark || null);
+}
 function openChart(idOrSym, label, silent){
-  var sym, title;
+  var sym, title, seq = ++chartSeq;
   if (TV[idOrSym]) { sym = TV[idOrSym]; title = (Q[idOrSym] && Q[idOrSym].name) || idOrSym; curChart = idOrSym }
   else if (idOrSym === 'BTC' || idOrSym === 'ETH') { sym = 'BINANCE:' + idOrSym + 'USDT'; title = idOrSym + '/USDT'; curChart = idOrSym }
   else { sym = idOrSym; title = label || idOrSym; curChart = idOrSym }
@@ -690,14 +752,37 @@ function openChart(idOrSym, label, silent){
   document.querySelectorAll('#mkt tr.row').forEach(function(tr){ tr.classList.toggle('sel', tr.dataset.id === curChart) });
   document.querySelectorAll('#chart-tabs button').forEach(function(b){ b.classList.toggle('on', b.dataset.id === curChart) });
   store('last_chart', idOrSym + '|' + (label || ''));
+  var mode = chartMode();
+  $('chart-sub').textContent = mode === 'own' ? 'встроенный · данные бота' : 'TradingView';
+  $('tv').innerHTML = '<div id="ownc"></div><div id="tvc"></div><div class="chart-msg" id="chart-msg"></div>';
+  // 1) встроенный график — сразу
+  var redraw = function(){ ownSeries(idOrSym, function(pts){ if (seq === chartSeq) drawOwn(pts, title) }) };
+  redraw(); clearInterval(ownTimer); ownTimer = setInterval(function(){ if (seq === chartSeq && (chartMode() === 'own' || !$('tvc').firstChild)) redraw() }, 120000);
+  if (mode === 'own') { chartNote(''); if (!silent) show('p-chart'); return }
+  // 2) TradingView поверх, если загрузится
+  if (tvFailed) chartNote('TradingView недоступен — показан встроенный график');
+  else chartNote('Загружаю TradingView…');
   loadTV(function(){
-    $('tv').innerHTML = '<div id="tvc" style="height:100%"></div>';
-    new window.TradingView.widget({container_id:'tvc', autosize:true, symbol:sym, interval:'60', timezone:'Europe/Moscow',
-      theme:'dark', style:'1', locale:'ru', backgroundColor:'#000000', gridColor:'rgba(255,255,255,0.04)',
-      allow_symbol_change:true, hide_side_toolbar:window.innerWidth < 760, withdateranges:true, save_image:false});
+    if (seq !== chartSeq) return;
+    try {
+      $('tvc').innerHTML = '<div id="tvw" style="height:100%"></div>';
+      new window.TradingView.widget({container_id:'tvw', autosize:true, symbol:sym, interval:'60', timezone:'Europe/Moscow',
+        theme:'dark', style:'1', locale:'ru', backgroundColor:'#000000', gridColor:'rgba(255,255,255,0.04)',
+        allow_symbol_change:true, hide_side_toolbar:window.innerWidth < 760, withdateranges:true, save_image:false});
+      chartNote('');
+    } catch(e) { $('tvc').innerHTML = ''; chartNote('TradingView не открылся — показан встроенный график. ⇄ — переключить') }
   });
+  setTimeout(function(){
+    if (seq === chartSeq && !window.TradingView) chartNote('TradingView не отвечает — показан встроенный график. ⇄ — переключить');
+  }, 8000);
   if (!silent) show('p-chart');
 }
+$('chart-mode').onclick = function(e){
+  e.stopPropagation();
+  store('chart_mode', chartMode() === 'own' ? 'tv' : 'own');
+  openChart(curChart, (store('last_chart') || '').split('|')[1] || null, true);
+};
+window.addEventListener('resize', function(){ clearTimeout(window._rz); window._rz = setTimeout(function(){ if ($('ownc')) ownSeries(curChart, function(p){ drawOwn(p, ($('chart-title').textContent || '').replace('ГРАФИК · ', '')) }) }, 200) });
 (function(){
   var box = $('chart-tabs');
   CHART_QUICK.forEach(function(id){
@@ -781,7 +866,7 @@ var isMobile = function(){ return window.matchMedia('(max-width:760px)').matches
 function show(pid){
   document.querySelectorAll('.panel').forEach(function(p){ p.classList.toggle('show', p.id === pid); p.classList.toggle('focus', p.id === pid) });
   document.querySelectorAll('#tabs button').forEach(function(b){ b.classList.toggle('on', b.dataset.p === pid) });
-  if (pid === 'p-chart' && !window.TradingView) openChart(curChart, null, true);
+  if (pid === 'p-chart' && !$('ownc')) openChart(curChart, null, true);
   if (!isMobile()) setTimeout(function(){ document.querySelectorAll('.panel.focus').forEach(function(p){ p.classList.remove('focus') }) }, 1200);
 }
 function goSection(code){ show('p-mkt'); var s = $('g-' + code); if (s) $('mkt').scrollTop = s.offsetTop - $('mkt').offsetTop }
@@ -890,18 +975,19 @@ $('b-set').onclick = openSettings;
 /* ======================= запуск ======================= */
 try { if (window.Telegram && Telegram.WebApp) { Telegram.WebApp.ready(); Telegram.WebApp.expand(); Telegram.WebApp.setHeaderColor && Telegram.WebApp.setHeaderColor('#000000'); Telegram.WebApp.setBackgroundColor && Telegram.WebApp.setBackgroundColor('#000000') } } catch(e){}
 if (isMobile()) $('cmd').placeholder = 'GOLD, BTC, N, HELP…';
-tick(); setInterval(tick, 15000);
-renderCrypto();
-loadData(); setInterval(loadData, 120000);
-setInterval(renderEco, 60000);
-binanceSnapshot().then(binanceStream).catch(startGecko);
-loadGlobal(); setInterval(loadGlobal, 300000);
-eodLoop();
-fhConnect();
-document.addEventListener('visibilitychange', function(){ if (!document.hidden && eodKey()) eodLoop() });
+function safe(f){ try { f() } catch(e){ console.error(e) } }
 var lc = (store('last_chart') || '').split('|');
 if (lc[0]) curChart = lc[0];
-if (!isMobile()) { document.querySelectorAll('.panel').forEach(function(p){ p.classList.add('show') }); openChart(lc[0] || 'S&P', lc[1] || null, true) }
+safe(function(){ if (!isMobile()) { document.querySelectorAll('.panel').forEach(function(p){ p.classList.add('show') }); openChart(lc[0] || 'S&P', lc[1] || null, true) } });
+safe(function(){ tick(); setInterval(tick, 15000) });
+safe(renderCrypto);
+safe(function(){ loadData(); setInterval(loadData, 120000) });
+safe(function(){ setInterval(renderEco, 60000) });
+safe(function(){ binanceSnapshot().then(binanceStream).catch(startGecko) });
+safe(function(){ loadGlobal(); setInterval(loadGlobal, 300000) });
+safe(eodLoop);
+safe(fhConnect);
+document.addEventListener('visibilitychange', function(){ if (!document.hidden && eodKey()) eodLoop() });
 try { var startCmd = new URLSearchParams(location.search).get('cmd'); if (startCmd && CMDS[startCmd.toUpperCase()]) CMDS[startCmd.toUpperCase()]('') } catch(e){}
 })();
 </script>

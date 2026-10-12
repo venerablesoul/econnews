@@ -17,9 +17,13 @@ SOURCES = [
     # ---------- Центробанки и официальная статистика ----------
     {"name": "ФРС США", "url": "https://www.federalreserve.gov/feeds/press_all.xml", "kind": "official", "tier": 2},
     {"name": "Статистика труда США (BLS)", "url": "https://www.bls.gov/feed/bls_latest.rss", "kind": "official", "tier": 2},
+    # запасной канал: bls.gov часто отвечает 403 серверам GitHub
+    {"name": "Статистика труда США (BLS)", "url": GN + "site:bls.gov+when:2d", "kind": "official", "tier": 2},
     {"name": "ЕЦБ", "url": "https://www.ecb.europa.eu/rss/press.html", "kind": "official", "tier": 2},
     {"name": "Банк Англии", "url": "https://www.bankofengland.co.uk/rss/news", "kind": "official", "tier": 2},
     {"name": "МВФ", "url": "https://www.imf.org/en/News/rss?language=eng", "kind": "official", "tier": 2},
+    # запасной канал: imf.org блокирует запросы с серверов GitHub
+    {"name": "МВФ", "url": GN + "site:imf.org+when:2d", "kind": "official", "tier": 2},
     {"name": "ЦБ РФ", "url": "https://www.cbr.ru/rss/eventrss", "kind": "official", "tier": 2},
 
     # ---------- Bloomberg ----------
