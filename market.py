@@ -38,6 +38,32 @@ INSTRUMENTS = [
     {"name": "Доходность США 30 лет", "short": "UST30", "src": "yahoo", "sym": "^TYX", "digits": 2, "suffix": "%", "chart": False},
 ]
 
+# Только для терминала (docs/terminal): мировые индексы, валюты, сырьё.
+# terminal: True — не показываются на странице «Рынок онлайн» и на картинке.
+_T = {"src": "yahoo", "chart": False, "terminal": True}
+INSTRUMENTS += [
+    {**_T, "name": "Dow Jones", "short": "DJI", "sym": "^DJI", "digits": 0},
+    {**_T, "name": "Russell 2000", "short": "RTY", "sym": "^RUT", "digits": 0},
+    {**_T, "name": "VIX", "short": "VIX", "sym": "^VIX", "digits": 2},
+    {**_T, "name": "Euro Stoxx 50", "short": "SX5E", "sym": "^STOXX50E", "digits": 0},
+    {**_T, "name": "DAX", "short": "DAX", "sym": "^GDAXI", "digits": 0},
+    {**_T, "name": "FTSE 100", "short": "UKX", "sym": "^FTSE", "digits": 0},
+    {**_T, "name": "CAC 40", "short": "CAC", "sym": "^FCHI", "digits": 0},
+    {**_T, "name": "Nikkei 225", "short": "NKY", "sym": "^N225", "digits": 0},
+    {**_T, "name": "Hang Seng", "short": "HSI", "sym": "^HSI", "digits": 0},
+    {**_T, "name": "Шанхай Composite", "short": "SHCOMP", "sym": "000001.SS", "digits": 0},
+    {**_T, "name": "Sensex (Индия)", "short": "SENSEX", "sym": "^BSESN", "digits": 0},
+    {**_T, "name": "Индекс доллара DXY", "short": "DXY", "sym": "DX-Y.NYB", "digits": 2},
+    {**_T, "name": "USD/JPY", "short": "USDJPY", "sym": "JPY=X", "digits": 2},
+    {**_T, "name": "GBP/USD", "short": "GBPUSD", "sym": "GBPUSD=X", "digits": 4},
+    {**_T, "name": "USD/CNY", "short": "USDCNY", "sym": "CNY=X", "digits": 4},
+    {**_T, "name": "USD/CHF", "short": "USDCHF", "sym": "CHF=X", "digits": 4},
+    {**_T, "name": "Нефть WTI", "short": "WTI", "sym": "CL=F", "digits": 2, "prefix": "$"},
+    {**_T, "name": "Серебро", "short": "Серебро", "sym": "SI=F", "digits": 2, "prefix": "$"},
+    {**_T, "name": "Платина", "short": "Платина", "sym": "PL=F", "digits": 0, "prefix": "$"},
+    {**_T, "name": "Пшеница", "short": "Пшеница", "sym": "ZW=F", "digits": 0},
+]
+
 # адреса вынесены, чтобы их можно было подменить в тестах
 YAHOO_URL = "https://query1.finance.yahoo.com/v8/finance/chart/{sym}?range=5d&interval=30m"
 MOEX_URL = "https://iss.moex.com/iss/engines/stock/markets/index/securities/{sym}/candles.json?interval=60&from={frm}&iss.meta=off"
@@ -161,6 +187,10 @@ def to_json(quotes, points=60):
         spark = vals[::step]
         if spark[-1] != vals[-1]:
             spark.append(vals[-1])
-        out.append({"name": q["name"], "price": fmt_price(q), "change": q.get("change"),
-                    "change_txt": fmt_change(q), "period": q["period"], "spark": [round(v, 6) for v in spark]})
+        item = {"name": q["name"], "price": fmt_price(q), "change": q.get("change"),
+                "change_txt": fmt_change(q), "period": q["period"], "spark": [round(v, 6) for v in spark],
+                "id": q["short"], "value": round(q["price"], 6), "digits": q.get("digits", 2)}
+        if q.get("terminal"):
+            item["terminal"] = True
+        out.append(item)
     return out

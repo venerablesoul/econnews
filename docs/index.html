@@ -58,6 +58,7 @@
   .news a{text-decoration:none;font-weight:600;display:block}
   .news a:hover{color:var(--accent)}
   .news .orig{color:var(--faint);font-size:12.5px;margin-top:2px}
+  .news .lead{color:var(--muted);font-size:13.5px;line-height:1.4;margin-top:4px}
   .news .meta{color:var(--muted);font-size:12.5px;margin-top:4px;display:flex;gap:6px;flex-wrap:wrap}
   .day{color:var(--faint);font-size:12px;text-transform:uppercase;letter-spacing:.08em;margin:14px 2px 8px}
   .note{color:var(--faint);font-size:12px;margin:0;padding:8px 14px 12px}
@@ -218,7 +219,7 @@
   }
   function renderTiles(){
     var box = document.getElementById('tiles'); box.innerHTML = '';
-    (data.market || []).forEach(function(q){
+    (data.market || []).filter(function(q){ return !q.terminal }).forEach(function(q){
       var cls = q.change == null || Math.abs(q.change) < 0.005 ? 'flat' : (q.change > 0 ? 'up' : 'down');
       var t = el('div', 'tile');
       t.title = q.name + ' · график за ' + q.period;
@@ -245,7 +246,9 @@
       if (n.link){ a.href = n.link; a.target = '_blank'; a.rel = 'noopener' }
       li.appendChild(a);
       if (n.original) li.appendChild(el('div', 'orig', n.original));
-      li.appendChild(el('div', 'meta', hhmm(n.ts) + ' · ' + n.sources.join(', ')));
+      if (n.lead) li.appendChild(el('div', 'lead', n.lead));
+      var tags = (n.tags || []).map(function(t){ return '#' + t }).join(' ');
+      li.appendChild(el('div', 'meta', hhmm(n.ts) + ' · ' + n.sources.join(', ') + (tags ? ' · ' + tags : '')));
       ul.appendChild(li);
     });
   }
