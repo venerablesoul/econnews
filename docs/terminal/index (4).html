@@ -1,0 +1,995 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Терминал</title>
+<meta name="theme-color" content="#000000">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Терминал">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<style>
+:root{
+  --bg:#000; --panel:#070707; --line:#1c1c1c; --line2:#2a2a2a;
+  --amber:#ffa028; --amber-dim:#a8661a; --yellow:#ffd400;
+  --text:#e6e6e6; --muted:#8c8c8c; --faint:#5a5a5a;
+  --up:#21c66f; --down:#ff4b4b; --blue:#4fa3ff;
+  --hl:#1a1206;
+  --mono:'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--text);font:13px/1.35 var(--mono);height:100%;-webkit-text-size-adjust:100%}
+body{display:flex;flex-direction:column;overflow:hidden}
+a{color:inherit}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;padding:0}
+.up{color:var(--up)} .down{color:var(--down)} .flat{color:var(--muted)}
+.num{font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+
+/* ---------- шапка ---------- */
+header{flex:none;border-bottom:1px solid var(--line2);background:#050505}
+.bar{display:flex;align-items:center;gap:10px;padding:6px 10px}
+.logo{color:#000;background:var(--amber);font-weight:700;padding:2px 7px;letter-spacing:.06em;flex:none}
+.cmd{flex:1;display:flex;align-items:center;gap:6px;background:#0d0b00;border:1px solid #3a3000;padding:4px 8px;min-width:0}
+.cmd span{color:var(--amber);flex:none}
+.cmd input{flex:1;min-width:0;background:none;border:0;outline:0;color:var(--yellow);font:inherit;font-size:14px;text-transform:uppercase;caret-color:var(--yellow)}
+.cmd input::placeholder{color:#6b5a00;text-transform:none}
+.go{background:var(--yellow);color:#000;font-weight:700;padding:3px 8px;flex:none}
+.clocks{display:flex;gap:12px;flex:none;color:var(--muted)}
+.clock b{color:var(--text);font-weight:500}
+.clock i{font-style:normal;display:inline-block;width:6px;height:6px;border-radius:50%;margin-left:4px;vertical-align:middle;background:var(--faint)}
+.clock i.open{background:var(--up);box-shadow:0 0 6px var(--up)}
+.status{display:flex;gap:10px;color:var(--muted);flex:none}
+.pill{border:1px solid var(--line2);padding:1px 6px}
+.pill.live{color:var(--up);border-color:#14502f}
+.pill.pro{color:var(--yellow);border-color:#5a4b00}
+.icon-btn{border:1px solid var(--line2);padding:2px 7px;color:var(--amber)}
+.icon-btn:hover{border-color:var(--amber)}
+.icon-btn[hidden]{display:none}
+#b-install{color:#000;background:var(--amber);border-color:var(--amber);font-weight:700}
+@media (display-mode:standalone){ header{padding-top:env(safe-area-inset-top)} }
+
+/* бегущая строка */
+.tape{overflow:hidden;white-space:nowrap;border-top:1px solid var(--line);height:24px;position:relative}
+.tape-inner{display:inline-block;padding-left:100%;animation:tape 90s linear infinite;line-height:24px}
+.tape:hover .tape-inner{animation-play-state:paused}
+.tape-item{margin-right:26px}
+.tape-item b{color:var(--amber);font-weight:500;margin-right:6px}
+@keyframes tape{from{transform:translateX(0)}to{transform:translateX(-100%)}}
+@media (prefers-reduced-motion:reduce){.tape-inner{animation:none;padding-left:10px}}
+
+/* ---------- сетка ---------- */
+main{flex:1;min-height:0;display:grid;gap:1px;background:var(--line);
+  grid-template-columns:minmax(330px,26%) 1fr minmax(320px,25%);
+  grid-template-rows:62% 38%;
+  grid-template-areas:"mkt chart crypto" "mkt news eco"}
+.panel{background:var(--panel);display:flex;flex-direction:column;min-height:0;min-width:0}
+.panel.focus .ph{background:var(--yellow)}
+.ph{flex:none;display:flex;align-items:center;gap:8px;background:var(--amber);color:#000;padding:2px 8px;font-weight:700;letter-spacing:.04em}
+.ph .code{background:#000;color:var(--amber);padding:0 5px;font-weight:700}
+.ph .sub{margin-left:auto;font-weight:400;font-size:11px;opacity:.8}
+.pb{flex:1;overflow:auto;min-height:0;scrollbar-width:thin;scrollbar-color:#333 transparent}
+#p-mkt{grid-area:mkt} #p-chart{grid-area:chart} #p-crypto{grid-area:crypto} #p-news{grid-area:news} #p-eco{grid-area:eco}
+
+/* таблицы котировок */
+.sec{color:var(--amber);padding:7px 8px 3px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;position:sticky;top:0;background:var(--panel);z-index:1}
+.sec small{color:var(--faint)}
+table{width:100%;border-collapse:collapse}
+td{padding:3px 8px;border-bottom:1px solid #111;white-space:nowrap}
+tr.row{cursor:pointer}
+tr.row:hover td{background:var(--hl)}
+tr.row.sel td{background:#221700}
+td.nm{overflow:hidden;text-overflow:ellipsis;max-width:150px}
+td.nm small{color:var(--faint);margin-left:5px}
+td.nm small.u{color:#7a6a4a}
+.sec small b{font-weight:400;color:var(--muted);margin-right:8px}
+td.sp{width:64px;padding:0 4px}
+td.sp svg{display:block}
+.flash-up{animation:fu .9s} .flash-down{animation:fd .9s}
+@keyframes fu{from{background:#0f4a2a}to{background:transparent}}
+@keyframes fd{from{background:#5a1616}to{background:transparent}}
+.note{color:var(--faint);padding:6px 8px;font-size:11px}
+
+/* график */
+#tv{flex:1;min-height:0;position:relative}
+#tvc,#ownc{position:absolute;inset:0}
+#ownc canvas{display:block;width:100%;height:100%}
+.chart-msg{position:absolute;left:8px;bottom:6px;color:var(--faint);font-size:11px;pointer-events:none}
+.ph .mode{background:#000;color:var(--amber);border:0;padding:0 6px;font:inherit;font-size:11px;cursor:pointer;margin-left:6px}
+.chart-tabs{display:flex;gap:1px;flex:none;background:var(--line);overflow-x:auto;scrollbar-width:none}
+.chart-tabs button{background:#0b0b0b;padding:3px 9px;color:var(--muted);white-space:nowrap}
+.chart-tabs button.on{color:#000;background:var(--amber)}
+
+/* крипта */
+.cg{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border-bottom:1px solid var(--line)}
+.cg div{background:var(--panel);padding:5px 8px}
+.cg small{display:block;color:var(--faint);font-size:10.5px}
+.cg b{font-weight:500}
+.fng{height:4px;background:linear-gradient(90deg,var(--down),#e0b23c,var(--up));position:relative;margin-top:4px}
+.fng i{position:absolute;top:-3px;width:2px;height:10px;background:#fff}
+
+/* новости */
+.ntools{display:flex;gap:6px;padding:5px 8px;border-bottom:1px solid var(--line);flex:none;align-items:center;overflow-x:auto;scrollbar-width:none}
+.ntools input{background:#0d0d0d;border:1px solid var(--line2);color:var(--text);font:inherit;padding:2px 6px;min-width:120px;flex:1;outline:0}
+.ntools input:focus{border-color:var(--amber)}
+.chip{border:1px solid var(--line2);padding:1px 6px;color:var(--muted);white-space:nowrap}
+.chip.on{border-color:var(--amber);color:var(--amber)}
+.news{list-style:none;margin:0;padding:0}
+.news li{padding:6px 8px;border-bottom:1px solid #121212;display:grid;grid-template-columns:44px 1fr;gap:0 8px}
+.news li:hover{background:#0c0c0c}
+.news .t{color:var(--muted)}
+.news .t.hi{color:var(--down)}
+.news a{text-decoration:none;color:var(--text)}
+.news a:hover{color:var(--yellow)}
+.news .lead{grid-column:2;color:var(--muted);font-size:12px;margin-top:2px}
+.news .meta{grid-column:2;color:var(--faint);font-size:11px;margin-top:2px}
+.news .meta button{color:var(--amber-dim);margin-left:6px}
+.news .meta button:hover{color:var(--amber)}
+.day{color:var(--amber);padding:5px 8px 3px;border-bottom:1px solid var(--line);font-size:11.5px;background:#050505}
+
+/* календарь */
+.eco-next{padding:7px 8px;border-bottom:1px solid var(--line);color:var(--muted)}
+.eco-next b{color:var(--yellow);font-weight:500}
+.eco td{vertical-align:top}
+.eco .imp{width:8px;padding-right:0}
+.eco .imp i{display:inline-block;width:6px;height:12px;background:#e0b23c;margin-top:2px}
+.eco .imp i.High{background:var(--down)}
+.eco tr.past td{opacity:.45}
+.eco .ev{white-space:normal}
+.eco .fp{color:var(--faint);font-size:11px}
+.eco .act{font-weight:700;color:var(--text)} .eco .act.up{color:var(--up)} .eco .act.down{color:var(--down)}
+
+/* оверлеи */
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,.78);display:none;align-items:flex-start;justify-content:center;z-index:50;padding:60px 12px 12px}
+.overlay.on{display:flex}
+.dlg{background:#080808;border:1px solid var(--amber-dim);max-width:640px;width:100%;max-height:calc(100vh - 80px);overflow:auto}
+.dlg .ph{position:sticky;top:0}
+.dlg .ph button{margin-left:auto;color:#000;font-weight:700}
+.dlg .in{padding:10px 12px}
+.dlg p{margin:0 0 10px;color:var(--muted)}
+.help td{border:0;padding:3px 6px;white-space:normal;vertical-align:top}
+.help td:first-child{color:var(--yellow);white-space:nowrap}
+.field{display:flex;gap:6px;margin:8px 0}
+.field input{flex:1;background:#0d0d0d;border:1px solid var(--line2);color:var(--yellow);font:inherit;padding:5px 7px;outline:0;min-width:0}
+.field input:focus{border-color:var(--amber)}
+.btn{border:1px solid var(--amber);color:var(--amber);padding:4px 10px}
+.btn.solid{background:var(--amber);color:#000}
+.msg{min-height:1.3em;font-size:12px}
+
+/* мобильная навигация */
+nav.tabs{display:none}
+
+@media (max-width:1100px){
+  main{grid-template-columns:minmax(300px,40%) 1fr;grid-template-rows:55% 45%;
+    grid-template-areas:"mkt chart" "crypto news"}
+  #p-eco{display:none}
+  .clocks .clock:nth-child(n+3){display:none}
+}
+@media (max-width:760px){
+  .clocks,.status .pill.hide-s{display:none}
+  .bar{padding:6px 8px;gap:6px}
+  main{display:block;background:var(--bg)}
+  .panel{display:none;height:100%}
+  .panel.show{display:flex}
+  #p-eco.show{display:flex}
+  nav.tabs{display:flex;flex:none;border-top:1px solid var(--line2);background:#050505;padding-bottom:env(safe-area-inset-bottom)}
+  nav.tabs button{flex:1;padding:9px 0 8px;color:var(--muted);font-size:11px;letter-spacing:.03em}
+  nav.tabs button.on{color:var(--amber);box-shadow:inset 0 2px 0 var(--amber)}
+  td.nm{max-width:130px}
+  body{font-size:13.5px}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="bar">
+    <div class="logo">ECON</div>
+    <form class="cmd" id="cmdf" autocomplete="off">
+      <span>&gt;</span>
+      <input id="cmd" placeholder="команда: WEI, FX, CRYPTO, N, ECO, GOLD, BTC, HELP…" spellcheck="false" autocapitalize="characters" enterkeyhint="go">
+      <button class="go" type="submit">GO</button>
+    </form>
+    <div class="clocks" id="clocks"></div>
+    <div class="status">
+      <span class="pill" id="st-data" title="Источник данных по мировым рынкам">FREE</span>
+      <span class="pill hide-s" id="st-crypto" title="Крипта: поток с биржи">CRYPTO …</span>
+      <button class="icon-btn" id="b-install" title="Установить как приложение" hidden>⤓ УСТАНОВИТЬ</button>
+      <button class="icon-btn" id="b-set" title="Настройки">⚙</button>
+    </div>
+  </div>
+  <div class="tape"><div class="tape-inner" id="tape"></div></div>
+</header>
+
+<main id="main">
+  <section class="panel show" id="p-mkt">
+    <div class="ph"><span class="code">WEI</span>МИРОВЫЕ РЫНКИ<span class="sub" id="mkt-upd"></span></div>
+    <div class="pb" id="mkt"></div>
+  </section>
+
+  <section class="panel" id="p-chart">
+    <div class="ph"><span class="code">GP</span><span id="chart-title">ГРАФИК</span><span class="sub" id="chart-sub">TradingView</span><button class="mode" id="chart-mode" title="Переключить источник графика">⇄</button></div>
+    <div class="chart-tabs" id="chart-tabs"></div>
+    <div id="tv"></div>
+  </section>
+
+  <section class="panel" id="p-crypto">
+    <div class="ph"><span class="code">CRYPTO</span>КРИПТОВАЛЮТЫ<span class="sub" id="crypto-src"></span></div>
+    <div class="cg" id="cglobal">
+      <div><small>Капитализация</small><b id="g-cap">—</b> <span id="g-capch"></span></div>
+      <div><small>Доминация BTC</small><b id="g-btcd">—</b></div>
+      <div><small>Страх / жадность</small><b id="g-fng">—</b><div class="fng"><i id="g-fngm" style="left:50%"></i></div></div>
+    </div>
+    <div class="pb"><table id="crypto"></table><div class="note" id="crypto-note"></div></div>
+  </section>
+
+  <section class="panel" id="p-news">
+    <div class="ph"><span class="code">N</span>НОВОСТИ<span class="sub" id="news-upd"></span></div>
+    <div class="ntools" id="ntools">
+      <input id="nq" placeholder="поиск…" type="search">
+      <button class="chip on" data-f="all">ВСЕ</button>
+      <button class="chip" data-f="high">🔴 ВАЖНОЕ</button>
+    </div>
+    <div class="pb"><ul class="news" id="news"></ul></div>
+  </section>
+
+  <section class="panel" id="p-eco">
+    <div class="ph"><span class="code">ECO</span>КАЛЕНДАРЬ · МСК</div>
+    <div class="eco-next" id="eco-next">—</div>
+    <div class="pb"><table class="eco" id="eco"></table></div>
+  </section>
+</main>
+
+<nav class="tabs" id="tabs">
+  <button data-p="p-mkt" class="on">РЫНКИ</button>
+  <button data-p="p-chart">ГРАФИК</button>
+  <button data-p="p-crypto">КРИПТА</button>
+  <button data-p="p-news">НОВОСТИ</button>
+  <button data-p="p-eco">КАЛЕНДАРЬ</button>
+</nav>
+
+<div class="overlay" id="ov-help">
+  <div class="dlg">
+    <div class="ph"><span class="code">HELP</span>КОМАНДЫ<button data-close>✕</button></div>
+    <div class="in">
+      <p>Наберите команду в строке сверху и нажмите Enter (или GO). Клавиша «/» ставит курсор в командную строку.</p>
+      <table class="help">
+        <tr><td>WEI</td><td>мировые фондовые индексы</td></tr>
+        <tr><td>FX</td><td>валюты</td></tr>
+        <tr><td>GLCO</td><td>сырьё: нефть, газ, металлы, пшеница</td></tr>
+        <tr><td>RATES</td><td>доходности гособлигаций США и спред 10 лет − 3 мес</td></tr>
+        <tr><td>CRYPTO</td><td>криптовалюты в реальном времени</td></tr>
+        <tr><td>N</td><td>лента новостей бота (N НЕФТЬ — поиск по слову)</td></tr>
+        <tr><td>ECO</td><td>экономический календарь</td></tr>
+        <tr><td>GOLD, BRENT, SPX, DAX, BTC, ETH…</td><td>открыть график инструмента</td></tr>
+        <tr><td>NASDAQ:AAPL, MOEX:SBER, AAPL</td><td>график любого тикера TradingView</td></tr>
+        <tr><td>US</td><td>акции и ETF США онлайн (с ключом Finnhub)</td></tr>
+        <tr><td>AAPL, NVDA, TSLA, SPY…</td><td>график акции</td></tr>
+        <tr><td>SET</td><td>настройки: бесплатный ключ Finnhub и ключ EODHD</td></tr>
+        <tr><td>HELP</td><td>эта справка</td></tr>
+      </table>
+      <p style="margin-top:10px">Нажатие на строку в любой таблице открывает график. Русские команды тоже работают: РЫНКИ, ВАЛЮТЫ, СЫРЬЁ, КРИПТА, НОВОСТИ, КАЛЕНДАРЬ.</p>
+    </div>
+  </div>
+</div>
+
+<div class="overlay" id="ov-set">
+  <div class="dlg">
+    <div class="ph"><span class="code">SET</span>НАСТРОЙКИ<button data-close>✕</button></div>
+    <div class="in">
+      <p><b style="color:var(--text)">Мировые рынки.</b> Без ключа котировки берутся из данных бота (обновление ~раз в 30 минут, задержка источника). С ключом EODHD терминал сам обновляет мировые рынки каждые 30 секунд.</p>
+      <p>Ключ хранится только в этом браузере на этом устройстве и никуда, кроме EODHD, не отправляется. В репозиторий и на страницу он не попадает.</p>
+      <div class="field"><input id="k-eod" placeholder="API-ключ EODHD" autocomplete="off" spellcheck="false"><button class="btn solid" id="k-save">Сохранить</button></div>
+      <div class="field"><button class="btn" id="k-test">Проверить</button><button class="btn" id="k-clear">Удалить ключ</button></div>
+      <div class="msg" id="k-msg"></div>
+      <p style="margin-top:14px"><b style="color:var(--text)">Finnhub — бесплатно, в реальном времени.</b> Акции и ETF США, валюты, золото, серебро, нефть и газ обновляются с каждой сделкой. Ключ бесплатный: зарегистрируйтесь на finnhub.io и скопируйте API key со страницы Dashboard.</p>
+      <div class="field"><input id="k-fh" placeholder="API-ключ Finnhub" autocomplete="off" spellcheck="false"><button class="btn solid" id="k-fh-save">Сохранить</button></div>
+      <div class="field"><button class="btn" id="k-fh-clear">Удалить ключ</button></div>
+      <div class="msg" id="k-fh-msg"></div>
+      <p style="margin-top:12px"><b style="color:var(--text)">Установить как приложение.</b> <span id="inst-hint"></span></p>
+      <p style="margin-top:12px"><b style="color:var(--text)">Крипта</b> идёт напрямую с биржи Binance в реальном времени, ключ не нужен. Если Binance недоступен, терминал переключится на CoinGecko (обновление раз в минуту).</p>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+'use strict';
+
+/* ======================= справочники ======================= */
+// id из market.py (поле short). name — запасной вариант для старого data.json
+var NAME2ID = {'S&P 500':'S&P','Nasdaq':'Nasdaq','Нефть Brent':'Brent','Золото':'Золото','EUR/USD':'EUR/USD',
+  'Доходность США 10 лет':'UST10','Биткоин':'BTC','Индекс Мосбиржи':'IMOEX','USD/RUB (ЦБ)':'USD/RUB',
+  'CNY/RUB (ЦБ)':'CNY/RUB','Газ (Henry Hub)':'Газ','Медь':'Медь','Доходность США 3 мес':'UST3M',
+  'Доходность США 5 лет':'UST5','Доходность США 30 лет':'UST30'};
+
+var GROUPS = [
+  {code:'WEI', title:'ИНДЕКСЫ', ids:['S&P','Nasdaq','DJI','RTY','VIX','SX5E','DAX','UKX','CAC','NKY','HSI','SHCOMP','SENSEX','IMOEX']},
+  {code:'US', title:'АКЦИИ США · ОНЛАЙН', ids:['SPY','QQQ','DIA','IWM','AAPL','MSFT','NVDA','AMZN','GOOGL','META','TSLA']},
+  {code:'FX', title:'ВАЛЮТЫ', ids:['DXY','EUR/USD','USDJPY','GBPUSD','USDCNY','USDCHF','USD/RUB','CNY/RUB']},
+  {code:'GLCO', title:'СЫРЬЁ', ids:['Brent','WTI','Газ','Золото','Серебро','Платина','Медь','Пшеница']},
+  {code:'RATES', title:'ДОХОДНОСТИ США', ids:['UST3M','UST5','UST10','UST30']}
+];
+// единицы измерения цены
+var UNIT = {
+  'DXY':'пт','VIX':'пт','EUR/USD':'$ за €','USDJPY':'¥ за $','GBPUSD':'$ за £','USDCNY':'юань за $','USDCHF':'франк за $',
+  'USD/RUB':'₽ за $','CNY/RUB':'₽ за юань',
+  'Brent':'$/барр','WTI':'$/барр','Газ':'$/MMBtu','Золото':'$/унц','Серебро':'$/унц',
+  'Платина':'$/унц','Медь':'$/фунт','Пшеница':'¢/бушель'};
+// подписи над колонками для каждой группы
+var GROUP_UNIT = {WEI:'цена в пунктах · изм. за день', US:'цена в $ за акцию · изм. за день', FX:'курс · изм. за день',
+  GLCO:'цена · изм. за день', RATES:'% годовых · изм. в б.п.'};
+var REGION = {'S&P':'США','Nasdaq':'США','DJI':'США','RTY':'США','VIX':'волатильность','SX5E':'Европа','DAX':'Германия',
+  'UKX':'Британия','CAC':'Франция','NKY':'Япония','HSI':'Гонконг','SHCOMP':'Китай','SENSEX':'Индия','IMOEX':'Россия'};
+
+// символы TradingView для графиков
+var TV = {'S&P':'SP:SPX','Nasdaq':'NASDAQ:IXIC','DJI':'DJ:DJI','RTY':'TVC:RUT','VIX':'TVC:VIX','SX5E':'TVC:SX5E',
+  'DAX':'XETR:DAX','UKX':'TVC:UKX','CAC':'EURONEXT:PX1','NKY':'TVC:NI225','HSI':'TVC:HSI','SHCOMP':'SSE:000001',
+  'SENSEX':'BSE:SENSEX','IMOEX':'MOEX:IMOEX','DXY':'TVC:DXY','EUR/USD':'FX:EURUSD','USDJPY':'FX:USDJPY',
+  'GBPUSD':'FX:GBPUSD','USDCNY':'FX_IDC:USDCNY','USDCHF':'FX:USDCHF','USD/RUB':'FX_IDC:USDRUB','CNY/RUB':'FX_IDC:CNYRUB',
+  'Brent':'TVC:UKOIL','WTI':'TVC:USOIL','Газ':'CAPITALCOM:NATURALGAS','Золото':'TVC:GOLD','Серебро':'TVC:SILVER',
+  'Платина':'TVC:PLATINUM','Медь':'CAPITALCOM:COPPER','Пшеница':'CAPITALCOM:WHEAT','UST3M':'TVC:US03MY',
+  'UST5':'TVC:US05Y','UST10':'TVC:US10Y','UST30':'TVC:US30Y'};
+
+// короткие команды -> id или символ
+var ALIAS = {SPX:'S&P',SP500:'S&P','S&P':'S&P',NDX:'Nasdaq',NASDAQ:'Nasdaq',DOW:'DJI',DJI:'DJI',RUSSELL:'RTY',RTY:'RTY',
+  VIX:'VIX',STOXX:'SX5E',SX5E:'SX5E',DAX:'DAX',FTSE:'UKX',UKX:'UKX',CAC:'CAC',NIKKEI:'NKY',NKY:'NKY',HSI:'HSI',
+  HANGSENG:'HSI',SHANGHAI:'SHCOMP',SHCOMP:'SHCOMP',SENSEX:'SENSEX',IMOEX:'IMOEX',MOEX:'IMOEX',DXY:'DXY',
+  EURUSD:'EUR/USD',EUR:'EUR/USD',USDJPY:'USDJPY',JPY:'USDJPY',GBPUSD:'GBPUSD',GBP:'GBPUSD',USDCNY:'USDCNY',CNY:'USDCNY',
+  USDCHF:'USDCHF',USDRUB:'USD/RUB',RUB:'USD/RUB','РУБЛЬ':'USD/RUB',CNYRUB:'CNY/RUB',BRENT:'Brent','НЕФТЬ':'Brent',
+  OIL:'Brent',WTI:'WTI',GAS:'Газ',NATGAS:'Газ','ГАЗ':'Газ',GOLD:'Золото','ЗОЛОТО':'Золото',XAU:'Золото',
+  SILVER:'Серебро','СЕРЕБРО':'Серебро',XAG:'Серебро',PLATINUM:'Платина',COPPER:'Медь','МЕДЬ':'Медь',WHEAT:'Пшеница',
+  US3M:'UST3M',US5Y:'UST5',US10Y:'UST10',UST10:'UST10',US30Y:'UST30'};
+
+// коды EODHD (если указан ключ)
+var EOD = {'S&P':'GSPC.INDX','Nasdaq':'IXIC.INDX','DJI':'DJI.INDX','RTY':'RUT.INDX','VIX':'VIX.INDX',
+  'SX5E':'STOXX50E.INDX','DAX':'GDAXI.INDX','UKX':'FTSE.INDX','CAC':'FCHI.INDX','NKY':'N225.INDX','HSI':'HSI.INDX',
+  'SHCOMP':'SSEC.INDX','SENSEX':'BSESN.INDX','EUR/USD':'EURUSD.FOREX','USDJPY':'USDJPY.FOREX','GBPUSD':'GBPUSD.FOREX',
+  'USDCNY':'USDCNY.FOREX','USDCHF':'USDCHF.FOREX','USD/RUB':'USDRUB.FOREX','CNY/RUB':'CNYRUB.FOREX',
+  'Золото':'XAUUSD.FOREX','Серебро':'XAGUSD.FOREX','Платина':'XPTUSD.FOREX',
+  'UST3M':'US3M.GBOND','UST5':'US5Y.GBOND','UST10':'US10Y.GBOND','UST30':'US30Y.GBOND'};
+
+// Finnhub (бесплатный ключ): акции/ETF США в реальном времени + валюты и металлы через поток OANDA
+var STOCKS = [['SPY','S&P 500 ETF','AMEX:SPY'],['QQQ','Nasdaq 100 ETF','NASDAQ:QQQ'],['DIA','Dow Jones ETF','AMEX:DIA'],
+  ['IWM','Russell 2000 ETF','AMEX:IWM'],['AAPL','Apple','NASDAQ:AAPL'],['MSFT','Microsoft','NASDAQ:MSFT'],['NVDA','Nvidia','NASDAQ:NVDA'],
+  ['AMZN','Amazon','NASDAQ:AMZN'],['GOOGL','Alphabet','NASDAQ:GOOGL'],['META','Meta','NASDAQ:META'],['TSLA','Tesla','NASDAQ:TSLA']];
+STOCKS.forEach(function(x){ TV[x[0]] = x[2]; ALIAS[x[0]] = x[0] });
+var FH_FX = {'OANDA:EUR_USD':'EUR/USD','OANDA:USD_JPY':'USDJPY','OANDA:GBP_USD':'GBPUSD','OANDA:USD_CHF':'USDCHF',
+  'OANDA:USD_CNH':'USDCNY','OANDA:XAU_USD':'Золото','OANDA:XAG_USD':'Серебро','OANDA:XPT_USD':'Платина',
+  'OANDA:BCO_USD':'Brent','OANDA:WTICO_USD':'WTI','OANDA:NATGAS_USD':'Газ','OANDA:XCU_USD':'Медь'};
+
+var COINS = [
+  ['BTC','Bitcoin','bitcoin'],['ETH','Ethereum','ethereum'],['BNB','BNB','binancecoin'],['SOL','Solana','solana'],
+  ['XRP','XRP','ripple'],['DOGE','Dogecoin','dogecoin'],['TON','Toncoin','the-open-network'],['ADA','Cardano','cardano'],
+  ['TRX','TRON','tron'],['AVAX','Avalanche','avalanche-2'],['LINK','Chainlink','chainlink'],['DOT','Polkadot','polkadot'],
+  ['LTC','Litecoin','litecoin'],['SUI','Sui','sui'],['NEAR','NEAR','near'],['UNI','Uniswap','uniswap']
+];
+var TAPE_IDS = ['S&P','Nasdaq','DJI','DAX','NKY','HSI','IMOEX','Brent','Золото','EUR/USD','DXY','UST10','USD/RUB'];
+var CHART_QUICK = ['S&P','Nasdaq','DAX','Brent','Золото','EUR/USD','UST10','BTC','ETH'];
+
+/* ======================= утилиты ======================= */
+function $(id){ return document.getElementById(id) }
+function el(tag, cls, text){ var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e }
+function store(k, v){ try { if (v === undefined) return localStorage.getItem(k); if (v === null) localStorage.removeItem(k); else localStorage.setItem(k, v) } catch(e){ return null } }
+function fmt(v, d){ if (v == null || isNaN(v)) return '—'; return Number(v).toLocaleString('ru-RU', {minimumFractionDigits:d, maximumFractionDigits:d}) }
+function pct(c){ if (c == null || isNaN(c)) return '—'; return (c > 0 ? '+' : '') + c.toFixed(2).replace('.', ',') + '%' }
+function cls(c){ return c == null || Math.abs(c) < 0.005 ? 'flat' : (c > 0 ? 'up' : 'down') }
+function big(v){ if (!v) return '—'; if (v >= 1e12) return '$' + (v/1e12).toFixed(2).replace('.', ',') + ' трлн'; return '$' + (v/1e9).toFixed(0) + ' млрд' }
+function cryptoDigits(p){ return p >= 1000 ? 0 : p >= 10 ? 2 : p >= 1 ? 3 : p >= 0.01 ? 4 : 6 }
+var MSK = 'Europe/Moscow';
+function hm(iso){ return new Date(iso).toLocaleTimeString('ru-RU', {hour:'2-digit', minute:'2-digit', timeZone:MSK}) }
+function dayKey(d){ return d.toLocaleDateString('ru-RU', {timeZone:MSK}) }
+function dayLabel(iso){
+  var d = new Date(iso), now = new Date(), y = new Date(now - 864e5), t = new Date(+now + 864e5);
+  var k = dayKey(d);
+  if (k === dayKey(now)) return 'СЕГОДНЯ';
+  if (k === dayKey(y)) return 'ВЧЕРА';
+  if (k === dayKey(t)) return 'ЗАВТРА';
+  return d.toLocaleDateString('ru-RU', {weekday:'short', day:'numeric', month:'long', timeZone:MSK}).toUpperCase();
+}
+function spark(vals, c){
+  var w = 60, h = 18, svgNS = 'http://www.w3.org/2000/svg';
+  var s = document.createElementNS(svgNS, 'svg'); s.setAttribute('width', w); s.setAttribute('height', h); s.setAttribute('viewBox', '0 0 ' + w + ' ' + h);
+  if (!vals || vals.length < 2) return s;
+  var lo = Math.min.apply(null, vals), hi = Math.max.apply(null, vals), sp = (hi - lo) || 1;
+  var d = vals.map(function(v, i){ return (i ? 'L' : 'M') + (i / (vals.length - 1) * w).toFixed(1) + ' ' + (h - 2 - (v - lo) / sp * (h - 4)).toFixed(1) }).join(' ');
+  var p = document.createElementNS(svgNS, 'path'); p.setAttribute('d', d); p.setAttribute('fill', 'none'); p.setAttribute('stroke-width', '1.2');
+  p.setAttribute('stroke', c === 'up' ? '#21c66f' : c === 'down' ? '#ff4b4b' : '#8c8c8c'); s.appendChild(p); return s;
+}
+function flash(node, dir){ if (!node || !dir) return; node.classList.remove('flash-up', 'flash-down'); void node.offsetWidth; node.classList.add(dir > 0 ? 'flash-up' : 'flash-down') }
+
+/* ======================= состояние ======================= */
+var Q = {};          // котировки мировых рынков по id
+var C = {};          // крипта по тикеру
+var data = null;     // data.json бота
+var newsFilter = 'all', newsQuery = '';
+var curChart = 'S&P';
+
+/* ======================= часы ======================= */
+var CLOCKS = [
+  {n:'МСК', tz:'Europe/Moscow', open:[[10,0],[18,50]]},
+  {n:'НЬЮ-ЙОРК', tz:'America/New_York', open:[[9,30],[16,0]]},
+  {n:'ЛОНДОН', tz:'Europe/London', open:[[8,0],[16,30]]},
+  {n:'ТОКИО', tz:'Asia/Tokyo', open:[[9,0],[15,30]]}
+];
+function tick(){
+  var now = new Date(), box = $('clocks');
+  if (!box.children.length) CLOCKS.forEach(function(c){ var s = el('span', 'clock'); s.appendChild(document.createTextNode(c.n + ' ')); s.appendChild(el('b')); s.appendChild(el('i')); box.appendChild(s) });
+  CLOCKS.forEach(function(c, k){
+    var parts = new Intl.DateTimeFormat('en-GB', {timeZone:c.tz, hour:'2-digit', minute:'2-digit', weekday:'short', hour12:false}).formatToParts(now);
+    var get = function(t){ return (parts.find(function(p){ return p.type === t }) || {}).value };
+    var h = +get('hour') % 24, m = +get('minute'), wd = get('weekday');
+    var mins = h * 60 + m, isOpen = wd !== 'Sat' && wd !== 'Sun' && mins >= c.open[0][0]*60 + c.open[0][1] && mins < c.open[1][0]*60 + c.open[1][1];
+    var s = box.children[k]; s.querySelector('b').textContent = (h < 10 ? '0' : '') + h + ':' + (m < 10 ? '0' : '') + m;
+    s.querySelector('i').className = isOpen ? 'open' : ''; s.title = isOpen ? 'биржа открыта' : 'биржа закрыта';
+  });
+}
+
+/* ======================= мировые рынки ======================= */
+function ingestMarket(list){
+  (list || []).forEach(function(q){
+    var id = q.id || NAME2ID[q.name]; if (!id || id === 'BTC') return;
+    var v = q.value != null ? q.value : parseFloat(String(q.price).replace(/[^\d,.-]/g, '').replace(',', '.'));
+    var old = Q[id] || {};
+    Q[id] = {id:id, name:q.name, value:v, change:q.change, digits:q.digits != null ? q.digits : 2,
+      spark:q.spark || old.spark, src:old.src && old.src !== 'free' ? old.src : 'free', pv:old.value};
+    // цена закрытия прошлого дня — от неё считаем изменение для живых котировок
+    Q[id].base = q.change != null && v ? v / (1 + q.change / 100) : old.base;
+    if (old.src && old.src !== 'free') { Q[id].value = old.value; Q[id].change = old.change }
+  });
+}
+function rowFor(q, isYield){
+  var tr = el('tr', 'row'); tr.dataset.id = q.id;
+  if (q.id === curChart) tr.classList.add('sel');
+  var c = cls(q.change);
+  var nm = el('td', 'nm', q.name.replace(/^Доходность США /, 'UST ')); if (REGION[q.id]) nm.appendChild(el('small', null, REGION[q.id]));
+  var u = UNIT[q.id] || (STOCKS.some(function(x){ return x[0] === q.id }) ? '$' : ''); if (u) nm.appendChild(el('small', 'u', u));
+  tr.appendChild(nm);
+  var sp = el('td', 'sp'); sp.appendChild(spark(q.spark, c)); tr.appendChild(sp);
+  var last = el('td', 'num', fmt(q.value, q.digits) + (isYield ? '%' : '')); last.dataset.k = 'last'; tr.appendChild(last);
+  var chTxt = pct(q.change);
+  if (isYield && q.change != null && q.value) { var prev = q.value / (1 + q.change / 100); var bp = Math.round((q.value - prev) * 100); chTxt = (bp > 0 ? '+' : '') + bp + ' б.п.' }
+  var ch = el('td', 'num ' + c, chTxt); ch.dataset.k = 'chg'; tr.appendChild(ch);
+  return tr;
+}
+function renderMarket(){
+  var box = $('mkt'); var scroll = box.scrollTop; box.innerHTML = '';
+  GROUPS.forEach(function(g){
+    var sec = el('div', 'sec'); sec.id = 'g-' + g.code; sec.appendChild(el('span', null, g.title)); var sm = el('small'); if (GROUP_UNIT[g.code]) sm.appendChild(el('b', null, GROUP_UNIT[g.code])); sm.appendChild(document.createTextNode(g.code)); sec.appendChild(sm); box.appendChild(sec);
+    var t = el('table'), n = 0;
+    g.ids.forEach(function(id){ if (Q[id]) { t.appendChild(rowFor(Q[id], g.code === 'RATES')); n++ } });
+    if (g.code === 'RATES' && Q.UST10 && Q.UST3M) {
+      var s = (Q.UST10.value - Q.UST3M.value) * 100, tr = el('tr');
+      tr.appendChild(el('td', 'nm', 'Спред 10Y − 3M')); tr.appendChild(el('td'));
+      tr.appendChild(el('td', 'num ' + (s < 0 ? 'down' : 'up'), Math.round(s) + ' б.п.'));
+      tr.appendChild(el('td', 'num flat', s < 0 ? 'инверсия' : 'норма')); t.appendChild(tr);
+    }
+    if (n) box.appendChild(t);
+    else box.appendChild(el('div', 'note', g.code === 'US' ? (fhKey() ? 'Загрузка котировок Finnhub…' : 'Котировки акций США в реальном времени — с бесплатным ключом Finnhub: ⚙ → ключ Finnhub.') : 'Появится после следующего запуска бота'));
+  });
+  box.scrollTop = scroll;
+  updLabel();
+  renderTape();
+}
+function renderTape(){
+  var box = $('tape'), html = [];
+  var items = TAPE_IDS.map(function(id){ return Q[id] }).filter(Boolean);
+  ['BTC','ETH','SOL'].forEach(function(s){ if (C[s] && C[s].price) items.push({name:s, value:C[s].price, digits:cryptoDigits(C[s].price), change:C[s].change}) });
+  box.innerHTML = '';
+  items.forEach(function(q){
+    var s = el('span', 'tape-item'); s.appendChild(el('b', null, (q.name || '').replace(/^Доходность США /, 'UST ')));
+    s.appendChild(document.createTextNode(fmt(q.value, q.digits) + ' ')); s.appendChild(el('span', cls(q.change), pct(q.change)));
+    box.appendChild(s);
+  });
+}
+$('mkt').addEventListener('click', function(e){ var tr = e.target.closest('tr.row'); if (tr) openChart(tr.dataset.id) });
+
+/* ---------- данные бота ---------- */
+function loadData(){
+  fetch('../data.json?t=' + Date.now(), {cache:'no-store'}).then(function(r){ return r.json() }).then(function(d){
+    data = d; ingestMarket(d.market); renderMarket(); renderNews(); renderEco();
+    if ($('ownc') && !($('tvc') && $('tvc').firstChild)) ownSeries(curChart, function(p){ drawOwn(p, ($('chart-title').textContent || '').replace('ГРАФИК · ', '')) });
+    $('news-upd').textContent = d.updated ? 'обновлено ' + hm(d.updated) + ' МСК' : '';
+  }).catch(function(){ $('mkt').innerHTML = ''; $('mkt').appendChild(el('div', 'note', 'Не удалось загрузить данные бота (docs/data.json).')) });
+}
+
+/* ---------- EODHD (если есть ключ) ---------- */
+var eodTimer = null, eodErr = false;
+function eodKey(){ return (store('eodhd_key') || '').trim() }
+function eodFetch(key){
+  var ids = Object.keys(EOD), codes = ids.map(function(i){ return EOD[i] });
+  var url = 'https://eodhd.com/api/real-time/' + encodeURIComponent(codes[0]) + '?s=' + codes.slice(1).map(encodeURIComponent).join(',') + '&api_token=' + encodeURIComponent(key) + '&fmt=json';
+  return fetch(url).then(function(r){ if (!r.ok) throw new Error('HTTP ' + r.status); return r.json() }).then(function(arr){
+    if (!Array.isArray(arr)) arr = [arr];
+    var byCode = {}; arr.forEach(function(x){ if (x && x.code) byCode[x.code] = x });
+    var n = 0;
+    ids.forEach(function(id){
+      var x = byCode[EOD[id]]; if (!x || x.close == null || x.close === 'NA') return;
+      var v = +x.close, ch = x.change_p != null && x.change_p !== 'NA' ? +x.change_p : null;
+      var q = Q[id] || {id:id, name:id, digits:2};
+      var prev = q.value; q.value = v; if (ch != null) q.change = ch; q.src = 'eod'; q.pv = prev; Q[id] = q; n++;
+    });
+    return n;
+  });
+}
+function eodLoop(){
+  clearTimeout(eodTimer);
+  var key = eodKey();
+  if (!key) { eodErr = false; updStatus(); return }
+  if (document.hidden) { eodTimer = setTimeout(eodLoop, 5000); return }
+  eodFetch(key).then(function(n){
+    eodErr = false; updStatus();
+    if (n) patchMarket();
+  }).catch(function(e){
+    eodErr = true; updStatus(); $('st-data').title = 'Ошибка EODHD: ' + e.message;
+  }).then(function(){ eodTimer = setTimeout(eodLoop, 30000) });
+}
+function patchMarket(){
+  // обновляем только ячейки, чтобы не сбивать прокрутку и подсвечивать изменения
+  document.querySelectorAll('#mkt tr.row').forEach(function(tr){
+    var q = Q[tr.dataset.id]; if (!q) return;
+    var isY = /^UST/.test(q.id);
+    var last = tr.querySelector('[data-k=last]'), ch = tr.querySelector('[data-k=chg]');
+    var txt = fmt(q.value, q.digits) + (isY ? '%' : '');
+    if (last.textContent !== txt) { last.textContent = txt; flash(last, q.pv != null ? q.value - q.pv : 0) }
+    var c = cls(q.change); ch.className = 'num ' + c;
+    if (isY && q.change != null) { var prev = q.value / (1 + q.change / 100), bp = Math.round((q.value - prev) * 100); ch.textContent = (bp > 0 ? '+' : '') + bp + ' б.п.' }
+    else ch.textContent = pct(q.change);
+  });
+  updLabel();
+  renderTape();
+}
+function updLabel(){
+  var src = {}; Object.keys(Q).forEach(function(k){ src[Q[k].src] = 1 });
+  var parts = [];
+  if (src.live) parts.push('Finnhub онлайн');
+  if (src.eod) parts.push('EODHD 30 с');
+  if (!parts.length) { $('mkt-upd').textContent = data && data.updated ? 'данные бота · ' + hm(data.updated) + ' МСК' : ''; return }
+  $('mkt-upd').textContent = parts.join(' + ') + ' · ' + new Date().toLocaleTimeString('ru-RU', {timeZone:MSK, hour:'2-digit', minute:'2-digit', second:'2-digit'});
+}
+function updStatus(){
+  var p = $('st-data'), names = [];
+  if (eodKey()) names.push(eodErr ? 'EODHD ✕' : 'EODHD');
+  if (fhKey()) names.push(fhState === 'live' ? '● FINNHUB' : fhState === 'err' ? 'FINNHUB ✕' : 'FINNHUB …');
+  p.textContent = names.length ? names.join(' + ') : 'FREE';
+  p.className = 'pill' + (names.length && !eodErr && fhState !== 'err' ? ' pro' : '');
+}
+
+/* ---------- Finnhub (бесплатный ключ) ---------- */
+var fhWs = null, fhState = '', fhDirty = {}, fhRetry = 0, fhQuoteTimer = null;
+function fhKey(){ return (store('finnhub_key') || '').trim() }
+function fhQuote(sym, key){
+  return fetch('https://finnhub.io/api/v1/quote?symbol=' + encodeURIComponent(sym) + '&token=' + encodeURIComponent(key))
+    .then(function(r){ if (!r.ok) throw new Error('HTTP ' + r.status); return r.json() });
+}
+function fhLoadQuotes(key){
+  // снимок цен акций и закрытия прошлого дня (60 запросов/мин на бесплатном тарифе — нам хватает с запасом)
+  return Promise.all(STOCKS.map(function(x){
+    return fhQuote(x[0], key).then(function(r){
+      if (!r || !r.c) return 0;
+      var q = Q[x[0]] || {id:x[0], name:x[1], digits:2};
+      q.pv = q.value; q.value = r.c; q.base = r.pc || q.base; q.change = r.dp != null ? r.dp : (q.base ? (r.c / q.base - 1) * 100 : null);
+      q.src = 'live'; Q[x[0]] = q; return 1;
+    }).catch(function(){ return 0 });
+  })).then(function(res){ return res.reduce(function(a, b){ return a + b }, 0) });
+}
+function fhOnTrades(list){
+  (list || []).forEach(function(t){
+    var id = FH_FX[t.s] || t.s, q = Q[id];
+    if (!q) return;
+    q.pv = q.value; q.value = t.p; q.src = 'live';
+    if (q.base) q.change = (t.p / q.base - 1) * 100;
+    fhDirty[id] = 1;
+  });
+}
+window.__fhOnTrades = fhOnTrades;  // для проверки
+setInterval(function(){
+  // перерисовываем не чаще раза в секунду: по SPY бывают сотни сделок в секунду
+  var ids = Object.keys(fhDirty); if (!ids.length) return; fhDirty = {};
+  if (ids.some(function(id){ return !document.querySelector('#mkt tr[data-id="' + id + '"]') })) renderMarket(); else patchMarket();
+}, 1000);
+function fhConnect(){
+  var key = fhKey();
+  if (fhWs) { try { fhWs.onclose = null; fhWs.close() } catch(e){} fhWs = null }
+  clearInterval(fhQuoteTimer);
+  if (!key) { fhState = ''; updStatus(); return }
+  fhState = 'wait'; updStatus();
+  fhLoadQuotes(key).then(function(n){ if (n) renderMarket() });
+  fhQuoteTimer = setInterval(function(){ if (!document.hidden) fhLoadQuotes(key).then(function(n){ if (n) patchMarket() }) }, 300000);
+  try { fhWs = new WebSocket('wss://ws.finnhub.io?token=' + encodeURIComponent(key)) } catch(e){ fhState = 'err'; updStatus(); return }
+  fhWs.onopen = function(){
+    fhState = 'live'; fhRetry = 0; updStatus();
+    STOCKS.map(function(x){ return x[0] }).concat(Object.keys(FH_FX)).forEach(function(sym){ fhWs.send(JSON.stringify({type:'subscribe', symbol:sym})) });
+  };
+  fhWs.onmessage = function(ev){ var m = JSON.parse(ev.data); if (m.type === 'trade') fhOnTrades(m.data); else if (m.type === 'error') { fhState = 'err'; updStatus() } };
+  fhWs.onerror = function(){ fhState = 'err'; updStatus() };
+  fhWs.onclose = function(){ if (fhKey()) { fhState = 'wait'; updStatus(); setTimeout(fhConnect, Math.min(60000, 3000 * Math.pow(2, fhRetry++))) } };
+}
+
+/* ======================= крипта ======================= */
+var ws = null, wsOk = false;
+function renderCrypto(){
+  var t = $('crypto'); t.innerHTML = '';
+  var head = el('tr'); ['Монета', '', 'Цена, $', '24ч'].forEach(function(h, i){ var td = el('td', i > 1 ? 'num' : null, h); td.style.color = 'var(--faint)'; head.appendChild(td) }); t.appendChild(head);
+  COINS.forEach(function(c){
+    var q = C[c[0]] || {}; var tr = el('tr', 'row'); tr.dataset.sym = c[0];
+    var nm = el('td', 'nm', c[0]); nm.appendChild(el('small', null, c[1])); tr.appendChild(nm);
+    var r = el('td', 'num flat', q.high ? '' : ''); r.style.fontSize = '11px'; r.dataset.k = 'rng';
+    if (q.high && q.low && q.price) { var pos = (q.price - q.low) / ((q.high - q.low) || 1); r.textContent = '▕' + '━━━━━'.slice(0, Math.max(0, Math.round(pos * 5))) + '●' + '━━━━━'.slice(Math.round(pos * 5)) + '▏'; r.title = 'Положение цены в диапазоне 24 ч' }
+    tr.appendChild(r);
+    var p = el('td', 'num', q.price ? fmt(q.price, cryptoDigits(q.price)) : '—'); p.dataset.k = 'p'; tr.appendChild(p);
+    var ch = el('td', 'num ' + cls(q.change), pct(q.change)); ch.dataset.k = 'c'; tr.appendChild(ch);
+    t.appendChild(tr);
+  });
+}
+function patchCoin(sym){
+  var q = C[sym], tr = document.querySelector('#crypto tr[data-sym="' + sym + '"]'); if (!tr || !q) return;
+  var p = tr.querySelector('[data-k=p]'), c = tr.querySelector('[data-k=c]'), txt = fmt(q.price, cryptoDigits(q.price));
+  if (p.textContent !== txt) { flash(p, q.price - (q.prev || q.price)); p.textContent = txt }
+  c.className = 'num ' + cls(q.change); c.textContent = pct(q.change);
+}
+function binanceSnapshot(){
+  var syms = COINS.map(function(c){ return '"' + c[0] + 'USDT"' }).join(',');
+  return fetch('https://api.binance.com/api/v3/ticker/24hr?symbols=' + encodeURIComponent('[' + syms + ']'))
+    .then(function(r){ if (!r.ok) throw new Error(r.status); return r.json() })
+    .then(function(arr){ arr.forEach(function(x){ var s = x.symbol.replace(/USDT$/, ''); C[s] = {price:+x.lastPrice, change:+x.priceChangePercent, high:+x.highPrice, low:+x.lowPrice, open:+x.openPrice} }); renderCrypto() });
+}
+function binanceStream(){
+  var streams = COINS.map(function(c){ return c[0].toLowerCase() + 'usdt@miniTicker' }).join('/');
+  try { ws = new WebSocket('wss://stream.binance.com:9443/stream?streams=' + streams) } catch(e){ return startGecko() }
+  var opened = false;
+  var to = setTimeout(function(){ if (!opened) { try { ws.close() } catch(e){} startGecko() } }, 9000);
+  ws.onopen = function(){ opened = true; wsOk = true; clearTimeout(to); setCryptoStatus('live') };
+  ws.onmessage = function(ev){
+    var m = JSON.parse(ev.data).data; if (!m) return;
+    var s = m.s.replace(/USDT$/, ''), q = C[s] || {};
+    q.prev = q.price; q.price = +m.c; q.open = +m.o; q.high = +m.h; q.low = +m.l; q.change = (q.price / q.open - 1) * 100; C[s] = q;
+    patchCoin(s);
+  };
+  ws.onclose = function(){ if (opened) { setCryptoStatus('wait'); setTimeout(binanceStream, 3000) } };
+}
+var geckoTimer = null;
+function startGecko(){
+  if (geckoTimer) return;
+  setCryptoStatus('gecko');
+  var ids = COINS.map(function(c){ return c[2] }).join(',');
+  var run = function(){
+    fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=' + ids).then(function(r){ return r.json() }).then(function(arr){
+      var by = {}; arr.forEach(function(x){ by[x.id] = x });
+      COINS.forEach(function(c){ var x = by[c[2]]; if (!x) return; var q = C[c[0]] || {}; q.prev = q.price; q.price = x.current_price; q.change = x.price_change_percentage_24h; q.high = x.high_24h; q.low = x.low_24h; C[c[0]] = q });
+      renderCrypto();
+    }).catch(function(){ $('crypto-note').textContent = 'Котировки криптовалют сейчас недоступны.' });
+  };
+  run(); geckoTimer = setInterval(run, 60000);
+}
+function setCryptoStatus(s){
+  var p = $('st-crypto');
+  if (s === 'live') { p.textContent = '● CRYPTO LIVE'; p.className = 'pill live hide-s'; $('crypto-src').textContent = 'Binance · реальное время'; $('crypto-note').textContent = '' }
+  else if (s === 'gecko') { p.textContent = 'CRYPTO 1 мин'; p.className = 'pill hide-s'; $('crypto-src').textContent = 'CoinGecko · 1 мин'; $('crypto-note').textContent = 'Binance недоступен — данные CoinGecko, обновление раз в минуту.' }
+  else { p.textContent = 'CRYPTO …'; p.className = 'pill hide-s' }
+}
+function loadGlobal(){
+  fetch('https://api.coingecko.com/api/v3/global').then(function(r){ return r.json() }).then(function(g){
+    g = g.data; $('g-cap').textContent = big(g.total_market_cap.usd);
+    var ch = g.market_cap_change_percentage_24h_usd; var s = $('g-capch'); s.textContent = pct(ch); s.className = cls(ch);
+    $('g-btcd').textContent = g.market_cap_percentage.btc.toFixed(1).replace('.', ',') + '%';
+  }).catch(function(){});
+  fetch('https://api.alternative.me/fng/?limit=1').then(function(r){ return r.json() }).then(function(f){
+    var v = +f.data[0].value, ru = {'Extreme Fear':'сильный страх','Fear':'страх','Neutral':'нейтрально','Greed':'жадность','Extreme Greed':'сильная жадность'};
+    $('g-fng').textContent = v + ' · ' + (ru[f.data[0].value_classification] || f.data[0].value_classification); $('g-fngm').style.left = v + '%';
+  }).catch(function(){});
+}
+$('crypto').addEventListener('click', function(e){ var tr = e.target.closest('tr.row'); if (tr) openChart('BINANCE:' + tr.dataset.sym + 'USDT', tr.dataset.sym + '/USDT') });
+
+/* ======================= график ======================= */
+// Два источника: TradingView (полный график) и встроенный (по данным бота / Binance).
+// Встроенный рисуется сразу; TradingView кладётся поверх, только если реально загрузился.
+var tvReady = false, tvQueue = null, tvFailed = false, chartSeq = 0, ownTimer = null;
+function chartMode(){ return store('chart_mode') || 'tv' }
+function loadTV(cb){
+  if (window.TradingView) return cb();
+  if (tvFailed) return;
+  tvQueue = cb;
+  if (document.getElementById('tvjs')) return;
+  var s = document.createElement('script'); s.id = 'tvjs'; s.src = 'https://s3.tradingview.com/tv.js';
+  s.onload = function(){ tvReady = true; if (tvQueue) tvQueue() };
+  s.onerror = function(){ tvFailed = true; if (chartMode() !== 'own') chartNote('TradingView недоступен — показан встроенный график. ⇄ — переключить') };
+  document.head.appendChild(s);
+}
+function chartNote(t){ var n = $('chart-msg'); if (n) n.textContent = t || '' }
+function drawOwn(points, label){
+  var box = $('ownc'); if (!box) return;
+  box.innerHTML = '';
+  var cv = document.createElement('canvas'); box.appendChild(cv);
+  var w = box.clientWidth, h = box.clientHeight; if (!w || !h) return;
+  var dpr = window.devicePixelRatio || 1; cv.width = w * dpr; cv.height = h * dpr;
+  var g = cv.getContext('2d'); g.scale(dpr, dpr);
+  if (!points || points.length < 2) { g.fillStyle = '#5a5a5a'; g.font = '12px monospace'; g.fillText('Нет данных для встроенного графика: ' + label, 12, 24); return }
+  var lo = Math.min.apply(null, points), hi = Math.max.apply(null, points), pad = (hi - lo) * 0.08 || 1; lo -= pad; hi += pad;
+  var L = 8, R = 70, T = 14, B = 22, W = w - L - R, H = h - T - B;
+  var X = function(i){ return L + i / (points.length - 1) * W }, Y = function(v){ return T + (hi - v) / (hi - lo) * H };
+  var dg = Math.abs(hi) >= 1000 ? 0 : Math.abs(hi) >= 10 ? 2 : 4;
+  g.font = '11px monospace'; g.textBaseline = 'middle';
+  for (var k = 0; k <= 4; k++) {
+    var v = lo + (hi - lo) * k / 4, y = Y(v);
+    g.strokeStyle = 'rgba(255,255,255,0.05)'; g.beginPath(); g.moveTo(L, y); g.lineTo(L + W, y); g.stroke();
+    g.fillStyle = '#5a5a5a'; g.fillText(fmt(v, dg), L + W + 6, y);
+  }
+  var up = points[points.length - 1] >= points[0], col = up ? '#21c66f' : '#ff4b4b';
+  var grad = g.createLinearGradient(0, T, 0, T + H); grad.addColorStop(0, up ? 'rgba(33,198,111,0.25)' : 'rgba(255,75,75,0.25)'); grad.addColorStop(1, 'rgba(0,0,0,0)');
+  g.beginPath(); points.forEach(function(v, i){ i ? g.lineTo(X(i), Y(v)) : g.moveTo(X(i), Y(v)) });
+  g.lineTo(X(points.length - 1), T + H); g.lineTo(X(0), T + H); g.closePath(); g.fillStyle = grad; g.fill();
+  g.beginPath(); points.forEach(function(v, i){ i ? g.lineTo(X(i), Y(v)) : g.moveTo(X(i), Y(v)) });
+  g.strokeStyle = col; g.lineWidth = 1.5; g.stroke();
+  var last = points[points.length - 1], ly = Y(last);
+  g.fillStyle = col; g.fillRect(L + W + 2, ly - 8, R - 4, 16); g.fillStyle = '#000'; g.fillText(fmt(last, dg), L + W + 6, ly);
+  var ch = (last / points[0] - 1) * 100;
+  g.fillStyle = col; g.textBaseline = 'top'; g.fillText(label + '  ' + pct(ch) + '  · 5 дней', L + 4, 4);
+}
+function ownSeries(idOrSym, cb){
+  // встроенные данные: история бота (5 дней) или свечи Binance для крипты
+  var coin = null, m = /^BINANCE:([A-Z0-9]+)USDT$/.exec(idOrSym);
+  if (m) coin = m[1]; else if (idOrSym === 'BTC' || idOrSym === 'ETH') coin = idOrSym;
+  if (coin) {
+    fetch('https://api.binance.com/api/v3/klines?symbol=' + coin + 'USDT&interval=1h&limit=120')
+      .then(function(r){ return r.json() }).then(function(k){ cb(k.map(function(x){ return +x[4] })) }).catch(function(){ cb(null) });
+    return;
+  }
+  cb(Q[idOrSym] && Q[idOrSym].spark || null);
+}
+function openChart(idOrSym, label, silent){
+  var sym, title, seq = ++chartSeq;
+  if (TV[idOrSym]) { sym = TV[idOrSym]; title = (Q[idOrSym] && Q[idOrSym].name) || idOrSym; curChart = idOrSym }
+  else if (idOrSym === 'BTC' || idOrSym === 'ETH') { sym = 'BINANCE:' + idOrSym + 'USDT'; title = idOrSym + '/USDT'; curChart = idOrSym }
+  else { sym = idOrSym; title = label || idOrSym; curChart = idOrSym }
+  $('chart-title').textContent = 'ГРАФИК · ' + title.toUpperCase();
+  document.querySelectorAll('#mkt tr.row').forEach(function(tr){ tr.classList.toggle('sel', tr.dataset.id === curChart) });
+  document.querySelectorAll('#chart-tabs button').forEach(function(b){ b.classList.toggle('on', b.dataset.id === curChart) });
+  store('last_chart', idOrSym + '|' + (label || ''));
+  var mode = chartMode();
+  $('chart-sub').textContent = mode === 'own' ? 'встроенный · данные бота' : 'TradingView';
+  $('tv').innerHTML = '<div id="ownc"></div><div id="tvc"></div><div class="chart-msg" id="chart-msg"></div>';
+  // 1) встроенный график — сразу
+  var redraw = function(){ ownSeries(idOrSym, function(pts){ if (seq === chartSeq) drawOwn(pts, title) }) };
+  redraw(); clearInterval(ownTimer); ownTimer = setInterval(function(){ if (seq === chartSeq && (chartMode() === 'own' || !$('tvc').firstChild)) redraw() }, 120000);
+  if (mode === 'own') { chartNote(''); if (!silent) show('p-chart'); return }
+  // 2) TradingView поверх, если загрузится
+  if (tvFailed) chartNote('TradingView недоступен — показан встроенный график');
+  else chartNote('Загружаю TradingView…');
+  loadTV(function(){
+    if (seq !== chartSeq) return;
+    try {
+      $('tvc').innerHTML = '<div id="tvw" style="height:100%"></div>';
+      new window.TradingView.widget({container_id:'tvw', autosize:true, symbol:sym, interval:'60', timezone:'Europe/Moscow',
+        theme:'dark', style:'1', locale:'ru', backgroundColor:'#000000', gridColor:'rgba(255,255,255,0.04)',
+        allow_symbol_change:true, hide_side_toolbar:window.innerWidth < 760, withdateranges:true, save_image:false});
+      chartNote('');
+    } catch(e) { $('tvc').innerHTML = ''; chartNote('TradingView не открылся — показан встроенный график. ⇄ — переключить') }
+  });
+  setTimeout(function(){
+    if (seq === chartSeq && !window.TradingView) chartNote('TradingView не отвечает — показан встроенный график. ⇄ — переключить');
+  }, 8000);
+  if (!silent) show('p-chart');
+}
+$('chart-mode').onclick = function(e){
+  e.stopPropagation();
+  store('chart_mode', chartMode() === 'own' ? 'tv' : 'own');
+  openChart(curChart, (store('last_chart') || '').split('|')[1] || null, true);
+};
+window.addEventListener('resize', function(){ clearTimeout(window._rz); window._rz = setTimeout(function(){ if ($('ownc')) ownSeries(curChart, function(p){ drawOwn(p, ($('chart-title').textContent || '').replace('ГРАФИК · ', '')) }) }, 200) });
+(function(){
+  var box = $('chart-tabs');
+  CHART_QUICK.forEach(function(id){
+    var b = el('button', null, ({'S&P':'S&P 500','UST10':'UST 10Y','EUR/USD':'EURUSD','Золото':'ЗОЛОТО','Brent':'BRENT'})[id] || id.toUpperCase());
+    b.dataset.id = id; b.onclick = function(){ openChart(id, null, true) }; box.appendChild(b);
+  });
+})();
+
+/* ======================= новости ======================= */
+function renderNews(){
+  var ul = $('news'); ul.innerHTML = '';
+  if (!data) return;
+  var q = newsQuery.toLowerCase();
+  var items = (data.news || []).filter(function(n){
+    if (newsFilter === 'high' && n.level !== 'high') return false;
+    if (newsFilter.charAt(0) === '#' && (n.tags || []).indexOf(newsFilter.slice(1)) < 0) return false;
+    if (q && (n.title + ' ' + (n.original || '') + ' ' + (n.lead || '') + ' ' + (n.tags || []).join(' ')).toLowerCase().indexOf(q) < 0) return false;
+    return true;
+  });
+  if (!items.length) { ul.appendChild(el('li', 'note', 'Ничего не найдено')); return }
+  var last = '';
+  items.slice(0, 120).forEach(function(n){
+    var lbl = dayLabel(n.ts); if (lbl !== last) { ul.appendChild(el('div', 'day', lbl)); last = lbl }
+    var li = el('li');
+    li.appendChild(el('span', 't' + (n.level === 'high' ? ' hi' : ''), hm(n.ts)));
+    var a = el('a', null, n.title);
+    if (/^https?:\/\//.test(n.link || '')) { a.href = n.link; a.target = '_blank'; a.rel = 'noopener' }
+    li.appendChild(a);
+    if (n.lead) li.appendChild(el('div', 'lead', n.lead));
+    var meta = el('div', 'meta', (n.sources || []).join(', '));
+    (n.tags || []).forEach(function(t){ var b = el('button', null, '#' + t); b.onclick = function(){ setNewsFilter('#' + t) }; meta.appendChild(b) });
+    li.appendChild(meta);
+    ul.appendChild(li);
+  });
+}
+function setNewsFilter(f){
+  newsFilter = f;
+  var tools = $('ntools');
+  tools.querySelectorAll('.chip.tag').forEach(function(c){ c.remove() });
+  if (f.charAt(0) === '#') { var c = el('button', 'chip on tag', f + ' ✕'); c.onclick = function(){ setNewsFilter('all') }; tools.appendChild(c) }
+  tools.querySelectorAll('.chip[data-f]').forEach(function(c){ c.classList.toggle('on', c.dataset.f === f) });
+  renderNews();
+}
+$('ntools').addEventListener('click', function(e){ var c = e.target.closest('.chip[data-f]'); if (c) setNewsFilter(c.dataset.f) });
+$('nq').addEventListener('input', function(){ newsQuery = this.value; renderNews() });
+
+/* ======================= календарь ======================= */
+function renderEco(){
+  var t = $('eco'); t.innerHTML = '';
+  var ev = (data && data.calendar) || [];
+  if (!ev.length) { t.appendChild(el('tr')).appendChild(el('td', 'note', 'Календарь появится после следующего запуска бота.')); $('eco-next').textContent = '—'; return }
+  var now = Date.now(), last = '', next = null;
+  ev.forEach(function(e){
+    var ts = new Date(e.ts).getTime();
+    if (ts < now - 6 * 36e5) return;
+    if (!next && ts > now && e.impact === 'High') next = e;
+    var lbl = dayLabel(e.ts);
+    if (lbl !== last) { var r = el('tr'); var d = el('td', 'day', lbl); d.colSpan = 3; r.appendChild(d); t.appendChild(r); last = lbl }
+    var tr = el('tr', ts < now ? 'past' : '');
+    var imp = el('td', 'imp'); imp.appendChild(el('i', e.impact)); imp.title = e.impact === 'High' ? 'важное' : 'среднее'; tr.appendChild(imp);
+    tr.appendChild(el('td', 't', hm(e.ts)));
+    var td = el('td', 'ev'); td.appendChild(document.createTextNode((e.flag || e.country) + ' ' + (e.title_ru || e.title)));
+    var fp = []; if (e.forecast) fp.push('прогноз ' + e.forecast); if (e.previous) fp.push('пред. ' + e.previous);
+    if (fp.length || e.actual) {
+      var fd = el('div', 'fp');
+      if (e.actual) { var a = parseFloat(e.actual), f = parseFloat(e.forecast); fd.appendChild(el('b', 'act ' + (isNaN(a) || isNaN(f) || a === f ? '' : a > f ? 'up' : 'down'), 'факт ' + e.actual)); if (fp.length) fd.appendChild(document.createTextNode(' · ')) }
+      fd.appendChild(document.createTextNode(fp.join(' · '))); td.appendChild(fd);
+    }
+    tr.appendChild(td); t.appendChild(tr);
+  });
+  var box = $('eco-next'); box.innerHTML = '';
+  if (next) {
+    var mins = Math.round((new Date(next.ts) - now) / 6e4), left = mins >= 1440 ? Math.floor(mins / 1440) + ' д ' + Math.floor(mins % 1440 / 60) + ' ч' : mins >= 60 ? Math.floor(mins / 60) + ' ч ' + (mins % 60) + ' мин' : mins + ' мин';
+    box.appendChild(document.createTextNode('Следующее важное через ')); box.appendChild(el('b', null, left));
+    box.appendChild(document.createTextNode(': ' + (next.flag || '') + ' ' + (next.title_ru || next.title)));
+  } else box.textContent = 'Важных событий на неделе больше нет';
+}
+
+/* ======================= панели и команды ======================= */
+var isMobile = function(){ return window.matchMedia('(max-width:760px)').matches };
+function show(pid){
+  document.querySelectorAll('.panel').forEach(function(p){ p.classList.toggle('show', p.id === pid); p.classList.toggle('focus', p.id === pid) });
+  document.querySelectorAll('#tabs button').forEach(function(b){ b.classList.toggle('on', b.dataset.p === pid) });
+  if (pid === 'p-chart' && !$('ownc')) openChart(curChart, null, true);
+  if (!isMobile()) setTimeout(function(){ document.querySelectorAll('.panel.focus').forEach(function(p){ p.classList.remove('focus') }) }, 1200);
+}
+function goSection(code){ show('p-mkt'); var s = $('g-' + code); if (s) $('mkt').scrollTop = s.offsetTop - $('mkt').offsetTop }
+function openOverlay(id){ $(id).classList.add('on') }
+document.querySelectorAll('.overlay').forEach(function(o){
+  o.addEventListener('click', function(e){ if (e.target === o || e.target.hasAttribute('data-close')) o.classList.remove('on') });
+});
+document.querySelectorAll('#tabs button').forEach(function(b){ b.onclick = function(){ show(b.dataset.p) } });
+
+var CMDS = {
+  WEI:function(){ goSection('WEI') }, 'РЫНКИ':function(){ goSection('WEI') }, 'ИНДЕКСЫ':function(){ goSection('WEI') },
+  US:function(){ goSection('US') }, 'АКЦИИ':function(){ goSection('US') },
+  FX:function(){ goSection('FX') }, 'ВАЛЮТЫ':function(){ goSection('FX') },
+  GLCO:function(){ goSection('GLCO') }, CMDTY:function(){ goSection('GLCO') }, 'СЫРЬЁ':function(){ goSection('GLCO') }, 'СЫРЬЕ':function(){ goSection('GLCO') },
+  RATES:function(){ goSection('RATES') }, GOVT:function(){ goSection('RATES') }, 'ОБЛИГАЦИИ':function(){ goSection('RATES') },
+  CRYPTO:function(){ show('p-crypto') }, 'КРИПТА':function(){ show('p-crypto') },
+  N:function(arg){ show('p-news'); $('nq').value = arg || ''; newsQuery = arg || ''; setNewsFilter('all') },
+  NEWS:function(arg){ CMDS.N(arg) }, 'НОВОСТИ':function(arg){ CMDS.N(arg) }, TOP:function(){ show('p-news'); setNewsFilter('high') },
+  ECO:function(){ show('p-eco') }, CAL:function(){ show('p-eco') }, 'КАЛЕНДАРЬ':function(){ show('p-eco') },
+  GP:function(arg){ arg ? runSymbol(arg) : show('p-chart') }, 'ГРАФИК':function(arg){ CMDS.GP(arg) },
+  HELP:function(){ openOverlay('ov-help') }, '?':function(){ openOverlay('ov-help') }, 'ПОМОЩЬ':function(){ openOverlay('ov-help') },
+  SET:function(){ openSettings() }, 'НАСТРОЙКИ':function(){ openSettings() }
+};
+function runSymbol(s){
+  s = s.replace(/\s+(GP|GO|<GO>)$/i, '').trim();
+  if (ALIAS[s]) return openChart(ALIAS[s]);
+  var coin = COINS.find(function(c){ return c[0] === s });
+  if (coin) return openChart('BINANCE:' + s + 'USDT', s + '/USDT');
+  openChart(s.replace(/\s+/g, ''), s);
+}
+$('cmdf').addEventListener('submit', function(e){
+  e.preventDefault();
+  var raw = $('cmd').value.trim(); if (!raw) return;
+  var up = raw.toUpperCase().replace(/\s*<?GO>?$/, '');
+  var parts = up.split(/\s+/), head = parts[0], arg = raw.split(/\s+/).slice(1).join(' ').replace(/\s*<?go>?$/i, '');
+  if (CMDS[head]) CMDS[head](arg); else runSymbol(up);
+  $('cmd').value = ''; $('cmd').blur();
+});
+document.addEventListener('keydown', function(e){
+  if (e.key === '/' && document.activeElement.tagName !== 'INPUT') { e.preventDefault(); $('cmd').focus() }
+  if (e.key === 'Escape') document.querySelectorAll('.overlay.on').forEach(function(o){ o.classList.remove('on') });
+});
+
+/* ---------- настройки ---------- */
+function openSettings(){ $('k-eod').value = eodKey(); $('k-fh').value = fhKey(); $('k-msg').textContent = ''; $('k-fh-msg').textContent = ''; openOverlay('ov-set') }
+$('k-fh-save').onclick = function(){
+  var k = $('k-fh').value.trim(), m = $('k-fh-msg');
+  if (!k) { m.textContent = 'Введите ключ.'; return }
+  m.style.color = 'var(--muted)'; m.textContent = 'Проверяю…';
+  fhQuote('AAPL', k).then(function(r){
+    if (!r || !r.c) throw new Error('пустой ответ');
+    store('finnhub_key', k); m.style.color = 'var(--up)'; m.textContent = 'Работает. Apple: $' + r.c + '. Подключаю поток котировок…';
+    fhConnect();
+  }).catch(function(e){ m.style.color = 'var(--down)'; m.textContent = 'Ключ не подошёл: ' + e.message + '.' });
+};
+$('k-fh-clear').onclick = function(){
+  store('finnhub_key', null); $('k-fh').value = ''; $('k-fh-msg').textContent = 'Ключ удалён.';
+  STOCKS.forEach(function(x){ delete Q[x[0]] }); Object.keys(Q).forEach(function(k){ if (Q[k].src === 'live') Q[k].src = 'free' });
+  fhConnect(); loadData();
+};
+$('b-set').onclick = openSettings;
+$('k-save').onclick = function(){
+  var k = $('k-eod').value.trim();
+  if (!k) { $('k-msg').textContent = 'Введите ключ.'; return }
+  store('eodhd_key', k); $('k-msg').style.color = 'var(--muted)'; $('k-msg').textContent = 'Сохранено. Проверяю…'; $('k-test').onclick();
+};
+$('k-test').onclick = function(){
+  var k = $('k-eod').value.trim() || eodKey(); if (!k) { $('k-msg').textContent = 'Ключ не задан.'; return }
+  eodFetch(k).then(function(n){
+    $('k-msg').style.color = n ? 'var(--up)' : 'var(--down)';
+    $('k-msg').textContent = n ? 'Работает: получено котировок — ' + n + '.' : 'Ответ пришёл, но без котировок. Проверьте тариф.';
+    if (n) { patchMarket(); eodLoop() }
+  }).catch(function(e){ $('k-msg').style.color = 'var(--down)'; $('k-msg').textContent = 'Ошибка: ' + e.message + '. Проверьте ключ и тариф.' });
+};
+$('k-clear').onclick = function(){ store('eodhd_key', null); $('k-eod').value = ''; $('k-msg').textContent = 'Ключ удалён.'; Object.keys(Q).forEach(function(k){ Q[k].src = 'free' }); eodLoop(); loadData() };
+
+/* ======================= установка как приложение ======================= */
+var deferredPrompt = null;
+var inTelegram = !!(window.Telegram && Telegram.WebApp && Telegram.WebApp.initData);
+var standalone = window.matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
+var isIOS = /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) {
+  navigator.serviceWorker.register('sw.js').catch(function(){});
+}
+window.addEventListener('beforeinstallprompt', function(e){
+  e.preventDefault(); deferredPrompt = e;
+  if (!inTelegram && !standalone) $('b-install').hidden = false;
+});
+window.addEventListener('appinstalled', function(){ $('b-install').hidden = true; deferredPrompt = null });
+$('b-install').onclick = function(){
+  if (!deferredPrompt) return openSettings();
+  deferredPrompt.prompt();
+  deferredPrompt.userChoice.then(function(){ deferredPrompt = null; $('b-install').hidden = true });
+};
+function installHint(){
+  if (standalone) return 'Терминал уже установлен и открыт как приложение.';
+  if (inTelegram) return 'Внутри Telegram установка недоступна: откройте терминал в браузере (Chrome, Edge или Safari).';
+  if (isIOS) return 'На iPhone/iPad: откройте страницу в Safari → кнопка «Поделиться» → «На экран „Домой“».';
+  if (deferredPrompt) return 'Нажмите кнопку «⤓ УСТАНОВИТЬ» сверху — терминал появится на рабочем столе и будет открываться в своём окне.';
+  return 'В Chrome или Edge: значок установки в адресной строке или меню ⋮ → «Установить приложение». На Android: меню ⋮ → «Добавить на гл. экран».';
+}
+var _openSettings = openSettings;
+openSettings = function(){ $('inst-hint').textContent = installHint(); _openSettings() };
+$('b-set').onclick = openSettings;
+
+/* ======================= запуск ======================= */
+try { if (window.Telegram && Telegram.WebApp) { Telegram.WebApp.ready(); Telegram.WebApp.expand(); Telegram.WebApp.setHeaderColor && Telegram.WebApp.setHeaderColor('#000000'); Telegram.WebApp.setBackgroundColor && Telegram.WebApp.setBackgroundColor('#000000') } } catch(e){}
+if (isMobile()) $('cmd').placeholder = 'GOLD, BTC, N, HELP…';
+function safe(f){ try { f() } catch(e){ console.error(e) } }
+var lc = (store('last_chart') || '').split('|');
+if (lc[0]) curChart = lc[0];
+safe(function(){ if (!isMobile()) { document.querySelectorAll('.panel').forEach(function(p){ p.classList.add('show') }); openChart(lc[0] || 'S&P', lc[1] || null, true) } });
+safe(function(){ tick(); setInterval(tick, 15000) });
+safe(renderCrypto);
+safe(function(){ loadData(); setInterval(loadData, 120000) });
+safe(function(){ setInterval(renderEco, 60000) });
+safe(function(){ binanceSnapshot().then(binanceStream).catch(startGecko) });
+safe(function(){ loadGlobal(); setInterval(loadGlobal, 300000) });
+safe(eodLoop);
+safe(fhConnect);
+document.addEventListener('visibilitychange', function(){ if (!document.hidden && eodKey()) eodLoop() });
+try { var startCmd = new URLSearchParams(location.search).get('cmd'); if (startCmd && CMDS[startCmd.toUpperCase()]) CMDS[startCmd.toUpperCase()]('') } catch(e){}
+})();
+</script>
+</body>
+</html>
