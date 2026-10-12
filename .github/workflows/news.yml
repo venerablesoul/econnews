@@ -32,6 +32,7 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}   # необязательно: факт по данным США
           MIN_LEVEL: medium       # high = только самое важное
           DIGEST_HOUR: "21"       # дневная сводка в 21:00 МСК; -1 = выключить
           CHART_HOURS: "9,21"     # когда присылать картинку с графиками (часы МСК); пусто = никогда
@@ -39,6 +40,14 @@ jobs:
           QUIET_HOURS: "0-8"      # ночью без звука (кроме важных)
           TRANSLATE: ru           # перевод заголовков на русский; off = не переводить
           SHOW_ORIGINAL: "no"     # yes = под переводом показывать оригинал
+          SUMMARIES: "yes"        # выжимка в 1–2 предложения под заголовком
+          TAGS: "yes"             # теги #нефть #ФРС #рубль ...
+          MORNING_HOUR: "9"       # утренний дайджест «главное за ночь» (час МСК); -1 = выключить
+          CALENDAR: "yes"         # календарь важных событий + напоминания
+          CAL_COUNTRIES: "USD,EUR,CNY,GBP,JPY"  # чьи события показывать
+          REMIND_MINUTES: "60"    # за сколько минут напоминать; 0 = не напоминать
+          ALERTS: "yes"           # сразу сообщать, если источник перестал отвечать
+          TERMINAL_BUTTON: "yes"  # кнопка «🖥 Терминал» под сообщениями
         run: |
           # адрес страницы «Рынок онлайн» на GitHub Pages
           export PAGES_URL="https://${GITHUB_REPOSITORY_OWNER,,}.github.io/${GITHUB_REPOSITORY#*/}/"
