@@ -407,7 +407,11 @@
   "2519237f1df4710c": "2026-10-13T08:45:02.985699+00:00",
   "236ef56856d10126": "2026-10-13T08:45:02.985699+00:00",
   "eb4ec94cf4202067": "2026-10-13T08:45:02.985699+00:00",
-  "0baad3e4a99c0643": "2026-10-13T08:45:02.985699+00:00"
+  "0baad3e4a99c0643": "2026-10-13T08:45:02.985699+00:00",
+  "83314df865bd19b4": "2026-10-13T08:55:02.974280+00:00",
+  "e0bfa18be664da21": "2026-10-13T08:55:02.974280+00:00",
+  "7337041509ca6ea1": "2026-10-13T08:55:02.974280+00:00",
+  "4d80eee0b6ac9c39": "2026-10-13T08:55:02.974280+00:00"
  },
  "recent": [
   {
@@ -4063,6 +4067,48 @@
    "title_ru": "В диаграммах: Как одна из крупнейших экономик мира оказалась в ловушке долга",
    "lead": "France opens debate on its 2027 budget as high deficits, rising debt and student protests intensify pressure on lawmakers.",
    "lead_ru": "Франция открывает дебаты по бюджету на 2027 год, поскольку высокий дефицит, растущий долг и студенческие протесты усиливают давление на законодателей."
+  },
+  {
+   "title": "BOJ Is Said to Lean Against Back-to-Back Rate Hike in October",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-13/boj-is-said-to-lean-against-back-to-back-rate-hike-in-october",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 7,
+   "ts": "2026-10-13T08:55:02.974280+00:00",
+   "title_ru": "Говорят, что Банк Японии будет сопротивляться последовательному повышению ставок в октябре",
+   "lead": "Bank of Japan officials are leaning against a rare back-to-back interest rate increase this month while still eyeing the possibility of another move as soon as December, according to people familiar with the matter.",
+   "lead_ru": "Чиновники Банка Японии выступают против редкого повышения процентных ставок в этом месяце, но по-прежнему рассматривают возможность нового шага уже в декабре, по словам людей, знакомых с этим вопросом.",
+   "tags": [
+    "ставки"
+   ]
+  },
+  {
+   "title": "IMF Chief: Financial Stability Is First Line of Defense",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-13/imf-chief-financial-stability-is-first-line-of-defense-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-13T08:55:02.974280+00:00",
+   "title_ru": "Глава МВФ: финансовая стабильность – первая линия защиты",
+   "lead": "\"Economic and financial stability is your first line of defense,\" IMF chief Kristalina Georgieva said at an IMF event in Bangkok, urging debt-laden advanced economies to put their fiscal house in order and choose trade…",
+   "lead_ru": "«Экономическая и финансовая стабильность — ваша первая линия защиты», — заявила глава МВФ Кристалина Георгиева на мероприятии МВФ в Бангкоке, призывая обремененные долгами страны с развитой экономикой привести в порядок свой финансовый дом и выбрать торговлю…"
+  },
+  {
+   "title": "France Yield Surge Is No Risk to Nation’s Banks, Watchdog Says",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-13/france-yield-surge-is-no-risk-to-nation-s-banks-watchdog-says",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-13T08:55:02.974280+00:00",
+   "title_ru": "Рост доходности во Франции не представляет риска для банков страны, утверждает Watchdog",
+   "lead": "The exposure of France’s banking sector to the nation’s public debt remains limited and doesn’t pose stability risks even as yields on government bonds surge, the country’s top financial watchdog said Tuesday.",
+   "lead_ru": "Подверженность банковского сектора Франции государственному долгу страны остается ограниченной и не представляет риска для стабильности, даже несмотря на рост доходности государственных облигаций, заявил во вторник главный финансовый регулятор страны.",
+   "tags": [
+    "облигации"
+   ]
   }
  ],
  "last_digest": "2026-10-12",
