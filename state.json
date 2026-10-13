@@ -413,7 +413,10 @@
   "7337041509ca6ea1": "2026-10-13T08:55:02.974280+00:00",
   "4d80eee0b6ac9c39": "2026-10-13T08:55:02.974280+00:00",
   "e5d590bc85fb0e2f": "2026-10-13T09:05:02.979675+00:00",
-  "17305a9464617ec2": "2026-10-13T09:05:02.979675+00:00"
+  "17305a9464617ec2": "2026-10-13T09:05:02.979675+00:00",
+  "be0f14e14a486e48": "2026-10-13T09:25:02.986308+00:00",
+  "4351551321f76b6e": "2026-10-13T09:25:02.986308+00:00",
+  "70e1b25a97aee61d": "2026-10-13T09:25:02.986308+00:00"
  },
  "recent": [
   {
@@ -4129,6 +4132,19 @@
    ],
    "score": 1,
    "ts": "2026-10-13T09:05:02.979675+00:00"
+  },
+  {
+   "title": "German September inflation confirmed at 3.3%",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOdllCaWhnRFJJRHdRa2hHZVZIQVVfcTJjTC1sTkNnS2hMSFVhWFRTUkN6QjB6TWFHXzNyaU5DZkFpQ2VVLW1KQWRPSVk4SU4yV1BDeFo0N3RONGN2V3A3X003NXd0RWUtUVFCNVNqVkFQSUhaT1YtMHdPRVU4SE4xMHpjZW5Ub3Nqa0NfcExBWlhqZw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-13T09:25:02.986308+00:00",
+   "title_ru": "Сентябрьская инфляция в Германии подтверждена на уровне 3,3%",
+   "tags": [
+    "инфляция"
+   ]
   }
  ],
  "last_digest": "2026-10-12",
@@ -4155,7 +4171,7 @@
   "2026-10-13-09"
  ],
  "calendar": {
-  "fetched": "2026-10-13T03:24:38.030740+00:00",
+  "fetched": "2026-10-13T09:25:02.986308+00:00",
   "events": [
    {
     "title": "Bank Holiday",
