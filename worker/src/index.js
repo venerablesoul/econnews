@@ -5,7 +5,8 @@
 //   /subs           — список подписчиков для рассылки (его берёт news_bot.py; доступ по ключу)
 //   /subs/remove    — убрать подписчиков, которые заблокировали бота
 //   /api/quotes     — котировки для терминала. Ключи API хранятся только здесь, в браузер не попадают:
-//                     всем — бесплатный ключ Finnhub, владельцу — ещё и платный EODHD
+//                     всем — бесплатный ключ Finnhub (акции США, валюты, металлы, нефть),
+//                     владельцу — ещё и платный EODHD
 //
 // Секреты (задаются автоматически из секретов GitHub, см. README):
 //   TELEGRAM_BOT_TOKEN, OWNER_ID, FINNHUB_API_KEY, EODHD_API_KEY, TERMINAL_PASSWORD (необязательно)
@@ -25,6 +26,13 @@ const EOD = {
   "USDJPY": "USDJPY.FOREX", "GBPUSD": "GBPUSD.FOREX", "USDCNY": "USDCNY.FOREX", "USDCHF": "USDCHF.FOREX",
   "USD/RUB": "USDRUB.FOREX", "CNY/RUB": "CNYRUB.FOREX", "Золото": "XAUUSD.FOREX", "Серебро": "XAGUSD.FOREX",
   "Платина": "XPTUSD.FOREX", "UST3M": "US3M.GBOND", "UST5": "US5Y.GBOND", "UST10": "US10Y.GBOND", "UST30": "US30Y.GBOND",
+};
+
+// валюты, металлы, нефть и газ — поток Finnhub (OANDA), бесплатный ключ, для всех
+const FH_FX = {
+  "OANDA:EUR_USD": "EUR/USD", "OANDA:USD_JPY": "USDJPY", "OANDA:GBP_USD": "GBPUSD", "OANDA:USD_CHF": "USDCHF",
+  "OANDA:USD_CNH": "USDCNY", "OANDA:XAU_USD": "Золото", "OANDA:XAG_USD": "Серебро", "OANDA:XPT_USD": "Платина",
+  "OANDA:BCO_USD": "Brent", "OANDA:WTICO_USD": "WTI", "OANDA:NATGAS_USD": "Газ", "OANDA:XCU_USD": "Медь",
 };
 
 const FREE_TTL = 30;   // секунд: как часто обновляются бесплатные котировки (общие для всех)
@@ -433,6 +441,40 @@ async function finnhub(env) {
   return out;
 }
 
+// Поток сделок Finnhub отдаёт валюты и сырьё только через WebSocket: подключаемся на пару секунд,
+// забираем последние цены и отключаемся. Ключ остаётся на сервере.
+let fxLast = {};
+
+async function finnhubFx(env) {
+  const resp = await fetch("https://ws.finnhub.io/?token=" + encodeURIComponent(env.FINNHUB_API_KEY), { headers: { Upgrade: "websocket" } });
+  const ws = resp.webSocket;
+  if (!ws) throw new Error("Finnhub поток: HTTP " + resp.status);
+  ws.accept();
+  const got = {};
+  const want = Object.keys(FH_FX).length;
+  await new Promise((resolve) => {
+    const timer = setTimeout(resolve, 2500);
+    const finish = () => { clearTimeout(timer); resolve(); };
+    ws.addEventListener("message", (ev) => {
+      let m;
+      try { m = JSON.parse(ev.data); } catch { return; }
+      if (m.type !== "trade") return;
+      for (const x of m.data || []) {
+        const id = FH_FX[x.s];
+        if (id && x.p > 0) got[id] = { value: x.p, t: x.t };
+      }
+      if (Object.keys(got).length >= want) finish();
+    });
+    ws.addEventListener("close", finish);
+    ws.addEventListener("error", finish);
+    for (const s of Object.keys(FH_FX)) ws.send(JSON.stringify({ type: "subscribe", symbol: s }));
+  });
+  try { ws.close(1000, "done"); } catch {}
+  // по инструментам без сделок за эти секунды (ночь, выходные) — последняя известная цена
+  fxLast = { ...fxLast, ...got };
+  return { ...fxLast };
+}
+
 async function eodhd(env) {
   const ids = Object.keys(EOD), codes = ids.map((i) => EOD[i]);
   const url = `https://eodhd.com/api/real-time/${codes[0]}?s=${codes.slice(1).join(",")}&api_token=${encodeURIComponent(env.EODHD_API_KEY)}&fmt=json`;
@@ -454,11 +496,13 @@ async function eodhd(env) {
 async function quotesApi(req, env) {
   const owner = await isOwner(req, env);
   const res = { ok: true, tier: owner ? "owner" : "free", refresh: owner ? OWNER_TTL : FREE_TTL,
-    ts: new Date().toISOString(), stocks: {}, world: {}, errors: [] };
+    ts: new Date().toISOString(), stocks: {}, fx: {}, world: {}, errors: [] };
   const jobs = [];
   if (env.FINNHUB_API_KEY) {
     jobs.push(cached("fh", owner ? OWNER_TTL : FREE_TTL, () => finnhub(env))
       .then((q) => { res.stocks = q; }).catch((e) => res.errors.push(String(e.message || e))));
+    jobs.push(cached("fx", FREE_TTL, () => finnhubFx(env))
+      .then((q) => { res.fx = q; }).catch((e) => res.errors.push(String(e.message || e))));
   } else res.errors.push("нет ключа Finnhub");
   if (owner) {
     if (env.EODHD_API_KEY) {

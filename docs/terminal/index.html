@@ -314,7 +314,7 @@ nav.tabs{display:none}
   <div class="dlg">
     <div class="ph"><span class="code">SET</span>НАСТРОЙКИ<button data-close>✕</button></div>
     <div class="in">
-      <p><b style="color:var(--text)">Данные.</b> Мировые рынки, новости, календарь и сделки — из данных бота (обновление ~раз в 10 минут). Акции США — онлайн через сервер бота. Ключи API хранятся только на сервере: в терминал и в браузер они не попадают.</p>
+      <p><b style="color:var(--text)">Данные.</b> Мировые рынки, новости, календарь и сделки — из данных бота (обновление ~раз в 10 минут). Акции США, валюты, металлы и нефть — онлайн через сервер бота. Ключи API хранятся только на сервере: в терминал и в браузер они не попадают.</p>
       <p id="k-tier" style="color:var(--text)"></p>
       <p style="margin-top:14px"><b style="color:var(--text)">Вход владельца.</b> Откройте терминал кнопкой «🖥 Терминал» в чате с ботом — платные данные (мировые рынки онлайн) включатся сами. В обычном браузере — введите пароль владельца.</p>
       <div class="field"><input id="k-pass" type="password" placeholder="пароль владельца" autocomplete="current-password" spellcheck="false"><button class="btn solid" id="k-login">Войти</button></div>
@@ -540,6 +540,13 @@ function applyQuotes(d){
     q.change = x.change != null ? x.change : (q.base ? (x.value / q.base - 1) * 100 : null);
     q.src = 'live'; Q[id] = q; n++;
   });
+  Object.keys(d.fx || {}).forEach(function(id){
+    // валюты и сырьё: последняя сделка; изменение — от закрытия прошлого дня (из данных бота)
+    var x = d.fx[id], q = Q[id];
+    if (!q || !x.value) return;
+    if (q.src === 'eod' && d.world && d.world[id]) return;
+    q.pv = q.value; q.value = x.value; if (q.base) q.change = (x.value / q.base - 1) * 100; q.src = 'live'; n++;
+  });
   Object.keys(d.world || {}).forEach(function(id){
     var x = d.world[id], q = Q[id] || {id:id, name:id, digits:2};
     if (!Q[id]) fresh = true;
@@ -580,7 +587,7 @@ function patchMarket(){
 function updLabel(){
   var src = {}; Object.keys(Q).forEach(function(k){ src[Q[k].src] = 1 });
   var parts = [];
-  if (src.eod || src.live) parts.push((src.eod ? 'онлайн' : 'акции США онлайн') + ' · ' + apiRefresh + ' с');
+  if (src.eod || src.live) parts.push('онлайн · ' + apiRefresh + ' с');
   if (!parts.length) { $('mkt-upd').textContent = data && data.updated ? 'данные бота · ' + hm(data.updated) + ' МСК' : ''; return }
   $('mkt-upd').textContent = parts.join(' + ') + ' · ' + new Date().toLocaleTimeString('ru-RU', {timeZone:MSK, hour:'2-digit', minute:'2-digit', second:'2-digit'});
 }
