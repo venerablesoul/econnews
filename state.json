@@ -374,7 +374,9 @@
   "f582844b76a11c78": "2026-10-13T05:24:38.053180+00:00",
   "cd422dd882ed8e2c": "2026-10-13T05:44:38.051299+00:00",
   "1940c55f3c98a6b1": "2026-10-13T05:54:38.045584+00:00",
-  "ff97e6784c0986fe": "2026-10-13T05:54:38.045584+00:00"
+  "ff97e6784c0986fe": "2026-10-13T05:54:38.045584+00:00",
+  "e874255546396658": "2026-10-13T06:04:38.019906+00:00",
+  "71ad030e3fb5df74": "2026-10-13T06:04:38.019906+00:00"
  },
  "recent": [
   {
@@ -3681,6 +3683,26 @@
    "score": 3,
    "ts": "2026-10-13T05:54:38.045584+00:00",
    "title_ru": "Утренняя ставка: хрупкая торговля ИИ"
+  },
+  {
+   "title": "IMF / Global Financial Stability Report Annual Meetings, 2026",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPb1MzOEQyTHdYem1aLVRLQVpTd3h6dkJ5b2tyNjlSUjlMYkdNMFczb2xVWnU0WHR0MnVBUmNtMnZzUTlPZ1Z1X1JWY3hxeGV2RlRZdWxDMEVSbURFT0lQaFBnbzFMWWYtVHJqME1wczlvVnFXTk5vNmRSWGdBM2xTSkYwdG16cklTLVptV3B6T2ZqZm5wT2lhSUktd0JUU0oxSkNZV01JaU5PQzdTclJmRC10eURpcjd6cS00Q1Q2cWY1b1h4eF85T1VKWW1PZw?oc=5",
+   "sources": [
+    "МВФ"
+   ],
+   "score": 5,
+   "ts": "2026-10-13T06:04:38.019906+00:00",
+   "title_ru": "Ежегодные собрания МВФ/Доклада о глобальной финансовой стабильности, 2026 г."
+  },
+  {
+   "title": "Why the Rupee Is So Weak Despite India’s Fast-Growing Economy",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQa2FUR252VzJjVlNaZncyWnFVdkNUOEo1enJKb2c3clBodVZEZmMxdi1xUUlIZDgzZEx4WlJqVTFqTHpFVjM3bk1KZUxidUliYVR4UnFJZHhpUE1YSXVQZFRMQ2xDQkpvOE5CUktVZllmZG83SGZkNDE2YzBGN2pVdC0xc2xDTzJpcVQ2ME8yX1J0NHYtTEpINTZ4U1I0Y2JEOXNwS0tleXdLNVBfckxOZU40Zw?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-13T06:04:38.019906+00:00",
+   "title_ru": "Почему рупия настолько слаба, несмотря на быстрорастущую экономику Индии"
   }
  ],
  "last_digest": "2026-10-12",
@@ -3703,7 +3725,8 @@
  },
  "charts_sent": [
   "2026-10-12-09",
-  "2026-10-12-21"
+  "2026-10-12-21",
+  "2026-10-13-09"
  ],
  "calendar": {
   "fetched": "2026-10-13T03:24:38.030740+00:00",
@@ -4575,6 +4598,6 @@
   ]
  },
  "cal_reminded": [],
- "last_morning": "",
+ "last_morning": "2026-10-13",
  "all_down_alerted": false
 }
