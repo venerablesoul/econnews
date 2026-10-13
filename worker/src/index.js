@@ -454,7 +454,7 @@ async function finnhubFx(env) {
   const got = {};
   const want = Object.keys(FH_FX).length;
   await new Promise((resolve) => {
-    const timer = setTimeout(resolve, 1500);
+    const timer = setTimeout(resolve, 3000);
     let msgs = 0;
     const finish = () => { clearTimeout(timer); resolve(); };
     ws.addEventListener("message", (ev) => {
