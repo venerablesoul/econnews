@@ -287,7 +287,8 @@
   "39a3214de2c0b116": "2026-10-12T23:34:05.894987+00:00",
   "81f96c10c8218294": "2026-10-12T23:44:05.870401+00:00",
   "40d8a2a831fa9740": "2026-10-12T23:54:05.876267+00:00",
-  "614d0aed3baeac26": "2026-10-12T23:54:05.876267+00:00"
+  "614d0aed3baeac26": "2026-10-12T23:54:05.876267+00:00",
+  "38992f08c412d9f8": "2026-10-13T00:14:05.902736+00:00"
  },
  "recent": [
   {
@@ -2739,6 +2740,23 @@
     "нефть",
     "рынки"
    ]
+  },
+  {
+   "title": "Gold Holds Drop as Middle East Fighting Stokes Inflation Fears",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-12/gold-holds-drop-as-middle-east-fighting-stokes-inflation-fears",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 7,
+   "ts": "2026-10-13T00:14:05.902736+00:00",
+   "title_ru": "Золото удерживает падение, поскольку боевые действия на Ближнем Востоке разжигают опасения по поводу инфляции",
+   "lead": "Gold held a loss as the spreading conflict in the Middle East stoked fears that further energy supply disruptions could keep inflation elevated and increase the prospects for interest-rate hikes.",
+   "lead_ru": "Золото терпело убытки, поскольку распространяющийся конфликт на Ближнем Востоке усилил опасения, что дальнейшие перебои в поставках энергоносителей могут сохранить инфляцию на высоком уровне и увеличить перспективы повышения процентных ставок.",
+   "tags": [
+    "ставки",
+    "инфляция",
+    "золото"
+   ]
   }
  ],
  "last_digest": "2026-10-12",
@@ -2753,7 +2771,7 @@
   "ЦБ РФ": 0,
   "Статистика труда США (BLS)": 0,
   "CNBC": 0,
-  "ФРС США": 0,
+  "ФРС США": 1,
   "Bloomberg": 0,
   "Reuters": 0,
   "MarketWatch": 0,
