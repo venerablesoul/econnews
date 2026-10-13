@@ -342,7 +342,14 @@
   "2de880ed4d16b8e2": "2026-10-13T02:54:38.023049+00:00",
   "ee0dd2d102d31fa6": "2026-10-13T02:54:38.023049+00:00",
   "16d0ed626e55dc42": "2026-10-13T02:54:38.023049+00:00",
-  "15ff11ba19c47961": "2026-10-13T03:14:38.028092+00:00"
+  "15ff11ba19c47961": "2026-10-13T03:14:38.028092+00:00",
+  "0ed2b7da8afe3e9c": "2026-10-13T03:24:38.030740+00:00",
+  "e538a8767cc31447": "2026-10-13T03:24:38.030740+00:00",
+  "9e58dc30161bca32": "2026-10-13T03:24:38.030740+00:00",
+  "b4742b3097c6fce8": "2026-10-13T03:24:38.030740+00:00",
+  "ac413aaef67579e5": "2026-10-13T03:24:38.030740+00:00",
+  "5bc71a37c46f37a4": "2026-10-13T03:24:38.030740+00:00",
+  "be920b09a1299e70": "2026-10-13T03:24:38.030740+00:00"
  },
  "recent": [
   {
@@ -3269,6 +3276,101 @@
     "инфляция",
     "нефть"
    ]
+  },
+  {
+   "title": "IMF warns bond yields could see a 'disorderly' spike as debt, inflation risks worsen",
+   "link": "https://www.cnbc.com/2026/10/13/treasury-yields-imf-debt-inflation-.html",
+   "sources": [
+    "CNBC"
+   ],
+   "score": 9,
+   "ts": "2026-10-13T03:24:38.030740+00:00",
+   "title_ru": "МВФ предупреждает, что доходность облигаций может вырасти «беспорядочно» по мере увеличения долга и рисков инфляции",
+   "lead": "The IMF says risks in the government bond market have worsened and that yields could jump sharply and disorderly.",
+   "lead_ru": "МВФ заявляет, что риски на рынке государственных облигаций возросли, а доходность может резко и беспорядочно подскочить.",
+   "tags": [
+    "инфляция",
+    "облигации"
+   ]
+  },
+  {
+   "title": "Surging Bond Yields Are Top Risk to Financial System, IMF Says",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-13/surging-bond-yields-are-top-risk-to-financial-system-imf-says",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-13T03:24:38.030740+00:00",
+   "title_ru": "Рост доходности облигаций представляет собой главный риск для финансовой системы, считает МВФ",
+   "lead": "A surge in government bond yields is the biggest emerging risk to the global financial system, a top official at the International Monetary Fund said, as the IMF presented its twice-yearly report on the financial stability…",
+   "lead_ru": "Рост доходности государственных облигаций является крупнейшим новым риском для мировой финансовой системы, заявил высокопоставленный чиновник Международного валютного фонда, когда МВФ представил свой два раза в год отчет о финансовой стабильности...",
+   "tags": [
+    "облигации"
+   ]
+  },
+  {
+   "title": "Threat of AI share crash puts world financial stability at risk, says IMF",
+   "link": "https://www.theguardian.com/business/2026/oct/13/ai-share-crash-risk-global-imf-debt-corrowing-cyber-attacks",
+   "sources": [
+    "The Guardian"
+   ],
+   "score": 5,
+   "ts": "2026-10-13T03:24:38.030740+00:00",
+   "title_ru": "Угроза краха акций ИИ ставит под угрозу мировую финансовую стабильность, говорит МВФ",
+   "lead": "High valuations and debt put sector in danger, while fund also warns on government borrowing and cyber-attacks The threat of an AI share price crash rippling out across global markets is putting world financial stability at risk…",
+   "lead_ru": "Высокие оценки и долг подвергают сектор опасности, в то время как фонд также предупреждает о государственных заимствованиях и кибератаках. Угроза обвала цен на акции ИИ, распространяющегося по мировым рынкам, ставит под угрозу мировую финансовую стабильность…"
+  },
+  {
+   "title": "BNP Paribas' Mateos y Lago on the Global Economy",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-13/bnp-paribas-mateos-y-lago-on-the-global-economy-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-13T03:24:38.030740+00:00",
+   "title_ru": "Матеос и Лаго из BNP Paribas о глобальной экономике",
+   "lead": "Isabelle Mateos y Lago, Group Chief Economist at BNP Paribas, says the global economy remains resilient, but faces strains from rising interest rates and energy shocks.",
+   "lead_ru": "Изабель Матеос-и-Лаго, главный экономист группы BNP Paribas, говорит, что мировая экономика остается устойчивой, но сталкивается с трудностями из-за роста процентных ставок и энергетических потрясений.",
+   "tags": [
+    "ставки"
+   ]
+  },
+  {
+   "title": "Asian stocks dive on AI jitters ahead of US bank earnings",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOZDZBM1pYcUNfelRkWE5NNC1Ja0laMUZPTm5Yei0wWGVpV3BVR3RVNDh0cHQ5ZXRDTFJpdm1wNU8wRTlkN3A2aE1LeEt2dEctUmREeXBRajEzUG1tNXc1YUxqV2ttOUFRS1pPRWhiZnJNd184SDJRV1QyVWJlMGJ4NndIZnU?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-13T03:24:38.030740+00:00",
+   "title_ru": "Азиатские акции падают из-за опасений по поводу искусственного интеллекта в преддверии отчетов банков США",
+   "tags": [
+    "рынки"
+   ]
+  },
+  {
+   "title": "State Street Investment Management's CIO on Markets",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-13/state-street-investment-management-s-cio-on-markets-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-13T03:24:38.030740+00:00",
+   "title_ru": "Директор по информационным технологиям State Street Investment Management по рынкам",
+   "lead": "Lori Heinel, Global CIO at State Street Investment Management, says AI is a transformative technology with long-term benefits that could spread across the global economy.",
+   "lead_ru": "Лори Хейнель, директор по информационным технологиям State Street Investment Management, говорит, что искусственный интеллект — это преобразующая технология с долгосрочными преимуществами, которые могут распространиться на всю мировую экономику."
+  },
+  {
+   "title": "Asia has become the largest producer of zombie companies, IMF warns",
+   "link": "https://www.ft.com/content/ee4105fc-aa85-47ef-aa64-1fc3f344d740?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 3,
+   "ts": "2026-10-13T03:24:38.030740+00:00",
+   "title_ru": "Азия стала крупнейшим производителем компаний-зомби, предупреждает МВФ",
+   "lead": "Share of groups unable to service debt in region has doubled since 2008, lender says",
+   "lead_ru": "Доля групп, неспособных обслуживать долг в регионе, удвоилась с 2008 года, говорит кредитор"
   }
  ],
  "last_digest": "2026-10-12",
@@ -3294,7 +3396,7 @@
   "2026-10-12-21"
  ],
  "calendar": {
-  "fetched": "2026-10-12T21:24:05.882177+00:00",
+  "fetched": "2026-10-13T03:24:38.030740+00:00",
   "events": [
    {
     "title": "Bank Holiday",
@@ -3453,7 +3555,7 @@
     "country": "USD",
     "ts": "2026-10-13T14:00:00+00:00",
     "impact": "Low",
-    "forecast": "3.96M",
+    "forecast": "3.95M",
     "previous": "3.98M"
    },
    {
@@ -3525,7 +3627,7 @@
     "country": "CNY",
     "ts": "2026-10-14T01:30:00+00:00",
     "impact": "Low",
-    "forecast": "4.5%",
+    "forecast": "4.4%",
     "previous": "3.8%"
    },
    {
@@ -3533,7 +3635,7 @@
     "country": "CNY",
     "ts": "2026-10-14T02:03:00+00:00",
     "impact": "Low",
-    "forecast": "805B",
+    "forecast": "790B",
     "previous": "809B"
    },
    {
@@ -3541,7 +3643,7 @@
     "country": "CNY",
     "ts": "2026-10-14T02:04:00+00:00",
     "impact": "Low",
-    "forecast": "118.1B",
+    "forecast": "116.8B",
     "previous": "119.1B"
    },
    {
@@ -3573,7 +3675,7 @@
     "country": "EUR",
     "ts": "2026-10-14T06:00:00+00:00",
     "impact": "Low",
-    "forecast": "0.7%",
+    "forecast": "0.6%",
     "previous": "0.9%"
    },
    {
@@ -3621,7 +3723,7 @@
     "country": "CAD",
     "ts": "2026-10-14T12:30:00+00:00",
     "impact": "Low",
-    "forecast": "3.1%",
+    "forecast": "2.9%",
     "previous": "-17.3%"
    },
    {
@@ -3701,7 +3803,7 @@
     "country": "JPY",
     "ts": "2026-10-14T23:50:00+00:00",
     "impact": "Low",
-    "forecast": "2.5%",
+    "forecast": "2.2%",
     "previous": "-3.7%"
    },
    {
@@ -3709,7 +3811,7 @@
     "country": "AUD",
     "ts": "2026-10-15T00:30:00+00:00",
     "impact": "High",
-    "forecast": "20.0K",
+    "forecast": "19.6K",
     "previous": "39.5K"
    },
    {
@@ -3781,7 +3883,7 @@
     "country": "GBP",
     "ts": "2026-10-15T06:00:00+00:00",
     "impact": "Low",
-    "forecast": "-21.8B",
+    "forecast": "-21.9B",
     "previous": "-21.0B"
    },
    {
@@ -3789,7 +3891,7 @@
     "country": "GBP",
     "ts": "2026-10-15T06:00:00+00:00",
     "impact": "Low",
-    "forecast": "0.7%",
+    "forecast": "0.8%",
     "previous": "0.6%"
    },
    {
@@ -3805,7 +3907,7 @@
     "country": "GBP",
     "ts": "2026-10-15T06:00:00+00:00",
     "impact": "Low",
-    "forecast": "0.1%",
+    "forecast": "-0.1%",
     "previous": "0.9%"
    },
    {
@@ -3813,7 +3915,7 @@
     "country": "CHF",
     "ts": "2026-10-15T06:30:00+00:00",
     "impact": "Low",
-    "forecast": "0.5%",
+    "forecast": "0.6%",
     "previous": "0.7%"
    },
    {
@@ -3861,7 +3963,7 @@
     "country": "EUR",
     "ts": "2026-10-15T09:00:00+00:00",
     "impact": "Low",
-    "forecast": "0.1%",
+    "forecast": "0.0%",
     "previous": "-0.1%"
    },
    {
@@ -3877,7 +3979,7 @@
     "country": "CAD",
     "ts": "2026-10-15T12:30:00+00:00",
     "impact": "Low",
-    "forecast": "-1.4%",
+    "forecast": "-1.5%",
     "previous": "0.3%"
    },
    {
@@ -3893,7 +3995,7 @@
     "country": "USD",
     "ts": "2026-10-15T12:30:00+00:00",
     "impact": "High",
-    "forecast": "0.5%",
+    "forecast": "0.6%",
     "previous": "1.4%"
    },
    {
@@ -3901,7 +4003,7 @@
     "country": "USD",
     "ts": "2026-10-15T12:30:00+00:00",
     "impact": "High",
-    "forecast": "0.5%",
+    "forecast": "0.6%",
     "previous": "0.4%"
    },
    {
@@ -3917,7 +4019,7 @@
     "country": "USD",
     "ts": "2026-10-15T12:30:00+00:00",
     "impact": "Medium",
-    "forecast": "26.5",
+    "forecast": "28.2",
     "previous": "37.8"
    },
    {
@@ -3925,7 +4027,7 @@
     "country": "USD",
     "ts": "2026-10-15T12:30:00+00:00",
     "impact": "Medium",
-    "forecast": "195K",
+    "forecast": "199K",
     "previous": "197K"
    },
    {
@@ -3933,7 +4035,7 @@
     "country": "USD",
     "ts": "2026-10-15T12:30:00+00:00",
     "impact": "Low",
-    "forecast": "3.2",
+    "forecast": "12.1",
     "previous": "7.6"
    },
    {
@@ -4069,7 +4171,7 @@
     "country": "CAD",
     "ts": "2026-10-16T12:15:00+00:00",
     "impact": "Low",
-    "forecast": "230K",
+    "forecast": "234K",
     "previous": "229K"
    },
    {
@@ -4085,7 +4187,7 @@
     "country": "USD",
     "ts": "2026-10-16T12:30:00+00:00",
     "impact": "Low",
-    "forecast": "0.6%",
+    "forecast": "0.9%",
     "previous": "0.7%"
    },
    {
@@ -4117,7 +4219,7 @@
     "country": "USD",
     "ts": "2026-10-16T18:00:00+00:00",
     "impact": "Low",
-    "forecast": "75.3B",
+    "forecast": "-34.7B",
     "previous": "-166.8B"
    },
    {
@@ -4125,7 +4227,7 @@
     "country": "USD",
     "ts": "2026-10-16T20:00:00+00:00",
     "impact": "Low",
-    "forecast": "125.7B",
+    "forecast": "75.2B",
     "previous": "-27.9B"
    },
    {
