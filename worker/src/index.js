@@ -44,14 +44,15 @@ export default {
     try {
       if (req.method === "OPTIONS") return cors(new Response(null, { status: 204 }));
       if (url.pathname === "/tg" && req.method === "POST") return await webhook(req, env, ctx);
-      if (url.pathname === "/api/quotes") return cors(await quotesApi(req, env));
+      if (url.pathname === "/api/quotes") return cors(await quotesApi(req, env, url.searchParams.get("only") || ""));
       if (url.pathname === "/subs" && req.method === "GET") return await subsList(req, env);
       if (url.pathname === "/subs/remove" && req.method === "POST") return await subsRemove(req, env);
       if (url.pathname === "/") return json({ ok: true, service: "econnews-bot" });
       return new Response("not found", { status: 404 });
     } catch (e) {
       console.log("error", e && e.stack || e);
-      return cors(json({ ok: false, error: String(e && e.message || e) }, 500));
+      // 200 с описанием ошибки: терминал покажет данные бота, а причину видно по адресу в браузере
+      return cors(json({ ok: false, error: String(e && e.message || e) }, 200));
     }
   },
 };
@@ -453,9 +454,12 @@ async function finnhubFx(env) {
   const got = {};
   const want = Object.keys(FH_FX).length;
   await new Promise((resolve) => {
-    const timer = setTimeout(resolve, 2500);
+    const timer = setTimeout(resolve, 1500);
+    let msgs = 0;
     const finish = () => { clearTimeout(timer); resolve(); };
     ws.addEventListener("message", (ev) => {
+      if (++msgs > 300) return finish();
+      if (typeof ev.data !== "string" || ev.data.indexOf('"trade"') < 0) return;
       let m;
       try { m = JSON.parse(ev.data); } catch { return; }
       if (m.type !== "trade") return;
@@ -493,15 +497,15 @@ async function eodhd(env) {
   return out;
 }
 
-async function quotesApi(req, env) {
+async function quotesApi(req, env, only) {
   const owner = await isOwner(req, env);
   const res = { ok: true, tier: owner ? "owner" : "free", refresh: owner ? OWNER_TTL : FREE_TTL,
     ts: new Date().toISOString(), stocks: {}, fx: {}, world: {}, errors: [] };
   const jobs = [];
   if (env.FINNHUB_API_KEY) {
-    jobs.push(cached("fh", owner ? OWNER_TTL : FREE_TTL, () => finnhub(env))
+    if (only !== "fx") jobs.push(cached("fh", owner ? OWNER_TTL : FREE_TTL, () => finnhub(env))
       .then((q) => { res.stocks = q; }).catch((e) => res.errors.push(String(e.message || e))));
-    jobs.push(cached("fx", FREE_TTL, () => finnhubFx(env))
+    if (only !== "stocks") jobs.push(cached("fx", FREE_TTL, () => finnhubFx(env))
       .then((q) => { res.fx = q; }).catch((e) => res.errors.push(String(e.message || e))));
   } else res.errors.push("нет ключа Finnhub");
   if (owner) {
