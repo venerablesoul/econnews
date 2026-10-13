@@ -616,7 +616,13 @@
   "e86f66d116ce85e0": "2026-10-13T20:49:08.473972+00:00",
   "26dd9a64866da4a9": "2026-10-13T20:59:08.606631+00:00",
   "9afd710f1d8a39a5": "2026-10-13T21:09:08.591856+00:00",
-  "43453e7db374499c": "2026-10-13T21:09:08.591856+00:00"
+  "43453e7db374499c": "2026-10-13T21:09:08.591856+00:00",
+  "555178f3764ffe00": "2026-10-13T21:19:08.639063+00:00",
+  "d71c76b86d1538f9": "2026-10-13T21:19:08.639063+00:00",
+  "cd4c421c1c9e7707": "2026-10-13T21:19:08.639063+00:00",
+  "d61d0edb63ebdd26": "2026-10-13T21:19:08.639063+00:00",
+  "402b2339b62b9855": "2026-10-13T21:19:08.639063+00:00",
+  "f01bce2c40b1e576": "2026-10-13T21:19:08.639063+00:00"
  },
  "recent": [
   {
@@ -6148,6 +6154,48 @@
     "нефть",
     "рынки"
    ]
+  },
+  {
+   "title": "Wells Fargo CFO on Earnings, Deals, Consumer Strength",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-13/wells-fargo-cfo-on-earnings-deals-consumer-strength-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-13T21:19:08.639063+00:00",
+   "title_ru": "Финансовый директор Wells Fargo о прибыли, сделках и потребительской силе",
+   "lead": "Wells Fargo & Co. Chief Financial Officer Mike Santomassimo says they've seen \"good activity\" across different parts of the business.",
+   "lead_ru": "Финансовый директор Wells Fargo & Co. Майк Сантомассимо говорит, что они наблюдают «хорошую активность» в различных частях бизнеса."
+  },
+  {
+   "title": "Goldman and JPMorgan Earnings: Bank Bosses Are Too Optimistic About the AI Boom",
+   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOUnFkb3dLV0lrVjdUa0VFVHBFZ0Y5djNGWlp0Uk1Vai03WWt0YWJHcEZ5TWdWUVVzNXlsbG1rNFBXSkFkM3lmUDNEVkdCSVMyM0NYUTdQSEtnU3hsWUFqYUIwR3B2U1AwZVNhd3dha05pRVlEVFRteGFUQkd6TE45RHhtWnpXY1hhWjIzMGNaMTdXQmtnLVBucjZ2YWxKUkZJVU9LSnZUR3VLS0VuRTJwSldjRWlaRTJDdnIzd21pTkxTTzVQSDJfRzNqcVc?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-13T21:19:08.639063+00:00",
+   "title_ru": "Доходы Goldman и JPMorgan: руководители банков слишком оптимистичны в отношении бума искусственного интеллекта"
+  },
+  {
+   "title": "Domino’s Sales Growth Misses as New Menu Adds Fail to Woo Diners",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQb0FPT2FLQ1BRTmlHM2NHN1E5UTRTTU55Wllhd1pJWEc5UWlnbFpzcXM0REZEWnRDdVhvekJndzVIYUtkekc5QUJkZDZzcXNPYmN2cFlrUEFhY2FKYmxoVkJHMV92WVE5V1dMY0ZjLTZfOEkxalRFekFWdWRCcDJyZEZrWGVKRnVzWkFfR0dLTmZuZVBiZ3V2RnBySVNjRzc2WDlNM05vT1FXeUJpZzN3Z3pBeUVwZw?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-13T21:19:08.639063+00:00",
+   "title_ru": "Рост продаж Domino замедляется, поскольку новое меню не привлекает посетителей"
+  },
+  {
+   "title": "Saudi rebound lifts most Gulf bourses as markets weigh regional risks",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPT2QwdDlmNnJldTg2cjk5SjhEZE9pU0VDRjhJeXlxbXVqeEs3bkRRM21iQUkwNzdKR3BwZ01mV1lacEpZZm1vTUhZOXZtTGNFWUFwVjE3eW1scWk0RkxWV0gzcjRLbVJGVGpRckpIUkVRRy1SYlo0OXpKU2V6T2IyNkJsaGpGQk9JNHR2YmdITXFkUzJMdGV6SVpTWlB0QlEwSjlacGc4SHFGemJXNGZz?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-13T21:19:08.639063+00:00",
+   "title_ru": "Восстановление Саудовской Аравии способствует росту большинства бирж Персидского залива, поскольку рынки взвешивают региональные риски"
   }
  ],
  "last_digest": "2026-10-13",
@@ -7600,7 +7648,7 @@
    "house": true,
    "senate": true
   },
-  "checked": "2026-10-13T20:15:09.310695+00:00",
+  "checked": "2026-10-13T21:19:08.639063+00:00",
   "sec_seen": [],
   "errors": {
    "sec": "HTTPError: HTTP Error 403: Forbidden"
