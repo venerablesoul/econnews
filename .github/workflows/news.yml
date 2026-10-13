@@ -36,6 +36,7 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}   # необязательно: факт по данным США
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}   # необязательно: «Имя ваш@email» для сайта SEC
           MIN_LEVEL: medium       # high = только самое важное
           DIGEST_HOUR: "21"       # дневная сводка в 21:00 МСК; -1 = выключить
           CHART_HOURS: "9,21"     # когда присылать картинку с графиками (часы МСК); пусто = никогда

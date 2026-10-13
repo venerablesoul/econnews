@@ -18,6 +18,7 @@
 """
 from __future__ import annotations
 
+import gzip
 import hashlib
 import html
 import http.cookiejar
@@ -66,13 +67,17 @@ def _get(url, headers=None, timeout=30, opener=None, data=None):
     req = urllib.request.Request(url, headers=h, data=data)
     op = opener.open if opener else urllib.request.urlopen
     with op(req, timeout=timeout) as r:
-        return r.read()
+        raw = r.read()
+        if (r.headers.get("Content-Encoding") or "").lower() == "gzip":
+            raw = gzip.decompress(raw)
+        return raw
 
 
 def _sec_headers():
-    # SEC требует, чтобы в User-Agent было указано, кто обращается, и контактный адрес
-    ua = os.environ.get("SEC_USER_AGENT", "").strip() or "EconNewsBot news-bot@users.noreply.github.com"
-    return {"User-Agent": ua, "Accept-Encoding": "identity"}
+    # SEC требует заголовки ровно по своему образцу: «Название контакт@домен», gzip, Host.
+    # Если SEC всё равно отвечает 403 — задайте секрет SEC_USER_AGENT, например «EconNews ваш@email.com».
+    ua = os.environ.get("SEC_USER_AGENT", "").strip() or "EconNews venerablesoul@users.noreply.github.com"
+    return {"User-Agent": ua, "Accept-Encoding": "gzip, deflate", "Host": "www.sec.gov", "Accept": "*/*"}
 
 
 def _id(*parts):
