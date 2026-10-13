@@ -636,7 +636,9 @@
   "3b48f60ae1c43ef4": "2026-10-13T22:19:08.634017+00:00",
   "f5afc7debb50a496": "2026-10-13T22:19:08.634017+00:00",
   "b6bb270d41ea05d5": "2026-10-13T22:19:08.634017+00:00",
-  "f7f42534572c5d22": "2026-10-13T22:19:08.634017+00:00"
+  "f7f42534572c5d22": "2026-10-13T22:19:08.634017+00:00",
+  "13c6e02be1f332c7": "2026-10-13T22:29:08.604187+00:00",
+  "8be72b8d88b12e40": "2026-10-13T22:29:08.604187+00:00"
  },
  "recent": [
   {
@@ -6322,6 +6324,38 @@
    "tags": [
     "нефть"
    ]
+  },
+  {
+   "title": "Asia Stocks to Gain on Signal for Fewer Fed Hikes: Markets Wrap",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-13/stock-market-today-dow-s-p-live-updates",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-13T22:29:08.604187+00:00",
+   "title_ru": "Азиатские акции вырастут на сигнале о меньшем повышении ставок ФРС: итоги рынков",
+   "lead": "Asian stocks looked set for broad gains on Wednesday after US equities recovered from session lows on signals that the Federal Reserve may not need to raise interest rates aggressively next year.",
+   "lead_ru": "Азиатские акции в среду выглядели настроенными на значительный рост после того, как акции США восстановились с сессионных минимумов на фоне сигналов о том, что Федеральной резервной системе, возможно, не понадобится агрессивно повышать процентные ставки в следующем году.",
+   "tags": [
+    "ФРС",
+    "ставки",
+    "рынки"
+   ]
+  },
+  {
+   "title": "Fed’s Lisa Cook Puts Off White House Hearing Over Trump’s Allegations",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-13/fed-s-lisa-cook-puts-off-white-house-hearing-over-trump-s-allegations",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-13T22:29:08.604187+00:00",
+   "title_ru": "Глава ФРС Лиза Кук откладывает слушания в Белом доме по поводу обвинений Трампа",
+   "lead": "Federal Reserve Governor Lisa Cook says she will be unable to attend a Nov. 5 hearing at the White House that’s part of a new investigation into mortgage fraud allegations by President Donald Trump.",
+   "lead_ru": "Управляющий Федеральной резервной системы Лиза Кук заявила, что не сможет присутствовать на слушаниях 5 ноября в Белом доме, которые являются частью нового расследования обвинений президента Дональда Трампа в мошенничестве с ипотекой.",
+   "tags": [
+    "ФРС"
+   ]
   }
  ],
  "last_digest": "2026-10-13",
@@ -7774,7 +7808,7 @@
    "house": true,
    "senate": true
   },
-  "checked": "2026-10-13T21:19:08.639063+00:00",
+  "checked": "2026-10-13T22:29:08.604187+00:00",
   "sec_seen": [],
   "errors": {
    "sec": "HTTPError: HTTP Error 403: Forbidden"
