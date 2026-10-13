@@ -28,8 +28,8 @@ jobs:
           cache: pip
           cache-dependency-path: .github/workflows/news.yml
 
-      - name: Install chart library
-        run: pip install matplotlib
+      - name: Install chart and PDF libraries
+        run: pip install matplotlib pdfplumber
 
       - name: Collect and send news
         env:
@@ -51,6 +51,10 @@ jobs:
           REMIND_MINUTES: "60"    # за сколько минут напоминать; 0 = не напоминать
           ALERTS: "yes"           # сразу сообщать, если источник перестал отвечать
           TERMINAL_BUTTON: "yes"  # кнопка «🖥 Терминал» под сообщениями
+          TRADES: "yes"           # сделки политиков США и инсайдеров компаний
+          CONGRESS_MIN: "15000"   # присылать сделки политиков от $15 тыс. (меньше — только в терминале)
+          INSIDER_MIN_BUY: "250000"     # покупки инсайдеров от $250 тыс.
+          INSIDER_MIN_SELL: "10000000"  # продажи инсайдеров от $10 млн (плановые продажи 10b5-1 не присылаются)
         run: |
           # адрес страницы «Рынок онлайн» на GitHub Pages
           export PAGES_URL="https://${GITHUB_REPOSITORY_OWNER,,}.github.io/${GITHUB_REPOSITORY#*/}/"

@@ -15,7 +15,7 @@ GitHub → вкладка **Actions** → **Economic news** → **⋯** → **Di
 2. **На сервере:**
    ```bash
    sudo apt update && sudo apt install -y git python3 python3-pip
-   sudo pip3 install matplotlib --break-system-packages   # для картинок с графиками
+   sudo pip3 install matplotlib pdfplumber --break-system-packages   # графики и отчёты о сделках
    sudo useradd -m bot && sudo -iu bot
    git clone https://ТОКЕН@github.com/venerablesoul/econnews.git
    cd econnews
@@ -36,7 +36,7 @@ GitHub → вкладка **Actions** → **Economic news** → **⋯** → **Di
    cd econnews
    copy .env.example .env
    notepad .env
-   pip install matplotlib
+   pip install matplotlib pdfplumber
    ```
 3. Запустите `deploy\start_windows.bat`. Для автозапуска при включении: Win+R → `shell:startup` → положите туда ярлык на этот файл.
 

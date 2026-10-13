@@ -10,9 +10,11 @@
   5. утром (9:00 МСК) — главное за ночь и календарь событий дня,
      вечером (21:00 МСК) — итоги дня и календарь на завтра,
   6. напоминает о важных данных (инфляция, ставки, занятость) за час до выхода,
-  7. сразу сообщает, если источник перестал отвечать (и когда снова заработал).
+  7. сразу сообщает, если источник перестал отвечать (и когда снова заработал),
+  8. присылает крупные сделки политиков США и инсайдеров компаний (trades.py).
 
-Только стандартная библиотека Python 3.9+, ничего ставить не нужно.
+Только стандартная библиотека Python 3.9+. Необязательно: matplotlib (картинка с графиками)
+и pdfplumber (чтение отчётов о сделках Палаты представителей США).
 
 Переменные окружения:
   TELEGRAM_BOT_TOKEN   токен бота от @BotFather            (обязательно)
@@ -28,6 +30,10 @@
   REMIND_MINUTES       за сколько минут напоминать о событии (60), 0 = не напоминать
   ALERTS               yes/no — оповещения о сбоях источников
   FRED_API_KEY         бесплатный ключ FRED — факт по вышедшим данным США (секрет GitHub)
+  TRADES               yes/no — сделки политиков США и инсайдеров (trades.py)
+  CONGRESS_MIN         присылать сделки политиков от этой суммы, $ (15000)
+  INSIDER_MIN_BUY      присылать покупки инсайдеров от этой суммы, $ (250000)
+  INSIDER_MIN_SELL     присылать продажи инсайдеров от этой суммы, $ (10000000)
   STATE_FILE           путь к файлу состояния (state.json)
 
 Запуск вручную:
@@ -747,6 +753,14 @@ def write_page_data(st, quotes, now):
                  for r in news[:150]],
         "calendar": page_calendar(st, now),
     }
+    if st.get("trades"):
+        try:
+            import trades
+            data["trades"] = trades.page_data(st)
+        except Exception as e:
+            print(f"  ! сделки для терминала: {type(e).__name__}: {e}")
+            if old.get("trades"):
+                data["trades"] = old["trades"]
     with open(path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, separators=(",", ":"))
 
@@ -950,6 +964,18 @@ def run(dry=False):
         if lines:
             tg.send("\n".join(lines), silent=True)
 
+    # сделки политиков США и инсайдеров (официальные раскрытия, без ключей)
+    n_trades = 0
+    if _env_on("TRADES", "yes"):
+        try:
+            import trades
+            new_trades = trades.update(st, now)
+            for m in trades.messages(new_trades):
+                tg.send(m, silent=silent)
+            n_trades = sum(len(v) for v in new_trades.values())
+        except Exception as e:
+            print(f"  ! сделки: {type(e).__name__}: {e}")
+
     # картинка с графиками рынков (по умолчанию в 9 и 21 МСК)
     chart_key = now_msk.strftime("%Y-%m-%d-%H")
     st.setdefault("charts_sent", [])
@@ -992,7 +1018,8 @@ def run(dry=False):
     save_state(state_path, st, now)
 
     print(f"[{stamp} МСК] кандидатов: {len(candidates)}, новых историй: {len(stories)}, "
-          f"отправлено: {len(to_send[:MAX_PER_MESSAGE_BATCH])}, котировок: {len(quotes)}, ошибки источников: {len(errors)}")
+          f"отправлено: {len(to_send[:MAX_PER_MESSAGE_BATCH])}, котировок: {len(quotes)}, сделок: {n_trades}, "
+          f"ошибки источников: {len(errors)}")
     for name, err in sorted(errors.items()):
         print(f"  ! {name}: {err}")
 

@@ -76,7 +76,7 @@ main{flex:1;min-height:0;display:grid;gap:1px;background:var(--line);
 .ph .code{background:#000;color:var(--amber);padding:0 5px;font-weight:700}
 .ph .sub{margin-left:auto;font-weight:400;font-size:11px;opacity:.8}
 .pb{flex:1;overflow:auto;min-height:0;scrollbar-width:thin;scrollbar-color:#333 transparent}
-#p-mkt{grid-area:mkt} #p-chart{grid-area:chart} #p-crypto{grid-area:crypto} #p-news{grid-area:news} #p-eco{grid-area:eco}
+#p-mkt{grid-area:mkt} #p-chart{grid-area:chart} #p-crypto{grid-area:crypto} #p-news{grid-area:news} #p-eco{grid-area:eco} #p-trd{grid-area:eco}
 
 /* таблицы котировок */
 .sec{color:var(--amber);padding:7px 8px 3px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;position:sticky;top:0;background:var(--panel);z-index:1}
@@ -146,6 +146,21 @@ td.sp svg{display:block}
 .eco .fp{color:var(--faint);font-size:11px}
 .eco .act{font-weight:700;color:var(--text)} .eco .act.up{color:var(--up)} .eco .act.down{color:var(--down)}
 
+/* сделки */
+.trd td{vertical-align:top}
+.trd td.t{color:var(--muted);width:44px}
+.trd .ev{white-space:normal}
+.trd .tk{color:var(--amber);font-weight:700;cursor:pointer;margin-right:6px}
+.trd .tk:hover{color:var(--yellow)}
+.trd .amt{color:var(--text);margin-left:6px}
+.trd .who{color:var(--muted);font-size:11.5px;margin-top:1px}
+.trd .who a{color:var(--amber-dim);text-decoration:none;margin-left:4px}
+.trd .who a:hover{color:var(--amber)}
+.trd .plan{color:var(--faint)}
+.ntools .sep{width:1px;align-self:stretch;background:var(--line2);flex:none}
+.ph .swap{margin-left:auto} .ph .sub + .swap{margin-left:6px}
+@media (min-width:761px){ #p-eco.alt, #p-trd.alt{display:none} }
+
 /* оверлеи */
 .overlay{position:fixed;inset:0;background:rgba(0,0,0,.78);display:none;align-items:flex-start;justify-content:center;z-index:50;padding:60px 12px 12px}
 .overlay.on{display:flex}
@@ -169,7 +184,7 @@ nav.tabs{display:none}
 @media (max-width:1100px){
   main{grid-template-columns:minmax(300px,40%) 1fr;grid-template-rows:55% 45%;
     grid-template-areas:"mkt chart" "crypto news"}
-  #p-eco{display:none}
+  #p-eco, #p-trd{display:none}
   .clocks .clock:nth-child(n+3){display:none}
 }
 @media (max-width:760px){
@@ -178,7 +193,8 @@ nav.tabs{display:none}
   main{display:block;background:var(--bg)}
   .panel{display:none;height:100%}
   .panel.show{display:flex}
-  #p-eco.show{display:flex}
+  #p-eco.show, #p-trd.show{display:flex}
+  .ph .swap{display:none}
   nav.tabs{display:flex;flex:none;border-top:1px solid var(--line2);background:#050505;padding-bottom:env(safe-area-inset-bottom)}
   nav.tabs button{flex:1;padding:9px 0 8px;color:var(--muted);font-size:11px;letter-spacing:.03em}
   nav.tabs button.on{color:var(--amber);box-shadow:inset 0 2px 0 var(--amber)}
@@ -193,7 +209,7 @@ nav.tabs{display:none}
     <div class="logo">ECON</div>
     <form class="cmd" id="cmdf" autocomplete="off">
       <span>&gt;</span>
-      <input id="cmd" placeholder="команда: WEI, FX, CRYPTO, N, ECO, GOLD, BTC, HELP…" spellcheck="false" autocapitalize="characters" enterkeyhint="go">
+      <input id="cmd" placeholder="команда: WEI, FX, CRYPTO, N, ECO, TRD, GOLD, BTC, HELP…" spellcheck="false" autocapitalize="characters" enterkeyhint="go">
       <button class="go" type="submit">GO</button>
     </form>
     <div class="clocks" id="clocks"></div>
@@ -240,9 +256,21 @@ nav.tabs{display:none}
   </section>
 
   <section class="panel" id="p-eco">
-    <div class="ph"><span class="code">ECO</span>КАЛЕНДАРЬ · МСК</div>
+    <div class="ph"><span class="code">ECO</span>КАЛЕНДАРЬ · МСК<button class="mode swap" data-to="p-trd" title="Показать сделки политиков и инсайдеров">⇄ СДЕЛКИ</button></div>
     <div class="eco-next" id="eco-next">—</div>
     <div class="pb"><table class="eco" id="eco"></table></div>
+  </section>
+
+  <section class="panel alt" id="p-trd">
+    <div class="ph"><span class="code">TRD</span>СДЕЛКИ<span class="sub" id="trd-upd"></span><button class="mode swap" data-to="p-eco" title="Показать календарь">⇄ ECO</button></div>
+    <div class="ntools" id="ttools">
+      <button class="chip on" data-k="congress">🏛 ПОЛИТИКИ</button>
+      <button class="chip" data-k="insiders">💼 ИНСАЙДЕРЫ</button>
+      <span class="sep"></span>
+      <button class="chip" data-buy="1" title="Только покупки">ПОКУПКИ</button>
+      <input id="tq" placeholder="тикер или имя…" type="search">
+    </div>
+    <div class="pb"><table class="trd" id="trd"></table><div class="note" id="trd-note"></div></div>
   </section>
 </main>
 
@@ -252,6 +280,7 @@ nav.tabs{display:none}
   <button data-p="p-crypto">КРИПТА</button>
   <button data-p="p-news">НОВОСТИ</button>
   <button data-p="p-eco">КАЛЕНДАРЬ</button>
+  <button data-p="p-trd">СДЕЛКИ</button>
 </nav>
 
 <div class="overlay" id="ov-help">
@@ -267,6 +296,8 @@ nav.tabs{display:none}
         <tr><td>CRYPTO</td><td>криптовалюты в реальном времени</td></tr>
         <tr><td>N</td><td>лента новостей бота (N НЕФТЬ — поиск по слову)</td></tr>
         <tr><td>ECO</td><td>экономический календарь</td></tr>
+        <tr><td>TRD, СДЕЛКИ</td><td>сделки политиков США и инсайдеров (TRD NVDA — по тикеру или имени)</td></tr>
+        <tr><td>CONG, INS</td><td>сразу сделки политиков / инсайдеров</td></tr>
         <tr><td>GOLD, BRENT, SPX, DAX, BTC, ETH…</td><td>открыть график инструмента</td></tr>
         <tr><td>NASDAQ:AAPL, MOEX:SBER, AAPL</td><td>график любого тикера TradingView</td></tr>
         <tr><td>US</td><td>акции и ETF США онлайн (с ключом Finnhub)</td></tr>
@@ -274,7 +305,7 @@ nav.tabs{display:none}
         <tr><td>SET</td><td>настройки: бесплатный ключ Finnhub и ключ EODHD</td></tr>
         <tr><td>HELP</td><td>эта справка</td></tr>
       </table>
-      <p style="margin-top:10px">Нажатие на строку в любой таблице открывает график. Русские команды тоже работают: РЫНКИ, ВАЛЮТЫ, СЫРЬЁ, КРИПТА, НОВОСТИ, КАЛЕНДАРЬ.</p>
+      <p style="margin-top:10px">Нажатие на строку в любой таблице открывает график. Русские команды тоже работают: РЫНКИ, ВАЛЮТЫ, СЫРЬЁ, КРИПТА, НОВОСТИ, КАЛЕНДАРЬ, СДЕЛКИ, ПОЛИТИКИ, ИНСАЙДЕРЫ.</p>
     </div>
   </div>
 </div>
@@ -409,6 +440,7 @@ var Q = {};          // котировки мировых рынков по id
 var C = {};          // крипта по тикеру
 var data = null;     // data.json бота
 var newsFilter = 'all', newsQuery = '';
+var trdKind = 'congress', trdBuy = false, trdQuery = '';
 var curChart = 'S&P';
 
 /* ======================= часы ======================= */
@@ -493,7 +525,7 @@ $('mkt').addEventListener('click', function(e){ var tr = e.target.closest('tr.ro
 /* ---------- данные бота ---------- */
 function loadData(){
   fetch('../data.json?t=' + Date.now(), {cache:'no-store'}).then(function(r){ return r.json() }).then(function(d){
-    data = d; ingestMarket(d.market); renderMarket(); renderNews(); renderEco();
+    data = d; ingestMarket(d.market); renderMarket(); renderNews(); renderEco(); renderTrades();
     if ($('ownc') && !($('tvc') && $('tvc').firstChild)) ownSeries(curChart, function(p){ drawOwn(p, ($('chart-title').textContent || '').replace('ГРАФИК · ', '')) });
     $('news-upd').textContent = d.updated ? 'обновлено ' + hm(d.updated) + ' МСК' : '';
   }).catch(function(){ $('mkt').innerHTML = ''; $('mkt').appendChild(el('div', 'note', 'Не удалось загрузить данные бота (docs/data.json).')) });
@@ -861,9 +893,81 @@ function renderEco(){
   } else box.textContent = 'Важных событий на неделе больше нет';
 }
 
+/* ======================= сделки ======================= */
+var TRD_TYPE = {buy:['ПОКУПКА', 'up'], sell:['ПРОДАЖА', 'down'], sell_part:['ЧАСТ. ПРОДАЖА', 'down'], exchange:['ОБМЕН', 'flat']};
+var TRD_OWNER = {SP:'супруг(а)', JT:'совместно', DC:'ребёнок', Spouse:'супруг(а)', Joint:'совместно', Child:'ребёнок', 'Dependent Child':'ребёнок'};
+function num1(x){ return String(Math.round(x * 10) / 10).replace('.', ',') }
+function usd(v){ if (v == null) return '—'; if (v >= 1e9) return '$' + num1(v / 1e9) + ' млрд'; if (v >= 1e6) return '$' + num1(v / 1e6) + ' млн'; if (v >= 1e3) return '$' + Math.round(v / 1e3) + ' тыс.'; return '$' + Math.round(v) }
+function usdRange(a, b){
+  if (!a) return 'сумма не указана';
+  if (b == null) return 'более ' + usd(a - 1);
+  if (a === b) return usd(a);
+  var u = b >= 1e6 ? 1e6 : 1e3;
+  return '$' + num1(a / u) + '–' + num1(b / u) + (b >= 1e6 ? ' млн' : ' тыс.');
+}
+function dmy(d){ return d && d.length >= 10 ? d.slice(8, 10) + '.' + d.slice(5, 7) : '—' }
+function renderTrades(){
+  var t = $('trd'); t.innerHTML = '';
+  var tr0 = data && data.trades;
+  $('trd-upd').textContent = tr0 && tr0.checked ? 'проверено ' + hm(tr0.checked) + ' МСК' : '';
+  $('trd-note').textContent = trdKind === 'congress'
+    ? 'Члены Конгресса США обязаны раскрывать сделки в течение 45 дней, суммы — диапазонами. Источник: отчёты Палаты представителей и Сената.'
+    : 'Руководители и директора компаний США: покупки от $25 тыс. и продажи от $500 тыс. на открытом рынке. Источник: форма 4, SEC EDGAR.';
+  if (!tr0) { t.appendChild(el('tr')).appendChild(el('td', 'note', 'Сделки появятся после следующей проверки бота.')); return }
+  var q = trdQuery.toLowerCase();
+  var items = (tr0[trdKind] || []).filter(function(x){
+    if (trdBuy && x.type !== 'buy') return false;
+    if (q && ((x.ticker || '') + ' ' + (x.who || '') + ' ' + (x.company || x.asset || '')).toLowerCase().indexOf(q) < 0) return false;
+    return true;
+  });
+  if (!items.length) { t.appendChild(el('tr')).appendChild(el('td', 'note', q || trdBuy ? 'Ничего не найдено' : 'Пока сделок нет — бот догружает отчёты.')); return }
+  var last = '';
+  items.slice(0, 200).forEach(function(x){
+    var lbl = x.disclosed ? 'РАСКРЫТО ' + dayLabel(x.disclosed + 'T12:00:00+03:00') : '';
+    if (lbl !== last) { var r = el('tr'); var d = el('td', 'day', lbl); d.colSpan = 2; r.appendChild(d); t.appendChild(r); last = lbl }
+    var row = el('tr');
+    var td0 = el('td', 't', dmy(x.date)); td0.title = 'дата сделки'; row.appendChild(td0);
+    var td = el('td', 'ev'), ty = TRD_TYPE[x.type] || ['СДЕЛКА', 'flat'];
+    var tk = el('span', 'tk', x.ticker); tk.title = 'открыть график'; tk.onclick = function(){ runSymbol(x.ticker) }; td.appendChild(tk);
+    td.appendChild(el('span', ty[1], ty[0]));
+    td.appendChild(el('span', 'amt', trdKind === 'congress' ? usdRange(x.amin, x.amax) : usd(x.value)));
+    var who = el('div', 'who');
+    if (trdKind === 'congress') {
+      who.appendChild(document.createTextNode(x.who + ' · ' + x.where + (TRD_OWNER[x.owner] ? ' · ' + TRD_OWNER[x.owner] : '') + (x.asset ? ' · ' + x.asset : '')));
+    } else {
+      who.appendChild(document.createTextNode((x.company || '') + ' · ' + x.who + (x.role ? ', ' + x.role : '') + ' · ' +
+        fmt(x.shares, 0) + ' акций по $' + fmt(x.price, 2)));
+      if (x.plan) who.appendChild(el('span', 'plan', ' · по плану 10b5-1'));
+    }
+    if (/^https?:\/\//.test(x.link || '')) { var a = el('a', null, trdKind === 'congress' ? 'отчёт ↗' : 'форма 4 ↗'); a.href = x.link; a.target = '_blank'; a.rel = 'noopener'; who.appendChild(a) }
+    td.appendChild(who); row.appendChild(td); t.appendChild(row);
+  });
+}
+function setTrd(kind, buy){
+  if (kind) trdKind = kind;
+  if (buy != null) trdBuy = buy;
+  $('ttools').querySelectorAll('.chip[data-k]').forEach(function(c){ c.classList.toggle('on', c.dataset.k === trdKind) });
+  $('ttools').querySelector('.chip[data-buy]').classList.toggle('on', trdBuy);
+  renderTrades();
+}
+$('ttools').addEventListener('click', function(e){
+  var c = e.target.closest('.chip'); if (!c) return;
+  if (c.dataset.k) setTrd(c.dataset.k); else setTrd(null, !trdBuy);
+});
+$('tq').addEventListener('input', function(){ trdQuery = this.value; renderTrades() });
+function openTrd(kind, arg){
+  show('p-trd'); $('tq').value = arg || ''; trdQuery = arg || '';
+  if (!kind && arg && data && data.trades) {   // TRD NVDA: если в текущем разделе пусто, а в другом есть — переключаемся
+    var q = arg.toLowerCase(), has = function(k){ return (data.trades[k] || []).some(function(x){ return ((x.ticker || '') + ' ' + (x.who || '') + ' ' + (x.company || x.asset || '')).toLowerCase().indexOf(q) >= 0 }) };
+    if (!has(trdKind)) kind = ['congress', 'insiders'].filter(has)[0];
+  }
+  setTrd(kind || null);
+}
+
 /* ======================= панели и команды ======================= */
 var isMobile = function(){ return window.matchMedia('(max-width:760px)').matches };
 function show(pid){
+  if (pid === 'p-eco' || pid === 'p-trd') { $('p-eco').classList.toggle('alt', pid !== 'p-eco'); $('p-trd').classList.toggle('alt', pid !== 'p-trd'); store('eco_slot', pid) }
   document.querySelectorAll('.panel').forEach(function(p){ p.classList.toggle('show', p.id === pid); p.classList.toggle('focus', p.id === pid) });
   document.querySelectorAll('#tabs button').forEach(function(b){ b.classList.toggle('on', b.dataset.p === pid) });
   if (pid === 'p-chart' && !$('ownc')) openChart(curChart, null, true);
@@ -875,6 +979,7 @@ document.querySelectorAll('.overlay').forEach(function(o){
   o.addEventListener('click', function(e){ if (e.target === o || e.target.hasAttribute('data-close')) o.classList.remove('on') });
 });
 document.querySelectorAll('#tabs button').forEach(function(b){ b.onclick = function(){ show(b.dataset.p) } });
+document.querySelectorAll('.ph .swap').forEach(function(b){ b.onclick = function(e){ e.stopPropagation(); show(b.dataset.to) } });
 
 var CMDS = {
   WEI:function(){ goSection('WEI') }, 'РЫНКИ':function(){ goSection('WEI') }, 'ИНДЕКСЫ':function(){ goSection('WEI') },
@@ -885,6 +990,9 @@ var CMDS = {
   CRYPTO:function(){ show('p-crypto') }, 'КРИПТА':function(){ show('p-crypto') },
   N:function(arg){ show('p-news'); $('nq').value = arg || ''; newsQuery = arg || ''; setNewsFilter('all') },
   NEWS:function(arg){ CMDS.N(arg) }, 'НОВОСТИ':function(arg){ CMDS.N(arg) }, TOP:function(){ show('p-news'); setNewsFilter('high') },
+  TRD:function(arg){ openTrd(null, arg) }, TRADES:function(arg){ openTrd(null, arg) }, 'СДЕЛКИ':function(arg){ openTrd(null, arg) },
+  CONG:function(arg){ openTrd('congress', arg) }, 'ПОЛИТИКИ':function(arg){ openTrd('congress', arg) }, 'КОНГРЕСС':function(arg){ openTrd('congress', arg) },
+  INS:function(arg){ openTrd('insiders', arg) }, 'ИНСАЙДЕРЫ':function(arg){ openTrd('insiders', arg) },
   ECO:function(){ show('p-eco') }, CAL:function(){ show('p-eco') }, 'КАЛЕНДАРЬ':function(){ show('p-eco') },
   GP:function(arg){ arg ? runSymbol(arg) : show('p-chart') }, 'ГРАФИК':function(arg){ CMDS.GP(arg) },
   HELP:function(){ openOverlay('ov-help') }, '?':function(){ openOverlay('ov-help') }, 'ПОМОЩЬ':function(){ openOverlay('ov-help') },
@@ -979,6 +1087,7 @@ function safe(f){ try { f() } catch(e){ console.error(e) } }
 var lc = (store('last_chart') || '').split('|');
 if (lc[0]) curChart = lc[0];
 safe(function(){ if (!isMobile()) { document.querySelectorAll('.panel').forEach(function(p){ p.classList.add('show') }); openChart(lc[0] || 'S&P', lc[1] || null, true) } });
+safe(function(){ if (!isMobile() && store('eco_slot') === 'p-trd') { $('p-eco').classList.add('alt'); $('p-trd').classList.remove('alt') } });
 safe(function(){ tick(); setInterval(tick, 15000) });
 safe(renderCrypto);
 safe(function(){ loadData(); setInterval(loadData, 120000) });
