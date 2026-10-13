@@ -1,0 +1,90 @@
+name: Bot server (Cloudflare)
+
+# Выкладывает сервер бота (папка worker/) на Cloudflare Workers:
+# мгновенные ответы на /start и команды, подписчики, котировки для терминала со скрытыми ключами.
+# Запускается сам при изменении worker/ или вручную: Actions → Bot server (Cloudflare) → Run workflow.
+# Что нужно один раз настроить — в README, раздел «Сервер бота».
+
+on:
+  push:
+    branches: [main]
+    paths: ["worker/**", ".github/workflows/worker.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: write             # сохранить адрес сервера в docs/config.json
+
+concurrency:
+  group: bot-server
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}   # необязательно: определится сам
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}             # владелец бота
+      FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}               # бесплатный ключ — для всех
+      EODHD_API_KEY: ${{ secrets.EODHD_API_KEY }}                   # платный ключ — только владельцу
+      TERMINAL_PASSWORD: ${{ secrets.TERMINAL_PASSWORD }}           # необязательно: вход владельца в терминал из браузера
+    steps:
+      - name: Check that Cloudflare is set up
+        run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ]; then
+            if [ "${{ github.event_name }}" = "push" ]; then
+              echo "::notice::Сервер бота пока не настроен (нет секрета CLOUDFLARE_API_TOKEN) — пропускаю. Инструкция в README, раздел «Сервер бота»."
+              echo "SKIP=1" >> "$GITHUB_ENV"
+            else
+              echo "::error::Нет секрета CLOUDFLARE_API_TOKEN. Инструкция в README, раздел «Сервер бота»."
+              exit 1
+            fi
+          fi
+
+      - uses: actions/checkout@v4
+        if: env.SKIP != '1'
+
+      - uses: actions/setup-node@v4
+        if: env.SKIP != '1'
+        with:
+          node-version: "22"
+
+      - name: Prepare Cloudflare (account, subscribers storage, workers.dev)
+        if: env.SKIP != '1'
+        run: |
+          echo "PAGES_URL=${{ vars.PAGES_URL || format('https://{0}.github.io/{1}/', github.repository_owner, github.event.repository.name) }}" >> "$GITHUB_ENV"
+          python3 worker/deploy.py prepare
+
+      - name: Deploy server
+        if: env.SKIP != '1'
+        working-directory: worker
+        run: npx --yes wrangler@4 deploy --var "PAGES_URL:${PAGES_URL,,}"
+
+      - name: Upload keys as server secrets
+        if: env.SKIP != '1'
+        working-directory: worker
+        run: |
+          python3 deploy.py secrets
+          npx --yes wrangler@4 secret bulk .secrets.json
+          rm -f .secrets.json
+
+      - name: Connect Telegram and check everything
+        if: env.SKIP != '1'
+        run: python3 worker/deploy.py telegram
+
+      - name: Save server address for the bot and terminal
+        if: env.SKIP != '1'
+        run: |
+          python3 worker/deploy.py config
+          git config user.name "news-bot"
+          git config user.email "news-bot@users.noreply.github.com"
+          git add docs/config.json
+          if ! git diff --cached --quiet; then
+            git commit -m "адрес сервера бота"
+            for i in 1 2 3 4 5; do
+              git pull --rebase -q && git push -q && break
+              sleep 5
+            done
+          fi

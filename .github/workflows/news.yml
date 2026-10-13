@@ -56,8 +56,9 @@ jobs:
           INSIDER_MIN_BUY: "250000"     # покупки инсайдеров от $250 тыс.
           INSIDER_MIN_SELL: "10000000"  # продажи инсайдеров от $10 млн (плановые продажи 10b5-1 не присылаются)
         run: |
-          # адрес страницы «Рынок онлайн» на GitHub Pages
-          export PAGES_URL="https://${GITHUB_REPOSITORY_OWNER,,}.github.io/${GITHUB_REPOSITORY#*/}/"
+          # адрес страницы «Рынок онлайн»: GitHub Pages или свой домен (переменная репозитория PAGES_URL)
+          export PAGES_URL="${{ vars.PAGES_URL }}"
+          [ -n "$PAGES_URL" ] || export PAGES_URL="https://${GITHUB_REPOSITORY_OWNER,,}.github.io/${GITHUB_REPOSITORY#*/}/"
           # цикл: проверка каждые 10 мин, через 5,5 ч выход (следующий запуск уже в очереди)
           LOOP_HOURS=5.5 python news_bot.py --loop 10 --git-sync
 

@@ -300,9 +300,9 @@ nav.tabs{display:none}
         <tr><td>CONG, INS</td><td>сразу сделки политиков / инсайдеров</td></tr>
         <tr><td>GOLD, BRENT, SPX, DAX, BTC, ETH…</td><td>открыть график инструмента</td></tr>
         <tr><td>NASDAQ:AAPL, MOEX:SBER, AAPL</td><td>график любого тикера TradingView</td></tr>
-        <tr><td>US</td><td>акции и ETF США онлайн (с ключом Finnhub)</td></tr>
+        <tr><td>US</td><td>акции и ETF США онлайн (через сервер бота)</td></tr>
         <tr><td>AAPL, NVDA, TSLA, SPY…</td><td>график акции</td></tr>
-        <tr><td>SET</td><td>настройки: бесплатный ключ Finnhub и ключ EODHD</td></tr>
+        <tr><td>SET</td><td>настройки и вход владельца</td></tr>
         <tr><td>HELP</td><td>эта справка</td></tr>
       </table>
       <p style="margin-top:10px">Нажатие на строку в любой таблице открывает график. Русские команды тоже работают: РЫНКИ, ВАЛЮТЫ, СЫРЬЁ, КРИПТА, НОВОСТИ, КАЛЕНДАРЬ, СДЕЛКИ, ПОЛИТИКИ, ИНСАЙДЕРЫ.</p>
@@ -314,15 +314,12 @@ nav.tabs{display:none}
   <div class="dlg">
     <div class="ph"><span class="code">SET</span>НАСТРОЙКИ<button data-close>✕</button></div>
     <div class="in">
-      <p><b style="color:var(--text)">Мировые рынки.</b> Без ключа котировки берутся из данных бота (обновление ~раз в 30 минут, задержка источника). С ключом EODHD терминал сам обновляет мировые рынки каждые 30 секунд.</p>
-      <p>Ключ хранится только в этом браузере на этом устройстве и никуда, кроме EODHD, не отправляется. В репозиторий и на страницу он не попадает.</p>
-      <div class="field"><input id="k-eod" placeholder="API-ключ EODHD" autocomplete="off" spellcheck="false"><button class="btn solid" id="k-save">Сохранить</button></div>
-      <div class="field"><button class="btn" id="k-test">Проверить</button><button class="btn" id="k-clear">Удалить ключ</button></div>
+      <p><b style="color:var(--text)">Данные.</b> Мировые рынки, новости, календарь и сделки — из данных бота (обновление ~раз в 10 минут). Акции США — онлайн через сервер бота. Ключи API хранятся только на сервере: в терминал и в браузер они не попадают.</p>
+      <p id="k-tier" style="color:var(--text)"></p>
+      <p style="margin-top:14px"><b style="color:var(--text)">Вход владельца.</b> Откройте терминал кнопкой «🖥 Терминал» в чате с ботом — платные данные (мировые рынки онлайн) включатся сами. В обычном браузере — введите пароль владельца.</p>
+      <div class="field"><input id="k-pass" type="password" placeholder="пароль владельца" autocomplete="current-password" spellcheck="false"><button class="btn solid" id="k-login">Войти</button></div>
+      <div class="field"><button class="btn" id="k-logout">Выйти</button></div>
       <div class="msg" id="k-msg"></div>
-      <p style="margin-top:14px"><b style="color:var(--text)">Finnhub — бесплатно, в реальном времени.</b> Акции и ETF США, валюты, золото, серебро, нефть и газ обновляются с каждой сделкой. Ключ бесплатный: зарегистрируйтесь на finnhub.io и скопируйте API key со страницы Dashboard.</p>
-      <div class="field"><input id="k-fh" placeholder="API-ключ Finnhub" autocomplete="off" spellcheck="false"><button class="btn solid" id="k-fh-save">Сохранить</button></div>
-      <div class="field"><button class="btn" id="k-fh-clear">Удалить ключ</button></div>
-      <div class="msg" id="k-fh-msg"></div>
       <p style="margin-top:12px"><b style="color:var(--text)">Установить как приложение.</b> <span id="inst-hint"></span></p>
       <p style="margin-top:12px"><b style="color:var(--text)">Крипта</b> идёт напрямую с биржи Binance в реальном времени, ключ не нужен. Если Binance недоступен, терминал переключится на CoinGecko (обновление раз в минуту).</p>
     </div>
@@ -378,23 +375,11 @@ var ALIAS = {SPX:'S&P',SP500:'S&P','S&P':'S&P',NDX:'Nasdaq',NASDAQ:'Nasdaq',DOW:
   SILVER:'Серебро','СЕРЕБРО':'Серебро',XAG:'Серебро',PLATINUM:'Платина',COPPER:'Медь','МЕДЬ':'Медь',WHEAT:'Пшеница',
   US3M:'UST3M',US5Y:'UST5',US10Y:'UST10',UST10:'UST10',US30Y:'UST30'};
 
-// коды EODHD (если указан ключ)
-var EOD = {'S&P':'GSPC.INDX','Nasdaq':'IXIC.INDX','DJI':'DJI.INDX','RTY':'RUT.INDX','VIX':'VIX.INDX',
-  'SX5E':'STOXX50E.INDX','DAX':'GDAXI.INDX','UKX':'FTSE.INDX','CAC':'FCHI.INDX','NKY':'N225.INDX','HSI':'HSI.INDX',
-  'SHCOMP':'SSEC.INDX','SENSEX':'BSESN.INDX','EUR/USD':'EURUSD.FOREX','USDJPY':'USDJPY.FOREX','GBPUSD':'GBPUSD.FOREX',
-  'USDCNY':'USDCNY.FOREX','USDCHF':'USDCHF.FOREX','USD/RUB':'USDRUB.FOREX','CNY/RUB':'CNYRUB.FOREX',
-  'Золото':'XAUUSD.FOREX','Серебро':'XAGUSD.FOREX','Платина':'XPTUSD.FOREX',
-  'UST3M':'US3M.GBOND','UST5':'US5Y.GBOND','UST10':'US10Y.GBOND','UST30':'US30Y.GBOND'};
-
-// Finnhub (бесплатный ключ): акции/ETF США в реальном времени + валюты и металлы через поток OANDA
+// акции/ETF США: котировки приходят с сервера бота (бесплатный ключ Finnhub хранится там)
 var STOCKS = [['SPY','S&P 500 ETF','AMEX:SPY'],['QQQ','Nasdaq 100 ETF','NASDAQ:QQQ'],['DIA','Dow Jones ETF','AMEX:DIA'],
   ['IWM','Russell 2000 ETF','AMEX:IWM'],['AAPL','Apple','NASDAQ:AAPL'],['MSFT','Microsoft','NASDAQ:MSFT'],['NVDA','Nvidia','NASDAQ:NVDA'],
   ['AMZN','Amazon','NASDAQ:AMZN'],['GOOGL','Alphabet','NASDAQ:GOOGL'],['META','Meta','NASDAQ:META'],['TSLA','Tesla','NASDAQ:TSLA']];
 STOCKS.forEach(function(x){ TV[x[0]] = x[2]; ALIAS[x[0]] = x[0] });
-var FH_FX = {'OANDA:EUR_USD':'EUR/USD','OANDA:USD_JPY':'USDJPY','OANDA:GBP_USD':'GBPUSD','OANDA:USD_CHF':'USDCHF',
-  'OANDA:USD_CNH':'USDCNY','OANDA:XAU_USD':'Золото','OANDA:XAG_USD':'Серебро','OANDA:XPT_USD':'Платина',
-  'OANDA:BCO_USD':'Brent','OANDA:WTICO_USD':'WTI','OANDA:NATGAS_USD':'Газ','OANDA:XCU_USD':'Медь'};
-
 var COINS = [
   ['BTC','Bitcoin','bitcoin'],['ETH','Ethereum','ethereum'],['BNB','BNB','binancecoin'],['SOL','Solana','solana'],
   ['XRP','XRP','ripple'],['DOGE','Dogecoin','dogecoin'],['TON','Toncoin','the-open-network'],['ADA','Cardano','cardano'],
@@ -503,7 +488,7 @@ function renderMarket(){
       tr.appendChild(el('td', 'num flat', s < 0 ? 'инверсия' : 'норма')); t.appendChild(tr);
     }
     if (n) box.appendChild(t);
-    else box.appendChild(el('div', 'note', g.code === 'US' ? (fhKey() ? 'Загрузка котировок Finnhub…' : 'Котировки акций США в реальном времени — с бесплатным ключом Finnhub: ⚙ → ключ Finnhub.') : 'Появится после следующего запуска бота'));
+    else box.appendChild(el('div', 'note', g.code === 'US' ? (API ? (apiErr ? 'Сервер бота сейчас не отвечает — повторю через минуту.' : 'Загрузка котировок…') : 'Акции США онлайн появятся, когда заработает сервер бота.') : 'Появится после следующего запуска бота'));
   });
   box.scrollTop = scroll;
   updLabel();
@@ -531,36 +516,51 @@ function loadData(){
   }).catch(function(){ $('mkt').innerHTML = ''; $('mkt').appendChild(el('div', 'note', 'Не удалось загрузить данные бота (docs/data.json).')) });
 }
 
-/* ---------- EODHD (если есть ключ) ---------- */
-var eodTimer = null, eodErr = false;
-function eodKey(){ return (store('eodhd_key') || '').trim() }
-function eodFetch(key){
-  var ids = Object.keys(EOD), codes = ids.map(function(i){ return EOD[i] });
-  var url = 'https://eodhd.com/api/real-time/' + encodeURIComponent(codes[0]) + '?s=' + codes.slice(1).map(encodeURIComponent).join(',') + '&api_token=' + encodeURIComponent(key) + '&fmt=json';
-  return fetch(url).then(function(r){ if (!r.ok) throw new Error('HTTP ' + r.status); return r.json() }).then(function(arr){
-    if (!Array.isArray(arr)) arr = [arr];
-    var byCode = {}; arr.forEach(function(x){ if (x && x.code) byCode[x.code] = x });
-    var n = 0;
-    ids.forEach(function(id){
-      var x = byCode[EOD[id]]; if (!x || x.close == null || x.close === 'NA') return;
-      var v = +x.close, ch = x.change_p != null && x.change_p !== 'NA' ? +x.change_p : null;
-      var q = Q[id] || {id:id, name:id, digits:2};
-      var prev = q.value; q.value = v; if (ch != null) q.change = ch; q.src = 'eod'; q.pv = prev; Q[id] = q; n++;
-    });
-    return n;
-  });
+/* ---------- котировки с сервера бота (ключи API — только на сервере) ---------- */
+var API = '', apiTier = '', apiErr = false, apiTimer = null, apiRefresh = 30;
+function ownerPass(){ return (store('owner_pass') || '').trim() }
+function tgInit(){ try { return (window.Telegram && Telegram.WebApp && Telegram.WebApp.initData) || '' } catch(e){ return '' } }
+function loadConfig(){
+  return fetch('../config.json?t=' + Date.now(), {cache:'no-store'}).then(function(r){ return r.ok ? r.json() : {} })
+    .then(function(c){ API = String((c && c.api) || '').replace(/\/+$/, '') }).catch(function(){});
 }
-function eodLoop(){
-  clearTimeout(eodTimer);
-  var key = eodKey();
-  if (!key) { eodErr = false; updStatus(); return }
-  if (document.hidden) { eodTimer = setTimeout(eodLoop, 5000); return }
-  eodFetch(key).then(function(n){
-    eodErr = false; updStatus();
-    if (n) patchMarket();
+function apiFetch(pass){
+  var h = {}, init = tgInit(), p = pass != null ? pass : ownerPass();
+  if (init) h['X-Tg-Init'] = init;   // подпись Telegram: так сервер узнаёт владельца
+  if (p) h['X-Owner-Key'] = p;
+  return fetch(API + '/api/quotes', {headers:h, cache:'no-store'}).then(function(r){ if (!r.ok) throw new Error('HTTP ' + r.status); return r.json() });
+}
+function applyQuotes(d){
+  var n = 0, fresh = false;
+  Object.keys(d.stocks || {}).forEach(function(id){
+    var x = d.stocks[id], meta = STOCKS.find(function(s){ return s[0] === id });
+    var q = Q[id] || {id:id, name:meta ? meta[1] : id, digits:2};
+    if (!Q[id]) fresh = true;
+    q.pv = q.value; q.value = x.value; q.base = x.base || q.base;
+    q.change = x.change != null ? x.change : (q.base ? (x.value / q.base - 1) * 100 : null);
+    q.src = 'live'; Q[id] = q; n++;
+  });
+  Object.keys(d.world || {}).forEach(function(id){
+    var x = d.world[id], q = Q[id] || {id:id, name:id, digits:2};
+    if (!Q[id]) fresh = true;
+    q.pv = q.value; q.value = x.value; if (x.change != null) q.change = x.change; q.src = 'eod'; Q[id] = q; n++;
+  });
+  if (n) { if (fresh) renderMarket(); else patchMarket() }
+  return n;
+}
+function apiLoop(){
+  clearTimeout(apiTimer);
+  if (!API) { apiTier = ''; updStatus(); return }
+  if (document.hidden) { apiTimer = setTimeout(apiLoop, 5000); return }
+  apiFetch().then(function(d){
+    var wasOwner = apiTier === 'owner';
+    apiErr = false; apiTier = d.tier || 'free'; apiRefresh = d.refresh || 30;
+    if (wasOwner && apiTier !== 'owner') Object.keys(Q).forEach(function(k){ if (Q[k].src === 'eod') Q[k].src = 'free' });
+    applyQuotes(d);
+    $('st-data').title = d.errors && d.errors.length ? 'Сервер бота: ' + d.errors.join('; ') : 'Котировки с сервера бота';
   }).catch(function(e){
-    eodErr = true; updStatus(); $('st-data').title = 'Ошибка EODHD: ' + e.message;
-  }).then(function(){ eodTimer = setTimeout(eodLoop, 30000) });
+    apiErr = true; $('st-data').title = 'Сервер бота недоступен: ' + e.message;
+  }).then(function(){ updStatus(); apiTimer = setTimeout(apiLoop, (apiErr ? 60 : apiRefresh) * 1000) });
 }
 function patchMarket(){
   // обновляем только ячейки, чтобы не сбивать прокрутку и подсвечивать изменения
@@ -580,68 +580,16 @@ function patchMarket(){
 function updLabel(){
   var src = {}; Object.keys(Q).forEach(function(k){ src[Q[k].src] = 1 });
   var parts = [];
-  if (src.live) parts.push('Finnhub онлайн');
-  if (src.eod) parts.push('EODHD 30 с');
+  if (src.eod || src.live) parts.push((src.eod ? 'онлайн' : 'акции США онлайн') + ' · ' + apiRefresh + ' с');
   if (!parts.length) { $('mkt-upd').textContent = data && data.updated ? 'данные бота · ' + hm(data.updated) + ' МСК' : ''; return }
   $('mkt-upd').textContent = parts.join(' + ') + ' · ' + new Date().toLocaleTimeString('ru-RU', {timeZone:MSK, hour:'2-digit', minute:'2-digit', second:'2-digit'});
 }
 function updStatus(){
-  var p = $('st-data'), names = [];
-  if (eodKey()) names.push(eodErr ? 'EODHD ✕' : 'EODHD');
-  if (fhKey()) names.push(fhState === 'live' ? '● FINNHUB' : fhState === 'err' ? 'FINNHUB ✕' : 'FINNHUB …');
-  p.textContent = names.length ? names.join(' + ') : 'FREE';
-  p.className = 'pill' + (names.length && !eodErr && fhState !== 'err' ? ' pro' : '');
-}
-
-/* ---------- Finnhub (бесплатный ключ) ---------- */
-var fhWs = null, fhState = '', fhDirty = {}, fhRetry = 0, fhQuoteTimer = null;
-function fhKey(){ return (store('finnhub_key') || '').trim() }
-function fhQuote(sym, key){
-  return fetch('https://finnhub.io/api/v1/quote?symbol=' + encodeURIComponent(sym) + '&token=' + encodeURIComponent(key))
-    .then(function(r){ if (!r.ok) throw new Error('HTTP ' + r.status); return r.json() });
-}
-function fhLoadQuotes(key){
-  // снимок цен акций и закрытия прошлого дня (60 запросов/мин на бесплатном тарифе — нам хватает с запасом)
-  return Promise.all(STOCKS.map(function(x){
-    return fhQuote(x[0], key).then(function(r){
-      if (!r || !r.c) return 0;
-      var q = Q[x[0]] || {id:x[0], name:x[1], digits:2};
-      q.pv = q.value; q.value = r.c; q.base = r.pc || q.base; q.change = r.dp != null ? r.dp : (q.base ? (r.c / q.base - 1) * 100 : null);
-      q.src = 'live'; Q[x[0]] = q; return 1;
-    }).catch(function(){ return 0 });
-  })).then(function(res){ return res.reduce(function(a, b){ return a + b }, 0) });
-}
-function fhOnTrades(list){
-  (list || []).forEach(function(t){
-    var id = FH_FX[t.s] || t.s, q = Q[id];
-    if (!q) return;
-    q.pv = q.value; q.value = t.p; q.src = 'live';
-    if (q.base) q.change = (t.p / q.base - 1) * 100;
-    fhDirty[id] = 1;
-  });
-}
-window.__fhOnTrades = fhOnTrades;  // для проверки
-setInterval(function(){
-  // перерисовываем не чаще раза в секунду: по SPY бывают сотни сделок в секунду
-  var ids = Object.keys(fhDirty); if (!ids.length) return; fhDirty = {};
-  if (ids.some(function(id){ return !document.querySelector('#mkt tr[data-id="' + id + '"]') })) renderMarket(); else patchMarket();
-}, 1000);
-function fhConnect(){
-  var key = fhKey();
-  if (fhWs) { try { fhWs.onclose = null; fhWs.close() } catch(e){} fhWs = null }
-  clearInterval(fhQuoteTimer);
-  if (!key) { fhState = ''; updStatus(); return }
-  fhState = 'wait'; updStatus();
-  fhLoadQuotes(key).then(function(n){ if (n) renderMarket() });
-  fhQuoteTimer = setInterval(function(){ if (!document.hidden) fhLoadQuotes(key).then(function(n){ if (n) patchMarket() }) }, 300000);
-  try { fhWs = new WebSocket('wss://ws.finnhub.io?token=' + encodeURIComponent(key)) } catch(e){ fhState = 'err'; updStatus(); return }
-  fhWs.onopen = function(){
-    fhState = 'live'; fhRetry = 0; updStatus();
-    STOCKS.map(function(x){ return x[0] }).concat(Object.keys(FH_FX)).forEach(function(sym){ fhWs.send(JSON.stringify({type:'subscribe', symbol:sym})) });
-  };
-  fhWs.onmessage = function(ev){ var m = JSON.parse(ev.data); if (m.type === 'trade') fhOnTrades(m.data); else if (m.type === 'error') { fhState = 'err'; updStatus() } };
-  fhWs.onerror = function(){ fhState = 'err'; updStatus() };
-  fhWs.onclose = function(){ if (fhKey()) { fhState = 'wait'; updStatus(); setTimeout(fhConnect, Math.min(60000, 3000 * Math.pow(2, fhRetry++))) } };
+  var p = $('st-data');
+  if (!API) { p.textContent = 'FREE'; p.className = 'pill'; return }
+  if (apiErr) { p.textContent = 'СЕРВЕР ✕'; p.className = 'pill'; return }
+  p.textContent = apiTier === 'owner' ? '● PRO' : apiTier ? '● FREE' : 'FREE …';
+  p.className = 'pill' + (apiTier === 'owner' ? ' pro' : apiTier ? ' live' : '');
 }
 
 /* ======================= крипта ======================= */
@@ -1019,37 +967,33 @@ document.addEventListener('keydown', function(e){
 });
 
 /* ---------- настройки ---------- */
-function openSettings(){ $('k-eod').value = eodKey(); $('k-fh').value = fhKey(); $('k-msg').textContent = ''; $('k-fh-msg').textContent = ''; openOverlay('ov-set') }
-$('k-fh-save').onclick = function(){
-  var k = $('k-fh').value.trim(), m = $('k-fh-msg');
-  if (!k) { m.textContent = 'Введите ключ.'; return }
-  m.style.color = 'var(--muted)'; m.textContent = 'Проверяю…';
-  fhQuote('AAPL', k).then(function(r){
-    if (!r || !r.c) throw new Error('пустой ответ');
-    store('finnhub_key', k); m.style.color = 'var(--up)'; m.textContent = 'Работает. Apple: $' + r.c + '. Подключаю поток котировок…';
-    fhConnect();
-  }).catch(function(e){ m.style.color = 'var(--down)'; m.textContent = 'Ключ не подошёл: ' + e.message + '.' });
-};
-$('k-fh-clear').onclick = function(){
-  store('finnhub_key', null); $('k-fh').value = ''; $('k-fh-msg').textContent = 'Ключ удалён.';
-  STOCKS.forEach(function(x){ delete Q[x[0]] }); Object.keys(Q).forEach(function(k){ if (Q[k].src === 'live') Q[k].src = 'free' });
-  fhConnect(); loadData();
-};
+function tierText(){
+  if (!API) return 'Сервер бота ещё не настроен — терминал показывает данные бота.';
+  if (apiTier === 'owner') return '👑 Вы вошли как владелец: платные данные включены.';
+  if (tgInit()) return 'Терминал открыт из Telegram, но не владельцем бота — бесплатные данные.';
+  return 'Сейчас: бесплатные данные.';
+}
+function openSettings(){ $('k-pass').value = ''; $('k-msg').textContent = ''; $('k-tier').textContent = tierText(); openOverlay('ov-set') }
 $('b-set').onclick = openSettings;
-$('k-save').onclick = function(){
-  var k = $('k-eod').value.trim();
-  if (!k) { $('k-msg').textContent = 'Введите ключ.'; return }
-  store('eodhd_key', k); $('k-msg').style.color = 'var(--muted)'; $('k-msg').textContent = 'Сохранено. Проверяю…'; $('k-test').onclick();
+$('k-login').onclick = function(){
+  var p = $('k-pass').value.trim(), m = $('k-msg');
+  if (!p) { m.style.color = 'var(--muted)'; m.textContent = 'Введите пароль.'; return }
+  if (!API) { m.style.color = 'var(--down)'; m.textContent = 'Сервер бота ещё не настроен.'; return }
+  m.style.color = 'var(--muted)'; m.textContent = 'Проверяю…';
+  apiFetch(p).then(function(d){
+    if (d.tier !== 'owner') { m.style.color = 'var(--down)'; m.textContent = 'Неверный пароль.'; return }
+    store('owner_pass', p); $('k-pass').value = ''; apiTier = 'owner'; apiErr = false; apiRefresh = d.refresh || apiRefresh;
+    applyQuotes(d); updStatus(); $('k-tier').textContent = tierText();
+    m.style.color = 'var(--up)'; m.textContent = 'Готово: платные данные включены на этом устройстве.';
+    apiLoop();
+  }).catch(function(e){ m.style.color = 'var(--down)'; m.textContent = 'Сервер не ответил: ' + e.message });
 };
-$('k-test').onclick = function(){
-  var k = $('k-eod').value.trim() || eodKey(); if (!k) { $('k-msg').textContent = 'Ключ не задан.'; return }
-  eodFetch(k).then(function(n){
-    $('k-msg').style.color = n ? 'var(--up)' : 'var(--down)';
-    $('k-msg').textContent = n ? 'Работает: получено котировок — ' + n + '.' : 'Ответ пришёл, но без котировок. Проверьте тариф.';
-    if (n) { patchMarket(); eodLoop() }
-  }).catch(function(e){ $('k-msg').style.color = 'var(--down)'; $('k-msg').textContent = 'Ошибка: ' + e.message + '. Проверьте ключ и тариф.' });
+$('k-logout').onclick = function(){
+  store('owner_pass', null); $('k-msg').style.color = 'var(--muted)';
+  $('k-msg').textContent = tgInit() ? 'Пароль удалён. Внутри Telegram владелец определяется автоматически.' : 'Вы вышли.';
+  Object.keys(Q).forEach(function(k){ if (Q[k].src === 'eod') Q[k].src = 'free' });
+  loadData(); apiLoop();
 };
-$('k-clear').onclick = function(){ store('eodhd_key', null); $('k-eod').value = ''; $('k-msg').textContent = 'Ключ удалён.'; Object.keys(Q).forEach(function(k){ Q[k].src = 'free' }); eodLoop(); loadData() };
 
 /* ======================= установка как приложение ======================= */
 var deferredPrompt = null;
@@ -1094,9 +1038,9 @@ safe(function(){ loadData(); setInterval(loadData, 120000) });
 safe(function(){ setInterval(renderEco, 60000) });
 safe(function(){ binanceSnapshot().then(binanceStream).catch(startGecko) });
 safe(function(){ loadGlobal(); setInterval(loadGlobal, 300000) });
-safe(eodLoop);
-safe(fhConnect);
-document.addEventListener('visibilitychange', function(){ if (!document.hidden && eodKey()) eodLoop() });
+safe(function(){ store('eodhd_key', null); store('finnhub_key', null) });   // старые ключи из браузера больше не нужны
+safe(function(){ loadConfig().then(apiLoop) });
+document.addEventListener('visibilitychange', function(){ if (!document.hidden && API) apiLoop() });
 try { var startCmd = new URLSearchParams(location.search).get('cmd'); if (startCmd && CMDS[startCmd.toUpperCase()]) CMDS[startCmd.toUpperCase()]('') } catch(e){}
 })();
 </script>

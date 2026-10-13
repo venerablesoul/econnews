@@ -2,3 +2,6 @@
 __pycache__/
 *.pyc
 state.json.tmp
+worker/.secrets.json
+worker/node_modules/
+worker/.wrangler/

@@ -18,7 +18,9 @@
 
 Переменные окружения:
   TELEGRAM_BOT_TOKEN   токен бота от @BotFather            (обязательно)
-  TELEGRAM_CHAT_ID     ваш chat id                          (обязательно)
+  TELEGRAM_CHAT_ID     ваш chat id — владелец бота           (обязательно)
+  WORKER_URL           адрес сервера бота (обычно берётся из docs/config.json сам);
+                       новости получают владелец и все, кто нажал /start
   MIN_LEVEL            high | medium (по умолчанию medium) — что присылать
   DIGEST_HOUR          час дневной сводки по МСК (21), -1 = выключить
   QUIET_HOURS          часы без звука по МСК, например 0-8 (по умолчанию 0-8)
@@ -581,19 +583,37 @@ def split_messages(header, blocks, limit=3900):
     return msgs
 
 
-class Telegram:
-    def __init__(self, token, chat_id, dry=False, pages_url=""):
-        self.token, self.chat_id, self.dry = token, chat_id, dry
-        self.pages_url = pages_url
-        self.use_webapp = True  # кнопка открывает страницу внутри Telegram
+class TelegramError(RuntimeError):
+    def __init__(self, code, body):
+        super().__init__(f"Telegram ответил {code}: {body[:300]}")
+        self.code, self.body = code, body
 
-    def _markup(self):
+
+class Telegram:
+    """Отправка в Telegram: владельцу (TELEGRAM_CHAT_ID) и всем, кто нажал /start
+    (список подписчиков ведёт сервер бота, см. worker/)."""
+
+    def __init__(self, token, chat_id, dry=False, pages_url="", subscribers=()):
+        self.token, self.chat_id, self.dry = token, str(chat_id).strip(), dry
+        self.pages_url = pages_url
+        self.subscribers = [str(x) for x in dict.fromkeys(subscribers or []) if str(x) != self.chat_id]
+        self.gone = set()          # заблокировали бота или удалили чат — уберём из подписчиков
+        self.no_webapp = set()     # чаты, где кнопки-приложения не работают
+
+    def recipients(self, owner_only=False):
+        out = [self.chat_id] if self.chat_id else []
+        if not owner_only:
+            out += [c for c in self.subscribers if c not in self.gone]
+        return out
+
+    def _markup(self, chat):
         if not self.pages_url:
             return None
+        # web_app-кнопки (открывают страницу внутри Telegram) работают только в личных чатах
+        webapp = not str(chat).startswith("-") and chat not in self.no_webapp
+
         def mk(text, url):
-            b = {"text": text}
-            b["web_app" if self.use_webapp else "url"] = {"url": url} if self.use_webapp else url
-            return b
+            return {"text": text, "web_app": {"url": url}} if webapp else {"text": text, "url": url}
         row = [mk("📈 Рынок онлайн", self.pages_url)]
         if TERMINAL_BUTTON:
             row.append(mk("🖥 Терминал", self.pages_url.rstrip("/") + "/terminal/"))
@@ -609,45 +629,136 @@ class Telegram:
                 req = urllib.request.Request(url, data=urllib.parse.urlencode(fields).encode())
             try:
                 with urllib.request.urlopen(req, timeout=30) as r:
-                    r.read()
-                return
+                    return json.loads(r.read().decode("utf-8") or "{}").get("result") or {}
             except urllib.error.HTTPError as e:
                 body = e.read().decode("utf-8", "ignore")
-                if e.code == 429:
-                    time.sleep(5 * (attempt + 1))
+                if e.code == 429 and attempt < 2:
+                    try:
+                        wait = json.loads(body)["parameters"]["retry_after"]
+                    except (ValueError, KeyError, TypeError):
+                        wait = 5 * (attempt + 1)
+                    time.sleep(min(float(wait), 30))
                     continue
-                if e.code == 400 and "reply_markup" in fields and self.use_webapp and \
-                        ("BUTTON" in body.upper() or "WEB_APP" in body.upper()):
-                    # web_app-кнопки работают только в личке; в группе — обычная ссылка
-                    self.use_webapp = False
-                    fields["reply_markup"] = self._markup()
-                    continue
-                raise RuntimeError(f"Telegram ответил {e.code}: {body}") from None
+                raise TelegramError(e.code, body) from None
             except urllib.error.URLError:
                 time.sleep(3)
         raise RuntimeError("Не удалось достучаться до Telegram")
 
-    def send(self, text, silent=False, button=False):
+    def _deliver(self, chat, method, fields, button, files=None):
+        f = dict(fields, chat_id=chat)
+        markup = self._markup(chat) if button else None
+        if markup:
+            f["reply_markup"] = markup
+        try:
+            return self._call(method, f, files)
+        except TelegramError as e:
+            low = e.body.lower()
+            if e.code == 400 and markup and ("button" in low or "web_app" in low):
+                self.no_webapp.add(chat)             # повторяем с обычными ссылками
+                f["reply_markup"] = self._markup(chat)
+                return self._call(method, f, files)
+            if chat != self.chat_id and (e.code == 403 or (e.code == 400 and "chat not found" in low)):
+                self.gone.add(chat)                  # пользователь заблокировал бота
+                return None
+            raise
+
+    def _broadcast(self, method, fields, button, owner_only, files=None):
+        """Отправить всем получателям. Ошибка у одного не мешает остальным.
+        Исключение — только если не дошло никому (например, Telegram недоступен)."""
+        targets = self.recipients(owner_only)
+        delivered, last_err = 0, None
+        for k, chat in enumerate(targets):
+            try:
+                res = self._deliver(chat, method, fields, button, files)
+                if res is not None:
+                    delivered += 1
+                    if files and method == "sendPhoto":
+                        # картинку загружаем один раз, остальным — по её file_id
+                        photo = (res.get("photo") or [{}])[-1].get("file_id")
+                        if photo:
+                            fields, files = dict(fields, photo=photo), None
+            except Exception as e:
+                last_err = e
+                print(f"  ! Telegram, чат {chat}: {e}"[:300])
+            if k and len(targets) > 20:
+                time.sleep(0.04)   # не больше ~25 сообщений в секунду
+        if targets and not delivered and last_err:
+            raise last_err
+
+    def send(self, text, silent=False, button=False, owner_only=False):
         if self.dry:
-            print("-" * 60 + ("  [без звука]" if silent else "") + ("  [кнопка: Рынок онлайн]" if button and self.pages_url else ""))
+            n = len(self.recipients(owner_only))
+            print("-" * 60 + ("  [без звука]" if silent else "") + ("  [кнопка: Рынок онлайн]" if button and self.pages_url else "")
+                  + f"  [получателей: {n}{', только владелец' if owner_only else ''}]")
             print(html.unescape(re.sub(r"<[^>]+>", "", text)))
             return
-        fields = {"chat_id": self.chat_id, "text": text, "parse_mode": "HTML",
+        fields = {"text": text, "parse_mode": "HTML",
                   "disable_web_page_preview": "true", "disable_notification": "true" if silent else "false"}
-        if button and self._markup():
-            fields["reply_markup"] = self._markup()
-        self._call("sendMessage", fields)
+        self._broadcast("sendMessage", fields, button, owner_only)
 
-    def send_photo(self, png, caption, silent=False, button=True):
+    def send_photo(self, png, caption, silent=False, button=True, owner_only=False):
         if self.dry:
-            print("-" * 60 + f"  [КАРТИНКА {len(png)//1024} КБ]" + ("  [без звука]" if silent else ""))
+            print("-" * 60 + f"  [КАРТИНКА {len(png)//1024} КБ]" + ("  [без звука]" if silent else "")
+                  + f"  [получателей: {len(self.recipients(owner_only))}]")
             print(html.unescape(re.sub(r"<[^>]+>", "", caption)))
             return
-        fields = {"chat_id": self.chat_id, "caption": caption[:1024], "parse_mode": "HTML",
-                  "disable_notification": "true" if silent else "false"}
-        if button and self._markup():
-            fields["reply_markup"] = self._markup()
-        self._call("sendPhoto", fields, files={"photo": ("market.png", png, "image/png")})
+        fields = {"caption": caption[:1024], "parse_mode": "HTML", "disable_notification": "true" if silent else "false"}
+        self._broadcast("sendPhoto", fields, button, owner_only, files={"photo": ("market.png", png, "image/png")})
+
+
+# ----------------------------------------------------------------------------
+# Подписчики: их список хранит сервер бота (worker/), здесь мы его только читаем
+# ----------------------------------------------------------------------------
+CONFIG_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "docs", "config.json")
+_SUBS_CACHE = None   # последний полученный список — на случай, если сервер на минуту недоступен
+
+
+def worker_url():
+    url = os.environ.get("WORKER_URL", "").strip()
+    if not url:
+        try:
+            with open(CONFIG_FILE, encoding="utf-8") as f:
+                url = (json.load(f).get("api") or "").strip()
+        except (FileNotFoundError, ValueError, AttributeError):
+            url = ""
+    return url.rstrip("/")
+
+
+def _sync_key(token):
+    # та же формула, что в worker/src/index.js
+    return hashlib.sha256(("econnews-sync:" + token).encode()).hexdigest()
+
+
+def fetch_subscribers(token):
+    global _SUBS_CACHE
+    url = worker_url()
+    if not url or not token:
+        return []
+    try:
+        req = urllib.request.Request(url + "/subs", headers={"Authorization": "Bearer " + _sync_key(token), "User-Agent": UA})
+        with urllib.request.urlopen(req, timeout=15) as r:
+            ids = [str(x) for x in json.loads(r.read().decode("utf-8")).get("ids", [])]
+        _SUBS_CACHE = ids
+        return ids
+    except Exception as e:
+        print(f"  ! список подписчиков недоступен ({type(e).__name__}: {e})"[:200]
+              + (" — беру прошлый" if _SUBS_CACHE else ""))
+        return list(_SUBS_CACHE or [])
+
+
+def remove_subscribers(token, ids):
+    url = worker_url()
+    if not url or not ids:
+        return
+    try:
+        req = urllib.request.Request(url + "/subs/remove", data=json.dumps({"ids": sorted(ids)}).encode(),
+                                     headers={"Authorization": "Bearer " + _sync_key(token), "User-Agent": UA,
+                                              "Content-Type": "application/json"})
+        with urllib.request.urlopen(req, timeout=15) as r:
+            r.read()
+        print(f"  убраны подписчики, заблокировавшие бота: {len(ids)}")
+    except Exception as e:
+        print(f"  ! не удалось убрать подписчиков: {type(e).__name__}: {e}"[:200])
 
 
 def _multipart(fields, files):
@@ -787,7 +898,8 @@ def run(dry=False):
     alerts_on = _env_on("ALERTS", "yes")
     state_path = os.environ.get("STATE_FILE", os.path.join(os.path.dirname(os.path.abspath(__file__)), "state.json"))
 
-    tg = Telegram(token, chat, dry, pages_url)
+    subscribers = fetch_subscribers(token)
+    tg = Telegram(token, chat, dry, pages_url, subscribers)
     now = datetime.now(timezone.utc)
     now_msk = now.astimezone(MSK)
     st = load_state(state_path)
@@ -850,14 +962,14 @@ def run(dry=False):
         st["last_morning"] = now_msk.strftime("%Y-%m-%d")
         top = to_send[:7]
         header = ("✅ <b>Бот экономических новостей запущен</b>\n"
-                  f"Слежу за {len({s['name'] for s in SOURCES})} источниками, проверка каждые ~30 минут.\n"
+                  f"Слежу за {len({s['name'] for s in SOURCES})} источниками, проверка каждые ~10 минут.\n"
                   "В 9:00 — главное за ночь и календарь дня, в 21:00 — итоги дня.\n"
                   "За час до важных данных (инфляция, ставки ФРС/ЕЦБ) пришлю напоминание."
                   + market_html)
         blocks = sectioned(top) if top else ["Пока ничего значимого — пришлю, как только появится."]
         msgs = split_messages(header, blocks)
         for k, m in enumerate(msgs):
-            tg.send(m, button=(k == len(msgs) - 1))
+            tg.send(m, button=(k == len(msgs) - 1), owner_only=True)
     elif to_send:
         extra = len(to_send) - MAX_PER_MESSAGE_BATCH
         batch = to_send[:MAX_PER_MESSAGE_BATCH]
@@ -962,7 +1074,7 @@ def run(dry=False):
             if came_back:
                 lines.append("✅ Снова работают: " + html.escape(", ".join(came_back)))
         if lines:
-            tg.send("\n".join(lines), silent=True)
+            tg.send("\n".join(lines), silent=True, owner_only=True)   # служебное — только владельцу
 
     # сделки политиков США и инсайдеров (официальные раскрытия, без ключей)
     n_trades = 0
@@ -1016,9 +1128,12 @@ def run(dry=False):
 
     write_page_data(st, quotes, now)
     save_state(state_path, st, now)
+    if tg.gone:
+        remove_subscribers(token, tg.gone)
 
     print(f"[{stamp} МСК] кандидатов: {len(candidates)}, новых историй: {len(stories)}, "
-          f"отправлено: {len(to_send[:MAX_PER_MESSAGE_BATCH])}, котировок: {len(quotes)}, сделок: {n_trades}, "
+          f"отправлено: {len(to_send[:MAX_PER_MESSAGE_BATCH])}, получателей: {len(tg.recipients())}, "
+          f"котировок: {len(quotes)}, сделок: {n_trades}, "
           f"ошибки источников: {len(errors)}")
     for name, err in sorted(errors.items()):
         print(f"  ! {name}: {err}")

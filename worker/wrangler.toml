@@ -1,0 +1,13 @@
+# Сервер бота на Cloudflare Workers. Выкладывается автоматически: .github/workflows/worker.yml
+name = "econnews-bot"
+main = "src/index.js"
+compatibility_date = "2025-06-01"
+workers_dev = true
+
+# хранилище подписчиков; id подставляет worker/deploy.py при деплое
+[[kv_namespaces]]
+binding = "SUBS"
+id = "00000000000000000000000000000000"
+
+[observability]
+enabled = true
