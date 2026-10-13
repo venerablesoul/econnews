@@ -59,6 +59,10 @@ def http(method, url, body=None, headers=None, timeout=30):
             return e.code, json.loads(e.read().decode() or "{}")
         except ValueError:
             return e.code, {}
+    except (urllib.error.URLError, OSError, ValueError) as e:
+        # новый адрес *.workers.dev может появиться в DNS не сразу — это не ошибка, повторим
+        print(f"  {method} {url.split('?')[0]}: {type(e).__name__}: {e}"[:200])
+        return 0, {}
 
 
 def cf(method, path, body=None):
@@ -157,7 +161,7 @@ def telegram():
     pages = env("PAGES_URL").rstrip("/") + "/"
     # 1) сервер отвечает? (новый адрес workers.dev иногда включается до минуты)
     ok = False
-    for _ in range(18):
+    for _ in range(36):   # до ~6 минут
         status, d = http("GET", url + "/")
         if status == 200 and d.get("ok"):
             ok = True
