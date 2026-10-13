@@ -524,7 +524,10 @@
   "e384f04cb382324f": "2026-10-13T15:15:30.529866+00:00",
   "64a462e606b5eeee": "2026-10-13T15:15:30.529866+00:00",
   "8e61a09270ee4b46": "2026-10-13T15:15:30.529866+00:00",
-  "f70311cc42e68628": "2026-10-13T15:15:30.529866+00:00"
+  "f70311cc42e68628": "2026-10-13T15:15:30.529866+00:00",
+  "915843507508f07d": "2026-10-13T15:25:30.525913+00:00",
+  "06e51c8f4d430641": "2026-10-13T15:25:30.525913+00:00",
+  "7487152166c05647": "2026-10-13T15:25:30.525913+00:00"
  },
  "recent": [
   {
@@ -5272,6 +5275,25 @@
    "title_ru": "Новые горы делают ставку на оборонительный рост",
    "lead": "As investors reassess private credit, New Mountain Capital’s Laura Holson says direct lending is offering attractive opportunities with wider spreads and improved lender protections.",
    "lead_ru": "Поскольку инвесторы переоценивают частный кредит, Лаура Холсон из New Mountain Capital говорит, что прямое кредитование открывает привлекательные возможности с более широкими спредами и улучшенной защитой кредиторов."
+  },
+  {
+   "title": "Quits rate 3.5 percent in accommodation and food services, August 2026",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPYjhobWp2ZEVQa0NFMmpmcEJOMlNybFVqLVlMSUZ6UnYtS05pNm82c2lTem12eXVJUno0Q0ItaFBvYTdZeURwY0g1SnFISmxUYy1TOGZFOS0xcnZMV3VndzVBYnFGTXd4QzBGUE5qOXpMZjdITlRHNy1jSVpGS29QbVE0UWFoSjNfR0dpUkpRcUdWc0N0ajlWUlF2TXoyWEwySXVSc2poUXNuV3M?oc=5",
+   "sources": [
+    "Статистика труда США (BLS)"
+   ],
+   "score": 4,
+   "ts": "2026-10-13T15:25:30.525913+00:00",
+   "title_ru": "Уровень увольнений 3,5 процента в сфере услуг проживания и питания, август 2026 г."
+  },
+  {
+   "title": "‘Pharma Bro’ Martin Shkreli is in trouble with regulators again, this time for influencing biopharma stocks",
+   "link": "https://www.marketwatch.com/story/pharma-bro-martin-shkreli-is-in-trouble-with-regulators-again-this-time-for-influencing-biopharma-stocks-7356c3bb?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-13T15:25:30.525913+00:00"
   }
  ],
  "last_digest": "2026-10-12",
@@ -5298,7 +5320,7 @@
   "2026-10-13-09"
  ],
  "calendar": {
-  "fetched": "2026-10-13T09:25:02.986308+00:00",
+  "fetched": "2026-10-13T15:25:30.525913+00:00",
   "events": [
    {
     "title": "Bank Holiday",
@@ -5419,22 +5441,6 @@
     "impact": "Low",
     "forecast": "",
     "previous": ""
-   },
-   {
-    "title": "M2 Money Supply y/y",
-    "country": "CNY",
-    "ts": "2026-10-13T08:03:00+00:00",
-    "impact": "Low",
-    "forecast": "7.4%",
-    "previous": "7.5%"
-   },
-   {
-    "title": "New Loans",
-    "country": "CNY",
-    "ts": "2026-10-13T08:03:00+00:00",
-    "impact": "Low",
-    "forecast": "1025B",
-    "previous": "60B"
    },
    {
     "title": "NFIB Small Business Index",
@@ -5597,6 +5603,22 @@
     "previous": ""
    },
    {
+    "title": "M2 Money Supply y/y",
+    "country": "CNY",
+    "ts": "2026-10-14T08:03:00+00:00",
+    "impact": "Low",
+    "forecast": "7.4%",
+    "previous": "7.5%"
+   },
+   {
+    "title": "New Loans",
+    "country": "CNY",
+    "ts": "2026-10-14T08:03:00+00:00",
+    "impact": "Low",
+    "forecast": "1025B",
+    "previous": "60B"
+   },
+   {
     "title": "ECB President Lagarde Speaks",
     "country": "EUR",
     "ts": "2026-10-14T08:30:00+00:00",
@@ -5617,6 +5639,14 @@
     "country": "USD",
     "ts": "2026-10-14T09:40:00+00:00",
     "impact": "Low",
+    "forecast": "",
+    "previous": ""
+   },
+   {
+    "title": "EU Economic Summit",
+    "country": "EUR",
+    "ts": "2026-10-14T10:15:00+00:00",
+    "impact": "Medium",
     "forecast": "",
     "previous": ""
    },
@@ -5867,6 +5897,14 @@
     "impact": "Low",
     "forecast": "0.0%",
     "previous": "-0.1%"
+   },
+   {
+    "title": "EU Economic Summit",
+    "country": "EUR",
+    "ts": "2026-10-15T10:15:00+00:00",
+    "impact": "Medium",
+    "forecast": "",
+    "previous": ""
    },
    {
     "title": "Manufacturing Sales m/m",
