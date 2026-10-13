@@ -363,7 +363,9 @@
   "f7f0d73bd5cbda45": "2026-10-13T04:14:38.030750+00:00",
   "648e8446403da030": "2026-10-13T04:24:38.004375+00:00",
   "8bd0190d544e1f00": "2026-10-13T04:34:38.037307+00:00",
-  "4325818cda7b21a3": "2026-10-13T04:34:38.037307+00:00"
+  "4325818cda7b21a3": "2026-10-13T04:34:38.037307+00:00",
+  "6c2d421219936bca": "2026-10-13T04:44:38.014259+00:00",
+  "3be23b6cc8499b3f": "2026-10-13T04:44:38.014259+00:00"
  },
  "recent": [
   {
@@ -3549,6 +3551,31 @@
    "tags": [
     "нефть",
     "Россия"
+   ]
+  },
+  {
+   "title": "IMF / World Economic Outlook Annual Meetings, 2026",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQcTlucXZmMVlvb3QtZWFkcTN4cUtXN3ptMTd2MjJrRzVTdUt0aEEzb2RvMER1VFlXMGZLM1YtWDdSVVpad01tOUJrcjBFdjZoX293MHhnWm1RMmhaRllQMzJnOTdsYzRvd3hDSWtBT0R1VC16UnJZbVQ4RW1mQTZNcGU5SWxGZTdnd3R0V1c4cVh0N195a2kyMjN3Tmt3TGFLV011eXRJdFFZeGYzbVdwdGkwMVZwczNXYlpLZG9vaw?oc=5",
+   "sources": [
+    "МВФ"
+   ],
+   "score": 6,
+   "ts": "2026-10-13T04:44:38.014259+00:00",
+   "title_ru": "Ежегодные собрания МВФ / «Перспективы развития мировой экономики», 2026 г."
+  },
+  {
+   "title": "FirstFT: IMF sounds alarm on dire public finances",
+   "link": "https://www.ft.com/content/e03b74a1-6f7f-4f2c-ad39-c70b8e63ae39?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 3,
+   "ts": "2026-10-13T04:44:38.014259+00:00",
+   "title_ru": "FirstFT: МВФ бьет тревогу по поводу тяжелого состояния государственных финансов",
+   "lead": "Also in today’s newsletter: US Treasuries and Houthi attacks",
+   "lead_ru": "Также в сегодняшнем информационном бюллетене: Казначейские облигации США и атаки хуситов",
+   "tags": [
+    "облигации"
    ]
   }
  ],
