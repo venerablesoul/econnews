@@ -459,7 +459,10 @@
   "5b18103cc323f871": "2026-10-13T11:35:02.959469+00:00",
   "0b56cc29258771d0": "2026-10-13T11:45:02.970588+00:00",
   "3609b2aecc0e349f": "2026-10-13T11:45:02.970588+00:00",
-  "c80742ee83e84e79": "2026-10-13T11:45:02.970588+00:00"
+  "c80742ee83e84e79": "2026-10-13T11:45:02.970588+00:00",
+  "90e642875f228126": "2026-10-13T11:55:02.975851+00:00",
+  "e81ffa9b8301b888": "2026-10-13T11:55:02.975851+00:00",
+  "fd80941823fc2993": "2026-10-13T11:55:02.975851+00:00"
  },
  "recent": [
   {
@@ -4531,6 +4534,37 @@
    "score": 4,
    "ts": "2026-10-13T11:45:02.970588+00:00",
    "title_ru": "UnitedHealth Group повысила прогноз прибыли из-за превышения прибыли в третьем квартале"
+  },
+  {
+   "title": "Czech Core Inflation Quickens as Central Bank Mulls Another Hike",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-13/czech-core-inflation-quickens-as-central-bank-mulls-another-hike",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 7,
+   "ts": "2026-10-13T11:55:02.975851+00:00",
+   "title_ru": "Базовая инфляция в Чехии ускоряется, поскольку Центральный банк обдумывает еще одно повышение",
+   "lead": "Czech core inflation accelerated more than the central bank expected in September as policymakers are set to debate whether to raise interest rates for a second time this year.",
+   "lead_ru": "Базовая инфляция в Чехии в сентябре ускорилась сильнее, чем ожидал центральный банк, поскольку политики собираются обсуждать вопрос о повышении процентных ставок во второй раз в этом году.",
+   "tags": [
+    "ставки",
+    "инфляция"
+   ]
+  },
+  {
+   "title": "Ugandan Central Bank Calls Special Meeting After Shilling Sinks",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-13/ugandan-central-bank-calls-special-meeting-after-shilling-sinks",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-13T11:55:02.975851+00:00",
+   "title_ru": "Центральный банк Уганды созывает специальное заседание после падения шиллинга",
+   "lead": "Uganda’s central bank will hold a special monetary policy committee meeting on Wednesday after its shilling slid to a new 33-year low.",
+   "lead_ru": "Центральный банк Уганды проведет в среду специальное заседание комитета по денежно-кредитной политике после того, как курс шиллинга упал до нового 33-летнего минимума.",
+   "tags": [
+    "ставки"
+   ]
   }
  ],
  "last_digest": "2026-10-12",
