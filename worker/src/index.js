@@ -4,16 +4,27 @@
 //   /tg             — вебхук Telegram: мгновенно отвечает на /start и команды, ведёт список подписчиков
 //   /subs           — список подписчиков для рассылки (его берёт news_bot.py; доступ по ключу)
 //   /subs/remove    — убрать подписчиков, которые заблокировали бота
+//   /sync/live      — основной бот присылает сюда свежие новости каждые 5 минут (доступ по ключу)
 //   /api/quotes     — котировки для терминала. Ключи API хранятся только здесь, в браузер не попадают:
 //                     всем — бесплатный ключ Finnhub (акции США, валюты, металлы, нефть),
 //                     владельцу — ещё и платный EODHD
+//   /api/quote      — котировки любых инструментов: ?s=AAPL,BTC,SBER,нефть
+//   /api/company    — компания: ?s=AAPL&parts=des,fa,ern,anr,cn,hds
+//   /api/history    — история цен: ?s=AAPL&r=1y (1m 3m 6m ytd 1y 2y 5y)
+//   /api/live       — свежие новости и котировки от основного бота
+//   /api/me         — список, портфель и алерты (вход через Telegram или пароль владельца)
+//   cron            — раз в 2 минуты проверяет алерты и присылает сообщения
 //
 // Секреты (задаются автоматически из секретов GitHub, см. README):
 //   TELEGRAM_BOT_TOKEN, OWNER_ID, FINNHUB_API_KEY, EODHD_API_KEY, TERMINAL_PASSWORD (необязательно)
-// Переменная: PAGES_URL — адрес сайта бота (там лежит data.json с новостями, рынками, календарём).
-// Хранилище KV: SUBS — подписчики.
-
-const TG_API = "https://api.telegram.org/bot";
+// Переменная: PAGES_URL — адрес сайта бота (там лежат data.json, stocks.json, rates.json, fin/).
+// Хранилище KV: SUBS — подписчики, личные данные, алерты, живая лента.
+import {
+  arrow, cached, cors, esc, hex, hmac, hookKey, isOwnerChat, json, msk, pagesUrl, pct, send, siteData, syncKey, tg,
+} from "./lib.js";
+import { COMPANY_PARTS, getCompany, getHistory, getQuotes, parseSymbol } from "./market.js";
+import { HELP_FULL, isNewCallback, newCallback, newCommand } from "./botcmd.js";
+import { checkAlerts, meApi } from "./user.js";
 
 // акции и ETF США — бесплатный ключ Finnhub, для всех
 const STOCKS = ["SPY", "QQQ", "DIA", "IWM", "AAPL", "MSFT", "NVDA", "AMZN", "GOOGL", "META", "TSLA"];
@@ -45,9 +56,15 @@ export default {
       if (req.method === "OPTIONS") return cors(new Response(null, { status: 204 }));
       if (url.pathname === "/tg" && req.method === "POST") return await webhook(req, env, ctx);
       if (url.pathname === "/api/quotes") return cors(await quotesApi(req, env, url.searchParams.get("only") || ""));
+      if (url.pathname === "/api/quote") return cors(await quoteApi(env, url));
+      if (url.pathname === "/api/company") return cors(await companyApi(env, url));
+      if (url.pathname === "/api/history") return cors(await historyApi(env, url));
+      if (url.pathname === "/api/live") return cors(await liveApi(env));
+      if (url.pathname === "/api/me") return cors(json(await meApi(req, env, await whoIs(req, env)), 200, { "Cache-Control": "no-store" }));
+      if (url.pathname === "/sync/live" && req.method === "POST") return await syncLive(req, env);
       if (url.pathname === "/subs" && req.method === "GET") return await subsList(req, env);
       if (url.pathname === "/subs/remove" && req.method === "POST") return await subsRemove(req, env);
-      if (url.pathname === "/") return json({ ok: true, service: "econnews-bot" });
+      if (url.pathname === "/") return json({ ok: true, service: "econnews-bot", version: 2 });
       return new Response("not found", { status: 404 });
     } catch (e) {
       console.log("error", e && e.stack || e);
@@ -55,62 +72,12 @@ export default {
       return cors(json({ ok: false, error: String(e && e.message || e) }, 200));
     }
   },
+
+  async scheduled(event, env, ctx) {
+    ctx.waitUntil(checkAlerts(env).then((r) => console.log("alerts", JSON.stringify(r)))
+      .catch((e) => console.log("alerts error", e && e.stack || e)));
+  },
 };
-
-// ---------------------------------------------------------------------------
-// Утилиты
-// ---------------------------------------------------------------------------
-const enc = new TextEncoder();
-
-function json(obj, status = 200, headers = {}) {
-  return new Response(JSON.stringify(obj), {
-    status, headers: { "content-type": "application/json; charset=utf-8", ...headers },
-  });
-}
-
-function cors(res) {
-  const h = new Headers(res.headers);
-  h.set("Access-Control-Allow-Origin", "*");
-  h.set("Access-Control-Allow-Headers", "X-Tg-Init, X-Owner-Key");
-  h.set("Access-Control-Allow-Methods", "GET, OPTIONS");
-  h.set("Access-Control-Max-Age", "86400");
-  return new Response(res.body, { status: res.status, headers: h });
-}
-
-function hex(bytes) {
-  return [...new Uint8Array(bytes)].map((b) => b.toString(16).padStart(2, "0")).join("");
-}
-
-async function sha256hex(s) {
-  return hex(await crypto.subtle.digest("SHA-256", enc.encode(s)));
-}
-
-async function hmac(key, msg) {
-  const k = await crypto.subtle.importKey("raw", typeof key === "string" ? enc.encode(key) : key,
-    { name: "HMAC", hash: "SHA-256" }, false, ["sign"]);
-  return new Uint8Array(await crypto.subtle.sign("HMAC", k, enc.encode(msg)));
-}
-
-// Ключи выводятся из токена бота, поэтому отдельные секреты для них не нужны.
-// Те же формулы — в news_bot.py и worker/deploy.py.
-const syncKey = (env) => sha256hex("econnews-sync:" + env.TELEGRAM_BOT_TOKEN);
-const hookKey = async (env) => (await sha256hex("econnews-hook:" + env.TELEGRAM_BOT_TOKEN)).slice(0, 48);
-
-function esc(s) {
-  return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
-}
-
-function pagesUrl(env) {
-  return (env.PAGES_URL || "").replace(/\/*$/, "/");
-}
-
-function msk(iso, opts) {
-  return new Date(iso).toLocaleString("ru-RU", { timeZone: "Europe/Moscow", ...opts });
-}
-
-function isOwnerChat(env, id) {
-  return env.OWNER_ID && String(id) === String(env.OWNER_ID).trim();
-}
 
 // ---------------------------------------------------------------------------
 // Подписчики (KV: ключ "u:<chat_id>")
@@ -155,15 +122,27 @@ async function subscribe(env, chat, from) {
 }
 
 // ---------------------------------------------------------------------------
-// Telegram
+// Живая лента: основной бот присылает свежие новости, терминал и бот читают их сразу
 // ---------------------------------------------------------------------------
-async function tg(env, method, body) {
-  const r = await fetch(TG_API + env.TELEGRAM_BOT_TOKEN + "/" + method, {
-    method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(body),
-  });
-  return r.json().catch(() => ({ ok: false }));
+async function syncLive(req, env) {
+  if (!(await authorized(req, env))) return json({ ok: false, error: "forbidden" }, 403);
+  const body = await req.json().catch(() => null);
+  if (!body || !Array.isArray(body.news)) return json({ ok: false, error: "bad body" }, 400);
+  const data = { updated: String(body.updated || new Date().toISOString()), news: body.news.slice(0, 80),
+    market: Array.isArray(body.market) ? body.market.slice(0, 60) : [] };
+  await env.SUBS.put("live", JSON.stringify(data));
+  return json({ ok: true, news: data.news.length });
 }
 
+async function liveApi(env) {
+  const raw = await cached("live-api", 20, () => env.SUBS.get("live"));
+  const d = raw ? JSON.parse(raw) : { updated: null, news: [], market: [] };
+  return json({ ok: true, ...d }, 200, { "Cache-Control": "public, max-age=20" });
+}
+
+// ---------------------------------------------------------------------------
+// Telegram
+// ---------------------------------------------------------------------------
 function keyboard(env, chatType, extra = true) {
   const base = pagesUrl(env);
   const rows = [];
@@ -175,19 +154,10 @@ function keyboard(env, chatType, extra = true) {
   if (extra) {
     rows.push([{ text: "📰 Новости", callback_data: "news" }, { text: "📊 Рынки", callback_data: "markets" }]);
     rows.push([{ text: "📅 Календарь", callback_data: "calendar" }, { text: "🏛 Сделки", callback_data: "trades" }]);
+    rows.push([{ text: "⭐ Мой список", callback_data: "watch" }, { text: "💼 Портфель", callback_data: "port" }]);
+    rows.push([{ text: "🗺 Карта рынка", callback_data: "map" }, { text: "🔎 Скринер", callback_data: "eqs" }]);
   }
   return { inline_keyboard: rows };
-}
-
-async function send(env, chat, text, markup) {
-  const body = { chat_id: chat.id, text, parse_mode: "HTML", disable_web_page_preview: true };
-  if (markup) body.reply_markup = markup;
-  let r = await tg(env, "sendMessage", body);
-  if (!r.ok && markup && /button|web_app|markup/i.test(r.description || "")) {
-    delete body.reply_markup;   // на всякий случай: без кнопок, но сообщение дойдёт
-    r = await tg(env, "sendMessage", body);
-  }
-  return r;
 }
 
 async function webhook(req, env, ctx) {
@@ -204,29 +174,53 @@ const HELP = [
   "/markets — рынки сейчас",
   "/calendar — календарь событий",
   "/trades — сделки политиков США и инсайдеров",
+  "/q AAPL BTC — котировки · /des AAPL — компания",
+  "/watch · /port · /alert — список, портфель, алерты",
+  "/help — все команды",
   "/stop — отписаться",
 ].join("\n");
 
-async function handleUpdate(update, env) {
+const OLD_CALLBACKS = ["news", "markets", "calendar", "trades", "map"];
+
+export async function handleUpdate(update, env) {
   if (update.callback_query) {
     const cq = update.callback_query;
     await tg(env, "answerCallbackQuery", { callback_query_id: cq.id });
     const chat = cq.message && cq.message.chat;
-    if (chat && ["news", "markets", "calendar", "trades"].includes(cq.data)) await command(cq.data, chat, cq.from || {}, env);
+    if (!chat) return;
+    if (OLD_CALLBACKS.includes(cq.data)) return command(cq.data, [], "", chat, cq.from || {}, env);
+    if (isNewCallback(cq.data)) {
+      try { await newCallback(cq.data, chat, env); } catch (e) { await send(env, chat, "Не получилось: " + esc(e.message || e)); }
+    }
     return;
   }
   const msg = update.message;
   if (!msg || !msg.chat || typeof msg.text !== "string") return;
   const text = msg.text.trim();
   if (!text.startsWith("/")) {
-    if (msg.chat.type === "private") await send(env, msg.chat, "Я присылаю экономические новости сам. Команды:\n" + HELP, keyboard(env, "private"));
+    if (msg.chat.type !== "private") return;
+    // в личке можно просто написать тикер: «AAPL», «BTC», «нефть»
+    if (/^[A-Za-zА-Яа-яЁё&.:/\-]{1,20}$/.test(text)) {
+      try {
+        const p = parseSymbol(text);
+        // латиница — только заглавными («AAPL», а не «hi»), остальное — нефть, золото, BTC, SBER
+        const q = p && (p.kind !== "us" || text === text.toUpperCase()) ? await getQuotes(env, [text]) : {};
+        const x = Object.values(q)[0];
+        if (x && x.px != null) {
+          return void await newCommand(x.kind === "us" ? "des" : "q", [x.key], x.key)(env, msg.chat);
+        }
+      } catch (e) { /* не тикер — покажем подсказку */ }
+    }
+    await send(env, msg.chat, "Я присылаю экономические новости сам. Команды:\n" + HELP, keyboard(env, "private"));
     return;
   }
-  const cmd = text.split(/\s+/)[0].split("@")[0].slice(1).toLowerCase();
-  await command(cmd, msg.chat, msg.from || {}, env);
+  const parts = text.split(/\s+/);
+  const cmd = parts[0].split("@")[0].slice(1).toLowerCase();
+  const rest = text.slice(parts[0].length).trim();
+  await command(cmd, parts.slice(1), rest, msg.chat, msg.from || {}, env);
 }
 
-async function command(cmd, chat, from, env) {
+async function command(cmd, args, rest, chat, from, env) {
   const owner = isOwnerChat(env, chat.id);
   if (cmd === "start") {
     const fresh = await subscribe(env, chat, from);
@@ -234,9 +228,10 @@ async function command(cmd, chat, from, env) {
       "👋 <b>Экономические новости</b>",
       "Важное из мировой экономики и с рынков — на русском: ставки центробанков, инфляция, нефть, валюты, крупные сделки политиков США и руководителей компаний.",
       "",
-      "• новости — по мере появления (проверка каждые ~10 минут)",
+      "• новости — по мере появления (проверка каждые ~5 минут)",
       "• 9:00 МСК — главное за ночь, 21:00 — итоги дня",
       "• за час до важных данных — напоминание",
+      "• котировки, компании, свой список, портфель и алерты — прямо здесь",
       "",
       fresh ? "✅ Вы подписаны." : "✅ Вы уже подписаны.",
       owner ? "👑 Вы владелец бота: в терминале, открытом кнопкой ниже, включены платные данные." : "",
@@ -244,7 +239,7 @@ async function command(cmd, chat, from, env) {
       HELP,
     ].filter((x, i, a) => x !== "" || a[i - 1] !== "").join("\n");
     await send(env, chat, hello, keyboard(env, chat.type));
-    await command("news", chat, from, env);
+    await command("news", [], "", chat, from, env);
     return;
   }
   if (cmd === "stop") {
@@ -255,7 +250,7 @@ async function command(cmd, chat, from, env) {
     await send(env, chat, t);
     return;
   }
-  if (cmd === "help") return void await send(env, chat, HELP, keyboard(env, chat.type));
+  if (cmd === "help" || cmd === "commands" || cmd === "помощь") return void await send(env, chat, HELP_FULL, keyboard(env, chat.type));
   if (cmd === "stats" && owner) {
     const subs = await allSubs(env);
     const lines = subs.slice(0, 60).map((s) => `• ${esc(s.n || "без имени")} <i>с ${esc(s.t || "?")}</i>`);
@@ -273,28 +268,27 @@ async function command(cmd, chat, from, env) {
     await send(env, chat, text, keyboard(env, chat.type, false));
     return;
   }
-  await send(env, chat, "Не знаю такой команды. Вот что я умею:\n" + HELP);
+  const handler = newCommand(cmd, args, rest);
+  if (handler) {
+    try {
+      await handler(env, chat);
+    } catch (e) {
+      console.log("command error", cmd, e && e.stack || e);
+      await send(env, chat, "Не получилось: " + esc(e.message || e) + "\nПроверьте тикер или попробуйте через минуту.");
+    }
+    return;
+  }
+  await send(env, chat, "Не знаю такой команды. Вот что я умею:\n\n" + HELP_FULL);
 }
 
 // ---------------------------------------------------------------------------
 // Ответы на команды — из data.json, который публикует основной бот
 // ---------------------------------------------------------------------------
-let dataCache = { at: 0, data: null };
-
-async function siteData(env) {
-  if (dataCache.data && Date.now() - dataCache.at < 60000) return dataCache.data;
-  const r = await fetch(pagesUrl(env) + "data.json", { cf: { cacheTtl: 60, cacheEverything: true } });
-  if (!r.ok) throw new Error("data.json: HTTP " + r.status);
-  const data = await r.json();
-  dataCache = { at: Date.now(), data };
-  return data;
-}
-
 function updated(data) {
   return data.updated ? `\n<i>обновлено ${msk(data.updated, { hour: "2-digit", minute: "2-digit" })} МСК</i>` : "";
 }
 
-function newsText(data) {
+export function newsText(data) {
   const since = Date.now() - 24 * 3600e3;
   const items = (data.news || []).filter((n) => Date.parse(n.ts) >= since);
   items.sort((a, b) => (a.level === "high" ? 0 : 1) - (b.level === "high" ? 0 : 1) || Date.parse(b.ts) - Date.parse(a.ts));
@@ -302,8 +296,10 @@ function newsText(data) {
   let total = 0;
   const blocks = items.slice(0, 8).map((n) => {
     let s = `${n.level === "high" ? "🔴" : "🟡"} <b>${esc(n.title)}</b>`;
-    if (n.lead) s += `\n${esc(n.lead.length > 220 ? n.lead.slice(0, 219) + "…" : n.lead)}`;
-    s += `\n<i>${esc((n.sources || []).join(", "))} · ${msk(n.ts, { hour: "2-digit", minute: "2-digit" })}</i>`;
+    if (n.ai && n.ai.sum) s += `\n💡 ${esc(n.ai.sum)}`;
+    else if (n.lead) s += `\n${esc(n.lead.length > 220 ? n.lead.slice(0, 219) + "…" : n.lead)}`;
+    const tk = (n.tk || []).map((t) => "$" + t.replace("MOEX:", "")).join(" ");
+    s += `\n<i>${esc((n.sources || []).join(", "))} · ${msk(n.ts, { hour: "2-digit", minute: "2-digit" })}${tk ? " · " + esc(tk) : ""}</i>`;
     if (/^https?:\/\//.test(n.link || "")) s += ` · <a href="${esc(n.link)}">читать →</a>`;
     return s;
   }).filter((b) => (total += b.length + 2) < 3800);   // лимит Telegram — 4096 символов
@@ -314,13 +310,12 @@ const MARKET_ROWS = [["S&P", "S&P 500"], ["Nasdaq", "Nasdaq"], ["DAX", "DAX"], [
   ["Brent", "Нефть Brent"], ["Золото", "Золото"], ["EUR/USD", "EUR/USD"], ["USD/RUB", "USD/RUB (ЦБ)"],
   ["CNY/RUB", "CNY/RUB (ЦБ)"], ["UST10", "UST 10 лет"], ["BTC", "Биткоин"]];
 
-function marketsText(data) {
+export function marketsText(data) {
   const by = {};
   for (const q of data.market || []) by[q.id] = q;
   const lines = MARKET_ROWS.filter(([id]) => by[id]).map(([id, name]) => {
     const q = by[id], c = q.change;
-    const icon = c == null ? "⚪" : c > 0.005 ? "🟢" : c < -0.005 ? "🔴" : "⚪";
-    return `${icon} ${esc(name)}: <b>${esc(q.price)}</b> ${esc(q.change_txt || "")}`;
+    return `${arrow(c)} ${esc(name)}: <b>${esc(q.price)}</b> ${esc(q.change_txt || "")}`;
   });
   if (!lines.length) return "Котировки пока недоступны." + updated(data);
   return "📊 <b>Рынки</b> <i>(изменение за день)</i>\n\n" + lines.join("\n") + updated(data);
@@ -343,7 +338,7 @@ function calendarText(data) {
       + (extra ? ` <i>(${extra})</i>` : "");
     if (out.length > 3800) break;
   }
-  return out + "\n\n🔴 — важное, 🟡 — среднее";
+  return out + "\n\n🔴 — важное, 🟡 — среднее\nОтчёты компаний: /earnings";
 }
 
 const TYPE_RU = { buy: "покупка", sell: "продажа", sell_part: "частичная продажа", exchange: "обмен" };
@@ -388,9 +383,8 @@ function tradesText(data) {
 }
 
 // ---------------------------------------------------------------------------
-// Котировки для терминала
+// Кто открыл терминал: владелец (пароль или Telegram) или любой человек из Telegram
 // ---------------------------------------------------------------------------
-// Проверка, что терминал открыт владельцем: из кнопки бота (подпись Telegram) или по паролю
 async function telegramUser(initData, env) {
   const p = new URLSearchParams(initData);
   const hash = p.get("hash");
@@ -403,29 +397,52 @@ async function telegramUser(initData, env) {
   try { return JSON.parse(p.get("user") || "null"); } catch { return null; }
 }
 
-async function isOwner(req, env) {
+async function whoIs(req, env) {
   const pass = req.headers.get("X-Owner-Key");
-  if (pass && env.TERMINAL_PASSWORD && pass === env.TERMINAL_PASSWORD) return true;
-  const init = req.headers.get("X-Tg-Init");
-  if (init && env.OWNER_ID && env.TELEGRAM_BOT_TOKEN) {
-    const u = await telegramUser(init, env);
-    return !!u && isOwnerChat(env, u.id);
+  if (pass && env.TERMINAL_PASSWORD && pass === env.TERMINAL_PASSWORD && env.OWNER_ID) {
+    return { id: String(env.OWNER_ID).trim(), owner: true, name: "владелец" };
   }
-  return false;
+  const init = req.headers.get("X-Tg-Init");
+  if (init && env.TELEGRAM_BOT_TOKEN) {
+    const u = await telegramUser(init, env);
+    if (u && u.id) return { id: String(u.id), owner: isOwnerChat(env, u.id), name: [u.first_name, u.last_name].filter(Boolean).join(" ") };
+  }
+  return null;
 }
 
-const memo = {};   // кэш в памяти сервера: один запрос к API на всех зрителей
-
-async function cached(key, ttl, load) {
-  const m = memo[key];
-  if (m && Date.now() - m.at < ttl * 1000) return m.value;
-  if (m && m.pending) return m.pending;
-  const pending = load().then((value) => { memo[key] = { at: Date.now(), value }; return value; })
-    .catch((e) => { delete memo[key]; throw e; });
-  memo[key] = { ...(m || {}), pending };
-  return pending;
+async function isOwner(req, env) {
+  const w = await whoIs(req, env);
+  return !!(w && w.owner);
 }
 
+// ---------------------------------------------------------------------------
+// Новые API для терминала
+// ---------------------------------------------------------------------------
+async function quoteApi(env, url) {
+  const syms = (url.searchParams.get("s") || "").split(",").map((x) => x.trim()).filter(Boolean).slice(0, 40);
+  if (!syms.length) return json({ ok: false, error: "укажите s=AAPL,BTC" }, 400);
+  const q = await getQuotes(env, syms);
+  return json({ ok: true, ts: new Date().toISOString(), quotes: q }, 200, { "Cache-Control": "no-store" });
+}
+
+async function companyApi(env, url) {
+  const s = url.searchParams.get("s") || "";
+  if (!s) return json({ ok: false, error: "укажите s=AAPL" }, 400);
+  const parts = (url.searchParams.get("parts") || COMPANY_PARTS.join(",")).split(",").filter((p) => COMPANY_PARTS.includes(p));
+  const c = await getCompany(env, s, parts.length ? parts : COMPANY_PARTS);
+  return json(c, 200, { "Cache-Control": "public, max-age=60" });
+}
+
+async function historyApi(env, url) {
+  const s = url.searchParams.get("s") || "";
+  if (!s) return json({ ok: false, error: "укажите s=AAPL" }, 400);
+  const h = await getHistory(env, s, url.searchParams.get("r") || "1y");
+  return json(h, 200, { "Cache-Control": "public, max-age=600" });
+}
+
+// ---------------------------------------------------------------------------
+// Котировки для терминала (как раньше)
+// ---------------------------------------------------------------------------
 async function finnhub(env) {
   const out = {};
   let err = "";

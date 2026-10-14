@@ -598,6 +598,7 @@ class Telegram:
         self.pages_url = pages_url
         self.subscribers = [str(x) for x in dict.fromkeys(subscribers or []) if str(x) != self.chat_id]
         self.gone = set()          # заблокировали бота или удалили чат — уберём из подписчиков
+        self.sent = 0              # сколько сообщений ушло за запуск (чтобы сразу сохранить состояние)
         self.no_webapp = set()     # чаты, где кнопки-приложения не работают
 
     def recipients(self, owner_only=False):
@@ -682,6 +683,8 @@ class Telegram:
                 print(f"  ! Telegram, чат {chat}: {e}"[:300])
             if k and len(targets) > 20:
                 time.sleep(0.04)   # не больше ~25 сообщений в секунду
+        if delivered:
+            self.sent += 1
         if targets and not delivered and last_err:
             raise last_err
 
@@ -836,6 +839,26 @@ def page_calendar(st, now):
     return out[:200]
 
 
+def page_news_item(r):
+    """Новость для терминала: заголовок, выжимка, теги, тикеры компаний и (если есть) разбор ИИ."""
+    item = {"title": r.get("title_ru") or r["title"], "original": r["title"] if r.get("title_ru") else "",
+            "lead": r.get("lead_ru") or r.get("lead") or "", "tags": r.get("tags", []),
+            "sources": r["sources"], "link": r["link"], "level": level_of(r["score"]), "ts": r["ts"]}
+    try:
+        import stocks
+        tk = stocks.tickers_in(r["title"], r.get("title_ru"), r.get("lead"), r.get("lead_ru"))
+        if tk:
+            d = stocks.direction(r["title"], r.get("lead"), r.get("title_ru"), r.get("lead_ru"))
+            item["tk"] = tk
+            if d:
+                item["dir"] = d
+    except Exception:
+        pass
+    if r.get("ai"):
+        item["ai"] = r["ai"]
+    return item
+
+
 def write_page_data(st, quotes, now):
     """docs/data.json — его читает страница «Рынок онлайн»."""
     path = os.environ.get("PAGE_DATA", PAGE_DATA)
@@ -858,10 +881,7 @@ def write_page_data(st, quotes, now):
     data = {
         "updated": now.isoformat(),
         "market": mk,
-        "news": [{"title": r.get("title_ru") or r["title"], "original": r["title"] if r.get("title_ru") else "",
-                  "lead": r.get("lead_ru") or r.get("lead") or "", "tags": r.get("tags", []),
-                  "sources": r["sources"], "link": r["link"], "level": level_of(r["score"]), "ts": r["ts"]}
-                 for r in news[:150]],
+        "news": [page_news_item(r) for r in news[:150]],
         "calendar": page_calendar(st, now),
     }
     if st.get("trades"):
@@ -938,6 +958,12 @@ def run(dry=False):
 
     # переводим только то, что действительно уйдёт в Telegram
     translate_items(to_send[:MAX_PER_MESSAGE_BATCH], lang)
+    try:
+        import ai
+        if ai.enabled():
+            ai.annotate([s for s in to_send if level_of(s["score"]) == "high"])
+    except Exception as e:
+        print(f"  ! ИИ-разбор: {type(e).__name__}: {e}"[:200])
 
     # запоминаем всё увиденное (даже неважное), чтобы не присылать повторно
     for s in stories:
@@ -945,7 +971,7 @@ def run(dry=False):
             st["seen"][i] = now.isoformat()
         rec = {"title": s["title"], "link": s["link"], "sources": s["sources"],
                "score": s["score"], "ts": now.isoformat()}
-        keep = ("title_ru", "lead", "lead_ru", "tags") if level_of(s["score"]) != "low" else ("title_ru",)
+        keep = ("title_ru", "lead", "lead_ru", "tags", "ai") if level_of(s["score"]) != "low" else ("title_ru",)
         for k in keep:
             if s.get(k):
                 rec[k] = s[k]
@@ -1128,15 +1154,60 @@ def run(dry=False):
 
     write_page_data(st, quotes, now)
     save_state(state_path, st, now)
+    extras = update_extras(now, dry)
+    push_live(token, now)
     if tg.gone:
         remove_subscribers(token, tg.gone)
 
     print(f"[{stamp} МСК] кандидатов: {len(candidates)}, новых историй: {len(stories)}, "
           f"отправлено: {len(to_send[:MAX_PER_MESSAGE_BATCH])}, получателей: {len(tg.recipients())}, "
-          f"котировок: {len(quotes)}, сделок: {n_trades}, "
+          f"котировок: {len(quotes)}, сделок: {n_trades}, {extras}"
           f"ошибки источников: {len(errors)}")
     for name, err in sorted(errors.items()):
         print(f"  ! {name}: {err}")
+    return tg.sent
+
+
+def update_extras(now, dry=False):
+    """Данные терминала, которые не зависят от новостей: компании США (stocks.json) и ставки (rates.json)."""
+    parts = []
+    if dry or not _env_on("COMPANIES", "yes"):
+        return ""
+    try:
+        import stocks
+        d = stocks.build(now)
+        if d:
+            parts.append(f"акций: {d['prices_ok']}, мультипликаторов: {d['metrics_updated']}")
+    except Exception as e:
+        print(f"  ! компании (stocks.py): {type(e).__name__}: {e}"[:200])
+    try:
+        import rates
+        r = rates.build(now)
+        if r:
+            parts.append(f"кривых: {len(r.get('curves') or {})}")
+    except Exception as e:
+        print(f"  ! ставки (rates.py): {type(e).__name__}: {e}"[:200])
+    return (", ".join(parts) + ", ") if parts else ""
+
+
+def push_live(token, now):
+    """Свежие новости — на сервер бота: терминал покажет их сразу, не дожидаясь обновления сайта."""
+    url = worker_url()
+    path = os.environ.get("PAGE_DATA", PAGE_DATA)
+    if not url or not token or not os.path.exists(path):
+        return
+    try:
+        with open(path, encoding="utf-8") as f:
+            d = json.load(f)
+        body = json.dumps({"updated": d.get("updated"), "news": (d.get("news") or [])[:60],
+                           "market": d.get("market") or []}, ensure_ascii=False).encode("utf-8")
+        req = urllib.request.Request(url + "/sync/live", data=body, method="POST",
+                                     headers={"Authorization": "Bearer " + _sync_key(token), "User-Agent": UA,
+                                              "Content-Type": "application/json"})
+        with urllib.request.urlopen(req, timeout=15) as r:
+            r.read()
+    except Exception as e:
+        print(f"  ! живая лента на сервер бота: {type(e).__name__}: {e}"[:200])
 
 
 def load_dotenv(path):
@@ -1165,7 +1236,9 @@ def git_sync(stage, repo):
         if r.returncode:
             print("  ! git pull:", (r.stderr or r.stdout).strip()[:300])
         return
-    git("add", "state.json", "docs/data.json")
+    for f in ("state.json", "docs/data.json", "docs/stocks.json", "docs/rates.json", "docs/fin"):
+        if os.path.exists(os.path.join(repo, f)):
+            git("add", f)
     if git("diff", "--cached", "--quiet").returncode == 0:
         return  # нечего отправлять
     git("-c", "user.name=news-bot", "-c", "user.email=news-bot@users.noreply.github.com",
@@ -1185,14 +1258,19 @@ def loop(minutes, sync, max_hours=0.0):
     deadline = time.time() + max_hours * 3600 if max_hours > 0 else None
     print(f"Бот запущен в постоянном режиме: проверка каждые {minutes:g} мин"
           + (", синхронизация с GitHub включена" if sync else "") + ". Остановить: Ctrl+C.")
+    last_push = 0.0
+    push_every = float(os.environ.get("PUSH_MINUTES", "10")) * 60
     while True:
         started = time.time()
         try:
             if sync:
                 git_sync("pull", repo)
-            run()
-            if sync:
+            sent = run()
+            # сайт (GitHub Pages) пересобирается при каждой отправке — не чаще раза в ~10 минут,
+            # но сразу, если что-то ушло в Telegram (чтобы после сбоя не прислать то же самое ещё раз)
+            if sync and (sent or time.time() - last_push >= push_every - 30):
                 git_sync("push", repo)
+                last_push = time.time()
         except SystemExit as e:
             print(e)
             return

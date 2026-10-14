@@ -68,15 +68,13 @@ header{flex:none;border-bottom:1px solid var(--line2);background:#050505}
 /* ---------- сетка ---------- */
 main{flex:1;min-height:0;display:grid;gap:1px;background:var(--line);
   grid-template-columns:minmax(330px,26%) 1fr minmax(320px,25%);
-  grid-template-rows:62% 38%;
-  grid-template-areas:"mkt chart crypto" "mkt news eco"}
+  grid-template-rows:62% 38%}
 .panel{background:var(--panel);display:flex;flex-direction:column;min-height:0;min-width:0}
 .panel.focus .ph{background:var(--yellow)}
 .ph{flex:none;display:flex;align-items:center;gap:8px;background:var(--amber);color:#000;padding:2px 8px;font-weight:700;letter-spacing:.04em}
 .ph .code{background:#000;color:var(--amber);padding:0 5px;font-weight:700}
 .ph .sub{margin-left:auto;font-weight:400;font-size:11px;opacity:.8}
 .pb{flex:1;overflow:auto;min-height:0;scrollbar-width:thin;scrollbar-color:#333 transparent}
-#p-mkt{grid-area:mkt} #p-chart{grid-area:chart} #p-crypto{grid-area:crypto} #p-news{grid-area:news} #p-eco{grid-area:eco} #p-trd{grid-area:eco}
 
 /* таблицы котировок */
 .sec{color:var(--amber);padding:7px 8px 3px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;position:sticky;top:0;background:var(--panel);z-index:1}
@@ -159,7 +157,7 @@ td.sp svg{display:block}
 .trd .plan{color:var(--faint)}
 .ntools .sep{width:1px;align-self:stretch;background:var(--line2);flex:none}
 .ph .swap{margin-left:auto} .ph .sub + .swap{margin-left:6px}
-@media (min-width:761px){ #p-eco.alt, #p-trd.alt{display:none} }
+@media (min-width:761px){ .panel.off{display:none!important} }
 
 /* оверлеи */
 .overlay{position:fixed;inset:0;background:rgba(0,0,0,.78);display:none;align-items:flex-start;justify-content:center;z-index:50;padding:60px 12px 12px}
@@ -178,13 +176,120 @@ td.sp svg{display:block}
 .btn.solid{background:var(--amber);color:#000}
 .msg{min-height:1.3em;font-size:12px}
 
+
+/* ---------- раскладки и выбор функции в панели ---------- */
+.ph .pick{background:#000;color:var(--amber);border:0;padding:0 5px;font:inherit;font-size:11px;cursor:pointer}
+.ph .pick:hover{color:var(--yellow)}
+.ph .ttl{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.menu{position:fixed;z-index:60;background:#0a0a0a;border:1px solid var(--amber-dim);min-width:230px;max-height:70vh;overflow:auto;box-shadow:0 8px 24px rgba(0,0,0,.6)}
+.menu button{display:flex;gap:8px;width:100%;text-align:left;padding:5px 10px;border-bottom:1px solid #141414}
+.menu button:hover,.menu button:focus{background:var(--hl);outline:0}
+.menu button b{color:var(--amber);min-width:44px;font-weight:700}
+.menu button span{color:var(--muted)}
+.menu .mh{color:var(--faint);padding:5px 10px 3px;font-size:11px;border-bottom:1px solid #141414}
+.lay{display:flex;gap:1px;flex:none}
+.lay button{border:1px solid var(--line2);padding:1px 6px;color:var(--muted)}
+.lay button.on{color:#000;background:var(--amber);border-color:var(--amber)}
+@media (max-width:1100px){ .lay{display:none} }
+
+/* вкладки внутри панели */
+.ptabs{display:flex;gap:1px;flex:none;background:var(--line);overflow-x:auto;scrollbar-width:none}
+.ptabs button{background:#0b0b0b;padding:3px 9px;color:var(--muted);white-space:nowrap}
+.ptabs button.on{color:#000;background:var(--amber)}
+.ptabs .sp{flex:1;background:#0b0b0b}
+.empty{color:var(--faint);padding:14px 10px;line-height:1.5}
+.empty b{color:var(--yellow);font-weight:500}
+.err{color:var(--down);padding:10px}
+.loading{color:var(--faint);padding:10px}
+.loading:after{content:'…';animation:dots 1s steps(3) infinite}
+@keyframes dots{0%{content:''}33%{content:'.'}66%{content:'..'}}
+
+/* компания */
+.co-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;padding:8px 10px 6px;border-bottom:1px solid var(--line)}
+.co-head .nm{font-size:15px;color:var(--text);font-weight:700}
+.co-head .tk{color:var(--amber);font-weight:700}
+.co-head .px{font-size:18px;font-weight:700;font-variant-numeric:tabular-nums}
+.co-head .meta{color:var(--muted);font-size:11.5px;width:100%}
+.co-head .meta a{color:var(--amber-dim);text-decoration:none}
+.kv{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1px;background:var(--line);border-bottom:1px solid var(--line)}
+.kv div{background:var(--panel);padding:4px 8px;display:flex;justify-content:space-between;gap:6px;white-space:nowrap;min-width:0}
+.kv div span{color:var(--muted);overflow:hidden;text-overflow:ellipsis;min-width:0}
+.kv div b{font-weight:500;font-variant-numeric:tabular-nums;flex:none}
+@media (max-width:760px){ .kv{grid-template-columns:1fr 1fr} }
+.frm input::placeholder{color:#4a4a4a}
+.r52{padding:6px 10px;border-bottom:1px solid var(--line);color:var(--muted);font-size:11.5px}
+.r52 .bar{position:relative;height:6px;background:linear-gradient(90deg,#5a1616,#3a3a3a,#0f4a2a);margin:4px 0}
+.r52 .bar i{position:absolute;top:-3px;width:3px;height:12px;background:var(--yellow)}
+.r52 .ends{display:flex;justify-content:space-between}
+.actions{display:flex;flex-wrap:wrap;gap:6px;padding:7px 10px;border-bottom:1px solid var(--line)}
+.actions button,.chipbtn{border:1px solid var(--line2);padding:2px 8px;color:var(--amber)}
+.actions button:hover,.chipbtn:hover{border-color:var(--amber)}
+.chips{display:flex;flex-wrap:wrap;gap:5px;padding:6px 10px}
+.blk{padding:7px 10px;border-bottom:1px solid var(--line)}
+.blk h4{margin:0 0 5px;color:var(--amber);font-weight:500;font-size:12px}
+.anr-bar{display:flex;height:14px;margin:4px 0 2px}
+.anr-bar i{display:block;height:100%}
+.legend{display:flex;flex-wrap:wrap;gap:4px 12px;color:var(--muted);font-size:11px}
+.legend i{display:inline-block;width:9px;height:9px;margin-right:4px;vertical-align:-1px}
+
+/* таблицы */
+table.tbl{width:100%;border-collapse:collapse}
+.tbl th{position:sticky;top:0;background:#0d0d0d;color:var(--faint);font-weight:400;text-align:right;padding:4px 8px;border-bottom:1px solid var(--line2);white-space:nowrap;z-index:1}
+.tbl th:first-child,.tbl td:first-child{text-align:left}
+.tbl th.sort{cursor:pointer} .tbl th.sort:hover{color:var(--amber)}
+.tbl th.on{color:var(--amber)}
+.tbl td{text-align:right;font-variant-numeric:tabular-nums}
+.tbl td.l{text-align:left}
+.tbl tr.row td.tkc{color:var(--amber);font-weight:700}
+.tbl td.x button{color:var(--faint)} .tbl td.x button:hover{color:var(--down)}
+.tbl tfoot td{border-top:1px solid var(--line2);font-weight:700;background:#0b0b0b}
+.frm{display:flex;flex-wrap:wrap;gap:6px;padding:6px 8px;border-bottom:1px solid var(--line);align-items:center}
+.frm input,.frm select{background:#0d0d0d;border:1px solid var(--line2);color:var(--text);font:inherit;padding:2px 6px;outline:0;min-width:0}
+.frm input:focus,.frm select:focus{border-color:var(--amber)}
+.frm input.t{text-transform:uppercase;width:110px;color:var(--yellow)}
+.frm input.n{width:80px}
+.frm label{color:var(--muted);font-size:11.5px;display:flex;gap:4px;align-items:center}
+.frm .btn{padding:2px 9px}
+.stat{display:flex;flex-wrap:wrap;gap:4px 14px;padding:6px 10px;border-bottom:1px solid var(--line);color:var(--muted);font-size:12px}
+.stat b{color:var(--text);font-weight:500}
+.cv{position:relative;flex:1;min-height:180px}
+.cv canvas{position:absolute;inset:0;width:100%;height:100%}
+.cv .legend{position:absolute;left:8px;top:6px;background:rgba(0,0,0,.6);padding:2px 6px}
+
+/* тепловая карта */
+.tm{position:relative;flex:1;min-height:200px;overflow:hidden}
+.tm .tile{position:absolute;overflow:hidden;border:1px solid #000;display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;color:#fff;line-height:1.15;text-align:center;font-size:11px}
+.tm .tile b{font-size:12px}
+.tm .tile:hover{outline:2px solid var(--yellow);z-index:2}
+.tm .sec{position:absolute;color:rgba(255,255,255,.75);font-size:10px;pointer-events:none;padding:1px 3px;z-index:1;background:rgba(0,0,0,.35);white-space:nowrap;overflow:hidden;max-width:100%}
+.tm-tip{position:fixed;z-index:70;background:#0a0a0a;border:1px solid var(--amber-dim);padding:6px 8px;pointer-events:none;font-size:12px;display:none}
+
+/* кривые */
+.gc-svg{display:block;width:100%;height:100%}
+.gc-wrap{position:relative;flex:1;min-height:170px;overflow:hidden}
+.gc-c{display:flex;gap:4px;flex-wrap:wrap;padding:5px 8px;border-bottom:1px solid var(--line)}
+.prob{display:flex;height:10px;min-width:120px}
+.prob i{display:block;height:100%}
+
+/* новости: тикеры и разбор ИИ */
+.news .tkb{color:var(--amber);border:1px solid #3a2a10;padding:0 4px;margin-left:6px;font-size:11px}
+.news .tkb:hover{border-color:var(--amber)}
+.news .tkb.up{color:var(--up);border-color:#14502f} .news .tkb.down{color:var(--down);border-color:#5a1616}
+.news .ai{grid-column:2;color:#d9c9a3;font-size:12px;margin-top:3px}
+.news .ai i{font-style:normal;margin-left:6px}
+.pill.livefeed{color:var(--up);border-color:#14502f}
+
+/* мобильное меню функций */
+nav.tabs button.more{flex:.7;color:var(--amber)}
+.fnlist{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:1px;background:var(--line)}
+.fnlist button{background:#080808;padding:9px 10px;text-align:left}
+.fnlist button b{color:var(--amber);display:block}
+.fnlist button span{color:var(--muted);font-size:11.5px}
+
 /* мобильная навигация */
 nav.tabs{display:none}
 
 @media (max-width:1100px){
-  main{grid-template-columns:minmax(300px,40%) 1fr;grid-template-rows:55% 45%;
-    grid-template-areas:"mkt chart" "crypto news"}
-  #p-eco, #p-trd{display:none}
   .clocks .clock:nth-child(n+3){display:none}
 }
 @media (max-width:760px){
@@ -212,6 +317,7 @@ nav.tabs{display:none}
       <input id="cmd" placeholder="команда: WEI, FX, CRYPTO, N, ECO, TRD, GOLD, BTC, HELP…" spellcheck="false" autocapitalize="characters" enterkeyhint="go">
       <button class="go" type="submit">GO</button>
     </form>
+    <div class="lay" id="lay" title="Раскладка: сколько панелей на экране"><button data-l="1" class="on">▦ 5</button><button data-l="4">▦ 4</button><button data-l="6">▦ 6</button></div>
     <div class="clocks" id="clocks"></div>
     <div class="status">
       <span class="pill" id="st-data" title="Источник данных по мировым рынкам">FREE</span>
@@ -257,11 +363,12 @@ nav.tabs{display:none}
 
   <section class="panel" id="p-eco">
     <div class="ph"><span class="code">ECO</span>КАЛЕНДАРЬ · МСК<button class="mode swap" data-to="p-trd" title="Показать сделки политиков и инсайдеров">⇄ СДЕЛКИ</button></div>
+    <div class="ptabs" id="eco-tabs"><button data-t="macro" class="on">МАКРО</button><button data-t="earn">ОТЧЁТЫ КОМПАНИЙ</button><span class="sp"></span></div>
     <div class="eco-next" id="eco-next">—</div>
-    <div class="pb"><table class="eco" id="eco"></table></div>
+    <div class="pb"><table class="eco" id="eco"></table><div id="earn" style="display:none"></div></div>
   </section>
 
-  <section class="panel alt" id="p-trd">
+  <section class="panel" id="p-trd">
     <div class="ph"><span class="code">TRD</span>СДЕЛКИ<span class="sub" id="trd-upd"></span><button class="mode swap" data-to="p-eco" title="Показать календарь">⇄ ECO</button></div>
     <div class="ntools" id="ttools">
       <button class="chip on" data-k="congress">🏛 ПОЛИТИКИ</button>
@@ -272,6 +379,48 @@ nav.tabs{display:none}
     </div>
     <div class="pb"><table class="trd" id="trd"></table><div class="note" id="trd-note"></div></div>
   </section>
+
+  <section class="panel" id="p-des">
+    <div class="ph"><span class="code">DES</span><span class="ttl" id="des-title">КОМПАНИЯ</span><span class="sub" id="des-sub"></span></div>
+    <div class="ptabs" id="des-tabs">
+      <button data-t="DES" class="on">DES</button><button data-t="FA">FA</button><button data-t="ERN">ERN</button>
+      <button data-t="ANR">ANR</button><button data-t="CN">CN</button><button data-t="HDS">HDS</button><span class="sp"></span>
+    </div>
+    <div class="pb" id="des-body"><div class="empty">Наберите тикер и функцию: <b>AAPL DES</b>, <b>NVDA FA</b>, <b>TSLA ERN</b>, <b>MSFT ANR</b>, <b>AMZN CN</b>. Работает и для Мосбиржи: <b>SBER DES</b>.</div></div>
+  </section>
+
+  <section class="panel" id="p-hp">
+    <div class="ph"><span class="code" id="hp-code">HP</span><span class="ttl" id="hp-title">ИСТОРИЯ ЦЕН</span><span class="sub" id="hp-sub"></span></div>
+    <div class="ptabs" id="hp-tabs">
+      <button data-t="HP" class="on">HP · ТАБЛИЦА</button><button data-t="COMP">COMP · СРАВНЕНИЕ</button><span class="sp"></span>
+      <button data-r="1m">1M</button><button data-r="3m">3M</button><button data-r="6m">6M</button><button data-r="ytd">YTD</button>
+      <button data-r="1y" class="on">1Y</button><button data-r="2y">2Y</button><button data-r="5y">5Y</button>
+    </div>
+    <div class="pb" id="hp-body" style="display:flex;flex-direction:column"><div class="empty">История цен: <b>HP AAPL</b>, <b>HP BTC 5Y</b>, <b>HP SBER</b>. Сравнение на одном графике: <b>COMP AAPL MSFT NVDA</b>.</div></div>
+  </section>
+
+  <section class="panel" id="p-eqs">
+    <div class="ph"><span class="code">EQS</span><span class="ttl">СКРИНЕР АКЦИЙ США</span><span class="sub" id="eqs-sub"></span></div>
+    <div class="pb" id="eqs-body"><div class="loading">Загружаю</div></div>
+  </section>
+
+  <section class="panel" id="p-imap">
+    <div class="ph"><span class="code">IMAP</span><span class="ttl">КАРТА РЫНКА США</span><span class="sub" id="imap-sub"></span></div>
+    <div class="ptabs" id="imap-tabs"><button data-m="ch" class="on">ЗА ДЕНЬ</button><button data-m="r5d">5 ДНЕЙ</button><button data-m="rytd">С НАЧ. ГОДА</button><button data-m="r52">ЗА ГОД</button><span class="sp"></span></div>
+    <div class="tm" id="imap"></div>
+  </section>
+
+  <section class="panel" id="p-gc">
+    <div class="ph"><span class="code" id="gc-code">GC</span><span class="ttl" id="gc-title">ОБЛИГАЦИИ И СТАВКИ</span><span class="sub" id="gc-sub"></span></div>
+    <div class="ptabs" id="gc-tabs"><button data-t="GC" class="on">GC · КРИВЫЕ</button><button data-t="CB">CB · СТАВКИ ЦБ</button><button data-t="WIRP">WIRP · ФРС</button><span class="sp"></span></div>
+    <div class="pb" id="gc-body" style="display:flex;flex-direction:column"><div class="loading">Загружаю</div></div>
+  </section>
+
+  <section class="panel" id="p-my">
+    <div class="ph"><span class="code" id="my-code">W</span><span class="ttl">МОЁ</span><span class="sub" id="my-sub"></span></div>
+    <div class="ptabs" id="my-tabs"><button data-t="W" class="on">W · СПИСОК</button><button data-t="PORT">PORT · ПОРТФЕЛЬ</button><button data-t="ALRT">ALRT · АЛЕРТЫ</button><span class="sp"></span></div>
+    <div class="pb" id="my-body"></div>
+  </section>
 </main>
 
 <nav class="tabs" id="tabs">
@@ -281,7 +430,16 @@ nav.tabs{display:none}
   <button data-p="p-news">НОВОСТИ</button>
   <button data-p="p-eco">КАЛЕНДАРЬ</button>
   <button data-p="p-trd">СДЕЛКИ</button>
+  <button class="more" id="b-more" title="Все функции">☰</button>
 </nav>
+
+<div class="overlay" id="ov-fn">
+  <div class="dlg">
+    <div class="ph"><span class="code">FN</span>ВСЕ ФУНКЦИИ<button data-close>✕</button></div>
+    <div class="fnlist" id="fnlist"></div>
+  </div>
+</div>
+<div class="tm-tip" id="tm-tip"></div>
 
 <div class="overlay" id="ov-help">
   <div class="dlg">
@@ -301,11 +459,33 @@ nav.tabs{display:none}
         <tr><td>GOLD, BRENT, SPX, DAX, BTC, ETH…</td><td>открыть график инструмента</td></tr>
         <tr><td>NASDAQ:AAPL, MOEX:SBER, AAPL</td><td>график любого тикера TradingView</td></tr>
         <tr><td>US</td><td>акции и ETF США онлайн (через сервер бота)</td></tr>
-        <tr><td>AAPL, NVDA, TSLA, SPY…</td><td>график акции</td></tr>
+        <tr><td>AAPL, NVDA, TSLA, SPY…</td><td>график акции (и карточка компании, если она открыта)</td></tr>
+        <tr><td colspan="2" style="color:var(--amber);padding-top:8px">КОМПАНИИ</td></tr>
+        <tr><td>AAPL DES</td><td>карточка компании: цена, капитализация, мультипликаторы, аналитики, следующий отчёт</td></tr>
+        <tr><td>AAPL FA</td><td>отчётность: выручка, прибыль, денежный поток по кварталам и годам</td></tr>
+        <tr><td>AAPL ERN</td><td>отчёты: прибыль на акцию — факт против прогноза, дата следующего</td></tr>
+        <tr><td>AAPL ANR</td><td>рейтинги аналитиков по месяцам</td></tr>
+        <tr><td>AAPL CN</td><td>новости компании на русском</td></tr>
+        <tr><td>AAPL HDS</td><td>сделки инсайдеров компании</td></tr>
+        <tr><td>HP AAPL 5Y</td><td>история цен таблицей, выгрузка в CSV (1M 3M 6M YTD 1Y 2Y 5Y)</td></tr>
+        <tr><td>COMP AAPL MSFT SPY</td><td>сравнение нескольких инструментов на одном графике</td></tr>
+        <tr><td colspan="2" style="color:var(--amber);padding-top:8px">РЫНОК ЦЕЛИКОМ</td></tr>
+        <tr><td>EQS</td><td>скринер ~110 крупнейших акций США: фильтры и сортировка</td></tr>
+        <tr><td>IMAP</td><td>тепловая карта рынка США по секторам</td></tr>
+        <tr><td>GC</td><td>кривые доходности: США, Германия, Британия, Япония, Россия</td></tr>
+        <tr><td>CB</td><td>ставки центробанков</td></tr>
+        <tr><td>WIRP</td><td>ожидания по ставке ФРС на ближайших заседаниях</td></tr>
+        <tr><td colspan="2" style="color:var(--amber);padding-top:8px">ЛИЧНОЕ</td></tr>
+        <tr><td>W AAPL BTC</td><td>список наблюдения (W — открыть, W AAPL — добавить)</td></tr>
+        <tr><td>PORT</td><td>портфель: позиции, прибыль и убыток</td></tr>
+        <tr><td>ALRT AAPL > 200</td><td>алерт в Telegram: цена, изменение за день (НЕФТЬ 5%), слово в новостях (ALRT НОВОСТИ ФРС)</td></tr>
+        <tr><td colspan="2" style="color:var(--amber);padding-top:8px">ЭКРАН</td></tr>
+        <tr><td>LAYOUT 4, LAYOUT 6</td><td>4 или 6 панелей на экране (LAYOUT 1 — обычная раскладка)</td></tr>
+        <tr><td>▾ в заголовке панели</td><td>поставить в эту панель любую функцию</td></tr>
         <tr><td>SET</td><td>настройки и вход владельца</td></tr>
         <tr><td>HELP</td><td>эта справка</td></tr>
       </table>
-      <p style="margin-top:10px">Нажатие на строку в любой таблице открывает график. Русские команды тоже работают: РЫНКИ, ВАЛЮТЫ, СЫРЬЁ, КРИПТА, НОВОСТИ, КАЛЕНДАРЬ, СДЕЛКИ, ПОЛИТИКИ, ИНСАЙДЕРЫ.</p>
+      <p style="margin-top:10px">Нажатие на строку в любой таблице открывает график, на тикер компании — её карточку. Русские команды тоже работают: РЫНКИ, ВАЛЮТЫ, СЫРЬЁ, КРИПТА, НОВОСТИ, КАЛЕНДАРЬ, СДЕЛКИ, ПОЛИТИКИ, ИНСАЙДЕРЫ, КОМПАНИЯ, СКРИНЕР, КАРТА, КРИВЫЕ, СТАВКИ, СПИСОК, ПОРТФЕЛЬ, АЛЕРТЫ.</p>
     </div>
   </div>
 </div>
@@ -510,6 +690,7 @@ $('mkt').addEventListener('click', function(e){ var tr = e.target.closest('tr.ro
 /* ---------- данные бота ---------- */
 function loadData(){
   fetch('../data.json?t=' + Date.now(), {cache:'no-store'}).then(function(r){ return r.json() }).then(function(d){
+    if (window.onData) { try { d = window.onData(d) || d } catch(e){} }
     data = d; ingestMarket(d.market); renderMarket(); renderNews(); renderEco(); renderTrades();
     if ($('ownc') && !($('tvc') && $('tvc').firstChild)) ownSeries(curChart, function(p){ drawOwn(p, ($('chart-title').textContent || '').replace('ГРАФИК · ', '')) });
     $('news-upd').textContent = d.updated ? 'обновлено ' + hm(d.updated) + ' МСК' : '';
@@ -786,7 +967,7 @@ function renderNews(){
   var items = (data.news || []).filter(function(n){
     if (newsFilter === 'high' && n.level !== 'high') return false;
     if (newsFilter.charAt(0) === '#' && (n.tags || []).indexOf(newsFilter.slice(1)) < 0) return false;
-    if (q && (n.title + ' ' + (n.original || '') + ' ' + (n.lead || '') + ' ' + (n.tags || []).join(' ')).toLowerCase().indexOf(q) < 0) return false;
+    if (q && (n.title + ' ' + (n.original || '') + ' ' + (n.lead || '') + ' ' + (n.tags || []).join(' ') + ' ' + (n.tk || []).join(' ')).toLowerCase().indexOf(q) < 0) return false;
     return true;
   });
   if (!items.length) { ul.appendChild(el('li', 'note', 'Ничего не найдено')); return }
@@ -798,8 +979,16 @@ function renderNews(){
     var a = el('a', null, n.title);
     if (/^https?:\/\//.test(n.link || '')) { a.href = n.link; a.target = '_blank'; a.rel = 'noopener' }
     li.appendChild(a);
-    if (n.lead) li.appendChild(el('div', 'lead', n.lead));
+    if (n.ai && n.ai.sum) {
+      var ai = el('div', 'ai', '💡 ' + n.ai.sum);
+      (n.ai.assets || []).forEach(function(x){ ai.appendChild(el('i', x.d === 'up' ? 'up' : 'down', (x.d === 'up' ? '▲' : '▼') + ' ' + x.a)) });
+      li.appendChild(ai);
+    } else if (n.lead) li.appendChild(el('div', 'lead', n.lead));
     var meta = el('div', 'meta', (n.sources || []).join(', '));
+    (n.tk || []).forEach(function(t){
+      var b = el('button', 'tkb' + (n.dir > 0 ? ' up' : n.dir < 0 ? ' down' : ''), (n.dir > 0 ? '▲' : n.dir < 0 ? '▼' : '') + '$' + t.replace('MOEX:', ''));
+      b.title = 'карточка компании'; b.onclick = function(){ runCommand(t + ' DES') }; meta.appendChild(b);
+    });
     (n.tags || []).forEach(function(t){ var b = el('button', null, '#' + t); b.onclick = function(){ setNewsFilter('#' + t) }; meta.appendChild(b) });
     li.appendChild(meta);
     ul.appendChild(li);
@@ -922,10 +1111,11 @@ function openTrd(kind, arg){
 /* ======================= панели и команды ======================= */
 var isMobile = function(){ return window.matchMedia('(max-width:760px)').matches };
 function show(pid){
-  if (pid === 'p-eco' || pid === 'p-trd') { $('p-eco').classList.toggle('alt', pid !== 'p-eco'); $('p-trd').classList.toggle('alt', pid !== 'p-trd'); store('eco_slot', pid) }
+  if (!isMobile() && window.Layout) { window.Layout.place(pid); return }
   document.querySelectorAll('.panel').forEach(function(p){ p.classList.toggle('show', p.id === pid); p.classList.toggle('focus', p.id === pid) });
   document.querySelectorAll('#tabs button').forEach(function(b){ b.classList.toggle('on', b.dataset.p === pid) });
   if (pid === 'p-chart' && !$('ownc')) openChart(curChart, null, true);
+  if (window.onPanelShow) { try { window.onPanelShow(pid) } catch(e){ console.error(e) } }
   if (!isMobile()) setTimeout(function(){ document.querySelectorAll('.panel.focus').forEach(function(p){ p.classList.remove('focus') }) }, 1200);
 }
 function goSection(code){ show('p-mkt'); var s = $('g-' + code); if (s) $('mkt').scrollTop = s.offsetTop - $('mkt').offsetTop }
@@ -955,17 +1145,26 @@ var CMDS = {
 };
 function runSymbol(s){
   s = s.replace(/\s+(GP|GO|<GO>)$/i, '').trim();
+  if (window.onSymbol) { try { window.onSymbol(s) } catch(e){} }
   if (ALIAS[s]) return openChart(ALIAS[s]);
   var coin = COINS.find(function(c){ return c[0] === s });
   if (coin) return openChart('BINANCE:' + s + 'USDT', s + '/USDT');
   openChart(s.replace(/\s+/g, ''), s);
 }
+// функции, которые пишут после тикера: «AAPL DES», «AAPL US EQUITY FA»
+var SUFFIX = {};
+function runCommand(raw){
+  raw = String(raw || '').trim().replace(/\s*<?go>?$/i, ''); if (!raw) return;
+  var words = raw.split(/\s+/), up = raw.toUpperCase(), parts = up.split(/\s+/), head = parts[0];
+  var arg = words.slice(1).join(' ');
+  if (CMDS[head]) return CMDS[head](arg);
+  var last = parts[parts.length - 1];
+  if (parts.length > 1 && SUFFIX[last]) return CMDS[last](words.slice(0, -1).join(' ').replace(/\s+(US\s+)?EQUITY$/i, ''));
+  runSymbol(up);
+}
 $('cmdf').addEventListener('submit', function(e){
   e.preventDefault();
-  var raw = $('cmd').value.trim(); if (!raw) return;
-  var up = raw.toUpperCase().replace(/\s*<?GO>?$/, '');
-  var parts = up.split(/\s+/), head = parts[0], arg = raw.split(/\s+/).slice(1).join(' ').replace(/\s*<?go>?$/i, '');
-  if (CMDS[head]) CMDS[head](arg); else runSymbol(up);
+  runCommand($('cmd').value);
   $('cmd').value = ''; $('cmd').blur();
 });
 document.addEventListener('keydown', function(e){
@@ -1038,7 +1237,6 @@ function safe(f){ try { f() } catch(e){ console.error(e) } }
 var lc = (store('last_chart') || '').split('|');
 if (lc[0]) curChart = lc[0];
 safe(function(){ if (!isMobile()) { document.querySelectorAll('.panel').forEach(function(p){ p.classList.add('show') }); openChart(lc[0] || 'S&P', lc[1] || null, true) } });
-safe(function(){ if (!isMobile() && store('eco_slot') === 'p-trd') { $('p-eco').classList.add('alt'); $('p-trd').classList.remove('alt') } });
 safe(function(){ tick(); setInterval(tick, 15000) });
 safe(renderCrypto);
 safe(function(){ loadData(); setInterval(loadData, 120000) });
@@ -1048,8 +1246,21 @@ safe(function(){ loadGlobal(); setInterval(loadGlobal, 300000) });
 safe(function(){ store('eodhd_key', null); store('finnhub_key', null) });   // старые ключи из браузера больше не нужны
 safe(function(){ loadConfig().then(apiLoop) });
 document.addEventListener('visibilitychange', function(){ if (!document.hidden && API) apiLoop() });
-try { var startCmd = new URLSearchParams(location.search).get('cmd'); if (startCmd && CMDS[startCmd.toUpperCase()]) CMDS[startCmd.toUpperCase()]('') } catch(e){}
+
+/* ======================= для fn.js: функции компаний, ставок, личного и раскладок ======================= */
+window.TERM = {
+  $: $, el: el, store: store, fmt: fmt, pct: pct, cls: cls, hm: hm, dayLabel: dayLabel, spark: spark, flash: flash,
+  MSK: MSK, Q: Q, C: C, CMDS: CMDS, SUFFIX: SUFFIX, TV: TV, ALIAS: ALIAS, COINS: COINS,
+  data: function(){ return data }, setData: function(d){ data = d }, renderNews: renderNews, renderEco: renderEco,
+  show: show, isMobile: isMobile, openChart: openChart, runSymbol: runSymbol, runCommand: runCommand,
+  openOverlay: openOverlay, curChart: function(){ return curChart },
+  api: function(){ return API }, loadConfig: loadConfig,
+  authHeaders: function(){ var h = {}, init = tgInit(), p = ownerPass(); if (init) h['X-Tg-Init'] = init; if (p) h['X-Owner-Key'] = p; return h },
+  hasIdentity: function(){ return !!(tgInit() || ownerPass()) },
+  apiTier: function(){ return apiTier }
+};
 })();
 </script>
+<script src="fn.js"></script>
 </body>
 </html>

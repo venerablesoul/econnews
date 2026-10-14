@@ -1,7 +1,7 @@
 // Сервис-воркер терминала: нужен для установки как приложения и для заставки без интернета.
 // Котировки, новости и графики НЕ кэшируются — они всегда берутся свежими из сети.
-const CACHE = 'econ-terminal-v6';
-const SHELL = ['./', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png'];
+const CACHE = 'econ-terminal-v7';
+const SHELL = ['./', './fn.js', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).then(() => self.skipWaiting()));
