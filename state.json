@@ -683,7 +683,9 @@
   "67f1ee294a8e7b57": "2026-10-14T03:39:37.713537+00:00",
   "ff959de8230ff3ba": "2026-10-14T03:39:37.713537+00:00",
   "956e19cb9b22f0b3": "2026-10-14T03:49:37.725241+00:00",
-  "7f5ebdd98f7945ac": "2026-10-14T03:49:37.725241+00:00"
+  "7f5ebdd98f7945ac": "2026-10-14T03:49:37.725241+00:00",
+  "2556b6944ba00f82": "2026-10-14T03:59:37.751919+00:00",
+  "81d2751b28512a67": "2026-10-14T03:59:37.751919+00:00"
  },
  "recent": [
   {
@@ -6895,6 +6897,29 @@
    "score": 3,
    "ts": "2026-10-14T03:49:37.725241+00:00",
    "title_ru": "Глава CBA Мэтт Комин говорит, что Австралия должна сохранить экономическую ценность ИИ"
+  },
+  {
+   "title": "IMF World Economic Output Press Briefing",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNX2J6YmdnaWljMUNpNDR0dk9yM3lYMzFsRUhPTEwzZlNlMzdSWnluYndKcWpFZkFWTkUwWUVYc2oxZnlsQXZPSTN6dk5nMFppXzNCRkVmYWFiVF9LZ3hDTUNiUTd4cWY3UU9CVEpXemZUTW9mRGVCWFNwT2paNGp3UVhLdWhRWnhUNEdhOWxpQm43TTNZN1FkZHY3NlBFMWluRy1UbjZNUnNYU25WRS1IbVRB?oc=5",
+   "sources": [
+    "МВФ"
+   ],
+   "score": 6,
+   "ts": "2026-10-14T03:59:37.751919+00:00",
+   "title_ru": "Пресс-брифинг МВФ о мировом экономическом развитии"
+  },
+  {
+   "title": "China's exports surge 36.3% y/y in September, imports up 31%",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOVXg0RnM4TVlLaHEwQjBYdU16ZGhJaXpFeVVXYk9FLVg1RFp4cVlvWWNWa2xlRlhacndGbHpYeF9QMWs5Zy0ydnV6Ni1kV2dIUS1Ca0NEYVNpdHlQMk1EdFBOc2hxTVlJLXZXX2RKbVplTG5NY1B2NEl2UXRFaFROckZjUGdVZW1vcWpYUmdJR21JOTJrQkhIT3E5Y25CM1VCMDNwOWcxbVdsZw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-14T03:59:37.751919+00:00",
+   "title_ru": "Экспорт Китая в сентябре вырос на 36,3% г/г, импорт вырос на 31%",
+   "tags": [
+    "Китай"
+   ]
   }
  ],
  "last_digest": "2026-10-13",
@@ -8823,7 +8848,7 @@
    "house": true,
    "senate": true
   },
-  "checked": "2026-10-14T02:49:37.735854+00:00",
+  "checked": "2026-10-14T03:59:37.751919+00:00",
   "sec_seen": [],
   "errors": {
    "sec": "HTTPError: HTTP Error 403: Forbidden"
