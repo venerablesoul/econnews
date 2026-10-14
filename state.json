@@ -917,7 +917,9 @@
   "06aa1dd6eec02a74": "2026-10-14T14:30:32.355425+00:00",
   "77f40e3607182591": "2026-10-14T14:40:32.316204+00:00",
   "f862a874a3645538": "2026-10-14T14:40:32.316204+00:00",
-  "e830dc80b42fa64b": "2026-10-14T14:40:32.316204+00:00"
+  "e830dc80b42fa64b": "2026-10-14T14:40:32.316204+00:00",
+  "853be00a318ef76c": "2026-10-14T14:50:32.324919+00:00",
+  "6c7766057feb8348": "2026-10-14T14:50:32.324919+00:00"
  },
  "recent": [
   {
@@ -9442,6 +9444,19 @@
    "tags": [
     "Россия"
    ]
+  },
+  {
+   "title": "World Economic Outlook (October 2026) - Real GDP growth",
+   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBxb0hpRXRzRlUwYTFkTjhBek1aYVdBWDdPb3hUbmxUR180d3pSS1ZRUGFlVXk4R090TDlIM1hDd25UTWJiazdaSFhpLWlNcG5PMy1nTWQ3SUotdw?oc=5",
+   "sources": [
+    "МВФ"
+   ],
+   "score": 9,
+   "ts": "2026-10-14T14:50:32.324919+00:00",
+   "title_ru": "Перспективы мировой экономики (октябрь 2026 г.) – Рост реального ВВП",
+   "tags": [
+    "ВВП"
+   ]
   }
  ],
  "last_digest": "2026-10-13",
@@ -11376,7 +11391,7 @@
    "house": true,
    "senate": true
   },
-  "checked": "2026-10-14T13:40:32.324671+00:00",
+  "checked": "2026-10-14T14:50:32.324919+00:00",
   "sec_seen": [],
   "errors": {
    "sec": "HTTPError: HTTP Error 403: Forbidden"
