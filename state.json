@@ -826,7 +826,9 @@
   "6312f3ee50192024": "2026-10-14T11:20:02.822616+00:00",
   "66d43c4755d09712": "2026-10-14T11:30:02.866235+00:00",
   "6ace1b68ed1d42fc": "2026-10-14T11:30:02.866235+00:00",
-  "2797deb5dc3703fb": "2026-10-14T11:30:02.866235+00:00"
+  "2797deb5dc3703fb": "2026-10-14T11:30:02.866235+00:00",
+  "3247b4d0bc1ff666": "2026-10-14T11:40:02.863102+00:00",
+  "52ccbb115e6b5073": "2026-10-14T11:40:02.863102+00:00"
  },
  "recent": [
   {
@@ -8509,6 +8511,20 @@
    "tags": [
     "облигации"
    ]
+  },
+  {
+   "title": "Indian shares end lower as higher oil prices, foreign outflows dent appetite",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOUDFseEc5cVpDQ2FOSndESDFUc3N6VnVMY0c0bS14N2taUmU3cU9CY09HeEVvX014STdGY1pwY05aWXVTemoycUFEbzFLeFdVa2JIZ1Nwc1BUZGxkSXEyeXJvVW5VdFBtM0E3MXVpWll5R3pKU3FMajQzODBYZjhuM1V5cDdOQmlwRmxwWUhkZ2R5a0RKM2YtaU91UkVMYUJsYVJmQVBOU1lra2R6YkZ0bXdn?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 7,
+   "ts": "2026-10-14T11:40:02.863102+00:00",
+   "title_ru": "Индийские акции закрылись снижением, так как высокие цены на нефть и отток иностранных инвестиций снижают аппетит",
+   "tags": [
+    "нефть",
+    "рынки"
+   ]
   }
  ],
  "last_digest": "2026-10-13",
@@ -10443,7 +10459,7 @@
    "house": true,
    "senate": true
   },
-  "checked": "2026-10-14T10:30:02.937454+00:00",
+  "checked": "2026-10-14T11:40:02.863102+00:00",
   "sec_seen": [],
   "errors": {
    "sec": "HTTPError: HTTP Error 403: Forbidden"
