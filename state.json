@@ -989,7 +989,12 @@
   "19aba750a06c951c": "2026-10-14T18:40:58.860042+00:00",
   "306dfc243ae6c35e": "2026-10-14T18:50:58.733485+00:00",
   "e00be159e7c00157": "2026-10-14T18:50:58.733485+00:00",
-  "1d35e87617b541f4": "2026-10-14T19:00:58.748010+00:00"
+  "1d35e87617b541f4": "2026-10-14T19:00:58.748010+00:00",
+  "0dfc4992d0876b7a": "2026-10-14T19:10:58.725679+00:00",
+  "a9261ba152f1139c": "2026-10-14T19:10:58.725679+00:00",
+  "16004354436cfad6": "2026-10-14T19:10:58.725679+00:00",
+  "65ad82a919bf2a02": "2026-10-14T19:10:58.725679+00:00",
+  "2e3928179b6a3f43": "2026-10-14T19:10:58.725679+00:00"
  },
  "recent": [
   {
@@ -10106,6 +10111,31 @@
    "tags": [
     "инфляция"
    ]
+  },
+  {
+   "title": "Time to Worry About Tomorrow’s Trade War",
+   "link": "https://www.bloomberg.com/news/newsletters/2026-10-14/time-to-worry-about-tomorrow-s-trade-war",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-14T19:10:58.725679+00:00",
+   "title_ru": "Время беспокоиться о завтрашней торговой войне",
+   "lead": "Where Europe stands after trade talks with China.",
+   "lead_ru": "Какова позиция Европы после торговых переговоров с Китаем.",
+   "tags": [
+    "Китай",
+    "пошлины"
+   ]
+  },
+  {
+   "title": "What to expect at the next Fed meeting now that rate-hike odds are rising",
+   "link": "https://www.marketwatch.com/story/heres-what-the-fed-might-do-at-this-months-meeting-after-todays-hot-inflation-reading-087511b6?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 2,
+   "ts": "2026-10-14T19:10:58.725679+00:00"
   }
  ],
  "last_digest": "2026-10-14",
@@ -11037,6 +11067,126 @@
  "all_down_alerted": false,
  "trades": {
   "congress": [
+   {
+    "src": "house",
+    "who": "Daniel Meuser",
+    "where": "Палата, PA-09",
+    "owner": "SP",
+    "ticker": "NVDA",
+    "asset": "NVIDIA Corporation - Common Stock",
+    "type": "sell_part",
+    "amin": 1001,
+    "amax": 15000,
+    "date": "2026-08-31",
+    "disclosed": "2026-10-14",
+    "link": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035487.pdf",
+    "id": "cadbfc9198e015ea"
+   },
+   {
+    "src": "house",
+    "who": "Kevin Hern",
+    "where": "Палата, OK-01",
+    "owner": "JT",
+    "ticker": "CB",
+    "asset": "Chubb Limited Common Stock",
+    "type": "sell",
+    "amin": 1001,
+    "amax": 15000,
+    "date": "2026-09-23",
+    "disclosed": "2026-10-13",
+    "link": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035588.pdf",
+    "id": "2c2d3bd77d811d2d"
+   },
+   {
+    "src": "house",
+    "who": "Kevin Hern",
+    "where": "Палата, OK-01",
+    "owner": "JT",
+    "ticker": "DVN",
+    "asset": "Devon Energy Corporation Common Stock",
+    "type": "sell_part",
+    "amin": 15001,
+    "amax": 50000,
+    "date": "2026-09-23",
+    "disclosed": "2026-10-13",
+    "link": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035588.pdf",
+    "id": "55404ec1d94ba77c"
+   },
+   {
+    "src": "house",
+    "who": "Kevin Hern",
+    "where": "Палата, OK-01",
+    "owner": "JT",
+    "ticker": "LMT",
+    "asset": "Lockheed Martin Corporation Common Stock",
+    "type": "sell",
+    "amin": 15001,
+    "amax": 50000,
+    "date": "2026-09-23",
+    "disclosed": "2026-10-13",
+    "link": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035588.pdf",
+    "id": "af54da42ff9adb29"
+   },
+   {
+    "src": "house",
+    "who": "Kevin Hern",
+    "where": "Палата, OK-01",
+    "owner": "JT",
+    "ticker": "LIN",
+    "asset": "Linde plc - Ordinary Shares",
+    "type": "sell_part",
+    "amin": 15001,
+    "amax": 50000,
+    "date": "2026-09-17",
+    "disclosed": "2026-10-13",
+    "link": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035588.pdf",
+    "id": "9d91ce93946134e1"
+   },
+   {
+    "src": "house",
+    "who": "Kevin Hern",
+    "where": "Палата, OK-01",
+    "owner": "JT",
+    "ticker": "LMT",
+    "asset": "Lockheed Martin Corporation Common Stock",
+    "type": "sell_part",
+    "amin": 15001,
+    "amax": 50000,
+    "date": "2026-09-17",
+    "disclosed": "2026-10-13",
+    "link": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035588.pdf",
+    "id": "030cb07f966ce888"
+   },
+   {
+    "src": "house",
+    "who": "Kevin Hern",
+    "where": "Палата, OK-01",
+    "owner": "JT",
+    "ticker": "MRSH",
+    "asset": "Marsh Common Stock",
+    "type": "sell_part",
+    "amin": 50001,
+    "amax": 100000,
+    "date": "2026-09-17",
+    "disclosed": "2026-10-13",
+    "link": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035588.pdf",
+    "id": "9501f5fb24895e63"
+   },
+   {
+    "src": "house",
+    "who": "Kevin Hern",
+    "where": "Палата, OK-01",
+    "owner": "JT",
+    "ticker": "ROK",
+    "asset": "Rockwell Automation, Inc. Common Stock",
+    "type": "sell_part",
+    "amin": 15001,
+    "amax": 50000,
+    "date": "2026-09-17",
+    "disclosed": "2026-10-13",
+    "link": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035588.pdf",
+    "id": "eeeada0cdb230f27"
+   },
    {
     "src": "house",
     "who": "Rick Larsen",
@@ -12034,14 +12184,16 @@
    "0541be4f-4f96-4d84-8d6f-d349f218bb2a": "2026-10-07",
    "20035622": "2026-10-12",
    "20035635": "2026-10-12",
-   "20035585": "2026-10-12"
+   "20035585": "2026-10-12",
+   "20035588": "2026-10-13",
+   "20035487": "2026-10-14"
   },
   "queue": [],
   "ready": {
    "house": true,
    "senate": true
   },
-  "checked": "2026-10-14T18:00:58.853348+00:00",
+  "checked": "2026-10-14T19:10:58.725679+00:00",
   "sec_seen": [],
   "errors": {
    "sec": "HTTPError: HTTP Error 403: Forbidden"
