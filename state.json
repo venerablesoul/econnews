@@ -935,7 +935,9 @@
   "58938f1536677827": "2026-10-14T15:30:32.338550+00:00",
   "abf451c1665a2e14": "2026-10-14T15:30:32.338550+00:00",
   "2af3c77e5e3aa091": "2026-10-14T15:30:32.338550+00:00",
-  "91c5749a8618fcd2": "2026-10-14T15:40:32.433164+00:00"
+  "91c5749a8618fcd2": "2026-10-14T15:40:32.433164+00:00",
+  "d59b891cf9e653f2": "2026-10-14T15:50:32.328699+00:00",
+  "1591699c86942c78": "2026-10-14T15:50:32.328699+00:00"
  },
  "recent": [
   {
@@ -9565,6 +9567,21 @@
    "tags": [
     "облигации"
    ]
+  },
+  {
+   "title": "UAE Oil Production Surged to Records in September, IEA Says",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-14/uae-oil-production-surged-to-records-in-september-iea-says",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-14T15:50:32.328699+00:00",
+   "title_ru": "Добыча нефти в ОАЭ в сентябре выросла до рекордов, сообщает МЭА",
+   "lead": "Oil output from the United Arab Emirates climbed to record levels last month, the International Energy Agency said, underscoring its resilience during the Iran war and liberation from OPEC+ limits.",
+   "lead_ru": "Добыча нефти в Объединенных Арабских Эмиратах выросла до рекордного уровня в прошлом месяце, сообщило Международное энергетическое агентство, подчеркнув их устойчивость во время войны с Ираном и освобождения от ограничений ОПЕК+.",
+   "tags": [
+    "нефть"
+   ]
   }
  ],
  "last_digest": "2026-10-13",
@@ -11499,7 +11516,7 @@
    "house": true,
    "senate": true
   },
-  "checked": "2026-10-14T14:50:32.324919+00:00",
+  "checked": "2026-10-14T15:50:32.328699+00:00",
   "sec_seen": [],
   "errors": {
    "sec": "HTTPError: HTTP Error 403: Forbidden"
