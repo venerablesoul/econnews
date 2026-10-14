@@ -864,7 +864,14 @@
   "5aef455d88d45051": "2026-10-14T12:30:02.923046+00:00",
   "5cdc78e98d1a2c25": "2026-10-14T12:30:02.923046+00:00",
   "c8b0fa24f0c52b1d": "2026-10-14T12:30:02.923046+00:00",
-  "36d0a46289fbd861": "2026-10-14T12:30:02.923046+00:00"
+  "36d0a46289fbd861": "2026-10-14T12:30:02.923046+00:00",
+  "808a248986b3f265": "2026-10-14T12:40:32.283925+00:00",
+  "d53ff44c8d557a42": "2026-10-14T12:40:32.283925+00:00",
+  "b8d785fa3db12c4d": "2026-10-14T12:40:32.283925+00:00",
+  "3421d517a0dda055": "2026-10-14T12:40:32.283925+00:00",
+  "6a70db7bf9313efe": "2026-10-14T12:40:32.283925+00:00",
+  "7e428a8f6eaa8e73": "2026-10-14T12:40:32.283925+00:00",
+  "362f5f7356917295": "2026-10-14T12:40:32.283925+00:00"
  },
  "recent": [
   {
@@ -8869,6 +8876,100 @@
    "score": 3,
    "ts": "2026-10-14T12:30:02.923046+00:00",
    "title_ru": "BofA не соответствует оценкам прибыли из-за слабости рынка капитала; книги заряд на 1,2 миллиарда долларов"
+  },
+  {
+   "title": "Consumer Price Index News Release - 2026 M09 Results",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1VTTBtSDBkdkVvT2lSZDlRWGhJcG9ScVVFMmcwekc2NDRvSUIwSTNPQnBZRnlGQlNXYzB1bDN4UDNqNlRvM1ZiRGpIbVA0VEktd21fWktFRDZPaF82OFQ4V3B6RU1YUjBwQlE?oc=5",
+   "sources": [
+    "Статистика труда США (BLS)"
+   ],
+   "score": 5,
+   "ts": "2026-10-14T12:40:32.283925+00:00",
+   "title_ru": "Пресс-релиз по индексу потребительских цен – результаты за 2026 М09"
+  },
+  {
+   "title": "US inflation jumps to 3.7% as Iran war drives up prices",
+   "link": "https://www.ft.com/content/c1e4c8b1-8fe0-414d-b52f-c74a6d927b3d?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 5,
+   "ts": "2026-10-14T12:40:32.283925+00:00",
+   "title_ru": "Инфляция в США подскочила до 3,7%, поскольку война в Иране приводит к росту цен",
+   "lead": "Rebound in fuel costs has piled pressure on voters ahead of midterm elections",
+   "lead_ru": "Рост цен на топливо усилил давление на избирателей в преддверии промежуточных выборов",
+   "tags": [
+    "инфляция"
+   ]
+  },
+  {
+   "title": "Consumer prices rose 0.6% in September, putting annual inflation rate at 3.7%",
+   "link": "https://www.cnbc.com/2026/10/14/cpi-inflation-report-september-2026.html",
+   "sources": [
+    "CNBC"
+   ],
+   "score": 5,
+   "ts": "2026-10-14T12:40:32.283925+00:00",
+   "title_ru": "Потребительские цены в сентябре выросли на 0,6%, в результате чего годовой уровень инфляции составил 3,7%.",
+   "lead": "The consumer price index was expected to increase 0.6% in September on a monthly basis and 3.6% from a year ago, according to the Dow Jones consensus forecast.",
+   "lead_ru": "Согласно консенсус-прогнозу Dow Jones, индекс потребительских цен, как ожидается, вырастет на 0,6% в сентябре в месячном исчислении и на 3,6% по сравнению с прошлым годом.",
+   "tags": [
+    "инфляция",
+    "рынки"
+   ]
+  },
+  {
+   "title": "US inflation rose to 3.7% in September, figures show",
+   "link": "https://www.theguardian.com/business/2026/oct/14/inflation-numbers-september",
+   "sources": [
+    "The Guardian"
+   ],
+   "score": 4,
+   "ts": "2026-10-14T12:40:32.283925+00:00",
+   "title_ru": "Инфляция в США в сентябре выросла до 3,7%, свидетельствуют данные",
+   "lead": "Final inflation report before midterms comes as polls show widespread anger over cost of living under Trump Republicans are entering the midterm elections with the highest rate of inflation since the spring, according to a…",
+   "lead_ru": "Окончательный отчет по инфляции перед промежуточными выборами выйдет, поскольку опросы показывают широко распространенное недовольство по поводу стоимости жизни при Трампе. Республиканцы вступают в промежуточные выборы с самым высоким уровнем инфляции с весны, согласно…",
+   "tags": [
+    "инфляция"
+   ]
+  },
+  {
+   "title": "US Consumer Prices Climb by Most Since April on Fuel Costs",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-14/us-consumer-prices-climb-by-most-since-april-on-fuel-costs",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-14T12:40:32.283925+00:00",
+   "title_ru": "Потребительские цены в США выросли больше всего с апреля из-за цен на топливо",
+   "lead": "US consumer prices advanced at the fastest pace in five months on rising fuel costs and a gauge of underlying price pressures rose by more than expected, keeping the squeeze on household budgets ahead of November’s midterm…",
+   "lead_ru": "Потребительские цены в США росли самыми быстрыми темпами за пять месяцев на фоне роста цен на топливо, а показатель базового ценового давления вырос больше, чем ожидалось, что привело к ограничению семейных бюджетов в преддверии промежуточных выборов в ноябре..."
+  },
+  {
+   "title": "Fed's Bowman says there's time to 'wait and see' before any more action",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPSkUzM2NCLVljQkh5Nmlsd0FjZ2NYSWhFWUI2QUhxUjJpbXU0RFdtOEdYYUlkdnJZUldNcmVIRUFhMnhsVUtPR0tUUEdsYXNaZXlENDF2NlpDQnVOcHRJcnhMV1IxcmtxZHdtYTFDTnlEVEoyNU94cHMwbDAzcWJYeVJzYllzeVlhbk9tZ29lYVRBQXFrc09WNTlyMVV3RTY3VVpwSE9mVHg?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-14T12:40:32.283925+00:00",
+   "title_ru": "Боуман из ФРС говорит, что есть время «подождать и посмотреть», прежде чем предпринимать дальнейшие действия",
+   "tags": [
+    "ФРС"
+   ]
+  },
+  {
+   "title": "Eutelsat shares jump as Ukraine flags curbs on Starlink military-grade service",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOVWhWbm1PUEtEQWFtY2lHdjRoWHhiVDdhaHo5U2NoLWMwVXlydnFvYUowbHRHMXNyX2NKSlJQZWY4VTZ1emotSGNkVHZUaEc2OGRJZjhmWFFZbGtVWHBXbzdUdUdJcmRnN2xpOFIxSU5NRzRKZzVtOUNqVXFvNThadVZZa0E0Um5FTUJUMEdhYkV0cjNlemFXUnFrMUViTjljVW9hSGRObGkySjJLcXY5OXBoN3FpQ3ZH?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-14T12:40:32.283925+00:00",
+   "title_ru": "Акции Eutelsat подскочили, поскольку Украина отмечает ограничения на услуги Starlink военного уровня",
+   "tags": [
+    "рынки"
+   ]
   }
  ],
  "last_digest": "2026-10-13",
@@ -8883,7 +8984,7 @@
   "ЦБ РФ": 0,
   "Статистика труда США (BLS)": 0,
   "CNBC": 0,
-  "ФРС США": 1,
+  "ФРС США": 0,
   "Bloomberg": 0,
   "Reuters": 0,
   "MarketWatch": 0,
@@ -10803,7 +10904,7 @@
    "house": true,
    "senate": true
   },
-  "checked": "2026-10-14T11:40:02.863102+00:00",
+  "checked": "2026-10-14T12:40:32.283925+00:00",
   "sec_seen": [],
   "errors": {
    "sec": "HTTPError: HTTP Error 403: Forbidden"
