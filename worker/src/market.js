@@ -82,19 +82,28 @@ async function usQuote(env, s) {
   return { px: x.c, ch: x.dp, prev: x.pc, h: x.h, l: x.l, o: x.o, t: x.t, cur: "$", src: "finnhub" };
 }
 
+const BINANCE_HOSTS = [BINANCE, "https://api.binance.com/api/v3", "https://api1.binance.com/api/v3"];
+
 async function cryptoQuotes(syms) {
   const list = "[" + syms.map((s) => '"' + s + 'USDT"').join(",") + "]";
+  const errors = [];
+  for (const host of BINANCE_HOSTS) {
+    try {
+      const arr = await cached("bn:" + host + syms.join(","), 15, () => getJSON(host + "/ticker/24hr?symbols=" + encodeURIComponent(list), { timeout: 6000 }));
+      const out = {};
+      for (const x of arr) out[x.symbol.replace(/USDT$/, "")] = { px: +x.lastPrice, ch: +x.priceChangePercent, h: +x.highPrice, l: +x.lowPrice, cur: "$", src: "binance" };
+      if (Object.keys(out).length) return out;
+    } catch (e) { errors.push(String(e.message || e)); }
+  }
   try {
-    const arr = await cached("bn:" + syms.join(","), 15, () => getJSON(BINANCE + "/ticker/24hr?symbols=" + encodeURIComponent(list), { timeout: 8000 }));
-    const out = {};
-    for (const x of arr) out[x.symbol.replace(/USDT$/, "")] = { px: +x.lastPrice, ch: +x.priceChangePercent, h: +x.highPrice, l: +x.lowPrice, cur: "$", src: "binance" };
-    return out;
-  } catch (e) {
     const ids = syms.map((s) => COINS[s]).join(",");
     const d = await cached("cg:" + ids, 60, () => getJSON("https://api.coingecko.com/api/v3/simple/price?ids=" + ids + "&vs_currencies=usd&include_24hr_change=true"));
     const out = {};
     for (const s of syms) { const x = d[COINS[s]]; if (x) out[s] = { px: x.usd, ch: x.usd_24h_change, cur: "$", src: "coingecko" }; }
     return out;
+  } catch (e) {
+    errors.push(String(e.message || e));
+    throw new Error("крипта: " + errors.join("; "));
   }
 }
 
@@ -135,14 +144,15 @@ export async function getQuotes(env, inputs) {
     jobs.push(usQuote(env, p.s).then((q) => { if (q) out[p.key] = { key: p.key, kind: "us", name: p.s, ...q }; })
       .catch((e) => { out[p.key] = { key: p.key, kind: "us", error: String(e.message || e) }; }));
   }
+  const fail = (list, kind) => (e) => { for (const p of list) out[p.key] = { key: p.key, kind, error: String(e.message || e) }; };
   const cr = by("crypto");
   if (cr.length) jobs.push(cryptoQuotes(cr.map((p) => p.s)).then((m) => {
     for (const p of cr) if (m[p.s]) out[p.key] = { key: p.key, kind: "crypto", name: p.s + "/USDT", ...m[p.s] };
-  }).catch(() => {}));
+  }).catch(fail(cr, "crypto")));
   const mo = by("moex");
   if (mo.length) jobs.push(moexQuotes(mo.map((p) => p.s)).then((m) => {
     for (const p of mo) if (m[p.s]) out[p.key] = { key: p.key, kind: "moex", ...m[p.s], name: m[p.s].name || p.s };
-  }).catch(() => {}));
+  }).catch(fail(mo, "moex")));
   const mk = by("mkt");
   if (mk.length) jobs.push(siteData(env).then((d) => {
     const ids = {};
@@ -192,7 +202,12 @@ async function binanceHistory(coin, range) {
   const days = sinceDays(range);
   const interval = days > 900 ? "1w" : "1d";
   const limit = Math.min(1000, interval === "1w" ? Math.ceil(days / 7) + 1 : days);
-  const k = await getJSON(BINANCE + "/klines?symbol=" + coin + "USDT&interval=" + interval + "&limit=" + limit, { ttl: 900 });
+  let k = null, err = null;
+  for (const host of BINANCE_HOSTS) {
+    try { k = await getJSON(host + "/klines?symbol=" + coin + "USDT&interval=" + interval + "&limit=" + limit, { ttl: 900, timeout: 8000 }); break; }
+    catch (e) { err = e; }
+  }
+  if (!k) throw err || new Error("Binance недоступен");
   const out = { t: [], o: [], h: [], l: [], c: [], v: [], cur: "USD", name: coin + "/USDT" };
   for (const x of k) { out.t.push(Math.floor(x[0] / 1000)); out.o.push(+x[1]); out.h.push(+x[2]); out.l.push(+x[3]); out.c.push(+x[4]); out.v.push(+x[5]); }
   return out;
@@ -260,17 +275,19 @@ function seriesRows(series, keys) {
 
 const FA_KEYS = ["eps", "salesPerShare", "grossMargin", "operatingMargin", "netMargin", "roe", "totalDebtToEquity", "fcfMargin"];
 
+// заголовки переводим по одному (параллельно): если склеить, переводчик иногда теряет переносы строк
+async function translateOne(line) {
+  return cached("tr:" + line, 86400, async () => {
+    const d = await getJSON("https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=ru&dt=t&q=" + encodeURIComponent(line),
+      { ttl: 86400, timeout: 6000 });
+    const text = (d[0] || []).map((seg) => seg[0] || "").join("").trim();
+    if (!text) throw new Error("пустой перевод");
+    return text;
+  });
+}
+
 async function translateLines(lines) {
-  if (!lines.length) return lines;
-  try {
-    const q = encodeURIComponent(lines.map((l) => l.replace(/\n/g, " ")).join("\n"));
-    const d = await getJSON("https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=ru&dt=t&q=" + q, { ttl: 86400, timeout: 6000 });
-    const text = (d[0] || []).map((seg) => seg[0] || "").join("");
-    const out = text.split("\n").map((s) => s.trim());
-    return out.length === lines.length ? out : lines;
-  } catch (e) {
-    return lines;
-  }
+  return Promise.all(lines.map((l) => translateOne(l.replace(/\s+/g, " ").trim()).catch(() => l)));
 }
 
 export const COMPANY_PARTS = ["des", "fa", "ern", "anr", "cn", "hds"];

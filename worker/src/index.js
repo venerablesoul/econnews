@@ -52,6 +52,13 @@ const OWNER_TTL = 15;  // секунд: платные котировки вла
 export default {
   async fetch(req, env, ctx) {
     const url = new URL(req.url);
+    // короткие адреса: /api/history/AAPL/5y, /api/quote/AAPL,BTC, /api/company/AAPL/des,fa
+    const m = /^\/api\/(history|quote|company)\/([^/]+)(?:\/([^/]+))?\/?$/.exec(url.pathname);
+    if (m) {
+      url.searchParams.set("s", decodeURIComponent(m[2]));
+      if (m[3]) url.searchParams.set(m[1] === "history" ? "r" : "parts", decodeURIComponent(m[3]));
+      url.pathname = "/api/" + m[1];
+    }
     try {
       if (req.method === "OPTIONS") return cors(new Response(null, { status: 204 }));
       if (url.pathname === "/tg" && req.method === "POST") return await webhook(req, env, ctx);

@@ -111,6 +111,14 @@ await test("/api/company: все разделы", async () => {
   assert.deepEqual(c.errors, []);
 });
 
+await test("короткие адреса /api/history/AAPL/1m и ошибки по крипте", async () => {
+  const r = await api("/api/history/AAPL/1m");
+  assert.equal(r.json.ok, true);
+  assert.equal(r.json.range, "1m");
+  const q = await api("/api/quote/AAPL,BTC");
+  assert.equal(q.json.quotes.BTC.px, 81800.5);
+});
+
 await test("/api/company: компания вне списка SEC и Мосбиржа", async () => {
   const r = await api("/api/company?s=ZZZZ&parts=des");
   assert.equal(r.json.ok, false);
