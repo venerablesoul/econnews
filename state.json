@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "cb34bdea964ca512": "2026-10-11T21:24:05.134438+00:00",
-  "cb79ffdc830d70f0": "2026-10-11T21:24:05.134438+00:00",
   "9ae3fbef8e5daa96": "2026-10-12T00:07:02.027048+00:00",
   "cb92e8f43ae58688": "2026-10-12T00:07:02.027048+00:00",
   "75a15271f355a221": "2026-10-12T00:07:02.027048+00:00",
@@ -981,28 +979,11 @@
   "cc2ac1d3a43324b4": "2026-10-14T21:00:58.704243+00:00",
   "046ebfab66a1ee79": "2026-10-14T21:10:58.703686+00:00",
   "677c33702f2e9feb": "2026-10-14T21:10:58.703686+00:00",
-  "b0daa89048d97eae": "2026-10-14T21:20:58.701482+00:00"
+  "b0daa89048d97eae": "2026-10-14T21:20:58.701482+00:00",
+  "32d9e5d44b67b900": "2026-10-14T21:30:58.671147+00:00",
+  "81d89b9cc6998ef0": "2026-10-14T21:30:58.671147+00:00"
  },
  "recent": [
-  {
-   "title": "France Bond Crisis Revives Ghost of Europe's Sovereign Debt Crisis",
-   "link": "https://www.bloomberg.com/news/features/2026-10-11/france-bond-crisis-revives-ghost-of-europe-s-sovereign-debt-crisis",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-11T21:24:05.134438+00:00",
-   "title_ru": "Облигационный кризис во Франции возрождает призрак суверенного долгового кризиса Европы"
-  },
-  {
-   "title": "FT узнала, как растущее долговое бремя мешает КНР стимулировать экономику",
-   "link": "https://www.rbc.ru/economics/12/10/2026/6acbc52362d0101dde201514",
-   "sources": [
-    "РБК"
-   ],
-   "score": 1,
-   "ts": "2026-10-11T21:24:05.134438+00:00"
-  },
   {
    "title": "Oil Rises on Mideast Attacks, Dollar Edges Higher: Markets Wrap",
    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSG5VZWZFeXZZQzA0WjJpbFJWMlRKTld5TzZaTC10SF9VNGxJYnRwc1IwcHdMd2MteUlTcWNQTVhmNDFpWG9leERyYXFBSXkwckc1M2xUZWxJT1R6OG9EY1BlZExjMXBsUnNkdU5LQmlIcE90d3FvOHZKLUdaaFdnOUVhYlFhV2pic05yZkxTUDE4Z3JTZ1VZc2dsNFNEWGJMMmNnUTBwRFRBQ1M5ak9yWjdn?oc=5",
@@ -10076,6 +10057,34 @@
    "score": 3,
    "ts": "2026-10-14T21:20:58.701482+00:00",
    "title_ru": "Банки могут увидеть падение ожиданий прибыли, говорит портфельный менеджер"
+  },
+  {
+   "title": "Why Inflation Numbers Are Disappointing",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-14/opinion-why-inflation-numbers-are-disappointing-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-14T21:30:58.671147+00:00",
+   "title_ru": "Почему цифры инфляции разочаровывают",
+   "lead": "While inflation numbers might not be disastrous, they’re still disappointing and moving in the wrong direction.",
+   "lead_ru": "Хотя показатели инфляции, возможно, и не являются катастрофическими, они все равно разочаровывают и движутся в неправильном направлении.",
+   "tags": [
+    "инфляция"
+   ]
+  },
+  {
+   "title": "Fed survey shows price pressures intensifying as fuel costs rise",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPcEdOeFlfWGYxQkFEMFV0MXNoZm5NdXpHRVRCUko5Mi1ONURfc0l6dXJSV253QzN4NFF2cjNmbFRvZ3NzaGt2MHV1MnZkTjMySDRJa2hyOTRyN0RHbjduT3FMWjhpQjBjZmdvTHQ3VVdqZUNTbzhKak0yTHd0Ymx4U00zcnlqNE9MQjdLUU5UejNIR2cxLVczQTh1SWdyLUY2SlZRUmhYMVBkR0NMc21PeA?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-14T21:30:58.671147+00:00",
+   "title_ru": "Исследование ФРС показывает, что ценовое давление усиливается по мере роста цен на топливо",
+   "tags": [
+    "ФРС"
+   ]
   }
  ],
  "last_digest": "2026-10-14",
@@ -10086,7 +10095,7 @@
   "Financial Times": 0,
   "The Guardian": 0,
   "ЕЦБ": 0,
-  "Коммерсантъ": 0,
+  "Коммерсантъ": 1,
   "ЦБ РФ": 0,
   "Статистика труда США (BLS)": 0,
   "CNBC": 0,
@@ -10105,7 +10114,7 @@
   "2026-10-14-21"
  ],
  "calendar": {
-  "fetched": "2026-10-14T15:30:32.338550+00:00",
+  "fetched": "2026-10-14T21:30:58.671147+00:00",
   "events": [
    {
     "title": "Bank Holiday",
@@ -12133,7 +12142,7 @@
    "house": true,
    "senate": true
   },
-  "checked": "2026-10-14T20:20:58.780450+00:00",
+  "checked": "2026-10-14T21:30:58.671147+00:00",
   "sec_seen": [],
   "errors": {
    "sec": "HTTPError: HTTP Error 403: Forbidden"
