@@ -726,7 +726,12 @@
   "a143df8dd5ee8211": "2026-10-14T05:49:37.669225+00:00",
   "9b44a0a2e7d65534": "2026-10-14T05:49:37.669225+00:00",
   "b75fe5fe830a4cf2": "2026-10-14T05:59:37.703799+00:00",
-  "ec16f8a611e27bbe": "2026-10-14T05:59:37.703799+00:00"
+  "ec16f8a611e27bbe": "2026-10-14T05:59:37.703799+00:00",
+  "44aed4e6dd329e97": "2026-10-14T06:09:37.726479+00:00",
+  "32ec3a42efb0206f": "2026-10-14T06:09:37.726479+00:00",
+  "c735077890cada2b": "2026-10-14T06:09:37.726479+00:00",
+  "0a1787b0c6860710": "2026-10-14T06:09:37.726479+00:00",
+  "11e1ccb7e99b7e78": "2026-10-14T06:09:37.726479+00:00"
  },
  "recent": [
   {
@@ -7434,6 +7439,38 @@
    "tags": [
     "рынки"
    ]
+  },
+  {
+   "title": "ECB's Lagarde says solution to French debt woes is at home",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOMEJ0NHFvYk1XVi1ZRzBuRGUxMDA1czZ1SjNXYTE3OHZSWmV2ak9ZajNJamlmODVYd2w1QWMyTmppSVpHOGs1allzSS1QV2JwaHlkeVdtZ0tBU0R0ODhjOWV4a1F1Sktlel81aHYyNDA0VlhqLUJrdk1fV1J2S1VHRTR1ZW1rcF9nR2JUajZKanY0UWRfZkp5Zlp3SjBXSkhkSHpVMy1tSQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 7,
+   "ts": "2026-10-14T06:09:37.726479+00:00",
+   "title_ru": "Глава ЕЦБ Лагард заявила, что решение долговых проблем Франции находится дома",
+   "tags": [
+    "ЕЦБ"
+   ]
+  },
+  {
+   "title": "COMMENTARY: TRADING DAY Earnings season debuts to mixed reviews",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOMnM4cmRWOHp2enVzNDcwRzZTMUxYVGl1VmFncTlidmgxSVBLUTFvYkVYUThpZTdQcGJXNUVmckdLOWxUZmtpNVloOXluY2Y0QXIwWl9NX2kwdjNkdDZXU2ZhQWFiNWZQU0JBQ3RMRXJjWXllQ1lJd2oyT2J4S3l6UWVIZjZXM1JsMURrZE5TLW5Xci14TGdLcjd2NA?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-14T06:09:37.726479+00:00",
+   "title_ru": "КОММЕНТАРИЙ: Сезон отчетности TRADING DAY получил неоднозначные отзывы"
+  },
+  {
+   "title": "IMF sounds alarm on rising government borrowing costs – business live",
+   "link": "https://www.theguardian.com/business/live/2026/oct/14/imf-rising-government-borrowing-costs-inflation-oil-stock-markets-latest-news-updates",
+   "sources": [
+    "The Guardian"
+   ],
+   "score": 2,
+   "ts": "2026-10-14T06:09:37.726479+00:00"
   }
  ],
  "last_digest": "2026-10-13",
@@ -7458,7 +7495,8 @@
   "2026-10-12-09",
   "2026-10-12-21",
   "2026-10-13-09",
-  "2026-10-13-21"
+  "2026-10-13-21",
+  "2026-10-14-09"
  ],
  "calendar": {
   "fetched": "2026-10-14T03:29:37.683559+00:00",
@@ -8354,7 +8392,7 @@
   ]
  },
  "cal_reminded": [],
- "last_morning": "2026-10-13",
+ "last_morning": "2026-10-14",
  "all_down_alerted": false,
  "trades": {
   "congress": [
@@ -9362,7 +9400,7 @@
    "house": true,
    "senate": true
   },
-  "checked": "2026-10-14T05:09:37.726093+00:00",
+  "checked": "2026-10-14T06:09:37.726479+00:00",
   "sec_seen": [],
   "errors": {
    "sec": "HTTPError: HTTP Error 403: Forbidden"
