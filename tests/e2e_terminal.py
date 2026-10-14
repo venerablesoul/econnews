@@ -26,7 +26,7 @@ os.environ.setdefault("PLAYWRIGHT_BROWSERS_PATH", "/opt/pw-browsers")
 
 from playwright.sync_api import sync_playwright  # noqa: E402
 
-BLOCK = ("tradingview.com", "binance", "coingecko.com", "alternative.me", "fonts.googleapis.com", "fonts.gstatic.com", "telegram.org")
+BLOCK = ("translate.googleapis.com", "tradingview.com", "binance", "coingecko.com", "alternative.me", "fonts.googleapis.com", "fonts.gstatic.com", "telegram.org")
 
 
 def free_port():

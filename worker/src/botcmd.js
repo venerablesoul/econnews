@@ -187,7 +187,9 @@ export async function cmdCn(env, chat, args) {
   if (!items.length) return send(env, chat, "Свежих новостей по " + esc(c.s) + " нет.");
   const out = items.map((n) => `▪️ <b>${esc(n.h)}</b>\n<i>${esc(n.src)} · ${msk(n.t * 1000, { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" })}</i>` +
     (/^https?:\/\//.test(n.url || "") ? ` · <a href="${esc(n.url)}">читать →</a>` : ""));
-  return send(env, chat, `📰 <b>Новости ${esc(c.s)}</b>\n\n` + out.join("\n\n"), kb([[terminalBtn(env, chat.type, c.s + " CN", "🖥 CN в терминале")]]));
+  const untranslated = items.every((n) => n.h === n.en);
+  return send(env, chat, `📰 <b>Новости ${esc(c.s)}</b>` + (untranslated ? "\n<i>переводчик сейчас не отвечает серверу — заголовки на английском; в терминале они переводятся</i>" : "") +
+    "\n\n" + out.join("\n\n"), kb([[terminalBtn(env, chat.type, c.s + " CN", "🖥 CN в терминале")]]));
 }
 
 export async function cmdHds(env, chat, args) {

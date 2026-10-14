@@ -447,9 +447,29 @@ function desAnr(box, d){
   });
   box.appendChild(tb.t);
 }
+// перевод заголовков прямо в браузере, если сервер бота не смог (переводчики часто не пускают серверы Cloudflare)
+var trCache = {};
+try { trCache = JSON.parse(sessionStorage.getItem('tr_cache') || '{}') || {} } catch(e){}
+function translateHere(text){
+  if (trCache[text]) return Promise.resolve(trCache[text]);
+  return fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=ru&dt=t&q=' + encodeURIComponent(text))
+    .then(function(r){ if (!r.ok) throw new Error(r.status); return r.json() })
+    .then(function(j){
+      var t = (j[0] || []).map(function(x){ return x[0] || '' }).join('').trim();
+      if (t) { trCache[text] = t; try { sessionStorage.setItem('tr_cache', JSON.stringify(trCache)) } catch(e){} }
+      return t || text;
+    });
+}
 function desCn(box, d){
   var items = d.cn || [];
   if (!items.length) { box.appendChild(el('div', 'empty', 'Свежих новостей по компании нет.')); return }
+  var raw = items.filter(function(n){ return n.en && n.h === n.en && !n._tr });
+  if (raw.length) {
+    var sym = d.s;
+    Promise.all(raw.map(function(n){ return translateHere(n.en).then(function(t){ n.h = t; n._tr = 1 }, function(){ n._tr = 1 }) })).then(function(){
+      if (des.data === d && des.tab === 'CN' && des.sym === sym) renderDes();
+    });
+  }
   var ul = el('ul', 'news');
   items.forEach(function(n){
     var li = el('li');
