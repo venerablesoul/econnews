@@ -967,7 +967,10 @@
   "e19ad578bde76e5a": "2026-10-14T17:10:32.349258+00:00",
   "406ae13551018534": "2026-10-14T17:20:32.294945+00:00",
   "f356e8aecb3ad5c0": "2026-10-14T17:20:32.294945+00:00",
-  "5f1ea465b64b48f6": "2026-10-14T17:30:32.314784+00:00"
+  "5f1ea465b64b48f6": "2026-10-14T17:30:32.314784+00:00",
+  "045d672da6df0ceb": "2026-10-14T17:40:32.304431+00:00",
+  "faa6346566b55752": "2026-10-14T17:40:32.304431+00:00",
+  "f0a84842c198ac1d": "2026-10-14T17:40:32.304431+00:00"
  },
  "recent": [
   {
@@ -9861,6 +9864,49 @@
    "tags": [
     "облигации",
     "Китай"
+   ]
+  },
+  {
+   "title": "Дизелю не хватает мощности // МЭА ожидает сохранения дефицита топлива до середины 2027 года",
+   "link": "https://www.kommersant.ru/doc/9026683",
+   "sources": [
+    "Коммерсантъ"
+   ],
+   "score": 4,
+   "ts": "2026-10-14T17:40:32.304431+00:00",
+   "lead": "Восстановление нефтяных поставок из стран Ближнего Востока в сентябре шло «полным ходом», отмечается в новом докладе Международного энергетического агентства (МЭА).",
+   "tags": [
+    "нефть"
+   ]
+  },
+  {
+   "title": "NYC Transit Agency Cuts Bond Refinancing 40% Amid Yield Spike",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-14/nyc-transit-agency-cuts-bond-refinancing-40-amid-yield-spike",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-14T17:40:32.304431+00:00",
+   "title_ru": "Транспортное агентство Нью-Йорка сокращает рефинансирование облигаций на 40% из-за скачка доходности",
+   "lead": "The Metropolitan Transportation Authority, which operates New York City’s subways, buses and commuter lines, cut a planned debt refinancing by about 40% as tax-exempt bond yields hovered near their highest levels in at least 15…",
+   "lead_ru": "Транспортное управление Нью-Йорка, которое управляет метро, ​​автобусами и пригородными линиями Нью-Йорка, сократило запланированное рефинансирование долга примерно на 40%, поскольку доходность не облагаемых налогом облигаций колеблется вблизи самого высокого уровня как минимум за 15 лет.",
+   "tags": [
+    "облигации"
+   ]
+  },
+  {
+   "title": "Chile Lawmakers Demand Answers on Pension Fund Swap Losses",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-14/chile-lawmakers-demand-answers-on-pension-fund-swap-losses",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-14T17:40:32.304431+00:00",
+   "title_ru": "Законодатели Чили требуют ответов по потерям от свопа пенсионных фондов",
+   "lead": "Chilean lawmakers are seeking explanations from regulators over how privately managed pension funds were allowed to build up massive bets on US interest rates that are now triggering heavy losses.",
+   "lead_ru": "Чилийские законодатели требуют от регулирующих органов объяснений по поводу того, как частным пенсионным фондам было разрешено делать огромные ставки на процентные ставки в США, которые теперь приводят к тяжелым потерям.",
+   "tags": [
+    "ставки"
    ]
   }
  ],
