@@ -948,7 +948,11 @@
   "93739e7d26034fdd": "2026-10-14T16:20:32.289384+00:00",
   "5e4205a9019ae4e8": "2026-10-14T16:20:32.289384+00:00",
   "706525b7ff13bca1": "2026-10-14T16:30:32.382495+00:00",
-  "638ace6a54026b8b": "2026-10-14T16:30:32.382495+00:00"
+  "638ace6a54026b8b": "2026-10-14T16:30:32.382495+00:00",
+  "31fa85e97fb92419": "2026-10-14T16:40:32.405536+00:00",
+  "f2512b43140e96a6": "2026-10-14T16:40:32.405536+00:00",
+  "824eb62a0e8deb85": "2026-10-14T16:40:32.405536+00:00",
+  "a8f2dbc8d6df077c": "2026-10-14T16:40:32.405536+00:00"
  },
  "recent": [
   {
@@ -9692,6 +9696,18 @@
     "инфляция",
     "облигации"
    ]
+  },
+  {
+   "title": "US Mortgage Rates Reach 7.5%; Home-Buying Slump Hits Sixth Week",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-14/us-mortgage-rates-reach-7-5-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-14T16:40:32.405536+00:00",
+   "title_ru": "Ставки по ипотеке в США достигают 7,5%; Спад продаж жилья наблюдается уже шестую неделю",
+   "lead": "US mortgage rates continue to rise, pushing down home purchasing activity for a sixth straight week. The MBA’s purchase index dropped 4%, marking the sixth straight weekly decline — the longest such stretch since July-August 2023.",
+   "lead_ru": "Ставки по ипотечным кредитам в США продолжают расти, что снижает активность покупок жилья шестую неделю подряд. Индекс покупок MBA упал на 4%, что стало шестым еженедельным снижением подряд — самым продолжительным таким периодом с июля-августа 2023 года."
   }
  ],
  "last_digest": "2026-10-13",
@@ -9706,7 +9722,7 @@
   "ЦБ РФ": 0,
   "Статистика труда США (BLS)": 0,
   "CNBC": 0,
-  "ФРС США": 0,
+  "ФРС США": 1,
   "Bloomberg": 0,
   "Reuters": 0,
   "MarketWatch": 0,
