@@ -892,7 +892,11 @@
   "f383b73e0ffd7a45": "2026-10-14T13:30:32.404583+00:00",
   "e77b89e99633dd73": "2026-10-14T13:30:32.404583+00:00",
   "6d28f591defdaaf6": "2026-10-14T13:30:32.404583+00:00",
-  "1b76e63769e917b4": "2026-10-14T13:30:32.404583+00:00"
+  "1b76e63769e917b4": "2026-10-14T13:30:32.404583+00:00",
+  "625e614eec6dd94c": "2026-10-14T13:40:32.324671+00:00",
+  "f3aa68590f5adc4d": "2026-10-14T13:40:32.324671+00:00",
+  "96d2eb798b6f06cb": "2026-10-14T13:40:32.324671+00:00",
+  "7ac941dfe1ec18cb": "2026-10-14T13:40:32.324671+00:00"
  },
  "recent": [
   {
@@ -9211,6 +9215,52 @@
    "tags": [
     "инфляция"
    ]
+  },
+  {
+   "title": "Fed rate hike call seen tight as inflation heats up",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPMjl1ZWZGd2lIRXg1US1hUjNacTVDN2o5S2lIcXpCdnZ1VHBXcEpqOHV5SzJJZHJrT3RxYjdrRjRrRU03eHNGTTFRMnVCVEdZa0VfLU9BeFdSeTE1aFRrc3ZRampyOFVTczZRbWk0azFBakVndUJ1X0NjVmJmV1JmeXNXSlFkNzF0NUZKTUUyUnlHWi1sOXFpVHV5NnVvcDA?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 9,
+   "ts": "2026-10-14T13:40:32.324671+00:00",
+   "title_ru": "Колл повышения ставки ФРС рассматривается как жесткий, поскольку инфляция нагревается",
+   "tags": [
+    "ФРС",
+    "ставки",
+    "инфляция"
+   ]
+  },
+  {
+   "title": "Market Talk: Banks face a rate reality check",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBnUEdNZ1dvYjhwQlBQSjNDeldPRktHWW16Yk5mNkN4ZTl5bkNGM25ieEdGajFDeUtrakhULUxvMEkwVlZudG9JRFJuc3E4MHh3RjdYVGxZX0JkUUpLVFhsVmUyOXd4U0RiNmJqN3JzTFpOeUpTLTVLVW1Qa3FBdw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-14T13:40:32.324671+00:00",
+   "title_ru": "Обсуждение на рынке: Банки сталкиваются с проверкой реальной ставки"
+  },
+  {
+   "title": "Anthropic Investor Day Focuses on Growth",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-14/anthropic-investor-day-focuses-on-growth-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-14T13:40:32.324671+00:00",
+   "title_ru": "День антропного инвестора фокусируется на росте",
+   "lead": "Anthropic is holding an investor day as it advances plans for a potential IPO at an approximately $2 trillion valuation, amid growing concerns about AI safety and threats.",
+   "lead_ru": "Anthropic проводит день инвестора, продвигая планы потенциального IPO на сумму около $ 2 трлн на фоне растущих опасений по поводу безопасности ИИ и угроз."
+  },
+  {
+   "title": "Closer EU trade ties greater prize for UK than making separate deals, minister says",
+   "link": "https://www.theguardian.com/politics/2026/oct/14/closer-eu-trade-ties-uk-europe-douglas-alexander",
+   "sources": [
+    "The Guardian"
+   ],
+   "score": 2,
+   "ts": "2026-10-14T13:40:32.324671+00:00"
   }
  ],
  "last_digest": "2026-10-13",
@@ -11145,7 +11195,7 @@
    "house": true,
    "senate": true
   },
-  "checked": "2026-10-14T12:40:32.283925+00:00",
+  "checked": "2026-10-14T13:40:32.324671+00:00",
   "sec_seen": [],
   "errors": {
    "sec": "HTTPError: HTTP Error 403: Forbidden"
