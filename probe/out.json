@@ -1,0 +1,1705 @@
+{
+ "yahoo_chart_aapl_1y": {
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/AAPL?range=1y&interval=1d",
+  "status": 200,
+  "ctype": "application/json;charset=utf-8",
+  "sec": 0.21,
+  "bytes": 28248,
+  "keys": [
+   "chart"
+  ],
+  "sample": "{\"chart\": {\"result\": [{\"meta\": {\"currency\": \"USD\", \"symbol\": \"AAPL\", \"exchangeName\": \"NMS\", \"fullExchangeName\": \"NasdaqGS\", \"instrumentType\": \"EQUITY\", \"firstTradeDate\": 345479400, \"regularMarketTime\": 1792008001, \"hasPrePostMarketData\": true, \"gmtoffset\": -14400, \"timezone\": \"EDT\", \"exchangeTimezoneName\": \"America/New_York\", \"regularMarketPrice\": 342.96, \"regularMarketChangePercent\": 0.495, \"fulldayPrice\": 343.0, \"fulldayChange\": 1.73, \"fulldayChangePercent\": 0.507, \"fiftyTwoWeekHigh\": 348.15, \"fiftyTwoWeekLow\": 243.42, \"regularMarketDayHigh\": 347.07, \"regularMarketDayLow\": 341.72, \"regularMa",
+  "extra": {
+   "n": 251,
+   "meta": {
+    "currency": "USD",
+    "symbol": "AAPL",
+    "exchangeName": "NMS",
+    "fullExchangeName": "NasdaqGS",
+    "instrumentType": "EQUITY",
+    "firstTradeDate": 345479400,
+    "regularMarketTime": 1792008001,
+    "hasPrePostMarketData": true,
+    "gmtoffset": -14400,
+    "timezone": "EDT",
+    "exchangeTimezoneName": "America/New_York",
+    "regularMarketPrice": 342.96,
+    "regularMarketChangePercent": 0.495,
+    "fulldayPrice": 343.0,
+    "fulldayChange": 1.73,
+    "fulldayChangePercent": 0.507,
+    "fiftyTwoWeekHigh": 348.15,
+    "fiftyTwoWeekLow": 243.42,
+    "regularMarketDayHigh": 347.07,
+    "regularMarketDayLow": 341.72,
+    "regularMarketVolume": 49799638,
+    "longName": "Apple Inc.",
+    "shortName": "Apple Inc.",
+    "chartPreviousClose": 247.77,
+    "priceHint": 2,
+    "currentTradingPeriod": {
+     "pre": {
+      "timezone": "EDT",
+      "start": 1791964800,
+      "end": 1791984600,
+      "gmtoffset": -14400
+     },
+     "regular": {
+      "timezone": "EDT",
+      "start": 1791984600,
+      "end": 1792008000,
+      "gmtoffset": -14400
+     },
+     "post": {
+      "timezone": "EDT",
+      "start": 1792008000,
+      "end": 1792022400,
+      "gmtoffset": -14400
+     }
+    },
+    "dataGranularity": "1d",
+    "range": "1y",
+    "validRanges": [
+     "1d",
+     "5d",
+     "1mo",
+     "3mo",
+     "6mo",
+     "1y",
+     "2y",
+     "5y",
+     "10y",
+     "ytd",
+     "max"
+    ]
+   }
+  }
+ },
+ "yahoo_spark_batch": {
+  "url": "https://query1.finance.yahoo.com/v7/finance/spark?symbols=AAPL,MSFT,NVDA&range=1d&interval=5m",
+  "status": 200,
+  "ctype": "application/json;charset=utf-8",
+  "sec": 0.22,
+  "bytes": 8131,
+  "keys": [
+   "spark"
+  ],
+  "sample": "{\"spark\": {\"result\": [{\"symbol\": \"MSFT\", \"response\": [{\"meta\": {\"currency\": \"USD\", \"symbol\": \"MSFT\", \"exchangeName\": \"NMS\", \"fullExchangeName\": \"NasdaqGS\", \"instrumentType\": \"EQUITY\", \"firstTradeDate\": 511108200, \"regularMarketTime\": 1792008001, \"hasPrePostMarketData\": true, \"gmtoffset\": -14400, \"timezone\": \"EDT\", \"exchangeTimezoneName\": \"America/New_York\", \"regularMarketPrice\": 533.69, \"regularMarketChangePercent\": -1.796, \"fulldayPrice\": 532.232, \"fulldayChange\": -11.218, \"fulldayChangePercent\": -2.064, \"fiftyTwoWeekHigh\": 553.72, \"fiftyTwoWeekLow\": 349.2, \"regularMarketDayHigh\": 545.74, \"regularMarketDayLow\": 532.54, \"regularMarketVolume\": 21512165, \"longName\": \"Microsoft Corporation\", \"shortName\": \"Microsoft Corporation\", \"chartPreviousClose\": 543.45, \"previousClose\": 543.45, \"scale\": "
+ },
+ "yahoo_spark_batch_v8": {
+  "url": "https://query1.finance.yahoo.com/v8/finance/spark?symbols=AAPL,MSFT,NVDA&range=5d&interval=1d",
+  "status": 200,
+  "ctype": "application/json;charset=utf-8",
+  "sec": 0.11,
+  "bytes": 924,
+  "keys": [
+   "MSFT",
+   "NVDA",
+   "AAPL"
+  ],
+  "sample": "{\"MSFT\": {\"timestamp\": [1791466200, 1791552600, 1791811800, 1791898200, 1791984600], \"end\": null, \"symbol\": \"MSFT\", \"fulldayChange\": -11.218, \"fulldayChangePercent\": -2.064, \"fulldayPrice\": 532.232, \"close\": [522.61, 535.07, 541.15, 543.45, 533.69], \"start\": null, \"dataGranularity\": 300, \"previousClose\": null, \"chartPreviousClose\": 529.76}, \"NVDA\": {\"timestamp\": [1791466200, 1791552600, 1791811800, 1791898200, 1791984600], \"end\": null, \"symbol\": \"NVDA\", \"fulldayChange\": -7.64, \"fulldayChangePercent\": -3.343, \"fulldayPrice\": 220.88, \"close\": [230.48, 229.28, 226.32, 228.52, 221.3], \"start\": null, \"dataGranularity\": 300, \"previousClose\": null, \"chartPreviousClose\": 237.47}, \"AAPL\": {\"timestamp\": [1791466200, 1791552600, 1791811800, 1791898200, 1791984600], \"end\": null, \"symbol\": \"AAPL\", \"ful"
+ },
+ "yahoo_quote_v7": {
+  "url": "https://query1.finance.yahoo.com/v7/finance/quote?symbols=AAPL,MSFT",
+  "status": 401,
+  "ctype": "application/json;charset=utf-8",
+  "sec": 0.11,
+  "bytes": 157,
+  "keys": [
+   "finance"
+  ],
+  "sample": "{\"finance\": {\"result\": null, \"error\": {\"code\": \"Unauthorized\", \"description\": \"User is unable to access this feature - https://bit.ly/yahoo-finance-api-feedback\"}}}"
+ },
+ "yahoo_fut_ZQ=F": {
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/ZQ%3DF?range=5d&interval=1d",
+  "status": 200,
+  "ctype": "application/json;charset=utf-8",
+  "sec": 0.11,
+  "bytes": 1606,
+  "keys": [
+   "chart"
+  ],
+  "sample": "{\"chart\": {\"result\": [{\"meta\": {\"currency\": \"USD\", \"symbol\": \"ZQ=F\", \"exchangeName\": \"CBT\", \"fullExchangeName\": \"CBOT\", \"instrumentType\": \"FUTURE\", \"firstTradeDate\": 967780800, \"regularMarketTime\": 1792011566, \"hasPrePostMarketData\": false, \"gmtoffset\": -14400, \"timezone\": \"EDT\", \"exchangeTimezoneNa",
+  "extra": {
+   "symbol": "ZQ=F",
+   "regularMarketPrice": 96.035,
+   "shortName": "30 Day Federal Funds Futures,No",
+   "longName": null,
+   "expireDate": null,
+   "exchangeName": "CBT"
+  }
+ },
+ "yahoo_fut_ZQX26.CBT": {
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/ZQX26.CBT?range=5d&interval=1d",
+  "status": 200,
+  "ctype": "application/json;charset=utf-8",
+  "sec": 0.17,
+  "bytes": 1651,
+  "keys": [
+   "chart"
+  ],
+  "sample": "{\"chart\": {\"result\": [{\"meta\": {\"currency\": \"USD\", \"symbol\": \"ZQX26.CBT\", \"exchangeName\": \"CBT\", \"fullExchangeName\": \"CBOT\", \"instrumentType\": \"FUTURE\", \"firstTradeDate\": 1638248400, \"regularMarketTime\": 1792011566, \"hasPrePostMarketData\": false, \"gmtoffset\": -14400, \"timezone\": \"EDT\", \"exchangeTime",
+  "extra": {
+   "symbol": "ZQX26.CBT",
+   "regularMarketPrice": 96.035,
+   "shortName": "30 Day Federal Funds Futures,No",
+   "longName": "30 Day Federal Funds Futures,No",
+   "expireDate": null,
+   "exchangeName": "CBT"
+  }
+ },
+ "yahoo_fut_ZQZ26.CBT": {
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/ZQZ26.CBT?range=5d&interval=1d",
+  "status": 200,
+  "ctype": "application/json;charset=utf-8",
+  "sec": 0.14,
+  "bytes": 1645,
+  "keys": [
+   "chart"
+  ],
+  "sample": "{\"chart\": {\"result\": [{\"meta\": {\"currency\": \"USD\", \"symbol\": \"ZQZ26.CBT\", \"exchangeName\": \"CBT\", \"fullExchangeName\": \"CBOT\", \"instrumentType\": \"FUTURE\", \"firstTradeDate\": 1640926800, \"regularMarketTime\": 1792009890, \"hasPrePostMarketData\": false, \"gmtoffset\": -14400, \"timezone\": \"EDT\", \"exchangeTime",
+  "extra": {
+   "symbol": "ZQZ26.CBT",
+   "regularMarketPrice": 95.88,
+   "shortName": "30 Day Federal Funds Futures,De",
+   "longName": "30 Day Federal Funds Futures,De",
+   "expireDate": null,
+   "exchangeName": "CBT"
+  }
+ },
+ "yahoo_fut_ZQF27.CBT": {
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/ZQF27.CBT?range=5d&interval=1d",
+  "status": 200,
+  "ctype": "application/json;charset=utf-8",
+  "sec": 0.11,
+  "bytes": 1652,
+  "keys": [
+   "chart"
+  ],
+  "sample": "{\"chart\": {\"result\": [{\"meta\": {\"currency\": \"USD\", \"symbol\": \"ZQF27.CBT\", \"exchangeName\": \"CBT\", \"fullExchangeName\": \"CBOT\", \"instrumentType\": \"FUTURE\", \"firstTradeDate\": 1643605200, \"regularMarketTime\": 1792010807, \"hasPrePostMarketData\": false, \"gmtoffset\": -14400, \"timezone\": \"EDT\", \"exchangeTime",
+  "extra": {
+   "symbol": "ZQF27.CBT",
+   "regularMarketPrice": 95.805,
+   "shortName": "30 Day Federal Funds Futures,Ja",
+   "longName": "30 Day Federal Funds Futures,Ja",
+   "expireDate": null,
+   "exchangeName": "CBT"
+  }
+ },
+ "yahoo_fut_ZQG27.CBT": {
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/ZQG27.CBT?range=5d&interval=1d",
+  "status": 200,
+  "ctype": "application/json;charset=utf-8",
+  "sec": 0.33,
+  "bytes": 1598,
+  "keys": [
+   "chart"
+  ],
+  "sample": "{\"chart\": {\"result\": [{\"meta\": {\"currency\": \"USD\", \"symbol\": \"ZQG27.CBT\", \"exchangeName\": \"CBT\", \"fullExchangeName\": \"CBOT\", \"instrumentType\": \"FUTURE\", \"firstTradeDate\": 1646024400, \"regularMarketTime\": 1792011263, \"hasPrePostMarketData\": false, \"gmtoffset\": -14400, \"timezone\": \"EDT\", \"exchangeTime",
+  "extra": {
+   "symbol": "ZQG27.CBT",
+   "regularMarketPrice": 95.705,
+   "shortName": "30 Day Federal Funds Futures,Fe",
+   "longName": "30 Day Federal Funds Futures,Fe",
+   "expireDate": null,
+   "exchangeName": "CBT"
+  }
+ },
+ "yahoo_fut_ZQH27.CBT": {
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/ZQH27.CBT?range=5d&interval=1d",
+  "status": 200,
+  "ctype": "application/json;charset=utf-8",
+  "sec": 0.12,
+  "bytes": 1641,
+  "keys": [
+   "chart"
+  ],
+  "sample": "{\"chart\": {\"result\": [{\"meta\": {\"currency\": \"USD\", \"symbol\": \"ZQH27.CBT\", \"exchangeName\": \"CBT\", \"fullExchangeName\": \"CBOT\", \"instrumentType\": \"FUTURE\", \"firstTradeDate\": 1648699200, \"regularMarketTime\": 1792010452, \"hasPrePostMarketData\": false, \"gmtoffset\": -14400, \"timezone\": \"EDT\", \"exchangeTime",
+  "extra": {
+   "symbol": "ZQH27.CBT",
+   "regularMarketPrice": 95.63,
+   "shortName": "30 Day Federal Funds Futures,Ma",
+   "longName": "30 Day Federal Funds Futures,Ma",
+   "expireDate": null,
+   "exchangeName": "CBT"
+  }
+ },
+ "fh_quote": {
+  "url": "https://finnhub.io/api/v1/quote?symbol=AAPL&token=***",
+  "status": 200,
+  "ctype": "application/json; charset=utf-8",
+  "sec": 0.16,
+  "bytes": 94,
+  "keys": [
+   "c",
+   "d",
+   "dp",
+   "h",
+   "l",
+   "o",
+   "pc",
+   "t"
+  ],
+  "sample": "{\"c\": 342.96, \"d\": 1.69, \"dp\": 0.4952, \"h\": 347.09, \"l\": 341.72, \"o\": 344.605, \"pc\": 341.27, \"t\": 1792008000}"
+ },
+ "fh_profile2": {
+  "url": "https://finnhub.io/api/v1/stock/profile2?symbol=AAPL&token=***",
+  "status": 200,
+  "ctype": "application/json; charset=utf-8",
+  "sec": 0.14,
+  "bytes": 419,
+  "keys": [
+   "ticker",
+   "name",
+   "country",
+   "currency",
+   "estimateCurrency",
+   "exchange",
+   "ipo",
+   "marketCapitalization",
+   "logo",
+   "shareOutstanding",
+   "finnhubIndustry",
+   "phone",
+   "weburl",
+   "floatingShare"
+  ],
+  "sample": "{\"ticker\": \"AAPL\", \"name\": \"Apple Inc\", \"country\": \"US\", \"currency\": \"USD\", \"estimateCurrency\": \"USD\", \"exchange\": \"NASDAQ NMS - GLOBAL MARKET\", \"ipo\": \"1980-12-12\", \"marketCapitalization\": 5045937.464512197, \"logo\": \"https://static2.finnhub.io/file/publicdatany/finnhubimage/stock_logo/AAPL.png\", \"shareOutstanding\": 14687.36, \"finnhubIndustry\": \"Technology\", \"phone\": \"14089961010\", \"weburl\": \"https://www.apple.com/\", \"floatingShare\": 14445.7}"
+ },
+ "fh_metric": {
+  "url": "https://finnhub.io/api/v1/stock/metric?symbol=AAPL&metric=all&token=***",
+  "status": 200,
+  "ctype": "application/json; charset=utf-8",
+  "sec": 0.16,
+  "bytes": 242684,
+  "keys": [
+   "metric",
+   "metricType",
+   "series",
+   "symbol"
+  ],
+  "sample": "{\"metric\": {\"10DayAverageTradingVolume\": 35.66692, \"13WeekPriceReturnDaily\": 8.3879, \"26WeekPriceReturnDaily\": 31.0108, \"3MonthADReturnStd\": 26.506163, \"3MonthAverageTradingVolume\": 50.21848, \"52WeekHigh\": 348.1499, \"52WeekHighDate\": \"2026-10-13\", \"52WeekLow\": 243.42, \"52WeekLowDate\": \"2026-01-20\", ",
+  "extra": {
+   "metric_keys": [
+    "10DayAverageTradingVolume",
+    "13WeekPriceReturnDaily",
+    "26WeekPriceReturnDaily",
+    "3MonthADReturnStd",
+    "3MonthAverageTradingVolume",
+    "52WeekHigh",
+    "52WeekHighDate",
+    "52WeekLow",
+    "52WeekLowDate",
+    "52WeekPriceReturnDaily",
+    "5DayPriceReturnDaily",
+    "assetTurnoverAnnual",
+    "assetTurnoverTTM",
+    "beta",
+    "bookValuePerShareAnnual",
+    "bookValuePerShareQuarterly",
+    "bookValueShareGrowth5Y",
+    "capexCagr5Y",
+    "cashFlowPerShareAnnual",
+    "cashFlowPerShareQuarterly",
+    "cashFlowPerShareTTM",
+    "cashPerSharePerShareAnnual",
+    "cashPerSharePerShareQuarterly",
+    "currentDividendYieldTTM",
+    "currentEv/freeCashFlowAnnual",
+    "currentEv/freeCashFlowTTM",
+    "currentRatioAnnual",
+    "currentRatioQuarterly",
+    "dividendGrowthRate5Y",
+    "dividendIndicatedAnnual",
+    "dividendPerShareAnnual",
+    "dividendPerShareTTM",
+    "dividendYieldIndicatedAnnual",
+    "ebitdPerShareAnnual",
+    "ebitdPerShareTTM",
+    "ebitdaCagr5Y",
+    "ebitdaInterimCagr5Y",
+    "enterpriseValue",
+    "epsAnnual",
+    "epsBasicExclExtraItemsAnnual",
+    "epsBasicExclExtraItemsTTM",
+    "epsExclExtraItemsAnnual",
+    "epsExclExtraItemsTTM",
+    "epsGrowth3Y",
+    "epsGrowth5Y",
+    "epsGrowthQuarterlyYoy",
+    "epsGrowthTTMYoy",
+    "epsInclExtraItemsAnnual",
+    "epsInclExtraItemsTTM",
+    "epsNormalizedAnnual",
+    "epsTTM",
+    "evEbitdaTTM",
+    "evRevenueTTM",
+    "focfCagr5Y",
+    "forwardPE",
+    "forwardPEG",
+    "grossMargin5Y",
+    "grossMarginAnnual",
+    "grossMarginTTM",
+    "inventoryTurnoverAnnual",
+    "inventoryTurnoverTTM",
+    "longTermDebt/equityAnnual",
+    "longTermDebt/equityQuarterly",
+    "marketCapitalization",
+    "monthToDatePriceReturnDaily",
+    "netIncomeEmployeeAnnual",
+    "netIncomeEmployeeTTM",
+    "netInterestCoverageAnnual",
+    "netInterestCoverageTTM",
+    "netMarginGrowth5Y",
+    "netProfitMargin5Y",
+    "netProfitMarginAnnual",
+    "netProfitMarginTTM",
+    "operatingMargin5Y",
+    "operatingMarginAnnual",
+    "operatingMarginTTM",
+    "payoutRatioAnnual",
+    "payoutRatioTTM",
+    "pb",
+    "pbAnnual",
+    "pbQuarterly",
+    "pcfShareAnnual",
+    "pcfShareTTM",
+    "peAnnual",
+    "peBasicExclExtraTTM",
+    "peExclExtraAnnual",
+    "peExclExtraTTM",
+    "peInclExtraTTM",
+    "peNormalizedAnnual",
+    "peTTM",
+    "pegTTM",
+    "pfcfShareAnnual",
+    "pfcfShareTTM",
+    "pretaxMargin5Y",
+    "pretaxMarginAnnual",
+    "pretaxMarginTTM",
+    "priceRelativeToS&P50013Week",
+    "priceRelativeToS&P50026Week",
+    "priceRelativeToS&P5004Week",
+    "priceRelativeToS&P50052Week",
+    "priceRelativeToS&P500Ytd",
+    "psAnnual",
+    "psTTM",
+    "ptbvAnnual",
+    "ptbvQuarterly",
+    "quickRatioAnnual",
+    "quickRatioQuarterly",
+    "receivablesTurnoverAnnual",
+    "receivablesTurnoverTTM",
+    "revenueEmployeeAnnual",
+    "revenueEmployeeTTM",
+    "revenueGrowth3Y",
+    "revenueGrowth5Y",
+    "revenueGrowthQuarterlyYoy",
+    "revenueGrowthTTMYoy",
+    "revenuePerShareAnnual",
+    "revenuePerShareTTM",
+    "revenueShareGrowth5Y",
+    "roa5Y",
+    "roaRfy",
+    "roaTTM",
+    "roe5Y",
+    "roeRfy",
+    "roeTTM",
+    "roi5Y",
+    "roiAnnual",
+    "roiTTM",
+    "tangibleBookValuePerShareAnnual",
+    "tangibleBookValuePerShareQuarterly",
+    "tbvCagr5Y",
+    "totalDebt/totalEquityAnnual",
+    "totalDebt/totalEquityQuarterly",
+    "yearToDatePriceReturnDaily"
+   ],
+   "metric": {
+    "10DayAverageTradingVolume": 35.66692,
+    "13WeekPriceReturnDaily": 8.3879,
+    "26WeekPriceReturnDaily": 31.0108,
+    "3MonthADReturnStd": 26.506163,
+    "3MonthAverageTradingVolume": 50.21848,
+    "52WeekHigh": 348.1499,
+    "52WeekHighDate": "2026-10-13",
+    "52WeekLow": 243.42,
+    "52WeekLowDate": "2026-01-20",
+    "52WeekPriceReturnDaily": 37.7978,
+    "5DayPriceReturnDaily": 1.3663,
+    "assetTurnoverAnnual": 1.1584,
+    "assetTurnoverTTM": 1.2508,
+    "beta": 1.1060705,
+    "bookValuePerShareAnnual": 4.991,
+    "bookValuePerShareQuarterly": 7.3599,
+    "bookValueShareGrowth5Y": 5.34,
+    "capexCagr5Y": 11.71,
+    "cashFlowPerShareAnnual": 6.6855,
+    "cashFlowPerShareQuarterly": 9.3561,
+    "cashFlowPerShareTTM": 6.86253,
+    "cashPerSharePerShareAnnual": 3.7024,
+    "cashPerSharePerShareQuarterly": 4.2713,
+    "currentDividendYieldTTM": 0.3124,
+    "currentEv/freeCashFlowAnnual": 51.1425,
+    "currentEv/freeCashFlowTTM": 36.9555,
+    "currentRatioAnnual": 0.8933,
+    "currentRatioQuarterly": 1.0033,
+    "dividendGrowthRate5Y": 4.95,
+    "dividendIndicatedAnnual": 1.08,
+    "dividendPerShareAnnual": 1.0318,
+    "dividendPerShareTTM": 1.0616,
+    "dividendYieldIndicatedAnnual": 0.50534,
+    "ebitdPerShareAnnual": 9.6468,
+    "ebitdPerShareTTM": 11.365,
+    "ebitdaCagr5Y": 13.35,
+    "ebitdaInterimCagr5Y": 7.67,
+    "enterpriseValue": 5051187.5,
+    "epsAnnual": 7.465,
+    "epsBasicExclExtraItemsAnnual": 7.465,
+    "epsBasicExclExtraItemsTTM": 8.723299999999998,
+    "epsExclExtraItemsAnnual": 7.465,
+    "epsExclExtraItemsTTM": 8.723299999999998,
+    "epsGrowth3Y": 6.89,
+    "epsGrowth5Y": 17.91,
+    "epsGrowthQuarterlyYoy": 29.13,
+    "epsGrowthTTMYoy": 32.61,
+    "epsInclExtraItemsAnnual": 7.465,
+    "epsInclExtraItemsTTM": 8.723299999999998,
+    "epsNormalizedAnnual": 7.465,
+    "epsTTM": 8.723299999999998,
+    "evEbitdaTTM": 30.0739,
+    "evRevenueTTM": 10.8203,
+    "focfCagr5Y": 6.13,
+    "forwardPE": 35.33932,
+    "forwardPEG": 2.55158,
+    "grossMargin5Y": 44.47,
+    "grossMarginAnnual": 46.91,
+    "grossMarginTTM": 48.65,
+    "inventoryTurnoverAnnual": 33.9834,
+    "inventoryTurnoverTTM": 28.1718,
+    "longTermDebt/equityAnnual": 1.0623,
+    "longTermDebt/equityQuarterly": 0.6635,
+    "marketCapitalization": 5006387.5,
+    "monthToDatePriceReturnDaily": 2.4773,
+    "netIncomeEmployeeAnnual": 0.6748,
+    "netIncomeEmployeeTTM": 0.7767,
+    "netInterestCoverageAnnual": 622.5082,
+    "netInterestCoverageTTM": 622.5082,
+    "netMarginGrowth5Y": 5.18,
+    "netProfitMargin5Y": 25.48,
+    "netProfitMarginAnnual": 26.92,
+    "netProfitMarginTTM": 27.62,
+    "operatingMargin5Y": 30.67,
+    "operatingMarginAnnual": 31.97,
+    "operatingMarginTTM": 33.17,
+    "payoutRatioAnnual": 13.77,
+    "payoutRatioTTM": 12.13,
+    "pb": 46.5624,
+    "pbAnnual": 50.978,
+    "pbQuarterly": 38.486,
+    "pcfShareAnnual": 44.9076,
+    "pcfShareTTM": 34.1211,
+    "peAnnual": 44.6959,
+    "peBasicExclExtraTTM": 38.8303,
+    "peExclExtraAnnual": 30.96975,
+    "peExclExtraTTM": 38.8303,
+    "peInclExtraTTM": 38.8303,
+    "peNormalizedAnnual": 44.6959,
+    "peTTM": 38.8303,
+    "pegTTM": 2.82268,
+    "pfcfShareAnnual": 50.6889,
+    "pfcfShareTTM": 36.6277,
+    "pretaxMargin5Y": 30.64,
+    "pretaxMarginAnnual": 31.89,
+    "pretaxMarginTTM": 33.4,
+    "priceRelativeToS&P50013Week": 4.9057,
+    "priceRelativeToS&P50026Week": 16.5824,
+    "priceRelativeToS&P5004Week": -0.5121,
+    "priceRelativeToS&P50052Week": 20.458,
+    "priceRelativeToS&P500Ytd": 11.4404,
+    "psAnnual": 12.0299,
+    "psTTM": 10.7244,
+    "ptbvAnnual": 4.8643,
+    "ptbvQuarterly": 47.4663,
+    "quickRatioAnnual": 0.8588,
+    "quickRatioQuarterly": 0.929,
+    "receivablesTurnoverAnnual": 11.3725,
+    "receivablesTurnoverTTM": 15.8366,
+    "revenueEmployeeAnnual": 2.507,
+    "revenueEmployeeTTM": 2.8122,
+    "revenueGrowth3Y": 1.81,
+    "revenueGrowth5Y": 8.68,
+    "revenueGrowthQuarterlyYoy": 16.36,
+    "revenueGrowthTTMYoy": 14.24,
+    "revenuePerShareAnnual": 27.7354,
+    "revenuePerShareTTM": 31.725,
+    "revenueShareGrowth5Y": 12.11,
+    "roa5Y": 27.93,
+    "roaRfy": 31.180000000000003,
+    "roaTTM": 34.55,
+    "roe5Y": 163.92,
+    "roeRfy": 151.91,
+    "roeTTM": 137.17999999999998,
+    "roi5Y": 57.1,
+    "roiAnnual": 64.51,
+    "roiTTM": 70.25,
+    "tangibleBookValuePerShareAnnual": 5.8583,
+    "tangibleBookValuePerShareQuarterly": 5.9674,
+    "tbvCagr5Y": 11.34,
+    "totalDebt/totalEquityAnnual": 1.3547,
+    "totalDebt/totalEquityQuarterly": 0.7844,
+    "yearToDatePriceReturnDaily": 25.5315
+   },
+   "annual_keys": [
+    "bookValue",
+    "cashRatio",
+    "currentRatio",
+    "ebitPerShare",
+    "ebitda",
+    "eps",
+    "ev",
+    "evEbitda",
+    "evRevenue",
+    "fcfMargin",
+    "grossMargin",
+    "inventoryTurnover",
+    "longtermDebtTotalAsset",
+    "longtermDebtTotalCapital",
+    "longtermDebtTotalEquity",
+    "netDebtToTotalCapital",
+    "netDebtToTotalEquity",
+    "netMargin",
+    "operatingMargin",
+    "payoutRatio",
+    "pb",
+    "pe",
+    "pfcf",
+    "pretaxMargin",
+    "ps",
+    "ptbv",
+    "quickRatio",
+    "receivablesTurnover",
+    "roa",
+    "roe",
+    "roic",
+    "rotc",
+    "salesPerShare",
+    "sgaToSale",
+    "tangibleBookValue",
+    "totalDebtToEquity",
+    "totalDebtToTotalAsset",
+    "totalDebtToTotalCapital",
+    "totalRatio"
+   ],
+   "quarterly_keys": [
+    "assetTurnoverTTM",
+    "bookValue",
+    "cashRatio",
+    "currentRatio",
+    "ebitPerShare",
+    "ebitda",
+    "eps",
+    "ev",
+    "evEbitdaTTM",
+    "evRevenueTTM",
+    "fcfMargin",
+    "fcfPerShareTTM",
+    "grossMargin",
+    "inventoryTurnoverTTM",
+    "longtermDebtTotalAsset",
+    "longtermDebtTotalCapital",
+    "longtermDebtTotalEquity",
+    "netDebtToTotalCapital",
+    "netDebtToTotalEquity",
+    "netMargin",
+    "operatingMargin",
+    "payoutRatioTTM",
+    "pb",
+    "peTTM",
+    "pfcfTTM",
+    "pretaxMargin",
+    "psTTM",
+    "ptbv",
+    "quickRatio",
+    "receivablesTurnoverTTM",
+    "roaTTM",
+    "roeTTM",
+    "roicTTM",
+    "rotcTTM",
+    "salesPerShare",
+    "sgaToSale",
+    "tangibleBookValue",
+    "totalDebtToEquity",
+    "totalDebtToTotalAsset",
+    "totalDebtToTotalCapital",
+    "totalRatio"
+   ],
+   "annual_eps": [
+    {
+     "period": "2025-09-27",
+     "v": 7.465
+    },
+    {
+     "period": "2024-09-28",
+     "v": 6.0836
+    },
+    {
+     "period": "2023-09-30",
+     "v": 6.1341
+    },
+    {
+     "period": "2022-09-24",
+     "v": 6.1132
+    },
+    {
+     "period": "2021-09-25",
+     "v": 5.614
+    },
+    {
+     "period": "2020-09-26",
+     "v": 3.2753
+    }
+   ],
+   "quarterly_eps": [
+    {
+     "period": "2026-06-27",
+     "v": 2.0244
+    },
+    {
+     "period": "2026-03-28",
+     "v": 2.0086
+    },
+    {
+     "period": "2025-12-27",
+     "v": 2.8424
+    },
+    {
+     "period": "2025-09-27",
+     "v": 1.8479
+    },
+    {
+     "period": "2025-06-28",
+     "v": 1.5677
+    },
+    {
+     "period": "2025-03-29",
+     "v": 1.6458
+    }
+   ]
+  }
+ },
+ "fh_recommendation": {
+  "url": "https://finnhub.io/api/v1/stock/recommendation?symbol=AAPL&token=***",
+  "status": 200,
+  "ctype": "application/json; charset=utf-8",
+  "sec": 0.2,
+  "bytes": 393,
+  "len": 4,
+  "item_keys": [
+   "symbol",
+   "period",
+   "strongBuy",
+   "buy",
+   "hold",
+   "sell",
+   "strongSell"
+  ],
+  "sample": "[{\"symbol\": \"AAPL\", \"period\": \"2026-09-01\", \"strongBuy\": 12, \"buy\": 22, \"hold\": 15, \"sell\": 3, \"strongSell\": 1}, {\"symbol\": \"AAPL\", \"period\": \"2026-08-01\", \"strongBuy\": 13, \"buy\": 24, \"hold\": 14, \"sell\": 3, \"strongSell\": 0}, {\"symbol\": \"AAPL\", \"period\": \"2026-07-01\", \"strongBuy\": 13, \"buy\": 23, \"hold\": 16, \"sell\": 2, \"strongSell\": 0}, {\"symbol\": \"AAPL\", \"period\": \"2026-06-01\", \"strongBuy\": 14, \"buy\": 24, \"hold\": 15, \"sell\": 2, \"strongSell\": 0}]"
+ },
+ "fh_earnings": {
+  "url": "https://finnhub.io/api/v1/stock/earnings?symbol=AAPL&limit=8&token=***",
+  "status": 200,
+  "ctype": "application/json; charset=utf-8",
+  "sec": 0.49,
+  "bytes": 559,
+  "len": 4,
+  "item_keys": [
+   "symbol",
+   "estimate",
+   "actual",
+   "period",
+   "surprise",
+   "surprisePercent",
+   "year",
+   "quarter"
+  ],
+  "sample": "[{\"symbol\": \"AAPL\", \"estimate\": 1.9271, \"actual\": 1.91, \"period\": \"2026-06-30\", \"surprise\": -0.0171, \"surprisePercent\": -0.8873, \"year\": 2026, \"quarter\": 3}, {\"symbol\": \"AAPL\", \"estimate\": 1.9884, \"actual\": 2.01, \"period\": \"2026-03-31\", \"surprise\": 0.0216, \"surprisePercent\": 1.0863, \"year\": 2026, \"quarter\": 2}, {\"symbol\": \"AAPL\", \"estimate\": 2.7257, \"actual\": 2.84, \"period\": \"2025-12-31\", \"surprise\": 0.1143, \"surprisePercent\": 4.1934, \"year\": 2026, \"quarter\": 1}, {\"symbol\": \"AAPL\", \"estimate\": 1.8075, \"actual\": 1.85, \"period\": \"2025-09-30\", \"surprise\": 0.0425, \"surprisePercent\": 2.3513, \"year\": 2025, \"quarter\": 4}]"
+ },
+ "fh_cal_earnings": {
+  "url": "https://finnhub.io/api/v1/calendar/earnings?from=2026-10-14&to=2026-10-28&token=***",
+  "status": 200,
+  "ctype": "application/json; charset=utf-8",
+  "sec": 0.16,
+  "bytes": 165682,
+  "keys": [
+   "earningsCalendar"
+  ],
+  "sample": "{\"earningsCalendar\": [{\"symbol\": \"AAP\", \"date\": \"2026-10-28\", \"hour\": \"\", \"quarter\": 3, \"year\": 2026, \"epsEstimate\": 0.7875, \"epsActual\": null, \"revenueEstimate\": 2065619255, \"revenueActual\": null}, {\"symbol\": \"ACMR\", \"date\": \"2026-10-28\", \"hour\": \"\", \"quarter\": 3, \"year\": 2026, \"epsEstimate\": 0.4896, \"epsActual\": null, \"revenueEstimate\": 317991415, \"revenueActual\": null}, {\"symbol\": \"ADP\", \"date\": \"2026-10-28\", \"hour\": \"\", \"quarter\": 1, \"year\": 2027, \"epsEstimate\": 2.7911, \"epsActual\": null, \"revenueEstimate\": 5529334021, \"revenueActual\": null}, {\"symbol\": \"AEP\", \"date\": \"2026-10-28\", \"hour\": \"bmo\", \"quarter\": 3, \"year\": 2026, \"epsEstimate\": 1.946, \"epsActual\": null, \"revenueEstimate\": 6457463421, \"revenueActual\": null}, {\"symbol\": \"AER\", \"date\": \"2026-10-28\", \"hour\": \"\", \"quarter\": 3, \"year\": 2026, \"epsEstimate\": 4.1873, \"epsActual\": null, \"revenueEstimate\": 2108494856, \"revenueActual\": null}, {\"symbol\": \"ALBY\", \"date\": \"2026-10-28\", \"hour\": \"\", \"quarter\": 3, \"year\": 2026, \"epsEstimate\": null, \"epsActual\": null, \"revenueEstimate\": null, \"revenueActual\": null}, {\"symbol\": \"ALGN\", \"date\": \"2026-10-28\", \"hour\": \"amc\", \"quarter\": 3, \"year\": 2026, \"epsEstimate\": 2.8576, \"epsActual\": n",
+  "extra": {
+   "n": 1047
+  }
+ },
+ "fh_cal_earnings_sym": {
+  "url": "https://finnhub.io/api/v1/calendar/earnings?from=2026-10-14&to=2027-02-11&symbol=AAPL&token=***",
+  "status": 200,
+  "ctype": "application/json; charset=utf-8",
+  "sec": 0.12,
+  "bytes": 349,
+  "keys": [
+   "earningsCalendar"
+  ],
+  "sample": "{\"earningsCalendar\": [{\"symbol\": \"AAPL\", \"date\": \"2027-01-27\", \"hour\": \"\", \"quarter\": 1, \"year\": 2027, \"epsEstimate\": 2.9512, \"epsActual\": null, \"revenueEstimate\": 156463571639, \"revenueActual\": null}, {\"symbol\": \"AAPL\", \"date\": \"2026-11-02\", \"hour\": \"amc\", \"quarter\": 4, \"year\": 2026, \"epsEstimate\": 2.0214, \"epsActual\": null, \"revenueEstimate\": 115327453620, \"revenueActual\": null}]}"
+ },
+ "fh_company_news": {
+  "url": "https://finnhub.io/api/v1/company-news?symbol=AAPL&from=2026-10-04&to=2026-10-14&token=***",
+  "status": 200,
+  "ctype": "application/json; charset=utf-8",
+  "sec": 0.16,
+  "bytes": 146125,
+  "len": 245,
+  "item_keys": [
+   "category",
+   "datetime",
+   "headline",
+   "id",
+   "image",
+   "related",
+   "source",
+   "summary",
+   "url"
+  ],
+  "sample": "[{\"category\": \"company\", \"datetime\": 1792005473, \"headline\": \"Reese Witherspoon Buys Back Production Firm With Mediawan\", \"id\": 142887390, \"image\": \"https://s.yimg.com/rz/stage/p/yahoo_finance_en-US_h_p_finance_2.png\", \"related\": \"AAPL\", \"source\": \"Yahoo\", \"summary\": \"Bloomberg's Chris Palmeri joins Scarlet Fu on \\\"Bloomberg Deals.\\\" Actress Reese Witherspoon is repurchasing her film and TV production company Hello Sunshine from Candle Media in partnership with Mediawan, according to a statement from the French entertainment firm.\", \"url\": \"https://finnhub.io/api/news?id=6857b9706ce035c2f5a9a2aec152cc0c80734b636ec1e51e38f6fcfb36811a6d\"}, {\"category\": \"company\", \"datetime\": 1792004936, \"headline\": \"OpenAI Employee Allegedly Took Secret AI Device Files to Apple, Presented it to Top Executives.\", \"id\": 142887388, \"image\": \"https://s.yimg.com/rz/stage/p/yahoo_finance_en-US_h_p_finance_2.png\", \"related\": \"AAPL\", \"source\": \"Yahoo\", \"summary\": \"OpenAI has not said whether Apple incorporated any of the allegedly confidential information into its own products.\", \"url\": \"https://finnhub.io/api/news?id=252335dc37040956d687a3d63f615a7fa10bb89532c0075e58f641cd35267f21\"}, {\"category\": \"company\",",
+  "extra": {
+   "n": 245
+  }
+ },
+ "fh_peers": {
+  "url": "https://finnhub.io/api/v1/stock/peers?symbol=AAPL&token=***",
+  "status": 200,
+  "ctype": "application/json; charset=utf-8",
+  "sec": 0.12,
+  "bytes": 72,
+  "len": 11,
+  "sample": "[\"AAPL\", \"DELL\", \"SNDK\", \"WDC\", \"HPE\", \"P\", \"NTAP\", \"HPQ\", \"SMCI\", \"IONQ\", \"GPGI\"]"
+ },
+ "fh_price_target": {
+  "url": "https://finnhub.io/api/v1/stock/price-target?symbol=AAPL&token=***",
+  "status": 403,
+  "ctype": "application/json; charset=utf-8",
+  "sec": 0.12,
+  "bytes": 51,
+  "keys": [
+   "error"
+  ],
+  "sample": "{\"error\": \"You don't have access to this resource.\"}"
+ },
+ "fh_candle": {
+  "url": "https://finnhub.io/api/v1/stock/candle?symbol=AAPL&resolution=D&from=1789422724&to=1792014724&token=***",
+  "status": 403,
+  "ctype": "application/json; charset=utf-8",
+  "sec": 0.13,
+  "bytes": 51,
+  "keys": [
+   "error"
+  ],
+  "sample": "{\"error\": \"You don't have access to this resource.\"}"
+ },
+ "fh_fin_reported": {
+  "url": "https://finnhub.io/api/v1/stock/financials-reported?symbol=AAPL&freq=quarterly&token=***",
+  "status": 200,
+  "ctype": "application/json; charset=utf-8",
+  "sec": 0.2,
+  "bytes": 558215,
+  "keys": [
+   "cik",
+   "data",
+   "symbol"
+  ],
+  "sample": "{\"cik\": \"320193\", \"data\": [{\"accessNumber\": \"0000320193-26-000020\", \"symbol\": \"AAPL\", \"cik\": \"320193\", \"year\": 2026, \"quarter\": 3, \"form\": \"10-Q\", \"startDate\": \"2025-09-28 00:00:00\", \"endDate\": \"2026-06-27 00:00:00\", \"filedDate\": \"2026-07-31 00:00:00\", \"acceptedDate\": \"2026-07-31 06:01:02\", \"report\""
+ },
+ "fh_insider_tx": {
+  "url": "https://finnhub.io/api/v1/stock/insider-transactions?symbol=AAPL&token=***",
+  "status": 200,
+  "ctype": "application/json; charset=utf-8",
+  "sec": 0.18,
+  "bytes": 32513,
+  "keys": [
+   "data",
+   "symbol"
+  ],
+  "sample": "{\"data\": [{\"name\": \"Newstead Jennifer\", \"share\": 39593, \"change\": -2399, \"filingDate\": \"2026-10-08\", \"transactionDate\": \"2026-10-06\", \"transactionCode\": \"S\", \"transactionPrice\": 332.01, \"id\": \"0001140361-26-039158\", \"symbol\": \"AAPL\", \"source\": \"sec\", \"isDerivative\": false, \"currency\": \"\"}, {\"name\": \"Ternus John\", \"share\": 59567, \"change\": -3754, \"filingDate\": \"2026-10-05\", \"transactionDate\": \"2026-10-02\", \"transactionCode\": \"S\", \"transactionPrice\": 334.05, \"id\": \"0001140361-26-038669\", \"symbol\": \"AAPL\", \"source\": \"sec\", \"isDerivative\": false, \"currency\": \"\"}, {\"name\": \"Ternus John\", \"share\": 6"
+ },
+ "fh_ownership": {
+  "url": "https://finnhub.io/api/v1/stock/ownership?symbol=AAPL&limit=10&token=***",
+  "status": 403,
+  "ctype": "application/json; charset=utf-8",
+  "sec": 0.13,
+  "bytes": 51,
+  "keys": [
+   "error"
+  ],
+  "sample": "{\"error\": \"You don't have access to this resource.\"}"
+ },
+ "fh_fund_ownership": {
+  "url": "https://finnhub.io/api/v1/stock/fund-ownership?symbol=AAPL&limit=10&token=***",
+  "status": 403,
+  "ctype": "application/json; charset=utf-8",
+  "sec": 0.11,
+  "bytes": 51,
+  "keys": [
+   "error"
+  ],
+  "sample": "{\"error\": \"You don't have access to this resource.\"}"
+ },
+ "fh_search": {
+  "url": "https://finnhub.io/api/v1/search?q=apple&token=***",
+  "status": 200,
+  "ctype": "application/json; charset=utf-8",
+  "sec": 0.16,
+  "bytes": 1212,
+  "keys": [
+   "count",
+   "result"
+  ],
+  "sample": "{\"count\": 11, \"result\": [{\"description\": \"Apple Inc\", \"displaySymbol\": \"AAPL\", \"symbol\": \"AAPL\", \"type\": \"Common Stock\"}, {\"description\": \"Apple Hospitality REIT Inc\", \"displaySymbol\": \"APLE\", \"symbol\": \"APLE\", \"type\": \"Common Stock\"}, {\"description\": \"Apple Flavor & Fragrance Group Co Ltd\", \"displaySymbol\": \"603020.SS\", \"symbol\": \"603020.SS\", \"type\": \"Common Stock\"}, {\"description\": \"Maui Land & Pineapple Company Inc\", \"displaySymbol\": \"MLP\", \"symbol\": \"MLP\", \"type\": \"Common Stock\"}, {\"description\": \"Apple iSports Group Inc\", \"displaySymbol\": \"AAPI\", \"symbol\": \"AAPI\", \"type\": \"Common Stock\"},"
+ },
+ "fh_eps_estimate": {
+  "url": "https://finnhub.io/api/v1/stock/eps-estimate?symbol=AAPL&freq=quarterly&token=***",
+  "status": 403,
+  "ctype": "application/json; charset=utf-8",
+  "sec": 0.12,
+  "bytes": 51,
+  "keys": [
+   "error"
+  ],
+  "sample": "{\"error\": \"You don't have access to this resource.\"}"
+ },
+ "fh_dividend": {
+  "url": "https://finnhub.io/api/v1/stock/dividend?symbol=AAPL&from=2024-01-01&to=2026-10-14&token=***",
+  "status": 403,
+  "ctype": "application/json; charset=utf-8",
+  "sec": 0.13,
+  "bytes": 51,
+  "keys": [
+   "error"
+  ],
+  "sample": "{\"error\": \"You don't have access to this resource.\"}"
+ },
+ "fh_profile2_moex": {
+  "url": "https://finnhub.io/api/v1/stock/profile2?symbol=SBER.ME&token=***",
+  "status": 403,
+  "ctype": "application/json; charset=utf-8",
+  "sec": 0.13,
+  "bytes": 51,
+  "keys": [
+   "error"
+  ],
+  "sample": "{\"error\": \"You don't have access to this resource.\"}"
+ },
+ "fh_market_status": {
+  "url": "https://finnhub.io/api/v1/stock/market-status?exchange=US&token=***",
+  "status": 200,
+  "ctype": "application/json; charset=utf-8",
+  "sec": 0.18,
+  "bytes": 116,
+  "keys": [
+   "exchange",
+   "holiday",
+   "isOpen",
+   "session",
+   "t",
+   "timezone"
+  ],
+  "sample": "{\"exchange\": \"US\", \"holiday\": null, \"isOpen\": false, \"session\": \"post-market\", \"t\": 1792014725, \"timezone\": \"America/New_York\"}"
+ },
+ "eodhd": "no key",
+ "sec_company_tickers": {
+  "url": "https://www.sec.gov/files/company_tickers.json",
+  "status": 200,
+  "ctype": "application/json",
+  "sec": 0.13,
+  "bytes": 799925,
+  "keys": [
+   "0",
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6",
+   "7",
+   "8",
+   "9",
+   "10",
+   "11",
+   "12",
+   "13",
+   "14",
+   "15",
+   "16",
+   "17",
+   "18",
+   "19",
+   "20",
+   "21",
+   "22",
+   "23",
+   "24",
+   "25",
+   "26",
+   "27",
+   "28",
+   "29",
+   "30",
+   "31",
+   "32",
+   "33",
+   "34",
+   "35",
+   "36",
+   "37",
+   "38",
+   "39",
+   "40",
+   "41",
+   "42",
+   "43",
+   "44",
+   "45",
+   "46",
+   "47",
+   "48",
+   "49",
+   "50",
+   "51",
+   "52",
+   "53",
+   "54",
+   "55",
+   "56",
+   "57",
+   "58",
+   "59"
+  ],
+  "sample": "{\"0\": {\"cik_str\": 1045810, \"ticker\": \"NVDA\", \"title\": \"NVIDIA CORP\"}, \"1\": {\"cik_str\": 320193, \"ticker\": \"AAPL\", \"title\": \"Apple Inc.\"}, \"2\": {\"cik_str\": 1652044, \"ticker\": \"GOOGL\", \"title\": \"Alphabet Inc.\"}, \"3\": {\"cik_str\": 789019, \"ticker\": \"MSFT\", \"title\": \"MICROSOFT CORP\"}, \"4\": {\"cik_str\": 101"
+ },
+ "sec_companyfacts_aapl": {
+  "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json",
+  "status": 200,
+  "ctype": "application/json",
+  "sec": 0.21,
+  "bytes": 3789099,
+  "keys": [
+   "cik",
+   "entityName",
+   "facts"
+  ],
+  "sample": "{\"cik\": 320193, \"entityName\": \"Apple Inc.\", \"facts\": {\"dei\": {\"EntityCommonStockSharesOutstanding\": {\"label\": \"Entity Common Stock, Shares Outstanding\", \"description\": \"Indicate number of shares or ot",
+  "extra": {
+   "n_concepts": 503,
+   "Revenues": {
+    "unit": "USD",
+    "n": 11,
+    "last": [
+     {
+      "start": "2018-04-01",
+      "end": "2018-06-30",
+      "val": 53265000000,
+      "accn": "0000320193-18-000145",
+      "fy": 2018,
+      "fp": "FY",
+      "form": "10-K",
+      "filed": "2018-11-05",
+      "frame": "CY2018Q2"
+     },
+     {
+      "start": "2017-10-01",
+      "end": "2018-09-29",
+      "val": 265595000000,
+      "accn": "0000320193-18-000145",
+      "fy": 2018,
+      "fp": "FY",
+      "form": "10-K",
+      "filed": "2018-11-05",
+      "frame": "CY2018"
+     },
+     {
+      "start": "2018-07-01",
+      "end": "2018-09-29",
+      "val": 62900000000,
+      "accn": "0000320193-18-000145",
+      "fy": 2018,
+      "fp": "FY",
+      "form": "10-K",
+      "filed": "2018-11-05",
+      "frame": "CY2018Q3"
+     }
+    ]
+   },
+   "RevenueFromContractWithCustomerExcludingAssessedTax": {
+    "unit": "USD",
+    "n": 117,
+    "last": [
+     {
+      "start": "2025-12-28",
+      "end": "2026-03-28",
+      "val": 111184000000,
+      "accn": "0000320193-26-000013",
+      "fy": 2026,
+      "fp": "Q2",
+      "form": "10-Q",
+      "filed": "2026-05-01",
+      "frame": "CY2026Q1"
+     },
+     {
+      "start": "2025-09-28",
+      "end": "2026-06-27",
+      "val": 364357000000,
+      "accn": "0000320193-26-000020",
+      "fy": 2026,
+      "fp": "Q3",
+      "form": "10-Q",
+      "filed": "2026-07-31"
+     },
+     {
+      "start": "2026-03-29",
+      "end": "2026-06-27",
+      "val": 109417000000,
+      "accn": "0000320193-26-000020",
+      "fy": 2026,
+      "fp": "Q3",
+      "form": "10-Q",
+      "filed": "2026-07-31",
+      "frame": "CY2026Q2"
+     }
+    ]
+   },
+   "NetIncomeLoss": {
+    "unit": "USD",
+    "n": 338,
+    "last": [
+     {
+      "start": "2025-12-28",
+      "end": "2026-03-28",
+      "val": 29578000000,
+      "accn": "0000320193-26-000013",
+      "fy": 2026,
+      "fp": "Q2",
+      "form": "10-Q",
+      "filed": "2026-05-01",
+      "frame": "CY2026Q1"
+     },
+     {
+      "start": "2025-09-28",
+      "end": "2026-06-27",
+      "val": 101464000000,
+      "accn": "0000320193-26-000020",
+      "fy": 2026,
+      "fp": "Q3",
+      "form": "10-Q",
+      "filed": "2026-07-31"
+     },
+     {
+      "start": "2026-03-29",
+      "end": "2026-06-27",
+      "val": 29789000000,
+      "accn": "0000320193-26-000020",
+      "fy": 2026,
+      "fp": "Q3",
+      "form": "10-Q",
+      "filed": "2026-07-31",
+      "frame": "CY2026Q2"
+     }
+    ]
+   },
+   "EarningsPerShareDiluted": {
+    "unit": "USD/shares",
+    "n": 338,
+    "last": [
+     {
+      "start": "2025-12-28",
+      "end": "2026-03-28",
+      "val": 2.01,
+      "accn": "0000320193-26-000013",
+      "fy": 2026,
+      "fp": "Q2",
+      "form": "10-Q",
+      "filed": "2026-05-01",
+      "frame": "CY2026Q1"
+     },
+     {
+      "start": "2025-09-28",
+      "end": "2026-06-27",
+      "val": 6.88,
+      "accn": "0000320193-26-000020",
+      "fy": 2026,
+      "fp": "Q3",
+      "form": "10-Q",
+      "filed": "2026-07-31"
+     },
+     {
+      "start": "2026-03-29",
+      "end": "2026-06-27",
+      "val": 2.02,
+      "accn": "0000320193-26-000020",
+      "fy": 2026,
+      "fp": "Q3",
+      "form": "10-Q",
+      "filed": "2026-07-31",
+      "frame": "CY2026Q2"
+     }
+    ]
+   },
+   "OperatingIncomeLoss": {
+    "unit": "USD",
+    "n": 234,
+    "last": [
+     {
+      "start": "2025-12-28",
+      "end": "2026-03-28",
+      "val": 35885000000,
+      "accn": "0000320193-26-000013",
+      "fy": 2026,
+      "fp": "Q2",
+      "form": "10-Q",
+      "filed": "2026-05-01",
+      "frame": "CY2026Q1"
+     },
+     {
+      "start": "2025-09-28",
+      "end": "2026-06-27",
+      "val": 122432000000,
+      "accn": "0000320193-26-000020",
+      "fy": 2026,
+      "fp": "Q3",
+      "form": "10-Q",
+      "filed": "2026-07-31"
+     },
+     {
+      "start": "2026-03-29",
+      "end": "2026-06-27",
+      "val": 35695000000,
+      "accn": "0000320193-26-000020",
+      "fy": 2026,
+      "fp": "Q3",
+      "form": "10-Q",
+      "filed": "2026-07-31",
+      "frame": "CY2026Q2"
+     }
+    ]
+   },
+   "NetCashProvidedByUsedInOperatingActivities": {
+    "unit": "USD",
+    "n": 134,
+    "last": [
+     {
+      "start": "2025-09-28",
+      "end": "2025-12-27",
+      "val": 53925000000,
+      "accn": "0000320193-26-000006",
+      "fy": 2026,
+      "fp": "Q1",
+      "form": "10-Q",
+      "filed": "2026-01-30",
+      "frame": "CY2025Q4"
+     },
+     {
+      "start": "2025-09-28",
+      "end": "2026-03-28",
+      "val": 82627000000,
+      "accn": "0000320193-26-000013",
+      "fy": 2026,
+      "fp": "Q2",
+      "form": "10-Q",
+      "filed": "2026-05-01"
+     },
+     {
+      "start": "2025-09-28",
+      "end": "2026-06-27",
+      "val": 116996000000,
+      "accn": "0000320193-26-000020",
+      "fy": 2026,
+      "fp": "Q3",
+      "form": "10-Q",
+      "filed": "2026-07-31"
+     }
+    ]
+   },
+   "PaymentsToAcquirePropertyPlantAndEquipment": {
+    "unit": "USD",
+    "n": 105,
+    "last": [
+     {
+      "start": "2025-09-28",
+      "end": "2025-12-27",
+      "val": 2373000000,
+      "accn": "0000320193-26-000006",
+      "fy": 2026,
+      "fp": "Q1",
+      "form": "10-Q",
+      "filed": "2026-01-30",
+      "frame": "CY2025Q4"
+     },
+     {
+      "start": "2025-09-28",
+      "end": "2026-03-28",
+      "val": 4344000000,
+      "accn": "0000320193-26-000013",
+      "fy": 2026,
+      "fp": "Q2",
+      "form": "10-Q",
+      "filed": "2026-05-01"
+     },
+     {
+      "start": "2025-09-28",
+      "end": "2026-06-27",
+      "val": 6799000000,
+      "accn": "0000320193-26-000020",
+      "fy": 2026,
+      "fp": "Q3",
+      "form": "10-Q",
+      "filed": "2026-07-31"
+     }
+    ]
+   },
+   "CashAndCashEquivalentsAtCarryingValue": {
+    "unit": "USD",
+    "n": 228,
+    "last": [
+     {
+      "end": "2025-12-27",
+      "val": 45317000000,
+      "accn": "0000320193-26-000006",
+      "fy": 2026,
+      "fp": "Q1",
+      "form": "10-Q",
+      "filed": "2026-01-30",
+      "frame": "CY2025Q4I"
+     },
+     {
+      "end": "2026-03-28",
+      "val": 45572000000,
+      "accn": "0000320193-26-000013",
+      "fy": 2026,
+      "fp": "Q2",
+      "form": "10-Q",
+      "filed": "2026-05-01",
+      "frame": "CY2026Q1I"
+     },
+     {
+      "end": "2026-06-27",
+      "val": 39544000000,
+      "accn": "0000320193-26-000020",
+      "fy": 2026,
+      "fp": "Q3",
+      "form": "10-Q",
+      "filed": "2026-07-31",
+      "frame": "CY2026Q2I"
+     }
+    ]
+   },
+   "LongTermDebt": {
+    "unit": "USD",
+    "n": 54,
+    "last": [
+     {
+      "end": "2025-12-27",
+      "val": 88500000000,
+      "accn": "0000320193-26-000006",
+      "fy": 2026,
+      "fp": "Q1",
+      "form": "10-Q",
+      "filed": "2026-01-30",
+      "frame": "CY2025Q4I"
+     },
+     {
+      "end": "2026-03-28",
+      "val": 82700000000,
+      "accn": "0000320193-26-000013",
+      "fy": 2026,
+      "fp": "Q2",
+      "form": "10-Q",
+      "filed": "2026-05-01",
+      "frame": "CY2026Q1I"
+     },
+     {
+      "end": "2026-06-27",
+      "val": 82300000000,
+      "accn": "0000320193-26-000020",
+      "fy": 2026,
+      "fp": "Q3",
+      "form": "10-Q",
+      "filed": "2026-07-31",
+      "frame": "CY2026Q2I"
+     }
+    ]
+   },
+   "LongTermDebtNoncurrent": {
+    "unit": "USD",
+    "n": 90,
+    "last": [
+     {
+      "end": "2025-12-27",
+      "val": 76685000000,
+      "accn": "0000320193-26-000006",
+      "fy": 2026,
+      "fp": "Q1",
+      "form": "10-Q",
+      "filed": "2026-01-30",
+      "frame": "CY2025Q4I"
+     },
+     {
+      "end": "2026-03-28",
+      "val": 74404000000,
+      "accn": "0000320193-26-000013",
+      "fy": 2026,
+      "fp": "Q2",
+      "form": "10-Q",
+      "filed": "2026-05-01",
+      "frame": "CY2026Q1I"
+     },
+     {
+      "end": "2026-06-27",
+      "val": 71340000000,
+      "accn": "0000320193-26-000020",
+      "fy": 2026,
+      "fp": "Q3",
+      "form": "10-Q",
+      "filed": "2026-07-31",
+      "frame": "CY2026Q2I"
+     }
+    ]
+   },
+   "StockholdersEquity": {
+    "unit": "USD",
+    "n": 264,
+    "last": [
+     {
+      "end": "2026-03-28",
+      "val": 106491000000,
+      "accn": "0000320193-26-000013",
+      "fy": 2026,
+      "fp": "Q2",
+      "form": "10-Q",
+      "filed": "2026-05-01"
+     },
+     {
+      "end": "2026-03-28",
+      "val": 106491000000,
+      "accn": "0000320193-26-000020",
+      "fy": 2026,
+      "fp": "Q3",
+      "form": "10-Q",
+      "filed": "2026-07-31",
+      "frame": "CY2026Q1I"
+     },
+     {
+      "end": "2026-06-27",
+      "val": 107520000000,
+      "accn": "0000320193-26-000020",
+      "fy": 2026,
+      "fp": "Q3",
+      "form": "10-Q",
+      "filed": "2026-07-31",
+      "frame": "CY2026Q2I"
+     }
+    ]
+   },
+   "GrossProfit": {
+    "unit": "USD",
+    "n": 338,
+    "last": [
+     {
+      "start": "2025-12-28",
+      "end": "2026-03-28",
+      "val": 54781000000,
+      "accn": "0000320193-26-000013",
+      "fy": 2026,
+      "fp": "Q2",
+      "form": "10-Q",
+      "filed": "2026-05-01",
+      "frame": "CY2026Q1"
+     },
+     {
+      "start": "2025-09-28",
+      "end": "2026-06-27",
+      "val": 178782000000,
+      "accn": "0000320193-26-000020",
+      "fy": 2026,
+      "fp": "Q3",
+      "form": "10-Q",
+      "filed": "2026-07-31"
+     },
+     {
+      "start": "2026-03-29",
+      "end": "2026-06-27",
+      "val": 54770000000,
+      "accn": "0000320193-26-000020",
+      "fy": 2026,
+      "fp": "Q3",
+      "form": "10-Q",
+      "filed": "2026-07-31",
+      "frame": "CY2026Q2"
+     }
+    ]
+   }
+  }
+ },
+ "ust_curve_csv": {
+  "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv",
+  "status": 200,
+  "ctype": "text/csv; charset=UTF-8",
+  "sec": 0.39,
+  "bytes": 16067,
+  "sample": "Date,\"1 Mo\",\"1.5 Month\",\"2 Mo\",\"3 Mo\",\"4 Mo\",\"6 Mo\",\"1 Yr\",\"2 Yr\",\"3 Yr\",\"5 Yr\",\"7 Yr\",\"10 Yr\",\"20 Yr\",\"30 Yr\"\n10/14/2026,4.11,4.15,4.15,4.28,4.36,4.37,4.53,4.82,4.92,5.00,5.09,5.19,5.57,5.52\n10/13/2026,4.10,4.15,4.15,4.26,4.32,4.34,4.48,4.79,4.90,5.00,5.11,5.21,5.60,5.56\n10/09/2026,4.13,4.13,4.13,4.25,4.29,4.32,4.47,4.80,4.89,5.02,5.13,5.24,5.65,5.60\n10/08/2026,4.14,4.14,4.13,4.23,4.29,4.30,4.44,4.75,4.85,4.99,5.11,5.22,5.64,5.60\n10/07/2026,4.07,4.13,4.14,4.22,4.28,4.28,4.42,4.77,4.87,5.03,5.15,5.28,5.71,5.67\n10/06/2026,4.06,4.12,4.13,4.21,4.26,4.28,4.46,4.79,4.88,5.03,5.15,5.27,5.68,5.64\n10/05/2026,4.05,4.10,4.13,4.22,4.27,4.30,4.47,4.84,4.97,5.06,5.19,5.31,5.70,5.66\n10/02/2026,4.04,4.09,4.11,4.19,4.26,4.27,4.46,4.83,4.96,5.06,5.17,5.28,5.67,5.63\n10/01/2026,4.06,4.10,4.13,4.17,4.26,4.27,"
+ },
+ "ust_curve_csv_month": {
+  "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/all/202610?type=daily_treasury_yield_curve&field_tdr_date_value_month=202610&page&_format=csv",
+  "status": 200,
+  "ctype": "text/csv; charset=UTF-8",
+  "sec": 0.53,
+  "bytes": 839,
+  "sample": "Date,\"1 Mo\",\"1.5 Month\",\"2 Mo\",\"3 Mo\",\"4 Mo\",\"6 Mo\",\"1 Yr\",\"2 Yr\",\"3 Yr\",\"5 Yr\",\"7 Yr\",\"10 Yr\",\"20 Yr\",\"30 Yr\"\n10/14/2026,4.11,4.15,4.15,4.28,4.36,4.37,4.53,4.82,4.92,5.00,5.09,5.19,5.57,5.52\n10/13/2026,4.10,4.15,4.15,4.26,4.32,4.34,4.48,4.79,4.90,5.00,5.11,5.21,5.60,5.56\n10/09/2026,4.13,4.13,4.13,4.25,4.29,4.32,4.47,4.80,4.89,5.02,5.13,5.24,5.65,5.60\n10/08/2026,4.14,4.14,4.13,4.23,4.29,4.30,4.44,4.75,4.85,4.99,5.11,5.22,5.64,5.60\n10/07/2026,4.07,4.13,4.14,4.22,4.28,4.28,4.42,4.77,4.87,5.03,5.15,5.28,5.71,5.67\n10/06/2026,4.06,4.12,4.13,4.21,4.26,4.28,4.46,4.79,4.88,5.03,5.15,5.27,5.68,5.64\n10/05/2026,4.05,4.10,4.13,4.22,4.27,4.30,4.47,4.84,4.97,5.06,5.19,5.31,5.70,5.66\n10/02/2026,4.04,4.09,4.11,4.19,4.26,4.27,4.46,4.83,4.96,5.06,5.17,5.28,5.67,5.63\n10/01/2026,4.06,4.10,4.13,4.17,4.26,4.27,"
+ },
+ "ecb_yc": {
+  "url": "https://data-api.ecb.europa.eu/service/data/YC/B.U2.EUR.4F.G_N_A.SV_C_YM.SR_3M+SR_1Y+SR_2Y+SR_5Y+SR_10Y+SR_30Y?lastNObservations=3&format=csvdata",
+  "status": 200,
+  "ctype": "text/csv",
+  "sec": 1.39,
+  "bytes": 10409,
+  "sample": "KEY,FREQ,REF_AREA,CURRENCY,PROVIDER_FM,INSTRUMENT_FM,PROVIDER_FM_ID,DATA_TYPE_FM,TIME_PERIOD,OBS_VALUE,OBS_STATUS,OBS_CONF,OBS_PRE_BREAK,OBS_COM,TIME_FORMAT,BREAKS,COLLECTION,COMPILING_ORG,DISS_ORG,DOM_SER_IDS,FM_CONTRACT_TIME,FM_COUPON_RATE,FM_IDENTIFIER,FM_LOT_SIZE,FM_MATURITY,FM_OUTS_AMOUNT,FM_PUT_CALL,FM_STRIKE_PRICE,PUBL_MU,PUBL_PUBLIC,UNIT_INDEX_BASE,COMPILATION,COVERAGE,DECIMALS,SOURCE_AGENCY,SOURCE_PUB,TITLE,TITLE_COMPL,UNIT,UNIT_MULT\r\nYC.B.U2.EUR.4F.G_N_A.SV_C_YM.SR_10Y,B,U2,EUR,4F,G_N_A,SV_C_YM,SR_10Y,2026-10-09,3.5112034635,A,F,,,P1D,,E,,,,,,,,,,,,,,,Technical notes are available at the following link: https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/euro_area_yield_curves/shared/pdf/technical_notes.pdf,,6,,,AAA yield curve - 10-year spot rate,\"Euro area (changing composition) - Government bond, nominal, all issuers whose rating is triple A - Svensson model - continuous compounding - yield error minimisation - Yield curve spot rate, 10-year maturity\",PCPA,0\r\nYC.B.U2.EUR.4F.G_N_A.SV_C_YM.SR_10Y,B,U2,EUR,4F,G_N_A,SV_C_YM,SR_10Y,2026-10-12,3.4986692518,A,F,,,P1D,,E,,,,,,,,,,,,,,,Technical notes are available at the following link: https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/euro_area_yield_curves/shared/pdf/technical_notes.pdf,,6,,,AAA yield curve - 10-year spot rate,\"Euro area (changing composition) - Government bond, nominal, all issuers whose rating is triple A - Svensson model - continuous compounding - yield error mini"
+ },
+ "mof_jgb": {
+  "url": "https://www.mof.go.jp/english/policy/jgbs/reference/interest_rate/jgbcme.csv",
+  "status": 200,
+  "ctype": "text/csv",
+  "sec": 0.51,
+  "bytes": 1046,
+  "sample": "Interest Rate (October 2026),,,,,,,,,,,,,,,(Unit : %)\r\nDate,1Y,2Y,3Y,4Y,5Y,6Y,7Y,8Y,9Y,10Y,15Y,20Y,25Y,30Y,40Y\r\n2026/10/1,1.668,1.939,2.077,2.274,2.407,2.534,2.657,2.82,2.952,3.092,3.62,3.91,4.154,4.122,4.125\r\n2026/10/2,1.65,1.919,2.065,2.259,2.397,2.528,2.657,2.821,2.957,3.097,3.626,3.925,4.171,4.148,4.168\r\n2026/10/5,1.638,1.909,2.056,2.251,2.389,2.517,2.645,2.81,2.944,3.085,3.63,3.935,4.185,4.166,4.195\r\n2026/10/6,1.652,1.93,2.077,2.277,2.418,2.548,2.677,2.835,2.966,3.103,3.642,3.946,4.195,4.168,4.196\r\n2026/10/7,1.665,1.951,2.096,2.298,2.437,2.566,2.695,2.849,2.975,3.111,3.642,3.943,4.186,4.148,4.17\r\n2026/10/8,1.657,1.936,2.084,2.277,2.414,2.54,2.669,2.824,2.954,3.089,3.618,3.916,4.165,4.136,4.134\r\n2026/10/9,1.647,1.911,2.052,2.234,2.366,2.484,2.604,2.761,2.894,3.027,3.558,3.853,4.11,4.085,4.081\r\n2026/10/13,1.657,1.928,2.067,2.241,2.371,2.486,2.606,2.76,2.891,3.019,3.553,3.841,4.091,4.0"
+ },
+ "moex_zcyc": {
+  "url": "https://iss.moex.com/iss/engines/stock/zcyc.json?iss.meta=off",
+  "status": 200,
+  "ctype": "application/json; charset=utf-8",
+  "sec": 1.09,
+  "bytes": 6758,
+  "keys": [
+   "maxdates",
+   "params",
+   "params.dates",
+   "securities",
+   "securities.dates",
+   "yearyields",
+   "yearyields.dates"
+  ],
+  "sample": "{\"maxdates\": {\"columns\": [\"tradedate\", \"maxdate\", \"months\"], \"data\": [[\"2026-10-14\", \"2047-06-23\", 251]]}, \"params\": {\"columns\": [\"tradedate\", \"tradetime\", \"B1\", \"B2\", \"B3\", \"T1\", \"G1\", \"G2\", \"G3\", \"G4\", \"G5\", \"G6\", \"G7\", \"G8\", \"G9\"], \"data\": [[\"2026-10-14\", \"18:54:59\", 1505.985037, -426.386603, 557.421774, 1.756377, 0.843336, 0.026854, 0.969137, 2.482855, -1.385911, -0.010753, 1.40651, 0.0, 0.0]]}, \"params.dates\": {\"columns\": [\"from\", \"till\"], \"data\": [[\"2014-01-06\", \"2026-10-14\"]]}, \"securities\": {\"columns\": [\"tradedate\", \"tradetime\", \"secid\", \"benchmark\", \"expdate\", \"updatetime\", \"bidprice\", \"bidyield\", \"askprice\", \"askyield\", \"trdprice\", \"trdyield\", \"clcprice\", \"crtprice\", \"clcyield\", \"correction\", \"crtyield\", \"crtduration\", \"bidduration\", \"askduration\", \"shortname\"], \"data\": [[\"2026-10-14\", \"18:54:59\", \"SU26207RMFS9\", 0, \"2027-02-03\", \"18:54:59\", 98.65, 13.12, 98.699, 12.94, 98.651, 13.12, 100.4254, 98.6823, 12.3, 0.6417, 12.94, 112, 111, 111, \"ОФЗ 26207\"], [\"2026-10-14\", \"18:54:59\", \"SU26212RMFS9\", 0, \"2028-01-19\", \"18:54:59\", 92.652, 14.01, 92.724, 13.94, 92.65, 14.01, 94.0734, 92.5962, 14.19, -0.1839, 14.01, 442, 442, 442, \"ОФЗ 26212\"], [\"2026-10-14\", \"18:54:59\", \"SU26218RMFS6\", 0, \"2031-09-17\", \"18:54:59\", 77.309, 15.78, 77.404, 15.75, 77.327, 15.78, 76.6609, 77.1718, 16.21, -0.4309, 15.78, 1453, 1450, 1450, \"ОФЗ 26218\"], [\"2026-10-14\", \"18:54:59\", \"SU26221RMFS0\", 0, \"2033-03-23\", \"18:54:59\", 68.822, 16.13, 68.909, 16.1, 68.872, 16.11, 68.5354, 68.733, 16.33, -0.1982"
+ },
+ "boe_iadb": {
+  "url": "https://www.bankofengland.co.uk/boeapps/database/_iadb-fromshowcolumns.asp?csv.x=yes&Datefrom=01/Sep/2026&Dateto=now&SeriesCodes=IUDSNZC,IUDMNZC,IUDLNZC&CSVF=TN&UsingCodes=Y&VPD=Y&VFD=N",
+  "status": 200,
+  "ctype": "application/csv",
+  "sec": 0.89,
+  "bytes": 1044,
+  "sample": "DATE,IUDSNZC,IUDMNZC,IUDLNZC\r\n01 Sep 2026,4.6675,5.2068,5.8845\r\n02 Sep 2026,4.7059,5.2416,5.9164\r\n03 Sep 2026,4.6185,5.1575,5.841\r\n04 Sep 2026,4.6169,5.1425,5.8225\r\n07 Sep 2026,4.6496,5.1775,5.8562\r\n08 Sep 2026,4.6494,5.1626,5.8358\r\n09 Sep 2026,4.7525,5.2493,5.9065\r\n10 Sep 2026,4.9066,5.3572,5.9666\r\n11 Sep 2026,4.8831,5.3483,5.9643\r\n14 Sep 2026,4.9597,5.3882,5.9568\r\n15 Sep 2026,4.9496,5.3861,5.9723\r\n16 Sep 2026,4.8226,5.2876,5.8951\r\n17 Sep 2026,4.7695,5.2074,5.7726\r\n18 Sep 2026,4.8842,5.2899,5.7894\r\n21 Sep 2026,4.7788,5.1935,5.7367\r\n22 Sep 2026,4.79,5.2113,5.7681\r\n23 Sep 2026,4.8957,5.3055,5.8458\r\n24 Sep 2026,4.9373,5.3613,5.9034\r\n25 Sep 2026,4.9201,5.3842,5.9312\r\n28 Sep 2026,4.9756,5.4123,5.9618\r\n29 Sep 2026,4.9449,5.3807,5.9483\r\n30 Sep 2026,4.9415,5.4028,5.9766\r\n01 Oct 2026,4.9224,5.424,"
+ },
+ "bund_bbk": {
+  "url": "https://api.statistiken.bundesbank.de/rest/data/BBSIS/D.I.ZAR.ZI.EUR.S1311.B.A604.R10XX.R.A.A._Z._Z.A?lastNObservations=3&format=csv",
+  "status": 200,
+  "ctype": "application/vnd.bbk.data+csv;version=1.0.0;charset=UTF-8",
+  "sec": 1.83,
+  "bytes": 425,
+  "sample": "﻿\"\";BBSIS.D.I.ZAR.ZI.EUR.S1311.B.A604.R10XX.R.A.A._Z._Z.A;BBSIS.D.I.ZAR.ZI.EUR.S1311.B.A604.R10XX.R.A.A._Z._Z.A_FLAGS\n\"\";Aus der Zinsstruktur abgeleitete Renditen für Bundeswertpapiere  mit jährl. Kuponzahlungen / RLZ 10 Jahre / Tageswerte;\nDezimalstellen;2;\nDimension;Eins;\nEinheit;PROZENT;\nFormat der Zeitangabe;P1D;\nKategorie;ZRZS;\nStand vom;14.10.2026 12:26:58 Uhr;\n2026-10-12;3,49;\n2026-10-13;3,46;\n2026-10-14;3,48;\n"
+ },
+ "bis_cbpol_v1": {
+  "url": "https://stats.bis.org/api/v1/data/WS_CBPOL/D.US+XM+GB+JP+RU/all?lastNObservations=2&format=csv",
+  "status": 200,
+  "ctype": "text/csv;charset=UTF-8",
+  "sec": 0.51,
+  "bytes": 8054,
+  "sample": "FREQ,REF_AREA,UNIT_MEASURE,UNIT_MULT,TIME_FORMAT,COMPILATION,DECIMALS,SOURCE_REF,SUPP_INFO_BREAKS,TITLE,TIME_PERIOD,OBS_VALUE,OBS_STATUS,OBS_CONF,OBS_PRE_BREAK\nD,GB,368,0,,From 3 Aug 2006 onwards: official bank rate; from 6 May 1997 to 2 Aug 2006: repo rate; from 20 Aug 1981 to 5 May 1997: minimum Bank of England Band 1 dealing rate; from 16 Oct 1972 to 19 Aug 1981: minimum lending rate; from 1 Jan 1946 to 15 Oct 1972: bank rate.,4,Bank of England,, Central bank policy rates - United Kingdom - Daily - End of period,2026-10-02,3.75,A,F,\nD,GB,368,0,,From 3 Aug 2006 onwards: official bank rate; from 6 May 1997 to 2 Aug 2006: repo rate; from 20 Aug 1981 to 5 May 1997: minimum Bank of England Band 1 dealing rate; from 16 Oct 1972 to 19 Aug 1981: minimum lending rate; from 1 Jan 1946 to 15 Oct 1972: bank rate.,4,Bank of England,, Central bank policy rates - United Kingdom - Daily - End of period,2026-10-05,3.75,A,F,\nD,JP,368,0,,\"From 24 Sep 2026: the BOJ encourages the uncollateralized overnight call rate to remain at around 1.25 percent; From 17 Jun 2026 to 23 Sep 2026: the BOJ encourages the uncollateralized overnight call rate to remain at around 1.00 percent; From 22 Dec 2025 to 16 Jun 2026: the BOJ encourages the uncollateralized overnight call rate to remain at around 0.75 percent; From 27 Jan 2025 to 21 Dec 2025: the BOJ encourages the uncollateralized overnight call rate to remain at around 0.50 percent; From 1 Aug 2024 to 26 Jan 2025: the BOJ encouraged the UOCR to remain "
+ },
+ "bis_cbpol_v2": {
+  "url": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_CBPOL/1.0/D.US+XM+GB+JP+RU?lastNObservations=2&format=csv",
+  "status": 200,
+  "ctype": "text/csv;charset=UTF-8",
+  "sec": 0.87,
+  "bytes": 8054,
+  "sample": "FREQ,REF_AREA,UNIT_MEASURE,UNIT_MULT,TIME_FORMAT,COMPILATION,DECIMALS,SOURCE_REF,SUPP_INFO_BREAKS,TITLE,TIME_PERIOD,OBS_VALUE,OBS_STATUS,OBS_CONF,OBS_PRE_BREAK\nD,GB,368,0,,From 3 Aug 2006 onwards: official bank rate; from 6 May 1997 to 2 Aug 2006: repo rate; from 20 Aug 1981 to 5 May 1997: minimum Bank of England Band 1 dealing rate; from 16 Oct 1972 to 19 Aug 1981: minimum lending rate; from 1 Jan 1946 to 15 Oct 1972: bank rate.,4,Bank of England,, Central bank policy rates - United Kingdom - Daily - End of period,2026-10-02,3.75,A,F,\nD,GB,368,0,,From 3 Aug 2006 onwards: official bank rate; from 6 May 1997 to 2 Aug 2006: repo rate; from 20 Aug 1981 to 5 May 1997: minimum Bank of England Band 1 dealing rate; from 16 Oct 1972 to 19 Aug 1981: minimum lending rate; from 1 Jan 1946 to 15 Oct 1972: bank rate.,4,Bank of England,, Central bank policy rates - United Kingdom - Daily - End of period,2026-10-05,3.75,A,F,\nD,JP,368,0,,\"From 24 Sep 2026: the BOJ encourages the uncollateralized overnight call rate to remain at around 1.25 percent; From 17 Jun 2026 to 23 Sep 2026: the BOJ encourages the uncollateralized overnight call rate to remain at around 1.00 percent; From 22 Dec 2025 to 16 Jun 2026: the BOJ encourages the uncollateralized overnight call rate to remain at around 0.75 percent; From 27 Jan 2025 to 21 Dec 2025: the BOJ encourages the uncollateralized overnight call rate to remain at around 0.50 percent; From 1 Aug 2024 to 26 Jan 2025: the BOJ encouraged the UOCR to remain "
+ },
+ "nyfed_effr": {
+  "url": "https://markets.newyorkfed.org/api/rates/unsecured/effr/last/1.json",
+  "status": 200,
+  "ctype": "application/json;charset=utf-8",
+  "sec": 0.21,
+  "bytes": 301,
+  "keys": [
+   "refRates"
+  ],
+  "sample": "{\"refRates\": [{\"effectiveDate\": \"2026-10-13\", \"type\": \"EFFR\", \"percentRate\": 3.88, \"percentPercentile1\": 3.85, \"percentPercentile25\": 3.88, \"percentPercentile75\": 3.88, \"percentPercentile99\": 3.89, \"targetRateFrom\": 3.75, \"targetRateTo\": 4.0, \"volumeInBillions\": 106, \"revisionIndicator\": \"\"}]}"
+ },
+ "fomc_calendar": {
+  "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+  "status": 200,
+  "ctype": "text/html",
+  "sec": 0.11,
+  "bytes": 165751,
+  "sample": "﻿<!doctype html>\r\n<html lang=\"en\" class=\"no-js\">\r\n    <head>\r\n        <meta charset=\"utf-8\">\r\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"/>\r\n        <meta name=\"viewport\" content=\"wid",
+  "extra": {
+   "snippets": [
+    [
+     "January",
+     "27-28"
+    ],
+    [
+     "March",
+     "17-18*"
+    ],
+    [
+     "April",
+     "28-29"
+    ],
+    [
+     "June",
+     "16-17*"
+    ],
+    [
+     "July",
+     "28-29"
+    ],
+    [
+     "September",
+     "15-16*"
+    ],
+    [
+     "October",
+     "27-28"
+    ],
+    [
+     "December",
+     "8-9*"
+    ],
+    [
+     "January",
+     "28-29"
+    ],
+    [
+     "March",
+     "18-19*"
+    ],
+    [
+     "May",
+     "6-7"
+    ],
+    [
+     "June",
+     "17-18*"
+    ],
+    [
+     "July",
+     "29-30"
+    ],
+    [
+     "August",
+     "22 (notation vote)"
+    ],
+    [
+     "September",
+     "16-17*"
+    ],
+    [
+     "October",
+     "28-29"
+    ],
+    [
+     "December",
+     "9-10*"
+    ],
+    [
+     "January",
+     "30-31"
+    ],
+    [
+     "March",
+     "19-20*"
+    ],
+    [
+     "Apr/May",
+     "30-1"
+    ]
+   ]
+  }
+ },
+ "cbr_keyrate": {
+  "url": "https://www.cbr.ru/hd_base/KeyRate/?UniDbQuery.Posted=True&UniDbQuery.From=01.09.2026&UniDbQuery.To=15.10.2026",
+  "status": 200,
+  "ctype": "text/html; charset=utf-8",
+  "sec": 1.68,
+  "bytes": 35791,
+  "sample": "\r\n<!DOCTYPE html>\r\n<html>\r\n<head>\r\n    \r\n\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\r\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\r\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\r\n<meta name=\"format-detection\" cont",
+  "extra": {
+   "rows": [
+    [
+     "14.10.2026",
+     "14,00"
+    ],
+    [
+     "13.10.2026",
+     "14,00"
+    ],
+    [
+     "12.10.2026",
+     "14,00"
+    ],
+    [
+     "09.10.2026",
+     "14,00"
+    ],
+    [
+     "08.10.2026",
+     "14,00"
+    ]
+   ]
+  }
+ },
+ "stooq_aapl": {
+  "url": "https://stooq.com/q/d/l/?s=aapl.us&i=d",
+  "status": 200,
+  "ctype": "text/html; charset=utf-8",
+  "sec": 0.55,
+  "bytes": 796,
+  "sample": "<!DOCTYPE html><html><head><meta charset=\"utf-8\"><meta name=\"robots\" content=\"noindex,nofollow\"></head><body><noscript>This site requires JavaScript to verify your browser. Please enable JavaScript and reload.</noscript><script nonce=\"s4r4DzCYyACyTa4RD8QPFg\">\n(async()=>{const c=\"AAAAAGrP-ZAYTMsX_CTA"
+ },
+ "coingecko_simple": {
+  "url": "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum&vs_currencies=usd&include_24hr_change=true",
+  "status": 200,
+  "ctype": "application/json; charset=utf-8",
+  "sec": 0.09,
+  "bytes": 126,
+  "keys": [
+   "bitcoin",
+   "ethereum"
+  ],
+  "sample": "{\"bitcoin\": {\"usd\": 81800, \"usd_24h_change\": -1.9469076260148317}, \"ethereum\": {\"usd\": 2420.86, \"usd_24h_change\": -3.5340596829829285}}"
+ },
+ "moex_sber": {
+  "url": "https://iss.moex.com/iss/engines/stock/markets/shares/boards/TQBR/securities/SBER.json?iss.meta=off&iss.only=securities,marketdata&securities.columns=SECID,SHORTNAME,PREVPRICE,LOTSIZE&marketdata.columns=SECID,LAST,LASTTOPREVPRICE",
+  "status": 200,
+  "ctype": "application/json; charset=utf-8",
+  "sec": 0.7,
+  "bytes": 248,
+  "keys": [
+   "securities",
+   "marketdata"
+  ],
+  "sample": "{\"securities\": {\"columns\": [\"SECID\", \"SHORTNAME\", \"PREVPRICE\", \"LOTSIZE\"], \"data\": [[\"SBER\", \"Сбербанк\", 287.16, 1]]}, \"marketdata\": {\"columns\": [\"SECID\", \"LAST\", \"LASTTOPREVPRICE\"], \"data\": [[\"SBER\", 285.52, -0.57]]}}"
+ },
+ "gtranslate": {
+  "url": "https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=ru&dt=t&q=Apple%20beats%20earnings%0ANvidia%20shares%20fall",
+  "status": 200,
+  "ctype": "application/json; charset=utf-8",
+  "sec": 0.74,
+  "bytes": 380,
+  "len": 9,
+  "sample": "[[[\"Apple превосходит доходы\\n\", \"Apple beats earnings\\n\", null, null, 3, null, null, [[]], [[[\"8e6adaf1f9ae06bcb9663531e5521abb\", \"en_ru_2023q1.md\"], true]]], [\"Акции NVIDIA падают\", \"Nvidia shares fall\", null, null, 3, null, null, [[]], [[[\"8e6adaf1f9ae06bcb9663531e5521abb\", \"en_ru_2023q1.md\"]]]]], null, \"en\", null, null, null, 0.9888356, [], [[\"en\"], null, [0.9888356], [\"en\"]]]"
+ }
+}
