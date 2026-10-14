@@ -334,6 +334,34 @@ class AiBrief(unittest.TestCase):
         self.assertEqual(ai.parse_answer("no json", 3), {})
 
 
+class AutoReload(unittest.TestCase):
+    def test_reload_when_code_changes(self):
+        import news_bot
+        with tempfile.TemporaryDirectory() as d:
+            with open(os.path.join(d, "a.py"), "w") as f:
+                f.write("x = 1")
+            h1 = news_bot.code_hash(d)
+            with open(os.path.join(d, "data.json"), "w") as f:
+                f.write("{}")
+            self.assertEqual(news_bot.code_hash(d), h1)          # данные не считаются кодом
+            with open(os.path.join(d, "a.py"), "w") as f:
+                f.write("x = 2")
+            self.assertNotEqual(news_bot.code_hash(d), h1)
+
+    def test_loop_reloads_after_pull_and_keeps_deadline(self):
+        import news_bot
+        hashes = iter(["old", "new"])
+        with mock.patch.object(news_bot, "code_hash", side_effect=lambda repo: next(hashes)), \
+                mock.patch.object(news_bot, "git_sync"), \
+                mock.patch.object(news_bot, "run") as run, \
+                mock.patch.object(news_bot.os, "execv", side_effect=SystemExit("reloaded")) as ex, \
+                mock.patch.dict(os.environ, {"LOOP_DEADLINE": "123456.5"}):
+            news_bot.loop(5, True)
+            ex.assert_called_once()
+            run.assert_not_called()
+            self.assertEqual(os.environ["LOOP_DEADLINE"], "123456.5")
+
+
 class NewsBotIntegration(unittest.TestCase):
     def test_page_news_item_has_tickers(self):
         import news_bot

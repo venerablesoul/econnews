@@ -1251,11 +1251,35 @@ def git_sync(stage, repo):
     print("  ! git push не удался:", (r.stderr or r.stdout).strip()[:300])
 
 
+def code_hash(repo):
+    """Отпечаток кода бота (*.py в папке): если после git pull он изменился — пора перезапуститься."""
+    h = hashlib.sha1()
+    for name in sorted(os.listdir(repo)):
+        if name.endswith(".py"):
+            with open(os.path.join(repo, name), "rb") as f:
+                h.update(name.encode() + b"\0" + f.read())
+    return h.hexdigest()
+
+
+def reload_self(deadline):
+    """Перезапуск процесса с новой версией кода. Время работы цикла (для GitHub Actions) сохраняется."""
+    if deadline:
+        os.environ["LOOP_DEADLINE"] = str(deadline)
+    print("Код бота обновился на GitHub — перезапускаюсь с новой версией.", flush=True)
+    os.execv(sys.executable, [sys.executable] + sys.argv)
+
+
 def loop(minutes, sync, max_hours=0.0):
     """Цикл: запуск каждые `minutes` минут. Ошибка одного запуска не останавливает бота.
-    max_hours > 0 — остановиться через столько часов (для GitHub Actions, где задача живёт до 6 ч)."""
+    max_hours > 0 — остановиться через столько часов (для GitHub Actions, где задача живёт до 6 ч).
+    С --git-sync бот сам подхватывает новую версию кода: после git pull перезапускается, если *.py изменились."""
     repo = os.path.dirname(os.path.abspath(__file__))
-    deadline = time.time() + max_hours * 3600 if max_hours > 0 else None
+    try:
+        deadline = float(os.environ["LOOP_DEADLINE"])
+    except (KeyError, ValueError):
+        deadline = time.time() + max_hours * 3600 if max_hours > 0 else None
+    auto_reload = os.environ.get("AUTO_RELOAD", "yes").strip().lower() not in ("0", "no", "off", "false")
+    start_hash = code_hash(repo)
     print(f"Бот запущен в постоянном режиме: проверка каждые {minutes:g} мин"
           + (", синхронизация с GitHub включена" if sync else "") + ". Остановить: Ctrl+C.")
     last_push = 0.0
@@ -1265,6 +1289,8 @@ def loop(minutes, sync, max_hours=0.0):
         try:
             if sync:
                 git_sync("pull", repo)
+                if auto_reload and code_hash(repo) != start_hash:
+                    reload_self(deadline)
             sent = run()
             # сайт (GitHub Pages) пересобирается при каждой отправке — не чаще раза в ~10 минут,
             # но сразу, если что-то ушло в Telegram (чтобы после сбоя не прислать то же самое ещё раз)
