@@ -96,6 +96,24 @@ async function cryptoQuotes(syms) {
     } catch (e) { errors.push(String(e.message || e)); }
   }
   try {
+    const d = await cached("cc:" + syms.join(","), 30, () => getJSON("https://min-api.cryptocompare.com/data/pricemultifull?fsyms=" + syms.join(",") + "&tsyms=USD", { timeout: 6000 }));
+    const raw = (d && d.RAW) || {};
+    const out = {};
+    for (const s of syms) { const x = raw[s] && raw[s].USD; if (x && x.PRICE) out[s] = { px: x.PRICE, ch: x.CHANGEPCT24HOUR, h: x.HIGH24HOUR, l: x.LOW24HOUR, cur: "$", src: "cryptocompare" }; }
+    if (Object.keys(out).length) return out;
+    errors.push("CryptoCompare: нет данных");
+  } catch (e) { errors.push("CryptoCompare " + String(e.message || e)); }
+  try {
+    const out = {};
+    await Promise.all(syms.slice(0, 10).map(async (s) => {
+      const d = await cached("yq:" + s, 30, () => getJSON(YAHOO + s + "-USD?range=1d&interval=5m", { timeout: 6000 }));
+      const m = d.chart.result[0].meta;
+      const prev = m.chartPreviousClose || m.previousClose;
+      if (m.regularMarketPrice) out[s] = { px: m.regularMarketPrice, ch: prev ? (m.regularMarketPrice / prev - 1) * 100 : null, cur: "$", src: "yahoo" };
+    }));
+    if (Object.keys(out).length) return out;
+  } catch (e) { errors.push("Yahoo " + String(e.message || e)); }
+  try {
     const ids = syms.map((s) => COINS[s]).join(",");
     const d = await cached("cg:" + ids, 60, () => getJSON("https://api.coingecko.com/api/v3/simple/price?ids=" + ids + "&vs_currencies=usd&include_24hr_change=true"));
     const out = {};
@@ -207,7 +225,20 @@ async function binanceHistory(coin, range) {
     try { k = await getJSON(host + "/klines?symbol=" + coin + "USDT&interval=" + interval + "&limit=" + limit, { ttl: 900, timeout: 8000 }); break; }
     catch (e) { err = e; }
   }
-  if (!k) throw err || new Error("Binance недоступен");
+  if (!k) {
+    // Binance не пускает часть серверов Cloudflare — берём дневные свечи CryptoCompare
+    const toDays = interval === "1w" ? limit * 7 : limit;
+    const d = await getJSON("https://min-api.cryptocompare.com/data/v2/histoday?fsym=" + coin + "&tsym=USD&limit=" + Math.min(2000, toDays), { ttl: 900, timeout: 8000 })
+      .catch(() => { throw err || new Error("Binance недоступен"); });
+    const rows = ((d && d.Data && d.Data.Data) || []).filter((x) => x.close > 0);
+    if (!rows.length) throw err || new Error("нет истории " + coin);
+    const out = { t: [], o: [], h: [], l: [], c: [], v: [], cur: "USD", name: coin + "/USD", src2: "cryptocompare" };
+    const step = interval === "1w" ? 7 : 1;
+    for (let i = rows.length % step; i < rows.length; i += step) {
+      const x = rows[i]; out.t.push(x.time); out.o.push(x.open); out.h.push(x.high); out.l.push(x.low); out.c.push(x.close); out.v.push(x.volumeto);
+    }
+    return out;
+  }
   const out = { t: [], o: [], h: [], l: [], c: [], v: [], cur: "USD", name: coin + "/USDT" };
   for (const x of k) { out.t.push(Math.floor(x[0] / 1000)); out.o.push(+x[1]); out.h.push(+x[2]); out.l.push(+x[3]); out.c.push(+x[4]); out.v.push(+x[5]); }
   return out;
@@ -238,7 +269,7 @@ export async function getHistory(env, raw, range) {
   range = normRange(range);
   return cached("hist:" + p.key + ":" + range, 1800, async () => {
     let h;
-    if (p.kind === "crypto") h = { ...(await binanceHistory(p.s, range)), src: "binance" };
+    if (p.kind === "crypto") { const b = await binanceHistory(p.s, range); h = { ...b, src: b.src2 || "binance" }; delete h.src2; }
     else if (p.kind === "moex") h = { ...(await moexHistory(p.s, range, false)), src: "moex" };
     else if (p.kind === "mkt" && p.s === "IMOEX") h = { ...(await moexHistory("IMOEX", range, true)), src: "moex" };
     else if (p.kind === "mkt") h = { ...(await yahooHistory(MKT[p.s][0], range)), name: MKT[p.s][1], src: "yahoo" };
@@ -275,19 +306,34 @@ function seriesRows(series, keys) {
 
 const FA_KEYS = ["eps", "salesPerShare", "grossMargin", "operatingMargin", "netMargin", "roe", "totalDebtToEquity", "fcfMargin"];
 
-// заголовки переводим по одному (параллельно): если склеить, переводчик иногда теряет переносы строк
+// заголовки переводим по одному (параллельно): если склеить, переводчик иногда теряет переносы строк.
+// Сначала Google, если он не пускает сервер — MyMemory; не получилось — остаётся оригинал.
+export const translateState = { errors: [] };
+
 async function translateOne(line) {
   return cached("tr:" + line, 86400, async () => {
-    const d = await getJSON("https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=ru&dt=t&q=" + encodeURIComponent(line),
-      { ttl: 86400, timeout: 6000 });
-    const text = (d[0] || []).map((seg) => seg[0] || "").join("").trim();
-    if (!text) throw new Error("пустой перевод");
-    return text;
+    let err;
+    try {
+      const d = await getJSON("https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=ru&dt=t&q=" + encodeURIComponent(line),
+        { ttl: 86400, timeout: 5000 });
+      const text = (d[0] || []).map((seg) => seg[0] || "").join("").trim();
+      if (text) return text;
+    } catch (e) { err = "Google " + (e.status || e.message); }
+    try {
+      const d = await getJSON("https://api.mymemory.translated.net/get?langpair=en|ru&q=" + encodeURIComponent(line.slice(0, 480)), { ttl: 86400, timeout: 5000 });
+      const text = ((d && d.responseData && d.responseData.translatedText) || "").trim();
+      if (text && !/MYMEMORY WARNING/i.test(text) && String(d.responseStatus) === "200") return text.replace(/&#39;/g, "'").replace(/&quot;/g, '"').replace(/&amp;/g, "&");
+      err = (err ? err + ", " : "") + "MyMemory " + (d && d.responseStatus);
+    } catch (e) { err = (err ? err + ", " : "") + "MyMemory " + (e.status || e.message); }
+    throw new Error(err || "перевод недоступен");
   });
 }
 
 async function translateLines(lines) {
-  return Promise.all(lines.map((l) => translateOne(l.replace(/\s+/g, " ").trim()).catch(() => l)));
+  return Promise.all(lines.map((l) => translateOne(l.replace(/\s+/g, " ").trim()).catch((e) => {
+    if (translateState.errors.length < 3) translateState.errors.push(String(e.message || e));
+    return l;
+  })));
 }
 
 export const COMPANY_PARTS = ["des", "fa", "ern", "anr", "cn", "hds"];
@@ -360,8 +406,10 @@ export async function getCompany(env, raw, parts = COMPANY_PARTS) {
   if (want.has("cn")) {
     safe("news", fh(env, `/company-news?symbol=${s}&from=${weekAgo}&to=${today}`, 900).then(async (x) => {
       const items = (x || []).filter((n) => n.headline).sort((a, b) => b.datetime - a.datetime).slice(0, 12);
+      translateState.errors = [];
       const ru = await translateLines(items.map((n) => n.headline));
       res.cn = items.map((n, i) => ({ t: n.datetime, h: ru[i] || n.headline, en: n.headline, src: n.source, url: n.url }));
+      if (items.length && ru.every((x, i) => x === items[i].headline)) res.errors.push("перевод: " + (translateState.errors[0] || "недоступен"));
     }));
   }
   if (want.has("hds")) {

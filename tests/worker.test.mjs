@@ -119,6 +119,22 @@ await test("короткие адреса /api/history/AAPL/1m и ошибки �
   assert.equal(q.json.quotes.BTC.px, 81800.5);
 });
 
+await test("запасные источники: крипта без Binance, перевод без Google", async () => {
+  flags.failBinance = true; flags.failGoogle = true;
+  try {
+    const q = await api("/api/quote?s=BTC");
+    assert.equal(q.json.quotes.BTC.px, 81700);
+    assert.equal(q.json.quotes.BTC.src, "cryptocompare");
+    clearMemo();
+    const h = await api("/api/history?s=BTC&r=6m");
+    assert.equal(h.json.ok, true);
+    assert.equal(h.json.src, "cryptocompare");
+    clearMemo();
+    const c = await api("/api/company?s=AAPL&parts=cn");
+    assert.equal(c.json.cn[0].h, "Apple превзошла оценки");
+  } finally { flags.failBinance = false; flags.failGoogle = false; }
+});
+
 await test("/api/company: компания вне списка SEC и Мосбиржа", async () => {
   const r = await api("/api/company?s=ZZZZ&parts=des");
   assert.equal(r.json.ok, false);

@@ -7,7 +7,7 @@ export const TOKEN = "123:TEST";
 export const OWNER = "111";
 export const sent = [];          // всё, что ушло в Telegram
 export const calls = [];         // все внешние запросы
-export const flags = { failYahoo: false };
+export const flags = { failYahoo: false, failBinance: false, failGoogle: false };
 
 // ------------------------------------------------------------------ данные
 const now = Date.now();
@@ -86,6 +86,16 @@ export function route(url, init) {
     if (p.endsWith("/peers")) return [s, "DELL", "HPQ"];
     if (p.endsWith("/insider-transactions")) return { data: [{ name: "Cook Tim", change: -2399, share: 39593, transactionDate: "2026-10-06",
       transactionCode: "S", transactionPrice: 332.01, isDerivative: false }, { name: "Grant", change: 10, transactionCode: "A", isDerivative: false }] };
+  }
+  if (u.host === "translate.googleapis.com" && flags.failGoogle) return { __status: 429 };
+  if (u.host === "api.mymemory.translated.net") {
+    const q = u.searchParams.get("q");
+    return { responseStatus: 200, responseData: { translatedText: q === "Apple beats estimates" ? "Apple превзошла оценки" : "перевод: " + q } };
+  }
+  if ((u.host === "data-api.binance.vision" || u.host.endsWith("binance.com")) && flags.failBinance) return { __status: 451 };
+  if (u.host === "min-api.cryptocompare.com") {
+    if (p.includes("pricemultifull")) return { RAW: { BTC: { USD: { PRICE: 81700, CHANGEPCT24HOUR: -2.1, HIGH24HOUR: 84000, LOW24HOUR: 80000 } } } };
+    if (p.includes("histoday")) return { Data: { Data: closes.map((c, i) => ({ time: 1700000000 + i * 86400, open: c, high: c + 1, low: c - 1, close: c, volumeto: 5 })) } };
   }
   if (u.host === "translate.googleapis.com") {
     const q = u.searchParams.get("q");
