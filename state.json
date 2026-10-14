@@ -770,7 +770,13 @@
   "7570d73b33c935e9": "2026-10-14T09:00:02.813504+00:00",
   "27cb372688de3df6": "2026-10-14T09:00:02.813504+00:00",
   "7d85365bea04fda5": "2026-10-14T09:00:02.813504+00:00",
-  "eb0df139f88147a9": "2026-10-14T09:10:02.790552+00:00"
+  "eb0df139f88147a9": "2026-10-14T09:10:02.790552+00:00",
+  "4b7af1d4a1539ce1": "2026-10-14T09:20:02.840024+00:00",
+  "68f586d15afcd3ff": "2026-10-14T09:20:02.840024+00:00",
+  "bafecdf5f01e0c35": "2026-10-14T09:20:02.840024+00:00",
+  "d8aef8b76d0f6258": "2026-10-14T09:20:02.840024+00:00",
+  "4745790aa136225d": "2026-10-14T09:20:02.840024+00:00",
+  "fcc6b91ecbe8ad2c": "2026-10-14T09:20:02.840024+00:00"
  },
  "recent": [
   {
@@ -7896,6 +7902,59 @@
    ],
    "score": 2,
    "ts": "2026-10-14T09:10:02.790552+00:00"
+  },
+  {
+   "title": "Spain's inflation rises at fastest pace in more than three years",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPTDhaREIyYllJX0htTGZZa1ByMUJOTTFqcTdOMnNoWkRHMS1IWGZ5d29hUUFsd2xHMHpRZy1tQnZ5czZrcHhGVTNBeGZtWXVuQ3dEVDBjU2ctMzdIRkRIMzFSU3NzWVljRHBhRk0wZlJ4dEJ5UUdMdTVLMHl5UWpVSU56eW9kQ1lFSEh6QlE1TGJnSjVGcFVuS2trMjlXMEtsMFpzRQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-14T09:20:02.840024+00:00",
+   "title_ru": "Инфляция в Испании растет самыми быстрыми темпами за последние три года",
+   "tags": [
+    "инфляция"
+   ]
+  },
+  {
+   "title": "Global Leaders on Redrawing the Supply Chain Map",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-14/global-leaders-on-redrawing-the-supply-chain-map-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-14T09:20:02.840024+00:00",
+   "title_ru": "Мировые лидеры перекраивают карту цепочки поставок",
+   "lead": "Beto Abreu, CEO, Suzano; T.H. Helene Budliger Artieda, State Secretary, Swiss Confederation; T.H.",
+   "lead_ru": "Бето Абреу, генеральный директор Suzano; Т.Х. Элен Будлигер Артьеда, государственный секретарь Швейцарской Конфедерации; Т.Х."
+  },
+  {
+   "title": "‘I earn $110,000 a year’: I lost my home in the Great Recession. I’m renting in my 50s. Why is that judged as failure?",
+   "link": "https://www.marketwatch.com/story/i-earn-110-000-a-year-i-lost-my-home-in-the-great-recession-im-renting-in-my-50s-why-is-that-judged-as-failure-d1371d67?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 3,
+   "ts": "2026-10-14T09:20:02.840024+00:00",
+   "title_ru": "«Я зарабатываю 110 000 долларов в год»: я потерял дом во время Великой рецессии. Снимаю в 50 лет. Почему это считается провалом?",
+   "lead": "“I lost my job and eventually my home — and it’s still hard.”",
+   "lead_ru": "«Я потерял работу и, в конечном итоге, дом — и это все еще тяжело».",
+   "tags": [
+    "ВВП"
+   ]
+  },
+  {
+   "title": "Голикова: около 12 млн россиян нужны рынку труда до 2032 года",
+   "link": "https://www.kommersant.ru/doc/9026217",
+   "sources": [
+    "Коммерсантъ"
+   ],
+   "score": 3,
+   "ts": "2026-10-14T09:20:02.840024+00:00",
+   "lead": "12 млн россиян нужно привлечь в российскую экономику как на новые рабочие места, так и на замену тем, кто выходит на пенсию. Об этом заявила вице-премьер Татьяна Голикова.",
+   "tags": [
+    "Россия"
+   ]
   }
  ],
  "last_digest": "2026-10-13",
@@ -9825,7 +9884,7 @@
    "house": true,
    "senate": true
   },
-  "checked": "2026-10-14T08:20:02.795638+00:00",
+  "checked": "2026-10-14T09:20:02.840024+00:00",
   "sec_seen": [],
   "errors": {
    "sec": "HTTPError: HTTP Error 403: Forbidden"
