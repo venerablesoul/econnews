@@ -878,7 +878,9 @@
   "c503e47ed9effe56": "2026-10-14T12:50:32.246448+00:00",
   "22f9f3f554621fd3": "2026-10-14T12:50:32.246448+00:00",
   "2358711423a7ec80": "2026-10-14T13:00:32.394829+00:00",
-  "f4a0d44d0469cfc9": "2026-10-14T13:00:32.394829+00:00"
+  "f4a0d44d0469cfc9": "2026-10-14T13:00:32.394829+00:00",
+  "0dbe3098bfcd61d6": "2026-10-14T13:10:32.291725+00:00",
+  "a56a3b9da4f152f0": "2026-10-14T13:10:32.291725+00:00"
  },
  "recent": [
   {
@@ -9055,6 +9057,21 @@
     "ФРС",
     "ставки",
     "инфляция"
+   ]
+  },
+  {
+   "title": "US Consumer Prices Rise at Fastest Pace in Five Months",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-14/us-consumer-prices-rise-at-fastest-pace-in-five-months-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-14T13:10:32.291725+00:00",
+   "title_ru": "Потребительские цены в США растут самыми быстрыми темпами за пять месяцев",
+   "lead": "The US consumer price index rose 0.6% in September from a month earlier, and 3.7% on an annual basis, according to the Bureau of Labor Statistics. The data shows gas prices rose by 9.1%.",
+   "lead_ru": "Индекс потребительских цен в США вырос на 0,6% в сентябре по сравнению с месяцем ранее и на 3,7% в годовом исчислении, сообщает Бюро статистики труда. Данные показывают, что цены на газ выросли на 9,1%.",
+   "tags": [
+    "газ"
    ]
   }
  ],
