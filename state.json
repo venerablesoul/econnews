@@ -748,7 +748,12 @@
   "e7360aa593fb2171": "2026-10-14T07:50:02.793145+00:00",
   "e4d831643a9cb30d": "2026-10-14T08:00:02.830601+00:00",
   "240bbe65de77a073": "2026-10-14T08:00:02.830601+00:00",
-  "db2d77061f3e226e": "2026-10-14T08:00:02.830601+00:00"
+  "db2d77061f3e226e": "2026-10-14T08:00:02.830601+00:00",
+  "041d359d1687e4dd": "2026-10-14T08:10:02.828486+00:00",
+  "961f4a39f174176f": "2026-10-14T08:10:02.828486+00:00",
+  "81e2cc6a2a3ece95": "2026-10-14T08:10:02.828486+00:00",
+  "6293eaac79618877": "2026-10-14T08:10:02.828486+00:00",
+  "e5cd4c0ff54ab3f0": "2026-10-14T08:10:02.828486+00:00"
  },
  "recent": [
   {
@@ -7698,6 +7703,39 @@
    "title_ru": "Эквинор обнаружил нефть в Северном море",
    "tags": [
     "нефть"
+   ]
+  },
+  {
+   "title": "Frank Elderson: Ensuring resilience in the face of uncertainty",
+   "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261014~e4ca33588e.en.html",
+   "sources": [
+    "ЕЦБ"
+   ],
+   "score": 4,
+   "ts": "2026-10-14T08:10:02.828486+00:00",
+   "title_ru": "Фрэнк Элдерсон: Обеспечение устойчивости перед лицом неопределенности"
+  },
+  {
+   "title": "UK finance minister Healey set to pay for budget measures without more borrowing, FT reports",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNcGNGQTUxYkpKWm42SjFpMGpyOFhzSFBtOGxXWWxrTjU5ZTNDbUp2WVI5ZTI1S3NnUHBCNnNEQl9MV0NEdmZ5ZUVQYUZpR0Y3Nm5WanFnVUlmYWMxMWdfYmFfdlhkTkFVS1N6SnRrOGZrN2QzQXl2QjdiVmdFdUw0RE1hYU5jTm5YdUg1MGlpUEd6VmpzaTRsT0J4eVhfY1Q2c3NFcG1nd0l0QUJMWnpVMFFORDYzUEpQMmcyQWR1Vk43ajh0dHRndg?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-14T08:10:02.828486+00:00",
+   "title_ru": "Министр финансов Великобритании Хили намерен оплатить бюджетные меры без дополнительных заимствований, сообщает FT"
+  },
+  {
+   "title": "Экспорт китайских товаров достиг максимума за семь месяцев // Китайский экспорт вырос на максимальные за семь месяцев 36,3%",
+   "link": "https://www.kommersant.ru/doc/9026122",
+   "sources": [
+    "Коммерсантъ"
+   ],
+   "score": 3,
+   "ts": "2026-10-14T08:10:02.828486+00:00",
+   "lead": "Объем экспорта китайских товаров в сентябре вырос на максимальные за семь месяцев 36,3% и достиг рекорда в $447,18 млрд. Об этом пишет «Интерфакс» со ссылкой на Главное таможенное управление КНР.",
+   "tags": [
+    "Китай"
    ]
   }
  ],
