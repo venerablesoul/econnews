@@ -902,7 +902,9 @@
   "69da5cababa3f1de": "2026-10-14T14:00:32.425055+00:00",
   "ffc3355bbc3a4a96": "2026-10-14T14:00:32.425055+00:00",
   "8f4a226bcfaf5588": "2026-10-14T14:00:32.425055+00:00",
-  "abefdccd674e377e": "2026-10-14T14:00:32.425055+00:00"
+  "abefdccd674e377e": "2026-10-14T14:00:32.425055+00:00",
+  "2a29eec3aa121f2d": "2026-10-14T14:10:32.301300+00:00",
+  "2258dd59ae9029b6": "2026-10-14T14:10:32.301300+00:00"
  },
  "recent": [
   {
@@ -9310,6 +9312,26 @@
    "tags": [
     "ФРС"
    ]
+  },
+  {
+   "title": "Real Earnings News Release",
+   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9PalkwSkgtblBpQVZvd3VBUDBoc1Z2MWR0d3BMUm5uUzVLWmdmNjNRbWtJSmwtMVJTdmh0VmU1UEhudDVwa2I5cGRWUTlLWEJvaU8zLU5Kd3E4dmhiQWNqa19CdUJTaHRmNS1oUFRB?oc=5",
+   "sources": [
+    "Статистика труда США (BLS)"
+   ],
+   "score": 5,
+   "ts": "2026-10-14T14:10:32.301300+00:00",
+   "title_ru": "Пресс-релиз о реальных доходах"
+  },
+  {
+   "title": "Venezuela's top economic adviser says aims to publish debt sustainability analysis 'very soon'",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPZ1lFMnZBTXJ2UC1VZG96Mk1UMHZmS2JjWXBwZDFBME9HRC1tX0U2RC1wR2h2RGgzdlhYU3hwaXhnTVctclY5dDVPYU9NeWhCalgxWHNscEtmTW83a0IxSmZEdkdnOEk3UkstUVBzcWJGc1JmaGp3NGEtczRzYXJJWG1fY0NOQ25tSjFtM0tzY2xBY200Qlg2UFFvRk13NTdBSDZWTDZEeEhjbHlDdHA2VXVUUkNnNVFZbVFsenNMVldLRGJoMkYyaA?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-14T14:10:32.301300+00:00",
+   "title_ru": "Главный экономический советник Венесуэлы заявил, что намерен опубликовать анализ устойчивости долга «очень скоро»"
   }
  ],
  "last_digest": "2026-10-13",
@@ -9324,7 +9346,7 @@
   "ЦБ РФ": 0,
   "Статистика труда США (BLS)": 0,
   "CNBC": 0,
-  "ФРС США": 0,
+  "ФРС США": 1,
   "Bloomberg": 0,
   "Reuters": 0,
   "MarketWatch": 0,
