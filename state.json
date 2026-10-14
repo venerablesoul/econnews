@@ -970,7 +970,10 @@
   "5f1ea465b64b48f6": "2026-10-14T17:30:32.314784+00:00",
   "045d672da6df0ceb": "2026-10-14T17:40:32.304431+00:00",
   "faa6346566b55752": "2026-10-14T17:40:32.304431+00:00",
-  "f0a84842c198ac1d": "2026-10-14T17:40:32.304431+00:00"
+  "f0a84842c198ac1d": "2026-10-14T17:40:32.304431+00:00",
+  "b20a095ce78bf965": "2026-10-14T17:50:32.306921+00:00",
+  "c058ae9af61a4b31": "2026-10-14T17:50:32.306921+00:00",
+  "5fd008f67f31ba3a": "2026-10-14T17:50:32.306921+00:00"
  },
  "recent": [
   {
@@ -9908,6 +9911,38 @@
    "tags": [
     "ставки"
    ]
+  },
+  {
+   "title": "Citi turns hawkish on Fed after inflation surprise, expects December rate hike",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQaTlWWnFXTFVrM3lHcHBOZF9YMzFUQkx5WmJXNE5ieXJoY29tVkZKZGRGT3JoX3NBNGNPSERqeW5CTnlDdWh0SWZDZ3gtcGQyOTBFSW90dmgwOEJTdV85SVJxV2dQUmtETDc1RlR4RFNXSzRDZTY2ZFNQTk4tajdmNWZST0FRd1BmaG5kSjhrbWdnVHY2MFNrcFNiaHF6aU1BOEZCSkNCOFZHTGV4TFNmS2czNWg1RHZnOHZN?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 9,
+   "ts": "2026-10-14T17:50:32.306921+00:00",
+   "title_ru": "Citi становится ястребиным в отношении ФРС после сюрприза по инфляции и ожидает повышения ставок в декабре",
+   "tags": [
+    "ФРС",
+    "ставки",
+    "инфляция"
+   ]
+  },
+  {
+   "title": "Fed’s Warsh to Get Final Word in Bangkok as Inflation Roars Back",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-14/fed-s-warsh-to-get-final-word-in-bangkok-as-inflation-roars-back",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 7,
+   "ts": "2026-10-14T17:50:32.306921+00:00",
+   "title_ru": "Уорш ФРС выскажет последнее слово в Бангкоке, поскольку инфляция возвращается",
+   "lead": "September’s hot inflation data lit up expectations that the Federal Reserve may raise interest rates this month, a prospect that appeared unlikely after policymakers in recent weeks signaled they had time to wait.",
+   "lead_ru": "Горячие сентябрьские данные по инфляции усилили ожидания того, что Федеральная резервная система может повысить процентные ставки в этом месяце, но эта перспектива оказалась маловероятной после того, как политики в последние недели дали понять, что у них есть время подождать.",
+   "tags": [
+    "ФРС",
+    "ставки",
+    "инфляция"
+   ]
   }
  ],
  "last_digest": "2026-10-13",
@@ -9922,7 +9957,7 @@
   "ЦБ РФ": 0,
   "Статистика труда США (BLS)": 0,
   "CNBC": 0,
-  "ФРС США": 0,
+  "ФРС США": 1,
   "Bloomberg": 0,
   "Reuters": 0,
   "MarketWatch": 0,
