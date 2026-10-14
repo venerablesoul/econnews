@@ -776,7 +776,12 @@
   "bafecdf5f01e0c35": "2026-10-14T09:20:02.840024+00:00",
   "d8aef8b76d0f6258": "2026-10-14T09:20:02.840024+00:00",
   "4745790aa136225d": "2026-10-14T09:20:02.840024+00:00",
-  "fcc6b91ecbe8ad2c": "2026-10-14T09:20:02.840024+00:00"
+  "fcc6b91ecbe8ad2c": "2026-10-14T09:20:02.840024+00:00",
+  "0f2c9c70dc75946e": "2026-10-14T09:30:02.819775+00:00",
+  "5cfdebc7435a3359": "2026-10-14T09:30:02.819775+00:00",
+  "d01ef874d2fcc4f2": "2026-10-14T09:30:02.819775+00:00",
+  "1ddedf3a7ff85cf7": "2026-10-14T09:30:02.819775+00:00",
+  "83fc65b23e1aa347": "2026-10-14T09:30:02.819775+00:00"
  },
  "recent": [
   {
@@ -7955,6 +7960,42 @@
    "tags": [
     "Россия"
    ]
+  },
+  {
+   "title": "IMF Managing Director’s Briefing on the Global Policy Agenda Press Briefing",
+   "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOeFhQT0xVblZQeUg3NUViamxGem5HMldFUGNsc1pqTV9wOTR1WDRpQkRqSDg1ODNkdnJtckNoUjlOQjlPUnpmWjIwSnI0UW9JSU9yM1gyVTFaVEJhQXJxczNrVWFKN2IteWNnNXNGN3lwR2hBLVpLZm5PdjdfOGREaEQ4NnYxVmVvQW0wYUJYdi12dnF0ODBid19fSTJMcE9pMzhveFdBbFh5aThyQmY4b0VPcDdlNUVSTEdZX0ROWE1pd2FOQXhkVGJ4WnhyanNhaDhjNWpDUzgzOWpGOUVjX3ZB?oc=5",
+   "sources": [
+    "МВФ"
+   ],
+   "score": 5,
+   "ts": "2026-10-14T09:30:02.819775+00:00",
+   "title_ru": "Брифинг директора-распорядителя МВФ о глобальной политической повестке дня Пресс-брифинг"
+  },
+  {
+   "title": "Kotak Sees $5 Billion Inflows in India Private Debt in Two Years",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-14/kotak-sees-5-billion-inflows-in-india-private-debt-in-two-years",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-14T09:30:02.819775+00:00",
+   "title_ru": "Котак ожидает притока 5 миллиардов долларов в частный долг Индии за два года",
+   "lead": "Global and domestic investors could invest as much as $5 billion into India’s private credit market over the next two years, according to Kotak Alternate Asset Managers Ltd., which manages over $22 billion in assets.",
+   "lead_ru": "По данным компании Kotak Alternate Asset Managers Ltd., которая управляет активами на сумму более 22 миллиардов долларов, глобальные и внутренние инвесторы могут инвестировать до 5 миллиардов долларов в частный кредитный рынок Индии в течение следующих двух лет."
+  },
+  {
+   "title": "China solar giants shed another 40,000 jobs last year as overcapacity persists",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQNThmWTFtdHAtZG1oNzJxbzdqc1R6bjFiTmlmZF9Ha2MxRlVBZkoxOWt4N0dFU3h4dkFJWmNGVzFpQVR3QllvSDRfc2F1MGpxYUZ4LW1NSkMwcmREVS1mYVNCR3VlQXBzNWg2ajRGQ2l6OG5vYS1QWmxvTHVuU3ZkX1JvVTI2QzJQZXpvQ3JvQ2F3QVFKSGVuTlNGeEJtS3FDSWtRQ0lIbW5uSUEwdlhBbkhRZmtvQ0dUMWg3cktZNWM3Y0VZNTdHak8xVmVGdw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-14T09:30:02.819775+00:00",
+   "title_ru": "Китайские солнечные гиганты в прошлом году потеряли еще 40 000 рабочих мест из-за сохраняющегося избыточного потенциала.",
+   "tags": [
+    "Китай",
+    "занятость"
+   ]
   }
  ],
  "last_digest": "2026-10-13",
@@ -7983,7 +8024,7 @@
   "2026-10-14-09"
  ],
  "calendar": {
-  "fetched": "2026-10-14T03:29:37.683559+00:00",
+  "fetched": "2026-10-14T09:30:02.819775+00:00",
   "events": [
    {
     "title": "Bank Holiday",
@@ -8266,9 +8307,17 @@
     "previous": ""
    },
    {
+    "title": "ECB President Lagarde Speaks",
+    "country": "EUR",
+    "ts": "2026-10-14T08:30:00+00:00",
+    "impact": "Medium",
+    "forecast": "",
+    "previous": ""
+   },
+   {
     "title": "M2 Money Supply y/y",
     "country": "CNY",
-    "ts": "2026-10-14T08:03:00+00:00",
+    "ts": "2026-10-14T09:03:00+00:00",
     "impact": "Low",
     "forecast": "7.4%",
     "previous": "7.5%"
@@ -8276,18 +8325,10 @@
    {
     "title": "New Loans",
     "country": "CNY",
-    "ts": "2026-10-14T08:03:00+00:00",
+    "ts": "2026-10-14T09:03:00+00:00",
     "impact": "Low",
     "forecast": "1025B",
     "previous": "60B"
-   },
-   {
-    "title": "ECB President Lagarde Speaks",
-    "country": "EUR",
-    "ts": "2026-10-14T08:30:00+00:00",
-    "impact": "Medium",
-    "forecast": "",
-    "previous": ""
    },
    {
     "title": "German 30-y Bond Auction",
@@ -8790,7 +8831,7 @@
     "country": "CAD",
     "ts": "2026-10-16T12:30:00+00:00",
     "impact": "Low",
-    "forecast": "",
+    "forecast": "23.59B",
     "previous": "20.65B"
    },
    {
