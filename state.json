@@ -1000,7 +1000,9 @@
   "78ef0d2d572059f1": "2026-10-14T20:00:58.724768+00:00",
   "3b3a4fd7623405d4": "2026-10-14T20:00:58.724768+00:00",
   "937bdf9915684977": "2026-10-14T20:00:58.724768+00:00",
-  "43d0bfd47c42cbcf": "2026-10-14T20:10:58.716332+00:00"
+  "43d0bfd47c42cbcf": "2026-10-14T20:10:58.716332+00:00",
+  "df400e09d3d2da6d": "2026-10-14T20:20:58.780450+00:00",
+  "1f1565cedc1aff92": "2026-10-14T20:20:58.780450+00:00"
  },
  "recent": [
   {
@@ -10204,6 +10206,29 @@
    "score": 4,
    "ts": "2026-10-14T20:10:58.716332+00:00",
    "title_ru": "Перспективы мировой экономики: основные моменты"
+  },
+  {
+   "title": "IMF Executive Board Completes the Fourth Review under the Extended Credit Facility Arrangement and First Review under the Resilience and Sustainability Facility Arrangement for Liberia",
+   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQTlh0ME9tWUJRVWVfelk5enFwU19KS3RKMjR1RTVSVWZKMVVqMnJkSHhNUk91NVNSZlBWZUNvQ1doRmxpUVhnQUZrVkVXR29tOWI0Tk5VWGt6ZEhrY0pzcGNUNnJRU3l0dlZRZnRWQnE5TkdWRFVqcVhCZWxhcUdOMWJ4dTdUTHdPSEFIOXNyN1NJckM2bUZrUERrckJKQ1EtNXd4NjRsZ083NEZqR21leEdFNm0ydFNackZObTZvQkZDLUZ2eUx3UjUtSmdBb3c?oc=5",
+   "sources": [
+    "МВФ"
+   ],
+   "score": 5,
+   "ts": "2026-10-14T20:20:58.780450+00:00",
+   "title_ru": "Исполнительный совет МВФ завершает четвертый обзор в рамках механизма расширенного кредитного механизма и первый обзор в рамках механизма обеспечения устойчивости и устойчивости для Либерии"
+  },
+  {
+   "title": "Anduril in Talks to Sell Insider Shares at Roughly $90 Billion Valuation",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOb3N3c2s5T2p5U2FJWHh2Yy1vMUZjWWVsX19jZG0yVVFaeTIzRFJWRldScEpCcU9Lb1FMMWdNWXRkeEdvRFlZS01IRVE3a2JnWkgteXdzRmxIRGVaYXY1N3lyVE5BczhFUUhJZUpTMC04R2JKWUs0UXpJdW03Q2RiSXowdWt4cG00YnM2TW1aWUlLUTR6a0NmZHVvbVBRVi0yTW9YZV9VQlVQMldvUlh2UFVoSmlXNm9MWFhZaDVPbw?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-14T20:20:58.780450+00:00",
+   "title_ru": "Андурил ведет переговоры о продаже инсайдерских акций при оценке примерно в 90 миллиардов долларов",
+   "tags": [
+    "рынки"
+   ]
   }
  ],
  "last_digest": "2026-10-14",
@@ -12261,7 +12286,7 @@
    "house": true,
    "senate": true
   },
-  "checked": "2026-10-14T19:10:58.725679+00:00",
+  "checked": "2026-10-14T20:20:58.780450+00:00",
   "sec_seen": [],
   "errors": {
    "sec": "HTTPError: HTTP Error 403: Forbidden"
