@@ -753,7 +753,11 @@
   "961f4a39f174176f": "2026-10-14T08:10:02.828486+00:00",
   "81e2cc6a2a3ece95": "2026-10-14T08:10:02.828486+00:00",
   "6293eaac79618877": "2026-10-14T08:10:02.828486+00:00",
-  "e5cd4c0ff54ab3f0": "2026-10-14T08:10:02.828486+00:00"
+  "e5cd4c0ff54ab3f0": "2026-10-14T08:10:02.828486+00:00",
+  "5b58011362c35a70": "2026-10-14T08:20:02.795638+00:00",
+  "992c98435970616e": "2026-10-14T08:20:02.795638+00:00",
+  "8397d482e953f8c4": "2026-10-14T08:20:02.795638+00:00",
+  "cdcfdccb98321a00": "2026-10-14T08:20:02.795638+00:00"
  },
  "recent": [
   {
@@ -7737,6 +7741,43 @@
    "tags": [
     "Китай"
    ]
+  },
+  {
+   "title": "Press Briefing Transcript: Global Policy Agenda, Annual Meetings 2026",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQeWlOMVZkTXFneS11NU5JRmVDeTdWSE9mZk1HbWozc2R2d3RiRUwwMTN3MkNOYmQ0cVpIZ3JSbmlfZjVzQmxhV0ctMFdEZzlZcFdwTHBHZm5iM0Y0NXlZQWNMMHlxT2lEOHkxR1FIeWl0ZE0taHZKc2FHYmNWd0l6ZldWR0ZQdlJxemFCLW4ybUNTUWxmVHpVcUpOdWpfMjVPZXhPbUpsUFkzbTkwb2tJSkNyZ0g0Yi0zei1ZZjVSZl9TUQ?oc=5",
+   "sources": [
+    "МВФ"
+   ],
+   "score": 4,
+   "ts": "2026-10-14T08:20:02.795638+00:00",
+   "title_ru": "Стенограмма пресс-брифинга: Глобальная политическая повестка дня, ежегодные встречи 2026 г."
+  },
+  {
+   "title": "Italy Industry Lobby Says Energy Shock Could Wipe Out Growth",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-14/italy-industry-lobby-says-energy-shock-could-wipe-out-growth",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-14T08:20:02.795638+00:00",
+   "title_ru": "Промышленное лобби Италии заявляет, что энергетический шок может свести на нет экономический рост",
+   "lead": "A worsening energy shock could wipe out Italy’s economic growth next year, with high power prices and European Union carbon costs hurting industrial competitiveness, according to the country’s largest business lobby.",
+   "lead_ru": "По мнению крупнейшего бизнес-лобби страны, усиление энергетического шока может свести на нет экономический рост Италии в следующем году, поскольку высокие цены на электроэнергию и затраты на выбросы углерода в Европейском Союзе нанесут ущерб конкурентоспособности промышленности."
+  },
+  {
+   "title": "'I applied for 200 jobs' - How 'spray and pray' AI job applications can backfire",
+   "link": "https://www.bbc.co.uk/news/articles/c623dnkn8pkyo?at_medium=RSS&at_campaign=rss",
+   "sources": [
+    "BBC"
+   ],
+   "score": 3,
+   "ts": "2026-10-14T08:20:02.795638+00:00",
+   "title_ru": "«Я подал заявку на 200 вакансий»: как «распылять и молиться» заявления о приеме на работу с помощью ИИ могут иметь неприятные последствия",
+   "lead": "Graduates are increasingly using AI to misrepresent themselves in job applications, research suggests. But some say their peer group has no choice.",
+   "lead_ru": "Исследования показывают, что выпускники все чаще используют ИИ, чтобы представить себя в ложном свете при приеме на работу. Но некоторые говорят, что у их сверстников нет выбора.",
+   "tags": [
+    "занятость"
+   ]
   }
  ],
  "last_digest": "2026-10-13",
@@ -9666,7 +9707,7 @@
    "house": true,
    "senate": true
   },
-  "checked": "2026-10-14T07:10:03.071206+00:00",
+  "checked": "2026-10-14T08:20:02.795638+00:00",
   "sec_seen": [],
   "errors": {
    "sec": "HTTPError: HTTP Error 403: Forbidden"
