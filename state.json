@@ -989,7 +989,9 @@
   "8dd2a63fc948dcf2": "2026-10-14T22:10:58.648185+00:00",
   "b4f91b8e5204612f": "2026-10-14T22:20:58.654154+00:00",
   "df1d7c329aa6c88a": "2026-10-14T22:20:58.654154+00:00",
-  "1a758cc6e0166c56": "2026-10-14T22:20:58.654154+00:00"
+  "1a758cc6e0166c56": "2026-10-14T22:20:58.654154+00:00",
+  "44feebe7e71bd116": "2026-10-14T22:30:58.786932+00:00",
+  "1f99fbf0f0ee3252": "2026-10-14T22:30:58.786932+00:00"
  },
  "recent": [
   {
@@ -10125,6 +10127,15 @@
    ],
    "score": 2,
    "ts": "2026-10-14T22:20:58.654154+00:00"
+  },
+  {
+   "title": "Big banks see risks in financing the AI boom, but are happy to keep writing the checks",
+   "link": "https://www.marketwatch.com/story/big-banks-see-risks-in-financing-the-ai-boom-but-are-happy-to-keep-writing-the-checks-e459a206?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-14T22:30:58.786932+00:00"
   }
  ],
  "last_digest": "2026-10-14",
@@ -12182,7 +12193,7 @@
    "house": true,
    "senate": true
   },
-  "checked": "2026-10-14T21:30:58.671147+00:00",
+  "checked": "2026-10-14T22:30:58.786932+00:00",
   "sec_seen": [],
   "errors": {
    "sec": "HTTPError: HTTP Error 403: Forbidden"
