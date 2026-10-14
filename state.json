@@ -823,7 +823,10 @@
   "a6229806b32d82df": "2026-10-14T11:20:02.822616+00:00",
   "1fe185a77a504685": "2026-10-14T11:20:02.822616+00:00",
   "c8c8412cf5393083": "2026-10-14T11:20:02.822616+00:00",
-  "6312f3ee50192024": "2026-10-14T11:20:02.822616+00:00"
+  "6312f3ee50192024": "2026-10-14T11:20:02.822616+00:00",
+  "66d43c4755d09712": "2026-10-14T11:30:02.866235+00:00",
+  "6ace1b68ed1d42fc": "2026-10-14T11:30:02.866235+00:00",
+  "2797deb5dc3703fb": "2026-10-14T11:30:02.866235+00:00"
  },
  "recent": [
   {
@@ -8465,6 +8468,47 @@
    ],
    "score": 2,
    "ts": "2026-10-14T11:20:02.822616+00:00"
+  },
+  {
+   "title": "Rolex and Gold Were for US and Not Trump, Swiss Trade Chief Says",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPNTdQXzEtVG1qLXpqNlFEUXE0aGxIQWVaZ09aR043QnlCRF9WMm1HUUl1WXFDN3QwSDBEaGY2UU5nX3JBU051elJIVlR4ay0xZkYxV01CM3U4dVd3U2pkWlBucG1VVzUwcmdRQnlpMXBNY244eVNXbDJTRHpfcnBTNkxHNW9WbXdfV3ZqRmE5U1JTVGM4bWFrVnk5RExCby05TEdJNFVmYUlOZnRTcTBLd29XNEk?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-14T11:30:02.866235+00:00",
+   "title_ru": "Rolex и золото были для США, а не для Трампа, заявил глава торгового управления Швейцарии",
+   "tags": [
+    "золото"
+   ]
+  },
+  {
+   "title": "Saudi stocks slip after attack on Aramco building; Gulf markets mixed",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNLXZwM3pfUE0yMVJsTzRjTkJmWFIwclNIamJ1Y2xFdmxWV2lpVHZWRDNqdkVLVGRvSV9rWEZXX0Q3cndEWXJNNnFWeVlYWkhzbFRjV19CSlV5M2phQVJSa2pWdXNob0RsSURPb0k2bVh2ZXJnMEJPeUdXYnhDV2FNLVN4QVdLVXpIWjJCTU5BYkVaMTlkQWlzeDI5bW9CU09sRUtsNlNtbjV6UklveDU4ZmNHcGQxT1VLb3BJ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-14T11:30:02.866235+00:00",
+   "title_ru": "Акции Саудовской Аравии упали после нападения на здание Aramco; Рынки Персидского залива смешались",
+   "tags": [
+    "рынки"
+   ]
+  },
+  {
+   "title": "Bank of America Results Hit by Weaker Trading, $1.2 Billion Penalty",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-14/bank-of-america-results-hit-by-weaker-trading-penalty-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-14T11:30:02.866235+00:00",
+   "title_ru": "Результаты Bank of America пострадали из-за более слабой торговли, штраф в размере 1,2 миллиарда долларов",
+   "lead": "Bank of America’s stock and fixed-income traders missed estimates in the third quarter, with bond-trading revenue falling 17% to $2.55 billion and equity trading down 10% to $2.51 billion.",
+   "lead_ru": "Трейдеры Bank of America по акциям и инструментам с фиксированной доходностью в третьем квартале не оправдали оценок: выручка от торговли облигациями упала на 17% до $2,55 млрд, а торговля акциями снизилась на 10% до $2,51 млрд.",
+   "tags": [
+    "облигации"
+   ]
   }
  ],
  "last_digest": "2026-10-13",
@@ -9385,7 +9429,12 @@
    }
   ]
  },
- "cal_reminded": [],
+ "cal_reminded": [
+  "USD|2026-10-14T12:30:00+00:00|Core CPI m/m",
+  "USD|2026-10-14T12:30:00+00:00|Core CPI y/y",
+  "USD|2026-10-14T12:30:00+00:00|CPI m/m",
+  "USD|2026-10-14T12:30:00+00:00|CPI y/y"
+ ],
  "last_morning": "2026-10-14",
  "all_down_alerted": false,
  "trades": {
