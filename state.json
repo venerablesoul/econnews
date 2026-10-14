@@ -956,7 +956,12 @@
   "1e00c6fc540eb92c": "2026-10-14T16:50:32.307685+00:00",
   "dac09cfb2e2fba79": "2026-10-14T16:50:32.307685+00:00",
   "3b81581eaf02a4cf": "2026-10-14T16:50:32.307685+00:00",
-  "cfa09962906efcdf": "2026-10-14T16:50:32.307685+00:00"
+  "cfa09962906efcdf": "2026-10-14T16:50:32.307685+00:00",
+  "a409f8ebdb3f8eb3": "2026-10-14T17:00:32.413656+00:00",
+  "de5b2fb1d93d6874": "2026-10-14T17:00:32.413656+00:00",
+  "481e35200bed802a": "2026-10-14T17:00:32.413656+00:00",
+  "82cfc09aabf27919": "2026-10-14T17:00:32.413656+00:00",
+  "aca08832b6d85843": "2026-10-14T17:00:32.413656+00:00"
  },
  "recent": [
   {
@@ -9748,6 +9753,49 @@
    "score": 3,
    "ts": "2026-10-14T16:50:32.307685+00:00",
    "title_ru": "Поскольку банки Уолл-стрит финансируют и внедряют ИИ, риски растут на обоих фронтах."
+  },
+  {
+   "title": "How high inflation became a 'fact of life' in the U.S.",
+   "link": "https://www.cnbc.com/2026/10/14/high-inflation-fed-expectations.html",
+   "sources": [
+    "CNBC"
+   ],
+   "score": 4,
+   "ts": "2026-10-14T17:00:32.413656+00:00",
+   "title_ru": "Как высокая инфляция стала «фактом жизни» в США",
+   "lead": "U.S. inflation has stayed elevated for years, raising concern at the Federal Reserve that consumers may come to expect stubbornly high prices.",
+   "lead_ru": "Инфляция в США остается высокой в ​​течение многих лет, что вызывает обеспокоенность Федеральной резервной системы по поводу того, что потребители могут ожидать устойчиво высоких цен.",
+   "tags": [
+    "ФРС",
+    "инфляция"
+   ]
+  },
+  {
+   "title": "US Private Credit Stress Masked by Growing PIK Use, Moody’s Says",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-14/us-private-credit-stress-masked-by-growing-pik-use-moody-s-says",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-14T17:00:32.413656+00:00",
+   "title_ru": "По мнению Moody’s, стресс в сфере частного кредитования в США маскируется растущим использованием PIK",
+   "lead": "Borrowers in the US private debt market are using delayed interest payments and maturity extensions to avoid default, potentially masking the overall extent of credit stress, according to Moody’s Ratings.",
+   "lead_ru": "По данным Moody’s Ratings, заемщики на рынке частного долга США используют отложенные выплаты процентов и продление сроков погашения, чтобы избежать дефолта, потенциально маскируя общий масштаб кредитного стресса."
+  },
+  {
+   "title": "3 things that are driving inflation higher",
+   "link": "https://www.marketwatch.com/story/3-things-that-are-driving-inflation-higher-26bda9a9?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 3,
+   "ts": "2026-10-14T17:00:32.413656+00:00",
+   "title_ru": "3 вещи, которые способствуют росту инфляции",
+   "lead": "Struggling with elevated prices? You don’t have to look much further than your local gas station.",
+   "lead_ru": "Боретесь с завышенными ценами? Вам не нужно искать дальше местной заправочной станции.",
+   "tags": [
+    "инфляция"
+   ]
   }
  ],
  "last_digest": "2026-10-13",
@@ -11682,7 +11730,7 @@
    "house": true,
    "senate": true
   },
-  "checked": "2026-10-14T15:50:32.328699+00:00",
+  "checked": "2026-10-14T17:00:32.413656+00:00",
   "sec_seen": [],
   "errors": {
    "sec": "HTTPError: HTTP Error 403: Forbidden"
