@@ -1,63 +1,34 @@
-"""Probe round 16 (logs through the redirect without the token): why the news bot stopped committing — its live feed, its job and logs."""
-import json, os, time, urllib.request
-API = "https://econnews-bot.econnews-6dce35.workers.dev"
-GH = "https://api.github.com/repos/venerablesoul/econnews"
-TOK = os.environ.get("GH_TOKEN", "")
+"""Probe round 17: does a push of the next company / option files get rejected (push protection, size, rules)?"""
+import json, os, subprocess, sys, tarfile, io, time
 OUT = {}
+M = "/tmp/m"
+os.makedirs(M, exist_ok=True)
 
 
-def get(url, auth=False, raw=False):
-    h = {"User-Agent": "probe"}
-    if auth:
-        h["Authorization"] = "Bearer " + TOK
-        h["Accept"] = "application/vnd.github+json"
-    try:
-        with urllib.request.urlopen(urllib.request.Request(url, headers=h), timeout=60) as r:
-            b = r.read()
-            return b.decode("utf-8", "replace") if raw else json.loads(b)
-    except urllib.error.HTTPError as e:
-        return {"_status": e.code, "_body": e.read()[:300].decode("utf-8", "replace")}
-    except Exception as e:
-        return {"_err": repr(e)[:300]}
+def sh(*a, cwd=None):
+    r = subprocess.run(list(a), capture_output=True, text=True, cwd=cwd, timeout=600)
+    return {"rc": r.returncode, "out": (r.stdout or "")[-1500:], "err": (r.stderr or "")[-2500:]}
 
 
-live = get(API + "/api/live")
-OUT["live"] = {"updated": live.get("updated"), "n": len(live.get("news") or []), "now": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())}
-runs = get(GH + "/actions/workflows/news.yml/runs?per_page=2", auth=True)
-OUT["runs"] = [(r["id"], r["status"], r["created_at"]) for r in runs.get("workflow_runs", [])]
-rid = runs["workflow_runs"][0]["id"]
-jobs = get(f"{GH}/actions/runs/{rid}/jobs", auth=True)
-OUT["jobs"] = [(j["id"], j["status"], j["started_at"], [(s["name"], s["status"]) for s in j["steps"]]) for j in jobs.get("jobs", [])]
-jid = jobs["jobs"][0]["id"]
-class NoRedirect(urllib.request.HTTPRedirectHandler):
-    def redirect_request(self, *a, **k):
-        return None
-
-
-def job_logs(jid):
-    req = urllib.request.Request(f"{GH}/actions/jobs/{jid}/logs", headers={"User-Agent": "probe", "Authorization": "Bearer " + TOK,
-                                                                       "Accept": "application/vnd.github+json"})
-    try:
-        urllib.request.build_opener(NoRedirect).open(req, timeout=60)
-        return {"_err": "no redirect"}
-    except urllib.error.HTTPError as e:
-        loc = e.headers.get("Location")
-        if not loc:
-            return {"_status": e.code, "_body": e.read()[:300].decode("utf-8", "replace")}
-    with urllib.request.urlopen(urllib.request.Request(loc, headers={"User-Agent": "probe"}), timeout=120) as r:
-        return r.read().decode("utf-8", "replace")
-
-
-try:
-    logs = job_logs(jid)
-except Exception as e:
-    logs = {"_err": repr(e)[:300]}
-if isinstance(logs, str):
-    lines = logs.splitlines()
-    OUT["log_lines"] = len(lines)
-    with open("probe/out_log.txt", "w") as f:
-        f.write("\n".join(lines[-400:]))
-else:
-    OUT["logs"] = logs
-with open("probe/out11.json", "w") as f:
+OUT["fetch"] = sh("git", "fetch", "--depth", "1", "origin", "main")
+arch = subprocess.run(["git", "archive", "FETCH_HEAD", "company.py", "options.py", "stocks.py", "moex.py", "macro.py"], capture_output=True).stdout
+tarfile.open(fileobj=io.BytesIO(arch)).extractall(M)
+built = subprocess.run(["git", "ls-tree", "--name-only", "FETCH_HEAD", "docs/co/"], capture_output=True, text=True).stdout.split()
+sys.path.insert(0, M)
+import company, options, moex, stocks
+done = {os.path.basename(x)[:-5] for x in built}
+todo = [t for t in sorted(t for t, *_ in stocks.UNIVERSE) if t not in done][:14]
+OUT["todo"] = todo
+os.makedirs("probe/pushtest/co", exist_ok=True); os.makedirs("probe/pushtest/opt", exist_ok=True)
+t0 = time.time()
+OUT["co_written"] = company.build(tickers=todo, limit=14, out_dir="probe/pushtest/co", sleep=0.3)
+OUT["opt_written"] = options.build(tickers=todo[:8], limit=8, out_dir="probe/pushtest/opt", summary_path="probe/pushtest/options.json", sleep=0.3)
+OUT["moex"] = moex.build(path="probe/pushtest/moex.json", max_age_min=0)
+OUT["build_sec"] = round(time.time() - t0, 1)
+OUT["sizes"] = {f: os.path.getsize(os.path.join(r, f)) for r, _, fs in os.walk("probe/pushtest") for f in fs}
+sh("git", "config", "user.name", "news-bot"); sh("git", "config", "user.email", "news-bot@users.noreply.github.com")
+OUT["add"] = sh("git", "add", "probe/pushtest")
+OUT["commit"] = sh("git", "commit", "-q", "-m", "push test: company and option files")
+OUT["push"] = sh("git", "push", "origin", "HEAD:probe")
+with open("probe/out12.json", "w") as f:
     json.dump(OUT, f, ensure_ascii=False, indent=1)
