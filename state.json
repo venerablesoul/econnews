@@ -1037,7 +1037,8 @@
   "51c8ce6451dc2d27": "2026-10-15T03:31:24.985520+00:00",
   "12197943e8e26870": "2026-10-15T03:31:24.985520+00:00",
   "22987bfae2ae2bf8": "2026-10-15T03:31:24.985520+00:00",
-  "42398fb3e74ccd2b": "2026-10-15T03:51:24.975310+00:00"
+  "42398fb3e74ccd2b": "2026-10-15T03:51:24.975310+00:00",
+  "551424c533638937": "2026-10-15T04:01:24.977941+00:00"
  },
  "recent": [
   {
@@ -10733,6 +10734,19 @@
    "title_ru": "Антропные результаты могут помочь IPO, но не торговле ИИ, говорят аналитики",
    "lead": "Anthropic PBC’s third-quarter results may strengthen the case for its expected initial public offering, though they are unlikely to dispel doubts over the global AI trade, according to some investors and analysts.",
    "lead_ru": "По мнению некоторых инвесторов и аналитиков, результаты Anthropic PBC за третий квартал могут усилить аргументы в пользу ожидаемого первичного публичного размещения, хотя они вряд ли развеют сомнения по поводу глобальной торговли искусственным интеллектом."
+  },
+  {
+   "title": "IMF urges China to deploy bigger fiscal stimulus",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNUVk3Tk5qRC1rS0NxcVU2N280MWE1bk4wZFJMdS11aXJ2SmxlcWhRbzluOHV2djk3aHNxam9oRzFOSjBqbzd1THEwVjBiWkIzcHpFUXpqQkR0X29ycWpmZkFyWVg1MG9QdnZTSnVuMDQ0QVZOcXk1WmxEWkZvbWE1VndUZTdLTkJTSnhhVU5xWUlORFhucmc4THMxUHJhRHlKbVE?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-15T04:01:24.977941+00:00",
+   "title_ru": "МВФ призывает Китай развернуть более масштабное налогово-бюджетное стимулирование",
+   "tags": [
+    "Китай"
+   ]
   }
  ],
  "last_digest": "2026-10-14",
@@ -10747,7 +10761,7 @@
   "ЦБ РФ": 0,
   "Статистика труда США (BLS)": 0,
   "CNBC": 0,
-  "ФРС США": 0,
+  "ФРС США": 1,
   "Bloomberg": 0,
   "Reuters": 0,
   "MarketWatch": 0,
@@ -12790,7 +12804,7 @@
    "house": true,
    "senate": true
   },
-  "checked": "2026-10-15T02:51:25.031956+00:00",
+  "checked": "2026-10-15T04:01:24.977941+00:00",
   "sec_seen": [],
   "errors": {
    "sec": "HTTPError: HTTP Error 403: Forbidden"
