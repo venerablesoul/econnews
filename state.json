@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "807575be96edb888": "2026-10-12T19:03:45.975106+00:00",
-  "8086cec6a6c9b036": "2026-10-12T19:03:45.975106+00:00",
   "fe5860387ef41b84": "2026-10-12T20:04:05.884002+00:00",
   "c289a4c55030bee3": "2026-10-12T20:04:05.884002+00:00",
   "9ec2f262c2290d37": "2026-10-12T20:04:05.884002+00:00",
@@ -1155,32 +1153,11 @@
   "87bb3effa41441ae": "2026-10-15T18:32:01.142210+00:00",
   "aae88f1b410bea44": "2026-10-15T18:32:01.142210+00:00",
   "197ac3b26d39b93c": "2026-10-15T18:37:01.018258+00:00",
-  "f17b1b9939d2cb35": "2026-10-15T18:52:01.076830+00:00"
+  "f17b1b9939d2cb35": "2026-10-15T18:52:01.076830+00:00",
+  "e465f2f8ec400a91": "2026-10-15T19:07:01.094744+00:00",
+  "3d2f3695a2b728d6": "2026-10-15T19:07:01.094744+00:00"
  },
  "recent": [
-  {
-   "title": "Pound treads water as dollar holds firm",
-   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNTlJ6dFZHSWhmSDJGajU5NGVVTDRHaWZBbVlLRXdKbmd4YjdmTzktT0llTkxqTEZZY2Z5N3JpeTlOUHZhUUY5dE1MeGt0ckJEeGtJZnI0WUQtV0h6bVVmZWJWeURiLWpSbUVPb2d4NEowR1VEckhoc2REa2ZUa19PbGIySkNrMkpD?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-12T19:03:45.975106+00:00",
-   "title_ru": "Фунт торгуется, а доллар крепнет",
-   "tags": [
-    "доллар"
-   ]
-  },
-  {
-   "title": "Gunmen in northwestern Nigeria kill 20 people heading to market",
-   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQTUF4WmtBRkhXNExyTmoycDAyTWFrc3V3R1lVdEt0cGxLMkJzcmI2S3AxaVVMSWN5Rlh2V0FwWk03OTgtd0xUX3RkUDhnbmpyZ0NrbnpKN3BsVWNzS1p2ZldxeUJCeGQ2ZVJGS1lqa194Nm1uN3JxTVZBTFNQd201emtpSE5nX1R4UjFpdW55ZjdXSHVxenVrMw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-12T19:03:45.975106+00:00",
-   "title_ru": "На северо-западе Нигерии боевики убили 20 человек, направлявшихся на рынок"
-  },
   {
    "title": "Coming Soon: World Economic Outlook, October 2026",
    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQSWlzb0ZWZTJCMWZfNmJKWWdTVDczTC1QNUxuYUpYWEtZYngyekRqZ0ZrUHJCWHJDdDBJLUNFTmNGdmdQU1ZDZFBvcThEX2xsWExQRWxZbGlVMHBOaFp2ZXB2SzVNMUdTeHN5NG1na1Zrei1PdTdYSlc5YVBJaDZjc09TejNkTWFYMzZIQ3lMTWJrTmxEb3BEYQ?oc=5",
@@ -12085,6 +12062,28 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Indian mutual funds stop bulk subscriptions to gold ETFs ahead of festive season",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNa1dJUmxWRVJFR2xLMFhiSTRENmk2eklvZndkX2dzUmZGLUtKc0o2YldJRF9WbTNoVnJPc3Jjdy1qMTgtRXdWNjR0c3pIaVZxQzVZSk9JazRsdXNkLWtsenMyZzBFbHNlOTlzN1FVcWxKWm10Q3VlQkF6ZXVvcHduQ00xbnlqaE1wek9HQXJhU20zWERTN1NFSlRlRmFSQnp3aUFjYVp6aFhJYUwyZTlZdjRDR2tobk1la1hLbVBqZw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-15T19:07:01.094744+00:00",
+   "title_ru": "Индийские взаимные фонды прекращают массовую подписку на золотые ETF в преддверии праздничного сезона",
+   "tags": [
+    "gold"
+   ]
+  },
+  {
+   "title": "This one governor’s race could derail the AI trade that’s powered the stock market",
+   "link": "https://www.marketwatch.com/story/this-one-governors-race-could-derail-the-ai-trade-thats-powered-the-stock-market-6bbf06f8?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 2,
+   "ts": "2026-10-15T19:07:01.094744+00:00"
   }
  ],
  "last_digest": "2026-10-15",
@@ -14569,8 +14568,8 @@
    "0000038777-26-000267",
    "0001493152-26-047204",
    "0001510281-26-000347",
+   "0001193125-26-422783",
    "0000038777-26-000262",
-   "0001493152-26-047198",
    "0001193125-26-422747",
    "0001193125-26-422736",
    "0001193125-26-422757",
