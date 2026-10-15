@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e8bb6c7fc4a8720a": "2026-10-12T20:44:05.897075+00:00",
   "839dc156d09975fe": "2026-10-12T20:54:05.929939+00:00",
   "b2128c4b40239916": "2026-10-12T20:54:05.929939+00:00",
   "a5a653d871e8a4da": "2026-10-12T20:54:05.929939+00:00",
@@ -1144,19 +1143,12 @@
   "28a042584b98b317": "2026-10-15T20:37:36.404203+00:00",
   "59f82561e3edc9ad": "2026-10-15T20:37:36.404203+00:00",
   "71efe846db890abd": "2026-10-15T20:37:36.404203+00:00",
-  "35394eae149a15f1": "2026-10-15T20:42:36.492282+00:00"
+  "35394eae149a15f1": "2026-10-15T20:42:36.492282+00:00",
+  "a362288c218b5dee": "2026-10-15T20:47:36.464755+00:00",
+  "e9e4f6c1062bad64": "2026-10-15T20:52:36.574741+00:00",
+  "083c30f3d0135231": "2026-10-15T20:52:36.574741+00:00"
  },
  "recent": [
-  {
-   "title": "Breakingviews - COMMENTARY: Nobel winners' economic synthesis is best outgrown",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxObVpOSS1LTDB2OFdZQmlvdlFDVDd3RUNUbTRZOW1ETkZ3UmpKYkZxYWFnQi1ZM3FsU0hmV2MzMW5rUV9kZ3VueWFFZmxaWHREbjJIbE9uQTFkbzlFWk5xYzdMZ215WG1mSWVsWVoySlJtQU5TUk1Iamc3RkhrazU3MDhlZnp2WC1uT2hyQVBCVEVVbkNGckd5VGFiQlBWUGNlbkM4RzR6cDlwc3lLZW5V?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-12T20:44:05.897075+00:00",
-   "title_ru": "Последние взгляды – КОММЕНТАРИЙ: Экономический синтез нобелевских лауреатов лучше всего перерастать"
-  },
   {
    "title": "Kroger Plans to Slash 37% of Corporate Jobs in Next Three Years",
    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQS2xGcWd5bFZuUHdadThvOEJfWUs0c2JEbkRKazNRSGJYOWFsa1MyT3o5MEd5Nkd4SXNRY3BLQkVGZHZ2QVowa0x5RHFtUkNjVVByOUQzZnE2ZW8wRHZIYXBCcXFtSVlUaFppbXM2d09WMVltVm5leXcycWxtem1RMy03RTk0MndOMFhqblNGV1lBQkJ6bUJHWlhHRGV1Rm1RUWM2TzRFSXpqYXVESlVTbGw1MA?oc=5",
@@ -12123,6 +12115,37 @@
    "tags": [
     "ECB"
    ]
+  },
+  {
+   "title": "International Paper Jumps on Potential Multibillion-Dollar Bids | Closing Bell",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-15/international-paper-jumps-on-bids-closing-bell-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-15T20:52:36.574741+00:00",
+   "title_ru": "Международный бумажный скачок на потенциальных многомиллиардных ставках | Closing Bell",
+   "lead": "Comprehensive cross-platform coverage of the U.S. market close on Bloomberg Television, Bloomberg Radio, and YouTube with Romaine Bostick, Kristine Aquino, Carol Massar and Tim Stenovec. (Source: Bloomberg)",
+   "lead_ru": "Комплексное кроссплатформенное покрытие рынка США закрывают Bloomberg Television, Bloomberg Radio и YouTube с Ромейн Бостик, Кристин Акино, Кэрол Массар и Тимом Стеновеком. (Источник: Bloomberg)",
+   "tags": [
+    "dollar"
+   ]
+  },
+  {
+   "title": "Rate Volatility Might Shake Fundamentals: Tannuzzo",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-15/rate-volatility-might-shake-fundamentals-tannuzzo-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-15T20:52:36.574741+00:00",
+   "title_ru": "Волатильность курса может поколебать основы: Tannuzzo",
+   "lead": "Gene Tannuzzo, global head of fixed income at Columbia Threadneedle Investments, and Subadra Rajappa, head of research at Société Générale Americas, join Scarlet Fu on \"Bloomberg Real Yield.\" Treasuries led a global bond rally as…",
+   "lead_ru": "Джин Таннуццо, глобальный руководитель отдела инвестиций с фиксированным доходом в Columbia Threadneedle Investments, и Субадра Раджаппа, руководитель отдела исследований в Société Générale Americas, присоединяются к Scarlet Fu на \"Bloomberg Real Yield.« Казначейские облигации привели к глобальному ралли облигаций, поскольку…",
+   "tags": [
+    "bonds",
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-15",
@@ -14262,6 +14285,22 @@
    },
    {
     "src": "sec",
+    "id": "b3ec861466d96713",
+    "ticker": "RSKD",
+    "company": "RISKIFIED LTD.",
+    "who": "Ravi Kumaraswami",
+    "role": "Pres. Worldwide Field Ops.",
+    "type": "sell",
+    "value": 543127,
+    "shares": 65000,
+    "price": 8.36,
+    "plan": true,
+    "date": "2026-10-15",
+    "disclosed": "2026-10-15",
+    "link": "https://www.sec.gov/Archives/edgar/data/1956098/000195609826000024/0001956098-26-000024-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "14f64eb08e3ef586",
     "ticker": "API",
     "company": "Agora, Inc.",
@@ -14890,26 +14929,31 @@
   "checked": "2026-10-15T20:02:36.426418+00:00",
   "sec_seen": [
    "0001722024-26-000004",
-   "0001437749-26-032717",
    "0001783879-26-000153",
    "0001106578-26-000164",
+   "0001193125-26-422967",
    "0001193125-26-422964",
    "0001193125-26-422935",
    "0001940272-26-000025",
+   "0001193125-26-422985",
    "0001897944-26-000014",
    "0002064832-26-000333",
-   "0001437749-26-032719",
    "0001683168-26-007902",
-   "0001193125-26-422923",
+   "0001773751-26-000227",
+   "0001956098-26-000024",
+   "0001193125-26-422975",
+   "0001193125-26-422968",
    "0002050857-26-000018",
    "0001193125-26-422942",
-   "0001620548-26-000009",
    "0001227654-26-000077",
+   "0001859690-26-000193",
    "0001193125-26-422959",
+   "0001193125-26-422981",
    "0001193125-26-422937",
-   "0000950103-26-015655",
-   "0001437749-26-032718",
-   "0001193125-26-422957"
+   "0001628280-26-066012",
+   "0001193125-26-422957",
+   "0001193125-26-422989",
+   "0001193125-26-422973"
   ],
   "errors": {}
  }
