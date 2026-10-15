@@ -31,5 +31,6 @@ try:
     OUT["terminal"] = json.loads(out.strip().splitlines()[-1])
 except Exception:
     OUT["term_raw"] = out[-3000:]
-with open("probe/out15.json", "w") as f:
+with open("probe/out16.json", "w") as f:
     json.dump(OUT, f, ensure_ascii=False, indent=1)
+subprocess.run("git add probe/shots", shell=True)   # the result step commits whatever is staged
