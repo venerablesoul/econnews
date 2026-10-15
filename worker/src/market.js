@@ -1,7 +1,7 @@
 // Quotes, price history and company data. API keys live only here, on the server.
 //   US stocks:    Finnhub (free key) — quote, profile, ratios, analysts, earnings, company news
 //   World:        Yahoo Finance (no key) — indices, currencies, commodities, yields
-//   History:      Yahoo Finance; crypto — Binance / CryptoCompare; Russia — Moscow Exchange (ISS)
+//   History:      Yahoo Finance; crypto — Binance / Coinbase; Russia — Moscow Exchange (ISS)
 //   Financials:   docs/fin/<TICKER>.json, built by the news bot from SEC filings (~100 largest companies)
 import { cached, dm, getJSON, pageJSON, siteData } from "./lib.js";
 
@@ -302,31 +302,38 @@ async function binanceHistory(coin, range) {
     try { k = await getJSON(host + "/klines?symbol=" + coin + "USDT&interval=" + interval + "&limit=" + limit, { ttl: INTRADAY[range] ? 60 : 900, timeout: 8000 }); break; }
     catch (e) { err = e; }
   }
-  if (!k && INTRADAY[range]) {
-    // shortcut: without Binance intraday comes as hourly candles from CryptoCompare
-    const d = await getJSON("https://min-api.cryptocompare.com/data/v2/histohour?fsym=" + coin + "&tsym=USD&limit=" + days * 24, { ttl: 300, timeout: 8000 })
-      .catch(() => { throw err || new Error("Binance unavailable"); });
-    const rows = ((d && d.Data && d.Data.Data) || []).filter((x) => x.close > 0);
-    if (!rows.length) throw err || new Error("no history for " + coin);
-    return { t: rows.map((x) => x.time), o: rows.map((x) => x.open), h: rows.map((x) => x.high), l: rows.map((x) => x.low),
-      c: rows.map((x) => x.close), v: rows.map((x) => x.volumeto), cur: "USD", name: coin + "/USD", src2: "cryptocompare" };
-  }
   if (!k) {
-    // Binance blocks some Cloudflare servers — take daily candles from CryptoCompare
-    const toDays = interval === "1w" ? limit * 7 : limit;
-    const d = await getJSON("https://min-api.cryptocompare.com/data/v2/histoday?fsym=" + coin + "&tsym=USD&limit=" + Math.min(2000, toDays), { ttl: 900, timeout: 8000 })
-      .catch(() => { throw err || new Error("Binance unavailable"); });
-    const rows = ((d && d.Data && d.Data.Data) || []).filter((x) => x.close > 0);
-    if (!rows.length) throw err || new Error("no history for " + coin);
-    const out = { t: [], o: [], h: [], l: [], c: [], v: [], cur: "USD", name: coin + "/USD", src2: "cryptocompare" };
-    const step = interval === "1w" ? 7 : 1;
-    for (let i = rows.length % step; i < rows.length; i += step) {
-      const x = rows[i]; out.t.push(x.time); out.o.push(x.open); out.h.push(x.high); out.l.push(x.low); out.c.push(x.close); out.v.push(x.volumeto);
-    }
-    return out;
+    // Binance blocks some Cloudflare servers — take candles from Coinbase (no key; CryptoCompare now wants one)
+    try { return await coinbaseHistory(coin, range); } catch (e) { throw err || e; }
   }
   const out = { t: [], o: [], h: [], l: [], c: [], v: [], cur: "USD", name: coin + "/USDT" };
   for (const x of k) { out.t.push(Math.floor(x[0] / 1000)); out.o.push(+x[1]); out.h.push(+x[2]); out.l.push(+x[3]); out.c.push(+x[4]); out.v.push(+x[5]); }
+  return out;
+}
+
+// Coinbase Exchange candles: [time, low, high, open, close, volume], newest first, at most 300 per request
+async function coinbaseHistory(coin, range) {
+  const days = sinceDays(range);
+  const gran = range === "1d" ? 300 : range === "5d" ? 3600 : 86400;
+  const end = Math.floor(Date.now() / 1000), start = end - days * 86400;
+  const step = gran * 300;
+  const rows = [];
+  for (let to = end; to > start && rows.length < 2000; to -= step) {
+    const from = Math.max(start, to - step);
+    const part = await getJSON("https://api.exchange.coinbase.com/products/" + coin + "-USD/candles?granularity=" + gran +
+      "&start=" + new Date(from * 1000).toISOString() + "&end=" + new Date(to * 1000).toISOString(), { ttl: INTRADAY[range] ? 60 : 900, timeout: 8000 });
+    if (!Array.isArray(part) || !part.length) break;
+    rows.push(...part);
+  }
+  if (!rows.length) throw new Error("no history for " + coin);
+  const seen = new Set();
+  const sorted = rows.filter((x) => !seen.has(x[0]) && seen.add(x[0])).sort((a, b) => a[0] - b[0]);
+  const weekly = days > 900;   // like Binance: weekly points for five years
+  const out = { t: [], o: [], h: [], l: [], c: [], v: [], cur: "USD", name: coin + "/USD", src2: "coinbase" };
+  sorted.forEach((x, i) => {
+    if (weekly && (sorted.length - 1 - i) % 7) return;
+    out.t.push(x[0]); out.l.push(x[1]); out.h.push(x[2]); out.o.push(x[3]); out.c.push(x[4]); out.v.push(x[5]);
+  });
   return out;
 }
 
@@ -574,6 +581,7 @@ export async function relativeValue(env, sym) {
   const by = Object.fromEntries(all.map((r) => [r.s, r]));
   const me = by[sym];
   let list = (peers || []).filter((t) => t !== sym && by[t]);
+  const src = list.length ? "peers" : "sector";
   if (list.length < 4 && me) {
     list = list.concat(all.filter((r) => r.sec === me.sec && r.s !== sym && !list.includes(r.s))
       .sort((a, b) => (b.mcap || 0) - (a.mcap || 0)).map((r) => r.s)).slice(0, 8);
@@ -585,7 +593,7 @@ export async function relativeValue(env, sym) {
     const v = rows.slice(1).map((r) => r[k]).filter((x) => x != null && isFinite(x)).sort((a, b) => a - b);
     med[k] = v.length ? (v.length % 2 ? v[(v.length - 1) / 2] : (v[v.length / 2 - 1] + v[v.length / 2]) / 2) : null;
   }
-  return { s: sym, in_list: !!me, rows, median: med, updated: st && st.updated };
+  return { s: sym, in_list: !!me, src, rows, median: med, updated: st && st.updated };
 }
 
 async function moexCompany(s, lang = "en") {

@@ -157,6 +157,11 @@ export function route(url, init) {
     return { chart: { result: [{ meta: { currency: "USD", longName: "Apple Inc.", regularMarketPrice: closes[closes.length - 1] },
       timestamp: closes.map((_, i) => t0 + i * 86400), indicators: { quote: [{ open: closes, high: closes.map((c) => c + 2), low: closes.map((c) => c - 2), close: closes, volume: closes.map(() => 1000) }] } }] } };
   }
+  if (u.host === "api.exchange.coinbase.com") {
+    const g = +u.searchParams.get("granularity"), to = Date.parse(u.searchParams.get("end")) / 1000, from = Date.parse(u.searchParams.get("start")) / 1000;
+    const n = Math.min(300, Math.floor((to - from) / g));
+    return Array.from({ length: n }, (_, i) => { const t = to - i * g; const c = 80000 + (i % 50); return [t, c - 5, c + 5, c, c, 3] });
+  }
   if (u.host === "quickchart.io") return { success: true, url: "https://quickchart.io/chart/render/zf-test" };
   if (u.host === "api.coingecko.com") return { bitcoin: { usd: 81800, usd_24h_change: -1.9 } };
   throw new Error("unexpected request: " + url);

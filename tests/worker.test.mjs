@@ -188,7 +188,10 @@ await test("fallbacks: crypto without Binance, translation without Google", asyn
     clearMemo();
     const h = await api("/api/history?s=BTC&r=6m");
     assert.equal(h.json.ok, true);
-    assert.equal(h.json.src, "cryptocompare");
+    assert.equal(h.json.src, "coinbase");
+    clearMemo();
+    const w = await api("/api/history?s=BTC&r=5y");
+    assert.ok(w.json.c.length > 250 && w.json.c.length < 270, "five years: weekly points (" + w.json.c.length + ")");
     clearMemo();
     const c = await api("/api/company?s=AAPL&parts=cn&lang=ru");
     assert.equal(c.json.cn[0].h, "Apple превзошла оценки");
@@ -608,7 +611,8 @@ await test("/api/ipo and intraday history (1D, 5D)", async () => {
   flags.failBinance = true;
   const c = await api("/api/history?s=BTC&r=5d");
   flags.failBinance = false;
-  assert.equal(c.json.c.length, 120, "without Binance: hourly bars from CryptoCompare");
+  assert.equal(c.json.c.length, 120, "without Binance: hourly bars from Coinbase");
+  assert.equal(c.json.src, "coinbase");
   const out = await msg("/chart AAPL 1d"); noErrors(out);
   assert.match(texts(out), /1 day/);
 });

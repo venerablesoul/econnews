@@ -319,9 +319,9 @@ export async function cmdRv(env, chat, args) {
   if (!rv || !rv.in_list || rv.rows.length < 2) return send(env, chat, X.t("rv_none", esc(c.s)));
   const cell = (v, d, w) => (v == null ? "—" : X.fmt(v, d)).padStart(w);
   const line = (r, name) => (name || r.s).padEnd(7).slice(0, 7) + cell(r.pe, 1, 6) + cell(r.ps, 1, 6) + cell(r.revg, 0, 6) + cell(r.nm, 0, 6) + cell(r.r52, 0, 6);
-  const table = [X.t("rv_cols"), ...rv.rows.map((r) => line(r)), line(rv.median, X.t("rv_median"))].join("\n");
-  const fromPeers = rv.rows.slice(1).every((r) => r.sec === rv.rows[0].sec) ? "rv_src_sector" : "rv_src_peers";
-  return send(env, chat, X.t("rv_head", esc(c.s), X.t(fromPeers)) + "<code>" + esc(table) + "</code>", fnBtn(env, chat, c.s, "RV"));
+  const head = X.t("rv_cols").map((h, i) => (i ? h.padStart(6) : h.padEnd(7))).join("");
+  const table = [head, ...rv.rows.map((r) => line(r)), line(rv.median, X.t("rv_median"))].join("\n");
+  return send(env, chat, X.t("rv_head", esc(c.s), X.t(rv.src === "peers" ? "rv_src_peers" : "rv_src_sector")) + "<code>" + esc(table) + "</code>", fnBtn(env, chat, c.s, "RV"));
 }
 
 export async function cmdOmon(env, chat, args) {
