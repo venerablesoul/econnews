@@ -1,40 +1,41 @@
-"""Probe round 14 (crypto history via Yahoo, then Coinbase): live bot server — crypto history through Coinbase, the company card with the deep files."""
-import json, time, urllib.request
+"""Probe round 15: why the news bot stopped committing — its live feed, its job and logs."""
+import json, os, time, urllib.request
 API = "https://econnews-bot.econnews-6dce35.workers.dev"
+GH = "https://api.github.com/repos/venerablesoul/econnews"
+TOK = os.environ.get("GH_TOKEN", "")
 OUT = {}
 
 
-def get(path):
-    t = time.time()
+def get(url, auth=False, raw=False):
+    h = {"User-Agent": "probe"}
+    if auth:
+        h["Authorization"] = "Bearer " + TOK
+        h["Accept"] = "application/vnd.github+json"
     try:
-        with urllib.request.urlopen(urllib.request.Request(API + path, headers={"User-Agent": "probe"}), timeout=40) as r:
-            return {"status": r.status, "sec": round(time.time() - t, 2), "d": json.loads(r.read())}
-    except Exception as e:
-        return {"err": repr(e)[:300]}
-
-
-for s, rg in (("BTC", "1d"), ("BTC", "5d"), ("BTC", "1y"), ("BTC", "5y"), ("ETH", "1d")):
-    r = get(f"/api/history?s={s}&r={rg}")
-    d = r.get("d") or {}
-    OUT[f"{s}_{rg}"] = {"sec": r.get("sec"), "ok": d.get("ok"), "error": d.get("error"), "n": len(d.get("c") or []), "src": d.get("src"), "last": (d.get("c") or [None])[-1]}
-for s in ("AAPL", "MSFT"):
-    r = get("/api/company?s=" + s)
-    d = r.get("d") or {}
-    co = d.get("co") or {}
-    OUT["co_" + s] = {"sec": r.get("sec"), "errors": d.get("errors"), "co_keys": sorted(co), "opt_full": bool((d.get("opt") or {}).get("chains")),
-                      "dvd_live": "dvd" in d, "cf_live": "cf" in d, "rv": len((d.get("rv") or {}).get("rows") or []), "rv_src": (d.get("rv") or {}).get("src")}
-for g, span in ((300, 86400), (3600, 5 * 86400), (86400, 300 * 86400)):
-    import datetime as dt
-    end = dt.datetime.now(dt.timezone.utc).replace(microsecond=0)
-    u = (f"https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity={g}&start=" + (end - dt.timedelta(seconds=span)).isoformat().replace("+00:00", ".000Z")
-         + "&end=" + end.isoformat().replace("+00:00", ".000Z"))
-    try:
-        with urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0 (compatible; EconNewsBot/1.0)"}), timeout=30) as rr:
-            body = rr.read()
-            OUT[f"cb_direct_{g}"] = {"status": rr.status, "n": len(json.loads(body)), "u": u}
+        with urllib.request.urlopen(urllib.request.Request(url, headers=h), timeout=60) as r:
+            b = r.read()
+            return b.decode("utf-8", "replace") if raw else json.loads(b)
     except urllib.error.HTTPError as e:
-        OUT[f"cb_direct_{g}"] = {"status": e.code, "body": e.read()[:300].decode("utf-8", "replace"), "u": u}
+        return {"_status": e.code, "_body": e.read()[:300].decode("utf-8", "replace")}
     except Exception as e:
-        OUT[f"cb_direct_{g}"] = {"err": repr(e)[:300]}
-with open("probe/out9.json", "w") as f:
+        return {"_err": repr(e)[:300]}
+
+
+live = get(API + "/api/live")
+OUT["live"] = {"updated": live.get("updated"), "n": len(live.get("news") or []), "now": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())}
+runs = get(GH + "/actions/workflows/news.yml/runs?per_page=2", auth=True)
+OUT["runs"] = [(r["id"], r["status"], r["created_at"]) for r in runs.get("workflow_runs", [])]
+rid = runs["workflow_runs"][0]["id"]
+jobs = get(f"{GH}/actions/runs/{rid}/jobs", auth=True)
+OUT["jobs"] = [(j["id"], j["status"], j["started_at"], [(s["name"], s["status"]) for s in j["steps"]]) for j in jobs.get("jobs", [])]
+jid = jobs["jobs"][0]["id"]
+logs = get(f"{GH}/actions/jobs/{jid}/logs", auth=True, raw=True)
+if isinstance(logs, str):
+    lines = logs.splitlines()
+    OUT["log_lines"] = len(lines)
+    with open("probe/out_log.txt", "w") as f:
+        f.write("\n".join(lines[-400:]))
+else:
+    OUT["logs"] = logs
+with open("probe/out10.json", "w") as f:
     json.dump(OUT, f, ensure_ascii=False, indent=1)
