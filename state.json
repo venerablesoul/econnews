@@ -1097,7 +1097,9 @@
   "81fa989fc0a84c18": "2026-10-15T09:01:58.124325+00:00",
   "0c22fcb2156e1e6e": "2026-10-15T09:01:58.124325+00:00",
   "aeb64afea494ef86": "2026-10-15T09:11:58.111591+00:00",
-  "8510a95b3dfc59db": "2026-10-15T09:16:58.114334+00:00"
+  "8510a95b3dfc59db": "2026-10-15T09:16:58.114334+00:00",
+  "6632dd05e56235fe": "2026-10-15T09:31:58.122245+00:00",
+  "761cd48511ce5c17": "2026-10-15T09:31:58.122245+00:00"
  },
  "recent": [
   {
@@ -11473,6 +11475,19 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Nasdaq futures dive 1% as AI rout deepens on debt concerns",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOZTRob0s4X3hCYkZQZzFfeUxuU1ZlN0tPT2hvelcwcW9QdU9yeVN1ZUZfR253ZUNoN3NjUlRHbG9aS0wzMmVGLUpNOVcyTUlHOWo3WERDX1psTXlmWGthb0JPN19GMGxnT2pkYkRWQ0R1THEyODhoWnZTd1NIQjdZbm5fLXNYb0M2c1g2YU02TENSSi1xSFZMQzRuUTc?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-15T09:31:58.122245+00:00",
+   "title_ru": "Фьючерсы на Nasdaq падают на 1% по мере того, как маршрутизация ИИ углубляется из-за долговых проблем",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-14",
@@ -11511,7 +11526,7 @@
   "2026-10-15-09"
  ],
  "calendar": {
-  "fetched": "2026-10-15T03:31:24.985520+00:00",
+  "fetched": "2026-10-15T09:31:58.122245+00:00",
   "events": [
    {
     "title": "Bank Holiday",
@@ -11972,7 +11987,7 @@
    {
     "title": "RBA Annual Report",
     "country": "AUD",
-    "ts": "2026-10-15T04:25:00+00:00",
+    "ts": "2026-10-15T04:30:00+00:00",
     "impact": "Low",
     "forecast": "",
     "previous": ""
