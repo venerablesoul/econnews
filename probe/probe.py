@@ -30,5 +30,7 @@ sh("git", "config", "user.name", "news-bot"); sh("git", "config", "user.email", 
 OUT["add"] = sh("git", "add", "probe/pushtest")
 OUT["commit"] = sh("git", "commit", "-q", "-m", "push test: company and option files")
 OUT["push"] = sh("git", "push", "origin", "HEAD:probe")
-with open("probe/out12.json", "w") as f:
+if OUT["push"]["rc"]:
+    OUT["reset"] = sh("git", "reset", "-q", "--hard", "HEAD~1")   # so the result itself can still be pushed
+with open("probe/out13.json", "w") as f:
     json.dump(OUT, f, ensure_ascii=False, indent=1)
