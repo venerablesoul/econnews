@@ -1059,7 +1059,11 @@
   "ed31c55ba99e2929": "2026-10-15T05:01:57.427481+00:00",
   "746492d732ddb28f": "2026-10-15T05:01:57.427481+00:00",
   "5f415aa1663e1996": "2026-10-15T05:06:57.417624+00:00",
-  "b06137085cbae8b7": "2026-10-15T05:16:57.437618+00:00"
+  "b06137085cbae8b7": "2026-10-15T05:16:57.437618+00:00",
+  "92f73e5286fac3a3": "2026-10-15T05:21:57.398445+00:00",
+  "f25f5d94e88efa83": "2026-10-15T05:21:57.398445+00:00",
+  "b6db0f0145f893ba": "2026-10-15T05:21:57.398445+00:00",
+  "ada18e61a5a479c1": "2026-10-15T05:21:57.398445+00:00"
  },
  "recent": [
   {
@@ -10983,6 +10987,31 @@
     "ФРС",
     "инфляция",
     "рынки"
+   ]
+  },
+  {
+   "title": "Annual Meetings Plenary",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOdEJOamRWc2djWXRkQXpndnBkY29CemhqME1rQWVjeVczekdCb2tnWFg5VWVoczV0S0RxcmMwWi1uYllfM1R0S1pFVHBITTl3R1kySV9PYmczcGJIODRxR09Pa1g3OEl2MzZuNVRKTnRwTGVTN0hNNEZXMS1jeWNXN1BrcXFVYlJJdGJHVHBDMWU?oc=5",
+   "sources": [
+    "МВФ"
+   ],
+   "score": 4,
+   "ts": "2026-10-15T05:21:57.398445+00:00",
+   "title_ru": "Ежегодные заседания Пленарное заседание"
+  },
+  {
+   "title": "Oil Slides on Eased Middle East Supply Concerns",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-15/oil-slides-on-eased-middle-east-supply-concerns-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-15T05:21:57.398445+00:00",
+   "title_ru": "Нефть падает на фоне ослабления опасений по поводу поставок на Ближний Восток",
+   "lead": "Oil fell as concerns about the supply disruptions caused by the conflict in the Middle East eased and the International Energy Agency raised its forecast for the war’s impact on supply.",
+   "lead_ru": "Нефть упала, поскольку опасения по поводу перебоев в поставках, вызванных конфликтом на Ближнем Востоке, ослабли, а Международное энергетическое агентство повысило свой прогноз влияния войны на поставки.",
+   "tags": [
+    "нефть"
    ]
   }
  ],
