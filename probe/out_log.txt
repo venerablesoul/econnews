@@ -1,0 +1,434 @@
+﻿2026-10-15T09:57:17.6898275Z Current runner version: '2.337.0'
+2026-10-15T09:57:17.6925294Z ##[group]Runner Image Provisioner
+2026-10-15T09:57:17.6926213Z Hosted Compute Agent
+2026-10-15T09:57:17.6926988Z Version: 20261002.596
+2026-10-15T09:57:17.6927729Z Commit: c3d12f3313a95f25162a1503be624f3b0617f8c0
+2026-10-15T09:57:17.6928681Z Build Date: 2026-10-02T22:28:27Z
+2026-10-15T09:57:17.6929540Z Worker ID: {6783fd3d-1b48-4e6d-bce6-56f6da6a2800}
+2026-10-15T09:57:17.6930439Z Region: eastus
+2026-10-15T09:57:17.6931151Z Cloud: Azure
+2026-10-15T09:57:17.6931851Z ##[endgroup]
+2026-10-15T09:57:17.6934077Z ##[group]Operating System
+2026-10-15T09:57:17.6934861Z Ubuntu
+2026-10-15T09:57:17.6935951Z 24.04.5
+2026-10-15T09:57:17.6936678Z LTS
+2026-10-15T09:57:17.6937286Z ##[endgroup]
+2026-10-15T09:57:17.6938020Z ##[group]Runner Image
+2026-10-15T09:57:17.6938783Z Image: ubuntu-24.04
+2026-10-15T09:57:17.6939478Z Version: 20261004.327.1
+2026-10-15T09:57:17.6940979Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261004.327/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-15T09:57:17.6942928Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261004.327
+2026-10-15T09:57:17.6944238Z ##[endgroup]
+2026-10-15T09:57:17.6945608Z ##[group]GITHUB_TOKEN Permissions
+2026-10-15T09:57:17.6947930Z Contents: write
+2026-10-15T09:57:17.6948627Z Metadata: read
+2026-10-15T09:57:17.6949271Z ##[endgroup]
+2026-10-15T09:57:17.6951862Z Secret source: Actions
+2026-10-15T09:57:17.6953190Z Cache mode: write
+2026-10-15T09:57:17.6954400Z Prepare workflow directory
+2026-10-15T09:57:17.7288222Z Prepare all required actions
+2026-10-15T09:57:17.7337357Z Getting action download info
+2026-10-15T09:57:17.9550620Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-10-15T09:57:18.0667008Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+2026-10-15T09:57:18.2525142Z Complete job name: news
+2026-10-15T09:57:18.3324612Z ##[group]Run actions/checkout@v4
+2026-10-15T09:57:18.3325595Z with:
+2026-10-15T09:57:18.3326068Z   repository: venerablesoul/econnews
+2026-10-15T09:57:18.3330795Z   token: ***
+2026-10-15T09:57:18.3331268Z   ssh-strict: true
+2026-10-15T09:57:18.3331758Z   ssh-user: git
+2026-10-15T09:57:18.3332255Z   persist-credentials: true
+2026-10-15T09:57:18.3332802Z   clean: true
+2026-10-15T09:57:18.3333511Z   sparse-checkout-cone-mode: true
+2026-10-15T09:57:18.3334105Z   fetch-depth: 1
+2026-10-15T09:57:18.3334584Z   fetch-tags: false
+2026-10-15T09:57:18.3335077Z   show-progress: true
+2026-10-15T09:57:18.3335572Z   lfs: false
+2026-10-15T09:57:18.3336040Z   submodules: false
+2026-10-15T09:57:18.3336541Z   set-safe-directory: true
+2026-10-15T09:57:18.3337106Z   allow-unsafe-pr-checkout: false
+2026-10-15T09:57:18.3338003Z ##[endgroup]
+2026-10-15T09:57:18.4420897Z Syncing repository: venerablesoul/econnews
+2026-10-15T09:57:18.4423886Z ##[group]Getting Git version info
+2026-10-15T09:57:18.4425246Z Working directory is '/home/runner/work/econnews/econnews'
+2026-10-15T09:57:18.4427007Z [command]/usr/bin/git version
+2026-10-15T09:57:18.4545578Z git version 2.55.0
+2026-10-15T09:57:18.4565670Z ##[endgroup]
+2026-10-15T09:57:18.4574880Z Temporarily overriding HOME='/home/runner/work/_temp/1abf40af-e4e5-4f90-9af1-3bb9dc65033c' before making global git config changes
+2026-10-15T09:57:18.4577171Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-15T09:57:18.4579581Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/econnews/econnews
+2026-10-15T09:57:18.4637290Z Deleting the contents of '/home/runner/work/econnews/econnews'
+....
+2026-10-15T09:57:17.6940979Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261004.327/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-15T09:57:17.6942928Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261004.327
+2026-10-15T09:57:17.6945608Z ##[group]GITHUB_TOKEN Permissions
+2026-10-15T09:57:18.3331758Z   ssh-user: git
+2026-10-15T09:57:18.4423886Z ##[group]Getting Git version info
+2026-10-15T09:57:18.4427007Z [command]/usr/bin/git version
+2026-10-15T09:57:18.4545578Z git version 2.55.0
+2026-10-15T09:57:18.4574880Z Temporarily overriding HOME='/home/runner/work/_temp/1abf40af-e4e5-4f90-9af1-3bb9dc65033c' before making global git config changes
+2026-10-15T09:57:18.4577171Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-15T09:57:18.4579581Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/econnews/econnews
+2026-10-15T09:57:18.4646732Z [command]/usr/bin/git init /home/runner/work/econnews/econnews
+2026-10-15T09:57:18.4780110Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-15T09:57:18.4786969Z hint: 	git config --global init.defaultBranch <name>
+2026-10-15T09:57:18.4795233Z hint: 	git branch -m <name>
+2026-10-15T09:57:18.4796479Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-15T09:57:18.4797592Z Initialized empty Git repository in /home/runner/work/econnews/econnews/.git/
+2026-10-15T09:57:18.4801654Z [command]/usr/bin/git remote add origin https://github.com/venerablesoul/econnews
+2026-10-15T09:57:18.4864008Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-15T09:57:18.4913902Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-15T09:57:18.4952159Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-15T09:57:18.5356239Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-15T09:57:18.5394300Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-15T09:57:18.5623610Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-15T09:57:18.5659601Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-15T09:57:18.5898872Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-15T09:57:18.5958802Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +09ae3315a5f18396b5c06a8b1b254d836d7e4bb8:refs/remotes/origin/main
+2026-10-15T09:57:18.9279823Z From https://github.com/venerablesoul/econnews
+2026-10-15T09:57:18.9302111Z [command]/usr/bin/git sparse-checkout disable
+2026-10-15T09:57:18.9362172Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-15T09:57:18.9401975Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-10-15T09:57:18.9668868Z [command]/usr/bin/git log -1 --format=%H
+2026-10-15T09:57:18.9992810Z   cache-dependency-path: .github/workflows/news.yml
+2026-10-15T09:57:19.6109298Z (node:2323) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-15T09:57:28.7989803Z ##[group]Run # the Markets page address: GitHub Pages or your own domain (repository variable PAGES_URL)
+2026-10-15T09:57:28.7990597Z [36;1m# the Markets page address: GitHub Pages or your own domain (repository variable PAGES_URL)[0m
+2026-10-15T09:57:28.7991710Z [36;1m[ -n "$PAGES_URL" ] || export PAGES_URL="https://${GITHUB_REPOSITORY_OWNER,,}.github.io/${GITHUB_REPOSITORY#*/}/"[0m
+2026-10-15T09:57:28.7993791Z [36;1mLOOP_HOURS=5.5 python news_bot.py --loop 5 --git-sync[0m
+2026-10-15T12:02:29.2453272Z The bot runs continuously: a check every 5 min, GitHub sync on. Stop: Ctrl+C.
+2026-10-15T12:02:29.2455893Z [15.10 12:57 MSK] candidates: 158, new stories: 0, sent: 0, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, source errors: 0
+2026-10-15T12:02:29.2485087Z [15.10 13:02 MSK] candidates: 158, new stories: 2, sent: 2, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, source errors: 0
+2026-10-15T12:02:29.2488176Z [15.10 13:07 MSK] candidates: 162, new stories: 2, sent: 2, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, source errors: 0
+2026-10-15T12:02:29.2491261Z [15.10 13:12 MSK] candidates: 161, new stories: 0, sent: 0, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, source errors: 0
+2026-10-15T12:02:29.2493988Z [15.10 13:17 MSK] candidates: 157, new stories: 0, sent: 0, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, source errors: 0
+2026-10-15T12:02:29.2495781Z [15.10 13:22 MSK] candidates: 162, new stories: 0, sent: 0, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, source errors: 0
+2026-10-15T12:02:29.2497789Z [15.10 13:27 MSK] candidates: 160, new stories: 0, sent: 0, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, source errors: 0
+2026-10-15T12:02:29.2499579Z [15.10 13:32 MSK] candidates: 161, new stories: 2, sent: 2, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, source errors: 0
+2026-10-15T12:02:29.2501219Z [15.10 13:37 MSK] candidates: 158, new stories: 1, sent: 1, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, source errors: 0
+2026-10-15T12:02:29.2502514Z [15.10 13:42 MSK] candidates: 156, new stories: 0, sent: 0, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, source errors: 0
+2026-10-15T12:02:29.2503982Z [15.10 13:47 MSK] candidates: 158, new stories: 2, sent: 2, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, source errors: 0
+2026-10-15T12:02:29.2505282Z [15.10 13:52 MSK] candidates: 157, new stories: 0, sent: 0, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, source errors: 0
+2026-10-15T12:02:29.2506567Z [15.10 13:57 MSK] candidates: 157, new stories: 0, sent: 0, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, source errors: 0
+2026-10-15T12:02:29.2507851Z [15.10 14:02 MSK] candidates: 164, new stories: 4, sent: 4, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, source errors: 0
+2026-10-15T12:02:29.2509132Z [15.10 14:07 MSK] candidates: 165, new stories: 1, sent: 1, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, source errors: 0
+2026-10-15T12:02:29.2510418Z [15.10 14:12 MSK] candidates: 171, new stories: 2, sent: 2, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, source errors: 0
+2026-10-15T12:02:29.2511700Z [15.10 14:17 MSK] candidates: 167, new stories: 0, sent: 0, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, source errors: 0
+2026-10-15T12:02:29.2513108Z [15.10 14:22 MSK] candidates: 172, new stories: 2, sent: 1, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, source errors: 0
+2026-10-15T12:02:29.2514551Z [15.10 14:27 MSK] candidates: 171, new stories: 0, sent: 0, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, source errors: 0
+2026-10-15T12:02:29.2515827Z [15.10 14:32 MSK] candidates: 170, new stories: 4, sent: 4, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, source errors: 0
+2026-10-15T12:02:29.2517111Z [15.10 14:37 MSK] candidates: 164, new stories: 0, sent: 0, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, source errors: 0
+2026-10-15T12:02:29.2518376Z [15.10 14:42 MSK] candidates: 164, new stories: 3, sent: 3, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, source errors: 0
+2026-10-15T12:02:29.2519655Z [15.10 14:47 MSK] candidates: 172, new stories: 3, sent: 3, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, source errors: 0
+2026-10-15T12:02:29.2520907Z [15.10 14:52 MSK] candidates: 169, new stories: 2, sent: 2, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, source errors: 0
+2026-10-15T12:02:29.2522083Z [15.10 14:57 MSK] candidates: 172, new stories: 1, sent: 1, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, source errors: 0
+2026-10-15T12:02:29.2523681Z The bot code changed on GitHub — restarting with the new version.
+2026-10-15T13:22:29.5321721Z The bot runs continuously: a check every 5 min, GitHub sync on. Stop: Ctrl+C.
+2026-10-15T13:22:29.5325813Z [15.10 15:02 MSK] candidates: 171, new stories: 3, sent: 2, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, company files: 6, option chains: 5, macro: 25, MOEX: 228, source errors: 0
+2026-10-15T13:22:29.5328200Z [15.10 15:07 MSK] candidates: 175, new stories: 1, sent: 1, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, company files: 6, option chains: 5, source errors: 1
+2026-10-15T13:22:29.5329470Z   ! Fed: HTTPError: HTTP Error 404: Not Found
+2026-10-15T13:22:29.5330205Z   ! git push failed: fatal: You are not currently on a branch.
+2026-10-15T13:22:29.5332286Z     git push origin HEAD:<name-of-remote-branch>
+2026-10-15T13:22:29.5333322Z   ! git pull: You are not currently on a branch.
+2026-10-15T13:22:29.5334727Z See git-pull(1) for details.
+2026-10-15T13:22:29.5335186Z     git pull <remote> <branch>
+2026-10-15T13:22:29.5336271Z [15.10 15:12 MSK] candidates: 177, new stories: 1, sent: 0, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, company files: 6, option chains: 5, source errors: 0
+2026-10-15T13:22:29.5337216Z   ! git pull: You are not currently on a branch.
+2026-10-15T13:22:29.5338063Z See git-pull(1) for details.
+2026-10-15T13:22:29.5338384Z     git pull <remote> <branch>
+2026-10-15T13:22:29.5338779Z   ! short interest BRK.B: HTTPError: HTTP Error 404: Not Found
+2026-10-15T13:22:29.5339813Z [15.10 15:17 MSK] candidates: 180, new stories: 2, sent: 2, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, company files: 6, option chains: 5, MOEX: 231, source errors: 0
+2026-10-15T13:22:29.5340827Z   ! git push failed: fatal: You are not currently on a branch.
+2026-10-15T13:22:29.5342063Z     git push origin HEAD:<name-of-remote-branch>
+2026-10-15T13:22:29.5342465Z   ! git pull: You are not currently on a branch.
+2026-10-15T13:22:29.5343633Z See git-pull(1) for details.
+2026-10-15T13:22:29.5343945Z     git pull <remote> <branch>
+2026-10-15T13:22:29.5344805Z [15.10 15:22 MSK] candidates: 183, new stories: 4, sent: 4, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, company files: 6, option chains: 5, source errors: 0
+2026-10-15T13:22:29.5345712Z   ! git push failed: fatal: You are not currently on a branch.
+2026-10-15T13:22:29.5346735Z     git push origin HEAD:<name-of-remote-branch>
+2026-10-15T13:22:29.5347080Z   ! git pull: You are not currently on a branch.
+2026-10-15T13:22:29.5347804Z See git-pull(1) for details.
+2026-10-15T13:22:29.5348082Z     git pull <remote> <branch>
+2026-10-15T13:22:29.5348822Z [15.10 15:27 MSK] candidates: 181, new stories: 3, sent: 3, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, company files: 6, option chains: 5, source errors: 0
+2026-10-15T13:22:29.5349941Z   ! git push failed: fatal: You are not currently on a branch.
+2026-10-15T13:22:29.5350986Z     git push origin HEAD:<name-of-remote-branch>
+2026-10-15T13:22:29.5351339Z   ! git pull: You are not currently on a branch.
+2026-10-15T13:22:29.5352222Z See git-pull(1) for details.
+2026-10-15T13:22:29.5352510Z     git pull <remote> <branch>
+2026-10-15T13:22:29.5353657Z [15.10 15:32 MSK] candidates: 180, new stories: 2, sent: 2, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, company files: 6, option chains: 5, MOEX: 233, source errors: 0
+2026-10-15T13:22:29.5354552Z   ! git push failed: fatal: You are not currently on a branch.
+2026-10-15T13:22:29.5355588Z     git push origin HEAD:<name-of-remote-branch>
+2026-10-15T13:22:29.5355932Z   ! git pull: You are not currently on a branch.
+2026-10-15T13:22:29.5356632Z See git-pull(1) for details.
+2026-10-15T13:22:29.5356893Z     git pull <remote> <branch>
+2026-10-15T13:22:29.5357622Z [15.10 15:37 MSK] candidates: 183, new stories: 1, sent: 1, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, company files: 6, option chains: 5, source errors: 0
+2026-10-15T13:22:29.5358419Z   ! git push failed: fatal: You are not currently on a branch.
+2026-10-15T13:22:29.5359410Z     git push origin HEAD:<name-of-remote-branch>
+2026-10-15T13:22:29.5359742Z   ! git pull: You are not currently on a branch.
+2026-10-15T13:22:29.5360426Z See git-pull(1) for details.
+2026-10-15T13:22:29.5360686Z     git pull <remote> <branch>
+2026-10-15T13:22:29.5361406Z [15.10 15:42 MSK] candidates: 180, new stories: 0, sent: 0, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, company files: 6, option chains: 5, source errors: 0
+2026-10-15T13:22:29.5362166Z   ! git pull: You are not currently on a branch.
+2026-10-15T13:22:29.5363359Z See git-pull(1) for details.
+2026-10-15T13:22:29.5363678Z     git pull <remote> <branch>
+2026-10-15T13:22:29.5364383Z [15.10 15:47 MSK] candidates: 183, new stories: 2, sent: 1, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, company files: 6, option chains: 5, source errors: 0
+2026-10-15T13:22:29.5365182Z   ! git push failed: fatal: You are not currently on a branch.
+2026-10-15T13:22:29.5366155Z     git push origin HEAD:<name-of-remote-branch>
+2026-10-15T13:22:29.5366493Z   ! git pull: You are not currently on a branch.
+2026-10-15T13:22:29.5367195Z See git-pull(1) for details.
+2026-10-15T13:22:29.5367458Z     git pull <remote> <branch>
+2026-10-15T13:22:29.5368199Z [15.10 15:52 MSK] candidates: 176, new stories: 2, sent: 2, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, company files: 6, option chains: 5, MOEX: 238, source errors: 0
+2026-10-15T13:22:29.5369198Z   ! git push failed: fatal: You are not currently on a branch.
+2026-10-15T13:22:29.5370187Z     git push origin HEAD:<name-of-remote-branch>
+2026-10-15T13:22:29.5370510Z   ! git pull: You are not currently on a branch.
+2026-10-15T13:22:29.5371191Z See git-pull(1) for details.
+2026-10-15T13:22:29.5371571Z     git pull <remote> <branch>
+2026-10-15T13:22:29.5372276Z [15.10 15:57 MSK] candidates: 178, new stories: 0, sent: 0, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, company files: 6, option chains: 5, source errors: 0
+2026-10-15T13:22:29.5373196Z   ! git pull: You are not currently on a branch.
+2026-10-15T13:22:29.5373884Z See git-pull(1) for details.
+2026-10-15T13:22:29.5374145Z     git pull <remote> <branch>
+2026-10-15T13:22:29.5374836Z [15.10 16:02 MSK] candidates: 180, new stories: 2, sent: 2, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, company files: 6, option chains: 5, source errors: 0
+2026-10-15T13:22:29.5375638Z   ! git push failed: fatal: You are not currently on a branch.
+2026-10-15T13:22:29.5376619Z     git push origin HEAD:<name-of-remote-branch>
+2026-10-15T13:22:29.5376945Z   ! git pull: You are not currently on a branch.
+2026-10-15T13:22:29.5377626Z See git-pull(1) for details.
+2026-10-15T13:22:29.5377882Z     git pull <remote> <branch>
+2026-10-15T13:22:29.5378617Z [15.10 16:07 MSK] candidates: 181, new stories: 1, sent: 1, recipients: 2, quotes: 35, trades: 1, stocks: 103, ratios: 0, financials: 0, curves: 5, company files: 6, option chains: 5, MOEX: 239, source errors: 0
+2026-10-15T13:22:29.5379427Z   ! git push failed: fatal: You are not currently on a branch.
+2026-10-15T13:22:29.5380396Z     git push origin HEAD:<name-of-remote-branch>
+2026-10-15T13:22:29.5380731Z   ! git pull: You are not currently on a branch.
+2026-10-15T13:22:29.5381409Z See git-pull(1) for details.
+2026-10-15T13:22:29.5381669Z     git pull <remote> <branch>
+2026-10-15T13:22:29.5382366Z [15.10 16:12 MSK] candidates: 181, new stories: 3, sent: 3, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, company files: 6, option chains: 5, source errors: 0
+2026-10-15T13:22:29.5383278Z   ! git push failed: fatal: You are not currently on a branch.
+2026-10-15T13:22:29.5384239Z     git push origin HEAD:<name-of-remote-branch>
+2026-10-15T13:22:29.5384563Z   ! git pull: You are not currently on a branch.
+2026-10-15T13:22:29.5385240Z See git-pull(1) for details.
+2026-10-15T13:22:29.5385498Z     git pull <remote> <branch>
+2026-10-15T13:22:29.5386182Z [15.10 16:17 MSK] candidates: 182, new stories: 1, sent: 1, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, company files: 6, option chains: 5, source errors: 0
+2026-10-15T13:22:29.5386969Z   ! git push failed: fatal: You are not currently on a branch.
+2026-10-15T13:22:29.5388264Z     git push origin HEAD:<name-of-remote-branch>
+2026-10-15T13:22:29.5388770Z   ! git pull: You are not currently on a branch.
+2026-10-15T13:22:29.5389918Z See git-pull(1) for details.
+2026-10-15T13:51:25.0744624Z ##[error]The operation was canceled.
+2026-10-15T13:51:25.0794862Z ##[group]Run git config user.name "news-bot"
+2026-10-15T13:51:25.0795418Z [36;1mgit config user.name "news-bot"[0m
+2026-10-15T13:51:25.0796060Z [36;1mgit config user.email "news-bot@users.noreply.github.com"[0m
+2026-10-15T13:51:25.0796549Z [36;1mgit add state.json 2>/dev/null || true[0m
+2026-10-15T13:51:25.0797207Z [36;1mfor f in docs/data.json docs/stocks.json docs/rates.json docs/fin; do git add "$f" 2>/dev/null || true; done[0m
+2026-10-15T13:51:25.0798103Z [36;1mgit diff --cached --quiet || (git commit -m "news update" && git pull --rebase && git push)[0m
+2026-10-15T13:51:25.2075548Z [command]/usr/bin/git version
+2026-10-15T13:51:25.2120558Z git version 2.55.0
+2026-10-15T13:51:25.2159725Z Temporarily overriding HOME='/home/runner/work/_temp/a7704a04-69ce-4f3d-8b7d-0f02daee467f' before making global git config changes
+2026-10-15T13:51:25.2163872Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-15T13:51:25.2166420Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/econnews/econnews
+2026-10-15T13:51:25.2205371Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-15T13:51:25.2241252Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-15T13:51:25.2498782Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-15T13:51:25.2528434Z http.https://github.com/.extraheader
+2026-10-15T13:51:25.2540620Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-10-15T13:51:25.2576480Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-15T13:51:25.2844773Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-15T13:51:25.2884758Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-15T13:51:25.3594477Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+....
+2026-10-15T12:02:29.2506567Z [15.10 13:57 MSK] candidates: 157, new stories: 0, sent: 0, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, source errors: 0
+2026-10-15T12:02:29.2507851Z [15.10 14:02 MSK] candidates: 164, new stories: 4, sent: 4, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, source errors: 0
+2026-10-15T12:02:29.2509132Z [15.10 14:07 MSK] candidates: 165, new stories: 1, sent: 1, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, source errors: 0
+2026-10-15T12:02:29.2510418Z [15.10 14:12 MSK] candidates: 171, new stories: 2, sent: 2, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, source errors: 0
+2026-10-15T12:02:29.2511700Z [15.10 14:17 MSK] candidates: 167, new stories: 0, sent: 0, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, source errors: 0
+2026-10-15T12:02:29.2513108Z [15.10 14:22 MSK] candidates: 172, new stories: 2, sent: 1, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, source errors: 0
+2026-10-15T12:02:29.2514551Z [15.10 14:27 MSK] candidates: 171, new stories: 0, sent: 0, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, source errors: 0
+2026-10-15T12:02:29.2515827Z [15.10 14:32 MSK] candidates: 170, new stories: 4, sent: 4, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, source errors: 0
+2026-10-15T12:02:29.2517111Z [15.10 14:37 MSK] candidates: 164, new stories: 0, sent: 0, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, source errors: 0
+2026-10-15T12:02:29.2518376Z [15.10 14:42 MSK] candidates: 164, new stories: 3, sent: 3, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, source errors: 0
+2026-10-15T12:02:29.2519655Z [15.10 14:47 MSK] candidates: 172, new stories: 3, sent: 3, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, source errors: 0
+2026-10-15T12:02:29.2520907Z [15.10 14:52 MSK] candidates: 169, new stories: 2, sent: 2, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, source errors: 0
+2026-10-15T12:02:29.2522083Z [15.10 14:57 MSK] candidates: 172, new stories: 1, sent: 1, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, source errors: 0
+2026-10-15T12:02:29.2523681Z The bot code changed on GitHub — restarting with the new version.
+2026-10-15T13:22:29.5321721Z The bot runs continuously: a check every 5 min, GitHub sync on. Stop: Ctrl+C.
+2026-10-15T13:22:29.5325813Z [15.10 15:02 MSK] candidates: 171, new stories: 3, sent: 2, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, company files: 6, option chains: 5, macro: 25, MOEX: 228, source errors: 0
+2026-10-15T13:22:29.5328200Z [15.10 15:07 MSK] candidates: 175, new stories: 1, sent: 1, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, company files: 6, option chains: 5, source errors: 1
+2026-10-15T13:22:29.5329470Z   ! Fed: HTTPError: HTTP Error 404: Not Found
+2026-10-15T13:22:29.5330205Z   ! git push failed: fatal: You are not currently on a branch.
+2026-10-15T13:22:29.5331099Z To push the history leading to the current (detached HEAD)
+2026-10-15T13:22:29.5331678Z state now, use
+2026-10-15T13:22:29.5331930Z 
+2026-10-15T13:22:29.5332286Z     git push origin HEAD:<name-of-remote-branch>
+2026-10-15T13:22:29.5333322Z   ! git pull: You are not currently on a branch.
+2026-10-15T13:22:29.5334011Z Please specify which branch you want to rebase against.
+2026-10-15T13:22:29.5334727Z See git-pull(1) for details.
+2026-10-15T13:22:29.5335022Z 
+2026-10-15T13:22:29.5335186Z     git pull <remote> <branch>
+2026-10-15T13:22:29.5336271Z [15.10 15:12 MSK] candidates: 177, new stories: 1, sent: 0, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, company files: 6, option chains: 5, source errors: 0
+2026-10-15T13:22:29.5337216Z   ! git pull: You are not currently on a branch.
+2026-10-15T13:22:29.5337656Z Please specify which branch you want to rebase against.
+2026-10-15T13:22:29.5338063Z See git-pull(1) for details.
+2026-10-15T13:22:29.5338263Z 
+2026-10-15T13:22:29.5338384Z     git pull <remote> <branch>
+2026-10-15T13:22:29.5338779Z   ! short interest BRK.B: HTTPError: HTTP Error 404: Not Found
+2026-10-15T13:22:29.5339813Z [15.10 15:17 MSK] candidates: 180, new stories: 2, sent: 2, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, company files: 6, option chains: 5, MOEX: 231, source errors: 0
+2026-10-15T13:22:29.5340827Z   ! git push failed: fatal: You are not currently on a branch.
+2026-10-15T13:22:29.5341324Z To push the history leading to the current (detached HEAD)
+2026-10-15T13:22:29.5341722Z state now, use
+2026-10-15T13:22:29.5341905Z 
+2026-10-15T13:22:29.5342063Z     git push origin HEAD:<name-of-remote-branch>
+2026-10-15T13:22:29.5342465Z   ! git pull: You are not currently on a branch.
+2026-10-15T13:22:29.5342896Z Please specify which branch you want to rebase against.
+2026-10-15T13:22:29.5343633Z See git-pull(1) for details.
+2026-10-15T13:22:29.5343831Z 
+2026-10-15T13:22:29.5343945Z     git pull <remote> <branch>
+2026-10-15T13:22:29.5344805Z [15.10 15:22 MSK] candidates: 183, new stories: 4, sent: 4, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, company files: 6, option chains: 5, source errors: 0
+2026-10-15T13:22:29.5345712Z   ! git push failed: fatal: You are not currently on a branch.
+2026-10-15T13:22:29.5346131Z To push the history leading to the current (detached HEAD)
+2026-10-15T13:22:29.5346473Z state now, use
+2026-10-15T13:22:29.5346603Z 
+2026-10-15T13:22:29.5346735Z     git push origin HEAD:<name-of-remote-branch>
+2026-10-15T13:22:29.5347080Z   ! git pull: You are not currently on a branch.
+2026-10-15T13:22:29.5347456Z Please specify which branch you want to rebase against.
+2026-10-15T13:22:29.5347804Z See git-pull(1) for details.
+2026-10-15T13:22:29.5347977Z 
+2026-10-15T13:22:29.5348082Z     git pull <remote> <branch>
+2026-10-15T13:22:29.5348822Z [15.10 15:27 MSK] candidates: 181, new stories: 3, sent: 3, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, company files: 6, option chains: 5, source errors: 0
+2026-10-15T13:22:29.5349941Z   ! git push failed: fatal: You are not currently on a branch.
+2026-10-15T13:22:29.5350366Z To push the history leading to the current (detached HEAD)
+2026-10-15T13:22:29.5350722Z state now, use
+2026-10-15T13:22:29.5350848Z 
+2026-10-15T13:22:29.5350986Z     git push origin HEAD:<name-of-remote-branch>
+2026-10-15T13:22:29.5351339Z   ! git pull: You are not currently on a branch.
+2026-10-15T13:22:29.5351722Z Please specify which branch you want to rebase against.
+2026-10-15T13:22:29.5352222Z See git-pull(1) for details.
+2026-10-15T13:22:29.5352403Z 
+2026-10-15T13:22:29.5352510Z     git pull <remote> <branch>
+2026-10-15T13:22:29.5353657Z [15.10 15:32 MSK] candidates: 180, new stories: 2, sent: 2, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, company files: 6, option chains: 5, MOEX: 233, source errors: 0
+2026-10-15T13:22:29.5354552Z   ! git push failed: fatal: You are not currently on a branch.
+2026-10-15T13:22:29.5354989Z To push the history leading to the current (detached HEAD)
+2026-10-15T13:22:29.5355332Z state now, use
+2026-10-15T13:22:29.5355462Z 
+2026-10-15T13:22:29.5355588Z     git push origin HEAD:<name-of-remote-branch>
+2026-10-15T13:22:29.5355932Z   ! git pull: You are not currently on a branch.
+2026-10-15T13:22:29.5356292Z Please specify which branch you want to rebase against.
+2026-10-15T13:22:29.5356632Z See git-pull(1) for details.
+2026-10-15T13:22:29.5356791Z 
+2026-10-15T13:22:29.5356893Z     git pull <remote> <branch>
+2026-10-15T13:22:29.5357622Z [15.10 15:37 MSK] candidates: 183, new stories: 1, sent: 1, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, company files: 6, option chains: 5, source errors: 0
+2026-10-15T13:22:29.5358419Z   ! git push failed: fatal: You are not currently on a branch.
+2026-10-15T13:22:29.5358827Z To push the history leading to the current (detached HEAD)
+2026-10-15T13:22:29.5359150Z state now, use
+2026-10-15T13:22:29.5359278Z 
+2026-10-15T13:22:29.5359410Z     git push origin HEAD:<name-of-remote-branch>
+2026-10-15T13:22:29.5359742Z   ! git pull: You are not currently on a branch.
+2026-10-15T13:22:29.5360089Z Please specify which branch you want to rebase against.
+2026-10-15T13:22:29.5360426Z See git-pull(1) for details.
+2026-10-15T13:22:29.5360592Z 
+2026-10-15T13:22:29.5360686Z     git pull <remote> <branch>
+2026-10-15T13:22:29.5361406Z [15.10 15:42 MSK] candidates: 180, new stories: 0, sent: 0, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, company files: 6, option chains: 5, source errors: 0
+2026-10-15T13:22:29.5362166Z   ! git pull: You are not currently on a branch.
+2026-10-15T13:22:29.5362570Z Please specify which branch you want to rebase against.
+2026-10-15T13:22:29.5363359Z See git-pull(1) for details.
+2026-10-15T13:22:29.5363574Z 
+2026-10-15T13:22:29.5363678Z     git pull <remote> <branch>
+2026-10-15T13:22:29.5364383Z [15.10 15:47 MSK] candidates: 183, new stories: 2, sent: 1, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, company files: 6, option chains: 5, source errors: 0
+2026-10-15T13:22:29.5365182Z   ! git push failed: fatal: You are not currently on a branch.
+2026-10-15T13:22:29.5365580Z To push the history leading to the current (detached HEAD)
+2026-10-15T13:22:29.5365908Z state now, use
+2026-10-15T13:22:29.5366034Z 
+2026-10-15T13:22:29.5366155Z     git push origin HEAD:<name-of-remote-branch>
+2026-10-15T13:22:29.5366493Z   ! git pull: You are not currently on a branch.
+2026-10-15T13:22:29.5366853Z Please specify which branch you want to rebase against.
+2026-10-15T13:22:29.5367195Z See git-pull(1) for details.
+2026-10-15T13:22:29.5367351Z 
+2026-10-15T13:22:29.5367458Z     git pull <remote> <branch>
+2026-10-15T13:22:29.5368199Z [15.10 15:52 MSK] candidates: 176, new stories: 2, sent: 2, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, company files: 6, option chains: 5, MOEX: 238, source errors: 0
+2026-10-15T13:22:29.5369198Z   ! git push failed: fatal: You are not currently on a branch.
+2026-10-15T13:22:29.5369596Z To push the history leading to the current (detached HEAD)
+2026-10-15T13:22:29.5369931Z state now, use
+2026-10-15T13:22:29.5370057Z 
+2026-10-15T13:22:29.5370187Z     git push origin HEAD:<name-of-remote-branch>
+2026-10-15T13:22:29.5370510Z   ! git pull: You are not currently on a branch.
+2026-10-15T13:22:29.5370863Z Please specify which branch you want to rebase against.
+2026-10-15T13:22:29.5371191Z See git-pull(1) for details.
+2026-10-15T13:22:29.5371474Z 
+2026-10-15T13:22:29.5371571Z     git pull <remote> <branch>
+2026-10-15T13:22:29.5372276Z [15.10 15:57 MSK] candidates: 178, new stories: 0, sent: 0, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, company files: 6, option chains: 5, source errors: 0
+2026-10-15T13:22:29.5373196Z   ! git pull: You are not currently on a branch.
+2026-10-15T13:22:29.5373552Z Please specify which branch you want to rebase against.
+2026-10-15T13:22:29.5373884Z See git-pull(1) for details.
+2026-10-15T13:22:29.5374044Z 
+2026-10-15T13:22:29.5374145Z     git pull <remote> <branch>
+2026-10-15T13:22:29.5374836Z [15.10 16:02 MSK] candidates: 180, new stories: 2, sent: 2, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, company files: 6, option chains: 5, source errors: 0
+2026-10-15T13:22:29.5375638Z   ! git push failed: fatal: You are not currently on a branch.
+2026-10-15T13:22:29.5376040Z To push the history leading to the current (detached HEAD)
+2026-10-15T13:22:29.5376365Z state now, use
+2026-10-15T13:22:29.5376493Z 
+2026-10-15T13:22:29.5376619Z     git push origin HEAD:<name-of-remote-branch>
+2026-10-15T13:22:29.5376945Z   ! git pull: You are not currently on a branch.
+2026-10-15T13:22:29.5377291Z Please specify which branch you want to rebase against.
+2026-10-15T13:22:29.5377626Z See git-pull(1) for details.
+2026-10-15T13:22:29.5377780Z 
+2026-10-15T13:22:29.5377882Z     git pull <remote> <branch>
+2026-10-15T13:22:29.5378617Z [15.10 16:07 MSK] candidates: 181, new stories: 1, sent: 1, recipients: 2, quotes: 35, trades: 1, stocks: 103, ratios: 0, financials: 0, curves: 5, company files: 6, option chains: 5, MOEX: 239, source errors: 0
+2026-10-15T13:22:29.5379427Z   ! git push failed: fatal: You are not currently on a branch.
+2026-10-15T13:22:29.5379823Z To push the history leading to the current (detached HEAD)
+2026-10-15T13:22:29.5380142Z state now, use
+2026-10-15T13:22:29.5380267Z 
+2026-10-15T13:22:29.5380396Z     git push origin HEAD:<name-of-remote-branch>
+2026-10-15T13:22:29.5380731Z   ! git pull: You are not currently on a branch.
+2026-10-15T13:22:29.5381078Z Please specify which branch you want to rebase against.
+2026-10-15T13:22:29.5381409Z See git-pull(1) for details.
+2026-10-15T13:22:29.5381573Z 
+2026-10-15T13:22:29.5381669Z     git pull <remote> <branch>
+2026-10-15T13:22:29.5382366Z [15.10 16:12 MSK] candidates: 181, new stories: 3, sent: 3, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, company files: 6, option chains: 5, source errors: 0
+2026-10-15T13:22:29.5383278Z   ! git push failed: fatal: You are not currently on a branch.
+2026-10-15T13:22:29.5383672Z To push the history leading to the current (detached HEAD)
+2026-10-15T13:22:29.5383989Z state now, use
+2026-10-15T13:22:29.5384111Z 
+2026-10-15T13:22:29.5384239Z     git push origin HEAD:<name-of-remote-branch>
+2026-10-15T13:22:29.5384563Z   ! git pull: You are not currently on a branch.
+2026-10-15T13:22:29.5384913Z Please specify which branch you want to rebase against.
+2026-10-15T13:22:29.5385240Z See git-pull(1) for details.
+2026-10-15T13:22:29.5385397Z 
+2026-10-15T13:22:29.5385498Z     git pull <remote> <branch>
+2026-10-15T13:22:29.5386182Z [15.10 16:17 MSK] candidates: 182, new stories: 1, sent: 1, recipients: 2, quotes: 35, trades: 0, stocks: 103, ratios: 0, financials: 0, curves: 5, company files: 6, option chains: 5, source errors: 0
+2026-10-15T13:22:29.5386969Z   ! git push failed: fatal: You are not currently on a branch.
+2026-10-15T13:22:29.5387488Z To push the history leading to the current (detached HEAD)
+2026-10-15T13:22:29.5387808Z state now, use
+2026-10-15T13:22:29.5388047Z 
+2026-10-15T13:22:29.5388264Z     git push origin HEAD:<name-of-remote-branch>
+2026-10-15T13:22:29.5388770Z   ! git pull: You are not currently on a branch.
+2026-10-15T13:22:29.5389311Z Please specify which branch you want to rebase against.
+2026-10-15T13:22:29.5389918Z See git-pull(1) for details.
+2026-10-15T13:22:29.5390187Z 
+2026-10-15T13:51:25.0744624Z ##[error]The operation was canceled.
+2026-10-15T13:51:25.0794862Z ##[group]Run git config user.name "news-bot"
+2026-10-15T13:51:25.0795418Z [36;1mgit config user.name "news-bot"[0m
+2026-10-15T13:51:25.0796060Z [36;1mgit config user.email "news-bot@users.noreply.github.com"[0m
+2026-10-15T13:51:25.0796549Z [36;1mgit add state.json 2>/dev/null || true[0m
+2026-10-15T13:51:25.0797207Z [36;1mfor f in docs/data.json docs/stocks.json docs/rates.json docs/fin; do git add "$f" 2>/dev/null || true; done[0m
+2026-10-15T13:51:25.0798103Z [36;1mgit diff --cached --quiet || (git commit -m "news update" && git pull --rebase && git push)[0m
+2026-10-15T13:51:25.0874359Z shell: /usr/bin/bash -e {0}
+2026-10-15T13:51:25.0874746Z env:
+2026-10-15T13:51:25.0875181Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-15T13:51:25.0875925Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+2026-10-15T13:51:25.0876638Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-15T13:51:25.0877310Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-15T13:51:25.0877970Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-15T13:51:25.0878619Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+2026-10-15T13:51:25.0879172Z ##[endgroup]
+2026-10-15T13:51:25.1232782Z Post job cleanup.
+2026-10-15T13:51:25.2075548Z [command]/usr/bin/git version
+2026-10-15T13:51:25.2120558Z git version 2.55.0
+2026-10-15T13:51:25.2159725Z Temporarily overriding HOME='/home/runner/work/_temp/a7704a04-69ce-4f3d-8b7d-0f02daee467f' before making global git config changes
+2026-10-15T13:51:25.2163872Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-15T13:51:25.2166420Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/econnews/econnews
+2026-10-15T13:51:25.2205371Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-15T13:51:25.2241252Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-15T13:51:25.2498782Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-15T13:51:25.2528434Z http.https://github.com/.extraheader
+2026-10-15T13:51:25.2540620Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-10-15T13:51:25.2576480Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-15T13:51:25.2844773Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-15T13:51:25.2884758Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-15T13:51:25.3281217Z Cleaning up orphan processes
+2026-10-15T13:51:25.3476753Z Terminate orphan process: pid (2384) (python)
+2026-10-15T13:51:25.3594477Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
