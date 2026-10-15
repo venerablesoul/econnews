@@ -1,0 +1,77 @@
+{
+ "BTC_1d": {
+  "sec": 1.21,
+  "ok": true,
+  "error": null,
+  "n": 288,
+  "src": "coinbase",
+  "last": 80819.82
+ },
+ "BTC_5d": {
+  "sec": 1.07,
+  "ok": true,
+  "error": null,
+  "n": 120,
+  "src": "coinbase",
+  "last": 80819.82
+ },
+ "BTC_1y": {
+  "sec": 1.41,
+  "ok": true,
+  "error": null,
+  "n": 366,
+  "src": "coinbase",
+  "last": 80819.82
+ },
+ "BTC_5y": {
+  "sec": 1.06,
+  "ok": false,
+  "error": "HTTP 451 https://api1.binance.com/api/v3/klines; Coinbase: HTTP 429 https://api.exchange.coinbase.com/products/BTC-USD/candles",
+  "n": 0,
+  "src": null,
+  "last": null
+ },
+ "ETH_1d": {
+  "sec": 1.13,
+  "ok": false,
+  "error": "HTTP 451 https://api1.binance.com/api/v3/klines; Coinbase: HTTP 429 https://api.exchange.coinbase.com/products/ETH-USD/candles",
+  "n": 0,
+  "src": null,
+  "last": null
+ },
+ "co_AAPL": {
+  "sec": 0.47,
+  "errors": [],
+  "co_keys": [],
+  "opt_full": false,
+  "dvd_live": true,
+  "cf_live": true,
+  "rv": 9,
+  "rv_src": "sector"
+ },
+ "co_MSFT": {
+  "sec": 0.38,
+  "errors": [],
+  "co_keys": [],
+  "opt_full": false,
+  "dvd_live": true,
+  "cf_live": true,
+  "rv": 9,
+  "rv_src": "peers"
+ },
+ "cb_direct_300": {
+  "status": 200,
+  "n": 288,
+  "u": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=300&start=2026-10-14T12:06:46.000Z&end=2026-10-15T12:06:46.000Z"
+ },
+ "cb_direct_3600": {
+  "status": 200,
+  "n": 120,
+  "u": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=3600&start=2026-10-10T12:06:46.000Z&end=2026-10-15T12:06:46.000Z"
+ },
+ "cb_direct_86400": {
+  "status": 200,
+  "n": 300,
+  "u": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=86400&start=2025-12-19T12:06:46.000Z&end=2026-10-15T12:06:46.000Z"
+ }
+}
