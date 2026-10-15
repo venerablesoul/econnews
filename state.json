@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "711fc7d5f7e3fbe4": "2026-10-12T22:04:05.867227+00:00",
-  "4d36921c922b4516": "2026-10-12T22:04:05.867227+00:00",
   "e078ee287825ccec": "2026-10-12T22:14:05.875110+00:00",
   "9427460bc3467cbe": "2026-10-12T22:24:05.859760+00:00",
   "b2bdc183ccf77336": "2026-10-12T22:24:05.859760+00:00",
@@ -1143,31 +1141,10 @@
   "54b3318efcf659af": "2026-10-15T21:47:36.451515+00:00",
   "b2c8368cd80bb1bc": "2026-10-15T21:57:36.412636+00:00",
   "154a8a89c97c4f5a": "2026-10-15T22:02:36.421671+00:00",
-  "e7cd23d01838b883": "2026-10-15T22:02:36.421671+00:00"
+  "e7cd23d01838b883": "2026-10-15T22:02:36.421671+00:00",
+  "ab6d58e98ccf90d8": "2026-10-15T22:07:36.464934+00:00"
  },
  "recent": [
-  {
-   "title": "Russia says its diesel exports may exceed volumes announced by Trump",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPLXBaMl96X25takpKUC15RzZpMEhXT3FwMkM0a0xiZUxuV1FINXU4eXF4emoxdWl5TGZjYkNoeGhOeWdESE8yZXUyRXU2NlpoZ3hENzRoTlRaVTBUMWFTOWpQRlVYel9PbEZhdTVla2U2MS1QU3RDcXR0aEZ2cjFXMXV3ek45YWEwakhFVVBPQ1hRYjRZZk9SVXcxaFAwQ2hxOHBxTmdqTHZNWGVITUgzUWUwd0t1V3phQVBzaHR3?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-12T22:04:05.867227+00:00",
-   "title_ru": "Россия заявляет, что ее экспорт дизельного топлива может превысить объемы, объявленные Трампом",
-   "tags": [
-    "Россия"
-   ]
-  },
-  {
-   "title": "Brazilian stocks are breaking out as investors look for opportunities beyond tech",
-   "link": "https://www.marketwatch.com/story/brazilian-stocks-are-breaking-out-as-investors-look-for-opportunities-beyond-tech-7fbed032?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 2,
-   "ts": "2026-10-12T22:04:05.867227+00:00"
-  },
   {
    "title": "Asian Stocks to Fall After US Chipmaker Selloff: Markets Wrap",
    "link": "https://www.bloomberg.com/news/articles/2026-10-12/stock-market-today-dow-s-p-live-updates",
@@ -12095,6 +12072,16 @@
    "title_ru": "Инвестиционные уроки, извлеченные из 1873 года",
    "lead": "Long before the Great Depression or the 2008 financial crisis, the world endured its first truly global financial crash.",
    "lead_ru": "Задолго до Великой депрессии или финансового кризиса 2008 года мир пережил свой первый по-настоящему глобальный финансовый крах."
+  },
+  {
+   "title": "MSCI weighs downgrading Indonesia to standalone-market status",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxONlg4UjV3N2U0ZUVvYWhOTF9YNEI5c1VCaVd3ZTdCcUl2dFBGUklnZngtVlNhaS1BSFJWUkVqcGluT05jLVNqNll0RWRJQWZOdVRZWnM4TUR2UHJTVGNYbnNOVmgtVWVqcjJWOHdDWTVVME9BVHBiLXBiclQyN3ljTDlfaTdnWDdzcmZTZk1wX2p6b3NXVjJNVE04QU82aGVTQW5xdWEzcm5tNU9OT2JMVVlINA?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-15T22:07:36.464934+00:00",
+   "title_ru": "MSCI взвешивает понижение Индонезии до статуса отдельного рынка"
   }
  ],
  "last_digest": "2026-10-15",
@@ -12117,7 +12104,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 1,
+  "Fed": 0,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
@@ -14971,11 +14958,12 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-15T21:02:36.943801+00:00",
+  "checked": "2026-10-15T22:07:36.464934+00:00",
   "sec_seen": [
    "0001676558-26-000020",
    "0001193125-26-423084",
    "0001255017-26-000006",
+   "0001402256-26-000010",
    "0001193125-26-423051",
    "0001213900-26-109916",
    "0001398344-26-018255",
@@ -15003,9 +14991,10 @@
    "0001193125-26-423056",
    "0002111902-26-000007",
    "0001213900-26-109918",
-   "0001558242-26-000026",
+   "0001536588-26-000041",
    "0001398344-26-018261",
    "0001841752-26-000028",
+   "0000789019-26-000228",
    "0001356681-26-000012",
    "0002014328-26-000010",
    "0001213900-26-109915",
