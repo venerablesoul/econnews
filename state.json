@@ -1143,7 +1143,8 @@
   "0279c9a043c5ea78": "2026-10-15T23:07:36.499685+00:00",
   "7207d5d03e96918a": "2026-10-15T23:12:36.421421+00:00",
   "bc31c6dffc650b7d": "2026-10-15T23:17:36.439568+00:00",
-  "208bc81ed0657e7d": "2026-10-15T23:27:36.418716+00:00"
+  "208bc81ed0657e7d": "2026-10-15T23:27:36.418716+00:00",
+  "6d38451622e1132d": "2026-10-15T23:32:36.449793+00:00"
  },
  "recent": [
   {
@@ -12028,6 +12029,19 @@
    "tags": [
     "China"
    ]
+  },
+  {
+   "title": "US chip stocks set to wipe out $2 trillion after latest selloff",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNVDZEYU5ySFdLYUlmY29XeGxBbzZ1Nk92dHprTE44dzd5V19Yd09NdmUxUFpXMHhxdzYwenJiUjJQRFhPOXhBcHptTW9rY2J2Y01kM1loR3VQMVBXRG9mR2hQbkdWVnNGQVpCN01KelozT1h4aGx0RjRYeUZHRVRCYnlLWlpXWmpwbFRmRG4tSFR1RkNpRHNTb0lueU1VdWlpSjVFVGljZw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-15T23:32:36.449793+00:00",
+   "title_ru": "Американские акции чипов уничтожат $ 2 трлн после последней распродажи",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-15",
@@ -14231,6 +14245,22 @@
    },
    {
     "src": "sec",
+    "id": "1355bbfff2ae22cb",
+    "ticker": "IOT",
+    "company": "Samsara Inc.",
+    "who": "John Bicket",
+    "role": "SEE REMARKS, 10% owner",
+    "type": "sell",
+    "value": 10999458,
+    "shares": 263900,
+    "price": 41.68,
+    "plan": true,
+    "date": "2026-10-15",
+    "disclosed": "2026-10-15",
+    "link": "https://www.sec.gov/Archives/edgar/data/1895106/000189510626000021/0001895106-26-000021-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "14f64eb08e3ef586",
     "ticker": "API",
     "company": "Agora, Inc.",
@@ -14999,13 +15029,13 @@
    "0001104659-26-116318",
    "0001104659-26-116319",
    "0001140361-26-039785",
+   "0002090886-26-000012",
    "0001213900-26-109933",
    "0001569789-26-000017",
    "0001177394-26-000117",
-   "0001193125-26-423068",
    "0001827011-26-000043",
-   "0001286185-26-000004",
    "0001541547-26-000004",
+   "0001895106-26-000021",
    "0000907654-26-000108",
    "0001581760-26-000171",
    "0001522767-26-000206",
