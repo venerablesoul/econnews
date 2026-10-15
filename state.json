@@ -1141,7 +1141,10 @@
   "8b606ddfe079283e": "2026-10-15T15:27:01.060844+00:00",
   "b2222ebcf1c8bc9b": "2026-10-15T15:27:01.060844+00:00",
   "9198a8eecfa212cf": "2026-10-15T15:27:01.060844+00:00",
-  "26feebbbfd045129": "2026-10-15T15:27:01.060844+00:00"
+  "26feebbbfd045129": "2026-10-15T15:27:01.060844+00:00",
+  "07aa7691dddd4cd6": "2026-10-15T15:32:01.147974+00:00",
+  "a56a0f9cb2e98e92": "2026-10-15T15:37:01.068095+00:00",
+  "51c9d1e92bf1de42": "2026-10-15T15:37:01.068095+00:00"
  },
  "recent": [
   {
@@ -11924,6 +11927,36 @@
    "score": 3,
    "ts": "2026-10-15T15:27:01.060844+00:00",
    "title_ru": "Цены производителей в США показали наибольший рост за 4-1/2 года; розничные продажи превзошли ожидания"
+  },
+  {
+   "title": "ECB Officials Get Impatient for Lagarde to Clear Up Future Plans",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-15/ecb-officials-get-impatient-for-lagarde-to-clear-up-future-plans",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-15T15:37:01.068095+00:00",
+   "title_ru": "Чиновники ЕЦБ с нетерпением ждут Лагард, чтобы прояснить планы на будущее",
+   "lead": "European Central Bank policymakers are getting impatient with Christine Lagarde’s refusal to offer clarity on her future, people familiar with the matter said.",
+   "lead_ru": "По словам людей, знакомых с этим вопросом, политики Европейского центрального банка с нетерпением ждут отказа Кристин Лагард внести ясность в ее будущее.",
+   "tags": [
+    "ECB"
+   ]
+  },
+  {
+   "title": "Defense Stock Rout Lures Dip Buyers Looking Past US Election",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-15/defense-stock-rout-lures-dip-buyers-looking-past-election-risk",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-15T15:37:01.068095+00:00",
+   "title_ru": "Заманчивые покупатели Defense Stock Rout, смотрящие на прошлые выборы в США",
+   "lead": "A quick and painful selloff in shares of companies that make military equipment, missiles and planes is attracting investors who are betting the stocks will have an open runway once the midterm elections are over and fuel prices…",
+   "lead_ru": "Быстрая и болезненная распродажа акций компаний, которые производят военную технику, ракеты и самолеты, привлекает инвесторов, которые делают ставку на то, что акции будут иметь открытую взлетно-посадочную полосу после промежуточных выборов и цен на топливо...",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-14",
@@ -11962,7 +11995,7 @@
   "2026-10-15-09"
  ],
  "calendar": {
-  "fetched": "2026-10-15T09:31:58.122245+00:00",
+  "fetched": "2026-10-15T15:32:01.147974+00:00",
   "events": [
    {
     "title": "Bank Holiday",
@@ -13968,6 +14001,22 @@
   "insiders": [
    {
     "src": "sec",
+    "id": "a1ac076c38942b00",
+    "ticker": "CRESY",
+    "company": "CRESUD INC",
+    "who": "Alejandro Gustavo Elsztain",
+    "role": "Director",
+    "type": "buy",
+    "value": 92738,
+    "shares": 8295,
+    "price": 11.18,
+    "plan": false,
+    "date": "2026-10-15",
+    "disclosed": "2026-10-15",
+    "link": "https://www.sec.gov/Archives/edgar/data/2119764/000211976426000032/0002119764-26-000032-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "14f64eb08e3ef586",
     "ticker": "API",
     "company": "Agora, Inc.",
@@ -14335,9 +14384,12 @@
   },
   "checked": "2026-10-15T14:52:01.102659+00:00",
   "sec_seen": [
+   "0001437749-26-032687",
+   "0001104659-26-116094",
+   "0001437749-26-032688",
+   "0002119764-26-000032",
    "0000070858-26-000485",
-   "0001852367-26-000009",
-   "0001104659-26-116094"
+   "0001852367-26-000009"
   ],
   "errors": {}
  }
