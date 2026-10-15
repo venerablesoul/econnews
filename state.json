@@ -985,7 +985,11 @@
   "362d0599f5015e21": "2026-10-15T00:01:24.988251+00:00",
   "f852f415d2fed9c8": "2026-10-15T00:21:24.991549+00:00",
   "2ead67b78a81db6b": "2026-10-15T00:31:24.969279+00:00",
-  "bd0352b86f72a39a": "2026-10-15T00:31:24.969279+00:00"
+  "bd0352b86f72a39a": "2026-10-15T00:31:24.969279+00:00",
+  "4165c37f2d5af7ad": "2026-10-15T00:41:24.990201+00:00",
+  "3166f09145430b6c": "2026-10-15T00:41:24.990201+00:00",
+  "c475bbb726e7beac": "2026-10-15T00:41:24.990201+00:00",
+  "5ce70032bc4b3b4d": "2026-10-15T00:41:24.990201+00:00"
  },
  "recent": [
   {
@@ -10106,6 +10110,58 @@
    "tags": [
     "облигации"
    ]
+  },
+  {
+   "title": "Treasuries Extend Gains as Equities Selloff Dents Risk Sentiment",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-15/treasuries-extend-gains-as-equities-selloff-dents-risk-sentiment",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-15T00:41:24.990201+00:00",
+   "title_ru": "Казначейские облигации увеличивают прибыль, поскольку распродажа акций снижает настроение риска",
+   "lead": "US Treasuries rallied across the curve as a global equities selloff spurred demand for haven assets.",
+   "lead_ru": "Казначейские облигации США выросли поперек кривой, поскольку глобальная распродажа акций стимулировала спрос на активы-убежища.",
+   "tags": [
+    "облигации",
+    "рынки"
+   ]
+  },
+  {
+   "title": "APU0000712112 - BLS Data",
+   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE8tcktBYXB6aDlJZ2E0NjBBamQyMVJiNXRaSjV6SE9DZkpWd1dZRnNUWUVyY3pFYjljcE5XQWFsemJKVjFFX2dmTU44em90M0xMQk5xOUw3Vk4?oc=5",
+   "sources": [
+    "Статистика труда США (BLS)"
+   ],
+   "score": 4,
+   "ts": "2026-10-15T00:41:24.990201+00:00",
+   "title_ru": "APU0000712112 — Данные BLS"
+  },
+  {
+   "title": "Registered nurses - Bureau of Labor Statistics",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBTbk1aLVhEN0RCM2lsSmtFMFdCVHltQlVGMVZqZUJ5a1dvNVVnR1dJUTlWX1VkUVA5UENVUkhfR3BUWkQ5LTFrT3J0M3pSNjlZMVVicHUzN3lJS0sxSkx3ZF92MnVLRmZXUlVIRUd4TQ?oc=5",
+   "sources": [
+    "Статистика труда США (BLS)"
+   ],
+   "score": 4,
+   "ts": "2026-10-15T00:41:24.990201+00:00",
+   "title_ru": "Дипломированные медсестры - Бюро статистики труда"
+  },
+  {
+   "title": "Bolivia Revamps Gold Export Rules in Bid to Attract Dollars",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-15/bolivia-revamps-gold-export-rules-in-bid-to-attract-dollars",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-15T00:41:24.990201+00:00",
+   "title_ru": "Боливия меняет правила экспорта золота в попытке привлечь доллары",
+   "lead": "Bolivia aims to boost private gold exports while increasing dollar inflows to domestic banks in a reform backed by President Rodrigo Paz that ends a three-year-old system overseen by the central bank.",
+   "lead_ru": "Боливия стремится увеличить частный экспорт золота, одновременно увеличивая приток долларов в отечественные банки в рамках реформы, поддержанной президентом Родриго Пасом, которая положила конец трехлетней системе, контролируемой центральным банком.",
+   "tags": [
+    "золото",
+    "доллар"
+   ]
   }
  ],
  "last_digest": "2026-10-14",
@@ -12163,7 +12219,7 @@
    "house": true,
    "senate": true
   },
-  "checked": "2026-10-14T23:31:24.995867+00:00",
+  "checked": "2026-10-15T00:41:24.990201+00:00",
   "sec_seen": [],
   "errors": {
    "sec": "HTTPError: HTTP Error 403: Forbidden"
