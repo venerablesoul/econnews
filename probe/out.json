@@ -1,21 +1,162 @@
 {
- "env_sec_ua_set": false,
- "sec_default": {
-  "ok": false,
-  "err": "HTTPError: HTTP Error 403: Forbidden",
-  "tb": "f.parent.error(\n               ^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/urllib/request.py\", line 559, in error\n    return self._call_chain(*args)\n           ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/urllib/request.py\", line 492, in _call_chain\n    result = func(*args)\n             ^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/urllib/request.py\", line 639, in http_error_default\n    raise HTTPError(req.full_url, code, msg, hdrs, fp)\nurllib.error.HTTPError: HTTP Error 403: Forbidden\n"
- },
- "sec_plain": {
-  "ok": false,
-  "err": "HTTPError: HTTP Error 403: Forbidden",
-  "tb": "f.parent.error(\n               ^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/urllib/request.py\", line 559, in error\n    return self._call_chain(*args)\n           ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/urllib/request.py\", line 492, in _call_chain\n    result = func(*args)\n             ^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/urllib/request.py\", line 639, in http_error_default\n    raise HTTPError(req.full_url, code, msg, hdrs, fp)\nurllib.error.HTTPError: HTTP Error 403: Forbidden\n"
- },
- "update_financials": {
-  "n": 0,
-  "files": []
- },
- "gtr_en": [
+ "research|tickers|iden": [
   200,
-  "[[[\"Sberbank raised its profit forecast\",\"Сбербанк повысил прогноз по прибыли\",null,null,3,null,null,[[]],[[[\"e38d47a4f17c466dfca5ed67f09b5027\",\"ru_en_2023q1.md\"]]]]],null,\"ru\",null,null,null,0.6650168,[],[[\"ru\"],null,[0.6650168],[\"ru\"]]]"
+  799925
+ ],
+ "research|tickers|gzip": [
+  200,
+  799925
+ ],
+ "research|facts|iden": [
+  200,
+  3789099
+ ],
+ "research|facts|gzip": [
+  200,
+  3789099
+ ],
+ "research|concept|iden": [
+  200,
+  50767
+ ],
+ "research|concept|gzip": [
+  200,
+  50767
+ ],
+ "research|submissions|iden": [
+  200,
+  163882
+ ],
+ "research|submissions|gzip": [
+  200,
+  163882
+ ],
+ "research|feed|iden": [
+  200,
+  6004
+ ],
+ "research|feed|gzip": [
+  200,
+  6004
+ ],
+ "trades|tickers|iden": [
+  403,
+  "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\""
+ ],
+ "trades|tickers|gzip": [
+  403,
+  "\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003�U�n�6\u0010}�WL\u0015,�\u0002��\u001d'��\u0018H��\u0005�m����)���D�DjI�Vo��#�N\u001c4-�\u00166,J�9<s�p�~w��d���\u001a\n[�0�����\tx~\u0018�6�����\n~�0��\t� ��f�\b+�d"
+ ],
+ "trades|facts|iden": [
+  403,
+  "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\""
+ ],
+ "trades|facts|gzip": [
+  403,
+  "\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003�X�n�F\u0016�笠��@\u0002X�d'N�(�M��\u001ah\u0013#����`H\u000e�Y�3��P��\r���O������\u0019R�\u0013\u0017m�\b������{���^�=[�p�V�*����o��h0L�\u000f�gI�b���"
+ ],
+ "trades|concept|iden": [
+  403,
+  "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\""
+ ],
+ "trades|concept|gzip": [
+  403,
+  "\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003�X�n�F\u0016�笠��@\u0002X�d'N�(�M��\u001ah\u0013#����`H\u000e�Y�3��P��\r���O������\u0019R�\u0013\u0017m�\b������{���^�=[�p�V�*����o��h0L�\u000f�gI�b���"
+ ],
+ "trades|submissions|iden": [
+  403,
+  "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\""
+ ],
+ "trades|submissions|gzip": [
+  403,
+  "\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003�X�n�F\u0016�笠��@\u0002X�d'N�(�M��\u001ah\u0013#����`H\u000e�Y�3��P��\r���O������\u0019R�\u0013\u0017m�\b������{���^�=[�p�V�*����o��h0L�\u000f�gI�b���"
+ ],
+ "trades|feed|iden": [
+  403,
+  "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\""
+ ],
+ "trades|feed|gzip": [
+  403,
+  "\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003�X�n�F\u0016��8��@\u0002X�d�7E�n�\\j�M�Xn���!9�fMΰ3Cɪ7���>Aߣ��O��̐���h�E���̹�;�������\u000f��h᫒.�����z�$�px�$/g/��"
+ ],
+ "sample|tickers|iden": [
+  200,
+  799925
+ ],
+ "sample|tickers|gzip": [
+  200,
+  799925
+ ],
+ "sample|facts|iden": [
+  200,
+  3789099
+ ],
+ "sample|facts|gzip": [
+  200,
+  3789099
+ ],
+ "sample|concept|iden": [
+  200,
+  50767
+ ],
+ "sample|concept|gzip": [
+  200,
+  50767
+ ],
+ "sample|submissions|iden": [
+  200,
+  163882
+ ],
+ "sample|submissions|gzip": [
+  200,
+  163882
+ ],
+ "sample|feed|iden": [
+  200,
+  6004
+ ],
+ "sample|feed|gzip": [
+  200,
+  6004
+ ],
+ "browser|tickers|iden": [
+  403,
+  "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\""
+ ],
+ "browser|tickers|gzip": [
+  403,
+  "\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003�Uio�6\u0010��_1U�h\u000b�.;NlY1�:�\u0003�m�D��)���D�DjI��7���É��\u0005�EI3�o�<���~�%̯!�e\u0001�>}�����o���_%W�����'\b�\u0000\u0012ͤ\u0011V(�\n"
+ ],
+ "browser|facts|iden": [
+  200,
+  3789099
+ ],
+ "browser|facts|gzip": [
+  200,
+  3789099
+ ],
+ "browser|concept|iden": [
+  200,
+  50767
+ ],
+ "browser|concept|gzip": [
+  200,
+  50767
+ ],
+ "browser|submissions|iden": [
+  200,
+  163882
+ ],
+ "browser|submissions|gzip": [
+  200,
+  163882
+ ],
+ "browser|feed|iden": [
+  403,
+  "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\""
+ ],
+ "browser|feed|gzip": [
+  403,
+  "\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\u0003�X�n�F\u0016�笠��@\u0002X�dǎ-+�M��\u001ah\u0013#���/cH��Y�3��P��\r���O������\u0019R�\u0013\u0017m�\b������{���^�;��p����,����o/Ω�O����I�r����"
  ]
 }
