@@ -1201,7 +1201,10 @@
   "2d54e3080f5340de": "2026-10-15T15:07:01.036638+00:00",
   "88671525009fa835": "2026-10-15T15:07:01.036638+00:00",
   "f68ed560b81da6fb": "2026-10-15T15:07:01.036638+00:00",
-  "2f5106e3eb1c26cf": "2026-10-15T15:07:01.036638+00:00"
+  "2f5106e3eb1c26cf": "2026-10-15T15:07:01.036638+00:00",
+  "005ce5c2e65e5dc2": "2026-10-15T15:12:01.118888+00:00",
+  "6a66304d897bad33": "2026-10-15T15:12:01.118888+00:00",
+  "63df38586185b372": "2026-10-15T15:12:01.118888+00:00"
  },
  "recent": [
   {
@@ -12689,6 +12692,46 @@
    "tags": [
     "dollar"
    ]
+  },
+  {
+   "title": "France and Germany to allow UK to join EU car policy if it aligns on China tariffs",
+   "link": "https://www.ft.com/content/f8e99974-9f18-4141-ac4a-1f072b7ebb24?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 5,
+   "ts": "2026-10-15T15:12:01.118888+00:00",
+   "title_ru": "Франция и Германия разрешат Великобритании присоединиться к политике ЕС в отношении автомобилей, если она согласится с тарифами Китая",
+   "lead": "Paris and Berlin strike deal on bloc’s ‘Made in Europe’ subsidy programme and combustion engine phaseout",
+   "lead_ru": "Париж и Берлин заключили соглашение о блоковой программе субсидирования «Сделано в Европе» и поэтапном отказе от двигателей внутреннего сгорания",
+   "tags": [
+    "China",
+    "tariffs"
+   ]
+  },
+  {
+   "title": "CoreWeave Slides on Debt; TSMC Moves on Outlook | Stock Movers",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-15/coreweave-slides-on-debt-tsmc-moves-on-outlook-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-15T15:12:01.118888+00:00",
+   "lead": "On this episode of Stock Movers: - CoreWeave (CRWV) shares are continuing their slide amid a major issue with their debt.",
+   "lead_ru": "В этом выпуске Stock Movers: - Акции CoreWeave (CRWV) продолжают свое падение на фоне серьезной проблемы с их долгом.",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "WTO chief sees lasting impact on trade from Middle East war and geopolitics",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPdmFldXBLU0N2MEtrUHZGUXFMNEVGR0lsYzJwZDJwdVV0T0ZvN0FENHlMOXdmekY4elZOb1BsV04ydDZMazlQRlREcmowSUFKVkRHYXpXUlRnN24zcFpXUlRYWnNMNE5pN1dDVFZZb21WMzl1SnJZam1GOGFLemtxVjVMUjE2eTFrTEpZNGwtam5yanJjeWFyRkpIQTdtU21sRDZ2MVNObEZJNW9T?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-15T15:12:01.118888+00:00",
+   "title_ru": "Глава ВТО видит долгосрочное влияние ближневосточной войны и геополитики на торговлю"
   }
  ],
  "last_digest": "2026-10-14",
@@ -14781,6 +14824,22 @@
    },
    {
     "src": "sec",
+    "id": "f920bdb1c9e60ffb",
+    "ticker": "VMO",
+    "company": "Invesco Municipal Opportunity Trust",
+    "who": "Setcavage Rebecca",
+    "role": "",
+    "type": "buy",
+    "value": 25920,
+    "shares": 3000,
+    "price": 8.64,
+    "plan": false,
+    "date": "2026-10-13",
+    "disclosed": "2026-10-15",
+    "link": "https://www.sec.gov/Archives/edgar/data/1852367/000185236726000009/0001852367-26-000009-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "1d7ee3ced406c514",
     "ticker": "NEOV",
     "company": "NeoVolta Inc.",
@@ -15068,8 +15127,8 @@
   },
   "checked": "2026-10-15T14:52:01.102659+00:00",
   "sec_seen": [
-   "0001185185-26-004770",
-   "0000070858-26-000485"
+   "0000070858-26-000485",
+   "0001852367-26-000009"
   ],
   "errors": {}
  }
