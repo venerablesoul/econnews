@@ -1141,7 +1141,9 @@
   "ff801a45374ded71": "2026-10-15T21:37:36.413635+00:00",
   "9ea2bd65f169f9e7": "2026-10-15T21:47:36.451515+00:00",
   "54b3318efcf659af": "2026-10-15T21:47:36.451515+00:00",
-  "b2c8368cd80bb1bc": "2026-10-15T21:57:36.412636+00:00"
+  "b2c8368cd80bb1bc": "2026-10-15T21:57:36.412636+00:00",
+  "154a8a89c97c4f5a": "2026-10-15T22:02:36.421671+00:00",
+  "e7cd23d01838b883": "2026-10-15T22:02:36.421671+00:00"
  },
  "recent": [
   {
@@ -12066,6 +12068,33 @@
     "inflation",
     "bonds"
    ]
+  },
+  {
+   "title": "How a midterm sweep by Democrats could turn this tech selloff into a tech crash",
+   "link": "https://www.marketwatch.com/story/how-a-midterm-sweep-by-democrats-could-turn-this-tech-selloff-into-a-tech-crash-a1d1a82f?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 6,
+   "ts": "2026-10-15T22:02:36.421671+00:00",
+   "title_ru": "Как среднесрочная зачистка демократами может превратить эту техническую распродажу в технический крах",
+   "lead": "Popular AI names are under pressure again this week — but the pain could worsen after the Nov. 3 election.",
+   "lead_ru": "На этой неделе популярные имена ИИ снова находятся под давлением, но боль может усилиться после выборов 3 ноября.",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "The Investment Lessons Learned from 1873",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-15/the-investment-lessons-learned-from-1873-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-15T22:02:36.421671+00:00",
+   "title_ru": "Инвестиционные уроки, извлеченные из 1873 года",
+   "lead": "Long before the Great Depression or the 2008 financial crisis, the world endured its first truly global financial crash.",
+   "lead_ru": "Задолго до Великой депрессии или финансового кризиса 2008 года мир пережил свой первый по-настоящему глобальный финансовый крах."
   }
  ],
  "last_digest": "2026-10-15",
@@ -12088,7 +12117,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 0,
+  "Fed": 1,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
@@ -14621,6 +14650,22 @@
    },
    {
     "src": "sec",
+    "id": "be5b230c3d81f3db",
+    "ticker": "RDDT",
+    "company": "Reddit, Inc.",
+    "who": "Steve Ladd Huffman",
+    "role": "CEO, 10% owner",
+    "type": "sell",
+    "value": 2744446,
+    "shares": 17308,
+    "price": 158.57,
+    "plan": true,
+    "date": "2026-10-13",
+    "disclosed": "2026-10-15",
+    "link": "https://www.sec.gov/Archives/edgar/data/1827011/000182701126000043/0001827011-26-000043-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "d52eddda71d18b93",
     "ticker": "DBX",
     "company": "DROPBOX, INC.",
@@ -14929,6 +14974,7 @@
   "checked": "2026-10-15T21:02:36.943801+00:00",
   "sec_seen": [
    "0001676558-26-000020",
+   "0001193125-26-423084",
    "0001255017-26-000006",
    "0001193125-26-423051",
    "0001213900-26-109916",
@@ -14940,6 +14986,7 @@
    "0001754904-26-000004",
    "0001193125-26-423068",
    "0001280910-26-000002",
+   "0001827011-26-000043",
    "0001488301-26-000004",
    "0001800751-26-000003",
    "0001286185-26-000004",
@@ -14950,6 +14997,7 @@
    "0001209170-26-000016",
    "0001257210-26-000005",
    "0001529329-26-000024",
+   "0001688974-26-000005",
    "0001213900-26-109919",
    "0001768695-26-000008",
    "0001193125-26-423056",
