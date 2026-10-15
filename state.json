@@ -1,12 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "ca7508941492ad65": "2026-10-12T21:04:05.925954+00:00",
-  "24c01e0e944f16f6": "2026-10-12T21:04:05.925954+00:00",
-  "2b2186a4c3eebf8d": "2026-10-12T21:04:05.925954+00:00",
-  "4c01ee3944f5687b": "2026-10-12T21:04:05.925954+00:00",
-  "f7cb9804f098cabe": "2026-10-12T21:04:05.925954+00:00",
-  "e4527e3ab550419f": "2026-10-12T21:04:05.925954+00:00",
   "214ecf7c407dd69a": "2026-10-12T21:14:05.897243+00:00",
   "792442693243bf5d": "2026-10-12T21:24:05.882177+00:00",
   "d82838bd055dadfb": "2026-10-12T21:24:05.882177+00:00",
@@ -1147,45 +1141,11 @@
   "f99e27a64fd5f0ca": "2026-10-15T20:57:36.501642+00:00",
   "958ebbebf9390587": "2026-10-15T20:57:36.501642+00:00",
   "7b9a2b7070b4f1bc": "2026-10-15T20:57:36.501642+00:00",
-  "347db45bd002ef43": "2026-10-15T20:57:36.501642+00:00"
+  "347db45bd002ef43": "2026-10-15T20:57:36.501642+00:00",
+  "6c97feaf5b06ce49": "2026-10-15T21:07:36.473498+00:00",
+  "da921abe9002ca36": "2026-10-15T21:07:36.473498+00:00"
  },
  "recent": [
-  {
-   "title": "Modi’s Free Trade Push Could Lead to $140 Billion GDP Gain for India",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-12/modi-s-free-trade-push-could-lead-to-140-billion-gdp-gain-for-india",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-12T21:04:05.925954+00:00",
-   "title_ru": "Продвижение Моди по свободной торговле может привести к увеличению ВВП Индии на 140 миллиардов долларов",
-   "lead": "A more protectionist US could prove an unexpected tailwind for India’s economy.",
-   "lead_ru": "Более протекционистский подход в США может оказаться неожиданным попутным ветром для экономики Индии.",
-   "tags": [
-    "ВВП"
-   ]
-  },
-  {
-   "title": "How the AI Boom Is Fueling Global Financial Risks",
-   "link": "https://www.bloomberg.com/news/features/2026-10-12/how-the-ai-boom-is-fueling-global-financial-risks",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-12T21:04:05.925954+00:00",
-   "title_ru": "Как бум искусственного интеллекта усиливает глобальные финансовые риски",
-   "lead": "A circular funding model is accelerating the AI boom, but also amplifying imbalances — reviving memories of the global financial crisis",
-   "lead_ru": "Модель циклического финансирования ускоряет бум искусственного интеллекта, но также усиливает дисбаланс, возрождая воспоминания о мировом финансовом кризисе."
-  },
-  {
-   "title": "Счетная палата выступила за повышение налога на сверхдоходы для золота",
-   "link": "https://www.rbc.ru/business/13/10/2026/6acd15b87b2ea2eff04eaa93",
-   "sources": [
-    "РБК"
-   ],
-   "score": 1,
-   "ts": "2026-10-12T21:04:05.925954+00:00"
-  },
   {
    "title": "Rising US Bond Yields Show No Sign of Slowing",
    "link": "https://www.bloomberg.com/news/videos/2026-10-12/rising-us-bond-yields-show-no-sign-of-slowing-video",
@@ -12154,6 +12114,28 @@
    "score": 3,
    "ts": "2026-10-15T20:57:36.501642+00:00",
    "title_ru": "США задерживают правило небольшого импорта, которое вызвало тревогу по поводу стоимости отпускаемых по рецепту лекарств"
+  },
+  {
+   "title": "EXCLUSIVE Investors temper Anthropic IPO valuation expectations over revenue growth slowdown, sources say",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQRW4tSGppV2U0ZWtvaXBsQmlyaDVVLVFCSmJNMWdmMHpod0FWd25kUXRNQzFvZXJPTmhoQUNvMlFrQzI3NjBQVG9McWFPRHdUODhMbVItOGg4S0N3ZmJ4R2psZVd1aWFZM2M0aEY4R3VaYnFZWUxhOFZiRXAxTnc5UG9hMm1ERGpKbURkX3BWYzQ5UWl3THBFTDhWUWR0SVhUSWJsekpMZjM4OUZRQl9BVmY2djVKRENDSldCSUpOWmdvbHVK?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-15T21:07:36.473498+00:00",
+   "title_ru": "ЭКСКЛЮЗИВНЫЕ инвесторы сдерживают ожидания антропной оценки IPO из-за замедления роста выручки, говорят источники"
+  },
+  {
+   "title": "Indonesia’s Emerging Market Status Under Consultation, MSCI Says",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-15/indonesia-s-emerging-market-status-under-consultation-msci-says",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-15T21:07:36.473498+00:00",
+   "title_ru": "По словам MSCI, статус развивающегося рынка Индонезии находится в стадии консультаций",
+   "lead": "MSCI launched a consultation on proposals to reclassify its Indonesia equity indexes from Emerging Market to Standalone Market status, the provider said in a Thursday statement.",
+   "lead_ru": "MSCI начала консультации по предложениям о реклассификации своих индексов акций в Индонезии со статуса развивающихся рынков на статус автономных рынков, говорится в заявлении провайдера в четверг."
   }
  ],
  "last_digest": "2026-10-15",
@@ -14645,6 +14627,22 @@
    },
    {
     "src": "sec",
+    "id": "7bcaa36ebee91bab",
+    "ticker": "APLD",
+    "company": "Applied Digital Corp.",
+    "who": "Richard N Nottenburg",
+    "role": "Director",
+    "type": "sell",
+    "value": 682500,
+    "shares": 31250,
+    "price": 21.84,
+    "plan": false,
+    "date": "2026-10-13",
+    "disclosed": "2026-10-15",
+    "link": "https://www.sec.gov/Archives/edgar/data/1166816/000116681626000007/0001166816-26-000007-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "d52eddda71d18b93",
     "ticker": "DBX",
     "company": "DROPBOX, INC.",
@@ -14950,35 +14948,34 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-15T20:02:36.426418+00:00",
+  "checked": "2026-10-15T21:02:36.943801+00:00",
   "sec_seen": [
    "0000905148-26-004480",
-   "0001722024-26-000004",
-   "0001783879-26-000153",
-   "0001106578-26-000164",
    "0001193125-26-422967",
    "0001193125-26-422964",
-   "0001193125-26-422935",
    "0001193125-26-422985",
    "0001940272-26-000025",
    "0001897944-26-000014",
-   "0002064832-26-000333",
-   "0001683168-26-007902",
    "0001773751-26-000227",
    "0001956098-26-000024",
    "0001193125-26-422975",
+   "0001166816-26-000007",
    "0001193125-26-422968",
    "0002050857-26-000018",
-   "0001193125-26-422942",
+   "0001193125-26-423000",
    "0001227654-26-000077",
+   "0000006955-26-000067",
    "0001859690-26-000193",
+   "0001610717-26-000441",
    "0001193125-26-422959",
    "0001193125-26-422981",
-   "0001193125-26-422937",
+   "0000006955-26-000064",
    "0001628280-26-066012",
+   "0001817160-26-000021",
    "0001193125-26-422957",
    "0001193125-26-422989",
-   "0001193125-26-422973"
+   "0001193125-26-422973",
+   "0000006955-26-000069"
   ],
   "errors": {}
  }
