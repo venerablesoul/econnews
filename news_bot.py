@@ -1329,7 +1329,8 @@ def git_sync(stage, repo):
         if r.returncode:
             print("  ! git pull:", (r.stderr or r.stdout).strip()[:300])
         return
-    for f in ("state.json", "docs/data.json", "docs/stocks.json", "docs/rates.json", "docs/fin"):
+    for f in ("state.json", "docs/data.json", "docs/stocks.json", "docs/rates.json", "docs/fin", "docs/co", "docs/opt",
+              "docs/options.json", "docs/macro.json", "docs/moex.json"):
         if os.path.exists(os.path.join(repo, f)):
             git("add", f)
     if git("diff", "--cached", "--quiet").returncode == 0:

@@ -83,6 +83,35 @@ else:
     if not a or not q or q[0].get("rev") is None:
         problems.append(f"{ls[0]} has no revenue")
 
+# deep company data, option snapshots, IMF forecasts and the Moscow Exchange (company.py, options.py, macro.py, moex.py)
+co = git("ls-tree", "--name-only", "origin/main", "docs/co/").stdout.split()
+op = git("ls-tree", "--name-only", "origin/main", "docs/opt/").stdout.split()
+print(f"docs/co: company files {len(co)} · docs/opt: option snapshots {len(op)}")
+if len(co) < 4:
+    problems.append("fewer than 4 company files (docs/co)")
+else:
+    c = show(co[0])
+    print(f"  {co[0]}: estimates {len(c.get('est') or [])}, rating changes {len(c.get('ratings') or [])}, "
+          f"institutions {len((c.get('holders') or {}).get('top') or [])}, dividends {len((c.get('div') or {}).get('hist') or [])}, wiki {sorted(c.get('wiki') or {})}")
+    if not c.get("est") or not (c.get("holders") or {}).get("top"):
+        problems.append(f"{co[0]} has no estimates or holders")
+if len(op) < 2:
+    problems.append("fewer than 2 option snapshots (docs/opt)")
+else:
+    o = show(op[0])
+    print(f"  {op[0]}: expiries {len(o.get('exp') or [])}, chains {len(o.get('chains') or [])}, IV30 {o.get('iv30')}")
+    if not o.get("chains"):
+        problems.append(f"{op[0]} has no chains")
+for name, check in (("docs/macro.json", lambda x: len(x.get("rows") or []) >= 20), ("docs/moex.json", lambda x: len(x.get("rows") or []) >= 50),
+                    ("docs/options.json", lambda x: len(x.get("rows") or []) >= 2)):
+    try:
+        x = show(name)
+        print(f"{name}: updated {x.get('updated')}, rows {len(x.get('rows') or [])}")
+        if not check(x):
+            problems.append(name + " has too few rows")
+    except FileNotFoundError:
+        problems.append("no " + name)
+
 d = show("docs/data.json")
 news = d.get("news") or []
 tk = [n for n in news if n.get("tk")]
