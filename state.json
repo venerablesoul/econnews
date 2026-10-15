@@ -1133,7 +1133,11 @@
   "b8727310cf1b7935": "2026-10-15T11:12:29.262464+00:00",
   "b96be7b3a74893bc": "2026-10-15T11:12:29.262464+00:00",
   "778ee9d96ecb21c6": "2026-10-15T11:22:29.407349+00:00",
-  "c9821591a08aa16a": "2026-10-15T11:22:29.407349+00:00"
+  "c9821591a08aa16a": "2026-10-15T11:22:29.407349+00:00",
+  "c7a679049e7f8283": "2026-10-15T11:32:29.296628+00:00",
+  "09d0c2086643c32d": "2026-10-15T11:32:29.296628+00:00",
+  "1f11764e5d5b1095": "2026-10-15T11:32:29.296628+00:00",
+  "5129f2fe4a8a822b": "2026-10-15T11:32:29.296628+00:00"
  },
  "recent": [
   {
@@ -11863,6 +11867,55 @@
    ],
    "score": 2,
    "ts": "2026-10-15T11:22:29.407349+00:00"
+  },
+  {
+   "title": "Pound rises against weaker dollar, UK GDP unexpectedly rises",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOUGlrUlN1d29DekMyUDJCVW9SQ3B3aURmNlhsWDlmeGI4bGhndWlKMURKc0dFWjRnN1JzTGowRTdNNklvWjNjMFh5eWgybjBKalNpVy1YWEY2dXgwZjZ3bUNfVDJpeENvTzVENVZQb3l5ZDU3ZjRpVUhyX0pvT1gyMjU0em41SWFGV3R3RlROdVdLX1hBWEFoYWZVb29GM1N5Q1k0TTZsRQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-15T11:32:29.296628+00:00",
+   "title_ru": "Фунт растет по отношению к более слабому доллару, ВВП Великобритании неожиданно растет",
+   "tags": [
+    "dollar",
+    "GDP"
+   ]
+  },
+  {
+   "title": "Germany’s Economy Is Looking Up. For Merz, It May Be Too Late",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPMDJreGRQajU5SWF6Ry1tUElfelZxdDZQYXZYTXVKLVp1SC1sYjJ2Qmo2dF9uNkpLeDNHbkdMdTh2ZUdmcjJmcXdaX2RhVjVFWDhRazh5blo4dU5ZLUFrRGsyNm0zWUZDWlRqNXR3b3NweVN6OUJxX0ZkZmJGV24xcmtiSTVacFN6dGxyQXV1My13OEZldFRYaHF3MGNtUnpfMmsyRFhpQy1Tb2V1S2FBdVliSQ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-15T11:32:29.296628+00:00",
+   "title_ru": "Экономика Германии находится на подъеме. Для Мерца может быть слишком поздно"
+  },
+  {
+   "title": "Oil shipping costs spike, lifting prices from pump to grocery",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQbHR0bzBmX1E0Y3RlbjBYNTQwY2dUSENTVFJ5ajc5aXo1bjFqWGpyRmVROERicENVczd6RWJSMHRYR3dEVWJKNDdaS25NNXVEQ29xTThlMXVjQk1NRjdyZkkwR3NVaktQYXd0YzZFcEdYbHhDZE1kXzZnY3JQeGpnLWNXRzRxTnV1emlYdS1mOEdTd2JBVTJfSkpHWlZva3g0UUFMNm9ORQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-15T11:32:29.296628+00:00",
+   "title_ru": "Затраты на транспортировку нефти растут, цены поднимаются от заправочных до продуктовых",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "John Healey vows to give ‘breathing space’ to consumers and businesses in first budget",
+   "link": "https://www.theguardian.com/politics/2026/oct/15/john-healey-first-budget-breathing-space-consumers-businesses-imf-living-costs",
+   "sources": [
+    "The Guardian"
+   ],
+   "score": 3,
+   "ts": "2026-10-15T11:32:29.296628+00:00",
+   "title_ru": "Джон Хили обещает дать «передышку» потребителям и бизнесу в первом бюджете",
+   "lead": "Speaking at IMF annual meeting in Bangkok, chancellor says he will stick to fiscal rules while recognising business and living costs UK politics live – latest updates Business live – latest updates John Healey has promised to use…",
+   "lead_ru": "Выступая на ежегодном собрании МВФ в Бангкоке, канцлер заявил, что будет придерживаться бюджетных правил, признавая при этом затраты на бизнес и жизнь. Британская политика в прямом эфире – последние новости Бизнес в прямом эфире – последние новости Джон Хили пообещал использовать…"
   }
  ],
  "last_digest": "2026-10-14",
@@ -12798,7 +12851,11 @@
   "USD|2026-10-14T12:30:00+00:00|Core CPI y/y",
   "USD|2026-10-14T12:30:00+00:00|CPI m/m",
   "USD|2026-10-14T12:30:00+00:00|CPI y/y",
-  "GBP|2026-10-15T06:00:00+00:00|GDP m/m"
+  "GBP|2026-10-15T06:00:00+00:00|GDP m/m",
+  "USD|2026-10-15T12:30:00+00:00|Core PPI m/m",
+  "USD|2026-10-15T12:30:00+00:00|Core Retail Sales m/m",
+  "USD|2026-10-15T12:30:00+00:00|PPI m/m",
+  "USD|2026-10-15T12:30:00+00:00|Retail Sales m/m"
  ],
  "last_morning": "2026-10-15",
  "all_down_alerted": false,
