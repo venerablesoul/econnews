@@ -165,16 +165,13 @@ export async function checkAlerts(env, now = new Date()) {
     if (x.k === "news") { keep.push(x); continue; }
     const q = quotes[x.s];
     if (!q || q.px == null) { keep.push(x); continue; }
-    let hit = false, text = "";
-    const X = L(await getLang(env, x.c));
-    if (x.k === "px") {
-      hit = x.op === ">" ? q.px >= x.v : q.px <= x.v;
-      text = X.t("fire_px", esc(x.s), x.op, X.price(x.v), X.price(q.px), X.pct(q.ch)) + X.t("fire_px_note", esc(x.s), x.op, x.v);
-    } else if (x.k === "chg") {
-      hit = q.ch != null && Math.abs(q.ch) >= x.v && x.day !== today;
-      text = X.t("fire_chg", esc(x.s), q.ch > 0, X.pct(q.ch), X.price(q.px)) + X.t("fire_chg_note", X.fmt(x.v, x.v % 1 ? 1 : 0));
-    }
+    const hit = x.k === "px" ? (x.op === ">" ? q.px >= x.v : q.px <= x.v)
+      : x.k === "chg" ? q.ch != null && Math.abs(q.ch) >= x.v && x.day !== today : false;
     if (!hit) { keep.push(x); continue; }
+    const X = L(await getLang(env, x.c));   // the language is read only when there is something to send
+    const text = x.k === "px"
+      ? X.t("fire_px", esc(x.s), x.op, X.price(x.v), X.price(q.px), X.pct(q.ch)) + X.t("fire_px_note", esc(x.s), x.op, x.v)
+      : X.t("fire_chg", esc(x.s), q.ch > 0, X.pct(q.ch), X.price(q.px)) + X.t("fire_chg_note", X.fmt(x.v, x.v % 1 ? 1 : 0));
     const r = await send(env, x.c, text);
     fired++;
     changed = true;

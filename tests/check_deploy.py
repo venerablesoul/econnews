@@ -12,7 +12,7 @@ if not want:
     want = subprocess.run(["git", "-C", ROOT, "log", "-1", "--format=%H", "--", "worker", ".github/workflows/worker.yml"],
                           capture_output=True, text=True).stdout.strip()
 runs = json.loads(urllib.request.urlopen(f"https://api.github.com/repos/{REPO}/actions/workflows/worker.yml/runs?per_page=10").read())["workflow_runs"]
-mine = [r for r in runs if r["head_sha"] == want]
+mine = [r for r in runs if want and r["head_sha"].startswith(want)]   # a full or short sha
 if not mine:
     # the deploy may have run on a later commit (the bot adds its own data commits)
     log = subprocess.run(["git", "-C", ROOT, "rev-list", "origin/main"], capture_output=True, text=True).stdout.split()
