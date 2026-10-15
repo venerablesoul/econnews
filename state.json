@@ -1068,7 +1068,8 @@
   "515ff6eaf7b5d4f9": "2026-10-15T05:36:58.365028+00:00",
   "e8bbca3fd376fbc4": "2026-10-15T05:36:58.365028+00:00",
   "5bd83f9856748f4a": "2026-10-15T05:41:58.316299+00:00",
-  "29350db746d7e77e": "2026-10-15T05:46:58.102796+00:00"
+  "29350db746d7e77e": "2026-10-15T05:46:58.102796+00:00",
+  "322bf54c78f064de": "2026-10-15T06:01:58.090645+00:00"
  },
  "recent": [
   {
@@ -9694,7 +9695,9 @@
     "ставки",
     "инфляция",
     "ВВП"
-   ]
+   ],
+   "title_en": "The inflation target has moved further // Analysts agreed on a small acceleration in GDP growth with higher prices and rates",
+   "lead_en": "The consensus forecast of leading economists surveyed by the Central Bank showed that the reduction in price growth to the target 4% is apparently postponed to 2029. The current expectations of the Central Bank and the Ministry of Economy suggest achieving the goal as early as 2027."
   },
   {
    "title": "Red hot CPI report fuels AI rout",
@@ -11057,6 +11060,19 @@
     "markets",
     "GDP"
    ]
+  },
+  {
+   "title": "FTSE 100 Poised to Outperform as Global Tech Shares Sink",
+   "link": "https://www.bloomberg.com/news/live-blog/2026-10-15/ftse-100-live-uk-gdp-pound-bonds-gilts-chip-stocks-oil-prices-hormuz-tsmc-budget-what-s-moving-uk-markets-right-now-markets-today-mv94jtxa",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-15T06:01:58.090645+00:00",
+   "title_ru": "Индекс FTSE 100 готов превзойти динамику на фоне падения мировых акций технологических компаний",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-14",
@@ -11091,7 +11107,8 @@
   "2026-10-13-09",
   "2026-10-13-21",
   "2026-10-14-09",
-  "2026-10-14-21"
+  "2026-10-14-21",
+  "2026-10-15-09"
  ],
  "calendar": {
   "fetched": "2026-10-15T03:31:24.985520+00:00",
@@ -11993,7 +12010,7 @@
   "USD|2026-10-14T12:30:00+00:00|CPI y/y",
   "GBP|2026-10-15T06:00:00+00:00|GDP m/m"
  ],
- "last_morning": "2026-10-14",
+ "last_morning": "2026-10-15",
  "all_down_alerted": false,
  "trades": {
   "congress": [
@@ -13365,7 +13382,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-15T05:01:57.427481+00:00",
+  "checked": "2026-10-15T06:01:58.090645+00:00",
   "sec_seen": [
    "0001213900-26-109520",
    "0001672688-26-000144",
