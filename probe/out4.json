@@ -1,0 +1,575 @@
+{
+ "company": {
+  "ok": true,
+  "res": {
+   "written": 4,
+   "AAPL": {
+    "bytes": 25193,
+    "keys": [
+     "div",
+     "est",
+     "filings",
+     "hist",
+     "holders",
+     "next",
+     "profile",
+     "ratings",
+     "s",
+     "short",
+     "stats",
+     "targets",
+     "updated",
+     "wiki",
+     "wiki_at"
+    ],
+    "wiki": {
+     "en": "Apple Inc.",
+     "ru": "Apple"
+    },
+    "funds": [
+     "Vanguard Total Stock Market Index Fund",
+     "Vanguard 500 Index Fund",
+     "iShares Core S&P 500 ETF"
+    ],
+    "div_n": 57,
+    "short_rows": 24,
+    "est": [
+     "0q",
+     "+1q",
+     "0y",
+     "+1y"
+    ],
+    "targets": {
+     "px": 342.96,
+     "mean": 329.38,
+     "median": 340.0,
+     "high": 405.0,
+     "low": 215.0,
+     "n": 39,
+     "rec": 2.2,
+     "key": "buy"
+    },
+    "filings": [
+     {
+      "d": "2026-09-01",
+      "type": "8-K/A",
+      "title": "Corporate Changes & Voting Matters",
+      "url": "https://cdn.yahoofinance.com/prod/sec-filings/0000320193/000114036126035325/ef20081427_8ka.htm"
+     },
+     {
+      "d": "2026-07-31",
+      "type": "10-Q",
+      "title": "Periodic Financial Reports",
+      "url": "https://cdn.yahoofinance.com/prod/sec-filings/0000320193/000032019326000020/aapl-20260627.htm"
+     }
+    ],
+    "ratings": [
+     {
+      "d": "2026-10-12",
+      "f": "JP Morgan",
+      "to": "Overweight",
+      "from": "Overweight",
+      "a": "main",
+      "pt": 360.0,
+      "pt0": 340.0,
+      "pta": "Raises"
+     },
+     {
+      "d": "2026-10-01",
+      "f": "Morgan Stanley",
+      "to": "Overweight",
+      "from": "Overweight",
+      "a": "main",
+      "pt": 355.0,
+      "pt0": 360.0,
+      "pta": "Lowers"
+     }
+    ]
+   },
+   "BRK.B": {
+    "bytes": 13152,
+    "keys": [
+     "div",
+     "est",
+     "hist",
+     "holders",
+     "next",
+     "profile",
+     "ratings",
+     "s",
+     "short",
+     "stats",
+     "targets",
+     "updated",
+     "wiki",
+     "wiki_at"
+    ],
+    "wiki": {
+     "en": "Berkshire Hathaway",
+     "ru": "Berkshire Hathaway"
+    },
+    "funds": [
+     "Vanguard Total Stock Market Index Fund",
+     "Vanguard 500 Index Fund",
+     "iShares Core S&P 500 ETF"
+    ],
+    "div_n": 0,
+    "short_rows": 0,
+    "est": [
+     "0q",
+     "+1q",
+     "0y",
+     "+1y"
+    ],
+    "targets": {
+     "px": 526.35,
+     "mean": 547.67,
+     "median": 529.0,
+     "high": 604.0,
+     "low": 510.0,
+     "n": 3,
+     "rec": 2.0,
+     "key": "buy"
+    },
+    "filings": [],
+    "ratings": [
+     {
+      "d": "2026-08-10",
+      "f": "UBS",
+      "to": "Buy",
+      "from": "Buy",
+      "a": "main",
+      "pt": 604.0,
+      "pt0": 585.0,
+      "pta": "Raises"
+     },
+     {
+      "d": "2026-07-28",
+      "f": "UBS",
+      "to": "Buy",
+      "from": "Buy",
+      "a": "main",
+      "pt": 585.0,
+      "pt0": 570.0,
+      "pta": "Raises"
+     }
+    ]
+   },
+   "KO": {
+    "bytes": 22444,
+    "keys": [
+     "div",
+     "est",
+     "filings",
+     "hist",
+     "holders",
+     "next",
+     "profile",
+     "ratings",
+     "s",
+     "short",
+     "stats",
+     "targets",
+     "updated",
+     "wiki",
+     "wiki_at"
+    ],
+    "wiki": {
+     "en": "The Coca-Cola Company",
+     "ru": "The Coca-Cola Company"
+    },
+    "funds": [
+     "Vanguard Total Stock Market Index Fund",
+     "Vanguard 500 Index Fund",
+     "iShares Core S&P 500 ETF"
+    ],
+    "div_n": 60,
+    "short_rows": 0,
+    "est": [
+     "0q",
+     "+1q",
+     "0y",
+     "+1y"
+    ],
+    "targets": {
+     "px": 91.78,
+     "mean": 94.52,
+     "median": 95.0,
+     "high": 104.0,
+     "low": 75.0,
+     "n": 23,
+     "rec": 1.75,
+     "key": "buy"
+    },
+    "filings": [
+     {
+      "d": "2026-09-22",
+      "type": "25-NSE",
+      "title": "Notification filed by national security exchange to report the removal from listing and registration of matured",
+      "url": "https://finance.yahoo.com/sec-filing/KO/0000876661-26-000782_21344"
+     },
+     {
+      "d": "2026-07-29",
+      "type": "10-Q",
+      "title": "Periodic Financial Reports",
+      "url": "https://cdn.yahoofinance.com/prod/sec-filings/0000021344/000162828026050503/ko-20260703.htm"
+     }
+    ],
+    "ratings": [
+     {
+      "d": "2026-10-14",
+      "f": "Citigroup",
+      "to": "Buy",
+      "from": "Buy",
+      "a": "main",
+      "pt": 102.0,
+      "pt0": 100.0,
+      "pta": "Raises"
+     },
+     {
+      "d": "2026-10-05",
+      "f": "Wells Fargo",
+      "to": "Overweight",
+      "from": "Overweight",
+      "a": "main",
+      "pt": 90.0,
+      "pt0": 95.0,
+      "pta": "Lowers"
+     }
+    ]
+   },
+   "JPM": {
+    "bytes": 23608,
+    "keys": [
+     "div",
+     "est",
+     "filings",
+     "hist",
+     "holders",
+     "next",
+     "profile",
+     "ratings",
+     "s",
+     "short",
+     "stats",
+     "targets",
+     "updated",
+     "wiki",
+     "wiki_at"
+    ],
+    "wiki": {
+     "en": "JPMorgan Chase",
+     "ru": "JPMorgan Chase"
+    },
+    "funds": [
+     "Vanguard Total Stock Market Index Fund",
+     "Vanguard 500 Index Fund",
+     "iShares Core S&P 500 ETF"
+    ],
+    "div_n": 60,
+    "short_rows": 0,
+    "est": [
+     "0q",
+     "+1q",
+     "0y",
+     "+1y"
+    ],
+    "targets": {
+     "px": 335.28,
+     "mean": 372.5,
+     "median": 373.5,
+     "high": 425.0,
+     "low": 312.0,
+     "n": 22,
+     "rec": 2.12,
+     "key": "buy"
+    },
+    "filings": [
+     {
+      "d": "2026-04-14",
+      "type": "DEFA14A",
+      "title": "Proxy Statements",
+      "url": "https://cdn.yahoofinance.com/prod/sec-filings/0000019617/000162828026025079/proxysupplementalmaterials.htm"
+     },
+     {
+      "d": "2026-04-06",
+      "type": "DEFA14A",
+      "title": "Proxy Statements",
+      "url": "https://cdn.yahoofinance.com/prod/sec-filings/0000019617/000001961726000097/a2026proxystatement_notice.htm"
+     }
+    ],
+    "ratings": [
+     {
+      "d": "2026-10-14",
+      "f": "Truist Securities",
+      "to": "Hold",
+      "from": "Hold",
+      "a": "main",
+      "pt": 361.0,
+      "pt0": 352.0,
+      "pta": "Raises"
+     },
+     {
+      "d": "2026-10-14",
+      "f": "Barclays",
+      "to": "Overweight",
+      "from": "Overweight",
+      "a": "main",
+      "pt": 425.0,
+      "pt0": 420.0,
+      "pta": "Raises"
+     }
+    ]
+   }
+  },
+  "sec": 13.5
+ },
+ "options": {
+  "ok": true,
+  "res": {
+   "written": 2,
+   "summary": {
+    "updated": "2026-10-15T11:57:44.439154+00:00",
+    "rows": [
+     {
+      "s": "SPY",
+      "n": "SPDR S&P 500 ETF",
+      "px": 768.12,
+      "chg": -0.19,
+      "iv30": 13.12,
+      "iv30_chg": 0.02,
+      "c_vol": 1949427,
+      "p_vol": 2774804,
+      "pcr_vol": 1.42,
+      "pcr_oi": 2.99,
+      "updated": "2026-10-15T11:57:44.439154+00:00"
+     },
+     {
+      "s": "TSLA",
+      "n": "Tesla",
+      "px": 362.4,
+      "chg": -1.31,
+      "iv30": 43.68,
+      "iv30_chg": -0.04,
+      "c_vol": 469974,
+      "p_vol": 282806,
+      "pcr_vol": 0.6,
+      "pcr_oi": 0.77,
+      "updated": "2026-10-15T11:57:44.439154+00:00"
+     },
+     {
+      "s": "AAPL",
+      "n": "Apple",
+      "px": null,
+      "chg": null,
+      "iv30": null,
+      "iv30_chg": null,
+      "c_vol": null,
+      "p_vol": null,
+      "pcr_vol": null,
+      "pcr_oi": null,
+      "updated": "2026-10-15T11:57:30.916045+00:00"
+     },
+     {
+      "s": "BRK.B",
+      "n": "Berkshire Hathaway",
+      "px": null,
+      "chg": null,
+      "iv30": null,
+      "iv30_chg": null,
+      "c_vol": null,
+      "p_vol": null,
+      "pcr_vol": null,
+      "pcr_oi": null,
+      "updated": "2026-10-15T11:57:30.916045+00:00"
+     }
+    ]
+   },
+   "aapl_bytes": 26833,
+   "aapl_exp": [],
+   "aapl_chain0": [],
+   "spy_bytes": 12830
+  },
+  "sec": 2.5
+ },
+ "macro": {
+  "ok": true,
+  "res": {
+   "written": 25,
+   "years": [
+    2023,
+    2024,
+    2025,
+    2026,
+    2027,
+    2028
+   ],
+   "ind": [
+    "NGDP_RPCH",
+    "PCPIPCH",
+    "LUR",
+    "GGXCNL_NGDP",
+    "GGXWDG_NGDP",
+    "BCA_NGDPD",
+    "NGDPD"
+   ],
+   "usa": {
+    "c": "USA",
+    "en": "United States",
+    "ru": "США",
+    "v": {
+     "NGDP_RPCH": [
+      2.9,
+      3,
+      2.3,
+      2.3,
+      2.3,
+      2.1
+     ],
+     "PCPIPCH": [
+      4.1,
+      3,
+      2.7,
+      3.6,
+      2.8,
+      2.1
+     ],
+     "LUR": [
+      3.6,
+      4,
+      4.3,
+      4.2,
+      4,
+      4
+     ],
+     "GGXCNL_NGDP": [
+      -7.9,
+      -7.8,
+      -7.1,
+      -8.5,
+      -7.8,
+      -8.1
+     ],
+     "GGXWDG_NGDP": [
+      120,
+      122.3,
+      124.4,
+      126.8,
+      128.7,
+      132.3
+     ],
+     "BCA_NGDPD": [
+      -3.3,
+      -4.1,
+      -3.8,
+      -3.9,
+      -3.8,
+      -3.6
+     ],
+     "NGDPD": [
+      27825.9,
+      29381.0,
+      30861.3,
+      32642.4,
+      34441.6,
+      35877.1
+     ]
+    }
+   },
+   "missing": [],
+   "bytes": 9374
+  },
+  "sec": 4.1
+ },
+ "moex": {
+  "ok": true,
+  "res": {
+   "written": 436,
+   "time": "14:42:53",
+   "n": 436,
+   "top": [
+    {
+     "s": "SBER",
+     "n": "Сбербанк",
+     "en": "Sberbank",
+     "sec": "Financials",
+     "px": 283.48,
+     "ch": -0.71,
+     "o": 285.25,
+     "h": 286.4,
+     "l": 282.52,
+     "val": 3240118662,
+     "cap": 6126159972920,
+     "w": 11.77,
+     "lot": 1
+    },
+    {
+     "s": "LKOH",
+     "n": "ЛУКОЙЛ",
+     "en": "LUKOIL",
+     "sec": "Energy",
+     "px": 6033,
+     "ch": -0.53,
+     "o": 6065,
+     "h": 6110,
+     "l": 6003,
+     "val": 3007836887,
+     "cap": 4177980544860,
+     "w": 17.45,
+     "lot": 1
+    },
+    {
+     "s": "ROSN",
+     "n": "Роснефть",
+     "en": "Rosneft",
+     "sec": "Energy",
+     "px": 372.85,
+     "ch": -0.81,
+     "o": 375.85,
+     "h": 376.8,
+     "l": 371.05,
+     "val": 2313845206,
+     "cap": 3950470781287,
+     "w": 2.92,
+     "lot": 1
+    },
+    {
+     "s": "NVTK",
+     "n": "Новатэк ао",
+     "en": "NOVATEK",
+     "sec": "Energy",
+     "px": 1085.6,
+     "ch": -0.28,
+     "o": 1092,
+     "h": 1099.9,
+     "l": 1073.5,
+     "val": 1523289459,
+     "cap": 3293784748800,
+     "w": 4.62,
+     "lot": 1
+    },
+    {
+     "s": "SIBN",
+     "n": "Газпрнефть",
+     "en": "Gazprom neft",
+     "sec": "Energy",
+     "px": 576.8,
+     "ch": -0.55,
+     "o": 580.25,
+     "h": 592,
+     "l": 570.55,
+     "val": 1031396571,
+     "cap": 2738574671486,
+     "w": null,
+     "lot": 1
+    }
+   ],
+   "no_sector": [
+    "RAGR",
+    "CNRU"
+   ],
+   "bytes": 73908
+  },
+  "sec": 5.9
+ }
+}
