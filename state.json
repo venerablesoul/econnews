@@ -1112,7 +1112,10 @@
   "aeb8f77412dc241b": "2026-10-15T09:56:58.128376+00:00",
   "ec4f7cc8ed84d406": "2026-10-15T09:56:58.128376+00:00",
   "b78cb5e62ec826c5": "2026-10-15T10:02:29.243948+00:00",
-  "3c32f609f9fdd692": "2026-10-15T10:02:29.243948+00:00"
+  "3c32f609f9fdd692": "2026-10-15T10:02:29.243948+00:00",
+  "ae0e5854622a1169": "2026-10-15T10:07:29.246792+00:00",
+  "1ef6c06350c9a152": "2026-10-15T10:07:29.246792+00:00",
+  "5e5fcf030bb92bba": "2026-10-15T10:07:29.246792+00:00"
  },
  "recent": [
   {
@@ -11636,6 +11639,29 @@
     "markets",
     "Russia"
    ]
+  },
+  {
+   "title": "Technology for Prosperity in Emerging and Developing Economies",
+   "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE8tZHlDTWhPS0pTeGdzblNGRlplcFMyUGFOWU5uWUJ1bzVSU1hYbFNjeGlZZkxMSWctVy14MnQtNDBIMGdneG1tbFNiU0tydzR6cVFyT1dvRTNkQW52?oc=5",
+   "sources": [
+    "IMF"
+   ],
+   "score": 5,
+   "ts": "2026-10-15T10:07:29.246792+00:00",
+   "title_ru": "Технологии для процветания в странах с формирующейся и развивающейся экономикой"
+  },
+  {
+   "title": "Nestle India flags food, commodity inflation after profit surges 36%",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQVWJkZUU3ZVFLcl92bjE4UW5oTUxZU21mY0lzNVJwTWxGR1plNEp4S29fOGZsWnRxdkNlYzVpcnExZU1MVzZWUDc1OXJCSUs3OUtnaVRkc0VQVHJuTE5obG9hbEhlLVdwUU90MW1LOHJsSDZXbE5HYV9GUEIyYnFoSEdYQmtQWkxkQVYwZzVDX1k2cksyVk1qT09CcVhRSGxfRk0ta2lGVUVUWDdab1dNdWptb1Zhdk9w?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-15T10:07:29.246792+00:00",
+   "title_ru": "Nestle India отмечает инфляцию продуктов питания и товаров после роста прибыли на 36%",
+   "tags": [
+    "inflation"
+   ]
   }
  ],
  "last_digest": "2026-10-14",
@@ -13945,16 +13971,14 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-15T09:06:58.106676+00:00",
+  "checked": "2026-10-15T10:07:29.246792+00:00",
   "sec_seen": [
    "0001213900-26-109520",
    "0001725092-26-000019",
    "0001628280-26-065927",
    "0001284309-26-000030",
-   "0001193125-26-421987",
    "0001193125-26-421996",
    "0001493152-26-047081",
-   "0001104659-26-115916",
    "0001683168-26-007854",
    "0001930526-26-000013",
    "0001609253-26-000140",
@@ -13963,19 +13987,15 @@
    "0001213900-26-109523",
    "0001628280-26-065924",
    "0001769628-26-000449",
-   "0001628280-26-065929",
    "0001672688-26-000144",
+   "0001628280-26-065929",
    "0001493152-26-047072",
    "0001579629-26-000012",
    "0001628280-26-065922",
-   "0001672688-26-000143",
    "0001193125-26-422053",
-   "0001193125-26-421982",
    "0001193125-26-421998",
    "0001769628-26-000448",
    "0001662210-26-000018",
-   "0001672688-26-000141",
-   "0001193125-26-421979",
    "0001213900-26-109521"
   ],
   "errors": {}
