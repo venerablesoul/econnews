@@ -5,15 +5,19 @@ OUT, ERR = {}, []
 os.makedirs("probe/shots2", exist_ok=True)
 with sync_playwright() as pw:
     b = pw.chromium.launch()
+    import urllib.request
+    for i in range(60):   # wait until GitHub Pages' cache serves the new fn.js
+        t = urllib.request.urlopen(BASE + "fn.js?x=" + str(i)).read().decode()
+        t2 = urllib.request.urlopen(BASE + "fn.js").read().decode()
+        if "not again while it loads" in t2:
+            break
+        time.sleep(20)
+    OUT["waited"] = i
     ctx = b.new_context(viewport={"width": 1440, "height": 900})
     p = ctx.new_page()
     p.on("pageerror", lambda e: ERR.append("pageerror: " + str(e)))
-    for i in range(30):   # wait until GitHub Pages serves the new code
-        p.goto(BASE + "?v=" + str(time.time()))
-        p.wait_for_selector("#mkt table", timeout=30000)
-        if p.evaluate("window.TERM && window.TERM.TV && window.TERM.TV['S&P']") == "FOREXCOM:SPXUSD":
-            break
-        time.sleep(20)
+    p.goto(BASE)
+    p.wait_for_selector("#mkt table", timeout=30000)
     OUT["new_code"] = p.evaluate("window.TERM.TV['S&P']")
     p.wait_for_timeout(12000)
     tv_text = " ".join(f.evaluate("() => document.body ? document.body.innerText : ''") for f in p.frames[1:])

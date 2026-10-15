@@ -8,7 +8,7 @@ arch = subprocess.run(["git", "archive", "FETCH_HEAD", "stocks.py"], capture_out
 tarfile.open(fileobj=io.BytesIO(arch)).extractall("/tmp/m")
 sys.path.insert(0, "/tmp/m")
 import stocks
-ev = stocks.fetch_earnings(os.environ["FINNHUB_API_KEY"], date.today())
+ev = []
 OUT["earnings_n"] = len(ev)
 OUT["earnings_dates"] = sorted({e["d"] for e in ev})
 OUT["earnings_sample"] = [f'{e["d"]} {e["s"]}' for e in ev if e["d"] >= date.today().isoformat()][:25]
@@ -19,6 +19,6 @@ try:
     OUT["live"] = json.loads(r.stdout.strip().splitlines()[-1])
 except Exception:
     OUT["raw"] = r.stdout[-1500:]
-with open("probe/out18.json", "w") as f:
+with open("probe/out19.json", "w") as f:
     json.dump(OUT, f, ensure_ascii=False, indent=1)
 subprocess.run("git add probe/shots2", shell=True)
