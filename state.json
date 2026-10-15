@@ -1101,7 +1101,10 @@
   "6632dd05e56235fe": "2026-10-15T09:31:58.122245+00:00",
   "761cd48511ce5c17": "2026-10-15T09:31:58.122245+00:00",
   "4d7a77a7550ac992": "2026-10-15T09:36:58.150141+00:00",
-  "ec66a7df73952dc9": "2026-10-15T09:36:58.150141+00:00"
+  "ec66a7df73952dc9": "2026-10-15T09:36:58.150141+00:00",
+  "05befe8e39c15dab": "2026-10-15T09:41:58.099661+00:00",
+  "d311eb6241a5f7e8": "2026-10-15T09:41:58.099661+00:00",
+  "4fe40ad82cc49903": "2026-10-15T09:41:58.099661+00:00"
  },
  "recent": [
   {
@@ -11516,6 +11519,36 @@
    "score": 5,
    "ts": "2026-10-15T09:36:58.150141+00:00",
    "title_ru": "Вступительное слово на пресс-брифинге Африканского департамента МВФ"
+  },
+  {
+   "title": "Analysis: Why a $2 trillion deficit and 5% Treasury yields are becoming America's biggest economic challenge",
+   "link": "https://www.cnbc.com/2026/10/15/treasury-yields-deficit-national-debt-ai.html",
+   "sources": [
+    "CNBC"
+   ],
+   "score": 6,
+   "ts": "2026-10-15T09:41:58.099661+00:00",
+   "title_ru": "Анализ: почему дефицит в $ 2 трлн и доходность казначейских облигаций в 5% становятся самой большой экономической проблемой Америки",
+   "lead": "Treasury yields above 5% are raising borrowing costs for households and the federal government, highlighting the challenge of financing $2 trillion deficits.",
+   "lead_ru": "Доходность казначейских облигаций выше 5% повышает стоимость заимствований для домохозяйств и федерального правительства, подчеркивая проблему финансирования дефицита в $ 2 трлн.",
+   "tags": [
+    "bonds"
+   ]
+  },
+  {
+   "title": "India Trade Deficit Widened in September on Higher Import Bill",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-15/india-trade-deficit-widened-in-september-on-higher-import-bill",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-15T09:41:58.099661+00:00",
+   "title_ru": "Дефицит торгового баланса Индии расширился в сентябре в связи с более высоким законопроектом об импорте",
+   "lead": "India’s trade gap expanded in September as festive demand and surging oil prices pushed up imports, adding to risks from the drawn-out conflict in the Middle East.",
+   "lead_ru": "Дефицит торгового баланса Индии увеличился в сентябре, поскольку праздничный спрос и растущие цены на нефть подтолкнули импорт, усилив риски затяжного конфликта на Ближнем Востоке.",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-14",
