@@ -235,6 +235,11 @@ var D = {
   msk_at: function(t){ return t + (RU ? ' МСК' : ' MSK') },
   all_sectors: ['all sectors', 'все секторы'], f_mcap: ['mkt cap from, $B', 'кап. от, $ млрд'], f_pe: ['P/E from', 'P/E от'], f_to: ['to', 'до'],
   f_div: ['div. from, %', 'див. от, %'], f_q: ['search', 'поиск'], f_q_ph: ['ticker/name', 'тикер/название'],
+  eqs_us: ['US', 'США'], eqs_ru: ['MOSCOW EXCHANGE', 'МОСБИРЖА'],
+  eqs_ru_cols: [{s: 'Ticker', n: 'Company', sec: 'Sector', px: 'Price, ₽', ch: 'Day', val: 'Turnover', cap: 'Mkt cap', w: 'IMOEX, %'},
+    {s: 'Тикер', n: 'Компания', sec: 'Сектор', px: 'Цена, ₽', ch: 'День', val: 'Оборот', cap: 'Кап.', w: 'IMOEX, %'}],
+  eqs_ru_note: function(n, t){ return RU ? 'Акций: ' + n + '. Основной режим Мосбиржи (TQBR), задержка 15 минут, данные на ' + (t || '—') + ' МСК. Нажмите на строку — карточка компании.'
+    : n + ' shares. Moscow Exchange main board (TQBR), 15-minute delay, as of ' + (t || '—') + ' MSK. Click a row for the company card.' },
   eqs_found: function(n){ return RU ? 'Найдено: ' + n + '. Нажмите на строку — карточка компании. Мультипликаторы обновляются раз в сутки (Finnhub), цены — каждые 5–10 минут (Yahoo).'
     : 'Found: ' + n + '. Click a row for the company card. Ratios refresh daily (Finnhub), prices every 5–10 minutes (Yahoo).' },
   // IMAP
@@ -408,7 +413,7 @@ var HELP = [
   ['HP AAPL 5Y', 'price history, SMA 50/200 and RSI, CSV export (1D 5D 1M 3M 6M YTD 1Y 2Y 5Y)', 'история цен, SMA 50/200 и RSI, выгрузка в CSV (1D 5D 1M 3M 6M YTD 1Y 2Y 5Y)'],
   ['COMP AAPL MSFT SPY', 'several instruments on one chart', 'сравнение нескольких инструментов на одном графике'],
   ['WHOLE MARKET', 'РЫНОК ЦЕЛИКОМ'],
-  ['EQS', 'screener of ~110 largest US stocks: filters and sorting', 'скринер ~110 крупнейших акций США: фильтры и сортировка'],
+  ['EQS, EQS RU', 'screener: ~100 largest US stocks or all Moscow Exchange shares', 'скринер: ~100 крупнейших акций США или все акции Мосбиржи'],
   ['IMAP, IMAP RU', 'heat map by sector: US stocks or the Moscow Exchange', 'тепловая карта по секторам: акции США или Мосбиржа'],
   ['ECST, ECST RU', 'IMF forecasts: GDP, inflation, unemployment, debt by country', 'прогнозы МВФ: ВВП, инфляция, безработица, долг по странам'],
   ['FXC', 'cross rates of the main currencies', 'кросс-курсы основных валют'],

@@ -304,7 +304,7 @@ async function binanceHistory(coin, range) {
   }
   if (!k) {
     // Binance blocks some Cloudflare servers — take candles from Coinbase (no key; CryptoCompare now wants one)
-    try { return await coinbaseHistory(coin, range); } catch (e) { throw err || e; }
+    try { return await coinbaseHistory(coin, range); } catch (e) { throw new Error((err ? err.message + "; " : "") + "Coinbase: " + (e.message || e)); }
   }
   const out = { t: [], o: [], h: [], l: [], c: [], v: [], cur: "USD", name: coin + "/USDT" };
   for (const x of k) { out.t.push(Math.floor(x[0] / 1000)); out.o.push(+x[1]); out.h.push(+x[2]); out.l.push(+x[3]); out.c.push(+x[4]); out.v.push(+x[5]); }

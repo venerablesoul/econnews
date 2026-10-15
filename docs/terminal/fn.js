@@ -915,6 +915,8 @@ var EQS_COLS = ['s', 'n', 'sec', 'px', 'ch', 'mcap', 'pe', 'fpe', 'dy', 'revg', 
 var EQS_ALIAS = {GAINERS: 'leaders', LEADERS: 'leaders', 'ЛИДЕРЫ': 'leaders', LOSERS: 'losers', 'АУТСАЙДЕРЫ': 'losers', VALUE: 'value', CHEAP: 'value',
   'ДЕШЁВЫЕ': 'value', 'ДЕШЕВЫЕ': 'value', DIV: 'div', DIVIDENDS: 'div', 'ДИВИДЕНДЫ': 'div', GROWTH: 'growth', 'РОСТ': 'growth', YEAR: 'year', 'ГОД': 'year', ALL: '', 'ВСЕ': ''};
 function openEqs(preset){
+  if (preset != null && /^(RU|MOEX|РФ|МОСБИРЖА|РОССИЯ)$/i.test(String(preset).trim())) { eqsRu.on = true; T.show('p-eqs'); return renderEqs() }
+  if (preset != null) eqsRu.on = false;
   if (preset != null) {
     var P = String(preset).toUpperCase();
     var key = EQS_PRESETS[preset] ? preset : EQS_ALIAS[P] != null ? EQS_ALIAS[P] : Object.keys(EQS_PRESETS).find(function(k){ return EQS_PRESETS[k][0].indexOf(P) === 0 });
@@ -940,15 +942,49 @@ function eqsFilter(rows){
     return true;
   });
 }
+var eqsRu = {on: false, sort: 'cap', dir: -1, q: '', sec: ''};
+function eqsRegionTabs(box){
+  var t = el('div', 'ptabs');
+  [['US', false], ['RU', true]].forEach(function(x){ var b = el('button', eqsRu.on === x[1] ? 'on' : null, TX(x[1] ? 'eqs_ru' : 'eqs_us')); b.onclick = function(){ eqsRu.on = x[1]; renderEqs() }; t.appendChild(b) });
+  t.appendChild(el('span', 'sp')); box.appendChild(t);
+}
+// EQS for the Moscow Exchange: all shares of the main board from docs/moex.json
+function drawEqsRu(box, d){
+  clear(box); eqsRegionTabs(box);
+  var rows = (d.rows || []).map(function(r){ return {s: r.s, n: I.ru ? r.n : r.en, sec: I.sector(r.sec || 'Other'), px: r.px, ch: r.ch, val: r.val, cap: r.cap, w: r.w} });
+  $('eqs-sub').textContent = TX('n_companies', rows.length) + ' · ' + TX('msk_at', (d.time || '').slice(0, 5));
+  var f = el('div', 'frm'), sel = el('select'); sel.appendChild(new Option(TX('all_sectors'), ''));
+  rows.map(function(r){ return r.sec }).filter(function(x, i, a){ return a.indexOf(x) === i }).sort().forEach(function(x){ sel.appendChild(new Option(x, x)) });
+  sel.value = eqsRu.sec; sel.onchange = function(){ eqsRu.sec = sel.value; drawEqsRu(box, d) }; f.appendChild(sel);
+  var q = el('input', 'n'); q.placeholder = TX('f_q_ph'); q.style.width = '120px'; q.value = eqsRu.q; q.dataset.k = 'ru-q';
+  q.oninput = function(){ eqsRu.q = q.value; clearTimeout(drawEqsRu._t); drawEqsRu._t = setTimeout(function(){ drawEqsRu(box, d); var x = box.querySelector('input[data-k="ru-q"]'); if (x) { x.focus(); x.setSelectionRange(x.value.length, x.value.length) } }, 300) };
+  f.appendChild(q); box.appendChild(f);
+  var ql = eqsRu.q.toLowerCase();
+  var list = rows.filter(function(r){ return (!eqsRu.sec || r.sec === eqsRu.sec) && (!ql || (r.s + ' ' + r.n).toLowerCase().indexOf(ql) >= 0) });
+  var k = eqsRu.sort, dir = eqsRu.dir;
+  list.sort(function(a, b){ var x = a[k], y = b[k]; if (x == null && y == null) return 0; if (x == null) return 1; if (y == null) return -1; return (typeof x === 'string' ? x.localeCompare(y) : x - y) * dir });
+  var names = TX('eqs_ru_cols'), keys = ['s', 'n', 'sec', 'px', 'ch', 'val', 'cap', 'w'];
+  var tb = table(keys.map(function(c){ return {k: c, t: names[c], sort: 1, l: c === 'n' || c === 'sec'} }), {sortKey: k, sortDir: dir, onSort: function(c){ if (eqsRu.sort === c) eqsRu.dir = -eqsRu.dir; else { eqsRu.sort = c; eqsRu.dir = ['s', 'n', 'sec'].indexOf(c) >= 0 ? 1 : -1 } drawEqsRu(box, d) }});
+  list.forEach(function(r){
+    var tr = el('tr', 'row'); tr.dataset.s = r.s;
+    tr.appendChild(td(r.s, 'l tkc')); tr.appendChild(td(r.n, 'l nm')); tr.appendChild(td(r.sec, 'l'));
+    tr.appendChild(td(price(r.px), 'num')); tr.appendChild(chg(r.ch)); tr.appendChild(td(money(r.val, '₽'), 'num')); tr.appendChild(td(money(r.cap, '₽'), 'num'));
+    tr.appendChild(td(r.w != null ? num(r.w, 2) : '', 'num')); tb.body.appendChild(tr);
+  });
+  tb.t.onclick = function(e){ var tr = e.target.closest('tr.row'); if (tr) openDes('MOEX:' + tr.dataset.s, 'DES') };
+  box.appendChild(tb.t);
+  box.appendChild(el('div', 'note', TX('eqs_ru_note', list.length, (d.time || '').slice(0, 5))));
+}
 function renderEqs(){
   var box = $('eqs-body');
+  if (eqsRu.on) return page('moex.json', 120).then(function(d){ drawEqsRu(box, d) }).catch(function(){ clear(box); eqsRegionTabs(box); box.appendChild(el('div', 'empty', TX('imap_ru_wait'))) });
   page('stocks.json', 120).then(function(d){ drawEqs(box, d) }).catch(function(e){
     clear(box).appendChild(el('div', 'empty', TX('eqs_wait') + e.message));
   });
 }
 function drawEqs(box, d){
   var keepScroll = box.scrollTop;
-  clear(box);
+  clear(box); eqsRegionTabs(box);
   var rows = d.stocks || [];
   $('eqs-sub').textContent = TX('n_companies', rows.length) + ' · ' + (d.updated ? TX('msk_at', T.hm(d.updated)) : '');
   var pr = el('div', 'ptabs');

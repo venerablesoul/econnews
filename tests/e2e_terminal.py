@@ -242,6 +242,15 @@ def run():
         page.wait_for_selector("#eqs-body tbody tr")
         check("EQS GAINERS preset", page.inner_text("#eqs-body tbody tr:first-child td:first-child") == "NVDA")
 
+        cmd(page, "EQS RU")
+        page.wait_for_function("document.querySelector('#eqs-body').textContent.includes('SBER')", timeout=8000)
+        check("EQS RU: Moscow Exchange screener", page.locator("#eqs-body tbody tr").count() == 10 and "IMOEX, %" in page.inner_text("#eqs-body thead"))
+        page.click("#eqs-body th:has-text('Day')")
+        check("EQS RU: sort by day change", page.inner_text("#eqs-body tbody tr:first-child td:first-child") in ("PIKK", "GAZP"), page.inner_text("#eqs-body tbody tr:first-child"))
+        page.click("#eqs-body .ptabs button:has-text('US')")
+        page.wait_for_function("document.querySelectorAll('#eqs-body tbody tr').length === 3", timeout=8000)
+        check("EQS: back to US stocks", True)
+
         # IMAP
         cmd(page, "IMAP")
         page.wait_for_selector("#imap .tile")
