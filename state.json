@@ -1151,7 +1151,12 @@
   "9980b43655cbe7f4": "2026-10-15T16:17:01.019713+00:00",
   "6ac44759595c2227": "2026-10-15T16:17:01.019713+00:00",
   "0e1dcb559c224b9e": "2026-10-15T16:17:01.019713+00:00",
-  "b94c0936f1d74a80": "2026-10-15T16:17:01.019713+00:00"
+  "b94c0936f1d74a80": "2026-10-15T16:17:01.019713+00:00",
+  "ab54cffb876e5503": "2026-10-15T16:27:01.035912+00:00",
+  "a414382d6f57a713": "2026-10-15T16:27:01.035912+00:00",
+  "fa69b83ca09f8ece": "2026-10-15T16:27:01.035912+00:00",
+  "7a4c57c0fe1c42ea": "2026-10-15T16:27:01.035912+00:00",
+  "9e5051b7bb183b08": "2026-10-15T16:27:01.035912+00:00"
  },
  "recent": [
   {
@@ -12048,6 +12053,59 @@
    "tags": [
     "Russia"
    ]
+  },
+  {
+   "title": "In AI-dominated markets, LatAm debt is a diversifier",
+   "link": "https://www.ft.com/content/086b7a80-acdd-48d2-bd5c-a04bad812264",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 4,
+   "ts": "2026-10-15T16:27:01.035912+00:00",
+   "title_ru": "На рынках, где доминирует ИИ, долг LatAm является диверсификатором",
+   "lead": "A series of ostensibly market-friendly electoral victories across the region has boosted local currency bonds",
+   "lead_ru": "Серия якобы благоприятных для рынка побед на выборах по всему региону способствовала росту облигаций в местной валюте",
+   "tags": [
+    "bonds"
+   ]
+  },
+  {
+   "title": "Schwab Tops Estimates as Client Assets Grow Amid Market Surge",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxONk4zYW9XXzJoLXZSemdEZ1FFYlJKLXdUcnhoQkU0R01vSWw4RTZpSEh6TExGQ2NLV3hLUUQ4ZEtyNEp6cEYzNWFTLVFDdjB6TDVqTWFZOUVjUm9VUHFWYmFBUVhLOGkxbUdZOVM4T29OaktPYXRHOHF4Q1d3R0VNSjVveUJaRjdXMm9PMjVqM1JaTGFDdlltaDdKN3NSQ29Wb2NLWTZUQ3l6LWZldHJHTUZR?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-15T16:27:01.035912+00:00",
+   "title_ru": "Оценки Schwab Tops по мере роста клиентских активов на фоне всплеска рынка"
+  },
+  {
+   "title": "How Aramco learned to keep pumping oil under fire",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOMEo4RHMzbGVMLUpQcnFqT28tSlU2Q0FBUlZtc2MzaUZSLXpsd3o3X1VGQXplLWJUaUJuQ1BCbFdVbzZwZUk0OURuZ0dmcWVkaWNaclNBcHBlRGR1bWViNWROR21UV2pSRTdqNDZfUVFDdHR2TG9lUDd5eDlNRzVtWHRVNFI5d3I4MUtQdG04SVA1OURzQzI5WXk3N3ItUEE?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-15T16:27:01.035912+00:00",
+   "title_ru": "Как Aramco научилась качать нефть под огнем",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "CoreWeave investors are feeling spooked, as the company’s stock and bonds see fresh pressure",
+   "link": "https://www.marketwatch.com/story/coreweave-investors-are-feeling-spooked-as-the-companys-stock-and-bonds-see-fresh-pressure-ba39a931?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 3,
+   "ts": "2026-10-15T16:27:01.035912+00:00",
+   "title_ru": "Инвесторы CoreWeave чувствуют себя напуганными, поскольку акции и облигации компании испытывают новое давление",
+   "lead": "It’s getting more expensive for investors to buy protection against a CoreWeave default.",
+   "lead_ru": "Инвесторам становится все дороже покупать защиту от дефолта CoreWeave.",
+   "tags": [
+    "bonds"
+   ]
   }
  ],
  "last_digest": "2026-10-14",
@@ -14495,7 +14553,6 @@
    "0001104659-26-116094",
    "0001437749-26-032688",
    "0002119764-26-000032",
-   "0001852367-26-000009",
    "0001734563-26-000023"
   ],
   "errors": {}
