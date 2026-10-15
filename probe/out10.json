@@ -1,0 +1,64 @@
+{
+ "live": {
+  "updated": "2026-10-15T13:42:29.742477+00:00",
+  "n": 60,
+  "now": "2026-10-15T13:43:49Z"
+ },
+ "runs": [
+  [
+   38713424452,
+   "in_progress",
+   "2026-10-15T09:30:21Z"
+  ],
+  [
+   38683971192,
+   "completed",
+   "2026-10-15T04:54:54Z"
+  ]
+ ],
+ "jobs": [
+  [
+   116361153305,
+   "in_progress",
+   "2026-10-15T09:57:17Z",
+   [
+    [
+     "Set up job",
+     "completed"
+    ],
+    [
+     "Run actions/checkout@v4",
+     "completed"
+    ],
+    [
+     "Run actions/setup-python@v5",
+     "completed"
+    ],
+    [
+     "Install chart and PDF libraries",
+     "completed"
+    ],
+    [
+     "Collect and send news",
+     "in_progress"
+    ],
+    [
+     "Save state",
+     "pending"
+    ],
+    [
+     "Post Run actions/setup-python@v5",
+     "pending"
+    ],
+    [
+     "Post Run actions/checkout@v4",
+     "pending"
+    ]
+   ]
+  ]
+ ],
+ "logs": {
+  "_status": 401,
+  "_body": "﻿<?xml version=\"1.0\" encoding=\"utf-8\"?><Error><Code>InvalidAuthenticationInfo</Code><Message>Server failed to authenticate the request. Please refer to the information in the www-authenticate header.\nRequestId:edd59873-701e-009a-66ab-5c9cd3000000\nTime:2026-10-15T13:43:50.9055233Z</Message><Authent"
+ }
+}
