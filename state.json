@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "792442693243bf5d": "2026-10-12T21:24:05.882177+00:00",
-  "d82838bd055dadfb": "2026-10-12T21:24:05.882177+00:00",
-  "b323df3d586bee8a": "2026-10-12T21:24:05.882177+00:00",
-  "d0af0b62755b283c": "2026-10-12T21:24:05.882177+00:00",
-  "82f8b443362cee4d": "2026-10-12T21:24:05.882177+00:00",
   "82edbfdb4317c9a2": "2026-10-12T21:34:05.867033+00:00",
   "672af32b0963aa68": "2026-10-12T21:34:05.867033+00:00",
   "76a3c274aa2c686e": "2026-10-12T21:54:05.902770+00:00",
@@ -1146,28 +1141,10 @@
   "24c01e0e944f16f6": "2026-10-15T21:12:36.446433+00:00",
   "2b2186a4c3eebf8d": "2026-10-15T21:12:36.446433+00:00",
   "c1b17f30cd378c3c": "2026-10-15T21:17:36.427593+00:00",
-  "47b432bae73c0bc1": "2026-10-15T21:17:36.427593+00:00"
+  "47b432bae73c0bc1": "2026-10-15T21:17:36.427593+00:00",
+  "a0e8fb7e6410c9b5": "2026-10-15T21:27:36.443466+00:00"
  },
  "recent": [
-  {
-   "title": "Coming Soon: Global Financial Stability Report, October 2026",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOb201ZDV4ZnJ5Nk00VTVFRnk2NlN3cjk1SnphQnh4aWhkb21HbDRNWTgyZW4wd2NmM1JjZTA3cDlGcmlUd1JBRHUwbG5aSE85NUNrcUJNMGZGRWdhdGhpQTRQVDhiOS0yam1LRlVpeUI4SmxnTjgtdE1rTmZVTzFpNGpiNHEyeFZQQW5vd1hpalplRDFTS3FCVW9FNEtHVkdPQVFzMEdCb0o?oc=5",
-   "sources": [
-    "МВФ"
-   ],
-   "score": 4,
-   "ts": "2026-10-12T21:24:05.882177+00:00",
-   "title_ru": "Скоро: Отчет о глобальной финансовой стабильности, октябрь 2026 г."
-  },
-  {
-   "title": "Nvidia and AMD shares fall as new AI announcements fail to re-energize investors",
-   "link": "https://www.marketwatch.com/story/nvidia-and-amd-shares-fall-as-new-ai-announcements-fail-to-re-energize-investors-4a0dd766?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 2,
-   "ts": "2026-10-12T21:24:05.882177+00:00"
-  },
   {
    "title": "Fmr. Fed Governor Betsy Duke on CPI Amid Bank Results",
    "link": "https://www.bloomberg.com/news/videos/2026-10-12/fmr-fed-governor-betsy-duke-on-cpi-amid-bank-results-video",
@@ -12124,6 +12101,15 @@
    "title_ru": "По словам MSCI, статус развивающегося рынка Индонезии находится в стадии консультаций",
    "lead": "MSCI launched a consultation on proposals to reclassify its Indonesia equity indexes from Emerging Market to Standalone Market status, the provider said in a Thursday statement.",
    "lead_ru": "MSCI начала консультации по предложениям о реклассификации своих индексов акций в Индонезии со статуса развивающихся рынков на статус автономных рынков, говорится в заявлении провайдера в четверг."
+  },
+  {
+   "title": "Don’t ditch tech stocks just yet. Make these moves to take advantage of the latest AI reset.",
+   "link": "https://www.marketwatch.com/story/dont-ditch-tech-stocks-just-yet-make-these-moves-to-take-advantage-of-the-latest-ai-reset-cb70c7b2?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-15T21:27:36.443466+00:00"
   }
  ],
  "last_digest": "2026-10-15",
@@ -14471,6 +14457,22 @@
    },
    {
     "src": "sec",
+    "id": "f9f3730a3ad1a11e",
+    "ticker": "QLYS",
+    "company": "QUALYS, INC.",
+    "who": "Sumedh S Thakar",
+    "role": "CEO",
+    "type": "sell",
+    "value": 609148,
+    "shares": 3200,
+    "price": 190.36,
+    "plan": true,
+    "date": "2026-10-14",
+    "disclosed": "2026-10-15",
+    "link": "https://www.sec.gov/Archives/edgar/data/1558242/000155824226000026/0001558242-26-000026-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "c976d6d90b286a4e",
     "ticker": "AFL",
     "company": "AFLAC INC",
@@ -14959,22 +14961,16 @@
    "0001193125-26-422985",
    "0000919574-26-006994",
    "0000006955-26-000071",
-   "0001773751-26-000227",
    "0001662982-26-000006",
    "0001956098-26-000024",
-   "0001193125-26-422975",
    "0001166816-26-000007",
-   "0001193125-26-422968",
    "0001193125-26-423000",
    "0000006955-26-000067",
-   "0001859690-26-000193",
    "0001610717-26-000441",
-   "0001193125-26-422981",
    "0000006955-26-000064",
-   "0001628280-26-066012",
+   "0001558242-26-000026",
    "0001817160-26-000021",
    "0001193125-26-422989",
-   "0001193125-26-422973",
    "0000006955-26-000069"
   ],
   "errors": {}
