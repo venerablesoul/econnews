@@ -1063,7 +1063,8 @@
   "fa18e001008c2ea6": "2026-10-15T06:56:58.082102+00:00",
   "911fc14cb3ce6e03": "2026-10-15T06:56:58.082102+00:00",
   "bd493892be321eae": "2026-10-15T07:01:58.177125+00:00",
-  "70785f7ec9532fc5": "2026-10-15T07:06:58.186061+00:00"
+  "70785f7ec9532fc5": "2026-10-15T07:06:58.186061+00:00",
+  "bf645d0b2bad5d85": "2026-10-15T07:21:58.085772+00:00"
  },
  "recent": [
   {
@@ -11066,6 +11067,23 @@
    "title_ru": "Может ли цифровая инфраструктура трансформировать экономику?",
    "lead": "Reuben Abraham, CEO, Artha Global and Kamal Quadir, Founder & CEO, bKash discuss how digital public infrastructure can reshape developing economies and whether India’s model can be replicated elsewhere with Bloomberg’s Jeanette…",
    "lead_ru": "Рубен Абрахам, генеральный директор Artha Global, и Камаль Квадир, основатель и генеральный директор bKash, обсуждают, как цифровая государственная инфраструктура может изменить экономику развивающихся стран и можно ли воспроизвести индийскую модель где-либо еще, с Жанетт из Bloomberg…"
+  },
+  {
+   "title": "What Hot US Inflation Means for Bonds, Warsh in Asia",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-15/what-hot-us-inflation-means-for-bonds-warsh-in-asia-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-15T07:21:58.085772+00:00",
+   "title_ru": "Что означает горячая инфляция в США для облигаций, войны в Азии",
+   "lead": "Hotter-than-expected US inflation puts pressure on the front end of the yield curve and raises the stakes for Fed chief Kevin Warsh as he is set to speak at a conference in Bangkok. (Source: Bloomberg)",
+   "lead_ru": "Более высокая, чем ожидалось, инфляция в США оказывает давление на переднюю часть кривой доходности и повышает ставки для главы ФРС Кевина Уорша, когда он собирается выступить на конференции в Бангкоке. (Источник: Bloomberg)",
+   "tags": [
+    "Fed",
+    "inflation",
+    "bonds"
+   ]
   }
  ],
  "last_digest": "2026-10-14",
@@ -11088,7 +11106,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 0,
+  "Fed": 1,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
