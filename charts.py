@@ -9,8 +9,6 @@ import io
 from datetime import datetime, timedelta, timezone
 
 MSK = timezone(timedelta(hours=3))
-MONTHS = ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа",
-          "сентября", "октября", "ноября", "декабря"]
 
 BG = "#0e1116"
 CARD = "#161b22"
@@ -21,12 +19,13 @@ DOWN = "#ef5350"
 FLAT = "#9aa4b5"
 
 
-def render_market_png(quotes, now=None) -> bytes:
+def render_market_png(quotes, now=None, lang="en") -> bytes:
     import matplotlib
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
     from matplotlib.patches import FancyBboxPatch
 
+    import i18n
     from market import fmt_change, fmt_price
 
     now = (now or datetime.now(timezone.utc)).astimezone(MSK)
@@ -41,9 +40,10 @@ def render_market_png(quotes, now=None) -> bytes:
     fig = plt.figure(figsize=(W, H), dpi=110, facecolor=BG)
 
     # заголовок
-    fig.text(pad / W, 1 - 0.50 / H, "Рынки", color=TEXT, fontsize=26, fontweight="bold", va="center")
-    fig.text(pad / W, 1 - 0.95 / H, f"{now.day} {MONTHS[now.month - 1]} {now.year}, {now:%H:%M} МСК",
-             color=MUTED, fontsize=13, va="center")
+    fig.text(pad / W, 1 - 0.50 / H, i18n.t(lang, "chart_title"), color=TEXT, fontsize=26, fontweight="bold", va="center")
+    date = (f"{now.day} {i18n.month(lang, now.month)} {now.year}" if lang == "ru"
+            else f"{i18n.month(lang, now.month)} {now.day}, {now.year}")
+    fig.text(pad / W, 1 - 0.95 / H, f"{date}, {now:%H:%M} {i18n.t(lang, 'tz')}", color=MUTED, fontsize=13, va="center")
     cw = (W - pad * (cols + 1)) / cols
     ax_bg = fig.add_axes([0, 0, 1, 1], facecolor="none")
     ax_bg.set_axis_off()
@@ -59,12 +59,12 @@ def render_market_png(quotes, now=None) -> bytes:
         chg = q.get("change")
         color = FLAT if chg is None or abs(chg) < 0.005 else (UP if chg > 0 else DOWN)
 
-        ax_bg.text(x0 + 0.22, y0 + ch - 0.30, q["name"], color=MUTED, fontsize=11.5, va="center")
-        ax_bg.text(x0 + 0.22, y0 + ch - 0.78, fmt_price(q), color=TEXT, fontsize=21, fontweight="bold", va="center")
+        ax_bg.text(x0 + 0.22, y0 + ch - 0.30, (q["name"] if lang == "ru" else q.get("en") or q["name"]), color=MUTED, fontsize=11.5, va="center")
+        ax_bg.text(x0 + 0.22, y0 + ch - 0.78, fmt_price(q, lang), color=TEXT, fontsize=21, fontweight="bold", va="center")
         if chg is not None:
-            ax_bg.text(x0 + cw - 0.22, y0 + ch - 0.78, fmt_change(q), color=color, fontsize=15,
+            ax_bg.text(x0 + cw - 0.22, y0 + ch - 0.78, fmt_change(q, lang), color=color, fontsize=15,
                        fontweight="bold", va="center", ha="right")
-        ax_bg.text(x0 + cw - 0.22, y0 + ch - 0.30, q.get("period", ""), color=MUTED, fontsize=9.5,
+        ax_bg.text(x0 + cw - 0.22, y0 + ch - 0.30, i18n.t(lang, "period_30d" if q.get("src") == "cbr" else "period_5d"), color=MUTED, fontsize=9.5,
                    va="center", ha="right")
 
         vals = [v for _, v in q["series"]]
@@ -81,7 +81,7 @@ def render_market_png(quotes, now=None) -> bytes:
             ax.set_xlim(0, len(vals) - 1)
             ax.set_axis_off()
 
-    fig.text(0.5, 0.12 / H, "Источники: Yahoo Finance, ЦБ РФ, Мосбиржа · данные могут запаздывать",
+    fig.text(0.5, 0.12 / H, i18n.t(lang, "chart_sources"),
              color="#5d6778", fontsize=9, ha="center", va="center")
     buf = io.BytesIO()
     fig.savefig(buf, format="png", facecolor=BG)

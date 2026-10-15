@@ -1,52 +1,53 @@
 #!/usr/bin/env python3
 """
-Экономические новости -> Telegram.
+Economic news -> Telegram (English by default, Russian for readers who chose /lang ru).
 
-Каждый запуск:
-  1. скачивает RSS-ленты из sources.py,
-  2. отбирает экономически значимые новости и оценивает важность,
-  3. убирает дубли (одна история из нескольких источников = одна новость),
-  4. присылает новое в Telegram,
-  5. утром (9:00 МСК) — главное за ночь и календарь событий дня,
-     вечером (21:00 МСК) — итоги дня и календарь на завтра,
-  6. напоминает о важных данных (инфляция, ставки, занятость) за час до выхода,
-  7. сразу сообщает, если источник перестал отвечать (и когда снова заработал),
-  8. присылает крупные сделки политиков США и инсайдеров компаний (trades.py).
+Every run:
+  1. downloads the RSS feeds from sources.py,
+  2. picks economically significant stories and scores their importance,
+  3. removes duplicates (one story from several sources = one story),
+  4. sends what is new to Telegram, each reader in their language,
+  5. in the morning (9:00 MSK) — overnight highlights and today's calendar,
+     in the evening (21:00 MSK) — the day in review and tomorrow's calendar,
+  6. reminds about key data (inflation, rates, jobs) an hour before release,
+  7. reports at once when a source stops responding (and when it is back),
+  8. sends large trades of US politicians and company insiders (trades.py).
 
-Только стандартная библиотека Python 3.9+. Необязательно: matplotlib (картинка с графиками)
-и pdfplumber (чтение отчётов о сделках Палаты представителей США).
+Python 3.9+ standard library only. Optional: matplotlib (the chart picture)
+and pdfplumber (reading US House trade reports).
 
-Переменные окружения:
-  TELEGRAM_BOT_TOKEN   токен бота от @BotFather            (обязательно)
-  TELEGRAM_CHAT_ID     ваш chat id — владелец бота           (обязательно)
-  WORKER_URL           адрес сервера бота (обычно берётся из docs/config.json сам);
-                       новости получают владелец и все, кто нажал /start
-  MIN_LEVEL            high | medium (по умолчанию medium) — что присылать
-  DIGEST_HOUR          час дневной сводки по МСК (21), -1 = выключить
-  QUIET_HOURS          часы без звука по МСК, например 0-8 (по умолчанию 0-8)
-  MORNING_HOUR         час утреннего дайджеста по МСК (9), -1 = выключить
-  SUMMARIES            yes/no — выжимка в 1–2 предложения под заголовком
-  TAGS                 yes/no — теги #нефть #ФРС ...
-  CALENDAR             yes/no — экономический календарь и напоминания
-  CAL_COUNTRIES        валюты/страны календаря (USD,EUR,CNY,GBP,JPY)
-  REMIND_MINUTES       за сколько минут напоминать о событии (60), 0 = не напоминать
-  ALERTS               yes/no — оповещения о сбоях источников
-  FRED_API_KEY         бесплатный ключ FRED — факт по вышедшим данным США (секрет GitHub)
-  TRADES               yes/no — сделки политиков США и инсайдеров (trades.py)
-  CONGRESS_MIN         присылать сделки политиков от этой суммы, $ (15000)
-  INSIDER_MIN_BUY      присылать покупки инсайдеров от этой суммы, $ (250000)
-  INSIDER_MIN_SELL     присылать продажи инсайдеров от этой суммы, $ (10000000)
-  STATE_FILE           путь к файлу состояния (state.json)
+Environment variables:
+  TELEGRAM_BOT_TOKEN   bot token from @BotFather                      (required)
+  TELEGRAM_CHAT_ID     your chat id — the bot owner                   (required)
+  WORKER_URL           the bot server address (normally read from docs/config.json);
+                       news go to the owner and everyone who pressed /start
+  MIN_LEVEL            high | medium (default medium) — what to send
+  DIGEST_HOUR          hour of the evening digest, MSK (21), -1 = off
+  QUIET_HOURS          silent hours, MSK, e.g. 0-8 (default 0-8)
+  MORNING_HOUR         hour of the morning digest, MSK (9), -1 = off
+  SUMMARIES            yes/no — a 1–2 sentence summary under the headline
+  TAGS                 yes/no — tags #oil #Fed ...
+  TRANSLATE            yes/no — translate headlines into the other language (Google, then MyMemory)
+  CALENDAR             yes/no — economic calendar and reminders
+  CAL_COUNTRIES        calendar currencies/countries (USD,EUR,CNY,GBP,JPY)
+  REMIND_MINUTES       how many minutes before an event to remind (60), 0 = never
+  ALERTS               yes/no — alerts about broken sources
+  FRED_API_KEY         free FRED key — actual numbers for released US data (GitHub secret)
+  TRADES               yes/no — trades of US politicians and insiders (trades.py)
+  CONGRESS_MIN         send politicians' trades from this amount, $ (15000)
+  INSIDER_MIN_BUY      send insider buys from this amount, $ (250000)
+  INSIDER_MIN_SELL     send insider sales from this amount, $ (10000000)
+  STATE_FILE           path to the state file (state.json)
 
-Запуск вручную:
-  python news_bot.py             обычный запуск
-  python news_bot.py --dry-run   ничего не отправлять, напечатать в консоль
-  python news_bot.py --test      отправить тестовое сообщение в Telegram
-  python news_bot.py --loop 5    работать постоянно, проверка каждые 5 минут
-  python news_bot.py --loop 5 --git-sync   то же + отправлять данные на GitHub (для терминала)
-  LOOP_HOURS=5.5 python news_bot.py --loop 10 --git-sync   цикл, который сам завершится через 5,5 ч
+Running by hand:
+  python news_bot.py             a normal run
+  python news_bot.py --dry-run   send nothing, print to the console
+  python news_bot.py --test      send a test message to Telegram
+  python news_bot.py --loop 5    run continuously, checking every 5 minutes
+  python news_bot.py --loop 5 --git-sync   the same + push the data to GitHub (for the terminal)
+  LOOP_HOURS=5.5 python news_bot.py --loop 10 --git-sync   a loop that stops by itself after 5.5 h
 
-Переменные можно положить в файл .env рядом с ботом (см. .env.example).
+Variables can go into a .env file next to the bot (see .env.example).
 """
 from __future__ import annotations
 
@@ -65,18 +66,19 @@ from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 
+import i18n
 from sources import SOURCES
 
 MSK = timezone(timedelta(hours=3))
-# браузерный User-Agent: часть официальных сайтов (bls.gov, imf.org) отвечает 403 «ботам»
+# a browser User-Agent: some official sites (bls.gov, imf.org) answer 403 to "bots"
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
-MAX_AGE_HOURS = 12          # новости старше не присылаем
-MAX_PER_MESSAGE_BATCH = 25  # не больше стольких новостей за один запуск
-KEEP_DAYS = 3               # сколько хранить историю в state.json
-DOWN_AFTER = 6              # столько неудачных запусков подряд (~3 ч) = источник «упал»
+MAX_AGE_HOURS = 12          # older stories are not sent
+MAX_PER_MESSAGE_BATCH = 25  # at most this many stories per run
+KEEP_DAYS = 3               # how long history is kept in state.json
+DOWN_AFTER = 6              # this many failed runs in a row (~3 h) = the source is "down"
 
 # ----------------------------------------------------------------------------
-# Ключевые слова. Английские — целыми словами, русские — по основе слова.
+# Keywords. English ones match whole words, Russian ones match the word stem.
 # ----------------------------------------------------------------------------
 HIGH_EN = [
     "rate decision", "rate cut", "rate cuts", "rate hike", "rate hikes", "interest rate", "interest rates",
@@ -121,29 +123,30 @@ KW_MED = _compile(MEDIUM_EN, False) + _compile(MEDIUM_RU, True)
 
 
 # ----------------------------------------------------------------------------
-# Теги (#нефть #ФРС ...). Английские слова — целиком, со «*» на конце — по началу
-# слова; русские — по основе. Порядок = приоритет, у новости не больше 3 тегов.
+# Tags (#oil #Fed ...), stored in English and shown in the reader's language (i18n.TAGS_RU).
+# English words match whole words ("*" at the end = prefix); Russian words match by stem.
+# Order = priority, at most 3 tags per story.
 # ----------------------------------------------------------------------------
 TAG_RULES = [
-    ("ФРС", ["fed", "feds", "federal reserve", "fomc", "powell", "warsh", "фрс"]),
-    ("ЕЦБ", ["ecb", "lagarde", "ецб", "лагард"]),
-    ("ЦБРФ", ["bank of russia", "nabiullina", "цб рф", "банк росси", "набиуллин", "ключев"]),
-    ("ставки", ["rate cut*", "rate hike*", "interest rate*", "key rate", "rate decision", "monetary policy", "ставк"]),
-    ("инфляция", ["inflation*", "cpi", "pce", "deflation", "инфляц", "дефляц"]),
-    ("нефть", ["oil", "crude", "brent", "wti", "opec", "opec+", "нефт", "опек"]),
-    ("газ", ["natural gas", "lng", "gas prices", "газа", "газу", "газом", "газов", "спг"]),
-    ("золото", ["gold", "bullion", "золот"]),
-    ("рубль", ["ruble*", "rouble*", "рубл"]),
-    ("доллар", ["dollar*", "greenback", "доллар"]),
-    ("облигации", ["bond*", "yield*", "treasur*", "gilt*", "облигац", "офз", "доходност"]),
-    ("рынки", ["stocks", "shares", "equities", "s&p", "nasdaq", "dow", "selloff", "sell-off", "rally", "акци", "мосбирж", "биржев"]),
-    ("Китай", ["china", "chinese", "pboc", "yuan", "beijing", "китай", "юан", "пекин"]),
-    ("пошлины", ["tariff*", "trade war", "пошлин", "торгов войн"]),
-    ("санкции", ["sanction*", "санкци"]),
-    ("занятость", ["payrolls", "jobs", "unemployment", "jobless", "labor market", "labour market", "безработиц", "занятост"]),
-    ("ВВП", ["gdp", "recession", "ввп", "рецесси"]),
-    ("крипта", ["bitcoin", "crypto*", "ethereum", "биткоин", "крипто"]),
-    ("Россия", ["russia*", "росси", "минфин", "росстат"]),
+    ("Fed", ["fed", "feds", "federal reserve", "fomc", "powell", "warsh", "фрс"]),
+    ("ECB", ["ecb", "lagarde", "ецб", "лагард"]),
+    ("BankOfRussia", ["bank of russia", "nabiullina", "цб рф", "банк росси", "набиуллин", "ключев"]),
+    ("rates", ["rate cut*", "rate hike*", "interest rate*", "key rate", "rate decision", "monetary policy", "ставк"]),
+    ("inflation", ["inflation*", "cpi", "pce", "deflation", "инфляц", "дефляц"]),
+    ("oil", ["oil", "crude", "brent", "wti", "opec", "opec+", "нефт", "опек"]),
+    ("gas", ["natural gas", "lng", "gas prices", "газа", "газу", "газом", "газов", "спг"]),
+    ("gold", ["gold", "bullion", "золот"]),
+    ("ruble", ["ruble*", "rouble*", "рубл"]),
+    ("dollar", ["dollar*", "greenback", "доллар"]),
+    ("bonds", ["bond*", "yield*", "treasur*", "gilt*", "облигац", "офз", "доходност"]),
+    ("markets", ["stocks", "shares", "equities", "s&p", "nasdaq", "dow", "selloff", "sell-off", "rally", "акци", "мосбирж", "биржев"]),
+    ("China", ["china", "chinese", "pboc", "yuan", "beijing", "китай", "юан", "пекин"]),
+    ("tariffs", ["tariff*", "trade war", "пошлин", "торгов войн"]),
+    ("sanctions", ["sanction*", "санкци"]),
+    ("jobs", ["payrolls", "jobs", "unemployment", "jobless", "labor market", "labour market", "безработиц", "занятост"]),
+    ("GDP", ["gdp", "recession", "ввп", "рецесси"]),
+    ("crypto", ["bitcoin", "crypto*", "ethereum", "биткоин", "крипто"]),
+    ("Russia", ["russia*", "росси", "минфин", "росстат"]),
 ]
 
 
@@ -170,7 +173,7 @@ def tags_for(*texts, limit=3):
 
 
 def score_text(title: str, summary: str):
-    """Возвращает (очки, есть ли экономические слова в заголовке)."""
+    """Returns (points, whether the headline has economic words)."""
     score, title_hit = 0, False
     for _, rx in KW_HIGH:
         if rx.search(title):
@@ -186,7 +189,7 @@ def score_text(title: str, summary: str):
 
 
 # ----------------------------------------------------------------------------
-# Загрузка и разбор RSS / Atom
+# Loading and parsing RSS / Atom
 # ----------------------------------------------------------------------------
 def _local(tag: str) -> str:
     return tag.rsplit("}", 1)[-1].lower() if isinstance(tag, str) else ""
@@ -233,7 +236,7 @@ def parse_feed(raw: bytes):
     try:
         root = ET.fromstring(raw)
     except ET.ParseError:
-        # частая поломка лент — неэкранированные &
+        # a common feed defect — unescaped &
         fixed = re.sub(rb"&(?!(?:[a-zA-Z]+|#\d+|#x[0-9a-fA-F]+);)", b"&amp;", raw)
         root = ET.fromstring(fixed)
 
@@ -275,19 +278,19 @@ def parse_feed(raw: bytes):
 def load_source(src):
     try:
         return src, parse_feed(fetch(src["url"])), None
-    except Exception as e:  # сеть, 403, кривой XML — источник просто пропускаем
+    except Exception as e:  # network, 403, broken XML — the source is just skipped
         return src, [], f"{type(e).__name__}: {e}"[:200]
 
 
 # ----------------------------------------------------------------------------
-# Отбор, оценка, дедупликация
+# Selection, scoring, de-duplication
 # ----------------------------------------------------------------------------
 GN_SUFFIX = re.compile(r"\s+[-–—]\s+(Reuters|Bloomberg(?:\.com)?|Bloomberg News|BNN Bloomberg)\s*$", re.I)
-# у любой новости из Google News в конце « - Название издания»
+# every Google News story ends with " - Publication name"
 GN_ANY_SUFFIX = re.compile(r"\s+[-–—]\s+[^-–—]{2,60}$")
 
-# Не экономика, хотя в заголовке попалось «market», «growth» и т. п.
-# («Боевики убили 20 человек по дороге на рынок», «у Папы обнаружили growth на лёгком»).
+# Not economics, even though "market", "growth" etc. appear in the headline
+# (crime stories that mention a market place, medical "growth", and so on).
 NOISE = re.compile(r"(?<![\w])(kill(?:s|ed|ing)?|gunm[ae]n|shooting|murder\w*|stabb\w*|surgery|"
                    r"dies|died|funeral|убил\w*|убит\w*|погиб\w*|стрельб\w*|операци[яюи] на)(?![\w])", re.I)
 STOP = set("the a an of to in on for and or is are as at by with from after over its it be has have will says said new".split())
@@ -319,20 +322,20 @@ def level_of(score: int) -> str:
     return "low"
 
 
-LEAD_MAX = 230  # длина выжимки под заголовком
+LEAD_MAX = 230  # length of the summary under the headline
 
 
 def make_lead(title: str, summary: str, link: str) -> str:
-    """1–2 первых предложения анонса статьи, если они добавляют что-то к заголовку."""
+    """The first 1–2 sentences of the teaser, if they add something to the headline."""
     if not summary or "news.google.com" in (link or ""):
-        return ""  # у Google News в анонсе только повтор заголовка
+        return ""  # Google News teasers only repeat the headline
     s = re.sub(r"\s*(Continue reading|Read more|Читать далее)\W*$", "", summary, flags=re.I).strip()
     s = re.sub(r"\s*The post .{0,200} appeared first on .*$", "", s).strip()
     if len(s) < 40:
         return ""
     t_toks, s_toks = norm_tokens(title), norm_tokens(s)
     if s_toks and len(s_toks - t_toks) < 4:
-        return ""  # анонс почти дословно повторяет заголовок
+        return ""  # the teaser almost repeats the headline
     out = ""
     for sent in re.split(r"(?<=[.!?])\s+", s):
         if len(out) + len(sent) > LEAD_MAX and out:
@@ -348,14 +351,14 @@ def evaluate(src, it):
     if "news.google.com" in (it["link"] or ""):
         title = GN_ANY_SUFFIX.sub("", title)
     if len(title.split()) < 3:
-        return None  # «Markets», «Economy» — это заголовки рубрик, а не новости
+        return None  # "Markets", "Economy" are section titles, not stories
     if src.get("categories") and it["categories"]:
         if not any(c in src["categories"] for c in it["categories"]):
             return None
     kw, title_hit = score_text(title, it["summary"])
     kind = src["kind"]
     if kind != "official" and kw < 3 and NOISE.search(title):
-        return None  # происшествие со случайным «экономическим» словом
+        return None  # an incident with a random "economic" word
     if kind == "general" and not title_hit:
         return None
     if kind == "econ" and kw == 0:
@@ -395,13 +398,13 @@ def collect(now: datetime):
             ev = evaluate(src, it)
             if ev:
                 candidates.append(ev)
-    # имя источника считается «упавшим», только если не ответила ни одна его лента
+    # a source counts as "down" only if none of its feeds answered
     errors = {k: v for k, v in errors.items() if k not in ok_names}
     return candidates, errors
 
 
 def merge_duplicates(items):
-    """Склеивает одну историю из разных источников. Каждый доп. источник +1 к важности."""
+    """Merges one story from different sources. Every extra source adds +1 to importance."""
     items = sorted(items, key=lambda x: -x["score"])
     merged = []
     for it in items:
@@ -413,7 +416,7 @@ def merge_duplicates(items):
                     m["score"] = min(m["score"] + 1, 14)
                 m.setdefault("_ids", set()).add(it["id"])
                 if not m.get("lead") and it.get("lead"):
-                    m["lead"] = it["lead"]  # выжимку берём у того, у кого она есть
+                    m["lead"] = it["lead"]  # take the summary from whoever has one
                 for t in it.get("tags", []):
                     if t not in m["tags"] and len(m["tags"]) < 3:
                         m["tags"].append(t)
@@ -426,7 +429,7 @@ def merge_duplicates(items):
 
 
 # ----------------------------------------------------------------------------
-# Состояние
+# State
 # ----------------------------------------------------------------------------
 def load_state(path):
     try:
@@ -453,9 +456,9 @@ def save_state(path, st, now):
 
 
 # ----------------------------------------------------------------------------
-# Перевод заголовков на русский (бесплатно, без ключей).
-# Сначала Google Translate, если не ответил — MyMemory, если и он нет —
-# остаётся оригинальный заголовок: новость не теряется.
+# Translation (free, no keys): English stories get a Russian version, Russian stories
+# an English one. Google Translate first, MyMemory as a fallback; if both fail the story
+# simply stays in its original language.
 # ----------------------------------------------------------------------------
 GT_URL = "https://translate.googleapis.com/translate_a/single"
 MM_URL = "https://api.mymemory.translated.net/get"
@@ -463,8 +466,15 @@ CYRILLIC = re.compile(r"[а-яё]", re.IGNORECASE)
 _tr_cache: dict = {}
 
 
-def _google(text, lang):
-    q = urllib.parse.urlencode({"client": "gtx", "sl": "auto", "tl": lang, "dt": "t", "q": text})
+def _env_on(name, default):
+    return os.environ.get(name, default).strip().lower() in ("1", "yes", "true", "on")
+
+
+TRANSLATE_ON = os.environ.get("TRANSLATE", "yes").strip().lower() not in ("off", "none", "no", "0", "false")
+
+
+def _google(text, src, lang):
+    q = urllib.parse.urlencode({"client": "gtx", "sl": src, "tl": lang, "dt": "t", "q": text})
     req = urllib.request.Request(f"{GT_URL}?{q}", headers={"User-Agent": UA})
     with urllib.request.urlopen(req, timeout=10) as r:
         data = json.loads(r.read().decode("utf-8"))
@@ -472,8 +482,8 @@ def _google(text, lang):
     return out.strip() or None
 
 
-def _mymemory(text, lang):
-    q = urllib.parse.urlencode({"q": text[:480], "langpair": f"en|{lang}"})
+def _mymemory(text, src, lang):
+    q = urllib.parse.urlencode({"q": text[:480], "langpair": f"{src}|{lang}"})
     req = urllib.request.Request(f"{MM_URL}?{q}", headers={"User-Agent": UA})
     with urllib.request.urlopen(req, timeout=10) as r:
         data = json.loads(r.read().decode("utf-8"))
@@ -483,40 +493,58 @@ def _mymemory(text, lang):
     return html.unescape(out).strip() or None
 
 
+def orig_lang(text):
+    return "ru" if CYRILLIC.search(text or "") else "en"
+
+
 def translate(text, lang="ru"):
-    if not text or lang in ("", "off", "none") or CYRILLIC.search(text):
-        return None  # уже по-русски или перевод выключен
-    if text in _tr_cache:
-        return _tr_cache[text]
+    """Translation into lang ('ru' or 'en'); None if the text is already in that language or translation failed."""
+    if not text or not TRANSLATE_ON or lang not in ("ru", "en"):
+        return None
+    src = orig_lang(text)
+    if src == lang:
+        return None
+    key = (text, lang)
+    if key in _tr_cache:
+        return _tr_cache[key]
     result = None
     for engine in (_google, _mymemory):
         try:
-            result = engine(text, lang)
+            result = engine(text, src, lang)
         except Exception:
             result = None
         if result and result.lower() != text.lower():
             break
         result = None
-    _tr_cache[text] = result
+    _tr_cache[key] = result
     return result
 
 
-def translate_items(items, lang):
-    """Добавляет title_ru и lead_ru тем, у кого их ещё нет (параллельно, 4 потока)."""
-    if lang in ("", "off", "none"):
+def translate_items(items):
+    """Adds title_<lang>/lead_<lang> in the other language to stories that lack them (4 threads)."""
+    if not TRANSLATE_ON:
         return
     jobs = []
     for it in items:
-        if not it.get("title_ru"):
-            jobs.append((it, "title", "title_ru"))
-        if SUMMARIES and it.get("lead") and not it.get("lead_ru"):
-            jobs.append((it, "lead", "lead_ru"))
+        target = "en" if orig_lang(it["title"]) == "ru" else "ru"
+        if not it.get("title_" + target):
+            jobs.append((it, "title", "title_" + target, target))
+        if SUMMARIES and it.get("lead") and not it.get("lead_" + target):
+            jobs.append((it, "lead", "lead_" + target, target))
     if not jobs:
         return
     with ThreadPoolExecutor(max_workers=4) as ex:
-        for (it, src, dst), tr in zip(jobs, ex.map(lambda j: translate(j[0][j[1]], lang), jobs)):
+        for (it, src, dst, target), tr in zip(jobs, ex.map(lambda j: translate(j[0][j[1]], j[3]), jobs)):
             if tr:
                 it[dst] = tr
+
+
+def title_for(it, lang):
+    return it.get("title_" + lang) or it["title"]
+
+
+def lead_for(it, lang):
+    return it.get("lead_" + lang) or it.get("lead") or ""
 
 
 # ----------------------------------------------------------------------------
@@ -524,50 +552,54 @@ def translate_items(items, lang):
 # ----------------------------------------------------------------------------
 TG_API = "https://api.telegram.org"
 ICON = {"high": "🔴", "medium": "🟡", "low": "⚪"}
-def _env_on(name, default):
-    return os.environ.get(name, default).strip().lower() in ("1", "yes", "true", "on")
-
-
 SHOW_ORIGINAL = _env_on("SHOW_ORIGINAL", "no")
-SUMMARIES = _env_on("SUMMARIES", "yes")   # выжимка под заголовком
-SHOW_TAGS = _env_on("TAGS", "yes")        # теги #нефть #ФРС ...
-TERMINAL_BUTTON = _env_on("TERMINAL_BUTTON", "yes")  # кнопка «Терминал» под сообщениями
+SUMMARIES = _env_on("SUMMARIES", "yes")   # 1–2 sentence summary under the headline
+SHOW_TAGS = _env_on("TAGS", "yes")        # tags #oil #Fed ...
+TERMINAL_BUTTON = _env_on("TERMINAL_BUTTON", "yes")  # "Terminal" button under messages
 
 
-def fmt_tags(tags):
-    return " ".join("#" + t for t in tags)
+def ai_sum(it, lang):
+    """The AI one-liner in the reader's language. Older notes had only a Russian "sum" (no "sum_ru")."""
+    ai = it.get("ai") or {}
+    if "sum_ru" not in ai:
+        return ai.get("sum", "") if lang == "ru" else ""
+    return ai.get("sum_ru" if lang == "ru" else "sum") or ""
 
 
-def fmt_item(it, icon=True, lead=True):
-    src = ", ".join(it["sources"])
-    t = html.escape(it.get("title_ru") or it["title"])
+def fmt_tags(tags, lang=i18n.DEFAULT):
+    return " ".join("#" + i18n.tag(t, lang) for t in tags)
+
+
+def fmt_item(it, icon=True, lead=True, lang=i18n.DEFAULT):
+    src = ", ".join(i18n.source(x, lang) for x in it["sources"])
+    title = title_for(it, lang)
     mark = f"{ICON[level_of(it['score'])]} " if icon else "▪️ "
-    line = f"{mark}<b>{t}</b>"
-    if SHOW_ORIGINAL and it.get("title_ru"):
+    line = f"{mark}<b>{html.escape(title)}</b>"
+    if SHOW_ORIGINAL and title != it["title"]:
         line += f"\n<i>{html.escape(it['title'])}</i>"
-    text = (it.get("lead_ru") or it.get("lead") or "") if (lead and SUMMARIES) else ""
+    text = (ai_sum(it, lang) or lead_for(it, lang)) if (lead and SUMMARIES) else ""
     if text:
         line += f"\n{html.escape(text)}"
     meta = html.escape(src)
     if SHOW_TAGS and it.get("tags"):
-        meta += " · " + fmt_tags(it["tags"])
+        meta += " · " + fmt_tags(it["tags"], lang)
     line += f"\n<i>{meta}</i>"
     if it.get("link"):
-        line += f" · <a href=\"{html.escape(it['link'], quote=True)}\">читать →</a>"
+        line += f" · <a href=\"{html.escape(it['link'], quote=True)}\">{i18n.t(lang, 'read')}</a>"
     return line
 
 
-def sectioned(items):
-    """Блоки «Главное» / «Также» вместо сплошного списка."""
+def sectioned(items, lang=i18n.DEFAULT):
+    """"Top" / "Also" blocks instead of one long list."""
     high = [s for s in items if level_of(s["score"]) == "high"]
     med = [s for s in items if level_of(s["score"]) != "high"]
     blocks = []
     if high:
-        blocks.append("🔴 <b>ГЛАВНОЕ</b>")
-        blocks += [fmt_item(s, icon=False) for s in high]
+        blocks.append(i18n.t(lang, "top"))
+        blocks += [fmt_item(s, icon=False, lang=lang) for s in high]
     if med:
-        blocks.append("🟡 <b>ТАКЖЕ</b>")
-        blocks += [fmt_item(s, icon=False) for s in med]
+        blocks.append(i18n.t(lang, "also"))
+        blocks += [fmt_item(s, icon=False, lang=lang) for s in med]
     return blocks
 
 
@@ -585,21 +617,36 @@ def split_messages(header, blocks, limit=3900):
 
 class TelegramError(RuntimeError):
     def __init__(self, code, body):
-        super().__init__(f"Telegram ответил {code}: {body[:300]}")
+        super().__init__(f"Telegram returned {code}: {body[:300]}")
         self.code, self.body = code, body
 
 
-class Telegram:
-    """Отправка в Telegram: владельцу (TELEGRAM_CHAT_ID) и всем, кто нажал /start
-    (список подписчиков ведёт сервер бота, см. worker/)."""
+def per_lang(fn):
+    """Wraps fn(lang) so it is computed once per language."""
+    cache = {}
 
-    def __init__(self, token, chat_id, dry=False, pages_url="", subscribers=()):
+    def get(lang):
+        if lang not in cache:
+            cache[lang] = fn(lang)
+        return cache[lang]
+    return get
+
+
+class Telegram:
+    """Sends to the owner (TELEGRAM_CHAT_ID) and everyone who pressed /start
+    (the bot server keeps the subscriber list, see worker/). Each person gets their language (/lang)."""
+
+    def __init__(self, token, chat_id, dry=False, pages_url="", subscribers=(), langs=None):
         self.token, self.chat_id, self.dry = token, str(chat_id).strip(), dry
         self.pages_url = pages_url
         self.subscribers = [str(x) for x in dict.fromkeys(subscribers or []) if str(x) != self.chat_id]
-        self.gone = set()          # заблокировали бота или удалили чат — уберём из подписчиков
-        self.sent = 0              # сколько сообщений ушло за запуск (чтобы сразу сохранить состояние)
-        self.no_webapp = set()     # чаты, где кнопки-приложения не работают
+        self.langs = {str(k): i18n.norm_lang(v) for k, v in (langs or {}).items()}
+        self.gone = set()          # blocked the bot or deleted the chat — removed from subscribers
+        self.no_webapp = set()     # chats where web_app buttons do not work
+        self.sent = 0              # messages sent this run (so state is saved right away)
+
+    def lang_of(self, chat):
+        return self.langs.get(str(chat)) or i18n.DEFAULT
 
     def recipients(self, owner_only=False):
         out = [self.chat_id] if self.chat_id else []
@@ -610,14 +657,16 @@ class Telegram:
     def _markup(self, chat):
         if not self.pages_url:
             return None
-        # web_app-кнопки (открывают страницу внутри Telegram) работают только в личных чатах
+        lang = self.lang_of(chat)
+        q = "?lang=ru" if lang == "ru" else ""
+        # web_app buttons (open the page inside Telegram) only work in private chats
         webapp = not str(chat).startswith("-") and chat not in self.no_webapp
 
         def mk(text, url):
             return {"text": text, "web_app": {"url": url}} if webapp else {"text": text, "url": url}
-        row = [mk("📈 Рынок онлайн", self.pages_url)]
+        row = [mk(i18n.t(lang, "btn_market"), self.pages_url + q)]
         if TERMINAL_BUTTON:
-            row.append(mk("🖥 Терминал", self.pages_url.rstrip("/") + "/terminal/"))
+            row.append(mk(i18n.t(lang, "btn_terminal"), self.pages_url.rstrip("/") + "/terminal/" + q))
         return json.dumps({"inline_keyboard": [row]})
 
     def _call(self, method, fields, files=None):
@@ -643,7 +692,7 @@ class Telegram:
                 raise TelegramError(e.code, body) from None
             except urllib.error.URLError:
                 time.sleep(3)
-        raise RuntimeError("Не удалось достучаться до Telegram")
+        raise RuntimeError("Telegram is unreachable")
 
     def _deliver(self, chat, method, fields, button, files=None):
         f = dict(fields, chat_id=chat)
@@ -655,65 +704,107 @@ class Telegram:
         except TelegramError as e:
             low = e.body.lower()
             if e.code == 400 and markup and ("button" in low or "web_app" in low):
-                self.no_webapp.add(chat)             # повторяем с обычными ссылками
+                self.no_webapp.add(chat)             # retry with plain links
                 f["reply_markup"] = self._markup(chat)
                 return self._call(method, f, files)
             if chat != self.chat_id and (e.code == 403 or (e.code == 400 and "chat not found" in low)):
-                self.gone.add(chat)                  # пользователь заблокировал бота
+                self.gone.add(chat)                  # the user blocked the bot
                 return None
             raise
 
-    def _broadcast(self, method, fields, button, owner_only, files=None):
-        """Отправить всем получателям. Ошибка у одного не мешает остальным.
-        Исключение — только если не дошло никому (например, Telegram недоступен)."""
+    def _broadcast(self, method, make, button, owner_only):
+        """Sends to every recipient in their language. make(lang) -> (fields, files).
+        One failed chat does not stop the others; raises only if nothing was delivered."""
         targets = self.recipients(owner_only)
         delivered, last_err = 0, None
+        prepared = {}
         for k, chat in enumerate(targets):
+            lang = self.lang_of(chat)
+            if lang not in prepared:
+                prepared[lang] = make(lang)
+            fields, files = prepared[lang]
+            if fields is None:
+                continue      # nothing to send in this language (e.g. the picture failed to render)
             try:
-                res = self._deliver(chat, method, fields, button, files)
+                res = self._deliver(chat, method, fields, button(lang) if callable(button) else button, files)
                 if res is not None:
                     delivered += 1
                     if files and method == "sendPhoto":
-                        # картинку загружаем один раз, остальным — по её file_id
+                        # upload the picture once per language, then reuse its file_id
                         photo = (res.get("photo") or [{}])[-1].get("file_id")
                         if photo:
-                            fields, files = dict(fields, photo=photo), None
+                            prepared[lang] = (dict(fields, photo=photo), None)
             except Exception as e:
                 last_err = e
-                print(f"  ! Telegram, чат {chat}: {e}"[:300])
+                print(f"  ! Telegram, chat {chat}: {e}"[:300])
             if k and len(targets) > 20:
-                time.sleep(0.04)   # не больше ~25 сообщений в секунду
+                time.sleep(0.04)   # stay under ~25 messages per second
         if delivered:
             self.sent += 1
         if targets and not delivered and last_err:
             raise last_err
 
+    def _langs_in_use(self, owner_only):
+        return sorted({self.lang_of(c) for c in self.recipients(owner_only)}) or [i18n.DEFAULT]
+
     def send(self, text, silent=False, button=False, owner_only=False):
+        """text: a string or a function lang -> string (None = nothing for that language).
+        button: bool or a function lang -> bool."""
+        make_text = per_lang(text if callable(text) else (lambda lang: text))
         if self.dry:
-            n = len(self.recipients(owner_only))
-            print("-" * 60 + ("  [без звука]" if silent else "") + ("  [кнопка: Рынок онлайн]" if button and self.pages_url else "")
-                  + f"  [получателей: {n}{', только владелец' if owner_only else ''}]")
-            print(html.unescape(re.sub(r"<[^>]+>", "", text)))
+            for lang in self._langs_in_use(owner_only):
+                body = make_text(lang)
+                if body is None:
+                    continue
+                n = sum(1 for c in self.recipients(owner_only) if self.lang_of(c) == lang)
+                btn = button(lang) if callable(button) else button
+                print("-" * 60 + f"  [{lang}]" + ("  [silent]" if silent else "")
+                      + ("  [buttons]" if btn and self.pages_url else "") + f"  [recipients: {n}]")
+                print(html.unescape(re.sub(r"<[^>]+>", "", body)))
             return
-        fields = {"text": text, "parse_mode": "HTML",
-                  "disable_web_page_preview": "true", "disable_notification": "true" if silent else "false"}
-        self._broadcast("sendMessage", fields, button, owner_only)
+
+        def make(lang):
+            body = make_text(lang)
+            if body is None:
+                return None, None
+            return {"text": body, "parse_mode": "HTML", "disable_web_page_preview": "true",
+                    "disable_notification": "true" if silent else "false"}, None
+        self._broadcast("sendMessage", make, button, owner_only)
+
+    def send_multi(self, make_msgs, silent=False, button=True, owner_only=False):
+        """make_msgs(lang) -> list of messages; the button goes under the last message of each language."""
+        msgs = per_lang(make_msgs)
+        langs = self._langs_in_use(owner_only)
+        total = max((len(msgs(l)) for l in langs), default=0)
+        for k in range(total):
+            self.send(lambda lang, k=k: msgs(lang)[k] if k < len(msgs(lang)) else None, silent=silent,
+                      button=(lambda lang, k=k: bool(button) and k == len(msgs(lang)) - 1), owner_only=owner_only)
 
     def send_photo(self, png, caption, silent=False, button=True, owner_only=False):
+        """png and caption: values or functions lang -> value (png may be None to skip that language)."""
+        make_png = png if callable(png) else (lambda lang: png)
+        make_cap = caption if callable(caption) else (lambda lang: caption)
         if self.dry:
-            print("-" * 60 + f"  [КАРТИНКА {len(png)//1024} КБ]" + ("  [без звука]" if silent else "")
-                  + f"  [получателей: {len(self.recipients(owner_only))}]")
-            print(html.unescape(re.sub(r"<[^>]+>", "", caption)))
+            for lang in self._langs_in_use(owner_only):
+                img = make_png(lang)
+                print("-" * 60 + f"  [{lang}] [PICTURE {len(img or b'') // 1024} KB]" + ("  [silent]" if silent else ""))
+                print(html.unescape(re.sub(r"<[^>]+>", "", make_cap(lang))))
             return
-        fields = {"caption": caption[:1024], "parse_mode": "HTML", "disable_notification": "true" if silent else "false"}
-        self._broadcast("sendPhoto", fields, button, owner_only, files={"photo": ("market.png", png, "image/png")})
+
+        def make(lang):
+            img = make_png(lang)
+            if not img:
+                return None, None
+            fields = {"caption": make_cap(lang)[:1024], "parse_mode": "HTML", "disable_notification": "true" if silent else "false"}
+            return fields, {"photo": ("market.png", img, "image/png")}
+        self._broadcast("sendPhoto", make, button, owner_only)
 
 
 # ----------------------------------------------------------------------------
-# Подписчики: их список хранит сервер бота (worker/), здесь мы его только читаем
+# Subscribers: the bot server (worker/) keeps the list; here we only read it
 # ----------------------------------------------------------------------------
 CONFIG_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "docs", "config.json")
-_SUBS_CACHE = None   # последний полученный список — на случай, если сервер на минуту недоступен
+_SUBS_CACHE = None   # last list received — in case the server is down for a minute
 
 
 def worker_url():
@@ -728,25 +819,28 @@ def worker_url():
 
 
 def _sync_key(token):
-    # та же формула, что в worker/src/index.js
+    # same formula as in worker/src/lib.js
     return hashlib.sha256(("econnews-sync:" + token).encode()).hexdigest()
 
 
 def fetch_subscribers(token):
+    """(subscriber ids, {chat id: language}) from the bot server."""
     global _SUBS_CACHE
     url = worker_url()
     if not url or not token:
-        return []
+        return [], {}
     try:
         req = urllib.request.Request(url + "/subs", headers={"Authorization": "Bearer " + _sync_key(token), "User-Agent": UA})
         with urllib.request.urlopen(req, timeout=15) as r:
-            ids = [str(x) for x in json.loads(r.read().decode("utf-8")).get("ids", [])]
-        _SUBS_CACHE = ids
-        return ids
+            d = json.loads(r.read().decode("utf-8"))
+        ids = [str(x) for x in d.get("ids", [])]
+        langs = {str(k): v for k, v in (d.get("langs") or {}).items()}
+        _SUBS_CACHE = (ids, langs)
+        return ids, langs
     except Exception as e:
-        print(f"  ! список подписчиков недоступен ({type(e).__name__}: {e})"[:200]
-              + (" — беру прошлый" if _SUBS_CACHE else ""))
-        return list(_SUBS_CACHE or [])
+        print(f"  ! subscriber list unavailable ({type(e).__name__}: {e})"[:200]
+              + (" — using the previous one" if _SUBS_CACHE else ""))
+        return _SUBS_CACHE or ([], {})
 
 
 def remove_subscribers(token, ids):
@@ -759,9 +853,9 @@ def remove_subscribers(token, ids):
                                               "Content-Type": "application/json"})
         with urllib.request.urlopen(req, timeout=15) as r:
             r.read()
-        print(f"  убраны подписчики, заблокировавшие бота: {len(ids)}")
+        print(f"  removed subscribers who blocked the bot: {len(ids)}")
     except Exception as e:
-        print(f"  ! не удалось убрать подписчиков: {type(e).__name__}: {e}"[:200])
+        print(f"  ! could not remove subscribers: {type(e).__name__}: {e}"[:200])
 
 
 def _multipart(fields, files):
@@ -786,10 +880,8 @@ def in_quiet_hours(now_msk, spec):
 
 
 # ----------------------------------------------------------------------------
-# Рынок: котировки, картинка, данные для страницы «Рынок онлайн»
+# Markets: quotes, picture, data for the "Markets" page and the terminal
 # ----------------------------------------------------------------------------
-MONTHS_GEN = ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа",
-              "сентября", "октября", "ноября", "декабря"]
 PAGE_DATA = os.path.join(os.path.dirname(os.path.abspath(__file__)), "docs", "data.json")
 
 
@@ -800,26 +892,26 @@ def fetch_quotes():
         import market
         return market.fetch_all()
     except Exception as e:
-        print(f"  ! котировки недоступны: {e}")
+        print(f"  ! quotes unavailable: {e}")
         return []
 
 
-def strip_line(quotes):
+def strip_line(quotes, lang=i18n.DEFAULT):
     import market
-    return market.strip_line(quotes)
+    return market.strip_line(quotes, lang=lang)
 
 
-def render_chart(quotes, now):
+def render_chart(quotes, now, lang=i18n.DEFAULT):
     try:
         import charts
-        return charts.render_market_png(quotes, now)
-    except Exception as e:  # нет matplotlib или что-то пошло не так — без картинки
-        print(f"  ! картинка не построена: {type(e).__name__}: {e}")
+        return charts.render_market_png(quotes, now, lang=lang)
+    except Exception as e:  # no matplotlib or something else went wrong — no picture
+        print(f"  ! picture not rendered: {type(e).__name__}: {e}")
         return None
 
 
 def page_calendar(st, now):
-    """События календаря на 7 дней вперёд (и сутки назад) для терминала."""
+    """Calendar events 7 days ahead (and one day back) for the terminal, names in both languages."""
     events = (st.get("calendar") or {}).get("events") or []
     lo, hi = (now - timedelta(days=1)).isoformat(), (now + timedelta(days=7)).isoformat()
     out = []
@@ -840,15 +932,20 @@ def page_calendar(st, now):
 
 
 def page_news_item(r):
-    """Новость для терминала: заголовок, выжимка, теги, тикеры компаний и (если есть) разбор ИИ."""
-    item = {"title": r.get("title_ru") or r["title"], "original": r["title"] if r.get("title_ru") else "",
-            "lead": r.get("lead_ru") or r.get("lead") or "", "tags": r.get("tags", []),
-            "sources": r["sources"], "link": r["link"], "level": level_of(r["score"]), "ts": r["ts"]}
+    """A story for the terminal: original headline and its translation, summary, tags, company tickers, AI note."""
+    item = {"title": r["title"], "lang": orig_lang(r["title"]), "lead": r.get("lead") or "",
+            "tags": [i18n.TAGS_FROM_RU.get(t, t) for t in r.get("tags", [])],
+            "sources": [i18n.SOURCES_FROM_RU.get(x, x) for x in r["sources"]],
+            "link": r["link"], "level": level_of(r["score"]), "ts": r["ts"]}
+    for k in ("title_ru", "title_en", "lead_ru", "lead_en"):
+        if r.get(k):
+            item[k] = r[k]
     try:
         import stocks
-        tk = stocks.tickers_in(r["title"], r.get("title_ru"), r.get("lead"), r.get("lead_ru"))
+        texts = (r["title"], r.get("title_ru"), r.get("title_en"), r.get("lead"), r.get("lead_ru"), r.get("lead_en"))
+        tk = stocks.tickers_in(*texts)
         if tk:
-            d = stocks.direction(r["title"], r.get("lead"), r.get("title_ru"), r.get("lead_ru"))
+            d = stocks.direction(*texts)
             item["tk"] = tk
             if d:
                 item["dir"] = d
@@ -860,7 +957,7 @@ def page_news_item(r):
 
 
 def write_page_data(st, quotes, now):
-    """docs/data.json — его читает страница «Рынок онлайн»."""
+    """docs/data.json — read by the Markets page and the terminal."""
     path = os.environ.get("PAGE_DATA", PAGE_DATA)
     if not os.path.isdir(os.path.dirname(path)):
         return
@@ -889,7 +986,7 @@ def write_page_data(st, quotes, now):
             import trades
             data["trades"] = trades.page_data(st)
         except Exception as e:
-            print(f"  ! сделки для терминала: {type(e).__name__}: {e}")
+            print(f"  ! trades for the terminal: {type(e).__name__}: {e}")
             if old.get("trades"):
                 data["trades"] = old["trades"]
     with open(path, "w", encoding="utf-8") as f:
@@ -897,17 +994,16 @@ def write_page_data(st, quotes, now):
 
 
 # ----------------------------------------------------------------------------
-# Главный цикл одного запуска
+# One run
 # ----------------------------------------------------------------------------
 def run(dry=False):
     token = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
     chat = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
     if not dry and (not token or not chat):
-        sys.exit("Не заданы TELEGRAM_BOT_TOKEN и/или TELEGRAM_CHAT_ID")
+        sys.exit("TELEGRAM_BOT_TOKEN and/or TELEGRAM_CHAT_ID are not set")
     min_level = os.environ.get("MIN_LEVEL", "medium").strip().lower()
     digest_hour = int(os.environ.get("DIGEST_HOUR", "21"))
     quiet = os.environ.get("QUIET_HOURS", "0-8")
-    lang = os.environ.get("TRANSLATE", "ru").strip().lower()
     pages_url = os.environ.get("PAGES_URL", "").strip()
     chart_hours = {int(h) for h in os.environ.get("CHART_HOURS", "9,21").split(",") if h.strip().lstrip("-").isdigit()}
     show_market = os.environ.get("MARKET_LINE", "yes").lower() in ("1", "yes", "true")
@@ -918,15 +1014,15 @@ def run(dry=False):
     alerts_on = _env_on("ALERTS", "yes")
     state_path = os.environ.get("STATE_FILE", os.path.join(os.path.dirname(os.path.abspath(__file__)), "state.json"))
 
-    subscribers = fetch_subscribers(token)
-    tg = Telegram(token, chat, dry, pages_url, subscribers)
+    subscribers, langs = fetch_subscribers(token)
+    tg = Telegram(token, chat, dry, pages_url, subscribers, langs)
     now = datetime.now(timezone.utc)
     now_msk = now.astimezone(MSK)
     st = load_state(state_path)
 
     candidates, errors = collect(now)
     quotes = fetch_quotes()
-    mline = strip_line(quotes) if (quotes and show_market) else ""
+    mline = per_lang(lambda lang: strip_line(quotes, lang) if (quotes and show_market) else "")
     went_down, came_back = [], []
     for name in sorted({s["name"] for s in SOURCES}):
         prev = st["fail_streak"].get(name, 0)
@@ -938,7 +1034,7 @@ def run(dry=False):
             came_back.append(name)
     all_down = len(errors) == len({s["name"] for s in SOURCES})
 
-    # отбрасываем уже виденное и то, что похоже на уже отправленное
+    # drop what we have already seen and what looks like something already sent
     recent_toks = [norm_tokens(r["title"]) for r in st["recent"]]
     fresh = []
     for c in candidates:
@@ -953,25 +1049,26 @@ def run(dry=False):
 
     wanted = {"high"} if min_level == "high" else {"high", "medium"}
     to_send = [s for s in stories if level_of(s["score"]) in wanted]
-    to_send.sort(key=lambda s: s["ts"], reverse=True)   # свежие выше...
-    to_send.sort(key=lambda s: -s["score"])              # ...но важные первыми
+    to_send.sort(key=lambda s: s["ts"], reverse=True)   # newest first...
+    to_send.sort(key=lambda s: -s["score"])              # ...but important ones on top
 
-    # переводим только то, что действительно уйдёт в Telegram
-    translate_items(to_send[:MAX_PER_MESSAGE_BATCH], lang)
+    # translate only what is actually going out (it also lands in the terminal)
+    translate_items(to_send[:MAX_PER_MESSAGE_BATCH])
     try:
         import ai
         if ai.enabled():
             ai.annotate([s for s in to_send if level_of(s["score"]) == "high"])
     except Exception as e:
-        print(f"  ! ИИ-разбор: {type(e).__name__}: {e}"[:200])
+        print(f"  ! AI notes: {type(e).__name__}: {e}"[:200])
 
-    # запоминаем всё увиденное (даже неважное), чтобы не присылать повторно
+    # remember everything seen (even unimportant) so it is never sent twice
     for s in stories:
         for i in s["_ids"]:
             st["seen"][i] = now.isoformat()
         rec = {"title": s["title"], "link": s["link"], "sources": s["sources"],
                "score": s["score"], "ts": now.isoformat()}
-        keep = ("title_ru", "lead", "lead_ru", "tags", "ai") if level_of(s["score"]) != "low" else ("title_ru",)
+        keep = (("title_ru", "title_en", "lead", "lead_ru", "lead_en", "tags", "ai")
+                if level_of(s["score"]) != "low" else ("title_ru", "title_en"))
         for k in keep:
             if s.get(k):
                 rec[k] = s[k]
@@ -980,69 +1077,60 @@ def run(dry=False):
     silent = in_quiet_hours(now_msk, quiet)
     stamp = now_msk.strftime("%d.%m %H:%M")
 
-    market_html = f"\n<i>📊 {html.escape(mline)}</i>" if mline else ""
+    def market_html(lang):
+        m = mline(lang)
+        return f"\n<i>📊 {html.escape(m)}</i>" if m else ""
 
     if not st["initialized"]:
         st["initialized"] = True
-        st["last_digest"] = now_msk.strftime("%Y-%m-%d")  # сводку начнём со следующего дня
+        st["last_digest"] = now_msk.strftime("%Y-%m-%d")  # the evening digest starts tomorrow
         st["last_morning"] = now_msk.strftime("%Y-%m-%d")
         top = to_send[:7]
-        header = ("✅ <b>Бот экономических новостей запущен</b>\n"
-                  f"Слежу за {len({s['name'] for s in SOURCES})} источниками, проверка каждые ~10 минут.\n"
-                  "В 9:00 — главное за ночь и календарь дня, в 21:00 — итоги дня.\n"
-                  "За час до важных данных (инфляция, ставки ФРС/ЕЦБ) пришлю напоминание."
-                  + market_html)
-        blocks = sectioned(top) if top else ["Пока ничего значимого — пришлю, как только появится."]
-        msgs = split_messages(header, blocks)
-        for k, m in enumerate(msgs):
-            tg.send(m, button=(k == len(msgs) - 1), owner_only=True)
+        n_src = len({s["name"] for s in SOURCES})
+        tg.send_multi(lambda lang: split_messages(
+            i18n.t(lang, "started", n=n_src) + market_html(lang),
+            sectioned(top, lang) if top else [i18n.t(lang, "nothing_yet")]), owner_only=True)
     elif to_send:
         extra = len(to_send) - MAX_PER_MESSAGE_BATCH
         batch = to_send[:MAX_PER_MESSAGE_BATCH]
         n_high = sum(level_of(s["score"]) == "high" for s in batch)
-        header = f"📰 <b>Экономика · {stamp} МСК</b>" + market_html
-        blocks = sectioned(batch)
-        if extra > 0:
-            blocks.append(f"<i>…и ещё {extra} — на странице «Рынок онлайн»</i>")
-        msgs = split_messages(header, blocks)
-        # важные новости — со звуком даже ночью
-        for k, m in enumerate(msgs):
-            tg.send(m, silent=silent and n_high == 0, button=(k == len(msgs) - 1))
+        # important news make a sound even at night
+        tg.send_multi(lambda lang: split_messages(
+            i18n.t(lang, "batch_head", stamp=stamp) + market_html(lang),
+            sectioned(batch, lang) + ([i18n.t(lang, "more_on_page", n=extra)] if extra > 0 else [])),
+            silent=silent and n_high == 0)
 
-    # календарь: важные события недели (кэшируется в state.json)
+    # calendar: the week's key events (cached in state.json)
     events = []
     if use_calendar:
         try:
             import econ_calendar as cal
             events = cal.get_events(st, now, cal_countries)
         except Exception as e:
-            print(f"  ! календарь: {type(e).__name__}: {e}")
+            print(f"  ! calendar: {type(e).__name__}: {e}")
             events = []
-    tr = (lambda t: translate(t, lang)) if lang not in ("", "off", "none") else None
 
-    # напоминания о событиях за REMIND_MINUTES минут
+    # reminders REMIND_MINUTES before an event
     if events and remind_min > 0:
         import econ_calendar as cal
         reminded = st.setdefault("cal_reminded", [])
         soon = [e for e in cal.events_between(events, now, now + timedelta(minutes=remind_min))
                 if cal.event_id(e) not in reminded]
         if soon:
-            lines = []
-            for e in soon:
-                mins = max(1, int((datetime.fromisoformat(e["ts"]) - now).total_seconds() // 60))
-                lines.append(f"через {mins} мин · " + cal.fmt_event(e, tr))
-                reminded.append(cal.event_id(e))
-            tg.send("⏰ <b>Скоро важные данные</b>\n" + "\n".join(lines), silent=silent)
+            mins = {cal.event_id(e): max(1, int((datetime.fromisoformat(e["ts"]) - now).total_seconds() // 60)) for e in soon}
+            tg.send(lambda lang: i18n.t(lang, "soon_head") + "\n" + "\n".join(
+                i18n.t(lang, "in_min", m=mins[cal.event_id(e)]) + cal.fmt_event(e, lang, translate) for e in soon), silent=silent)
+            reminded += [cal.event_id(e) for e in soon]
         st["cal_reminded"] = reminded[-200:]
 
-    # факт по вышедшим данным США (из FRED, нужен бесплатный ключ FRED_API_KEY)
+    # actual numbers for released US data (from FRED, needs the free key FRED_API_KEY)
     fred_key = os.environ.get("FRED_API_KEY", "").strip()
     if events and fred_key:
         import econ_calendar as cal
         actuals = st.setdefault("cal_actuals", {})
         due = [e for e in cal.events_between(events, now - timedelta(hours=36), now - timedelta(minutes=1))
                if cal.fred_spec(e) and cal.event_id(e) not in actuals]
-        lines = []
+        released = []
         for e in due[:8]:
             try:
                 a = cal.fetch_actual(e, fred_key)
@@ -1050,20 +1138,16 @@ def run(dry=False):
                 print(f"  ! FRED {e['title']}: {type(ex).__name__}: {ex}"[:200])
                 continue
             if not a:
-                continue  # ещё не опубликовано — проверим в следующий запуск
+                continue  # not published yet — check next run
             actuals[cal.event_id(e)] = a
-            v = cal.verdict(a, e.get("forecast"))
-            extra = [f"прогноз {html.escape(e['forecast'])}" if e.get("forecast") else "",
-                     f"пред. {html.escape(e['previous'])}" if e.get("previous") else ""]
-            extra = ", ".join(x for x in extra if x)
-            lines.append(f"{cal.FLAGS.get(e['country'], '')} {html.escape(cal.ru_name(e, tr))}: <b>{html.escape(a)}</b>"
-                         + (f" <i>({extra})</i>" if extra else "") + (f" — {v}" if v else ""))
-        if lines:
-            tg.send("📊 <b>Вышли данные</b>\n" + "\n".join(lines), silent=silent)
+            released.append((e, a))
+        if released:
+            tg.send(lambda lang: i18n.t(lang, "released_head") + "\n" + "\n".join(
+                cal.fmt_released(e, a, lang, translate) for e, a in released), silent=silent)
         if len(actuals) > 300:
             st["cal_actuals"] = dict(list(actuals.items())[-300:])
 
-    # утренний дайджест: главное за ночь + события дня
+    # morning digest: overnight highlights + today's events
     today = now_msk.strftime("%Y-%m-%d")
     st.setdefault("last_morning", "")
     if morning_hour >= 0 and morning_hour <= now_msk.hour < 14 and st["last_morning"] != today:
@@ -1072,60 +1156,61 @@ def run(dry=False):
         night = [r for r in st["recent"] if r["ts"] >= since and level_of(r["score"]) != "low"]
         night.sort(key=lambda r: -r["score"])
         top = night[:7]
-        translate_items(top, lang)
-        header = f"☀️ <b>Доброе утро! Главное за ночь</b>" + market_html
-        blocks = [f"{k}. " + fmt_item(r, icon=True, lead=k <= 3) for k, r in enumerate(top, 1)] \
-            or ["Ночью значимых новостей не было."]
+        translate_items(top)
+        todays = []
         if events:
             import econ_calendar as cal
             day_start = now_msk.replace(hour=0, minute=0, second=0, microsecond=0).astimezone(timezone.utc)
             todays = cal.events_between(events, max(now, day_start), day_start + timedelta(days=1))
-            if todays:
-                blocks.append("📅 <b>Сегодня в календаре (МСК)</b>\n" + "\n".join(cal.fmt_event(e, tr) for e in todays))
-        msgs = split_messages(header, blocks)
-        for k, m in enumerate(msgs):
-            tg.send(m, button=(k == len(msgs) - 1))
 
-    # оповещения о сбоях источников
+        def morning(lang):
+            blocks = [f"{k}. " + fmt_item(r, icon=True, lead=k <= 3, lang=lang) for k, r in enumerate(top, 1)] \
+                or [i18n.t(lang, "quiet_night")]
+            if todays:
+                import econ_calendar as cal
+                blocks.append(i18n.t(lang, "today_cal") + "\n" + "\n".join(cal.fmt_event(e, lang, translate) for e in todays))
+            return split_messages(i18n.t(lang, "morning_head") + market_html(lang), blocks)
+        tg.send_multi(morning)
+
+    # alerts about broken sources (service messages — owner only)
     if alerts_on and st["initialized"]:
         lines = []
         if all_down:
             if not st.get("all_down_alerted"):
-                lines.append("⚠️ Ни один источник не ответил. Возможно, проблемы с сетью у GitHub — проверю в следующий раз.")
+                lines.append(("all_down", {}))
                 st["all_down_alerted"] = True
         else:
             st["all_down_alerted"] = False
             if went_down:
-                lines.append(f"⚠️ Не отвечают уже ~{DOWN_AFTER // 2} ч: " + html.escape(", ".join(went_down)))
+                lines.append(("went_down", {"h": DOWN_AFTER // 2, "names": html.escape(", ".join(went_down))}))
             if came_back:
-                lines.append("✅ Снова работают: " + html.escape(", ".join(came_back)))
+                lines.append(("came_back", {"names": html.escape(", ".join(came_back))}))
         if lines:
-            tg.send("\n".join(lines), silent=True, owner_only=True)   # служебное — только владельцу
+            tg.send(lambda lang: "\n".join(i18n.t(lang, k, **kw) for k, kw in lines), silent=True, owner_only=True)
 
-    # сделки политиков США и инсайдеров (официальные раскрытия, без ключей)
+    # trades of US politicians and company insiders (official disclosures, no keys)
     n_trades = 0
     if _env_on("TRADES", "yes"):
         try:
             import trades
             new_trades = trades.update(st, now)
-            for m in trades.messages(new_trades):
-                tg.send(m, silent=silent)
+            if any(new_trades.values()):
+                tg.send_multi(lambda lang: trades.messages(new_trades, lang=lang), silent=silent, button=False)
             n_trades = sum(len(v) for v in new_trades.values())
         except Exception as e:
-            print(f"  ! сделки: {type(e).__name__}: {e}")
+            print(f"  ! trades: {type(e).__name__}: {e}")
 
-    # картинка с графиками рынков (по умолчанию в 9 и 21 МСК)
+    # picture with market charts (by default at 9 and 21 MSK)
     chart_key = now_msk.strftime("%Y-%m-%d-%H")
     st.setdefault("charts_sent", [])
     if quotes and now_msk.hour in chart_hours and chart_key not in st["charts_sent"]:
-        png = render_chart(quotes, now)
-        if png:
-            title = "Утренний обзор рынков" if now_msk.hour < 14 else "Рынки к вечеру"
-            cap = f"📊 <b>{title}</b>\n{html.escape(mline or strip_line(quotes))}"
-            tg.send_photo(png, cap, silent=silent)
-            st["charts_sent"] = (st["charts_sent"] + [chart_key])[-20:]
+        title_key = "chart_morning" if now_msk.hour < 14 else "chart_evening"
+        tg.send_photo(per_lang(lambda lang: render_chart(quotes, now, lang)),
+                      lambda lang: f"📊 <b>{i18n.t(lang, title_key)}</b>\n{html.escape(mline(lang) or strip_line(quotes, lang))}",
+                      silent=silent)
+        st["charts_sent"] = (st["charts_sent"] + [chart_key])[-20:]
 
-    # дневная сводка
+    # evening digest
     today = now_msk.strftime("%Y-%m-%d")
     if digest_hour >= 0 and now_msk.hour >= digest_hour and st["last_digest"] != today:
         st["last_digest"] = today
@@ -1133,24 +1218,25 @@ def run(dry=False):
         day = [r for r in st["recent"] if r["ts"] >= day_ago and level_of(r["score"]) != "low"]
         day.sort(key=lambda r: -r["score"])
         top = day[:10]
-        translate_items(top, lang)   # перевод сохранится и в state.json
-        n_all = len(day)
-        header = (f"🗓 <b>Главное за {now_msk.day} {MONTHS_GEN[now_msk.month - 1]}</b>\n"
-                  f"<i>Значимых новостей за сутки: {n_all}. Топ-{len(top)}:</i>")
-        blocks = [f"{k}. " + fmt_item(r, icon=True, lead=k <= 3) for k, r in enumerate(top, 1)] \
-            or ["Значимых новостей не было."]
+        translate_items(top)   # the translation is also kept in state.json
+        nxt = []
         if events:
             import econ_calendar as cal
             tomorrow = (now_msk + timedelta(days=1)).replace(hour=0, minute=0, second=0, microsecond=0).astimezone(timezone.utc)
             nxt = cal.events_between(events, tomorrow, tomorrow + timedelta(days=1))
-            if nxt:
-                blocks.append("📅 <b>Завтра в календаре (МСК)</b>\n" + "\n".join(cal.fmt_event(e, tr) for e in nxt))
         dead = sorted(n for n, k in st["fail_streak"].items() if k >= DOWN_AFTER)
-        if dead:
-            blocks.append("⚠️ <i>Не отвечают несколько часов: " + html.escape(", ".join(dead)) + "</i>")
-        msgs = split_messages(header, blocks)
-        for k, m in enumerate(msgs):
-            tg.send(m, silent=True, button=(k == len(msgs) - 1))
+
+        def digest(lang):
+            header = i18n.t(lang, "digest_head", day=now_msk.day, month=i18n.month(lang, now_msk.month), n=len(day), k=len(top))
+            blocks = [f"{k}. " + fmt_item(r, icon=True, lead=k <= 3, lang=lang) for k, r in enumerate(top, 1)] \
+                or [i18n.t(lang, "digest_empty")]
+            if nxt:
+                import econ_calendar as cal
+                blocks.append(i18n.t(lang, "tomorrow_cal") + "\n" + "\n".join(cal.fmt_event(e, lang, translate) for e in nxt))
+            if dead:
+                blocks.append(i18n.t(lang, "dead", names=html.escape(", ".join(dead))))
+            return split_messages(header, blocks)
+        tg.send_multi(digest, silent=True)
 
     write_page_data(st, quotes, now)
     save_state(state_path, st, now)
@@ -1159,17 +1245,17 @@ def run(dry=False):
     if tg.gone:
         remove_subscribers(token, tg.gone)
 
-    print(f"[{stamp} МСК] кандидатов: {len(candidates)}, новых историй: {len(stories)}, "
-          f"отправлено: {len(to_send[:MAX_PER_MESSAGE_BATCH])}, получателей: {len(tg.recipients())}, "
-          f"котировок: {len(quotes)}, сделок: {n_trades}, {extras}"
-          f"ошибки источников: {len(errors)}")
+    print(f"[{stamp} MSK] candidates: {len(candidates)}, new stories: {len(stories)}, "
+          f"sent: {len(to_send[:MAX_PER_MESSAGE_BATCH])}, recipients: {len(tg.recipients())}, "
+          f"quotes: {len(quotes)}, trades: {n_trades}, {extras}"
+          f"source errors: {len(errors)}")
     for name, err in sorted(errors.items()):
         print(f"  ! {name}: {err}")
     return tg.sent
 
 
 def update_extras(now, dry=False):
-    """Данные терминала, которые не зависят от новостей: компании США (stocks.json) и ставки (rates.json)."""
+    """Terminal data that does not depend on news: US companies (stocks.json) and rates (rates.json)."""
     parts = []
     if dry or not _env_on("COMPANIES", "yes"):
         return ""
@@ -1177,21 +1263,21 @@ def update_extras(now, dry=False):
         import stocks
         d = stocks.build(now)
         if d:
-            parts.append(f"акций: {d['prices_ok']}, мультипликаторов: {d['metrics_updated']}")
+            parts.append(f"stocks: {d['prices_ok']}, ratios: {d['metrics_updated']}, financials: {d.get('fin_updated', 0)}")
     except Exception as e:
-        print(f"  ! компании (stocks.py): {type(e).__name__}: {e}"[:200])
+        print(f"  ! companies (stocks.py): {type(e).__name__}: {e}"[:200])
     try:
         import rates
         r = rates.build(now)
         if r:
-            parts.append(f"кривых: {len(r.get('curves') or {})}")
+            parts.append(f"curves: {len(r.get('curves') or {})}")
     except Exception as e:
-        print(f"  ! ставки (rates.py): {type(e).__name__}: {e}"[:200])
+        print(f"  ! rates (rates.py): {type(e).__name__}: {e}"[:200])
     return (", ".join(parts) + ", ") if parts else ""
 
 
 def push_live(token, now):
-    """Свежие новости — на сервер бота: терминал покажет их сразу, не дожидаясь обновления сайта."""
+    """Fresh news to the bot server: the terminal shows them at once, without waiting for the site to rebuild."""
     url = worker_url()
     path = os.environ.get("PAGE_DATA", PAGE_DATA)
     if not url or not token or not os.path.exists(path):
@@ -1207,11 +1293,11 @@ def push_live(token, now):
         with urllib.request.urlopen(req, timeout=15) as r:
             r.read()
     except Exception as e:
-        print(f"  ! живая лента на сервер бота: {type(e).__name__}: {e}"[:200])
+        print(f"  ! live feed to the bot server: {type(e).__name__}: {e}"[:200])
 
 
 def load_dotenv(path):
-    """Читает файл .env (КЛЮЧ=значение) рядом с ботом. Уже заданные переменные не трогает."""
+    """Reads the .env file (KEY=value) next to the bot. Variables that are already set are kept."""
     try:
         with open(path, encoding="utf-8") as f:
             for line in f:
@@ -1225,7 +1311,7 @@ def load_dotenv(path):
 
 
 def git_sync(stage, repo):
-    """Режим сервера: перед запуском забираем изменения с GitHub, после — отправляем state.json и данные страницы."""
+    """Server mode: pull changes from GitHub before a run, push state.json and the page data after it."""
     import subprocess
 
     def git(*a):
@@ -1240,7 +1326,7 @@ def git_sync(stage, repo):
         if os.path.exists(os.path.join(repo, f)):
             git("add", f)
     if git("diff", "--cached", "--quiet").returncode == 0:
-        return  # нечего отправлять
+        return  # nothing to push
     git("-c", "user.name=news-bot", "-c", "user.email=news-bot@users.noreply.github.com",
         "commit", "-q", "-m", "news update")
     for _ in range(3):
@@ -1248,11 +1334,11 @@ def git_sync(stage, repo):
         if r.returncode == 0:
             return
         git("pull", "--rebase", "--autostash", "-q")
-    print("  ! git push не удался:", (r.stderr or r.stdout).strip()[:300])
+    print("  ! git push failed:", (r.stderr or r.stdout).strip()[:300])
 
 
 def code_hash(repo):
-    """Отпечаток кода бота (*.py в папке): если после git pull он изменился — пора перезапуститься."""
+    """Fingerprint of the bot code (*.py in the folder): if it changed after git pull, it is time to restart."""
     h = hashlib.sha1()
     for name in sorted(os.listdir(repo)):
         if name.endswith(".py"):
@@ -1262,17 +1348,17 @@ def code_hash(repo):
 
 
 def reload_self(deadline):
-    """Перезапуск процесса с новой версией кода. Время работы цикла (для GitHub Actions) сохраняется."""
+    """Restarts the process with the new code. The loop deadline (for GitHub Actions) is kept."""
     if deadline:
         os.environ["LOOP_DEADLINE"] = str(deadline)
-    print("Код бота обновился на GitHub — перезапускаюсь с новой версией.", flush=True)
+    print("The bot code changed on GitHub — restarting with the new version.", flush=True)
     os.execv(sys.executable, [sys.executable] + sys.argv)
 
 
 def loop(minutes, sync, max_hours=0.0):
-    """Цикл: запуск каждые `minutes` минут. Ошибка одного запуска не останавливает бота.
-    max_hours > 0 — остановиться через столько часов (для GitHub Actions, где задача живёт до 6 ч).
-    С --git-sync бот сам подхватывает новую версию кода: после git pull перезапускается, если *.py изменились."""
+    """Loop: a run every `minutes` minutes. A failed run does not stop the bot.
+    max_hours > 0 — stop after that many hours (for GitHub Actions, where a job lives up to 6 h).
+    With --git-sync the bot picks up new code itself: after git pull it restarts if any *.py changed."""
     repo = os.path.dirname(os.path.abspath(__file__))
     try:
         deadline = float(os.environ["LOOP_DEADLINE"])
@@ -1280,8 +1366,8 @@ def loop(minutes, sync, max_hours=0.0):
         deadline = time.time() + max_hours * 3600 if max_hours > 0 else None
     auto_reload = os.environ.get("AUTO_RELOAD", "yes").strip().lower() not in ("0", "no", "off", "false")
     start_hash = code_hash(repo)
-    print(f"Бот запущен в постоянном режиме: проверка каждые {minutes:g} мин"
-          + (", синхронизация с GitHub включена" if sync else "") + ". Остановить: Ctrl+C.")
+    print(f"The bot runs continuously: a check every {minutes:g} min"
+          + (", GitHub sync on" if sync else "") + ". Stop: Ctrl+C.")
     last_push = 0.0
     push_every = float(os.environ.get("PUSH_MINUTES", "10")) * 60
     while True:
@@ -1292,8 +1378,8 @@ def loop(minutes, sync, max_hours=0.0):
                 if auto_reload and code_hash(repo) != start_hash:
                     reload_self(deadline)
             sent = run()
-            # сайт (GitHub Pages) пересобирается при каждой отправке — не чаще раза в ~10 минут,
-            # но сразу, если что-то ушло в Telegram (чтобы после сбоя не прислать то же самое ещё раз)
+            # the site (GitHub Pages) rebuilds on every push — so not more than every ~10 minutes,
+            # but at once if something went to Telegram (so a crash cannot make it send the same again)
             if sync and (sent or time.time() - last_push >= push_every - 30):
                 git_sync("push", repo)
                 last_push = time.time()
@@ -1301,10 +1387,10 @@ def loop(minutes, sync, max_hours=0.0):
             print(e)
             return
         except Exception as e:
-            print(f"  ! запуск завершился ошибкой: {type(e).__name__}: {e}")
+            print(f"  ! the run failed: {type(e).__name__}: {e}")
         pause = max(30.0, minutes * 60 - (time.time() - started))
         if deadline and time.time() + pause > deadline:
-            print("Время работы истекло, выхожу.")
+            print("Time is up, exiting.")
             return
         time.sleep(pause)
 
@@ -1313,10 +1399,11 @@ def main():
     load_dotenv(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env"))
     args = sys.argv[1:]
     if "--test" in args:
-        tg = Telegram(os.environ.get("TELEGRAM_BOT_TOKEN", ""), os.environ.get("TELEGRAM_CHAT_ID", ""),
-                      pages_url=os.environ.get("PAGES_URL", ""))
-        tg.send("👋 Тест: бот экономических новостей на связи.", button=True)
-        print("Тестовое сообщение отправлено")
+        token = os.environ.get("TELEGRAM_BOT_TOKEN", "")
+        tg = Telegram(token, os.environ.get("TELEGRAM_CHAT_ID", ""), pages_url=os.environ.get("PAGES_URL", ""),
+                      langs=fetch_subscribers(token)[1])
+        tg.send(lambda lang: i18n.t(lang, "test"), button=True)
+        print("Test message sent")
         return
     if "--loop" in args:
         i = args.index("--loop")

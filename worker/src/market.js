@@ -1,8 +1,9 @@
-// Котировки, история цен и данные по компаниям. Ключи API живут только здесь.
-//   Акции США:   Finnhub (бесплатный ключ) — котировка, профиль, мультипликаторы, аналитики, отчёты, новости
-//   История:     Yahoo Finance (без ключа), крипта — Binance, Россия — Мосбиржа (ISS)
-//   Отчётность:  docs/fin/<ТИКЕР>.json, которую основной бот собирает из SEC (для ~100 крупнейших компаний)
-import { cached, getJSON, getText, pageJSON, siteData } from "./lib.js";
+// Quotes, price history and company data. API keys live only here, on the server.
+//   US stocks:    Finnhub (free key) — quote, profile, ratios, analysts, earnings, company news
+//   World:        Yahoo Finance (no key) — indices, currencies, commodities, yields
+//   History:      Yahoo Finance; crypto — Binance / CryptoCompare; Russia — Moscow Exchange (ISS)
+//   Financials:   docs/fin/<TICKER>.json, built by the news bot from SEC filings (~100 largest companies)
+import { cached, dm, getJSON, pageJSON, siteData } from "./lib.js";
 
 const FH = "https://finnhub.io/api/v1";
 const BINANCE = "https://data-api.binance.vision/api/v3";
@@ -15,19 +16,23 @@ export const COINS = {
   LTC: "litecoin", SUI: "sui", NEAR: "near", UNI: "uniswap",
 };
 
-// инструменты из данных бота: id в data.json → символ Yahoo для истории
+// instruments of the bot's data: id in data.json (kept as is for compatibility) → [Yahoo symbol, English name, Russian name]
 export const MKT = {
-  "S&P": ["^GSPC", "S&P 500"], "Nasdaq": ["^IXIC", "Nasdaq"], "DJI": ["^DJI", "Dow Jones"], "RTY": ["^RUT", "Russell 2000"],
-  "VIX": ["^VIX", "VIX"], "SX5E": ["^STOXX50E", "Euro Stoxx 50"], "DAX": ["^GDAXI", "DAX"], "UKX": ["^FTSE", "FTSE 100"],
-  "CAC": ["^FCHI", "CAC 40"], "NKY": ["^N225", "Nikkei 225"], "HSI": ["^HSI", "Hang Seng"], "SHCOMP": ["000001.SS", "Шанхай"],
-  "SENSEX": ["^BSESN", "Sensex"], "IMOEX": [null, "Индекс Мосбиржи"], "DXY": ["DX-Y.NYB", "Индекс доллара"],
-  "EUR/USD": ["EURUSD=X", "EUR/USD"], "USDJPY": ["JPY=X", "USD/JPY"], "GBPUSD": ["GBPUSD=X", "GBP/USD"],
-  "USDCNY": ["CNY=X", "USD/CNY"], "USDCHF": ["CHF=X", "USD/CHF"], "USD/RUB": ["RUB=X", "USD/RUB"],
-  "CNY/RUB": ["CNYRUB=X", "CNY/RUB"], "Brent": ["BZ=F", "Нефть Brent"], "WTI": ["CL=F", "Нефть WTI"],
-  "Газ": ["NG=F", "Газ"], "Золото": ["GC=F", "Золото"], "Серебро": ["SI=F", "Серебро"], "Платина": ["PL=F", "Платина"],
-  "Медь": ["HG=F", "Медь"], "Пшеница": ["ZW=F", "Пшеница"], "UST3M": ["^IRX", "UST 3M"], "UST5": ["^FVX", "UST 5Y"],
-  "UST10": ["^TNX", "UST 10Y"], "UST30": ["^TYX", "UST 30Y"],
+  "S&P": ["^GSPC", "S&P 500", "S&P 500"], "Nasdaq": ["^IXIC", "Nasdaq", "Nasdaq"], "DJI": ["^DJI", "Dow Jones", "Dow Jones"],
+  "RTY": ["^RUT", "Russell 2000", "Russell 2000"], "VIX": ["^VIX", "VIX", "VIX"], "SX5E": ["^STOXX50E", "Euro Stoxx 50", "Euro Stoxx 50"],
+  "DAX": ["^GDAXI", "DAX", "DAX"], "UKX": ["^FTSE", "FTSE 100", "FTSE 100"], "CAC": ["^FCHI", "CAC 40", "CAC 40"],
+  "NKY": ["^N225", "Nikkei 225", "Nikkei 225"], "HSI": ["^HSI", "Hang Seng", "Hang Seng"],
+  "SHCOMP": ["000001.SS", "Shanghai Composite", "Шанхай"], "SENSEX": ["^BSESN", "Sensex", "Sensex"],
+  "IMOEX": [null, "MOEX Russia index", "Индекс Мосбиржи"], "DXY": ["DX-Y.NYB", "US Dollar Index", "Индекс доллара"],
+  "EUR/USD": ["EURUSD=X", "EUR/USD", "EUR/USD"], "USDJPY": ["JPY=X", "USD/JPY", "USD/JPY"], "GBPUSD": ["GBPUSD=X", "GBP/USD", "GBP/USD"],
+  "USDCNY": ["CNY=X", "USD/CNY", "USD/CNY"], "USDCHF": ["CHF=X", "USD/CHF", "USD/CHF"], "USD/RUB": ["RUB=X", "USD/RUB", "USD/RUB"],
+  "CNY/RUB": ["CNYRUB=X", "CNY/RUB", "CNY/RUB"], "Brent": ["BZ=F", "Brent crude", "Нефть Brent"], "WTI": ["CL=F", "WTI crude", "Нефть WTI"],
+  "Газ": ["NG=F", "Natural gas", "Газ"], "Золото": ["GC=F", "Gold", "Золото"], "Серебро": ["SI=F", "Silver", "Серебро"],
+  "Платина": ["PL=F", "Platinum", "Платина"], "Медь": ["HG=F", "Copper", "Медь"], "Пшеница": ["ZW=F", "Wheat", "Пшеница"],
+  "UST3M": ["^IRX", "UST 3M", "UST 3M"], "UST5": ["^FVX", "UST 5Y", "UST 5Y"], "UST10": ["^TNX", "UST 10Y", "UST 10Y"],
+  "UST30": ["^TYX", "UST 30Y", "UST 30Y"],
 };
+export const mktName = (id, lang) => (MKT[id] ? MKT[id][lang === "ru" ? 2 : 1] : id);
 const MKT_ALIAS = {
   SPX: "S&P", SP500: "S&P", "S&P500": "S&P", "S&P": "S&P", NDX: "Nasdaq", NASDAQ: "Nasdaq", DOW: "DJI", DJI: "DJI",
   RUSSELL: "RTY", RTY: "RTY", VIX: "VIX", STOXX: "SX5E", SX5E: "SX5E", DAX: "DAX", FTSE: "UKX", UKX: "UKX", CAC: "CAC",
@@ -40,13 +45,13 @@ const MKT_ALIAS = {
   "ПЛАТИНА": "Платина", COPPER: "Медь", "МЕДЬ": "Медь", WHEAT: "Пшеница", "ПШЕНИЦА": "Пшеница",
   US3M: "UST3M", UST3M: "UST3M", US5Y: "UST5", UST5: "UST5", US10Y: "UST10", UST10: "UST10", US30Y: "UST30", UST30: "UST30",
 };
-// популярные акции Мосбиржи — их можно писать без префикса MOEX:
+// popular Moscow Exchange shares: can be typed without the MOEX: prefix
 const MOEX_COMMON = new Set(["SBER", "SBERP", "GAZP", "LKOH", "ROSN", "NVTK", "GMKN", "YDEX", "VTBR", "TATN", "TATNP", "PLZL",
   "MGNT", "MTSS", "AFLT", "CHMF", "NLMK", "ALRS", "OZON", "IRAO", "MOEX", "PHOR", "RUAL", "SNGS", "SNGSP", "PIKK", "MAGN",
   "AFKS", "HYDR", "FEES", "RTKM", "TRNFP", "X5", "T", "SMLT", "POSI", "HEAD", "BSPB", "CBOM", "UPRO", "SVCB", "ASTR"]);
-const US_ONLY = new Set(["T"]);   // совпадает с тикером AT&T: Т-Технологии на Мосбирже — только с префиксом MOEX:
+const US_ONLY = new Set(["T"]);   // same as AT&T: T-Technologies on the Moscow Exchange only with the MOEX: prefix
 
-// Разбор того, что ввёл человек: «AAPL», «aapl us equity», «NASDAQ:AAPL», «MOEX:SBER», «BTC», «нефть»
+// What the person typed: "AAPL", "aapl us equity", "NASDAQ:AAPL", "MOEX:SBER", "BTC", "oil", "нефть"
 export function parseSymbol(raw) {
   let s = String(raw || "").trim().toUpperCase().replace(/\s+/g, " ");
   if (!s) return null;
@@ -69,12 +74,12 @@ export function parseSymbol(raw) {
 const fhUrl = (env, path) => FH + path + (path.includes("?") ? "&" : "?") + "token=" + encodeURIComponent(env.FINNHUB_API_KEY || "");
 
 export async function fh(env, path, ttl) {
-  if (!env.FINNHUB_API_KEY) throw new Error("нет ключа Finnhub");
+  if (!env.FINNHUB_API_KEY) throw new Error("no Finnhub key");
   return cached("fh:" + path, ttl, () => getJSON(fhUrl(env, path), { ttl: Math.min(ttl, 3600) }));
 }
 
 // ---------------------------------------------------------------------------
-// Котировки
+// Quotes
 // ---------------------------------------------------------------------------
 async function usQuote(env, s) {
   const x = await fh(env, "/quote?symbol=" + encodeURIComponent(s), 20);
@@ -101,7 +106,7 @@ async function cryptoQuotes(syms) {
     const out = {};
     for (const s of syms) { const x = raw[s] && raw[s].USD; if (x && x.PRICE) out[s] = { px: x.PRICE, ch: x.CHANGEPCT24HOUR, h: x.HIGH24HOUR, l: x.LOW24HOUR, cur: "$", src: "cryptocompare" }; }
     if (Object.keys(out).length) return out;
-    errors.push("CryptoCompare: нет данных");
+    errors.push("CryptoCompare: no data");
   } catch (e) { errors.push("CryptoCompare " + String(e.message || e)); }
   try {
     const out = {};
@@ -121,7 +126,7 @@ async function cryptoQuotes(syms) {
     return out;
   } catch (e) {
     errors.push(String(e.message || e));
-    throw new Error("крипта: " + errors.join("; "));
+    throw new Error("crypto: " + errors.join("; "));
   }
 }
 
@@ -144,7 +149,7 @@ async function moexQuotes(syms) {
   return out;
 }
 
-// { ввод: {key, kind, name, px, ch, cur, src} } — не больше 40 инструментов за раз
+// { input: {key, kind, name, name_ru, px, ch, cur, src} } — up to 40 instruments at a time
 export async function getQuotes(env, inputs) {
   const parsed = [];
   const seen = new Set();
@@ -177,7 +182,8 @@ export async function getQuotes(env, inputs) {
     for (const q of d.market || []) ids[q.id] = q;
     for (const p of mk) {
       const q = ids[p.s];
-      if (q) out[p.key] = { key: p.key, kind: "mkt", name: (MKT[p.s] || [])[1] || q.name, px: q.value, ch: q.change, cur: "", src: "bot", digits: q.digits };
+      if (q) out[p.key] = { key: p.key, kind: "mkt", name: (MKT[p.s] || [])[1] || q.name_en || q.name, name_ru: (MKT[p.s] || [])[2] || q.name,
+        px: q.value, ch: q.change, cur: "", src: "bot", digits: q.digits };
     }
   }).catch(() => {}));
   await Promise.all(jobs);
@@ -185,7 +191,76 @@ export async function getQuotes(env, inputs) {
 }
 
 // ---------------------------------------------------------------------------
-// История цен (дневные свечи)
+// World markets for the terminal: indices, currencies, commodities, yields — Yahoo Finance, free, no key.
+// One "spark" request per 20 symbols instead of one per symbol. USD/RUB and CNY/RUB are left to the
+// Bank of Russia rates from the news bot (Yahoo's ruble quotes are unreliable); IMOEX comes from the Moscow Exchange.
+// ---------------------------------------------------------------------------
+export const WORLD = ["S&P", "Nasdaq", "DJI", "RTY", "VIX", "SX5E", "DAX", "UKX", "CAC", "NKY", "HSI", "SHCOMP", "SENSEX", "DXY",
+  "EUR/USD", "USDJPY", "GBPUSD", "USDCNY", "USDCHF", "Brent", "WTI", "Газ", "Золото", "Серебро", "Платина", "Медь", "Пшеница",
+  "UST3M", "UST5", "UST10", "UST30"];
+
+function sparkRows(d) {
+  // v7: {spark: {result: [{symbol, response: [{meta}]}]}} · v8: {"^GSPC": {symbol, close: [...], chartPreviousClose}}
+  const out = {};
+  if (d && d.spark && Array.isArray(d.spark.result)) {
+    for (const r of d.spark.result) {
+      const m = r && r.response && r.response[0] && r.response[0].meta;
+      if (m && m.regularMarketPrice != null) out[r.symbol] = { px: m.regularMarketPrice, prev: m.chartPreviousClose ?? m.previousClose };
+    }
+  } else if (d && typeof d === "object") {
+    for (const [sym, r] of Object.entries(d)) {
+      const close = ((r && r.close) || []).filter((x) => x != null);
+      if (close.length) out[sym] = { px: close[close.length - 1], prev: r.chartPreviousClose ?? r.previousClose };
+    }
+  }
+  return out;
+}
+
+async function yahooSpark(symbols) {
+  const out = {};
+  const errors = [];
+  for (let i = 0; i < symbols.length; i += 20) {
+    const part = symbols.slice(i, i + 20).map(encodeURIComponent).join(",");
+    let got = null;
+    for (const url of ["https://query1.finance.yahoo.com/v7/finance/spark?range=1d&interval=1d&symbols=",
+      "https://query2.finance.yahoo.com/v8/finance/spark?range=1d&interval=1d&symbols="]) {
+      try {
+        got = sparkRows(await getJSON(url + part, { timeout: 6000 }));
+        if (Object.keys(got).length) break;
+      } catch (e) { errors.push(String(e.message || e)); }
+    }
+    Object.assign(out, got || {});
+  }
+  if (!Object.keys(out).length) throw new Error("Yahoo: " + (errors[0] || "no data"));
+  return out;
+}
+
+async function imoexLive() {
+  const d = await getJSON(ISS + "/engines/stock/markets/index/securities/IMOEX.json?iss.meta=off&iss.only=marketdata" +
+    "&marketdata.columns=SECID,CURRENTVALUE,LASTVALUE,LASTCHANGEPRC", { timeout: 6000 });
+  const c = d.marketdata.columns, r = d.marketdata.data[0] || [];
+  const v = r[c.indexOf("CURRENTVALUE")] || r[c.indexOf("LASTVALUE")];
+  return v ? { value: v, change: r[c.indexOf("LASTCHANGEPRC")] } : null;
+}
+
+// { id: {value, change} } for the terminal; refreshed at most every `ttl` seconds for all viewers together
+export async function worldQuotes(ttl = 30) {
+  return cached("world", ttl, async () => {
+    const sym = {};
+    for (const id of WORLD) sym[MKT[id][0]] = id;
+    const [y, imoex] = await Promise.all([yahooSpark(Object.keys(sym)), imoexLive().catch(() => null)]);
+    const out = {};
+    for (const [s, x] of Object.entries(y)) {
+      if (!sym[s] || !(x.px > 0)) continue;
+      out[sym[s]] = { value: x.px, change: x.prev ? (x.px / x.prev - 1) * 100 : null };
+    }
+    if (imoex) out.IMOEX = imoex;
+    return out;
+  });
+}
+
+// ---------------------------------------------------------------------------
+// Price history (daily candles)
 // ---------------------------------------------------------------------------
 const RANGES = { "1m": 31, "3m": 92, "6m": 183, "1y": 366, "2y": 731, "5y": 1827, "ytd": 0 };
 
@@ -206,7 +281,7 @@ async function yahooHistory(sym, range) {
   const interval = range === "5y" ? "1wk" : "1d";
   const d = await getJSON(YAHOO + encodeURIComponent(sym) + "?range=" + range.replace("m", "mo") + "&interval=" + interval + "&includePrePost=false", { ttl: 1800 });
   const r = d && d.chart && d.chart.result && d.chart.result[0];
-  if (!r || !r.timestamp) throw new Error("Yahoo: нет данных");
+  if (!r || !r.timestamp) throw new Error("Yahoo: no data");
   const q = r.indicators.quote[0];
   const out = { t: [], o: [], h: [], l: [], c: [], v: [], cur: r.meta.currency, name: r.meta.longName || r.meta.shortName || sym };
   r.timestamp.forEach((t, i) => {
@@ -226,12 +301,12 @@ async function binanceHistory(coin, range) {
     catch (e) { err = e; }
   }
   if (!k) {
-    // Binance не пускает часть серверов Cloudflare — берём дневные свечи CryptoCompare
+    // Binance blocks some Cloudflare servers — take daily candles from CryptoCompare
     const toDays = interval === "1w" ? limit * 7 : limit;
     const d = await getJSON("https://min-api.cryptocompare.com/data/v2/histoday?fsym=" + coin + "&tsym=USD&limit=" + Math.min(2000, toDays), { ttl: 900, timeout: 8000 })
-      .catch(() => { throw err || new Error("Binance недоступен"); });
+      .catch(() => { throw err || new Error("Binance unavailable"); });
     const rows = ((d && d.Data && d.Data.Data) || []).filter((x) => x.close > 0);
-    if (!rows.length) throw err || new Error("нет истории " + coin);
+    if (!rows.length) throw err || new Error("no history for " + coin);
     const out = { t: [], o: [], h: [], l: [], c: [], v: [], cur: "USD", name: coin + "/USD", src2: "cryptocompare" };
     const step = interval === "1w" ? 7 : 1;
     for (let i = rows.length % step; i < rows.length; i += step) {
@@ -265,27 +340,27 @@ async function moexHistory(s, range, isIndex) {
 
 export async function getHistory(env, raw, range) {
   const p = parseSymbol(raw);
-  if (!p) throw new Error("не понял инструмент: " + raw);
+  if (!p) throw new Error("unknown instrument: " + raw);
   range = normRange(range);
   return cached("hist:" + p.key + ":" + range, 1800, async () => {
     let h;
     if (p.kind === "crypto") { const b = await binanceHistory(p.s, range); h = { ...b, src: b.src2 || "binance" }; delete h.src2; }
     else if (p.kind === "moex") h = { ...(await moexHistory(p.s, range, false)), src: "moex" };
     else if (p.kind === "mkt" && p.s === "IMOEX") h = { ...(await moexHistory("IMOEX", range, true)), src: "moex" };
-    else if (p.kind === "mkt") h = { ...(await yahooHistory(MKT[p.s][0], range)), name: MKT[p.s][1], src: "yahoo" };
+    else if (p.kind === "mkt") h = { ...(await yahooHistory(MKT[p.s][0], range)), name: MKT[p.s][1], name_ru: MKT[p.s][2], src: "yahoo" };
     else h = { ...(await yahooHistory(p.s.replace(".", "-"), range)), src: "yahoo" };
     if (range === "ytd" && p.kind === "crypto") {
       const jan1 = Date.UTC(new Date().getUTCFullYear(), 0, 1) / 1000;
       const i = h.t.findIndex((t) => t >= jan1);
       if (i > 0) for (const k of ["t", "o", "h", "l", "c", "v"]) h[k] = h[k].slice(i);
     }
-    if (!h.c.length) throw new Error("нет истории для " + raw);
+    if (!h.c.length) throw new Error("no history for " + raw);
     return { ok: true, s: p.key, kind: p.kind, range, ...h };
   });
 }
 
 // ---------------------------------------------------------------------------
-// Компания (акции США): DES, FA, ERN, ANR, CN, HDS
+// Company (US stocks): DES, FA, ERN, ANR, CN, HDS
 // ---------------------------------------------------------------------------
 const DAY = 86400;
 
@@ -296,7 +371,7 @@ function num(x, d) {
 }
 
 function seriesRows(series, keys) {
-  // { eps: [{period, v}], ... } → [{end, eps, ...}] по убыванию даты
+  // { eps: [{period, v}], ... } → [{end, eps, ...}], newest first
   const by = {};
   for (const k of keys) for (const x of (series && series[k]) || []) {
     (by[x.period] = by[x.period] || { end: x.period })[k] = num(x.v, 4);
@@ -306,8 +381,9 @@ function seriesRows(series, keys) {
 
 const FA_KEYS = ["eps", "salesPerShare", "grossMargin", "operatingMargin", "netMargin", "roe", "totalDebtToEquity", "fcfMargin"];
 
-// заголовки переводим по одному (параллельно): если склеить, переводчик иногда теряет переносы строк.
-// Сначала Google, если он не пускает сервер — MyMemory; не получилось — остаётся оригинал.
+// Headlines are translated one by one (in parallel): joined together, the translator sometimes loses line breaks.
+// Google first, MyMemory if Google blocks the server; if both fail the original stays.
+// Only the Russian bot needs this: the terminal translates in the browser.
 export const translateState = { errors: [] };
 
 async function translateOne(line) {
@@ -325,7 +401,7 @@ async function translateOne(line) {
       if (text && !/MYMEMORY WARNING/i.test(text) && String(d.responseStatus) === "200") return text.replace(/&#39;/g, "'").replace(/&quot;/g, '"').replace(/&amp;/g, "&");
       err = (err ? err + ", " : "") + "MyMemory " + (d && d.responseStatus);
     } catch (e) { err = (err ? err + ", " : "") + "MyMemory " + (e.status || e.message); }
-    throw new Error(err || "перевод недоступен");
+    throw new Error(err || "translation unavailable");
   });
 }
 
@@ -338,11 +414,11 @@ async function translateLines(lines) {
 
 export const COMPANY_PARTS = ["des", "fa", "ern", "anr", "cn", "hds"];
 
-export async function getCompany(env, raw, parts = COMPANY_PARTS) {
+export async function getCompany(env, raw, parts = COMPANY_PARTS, lang = "en") {
   const p = parseSymbol(raw);
-  if (!p) throw new Error("не понял тикер: " + raw);
-  if (p.kind === "moex") return moexCompany(p.s);
-  if (p.kind !== "us") throw new Error("данные компании есть только для акций (США и Мосбиржи)");
+  if (!p) throw new Error("unknown ticker: " + raw);
+  if (p.kind === "moex") return moexCompany(p.s, lang);
+  if (p.kind !== "us") throw new Error("company data is available for stocks only (US and Moscow Exchange)");
   const s = encodeURIComponent(p.s);
   const want = new Set(parts);
   const today = new Date().toISOString().slice(0, 10);
@@ -354,7 +430,7 @@ export async function getCompany(env, raw, parts = COMPANY_PARTS) {
 
   if (want.has("des") || want.has("fa")) {
     safe("profile", fh(env, "/stock/profile2?symbol=" + s, 6 * 3600).then((x) => {
-      if (!x || !x.name) throw new Error("компания не найдена");
+      if (!x || !x.name) throw new Error("company not found");
       res.profile = { name: x.name, exch: x.exchange, country: x.country, cur: x.currency, ipo: x.ipo, web: x.weburl,
         logo: x.logo, ind: x.finnhubIndustry, mcap: num(x.marketCapitalization, 1), shares: num(x.shareOutstanding, 2) };
     }));
@@ -400,16 +476,19 @@ export async function getCompany(env, raw, parts = COMPANY_PARTS) {
   }
   if (want.has("fa")) {
     safe("fin", pageJSON(env, "fin/" + p.s + ".json", 3600).then((x) => { res.fin = x; }).catch((e) => {
-      if (!/404/.test(String(e.message))) throw e;   // для компаний вне списка отчётности из SEC нет — это нормально
+      if (!/404/.test(String(e.message))) throw e;   // companies outside the list have no SEC file — that's fine
     }));
   }
   if (want.has("cn")) {
     safe("news", fh(env, `/company-news?symbol=${s}&from=${weekAgo}&to=${today}`, 900).then(async (x) => {
       const items = (x || []).filter((n) => n.headline).sort((a, b) => b.datetime - a.datetime).slice(0, 12);
-      translateState.errors = [];
-      const ru = await translateLines(items.map((n) => n.headline));
-      res.cn = items.map((n, i) => ({ t: n.datetime, h: ru[i] || n.headline, en: n.headline, src: n.source, url: n.url }));
-      if (items.length && ru.every((x, i) => x === items[i].headline)) res.errors.push("перевод: " + (translateState.errors[0] || "недоступен"));
+      res.cn = items.map((n) => ({ t: n.datetime, h: n.headline, en: n.headline, src: n.source, url: n.url }));
+      if (lang === "ru" && items.length) {
+        translateState.errors = [];
+        const ru = await translateLines(items.map((n) => n.headline));
+        res.cn.forEach((n, i) => { n.h = ru[i] || n.en; });
+        if (ru.every((x, i) => x === items[i].headline)) res.errors.push("translation: " + (translateState.errors[0] || "unavailable"));
+      }
     }));
   }
   if (want.has("hds")) {
@@ -421,32 +500,34 @@ export async function getCompany(env, raw, parts = COMPANY_PARTS) {
   }
   await Promise.all(jobs);
   if (want.has("des") && !res.profile && !res.quote) {
-    throw new Error(res.errors.join("; ") || "нет данных по " + p.s);
+    throw new Error(res.errors.join("; ") || "no data for " + p.s);
   }
   return res;
 }
 
-async function moexCompany(s) {
-  const d = await cached("issdesc:" + s, 6 * 3600, () => getJSON(ISS + "/securities/" + s + ".json?iss.meta=off&iss.only=description"));
+async function moexCompany(s, lang = "en") {
+  // the exchange gives descriptions in English or Russian
+  const l = lang === "ru" ? "ru" : "en";
+  const d = await cached("issdesc:" + l + ":" + s, 6 * 3600, () => getJSON(ISS + "/securities/" + s + ".json?iss.meta=off&iss.only=description&lang=" + l));
   const desc = {};
   const cols = d.description.columns;
   for (const r of d.description.data) desc[r[cols.indexOf("name")]] = r[cols.indexOf("value")];
-  if (!desc.SECID) throw new Error("бумага не найдена на Мосбирже: " + s);
+  if (!desc.SECID) throw new Error("not found on the Moscow Exchange: " + s);
   const q = (await moexQuotes([s]))[s] || null;
-  return { ok: true, s: "MOEX:" + s, kind: "moex", profile: { name: desc.NAME || desc.SHORTNAME, exch: "Мосбиржа", country: "RU", cur: "RUB",
+  return { ok: true, s: "MOEX:" + s, kind: "moex", profile: { name: desc.NAME || desc.SHORTNAME, exch: l === "ru" ? "Мосбиржа" : "Moscow Exchange", country: "RU", cur: "RUB",
     isin: desc.ISIN, issue: num(desc.ISSUESIZE), lot: q && q.lot, list: desc.LISTLEVEL, type: desc.TYPENAME },
   quote: q, errors: [] };
 }
 
 // ---------------------------------------------------------------------------
-// Картинка-график для бота (QuickChart — бесплатно, без ключа)
+// Chart picture for the bot (QuickChart — free, no key)
 // ---------------------------------------------------------------------------
-export async function chartImage(h, title) {
+export async function chartImage(h, title, lang = "en") {
   const n = h.c.length;
   const step = Math.max(1, Math.ceil(n / 160));
   const labels = [], data = [];
   for (let i = 0; i < n; i += step) {
-    labels.push(new Date(h.t[i] * 1000).toISOString().slice(5, 10).split("-").reverse().join("."));
+    labels.push(dm(new Date(h.t[i] * 1000).toISOString(), lang));
     data.push(+h.c[i].toFixed(4));
   }
   if (data[data.length - 1] !== +h.c[n - 1].toFixed(4)) { labels.push(""); data.push(+h.c[n - 1].toFixed(4)); }

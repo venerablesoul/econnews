@@ -1,0 +1,517 @@
+// English / Russian for the bot. English is the default; /lang ru switches a chat to Russian.
+// The choice is stored in KV ("l:<chat id>") and in the subscriber's metadata, so the news bot
+// (news_bot.py) also sends each person their language.
+import { dm, dmy, fmt, money, msk, pct, price } from "./lib.js";
+
+export const LANGS = ["en", "ru"];
+export const DEFAULT_LANG = "en";
+
+export function norm(lang) {
+  const l = String(lang || "").trim().toLowerCase().slice(0, 2);
+  return LANGS.includes(l) ? l : DEFAULT_LANG;
+}
+
+// ---------------------------------------------------------------------------
+// Texts. A value is a string or a function of its arguments.
+// ---------------------------------------------------------------------------
+const EN = {
+  help: [
+    "<b>News & markets</b>",
+    "/news — top stories · /markets — markets now · /calendar — calendar",
+    "/trades — US politicians' and insiders' trades",
+    "",
+    "<b>Companies & quotes</b>",
+    "/q AAPL BTC oil — quotes",
+    "/des AAPL — company card (DES)",
+    "/fa AAPL — financials · /ern AAPL — earnings vs estimates",
+    "/anr AAPL — analyst ratings · /cn AAPL — company news",
+    "/hds AAPL — insider trades",
+    "/chart AAPL 1y — chart (1m 3m 6m ytd 1y 2y 5y)",
+    "",
+    "<b>Personal</b> (shared with the terminal)",
+    "/watch AAPL NVDA — add to watchlist · /watch — show it",
+    "/unwatch AAPL — remove from the watchlist",
+    "/buy AAPL 10 150 — bought 10 at 150 · /sell AAPL 5",
+    "/port — portfolio with profit and loss",
+    "/alert AAPL > 200 · /alert BTC < 60000 · /alert oil 5% · /alert news Fed",
+    "/alerts — my alerts",
+    "",
+    "<b>Whole market</b>",
+    "/map — sectors and movers · /eqs — stock screener",
+    "/earnings — company earnings this week",
+    "/rates — yield curves · /cb — central bank rates",
+    "/wirp — Fed rate expectations",
+    "",
+    "/lang ru — по-русски · /stop — unsubscribe",
+  ].join("\n"),
+  help_short: [
+    "/news — latest key news",
+    "/markets — markets now",
+    "/calendar — economic calendar",
+    "/trades — US politicians' and insiders' trades",
+    "/q AAPL BTC — quotes · /des AAPL — company",
+    "/watch · /port · /alert — watchlist, portfolio, alerts",
+    "/help — all commands",
+    "/lang ru — по-русски · /stop — unsubscribe",
+  ].join("\n"),
+  hello: (a) => [
+    "👋 <b>Economic news</b>",
+    "Key world economy and market news: central bank rates, inflation, oil, currencies, big trades by US politicians and company executives.",
+    "",
+    "• news as it breaks (checked every ~5 minutes)",
+    "• 9:00 MSK — overnight highlights, 21:00 — the day in review",
+    "• an hour before key data — a reminder",
+    "• quotes, companies, your watchlist, portfolio and alerts — right here",
+    "",
+    a.fresh ? "✅ You are subscribed." : "✅ You are already subscribed.",
+    a.owner ? "👑 You are the owner of this bot." : "",
+    a.ruHint ? "🇷🇺 Русский язык: /lang ru" : "",
+    "",
+  ],
+  stop_owner: "You have unsubscribed from the server's mailing. You are the owner, though: the main mailing always reaches you. To turn it off: GitHub → Actions → Economic news → Disable workflow.",
+  stop: "You have unsubscribed. To get the news again — /start",
+  lang_set: "✅ Language: English. Русский — /lang ru",
+  lang_usage: "Choose a language: /lang en — English, /lang ru — русский",
+  plain_text: "I send economic news on my own. Commands:\n",
+  unknown: "I don't know that command. Here is what I can do:\n\n",
+  no_data: "Couldn't get fresh data, try again in a minute.",
+  failed: (e) => "That didn't work: " + e + "\nCheck the ticker or try again in a minute.",
+  failed_short: (e) => "That didn't work: " + e,
+  stats: (n) => `👥 <b>Subscribers: ${n}</b>`,
+  stats_since: "since",
+  no_name: "no name",
+  updated: (t) => `\n<i>updated ${t} MSK</i>`,
+  // buttons
+  btn_market: "📈 Markets", btn_terminal: "🖥 Terminal", btn_in_terminal: "🖥 In the terminal",
+  btn_news: "📰 News", btn_markets: "📊 Markets", btn_calendar: "📅 Calendar", btn_trades: "🏛 Trades",
+  btn_watch: "⭐ My watchlist", btn_port: "💼 Portfolio", btn_map: "🗺 Market map", btn_eqs: "🔎 Screener",
+  btn_refresh: "🔄 Refresh", btn_fa: "FA financials", btn_ern: "ERN earnings", btn_anr: "ANR analysts", btn_cn: "CN news",
+  btn_chart1y: "📈 1Y chart", btn_add_watch: "⭐ Watch", btn_other_eqs: "← Other screens", btn_eqs_filters: "🖥 Screener with filters",
+  btn_terminal_fn: (f) => `🖥 ${f} in the terminal`, btn_open_terminal: "🖥 Open in the terminal",
+  btn_alert_del: (id, txt) => `✕ delete #${id} · ${txt}`,
+  btn_t_watch: "🖥 Watchlist in the terminal", btn_t_port: "🖥 Portfolio in the terminal", btn_t_map: "🖥 Heat map",
+  btn_t_curves: "🖥 Curves in the terminal", btn_t_eqs: "🖥 Screener in the terminal",
+  nodata: "No data", earn_eps: (v) => ` · EPS est. $${v}`, a_num: (id) => `#${id}`,
+  // news / markets / calendar / trades
+  news_head: "📰 <b>Top stories of the day</b>",
+  news_none: "No significant news in the last 24 hours.",
+  read: "read →",
+  markets_head: "📊 <b>Markets</b> <i>(daily change)</i>",
+  markets_none: "Quotes are not available yet.",
+  cal_none: "📅 No key events in the next two days.",
+  cal_head: "📅 <b>Calendar (MSK)</b>",
+  cal_legend: "🔴 — high impact, 🟡 — medium\nCompany earnings: /earnings",
+  actual: "actual", fcst: "fcst", prev: "prev",
+  trd_none: "Trade data is still being collected — check back later.",
+  trd_congress: "🏛 <b>US politicians' trades</b>\n<i>disclosed up to 45 days late</i>",
+  trd_insiders: "💼 <b>Insider trades</b>",
+  trd_more: "All trades — in the terminal (TRD command).",
+  trd_traded: (d, d2) => `traded ${d}, disclosed ${d2}`,
+  // quotes
+  need_symbol: (cmd) => `Add a ticker, for example: /${cmd} AAPL`,
+  q_usage: "Type tickers separated by spaces: /q AAPL MSFT BTC oil gold SBER",
+  q_head: "📈 <b>Quotes</b> <i>(daily change)</i>",
+  no_data_for: (s) => `${s}: no data`,
+  // company
+  des_moex_line: (type, isin) => `${type} · Moscow Exchange · ISIN ${isin}`,
+  des_price: (px, ch) => `Price: <b>${px}</b> ${ch} today`,
+  des_lot: (n) => `Lot: ${n} shares`, des_issue: (n) => `Shares issued: ${n}`, des_list: (n) => `Listing level: ${n}`,
+  des_52w: (lo, hi, ytd, y) => `52 weeks: ${lo} – ${hi} · YTD ${ytd}, 1 year ${y}`,
+  des_mcap: (v) => `Market cap: <b>${v}</b>`,
+  des_pe: (pe, fpe, ps, pb) => `P/E: ${pe} · forward ${fpe} · P/S ${ps} · P/B ${pb}`,
+  des_div: (dy, beta) => `Dividends: ${dy} · beta ${beta}`,
+  des_div_val: (y, d) => `${y}% ($${d} a year)`, des_div_none: "none",
+  des_margins: (g, o, n, roe) => `Margins: gross ${g}%, operating ${o}%, net ${n}% · ROE ${roe}%`,
+  des_growth: (r, e) => `1-year growth: revenue ${r}, EPS ${e}`,
+  des_anr: (n, word, b, h, s) => `Analysts (${n}): <b>${word}</b> — buy ${b}, hold ${h}, sell ${s}`,
+  des_next: (d, when, eps) => `Next earnings: <b>${d}</b>${when}${eps}`,
+  bmo: " before the open", amc: " after the close", eps_fcst: (v) => ` · EPS estimate $${v}`,
+  des_peers: (p) => `Peers: ${p}`,
+  rec: ["strong buy", "buy", "hold", "sell", "strong sell"],
+  fa_head: (n, s) => `📑 <b>${n} financials</b> (${s})\n`,
+  fa_sec: "<i>from filings with the SEC</i>",
+  fa_row: (d, rev, ni, eps, fcf) => `<b>${d}</b>: revenue ${rev}, net income ${ni}${eps ? ", EPS $" + eps : ""}${fcf ? ", free cash flow " + fcf : ""}`,
+  quarters: "Quarters", years: "Years",
+  fa_balance: (c, d, e) => `Cash ${c} · debt ${d} · equity ${e}`,
+  fa_fh: "<i>per-share figures (Finnhub)</i>",
+  fa_fh_row: (d, eps, sps, gm, nm) => `<b>${d}</b>: EPS $${eps}, revenue per share $${sps}, margins: gross ${gm}%, net ${nm}%`,
+  fa_none: "\nNo financials found.",
+  ern_head: (s) => `📊 <b>${s} earnings</b>\n`,
+  ern_next: (d, when, q, y, eps, rev) => `\nNext: <b>${d}</b>${when} · Q${q} ${y}\nEstimate: EPS $${eps}, revenue ${rev}\n`,
+  bmo_long: " before the market opens", amc_long: " after the close",
+  ern_table: "\n<b>EPS: actual vs estimate</b>\n",
+  ern_row: (q, y, a, e, sp) => `Q${q} ${y}: actual $${a} · estimate $${e} · ${sp}`,
+  ern_none: "\nNo earnings history.",
+  anr_none: (s) => `No analyst ratings for ${s}.`,
+  anr_head: (s, period, word, score, n) => `🎯 <b>Analysts on ${s}</b> · ${period}\nConsensus: <b>${word}</b> (${score} of 5, ${n} analysts)\n\n`,
+  anr_rows: ["Strong buy ", "Buy        ", "Hold       ", "Sell       ", "Strong sell"],
+  anr_old: (p, b, h, s) => `${p}: buy ${b}, hold ${h}, sell ${s}`,
+  cn_none: (s) => `No fresh news for ${s}.`,
+  cn_head: (s) => `📰 <b>${s} news</b>`,
+  cn_untranslated: "",
+  hds_head: (s) => `💼 <b>${s} insider trades</b>\n<i>largest holders (funds) are only in paid sources; here are executives' trades from SEC Form 4</i>\n\n`,
+  hds_row: (buy, n, px, sum) => `${buy ? "🟢 buy" : "🔴 sale"} ${n} shares${px ? ` at $${px} (${sum})` : ""}`,
+  hds_none: "No open-market trades recently.",
+  chart_usage: "For example: /chart AAPL 1y · /chart BTC 3m · /chart oil 6m · /chart SBER 1y",
+  ranges: { "1m": "1 month", "3m": "3 months", "6m": "6 months", ytd: "year to date", "1y": "1 year", "2y": "2 years", "5y": "5 years" },
+  chart_cap: (s, name, range, ch, now, lo, hi) => `📈 <b>${s}</b> ${name}\n${range}: ${ch} · now ${now} · low ${lo} · high ${hi}`,
+  // watchlist / portfolio / alerts
+  w_added: "Added: ", w_removed: "Removed: ", w_bad: "Didn't understand: ", w_max: (n) => `The watchlist holds up to ${n} instruments.`,
+  w_empty: "⭐ Your watchlist is empty.\nAdd: /watch AAPL NVDA BTC oil SBER",
+  w_head: "⭐ <b>My watchlist</b> <i>(daily change)</i>",
+  w_remove_hint: "Remove: /unwatch TICKER",
+  buy_usage: "For example: /buy AAPL 10 150 — 10 shares at $150 (no price — at the current one)",
+  sell_usage: "For example: /sell AAPL 5",
+  no_price: (s, mode, q) => `Couldn't get the price of ${s} — add it: /${mode} ${s} ${q} PRICE`,
+  not_in_port: (s) => `${s} is not in your portfolio`,
+  bought: (s, q, px) => `🟢 Bought: ${s} × ${q} at ${px}`,
+  sold: (s, q, px) => `🔴 Sold: ${s} × ${q} at ${px}`,
+  port_cleared: "Portfolio cleared.",
+  port_empty: "💼 Your portfolio is empty.\nAdd a position: /buy AAPL 10 150 (ticker, quantity, purchase price)",
+  port_head: "💼 <b>Portfolio</b>",
+  port_row_sub: (c, px, ch) => `bought at ${c}, now ${px} (${ch} today)`,
+  port_mixed: "<i>the portfolio mixes rubles and dollars — no common total</i>",
+  port_total: (v, plp, pl, d) => `<b>Total: ${v}</b> · P&L ${plp} (${pl}) · today ${d}`,
+  port_hint: "Buy: /buy TICKER QTY PRICE · sell: /sell TICKER QTY",
+  alert_help: "🔔 <b>Alerts</b> — the bot messages you when the condition is met (checked every 2 minutes).\n\n" +
+    "/alert AAPL > 200 — price above\n/alert BTC < 60000 — price below\n/alert oil 5% — daily move larger than 5%\n" +
+    "/alert news Fed — a story with this word\n\n/alerts — my alerts",
+  alert_deleted: "Alert deleted.", alert_no_such: "No such alert. List: /alerts",
+  alert_bad: "Didn't get it. Examples: /alert AAPL > 200 · /alert BTC < 60000 · /alert oil 5% · /alert news Fed",
+  alert_set: (id, txt) => `✅ Alert #${id}: ${txt}\nList: /alerts`,
+  alert_none: "🔔 No alerts. Set one: /alert AAPL > 200",
+  alerts_head: "🔔 <b>My alerts</b>",
+  alert_del_n: (id) => `Alert #${id} deleted.`, alert_gone: "This alert no longer exists.",
+  a_news: (kw) => `📰 a story with the word «${kw}»`,
+  a_chg: (s, v) => `${s}: daily move ±${v}%`,
+  a_px: (s, op, v) => `${s} ${op === ">" ? "above" : "below"} ${v}`,
+  a_max_user: (n) => `no more than ${n} alerts per person — delete some`,
+  a_max_total: "too many alerts on the server, try later",
+  a_no_price: (s) => `couldn't get the price of ${s} — set the direction explicitly: > or <`,
+  fire_px: (s, op, v, px, ch) => `🔔 <b>${s}</b> ${op === ">" ? "rose above" : "fell below"} ${v}: now <b>${px}</b> (${ch} today)`,
+  fire_px_note: (s, op, v) => `\n<i>The alert fired and was removed. Set it again: /alert ${s} ${op} ${v}</i>`,
+  fire_chg: (s, up, ch, px) => `🔔 <b>${s}</b> ${up ? "is up" : "is down"} <b>${ch}</b> today: ${px}`,
+  fire_chg_note: (v) => `\n<i>Threshold ±${v}%. Next notice — not before tomorrow.</i>`,
+  fire_news: (kw) => `🔔 A story with the word «${kw}»`,
+  me_login: "Open the terminal with the «🖥 Terminal» button in the bot chat — then the watchlist, portfolio and alerts are shared with the bot.",
+  me_bad_alert: "Didn't get the alert. Examples: AAPL > 200 · BTC < 60000 · oil 5% · news Fed",
+  // screener / map / earnings / rates
+  eqs_presets: { leaders: "🚀 Top gainers", losers: "📉 Top losers", value: "💰 Cheapest by P/E", div: "🏦 Dividend payers",
+    growth: "📈 Fastest revenue growth", big: "🏛 Largest", year: "🏆 Best over a year", low52: "🧊 Near 52-week low" },
+  eqs_choose: "🔎 <b>US stock screener</b> (~100 largest companies)\nChoose a screen:",
+  eqs_row_extra: { pe: "P/E", div: "div.", rev: "revenue", year: "1 year" },
+  eqs_updated: (t) => `\n\n<i>updated ${t} MSK</i>`,
+  map_head: "🗺 <b>US stocks: sectors today</b>\n<i>weighted by market cap</i>",
+  map_up: "🚀 <b>Gainers:</b> ", map_down: "📉 <b>Losers:</b> ",
+  earn_none: "📊 No earnings from the largest US companies in the coming week.",
+  earn_head: "📊 <b>Earnings of the largest US companies</b>",
+  earn_legend: "☀️ before the open · 🌙 after the close\nDetails: /ern TICKER",
+  rates_head: "📐 <b>Government bond yields</b>\n<i>in brackets — change over the week, bp</i>",
+  rates_spread: (bp, inv) => `<i>10Y−2Y spread: ${bp} bp${inv ? " — inverted" : ""}</i>`,
+  rates_none: "No data yet.",
+  cb_head: "🏦 <b>Central bank rates</b>",
+  cb_was: (v, since) => ` <i>(was ${v}%${since ? ", since " + since : ""})</i>`,
+  cb_src: "<i>Sources: BIS, New York Fed, Bank of Russia</i>",
+  wirp_none: "No Fed expectations yet — they appear after the next update.",
+  wirp_head: (lo, hi, effr) => `🏛 <b>Fed rate expectations</b> (WIRP)\nNow: ${lo}–${hi}%, effective ${effr}%\n\n`,
+  wirp_row: (d, after, cum) => `<b>${d}</b>: expected rate ${after}% (${cum} bp vs today)`,
+  wirp_probs: { hike50: "hike 0.5", hike: "hike", hold: "hold", cut: "cut", cut50: "cut 0.5" },
+  wirp_note: "\n\n<i>From fed funds futures (the CME FedWatch method)</i>",
+};
+
+const RU = {
+  help: [
+    "<b>Новости и рынки</b>",
+    "/news — главное за сутки · /markets — рынки · /calendar — календарь",
+    "/trades — сделки политиков США и инсайдеров",
+    "",
+    "<b>Компании и котировки</b>",
+    "/q AAPL BTC нефть — котировки",
+    "/des AAPL — карточка компании (DES)",
+    "/fa AAPL — отчётность · /ern AAPL — отчёты и прогнозы",
+    "/anr AAPL — рейтинги аналитиков · /cn AAPL — новости компании",
+    "/hds AAPL — сделки инсайдеров",
+    "/chart AAPL 1y — график (1m 3m 6m ytd 1y 2y 5y)",
+    "",
+    "<b>Личное</b> (общее с терминалом)",
+    "/watch AAPL NVDA — добавить в список · /watch — список",
+    "/unwatch AAPL — убрать из списка",
+    "/buy AAPL 10 150 — купил 10 шт. по 150 · /sell AAPL 5",
+    "/port — портфель с прибылью",
+    "/alert AAPL > 200 · /alert BTC < 60000 · /alert нефть 5% · /alert новости ФРС",
+    "/alerts — мои алерты",
+    "",
+    "<b>Рынок целиком</b>",
+    "/map — секторы и лидеры дня · /eqs — скринер акций",
+    "/earnings — отчёты компаний на неделе",
+    "/rates — кривые доходности · /cb — ставки центробанков",
+    "/wirp — ожидания по ставке ФРС",
+    "",
+    "/lang en — in English · /stop — отписаться",
+  ].join("\n"),
+  help_short: [
+    "/news — последние важные новости",
+    "/markets — рынки сейчас",
+    "/calendar — календарь событий",
+    "/trades — сделки политиков США и инсайдеров",
+    "/q AAPL BTC — котировки · /des AAPL — компания",
+    "/watch · /port · /alert — список, портфель, алерты",
+    "/help — все команды",
+    "/lang en — in English · /stop — отписаться",
+  ].join("\n"),
+  hello: (a) => [
+    "👋 <b>Экономические новости</b>",
+    "Важное из мировой экономики и с рынков: ставки центробанков, инфляция, нефть, валюты, крупные сделки политиков США и руководителей компаний.",
+    "",
+    "• новости — по мере появления (проверка каждые ~5 минут)",
+    "• 9:00 МСК — главное за ночь, 21:00 — итоги дня",
+    "• за час до важных данных — напоминание",
+    "• котировки, компании, свой список, портфель и алерты — прямо здесь",
+    "",
+    a.fresh ? "✅ Вы подписаны." : "✅ Вы уже подписаны.",
+    a.owner ? "👑 Вы владелец бота." : "",
+    "",
+  ],
+  stop_owner: "Вы отписались от рассылки сервера. Но вы владелец: основная рассылка приходит вам всегда. Выключить её можно в GitHub → Actions → Economic news → Disable workflow.",
+  stop: "Вы отписались. Чтобы снова получать новости — /start",
+  lang_set: "✅ Язык: русский. English — /lang en",
+  lang_usage: "Выберите язык: /lang ru — русский, /lang en — English",
+  plain_text: "Я присылаю экономические новости сам. Команды:\n",
+  unknown: "Не знаю такой команды. Вот что я умею:\n\n",
+  no_data: "Не удалось получить свежие данные, попробуйте через минуту.",
+  failed: (e) => "Не получилось: " + e + "\nПроверьте тикер или попробуйте через минуту.",
+  failed_short: (e) => "Не получилось: " + e,
+  stats: (n) => `👥 <b>Подписчиков: ${n}</b>`,
+  stats_since: "с",
+  no_name: "без имени",
+  updated: (t) => `\n<i>обновлено ${t} МСК</i>`,
+  btn_market: "📈 Рынок онлайн", btn_terminal: "🖥 Терминал", btn_in_terminal: "🖥 В терминале",
+  btn_news: "📰 Новости", btn_markets: "📊 Рынки", btn_calendar: "📅 Календарь", btn_trades: "🏛 Сделки",
+  btn_watch: "⭐ Мой список", btn_port: "💼 Портфель", btn_map: "🗺 Карта рынка", btn_eqs: "🔎 Скринер",
+  btn_refresh: "🔄 Обновить", btn_fa: "FA отчётность", btn_ern: "ERN отчёты", btn_anr: "ANR аналитики", btn_cn: "CN новости",
+  btn_chart1y: "📈 График 1г", btn_add_watch: "⭐ В список", btn_other_eqs: "← Другие отборы", btn_eqs_filters: "🖥 Скринер с фильтрами",
+  btn_terminal_fn: (f) => `🖥 ${f} в терминале`, btn_open_terminal: "🖥 Открыть в терминале",
+  btn_alert_del: (id, txt) => `✕ удалить №${id} · ${txt}`,
+  btn_t_watch: "🖥 Список в терминале", btn_t_port: "🖥 Портфель в терминале", btn_t_map: "🖥 Тепловая карта",
+  btn_t_curves: "🖥 Кривые в терминале", btn_t_eqs: "🖥 Скринер в терминале",
+  nodata: "Нет данных", earn_eps: (v) => ` · EPS прогноз $${v}`, a_num: (id) => `№${id}`,
+  news_head: "📰 <b>Главное за сутки</b>",
+  news_none: "За последние сутки значимых новостей не было.",
+  read: "читать →",
+  markets_head: "📊 <b>Рынки</b> <i>(изменение за день)</i>",
+  markets_none: "Котировки пока недоступны.",
+  cal_none: "📅 В ближайшие двое суток важных событий нет.",
+  cal_head: "📅 <b>Календарь (МСК)</b>",
+  cal_legend: "🔴 — важное, 🟡 — среднее\nОтчёты компаний: /earnings",
+  actual: "факт", fcst: "прогноз", prev: "пред.",
+  trd_none: "Данные о сделках ещё собираются — загляните позже.",
+  trd_congress: "🏛 <b>Сделки политиков США</b>\n<i>раскрываются с опозданием до 45 дней</i>",
+  trd_insiders: "💼 <b>Сделки инсайдеров</b>",
+  trd_more: "Все сделки — в терминале (команда TRD).",
+  trd_traded: (d, d2) => `сделка ${d}, раскрыта ${d2}`,
+  need_symbol: (cmd) => `Укажите тикер, например: /${cmd} AAPL`,
+  q_usage: "Напишите тикеры через пробел: /q AAPL MSFT BTC нефть золото SBER",
+  q_head: "📈 <b>Котировки</b> <i>(изменение за день)</i>",
+  no_data_for: (s) => `${s}: нет данных`,
+  des_moex_line: (type, isin) => `${type} · Мосбиржа · ISIN ${isin}`,
+  des_price: (px, ch) => `Цена: <b>${px}</b> ${ch} за день`,
+  des_lot: (n) => `Лот: ${n} шт.`, des_issue: (n) => `Выпуск: ${n} шт.`, des_list: (n) => `Уровень листинга: ${n}`,
+  des_52w: (lo, hi, ytd, y) => `52 недели: ${lo} – ${hi} · с начала года ${ytd}, за год ${y}`,
+  des_mcap: (v) => `Капитализация: <b>${v}</b>`,
+  des_pe: (pe, fpe, ps, pb) => `P/E: ${pe} · форвард ${fpe} · P/S ${ps} · P/B ${pb}`,
+  des_div: (dy, beta) => `Дивиденды: ${dy} · бета ${beta}`,
+  des_div_val: (y, d) => `${y}% ($${d} в год)`, des_div_none: "нет",
+  des_margins: (g, o, n, roe) => `Рентабельность: валовая ${g}%, операц. ${o}%, чистая ${n}% · ROE ${roe}%`,
+  des_growth: (r, e) => `Рост за год: выручка ${r}, прибыль на акцию ${e}`,
+  des_anr: (n, word, b, h, s) => `Аналитики (${n}): <b>${word}</b> — купить ${b}, держать ${h}, продать ${s}`,
+  des_next: (d, when, eps) => `Следующий отчёт: <b>${d}</b>${when}${eps}`,
+  bmo: " до открытия", amc: " после закрытия", eps_fcst: (v) => ` · прогноз EPS $${v}`,
+  des_peers: (p) => `Похожие: ${p}`,
+  rec: ["активно покупать", "покупать", "держать", "продавать", "активно продавать"],
+  fa_head: (n, s) => `📑 <b>Отчётность ${n}</b> (${s})\n`,
+  fa_sec: "<i>по данным отчётов в SEC</i>",
+  fa_row: (d, rev, ni, eps, fcf) => `<b>${d}</b>: выручка ${rev}, чистая прибыль ${ni}${eps ? ", EPS $" + eps : ""}${fcf ? ", своб. ден. поток " + fcf : ""}`,
+  quarters: "Кварталы", years: "Годы",
+  fa_balance: (c, d, e) => `Денежные средства ${c} · долг ${d} · капитал ${e}`,
+  fa_fh: "<i>показатели на акцию (Finnhub)</i>",
+  fa_fh_row: (d, eps, sps, gm, nm) => `<b>${d}</b>: EPS $${eps}, выручка на акцию $${sps}, маржа: валовая ${gm}%, чистая ${nm}%`,
+  fa_none: "\nОтчётность не найдена.",
+  ern_head: (s) => `📊 <b>Отчёты ${s}</b>\n`,
+  ern_next: (d, when, q, y, eps, rev) => `\nСледующий: <b>${d}</b>${when} · Q${q} ${y}\nПрогноз: EPS $${eps}, выручка ${rev}\n`,
+  bmo_long: " до открытия рынка", amc_long: " после закрытия",
+  ern_table: "\n<b>Прибыль на акцию: факт против прогноза</b>\n",
+  ern_row: (q, y, a, e, sp) => `Q${q} ${y}: факт $${a} · прогноз $${e} · ${sp}`,
+  ern_none: "\nИстории отчётов нет.",
+  anr_none: (s) => `Рейтингов аналитиков по ${s} нет.`,
+  anr_head: (s, period, word, score, n) => `🎯 <b>Аналитики о ${s}</b> · ${period}\nКонсенсус: <b>${word}</b> (${score} из 5, ${n} аналитиков)\n\n`,
+  anr_rows: ["Активно покупать", "Покупать        ", "Держать         ", "Продавать       ", "Активно продав. "],
+  anr_old: (p, b, h, s) => `${p}: купить ${b}, держать ${h}, продать ${s}`,
+  cn_none: (s) => `Свежих новостей по ${s} нет.`,
+  cn_head: (s) => `📰 <b>Новости ${s}</b>`,
+  cn_untranslated: "\n<i>переводчик сейчас не отвечает серверу — заголовки на английском; в терминале они переводятся</i>",
+  hds_head: (s) => `💼 <b>Сделки инсайдеров ${s}</b>\n<i>крупнейшие держатели (фонды) — только в платных источниках; здесь — сделки руководства из формы 4 SEC</i>\n\n`,
+  hds_row: (buy, n, px, sum) => `${buy ? "🟢 покупка" : "🔴 продажа"} ${n} акций${px ? ` по $${px} (${sum})` : ""}`,
+  hds_none: "Сделок на открытом рынке за последнее время нет.",
+  chart_usage: "Например: /chart AAPL 1y · /chart BTC 3m · /chart нефть 6m · /chart SBER 1y",
+  ranges: { "1m": "1 мес.", "3m": "3 мес.", "6m": "6 мес.", ytd: "с начала года", "1y": "1 год", "2y": "2 года", "5y": "5 лет" },
+  chart_cap: (s, name, range, ch, now, lo, hi) => `📈 <b>${s}</b> ${name}\n${range}: ${ch} · сейчас ${now} · мин. ${lo} · макс. ${hi}`,
+  w_added: "Добавил: ", w_removed: "Убрал: ", w_bad: "Не понял: ", w_max: (n) => `В списке максимум ${n} инструментов.`,
+  w_empty: "⭐ Список наблюдения пуст.\nДобавить: /watch AAPL NVDA BTC нефть SBER",
+  w_head: "⭐ <b>Мой список</b> <i>(изменение за день)</i>",
+  w_remove_hint: "Убрать: /unwatch ТИКЕР",
+  buy_usage: "Например: /buy AAPL 10 150 — 10 акций по $150 (без цены — по текущей)",
+  sell_usage: "Например: /sell AAPL 5",
+  no_price: (s, mode, q) => `Не удалось получить цену ${s} — укажите её: /${mode} ${s} ${q} ЦЕНА`,
+  not_in_port: (s) => `В портфеле нет ${s}`,
+  bought: (s, q, px) => `🟢 Куплено: ${s} × ${q} по ${px}`,
+  sold: (s, q, px) => `🔴 Продано: ${s} × ${q} по ${px}`,
+  port_cleared: "Портфель очищен.",
+  port_empty: "💼 Портфель пуст.\nДобавить позицию: /buy AAPL 10 150 (тикер, количество, цена покупки)",
+  port_head: "💼 <b>Портфель</b>",
+  port_row_sub: (c, px, ch) => `куплено по ${c}, сейчас ${px} (${ch} за день)`,
+  port_mixed: "<i>в портфеле рубли и доллары — общий итог не считаю</i>",
+  port_total: (v, plp, pl, d) => `<b>Итого: ${v}</b> · прибыль ${plp} (${pl}) · за день ${d}`,
+  port_hint: "Купить: /buy ТИКЕР КОЛ-ВО ЦЕНА · продать: /sell ТИКЕР КОЛ-ВО",
+  alert_help: "🔔 <b>Алерты</b> — бот пришлёт сообщение, когда условие выполнится (проверка каждые 2 минуты).\n\n" +
+    "/alert AAPL > 200 — цена выше\n/alert BTC < 60000 — цена ниже\n/alert нефть 5% — изменение за день больше 5%\n" +
+    "/alert новости ФРС — новость с этим словом\n\n/alerts — мои алерты",
+  alert_deleted: "Алерт удалён.", alert_no_such: "Нет такого алерта. Список: /alerts",
+  alert_bad: "Не понял. Примеры: /alert AAPL > 200 · /alert BTC < 60000 · /alert нефть 5% · /alert новости ФРС",
+  alert_set: (id, txt) => `✅ Алерт №${id}: ${txt}\nСписок: /alerts`,
+  alert_none: "🔔 Алертов нет. Поставить: /alert AAPL > 200",
+  alerts_head: "🔔 <b>Мои алерты</b>",
+  alert_del_n: (id) => `Алерт №${id} удалён.`, alert_gone: "Этого алерта уже нет.",
+  a_news: (kw) => `📰 новость со словом «${kw}»`,
+  a_chg: (s, v) => `${s}: изменение за день ±${v}%`,
+  a_px: (s, op, v) => `${s} ${op === ">" ? "выше" : "ниже"} ${v}`,
+  a_max_user: (n) => `не больше ${n} алертов на человека — удалите лишние`,
+  a_max_total: "на сервере слишком много алертов, попробуйте позже",
+  a_no_price: (s) => `не удалось получить цену ${s} — укажите явно: > или <`,
+  fire_px: (s, op, v, px, ch) => `🔔 <b>${s}</b> ${op === ">" ? "поднялся выше" : "опустился ниже"} ${v}: сейчас <b>${px}</b> (${ch} за день)`,
+  fire_px_note: (s, op, v) => `\n<i>Алерт выполнен и удалён. Поставить снова: /alert ${s} ${op} ${v}</i>`,
+  fire_chg: (s, up, ch, px) => `🔔 <b>${s}</b> ${up ? "вырос" : "упал"} за день на <b>${ch}</b>: ${px}`,
+  fire_chg_note: (v) => `\n<i>Порог ±${v}%. Следующее оповещение — не раньше завтра.</i>`,
+  fire_news: (kw) => `🔔 Новость по слову «${kw}»`,
+  me_login: "Откройте терминал кнопкой «🖥 Терминал» в чате с ботом — тогда список, портфель и алерты будут общими с ботом.",
+  me_bad_alert: "Не понял алерт. Примеры: AAPL > 200 · BTC < 60000 · нефть 5% · новости ФРС",
+  eqs_presets: { leaders: "🚀 Лидеры дня", losers: "📉 Аутсайдеры дня", value: "💰 Дешёвые по P/E", div: "🏦 Дивидендные",
+    growth: "📈 Быстрый рост выручки", big: "🏛 Крупнейшие", year: "🏆 Лучшие за год", low52: "🧊 У минимума за год" },
+  eqs_choose: "🔎 <b>Скринер акций США</b> (≈100 крупнейших компаний)\nВыберите отбор:",
+  eqs_row_extra: { pe: "P/E", div: "див.", rev: "выручка", year: "за год" },
+  eqs_updated: (t) => `\n\n<i>обновлено ${t} МСК</i>`,
+  map_head: "🗺 <b>Акции США: секторы за день</b>\n<i>взвешено по капитализации</i>",
+  map_up: "🚀 <b>Лидеры:</b> ", map_down: "📉 <b>Аутсайдеры:</b> ",
+  earn_none: "📊 В ближайшую неделю отчётов крупнейших компаний США нет.",
+  earn_head: "📊 <b>Отчёты крупнейших компаний США</b>",
+  earn_legend: "☀️ до открытия · 🌙 после закрытия\nПодробнее: /ern ТИКЕР",
+  rates_head: "📐 <b>Доходности гособлигаций</b>\n<i>в скобках — изменение за неделю, б.п.</i>",
+  rates_spread: (bp, inv) => `<i>спред 10Y−2Y: ${bp} б.п.${inv ? " — инверсия" : ""}</i>`,
+  rates_none: "Данных пока нет.",
+  cb_head: "🏦 <b>Ставки центробанков</b>",
+  cb_was: (v, since) => ` <i>(было ${v}%${since ? ", с " + since : ""})</i>`,
+  cb_src: "<i>Источники: BIS, ФРБ Нью-Йорка, ЦБ РФ</i>",
+  wirp_none: "Ожиданий по ставке ФРС пока нет — данные появятся после следующего обновления.",
+  wirp_head: (lo, hi, effr) => `🏛 <b>Ожидания по ставке ФРС</b> (WIRP)\nСейчас: ${lo}–${hi}%, эффективная ${effr}%\n\n`,
+  wirp_row: (d, after, cum) => `<b>${d}</b>: ожидаемая ставка ${after}% (${cum} б.п. к текущей)`,
+  wirp_probs: { hike50: "повышение на 0,5", hike: "повышение", hold: "без изменений", cut: "снижение", cut50: "снижение на 0,5" },
+  wirp_note: "\n\n<i>Рассчитано по фьючерсам на ставку по федеральным фондам (как CME FedWatch)</i>",
+};
+
+const TEXTS = { en: EN, ru: RU };
+
+export function t(lang, key, ...args) {
+  const v = TEXTS[norm(lang)][key] ?? EN[key];
+  return typeof v === "function" ? v(...args) : v;
+}
+
+// sector, tag and source names are stored in English; Russian readers see them translated
+export const SECTOR_RU = { "Technology": "Технологии", "Communication": "Связь и медиа", "Consumer Discretionary": "Циклич. потребление",
+  "Consumer Staples": "Повседн. спрос", "Health Care": "Здравоохранение", "Financials": "Финансы", "Industrials": "Промышленность",
+  "Energy": "Энергетика", "Utilities": "Коммунальные", "Real Estate": "Недвижимость", "Materials": "Материалы" };
+const SECTOR_EN = Object.fromEntries(Object.entries(SECTOR_RU).map(([k, v]) => [v, k]));
+export const TAG_RU = { Fed: "ФРС", ECB: "ЕЦБ", BankOfRussia: "ЦБРФ", rates: "ставки", inflation: "инфляция", oil: "нефть", gas: "газ",
+  gold: "золото", ruble: "рубль", dollar: "доллар", bonds: "облигации", markets: "рынки", China: "Китай", tariffs: "пошлины",
+  sanctions: "санкции", jobs: "занятость", GDP: "ВВП", crypto: "крипта", Russia: "Россия" };
+const TAG_EN = Object.fromEntries(Object.entries(TAG_RU).map(([k, v]) => [v, k]));
+export const SOURCE_RU = { "Fed": "ФРС США", "US Labor Statistics (BLS)": "Статистика труда США (BLS)", "ECB": "ЕЦБ",
+  "Bank of England": "Банк Англии", "IMF": "МВФ", "Bank of Russia": "ЦБ РФ", "Kommersant": "Коммерсантъ", "RBC": "РБК" };
+const SOURCE_EN = Object.fromEntries(Object.entries(SOURCE_RU).map(([k, v]) => [v, k]));
+const TRADE_EN_RU = [["House", "Палата"], ["Senate", "Сенат"], [" (option)", " (опцион)"], [" et al.", " и др."],
+  ["General Counsel", "главный юрист"], ["President", "президент"], ["Chair", "председатель совета директоров"],
+  ["Officer", "топ-менеджер"], ["Director", "член совета директоров"], ["10% owner", "акционер 10%+"]];
+export const TRADE_TYPE = { en: { buy: "buy", sell: "sale", sell_part: "partial sale", exchange: "exchange" },
+  ru: { buy: "покупка", sell: "продажа", sell_part: "частичная продажа", exchange: "обмен" } };
+export const TRADE_OWNER = { en: { SP: "spouse", JT: "joint", DC: "child", Spouse: "spouse", Joint: "joint", Child: "child", "Dependent Child": "child" },
+  ru: { SP: "супруг(а)", JT: "совместно", DC: "ребёнок", Spouse: "супруг(а)", Joint: "совместно", Child: "ребёнок", "Dependent Child": "ребёнок" } };
+
+const pick = (ru, en) => (name, lang) => (norm(lang) === "ru" ? ru[name] || name : en[name] || name);
+export const sectorName = pick(SECTOR_RU, SECTOR_EN);
+export const tagName = pick(TAG_RU, TAG_EN);
+export const sourceName = pick(SOURCE_RU, SOURCE_EN);
+export function tradeLabel(text, lang) {
+  let s = String(text || "");
+  for (const [en, ru] of TRADE_EN_RU) s = norm(lang) === "ru" ? s.split(en).join(ru) : s.split(ru).join(en);
+  return s;
+}
+
+// News stories: original headline plus a translation into the other language.
+// Older data.json had "title" in Russian and the English original in "original".
+export function newsField(n, field, lang) {
+  lang = norm(lang);
+  if (n.original !== undefined && n.lang === undefined) {   // old format
+    if (field === "title") return lang === "ru" || !n.original ? n.title : n.original;
+    return n[field] || "";
+  }
+  return n[field + "_" + lang] || n[field] || "";
+}
+
+// AI one-line summary of a story ({sum, sum_ru}); older data had only a Russian "sum"
+export function aiSum(n, lang) {
+  const ai = n && n.ai;
+  if (!ai) return "";
+  const ru = norm(lang) === "ru";
+  if (ai.sum_ru === undefined) return ru ? ai.sum || "" : "";
+  return ru ? ai.sum_ru || ai.sum || "" : ai.sum || ai.sum_ru || "";
+}
+
+// ---------------------------------------------------------------------------
+// Per-chat language: KV "l:<id>" (+ "l" in the subscriber's metadata for news_bot.py)
+// ---------------------------------------------------------------------------
+const langMemo = new Map();
+
+export async function getLang(env, id) {
+  id = String(id);
+  const m = langMemo.get(id);
+  if (m && Date.now() - m.at < 600e3) return m.v;
+  let v = DEFAULT_LANG;
+  try { v = norm(env.SUBS ? await env.SUBS.get("l:" + id) : null); } catch (e) { /* default */ }
+  langMemo.set(id, { at: Date.now(), v });
+  return v;
+}
+
+export async function setLang(env, id, lang) {
+  id = String(id);
+  lang = norm(lang);
+  await env.SUBS.put("l:" + id, lang);
+  langMemo.set(id, { at: Date.now(), v: lang });
+  const sub = await env.SUBS.getWithMetadata("u:" + id);
+  if (sub && sub.value !== null) await env.SUBS.put("u:" + id, "1", { metadata: { ...(sub.metadata || {}), l: lang } });
+  return lang;
+}
+
+// A bundle of helpers bound to one language: L.t(key, ...), L.fmt, L.pct, L.money, L.price, L.date
+export function L(lang) {
+  lang = norm(lang);
+  return {
+    lang,
+    t: (key, ...args) => t(lang, key, ...args),
+    fmt: (v, d = 2) => fmt(v, d, lang),
+    pct: (c, d = 2) => pct(c, d, lang),
+    money: (v, cur = "$") => money(v, cur, lang),
+    price: (v) => price(v, lang),
+    date: (iso, opts) => msk(iso, opts, lang),
+    dmy: (d) => dmy(d, lang),
+    dm: (d) => dm(d, lang),
+    ru: lang === "ru",
+  };
+}

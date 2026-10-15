@@ -1,7 +1,8 @@
-// Личное: список наблюдения (W), портфель (PORT) и алерты (ALRT).
-// Хранится в KV: "p:<chat_id>" — список и портфель, "alerts" — все алерты (их раз в 2 минуты проверяет cron).
-// Один и тот же человек видит одно и то же в боте и в терминале, открытом кнопкой из Telegram.
-import { cached, esc, fmt, pct, price, send, siteData } from "./lib.js";
+// Personal data: watchlist (W), portfolio (PORT) and alerts (ALRT).
+// Stored in KV: "p:<chat_id>" — watchlist and portfolio, "alerts" — all alerts (cron checks them every 2 minutes).
+// The same person sees the same data in the bot and in the terminal opened with the Telegram button.
+import { esc, send, siteData } from "./lib.js";
+import { L, getLang, newsField, sourceName, t } from "./i18n.js";
 import { getQuotes, parseSymbol } from "./market.js";
 
 export const MAX_WATCH = 40, MAX_PORT = 40, MAX_ALERTS_USER = 20, MAX_ALERTS_TOTAL = 400;
@@ -36,7 +37,7 @@ export function cleanPort(list) {
     const q = Number(x && x.q), c = Number(x && x.c);
     if (!p || !isFinite(q) || q === 0 || !isFinite(c) || c < 0) continue;
     const old = by.get(p.key);
-    if (old) {   // одна позиция на инструмент: средняя цена покупки
+    if (old) {   // one position per instrument: average purchase price
       const nq = old.q + q;
       by.set(p.key, { s: p.key, q: nq, c: nq ? (old.q * old.c + q * c) / nq : 0 });
     } else by.set(p.key, { s: p.key, q, c });
@@ -45,7 +46,7 @@ export function cleanPort(list) {
   return [...by.values()].map((x) => ({ s: x.s, q: Math.round(x.q * 1e6) / 1e6, c: Math.round(x.c * 1e6) / 1e6 }));
 }
 
-// Портфель с текущими ценами: стоимость, прибыль/убыток, изменение за день
+// Portfolio at current prices: value, profit/loss, daily change
 export async function portfolioView(env, port) {
   const quotes = port.length ? await getQuotes(env, port.map((x) => x.s)) : {};
   let value = 0, cost = 0, day = 0;
@@ -64,7 +65,7 @@ export async function portfolioView(env, port) {
 }
 
 // ---------------------------------------------------------------------------
-// Алерты
+// Alerts
 // ---------------------------------------------------------------------------
 export async function loadAlerts(env) {
   const raw = await env.SUBS.get("alerts");
@@ -77,10 +78,10 @@ export async function saveAlerts(env, a) {
   await env.SUBS.put("alerts", JSON.stringify(a));
 }
 
-// «AAPL > 200», «BTC ниже 60000», «нефть выше 80», «AAPL 5%», «новости ФРС»
+// "AAPL > 200", "BTC below 60000", "oil above 80", "AAPL 5%", "news Fed" (Russian words work too)
 export function parseAlert(text) {
   const t = String(text || "").trim().replace(/\s+/g, " ");
-  let m = /^(?:news|n|новост[иь]|слово|word)\s+(.{2,60})$/i.exec(t);
+  let m = /^(?:news|n|word|новост[иь]|слово)\s+(.{2,60})$/i.exec(t);
   if (m) return { k: "news", kw: m[1].trim().replace(/^["«]|["»]$/g, "") };
   m = /^(.+?)\s*(>=|<=|>|<|выше|ниже|above|below)\s*([\d\s.,]+)$/i.exec(t);
   if (m) {
@@ -90,14 +91,14 @@ export function parseAlert(text) {
     const op = /[>]|выше|above/i.test(m[2]) ? ">" : "<";
     return { k: "px", s: p.key, op, v };
   }
-  m = /^(.+?)\s+(?:±|\+-|изм(?:енение)?\s*)?([\d.,]+)\s*%$/i.exec(t);
+  m = /^(.+?)\s+(?:±|\+-|chg\s*|change\s*|изм(?:енение)?\s*)?([\d.,]+)\s*%$/i.exec(t);
   if (m) {
     const p = parseSymbol(m[1]);
     const v = Number(m[2].replace(",", "."));
     if (!p || !isFinite(v) || v <= 0) return null;
     return { k: "chg", s: p.key, v };
   }
-  m = /^(.+?)\s+([\d\s.,]+)$/.exec(t);   // «AAPL 200»: направление определим по текущей цене
+  m = /^(.+?)\s+([\d\s.,]+)$/.exec(t);   // "AAPL 200": the direction is taken from the current price
   if (m) {
     const p = parseSymbol(m[1]);
     const v = Number(m[2].replace(/\s/g, "").replace(",", "."));
@@ -106,21 +107,22 @@ export function parseAlert(text) {
   return null;
 }
 
-export function alertText(a) {
-  if (a.k === "news") return `📰 новость со словом «${esc(a.kw)}»`;
-  if (a.k === "chg") return `${esc(a.s)}: изменение за день ±${fmt(a.v, a.v % 1 ? 1 : 0)}%`;
-  return `${esc(a.s)} ${a.op === ">" ? "выше" : "ниже"} ${price(a.v)}`;
+export function alertText(a, lang = "en") {
+  const X = L(lang);
+  if (a.k === "news") return X.t("a_news", esc(a.kw));
+  if (a.k === "chg") return X.t("a_chg", esc(a.s), X.fmt(a.v, a.v % 1 ? 1 : 0));
+  return X.t("a_px", esc(a.s), a.op, X.price(a.v));
 }
 
-export async function addAlert(env, chatId, spec) {
+export async function addAlert(env, chatId, spec, lang = "en") {
   const a = await loadAlerts(env);
   const mine = a.list.filter((x) => String(x.c) === String(chatId));
-  if (mine.length >= MAX_ALERTS_USER) throw new Error(`не больше ${MAX_ALERTS_USER} алертов на человека — удалите лишние`);
-  if (a.list.length >= MAX_ALERTS_TOTAL) throw new Error("на сервере слишком много алертов, попробуйте позже");
+  if (mine.length >= MAX_ALERTS_USER) throw new Error(t(lang, "a_max_user", MAX_ALERTS_USER));
+  if (a.list.length >= MAX_ALERTS_TOTAL) throw new Error(t(lang, "a_max_total"));
   const item = { id: a.nid++, c: String(chatId), t: new Date().toISOString(), ...spec };
   if (item.k === "px" && item.op === "?") {
     const q = (await getQuotes(env, [item.s]))[item.s];
-    if (!q || q.px == null) throw new Error("не удалось получить цену " + item.s + " — укажите явно: > или <");
+    if (!q || q.px == null) throw new Error(t(lang, "a_no_price", item.s));
     item.op = item.v >= q.px ? ">" : "<";
   }
   a.list.push(item);
@@ -142,7 +144,15 @@ export async function userAlerts(env, chatId) {
   return a.list.filter((x) => String(x.c) === String(chatId));
 }
 
-// Проверка алертов (cron раз в 2 минуты)
+// Alert check (cron every 2 minutes). KV free tier allows 1,000 writes a day, so the alert list is written
+// only when something fired (or on the very first run), not on every check.
+const NEWS_FIELDS = ["title", "title_en", "title_ru", "original", "lead", "lead_en", "lead_ru"];
+
+function newsHaystack(n) {
+  const ai = n.ai || {};
+  return NEWS_FIELDS.map((k) => n[k] || "").concat([ai.sum || "", ai.sum_ru || ""]).join(" ").toLowerCase();
+}
+
 export async function checkAlerts(env, now = new Date()) {
   const a = await loadAlerts(env);
   if (!a.list.length) return { checked: 0, fired: 0 };
@@ -156,43 +166,52 @@ export async function checkAlerts(env, now = new Date()) {
     const q = quotes[x.s];
     if (!q || q.px == null) { keep.push(x); continue; }
     let hit = false, text = "";
+    const X = L(await getLang(env, x.c));
     if (x.k === "px") {
       hit = x.op === ">" ? q.px >= x.v : q.px <= x.v;
-      text = `🔔 <b>${esc(x.s)}</b> ${x.op === ">" ? "поднялся выше" : "опустился ниже"} ${price(x.v)}: сейчас <b>${price(q.px)}</b> (${pct(q.ch)} за день)` +
-        "\n<i>Алерт выполнен и удалён. Поставить снова: /alert " + esc(x.s) + (x.op === ">" ? " > " : " < ") + x.v + "</i>";
+      text = X.t("fire_px", esc(x.s), x.op, X.price(x.v), X.price(q.px), X.pct(q.ch)) + X.t("fire_px_note", esc(x.s), x.op, x.v);
     } else if (x.k === "chg") {
       hit = q.ch != null && Math.abs(q.ch) >= x.v && x.day !== today;
-      text = `🔔 <b>${esc(x.s)}</b> ${q.ch > 0 ? "вырос" : "упал"} за день на <b>${pct(q.ch)}</b>: ${price(q.px)}` +
-        `\n<i>Порог ±${fmt(x.v, x.v % 1 ? 1 : 0)}%. Следующее оповещение — не раньше завтра.</i>`;
+      text = X.t("fire_chg", esc(x.s), q.ch > 0, X.pct(q.ch), X.price(q.px)) + X.t("fire_chg_note", X.fmt(x.v, x.v % 1 ? 1 : 0));
     }
     if (!hit) { keep.push(x); continue; }
     const r = await send(env, x.c, text);
     fired++;
     changed = true;
-    if (r && r.ok === false && /blocked|not found|deactivated/i.test(r.description || "")) continue;   // человек ушёл — алерт убираем
+    if (r && r.ok === false && /blocked|not found|deactivated/i.test(r.description || "")) continue;   // the person left — drop the alert
     if (x.k === "chg") keep.push({ ...x, day: today });
   }
-  // новости: ищем слово в заголовках и выжимках, вышедших после прошлой проверки
+  // news: look for the word in headlines and summaries that appeared after the last saved check
   const newsAlerts = keep.filter((x) => x.k === "news");
   if (newsAlerts.length) {
     const d = await siteData(env).catch(() => null);
-    const items = ((d && d.news) || []).filter((n) => n.ts > a.news_ts);
+    const since = Date.parse(a.news_ts) || 0;
+    const items = ((d && d.news) || []).filter((n) => Date.parse(n.ts) > since);
     if (items.length) {
-      const latest = items.reduce((m, n) => (n.ts > m ? n.ts : m), a.news_ts);
-      if (a.news_ts) {   // в первый раз только запоминаем время, чтобы не присылать старое
+      const latest = items.reduce((m, n) => Math.max(m, Date.parse(n.ts) || 0), since);
+      let hits = 0;
+      if (a.news_ts) {   // on the very first run only remember the time, so old stories are not sent
         for (const x of newsAlerts) {
           const kw = x.kw.toLowerCase();
-          const hits = items.filter((n) => [n.title, n.original, n.lead].join(" ").toLowerCase().includes(kw)).slice(0, 3);
-          for (const n of hits) {
-            const link = /^https?:\/\//.test(n.link || "") ? ` · <a href="${esc(n.link)}">читать →</a>` : "";
-            await send(env, x.c, `🔔 Новость по слову «${esc(x.kw)}»\n${n.level === "high" ? "🔴" : "🟡"} <b>${esc(n.title)}</b>` +
-              (n.lead ? "\n" + esc(n.lead.slice(0, 220)) : "") + `\n<i>${esc((n.sources || []).join(", "))}</i>${link}`);
+          const created = Date.parse(x.t) || 0;   // a new alert does not get stories published before it was set
+          const found = items.filter((n) => Date.parse(n.ts) > created && newsHaystack(n).includes(kw)).slice(0, 3);
+          if (!found.length) continue;
+          const X = L(await getLang(env, x.c));
+          for (const n of found) {
+            const link = /^https?:\/\//.test(n.link || "") ? ` · <a href="${esc(n.link)}">${X.t("read")}</a>` : "";
+            const lead = newsField(n, "lead", X.lang);
+            await send(env, x.c, X.t("fire_news", esc(x.kw)) + `\n${n.level === "high" ? "🔴" : "🟡"} <b>${esc(newsField(n, "title", X.lang))}</b>` +
+              (lead ? "\n" + esc(lead.slice(0, 220)) : "") + `\n<i>${esc((n.sources || []).map((s) => sourceName(s, X.lang)).join(", "))}</i>${link}`);
             fired++;
+            hits++;
           }
         }
       }
-      a.news_ts = latest;
-      changed = true;
+      // save the time only when it matters: first run, something was sent, or the saved mark is over 6 hours old
+      if (!a.news_ts || hits || latest - since > 6 * 3600e3) {
+        a.news_ts = new Date(latest).toISOString();
+        changed = true;
+      }
     }
   }
   if (changed) {
@@ -203,18 +222,18 @@ export async function checkAlerts(env, now = new Date()) {
 }
 
 // ---------------------------------------------------------------------------
-// /api/me — список, портфель и алерты для терминала (вход через Telegram или пароль владельца)
+// /api/me — watchlist, portfolio and alerts for the terminal (sign-in via Telegram or the owner's password)
 // ---------------------------------------------------------------------------
-export async function meApi(req, env, who) {
-  if (!who) return { ok: false, error: "Откройте терминал кнопкой «🖥 Терминал» в чате с ботом — тогда список, портфель и алерты будут общими с ботом." };
+export async function meApi(req, env, who, lang = "en") {
+  if (!who) return { ok: false, error: t(lang, "me_login") };
   const id = String(who.id);
   if (req.method === "POST") {
     const body = await req.json().catch(() => ({}));
     if (body.op === "alert_add") {
       const spec = parseAlert(body.text);
-      if (!spec) return { ok: false, error: "Не понял алерт. Примеры: AAPL > 200 · BTC < 60000 · нефть 5% · новости ФРС" };
+      if (!spec) return { ok: false, error: t(lang, "me_bad_alert") };
       try {
-        const item = await addAlert(env, id, spec);
+        const item = await addAlert(env, id, spec, lang);
         return { ok: true, added: item, alerts: await userAlerts(env, id) };
       } catch (e) {
         return { ok: false, error: String(e.message || e) };

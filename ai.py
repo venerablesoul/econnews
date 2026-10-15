@@ -1,10 +1,9 @@
 """
-Необязательно: короткий разбор важных новостей с помощью ИИ (Claude).
+Optional (paid, off by default): short AI notes on important news (Claude).
 
-Включается, только если задан секрет ANTHROPIC_API_KEY. Для каждой важной новости ИИ пишет
-одно предложение по-русски — что произошло и почему это важно для рынков — и называет активы,
-на которые новость может повлиять, с направлением (↑/↓).
-Без ключа ничего не происходит: новости работают как раньше.
+Enabled only when the ANTHROPIC_API_KEY secret is set. For each important story the model writes one
+sentence in English and one in Russian — what happened and why it matters for markets — and names
+assets the story may move, with a direction (up/down). Without the key nothing happens.
 """
 from __future__ import annotations
 
@@ -16,16 +15,17 @@ import urllib.request
 API_URL = "https://api.anthropic.com/v1/messages"
 DEFAULT_MODEL = "claude-haiku-5-5"
 
-PROMPT = """Ты — аналитик финансового терминала. Ниже пронумерованные экономические новости (заголовок и анонс).
-Для каждой новости верни объект:
-  "i": номер новости,
-  "sum": одно короткое предложение по-русски (до 160 символов): что произошло и почему это важно для рынков,
-  "assets": до 3 активов, на которые новость может заметно повлиять: [{"a": "название актива", "d": "up" или "down"}].
-     Названия: тикеры акций США (AAPL), индексы (S&P 500, Nasdaq, Мосбиржа), «нефть Brent», «золото», «доллар», «евро»,
-     «рубль», «UST 10Y», «биткоин». Если влияние неочевидно — пустой список.
-Ответь ТОЛЬКО JSON-массивом без пояснений.
+PROMPT = """You are an analyst for a financial terminal. Below are numbered economic news stories (headline and summary).
+For each story return an object:
+  "i": story number,
+  "sum": one short English sentence (up to 160 characters): what happened and why it matters for markets,
+  "sum_ru": the same sentence in Russian,
+  "assets": up to 3 assets the story may noticeably move: [{"a": "asset name", "d": "up" or "down"}].
+     Names: US stock tickers (AAPL), indices (S&P 500, Nasdaq, MOEX), "Brent", "gold", "USD", "EUR", "RUB",
+     "UST 10Y", "bitcoin". If the effect is unclear, an empty list.
+Reply with a JSON array ONLY, no explanations.
 
-Новости:
+Stories:
 """
 
 
@@ -62,17 +62,18 @@ def parse_answer(text, n):
         if not 1 <= i <= n:
             continue
         s = str(x.get("sum") or "").strip()[:220]
+        s_ru = str(x.get("sum_ru") or "").strip()[:220]
         assets = []
         for a in x.get("assets") or []:
             if isinstance(a, dict) and a.get("a") and a.get("d") in ("up", "down"):
                 assets.append({"a": str(a["a"])[:24], "d": a["d"]})
-        if s:
-            out[i] = {"sum": s, "assets": assets[:3]}
+        if s or s_ru:
+            out[i] = {"sum": s or s_ru, "sum_ru": s_ru or s, "assets": assets[:3]}
     return out
 
 
 def annotate(items, limit=8, call=None):
-    """Добавляет it["ai"] важным новостям без разбора. Возвращает число разобранных."""
+    """Adds it["ai"] to stories that have no note yet. Returns how many were annotated."""
     key = os.environ.get("ANTHROPIC_API_KEY", "").strip()
     if not key and call is None:
         return 0
@@ -87,7 +88,7 @@ def annotate(items, limit=8, call=None):
     try:
         text = (call or _call)(PROMPT + "\n".join(lines), key, model)
     except Exception as e:
-        print(f"  ! ИИ-разбор новостей: {type(e).__name__}: {e}"[:200])
+        print(f"  ! AI notes: {type(e).__name__}: {e}"[:200])
         return 0
     res = parse_answer(text, len(todo))
     for k, it in enumerate(todo, 1):

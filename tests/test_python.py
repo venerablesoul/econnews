@@ -373,6 +373,97 @@ class NewsBotIntegration(unittest.TestCase):
         self.assertEqual(item["dir"], -1)
         self.assertEqual(item["ai"]["sum"], "s")
         self.assertEqual(item["level"], "high")
+        self.assertEqual(item["lang"], "en")
+        self.assertEqual(item["title_ru"], "Акции Tesla обвалились после отзыва")
+
+
+class NewsBotRunBothLanguages(unittest.TestCase):
+    """A whole run without network: every reader gets the messages in their own language."""
+
+    def test_run_sends_each_reader_their_language(self):
+        import news_bot
+        now = datetime.now(timezone.utc)
+
+        def story(i, title, score, tags, source="Reuters"):
+            return {"id": f"id{i}", "title": title, "lead": "", "tags": tags, "link": f"https://x/{i}", "source": source,
+                    "sources": [source], "score": score, "ts": now.isoformat()}
+
+        batches = [[story(1, "Fed holds rates steady as inflation cools", 9, ["Fed", "rates"])],
+                   [story(2, "Oil jumps after OPEC cuts output sharply", 8, ["oil"]),
+                    story(3, "ЦБ сохранил ключевую ставку на уровне 16%", 9, ["BankOfRussia"], source="Bank of Russia")]]
+        sent = []
+
+        def fake_call(self, method, fields, files=None):
+            sent.append((str(fields.get("chat_id")), method, fields))
+            return {"message_id": len(sent)}
+
+        def fake_translate(text, lang="ru"):
+            src = news_bot.orig_lang(text)
+            return None if src == lang else f"[{lang}] {text}"
+
+        with tempfile.TemporaryDirectory() as d:
+            os.makedirs(os.path.join(d, "docs"))
+            env = {"TELEGRAM_BOT_TOKEN": "1:T", "TELEGRAM_CHAT_ID": "100", "PAGES_URL": "https://p.test/",
+                   "STATE_FILE": os.path.join(d, "state.json"), "PAGE_DATA": os.path.join(d, "docs", "data.json"),
+                   "DIGEST_HOUR": "0", "MORNING_HOUR": "-1", "CALENDAR": "no", "TRADES": "no", "ANTHROPIC_API_KEY": "",
+                   "FRED_API_KEY": "", "QUIET_HOURS": "0-0"}
+            with mock.patch.dict(os.environ, env), \
+                    mock.patch.object(news_bot, "collect", side_effect=lambda now: (batches.pop(0), {})), \
+                    mock.patch.object(news_bot, "fetch_quotes", return_value=[]), \
+                    mock.patch.object(news_bot, "fetch_subscribers", return_value=(["200", "300"], {"300": "ru"})), \
+                    mock.patch.object(news_bot, "translate", side_effect=fake_translate), \
+                    mock.patch.object(news_bot, "update_extras", return_value=""), \
+                    mock.patch.object(news_bot, "push_live"), \
+                    mock.patch.object(news_bot.Telegram, "_call", fake_call):
+                news_bot.run()                       # first run: the owner gets the start message
+                first = [s for s in sent]
+                with open(env["STATE_FILE"], encoding="utf-8") as f:
+                    st = json.load(f)
+                st["last_digest"] = ""               # let the evening digest go out on the next run
+                with open(env["STATE_FILE"], "w", encoding="utf-8") as f:
+                    json.dump(st, f)
+                sent.clear()
+                news_bot.run()
+            with open(env["PAGE_DATA"], encoding="utf-8") as f:
+                data = json.load(f)
+
+        self.assertEqual({c for c, _, _ in first}, {"100"}, "the start message goes to the owner only")
+        self.assertIn("Economic news bot is running", first[0][2]["text"])
+        by = {}
+        for chat, method, f in sent:
+            by.setdefault(chat, []).append(f["text"])
+        en, ru, owner = "\n".join(by["200"]), "\n".join(by["300"]), "\n".join(by["100"])
+        self.assertIn("Economy ·", en)
+        self.assertIn("Oil jumps after OPEC cuts output sharply", en)
+        self.assertIn("[en] ЦБ сохранил ключевую ставку", en)          # Russian story translated for English readers
+        self.assertIn("#BankOfRussia", en)
+        self.assertIn("Bank of Russia", en)
+        self.assertIn("Top stories of", en)                          # the digest
+        self.assertIn("Экономика ·", ru)
+        self.assertIn("[ru] Oil jumps after OPEC", ru)                # English story translated for Russian readers
+        self.assertIn("ЦБ сохранил ключевую ставку на уровне 16%", ru)
+        self.assertIn("#нефть", ru)
+        self.assertIn("ЦБ РФ", ru)
+        self.assertIn("Главное за", ru)
+        self.assertEqual(owner, en, "the owner has no language set — English")
+        buttons = [json.loads(f["reply_markup"]) for c, _, f in sent if c == "300" and f.get("reply_markup")]
+        self.assertTrue(buttons and "lang=ru" in buttons[0]["inline_keyboard"][0][0]["web_app"]["url"])
+        # data.json for the terminal: original + translation, English tags and sources
+        n = {x["title"]: x for x in data["news"]}
+        oil = n["Oil jumps after OPEC cuts output sharply"]
+        self.assertEqual((oil["lang"], oil["title_ru"], oil["tags"]), ("en", "[ru] Oil jumps after OPEC cuts output sharply", ["oil"]))
+        cbr = n["ЦБ сохранил ключевую ставку на уровне 16%"]
+        self.assertEqual((cbr["lang"], cbr["sources"]), ("ru", ["Bank of Russia"]))
+        self.assertTrue(cbr["title_en"].startswith("[en] "))
+
+    def test_old_ai_notes_are_russian_only(self):
+        import news_bot
+        old = {"ai": {"sum": "Старая заметка"}}
+        new = {"ai": {"sum": "New note", "sum_ru": "Новая заметка"}}
+        self.assertEqual(news_bot.ai_sum(old, "en"), "")
+        self.assertEqual(news_bot.ai_sum(old, "ru"), "Старая заметка")
+        self.assertEqual(news_bot.ai_sum(new, "en"), "New note")
+        self.assertEqual(news_bot.ai_sum(new, "ru"), "Новая заметка")
 
 
 if __name__ == "__main__":

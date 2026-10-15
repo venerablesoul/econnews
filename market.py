@@ -1,4 +1,7 @@
 """
+Quotes for the market line, the picture with charts and the Markets page / terminal.
+(Names: "name" is Russian, "en" is English; "short"/"short_en" are used in the market line.)
+
 Котировки для строки рынка, картинки с графиками и страницы «Рынок онлайн».
 
 Бесплатные источники без ключей:
@@ -20,48 +23,48 @@ MSK = timezone(timedelta(hours=3))
 
 # name — как показывать, short — коротко для строки в сообщении, digits — знаков после запятой
 INSTRUMENTS = [
-    {"name": "S&P 500", "short": "S&P", "src": "yahoo", "sym": "^GSPC", "digits": 0},
-    {"name": "Nasdaq", "short": "Nasdaq", "src": "yahoo", "sym": "^IXIC", "digits": 0},
-    {"name": "Нефть Brent", "short": "Brent", "src": "yahoo", "sym": "BZ=F", "digits": 2, "prefix": "$"},
-    {"name": "Золото", "short": "Золото", "src": "yahoo", "sym": "GC=F", "digits": 0, "prefix": "$"},
-    {"name": "EUR/USD", "short": "EUR/USD", "src": "yahoo", "sym": "EURUSD=X", "digits": 4},
-    {"name": "Доходность США 10 лет", "short": "UST10", "src": "yahoo", "sym": "^TNX", "digits": 2, "suffix": "%"},
-    {"name": "Биткоин", "short": "BTC", "src": "yahoo", "sym": "BTC-USD", "digits": 0, "prefix": "$"},
-    {"name": "Индекс Мосбиржи", "short": "IMOEX", "src": "moex", "sym": "IMOEX", "digits": 0},
-    {"name": "USD/RUB (ЦБ)", "short": "USD/RUB", "src": "cbr", "sym": "R01235", "digits": 2},
-    {"name": "CNY/RUB (ЦБ)", "short": "CNY/RUB", "src": "cbr", "sym": "R01375", "digits": 2},
+    {"name": "S&P 500", "en": "S&P 500", "short": "S&P", "src": "yahoo", "sym": "^GSPC", "digits": 0},
+    {"name": "Nasdaq", "en": "Nasdaq", "short": "Nasdaq", "src": "yahoo", "sym": "^IXIC", "digits": 0},
+    {"name": "Нефть Brent", "en": "Brent crude", "short": "Brent", "src": "yahoo", "sym": "BZ=F", "digits": 2, "prefix": "$"},
+    {"name": "Золото", "en": "Gold", "short": "Золото", "short_en": "Gold", "src": "yahoo", "sym": "GC=F", "digits": 0, "prefix": "$"},
+    {"name": "EUR/USD", "en": "EUR/USD", "short": "EUR/USD", "src": "yahoo", "sym": "EURUSD=X", "digits": 4},
+    {"name": "Доходность США 10 лет", "en": "US 10Y yield", "short": "UST10", "src": "yahoo", "sym": "^TNX", "digits": 2, "suffix": "%"},
+    {"name": "Биткоин", "en": "Bitcoin", "short": "BTC", "src": "yahoo", "sym": "BTC-USD", "digits": 0, "prefix": "$"},
+    {"name": "Индекс Мосбиржи", "en": "MOEX Russia index", "short": "IMOEX", "src": "moex", "sym": "IMOEX", "digits": 0},
+    {"name": "USD/RUB (ЦБ)", "en": "USD/RUB (CBR)", "short": "USD/RUB", "short_en": "USD/RUB", "src": "cbr", "sym": "R01235", "digits": 2},
+    {"name": "CNY/RUB (ЦБ)", "en": "CNY/RUB (CBR)", "short": "CNY/RUB", "src": "cbr", "sym": "R01375", "digits": 2},
     # только на странице «Рынок онлайн» (chart: False — не попадают на картинку)
-    {"name": "Газ (Henry Hub)", "short": "Газ", "src": "yahoo", "sym": "NG=F", "digits": 3, "prefix": "$", "chart": False},
-    {"name": "Медь", "short": "Медь", "src": "yahoo", "sym": "HG=F", "digits": 3, "prefix": "$", "chart": False},
-    {"name": "Доходность США 3 мес", "short": "UST3M", "src": "yahoo", "sym": "^IRX", "digits": 2, "suffix": "%", "chart": False},
-    {"name": "Доходность США 5 лет", "short": "UST5", "src": "yahoo", "sym": "^FVX", "digits": 2, "suffix": "%", "chart": False},
-    {"name": "Доходность США 30 лет", "short": "UST30", "src": "yahoo", "sym": "^TYX", "digits": 2, "suffix": "%", "chart": False},
+    {"name": "Газ (Henry Hub)", "en": "Natural gas (Henry Hub)", "short": "Газ", "src": "yahoo", "sym": "NG=F", "digits": 3, "prefix": "$", "chart": False},
+    {"name": "Медь", "en": "Copper", "short": "Медь", "src": "yahoo", "sym": "HG=F", "digits": 3, "prefix": "$", "chart": False},
+    {"name": "Доходность США 3 мес", "en": "US 3M yield", "short": "UST3M", "src": "yahoo", "sym": "^IRX", "digits": 2, "suffix": "%", "chart": False},
+    {"name": "Доходность США 5 лет", "en": "US 5Y yield", "short": "UST5", "src": "yahoo", "sym": "^FVX", "digits": 2, "suffix": "%", "chart": False},
+    {"name": "Доходность США 30 лет", "en": "US 30Y yield", "short": "UST30", "src": "yahoo", "sym": "^TYX", "digits": 2, "suffix": "%", "chart": False},
 ]
 
 # Только для терминала (docs/terminal): мировые индексы, валюты, сырьё.
 # terminal: True — не показываются на странице «Рынок онлайн» и на картинке.
 _T = {"src": "yahoo", "chart": False, "terminal": True}
 INSTRUMENTS += [
-    {**_T, "name": "Dow Jones", "short": "DJI", "sym": "^DJI", "digits": 0},
-    {**_T, "name": "Russell 2000", "short": "RTY", "sym": "^RUT", "digits": 0},
-    {**_T, "name": "VIX", "short": "VIX", "sym": "^VIX", "digits": 2},
-    {**_T, "name": "Euro Stoxx 50", "short": "SX5E", "sym": "^STOXX50E", "digits": 0},
-    {**_T, "name": "DAX", "short": "DAX", "sym": "^GDAXI", "digits": 0},
-    {**_T, "name": "FTSE 100", "short": "UKX", "sym": "^FTSE", "digits": 0},
-    {**_T, "name": "CAC 40", "short": "CAC", "sym": "^FCHI", "digits": 0},
-    {**_T, "name": "Nikkei 225", "short": "NKY", "sym": "^N225", "digits": 0},
-    {**_T, "name": "Hang Seng", "short": "HSI", "sym": "^HSI", "digits": 0},
-    {**_T, "name": "Шанхай Composite", "short": "SHCOMP", "sym": "000001.SS", "digits": 0},
-    {**_T, "name": "Sensex (Индия)", "short": "SENSEX", "sym": "^BSESN", "digits": 0},
-    {**_T, "name": "Индекс доллара DXY", "short": "DXY", "sym": "DX-Y.NYB", "digits": 2},
-    {**_T, "name": "USD/JPY", "short": "USDJPY", "sym": "JPY=X", "digits": 2},
-    {**_T, "name": "GBP/USD", "short": "GBPUSD", "sym": "GBPUSD=X", "digits": 4},
-    {**_T, "name": "USD/CNY", "short": "USDCNY", "sym": "CNY=X", "digits": 4},
-    {**_T, "name": "USD/CHF", "short": "USDCHF", "sym": "CHF=X", "digits": 4},
-    {**_T, "name": "Нефть WTI", "short": "WTI", "sym": "CL=F", "digits": 2, "prefix": "$"},
-    {**_T, "name": "Серебро", "short": "Серебро", "sym": "SI=F", "digits": 2, "prefix": "$"},
-    {**_T, "name": "Платина", "short": "Платина", "sym": "PL=F", "digits": 0, "prefix": "$"},
-    {**_T, "name": "Пшеница", "short": "Пшеница", "sym": "ZW=F", "digits": 0},
+    {**_T, "name": "Dow Jones", "en": "Dow Jones", "short": "DJI", "sym": "^DJI", "digits": 0},
+    {**_T, "name": "Russell 2000", "en": "Russell 2000", "short": "RTY", "sym": "^RUT", "digits": 0},
+    {**_T, "name": "VIX", "en": "VIX", "short": "VIX", "sym": "^VIX", "digits": 2},
+    {**_T, "name": "Euro Stoxx 50", "en": "Euro Stoxx 50", "short": "SX5E", "sym": "^STOXX50E", "digits": 0},
+    {**_T, "name": "DAX", "en": "DAX", "short": "DAX", "sym": "^GDAXI", "digits": 0},
+    {**_T, "name": "FTSE 100", "en": "FTSE 100", "short": "UKX", "sym": "^FTSE", "digits": 0},
+    {**_T, "name": "CAC 40", "en": "CAC 40", "short": "CAC", "sym": "^FCHI", "digits": 0},
+    {**_T, "name": "Nikkei 225", "en": "Nikkei 225", "short": "NKY", "sym": "^N225", "digits": 0},
+    {**_T, "name": "Hang Seng", "en": "Hang Seng", "short": "HSI", "sym": "^HSI", "digits": 0},
+    {**_T, "name": "Шанхай Composite", "en": "Shanghai Composite", "short": "SHCOMP", "sym": "000001.SS", "digits": 0},
+    {**_T, "name": "Sensex (Индия)", "en": "Sensex (India)", "short": "SENSEX", "sym": "^BSESN", "digits": 0},
+    {**_T, "name": "Индекс доллара DXY", "en": "US Dollar Index DXY", "short": "DXY", "sym": "DX-Y.NYB", "digits": 2},
+    {**_T, "name": "USD/JPY", "en": "USD/JPY", "short": "USDJPY", "sym": "JPY=X", "digits": 2},
+    {**_T, "name": "GBP/USD", "en": "GBP/USD", "short": "GBPUSD", "sym": "GBPUSD=X", "digits": 4},
+    {**_T, "name": "USD/CNY", "en": "USD/CNY", "short": "USDCNY", "sym": "CNY=X", "digits": 4},
+    {**_T, "name": "USD/CHF", "en": "USD/CHF", "short": "USDCHF", "sym": "CHF=X", "digits": 4},
+    {**_T, "name": "Нефть WTI", "en": "WTI crude", "short": "WTI", "sym": "CL=F", "digits": 2, "prefix": "$"},
+    {**_T, "name": "Серебро", "en": "Silver", "short": "Серебро", "sym": "SI=F", "digits": 2, "prefix": "$"},
+    {**_T, "name": "Платина", "en": "Platinum", "short": "Платина", "sym": "PL=F", "digits": 0, "prefix": "$"},
+    {**_T, "name": "Пшеница", "en": "Wheat", "short": "Пшеница", "sym": "ZW=F", "digits": 0},
 ]
 
 # адреса вынесены, чтобы их можно было подменить в тестах
@@ -143,7 +146,7 @@ def _load(inst):
             period = "5 дней"
         return {**inst, "price": series[-1][1], "change": change, "series": series, "period": period}
     except Exception as e:
-        print(f"  ! котировка {inst['name']}: {type(e).__name__}: {e}"[:200])
+        print(f"  ! quote {inst.get('en') or inst['name']}: {type(e).__name__}: {e}"[:200])
         return None
 
 
@@ -155,26 +158,28 @@ def fetch_all():
 # ---------------------------------------------------------------------------
 # Форматирование
 # ---------------------------------------------------------------------------
-def fmt_price(q):
+def fmt_price(q, lang="ru"):
     d = q.get("digits", 2)
-    s = f"{q['price']:,.{d}f}".replace(",", " ")  # узкий пробел как разделитель тысяч
-    if d:
-        s = s.replace(".", ",")
+    s = f"{q['price']:,.{d}f}"
+    if lang == "ru":
+        s = s.replace(",", " ").replace(".", ",")  # narrow space for thousands, comma for decimals
     return f"{q.get('prefix', '')}{s}{q.get('suffix', '')}"
 
 
-def fmt_change(q):
+def fmt_change(q, lang="ru"):
     c = q.get("change")
     if c is None:
         return ""
     arrow = "▲" if c > 0.005 else ("▼" if c < -0.005 else "•")
-    return f"{arrow}{abs(c):.1f}%".replace(".", ",")
+    s = f"{arrow}{abs(c):.1f}%"
+    return s.replace(".", ",") if lang == "ru" else s
 
 
-def strip_line(quotes, keys=("S&P", "Brent", "Золото", "USD/RUB", "IMOEX", "BTC")):
-    """Короткая строка рынка для шапки сообщения."""
+def strip_line(quotes, keys=("S&P", "Brent", "Золото", "USD/RUB", "IMOEX", "BTC"), lang="ru"):
+    """Short market line for message headers (short names in the reader's language)."""
     by = {q["short"]: q for q in quotes}
-    parts = [f"{k} {fmt_price(by[k])} {fmt_change(by[k])}".strip() for k in keys if k in by]
+    label = (lambda q: q.get("short_en") or q["short"]) if lang != "ru" else (lambda q: q["short"])
+    parts = [f"{label(by[k])} {fmt_price(by[k], lang)} {fmt_change(by[k], lang)}".strip() for k in keys if k in by]
     return " · ".join(parts)
 
 
@@ -187,9 +192,11 @@ def to_json(quotes, points=60):
         spark = vals[::step]
         if spark[-1] != vals[-1]:
             spark.append(vals[-1])
-        item = {"name": q["name"], "price": fmt_price(q), "change": q.get("change"),
-                "change_txt": fmt_change(q), "period": q["period"], "spark": [round(v, 6) for v in spark],
-                "id": q["short"], "value": round(q["price"], 6), "digits": q.get("digits", 2)}
+        item = {"name": q["name"], "name_en": q.get("en") or q["name"], "price": fmt_price(q), "change": q.get("change"),
+                "change_txt": fmt_change(q), "period": q["period"], "days": 30 if q["src"] == "cbr" else 5,
+                "spark": [round(v, 6) for v in spark],
+                "id": q["short"], "value": round(q["price"], 6), "digits": q.get("digits", 2),
+                "prefix": q.get("prefix", ""), "suffix": q.get("suffix", "")}
         if q.get("terminal"):
             item["terminal"] = True
         out.append(item)

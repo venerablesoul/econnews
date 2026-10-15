@@ -42,6 +42,8 @@ SENATE_ROOT = "https://efdsearch.senate.gov"
 SEC_FEED = ("https://www.sec.gov/cgi-bin/browse-edgar?action=getcurrent&type=4&company=&dateb="
             "&owner=include&start=0&count=100&output=atom")
 SEC_TXT = "https://www.sec.gov/Archives/edgar/data/{cik}/{acc_nd}/{acc}.txt"
+# SEC wants "Name contact@domain"; set the SEC_USER_AGENT secret to your own contact to be polite
+SEC_UA_DEFAULT = "EconNews research bot econnews@example.com"
 
 WINDOW_DAYS = 14          # какие отчёты политиков смотрим (по дате подачи)
 KEEP_DAYS = 45            # сколько дней хранить сделки для терминала
@@ -49,9 +51,6 @@ KEEP_MAX = 250            # и не больше стольких записей
 DOCS_PER_CHECK = 25       # не больше стольких новых отчётов политиков за одну проверку
 SEC_PER_RUN = 40          # не больше стольких форм 4 за один запуск
 
-TYPE_RU = {"buy": "покупка", "sell": "продажа", "sell_part": "частичная продажа", "exchange": "обмен"}
-OWNER_RU = {"SP": "супруг(а)", "JT": "совместно", "DC": "ребёнок",
-            "Spouse": "супруг(а)", "Joint": "совместно", "Child": "ребёнок", "Dependent Child": "ребёнок"}
 
 
 def _env_int(name, default):
@@ -76,7 +75,8 @@ def _get(url, headers=None, timeout=30, opener=None, data=None):
 def _sec_headers():
     # SEC требует заголовки ровно по своему образцу: «Название контакт@домен», gzip, Host.
     # Если SEC всё равно отвечает 403 — задайте секрет SEC_USER_AGENT, например «EconNews ваш@email.com».
-    ua = os.environ.get("SEC_USER_AGENT", "").strip() or "EconNews venerablesoul@users.noreply.github.com"
+    # SEC rejects contacts at users.noreply.github.com (checked from GitHub runners) — use a plain one
+    ua = os.environ.get("SEC_USER_AGENT", "").strip() or SEC_UA_DEFAULT
     return {"User-Agent": ua, "Accept-Encoding": "gzip, deflate", "Host": "www.sec.gov", "Accept": "*/*"}
 
 
@@ -173,8 +173,8 @@ def house_rows_to_trades(rows, meta):
         amin, amax = parse_amount(amount)
         name = asset[:m.start()].strip(" -") or ticker
         out.append({
-            "src": "house", "who": meta["name"], "where": f"Палата, {meta['district']}".strip(", "),
-            "owner": owner, "ticker": ticker, "asset": name[:80] + (" (опцион)" if kind == "OP" else ""),
+            "src": "house", "who": meta["name"], "where": f"House, {meta['district']}".strip(", "),
+            "owner": owner, "ticker": ticker, "asset": name[:80] + (" (option)" if kind == "OP" else ""),
             "type": _ttype(ttype), "amin": amin, "amax": amax,
             "date": _date(dates[0]), "disclosed": meta["filed"],
             "link": HOUSE_PDF.format(year=meta["year"], doc=meta["doc"]),
@@ -270,8 +270,8 @@ def senate_rows_to_trades(rows, meta):
             continue
         amin, amax = parse_amount(c[7])
         out.append({
-            "src": "senate", "who": meta["name"], "where": "Сенат",
-            "owner": c[2], "ticker": ticker, "asset": c[4][:80] + (" (опцион)" if "option" in c[5].lower() else ""),
+            "src": "senate", "who": meta["name"], "where": "Senate",
+            "owner": c[2], "ticker": ticker, "asset": c[4][:80] + (" (option)" if "option" in c[5].lower() else ""),
             "type": _ttype(c[6]), "amin": amin, "amax": amax,
             "date": _date(c[1]), "disclosed": meta["filed"], "link": meta["link"],
         })
@@ -295,7 +295,7 @@ class Senate:
         m = (re.search(r'name=["\']csrfmiddlewaretoken["\'][^>]*?value=["\']([^"\']+)', page)
              or re.search(r'value=["\']([^"\']+)["\'][^>]*?name=["\']csrfmiddlewaretoken', page))
         if not m:
-            raise RuntimeError("Сенат: не найдена форма согласия")
+            raise RuntimeError("Senate: the agreement form was not found")
         body = urllib.parse.urlencode({"csrfmiddlewaretoken": m.group(1), "prohibition_agreement": "1"}).encode()
         _get(home, headers={"Referer": home}, opener=self.op, data=body)
         self.token = self._cookie("csrftoken") or self._cookie("csrf")
@@ -350,10 +350,10 @@ def sec_feed():
     return out
 
 
-ROLE_RU = [(r"chief executive|\bceo\b", "CEO"), (r"chief financial|\bcfo\b", "CFO"),
-           (r"chief operating|\bcoo\b", "COO"), (r"chief technology|\bcto\b", "CTO"),
-           (r"general counsel|chief legal", "главный юрист"), (r"^president\b", "президент"),
-           (r"chair", "председатель совета директоров")]
+ROLES = [(r"chief executive|\bceo\b", "CEO"), (r"chief financial|\bcfo\b", "CFO"),
+         (r"chief operating|\bcoo\b", "COO"), (r"chief technology|\bcto\b", "CTO"),
+         (r"general counsel|chief legal", "General Counsel"), (r"^president\b", "President"),
+         (r"chair", "Chair")]
 
 
 def _role(rel, t):
@@ -363,12 +363,12 @@ def _role(rel, t):
     roles = []
     if yes("isOfficer"):
         title = t(rel, "officerTitle")
-        ru = next((r for rx, r in ROLE_RU if re.search(rx, title, re.I)), "")
-        roles.append(ru or title or "топ-менеджер")
+        std = next((r for rx, r in ROLES if re.search(rx, title, re.I)), "")
+        roles.append(std or title or "Officer")
     if yes("isDirector") and not roles:
-        roles.append("член совета директоров")
+        roles.append("Director")
     if yes("isTenPercentOwner"):
-        roles.append("акционер 10%+")
+        roles.append("10% owner")
     return ", ".join(roles)
 
 
@@ -399,7 +399,7 @@ def parse_form4(xml_text, meta):
         if person and 2 <= len(parts) <= 4:   # «COOK TIMOTHY D» -> «Timothy D Cook»
             parts = parts[1:] + parts[:1]
         names.append(" ".join(p.capitalize() if p.isupper() or p.islower() else p for p in parts))
-    who = names[0] + (" и др." if len(names) > 1 else "") if names else ""
+    who = names[0] + (" et al." if len(names) > 1 else "") if names else ""
     plan = t(root, "aff10b5One").lower() in ("1", "true")
 
     sums = {}
@@ -592,32 +592,49 @@ def _prune(tr, now):
 
 
 # ---------------------------------------------------------------------------
-# Форматирование
+# Formatting (English / Russian). Stored data is English; older records may be Russian.
 # ---------------------------------------------------------------------------
-def _num_ru(x):
+import i18n  # noqa: E402
+
+_EN_RU = [("House", "Палата"), ("Senate", "Сенат"), (" (option)", " (опцион)"), (" et al.", " и др."),
+          ("General Counsel", "главный юрист"), ("President", "президент"), ("Chair", "председатель совета директоров"),
+          ("Officer", "топ-менеджер"), ("Director", "член совета директоров"), ("10% owner", "акционер 10%+")]
+
+
+def loc(text, lang):
+    """Shows a stored English label (House, Senate, roles…) in the reader's language."""
+    text = text or ""
+    for en, ru in _EN_RU:
+        text = text.replace(en, ru) if lang == "ru" else text.replace(ru, en)
+    return text
+
+
+def _num(x, lang):
     s = f"{x:.1f}".rstrip("0").rstrip(".")
-    return s.replace(".", ",")
+    return s.replace(".", ",") if lang == "ru" else s
 
 
-def fmt_usd(v):
+def fmt_usd(v, lang="en"):
+    ru = lang == "ru"
     if v >= 1e9:
-        return f"${_num_ru(v / 1e9)} млрд"
+        return f"${_num(v / 1e9, lang)}" + (" млрд" if ru else "B")
     if v >= 1e6:
-        return f"${_num_ru(v / 1e6)} млн"
+        return f"${_num(v / 1e6, lang)}" + (" млн" if ru else "M")
     if v >= 1e3:
-        return f"${round(v / 1e3)} тыс."
+        return f"${round(v / 1e3)}" + (" тыс." if ru else "K")
     return f"${round(v)}"
 
 
-def fmt_range(amin, amax):
+def fmt_range(amin, amax, lang="en"):
     if not amin:
-        return "сумма не указана"
+        return i18n.t(lang, "trd_no_amount")
     if amax is None:
-        return "более " + fmt_usd(amin - 1)
+        return i18n.t(lang, "trd_over", v=fmt_usd(amin - 1, lang))
     if amax == amin:
-        return fmt_usd(amin)
-    unit, word = (1e6, "млн") if amax >= 1e6 else (1e3, "тыс.")
-    return f"${_num_ru(round(amin / unit, 1))}–{_num_ru(round(amax / unit, 1))} {word}"
+        return fmt_usd(amin, lang)
+    ru = lang == "ru"
+    unit, word = (1e6, " млн" if ru else "M") if amax >= 1e6 else (1e3, " тыс." if ru else "K")
+    return f"${_num(round(amin / unit, 1), lang)}–{_num(round(amax / unit, 1), lang)}{word}"
 
 
 def _dm(d):
@@ -628,33 +645,33 @@ def _icon(t):
     return {"buy": "🟢", "sell": "🔴", "sell_part": "🔴"}.get(t, "⚪")
 
 
-def fmt_congress(t):
+def fmt_congress(t, lang="en"):
     e = html.escape
-    owner = OWNER_RU.get(t.get("owner", ""), "")
-    line = f"{_icon(t['type'])} <b>{e(t['ticker'])}</b> {TYPE_RU.get(t['type'], 'сделка')} · {fmt_range(t['amin'], t['amax'])}"
-    meta = f"{e(t['who'])} ({e(t['where'])})" + (f" · {owner}" if owner else "")
-    meta += f" · сделка {_dm(t['date'])}, раскрыта {_dm(t['disclosed'])}"
-    return f"{line}\n<i>{meta}</i> · <a href=\"{e(t['link'], quote=True)}\">отчёт</a>"
+    owner = i18n.trade_owner(t.get("owner", ""), lang)
+    line = f"{_icon(t['type'])} <b>{e(t['ticker'])}</b> {i18n.trade_type(t['type'], lang)} · {fmt_range(t['amin'], t['amax'], lang)}"
+    meta = f"{e(t['who'])} ({e(loc(t['where'], lang))})" + (f" · {owner}" if owner else "")
+    meta += " · " + i18n.t(lang, "trd_traded", d=_dm(t["date"]), d2=_dm(t["disclosed"]))
+    return f"{line}\n<i>{meta}</i> · <a href=\"{e(t['link'], quote=True)}\">{i18n.t(lang, 'trd_report')}</a>"
 
 
-def fmt_insider(t):
+def fmt_insider(t, lang="en"):
     e = html.escape
-    line = f"{_icon(t['type'])} <b>{e(t['ticker'])}</b> {TYPE_RU[t['type']]} {fmt_usd(t['value'])} — {e(t['company'])}"
-    shares = f"{t['shares']:,}".replace(",", " ")
-    price = f"{t['price']:,.2f}".replace(",", " ").replace(".", ",")
-    meta = f"{e(t['who'])}" + (f", {e(t['role'])}" if t.get("role") else "")
-    meta += f" · {shares} акций по ${price} · {_dm(t['date'])}"
-    return f"{line}\n<i>{meta}</i> · <a href=\"{e(t['link'], quote=True)}\">форма 4</a>"
+    ru = lang == "ru"
+    line = f"{_icon(t['type'])} <b>{e(t['ticker'])}</b> {i18n.trade_type(t['type'], lang)} {fmt_usd(t['value'], lang)} — {e(t['company'])}"
+    shares = f"{t['shares']:,}".replace(",", "\u202f" if ru else ",")
+    price = f"{t['price']:,.2f}"
+    if ru:
+        price = price.replace(",", "\u202f").replace(".", ",")
+    meta = f"{e(loc(t['who'], lang))}" + (f", {e(loc(t['role'], lang))}" if t.get("role") else "")
+    meta += " · " + i18n.t(lang, "trd_shares", n=shares, p=price) + f" · {_dm(t['date'])}"
+    return f"{line}\n<i>{meta}</i> · <a href=\"{e(t['link'], quote=True)}\">{i18n.t(lang, 'trd_form4')}</a>"
 
 
-def messages(new, limit=12):
-    """Тексты сообщений для Telegram (пустой список, если нечего слать)."""
+def messages(new, limit=12, lang="en"):
+    """Telegram message texts (empty list if there is nothing to send)."""
     out = []
-    for key, title, fmt, note in (
-            ("congress", "🏛 <b>Сделки политиков США</b>", fmt_congress,
-             "<i>Политики раскрывают сделки с опозданием до 45 дней.</i>"),
-            ("insiders", "💼 <b>Сделки инсайдеров</b>", fmt_insider,
-             "<i>Руководители компаний покупают или продают свои акции.</i>")):
+    for key, head, note, fmt in (("congress", "trd_congress_head", "trd_congress_note", fmt_congress),
+                                 ("insiders", "trd_insider_head", "trd_insider_note", fmt_insider)):
         items = new.get(key) or []
         if not items:
             continue
@@ -662,10 +679,10 @@ def messages(new, limit=12):
             items = sorted(items, key=lambda t: -(t["amin"] or 0))
         else:
             items = sorted(items, key=lambda t: (t["type"] != "buy", -t["value"]))
-        blocks = [fmt(t) for t in items[:limit]]
+        blocks = [fmt(t, lang) for t in items[:limit]]
         if len(items) > limit:
-            blocks.append(f"<i>…и ещё {len(items) - limit} — в терминале (команда СДЕЛКИ)</i>")
-        out.append(title + "\n" + note + "\n\n" + "\n\n".join(blocks))
+            blocks.append(i18n.t(lang, "trd_more", n=len(items) - limit))
+        out.append(i18n.t(lang, head) + "\n" + i18n.t(lang, note) + "\n\n" + "\n\n".join(blocks))
     return out
 
 

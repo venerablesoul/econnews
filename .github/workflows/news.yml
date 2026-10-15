@@ -2,14 +2,14 @@ name: Economic news
 
 on:
   schedule:
-    # GitHub часто пропускает запуски по расписанию (бывало 1–2 раза за полдня),
-    # поэтому каждый запуск работает ~5,5 ч и сам проверяет новости каждые 5 минут.
-    # Расписание лишь перезапускает его, если он завершился.
+    # GitHub often skips scheduled runs (sometimes 1–2 times in half a day),
+    # so each run works ~5.5 h and checks the news every 5 minutes itself.
+    # The schedule only restarts it when it has finished.
     - cron: "*/30 * * * *"
-  workflow_dispatch:          # кнопка «Run workflow» для ручного запуска
+  workflow_dispatch:          # the "Run workflow" button for a manual start
 
 permissions:
-  contents: write             # чтобы сохранять state.json и данные страницы
+  contents: write             # to save state.json and the page data
 
 concurrency:
   group: econ-news
@@ -35,36 +35,36 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}   # необязательно: факт по данным США
-          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}   # необязательно: «Имя ваш@email» для сайта SEC
-          FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }} # мультипликаторы компаний и календарь отчётов (скринер, EQS)
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}   # необязательно: ИИ-разбор важных новостей
-          COMPANIES: "yes"        # компании США, отчётность, кривые доходности и ставки для терминала
-          MIN_LEVEL: medium       # high = только самое важное
-          DIGEST_HOUR: "21"       # дневная сводка в 21:00 МСК; -1 = выключить
-          CHART_HOURS: "9,21"     # когда присылать картинку с графиками (часы МСК); пусто = никогда
-          MARKET_LINE: "yes"      # строка с котировками в шапке сообщений
-          QUIET_HOURS: "0-8"      # ночью без звука (кроме важных)
-          TRANSLATE: ru           # перевод заголовков на русский; off = не переводить
-          SHOW_ORIGINAL: "no"     # yes = под переводом показывать оригинал
-          SUMMARIES: "yes"        # выжимка в 1–2 предложения под заголовком
-          TAGS: "yes"             # теги #нефть #ФРС #рубль ...
-          MORNING_HOUR: "9"       # утренний дайджест «главное за ночь» (час МСК); -1 = выключить
-          CALENDAR: "yes"         # календарь важных событий + напоминания
-          CAL_COUNTRIES: "USD,EUR,CNY,GBP,JPY"  # чьи события показывать
-          REMIND_MINUTES: "60"    # за сколько минут напоминать; 0 = не напоминать
-          ALERTS: "yes"           # сразу сообщать, если источник перестал отвечать
-          TERMINAL_BUTTON: "yes"  # кнопка «🖥 Терминал» под сообщениями
-          TRADES: "yes"           # сделки политиков США и инсайдеров компаний
-          CONGRESS_MIN: "15000"   # присылать сделки политиков от $15 тыс. (меньше — только в терминале)
-          INSIDER_MIN_BUY: "250000"     # покупки инсайдеров от $250 тыс.
-          INSIDER_MIN_SELL: "10000000"  # продажи инсайдеров от $10 млн (плановые продажи 10b5-1 не присылаются)
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}       # optional: actual numbers for US data
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}   # optional: "Name your@email" for the SEC site
+          FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }} # free key: company ratios and the earnings calendar (EQS)
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}   # optional: AI notes on key stories
+          COMPANIES: "yes"        # US companies, financials, yield curves and rates for the terminal
+          MIN_LEVEL: medium       # high = only the most important
+          DIGEST_HOUR: "21"       # the day in review at 21:00 MSK; -1 = off
+          CHART_HOURS: "9,21"     # when to send the chart picture (MSK hours); empty = never
+          MARKET_LINE: "yes"      # a line with quotes in message headers
+          QUIET_HOURS: "0-8"      # silent at night (except key news)
+          TRANSLATE: "yes"        # translate headlines into the other language (EN↔RU); off = no translation
+          SHOW_ORIGINAL: "no"     # yes = show the original under the translation
+          SUMMARIES: "yes"        # a 1–2 sentence summary under the headline
+          TAGS: "yes"             # tags #oil #Fed #ruble ...
+          MORNING_HOUR: "9"       # morning digest "overnight highlights" (MSK hour); -1 = off
+          CALENDAR: "yes"         # calendar of key events + reminders
+          CAL_COUNTRIES: "USD,EUR,CNY,GBP,JPY"  # whose events to show
+          REMIND_MINUTES: "60"    # how many minutes before to remind; 0 = never
+          ALERTS: "yes"           # report at once when a source stops responding
+          TERMINAL_BUTTON: "yes"  # the «🖥 Terminal» button under messages
+          TRADES: "yes"           # trades of US politicians and company insiders
+          CONGRESS_MIN: "15000"   # send politicians' trades from $15K (smaller ones — terminal only)
+          INSIDER_MIN_BUY: "250000"     # insider buys from $250K
+          INSIDER_MIN_SELL: "10000000"  # insider sales from $10M (planned 10b5-1 sales are not sent)
         run: |
-          # адрес страницы «Рынок онлайн»: GitHub Pages или свой домен (переменная репозитория PAGES_URL)
+          # the Markets page address: GitHub Pages or your own domain (repository variable PAGES_URL)
           export PAGES_URL="${{ vars.PAGES_URL }}"
           [ -n "$PAGES_URL" ] || export PAGES_URL="https://${GITHUB_REPOSITORY_OWNER,,}.github.io/${GITHUB_REPOSITORY#*/}/"
-          # цикл: проверка каждые 5 мин, через 5,5 ч выход (следующий запуск уже в очереди);
-          # сайт обновляется не чаще раза в 10 минут, свежие новости сразу уходят на сервер бота
+          # loop: a check every 5 min, exit after 5.5 h (the next run is already queued);
+          # the site updates at most every 10 minutes, fresh news go to the bot server at once
           LOOP_HOURS=5.5 python news_bot.py --loop 5 --git-sync
 
       - name: Save state

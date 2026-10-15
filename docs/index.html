@@ -1,11 +1,12 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Рынок онлайн</title>
+<title>Markets</title>
 <meta name="color-scheme" content="dark">
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script src="terminal/i18n.js"></script>
 <style>
   :root{
     --bg:#0e1116; --card:#161b22; --card2:#1b212b; --line:#232b37;
@@ -64,13 +65,15 @@
   .note{color:var(--faint);font-size:12px;margin:0;padding:8px 14px 12px}
   .empty{color:var(--muted);text-align:center;padding:30px 10px}
   footer{color:var(--faint);font-size:12px;text-align:center;margin-top:22px}
+  .lang{border:1px solid var(--line);background:var(--card);color:var(--muted);font:600 12px/1 inherit;padding:6px 9px;border-radius:999px;cursor:pointer;margin-left:8px}
+  .lang:hover{color:var(--text)}
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
-    <h1>Рынок онлайн</h1>
-    <div class="upd"><span class="dot"></span><span id="upd">загрузка…</span></div>
+    <h1 id="h1">Markets</h1>
+    <div class="upd"><span class="dot"></span><span id="upd">loading…</span><button class="lang" id="lang">RU</button></div>
   </header>
 
   <div class="tape" id="tape"></div>
@@ -80,42 +83,64 @@
   </div>
 
   <nav class="tabs" role="tablist">
-    <button role="tab" data-tab="charts" aria-selected="true">Графики</button>
-    <button role="tab" data-tab="news" aria-selected="false">Новости</button>
-    <button role="tab" data-tab="cal" aria-selected="false">Календарь</button>
+    <button role="tab" data-tab="charts" aria-selected="true" data-k="charts">Charts</button>
+    <button role="tab" data-tab="news" aria-selected="false" data-k="news">News</button>
+    <button role="tab" data-tab="cal" aria-selected="false" data-k="cal">Calendar</button>
   </nav>
 
   <section class="panel on" id="p-charts">
     <div class="box"><div id="w-overview" style="height:440px"></div></div>
-    <div class="box"><h2>Все рынки</h2><div id="w-market" style="height:640px"></div>
-      <p class="note">Облигации показаны ценой: когда цена растёт, доходность падает. Сами доходности США — в плитках вверху.</p></div>
-    <div class="box"><h2>Криптовалюты · тепловая карта</h2><div id="w-cryptomap" style="height:480px"></div></div>
+    <div class="box"><h2 data-k="all_markets">All markets</h2><div id="w-market" style="height:640px"></div>
+      <p class="note" data-k="bonds_note">Bonds are shown by price: when the price rises, the yield falls. US yields themselves are in the tiles at the top.</p></div>
+    <div class="box"><h2 data-k="crypto_map">Crypto · heat map</h2><div id="w-cryptomap" style="height:480px"></div></div>
   </section>
 
   <section class="panel" id="p-news">
     <div class="filters">
-      <button class="chip" data-f="all" aria-pressed="true">Все</button>
-      <button class="chip" data-f="high" aria-pressed="false">🔴 Только главное</button>
+      <button class="chip" data-f="all" aria-pressed="true" data-k="all">All</button>
+      <button class="chip" data-f="high" aria-pressed="false" data-k="top">🔴 Top only</button>
     </div>
-    <ul class="news" id="news"><li class="empty">Загрузка новостей…</li></ul>
+    <ul class="news" id="news"><li class="empty" data-k="news_loading">Loading news…</li></ul>
   </section>
 
   <section class="panel" id="p-cal">
-    <div class="box"><h2>Экономический календарь</h2><div id="w-cal" style="height:640px"></div></div>
+    <div class="box"><h2 data-k="calendar">Economic calendar</h2><div id="w-cal" style="height:640px"></div></div>
   </section>
 
-  <footer>Живые графики — TradingView · плитки и новости — бот, обновление ~каждые 30 минут</footer>
+  <footer data-k="footer">Live charts — TradingView · tiles and news — the bot, updated every ~5 minutes</footer>
 </div>
 
 <script>
 (function(){
+  var I = window.L10N, RU = I.ru;
+  // texts of this page: [English, Russian]
+  var P = {
+    h1: ['Markets', 'Рынок онлайн'], loading: ['loading…', 'загрузка…'], charts: ['Charts', 'Графики'], news: ['News', 'Новости'], cal: ['Calendar', 'Календарь'],
+    all_markets: ['All markets', 'Все рынки'],
+    bonds_note: ['Bonds are shown by price: when the price rises, the yield falls. US yields themselves are in the tiles at the top.',
+      'Облигации показаны ценой: когда цена растёт, доходность падает. Сами доходности США — в плитках вверху.'],
+    crypto_map: ['Crypto · heat map', 'Криптовалюты · тепловая карта'], all: ['All', 'Все'], top: ['🔴 Top only', '🔴 Только главное'],
+    news_loading: ['Loading news…', 'Загрузка новостей…'], calendar: ['Economic calendar', 'Экономический календарь'],
+    footer: ['Live charts — TradingView · tiles and news — the bot, updated every ~5 minutes', 'Живые графики — TradingView · плитки и новости — бот, обновление каждые ~5 минут'],
+    t_idx: ['Indices', 'Индексы'], t_cmd: ['Commodities', 'Сырьё'], t_fx: ['Currencies', 'Валюты'], t_bonds: ['Bonds', 'Облигации'], t_crypto: ['Crypto', 'Крипто'],
+    just_now: ['just now', 'только что'], today: ['Today', 'Сегодня'], yesterday: ['Yesterday', 'Вчера'],
+    no_news: ['No news to show yet', 'Пока нет новостей для показа'], not_ready: ["the bot's data is not ready yet", 'данные бота пока не готовы'],
+    first_run: ["News appears after the bot's first run", 'Новости появятся после первого запуска бота'], chart_for: [' · chart for ', ' · график за ']
+  };
+  function T(k){ return P[k][RU ? 1 : 0] }
+  document.querySelectorAll('[data-k]').forEach(function(e){ e.textContent = T(e.dataset.k) });
+  document.getElementById('h1').textContent = T('h1'); document.title = T('h1'); document.documentElement.lang = I.lang;
+  document.getElementById('upd').textContent = T('loading');
+  var lb = document.getElementById('lang'); lb.textContent = RU ? 'EN' : 'RU'; lb.title = RU ? 'Switch to English' : 'Русский язык';
+  lb.onclick = function(){ I.setLang(RU ? 'en' : 'ru') };
+
   // ---------- Telegram Mini App ----------
   var tg = window.Telegram && window.Telegram.WebApp;
   if (tg && tg.initData !== undefined) {
     try { tg.ready(); tg.expand(); tg.setHeaderColor('#0e1116'); tg.setBackgroundColor('#0e1116'); } catch(e){}
   }
 
-  // ---------- TradingView: живые виджеты ----------
+  // ---------- TradingView: live widgets ----------
   function tv(el, name, cfg){
     var host = document.getElementById(el);
     if (!host || host.dataset.done) return;
@@ -124,16 +149,17 @@
     var s = document.createElement('script');
     s.src = 'https://s3.tradingview.com/external-embedding/embed-widget-' + name + '.js';
     s.async = true;
-    s.innerHTML = JSON.stringify(Object.assign({colorTheme:'dark', isTransparent:true, locale:'ru'}, cfg));
+    s.innerHTML = JSON.stringify(Object.assign({colorTheme:'dark', isTransparent:true, locale:I.tv}, cfg));
     host.firstChild.appendChild(s);
   }
+  function n(en, ru){ return RU ? ru : en }
   var SYM = [
-    ['S&P 500','FOREXCOM:SPXUSD'], ['Nasdaq 100','FOREXCOM:NSXUSD'], ['Нефть Brent','TVC:UKOIL'],
-    ['Золото','TVC:GOLD'], ['EUR/USD','FX:EURUSD'], ['USD/RUB','FX_IDC:USDRUB'],
-    ['Индекс доллара','TVC:DXY'], ['Биткоин','BITSTAMP:BTCUSD']
+    ['S&P 500','FOREXCOM:SPXUSD'], ['Nasdaq 100','FOREXCOM:NSXUSD'], [n('Brent crude', 'Нефть Brent'),'TVC:UKOIL'],
+    [n('Gold', 'Золото'),'TVC:GOLD'], ['EUR/USD','FX:EURUSD'], ['USD/RUB','FX_IDC:USDRUB'],
+    [n('US Dollar Index', 'Индекс доллара'),'TVC:DXY'], [n('Bitcoin', 'Биткоин'),'BITSTAMP:BTCUSD']
   ];
   var CRYPTO = [
-    ['BTC','Биткоин'], ['ETH','Ethereum'], ['SOL','Solana'], ['BNB','BNB'], ['XRP','XRP'], ['TON','Toncoin'],
+    ['BTC',n('Bitcoin', 'Биткоин')], ['ETH','Ethereum'], ['SOL','Solana'], ['BNB','BNB'], ['XRP','XRP'], ['TON','Toncoin'],
     ['DOGE','Dogecoin'], ['ADA','Cardano'], ['TRX','TRON'], ['AVAX','Avalanche'], ['LINK','Chainlink'],
     ['DOT','Polkadot'], ['LTC','Litecoin'], ['SUI','Sui']
   ];
@@ -152,17 +178,21 @@
       plotLineColorGrowing:'#2fbf71', plotLineColorFalling:'#ef5350', belowLineFillColorGrowing:'rgba(47,191,113,0.12)',
       belowLineFillColorFalling:'rgba(239,83,80,0.12)', gridLineColor:'rgba(35,43,55,0)', scaleFontColor:'#8b95a7',
       tabs:[
-        {title:'Индексы', symbols:[{s:'FOREXCOM:SPXUSD',d:'S&P 500'},{s:'FOREXCOM:NSXUSD',d:'Nasdaq 100'},{s:'FOREXCOM:DJI',d:'Dow Jones'},{s:'INDEX:DEU40',d:'DAX'},{s:'INDEX:NKY',d:'Nikkei 225'},{s:'TVC:HSI',d:'Hang Seng'}]},
-        {title:'Сырьё', symbols:[{s:'TVC:UKOIL',d:'Нефть Brent'},{s:'TVC:USOIL',d:'Нефть WTI'},{s:'TVC:GOLD',d:'Золото'},{s:'TVC:SILVER',d:'Серебро'},{s:'OANDA:NATGASUSD',d:'Природный газ'},{s:'OANDA:XCUUSD',d:'Медь'},{s:'OANDA:XPTUSD',d:'Платина'},{s:'OANDA:WHEATUSD',d:'Пшеница'}]},
-        {title:'Валюты', symbols:[{s:'FX:EURUSD',d:'EUR/USD'},{s:'FX:USDJPY',d:'USD/JPY'},{s:'FX:GBPUSD',d:'GBP/USD'},{s:'FX_IDC:USDCNY',d:'USD/CNY'},{s:'FX_IDC:USDRUB',d:'USD/RUB'},{s:'TVC:DXY',d:'Индекс доллара'}]},
-        {title:'Облигации', symbols:[{s:'OANDA:USB02YUSD',d:'США 2 года (цена)'},{s:'OANDA:USB10YUSD',d:'США 10 лет (цена)'},{s:'OANDA:USB30YUSD',d:'США 30 лет (цена)'},{s:'OANDA:DE10YBEUR',d:'Германия 10 лет (цена)'},{s:'OANDA:UK10YBGBP',d:'Великобритания 10 лет (цена)'},{s:'NASDAQ:TLT',d:'ETF длинных облигаций США'}]},
-        {title:'Крипто', symbols:CRYPTO.map(function(c){return {s:'BINANCE:'+c[0]+'USDT', d:c[1]}})}
+        {title:T('t_idx'), symbols:[{s:'FOREXCOM:SPXUSD',d:'S&P 500'},{s:'FOREXCOM:NSXUSD',d:'Nasdaq 100'},{s:'FOREXCOM:DJI',d:'Dow Jones'},{s:'INDEX:DEU40',d:'DAX'},{s:'INDEX:NKY',d:'Nikkei 225'},{s:'TVC:HSI',d:'Hang Seng'}]},
+        {title:T('t_cmd'), symbols:[{s:'TVC:UKOIL',d:n('Brent crude','Нефть Brent')},{s:'TVC:USOIL',d:n('WTI crude','Нефть WTI')},{s:'TVC:GOLD',d:n('Gold','Золото')},
+          {s:'TVC:SILVER',d:n('Silver','Серебро')},{s:'OANDA:NATGASUSD',d:n('Natural gas','Природный газ')},{s:'OANDA:XCUUSD',d:n('Copper','Медь')},
+          {s:'OANDA:XPTUSD',d:n('Platinum','Платина')},{s:'OANDA:WHEATUSD',d:n('Wheat','Пшеница')}]},
+        {title:T('t_fx'), symbols:[{s:'FX:EURUSD',d:'EUR/USD'},{s:'FX:USDJPY',d:'USD/JPY'},{s:'FX:GBPUSD',d:'GBP/USD'},{s:'FX_IDC:USDCNY',d:'USD/CNY'},{s:'FX_IDC:USDRUB',d:'USD/RUB'},{s:'TVC:DXY',d:n('US Dollar Index','Индекс доллара')}]},
+        {title:T('t_bonds'), symbols:[{s:'OANDA:USB02YUSD',d:n('US 2Y (price)','США 2 года (цена)')},{s:'OANDA:USB10YUSD',d:n('US 10Y (price)','США 10 лет (цена)')},
+          {s:'OANDA:USB30YUSD',d:n('US 30Y (price)','США 30 лет (цена)')},{s:'OANDA:DE10YBEUR',d:n('Germany 10Y (price)','Германия 10 лет (цена)')},
+          {s:'OANDA:UK10YBGBP',d:n('UK 10Y (price)','Великобритания 10 лет (цена)')},{s:'NASDAQ:TLT',d:n('Long US Treasury ETF','ETF длинных облигаций США')}]},
+        {title:T('t_crypto'), symbols:CRYPTO.map(function(c){return {s:'BINANCE:'+c[0]+'USDT', d:c[1]}})}
       ]
     });
   }
   function cryptoMap(){
     tv('w-cryptomap','crypto-coins-heatmap',{dataSource:'Crypto', blockSize:'market_cap_calc', blockColor:'24h_close_change|5',
-      locale:'ru', symbolUrl:'', hasTopBar:false, isDataSetEnabled:false, isZoomEnabled:true, hasSymbolTooltip:true,
+      locale:I.tv, symbolUrl:'', hasTopBar:false, isDataSetEnabled:false, isZoomEnabled:true, hasSymbolTooltip:true,
       isMonoSize:false, width:'100%', height:'100%'});
   }
   function calTab(){
@@ -171,7 +201,7 @@
   chartsTab();
   cryptoMap();
 
-  // ---------- вкладки ----------
+  // ---------- tabs ----------
   var tabs = document.querySelectorAll('.tabs button');
   function show(name){
     tabs.forEach(function(b){ b.setAttribute('aria-selected', b.dataset.tab === name) });
@@ -183,25 +213,26 @@
   tabs.forEach(function(b){ b.addEventListener('click', function(){ show(b.dataset.tab) }) });
   try { var saved = localStorage.getItem('tab'); if (saved) show(saved) } catch(e){}
 
-  // ---------- данные бота: плитки и новости ----------
+  // ---------- the bot's data: tiles and news ----------
   var data = null, filter = 'all';
   function ago(iso){
     var m = Math.round((Date.now() - new Date(iso).getTime()) / 60000);
-    if (m < 1) return 'только что';
-    if (m < 60) return m + ' мин назад';
+    if (m < 1) return T('just_now');
+    if (m < 60) return m + (RU ? ' мин назад' : ' min ago');
     var h = Math.round(m / 60);
-    if (h < 24) return h + ' ч назад';
-    return Math.round(h / 24) + ' дн назад';
+    if (h < 24) return h + (RU ? ' ч назад' : ' h ago');
+    return Math.round(h / 24) + (RU ? ' дн назад' : ' d ago');
   }
-  function hhmm(iso){ return new Date(iso).toLocaleTimeString('ru-RU',{hour:'2-digit',minute:'2-digit',timeZone:'Europe/Moscow'}) }
+  function hhmm(iso){ return new Date(iso).toLocaleTimeString(I.date,{hour:'2-digit',minute:'2-digit',timeZone:'Europe/Moscow'}) + ' ' + I.tz }
   function dayLabel(iso){
     var d = new Date(iso), now = new Date();
-    var f = function(x){ return x.toLocaleDateString('ru-RU',{timeZone:'Europe/Moscow'}) };
-    if (f(d) === f(now)) return 'Сегодня';
-    if (f(d) === f(new Date(now - 864e5))) return 'Вчера';
-    return d.toLocaleDateString('ru-RU',{day:'numeric',month:'long',timeZone:'Europe/Moscow'});
+    var f = function(x){ return x.toLocaleDateString('en-GB',{timeZone:'Europe/Moscow'}) };
+    if (f(d) === f(now)) return T('today');
+    if (f(d) === f(new Date(now - 864e5))) return T('yesterday');
+    return d.toLocaleDateString(I.date,{day:'numeric',month:'long',timeZone:'Europe/Moscow'});
   }
   function el(tag, cls, text){ var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e }
+  function fmt(v, d){ return Number(v).toLocaleString(I.num, {minimumFractionDigits:d, maximumFractionDigits:d}) }
   function spark(vals, cls){
     var w = 120, h = 34, lo = Math.min.apply(null, vals), hi = Math.max.apply(null, vals), sp = (hi - lo) || 1;
     var pts = vals.map(function(v, i){ return [(i / (vals.length - 1)) * w, h - 3 - ((v - lo) / sp) * (h - 6)] });
@@ -217,16 +248,26 @@
     svg.appendChild(area); svg.appendChild(line);
     return svg;
   }
+  function priceText(q){
+    if (q.value == null) return q.price;   // older data.json: a ready Russian-formatted string
+    return (q.prefix || '') + fmt(q.value, q.digits != null ? q.digits : 2) + (q.suffix || '');
+  }
+  function changeText(c){
+    if (c == null) return '';
+    var s = Math.abs(c).toFixed(1);
+    return (c > 0.005 ? '▲' : c < -0.005 ? '▼' : '•') + (RU ? s.replace('.', ',') : s) + '%';
+  }
   function renderTiles(){
     var box = document.getElementById('tiles'); box.innerHTML = '';
     (data.market || []).filter(function(q){ return !q.terminal }).forEach(function(q){
       var cls = q.change == null || Math.abs(q.change) < 0.005 ? 'flat' : (q.change > 0 ? 'up' : 'down');
+      var name = I.mktName(q.id, RU ? q.name : q.name_en || q.name);
       var t = el('div', 'tile');
-      t.title = q.name + ' · график за ' + q.period;
-      t.appendChild(el('div', 'n', q.name));
+      t.title = name + T('chart_for') + (q.days ? q.days + (RU ? ' дн.' : ' days') : q.period);
+      t.appendChild(el('div', 'n', name));
       var row = el('div', 'row');
-      row.appendChild(el('div', 'p', q.price));
-      row.appendChild(el('div', 'c ' + cls, q.change_txt));
+      row.appendChild(el('div', 'p', priceText(q)));
+      row.appendChild(el('div', 'c ' + cls, changeText(q.change)));
       t.appendChild(row);
       if (q.spark && q.spark.length > 1) t.appendChild(spark(q.spark, cls));
       box.appendChild(t);
@@ -236,19 +277,23 @@
   function renderNews(){
     var ul = document.getElementById('news'); ul.innerHTML = '';
     var items = (data.news || []).filter(function(n){ return filter === 'all' || n.level === 'high' });
-    if (!items.length){ ul.appendChild(el('li', 'empty', 'Пока нет новостей для показа')); return }
+    if (!items.length){ ul.appendChild(el('li', 'empty', T('no_news'))); return }
     var last = '';
     items.forEach(function(n){
       var lbl = dayLabel(n.ts);
       if (lbl !== last){ ul.appendChild(el('div', 'day', lbl)); last = lbl }
       var li = el('li', n.level);
-      var a = el('a', null, n.title);
+      var title = I.newsTitle(n), lead = I.newsLead(n), sum = I.aiSum(n);
+      var a = el('a', null, title);
       if (n.link){ a.href = n.link; a.target = '_blank'; a.rel = 'noopener' }
       li.appendChild(a);
-      if (n.original) li.appendChild(el('div', 'orig', n.original));
-      if (n.lead) li.appendChild(el('div', 'lead', n.lead));
-      var tags = (n.tags || []).map(function(t){ return '#' + t }).join(' ');
-      li.appendChild(el('div', 'meta', hhmm(n.ts) + ' · ' + n.sources.join(', ') + (tags ? ' · ' + tags : '')));
+      // the original headline under the translation (when the reader's language is not the original one)
+      var orig = n.original !== undefined && n.lang === undefined ? (RU ? n.original : '') : (n.title !== title ? n.title : '');
+      if (orig) li.appendChild(el('div', 'orig', orig));
+      if (sum) li.appendChild(el('div', 'lead', '💡 ' + sum));
+      else if (lead) li.appendChild(el('div', 'lead', lead));
+      var tags = (n.tags || []).map(function(t){ return '#' + I.tag(t) }).join(' ');
+      li.appendChild(el('div', 'meta', hhmm(n.ts) + ' · ' + (n.sources || []).map(I.source).join(', ') + (tags ? ' · ' + tags : '')));
       ul.appendChild(li);
     });
   }
@@ -263,19 +308,20 @@
     var a = e.target.closest('a');
     if (a && a.href && tg && tg.openLink){ e.preventDefault(); tg.openLink(a.href) }
   });
+  var bot = RU ? 'бот: ' : 'bot: ';
   function load(){
     fetch('data.json?t=' + Date.now(), {cache:'no-store'}).then(function(r){ return r.json() }).then(function(d){
       data = d; renderTiles(); renderNews();
-      document.getElementById('upd').textContent = 'бот: ' + ago(d.updated);
+      document.getElementById('upd').textContent = bot + ago(d.updated);
     }).catch(function(){
-      document.getElementById('upd').textContent = 'данные бота пока не готовы';
+      document.getElementById('upd').textContent = T('not_ready');
       document.getElementById('tiles').style.display = 'none';
-      document.getElementById('news').innerHTML = '<li class="empty">Новости появятся после первого запуска бота</li>';
+      var ul = document.getElementById('news'); ul.innerHTML = ''; ul.appendChild(el('li', 'empty', T('first_run')));
     });
   }
   load();
   setInterval(load, 120000);
-  setInterval(function(){ if (data) document.getElementById('upd').textContent = 'бот: ' + ago(data.updated) }, 30000);
+  setInterval(function(){ if (data) document.getElementById('upd').textContent = bot + ago(data.updated) }, 30000);
 })();
 </script>
 </body>

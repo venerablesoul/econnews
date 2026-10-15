@@ -1,9 +1,10 @@
 name: Bot server (Cloudflare)
 
-# Выкладывает сервер бота (папка worker/) на Cloudflare Workers:
-# мгновенные ответы на /start и команды, подписчики, котировки для терминала со скрытыми ключами.
-# Запускается сам при изменении worker/ или вручную: Actions → Bot server (Cloudflare) → Run workflow.
-# Что нужно один раз настроить — в README, раздел «Сервер бота».
+# Deploys the bot server (the worker/ folder) to Cloudflare Workers (free plan):
+# instant answers to /start and commands, subscribers and their languages, live quotes and company data
+# for the terminal with the API keys hidden on the server.
+# Runs by itself when worker/ changes, or by hand: Actions → Bot server (Cloudflare) → Run workflow.
+# One-time setup: the CLOUDFLARE_API_TOKEN secret (a token with the "Edit Cloudflare Workers" template).
 
 on:
   push:
@@ -12,7 +13,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write             # сохранить адрес сервера в docs/config.json
+  contents: write             # save the server address to docs/config.json
 
 concurrency:
   group: bot-server
@@ -24,21 +25,21 @@ jobs:
     timeout-minutes: 15
     env:
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}   # необязательно: определится сам
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}   # optional: found automatically
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}             # владелец бота
-      FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}               # бесплатный ключ — для всех
-      EODHD_API_KEY: ${{ secrets.EODHD_API_KEY }}                   # платный ключ — только владельцу
-      TERMINAL_PASSWORD: ${{ secrets.TERMINAL_PASSWORD }}           # необязательно: вход владельца в терминал из браузера
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}             # the bot owner
+      FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}               # free key — for everyone
+      EODHD_API_KEY: ${{ secrets.EODHD_API_KEY }}                   # optional paid key — owner only (Yahoo is used for free otherwise)
+      TERMINAL_PASSWORD: ${{ secrets.TERMINAL_PASSWORD }}           # optional: owner sign-in to the terminal from a browser
     steps:
       - name: Check that Cloudflare is set up
         run: |
           if [ -z "$CLOUDFLARE_API_TOKEN" ]; then
             if [ "${{ github.event_name }}" = "push" ]; then
-              echo "::notice::Сервер бота пока не настроен (нет секрета CLOUDFLARE_API_TOKEN) — пропускаю. Инструкция в README, раздел «Сервер бота»."
+              echo "::notice::The bot server is not set up yet (no CLOUDFLARE_API_TOKEN secret) — skipping."
               echo "SKIP=1" >> "$GITHUB_ENV"
             else
-              echo "::error::Нет секрета CLOUDFLARE_API_TOKEN. Инструкция в README, раздел «Сервер бота»."
+              echo "::error::The CLOUDFLARE_API_TOKEN secret is missing (create a token with the \"Edit Cloudflare Workers\" template)."
               exit 1
             fi
           fi
@@ -77,19 +78,19 @@ jobs:
       - name: Save server address for the bot and terminal
         if: env.SKIP != '1'
         run: |
-          echo "::notice::Сервер бота: $WORKER_URL"
+          echo "::notice::Bot server: $WORKER_URL"
           python3 worker/deploy.py config
           git config user.name "news-bot"
           git config user.email "news-bot@users.noreply.github.com"
           git add docs/config.json
           if git diff --cached --quiet; then
-            echo "Адрес сервера не изменился"
+            echo "The server address did not change"
           else
-            git commit -m "адрес сервера бота"
+            git commit -m "bot server address"
             ok=0
             for i in 1 2 3 4 5; do
               if git pull --rebase --autostash origin main && git push origin HEAD:main; then ok=1; break; fi
               sleep 5
             done
-            [ "$ok" = 1 ] || { echo "::error::Не удалось сохранить docs/config.json в репозиторий"; exit 1; }
+            [ "$ok" = 1 ] || { echo "::error::Could not save docs/config.json to the repository"; exit 1; }
           fi

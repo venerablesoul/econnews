@@ -1,7 +1,7 @@
 {
-  "name": "ECON Терминал",
-  "short_name": "Терминал",
-  "description": "Мировые рынки, крипта, компании, скринер, ставки, портфель и алерты, новости и календарь",
+  "name": "ECON Terminal",
+  "short_name": "Terminal",
+  "description": "World markets, crypto, companies, screener, rates, portfolio and alerts, news and calendar",
   "id": "./",
   "start_url": "./",
   "scope": "./",
@@ -13,7 +13,7 @@
   "orientation": "any",
   "background_color": "#000000",
   "theme_color": "#000000",
-  "lang": "ru",
+  "lang": "en",
   "categories": [
     "finance",
     "news"
@@ -40,7 +40,7 @@
   ],
   "shortcuts": [
     {
-      "name": "Крипта",
+      "name": "Crypto",
       "url": "./?cmd=CRYPTO",
       "icons": [
         {
@@ -50,7 +50,7 @@
       ]
     },
     {
-      "name": "Новости",
+      "name": "News",
       "url": "./?cmd=N",
       "icons": [
         {
@@ -60,7 +60,7 @@
       ]
     },
     {
-      "name": "Календарь",
+      "name": "Calendar",
       "url": "./?cmd=ECO",
       "icons": [
         {
@@ -70,7 +70,7 @@
       ]
     },
     {
-      "name": "Скринер",
+      "name": "Screener",
       "url": "./?cmd=EQS",
       "icons": [
         {
@@ -80,7 +80,7 @@
       ]
     },
     {
-      "name": "Мой список",
+      "name": "My watchlist",
       "url": "./?cmd=W",
       "icons": [
         {

@@ -1,25 +1,30 @@
-// Подменённые внешние сервисы для тестов сервера бота и терминала: Finnhub, Yahoo, Binance, Мосбиржа,
-// Telegram, QuickChart, перевод и файлы сайта. Всё без сети.
+// Fake external services for the bot server and terminal tests: Finnhub, Yahoo, Binance, Moscow Exchange,
+// Telegram, QuickChart, translators and the site's files. No network.
 import assert from "node:assert/strict";
 
 export const PAGES = "https://pages.test/econnews/";
 export const TOKEN = "123:TEST";
 export const OWNER = "111";
-export const sent = [];          // всё, что ушло в Telegram
-export const calls = [];         // все внешние запросы
-export const flags = { failYahoo: false, failBinance: false, failGoogle: false };
+export const sent = [];          // everything sent to Telegram
+export const calls = [];         // all outgoing requests
+export const flags = { failYahoo: false, failBinance: false, failGoogle: false, failSpark: false };
 
-// ------------------------------------------------------------------ данные
+// ------------------------------------------------------------------ data
 const now = Date.now();
 export const iso = (ms) => new Date(ms).toISOString();
 export const dataJson = {
   updated: iso(now - 600e3),
   market: [
-    { id: "S&P", name: "S&P 500", price: "7 719", value: 7719, change: -1.1, change_txt: "▼1,1%", digits: 0 },
-    { id: "Brent", name: "Нефть Brent", price: "$80,1", value: 80.1, change: 6.2, change_txt: "▲6,2%", digits: 2 },
+    { id: "S&P", name: "S&P 500", name_en: "S&P 500", price: "7 719", value: 7719, change: -1.1, change_txt: "▼1,1%", digits: 0 },
+    { id: "Brent", name: "Нефть Brent", name_en: "Brent crude", price: "$80,1", value: 80.1, change: 6.2, change_txt: "▲6,2%", digits: 2, prefix: "$" },
+    { id: "Золото", name: "Золото", name_en: "Gold", price: "$4 012", value: 4012.4, change: 0.4, digits: 0, prefix: "$" },
   ],
-  news: [{ title: "ФРС сохранила ставку", original: "Fed holds rates", lead: "", tags: ["ФРС"], sources: ["Reuters"],
-    link: "https://x/1", level: "high", ts: iso(now - 3600e3) },
+  news: [
+    // the current format: original headline + translation, English tags and sources, AI summary in both languages
+    { title: "Fed holds rates", lang: "en", title_ru: "ФРС сохранила ставку", lead: "The Fed kept rates on hold.", lead_ru: "ФРС сохранила ставку.",
+      tags: ["Fed", "rates"], sources: ["Reuters"], link: "https://x/1", level: "high", ts: iso(now - 3600e3),
+      ai: { sum: "Rates stay high for longer", sum_ru: "Ставки останутся высокими дольше", assets: [] } },
+    // the older format (Russian title + English original) must still work
     { title: "Акции Tesla обвалились после отзыва", original: "Tesla shares plunge after recall", lead: "", tags: [], sources: ["CNBC"],
       link: "https://x/3", level: "medium", ts: iso(now - 7200e3), tk: ["TSLA"], dir: -1,
       ai: { sum: "Отзыв машин бьёт по продажам Tesla", assets: [{ a: "TSLA", d: "down" }] } }],
@@ -28,20 +33,21 @@ export const dataJson = {
 export const stocksJson = {
   updated: iso(now),
   stocks: [
-    { s: "AAPL", n: "Apple", sec: "Технологии", px: 342.96, ch: 0.5, pe: 38.8, dy: 0.5, mcap: 5e6, revg: 14, r52: 37, l52: 243 },
-    { s: "XOM", n: "Exxon Mobil", sec: "Энергетика", px: 110, ch: -2.1, pe: 12, dy: 3.4, mcap: 4.6e5, revg: -3, r52: 5, l52: 100 },
-    { s: "NVDA", n: "Nvidia", sec: "Технологии", px: 221, ch: 3.3, pe: 50, mcap: 5.4e6, revg: 80, r52: 60, l52: 150 },
+    { s: "AAPL", n: "Apple", sec: "Technology", px: 342.96, ch: 0.5, pe: 38.8, dy: 0.5, mcap: 5e6, revg: 14, r52: 37, l52: 243 },
+    { s: "XOM", n: "Exxon Mobil", sec: "Energy", px: 110, ch: -2.1, pe: 12, dy: 3.4, mcap: 4.6e5, revg: -3, r52: 5, l52: 100 },
+    { s: "NVDA", n: "Nvidia", sec: "Technology", px: 221, ch: 3.3, pe: 50, mcap: 5.4e6, revg: 80, r52: 60, l52: 150 },
   ],
-  sectors: [{ sec: "Технологии", ch: 1.9, n: 2, mcap: 1.04e7 }, { sec: "Энергетика", ch: -2.1, n: 1, mcap: 4.6e5 }],
+  sectors: [{ sec: "Technology", ch: 1.9, n: 2, mcap: 1.04e7 }, { sec: "Energy", ch: -2.1, n: 1, mcap: 4.6e5 }],
   earnings: [{ s: "AAPL", n: "Apple", d: iso(now + 2 * 864e5).slice(0, 10), h: "amc", eps_e: 2.02 }],
 };
 export const ratesJson = {
   updated: iso(now),
   curves: {
-    US: { name: "США", flag: "🇺🇸", date: "2026-10-14", t: ["3M", "2Y", "10Y", "30Y"], x: [0.25, 2, 10, 30], y: [4.28, 4.82, 5.19, 5.52], w: [4.22, 4.77, 5.28, 5.67] },
-    RU: { name: "Россия (ОФЗ)", flag: "🇷🇺", date: "2026-10-14", t: ["2Y", "10Y"], x: [2, 10], y: [14.0, 15.9], w: null },
+    US: { name: "United States", name_ru: "США", flag: "🇺🇸", date: "2026-10-14", t: ["3M", "2Y", "10Y", "30Y"], x: [0.25, 2, 10, 30], y: [4.28, 4.82, 5.19, 5.52], w: [4.22, 4.77, 5.28, 5.67] },
+    RU: { name: "Russia (OFZ)", name_ru: "Россия (ОФЗ)", flag: "🇷🇺", date: "2026-10-14", t: ["2Y", "10Y"], x: [2, 10], y: [14.0, 15.9], w: null },
   },
-  cb: [{ c: "US", name: "ФРС США", flag: "🇺🇸", rate: 3.875, lo: 3.75, hi: 4.0 }, { c: "RU", name: "ЦБ РФ", flag: "🇷🇺", rate: 14, prev: 15, since: "2026-09-12" }],
+  cb: [{ c: "US", name: "Federal Reserve", name_ru: "ФРС США", flag: "🇺🇸", rate: 3.875, lo: 3.75, hi: 4.0 },
+    { c: "RU", name: "Bank of Russia", name_ru: "ЦБ РФ", flag: "🇷🇺", rate: 14, prev: 15, since: "2026-09-12" }],
   wirp: { effr: 3.88, lo: 3.75, hi: 4.0, meetings: [{ date: "2026-10-28", after: 4.005, d_bp: 12.5, cum_bp: 12.5, hike: 50, hold: 50, cut: 0, hike50: 0 }] },
 };
 export const finAAPL = { s: "AAPL", annual: [{ end: "2025-09-27", rev: 416e9, ni: 112e9, eps: 7.46, fcf: 98e9, cash: 30e9, debt: 90e9, eq: 70e9 }],
@@ -64,7 +70,7 @@ export function route(url, init) {
     return { __status: 404 };
   }
   if (u.host === "finnhub.io") {
-    assert.ok(u.searchParams.get("token"), "ключ Finnhub должен уходить только в Finnhub");
+    assert.ok(u.searchParams.get("token"), "the Finnhub key goes only to Finnhub");
     const s = u.searchParams.get("symbol");
     if (p.endsWith("/quote")) return s === "ZZZZ" ? { c: 0, d: null, dp: null } : { c: s === "AAPL" ? 342.96 : 100, dp: 0.5, pc: 341.27, h: 347, l: 341, o: 344, t: 1792008000 };
     if (p.endsWith("/profile2")) return s === "ZZZZ" ? {} : { name: s === "AAPL" ? "Apple Inc" : s + " Corp", exchange: "NASDAQ NMS - GLOBAL MARKET", country: "US", currency: "USD",
@@ -110,9 +116,21 @@ export function route(url, init) {
       return { candles: { columns: ["open", "close", "high", "low", "value", "volume", "begin", "end"],
         data: closes.slice(0, 120).map((c, i) => [c, c, c + 1, c - 1, 0, 100, `2026-0${1 + Math.floor(i / 30)}-${String(1 + (i % 28)).padStart(2, "0")} 00:00:00`, ""]) } };
     }
-    if (p.includes("/securities/SBER.json")) return { description: { columns: ["name", "title", "value"], data: [["SECID", "", "SBER"], ["NAME", "", "Сбербанк России ПАО ао"], ["ISIN", "", "RU0009029540"], ["ISSUESIZE", "", "21586948000"]] } };
+    if (p.includes("/securities/SBER.json")) {
+      const ru = u.searchParams.get("lang") === "ru";
+      return { description: { columns: ["name", "title", "value"], data: [["SECID", "", "SBER"], ["NAME", "", ru ? "Сбербанк России ПАО ао" : "Sberbank of Russia PJSC"],
+        ["ISIN", "", "RU0009029540"], ["ISSUESIZE", "", "21586948000"], ["TYPENAME", "", ru ? "Акция обыкновенная" : "Ordinary share"]] } };
+    }
+    if (p.includes("/markets/index/securities/IMOEX.json")) return { marketdata: { columns: ["SECID", "CURRENTVALUE", "LASTVALUE", "LASTCHANGEPRC"], data: [["IMOEX", 2741.5, 2741.5, 0.8]] } };
     if (p.includes("/securities.json")) return { securities: { columns: ["SECID", "SHORTNAME", "PREVPRICE", "LOTSIZE"], data: [["SBER", "Сбербанк", 287.16, 1]] },
       marketdata: { columns: ["SECID", "LAST", "LASTTOPREVPRICE", "HIGH", "LOW", "OPEN"], data: [["SBER", 285.52, -0.57, 290, 284, 288]] } };
+  }
+  if ((u.host === "query1.finance.yahoo.com" || u.host === "query2.finance.yahoo.com") && p.includes("/spark")) {
+    if (flags.failSpark) return { __status: 401 };
+    const syms = (u.searchParams.get("symbols") || "").split(",");
+    const px = { "^GSPC": 7730, "^GDAXI": 24100, "GC=F": 4020, "EURUSD=X": 1.1612, "^TNX": 4.12 };
+    if (p.startsWith("/v7")) return { spark: { result: syms.filter((s) => px[s]).map((s) => ({ symbol: s, response: [{ meta: { regularMarketPrice: px[s], chartPreviousClose: px[s] / 1.01 } }] })), error: null } };
+    return Object.fromEntries(syms.filter((s) => px[s]).map((s) => [s, { symbol: s, close: [px[s]], chartPreviousClose: px[s] / 1.01 }]));
   }
   if (u.host === "query1.finance.yahoo.com") {
     if (flags.failYahoo) return { __status: 429 };
@@ -122,7 +140,7 @@ export function route(url, init) {
   }
   if (u.host === "quickchart.io") return { success: true, url: "https://quickchart.io/chart/render/zf-test" };
   if (u.host === "api.coingecko.com") return { bitcoin: { usd: 81800, usd_24h_change: -1.9 } };
-  throw new Error("неожиданный запрос: " + url);
+  throw new Error("unexpected request: " + url);
 }
 
 export function installMocks() {
@@ -138,6 +156,7 @@ export function installMocks() {
 export class KV {
   constructor() { this.m = new Map(); this.puts = 0; }
   async get(k) { return this.m.has(k) ? this.m.get(k).v : null; }
+  async getWithMetadata(k) { return this.m.has(k) ? { value: this.m.get(k).v, metadata: this.m.get(k).meta || null } : { value: null, metadata: null }; }
   async put(k, v, o = {}) { this.puts++; this.m.set(k, { v: String(v), meta: o.metadata }); }
   async delete(k) { this.m.delete(k); }
   async list({ prefix = "" } = {}) { return { keys: [...this.m.keys()].filter((k) => k.startsWith(prefix)).map((name) => ({ name, metadata: this.m.get(name).meta })), list_complete: true }; }

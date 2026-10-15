@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """
-Помощник автодеплоя сервера бота (запускается из .github/workflows/worker.yml).
+Auto-deploy helper of the bot server (run by .github/workflows/worker.yml).
 
-  python worker/deploy.py prepare   — аккаунт Cloudflare, хранилище подписчиков (KV), адрес *.workers.dev
-  python worker/deploy.py secrets   — файл с секретами для `wrangler secret bulk` (из секретов GitHub)
-  python worker/deploy.py telegram  — проверка сервера, вебхук и меню бота, отчёт владельцу в Telegram
-  python worker/deploy.py config    — docs/config.json с адресом сервера (для бота и терминала)
+  python worker/deploy.py prepare   — Cloudflare account, subscriber storage (KV), the *.workers.dev address
+  python worker/deploy.py secrets   — secrets file for `wrangler secret bulk` (from the GitHub secrets)
+  python worker/deploy.py telegram  — server check, webhook and bot menu (English + Russian), report to the owner
+  python worker/deploy.py config    — docs/config.json with the server address (for the bot and the terminal)
 
-Ключи выводятся из токена бота теми же формулами, что в worker/src/index.js и news_bot.py.
+Keys are derived from the bot token with the same formulas as in worker/src/lib.js and news_bot.py.
 """
 from __future__ import annotations
 
@@ -37,7 +37,7 @@ def env(name):
 
 
 def github_env(**kv):
-    """Передать значения следующим шагам workflow."""
+    """Pass values to the next workflow steps."""
     path = env("GITHUB_ENV")
     for k, v in kv.items():
         os.environ[k] = v
@@ -60,7 +60,7 @@ def http(method, url, body=None, headers=None, timeout=30):
         except ValueError:
             return e.code, {}
     except (urllib.error.URLError, OSError, ValueError) as e:
-        # новый адрес *.workers.dev может появиться в DNS не сразу — это не ошибка, повторим
+        # a new *.workers.dev address may take a while to appear in DNS — not an error, we retry
         print(f"  {method} {url.split('?')[0]}: {type(e).__name__}: {e}"[:200])
         return 0, {}
 
@@ -71,53 +71,54 @@ def cf(method, path, body=None):
 
 
 def cf_errors(d):
-    return "; ".join(f"{e.get('code')}: {e.get('message')}" for e in d.get("errors") or []) or "неизвестная ошибка"
+    return "; ".join(f"{e.get('code')}: {e.get('message')}" for e in d.get("errors") or []) or "unknown error"
 
 
 # ---------------------------------------------------------------------------
 def prepare():
     if not env("CLOUDFLARE_API_TOKEN"):
-        fail("Не задан секрет CLOUDFLARE_API_TOKEN. GitHub → Settings → Secrets and variables → Actions → "
-             "New repository secret. Как получить токен — в README, раздел «Сервер бота».")
+        fail("The CLOUDFLARE_API_TOKEN secret is missing. GitHub → Settings → Secrets and variables → Actions → "
+             "New repository secret. Create the token at dash.cloudflare.com → My Profile → API Tokens "
+             "with the \"Edit Cloudflare Workers\" template.")
     if not env("TELEGRAM_BOT_TOKEN"):
-        fail("Не задан секрет TELEGRAM_BOT_TOKEN (тот же, что использует основной бот).")
+        fail("The TELEGRAM_BOT_TOKEN secret is missing (the same one the news bot uses).")
 
     acc = env("CLOUDFLARE_ACCOUNT_ID")
     if not acc:
         status, d = cf("GET", "/accounts?per_page=50")
         accounts = d.get("result") or []
         if status != 200 or not accounts:
-            fail("Токен Cloudflare не подошёл (" + cf_errors(d) + "). Создайте токен по шаблону "
-                 "«Edit Cloudflare Workers» и сохраните его в секрет CLOUDFLARE_API_TOKEN.")
+            fail("The Cloudflare token was rejected (" + cf_errors(d) + "). Create a token with the "
+                 "\"Edit Cloudflare Workers\" template and save it as the CLOUDFLARE_API_TOKEN secret.")
         acc = accounts[0]["id"]
         if len(accounts) > 1:
-            print(f"У токена несколько аккаунтов, беру первый: {accounts[0].get('name')}. "
-                  "Другой можно указать секретом CLOUDFLARE_ACCOUNT_ID.")
+            print(f"The token has several accounts, using the first: {accounts[0].get('name')}. "
+                  "Another one can be set with the CLOUDFLARE_ACCOUNT_ID secret.")
 
-    # хранилище подписчиков
+    # subscriber storage
     status, d = cf("GET", f"/accounts/{acc}/storage/kv/namespaces?per_page=100")
     if status != 200:
-        fail("Нет доступа к Workers KV (" + cf_errors(d) + "). У токена должно быть право «Workers KV Storage: Edit» "
-             "— оно есть в шаблоне «Edit Cloudflare Workers».")
+        fail("No access to Workers KV (" + cf_errors(d) + "). The token needs \"Workers KV Storage: Edit\" "
+             "— the \"Edit Cloudflare Workers\" template has it.")
     kv = next((n["id"] for n in d.get("result") or [] if n.get("title") == KV_TITLE), "")
     if not kv:
         status, d = cf("POST", f"/accounts/{acc}/storage/kv/namespaces", {"title": KV_TITLE})
         if status != 200:
-            fail("Не удалось создать хранилище подписчиков: " + cf_errors(d))
+            fail("Could not create the subscriber storage: " + cf_errors(d))
         kv = d["result"]["id"]
-        print("Создано хранилище подписчиков", KV_TITLE)
+        print("Created the subscriber storage", KV_TITLE)
 
-    # адрес вида <имя>.workers.dev (у нового аккаунта его может не быть — создаём)
+    # <name>.workers.dev address (a new account may not have one yet — create it)
     status, d = cf("GET", f"/accounts/{acc}/workers/subdomain")
     sub = ((d.get("result") or {}).get("subdomain") or "") if status == 200 else ""
     if not sub:
         wanted = "econnews-" + hashlib.sha1(acc.encode()).hexdigest()[:6]
         status, d = cf("PUT", f"/accounts/{acc}/workers/subdomain", {"subdomain": wanted})
         if status != 200:
-            fail("Не удалось включить адрес workers.dev (" + cf_errors(d) + "). Откройте один раз "
-                 "dash.cloudflare.com → Workers & Pages — Cloudflare создаст его сам — и запустите деплой снова.")
+            fail("Could not enable the workers.dev address (" + cf_errors(d) + "). Open "
+                 "dash.cloudflare.com → Workers & Pages once — Cloudflare creates it — and run the deploy again.")
         sub = (d.get("result") or {}).get("subdomain") or wanted
-        print("Создан адрес", sub + ".workers.dev")
+        print("Created the address", sub + ".workers.dev")
 
     toml = os.path.join(HERE, "wrangler.toml")
     with open(toml, encoding="utf-8") as f:
@@ -128,7 +129,7 @@ def prepare():
 
     url = f"https://{WORKER_NAME}.{sub}.workers.dev"
     github_env(CLOUDFLARE_ACCOUNT_ID=acc, WORKER_URL=url)
-    print("Аккаунт:", acc[:6] + "…", "· сервер:", url)
+    print("Account:", acc[:6] + "…", "· server:", url)
 
 
 def secrets():
@@ -144,10 +145,11 @@ def secrets():
     with open(path, "w", encoding="utf-8") as f:
         json.dump(out, f)
     os.chmod(path, 0o600)
-    print("Секреты для сервера:", ", ".join(sorted(out)))
-    for k in ("FINNHUB_API_KEY", "EODHD_API_KEY"):
-        if k not in out:
-            print(f"::warning::Нет секрета {k} — соответствующие котировки в терминале работать не будут.")
+    print("Server secrets:", ", ".join(sorted(out)))
+    if "FINNHUB_API_KEY" not in out:
+        print("::warning::No FINNHUB_API_KEY secret — US stock quotes and company data will not work (the key is free: finnhub.io).")
+    if "EODHD_API_KEY" not in out:
+        print("EODHD_API_KEY is not set — fine: world quotes come from free Yahoo Finance data (EODHD is an optional paid upgrade).")
 
 
 def tg(method, body=None):
@@ -155,82 +157,93 @@ def tg(method, body=None):
     return d
 
 
+COMMANDS = [   # (command, English, Russian)
+    ("news", "Top stories of the day", "Главные новости за сутки"),
+    ("markets", "Markets now", "Рынки сейчас"),
+    ("q", "Quotes: /q AAPL BTC oil", "Котировки: /q AAPL BTC нефть"),
+    ("des", "Company: /des AAPL", "Компания: /des AAPL"),
+    ("chart", "Chart: /chart AAPL 1y", "График: /chart AAPL 1y"),
+    ("watch", "My watchlist: /watch AAPL", "Мой список: /watch AAPL"),
+    ("port", "My portfolio", "Мой портфель"),
+    ("alert", "Alert: /alert AAPL > 200", "Алерт: /alert AAPL > 200"),
+    ("alerts", "My alerts", "Мои алерты"),
+    ("map", "US market map", "Карта рынка США"),
+    ("eqs", "Stock screener", "Скринер акций"),
+    ("earnings", "Company earnings this week", "Отчёты компаний на неделе"),
+    ("rates", "Bond yields", "Доходности облигаций"),
+    ("cb", "Central bank rates", "Ставки центробанков"),
+    ("wirp", "Fed rate expectations", "Ожидания по ставке ФРС"),
+    ("calendar", "Economic calendar", "Календарь событий"),
+    ("trades", "US politicians' and insiders' trades", "Сделки политиков США и инсайдеров"),
+    ("lang", "Language: /lang en · /lang ru", "Язык: /lang ru · /lang en"),
+    ("help", "All commands", "Все команды"),
+    ("start", "Subscribe to the news", "Подписаться на новости"),
+    ("stop", "Unsubscribe", "Отписаться"),
+]
+
+
 def telegram():
     url = env("WORKER_URL")
     token = env("TELEGRAM_BOT_TOKEN")
     pages = env("PAGES_URL").rstrip("/") + "/"
-    # 1) сервер отвечает? (новый адрес workers.dev иногда включается до минуты)
+    # 1) is the server up? (a new workers.dev address sometimes takes up to a minute)
     ok = False
-    for _ in range(36):   # до ~6 минут
+    for _ in range(36):   # up to ~6 minutes
         status, d = http("GET", url + "/")
         if status == 200 and d.get("ok"):
             ok = True
             break
         time.sleep(10)
     if not ok:
-        fail(f"Сервер {url} не отвечает. Проверьте в dash.cloudflare.com → Workers & Pages → {WORKER_NAME}.")
+        fail(f"The server {url} does not respond. Check dash.cloudflare.com → Workers & Pages → {WORKER_NAME}.")
 
     sync = hashlib.sha256(("econnews-sync:" + token).encode()).hexdigest()
     hook = hashlib.sha256(("econnews-hook:" + token).encode()).hexdigest()[:48]
     status, d = http("GET", url + "/subs", headers={"Authorization": "Bearer " + sync})
     if status != 200:
-        fail("Сервер запущен, но не видит токен бота или хранилище (ответ /subs: %s %s). "
-             "Проверьте секрет TELEGRAM_BOT_TOKEN." % (status, d))
+        fail("The server runs but cannot see the bot token or the storage (/subs answered: %s %s). "
+             "Check the TELEGRAM_BOT_TOKEN secret." % (status, d))
     n_subs = len(d.get("ids") or [])
 
-    # 2) Telegram: вебхук, команды, кнопка меню
+    # 2) Telegram: webhook, command menu (English by default, Russian for Russian-language apps), menu button
     r = tg("setWebhook", {"url": url + "/tg", "secret_token": hook, "allowed_updates": ["message", "callback_query"],
                           "max_connections": 20})
     if not r.get("ok"):
-        fail("Telegram не принял вебхук: " + str(r.get("description")))
-    tg("setMyCommands", {"commands": [
-        {"command": "news", "description": "Главные новости за сутки"},
-        {"command": "markets", "description": "Рынки сейчас"},
-        {"command": "q", "description": "Котировки: /q AAPL BTC нефть"},
-        {"command": "des", "description": "Компания: /des AAPL"},
-        {"command": "chart", "description": "График: /chart AAPL 1y"},
-        {"command": "watch", "description": "Мой список: /watch AAPL"},
-        {"command": "port", "description": "Мой портфель"},
-        {"command": "alert", "description": "Алерт: /alert AAPL > 200"},
-        {"command": "alerts", "description": "Мои алерты"},
-        {"command": "map", "description": "Карта рынка США"},
-        {"command": "eqs", "description": "Скринер акций"},
-        {"command": "earnings", "description": "Отчёты компаний на неделе"},
-        {"command": "rates", "description": "Доходности облигаций"},
-        {"command": "cb", "description": "Ставки центробанков"},
-        {"command": "wirp", "description": "Ожидания по ставке ФРС"},
-        {"command": "calendar", "description": "Календарь событий"},
-        {"command": "trades", "description": "Сделки политиков США и инсайдеров"},
-        {"command": "help", "description": "Все команды"},
-        {"command": "start", "description": "Подписаться на новости"},
-        {"command": "stop", "description": "Отписаться"},
-    ]})
+        fail("Telegram rejected the webhook: " + str(r.get("description")))
+    tg("setMyCommands", {"commands": [{"command": c, "description": en} for c, en, _ in COMMANDS]})
+    tg("setMyCommands", {"commands": [{"command": c, "description": ru} for c, _, ru in COMMANDS], "language_code": "ru"})
+    tg("setMyDescription", {"description": "Key economic news and markets: central bank rates, inflation, oil, currencies, "
+                                           "company data, a watchlist, a portfolio and alerts. /lang ru — по-русски."})
+    tg("setMyDescription", {"description": "Главные экономические новости и рынки: ставки ЦБ, инфляция, нефть, валюты, "
+                                           "данные компаний, список, портфель и алерты.", "language_code": "ru"})
     if pages.startswith("https://"):
-        tg("setChatMenuButton", {"menu_button": {"type": "web_app", "text": "Терминал",
+        tg("setChatMenuButton", {"menu_button": {"type": "web_app", "text": "Terminal",
                                                  "web_app": {"url": pages + "terminal/"}}})
     info = tg("getWebhookInfo").get("result") or {}
     if info.get("url") != url + "/tg":
-        fail("Вебхук не установился: " + json.dumps(info, ensure_ascii=False))
+        fail("The webhook was not set: " + json.dumps(info, ensure_ascii=False))
 
-    # 3) котировки через сервер
+    # 3) quotes through the server
     status, q = http("GET", url + "/api/quotes")
     stocks = len((q or {}).get("stocks") or {})
+    world = len((q or {}).get("world") or {})
     errors = (q or {}).get("errors") or []
 
-    # 4) отчёт владельцу
+    # 4) report to the owner
     owner = env("TELEGRAM_CHAT_ID")
     mark = lambda name: "✅" if env(name) else "—"
     text = (
-        "✅ <b>Сервер бота работает</b>\n"
-        f"Адрес: {url}\n"
-        "Бот мгновенно отвечает на /start и команды — круглосуточно.\n"
-        f"Подписчиков: <b>{n_subs}</b> (вы получаете новости всегда)\n\n"
-        f"{mark('FINNHUB_API_KEY')} бесплатный ключ (Finnhub) — акции США в терминале для всех"
-        + (f" (получено котировок: {stocks})" if stocks else "") + "\n"
-        f"{mark('EODHD_API_KEY')} платный ключ (EODHD) — только для вас\n"
-        f"{mark('TERMINAL_PASSWORD')} пароль владельца для терминала в браузере\n"
-        + (f"\n⚠️ {'; '.join(errors)}\n" if errors and env('FINNHUB_API_KEY') else "")
-        + "\nЧтобы терминал узнал вас и включил платные данные, откройте его кнопкой «🖥 Терминал» в этом чате."
+        "✅ <b>The bot server is running</b>\n"
+        f"Address: {url}\n"
+        "The bot answers /start and commands instantly, around the clock.\n"
+        f"Subscribers: <b>{n_subs}</b> (you always get the news)\n\n"
+        f"{mark('FINNHUB_API_KEY')} free key (Finnhub) — US stocks and company data for everyone"
+        + (f" (quotes received: {stocks})" if stocks else "") + "\n"
+        f"✅ free world quotes (Yahoo Finance){f' — {world} instruments' if world else ''}\n"
+        f"{mark('EODHD_API_KEY')} paid key (EODHD) — optional, only for you\n"
+        f"{mark('TERMINAL_PASSWORD')} owner password for the terminal in a browser\n"
+        + (f"\n⚠️ {'; '.join(errors)}\n" if errors else "")
+        + "\nLanguage: /lang ru — по-русски. Open the terminal with the «🖥 Terminal» button so it recognises you."
     )
     if owner:
         tg("sendMessage", {"chat_id": owner, "text": text, "parse_mode": "HTML", "disable_web_page_preview": True})
@@ -254,4 +267,4 @@ def config():
 
 if __name__ == "__main__":
     cmd = sys.argv[1] if len(sys.argv) > 1 else ""
-    {"prepare": prepare, "secrets": secrets, "telegram": telegram, "config": config}.get(cmd, lambda: fail("команда?"))()
+    {"prepare": prepare, "secrets": secrets, "telegram": telegram, "config": config}.get(cmd, lambda: fail("command?"))()

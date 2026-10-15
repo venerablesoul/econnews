@@ -1,120 +1,97 @@
-// Новые команды бота: компании, котировки, графики, список, портфель, алерты, скринер, карта рынка, ставки.
-import { arrow, dm, dmy, esc, fmt, money, msk, pageJSON, pagesUrl, pct, price, send, tg } from "./lib.js";
+// Bot commands: companies, quotes, charts, watchlist, portfolio, alerts, screener, market map, rates.
+// Every reply is built in the chat's language: chat.lang is set by index.js ("en" by default, "ru" after /lang ru).
+import { arrow, esc, pageJSON, pagesUrl, send, tg } from "./lib.js";
+import { L, sectorName } from "./i18n.js";
 import { chartImage, getCompany, getHistory, getQuotes, normRange, parseSymbol } from "./market.js";
 import {
   MAX_WATCH, addAlert, alertText, deleteAlert, getUser, parseAlert, portfolioView, saveUser, userAlerts,
 } from "./user.js";
 
-export const HELP_FULL = [
-  "<b>Новости и рынки</b>",
-  "/news — главное за сутки · /markets — рынки · /calendar — календарь",
-  "/trades — сделки политиков США и инсайдеров",
-  "",
-  "<b>Компании и котировки</b>",
-  "/q AAPL BTC нефть — котировки",
-  "/des AAPL — карточка компании (DES)",
-  "/fa AAPL — отчётность · /ern AAPL — отчёты и прогнозы",
-  "/anr AAPL — рейтинги аналитиков · /cn AAPL — новости компании",
-  "/hds AAPL — сделки инсайдеров",
-  "/chart AAPL 1y — график (1m 3m 6m ytd 1y 2y 5y)",
-  "",
-  "<b>Личное</b> (общее с терминалом)",
-  "/watch AAPL NVDA — добавить в список · /watch — список",
-  "/unwatch AAPL — убрать из списка",
-  "/buy AAPL 10 150 — купил 10 шт. по 150 · /sell AAPL 5",
-  "/port — портфель с прибылью",
-  "/alert AAPL > 200 · /alert BTC < 60000 · /alert нефть 5% · /alert новости ФРС",
-  "/alerts — мои алерты",
-  "",
-  "<b>Рынок целиком</b>",
-  "/map — секторы и лидеры дня · /eqs — скринер акций",
-  "/earnings — отчёты компаний на неделе",
-  "/rates — кривые доходности · /cb — ставки центробанков",
-  "/wirp — ожидания по ставке ФРС",
-  "",
-  "/stop — отписаться",
-].join("\n");
-
-const terminalBtn = (env, chatType, cmd, text = "🖥 В терминале") => {
+// a button that opens the terminal with a command (inside Telegram in private chats, as a link in groups)
+export function terminalBtn(env, chat, cmd, text) {
   const base = pagesUrl(env);
   if (!base.startsWith("https://")) return null;
-  const url = base + "terminal/?cmd=" + encodeURIComponent(cmd);
-  return chatType === "private" ? { text, web_app: { url } } : { text, url };
-};
+  const X = L(chat.lang);
+  const url = base + "terminal/?cmd=" + encodeURIComponent(cmd) + (X.ru ? "&lang=ru" : "");
+  text = text || X.t("btn_in_terminal");
+  return chat.type === "private" ? { text, web_app: { url } } : { text, url };
+}
 
 function kb(rows) {
   const r = rows.map((row) => row.filter(Boolean)).filter((row) => row.length);
   return r.length ? { inline_keyboard: r } : undefined;
 }
 
-function needSymbol(cmd) {
-  return `Укажите тикер, например: /${cmd} AAPL`;
-}
-
-function rec(anr) {
+function rec(anr, X) {
   const r = anr && anr[0];
   if (!r) return null;
   const n = r.sb + r.b + r.h + r.s + r.ss;
   if (!n) return null;
   const score = (r.sb * 5 + r.b * 4 + r.h * 3 + r.s * 2 + r.ss) / n;
-  const word = score >= 4.2 ? "активно покупать" : score >= 3.6 ? "покупать" : score >= 2.8 ? "держать" : score >= 2.2 ? "продавать" : "активно продавать";
-  return { n, buy: r.sb + r.b, hold: r.h, sell: r.s + r.ss, score, word, period: r.period };
+  const i = score >= 4.2 ? 0 : score >= 3.6 ? 1 : score >= 2.8 ? 2 : score >= 2.2 ? 3 : 4;
+  return { n, buy: r.sb + r.b, hold: r.h, sell: r.s + r.ss, score, word: X.t("rec")[i], period: r.period };
 }
 
+const qName = (x, X) => (X.ru && x.name_ru) || x.name;
+
 // ---------------------------------------------------------------------------
-// Котировки
+// Quotes
 // ---------------------------------------------------------------------------
 export async function cmdQuote(env, chat, args) {
-  if (!args.length) return send(env, chat, "Напишите тикеры через пробел: /q AAPL MSFT BTC нефть золото SBER");
+  const X = L(chat.lang);
+  if (!args.length) return send(env, chat, X.t("q_usage"));
   const q = await getQuotes(env, args);
   const lines = args.map((a) => {
     const p = parseSymbol(a);
     const x = p && q[p.key];
-    if (!x || x.px == null) return `⚪ ${esc(a)}: нет данных`;
-    const cur = x.cur === "$" ? "$" : x.cur === "₽" ? " ₽" : "";
-    return `${arrow(x.ch)} <b>${esc(x.key)}</b> ${x.name && x.name !== x.key ? "<i>" + esc(x.name) + "</i> " : ""}` +
-      `${cur === "$" ? "$" : ""}${price(x.px)}${cur === " ₽" ? " ₽" : ""} ${pct(x.ch)}`;
+    if (!x || x.px == null) return "⚪ " + esc(X.t("no_data_for", a));
+    const name = qName(x, X);
+    return `${arrow(x.ch)} <b>${esc(x.key)}</b> ${name && name !== x.key ? "<i>" + esc(name) + "</i> " : ""}` +
+      `${x.cur === "$" ? "$" : ""}${X.price(x.px)}${x.cur === "₽" ? " ₽" : ""} ${X.pct(x.ch)}`;
   });
-  return send(env, chat, "📈 <b>Котировки</b> <i>(изменение за день)</i>\n\n" + lines.join("\n"));
+  return send(env, chat, X.t("q_head") + "\n\n" + lines.join("\n"));
 }
 
 // ---------------------------------------------------------------------------
-// Компания
+// Company
 // ---------------------------------------------------------------------------
 function companyButtons(env, chat, s) {
+  const X = L(chat.lang);
   return kb([
-    [{ text: "FA отчётность", callback_data: "fa:" + s }, { text: "ERN отчёты", callback_data: "ern:" + s }, { text: "ANR аналитики", callback_data: "anr:" + s }],
-    [{ text: "CN новости", callback_data: "cn:" + s }, { text: "📈 График 1г", callback_data: "chart:" + s + ":1y" }, { text: "⭐ В список", callback_data: "w+:" + s }],
-    [terminalBtn(env, chat.type, s + " DES")],
+    [{ text: X.t("btn_fa"), callback_data: "fa:" + s }, { text: X.t("btn_ern"), callback_data: "ern:" + s }, { text: X.t("btn_anr"), callback_data: "anr:" + s }],
+    [{ text: X.t("btn_cn"), callback_data: "cn:" + s }, { text: X.t("btn_chart1y"), callback_data: "chart:" + s + ":1y" }, { text: X.t("btn_add_watch"), callback_data: "w+:" + s }],
+    [terminalBtn(env, chat, s + " DES")],
   ]);
 }
 
 export async function cmdDes(env, chat, args) {
-  if (!args[0]) return send(env, chat, needSymbol("des"));
-  const c = await getCompany(env, args[0], ["des"]);
+  const X = L(chat.lang);
+  if (!args[0]) return send(env, chat, X.t("need_symbol", "des"));
+  const c = await getCompany(env, args[0], ["des"], X.lang);
   const p = c.profile || {}, q = c.quote || {}, m = c.m || {};
   if (c.kind === "moex") {
-    const t = [`🏢 <b>${esc(p.name)}</b> · ${esc(c.s)}`, `${esc(p.type || "")} · Мосбиржа · ISIN ${esc(p.isin || "—")}`,
-      q.px != null ? `\nЦена: <b>${price(q.px)} ₽</b> ${pct(q.ch)} за день` : "", p.lot ? `Лот: ${p.lot} шт.` : "",
-      p.issue ? `Выпуск: ${fmt(p.issue, 0)} шт.` : "", p.list ? `Уровень листинга: ${p.list}` : ""].filter(Boolean).join("\n");
-    return send(env, chat, t, kb([[{ text: "📈 График 1г", callback_data: "chart:" + c.s + ":1y" }, { text: "⭐ В список", callback_data: "w+:" + c.s }], [terminalBtn(env, chat.type, c.s + " DES")]]));
+    const t = [`🏢 <b>${esc(p.name)}</b> · ${esc(c.s)}`, esc(X.t("des_moex_line", p.type || "", p.isin || "—")),
+      q.px != null ? "\n" + X.t("des_price", X.price(q.px) + " ₽", X.pct(q.ch)) : "", p.lot ? X.t("des_lot", p.lot) : "",
+      p.issue ? X.t("des_issue", X.fmt(p.issue, 0)) : "", p.list ? X.t("des_list", p.list) : ""].filter(Boolean).join("\n");
+    return send(env, chat, t, kb([[{ text: X.t("btn_chart1y"), callback_data: "chart:" + c.s + ":1y" }, { text: X.t("btn_add_watch"), callback_data: "w+:" + c.s }],
+      [terminalBtn(env, chat, c.s + " DES")]]));
   }
-  const r = rec(c.anr);
+  const r = rec(c.anr, X);
+  const when = (h) => (h === "bmo" ? X.t("bmo") : h === "amc" ? X.t("amc") : "");
   const lines = [
     `🏢 <b>${esc(p.name || c.s)}</b> · ${esc(c.s)}`,
     [p.ind, p.exch && p.exch.replace(/ - .*$/, ""), p.country].filter(Boolean).map(esc).join(" · "),
     "",
-    q.px != null ? `Цена: <b>$${price(q.px)}</b> ${pct(q.ch)} за день` : "",
-    m.h52 ? `52 недели: $${price(m.l52)} – $${price(m.h52)} · с начала года ${pct(m.rytd)}, за год ${pct(m.r52)}` : "",
-    `Капитализация: <b>${money((m.mcap || p.mcap) * 1e6)}</b>`,
-    `P/E: ${fmt(m.pe, 1)} · форвард ${fmt(m.fpe, 1)} · P/S ${fmt(m.ps, 1)} · P/B ${fmt(m.pb, 1)}`,
-    `Дивиденды: ${m.dy ? fmt(m.dy, 2) + "% ($" + fmt(m.div, 2) + " в год)" : "нет"} · бета ${fmt(m.beta, 2)}`,
-    `Рентабельность: валовая ${fmt(m.gm, 1)}%, операц. ${fmt(m.om, 1)}%, чистая ${fmt(m.nm, 1)}% · ROE ${fmt(m.roe, 0)}%`,
-    `Рост за год: выручка ${pct(m.revg, 1)}, прибыль на акцию ${pct(m.epsg, 1)}`,
-    r ? `Аналитики (${r.n}): <b>${r.word}</b> — купить ${r.buy}, держать ${r.hold}, продать ${r.sell}` : "",
-    c.next ? `Следующий отчёт: <b>${dmy(c.next.date)}</b>${c.next.hour === "bmo" ? " до открытия" : c.next.hour === "amc" ? " после закрытия" : ""}` +
-      (c.next.eps_e != null ? ` · прогноз EPS $${fmt(c.next.eps_e, 2)}` : "") : "",
-    c.peers && c.peers.length ? `Похожие: ${c.peers.slice(0, 6).map(esc).join(", ")}` : "",
+    q.px != null ? X.t("des_price", "$" + X.price(q.px), X.pct(q.ch)) : "",
+    m.h52 ? X.t("des_52w", "$" + X.price(m.l52), "$" + X.price(m.h52), X.pct(m.rytd), X.pct(m.r52)) : "",
+    X.t("des_mcap", X.money((m.mcap || p.mcap) * 1e6)),
+    X.t("des_pe", X.fmt(m.pe, 1), X.fmt(m.fpe, 1), X.fmt(m.ps, 1), X.fmt(m.pb, 1)),
+    X.t("des_div", m.dy ? X.t("des_div_val", X.fmt(m.dy, 2), X.fmt(m.div, 2)) : X.t("des_div_none"), X.fmt(m.beta, 2)),
+    X.t("des_margins", X.fmt(m.gm, 1), X.fmt(m.om, 1), X.fmt(m.nm, 1), X.fmt(m.roe, 0)),
+    X.t("des_growth", X.pct(m.revg, 1), X.pct(m.epsg, 1)),
+    r ? X.t("des_anr", r.n, r.word, r.buy, r.hold, r.sell) : "",
+    c.next ? X.t("des_next", X.dmy(c.next.date), when(c.next.hour), c.next.eps_e != null ? X.t("eps_fcst", X.fmt(c.next.eps_e, 2)) : "") : "",
+    c.peers && c.peers.length ? X.t("des_peers", c.peers.slice(0, 6).map(esc).join(", ")) : "",
     p.web ? `<a href="${esc(p.web)}">${esc(p.web.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, ""))}</a>` : "",
   ].filter((x, i, a) => x !== "" || (i > 0 && a[i - 1] !== ""));
   return send(env, chat, lines.join("\n"), companyButtons(env, chat, c.s));
@@ -126,107 +103,114 @@ function faRows(c) {
 }
 
 export async function cmdFa(env, chat, args) {
-  if (!args[0]) return send(env, chat, needSymbol("fa"));
-  const c = await getCompany(env, args[0], ["fa"]);
+  const X = L(chat.lang);
+  if (!args[0]) return send(env, chat, X.t("need_symbol", "fa"));
+  const c = await getCompany(env, args[0], ["fa"], X.lang);
   const p = c.profile || {};
   const f = faRows(c);
-  let out = `📑 <b>Отчётность ${esc(p.name || c.s)}</b> (${esc(c.s)})\n`;
+  let out = X.t("fa_head", esc(p.name || c.s), esc(c.s));
+  const block = (row) => "\n\n<b>" + X.t("quarters") + "</b>\n" + f.q.slice(0, 6).map(row).join("\n") +
+    (f.a.length ? "\n\n<b>" + X.t("years") + "</b>\n" + f.a.slice(0, 4).map(row).join("\n") : "");
   if (f.src === "sec") {
-    const row = (r) => `<b>${dmy(r.end)}</b>: выручка ${money(r.rev)}, чистая прибыль ${money(r.ni)}` +
-      (r.eps != null ? `, EPS $${fmt(r.eps, 2)}` : "") + (r.fcf != null ? `, своб. ден. поток ${money(r.fcf)}` : "");
-    out += "<i>по данным отчётов в SEC</i>\n\n<b>Кварталы</b>\n" + f.q.slice(0, 6).map(row).join("\n");
-    if (f.a.length) out += "\n\n<b>Годы</b>\n" + f.a.slice(0, 4).map(row).join("\n");
+    out += X.t("fa_sec") + block((r) => X.t("fa_row", X.dmy(r.end), X.money(r.rev), X.money(r.ni),
+      r.eps != null ? X.fmt(r.eps, 2) : "", r.fcf != null ? X.money(r.fcf) : ""));
     const last = f.a[0] || f.q[0];
-    if (last && (last.cash != null || last.debt != null)) out += `\n\nДенежные средства ${money(last.cash)} · долг ${money(last.debt)} · капитал ${money(last.eq)}`;
+    if (last && (last.cash != null || last.debt != null)) out += "\n\n" + X.t("fa_balance", X.money(last.cash), X.money(last.debt), X.money(last.eq));
   } else if (f.q.length || f.a.length) {
-    const row = (r) => `<b>${dmy(r.end)}</b>: EPS $${fmt(r.eps, 2)}, выручка на акцию $${fmt(r.salesPerShare, 2)}, маржа: валовая ${fmt(r.grossMargin * 100, 1)}%, чистая ${fmt(r.netMargin * 100, 1)}%`;
-    out += "<i>показатели на акцию (Finnhub)</i>\n\n<b>Кварталы</b>\n" + f.q.slice(0, 6).map(row).join("\n");
-    if (f.a.length) out += "\n\n<b>Годы</b>\n" + f.a.slice(0, 4).map(row).join("\n");
-  } else out += "\nОтчётность не найдена.";
-  return send(env, chat, out, kb([[terminalBtn(env, chat.type, c.s + " FA", "🖥 FA в терминале")]]));
+    out += X.t("fa_fh") + block((r) => X.t("fa_fh_row", X.dmy(r.end), X.fmt(r.eps, 2), X.fmt(r.salesPerShare, 2),
+      X.fmt(r.grossMargin * 100, 1), X.fmt(r.netMargin * 100, 1)));
+  } else out += X.t("fa_none");
+  return send(env, chat, out, kb([[terminalBtn(env, chat, c.s + " FA", X.t("btn_terminal_fn", "FA"))]]));
 }
 
 export async function cmdErn(env, chat, args) {
+  const X = L(chat.lang);
   if (!args[0]) return cmdEarnings(env, chat);
-  const c = await getCompany(env, args[0], ["ern"]);
-  let out = `📊 <b>Отчёты ${esc(c.s)}</b>\n`;
+  const c = await getCompany(env, args[0], ["ern"], X.lang);
+  let out = X.t("ern_head", esc(c.s));
   if (c.next) {
-    out += `\nСледующий: <b>${dmy(c.next.date)}</b>${c.next.hour === "bmo" ? " до открытия рынка" : c.next.hour === "amc" ? " после закрытия" : ""}` +
-      ` · Q${c.next.q} ${c.next.y}\nПрогноз: EPS $${fmt(c.next.eps_e, 2)}, выручка ${money(c.next.rev_e)}\n`;
+    const when = c.next.hour === "bmo" ? X.t("bmo_long") : c.next.hour === "amc" ? X.t("amc_long") : "";
+    out += X.t("ern_next", X.dmy(c.next.date), when, c.next.q, c.next.y, X.fmt(c.next.eps_e, 2), X.money(c.next.rev_e));
   }
   const rows = (c.ern || []).slice(0, 8).map((e) => {
     const beat = e.act != null && e.est != null ? (e.act >= e.est ? "✅" : "❌") : "⚪";
-    return `${beat} Q${e.q} ${e.y}: факт $${fmt(e.act, 2)} · прогноз $${fmt(e.est, 2)} · ${pct(e.sp, 1)}`;
+    return beat + " " + X.t("ern_row", e.q, e.y, X.fmt(e.act, 2), X.fmt(e.est, 2), X.pct(e.sp, 1));
   });
-  out += rows.length ? "\n<b>Прибыль на акцию: факт против прогноза</b>\n" + rows.join("\n") : "\nИстории отчётов нет.";
-  return send(env, chat, out, kb([[terminalBtn(env, chat.type, c.s + " ERN", "🖥 ERN в терминале")]]));
+  out += rows.length ? X.t("ern_table") + rows.join("\n") : X.t("ern_none");
+  return send(env, chat, out, kb([[terminalBtn(env, chat, c.s + " ERN", X.t("btn_terminal_fn", "ERN"))]]));
 }
 
 export async function cmdAnr(env, chat, args) {
-  if (!args[0]) return send(env, chat, needSymbol("anr"));
-  const c = await getCompany(env, args[0], ["anr"]);
-  const r = rec(c.anr);
-  if (!r) return send(env, chat, "Рейтингов аналитиков по " + esc(c.s) + " нет.");
+  const X = L(chat.lang);
+  if (!args[0]) return send(env, chat, X.t("need_symbol", "anr"));
+  const c = await getCompany(env, args[0], ["anr"], X.lang);
+  const r = rec(c.anr, X);
+  if (!r) return send(env, chat, X.t("anr_none", esc(c.s)));
   const bar = (n) => "█".repeat(Math.round(n / r.n * 20));
   const x = c.anr[0];
-  let out = `🎯 <b>Аналитики о ${esc(c.s)}</b> · ${esc(x.period.slice(0, 7))}\nКонсенсус: <b>${r.word}</b> (${fmt(r.score, 1)} из 5, ${r.n} аналитиков)\n\n` +
-    `<code>Активно покупать ${String(x.sb).padStart(3)} ${bar(x.sb)}\nПокупать         ${String(x.b).padStart(3)} ${bar(x.b)}\n` +
-    `Держать          ${String(x.h).padStart(3)} ${bar(x.h)}\nПродавать        ${String(x.s).padStart(3)} ${bar(x.s)}\n` +
-    `Активно продав.  ${String(x.ss).padStart(3)} ${bar(x.ss)}</code>`;
+  const names = X.t("anr_rows");
+  const vals = [x.sb, x.b, x.h, x.s, x.ss];
+  let out = X.t("anr_head", esc(c.s), esc(x.period.slice(0, 7)), r.word, X.fmt(r.score, 1), r.n) +
+    "<code>" + names.map((nm, i) => `${nm} ${String(vals[i]).padStart(3)} ${bar(vals[i])}`).join("\n") + "</code>";
   if (c.anr.length > 1) {
     const old = c.anr[c.anr.length - 1], on = old.sb + old.b + old.h + old.s + old.ss;
-    if (on) out += `\n\n${old.period.slice(0, 7)}: купить ${old.sb + old.b}, держать ${old.h}, продать ${old.s + old.ss}`;
+    if (on) out += "\n\n" + X.t("anr_old", old.period.slice(0, 7), old.sb + old.b, old.h, old.s + old.ss);
   }
-  return send(env, chat, out, kb([[terminalBtn(env, chat.type, c.s + " ANR", "🖥 ANR в терминале")]]));
+  return send(env, chat, out, kb([[terminalBtn(env, chat, c.s + " ANR", X.t("btn_terminal_fn", "ANR"))]]));
 }
 
 export async function cmdCn(env, chat, args) {
-  if (!args[0]) return send(env, chat, needSymbol("cn"));
-  const c = await getCompany(env, args[0], ["cn"]);
+  const X = L(chat.lang);
+  if (!args[0]) return send(env, chat, X.t("need_symbol", "cn"));
+  const c = await getCompany(env, args[0], ["cn"], X.lang);
   const items = (c.cn || []).slice(0, 8);
-  if (!items.length) return send(env, chat, "Свежих новостей по " + esc(c.s) + " нет.");
-  const out = items.map((n) => `▪️ <b>${esc(n.h)}</b>\n<i>${esc(n.src)} · ${msk(n.t * 1000, { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" })}</i>` +
-    (/^https?:\/\//.test(n.url || "") ? ` · <a href="${esc(n.url)}">читать →</a>` : ""));
-  const untranslated = items.every((n) => n.h === n.en);
-  return send(env, chat, `📰 <b>Новости ${esc(c.s)}</b>` + (untranslated ? "\n<i>переводчик сейчас не отвечает серверу — заголовки на английском; в терминале они переводятся</i>" : "") +
-    "\n\n" + out.join("\n\n"), kb([[terminalBtn(env, chat.type, c.s + " CN", "🖥 CN в терминале")]]));
+  if (!items.length) return send(env, chat, X.t("cn_none", esc(c.s)));
+  const out = items.map((n) => `▪️ <b>${esc(n.h)}</b>\n<i>${esc(n.src)} · ${X.date(n.t * 1000, { day: "2-digit", month: "short", hour: "2-digit", minute: "2-digit" })}</i>` +
+    (/^https?:\/\//.test(n.url || "") ? ` · <a href="${esc(n.url)}">${X.t("read")}</a>` : ""));
+  const untranslated = X.ru && items.every((n) => n.h === n.en);
+  return send(env, chat, X.t("cn_head", esc(c.s)) + (untranslated ? X.t("cn_untranslated") : "") + "\n\n" + out.join("\n\n"),
+    kb([[terminalBtn(env, chat, c.s + " CN", X.t("btn_terminal_fn", "CN"))]]));
 }
 
 export async function cmdHds(env, chat, args) {
-  if (!args[0]) return send(env, chat, needSymbol("hds"));
-  const c = await getCompany(env, args[0], ["hds"]);
-  const rows = (c.ins || []).slice(0, 10).map((t) => `${t.code === "P" ? "🟢 покупка" : "🔴 продажа"} ${fmt(Math.abs(t.ch), 0)} акций` +
-    (t.px ? ` по $${fmt(t.px, 2)} (${money(Math.abs(t.ch) * t.px)})` : "") + `\n<i>${esc(t.name)} · ${dmy(t.date)}</i>`);
-  return send(env, chat, `💼 <b>Сделки инсайдеров ${esc(c.s)}</b>\n<i>крупнейшие держатели (фонды) — только в платных источниках; здесь — сделки руководства из формы 4 SEC</i>\n\n` +
-    (rows.join("\n\n") || "Сделок на открытом рынке за последнее время нет."));
+  const X = L(chat.lang);
+  if (!args[0]) return send(env, chat, X.t("need_symbol", "hds"));
+  const c = await getCompany(env, args[0], ["hds"], X.lang);
+  const rows = (c.ins || []).slice(0, 10).map((t) => X.t("hds_row", t.code === "P", X.fmt(Math.abs(t.ch), 0),
+    t.px ? X.fmt(t.px, 2) : "", t.px ? X.money(Math.abs(t.ch) * t.px) : "") + `\n<i>${esc(t.name)} · ${X.dmy(t.date)}</i>`);
+  return send(env, chat, X.t("hds_head", esc(c.s)) + (rows.join("\n\n") || X.t("hds_none")),
+    kb([[terminalBtn(env, chat, c.s + " HDS", X.t("btn_terminal_fn", "HDS"))]]));
 }
 
 // ---------------------------------------------------------------------------
-// График картинкой
+// Chart picture
 // ---------------------------------------------------------------------------
 export async function cmdChart(env, chat, args) {
-  if (!args[0]) return send(env, chat, "Например: /chart AAPL 1y · /chart BTC 3m · /chart нефть 6m · /chart SBER 1y");
+  const X = L(chat.lang);
+  if (!args[0]) return send(env, chat, X.t("chart_usage"));
   const range = normRange(args[1] || "1y");
   const h = await getHistory(env, args[0], range);
   const n = h.c.length;
   const ch = (h.c[n - 1] / h.c[0] - 1) * 100;
-  const ranges = { "1m": "1 мес.", "3m": "3 мес.", "6m": "6 мес.", ytd: "с начала года", "1y": "1 год", "2y": "2 года", "5y": "5 лет" };
-  const caption = `📈 <b>${esc(h.s)}</b> ${esc(h.name && h.name !== h.s ? h.name : "")}\n${ranges[range]}: ${pct(ch)} · сейчас ${price(h.c[n - 1])}` +
-    ` · мин. ${price(Math.min(...h.l.filter((x) => x != null)))} · макс. ${price(Math.max(...h.h.filter((x) => x != null)))}`;
+  const ranges = X.t("ranges");
+  const name = (X.ru && h.name_ru) || h.name;
+  const caption = X.t("chart_cap", esc(h.s), esc(name && name !== h.s ? name : ""), ranges[range], X.pct(ch), X.price(h.c[n - 1]),
+    X.price(Math.min(...h.l.filter((x) => x != null))), X.price(Math.max(...h.h.filter((x) => x != null))));
   const buttons = kb([["1m", "6m", "1y", "5y"].map((r) => ({ text: r === range ? "• " + r + " •" : r, callback_data: "chart:" + h.s + ":" + r })),
-    [terminalBtn(env, chat.type, h.s + " GP", "🖥 Открыть в терминале")]]);
+    [terminalBtn(env, chat, h.s + " GP", X.t("btn_open_terminal"))]]);
   try {
-    const url = await chartImage(h, `${h.s} · ${ranges[range]} · ${pct(ch)}`);
+    const url = await chartImage(h, `${h.s} · ${ranges[range]} · ${X.pct(ch)}`, X.lang);
     const r = await tg(env, "sendPhoto", { chat_id: chat.id, photo: url, caption, parse_mode: "HTML", reply_markup: buttons });
     if (r.ok) return r;
-  } catch (e) { /* без картинки — текстом */ }
+  } catch (e) { /* no picture — send as text */ }
   return send(env, chat, caption, buttons);
 }
 
 // ---------------------------------------------------------------------------
-// Список наблюдения
+// Watchlist
 // ---------------------------------------------------------------------------
 export async function cmdWatch(env, chat, args, remove = false) {
+  const X = L(chat.lang);
   const u = await getUser(env, chat.id);
   if (args.length) {
     const keys = args.map((a) => parseSymbol(a)).filter(Boolean).map((p) => p.key);
@@ -234,8 +218,8 @@ export async function cmdWatch(env, chat, args, remove = false) {
     if (remove) u.w = u.w.filter((s) => !keys.includes(s));
     else for (const k of keys) if (!u.w.includes(k)) u.w.push(k);
     const saved = await saveUser(env, chat.id, u);
-    const note = (remove ? "Убрал: " : "Добавил: ") + (keys.join(", ") || "—") + (bad.length ? `\nНе понял: ${bad.map(esc).join(", ")}` : "") +
-      (saved.w.length >= MAX_WATCH ? `\nВ списке максимум ${MAX_WATCH} инструментов.` : "");
+    const note = X.t(remove ? "w_removed" : "w_added") + (keys.join(", ") || "—") + (bad.length ? "\n" + X.t("w_bad") + bad.join(", ") : "") +
+      (saved.w.length >= MAX_WATCH ? "\n" + X.t("w_max", MAX_WATCH) : "");
     await send(env, chat, esc(note));
     return watchView(env, chat, saved.w);
   }
@@ -243,159 +227,177 @@ export async function cmdWatch(env, chat, args, remove = false) {
 }
 
 async function watchView(env, chat, w) {
-  if (!w.length) return send(env, chat, "⭐ Список наблюдения пуст.\nДобавить: /watch AAPL NVDA BTC нефть SBER");
+  const X = L(chat.lang);
+  if (!w.length) return send(env, chat, X.t("w_empty"));
   const q = await getQuotes(env, w);
   const lines = w.map((s) => {
     const x = q[s];
-    return x && x.px != null ? `${arrow(x.ch)} <b>${esc(s)}</b> ${price(x.px)}${x.cur === "₽" ? " ₽" : ""} ${pct(x.ch)}` : `⚪ <b>${esc(s)}</b> —`;
+    return x && x.px != null ? `${arrow(x.ch)} <b>${esc(s)}</b> ${X.price(x.px)}${x.cur === "₽" ? " ₽" : ""} ${X.pct(x.ch)}` : `⚪ <b>${esc(s)}</b> —`;
   });
-  return send(env, chat, "⭐ <b>Мой список</b> <i>(изменение за день)</i>\n\n" + lines.join("\n") + "\n\nУбрать: /unwatch ТИКЕР",
-    kb([[{ text: "🔄 Обновить", callback_data: "watch" }, terminalBtn(env, chat.type, "W", "🖥 Список в терминале")]]));
+  return send(env, chat, X.t("w_head") + "\n\n" + lines.join("\n") + "\n\n" + X.t("w_remove_hint"),
+    kb([[{ text: X.t("btn_refresh"), callback_data: "watch" }, terminalBtn(env, chat, "W", X.t("btn_t_watch"))]]));
 }
 
 // ---------------------------------------------------------------------------
-// Портфель
+// Portfolio
 // ---------------------------------------------------------------------------
+const num = (s) => Number(String(s == null ? "" : s).replace(",", "."));
+
 export async function cmdPort(env, chat, args, mode) {
+  const X = L(chat.lang);
   const u = await getUser(env, chat.id);
   if (mode === "buy" || mode === "sell") {
     const p = parseSymbol(args[0]);
-    const qty = Number(String(args[1] || "").replace(",", "."));
-    let px = args[2] != null ? Number(String(args[2]).replace(",", ".")) : null;
-    if (!p || !isFinite(qty) || qty <= 0) {
-      return send(env, chat, mode === "buy" ? "Например: /buy AAPL 10 150 — 10 акций по $150 (без цены — по текущей)" : "Например: /sell AAPL 5");
-    }
-    if (px == null || !isFinite(px)) {
+    const qty = num(args[1]);
+    let px = args[2] != null ? num(args[2]) : null;
+    if (!p || !isFinite(qty) || qty <= 0) return send(env, chat, X.t(mode === "buy" ? "buy_usage" : "sell_usage"));
+    if (px == null || !isFinite(px) || px < 0) {
       const q = (await getQuotes(env, [p.key]))[p.key];
-      if (!q || q.px == null) return send(env, chat, "Не удалось получить цену " + esc(p.key) + " — укажите её: /" + mode + " " + esc(p.key) + " " + qty + " ЦЕНА");
+      if (!q || q.px == null) return send(env, chat, esc(X.t("no_price", p.key, mode, qty)));
       px = q.px;
     }
     const pos = u.p.find((x) => x.s === p.key);
     if (mode === "buy") {
       if (pos) { const nq = pos.q + qty; pos.c = (pos.q * pos.c + qty * px) / nq; pos.q = nq; } else u.p.push({ s: p.key, q: qty, c: px });
     } else {
-      if (!pos) return send(env, chat, "В портфеле нет " + esc(p.key));
+      if (!pos) return send(env, chat, esc(X.t("not_in_port", p.key)));
       pos.q -= qty;
       if (pos.q <= 1e-9) u.p = u.p.filter((x) => x !== pos);
     }
     await saveUser(env, chat.id, u);
-    await send(env, chat, `${mode === "buy" ? "🟢 Куплено" : "🔴 Продано"}: ${esc(p.key)} × ${fmt(qty, qty % 1 ? 4 : 0)} по ${price(px)}`);
+    await send(env, chat, X.t(mode === "buy" ? "bought" : "sold", esc(p.key), X.fmt(qty, qty % 1 ? 4 : 0), X.price(px)));
   } else if (mode === "clear") {
     u.p = [];
     await saveUser(env, chat.id, u);
-    return send(env, chat, "Портфель очищен.");
+    return send(env, chat, X.t("port_cleared"));
   }
   const v = await portfolioView(env, u.p);
-  if (!v.rows.length) return send(env, chat, "💼 Портфель пуст.\nДобавить позицию: /buy AAPL 10 150 (тикер, количество, цена покупки)");
-  const lines = v.rows.map((r) => `${arrow(r.pl)} <b>${esc(r.s)}</b> × ${fmt(r.q, r.q % 1 ? 4 : 0)}: ${r.val != null ? money(r.val, r.cur === "₽" ? "₽" : "$") : "—"}` +
-    (r.pl != null ? ` · ${r.pl >= 0 ? "+" : "−"}${money(Math.abs(r.pl), r.cur === "₽" ? "₽" : "$").replace(/^−/, "")} (${pct(r.plp, 1)})` : "") +
-    `\n<i>куплено по ${price(r.c)}, сейчас ${price(r.px)} (${pct(r.ch)} за день)</i>`);
-  const mixed = new Set(v.rows.map((r) => r.cur === "₽" ? "₽" : "$")).size > 1;
-  const total = mixed ? "\n<i>в портфеле рубли и доллары — общий итог не считаю</i>" :
-    `\n<b>Итого: ${money(v.value)}</b> · прибыль ${pct(v.plp, 1)} (${money(v.pl)}) · за день ${pct(v.dayp)}`;
-  return send(env, chat, "💼 <b>Портфель</b>\n\n" + lines.join("\n\n") + "\n" + total + "\n\nКупить: /buy ТИКЕР КОЛ-ВО ЦЕНА · продать: /sell ТИКЕР КОЛ-ВО",
-    kb([[{ text: "🔄 Обновить", callback_data: "port" }, terminalBtn(env, chat.type, "PORT", "🖥 Портфель в терминале")]]));
+  if (!v.rows.length) return send(env, chat, X.t("port_empty"));
+  const cur = (r) => (r.cur === "₽" ? "₽" : "$");
+  const lines = v.rows.map((r) => `${arrow(r.pl)} <b>${esc(r.s)}</b> × ${X.fmt(r.q, r.q % 1 ? 4 : 0)}: ${r.val != null ? X.money(r.val, cur(r)) : "—"}` +
+    (r.pl != null ? ` · ${r.pl >= 0 ? "+" : "−"}${X.money(Math.abs(r.pl), cur(r))} (${X.pct(r.plp, 1)})` : "") +
+    "\n<i>" + X.t("port_row_sub", X.price(r.c), r.px != null ? X.price(r.px) : "—", X.pct(r.ch)) + "</i>");
+  const mixed = new Set(v.rows.map(cur)).size > 1;
+  const total = mixed ? "\n" + X.t("port_mixed") :
+    "\n" + X.t("port_total", X.money(v.value, cur(v.rows[0])), X.pct(v.plp, 1), (v.pl < 0 ? "−" : "") + X.money(Math.abs(v.pl), cur(v.rows[0])), X.pct(v.dayp));
+  return send(env, chat, X.t("port_head") + "\n\n" + lines.join("\n\n") + "\n" + total + "\n\n" + X.t("port_hint"),
+    kb([[{ text: X.t("btn_refresh"), callback_data: "port" }, terminalBtn(env, chat, "PORT", X.t("btn_t_port"))]]));
 }
 
 // ---------------------------------------------------------------------------
-// Алерты
+// Alerts
 // ---------------------------------------------------------------------------
 export async function cmdAlert(env, chat, rest) {
-  if (!rest) return send(env, chat, "🔔 <b>Алерты</b> — бот пришлёт сообщение, когда условие выполнится (проверка каждые 2 минуты).\n\n" +
-    "/alert AAPL > 200 — цена выше\n/alert BTC < 60000 — цена ниже\n/alert нефть 5% — изменение за день больше 5%\n" +
-    "/alert новости ФРС — новость с этим словом\n\n/alerts — мои алерты");
-  const m = /^(?:del|удалить|delete|rm)\s+(\d+)$/i.exec(rest.trim());
+  const X = L(chat.lang);
+  if (!rest) return send(env, chat, X.t("alert_help"));
+  const m = /^(?:del|delete|rm|удалить)\s+[#№]?(\d+)$/i.exec(rest.trim());
   if (m) {
     const ok = await deleteAlert(env, chat.id, m[1]);
-    return send(env, chat, ok ? "Алерт удалён." : "Нет такого алерта. Список: /alerts");
+    return send(env, chat, X.t(ok ? "alert_deleted" : "alert_no_such"));
   }
   const spec = parseAlert(rest);
-  if (!spec) return send(env, chat, "Не понял. Примеры: /alert AAPL > 200 · /alert BTC < 60000 · /alert нефть 5% · /alert новости ФРС");
+  if (!spec) return send(env, chat, X.t("alert_bad"));
   try {
-    const a = await addAlert(env, chat.id, spec);
-    return send(env, chat, "✅ Алерт №" + a.id + ": " + alertText(a) + "\nСписок: /alerts");
+    const a = await addAlert(env, chat.id, spec, X.lang);
+    return send(env, chat, X.t("alert_set", a.id, alertText(a, X.lang)));
   } catch (e) {
-    return send(env, chat, "Не получилось: " + esc(e.message || e));
+    return send(env, chat, esc(X.t("failed_short", e.message || e)));
   }
 }
 
 export async function cmdAlerts(env, chat) {
+  const X = L(chat.lang);
   const list = await userAlerts(env, chat.id);
-  if (!list.length) return send(env, chat, "🔔 Алертов нет. Поставить: /alert AAPL > 200");
-  return send(env, chat, "🔔 <b>Мои алерты</b>\n\n" + list.map((a) => `№${a.id} · ${alertText(a)}`).join("\n"),
-    kb(list.slice(0, 20).map((a) => [{ text: "✕ удалить №" + a.id + " · " + alertText(a).replace(/<[^>]+>/g, "").replace(/&[a-z]+;/g, "").slice(0, 40), callback_data: "adel:" + a.id }])));
+  if (!list.length) return send(env, chat, X.t("alert_none"));
+  const plain = (a) => alertText(a, X.lang).replace(/<[^>]+>/g, "").replace(/&[a-z]+;/g, "").slice(0, 40);
+  return send(env, chat, X.t("alerts_head") + "\n\n" + list.map((a) => `${X.t("a_num", a.id)} · ${alertText(a, X.lang)}`).join("\n"),
+    kb(list.slice(0, 20).map((a) => [{ text: X.t("btn_alert_del", a.id, plain(a)), callback_data: "adel:" + a.id }])));
 }
 
 // ---------------------------------------------------------------------------
-// Рынок целиком: скринер, карта, отчёты
+// Whole market: screener, map, earnings
 // ---------------------------------------------------------------------------
 export const EQS_PRESETS = {
-  leaders: ["🚀 Лидеры дня", (a) => a.filter((r) => r.ch != null).sort((x, y) => y.ch - x.ch)],
-  losers: ["📉 Аутсайдеры дня", (a) => a.filter((r) => r.ch != null).sort((x, y) => x.ch - y.ch)],
-  value: ["💰 Дешёвые по P/E", (a) => a.filter((r) => r.pe > 0).sort((x, y) => x.pe - y.pe)],
-  div: ["🏦 Дивидендные", (a) => a.filter((r) => r.dy > 0).sort((x, y) => y.dy - x.dy)],
-  growth: ["📈 Быстрый рост выручки", (a) => a.filter((r) => r.revg != null).sort((x, y) => y.revg - x.revg)],
-  big: ["🏛 Крупнейшие", (a) => a.filter((r) => r.mcap).sort((x, y) => y.mcap - x.mcap)],
-  year: ["🏆 Лучшие за год", (a) => a.filter((r) => r.r52 != null).sort((x, y) => y.r52 - x.r52)],
-  low52: ["🧊 У минимума за год", (a) => a.filter((r) => r.px && r.l52).sort((x, y) => x.px / x.l52 - y.px / y.l52)],
+  leaders: (a) => a.filter((r) => r.ch != null).sort((x, y) => y.ch - x.ch),
+  losers: (a) => a.filter((r) => r.ch != null).sort((x, y) => x.ch - y.ch),
+  value: (a) => a.filter((r) => r.pe > 0).sort((x, y) => x.pe - y.pe),
+  div: (a) => a.filter((r) => r.dy > 0).sort((x, y) => y.dy - x.dy),
+  growth: (a) => a.filter((r) => r.revg != null).sort((x, y) => y.revg - x.revg),
+  big: (a) => a.filter((r) => r.mcap).sort((x, y) => y.mcap - x.mcap),
+  year: (a) => a.filter((r) => r.r52 != null).sort((x, y) => y.r52 - x.r52),
+  low52: (a) => a.filter((r) => r.px && r.l52).sort((x, y) => x.px / x.l52 - y.px / y.l52),
 };
-const EQS_ALIAS = { "лидеры": "leaders", "аутсайдеры": "losers", "дешевые": "value", "дешёвые": "value", "дивиденды": "div",
-  "дивидендные": "div", "рост": "growth", "крупнейшие": "big", "год": "year", "минимум": "low52" };
+const EQS_ALIAS = { gainers: "leaders", top: "leaders", cheap: "value", pe: "value", dividends: "div", dividend: "div",
+  largest: "big", biggest: "big", low: "low52", "лидеры": "leaders", "аутсайдеры": "losers", "дешевые": "value", "дешёвые": "value",
+  "дивиденды": "div", "дивидендные": "div", "рост": "growth", "крупнейшие": "big", "год": "year", "минимум": "low52" };
 
 export async function cmdEqs(env, chat, args) {
-  const key = EQS_PRESETS[args[0]] ? args[0] : EQS_ALIAS[(args[0] || "").toLowerCase()];
+  const X = L(chat.lang);
+  const names = X.t("eqs_presets");
+  const a0 = (args[0] || "").toLowerCase();
+  const key = EQS_PRESETS[a0] ? a0 : EQS_ALIAS[a0];
   if (!key) {
     const keys = Object.keys(EQS_PRESETS);
-    return send(env, chat, "🔎 <b>Скринер акций США</b> (≈110 крупнейших компаний)\nВыберите отбор:",
-      kb([...Array(Math.ceil(keys.length / 2)).keys()].map((i) => keys.slice(i * 2, i * 2 + 2).map((k) => ({ text: EQS_PRESETS[k][0], callback_data: "eqs:" + k })))
-        .concat([[terminalBtn(env, chat.type, "EQS", "🖥 Скринер с фильтрами")]])));
+    return send(env, chat, X.t("eqs_choose"),
+      kb([...Array(Math.ceil(keys.length / 2)).keys()].map((i) => keys.slice(i * 2, i * 2 + 2).map((k) => ({ text: names[k], callback_data: "eqs:" + k })))
+        .concat([[terminalBtn(env, chat, "EQS", X.t("btn_eqs_filters"))]])));
   }
   const d = await pageJSON(env, "stocks.json", 120);
-  const rows = EQS_PRESETS[key][1](d.stocks || []).slice(0, 15);
-  const lines = rows.map((r, i) => `${i + 1}. <b>${esc(r.s)}</b> ${esc(r.n)}: $${price(r.px)} ${pct(r.ch)}` +
-    ` · P/E ${fmt(r.pe, 1)}` + (r.dy ? ` · див. ${fmt(r.dy, 1)}%` : "") + (key === "growth" ? ` · выручка ${pct(r.revg, 0)}` : "") +
-    (key === "year" ? ` · за год ${pct(r.r52, 0)}` : "") + (key === "big" ? ` · ${money(r.mcap * 1e6)}` : ""));
-  return send(env, chat, `🔎 <b>${EQS_PRESETS[key][0]}</b>\n\n` + (lines.join("\n") || "Нет данных") +
-    `\n\n<i>обновлено ${d.updated ? msk(d.updated, { hour: "2-digit", minute: "2-digit" }) : "?"} МСК</i>`,
-    kb([[{ text: "← Другие отборы", callback_data: "eqs" }, terminalBtn(env, chat.type, "EQS", "🖥 Скринер в терминале")]]));
+  const ex = X.t("eqs_row_extra");
+  const rows = EQS_PRESETS[key](d.stocks || []).slice(0, 15);
+  const lines = rows.map((r, i) => `${i + 1}. <b>${esc(r.s)}</b> ${esc(r.n)}: $${X.price(r.px)} ${X.pct(r.ch)}` +
+    ` · ${ex.pe} ${X.fmt(r.pe, 1)}` + (r.dy ? ` · ${ex.div} ${X.fmt(r.dy, 1)}%` : "") + (key === "growth" ? ` · ${ex.rev} ${X.pct(r.revg, 0)}` : "") +
+    (key === "year" ? ` · ${ex.year} ${X.pct(r.r52, 0)}` : "") + (key === "big" ? ` · ${X.money(r.mcap * 1e6)}` : ""));
+  return send(env, chat, `🔎 <b>${names[key]}</b>\n\n` + (lines.join("\n") || X.t("nodata")) +
+    X.t("eqs_updated", d.updated ? X.date(d.updated, { hour: "2-digit", minute: "2-digit" }) : "?"),
+    kb([[{ text: X.t("btn_other_eqs"), callback_data: "eqs" }, terminalBtn(env, chat, "EQS", X.t("btn_t_eqs"))]]));
 }
 
 export async function cmdMap(env, chat) {
+  const X = L(chat.lang);
   const d = await pageJSON(env, "stocks.json", 120);
   const sec = (d.sectors || []).filter((s) => s.ch != null).sort((a, b) => b.ch - a.ch);
   const rows = (d.stocks || []).filter((r) => r.ch != null);
   const top = [...rows].sort((a, b) => b.ch - a.ch).slice(0, 5), bot = [...rows].sort((a, b) => a.ch - b.ch).slice(0, 5);
   const bar = (c) => (c >= 0 ? "🟩" : "🟥").repeat(Math.min(5, Math.max(1, Math.round(Math.abs(c) / 0.5))));
-  const out = "🗺 <b>Акции США: секторы за день</b>\n<i>взвешено по капитализации</i>\n\n" +
-    sec.map((s) => `${bar(s.ch)} ${esc(s.sec)} ${pct(s.ch)}`).join("\n") +
-    "\n\n🚀 <b>Лидеры:</b> " + top.map((r) => `${esc(r.s)} ${pct(r.ch, 1)}`).join(", ") +
-    "\n📉 <b>Аутсайдеры:</b> " + bot.map((r) => `${esc(r.s)} ${pct(r.ch, 1)}`).join(", ");
-  return send(env, chat, out, kb([[terminalBtn(env, chat.type, "IMAP", "🖥 Тепловая карта")]]));
+  const out = X.t("map_head") + "\n\n" +
+    sec.map((s) => `${bar(s.ch)} ${esc(sectorName(s.sec, X.lang))} ${X.pct(s.ch)}`).join("\n") +
+    "\n\n" + X.t("map_up") + top.map((r) => `${esc(r.s)} ${X.pct(r.ch, 1)}`).join(", ") +
+    "\n" + X.t("map_down") + bot.map((r) => `${esc(r.s)} ${X.pct(r.ch, 1)}`).join(", ");
+  return send(env, chat, out, kb([[terminalBtn(env, chat, "IMAP", X.t("btn_t_map"))]]));
 }
 
 export async function cmdEarnings(env, chat) {
+  const X = L(chat.lang);
   const d = await pageJSON(env, "stocks.json", 300);
   const today = new Date().toISOString().slice(0, 10);
   const until = new Date(Date.now() + 8 * 864e5).toISOString().slice(0, 10);
   const ev = (d.earnings || []).filter((e) => e.d >= today && e.d <= until);
-  if (!ev.length) return send(env, chat, "📊 В ближайшую неделю отчётов крупнейших компаний США нет.");
-  let last = "", out = "📊 <b>Отчёты крупнейших компаний США</b>";
+  if (!ev.length) return send(env, chat, X.t("earn_none"));
+  let last = "", out = X.t("earn_head");
   for (const e of ev.slice(0, 40)) {
-    if (e.d !== last) { out += `\n\n<b>${esc(new Date(e.d + "T12:00:00Z").toLocaleDateString("ru-RU", { weekday: "long", day: "numeric", month: "long" }))}</b>`; last = e.d; }
-    out += `\n${e.h === "bmo" ? "☀️" : e.h === "amc" ? "🌙" : "▪️"} <b>${esc(e.s)}</b> ${esc(e.n)}` + (e.eps_e != null ? ` · EPS прогноз $${fmt(e.eps_e, 2)}` : "");
+    if (e.d !== last) {
+      const day = new Date(e.d + "T12:00:00Z").toLocaleDateString(X.ru ? "ru-RU" : "en-GB", { weekday: "long", day: "numeric", month: "long", timeZone: "UTC" });
+      out += `\n\n<b>${esc(day)}</b>`;
+      last = e.d;
+    }
+    out += `\n${e.h === "bmo" ? "☀️" : e.h === "amc" ? "🌙" : "▪️"} <b>${esc(e.s)}</b> ${esc(e.n)}` + (e.eps_e != null ? X.t("earn_eps", X.fmt(e.eps_e, 2)) : "");
   }
-  return send(env, chat, out + "\n\n☀️ до открытия · 🌙 после закрытия\nПодробнее: /ern ТИКЕР");
+  return send(env, chat, out + "\n\n" + X.t("earn_legend"));
 }
 
 // ---------------------------------------------------------------------------
-// Ставки
+// Rates
 // ---------------------------------------------------------------------------
 function curvePoint(c, lbl) {
   const i = c.t.indexOf(lbl);
   return i < 0 ? null : { y: c.y[i], w: c.w ? c.w[i] : null };
 }
 
+const localName = (x, X) => (X.ru ? x.name_ru || x.name : x.name);
+
 export async function cmdRates(env, chat) {
+  const X = L(chat.lang);
   const d = await pageJSON(env, "rates.json", 600);
   const lines = [];
   for (const code of ["US", "DE", "UK", "JP", "RU"]) {
@@ -403,51 +405,53 @@ export async function cmdRates(env, chat) {
     if (!c) continue;
     const pts = ["2Y", "10Y", "30Y"].map((l) => [l, curvePoint(c, l)]).filter(([, p]) => p);
     const ten = curvePoint(c, "10Y"), two = curvePoint(c, "2Y");
-    const parts = pts.map(([l, p]) => `${l} <b>${fmt(p.y, 2)}%</b>` + (p.w != null ? ` (${p.y - p.w >= 0 ? "+" : "−"}${Math.round(Math.abs(p.y - p.w) * 100)})` : ""));
-    lines.push(`${c.flag} <b>${esc(c.name)}</b> · ${dm(c.date)}\n${parts.join(" · ")}` +
-      (ten && two ? `\n<i>спред 10Y−2Y: ${Math.round((ten.y - two.y) * 100)} б.п.${ten.y < two.y ? " — инверсия" : ""}</i>` : ""));
+    const parts = pts.map(([l, p]) => `${l} <b>${X.fmt(p.y, 2)}%</b>` + (p.w != null ? ` (${p.y - p.w >= 0 ? "+" : "−"}${Math.round(Math.abs(p.y - p.w) * 100)})` : ""));
+    lines.push(`${c.flag} <b>${esc(localName(c, X))}</b> · ${X.dm(c.date)}\n${parts.join(" · ")}` +
+      (ten && two ? "\n" + X.t("rates_spread", Math.round((ten.y - two.y) * 100), ten.y < two.y) : ""));
   }
-  return send(env, chat, "📐 <b>Доходности гособлигаций</b>\n<i>в скобках — изменение за неделю, б.п.</i>\n\n" + (lines.join("\n\n") || "Данных пока нет."),
-    kb([[terminalBtn(env, chat.type, "GC", "🖥 Кривые в терминале")]]));
+  return send(env, chat, X.t("rates_head") + "\n\n" + (lines.join("\n\n") || X.t("rates_none")),
+    kb([[terminalBtn(env, chat, "GC", X.t("btn_t_curves"))]]));
 }
 
 export async function cmdCb(env, chat) {
+  const X = L(chat.lang);
   const d = await pageJSON(env, "rates.json", 600);
-  const rows = (d.cb || []).map((c) => `${c.flag} ${esc(c.name)}: <b>${c.lo != null ? fmt(c.lo, 2) + "–" + fmt(c.hi, 2) : fmt(c.rate, 2)}%</b>` +
-    (c.prev != null ? ` <i>(было ${fmt(c.prev, 2)}%${c.since ? ", с " + dmy(c.since) : ""})</i>` : ""));
-  return send(env, chat, "🏦 <b>Ставки центробанков</b>\n\n" + (rows.join("\n") || "Данных пока нет.") + "\n\n<i>Источники: BIS, ФРБ Нью-Йорка, ЦБ РФ</i>",
-    kb([[terminalBtn(env, chat.type, "CB", "🖥 В терминале")]]));
+  const rows = (d.cb || []).map((c) => `${c.flag} ${esc(localName(c, X))}: <b>${c.lo != null ? X.fmt(c.lo, 2) + "–" + X.fmt(c.hi, 2) : X.fmt(c.rate, 2)}%</b>` +
+    (c.prev != null ? X.t("cb_was", X.fmt(c.prev, 2), c.since ? X.dmy(c.since) : "") : ""));
+  return send(env, chat, X.t("cb_head") + "\n\n" + (rows.join("\n") || X.t("rates_none")) + "\n\n" + X.t("cb_src"),
+    kb([[terminalBtn(env, chat, "CB")]]));
 }
 
 export async function cmdWirp(env, chat) {
+  const X = L(chat.lang);
   const d = await pageJSON(env, "rates.json", 600);
   const w = d.wirp;
-  if (!w || !w.meetings || !w.meetings.length) return send(env, chat, "Ожиданий по ставке ФРС пока нет — данные появятся после следующего обновления.");
+  if (!w || !w.meetings || !w.meetings.length) return send(env, chat, X.t("wirp_none"));
+  const pn = X.t("wirp_probs");
   const rows = w.meetings.map((m) => {
-    const p = [m.hike50 ? `повышение на 0,5: ${m.hike50}%` : "", m.hike ? `повышение: ${m.hike}%` : "", m.hold ? `без изменений: ${m.hold}%` : "",
-      m.cut ? `снижение: ${m.cut}%` : "", m.cut50 ? `снижение на 0,5: ${m.cut50}%` : ""].filter(Boolean).join(", ");
-    return `<b>${dmy(m.date)}</b>: ожидаемая ставка ${fmt(m.after, 2)}% (${m.cum_bp >= 0 ? "+" : "−"}${fmt(Math.abs(m.cum_bp), 0)} б.п. к текущей)\n<i>${p}</i>`;
+    const p = ["hike50", "hike", "hold", "cut", "cut50"].filter((k) => m[k]).map((k) => `${pn[k]}: ${m[k]}%`).join(", ");
+    return X.t("wirp_row", X.dmy(m.date), X.fmt(m.after, 2), (m.cum_bp >= 0 ? "+" : "−") + X.fmt(Math.abs(m.cum_bp), 0)) + `\n<i>${p}</i>`;
   });
-  return send(env, chat, `🏛 <b>Ожидания по ставке ФРС</b> (WIRP)\nСейчас: ${fmt(w.lo, 2)}–${fmt(w.hi, 2)}%, эффективная ${fmt(w.effr, 2)}%\n\n` + rows.join("\n\n") +
-    "\n\n<i>Рассчитано по фьючерсам на ставку по федеральным фондам (как CME FedWatch)</i>", kb([[terminalBtn(env, chat.type, "WIRP", "🖥 В терминале")]]));
+  return send(env, chat, X.t("wirp_head", X.fmt(w.lo, 2), X.fmt(w.hi, 2), X.fmt(w.effr, 2)) + rows.join("\n\n") + X.t("wirp_note"),
+    kb([[terminalBtn(env, chat, "WIRP")]]));
 }
 
 // ---------------------------------------------------------------------------
-// Разбор команд и кнопок
+// Command and button routing
 // ---------------------------------------------------------------------------
 export function newCommand(cmd, args, rest) {
-  // возвращает обработчик (env, chat) => Promise или null, если команда не из этого набора
+  // returns a handler (env, chat) => Promise, or null if the command is not from this set
   switch (cmd) {
-    case "q": case "quote": case "кот": return (env, chat) => cmdQuote(env, chat, args);
+    case "q": case "quote": case "quotes": case "кот": return (env, chat) => cmdQuote(env, chat, args);
     case "des": case "d": case "company": case "компания": return (env, chat) => cmdDes(env, chat, args);
-    case "fa": return (env, chat) => cmdFa(env, chat, args);
+    case "fa": case "financials": return (env, chat) => cmdFa(env, chat, args);
     case "ern": case "ee": return (env, chat) => cmdErn(env, chat, args);
     case "earnings": case "отчёты": case "отчеты": return (env, chat) => cmdEarnings(env, chat);
-    case "anr": return (env, chat) => cmdAnr(env, chat, args);
+    case "anr": case "analysts": return (env, chat) => cmdAnr(env, chat, args);
     case "cn": return (env, chat) => cmdCn(env, chat, args);
     case "hds": case "insiders": return (env, chat) => cmdHds(env, chat, args);
     case "chart": case "gp": case "график": return (env, chat) => cmdChart(env, chat, args);
-    case "watch": case "w": case "список": return (env, chat) => cmdWatch(env, chat, args);
+    case "watch": case "w": case "watchlist": case "список": return (env, chat) => cmdWatch(env, chat, args);
     case "unwatch": return (env, chat) => cmdWatch(env, chat, args, true);
     case "port": case "portfolio": case "портфель":
       if (args[0] === "clear") return (env, chat) => cmdPort(env, chat, [], "clear");
@@ -460,7 +464,7 @@ export function newCommand(cmd, args, rest) {
     case "alerts": case "алерты": return (env, chat) => cmdAlerts(env, chat);
     case "eqs": case "screener": case "скринер": return (env, chat) => cmdEqs(env, chat, args);
     case "map": case "imap": case "карта": return (env, chat) => cmdMap(env, chat);
-    case "rates": case "gc": case "curve": case "кривые": return (env, chat) => cmdRates(env, chat);
+    case "rates": case "gc": case "curve": case "curves": case "кривые": return (env, chat) => cmdRates(env, chat);
     case "cb": case "ставки": return (env, chat) => cmdCb(env, chat);
     case "wirp": case "fedwatch": return (env, chat) => cmdWirp(env, chat);
     default: return null;
@@ -478,13 +482,18 @@ export async function newCallback(data, chat, env) {
     case "w+": return cmdWatch(env, chat, [a]);
     case "watch": return cmdWatch(env, chat, []);
     case "port": return cmdPort(env, chat, []);
-    case "adel": { const ok = await deleteAlert(env, chat.id, a); await send(env, chat, ok ? "Алерт №" + a + " удалён." : "Этого алерта уже нет."); return cmdAlerts(env, chat); }
+    case "adel": {
+      const X = L(chat.lang);
+      const ok = await deleteAlert(env, chat.id, a);
+      await send(env, chat, ok ? X.t("alert_del_n", a) : X.t("alert_gone"));
+      return cmdAlerts(env, chat);
+    }
     case "eqs": return cmdEqs(env, chat, a ? [a] : []);
     default: return null;
   }
 }
 
-// для callback_data длиной ≤ 64 байт: тикеры у нас короткие, но на всякий случай
+// callback_data must be ≤ 64 bytes: tickers are short
 export function isNewCallback(data) {
   return /^(fa|ern|anr|cn|chart|w\+|watch|port|adel|eqs)(:|$)/.test(data || "");
 }

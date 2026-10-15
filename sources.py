@@ -15,16 +15,16 @@ GN = "https://news.google.com/rss/search?hl=en-US&gl=US&ceid=US:en&q="
 
 SOURCES = [
     # ---------- Центробанки и официальная статистика ----------
-    {"name": "ФРС США", "url": "https://www.federalreserve.gov/feeds/press_all.xml", "kind": "official", "tier": 2},
-    {"name": "Статистика труда США (BLS)", "url": "https://www.bls.gov/feed/bls_latest.rss", "kind": "official", "tier": 2},
+    {"name": "Fed", "url": "https://www.federalreserve.gov/feeds/press_all.xml", "kind": "official", "tier": 2},
+    {"name": "US Labor Statistics (BLS)", "url": "https://www.bls.gov/feed/bls_latest.rss", "kind": "official", "tier": 2},
     # запасной канал: bls.gov часто отвечает 403 серверам GitHub
-    {"name": "Статистика труда США (BLS)", "url": GN + "site:bls.gov+when:2d", "kind": "official", "tier": 2},
-    {"name": "ЕЦБ", "url": "https://www.ecb.europa.eu/rss/press.html", "kind": "official", "tier": 2},
-    {"name": "Банк Англии", "url": "https://www.bankofengland.co.uk/rss/news", "kind": "official", "tier": 2},
-    {"name": "МВФ", "url": "https://www.imf.org/en/News/rss?language=eng", "kind": "official", "tier": 2},
+    {"name": "US Labor Statistics (BLS)", "url": GN + "site:bls.gov+when:2d", "kind": "official", "tier": 2},
+    {"name": "ECB", "url": "https://www.ecb.europa.eu/rss/press.html", "kind": "official", "tier": 2},
+    {"name": "Bank of England", "url": "https://www.bankofengland.co.uk/rss/news", "kind": "official", "tier": 2},
+    {"name": "IMF", "url": "https://www.imf.org/en/News/rss?language=eng", "kind": "official", "tier": 2},
     # запасной канал: imf.org блокирует запросы с серверов GitHub
-    {"name": "МВФ", "url": GN + "site:imf.org+when:2d", "kind": "official", "tier": 2},
-    {"name": "ЦБ РФ", "url": "https://www.cbr.ru/rss/eventrss", "kind": "official", "tier": 2},
+    {"name": "IMF", "url": GN + "site:imf.org+when:2d", "kind": "official", "tier": 2},
+    {"name": "Bank of Russia", "url": "https://www.cbr.ru/rss/eventrss", "kind": "official", "tier": 2},
 
     # ---------- Bloomberg ----------
     {"name": "Bloomberg", "url": "https://feeds.bloomberg.com/economics/news.rss", "kind": "econ", "tier": 1},
@@ -46,7 +46,7 @@ SOURCES = [
     {"name": "The Guardian", "url": "https://www.theguardian.com/business/economics/rss", "kind": "econ", "tier": 0},
 
     # ---------- Россия (немного) ----------
-    {"name": "Коммерсантъ", "url": "https://www.kommersant.ru/RSS/section-economics.xml", "kind": "econ", "tier": 1},
-    {"name": "РБК", "url": "https://rssexport.rbc.ru/rbcnews/news/30/full.rss", "kind": "general", "tier": 0,
+    {"name": "Kommersant", "url": "https://www.kommersant.ru/RSS/section-economics.xml", "kind": "econ", "tier": 1},
+    {"name": "RBC", "url": "https://rssexport.rbc.ru/rbcnews/news/30/full.rss", "kind": "general", "tier": 0,
      "categories": ["Экономика", "Финансы", "Бизнес"]},
 ]

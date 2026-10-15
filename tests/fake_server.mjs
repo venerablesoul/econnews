@@ -1,5 +1,5 @@
-// Локальный сервер бота для e2e-тестов терминала: настоящий код worker/src, внешние сервисы подменены.
-// Запуск: node tests/fake_server.mjs 8787
+// A local bot server for the terminal e2e tests: the real worker/src code with faked external services.
+// Run: node tests/fake_server.mjs 8787
 import http from "node:http";
 import { PAGES, TOKEN, OWNER, KV, installMocks, dataJson, stocksJson, ratesJson } from "./mocks.mjs";
 

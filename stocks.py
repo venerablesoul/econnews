@@ -1,4 +1,5 @@
 """
+Largest US companies for the terminal: prices, valuation ratios, financial statements, earnings calendar.
 Крупнейшие компании США для терминала: котировки, мультипликаторы, отчётность и календарь отчётов.
 
 Результат — docs/stocks.json (скринер EQS, тепловая карта IMAP, вкладка ОТЧЁТЫ, команды бота /eqs /map /earnings)
@@ -31,9 +32,10 @@ FH_URL = "https://finnhub.io/api/v1"
 SEC_TICKERS_URL = "https://www.sec.gov/files/company_tickers.json"
 SEC_FACTS_URL = "https://data.sec.gov/api/xbrl/companyfacts/CIK{cik:010d}.json"
 
+# sector names are stored in English; the terminal and the bot translate them for Russian readers
 TECH, COMM, DISC, STAP, HLTH, FIN, IND, ENER, UTIL, REIT, MAT = (
-    "Технологии", "Связь и медиа", "Циклич. потребление", "Повседн. спрос", "Здравоохранение", "Финансы",
-    "Промышленность", "Энергетика", "Коммунальные", "Недвижимость", "Материалы")
+    "Technology", "Communication", "Consumer Discretionary", "Consumer Staples", "Health Care", "Financials",
+    "Industrials", "Energy", "Utilities", "Real Estate", "Materials")
 
 # тикер, название, сектор, названия в английских заголовках, в русских
 UNIVERSE = [
@@ -294,7 +296,7 @@ def fetch_prices(tickers):
             url = SPARK_URL.format(syms=urllib.parse.quote(",".join(yahoo_sym(t) for t in b), safe=","))
             return parse_spark(_json(url))
         except Exception as e:
-            print(f"  ! цены Yahoo ({b[0]}…): {type(e).__name__}: {e}"[:200])
+            print(f"  ! Yahoo prices ({b[0]}…): {type(e).__name__}: {e}"[:200])
             return {}
     out = {}
     with ThreadPoolExecutor(max_workers=4) as ex:
@@ -496,7 +498,9 @@ def cik_for(t, sec_headers):
 
 
 def sec_headers():
-    ua = os.environ.get("SEC_USER_AGENT", "").strip() or "EconNews bot econnews@users.noreply.github.com"
+    # SEC rejects contacts at users.noreply.github.com (checked from GitHub runners) — use a plain one
+    from trades import SEC_UA_DEFAULT
+    ua = os.environ.get("SEC_USER_AGENT", "").strip() or SEC_UA_DEFAULT
     return {"User-Agent": ua, "Accept-Encoding": "identity"}
 
 
@@ -529,7 +533,7 @@ def update_financials(tickers, now, limit=4, max_age_days=7):
             done += 1
             time.sleep(0.2)   # SEC просит не больше 10 запросов в секунду
         except Exception as e:
-            print(f"  ! отчётность {t}: {type(e).__name__}: {e}"[:200])
+            print(f"  ! financials {t}: {type(e).__name__}: {e}"[:200])
     return done
 
 
@@ -599,7 +603,7 @@ def build(now=None, key=None, metric_limit=12, metric_max_age_h=20, fin_limit=4,
                         by[t]["mcap0"], by[t]["mpx"] = m["mcap"], by[t]["px"]
                     n_metrics += 1
             except Exception as e:
-                print(f"  ! мультипликаторы {t}: {type(e).__name__}: {e}"[:200])
+                print(f"  ! ratios {t}: {type(e).__name__}: {e}"[:200])
                 if "429" in str(e):
                     break
             time.sleep(sleep)
@@ -616,7 +620,7 @@ def build(now=None, key=None, metric_limit=12, metric_max_age_h=20, fin_limit=4,
             earnings = fetch_earnings(key, now.date())
             e_upd = now.isoformat()
         except Exception as e:
-            print(f"  ! календарь отчётов: {type(e).__name__}: {e}"[:200])
+            print(f"  ! earnings calendar: {type(e).__name__}: {e}"[:200])
 
     if not prices and not prev:
         return None
@@ -627,9 +631,10 @@ def build(now=None, key=None, metric_limit=12, metric_max_age_h=20, fin_limit=4,
         with open(path, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, separators=(",", ":"))
     try:
-        update_financials(tickers, now, limit=fin_limit)
+        done = update_financials(tickers, now, limit=fin_limit)
+        data["fin_updated"] = len(done) if isinstance(done, (list, tuple, set, dict)) else int(done or 0)
     except Exception as e:
-        print(f"  ! отчётность SEC: {type(e).__name__}: {e}"[:200])
+        print(f"  ! SEC financials: {type(e).__name__}: {e}"[:200])
     return data
 
 

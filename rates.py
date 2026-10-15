@@ -1,4 +1,5 @@
 """
+Bonds and rates for the terminal (GC, CB, WIRP) and the bot commands /rates /cb /wirp — all free, official sources.
 Облигации и ставки для терминала (GC, CB, WIRP) и команд бота /rates /cb /wirp.
 
 Результат — docs/rates.json. Всё из бесплатных официальных источников без ключей:
@@ -233,23 +234,27 @@ def ru_curve(today):
             "w": None, "m": None, "wd": None, "md": None}
 
 
+# code, (English name, Russian name), flag, loader, fallback (code, names, loader)
 CURVES = [
-    ("US", "США", "🇺🇸", us_curve, None),
-    ("DE", "Германия", "🇩🇪", de_curve, ("EA", "Еврозона (AAA)", ea_curve)),
-    ("UK", "Великобритания", "🇬🇧", uk_curve, None),
-    ("JP", "Япония", "🇯🇵", jp_curve, None),
-    ("RU", "Россия (ОФЗ)", "🇷🇺", ru_curve, None),
+    ("US", ("United States", "США"), "🇺🇸", us_curve, None),
+    ("DE", ("Germany", "Германия"), "🇩🇪", de_curve, ("EA", ("Euro area (AAA)", "Еврозона (AAA)"), ea_curve)),
+    ("UK", ("United Kingdom", "Великобритания"), "🇬🇧", uk_curve, None),
+    ("JP", ("Japan", "Япония"), "🇯🇵", jp_curve, None),
+    ("RU", ("Russia (OFZ)", "Россия (ОФЗ)"), "🇷🇺", ru_curve, None),
 ]
 
 
 # ---------------------------------------------------------------------------
 # Ставки центробанков
 # ---------------------------------------------------------------------------
-CB = [("US", "ФРС США", "🇺🇸"), ("XM", "ЕЦБ", "🇪🇺"), ("GB", "Банк Англии", "🇬🇧"), ("JP", "Банк Японии", "🇯🇵"),
-      ("CN", "Народный банк Китая", "🇨🇳"), ("CH", "Нацбанк Швейцарии", "🇨🇭"), ("CA", "Банк Канады", "🇨🇦"),
-      ("AU", "Резервный банк Австралии", "🇦🇺"), ("IN", "Резервный банк Индии", "🇮🇳"), ("BR", "ЦБ Бразилии", "🇧🇷"),
-      ("TR", "ЦБ Турции", "🇹🇷"), ("KR", "Банк Кореи", "🇰🇷"), ("MX", "Банк Мексики", "🇲🇽"),
-      ("ZA", "Резервный банк ЮАР", "🇿🇦"), ("RU", "ЦБ РФ", "🇷🇺")]
+CB = [("US", ("Federal Reserve", "ФРС США"), "🇺🇸"), ("XM", ("ECB", "ЕЦБ"), "🇪🇺"),
+      ("GB", ("Bank of England", "Банк Англии"), "🇬🇧"), ("JP", ("Bank of Japan", "Банк Японии"), "🇯🇵"),
+      ("CN", ("People's Bank of China", "Народный банк Китая"), "🇨🇳"), ("CH", ("Swiss National Bank", "Нацбанк Швейцарии"), "🇨🇭"),
+      ("CA", ("Bank of Canada", "Банк Канады"), "🇨🇦"), ("AU", ("Reserve Bank of Australia", "Резервный банк Австралии"), "🇦🇺"),
+      ("IN", ("Reserve Bank of India", "Резервный банк Индии"), "🇮🇳"), ("BR", ("Central Bank of Brazil", "ЦБ Бразилии"), "🇧🇷"),
+      ("TR", ("Central Bank of Türkiye", "ЦБ Турции"), "🇹🇷"), ("KR", ("Bank of Korea", "Банк Кореи"), "🇰🇷"),
+      ("MX", ("Bank of Mexico", "Банк Мексики"), "🇲🇽"), ("ZA", ("South African Reserve Bank", "Резервный банк ЮАР"), "🇿🇦"),
+      ("RU", ("Bank of Russia", "ЦБ РФ"), "🇷🇺")]
 
 
 def parse_bis(text):
@@ -301,20 +306,20 @@ def cb_rates(today):
                 us["prev"], us["since"] = us["rate"], None
             us.update({"rate": mid, "lo": lo, "hi": hi, "date": ref.get("effectiveDate")})
     except Exception as e:
-        print(f"  ! ставка ФРС (NY Fed): {type(e).__name__}: {e}"[:200])
+        print(f"  ! Fed rate (NY Fed): {type(e).__name__}: {e}"[:200])
     try:
         frm = (today - timedelta(days=400)).strftime("%d.%m.%Y")
         ru = parse_cbr(_get(CBR_URL.format(frm=frm, to=today.strftime("%d.%m.%Y"))).decode("utf-8", "replace"))
         if ru:
             data["RU"] = ru
     except Exception as e:
-        print(f"  ! ключевая ставка ЦБ РФ: {type(e).__name__}: {e}"[:200])
+        print(f"  ! Bank of Russia key rate: {type(e).__name__}: {e}"[:200])
     out = []
-    for c, name, flag in CB:
+    for c, (name, name_ru), flag in CB:
         x = data.get(c)
         if not x:
             continue
-        out.append({"c": c, "name": name, "flag": flag, **{k: v for k, v in x.items() if v is not None}})
+        out.append({"c": c, "name": name, "name_ru": name_ru, "flag": flag, **{k: v for k, v in x.items() if v is not None}})
     return out
 
 
@@ -427,7 +432,7 @@ def wirp(today):
             if p:
                 avg[(y, m)] = round(100 - p, 4)
         except Exception as e:
-            print(f"  ! фьючерс {zq_symbol(y, m)}: {type(e).__name__}: {e}"[:160])
+            print(f"  ! future {zq_symbol(y, m)}: {type(e).__name__}: {e}"[:160])
     path = implied_path(effr, meetings, avg)
     for row in path:
         row.update(probabilities(row["d_bp"]))
@@ -453,30 +458,30 @@ def build(now=None, path=RATES_FILE, max_age_h=2.0, force=False):
     today = now.date()
     data = {"updated": now.isoformat(), "curves": dict(prev.get("curves") or {}),
             "cb": prev.get("cb") or [], "wirp": prev.get("wirp")}
-    for code, name, flag, fn, fallback in CURVES:
+    for code, names, flag, fn, fallback in CURVES:
         try:
             c = fn(today)
             if not c and fallback:
-                code2, name2, fn2 = fallback
-                c, name = fn2(today), name2
+                code2, names, fn2 = fallback
+                c = fn2(today)
             if c:
-                data["curves"][code] = {"name": name, "flag": flag, **c}
+                data["curves"][code] = {"name": names[0], "name_ru": names[1], "flag": flag, **c}
         except Exception as e:
-            print(f"  ! кривая {name}: {type(e).__name__}: {e}"[:200])
+            print(f"  ! curve {names[0]}: {type(e).__name__}: {e}"[:200])
             if fallback:
                 try:
-                    code2, name2, fn2 = fallback
+                    code2, names2, fn2 = fallback
                     c = fn2(today)
                     if c:
-                        data["curves"][code] = {"name": name2, "flag": flag, **c}
+                        data["curves"][code] = {"name": names2[0], "name_ru": names2[1], "flag": flag, **c}
                 except Exception as e2:
-                    print(f"  ! кривая {fallback[1]}: {type(e2).__name__}: {e2}"[:200])
+                    print(f"  ! curve {fallback[1][0]}: {type(e2).__name__}: {e2}"[:200])
     try:
         cb = cb_rates(today)
         if cb:
             data["cb"] = cb
     except Exception as e:
-        print(f"  ! ставки центробанков: {type(e).__name__}: {e}"[:200])
+        print(f"  ! central bank rates: {type(e).__name__}: {e}"[:200])
     try:
         w = wirp(today)
         if w and w.get("meetings"):

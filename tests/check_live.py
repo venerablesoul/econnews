@@ -1,5 +1,5 @@
-"""Проверка живых данных, которые основной бот опубликовал на GitHub (ветка main).
-Запуск: python3 tests/check_live.py  → «LIVE DATA OK», если всё на месте."""
+"""Checks the live data the news bot published on GitHub (the main branch).
+Run: python3 tests/check_live.py  → "LIVE DATA OK" when everything is in place."""
 import json
 import subprocess
 import sys
@@ -37,53 +37,65 @@ try:
     px = [r for r in rows if r.get("px")]
     pe = [r for r in rows if r.get("pe") is not None]
     mc = [r for r in rows if r.get("mcap")]
-    print(f"stocks.json: обновлён {s.get('updated')}, компаний {len(rows)}, с ценой {len(px)}, с P/E {len(pe)}, с капитализацией {len(mc)}, отчётов в календаре {len(s.get('earnings') or [])}")
+    secs = sorted({r.get("sec") for r in rows})
+    print(f"stocks.json: updated {s.get('updated')}, companies {len(rows)}, with price {len(px)}, with P/E {len(pe)}, "
+          f"with market cap {len(mc)}, earnings in the calendar {len(s.get('earnings') or [])}, sectors {secs[:4]}…")
     if not fresh(s.get("updated", ""), 3):
-        problems.append("stocks.json устарел")
+        problems.append("stocks.json is stale")
     if len(px) < 100:
-        problems.append("цен меньше 100")
+        problems.append("fewer than 100 prices")
     if len(pe) < 12 or len(mc) < 12:
-        problems.append("мультипликаторов меньше 12")
+        problems.append("fewer than 12 ratios")
     if len(s.get("earnings") or []) < 3:
-        problems.append("в календаре отчётов меньше 3 событий")
+        problems.append("fewer than 3 events in the earnings calendar")
+    if "Technology" not in secs:
+        problems.append("sectors are not in English yet")
 except FileNotFoundError:
-    problems.append("нет docs/stocks.json")
+    problems.append("no docs/stocks.json")
 
 try:
     r = show("docs/rates.json")
     curves = r.get("curves") or {}
-    print(f"rates.json: обновлён {r.get('updated')}, кривые {sorted(curves)}, ставок ЦБ {len(r.get('cb') or [])}, "
-          f"заседаний ФРС {len((r.get('wirp') or {}).get('meetings') or [])}")
+    print(f"rates.json: updated {r.get('updated')}, curves {sorted(curves)}, central banks {len(r.get('cb') or [])}, "
+          f"Fed meetings {len((r.get('wirp') or {}).get('meetings') or [])}, US curve name {(curves.get('US') or {}).get('name')!r}")
     for c in ("US", "DE", "UK", "JP", "RU"):
         if c not in curves or len(curves[c].get("y") or []) < 3:
-            problems.append(f"нет кривой {c}")
+            problems.append(f"no {c} curve")
+    if (curves.get("US") or {}).get("name_ru") is None:
+        problems.append("curve names have no Russian variant yet")
     if len(r.get("cb") or []) < 10:
-        problems.append("ставок ЦБ меньше 10")
+        problems.append("fewer than 10 central bank rates")
     if not (r.get("wirp") or {}).get("meetings"):
-        problems.append("нет WIRP")
+        problems.append("no WIRP")
     if not fresh(r.get("updated", ""), 4):
-        problems.append("rates.json устарел")
+        problems.append("rates.json is stale")
 except FileNotFoundError:
-    problems.append("нет docs/rates.json")
+    problems.append("no docs/rates.json")
 
 ls = git("ls-tree", "--name-only", "origin/main", "docs/fin/").stdout.split()
-print(f"docs/fin: файлов отчётности {len(ls)}")
+print(f"docs/fin: financials files {len(ls)}")
 if len(ls) < 4:
-    problems.append("файлов отчётности меньше 4")
+    problems.append("fewer than 4 financials files")
 else:
     f = show(ls[0])
     a, q = f.get("annual") or [], f.get("quarterly") or []
-    print(f"  {ls[0]}: лет {len(a)}, кварталов {len(q)}, последняя выручка {q[0].get('rev') if q else None}")
+    print(f"  {ls[0]}: years {len(a)}, quarters {len(q)}, latest revenue {q[0].get('rev') if q else None}")
     if not a or not q or q[0].get("rev") is None:
-        problems.append(f"в {ls[0]} нет выручки")
+        problems.append(f"{ls[0]} has no revenue")
 
 d = show("docs/data.json")
-tk = [n for n in d.get("news") or [] if n.get("tk")]
-print(f"data.json: новостей {len(d.get('news') or [])}, с тикерами {len(tk)}" + (f" (например {tk[0]['tk']}: {tk[0]['title'][:60]})" if tk else ""))
+news = d.get("news") or []
+tk = [n for n in news if n.get("tk")]
+both = [n for n in news if n.get("lang") and (n.get("title_ru") or n.get("title_en"))]
+ins = (d.get("trades") or {}).get("insiders") or []
+print(f"data.json: stories {len(news)}, with tickers {len(tk)}, with a translation {len(both)}, insider trades {len(ins)}"
+      + (f" (e.g. {tk[0]['tk']}: {tk[0]['title'][:60]})" if tk else ""))
 if not tk:
-    problems.append("ни в одной новости нет тикеров")
+    problems.append("no story has tickers")
+if news and not both:
+    problems.append("stories have no translations yet (new format)")
 
 if problems:
-    print("ПРОБЛЕМЫ: " + "; ".join(problems))
+    print("PROBLEMS: " + "; ".join(problems))
     sys.exit(1)
 print("LIVE DATA OK")

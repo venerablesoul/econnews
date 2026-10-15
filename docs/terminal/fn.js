@@ -1,29 +1,31 @@
-/* Терминал: раскладки панелей и новые функции.
-   DES/FA/ERN/ANR/CN/HDS — компании, HP/COMP — история и сравнение, EQS — скринер, IMAP — карта рынка,
-   GC/CB/WIRP — облигации и ставки, W/PORT/ALRT — личное, живая лента новостей.
-   Данные: сервер бота (/api/…, ключи только там) и файлы бота на сайте (stocks.json, rates.json). */
+/* Terminal: panel layouts and functions.
+   DES/FA/ERN/ANR/CN/HDS — companies, HP/COMP — history and comparison, EQS — screener, IMAP — market map,
+   GC/CB/WIRP — bonds and rates, W/PORT/ALRT — personal, the live news feed.
+   Data: the bot server (/api/…, keys only there) and the bot's files on the site (stocks.json, rates.json).
+   Texts: i18n.js (TX), English by default. */
 (function(){
 'use strict';
 var T = window.TERM;
 if (!T) return;
-var $ = T.$, el = T.el, fmt = T.fmt, pct = T.pct, cls = T.cls, store = T.store;
+var $ = T.$, el = T.el, fmt = T.fmt, pct = T.pct, cls = T.cls, store = T.store, I = T.I, TX = T.TX;
 
-/* ======================= утилиты ======================= */
+/* ======================= utilities ======================= */
 function clear(n){ while (n && n.firstChild) n.removeChild(n.firstChild); return n }
 function txt(n, t){ n.textContent = t; return n }
 function money(v, cur){
   cur = cur == null ? '$' : cur;
   if (v == null || isNaN(v)) return '—';
   var a = Math.abs(v), s = v < 0 ? '−' : '';
-  if (a >= 1e12) return s + cur + fmt(a / 1e12, 2) + ' трлн';
-  if (a >= 1e9) return s + cur + fmt(a / 1e9, a >= 1e11 ? 0 : 1) + ' млрд';
-  if (a >= 1e6) return s + cur + fmt(a / 1e6, a >= 1e8 ? 0 : 1) + ' млн';
+  if (a >= 1e12) return s + cur + fmt(a / 1e12, 2) + (I.ru ? ' трлн' : 'T');
+  if (a >= 1e9) return s + cur + fmt(a / 1e9, a >= 1e11 ? 0 : 1) + (I.ru ? ' млрд' : 'B');
+  if (a >= 1e6) return s + cur + fmt(a / 1e6, a >= 1e8 ? 0 : 1) + (I.ru ? ' млн' : 'M');
   return s + cur + fmt(a, a >= 1e4 ? 0 : 2);
 }
 function dg(p){ var a = Math.abs(p || 0); return a >= 1000 ? 0 : a >= 10 ? 2 : a >= 1 ? 3 : a >= 0.01 ? 4 : 6 }
 function price(v){ return v == null ? '—' : fmt(v, dg(v)) }
-function dmy(d){ return d && d.length >= 10 ? d.slice(8, 10) + '.' + d.slice(5, 7) + '.' + d.slice(0, 4) : '—' }
-function dmShort(d){ return d && d.length >= 10 ? d.slice(8, 10) + '.' + d.slice(5, 7) + '.' + d.slice(2, 4) : '—' }
+var MON = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+function dmy(d){ return d && d.length >= 10 ? (I.ru ? d.slice(8, 10) + '.' + d.slice(5, 7) + '.' + d.slice(0, 4) : +d.slice(8, 10) + ' ' + MON[+d.slice(5, 7) - 1] + ' ' + d.slice(0, 4)) : '—' }
+function dmShort(d){ return d && d.length >= 10 ? (I.ru ? d.slice(8, 10) + '.' + d.slice(5, 7) + '.' + d.slice(2, 4) : MON[+d.slice(5, 7) - 1] + " '" + d.slice(2, 4)) : '—' }
 function num(v, d){ return v == null || isNaN(v) ? '—' : fmt(v, d == null ? 2 : d) }
 function upSym(s){ return String(s || '').trim().toUpperCase().replace(/\s+(US\s+)?EQUITY$/, '').replace(/\s+US$/, '') }
 var ETF = {SPY: 1, QQQ: 1, DIA: 1, IWM: 1, VOO: 1, VTI: 1, GLD: 1, TLT: 1};
@@ -34,16 +36,16 @@ function isStock(s){
   return /^[A-Z][A-Z0-9]{0,6}([.\-][A-Z])?$/.test(s);
 }
 function noApi(box, what){
-  clear(box).appendChild(el('div', 'empty', (what || 'Эта функция') + ' работает через сервер бота, а он ещё не настроен (docs/config.json). Инструкция — в README, раздел «Сервер бота».'));
+  clear(box).appendChild(el('div', 'empty', TX('no_api', what)));
 }
-function errBox(box, e){ clear(box).appendChild(el('div', 'err', 'Не удалось загрузить: ' + (e && e.message || e))) }
-function loading(box, t){ clear(box).appendChild(el('div', 'loading', t || 'Загружаю')) }
+function errBox(box, e){ clear(box).appendChild(el('div', 'err', TX('load_fail') + (e && e.message || e))) }
+function loading(box, t){ clear(box).appendChild(el('div', 'loading', t || TX('loading'))) }
 
 var apiCache = {};
 function api(path, opts){
   opts = opts || {};
   var base = T.api();
-  if (!base) return Promise.reject(new Error('сервер бота не настроен'));
+  if (!base) return Promise.reject(new Error(TX('srv_not_set_e')));
   var key = path, c = apiCache[key];
   if (!opts.method && opts.ttl && c && Date.now() - c.at < opts.ttl * 1000) return Promise.resolve(c.v);
   var h = T.authHeaders();
@@ -79,6 +81,10 @@ function table(cols, opts){
   return {t: t, body: tb};
 }
 function td(text, cl){ return el('td', cl || null, text) }
+// column headers from a list of names; `left` lists the indexes aligned left
+function cols(names, left){ return names.map(function(t, i){ return {t: t, l: (left || []).indexOf(i) >= 0} }) }
+// curve and central bank names: "name" is English, "name_ru" Russian (older data had only a Russian "name")
+function locName(x){ return I.ru ? x.name_ru || x.name : x.name }
 function chg(c, d){ return el('td', 'num ' + cls(c), pct(c, d)) }
 function downloadText(name, text, mime){
   try {
@@ -90,7 +96,7 @@ function downloadText(name, text, mime){
 }
 function copyText(text){
   if (navigator.clipboard && navigator.clipboard.writeText) return navigator.clipboard.writeText(text);
-  return Promise.reject(new Error('нет доступа к буферу обмена'));
+  return Promise.reject(new Error(TX('no_clip')));
 }
 function tabs(box, attr, onPick){
   box.addEventListener('click', function(e){
@@ -107,14 +113,14 @@ function visible(pid){
 }
 var COLORS = ['#ffa028', '#4fa3ff', '#21c66f', '#ff4b4b', '#c77dff', '#ffd400', '#56d6d6'];
 
-/* ======================= раскладки ======================= */
+/* ======================= layouts ======================= */
 var PANELS = [
-  {id:'p-mkt', code:'WEI', name:'Мировые рынки'}, {id:'p-chart', code:'GP', name:'График'},
-  {id:'p-crypto', code:'CRYPTO', name:'Криптовалюты'}, {id:'p-news', code:'N', name:'Новости'},
-  {id:'p-eco', code:'ECO', name:'Календарь и отчёты'}, {id:'p-trd', code:'TRD', name:'Сделки политиков и инсайдеров'},
-  {id:'p-des', code:'DES', name:'Компания: DES FA ERN ANR CN HDS'}, {id:'p-hp', code:'HP', name:'История цен и сравнение'},
-  {id:'p-eqs', code:'EQS', name:'Скринер акций США'}, {id:'p-imap', code:'IMAP', name:'Карта рынка США'},
-  {id:'p-gc', code:'GC', name:'Облигации и ставки: GC CB WIRP'}, {id:'p-my', code:'W', name:'Список, портфель, алерты'}
+  {id:'p-mkt', code:'WEI', name:TX('fn_mkt')}, {id:'p-chart', code:'GP', name:TX('fn_chart')},
+  {id:'p-crypto', code:'CRYPTO', name:TX('fn_crypto')}, {id:'p-news', code:'N', name:TX('fn_news')},
+  {id:'p-eco', code:'ECO', name:TX('fn_eco')}, {id:'p-trd', code:'TRD', name:TX('fn_trd')},
+  {id:'p-des', code:'DES', name:TX('fn_des')}, {id:'p-hp', code:'HP', name:TX('fn_hp')},
+  {id:'p-eqs', code:'EQS', name:TX('fn_eqs')}, {id:'p-imap', code:'IMAP', name:TX('fn_imap')},
+  {id:'p-gc', code:'GC', name:TX('fn_gc')}, {id:'p-my', code:'W', name:TX('fn_my')}
 ];
 var LAYOUTS = {
   '1': {cols:'minmax(330px,26%) 1fr minmax(320px,25%)', rows:'62% 38%', areas:'"a b c" "a d e"', slots:['a','b','c','d','e'],
@@ -128,7 +134,7 @@ var LAYOUTS = {
   't': {cols:'minmax(300px,40%) 1fr', rows:'55% 45%', areas:'"a b" "c d"', slots:['a','b','c','d'], def:['p-mkt','p-chart','p-crypto','p-news'],
         pref:{'p-mkt':'a','p-chart':'b','p-hp':'b','p-imap':'b','p-eqs':'b','p-des':'c','p-gc':'c','p-my':'c','p-crypto':'c','p-news':'d','p-eco':'d','p-trd':'d'}}
 };
-var RENDER = {};   // pid → функция, которую вызвать, когда панель появилась на экране
+var RENDER = {};   // pid → function to call when the panel appears on screen
 var Layout = (function(){
   var st = {mode: '1', assign: {}};
   try { var saved = JSON.parse(store('layout2') || 'null'); if (saved && saved.assign) st = saved } catch(e){}
@@ -143,7 +149,7 @@ var Layout = (function(){
   function save(){ store('layout2', JSON.stringify(st)) }
   function apply(){
     if (T.isMobile()) {
-      // на телефоне — одна панель: оставляем ту, что в фокусе, иначе рынки
+      // on a phone — one panel: keep the focused one, otherwise markets
       var shown = [].slice.call(document.querySelectorAll('.panel.show'));
       var keep = shown.length === 1 ? shown[0] : (document.querySelector('.panel.focus') || $('p-mkt'));
       document.querySelectorAll('.panel').forEach(function(p){ p.classList.remove('off'); p.style.gridArea = ''; p.classList.toggle('show', p === keep) });
@@ -174,7 +180,7 @@ var Layout = (function(){
     var target = slot || L.pref[pid] || activeSlot || L.slots[1];
     var ti = L.slots.indexOf(target); if (ti < 0) ti = 1;
     var cur = a.indexOf(pid);
-    if (cur >= 0) a[cur] = a[ti];   // панель уже на экране — меняем местами
+    if (cur >= 0) a[cur] = a[ti];   // the panel is already on screen — swap places
     a[ti] = pid;
     save(); apply(); focus(pid);
     if (pid === 'p-chart' && !$('ownc')) T.openChart(T.curChart(), null, true);
@@ -186,7 +192,7 @@ var Layout = (function(){
 })();
 window.Layout = Layout;
 
-// кнопка ▾ в заголовке каждой панели: поставить сюда любую функцию
+// the ▾ button in every panel title: put any function here
 function openMenu(anchor, items, onPick, head){
   closeMenu();
   var m = el('div', 'menu'); m.id = 'fnmenu';
@@ -204,12 +210,12 @@ function openMenu(anchor, items, onPick, head){
 function closeMenu(){ var m = $('fnmenu'); if (m) m.remove() }
 document.querySelectorAll('.panel').forEach(function(p){
   var ph = p.querySelector('.ph'); if (!ph) return;
-  var b = el('button', 'pick', '▾'); b.title = 'Поставить в эту панель другую функцию';
+  var b = el('button', 'pick', '▾'); b.title = TX('pick_t');
   var code = ph.querySelector('.code');
   if (code && code.nextSibling) ph.insertBefore(b, code.nextSibling); else ph.appendChild(b);
   b.onclick = function(e){
     e.stopPropagation();
-    openMenu(b, PANELS.filter(function(x){ return x.id !== p.id }), function(it){ Layout.place(it.id, p.dataset.slot) }, 'Показать в этой панели:');
+    openMenu(b, PANELS.filter(function(x){ return x.id !== p.id }), function(it){ Layout.place(it.id, p.dataset.slot) }, TX('pick_head'));
   };
   p.addEventListener('mousedown', function(){ if (p.dataset.slot) Layout.setActive(p.dataset.slot) });
 });
@@ -217,7 +223,7 @@ var phStyle = document.createElement('style');
 phStyle.textContent = '@media (max-width:760px){ .ph .pick{display:none} }';
 document.head.appendChild(phStyle);
 document.querySelectorAll('#lay button').forEach(function(b){ b.onclick = function(){ Layout.setMode(b.dataset.l) } });
-// кнопки «⇄» в календаре и сделках меняют функцию в той же панели
+// the "⇄" buttons in the calendar and trades switch the function in the same panel
 document.querySelectorAll('.ph .swap').forEach(function(b){
   b.onclick = function(e){ e.stopPropagation(); var p = b.closest('.panel'); if (!T.isMobile() && p.dataset.slot) Layout.place(b.dataset.to, p.dataset.slot); else T.show(b.dataset.to) };
 });
@@ -229,15 +235,15 @@ window.addEventListener('resize', function(){ clearTimeout(rzT); rzT = setTimeou
   if (visible('p-imap')) renderImap();
 }, 150) });
 
-// мобильное меню всех функций
+// the mobile menu of all functions
 (function(){
   var list = $('fnlist');
   var FN = [
-    ['WEI', 'Мировые рынки', 'p-mkt'], ['GP', 'График', 'p-chart'], ['CRYPTO', 'Криптовалюты', 'p-crypto'], ['N', 'Новости', 'p-news'],
-    ['ECO', 'Календарь и отчёты', 'p-eco'], ['TRD', 'Сделки', 'p-trd'], ['DES', 'Компания', 'p-des'], ['HP', 'История цен', 'p-hp'],
-    ['COMP', 'Сравнение', 'p-hp', 'COMP'], ['EQS', 'Скринер', 'p-eqs'], ['IMAP', 'Карта рынка', 'p-imap'], ['GC', 'Кривые доходности', 'p-gc'],
-    ['CB', 'Ставки ЦБ', 'p-gc', 'CB'], ['WIRP', 'Ожидания по ФРС', 'p-gc', 'WIRP'], ['W', 'Мой список', 'p-my', 'W'],
-    ['PORT', 'Портфель', 'p-my', 'PORT'], ['ALRT', 'Алерты', 'p-my', 'ALRT'], ['HELP', 'Все команды', null, 'HELP']
+    ['WEI', TX('fn_mkt'), 'p-mkt'], ['GP', TX('fn_chart'), 'p-chart'], ['CRYPTO', TX('fn_crypto'), 'p-crypto'], ['N', TX('fn_news'), 'p-news'],
+    ['ECO', TX('fn_eco'), 'p-eco'], ['TRD', TX('m_trd'), 'p-trd'], ['DES', TX('m_des'), 'p-des'], ['HP', TX('m_hp'), 'p-hp'],
+    ['COMP', TX('m_comp'), 'p-hp', 'COMP'], ['EQS', TX('m_eqs'), 'p-eqs'], ['IMAP', TX('m_imap'), 'p-imap'], ['GC', TX('m_gc'), 'p-gc'],
+    ['CB', TX('m_cb'), 'p-gc', 'CB'], ['WIRP', TX('m_wirp'), 'p-gc', 'WIRP'], ['W', TX('m_w'), 'p-my', 'W'],
+    ['PORT', TX('m_port'), 'p-my', 'PORT'], ['ALRT', TX('m_alrt'), 'p-my', 'ALRT'], ['HELP', TX('m_help'), null, 'HELP']
   ];
   FN.forEach(function(f){
     var b = el('button'); b.appendChild(el('b', null, f[0])); b.appendChild(el('span', null, f[1]));
@@ -247,7 +253,7 @@ window.addEventListener('resize', function(){ clearTimeout(rzT); rzT = setTimeou
   $('b-more').onclick = function(){ T.openOverlay('ov-fn') };
 })();
 
-/* ======================= DES: компания ======================= */
+/* ======================= DES: company ======================= */
 var des = {sym: '', tab: 'DES', data: null, faMode: 'q', loadingSym: ''};
 function openDes(sym, tab){
   sym = upSym(sym || des.sym);
@@ -259,11 +265,11 @@ function openDes(sym, tab){
 }
 function loadDes(){
   var box = $('des-body'), sym = des.sym;
-  $('des-title').textContent = 'КОМПАНИЯ · ' + sym;
-  if (!T.api()) return noApi(box, 'Карточка компании');
-  loading(box, 'Загружаю ' + sym);
+  $('des-title').textContent = TX('company_x', sym);
+  if (!T.api()) return noApi(box, TX('co_card'));
+  loading(box, TX('loading_x', sym));
   des.loadingSym = sym;
-  api('/api/company?s=' + encodeURIComponent(sym), {ttl: 120}).then(function(d){
+  api('/api/company?s=' + encodeURIComponent(sym) + (I.ru ? '&lang=ru' : ''), {ttl: 120}).then(function(d){
     if (des.sym !== sym) return;
     des.data = d; des.sym = (d.s || sym); renderDes();
   }).catch(function(e){ if (des.sym === sym) errBox(box, e) });
@@ -277,7 +283,7 @@ function renderDes(){
   $('des-title').textContent = (p.name || d.s) + ' · ' + d.s;
   $('des-sub').textContent = q.px != null ? (d.kind === 'moex' ? '' : '$') + price(q.px) + (d.kind === 'moex' ? ' ₽' : '') + ' ' + pct(q.ch) : '';
   clear(box);
-  if (d.kind === 'moex' && des.tab !== 'DES') { box.appendChild(el('div', 'empty', 'Для бумаг Мосбиржи доступна только карточка DES и график. Отчётность российских компаний пока не подключена.')); return }
+  if (d.kind === 'moex' && des.tab !== 'DES') { box.appendChild(el('div', 'empty', TX('moex_only_des'))); return }
   ({DES: desMain, FA: desFa, ERN: desErn, ANR: desAnr, CN: desCn, HDS: desHds}[des.tab] || desMain)(box, d);
 }
 function kv(box, pairs){
@@ -289,7 +295,7 @@ function consensus(anr){
   var r = anr && anr[0]; if (!r) return null;
   var n = r.sb + r.b + r.h + r.s + r.ss; if (!n) return null;
   var sc = (r.sb * 5 + r.b * 4 + r.h * 3 + r.s * 2 + r.ss) / n;
-  return {n: n, score: sc, word: sc >= 4.2 ? 'АКТИВНО ПОКУПАТЬ' : sc >= 3.6 ? 'ПОКУПАТЬ' : sc >= 2.8 ? 'ДЕРЖАТЬ' : sc >= 2.2 ? 'ПРОДАВАТЬ' : 'АКТИВНО ПРОДАВАТЬ', r: r};
+  return {n: n, score: sc, word: TX('rec')[sc >= 4.2 ? 0 : sc >= 3.6 ? 1 : sc >= 2.8 ? 2 : sc >= 2.2 ? 3 : 4], r: r};
 }
 var ANR_COL = ['#0f7a3e', '#21c66f', '#8c8c8c', '#e07a3c', '#ff4b4b'];
 function anrBar(r, n){
@@ -301,26 +307,26 @@ function desMain(box, d){
   var p = d.profile || {}, q = d.quote || {}, m = d.m || {};
   var head = el('div', 'co-head');
   head.appendChild(el('span', 'tk', d.s)); head.appendChild(el('span', 'nm', p.name || ''));
-  if (q.px != null) { head.appendChild(el('span', 'px', (d.kind === 'moex' ? '' : '$') + price(q.px) + (d.kind === 'moex' ? ' ₽' : ''))); head.appendChild(el('span', cls(q.ch), pct(q.ch) + ' за день')) }
+  if (q.px != null) { head.appendChild(el('span', 'px', (d.kind === 'moex' ? '' : '$') + price(q.px) + (d.kind === 'moex' ? ' ₽' : ''))); head.appendChild(el('span', cls(q.ch), pct(q.ch) + TX('today_ch'))) }
   var meta = el('div', 'meta', [p.ind, p.exch && String(p.exch).replace(/ - .*$/, ''), p.country, p.ipo ? 'IPO ' + dmy(p.ipo) : '', p.isin ? 'ISIN ' + p.isin : '', p.type].filter(Boolean).join(' · '));
   if (p.web) { var a = el('a', null, ' ' + p.web.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '')); a.href = p.web; a.target = '_blank'; a.rel = 'noopener'; meta.appendChild(document.createTextNode(' · ')); meta.appendChild(a) }
   head.appendChild(meta); box.appendChild(head);
   if (d.kind === 'moex') {
-    kv(box, [['Лот', p.lot ? p.lot + ' шт.' : '—'], ['Выпуск', p.issue ? fmt(p.issue, 0) + ' шт.' : '—'], ['Капитал.', p.issue && q.px ? money(p.issue * q.px, '₽') : '—'],
-      ['Листинг', p.list ? 'уровень ' + p.list : '—'], ['Макс. дня', price(q.h)], ['Мин. дня', price(q.l)]]);
+    kv(box, [[TX('k_lot'), p.lot ? p.lot + TX('k_pcs') : '—'], [TX('k_issue'), p.issue ? fmt(p.issue, 0) + TX('k_pcs') : '—'], [TX('k_mcap'), p.issue && q.px ? money(p.issue * q.px, '₽') : '—'],
+      [TX('k_list'), p.list ? TX('k_level', p.list) : '—'], [TX('k_dayhi'), price(q.h)], [TX('k_daylo'), price(q.l)]]);
   } else {
     kv(box, [
-      ['Капитал.', money((m.mcap || p.mcap) * 1e6), null, 'рыночная капитализация'], ['P/E', num(m.pe, 1), null, 'цена / прибыль за 12 мес.'], ['P/E форвард', num(m.fpe, 1)],
-      ['P/S', num(m.ps, 1), null, 'цена / выручка'], ['P/B', num(m.pb, 1), null, 'цена / балансовая стоимость'], ['EV/EBITDA', num(m.evebitda, 1)],
-      ['Дивиденды', m.dy ? num(m.dy, 2) + '%' : 'нет'], ['Бета', num(m.beta, 2), null, 'чувствительность к рынку'], ['EPS (12 мес.)', m.eps != null ? '$' + num(m.eps, 2) : '—'],
-      ['Рост выручки', pct(m.revg, 1), cls(m.revg)], ['Рост EPS', pct(m.epsg, 1), cls(m.epsg)], ['ROE', m.roe != null ? num(m.roe, 1) + '%' : '—'],
-      ['Вал. маржа', m.gm != null ? num(m.gm, 1) + '%' : '—'], ['Опер. маржа', m.om != null ? num(m.om, 1) + '%' : '—'], ['Чист. маржа', m.nm != null ? num(m.nm, 1) + '%' : '—'],
-      ['Долг/капитал', num(m.de, 2)], ['Ликвидность', num(m.cr, 2)], ['Акций', p.shares ? fmt(p.shares, 0) + ' млн' : '—'],
-      ['5 дней', pct(m.r5d), cls(m.r5d)], ['3 месяца', pct(m.r13w), cls(m.r13w)], ['С нач. года', pct(m.rytd), cls(m.rytd)], ['За год', pct(m.r52), cls(m.r52)]
+      [TX('k_mcap'), money((m.mcap || p.mcap) * 1e6), null, TX('k_mcap_t')], ['P/E', num(m.pe, 1), null, TX('k_pe_t')], [TX('k_fpe'), num(m.fpe, 1)],
+      ['P/S', num(m.ps, 1), null, TX('k_ps_t')], ['P/B', num(m.pb, 1), null, TX('k_pb_t')], ['EV/EBITDA', num(m.evebitda, 1)],
+      [TX('k_div'), m.dy ? num(m.dy, 2) + '%' : TX('k_none')], [TX('k_beta'), num(m.beta, 2), null, TX('k_beta_t')], [TX('k_eps'), m.eps != null ? '$' + num(m.eps, 2) : '—'],
+      [TX('k_revg'), pct(m.revg, 1), cls(m.revg)], [TX('k_epsg'), pct(m.epsg, 1), cls(m.epsg)], ['ROE', m.roe != null ? num(m.roe, 1) + '%' : '—'],
+      [TX('k_gm'), m.gm != null ? num(m.gm, 1) + '%' : '—'], [TX('k_om'), m.om != null ? num(m.om, 1) + '%' : '—'], [TX('k_nm'), m.nm != null ? num(m.nm, 1) + '%' : '—'],
+      [TX('k_de'), num(m.de, 2)], [TX('k_cr'), num(m.cr, 2)], [TX('k_shares'), p.shares ? fmt(p.shares, 0) + TX('k_mln') : '—'],
+      [TX('k_5d'), pct(m.r5d), cls(m.r5d)], [TX('k_3m'), pct(m.r13w), cls(m.r13w)], [TX('k_ytd'), pct(m.rytd), cls(m.rytd)], [TX('k_1y'), pct(m.r52), cls(m.r52)]
     ]);
     if (m.h52 && m.l52 && q.px) {
       var r = el('div', 'r52'), pos = Math.max(0, Math.min(1, (q.px - m.l52) / ((m.h52 - m.l52) || 1)));
-      r.appendChild(el('div', null, 'Диапазон за 52 недели'));
+      r.appendChild(el('div', null, TX('r52_title')));
       var bar = el('div', 'bar'), mark = el('i'); mark.style.left = 'calc(' + (pos * 100) + '% - 1px)'; bar.appendChild(mark); r.appendChild(bar);
       var ends = el('div', 'ends'); ends.appendChild(el('span', null, '$' + price(m.l52) + (m.l52d ? ' · ' + dmShort(m.l52d) : ''))); ends.appendChild(el('span', null, '$' + price(m.h52) + (m.h52d ? ' · ' + dmShort(m.h52d) : ''))); r.appendChild(ends);
       box.appendChild(r);
@@ -328,27 +334,27 @@ function desMain(box, d){
     var c = consensus(d.anr);
     var blk = el('div', 'blk');
     if (c) {
-      blk.appendChild(el('h4', null, 'Аналитики: ' + c.word + ' · ' + fmt(c.score, 1) + ' из 5 · ' + c.n + ' мнений'));
+      blk.appendChild(el('h4', null, TX('anr_line', c.word, fmt(c.score, 1), c.n)));
       blk.appendChild(anrBar(c.r, c.n));
     }
-    if (d.next) blk.appendChild(el('div', null, 'Следующий отчёт: ' + dmy(d.next.date) + (d.next.hour === 'bmo' ? ' до открытия' : d.next.hour === 'amc' ? ' после закрытия' : '') +
-      (d.next.eps_e != null ? ' · прогноз EPS $' + num(d.next.eps_e, 2) : '') + (d.next.rev_e ? ', выручка ' + money(d.next.rev_e) : '')));
+    if (d.next) blk.appendChild(el('div', null, TX('next_rep') + dmy(d.next.date) + (d.next.hour === 'bmo' ? TX('bmo') : d.next.hour === 'amc' ? TX('amc') : '') +
+      (d.next.eps_e != null ? TX('eps_fcst') + num(d.next.eps_e, 2) : '') + (d.next.rev_e ? TX('rev_fcst') + money(d.next.rev_e) : '')));
     if (blk.childNodes.length) box.appendChild(blk);
   }
   var act = el('div', 'actions');
-  [['📈 ГРАФИК', function(){ T.openChart(d.kind === 'moex' ? d.s : d.s, d.s) }], ['HP', function(){ openHP(d.s) }], ['⭐ В СПИСОК', function(){ My.addWatch([d.s]); My.open('W') }],
-   ['🔔 АЛЕРТ', function(){ My.open('ALRT', d.s + ' > ' + (q.px ? price(q.px * 1.05).replace(/\s/g, '').replace(',', '.') : '')) }],
-   ['＋ В ПОРТФЕЛЬ', function(){ My.open('PORT', d.s) }]].forEach(function(x){ var b = el('button', null, x[0]); b.onclick = x[1]; act.appendChild(b) });
+  [[TX('a_chart'), function(){ T.openChart(d.s, d.s) }], ['HP', function(){ openHP(d.s) }], [TX('a_watch'), function(){ My.addWatch([d.s]); My.open('W') }],
+   [TX('a_alert'), function(){ My.open('ALRT', d.s + ' > ' + (q.px ? String(+(q.px * 1.05).toPrecision(4)) : '')) }],
+   [TX('a_port'), function(){ My.open('PORT', d.s) }]].forEach(function(x){ var b = el('button', null, x[0]); b.onclick = x[1]; act.appendChild(b) });
   box.appendChild(act);
   if (d.peers && d.peers.length) {
-    var pb = el('div', 'chips'); pb.appendChild(el('span', 'note', 'Похожие:'));
+    var pb = el('div', 'chips'); pb.appendChild(el('span', 'note', TX('peers')));
     d.peers.forEach(function(s){ var b = el('button', 'chipbtn', s); b.onclick = function(){ openDes(s) }; pb.appendChild(b) });
     box.appendChild(pb);
   }
-  if (d.errors && d.errors.length) box.appendChild(el('div', 'note', 'Часть данных не загрузилась: ' + d.errors.join('; ')));
+  if (d.errors && d.errors.length) box.appendChild(el('div', 'note', TX('part_fail') + d.errors.join('; ')));
 }
 function svgBars(rows, keys, colors, h){
-  // rows: [{label, values:[...]}] — сгруппированные столбики
+  // rows: [{label, values:[...]}] — grouped bars
   var NS = 'http://www.w3.org/2000/svg', W = 600, H = h || 130, pad = 24;
   var s = document.createElementNS(NS, 'svg'); s.setAttribute('viewBox', '0 0 ' + W + ' ' + H); s.setAttribute('class', 'gc-svg'); s.style.height = H + 'px';
   var vals = []; rows.forEach(function(r){ r.values.forEach(function(v){ if (v != null) vals.push(v) }) });
@@ -374,18 +380,18 @@ function svgBars(rows, keys, colors, h){
 }
 function desFa(box, d){
   var fin = d.fin && d.fin.quarterly && d.fin.quarterly.length ? d.fin : null;
-  var t = el('div', 'ptabs'), bq = el('button', des.faMode === 'q' ? 'on' : null, 'КВАРТАЛЫ'), ba = el('button', des.faMode === 'a' ? 'on' : null, 'ГОДЫ');
+  var t = el('div', 'ptabs'), bq = el('button', des.faMode === 'q' ? 'on' : null, TX('quarters')), ba = el('button', des.faMode === 'a' ? 'on' : null, TX('years'));
   bq.onclick = function(){ des.faMode = 'q'; renderDes() }; ba.onclick = function(){ des.faMode = 'a'; renderDes() };
   t.appendChild(bq); t.appendChild(ba); t.appendChild(el('span', 'sp'));
   box.appendChild(t);
   if (fin) {
     var rows = (des.faMode === 'q' ? fin.quarterly : fin.annual) || [];
-    box.appendChild(el('div', 'note', 'По отчётам в SEC (10-Q, 10-K). Своб. денежный поток = операционный поток − капвложения.'));
-    var chart = svgBars(rows.slice(0, 8).reverse().map(function(r){ return {label: des.faMode === 'q' ? dmShort(r.end) : r.end.slice(0, 4), values: [r.rev, r.ni], fmt: function(v, k){ return (k ? 'прибыль ' : 'выручка ') + money(v) }} }),
+    box.appendChild(el('div', 'note', TX('fa_sec_note')));
+    var chart = svgBars(rows.slice(0, 8).reverse().map(function(r){ return {label: des.faMode === 'q' ? dmShort(r.end) : r.end.slice(0, 4), values: [r.rev, r.ni], fmt: function(v, k){ return TX(k ? 'profit' : 'revenue_') + money(v) }} }),
       ['rev', 'ni'], ['#4fa3ff', function(v){ return v >= 0 ? '#21c66f' : '#ff4b4b' }], 140);
-    var cw = el('div', 'blk'); var lg = el('div', 'legend'); [['#4fa3ff', 'выручка'], ['#21c66f', 'чистая прибыль']].forEach(function(x){ var s = el('span'); var i = el('i'); i.style.background = x[0]; s.appendChild(i); s.appendChild(document.createTextNode(x[1])); lg.appendChild(s) });
+    var cw = el('div', 'blk'); var lg = el('div', 'legend'); [['#4fa3ff', TX('revenue')], ['#21c66f', TX('net_income')]].forEach(function(x){ var s = el('span'); var i = el('i'); i.style.background = x[0]; s.appendChild(i); s.appendChild(document.createTextNode(x[1])); lg.appendChild(s) });
     cw.appendChild(lg); cw.appendChild(chart); box.appendChild(cw);
-    var tb = table([{t: 'Период'}, {t: 'Выручка'}, {t: 'Вал. прибыль'}, {t: 'Опер. прибыль'}, {t: 'Чист. прибыль'}, {t: 'EPS'}, {t: 'Опер. поток'}, {t: 'Своб. поток'}, {t: 'Деньги'}, {t: 'Долг'}]);
+    var tb = table(cols(TX('fa_cols')));
     rows.forEach(function(r){
       var tr = el('tr'); tr.appendChild(td(des.faMode === 'q' ? dmy(r.end) : r.end.slice(0, 4) + ' (' + dmShort(r.end) + ')', 'l'));
       [r.rev, r.gp, r.op, r.ni].forEach(function(v){ tr.appendChild(td(money(v), 'num' + (v < 0 ? ' down' : ''))) });
@@ -396,9 +402,9 @@ function desFa(box, d){
     box.appendChild(tb.t);
   } else {
     var fs = d.faSeries || {}, rows2 = (des.faMode === 'q' ? fs.quarterly : fs.annual) || [];
-    box.appendChild(el('div', 'note', 'Отчётность из SEC есть для ~110 крупнейших компаний США. Для ' + d.s + ' — показатели на акцию и рентабельность (Finnhub).'));
-    if (!rows2.length) { box.appendChild(el('div', 'empty', 'Отчётность не найдена.')); return }
-    var tb2 = table([{t: 'Период'}, {t: 'EPS'}, {t: 'Выручка/акция'}, {t: 'Вал. маржа'}, {t: 'Опер. маржа'}, {t: 'Чист. маржа'}, {t: 'ROE'}, {t: 'Долг/капитал'}]);
+    box.appendChild(el('div', 'note', TX('fa_fh_note', d.s)));
+    if (!rows2.length) { box.appendChild(el('div', 'empty', TX('fa_none'))); return }
+    var tb2 = table(cols(TX('fa_fh_cols')));
     rows2.forEach(function(r){
       var tr = el('tr'); tr.appendChild(td(dmy(r.end), 'l'));
       tr.appendChild(td(r.eps != null ? '$' + num(r.eps, 2) : '—', 'num')); tr.appendChild(td(r.salesPerShare != null ? '$' + num(r.salesPerShare, 2) : '—', 'num'));
@@ -411,19 +417,19 @@ function desFa(box, d){
 function desErn(box, d){
   if (d.next) {
     var b = el('div', 'blk');
-    b.appendChild(el('h4', null, 'Следующий отчёт: ' + dmy(d.next.date) + (d.next.hour === 'bmo' ? ' · до открытия рынка' : d.next.hour === 'amc' ? ' · после закрытия' : '') + ' · Q' + d.next.q + ' ' + d.next.y));
-    b.appendChild(el('div', null, 'Прогноз: EPS $' + num(d.next.eps_e, 2) + ' · выручка ' + money(d.next.rev_e)));
+    b.appendChild(el('h4', null, TX('ern_next', dmy(d.next.date), d.next.hour === 'bmo' ? TX('bmo_l') : d.next.hour === 'amc' ? TX('amc_l') : '', d.next.q, d.next.y)));
+    b.appendChild(el('div', null, TX('ern_fcst', num(d.next.eps_e, 2), money(d.next.rev_e))));
     box.appendChild(b);
   }
   var e = d.ern || [];
-  if (!e.length) { box.appendChild(el('div', 'empty', 'Истории отчётов нет.')); return }
+  if (!e.length) { box.appendChild(el('div', 'empty', TX('ern_none'))); return }
   var rows = e.slice(0, 8).reverse();
-  var lg = el('div', 'legend'); [['#5a5a5a', 'прогноз'], ['#21c66f', 'факт лучше прогноза'], ['#ff4b4b', 'хуже']].forEach(function(x){ var s = el('span'); var i = el('i'); i.style.background = x[0]; s.appendChild(i); s.appendChild(document.createTextNode(x[1])); lg.appendChild(s) });
-  var cw = el('div', 'blk'); cw.appendChild(el('h4', null, 'Прибыль на акцию: факт против прогноза')); cw.appendChild(lg);
-  cw.appendChild(svgBars(rows.map(function(r){ return {label: 'Q' + r.q + "'" + String(r.y).slice(2), values: [r.est, r.act], act: r.act, est: r.est, fmt: function(v, k){ return (k ? 'факт $' : 'прогноз $') + num(v, 2) }} }),
+  var lg = el('div', 'legend'); [['#5a5a5a', TX('est')], ['#21c66f', TX('beat')], ['#ff4b4b', TX('miss')]].forEach(function(x){ var s = el('span'); var i = el('i'); i.style.background = x[0]; s.appendChild(i); s.appendChild(document.createTextNode(x[1])); lg.appendChild(s) });
+  var cw = el('div', 'blk'); cw.appendChild(el('h4', null, TX('ern_chart'))); cw.appendChild(lg);
+  cw.appendChild(svgBars(rows.map(function(r){ return {label: 'Q' + r.q + "'" + String(r.y).slice(2), values: [r.est, r.act], act: r.act, est: r.est, fmt: function(v, k){ return TX(k ? 'act_' : 'est_') + num(v, 2) }} }),
     ['est', 'act'], ['#5a5a5a', function(v, r){ return r.act >= r.est ? '#21c66f' : '#ff4b4b' }], 130));
   box.appendChild(cw);
-  var tb = table([{t: 'Квартал'}, {t: 'Отчётный период'}, {t: 'Факт EPS'}, {t: 'Прогноз'}, {t: 'Сюрприз'}]);
+  var tb = table(cols(TX('ern_cols')));
   e.forEach(function(r){
     var tr = el('tr'); tr.appendChild(td('Q' + r.q + ' ' + r.y, 'l')); tr.appendChild(td(dmy(r.period), 'num'));
     tr.appendChild(td(r.act != null ? '$' + num(r.act, 2) : '—', 'num')); tr.appendChild(td(r.est != null ? '$' + num(r.est, 2) : '—', 'num'));
@@ -433,11 +439,11 @@ function desErn(box, d){
 }
 function desAnr(box, d){
   var c = consensus(d.anr);
-  if (!c) { box.appendChild(el('div', 'empty', 'Рейтингов аналитиков нет.')); return }
-  var b = el('div', 'blk'); b.appendChild(el('h4', null, 'Консенсус: ' + c.word + ' · ' + fmt(c.score, 1) + ' из 5'));
-  var lg = el('div', 'legend'); ['активно покупать', 'покупать', 'держать', 'продавать', 'активно продавать'].forEach(function(x, i){ var s = el('span'); var ic = el('i'); ic.style.background = ANR_COL[i]; s.appendChild(ic); s.appendChild(document.createTextNode(x)); lg.appendChild(s) });
+  if (!c) { box.appendChild(el('div', 'empty', TX('anr_none'))); return }
+  var b = el('div', 'blk'); b.appendChild(el('h4', null, TX('consensus', c.word, fmt(c.score, 1))));
+  var lg = el('div', 'legend'); TX('rec_l').forEach(function(x, i){ var s = el('span'); var ic = el('i'); ic.style.background = ANR_COL[i]; s.appendChild(ic); s.appendChild(document.createTextNode(x)); lg.appendChild(s) });
   b.appendChild(lg); box.appendChild(b);
-  var tb = table([{t: 'Месяц'}, {t: 'Распределение мнений', l: true}, {t: 'Купить'}, {t: 'Держать'}, {t: 'Продать'}, {t: 'Всего'}]);
+  var tb = table(cols(TX('anr_cols'), [1]));
   d.anr.forEach(function(r){
     var n = r.sb + r.b + r.h + r.s + r.ss, tr = el('tr');
     tr.appendChild(td(r.period.slice(0, 7), 'l'));
@@ -447,7 +453,7 @@ function desAnr(box, d){
   });
   box.appendChild(tb.t);
 }
-// перевод заголовков прямо в браузере, если сервер бота не смог (переводчики часто не пускают серверы Cloudflare)
+// Russian readers: headlines are translated right in the browser (translators often block Cloudflare servers)
 var trCache = {};
 try { trCache = JSON.parse(sessionStorage.getItem('tr_cache') || '{}') || {} } catch(e){}
 function translateHere(text){
@@ -462,8 +468,8 @@ function translateHere(text){
 }
 function desCn(box, d){
   var items = d.cn || [];
-  if (!items.length) { box.appendChild(el('div', 'empty', 'Свежих новостей по компании нет.')); return }
-  var raw = items.filter(function(n){ return n.en && n.h === n.en && !n._tr });
+  if (!items.length) { box.appendChild(el('div', 'empty', TX('cn_none'))); return }
+  var raw = I.ru ? items.filter(function(n){ return n.en && n.h === n.en && !n._tr }) : [];
   if (raw.length) {
     var sym = d.s;
     Promise.all(raw.map(function(n){ return translateHere(n.en).then(function(t){ n.h = t; n._tr = 1 }, function(){ n._tr = 1 }) })).then(function(){
@@ -473,23 +479,23 @@ function desCn(box, d){
   var ul = el('ul', 'news');
   items.forEach(function(n){
     var li = el('li');
-    li.appendChild(el('span', 't', new Date(n.t * 1000).toLocaleString('ru-RU', {day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit', timeZone: T.MSK})));
+    li.appendChild(el('span', 't', new Date(n.t * 1000).toLocaleString(I.date, {day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit', timeZone: T.MSK})));
     var a = el('a', null, n.h); if (/^https?:\/\//.test(n.url || '')) { a.href = n.url; a.target = '_blank'; a.rel = 'noopener' }
     li.appendChild(a);
-    if (n.en && n.en !== n.h) li.appendChild(el('div', 'lead', n.en));
+    if (I.ru && n.en && n.en !== n.h) li.appendChild(el('div', 'lead', n.en));
     li.appendChild(el('div', 'meta', n.src || ''));
     ul.appendChild(li);
   });
   box.appendChild(ul);
 }
 function desHds(box, d){
-  box.appendChild(el('div', 'note', 'Крупнейшие держатели (фонды, 13F) есть только в платных источниках. Здесь — сделки руководства и директоров на открытом рынке (форма 4 SEC).'));
+  box.appendChild(el('div', 'note', TX('hds_note')));
   var rows = d.ins || [];
-  if (!rows.length) { box.appendChild(el('div', 'empty', 'Сделок инсайдеров на открытом рынке за последнее время нет.')); return }
-  var tb = table([{t: 'Дата'}, {t: 'Кто', l: true}, {t: 'Сделка'}, {t: 'Акций'}, {t: 'Цена'}, {t: 'Сумма'}, {t: 'Осталось'}]);
+  if (!rows.length) { box.appendChild(el('div', 'empty', TX('hds_none'))); return }
+  var tb = table(cols(TX('hds_cols'), [1]));
   rows.forEach(function(r){
     var tr = el('tr'); tr.appendChild(td(dmy(r.date), 'l')); tr.appendChild(td(r.name, 'l'));
-    tr.appendChild(td(r.code === 'P' ? 'ПОКУПКА' : 'ПРОДАЖА', 'num ' + (r.code === 'P' ? 'up' : 'down')));
+    tr.appendChild(td(TX(r.code === 'P' ? 't_buy' : 't_sell'), 'num ' + (r.code === 'P' ? 'up' : 'down')));
     tr.appendChild(td(fmt(Math.abs(r.ch), 0), 'num')); tr.appendChild(td(r.px ? '$' + num(r.px, 2) : '—', 'num'));
     tr.appendChild(td(r.px ? money(Math.abs(r.ch) * r.px) : '—', 'num')); tr.appendChild(td(r.sh != null ? fmt(r.sh, 0) : '—', 'num'));
     tb.body.appendChild(tr);
@@ -498,7 +504,7 @@ function desHds(box, d){
 }
 RENDER['p-des'] = function(){ if (des.data) renderDes() };
 
-/* ======================= HP и COMP ======================= */
+/* ======================= HP and COMP ======================= */
 var hp = {tab: 'HP', sym: '', range: '1y', comp: [], data: null};
 try { var savedComp = JSON.parse(store('comp_syms') || '[]'); if (Array.isArray(savedComp)) hp.comp = savedComp.slice(0, 6) } catch(e){}
 function history(sym, range){ return api('/api/history?s=' + encodeURIComponent(sym) + '&r=' + range, {ttl: 600}) }
@@ -516,16 +522,16 @@ function openComp(syms, range){
 }
 tabs($('hp-tabs'), 't', function(t){ hp.tab = t; renderHP() });
 tabs($('hp-tabs'), 'r', function(r){ hp.range = r; renderHP() });
-var RANGE_RU = {'1m': '1 мес.', '3m': '3 мес.', '6m': '6 мес.', ytd: 'с начала года', '1y': '1 год', '2y': '2 года', '5y': '5 лет'};
+var RANGES = TX('ranges');
 function renderHP(){
   var box = $('hp-body');
   $('hp-code').textContent = hp.tab;
-  if (!T.api()) return noApi(box, 'История цен');
+  if (!T.api()) return noApi(box, TX('m_hp'));
   if (hp.tab === 'COMP') return renderComp(box);
-  if (!hp.sym) { clear(box).appendChild(el('div', 'empty', 'Наберите HP и тикер: HP AAPL, HP BTC 5Y, HP SBER, HP НЕФТЬ.')); $('hp-title').textContent = 'ИСТОРИЯ ЦЕН'; return }
-  $('hp-title').textContent = 'ИСТОРИЯ ЦЕН · ' + hp.sym;
+  if (!hp.sym) { clear(box).appendChild(el('div', 'empty', TX('hp_ask'))); $('hp-title').textContent = TX('hp_x'); return }
+  $('hp-title').textContent = TX('hp_x', hp.sym);
   var sym = hp.sym, range = hp.range;
-  loading(box, 'Загружаю ' + sym);
+  loading(box, TX('loading_x', sym));
   history(sym, range).then(function(h){
     if (sym !== hp.sym || range !== hp.range || hp.tab !== 'HP') return;
     hp.data = h; drawHP(box, h);
@@ -536,31 +542,31 @@ function drawHP(box, h){
   var n = h.c.length, first = h.c[0], last = h.c[n - 1];
   var lows = h.l.filter(function(x){ return x != null }), highs = h.h.filter(function(x){ return x != null });
   var vol = h.v.filter(function(x){ return x }), avgv = vol.length ? vol.reduce(function(a, b){ return a + b }, 0) / vol.length : null;
-  $('hp-sub').textContent = (h.name || '') + ' · ' + (h.src || '');
+  $('hp-sub').textContent = ((I.ru && h.name_ru) || h.name || '') + ' · ' + (h.src || '');
   var st = el('div', 'stat');
-  [['За ' + RANGE_RU[h.range || hp.range], pct((last / first - 1) * 100), cls(last - first)], ['Сейчас', price(last)], ['Мин.', price(Math.min.apply(null, lows))],
-   ['Макс.', price(Math.max.apply(null, highs))], ['Ср. объём', avgv ? fmt(avgv, 0) : '—'], ['Точек', String(n)]].forEach(function(x){
+  [[TX('over_range', RANGES[h.range || hp.range]), pct((last / first - 1) * 100), cls(last - first)], [TX('hp_now'), price(last)], [TX('hp_min'), price(Math.min.apply(null, lows))],
+   [TX('hp_max'), price(Math.max.apply(null, highs))], [TX('hp_vol'), avgv ? fmt(avgv, 0) : '—'], [TX('hp_pts'), String(n)]].forEach(function(x){
     var s = el('span', null, x[0] + ': '); s.appendChild(el('b', x[2] || null, x[1])); st.appendChild(s);
   });
-  var csv = el('button', 'chipbtn', '⤓ CSV'); csv.title = 'Скачать таблицу';
+  var csv = el('button', 'chipbtn', '⤓ CSV'); csv.title = TX('csv_t');
   var csvText = function(){
     var lines = ['date,open,high,low,close,volume'];
     for (var i = 0; i < n; i++) lines.push([new Date(h.t[i] * 1000).toISOString().slice(0, 10), h.o[i], h.h[i], h.l[i], h.c[i], h.v[i] == null ? '' : h.v[i]].join(','));
     return lines.join('\n') + '\n';
   };
-  csv.onclick = function(){ if (!downloadText(h.s.replace(/[^A-Za-z0-9_.-]/g, '_') + '_' + (h.range || hp.range) + '.csv', csvText())) alert('Не удалось сохранить файл') };
-  var cp = el('button', 'chipbtn', '⧉ КОПИРОВАТЬ'); cp.title = 'Скопировать таблицу (для Excel)';
-  cp.onclick = function(){ copyText(csvText().replace(/,/g, '\t')).then(function(){ cp.textContent = '✓ СКОПИРОВАНО' }, function(e){ cp.textContent = '✕ ' + e.message }) };
+  csv.onclick = function(){ if (!downloadText(h.s.replace(/[^A-Za-z0-9_.-]/g, '_') + '_' + (h.range || hp.range) + '.csv', csvText())) alert(TX('save_fail')) };
+  var cp = el('button', 'chipbtn', TX('copy')); cp.title = TX('copy_t');
+  cp.onclick = function(){ copyText(csvText().replace(/,/g, '\t')).then(function(){ cp.textContent = TX('copied') }, function(e){ cp.textContent = '✕ ' + e.message }) };
   st.appendChild(csv); st.appendChild(cp);
   box.appendChild(st);
   var cv = el('div', 'cv'); cv.style.flex = 'none'; cv.style.height = '150px'; cv.style.minHeight = '150px'; box.appendChild(cv);
   drawLines(cv, [{name: h.s, color: last >= first ? '#21c66f' : '#ff4b4b', t: h.t, v: h.c}], {pct: false});
   var wrap = el('div'); wrap.style.flex = '1'; wrap.style.overflow = 'auto';
-  var tb = table([{t: 'Дата'}, {t: 'Откр.'}, {t: 'Макс.'}, {t: 'Мин.'}, {t: 'Закр.'}, {t: 'Изм.'}, {t: 'Объём'}]);
+  var tb = table(cols(TX('hp_cols')));
   var frag = document.createDocumentFragment();
   for (var i = n - 1; i >= 0; i--) {
     var tr = el('tr'), c = i > 0 ? (h.c[i] / h.c[i - 1] - 1) * 100 : null;
-    tr.appendChild(td(new Date(h.t[i] * 1000).toLocaleDateString('ru-RU', {timeZone: 'UTC'}), 'l'));
+    tr.appendChild(td(dmy(new Date(h.t[i] * 1000).toISOString()), 'l'));
     tr.appendChild(td(price(h.o[i]), 'num')); tr.appendChild(td(price(h.h[i]), 'num')); tr.appendChild(td(price(h.l[i]), 'num'));
     tr.appendChild(td(price(h.c[i]), 'num')); tr.appendChild(chg(c)); tr.appendChild(td(h.v[i] ? fmt(h.v[i], 0) : '—', 'num'));
     frag.appendChild(tr);
@@ -568,33 +574,33 @@ function drawHP(box, h){
   tb.body.appendChild(frag); wrap.appendChild(tb.t); box.appendChild(wrap);
 }
 function renderComp(box){
-  $('hp-title').textContent = 'СРАВНЕНИЕ' + (hp.comp.length ? ' · ' + hp.comp.join(' / ') : '');
+  $('hp-title').textContent = TX('comp_x', hp.comp.join(' / '));
   clear(box);
   var f = el('form', 'frm'); f.autocomplete = 'off';
-  var inp = el('input', 't'); inp.placeholder = '+ тикер'; inp.style.width = '140px'; f.appendChild(inp);
-  var add = el('button', 'btn', 'ДОБАВИТЬ'); add.type = 'submit'; f.appendChild(add);
+  var inp = el('input', 't'); inp.placeholder = TX('add_ticker'); inp.style.width = '140px'; f.appendChild(inp);
+  var add = el('button', 'btn', TX('add')); add.type = 'submit'; f.appendChild(add);
   hp.comp.forEach(function(s, i){
     var b = el('button', 'chipbtn', s + ' ✕'); b.type = 'button'; b.style.color = COLORS[i % COLORS.length];
     b.onclick = function(){ hp.comp.splice(i, 1); store('comp_syms', JSON.stringify(hp.comp)); renderHP() }; f.appendChild(b);
   });
   f.onsubmit = function(e){ e.preventDefault(); inp.value.split(/[\s,]+/).filter(Boolean).forEach(function(s){ s = upSym(s); if (hp.comp.indexOf(s) < 0 && hp.comp.length < 6) hp.comp.push(s) }); store('comp_syms', JSON.stringify(hp.comp)); renderHP() };
   box.appendChild(f);
-  if (!hp.comp.length) { box.appendChild(el('div', 'empty', 'Добавьте 2–6 инструментов: COMP AAPL MSFT NVDA, COMP S&P DAX IMOEX, COMP BTC ЗОЛОТО. График показывает изменение в % от начала периода.')); return }
+  if (!hp.comp.length) { box.appendChild(el('div', 'empty', TX('comp_empty'))); return }
   var cv = el('div', 'cv'); box.appendChild(cv);
-  var note = el('div', 'note', 'Загружаю…'); box.appendChild(note);
+  var note = el('div', 'note', TX('loading_d')); box.appendChild(note);
   var syms = hp.comp.slice(), range = hp.range;
   Promise.all(syms.map(function(s){ return history(s, range).catch(function(e){ return {error: e.message, s: s} }) })).then(function(arr){
     if (hp.tab !== 'COMP' || range !== hp.range || syms.join() !== hp.comp.join()) return;
     var series = [], bad = [];
-    arr.forEach(function(h, i){ if (h.error || !h.c) bad.push(syms[i] + ': ' + (h.error || 'нет данных')); else series.push({name: syms[i], color: COLORS[i % COLORS.length], t: h.t, v: h.c}) });
+    arr.forEach(function(h, i){ if (h.error || !h.c) bad.push(syms[i] + ': ' + (h.error || TX('no_data'))); else series.push({name: syms[i], color: COLORS[i % COLORS.length], t: h.t, v: h.c}) });
     drawLines(cv, series, {pct: true});
     var rows = series.map(function(s){ return s.name + ' ' + pct((s.v[s.v.length - 1] / s.v[0] - 1) * 100) });
-    note.textContent = 'За ' + RANGE_RU[range] + ': ' + rows.join(' · ') + (bad.length ? ' · не загрузилось: ' + bad.join('; ') : '');
+    note.textContent = TX('over_range', RANGES[range]) + ': ' + rows.join(' · ') + (bad.length ? TX('not_loaded') + bad.join('; ') : '');
   });
 }
 RENDER['p-hp'] = function(){ if (hp.tab === 'COMP' ? hp.comp.length : hp.sym) { if (!$('hp-body').querySelector('.cv canvas')) renderHP() } };
 
-// линии на canvas: по времени, в % от начала (сравнение) или в ценах
+// lines on a canvas: over time, in % from the start (comparison) or in prices
 var canvases = [];
 function drawLines(box, series, opts){
   box.__draw = function(){ paintLines(box, series, opts) };
@@ -608,7 +614,7 @@ function paintLines(box, series, opts){
   var w = box.clientWidth, h = box.clientHeight; if (!w || !h) return;
   var dpr = window.devicePixelRatio || 1; cv.width = w * dpr; cv.height = h * dpr;
   var g = cv.getContext('2d'); g.scale(dpr, dpr);
-  if (!series.length) { g.fillStyle = '#5a5a5a'; g.font = '12px monospace'; g.fillText('Нет данных', 12, 20); return }
+  if (!series.length) { g.fillStyle = '#5a5a5a'; g.font = '12px monospace'; g.fillText(TX('no_data_c'), 12, 20); return }
   var pts = series.map(function(s){ var b = s.v[0]; return s.v.map(function(v, i){ return [s.t[i], opts.pct ? (v / b - 1) * 100 : v] }) });
   var t0 = Infinity, t1 = -Infinity, lo = Infinity, hi = -Infinity;
   pts.forEach(function(p){ p.forEach(function(x){ if (x[1] == null || isNaN(x[1])) return; t0 = Math.min(t0, x[0]); t1 = Math.max(t1, x[0]); lo = Math.min(lo, x[1]); hi = Math.max(hi, x[1]) }) });
@@ -625,7 +631,7 @@ function paintLines(box, series, opts){
   g.textBaseline = 'top';
   for (var j = 0; j <= 4; j++) {
     var tt = t0 + (t1 - t0) * j / 4, x = X(tt);
-    g.fillStyle = '#5a5a5a'; var lb = new Date(tt * 1000).toLocaleDateString('ru-RU', {day: '2-digit', month: '2-digit', year: '2-digit', timeZone: 'UTC'});
+    g.fillStyle = '#5a5a5a'; var lb = dmShort(new Date(tt * 1000).toISOString());
     g.fillText(lb, Math.min(Math.max(L, x - 24), L + W - 50), Tp + H + 5);
   }
   pts.forEach(function(p, i){
@@ -641,23 +647,26 @@ function paintLines(box, series, opts){
   }
 }
 
-/* ======================= EQS: скринер ======================= */
+/* ======================= EQS: screener ======================= */
 var eqs = {sec: '', mcap: '', pemax: '', pemin: '', dymin: '', q: '', sort: 'mcap', dir: -1, preset: ''};
 try { var se = JSON.parse(store('eqs') || 'null'); if (se) Object.keys(eqs).forEach(function(k){ if (se[k] != null) eqs[k] = se[k] }) } catch(e){}
+var EQS_NAMES = TX('eqs_p');
 var EQS_PRESETS = {
-  '': ['ВСЕ', null], leaders: ['ЛИДЕРЫ ДНЯ', {sort: 'ch', dir: -1}], losers: ['АУТСАЙДЕРЫ', {sort: 'ch', dir: 1}],
-  value: ['ДЕШЁВЫЕ P/E', {sort: 'pe', dir: 1, pemin: '0.01'}], div: ['ДИВИДЕНДЫ', {sort: 'dy', dir: -1, dymin: '1'}],
-  growth: ['РОСТ ВЫРУЧКИ', {sort: 'revg', dir: -1}], year: ['ЛУЧШИЕ ЗА ГОД', {sort: 'r52', dir: -1}]
+  '': [EQS_NAMES[''], null], leaders: [EQS_NAMES.leaders, {sort: 'ch', dir: -1}], losers: [EQS_NAMES.losers, {sort: 'ch', dir: 1}],
+  value: [EQS_NAMES.value, {sort: 'pe', dir: 1, pemin: '0.01'}], div: [EQS_NAMES.div, {sort: 'dy', dir: -1, dymin: '1'}],
+  growth: [EQS_NAMES.growth, {sort: 'revg', dir: -1}], year: [EQS_NAMES.year, {sort: 'r52', dir: -1}]
 };
-var EQS_COLS = [
-  {k: 's', t: 'Тикер', sort: 1}, {k: 'n', t: 'Компания', sort: 1, l: 1}, {k: 'sec', t: 'Сектор', sort: 1, l: 1}, {k: 'px', t: 'Цена', sort: 1},
-  {k: 'ch', t: 'День', sort: 1}, {k: 'mcap', t: 'Кап.', sort: 1}, {k: 'pe', t: 'P/E', sort: 1}, {k: 'fpe', t: 'P/E ф.', sort: 1},
-  {k: 'dy', t: 'Див.', sort: 1}, {k: 'revg', t: 'Выручка', sort: 1, title: 'рост выручки за год'}, {k: 'roe', t: 'ROE', sort: 1},
-  {k: 'rytd', t: 'С н.г.', sort: 1}, {k: 'r52', t: 'Год', sort: 1}, {k: 'beta', t: 'Бета', sort: 1}
-];
+var EQS_T = TX('eqs_cols');
+var EQS_COLS = ['s', 'n', 'sec', 'px', 'ch', 'mcap', 'pe', 'fpe', 'dy', 'revg', 'roe', 'rytd', 'r52', 'beta'].map(function(k){
+  return {k: k, t: EQS_T[k], sort: 1, l: k === 'n' || k === 'sec' ? 1 : 0, title: k === 'revg' ? TX('revg_t') : null};
+});
+// presets can be named in either language: EQS GAINERS, EQS ЛИДЕРЫ
+var EQS_ALIAS = {GAINERS: 'leaders', LEADERS: 'leaders', 'ЛИДЕРЫ': 'leaders', LOSERS: 'losers', 'АУТСАЙДЕРЫ': 'losers', VALUE: 'value', CHEAP: 'value',
+  'ДЕШЁВЫЕ': 'value', 'ДЕШЕВЫЕ': 'value', DIV: 'div', DIVIDENDS: 'div', 'ДИВИДЕНДЫ': 'div', GROWTH: 'growth', 'РОСТ': 'growth', YEAR: 'year', 'ГОД': 'year', ALL: '', 'ВСЕ': ''};
 function openEqs(preset){
   if (preset != null) {
-    var key = Object.keys(EQS_PRESETS).find(function(k){ return k === preset || EQS_PRESETS[k][0].indexOf(String(preset).toUpperCase()) === 0 });
+    var P = String(preset).toUpperCase();
+    var key = EQS_PRESETS[preset] ? preset : EQS_ALIAS[P] != null ? EQS_ALIAS[P] : Object.keys(EQS_PRESETS).find(function(k){ return EQS_PRESETS[k][0].indexOf(P) === 0 });
     if (key != null) applyPreset(key);
   }
   T.show('p-eqs'); renderEqs();
@@ -671,7 +680,7 @@ function eqsFilter(rows){
   var n = function(x){ return x === '' || x == null ? null : parseFloat(String(x).replace(',', '.')) };
   var mc = n(eqs.mcap), pmax = n(eqs.pemax), pmin = n(eqs.pemin), dmin = n(eqs.dymin), q = String(eqs.q || '').toLowerCase();
   return rows.filter(function(r){
-    if (eqs.sec && r.sec !== eqs.sec) return false;
+    if (eqs.sec && I.sector(r.sec) !== I.sector(eqs.sec)) return false;
     if (mc != null && !((r.mcap || 0) >= mc * 1000)) return false;
     if (pmax != null && !(r.pe != null && r.pe > 0 && r.pe <= pmax)) return false;
     if (pmin != null && !(r.pe != null && r.pe >= pmin)) return false;
@@ -683,44 +692,44 @@ function eqsFilter(rows){
 function renderEqs(){
   var box = $('eqs-body');
   page('stocks.json', 120).then(function(d){ drawEqs(box, d) }).catch(function(e){
-    clear(box).appendChild(el('div', 'empty', 'Данные скринера появятся после следующего запуска бота (docs/stocks.json). ' + e.message));
+    clear(box).appendChild(el('div', 'empty', TX('eqs_wait') + e.message));
   });
 }
 function drawEqs(box, d){
   var keepScroll = box.scrollTop;
   clear(box);
   var rows = d.stocks || [];
-  $('eqs-sub').textContent = rows.length + ' компаний · ' + (d.updated ? T.hm(d.updated) + ' МСК' : '');
+  $('eqs-sub').textContent = TX('n_companies', rows.length) + ' · ' + (d.updated ? TX('msk_at', T.hm(d.updated)) : '');
   var pr = el('div', 'ptabs');
   Object.keys(EQS_PRESETS).forEach(function(k){ var b = el('button', eqs.preset === k ? 'on' : null, EQS_PRESETS[k][0]); b.onclick = function(){ applyPreset(k); renderEqs() }; pr.appendChild(b) });
   pr.appendChild(el('span', 'sp')); box.appendChild(pr);
   var f = el('div', 'frm');
   var secs = [];
-  rows.forEach(function(r){ if (secs.indexOf(r.sec) < 0) secs.push(r.sec) });
-  var sel = el('select'); sel.appendChild(new Option('все секторы', ''));
-  secs.sort().forEach(function(s){ sel.appendChild(new Option(s, s)) }); sel.value = eqs.sec;
+  rows.forEach(function(r){ var x = I.sector(r.sec); if (secs.indexOf(x) < 0) secs.push(x) });
+  var sel = el('select'); sel.appendChild(new Option(TX('all_sectors'), ''));
+  secs.sort().forEach(function(s){ sel.appendChild(new Option(s, s)) }); sel.value = eqs.sec ? I.sector(eqs.sec) : '';
   var field = function(label, key, ph, w){ var l = el('label', null, label); var i = el('input', 'n'); i.value = eqs[key]; i.placeholder = ph; if (w) i.style.width = w; i.inputMode = 'decimal';
     i.oninput = function(){ eqs[key] = i.value; eqs.preset = ''; store('eqs', JSON.stringify(eqs)); clearTimeout(drawEqs._t); drawEqs._t = setTimeout(function(){ drawEqs(box, d); var x = box.querySelector('input[data-k="' + key + '"]'); if (x) { x.focus(); x.setSelectionRange(x.value.length, x.value.length) } }, 300) };
     i.dataset.k = key; l.appendChild(i); return l };
   sel.onchange = function(){ eqs.sec = sel.value; eqs.preset = ''; store('eqs', JSON.stringify(eqs)); drawEqs(box, d) };
   f.appendChild(sel);
-  f.appendChild(field('кап. от, $ млрд', 'mcap', '100', '60px'));
-  f.appendChild(field('P/E от', 'pemin', '0', '50px'));
-  f.appendChild(field('до', 'pemax', '25', '50px'));
-  f.appendChild(field('див. от, %', 'dymin', '2', '50px'));
-  f.appendChild(field('поиск', 'q', 'тикер/название', '110px'));
+  f.appendChild(field(TX('f_mcap'), 'mcap', '100', '60px'));
+  f.appendChild(field(TX('f_pe'), 'pemin', '0', '50px'));
+  f.appendChild(field(TX('f_to'), 'pemax', '25', '50px'));
+  f.appendChild(field(TX('f_div'), 'dymin', '2', '50px'));
+  f.appendChild(field(TX('f_q'), 'q', TX('f_q_ph'), '110px'));
   box.appendChild(f);
   var list = eqsFilter(rows);
   var k = eqs.sort, dir = eqs.dir;
   list.sort(function(a, b){
-    var x = a[k], y = b[k];
+    var x = k === 'sec' ? I.sector(a[k]) : a[k], y = k === 'sec' ? I.sector(b[k]) : b[k];
     if (x == null && y == null) return 0; if (x == null) return 1; if (y == null) return -1;
     return (typeof x === 'string' ? x.localeCompare(y) : x - y) * dir;
   });
   var tb = table(EQS_COLS, {sortKey: k, sortDir: dir, onSort: function(key){ if (eqs.sort === key) eqs.dir = -eqs.dir; else { eqs.sort = key; eqs.dir = ['s', 'n', 'sec', 'pe', 'fpe', 'beta'].indexOf(key) >= 0 ? 1 : -1 } store('eqs', JSON.stringify(eqs)); drawEqs(box, d) }});
   list.forEach(function(r){
     var tr = el('tr', 'row'); tr.dataset.s = r.s;
-    tr.appendChild(td(r.s, 'l tkc')); tr.appendChild(td(r.n, 'l')); tr.appendChild(td(r.sec, 'l'));
+    tr.appendChild(td(r.s, 'l tkc')); tr.appendChild(td(r.n, 'l')); tr.appendChild(td(I.sector(r.sec), 'l'));
     tr.appendChild(td(price(r.px), 'num')); tr.appendChild(chg(r.ch)); tr.appendChild(td(r.mcap ? money(r.mcap * 1e6) : '—', 'num'));
     tr.appendChild(td(num(r.pe, 1), 'num')); tr.appendChild(td(num(r.fpe, 1), 'num')); tr.appendChild(td(r.dy ? num(r.dy, 2) + '%' : '—', 'num'));
     tr.appendChild(chg(r.revg, 0)); tr.appendChild(td(r.roe != null ? num(r.roe, 0) + '%' : '—', 'num'));
@@ -729,12 +738,12 @@ function drawEqs(box, d){
   });
   tb.t.onclick = function(e){ var tr = e.target.closest('tr.row'); if (tr) openDes(tr.dataset.s, 'DES') };
   box.appendChild(tb.t);
-  box.appendChild(el('div', 'note', 'Найдено: ' + list.length + '. Нажмите на строку — карточка компании. Мультипликаторы обновляются раз в сутки (Finnhub), цены — каждые 5–10 минут (Yahoo).'));
+  box.appendChild(el('div', 'note', TX('eqs_found', list.length)));
   box.scrollTop = keepScroll;
 }
 RENDER['p-eqs'] = function(){ if (!$('eqs-body').querySelector('table')) renderEqs() };
 
-/* ======================= IMAP: тепловая карта ======================= */
+/* ======================= IMAP: heat map ======================= */
 var imapMode = 'ch';
 tabs($('imap-tabs'), 'm', function(m){ imapMode = m; renderImap() });
 var IMAP_SCALE = {ch: 3, r5d: 6, rytd: 40, r52: 60};
@@ -767,17 +776,17 @@ function squarify(items, x, y, w, h){
 }
 function renderImap(){
   var box = $('imap');
-  page('stocks.json', 120).then(function(d){ drawImap(box, d) }).catch(function(e){ clear(box).appendChild(el('div', 'empty', 'Карта появится после следующего запуска бота (docs/stocks.json).')) });
+  page('stocks.json', 120).then(function(d){ drawImap(box, d) }).catch(function(e){ clear(box).appendChild(el('div', 'empty', TX('imap_wait'))) });
 }
 function drawImap(box, d){
   clear(box);
   var W = box.clientWidth, H = box.clientHeight;
   if (!W || !H) return;
   var rows = (d.stocks || []).filter(function(r){ return r.mcap > 0 });
-  $('imap-sub').textContent = d.updated ? 'цены ' + T.hm(d.updated) + ' МСК · размер = капитализация' : '';
-  if (!rows.length) { box.appendChild(el('div', 'empty', 'Капитализации компаний ещё загружаются — карта появится в течение часа после запуска бота.')); return }
+  $('imap-sub').textContent = d.updated ? TX('imap_sub', T.hm(d.updated)) : '';
+  if (!rows.length) { box.appendChild(el('div', 'empty', TX('imap_mcap_wait'))); return }
   var secs = {};
-  rows.forEach(function(r){ (secs[r.sec] = secs[r.sec] || {sec: r.sec, v: 0, rows: []}); secs[r.sec].v += r.mcap; secs[r.sec].rows.push(r) });
+  rows.forEach(function(r){ var k = I.sector(r.sec); (secs[k] = secs[k] || {sec: k, v: 0, rows: []}); secs[k].v += r.mcap; secs[k].rows.push(r) });
   var list = Object.keys(secs).map(function(k){ return secs[k] }).sort(function(a, b){ return b.v - a.v });
   var total = list.reduce(function(s, x){ return s + x.v }, 0), area = W * H;
   list.forEach(function(s){ s.a = s.v / total * area });
@@ -793,7 +802,7 @@ function drawImap(box, d){
       if (c.w > 90 && c.h > 60) tile.style.fontSize = '13px';
       tile.onclick = function(){ openDes(r.s, 'DES') };
       tile.onmousemove = function(e){ tip.style.display = 'block'; tip.style.left = Math.min(e.clientX + 12, window.innerWidth - 220) + 'px'; tip.style.top = (e.clientY + 12) + 'px';
-        tip.textContent = r.s + ' · ' + r.n + ' · ' + price(r.px) + ' · ' + pct(v) + ' · кап. ' + money(r.mcap * 1e6) };
+        tip.textContent = r.s + ' · ' + r.n + ' · ' + price(r.px) + ' · ' + pct(v) + TX('mcap_s') + money(r.mcap * 1e6) };
       tile.onmouseleave = function(){ tip.style.display = 'none' };
       box.appendChild(tile);
     });
@@ -819,34 +828,34 @@ function renderGc(){
   $('gc-code').textContent = gc.tab;
   var box = $('gc-body');
   page('rates.json', 300).then(function(d){ ({GC: drawGc, CB: drawCb, WIRP: drawWirp}[gc.tab])(box, d) })
-    .catch(function(e){ clear(box).appendChild(el('div', 'empty', 'Кривые и ставки появятся после следующего запуска бота (docs/rates.json).')) });
+    .catch(function(e){ clear(box).appendChild(el('div', 'empty', TX('gc_wait'))) });
 }
 function drawGc(box, d){
   clear(box);
   var curves = d.curves || {}, codes = ['US', 'DE', 'UK', 'JP', 'RU'].filter(function(c){ return curves[c] });
-  $('gc-title').textContent = 'КРИВЫЕ ДОХОДНОСТИ'; $('gc-sub').textContent = d.updated ? 'обновлено ' + T.hm(d.updated) + ' МСК' : '';
+  $('gc-title').textContent = TX('gc_title'); $('gc-sub').textContent = d.updated ? TX('updated_at', T.hm(d.updated)) : '';
   var chips = el('div', 'gc-c');
   codes.forEach(function(c){
-    var b = el('button', 'chip' + (gc.sel.indexOf(c) >= 0 ? ' on' : ''), curves[c].flag + ' ' + curves[c].name);
+    var b = el('button', 'chip' + (gc.sel.indexOf(c) >= 0 ? ' on' : ''), curves[c].flag + ' ' + locName(curves[c]));
     b.style.color = gc.sel.indexOf(c) >= 0 ? GC_COL[c] : '';
     b.onclick = function(){ var i = gc.sel.indexOf(c); if (i >= 0) gc.sel.splice(i, 1); else gc.sel.push(c); store('gc_sel', JSON.stringify(gc.sel)); drawGc(box, d) };
     chips.appendChild(b);
   });
   box.appendChild(chips);
   var sel = gc.sel.filter(function(c){ return curves[c] });
-  if (!sel.length) { box.appendChild(el('div', 'empty', 'Выберите страны.')); return }
+  if (!sel.length) { box.appendChild(el('div', 'empty', TX('pick_countries'))); return }
   var wrap = el('div', 'gc-wrap'); box.appendChild(wrap);
   var single = sel.length === 1 ? curves[sel[0]] : null;
   var draw = function(){ drawCurves(wrap, sel.map(function(c){ return {c: c, cv: curves[c]} }), single) };
   wrap.__draw = draw; if (canvases.indexOf(wrap) < 0) canvases.push(wrap); draw();
-  if (single) box.appendChild(el('div', 'note', 'Сплошная — сейчас (' + dmy(single.date) + '), пунктир — неделю назад' + (single.md ? ', точки — месяц назад' : '') + '.'));
-  // таблица: срок × страна
+  if (single) box.appendChild(el('div', 'note', TX('gc_note', dmy(single.date), single.md)));
+  // table: term × country
   var labels = [];
   sel.forEach(function(c){ curves[c].t.forEach(function(t, i){ if (!labels.some(function(x){ return x[0] === t })) labels.push([t, curves[c].x[i]]) }) });
   labels.sort(function(a, b){ return a[1] - b[1] });
-  var cols = [{t: 'Срок'}];
-  sel.forEach(function(c){ cols.push({t: curves[c].flag + ' ' + c}); cols.push({t: 'нед.', title: 'изменение за неделю, б.п.'}) });
-  var tb = table(cols);
+  var gcols = [{t: TX('term')}];
+  sel.forEach(function(c){ gcols.push({t: curves[c].flag + ' ' + c}); gcols.push({t: TX('wk'), title: TX('wk_t')}) });
+  var tb = table(gcols);
   labels.forEach(function(L){
     var tr = el('tr'); tr.appendChild(td(L[0], 'l'));
     sel.forEach(function(c){
@@ -862,7 +871,7 @@ function drawGc(box, d){
   sel.forEach(function(c){
     var cv = curves[c], a = cv.t.indexOf('10Y'), b = cv.t.indexOf('2Y');
     var sp = a >= 0 && b >= 0 ? Math.round((cv.y[a] - cv.y[b]) * 100) : null;
-    fr.appendChild(td(sp == null ? '—' : sp + ' б.п.', 'num ' + (sp < 0 ? 'down' : ''))); fr.appendChild(td(sp != null && sp < 0 ? 'инв.' : '', 'num'));
+    fr.appendChild(td(sp == null ? '—' : sp + TX('bp'), 'num ' + (sp < 0 ? 'down' : ''))); fr.appendChild(td(sp != null && sp < 0 ? TX('inv_s') : '', 'num'));
   });
   foot.appendChild(fr); tb.t.appendChild(foot);
   box.appendChild(tb.t);
@@ -894,50 +903,51 @@ function drawCurves(wrap, list, single){
     if (single) { if (x.cv.m) path(x.cv.x, x.cv.m, col, '1 4', 1.4); if (x.cv.w) path(x.cv.x, x.cv.w, col, '5 4', 1.4) }
     path(x.cv.x, x.cv.y, col, null, 2.2);
     x.cv.x.forEach(function(xx, i){ var c = document.createElementNS(NS, 'circle'); c.setAttribute('cx', X(xx)); c.setAttribute('cy', Y(x.cv.y[i])); c.setAttribute('r', 2.6); c.setAttribute('fill', col);
-      var t = document.createElementNS(NS, 'title'); t.textContent = x.cv.name + ' ' + x.cv.t[i] + ': ' + fmt(x.cv.y[i], 2) + '%'; c.appendChild(t); s.appendChild(c) });
+      var t = document.createElementNS(NS, 'title'); t.textContent = locName(x.cv) + ' ' + x.cv.t[i] + ': ' + fmt(x.cv.y[i], 2) + '%'; c.appendChild(t); s.appendChild(c) });
   });
   wrap.appendChild(s);
 }
 function drawCb(box, d){
   clear(box);
-  $('gc-title').textContent = 'СТАВКИ ЦЕНТРОБАНКОВ'; $('gc-sub').textContent = 'BIS · ФРБ Нью-Йорка · ЦБ РФ';
+  $('gc-title').textContent = TX('cb_title'); $('gc-sub').textContent = TX('cb_src');
   var rows = d.cb || [];
-  if (!rows.length) { box.appendChild(el('div', 'empty', 'Данных пока нет.')); return }
-  var tb = table([{t: 'Центробанк'}, {t: 'Ставка'}, {t: 'Было'}, {t: 'Изм.'}, {t: 'С даты'}, {t: 'Данные на'}]);
+  if (!rows.length) { box.appendChild(el('div', 'empty', TX('no_data_yet'))); return }
+  var tb = table(cols(TX('cb_cols')));
   rows.forEach(function(c){
-    var tr = el('tr'); tr.appendChild(td(c.flag + ' ' + c.name, 'l'));
+    var tr = el('tr'); tr.appendChild(td(c.flag + ' ' + locName(c), 'l'));
     tr.appendChild(td(c.lo != null ? num(c.lo, 2) + '–' + num(c.hi, 2) + '%' : num(c.rate, 2) + '%', 'num'));
     tr.appendChild(td(c.prev != null ? num(c.prev, 2) + '%' : '—', 'num'));
     var dlt = c.prev != null ? Math.round((c.rate - c.prev) * 100) : null;
-    tr.appendChild(td(dlt == null ? '—' : (dlt > 0 ? '+' : '') + dlt + ' б.п.', 'num ' + (dlt > 0 ? 'up' : dlt < 0 ? 'down' : 'flat')));
+    tr.appendChild(td(dlt == null ? '—' : (dlt > 0 ? '+' : '') + dlt + TX('bp'), 'num ' + (dlt > 0 ? 'up' : dlt < 0 ? 'down' : 'flat')));
     tr.appendChild(td(c.since ? dmy(c.since) : '—', 'num')); tr.appendChild(td(c.date ? dmy(c.date) : '—', 'num'));
     tb.body.appendChild(tr);
   });
   box.appendChild(tb.t);
-  box.appendChild(el('div', 'note', 'Для ФРС — целевой диапазон ставки по федеральным фондам. Данные BIS обновляются раз в неделю; ставки ФРС и ЦБ РФ — каждый день.'));
+  box.appendChild(el('div', 'note', TX('cb_note')));
 }
 function drawWirp(box, d){
   clear(box);
   var w = d.wirp;
-  $('gc-title').textContent = 'WIRP · ОЖИДАНИЯ ПО СТАВКЕ ФРС'; $('gc-sub').textContent = 'фьючерсы на ставку по фед. фондам';
-  if (!w || !w.meetings || !w.meetings.length) { box.appendChild(el('div', 'empty', 'Данных пока нет — появятся после следующего обновления.')); return }
+  $('gc-title').textContent = TX('wirp_title'); $('gc-sub').textContent = TX('wirp_sub');
+  if (!w || !w.meetings || !w.meetings.length) { box.appendChild(el('div', 'empty', TX('wirp_wait'))); return }
   var st = el('div', 'stat');
-  [['Целевой диапазон', num(w.lo, 2) + '–' + num(w.hi, 2) + '%'], ['Эффективная ставка', num(w.effr, 2) + '%'], ['На дату', dmy(w.date)]].forEach(function(x){ var s = el('span', null, x[0] + ': '); s.appendChild(el('b', null, x[1])); st.appendChild(s) });
+  [[TX('w_target'), num(w.lo, 2) + '–' + num(w.hi, 2) + '%'], [TX('w_effr'), num(w.effr, 2) + '%'], [TX('w_asof'), dmy(w.date)]].forEach(function(x){ var s = el('span', null, x[0] + ': '); s.appendChild(el('b', null, x[1])); st.appendChild(s) });
   box.appendChild(st);
-  var tb = table([{t: 'Заседание'}, {t: 'Ожид. ставка'}, {t: 'Изм.'}, {t: 'К текущей'}, {t: 'Вероятности', l: true}]);
+  var tb = table(cols(TX('wirp_cols'), [4]));
+  var pn = TX('w_probs');
   w.meetings.forEach(function(m){
     var tr = el('tr'); tr.appendChild(td(dmy(m.date), 'l')); tr.appendChild(td(num(m.after, 3) + '%', 'num'));
-    tr.appendChild(td((m.d_bp > 0 ? '+' : '') + num(m.d_bp, 1) + ' б.п.', 'num ' + (m.d_bp > 0.5 ? 'up' : m.d_bp < -0.5 ? 'down' : 'flat')));
-    tr.appendChild(td((m.cum_bp > 0 ? '+' : '') + num(m.cum_bp, 1) + ' б.п.', 'num ' + (m.cum_bp > 0.5 ? 'up' : m.cum_bp < -0.5 ? 'down' : 'flat')));
+    tr.appendChild(td((m.d_bp > 0 ? '+' : '') + num(m.d_bp, 1) + TX('bp'), 'num ' + (m.d_bp > 0.5 ? 'up' : m.d_bp < -0.5 ? 'down' : 'flat')));
+    tr.appendChild(td((m.cum_bp > 0 ? '+' : '') + num(m.cum_bp, 1) + TX('bp'), 'num ' + (m.cum_bp > 0.5 ? 'up' : m.cum_bp < -0.5 ? 'down' : 'flat')));
     var cell = el('td', 'l'), bar = el('div', 'prob');
-    var parts = [['cut50', '#a01818', 'снижение 0,5'], ['cut', '#ff4b4b', 'снижение'], ['hold', '#6a6a6a', 'без изменений'], ['hike', '#21c66f', 'повышение'], ['hike50', '#0f7a3e', 'повышение 0,5']];
+    var parts = [['cut50', '#a01818', pn.cut50], ['cut', '#ff4b4b', pn.cut], ['hold', '#6a6a6a', pn.hold], ['hike', '#21c66f', pn.hike], ['hike50', '#0f7a3e', pn.hike50]];
     var lbl = [];
     parts.forEach(function(p){ var v = m[p[0]]; if (!v) return; var i = el('i'); i.style.width = v + '%'; i.style.background = p[1]; i.title = p[2] + ': ' + v + '%'; bar.appendChild(i); lbl.push(p[2] + ' ' + v + '%') });
     cell.appendChild(bar); cell.appendChild(el('div', 'note', lbl.join(' · '))); cell.lastChild.style.padding = '2px 0 0';
     tr.appendChild(cell); tb.body.appendChild(tr);
   });
   box.appendChild(tb.t);
-  box.appendChild(el('div', 'note', 'Метод CME FedWatch: средняя ставка месяца = 100 − цена фьючерса; изменение на заседании выводится из разницы до и после решения.'));
+  box.appendChild(el('div', 'note', TX('wirp_note')));
 }
 RENDER['p-gc'] = function(){ if (!$('gc-body').querySelector('table,svg')) renderGc() };
 
@@ -952,23 +962,23 @@ var My = (function(){
     saveLocal();
     if (!st.server) return;
     clearTimeout(pushT);
-    st.pending = (st.pending || 0) + 1;   // пока изменения не дошли до сервера, его старая копия их не затирает
+    st.pending = (st.pending || 0) + 1;   // until changes reach the server, its old copy does not overwrite them
     pushT = setTimeout(function(){
       api('/api/me', {method: 'POST', body: {w: st.w, p: st.p}}).then(function(d){ if (d.ok && st.pending === 1) { st.w = d.w; st.p = d.p; saveLocal(); render(true) } })
-        .catch(function(e){ st.msg = 'Не сохранилось на сервере: ' + e.message; render() })
+        .catch(function(e){ st.msg = TX('not_saved') + e.message; render() })
         .then(function(){ st.pending = Math.max(0, st.pending - 1) });
     }, 400);
   }
   function sync(){
     if (!T.api() || !T.hasIdentity()) { st.server = false; return Promise.resolve() }
-    return api('/api/me', {allowError: true}).then(function(d){
+    return api('/api/me' + (I.ru ? '?lang=ru' : ''), {allowError: true}).then(function(d){
       if (!d.ok) { st.server = false; return }
       st.server = true;
       st.alerts = d.alerts || [];
       if (st.pending) return;
       var lw = st.w.slice(), lp = st.p.slice();
       st.w = d.w || []; st.p = d.p || [];
-      // первый вход: переносим то, что было сохранено только в этом браузере
+      // first sign-in: move over what was saved only in this browser
       if (!st.synced && (lw.some(function(s){ return st.w.indexOf(s) < 0 }) || (!st.p.length && lp.length))) {
         lw.forEach(function(s){ if (st.w.indexOf(s) < 0) st.w.push(s) });
         if (!st.p.length) st.p = lp;
@@ -983,7 +993,7 @@ var My = (function(){
     if (!s.length || !T.api()) return Promise.resolve();
     return api('/api/quote?s=' + encodeURIComponent(s.join(','))).then(function(d){
       var q = d.quotes || {};
-      // ключи сервера: AAPL, BTC, MOEX:SBER, Brent — сопоставляем с тем, что в списке
+      // server keys: AAPL, BTC, MOEX:SBER, Brent — matched with what is in the list
       Object.keys(q).forEach(function(k){ st.quotes[k] = q[k] });
     }).catch(function(){});
   }
@@ -1006,14 +1016,18 @@ var My = (function(){
   function render(quiet){
     var box = $('my-body'), keep = box.scrollTop;
     $('my-code').textContent = st.tab;
-    $('my-sub').textContent = st.server ? '☁ общее с ботом' : 'только в этом браузере';
+    $('my-sub').textContent = TX(st.server ? 'shared' : 'local_only');
     if (quiet && box.contains(document.activeElement) && document.activeElement.tagName === 'INPUT') { patchQuotes(box); return }
-    // то, что человек уже начал вводить, не теряется при обновлении цен
+    // what the person started typing is not lost when prices refresh
     var drafts = {}, focused = document.activeElement && box.contains(document.activeElement) ? document.activeElement.dataset.k : null;
     if (!st.noDraft) box.querySelectorAll('input[data-k]').forEach(function(i){ if (i.value) drafts[i.dataset.k] = i.value });
     st.noDraft = false;
     clear(box);
-    if (st.msg) { box.appendChild(el('div', 'err', st.msg)); st.msg = '' }
+    // an error stays visible for 8 seconds even if prices refresh and the panel redraws meanwhile
+    if (st.msg) {
+      if (st.msg !== st.msgShown) { st.msgShown = st.msg; st.msgAt = Date.now() }
+      if (Date.now() - st.msgAt < 8000) box.appendChild(el('div', 'err', st.msg)); else st.msg = st.msgShown = '';
+    }
     ({W: renderW, PORT: renderPort, ALRT: renderAlrt})[st.tab](box);
     box.querySelectorAll('input[data-k]').forEach(function(i){ if (drafts[i.dataset.k] && !i.value) i.value = drafts[i.dataset.k]; if (i.dataset.k === focused) i.focus() });
     box.scrollTop = keep;
@@ -1037,35 +1051,36 @@ var My = (function(){
   }
   function openSym(s){ if (isStock(s)) openDes(s, 'DES'); else T.runCommand(s) }
   function renderW(box){
-    var fm = form('+ AAPL BTC SBER НЕФТЬ', 'ДОБАВИТЬ', function(v){ st.noDraft = true; addWatch(v.split(/[\s,]+/).filter(Boolean)) });
+    var fm = form(TX('w_ph'), TX('add'), function(v){ st.noDraft = true; addWatch(v.split(/[\s,]+/).filter(Boolean)) });
     box.appendChild(fm.f);
-    if (!st.w.length) { box.appendChild(el('div', 'empty', 'Список пуст. Добавьте инструменты: акции США (AAPL), Мосбиржи (SBER), крипту (BTC), индексы и сырьё (S&P, НЕФТЬ, ЗОЛОТО). В Telegram то же самое — команда /watch.')); return }
-    var tb = table([{t: 'Тикер'}, {t: 'Название', l: true}, {t: 'Цена'}, {t: 'День'}, {t: ''}]);
+    if (!st.w.length) { box.appendChild(el('div', 'empty', TX('w_empty'))); return }
+    var tb = table(cols(TX('w_cols'), [1]));
     st.w.forEach(function(s){
       var x = q(s) || {}, tr = el('tr', 'row'); tr.dataset.s = s;
-      tr.appendChild(td(s, 'l tkc')); tr.appendChild(td(x.name && x.name !== s ? x.name : '', 'l'));
+      var nm = (I.ru && x.name_ru) || x.name;
+      tr.appendChild(td(s, 'l tkc')); tr.appendChild(td(nm && nm !== s ? nm : '', 'l'));
       var p = td(x.px != null ? price(x.px) + (x.cur === '₽' ? ' ₽' : '') : '—', 'num'); p.dataset.k = 'p'; tr.appendChild(p);
       var c = chg(x.ch); c.dataset.k = 'c'; tr.appendChild(c);
-      var xx = el('td', 'x'), del = el('button', null, '✕'); del.title = 'убрать';
+      var xx = el('td', 'x'), del = el('button', null, '✕'); del.title = TX('remove');
       del.onclick = function(e){ e.stopPropagation(); st.w = st.w.filter(function(z){ return z !== s }); push(); render() };
       xx.appendChild(del); tr.appendChild(xx);
       tr.onclick = function(){ openSym(s) };
       tb.body.appendChild(tr);
     });
     box.appendChild(tb.t);
-    box.appendChild(el('div', 'note', 'Цены обновляются каждые 30 секунд. Нажмите на строку — карточка или график.'));
+    box.appendChild(el('div', 'note', TX('w_note')));
   }
   function renderPort(box){
-    var qty = el('input', 'n'); qty.placeholder = 'кол-во'; qty.inputMode = 'decimal'; qty.dataset.k = 'port-q';
-    var pr = el('input', 'n'); pr.placeholder = 'цена'; pr.inputMode = 'decimal'; pr.title = 'пусто — по текущей цене'; pr.dataset.k = 'port-p';
-    var sell = el('button', 'btn', 'ПРОДАТЬ'); sell.type = 'button';
-    var fm = form('ТИКЕР', 'КУПИТЬ', function(v){ trade(v, qty.value, pr.value, 1) }, [qty, pr]);
+    var qty = el('input', 'n'); qty.placeholder = TX('qty'); qty.inputMode = 'decimal'; qty.dataset.k = 'port-q';
+    var pr = el('input', 'n'); pr.placeholder = TX('px_ph'); pr.inputMode = 'decimal'; pr.title = TX('px_t'); pr.dataset.k = 'port-p';
+    var sell = el('button', 'btn', TX('sell')); sell.type = 'button';
+    var fm = form(TX('ticker'), TX('buy'), function(v){ trade(v, qty.value, pr.value, 1) }, [qty, pr]);
     fm.f.appendChild(sell);
     sell.onclick = function(){ trade(fm.i.value, qty.value, pr.value, -1) };
     fm.i.value = takePrefill('PORT');
     box.appendChild(fm.f);
-    if (!st.p.length) { box.appendChild(el('div', 'empty', 'Портфель пуст. Введите тикер, количество и цену покупки (пустая цена — по текущей). В Telegram: /buy AAPL 10 150.')); return }
-    var tb = table([{t: 'Тикер'}, {t: 'Кол-во'}, {t: 'Ср. цена'}, {t: 'Цена'}, {t: 'День'}, {t: 'Стоимость'}, {t: 'Прибыль'}, {t: '%'}, {t: ''}]);
+    if (!st.p.length) { box.appendChild(el('div', 'empty', TX('port_empty'))); return }
+    var tb = table(cols(TX('port_cols')));
     var tot = {};
     st.p.forEach(function(x){
       var qq = q(x.s) || {}, cur = qq.cur === '₽' ? '₽' : '$', val = qq.px != null ? qq.px * x.q : null, pl = val != null ? val - x.c * x.q : null;
@@ -1077,8 +1092,8 @@ var My = (function(){
       var c = chg(qq.ch); c.dataset.k = 'c'; tr.appendChild(c);
       tr.appendChild(td(money(val, cur), 'num')); tr.appendChild(td(pl == null ? '—' : (pl >= 0 ? '+' : '') + money(pl, cur), 'num ' + cls(pl)));
       tr.appendChild(chg(pl != null && x.c ? (qq.px / x.c - 1) * 100 : null, 1));
-      var xx = el('td', 'x'), del = el('button', null, '✕'); del.title = 'убрать позицию';
-      del.onclick = function(e){ e.stopPropagation(); if (!confirm('Убрать ' + x.s + ' из портфеля?')) return; st.p = st.p.filter(function(z){ return z !== x }); push(); render() };
+      var xx = el('td', 'x'), del = el('button', null, '✕'); del.title = TX('remove_pos');
+      del.onclick = function(e){ e.stopPropagation(); if (!confirm(TX('remove_q', x.s))) return; st.p = st.p.filter(function(z){ return z !== x }); push(); render() };
       xx.appendChild(del); tr.appendChild(xx);
       tr.onclick = function(){ openSym(x.s) };
       tb.body.appendChild(tr);
@@ -1086,7 +1101,7 @@ var My = (function(){
     var foot = el('tfoot');
     Object.keys(tot).forEach(function(cur){
       var t = tot[cur], fr = el('tr');
-      fr.appendChild(td('ИТОГО ' + cur, 'l')); fr.appendChild(td('')); fr.appendChild(td(''));
+      fr.appendChild(td(TX('total') + cur, 'l')); fr.appendChild(td('')); fr.appendChild(td(''));
       fr.appendChild(td('')); fr.appendChild(chg(t.val ? t.day / (t.val - t.day) * 100 : null));
       fr.appendChild(td(money(t.val, cur), 'num')); fr.appendChild(td((t.val - t.cost >= 0 ? '+' : '') + money(t.val - t.cost, cur), 'num ' + cls(t.val - t.cost)));
       fr.appendChild(chg(t.cost ? (t.val / t.cost - 1) * 100 : null, 1)); fr.appendChild(td(''));
@@ -1097,30 +1112,30 @@ var My = (function(){
   }
   function trade(sym, qty, px, sign){
     sym = upSym(sym); var n = parseFloat(String(qty).replace(',', '.')), p = px === '' ? null : parseFloat(String(px).replace(',', '.'));
-    if (!sym || !(n > 0)) { st.msg = 'Укажите тикер и количество'; return render() }
+    if (!sym || !(n > 0)) { st.msg = TX('need_qty'); return render() }
     var go = function(price_){
       var pos = st.p.find(function(x){ return x.s === sym });
       if (sign > 0) { if (pos) { var nq = pos.q + n; pos.c = (pos.q * pos.c + n * price_) / nq; pos.q = nq } else st.p.push({s: sym, q: n, c: price_}) }
-      else { if (!pos) { st.msg = 'В портфеле нет ' + sym; return render() } pos.q -= n; if (pos.q <= 1e-9) st.p = st.p.filter(function(x){ return x !== pos }) }
+      else { if (!pos) { st.msg = TX('not_in_port', sym); return render() } pos.q -= n; if (pos.q <= 1e-9) st.p = st.p.filter(function(x){ return x !== pos }) }
       st.noDraft = true; push(); loadQuotes().then(function(){ render() });
     };
     if (p != null && !isNaN(p)) return go(p);
     api('/api/quote?s=' + encodeURIComponent(sym)).then(function(d){
       var x = Object.values(d.quotes || {})[0];
-      if (!x || x.px == null) throw new Error('нет цены ' + sym);
+      if (!x || x.px == null) throw new Error(TX('no_price_x', sym));
       if (x.key && x.key !== sym) sym = x.key;
       st.quotes[sym] = x; go(x.px);
-    }).catch(function(e){ st.msg = 'Не удалось получить цену: ' + e.message + '. Укажите цену вручную.'; render() });
+    }).catch(function(e){ st.msg = TX('price_fail', e.message); render() });
   }
   function renderAlrt(box){
-    if (!T.api()) return noApi(box, 'Алерты');
+    if (!T.api()) return noApi(box, TX('alrt_fn'));
     if (!st.server) {
-      box.appendChild(el('div', 'empty', 'Алерты приходят сообщением в Telegram. Откройте терминал кнопкой «🖥 Терминал» в чате с ботом — или войдите паролем владельца (команда SET). В самом боте: /alert AAPL > 200.'));
+      box.appendChild(el('div', 'empty', TX('alrt_signin')));
       if (T.hasIdentity()) sync().then(function(){ if (st.server) render() });
       return;
     }
-    var fm = form('AAPL > 200 · BTC < 60000 · НЕФТЬ 5% · НОВОСТИ ФРС', 'ПОСТАВИТЬ', function(v){
-      api('/api/me', {method: 'POST', body: {op: 'alert_add', text: v}, allowError: true}).then(function(d){
+    var fm = form(TX('alrt_ph'), TX('set_btn'), function(v){
+      api('/api/me' + (I.ru ? '?lang=ru' : ''), {method: 'POST', body: {op: 'alert_add', text: v}, allowError: true}).then(function(d){
         if (!d.ok) { st.msg = d.error; return render() }
         st.alerts = d.alerts; st.noDraft = true; render();
       }).catch(function(e){ st.msg = e.message; render() });
@@ -1128,15 +1143,15 @@ var My = (function(){
     fm.i.style.width = '320px'; fm.i.style.textTransform = 'none';
     fm.i.value = takePrefill('ALRT');
     box.appendChild(fm.f);
-    if (!st.alerts.length) { box.appendChild(el('div', 'empty', 'Алертов нет. Примеры: AAPL > 200 — цена выше; BTC < 60000 — ниже; НЕФТЬ 5% — изменение за день больше 5%; НОВОСТИ ФРС — новость с этим словом. Проверка — каждые 2 минуты.')); return }
-    var tb = table([{t: '№'}, {t: 'Условие', l: true}, {t: 'Сейчас'}, {t: 'Создан'}, {t: ''}]);
+    if (!st.alerts.length) { box.appendChild(el('div', 'empty', TX('alrt_empty'))); return }
+    var tb = table(cols(TX('alrt_cols'), [1]));
     st.alerts.forEach(function(a){
       var tr = el('tr'); tr.appendChild(td(String(a.id), 'l'));
-      var cond = a.k === 'news' ? 'новость со словом «' + a.kw + '»' : a.k === 'chg' ? a.s + ': изменение за день ±' + fmt(a.v, a.v % 1 ? 1 : 0) + '%' : a.s + (a.op === '>' ? ' выше ' : ' ниже ') + price(a.v);
+      var cond = a.k === 'news' ? TX('a_news', a.kw) : a.k === 'chg' ? TX('a_chg', a.s, fmt(a.v, a.v % 1 ? 1 : 0)) : TX('a_px', a.s, a.op, price(a.v));
       tr.appendChild(td(cond, 'l'));
       var x = a.s ? q(a.s) : null; tr.appendChild(td(x && x.px != null ? price(x.px) + ' ' + pct(x.ch) : '', 'num'));
       tr.appendChild(td(a.t ? dmy(a.t.slice(0, 10)) : '', 'num'));
-      var xx = el('td', 'x'), del = el('button', null, '✕'); del.title = 'удалить';
+      var xx = el('td', 'x'), del = el('button', null, '✕'); del.title = TX('del');
       del.onclick = function(){ api('/api/me', {method: 'POST', body: {op: 'alert_del', id: a.id}}).then(function(d){ st.alerts = d.alerts || []; render() }).catch(function(e){ st.msg = e.message; render() }) };
       xx.appendChild(del); tr.appendChild(xx); tb.body.appendChild(tr);
     });
@@ -1150,7 +1165,7 @@ var My = (function(){
 })();
 RENDER['p-my'] = function(){ My.render() };
 
-/* ======================= ECO: вкладка «Отчёты компаний» ======================= */
+/* ======================= ECO: the "Earnings" tab ======================= */
 var ecoTab = 'macro';
 tabs($('eco-tabs'), 't', function(t){ ecoTab = t; renderEarn() });
 function renderEarn(){
@@ -1161,13 +1176,13 @@ function renderEarn(){
     clear(e);
     var today = new Date().toISOString().slice(0, 10);
     var rows = (d.earnings || []).filter(function(x){ return x.d >= new Date(Date.now() - 3 * 864e5).toISOString().slice(0, 10) });
-    if (!rows.length) { e.appendChild(el('div', 'empty', 'Отчётов крупнейших компаний в ближайшие недели нет (или данные ещё не загружены).')); return }
-    var tb = table([{t: 'Дата'}, {t: 'Компания', l: true}, {t: 'EPS прогноз'}, {t: 'EPS факт'}, {t: 'Выручка прогноз'}]);
+    if (!rows.length) { e.appendChild(el('div', 'empty', TX('earn_none'))); return }
+    var tb = table(cols(TX('earn_cols'), [1]));
     var last = '';
     rows.forEach(function(x){
       if (x.d !== last) { var r = el('tr'), c = el('td', 'day', T.dayLabel(x.d + 'T12:00:00Z')); c.colSpan = 5; r.appendChild(c); tb.body.appendChild(r); last = x.d }
       var tr = el('tr', 'row' + (x.d < today ? ' past' : '')); tr.dataset.s = x.s;
-      tr.appendChild(td(x.h === 'bmo' ? '☀ до откр.' : x.h === 'amc' ? '☾ после закр.' : '', 'l'));
+      tr.appendChild(td(x.h === 'bmo' ? TX('bmo_s') : x.h === 'amc' ? TX('amc_s') : '', 'l'));
       var nm = el('td', 'l'); nm.appendChild(el('b', null, x.s + ' ')); nm.lastChild.style.color = 'var(--amber)'; nm.appendChild(document.createTextNode(x.n)); tr.appendChild(nm);
       tr.appendChild(td(x.eps_e != null ? '$' + num(x.eps_e, 2) : '—', 'num'));
       var beat = x.eps_a != null && x.eps_e != null ? (x.eps_a >= x.eps_e ? 'up' : 'down') : '';
@@ -1177,10 +1192,10 @@ function renderEarn(){
     });
     tb.t.onclick = function(ev){ var tr = ev.target.closest('tr.row'); if (tr) openDes(tr.dataset.s, 'ERN') };
     e.appendChild(tb.t);
-  }).catch(function(){ clear(e).appendChild(el('div', 'empty', 'Календарь отчётов появится после следующего запуска бота.')) });
+  }).catch(function(){ clear(e).appendChild(el('div', 'empty', TX('earn_wait'))) });
 }
 
-/* ======================= живая лента новостей ======================= */
+/* ======================= live news feed ======================= */
 var live = null;
 function mergeLive(d){
   if (!live || !live.news || !d) return d;
@@ -1202,13 +1217,13 @@ function pollLive(){
     var d = T.data();
     if (fresh && d && (l.updated || '') > (d.updated || '')) {
       T.setData(mergeLive(d)); T.renderNews();
-      $('news-upd').textContent = 'обновлено ' + T.hm(l.updated) + ' МСК · LIVE';
+      $('news-upd').textContent = TX('updated_at', T.hm(l.updated)) + ' · LIVE';
     }
   }).catch(function(){});
 }
 setInterval(pollLive, 60000);
 
-/* ======================= команды ======================= */
+/* ======================= commands ======================= */
 var C = T.CMDS;
 function desCmd(tab){ return function(arg){ openDes(arg, tab) } }
 ['DES', 'FA', 'ERN', 'ANR', 'CN', 'HDS'].forEach(function(k){ C[k] = desCmd(k); T.SUFFIX[k] = 1 });
@@ -1235,13 +1250,13 @@ C.ERNS = C.EVTS; C['ОТЧЁТЫ'] = C['ОТЧЕТЫ'] = C.EVTS;
 C.ECO = function(){ T.show('p-eco'); ecoTab = 'macro'; setTab($('eco-tabs'), 't', 'macro'); renderEarn() };
 C.CAL = C.ECO; C['КАЛЕНДАРЬ'] = C.ECO;
 
-// тикер, набранный без функции: график, а если карточка компании на экране — она тоже переключается
+// a ticker typed without a function: the chart, and if the company card is on screen it switches too
 window.onSymbol = function(s){ if (isStock(s) && visible('p-des') && T.api()) { des.tab = des.tab || 'DES'; des.sym = upSym(s); des.data = null; loadDes() } };
 
-// на телефоне панель показывает основной скрипт — здесь только дорисовываем её содержимое
+// on a phone the main script shows the panel — here we only draw its content
 window.onPanelShow = function(pid){ if (RENDER[pid]) RENDER[pid]() };
 
-/* ======================= запуск ======================= */
+/* ======================= start ======================= */
 Layout._mob = T.isMobile();
 Layout.apply();
 renderEarn();

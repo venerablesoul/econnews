@@ -105,7 +105,7 @@ def get_events(st, now, countries, impacts=("High",)):
             cal["events"] = fetch_events()
             cal["fetched"] = now.isoformat()
         except Exception as e:
-            print(f"  ! календарь недоступен: {type(e).__name__}: {e}")
+            print(f"  ! calendar unavailable: {type(e).__name__}: {e}")
             if not cal["fetched"]:
                 # не стучимся каждые 30 минут в упавшую ленту: повторим через час
                 cal["fetched"] = (now - timedelta(hours=CACHE_HOURS - 1)).isoformat()
@@ -129,19 +129,35 @@ def ru_name(e, translate=None):
     return t
 
 
-def fmt_event(e, translate=None, with_time=True):
+def event_name(e, lang="en", translate=None):
+    return ru_name(e, translate) if lang == "ru" else e["title"]
+
+
+def _fp(e, lang):
+    extra = []
+    if e.get("forecast"):
+        extra.append(("прогноз " if lang == "ru" else "fcst ") + _esc(e["forecast"]))
+    if e.get("previous"):
+        extra.append(("пред. " if lang == "ru" else "prev ") + _esc(e["previous"]))
+    return extra
+
+
+def fmt_event(e, lang="en", translate=None, with_time=True):
     t_msk = datetime.fromisoformat(e["ts"]).astimezone(MSK)
     flag = FLAGS.get(e["country"], "🏳")
-    name = ru_name(e, translate)
-    s = (f"<b>{t_msk:%H:%M}</b> " if with_time else "") + f"{flag} {_esc(name)}"
-    extra = []
-    if e["forecast"]:
-        extra.append(f"прогноз {_esc(e['forecast'])}")
-    if e["previous"]:
-        extra.append(f"пред. {_esc(e['previous'])}")
+    s = (f"<b>{t_msk:%H:%M}</b> " if with_time else "") + f"{flag} {_esc(event_name(e, lang, translate))}"
+    extra = _fp(e, lang)
     if extra:
         s += f" <i>({', '.join(extra)})</i>"
     return s
+
+
+def fmt_released(e, actual, lang="en", translate=None):
+    """"🇺🇸 CPI y/y: <b>3.1%</b> (fcst 3.0%, prev 2.9%) — above forecast"."""
+    extra = _fp(e, lang)
+    v = verdict(actual, e.get("forecast"), lang)
+    return (f"{FLAGS.get(e['country'], '')} {_esc(event_name(e, lang, translate))}: <b>{_esc(actual)}</b>"
+            + (f" <i>({', '.join(extra)})</i>" if extra else "") + (f" — {v}" if v else ""))
 
 
 def _esc(s):
@@ -229,11 +245,14 @@ def _num(s):
     return float(m.group())
 
 
-def verdict(actual, forecast):
-    """Сравнение факта с прогнозом: «выше прогноза» / «ниже прогноза» / «как ожидали»."""
+def verdict(actual, forecast, lang="en"):
+    """Actual vs forecast: "above forecast" / "below forecast" / "as expected"."""
     a, f = _num(actual), _num(forecast)
     if a is None or f is None:
         return ""
+    ru = lang == "ru"
     if abs(a - f) < 1e-9:
-        return "как ожидали"
-    return "выше прогноза" if a > f else "ниже прогноза"
+        return "как ожидали" if ru else "as expected"
+    if a > f:
+        return "выше прогноза" if ru else "above forecast"
+    return "ниже прогноза" if ru else "below forecast"

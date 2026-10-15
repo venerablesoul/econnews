@@ -1,18 +1,19 @@
-// Тесты сервера бота (worker/src) без сети: fetch и хранилище KV подменены.
-// Запуск: node tests/worker.test.mjs
+// Tests of the bot server (worker/src) without network: fetch and the KV storage are faked.
+// Run: node tests/worker.test.mjs
 import assert from "node:assert/strict";
 import crypto from "node:crypto";
 
-import { PAGES, TOKEN, OWNER, sent, calls, flags, dataJson, KV, installMocks, iso } from "./mocks.mjs";
+import { PAGES, TOKEN, OWNER, sent, flags, dataJson, KV, installMocks, iso } from "./mocks.mjs";
 installMocks();
 const env = { TELEGRAM_BOT_TOKEN: TOKEN, OWNER_ID: OWNER, FINNHUB_API_KEY: "FHKEY", TERMINAL_PASSWORD: "pw", PAGES_URL: PAGES, SUBS: new KV() };
 const ctx = { waits: [], waitUntil(p) { this.waits.push(p); } };
 
 const worker = (await import("../worker/src/index.js")).default;
-const { handleUpdate } = await import("../worker/src/index.js");
+const { handleUpdate, newsText, marketsText } = await import("../worker/src/index.js");
 const { parseSymbol } = await import("../worker/src/market.js");
 const { parseAlert, cleanPort } = await import("../worker/src/user.js");
-const { clearMemo } = await import("../worker/src/lib.js");
+const { clearMemo, fmt, money, pct } = await import("../worker/src/lib.js");
+const { t, newsField, sectorName, tradeLabel } = await import("../worker/src/i18n.js");
 
 let passed = 0;
 async function test(name, fn) {
@@ -33,9 +34,9 @@ const api = async (path, headers = {}, method = "GET", body) => {
   return { status: r.status, json: await r.json(), headers: r.headers };
 };
 let uid = 1000;
-const msg = async (text, chatId = 555, type = "private") => {
+const msg = async (text, chatId = 555, type = "private", from = {}) => {
   const start = sent.length;
-  await handleUpdate({ update_id: ++uid, message: { message_id: uid, chat: { id: chatId, type }, from: { id: chatId, first_name: "Тест" }, text } }, env);
+  await handleUpdate({ update_id: ++uid, message: { message_id: uid, chat: { id: chatId, type }, from: { id: chatId, first_name: "Test", ...from }, text } }, env);
   return sent.slice(start);
 };
 const cb = async (data, chatId = 555) => {
@@ -44,11 +45,40 @@ const cb = async (data, chatId = 555) => {
   return sent.slice(start).filter((m) => m.method !== "answerCallbackQuery");
 };
 const texts = (out) => out.map((m) => m.text || m.caption || "").join("\n----\n");
-const noErrors = (out) => assert.ok(!/Не получилось|Не знаю такой команды/.test(texts(out)), texts(out));
+const noErrors = (out) => assert.ok(!/That didn't work|I don't know that command|Не получилось|Не знаю такой команды/.test(texts(out)), texts(out));
+const buttons = (out) => out.flatMap((m) => (m.reply_markup && m.reply_markup.inline_keyboard || []).flat());
+const RU = 556;   // a chat that switches to Russian
 
-console.log("Сервер бота:");
+console.log("Bot server:");
 
-await test("разбор тикеров", () => {
+await test("number formats in both languages", () => {
+  assert.equal(fmt(81800.5, 0), "81,801");
+  assert.equal(fmt(81800.5, 0, "ru"), "81\u202f801");
+  assert.equal(fmt(-3429.6, 2), "−3,429.60");
+  assert.equal(fmt(3429.6, 2, "ru"), "3\u202f429,60");
+  assert.equal(pct(6.2), "+6.20%");
+  assert.equal(pct(6.2, 2, "ru"), "+6,20%");
+  assert.equal(money(416e9), "$416B");
+  assert.equal(money(416e9, "$", "ru"), "$416 млрд");
+  assert.equal(money(5.0459e12), "$5.05T");
+});
+
+await test("names: sectors, trade labels, news fields in both languages", () => {
+  assert.equal(sectorName("Technology", "ru"), "Технологии");
+  assert.equal(sectorName("Технологии", "en"), "Technology");
+  assert.equal(tradeLabel("House, CA12", "ru"), "Палата, CA12");
+  assert.equal(tradeLabel("Палата, CA12", "en"), "House, CA12");
+  const [fresh, old] = dataJson.news;
+  assert.equal(newsField(fresh, "title", "en"), "Fed holds rates");
+  assert.equal(newsField(fresh, "title", "ru"), "ФРС сохранила ставку");
+  assert.equal(newsField(old, "title", "en"), "Tesla shares plunge after recall");
+  assert.equal(newsField(old, "title", "ru"), "Акции Tesla обвалились после отзыва");
+  assert.equal(t("en", "need_symbol", "des"), "Add a ticker, for example: /des AAPL");
+  assert.equal(t("ru", "need_symbol", "des"), "Укажите тикер, например: /des AAPL");
+  assert.equal(t("xx", "rates_none"), "No data yet.", "unknown language falls back to English");
+});
+
+await test("ticker parsing", () => {
   assert.equal(parseSymbol("aapl").key, "AAPL");
   assert.equal(parseSymbol("AAPL US Equity").key, "AAPL");
   assert.equal(parseSymbol("NASDAQ:AAPL").key, "AAPL");
@@ -58,41 +88,64 @@ await test("разбор тикеров", () => {
   assert.equal(parseSymbol("SBER").key, "MOEX:SBER");
   assert.equal(parseSymbol("MOEX:T").key, "MOEX:T");
   assert.equal(parseSymbol("T").key, "T");
+  assert.equal(parseSymbol("oil").key, "Brent");
   assert.equal(parseSymbol("нефть").key, "Brent");
-  assert.equal(parseSymbol("золото").key, "Золото");
+  assert.equal(parseSymbol("gold").key, "Золото");
   assert.equal(parseSymbol("S&P").key, "S&P");
   assert.equal(parseSymbol("привет"), null);
   assert.equal(parseSymbol(""), null);
 });
 
-await test("разбор алертов", () => {
+await test("alert parsing (English and Russian words)", () => {
   assert.deepEqual(parseAlert("AAPL > 200"), { k: "px", s: "AAPL", op: ">", v: 200 });
+  assert.deepEqual(parseAlert("BTC below 60 000"), { k: "px", s: "BTC", op: "<", v: 60000 });
   assert.deepEqual(parseAlert("BTC ниже 60 000"), { k: "px", s: "BTC", op: "<", v: 60000 });
-  assert.deepEqual(parseAlert("нефть 5%"), { k: "chg", s: "Brent", v: 5 });
+  assert.deepEqual(parseAlert("oil 5%"), { k: "chg", s: "Brent", v: 5 });
   assert.deepEqual(parseAlert("SBER ±3,5%"), { k: "chg", s: "MOEX:SBER", v: 3.5 });
+  assert.deepEqual(parseAlert("news Fed"), { k: "news", kw: "Fed" });
   assert.deepEqual(parseAlert("новости ФРС"), { k: "news", kw: "ФРС" });
   assert.deepEqual(parseAlert("AAPL 400"), { k: "px", s: "AAPL", op: "?", v: 400 });
-  assert.equal(parseAlert("что-то непонятное"), null);
+  assert.equal(parseAlert("something unclear"), null);
 });
 
-await test("портфель: одна позиция на инструмент со средней ценой", () => {
+await test("portfolio: one position per instrument with the average price", () => {
   assert.deepEqual(cleanPort([{ s: "aapl", q: 10, c: 100 }, { s: "AAPL", q: 10, c: 200 }, { s: "???", q: 1, c: 1 }, { s: "BTC", q: 0, c: 1 }]),
     [{ s: "AAPL", q: 20, c: 150 }]);
 });
 
-await test("/api/quote: акции США, крипта, Мосбиржа, нефть", async () => {
-  const r = await api("/api/quote?s=AAPL,BTC,SBER,нефть,ZZZZ");
+await test("/api/quote: US stocks, crypto, Moscow Exchange, oil", async () => {
+  const r = await api("/api/quote?s=AAPL,BTC,SBER,oil,ZZZZ");
   assert.equal(r.json.ok, true);
   const q = r.json.quotes;
   assert.equal(q.AAPL.px, 342.96);
   assert.equal(q.BTC.px, 81800.5);
   assert.equal(q["MOEX:SBER"].px, 285.52);
   assert.equal(q.Brent.px, 80.1);
+  assert.equal(q.Brent.name, "Brent crude");
+  assert.equal(q.Brent.name_ru, "Нефть Brent");
   assert.equal(r.headers.get("Access-Control-Allow-Origin"), "*");
-  assert.ok(!JSON.stringify(r.json).includes("FHKEY"), "ключ не должен попасть в ответ");
+  assert.ok(!JSON.stringify(r.json).includes("FHKEY"), "the key must not leak into the answer");
 });
 
-await test("/api/company: все разделы", async () => {
+await test("/api/quotes: free world quotes (Yahoo) for everyone, no paid key needed", async () => {
+  const r = await api("/api/quotes");
+  assert.equal(r.json.tier, "free");
+  assert.equal(r.json.paid, false);
+  assert.equal(r.json.world["S&P"].value, 7730);
+  assert.ok(Math.abs(r.json.world["S&P"].change - 1) < 1e-9);
+  assert.equal(r.json.world["Золото"].value, 4020);
+  assert.equal(r.json.world.IMOEX.value, 2741.5);
+  assert.ok(!r.json.errors.some((e) => /EODHD/.test(e)), "no EODHD key is not an error any more");
+  clearMemo();
+  flags.failSpark = true;
+  try {
+    const f = await api("/api/quotes?only=world");
+    assert.equal(f.json.ok, true, "a Yahoo failure does not break the answer");
+    assert.ok(f.json.errors.some((e) => /Yahoo/.test(e)));
+  } finally { flags.failSpark = false; }
+});
+
+await test("/api/company: all parts; headlines translated only when asked", async () => {
   const r = await api("/api/company?s=AAPL");
   const c = r.json;
   assert.equal(c.ok, true, JSON.stringify(c));
@@ -104,14 +157,17 @@ await test("/api/company: все разделы", async () => {
   assert.equal(c.anr[0].sb, 12);
   assert.equal(c.next.hour, "amc");
   assert.equal(c.ern.length, 2);
-  assert.equal(c.cn[0].h, "Apple превзошла прогнозы");
-  assert.equal(c.cn[0].en, "Apple beats estimates");
-  assert.equal(c.ins.length, 1, "только покупки/продажи на рынке");
+  assert.equal(c.cn[0].h, "Apple beats estimates", "English by default — no translator calls");
+  assert.equal(c.ins.length, 1, "only open-market buys and sells");
   assert.deepEqual(c.peers, ["DELL", "HPQ"]);
   assert.deepEqual(c.errors, []);
+  clearMemo();
+  const ru = await api("/api/company?s=AAPL&parts=cn&lang=ru");
+  assert.equal(ru.json.cn[0].h, "Apple превзошла прогнозы");
+  assert.equal(ru.json.cn[0].en, "Apple beats estimates");
 });
 
-await test("короткие адреса /api/history/AAPL/1m и ошибки по крипте", async () => {
+await test("short paths /api/history/AAPL/1m and /api/quote/AAPL,BTC", async () => {
   const r = await api("/api/history/AAPL/1m");
   assert.equal(r.json.ok, true);
   assert.equal(r.json.range, "1m");
@@ -119,7 +175,7 @@ await test("короткие адреса /api/history/AAPL/1m и ошибки �
   assert.equal(q.json.quotes.BTC.px, 81800.5);
 });
 
-await test("запасные источники: крипта без Binance, перевод без Google", async () => {
+await test("fallbacks: crypto without Binance, translation without Google", async () => {
   flags.failBinance = true; flags.failGoogle = true;
   try {
     const q = await api("/api/quote?s=BTC");
@@ -130,25 +186,28 @@ await test("запасные источники: крипта без Binance, п
     assert.equal(h.json.ok, true);
     assert.equal(h.json.src, "cryptocompare");
     clearMemo();
-    const c = await api("/api/company?s=AAPL&parts=cn");
+    const c = await api("/api/company?s=AAPL&parts=cn&lang=ru");
     assert.equal(c.json.cn[0].h, "Apple превзошла оценки");
   } finally { flags.failBinance = false; flags.failGoogle = false; }
 });
 
-await test("/api/company: компания вне списка SEC и Мосбиржа", async () => {
+await test("/api/company: a company outside the SEC list and the Moscow Exchange (EN and RU)", async () => {
   const r = await api("/api/company?s=ZZZZ&parts=des");
   assert.equal(r.json.ok, false);
   const m = await api("/api/company?s=SBER");
   assert.equal(m.json.ok, true);
+  assert.equal(m.json.profile.name, "Sberbank of Russia PJSC");
   assert.equal(m.json.profile.isin, "RU0009029540");
   assert.equal(m.json.quote.px, 285.52);
+  const mr = await api("/api/company?s=SBER&lang=ru");
+  assert.equal(mr.json.profile.name, "Сбербанк России ПАО ао");
   const nf = await api("/api/company?s=MSFT&parts=fa");
   assert.equal(nf.json.ok, true);
   assert.equal(nf.json.fin, undefined);
   assert.ok(nf.json.faSeries);
 });
 
-await test("/api/history: акции, крипта, Мосбиржа, запасной вариант при сбое", async () => {
+await test("/api/history: stocks, crypto, Moscow Exchange, failure", async () => {
   const a = await api("/api/history?s=AAPL&r=1y");
   assert.equal(a.json.ok, true);
   assert.equal(a.json.c.length, 250);
@@ -158,6 +217,9 @@ await test("/api/history: акции, крипта, Мосбиржа, запас
   assert.ok(b.json.c.length > 100);
   const s = await api("/api/history?s=SBER&r=3m");
   assert.equal(s.json.src, "moex");
+  const g = await api("/api/history?s=gold&r=1y");
+  assert.equal(g.json.name, "Gold");
+  assert.equal(g.json.name_ru, "Золото");
   flags.failYahoo = true;
   clearMemo();
   const f = await api("/api/history?s=MSFT&r=1y");
@@ -166,134 +228,225 @@ await test("/api/history: акции, крипта, Мосбиржа, запас
   assert.ok(/429/.test(f.json.error));
 });
 
-await test("вебхук без секрета отклоняется", async () => {
+await test("the webhook without the secret is rejected", async () => {
   const r = await worker.fetch(new Request("https://w.test/tg", { method: "POST", body: "{}" }), env, ctx);
   assert.equal(r.status, 403);
 });
 
-await test("бот: /q /des /fa /ern /anr /cn /hds", async () => {
-  let out = await msg("/q AAPL BTC нефть SBER");
+await test("bot (English by default): /start, /q /des /fa /ern /anr /cn /hds", async () => {
+  let out = await msg("/start", 555, "private", { language_code: "ru" });
+  assert.match(texts(out), /You are subscribed/);
+  assert.match(texts(out), /Русский язык: \/lang ru/, "a Russian Telegram app gets the hint");
+  assert.match(texts(out), /Top stories of the day/);
+  assert.match(texts(out), /Fed holds rates/);
+  assert.match(texts(out), /💡 Rates stay high for longer/);
+  assert.match(texts(out), /Tesla shares plunge after recall/, "old-format stories show the English original");
+  assert.ok(!/Отзыв машин/.test(texts(out)), "a Russian-only AI note is not shown to English readers");
+  assert.ok(buttons(out).some((b) => b.web_app && /terminal\/$/.test(b.web_app.url) && b.text === "🖥 Terminal"));
+  out = await msg("/q AAPL BTC oil SBER");
   noErrors(out);
-  assert.match(texts(out), /AAPL.*342,96/);
-  assert.match(texts(out), /BTC.*81 801/);
+  assert.match(texts(out), /AAPL.*342\.96/);
+  assert.match(texts(out), /BTC.*81,801/);
+  assert.match(texts(out), /<i>Brent crude<\/i>/);
   out = await msg("/des AAPL");
   noErrors(out);
   assert.match(texts(out), /Apple Inc/);
-  assert.match(texts(out), /P\/E: 38,8/);
-  assert.match(texts(out), /Аналитики \(53\): <b>покупать/);
-  assert.ok(out[0].reply_markup.inline_keyboard.flat().some((b) => b.callback_data === "fa:AAPL"));
-  assert.ok(out[0].reply_markup.inline_keyboard.flat().some((b) => b.web_app && /terminal\/\?cmd=AAPL%20DES/.test(b.web_app.url)));
-  out = await msg("/fa AAPL"); noErrors(out); assert.match(texts(out), /выручка \$416 млрд/);
-  out = await msg("/ern AAPL"); noErrors(out); assert.match(texts(out), /Следующий/); assert.match(texts(out), /❌ Q3 2026/);
-  out = await msg("/anr AAPL"); noErrors(out); assert.match(texts(out), /Консенсус: <b>покупать/);
-  out = await msg("/cn AAPL"); noErrors(out); assert.match(texts(out), /Apple превзошла прогнозы/);
-  out = await msg("/hds AAPL"); noErrors(out); assert.match(texts(out), /Cook Tim/);
-  out = await msg("/des SBER"); noErrors(out); assert.match(texts(out), /Сбербанк России/);
+  assert.match(texts(out), /P\/E: 38\.8/);
+  assert.match(texts(out), /Analysts \(53\): <b>buy/);
+  assert.match(texts(out), /Market cap: <b>\$5\.01T/);
+  assert.ok(buttons(out).some((b) => b.callback_data === "fa:AAPL" && b.text === "FA financials"));
+  assert.ok(buttons(out).some((b) => b.web_app && /terminal\/\?cmd=AAPL%20DES$/.test(b.web_app.url)));
+  out = await msg("/fa AAPL"); noErrors(out); assert.match(texts(out), /revenue \$416B/); assert.match(texts(out), /27 Sep 2025/);
+  out = await msg("/ern AAPL"); noErrors(out); assert.match(texts(out), /Next:/); assert.match(texts(out), /❌ Q3 2026/);
+  out = await msg("/anr AAPL"); noErrors(out); assert.match(texts(out), /Consensus: <b>buy/); assert.match(texts(out), /Strong buy +12/);
+  out = await msg("/cn AAPL"); noErrors(out); assert.match(texts(out), /Apple beats estimates/);
+  out = await msg("/hds AAPL"); noErrors(out); assert.match(texts(out), /Cook Tim/); assert.match(texts(out), /🔴 sale 2,399 shares at \$332\.01/);
+  out = await msg("/des SBER"); noErrors(out); assert.match(texts(out), /Sberbank of Russia PJSC/); assert.match(texts(out), /Moscow Exchange/);
 });
 
-await test("бот: /chart присылает картинку", async () => {
-  const out = await msg("/chart AAPL 1y");
-  const photo = out.find((m) => m.method === "sendPhoto");
+await test("bot: /lang ru switches the chat to Russian everywhere", async () => {
+  let out = await msg("/lang", RU);
+  assert.ok(buttons(out).some((b) => b.callback_data === "lang:ru"));
+  out = await cb("lang:ru", RU);
+  assert.match(texts(out), /Язык: русский/);
+  assert.ok(buttons(out).some((b) => b.web_app && /terminal\/\?lang=ru$/.test(b.web_app.url) && b.text === "🖥 Терминал"));
+  assert.equal(await env.SUBS.get("l:" + RU), "ru");
+  out = await msg("/start", RU);
+  assert.match(texts(out), /Вы подписаны/);
+  assert.match(texts(out), /ФРС сохранила ставку/);
+  assert.match(texts(out), /💡 Ставки останутся высокими дольше/);
+  assert.match(texts(out), /#ФРС/);
+  const meta = (await env.SUBS.getWithMetadata("u:" + RU)).metadata;
+  assert.equal(meta.l, "ru", "the language is kept in the subscriber's metadata for the news bot");
+  out = await msg("/q AAPL BTC нефть", RU);
+  assert.match(texts(out), /AAPL.*342,96/);
+  assert.match(texts(out), /BTC.*81\u202f801/);
+  assert.match(texts(out), /<i>Нефть Brent<\/i>/);
+  out = await msg("/des AAPL", RU);
+  assert.match(texts(out), /Аналитики \(53\): <b>покупать/);
+  assert.match(texts(out), /Капитализация: <b>\$5,01 трлн/);
+  assert.ok(buttons(out).some((b) => b.web_app && /terminal\/\?cmd=AAPL%20DES&lang=ru$/.test(b.web_app.url)));
+  out = await msg("/fa AAPL", RU); assert.match(texts(out), /выручка \$416 млрд/); assert.match(texts(out), /27\.09\.2025/);
+  out = await msg("/cn AAPL", RU); assert.match(texts(out), /Apple превзошла прогнозы/);
+  out = await msg("/des SBER", RU); assert.match(texts(out), /Сбербанк России/);
+  out = await msg("/map", RU); assert.match(texts(out), /Технологии \+1,90%/);
+  out = await msg("/rates", RU); assert.match(texts(out), /США/); assert.match(texts(out), /спред 10Y−2Y: 37/);
+  out = await msg("/cb", RU); assert.match(texts(out), /ЦБ РФ: <b>14,00%<\/b> <i>\(было 15,00%, с 12\.09\.2026/);
+  out = await msg("/wirp", RU); assert.match(texts(out), /повышение: 50%/);
+  out = await msg("/help", RU); assert.match(texts(out), /\/lang en — in English/);
+  out = await msg("/lang en", RU); assert.match(texts(out), /Language: English/);
+  out = await msg("/q AAPL", RU); assert.match(texts(out), /342\.96/);
+  await msg("/lang ru", RU);
+});
+
+await test("/subs gives each subscriber's language to the news bot", async () => {
+  const k = crypto.createHash("sha256").update("econnews-sync:" + TOKEN).digest("hex");
+  await env.SUBS.put("l:" + OWNER, "ru");
+  clearMemo();
+  const s = await api("/subs", { Authorization: "Bearer " + k });
+  assert.equal(s.json.ok, true);
+  assert.ok(s.json.ids.includes("555") && s.json.ids.includes(String(RU)));
+  assert.equal(s.json.langs[String(RU)], "ru");
+  assert.equal(s.json.langs["555"], undefined, "English is the default and is not listed");
+  assert.equal(s.json.langs[OWNER], "ru", "the owner gets the mailing without subscribing");
+});
+
+await test("bot: /chart sends a picture", async () => {
+  let out = await msg("/chart AAPL 1y");
+  let photo = out.find((m) => m.method === "sendPhoto");
   assert.ok(photo, texts(out));
   assert.equal(photo.photo, "https://quickchart.io/chart/render/zf-test");
+  assert.match(photo.caption, /1 year/);
+  out = await msg("/chart AAPL 1y", RU);
+  photo = out.find((m) => m.method === "sendPhoto");
   assert.match(photo.caption, /1 год/);
 });
 
-await test("бот: список наблюдения", async () => {
+await test("bot: watchlist", async () => {
   let out = await msg("/watch AAPL BTC SBER", 777);
   noErrors(out);
-  assert.match(texts(out), /Добавил: AAPL, BTC, MOEX:SBER/);
-  assert.match(texts(out), /Мой список/);
+  assert.match(texts(out), /Added: AAPL, BTC, MOEX:SBER/);
+  assert.match(texts(out), /My watchlist/);
   out = await msg("/unwatch BTC", 777);
-  assert.match(texts(out), /Убрал: BTC/);
+  assert.match(texts(out), /Removed: BTC/);
   const u = JSON.parse(await env.SUBS.get("p:777"));
   assert.deepEqual(u.w, ["AAPL", "MOEX:SBER"]);
   out = await cb("w+:NVDA", 777);
   assert.match(texts(out), /NVDA/);
 });
 
-await test("бот: портфель", async () => {
+await test("bot: portfolio", async () => {
   let out = await msg("/buy AAPL 10 300", 778);
   noErrors(out);
-  assert.match(texts(out), /Куплено: AAPL × 10 по 300/);
+  assert.match(texts(out), /Bought: AAPL × 10 at 300/);
   out = await msg("/buy BTC 0.5", 778);
-  assert.match(texts(out), /Куплено: BTC × 0,5000 по 81 801/);
-  assert.match(texts(out), /AAPL<\/b> × 10: \$3 429,60/);
+  assert.match(texts(out), /Bought: BTC × 0\.5000 at 81,801/);
+  assert.match(texts(out), /AAPL<\/b> × 10: \$3,429\.60/);
   out = await msg("/port", 778);
   assert.match(texts(out), /AAPL.*× 10/);
-  assert.match(texts(out), /Итого/);
+  assert.match(texts(out), /Total/);
   out = await msg("/sell AAPL 4", 778);
   const u = JSON.parse(await env.SUBS.get("p:778"));
   assert.equal(u.p.find((x) => x.s === "AAPL").q, 6);
+  out = await msg("/sell TSLA 1", 778);
+  assert.match(texts(out), /TSLA is not in your portfolio/);
   out = await msg("/port clear", 778);
-  assert.match(texts(out), /очищен/);
+  assert.match(texts(out), /cleared/);
 });
 
-await test("бот: алерты и cron", async () => {
+await test("bot: alerts and cron, each person in their language, few KV writes", async () => {
   let out = await msg("/alert AAPL > 300", 779);
-  assert.match(texts(out), /Алерт №\d+: AAPL выше 300/);
-  out = await msg("/alert BTC < 10", 779);
+  assert.match(texts(out), /Alert #\d+: AAPL above 300/);
+  await msg("/alert BTC < 10", 779);
   out = await msg("/alert AAPL 1000", 779);
-  assert.match(texts(out), /AAPL выше 1 000/);
-  out = await msg("/alert нефть 5%", 779);
-  out = await msg("/alert новости ФРС", 779);
+  assert.match(texts(out), /AAPL above 1,000/);
+  await msg("/alert oil 5%", 779);
+  await msg("/alert news Fed", 779);
+  await msg("/alert новости ФРС", RU);
   out = await msg("/alerts", 779);
-  assert.match(texts(out), /новость со словом «ФРС»/);
-  // первая проверка: срабатывают AAPL > 300 и нефть (+6,2% > 5%), новости только запоминают время
+  assert.match(texts(out), /a story with the word «Fed»/);
+  // first check: AAPL > 300 and oil (+6.2% > 5%) fire, news alerts only remember the time
   const start = sent.length;
   const ev = { waits: [], waitUntil(p) { this.waits.push(p); } };
   await worker.scheduled({ cron: "*/2 * * * *" }, env, ev);
   await Promise.all(ev.waits);
   let fired = sent.slice(start).map((m) => m.text).join("\n");
-  assert.match(fired, /AAPL<\/b> поднялся выше 300/);
-  assert.match(fired, /Brent<\/b> вырос за день на <b>\+6,20%/);
+  assert.match(fired, /AAPL<\/b> rose above 300/);
+  assert.match(fired, /Brent<\/b> is up <b>\+6\.20%/);
   let a = JSON.parse(await env.SUBS.get("alerts"));
-  assert.ok(!a.list.some((x) => x.s === "AAPL" && x.v === 300), "сработавший алерт удалён");
-  assert.ok(a.list.some((x) => x.s === "BTC"), "несработавший остался");
+  assert.ok(!a.list.some((x) => x.s === "AAPL" && x.v === 300), "a fired alert is removed");
+  assert.ok(a.list.some((x) => x.s === "BTC"), "the others stay");
   assert.ok(a.news_ts);
-  // появилась свежая новость со словом — приходит оповещение; изменение нефти второй раз за день не шлётся
-  await env.SUBS.put("live", JSON.stringify({ updated: iso(Date.now()), news: [{ title: "ФРС неожиданно снизила ставку", lead: "", sources: ["Reuters"],
-    link: "https://x/2", level: "high", ts: iso(Date.now()) }], market: dataJson.market }));
+  // nothing new: the check does not write to KV
+  const puts = env.SUBS.puts;
+  const ev1 = { waits: [], waitUntil(p) { this.waits.push(p); } };
+  await worker.scheduled({}, env, ev1);
+  await Promise.all(ev1.waits);
+  assert.equal(env.SUBS.puts, puts, "a quiet check costs no KV writes");
+  // a fresh story with the word: the English reader gets the English headline, the Russian one — Russian
+  await env.SUBS.put("live", JSON.stringify({ updated: iso(Date.now() + 1000), news: [{ title: "Fed unexpectedly cuts rates", lang: "en",
+    title_ru: "ФРС неожиданно снизила ставку", lead: "", sources: ["Reuters"], link: "https://x/2", level: "high", ts: iso(Date.now() + 1000) }],
+    market: dataJson.market }));
   clearMemo();
   const s2 = sent.length;
   const ev2 = { waits: [], waitUntil(p) { this.waits.push(p); } };
   await worker.scheduled({}, env, ev2);
   await Promise.all(ev2.waits);
-  fired = sent.slice(s2).map((m) => m.text).join("\n");
-  assert.match(fired, /Новость по слову «ФРС»/);
-  assert.ok(!/Brent/.test(fired), fired);
-  // удаление кнопкой
+  const got = sent.slice(s2);
+  const en = got.filter((m) => String(m.chat_id) === "779").map((m) => m.text).join("\n");
+  const ru = got.filter((m) => String(m.chat_id) === String(RU)).map((m) => m.text).join("\n");
+  assert.match(en, /A story with the word «Fed»/);
+  assert.match(en, /Fed unexpectedly cuts rates/);
+  assert.match(ru, /Новость по слову «ФРС»/);
+  assert.match(ru, /ФРС неожиданно снизила ставку/);
+  assert.ok(!/Brent/.test(en), "the oil move is not sent twice in a day");
+  // delete with the button
   a = JSON.parse(await env.SUBS.get("alerts"));
   const id = a.list.find((x) => x.s === "BTC").id;
   out = await cb("adel:" + id, 779);
-  assert.match(texts(out), /удалён/);
+  assert.match(texts(out), /deleted/);
 });
 
-await test("бот: скринер, карта, отчёты, ставки, WIRP, справка", async () => {
-  let out = await msg("/eqs"); noErrors(out); assert.ok(out[0].reply_markup.inline_keyboard.flat().some((b) => b.callback_data === "eqs:div"));
+await test("bot: screener, map, earnings, rates, WIRP, help (English)", async () => {
+  let out = await msg("/eqs"); noErrors(out); assert.ok(buttons(out).some((b) => b.callback_data === "eqs:div" && b.text === "🏦 Dividend payers"));
   out = await cb("eqs:div"); noErrors(out); assert.match(texts(out), /1\. <b>XOM/);
+  out = await msg("/eqs gainers"); assert.match(texts(out), /1\. <b>NVDA/);
   out = await msg("/eqs лидеры"); assert.match(texts(out), /1\. <b>NVDA/);
-  out = await msg("/map"); noErrors(out); assert.match(texts(out), /Технологии \+1,90%/);
-  out = await msg("/earnings"); noErrors(out); assert.match(texts(out), /AAPL<\/b> Apple/);
-  out = await msg("/rates"); noErrors(out); assert.match(texts(out), /10Y <b>5,19%<\/b> \(−9\)/); assert.match(texts(out), /спред 10Y−2Y: 37/);
-  out = await msg("/cb"); noErrors(out); assert.match(texts(out), /ЦБ РФ: <b>14,00%<\/b> <i>\(было 15,00%, с 12\.09\.2026/);
-  out = await msg("/wirp"); noErrors(out); assert.match(texts(out), /повышение: 50%/);
-  out = await msg("/help"); assert.match(texts(out), /\/alert AAPL > 200/);
-  out = await msg("/news"); assert.match(texts(out), /ФРС/);
+  out = await msg("/map"); noErrors(out); assert.match(texts(out), /Technology \+1\.90%/);
+  out = await msg("/earnings"); noErrors(out); assert.match(texts(out), /AAPL<\/b> Apple/); assert.match(texts(out), /EPS est\. \$2\.02/);
+  out = await msg("/rates"); noErrors(out); assert.match(texts(out), /United States/); assert.match(texts(out), /10Y <b>5\.19%<\/b> \(−9\)/);
+  assert.match(texts(out), /10Y−2Y spread: 37/);
+  out = await msg("/cb"); noErrors(out); assert.match(texts(out), /Bank of Russia: <b>14\.00%<\/b> <i>\(was 15\.00%, since 12 Sep 2026/);
+  out = await msg("/wirp"); noErrors(out); assert.match(texts(out), /hike: 50%/);
+  out = await msg("/help"); assert.match(texts(out), /\/alert AAPL > 200/); assert.match(texts(out), /\/lang ru/);
+  out = await msg("/markets"); assert.match(texts(out), /Gold: <b>\$4,012<\/b> \+0\.4%/); assert.match(texts(out), /Brent crude: <b>\$80\.10<\/b>/);
+  out = await msg("/nonsense"); assert.match(texts(out), /I don't know that command/);
 });
 
-await test("бот: тикер обычным сообщением", async () => {
+await test("bot: a ticker as a plain message", async () => {
   let out = await msg("AAPL");
   assert.match(texts(out), /Apple Inc/);
-  out = await msg("нефть");
+  out = await msg("oil");
   assert.match(texts(out), /Brent/);
+  out = await msg("нефть", RU);
+  assert.match(texts(out), /Нефть Brent/);
   out = await msg("hi");
-  assert.match(texts(out), /Команды/);
+  assert.match(texts(out), /Commands/);
 });
 
-await test("/api/me: вход владельца, список, портфель, алерты", async () => {
+await test("replies from data.json: news and markets texts", () => {
+  const en = newsText(dataJson, "en"), ru = newsText(dataJson, "ru");
+  assert.match(en, /Reuters · \d\d:\d\d · #Fed #rates/);
+  assert.match(ru, /#ФРС #ставки/);
+  assert.match(marketsText(dataJson, "ru"), /Золото: <b>\$4\u202f012<\/b> \+0,4%/);
+});
+
+await test("/api/me: owner sign-in, watchlist, portfolio, alerts, errors in the asked language", async () => {
   let r = await api("/api/me");
   assert.equal(r.json.ok, false);
+  assert.match(r.json.error, /Open the terminal/);
+  r = await api("/api/me?lang=ru");
+  assert.match(r.json.error, /Откройте терминал/);
   const H = { "X-Owner-Key": "pw", "Content-Type": "application/json" };
   r = await api("/api/me", H);
   assert.equal(r.json.ok, true);
@@ -303,13 +456,15 @@ await test("/api/me: вход владельца, список, портфель
   r = await api("/api/me", H, "POST", { op: "alert_add", text: "NVDA > 500" });
   assert.equal(r.json.ok, true, JSON.stringify(r.json));
   assert.equal(r.json.alerts.length, 1);
-  r = await api("/api/me", H, "POST", { op: "alert_del", id: r.json.alerts[0].id });
+  r = await api("/api/me", H, "POST", { op: "alert_add", text: "???" });
+  assert.match(r.json.error, /Didn't get the alert/);
+  r = await api("/api/me", H, "POST", { op: "alert_del", id: (await api("/api/me", H)).json.alerts[0].id });
   assert.equal(r.json.alerts.length, 0);
   r = await api("/api/me", { "X-Owner-Key": "wrong" });
   assert.equal(r.json.ok, false);
 });
 
-await test("/api/me: вход через подпись Telegram", async () => {
+await test("/api/me: sign-in with the Telegram signature", async () => {
   const user = JSON.stringify({ id: 4242, first_name: "Ann" });
   const fields = { auth_date: String(Math.floor(Date.now() / 1000)), query_id: "q1", user };
   const check = Object.keys(fields).sort().map((k) => k + "=" + fields[k]).join("\n");
@@ -323,26 +478,22 @@ await test("/api/me: вход через подпись Telegram", async () => {
   assert.equal(r.json.ok, false);
 });
 
-await test("живая лента: приём с ключом и выдача", async () => {
+await test("live feed: accepted with the key and served", async () => {
   const key = crypto.createHash("sha256").update("econnews-sync:" + TOKEN).digest("hex");
   let r = await api("/sync/live", { Authorization: "Bearer nope" }, "POST", { news: [] });
   assert.equal(r.status, 403);
   r = await api("/sync/live", { Authorization: "Bearer " + key, "Content-Type": "application/json" }, "POST",
-    { updated: "2099-01-01T00:00:00Z", news: [{ title: "Свежая новость", ts: "2099-01-01T00:00:00Z", level: "high", sources: ["X"] }], market: [] });
+    { updated: "2099-01-01T00:00:00Z", news: [{ title: "Fresh story", ts: "2099-01-01T00:00:00Z", level: "high", sources: ["X"] }], market: [] });
   assert.equal(r.json.ok, true);
   clearMemo();
   r = await api("/api/live");
-  assert.equal(r.json.news[0].title, "Свежая новость");
+  assert.equal(r.json.news[0].title, "Fresh story");
 });
 
-await test("старые адреса работают как раньше", async () => {
+await test("the root address answers", async () => {
   const r = await api("/");
   assert.equal(r.json.ok, true);
-  const k = crypto.createHash("sha256").update("econnews-sync:" + TOKEN).digest("hex");
-  const s = await api("/subs", { Authorization: "Bearer " + k });
-  assert.equal(s.json.ok, true);
 });
 
-const total = passed;
-if (process.exitCode) console.log(`\nОШИБКИ в тестах сервера (прошло ${total})`);
-else console.log(`\nWORKER TESTS PASSED (${total})`);
+if (process.exitCode) console.log(`\nWORKER TESTS FAILED (passed ${passed})`);
+else console.log(`\nWORKER TESTS PASSED (${passed})`);
