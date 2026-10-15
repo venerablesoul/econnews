@@ -5,11 +5,11 @@ on:
     paths: ["probe/probe.py", ".github/workflows/probe.yml"]
 permissions:
   contents: write
-  actions: read
+  actions: write
 jobs:
   probe:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
