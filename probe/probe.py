@@ -1,4 +1,4 @@
-"""Probe round 13 (Coinbase errors in detail; direct Coinbase from the runner): live bot server — crypto history through Coinbase, the company card with the deep files."""
+"""Probe round 14 (crypto history via Yahoo, then Coinbase): live bot server — crypto history through Coinbase, the company card with the deep files."""
 import json, time, urllib.request
 API = "https://econnews-bot.econnews-6dce35.workers.dev"
 OUT = {}
@@ -36,5 +36,5 @@ for g, span in ((300, 86400), (3600, 5 * 86400), (86400, 300 * 86400)):
         OUT[f"cb_direct_{g}"] = {"status": e.code, "body": e.read()[:300].decode("utf-8", "replace"), "u": u}
     except Exception as e:
         OUT[f"cb_direct_{g}"] = {"err": repr(e)[:300]}
-with open("probe/out8.json", "w") as f:
+with open("probe/out9.json", "w") as f:
     json.dump(OUT, f, ensure_ascii=False, indent=1)
