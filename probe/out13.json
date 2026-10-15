@@ -1,0 +1,60 @@
+{
+ "fetch": {
+  "rc": 0,
+  "out": "",
+  "err": "From https://github.com/venerablesoul/econnews\n * branch            main       -> FETCH_HEAD\n * [new branch]      main       -> origin/main\n"
+ },
+ "todo": [
+  "AMAT",
+  "AMD",
+  "AMGN",
+  "AMT",
+  "AMZN",
+  "AVGO",
+  "AXP",
+  "BA",
+  "BAC",
+  "BKNG",
+  "BLK",
+  "BMY",
+  "BRK.B",
+  "C"
+ ],
+ "co_written": 14,
+ "opt_written": 8,
+ "moex": 246,
+ "build_sec": 59.0,
+ "sizes": {
+  "options.json": 1495,
+  "moex.json": 42468,
+  "AMZN.json": 21873,
+  "AMT.json": 20213,
+  "AVGO.json": 22915,
+  "AMAT.json": 22373,
+  "BA.json": 20972,
+  "AMD.json": 21968,
+  "AMGN.json": 23252,
+  "AXP.json": 20932,
+  "BKNG.json": 20455,
+  "BLK.json": 21700,
+  "BMY.json": 22306,
+  "C.json": 18267,
+  "BRK.B.json": 12285,
+  "BAC.json": 20340
+ },
+ "add": {
+  "rc": 0,
+  "out": "",
+  "err": ""
+ },
+ "commit": {
+  "rc": 0,
+  "out": "",
+  "err": ""
+ },
+ "push": {
+  "rc": 0,
+  "out": "",
+  "err": "To https://github.com/venerablesoul/econnews\n   aeeb3bc..d975e34  HEAD -> probe\n"
+ }
+}
