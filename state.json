@@ -1053,7 +1053,11 @@
   "16f2793c71356607": "2026-10-15T04:41:57.457780+00:00",
   "d425249efbe92a73": "2026-10-15T04:46:57.421357+00:00",
   "bae5323924c350b6": "2026-10-15T04:56:57.649601+00:00",
-  "9953b9ede2a5eb66": "2026-10-15T04:56:57.649601+00:00"
+  "9953b9ede2a5eb66": "2026-10-15T04:56:57.649601+00:00",
+  "5ad39845e4d34e98": "2026-10-15T05:01:57.427481+00:00",
+  "a9bb199c6a262f49": "2026-10-15T05:01:57.427481+00:00",
+  "ed31c55ba99e2929": "2026-10-15T05:01:57.427481+00:00",
+  "746492d732ddb28f": "2026-10-15T05:01:57.427481+00:00"
  },
  "recent": [
   {
@@ -10924,6 +10928,43 @@
     "ФРС",
     "инфляция"
    ]
+  },
+  {
+   "title": "Ukraine to Resume Russia Oil Refinery Strikes, FT Reports",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-15/ukraine-to-resume-russia-refinery-strikes-zelenskyy-tells-ft-mv911ocb",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-15T05:01:57.427481+00:00",
+   "title_ru": "Украина возобновит забастовки российских нефтеперерабатывающих заводов, сообщает FT",
+   "lead": "Ukraine will resume strikes on Russian oil refineries in response to deadly attacks by Moscow, President Volodymyr Zelenskyy told the Financial Times.",
+   "lead_ru": "Украина возобновит удары по российским нефтеперерабатывающим заводам в ответ на смертоносные атаки Москвы, заявил президент Владимир Зеленский газете Financial Times.",
+   "tags": [
+    "нефть",
+    "Россия"
+   ]
+  },
+  {
+   "title": "The global economy is muddling through against the odds. But a storm is coming | Larry Elliott",
+   "link": "https://www.theguardian.com/commentisfree/2026/oct/15/global-economy-multilateral-cooperation-crisis-imf",
+   "sources": [
+    "The Guardian"
+   ],
+   "score": 3,
+   "ts": "2026-10-15T05:01:57.427481+00:00",
+   "title_ru": "Мировая экономика с трудом справляется с трудностями. Но приближается буря | Ларри Эллиотт",
+   "lead": "Finance ministers gathering for the IMF annual meeting know the need for multilateral cooperation to deal with many crises.",
+   "lead_ru": "Министры финансов, собравшиеся на ежегодное собрание МВФ, знают о необходимости многостороннего сотрудничества для преодоления многих кризисов."
+  },
+  {
+   "title": "Poland looks to economic heights in a country transformed since Soviet days",
+   "link": "https://www.theguardian.com/world/2026/oct/15/poland-economy-heights-transformed-regional-tech-hub",
+   "sources": [
+    "The Guardian"
+   ],
+   "score": 2,
+   "ts": "2026-10-15T05:01:57.427481+00:00"
   }
  ],
  "last_digest": "2026-10-14",
@@ -11849,7 +11890,8 @@
   "USD|2026-10-14T12:30:00+00:00|Core CPI m/m",
   "USD|2026-10-14T12:30:00+00:00|Core CPI y/y",
   "USD|2026-10-14T12:30:00+00:00|CPI m/m",
-  "USD|2026-10-14T12:30:00+00:00|CPI y/y"
+  "USD|2026-10-14T12:30:00+00:00|CPI y/y",
+  "GBP|2026-10-15T06:00:00+00:00|GDP m/m"
  ],
  "last_morning": "2026-10-14",
  "all_down_alerted": false,
@@ -12981,7 +13023,7 @@
    "house": true,
    "senate": true
   },
-  "checked": "2026-10-15T04:01:24.977941+00:00",
+  "checked": "2026-10-15T05:01:57.427481+00:00",
   "sec_seen": [],
   "errors": {
    "sec": "HTTPError: HTTP Error 403: Forbidden"
