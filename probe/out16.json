@@ -1,0 +1,557 @@
+{
+ "pages": "https://venerablesoul.github.io/econnews/",
+ "bot_rc": 0,
+ "bot_err": "",
+ "bot": {
+  "en /q AAPL BTC oil SBER": {
+   "sec": 1.141,
+   "text": "📈 <b>Quotes</b> <i>(daily change)</i>\n\n🟢 <b>AAPL</b> $345.94 +0.87%\n🔴 <b>BTC</b> <i>BTC/USDT</i> $80,220 −2.66%\n🔴 <b>Brent</b> <i>Brent crude</i> 104.86 −1.13%\n🔴 <b>MOEX:SBER</b> <i>Сбербанк</i> 283.77 ₽ −0.61%",
+   "buttons": []
+  },
+  "en /des AAPL": {
+   "sec": 0.148,
+   "text": "🏢 <b>Apple Inc</b> · AAPL\nTechnology · NASDAQ NMS · US\n<i>Apple Inc. is an American multinational technology company headquartered in Cupertino, California, in Silicon Valley, and known for consumer electronics, software and online services. Founded in 1976 as Apple Computer Company by Steve Jobs, Steve Wozniak and Ronald Wayne, the company was incorporated by Jobs and Wozniak as Apple Computer, Inc. the following year.</i>\nEmployees: 150,000\n\nPrice: <b>$345.94</b> +0.87% today\n52 weeks: $243.42 – $348.15 · YTD +25.53%, 1 year +37.80%\nMarket cap: <b>$4.99T</b>\nP/E: 38.7 · forward 35.3 · P/S 10.7 · P/B 38.5\nDividends: 0.51% ($1.08 a year) · beta 1.11\nMargins: gross 48.7%, operating 33.2%, net 27.6% · ROE 137%\n1-year growth: revenue +14.2%, EPS +32.6%\nAnalysts (53): <b>buy</b> — buy 34, hold 15, sell 4\nPrice target: <b>$329.38</b> ($215 – $405) · −4.8% from now\nNext earnings: <b>2 Nov 2026</b> after the close · EPS estimate $2.02\nPeers: DELL, SNDK, WDC, HPE, P, NTAP\n<a href=\"https://www.apple.com/\">apple.com</a>",
+   "buttons": [
+    "FA financials",
+    "ERN earnings",
+    "EE estimates",
+    "ANR analysts",
+    "HDS holders",
+    "DVD dividends",
+    "OMON options",
+    "RV peers",
+    "CF filings",
+    "CN news",
+    "📈 1Y chart",
+    "⭐ Watch",
+    "🖥 In the terminal"
+   ]
+  },
+  "en /fa AAPL": {
+   "sec": 0.168,
+   "text": "📑 <b>Apple Inc financials</b> (AAPL)\n<i>from filings with the SEC</i>\n\n<b>Quarters</b>\n<b>27 Jun 2026</b>: revenue $109B, net income $29.8B, EPS $2.02, free cash flow $31.9B\n<b>28 Mar 2026</b>: revenue $111B, net income $29.6B, EPS $2.01, free cash flow $26.7B\n<b>27 Dec 2025</b>: revenue $144B, net income $42.1B, EPS $2.84, free cash flow $51.6B\n<b>27 Sep 2025</b>: revenue $102B, net income $27.5B, EPS $1.84, free cash flow $26.5B\n<b>28 Jun 2025</b>: revenue $94.0B, net income $23.4B, EPS $1.57, free cash flow $24.4B\n<b>29 Mar 2025</b>: revenue $95.4B, net income $24.8B, EPS $1.65, free cash flow $20.9B\n\n<b>Years</b>\n<b>27 Sep 2025</b>: revenue $416B, net income $112B, EPS $7.46, free cash flow $98.8B\n<b>28 Sep 2024</b>: revenue $391B, net income $93.7B, EPS $6.08, free cash flow $109B\n<b>30 Sep 2023</b>: revenue $383B, net income $97.0B, EPS $6.13, free cash flow $99.6B\n<b>24 Sep 2022</b>: revenue $394B, net income $99.8B, EPS $6.11, free cash flow $111B\n\nCash $35.9B · debt $90.7B · equity $73.7B",
+   "buttons": [
+    "🖥 FA in the terminal"
+   ]
+  },
+  "en /ern AAPL": {
+   "sec": 0.104,
+   "text": "📊 <b>AAPL earnings</b>\n\nNext: <b>2 Nov 2026</b> after the close · Q4 2026\nEstimate: EPS $2.02, revenue $115B\n\n<b>EPS: actual vs estimate</b>\n❌ Q3 2026: actual $1.91 · estimate $1.93 · −0.9%\n✅ Q2 2026: actual $2.01 · estimate $1.99 · +1.1%\n✅ Q1 2026: actual $2.84 · estimate $2.73 · +4.2%\n✅ Q4 2025: actual $1.85 · estimate $1.81 · +2.4%",
+   "buttons": [
+    "🖥 ERN in the terminal"
+   ]
+  },
+  "en /ee AAPL": {
+   "sec": 0.001,
+   "text": "🔮 <b>AAPL estimates</b> · 40 analysts\n\n<b>Current quarter</b> (to 30 Sep 2026)\nEPS $1.98 (1.93–2.07) · +6.9% y/y\nRevenue $114B · +10.9% y/y\n<i>revisions 30d: ↑1 ↓0 · EPS est. 90 days ago $2.02</i>\n\n<b>Next quarter</b> (to 31 Dec 2026)\nEPS $2.91 (2.56–3.42) · +2.3% y/y\nRevenue $154B · +7.0% y/y\n<i>revisions 30d: ↑2 ↓1 · EPS est. 90 days ago $2.96</i>\n\n<b>Current year</b> (to 30 Sep 2026)\nEPS $8.82 (8.28–8.94) · +18.2% y/y\nRevenue $478B · +14.9% y/y\n<i>revisions 30d: ↑2 ↓1 · EPS est. 90 days ago $8.77</i>\n\n<b>Next year</b> (to 30 Sep 2027)\nEPS $9.58 (8.69–10.67) · +8.7% y/y\nRevenue $529B · +10.5% y/y\n<i>revisions 30d: ↑4 ↓3 · EPS est. 90 days ago $9.69</i>\n\nNext report: <b>2 Nov 2026</b>\n\n<b>Surprises</b>\n30 Jun 2026: $2.02 vs $1.89 · +6.7%\n31 Mar 2026: $2.01 vs $1.94 · +3.5%\n31 Dec 2025: $2.84 vs $2.67 · +6.3%\n30 Sep 2025: $1.85 vs $1.77 · +4.5%",
+   "buttons": [
+    "🖥 EE in the terminal"
+   ]
+  },
+  "en /anr AAPL": {
+   "sec": 0,
+   "text": "🎯 <b>Analysts on AAPL</b> · 2026-09\nConsensus: <b>buy</b> (3.8 of 5, 53 analysts)\n\n<code>Strong buy   12 █████\nBuy          22 ████████\nHold         15 ██████\nSell          3 █\nStrong sell   1 </code>\n\n2026-06: buy 38, hold 15, sell 2\n\n🎯 <b>Price target</b> (39 analysts): mean <b>$329.38</b>, median $340.00\nrange $215.00 – $405.00 · price $342.96 · −4.0% to mean\n\n<b>Latest rating changes</b>\n12 Oct <b>JP Morgan</b>: ▪️ maintained Overweight · target $360 (was $340)\n1 Oct <b>Morgan Stanley</b>: ▪️ maintained Overweight · target $355 (was $360)\n1 Oct <b>Needham</b>: ▪️ reiterated Hold\n29 Sep <b>Morgan Stanley</b>: ▪️ reiterated Overweight · target $360\n23 Sep <b>B of A Securities</b>: ▪️ reiterated Buy · target $370\n18 Sep <b>Evercore ISI Group</b>: ▪️ maintained Outperform · target $380 (was $365)\n17 Sep <b>B of A Securities</b>: ▪️ reiterated Buy · target $370\n10 Sep <b>TD Cowen</b>: ▪️ reiterated Buy · target $400",
+   "buttons": [
+    "🖥 ANR in the terminal"
+   ]
+  },
+  "en /hds AAPL": {
+   "sec": 0.141,
+   "text": "💼 <b>AAPL holders</b>\nInsiders <b>1.6%</b> · institutions <b>66.3%</b> (7,697)\n<b>Largest institutions</b>\nBlackrock Inc.: 7.97% · $399B · +1.6%\nVanguard Capital Management LLC: 6.57% · $329B · +0.6%\nState Street Corporation: 4.21% · $211B · +2.1%\nGeode Capital Management, LLC: 2.54% · $127B · +0.7%\nVanguard Portfolio Management LLC: 2.29% · $115B · +0.8%\nFMR, LLC: 2.23% · $112B · +5.8%\n<b>Largest funds</b>\nVanguard Total Stock Market Index Fund: 3.19% · $160B · +0.0%\nVanguard 500 Index Fund: 2.61% · $131B · +2.0%\niShares Core S&amp;P 500 ETF: 1.34% · $67.1B · −1.3%\nFidelity 500 Index Fund: 1.31% · $65.4B · +0.4%\n<b>Insider trades (SEC Form 4)</b>\n<i>last 6 months: 12 buys, 17 sales</i>\n\n🔴 sale 2,399 shares at $332.01 ($796,492)\n<i>Newstead Jennifer · 6 Oct 2026</i>\n\n🔴 sale 3,754 shares at $334.05 ($1.3M)\n<i>Ternus John · 2 Oct 2026</i>\n\n🔴 sale 12,746 shares at $333.34 ($4.2M)\n<i>Ternus John · 2 Oct 2026</i>\n\n🔴 sale 5,348 shares at $332.26 ($1.8M)\n<i>Ternus John · 2 Oct 2026</i>\n\n🔴 sale 3,564 shares at $331.38 ($1.2M)\n<i>Ternus John · 2 Oct 2026</i>\n\n🔴 sale 5,625 shares at $333.91 ($1.9M)\n<i>O'BRIEN DEIRDRE · 2 Oct 2026</i>\n\n🔴 sale 40,764 shares at $333.35 ($13.6M)\n<i>O'BRIEN DEIRDRE · 2 Oct 2026</i>\n\n🔴 sale 40,879 shares at $333.94 ($13.7M)\n<i>COOK TIMOTHY D · 2 Oct 2026</i>",
+   "buttons": [
+    "SI short interest",
+    "🖥 HDS in the terminal"
+   ]
+  },
+  "en /si AAPL": {
+   "sec": 0,
+   "text": "🩳 <b>AAPL short interest</b>\nShort: <b>120,763,539 shares</b> on 30 Sep 2026\n0.83% of float · days to cover 3.0\nBefore: 128,753,092 on 15 Sep 2026 (−6.2%)\n\n<code>30 Sep 2026:   120,763,539 · 3.0 days\n15 Sep 2026:   128,753,092 · 2.9 days\n31 Aug 2026:   139,749,097 · 3.5 days\n14 Aug 2026:   116,327,753 · 2.5 days\n31 Jul 2026:   141,606,163 · 2.4 days\n15 Jul 2026:   146,547,784 · 3.1 days\n30 Jun 2026:   140,526,320 · 1.7 days\n15 Jun 2026:   144,248,476 · 2.8 days\n29 May 2026:   155,886,024 · 3.4 days\n15 May 2026:   138,782,718 · 2.7 days</code>",
+   "buttons": [
+    "🖥 HDS in the terminal"
+   ]
+  },
+  "en /dvd AAPL": {
+   "sec": 0.001,
+   "text": "💵 <b>AAPL dividends</b>\nAnnual: <b>$1.05</b> · yield 0.32% · payout 12%\nEx-date 10 Aug 2026 · payment 13 Aug 2026\n\n<b>By year</b>\n2026: $0.80\n2025: $1.03 (+4.0%)\n2024: $0.99 (+4.2%)\n2023: $0.95 (+4.4%)\n2022: $0.91 (+5.2%)\n2021: $0.86\n\n<b>Last payments</b>\n10 Aug 2026: $0.27\n11 May 2026: $0.27\n9 Feb 2026: $0.26\n10 Nov 2025: $0.26\n11 Aug 2025: $0.26\n12 May 2025: $0.26\n\nSplits: 4:1 (31 Aug 2020), 7:1 (9 Jun 2014)",
+   "buttons": [
+    "🖥 DVD in the terminal"
+   ]
+  },
+  "en /dvd KO": {
+   "sec": 0.288,
+   "text": "💵 <b>KO dividends</b>\n\n<b>By year</b>\n2026: $1.59\n2025: $2.04 (+5.2%)\n2024: $1.94 (+5.4%)\n2023: $1.84 (+4.5%)\n2022: $1.76 (+4.8%)\n2021: $1.68\n\n<b>Last payments</b>\n15 Sep 2026: $0.53\n15 Jun 2026: $0.53\n13 Mar 2026: $0.53\n1 Dec 2025: $0.51\n15 Sep 2025: $0.51\n13 Jun 2025: $0.51\n\nSplits: 2:1 (13 Aug 2012)",
+   "buttons": [
+    "🖥 DVD in the terminal"
+   ]
+  },
+  "en /cf AAPL": {
+   "sec": 0.001,
+   "text": "🗂 <b>AAPL SEC filings</b>\n1 Sep 2026 · <b>8-K/A</b> — Corporate Changes &amp; Voting Matters · <a href=\"https://cdn.yahoofinance.com/prod/sec-filings/0000320193/000114036126035325/ef20081427_8ka.htm\">read →</a>\n31 Jul 2026 · <b>10-Q</b> — quarterly report · <a href=\"https://cdn.yahoofinance.com/prod/sec-filings/0000320193/000032019326000020/aapl-20260627.htm\">read →</a>\n30 Jul 2026 · <b>8-K</b> — material event · <a href=\"https://cdn.yahoofinance.com/prod/sec-filings/0000320193/000032019326000018/aapl-20260730.htm\">read →</a>\n28 May 2026 · <b>SD</b> — conflict minerals · <a href=\"https://cdn.yahoofinance.com/prod/sec-filings/0000320193/000114036126023149/ef20073373_sd.htm\">read →</a>\n1 May 2026 · <b>10-Q</b> — quarterly report · <a href=\"https://cdn.yahoofinance.com/prod/sec-filings/0000320193/000032019326000013/aapl-20260328.htm\">read →</a>\n30 Apr 2026 · <b>8-K</b> — material event · <a href=\"https://cdn.yahoofinance.com/prod/sec-filings/0000320193/000032019326000011/aapl-20260430.htm\">read →</a>\n20 Apr 2026 · <b>8-K</b> — material event · <a href=\"https://cdn.yahoofinance.com/prod/sec-filings/0000320193/000114036126015711/ef20071035_8k.htm\">read →</a>\n24 Feb 2026 · <b>8-K</b> — material event · <a href=\"https://cdn.yahoofinance.com/prod/sec-filings/0000320193/000114036126006577/ef20060722_8k.htm\">read →</a>\n30 Jan 2026 · <b>10-Q</b> — quarterly report · <a href=\"https://cdn.yahoofinance.com/prod/sec-filings/0000320193/000032019326000006/aapl-20251227.htm\">read →</a>\n29 Jan 2026 · <b>8-K</b> — material event · <a href=\"https://cdn.yahoofinance.com/prod/sec-filings/0000320193/000032019326000005/aapl-20260129.htm\">read →</a>\n8 Jan 2026 · <b>DEF 14A</b> — proxy statement · <a href=\"https://cdn.yahoofinance.com/prod/sec-filings/0000320193/000130817926000008/aapl_courtesy-pdf.pdf\">read →</a>\n2 Jan 2026 · <b>8-K</b> — material event · <a href=\"https://cdn.yahoofinance.com/prod/sec-filings/0000320193/000114036126000199/ef20060722_8k.htm\">read →</a>",
+   "buttons": [
+    "🖥 CF in the terminal"
+   ]
+  },
+  "en /cf MSFT": {
+   "sec": 0.189,
+   "text": "🗂 <b>MSFT SEC filings</b>\n14 Sep 2026 · <b>144</b> · <a href=\"https://www.sec.gov/Archives/edgar/data/1576843/000195824426000598/primary_doc.xml\">read →</a>\n9 Sep 2026 · <b>PX14A6G</b> · <a href=\"https://www.sec.gov/Archives/edgar/data/1636143/000121465926011511/o91268px14a6g.htm\">read →</a>\n2 Sep 2026 · <b>8-K</b> — material event · <a href=\"https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965d8k.htm\">read →</a>\n1 Sep 2026 · <b>144</b> · <a href=\"https://www.sec.gov/Archives/edgar/data/1513142/000195004726008927/primary_doc.xml\">read →</a>\n5 Aug 2026 · <b>144</b> · <a href=\"https://www.sec.gov/Archives/edgar/data/1868758/000195917326005674/primary_doc.xml\">read →</a>\n4 Aug 2026 · <b>144</b> · <a href=\"https://www.sec.gov/Archives/edgar/data/1899931/000195917326005608/primary_doc.xml\">read →</a>\n29 Jul 2026 · <b>10-K</b> — annual report · <a href=\"https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm\">read →</a>\n29 Jul 2026 · <b>8-K</b> — material event · <a href=\"https://www.sec.gov/Archives/edgar/data/789019/000119312526323632/msft-20260729.htm\">read →</a>\n22 Jul 2026 · <b>PX14A6G</b> · <a href=\"https://www.sec.gov/Archives/edgar/data/1636143/000121465926008806/w721267px14a6g.htm\">read →</a>\n2 Jul 2026 · <b>PX14A6G</b> · <a href=\"https://www.sec.gov/Archives/edgar/data/1636143/000121465926008121/j72261px14a6g.htm\">read →</a>\n25 Jun 2026 · <b>11-K</b> — employee plan · <a href=\"https://www.sec.gov/Archives/edgar/data/789019/000119312526282817/msft-20251231.htm\">read →</a>\n25 Jun 2026 · <b>11-K</b> — employee plan · <a href=\"https://www.sec.gov/Archives/edgar/data/789019/000119312526282773/d839790d11k.htm\">read →</a>",
+   "buttons": [
+    "🖥 CF in the terminal"
+   ]
+  },
+  "en /mgmt AAPL": {
+   "sec": 0,
+   "text": "👔 <b>AAPL management</b>\n<b>Mr. Timothy D. Cook</b>, 64\nExecutive Chairman of the Board · pay $16.8M\n\n<b>Mr. Kevan Parekh</b>, 53\nSenior VP &amp; CFO · pay $4.0M\n\n<b>Mr. Sabih Khan</b>, 58\nSenior VP &amp; Chief Operating Officer · pay $5.0M\n\n<b>Ms. Deirdre O'Brien</b>, 58\nSenior Vice President of Retail &amp; People · pay $5.0M\n\n<b>Ms. Katherine L. Adams</b>, 61\nSecretary · pay $5.0M\n\n<b>Mr. John Ternus</b>, 49\nCEO &amp; Director\n\n<b>Mr. Ben Borders</b>, 44\nPrincipal Accounting Officer\n\n<b>Suhasini Chandramouli</b>\nDirector of Investor Relations\n\n<b>Ms. Jennifer G. Newstead J.D.</b>, 55\nSenior VP of Government Affairs &amp; General Counsel\n\n<b>Ms. Kristin Huguet Quayle</b>\nVice President of Worldwide Communications",
+   "buttons": [
+    "🖥 MGMT in the terminal"
+   ]
+  },
+  "en /rv AAPL": {
+   "sec": 0.147,
+   "text": "⚖️ <b>AAPL vs peers</b> <i>(same sector)</i>\n<code>Ticker    P/E   P/S  Rev%  Net%   1Y%\nAAPL     38.7  10.7    14    28    38\nNVDA     28.1  17.9    83    64    21\nMSFT     30.2  12.2    18    40     6\nAVGO     43.2  18.6    49    43     0\nMU       12.4   7.9   256    64   394\nAMD     145.2  22.6    40    16   180\nINTC        —   9.2     7   −20   176\nPLTR    159.6  78.2    79    49    18\nCSCO     33.8   7.1    12    21    71\nMedian   33.8  15.0    44    42    46</code>",
+   "buttons": [
+    "🖥 RV in the terminal"
+   ]
+  },
+  "en /omon AAPL": {
+   "sec": 0.069,
+   "text": "🎰 <b>AAPL options</b> · $345.86\nIV30 <b>26.3%</b> (+0.03)\nPut/call: volume 0.92 · open interest 0.79\n\n<b>Expiry · IV · expected move · max pain</b>\n16 Oct (1d): IV 26.6% · ±$5.53 (1.6%) · $330\n19 Oct (4d): IV 21.8% · ±$7.16 (2.1%) · $343\n21 Oct (6d): IV 21.2% · ±$8.20 (2.4%) · $340\n23 Oct (8d): IV 23.1% · ±$10.08 (2.9%) · $340\n26 Oct (11d): IV 21.7% · ±$10.85 (3.1%) · $343\n28 Oct (13d): IV 22.7% · ±$12.28 (3.5%) · $345\n30 Oct (15d): IV 22.8% · ±$13.25 (3.8%) · $335\n6 Nov (22d): IV 27.3% · ±$18.95 (5.5%) · $335\n\n<b>Largest open interest</b>\n16 Oct $340 call: 101,850\n15 Jan $300 call: 64,321\n15 Jan $240 put: 59,107\n15 Jan $350 call: 56,193\n16 Oct $360 call: 55,764\n16 Oct $350 call: 40,256",
+   "buttons": [
+    "🖥 OMON in the terminal"
+   ]
+  },
+  "en /omon XOM": {
+   "sec": 0.627,
+   "text": "🎰 <b>XOM options</b> · $177.06\nIV30 <b>30.8%</b> (+0.40)\n<i>Only the IV30 is available for this ticker; the full chain is kept for ~100 companies and ETFs.</i>",
+   "buttons": []
+  },
+  "en /cn AAPL": {
+   "sec": 0.123,
+   "text": "📰 <b>AAPL news</b>\n\n▪️ <b>The Home Agent Subscription: Parsing the Fine Print on Apple and Meta’s Metered Services</b>\n<i>Yahoo · 15 Oct, 15:23</i> · <a href=\"https://finnhub.io/api/news?id=46b6d7c0c5f1013e102b6da6018dcc741742ff6649bfed31bdbc8dd5ef1c04ed\">read →</a>\n\n▪️ <b>KeyBanc downgrades Cirrus Logic after Asia trip, sees memory and analog strength</b>\n<i>Yahoo · 15 Oct, 14:58</i> · <a href=\"https://finnhub.io/api/news?id=030121eaf064637cb0b97535e7062ccf1f0b232daa44301e341f2b02c4ce21bb\">read →</a>\n\n▪️ <b>Apple Intelligence Gets a China Launch Date, but Apple’s China Sales Were Already Up 22%</b>\n<i>Yahoo · 15 Oct, 14:47</i> · <a href=\"https://finnhub.io/api/news?id=412f00e4e2777aa001836b58b98a1e640bcd1ee28bc0bde49ab03387f65b07fe\">read →</a>\n\n▪️ <b>Broadcom vs. SK Hynix: Which Technology Stock Is a Better Buy in 2026?</b>\n<i>Yahoo · 15 Oct, 14:20</i> · <a href=\"https://finnhub.io/api/news?id=7f34d406ecfeb55b9024dd67e7734cba92536b11355ff86b5ccd6df3d4894f96\">read →</a>\n\n▪️ <b>Apple Needs Just a 7% Gain to Become the World’s Most Valuable Company</b>\n<i>Yahoo · 15 Oct, 14:15</i> · <a href=\"https://finnhub.io/api/news?id=fbb350064c370c9ed4bbebac782d2627634a4bc563192054e4e95d808852f0e0\">read →</a>\n\n▪️ <b>Intel, Marvell, CoreWeave, TSMC, Apple, and More Stocks That Explain Today’s Market</b>\n<i>Yahoo · 15 Oct, 13:36</i> · <a href=\"https://finnhub.io/api/news?id=71cfe2135e8ab4e784459e25cfcf142b2d658af8c100a0915bf9f50a609c4f05\">read →</a>\n\n▪️ <b>Premarket Movers: AAPL Gains On China AI Approval Report — Why WMT, NFLX Stocks Are Also Rising</b>\n<i>Yahoo · 15 Oct, 13:19</i> · <a href=\"https://finnhub.io/api/news?id=d8141f3a09a78cb40928b8f365eaeaaba4af64c1f7ef29e740a525d6c45dcf0e\">read →</a>\n\n▪️ <b>Taiwan chipmaker TSMC explores Texas investment to expand production in the US</b>\n<i>Yahoo · 15 Oct, 13:16</i> · <a href=\"https://finnhub.io/api/news?id=49634ca1d7a3e06682c8b61a7627b87d5a1c6f77c5f54af54bfc37a4ecf855eb\">read →</a>",
+   "buttons": [
+    "🖥 CN in the terminal"
+   ]
+  },
+  "en /chart BTC 1d": {
+   "sec": 0.597,
+   "text": "📈 <b>BTC</b> BTC/USDT\n1 day: −2.45% · now 80,228 · low 79,800 · high 82,521",
+   "buttons": [
+    "• 1d •",
+    "1m",
+    "6m",
+    "1y",
+    "5y",
+    "🖥 Open in the terminal"
+   ]
+  },
+  "en /chart AAPL 5d": {
+   "sec": 0.35,
+   "text": "📈 <b>AAPL</b> Apple Inc.\n5 days: +3.80% · now 345.15 · low 330.70 · high 348.15",
+   "buttons": [
+    "1d",
+    "1m",
+    "6m",
+    "1y",
+    "5y",
+    "🖥 Open in the terminal"
+   ]
+  },
+  "en /macro": {
+   "sec": 0.066,
+   "text": "🌍 <b>IMF forecasts</b>: GDP growth and inflation, 2026 / 2027\n\nWorld: GDP 3.1 / 3.4 · CPI 4.7 / 4.1\nAdvanced economies: GDP 2.1 / 1.8 · CPI 3.1 / 2.7\nEmerging &amp; developing: GDP 3.7 / 4.4 · CPI 5.7 / 5.1\nEuro area: GDP 1.1 / 1.2 · CPI 3.1 / 2.8\nUnited States: GDP 2.3 / 2.3 · CPI 3.6 / 2.8\nChina: GDP 4.5 / 4.0 · CPI 1.0 / 1.4\nGermany: GDP 1.3 / 1.1 · CPI 2.7 / 3.1\nJapan: GDP 0.7 / 0.7 · CPI 2.0 / 2.6\nIndia: GDP 7.0 / 7.0 · CPI 5.0 / 4.4\nUnited Kingdom: GDP 1.3 / 1.2 · CPI 3.3 / 2.8\nFrance: GDP 0.4 / 0.7 · CPI 2.4 / 2.2\nItaly: GDP 0.8 / 0.6 · CPI 3.3 / 2.8\nCanada: GDP 1.1 / 1.7 · CPI 2.8 / 2.4\nBrazil: GDP 2.2 / 1.9 · CPI 4.4 / 4.1\nRussia: GDP 0.9 / 0.9 · CPI 6.1 / 4.8\nSouth Korea: GDP 3.3 / 2.8 · CPI 2.7 / 2.3\nAustralia: GDP 1.9 / 1.6 · CPI 3.9 / 3.1\nSpain: GDP 2.5 / 1.8 · CPI 3.7 / 2.7\nMexico: GDP 1.5 / 1.8 · CPI 3.8 / 3.6\nIndonesia: GDP 5.1 / 5.1 · CPI 3.3 / 2.8\nTürkiye: GDP 2.7 / 3.6 · CPI 31.2 / 26.5\nSaudi Arabia: GDP −3.3 / 7.9 · CPI 1.9 / 2.2\nSwitzerland: GDP 1.9 / 1.2 · CPI 0.7 / 0.8\nSouth Africa: GDP 1.0 / 1.3 · CPI 4.4 / 3.9\nKazakhstan: GDP 4.4 / 4.9 · CPI 10.3 / 8.2\n\n<i>One country: /macro US · /macro China · /macro RU</i>",
+   "buttons": [
+    "🖥 ECST in the terminal"
+   ]
+  },
+  "en /macro RU": {
+   "sec": 0,
+   "text": "🌍 <b>Russia</b> · IMF World Economic Outlook\n<code>                    2024   2025   2026   2027   2028\nGDP growth, %        4.9    1.0    0.9    0.9    1.0\nInflation, %         8.4    8.7    6.1    4.8    4.0\nUnemployment, %      2.5    2.2    2.2    2.4    3.3\nBudget, % GDP       −1.6   −3.9   −3.2   −3.2   −3.3\nGov. debt, % GDP    14.8   16.6   19.3   22.2   24.8\nCur. acct, % GDP     2.9    1.5    3.8    3.2    2.5\nGDP, $ bn          2,186  2,572  2,861  2,675  2,638</code>",
+   "buttons": [
+    "🖥 ECST in the terminal"
+   ]
+  },
+  "en /ipo": {
+   "sec": 0.096,
+   "text": "🔔 <b>IPO calendar</b> (US, next 30 days)\n\n<b>15 Oct</b> IAM · Iambic Therapeutics, Inc.\n$15.00-17.00 · 9,375,000 shares · $183M · expected\n\n<b>15 Oct</b> SCQCU · SPACCircle Acquisition Corp.\n$10.00 · 15,000,000 shares · $173M · expected\n\n<b>16 Oct</b> CTY · CITY THERAPEUTICS, INC.\n$17.00-19.00 · 9,722,222 shares · $212M · expected",
+   "buttons": [
+    "🖥 IPO in the terminal"
+   ]
+  },
+  "en /moex": {
+   "sec": 0.13,
+   "text": "🇷🇺 <b>Moscow Exchange today</b> · 16:38 MSK\n<i>by sector, weighted by market cap</i>\n\n🟩🟩 Industrials +0.84%\n🟩 Other +0.16%\n🟩 Materials +0.07%\n🟥 Utilities −0.09%\n🟥 Consumer Staples −0.16%\n🟥 Communication −0.30%\n🟥 Health Care −0.51%\n🟥 Financials −0.52%\n🟥 Energy −0.65%\n🟥🟥 Technology −1.05%\n🟥🟥🟥 Consumer Discretionary −1.59%\n🟥🟥🟥 Real Estate −1.60%\n\n🚀 <b>Gainers:</b> Sovcomflot +3.9%, Polus +2.2%, IPJSC Cian +0.9%, RUSAL +0.8%, PhosAgro +0.8%\n📉 <b>Losers:</b> Tatneft-3 −2.8%, Tatneft (pref) −2.5%, MMK −2.4%, OZON −1.7%, Aeroflot −1.6%",
+   "buttons": [
+    "🖥 Heat map"
+   ]
+  },
+  "en /map": {
+   "sec": 0.001,
+   "text": "🗺 <b>US stocks: sectors today</b>\n<i>weighted by market cap</i>\n\n🟩🟩🟩🟩🟩 Health Care +2.59%\n🟩🟩🟩🟩🟩 Consumer Staples +2.54%\n🟩🟩 Real Estate +1.11%\n🟩🟩 Utilities +0.99%\n🟩 Communication +0.65%\n🟩 Materials +0.62%\n🟩 Financials +0.27%\n🟥 Industrials −0.51%\n🟥 Energy −0.65%\n🟥🟥 Consumer Discretionary −0.85%\n🟥🟥🟥 Technology −1.56%\n\n🚀 <b>Gainers:</b> INTU +5.6%, NKE +4.8%, ADBE +4.4%, BMY +4.0%, HD +3.7%\n📉 <b>Losers:</b> INTC −7.0%, LRCX −6.5%, AMD −6.1%, CAT −5.5%, MU −5.1%",
+   "buttons": [
+    "🖥 Heat map"
+   ]
+  },
+  "en /eqs leaders": {
+   "sec": 0,
+   "text": "🔎 <b>🚀 Top gainers</b>\n\n1. <b>INTU</b> Intuit: $327.85 +5.61% · P/E 18.0 · div. 0.6%\n2. <b>NKE</b> Nike: $36.98 +4.77% · P/E 16.7 · div. 1.4%\n3. <b>ADBE</b> Adobe: $251.19 +4.37% · P/E 12.6\n4. <b>BMY</b> Bristol-Myers Squibb: $61.66 +4.01% · P/E 12.8 · div. 4.6%\n5. <b>HD</b> Home Depot: $306.55 +3.74% · P/E 20.5 · div. 2.7%\n6. <b>WMT</b> Walmart: $120.47 +3.71% · P/E 42.3 · div. 0.8%\n7. <b>LOW</b> Lowe's: $194.90 +3.50% · P/E 15.7 · div. 2.2%\n8. <b>CMCSA</b> Comcast: $21.79 +3.49% · P/E 6.6 · div. 2.7%\n9. <b>LLY</b> Eli Lilly: $1,251 +3.47% · P/E 42.6 · div. 0.8%\n10. <b>GILD</b> Gilead: $158.60 +3.30% · P/E — · div. 4.0%\n11. <b>TMUS</b> T-Mobile US: $162.78 +3.16% · P/E 15.9 · div. 1.7%\n12. <b>AMGN</b> Amgen: $438.94 +3.01% · P/E 26.2 · div. 3.2%\n13. <b>SBUX</b> Starbucks: $95.96 +2.90% · P/E 53.4 · div. 2.2%\n14. <b>ACN</b> Accenture: $221.03 +2.80% · P/E 16.0 · div. 1.5%\n15. <b>ABBV</b> AbbVie: $289.69 +2.80% · P/E 76.8 · div. 4.5%\n\n<i>updated 16:52 MSK</i>",
+   "buttons": [
+    "← Other screens",
+    "🖥 Screener in the terminal"
+   ]
+  },
+  "en /earnings": {
+   "sec": 0.001,
+   "text": "📊 No earnings from the largest US companies in the coming week.",
+   "buttons": []
+  },
+  "en /rates": {
+   "sec": 0.076,
+   "text": "📐 <b>Government bond yields</b>\n<i>in brackets — change over the week, bp</i>\n\n🇺🇸 <b>United States</b> · 14 Oct\n2Y <b>4.82%</b> (+5) · 10Y <b>5.19%</b> (−9) · 30Y <b>5.52%</b> (−15)\n<i>10Y−2Y spread: 37 bp</i>\n\n🇩🇪 <b>Germany</b> · 15 Oct\n2Y <b>3.07%</b> (−1) · 10Y <b>3.42%</b> (−12) · 30Y <b>3.75%</b> (−13)\n<i>10Y−2Y spread: 35 bp</i>\n\n🇬🇧 <b>United Kingdom</b> · 13 Oct\n10Y <b>5.43%</b> (+6)\n\n🇯🇵 <b>Japan</b> · 14 Oct\n2Y <b>1.93%</b> (−2) · 10Y <b>3.02%</b> (−10) · 30Y <b>4.07%</b> (−8)\n<i>10Y−2Y spread: 109 bp</i>\n\n🇷🇺 <b>Russia (OFZ)</b> · 15 Oct\n2Y <b>15.03%</b> · 10Y <b>16.47%</b>\n<i>10Y−2Y spread: 144 bp</i>",
+   "buttons": [
+    "🖥 Curves in the terminal"
+   ]
+  },
+  "en /cb": {
+   "sec": 0.001,
+   "text": "🏦 <b>Central bank rates</b>\n\n🇺🇸 Federal Reserve: <b>3.75–4.00%</b> <i>(was 3.63%, since 17 Sep 2026)</i>\n🇪🇺 ECB: <b>2.50%</b> <i>(was 2.25%, since 16 Sep 2026)</i>\n🇬🇧 Bank of England: <b>3.75%</b> <i>(was 4.00%, since 18 Dec 2025)</i>\n🇯🇵 Bank of Japan: <b>1.25%</b> <i>(was 1.00%, since 24 Sep 2026)</i>\n🇨🇳 People's Bank of China: <b>3.00%</b> <i>(was 3.10%, since 20 May 2025)</i>\n🇨🇭 Swiss National Bank: <b>0.00%</b> <i>(was 0.25%, since 20 Jun 2025)</i>\n🇨🇦 Bank of Canada: <b>2.25%</b> <i>(was 2.50%, since 30 Oct 2025)</i>\n🇦🇺 Reserve Bank of Australia: <b>4.60%</b> <i>(was 4.35%, since 30 Sep 2026)</i>\n🇮🇳 Reserve Bank of India: <b>5.25%</b> <i>(was 5.50%, since 5 Dec 2025)</i>\n🇧🇷 Central Bank of Brazil: <b>13.75%</b> <i>(was 14.00%, since 17 Sep 2026)</i>\n🇹🇷 Central Bank of Türkiye: <b>37.00%</b> <i>(was 38.00%, since 23 Jan 2026)</i>\n🇰🇷 Bank of Korea: <b>3.00%</b> <i>(was 2.75%, since 27 Aug 2026)</i>\n🇲🇽 Bank of Mexico: <b>6.50%</b> <i>(was 6.75%, since 8 May 2026)</i>\n🇿🇦 South African Reserve Bank: <b>7.25%</b> <i>(was 7.00%, since 25 Sep 2026)</i>\n🇷🇺 Bank of Russia: <b>14.00%</b> <i>(was 14.25%, since 27 Jul 2026)</i>\n\n<i>Sources: BIS, New York Fed, Bank of Russia</i>",
+   "buttons": [
+    "🖥 In the terminal"
+   ]
+  },
+  "en /wirp": {
+   "sec": 0,
+   "text": "🏛 <b>Fed rate expectations</b> (WIRP)\nNow: 3.75–4.00%, effective 3.88%\n\n<b>28 Oct 2026</b>: expected rate 3.95% (+7 bp vs today)\n<i>hike: 28%, hold: 72%</i>\n\n<b>9 Dec 2026</b>: expected rate 4.17% (+29 bp vs today)\n<i>hike: 87%, hold: 13%</i>\n\n<b>27 Jan 2027</b>: expected rate 4.25% (+38 bp vs today)\n<i>hike: 35%, hold: 65%</i>\n\n<b>17 Mar 2027</b>: expected rate 4.41% (+53 bp vs today)\n<i>hike: 62%, hold: 38%</i>\n\n<b>28 Apr 2027</b>: expected rate 4.49% (+61 bp vs today)\n<i>hike: 30%, hold: 70%</i>\n\n<b>9 Jun 2027</b>: expected rate 4.56% (+68 bp vs today)\n<i>hike: 32%, hold: 68%</i>\n\n<b>28 Jul 2027</b>: expected rate 4.58% (+71 bp vs today)\n<i>hike: 8%, hold: 92%</i>\n\n<b>15 Sep 2027</b>: expected rate 4.61% (+73 bp vs today)\n<i>hike: 8%, hold: 92%</i>\n\n<i>From fed funds futures (the CME FedWatch method)</i>",
+   "buttons": [
+    "🖥 In the terminal"
+   ]
+  },
+  "en /des SBER": {
+   "sec": 0.183,
+   "text": "🏢 <b>Sberbank</b> · MOEX:SBER\nCommon stock · Moscow Exchange · ISIN RU0009029540\n\nPrice: <b>283.77 ₽</b> −0.61% today\nLot: 1 shares\nShares issued: 21,586,948,000\nListing level: 1",
+   "buttons": [
+    "📈 1Y chart",
+    "⭐ Watch",
+    "🖥 In the terminal"
+   ]
+  },
+  "en /dvd SBER": {
+   "sec": 0,
+   "text": "Dividends of Moscow Exchange shares are not in the free data yet.",
+   "buttons": []
+  },
+  "en /ee ZZZZ": {
+   "sec": 0.098,
+   "text": "No detailed data for ZZZZ yet: it covers the ~100 largest US companies and is refreshed twice a day.",
+   "buttons": []
+  },
+  "ru /q AAPL BTC oil SBER": {
+   "sec": 0,
+   "text": "📈 <b>Котировки</b> <i>(изменение за день)</i>\n\n🟢 <b>AAPL</b> $345,94 +0,87%\n🔴 <b>BTC</b> <i>BTC/USDT</i> $80 220 −2,66%\n🔴 <b>Brent</b> <i>Нефть Brent</i> 104,86 −1,13%\n🔴 <b>MOEX:SBER</b> <i>Сбербанк</i> 283,77 ₽ −0,61%",
+   "buttons": []
+  },
+  "ru /des AAPL": {
+   "sec": 0.001,
+   "text": "🏢 <b>Apple Inc</b> · AAPL\nTechnology · NASDAQ NMS · US\n<i>Apple Inc — американская корпорация, разработчик персональных и планшетных компьютеров, аудиоплееров, смартфонов, программного обеспечения и цифрового контента. Штаб-квартира расположена в Купертино, штат Калифорния. Практически вся продукция Apple выпускается контрактными производителями на заводах в Азии, крупнейшим подрядчиком является тайваньская компания Foxconn, крупнейший завод — в Чжэнчжоу.</i>\nСотрудников: 150 000\n\nЦена: <b>$345,94</b> +0,87% за день\n52 недели: $243,42 – $348,15 · с начала года +25,53%, за год +37,80%\nКапитализация: <b>$4,99 трлн</b>\nP/E: 38,7 · форвард 35,3 · P/S 10,7 · P/B 38,5\nДивиденды: 0,51% ($1,08 в год) · бета 1,11\nРентабельность: валовая 48,7%, операц. 33,2%, чистая 27,6% · ROE 137%\nРост за год: выручка +14,2%, прибыль на акцию +32,6%\nАналитики (53): <b>покупать</b> — купить 34, держать 15, продать 4\nЦелевая цена: <b>$329,38</b> ($215 – $405) · −4,8% от текущей\nСледующий отчёт: <b>02.11.2026</b> после закрытия · прогноз EPS $2,02\nПохожие: DELL, SNDK, WDC, HPE, P, NTAP\n<a href=\"https://www.apple.com/\">apple.com</a>",
+   "buttons": [
+    "FA отчётность",
+    "ERN отчёты",
+    "EE прогнозы",
+    "ANR аналитики",
+    "HDS акционеры",
+    "DVD дивиденды",
+    "OMON опционы",
+    "RV конкуренты",
+    "CF отчёты SEC",
+    "CN новости",
+    "📈 График 1г",
+    "⭐ В список",
+    "🖥 В терминале"
+   ]
+  },
+  "ru /fa AAPL": {
+   "sec": 0,
+   "text": "📑 <b>Отчётность Apple Inc</b> (AAPL)\n<i>по данным отчётов в SEC</i>\n\n<b>Кварталы</b>\n<b>27.06.2026</b>: выручка $109 млрд, чистая прибыль $29,8 млрд, EPS $2,02, своб. ден. поток $31,9 млрд\n<b>28.03.2026</b>: выручка $111 млрд, чистая прибыль $29,6 млрд, EPS $2,01, своб. ден. поток $26,7 млрд\n<b>27.12.2025</b>: выручка $144 млрд, чистая прибыль $42,1 млрд, EPS $2,84, своб. ден. поток $51,6 млрд\n<b>27.09.2025</b>: выручка $102 млрд, чистая прибыль $27,5 млрд, EPS $1,84, своб. ден. поток $26,5 млрд\n<b>28.06.2025</b>: выручка $94,0 млрд, чистая прибыль $23,4 млрд, EPS $1,57, своб. ден. поток $24,4 млрд\n<b>29.03.2025</b>: выручка $95,4 млрд, чистая прибыль $24,8 млрд, EPS $1,65, своб. ден. поток $20,9 млрд\n\n<b>Годы</b>\n<b>27.09.2025</b>: выручка $416 млрд, чистая прибыль $112 млрд, EPS $7,46, своб. ден. поток $98,8 млрд\n<b>28.09.2024</b>: выручка $391 млрд, чистая прибыль $93,7 млрд, EPS $6,08, своб. ден. поток $109 млрд\n<b>30.09.2023</b>: выручка $383 млрд, чистая прибыль $97,0 млрд, EPS $6,13, своб. ден. поток $99,6 млрд\n<b>24.09.2022</b>: выручка $394 млрд, чистая прибыль $99,8 млрд, EPS $6,11, своб. ден. поток $111 млрд\n\nДенежные средства $35,9 млрд · долг $90,7 млрд · капитал $73,7 млрд",
+   "buttons": [
+    "🖥 FA в терминале"
+   ]
+  },
+  "ru /ern AAPL": {
+   "sec": 0.001,
+   "text": "📊 <b>Отчёты AAPL</b>\n\nСледующий: <b>02.11.2026</b> после закрытия · Q4 2026\nПрогноз: EPS $2,02, выручка $115 млрд\n\n<b>Прибыль на акцию: факт против прогноза</b>\n❌ Q3 2026: факт $1,91 · прогноз $1,93 · −0,9%\n✅ Q2 2026: факт $2,01 · прогноз $1,99 · +1,1%\n✅ Q1 2026: факт $2,84 · прогноз $2,73 · +4,2%\n✅ Q4 2025: факт $1,85 · прогноз $1,81 · +2,4%",
+   "buttons": [
+    "🖥 ERN в терминале"
+   ]
+  },
+  "ru /ee AAPL": {
+   "sec": 0,
+   "text": "🔮 <b>Прогнозы по AAPL</b> · аналитиков: 40\n\n<b>Текущий квартал</b> (до 30.09.2026)\nEPS $1,98 (1,93–2,07) · +6,9% г/г\nВыручка $114 млрд · +10,9% г/г\n<i>пересмотры за 30 дн.: ↑1 ↓0 · прогноз EPS 90 дней назад $2,02</i>\n\n<b>Следующий квартал</b> (до 31.12.2026)\nEPS $2,91 (2,56–3,42) · +2,3% г/г\nВыручка $154 млрд · +7,0% г/г\n<i>пересмотры за 30 дн.: ↑2 ↓1 · прогноз EPS 90 дней назад $2,96</i>\n\n<b>Текущий год</b> (до 30.09.2026)\nEPS $8,82 (8,28–8,94) · +18,2% г/г\nВыручка $478 млрд · +14,9% г/г\n<i>пересмотры за 30 дн.: ↑2 ↓1 · прогноз EPS 90 дней назад $8,77</i>\n\n<b>Следующий год</b> (до 30.09.2027)\nEPS $9,58 (8,69–10,67) · +8,7% г/г\nВыручка $529 млрд · +10,5% г/г\n<i>пересмотры за 30 дн.: ↑4 ↓3 · прогноз EPS 90 дней назад $9,69</i>\n\nСледующий отчёт: <b>02.11.2026</b>\n\n<b>Сюрпризы</b>\n30.06.2026: $2,02 против $1,89 · +6,7%\n31.03.2026: $2,01 против $1,94 · +3,5%\n31.12.2025: $2,84 против $2,67 · +6,3%\n30.09.2025: $1,85 против $1,77 · +4,5%",
+   "buttons": [
+    "🖥 EE в терминале"
+   ]
+  },
+  "ru /anr AAPL": {
+   "sec": 0,
+   "text": "🎯 <b>Аналитики о AAPL</b> · 2026-09\nКонсенсус: <b>покупать</b> (3,8 из 5, 53 аналитиков)\n\n<code>Активно покупать  12 █████\nПокупать          22 ████████\nДержать           15 ██████\nПродавать          3 █\nАктивно продав.    1 </code>\n\n2026-06: купить 38, держать 15, продать 2\n\n🎯 <b>Целевая цена</b> (аналитиков: 39): средняя <b>$329,38</b>, медиана $340,00\nдиапазон $215,00 – $405,00 · цена $342,96 · −4,0% до средней\n\n<b>Последние изменения рейтингов</b>\n12.10 <b>JP Morgan</b>: ▪️ подтверждён Overweight · цель $360 (была $340)\n01.10 <b>Morgan Stanley</b>: ▪️ подтверждён Overweight · цель $355 (была $360)\n01.10 <b>Needham</b>: ▪️ подтверждён Hold\n29.09 <b>Morgan Stanley</b>: ▪️ подтверждён Overweight · цель $360\n23.09 <b>B of A Securities</b>: ▪️ подтверждён Buy · цель $370\n18.09 <b>Evercore ISI Group</b>: ▪️ подтверждён Outperform · цель $380 (была $365)\n17.09 <b>B of A Securities</b>: ▪️ подтверждён Buy · цель $370\n10.09 <b>TD Cowen</b>: ▪️ подтверждён Buy · цель $400",
+   "buttons": [
+    "🖥 ANR в терминале"
+   ]
+  },
+  "ru /hds AAPL": {
+   "sec": 0,
+   "text": "💼 <b>Акционеры AAPL</b>\nИнсайдеры <b>1,6%</b> · институционалы <b>66,3%</b> (7 697)\n<b>Крупнейшие институционалы</b>\nBlackrock Inc.: 7,97% · $399 млрд · +1,6%\nVanguard Capital Management LLC: 6,57% · $329 млрд · +0,6%\nState Street Corporation: 4,21% · $211 млрд · +2,1%\nGeode Capital Management, LLC: 2,54% · $127 млрд · +0,7%\nVanguard Portfolio Management LLC: 2,29% · $115 млрд · +0,8%\nFMR, LLC: 2,23% · $112 млрд · +5,8%\n<b>Крупнейшие фонды</b>\nVanguard Total Stock Market Index Fund: 3,19% · $160 млрд · +0,0%\nVanguard 500 Index Fund: 2,61% · $131 млрд · +2,0%\niShares Core S&amp;P 500 ETF: 1,34% · $67,1 млрд · −1,3%\nFidelity 500 Index Fund: 1,31% · $65,4 млрд · +0,4%\n<b>Сделки инсайдеров (форма 4 SEC)</b>\n<i>за 6 месяцев: покупок 12, продаж 17</i>\n\n🔴 продажа 2 399 акций по $332,01 ($796 492)\n<i>Newstead Jennifer · 06.10.2026</i>\n\n🔴 продажа 3 754 акций по $334,05 ($1,3 млн)\n<i>Ternus John · 02.10.2026</i>\n\n🔴 продажа 12 746 акций по $333,34 ($4,2 млн)\n<i>Ternus John · 02.10.2026</i>\n\n🔴 продажа 5 348 акций по $332,26 ($1,8 млн)\n<i>Ternus John · 02.10.2026</i>\n\n🔴 продажа 3 564 акций по $331,38 ($1,2 млн)\n<i>Ternus John · 02.10.2026</i>\n\n🔴 продажа 5 625 акций по $333,91 ($1,9 млн)\n<i>O'BRIEN DEIRDRE · 02.10.2026</i>\n\n🔴 продажа 40 764 акций по $333,35 ($13,6 млн)\n<i>O'BRIEN DEIRDRE · 02.10.2026</i>\n\n🔴 продажа 40 879 акций по $333,94 ($13,7 млн)\n<i>COOK TIMOTHY D · 02.10.2026</i>",
+   "buttons": [
+    "SI шорты",
+    "🖥 HDS в терминале"
+   ]
+  },
+  "ru /si AAPL": {
+   "sec": 0,
+   "text": "🩳 <b>Короткие позиции по AAPL</b>\nВ шорте: <b>120 763 539 акций</b> на 30.09.2026\n0,83% акций в обращении · дней на покрытие 3,0\nРанее: 128 753 092 на 15.09.2026 (−6,2%)\n\n<code>30.09.2026:   120 763 539 · 3,0 дн.\n15.09.2026:   128 753 092 · 2,9 дн.\n31.08.2026:   139 749 097 · 3,5 дн.\n14.08.2026:   116 327 753 · 2,5 дн.\n31.07.2026:   141 606 163 · 2,4 дн.\n15.07.2026:   146 547 784 · 3,1 дн.\n30.06.2026:   140 526 320 · 1,7 дн.\n15.06.2026:   144 248 476 · 2,8 дн.\n29.05.2026:   155 886 024 · 3,4 дн.\n15.05.2026:   138 782 718 · 2,7 дн.</code>",
+   "buttons": [
+    "🖥 HDS в терминале"
+   ]
+  },
+  "ru /dvd AAPL": {
+   "sec": 0.001,
+   "text": "💵 <b>Дивиденды AAPL</b>\nВ год: <b>$1,05</b> · доходность 0,32% · доля прибыли 12%\nОтсечка 10.08.2026 · выплата 13.08.2026\n\n<b>По годам</b>\n2026: $0,80\n2025: $1,03 (+4,0%)\n2024: $0,99 (+4,2%)\n2023: $0,95 (+4,4%)\n2022: $0,91 (+5,2%)\n2021: $0,86\n\n<b>Последние выплаты</b>\n10.08.2026: $0,27\n11.05.2026: $0,27\n09.02.2026: $0,26\n10.11.2025: $0,26\n11.08.2025: $0,26\n12.05.2025: $0,26\n\nСплиты: 4:1 (31.08.2020), 7:1 (09.06.2014)",
+   "buttons": [
+    "🖥 DVD в терминале"
+   ]
+  },
+  "ru /dvd KO": {
+   "sec": 0.141,
+   "text": "💵 <b>Дивиденды KO</b>\n\n<b>По годам</b>\n2026: $1,59\n2025: $2,04 (+5,2%)\n2024: $1,94 (+5,4%)\n2023: $1,84 (+4,5%)\n2022: $1,76 (+4,8%)\n2021: $1,68\n\n<b>Последние выплаты</b>\n15.09.2026: $0,53\n15.06.2026: $0,53\n13.03.2026: $0,53\n01.12.2025: $0,51\n15.09.2025: $0,51\n13.06.2025: $0,51\n\nСплиты: 2:1 (13.08.2012)",
+   "buttons": [
+    "🖥 DVD в терминале"
+   ]
+  },
+  "ru /cf AAPL": {
+   "sec": 0,
+   "text": "🗂 <b>Отчёты AAPL в SEC</b>\n01.09.2026 · <b>8-K/A</b> · <a href=\"https://cdn.yahoofinance.com/prod/sec-filings/0000320193/000114036126035325/ef20081427_8ka.htm\">читать →</a>\n31.07.2026 · <b>10-Q</b> — квартальный отчёт · <a href=\"https://cdn.yahoofinance.com/prod/sec-filings/0000320193/000032019326000020/aapl-20260627.htm\">читать →</a>\n30.07.2026 · <b>8-K</b> — существенное событие · <a href=\"https://cdn.yahoofinance.com/prod/sec-filings/0000320193/000032019326000018/aapl-20260730.htm\">читать →</a>\n28.05.2026 · <b>SD</b> — конфликтные минералы · <a href=\"https://cdn.yahoofinance.com/prod/sec-filings/0000320193/000114036126023149/ef20073373_sd.htm\">читать →</a>\n01.05.2026 · <b>10-Q</b> — квартальный отчёт · <a href=\"https://cdn.yahoofinance.com/prod/sec-filings/0000320193/000032019326000013/aapl-20260328.htm\">читать →</a>\n30.04.2026 · <b>8-K</b> — существенное событие · <a href=\"https://cdn.yahoofinance.com/prod/sec-filings/0000320193/000032019326000011/aapl-20260430.htm\">читать →</a>\n20.04.2026 · <b>8-K</b> — существенное событие · <a href=\"https://cdn.yahoofinance.com/prod/sec-filings/0000320193/000114036126015711/ef20071035_8k.htm\">читать →</a>\n24.02.2026 · <b>8-K</b> — существенное событие · <a href=\"https://cdn.yahoofinance.com/prod/sec-filings/0000320193/000114036126006577/ef20060722_8k.htm\">читать →</a>\n30.01.2026 · <b>10-Q</b> — квартальный отчёт · <a href=\"https://cdn.yahoofinance.com/prod/sec-filings/0000320193/000032019326000006/aapl-20251227.htm\">читать →</a>\n29.01.2026 · <b>8-K</b> — существенное событие · <a href=\"https://cdn.yahoofinance.com/prod/sec-filings/0000320193/000032019326000005/aapl-20260129.htm\">читать →</a>\n08.01.2026 · <b>DEF 14A</b> — материалы к собранию · <a href=\"https://cdn.yahoofinance.com/prod/sec-filings/0000320193/000130817926000008/aapl_courtesy-pdf.pdf\">читать →</a>\n02.01.2026 · <b>8-K</b> — существенное событие · <a href=\"https://cdn.yahoofinance.com/prod/sec-filings/0000320193/000114036126000199/ef20060722_8k.htm\">читать →</a>",
+   "buttons": [
+    "🖥 CF в терминале"
+   ]
+  },
+  "ru /cf MSFT": {
+   "sec": 0.005,
+   "text": "🗂 <b>Отчёты MSFT в SEC</b>\n14.09.2026 · <b>144</b> · <a href=\"https://www.sec.gov/Archives/edgar/data/1576843/000195824426000598/primary_doc.xml\">читать →</a>\n09.09.2026 · <b>PX14A6G</b> · <a href=\"https://www.sec.gov/Archives/edgar/data/1636143/000121465926011511/o91268px14a6g.htm\">читать →</a>\n02.09.2026 · <b>8-K</b> — существенное событие · <a href=\"https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965d8k.htm\">читать →</a>\n01.09.2026 · <b>144</b> · <a href=\"https://www.sec.gov/Archives/edgar/data/1513142/000195004726008927/primary_doc.xml\">читать →</a>\n05.08.2026 · <b>144</b> · <a href=\"https://www.sec.gov/Archives/edgar/data/1868758/000195917326005674/primary_doc.xml\">читать →</a>\n04.08.2026 · <b>144</b> · <a href=\"https://www.sec.gov/Archives/edgar/data/1899931/000195917326005608/primary_doc.xml\">читать →</a>\n29.07.2026 · <b>10-K</b> — годовой отчёт · <a href=\"https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm\">читать →</a>\n29.07.2026 · <b>8-K</b> — существенное событие · <a href=\"https://www.sec.gov/Archives/edgar/data/789019/000119312526323632/msft-20260729.htm\">читать →</a>\n22.07.2026 · <b>PX14A6G</b> · <a href=\"https://www.sec.gov/Archives/edgar/data/1636143/000121465926008806/w721267px14a6g.htm\">читать →</a>\n02.07.2026 · <b>PX14A6G</b> · <a href=\"https://www.sec.gov/Archives/edgar/data/1636143/000121465926008121/j72261px14a6g.htm\">читать →</a>\n25.06.2026 · <b>11-K</b> — план для сотрудников · <a href=\"https://www.sec.gov/Archives/edgar/data/789019/000119312526282817/msft-20251231.htm\">читать →</a>\n25.06.2026 · <b>11-K</b> — план для сотрудников · <a href=\"https://www.sec.gov/Archives/edgar/data/789019/000119312526282773/d839790d11k.htm\">читать →</a>",
+   "buttons": [
+    "🖥 CF в терминале"
+   ]
+  },
+  "ru /mgmt AAPL": {
+   "sec": 0,
+   "text": "👔 <b>Руководство AAPL</b>\n<b>Mr. Timothy D. Cook</b>, 64\nExecutive Chairman of the Board · вознаграждение $16,8 млн\n\n<b>Mr. Kevan Parekh</b>, 53\nSenior VP &amp; CFO · вознаграждение $4,0 млн\n\n<b>Mr. Sabih Khan</b>, 58\nSenior VP &amp; Chief Operating Officer · вознаграждение $5,0 млн\n\n<b>Ms. Deirdre O'Brien</b>, 58\nSenior Vice President of Retail &amp; People · вознаграждение $5,0 млн\n\n<b>Ms. Katherine L. Adams</b>, 61\nSecretary · вознаграждение $5,0 млн\n\n<b>Mr. John Ternus</b>, 49\nCEO &amp; Director\n\n<b>Mr. Ben Borders</b>, 44\nPrincipal Accounting Officer\n\n<b>Suhasini Chandramouli</b>\nDirector of Investor Relations\n\n<b>Ms. Jennifer G. Newstead J.D.</b>, 55\nSenior VP of Government Affairs &amp; General Counsel\n\n<b>Ms. Kristin Huguet Quayle</b>\nVice President of Worldwide Communications",
+   "buttons": [
+    "🖥 MGMT в терминале"
+   ]
+  },
+  "ru /rv AAPL": {
+   "sec": 0,
+   "text": "⚖️ <b>AAPL и конкуренты</b> <i>(тот же сектор)</i>\n<code>Тикер     P/E   P/S  Выр% Приб%   1г%\nAAPL     38,7  10,7    14    28    38\nNVDA     28,1  17,9    83    64    21\nMSFT     30,2  12,2    18    40     6\nAVGO     43,2  18,6    49    43     0\nMU       12,4   7,9   256    64   394\nAMD     145,2  22,6    40    16   180\nINTC        —   9,2     7   −20   176\nPLTR    159,6  78,2    79    49    18\nCSCO     33,8   7,1    12    21    71\nМедиана  33,8  15,0    44    42    46</code>",
+   "buttons": [
+    "🖥 RV в терминале"
+   ]
+  },
+  "ru /omon AAPL": {
+   "sec": 0,
+   "text": "🎰 <b>Опционы AAPL</b> · $345,86\nIV30 <b>26,3%</b> (+0,03)\nПут/колл: по объёму 0,92 · по открытому интересу 0,79\n\n<b>Экспирация · IV · ожидаемое движение · max pain</b>\n16.10 (1 дн.): IV 26,6% · ±$5,53 (1,6%) · $330\n19.10 (4 дн.): IV 21,8% · ±$7,16 (2,1%) · $343\n21.10 (6 дн.): IV 21,2% · ±$8,20 (2,4%) · $340\n23.10 (8 дн.): IV 23,1% · ±$10,08 (2,9%) · $340\n26.10 (11 дн.): IV 21,7% · ±$10,85 (3,1%) · $343\n28.10 (13 дн.): IV 22,7% · ±$12,28 (3,5%) · $345\n30.10 (15 дн.): IV 22,8% · ±$13,25 (3,8%) · $335\n06.11 (22 дн.): IV 27,3% · ±$18,95 (5,5%) · $335\n\n<b>Наибольший открытый интерес</b>\n16.10 $340 call: 101 850\n15.01 $300 call: 64 321\n15.01 $240 put: 59 107\n15.01 $350 call: 56 193\n16.10 $360 call: 55 764\n16.10 $350 call: 40 256",
+   "buttons": [
+    "🖥 OMON в терминале"
+   ]
+  },
+  "ru /omon XOM": {
+   "sec": 0.132,
+   "text": "🎰 <b>Опционы XOM</b> · $177,06\nIV30 <b>30,8%</b> (+0,40)\n<i>По этому тикеру есть только IV30; полные цепочки хранятся для ~100 компаний и ETF.</i>",
+   "buttons": []
+  },
+  "ru /cn AAPL": {
+   "sec": 1.413,
+   "text": "📰 <b>Новости AAPL</b>\n\n▪️ <b>Подписка на услуги домашнего агента: анализ тонкой печати в сервисах учета Apple и Meta</b>\n<i>Yahoo · 15 окт., 15:23</i> · <a href=\"https://finnhub.io/api/news?id=46b6d7c0c5f1013e102b6da6018dcc741742ff6649bfed31bdbc8dd5ef1c04ed\">читать →</a>\n\n▪️ <b>KeyBanc понижает Cirrus Logic после азиатского отключения, видит память и аналоговую силу</b>\n<i>Yahoo · 15 окт., 14:58</i> · <a href=\"https://finnhub.io/api/news?id=030121eaf064637cb0b97535e7062ccf1f0b232daa44301e341f2b02c4ce21bb\">читать →</a>\n\n▪️ <b>Apple Intelligence получила дату запуска в Китае, но продажи Apple в Китае уже выросли на 22%</b>\n<i>Yahoo · 15 окт., 14:47</i> · <a href=\"https://finnhub.io/api/news?id=412f00e4e2777aa001836b58b98a1e640bcd1ee28bc0bde49ab03387f65b07fe\">читать →</a>\n\n▪️ <b>Broadcom против SK Hynix: какой технологический запас лучше купить в 2026 году?</b>\n<i>Yahoo · 15 окт., 14:20</i> · <a href=\"https://finnhub.io/api/news?id=7f34d406ecfeb55b9024dd67e7734cba92536b11355ff86b5ccd6df3d4894f96\">читать →</a>\n\n▪️ <b>Apple нужно всего 7% прибыли, чтобы стать самой дорогой компанией в мире</b>\n<i>Yahoo · 15 окт., 14:15</i> · <a href=\"https://finnhub.io/api/news?id=fbb350064c370c9ed4bbebac782d2627634a4bc563192054e4e95d808852f0e0\">читать →</a>\n\n▪️ <b>Акции Intel, Marvell, CoreWeave, TSMC, Apple и других компаний, которые объясняют сегодняшний рынок</b>\n<i>Yahoo · 15 окт., 13:36</i> · <a href=\"https://finnhub.io/api/news?id=71cfe2135e8ab4e784459e25cfcf142b2d658af8c100a0915bf9f50a609c4f05\">читать →</a>\n\n▪️ <b>Premarket Movers: AAPL получает отчет об одобрении ИИ в Китае — почему акции WMT, NFLX также растут</b>\n<i>Yahoo · 15 окт., 13:19</i> · <a href=\"https://finnhub.io/api/news?id=d8141f3a09a78cb40928b8f365eaeaaba4af64c1f7ef29e740a525d6c45dcf0e\">читать →</a>\n\n▪️ <b>Тайваньский производитель чипов TSMC изучает инвестиции Техаса для расширения производства в США</b>\n<i>Yahoo · 15 окт., 13:16</i> · <a href=\"https://finnhub.io/api/news?id=49634ca1d7a3e06682c8b61a7627b87d5a1c6f77c5f54af54bfc37a4ecf855eb\">читать →</a>",
+   "buttons": [
+    "🖥 CN в терминале"
+   ]
+  },
+  "ru /chart BTC 1d": {
+   "sec": 0.272,
+   "text": "📈 <b>BTC</b> BTC/USDT\n1 день: −2,45% · сейчас 80 228 · мин. 79 800 · макс. 82 521",
+   "buttons": [
+    "• 1d •",
+    "1m",
+    "6m",
+    "1y",
+    "5y",
+    "🖥 Открыть в терминале"
+   ]
+  },
+  "ru /chart AAPL 5d": {
+   "sec": 0.27,
+   "text": "📈 <b>AAPL</b> Apple Inc.\n5 дней: +3,80% · сейчас 345,15 · мин. 330,70 · макс. 348,15",
+   "buttons": [
+    "1d",
+    "1m",
+    "6m",
+    "1y",
+    "5y",
+    "🖥 Открыть в терминале"
+   ]
+  },
+  "ru /macro": {
+   "sec": 0,
+   "text": "🌍 <b>Прогнозы МВФ</b>: рост ВВП и инфляция, 2026 / 2027\n\nМир: ВВП 3,1 / 3,4 · ИПЦ 4,7 / 4,1\nРазвитые страны: ВВП 2,1 / 1,8 · ИПЦ 3,1 / 2,7\nРазвивающиеся страны: ВВП 3,7 / 4,4 · ИПЦ 5,7 / 5,1\nЕврозона: ВВП 1,1 / 1,2 · ИПЦ 3,1 / 2,8\nСША: ВВП 2,3 / 2,3 · ИПЦ 3,6 / 2,8\nКитай: ВВП 4,5 / 4,0 · ИПЦ 1,0 / 1,4\nГермания: ВВП 1,3 / 1,1 · ИПЦ 2,7 / 3,1\nЯпония: ВВП 0,7 / 0,7 · ИПЦ 2,0 / 2,6\nИндия: ВВП 7,0 / 7,0 · ИПЦ 5,0 / 4,4\nВеликобритания: ВВП 1,3 / 1,2 · ИПЦ 3,3 / 2,8\nФранция: ВВП 0,4 / 0,7 · ИПЦ 2,4 / 2,2\nИталия: ВВП 0,8 / 0,6 · ИПЦ 3,3 / 2,8\nКанада: ВВП 1,1 / 1,7 · ИПЦ 2,8 / 2,4\nБразилия: ВВП 2,2 / 1,9 · ИПЦ 4,4 / 4,1\nРоссия: ВВП 0,9 / 0,9 · ИПЦ 6,1 / 4,8\nЮжная Корея: ВВП 3,3 / 2,8 · ИПЦ 2,7 / 2,3\nАвстралия: ВВП 1,9 / 1,6 · ИПЦ 3,9 / 3,1\nИспания: ВВП 2,5 / 1,8 · ИПЦ 3,7 / 2,7\nМексика: ВВП 1,5 / 1,8 · ИПЦ 3,8 / 3,6\nИндонезия: ВВП 5,1 / 5,1 · ИПЦ 3,3 / 2,8\nТурция: ВВП 2,7 / 3,6 · ИПЦ 31,2 / 26,5\nСаудовская Аравия: ВВП −3,3 / 7,9 · ИПЦ 1,9 / 2,2\nШвейцария: ВВП 1,9 / 1,2 · ИПЦ 0,7 / 0,8\nЮАР: ВВП 1,0 / 1,3 · ИПЦ 4,4 / 3,9\nКазахстан: ВВП 4,4 / 4,9 · ИПЦ 10,3 / 8,2\n\n<i>Одна страна: /macro US · /macro Китай · /macro RU</i>",
+   "buttons": [
+    "🖥 ECST в терминале"
+   ]
+  },
+  "ru /macro RU": {
+   "sec": 0.001,
+   "text": "🌍 <b>Россия</b> · МВФ, «Перспективы мировой экономики»\n<code>                    2024   2025   2026   2027   2028\nРост ВВП, %          4,9    1,0    0,9    0,9    1,0\nИнфляция, %          8,4    8,7    6,1    4,8    4,0\nБезработица, %       2,5    2,2    2,2    2,4    3,3\nБюджет, % ВВП       −1,6   −3,9   −3,2   −3,2   −3,3\nГосдолг, % ВВП      14,8   16,6   19,3   22,2   24,8\nТек. счёт, % ВВП     2,9    1,5    3,8    3,2    2,5\nВВП, млрд $        2 186  2 572  2 861  2 675  2 638</code>",
+   "buttons": [
+    "🖥 ECST в терминале"
+   ]
+  },
+  "ru /ipo": {
+   "sec": 0,
+   "text": "🔔 <b>Календарь IPO</b> (США, ближайшие 30 дней)\n\n<b>15.10</b> IAM · Iambic Therapeutics, Inc.\n$15.00-17.00 · 9 375 000 акций · $183 млн · ожидается\n\n<b>15.10</b> SCQCU · SPACCircle Acquisition Corp.\n$10.00 · 15 000 000 акций · $173 млн · ожидается\n\n<b>16.10</b> CTY · CITY THERAPEUTICS, INC.\n$17.00-19.00 · 9 722 222 акций · $212 млн · ожидается",
+   "buttons": [
+    "🖥 IPO в терминале"
+   ]
+  },
+  "ru /moex": {
+   "sec": 0.001,
+   "text": "🇷🇺 <b>Мосбиржа сегодня</b> · 16:38 МСК\n<i>по секторам, с учётом капитализации</i>\n\n🟩🟩 Промышленность +0,84%\n🟩 Прочее +0,16%\n🟩 Материалы +0,07%\n🟥 Коммунальные −0,09%\n🟥 Повседн. спрос −0,16%\n🟥 Связь и медиа −0,30%\n🟥 Здравоохранение −0,51%\n🟥 Финансы −0,52%\n🟥 Энергетика −0,65%\n🟥🟥 Технологии −1,05%\n🟥🟥🟥 Циклич. потребление −1,59%\n🟥🟥🟥 Недвижимость −1,60%\n\n🚀 <b>Лидеры:</b> Совкомфлот +3,9%, Полюс +2,2%, iЦиан +0,9%, РУСАЛ ао +0,8%, ФосАгро ао +0,8%\n📉 <b>Аутсайдеры:</b> Татнфт 3ао −2,8%, Татнфт 3ап −2,5%, ММК −2,4%, Озон −1,7%, Аэрофлот −1,6%",
+   "buttons": [
+    "🖥 Тепловая карта"
+   ]
+  },
+  "ru /map": {
+   "sec": 0,
+   "text": "🗺 <b>Акции США: секторы за день</b>\n<i>взвешено по капитализации</i>\n\n🟩🟩🟩🟩🟩 Здравоохранение +2,59%\n🟩🟩🟩🟩🟩 Повседн. спрос +2,54%\n🟩🟩 Недвижимость +1,11%\n🟩🟩 Коммунальные +0,99%\n🟩 Связь и медиа +0,65%\n🟩 Материалы +0,62%\n🟩 Финансы +0,27%\n🟥 Промышленность −0,51%\n🟥 Энергетика −0,65%\n🟥🟥 Циклич. потребление −0,85%\n🟥🟥🟥 Технологии −1,56%\n\n🚀 <b>Лидеры:</b> INTU +5,6%, NKE +4,8%, ADBE +4,4%, BMY +4,0%, HD +3,7%\n📉 <b>Аутсайдеры:</b> INTC −7,0%, LRCX −6,5%, AMD −6,1%, CAT −5,5%, MU −5,1%",
+   "buttons": [
+    "🖥 Тепловая карта"
+   ]
+  },
+  "ru /eqs leaders": {
+   "sec": 0.001,
+   "text": "🔎 <b>🚀 Лидеры дня</b>\n\n1. <b>INTU</b> Intuit: $327,85 +5,61% · P/E 18,0 · див. 0,6%\n2. <b>NKE</b> Nike: $36,98 +4,77% · P/E 16,7 · див. 1,4%\n3. <b>ADBE</b> Adobe: $251,19 +4,37% · P/E 12,6\n4. <b>BMY</b> Bristol-Myers Squibb: $61,66 +4,01% · P/E 12,8 · див. 4,6%\n5. <b>HD</b> Home Depot: $306,55 +3,74% · P/E 20,5 · див. 2,7%\n6. <b>WMT</b> Walmart: $120,47 +3,71% · P/E 42,3 · див. 0,8%\n7. <b>LOW</b> Lowe's: $194,90 +3,50% · P/E 15,7 · див. 2,2%\n8. <b>CMCSA</b> Comcast: $21,79 +3,49% · P/E 6,6 · див. 2,7%\n9. <b>LLY</b> Eli Lilly: $1 251 +3,47% · P/E 42,6 · див. 0,8%\n10. <b>GILD</b> Gilead: $158,60 +3,30% · P/E — · див. 4,0%\n11. <b>TMUS</b> T-Mobile US: $162,78 +3,16% · P/E 15,9 · див. 1,7%\n12. <b>AMGN</b> Amgen: $438,94 +3,01% · P/E 26,2 · див. 3,2%\n13. <b>SBUX</b> Starbucks: $95,96 +2,90% · P/E 53,4 · див. 2,2%\n14. <b>ACN</b> Accenture: $221,03 +2,80% · P/E 16,0 · див. 1,5%\n15. <b>ABBV</b> AbbVie: $289,69 +2,80% · P/E 76,8 · див. 4,5%\n\n<i>обновлено 16:52 МСК</i>",
+   "buttons": [
+    "← Другие отборы",
+    "🖥 Скринер в терминале"
+   ]
+  },
+  "ru /earnings": {
+   "sec": 0.001,
+   "text": "📊 В ближайшую неделю отчётов крупнейших компаний США нет.",
+   "buttons": []
+  },
+  "ru /rates": {
+   "sec": 0,
+   "text": "📐 <b>Доходности гособлигаций</b>\n<i>в скобках — изменение за неделю, б.п.</i>\n\n🇺🇸 <b>США</b> · 14.10\n2Y <b>4,82%</b> (+5) · 10Y <b>5,19%</b> (−9) · 30Y <b>5,52%</b> (−15)\n<i>спред 10Y−2Y: 37 б.п.</i>\n\n🇩🇪 <b>Германия</b> · 15.10\n2Y <b>3,07%</b> (−1) · 10Y <b>3,42%</b> (−12) · 30Y <b>3,75%</b> (−13)\n<i>спред 10Y−2Y: 35 б.п.</i>\n\n🇬🇧 <b>Великобритания</b> · 13.10\n10Y <b>5,43%</b> (+6)\n\n🇯🇵 <b>Япония</b> · 14.10\n2Y <b>1,93%</b> (−2) · 10Y <b>3,02%</b> (−10) · 30Y <b>4,07%</b> (−8)\n<i>спред 10Y−2Y: 109 б.п.</i>\n\n🇷🇺 <b>Россия (ОФЗ)</b> · 15.10\n2Y <b>15,03%</b> · 10Y <b>16,47%</b>\n<i>спред 10Y−2Y: 144 б.п.</i>",
+   "buttons": [
+    "🖥 Кривые в терминале"
+   ]
+  },
+  "ru /cb": {
+   "sec": 0,
+   "text": "🏦 <b>Ставки центробанков</b>\n\n🇺🇸 ФРС США: <b>3,75–4,00%</b> <i>(было 3,63%, с 17.09.2026)</i>\n🇪🇺 ЕЦБ: <b>2,50%</b> <i>(было 2,25%, с 16.09.2026)</i>\n🇬🇧 Банк Англии: <b>3,75%</b> <i>(было 4,00%, с 18.12.2025)</i>\n🇯🇵 Банк Японии: <b>1,25%</b> <i>(было 1,00%, с 24.09.2026)</i>\n🇨🇳 Народный банк Китая: <b>3,00%</b> <i>(было 3,10%, с 20.05.2025)</i>\n🇨🇭 Нацбанк Швейцарии: <b>0,00%</b> <i>(было 0,25%, с 20.06.2025)</i>\n🇨🇦 Банк Канады: <b>2,25%</b> <i>(было 2,50%, с 30.10.2025)</i>\n🇦🇺 Резервный банк Австралии: <b>4,60%</b> <i>(было 4,35%, с 30.09.2026)</i>\n🇮🇳 Резервный банк Индии: <b>5,25%</b> <i>(было 5,50%, с 05.12.2025)</i>\n🇧🇷 ЦБ Бразилии: <b>13,75%</b> <i>(было 14,00%, с 17.09.2026)</i>\n🇹🇷 ЦБ Турции: <b>37,00%</b> <i>(было 38,00%, с 23.01.2026)</i>\n🇰🇷 Банк Кореи: <b>3,00%</b> <i>(было 2,75%, с 27.08.2026)</i>\n🇲🇽 Банк Мексики: <b>6,50%</b> <i>(было 6,75%, с 08.05.2026)</i>\n🇿🇦 Резервный банк ЮАР: <b>7,25%</b> <i>(было 7,00%, с 25.09.2026)</i>\n🇷🇺 ЦБ РФ: <b>14,00%</b> <i>(было 14,25%, с 27.07.2026)</i>\n\n<i>Источники: BIS, ФРБ Нью-Йорка, ЦБ РФ</i>",
+   "buttons": [
+    "🖥 В терминале"
+   ]
+  },
+  "ru /wirp": {
+   "sec": 0,
+   "text": "🏛 <b>Ожидания по ставке ФРС</b> (WIRP)\nСейчас: 3,75–4,00%, эффективная 3,88%\n\n<b>28.10.2026</b>: ожидаемая ставка 3,95% (+7 б.п. к текущей)\n<i>повышение: 28%, без изменений: 72%</i>\n\n<b>09.12.2026</b>: ожидаемая ставка 4,17% (+29 б.п. к текущей)\n<i>повышение: 87%, без изменений: 13%</i>\n\n<b>27.01.2027</b>: ожидаемая ставка 4,25% (+38 б.п. к текущей)\n<i>повышение: 35%, без изменений: 65%</i>\n\n<b>17.03.2027</b>: ожидаемая ставка 4,41% (+53 б.п. к текущей)\n<i>повышение: 62%, без изменений: 38%</i>\n\n<b>28.04.2027</b>: ожидаемая ставка 4,49% (+61 б.п. к текущей)\n<i>повышение: 30%, без изменений: 70%</i>\n\n<b>09.06.2027</b>: ожидаемая ставка 4,56% (+68 б.п. к текущей)\n<i>повышение: 32%, без изменений: 68%</i>\n\n<b>28.07.2027</b>: ожидаемая ставка 4,58% (+71 б.п. к текущей)\n<i>повышение: 8%, без изменений: 92%</i>\n\n<b>15.09.2027</b>: ожидаемая ставка 4,61% (+73 б.п. к текущей)\n<i>повышение: 8%, без изменений: 92%</i>\n\n<i>Рассчитано по фьючерсам на ставку по федеральным фондам (как CME FedWatch)</i>",
+   "buttons": [
+    "🖥 В терминале"
+   ]
+  },
+  "ru /des SBER": {
+   "sec": 0.202,
+   "text": "🏢 <b>Сбербанк России ПАО ао</b> · MOEX:SBER\nАкция обыкновенная · Мосбиржа · ISIN RU0009029540\n\nЦена: <b>283,77 ₽</b> −0,61% за день\nЛот: 1 шт.\nВыпуск: 21 586 948 000 шт.\nУровень листинга: 1",
+   "buttons": [
+    "📈 График 1г",
+    "⭐ В список",
+    "🖥 В терминале"
+   ]
+  },
+  "ru /dvd SBER": {
+   "sec": 0,
+   "text": "Дивидендов акций Мосбиржи в бесплатных данных пока нет.",
+   "buttons": []
+  },
+  "ru /ee ZZZZ": {
+   "sec": 0.004,
+   "text": "Подробных данных по ZZZZ пока нет: они собираются по ~100 крупнейшим компаниям США и обновляются дважды в день.",
+   "buttons": []
+  },
+  "reminder": {
+   "earning": {
+    "s": "CVX",
+    "n": "Chevron",
+    "d": "2026-10-30",
+    "h": "bmo",
+    "q": 3,
+    "y": 2026,
+    "eps_e": 4.8752,
+    "eps_a": null,
+    "rev_e": 60967780299,
+    "rev_a": null
+   },
+   "result": {
+    "sent": 1
+   },
+   "text": "☀️ <b>Your watchlist today</b>\n\n📊 <b>CVX</b> Chevron reports tomorrow before the open · EPS estimate $4.88"
+  }
+ },
+ "pw_install": 0,
+ "term_rc": 0,
+ "term_err": "",
+ "terminal": {
+  "en_des": "AAPL\nApple Inc\n$345.12\n+0.63% today\nTechnology · NASDAQ NMS · US · IPO 12 Dec 1980 · apple.com\nApple Inc. is an American multinational technology company headquartered in Cupertino, California, in Silicon Valley, and known for consumer electronics, software and online services. Founded in 1976 as Apple Computer Company by Steve Jobs, Steve Wozniak and Ronald Wayne, the company was incorporated by Jobs and Wozniak as Apple Computer, Inc. the following year. Its current name was adopted in 2007 as the company expanded its focus from computers to consumer electronics. Apple is one of the Big Tech companies.— Wikipedia\nMarket cap\n$4.99T\nP/E\n38.7\nForward P/E\n35.3\nP/S\n10.7\nP/B\n38.5\nEV/EBITDA\n30.0\n",
+  "en_ee": "Next report: 2 Nov 2026\nPeriod\tEnds\tEPS est.\tLow\tHigh\tAnalysts\tEPS y/y\tRevenue est.\tRev. y/y\tRevisions 30d\nCurrent qtr\t30 Sep 2026\t$1.98\t1.93\t2.07\t27\t+6.9%\t$114B\t+10.9%\t↑1 ↓0\nNext qtr\t31 Dec 2026\t$2.91\t2.56\t3.42\t22\t+2.3%\t$154B\t+7.0%\t↑2 ↓1\nCurrent year\t30 Sep 2026\t$8.82\t8.28\t8.94\t39\t+18.2%\t$478B\t+14.9%\t↑2 ↓1\nNext year\t30 Sep 2027\t$9.58\t8.69\t10.67\t40\t+8.7%\t$529B\t+10.5%\t↑4 ↓3\nEPS estimate over time\nPeriod\tNow\t7 days ago\t30 days ago\t60 days ago\t90 days ago\nCurrent qtr\t$1.98\t$1.98\t$1.98\t$1.98\t$2.02\nNext qtr\t$2.91\t$2.91\t$2.90\t$2.91\t$2.96\nCurrent year\t$8.82\t$8.82\t$8.82\t$8.81\t$8.77\nNext year\t$9.58\t$9.58\t$9.57\t$9.54\t$9.69\nSurprises\nQuarter\tActual\tEstimate\tSurprise\n30 Jun 2026\t$2.02\t$1.89\t+6.7%\n31 Mar",
+  "en_anr": "Analyst price target · opinions: 39\nAnalyst price target · opinions: 39 · mean $329.38 (-4.0%)\nLow $215\nHigh $405\nMean\n$329.38\nMedian\n$340.00\nHigh\n$405.00\nLow\n$215.00\nTo the mean\n-4.0%\nRating changes\nDate\tFirm\tAction\tRating\tWas\tTarget\tWas\n12 Oct 2026\tJP Morgan\tmaintained\tOverweight\t\t$360\t$340\n1 Oct 2026\tMorgan Stanley\tmaintained\tOverweight\t\t$355\t$360\n1 Oct 2026\tNeedham\treiterated\tHold\t\t\t\n29 Sep 2026\tMorgan Stanley\treiterated\tOverweight\t\t$360\t\n23 Sep 2026\tB of A Securities\treiterated\tBuy\t\t$370\t\n18 Sep 2026\tEvercore ISI Group\tmaintained\tOutperform\t\t$380\t$365\n17 Sep 2026\tB of A Securities\treiterated\tBuy\t\t$370\t\n10 Sep 2026\tTD Cowen\treiterated\tBuy\t\t$400\t\n10 Sep 2026\tRosenblatt\tmaintained\tNeutral\t",
+  "en_hds": "Ownership\nInsiders\n1.65%\nInstitutions\n66.33%\nInstitutions, % of float\n67.44%\nInstitutions\n7,697\nInsider buys, 6 mo\n12\nInsider sales, 6 mo\n17\nLargest institutions\nHolder\t% held\tShares\tValue\tChange\tReported\nBlackrock Inc.\t7.97%\t1,162,996,939\t$399B\t+1.6%\t30 Jun 2026\nVanguard Capital Management LLC\t6.57%\t959,107,911\t$329B\t+0.6%\t30 Jun 2026\nState Street Corporation\t4.21%\t615,129,929\t$211B\t+2.1%\t30 Jun 2026\nGeode Capital Management, LLC\t2.54%\t371,336,543\t$127B\t+0.7%\t30 Jun 2026\nVanguard Portfolio Management LLC\t2.29%\t334,119,156\t$115B\t+0.8%\t30 Jun 2026\nFMR, LLC\t2.23%\t325,348,754\t$112B\t+5.8%\t30 Jun 2026\nMorgan Stanley\t1.66%\t242,614,238\t$83.2B\t-0.8%\t30 Jun 2026\nJPMORGAN CHASE & CO\t1.57%\t228,762,008\t",
+  "en_dvd": "Annual dividend\n$1.05\nYield\n0.32%\nPayout ratio\n12%\n5-year avg yield\n0.47%\nEx-date\n10 Aug 2026\nPayment\n13 Aug 2026\nDividends by year\n'15\n'16\n'17\n'18\n'19\n'20\n'21\n'22\n'23\n'24\n'25\n'26\nEx-date\tAmount\tChange\n10 Aug 2026\t$0.2700\t0.0%\n11 May 2026\t$0.2700\t+3.8%\n9 Feb 2026\t$0.2600\t0.0%\n10 Nov 2025\t$0.2600\t0.0%\n11 Aug 2025\t$0.2600\t0.0%\n12 May 2025\t$0.2600\t+4.0%\n10 Feb 2025\t$0.2500\t0.0%\n8 Nov 2024\t$0.2500\t0.0%\n12 Aug 2024\t$0.2500\t0.0%\n10 May 2024\t$0.2500\t+4.2%\n9 Feb 2024\t$0.2400\t0.0%\n10 Nov 2023\t$0.2400\t0.0%\n11 Aug 2023\t$0.2400\t0.0%\n12 May 2023\t$0.2400\t+4.3%\n10 Feb 2023\t$0.2300\t0.0%\n4 Nov 2022\t$0.2300\t0.0%\n5 Aug 2022\t$0.2300\t0.0%\n6 May 2022\t$0.2300\t+4.5%\n4 Feb 2022\t$0.2200\t0.0%\n5 Nov 2021\t$0.2200\t0.0%\n6",
+  "en_omon": "Price\n$345.86\nIV30\n26.3%\nIV30 change\n+0.03\nPut/call, volume\n0.92\nPut/call, open int.\n0.79\nCall volume\n386,180\nPut volume\n356,857\nData as of\n2026-10-15 11:47\n16 Oct\n19 Oct\n21 Oct\n23 Oct\nCALLS\t\tPUTS\nBid\tAsk\tLast\tIV\tΔ\tOI\tVol\tStrike\tBid\tAsk\tLast\tIV\tΔ\tOI\tVol\n34.10\t37.10\t36.76\t—\t0.99\t83\t54\t307.5\t0.02\t0.04\t0.04\t59.6\t-0.01\t813\t17\n32.35\t33.75\t32.60\t—\t0.99\t7,706\t260\t310\t0.03\t0.05\t0.03\t57.6\t-0.01\t10,835\t123\n29.15\t32.05\t30.97\t—\t0.99\t118\t141\t312.5\t0.03\t0.05\t0.05\t53.6\t-0.01\t1,450\t140\n27.35\t28.75\t28.24\t—\t0.99\t6,553\t177\t315\t0.04\t0.06\t0.05\t51.0\t-0.01\t9,996\t660\n24.30\t26.25\t25.78\t—\t0.99\t203\t54\t317.5\t0.05\t0.07\t0.06\t47.5\t-0.01\t1,922\t131\n22.35\t23.75\t22.82\t—\t0.98\t5,273\t159\t320\t0.06\t0.08\t0.06\t44.3\t-0.02\t15,678\t2,33",
+  "en_rv": "Ticker\tCompany\tMkt cap\tP/E\tFwd P/E\tP/S\tP/B\tDiv.\tRevenue\tEPS\tGross m.\tNet m.\tROE\t1Y\nAAPL\tApple\t$5.04T\t38.7\t35.3\t10.7\t38.5\t0.5%\t+14%\t+33%\t48.7%\t27.6%\t137.2%\t+38%\nNVDA\tNvidia\t$5.25T\t28.1\t17.0\t17.9\t20.8\t0.0%\t+83%\t+125%\t74.7%\t63.7%\t110.1%\t+21%\nMSFT\tMicrosoft\t$4.05T\t30.2\t24.2\t12.2\t6.3\t0.8%\t+18%\t+32%\t67.9%\t40.3%\t33.2%\t+6%\nAVGO\tBroadcom\t$1.60T\t43.2\t19.0\t18.6\t18.7\t1.9%\t+49%\t+100%\t68.8%\t42.9%\t43.9%\t+0%\nMU\tMicron\t$997B\t12.4\t6.5\t7.9\t7.8\t0.6%\t+256%\t+879%\t80.7%\t63.8%\t91.8%\t+394%\nAMD\tAMD\t$877B\t145.2\t46.2\t22.6\t13.1\t—\t+40%\t+124%\t53.2%\t15.6%\t10.1%\t+180%\nINTC\tIntel\t$489B\t—\t63.0\t9.2\t7.6\t1.1%\t+7%\t—\t38.6%\t-19.8%\t-10.8%\t+176%\nPLTR\tPalantir\t$467B\t159.6\t86.7\t78.2\t28.6\t—\t+79%\t+290%\t84.8%\t49.0%\t37.5%\t+18%\nCSCO\tCisco\t$",
+  "en_cf": "Date\tForm\tWhat it is\n1 Sep 2026\t8-K/A\tmaterial event (amended) ↗\n31 Jul 2026\t10-Q\tquarterly report ↗\n30 Jul 2026\t8-K\tmaterial event ↗\n28 May 2026\tSD\tconflict minerals ↗\n1 May 2026\t10-Q\tquarterly report ↗\n30 Apr 2026\t8-K\tmaterial event ↗\n20 Apr 2026\t8-K\tmaterial event ↗\n24 Feb 2026\t8-K\tmaterial event ↗\n30 Jan 2026\t10-Q\tquarterly report ↗\n29 Jan 2026\t8-K\tmaterial event ↗\n8 Jan 2026\tDEF 14A\tproxy statement ↗\n2 Jan 2026\t8-K\tmaterial event ↗\n5 Dec 2025\t8-K\tmaterial event ↗\n31 Oct 2025\t10-K\tannual report ↗\n30 Oct 2025\t8-K\tmaterial event ↗\n26 Sep 2025\tS-8\tOffering Registrations ↗\n1 Aug 2025\t10-Q\tquarterly report ↗\n31 Jul 2025\t8-K\tmaterial event ↗\n25 Jul 2025\t8-K\tmaterial event ↗\n9 Jul 2025\t8-K\tmate",
+  "en_msft_dvd_live": "Dividends by year\n'15\n'16\n'17\n'18\n'19\n'20\n'21\n'22\n'23\n'24\n'25\n'26\nEx-date\tAmount\tChange\n20 Aug 2026\t$0.9100\t0.0%\n21 May 2026\t$0.9100\t0.0%\n19 Feb 2026\t$0.9100\t0.0%\n20 Nov 2025\t$0.9100\t+9.6%\n21 Aug 2025\t$0.8300\t0.0%\n15 May 2025\t$0.8300\t0.0%\n20 Feb 2025\t$0.8300\t0.0%\n21 Nov 2024\t$0.8300\t+10.7%\n15 Aug 2024\t$0.7500\t0.0%\n15 May 2024\t$0.7500\t0.0%\n14 Feb 2024\t$0.7500\t0.0%\n15 Nov 2023\t$0.7500\t+10.3%\n16 Aug 2023\t$0.6800\t0.0%\n17 May 2023\t$0.6800\t0.0%\n15 Feb 2023\t$0.6800\t0.0%\n16 Nov 2022\t$0.6800\t+9.7%\n17 Aug 2022\t$0.6200\t0.0%\n18 May 2022\t$0.6200\t0.0%\n16 Feb 2022\t$0.6200\t0.0%\n17 Nov 2021\t$0.6200\t+10.7%\n18 Aug 2021\t$0.5600\t0.0%\n19 May 2021\t$0.5600\t0.0%\n17 Feb 2021\t$0.5600\t0.0%\n18 Nov 2020\t$0.5600\t+9.8%\n19 ",
+  "en_ecst": "Country\tGDP 2026\tGDP 2027\tCPI 2026\tCPI 2027\tUnempl. 2026\tBudget 2026\tGov. debt 2026\tCur. acct 2026\nWorld\t3.1\t3.4\t4.7\t4.1\t—\t-5.5\t94.6\t0.7\nAdvanced economies\t2.1\t1.8\t3.1\t2.7\t4.7\t-5.2\t107.8\t0.4\nEmerging & developing\t3.7\t4.4\t5.7\t5.1\t—\t-6.0\t76.2\t1.1\nEuro area\t1.1\t1.2\t3.1\t2.8\t6.3\t-3.6\t88.0\t1.2\nUnited States\t2.3\t2.3\t3.6\t2.8\t4.2\t-8.5\t126.8\t-3.9\nChina\t4.5\t4.0\t1.0\t1.4\t5.1\t-8.0\t104.4\t4.0\nGermany\t1.3\t1.1\t2.7\t3.1\t4.0\t-4.3\t64.6\t4.5\nJapan\t0.7\t0.7\t2.0\t2.6\t2.5\t-1.4\t199.4\t4.6\nIndia\t7.0\t7.0\t5.0\t4.4\t5.0\t-7.5\t83.1\t-1.5\nUnited Kingdom\t1.3\t1.2\t3.3\t2.8\t5.3\t-3.8\t102.0\t-3.3\nFrance\t0.4\t0.7\t2.4\t2.2\t8.4\t-5.4\t118.5\t-0.7\nItaly\t0.8\t0.6\t3.3\t2.8\t5.6\t-2.9\t137.9\t0.7\nCanada\t1.1\t1.7\t2.8\t2.4\t6.5\t-2.5\t115.6\t-0.1\nBrazil\t2.2\t1.9\t4.4",
+  "en_ecst_ru": "← ALL COUNTRIES\nRussia\nIndicator\t2023\t2024\t2025\t2026\t2027*\t2028*\nReal GDP growth\t4.1\t4.9\t1.0\t0.9\t0.9\t1.0\nInflation (average CPI)\t5.9\t8.4\t8.7\t6.1\t4.8\t4.0\nUnemployment rate\t3.2\t2.5\t2.2\t2.2\t2.4\t3.3\nBudget balance, % of GDP\t-2.2\t-1.6\t-3.9\t-3.2\t-3.2\t-3.3\nGovernment debt, % of GDP\t15.2\t14.8\t16.6\t19.3\t22.2\t24.8\nCurrent account, % of GDP\t2.4\t2.9\t1.5\t3.8\t3.2\t2.5\nGDP, USD bn\t2,035\t2,186\t2,572\t2,861\t2,675\t2,638\n* forecast",
+  "en_fxc": "\tUSD\tEUR\tGBP\tJPY\tCHF\tCNY\tRUB\nUSD\t—\t0.891186\n-0.57%\n\t0.754034\n-0.54%\n\t157.58\n-0.45%\n\t0.827300\n-0.84%\n\t6.6804\n-0.17%\n\t83.9497\n+0.10%\n\nEUR\t1.1221\n+0.57%\n\t—\t0.846102\n+0.03%\n\t176.82\n+0.12%\n\t0.928313\n-0.27%\n\t7.4961\n+0.40%\n\t94.2000\n+0.67%\n\nGBP\t1.3262\n+0.55%\n\t1.1819\n-0.03%\n\t—\t208.99\n+0.10%\n\t1.0972\n-0.30%\n\t8.8595\n+0.37%\n\t111.33\n+0.64%\n\nJPY\t0.006346\n+0.45%\n\t0.005655\n-0.12%\n\t0.004785\n-0.10%\n\t—\t0.005250\n-0.39%\n\t0.042393\n+0.27%\n\t0.532737\n+0.55%\n\nCHF\t1.2088\n+0.85%\n\t1.0772\n+0.27%\n\t0.911440\n+0.30%\n\t190.48\n+0.39%\n\t—\t8.0749\n+0.67%\n\t101.47\n+0.94%\n\nCNY\t0.149692\n+0.18%\n\t0.133403\n-0.40%\n\t0.112873\n-0.37%\n\t23.5887\n-0.27%\n\t0.123840\n-0.67%\n\t—\t12.5666\n+0.27%\n\nRUB\t0.011912\n-0.10%\n\t0.010616\n-0.67%\n\t0.008982\n-0.64%\n\t1.87",
+  "en_corr": "ADD\n3M\n1Y\n5Y\nS&P ✕\nNASDAQ ✕\nDAX ✕\nNIKKEI ✕\nIMOEX ✕\nBRENT ✕\nGOLD ✕\nEURUSD ✕\nUST10 ✕\nBTC ✕\nLoading…\n\tS&P\tNASDAQ\tDAX\tNIKKEI\tIMOEX\tBRENT\tGOLD\tEURUSD\tUST10\tBTC\nS&P\t1.00\t0.96\t0.53\t0.17\t-0.00\t-0.35\t0.30\t0.14\t-0.31\t0.45\nNASDAQ\t0.96\t1.00\t0.47\t0.20\t0.01\t-0.31\t0.28\t0.12\t-0.25\t0.45\nDAX\t0.53\t0.47\t1.00\t0.28\t-0.04\t-0.53\t0.33\t0.07\t-0.32\t0.22\nNIKKEI\t0.17\t0.20\t0.28\t1.00\t0.00\t-0.14\t0.26\t0.06\t0.08\t-0.03\nIMOEX\t-0.00\t0.01\t-0.04\t0.00\t1.00\t0.04\t-0.03\t0.04\t0.01\t-0.02\nBRENT\t-0.35\t-0.31\t-0.53\t-0.14\t0.04\t1.00\t-0.17\t-0.05\t0.45\t-0.08\nGOLD\t0.30\t0.28\t0.33\t0.26\t-0.03\t-0.17\t1.00\t0.30\t-0.18\t0.22\nEURUSD\t0.14\t0.12\t0.07\t0.06\t0.04\t-0.05\t0.30\t1.00\t-0.17\t0.12\nUST10\t-0.31\t-0.25\t-0.32\t0.08\t0.01\t0.45\t-0.18\t-0.17\t1.00\t-0.07\nBTC\t0.45\t0.",
+  "en_opt": "Ticker\tName\tPrice\tDay\tIV30\tIV chg\tCalls vol\tPuts vol\tP/C vol\tP/C OI\nAAPL\tApple\t345.86\t+0.85%\t26.3%\t+0.0\t386,180\t356,857\t0.92\t0.79\nABBV\tAbbVie\t288.00\t+1.63%\t30.5%\t-0.1\t86,410\t6,414\t0.07\t0.92\nAMD\tAMD\t536.26\t-6.05%\t59.8%\t+1.7\t36,435\t20,569\t0.56\t1.16\nAMAT\tApplied Materials\t434.31\t-2.58%\t57.7%\t+0.2\t17,745\t26,701\t1.50\t1.40\nABT\tAbbott\t103.98\t+0.94%\t32.3%\t-0.1\t19,352\t1,703\t0.09\t0.62\nADBE\tAdobe\t241.44\t+0.36%\t40.9%\t+0.0\t10,281\t8,244\t0.80\t0.65\nACN\tAccenture\t215.98\t+0.66%\t40.9%\t-0.1\t6,664\t4,340\t0.65\t1.01\nAMGN\tAmgen\t439.44\t+3.13%\t31.8%\t-0.5\t132\t167\t1.27\t1.04\nAMT\tAmerican Tower\t183.76\t+2.43%\t31.2%\t+0.4\t43\t1\t0.02\t0.72\nADI\tAnalog Devices\t399.14\t-1.10%\t41.0%\t+0.6\t24\t7\t0.29\t0.49\nClick a row for the option cha",
+  "en_ipo": "Date\tTicker\tCompany\tExchange\tPrice\tShares\tValue\tStatus\n15 Oct 2026\tIAM\tIambic Therapeutics, Inc.\tNASDAQ Global Select\t$15.00-17.00\t9,375,000\t$183M\texpected\n15 Oct 2026\tSCQCU\tSPACCircle Acquisition Corp.\tNASDAQ Global\t$10.00\t15,000,000\t$173M\texpected\n16 Oct 2026\tCTY\tCITY THERAPEUTICS, INC.\tNASDAQ Global\t$17.00-19.00\t9,722,222\t$212M\texpected",
+  "en_imap_ru": "LKOH\n-0.8%\nROSN\n-0.8%\nNVTK\n-0.4%\nSIBN\n-0.7%\nGAZP\n+0.8%\nTATN\n-2.8%\nSNGS\n-0.9%\nSNGSP\nEnergy -0.7%\nSBER\n-0.6%\nT\n-0.5%\nVTBR\n-0.4%\nDOMRF\n+0.2%\nMOEX\n-1.2%\nCBOM\n-0.1%\nSBERP\n-0.6%\nFinancials -0.5%\nGMKN\n-0.5%\nPLZL\n+2.2%\nPHOR\n+0.8%\nAKRN\n-0.3%\nCHMF\n-0.8%\nNLMK\n-1.6%\nRUAL\n+0.8%\nVSMO\n-1.1%\nMAGN\nENPG\nUGLD\nMaterials +0.1%\nUNAC\n+0.7%\nIRKT\n-0.7%\nOther +0.2%\nYDEX\n-1.1%\nHEAD\nTechnology -1.0%\nX5\n+0.2%\nMGNT\nConsumer Staples -0.2%\nUtilities -0.1%\nOZON\n-1.7%\nConsumer Discretionary -1.6%\nAFLT\nIndustrials +0.8%\nMTSS\n-0.6%\nCommunication -0.3%\nPIKK\n-1.5%\nReal Estate -1.6%\nHealth Care -0.5%",
+  "en_eqs_ru": "US\nMOSCOW EXCHANGE\nall sectors\nCommunication\nConsumer Discretionary\nConsumer Staples\nEnergy\nFinancials\nHealth Care\nIndustrials\nMaterials\nOther\nReal Estate\nTechnology\nUtilities\nTicker\tCompany\tSector\tPrice, ₽\tDay\tTurnover\tMkt cap ▼\tIMOEX, %\nSBER\tSberbank\tFinancials\t283.83\t-0.59%\t₽3.8B\t₽6.12T\t11.77\nLKOH\tLUKOIL\tEnergy\t6,017\t-0.79%\t₽3.7B\t₽4.15T\t17.45\nROSN\tRosneft\tEnergy\t373.00\t-0.77%\t₽2.8B\t₽3.95T\t2.92\nNVTK\tNOVATEK\tEnergy\t1,084\t-0.40%\t₽1.9B\t₽3.29T\t4.62\nSIBN\tGazprom neft\tEnergy\t576.15\t-0.66%\t₽1.2B\t₽2.72T\t\nGAZP\tGazprom\tEnergy\t105.53\t+0.78%\t₽7.5B\t₽2.50T\t9.70\nGMKN\tNorNickel GMK\tMaterials\t115.04\t-0.47%\t₽1.4B\t₽1.76T\t3.88\nPLZL\tPolus\tMaterials\t1,104\t+2.17%\t₽3.1B\t₽1.50T\t2.15\nTATN\tTatneft-3\tEnergy\t630.80\t-2",
+  "en_hp_1d": "Over 1 day: -0.53%\nNow: 345.04\nLow: 345.00\nHigh: 347.85\nAvg volume: 1,181,406\nPoints: 7\n⤓ CSV\n⧉ COPY\nAAPL 345.04\nDate\tOpen\tHigh\tLow\tClose\tChg\tVolume\n15 Oct 16:59\t345.04\t345.04\t345.04\t345.04\t-0.02%\t—\n15 Oct 16:55\t346.13\t346.40\t345.00\t345.10\t-0.29%\t592,369\n15 Oct 16:50\t345.52\t346.60\t345.05\t346.11\t+0.16%\t642,650\n15 Oct 16:45\t345.88\t347.15\t345.50\t345.55\t-0.10%\t700,656\n15 Oct 16:40\t346.12\t347.31\t345.57\t345.89\t-0.05%\t786,233\n15 Oct 16:35\t346.87\t347.19\t345.63\t346.06\t-0.24%\t780,822\n15 Oct 16:30\t346.95\t347.85\t345.39\t346.89\t—\t3,585,705",
+  "en_hp_btc": "Over 1 year: -27.73%\nNow: 80,060\nLow: 57,748\nHigh: 116,273\nAvg volume: 40,041,526,834\nPoints: 366\nRSI(14): 42.0\nvs SMA 200: +10.8%\n⤓ CSV\n⧉ COPY\nBTC 80,060\nSMA 50 81,185\nSMA 200 72,275\nRSI(14) 42.0\nDate\tOpen\tHigh\tLow\tClose\tChg\tVolume\n15 Oct 2026\t81,573\t81,774\t80,147\t80,060\t-1.84%\t40,203,636,736\n14 Oct 2026\t83,095\t84,049\t81,346\t81,562\t-1.84%\t33,457,522,700\n13 Oct 2026\t81,763\t84,061\t80,963\t83,095\t+1.63%\t30,990,542,834\n12 Oct 2026\t83,679\t84,249\t81,682\t81,763\t-2.29%\t26,546,289,120\n11 Oct 2026\t82,912\t84,104\t82,722\t83,679\t+0.93%\t12,536,449,881\n10 Oct 2026\t82,546\t83,092\t82,473\t82,912\t+0.44%\t12,485,050,512\n9 Oct 2026\t81,676\t83,418\t81,558\t82,546\t+1.07%\t24,521,046,869\n8 Oct 2026\t83,281\t83,475\t80,337\t81",
+  "ru_des": "AAPL\nApple Inc\n$345,12\n+0,63% за день\nTechnology · NASDAQ NMS · US · IPO 12.12.1980 · apple.com\nApple Inc — американская корпорация, разработчик персональных и планшетных компьютеров, аудиоплееров, смартфонов, программного обеспечения и цифрового контента. Штаб-квартира расположена в Купертино, штат Калифорния. Практически вся продукция Apple выпускается контрактными производителями на заводах в Азии, крупнейшим подрядчиком является тайваньская компания Foxconn, крупнейший завод — в Чжэнчжоу.— Википедия\nКапитал.\n$4,99 трлн\nP/E\n38,7\nP/E форвард\n35,3\nP/S\n10,7\nP/B\n38,5\nEV/EBITDA\n30,0\nДивиденды\n0,51%\nБета\n1,11\nEPS (12 мес.)\n$8,72\nРост выручки\n+14,2%\nРост EPS\n+32,6%\nROE\n137,2%\nВал. маржа\n48,7%\nОп",
+  "ru_ee": "Следующий отчёт: 02.11.2026\nПериод\tКонец\tПрогноз EPS\tМин.\tМакс.\tАналитиков\tEPS г/г\tПрогноз выручки\tВыручка г/г\tПересмотры 30 дн.\nТек. квартал\t30.09.2026\t$1,98\t1,93\t2,07\t27\t+6,9%\t$114 млрд\t+10,9%\t↑1 ↓0\nСлед. квартал\t31.12.2026\t$2,91\t2,56\t3,42\t22\t+2,3%\t$154 млрд\t+7,0%\t↑2 ↓1\nТек. год\t30.09.2026\t$8,82\t8,28\t8,94\t39\t+18,2%\t$478 млрд\t+14,9%\t↑2 ↓1\nСлед. год\t30.09.2027\t$9,58\t8,69\t10,67\t40\t+8,7%\t$529 млрд\t+10,5%\t↑4 ↓3\nКак менялся прогноз EPS\nПериод\tСейчас\t7 дней назад\t30 дней назад\t60 дней назад\t90 дней назад\nТек. квартал\t$1,98\t$1,98\t$1,98\t$1,98\t$2,02\nСлед. квартал\t$2,91\t$2,91\t$2,90\t$2,91\t$2,96\nТек. год\t$8,82\t$8,82\t$8,82\t$8,81\t$8,77\nСлед. год\t$9,58\t$9,58\t$9,57\t$9,54\t$9,69\nСюрпризы\nКвартал\tФакт\tПрогноз",
+  "ru_anr": "Целевая цена аналитиков · мнений: 39\nЦелевая цена аналитиков · мнений: 39 · средняя $329,38 (-4,0%)\nМинимум $215\nМаксимум $405\nСредняя\n$329,38\nМедиана\n$340,00\nМаксимум\n$405,00\nМинимум\n$215,00\nДо средней\n-4,0%\nИзменения рейтингов\nДата\tКомпания\tДействие\tРейтинг\tБыл\tЦель\tБыла\n12.10.2026\tJP Morgan\tподтверждён\tOverweight\t\t$360\t$340\n01.10.2026\tMorgan Stanley\tподтверждён\tOverweight\t\t$355\t$360\n01.10.2026\tNeedham\tподтверждён\tHold\t\t\t\n29.09.2026\tMorgan Stanley\tподтверждён\tOverweight\t\t$360\t\n23.09.2026\tB of A Securities\tподтверждён\tBuy\t\t$370\t\n18.09.2026\tEvercore ISI Group\tподтверждён\tOutperform\t\t$380\t$365\n17.09.2026\tB of A Securities\tподтверждён\tBuy\t\t$370\t\n10.09.2026\tTD Cowen\tподтверждён\tBuy\t\t$400\t\n10.09",
+  "ru_hds": "Структура владения\nИнсайдеры\n1,65%\nИнституционалы\n66,33%\nИнституц., % обращ.\n67,44%\nЧисло институц.\n7 697\nПокупки инсайдеров, 6 мес.\n12\nПродажи инсайдеров, 6 мес.\n17\nКрупнейшие институционалы\nДержатель\tДоля\tАкций\tСтоимость\tИзм.\tОтчёт\nBlackrock Inc.\t7,97%\t1 162 996 939\t$399 млрд\t+1,6%\t30.06.2026\nVanguard Capital Management LLC\t6,57%\t959 107 911\t$329 млрд\t+0,6%\t30.06.2026\nState Street Corporation\t4,21%\t615 129 929\t$211 млрд\t+2,1%\t30.06.2026\nGeode Capital Management, LLC\t2,54%\t371 336 543\t$127 млрд\t+0,7%\t30.06.2026\nVanguard Portfolio Management LLC\t2,29%\t334 119 156\t$115 млрд\t+0,8%\t30.06.2026\nFMR, LLC\t2,23%\t325 348 754\t$112 млрд\t+5,8%\t30.06.2026\nMorgan Stanley\t1,66%\t242 614 238\t$83,2 млрд\t-0,8%",
+  "ru_dvd": "Дивиденд в год\n$1,05\nДоходность\n0,32%\nДоля прибыли\n12%\nСр. доходность 5 лет\n0,47%\nОтсечка\n10.08.2026\nВыплата\n13.08.2026\nДивиденды по годам\n'15\n'16\n'17\n'18\n'19\n'20\n'21\n'22\n'23\n'24\n'25\n'26\nОтсечка\tСумма\tИзм.\n10.08.2026\t$0,2700\t0,0%\n11.05.2026\t$0,2700\t+3,8%\n09.02.2026\t$0,2600\t0,0%\n10.11.2025\t$0,2600\t0,0%\n11.08.2025\t$0,2600\t0,0%\n12.05.2025\t$0,2600\t+4,0%\n10.02.2025\t$0,2500\t0,0%\n08.11.2024\t$0,2500\t0,0%\n12.08.2024\t$0,2500\t0,0%\n10.05.2024\t$0,2500\t+4,2%\n09.02.2024\t$0,2400\t0,0%\n10.11.2023\t$0,2400\t0,0%\n11.08.2023\t$0,2400\t0,0%\n12.05.2023\t$0,2400\t+4,3%\n10.02.2023\t$0,2300\t0,0%\n04.11.2022\t$0,2300\t0,0%\n05.08.2022\t$0,2300\t0,0%\n06.05.2022\t$0,2300\t+4,5%\n04.02.2022\t$0,2200\t0,0%\n05.11.2021\t$0,2200\t0,0%\n06.08.202",
+  "ru_omon": "Цена\n$345,86\nIV30\n26,3%\nИзм. IV30\n+0,03\nПут/колл, объём\n0,92\nПут/колл, откр. инт.\n0,79\nОбъём коллов\n386 180\nОбъём путов\n356 857\nДанные на\n2026-10-15 11:47\n16.10\n19.10\n21.10\n23.10\nКОЛЛЫ\t\tПУТЫ\nBid\tAsk\tПосл.\tIV\tΔ\tОИ\tОбъём\tСтрайк\tBid\tAsk\tПосл.\tIV\tΔ\tОИ\tОбъём\n34,10\t37,10\t36,76\t—\t0,99\t83\t54\t307,5\t0,02\t0,04\t0,04\t59,6\t-0,01\t813\t17\n32,35\t33,75\t32,60\t—\t0,99\t7 706\t260\t310\t0,03\t0,05\t0,03\t57,6\t-0,01\t10 835\t123\n29,15\t32,05\t30,97\t—\t0,99\t118\t141\t312,5\t0,03\t0,05\t0,05\t53,6\t-0,01\t1 450\t140\n27,35\t28,75\t28,24\t—\t0,99\t6 553\t177\t315\t0,04\t0,06\t0,05\t51,0\t-0,01\t9 996\t660\n24,30\t26,25\t25,78\t—\t0,99\t203\t54\t317,5\t0,05\t0,07\t0,06\t47,5\t-0,01\t1 922\t131\n22,35\t23,75\t22,82\t—\t0,98\t5 273\t159\t320\t0,06\t0,08\t0,06\t44,3\t-0,02\t15 678\t2 33",
+  "ru_rv": "Тикер\tКомпания\tКап.\tP/E\tP/E ф.\tP/S\tP/B\tДив.\tВыручка\tEPS\tВал. м.\tЧист. м.\tROE\tГод\nAAPL\tApple\t$5,04 трлн\t38,7\t35,3\t10,7\t38,5\t0,5%\t+14%\t+33%\t48,7%\t27,6%\t137,2%\t+38%\nNVDA\tNvidia\t$5,25 трлн\t28,1\t17,0\t17,9\t20,8\t0,0%\t+83%\t+125%\t74,7%\t63,7%\t110,1%\t+21%\nMSFT\tMicrosoft\t$4,05 трлн\t30,2\t24,2\t12,2\t6,3\t0,8%\t+18%\t+32%\t67,9%\t40,3%\t33,2%\t+6%\nAVGO\tBroadcom\t$1,60 трлн\t43,2\t19,0\t18,6\t18,7\t1,9%\t+49%\t+100%\t68,8%\t42,9%\t43,9%\t+0%\nMU\tMicron\t$997 млрд\t12,4\t6,5\t7,9\t7,8\t0,6%\t+256%\t+879%\t80,7%\t63,8%\t91,8%\t+394%\nAMD\tAMD\t$877 млрд\t145,2\t46,2\t22,6\t13,1\t—\t+40%\t+124%\t53,2%\t15,6%\t10,1%\t+180%\nINTC\tIntel\t$489 млрд\t—\t63,0\t9,2\t7,6\t1,1%\t+7%\t—\t38,6%\t-19,8%\t-10,8%\t+176%\nPLTR\tPalantir\t$467 млрд\t159,6\t86,7\t78,2\t28,6\t—\t+79%\t+290%\t84,8%",
+  "ru_cf": "Дата\tФорма\tЧто это\n01.09.2026\t8-K/A\tсущественное событие (испр.) ↗\n31.07.2026\t10-Q\tквартальный отчёт ↗\n30.07.2026\t8-K\tсущественное событие ↗\n28.05.2026\tSD\tконфликтные минералы ↗\n01.05.2026\t10-Q\tквартальный отчёт ↗\n30.04.2026\t8-K\tсущественное событие ↗\n20.04.2026\t8-K\tсущественное событие ↗\n24.02.2026\t8-K\tсущественное событие ↗\n30.01.2026\t10-Q\tквартальный отчёт ↗\n29.01.2026\t8-K\tсущественное событие ↗\n08.01.2026\tDEF 14A\tматериалы к собранию ↗\n02.01.2026\t8-K\tсущественное событие ↗\n05.12.2025\t8-K\tсущественное событие ↗\n31.10.2025\t10-K\tгодовой отчёт ↗\n30.10.2025\t8-K\tсущественное событие ↗\n26.09.2025\tS-8\tOffering Registrations ↗\n01.08.2025\t10-Q\tквартальный отчёт ↗\n31.07.2025\t8-K\tсущественное событи",
+  "ru_msft_dvd_live": "Дивиденды по годам\n'15\n'16\n'17\n'18\n'19\n'20\n'21\n'22\n'23\n'24\n'25\n'26\nОтсечка\tСумма\tИзм.\n20.08.2026\t$0,9100\t0,0%\n21.05.2026\t$0,9100\t0,0%\n19.02.2026\t$0,9100\t0,0%\n20.11.2025\t$0,9100\t+9,6%\n21.08.2025\t$0,8300\t0,0%\n15.05.2025\t$0,8300\t0,0%\n20.02.2025\t$0,8300\t0,0%\n21.11.2024\t$0,8300\t+10,7%\n15.08.2024\t$0,7500\t0,0%\n15.05.2024\t$0,7500\t0,0%\n14.02.2024\t$0,7500\t0,0%\n15.11.2023\t$0,7500\t+10,3%\n16.08.2023\t$0,6800\t0,0%\n17.05.2023\t$0,6800\t0,0%\n15.02.2023\t$0,6800\t0,0%\n16.11.2022\t$0,6800\t+9,7%\n17.08.2022\t$0,6200\t0,0%\n18.05.2022\t$0,6200\t0,0%\n16.02.2022\t$0,6200\t0,0%\n17.11.2021\t$0,6200\t+10,7%\n18.08.2021\t$0,5600\t0,0%\n19.05.2021\t$0,5600\t0,0%\n17.02.2021\t$0,5600\t0,0%\n18.11.2020\t$0,5600\t+9,8%\n19.08.2020\t$0,5100\t0,0%\n20.05",
+  "ru_ecst": "Страна\tВВП 2026\tВВП 2027\tИнфл. 2026\tИнфл. 2027\tБезраб. 2026\tБюджет 2026\tГосдолг 2026\tТек. счёт 2026\nМир\t3,1\t3,4\t4,7\t4,1\t—\t-5,5\t94,6\t0,7\nРазвитые страны\t2,1\t1,8\t3,1\t2,7\t4,7\t-5,2\t107,8\t0,4\nРазвивающиеся страны\t3,7\t4,4\t5,7\t5,1\t—\t-6,0\t76,2\t1,1\nЕврозона\t1,1\t1,2\t3,1\t2,8\t6,3\t-3,6\t88,0\t1,2\nСША\t2,3\t2,3\t3,6\t2,8\t4,2\t-8,5\t126,8\t-3,9\nКитай\t4,5\t4,0\t1,0\t1,4\t5,1\t-8,0\t104,4\t4,0\nГермания\t1,3\t1,1\t2,7\t3,1\t4,0\t-4,3\t64,6\t4,5\nЯпония\t0,7\t0,7\t2,0\t2,6\t2,5\t-1,4\t199,4\t4,6\nИндия\t7,0\t7,0\t5,0\t4,4\t5,0\t-7,5\t83,1\t-1,5\nВеликобритания\t1,3\t1,2\t3,3\t2,8\t5,3\t-3,8\t102,0\t-3,3\nФранция\t0,4\t0,7\t2,4\t2,2\t8,4\t-5,4\t118,5\t-0,7\nИталия\t0,8\t0,6\t3,3\t2,8\t5,6\t-2,9\t137,9\t0,7\nКанада\t1,1\t1,7\t2,8\t2,4\t6,5\t-2,5\t115,6\t-0,1\nБразилия\t2,2\t1,9\t4,4\t4,1\t6,2\t-",
+  "ru_ecst_ru": "← ВСЕ СТРАНЫ\nРоссия\nПоказатель\t2023\t2024\t2025\t2026\t2027*\t2028*\nРост реального ВВП\t4,1\t4,9\t1,0\t0,9\t0,9\t1,0\nИнфляция (средняя, ИПЦ)\t5,9\t8,4\t8,7\t6,1\t4,8\t4,0\nБезработица\t3,2\t2,5\t2,2\t2,2\t2,4\t3,3\nСальдо бюджета, % ВВП\t-2,2\t-1,6\t-3,9\t-3,2\t-3,2\t-3,3\nГосдолг, % ВВП\t15,2\t14,8\t16,6\t19,3\t22,2\t24,8\nТекущий счёт, % ВВП\t2,4\t2,9\t1,5\t3,8\t3,2\t2,5\nВВП, млрд долл.\t2 035\t2 186\t2 572\t2 861\t2 675\t2 638\n* прогноз",
+  "ru_fxc": "\tUSD\tEUR\tGBP\tJPY\tCHF\tCNY\tRUB\nUSD\t—\t0,891186\n-0,57%\n\t0,754034\n-0,54%\n\t157,57\n-0,45%\n\t0,827300\n-0,84%\n\t6,6804\n-0,17%\n\t83,9497\n+0,10%\n\nEUR\t1,1221\n+0,57%\n\t—\t0,846102\n+0,03%\n\t176,81\n+0,12%\n\t0,928313\n-0,27%\n\t7,4961\n+0,40%\n\t94,2000\n+0,67%\n\nGBP\t1,3262\n+0,55%\n\t1,1819\n-0,03%\n\t—\t208,97\n+0,09%\n\t1,0972\n-0,30%\n\t8,8595\n+0,37%\n\t111,33\n+0,64%\n\nJPY\t0,006346\n+0,46%\n\t0,005656\n-0,12%\n\t0,004785\n-0,09%\n\t—\t0,005250\n-0,39%\n\t0,042396\n+0,28%\n\t0,532774\n+0,56%\n\nCHF\t1,2088\n+0,85%\n\t1,0772\n+0,27%\n\t0,911440\n+0,30%\n\t190,46\n+0,39%\n\t—\t8,0749\n+0,67%\n\t101,47\n+0,94%\n\nCNY\t0,149692\n+0,18%\n\t0,133403\n-0,40%\n\t0,112873\n-0,37%\n\t23,5871\n-0,28%\n\t0,123840\n-0,67%\n\t—\t12,5666\n+0,27%\n\nRUB\t0,011912\n-0,10%\n\t0,010616\n-0,67%\n\t0,008982\n-0,64%\n\t1,87",
+  "ru_corr": "ДОБАВИТЬ\n3M\n1Y\n5Y\nS&P ✕\nNASDAQ ✕\nDAX ✕\nNIKKEI ✕\nIMOEX ✕\nBRENT ✕\nGOLD ✕\nEURUSD ✕\nUST10 ✕\nBTC ✕\n\tS&P\tNASDAQ\tDAX\tNIKKEI\tIMOEX\tBRENT\tGOLD\tEURUSD\tUST10\tBTC\nS&P\t1,00\t0,96\t0,53\t0,17\t-0,00\t-0,35\t0,30\t0,14\t-0,31\t0,45\nNASDAQ\t0,96\t1,00\t0,47\t0,20\t0,01\t-0,31\t0,28\t0,12\t-0,25\t0,45\nDAX\t0,53\t0,47\t1,00\t0,28\t-0,04\t-0,53\t0,33\t0,07\t-0,32\t0,22\nNIKKEI\t0,17\t0,20\t0,28\t1,00\t0,00\t-0,14\t0,26\t0,06\t0,08\t-0,03\nIMOEX\t-0,00\t0,01\t-0,04\t0,00\t1,00\t0,04\t-0,03\t0,04\t0,01\t-0,02\nBRENT\t-0,35\t-0,31\t-0,53\t-0,14\t0,04\t1,00\t-0,17\t-0,05\t0,45\t-0,08\nGOLD\t0,30\t0,28\t0,33\t0,26\t-0,03\t-0,17\t1,00\t0,30\t-0,18\t0,22\nEURUSD\t0,14\t0,12\t0,07\t0,06\t0,04\t-0,05\t0,30\t1,00\t-0,17\t0,12\nUST10\t-0,31\t-0,25\t-0,32\t0,08\t0,01\t0,45\t-0,18\t-0,17\t1,00\t-0,07\nBTC\t0,45\t0,45\t0",
+  "ru_opt": "Тикер\tНазвание\tЦена\tДень\tIV30\tИзм. IV\tОбъём коллов\tОбъём путов\tП/К объём\tП/К ОИ\nAAPL\tApple\t345,86\t+0,85%\t26,3%\t+0,0\t386 180\t356 857\t0,92\t0,79\nABBV\tAbbVie\t288,00\t+1,63%\t30,5%\t-0,1\t86 410\t6 414\t0,07\t0,92\nAMD\tAMD\t536,26\t-6,05%\t59,8%\t+1,7\t36 435\t20 569\t0,56\t1,16\nAMAT\tApplied Materials\t434,31\t-2,58%\t57,7%\t+0,2\t17 745\t26 701\t1,50\t1,40\nABT\tAbbott\t103,98\t+0,94%\t32,3%\t-0,1\t19 352\t1 703\t0,09\t0,62\nADBE\tAdobe\t241,44\t+0,36%\t40,9%\t+0,0\t10 281\t8 244\t0,80\t0,65\nACN\tAccenture\t215,98\t+0,66%\t40,9%\t-0,1\t6 664\t4 340\t0,65\t1,01\nAMGN\tAmgen\t439,44\t+3,13%\t31,8%\t-0,5\t132\t167\t1,27\t1,04\nAMT\tAmerican Tower\t183,76\t+2,43%\t31,2%\t+0,4\t43\t1\t0,02\t0,72\nADI\tAnalog Devices\t399,14\t-1,10%\t41,0%\t+0,6\t24\t7\t0,29\t0,49\nНажмите на строку ",
+  "ru_ipo": "Дата\tТикер\tКомпания\tБиржа\tЦена\tАкций\tОбъём\tСтатус\n15.10.2026\tIAM\tIambic Therapeutics, Inc.\tNASDAQ Global Select\t$15.00-17.00\t9 375 000\t$183 млн\tожидается\n15.10.2026\tSCQCU\tSPACCircle Acquisition Corp.\tNASDAQ Global\t$10.00\t15 000 000\t$173 млн\tожидается\n16.10.2026\tCTY\tCITY THERAPEUTICS, INC.\tNASDAQ Global\t$17.00-19.00\t9 722 222\t$212 млн\tожидается",
+  "ru_imap_ru": "LKOH\n-0,8%\nROSN\n-0,8%\nNVTK\n-0,4%\nSIBN\n-0,7%\nGAZP\n+0,8%\nTATN\n-2,8%\nSNGS\n-0,9%\nSNGSP\nЭнергетика -0,7%\nSBER\n-0,6%\nT\n-0,5%\nVTBR\n-0,4%\nDOMRF\n+0,2%\nMOEX\n-1,2%\nCBOM\n-0,1%\nSBERP\n-0,6%\nФинансы -0,5%\nGMKN\n-0,5%\nPLZL\n+2,2%\nPHOR\n+0,8%\nAKRN\n-0,3%\nCHMF\n-0,8%\nNLMK\n-1,6%\nRUAL\n+0,8%\nVSMO\n-1,1%\nMAGN\nENPG\nUGLD\nМатериалы +0,1%\nUNAC\n+0,7%\nIRKT\n-0,7%\nПрочее +0,2%\nYDEX\n-1,1%\nHEAD\nТехнологии -1,0%\nX5\n+0,2%\nMGNT\nПовседн. спрос -0,2%\nКоммунальные -0,1%\nOZON\n-1,7%\nЦиклич. потребление -1,6%\nAFLT\nПромышленность +0,8%\nMTSS\n-0,6%\nСвязь и медиа -0,3%\nPIKK\n-1,5%\nНедвижимость -1,6%\nЗдравоохранение -0,5%",
+  "ru_eqs_ru": "США\nМОСБИРЖА\nвсе секторы\nЗдравоохранение\nКоммунальные\nМатериалы\nНедвижимость\nПовседн. спрос\nПромышленность\nПрочее\nСвязь и медиа\nТехнологии\nФинансы\nЦиклич. потребление\nЭнергетика\nТикер\tКомпания\tСектор\tЦена, ₽\tДень\tОборот\tКап. ▼\tIMOEX, %\nSBER\tСбербанк\tФинансы\t283,83\t-0,59%\t₽3,8 млрд\t₽6,12 трлн\t11,77\nLKOH\tЛУКОЙЛ\tЭнергетика\t6 017\t-0,79%\t₽3,7 млрд\t₽4,15 трлн\t17,45\nROSN\tРоснефть\tЭнергетика\t373,00\t-0,77%\t₽2,8 млрд\t₽3,95 трлн\t2,92\nNVTK\tНоватэк ао\tЭнергетика\t1 084\t-0,40%\t₽1,9 млрд\t₽3,29 трлн\t4,62\nSIBN\tГазпрнефть\tЭнергетика\t576,15\t-0,66%\t₽1,2 млрд\t₽2,72 трлн\t\nGAZP\tГАЗПРОМ ао\tЭнергетика\t105,53\t+0,78%\t₽7,5 млрд\t₽2,50 трлн\t9,70\nGMKN\tГМКНорНик\tМатериалы\t115,04\t-0,47%\t₽1,4 млрд\t₽1,76 трлн\t3,88\nPLZL\tПолюс\tМ",
+  "ru_hp_1d": "За 1 день: -0,53%\nСейчас: 345,04\nМин.: 345,00\nМакс.: 347,85\nСр. объём: 1 181 406\nТочек: 7\n⤓ CSV\n⧉ КОПИРОВАТЬ\nAAPL 345,04\nДата\tОткр.\tМакс.\tМин.\tЗакр.\tИзм.\tОбъём\n15.10 16:59\t345,04\t345,04\t345,04\t345,04\t-0,02%\t—\n15.10 16:55\t346,13\t346,40\t345,00\t345,10\t-0,29%\t592 369\n15.10 16:50\t345,52\t346,60\t345,05\t346,11\t+0,16%\t642 650\n15.10 16:45\t345,88\t347,15\t345,50\t345,55\t-0,10%\t700 656\n15.10 16:40\t346,12\t347,31\t345,57\t345,89\t-0,05%\t786 233\n15.10 16:35\t346,87\t347,19\t345,63\t346,06\t-0,24%\t780 822\n15.10 16:30\t346,95\t347,85\t345,39\t346,89\t—\t3 585 705",
+  "ru_hp_btc": "За 1 год: -27,73%\nСейчас: 80 060\nМин.: 57 748\nМакс.: 116 273\nСр. объём: 40 041 526 834\nТочек: 366\nRSI(14): 42,0\nк SMA 200: +10,8%\n⤓ CSV\n⧉ КОПИРОВАТЬ\nBTC 80 060\nSMA 50 81 185\nSMA 200 72 275\nRSI(14) 42,0\nДата\tОткр.\tМакс.\tМин.\tЗакр.\tИзм.\tОбъём\n15.10.2026\t81 573\t81 774\t80 147\t80 060\t-1,84%\t40 203 636 736\n14.10.2026\t83 095\t84 049\t81 346\t81 562\t-1,84%\t33 457 522 700\n13.10.2026\t81 763\t84 061\t80 963\t83 095\t+1,63%\t30 990 542 834\n12.10.2026\t83 679\t84 249\t81 682\t81 763\t-2,29%\t26 546 289 120\n11.10.2026\t82 912\t84 104\t82 722\t83 679\t+0,93%\t12 536 449 881\n10.10.2026\t82 546\t83 092\t82 473\t82 912\t+0,44%\t12 485 050 512\n09.10.2026\t81 676\t83 418\t81 558\t82 546\t+1,07%\t24 521 046 869\n08.10.2026\t83 281\t83 475\t80 337\t",
+  "phone_omon": "Price\n$345.86\nIV30\n26.3%\nIV30 change\n+0.03\nPut/call, volume\n0.92\nPut/call, open int.\n0.79\nCall volume\n386,180\nPut volume\n356,857\nData as of\n2026-10-15 11:47\n16 Oct\n19 Oct\n21 Oct\n23 Oct\nCALLS\t\tPUTS\nBid\tAsk\tLast\tIV\tΔ\tOI\tVol\tStrike\tBid\tAsk\tLast\tIV\tΔ\tOI\tVol\n34.10\t37.10\t36.76\t—\t0.99\t83\t54\t307.5\t0.02\t0.04\t0.04\t59.6\t-0.01\t813\t17\n32.35\t33.75\t32.60\t—\t0.99\t7,706\t260\t310\t0.03\t0.05\t0.03\t57.6\t-0.01\t10,835\t123\n29.15\t32.05\t30.97\t—\t0.99\t118\t141\t312.5\t0.03\t0.05\t0.05\t53.6\t-0.01\t1,450\t140\n27.35\t28.75\t28.24\t—\t0.99\t6,553\t177\t315\t0.04\t0.06\t0.05\t51.0\t-0.01\t9,996\t660\n24.30\t26.25\t25.78\t—\t0.99\t203\t54\t317.5\t0.05\t0.07\t0.06\t47.5\t-0.01\t1,922\t131\n22.35\t23.75\t22.82\t—\t0.98\t5,273\t159\t320\t0.06\t0.08\t0.06\t44.3\t-0.02\t15,678\t2,33",
+  "phone_overflow": 0,
+  "phone_ecst": "Country\tGDP 2026\tGDP 2027\tCPI 2026\tCPI 2027\tUnempl. 2026\tBudget 2026\tGov. debt 2026\tCur. acct 2026\nWorld\t3.1\t3.4\t4.7\t4.1\t—\t-5.5\t94.6\t0.7\nAdvanced economies\t2.1\t1.8\t3.1\t2.7\t4.7\t-5.2\t107.8\t0.4\nEmerging & developing\t3.7\t4.4\t5.7\t5.1\t—\t-6.0\t76.2\t1.1\nEuro area\t1.1\t1.2\t3.1\t2.8\t6.3\t-3.6\t88.0\t1.2\nUnited States\t2.3\t2.3\t3.6\t2.8\t4.2\t-8.5\t126.8\t-3.9\nChina\t4.5\t4.0\t1.0\t1.4\t5.1\t-8.0\t104.4\t4.0\nGermany\t1.3\t1.1\t2.7\t3.1\t4.0\t-4.3\t64.6\t4.5\nJapan\t0.7\t0.7\t2.0\t2.6\t2.5\t-1.4\t199.4\t4.6\nIndia\t7.0\t7.0\t5.0\t4.4\t5.0\t-7.5\t83.1\t-1.5\nUnited Kingdom\t1.3\t1.2\t3.3\t2.8\t5.3\t-3.8\t102.0\t-3.3\nFrance\t0.4\t0.7\t2.4\t2.2\t8.4\t-5.4\t118.5\t-0.7\nItaly\t0.8\t0.6\t3.3\t2.8\t5.6\t-2.9\t137.9\t0.7\nCanada\t1.1\t1.7\t2.8\t2.4\t6.5\t-2.5\t115.6\t-0.1\nBrazil\t2.2\t1.9\t4.4",
+  "console_errors": [
+   "Access to fetch at 'https://api.binance.com/api/v3/ticker/24hr?symbols=%5B%22BTCUSDT%22%2C%22ETHUSDT%22%2C%22BNBUSDT%22%2C%22SOLUSDT%22%2C%22XRPUSDT%22%2C%22DOGEUSDT%22%2C%22TONUSDT%22%2C%22ADAUSDT%22%2C%22TRXUSDT%22%2C%22AVAXUSDT%22%2C%22LINKUSDT%22%2C%22DOTUSDT%22%2C%22LTCUSDT%22%2C%22SUIUSDT%22%2C%22NEARUSDT%22%2C%22UNIUSDT%22%5D' from origin 'https://venerablesoul.github.io' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+   "Failed to load resource: net::ERR_FAILED",
+   "Access to fetch at 'https://api.binance.com/api/v3/ticker/24hr?symbols=%5B%22BTCUSDT%22%2C%22ETHUSDT%22%2C%22BNBUSDT%22%2C%22SOLUSDT%22%2C%22XRPUSDT%22%2C%22DOGEUSDT%22%2C%22TONUSDT%22%2C%22ADAUSDT%22%2C%22TRXUSDT%22%2C%22AVAXUSDT%22%2C%22LINKUSDT%22%2C%22DOTUSDT%22%2C%22LTCUSDT%22%2C%22SUIUSDT%22%2C%22NEARUSDT%22%2C%22UNIUSDT%22%5D' from origin 'https://venerablesoul.github.io' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+   "Failed to load resource: net::ERR_FAILED"
+  ]
+ }
+}
