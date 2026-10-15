@@ -1064,7 +1064,8 @@
   "911fc14cb3ce6e03": "2026-10-15T06:56:58.082102+00:00",
   "bd493892be321eae": "2026-10-15T07:01:58.177125+00:00",
   "70785f7ec9532fc5": "2026-10-15T07:06:58.186061+00:00",
-  "bf645d0b2bad5d85": "2026-10-15T07:21:58.085772+00:00"
+  "bf645d0b2bad5d85": "2026-10-15T07:21:58.085772+00:00",
+  "07727e197422e904": "2026-10-15T07:26:58.098584+00:00"
  },
  "recent": [
   {
@@ -11084,6 +11085,19 @@
     "inflation",
     "bonds"
    ]
+  },
+  {
+   "title": "EU leaders to tackle China exports, energy prices, budget at summit",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNNl85ZmstSVZrYnFvc2tnZmdjWGRoMk5zRkVDY0hVYjFWNW1EVDZobXJNdHJWdWY0QzdtQ2R5d0FNeUczUXRHSXJPY085blBETjBfbE1PM0R1eDNkdERhc2JTU3hTU2FzUjdWM0p3MlZjNTdzWm5TXzdYX2RNeTl1U2d1bll5cTFYdEVvRkk4bTNvWmxHSkQ4UHJpZlBTU1FldzlvX3pUZ1RjMnM?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-15T07:26:58.098584+00:00",
+   "title_ru": "Лидеры ЕС обсудят экспорт из Китая, цены на энергоносители и бюджет на саммите",
+   "tags": [
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-10-14",
@@ -11106,7 +11120,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 1,
+  "Fed": 0,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
