@@ -1,0 +1,78 @@
+{
+ "BTC_1d": {
+  "sec": 1.15,
+  "ok": false,
+  "error": "HTTP 451 https://api1.binance.com/api/v3/klines",
+  "n": 0,
+  "src": null,
+  "last": null
+ },
+ "BTC_5d": {
+  "sec": 1.18,
+  "ok": true,
+  "error": null,
+  "n": 120,
+  "src": "coinbase",
+  "last": 80770.23
+ },
+ "BTC_1y": {
+  "sec": 1.68,
+  "ok": false,
+  "error": "HTTP 451 https://api1.binance.com/api/v3/klines",
+  "n": 0,
+  "src": null,
+  "last": null
+ },
+ "BTC_5y": {
+  "sec": 1.61,
+  "ok": false,
+  "error": "HTTP 451 https://api1.binance.com/api/v3/klines",
+  "n": 0,
+  "src": null,
+  "last": null
+ },
+ "ETH_1d": {
+  "sec": 1.54,
+  "ok": false,
+  "error": "HTTP 451 https://api1.binance.com/api/v3/klines",
+  "n": 0,
+  "src": null,
+  "last": null
+ },
+ "co_AAPL": {
+  "sec": 0.3,
+  "errors": [],
+  "co_keys": [
+   "div",
+   "est",
+   "filings",
+   "hist",
+   "holders",
+   "next",
+   "profile",
+   "ratings",
+   "s",
+   "short",
+   "stats",
+   "targets",
+   "updated",
+   "wiki",
+   "wiki_at"
+  ],
+  "opt_full": true,
+  "dvd_live": false,
+  "cf_live": false,
+  "rv": 9,
+  "rv_src": "sector"
+ },
+ "co_MSFT": {
+  "sec": 0.23,
+  "errors": [],
+  "co_keys": [],
+  "opt_full": false,
+  "dvd_live": true,
+  "cf_live": true,
+  "rv": 9,
+  "rv_src": "peers"
+ }
+}
