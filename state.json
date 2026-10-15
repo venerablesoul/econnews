@@ -1177,7 +1177,9 @@
   "247cbf93e56bacd4": "2026-10-15T18:02:01.031497+00:00",
   "c0d0159f3847fdc5": "2026-10-15T18:07:01.125355+00:00",
   "908a6ef99f577de8": "2026-10-15T18:07:01.125355+00:00",
-  "6ba0e588120ec3ba": "2026-10-15T18:17:01.002421+00:00"
+  "6ba0e588120ec3ba": "2026-10-15T18:17:01.002421+00:00",
+  "87bb3effa41441ae": "2026-10-15T18:32:01.142210+00:00",
+  "aae88f1b410bea44": "2026-10-15T18:32:01.142210+00:00"
  },
  "recent": [
   {
@@ -12328,6 +12330,36 @@
    "tags": [
     "China"
    ]
+  },
+  {
+   "title": "US Mortgage Rates Unchanged at 7.4% as Housing Market Struggles",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-15/us-mortgage-rates-unchanged-as-housing-market-struggles-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-15T18:32:01.142210+00:00",
+   "title_ru": "Ставки по ипотечным кредитам в США не изменились и составили 7,4%, поскольку рынок жилья испытывает трудности",
+   "lead": "Bloomberg's Prashant Gopal joins Scarlet Fu on \"Bloomberg Real Yield.\" US mortgage rates were unchanged in the past week, offering little relief to a housing market battered by the return of 7% borrowing costs. (Source: Bloomberg)",
+   "lead_ru": "Прашант Гопал из Bloomberg присоединяется к Scarlet Fu на \"Bloomberg Real Yield.« На прошлой неделе ставки по ипотечным кредитам в США не изменились, что не принесло большого облегчения рынку жилья, пострадавшему от возврата 7% стоимости заимствований. (Источник: Bloomberg)",
+   "tags": [
+    "bonds"
+   ]
+  },
+  {
+   "title": "Big pharma stocks near all-time highs as tech selloff pushes investors toward safer bets",
+   "link": "https://www.marketwatch.com/story/big-pharma-stocks-near-all-time-highs-as-tech-selloff-pushes-investors-toward-safer-bets-0a5d5d07?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 5,
+   "ts": "2026-10-15T18:32:01.142210+00:00",
+   "title_ru": "Крупные фармацевтические акции близки к рекордным максимумам, поскольку распродажа технологий подталкивает инвесторов к более безопасным ставкам",
+   "lead": "Shares of AbbVie, Eli Lilly and Gilead Sciences are trading at or near record highs.",
+   "lead_ru": "Акции AbbVie, Eli Lilly и Gilead Sciences торгуются на рекордных максимумах или вблизи них.",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-15",
@@ -14775,8 +14807,8 @@
    "0001169106-26-000004",
    "0001418241-26-000002",
    "0001193125-26-422699",
-   "0001193125-26-422708",
    "0001493152-26-047198",
+   "0001193125-26-422708",
    "0002127871-26-000006",
    "0001493152-26-047196",
    "0001995337-26-000004",
@@ -14788,6 +14820,7 @@
    "0001237669-26-000002",
    "0001493152-26-047204",
    "0001193125-26-422694",
+   "0001193125-26-422731",
    "0001193125-26-422691"
   ],
   "errors": {}
