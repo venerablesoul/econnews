@@ -1,0 +1,76 @@
+{
+ "earnings_n": 80,
+ "earnings_dates": [
+  "2026-10-08",
+  "2026-10-13",
+  "2026-10-14",
+  "2026-10-15",
+  "2026-10-19",
+  "2026-10-20",
+  "2026-10-21",
+  "2026-10-22",
+  "2026-10-23",
+  "2026-10-26",
+  "2026-10-27",
+  "2026-10-28",
+  "2026-10-29",
+  "2026-10-30",
+  "2026-11-02",
+  "2026-11-03",
+  "2026-11-04",
+  "2026-11-05"
+ ],
+ "earnings_sample": [
+  "2026-10-15 SCHW",
+  "2026-10-15 PLD",
+  "2026-10-19 GE",
+  "2026-10-20 GM",
+  "2026-10-20 RTX",
+  "2026-10-20 PM",
+  "2026-10-20 MMM",
+  "2026-10-20 COF",
+  "2026-10-20 NFLX",
+  "2026-10-20 ISRG",
+  "2026-10-21 T",
+  "2026-10-21 ABT",
+  "2026-10-21 TMO",
+  "2026-10-21 NEE",
+  "2026-10-21 DHR",
+  "2026-10-21 META",
+  "2026-10-21 TSLA",
+  "2026-10-21 IBM",
+  "2026-10-21 LRCX",
+  "2026-10-21 TXN",
+  "2026-10-22 CMCSA",
+  "2026-10-22 PG",
+  "2026-10-22 LMT",
+  "2026-10-22 GD",
+  "2026-10-22 UNP"
+ ],
+ "rc": 0,
+ "err": "\nRunning kernel seems to be up-to-date.\n\nNo services need to be restarted.\n\nNo containers need to be restarted.\n\nNo user sessions are running outdated binaries.\n\nNo VM guests are running outdated hypervisor (qemu) binaries on this host.\n",
+ "live": {
+  "new_code": "FOREXCOM:SPXUSD",
+  "gp_restricted": false,
+  "gp_has_numbers": true,
+  "chart_UST10": {
+   "restricted": false,
+   "sub": "built-in · bot data",
+   "own": 1
+  },
+  "chart_VIX": {
+   "restricted": false,
+   "sub": "TradingView",
+   "own": 1
+  },
+  "chart_NIKKEI": {
+   "restricted": false,
+   "sub": "TradingView",
+   "own": 1
+  },
+  "corr_tables": 7,
+  "anr_heading_count": 2,
+  "evts": "Date\tCompany\tEPS est.\tEPS actual\tRevenue est.\nFRI 30 OCTOBER\n☀ before open\tCVX Chevron\t$4.88\t—\t$61.0B\n☀ before open\tCL Colgate-Palmolive\t$0.96\t—\t$5.5B\n\tABBV AbbVie\t$3.82\t—\t$17.7B\nMON 2 NOVEMBER\n\tPLTR Palantir\t$0.42\t—\t$2.2B\n☾ after close\tAAPL Apple\t$2.02\t—\t$115B\nTUE 3 NOVEMBER\n\tPFE Pfizer\t$0.74\t—\t$16.1B\n☾ after close\tAMD AMD\t$1.97\t—\t$13.2B\n☾ after close\tAMGN Amgen\t$5.89\t—\t$10.2B\n☾ after close\tBKNG Booking\t$4.59\t—\t$9.7B\nWED 4 NOVEMBER\n☀ before open\tCVS CVS Health\t$1.66\t—\t$106B\n☀ before open\tCAT Ca",
+  "errors": []
+ }
+}
