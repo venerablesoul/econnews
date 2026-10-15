@@ -1,4 +1,4 @@
-"""Probe round 10: the live bot server after the deploy (new company parts, IPO, intraday history)."""
+"""Probe round 11: the live bot server again (latency of the company card, BTC intraday error text)."""
 import json, time, urllib.request
 API = "https://econnews-bot.econnews-6dce35.workers.dev"
 OUT = {}
@@ -32,5 +32,13 @@ for s, rg in (("AAPL", "1d"), ("BTC", "5d"), ("SBER", "1d"), ("S&P", "5d")):
     d = r.get("d") or {}
     OUT[f"hist_{s}_{rg}"] = {"status": r.get("status"), "n": len(d.get("c") or []), "range": d.get("range"), "first_t": (d.get("t") or [None])[0],
                              "last_t": (d.get("t") or [None])[-1], "src": d.get("src"), "body": r.get("body")}
-with open("probe/out5.json", "w") as f:
+r = get("/api/history?s=BTC&r=5d"); OUT["btc5d_raw"] = {k: (v if k != "d" else {kk: vv for kk, vv in v.items() if kk not in ("t", "o", "h", "l", "c", "v")}) for k, v in r.items()}
+r = get("/api/history?s=BTC&r=1d"); OUT["btc1d_raw"] = {k: (v if k != "d" else {kk: vv for kk, vv in v.items() if kk not in ("t", "o", "h", "l", "c", "v")}) for k, v in r.items()}
+for u in ("https://min-api.cryptocompare.com/data/v2/histohour?fsym=BTC&tsym=USD&limit=120", "https://data-api.binance.vision/api/v3/klines?symbol=BTCUSDT&interval=30m&limit=240"):
+    try:
+        with urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0"}), timeout=30) as rr:
+            OUT[u[:60]] = {"status": rr.status, "sample": rr.read()[:300].decode("utf-8", "replace")}
+    except Exception as e:
+        OUT[u[:60]] = {"err": repr(e)[:300]}
+with open("probe/out6.json", "w") as f:
     json.dump(OUT, f, ensure_ascii=False, indent=1)
