@@ -1,8 +1,8 @@
-# systemd-служба: бот работает постоянно и сам перезапускается после сбоев и перезагрузки сервера.
-# Установка (на сервере, из папки econnews):
+# systemd service: the bot runs continuously and restarts itself after crashes and server reboots.
+# Install (on the server, from the econnews folder):
 #   sudo cp deploy/econnews.service /etc/systemd/system/
 #   sudo systemctl daemon-reload && sudo systemctl enable --now econnews
-# Логи: journalctl -u econnews -f
+# Logs: journalctl -u econnews -f
 [Unit]
 Description=Economic news bot
 After=network-online.target
