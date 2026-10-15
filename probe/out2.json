@@ -1,113 +1,8323 @@
 {
- "spark_20": {
-  "status": 200,
-  "n": 20,
-  "syms": [
-   "MSFT",
-   "AAPL",
-   "NVDA",
-   "LLY",
-   "META",
-   "TSLA",
-   "AVGO",
-   "V",
-   "XOM",
-   "JPM",
-   "AMZN",
-   "BRK-B",
-   "GOOGL",
-   "JNJ",
-   "ABBV",
-   "UNH",
-   "COST",
-   "MA",
-   "PG",
-   "HD"
+ "yahoo_qs_AAPL": {
+  "assetProfile": {
+   "address1": "One Apple Park Way",
+   "city": "Cupertino",
+   "state": "CA",
+   "zip": "95014",
+   "country": "United States",
+   "phone": "(408) 996-1010",
+   "website": "https://www.apple.com",
+   "industry": "Consumer Electronics",
+   "industryKey": "consumer-electronics",
+   "industryDisp": "Consumer Electronics",
+   "sector": "Technology",
+   "sectorKey": "technology",
+   "sectorDisp": "Technology",
+   "longBusinessSummary": "Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. The company offers iPhone, a line of smartphones; Mac, a line of personal computers; iPad, a line of multi-purpose tablets; and wearables, home, and accessories comprising AirPods, Apple Vision Pro, Apple TV, Apple Watch, Beats products, and HomePod, as well as Apple branded and third-party accessories. It also provides AppleCare support and cloud services; and operates various platforms, including the App Store that allows customers to discover and download applications and digital content, such as books, music, video, games, and podcasts, as well as advertising services include third-party licensing arrangements and its own advertising platforms. In addition, the company offers various subscription-based services, such as Apple Arcade, a game subscription service; Apple Fitness+, a personalized fitness service; Apple Music, which offers users a curated listening experience with on-demand radio stations; Apple News+, a subscription news and magazine service; Apple TV, which offers original content and live sports; Apple Card, a co-branded credit card; and Apple Pay, a cashless payment service, as well as licenses its intellectual property. The company serves consumers, and small and mid-sized businesses; and the education, enterprise, and government markets. It distributes third-party applications for its products through the App Store. The company also sells its products through its retail and online stores, and direct sales force; and third-party cellular network carriers and resellers. The company was formerly known as Apple Computer, Inc. and changed its name to Apple Inc. in January 2007. Apple Inc. was founded in 1976 and is headquartered in Cupertino, California.",
+   "fullTimeEmployees": 150000,
+   "companyOfficers": [
+    {
+     "maxAge": 1,
+     "name": "Mr. Timothy D. Cook",
+     "age": 64,
+     "title": "Executive Chairman of the Board",
+     "yearBorn": 1961,
+     "fiscalYear": 2025,
+     "totalPay": {
+      "raw": 16759518,
+      "fmt": "16.76M",
+      "longFmt": "16,759,518"
+     },
+     "exercisedValue": {
+      "raw": 0,
+      "fmt": null,
+      "longFmt": "0"
+     },
+     "unexercisedValue": {
+      "raw": 0,
+      "fmt": null,
+      "longFmt": "0"
+     }
+    },
+    {
+     "maxAge": 1,
+     "name": "Mr. Kevan  Parekh",
+     "age": 53,
+     "title": "Senior VP & CFO",
+     "yearBorn": 1972,
+     "fiscalYear": 2025,
+     "totalPay": {
+      "raw": 4034174,
+      "fmt": "4.03M",
+      "longFmt": "4,034,174"
+     },
+     "exercisedValue": {
+      "raw": 0,
+      "fmt": null,
+      "longFmt": "0"
+     },
+     "unexercisedValue": {
+      "raw": 0,
+      "fmt": null,
+      "longFmt": "0"
+     }
+    },
+    {
+     "maxAge": 1,
+     "name": "Mr. Sabih  Khan",
+     "age": 58,
+     "title": "Senior VP & Chief Operating Officer",
+     "yearBorn": 1967,
+     "fiscalYear": 2025,
+     "totalPay": {
+      "raw": 5021905,
+      "fmt": "5.02M",
+      "longFmt": "5,021,905"
+     },
+     "exercisedValue": {
+      "raw": 0,
+      "fmt": null,
+      "longFmt": "0"
+     },
+     "unexercisedValue": {
+      "raw": 0,
+      "fmt": null,
+      "longFmt": "0"
+     }
+    },
+    {
+     "maxAge": 1,
+     "name": "Ms. Deirdre  O'Brien",
+     "age": 58,
+     "title": "Senior Vice President of Retail & People",
+     "yearBorn": 1967,
+     "fiscalYear": 2025,
+     "totalPay": {
+      "raw": 5037867,
+      "fmt": "5.04M",
+      "longFmt": "5,037,867"
+     },
+     "exercisedValue": {
+      "raw": 0,
+      "fmt": null,
+      "longFmt": "0"
+     },
+     "unexercisedValue": {
+      "raw": 0,
+      "fmt": null,
+      "longFmt": "0"
+     }
+    },
+    {
+     "_more": 6
+    }
+   ],
+   "auditRisk": 2,
+   "boardRisk": 3,
+   "compensationRisk": 6,
+   "shareHolderRightsRisk": 1,
+   "overallRisk": 1,
+   "governanceEpochDate": 1790812800,
+   "compensationAsOfEpochDate": 1767139200,
+   "irWebsite": "http://investor.apple.com/",
+   "executiveTeam": [],
+   "maxAge": 86400
+  },
+  "recommendationTrend": {
+   "trend": [
+    {
+     "period": "0m",
+     "strongBuy": 6,
+     "buy": 19,
+     "hold": 13,
+     "sell": 3,
+     "strongSell": 3
+    },
+    {
+     "period": "-1m",
+     "strongBuy": 6,
+     "buy": 19,
+     "hold": 13,
+     "sell": 3,
+     "strongSell": 3
+    },
+    {
+     "period": "-2m",
+     "strongBuy": 6,
+     "buy": 19,
+     "hold": 14,
+     "sell": 3,
+     "strongSell": 2
+    },
+    {
+     "period": "-3m",
+     "strongBuy": 6,
+     "buy": 22,
+     "hold": 14,
+     "sell": 2,
+     "strongSell": 2
+    }
+   ],
+   "maxAge": 86400
+  },
+  "institutionOwnership": {
+   "maxAge": 1,
+   "ownershipList": [
+    {
+     "maxAge": 1,
+     "reportDate": {
+      "raw": 1782777600,
+      "fmt": "2026-06-30"
+     },
+     "organization": "Blackrock Inc.",
+     "pctHeld": {
+      "raw": 0.0797,
+      "fmt": "7.97%"
+     },
+     "position": {
+      "raw": 1162996939,
+      "fmt": "1.16B",
+      "longFmt": "1,162,996,939"
+     },
+     "value": {
+      "raw": 398861420261,
+      "fmt": "398.86B",
+      "longFmt": "398,861,420,261"
+     },
+     "pctChange": {
+      "raw": 0.016,
+      "fmt": "1.60%"
+     }
+    },
+    {
+     "maxAge": 1,
+     "reportDate": {
+      "raw": 1782777600,
+      "fmt": "2026-06-30"
+     },
+     "organization": "Vanguard Capital Management LLC",
+     "pctHeld": {
+      "raw": 0.0657,
+      "fmt": "6.57%"
+     },
+     "position": {
+      "raw": 959107911,
+      "fmt": "959.11M",
+      "longFmt": "959,107,911"
+     },
+     "value": {
+      "raw": 328935640961,
+      "fmt": "328.94B",
+      "longFmt": "328,935,640,961"
+     },
+     "pctChange": {
+      "raw": 0.0055,
+      "fmt": "0.55%"
+     }
+    },
+    {
+     "maxAge": 1,
+     "reportDate": {
+      "raw": 1782777600,
+      "fmt": "2026-06-30"
+     },
+     "organization": "State Street Corporation",
+     "pctHeld": {
+      "raw": 0.0421,
+      "fmt": "4.21%"
+     },
+     "position": {
+      "raw": 615129929,
+      "fmt": "615.13M",
+      "longFmt": "615,129,929"
+     },
+     "value": {
+      "raw": 210964955193,
+      "fmt": "210.96B",
+      "longFmt": "210,964,955,193"
+     },
+     "pctChange": {
+      "raw": 0.0212,
+      "fmt": "2.12%"
+     }
+    },
+    {
+     "maxAge": 1,
+     "reportDate": {
+      "raw": 1782777600,
+      "fmt": "2026-06-30"
+     },
+     "organization": "Geode Capital Management, LLC",
+     "pctHeld": {
+      "raw": 0.0254,
+      "fmt": "2.54%"
+     },
+     "position": {
+      "raw": 371336543,
+      "fmt": "371.34M",
+      "longFmt": "371,336,543"
+     },
+     "value": {
+      "raw": 127353577614,
+      "fmt": "127.35B",
+      "longFmt": "127,353,577,614"
+     },
+     "pctChange": {
+      "raw": 0.0074,
+      "fmt": "0.74%"
+     }
+    },
+    {
+     "_more": 6
+    }
+   ]
+  },
+  "majorHoldersBreakdown": {
+   "maxAge": 1,
+   "insidersPercentHeld": {
+    "raw": 0.01648,
+    "fmt": "1.65%"
+   },
+   "institutionsPercentHeld": {
+    "raw": 0.66326,
+    "fmt": "66.33%"
+   },
+   "institutionsFloatPercentHeld": {
+    "raw": 0.67437,
+    "fmt": "67.44%"
+   },
+   "institutionsCount": {
+    "raw": 7697,
+    "fmt": "7.7k",
+    "longFmt": "7,697"
+   }
+  },
+  "earningsHistory": {
+   "history": [
+    {
+     "maxAge": 1,
+     "epsActual": {
+      "raw": 1.85,
+      "fmt": "1.85"
+     },
+     "epsEstimate": {
+      "raw": 1.76993,
+      "fmt": "1.77"
+     },
+     "epsDifference": {
+      "raw": 0.08,
+      "fmt": "0.08"
+     },
+     "surprisePercent": {
+      "raw": 0.0452,
+      "fmt": "4.52%"
+     },
+     "quarter": {
+      "raw": 1759190400,
+      "fmt": "2025-09-30"
+     },
+     "currency": "USD",
+     "period": "-4q"
+    },
+    {
+     "maxAge": 1,
+     "epsActual": {
+      "raw": 2.84,
+      "fmt": "2.84"
+     },
+     "epsEstimate": {
+      "raw": 2.6708,
+      "fmt": "2.67"
+     },
+     "epsDifference": {
+      "raw": 0.17,
+      "fmt": "0.17"
+     },
+     "surprisePercent": {
+      "raw": 0.0634,
+      "fmt": "6.34%"
+     },
+     "quarter": {
+      "raw": 1767139200,
+      "fmt": "2025-12-31"
+     },
+     "currency": "USD",
+     "period": "-3q"
+    },
+    {
+     "maxAge": 1,
+     "epsActual": {
+      "raw": 2.01,
+      "fmt": "2.01"
+     },
+     "epsEstimate": {
+      "raw": 1.94275,
+      "fmt": "1.94"
+     },
+     "epsDifference": {
+      "raw": 0.07,
+      "fmt": "0.07"
+     },
+     "surprisePercent": {
+      "raw": 0.0346,
+      "fmt": "3.46%"
+     },
+     "quarter": {
+      "raw": 1774915200,
+      "fmt": "2026-03-31"
+     },
+     "currency": "USD",
+     "period": "-2q"
+    },
+    {
+     "maxAge": 1,
+     "epsActual": {
+      "raw": 2.02,
+      "fmt": "2.02"
+     },
+     "epsEstimate": {
+      "raw": 1.89243,
+      "fmt": "1.89"
+     },
+     "epsDifference": {
+      "raw": 0.13,
+      "fmt": "0.13"
+     },
+     "surprisePercent": {
+      "raw": 0.0674,
+      "fmt": "6.74%"
+     },
+     "quarter": {
+      "raw": 1782777600,
+      "fmt": "2026-06-30"
+     },
+     "currency": "USD",
+     "period": "-1q"
+    }
+   ],
+   "defaultMethodology": "gaap",
+   "maxAge": 86400
+  },
+  "indexTrend": {
+   "maxAge": 1,
+   "symbol": "SP5",
+   "peRatio": {},
+   "pegRatio": {},
+   "estimates": [
+    {
+     "period": "0q",
+     "growth": {
+      "raw": 0.24280001,
+      "fmt": "0.24"
+     }
+    },
+    {
+     "period": "+1q",
+     "growth": {
+      "raw": 0.264,
+      "fmt": "0.26"
+     }
+    },
+    {
+     "period": "0y",
+     "growth": {
+      "raw": 0.3232,
+      "fmt": "0.32"
+     }
+    },
+    {
+     "period": "+1y",
+     "growth": {
+      "raw": 0.16510001,
+      "fmt": "0.17"
+     }
+    },
+    {
+     "_more": 1
+    }
+   ]
+  },
+  "defaultKeyStatistics": {
+   "maxAge": 1,
+   "priceHint": {
+    "raw": 2,
+    "fmt": "2",
+    "longFmt": "2"
+   },
+   "enterpriseValue": {
+    "raw": 5027164848128,
+    "fmt": "5.03T",
+    "longFmt": "5,027,164,848,128"
+   },
+   "forwardPE": {
+    "raw": 35.760014,
+    "fmt": "35.76"
+   },
+   "profitMargins": {
+    "raw": 0.27618998,
+    "fmt": "27.62%"
+   },
+   "floatShares": {
+    "raw": 14569078010,
+    "fmt": "14.57B",
+    "longFmt": "14,569,078,010"
+   },
+   "sharesOutstanding": {
+    "raw": 14594180000,
+    "fmt": "14.59B",
+    "longFmt": "14,594,180,000"
+   },
+   "sharesShort": {
+    "raw": 120763539,
+    "fmt": "120.76M",
+    "longFmt": "120,763,539"
+   },
+   "sharesShortPriorMonth": {
+    "raw": 139749097,
+    "fmt": "139.75M",
+    "longFmt": "139,749,097"
+   },
+   "sharesShortPreviousMonthDate": {
+    "raw": 1788134400,
+    "fmt": "2026-08-31"
+   },
+   "dateShortInterest": {
+    "raw": 1790726400,
+    "fmt": "2026-09-30"
+   },
+   "sharesPercentSharesOut": {
+    "raw": 0.0083,
+    "fmt": "0.83%"
+   },
+   "heldPercentInsiders": {
+    "raw": 0.01648,
+    "fmt": "1.65%"
+   },
+   "heldPercentInstitutions": {
+    "raw": 0.66326,
+    "fmt": "66.33%"
+   },
+   "shortRatio": {
+    "raw": 2.82,
+    "fmt": "2.82"
+   },
+   "shortPercentOfFloat": {
+    "raw": 0.0083,
+    "fmt": "0.83%"
+   },
+   "beta": {
+    "raw": 1.069,
+    "fmt": "1.07"
+   },
+   "impliedSharesOutstanding": {
+    "raw": 14594180000,
+    "fmt": "14.59B",
+    "longFmt": "14,594,180,000"
+   },
+   "morningStarOverallRating": {},
+   "morningStarRiskRating": {},
+   "category": null,
+   "bookValue": {
+    "raw": 7.36,
+    "fmt": "7.36"
+   },
+   "priceToBook": {
+    "raw": 46.597824,
+    "fmt": "46.60"
+   },
+   "annualReportExpenseRatio": {},
+   "ytdReturn": {},
+   "qtdReturn": {},
+   "beta3Year": {},
+   "totalAssets": {},
+   "yield": {},
+   "fundFamily": null,
+   "fundInceptionDate": {},
+   "legalType": null,
+   "threeYearAverageReturn": {},
+   "fiveYearAverageReturn": {},
+   "priceToSalesTrailing12Months": {},
+   "lastFiscalYearEnd": {
+    "raw": 1758931200,
+    "fmt": "2025-09-27"
+   },
+   "nextFiscalYearEnd": {
+    "raw": 1790467200,
+    "fmt": "2026-09-27"
+   },
+   "mostRecentQuarter": {
+    "raw": 1782518400,
+    "fmt": "2026-06-27"
+   },
+   "earningsQuarterlyGrowth": {
+    "raw": 0.271,
+    "fmt": "27.10%"
+   },
+   "revenueQuarterlyGrowth": {},
+   "netIncomeToCommon": {
+    "raw": 128929996800,
+    "fmt": "128.93B",
+    "longFmt": "128,929,996,800"
+   },
+   "trailingEps": {
+    "raw": 8.76,
+    "fmt": "8.76"
+   },
+   "forwardEps": {
+    "raw": 9.57785,
+    "fmt": "9.58"
+   },
+   "pegRatio": {
+    "raw": 2.73,
+    "fmt": "2.73"
+   },
+   "lastSplitFactor": "4:1",
+   "lastSplitDate": {
+    "raw": 1598832000,
+    "fmt": "2020-08-31"
+   },
+   "enterpriseToRevenue": {
+    "raw": 10.769,
+    "fmt": "10.77"
+   },
+   "enterpriseToEbitda": {
+    "raw": 29.931,
+    "fmt": "29.93"
+   },
+   "52WeekChange": {
+    "raw": 0.37547123,
+    "fmt": "37.55%"
+   },
+   "SandP52WeekChange": {
+    "raw": 0.1570785,
+    "fmt": "15.71%"
+   },
+   "lastDividendValue": {
+    "raw": 0.27,
+    "fmt": "0.27"
+   },
+   "lastDividendDate": {
+    "raw": 1786320000,
+    "fmt": "2026-08-10"
+   },
+   "lastCapGain": {},
+   "annualHoldingsTurnover": {},
+   "latestFundingDate": {},
+   "latestAmountRaised": {},
+   "latestImpliedValuation": {},
+   "latestShareClass": null,
+   "leadInvestor": null,
+   "fundingToDate": {},
+   "totalFundingRounds": {}
+  },
+  "summaryProfile": {
+   "address1": "One Apple Park Way",
+   "city": "Cupertino",
+   "state": "CA",
+   "zip": "95014",
+   "country": "United States",
+   "phone": "(408) 996-1010",
+   "website": "https://www.apple.com",
+   "industry": "Consumer Electronics",
+   "industryKey": "consumer-electronics",
+   "industryDisp": "Consumer Electronics",
+   "sector": "Technology",
+   "sectorKey": "technology",
+   "sectorDisp": "Technology",
+   "longBusinessSummary": "Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. The company offers iPhone, a line of smartphones; Mac, a line of personal computers; iPad, a line of multi-purpose tablets; and wearables, home, and accessories comprising AirPods, Apple Vision Pro, Apple TV, Apple Watch, Beats products, and HomePod, as well as Apple branded and third-party accessories. It also provides AppleCare support and cloud services; and operates various platforms, including the App Store that allows customers to discover and download applications and digital content, such as books, music, video, games, and podcasts, as well as advertising services include third-party licensing arrangements and its own advertising platforms. In addition, the company offers various subscription-based services, such as Apple Arcade, a game subscription service; Apple Fitness+, a personalized fitness service; Apple Music, which offers users a curated listening experience with on-demand radio stations; Apple News+, a subscription news and magazine service; Apple TV, which offers original content and live sports; Apple Card, a co-branded credit card; and Apple Pay, a cashless payment service, as well as licenses its intellectual property. The company serves consumers, and small and mid-sized businesses; and the education, enterprise, and government markets. It distributes third-party applications for its products through the App Store. The company also sells its products through its retail and online stores, and direct sales force; and third-party cellular network carriers and resellers. The company was formerly known as Apple Computer, Inc. and changed its name to Apple Inc. in January 2007. Apple Inc. was founded in 1976 and is headquartered in Cupertino, California.",
+   "fullTimeEmployees": 150000,
+   "companyOfficers": [],
+   "irWebsite": "http://investor.apple.com/",
+   "executiveTeam": [],
+   "maxAge": 86400
+  },
+  "industryTrend": {
+   "maxAge": 1,
+   "symbol": null,
+   "peRatio": {},
+   "pegRatio": {},
+   "estimates": []
+  },
+  "netSharePurchaseActivity": {
+   "maxAge": 1,
+   "period": "6m",
+   "buyInfoCount": {
+    "raw": 12,
+    "fmt": "12",
+    "longFmt": "12"
+   },
+   "buyInfoShares": {
+    "raw": 843593,
+    "fmt": "843.59k",
+    "longFmt": "843,593"
+   },
+   "buyPercentInsiderShares": {
+    "raw": 0.004,
+    "fmt": "0.40%"
+   },
+   "sellInfoCount": {
+    "raw": 17,
+    "fmt": "17",
+    "longFmt": "17"
+   },
+   "sellInfoShares": {
+    "raw": 582307,
+    "fmt": "582.31k",
+    "longFmt": "582,307"
+   },
+   "sellPercentInsiderShares": {
+    "raw": 0.002,
+    "fmt": "0.20%"
+   },
+   "netInfoCount": {
+    "raw": 29,
+    "fmt": "29",
+    "longFmt": "29"
+   },
+   "netInfoShares": {
+    "raw": 261286,
+    "fmt": "261.29k",
+    "longFmt": "261,286"
+   },
+   "netPercentInsiderShares": {
+    "raw": 0.001,
+    "fmt": "0.10%"
+   },
+   "netInstSharesBuying": {
+    "raw": -1362426699,
+    "fmt": "-1.36B",
+    "longFmt": "-1,362,426,699"
+   },
+   "netInstBuyingPercent": {
+    "raw": -0.14074999,
+    "fmt": "-14.07%"
+   },
+   "totalInsiderShares": {
+    "raw": 240512096,
+    "fmt": "240.51M",
+    "longFmt": "240,512,096"
+   }
+  },
+  "fundOwnership": {
+   "maxAge": 1,
+   "ownershipList": [
+    {
+     "maxAge": 1,
+     "reportDate": {
+      "raw": 1782777600,
+      "fmt": "2026-06-30"
+     },
+     "organization": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
+     "pctHeld": {
+      "raw": 0.0319,
+      "fmt": "3.19%"
+     },
+     "position": {
+      "raw": 466272244,
+      "fmt": "466.27M",
+      "longFmt": "466,272,244"
+     },
+     "value": {
+      "raw": 159912724817,
+      "fmt": "159.91B",
+      "longFmt": "159,912,724,817"
+     },
+     "pctChange": {
+      "raw": 0.0001,
+      "fmt": "0.01%"
+     }
+    },
+    {
+     "maxAge": 1,
+     "reportDate": {
+      "raw": 1782777600,
+      "fmt": "2026-06-30"
+     },
+     "organization": "VANGUARD INDEX FUNDS-Vanguard 500 Index Fund",
+     "pctHeld": {
+      "raw": 0.026099999,
+      "fmt": "2.61%"
+     },
+     "position": {
+      "raw": 380610709,
+      "fmt": "380.61M",
+      "longFmt": "380,610,709"
+     },
+     "value": {
+      "raw": 130534245506,
+      "fmt": "130.53B",
+      "longFmt": "130,534,245,506"
+     },
+     "pctChange": {
+      "raw": 0.0202,
+      "fmt": "2.02%"
+     }
+    },
+    {
+     "maxAge": 1,
+     "reportDate": {
+      "raw": 1788134400,
+      "fmt": "2026-08-31"
+     },
+     "organization": "iShares Trust-iShares Core S&P 500 ETF",
+     "pctHeld": {
+      "raw": 0.0134000005,
+      "fmt": "1.34%"
+     },
+     "position": {
+      "raw": 195583632,
+      "fmt": "195.58M",
+      "longFmt": "195,583,632"
+     },
+     "value": {
+      "raw": 67077360759,
+      "fmt": "67.08B",
+      "longFmt": "67,077,360,759"
+     },
+     "pctChange": {
+      "raw": -0.013099999,
+      "fmt": "-1.31%"
+     }
+    },
+    {
+     "maxAge": 1,
+     "reportDate": {
+      "raw": 1788134400,
+      "fmt": "2026-08-31"
+     },
+     "organization": "Fidelity Concord Street Trust-Fidelity 500 Index Fund",
+     "pctHeld": {
+      "raw": 0.013099999,
+      "fmt": "1.31%"
+     },
+     "position": {
+      "raw": 190655125,
+      "fmt": "190.66M",
+      "longFmt": "190,655,125"
+     },
+     "value": {
+      "raw": 65387080040,
+      "fmt": "65.39B",
+      "longFmt": "65,387,080,040"
+     },
+     "pctChange": {
+      "raw": 0.0039,
+      "fmt": "0.39%"
+     }
+    },
+    {
+     "_more": 6
+    }
+   ]
+  },
+  "summaryDetail": {
+   "maxAge": 1,
+   "priceHint": {
+    "raw": 2,
+    "fmt": "2",
+    "longFmt": "2"
+   },
+   "previousClose": {
+    "raw": 341.27,
+    "fmt": "341.27"
+   },
+   "open": {
+    "raw": 344.605,
+    "fmt": "344.61"
+   },
+   "dayLow": {
+    "raw": 341.72,
+    "fmt": "341.72"
+   },
+   "dayHigh": {
+    "raw": 347.07,
+    "fmt": "347.07"
+   },
+   "regularMarketPreviousClose": {
+    "raw": 341.27,
+    "fmt": "341.27"
+   },
+   "regularMarketOpen": {
+    "raw": 344.605,
+    "fmt": "344.61"
+   },
+   "regularMarketDayLow": {
+    "raw": 341.72,
+    "fmt": "341.72"
+   },
+   "regularMarketDayHigh": {
+    "raw": 347.07,
+    "fmt": "347.07"
+   },
+   "dividendRate": {},
+   "dividendYield": {
+    "raw": 0.0032,
+    "fmt": "0.32%"
+   },
+   "exDividendDate": {
+    "raw": 1786320000,
+    "fmt": "2026-08-10"
+   },
+   "payoutRatio": {
+    "raw": 0.1204,
+    "fmt": "12.04%"
+   },
+   "fiveYearAvgDividendYield": {
+    "raw": 0.47,
+    "fmt": "0.47"
+   },
+   "beta": {
+    "raw": 1.069,
+    "fmt": "1.07"
+   },
+   "trailingPE": {
+    "raw": 39.150684,
+    "fmt": "39.15"
+   },
+   "forwardPE": {
+    "raw": 35.807617,
+    "fmt": "35.81"
+   },
+   "volume": {
+    "raw": 49893047,
+    "fmt": "49.89M",
+    "longFmt": "49,893,047"
+   },
+   "regularMarketVolume": {
+    "raw": 49893047,
+    "fmt": "49.89M",
+    "longFmt": "49,893,047"
+   },
+   "averageVolume": {
+    "raw": 45112966,
+    "fmt": "45.11M",
+    "longFmt": "45,112,966"
+   },
+   "averageVolume10days": {
+    "raw": 35654240,
+    "fmt": "35.65M",
+    "longFmt": "35,654,240"
+   },
+   "averageDailyVolume10Day": {
+    "raw": 35654240,
+    "fmt": "35.65M",
+    "longFmt": "35,654,240"
+   },
+   "bid": {
+    "raw": 342.96,
+    "fmt": "342.96"
+   },
+   "ask": {
+    "raw": 346.7,
+    "fmt": "346.70"
+   },
+   "bidSize": {
+    "raw": 700,
+    "fmt": "700",
+    "longFmt": "700"
+   },
+   "askSize": {
+    "raw": 500,
+    "fmt": "500",
+    "longFmt": "500"
+   },
+   "marketCap": {
+    "raw": 5005219725312,
+    "fmt": "5.01T",
+    "longFmt": "5,005,219,725,312"
+   },
+   "nonDilutedMarketCap": {
+    "raw": 4918530543600,
+    "fmt": "4.92T",
+    "longFmt": "4,918,530,543,600"
+   },
+   "yield": {},
+   "ytdReturn": {},
+   "qtdReturn": {},
+   "totalAssets": {},
+   "expireDate": {},
+   "strikePrice": {},
+   "openInterest": {},
+   "fiftyTwoWeekLow": {
+    "raw": 243.42,
+    "fmt": "243.42"
+   },
+   "fiftyTwoWeekHigh": {
+    "raw": 348.15,
+    "fmt": "348.15"
+   },
+   "allTimeHigh": {
+    "raw": 348.15,
+    "fmt": "348.15"
+   },
+   "allTimeLow": {
+    "raw": 0.049107,
+    "fmt": "0.05"
+   },
+   "fulldayPrice": {
+    "raw": 345.6,
+    "fmt": "345.60"
+   },
+   "fulldayChange": {
+    "raw": 2.6400146,
+    "fmt": "2.64"
+   },
+   "fulldayChangePercent": {
+    "raw": 0.0076977336,
+    "fmt": "0.77%"
+   },
+   "priceToSalesTrailing12Months": {
+    "raw": 10.721879,
+    "fmt": "10.72"
+   },
+   "fiftyDayAverage": {
+    "raw": 324.4584,
+    "fmt": "324.46"
+   },
+   "twoHundredDayAverage": {
+    "raw": 291.7716,
+    "fmt": "291.77"
+   },
+   "trailingAnnualDividendRate": {
+    "raw": 1.05,
+    "fmt": "1.05"
+   },
+   "trailingAnnualDividendYield": {
+    "raw": 0.0030767426,
+    "fmt": "0.31%"
+   },
+   "navPrice": {},
+   "currency": "USD",
+   "fromCurrency": null,
+   "toCurrency": null,
+   "lastMarket": null,
+   "coinMarketCapLink": null,
+   "volume24Hr": {},
+   "volumeAllCurrencies": {},
+   "circulatingSupply": {},
+   "algorithm": null,
+   "maxSupply": {},
+   "totalSupply": {},
+   "startDate": {},
+   "tradeable": false,
+   "fullyDilutedValue": {},
+   "volume24HrMarketCapPercent": {}
+  },
+  "sectorTrend": {
+   "maxAge": 1,
+   "symbol": null,
+   "peRatio": {},
+   "pegRatio": {},
+   "estimates": []
+  },
+  "insiderHolders": {
+   "holders": [
+    {
+     "maxAge": 1,
+     "name": "ADAMS KATHERINE L",
+     "relation": "General Counsel",
+     "url": "",
+     "transactionDescription": "Stock Gift",
+     "latestTransDate": {
+      "raw": 1762905600,
+      "fmt": "2025-11-12"
+     },
+     "positionDirect": {
+      "raw": 175408,
+      "fmt": "175.41k",
+      "longFmt": "175,408"
+     },
+     "positionDirectDate": {
+      "raw": 1762905600,
+      "fmt": "2025-11-12"
+     }
+    },
+    {
+     "maxAge": 1,
+     "name": "COOK TIMOTHY D",
+     "relation": "Officer and Director",
+     "url": "",
+     "transactionDescription": "Stock Gift",
+     "latestTransDate": {
+      "raw": 1790899200,
+      "fmt": "2026-10-02"
+     },
+     "positionDirect": {
+      "raw": 3237840,
+      "fmt": "3.24M",
+      "longFmt": "3,237,840"
+     },
+     "positionDirectDate": {
+      "raw": 1790899200,
+      "fmt": "2026-10-02"
+     }
+    },
+    {
+     "maxAge": 1,
+     "name": "JUNG ANDREA",
+     "relation": "Director",
+     "url": "",
+     "transactionDescription": "Conversion of Exercise of derivative security",
+     "latestTransDate": {
+      "raw": 1769731200,
+      "fmt": "2026-01-30"
+     },
+     "positionDirect": {
+      "raw": 77664,
+      "fmt": "77.66k",
+      "longFmt": "77,664"
+     },
+     "positionDirectDate": {
+      "raw": 1769731200,
+      "fmt": "2026-01-30"
+     }
+    },
+    {
+     "maxAge": 1,
+     "name": "KHAN SABIH",
+     "relation": "Chief Operating Officer",
+     "url": "",
+     "transactionDescription": "Conversion of Exercise of derivative security",
+     "latestTransDate": {
+      "raw": 1790812800,
+      "fmt": "2026-10-01"
+     },
+     "positionDirect": {
+      "raw": 1152550,
+      "fmt": "1.15M",
+      "longFmt": "1,152,550"
+     },
+     "positionDirectDate": {
+      "raw": 1790812800,
+      "fmt": "2026-10-01"
+     }
+    },
+    {
+     "_more": 6
+    }
+   ],
+   "maxAge": 1
+  },
+  "calendarEvents": {
+   "maxAge": 1,
+   "earnings": {
+    "earningsDate": [
+     {
+      "raw": 1793649600,
+      "fmt": "2026-11-02"
+     }
+    ],
+    "earningsCallDate": [
+     {
+      "raw": 1793649600,
+      "fmt": "2026-11-02"
+     }
+    ],
+    "isEarningsDateEstimate": false,
+    "earningsAverage": {
+     "raw": 1.98212,
+     "fmt": "1.98"
+    },
+    "earningsLow": {
+     "raw": 1.93,
+     "fmt": "1.93"
+    },
+    "earningsHigh": {
+     "raw": 2.07,
+     "fmt": "2.07"
+    },
+    "revenueAverage": {
+     "raw": 113613193620,
+     "fmt": "113.61B",
+     "longFmt": "113,613,193,620"
+    },
+    "revenueLow": {
+     "raw": 112248100000,
+     "fmt": "112.25B",
+     "longFmt": "112,248,100,000"
+    },
+    "revenueHigh": {
+     "raw": 117220000000,
+     "fmt": "117.22B",
+     "longFmt": "117,220,000,000"
+    }
+   },
+   "exDividendDate": {
+    "raw": 1786320000,
+    "fmt": "2026-08-10"
+   },
+   "dividendDate": {
+    "raw": 1786579200,
+    "fmt": "2026-08-13"
+   }
+  },
+  "upgradeDowngradeHistory": {
+   "history": [
+    {
+     "epochGradeDate": 1791830866,
+     "firm": "JP Morgan",
+     "toGrade": "Overweight",
+     "fromGrade": "Overweight",
+     "action": "main",
+     "priceTargetAction": "Raises",
+     "currentPriceTarget": 360.0,
+     "priorPriceTarget": 340.0
+    },
+    {
+     "epochGradeDate": 1790870151,
+     "firm": "Morgan Stanley",
+     "toGrade": "Overweight",
+     "fromGrade": "Overweight",
+     "action": "main",
+     "priceTargetAction": "Lowers",
+     "currentPriceTarget": 355.0,
+     "priorPriceTarget": 360.0
+    },
+    {
+     "epochGradeDate": 1790852430,
+     "firm": "Needham",
+     "toGrade": "Hold",
+     "fromGrade": "Hold",
+     "action": "reit",
+     "priceTargetAction": "",
+     "currentPriceTarget": 0.0,
+     "priorPriceTarget": 0.0
+    },
+    {
+     "epochGradeDate": 1790703643,
+     "firm": "Morgan Stanley",
+     "toGrade": "Overweight",
+     "fromGrade": "Overweight",
+     "action": "reit",
+     "priceTargetAction": "Maintains",
+     "currentPriceTarget": 360.0,
+     "priorPriceTarget": 360.0
+    },
+    {
+     "_more": 965
+    }
+   ],
+   "maxAge": 86400
+  },
+  "price": {
+   "maxAge": 1,
+   "preMarketChangePercent": {
+    "raw": 0.0076977336,
+    "fmt": "0.77%"
+   },
+   "preMarketChange": {
+    "raw": 2.6400146,
+    "fmt": "2.64"
+   },
+   "preMarketTime": 1792063183,
+   "preMarketPrice": {
+    "raw": 345.6,
+    "fmt": "345.60"
+   },
+   "preMarketSource": "FREE_REALTIME",
+   "postMarketChange": {},
+   "postMarketPrice": {},
+   "postMarketSource": "FREE_REALTIME",
+   "regularMarketChangePercent": {
+    "raw": 0.0049520982,
+    "fmt": "0.50%"
+   },
+   "regularMarketChange": {
+    "raw": 1.6900024,
+    "fmt": "1.69"
+   },
+   "regularMarketTime": 1792008001,
+   "priceHint": {
+    "raw": 2,
+    "fmt": "2",
+    "longFmt": "2"
+   },
+   "regularMarketPrice": {
+    "raw": 342.96,
+    "fmt": "342.96"
+   },
+   "regularMarketDayHigh": {
+    "raw": 347.07,
+    "fmt": "347.07"
+   },
+   "regularMarketDayLow": {
+    "raw": 341.72,
+    "fmt": "341.72"
+   },
+   "regularMarketVolume": {
+    "raw": 49893047,
+    "fmt": "49.89M",
+    "longFmt": "49,893,047.00"
+   },
+   "averageDailyVolume10Day": {
+    "raw": 35654240,
+    "fmt": "35.65M",
+    "longFmt": "35,654,240"
+   },
+   "averageDailyVolume3Month": {
+    "raw": 45112966,
+    "fmt": "45.11M",
+    "longFmt": "45,112,966"
+   },
+   "regularMarketPreviousClose": {
+    "raw": 341.27,
+    "fmt": "341.27"
+   },
+   "regularMarketSource": "FREE_REALTIME",
+   "regularMarketOpen": {
+    "raw": 344.605,
+    "fmt": "344.61"
+   },
+   "strikePrice": {},
+   "openInterest": {},
+   "fulldayChangePercent": {
+    "raw": 0.0076977336,
+    "fmt": "0.77%"
+   },
+   "fulldayChange": {
+    "raw": 2.6400146,
+    "fmt": "2.64"
+   },
+   "fulldayPrice": {
+    "raw": 345.6,
+    "fmt": "345.60"
+   },
+   "exchange": "NMS",
+   "exchangeName": "NasdaqGS",
+   "exchangeDataDelayedBy": 15,
+   "marketState": "PRE",
+   "quoteType": "EQUITY",
+   "symbol": "AAPL",
+   "underlyingSymbol": null,
+   "shortName": "Apple Inc.",
+   "longName": "Apple Inc.",
+   "currency": "USD",
+   "quoteSourceName": "Nasdaq Real Time Price",
+   "currencySymbol": "$",
+   "fromCurrency": null,
+   "toCurrency": null,
+   "lastMarket": null,
+   "volume24Hr": {},
+   "volumeAllCurrencies": {},
+   "circulatingSupply": {},
+   "marketCap": {
+    "raw": 5005219725312,
+    "fmt": "5.01T",
+    "longFmt": "5,005,219,725,312.00"
+   }
+  },
+  "earningsTrend": {
+   "trend": [
+    {
+     "maxAge": 1,
+     "period": "0q",
+     "endDate": "2026-09-30",
+     "growth": {
+      "raw": 0.0714,
+      "fmt": "7.14%"
+     },
+     "earningsEstimate": {
+      "avg": {
+       "raw": 1.97842,
+       "fmt": "1.98"
+      },
+      "low": {
+       "raw": 1.93,
+       "fmt": "1.93"
+      },
+      "high": {
+       "raw": 2.07,
+       "fmt": "2.07"
+      },
+      "yearAgoEps": {
+       "raw": 1.85,
+       "fmt": "1.85"
+      },
+      "numberOfAnalysts": {
+       "raw": 27,
+       "fmt": "27",
+       "longFmt": "27"
+      },
+      "growth": {
+       "raw": 0.0694,
+       "fmt": "6.94%"
+      },
+      "earningsCurrency": "USD"
+     },
+     "revenueEstimate": {
+      "avg": {
+       "raw": 113613193620,
+       "fmt": "113.61B",
+       "longFmt": "113,613,193,620"
+      },
+      "low": {
+       "raw": 112248100000,
+       "fmt": "112.25B",
+       "longFmt": "112,248,100,000"
+      },
+      "high": {
+       "raw": 117220000000,
+       "fmt": "117.22B",
+       "longFmt": "117,220,000,000"
+      },
+      "numberOfAnalysts": {
+       "raw": 27,
+       "fmt": "27",
+       "longFmt": "27"
+      },
+      "yearAgoRevenue": {
+       "raw": 102466000000,
+       "fmt": "102.47B",
+       "longFmt": "102,466,000,000"
+      },
+      "growth": {
+       "raw": 0.1088,
+       "fmt": "10.88%"
+      },
+      "revenueCurrency": "USD"
+     },
+     "epsTrend": {
+      "current": {
+       "raw": 1.97842,
+       "fmt": "1.98"
+      },
+      "7daysAgo": {
+       "raw": 1.97865,
+       "fmt": "1.98"
+      },
+      "30daysAgo": {
+       "raw": 1.97754,
+       "fmt": "1.98"
+      },
+      "60daysAgo": {
+       "raw": 1.97656,
+       "fmt": "1.98"
+      },
+      "90daysAgo": {
+       "raw": 2.01755,
+       "fmt": "2.02"
+      },
+      "epsTrendCurrency": "USD"
+     },
+     "epsRevisions": {
+      "upLast7days": {
+       "raw": 1,
+       "fmt": "1",
+       "longFmt": "1"
+      },
+      "upLast30days": {
+       "raw": 1,
+       "fmt": "1",
+       "longFmt": "1"
+      },
+      "downLast30days": {
+       "raw": 0,
+       "fmt": null,
+       "longFmt": "0"
+      },
+      "downLast7Days": {
+       "raw": 0,
+       "fmt": null,
+       "longFmt": "0"
+      },
+      "downLast90days": {},
+      "epsRevisionsCurrency": "USD"
+     }
+    },
+    {
+     "maxAge": 1,
+     "period": "+1q",
+     "endDate": "2026-12-31",
+     "growth": {
+      "raw": 0.0146,
+      "fmt": "1.46%"
+     },
+     "earningsEstimate": {
+      "avg": {
+       "raw": 2.90597,
+       "fmt": "2.91"
+      },
+      "low": {
+       "raw": 2.56,
+       "fmt": "2.56"
+      },
+      "high": {
+       "raw": 3.42,
+       "fmt": "3.42"
+      },
+      "yearAgoEps": {
+       "raw": 2.84,
+       "fmt": "2.84"
+      },
+      "numberOfAnalysts": {
+       "raw": 22,
+       "fmt": "22",
+       "longFmt": "22"
+      },
+      "growth": {
+       "raw": 0.0232,
+       "fmt": "2.32%"
+      },
+      "earningsCurrency": "USD"
+     },
+     "revenueEstimate": {
+      "avg": {
+       "raw": 153874156740,
+       "fmt": "153.87B",
+       "longFmt": "153,874,156,740"
+      },
+      "low": {
+       "raw": 131500061129,
+       "fmt": "131.5B",
+       "longFmt": "131,500,061,129"
+      },
+      "high": {
+       "raw": 170414000000,
+       "fmt": "170.41B",
+       "longFmt": "170,414,000,000"
+      },
+      "numberOfAnalysts": {
+       "raw": 18,
+       "fmt": "18",
+       "longFmt": "18"
+      },
+      "yearAgoRevenue": {
+       "raw": 143756000000,
+       "fmt": "143.76B",
+       "longFmt": "143,756,000,000"
+      },
+      "growth": {
+       "raw": 0.0704,
+       "fmt": "7.04%"
+      },
+      "revenueCurrency": "USD"
+     },
+     "epsTrend": {
+      "current": {
+       "raw": 2.90597,
+       "fmt": "2.91"
+      },
+      "7daysAgo": {
+       "raw": 2.90586,
+       "fmt": "2.91"
+      },
+      "30daysAgo": {
+       "raw": 2.90471,
+       "fmt": "2.9"
+      },
+      "60daysAgo": {
+       "raw": 2.90859,
+       "fmt": "2.91"
+      },
+      "90daysAgo": {
+       "raw": 2.96466,
+       "fmt": "2.96"
+      },
+      "epsTrendCurrency": "USD"
+     },
+     "epsRevisions": {
+      "upLast7days": {
+       "raw": 1,
+       "fmt": "1",
+       "longFmt": "1"
+      },
+      "upLast30days": {
+       "raw": 2,
+       "fmt": "2",
+       "longFmt": "2"
+      },
+      "downLast30days": {
+       "raw": 1,
+       "fmt": "1",
+       "longFmt": "1"
+      },
+      "downLast7Days": {
+       "raw": 0,
+       "fmt": null,
+       "longFmt": "0"
+      },
+      "downLast90days": {},
+      "epsRevisionsCurrency": "USD"
+     }
+    },
+    {
+     "maxAge": 1,
+     "period": "0y",
+     "endDate": "2026-09-30",
+     "growth": {
+      "raw": 0.1838,
+      "fmt": "18.38%"
+     },
+     "earningsEstimate": {
+      "avg": {
+       "raw": 8.82006,
+       "fmt": "8.82"
+      },
+      "low": {
+       "raw": 8.28,
+       "fmt": "8.28"
+      },
+      "high": {
+       "raw": 8.94,
+       "fmt": "8.94"
+      },
+      "yearAgoEps": {
+       "raw": 7.46,
+       "fmt": "7.46"
+      },
+      "numberOfAnalysts": {
+       "raw": 39,
+       "fmt": "39",
+       "longFmt": "39"
+      },
+      "growth": {
+       "raw": 0.1823,
+       "fmt": "18.23%"
+      },
+      "earningsCurrency": "USD"
+     },
+     "revenueEstimate": {
+      "avg": {
+       "raw": 478214889500,
+       "fmt": "478.21B",
+       "longFmt": "478,214,889,500"
+      },
+      "low": {
+       "raw": 471800000000,
+       "fmt": "471.8B",
+       "longFmt": "471,800,000,000"
+      },
+      "high": {
+       "raw": 496306000000,
+       "fmt": "496.31B",
+       "longFmt": "496,306,000,000"
+      },
+      "numberOfAnalysts": {
+       "raw": 40,
+       "fmt": "40",
+       "longFmt": "40"
+      },
+      "yearAgoRevenue": {
+       "raw": 416161000000,
+       "fmt": "416.16B",
+       "longFmt": "416,161,000,000"
+      },
+      "growth": {
+       "raw": 0.1491,
+       "fmt": "14.91%"
+      },
+      "revenueCurrency": "USD"
+     },
+     "epsTrend": {
+      "current": {
+       "raw": 8.82006,
+       "fmt": "8.82"
+      },
+      "7daysAgo": {
+       "raw": 8.82022,
+       "fmt": "8.82"
+      },
+      "30daysAgo": {
+       "raw": 8.81509,
+       "fmt": "8.82"
+      },
+      "60daysAgo": {
+       "raw": 8.80708,
+       "fmt": "8.81"
+      },
+      "90daysAgo": {
+       "raw": 8.76613,
+       "fmt": "8.77"
+      },
+      "epsTrendCurrency": "USD"
+     },
+     "epsRevisions": {
+      "upLast7days": {
+       "raw": 1,
+       "fmt": "1",
+       "longFmt": "1"
+      },
+      "upLast30days": {
+       "raw": 2,
+       "fmt": "2",
+       "longFmt": "2"
+      },
+      "downLast30days": {
+       "raw": 1,
+       "fmt": "1",
+       "longFmt": "1"
+      },
+      "downLast7Days": {
+       "raw": 0,
+       "fmt": null,
+       "longFmt": "0"
+      },
+      "downLast90days": {},
+      "epsRevisionsCurrency": "USD"
+     }
+    },
+    {
+     "maxAge": 1,
+     "period": "+1y",
+     "endDate": "2027-09-30",
+     "growth": {
+      "raw": 0.086,
+      "fmt": "8.60%"
+     },
+     "earningsEstimate": {
+      "avg": {
+       "raw": 9.58335,
+       "fmt": "9.58"
+      },
+      "low": {
+       "raw": 8.69,
+       "fmt": "8.69"
+      },
+      "high": {
+       "raw": 10.67,
+       "fmt": "10.67"
+      },
+      "yearAgoEps": {
+       "raw": 8.82006,
+       "fmt": "8.82"
+      },
+      "numberOfAnalysts": {
+       "raw": 40,
+       "fmt": "40",
+       "longFmt": "40"
+      },
+      "growth": {
+       "raw": 0.0865,
+       "fmt": "8.65%"
+      },
+      "earningsCurrency": "USD"
+     },
+     "revenueEstimate": {
+      "avg": {
+       "raw": 528641081619,
+       "fmt": "528.64B",
+       "longFmt": "528,641,081,619"
+      },
+      "low": {
+       "raw": 497900000000,
+       "fmt": "497.9B",
+       "longFmt": "497,900,000,000"
+      },
+      "high": {
+       "raw": 594863000000,
+       "fmt": "594.86B",
+       "longFmt": "594,863,000,000"
+      },
+      "numberOfAnalysts": {
+       "raw": 40,
+       "fmt": "40",
+       "longFmt": "40"
+      },
+      "yearAgoRevenue": {
+       "raw": 478214889500,
+       "fmt": "478.21B",
+       "longFmt": "478,214,889,500"
+      },
+      "growth": {
+       "raw": 0.105399996,
+       "fmt": "10.54%"
+      },
+      "revenueCurrency": "USD"
+     },
+     "epsTrend": {
+      "current": {
+       "raw": 9.58335,
+       "fmt": "9.58"
+      },
+      "7daysAgo": {
+       "raw": 9.57579,
+       "fmt": "9.58"
+      },
+      "30daysAgo": {
+       "raw": 9.57254,
+       "fmt": "9.57"
+      },
+      "60daysAgo": {
+       "raw": 9.53948,
+       "fmt": "9.54"
+      },
+      "90daysAgo": {
+       "raw": 9.69285,
+       "fmt": "9.69"
+      },
+      "epsTrendCurrency": "USD"
+     },
+     "epsRevisions": {
+      "upLast7days": {
+       "raw": 0,
+       "fmt": null,
+       "longFmt": "0"
+      },
+      "upLast30days": {
+       "raw": 4,
+       "fmt": "4",
+       "longFmt": "4"
+      },
+      "downLast30days": {
+       "raw": 3,
+       "fmt": "3",
+       "longFmt": "3"
+      },
+      "downLast7Days": {
+       "raw": 2,
+       "fmt": "2",
+       "longFmt": "2"
+      },
+      "downLast90days": {},
+      "epsRevisionsCurrency": "USD"
+     }
+    }
+   ],
+   "defaultMethodology": "gaap",
+   "maxAge": 1
+  },
+  "financialData": {
+   "maxAge": 86400,
+   "currentPrice": {
+    "raw": 342.96,
+    "fmt": "342.96"
+   },
+   "targetHighPrice": {
+    "raw": 405.0,
+    "fmt": "405.00"
+   },
+   "targetLowPrice": {
+    "raw": 215.0,
+    "fmt": "215.00"
+   },
+   "targetMeanPrice": {
+    "raw": 329.3759,
+    "fmt": "329.38"
+   },
+   "targetMedianPrice": {
+    "raw": 340.0,
+    "fmt": "340.00"
+   },
+   "recommendationMean": {
+    "raw": 2.20455,
+    "fmt": "2.20"
+   },
+   "recommendationKey": "buy",
+   "numberOfAnalystOpinions": {
+    "raw": 39,
+    "fmt": "39",
+    "longFmt": "39"
+   },
+   "totalCash": {
+    "raw": 62399000576,
+    "fmt": "62.4B",
+    "longFmt": "62,399,000,576"
+   },
+   "totalCashPerShare": {
+    "raw": 4.276,
+    "fmt": "4.28"
+   },
+   "ebitda": {
+    "raw": 167959003136,
+    "fmt": "167.96B",
+    "longFmt": "167,959,003,136"
+   },
+   "totalDebt": {
+    "raw": 84343996416,
+    "fmt": "84.34B",
+    "longFmt": "84,343,996,416"
+   },
+   "quickRatio": {
+    "raw": 0.812,
+    "fmt": "0.81"
+   },
+   "currentRatio": {
+    "raw": 1.003,
+    "fmt": "1.00"
+   },
+   "totalRevenue": {
+    "raw": 466822987776,
+    "fmt": "466.82B",
+    "longFmt": "466,822,987,776"
+   },
+   "debtToEquity": {
+    "raw": 78.445,
+    "fmt": "78.44%"
+   },
+   "revenuePerShare": {
+    "raw": 31.707,
+    "fmt": "31.71"
+   },
+   "returnOnAssets": {
+    "raw": 0.27082002,
+    "fmt": "27.08%"
+   },
+   "returnOnEquity": {
+    "raw": 1.4875101,
+    "fmt": "148.75%"
+   },
+   "grossProfits": {
+    "raw": 227123003392,
+    "fmt": "227.12B",
+    "longFmt": "227,123,003,392"
+   },
+   "freeCashflow": {
+    "raw": 107721875456,
+    "fmt": "107.72B",
+    "longFmt": "107,721,875,456"
+   },
+   "operatingCashflow": {
+    "raw": 146723995648,
+    "fmt": "146.72B",
+    "longFmt": "146,723,995,648"
+   },
+   "earningsGrowth": {
+    "raw": 0.287,
+    "fmt": "28.70%"
+   },
+   "revenueGrowth": {
+    "raw": 0.164,
+    "fmt": "16.40%"
+   },
+   "grossMargins": {
+    "raw": 0.48653,
+    "fmt": "48.65%"
+   },
+   "ebitdaMargins": {
+    "raw": 0.35979,
+    "fmt": "35.98%"
+   },
+   "operatingMargins": {
+    "raw": 0.32623002,
+    "fmt": "32.62%"
+   },
+   "profitMargins": {
+    "raw": 0.27618998,
+    "fmt": "27.62%"
+   },
+   "financialCurrency": "USD"
+  },
+  "secFilings": {
+   "filings": [
+    {
+     "date": "2026-09-01",
+     "epochDate": 1788220800,
+     "type": "8-K/A",
+     "title": "Corporate Changes & Voting Matters",
+     "edgarUrl": "https://finance.yahoo.com/sec-filing/AAPL/0001140361-26-035325_320193",
+     "exhibits": [
+      {
+       "type": "8-K/A",
+       "url": "https://cdn.yahoofinance.com/prod/sec-filings/0000320193/000114036126035325/ef20081427_8ka.htm"
+      }
+     ],
+     "maxAge": 1
+    },
+    {
+     "date": "2026-07-31",
+     "epochDate": 1785456000,
+     "type": "10-Q",
+     "title": "Periodic Financial Reports",
+     "edgarUrl": "https://finance.yahoo.com/sec-filing/AAPL/0000320193-26-000020_320193",
+     "exhibits": [
+      {
+       "type": "EX-31.1",
+       "url": "https://cdn.yahoofinance.com/prod/sec-filings/0000320193/000032019326000020/a10-qexhibit31106272026.htm"
+      },
+      {
+       "type": "EX-31.2",
+       "url": "https://cdn.yahoofinance.com/prod/sec-filings/0000320193/000032019326000020/a10-qexhibit31206272026.htm"
+      },
+      {
+       "type": "EX-32.1",
+       "url": "https://cdn.yahoofinance.com/prod/sec-filings/0000320193/000032019326000020/a10-qexhibit32106272026.htm"
+      },
+      {
+       "type": "10-Q",
+       "url": "https://cdn.yahoofinance.com/prod/sec-filings/0000320193/000032019326000020/aapl-20260627.htm"
+      }
+     ],
+     "maxAge": 1
+    },
+    {
+     "date": "2026-07-30",
+     "epochDate": 1785369600,
+     "type": "8-K",
+     "title": "Corporate Changes & Voting Matters",
+     "edgarUrl": "https://finance.yahoo.com/sec-filing/AAPL/0000320193-26-000018_320193",
+     "exhibits": [
+      {
+       "type": "8-K",
+       "url": "https://cdn.yahoofinance.com/prod/sec-filings/0000320193/000032019326000018/aapl-20260730.htm"
+      },
+      {
+       "type": "EX-99.1",
+       "url": "https://cdn.yahoofinance.com/prod/sec-filings/0000320193/000032019326000018/a8-kex991q3202606272026.htm"
+      }
+     ],
+     "maxAge": 1
+    },
+    {
+     "date": "2026-05-28",
+     "epochDate": 1779926400,
+     "type": "SD",
+     "title": "Specialized Disclosure Report filed pursuant to Section 1502 of the Dodd-Frank Wall Street Reform and Consumer Protection Act relating to the use of conflict minerals (Rule 13p-1)",
+     "edgarUrl": "https://finance.yahoo.com/sec-filing/AAPL/0001140361-26-023149_320193",
+     "exhibits": [
+      {
+       "type": "SD",
+       "url": "https://cdn.yahoofinance.com/prod/sec-filings/0000320193/000114036126023149/ef20073373_sd.htm"
+      }
+     ],
+     "maxAge": 1
+    },
+    {
+     "_more": 76
+    }
+   ],
+   "maxAge": 86400
+  }
+ },
+ "yahoo_qs_TSLA": {
+  "assetProfile": {
+   "address1": "1 Tesla Road",
+   "city": "Austin",
+   "state": "TX",
+   "zip": "78725",
+   "country": "United States",
+   "phone": "512 516 8177",
+   "website": "https://www.tesla.com",
+   "industry": "Auto Manufacturers",
+   "industryKey": "auto-manufacturers",
+   "industryDisp": "Auto Manufacturers",
+   "sector": "Consumer Cyclical",
+   "sectorKey": "consumer-cyclical",
+   "sectorDisp": "Consumer Cyclical",
+   "longBusinessSummary": "Tesla, Inc. designs, develops, manufactures, leases, and sells electric vehicles, and energy generation and storage systems in the United States, China, and internationally. The company operates in two segments, Automotive; and Energy Generation and Storage. The company offers electric vehicles, as well as sells automotive regulatory credits; and non-warranty maintenance services and collision, automotive insurance services, as well as part sales and retail merchandise sale. It also provides sedans and sport utility vehicles through direct and used vehicle sales, a network of Tesla Superchargers, and in-app upgrades; purchase financing and leasing services; services for electric vehicles through its company-owned service locations and Tesla mobile service technicians; and vehicle limited warranties and extended service plans. In addition, the company engages in the design, manufacture, installation, sale, and leasing of solar energy generation and energy storage products, and related services to residential, commercial, and industrial customers and utilities through its website, stores, and galleries, as well as through a network of channel partners. Further, it provides services and repairs to its energy product customers, including under warranty and extended service plans; and various financing options to its residential customers; lithium-ion battery energy storage products, such as Powerwall and Megapack; energy generation products, including solar panels and solar roof; self-driving development and artificial intelligence software, vehicle control and infotainment software, and battery and powertrain. The company was formerly known as Tesla Motors, Inc. and changed its name to Tesla, Inc. in February 2017. Tesla, Inc. was incorporated in 2003 and is headquartered in Austin, Texas.",
+   "fullTimeEmployees": 134785,
+   "companyOfficers": [
+    {
+     "maxAge": 1,
+     "name": "Mr. Elon R. Musk",
+     "age": 54,
+     "title": "Co-Founder, Technoking of Tesla, CEO & Director",
+     "yearBorn": 1971,
+     "fiscalYear": 2025,
+     "exercisedValue": {
+      "raw": 0,
+      "fmt": null,
+      "longFmt": "0"
+     },
+     "unexercisedValue": {
+      "raw": 129602732032,
+      "fmt": "129.6B",
+      "longFmt": "129,602,732,032"
+     }
+    },
+    {
+     "maxAge": 1,
+     "name": "Mr. Vaibhav  Taneja",
+     "age": 47,
+     "title": "Chief Financial Officer",
+     "yearBorn": 1978,
+     "fiscalYear": 2025,
+     "totalPay": {
+      "raw": 403000,
+      "fmt": "403k",
+      "longFmt": "403,000"
+     },
+     "exercisedValue": {
+      "raw": 15033838,
+      "fmt": "15.03M",
+      "longFmt": "15,033,838"
+     },
+     "unexercisedValue": {
+      "raw": 417696224,
+      "fmt": "417.7M",
+      "longFmt": "417,696,224"
+     }
+    },
+    {
+     "maxAge": 1,
+     "name": "Mr. Xiaotong  Zhu",
+     "age": 45,
+     "title": "Senior Vice President of APAC & Global Vehicle Manufacturing",
+     "yearBorn": 1980,
+     "fiscalYear": 2025,
+     "totalPay": {
+      "raw": 376322,
+      "fmt": "376.32k",
+      "longFmt": "376,322"
+     },
+     "exercisedValue": {
+      "raw": 4548562,
+      "fmt": "4.55M",
+      "longFmt": "4,548,562"
+     },
+     "unexercisedValue": {
+      "raw": 808327104,
+      "fmt": "808.33M",
+      "longFmt": "808,327,104"
+     }
+    },
+    {
+     "maxAge": 1,
+     "name": "Travis  Axelrod",
+     "title": "Head of Investor Relations",
+     "fiscalYear": 2025,
+     "exercisedValue": {
+      "raw": 0,
+      "fmt": null,
+      "longFmt": "0"
+     },
+     "unexercisedValue": {
+      "raw": 0,
+      "fmt": null,
+      "longFmt": "0"
+     }
+    },
+    {
+     "_more": 6
+    }
+   ],
+   "auditRisk": 4,
+   "boardRisk": 10,
+   "compensationRisk": 10,
+   "shareHolderRightsRisk": 9,
+   "overallRisk": 10,
+   "governanceEpochDate": 1790812800,
+   "compensationAsOfEpochDate": 1767139200,
+   "executiveTeam": [],
+   "maxAge": 86400
+  },
+  "recommendationTrend": {
+   "trend": [
+    {
+     "period": "0m",
+     "strongBuy": 4,
+     "buy": 15,
+     "hold": 21,
+     "sell": 2,
+     "strongSell": 2
+    },
+    {
+     "period": "-1m",
+     "strongBuy": 4,
+     "buy": 15,
+     "hold": 21,
+     "sell": 2,
+     "strongSell": 2
+    },
+    {
+     "period": "-2m",
+     "strongBuy": 6,
+     "buy": 16,
+     "hold": 20,
+     "sell": 3,
+     "strongSell": 2
+    },
+    {
+     "period": "-3m",
+     "strongBuy": 6,
+     "buy": 17,
+     "hold": 19,
+     "sell": 4,
+     "strongSell": 2
+    }
+   ],
+   "maxAge": 86400
+  },
+  "institutionOwnership": {
+   "maxAge": 1,
+   "ownershipList": [
+    {
+     "maxAge": 1,
+     "reportDate": {
+      "raw": 1782777600,
+      "fmt": "2026-06-30"
+     },
+     "organization": "Blackrock Inc.",
+     "pctHeld": {
+      "raw": 0.0542,
+      "fmt": "5.42%"
+     },
+     "position": {
+      "raw": 214123129,
+      "fmt": "214.12M",
+      "longFmt": "214,123,129"
+     },
+     "value": {
+      "raw": 78617448827,
+      "fmt": "78.62B",
+      "longFmt": "78,617,448,827"
+     },
+     "pctChange": {
+      "raw": 0.029000001,
+      "fmt": "2.90%"
+     }
+    },
+    {
+     "maxAge": 1,
+     "reportDate": {
+      "raw": 1782777600,
+      "fmt": "2026-06-30"
+     },
+     "organization": "Vanguard Capital Management LLC",
+     "pctHeld": {
+      "raw": 0.0466,
+      "fmt": "4.66%"
+     },
+     "position": {
+      "raw": 184023551,
+      "fmt": "184.02M",
+      "longFmt": "184,023,551"
+     },
+     "value": {
+      "raw": 67566087659,
+      "fmt": "67.57B",
+      "longFmt": "67,566,087,659"
+     },
+     "pctChange": {
+      "raw": 0.0064,
+      "fmt": "0.64%"
+     }
+    },
+    {
+     "maxAge": 1,
+     "reportDate": {
+      "raw": 1782777600,
+      "fmt": "2026-06-30"
+     },
+     "organization": "State Street Corporation",
+     "pctHeld": {
+      "raw": 0.0297,
+      "fmt": "2.97%"
+     },
+     "position": {
+      "raw": 117456756,
+      "fmt": "117.46M",
+      "longFmt": "117,456,756"
+     },
+     "value": {
+      "raw": 43125422963,
+      "fmt": "43.13B",
+      "longFmt": "43,125,422,963"
+     },
+     "pctChange": {
+      "raw": 0.0241,
+      "fmt": "2.41%"
+     }
+    },
+    {
+     "maxAge": 1,
+     "reportDate": {
+      "raw": 1782777600,
+      "fmt": "2026-06-30"
+     },
+     "organization": "Geode Capital Management, LLC",
+     "pctHeld": {
+      "raw": 0.0174,
+      "fmt": "1.74%"
+     },
+     "position": {
+      "raw": 68914720,
+      "fmt": "68.91M",
+      "longFmt": "68,914,720"
+     },
+     "value": {
+      "raw": 25302728847,
+      "fmt": "25.3B",
+      "longFmt": "25,302,728,847"
+     },
+     "pctChange": {
+      "raw": 0.0134000005,
+      "fmt": "1.34%"
+     }
+    },
+    {
+     "_more": 6
+    }
+   ]
+  },
+  "majorHoldersBreakdown": {
+   "maxAge": 1,
+   "insidersPercentHeld": {
+    "raw": 0.17820999,
+    "fmt": "17.82%"
+   },
+   "institutionsPercentHeld": {
+    "raw": 0.43689,
+    "fmt": "43.69%"
+   },
+   "institutionsFloatPercentHeld": {
+    "raw": 0.53163,
+    "fmt": "53.16%"
+   },
+   "institutionsCount": {
+    "raw": 5294,
+    "fmt": "5.29k",
+    "longFmt": "5,294"
+   }
+  },
+  "earningsHistory": {
+   "history": [
+    {
+     "maxAge": 1,
+     "epsActual": {
+      "raw": 0.5,
+      "fmt": "0.5"
+     },
+     "epsEstimate": {
+      "raw": 0.55885,
+      "fmt": "0.56"
+     },
+     "epsDifference": {
+      "raw": -0.06,
+      "fmt": "-0.06"
+     },
+     "surprisePercent": {
+      "raw": -0.105299994,
+      "fmt": "-10.53%"
+     },
+     "quarter": {
+      "raw": 1759190400,
+      "fmt": "2025-09-30"
+     },
+     "currency": "USD",
+     "period": "-4q"
+    },
+    {
+     "maxAge": 1,
+     "epsActual": {
+      "raw": 0.5,
+      "fmt": "0.5"
+     },
+     "epsEstimate": {
+      "raw": 0.45061,
+      "fmt": "0.45"
+     },
+     "epsDifference": {
+      "raw": 0.05,
+      "fmt": "0.05"
+     },
+     "surprisePercent": {
+      "raw": 0.1096,
+      "fmt": "10.96%"
+     },
+     "quarter": {
+      "raw": 1767139200,
+      "fmt": "2025-12-31"
+     },
+     "currency": "USD",
+     "period": "-3q"
+    },
+    {
+     "maxAge": 1,
+     "epsActual": {
+      "raw": 0.41,
+      "fmt": "0.41"
+     },
+     "epsEstimate": {
+      "raw": 0.34999,
+      "fmt": "0.35"
+     },
+     "epsDifference": {
+      "raw": 0.06,
+      "fmt": "0.06"
+     },
+     "surprisePercent": {
+      "raw": 0.1715,
+      "fmt": "17.15%"
+     },
+     "quarter": {
+      "raw": 1774915200,
+      "fmt": "2026-03-31"
+     },
+     "currency": "USD",
+     "period": "-2q"
+    },
+    {
+     "maxAge": 1,
+     "epsActual": {
+      "raw": 0.33,
+      "fmt": "0.33"
+     },
+     "epsEstimate": {
+      "raw": 0.54236,
+      "fmt": "0.54"
+     },
+     "epsDifference": {
+      "raw": -0.21,
+      "fmt": "-0.21"
+     },
+     "surprisePercent": {
+      "raw": -0.39150003,
+      "fmt": "-39.15%"
+     },
+     "quarter": {
+      "raw": 1782777600,
+      "fmt": "2026-06-30"
+     },
+     "currency": "USD",
+     "period": "-1q"
+    }
+   ],
+   "defaultMethodology": "nongaap",
+   "maxAge": 86400
+  },
+  "indexTrend": {
+   "maxAge": 1,
+   "symbol": "SP5",
+   "peRatio": {},
+   "pegRatio": {},
+   "estimates": [
+    {
+     "period": "0q",
+     "growth": {
+      "raw": 0.24280001,
+      "fmt": "0.24"
+     }
+    },
+    {
+     "period": "+1q",
+     "growth": {
+      "raw": 0.264,
+      "fmt": "0.26"
+     }
+    },
+    {
+     "period": "0y",
+     "growth": {
+      "raw": 0.3232,
+      "fmt": "0.32"
+     }
+    },
+    {
+     "period": "+1y",
+     "growth": {
+      "raw": 0.16510001,
+      "fmt": "0.17"
+     }
+    },
+    {
+     "_more": 1
+    }
+   ]
+  },
+  "defaultKeyStatistics": {
+   "maxAge": 1,
+   "priceHint": {
+    "raw": 2,
+    "fmt": "2",
+    "longFmt": "2"
+   },
+   "enterpriseValue": {
+    "raw": 1423332868096,
+    "fmt": "1.42T",
+    "longFmt": "1,423,332,868,096"
+   },
+   "forwardPE": {
+    "raw": 168.43207,
+    "fmt": "168.43"
+   },
+   "profitMargins": {
+    "raw": 0.03671,
+    "fmt": "3.67%"
+   },
+   "floatShares": {
+    "raw": 2819147434,
+    "fmt": "2.82B",
+    "longFmt": "2,819,147,434"
+   },
+   "sharesOutstanding": {
+    "raw": 3949547394,
+    "fmt": "3.95B",
+    "longFmt": "3,949,547,394"
+   },
+   "sharesShort": {
+    "raw": 70931312,
+    "fmt": "70.93M",
+    "longFmt": "70,931,312"
+   },
+   "sharesShortPriorMonth": {
+    "raw": 74230933,
+    "fmt": "74.23M",
+    "longFmt": "74,230,933"
+   },
+   "sharesShortPreviousMonthDate": {
+    "raw": 1788134400,
+    "fmt": "2026-08-31"
+   },
+   "dateShortInterest": {
+    "raw": 1790726400,
+    "fmt": "2026-09-30"
+   },
+   "sharesPercentSharesOut": {
+    "raw": 0.018,
+    "fmt": "1.80%"
+   },
+   "heldPercentInsiders": {
+    "raw": 0.17820999,
+    "fmt": "17.82%"
+   },
+   "heldPercentInstitutions": {
+    "raw": 0.43689,
+    "fmt": "43.69%"
+   },
+   "shortRatio": {
+    "raw": 1.79,
+    "fmt": "1.79"
+   },
+   "shortPercentOfFloat": {
+    "raw": 0.0201,
+    "fmt": "2.01%"
+   },
+   "beta": {
+    "raw": 1.916,
+    "fmt": "1.92"
+   },
+   "impliedSharesOutstanding": {
+    "raw": 3949547394,
+    "fmt": "3.95B",
+    "longFmt": "3,949,547,394"
+   },
+   "morningStarOverallRating": {},
+   "morningStarRiskRating": {},
+   "category": null,
+   "bookValue": {
+    "raw": 21.995,
+    "fmt": "22.00"
+   },
+   "priceToBook": {
+    "raw": 16.692884,
+    "fmt": "16.69"
+   },
+   "annualReportExpenseRatio": {},
+   "ytdReturn": {},
+   "qtdReturn": {},
+   "beta3Year": {},
+   "totalAssets": {},
+   "yield": {},
+   "fundFamily": null,
+   "fundInceptionDate": {},
+   "legalType": null,
+   "threeYearAverageReturn": {},
+   "fiveYearAverageReturn": {},
+   "priceToSalesTrailing12Months": {},
+   "lastFiscalYearEnd": {
+    "raw": 1767139200,
+    "fmt": "2025-12-31"
+   },
+   "nextFiscalYearEnd": {
+    "raw": 1798675200,
+    "fmt": "2026-12-31"
+   },
+   "mostRecentQuarter": {
+    "raw": 1782777600,
+    "fmt": "2026-06-30"
+   },
+   "earningsQuarterlyGrowth": {
+    "raw": -0.049,
+    "fmt": "-4.90%"
+   },
+   "revenueQuarterlyGrowth": {},
+   "netIncomeToCommon": {
+    "raw": 3806000128,
+    "fmt": "3.81B",
+    "longFmt": "3,806,000,128"
+   },
+   "trailingEps": {
+    "raw": 1.06,
+    "fmt": "1.06"
+   },
+   "forwardEps": {
+    "raw": 2.16841,
+    "fmt": "2.17"
+   },
+   "pegRatio": {
+    "raw": 3.82,
+    "fmt": "3.82"
+   },
+   "lastSplitFactor": "3:1",
+   "lastSplitDate": {
+    "raw": 1661385600,
+    "fmt": "2022-08-25"
+   },
+   "enterpriseToRevenue": {
+    "raw": 13.736,
+    "fmt": "13.74"
+   },
+   "enterpriseToEbitda": {
+    "raw": 132.341,
+    "fmt": "132.34"
+   },
+   "52WeekChange": {
+    "raw": -0.14365017,
+    "fmt": "-14.37%"
+   },
+   "SandP52WeekChange": {
+    "raw": 0.1570785,
+    "fmt": "15.71%"
+   },
+   "lastDividendValue": {},
+   "lastDividendDate": {},
+   "lastCapGain": {},
+   "annualHoldingsTurnover": {},
+   "latestFundingDate": {},
+   "latestAmountRaised": {},
+   "latestImpliedValuation": {},
+   "latestShareClass": null,
+   "leadInvestor": null,
+   "fundingToDate": {},
+   "totalFundingRounds": {}
+  },
+  "summaryProfile": {
+   "address1": "1 Tesla Road",
+   "city": "Austin",
+   "state": "TX",
+   "zip": "78725",
+   "country": "United States",
+   "phone": "512 516 8177",
+   "website": "https://www.tesla.com",
+   "industry": "Auto Manufacturers",
+   "industryKey": "auto-manufacturers",
+   "industryDisp": "Auto Manufacturers",
+   "sector": "Consumer Cyclical",
+   "sectorKey": "consumer-cyclical",
+   "sectorDisp": "Consumer Cyclical",
+   "longBusinessSummary": "Tesla, Inc. designs, develops, manufactures, leases, and sells electric vehicles, and energy generation and storage systems in the United States, China, and internationally. The company operates in two segments, Automotive; and Energy Generation and Storage. The company offers electric vehicles, as well as sells automotive regulatory credits; and non-warranty maintenance services and collision, automotive insurance services, as well as part sales and retail merchandise sale. It also provides sedans and sport utility vehicles through direct and used vehicle sales, a network of Tesla Superchargers, and in-app upgrades; purchase financing and leasing services; services for electric vehicles through its company-owned service locations and Tesla mobile service technicians; and vehicle limited warranties and extended service plans. In addition, the company engages in the design, manufacture, installation, sale, and leasing of solar energy generation and energy storage products, and related services to residential, commercial, and industrial customers and utilities through its website, stores, and galleries, as well as through a network of channel partners. Further, it provides services and repairs to its energy product customers, including under warranty and extended service plans; and various financing options to its residential customers; lithium-ion battery energy storage products, such as Powerwall and Megapack; energy generation products, including solar panels and solar roof; self-driving development and artificial intelligence software, vehicle control and infotainment software, and battery and powertrain. The company was formerly known as Tesla Motors, Inc. and changed its name to Tesla, Inc. in February 2017. Tesla, Inc. was incorporated in 2003 and is headquartered in Austin, Texas.",
+   "fullTimeEmployees": 134785,
+   "companyOfficers": [],
+   "executiveTeam": [],
+   "maxAge": 86400
+  },
+  "industryTrend": {
+   "maxAge": 1,
+   "symbol": null,
+   "peRatio": {},
+   "pegRatio": {},
+   "estimates": []
+  },
+  "netSharePurchaseActivity": {
+   "maxAge": 1,
+   "period": "6m",
+   "buyInfoCount": {
+    "raw": 8,
+    "fmt": "8",
+    "longFmt": "8"
+   },
+   "buyInfoShares": {
+    "raw": 304025455,
+    "fmt": "304.03M",
+    "longFmt": "304,025,455"
+   },
+   "buyPercentInsiderShares": {
+    "raw": 0.76,
+    "fmt": "76.00%"
+   },
+   "sellInfoCount": {
+    "raw": 8,
+    "fmt": "8",
+    "longFmt": "8"
+   },
+   "sellInfoShares": {
+    "raw": 44270,
+    "fmt": "44.27k",
+    "longFmt": "44,270"
+   },
+   "sellPercentInsiderShares": {
+    "raw": 0.0,
+    "fmt": "0.00%"
+   },
+   "netInfoCount": {
+    "raw": 16,
+    "fmt": "16",
+    "longFmt": "16"
+   },
+   "netInfoShares": {
+    "raw": 303981185,
+    "fmt": "303.98M",
+    "longFmt": "303,981,185"
+   },
+   "netPercentInsiderShares": {
+    "raw": 0.76,
+    "fmt": "76.00%"
+   },
+   "netInstSharesBuying": {
+    "raw": -220073057,
+    "fmt": "-220.07M",
+    "longFmt": "-220,073,057"
+   },
+   "netInstBuyingPercent": {
+    "raw": -0.12753999,
+    "fmt": "-12.75%"
+   },
+   "totalInsiderShares": {
+    "raw": 703848832,
+    "fmt": "703.85M",
+    "longFmt": "703,848,832"
+   }
+  },
+  "fundOwnership": {
+   "maxAge": 1,
+   "ownershipList": [
+    {
+     "maxAge": 1,
+     "reportDate": {
+      "raw": 1782777600,
+      "fmt": "2026-06-30"
+     },
+     "organization": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
+     "pctHeld": {
+      "raw": 0.0226,
+      "fmt": "2.26%"
+     },
+     "position": {
+      "raw": 89423063,
+      "fmt": "89.42M",
+      "longFmt": "89,423,063"
+     },
+     "value": {
+      "raw": 32832572138,
+      "fmt": "32.83B",
+      "longFmt": "32,832,572,138"
+     },
+     "pctChange": {
+      "raw": 0.0005,
+      "fmt": "0.05%"
+     }
+    },
+    {
+     "maxAge": 1,
+     "reportDate": {
+      "raw": 1782777600,
+      "fmt": "2026-06-30"
+     },
+     "organization": "VANGUARD INDEX FUNDS-Vanguard 500 Index Fund",
+     "pctHeld": {
+      "raw": 0.0185,
+      "fmt": "1.85%"
+     },
+     "position": {
+      "raw": 72956783,
+      "fmt": "72.96M",
+      "longFmt": "72,956,783"
+     },
+     "value": {
+      "raw": 26786812713,
+      "fmt": "26.79B",
+      "longFmt": "26,786,812,713"
+     },
+     "pctChange": {
+      "raw": 0.0208,
+      "fmt": "2.08%"
+     }
+    },
+    {
+     "maxAge": 1,
+     "reportDate": {
+      "raw": 1788134400,
+      "fmt": "2026-08-31"
+     },
+     "organization": "Invesco QQQ Trust, Series 1",
+     "pctHeld": {
+      "raw": 0.0099,
+      "fmt": "0.99%"
+     },
+     "position": {
+      "raw": 38925954,
+      "fmt": "38.93M",
+      "longFmt": "38,925,954"
+     },
+     "value": {
+      "raw": 14292053413,
+      "fmt": "14.29B",
+      "longFmt": "14,292,053,413"
+     },
+     "pctChange": {
+      "raw": 0.0388,
+      "fmt": "3.88%"
+     }
+    },
+    {
+     "maxAge": 1,
+     "reportDate": {
+      "raw": 1788134400,
+      "fmt": "2026-08-31"
+     },
+     "organization": "iShares Trust-iShares Core S&P 500 ETF",
+     "pctHeld": {
+      "raw": 0.0095,
+      "fmt": "0.95%"
+     },
+     "position": {
+      "raw": 37489646,
+      "fmt": "37.49M",
+      "longFmt": "37,489,646"
+     },
+     "value": {
+      "raw": 13764698562,
+      "fmt": "13.76B",
+      "longFmt": "13,764,698,562"
+     },
+     "pctChange": {
+      "raw": -0.012999999,
+      "fmt": "-1.30%"
+     }
+    },
+    {
+     "_more": 6
+    }
+   ]
+  },
+  "summaryDetail": {
+   "maxAge": 1,
+   "priceHint": {
+    "raw": 2,
+    "fmt": "2",
+    "longFmt": "2"
+   },
+   "previousClose": {
+    "raw": 375.23,
+    "fmt": "375.23"
+   },
+   "open": {
+    "raw": 371.15,
+    "fmt": "371.15"
+   },
+   "dayLow": {
+    "raw": 363.82,
+    "fmt": "363.82"
+   },
+   "dayHigh": {
+    "raw": 371.39,
+    "fmt": "371.39"
+   },
+   "regularMarketPreviousClose": {
+    "raw": 375.23,
+    "fmt": "375.23"
+   },
+   "regularMarketOpen": {
+    "raw": 371.15,
+    "fmt": "371.15"
+   },
+   "regularMarketDayLow": {
+    "raw": 363.82,
+    "fmt": "363.82"
+   },
+   "regularMarketDayHigh": {
+    "raw": 371.39,
+    "fmt": "371.39"
+   },
+   "dividendRate": {},
+   "dividendYield": {
+    "raw": 0.0,
+    "fmt": "0.00%"
+   },
+   "exDividendDate": {},
+   "payoutRatio": {
+    "raw": 0.0,
+    "fmt": "0.00%"
+   },
+   "fiveYearAvgDividendYield": {},
+   "beta": {
+    "raw": 1.916,
+    "fmt": "1.92"
+   },
+   "trailingPE": {
+    "raw": 346.37738,
+    "fmt": "346.38"
+   },
+   "forwardPE": {
+    "raw": 169.32222,
+    "fmt": "169.32"
+   },
+   "volume": {
+    "raw": 30868569,
+    "fmt": "30.87M",
+    "longFmt": "30,868,569"
+   },
+   "regularMarketVolume": {
+    "raw": 30868569,
+    "fmt": "30.87M",
+    "longFmt": "30,868,569"
+   },
+   "averageVolume": {
+    "raw": 37327718,
+    "fmt": "37.33M",
+    "longFmt": "37,327,718"
+   },
+   "averageVolume10days": {
+    "raw": 31876170,
+    "fmt": "31.88M",
+    "longFmt": "31,876,170"
+   },
+   "averageDailyVolume10Day": {
+    "raw": 31876170,
+    "fmt": "31.88M",
+    "longFmt": "31,876,170"
+   },
+   "bid": {
+    "raw": 357.0,
+    "fmt": "357.00"
+   },
+   "ask": {
+    "raw": 368.3,
+    "fmt": "368.30"
+   },
+   "bidSize": {
+    "raw": 100,
+    "fmt": "100",
+    "longFmt": "100"
+   },
+   "askSize": {
+    "raw": 100,
+    "fmt": "100",
+    "longFmt": "100"
+   },
+   "marketCap": {
+    "raw": 1450115858432,
+    "fmt": "1.45T",
+    "longFmt": "1,450,115,858,432"
+   },
+   "nonDilutedMarketCap": {
+    "raw": 1501301955407,
+    "fmt": "1.5T",
+    "longFmt": "1,501,301,955,407"
+   },
+   "yield": {},
+   "ytdReturn": {},
+   "qtdReturn": {},
+   "totalAssets": {},
+   "expireDate": {},
+   "strikePrice": {},
+   "openInterest": {},
+   "fiftyTwoWeekLow": {
+    "raw": 297.38,
+    "fmt": "297.38"
+   },
+   "fiftyTwoWeekHigh": {
+    "raw": 498.83,
+    "fmt": "498.83"
+   },
+   "allTimeHigh": {
+    "raw": 498.83,
+    "fmt": "498.83"
+   },
+   "allTimeLow": {
+    "raw": 0.998667,
+    "fmt": "1.00"
+   },
+   "fulldayPrice": {
+    "raw": 362.39,
+    "fmt": "362.39"
+   },
+   "fulldayChange": {
+    "raw": -4.769989,
+    "fmt": "-4.77"
+   },
+   "fulldayChangePercent": {
+    "raw": -0.012991581,
+    "fmt": "-1.30%"
+   },
+   "priceToSalesTrailing12Months": {
+    "raw": 13.99469,
+    "fmt": "13.99"
+   },
+   "fiftyDayAverage": {
+    "raw": 357.9406,
+    "fmt": "357.94"
+   },
+   "twoHundredDayAverage": {
+    "raw": 388.9759,
+    "fmt": "388.98"
+   },
+   "trailingAnnualDividendRate": {
+    "raw": 0.0,
+    "fmt": "0.00"
+   },
+   "trailingAnnualDividendYield": {
+    "raw": 0.0,
+    "fmt": "0.00%"
+   },
+   "navPrice": {},
+   "currency": "USD",
+   "fromCurrency": null,
+   "toCurrency": null,
+   "lastMarket": null,
+   "coinMarketCapLink": null,
+   "volume24Hr": {},
+   "volumeAllCurrencies": {},
+   "circulatingSupply": {},
+   "algorithm": null,
+   "maxSupply": {},
+   "totalSupply": {},
+   "startDate": {},
+   "tradeable": false,
+   "fullyDilutedValue": {},
+   "volume24HrMarketCapPercent": {}
+  },
+  "sectorTrend": {
+   "maxAge": 1,
+   "symbol": null,
+   "peRatio": {},
+   "pegRatio": {},
+   "estimates": []
+  },
+  "insiderHolders": {
+   "holders": [
+    {
+     "maxAge": 1,
+     "name": "DENHOLM ROBYN M",
+     "relation": "Director",
+     "url": "",
+     "transactionDescription": "Sale",
+     "latestTransDate": {
+      "raw": 1746489600,
+      "fmt": "2025-05-06"
+     },
+     "positionDirect": {
+      "raw": 85000,
+      "fmt": "85k",
+      "longFmt": "85,000"
+     },
+     "positionDirectDate": {
+      "raw": 1746489600,
+      "fmt": "2025-05-06"
+     }
+    },
+    {
+     "maxAge": 1,
+     "name": "EHRENPREIS IRA MATTHEW",
+     "relation": "Director",
+     "url": "",
+     "transactionDescription": "Sale",
+     "latestTransDate": {
+      "raw": 1748304000,
+      "fmt": "2025-05-27"
+     },
+     "positionDirect": {
+      "raw": 855394,
+      "fmt": "855.39k",
+      "longFmt": "855,394"
+     },
+     "positionDirectDate": {
+      "raw": 1748304000,
+      "fmt": "2025-05-27"
+     }
+    },
+    {
+     "maxAge": 1,
+     "name": "GEBBIA JOSEPH",
+     "relation": "Director",
+     "url": "",
+     "transactionDescription": "Purchase",
+     "latestTransDate": {
+      "raw": 1745452800,
+      "fmt": "2025-04-24"
+     },
+     "positionIndirect": {
+      "raw": 4111,
+      "fmt": "4.11k",
+      "longFmt": "4,111"
+     },
+     "positionIndirectDate": {
+      "raw": 1745452800,
+      "fmt": "2025-04-24"
+     }
+    },
+    {
+     "maxAge": 1,
+     "name": "MURDOCH JAMES RUPERT",
+     "relation": "Director",
+     "url": "",
+     "transactionDescription": "Sale",
+     "latestTransDate": {
+      "raw": 1767312000,
+      "fmt": "2026-01-02"
+     },
+     "positionIndirect": {
+      "raw": 734306,
+      "fmt": "734.31k",
+      "longFmt": "734,306"
+     },
+     "positionIndirectDate": {
+      "raw": 1767312000,
+      "fmt": "2026-01-02"
+     }
+    },
+    {
+     "_more": 5
+    }
+   ],
+   "maxAge": 1
+  },
+  "calendarEvents": {
+   "maxAge": 1,
+   "earnings": {
+    "earningsDate": [
+     {
+      "raw": 1792612800,
+      "fmt": "2026-10-21"
+     }
+    ],
+    "earningsCallDate": [
+     {
+      "raw": 1792612800,
+      "fmt": "2026-10-21"
+     }
+    ],
+    "isEarningsDateEstimate": false,
+    "earningsAverage": {
+     "raw": 0.45494,
+     "fmt": "0.45"
+    },
+    "earningsLow": {
+     "raw": 0.29912,
+     "fmt": "0.30"
+    },
+    "earningsHigh": {
+     "raw": 0.7,
+     "fmt": "0.70"
+    },
+    "revenueAverage": {
+     "raw": 28111085380,
+     "fmt": "28.11B",
+     "longFmt": "28,111,085,380"
+    },
+    "revenueLow": {
+     "raw": 24286500000,
+     "fmt": "24.29B",
+     "longFmt": "24,286,500,000"
+    },
+    "revenueHigh": {
+     "raw": 30584552000,
+     "fmt": "30.58B",
+     "longFmt": "30,584,552,000"
+    }
+   },
+   "exDividendDate": {},
+   "dividendDate": {}
+  },
+  "upgradeDowngradeHistory": {
+   "history": [
+    {
+     "epochGradeDate": 1791830369,
+     "firm": "Jefferies",
+     "toGrade": "Hold",
+     "fromGrade": "Hold",
+     "action": "main",
+     "priceTargetAction": "Raises",
+     "currentPriceTarget": 400.0,
+     "priorPriceTarget": 350.0
+    },
+    {
+     "epochGradeDate": 1791495824,
+     "firm": "Tigress Financial",
+     "toGrade": "Buy",
+     "fromGrade": "Buy",
+     "action": "main",
+     "priceTargetAction": "Maintains",
+     "currentPriceTarget": 550.0,
+     "priorPriceTarget": 550.0
+    },
+    {
+     "epochGradeDate": 1791406836,
+     "firm": "UBS",
+     "toGrade": "Neutral",
+     "fromGrade": "Neutral",
+     "action": "main",
+     "priceTargetAction": "Raises",
+     "currentPriceTarget": 391.0,
+     "priorPriceTarget": 385.0
+    },
+    {
+     "epochGradeDate": 1790604800,
+     "firm": "JP Morgan",
+     "toGrade": "Neutral",
+     "fromGrade": "Neutral",
+     "action": "main",
+     "priceTargetAction": "Lowers",
+     "currentPriceTarget": 415.0,
+     "priorPriceTarget": 445.0
+    },
+    {
+     "_more": 978
+    }
+   ],
+   "maxAge": 86400
+  },
+  "price": {
+   "maxAge": 1,
+   "preMarketChangePercent": {
+    "raw": -0.012991581,
+    "fmt": "-1.30%"
+   },
+   "preMarketChange": {
+    "raw": -4.769989,
+    "fmt": "-4.77"
+   },
+   "preMarketTime": 1792063174,
+   "preMarketPrice": {
+    "raw": 362.39,
+    "fmt": "362.39"
+   },
+   "preMarketSource": "FREE_REALTIME",
+   "postMarketChange": {},
+   "postMarketPrice": {},
+   "postMarketSource": "FREE_REALTIME",
+   "regularMarketChangePercent": {
+    "raw": -0.021506827,
+    "fmt": "-2.15%"
+   },
+   "regularMarketChange": {
+    "raw": -8.070007,
+    "fmt": "-8.07"
+   },
+   "regularMarketTime": 1792008001,
+   "priceHint": {
+    "raw": 2,
+    "fmt": "2",
+    "longFmt": "2"
+   },
+   "regularMarketPrice": {
+    "raw": 367.16,
+    "fmt": "367.16"
+   },
+   "regularMarketDayHigh": {
+    "raw": 371.39,
+    "fmt": "371.39"
+   },
+   "regularMarketDayLow": {
+    "raw": 363.82,
+    "fmt": "363.82"
+   },
+   "regularMarketVolume": {
+    "raw": 30868569,
+    "fmt": "30.87M",
+    "longFmt": "30,868,569.00"
+   },
+   "averageDailyVolume10Day": {
+    "raw": 31876170,
+    "fmt": "31.88M",
+    "longFmt": "31,876,170"
+   },
+   "averageDailyVolume3Month": {
+    "raw": 37327718,
+    "fmt": "37.33M",
+    "longFmt": "37,327,718"
+   },
+   "regularMarketPreviousClose": {
+    "raw": 375.23,
+    "fmt": "375.23"
+   },
+   "regularMarketSource": "FREE_REALTIME",
+   "regularMarketOpen": {
+    "raw": 371.15,
+    "fmt": "371.15"
+   },
+   "strikePrice": {},
+   "openInterest": {},
+   "fulldayChangePercent": {
+    "raw": -0.012991581,
+    "fmt": "-1.30%"
+   },
+   "fulldayChange": {
+    "raw": -4.769989,
+    "fmt": "-4.77"
+   },
+   "fulldayPrice": {
+    "raw": 362.39,
+    "fmt": "362.39"
+   },
+   "exchange": "NMS",
+   "exchangeName": "NasdaqGS",
+   "exchangeDataDelayedBy": 15,
+   "marketState": "PRE",
+   "quoteType": "EQUITY",
+   "symbol": "TSLA",
+   "underlyingSymbol": null,
+   "shortName": "Tesla, Inc.",
+   "longName": "Tesla, Inc.",
+   "currency": "USD",
+   "quoteSourceName": "Nasdaq Real Time Price",
+   "currencySymbol": "$",
+   "fromCurrency": null,
+   "toCurrency": null,
+   "lastMarket": null,
+   "volume24Hr": {},
+   "volumeAllCurrencies": {},
+   "circulatingSupply": {},
+   "marketCap": {
+    "raw": 1450115858432,
+    "fmt": "1.45T",
+    "longFmt": "1,450,115,858,432.00"
+   }
+  },
+  "earningsTrend": {
+   "trend": [
+    {
+     "maxAge": 1,
+     "period": "0q",
+     "endDate": "2026-09-30",
+     "growth": {
+      "raw": -0.090100005,
+      "fmt": "-9.01%"
+     },
+     "earningsEstimate": {
+      "avg": {
+       "raw": 0.45494,
+       "fmt": "0.45"
+      },
+      "low": {
+       "raw": 0.29912,
+       "fmt": "0.3"
+      },
+      "high": {
+       "raw": 0.7,
+       "fmt": "0.7"
+      },
+      "yearAgoEps": {
+       "raw": 0.5,
+       "fmt": "0.5"
+      },
+      "numberOfAnalysts": {
+       "raw": 24,
+       "fmt": "24",
+       "longFmt": "24"
+      },
+      "growth": {
+       "raw": -0.090100005,
+       "fmt": "-9.01%"
+      },
+      "earningsCurrency": "USD"
+     },
+     "revenueEstimate": {
+      "avg": {
+       "raw": 28111085380,
+       "fmt": "28.11B",
+       "longFmt": "28,111,085,380"
+      },
+      "low": {
+       "raw": 24286500000,
+       "fmt": "24.29B",
+       "longFmt": "24,286,500,000"
+      },
+      "high": {
+       "raw": 30584552000,
+       "fmt": "30.58B",
+       "longFmt": "30,584,552,000"
+      },
+      "numberOfAnalysts": {
+       "raw": 28,
+       "fmt": "28",
+       "longFmt": "28"
+      },
+      "yearAgoRevenue": {
+       "raw": 28095000000,
+       "fmt": "28.09B",
+       "longFmt": "28,095,000,000"
+      },
+      "growth": {
+       "raw": 0.00059999997,
+       "fmt": "0.06%"
+      },
+      "revenueCurrency": "USD"
+     },
+     "epsTrend": {
+      "current": {
+       "raw": 0.45494,
+       "fmt": "0.45"
+      },
+      "7daysAgo": {
+       "raw": 0.44898,
+       "fmt": "0.45"
+      },
+      "30daysAgo": {
+       "raw": 0.4532,
+       "fmt": "0.45"
+      },
+      "60daysAgo": {
+       "raw": 0.4532,
+       "fmt": "0.45"
+      },
+      "90daysAgo": {
+       "raw": 0.54973,
+       "fmt": "0.55"
+      },
+      "epsTrendCurrency": "USD"
+     },
+     "epsRevisions": {
+      "upLast7days": {
+       "raw": 4,
+       "fmt": "4",
+       "longFmt": "4"
+      },
+      "upLast30days": {
+       "raw": 2,
+       "fmt": "2",
+       "longFmt": "2"
+      },
+      "downLast30days": {
+       "raw": 6,
+       "fmt": "6",
+       "longFmt": "6"
+      },
+      "downLast7Days": {
+       "raw": 3,
+       "fmt": "3",
+       "longFmt": "3"
+      },
+      "downLast90days": {},
+      "epsRevisionsCurrency": "USD"
+     }
+    },
+    {
+     "maxAge": 1,
+     "period": "+1q",
+     "endDate": "2026-12-31",
+     "growth": {
+      "raw": -0.013300001,
+      "fmt": "-1.33%"
+     },
+     "earningsEstimate": {
+      "avg": {
+       "raw": 0.49335,
+       "fmt": "0.49"
+      },
+      "low": {
+       "raw": 0.32561,
+       "fmt": "0.33"
+      },
+      "high": {
+       "raw": 0.83,
+       "fmt": "0.83"
+      },
+      "yearAgoEps": {
+       "raw": 0.5,
+       "fmt": "0.5"
+      },
+      "numberOfAnalysts": {
+       "raw": 22,
+       "fmt": "22",
+       "longFmt": "22"
+      },
+      "growth": {
+       "raw": -0.013300001,
+       "fmt": "-1.33%"
+      },
+      "earningsCurrency": "USD"
+     },
+     "revenueEstimate": {
+      "avg": {
+       "raw": 28930512750,
+       "fmt": "28.93B",
+       "longFmt": "28,930,512,750"
+      },
+      "low": {
+       "raw": 26761000000,
+       "fmt": "26.76B",
+       "longFmt": "26,761,000,000"
+      },
+      "high": {
+       "raw": 32421683000,
+       "fmt": "32.42B",
+       "longFmt": "32,421,683,000"
+      },
+      "numberOfAnalysts": {
+       "raw": 27,
+       "fmt": "27",
+       "longFmt": "27"
+      },
+      "yearAgoRevenue": {
+       "raw": 24901000000,
+       "fmt": "24.9B",
+       "longFmt": "24,901,000,000"
+      },
+      "growth": {
+       "raw": 0.1618,
+       "fmt": "16.18%"
+      },
+      "revenueCurrency": "USD"
+     },
+     "epsTrend": {
+      "current": {
+       "raw": 0.49335,
+       "fmt": "0.49"
+      },
+      "7daysAgo": {
+       "raw": 0.47727,
+       "fmt": "0.48"
+      },
+      "30daysAgo": {
+       "raw": 0.48896,
+       "fmt": "0.49"
+      },
+      "60daysAgo": {
+       "raw": 0.48896,
+       "fmt": "0.49"
+      },
+      "90daysAgo": {
+       "raw": 0.62163,
+       "fmt": "0.62"
+      },
+      "epsTrendCurrency": "USD"
+     },
+     "epsRevisions": {
+      "upLast7days": {
+       "raw": 0,
+       "fmt": null,
+       "longFmt": "0"
+      },
+      "upLast30days": {
+       "raw": 2,
+       "fmt": "2",
+       "longFmt": "2"
+      },
+      "downLast30days": {
+       "raw": 4,
+       "fmt": "4",
+       "longFmt": "4"
+      },
+      "downLast7Days": {
+       "raw": 1,
+       "fmt": "1",
+       "longFmt": "1"
+      },
+      "downLast90days": {},
+      "epsRevisionsCurrency": "USD"
+     }
+    },
+    {
+     "maxAge": 1,
+     "period": "0y",
+     "endDate": "2026-12-31",
+     "growth": {
+      "raw": 0.0546,
+      "fmt": "5.46%"
+     },
+     "earningsEstimate": {
+      "avg": {
+       "raw": 1.7506,
+       "fmt": "1.75"
+      },
+      "low": {
+       "raw": 1.4,
+       "fmt": "1.4"
+      },
+      "high": {
+       "raw": 2.39,
+       "fmt": "2.39"
+      },
+      "yearAgoEps": {
+       "raw": 1.66,
+       "fmt": "1.66"
+      },
+      "numberOfAnalysts": {
+       "raw": 31,
+       "fmt": "31",
+       "longFmt": "31"
+      },
+      "growth": {
+       "raw": 0.0546,
+       "fmt": "5.46%"
+      },
+      "earningsCurrency": "USD"
+     },
+     "revenueEstimate": {
+      "avg": {
+       "raw": 107147687410,
+       "fmt": "107.15B",
+       "longFmt": "107,147,687,410"
+      },
+      "low": {
+       "raw": 96453000000,
+       "fmt": "96.45B",
+       "longFmt": "96,453,000,000"
+      },
+      "high": {
+       "raw": 114131060000,
+       "fmt": "114.13B",
+       "longFmt": "114,131,060,000"
+      },
+      "numberOfAnalysts": {
+       "raw": 41,
+       "fmt": "41",
+       "longFmt": "41"
+      },
+      "yearAgoRevenue": {
+       "raw": 94827000000,
+       "fmt": "94.83B",
+       "longFmt": "94,827,000,000"
+      },
+      "growth": {
+       "raw": 0.1299,
+       "fmt": "12.99%"
+      },
+      "revenueCurrency": "USD"
+     },
+     "epsTrend": {
+      "current": {
+       "raw": 1.7506,
+       "fmt": "1.75"
+      },
+      "7daysAgo": {
+       "raw": 1.73252,
+       "fmt": "1.73"
+      },
+      "30daysAgo": {
+       "raw": 1.76564,
+       "fmt": "1.77"
+      },
+      "60daysAgo": {
+       "raw": 1.76971,
+       "fmt": "1.77"
+      },
+      "90daysAgo": {
+       "raw": 2.13979,
+       "fmt": "2.14"
+      },
+      "epsTrendCurrency": "USD"
+     },
+     "epsRevisions": {
+      "upLast7days": {
+       "raw": 2,
+       "fmt": "2",
+       "longFmt": "2"
+      },
+      "upLast30days": {
+       "raw": 4,
+       "fmt": "4",
+       "longFmt": "4"
+      },
+      "downLast30days": {
+       "raw": 9,
+       "fmt": "9",
+       "longFmt": "9"
+      },
+      "downLast7Days": {
+       "raw": 4,
+       "fmt": "4",
+       "longFmt": "4"
+      },
+      "downLast90days": {},
+      "epsRevisionsCurrency": "USD"
+     }
+    },
+    {
+     "maxAge": 1,
+     "period": "+1y",
+     "endDate": "2027-12-31",
+     "growth": {
+      "raw": 0.24520001,
+      "fmt": "24.52%"
+     },
+     "earningsEstimate": {
+      "avg": {
+       "raw": 2.17987,
+       "fmt": "2.18"
+      },
+      "low": {
+       "raw": 1.39889,
+       "fmt": "1.4"
+      },
+      "high": {
+       "raw": 3.67,
+       "fmt": "3.67"
+      },
+      "yearAgoEps": {
+       "raw": 1.7506,
+       "fmt": "1.75"
+      },
+      "numberOfAnalysts": {
+       "raw": 31,
+       "fmt": "31",
+       "longFmt": "31"
+      },
+      "growth": {
+       "raw": 0.24520001,
+       "fmt": "24.52%"
+      },
+      "earningsCurrency": "USD"
+     },
+     "revenueEstimate": {
+      "avg": {
+       "raw": 121707474090,
+       "fmt": "121.71B",
+       "longFmt": "121,707,474,090"
+      },
+      "low": {
+       "raw": 99741000000,
+       "fmt": "99.74B",
+       "longFmt": "99,741,000,000"
+      },
+      "high": {
+       "raw": 151793498000,
+       "fmt": "151.79B",
+       "longFmt": "151,793,498,000"
+      },
+      "numberOfAnalysts": {
+       "raw": 41,
+       "fmt": "41",
+       "longFmt": "41"
+      },
+      "yearAgoRevenue": {
+       "raw": 107147687410,
+       "fmt": "107.15B",
+       "longFmt": "107,147,687,410"
+      },
+      "growth": {
+       "raw": 0.1359,
+       "fmt": "13.59%"
+      },
+      "revenueCurrency": "USD"
+     },
+     "epsTrend": {
+      "current": {
+       "raw": 2.17987,
+       "fmt": "2.18"
+      },
+      "7daysAgo": {
+       "raw": 2.14381,
+       "fmt": "2.14"
+      },
+      "30daysAgo": {
+       "raw": 2.15858,
+       "fmt": "2.16"
+      },
+      "60daysAgo": {
+       "raw": 2.15858,
+       "fmt": "2.16"
+      },
+      "90daysAgo": {
+       "raw": 2.5541,
+       "fmt": "2.55"
+      },
+      "epsTrendCurrency": "USD"
+     },
+     "epsRevisions": {
+      "upLast7days": {
+       "raw": 1,
+       "fmt": "1",
+       "longFmt": "1"
+      },
+      "upLast30days": {
+       "raw": 1,
+       "fmt": "1",
+       "longFmt": "1"
+      },
+      "downLast30days": {
+       "raw": 9,
+       "fmt": "9",
+       "longFmt": "9"
+      },
+      "downLast7Days": {
+       "raw": 3,
+       "fmt": "3",
+       "longFmt": "3"
+      },
+      "downLast90days": {},
+      "epsRevisionsCurrency": "USD"
+     }
+    }
+   ],
+   "defaultMethodology": "nongaap",
+   "maxAge": 1
+  },
+  "financialData": {
+   "maxAge": 86400,
+   "currentPrice": {
+    "raw": 367.16,
+    "fmt": "367.16"
+   },
+   "targetHighPrice": {
+    "raw": 600.0,
+    "fmt": "600.00"
+   },
+   "targetLowPrice": {
+    "raw": 128.11,
+    "fmt": "128.11"
+   },
+   "targetMeanPrice": {
+    "raw": 397.83212,
+    "fmt": "397.83"
+   },
+   "targetMedianPrice": {
+    "raw": 412.5,
+    "fmt": "412.50"
+   },
+   "recommendationMean": {
+    "raw": 2.36364,
+    "fmt": "2.36"
+   },
+   "recommendationKey": "buy",
+   "numberOfAnalystOpinions": {
+    "raw": 38,
+    "fmt": "38",
+    "longFmt": "38"
+   },
+   "totalCash": {
+    "raw": 43524001792,
+    "fmt": "43.52B",
+    "longFmt": "43,524,001,792"
+   },
+   "totalCashPerShare": {
+    "raw": 11.02,
+    "fmt": "11.02"
+   },
+   "ebitda": {
+    "raw": 10755000320,
+    "fmt": "10.76B",
+    "longFmt": "10,755,000,320"
+   },
+   "totalDebt": {
+    "raw": 16080000000,
+    "fmt": "16.08B",
+    "longFmt": "16,080,000,000"
+   },
+   "quickRatio": {
+    "raw": 1.347,
+    "fmt": "1.35"
+   },
+   "currentRatio": {
+    "raw": 1.941,
+    "fmt": "1.94"
+   },
+   "totalRevenue": {
+    "raw": 103619002368,
+    "fmt": "103.62B",
+    "longFmt": "103,619,002,368"
+   },
+   "debtToEquity": {
+    "raw": 18.373,
+    "fmt": "18.37%"
+   },
+   "revenuePerShare": {
+    "raw": 32.055,
+    "fmt": "32.06"
+   },
+   "returnOnAssets": {
+    "raw": 0.019299999,
+    "fmt": "1.93%"
+   },
+   "returnOnEquity": {
+    "raw": 0.046669997,
+    "fmt": "4.67%"
+   },
+   "grossProfits": {
+    "raw": 19534000128,
+    "fmt": "19.53B",
+    "longFmt": "19,534,000,128"
+   },
+   "freeCashflow": {
+    "raw": 4835999744,
+    "fmt": "4.84B",
+    "longFmt": "4,835,999,744"
+   },
+   "operatingCashflow": {
+    "raw": 18684999680,
+    "fmt": "18.68B",
+    "longFmt": "18,684,999,680"
+   },
+   "earningsGrowth": {
+    "raw": -0.03,
+    "fmt": "-3.00%"
+   },
+   "revenueGrowth": {
+    "raw": 0.255,
+    "fmt": "25.50%"
+   },
+   "grossMargins": {
+    "raw": 0.18852,
+    "fmt": "18.85%"
+   },
+   "ebitdaMargins": {
+    "raw": 0.10379,
+    "fmt": "10.38%"
+   },
+   "operatingMargins": {
+    "raw": 0.014099999,
+    "fmt": "1.41%"
+   },
+   "profitMargins": {
+    "raw": 0.03671,
+    "fmt": "3.67%"
+   },
+   "financialCurrency": "USD"
+  },
+  "secFilings": {
+   "filings": [
+    {
+     "date": "2026-10-02",
+     "epochDate": 1790899200,
+     "type": "8-K",
+     "title": "Corporate Changes & Voting Matters",
+     "edgarUrl": "https://finance.yahoo.com/sec-filing/TSLA/0001628280-26-064366_1318605",
+     "exhibits": [
+      {
+       "type": "8-K",
+       "url": "https://cdn.yahoofinance.com/prod/sec-filings/0001318605/000162828026064366/tsla-20261002.htm"
+      },
+      {
+       "type": "EX-99.1",
+       "url": "https://cdn.yahoofinance.com/prod/sec-filings/0001318605/000162828026064366/exhibit991111111.htm"
+      }
+     ],
+     "maxAge": 1
+    },
+    {
+     "date": "2026-09-29",
+     "epochDate": 1790640000,
+     "type": "8-K",
+     "title": "Corporate Changes & Voting Matters",
+     "edgarUrl": "https://finance.yahoo.com/sec-filing/TSLA/0001628280-26-063820_1318605",
+     "exhibits": [
+      {
+       "type": "8-K",
+       "url": "https://cdn.yahoofinance.com/prod/sec-filings/0001318605/000162828026063820/tsla-20260929.htm"
+      }
+     ],
+     "maxAge": 1
+    },
+    {
+     "date": "2026-07-23",
+     "epochDate": 1784764800,
+     "type": "10-Q",
+     "title": "Periodic Financial Reports",
+     "edgarUrl": "https://finance.yahoo.com/sec-filing/TSLA/0001628280-26-049270_1318605",
+     "exhibits": [
+      {
+       "type": "10-Q",
+       "url": "https://cdn.yahoofinance.com/prod/sec-filings/0001318605/000162828026049270/tsla-20260630.htm"
+      },
+      {
+       "type": "EX-31.1",
+       "url": "https://cdn.yahoofinance.com/prod/sec-filings/0001318605/000162828026049270/tsla-2026x06x30xex311.htm"
+      },
+      {
+       "type": "EX-31.2",
+       "url": "https://cdn.yahoofinance.com/prod/sec-filings/0001318605/000162828026049270/tsla-2026x06x30xex312.htm"
+      },
+      {
+       "type": "EX-32.1",
+       "url": "https://cdn.yahoofinance.com/prod/sec-filings/0001318605/000162828026049270/tsla-2026x06x30xex321.htm"
+      }
+     ],
+     "maxAge": 1
+    },
+    {
+     "date": "2026-07-22",
+     "epochDate": 1784678400,
+     "type": "8-K",
+     "title": "Corporate Changes & Voting Matters",
+     "edgarUrl": "https://finance.yahoo.com/sec-filing/TSLA/0001628280-26-049213_1318605",
+     "exhibits": [
+      {
+       "type": "8-K",
+       "url": "https://cdn.yahoofinance.com/prod/sec-filings/0001318605/000162828026049213/tsla-20260722.htm"
+      },
+      {
+       "type": "EX-99.1",
+       "url": "https://cdn.yahoofinance.com/prod/sec-filings/0001318605/000162828026049213/exhibit991.htm"
+      }
+     ],
+     "maxAge": 1
+    },
+    {
+     "_more": 161
+    }
+   ],
+   "maxAge": 86400
+  }
+ },
+ "yahoo_qs_JPM": {
+  "assetProfile": {
+   "address1": "270 Park Avenue",
+   "city": "New York",
+   "state": "NY",
+   "zip": "10017",
+   "country": "United States",
+   "phone": "212 270 6000",
+   "website": "https://www.jpmorganchase.com",
+   "industry": "Banks - Diversified",
+   "industryKey": "banks-diversified",
+   "industryDisp": "Banks - Diversified",
+   "sector": "Financial Services",
+   "sectorKey": "financial-services",
+   "sectorDisp": "Financial Services",
+   "longBusinessSummary": "JPMorgan Chase & Co. operates as a bank and financial holding company in the United States, rest of North America, Europe, the Middle East, Africa, the Asia Pacific, Latin America, and the Caribbean. It operates in three segments: Consumer & Community Banking, Commercial & Investment Bank, and Asset & Wealth Management. The company offers deposit, investment and lending products, and cash management; mortgage origination and servicing activities; residential mortgages and home equity loans; and credit cards, payment solutions, travel services, merchant offers, lifestyle benefits, auto loans, and leases to consumers and small businesses through bank branches, ATMs, and digital and telephone banking. It also provides investment banking, market-making, financing, custody, and securities products and services; corporate strategy and structure advisory, equity and debt market capital-raising, and loan origination and syndication services; cash and derivative instruments, risk management solutions, prime brokerage, clearing, and research; and fund services, liquidity and trading services, and data solutions products for large corporations, financial institutions, merchants, start-ups, small and midsized companies, local governments, municipalities, nonprofits, and commercial real estate clients. In addition, the company offers multi-asset investment management solutions in equities, fixed income, alternatives, and money market funds to institutional clients and retail investors; retirement products and services, estate planning, lending, deposits, and investment management products to high-net-worth clients; and financial transaction processing. JPMorgan Chase & Co. was founded in 1799 and is headquartered in New York, New York.",
+   "fullTimeEmployees": 322964,
+   "companyOfficers": [
+    {
+     "maxAge": 1,
+     "name": "Mr. James  Dimon",
+     "age": 69,
+     "title": "Chairman & CEO",
+     "yearBorn": 1956,
+     "fiscalYear": 2025,
+     "totalPay": {
+      "raw": 8087852,
+      "fmt": "8.09M",
+      "longFmt": "8,087,852"
+     },
+     "exercisedValue": {
+      "raw": 0,
+      "fmt": null,
+      "longFmt": "0"
+     },
+     "unexercisedValue": {
+      "raw": 0,
+      "fmt": null,
+      "longFmt": "0"
+     }
+    },
+    {
+     "maxAge": 1,
+     "name": "Mr. Douglas B. Petno",
+     "age": 59,
+     "title": "CEO of the Commercial & Investment Bank and Co-President",
+     "yearBorn": 1966,
+     "fiscalYear": 2025,
+     "totalPay": {
+      "raw": 11631825,
+      "fmt": "11.63M",
+      "longFmt": "11,631,825"
+     },
+     "exercisedValue": {
+      "raw": 0,
+      "fmt": null,
+      "longFmt": "0"
+     },
+     "unexercisedValue": {
+      "raw": 0,
+      "fmt": null,
+      "longFmt": "0"
+     }
+    },
+    {
+     "maxAge": 1,
+     "name": "Mr. Troy Larry Rohrbaugh",
+     "age": 55,
+     "title": "CEO of Consumer & Community Banking and Co-President",
+     "yearBorn": 1970,
+     "fiscalYear": 2025,
+     "totalPay": {
+      "raw": 11608676,
+      "fmt": "11.61M",
+      "longFmt": "11,608,676"
+     },
+     "exercisedValue": {
+      "raw": 0,
+      "fmt": null,
+      "longFmt": "0"
+     },
+     "unexercisedValue": {
+      "raw": 0,
+      "fmt": null,
+      "longFmt": "0"
+     }
+    },
+    {
+     "maxAge": 1,
+     "name": "Mr. Jeremy  Barnum",
+     "age": 52,
+     "title": "Executive VP & CFO",
+     "yearBorn": 1973,
+     "fiscalYear": 2025,
+     "totalPay": {
+      "raw": 8400000,
+      "fmt": "8.4M",
+      "longFmt": "8,400,000"
+     },
+     "exercisedValue": {
+      "raw": 0,
+      "fmt": null,
+      "longFmt": "0"
+     },
+     "unexercisedValue": {
+      "raw": 0,
+      "fmt": null,
+      "longFmt": "0"
+     }
+    },
+    {
+     "_more": 6
+    }
+   ],
+   "auditRisk": 6,
+   "boardRisk": 6,
+   "compensationRisk": 4,
+   "shareHolderRightsRisk": 3,
+   "overallRisk": 3,
+   "governanceEpochDate": 1790812800,
+   "compensationAsOfEpochDate": 1767139200,
+   "irWebsite": "http://investor.shareholder.com/jpmorganchase/",
+   "executiveTeam": [],
+   "maxAge": 86400
+  },
+  "recommendationTrend": {
+   "trend": [
+    {
+     "period": "0m",
+     "strongBuy": 4,
+     "buy": 9,
+     "hold": 12,
+     "sell": 0,
+     "strongSell": 0
+    },
+    {
+     "period": "-1m",
+     "strongBuy": 4,
+     "buy": 9,
+     "hold": 11,
+     "sell": 0,
+     "strongSell": 0
+    },
+    {
+     "period": "-2m",
+     "strongBuy": 4,
+     "buy": 9,
+     "hold": 10,
+     "sell": 0,
+     "strongSell": 1
+    },
+    {
+     "period": "-3m",
+     "strongBuy": 3,
+     "buy": 9,
+     "hold": 11,
+     "sell": 0,
+     "strongSell": 0
+    }
+   ],
+   "maxAge": 86400
+  },
+  "institutionOwnership": {
+   "maxAge": 1,
+   "ownershipList": [
+    {
+     "maxAge": 1,
+     "reportDate": {
+      "raw": 1782777600,
+      "fmt": "2026-06-30"
+     },
+     "organization": "Blackrock Inc.",
+     "pctHeld": {
+      "raw": 0.0776,
+      "fmt": "7.76%"
+     },
+     "position": {
+      "raw": 206290537,
+      "fmt": "206.29M",
+      "longFmt": "206,290,537"
+     },
+     "value": {
+      "raw": 69165090993,
+      "fmt": "69.17B",
+      "longFmt": "69,165,090,993"
+     },
+     "pctChange": {
+      "raw": -0.0093,
+      "fmt": "-0.93%"
+     }
+    },
+    {
+     "maxAge": 1,
+     "reportDate": {
+      "raw": 1782777600,
+      "fmt": "2026-06-30"
+     },
+     "organization": "Vanguard Capital Management LLC",
+     "pctHeld": {
+      "raw": 0.0608,
+      "fmt": "6.08%"
+     },
+     "position": {
+      "raw": 161586023,
+      "fmt": "161.59M",
+      "longFmt": "161,586,023"
+     },
+     "value": {
+      "raw": 54176561594,
+      "fmt": "54.18B",
+      "longFmt": "54,176,561,594"
+     },
+     "pctChange": {
+      "raw": -0.0223,
+      "fmt": "-2.23%"
+     }
+    },
+    {
+     "maxAge": 1,
+     "reportDate": {
+      "raw": 1782777600,
+      "fmt": "2026-06-30"
+     },
+     "organization": "State Street Corporation",
+     "pctHeld": {
+      "raw": 0.0471,
+      "fmt": "4.71%"
+     },
+     "position": {
+      "raw": 125209293,
+      "fmt": "125.21M",
+      "longFmt": "125,209,293"
+     },
+     "value": {
+      "raw": 41980171604,
+      "fmt": "41.98B",
+      "longFmt": "41,980,171,604"
+     },
+     "pctChange": {
+      "raw": 0.0075,
+      "fmt": "0.75%"
+     }
+    },
+    {
+     "maxAge": 1,
+     "reportDate": {
+      "raw": 1782777600,
+      "fmt": "2026-06-30"
+     },
+     "organization": "Bank of America Corporation",
+     "pctHeld": {
+      "raw": 0.026199998,
+      "fmt": "2.62%"
+     },
+     "position": {
+      "raw": 69666753,
+      "fmt": "69.67M",
+      "longFmt": "69,666,753"
+     },
+     "value": {
+      "raw": 23357868860,
+      "fmt": "23.36B",
+      "longFmt": "23,357,868,860"
+     },
+     "pctChange": {
+      "raw": 0.061,
+      "fmt": "6.10%"
+     }
+    },
+    {
+     "_more": 6
+    }
+   ]
+  },
+  "majorHoldersBreakdown": {
+   "maxAge": 1,
+   "insidersPercentHeld": {
+    "raw": 0.00391,
+    "fmt": "0.39%"
+   },
+   "institutionsPercentHeld": {
+    "raw": 0.7564,
+    "fmt": "75.64%"
+   },
+   "institutionsFloatPercentHeld": {
+    "raw": 0.75935996,
+    "fmt": "75.94%"
+   },
+   "institutionsCount": {
+    "raw": 6355,
+    "fmt": "6.36k",
+    "longFmt": "6,355"
+   }
+  },
+  "earningsHistory": {
+   "history": [
+    {
+     "maxAge": 1,
+     "epsActual": {
+      "raw": 4.63,
+      "fmt": "4.63"
+     },
+     "epsEstimate": {
+      "raw": 4.81831,
+      "fmt": "4.82"
+     },
+     "epsDifference": {
+      "raw": -0.19,
+      "fmt": "-0.19"
+     },
+     "surprisePercent": {
+      "raw": -0.039100002,
+      "fmt": "-3.91%"
+     },
+     "quarter": {
+      "raw": 1767139200,
+      "fmt": "2025-12-31"
+     },
+     "currency": "USD",
+     "period": "-4q"
+    },
+    {
+     "maxAge": 1,
+     "epsActual": {
+      "raw": 5.94,
+      "fmt": "5.94"
+     },
+     "epsEstimate": {
+      "raw": 5.51098,
+      "fmt": "5.51"
+     },
+     "epsDifference": {
+      "raw": 0.43,
+      "fmt": "0.43"
+     },
+     "surprisePercent": {
+      "raw": 0.077800006,
+      "fmt": "7.78%"
+     },
+     "quarter": {
+      "raw": 1774915200,
+      "fmt": "2026-03-31"
+     },
+     "currency": "USD",
+     "period": "-3q"
+    },
+    {
+     "maxAge": 1,
+     "epsActual": {
+      "raw": 6.14,
+      "fmt": "6.14"
+     },
+     "epsEstimate": {
+      "raw": 5.79998,
+      "fmt": "5.8"
+     },
+     "epsDifference": {
+      "raw": 0.34,
+      "fmt": "0.34"
+     },
+     "surprisePercent": {
+      "raw": 0.0586,
+      "fmt": "5.86%"
+     },
+     "quarter": {
+      "raw": 1782777600,
+      "fmt": "2026-06-30"
+     },
+     "currency": "USD",
+     "period": "-2q"
+    },
+    {
+     "maxAge": 1,
+     "epsActual": {
+      "raw": 5.75,
+      "fmt": "5.75"
+     },
+     "epsEstimate": {
+      "raw": 5.94266,
+      "fmt": "5.94"
+     },
+     "epsDifference": {
+      "raw": -0.19,
+      "fmt": "-0.19"
+     },
+     "surprisePercent": {
+      "raw": -0.0324,
+      "fmt": "-3.24%"
+     },
+     "quarter": {
+      "raw": 1790726400,
+      "fmt": "2026-09-30"
+     },
+     "currency": "USD",
+     "period": "-1q"
+    }
+   ],
+   "defaultMethodology": "nongaap",
+   "maxAge": 86400
+  },
+  "indexTrend": {
+   "maxAge": 1,
+   "symbol": "SP5",
+   "peRatio": {},
+   "pegRatio": {},
+   "estimates": [
+    {
+     "period": "0q",
+     "growth": {
+      "raw": 0.24280001,
+      "fmt": "0.24"
+     }
+    },
+    {
+     "period": "+1q",
+     "growth": {
+      "raw": 0.264,
+      "fmt": "0.26"
+     }
+    },
+    {
+     "period": "0y",
+     "growth": {
+      "raw": 0.3232,
+      "fmt": "0.32"
+     }
+    },
+    {
+     "period": "+1y",
+     "growth": {
+      "raw": 0.16510001,
+      "fmt": "0.17"
+     }
+    },
+    {
+     "_more": 1
+    }
+   ]
+  },
+  "defaultKeyStatistics": {
+   "maxAge": 1,
+   "priceHint": {
+    "raw": 2,
+    "fmt": "2",
+    "longFmt": "2"
+   },
+   "enterpriseValue": {
+    "raw": 356190552064,
+    "fmt": "356.19B",
+    "longFmt": "356,190,552,064"
+   },
+   "forwardPE": {
+    "raw": 13.206983,
+    "fmt": "13.21"
+   },
+   "profitMargins": {
+    "raw": 0.34592,
+    "fmt": "34.59%"
+   },
+   "floatShares": {
+    "raw": 2641392540,
+    "fmt": "2.64B",
+    "longFmt": "2,641,392,540"
+   },
+   "sharesOutstanding": {
+    "raw": 2655600000,
+    "fmt": "2.66B",
+    "longFmt": "2,655,600,000"
+   },
+   "sharesShort": {
+    "raw": 24120442,
+    "fmt": "24.12M",
+    "longFmt": "24,120,442"
+   },
+   "sharesShortPriorMonth": {
+    "raw": 26537949,
+    "fmt": "26.54M",
+    "longFmt": "26,537,949"
+   },
+   "sharesShortPreviousMonthDate": {
+    "raw": 1788134400,
+    "fmt": "2026-08-31"
+   },
+   "dateShortInterest": {
+    "raw": 1790726400,
+    "fmt": "2026-09-30"
+   },
+   "sharesPercentSharesOut": {
+    "raw": 0.0091,
+    "fmt": "0.91%"
+   },
+   "heldPercentInsiders": {
+    "raw": 0.00391,
+    "fmt": "0.39%"
+   },
+   "heldPercentInstitutions": {
+    "raw": 0.7564,
+    "fmt": "75.64%"
+   },
+   "shortRatio": {
+    "raw": 3.0,
+    "fmt": "3"
+   },
+   "shortPercentOfFloat": {
+    "raw": 0.0091,
+    "fmt": "0.91%"
+   },
+   "beta": {
+    "raw": 1.015,
+    "fmt": "1.01"
+   },
+   "impliedSharesOutstanding": {
+    "raw": 2655600000,
+    "fmt": "2.66B",
+    "longFmt": "2,655,600,000"
+   },
+   "morningStarOverallRating": {},
+   "morningStarRiskRating": {},
+   "category": null,
+   "bookValue": {
+    "raw": 132.297,
+    "fmt": "132.30"
+   },
+   "priceToBook": {
+    "raw": 2.534298,
+    "fmt": "2.53"
+   },
+   "annualReportExpenseRatio": {},
+   "ytdReturn": {},
+   "qtdReturn": {},
+   "beta3Year": {},
+   "totalAssets": {},
+   "yield": {},
+   "fundFamily": null,
+   "fundInceptionDate": {},
+   "legalType": null,
+   "threeYearAverageReturn": {},
+   "fiveYearAverageReturn": {},
+   "priceToSalesTrailing12Months": {},
+   "lastFiscalYearEnd": {
+    "raw": 1767139200,
+    "fmt": "2025-12-31"
+   },
+   "nextFiscalYearEnd": {
+    "raw": 1798675200,
+    "fmt": "2026-12-31"
+   },
+   "mostRecentQuarter": {
+    "raw": 1790726400,
+    "fmt": "2026-09-30"
+   },
+   "earningsQuarterlyGrowth": {
+    "raw": 0.063,
+    "fmt": "6.30%"
+   },
+   "revenueQuarterlyGrowth": {},
+   "netIncomeToCommon": {
+    "raw": 64526999552,
+    "fmt": "64.53B",
+    "longFmt": "64,526,999,552"
+   },
+   "trailingEps": {
+    "raw": 24.12,
+    "fmt": "24.12"
+   },
+   "forwardEps": {
+    "raw": 25.44632,
+    "fmt": "25.45"
+   },
+   "pegRatio": {
+    "raw": 1.53,
+    "fmt": "1.53"
+   },
+   "lastSplitFactor": "3:2",
+   "lastSplitDate": {
+    "raw": 960768000,
+    "fmt": "2000-06-12"
+   },
+   "enterpriseToRevenue": {
+    "raw": 1.867,
+    "fmt": "1.87"
+   },
+   "enterpriseToEbitda": {},
+   "52WeekChange": {
+    "raw": 0.12306559,
+    "fmt": "12.31%"
+   },
+   "SandP52WeekChange": {
+    "raw": 0.1570785,
+    "fmt": "15.71%"
+   },
+   "lastDividendValue": {
+    "raw": 1.65,
+    "fmt": "1.65"
+   },
+   "lastDividendDate": {
+    "raw": 1791244800,
+    "fmt": "2026-10-06"
+   },
+   "lastCapGain": {},
+   "annualHoldingsTurnover": {},
+   "latestFundingDate": {},
+   "latestAmountRaised": {},
+   "latestImpliedValuation": {},
+   "latestShareClass": null,
+   "leadInvestor": null,
+   "fundingToDate": {},
+   "totalFundingRounds": {}
+  },
+  "summaryProfile": {
+   "address1": "270 Park Avenue",
+   "city": "New York",
+   "state": "NY",
+   "zip": "10017",
+   "country": "United States",
+   "phone": "212 270 6000",
+   "website": "https://www.jpmorganchase.com",
+   "industry": "Banks - Diversified",
+   "industryKey": "banks-diversified",
+   "industryDisp": "Banks - Diversified",
+   "sector": "Financial Services",
+   "sectorKey": "financial-services",
+   "sectorDisp": "Financial Services",
+   "longBusinessSummary": "JPMorgan Chase & Co. operates as a bank and financial holding company in the United States, rest of North America, Europe, the Middle East, Africa, the Asia Pacific, Latin America, and the Caribbean. It operates in three segments: Consumer & Community Banking, Commercial & Investment Bank, and Asset & Wealth Management. The company offers deposit, investment and lending products, and cash management; mortgage origination and servicing activities; residential mortgages and home equity loans; and credit cards, payment solutions, travel services, merchant offers, lifestyle benefits, auto loans, and leases to consumers and small businesses through bank branches, ATMs, and digital and telephone banking. It also provides investment banking, market-making, financing, custody, and securities products and services; corporate strategy and structure advisory, equity and debt market capital-raising, and loan origination and syndication services; cash and derivative instruments, risk management solutions, prime brokerage, clearing, and research; and fund services, liquidity and trading services, and data solutions products for large corporations, financial institutions, merchants, start-ups, small and midsized companies, local governments, municipalities, nonprofits, and commercial real estate clients. In addition, the company offers multi-asset investment management solutions in equities, fixed income, alternatives, and money market funds to institutional clients and retail investors; retirement products and services, estate planning, lending, deposits, and investment management products to high-net-worth clients; and financial transaction processing. JPMorgan Chase & Co. was founded in 1799 and is headquartered in New York, New York.",
+   "fullTimeEmployees": 322964,
+   "companyOfficers": [],
+   "irWebsite": "http://investor.shareholder.com/jpmorganchase/",
+   "executiveTeam": [],
+   "maxAge": 86400
+  },
+  "industryTrend": {
+   "maxAge": 1,
+   "symbol": null,
+   "peRatio": {},
+   "pegRatio": {},
+   "estimates": []
+  },
+  "netSharePurchaseActivity": {
+   "maxAge": 1,
+   "period": "6m",
+   "buyInfoCount": {
+    "raw": 7,
+    "fmt": "7",
+    "longFmt": "7"
+   },
+   "buyInfoShares": {
+    "raw": 136610,
+    "fmt": "136.61k",
+    "longFmt": "136,610"
+   },
+   "buyPercentInsiderShares": {
+    "raw": 0.012999999,
+    "fmt": "1.30%"
+   },
+   "sellInfoCount": {
+    "raw": 19,
+    "fmt": "19",
+    "longFmt": "19"
+   },
+   "sellInfoShares": {
+    "raw": 230236,
+    "fmt": "230.24k",
+    "longFmt": "230,236"
+   },
+   "sellPercentInsiderShares": {
+    "raw": 0.022,
+    "fmt": "2.20%"
+   },
+   "netInfoCount": {
+    "raw": 26,
+    "fmt": "26",
+    "longFmt": "26"
+   },
+   "netInfoShares": {
+    "raw": -93626,
+    "fmt": "-93.63k",
+    "longFmt": "-93,626"
+   },
+   "netPercentInsiderShares": {
+    "raw": -0.009,
+    "fmt": "-0.90%"
+   },
+   "netInstSharesBuying": {
+    "raw": -272238807,
+    "fmt": "-272.24M",
+    "longFmt": "-272,238,807"
+   },
+   "netInstBuyingPercent": {
+    "raw": -0.1354,
+    "fmt": "-13.54%"
+   },
+   "totalInsiderShares": {
+    "raw": 10383396,
+    "fmt": "10.38M",
+    "longFmt": "10,383,396"
+   }
+  },
+  "fundOwnership": {
+   "maxAge": 1,
+   "ownershipList": [
+    {
+     "maxAge": 1,
+     "reportDate": {
+      "raw": 1782777600,
+      "fmt": "2026-06-30"
+     },
+     "organization": "VANGUARD INDEX FUNDS-Vanguard Total Stock Market Index Fund",
+     "pctHeld": {
+      "raw": 0.0295,
+      "fmt": "2.95%"
+     },
+     "position": {
+      "raw": 78532263,
+      "fmt": "78.53M",
+      "longFmt": "78,532,263"
+     },
+     "value": {
+      "raw": 26330297042,
+      "fmt": "26.33B",
+      "longFmt": "26,330,297,042"
+     },
+     "pctChange": {
+      "raw": -0.0276,
+      "fmt": "-2.76%"
+     }
+    },
+    {
+     "maxAge": 1,
+     "reportDate": {
+      "raw": 1782777600,
+      "fmt": "2026-06-30"
+     },
+     "organization": "VANGUARD INDEX FUNDS-Vanguard 500 Index Fund",
+     "pctHeld": {
+      "raw": 0.0241,
+      "fmt": "2.41%"
+     },
+     "position": {
+      "raw": 64114615,
+      "fmt": "64.11M",
+      "longFmt": "64,114,615"
+     },
+     "value": {
+      "raw": 21496348038,
+      "fmt": "21.5B",
+      "longFmt": "21,496,348,038"
+     },
+     "pctChange": {
+      "raw": -0.0076,
+      "fmt": "-0.76%"
+     }
+    },
+    {
+     "maxAge": 1,
+     "reportDate": {
+      "raw": 1788134400,
+      "fmt": "2026-08-31"
+     },
+     "organization": "iShares Trust-iShares Core S&P 500 ETF",
+     "pctHeld": {
+      "raw": 0.0134000005,
+      "fmt": "1.34%"
+     },
+     "position": {
+      "raw": 35681922,
+      "fmt": "35.68M",
+      "longFmt": "35,681,922"
+     },
+     "value": {
+      "raw": 11963434764,
+      "fmt": "11.96B",
+      "longFmt": "11,963,434,764"
+     },
+     "pctChange": {
+      "raw": -0.013099999,
+      "fmt": "-1.31%"
+     }
+    },
+    {
+     "maxAge": 1,
+     "reportDate": {
+      "raw": 1788134400,
+      "fmt": "2026-08-31"
+     },
+     "organization": "Fidelity Concord Street Trust-Fidelity 500 Index Fund",
+     "pctHeld": {
+      "raw": 0.013099999,
+      "fmt": "1.31%"
+     },
+     "position": {
+      "raw": 34782471,
+      "fmt": "34.78M",
+      "longFmt": "34,782,471"
+     },
+     "value": {
+      "raw": 11661866834,
+      "fmt": "11.66B",
+      "longFmt": "11,661,866,834"
+     },
+     "pctChange": {
+      "raw": 0.0039,
+      "fmt": "0.39%"
+     }
+    },
+    {
+     "_more": 6
+    }
+   ]
+  },
+  "summaryDetail": {
+   "maxAge": 1,
+   "priceHint": {
+    "raw": 2,
+    "fmt": "2",
+    "longFmt": "2"
+   },
+   "previousClose": {
+    "raw": 331.43,
+    "fmt": "331.43"
+   },
+   "open": {
+    "raw": 327.17,
+    "fmt": "327.17"
+   },
+   "dayLow": {
+    "raw": 326.3981,
+    "fmt": "326.40"
+   },
+   "dayHigh": {
+    "raw": 336.175,
+    "fmt": "336.17"
+   },
+   "regularMarketPreviousClose": {
+    "raw": 331.43,
+    "fmt": "331.43"
+   },
+   "regularMarketOpen": {
+    "raw": 327.17,
+    "fmt": "327.17"
+   },
+   "regularMarketDayLow": {
+    "raw": 326.3981,
+    "fmt": "326.40"
+   },
+   "regularMarketDayHigh": {
+    "raw": 336.175,
+    "fmt": "336.17"
+   },
+   "dividendRate": {},
+   "dividendYield": {
+    "raw": 0.0199,
+    "fmt": "1.99%"
+   },
+   "exDividendDate": {
+    "raw": 1791244800,
+    "fmt": "2026-10-06"
+   },
+   "payoutRatio": {
+    "raw": 0.2571,
+    "fmt": "25.71%"
+   },
+   "fiveYearAvgDividendYield": {
+    "raw": 2.25,
+    "fmt": "2.25"
+   },
+   "beta": {
+    "raw": 1.015,
+    "fmt": "1.01"
+   },
+   "trailingPE": {
+    "raw": 13.900497,
+    "fmt": "13.90"
+   },
+   "forwardPE": {
+    "raw": 13.175972,
+    "fmt": "13.18"
+   },
+   "volume": {
+    "raw": 10236412,
+    "fmt": "10.24M",
+    "longFmt": "10,236,412"
+   },
+   "regularMarketVolume": {
+    "raw": 10236412,
+    "fmt": "10.24M",
+    "longFmt": "10,236,412"
+   },
+   "averageVolume": {
+    "raw": 7236950,
+    "fmt": "7.24M",
+    "longFmt": "7,236,950"
+   },
+   "averageVolume10days": {
+    "raw": 7623730,
+    "fmt": "7.62M",
+    "longFmt": "7,623,730"
+   },
+   "averageDailyVolume10Day": {
+    "raw": 7623730,
+    "fmt": "7.62M",
+    "longFmt": "7,623,730"
+   },
+   "bid": {
+    "raw": 338.03,
+    "fmt": "338.03"
+   },
+   "ask": {
+    "raw": 339.0,
+    "fmt": "339.00"
+   },
+   "bidSize": {
+    "raw": 16000,
+    "fmt": "16k",
+    "longFmt": "16,000"
+   },
+   "askSize": {
+    "raw": 4000,
+    "fmt": "4k",
+    "longFmt": "4,000"
+   },
+   "marketCap": {
+    "raw": 890369605632,
+    "fmt": "890.37B",
+    "longFmt": "890,369,605,632"
+   },
+   "nonDilutedMarketCap": {
+    "raw": 946925668244,
+    "fmt": "946.93B",
+    "longFmt": "946,925,668,244"
+   },
+   "yield": {},
+   "ytdReturn": {},
+   "qtdReturn": {},
+   "totalAssets": {},
+   "expireDate": {},
+   "strikePrice": {},
+   "openInterest": {},
+   "fiftyTwoWeekLow": {
+    "raw": 279.1,
+    "fmt": "279.10"
+   },
+   "fiftyTwoWeekHigh": {
+    "raw": 366.5,
+    "fmt": "366.50"
+   },
+   "allTimeHigh": {
+    "raw": 366.5,
+    "fmt": "366.50"
+   },
+   "allTimeLow": {
+    "raw": 3.208333,
+    "fmt": "3.21"
+   },
+   "fulldayPrice": {
+    "raw": 337.37,
+    "fmt": "337.37"
+   },
+   "fulldayChange": {
+    "raw": 2.0549927,
+    "fmt": "2.05"
+   },
+   "fulldayChangePercent": {
+    "raw": 0.0061285435,
+    "fmt": "0.61%"
+   },
+   "priceToSalesTrailing12Months": {
+    "raw": 4.6681466,
+    "fmt": "4.67"
+   },
+   "fiftyDayAverage": {
+    "raw": 348.9254,
+    "fmt": "348.93"
+   },
+   "twoHundredDayAverage": {
+    "raw": 322.2262,
+    "fmt": "322.23"
+   },
+   "trailingAnnualDividendRate": {
+    "raw": 6.15,
+    "fmt": "6.15"
+   },
+   "trailingAnnualDividendYield": {
+    "raw": 0.018555956,
+    "fmt": "1.86%"
+   },
+   "navPrice": {},
+   "currency": "USD",
+   "fromCurrency": null,
+   "toCurrency": null,
+   "lastMarket": null,
+   "coinMarketCapLink": null,
+   "volume24Hr": {},
+   "volumeAllCurrencies": {},
+   "circulatingSupply": {},
+   "algorithm": null,
+   "maxSupply": {},
+   "totalSupply": {},
+   "startDate": {},
+   "tradeable": false,
+   "fullyDilutedValue": {},
+   "volume24HrMarketCapPercent": {}
+  },
+  "sectorTrend": {
+   "maxAge": 1,
+   "symbol": null,
+   "peRatio": {},
+   "pegRatio": {},
+   "estimates": []
+  },
+  "insiderHolders": {
+   "holders": [
+    {
+     "maxAge": 1,
+     "name": "BACON ASHLEY",
+     "relation": "Officer",
+     "url": "",
+     "transactionDescription": "Sale",
+     "latestTransDate": {
+      "raw": 1777939200,
+      "fmt": "2026-05-05"
+     },
+     "positionDirect": {
+      "raw": 248785,
+      "fmt": "248.78k",
+      "longFmt": "248,785"
+     },
+     "positionDirectDate": {
+      "raw": 1777939200,
+      "fmt": "2026-05-05"
+     }
+    },
+    {
+     "maxAge": 1,
+     "name": "BURKE STEPHEN B",
+     "relation": "Director",
+     "url": "",
+     "transactionDescription": "Stock Award(Grant)",
+     "latestTransDate": {
+      "raw": 1782777600,
+      "fmt": "2026-06-30"
+     },
+     "positionDirect": {
+      "raw": 263548,
+      "fmt": "263.55k",
+      "longFmt": "263,548"
+     },
+     "positionDirectDate": {
+      "raw": 1782777600,
+      "fmt": "2026-06-30"
+     }
+    },
+    {
+     "maxAge": 1,
+     "name": "DIMON JAMES",
+     "relation": "Chief Executive Officer",
+     "url": "",
+     "transactionDescription": "Sale",
+     "latestTransDate": {
+      "raw": 1776211200,
+      "fmt": "2026-04-15"
+     },
+     "positionDirect": {
+      "raw": 6288420,
+      "fmt": "6.29M",
+      "longFmt": "6,288,420"
+     },
+     "positionDirectDate": {
+      "raw": 1776211200,
+      "fmt": "2026-04-15"
+     }
+    },
+    {
+     "maxAge": 1,
+     "name": "ERDOES MARY E.",
+     "relation": "Officer",
+     "url": "",
+     "transactionDescription": "Sale",
+     "latestTransDate": {
+      "raw": 1778803200,
+      "fmt": "2026-05-15"
+     },
+     "positionDirect": {
+      "raw": 632399,
+      "fmt": "632.4k",
+      "longFmt": "632,399"
+     },
+     "positionDirectDate": {
+      "raw": 1778803200,
+      "fmt": "2026-05-15"
+     }
+    },
+    {
+     "_more": 6
+    }
+   ],
+   "maxAge": 1
+  },
+  "calendarEvents": {
+   "maxAge": 1,
+   "earnings": {
+    "earningsDate": [
+     {
+      "raw": 1799929800,
+      "fmt": "2027-01-14"
+     }
+    ],
+    "earningsCallDate": [
+     {
+      "raw": 1791894600,
+      "fmt": "2026-10-13"
+     }
+    ],
+    "isEarningsDateEstimate": false,
+    "earningsAverage": {
+     "raw": 5.94066,
+     "fmt": "5.94"
+    },
+    "earningsLow": {
+     "raw": 5.65,
+     "fmt": "5.65"
+    },
+    "earningsHigh": {
+     "raw": 6.4,
+     "fmt": "6.40"
+    },
+    "revenueAverage": {
+     "raw": 51237351370,
+     "fmt": "51.24B",
+     "longFmt": "51,237,351,370"
+    },
+    "revenueLow": {
+     "raw": 50066000000,
+     "fmt": "50.07B",
+     "longFmt": "50,066,000,000"
+    },
+    "revenueHigh": {
+     "raw": 52544343000,
+     "fmt": "52.54B",
+     "longFmt": "52,544,343,000"
+    }
+   },
+   "exDividendDate": {
+    "raw": 1791244800,
+    "fmt": "2026-10-06"
+   },
+   "dividendDate": {
+    "raw": 1793404800,
+    "fmt": "2026-10-31"
+   }
+  },
+  "upgradeDowngradeHistory": {
+   "history": [
+    {
+     "epochGradeDate": 1791999238,
+     "firm": "Truist Securities",
+     "toGrade": "Hold",
+     "fromGrade": "Hold",
+     "action": "main",
+     "priceTargetAction": "Raises",
+     "currentPriceTarget": 361.0,
+     "priorPriceTarget": 352.0
+    },
+    {
+     "epochGradeDate": 1791985994,
+     "firm": "Barclays",
+     "toGrade": "Overweight",
+     "fromGrade": "Overweight",
+     "action": "main",
+     "priceTargetAction": "Raises",
+     "currentPriceTarget": 425.0,
+     "priorPriceTarget": 420.0
+    },
+    {
+     "epochGradeDate": 1791984765,
+     "firm": "RBC Capital",
+     "toGrade": "Outperform",
+     "fromGrade": "Outperform",
+     "action": "reit",
+     "priceTargetAction": "Maintains",
+     "currentPriceTarget": 370.0,
+     "priorPriceTarget": 370.0
+    },
+    {
+     "epochGradeDate": 1791982196,
+     "firm": "Morgan Stanley",
+     "toGrade": "Equal-Weight",
+     "fromGrade": "Equal-Weight",
+     "action": "main",
+     "priceTargetAction": "Raises",
+     "currentPriceTarget": 377.0,
+     "priorPriceTarget": 370.0
+    },
+    {
+     "_more": 446
+    }
+   ],
+   "maxAge": 86400
+  },
+  "price": {
+   "maxAge": 1,
+   "preMarketChangePercent": {
+    "raw": 0.0061285435,
+    "fmt": "0.61%"
+   },
+   "preMarketChange": {
+    "raw": 2.0549927,
+    "fmt": "2.05"
+   },
+   "preMarketTime": 1792063137,
+   "preMarketPrice": {
+    "raw": 337.37,
+    "fmt": "337.37"
+   },
+   "preMarketSource": "FREE_REALTIME",
+   "postMarketChange": {},
+   "postMarketPrice": {},
+   "postMarketSource": "DELAYED",
+   "regularMarketChangePercent": {
+    "raw": 0.011616301,
+    "fmt": "1.16%"
+   },
+   "regularMarketChange": {
+    "raw": 3.85001,
+    "fmt": "3.85"
+   },
+   "regularMarketTime": 1792008002,
+   "priceHint": {
+    "raw": 2,
+    "fmt": "2",
+    "longFmt": "2"
+   },
+   "regularMarketPrice": {
+    "raw": 335.28,
+    "fmt": "335.28"
+   },
+   "regularMarketDayHigh": {
+    "raw": 336.175,
+    "fmt": "336.17"
+   },
+   "regularMarketDayLow": {
+    "raw": 326.3981,
+    "fmt": "326.40"
+   },
+   "regularMarketVolume": {
+    "raw": 10236412,
+    "fmt": "10.24M",
+    "longFmt": "10,236,412.00"
+   },
+   "averageDailyVolume10Day": {
+    "raw": 7623730,
+    "fmt": "7.62M",
+    "longFmt": "7,623,730"
+   },
+   "averageDailyVolume3Month": {
+    "raw": 7236950,
+    "fmt": "7.24M",
+    "longFmt": "7,236,950"
+   },
+   "regularMarketPreviousClose": {
+    "raw": 331.43,
+    "fmt": "331.43"
+   },
+   "regularMarketSource": "FREE_REALTIME",
+   "regularMarketOpen": {
+    "raw": 327.17,
+    "fmt": "327.17"
+   },
+   "strikePrice": {},
+   "openInterest": {},
+   "fulldayChangePercent": {
+    "raw": 0.0061285435,
+    "fmt": "0.61%"
+   },
+   "fulldayChange": {
+    "raw": 2.0549927,
+    "fmt": "2.05"
+   },
+   "fulldayPrice": {
+    "raw": 337.37,
+    "fmt": "337.37"
+   },
+   "exchange": "NYQ",
+   "exchangeName": "NYSE",
+   "exchangeDataDelayedBy": 20,
+   "marketState": "PRE",
+   "quoteType": "EQUITY",
+   "symbol": "JPM",
+   "underlyingSymbol": null,
+   "shortName": "JP Morgan Chase & Co.",
+   "longName": "JPMorgan Chase & Co.",
+   "currency": "USD",
+   "quoteSourceName": "Nasdaq Real Time Price",
+   "currencySymbol": "$",
+   "fromCurrency": null,
+   "toCurrency": null,
+   "lastMarket": null,
+   "volume24Hr": {},
+   "volumeAllCurrencies": {},
+   "circulatingSupply": {},
+   "marketCap": {
+    "raw": 890369605632,
+    "fmt": "890.37B",
+    "longFmt": "890,369,605,632.00"
+   }
+  },
+  "earningsTrend": {
+   "trend": [
+    {
+     "maxAge": 1,
+     "period": "0q",
+     "endDate": "2026-12-31",
+     "growth": {
+      "raw": 0.2831,
+      "fmt": "28.31%"
+     },
+     "earningsEstimate": {
+      "avg": {
+       "raw": 5.94066,
+       "fmt": "5.94"
+      },
+      "low": {
+       "raw": 5.65,
+       "fmt": "5.65"
+      },
+      "high": {
+       "raw": 6.4,
+       "fmt": "6.4"
+      },
+      "yearAgoEps": {
+       "raw": 4.63,
+       "fmt": "4.63"
+      },
+      "numberOfAnalysts": {
+       "raw": 12,
+       "fmt": "12",
+       "longFmt": "12"
+      },
+      "growth": {
+       "raw": 0.2831,
+       "fmt": "28.31%"
+      },
+      "earningsCurrency": "USD"
+     },
+     "revenueEstimate": {
+      "avg": {
+       "raw": 51237351370,
+       "fmt": "51.24B",
+       "longFmt": "51,237,351,370"
+      },
+      "low": {
+       "raw": 50066000000,
+       "fmt": "50.07B",
+       "longFmt": "50,066,000,000"
+      },
+      "high": {
+       "raw": 52544343000,
+       "fmt": "52.54B",
+       "longFmt": "52,544,343,000"
+      },
+      "numberOfAnalysts": {
+       "raw": 10,
+       "fmt": "10",
+       "longFmt": "10"
+      },
+      "yearAgoRevenue": {
+       "raw": 45798000000,
+       "fmt": "45.8B",
+       "longFmt": "45,798,000,000"
+      },
+      "growth": {
+       "raw": 0.1188,
+       "fmt": "11.88%"
+      },
+      "revenueCurrency": "USD"
+     },
+     "epsTrend": {
+      "current": {
+       "raw": 5.94066,
+       "fmt": "5.94"
+      },
+      "7daysAgo": {
+       "raw": 5.94972,
+       "fmt": "5.95"
+      },
+      "30daysAgo": {
+       "raw": 5.94334,
+       "fmt": "5.94"
+      },
+      "60daysAgo": {
+       "raw": 5.9475,
+       "fmt": "5.95"
+      },
+      "90daysAgo": {
+       "raw": 5.84457,
+       "fmt": "5.84"
+      },
+      "epsTrendCurrency": "USD"
+     },
+     "epsRevisions": {
+      "upLast7days": {
+       "raw": 0,
+       "fmt": null,
+       "longFmt": "0"
+      },
+      "upLast30days": {
+       "raw": 2,
+       "fmt": "2",
+       "longFmt": "2"
+      },
+      "downLast30days": {
+       "raw": 2,
+       "fmt": "2",
+       "longFmt": "2"
+      },
+      "downLast7Days": {
+       "raw": 2,
+       "fmt": "2",
+       "longFmt": "2"
+      },
+      "downLast90days": {},
+      "epsRevisionsCurrency": "USD"
+     }
+    },
+    {
+     "maxAge": 1,
+     "period": "+1q",
+     "endDate": "2027-03-31",
+     "growth": {
+      "raw": 0.0523,
+      "fmt": "5.23%"
+     },
+     "earningsEstimate": {
+      "avg": {
+       "raw": 6.25041,
+       "fmt": "6.25"
+      },
+      "low": {
+       "raw": 6.05,
+       "fmt": "6.05"
+      },
+      "high": {
+       "raw": 6.41,
+       "fmt": "6.41"
+      },
+      "yearAgoEps": {
+       "raw": 5.94,
+       "fmt": "5.94"
+      },
+      "numberOfAnalysts": {
+       "raw": 7,
+       "fmt": "7",
+       "longFmt": "7"
+      },
+      "growth": {
+       "raw": 0.0523,
+       "fmt": "5.23%"
+      },
+      "earningsCurrency": "USD"
+     },
+     "revenueEstimate": {
+      "avg": {
+       "raw": 53980101660,
+       "fmt": "53.98B",
+       "longFmt": "53,980,101,660"
+      },
+      "low": {
+       "raw": 52437000000,
+       "fmt": "52.44B",
+       "longFmt": "52,437,000,000"
+      },
+      "high": {
+       "raw": 55686735000,
+       "fmt": "55.69B",
+       "longFmt": "55,686,735,000"
+      },
+      "numberOfAnalysts": {
+       "raw": 6,
+       "fmt": "6",
+       "longFmt": "6"
+      },
+      "yearAgoRevenue": {
+       "raw": 49836000000,
+       "fmt": "49.84B",
+       "longFmt": "49,836,000,000"
+      },
+      "growth": {
+       "raw": 0.0832,
+       "fmt": "8.32%"
+      },
+      "revenueCurrency": "USD"
+     },
+     "epsTrend": {
+      "current": {
+       "raw": 6.25041,
+       "fmt": "6.25"
+      },
+      "7daysAgo": {
+       "raw": 6.214,
+       "fmt": "6.21"
+      },
+      "30daysAgo": {
+       "raw": 6.15167,
+       "fmt": "6.15"
+      },
+      "60daysAgo": {
+       "raw": 6.12945,
+       "fmt": "6.13"
+      },
+      "90daysAgo": {
+       "raw": 5.9464,
+       "fmt": "5.95"
+      },
+      "epsTrendCurrency": "USD"
+     },
+     "epsRevisions": {
+      "upLast7days": {
+       "raw": 1,
+       "fmt": "1",
+       "longFmt": "1"
+      },
+      "upLast30days": {
+       "raw": 0,
+       "fmt": null,
+       "longFmt": "0"
+      },
+      "downLast30days": {
+       "raw": 1,
+       "fmt": "1",
+       "longFmt": "1"
+      },
+      "downLast7Days": {
+       "raw": 1,
+       "fmt": "1",
+       "longFmt": "1"
+      },
+      "downLast90days": {},
+      "epsRevisionsCurrency": "USD"
+     }
+    },
+    {
+     "maxAge": 1,
+     "period": "0y",
+     "endDate": "2026-12-31",
+     "growth": {
+      "raw": 0.221,
+      "fmt": "22.10%"
+     },
+     "earningsEstimate": {
+      "avg": {
+       "raw": 24.08958,
+       "fmt": "24.09"
+      },
+      "low": {
+       "raw": 23.3,
+       "fmt": "23.3"
+      },
+      "high": {
+       "raw": 25.15939,
+       "fmt": "25.16"
+      },
+      "yearAgoEps": {
+       "raw": 19.73,
+       "fmt": "19.73"
+      },
+      "numberOfAnalysts": {
+       "raw": 14,
+       "fmt": "14",
+       "longFmt": "14"
+      },
+      "growth": {
+       "raw": 0.221,
+       "fmt": "22.10%"
+      },
+      "earningsCurrency": "USD"
+     },
+     "revenueEstimate": {
+      "avg": {
+       "raw": 207846974120,
+       "fmt": "207.85B",
+       "longFmt": "207,846,974,120"
+      },
+      "low": {
+       "raw": 204480000000,
+       "fmt": "204.48B",
+       "longFmt": "204,480,000,000"
+      },
+      "high": {
+       "raw": 209899343000,
+       "fmt": "209.9B",
+       "longFmt": "209,899,343,000"
+      },
+      "numberOfAnalysts": {
+       "raw": 12,
+       "fmt": "12",
+       "longFmt": "12"
+      },
+      "yearAgoRevenue": {
+       "raw": 182447000000,
+       "fmt": "182.45B",
+       "longFmt": "182,447,000,000"
+      },
+      "growth": {
+       "raw": 0.1392,
+       "fmt": "13.92%"
+      },
+      "revenueCurrency": "USD"
+     },
+     "epsTrend": {
+      "current": {
+       "raw": 24.08958,
+       "fmt": "24.09"
+      },
+      "7daysAgo": {
+       "raw": 24.06243,
+       "fmt": "24.06"
+      },
+      "30daysAgo": {
+       "raw": 24.07808,
+       "fmt": "24.08"
+      },
+      "60daysAgo": {
+       "raw": 24.12453,
+       "fmt": "24.12"
+      },
+      "90daysAgo": {
+       "raw": 23.70075,
+       "fmt": "23.7"
+      },
+      "epsTrendCurrency": "USD"
+     },
+     "epsRevisions": {
+      "upLast7days": {
+       "raw": 1,
+       "fmt": "1",
+       "longFmt": "1"
+      },
+      "upLast30days": {
+       "raw": 3,
+       "fmt": "3",
+       "longFmt": "3"
+      },
+      "downLast30days": {
+       "raw": 0,
+       "fmt": null,
+       "longFmt": "0"
+      },
+      "downLast7Days": {
+       "raw": 1,
+       "fmt": "1",
+       "longFmt": "1"
+      },
+      "downLast90days": {},
+      "epsRevisionsCurrency": "USD"
+     }
+    },
+    {
+     "maxAge": 1,
+     "period": "+1y",
+     "endDate": "2027-12-31",
+     "growth": {
+      "raw": 0.0538,
+      "fmt": "5.38%"
+     },
+     "earningsEstimate": {
+      "avg": {
+       "raw": 25.38657,
+       "fmt": "25.39"
+      },
+      "low": {
+       "raw": 24.05,
+       "fmt": "24.05"
+      },
+      "high": {
+       "raw": 27.17,
+       "fmt": "27.17"
+      },
+      "yearAgoEps": {
+       "raw": 24.08958,
+       "fmt": "24.09"
+      },
+      "numberOfAnalysts": {
+       "raw": 15,
+       "fmt": "15",
+       "longFmt": "15"
+      },
+      "growth": {
+       "raw": 0.0538,
+       "fmt": "5.38%"
+      },
+      "earningsCurrency": "USD"
+     },
+     "revenueEstimate": {
+      "avg": {
+       "raw": 216212336030,
+       "fmt": "216.21B",
+       "longFmt": "216,212,336,030"
+      },
+      "low": {
+       "raw": 208879000000,
+       "fmt": "208.88B",
+       "longFmt": "208,879,000,000"
+      },
+      "high": {
+       "raw": 225152110000,
+       "fmt": "225.15B",
+       "longFmt": "225,152,110,000"
+      },
+      "numberOfAnalysts": {
+       "raw": 14,
+       "fmt": "14",
+       "longFmt": "14"
+      },
+      "yearAgoRevenue": {
+       "raw": 207846974120,
+       "fmt": "207.85B",
+       "longFmt": "207,846,974,120"
+      },
+      "growth": {
+       "raw": 0.0402,
+       "fmt": "4.02%"
+      },
+      "revenueCurrency": "USD"
+     },
+     "epsTrend": {
+      "current": {
+       "raw": 25.38657,
+       "fmt": "25.39"
+      },
+      "7daysAgo": {
+       "raw": 25.02266,
+       "fmt": "25.02"
+      },
+      "30daysAgo": {
+       "raw": 24.93782,
+       "fmt": "24.94"
+      },
+      "60daysAgo": {
+       "raw": 24.95399,
+       "fmt": "24.95"
+      },
+      "90daysAgo": {
+       "raw": 24.40284,
+       "fmt": "24.4"
+      },
+      "epsTrendCurrency": "USD"
+     },
+     "epsRevisions": {
+      "upLast7days": {
+       "raw": 3,
+       "fmt": "3",
+       "longFmt": "3"
+      },
+      "upLast30days": {
+       "raw": 5,
+       "fmt": "5",
+       "longFmt": "5"
+      },
+      "downLast30days": {
+       "raw": 1,
+       "fmt": "1",
+       "longFmt": "1"
+      },
+      "downLast7Days": {
+       "raw": 0,
+       "fmt": null,
+       "longFmt": "0"
+      },
+      "downLast90days": {},
+      "epsRevisionsCurrency": "USD"
+     }
+    }
+   ],
+   "defaultMethodology": "nongaap",
+   "maxAge": 1
+  },
+  "financialData": {
+   "maxAge": 86400,
+   "currentPrice": {
+    "raw": 335.28,
+    "fmt": "335.28"
+   },
+   "targetHighPrice": {
+    "raw": 425.0,
+    "fmt": "425.00"
+   },
+   "targetLowPrice": {
+    "raw": 312.0,
+    "fmt": "312.00"
+   },
+   "targetMeanPrice": {
+    "raw": 372.5,
+    "fmt": "372.50"
+   },
+   "targetMedianPrice": {
+    "raw": 373.5,
+    "fmt": "373.50"
+   },
+   "recommendationMean": {
+    "raw": 2.12,
+    "fmt": "2.12"
+   },
+   "recommendationKey": "buy",
+   "numberOfAnalystOpinions": {
+    "raw": 22,
+    "fmt": "22",
+    "longFmt": "22"
+   },
+   "totalCash": {
+    "raw": 1881473941504,
+    "fmt": "1.88T",
+    "longFmt": "1,881,473,941,504"
+   },
+   "totalCashPerShare": {
+    "raw": 708.493,
+    "fmt": "708.49"
+   },
+   "ebitda": {},
+   "totalDebt": {
+    "raw": 1326255046656,
+    "fmt": "1.33T",
+    "longFmt": "1,326,255,046,656"
+   },
+   "quickRatio": {},
+   "currentRatio": {},
+   "totalRevenue": {
+    "raw": 190732992512,
+    "fmt": "190.73B",
+    "longFmt": "190,732,992,512"
+   },
+   "debtToEquity": {},
+   "revenuePerShare": {
+    "raw": 70.511,
+    "fmt": "70.51"
+   },
+   "returnOnAssets": {
+    "raw": 0.01367,
+    "fmt": "1.37%"
+   },
+   "returnOnEquity": {
+    "raw": 0.18013,
+    "fmt": "18.01%"
+   },
+   "grossProfits": {
+    "raw": 190732992512,
+    "fmt": "190.73B",
+    "longFmt": "190,732,992,512"
+   },
+   "freeCashflow": {},
+   "operatingCashflow": {},
+   "earningsGrowth": {
+    "raw": 0.099,
+    "fmt": "9.90%"
+   },
+   "revenueGrowth": {
+    "raw": 0.102,
+    "fmt": "10.20%"
+   },
+   "grossMargins": {
+    "raw": 0.0,
+    "fmt": "0.00%"
+   },
+   "ebitdaMargins": {
+    "raw": 0.0,
+    "fmt": "0.00%"
+   },
+   "operatingMargins": {
+    "raw": 0.42584,
+    "fmt": "42.58%"
+   },
+   "profitMargins": {
+    "raw": 0.34592,
+    "fmt": "34.59%"
+   },
+   "financialCurrency": "USD"
+  },
+  "secFilings": {
+   "filings": [
+    {
+     "date": "2026-04-14",
+     "epochDate": 1776124800,
+     "type": "DEFA14A",
+     "title": "Proxy Statements",
+     "edgarUrl": "https://finance.yahoo.com/sec-filing/JPM/0001628280-26-025079_19617",
+     "exhibits": [
+      {
+       "type": "DEFA14A",
+       "url": "https://cdn.yahoofinance.com/prod/sec-filings/0000019617/000162828026025079/proxysupplementalmaterials.htm"
+      }
+     ],
+     "maxAge": 1
+    },
+    {
+     "date": "2026-04-06",
+     "epochDate": 1775433600,
+     "type": "DEFA14A",
+     "title": "Proxy Statements",
+     "edgarUrl": "https://finance.yahoo.com/sec-filing/JPM/0000019617-26-000097_19617",
+     "exhibits": [
+      {
+       "type": "DEFA14A",
+       "url": "https://cdn.yahoofinance.com/prod/sec-filings/0000019617/000001961726000097/a2026proxystatement_notice.htm"
+      }
+     ],
+     "maxAge": 1
+    },
+    {
+     "date": "2026-01-22",
+     "epochDate": 1769040000,
+     "type": "8-K",
+     "title": "Corporate Changes & Voting Matters",
+     "edgarUrl": "https://finance.yahoo.com/sec-filing/JPM/0001193125-26-019450_19617",
+     "exhibits": [
+      {
+       "type": "EX-5.1",
+       "url": "https://cdn.yahoofinance.com/prod/sec-filings/0000019617/000119312526019450/d18152dex51.htm"
+      },
+      {
+       "type": "8-K",
+       "url": "https://cdn.yahoofinance.com/prod/sec-filings/0000019617/000119312526019450/d18152d8k.htm"
+      }
+     ],
+     "maxAge": 1
+    },
+    {
+     "date": "2025-09-12",
+     "epochDate": 1757635200,
+     "type": "8-K",
+     "title": "Corporate Changes & Voting Matters",
+     "edgarUrl": "https://finance.yahoo.com/sec-filing/JPM/0000019617-25-000907_19617",
+     "exhibits": [
+      {
+       "type": "8-K",
+       "url": "https://cdn.yahoofinance.com/prod/sec-filings/0000019617/000001961725000907/jpm-20250912.htm"
+      },
+      {
+       "type": "EX-3.2",
+       "url": "https://cdn.yahoofinance.com/prod/sec-filings/0000019617/000001961725000907/jpmcby-laws09122025.htm"
+      }
+     ],
+     "maxAge": 1
+    },
+    {
+     "_more": 63
+    }
+   ],
+   "maxAge": 86400
+  }
+ },
+ "yahoo_chart_events": {
+  "meta": {
+   "currency": "USD",
+   "symbol": "AAPL",
+   "exchangeName": "NMS",
+   "fullExchangeName": "NasdaqGS",
+   "instrumentType": "EQUITY",
+   "firstTradeDate": 345479400,
+   "regularMarketTime": 1792008001,
+   "hasPrePostMarketData": true,
+   "gmtoffset": -14400,
+   "timezone": "EDT",
+   "exchangeTimezoneName": "America/New_York",
+   "regularMarketPrice": 342.96,
+   "regularMarketChangePercent": 0.495,
+   "fulldayPrice": 345.6,
+   "fulldayChange": 2.64,
+   "fulldayChangePercent": 0.77,
+   "fiftyTwoWeekHigh": 348.15,
+   "fiftyTwoWeekLow": 243.42,
+   "regularMarketDayHigh": 347.07,
+   "regularMarketDayLow": 341.72,
+   "regularMarketVolume": 49893047,
+   "longName": "Apple Inc.",
+   "shortName": "Apple Inc.",
+   "chartPreviousClose": 29.407,
+   "priceHint": 2,
+   "currentTradingPeriod": {
+    "pre": {
+     "timezone": "EDT",
+     "end": 1792071000,
+     "start": 1792051200,
+     "gmtoffset": -14400
+    },
+    "regular": {
+     "timezone": "EDT",
+     "end": 1792094400,
+     "start": 1792071000,
+     "gmtoffset": -14400
+    },
+    "post": {
+     "timezone": "EDT",
+     "end": 1792108800,
+     "start": 1792094400,
+     "gmtoffset": -14400
+    }
+   },
+   "dataGranularity": "1mo",
+   "range": "10y",
+   "validRanges": [
+    "1d",
+    "5d",
+    "1mo",
+    "3mo",
+    "6mo",
+    "1y",
+    "2y",
+    "5y",
+    "10y",
+    "ytd",
+    "max"
+   ]
+  },
+  "events": {
+   "dividends": {
+    "1769922000": {
+     "amount": 0.26,
+     "date": 1770647400
+    },
+    "1777608000": {
+     "amount": 0.27,
+     "date": 1778506200
+    },
+    "1785556800": {
+     "amount": 0.27,
+     "date": 1786368600
+    }
+   },
+   "splits": {
+    "1596254400": {
+     "date": 1598880600,
+     "numerator": 4.0,
+     "denominator": 1.0,
+     "splitRatio": "4:1"
+    }
+   }
+  }
+ },
+ "yahoo_intraday": {
+  "n": 79,
+  "gran": "5m",
+  "first": [
+   1791984600,
+   1791984900
   ],
-  "meta_keys": [
-   "chartPreviousClose",
-   "currency",
-   "currentTradingPeriod",
-   "dataGranularity",
-   "exchangeName",
-   "exchangeTimezoneName",
-   "fiftyTwoWeekHigh",
-   "fiftyTwoWeekLow",
-   "firstTradeDate",
-   "fullExchangeName",
-   "fulldayChange",
-   "fulldayChangePercent",
-   "fulldayPrice",
-   "gmtoffset",
-   "hasPrePostMarketData",
-   "instrumentType",
-   "longName",
-   "priceHint",
-   "range",
-   "regularMarketChangePercent",
-   "regularMarketDayHigh",
-   "regularMarketDayLow",
-   "regularMarketPrice",
-   "regularMarketTime",
-   "regularMarketVolume",
-   "shortName",
-   "symbol",
-   "timezone",
-   "validRanges"
+  "close": [
+   345.6099853515625,
+   346.7099914550781,
+   345.75
   ]
  },
- "spark_50": {
-  "status": 400,
-  "err": "TypeError(\"object of type 'NoneType' has no len()\")",
-  "body": "{\"spark\":{\"result\":null,\"error\":{\"code\":\"Bad Request\",\"description\":\"Number of symbols needs to be less than or equal to 20\"}}}"
+ "moex_div": {
+  "description": {
+   "columns": [
+    "name",
+    "title",
+    "value",
+    "type",
+    "sort_order",
+    "is_hidden",
+    "precision"
+   ],
+   "data": [
+    [
+     "SECID",
+     "Код ценной бумаги",
+     "SBER",
+     "string",
+     1,
+     0,
+     null
+    ],
+    [
+     "ISSUENAME",
+     "Наименование ценной бумаги",
+     "Акции обыкновенные",
+     "string",
+     2,
+     0,
+     null
+    ],
+    [
+     "NAME",
+     "Полное наименование",
+     "Сбербанк России ПАО ао",
+     "string",
+     3,
+     0,
+     null
+    ],
+    [
+     "SHORTNAME",
+     "Краткое наименование",
+     "Сбербанк",
+     "string",
+     4,
+     0,
+     null
+    ],
+    [
+     "ISIN",
+     "ISIN код",
+     "RU0009029540",
+     "string",
+     5,
+     0,
+     null
+    ],
+    [
+     "REGNUMBER",
+     "Номер государственной регистрации",
+     "10301481B",
+     "string",
+     6,
+     0,
+     null
+    ],
+    [
+     "ISSUESIZE",
+     "Объем выпуска",
+     "21586948000",
+     "number",
+     7,
+     0,
+     0
+    ],
+    [
+     "FACEVALUE",
+     "Номинальная стоимость",
+     "3",
+     "number",
+     8,
+     0,
+     2
+    ],
+    [
+     "FACEUNIT",
+     "Валюта номинала",
+     "SUR",
+     "string",
+     9,
+     0,
+     null
+    ],
+    [
+     "ISSUEDATE",
+     "Дата начала торгов",
+     "2007-07-20",
+     "date",
+     10,
+     0,
+     null
+    ],
+    [
+     "LATNAME",
+     "Английское наименование",
+     "Sberbank",
+     "string",
+     11,
+     1,
+     null
+    ],
+    [
+     "HASPROSPECTUS",
+     "Наличие проспекта",
+     "1",
+     "boolean",
+     12,
+     1,
+     0
+    ],
+    [
+     "DECISIONDATE",
+     "Дата принятия решения организатором торговли о включении ценной бумаги в Список",
+     "2007-07-16",
+     "date",
+     13,
+     1,
+     null
+    ],
+    [
+     "HASDEFAULT",
+     "Допущен дефолт",
+     "0",
+     "boolean",
+     14,
+     1,
+     0
+    ],
+    [
+     "HASTECHNICALDEFAULT",
+     "Допущен технический дефолт",
+     "0",
+     "boolean",
+     15,
+     1,
+     0
+    ],
+    [
+     "EMITENTMISMATCHCUR",
+     "Эмитент не соответствует требованию на текущий Список",
+     "0",
+     "number",
+     17,
+     1,
+     0
+    ],
+    [
+     "LISTLEVEL",
+     "Уровень листинга",
+     "1",
+     "number",
+     18,
+     0,
+     0
+    ],
+    [
+     "ISQUALIFIEDINVESTORS",
+     "Бумаги для квалифицированных инвесторов",
+     "0",
+     "boolean",
+     20,
+     0,
+     0
+    ],
+    [
+     "MORNINGSESSION",
+     "Допуск к утренней дополнительной торговой сессии",
+     "1",
+     "boolean",
+     23,
+     0,
+     0
+    ],
+    [
+     "EVENINGSESSION",
+     "Допуск к вечерней дополнительной торговой сессии",
+     "1",
+     "boolean",
+     24,
+     0,
+     0
+    ],
+    [
+     "WEEKENDSESSION",
+     "Допуск к дополнительной торговой сессии выходного дня",
+     "1",
+     "boolean",
+     25,
+     0,
+     0
+    ],
+    [
+     "REGISTRY_DATE",
+     "Дата государственной регистрации ценной бумаги",
+     "2007-07-11",
+     "date",
+     28,
+     0,
+     null
+    ],
+    [
+     "TYPENAME",
+     "Вид/категория ценной бумаги",
+     "Акция обыкновенная",
+     "string",
+     9000,
+     0,
+     null
+    ],
+    [
+     "GROUP",
+     "Код типа инструмента",
+     "stock_shares",
+     "string",
+     9001,
+     1,
+     null
+    ],
+    [
+     "TYPE",
+     "Тип бумаги",
+     "common_share",
+     "string",
+     10000,
+     1,
+     null
+    ],
+    [
+     "GROUPNAME",
+     "Типа инструмента",
+     "Акции",
+     "string",
+     10011,
+     1,
+     null
+    ],
+    [
+     "EMITTER_ID",
+     "Код эмитента",
+     "484",
+     "number",
+     11000,
+     1,
+     null
+    ],
+    [
+     "EMITTER_VALUE_BUILDING",
+     "Участник программы создания акционерной стоимости",
+     "1",
+     "boolean",
+     11001,
+     1,
+     0
+    ]
+   ]
+  },
+  "boards": {
+   "columns": [
+    "secid",
+    "boardid",
+    "title",
+    "board_group_id",
+    "market_id",
+    "market",
+    "engine_id",
+    "engine",
+    "is_traded",
+    "decimals",
+    "history_from",
+    "history_till",
+    "listed_from",
+    "listed_till",
+    "is_primary",
+    "currencyid",
+    "unit"
+   ],
+   "data": [
+    [
+     "SBER",
+     "TQBR",
+     "Т+: Акции и ДР - безадрес.",
+     57,
+     1,
+     "shares",
+     1,
+     "stock",
+     1,
+     2,
+     "2013-03-25",
+     "2026-10-14",
+     "2013-03-25",
+     "2026-10-15",
+     1,
+     "RUB",
+     "M"
+    ],
+    [
+     "SBER",
+     "EQBR",
+     "Основной режим: А1-Акции и паи - безадрес.",
+     6,
+     1,
+     "shares",
+     1,
+     "stock",
+     0,
+     2,
+     "2011-11-21",
+     "2013-08-30",
+     "2011-11-21",
+     "2013-08-30",
+     0,
+     "RUB",
+     "M"
+    ],
+    [
+     "SBER",
+     "SMAL",
+     "Т+: Неполные лоты (акции) - безадрес.",
+     21,
+     1,
+     "shares",
+     1,
+     "stock",
+     0,
+     2,
+     "2011-11-21",
+     "2025-07-31",
+     "2011-11-21",
+     "2025-08-01",
+     0,
+     "RUB",
+     "M"
+    ],
+    [
+     "SBER",
+     "TQDP",
+     "Крупные пакеты - Акции - безадрес.",
+     42,
+     1,
+     "shares",
+     1,
+     "stock",
+     0,
+     2,
+     null,
+     null,
+     "2019-03-04",
+     "2023-02-15",
+     0,
+     "RUB",
+     "M"
+    ],
+    [
+     "SBER",
+     "EQDP",
+     "Крупные пакеты - Акции - безадрес.",
+     42,
+     1,
+     "shares",
+     1,
+     "stock",
+     0,
+     2,
+     "2011-12-12",
+     "2019-03-01",
+     "2011-12-12",
+     "2019-03-01",
+     0,
+     "RUB",
+     "M"
+    ],
+    [
+     "SBER",
+     "LIQB",
+     "Продажа обеспечения бирж.рынок - безадрес.",
+     120,
+     36,
+     "mamc",
+     1,
+     "stock",
+     1,
+     2,
+     "2018-07-11",
+     "2018-07-11",
+     "2018-05-21",
+     "2026-10-15",
+     0,
+     null,
+     "M"
+    ],
+    [
+     "SBER",
+     "RPEY",
+     "РЕПО в ин.валюте (CNY) - адрес.",
+     2,
+     3,
+     "repo",
+     1,
+     "stock",
+     1,
+     4,
+     null,
+     null,
+     "2022-09-26",
+     "2026-10-15",
+     0,
+     "CNY",
+     "%"
+    ],
+    [
+     "SBER",
+     "RPMA",
+     "РЕПО c акциями - адрес.",
+     95,
+     3,
+     "repo",
+     1,
+     "stock",
+     0,
+     4,
+     "2011-11-21",
+     "2019-04-19",
+     "2011-11-21",
+     "2020-03-04",
+     0,
+     "RUB",
+     "%"
+    ],
+    [
+     "SBER",
+     "RPEU",
+     "РЕПО в ин. валюте (USD) - адрес.",
+     94,
+     3,
+     "repo",
+     1,
+     "stock",
+     1,
+     4,
+     "2020-02-20",
+     "2022-02-10",
+     "2019-04-22",
+     "2026-10-15",
+     0,
+     "USD",
+     "%"
+    ],
+    [
+     "SBER",
+     "RPUA",
+     "РЕПО c акциями (USD) - адрес.",
+     94,
+     3,
+     "repo",
+     1,
+     "stock",
+     0,
+     4,
+     null,
+     null,
+     "2013-09-02",
+     "2019-05-31",
+     0,
+     "USD",
+     "%"
+    ],
+    [
+     "SBER",
+     "RPEO",
+     "РЕПО в ин. валюте (EUR) - адрес.",
+     90,
+     3,
+     "repo",
+     1,
+     "stock",
+     1,
+     4,
+     "2020-04-16",
+     "2022-02-14",
+     "2019-04-22",
+     "2026-10-15",
+     0,
+     "EUR",
+     "%"
+    ],
+    [
+     "SBER",
+     "SPEQ",
+     "Поставка по СК (акции)",
+     125,
+     1,
+     "shares",
+     1,
+     "stock",
+     1,
+     6,
+     "2018-06-29",
+     "2026-09-18",
+     "2018-06-29",
+     "2026-10-15",
+     0,
+     "RUB",
+     "M"
+    ],
+    [
+     "SBER",
+     "SOTC",
+     "Репортинг внебиржевых сделок (6264-У)",
+     71,
+     29,
+     "otc",
+     1,
+     "stock",
+     0,
+     5,
+     "2014-02-24",
+     "2022-12-02",
+     "2009-09-01",
+     "2022-12-03",
+     0,
+     null,
+     "M"
+    ],
+    [
+     "SBER",
+     "MXBD",
+     "MOEX Board",
+     72,
+     33,
+     "moexboard",
+     1,
+     "stock",
+     0,
+     4,
+     "2015-08-03",
+     "2025-11-28",
+     "2015-08-03",
+     "2025-11-28",
+     0,
+     null,
+     "M"
+    ],
+    [
+     "SBER",
+     "EQRP",
+     "РЕПО с ЦК 1 день - безадрес.",
+     50,
+     27,
+     "ccp",
+     1,
+     "stock",
+     1,
+     3,
+     "2013-09-02",
+     "2026-10-14",
+     "2013-09-02",
+     "2026-10-15",
+     0,
+     "RUB",
+     "%"
+    ],
+    [
+     "SBER",
+     "EQRD",
+     "РЕПО с ЦК 1 день (USD) - безадрес.",
+     92,
+     27,
+     "ccp",
+     1,
+     "stock",
+     1,
+     4,
+     "2015-11-13",
+     "2022-05-12",
+     "2015-06-01",
+     "2026-10-15",
+     0,
+     "USD",
+     "%"
+    ],
+    [
+     "SBER",
+     "EQRE",
+     "РЕПО с ЦК 1 день (EUR) - безадрес.",
+     93,
+     27,
+     "ccp",
+     1,
+     "stock",
+     1,
+     4,
+     null,
+     null,
+     "2015-06-01",
+     "2026-10-15",
+     0,
+     "EUR",
+     "%"
+    ],
+    [
+     "SBER",
+     "EQRY",
+     "РЕПО с ЦК 1 день (CNY) - безадрес.",
+     152,
+     27,
+     "ccp",
+     1,
+     "stock",
+     1,
+     4,
+     "2024-03-20",
+     "2025-09-09",
+     "2019-03-07",
+     "2026-10-15",
+     0,
+     "CNY",
+     "%"
+    ],
+    [
+     "SBER",
+     "EQWP",
+     "РЕПО с ЦК 7 дн. - безадрес.",
+     76,
+     27,
+     "ccp",
+     1,
+     "stock",
+     1,
+     3,
+     "2015-06-09",
+     "2026-10-12",
+     "2015-06-01",
+     "2026-10-15",
+     0,
+     "RUB",
+     "%"
+    ],
+    [
+     "SBER",
+     "EQWD",
+     "РЕПО с ЦК 7 дней (USD) - безадрес.",
+     78,
+     27,
+     "ccp",
+     1,
+     "stock",
+     1,
+     4,
+     "2019-12-24",
+     "2020-02-21",
+     "2016-01-26",
+     "2026-10-15",
+     0,
+     "USD",
+     "%"
+    ],
+    [
+     "SBER",
+     "EQWE",
+     "РЕПО с ЦК 7 дней (EUR) - безадрес.",
+     79,
+     27,
+     "ccp",
+     1,
+     "stock",
+     1,
+     4,
+     null,
+     null,
+     "2016-01-26",
+     "2026-10-15",
+     0,
+     "EUR",
+     "%"
+    ],
+    [
+     "SBER",
+     "EQWY",
+     "РЕПО с ЦК 7 дней (CNY) - безадрес.",
+     1116,
+     27,
+     "ccp",
+     1,
+     "stock",
+     1,
+     4,
+     "2024-02-07",
+     "2024-02-07",
+     "2022-09-26",
+     "2026-10-15",
+     0,
+     "CNY",
+     "%"
+    ],
+    [
+     "SBER",
+     "LIQR",
+     "РЕПО с ЦК: Урегулирование - безадрес.",
+     148,
+     27,
+     "ccp",
+     1,
+     "stock",
+     1,
+     4,
+     "2019-08-26",
+     "2026-08-26",
+     "2019-03-04",
+     "2026-10-15",
+     0,
+     "RUB",
+     "%"
+    ],
+    [
+     "SBER",
+     "PSRP",
+     "РЕПО с ЦК - адрес.",
+     65,
+     27,
+     "ccp",
+     1,
+     "stock",
+     1,
+     3,
+     "2013-07-08",
+     "2026-10-14",
+     "2013-07-08",
+     "2026-10-15",
+     0,
+     "RUB",
+     "%"
+    ],
+    [
+     "SBER",
+     "PSRD",
+     "РЕПО с ЦК (USD) - адрес.",
+     91,
+     27,
+     "ccp",
+     1,
+     "stock",
+     1,
+     4,
+     "2016-02-02",
+     "2024-06-11",
+     "2015-06-01",
+     "2026-10-15",
+     0,
+     "USD",
+     "%"
+    ],
+    [
+     "SBER",
+     "PSRE",
+     "РЕПО с ЦК (EUR) - адрес.",
+     96,
+     27,
+     "ccp",
+     1,
+     "stock",
+     1,
+     4,
+     "2019-04-01",
+     "2023-02-10",
+     "2015-06-01",
+     "2026-10-15",
+     0,
+     "EUR",
+     "%"
+    ],
+    [
+     "SBER",
+     "PSRY",
+     "РЕПО с ЦК (CNY) - адрес.",
+     153,
+     27,
+     "ccp",
+     1,
+     "stock",
+     1,
+     4,
+     "2022-12-22",
+     "2026-10-14",
+     "2019-03-07",
+     "2026-10-15",
+     0,
+     "CNY",
+     "%"
+    ],
+    [
+     "SBER",
+     "PSRK",
+     "РЕПО с ЦК (KZT) - адрес.",
+     1422,
+     27,
+     "ccp",
+     1,
+     "stock",
+     1,
+     4,
+     null,
+     null,
+     "2025-06-23",
+     "2026-10-15",
+     0,
+     "KZT",
+     "%"
+    ],
+    [
+     "SBER",
+     "PSRB",
+     "РЕПО с ЦК (BYN) - адрес.",
+     1424,
+     27,
+     "ccp",
+     1,
+     "stock",
+     1,
+     4,
+     null,
+     null,
+     "2025-06-23",
+     "2026-10-15",
+     0,
+     "BYN",
+     "%"
+    ],
+    [
+     "SBER",
+     "PTEQ",
+     "РПС с ЦК: Акции и ДР - адрес.",
+     59,
+     4,
+     "ndm",
+     1,
+     "stock",
+     1,
+     2,
+     "2013-03-26",
+     "2026-10-13",
+     "2013-03-25",
+     "2026-10-15",
+     0,
+     "RUB",
+     "M"
+    ],
+    [
+     "SBER",
+     "PSEQ",
+     "РПС: Акции - адрес.",
+     8,
+     4,
+     "ndm",
+     1,
+     "stock",
+     1,
+     2,
+     "2011-11-21",
+     "2026-10-09",
+     "2011-11-21",
+     "2026-10-15",
+     0,
+     "RUB",
+     "M"
+    ],
+    [
+     "SBER",
+     "PSAU",
+     "Размещение - адрес.",
+     107,
+     4,
+     "ndm",
+     1,
+     "stock",
+     0,
+     2,
+     "2012-09-17",
+     "2012-09-19",
+     "2012-09-17",
+     "2012-09-19",
+     0,
+     "RUB",
+     "M"
+    ],
+    [
+     "SBER",
+     "MPTR",
+     "ОТС: Акции РПС с ЦК - адресные",
+     1260,
+     1262,
+     "sharesndm",
+     1012,
+     "otc",
+     1,
+     2,
+     "2023-04-27",
+     "2026-09-14",
+     "2023-04-10",
+     "2026-10-15",
+     0,
+     "RUB",
+     "M"
+    ],
+    [
+     "SBER",
+     "RPMO",
+     "РЕПО-М - адрес.",
+     201,
+     3,
+     "repo",
+     1,
+     "stock",
+     1,
+     4,
+     "2019-04-22",
+     "2026-10-14",
+     "2019-04-22",
+     "2026-10-15",
+     0,
+     "RUB",
+     "%"
+    ],
+    [
+     "SBER",
+     "RPEK",
+     "РЕПО-М в ин. валюте: (KZT) - адрес.",
+     1426,
+     3,
+     "repo",
+     1,
+     "stock",
+     1,
+     4,
+     null,
+     null,
+     "2025-06-23",
+     "2026-10-15",
+     0,
+     "KZT",
+     "%"
+    ],
+    [
+     "SBER",
+     "RPEB",
+     "РЕПО-М в ин. валюте: (BYN) - адрес.",
+     1428,
+     3,
+     "repo",
+     1,
+     "stock",
+     1,
+     4,
+     null,
+     null,
+     "2025-06-23",
+     "2026-10-15",
+     0,
+     "BYN",
+     "%"
+    ],
+    [
+     "SBER",
+     "CIQR",
+     "Урегулирование РЕПО с ЦК Нерезиденты - безадрес.",
+     1080,
+     1019,
+     "nonresccp",
+     1,
+     "stock",
+     1,
+     4,
+     null,
+     null,
+     "2022-06-27",
+     "2026-10-15",
+     0,
+     "RUB",
+     "%"
+    ],
+    [
+     "SBER",
+     "CIQB",
+     "Урегулирование с ЦК Нерезиденты - безадрес.",
+     1082,
+     36,
+     "mamc",
+     1,
+     "stock",
+     1,
+     2,
+     null,
+     null,
+     "2022-06-27",
+     "2026-10-15",
+     0,
+     null,
+     "M"
+    ],
+    [
+     "SBER",
+     "CTEQ",
+     "РПС с ЦК Нерезиденты: Акции и ДР - адрес.",
+     1056,
+     1015,
+     "nonresndm",
+     1,
+     "stock",
+     1,
+     2,
+     null,
+     null,
+     "2022-06-27",
+     "2026-10-15",
+     0,
+     "RUB",
+     "M"
+    ],
+    [
+     "SBER",
+     "CPMO",
+     "РЕПО-M Нерезиденты - адрес.",
+     1071,
+     1017,
+     "nonresrepo",
+     1,
+     "stock",
+     1,
+     4,
+     null,
+     null,
+     "2022-06-27",
+     "2026-10-15",
+     0,
+     "RUB",
+     "%"
+    ],
+    [
+     "SBER",
+     "CPEU",
+     "РЕПО-M Нерезиденты (USD) - адрес.",
+     1073,
+     1017,
+     "nonresrepo",
+     1,
+     "stock",
+     1,
+     4,
+     null,
+     null,
+     "2022-06-27",
+     "2026-10-15",
+     0,
+     "USD",
+     "%"
+    ],
+    [
+     "SBER",
+     "CPEO",
+     "РЕПО-M Нерезиденты (EUR) - адрес.",
+     1075,
+     1017,
+     "nonresrepo",
+     1,
+     "stock",
+     1,
+     4,
+     null,
+     null,
+     "2022-06-27",
+     "2026-10-15",
+     0,
+     "EUR",
+     "%"
+    ],
+    [
+     "SBER",
+     "CPEY",
+     "РЕПО-M Нерезиденты (CNY) - адрес.",
+     1077,
+     1017,
+     "nonresrepo",
+     1,
+     "stock",
+     1,
+     4,
+     null,
+     null,
+     "2022-09-26",
+     "2026-10-15",
+     0,
+     "CNY",
+     "%"
+    ],
+    [
+     "SBER",
+     "CLMR",
+     "Classica - безадрес.",
+     43,
+     25,
+     "classica",
+     1,
+     "stock",
+     0,
+     2,
+     "2012-02-13",
+     "2015-07-31",
+     "2011-12-19",
+     "2015-07-31",
+     0,
+     "RUB",
+     "M"
+    ],
+    [
+     "SBER",
+     "CLAD",
+     "Classica - адрес.",
+     44,
+     25,
+     "classica",
+     1,
+     "stock",
+     0,
+     2,
+     "2011-12-19",
+     "2015-07-31",
+     "2011-12-19",
+     "2015-07-31",
+     0,
+     "RUB",
+     "M"
+    ],
+    [
+     "SBER",
+     "STMR",
+     "Standard: дневная сессия - безадрес.",
+     36,
+     23,
+     "standard",
+     1,
+     "stock",
+     0,
+     2,
+     "2011-12-19",
+     "2015-07-31",
+     "2011-12-19",
+     "2015-07-31",
+     0,
+     "RUB",
+     "M"
+    ],
+    [
+     "SBER",
+     "SDMR",
+     "Standard: вечерняя сессия - безадрес.",
+     36,
+     23,
+     "standard",
+     1,
+     "stock",
+     0,
+     2,
+     "2011-12-19",
+     "2015-07-31",
+     "2011-12-19",
+     "2015-07-31",
+     0,
+     "RUB",
+     "M"
+    ],
+    [
+     "SBER",
+     "STRP",
+     "Standard: сделки репо, дневная сессия - адрес.",
+     40,
+     23,
+     "standard",
+     1,
+     "stock",
+     0,
+     2,
+     "2011-12-19",
+     "2015-07-31",
+     "2011-12-19",
+     "2015-07-31",
+     0,
+     "RUB",
+     "M"
+    ],
+    [
+     "SBER",
+     "SDRP",
+     "Standard: сделки репо, вечерняя сессия - адрес.",
+     40,
+     23,
+     "standard",
+     1,
+     "stock",
+     0,
+     2,
+     "2011-12-19",
+     "2014-02-17",
+     "2011-12-19",
+     "2014-02-17",
+     0,
+     "RUB",
+     "M"
+    ],
+    [
+     "SBER",
+     "STAD",
+     "Standard: дневная сессия - адрес.",
+     41,
+     23,
+     "standard",
+     1,
+     "stock",
+     0,
+     2,
+     "2011-12-19",
+     "2015-07-31",
+     "2011-12-19",
+     "2015-07-31",
+     0,
+     "RUB",
+     "M"
+    ],
+    [
+     "SBER",
+     "SDAD",
+     "Standard: вечерняя сессия - адрес.",
+     41,
+     23,
+     "standard",
+     1,
+     "stock",
+     0,
+     2,
+     "2011-12-19",
+     "2014-02-17",
+     "2011-12-19",
+     "2014-02-17",
+     0,
+     "RUB",
+     "M"
+    ]
+   ]
+  }
  },
- "fomc_heads": [
-  "2026",
-  "2025",
-  "2024",
-  "2023",
-  "2022",
-  "2021",
-  "2027"
- ],
- "fomc_html": "ts and the FOIA process.</p>\r\n\r\n<p><a href=\"#42828\">2026</a> | <a href=\"#42827\">2025</a> | <a href=\"#39116\">2024</a> | <a href=\"#36495\">2023</a> | <a href=\"#32979\">2022</a> | <a href=\"#27443\">2021</a><br />\r\nFuture Year: <a href=\"#45694\">2027</a> <!--Next year: --></p>\r\n                    \r\n                    \r\n\r\n<div class=\"panel panel-default\"><div class=\"panel-heading\"><h4><a id=\"42828\">2026 FOMC Meetings</a></h4></div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n        <div class=\"row fomc-meeting\" \">\r\n        \r\n            <div class=\"fomc-meeting__month col-xs-5 col-sm-3 col-md-2\"><strong>January</strong></div>\r\n                \r\n            <div class=\"fomc-meeting__date col-xs-4 col-sm-9 col-md-10 col-lg-1\">27-28</div>\r\n            <div class=\"col-xs-12 col-md-4 col-lg-2\">\r\n        \r\n               \r\n               <strong>Statement:</strong><br>\r\n               <a href=\"/monetarypolicy/files/monetary20260128a1.pdf\">PDF</a> | <a href=\"/newsevents/pressreleases/monetary20260128a.htm\">HTML</a><br>\r\n               \r\n                \r\n                <a href=\"/newsevents/pressreleases/monetary20260128a1.htm\">Implementation Note</a>\r\n            </div>\r\n            <div class=\"col-xs-12 col-md-4 col-lg-3\">\r\n                <a href=\"/monetarypolicy/fomcpressconf20260128.htm\">Press Conference</a><br>\r\n                \r\n                <br>\r\n                <a href=\"/newsevents/pressreleases/monetary20260128b.htm\">Statement on Longer-Run Goals and Monetary Policy Strategy</a>\r\n                \r\n            </div>\r\n            <div class=\"col-xs-12 col-md-4 col-lg-4 fomc-meeting__minutes\">\r\n                \r\n                <strong>Minutes:</strong><br>\r\n                \r\n                <a href=\"/monetarypolicy/files/fomcminutes20260128.pdf\">PDF</a> | <a href=\"/monetarypolicy/fomcminutes20260128.htm\">HTML</a>\r\n                <br> (Released February 18, 2026)\r\n                \r\n                \r\n            </div>\r\n        </div>\r\n        \r\n\r\n\r\n\r\n\r\n        <div class=\"fomc-meeting--shaded row fomc-meeting\" \">\r\n        \r\n            <div class=\"fomc-meeting--shaded fomc-meeting__month col-xs-5 col-sm-3 col-md-2\"><strong>March</strong></div>\r\n                \r\n            <div class=\"fomc-me",
- "bis": {
-  "status": 200,
-  "header": [
-   "FREQ",
-   "REF_AREA",
-   "UNIT_MEASURE",
-   "UNIT_MULT",
-   "TIME_FORMAT",
-   "COMPILATION",
+ "moex_tqbr": {
+  "sec_cols": [
+   "SECID",
+   "BOARDID",
+   "SHORTNAME",
+   "PREVPRICE",
+   "LOTSIZE",
+   "FACEVALUE",
+   "STATUS",
+   "BOARDNAME",
    "DECIMALS",
-   "SOURCE_REF",
-   "SUPP_INFO_BREAKS",
-   "TITLE",
-   "TIME_PERIOD",
-   "OBS_VALUE",
-   "OBS_STATUS",
-   "OBS_CONF",
-   "OBS_PRE_BREAK"
+   "SECNAME",
+   "REMARKS",
+   "MARKETCODE",
+   "INSTRID",
+   "SECTORID",
+   "MINSTEP",
+   "PREVWAPRICE",
+   "FACEUNIT",
+   "PREVDATE",
+   "ISSUESIZE",
+   "ISIN",
+   "LATNAME",
+   "REGNUMBER",
+   "PREVLEGALCLOSEPRICE",
+   "CURRENCYID",
+   "SECTYPE",
+   "LISTLEVEL",
+   "SETTLEDATE"
   ],
-  "rows": [
-   "D,AU,368,0,,From 2 Aug 1990 onwards: cash rate target; from  ... tes - Australia - Daily - End of period,2026-09-24,4.35,A,F,",
-   "D,CA,368,0,,\"From 1 Jun 1994 onwards: Central Bank target, o ...  rates - Canada - Daily - End of period,2026-10-05,2.25,A,F,",
-   "D,CH,368,0,,From 13 June 2019 onwards SNB Policy rate; From  ... ates - Switzerland - Daily - End of period,2026-10-06,0,A,F,",
-   "D,CN,368,0,,From 20 Aug 2019 onwards: Loan Prime Rate  (1 ye ... licy rates - China - Daily - End of period,2026-10-06,3,A,F,",
-   "D,GB,368,0,,From 3 Aug 2006 onwards: official bank rate; fro ...  United Kingdom - Daily - End of period,2026-10-05,3.75,A,F,",
-   "D,IN,368,0,,From 3 Apr 2001 onwards: official repo overnight ... y rates - India - Daily - End of period,2026-07-23,5.25,A,F,",
-   "D,JP,368,0,,\"From 24 Sep 2026: the BOJ encourages the uncoll ... y rates - Japan - Daily - End of period,2026-10-06,1.25,A,F,",
-   "D,KR,368,0,,From 7 Mar 2008 onwards: Bank of Korea base rate ... licy rates - Korea - Daily - End of period,2026-08-28,3,A,F,",
-   "D,MX,368,0,,\"From 21 Jan 2008 onwards: Central Bank target,  ... y rates - Mexico - Daily - End of period,2026-10-06,6.5,A,F,",
-   "D,RU,368,0,,From 13 Sept 2013 onwards: official key rate; fr ... cy rates - Russia - Daily - End of period,2026-10-06,14,A,F,",
-   "D,TR,368,0,,From 20 May 2010 onwards: 1 week official repo r ... y rates - Türkiye - Daily - End of period,2026-10-02,37,A,F,",
-   "D,US,368,0,,From 19 Dec 1985 onwards: mid-point of the Feder ...  United States - Daily - End of period,2026-10-06,3.875,A,F,",
-   "D,XM,368,0,,\"From 18 Sep 2024 onwards: official central bank ... ates - Euro area - Daily - End of period,2026-10-06,2.5,A,F,",
-   "D,ZA,368,0,,Official repo rate.,4,South African Reserve Bank ...  - South Africa - Daily - End of period,2026-10-05,7.25,A,F,",
-   "D,BR,368,0,,\"From 5 Mar 1999 onwards Central Bank target, mo ... rates - Brazil - Daily - End of period,2026-10-06,13.75,A,F,"
+  "sec_row": [
+   [
+    "ABIO",
+    "TQBR",
+    "iАРТГЕН ао",
+    44.52,
+    1,
+    0.1,
+    "A",
+    "Т+: Акции и ДР - безадрес.",
+    2,
+    "ПАО \"Артген\"",
+    null,
+    "FNDT",
+    "EQIN",
+    null,
+    0.02,
+    46.06,
+    "SUR",
+    "2026-10-14",
+    92645451,
+    "RU000A0JNAB6",
+    "ARTGEN ao",
+    "1-01-08902-A",
+    45.38,
+    "SUR",
+    "1",
+    2,
+    "2026-10-16"
+   ],
+   [
+    "ABRD",
+    "TQBR",
+    "АбрауДюрсо",
+    117.6,
+    10,
+    1,
+    "A",
+    "Т+: Акции и ДР - безадрес.",
+    1,
+    "Абрау-Дюрсо ПАО ао",
+    null,
+    "FNDT",
+    "EQIN",
+    null,
+    0.2,
+    116.4,
+    "SUR",
+    "2026-10-14",
+    108889117,
+    "RU000A0JS5T7",
+    "Abrau-Durso ao",
+    "1-02-12500-A",
+    117,
+    "SUR",
+    "1",
+    3,
+    "2026-10-16"
+   ]
+  ],
+  "md_cols": [
+   "SECID",
+   "BOARDID",
+   "BID",
+   "BIDDEPTH",
+   "OFFER",
+   "OFFERDEPTH",
+   "SPREAD",
+   "BIDDEPTHT",
+   "OFFERDEPTHT",
+   "OPEN",
+   "LOW",
+   "HIGH",
+   "LAST",
+   "LASTCHANGE",
+   "LASTCHANGEPRCNT",
+   "QTY",
+   "VALUE",
+   "VALUE_USD",
+   "WAPRICE",
+   "LASTCNGTOLASTWAPRICE",
+   "WAPTOPREVWAPRICEPRCNT",
+   "WAPTOPREVWAPRICE",
+   "CLOSEPRICE",
+   "MARKETPRICETODAY",
+   "MARKETPRICE",
+   "LASTTOPREVPRICE",
+   "NUMTRADES",
+   "VOLTODAY",
+   "VALTODAY",
+   "VALTODAY_USD",
+   "ETFSETTLEPRICE",
+   "TRADINGSTATUS",
+   "UPDATETIME",
+   "LASTBID",
+   "LASTOFFER",
+   "LCLOSEPRICE",
+   "LCURRENTPRICE",
+   "MARKETPRICE2",
+   "NUMBIDS",
+   "NUMOFFERS",
+   "CHANGE",
+   "TIME",
+   "HIGHBID",
+   "LOWOFFER",
+   "PRICEMINUSPREVWAPRICE",
+   "OPENPERIODPRICE",
+   "SEQNUM",
+   "SYSTIME",
+   "CLOSINGAUCTIONPRICE",
+   "CLOSINGAUCTIONVOLUME",
+   "ISSUECAPITALIZATION",
+   "ISSUECAPITALIZATION_UPDATETIME",
+   "ETFSETTLECURRENCY",
+   "VALTODAY_RUR",
+   "TRADINGSESSION",
+   "TRENDISSUECAPITALIZATION"
+  ],
+  "md_row": [
+   [
+    "ABIO",
+    "TQBR",
+    44.14,
+    null,
+    44.16,
+    null,
+    0.02,
+    88667,
+    144671,
+    44.6,
+    44.08,
+    45.5,
+    44.14,
+    0.04,
+    0.09,
+    2,
+    88.28,
+    1.05,
+    44.54,
+    -1.92,
+    -3.3,
+    -1.52,
+    null,
+    null,
+    46.3,
+    -0.85,
+    671,
+    37666,
+    1677429,
+    19981,
+    null,
+    "T",
+    "14:04:29",
+    null,
+    null,
+    null,
+    44.14,
+    null,
+    null,
+    null,
+    -0.38,
+    "14:03:16",
+    null,
+    null,
+    -1.92,
+    null,
+    20261015141930,
+    "2026-10-15 14:19:30",
+    null,
+    null,
+    4113458024.4,
+    "14:13:56",
+    null,
+    1677429,
+    "1",
+    -11117454.12
+   ],
+   [
+    "ABRD",
+    "TQBR",
+    116,
+    null,
+    116.4,
+    null,
+    0.4,
+    3558,
+    3943,
+    117.2,
+    116,
+    118,
+    116,
+    -0.6,
+    -0.51,
+    1,
+    1160.0,
+    13.82,
+    117,
+    -0.4,
+    0.52,
+    0.6,
+    null,
+    null,
+    116.8,
+    -1.36,
+    157,
+    11970,
+    1399606,
+    16672,
+    null,
+    "T",
+    "14:04:51",
+    null,
+    null,
+    null,
+    116,
+    null,
+    null,
+    null,
+    -1.6,
+    "14:00:05",
+    null,
+    null,
+    -0.4,
+    null,
+    20261015141952,
+    "2026-10-15 14:19:52",
+    null,
+    null,
+    12674693218.8,
+    "14:17:23",
+    null,
+    1399606,
+    "1",
+    -130666940.4
+   ]
+  ],
+  "n": 510
+ },
+ "moex_imoex_parts": {
+  "analytics": [
+   [
+    "indexid",
+    "tradedate",
+    "ticker",
+    "shortnames",
+    "secids",
+    "weight",
+    "tradingsession",
+    "trade_session_date"
+   ],
+   [
+    [
+     "IMOEX",
+     "2026-10-14",
+     "AFKS",
+     "Система ао",
+     "AFKS",
+     0.25,
+     3,
+     "2026-10-14"
+    ],
+    [
+     "IMOEX",
+     "2026-10-14",
+     "AFLT",
+     "Аэрофлот",
+     "AFLT",
+     0.47,
+     3,
+     "2026-10-14"
+    ],
+    [
+     "IMOEX",
+     "2026-10-14",
+     "ALRS",
+     "АЛРОСА ао",
+     "ALRS",
+     0.34,
+     3,
+     "2026-10-14"
+    ]
+   ],
+   44
+  ],
+  "analytics.cursor": [
+   [
+    "INDEX",
+    "TOTAL",
+    "PAGESIZE",
+    "PREV_DATE",
+    "NEXT_DATE"
+   ],
+   [
+    [
+     0,
+     44,
+     100,
+     "2026-10-13",
+     null
+    ]
+   ],
+   1
+  ],
+  "analytics.dates": [
+   [
+    "from",
+    "till"
+   ],
+   [
+    [
+     "2001-01-03",
+     "2026-10-14"
+    ]
+   ],
+   1
   ]
  },
- "yahoo_brkb": 200,
- "yahoo_gspc_1y": 200
+ "nasdaq_short": {
+  "data": {
+   "symbol": "aapl",
+   "shortInterestTable": {
+    "headers": {
+     "settlementDate": "Settlement Date",
+     "interest": "Short Interest",
+     "avgDailyShareVolume": "Avg. Daily Share Volume",
+     "daysToCover": "Days to Cover"
+    },
+    "rows": [
+     {
+      "settlementDate": "09/30/2026",
+      "interest": "120,763,539",
+      "avgDailyShareVolume": "39,858,260",
+      "daysToCover": 3.029825
+     },
+     {
+      "settlementDate": "09/15/2026",
+      "interest": "128,753,092",
+      "avgDailyShareVolume": "45,135,477",
+      "daysToCover": 2.852592
+     },
+     {
+      "settlementDate": "08/31/2026",
+      "interest": "139,749,097",
+      "avgDailyShareVolume": "39,537,335",
+      "daysToCover": 3.534611
+     },
+     {
+      "settlementDate": "08/14/2026",
+      "interest": "116,327,753",
+      "avgDailyShareVolume": "46,065,396",
+      "daysToCover": 2.525274
+     },
+     {
+      "settlementDate": "07/31/2026",
+      "interest": "141,606,163",
+      "avgDailyShareVolume": "58,400,983",
+      "daysToCover": 2.424722
+     },
+     {
+      "settlementDate": "07/15/2026",
+      "interest": "146,547,784",
+      "avgDailyShareVolume": "47,952,794",
+      "daysToCover": 3.056084
+     },
+     {
+      "settlementDate": "06/30/2026",
+      "interest": "140,526,320",
+      "avgDailyShareVolume": "81,121,306",
+      "daysToCover": 1.732299
+     },
+     {
+      "settlementDate": "06/15/2026",
+      "interest": "144,248,476",
+      "avgDailyShareVolume": "52,343,843",
+      "daysToCover": 2.755787
+     },
+     {
+      "settlementDate": "05/29/2026",
+      "interest": "155,886,024",
+      "avgDailyShareVolume": "46,064,146",
+      "daysToCover": 3.384108
+     },
+     {
+      "settlementDate": "05/15/2026",
+      "interest": "138,782,718",
+      "avgDailyShareVolume": "50,565,316",
+      "daysToCover": 2.744623
+     },
+     {
+      "settlementDate": "04/30/2026",
+      "interest": "134,675,274",
+      "avgDailyShareVolume": "45,944,025",
+      "daysToCover": 2.93129
+     },
+     {
+      "settlementDate": "04/15/2026",
+      "interest": "134,422,787",
+      "avgDailyShareVolume": "39,674,165",
+      "daysToCover": 3.388169
+     },
+     {
+      "settlementDate": "03/31/2026",
+      "interest": "126,771,284",
+      "avgDailyShareVolume": "42,873,045",
+      "daysToCover": 2.956899
+     },
+     {
+      "settlementDate": "03/13/2026",
+      "interest": "124,192,030",
+      "avgDailyShareVolume": "38,121,907",
+      "daysToCover": 3.25776
+     },
+     {
+      "settlementDate": "02/27/2026",
+      "interest": "129,553,812",
+      "avgDailyShareVolume": "39,794,651",
+      "daysToCover": 3.255558
+     },
+     {
+      "settlementDate": "02/13/2026",
+      "interest": "133,373,267",
+      "avgDailyShareVolume": "59,148,111",
+      "daysToCover": 2.254903
+     },
+     {
+      "settlementDate": "01/30/2026",
+      "interest": "116,854,414",
+      "avgDailyShareVolume": "58,429,082",
+      "daysToCover": 1.999936
+     },
+     {
+      "settlementDate": "01/15/2026",
+      "interest": "113,576,032",
+      "avgDailyShareVolume": "43,772,789",
+      "daysToCover": 2.594672
+     },
+     {
+      "settlementDate": "12/31/2025",
+      "interest": "112,732,788",
+      "avgDailyShareVolume": "41,632,615",
+      "daysToCover": 2.7078
+     },
+     {
+      "settlementDate": "12/15/2025",
+      "interest": "122,035,714",
+      "avgDailyShareVolume": "41,372,302",
+      "daysToCover": 2.949696
+     },
+     {
+      "settlementDate": "11/28/2025",
+      "interest": "129,458,559",
+      "avgDailyShareVolume": "44,036,020",
+      "daysToCover": 2.939833
+     },
+     {
+      "settlementDate": "11/14/2025",
+      "interest": "114,913,396",
+      "avgDailyShareVolume": "47,053,455",
+      "daysToCover": 2.442188
+     },
+     {
+      "settlementDate": "10/31/2025",
+      "interest": "115,557,836",
+      "avgDailyShareVolume": "52,555,048",
+      "daysToCover": 2.198796
+     },
+     {
+      "settlementDate": "10/15/2025",
+      "interest": "109,135,657",
+      "avgDailyShareVolume": "41,519,913",
+      "daysToCover": 2.628514
+     }
+    ]
+   }
+  },
+  "message": null,
+  "status": {
+   "rCode": 200,
+   "bCodeMessage": null,
+   "developerMessage": null
+  }
+ },
+ "nasdaq_earn_date": [
+  {
+   "lastYearRptDt": "10/18/2025",
+   "lastYearEPS": "$0.44",
+   "time": "time-not-supplied",
+   "symbol": "HDB",
+   "name": "HDFC Bank Limited",
+   "marketCap": "$116,784,357,000",
+   "fiscalQuarterEnding": "Sep/2026",
+   "epsForecast": "$0.40",
+   "noOfEsts": "2"
+  },
+  {
+   "lastYearRptDt": "10/18/2025",
+   "lastYearEPS": "$0.39",
+   "time": "time-not-supplied",
+   "symbol": "IBN",
+   "name": "ICICI Bank Limited",
+   "marketCap": "$102,174,810,000",
+   "fiscalQuarterEnding": "Sep/2026",
+   "epsForecast": "$0.40",
+   "noOfEsts": "2"
+  }
+ ],
+ "finnhub_ipo": [
+  {
+   "date": "2026-10-16",
+   "exchange": "NASDAQ Global",
+   "name": "CITY THERAPEUTICS, INC.",
+   "numberOfShares": 9722222,
+   "price": "17.00-19.00",
+   "status": "expected",
+   "symbol": "CTY",
+   "totalSharesValue": 212430545
+  },
+  {
+   "date": "2026-10-15",
+   "exchange": "NASDAQ Global Select",
+   "name": "Iambic Therapeutics, Inc.",
+   "numberOfShares": 9375000,
+   "price": "15.00-17.00",
+   "status": "expected",
+   "symbol": "IAM",
+   "totalSharesValue": 183281250
+  },
+  {
+   "date": "2026-10-15",
+   "exchange": "NASDAQ Global",
+   "name": "SPACCircle Acquisition Corp.",
+   "numberOfShares": 15000000,
+   "price": "10.00",
+   "status": "expected",
+   "symbol": "SCQCU",
+   "totalSharesValue": 172500000
+  }
+ ],
+ "wiki_ru_sber": {
+  "type": "standard",
+  "title": "Сбербанк России",
+  "displaytitle": "<span lang=\"ru\" dir=\"ltr\"><span class=\"mw-page-title-main\">Сбербанк России</span></span>",
+  "namespace": {
+   "id": 0,
+   "text": ""
+  },
+  "wikibase_item": "Q205012",
+  "titles": {
+   "canonical": "Сбербанк_России",
+   "normalized": "Сбербанк России",
+   "display": "<span lang=\"ru\" dir=\"ltr\"><span class=\"mw-page-title-main\">Сбербанк России</span></span>"
+  },
+  "pageid": 149816,
+  "thumbnail": {
+   "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/60-letiya_Oktyabrya_Prospekt%2C_Moscow_-_7637.jpg/330px-60-letiya_Oktyabrya_Prospekt%2C_Moscow_-_7637.jpg?utm_source=ru.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "width": 330,
+   "height": 230
+  },
+  "originalimage": {
+   "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/60-letiya_Oktyabrya_Prospekt%2C_Moscow_-_7637.jpg/3840px-60-letiya_Oktyabrya_Prospekt%2C_Moscow_-_7637.jpg?utm_source=ru.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+   "width": 3872,
+   "height": 2696
+  },
+  "lang": "ru",
+  "dir": "ltr",
+  "revision": "155511768",
+  "tid": "5ec897d9-c3ef-11f1-aa3b-47ccb6677a9d",
+  "timestamp": "2026-10-09T14:40:28Z",
+  "description": "крупнейший российский коммерческий банк",
+  "description_source": "central",
+  "content_urls": {
+   "desktop": {
+    "page": "https://ru.wikipedia.org/wiki/%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8",
+    "revisions": "https://ru.wikipedia.org/wiki/%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8?action=history",
+    "edit": "https://ru.wikipedia.org/wiki/%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8?action=edit",
+    "talk": "https://ru.wikipedia.org/wiki/%D0%9E%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5:%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8"
+   },
+   "mobile": {
+    "page": "https://ru.wikipedia.org/wiki/%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8",
+    "revisions": "https://ru.wikipedia.org/wiki/Special:History/%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8",
+    "edit": "https://ru.wikipedia.org/wiki/%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8?action=edit",
+    "talk": "https://ru.wikipedia.org/wiki/%D0%9E%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5:%D0%A1%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8"
+   }
+  },
+  "extract": "Сберба́нк — российский финансовый конгломерат, крупнейший универсальный банк России и Восточной Европы. К концу 2024 года у Сбербанка было 109,9 млн активных частных клиентов и 3,3 млн активных корпоративных клиентов. Среди крупнейших банков мира по размеру активов находится на 58 месте по версии S&P Global. Включён Банком России в перечень системно значимых кредитных организаций.",
+  "extract_html": "<p><b>Сберба́нк</b> — российский финансовый конгломерат, крупнейший универсальный банк России и Восточной Европы. К концу 2024 года у Сбербанка было 109,9 млн активных частных клиентов и 3,3 млн активных корпоративных клиентов. Среди крупнейших банков мира по размеру активов находится на 58 месте по версии S&amp;P Global. Включён Банком России в перечень системно значимых кредитных организаций.</p>"
+ },
+ "imf_ngdp": {
+  "n": 229,
+  "USA": {
+   "1980": -0.3,
+   "1981": 2.5,
+   "1982": -1.8,
+   "1983": 4.6,
+   "1984": 7.2,
+   "1985": 4.2,
+   "1986": 3.5,
+   "1987": 3.5,
+   "1988": 4.2,
+   "1989": 3.7,
+   "1990": 1.9,
+   "1991": -0.1,
+   "1992": 3.5,
+   "1993": 2.8,
+   "1994": 4,
+   "1995": 2.7,
+   "1996": 3.8,
+   "1997": 4.4,
+   "1998": 4.5,
+   "1999": 4.8,
+   "2000": 4.1,
+   "2001": 1,
+   "2002": 1.7,
+   "2003": 2.8,
+   "2004": 3.8,
+   "2005": 3.5,
+   "2006": 2.8,
+   "2007": 2,
+   "2008": 0.1,
+   "2009": -2.6,
+   "2010": 2.7,
+   "2011": 1.6,
+   "2012": 2.3,
+   "2013": 2.1,
+   "2014": 2.5,
+   "2015": 2.9,
+   "2016": 1.8,
+   "2017": 2.5,
+   "2018": 3,
+   "2019": 2.6,
+   "2020": -2.1,
+   "2021": 6.3,
+   "2022": 2.4,
+   "2023": 2.9,
+   "2024": 3,
+   "2025": 2.3,
+   "2026": 2.3,
+   "2027": 2.3,
+   "2028": 2.1,
+   "2029": 1.9,
+   "2030": 1.8,
+   "2031": 1.8
+  },
+  "EURO": {
+   "1992": 1.4,
+   "1993": -0.8,
+   "1994": 2.5,
+   "1995": 2.9,
+   "1996": 1.7,
+   "1997": 2.7,
+   "1998": 3,
+   "1999": 3,
+   "2000": 3.9,
+   "2001": 2.2,
+   "2002": 0.9,
+   "2003": 0.7,
+   "2004": 2.3,
+   "2005": 1.8,
+   "2006": 3.3,
+   "2007": 3,
+   "2008": 0.4,
+   "2009": -4.5,
+   "2010": 2.1,
+   "2011": 1.7,
+   "2012": -0.9,
+   "2013": -0.2,
+   "2014": 1.5,
+   "2015": 2.1,
+   "2016": 1.8,
+   "2017": 2.7,
+   "2018": 1.8,
+   "2019": 1.7,
+   "2020": -6,
+   "2021": 6.4,
+   "2022": 3.7,
+   "2023": 0.4,
+   "2024": 1.2,
+   "2025": 1.2,
+   "2026": 1.1,
+   "2027": 1.2,
+   "2028": 1.3,
+   "2029": 1.2,
+   "2030": 1.1,
+   "2031": 1.1
+  },
+  "keys": [
+   "ABW",
+   "ADVEC",
+   "AFG",
+   "AFQ",
+   "AGO",
+   "ALB",
+   "AND",
+   "APQ",
+   "ARE",
+   "ARG",
+   "ARM",
+   "AS5",
+   "ATG",
+   "AUS",
+   "AUT",
+   "AZE",
+   "AZQ",
+   "BDI",
+   "BEL",
+   "BEN",
+   "BFA",
+   "BGD",
+   "BGR",
+   "BHR",
+   "BHS",
+   "BIH",
+   "BLR",
+   "BLZ",
+   "BOL",
+   "BRA",
+   "BRB",
+   "BRN",
+   "BTN",
+   "BWA",
+   "CAF",
+   "CAN",
+   "CAQ",
+   "CBQ",
+   "CHE",
+   "CHL",
+   "CHN",
+   "CIV",
+   "CMQ",
+   "CMR",
+   "COD",
+   "COG",
+   "COL",
+   "COM",
+   "CPV",
+   "CRI",
+   "CYP",
+   "CZE",
+   "DA",
+   "DEU",
+   "DJI",
+   "DMA",
+   "DNK",
+   "DOM",
+   "DZA",
+   "EAQ",
+   "ECU",
+   "EDE",
+   "EEQ",
+   "EGY",
+   "ERI",
+   "ESP",
+   "EST",
+   "ETH",
+   "EU",
+   "EUQ",
+   "EURO",
+   "FIN",
+   "FJI",
+   "FRA",
+   "FSM",
+   "GAB",
+   "GBR",
+   "GEO",
+   "GHA",
+   "GIN",
+   "GMB",
+   "GNB",
+   "GNQ",
+   "GRC",
+   "GRD",
+   "GTM",
+   "GUY",
+   "HKG",
+   "HND",
+   "HRV",
+   "HTI",
+   "HUN",
+   "IDN",
+   "IND",
+   "IRL",
+   "IRN",
+   "IRQ",
+   "ISL",
+   "ISR",
+   "ITA",
+   "JAM",
+   "JOR",
+   "JPN",
+   "KAZ",
+   "KEN",
+   "KGZ",
+   "KHM",
+   "KIR",
+   "KNA",
+   "KOR",
+   "KWT",
+   "LAO",
+   "LBN",
+   "LBR",
+   "LBY",
+   "LCA",
+   "LIE",
+   "LKA",
+   "LSO",
+   "LTU",
+   "LUX",
+   "LVA",
+   "MAC",
+   "MAE",
+   "MAR",
+   "MDA",
+   "MDG",
+   "MDV",
+   "MECA",
+   "MEQ",
+   "MEX",
+   "MHL",
+   "MKD",
+   "MLI",
+   "MLT",
+   "MMR",
+   "MNE",
+   "MNG",
+   "MOZ",
+   "MRT",
+   "MUS",
+   "MWI",
+   "MYS",
+   "NAM",
+   "NAQ",
+   "NER",
+   "NGA",
+   "NIC",
+   "NLD",
+   "NMQ",
+   "NOR",
+   "NPL",
+   "NRU",
+   "NZL",
+   "OAE",
+   "OEMDC",
+   "OMN",
+   "PAK",
+   "PAN",
+   "PER",
+   "PHL",
+   "PIQ",
+   "PLW",
+   "PNG",
+   "POL",
+   "PRI",
+   "PRT",
+   "PRY",
+   "QAT",
+   "ROU",
+   "RUS",
+   "RWA",
+   "SAQ",
+   "SAU",
+   "SDN",
+   "SEN",
+   "SEQ",
+   "SGP",
+   "SLB",
+   "SLE",
+   "SLV",
+   "SMQ",
+   "SMR",
+   "SOM",
+   "SRB",
+   "SSA",
+   "SSD",
+   "SSQ",
+   "STP",
+   "SUR",
+   "SVK",
+   "SVN",
+   "SWE",
+   "SWZ",
+   "SYC",
+   "SYR",
+   "TCD",
+   "TGO",
+   "THA",
+   "TJK",
+   "TKM",
+   "TLS",
+   "TON",
+   "TTO",
+   "TUN",
+   "TUR",
+   "TUV",
+   "TWN",
+   "TZA",
+   "UGA",
+   "UKR",
+   "URY",
+   "USA",
+   "UVK",
+   "UZB",
+   "VCT",
+   "VEN",
+   "VNM",
+   "VUT",
+   "WBG",
+   "WE",
+   "WEOWORLD",
+   "WEQ",
+   "WHQ",
+   "WSM",
+   "YEM",
+   "ZAF",
+   "ZMB",
+   "ZWE"
+  ]
+ },
+ "imf_ind": {
+  "NGDP_RPCH": "Real GDP growth",
+  "NGDPD": "GDP, current prices",
+  "NGDPDPC": "GDP per capita, current prices\n",
+  "PPPGDP": "GDP, current prices",
+  "PPPPC": "GDP per capita, current prices",
+  "PPPSH": "GDP based on PPP, share of world",
+  "PPPEX": "Implied PPP conversion rate",
+  "PCPIPCH": "Inflation rate, average consumer prices",
+  "PCPIEPCH": "Inflation rate, end of period consumer prices",
+  "LP": "Population",
+  "BCA": "Current account balance\nU.S. dollars",
+  "BCA_NGDPD": "Current account balance, percent of GDP",
+  "LUR": "Unemployment rate",
+  "GGXCNL_NGDP": "General government net lending/borrowing",
+  "GGXWDG_NGDP": "General government gross debt",
+  "rev": "Government revenue, percent of GDP",
+  "exp": "Government expenditure, percent of GDP",
+  "prim_exp": "Government primary expenditure, percent of GDP",
+  "ie": "Interest paid on public debt, percent of GDP",
+  "pb": "Government primary balance, percent of GDP",
+  "d": "Gross public debt, percent of GDP",
+  "rgc": "Real GDP growth rate, percent",
+  "rltir": "Real long term government bond yield, percent",
+  "extensive": "Extensive Margin",
+  "intensive": "Intensive Margin",
+  "total_theil": "Export Diversification Index",
+  "SITC1_0": "Food and live animals",
+  "SITC1_1": "Beverages and tobacco",
+  "SITC1_2": "Crude materials, inedible, except fuels",
+  "SITC1_3": "Mineral fuels, lubricants and related materials",
+  "SITC1_4": "Animal and vegetable oils and fats",
+  "SITC1_5": "Chemicals",
+  "SITC1_6": "Manufact goods classified chiefly by material",
+  "SITC1_7": "Machinery and transport equipment",
+  "SITC1_8": "Miscellaneous manufactured articles",
+  "SITC1_9": "Commodity & transactions not classified accord to kind",
+  "SITC1_total": "Export Quality Index",
+  "DirectAbroad": "Direct Investment Abroad",
+  "DirectIn": "Direct Investment In Country",
+  "PrivInexDI": "Private Inflows excluding Direct Investment",
+  "PrivInexDIGDP": "Private Inflows excluding Direct Investment (% of GDP)",
+  "PrivOutexDI": "Private Outflows excluding Direct Investment",
+  "PrivOutexDIGDP": "Private Outflows excluding Direct Investment (% of GDP)",
+  "Portfa": "Portfolio Investment Assets",
+  "Portfl": "Portfolio Investment Liabilities",
+  "EquityA": "Equity Securities Assets",
+  "EquityL": "Equity Securities Liabilities",
+  "DebtA": "Debt Securities Assets",
+  "DebtL": "Debt Securities Liabilities",
+  "OtherGov": "Proxy for Official Other Investment Liabilities",
+  "OtherA": "Other Investment Assets",
+  "OtherL": "Other Investment Liabilities",
+  "Deriv": "Financial Derivatives",
+  "DebtForg": "Debt Forgiveness",
+  "GDP": "Nominal GDP",
+  "ka_new": "Overall Openness Index (all asset categories)",
+  "ka_in": "Openness of Capital Inflows Index  (1=fully liberalized)",
+  "ka_out": "Openness of Capital Outflows Index   (1=fully liberalized)",
+  "FM_ka": "Financial Market Openness Index (equity, bond, money market, collective investment, derivates) 1=fully liberalized",
+  "Nonres_ka": "Nonresident Openness Index (1=fully liberalized)",
+  "Res_ka": "Resident Openness Index (1=fully liberalized)",
+  "Ka_eq": "Equity openness index (1=fully liberalized)",
+  "Ka_bo": "Bond openness index (1=fully liberalized)",
+  "Ka_mm": "Money market openness index (1=fully liberalized)",
+  "Ka_ci": "Collective investment openness index (1=fully liberalized)",
+  "Ka_dr": "Derivative investment openness index (1=fully liberalized)",
+  "Ka_cc": "Commercial credit openness index (1=fully liberalized)",
+  "Ka_fc": "Financial credit openness index (1=fully liberalized)",
+  "Ka_gu": "Guarantee openness index (1=fully liberalized)",
+  "Ka_di": "Direct investment openness index (1=fully liberalized)",
+  "ka_ldi": "Direct investment liquidation openness index (1=fully liberalized)",
+  "ka_ret": "Real estate capital transaction openness index (1=fully liberalized)",
+  "ka_pct": "Personal capital transaction openness index (1=fully liberalized)",
+  "Reserves_ARA": "Ratio of reserve/ARA metric ",
+  "Reserves_M2": "Reserves/Broad Money",
+  "Reserves_STD": "Reserves/Short-term Debt (STD)",
+  "Reserves_M": "Reserve/(Import/12) ",
+  "GRB_dummy": "Gender Budgeting Indicator",
+  "GDI_TC": "Gender Development Index (GDI) Time Consistent",
+  "GII_TC": "Gender Inequality Index (GII) Time Consistent",
+  "DEBT1": "DEBT",
+  "Privatedebt_all": "Private debt, all instruments",
+  "HH_ALL": "Household debt, all instruments",
+  "NFC_ALL": "Nonfinancial corporate debt, all instruments",
+  "PVD_LS": "Private debt, loans and debt securities",
+  "HH_LS": "Household debt, loans and debt securities",
+  "NFC_LS": "Nonfinancial corporate debt, loans and debt securities",
+  "PS_DEBT_GDP": "Public Sector Debt",
+  "NFPS_DEBT_GDP": "Nonfinancial Public Sector Debt",
+  "GG_DEBT_GDP": "General Government Debt",
+  "CG_DEBT_GDP": "Central Government Debt",
+  "GGXCNL_G01_GDP_PT": "Net lending/borrowing (also referred as overall balance)",
+  "GGXONLB_G01_GDP_PT": "Primary net lending/borrowing (also referred as primary balance)",
+  "GGCB_G01_PGDP_PT": "Cyclically adjusted balance",
+  "GGCBP_G01_PGDP_PT": "Cyclically adjusted primary balance",
+  "GGR_G01_GDP_PT": "Revenue",
+  "G_X_G01_GDP_PT": "Expenditure",
+  "G_XWDG_G01_GDP_PT": "Gross debt position",
+  "GGXWDN_G01_GDP_PT": "Net debt",
+  "NGDP_R_PCH": "Real GDP Growth",
+  "NGDPXO_RPCH": "Real Non-Oil GDP Growth",
+  "NGDPRPC_PCH": "Real Per Capita GDP Growth",
+  "NI_GDP": "Total Investment (% of GDP)",
+  "NGS_GDP": "Gross National Savings (% of GDP)",
+  "GGXCNL_GDP": "Overall Fiscal Balance, Including Grants (% of GDP)",
+  "GGXCNLXG_GDP": "Overall Fiscal Balance, Excluding Grants (% of GDP)",
+  "GGRXG_GDP": "Government Revenue, Excluding Grants (% of GDP)",
+  "GGX_GDP": "Government Expenditure (% of GDP)",
+  "GGXWDG_GDP": "Government Debt (% of GDP)",
+  "FMB_GDP": "Broad Money (% of GDP)",
+  "FDSAOP_PCH": "Claims on Nonfinancial Private Sector (%)",
+  "FDSAOP_GDP": "Claims on Nonfinancial Private Sector (% of GDP)",
+  "FMB_PCH": "Broad Money Growth",
+  "BX_GDP": "Exports of Goods and Services (% of GDP)",
+  "BCA_GDP": "External Current Account, Incl.Grants (% of GDP)",
+  "BM_GDP": "Imports of Goods and Services (% of GDP)",
+  "BT_GDP": "Trade Balance (% of GDP)",
+  "BFD_GDP": "Net Foreign Direct Investment (% of GDP)",
+  "BRASS_MI": "Reserves (Months of Imports) ",
+  "EREER": "Real Effective Exchange Rates (2010=100)",
+  "ENEER": "Nominal Effective Exchange Rates (2010=100)",
+  "DG_GDP": "External Debt, Official Debt, Debtor Based (% of GDP)",
+  "PCPI_PCH": "Consumer Prices, Average (Annual % Change)",
+  "PCPIE_PCH": "Consumer Prices, End of Period (Annual % Change)",
+  "TTT": "Terms of Trade (Index, 2010 = 100)",
+  "FR_ind": "Fiscal Rule Indicator",
+  "FC_dummy": "Fiscal Council Indicator",
+  "AI_PI": "AI Preparedness Index",
+  "DI": "Digital Infrastructure",
+  "IEI": "Innovation and Economic Integration",
+  "HCLMP": "Human Capital and Labor Market Policies",
+  "RE": "Human Capital and Labor Market Policies"
+ }
 }
