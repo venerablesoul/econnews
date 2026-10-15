@@ -1033,7 +1033,10 @@
   "ff822c1d4ef9b817": "2026-10-15T03:11:25.053469+00:00",
   "5f965caacdab8464": "2026-10-15T03:11:25.053469+00:00",
   "f9251132d6e965ef": "2026-10-15T03:11:25.053469+00:00",
-  "24b32eda1ee85673": "2026-10-15T03:21:25.014522+00:00"
+  "24b32eda1ee85673": "2026-10-15T03:21:25.014522+00:00",
+  "51c8ce6451dc2d27": "2026-10-15T03:31:24.985520+00:00",
+  "12197943e8e26870": "2026-10-15T03:31:24.985520+00:00",
+  "22987bfae2ae2bf8": "2026-10-15T03:31:24.985520+00:00"
  },
  "recent": [
   {
@@ -10686,6 +10689,49 @@
     "доллар",
     "рынки"
    ]
+  },
+  {
+   "title": "ECB Probably Needs to Embrace Mildly Hawkish Stance, Knot Says",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-15/ecb-probably-needs-to-embrace-mildly-hawkish-stance-knot-says",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-15T03:31:24.985520+00:00",
+   "title_ru": "ЕЦБ, вероятно, должен занять мягкую ястребиную позицию, говорит Узел",
+   "lead": "A series of economic and geopolitical disruptions means the European Central Bank might need to embrace a policy stance that has a modest tilt toward monetary tightening, according to one of the frontrunners to succeed President…",
+   "lead_ru": "Ряд экономических и геополитических потрясений означает, что Европейскому центральному банку, возможно, придется занять политическую позицию, которая имеет скромный наклон к ужесточению денежно-кредитной политики, по словам одного из претендентов на пост президента...",
+   "tags": [
+    "ЕЦБ"
+   ]
+  },
+  {
+   "title": "Bonds Pay the Price for India’s Rupee Defense as Rate Bets Build",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-15/bonds-pay-the-price-for-india-s-rupee-defense-as-rate-bets-build",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-15T03:31:24.985520+00:00",
+   "title_ru": "Облигации платят цену за защиту индийской рупии по мере роста ставок",
+   "lead": "India’s fight to stabilize the rupee is starting to exact a price in the bond market, as traders ramp up bets on faster interest-rate hikes.",
+   "lead_ru": "Борьба Индии за стабилизацию рупии начинает определять цену на рынке облигаций, поскольку трейдеры наращивают ставки на более быстрое повышение процентных ставок.",
+   "tags": [
+    "ставки",
+    "облигации"
+   ]
+  },
+  {
+   "title": "Anthropic Results May Aid IPO but Not AI Trade, Analysts Say",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-15/anthropic-results-may-aid-ipo-but-not-ai-trade-analysts-say",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-15T03:31:24.985520+00:00",
+   "title_ru": "Антропные результаты могут помочь IPO, но не торговле ИИ, говорят аналитики",
+   "lead": "Anthropic PBC’s third-quarter results may strengthen the case for its expected initial public offering, though they are unlikely to dispel doubts over the global AI trade, according to some investors and analysts.",
+   "lead_ru": "По мнению некоторых инвесторов и аналитиков, результаты Anthropic PBC за третий квартал могут усилить аргументы в пользу ожидаемого первичного публичного размещения, хотя они вряд ли развеют сомнения по поводу глобальной торговли искусственным интеллектом."
   }
  ],
  "last_digest": "2026-10-14",
@@ -10715,7 +10761,7 @@
   "2026-10-14-21"
  ],
  "calendar": {
-  "fetched": "2026-10-14T21:30:58.671147+00:00",
+  "fetched": "2026-10-15T03:31:24.985520+00:00",
   "events": [
    {
     "title": "Bank Holiday",
@@ -11410,7 +11456,7 @@
     "country": "USD",
     "ts": "2026-10-15T16:00:00+00:00",
     "impact": "Low",
-    "forecast": "-0.2M",
+    "forecast": "0.2M",
     "previous": "-3.2M"
    },
    {
