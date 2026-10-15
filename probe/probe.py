@@ -1,37 +1,35 @@
-"""Временная проверка источников (раунд 2)."""
-import json, re, urllib.request, urllib.error, time
-UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
-R = {}
+"""Probe round 3: why SEC financials are not saved; free Yahoo quote endpoints; Google translate to English."""
+import json, os, sys, time, traceback, urllib.request, urllib.parse
+sys.path.insert(0, os.path.dirname(__file__))
+R = {"env_sec_ua_set": bool(os.environ.get("SEC_USER_AGENT", "").strip())}
+import stocks_main as S
+from datetime import datetime, timezone
+S.FIN_DIR = os.path.join(os.path.dirname(__file__), "fin")
+for ua_name, ua in [("default", None), ("plain", "EconNews venerablesoul@users.noreply.github.com")]:
+    try:
+        if ua:
+            os.environ["SEC_USER_AGENT"] = ua
+        h = S.sec_headers()
+        S._CIK.clear() if hasattr(S._CIK, "clear") else None
+        t0 = time.time()
+        cik = S.cik_for("AAPL", h)
+        facts = S._json(S.SEC_FACTS_URL.format(cik=cik), h, timeout=60)
+        fin = S.financials_from_facts(facts)
+        R["sec_" + ua_name] = {"ok": True, "cik": cik, "sec": round(time.time() - t0, 1), "annual": fin["annual"][:1], "q": fin["quarterly"][:2]}
+    except Exception as e:
+        R["sec_" + ua_name] = {"ok": False, "err": f"{type(e).__name__}: {e}", "tb": traceback.format_exc()[-600:]}
+try:
+    n = S.update_financials(["MSFT", "NVDA"], datetime.now(timezone.utc), limit=2)
+    R["update_financials"] = {"n": n, "files": os.listdir(S.FIN_DIR)}
+except Exception as e:
+    R["update_financials"] = {"err": repr(e), "tb": traceback.format_exc()[-800:]}
 def get(url):
     try:
-        with urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": UA}), timeout=30) as r:
-            return r.status, r.read()
-    except urllib.error.HTTPError as e:
-        return e.code, e.read()[:500]
+        with urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": S.UA}), timeout=20) as r:
+            return r.status, r.read()[:600].decode("utf-8", "replace")
     except Exception as e:
-        return -1, repr(e).encode()
-syms = "AAPL,MSFT,NVDA,AMZN,GOOGL,META,TSLA,BRK-B,JPM,V,MA,UNH,XOM,LLY,AVGO,HD,PG,COST,JNJ,ABBV,WMT,KO,PEP,BAC,CVX,MRK,ORCL,CRM,ADBE,AMD,NFLX,DIS,CSCO,INTC,QCOM,TXN,IBM,GE,CAT,BA,HON,UNP,LMT,RTX,DE,UPS,GS,MS,C,WFC".split(",")
-for n in (20, 50):
-    st, b = get("https://query1.finance.yahoo.com/v7/finance/spark?symbols=" + ",".join(syms[:n]) + "&range=1d&interval=1d")
-    try:
-        res = json.loads(b)["spark"]["result"]
-        R[f"spark_{n}"] = {"status": st, "n": len(res), "syms": [x["symbol"] for x in res][:60],
-                           "meta_keys": sorted(res[0]["response"][0]["meta"].keys())}
-    except Exception as e:
-        R[f"spark_{n}"] = {"status": st, "err": repr(e), "body": b[:300].decode("utf-8", "replace")}
-st, b = get("https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm")
-h = b.decode("utf-8", "replace")
-i = h.find("FOMC Meetings")
-R["fomc_heads"] = re.findall(r"<h4[^>]*>.{0,120}?(\d{4}) FOMC Meetings", h, re.S)[:8]
-R["fomc_html"] = h[max(0, i - 400): i + 1800]
-st, b = get("https://stats.bis.org/api/v1/data/WS_CBPOL/D.US+XM+GB+JP+CN+CH+CA+AU+IN+BR+TR+KR+MX+ZA+RU/all?lastNObservations=1&format=csv")
-lines = b.decode("utf-8", "replace").splitlines()
-hdr = lines[0].split(",") if lines else []
-R["bis"] = {"status": st, "header": hdr, "rows": [l[:60] + " ... " + l[-60:] for l in lines[1:20]]}
-st, b = get("https://query1.finance.yahoo.com/v8/finance/chart/BRK-B?range=5d&interval=1d")
-R["yahoo_brkb"] = st
-st, b = get("https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=1y&interval=1d")
-R["yahoo_gspc_1y"] = st
-with open("probe/out2.json", "w", encoding="utf-8") as f:
-    json.dump(R, f, ensure_ascii=False, indent=1)
-print("ok")
+        return -1, repr(e)[:300]
+R["gtr_en"] = get("https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=en&dt=t&q=" + urllib.parse.quote("Сбербанк повысил прогноз по прибыли"))
+os.makedirs("probe", exist_ok=True)
+json.dump(R, open("probe/out.json", "w"), ensure_ascii=False, indent=1)
+print(json.dumps(R, ensure_ascii=False)[:3000])
