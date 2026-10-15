@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "192a7399cb54ce90": "2026-10-12T23:14:05.882427+00:00",
-  "d2d49a9a165b4df1": "2026-10-12T23:14:05.882427+00:00",
-  "3d62505baf4c0341": "2026-10-12T23:14:05.882427+00:00",
-  "ec6cf2f4b53e5cd1": "2026-10-12T23:14:05.882427+00:00",
   "5ea793421190c3e8": "2026-10-12T23:24:05.885307+00:00",
   "39a3214de2c0b116": "2026-10-12T23:34:05.894987+00:00",
   "81f96c10c8218294": "2026-10-12T23:44:05.870401+00:00",
@@ -1145,65 +1141,11 @@
   "8cf6a9bf2c08b9c4": "2026-10-15T22:57:36.431611+00:00",
   "792442693243bf5d": "2026-10-15T23:02:36.486703+00:00",
   "a8275e02227b60ee": "2026-10-15T23:07:36.499685+00:00",
-  "0279c9a043c5ea78": "2026-10-15T23:07:36.499685+00:00"
+  "0279c9a043c5ea78": "2026-10-15T23:07:36.499685+00:00",
+  "7207d5d03e96918a": "2026-10-15T23:12:36.421421+00:00",
+  "bc31c6dffc650b7d": "2026-10-15T23:17:36.439568+00:00"
  },
  "recent": [
-  {
-   "title": "Singapore Bank Selloff Tests the City-State’s Safe Haven Status",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-12/singapore-bank-selloff-tests-the-city-state-s-safe-haven-status",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-12T23:14:05.882427+00:00",
-   "title_ru": "Распродажа банков Сингапура проверяет статус города-государства как безопасного убежища",
-   "lead": "A selloff in Singapore bank shares driven by fears of earnings downgrades is threatening one of Asia’s best-performing major stock benchmarks this year, putting the city-state’s safe haven status to the test.",
-   "lead_ru": "Распродажа акций сингапурских банков, вызванная опасениями снижения прибылей, угрожает одному из самых эффективных фондовых индексов Азии в этом году, ставя под угрозу статус города-государства-убежища.",
-   "tags": [
-    "рынки"
-   ]
-  },
-  {
-   "title": "Goldman Says Markets Are Underestimating How Far Yuan Can Rise",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-12/goldman-says-markets-are-underestimating-how-far-yuan-can-rise",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-12T23:14:05.882427+00:00",
-   "title_ru": "Goldman говорит, что рынки недооценивают, насколько далеко может вырасти юань",
-   "lead": "A stronger yuan is among the most underpriced scenarios in the world’s $9.5 trillion-a-day foreign exchange market, according to Goldman Sachs Group Inc.’s Kamakshya Trivedi.",
-   "lead_ru": "По мнению Камакшья Триведи из Goldman Sachs Group Inc., укрепление юаня является одним из наиболее недооцененных сценариев на мировом валютном рынке с оборотом в 9,5 триллионов долларов в день.",
-   "tags": [
-    "Китай"
-   ]
-  },
-  {
-   "title": "Singapore’s MAS to Tighten ‘Very Slightly’ as Price Risks Linger",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-12/singapore-s-mas-to-tighten-very-slightly-as-price-risks-linger",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-12T23:14:05.882427+00:00",
-   "title_ru": "MAS Сингапура «очень немного» ужесточит политику, поскольку ценовые риски сохраняются",
-   "lead": "Singapore’s central bank will likely deliver another incremental round of monetary tightening, to keep a lid on inflation risks from oil and the artificial-intelligence boom.",
-   "lead_ru": "Центральный банк Сингапура, скорее всего, проведет еще один раунд ужесточения денежно-кредитной политики, чтобы сдержать инфляционные риски, связанные с нефтью и бумом искусственного интеллекта.",
-   "tags": [
-    "инфляция",
-    "нефть"
-   ]
-  },
-  {
-   "title": "India's central bank tightens rules on rupee non-deliverable contracts, widens 20% cash reserve requirement",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOMGtYWFZTdjFPOGR5X0l6eHNhamxqQWpUUGRVamVLZDE0bk5wQlVCczVyRkI4MDhyalZVSUlaZ3B4RWpVbVdFTGFIdU01UUhoSDd4cXp5SkhzUDRqTjBYTVNMdDJlZ1BaMm1qOEpqc3JfWTVwTmhPZUhDN05TY3VWdXotbmtQZFFYVXJCQmtTYVhpbDFrTGFwRlVyMnAwaUJ3TzRtRzJlREhSSjdrZTg4a05FYlU3WkN5VnRtVzl6dDE3UQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-12T23:14:05.882427+00:00",
-   "title_ru": "Центральный банк Индии ужесточает правила для беспоставочных контрактов в рупиях, расширяет требования к резервированию денежных средств на 20%"
-  },
   {
    "title": "Nasdaq ends lower as oil prices surge ahead of earnings, economic data",
    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9fTTNzRXVXQTRZT1JkY0kyRDdybTVnOFRYZjdPX294OUNEVlNTYkY2R1I0NGpudXpXenl3WV9BZEV3Y1BadFBrbzBpbkZhTzdtWjBuVk1VWklmckNTaUtPd1VuMFMxQU5BbG9hY3FTX1NlalcwZEh3dW9DMHNkZw?oc=5",
@@ -12068,6 +12010,21 @@
    "title_en": "Chinese supplies have reached a new high // Monitoring the world economy",
    "lead": "Китай в сентябре нарастил поставки товаров на зарубежные рынки: месячный экспорт обновил исторический максимум, увеличившись на 36,3% в годовом выражении, до $447,18 млрд, следует из данных китайской таможни.",
    "lead_en": "China in September increased the supply of goods to foreign markets: monthly exports updated the historical maximum, increasing by 36.3% in annual terms, to $447.18 billion, according to Chinese customs data.",
+   "tags": [
+    "China"
+   ]
+  },
+  {
+   "title": "China’s Plan to Make Yuan a Global Currency Enters Faster Phase",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-15/china-s-plan-to-make-yuan-a-global-currency-enters-faster-phase",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-15T23:17:36.439568+00:00",
+   "title_ru": "План Китая по превращению юаня в мировую валюту вступает в более быструю фазу",
+   "lead": "China’s campaign to promote the global use of the yuan appears to be accelerating as the authorities seek to build a more comprehensive financial ecosystem for the currency beyond just trade settlement.",
+   "lead_ru": "Кампания Китая по продвижению глобального использования юаня, похоже, ускоряется, поскольку власти стремятся создать более всеобъемлющую финансовую экосистему для валюты, выходящую за рамки справедливых торговых расчетов.",
    "tags": [
     "China"
    ]
