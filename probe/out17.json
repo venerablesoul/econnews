@@ -1,0 +1,120 @@
+{
+ "cal 2026-10-08..2026-11-05": {
+  "n": 1500,
+  "first": [
+   "2026-10-30"
+  ],
+  "last": [
+   "2026-11-05"
+  ],
+  "aapl_jpm_nflx_tsla": [
+   "AAPL 2026-11-02"
+  ]
+ },
+ "cal 2026-10-15..2026-10-22": {
+  "n": 513,
+  "first": [
+   "2026-10-15"
+  ],
+  "last": [
+   "2026-10-22"
+  ],
+  "aapl_jpm_nflx_tsla": [
+   "NFLX 2026-10-20",
+   "TSLA 2026-10-21"
+  ]
+ },
+ "cal 2026-10-16..2026-10-16": {
+  "n": 24,
+  "first": [
+   "2026-10-16"
+  ],
+  "last": [
+   "2026-10-16"
+  ],
+  "aapl_jpm_nflx_tsla": []
+ },
+ "cal 2026-10-21..2026-10-21": {
+  "n": 121,
+  "first": [
+   "2026-10-21"
+  ],
+  "last": [
+   "2026-10-21"
+  ],
+  "aapl_jpm_nflx_tsla": [
+   "TSLA 2026-10-21"
+  ]
+ },
+ "cal 2026-10-13..2026-10-14": {
+  "n": 44,
+  "first": [
+   "2026-10-13"
+  ],
+  "last": [
+   "2026-10-14"
+  ],
+  "aapl_jpm_nflx_tsla": [
+   "JPM 2026-10-13"
+  ]
+ },
+ "tv_rc": 0,
+ "tv_err": "v.html?s=MOEX:IMOEX HTTP/1.1\" 200 -\n127.0.0.1 - - [15/Oct/2026 14:11:07] \"GET /tv.html?s=RUS:IMOEX HTTP/1.1\" 200 -\n127.0.0.1 - - [15/Oct/2026 14:11:19] \"GET /tv.html?s=TVC:DXY HTTP/1.1\" 200 -\n127.0.0.1 - - [15/Oct/2026 14:11:21] \"GET /tv.html?s=CAPITALCOM:DXY HTTP/1.1\" 200 -\n127.0.0.1 - - [15/Oct/2026 14:11:34] \"GET /tv.html?s=FX:EURUSD HTTP/1.1\" 200 -\n127.0.0.1 - - [15/Oct/2026 14:11:47] \"GET /tv.html?s=FX:USDJPY HTTP/1.1\" 200 -\n127.0.0.1 - - [15/Oct/2026 14:11:59] \"GET /tv.html?s=TVC:UKOIL HTTP/1.1\" 200 -\n127.0.0.1 - - [15/Oct/2026 14:12:12] \"GET /tv.html?s=TVC:USOIL HTTP/1.1\" 200 -\n127.0.0.1 - - [15/Oct/2026 14:12:25] \"GET /tv.html?s=CAPITALCOM:NATURALGAS HTTP/1.1\" 200 -\n127.0.0.1 - - [15/Oct/2026 14:12:37] \"GET /tv.html?s=TVC:GOLD HTTP/1.1\" 200 -\n127.0.0.1 - - [15/Oct/2026 14:12:50] \"GET /tv.html?s=TVC:SILVER HTTP/1.1\" 200 -\n127.0.0.1 - - [15/Oct/2026 14:13:03] \"GET /tv.html?s=TVC:PLATINUM HTTP/1.1\" 200 -\n127.0.0.1 - - [15/Oct/2026 14:13:15] \"GET /tv.html?s=CAPITALCOM:COPPER HTTP/1.1\" 200 -\n127.0.0.1 - - [15/Oct/2026 14:13:28] \"GET /tv.html?s=CAPITALCOM:WHEAT HTTP/1.1\" 200 -\n127.0.0.1 - - [15/Oct/2026 14:13:41] \"GET /tv.html?s=TVC:US10Y HTTP/1.1\" 200 -\n127.0.0.1 - - [15/Oct/2026 14:13:42] \"GET /tv.html?s=TVC:US03MY HTTP/1.1\" 200 -\n127.0.0.1 - - [15/Oct/2026 14:13:44] \"GET /tv.html?s=BINANCE:BTCUSDT HTTP/1.1\" 200 -\n127.0.0.1 - - [15/Oct/2026 14:13:56] \"GET /tv.html?s=NASDAQ:AAPL HTTP/1.1\" 200 -\n127.0.0.1 - - [15/Oct/2026 14:14:09] \"GET /tv.html?s=MOEX:SBER HTTP/1.1\" 200 -\n",
+ "tv": {
+  "SP:SPX": "RESTRICTED",
+  "FOREXCOM:SPXUSD": "ok?",
+  "CAPITALCOM:US500": "ok?",
+  "OANDA:SPX500USD": "ok?",
+  "AMEX:SPY": "ok?",
+  "NASDAQ:IXIC": "RESTRICTED",
+  "NASDAQ:NDX": "RESTRICTED",
+  "FOREXCOM:NSXUSD": "ok?",
+  "CAPITALCOM:US100": "ok?",
+  "DJ:DJI": "RESTRICTED",
+  "FOREXCOM:DJI": "ok?",
+  "CAPITALCOM:US30": "ok?",
+  "TVC:DJI": "RESTRICTED",
+  "TVC:RUT": "RESTRICTED",
+  "CAPITALCOM:RTY": "ok?",
+  "AMEX:IWM": "ok?",
+  "TVC:VIX": "RESTRICTED",
+  "CAPITALCOM:VIX": "ok?",
+  "TVC:SX5E": "RESTRICTED",
+  "CAPITALCOM:EU50": "ok?",
+  "XETR:DAX": "ok?",
+  "CAPITALCOM:DE40": "ok?",
+  "TVC:DEU40": "RESTRICTED",
+  "TVC:UKX": "RESTRICTED",
+  "CAPITALCOM:UK100": "ok?",
+  "EURONEXT:PX1": "ok?",
+  "CAPITALCOM:FR40": "ok?",
+  "TVC:CAC40": "RESTRICTED",
+  "TVC:NI225": "RESTRICTED",
+  "CAPITALCOM:J225": "ok?",
+  "TVC:HSI": "RESTRICTED",
+  "CAPITALCOM:HK50": "ok?",
+  "SSE:000001": "ok?",
+  "TVC:SHCOMP": "ok?",
+  "BSE:SENSEX": "ok?",
+  "TVC:SENSEX": "ok?",
+  "MOEX:IMOEX": "ok?",
+  "RUS:IMOEX": "ok?",
+  "TVC:DXY": "RESTRICTED",
+  "CAPITALCOM:DXY": "ok?",
+  "FX:EURUSD": "ok?",
+  "FX:USDJPY": "ok?",
+  "TVC:UKOIL": "ok?",
+  "TVC:USOIL": "ok?",
+  "CAPITALCOM:NATURALGAS": "ok?",
+  "TVC:GOLD": "ok?",
+  "TVC:SILVER": "ok?",
+  "TVC:PLATINUM": "ok?",
+  "CAPITALCOM:COPPER": "ok?",
+  "CAPITALCOM:WHEAT": "ok?",
+  "TVC:US10Y": "RESTRICTED",
+  "TVC:US03MY": "RESTRICTED",
+  "BINANCE:BTCUSDT": "ok?",
+  "NASDAQ:AAPL": "ok?",
+  "MOEX:SBER": "ok?"
+ }
+}
