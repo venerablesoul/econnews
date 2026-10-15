@@ -521,33 +521,33 @@ export async function getCompany(env, raw, parts = COMPANY_PARTS, lang = "en") {
         sh: t.share, px: num(t.transactionPrice, 2) }));
     }));
   }
-  if (want.has("co") || want.has("dvd") || want.has("cf")) {
-    safe("co", pageJSON(env, "co/" + p.s + ".json", 1800).then((x) => { res.co = x; }).catch(notFound));
+  // the deep files first; a live fallback starts right after a file turns out missing (in parallel with the rest)
+  const coP = want.has("co") || want.has("dvd") || want.has("cf")
+    ? pageJSON(env, "co/" + p.s + ".json", 1800).catch((e) => { notFound(e); return null; }) : Promise.resolve(null);
+  safe("co", coP.then((x) => { if (x) res.co = x; }));
+  if (want.has("dvd")) {
+    safe("dividends", coP.then((co) => (co && co.div && co.div.hist ? null : yahooDividends(p.s).then((x) => { res.dvd = x; }))));
+  }
+  if (want.has("cf")) {
+    const since = new Date(Date.now() - 400 * 864e5).toISOString().slice(0, 10);   // a year of filings keeps the answer small
+    safe("filings", coP.then((co) => (co && co.filings && co.filings.length ? null :
+      fh(env, "/stock/filings?symbol=" + s + "&from=" + since, 6 * 3600).then((x) => {
+        res.cf = (x || []).filter((f) => f.form && f.form !== "4").slice(0, 25)
+          .map((f) => ({ d: (f.filedDate || "").slice(0, 10), type: f.form, url: f.reportUrl || f.filingUrl }));
+      }))));
   }
   if (want.has("opt")) {
-    safe("options", pageJSON(env, "opt/" + p.s + ".json", 600).then((x) => { res.opt = x; }).catch(notFound));
+    safe("options", pageJSON(env, "opt/" + p.s + ".json", 600).catch((e) => { notFound(e); return null; }).then((x) => {
+      if (x) { res.opt = x; return null; }
+      return getJSON("https://cdn.cboe.com/api/global/delayed_quotes/quotes/" + s + ".json", { ttl: 600, timeout: 6000 }).then((q) => {
+        const d = (q && q.data) || {};
+        if (d.iv30 != null) res.opt = { s: p.s, px: num(d.current_price, 4), chg: num(d.price_change_percent, 2), iv30: num(d.iv30, 2),
+          iv30_chg: num(d.iv30_change, 2), ts: q.timestamp, lite: true };
+      });
+    }));
   }
   if (want.has("rv")) safe("peers", relativeValue(env, p.s).then((x) => { res.rv = x; }));
   await Promise.all(jobs);
-  // live fallbacks for companies outside the ~100 with a deep file
-  const late = [];
-  const lateSafe = (name, pr) => late.push(pr.catch((e) => { res.errors.push(name + ": " + (e.message || e)); }));
-  const co = res.co || {};
-  if (want.has("dvd") && !(co.div && co.div.hist)) lateSafe("dividends", yahooDividends(p.s).then((x) => { res.dvd = x; }));
-  if (want.has("cf") && !(co.filings && co.filings.length)) {
-    lateSafe("filings", fh(env, "/stock/filings?symbol=" + s, 6 * 3600).then((x) => {
-      res.cf = (x || []).filter((f) => f.form && f.form !== "4").slice(0, 25)
-        .map((f) => ({ d: (f.filedDate || "").slice(0, 10), type: f.form, url: f.reportUrl || f.filingUrl }));
-    }));
-  }
-  if (want.has("opt") && !res.opt) {
-    lateSafe("iv30", getJSON("https://cdn.cboe.com/api/global/delayed_quotes/quotes/" + s + ".json", { ttl: 600 }).then((x) => {
-      const d = (x && x.data) || {};
-      if (d.iv30 != null) res.opt = { s: p.s, px: num(d.current_price, 4), chg: num(d.price_change_percent, 2), iv30: num(d.iv30, 2),
-        iv30_chg: num(d.iv30_change, 2), ts: x.timestamp, lite: true };
-    }));
-  }
-  await Promise.all(late);
   if (want.has("des") && !res.profile && !res.quote) {
     throw new Error(res.errors.join("; ") || "no data for " + p.s);
   }

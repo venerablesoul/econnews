@@ -604,6 +604,11 @@ await test("/api/ipo and intraday history (1D, 5D)", async () => {
   const b = await api("/api/history?s=BTC&r=5d");
   assert.equal(b.json.range, "5d");
   assert.ok(calls.some((u) => /klines\?symbol=BTCUSDT&interval=30m&limit=240/.test(u)), "30-minute bars");
+  clearMemo();
+  flags.failBinance = true;
+  const c = await api("/api/history?s=BTC&r=5d");
+  flags.failBinance = false;
+  assert.equal(c.json.c.length, 120, "without Binance: hourly bars from CryptoCompare");
   const out = await msg("/chart AAPL 1d"); noErrors(out);
   assert.match(texts(out), /1 day/);
 });

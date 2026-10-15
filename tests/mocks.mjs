@@ -112,6 +112,7 @@ export function route(url, init) {
   if ((u.host === "data-api.binance.vision" || u.host.endsWith("binance.com")) && flags.failBinance) return { __status: 451 };
   if (u.host === "min-api.cryptocompare.com") {
     if (p.includes("pricemultifull")) return { RAW: { BTC: { USD: { PRICE: 81700, CHANGEPCT24HOUR: -2.1, HIGH24HOUR: 84000, LOW24HOUR: 80000 } } } };
+    if (p.includes("histohour")) return { Data: { Data: closes.slice(0, 120).map((c, i) => ({ time: 1792000000 + i * 3600, open: c, high: c + 1, low: c - 1, close: c, volumeto: 5 })) } };
     if (p.includes("histoday")) return { Data: { Data: closes.map((c, i) => ({ time: 1700000000 + i * 86400, open: c, high: c + 1, low: c - 1, close: c, volumeto: 5 })) } };
   }
   if (u.host === "translate.googleapis.com") {
