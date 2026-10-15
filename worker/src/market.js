@@ -1,7 +1,7 @@
 // Quotes, price history and company data. API keys live only here, on the server.
 //   US stocks:    Finnhub (free key) — quote, profile, ratios, analysts, earnings, company news
 //   World:        Yahoo Finance (no key) — indices, currencies, commodities, yields
-//   History:      Yahoo Finance; crypto — Binance / Coinbase; Russia — Moscow Exchange (ISS)
+//   History:      Yahoo Finance; crypto — Binance / Yahoo / Coinbase; Russia — Moscow Exchange (ISS)
 //   Financials:   docs/fin/<TICKER>.json, built by the news bot from SEC filings (~100 largest companies)
 import { cached, dm, getJSON, pageJSON, siteData } from "./lib.js";
 
@@ -303,8 +303,9 @@ async function binanceHistory(coin, range) {
     catch (e) { err = e; }
   }
   if (!k) {
-    // Binance blocks some Cloudflare servers — take candles from Coinbase (no key; CryptoCompare now wants one)
-    try { return await coinbaseHistory(coin, range); } catch (e) { throw new Error((err ? err.message + "; " : "") + "Coinbase: " + (e.message || e)); }
+    // Binance blocks some Cloudflare servers: Yahoo (one request for any range), then Coinbase (rate-limited on shared IPs)
+    try { return { ...(await yahooHistory(coin + "-USD", range)), name: coin + "/USD", src2: "yahoo" }; } catch (e) { err = new Error((err ? err.message + "; " : "") + "Yahoo: " + (e.message || e)); }
+    try { return await coinbaseHistory(coin, range); } catch (e) { throw new Error(err.message + "; Coinbase: " + (e.message || e)); }
   }
   const out = { t: [], o: [], h: [], l: [], c: [], v: [], cur: "USD", name: coin + "/USDT" };
   for (const x of k) { out.t.push(Math.floor(x[0] / 1000)); out.o.push(+x[1]); out.h.push(+x[2]); out.l.push(+x[3]); out.c.push(+x[4]); out.v.push(+x[5]); }

@@ -180,7 +180,7 @@ await test("short paths /api/history/AAPL/1m and /api/quote/AAPL,BTC", async () 
 });
 
 await test("fallbacks: crypto without Binance, translation without Google", async () => {
-  flags.failBinance = true; flags.failGoogle = true;
+  flags.failBinance = true; flags.failGoogle = true; flags.failYahoo = true;
   try {
     const q = await api("/api/quote?s=BTC");
     assert.equal(q.json.quotes.BTC.px, 81700);
@@ -195,7 +195,11 @@ await test("fallbacks: crypto without Binance, translation without Google", asyn
     clearMemo();
     const c = await api("/api/company?s=AAPL&parts=cn&lang=ru");
     assert.equal(c.json.cn[0].h, "Apple превзошла оценки");
-  } finally { flags.failBinance = false; flags.failGoogle = false; }
+    flags.failYahoo = false;
+    clearMemo();
+    const y = await api("/api/history?s=BTC&r=5y");
+    assert.equal(y.json.src, "yahoo", "without Binance: Yahoo first");
+  } finally { flags.failBinance = false; flags.failGoogle = false; flags.failYahoo = false; }
 });
 
 await test("/api/company: a company outside the SEC list and the Moscow Exchange (EN and RU)", async () => {
@@ -608,9 +612,9 @@ await test("/api/ipo and intraday history (1D, 5D)", async () => {
   assert.equal(b.json.range, "5d");
   assert.ok(calls.some((u) => /klines\?symbol=BTCUSDT&interval=30m&limit=240/.test(u)), "30-minute bars");
   clearMemo();
-  flags.failBinance = true;
+  flags.failBinance = true; flags.failYahoo = true;
   const c = await api("/api/history?s=BTC&r=5d");
-  flags.failBinance = false;
+  flags.failBinance = false; flags.failYahoo = false;
   assert.equal(c.json.c.length, 120, "without Binance: hourly bars from Coinbase");
   assert.equal(c.json.src, "coinbase");
   const out = await msg("/chart AAPL 1d"); noErrors(out);
