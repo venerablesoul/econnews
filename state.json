@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "214ecf7c407dd69a": "2026-10-12T21:14:05.897243+00:00",
   "792442693243bf5d": "2026-10-12T21:24:05.882177+00:00",
   "d82838bd055dadfb": "2026-10-12T21:24:05.882177+00:00",
   "b323df3d586bee8a": "2026-10-12T21:24:05.882177+00:00",
@@ -1143,24 +1142,13 @@
   "7b9a2b7070b4f1bc": "2026-10-15T20:57:36.501642+00:00",
   "347db45bd002ef43": "2026-10-15T20:57:36.501642+00:00",
   "6c97feaf5b06ce49": "2026-10-15T21:07:36.473498+00:00",
-  "da921abe9002ca36": "2026-10-15T21:07:36.473498+00:00"
+  "da921abe9002ca36": "2026-10-15T21:07:36.473498+00:00",
+  "24c01e0e944f16f6": "2026-10-15T21:12:36.446433+00:00",
+  "2b2186a4c3eebf8d": "2026-10-15T21:12:36.446433+00:00",
+  "c1b17f30cd378c3c": "2026-10-15T21:17:36.427593+00:00",
+  "47b432bae73c0bc1": "2026-10-15T21:17:36.427593+00:00"
  },
  "recent": [
-  {
-   "title": "Rising US Bond Yields Show No Sign of Slowing",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-12/rising-us-bond-yields-show-no-sign-of-slowing-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-12T21:14:05.897243+00:00",
-   "title_ru": "Рост доходности облигаций США не демонстрирует никаких признаков замедления",
-   "lead": "This year, an important psychological barrier for the bond market was crossed. Yields across different US Treasury maturities exceeded levels not seen in decades. And they show no sign of slowing down. (Source: Bloomberg)",
-   "lead_ru": "В этом году был преодолен важный психологический барьер для рынка облигаций. Доходность казначейских облигаций США с различными сроками погашения превысила уровни, не наблюдавшиеся десятилетиями. И они не показывают никаких признаков замедления. (Источник: Блумберг)",
-   "tags": [
-    "облигации"
-   ]
-  },
   {
    "title": "Coming Soon: Global Financial Stability Report, October 2026",
    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOb201ZDV4ZnJ5Nk00VTVFRnk2NlN3cjk1SnphQnh4aWhkb21HbDRNWTgyZW4wd2NmM1JjZTA3cDlGcmlUd1JBRHUwbG5aSE85NUNrcUJNMGZGRWdhdGhpQTRQVDhiOS0yam1LRlVpeUI4SmxnTjgtdE1rTmZVTzFpNGpiNHEyeFZQQW5vd1hpalplRDFTS3FCVW9FNEtHVkdPQVFzMEdCb0o?oc=5",
@@ -14643,6 +14631,22 @@
    },
    {
     "src": "sec",
+    "id": "6813db656adb1b22",
+    "ticker": "ONC",
+    "company": "BeOne Medicines Ltd.",
+    "who": "Xiaodong Wang",
+    "role": "Director",
+    "type": "sell",
+    "value": 10890074,
+    "shares": 31027,
+    "price": 350.99,
+    "plan": true,
+    "date": "2026-10-13",
+    "disclosed": "2026-10-15",
+    "link": "https://www.sec.gov/Archives/edgar/data/1662982/000166298226000006/0001662982-26-000006-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "d52eddda71d18b93",
     "ticker": "DBX",
     "company": "DROPBOX, INC.",
@@ -14951,28 +14955,24 @@
   "checked": "2026-10-15T21:02:36.943801+00:00",
   "sec_seen": [
    "0000905148-26-004480",
-   "0001193125-26-422967",
-   "0001193125-26-422964",
+   "0001628280-26-066016",
    "0001193125-26-422985",
-   "0001940272-26-000025",
-   "0001897944-26-000014",
+   "0000919574-26-006994",
+   "0000006955-26-000071",
    "0001773751-26-000227",
+   "0001662982-26-000006",
    "0001956098-26-000024",
    "0001193125-26-422975",
    "0001166816-26-000007",
    "0001193125-26-422968",
-   "0002050857-26-000018",
    "0001193125-26-423000",
-   "0001227654-26-000077",
    "0000006955-26-000067",
    "0001859690-26-000193",
    "0001610717-26-000441",
-   "0001193125-26-422959",
    "0001193125-26-422981",
    "0000006955-26-000064",
    "0001628280-26-066012",
    "0001817160-26-000021",
-   "0001193125-26-422957",
    "0001193125-26-422989",
    "0001193125-26-422973",
    "0000006955-26-000069"
