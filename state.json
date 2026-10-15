@@ -1187,7 +1187,10 @@
   "9944a5977e777659": "2026-10-15T13:56:58.823126+00:00",
   "3a5917176c896e1b": "2026-10-15T13:56:58.823126+00:00",
   "6a91b2012ef2fcf8": "2026-10-15T14:02:00.451478+00:00",
-  "68bd83ae902befb1": "2026-10-15T14:02:00.451478+00:00"
+  "68bd83ae902befb1": "2026-10-15T14:02:00.451478+00:00",
+  "21a03b414024b036": "2026-10-15T14:07:00.464117+00:00",
+  "614cf2eaa8ad53fb": "2026-10-15T14:07:00.464117+00:00",
+  "ff82e8218744e5ab": "2026-10-15T14:07:00.464117+00:00"
  },
  "recent": [
   {
@@ -12539,6 +12542,29 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "Explainer: Why are credit default swaps unnerving AI investors?",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPYWRtVm1RTmdMcHZLMFFUTUphS2UweFlGVUtpa0Q3WndrcHVrWnl2Szkwc1VnaU1WMHBtOG5nSEJ0OG5BNldxWHp4RWUyejFqNENpSjZPa0Q4OFNXbHk4MDBLUWlzQmlDQVNYcTg1RkRsVDZ0T0JJaUVGQmhXWVF5XzI4U2haYmNZ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-15T14:07:00.464117+00:00",
+   "title_ru": "Пояснитель: Почему кредитные дефолтные свопы нервируют ИИ-инвесторов?"
+  },
+  {
+   "title": "Market selloff, rising rates test AI data centre deal boom",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQUkF0Z0d5VTdCU1hISVI0eXNTUnpGOFlXc1BwM0dHWEJ6SWs2REc1TEdFdUtQRlRYTUM4TXRqcnFYZWlldDdjQnhLQ3ZQVmdrYXVvTWhwSGRnejRLLXBjbms5Z2pRMEJVWlp5Yks5WG5Tck9ZYXJaVDk5ZGZyanhEQVJUOXJMM0hBTzRTNnVheFlkcmpUSzdadi12VmZlbGFEWjA3SXEzcnJ2TTRXMkZv?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-15T14:07:00.464117+00:00",
+   "title_ru": "Рыночная распродажа, растущие ставки тестируют бум сделок центра обработки данных ИИ",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-14",
@@ -14918,9 +14944,10 @@
   },
   "checked": "2026-10-15T13:52:00.117944+00:00",
   "sec_seen": [
-   "0001104659-26-116015",
    "0001140361-26-039677",
-   "0001628280-26-065947"
+   "0001104659-26-116015",
+   "0001437749-26-032677",
+   "0001437749-26-032676"
   ],
   "errors": {}
  }
