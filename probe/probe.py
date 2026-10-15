@@ -1,35 +1,27 @@
-"""Probe round 3: why SEC financials are not saved; free Yahoo quote endpoints; Google translate to English."""
-import json, os, sys, time, traceback, urllib.request, urllib.parse
-sys.path.insert(0, os.path.dirname(__file__))
-R = {"env_sec_ua_set": bool(os.environ.get("SEC_USER_AGENT", "").strip())}
-import stocks_main as S
-from datetime import datetime, timezone
-S.FIN_DIR = os.path.join(os.path.dirname(__file__), "fin")
-for ua_name, ua in [("default", None), ("plain", "EconNews venerablesoul@users.noreply.github.com")]:
+"""Probe round 4: which SEC request/header combination works from GitHub runners."""
+import gzip, json, os, urllib.request, itertools
+R = {}
+UAS = {"research": "EconNews research bot econnews@example.com",
+       "trades": "EconNews venerablesoul@users.noreply.github.com",
+       "sample": "Sample Company Name AdminContact@samplecompanydomain.com",
+       "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"}
+URLS = {"tickers": "https://www.sec.gov/files/company_tickers.json",
+        "facts": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json",
+        "concept": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000320193/us-gaap/NetIncomeLoss.json",
+        "submissions": "https://data.sec.gov/submissions/CIK0000320193.json",
+        "feed": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcurrent&type=4&company=&dateb=&owner=include&start=0&count=10&output=atom"}
+for (un, ua), (k, url), enc in itertools.product(UAS.items(), URLS.items(), ["identity", "gzip, deflate"]):
+    h = {"User-Agent": ua, "Accept-Encoding": enc, "Accept": "*/*"}
     try:
-        if ua:
-            os.environ["SEC_USER_AGENT"] = ua
-        h = S.sec_headers()
-        S._CIK.clear() if hasattr(S._CIK, "clear") else None
-        t0 = time.time()
-        cik = S.cik_for("AAPL", h)
-        facts = S._json(S.SEC_FACTS_URL.format(cik=cik), h, timeout=60)
-        fin = S.financials_from_facts(facts)
-        R["sec_" + ua_name] = {"ok": True, "cik": cik, "sec": round(time.time() - t0, 1), "annual": fin["annual"][:1], "q": fin["quarterly"][:2]}
+        with urllib.request.urlopen(urllib.request.Request(url, headers=h), timeout=30) as r:
+            raw = r.read()
+            if r.headers.get("Content-Encoding") == "gzip":
+                raw = gzip.decompress(raw)
+            R[f"{un}|{k}|{enc[:4]}"] = [r.status, len(raw)]
+    except urllib.error.HTTPError as e:
+        R[f"{un}|{k}|{enc[:4]}"] = [e.code, e.read()[:120].decode("utf-8", "replace")]
     except Exception as e:
-        R["sec_" + ua_name] = {"ok": False, "err": f"{type(e).__name__}: {e}", "tb": traceback.format_exc()[-600:]}
-try:
-    n = S.update_financials(["MSFT", "NVDA"], datetime.now(timezone.utc), limit=2)
-    R["update_financials"] = {"n": n, "files": os.listdir(S.FIN_DIR)}
-except Exception as e:
-    R["update_financials"] = {"err": repr(e), "tb": traceback.format_exc()[-800:]}
-def get(url):
-    try:
-        with urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": S.UA}), timeout=20) as r:
-            return r.status, r.read()[:600].decode("utf-8", "replace")
-    except Exception as e:
-        return -1, repr(e)[:300]
-R["gtr_en"] = get("https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=en&dt=t&q=" + urllib.parse.quote("Сбербанк повысил прогноз по прибыли"))
+        R[f"{un}|{k}|{enc[:4]}"] = [-1, repr(e)[:120]]
 os.makedirs("probe", exist_ok=True)
 json.dump(R, open("probe/out.json", "w"), ensure_ascii=False, indent=1)
-print(json.dumps(R, ensure_ascii=False)[:3000])
+print(json.dumps(R, ensure_ascii=False, indent=1))
