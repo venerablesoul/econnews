@@ -1009,7 +1009,11 @@
   "16eac4a933ddb32d": "2026-10-15T01:51:24.966256+00:00",
   "8977b18bcd1d1c37": "2026-10-15T01:51:24.966256+00:00",
   "e39332b55ae373f2": "2026-10-15T02:01:25.033684+00:00",
-  "180f6e1473098c6e": "2026-10-15T02:01:25.033684+00:00"
+  "180f6e1473098c6e": "2026-10-15T02:01:25.033684+00:00",
+  "3add62e82c18c3b7": "2026-10-15T02:11:25.033906+00:00",
+  "a232839dbaa0a81e": "2026-10-15T02:11:25.033906+00:00",
+  "9b496184f04eb6fc": "2026-10-15T02:11:25.033906+00:00",
+  "bb0b4609234b16d7": "2026-10-15T02:11:25.033906+00:00"
  },
  "recent": [
   {
@@ -10366,6 +10370,59 @@
    "title_ru": "Даймон из JPMorgan считает, что федеральный долг может привести к волатильности облигаций и повышению ставок",
    "lead": "JPMorgan Chase Chairman and CEO Jamie Dimon discusses the impact of the federal debt on the bond market during an event at the Economic Club of Chicago. (Source: Bloomberg)",
    "lead_ru": "Председатель и главный исполнительный директор JPMorgan Chase Джейми Даймон обсуждает влияние федерального долга на рынок облигаций во время мероприятия в Экономическом клубе Чикаго. (Источник: Блумберг)",
+   "tags": [
+    "облигации"
+   ]
+  },
+  {
+   "title": "BOJ’s Koeda Warns Against Overly Cautious Stance on Rate Hikes",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-15/boj-s-koeda-warns-against-overly-cautious-stance-on-rate-hikes",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 7,
+   "ts": "2026-10-15T02:11:25.033906+00:00",
+   "title_ru": "Коэда из Банка Японии предостерегает от чрезмерно осторожной позиции в отношении повышения ставок",
+   "lead": "Bank of Japan Board Member Junko Koeda warned against taking too much of a cautious stance on raising interest rates, in comments suggesting that the central bank is on track to hike borrowing costs again in the coming months.",
+   "lead_ru": "Член правления Банка Японии Джунко Коэда предостерег от слишком осторожной позиции в отношении повышения процентных ставок, предполагая, что центральный банк собирается снова повысить стоимость заимствований в ближайшие месяцы.",
+   "tags": [
+    "ставки"
+   ]
+  },
+  {
+   "title": "Asia’s Economic Resilience Amid Uncertainty: Can it be Sustained?",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQWTJPVzc3MWoxZmxrS2FpM1hDcTd6dk45Yjl0WWNjZ1FqdHdHcmY0RHpJUzB1Rm0yVmFvSEFUR2hUV2JpMFpwY2Y3VFZJaG1nNnZ0ZWdCaU85MUVMRUxZUEJOYVRMa2IyaVV0QldNQ2pvQTBpODcwNktwY0tlUHNKMFVmZFBUeWE0RmxuaERlYnUtMjFCTWNackJUU3N4cngzdEFBc0Q3aFFpTE40bmoxSmk4Qkl0S1U?oc=5",
+   "sources": [
+    "МВФ"
+   ],
+   "score": 5,
+   "ts": "2026-10-15T02:11:25.033906+00:00",
+   "title_ru": "Экономическая устойчивость Азии в условиях неопределенности: можно ли ее сохранить?"
+  },
+  {
+   "title": "IMF warns of slowing Asian growth, spillover from rising yields",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPVzQtNy1yR0xkemd2ellCSWZBS1ZmVjBuZHAxTXZwZXFIb1preWk1d0hLNVN6V3REbUh1TkpNbFJqRzZvTXh5eGo4TkNsQzFkNzZDNzJsNWYtZ0pIZHR6NWFfX0hzY2ZkdldJTUFRLVRTcVAwV0hjVklONGVfOVMwZ2dQM1pFUURuSlhwV0JSYzVESVpEYkpIZmJ0VE9sNUhJdE9tUQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-15T02:11:25.033906+00:00",
+   "title_ru": "МВФ предупреждает о замедлении экономического роста в Азии и побочном эффекте от повышения доходности",
+   "tags": [
+    "облигации"
+   ]
+  },
+  {
+   "title": "MUFG Wades Back Into Japanese Bonds With Eye on Policy Risks",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-14/mufg-wades-back-into-japanese-bonds-with-eye-on-policy-risks",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-15T02:11:25.033906+00:00",
+   "title_ru": "MUFG возвращается к японским облигациям, опасаясь политических рисков",
+   "lead": "Japan’s biggest bank is tentatively getting back into the country’s benchmark government bonds, even as it remains concerned that yields could further spike due to fiscal and monetary policies in the nation.",
+   "lead_ru": "Крупнейший банк Японии осторожно возвращается к основным государственным облигациям страны, хотя он по-прежнему обеспокоен тем, что доходность может еще больше вырасти из-за фискальной и монетарной политики в стране.",
    "tags": [
     "облигации"
    ]
