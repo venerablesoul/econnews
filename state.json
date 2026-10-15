@@ -1139,7 +1139,8 @@
   "51c9d1e92bf1de42": "2026-10-15T15:37:01.068095+00:00",
   "0fa4f4ec491d1395": "2026-10-15T15:42:01.090894+00:00",
   "2a4b124b15f4efe6": "2026-10-15T15:42:01.090894+00:00",
-  "b78822cc7f31b592": "2026-10-15T15:52:01.060380+00:00"
+  "b78822cc7f31b592": "2026-10-15T15:52:01.060380+00:00",
+  "8cb5ce01323f831c": "2026-10-15T15:57:01.024047+00:00"
  },
  "recent": [
   {
@@ -11934,6 +11935,19 @@
     "rates",
     "dollar"
    ]
+  },
+  {
+   "title": "TomTom shares fall as revenue miss outweighs higher margin forecast",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPN05TQnNkY3ZzSzJNdzFMRGFQdjdJREJ2UzJtalo2emE0Y1c1cTVTZTQzTGVrX3VqSFF3QnZBZFFLNUF4OHNzRDctZUJTU3BxeXdTRmNZYUhFZm9VYUNBWERqa3RGbHcwWXExbFYtcjF1U3gxUTE2Q3R5SmNHTnRKVHNKajBBaDRicEZsNnRjMkhQdERNMGEtSkpnaFFFRm8xUml4dTdONTc0ZDBzMk14VnVUcTcyU2lva3dSajZFLVIwb0k?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-15T15:57:01.024047+00:00",
+   "title_ru": "Акции TomTom падают, поскольку промахи по выручке перевешивают более высокий прогноз маржи",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-14",
@@ -14074,6 +14088,22 @@
    },
    {
     "src": "sec",
+    "id": "d52eddda71d18b93",
+    "ticker": "DBX",
+    "company": "DROPBOX, INC.",
+    "who": "Andrew Houston",
+    "role": "CEO, 10% owner",
+    "type": "sell",
+    "value": 1035235,
+    "shares": 29500,
+    "price": 35.09,
+    "plan": true,
+    "date": "2026-10-12",
+    "disclosed": "2026-10-15",
+    "link": "https://www.sec.gov/Archives/edgar/data/1734563/000173456326000023/0001734563-26-000023-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "1d7ee3ced406c514",
     "ticker": "NEOV",
     "company": "NeoVolta Inc.",
@@ -14359,13 +14389,14 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-15T14:52:01.102659+00:00",
+  "checked": "2026-10-15T15:57:01.024047+00:00",
   "sec_seen": [
    "0001437749-26-032687",
    "0001104659-26-116094",
    "0001437749-26-032688",
    "0002119764-26-000032",
-   "0001852367-26-000009"
+   "0001852367-26-000009",
+   "0001734563-26-000023"
   ],
   "errors": {}
  }
