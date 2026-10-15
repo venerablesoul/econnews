@@ -1142,7 +1142,8 @@
   "b2c8368cd80bb1bc": "2026-10-15T21:57:36.412636+00:00",
   "154a8a89c97c4f5a": "2026-10-15T22:02:36.421671+00:00",
   "e7cd23d01838b883": "2026-10-15T22:02:36.421671+00:00",
-  "ab6d58e98ccf90d8": "2026-10-15T22:07:36.464934+00:00"
+  "ab6d58e98ccf90d8": "2026-10-15T22:07:36.464934+00:00",
+  "935fd7fc2e51f586": "2026-10-15T22:12:36.446132+00:00"
  },
  "recent": [
   {
@@ -12082,6 +12083,16 @@
    "score": 3,
    "ts": "2026-10-15T22:07:36.464934+00:00",
    "title_ru": "MSCI взвешивает понижение Индонезии до статуса отдельного рынка"
+  },
+  {
+   "title": "The World Can’t Afford to Get AI Wrong",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNcUpHZG5KRXJ4d1VXVlBaOVN2VlZCV1liOGItZ3NrTmN4ZEp6OEtIZ1hxLXNBOEVwNGRMajFTNlUzcWpHWXRiTHhDOUxVQVA5dDZvaVBqYXlELXlOc251X08wWElXanNIMEFjM0lvamd3czBDWkhYX2hHdEJITTQ0TmZmak5QVnotaU9jTklzMA?oc=5",
+   "sources": [
+    "IMF"
+   ],
+   "score": 4,
+   "ts": "2026-10-15T22:12:36.446132+00:00",
+   "title_ru": "Мир не может позволить себе ошибиться с ИИ"
   }
  ],
  "last_digest": "2026-10-15",
@@ -14461,6 +14472,22 @@
    },
    {
     "src": "sec",
+    "id": "2e54425eda557580",
+    "ticker": "FRMI",
+    "company": "Fermi Inc.",
+    "who": "Neugebauer Toby R et al.",
+    "role": "10% owner",
+    "type": "sell",
+    "value": 14355868,
+    "shares": 4047200,
+    "price": 3.55,
+    "plan": false,
+    "date": "2026-10-14",
+    "disclosed": "2026-10-15",
+    "link": "https://www.sec.gov/Archives/edgar/data/2088794/000090514826004482/0000905148-26-004482-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "c976d6d90b286a4e",
     "ticker": "AFL",
     "company": "AFLAC INC",
@@ -14968,6 +14995,7 @@
    "0001213900-26-109916",
    "0001398344-26-018255",
    "0001898481-26-000005",
+   "0000905148-26-004482",
    "0001207696-26-000007",
    "0001433026-26-000006",
    "0001309515-26-000002",
