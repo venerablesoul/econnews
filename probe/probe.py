@@ -1,59 +1,36 @@
-"""Probe round 9: the real builders (company.py, options.py, macro.py, moex.py) against the live sources."""
-import json, os, sys, tempfile, time, traceback
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import company, options, macro, moex
+"""Probe round 10: the live bot server after the deploy (new company parts, IPO, intraday history)."""
+import json, time, urllib.request
+API = "https://econnews-bot.econnews-6dce35.workers.dev"
 OUT = {}
-tmp = tempfile.mkdtemp()
 
 
-def run(name, fn):
+def get(path):
     t = time.time()
     try:
-        OUT[name] = {"ok": True, "res": fn(), "sec": round(time.time() - t, 1)}
-    except Exception:
-        OUT[name] = {"ok": False, "err": traceback.format_exc()[-1500:], "sec": round(time.time() - t, 1)}
+        with urllib.request.urlopen(urllib.request.Request(API + path, headers={"User-Agent": "probe"}), timeout=40) as r:
+            d = json.loads(r.read())
+            return {"status": r.status, "sec": round(time.time() - t, 2), "d": d}
+    except urllib.error.HTTPError as e:
+        return {"status": e.code, "body": e.read()[:400].decode("utf-8", "replace")}
+    except Exception as e:
+        return {"err": repr(e)}
 
 
-def co():
-    n = company.build(tickers=["AAPL", "BRK.B", "KO", "JPM"], limit=4, out_dir=tmp, sleep=0.5)
-    res = {"written": n}
-    for t in ("AAPL", "BRK.B", "KO", "JPM"):
-        d = company.load(os.path.join(tmp, t + ".json"))
-        res[t] = {"bytes": len(json.dumps(d, ensure_ascii=False)), "keys": sorted(d), "wiki": {k: (v or {}).get("t") for k, v in (d.get("wiki") or {}).items()},
-                  "funds": [x.get("n") for x in (d.get("holders") or {}).get("funds", [])[:3]], "div_n": len((d.get("div") or {}).get("hist", [])),
-                  "short_rows": len((d.get("short") or {}).get("rows", [])), "est": [e.get("p") for e in d.get("est", [])], "targets": d.get("targets"),
-                  "filings": (d.get("filings") or [])[:2], "ratings": (d.get("ratings") or [])[:2]}
-    return res
+def short(x, n=1500):
+    return json.dumps(x, ensure_ascii=False)[:n]
 
 
-def opt():
-    s = os.path.join(tmp, "options.json")
-    n = options.build(tickers=["AAPL", "SPY", "BRK.B", "TSLA"], limit=4, out_dir=tmp, summary_path=s, sleep=0.5)
-    d = options.load(os.path.join(tmp, "AAPL.json"))
-    return {"written": n, "summary": options.load(s), "aapl_bytes": len(json.dumps(d)), "aapl_exp": d.get("exp", [])[:3],
-            "aapl_chain0": (d.get("chains") or [{}])[0].get("rows", [])[:3], "spy_bytes": os.path.getsize(os.path.join(tmp, "SPY.json")) if os.path.exists(os.path.join(tmp, "SPY.json")) else None}
-
-
-def mac():
-    p = os.path.join(tmp, "macro.json")
-    n = macro.build(path=p, max_age_h=0)
-    d = macro.load(p) if hasattr(macro, "load") else json.load(open(p))
-    return {"written": n, "years": d.get("years"), "ind": list(d.get("ind", {})), "usa": next((r for r in d.get("rows", []) if r["c"] == "USA"), None),
-            "missing": [c for c in macro.COUNTRIES if c not in {r["c"] for r in d.get("rows", [])}], "bytes": os.path.getsize(p)}
-
-
-def mx():
-    p = os.path.join(tmp, "moex.json")
-    n = moex.build(path=p, max_age_min=0)
-    d = json.load(open(p)) if os.path.exists(p) else {}
-    rows = d.get("rows", [])
-    return {"written": n, "time": d.get("time"), "n": len(rows), "top": rows[:5], "no_sector": [r["s"] for r in rows if not r.get("sec") and r.get("w")],
-            "bytes": os.path.getsize(p) if os.path.exists(p) else None}
-
-
-run("company", co)
-run("options", opt)
-run("macro", mac)
-run("moex", mx)
-with open("probe/out4.json", "w") as f:
-    json.dump(OUT, f, ensure_ascii=False, indent=1, default=str)
+r = get("/api/ipo"); OUT["ipo"] = {"status": r.get("status"), "n": len((r.get("d") or {}).get("ipo") or []), "first": short(((r.get("d") or {}).get("ipo") or [None])[0], 300)}
+for s in ("AAPL", "XOM", "SPY", "BRK.B"):
+    r = get("/api/company?s=" + s)
+    d = r.get("d") or {}
+    OUT["co_" + s] = {"status": r.get("status"), "sec": r.get("sec"), "keys": sorted(d), "errors": d.get("errors"), "co": bool(d.get("co")),
+                      "opt": short(d.get("opt"), 300), "rv": short((d.get("rv") or {}).get("rows"), 400), "dvd": short(d.get("dvd"), 300), "cf": short(d.get("cf"), 300),
+                      "body": r.get("body")}
+for s, rg in (("AAPL", "1d"), ("BTC", "5d"), ("SBER", "1d"), ("S&P", "5d")):
+    r = get("/api/history?s=" + urllib.request.quote(s) + "&r=" + rg)
+    d = r.get("d") or {}
+    OUT[f"hist_{s}_{rg}"] = {"status": r.get("status"), "n": len(d.get("c") or []), "range": d.get("range"), "first_t": (d.get("t") or [None])[0],
+                             "last_t": (d.get("t") or [None])[-1], "src": d.get("src"), "body": r.get("body")}
+with open("probe/out5.json", "w") as f:
+    json.dump(OUT, f, ensure_ascii=False, indent=1)
