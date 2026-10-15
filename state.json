@@ -1161,7 +1161,9 @@
   "1b26a7b35169634d": "2026-10-15T16:47:01.039024+00:00",
   "c6e2cd87793b1a30": "2026-10-15T16:52:01.018865+00:00",
   "46af647bea834d1c": "2026-10-15T16:52:01.018865+00:00",
-  "792f762160f52d76": "2026-10-15T16:52:01.018865+00:00"
+  "792f762160f52d76": "2026-10-15T16:52:01.018865+00:00",
+  "a0492006fcb2e874": "2026-10-15T16:57:01.104087+00:00",
+  "1b0586b04b0abf99": "2026-10-15T16:57:01.104087+00:00"
  },
  "recent": [
   {
@@ -12151,6 +12153,34 @@
    "title_ru": "Трехлетний бюджет Италии привлекает € 10,7 млрд из финансового сектора",
    "lead": "Premier Giorgia Meloni’s latest budget includes plans to raise €10.7 billion ($12 billion) from Italy’s financial sector over the next three years.",
    "lead_ru": "Последний бюджет премьер-министра Джорджии Мелони включает планы по привлечению € 10,7 млрд ($ 12 млрд) из финансового сектора Италии в течение следующих трех лет."
+  },
+  {
+   "title": "People in the US: what is your personal ‘recession indicator’?",
+   "link": "https://www.theguardian.com/business/2026/oct/15/what-is-your-personal-recession-indicator",
+   "sources": [
+    "The Guardian"
+   ],
+   "score": 4,
+   "ts": "2026-10-15T16:57:01.104087+00:00",
+   "title_ru": "Люди в США: каков ваш личный «индикатор рецессии»?",
+   "lead": "We’d like to hear about whether you feel like the US is in a recession and what you think signals such a downturn Nearly two-thirds of Americans think the US is experiencing a recession, according to a new Harris Poll conducted…",
+   "lead_ru": "Мы хотели бы услышать о том, чувствуете ли вы, что США находятся в рецессии, и что, по вашему мнению, сигнализирует о таком спаде. Почти две трети американцев считают, что США переживают рецессию, согласно новому опросу Harris, проведенному...",
+   "tags": [
+    "GDP"
+   ]
+  },
+  {
+   "title": "Nasdaq reports network disruption, US equities data feeds impacted",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPMnFLNkdraTdWRmNuLUlrbGF6Ni15M1VBODdjYjdyVl9NZ1p0NV9mbW5wd0U2VkFnX0RNYzlNcXhlaUlseFdjbENlWEc3UTBhV19lQmUtcE1uZ0NfNXhqeGxqODBnWVRQODBiR3dCNkJ0bHhFWUZkZnlidlVIZVVYaE9GQVc3dkJJNjkzUnJkX0FELWtERW1TMXBKYmZucmRwamczVGZuaVI2N3BZY3RF?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-15T16:57:01.104087+00:00",
+   "title_ru": "Nasdaq сообщает о сбое в работе сети, что повлияло на потоки данных по акциям США",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-14",
@@ -14592,10 +14622,11 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-15T15:57:01.024047+00:00",
+  "checked": "2026-10-15T16:57:01.104087+00:00",
   "sec_seen": [
    "0001683168-26-007879",
    "0001802156-26-000100",
+   "0001802156-26-000102",
    "0001683168-26-007881",
    "0001683168-26-007878",
    "0001734563-26-000023"
