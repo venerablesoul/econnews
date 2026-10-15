@@ -1182,7 +1182,10 @@
   "33c4a1b5eef0f4b1": "2026-10-15T13:52:00.117944+00:00",
   "ff782c5db9563fff": "2026-10-15T13:52:00.117944+00:00",
   "f28c4a3ce1125c8e": "2026-10-15T13:52:00.117944+00:00",
-  "7de28653e9e67db8": "2026-10-15T13:52:00.117944+00:00"
+  "7de28653e9e67db8": "2026-10-15T13:52:00.117944+00:00",
+  "399b52ceff06bf6c": "2026-10-15T13:56:58.823126+00:00",
+  "9944a5977e777659": "2026-10-15T13:56:58.823126+00:00",
+  "3a5917176c896e1b": "2026-10-15T13:56:58.823126+00:00"
  },
  "recent": [
   {
@@ -12493,6 +12496,32 @@
    ],
    "score": 1,
    "ts": "2026-10-15T13:52:00.117944+00:00"
+  },
+  {
+   "title": "Fed Won't Raise Rates at Next Meeting, Strategist Amoroso Says",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-15/fed-won-t-hike-rates-at-next-meeting-strategist-amoroso-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-15T13:56:58.823126+00:00",
+   "title_ru": "ФРС не будет повышать ставки на следующем заседании, говорит стратег Аморосо",
+   "lead": "Anastasia Amoroso, Partners Group chief investment strategist, says the Federal Reserve is unlikely to raise interest rates at its next meeting, even after hotter-than-expected producer price data.",
+   "lead_ru": "Анастасия Аморосо, главный инвестиционный стратег Partners Group, говорит, что Федеральная резервная система вряд ли поднимет процентные ставки на своем следующем заседании, даже после более горячих, чем ожидалось, данных о ценах производителей.",
+   "tags": [
+    "Fed",
+    "rates"
+   ]
+  },
+  {
+   "title": "US FTC subpoenas OpenAI and Anthropic over consumer harms, Axios reports",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNSjB0ci1GS09NczVkMHZGUlZQVE5PUWJuYlZUODlnZUtxWWxQVVNNcGRHVjh2U0p3ZU9iTHQ3aThVOWpnYXVZRGQxaTc0Q293bGFoeUowbnloOU1qNm1ZMlloOGl0c251c2pQRXh6cExNQXo5OXQ3ZDRpSVZZZ211alY0ZENWb0FJT3QwRzQyb1lRejMxTkFreExtLXhIUm9oUFBkRzRCZ1dzSGN6MVhNSGl3?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-15T13:56:58.823126+00:00",
+   "title_ru": "Федеральная торговая комиссия США вызывает в суд OpenAI и Anthropic по поводу причинения вреда потребителям, сообщает Axios"
   }
  ],
  "last_digest": "2026-10-14",
@@ -14872,10 +14901,10 @@
   },
   "checked": "2026-10-15T13:52:00.117944+00:00",
   "sec_seen": [
-   "0001683168-26-007859",
-   "0001628280-26-065947",
    "0001140361-26-039677",
-   "0001104659-26-116015"
+   "0001628280-26-065947",
+   "0001104659-26-116015",
+   "0001683168-26-007859"
   ],
   "errors": {}
  }
