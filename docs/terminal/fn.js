@@ -1437,7 +1437,7 @@ function drawIpo(box){
     box.appendChild(tb.t);
   }).catch(function(e){ errBox(box, e) });
 }
-RENDER['p-ana'] = function(){ if (!$('ana-body').querySelector('table')) renderAna() };
+RENDER['p-ana'] = function(){ if (!$('ana-body').querySelector('table, .loading')) renderAna() };   // not again while it loads
 
 /* ======================= W / PORT / ALRT ======================= */
 var My = (function(){
