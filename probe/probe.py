@@ -1,30 +1,24 @@
-"""Probe round 20: which TradingView symbols the free widget shows; is Finnhub's earnings calendar cut off."""
-import json, os, subprocess, urllib.request
-from datetime import date, timedelta
+"""Probe round 21: the fixes on the live site; the earnings calendar with the new splitting."""
+import io, json, os, subprocess, sys, tarfile
+from datetime import date
 OUT = {}
-KEY = os.environ.get("FINNHUB_API_KEY", "")
-
-
-def cal(a, b):
-    u = f"https://finnhub.io/api/v1/calendar/earnings?from={a}&to={b}&token={KEY}"
-    d = json.loads(urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "probe"}), timeout=60).read())
-    rows = d.get("earningsCalendar") or []
-    ds = sorted(r.get("date") for r in rows)
-    return {"n": len(rows), "first": ds[:1], "last": ds[-1:], "aapl_jpm_nflx_tsla": sorted({r["symbol"] + " " + r["date"] for r in rows if r.get("symbol") in ("AAPL", "JPM", "NFLX", "TSLA", "MSFT", "KO")})}
-
-
-t = date.today()
-for a, b in ((t - timedelta(7), t + timedelta(21)), (t, t + timedelta(7)), (t + timedelta(1), t + timedelta(1)), (t + timedelta(6), t + timedelta(6)), (t - timedelta(2), t - timedelta(1))):
-    try:
-        OUT[f"cal {a}..{b}"] = cal(a.isoformat(), b.isoformat())
-    except Exception as e:
-        OUT[f"cal {a}..{b}"] = repr(e)
-r = subprocess.run("pip install -q playwright && python -m playwright install --with-deps chromium >/dev/null && python probe/tv_check.py",
-                   shell=True, capture_output=True, text=True, timeout=1500)
-OUT["tv_rc"], OUT["tv_err"] = r.returncode, r.stderr[-1500:]
+os.makedirs("/tmp/m", exist_ok=True)
+subprocess.run("git fetch -q --depth 1 origin main", shell=True)
+arch = subprocess.run(["git", "archive", "FETCH_HEAD", "stocks.py"], capture_output=True).stdout
+tarfile.open(fileobj=io.BytesIO(arch)).extractall("/tmp/m")
+sys.path.insert(0, "/tmp/m")
+import stocks
+ev = stocks.fetch_earnings(os.environ["FINNHUB_API_KEY"], date.today())
+OUT["earnings_n"] = len(ev)
+OUT["earnings_dates"] = sorted({e["d"] for e in ev})
+OUT["earnings_sample"] = [f'{e["d"]} {e["s"]}' for e in ev if e["d"] >= date.today().isoformat()][:25]
+r = subprocess.run("pip install -q playwright && python -m playwright install --with-deps chromium >/dev/null && python probe/live2.py",
+                   shell=True, capture_output=True, text=True, timeout=1800, env={**os.environ, "PAGES": "https://venerablesoul.github.io/econnews/"})
+OUT["rc"], OUT["err"] = r.returncode, r.stderr[-1200:]
 try:
-    OUT["tv"] = json.loads(r.stdout.strip().splitlines()[-1])
+    OUT["live"] = json.loads(r.stdout.strip().splitlines()[-1])
 except Exception:
-    OUT["tv_raw"] = r.stdout[-1500:]
-with open("probe/out17.json", "w") as f:
+    OUT["raw"] = r.stdout[-1500:]
+with open("probe/out18.json", "w") as f:
     json.dump(OUT, f, ensure_ascii=False, indent=1)
+subprocess.run("git add probe/shots2", shell=True)
