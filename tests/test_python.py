@@ -690,5 +690,67 @@ class MacroAndMoex(unittest.TestCase):
             self.assertEqual(moex.build(now + timedelta(minutes=20), path=path, fetcher=fetcher), 0)
 
 
+class GitSync(unittest.TestCase):
+    """The bot's push to GitHub survives a race with other commits and a rebase that got stuck."""
+
+    def git(self, cwd, *a):
+        import subprocess
+        r = subprocess.run(["git", "-C", cwd, "-c", "user.name=t", "-c", "user.email=t@t", *a], capture_output=True, text=True)
+        self.assertEqual(r.returncode, 0, r.stderr)
+        return r.stdout.strip()
+
+    def test_race_and_stuck_rebase(self):
+        import news_bot
+        with tempfile.TemporaryDirectory() as d:
+            remote, bot, dev = (os.path.join(d, x) for x in ("remote.git", "bot", "dev"))
+            self.git(d, "init", "-q", "--bare", "-b", "main", remote)
+            self.git(d, "clone", "-q", remote, dev)
+            os.makedirs(os.path.join(dev, "docs"))
+            for name, text in (("code.py", "v1"), ("state.json", "{}"), ("docs/data.json", "{}")):
+                with open(os.path.join(dev, name), "w") as f:
+                    f.write(text)
+            self.git(dev, "add", "-A"); self.git(dev, "commit", "-qm", "init"); self.git(dev, "push", "-q", "origin", "main")
+            self.git(d, "clone", "-q", remote, bot)
+
+            # the bot writes data while a developer pushes code and (to force a clash) touches the same data file
+            with open(os.path.join(bot, "docs", "data.json"), "w") as f:
+                f.write('{"bot": 1}')
+            os.makedirs(os.path.join(bot, "docs", "co"))
+            with open(os.path.join(bot, "docs", "co", "AAPL.json"), "w") as f:
+                f.write("{}")
+            with open(os.path.join(dev, "code.py"), "w") as f:
+                f.write("v2")
+            with open(os.path.join(dev, "docs", "data.json"), "w") as f:
+                f.write('{"dev": 1}')
+            self.git(dev, "commit", "-qam", "code"); self.git(dev, "push", "-q", "origin", "main")
+            news_bot.git_sync("push", bot)
+            self.git(dev, "pull", "-q")
+            with open(os.path.join(dev, "code.py")) as f:
+                self.assertEqual(f.read(), "v2", "the developer's code is kept")
+            with open(os.path.join(dev, "docs", "data.json")) as f:
+                self.assertEqual(f.read(), '{"bot": 1}', "the bot's data wins")
+            self.assertTrue(os.path.exists(os.path.join(dev, "docs", "co", "AAPL.json")))
+
+            # a rebase stuck half-way (HEAD detached) is aborted and the push still goes through
+            with open(os.path.join(dev, "code.py"), "w") as f:
+                f.write("v3")
+            self.git(dev, "commit", "-qam", "code 3"); self.git(dev, "push", "-q", "origin", "main")
+            with open(os.path.join(bot, "state.json"), "w") as f:
+                f.write('{"x": 1}')
+            self.git(bot, "commit", "-qam", "local")
+            self.git(bot, "fetch", "-q")
+            import subprocess
+            subprocess.run(["git", "-C", bot, "-c", "user.name=t", "-c", "user.email=t@t", "rebase", "-q", "-i", "--exec", "false", "origin/main"],
+                           capture_output=True, env={**os.environ, "GIT_SEQUENCE_EDITOR": "true"})
+            self.assertTrue(os.path.isdir(os.path.join(bot, ".git", "rebase-merge")), "the test set up a stuck rebase")
+            news_bot.git_sync("pull", bot)
+            news_bot.git_sync("push", bot)
+            self.git(dev, "pull", "-q")
+            with open(os.path.join(dev, "state.json")) as f:
+                self.assertEqual(f.read(), '{"x": 1}')
+            with open(os.path.join(dev, "code.py")) as f:
+                self.assertEqual(f.read(), "v3")
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

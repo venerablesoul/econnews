@@ -1317,31 +1317,64 @@ def load_dotenv(path):
         pass
 
 
+# what the bot writes: only it changes these files, so on a clash its own versions win
+DATA_PATHS = ("state.json", "docs/data.json", "docs/stocks.json", "docs/rates.json", "docs/fin", "docs/co", "docs/opt",
+              "docs/options.json", "docs/macro.json", "docs/moex.json")
+
+
 def git_sync(stage, repo):
     """Server mode: pull changes from GitHub before a run, push state.json and the page data after it."""
+    import shutil
     import subprocess
+    import tempfile
 
     def git(*a):
         return subprocess.run(["git", "-C", repo, *a], capture_output=True, text=True, timeout=120)
 
+    def heal():
+        # a rebase that stopped half-way leaves HEAD detached and blocks every later pull and push
+        if any(os.path.isdir(os.path.join(repo, ".git", d)) for d in ("rebase-merge", "rebase-apply")):
+            print("  ! git: aborting a stuck rebase")
+            git("rebase", "--abort")
+
+    def commit():
+        for f in DATA_PATHS:
+            if os.path.exists(os.path.join(repo, f)):
+                git("add", f)
+        if git("diff", "--cached", "--quiet").returncode == 0:
+            return False
+        git("-c", "user.name=news-bot", "-c", "user.email=news-bot@users.noreply.github.com", "commit", "-q", "-m", "news update")
+        return True
+
+    heal()
     if stage == "pull":
         r = git("pull", "--rebase", "--autostash", "-q")
         if r.returncode:
             print("  ! git pull:", (r.stderr or r.stdout).strip()[:300])
+            heal()
         return
-    for f in ("state.json", "docs/data.json", "docs/stocks.json", "docs/rates.json", "docs/fin", "docs/co", "docs/opt",
-              "docs/options.json", "docs/macro.json", "docs/moex.json"):
-        if os.path.exists(os.path.join(repo, f)):
-            git("add", f)
-    if git("diff", "--cached", "--quiet").returncode == 0:
+    if not commit() and git("status", "-sb").stdout.find("ahead") < 0:
         return  # nothing to push
-    git("-c", "user.name=news-bot", "-c", "user.email=news-bot@users.noreply.github.com",
-        "commit", "-q", "-m", "news update")
     for _ in range(3):
         r = git("push", "-q")
         if r.returncode == 0:
             return
-        git("pull", "--rebase", "--autostash", "-q")
+        # GitHub moved on: take its latest state and put the bot's current data files on top (no rebase to get stuck in)
+        tmp = tempfile.mkdtemp()
+        try:
+            for f in DATA_PATHS:
+                src = os.path.join(repo, f)
+                if os.path.isdir(src):
+                    shutil.copytree(src, os.path.join(tmp, f))
+                elif os.path.exists(src):
+                    os.makedirs(os.path.dirname(os.path.join(tmp, f)), exist_ok=True)
+                    shutil.copy2(src, os.path.join(tmp, f))
+            git("fetch", "-q", "origin")
+            git("reset", "-q", "--hard", "@{upstream}")
+            shutil.copytree(tmp, repo, dirs_exist_ok=True)
+        finally:
+            shutil.rmtree(tmp, ignore_errors=True)
+        commit()
     print("  ! git push failed:", (r.stderr or r.stdout).strip()[:300])
 
 

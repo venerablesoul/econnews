@@ -69,9 +69,5 @@ jobs:
 
       - name: Save state
         if: always()
-        run: |
-          git config user.name "news-bot"
-          git config user.email "news-bot@users.noreply.github.com"
-          git add state.json 2>/dev/null || true
-          for f in docs/data.json docs/stocks.json docs/rates.json docs/fin docs/co docs/opt docs/options.json docs/macro.json docs/moex.json; do git add "$f" 2>/dev/null || true; done
-          git diff --cached --quiet || (git commit -m "news update" && git pull --rebase && git push)
+        # the same save as inside the loop: survives a race with other commits and a stuck rebase
+        run: python -c "import news_bot; news_bot.git_sync('push', '.')"
