@@ -86,6 +86,19 @@ class StocksParsing(unittest.TestCase):
         self.assertEqual(out[2]["n"], "Apple")
         self.assertEqual(out[2]["rev_e"], 115327453620)
 
+    def test_earnings_calendar_split_when_cut_off(self):
+        # Finnhub keeps only the last 1500 rows of a long range: JPM (early) would be lost without splitting
+        def get(a, b):
+            days = (date.fromisoformat(b) - date.fromisoformat(a)).days + 1
+            rows = [{"symbol": "JPM", "date": "2026-10-13"}] if a <= "2026-10-13" <= b else []
+            rows += [{"symbol": "AAPL", "date": "2026-11-02"}] if a <= "2026-11-02" <= b else []
+            rows += [{"symbol": "ZZZ", "date": b}] * (60 * days)   # ~60 small companies a day
+            if len(rows) > stocks.FH_CALENDAR_CAP:
+                rows = sorted(rows, key=lambda r: r["date"])[-stocks.FH_CALENDAR_CAP:]
+            return {"earningsCalendar": rows}
+        out = stocks.fetch_earnings("k", date(2026, 10, 15), get=get)
+        self.assertEqual([x["s"] for x in out], ["JPM", "AAPL"])
+
     def test_universe_is_consistent(self):
         tickers = [t for t, *_ in stocks.UNIVERSE]
         self.assertEqual(len(tickers), len(set(tickers)))

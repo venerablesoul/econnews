@@ -628,8 +628,8 @@ function desAnr(box, d){
   var c = consensus(d.anr), co = d.co || {}, q = d.quote || {};
   if (co.targets && co.targets.mean) {
     var tg = co.targets, px = tg.px || q.px;
-    var tb0 = h4(box, TX('pt_head', tg.n || '—'));
-    if (px) tb0.appendChild(targetBar(tg, px));
+    var tb0 = el('div', 'blk'); box.appendChild(tb0);
+    if (px) tb0.appendChild(targetBar(tg, px)); else tb0.appendChild(el('h4', null, TX('pt_head', tg.n || '—')));
     kv(box, [[TX('pt_mean'), '$' + num(tg.mean, 2)], [TX('pt_median'), '$' + num(tg.median, 2)], [TX('pt_high'), '$' + num(tg.high, 2)], [TX('pt_low'), '$' + num(tg.low, 2)],
       px ? [TX('pt_up'), pct((tg.mean / px - 1) * 100, 1), cls(tg.mean - px)] : null]);
   }
@@ -1380,8 +1380,9 @@ function drawCorr(box){
   if (syms.length < 2) { box.appendChild(el('div', 'empty', TX('corr_few'))); return }
   if (!T.api()) return noApi(box, TX('m_corr'));
   var note = el('div', 'loading', TX('loading_d')); box.appendChild(note);
+  var token = ana.corrToken = {};   // a newer draw (the panel can be drawn twice when it opens) wins
   Promise.all(syms.map(function(s){ return history(s, range).catch(function(e){ return {error: e.message} }) })).then(function(arr){
-    if (ana.tab !== 'CORR' || range !== ana.corrRange || syms.join() !== ana.corr.join()) return;
+    if (token !== ana.corrToken || ana.tab !== 'CORR' || range !== ana.corrRange || syms.join() !== ana.corr.join()) return;
     note.remove();
     var series = [], bad = [];
     arr.forEach(function(h, i){ if (h.error || !h.c) bad.push(syms[i]); else series.push({s: syms[i], r: dailyReturns(h)}) });

@@ -514,13 +514,15 @@ var GROUPS = [
 // units, column captions and regions are in i18n.js (I.unit, TX('gu_' + group), I.region)
 
 // TradingView symbols for charts
-var TV = {'S&P':'SP:SPX','Nasdaq':'NASDAQ:IXIC','DJI':'DJ:DJI','RTY':'TVC:RUT','VIX':'TVC:VIX','SX5E':'TVC:SX5E',
-  'DAX':'XETR:DAX','UKX':'TVC:UKX','CAC':'EURONEXT:PX1','NKY':'TVC:NI225','HSI':'TVC:HSI','SHCOMP':'SSE:000001',
-  'SENSEX':'BSE:SENSEX','IMOEX':'MOEX:IMOEX','DXY':'TVC:DXY','EUR/USD':'FX:EURUSD','USDJPY':'FX:USDJPY',
+// the free TradingView widget refuses exchange index feeds (SP:SPX, DJ:DJI, TVC:VIX…): CFDs that track them are shown instead;
+// null — no free TradingView chart (US yields): the built-in chart
+var TV = {'S&P':'FOREXCOM:SPXUSD','Nasdaq':'FOREXCOM:NSXUSD','DJI':'FOREXCOM:DJI','RTY':'CAPITALCOM:RTY','VIX':'CAPITALCOM:VIX','SX5E':'CAPITALCOM:EU50',
+  'DAX':'XETR:DAX','UKX':'CAPITALCOM:UK100','CAC':'EURONEXT:PX1','NKY':'CAPITALCOM:J225','HSI':'CAPITALCOM:HK50','SHCOMP':'SSE:000001',
+  'SENSEX':'BSE:SENSEX','IMOEX':'MOEX:IMOEX','DXY':'CAPITALCOM:DXY','EUR/USD':'FX:EURUSD','USDJPY':'FX:USDJPY',
   'GBPUSD':'FX:GBPUSD','USDCNY':'FX_IDC:USDCNY','USDCHF':'FX:USDCHF','USD/RUB':'FX_IDC:USDRUB','CNY/RUB':'FX_IDC:CNYRUB',
   'Brent':'TVC:UKOIL','WTI':'TVC:USOIL','Газ':'CAPITALCOM:NATURALGAS','Золото':'TVC:GOLD','Серебро':'TVC:SILVER',
-  'Платина':'TVC:PLATINUM','Медь':'CAPITALCOM:COPPER','Пшеница':'CAPITALCOM:WHEAT','UST3M':'TVC:US03MY',
-  'UST5':'TVC:US05Y','UST10':'TVC:US10Y','UST30':'TVC:US30Y'};
+  'Платина':'TVC:PLATINUM','Медь':'CAPITALCOM:COPPER','Пшеница':'CAPITALCOM:WHEAT','UST3M':null,
+  'UST5':null,'UST10':null,'UST30':null};
 
 // short commands -> id or symbol
 var ALIAS = {SPX:'S&P',SP500:'S&P','S&P':'S&P',NDX:'Nasdaq',NASDAQ:'Nasdaq',DOW:'DJI',DJI:'DJI',RUSSELL:'RTY',RTY:'RTY',
@@ -894,14 +896,14 @@ function ownSeries(idOrSym, cb){
 }
 function openChart(idOrSym, label, silent){
   var sym, title, seq = ++chartSeq;
-  if (TV[idOrSym]) { sym = TV[idOrSym]; title = (Q[idOrSym] && Q[idOrSym].name) || idOrSym; curChart = idOrSym }
+  if (idOrSym in TV) { sym = TV[idOrSym]; title = (Q[idOrSym] && Q[idOrSym].name) || idOrSym; curChart = idOrSym }
   else if (idOrSym === 'BTC' || idOrSym === 'ETH') { sym = 'BINANCE:' + idOrSym + 'USDT'; title = idOrSym + '/USDT'; curChart = idOrSym }
   else { sym = idOrSym; title = label || idOrSym; curChart = idOrSym }
   $('chart-title').textContent = TX('chart_prefix') + title.toUpperCase();
   document.querySelectorAll('#mkt tr.row').forEach(function(tr){ tr.classList.toggle('sel', tr.dataset.id === curChart) });
   document.querySelectorAll('#chart-tabs button').forEach(function(b){ b.classList.toggle('on', b.dataset.id === curChart) });
   store('last_chart', idOrSym + '|' + (label || ''));
-  var mode = chartMode();
+  var mode = sym ? chartMode() : 'own';
   $('chart-sub').textContent = mode === 'own' ? TX('own_sub') : 'TradingView';
   $('tv').innerHTML = '<div id="ownc"></div><div id="tvc"></div><div class="chart-msg" id="chart-msg"></div>';
   // 1) the built-in chart — at once

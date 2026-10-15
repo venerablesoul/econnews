@@ -343,10 +343,20 @@ def parse_earnings_calendar(payload, tickers):
     return out
 
 
-def fetch_earnings(key, today):
-    frm, to = (today - timedelta(days=7)).isoformat(), (today + timedelta(days=21)).isoformat()
-    data = _json(f"{FH_URL}/calendar/earnings?from={frm}&to={to}&token={key}", timeout=30)
-    return parse_earnings_calendar(data, set(BY_TICKER))
+FH_CALENDAR_CAP = 1500   # Finnhub returns at most this many rows and drops the EARLIEST dates
+
+
+def fetch_earnings(key, today, get=None):
+    get = get or (lambda a, b: _json(f"{FH_URL}/calendar/earnings?from={a}&to={b}&token={key}", timeout=30))
+
+    def rows(a, b):
+        r = (get(a.isoformat(), b.isoformat()) or {}).get("earningsCalendar") or []
+        if len(r) >= FH_CALENDAR_CAP and a < b:   # cut off: halve the range (peak season has ~500 reports a week)
+            mid = a + (b - a) // 2
+            return rows(a, mid) + rows(mid + timedelta(days=1), b)
+        return r
+
+    return parse_earnings_calendar({"earningsCalendar": rows(today - timedelta(days=7), today + timedelta(days=21))}, set(BY_TICKER))
 
 
 # ---------------------------------------------------------------------------

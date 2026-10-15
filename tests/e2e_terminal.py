@@ -286,6 +286,8 @@ def run():
         cmd(page, "CORR AAPL BTC GOLD 1Y")
         page.wait_for_function("document.querySelectorAll('#ana-body table.mx tbody tr').length === 3", timeout=8000)
         shot(page, "07d_corr")
+        page.wait_for_timeout(600)
+        check("CORR: drawn once", page.locator("#ana-body table.mx").count() == 1, page.locator("#ana-body table.mx").count())
         check("CORR: 3×3 matrix with ones on the diagonal", page.locator("#ana-body table.mx td:has-text('1.00')").count() >= 3, page.inner_text("#ana-body")[:300])
         cmd(page, "OMON")
         page.wait_for_function("document.querySelector('#ana-body').textContent.includes('SPDR')", timeout=8000)
