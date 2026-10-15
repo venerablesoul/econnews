@@ -263,6 +263,19 @@ table.tbl{width:100%;border-collapse:collapse}
 .tm .tile b{font-size:12px}
 .tm .tile:hover{outline:2px solid var(--yellow);z-index:2}
 .tm .sec{position:absolute;color:rgba(255,255,255,.75);font-size:10px;pointer-events:none;padding:1px 3px;z-index:1;background:rgba(0,0,0,.35);white-space:nowrap;overflow:hidden;max-width:100%}
+.about{padding:7px 10px;border-bottom:1px solid var(--line);color:var(--text);line-height:1.5;font-size:12px}
+.about .src{color:var(--faint);font-size:11px;margin-left:6px}
+.about .src a{color:var(--amber-dim);text-decoration:none}
+.tbl tr.me td{background:#1d1606}
+.tbl tfoot td{color:var(--amber);border-top:1px solid var(--line2)}
+.tbl.chain td.itm{background:#10170f}
+.tbl.chain td.k{color:var(--amber);font-weight:700;text-align:center;background:#111}
+.tbl.chain th.grp{text-align:center;color:var(--amber)}
+.tbl.mx td{text-align:center;padding:4px 6px}
+.tbl.mx th{text-align:center}
+.chipbtn.on{color:#000;background:var(--amber);border-color:var(--amber)}
+.tbl td.nm{max-width:210px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tbl.mx td small{display:block;font-size:10px;opacity:.85}
 .tm-tip{position:fixed;z-index:70;background:#0a0a0a;border:1px solid var(--amber-dim);padding:6px 8px;pointer-events:none;font-size:12px;display:none}
 
 /* кривые */
@@ -385,8 +398,9 @@ nav.tabs{display:none}
   <section class="panel" id="p-des">
     <div class="ph"><span class="code">DES</span><span class="ttl" id="des-title" data-i18n="p_des">COMPANY</span><span class="sub" id="des-sub"></span></div>
     <div class="ptabs" id="des-tabs">
-      <button data-t="DES" class="on">DES</button><button data-t="FA">FA</button><button data-t="ERN">ERN</button>
-      <button data-t="ANR">ANR</button><button data-t="CN">CN</button><button data-t="HDS">HDS</button><span class="sp"></span>
+      <button data-t="DES" class="on">DES</button><button data-t="FA">FA</button><button data-t="ERN">ERN</button><button data-t="EE">EE</button>
+      <button data-t="ANR">ANR</button><button data-t="CN">CN</button><button data-t="HDS">HDS</button><button data-t="DVD">DVD</button>
+      <button data-t="OMON">OMON</button><button data-t="RV">RV</button><button data-t="CF">CF</button><span class="sp"></span>
     </div>
     <div class="pb" id="des-body"><div class="empty" data-i18n-html="des_empty">Type a ticker and a function: <b>AAPL DES</b>, <b>NVDA FA</b>, <b>TSLA ERN</b>, <b>MSFT ANR</b>, <b>AMZN CN</b>. Moscow Exchange works too: <b>SBER DES</b>.</div></div>
   </section>
@@ -395,7 +409,7 @@ nav.tabs{display:none}
     <div class="ph"><span class="code" id="hp-code">HP</span><span class="ttl" id="hp-title" data-i18n="p_hp">PRICE HISTORY</span><span class="sub" id="hp-sub"></span></div>
     <div class="ptabs" id="hp-tabs">
       <button data-t="HP" data-i18n="hp_tab" class="on">HP · TABLE</button><button data-t="COMP" data-i18n="comp_tab">COMP · COMPARE</button><span class="sp"></span>
-      <button data-r="1m">1M</button><button data-r="3m">3M</button><button data-r="6m">6M</button><button data-r="ytd">YTD</button>
+      <button data-r="1d">1D</button><button data-r="5d">5D</button><button data-r="1m">1M</button><button data-r="3m">3M</button><button data-r="6m">6M</button><button data-r="ytd">YTD</button>
       <button data-r="1y" class="on">1Y</button><button data-r="2y">2Y</button><button data-r="5y">5Y</button>
     </div>
     <div class="pb" id="hp-body" style="display:flex;flex-direction:column"><div class="empty" data-i18n-html="hp_empty">Price history: <b>HP AAPL</b>, <b>HP BTC 5Y</b>, <b>HP SBER</b>. Several on one chart: <b>COMP AAPL MSFT NVDA</b>.</div></div>
@@ -407,8 +421,8 @@ nav.tabs{display:none}
   </section>
 
   <section class="panel" id="p-imap">
-    <div class="ph"><span class="code">IMAP</span><span class="ttl" data-i18n="p_imap">US MARKET MAP</span><span class="sub" id="imap-sub"></span></div>
-    <div class="ptabs" id="imap-tabs"><button data-m="ch" class="on" data-i18n="im_day">TODAY</button><button data-m="r5d" data-i18n="im_5d">5 DAYS</button><button data-m="rytd" data-i18n="im_ytd">YTD</button><button data-m="r52" data-i18n="im_1y">1 YEAR</button><span class="sp"></span></div>
+    <div class="ph"><span class="code">IMAP</span><span class="ttl" id="imap-title" data-i18n="p_imap">US MARKET MAP</span><span class="sub" id="imap-sub"></span></div>
+    <div class="ptabs" id="imap-tabs"><button data-m="ch" class="on" data-i18n="im_day">TODAY</button><button data-m="r5d" data-i18n="im_5d">5 DAYS</button><button data-m="rytd" data-i18n="im_ytd">YTD</button><button data-m="r52" data-i18n="im_1y">1 YEAR</button><span class="sp"></span><button data-g="US" class="on">US</button><button data-g="RU" data-i18n="im_ru">RUSSIA</button></div>
     <div class="tm" id="imap"></div>
   </section>
 
@@ -416,6 +430,12 @@ nav.tabs{display:none}
     <div class="ph"><span class="code" id="gc-code">GC</span><span class="ttl" id="gc-title" data-i18n="p_gc">BONDS &amp; RATES</span><span class="sub" id="gc-sub"></span></div>
     <div class="ptabs" id="gc-tabs"><button data-t="GC" data-i18n="gc_tab" class="on">GC · CURVES</button><button data-t="CB" data-i18n="cb_tab">CB · CENTRAL BANKS</button><button data-t="WIRP" data-i18n="wirp_tab">WIRP · FED</button><span class="sp"></span></div>
     <div class="pb" id="gc-body" style="display:flex;flex-direction:column"><div class="loading" data-i18n="loading">Loading</div></div>
+  </section>
+
+  <section class="panel" id="p-ana">
+    <div class="ph"><span class="code" id="ana-code">ECST</span><span class="ttl" id="ana-title" data-i18n="p_ana">WORLD ECONOMY &amp; CROSS-ASSET</span><span class="sub" id="ana-sub"></span></div>
+    <div class="ptabs" id="ana-tabs"><button data-t="ECST" data-i18n="ecst_tab" class="on">ECST · ECONOMIES</button><button data-t="FXC" data-i18n="fxc_tab">FXC · CROSS RATES</button><button data-t="CORR" data-i18n="corr_tab">CORR · CORRELATION</button><button data-t="OPT" data-i18n="opt_tab">OMON · OPTIONS</button><button data-t="IPO" data-i18n="ipo_tab">IPO · CALENDAR</button><span class="sp"></span></div>
+    <div class="pb" id="ana-body"><div class="loading" data-i18n="loading">Loading</div></div>
   </section>
 
   <section class="panel" id="p-my">

@@ -1,5 +1,5 @@
 /* Terminal: panel layouts and functions.
-   DES/FA/ERN/ANR/CN/HDS — companies, HP/COMP — history and comparison, EQS — screener, IMAP — market map,
+   DES/FA/ERN/EE/ANR/CN/HDS/DVD/OMON/RV/CF — companies, ECST/FXC/CORR/OPT/IPO — economies and cross-asset, HP/COMP — history and comparison, EQS — screener, IMAP — market map,
    GC/CB/WIRP — bonds and rates, W/PORT/ALRT — personal, the live news feed.
    Data: the bot server (/api/…, keys only there) and the bot's files on the site (stocks.json, rates.json).
    Texts: i18n.js (TX), English by default. */
@@ -86,6 +86,26 @@ function cols(names, left){ return names.map(function(t, i){ return {t: t, l: (l
 // curve and central bank names: "name" is English, "name_ru" Russian (older data had only a Russian "name")
 function locName(x){ return I.ru ? x.name_ru || x.name : x.name }
 function chg(c, d){ return el('td', 'num ' + cls(c), pct(c, d)) }
+// simple moving average: null until n points are available
+function sma(v, n){
+  var out = [], sum = 0;
+  for (var i = 0; i < v.length; i++) { sum += v[i]; if (i >= n) sum -= v[i - n]; out.push(i >= n - 1 ? sum / n : null) }
+  return out;
+}
+// RSI with Wilder's smoothing (the standard definition)
+function rsi(v, n){
+  var out = v.map(function(){ return null }), gain = 0, loss = 0;
+  if (v.length <= n) return out;
+  for (var i = 1; i <= n; i++) { var d = v[i] - v[i - 1]; if (d > 0) gain += d; else loss -= d }
+  gain /= n; loss /= n;
+  out[n] = loss ? 100 - 100 / (1 + gain / loss) : 100;
+  for (var j = n + 1; j < v.length; j++) {
+    var dd = v[j] - v[j - 1];
+    gain = (gain * (n - 1) + Math.max(dd, 0)) / n; loss = (loss * (n - 1) + Math.max(-dd, 0)) / n;
+    out[j] = loss ? 100 - 100 / (1 + gain / loss) : 100;
+  }
+  return out;
+}
 function downloadText(name, text, mime){
   try {
     var blob = new Blob(['﻿' + text], {type: mime || 'text/csv;charset=utf-8'});
@@ -120,19 +140,19 @@ var PANELS = [
   {id:'p-eco', code:'ECO', name:TX('fn_eco')}, {id:'p-trd', code:'TRD', name:TX('fn_trd')},
   {id:'p-des', code:'DES', name:TX('fn_des')}, {id:'p-hp', code:'HP', name:TX('fn_hp')},
   {id:'p-eqs', code:'EQS', name:TX('fn_eqs')}, {id:'p-imap', code:'IMAP', name:TX('fn_imap')},
-  {id:'p-gc', code:'GC', name:TX('fn_gc')}, {id:'p-my', code:'W', name:TX('fn_my')}
+  {id:'p-gc', code:'GC', name:TX('fn_gc')}, {id:'p-my', code:'W', name:TX('fn_my')}, {id:'p-ana', code:'ECST', name:TX('fn_ana')}
 ];
 var LAYOUTS = {
   '1': {cols:'minmax(330px,26%) 1fr minmax(320px,25%)', rows:'62% 38%', areas:'"a b c" "a d e"', slots:['a','b','c','d','e'],
         def:['p-mkt','p-chart','p-crypto','p-news','p-eco'],
-        pref:{'p-des':'c','p-gc':'c','p-my':'c','p-crypto':'c','p-hp':'b','p-eqs':'b','p-imap':'b','p-chart':'b','p-news':'d','p-eco':'e','p-trd':'e','p-mkt':'a'}},
+        pref:{'p-des':'c','p-gc':'c','p-my':'c','p-crypto':'c','p-hp':'b','p-eqs':'b','p-imap':'b','p-ana':'b','p-chart':'b','p-news':'d','p-eco':'e','p-trd':'e','p-mkt':'a'}},
   '4': {cols:'1fr 1fr', rows:'1fr 1fr', areas:'"a b" "c d"', slots:['a','b','c','d'], def:['p-chart','p-des','p-news','p-mkt'],
-        pref:{'p-chart':'a','p-hp':'a','p-imap':'a','p-eqs':'c','p-des':'b','p-gc':'b','p-my':'d','p-mkt':'d','p-news':'c','p-eco':'d','p-trd':'d','p-crypto':'d'}},
+        pref:{'p-chart':'a','p-hp':'a','p-imap':'a','p-ana':'a','p-eqs':'c','p-des':'b','p-gc':'b','p-my':'d','p-mkt':'d','p-news':'c','p-eco':'d','p-trd':'d','p-crypto':'d'}},
   '6': {cols:'1fr 1fr 1fr', rows:'1fr 1fr', areas:'"a b c" "d e f"', slots:['a','b','c','d','e','f'],
         def:['p-mkt','p-chart','p-des','p-news','p-eqs','p-my'],
-        pref:{'p-mkt':'a','p-chart':'b','p-hp':'b','p-des':'c','p-news':'d','p-eqs':'e','p-imap':'e','p-my':'f','p-gc':'f','p-eco':'f','p-trd':'f','p-crypto':'a'}},
+        pref:{'p-mkt':'a','p-chart':'b','p-hp':'b','p-des':'c','p-news':'d','p-eqs':'e','p-imap':'e','p-ana':'e','p-my':'f','p-gc':'f','p-eco':'f','p-trd':'f','p-crypto':'a'}},
   't': {cols:'minmax(300px,40%) 1fr', rows:'55% 45%', areas:'"a b" "c d"', slots:['a','b','c','d'], def:['p-mkt','p-chart','p-crypto','p-news'],
-        pref:{'p-mkt':'a','p-chart':'b','p-hp':'b','p-imap':'b','p-eqs':'b','p-des':'c','p-gc':'c','p-my':'c','p-crypto':'c','p-news':'d','p-eco':'d','p-trd':'d'}}
+        pref:{'p-mkt':'a','p-chart':'b','p-hp':'b','p-imap':'b','p-eqs':'b','p-ana':'b','p-des':'c','p-gc':'c','p-my':'c','p-crypto':'c','p-news':'d','p-eco':'d','p-trd':'d'}}
 };
 var RENDER = {};   // pid → function to call when the panel appears on screen
 var Layout = (function(){
@@ -241,7 +261,9 @@ window.addEventListener('resize', function(){ clearTimeout(rzT); rzT = setTimeou
   var FN = [
     ['WEI', TX('fn_mkt'), 'p-mkt'], ['GP', TX('fn_chart'), 'p-chart'], ['CRYPTO', TX('fn_crypto'), 'p-crypto'], ['N', TX('fn_news'), 'p-news'],
     ['ECO', TX('fn_eco'), 'p-eco'], ['TRD', TX('m_trd'), 'p-trd'], ['DES', TX('m_des'), 'p-des'], ['HP', TX('m_hp'), 'p-hp'],
-    ['COMP', TX('m_comp'), 'p-hp', 'COMP'], ['EQS', TX('m_eqs'), 'p-eqs'], ['IMAP', TX('m_imap'), 'p-imap'], ['GC', TX('m_gc'), 'p-gc'],
+    ['COMP', TX('m_comp'), 'p-hp', 'COMP'], ['EQS', TX('m_eqs'), 'p-eqs'], ['IMAP', TX('m_imap'), 'p-imap', 'IMAP'], ['IMAP RU', TX('m_imap_ru'), 'p-imap', 'IMAP RU'],
+    ['ECST', TX('m_ecst'), 'p-ana', 'ECST'], ['FXC', TX('m_fxc'), 'p-ana', 'FXC'], ['CORR', TX('m_corr'), 'p-ana', 'CORR'], ['OMON', TX('m_opt'), 'p-ana', 'OMON'],
+    ['IPO', TX('m_ipo'), 'p-ana', 'IPO'], ['GC', TX('m_gc'), 'p-gc'],
     ['CB', TX('m_cb'), 'p-gc', 'CB'], ['WIRP', TX('m_wirp'), 'p-gc', 'WIRP'], ['W', TX('m_w'), 'p-my', 'W'],
     ['PORT', TX('m_port'), 'p-my', 'PORT'], ['ALRT', TX('m_alrt'), 'p-my', 'ALRT'], ['HELP', TX('m_help'), null, 'HELP']
   ];
@@ -284,7 +306,8 @@ function renderDes(){
   $('des-sub').textContent = q.px != null ? (d.kind === 'moex' ? '' : '$') + price(q.px) + (d.kind === 'moex' ? ' ₽' : '') + ' ' + pct(q.ch) : '';
   clear(box);
   if (d.kind === 'moex' && des.tab !== 'DES') { box.appendChild(el('div', 'empty', TX('moex_only_des'))); return }
-  ({DES: desMain, FA: desFa, ERN: desErn, ANR: desAnr, CN: desCn, HDS: desHds}[des.tab] || desMain)(box, d);
+  ({DES: desMain, FA: desFa, ERN: desErn, EE: desEe, ANR: desAnr, CN: desCn, HDS: desHds, DVD: desDvd, OMON: desOmon, RV: desRv, CF: desCf}[des.tab] || desMain)(box, d);
+  if (des.scrollTo) { var target = $(des.scrollTo); des.scrollTo = null; if (target) target.scrollIntoView({block: 'start'}) }
 }
 function kv(box, pairs){
   var g = el('div', 'kv');
@@ -311,6 +334,14 @@ function desMain(box, d){
   var meta = el('div', 'meta', [p.ind, p.exch && String(p.exch).replace(/ - .*$/, ''), p.country, p.ipo ? 'IPO ' + dmy(p.ipo) : '', p.isin ? 'ISIN ' + p.isin : '', p.type].filter(Boolean).join(' · '));
   if (p.web) { var a = el('a', null, ' ' + p.web.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '')); a.href = p.web; a.target = '_blank'; a.rel = 'noopener'; meta.appendChild(document.createTextNode(' · ')); meta.appendChild(a) }
   head.appendChild(meta); box.appendChild(head);
+  var co = d.co || {}, cp = co.profile || {}, wk = (co.wiki || {})[I.ru ? 'ru' : 'en'];
+  var about = (wk && wk.x) || cp.summary;
+  if (about) {
+    var ab = el('div', 'about', about.length > 700 ? about.slice(0, 700).replace(/\s+\S*$/, '') + '…' : about);
+    var src = el('span', 'src', '— ');
+    if (wk && wk.url) { var wa = el('a', null, TX('wiki_src')); wa.href = wk.url; wa.target = '_blank'; wa.rel = 'noopener'; src.appendChild(wa) } else src.appendChild(document.createTextNode(TX('about_src')));
+    ab.appendChild(src); box.appendChild(ab);
+  }
   if (d.kind === 'moex') {
     kv(box, [[TX('k_lot'), p.lot ? p.lot + TX('k_pcs') : '—'], [TX('k_issue'), p.issue ? fmt(p.issue, 0) + TX('k_pcs') : '—'], [TX('k_mcap'), p.issue && q.px ? money(p.issue * q.px, '₽') : '—'],
       [TX('k_list'), p.list ? TX('k_level', p.list) : '—'], [TX('k_dayhi'), price(q.h)], [TX('k_daylo'), price(q.l)]]);
@@ -337,6 +368,7 @@ function desMain(box, d){
       blk.appendChild(el('h4', null, TX('anr_line', c.word, fmt(c.score, 1), c.n)));
       blk.appendChild(anrBar(c.r, c.n));
     }
+    if (co.targets && co.targets.mean && q.px) blk.appendChild(targetBar(co.targets, q.px));
     if (d.next) blk.appendChild(el('div', null, TX('next_rep') + dmy(d.next.date) + (d.next.hour === 'bmo' ? TX('bmo') : d.next.hour === 'amc' ? TX('amc') : '') +
       (d.next.eps_e != null ? TX('eps_fcst') + num(d.next.eps_e, 2) : '') + (d.next.rev_e ? TX('rev_fcst') + money(d.next.rev_e) : '')));
     if (blk.childNodes.length) box.appendChild(blk);
@@ -351,7 +383,162 @@ function desMain(box, d){
     d.peers.forEach(function(s){ var b = el('button', 'chipbtn', s); b.onclick = function(){ openDes(s) }; pb.appendChild(b) });
     box.appendChild(pb);
   }
+  if (cp.employees || co.stats) {
+    var st = co.stats || {};
+    kv(box, [cp.employees ? [TX('k_emp'), fmt(cp.employees, 0)] : null, st.ev ? [TX('k_ev'), money(st.ev)] : null, st.peg != null ? [TX('k_peg'), num(st.peg, 2)] : null,
+      st.fcf != null ? [TX('k_fcf'), money(st.fcf)] : null, st.cash != null ? [TX('k_cash'), money(st.cash)] : null, st.debt != null ? [TX('k_debt'), money(st.debt)] : null,
+      st.roa != null ? [TX('k_roa'), num(st.roa, 1) + '%'] : null, st.float ? [TX('k_float'), money(st.float, '')] : null]);
+  }
+  if ((cp.officers || []).length) {
+    var mg = el('div', 'blk'); mg.id = 'mgmt'; mg.appendChild(el('h4', null, TX('mgmt_head'))); box.appendChild(mg);
+    var mt = table(cols(TX('mgmt_cols'), [0, 1]));
+    cp.officers.forEach(function(o){ var tr = el('tr'); tr.appendChild(td(o.n, 'l')); tr.appendChild(td(o.t || '', 'l')); tr.appendChild(td(o.age ? String(o.age) : '—', 'num')); tr.appendChild(td(o.pay ? money(o.pay) : '—', 'num')); mt.body.appendChild(tr) });
+    box.appendChild(mt.t);
+  }
   if (d.errors && d.errors.length) box.appendChild(el('div', 'note', TX('part_fail') + d.errors.join('; ')));
+}
+// price target: the analysts' low–high range, the mean and the current price
+function targetBar(t, px){
+  var r = el('div', 'r52'), lo = Math.min(t.low, px), hi = Math.max(t.high, px), w = (hi - lo) || 1;
+  r.appendChild(el('div', null, TX('pt_head', t.n || '—') + ' · ' + TX('pt_mean').toLowerCase() + ' $' + num(t.mean, 2) + ' (' + pct((t.mean / px - 1) * 100, 1) + ')'));
+  var bar = el('div', 'bar'), m1 = el('i'), m2 = el('i');
+  m1.style.left = 'calc(' + ((px - lo) / w * 100) + '% - 1px)'; m1.title = TX('pt_now') + ' $' + price(px);
+  m2.style.left = 'calc(' + ((t.mean - lo) / w * 100) + '% - 1px)'; m2.style.background = 'var(--amber)'; m2.title = TX('pt_mean') + ' $' + num(t.mean, 2);
+  bar.appendChild(m1); bar.appendChild(m2); r.appendChild(bar);
+  var ends = el('div', 'ends'); ends.appendChild(el('span', null, TX('pt_low') + ' $' + num(t.low, 0))); ends.appendChild(el('span', null, TX('pt_high') + ' $' + num(t.high, 0))); r.appendChild(ends);
+  return r;
+}
+function noDeep(box, d){ box.appendChild(el('div', 'empty', TX('no_deep', d.s))) }
+function h4(box, text){ var b = el('div', 'blk'); b.appendChild(el('h4', null, text)); box.appendChild(b); return b }
+function desEe(box, d){
+  var co = d.co;
+  if (!co || !(co.est || []).length) return noDeep(box, d);
+  if (co.next && co.next.date) h4(box, TX('ee_next', dmy(co.next.date), co.next.estimated));
+  var P = TX('ee_p'), tb = table(cols(TX('ee_cols')));
+  co.est.forEach(function(e){
+    var eps = e.eps || {}, rv = e.rev || {}, tr = el('tr');
+    tr.appendChild(td(P[e.p] || e.p, 'l')); tr.appendChild(td(dmy(e.end), 'num'));
+    tr.appendChild(td(eps.avg != null ? '$' + num(eps.avg, 2) : '—', 'num')); tr.appendChild(td(num(eps.low, 2), 'num')); tr.appendChild(td(num(eps.high, 2), 'num'));
+    tr.appendChild(td(eps.n != null ? String(eps.n) : '—', 'num')); tr.appendChild(chg(eps.g, 1));
+    tr.appendChild(td(money(rv.avg), 'num')); tr.appendChild(chg(rv.g, 1));
+    var r30 = el('td', 'num'); r30.appendChild(el('span', 'up', '↑' + (e.up30 || 0))); r30.appendChild(document.createTextNode(' ')); r30.appendChild(el('span', 'down', '↓' + (e.dn30 || 0))); tr.appendChild(r30);
+    tb.body.appendChild(tr);
+  });
+  box.appendChild(tb.t);
+  h4(box, TX('ee_trend'));
+  var t2 = table(cols(TX('ee_tcols')));
+  co.est.forEach(function(e){
+    var t = e.trend || {}, tr = el('tr'); tr.appendChild(td(P[e.p] || e.p, 'l'));
+    ['now', 'd7', 'd30', 'd60', 'd90'].forEach(function(k, i){ var c = td(t[k] != null ? '$' + num(t[k], 2) : '—', 'num'); if (i && t[k] != null && t.now != null) c.className = 'num ' + cls(t.now - t[k]); tr.appendChild(c) });
+    t2.body.appendChild(tr);
+  });
+  box.appendChild(t2.t);
+  if ((co.hist || []).length) {
+    h4(box, TX('ee_hist'));
+    var t3 = table(cols(TX('ee_hcols')));
+    co.hist.forEach(function(h){ var tr = el('tr'); tr.appendChild(td(dmy(h.q), 'l')); tr.appendChild(td('$' + num(h.act, 2), 'num ' + (h.act >= h.est ? 'up' : 'down'))); tr.appendChild(td('$' + num(h.est, 2), 'num')); tr.appendChild(chg(h.sp, 1)); t3.body.appendChild(tr) });
+    box.appendChild(t3.t);
+  }
+}
+function ownTable(box, title, rows){
+  if (!(rows || []).length) return;
+  h4(box, title);
+  var tb = table(cols(TX('own_cols'), [0]));
+  rows.forEach(function(o){ var tr = el('tr'), n = td(o.n, 'l nm'); n.title = o.n; tr.appendChild(n); tr.appendChild(td(num(o.pct, 2) + '%', 'num')); tr.appendChild(td(fmt(o.sh, 0), 'num'));
+    tr.appendChild(td(money(o.val), 'num')); tr.appendChild(chg(o.chg, 1)); tr.appendChild(td(dmy(o.d), 'num')); tb.body.appendChild(tr) });
+  box.appendChild(tb.t);
+}
+function desDvd(box, d){
+  var dv = (d.co && d.co.div) || {}, hist = dv.hist || (d.dvd && d.dvd.hist) || [], splits = dv.splits || (d.dvd && d.dvd.splits) || [];
+  if (!hist.length) box.appendChild(el('div', 'empty', TX('dvd_none')));
+  else {
+    if (dv.rate || dv.ex) kv(box, [[TX('d_rate'), dv.rate ? '$' + num(dv.rate, 2) : '—'], [TX('d_yield'), dv.yield != null ? num(dv.yield, 2) + '%' : '—'],
+      [TX('d_payout'), dv.payout != null ? num(dv.payout, 0) + '%' : '—'], [TX('d_avg5'), dv.avg5y != null ? num(dv.avg5y, 2) + '%' : '—'],
+      [TX('d_ex'), dmy(dv.ex)], [TX('d_pay'), dmy(dv.pay)]]);
+    var years = {};
+    hist.forEach(function(x){ var y = x[0].slice(0, 4); years[y] = (years[y] || 0) + x[1] });
+    var ys = Object.keys(years).sort().slice(-12);
+    var cw = h4(box, TX('d_years'));
+    cw.appendChild(svgBars(ys.map(function(y){ return {label: "'" + y.slice(2), values: [years[y]], fmt: function(v){ return y + ': $' + num(v, 2) }} }), ['y'], ['#ffa028'], 110));
+    var tb = table(cols(TX('d_cols')));
+    hist.slice(0, 40).forEach(function(x, i){ var tr = el('tr'), prev = hist[i + 1]; tr.appendChild(td(dmy(x[0]), 'l')); tr.appendChild(td('$' + fmt(x[1], x[1] < 1 ? 4 : 2), 'num'));
+      tr.appendChild(prev ? chg((x[1] / prev[1] - 1) * 100, 1) : td('', 'num')); tb.body.appendChild(tr) });
+    box.appendChild(tb.t);
+  }
+  if (splits.length) box.appendChild(el('div', 'note', TX('d_splits') + splits.map(function(x){ return x[1] + ' (' + dmy(x[0]) + ')' }).join(', ')));
+}
+var omon = {i: 0};
+function desOmon(box, d){
+  var o = d.opt;
+  if (!o) { box.appendChild(el('div', 'empty', TX('omon_none'))); return }
+  kv(box, [[TX('o_px'), '$' + price(o.px)], [TX('o_iv'), num(o.iv30, 1) + '%'], [TX('o_ivch'), (o.iv30_chg > 0 ? '+' : '') + num(o.iv30_chg, 2), cls(o.iv30_chg)],
+    o.lite ? null : [TX('o_pcv'), num(o.pcr_vol, 2)], o.lite ? null : [TX('o_pco'), num(o.pcr_oi, 2)], o.lite ? null : [TX('o_cv'), fmt(o.c_vol, 0)],
+    o.lite ? null : [TX('o_pv'), fmt(o.p_vol, 0)], [TX('o_ts'), o.ts ? o.ts.slice(0, 16) : '—']]);
+  if (o.lite) { box.appendChild(el('div', 'note', TX('omon_lite'))); return }
+  var ch = o.chains || [];
+  if (omon.i >= ch.length) omon.i = 0;
+  var pt = el('div', 'ptabs');
+  ch.forEach(function(c, i){ var b = el('button', i === omon.i ? 'on' : null, I.ru ? c.d.slice(8, 10) + '.' + c.d.slice(5, 7) : +c.d.slice(8, 10) + ' ' + MON[+c.d.slice(5, 7) - 1]); b.onclick = function(){ omon.i = i; renderDes() }; pt.appendChild(b) });
+  pt.appendChild(el('span', 'sp')); box.appendChild(pt);
+  var c = ch[omon.i];
+  if (c) {
+    var t = el('table', 'tbl chain'), th = el('thead'), r1 = el('tr'), r2 = el('tr');
+    var g1 = el('th', 'grp', TX('o_calls')); g1.colSpan = 7; var g2 = el('th', 'grp', ''); var g3 = el('th', 'grp', TX('o_puts')); g3.colSpan = 7;
+    r1.appendChild(g1); r1.appendChild(g2); r1.appendChild(g3);
+    var cc = TX('o_ccols');
+    cc.concat([TX('o_strike')], cc).forEach(function(x){ r2.appendChild(el('th', null, x)) });
+    th.appendChild(r1); th.appendChild(r2); t.appendChild(th);
+    var tb = el('tbody');
+    c.rows.forEach(function(r){
+      var tr = el('tr');
+      var cell = function(v, i, itm){ var f = i === 3 ? (v != null ? num(v, 1) : '—') : i === 4 ? num(v, 2) : i >= 5 ? (v ? fmt(v, 0) : '—') : num(v, 2); return td(f, 'num' + (itm ? ' itm' : '')) };
+      for (var i = 1; i <= 7; i++) tr.appendChild(cell(r[i], i - 1, r[0] < o.px));
+      tr.appendChild(td(fmt(r[0], r[0] % 1 ? 1 : 0), 'k'));
+      for (var j = 8; j <= 14; j++) tr.appendChild(cell(r[j], j - 8, r[0] > o.px));
+      tb.appendChild(tr);
+    });
+    t.appendChild(tb); box.appendChild(t);
+  }
+  h4(box, TX('o_exp'));
+  var et = table(cols(TX('o_ecols')));
+  (o.exp || []).forEach(function(e){ var tr = el('tr'); tr.appendChild(td(dmy(e.d), 'l')); tr.appendChild(td(String(e.dte), 'num')); tr.appendChild(td(e.iv != null ? num(e.iv, 1) + '%' : '—', 'num'));
+    tr.appendChild(td(e.move != null ? '±$' + num(e.move, 2) + ' (' + num(e.move_pct, 1) + '%)' : '—', 'num')); tr.appendChild(td('$' + fmt(e.pain, e.pain % 1 ? 1 : 0), 'num'));
+    [e.c_vol, e.p_vol, e.c_oi, e.p_oi].forEach(function(v){ tr.appendChild(td(fmt(v, 0), 'num')) }); et.body.appendChild(tr) });
+  box.appendChild(et.t);
+  if ((o.top_oi || []).length) box.appendChild(el('div', 'note', TX('o_top') + o.top_oi.slice(0, 8).map(function(x){ return dmShort(x[0]) + ' $' + fmt(x[1], x[1] % 1 ? 1 : 0) + ' ' + (x[2] === 'C' ? 'call' : 'put') + ' ' + fmt(x[3], 0) }).join(' · ')));
+  box.appendChild(el('div', 'note', TX('o_note')));
+}
+var RV_COLS = ['s', 'n', 'mcap', 'pe', 'fpe', 'ps', 'pb', 'dy', 'revg', 'epsg', 'gm', 'nm', 'roe', 'r52'];
+function desRv(box, d){
+  var rv = d.rv;
+  if (!rv || !rv.in_list || (rv.rows || []).length < 2) { box.appendChild(el('div', 'empty', TX('rv_none', d.s))); return }
+  var names = TX('rv_cols'), tb = table(RV_COLS.map(function(k){ return {t: names[k], l: k === 'n'} }));
+  var cellOf = function(r, k){
+    var v = r[k];
+    if (k === 's' || k === 'n') return td(v || '', k === 's' ? 'l tkc' : 'l nm');
+    if (k === 'mcap') return td(v ? money(v * 1e6) : '—', 'num');
+    if (k === 'revg' || k === 'epsg' || k === 'r52') return chg(v, 0);
+    if (k === 'dy' || k === 'gm' || k === 'nm' || k === 'roe') return td(v != null ? num(v, 1) + '%' : '—', 'num');
+    return td(num(v, 1), 'num');
+  };
+  rv.rows.forEach(function(r, i){ var tr = el('tr', 'row' + (i === 0 ? ' me' : '')); tr.dataset.s = r.s; RV_COLS.forEach(function(k){ tr.appendChild(cellOf(r, k)) }); tb.body.appendChild(tr) });
+  var foot = el('tfoot'), fr = el('tr'); fr.appendChild(td(TX('rv_median'), 'l')); fr.lastChild.colSpan = 2;
+  RV_COLS.slice(2).forEach(function(k){ fr.appendChild(cellOf(rv.median || {}, k)) }); foot.appendChild(fr); tb.t.appendChild(foot);
+  tb.t.onclick = function(e){ var tr = e.target.closest('tr.row'); if (tr && tr.dataset.s !== d.s) openDes(tr.dataset.s, 'RV') };
+  box.appendChild(tb.t);
+  box.appendChild(el('div', 'note', TX('rv_note')));
+}
+function desCf(box, d){
+  var list = (d.co && d.co.filings) || d.cf || [];
+  if (!list.length) { box.appendChild(el('div', 'empty', TX('cf_none'))); return }
+  var types = TX('cf_types'), tb = table(cols(TX('cf_cols'), [1, 2]));
+  list.forEach(function(f){
+    var tr = el('tr'); tr.appendChild(td(dmy(f.d), 'l')); tr.appendChild(td(f.type, 'l tkc'));
+    var c = el('td', 'l'), what = (types[f.type] || f.title || f.type) + ' ↗';
+    if (/^https:\/\//.test(f.url || '')) { var a = el('a', null, what); a.href = f.url; a.target = '_blank'; a.rel = 'noopener'; c.appendChild(a) } else c.textContent = what;
+    tr.appendChild(c); tb.body.appendChild(tr);
+  });
+  box.appendChild(tb.t);
 }
 function svgBars(rows, keys, colors, h){
   // rows: [{label, values:[...]}] — grouped bars
@@ -438,8 +625,27 @@ function desErn(box, d){
   box.appendChild(tb.t);
 }
 function desAnr(box, d){
-  var c = consensus(d.anr);
-  if (!c) { box.appendChild(el('div', 'empty', TX('anr_none'))); return }
+  var c = consensus(d.anr), co = d.co || {}, q = d.quote || {};
+  if (co.targets && co.targets.mean) {
+    var tg = co.targets, px = tg.px || q.px;
+    var tb0 = h4(box, TX('pt_head', tg.n || '—'));
+    if (px) tb0.appendChild(targetBar(tg, px));
+    kv(box, [[TX('pt_mean'), '$' + num(tg.mean, 2)], [TX('pt_median'), '$' + num(tg.median, 2)], [TX('pt_high'), '$' + num(tg.high, 2)], [TX('pt_low'), '$' + num(tg.low, 2)],
+      px ? [TX('pt_up'), pct((tg.mean / px - 1) * 100, 1), cls(tg.mean - px)] : null]);
+  }
+  if ((co.ratings || []).length) {
+    h4(box, TX('rt_head'));
+    var acts = TX('rt_act'), rt = table(cols(TX('rt_cols'), [1, 2, 3, 4]));
+    co.ratings.forEach(function(r){
+      var tr = el('tr'); tr.appendChild(td(dmy(r.d), 'l')); tr.appendChild(td(r.f || '', 'l'));
+      tr.appendChild(td(acts[r.a] || r.a || '', 'l ' + (r.a === 'up' ? 'up' : r.a === 'down' ? 'down' : '')));
+      tr.appendChild(td(r.to || '', 'l')); tr.appendChild(td(r.from && r.from !== r.to ? r.from : '', 'l'));
+      tr.appendChild(td(r.pt ? '$' + fmt(r.pt, 0) : '', 'num ' + (r.pt && r.pt0 ? cls(r.pt - r.pt0) : ''))); tr.appendChild(td(r.pt0 && r.pt0 !== r.pt ? '$' + fmt(r.pt0, 0) : '', 'num'));
+      rt.body.appendChild(tr);
+    });
+    box.appendChild(rt.t);
+  }
+  if (!c) { if (!co.targets && !(co.ratings || []).length) box.appendChild(el('div', 'empty', TX('anr_none'))); return }
   var b = el('div', 'blk'); b.appendChild(el('h4', null, TX('consensus', c.word, fmt(c.score, 1))));
   var lg = el('div', 'legend'); TX('rec_l').forEach(function(x, i){ var s = el('span'); var ic = el('i'); ic.style.background = ANR_COL[i]; s.appendChild(ic); s.appendChild(document.createTextNode(x)); lg.appendChild(s) });
   b.appendChild(lg); box.appendChild(b);
@@ -489,6 +695,26 @@ function desCn(box, d){
   box.appendChild(ul);
 }
 function desHds(box, d){
+  var co = d.co || {}, h = co.holders, sh = co.short;
+  if (h) {
+    h4(box, TX('hds_break'));
+    var n6 = h.net6m || {};
+    kv(box, [[TX('h_ins'), num(h.ins, 2) + '%'], [TX('h_inst'), num(h.inst, 2) + '%'], [TX('h_inst_f'), num(h.inst_float, 2) + '%'],
+      [TX('h_inst_n'), fmt(h.inst_n, 0)], [TX('h_buys'), n6.buy_n != null ? fmt(n6.buy_n, 0) : '—'], [TX('h_sells'), n6.sell_n != null ? fmt(n6.sell_n, 0) : '—']]);
+    ownTable(box, TX('h_top'), h.top);
+    ownTable(box, TX('h_funds'), h.funds);
+  }
+  if (sh && (sh.sh || (sh.rows || []).length)) {
+    var b = h4(box, TX('si_head')); b.id = 'si';
+    var last = (sh.rows || [])[0] || {d: sh.d, sh: sh.sh, days: sh.ratio}, prev = (sh.rows || [])[1] || (sh.prior ? {d: sh.prior_d, sh: sh.prior} : null);
+    kv(box, [[TX('si_sh'), fmt(last.sh, 0)], [TX('si_pf'), sh.pct_float != null ? num(sh.pct_float, 2) + '%' : '—'], [TX('si_days'), num(last.days != null ? last.days : sh.ratio, 1)],
+      [TX('si_d'), dmy(last.d)], prev && prev.sh ? [TX('si_prior'), fmt(prev.sh, 0) + ' (' + pct((last.sh / prev.sh - 1) * 100, 1) + ')', cls(last.sh - prev.sh)] : null]);
+    if ((sh.rows || []).length > 2) {
+      var cw = h4(box, TX('si_chart'));
+      cw.appendChild(svgBars(sh.rows.slice(0, 16).reverse().map(function(r){ return {label: dmShort(r.d).replace(" '", ''), values: [r.sh], fmt: function(v){ return dmy(r.d) + ': ' + fmt(v, 0) }} }), ['sh'], ['#c77dff'], 100));
+    }
+  }
+  if (h || sh) h4(box, TX('h_trades'));
   box.appendChild(el('div', 'note', TX('hds_note')));
   var rows = d.ins || [];
   if (!rows.length) { box.appendChild(el('div', 'empty', TX('hds_none'))); return }
@@ -537,8 +763,15 @@ function renderHP(){
     hp.data = h; drawHP(box, h);
   }).catch(function(e){ errBox(box, e) });
 }
+// intraday bars (1D, 5D): Moscow time instead of a date
+function isIntra(r){ return r === '1d' || r === '5d' }
+function mskTime(t, withDay){
+  var x = new Date((t + 3 * 3600) * 1000).toISOString();
+  return (withDay ? (I.ru ? x.slice(8, 10) + '.' + x.slice(5, 7) : +x.slice(8, 10) + ' ' + MON[+x.slice(5, 7) - 1]) + ' ' : '') + x.slice(11, 16);
+}
 function drawHP(box, h){
   clear(box);
+  var intra = isIntra(h.range || hp.range);
   var n = h.c.length, first = h.c[0], last = h.c[n - 1];
   var lows = h.l.filter(function(x){ return x != null }), highs = h.h.filter(function(x){ return x != null });
   var vol = h.v.filter(function(x){ return x }), avgv = vol.length ? vol.reduce(function(a, b){ return a + b }, 0) / vol.length : null;
@@ -551,22 +784,36 @@ function drawHP(box, h){
   var csv = el('button', 'chipbtn', '⤓ CSV'); csv.title = TX('csv_t');
   var csvText = function(){
     var lines = ['date,open,high,low,close,volume'];
-    for (var i = 0; i < n; i++) lines.push([new Date(h.t[i] * 1000).toISOString().slice(0, 10), h.o[i], h.h[i], h.l[i], h.c[i], h.v[i] == null ? '' : h.v[i]].join(','));
+    for (var i = 0; i < n; i++) lines.push([new Date(h.t[i] * 1000).toISOString().slice(0, intra ? 16 : 10).replace('T', ' '), h.o[i], h.h[i], h.l[i], h.c[i], h.v[i] == null ? '' : h.v[i]].join(','));
     return lines.join('\n') + '\n';
   };
   csv.onclick = function(){ if (!downloadText(h.s.replace(/[^A-Za-z0-9_.-]/g, '_') + '_' + (h.range || hp.range) + '.csv', csvText())) alert(TX('save_fail')) };
   var cp = el('button', 'chipbtn', TX('copy')); cp.title = TX('copy_t');
   cp.onclick = function(){ copyText(csvText().replace(/,/g, '\t')).then(function(){ cp.textContent = TX('copied') }, function(e){ cp.textContent = '✕ ' + e.message }) };
+  // technicals: moving averages and RSI(14) — the classic trend and momentum gauges
+  var s50 = sma(h.c, 50), s200 = sma(h.c, 200), r14 = rsi(h.c, 14), rNow = r14[n - 1];
+  var lastS200 = s200[n - 1];
+  if (rNow != null) {
+    var rs = el('span', null, 'RSI(14): '); rs.appendChild(el('b', rNow >= 70 ? 'down' : rNow <= 30 ? 'up' : null, fmt(rNow, 1) + (rNow >= 70 ? ' · ' + TX('overbought') : rNow <= 30 ? ' · ' + TX('oversold') : ''))); st.appendChild(rs);
+  }
+  if (lastS200) { var ms = el('span', null, TX('vs_sma200') + ': '); ms.appendChild(el('b', cls(last - lastS200), pct((last / lastS200 - 1) * 100, 1))); st.appendChild(ms) }
   st.appendChild(csv); st.appendChild(cp);
   box.appendChild(st);
   var cv = el('div', 'cv'); cv.style.flex = 'none'; cv.style.height = '150px'; cv.style.minHeight = '150px'; box.appendChild(cv);
-  drawLines(cv, [{name: h.s, color: last >= first ? '#21c66f' : '#ff4b4b', t: h.t, v: h.c}], {pct: false});
+  var lines = [{name: h.s, color: last >= first ? '#21c66f' : '#ff4b4b', t: h.t, v: h.c}];
+  if (s50[n - 1] != null) lines.push({name: 'SMA 50', color: '#ffa028', width: 1.1, t: h.t, v: s50});
+  if (lastS200 != null) lines.push({name: 'SMA 200', color: '#4fa3ff', width: 1.1, dash: [5, 4], t: h.t, v: s200});
+  drawLines(cv, lines, {pct: false, legend: true, intraday: intra});
+  if (rNow != null) {
+    var rc = el('div', 'cv'); rc.style.flex = 'none'; rc.style.height = '62px'; rc.style.minHeight = '62px'; box.appendChild(rc);
+    drawLines(rc, [{name: 'RSI(14)', color: '#c77dff', width: 1.2, t: h.t, v: r14}], {pct: false, lo: 0, hi: 100, levels: [30, 70], legend: true, noDates: true, intraday: intra});
+  }
   var wrap = el('div'); wrap.style.flex = '1'; wrap.style.overflow = 'auto';
   var tb = table(cols(TX('hp_cols')));
   var frag = document.createDocumentFragment();
   for (var i = n - 1; i >= 0; i--) {
     var tr = el('tr'), c = i > 0 ? (h.c[i] / h.c[i - 1] - 1) * 100 : null;
-    tr.appendChild(td(dmy(new Date(h.t[i] * 1000).toISOString()), 'l'));
+    tr.appendChild(td(intra ? mskTime(h.t[i], true) : dmy(new Date(h.t[i] * 1000).toISOString()), 'l'));
     tr.appendChild(td(price(h.o[i]), 'num')); tr.appendChild(td(price(h.h[i]), 'num')); tr.appendChild(td(price(h.l[i]), 'num'));
     tr.appendChild(td(price(h.c[i]), 'num')); tr.appendChild(chg(c)); tr.appendChild(td(h.v[i] ? fmt(h.v[i], 0) : '—', 'num'));
     frag.appendChild(tr);
@@ -593,7 +840,7 @@ function renderComp(box){
     if (hp.tab !== 'COMP' || range !== hp.range || syms.join() !== hp.comp.join()) return;
     var series = [], bad = [];
     arr.forEach(function(h, i){ if (h.error || !h.c) bad.push(syms[i] + ': ' + (h.error || TX('no_data'))); else series.push({name: syms[i], color: COLORS[i % COLORS.length], t: h.t, v: h.c}) });
-    drawLines(cv, series, {pct: true});
+    drawLines(cv, series, {pct: true, intraday: isIntra(range)});
     var rows = series.map(function(s){ return s.name + ' ' + pct((s.v[s.v.length - 1] / s.v[0] - 1) * 100) });
     note.textContent = TX('over_range', RANGES[range]) + ': ' + rows.join(' · ') + (bad.length ? TX('not_loaded') + bad.join('; ') : '');
   });
@@ -619,30 +866,34 @@ function paintLines(box, series, opts){
   var t0 = Infinity, t1 = -Infinity, lo = Infinity, hi = -Infinity;
   pts.forEach(function(p){ p.forEach(function(x){ if (x[1] == null || isNaN(x[1])) return; t0 = Math.min(t0, x[0]); t1 = Math.max(t1, x[0]); lo = Math.min(lo, x[1]); hi = Math.max(hi, x[1]) }) });
   var pad = (hi - lo) * 0.08 || 1; lo -= pad; hi += pad;
-  var L = 8, R = 64, Tp = 8, B = 20, W = w - L - R, H = h - Tp - B;
+  if (opts.lo != null) lo = opts.lo;
+  if (opts.hi != null) hi = opts.hi;
+  var L = 8, R = 64, Tp = 8, B = opts.noDates ? 6 : 20, W = w - L - R, H = h - Tp - B;
   var X = function(t){ return L + (t - t0) / ((t1 - t0) || 1) * W }, Y = function(v){ return Tp + (hi - v) / (hi - lo) * H };
   g.font = '11px monospace'; g.textBaseline = 'middle';
-  for (var k = 0; k <= 4; k++) {
-    var v = lo + (hi - lo) * k / 4, y = Y(v);
-    g.strokeStyle = 'rgba(255,255,255,0.06)'; g.beginPath(); g.moveTo(L, y); g.lineTo(L + W, y); g.stroke();
-    g.fillStyle = '#5a5a5a'; g.fillText(opts.pct ? pct(v, 1) : fmt(v, dg(hi)), L + W + 6, y);
-  }
+  (opts.levels || [0, 1, 2, 3, 4].map(function(k){ return lo + (hi - lo) * k / 4 })).forEach(function(v){
+    var y = Y(v);
+    g.strokeStyle = opts.levels ? 'rgba(255,255,255,0.18)' : 'rgba(255,255,255,0.06)'; g.beginPath(); g.moveTo(L, y); g.lineTo(L + W, y); g.stroke();
+    g.fillStyle = '#5a5a5a'; g.fillText(opts.pct ? pct(v, 1) : fmt(v, opts.levels ? 0 : dg(hi)), L + W + 6, y);
+  });
   if (opts.pct && lo < 0 && hi > 0) { g.strokeStyle = 'rgba(255,255,255,0.25)'; g.beginPath(); g.moveTo(L, Y(0)); g.lineTo(L + W, Y(0)); g.stroke() }
   g.textBaseline = 'top';
-  for (var j = 0; j <= 4; j++) {
+  for (var j = 0; j <= 4 && !opts.noDates; j++) {
     var tt = t0 + (t1 - t0) * j / 4, x = X(tt);
-    g.fillStyle = '#5a5a5a'; var lb = dmShort(new Date(tt * 1000).toISOString());
+    g.fillStyle = '#5a5a5a'; var lb = opts.intraday ? mskTime(Math.round(tt), (t1 - t0) > 86400) : dmShort(new Date(tt * 1000).toISOString());
     g.fillText(lb, Math.min(Math.max(L, x - 24), L + W - 50), Tp + H + 5);
   }
   pts.forEach(function(p, i){
     g.beginPath(); var started = false;
     p.forEach(function(x){ if (x[1] == null || isNaN(x[1])) return; var px = X(x[0]), py = Y(x[1]); if (!started) { g.moveTo(px, py); started = true } else g.lineTo(px, py) });
-    g.strokeStyle = series[i].color; g.lineWidth = 1.6; g.stroke();
+    g.strokeStyle = series[i].color; g.lineWidth = series[i].width || 1.6; g.setLineDash(series[i].dash || []); g.stroke(); g.setLineDash([]);
   });
-  if (series.length > 1 || opts.pct) {
+  if (series.length > 1 || opts.pct || opts.legend) {
     var lg = el('div', 'legend');
     series.forEach(function(s, i){ var last = pts[i][pts[i].length - 1]; var sp = el('span'); var ic = el('i'); ic.style.background = s.color; sp.appendChild(ic);
-      sp.appendChild(document.createTextNode(s.name + (opts.pct && last ? ' ' + pct(last[1], 1) : ''))); lg.appendChild(sp) });
+      var lastV = null; for (var q = pts[i].length - 1; q >= 0 && lastV == null; q--) lastV = pts[i][q][1];
+      sp.appendChild(document.createTextNode(s.name + (opts.pct && last ? ' ' + pct(last[1], 1) : opts.legend && lastV != null ? ' ' + fmt(lastV, opts.levels ? 1 : dg(lastV)) : '')));
+      lg.appendChild(sp) });
     box.appendChild(lg);
   }
 }
@@ -744,8 +995,10 @@ function drawEqs(box, d){
 RENDER['p-eqs'] = function(){ if (!$('eqs-body').querySelector('table')) renderEqs() };
 
 /* ======================= IMAP: heat map ======================= */
-var imapMode = 'ch';
+var imapMode = 'ch', imapRegion = 'US';
 tabs($('imap-tabs'), 'm', function(m){ imapMode = m; renderImap() });
+tabs($('imap-tabs'), 'g', function(g){ imapRegion = g; renderImap() });
+function openImap(region){ if (region) { imapRegion = region; setTab($('imap-tabs'), 'g', region) } T.show('p-imap'); renderImap() }
 var IMAP_SCALE = {ch: 3, r5d: 6, rytd: 40, r52: 60};
 function heat(v, scale){
   if (v == null || isNaN(v)) return '#2a2a2a';
@@ -776,6 +1029,13 @@ function squarify(items, x, y, w, h){
 }
 function renderImap(){
   var box = $('imap');
+  // the Moscow Exchange has only today's change: the other periods are for US stocks
+  $('imap-tabs').querySelectorAll('button[data-m]').forEach(function(b){ b.style.display = imapRegion === 'RU' && b.dataset.m !== 'ch' ? 'none' : '' });
+  if (imapRegion === 'RU') {
+    return page('moex.json', 120).then(function(d){
+      drawImap(box, {ru: true, time: d.time, stocks: (d.rows || []).map(function(r){ return {s: r.s, n: I.ru ? r.n : r.en, sec: r.sec || 'Other', px: r.px, ch: r.ch, mcap: (r.cap || 0) / 1e6} })});
+    }).catch(function(){ clear(box).appendChild(el('div', 'empty', TX('imap_ru_wait'))) });
+  }
   page('stocks.json', 120).then(function(d){ drawImap(box, d) }).catch(function(e){ clear(box).appendChild(el('div', 'empty', TX('imap_wait'))) });
 }
 function drawImap(box, d){
@@ -783,30 +1043,33 @@ function drawImap(box, d){
   var W = box.clientWidth, H = box.clientHeight;
   if (!W || !H) return;
   var rows = (d.stocks || []).filter(function(r){ return r.mcap > 0 });
-  $('imap-sub').textContent = d.updated ? TX('imap_sub', T.hm(d.updated)) : '';
+  var mode = d.ru ? 'ch' : imapMode;
+  $('imap-title').textContent = TX(d.ru ? 'p_imap_ru' : 'p_imap');
+  $('tm-tip').style.display = 'none';
+  $('imap-sub').textContent = d.ru ? TX('imap_sub_ru', (d.time || '').slice(0, 5)) : d.updated ? TX('imap_sub', T.hm(d.updated)) : '';
   if (!rows.length) { box.appendChild(el('div', 'empty', TX('imap_mcap_wait'))); return }
   var secs = {};
   rows.forEach(function(r){ var k = I.sector(r.sec); (secs[k] = secs[k] || {sec: k, v: 0, rows: []}); secs[k].v += r.mcap; secs[k].rows.push(r) });
   var list = Object.keys(secs).map(function(k){ return secs[k] }).sort(function(a, b){ return b.v - a.v });
   var total = list.reduce(function(s, x){ return s + x.v }, 0), area = W * H;
   list.forEach(function(s){ s.a = s.v / total * area });
-  var tip = $('tm-tip'), scale = IMAP_SCALE[imapMode];
+  var tip = $('tm-tip'), scale = IMAP_SCALE[mode];
   squarify(list, 0, 0, W, H).forEach(function(sr){
     var sec = sr.it, inner = sec.rows.sort(function(a, b){ return b.mcap - a.mcap }).map(function(r){ return {r: r, a: r.mcap / sec.v * sr.w * sr.h} });
     var top = 14;
     squarify(inner, sr.x, sr.y + top, sr.w, Math.max(1, sr.h - top)).forEach(function(c){
-      var r = c.it.r, v = r[imapMode], tile = el('div', 'tile');
+      var r = c.it.r, v = r[mode], tile = el('div', 'tile');
       tile.style.left = c.x + 'px'; tile.style.top = c.y + 'px'; tile.style.width = c.w + 'px'; tile.style.height = c.h + 'px';
       tile.style.background = heat(v, scale);
       if (c.w > 34 && c.h > 22) { tile.appendChild(el('b', null, r.s)); if (c.h > 34) tile.appendChild(el('span', null, pct(v, 1))) }
       if (c.w > 90 && c.h > 60) tile.style.fontSize = '13px';
-      tile.onclick = function(){ openDes(r.s, 'DES') };
+      tile.onclick = function(){ openDes(d.ru ? 'MOEX:' + r.s : r.s, 'DES') };
       tile.onmousemove = function(e){ tip.style.display = 'block'; tip.style.left = Math.min(e.clientX + 12, window.innerWidth - 220) + 'px'; tip.style.top = (e.clientY + 12) + 'px';
-        tip.textContent = r.s + ' · ' + r.n + ' · ' + price(r.px) + ' · ' + pct(v) + TX('mcap_s') + money(r.mcap * 1e6) };
+        tip.textContent = r.s + ' · ' + r.n + ' · ' + price(r.px) + (d.ru ? ' ₽' : '') + ' · ' + pct(v) + TX('mcap_s') + money(r.mcap * 1e6, d.ru ? '₽' : '$') };
       tile.onmouseleave = function(){ tip.style.display = 'none' };
       box.appendChild(tile);
     });
-    var lab = el('div', 'sec', sec.sec + ' ' + pct(sectorChange(sec.rows, imapMode), 1));
+    var lab = el('div', 'sec', sec.sec + ' ' + pct(sectorChange(sec.rows, mode), 1));
     lab.style.left = sr.x + 'px'; lab.style.top = sr.y + 'px'; lab.style.width = sr.w + 'px';
     box.appendChild(lab);
   });
@@ -950,6 +1213,194 @@ function drawWirp(box, d){
   box.appendChild(el('div', 'note', TX('wirp_note')));
 }
 RENDER['p-gc'] = function(){ if (!$('gc-body').querySelector('table,svg')) renderGc() };
+
+/* ======================= ECST / FXC / CORR / OPT / IPO ======================= */
+var ana = {tab: 'ECST', country: '', corr: ['S&P', 'NASDAQ', 'DAX', 'NIKKEI', 'IMOEX', 'BRENT', 'GOLD', 'EURUSD', 'UST10', 'BTC'], corrRange: '1y'};
+try { var sc = JSON.parse(store('corr_syms') || 'null'); if (Array.isArray(sc) && sc.length) ana.corr = sc.slice(0, 12) } catch(e){}
+tabs($('ana-tabs'), 't', function(t){ ana.tab = t; renderAna() });
+function openAna(tab, arg){
+  ana.tab = tab; setTab($('ana-tabs'), 't', tab);
+  if (tab === 'ECST') ana.country = arg ? String(arg).trim().toUpperCase() : '';
+  if (tab === 'CORR' && arg) {
+    var p = String(arg).trim().split(/[\s,]+/).filter(Boolean);
+    if (p.length && /^(3M|6M|1Y|2Y|5Y)$/i.test(p[p.length - 1])) ana.corrRange = p.pop().toLowerCase();
+    if (p.length >= 2) { ana.corr = p.map(upSym).slice(0, 12); store('corr_syms', JSON.stringify(ana.corr)) }
+  }
+  T.show('p-ana'); renderAna();
+}
+function renderAna(){
+  $('ana-code').textContent = ana.tab === 'OPT' ? 'OMON' : ana.tab;
+  var box = $('ana-body');
+  $('ana-sub').textContent = '';
+  ({ECST: drawEcst, FXC: drawFxc, CORR: drawCorr, OPT: drawOpt, IPO: drawIpo}[ana.tab] || drawEcst)(box);
+}
+var ECST_ALIAS = {US: 'USA', UK: 'GBR', GB: 'GBR', RU: 'RUS', CN: 'CHN', DE: 'DEU', JP: 'JPN', IN: 'IND', FR: 'FRA', IT: 'ITA', CA: 'CAN', BR: 'BRA',
+  KR: 'KOR', AU: 'AUS', ES: 'ESP', MX: 'MEX', ID: 'IDN', TR: 'TUR', SA: 'SAU', CH: 'CHE', ZA: 'ZAF', KZ: 'KAZ', EU: 'EURO', EA: 'EURO', WORLD: 'WEOWORLD'};
+function drawEcst(box){
+  $('ana-title').textContent = TX('ecst_title');
+  page('macro.json', 3600).then(function(d){
+    if (ana.tab !== 'ECST') return;
+    clear(box);
+    var rows = d.rows || [], years = d.years || [], y = new Date().getUTCFullYear(), iy = years.indexOf(y);
+    $('ana-sub').textContent = TX('updated_at', T.hm(d.updated));
+    var nm = function(r){ return I.ru ? r.ru : r.en };
+    var q = ana.country, code = ECST_ALIAS[q] || q;
+    var one = q && rows.find(function(r){ return r.c === code || r.en.toUpperCase() === q || r.ru.toUpperCase() === q || r.en.toUpperCase().indexOf(q) === 0 || r.ru.toUpperCase().indexOf(q) === 0 });
+    if (one) {
+      var back = el('div', 'ptabs'), bb = el('button', null, TX('ecst_back')); bb.onclick = function(){ ana.country = ''; drawEcst(box) }; back.appendChild(bb);
+      back.appendChild(el('span', 'sp')); box.appendChild(back);
+      h4(box, nm(one));
+      var tb = table([{t: TX('ecst_ind'), l: true}].concat(years.map(function(x){ return {t: String(x) + (x > y ? '*' : '')} })));
+      Object.keys(d.ind || {}).forEach(function(k){
+        var v = (one.v || {})[k]; if (!v) return;
+        var tr = el('tr'); tr.appendChild(td((I.ru ? d.ind[k].ru : d.ind[k].en), 'l'));
+        v.forEach(function(x, i){ tr.appendChild(td(x == null ? '—' : fmt(x, k === 'NGDPD' ? 0 : 1), 'num' + (years[i] > y ? ' flat' : ''))) });
+        tb.body.appendChild(tr);
+      });
+      box.appendChild(tb.t);
+      box.appendChild(el('div', 'note', '* ' + TX('fcst')));
+      return;
+    }
+    var v = function(r, k, i){ var a = (r.v || {})[k]; return a && a[i] != null ? a[i] : null };
+    var tb2 = table(cols(TX('ecst_cols', y), [0]));
+    rows.forEach(function(r){
+      var tr = el('tr', 'row'); tr.dataset.c = r.c; tr.appendChild(td(nm(r), 'l'));
+      [['NGDP_RPCH', iy, 1], ['NGDP_RPCH', iy + 1, 1], ['PCPIPCH', iy, 0], ['PCPIPCH', iy + 1, 0], ['LUR', iy, 0], ['GGXCNL_NGDP', iy, 1], ['GGXWDG_NGDP', iy, 0], ['BCA_NGDPD', iy, 1]].forEach(function(c){
+        var x = v(r, c[0], c[1]);
+        tr.appendChild(td(x == null ? '—' : fmt(x, 1), 'num' + (c[2] && x != null ? ' ' + cls(x) : '')));
+      });
+      tb2.body.appendChild(tr);
+    });
+    tb2.t.onclick = function(e){ var tr = e.target.closest('tr.row'); if (tr) { ana.country = tr.dataset.c; drawEcst(box) } };
+    box.appendChild(tb2.t);
+    box.appendChild(el('div', 'note', TX('ecst_note')));
+  }).catch(function(){ clear(box).appendChild(el('div', 'empty', TX('ecst_wait'))) });
+}
+// USD per one unit of each currency, and its change today, from the terminal's quotes
+var FX_CUR = [['USD', null, 0], ['EUR', 'EUR/USD', 0], ['GBP', 'GBPUSD', 0], ['JPY', 'USDJPY', 1], ['CHF', 'USDCHF', 1], ['CNY', 'USDCNY', 1], ['RUB', 'USD/RUB', 1]];
+function drawFxc(box){
+  $('ana-title').textContent = TX('fxc_title');
+  clear(box);
+  var Q = T.Q, cur = [];
+  FX_CUR.forEach(function(c){
+    if (!c[1]) return cur.push({c: c[0], usd: 1, ch: 0});
+    var q = Q[c[1]]; if (!q || !q.value) return;
+    var g = q.change != null ? q.change / 100 : null;
+    cur.push(c[2] ? {c: c[0], usd: 1 / q.value, ch: g == null ? null : 1 / (1 + g) - 1} : {c: c[0], usd: q.value, ch: g});
+  });
+  if (cur.length < 3) { box.appendChild(el('div', 'empty', TX('fxc_wait'))); setTimeout(function(){ if (ana.tab === 'FXC' && visible('p-ana')) drawFxc(box) }, 4000); return }
+  var tb = table([{t: ''}].concat(cur.map(function(c){ return {t: c.c} })));
+  tb.t.classList.add('mx');
+  cur.forEach(function(a){
+    var tr = el('tr'); tr.appendChild(td(a.c, 'l tkc'));
+    cur.forEach(function(b){
+      if (a === b) return tr.appendChild(td('—', 'flat'));
+      var x = a.usd / b.usd, c = a.ch != null && b.ch != null ? ((1 + a.ch) / (1 + b.ch) - 1) * 100 : null;
+      var cell = td(fmt(x, x >= 100 ? 2 : x >= 1 ? 4 : 6));
+      cell.appendChild(el('small', cls(c), pct(c, 2))); cell.title = '1 ' + a.c + ' = ' + fmt(x, 6) + ' ' + b.c;
+      tr.appendChild(cell);
+    });
+    tb.body.appendChild(tr);
+  });
+  box.appendChild(tb.t);
+  box.appendChild(el('div', 'note', TX('fxc_note')));
+}
+function pearson(a, b){
+  var n = a.length; if (n < 10) return null;
+  var ma = 0, mb = 0; for (var i = 0; i < n; i++) { ma += a[i]; mb += b[i] } ma /= n; mb /= n;
+  var sab = 0, saa = 0, sbb = 0;
+  for (var j = 0; j < n; j++) { var x = a[j] - ma, y = b[j] - mb; sab += x * y; saa += x * x; sbb += y * y }
+  return saa && sbb ? sab / Math.sqrt(saa * sbb) : null;
+}
+// daily returns by calendar date (markets with different holidays are matched on common days)
+function dailyReturns(h){
+  var out = {}, prev = null;
+  for (var i = 0; i < h.c.length; i++) {
+    var d = new Date(h.t[i] * 1000).toISOString().slice(0, 10);
+    if (prev != null && h.c[i] && prev) out[d] = h.c[i] / prev - 1;
+    prev = h.c[i];
+  }
+  return out;
+}
+function corrMatrix(series){
+  return series.map(function(a){ return series.map(function(b){
+    if (a === b) return 1;
+    var xs = [], ys = [];
+    Object.keys(a.r).forEach(function(d){ if (b.r[d] != null) { xs.push(a.r[d]); ys.push(b.r[d]) } });
+    return pearson(xs, ys);
+  }) });
+}
+function drawCorr(box){
+  var range = ana.corrRange, syms = ana.corr.slice();
+  $('ana-title').textContent = TX('corr_title', TX('ranges')[range] || range);
+  clear(box);
+  var f = el('form', 'frm'); f.autocomplete = 'off';
+  var inp = el('input', 't'); inp.placeholder = TX('add_ticker'); inp.style.width = '140px'; f.appendChild(inp);
+  var add = el('button', 'btn', TX('add')); add.type = 'submit'; f.appendChild(add);
+  ['3m', '1y', '5y'].forEach(function(r){ var b = el('button', 'chipbtn' + (r === range ? ' on' : ''), r.toUpperCase()); b.type = 'button'; b.onclick = function(){ ana.corrRange = r; drawCorr(box) }; f.appendChild(b) });
+  syms.forEach(function(s, i){ var b = el('button', 'chipbtn', s + ' ✕'); b.type = 'button'; b.onclick = function(){ ana.corr.splice(i, 1); store('corr_syms', JSON.stringify(ana.corr)); drawCorr(box) }; f.appendChild(b) });
+  f.onsubmit = function(e){ e.preventDefault(); inp.value.split(/[\s,]+/).filter(Boolean).forEach(function(s){ s = upSym(s); if (ana.corr.indexOf(s) < 0 && ana.corr.length < 12) ana.corr.push(s) }); store('corr_syms', JSON.stringify(ana.corr)); drawCorr(box) };
+  box.appendChild(f);
+  if (syms.length < 2) { box.appendChild(el('div', 'empty', TX('corr_few'))); return }
+  if (!T.api()) return noApi(box, TX('m_corr'));
+  var note = el('div', 'loading', TX('loading_d')); box.appendChild(note);
+  Promise.all(syms.map(function(s){ return history(s, range).catch(function(e){ return {error: e.message} }) })).then(function(arr){
+    if (ana.tab !== 'CORR' || range !== ana.corrRange || syms.join() !== ana.corr.join()) return;
+    note.remove();
+    var series = [], bad = [];
+    arr.forEach(function(h, i){ if (h.error || !h.c) bad.push(syms[i]); else series.push({s: syms[i], r: dailyReturns(h)}) });
+    var m = corrMatrix(series);
+    var tb = table([{t: ''}].concat(series.map(function(x){ return {t: x.s} })));
+    tb.t.classList.add('mx');
+    series.forEach(function(a, i){
+      var tr = el('tr'); tr.appendChild(td(a.s, 'l tkc'));
+      m[i].forEach(function(v, j){ var c = td(v == null ? '—' : fmt(v, 2)); if (i !== j && v != null) { c.style.background = heat(v, 1); c.style.color = '#fff' } c.title = a.s + ' / ' + series[j].s; tr.appendChild(c) });
+      tb.body.appendChild(tr);
+    });
+    box.appendChild(tb.t);
+    box.appendChild(el('div', 'note', TX('corr_note') + (bad.length ? TX('not_loaded') + bad.join(', ') : '')));
+  });
+}
+function drawOpt(box){
+  $('ana-title').textContent = TX('opt_title');
+  page('options.json', 600).then(function(d){
+    if (ana.tab !== 'OPT') return;
+    clear(box);
+    $('ana-sub').textContent = d.updated ? TX('updated_at', T.hm(d.updated)) : '';
+    var tb = table(cols(TX('opt_cols'), [1]));
+    (d.rows || []).forEach(function(r){
+      var tr = el('tr', 'row'); tr.dataset.s = r.s;
+      tr.appendChild(td(r.s, 'l tkc')); tr.appendChild(td(r.n || '', 'l')); tr.appendChild(td(price(r.px), 'num')); tr.appendChild(chg(r.chg));
+      tr.appendChild(td(num(r.iv30, 1) + '%', 'num')); tr.appendChild(td((r.iv30_chg > 0 ? '+' : '') + num(r.iv30_chg, 1), 'num ' + cls(r.iv30_chg)));
+      tr.appendChild(td(fmt(r.c_vol, 0), 'num')); tr.appendChild(td(fmt(r.p_vol, 0), 'num'));
+      tr.appendChild(td(num(r.pcr_vol, 2), 'num' + (r.pcr_vol > 1 ? ' down' : ''))); tr.appendChild(td(num(r.pcr_oi, 2), 'num' + (r.pcr_oi > 1 ? ' down' : '')));
+      tb.body.appendChild(tr);
+    });
+    tb.t.onclick = function(e){ var tr = e.target.closest('tr.row'); if (tr) openDes(tr.dataset.s, 'OMON') };
+    box.appendChild(tb.t);
+    box.appendChild(el('div', 'note', TX('opt_note')));
+  }).catch(function(){ clear(box).appendChild(el('div', 'empty', TX('opt_wait'))) });
+}
+function drawIpo(box){
+  $('ana-title').textContent = TX('ipo_title');
+  if (!T.api()) return noApi(box, TX('m_ipo'));
+  loading(box);
+  api('/api/ipo', {ttl: 1800}).then(function(d){
+    if (ana.tab !== 'IPO') return;
+    clear(box);
+    var list = d.ipo || [];
+    if (!list.length) { box.appendChild(el('div', 'empty', TX('ipo_none'))); return }
+    var st = TX('ipo_status'), tb = table(cols(TX('ipo_cols'), [1, 2, 3]));
+    list.forEach(function(x){
+      var tr = el('tr'); tr.appendChild(td(dmy(x.date), 'l')); tr.appendChild(td(x.symbol || '', 'l tkc')); tr.appendChild(td(x.name || '', 'l')); tr.appendChild(td(x.exchange || '', 'l'));
+      tr.appendChild(td(x.price ? '$' + x.price : '—', 'num')); tr.appendChild(td(x.numberOfShares ? fmt(x.numberOfShares, 0) : '—', 'num'));
+      tr.appendChild(td(x.totalSharesValue ? money(x.totalSharesValue) : '—', 'num')); tr.appendChild(td(st[x.status] || x.status || '', 'num'));
+      tb.body.appendChild(tr);
+    });
+    box.appendChild(tb.t);
+  }).catch(function(e){ errBox(box, e) });
+}
+RENDER['p-ana'] = function(){ if (!$('ana-body').querySelector('table')) renderAna() };
 
 /* ======================= W / PORT / ALRT ======================= */
 var My = (function(){
@@ -1226,16 +1677,23 @@ setInterval(pollLive, 60000);
 /* ======================= commands ======================= */
 var C = T.CMDS;
 function desCmd(tab){ return function(arg){ openDes(arg, tab) } }
-['DES', 'FA', 'ERN', 'ANR', 'CN', 'HDS'].forEach(function(k){ C[k] = desCmd(k); T.SUFFIX[k] = 1 });
-C.EE = C.ERN; T.SUFFIX.EE = 1; C.DVD = C.DES;
+['DES', 'FA', 'ERN', 'EE', 'ANR', 'CN', 'HDS', 'DVD', 'RV', 'CF'].forEach(function(k){ C[k] = desCmd(k); T.SUFFIX[k] = 1 });
+C.OMON = function(arg){ if (arg && String(arg).trim()) openDes(arg, 'OMON'); else openAna('OPT') }; T.SUFFIX.OMON = 1; C.OPT = C.OMON; C['ОПЦИОНЫ'] = C.OMON;
+C.MGMT = function(arg){ des.scrollTo = 'mgmt'; openDes(arg, 'DES') }; T.SUFFIX.MGMT = 1;
+C.SI = function(arg){ des.scrollTo = 'si'; openDes(arg, 'HDS') }; T.SUFFIX.SI = 1;
+C['ПРОГНОЗЫ'] = desCmd('EE'); C['ДИВИДЕНДЫ'] = desCmd('DVD'); C['КОНКУРЕНТЫ'] = desCmd('RV');
+C.ECST = function(arg){ openAna('ECST', arg) }; C.ECFC = C.ECST; C.MACRO = C.ECST; C['МАКРО'] = C.ECST; C['ЭКОНОМИКИ'] = C.ECST;
+C.FXC = function(){ openAna('FXC') }; C.CROSS = C.FXC; C['КРОССЫ'] = C.FXC;
+C.CORR = function(arg){ openAna('CORR', arg) }; C['КОРРЕЛЯЦИИ'] = C.CORR;
+C.IPO = function(){ openAna('IPO') };
 C['КОМПАНИЯ'] = desCmd('DES'); C['ОТЧЁТНОСТЬ'] = C['ОТЧЕТНОСТЬ'] = desCmd('FA'); C['АНАЛИТИКИ'] = desCmd('ANR');
-C.HP = function(arg){ var p = String(arg || '').trim().split(/\s+/), r = p.length > 1 && /^(1M|3M|6M|YTD|1Y|2Y|5Y)$/i.test(p[p.length - 1]) ? p.pop().toLowerCase() : null; openHP(p.join(' ') || hp.sym, r) };
+C.HP = function(arg){ var p = String(arg || '').trim().split(/\s+/), r = p.length > 1 && /^(1D|5D|1M|3M|6M|YTD|1Y|2Y|5Y)$/i.test(p[p.length - 1]) ? p.pop().toLowerCase() : null; openHP(p.join(' ') || hp.sym, r) };
 T.SUFFIX.HP = 1; T.SUFFIX.GP = 1;
 C['ИСТОРИЯ'] = C.HP;
-C.COMP = function(arg){ var p = String(arg || '').trim().split(/[\s,]+/).filter(Boolean), r = p.length && /^(1M|3M|6M|YTD|1Y|2Y|5Y)$/i.test(p[p.length - 1]) ? p.pop().toLowerCase() : null; openComp(p, r) };
+C.COMP = function(arg){ var p = String(arg || '').trim().split(/[\s,]+/).filter(Boolean), r = p.length && /^(1D|5D|1M|3M|6M|YTD|1Y|2Y|5Y)$/i.test(p[p.length - 1]) ? p.pop().toLowerCase() : null; openComp(p, r) };
 C.COMPARE = C.COMP; C['СРАВНИ'] = C['СРАВНЕНИЕ'] = C.COMP;
 C.EQS = function(arg){ openEqs(arg ? arg : null) }; C.SCREENER = C.EQS; C['СКРИНЕР'] = C.EQS;
-C.IMAP = function(){ T.show('p-imap') }; C.MAP = C.IMAP; C.HEAT = C.IMAP; C['КАРТА'] = C.IMAP;
+C.IMAP = function(arg){ var a = String(arg || '').trim().toUpperCase(); openImap(/^(RU|RUS|MOEX|РФ|РОССИЯ|МОСБИРЖА)$/.test(a) ? 'RU' : a === 'US' ? 'US' : null) }; C.MAP = C.IMAP; C.HEAT = C.IMAP; C['КАРТА'] = C.IMAP;
 C.GC = function(){ openGc('GC') }; C.CURVE = C.GC; C.YCRV = C.GC; C['КРИВЫЕ'] = C.GC; C['ОБЛИГАЦИИ'] = C.GC; C['GOVT'] = C.GC;
 C.CB = function(){ openGc('CB') }; C.CBR = C.CB; C['СТАВКИ'] = C.CB;
 C.WIRP = function(){ openGc('WIRP') }; C.FEDWATCH = C.WIRP;

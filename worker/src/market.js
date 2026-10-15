@@ -262,10 +262,11 @@ export async function worldQuotes(ttl = 30) {
 // ---------------------------------------------------------------------------
 // Price history (daily candles)
 // ---------------------------------------------------------------------------
-const RANGES = { "1m": 31, "3m": 92, "6m": 183, "1y": 366, "2y": 731, "5y": 1827, "ytd": 0 };
+const RANGES = { "1d": 1, "5d": 5, "1m": 31, "3m": 92, "6m": 183, "1y": 366, "2y": 731, "5y": 1827, "ytd": 0 };
+const INTRADAY = { "1d": true, "5d": true };   // 5-30 minute bars
 
 export function normRange(r) {
-  r = String(r || "1y").toLowerCase().replace("мес", "m").replace("г", "y").replace("л", "y");
+  r = String(r || "1y").toLowerCase().replace("мес", "m").replace("г", "y").replace("л", "y").replace("д", "d");
   return RANGES[r] != null ? r : "1y";
 }
 
@@ -278,8 +279,9 @@ function sinceDays(range) {
 }
 
 async function yahooHistory(sym, range) {
-  const interval = range === "5y" ? "1wk" : "1d";
-  const d = await getJSON(YAHOO + encodeURIComponent(sym) + "?range=" + range.replace("m", "mo") + "&interval=" + interval + "&includePrePost=false", { ttl: 1800 });
+  const interval = { "1d": "5m", "5d": "30m", "5y": "1wk" }[range] || "1d";
+  const d = await getJSON(YAHOO + encodeURIComponent(sym) + "?range=" + range.replace("m", "mo") + "&interval=" + interval + "&includePrePost=false",
+    { ttl: INTRADAY[range] ? 120 : 1800 });
   const r = d && d.chart && d.chart.result && d.chart.result[0];
   if (!r || !r.timestamp) throw new Error("Yahoo: no data");
   const q = r.indicators.quote[0];
@@ -293,12 +295,21 @@ async function yahooHistory(sym, range) {
 
 async function binanceHistory(coin, range) {
   const days = sinceDays(range);
-  const interval = days > 900 ? "1w" : "1d";
-  const limit = Math.min(1000, interval === "1w" ? Math.ceil(days / 7) + 1 : days);
+  const interval = range === "1d" ? "5m" : range === "5d" ? "30m" : days > 900 ? "1w" : "1d";
+  const limit = range === "1d" ? 288 : range === "5d" ? 240 : Math.min(1000, interval === "1w" ? Math.ceil(days / 7) + 1 : days);
   let k = null, err = null;
   for (const host of BINANCE_HOSTS) {
-    try { k = await getJSON(host + "/klines?symbol=" + coin + "USDT&interval=" + interval + "&limit=" + limit, { ttl: 900, timeout: 8000 }); break; }
+    try { k = await getJSON(host + "/klines?symbol=" + coin + "USDT&interval=" + interval + "&limit=" + limit, { ttl: INTRADAY[range] ? 60 : 900, timeout: 8000 }); break; }
     catch (e) { err = e; }
+  }
+  if (!k && INTRADAY[range]) {
+    // shortcut: without Binance intraday comes as hourly candles from CryptoCompare
+    const d = await getJSON("https://min-api.cryptocompare.com/data/v2/histohour?fsym=" + coin + "&tsym=USD&limit=" + days * 24, { ttl: 300, timeout: 8000 })
+      .catch(() => { throw err || new Error("Binance unavailable"); });
+    const rows = ((d && d.Data && d.Data.Data) || []).filter((x) => x.close > 0);
+    if (!rows.length) throw err || new Error("no history for " + coin);
+    return { t: rows.map((x) => x.time), o: rows.map((x) => x.open), h: rows.map((x) => x.high), l: rows.map((x) => x.low),
+      c: rows.map((x) => x.close), v: rows.map((x) => x.volumeto), cur: "USD", name: coin + "/USD", src2: "cryptocompare" };
   }
   if (!k) {
     // Binance blocks some Cloudflare servers — take daily candles from CryptoCompare
@@ -321,8 +332,9 @@ async function binanceHistory(coin, range) {
 
 async function moexHistory(s, range, isIndex) {
   const days = sinceDays(range);
-  const interval = days > 900 ? 7 : 24;
-  const from = new Date(Date.now() - days * 864e5).toISOString().slice(0, 10);
+  const interval = range === "1d" ? 10 : range === "5d" ? 60 : days > 900 ? 7 : 24;
+  // intraday: from a few days back (weekends), then keep the last trading day / five days
+  const from = new Date(Date.now() - (INTRADAY[range] ? days * 2 + 3 : days) * 864e5).toISOString().slice(0, 10);
   const path = isIndex ? "/engines/stock/markets/index/securities/" : "/engines/stock/markets/shares/boards/TQBR/securities/";
   const out = { t: [], o: [], h: [], l: [], c: [], v: [], cur: isIndex ? "" : "RUB", name: s };
   for (let start = 0; start < 3000; start += 500) {
@@ -335,6 +347,12 @@ async function moexHistory(s, range, isIndex) {
     }
     if (rows.length < 500) break;
   }
+  if (INTRADAY[range] && out.t.length) {
+    const daysSeen = [...new Set(out.t.map((t) => new Date((t + 3 * 3600) * 1000).toISOString().slice(0, 10)))];
+    const keep = daysSeen.slice(-days)[0];
+    const i = out.t.findIndex((t) => new Date((t + 3 * 3600) * 1000).toISOString().slice(0, 10) >= keep);
+    for (const k of ["t", "o", "h", "l", "c", "v"]) out[k] = out[k].slice(i);
+  }
   return out;
 }
 
@@ -342,7 +360,7 @@ export async function getHistory(env, raw, range) {
   const p = parseSymbol(raw);
   if (!p) throw new Error("unknown instrument: " + raw);
   range = normRange(range);
-  return cached("hist:" + p.key + ":" + range, 1800, async () => {
+  return cached("hist:" + p.key + ":" + range, INTRADAY[range] ? 120 : 1800, async () => {
     let h;
     if (p.kind === "crypto") { const b = await binanceHistory(p.s, range); h = { ...b, src: b.src2 || "binance" }; delete h.src2; }
     else if (p.kind === "moex") h = { ...(await moexHistory(p.s, range, false)), src: "moex" };
@@ -412,7 +430,12 @@ async function translateLines(lines) {
   })));
 }
 
-export const COMPANY_PARTS = ["des", "fa", "ern", "anr", "cn", "hds"];
+// des fa ern anr cn hds — live (Finnhub); co — the deep file docs/co/<T>.json (profile, management, estimates,
+// price targets, rating changes, holders, short interest, dividends, filings; built by company.py);
+// dvd, cf — dividends and filings (from co, or live when the company has no file); opt — option snapshot
+// docs/opt/<T>.json (options.py) or the Cboe IV30; rv — the company against its peers (docs/stocks.json)
+export const COMPANY_PARTS = ["des", "fa", "ern", "anr", "cn", "hds", "co", "dvd", "cf", "opt", "rv"];
+const notFound = (e) => { if (!/HTTP 404/.test(String(e.message))) throw e; };   // no file for this company — fine
 
 export async function getCompany(env, raw, parts = COMPANY_PARTS, lang = "en") {
   const p = parseSymbol(raw);
@@ -498,11 +521,71 @@ export async function getCompany(env, raw, parts = COMPANY_PARTS, lang = "en") {
         sh: t.share, px: num(t.transactionPrice, 2) }));
     }));
   }
+  if (want.has("co") || want.has("dvd") || want.has("cf")) {
+    safe("co", pageJSON(env, "co/" + p.s + ".json", 1800).then((x) => { res.co = x; }).catch(notFound));
+  }
+  if (want.has("opt")) {
+    safe("options", pageJSON(env, "opt/" + p.s + ".json", 600).then((x) => { res.opt = x; }).catch(notFound));
+  }
+  if (want.has("rv")) safe("peers", relativeValue(env, p.s).then((x) => { res.rv = x; }));
   await Promise.all(jobs);
+  // live fallbacks for companies outside the ~100 with a deep file
+  const late = [];
+  const lateSafe = (name, pr) => late.push(pr.catch((e) => { res.errors.push(name + ": " + (e.message || e)); }));
+  const co = res.co || {};
+  if (want.has("dvd") && !(co.div && co.div.hist)) lateSafe("dividends", yahooDividends(p.s).then((x) => { res.dvd = x; }));
+  if (want.has("cf") && !(co.filings && co.filings.length)) {
+    lateSafe("filings", fh(env, "/stock/filings?symbol=" + s, 6 * 3600).then((x) => {
+      res.cf = (x || []).filter((f) => f.form && f.form !== "4").slice(0, 25)
+        .map((f) => ({ d: (f.filedDate || "").slice(0, 10), type: f.form, url: f.reportUrl || f.filingUrl }));
+    }));
+  }
+  if (want.has("opt") && !res.opt) {
+    lateSafe("iv30", getJSON("https://cdn.cboe.com/api/global/delayed_quotes/quotes/" + s + ".json", { ttl: 600 }).then((x) => {
+      const d = (x && x.data) || {};
+      if (d.iv30 != null) res.opt = { s: p.s, px: num(d.current_price, 4), chg: num(d.price_change_percent, 2), iv30: num(d.iv30, 2),
+        iv30_chg: num(d.iv30_change, 2), ts: x.timestamp, lite: true };
+    }));
+  }
+  await Promise.all(late);
   if (want.has("des") && !res.profile && !res.quote) {
     throw new Error(res.errors.join("; ") || "no data for " + p.s);
   }
   return res;
+}
+
+// dividends and splits from Yahoo chart events (small answer: one point a month)
+async function yahooDividends(sym) {
+  const d = await getJSON(YAHOO + encodeURIComponent(sym.replace(".", "-")) + "?range=15y&interval=1mo&events=div%7Csplit", { ttl: 6 * 3600 });
+  const ev = ((((d && d.chart) || {}).result || [])[0] || {}).events || {};
+  const day = (t) => new Date(t * 1000).toISOString().slice(0, 10);
+  const hist = Object.values(ev.dividends || {}).map((x) => [day(x.date), num(x.amount, 6)]).sort((a, b) => (a[0] < b[0] ? 1 : -1)).slice(0, 80);
+  const splits = Object.values(ev.splits || {}).map((x) => [day(x.date), x.splitRatio || x.numerator + ":" + x.denominator])
+    .sort((a, b) => (a[0] < b[0] ? 1 : -1));
+  return { hist, splits };
+}
+
+// RV: the company and its peers on the same ratios (Finnhub peers that are in docs/stocks.json; else the sector)
+const RV_KEYS = ["s", "n", "sec", "px", "ch", "mcap", "pe", "fpe", "ps", "pb", "dy", "beta", "revg", "epsg", "gm", "nm", "roe", "de", "r52", "rytd"];
+export async function relativeValue(env, sym) {
+  const [st, peers] = await Promise.all([pageJSON(env, "stocks.json", 300),
+    fh(env, "/stock/peers?symbol=" + encodeURIComponent(sym), 24 * 3600).catch(() => [])]);
+  const all = (st && st.stocks) || [];
+  const by = Object.fromEntries(all.map((r) => [r.s, r]));
+  const me = by[sym];
+  let list = (peers || []).filter((t) => t !== sym && by[t]);
+  if (list.length < 4 && me) {
+    list = list.concat(all.filter((r) => r.sec === me.sec && r.s !== sym && !list.includes(r.s))
+      .sort((a, b) => (b.mcap || 0) - (a.mcap || 0)).map((r) => r.s)).slice(0, 8);
+  }
+  const pick = (r) => Object.fromEntries(RV_KEYS.map((k) => [k, r[k] ?? null]));
+  const rows = [me, ...list.slice(0, 8).map((t) => by[t])].filter(Boolean).map(pick);
+  const med = {};
+  for (const k of RV_KEYS.slice(5)) {
+    const v = rows.slice(1).map((r) => r[k]).filter((x) => x != null && isFinite(x)).sort((a, b) => a - b);
+    med[k] = v.length ? (v.length % 2 ? v[(v.length - 1) / 2] : (v[v.length / 2 - 1] + v[v.length / 2]) / 2) : null;
+  }
+  return { s: sym, in_list: !!me, rows, median: med, updated: st && st.updated };
 }
 
 async function moexCompany(s, lang = "en") {
@@ -526,8 +609,11 @@ export async function chartImage(h, title, lang = "en") {
   const n = h.c.length;
   const step = Math.max(1, Math.ceil(n / 160));
   const labels = [], data = [];
+  const intraday = INTRADAY[h.range];
+  const label = (t) => (intraday ? new Date((t + 3 * 3600) * 1000).toISOString().slice(h.range === "1d" ? 11 : 5, 16).replace("T", " ")
+    : dm(new Date(t * 1000).toISOString(), lang));   // intraday: Moscow time
   for (let i = 0; i < n; i += step) {
-    labels.push(dm(new Date(h.t[i] * 1000).toISOString(), lang));
+    labels.push(label(h.t[i]));
     data.push(+h.c[i].toFixed(4));
   }
   if (data[data.length - 1] !== +h.c[n - 1].toFixed(4)) { labels.push(""); data.push(+h.c[n - 1].toFixed(4)); }

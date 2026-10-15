@@ -3,7 +3,7 @@
 import assert from "node:assert/strict";
 import crypto from "node:crypto";
 
-import { PAGES, TOKEN, OWNER, sent, flags, dataJson, KV, installMocks, iso } from "./mocks.mjs";
+import { PAGES, TOKEN, OWNER, sent, flags, dataJson, stocksJson, KV, installMocks, iso, calls } from "./mocks.mjs";
 installMocks();
 const env = { TELEGRAM_BOT_TOKEN: TOKEN, OWNER_ID: OWNER, FINNHUB_API_KEY: "FHKEY", TERMINAL_PASSWORD: "pw", PAGES_URL: PAGES, SUBS: new KV() };
 const ctx = { waits: [], waitUntil(p) { this.waits.push(p); } };
@@ -159,8 +159,12 @@ await test("/api/company: all parts; headlines translated only when asked", asyn
   assert.equal(c.ern.length, 2);
   assert.equal(c.cn[0].h, "Apple beats estimates", "English by default — no translator calls");
   assert.equal(c.ins.length, 1, "only open-market buys and sells");
-  assert.deepEqual(c.peers, ["DELL", "HPQ"]);
+  assert.deepEqual(c.peers, ["NVDA", "DELL", "HPQ"]);
   assert.deepEqual(c.errors, []);
+  assert.equal(c.co.targets.mean, 329.38, "the deep file docs/co/AAPL.json is included");
+  assert.ok(c.opt.exp.length >= 4 && c.opt.chains[0].rows.length > 5, "the option snapshot docs/opt/AAPL.json");
+  assert.deepEqual(c.rv.rows.map((r) => r.s), ["AAPL", "NVDA"], "peers that are in stocks.json");
+  assert.equal(c.dvd, undefined, "dividends come from the deep file, no live request");
   clearMemo();
   const ru = await api("/api/company?s=AAPL&parts=cn&lang=ru");
   assert.equal(ru.json.cn[0].h, "Apple превзошла прогнозы");
@@ -488,6 +492,120 @@ await test("live feed: accepted with the key and served", async () => {
   clearMemo();
   r = await api("/api/live");
   assert.equal(r.json.news[0].title, "Fresh story");
+});
+
+await test("/api/company: live fallbacks for a company without deep files (dividends, filings, IV30)", async () => {
+  const r = await api("/api/company?s=XOM&parts=co,dvd,cf,opt,rv");
+  const c = r.json;
+  assert.equal(c.co, undefined);
+  assert.deepEqual(c.dvd.hist[0], ["2026-08-06", 0.99]);
+  assert.deepEqual(c.dvd.splits[0], ["2001-09-09", "2:1"]);
+  assert.deepEqual(c.cf.map((f) => f.type), ["10-Q", "8-K"], "Form 4 (insider trades) is left to HDS");
+  assert.equal(c.opt.lite, true);
+  assert.equal(c.opt.iv30, 24.4);
+  assert.deepEqual(c.rv.rows.map((r) => r.s), ["XOM"], "no peers in the list and alone in its sector");
+  assert.deepEqual(c.errors, []);
+});
+
+await test("bot (English): deep company functions EE ANR HDS SI DVD CF MGMT RV OMON", async () => {
+  let out = await msg("/des AAPL"); noErrors(out);
+  assert.match(texts(out), /American multinational technology company/);
+  assert.match(texts(out), /Employees: 150,000/);
+  assert.match(texts(out), /Price target: <b>\$329\.38<\/b> \(\$215 – \$405\) · −4\.0% from now/);
+  for (const cbk of ["ee:AAPL", "hds:AAPL", "dvd:AAPL", "omon:AAPL", "rv:AAPL", "cf:AAPL"]) assert.ok(buttons(out).some((b) => b.callback_data === cbk), cbk);
+  out = await msg("/ee AAPL"); noErrors(out);
+  assert.match(texts(out), /Current quarter<\/b> \(to 30 Sep 2026\)\nEPS \$1\.98 \(1\.93–2\.07\) · \+6\.9% y\/y/);
+  assert.match(texts(out), /Next report: <b>2 Nov 2026<\/b>/);
+  assert.match(texts(out), /30 Jun 2026: \$2\.02 vs \$1\.89 · \+6\.7%/);
+  out = await msg("/anr AAPL"); noErrors(out);
+  assert.match(texts(out), /mean <b>\$329\.38<\/b>, median \$340\.00/);
+  assert.match(texts(out), /12 Oct <b>JP Morgan<\/b>: ▪️ maintained Overweight · target \$360 \(was \$340\)/);
+  out = await cb("hds:AAPL"); noErrors(out);
+  assert.match(texts(out), /Insiders <b>1\.6%<\/b> · institutions <b>66\.3%<\/b> \(7,697\)/);
+  assert.match(texts(out), /Blackrock Inc\.: 7\.97% · \$399B · \+1\.6%/);
+  assert.match(texts(out), /Vanguard Total Stock Market Index Fund: 3\.19%/);
+  assert.match(texts(out), /Cook Tim/);
+  out = await cb("si:AAPL"); noErrors(out);
+  assert.match(texts(out), /Short: <b>120,763,539 shares<\/b> on 30 Sep 2026/);
+  assert.match(texts(out), /Before: 128,753,092 on 15 Sep 2026 \(−6\.2%\)/);
+  out = await msg("/dvd AAPL"); noErrors(out);
+  assert.match(texts(out), /Annual: <b>\$1\.05<\/b> · yield 0\.32% · payout 12%/);
+  assert.match(texts(out), /10 Aug 2026: \$0\.27/);
+  assert.match(texts(out), /Splits: 4:1 \(31 Aug 2020\)/);
+  out = await msg("/dvd XOM"); noErrors(out); assert.match(texts(out), /6 Aug 2026: \$0\.99/);
+  out = await msg("/cf AAPL"); noErrors(out); assert.match(texts(out), /<b>10-Q<\/b> — quarterly report/);
+  out = await msg("/mgmt AAPL"); noErrors(out); assert.match(texts(out), /<b>Mr\. Timothy D\. Cook<\/b>, 64\nExecutive Chairman of the Board · pay \$16\.8M/);
+  out = await msg("/rv AAPL"); noErrors(out); assert.match(texts(out), /AAPL +38\.8/); assert.match(texts(out), /Median/);
+  out = await msg("/omon AAPL"); noErrors(out);
+  assert.match(texts(out), /IV30 <b>26\.2%<\/b>/);
+  assert.match(texts(out), /16 Oct \(1d\): IV \d+\.\d% · ±\$\d/);
+  out = await msg("/omon XOM"); noErrors(out); assert.match(texts(out), /only the IV30/i);
+  out = await msg("/ee XOM"); noErrors(out); assert.match(texts(out), /No detailed data for XOM yet/);
+  out = await msg("/dvd SBER"); noErrors(out); assert.match(texts(out), /Moscow Exchange shares are not in the free data/);
+});
+
+await test("bot (English): macro, IPO, Moscow Exchange", async () => {
+  let out = await msg("/macro"); noErrors(out);
+  assert.match(texts(out), /United States: GDP 2\.0 \/ 2\.1 · CPI 2\.8 \/ 2\.4/);
+  out = await msg("/macro RU"); noErrors(out); assert.match(texts(out), /<b>Russia<\/b>/); assert.match(texts(out), /GDP growth, %\s+5\.7/);
+  out = await msg("/ipo"); noErrors(out); assert.match(texts(out), /CTY · CITY THERAPEUTICS, INC\.\n\$17\.00-19\.00 · 9,722,222 shares/);
+  out = await msg("/moex"); noErrors(out);
+  assert.match(texts(out), /Moscow Exchange today<\/b> · 14:05 MSK/);
+  assert.match(texts(out), /Real Estate \+3\.10%/);
+  assert.match(texts(out), /Gainers:<\/b> PIK \+3\.1%/);
+});
+
+await test("bot (Russian): the new functions speak Russian", async () => {
+  await msg("/lang ru", RU);
+  let out = await msg("/des AAPL", RU);
+  assert.match(texts(out), /американская корпорация/);
+  assert.match(texts(out), /Целевая цена: <b>\$329,38<\/b>/);
+  assert.ok(buttons(out).some((b) => b.text === "EE прогнозы"));
+  out = await msg("/ee AAPL", RU); noErrors(out); assert.match(texts(out), /Текущий квартал<\/b> \(до 30\.09\.2026\)/); assert.match(texts(out), /г\/г/);
+  out = await msg("/hds AAPL", RU); noErrors(out); assert.match(texts(out), /Инсайдеры <b>1,6%<\/b> · институционалы <b>66,3%<\/b>/);
+  out = await msg("/si AAPL", RU); noErrors(out); assert.match(texts(out), /В шорте: <b>120 763 539 акций<\/b>/);
+  out = await msg("/dvd AAPL", RU); noErrors(out); assert.match(texts(out), /Отсечка 10\.08\.2026 · выплата 13\.08\.2026/);
+  out = await msg("/cf AAPL", RU); noErrors(out); assert.match(texts(out), /квартальный отчёт/);
+  out = await msg("/omon AAPL", RU); noErrors(out); assert.match(texts(out), /Пут\/колл/);
+  out = await msg("/rv AAPL", RU); noErrors(out); assert.match(texts(out), /Медиана/);
+  out = await msg("/macro", RU); noErrors(out); assert.match(texts(out), /США: ВВП 2,0 \/ 2,1 · ИПЦ 2,8 \/ 2,4/);
+  out = await msg("/macro Россия", RU); noErrors(out); assert.match(texts(out), /Рост ВВП, %\s+5,7/);
+  out = await msg("/ipo", RU); noErrors(out); assert.match(texts(out), /ожидается/);
+  out = await msg("/moex", RU); noErrors(out); assert.match(texts(out), /Недвижимость \+3,10%/); assert.match(texts(out), /ПИК ао \+3,1%/);
+  out = await msg("/ee XOM", RU); noErrors(out); assert.match(texts(out), /Подробных данных по XOM пока нет/);
+});
+
+await test("morning note: watchlist companies reporting today or tomorrow, once a day, in each person's language", async () => {
+  const { watchReminders } = await import("../worker/src/botcmd.js");
+  const earn = stocksJson.earnings[0];   // AAPL, in two days
+  const day = new Date(Date.parse(earn.d + "T06:05:00Z") - 864e5);   // the day before, 09:05 MSK
+  await env.SUBS.put("p:701", JSON.stringify({ w: ["AAPL", "BTC"], p: [] }));
+  await env.SUBS.put("p:702", JSON.stringify({ w: ["XOM"], p: [] }));
+  await env.SUBS.put("p:703", JSON.stringify({ w: ["AAPL"], p: [] }));
+  await env.SUBS.put("l:703", "ru");
+  assert.deepEqual(await watchReminders(env, new Date(day.getTime() - 3600e3)), { skipped: true }, "only at 09:00 MSK");
+  const start = sent.length;
+  const r = await watchReminders(env, day);
+  const out = sent.slice(start).filter((m) => ["701", "702", "703"].includes(String(m.chat_id)));
+  assert.equal(r.sent, sent.length - start, "other test chats with AAPL in their watchlist get it too");
+  assert.deepEqual(out.map((m) => String(m.chat_id)).sort(), ["701", "703"]);
+  assert.match(out.find((m) => String(m.chat_id) === "701").text, /<b>AAPL<\/b> Apple reports tomorrow after the close · EPS estimate \$2\.02/);
+  assert.match(out.find((m) => String(m.chat_id) === "703").text, /отчитывается завтра/);
+  assert.deepEqual(await watchReminders(env, new Date(day.getTime() + 600e3)), { done: true }, "once a day");
+  for (const k of ["p:701", "p:702", "p:703", "l:703"]) await env.SUBS.delete(k);
+});
+
+await test("/api/ipo and intraday history (1D, 5D)", async () => {
+  const r = await api("/api/ipo");
+  assert.equal(r.json.ipo[0].symbol, "CTY");
+  const h = await api("/api/history?s=AAPL&r=1d");
+  assert.equal(h.json.range, "1d");
+  assert.ok(calls.some((u) => /chart\/AAPL\?range=1d&interval=5m/.test(u)), "5-minute bars");
+  const b = await api("/api/history?s=BTC&r=5d");
+  assert.equal(b.json.range, "5d");
+  assert.ok(calls.some((u) => /klines\?symbol=BTCUSDT&interval=30m&limit=240/.test(u)), "30-minute bars");
+  const out = await msg("/chart AAPL 1d"); noErrors(out);
+  assert.match(texts(out), /1 day/);
 });
 
 await test("the root address answers", async () => {

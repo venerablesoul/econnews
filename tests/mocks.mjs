@@ -1,6 +1,12 @@
 // Fake external services for the bot server and terminal tests: Finnhub, Yahoo, Binance, Moscow Exchange,
 // Telegram, QuickChart, translators and the site's files. No network.
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
+
+// site files built by the Python scripts (company.py, options.py, macro.py, moex.py) — generated from real answers
+const page = (name) => JSON.parse(readFileSync(new URL("./fixtures/pages/" + name, import.meta.url), "utf8"));
+export const coAAPL = page("co/AAPL.json"), optAAPL = page("opt/AAPL.json"), optionsJson = page("options.json");
+export const macroJson = page("macro.json"), moexJson = page("moex.json");
 
 export const PAGES = "https://pages.test/econnews/";
 export const TOKEN = "123:TEST";
@@ -65,7 +71,8 @@ export function route(url, init) {
   }
   if (u.host === "pages.test") {
     const name = p.replace("/econnews/", "");
-    const map = { "data.json": dataJson, "stocks.json": stocksJson, "rates.json": ratesJson, "fin/AAPL.json": finAAPL };
+    const map = { "data.json": dataJson, "stocks.json": stocksJson, "rates.json": ratesJson, "fin/AAPL.json": finAAPL,
+      "co/AAPL.json": coAAPL, "opt/AAPL.json": optAAPL, "options.json": optionsJson, "macro.json": macroJson, "moex.json": moexJson };
     if (map[name]) return map[name];
     return { __status: 404 };
   }
@@ -89,7 +96,11 @@ export function route(url, init) {
       { estimate: 1.9884, actual: 2.01, period: "2026-03-31", surprisePercent: 1.09, year: 2026, quarter: 2 }];
     if (p.endsWith("/company-news")) return [{ datetime: 1792005473, headline: "Apple beats estimates", source: "Yahoo", url: "https://n/1" },
       { datetime: 1792004936, headline: "iPhone sales jump", source: "CNBC", url: "https://n/2" }];
-    if (p.endsWith("/peers")) return [s, "DELL", "HPQ"];
+    if (p.endsWith("/peers")) return s === "AAPL" ? [s, "NVDA", "DELL", "HPQ"] : [s, "DELL", "HPQ"];
+    if (p.endsWith("/calendar/ipo")) return { ipoCalendar: [{ date: iso(now + 864e5).slice(0, 10), exchange: "NASDAQ Global", name: "CITY THERAPEUTICS, INC.",
+      numberOfShares: 9722222, price: "17.00-19.00", status: "expected", symbol: "CTY", totalSharesValue: 212430545 }] };
+    if (p.endsWith("/stock/filings")) return [{ form: "4", filedDate: "2026-10-10 00:00:00", reportUrl: "https://www.sec.gov/x4" },
+      { form: "10-Q", filedDate: "2026-08-01 00:00:00", reportUrl: "https://www.sec.gov/x10q" }, { form: "8-K", filedDate: "2026-07-30 00:00:00", filingUrl: "https://www.sec.gov/x8k" }];
     if (p.endsWith("/insider-transactions")) return { data: [{ name: "Cook Tim", change: -2399, share: 39593, transactionDate: "2026-10-06",
       transactionCode: "S", transactionPrice: 332.01, isDerivative: false }, { name: "Grant", change: 10, transactionCode: "A", isDerivative: false }] };
   }
@@ -128,9 +139,16 @@ export function route(url, init) {
   if ((u.host === "query1.finance.yahoo.com" || u.host === "query2.finance.yahoo.com") && p.includes("/spark")) {
     if (flags.failSpark) return { __status: 401 };
     const syms = (u.searchParams.get("symbols") || "").split(",");
-    const px = { "^GSPC": 7730, "^GDAXI": 24100, "GC=F": 4020, "EURUSD=X": 1.1612, "^TNX": 4.12 };
+    const px = { "^GSPC": 7730, "^GDAXI": 24100, "GC=F": 4020, "EURUSD=X": 1.1612, "^TNX": 4.12, "JPY=X": 151.2, "GBPUSD=X": 1.3321, "CNY=X": 7.105 };
     if (p.startsWith("/v7")) return { spark: { result: syms.filter((s) => px[s]).map((s) => ({ symbol: s, response: [{ meta: { regularMarketPrice: px[s], chartPreviousClose: px[s] / 1.01 } }] })), error: null } };
     return Object.fromEntries(syms.filter((s) => px[s]).map((s) => [s, { symbol: s, close: [px[s]], chartPreviousClose: px[s] / 1.01 }]));
+  }
+  if (u.host === "cdn.cboe.com") {
+    return { timestamp: "2026-10-15 15:45:00", data: { symbol: "XOM", current_price: 110.2, price_change_percent: -2.1, iv30: 24.4, iv30_change: 0.5 } };
+  }
+  if (u.host === "query1.finance.yahoo.com" && u.searchParams.get("events")) {
+    return { chart: { result: [{ meta: {}, events: { dividends: { a: { amount: 0.99, date: 1786000000 }, b: { amount: 0.95, date: 1778000000 } },
+      splits: { c: { date: 1000000000, numerator: 2, denominator: 1, splitRatio: "2:1" } } } }] } };
   }
   if (u.host === "query1.finance.yahoo.com") {
     if (flags.failYahoo) return { __status: 429 };

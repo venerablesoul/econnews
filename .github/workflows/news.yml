@@ -73,5 +73,5 @@ jobs:
           git config user.name "news-bot"
           git config user.email "news-bot@users.noreply.github.com"
           git add state.json 2>/dev/null || true
-          for f in docs/data.json docs/stocks.json docs/rates.json docs/fin; do git add "$f" 2>/dev/null || true; done
+          for f in docs/data.json docs/stocks.json docs/rates.json docs/fin docs/co docs/opt docs/options.json docs/macro.json docs/moex.json; do git add "$f" 2>/dev/null || true; done
           git diff --cached --quiet || (git commit -m "news update" && git pull --rebase && git push)

@@ -1,13 +1,14 @@
 // A local bot server for the terminal e2e tests: the real worker/src code with faked external services.
 // Run: node tests/fake_server.mjs 8787
 import http from "node:http";
-import { PAGES, TOKEN, OWNER, KV, installMocks, dataJson, stocksJson, ratesJson } from "./mocks.mjs";
+import { PAGES, TOKEN, OWNER, KV, installMocks, dataJson, stocksJson, ratesJson, coAAPL, optAAPL, optionsJson, macroJson, moexJson } from "./mocks.mjs";
 
 installMocks();
 const worker = (await import("../worker/src/index.js")).default;
 const env = { TELEGRAM_BOT_TOKEN: TOKEN, OWNER_ID: OWNER, FINNHUB_API_KEY: "FHKEY", TERMINAL_PASSWORD: "pw", PAGES_URL: PAGES, SUBS: new KV() };
 const ctx = { waitUntil() {} };
-const FX = { "data.json": dataJson, "stocks.json": stocksJson, "rates.json": ratesJson };
+const FX = { "data.json": dataJson, "stocks.json": stocksJson, "rates.json": ratesJson, "co/AAPL.json": coAAPL, "opt/AAPL.json": optAAPL,
+  "options.json": optionsJson, "macro.json": macroJson, "moex.json": moexJson };
 
 const port = Number(process.argv[2] || 8787);
 http.createServer(async (req, res) => {

@@ -1,8 +1,8 @@
 // Bot commands: companies, quotes, charts, watchlist, portfolio, alerts, screener, market map, rates.
 // Every reply is built in the chat's language: chat.lang is set by index.js ("en" by default, "ru" after /lang ru).
 import { arrow, esc, pageJSON, pagesUrl, send, tg } from "./lib.js";
-import { L, sectorName } from "./i18n.js";
-import { chartImage, getCompany, getHistory, getQuotes, normRange, parseSymbol } from "./market.js";
+import { L, getLang, sectorName } from "./i18n.js";
+import { chartImage, fh, getCompany, getHistory, getQuotes, normRange, parseSymbol } from "./market.js";
 import {
   MAX_WATCH, addAlert, alertText, deleteAlert, getUser, parseAlert, portfolioView, saveUser, userAlerts,
 } from "./user.js";
@@ -58,7 +58,9 @@ export async function cmdQuote(env, chat, args) {
 function companyButtons(env, chat, s) {
   const X = L(chat.lang);
   return kb([
-    [{ text: X.t("btn_fa"), callback_data: "fa:" + s }, { text: X.t("btn_ern"), callback_data: "ern:" + s }, { text: X.t("btn_anr"), callback_data: "anr:" + s }],
+    [{ text: X.t("btn_fa"), callback_data: "fa:" + s }, { text: X.t("btn_ern"), callback_data: "ern:" + s }, { text: X.t("btn_ee"), callback_data: "ee:" + s }],
+    [{ text: X.t("btn_anr"), callback_data: "anr:" + s }, { text: X.t("btn_hds"), callback_data: "hds:" + s }, { text: X.t("btn_dvd"), callback_data: "dvd:" + s }],
+    [{ text: X.t("btn_omon"), callback_data: "omon:" + s }, { text: X.t("btn_rv"), callback_data: "rv:" + s }, { text: X.t("btn_cf"), callback_data: "cf:" + s }],
     [{ text: X.t("btn_cn"), callback_data: "cn:" + s }, { text: X.t("btn_chart1y"), callback_data: "chart:" + s + ":1y" }, { text: X.t("btn_add_watch"), callback_data: "w+:" + s }],
     [terminalBtn(env, chat, s + " DES")],
   ]);
@@ -67,8 +69,9 @@ function companyButtons(env, chat, s) {
 export async function cmdDes(env, chat, args) {
   const X = L(chat.lang);
   if (!args[0]) return send(env, chat, X.t("need_symbol", "des"));
-  const c = await getCompany(env, args[0], ["des"], X.lang);
+  const c = await getCompany(env, args[0], ["des", "co"], X.lang);
   const p = c.profile || {}, q = c.quote || {}, m = c.m || {};
+  const co = c.co || {}, tg_ = co.targets || {};
   if (c.kind === "moex") {
     const t = [`🏢 <b>${esc(p.name)}</b> · ${esc(c.s)}`, esc(X.t("des_moex_line", p.type || "", p.isin || "—")),
       q.px != null ? "\n" + X.t("des_price", X.price(q.px) + " ₽", X.pct(q.ch)) : "", p.lot ? X.t("des_lot", p.lot) : "",
@@ -78,9 +81,12 @@ export async function cmdDes(env, chat, args) {
   }
   const r = rec(c.anr, X);
   const when = (h) => (h === "bmo" ? X.t("bmo") : h === "amc" ? X.t("amc") : "");
+  const about = shortText(((co.wiki || {})[X.lang] || {}).x || (X.ru ? "" : (co.profile || {}).summary) || "", 420);
   const lines = [
     `🏢 <b>${esc(p.name || c.s)}</b> · ${esc(c.s)}`,
     [p.ind, p.exch && p.exch.replace(/ - .*$/, ""), p.country].filter(Boolean).map(esc).join(" · "),
+    about ? "<i>" + esc(about) + "</i>" : "",
+    (co.profile || {}).employees ? X.t("des_emp", X.fmt(co.profile.employees, 0)) : "",
     "",
     q.px != null ? X.t("des_price", "$" + X.price(q.px), X.pct(q.ch)) : "",
     m.h52 ? X.t("des_52w", "$" + X.price(m.l52), "$" + X.price(m.h52), X.pct(m.rytd), X.pct(m.r52)) : "",
@@ -90,6 +96,7 @@ export async function cmdDes(env, chat, args) {
     X.t("des_margins", X.fmt(m.gm, 1), X.fmt(m.om, 1), X.fmt(m.nm, 1), X.fmt(m.roe, 0)),
     X.t("des_growth", X.pct(m.revg, 1), X.pct(m.epsg, 1)),
     r ? X.t("des_anr", r.n, r.word, r.buy, r.hold, r.sell) : "",
+    tg_.mean && q.px ? X.t("des_target", X.fmt(tg_.mean, 2), "$" + X.fmt(tg_.low, 0), "$" + X.fmt(tg_.high, 0), X.pct((tg_.mean / q.px - 1) * 100, 1)) : "",
     c.next ? X.t("des_next", X.dmy(c.next.date), when(c.next.hour), c.next.eps_e != null ? X.t("eps_fcst", X.fmt(c.next.eps_e, 2)) : "") : "",
     c.peers && c.peers.length ? X.t("des_peers", c.peers.slice(0, 6).map(esc).join(", ")) : "",
     p.web ? `<a href="${esc(p.web)}">${esc(p.web.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, ""))}</a>` : "",
@@ -143,9 +150,10 @@ export async function cmdErn(env, chat, args) {
 export async function cmdAnr(env, chat, args) {
   const X = L(chat.lang);
   if (!args[0]) return send(env, chat, X.t("need_symbol", "anr"));
-  const c = await getCompany(env, args[0], ["anr"], X.lang);
+  const c = await getCompany(env, args[0], ["anr", "co"], X.lang);
   const r = rec(c.anr, X);
-  if (!r) return send(env, chat, X.t("anr_none", esc(c.s)));
+  const extra = anrExtra(c.co, X);
+  if (!r) return send(env, chat, extra ? `🎯 <b>${esc(c.s)}</b>\n` + extra : X.t("anr_none", esc(c.s)));
   const bar = (n) => "█".repeat(Math.round(n / r.n * 20));
   const x = c.anr[0];
   const names = X.t("anr_rows");
@@ -156,6 +164,7 @@ export async function cmdAnr(env, chat, args) {
     const old = c.anr[c.anr.length - 1], on = old.sb + old.b + old.h + old.s + old.ss;
     if (on) out += "\n\n" + X.t("anr_old", old.period.slice(0, 7), old.sb + old.b, old.h, old.s + old.ss);
   }
+  out += extra ? "\n" + extra : "";
   return send(env, chat, out, kb([[terminalBtn(env, chat, c.s + " ANR", X.t("btn_terminal_fn", "ANR"))]]));
 }
 
@@ -175,11 +184,266 @@ export async function cmdCn(env, chat, args) {
 export async function cmdHds(env, chat, args) {
   const X = L(chat.lang);
   if (!args[0]) return send(env, chat, X.t("need_symbol", "hds"));
-  const c = await getCompany(env, args[0], ["hds"], X.lang);
-  const rows = (c.ins || []).slice(0, 10).map((t) => X.t("hds_row", t.code === "P", X.fmt(Math.abs(t.ch), 0),
+  const c = await getCompany(env, args[0], ["hds", "co"], X.lang);
+  const rows = (c.ins || []).slice(0, 8).map((t) => X.t("hds_row", t.code === "P", X.fmt(Math.abs(t.ch), 0),
     t.px ? X.fmt(t.px, 2) : "", t.px ? X.money(Math.abs(t.ch) * t.px) : "") + `\n<i>${esc(t.name)} · ${X.dmy(t.date)}</i>`);
-  return send(env, chat, X.t("hds_head", esc(c.s)) + (rows.join("\n\n") || X.t("hds_none")),
-    kb([[terminalBtn(env, chat, c.s + " HDS", X.t("btn_terminal_fn", "HDS"))]]));
+  const h = (c.co || {}).holders;
+  const owner = (o) => X.t("hds_owner", esc(o.n), X.fmt(o.pct, 2), X.money(o.val), o.chg != null ? X.pct(o.chg, 1) : "");
+  let out;
+  if (h) {
+    out = X.t("hds_head2", esc(c.s)) + X.t("hds_break", X.fmt(h.ins, 1), X.fmt(h.inst, 1), h.inst_n ? X.fmt(h.inst_n, 0) : "") +
+      ((h.top || []).length ? X.t("hds_top") + h.top.slice(0, 6).map(owner).join("\n") : "") +
+      ((h.funds || []).length ? X.t("hds_funds") + h.funds.slice(0, 4).map(owner).join("\n") : "") +
+      X.t("hds_trades") + (h.net6m ? X.t("hds_net", X.fmt(h.net6m.buy_n, 0), X.fmt(h.net6m.sell_n, 0)) + "\n\n" : "") +
+      (rows.join("\n\n") || X.t("hds_none"));
+  } else out = X.t("hds_head", esc(c.s)) + (rows.join("\n\n") || X.t("hds_none"));
+  return send(env, chat, out, kb([[{ text: X.t("btn_si"), callback_data: "si:" + c.s }, terminalBtn(env, chat, c.s + " HDS", X.t("btn_terminal_fn", "HDS"))]]));
+}
+
+function shortText(t, n) {
+  t = String(t || "").replace(/\s+/g, " ").trim();
+  if (t.length <= n) return t;
+  const cut = t.slice(0, n);
+  const dot = cut.lastIndexOf(". ");
+  return dot > n * 0.5 ? cut.slice(0, dot + 1) : cut.replace(/\s+\S*$/, "") + "…";
+}
+
+function anrExtra(co, X) {
+  if (!co) return "";
+  const t = co.targets || {};
+  let out = "";
+  if (t.mean && t.px) out += X.t("anr_targets", X.fmt(t.px, 2), X.fmt(t.mean, 2), X.fmt(t.median, 2), X.fmt(t.low, 2), X.fmt(t.high, 2),
+    X.fmt(t.n, 0), X.pct((t.mean / t.px - 1) * 100, 1)) + "\n";
+  const acts = X.t("anr_act");
+  const rows = (co.ratings || []).slice(0, 8).map((r) => `${X.dm(r.d)} <b>${esc(r.f)}</b>: ${acts[r.a] || "▪️"} ${esc(r.to || "")}` +
+    (r.from && r.from !== r.to ? ` ← ${esc(r.from)}` : "") + (r.pt ? X.t("anr_pt", X.fmt(r.pt, 0), r.pt0 && r.pt0 !== r.pt ? X.fmt(r.pt0, 0) : "") : ""));
+  if (rows.length) out += X.t("anr_changes") + rows.join("\n");
+  return out;
+}
+
+// the deep file is only for the ~100 largest US companies: the others get a polite note
+async function deepOr(env, chat, raw, parts, need) {
+  const X = L(chat.lang);
+  const c = await getCompany(env, raw, parts, X.lang);
+  if (c.kind === "moex") return { c, note: X.t("no_deep", esc(c.s)) };
+  if (need && !(c.co && need(c.co))) return { c, note: X.t("no_deep", esc(c.s)) };
+  return { c };
+}
+
+const fnBtn = (env, chat, s, fn) => kb([[terminalBtn(env, chat, s + " " + fn, L(chat.lang).t("btn_terminal_fn", fn))]]);
+
+export async function cmdEe(env, chat, args) {
+  const X = L(chat.lang);
+  if (!args[0]) return send(env, chat, X.t("need_symbol", "ee"));
+  const { c, note } = await deepOr(env, chat, args[0], ["co"], (co) => co.est && co.est.length);
+  if (note) return send(env, chat, note);
+  const co = c.co, per = X.t("ee_periods");
+  const n = Math.max(0, ...co.est.map((e) => (e.eps && e.eps.n) || 0));
+  const blocks = co.est.map((e) => {
+    const eps = e.eps || {}, rev = e.rev || {}, tr = e.trend || {};
+    return X.t("ee_row", per[e.p] || e.p, X.dmy(e.end), X.fmt(eps.avg, 2), X.fmt(eps.low, 2), X.fmt(eps.high, 2), X.pct(eps.g, 1),
+      X.money(rev.avg), X.pct(rev.g, 1)) + "\n" + X.t("ee_rev", X.fmt(e.up30 || 0, 0), X.fmt(e.dn30 || 0, 0), tr.d90 != null ? X.fmt(tr.d90, 2) : "");
+  });
+  let out = X.t("ee_head", esc(c.s), n) + "\n" + blocks.join("\n\n");
+  if (co.next && co.next.date) out += "\n" + X.t("ee_next", X.dmy(co.next.date), co.next.estimated);
+  const hist = (co.hist || []).slice(0, 4);
+  if (hist.length) out += "\n" + X.t("ee_hist") + hist.map((h) => X.t("ee_hist_row", X.dmy(h.q), X.fmt(h.act, 2), X.fmt(h.est, 2), X.pct(h.sp, 1))).join("\n");
+  return send(env, chat, out, fnBtn(env, chat, c.s, "EE"));
+}
+
+export async function cmdDvd(env, chat, args) {
+  const X = L(chat.lang);
+  if (!args[0]) return send(env, chat, X.t("need_symbol", "dvd"));
+  const c = await getCompany(env, args[0], ["dvd"], X.lang);
+  if (c.kind === "moex") return send(env, chat, X.t("dvd_moex"));
+  const d = (c.co && c.co.div) || {};
+  const hist = d.hist || (c.dvd && c.dvd.hist) || [];
+  const splits = d.splits || (c.dvd && c.dvd.splits) || [];
+  let out = X.t("dvd_head", esc(c.s));
+  if (!hist.length) out += X.t("dvd_none", esc(c.s));
+  else {
+    if (d.rate) out += X.t("dvd_now", X.fmt(d.rate, 2), X.fmt(d.yield, 2), d.payout != null ? X.fmt(d.payout, 0) : "") + "\n";
+    if (d.ex) out += X.t("dvd_dates", X.dmy(d.ex), d.pay ? X.dmy(d.pay) : "") + "\n";
+    const years = {};
+    for (const [day, v] of hist) years[day.slice(0, 4)] = (years[day.slice(0, 4)] || 0) + v;
+    const ys = Object.keys(years).sort().reverse().slice(0, 6);
+    out += X.t("dvd_years") + ys.map((y, i) => `${y}: $${X.fmt(years[y], 2)}` + (ys[i + 1] && i > 0 ? ` (${X.pct((years[y] / years[ys[i + 1]] - 1) * 100, 1)})` : "")).join("\n");
+    out += "\n" + X.t("dvd_last") + hist.slice(0, 6).map(([day, v]) => `${X.dmy(day)}: $${X.fmt(v, 4).replace(/0+$/, "").replace(/[.,]$/, "")}`).join("\n");
+  }
+  if (splits.length) out += "\n" + X.t("dvd_splits", splits.slice(0, 5).map(([day, r]) => `${r} (${X.dmy(day)})`).join(", "));
+  return send(env, chat, out, fnBtn(env, chat, c.s, "DVD"));
+}
+
+export async function cmdSi(env, chat, args) {
+  const X = L(chat.lang);
+  if (!args[0]) return send(env, chat, X.t("need_symbol", "si"));
+  const { c, note } = await deepOr(env, chat, args[0], ["co"], (co) => co.short);
+  if (note) return send(env, chat, note);
+  const sh = c.co.short, rows = sh.rows || [];
+  if (!sh.sh && !rows.length) return send(env, chat, X.t("si_none", esc(c.s)));
+  const last = rows[0] || { d: sh.d, sh: sh.sh, days: sh.ratio };
+  let out = X.t("si_head", esc(c.s)) + X.t("si_now", X.fmt(last.sh, 0), X.dmy(last.d), sh.pct_float != null ? X.fmt(sh.pct_float, 2) : "", X.fmt(last.days ?? sh.ratio, 1));
+  const prev = rows[1] || (sh.prior ? { d: sh.prior_d, sh: sh.prior } : null);
+  if (prev && prev.sh) out += "\n" + X.t("si_prior", X.fmt(prev.sh, 0), X.dmy(prev.d), X.pct((last.sh / prev.sh - 1) * 100, 1));
+  if (rows.length > 2) out += "\n\n<code>" + rows.slice(0, 10).map((r) => X.t("si_row", X.dmy(r.d), X.fmt(r.sh, 0).padStart(13), X.fmt(r.days, 1))).join("\n") + "</code>";
+  return send(env, chat, out, fnBtn(env, chat, c.s, "HDS"));
+}
+
+export async function cmdCf(env, chat, args) {
+  const X = L(chat.lang);
+  if (!args[0]) return send(env, chat, X.t("need_symbol", "cf"));
+  const c = await getCompany(env, args[0], ["cf"], X.lang);
+  if (c.kind === "moex") return send(env, chat, X.t("no_deep", esc(c.s)));
+  const list = ((c.co && c.co.filings) || c.cf || []).slice(0, 12);
+  if (!list.length) return send(env, chat, X.t("cf_none", esc(c.s)));
+  const types = X.t("cf_types");
+  const out = list.map((f) => `${X.dmy(f.d)} · <b>${esc(f.type)}</b>${types[f.type] ? " — " + types[f.type] : f.title && !X.ru ? " — " + esc(f.title) : ""}` +
+    (/^https:\/\//.test(f.url || "") ? ` · <a href="${esc(f.url)}">${X.t("read")}</a>` : ""));
+  return send(env, chat, X.t("cf_head", esc(c.s)) + out.join("\n"), fnBtn(env, chat, c.s, "CF"));
+}
+
+export async function cmdMgmt(env, chat, args) {
+  const X = L(chat.lang);
+  if (!args[0]) return send(env, chat, X.t("need_symbol", "mgmt"));
+  const { c, note } = await deepOr(env, chat, args[0], ["co"], (co) => co.profile && co.profile.officers);
+  if (note) return send(env, chat, note);
+  const rows = c.co.profile.officers.slice(0, 10).map((o) => X.t("mgmt_row", esc(o.n), esc(o.t || ""), o.age || "", o.pay ? X.money(o.pay) : ""));
+  return send(env, chat, X.t("mgmt_head", esc(c.s)) + rows.join("\n\n"), fnBtn(env, chat, c.s, "MGMT"));
+}
+
+export async function cmdRv(env, chat, args) {
+  const X = L(chat.lang);
+  if (!args[0]) return send(env, chat, X.t("need_symbol", "rv"));
+  const c = await getCompany(env, args[0], ["rv"], X.lang);
+  const rv = c.rv;
+  if (!rv || !rv.in_list || rv.rows.length < 2) return send(env, chat, X.t("rv_none", esc(c.s)));
+  const cell = (v, d, w) => (v == null ? "—" : X.fmt(v, d)).padStart(w);
+  const line = (r, name) => (name || r.s).padEnd(7).slice(0, 7) + cell(r.pe, 1, 6) + cell(r.ps, 1, 6) + cell(r.revg, 0, 6) + cell(r.nm, 0, 6) + cell(r.r52, 0, 6);
+  const table = [X.t("rv_cols"), ...rv.rows.map((r) => line(r)), line(rv.median, X.t("rv_median"))].join("\n");
+  const fromPeers = rv.rows.slice(1).every((r) => r.sec === rv.rows[0].sec) ? "rv_src_sector" : "rv_src_peers";
+  return send(env, chat, X.t("rv_head", esc(c.s), X.t(fromPeers)) + "<code>" + esc(table) + "</code>", fnBtn(env, chat, c.s, "RV"));
+}
+
+export async function cmdOmon(env, chat, args) {
+  const X = L(chat.lang);
+  if (!args[0]) return send(env, chat, X.t("need_symbol", "omon"));
+  const c = await getCompany(env, args[0], ["opt"], X.lang);
+  const o = c.opt;
+  if (!o) return send(env, chat, X.t("omon_none", esc(c.s)));
+  let out = X.t("omon_head", esc(c.s), X.price(o.px), X.fmt(o.iv30, 1), X.pct(o.iv30_chg, 2).replace("%", ""));
+  if (o.lite) return send(env, chat, out + X.t("omon_lite"));
+  out += "\n" + X.t("omon_pcr", X.fmt(o.pcr_vol, 2), X.fmt(o.pcr_oi, 2)) + "\n" + X.t("omon_exp_head") +
+    (o.exp || []).slice(0, 8).map((e) => X.t("omon_exp", X.dm(e.d), e.dte, X.fmt(e.iv, 1), X.fmt(e.move, 2), X.fmt(e.move_pct, 1), "$" + X.fmt(e.pain, 0))).join("\n");
+  if ((o.top_oi || []).length) out += "\n" + X.t("omon_top") + o.top_oi.slice(0, 6).map(([d, k, cp, oi]) => `${X.dm(d)} $${X.fmt(k, k % 1 ? 1 : 0)} ${cp === "C" ? "call" : "put"}: ${X.fmt(oi, 0)}`).join("\n");
+  return send(env, chat, out, fnBtn(env, chat, c.s, "OMON"));
+}
+
+// ---------------------------------------------------------------------------
+// World economy, IPOs, Moscow Exchange
+// ---------------------------------------------------------------------------
+const MACRO_ALIAS = { US: "USA", UK: "GBR", GB: "GBR", RU: "RUS", CN: "CHN", DE: "DEU", JP: "JPN", IN: "IND", FR: "FRA", IT: "ITA",
+  CA: "CAN", BR: "BRA", KR: "KOR", AU: "AUS", ES: "ESP", MX: "MEX", ID: "IDN", TR: "TUR", SA: "SAU", CH: "CHE", ZA: "ZAF",
+  KZ: "KAZ", EU: "EURO", EA: "EURO", EUROZONE: "EURO", WORLD: "WEOWORLD", "МИР": "WEOWORLD", "РФ": "RUS" };
+
+export async function cmdMacro(env, chat, args) {
+  const X = L(chat.lang);
+  const d = await pageJSON(env, "macro.json", 3600).catch(() => null);
+  if (!d || !(d.rows || []).length) return send(env, chat, X.t("macro_none"));
+  const name = (r) => (X.ru ? r.ru : r.en);
+  const y = new Date().getUTCFullYear();
+  const iy = d.years.indexOf(y), iy2 = d.years.indexOf(y + 1);
+  const v = (r, ind, i) => { const x = ((r.v || {})[ind] || [])[i]; return x == null ? "—" : X.fmt(x, 1); };
+  const q = args.join(" ").trim().toUpperCase();
+  if (q) {
+    const code = MACRO_ALIAS[q] || q;
+    const r = d.rows.find((x) => x.c === code || x.en.toUpperCase() === q || x.ru.toUpperCase() === q || x.en.toUpperCase().startsWith(q) || x.ru.toUpperCase().startsWith(q));
+    if (r) {
+      const yrs = d.years.slice(-5);
+      const head = "<code>" + "".padEnd(17) + yrs.map((x) => String(x).padStart(7)).join("") + "\n";
+      const lines = Object.keys(d.ind).filter((k) => r.v[k]).map((k) => {
+        const lab = (X.t("macro_ind")[k] || d.ind[k].en).padEnd(17);
+        return lab + yrs.map((yy) => { const x = r.v[k][d.years.indexOf(yy)]; return (x == null ? "—" : k === "NGDPD" ? X.fmt(x, 0) : X.fmt(x, 1)).padStart(7); }).join("");
+      });
+      return send(env, chat, X.t("macro_one", esc(name(r))) + head + esc(lines.join("\n")) + "</code>", kb([[terminalBtn(env, chat, "ECST " + r.c, X.t("btn_terminal_fn", "ECST"))]]));
+    }
+  }
+  const rows = d.rows.map((r) => X.t("macro_row", esc(name(r)), v(r, "NGDP_RPCH", iy), v(r, "NGDP_RPCH", iy2), v(r, "PCPIPCH", iy), v(r, "PCPIPCH", iy2)));
+  return send(env, chat, X.t("macro_head", y, y + 1) + "\n" + rows.join("\n") + "\n" + X.t("macro_hint"), kb([[terminalBtn(env, chat, "ECST", X.t("btn_terminal_fn", "ECST"))]]));
+}
+
+export async function cmdIpo(env, chat) {
+  const X = L(chat.lang);
+  const from = new Date().toISOString().slice(0, 10), to = new Date(Date.now() + 30 * 864e5).toISOString().slice(0, 10);
+  const d = await fh(env, `/calendar/ipo?from=${from}&to=${to}`, 3 * 3600);
+  const st = X.t("ipo_status");
+  const list = ((d && d.ipoCalendar) || []).filter((x) => x.date >= from).sort((a, b) => (a.date < b.date ? -1 : 1)).slice(0, 20);
+  if (!list.length) return send(env, chat, X.t("ipo_none"));
+  return send(env, chat, X.t("ipo_head") + "\n" + list.map((x) => X.t("ipo_row", X.dm(x.date), esc(x.symbol || ""), esc(x.name || ""), esc(x.price || ""),
+    x.numberOfShares ? X.fmt(x.numberOfShares, 0) : "", x.totalSharesValue ? X.money(x.totalSharesValue) : "", st[x.status] || esc(x.status || ""))).join("\n\n"),
+  kb([[terminalBtn(env, chat, "IPO", X.t("btn_terminal_fn", "IPO"))]]));
+}
+
+export function moexSectors(rows) {
+  const by = {};
+  for (const r of rows) {
+    if (r.ch == null || !r.cap) continue;
+    const k = r.sec || "";
+    const s = (by[k] = by[k] || { sec: k, cap: 0, w: 0, n: 0 });
+    s.cap += r.cap; s.w += r.cap * r.ch; s.n++;
+  }
+  return Object.values(by).map((s) => ({ sec: s.sec, n: s.n, cap: s.cap, ch: s.w / s.cap })).sort((a, b) => b.ch - a.ch);
+}
+
+export async function cmdMoex(env, chat) {
+  const X = L(chat.lang);
+  const d = await pageJSON(env, "moex.json", 120).catch(() => null);
+  const rows = (d && d.rows) || [];
+  if (!rows.length) return send(env, chat, X.t("moex_none"));
+  const bar = (c) => (c >= 0 ? "🟩" : "🟥").repeat(Math.min(5, Math.max(1, Math.round(Math.abs(c) / 0.5))));
+  const idx = rows.filter((r) => r.w != null && r.ch != null);
+  const top = [...idx].sort((a, b) => b.ch - a.ch).slice(0, 5), bot = [...idx].sort((a, b) => a.ch - b.ch).slice(0, 5);
+  const nm = (r) => esc(X.ru ? r.n : r.en);
+  const out = X.t("moex_head", d.time ? d.time.slice(0, 5) : "") + "\n" +
+    moexSectors(rows).map((s) => `${bar(s.ch)} ${esc(s.sec ? sectorName(s.sec, X.lang) : X.t("other_sector"))} ${X.pct(s.ch)}`).join("\n") +
+    "\n\n" + X.t("map_up") + top.map((r) => `${nm(r)} ${X.pct(r.ch, 1)}`).join(", ") +
+    "\n" + X.t("map_down") + bot.map((r) => `${nm(r)} ${X.pct(r.ch, 1)}`).join(", ");
+  return send(env, chat, out, kb([[terminalBtn(env, chat, "IMAP RU", X.t("btn_t_map"))]]));
+}
+
+// ---------------------------------------------------------------------------
+// Morning note: companies from your watchlist that report today or tomorrow (09:00 MSK, once a day)
+// ---------------------------------------------------------------------------
+export async function watchReminders(env, now = new Date()) {
+  if (!env.SUBS || now.getUTCHours() !== 6) return { skipped: true };
+  const day = now.toISOString().slice(0, 10);
+  if (await env.SUBS.get("daily:" + day)) return { done: true };
+  await env.SUBS.put("daily:" + day, "1", { expirationTtl: 3 * 86400 });   // first: never twice a day, even if sending fails
+  const st = await pageJSON(env, "stocks.json", 300);
+  const tomorrow = new Date(now.getTime() + 864e5).toISOString().slice(0, 10);
+  const by = {};
+  for (const e of (st && st.earnings) || []) if (e.d === day || e.d === tomorrow) (by[e.s] = by[e.s] || []).push(e);
+  if (!Object.keys(by).length) return { sent: 0 };
+  let sent = 0, cursor;
+  do {
+    const page = await env.SUBS.list({ prefix: "p:", cursor });
+    for (const k of page.keys) {
+      if (sent >= 40) return { sent, capped: true };   // shortcut: ≤ 40 messages a run (Workers' subrequest limit), page by cursor when users grow
+      const id = k.name.slice(2);
+      const raw = await env.SUBS.get(k.name);
+      let w = [];
+      try { w = (JSON.parse(raw || "{}").w) || []; } catch { w = []; }
+      const hits = w.flatMap((s) => by[s] || []);
+      if (!hits.length) continue;
+      const X = L(await getLang(env, id));
+      const when = (e) => (e.d === day ? X.t("rem_today") : X.t("rem_tomorrow")) + (e.h === "bmo" ? X.t("bmo") : e.h === "amc" ? X.t("amc") : "");
+      const text = X.t("rem_head") + "\n" + hits.map((e) => X.t("rem_earn", esc(e.s), esc(e.n || ""), when(e), e.eps_e != null ? X.t("eps_fcst", X.fmt(e.eps_e, 2)) : "")).join("\n");
+      const chat = { id, type: "private", lang: X.lang };
+      await send(env, chat, text, kb([[{ text: X.t("btn_ee"), callback_data: "ee:" + hits[0].s }, terminalBtn(env, chat, "W", X.t("btn_t_watch"))]]));
+      sent++;
+    }
+    cursor = page.list_complete ? null : page.cursor;
+  } while (cursor);
+  return { sent };
 }
 
 // ---------------------------------------------------------------------------
@@ -196,7 +460,7 @@ export async function cmdChart(env, chat, args) {
   const name = (X.ru && h.name_ru) || h.name;
   const caption = X.t("chart_cap", esc(h.s), esc(name && name !== h.s ? name : ""), ranges[range], X.pct(ch), X.price(h.c[n - 1]),
     X.price(Math.min(...h.l.filter((x) => x != null))), X.price(Math.max(...h.h.filter((x) => x != null))));
-  const buttons = kb([["1m", "6m", "1y", "5y"].map((r) => ({ text: r === range ? "• " + r + " •" : r, callback_data: "chart:" + h.s + ":" + r })),
+  const buttons = kb([["1d", "1m", "6m", "1y", "5y"].map((r) => ({ text: r === range ? "• " + r + " •" : r, callback_data: "chart:" + h.s + ":" + r })),
     [terminalBtn(env, chat, h.s + " GP", X.t("btn_open_terminal"))]]);
   try {
     const url = await chartImage(h, `${h.s} · ${ranges[range]} · ${X.pct(ch)}`, X.lang);
@@ -445,7 +709,17 @@ export function newCommand(cmd, args, rest) {
     case "q": case "quote": case "quotes": case "кот": return (env, chat) => cmdQuote(env, chat, args);
     case "des": case "d": case "company": case "компания": return (env, chat) => cmdDes(env, chat, args);
     case "fa": case "financials": return (env, chat) => cmdFa(env, chat, args);
-    case "ern": case "ee": return (env, chat) => cmdErn(env, chat, args);
+    case "ern": return (env, chat) => cmdErn(env, chat, args);
+    case "ee": case "estimates": case "прогнозы": return (env, chat) => cmdEe(env, chat, args);
+    case "dvd": case "dividends": case "дивиденды": return (env, chat) => cmdDvd(env, chat, args);
+    case "si": case "short": case "шорты": return (env, chat) => cmdSi(env, chat, args);
+    case "cf": case "filings": return (env, chat) => cmdCf(env, chat, args);
+    case "mgmt": case "management": case "руководство": return (env, chat) => cmdMgmt(env, chat, args);
+    case "rv": case "peers": case "конкуренты": return (env, chat) => cmdRv(env, chat, args);
+    case "omon": case "opt": case "options": case "опционы": return (env, chat) => cmdOmon(env, chat, args);
+    case "macro": case "ecst": case "ecfc": case "макро": return (env, chat) => cmdMacro(env, chat, args);
+    case "ipo": return (env, chat) => cmdIpo(env, chat);
+    case "moex": case "мосбиржа": return (env, chat) => cmdMoex(env, chat);
     case "earnings": case "отчёты": case "отчеты": return (env, chat) => cmdEarnings(env, chat);
     case "anr": case "analysts": return (env, chat) => cmdAnr(env, chat, args);
     case "cn": return (env, chat) => cmdCn(env, chat, args);
@@ -478,6 +752,14 @@ export async function newCallback(data, chat, env) {
     case "ern": return cmdErn(env, chat, [a]);
     case "anr": return cmdAnr(env, chat, [a]);
     case "cn": return cmdCn(env, chat, [a]);
+    case "ee": return cmdEe(env, chat, [a]);
+    case "hds": return cmdHds(env, chat, [a]);
+    case "dvd": return cmdDvd(env, chat, [a]);
+    case "si": return cmdSi(env, chat, [a]);
+    case "cf": return cmdCf(env, chat, [a]);
+    case "rv": return cmdRv(env, chat, [a]);
+    case "omon": return cmdOmon(env, chat, [a]);
+    case "mgmt": return cmdMgmt(env, chat, [a]);
     case "chart": return cmdChart(env, chat, [a, b]);
     case "w+": return cmdWatch(env, chat, [a]);
     case "watch": return cmdWatch(env, chat, []);
@@ -495,5 +777,5 @@ export async function newCallback(data, chat, env) {
 
 // callback_data must be ≤ 64 bytes: tickers are short
 export function isNewCallback(data) {
-  return /^(fa|ern|anr|cn|chart|w\+|watch|port|adel|eqs)(:|$)/.test(data || "");
+  return /^(fa|ern|anr|cn|ee|hds|dvd|si|cf|rv|omon|mgmt|chart|w\+|watch|port|adel|eqs)(:|$)/.test(data || "");
 }

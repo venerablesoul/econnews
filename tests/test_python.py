@@ -4,7 +4,7 @@ import os
 import sys
 import tempfile
 import unittest
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from unittest import mock
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -464,6 +464,230 @@ class NewsBotRunBothLanguages(unittest.TestCase):
         self.assertEqual(news_bot.ai_sum(old, "ru"), "Старая заметка")
         self.assertEqual(news_bot.ai_sum(new, "en"), "New note")
         self.assertEqual(news_bot.ai_sum(new, "ru"), "Новая заметка")
+
+
+class CompanyData(unittest.TestCase):
+    """company.py: Yahoo quoteSummary, dividend events, Nasdaq short interest -> docs/co/<T>.json"""
+
+    def setUp(self):
+        import company
+        self.co = company
+        self.aapl = json.loads(fx("yahoo_qs_AAPL.json"))
+
+    def test_summary_sections(self):
+        s = self.co.clean(self.co.parse_summary(self.aapl))
+        self.assertEqual(s["profile"]["name"], "Apple Inc.")
+        self.assertEqual(s["profile"]["officers"][0]["n"], "Mr. Timothy D. Cook")
+        self.assertEqual(s["stats"]["gm"], 48.65)            # 0.4865 -> percent
+        self.assertIsInstance(s["targets"]["n"], int)
+        self.assertEqual(s["targets"]["key"], "buy")
+        self.assertEqual(s["ratings"][0]["d"], "2026-10-12")  # newest first
+        self.assertEqual([e["p"] for e in s["est"]], ["0q", "+1q", "0y", "+1y"])
+        self.assertEqual(s["hist"][0]["q"], "2026-06-30")
+        self.assertEqual(s["next"]["date"], "2026-11-02")
+        self.assertEqual(s["holders"]["top"][0]["n"], "Blackrock Inc.")
+        self.assertEqual(s["div"]["split"], "4:1")
+        self.assertEqual(s["short"]["d"], "2026-09-30")
+        self.assertTrue(s["filings"][0]["url"].startswith("https://"))
+
+    def test_company_without_dividends(self):
+        s = self.co.clean(self.co.parse_summary(json.loads(fx("yahoo_qs_TSLA.json"))))
+        self.assertEqual(s["profile"]["name"], "Tesla, Inc.")
+        self.assertNotIn("rate", s.get("div", {}))
+        self.assertTrue(s["est"] and s["holders"]["top"])
+
+    def test_empty_values_dropped(self):
+        self.assertEqual(self.co.clean({"a": None, "b": {}, "c": [], "d": "", "e": 0, "f": {"g": None}}), {"e": 0})
+        self.assertIsNone(self.co.num({}))
+        self.assertIsNone(self.co.num({"raw": float("nan")}))
+        self.assertEqual(self.co.day({"raw": 1767225600}), "2026-01-01")
+
+    def test_dividend_events_and_short_history(self):
+        divs, splits = self.co.parse_events(json.loads(fx("yahoo_chart_events.json")))
+        self.assertEqual(divs[0], ["2026-08-10", 0.27])
+        self.assertTrue(all(a[0] > b[0] for a, b in zip(divs, divs[1:])))
+        self.assertEqual(splits[0], ["2020-08-31", "4:1"])
+        rows = self.co.parse_nasdaq_short(json.loads(fx("nasdaq_short.json")))
+        self.assertEqual(rows[0], {"d": "2026-09-30", "sh": 120763539, "adv": 39858260, "days": 3.03})
+
+    def test_wikipedia_company_check(self):
+        self.assertTrue(self.co.is_company_page({"description": "American multinational technology company"}))
+        self.assertFalse(self.co.is_company_page({"description": "Fruit of the apple tree"}))
+        self.assertFalse(self.co.is_company_page({"type": "disambiguation", "description": "company"}))
+
+    def test_build_refreshes_oldest_and_keeps_old_parts_on_errors(self):
+        co, aapl = self.co, self.aapl
+        events = json.loads(fx("yahoo_chart_events.json"))
+        short = json.loads(fx("nasdaq_short.json"))
+
+        class FakeSession:
+            calls = []
+
+            def quote_summary(self, sym, modules=None):
+                self.calls.append(sym)
+                if sym == "BRK-B":
+                    raise RuntimeError("Yahoo: no data for BRK-B")
+                return aapl
+
+            def json(self, url, ua=None, timeout=25):
+                if "events=" in url:
+                    return events
+                if "nasdaq" in url:
+                    raise OSError("blocked")
+                if "list=search" in url:
+                    return {"query": {"search": [{"title": "Apple Inc."}]}}
+                if "langlinks" in url:
+                    return {"query": {"pages": {"1": {"langlinks": [{"lang": "ru", "*": "Apple"}]}}}}
+                if "ru.wikipedia" in url:
+                    return {"title": "Apple", "extract": "Американская корпорация", "content_urls": {"desktop": {"page": "https://ru.wikipedia.org/wiki/Apple"}}}
+                return {"title": "Apple Inc.", "description": "American multinational technology company",
+                        "extract": "Apple Inc. is a technology company", "content_urls": {"desktop": {"page": "https://en.wikipedia.org/wiki/Apple_Inc."}}}
+
+        now = datetime(2026, 10, 15, 12, tzinfo=timezone.utc)
+        with tempfile.TemporaryDirectory() as d:
+            with open(os.path.join(d, "MSFT.json"), "w") as f:   # fresh: skipped
+                json.dump({"s": "MSFT", "updated": "2026-10-15T08:00:00+00:00"}, f)
+            with open(os.path.join(d, "AAPL.json"), "w") as f:   # old: refreshed, short rows kept
+                json.dump({"s": "AAPL", "updated": "2026-10-14T00:00:00+00:00", "short": {"rows": [{"d": "2026-08-29", "sh": 1}]}}, f)
+            fs = FakeSession()
+            n = co.build(now, limit=5, sleep=0, tickers=["MSFT", "AAPL", "BRK.B"], out_dir=d, session=fs)
+            self.assertEqual(n, 1)
+            self.assertEqual(fs.calls, ["BRK-B", "AAPL"])          # never-built first, MSFT is fresh
+            out = co.load(os.path.join(d, "AAPL.json"))
+            self.assertEqual(out["updated"], now.isoformat())
+            self.assertEqual(out["div"]["hist"][0], ["2026-08-10", 0.27])
+            self.assertEqual(out["short"]["rows"], [{"d": "2026-08-29", "sh": 1}])
+            self.assertEqual(out["wiki"]["ru"]["x"], "Американская корпорация")
+            self.assertFalse(os.path.exists(os.path.join(d, "BRK.B.json")))
+
+
+def cboe_payload():
+    """A tiny Cboe chain: price 100, two expiries, strikes 90/100/110 (+ one expired, one junk code)."""
+    def o(code, oi, vol, iv, bid, ask, delta):
+        return {"option": code, "open_interest": oi, "volume": vol, "iv": iv, "bid": bid, "ask": ask, "delta": delta,
+                "last_trade_price": (bid + ask) / 2}
+    opts = [o("XYZ261009C00100000", 999, 9, 0.3, 1, 2, 0.5), {"option": "junk"}]
+    for exp in ("261016", "261120"):
+        opts += [o(f"XYZ{exp}C00090000", 100, 10, 0.32, 10.5, 11.0, 0.9), o(f"XYZ{exp}P00090000", 500, 40, 0.36, 0.4, 0.5, -0.1),
+                 o(f"XYZ{exp}C00100000", 300, 50, 0.30, 2.0, 2.2, 0.5), o(f"XYZ{exp}P00100000", 300, 30, 0.34, 1.8, 2.0, -0.5),
+                 o(f"XYZ{exp}C00110000", 800, 20, 0.28, 0.3, 0.4, 0.1), o(f"XYZ{exp}P00110000", 10, 1, 0.40, 10.0, 10.6, -0.9)]
+    return {"timestamp": "2026-10-15 15:00:00", "data": {"current_price": 100.0, "price_change_percent": 1.25, "iv30": 31.5,
+                                                         "iv30_change": -0.4, "options": opts}}
+
+
+class OptionChains(unittest.TestCase):
+    def test_occ_codes(self):
+        import options
+        self.assertEqual(options.parse_occ("AAPL261016C00250000"), ("2026-10-16", "C", 250.0))
+        self.assertEqual(options.parse_occ("BRK.B261016P00482500"), ("2026-10-16", "P", 482.5))
+        self.assertIsNone(options.parse_occ("junk"))
+
+    def test_max_pain(self):
+        import options
+        # calls pay above their strike, puts below: the cheapest expiry price for writers here is 100
+        self.assertEqual(options.max_pain({90: 100, 100: 300, 110: 800}, {90: 500, 100: 300, 110: 10}), 100)
+
+    def test_snapshot(self):
+        import options
+        s = options.summarize(cboe_payload(), date(2026, 10, 15))
+        self.assertEqual([e["d"] for e in s["exp"]], ["2026-10-16", "2026-11-20"])   # the expired one is skipped
+        e = s["exp"][0]
+        self.assertEqual((e["dte"], e["atm"], e["c_vol"], e["p_vol"], e["c_oi"], e["p_oi"]), (1, 100.0, 80, 71, 1200, 810))
+        self.assertEqual(e["iv"], 32.0)
+        self.assertEqual(e["move"], 4.0)            # ATM straddle: 2.1 + 1.9
+        self.assertEqual(s["pcr_vol"], round(142 / 160, 2))
+        self.assertEqual(len(s["chains"][0]["rows"]), 3)
+        self.assertEqual(s["chains"][0]["rows"][1][:8], [100.0, 2.0, 2.2, 2.1, 30.0, 0.5, 300, 50])
+        self.assertEqual(s["top_oi"][0], ["2026-11-20", 110.0, "C", 800])
+
+    def test_build_refreshes_core_hourly_in_market_hours(self):
+        import options
+        with tempfile.TemporaryDirectory() as d:
+            got = []
+
+            def fetcher(sym):
+                got.append(sym)
+                if sym == "BAD":
+                    raise OSError("403")
+                return cboe_payload()
+
+            now = datetime(2026, 10, 15, 15, tzinfo=timezone.utc)   # Thursday, market open
+            with open(os.path.join(d, "SPY.json"), "w") as f:
+                json.dump({"updated": "2026-10-15T14:30:00+00:00"}, f)   # fresh
+            with open(os.path.join(d, "AAPL.json"), "w") as f:
+                json.dump({"updated": "2026-10-15T13:00:00+00:00"}, f)   # 2 h old core ticker: due
+            with open(os.path.join(d, "KO.json"), "w") as f:
+                json.dump({"updated": "2026-10-15T08:00:00+00:00"}, f)   # 7 h old other ticker: not due
+            summ = os.path.join(d, "options.json")
+            n = options.build(now, sleep=0, tickers=["SPY", "AAPL", "KO", "BAD"], out_dir=d, summary_path=summ, fetcher=fetcher)
+            self.assertEqual((n, sorted(got)), (1, ["AAPL", "BAD"]))
+            rows = options.load(summ)["rows"]
+            self.assertEqual(rows[0]["s"], "AAPL")
+            self.assertEqual(rows[0]["n"], "Apple")
+
+
+class MacroAndMoex(unittest.TestCase):
+    def test_imf_forecasts(self):
+        import macro
+        years = [2023, 2024, 2025, 2026, 2027, 2028]
+        countries = {c: {str(y): 2.0 + i / 10 for y in years} for i, c in enumerate(list(macro.COUNTRIES)[:12])}
+        countries["USA"]["2028"] = None
+        fetched = []
+
+        def fetcher(ind, periods):
+            fetched.append((ind, tuple(periods)))
+            if ind == "LUR":
+                raise OSError("403")
+            return {"values": {ind: countries}}
+
+        with tempfile.TemporaryDirectory() as d:
+            path = os.path.join(d, "macro.json")
+            now = datetime(2026, 10, 15, 12, tzinfo=timezone.utc)
+            self.assertEqual(macro.build(now, path=path, fetcher=fetcher), 12)
+            self.assertEqual(fetched[0], ("NGDP_RPCH", tuple(years)))
+            with open(path, encoding="utf-8") as f:
+                out = json.load(f)
+            self.assertEqual(out["years"], years)
+            self.assertNotIn("LUR", out["ind"])                      # the failed indicator is left out
+            usa = next(r for r in out["rows"] if r["c"] == "USA")
+            self.assertEqual((usa["en"], usa["ru"]), ("United States", "США"))
+            self.assertEqual(usa["v"]["NGDP_RPCH"][-1], None)
+            fetched.clear()
+            self.assertEqual(macro.build(now + timedelta(hours=3), path=path, fetcher=fetcher), 0)   # fresh: no requests
+            self.assertEqual(fetched, [])
+
+    def test_moex_board(self):
+        import moex
+        sec = {"columns": ["SECID", "SHORTNAME", "LATNAME", "PREVPRICE", "LOTSIZE"],
+               "data": [["SBER", "Сбербанк", "Sberbank", 300.0, 10], ["TATNP", "Татнфт 3ап", "Tatneft ap", 600.0, 1],
+                        ["DEAD", "Неторг", "Dead ao", 1.0, 1], ["TINY", "Мелочь", "Tiny ao", 1.0, 1]] +
+                       [[f"X{i}", f"X{i}", f"X{i} ao", 10.0, 1] for i in range(20)]}
+        md = {"columns": ["SECID", "OPEN", "LOW", "HIGH", "LAST", "LASTTOPREVPRICE", "VALTODAY", "ISSUECAPITALIZATION", "UPDATETIME", "MARKETPRICE"],
+              "data": [["SBER", 300, 299, 305, 303.3, 1.1, 5e9, 6.8e12, "14:05:00", None],
+                       ["TATNP", 600, 590, 601, 595.0, -0.83, 2e8, 1.4e11, "14:04:00", None],
+                       ["DEAD", None, None, None, None, None, 0, None, None, None]] +
+                      [[f"X{i}", 10, 10, 10, 10.0, 0.0, 2e6, 1e6 * i, "13:00:00", None] for i in range(20)] +
+                      [["TINY", 1, 1, 1, 1.0, 5.0, 5000, 1e6, "13:00:00", None]]}
+        imoex = {"analytics": {"columns": ["indexid", "tradedate", "ticker", "shortnames", "secids", "weight"],
+                               "data": [["IMOEX", "2026-10-14", "SBER", "Сбербанк", "SBER", 14.5]]}}
+
+        def fetcher(url):
+            return imoex if "IMOEX" in url else {"securities": sec, "marketdata": md}
+
+        with tempfile.TemporaryDirectory() as d:
+            path = os.path.join(d, "moex.json")
+            now = datetime(2026, 10, 15, 11, tzinfo=timezone.utc)
+            self.assertEqual(moex.build(now, path=path, fetcher=fetcher), 22)
+            with open(path, encoding="utf-8") as f:
+                out = json.load(f)
+            self.assertEqual(out["time"], "14:05:00")
+            sber, tat = out["rows"][0], out["rows"][1]
+            self.assertEqual((sber["s"], sber["sec"], sber["w"], sber["ch"]), ("SBER", "Financials", 14.5, 1.1))
+            self.assertEqual((tat["en"], tat["sec"]), ("Tatneft pref", "Energy"))
+            self.assertNotIn("DEAD", [r["s"] for r in out["rows"]])
+            self.assertNotIn("TINY", [r["s"] for r in out["rows"]], "under 1 mln rubles of turnover and not in the index")
+            # same data 20 minutes later: nothing is rewritten
+            self.assertEqual(moex.build(now + timedelta(minutes=20), path=path, fetcher=fetcher), 0)
 
 
 if __name__ == "__main__":

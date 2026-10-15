@@ -10,8 +10,9 @@
 //                     world indices, commodities and yields via Yahoo Finance (free, no key);
 //                     the owner — optionally the paid EODHD feed instead of Yahoo (only if EODHD_API_KEY is set)
 //   /api/quote      — quotes of anything: ?s=AAPL,BTC,SBER,oil
-//   /api/company    — company: ?s=AAPL&parts=des,fa,ern,anr,cn,hds[&lang=ru]
-//   /api/history    — price history: ?s=AAPL&r=1y (1m 3m 6m ytd 1y 2y 5y)
+//   /api/company    — company: ?s=AAPL&parts=des,fa,ern,anr,cn,hds,co,dvd,cf,opt,rv[&lang=ru]
+//   /api/history    — price history: ?s=AAPL&r=1y (1d 5d 1m 3m 6m ytd 1y 2y 5y)
+//   /api/ipo        — IPO calendar for the next 30 days (Finnhub)
 //   /api/live       — fresh stories and quotes from the news bot
 //   /api/me         — watchlist, portfolio and alerts (sign-in via Telegram or the owner's password)
 //   cron            — every 2 minutes checks alerts and sends messages
@@ -23,8 +24,8 @@
 import {
   arrow, cached, cors, esc, hex, hmac, hookKey, isOwnerChat, json, pagesUrl, send, siteData, syncKey, tg,
 } from "./lib.js";
-import { COMPANY_PARTS, getCompany, getHistory, getQuotes, mktName, parseSymbol, worldQuotes } from "./market.js";
-import { isNewCallback, newCallback, newCommand } from "./botcmd.js";
+import { COMPANY_PARTS, fh, getCompany, getHistory, getQuotes, mktName, parseSymbol, worldQuotes } from "./market.js";
+import { isNewCallback, newCallback, newCommand, watchReminders } from "./botcmd.js";
 import { L, aiSum, getLang, newsField, norm, setLang, sourceName, t, tagName, tradeLabel, TRADE_TYPE } from "./i18n.js";
 import { checkAlerts, meApi } from "./user.js";
 
@@ -68,6 +69,7 @@ export default {
       if (url.pathname === "/api/quotes") return cors(await quotesApi(req, env, url.searchParams.get("only") || ""));
       if (url.pathname === "/api/quote") return cors(await quoteApi(env, url));
       if (url.pathname === "/api/company") return cors(await companyApi(env, url));
+      if (url.pathname === "/api/ipo") return cors(await ipoApi(env));
       if (url.pathname === "/api/history") return cors(await historyApi(env, url));
       if (url.pathname === "/api/live") return cors(await liveApi(env));
       if (url.pathname === "/api/me") {
@@ -88,6 +90,8 @@ export default {
   async scheduled(event, env, ctx) {
     ctx.waitUntil(checkAlerts(env).then((r) => console.log("alerts", JSON.stringify(r)))
       .catch((e) => console.log("alerts error", e && e.stack || e)));
+    ctx.waitUntil(watchReminders(env).then((r) => r.skipped || console.log("reminders", JSON.stringify(r)))
+      .catch((e) => console.log("reminders error", e && e.stack || e)));
   },
 };
 
@@ -439,6 +443,13 @@ async function companyApi(env, url) {
   const parts = (url.searchParams.get("parts") || COMPANY_PARTS.join(",")).split(",").filter((p) => COMPANY_PARTS.includes(p));
   const c = await getCompany(env, s, parts.length ? parts : COMPANY_PARTS, norm(url.searchParams.get("lang")));
   return json(c, 200, { "Cache-Control": "public, max-age=60" });
+}
+
+async function ipoApi(env) {
+  const from = new Date().toISOString().slice(0, 10), to = new Date(Date.now() + 30 * 864e5).toISOString().slice(0, 10);
+  const d = await fh(env, `/calendar/ipo?from=${from}&to=${to}`, 3 * 3600);
+  const ipo = ((d && d.ipoCalendar) || []).filter((x) => x.date >= from).sort((a, b) => (a.date < b.date ? -1 : 1)).slice(0, 60);
+  return json({ ok: true, ipo }, 200, { "Cache-Control": "public, max-age=1800" });
 }
 
 async function historyApi(env, url) {

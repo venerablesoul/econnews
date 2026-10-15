@@ -1255,7 +1255,7 @@ def run(dry=False):
 
 
 def update_extras(now, dry=False):
-    """Terminal data that does not depend on news: US companies (stocks.json) and rates (rates.json)."""
+    """Terminal data that does not depend on news: US companies (stocks.json, co/, opt/), rates, macro, MOEX."""
     parts = []
     if dry or not _env_on("COMPANIES", "yes"):
         return ""
@@ -1273,6 +1273,13 @@ def update_extras(now, dry=False):
             parts.append(f"curves: {len(r.get('curves') or {})}")
     except Exception as e:
         print(f"  ! rates (rates.py): {type(e).__name__}: {e}"[:200])
+    for mod, label in (("company", "company files"), ("options", "option chains"), ("macro", "macro"), ("moex", "MOEX")):
+        try:
+            n = __import__(mod).build(now)
+            if n:
+                parts.append(f"{label}: {n}")
+        except Exception as e:
+            print(f"  ! {label} ({mod}.py): {type(e).__name__}: {e}"[:200])
     return (", ".join(parts) + ", ") if parts else ""
 
 
