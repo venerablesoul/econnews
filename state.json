@@ -1159,7 +1159,9 @@
   "59e242c9a437e691": "2026-10-15T19:12:01.006049+00:00",
   "ffd4ec9d3744207a": "2026-10-15T19:17:01.020060+00:00",
   "e92149f42dd5ed08": "2026-10-15T19:17:01.020060+00:00",
-  "5691971884d119f8": "2026-10-15T19:22:36.427812+00:00"
+  "5691971884d119f8": "2026-10-15T19:22:36.427812+00:00",
+  "2c848b6a772a8a78": "2026-10-15T19:32:36.438184+00:00",
+  "18904c3c9ac1fdbe": "2026-10-15T19:32:36.438184+00:00"
  },
  "recent": [
   {
@@ -12117,6 +12119,28 @@
    "title_ru": "Хили планирует повысить в бюджете налоги на банки в Великобритании в этом месяце",
    "lead": "UK Chancellor of the Exchequer John Healey is set to raise taxes on banks to fund cost-of-living support for voters and stabilize the public finances, as he looks for sources of revenue that won’t violate Labour Party campaign…",
    "lead_ru": "Канцлер казначейства Великобритании Джон Хили намерен повысить налоги для банков, чтобы финансировать поддержку стоимости жизни избирателей и стабилизировать государственные финансы, поскольку он ищет источники доходов, которые не будут нарушать кампанию Лейбористской партии..."
+  },
+  {
+   "title": "Slovakia Connects Nuclear Reactor in Boost for Power Exports",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-15/slovakia-connects-nuclear-reactor-in-boost-for-power-exports",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-15T19:32:36.438184+00:00",
+   "title_ru": "Словакия подключает ядерный реактор для экспорта электроэнергии",
+   "lead": "Slovakia connected a new nuclear reactor to its electricity grid, cementing the country’s position as a power exporter in Central Europe.",
+   "lead_ru": "Словакия подключила новый ядерный реактор к своей электросети, укрепив позиции страны как экспортера электроэнергии в Центральной Европе."
+  },
+  {
+   "title": "US holiday sales growth to speed up as shoppers stay resilient, NRF forecasts",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQR3JpdUdPcXZSWWdYakdCZkJYZnFmcVExcXpnTlRVSW1MeW1YTGdIUXdVREZneWZXbkE5bXpxc1I3cFFYN0VTeElGOGJwTVZmWWltQlZWaldlVWJOaWVmWGZSNUFzSXBfaWpZdDNmOFFnUVdoU19zR041bTZ1cmszdWstUExFN0w0TkpHcHhudXpxLWFOcU9fQ29SdWtoTld0VkF0YmJHeTcta0RIZEtCcXFGR1JXT1NRdzg1VzNaMmUwVXQ3UFR2RWZLSQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-15T19:32:36.438184+00:00",
+   "title_ru": "Рост продаж в праздничные дни в США ускорится, поскольку покупатели остаются устойчивыми, прогнозирует NRF"
   }
  ],
  "last_digest": "2026-10-15",
@@ -14274,6 +14298,22 @@
    },
    {
     "src": "sec",
+    "id": "3eed2c2784f85aec",
+    "ticker": "GF",
+    "company": "NEW GERMANY FUND INC",
+    "who": "Saba Capital Management, L.p.",
+    "role": "10% owner",
+    "type": "buy",
+    "value": 54809,
+    "shares": 5340,
+    "price": 10.26,
+    "plan": false,
+    "date": "2026-10-14",
+    "disclosed": "2026-10-15",
+    "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000350/0001510281-26-000350-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "c976d6d90b286a4e",
     "ticker": "AFL",
     "company": "AFLAC INC",
@@ -14610,25 +14650,26 @@
   "checked": "2026-10-15T19:02:01.055205+00:00",
   "sec_seen": [
    "0001815401-26-000006",
-   "0000038777-26-000263",
+   "0001972724-26-000012",
    "0001193125-26-422747",
    "0001772376-26-000013",
+   "0001510281-26-000350",
    "0001510281-26-000347",
-   "0000038777-26-000266",
    "0001510281-26-000348",
+   "0001193125-26-422805",
    "0001193125-26-422783",
-   "0001193125-26-422743",
+   "0002065999-26-000007",
    "0001667330-26-000006",
    "0001193125-26-422757",
    "0000038777-26-000267",
-   "0000038777-26-000264",
    "0001929414-26-000004",
    "0001193125-26-422764",
+   "0001912031-26-000017",
+   "0001814443-26-000010",
    "0001853514-26-000008",
    "0000885639-26-000178",
    "0001510281-26-000349",
-   "0001193125-26-422769",
-   "0000038777-26-000265"
+   "0001193125-26-422769"
   ],
   "errors": {}
  }
