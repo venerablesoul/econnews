@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "12ab1b6980bca0f3": "2026-10-13T05:24:38.053180+00:00",
-  "6a31cbfd8b2fd538": "2026-10-13T05:24:38.053180+00:00",
-  "b4384914ba1bcfdd": "2026-10-13T05:24:38.053180+00:00",
-  "f582844b76a11c78": "2026-10-13T05:24:38.053180+00:00",
   "cd422dd882ed8e2c": "2026-10-13T05:44:38.051299+00:00",
   "1940c55f3c98a6b1": "2026-10-13T05:54:38.045584+00:00",
   "ff97e6784c0986fe": "2026-10-13T05:54:38.045584+00:00",
@@ -1131,44 +1127,10 @@
   "6831e4c1a60d8d4d": "2026-10-16T05:18:24.007277+00:00",
   "f7a01bde21ee8ff7": "2026-10-16T05:23:24.000172+00:00",
   "469c710c1e7552fe": "2026-10-16T05:23:24.000172+00:00",
-  "2147af2baafd4d4e": "2026-10-16T05:23:24.000172+00:00"
+  "2147af2baafd4d4e": "2026-10-16T05:23:24.000172+00:00",
+  "0c8defc2fbf126fb": "2026-10-16T05:28:23.993121+00:00"
  },
  "recent": [
-  {
-   "title": "DATABASE APPENDIX WORLD ECONOMIC OUTLOOK, OCTOBER 2026",
-   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQeUR2ZUxvVl9Bay0tSW52MTlXVjItd29GazB5VDl4WTJMVDZ3b0ZQb1V4bDJ4dEgzTTVMR3NkNFZUUHFzRUM4LUdwTV9VTXRSRFNUUVVVcjI1UExiYXVoQjVHb2gzcFBTZmR3T0plNG1xQ043S2NFMkxPcnJrb0U2WnpwZGxvTnF6UFRTcElpOElxLXVRUGVIUXJHQWZldFNZYmU4UEJ4ZUUtTEpnOGtQM2JFalo3blIyME52ckY0VEV6Sjg5dmc2MHRYLUQxbjFoZmc?oc=5",
-   "sources": [
-    "МВФ"
-   ],
-   "score": 5,
-   "ts": "2026-10-13T05:24:38.053180+00:00",
-   "title_ru": "ПРИЛОЖЕНИЕ К БАЗЕ ДАННЫХ ПЕРСПЕКТИВЫ МИРОВОЙ ЭКОНОМИКИ, ОКТЯБРЬ 2026 ГОДА"
-  },
-  {
-   "title": "Data Center Operator AirTrunk Is Said to Delay $1.5 Billion IPO",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-13/data-center-operator-airtrunk-is-said-to-delay-1-5-billion-ipo",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T05:24:38.053180+00:00",
-   "title_ru": "Оператор дата-центра AirTrunk отложит IPO на сумму 1,5 миллиарда долларов",
-   "lead": "Data center operator AirTrunk is delaying a planned initial public offering of a real estate investment trust in Singapore until next year as higher interest rates and market volatility temper investor demand, according to people…",
-   "lead_ru": "Оператор центров обработки данных AirTrunk откладывает запланированное первичное публичное размещение инвестиционного фонда недвижимости в Сингапуре до следующего года, поскольку, по словам людей, более высокие процентные ставки и волатильность рынка ограничивают спрос инвесторов...",
-   "tags": [
-    "ставки"
-   ]
-  },
-  {
-   "title": "Equinor, Eneco sign five-year gas delivery deal",
-   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOdE5vZW53eXd5SzZZZ3NhX1hSdS1LTDFPRjh5WXA5UTRoYTJPVWdHUE5FZW8xT3lyLWxjYW51WW00cXdmSzc0a1lLVnFSM3dRS1k1SGtJOEN4OFpOaDRlSk0zbkl4TDZ0NjdkLVhIMlRJckM2ZVBVMnI2YzVZbElFMzZnRVN0a2JMOVVYTEJpV2laVENHQThSeTBocWY3SEk?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T05:24:38.053180+00:00",
-   "title_ru": "Equinor и Eneco подписали пятилетний контракт на поставку газа"
-  },
   {
    "title": "Australia’s New South Wales Backs Gas Power as Coal Plants Shut",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOVW0tR24yV210MF9CaVlyN2dQakJxR3BkdmVJVC1pWFB5dWpOeG11cWxhVnl1YmNOUEt6aEd2eUxQc2k3dnVkTEZlczJQWjczTzJDeG9DZGl3ZUREYW9hc3g0QmRhQmRlbUE4Rlo3cHZyUW9kblU2T21JTEZOdDFJYVoyeEJOUUg3SU5WNjA4c0NuLVczbmotczN3aklBaEZ1S0YzTU9KRk9taEpaWjAtOXNGNGo?oc=5",
@@ -11931,6 +11893,21 @@
    "title_ru": "МВФ вполне уверен, что Аргентина сможет выполнить долговые обязательства 2027 года",
    "lead": "The International Monetary Fund is “quite confident” that Argentina’s authorities are in a position to meet next year’s debt obligations, said Luis Cubeddu, deputy director of the Western Hemisphere department.",
    "lead_ru": "Международный валютный фонд «вполне уверен», что власти Аргентины в состоянии выполнить долговые обязательства в следующем году, сказал Луис Кубедду, заместитель директора департамента Западного полушария."
+  },
+  {
+   "title": "Ship-Fuel Squeeze Persists Despite More Hormuz Crude, Vitol Says",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-16/ship-fuel-squeeze-persists-despite-more-hormuz-crude-vitol-says",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-16T05:28:23.993121+00:00",
+   "title_ru": "Судовое топливное сжатие сохраняется, несмотря на увеличение добычи нефти в Ормузе, говорит Витол",
+   "lead": "Accelerating crude exports through the Strait of Hormuz aren’t translating into higher production of a dirty shipping fuel, according to a top Vitol Group executive, tightening supplies and sending prices soaring.",
+   "lead_ru": "По словам топ-менеджера Vitol Group, ускорение экспорта нефти через Ормузский пролив не приводит к увеличению производства грязного судового топлива, что приводит к сокращению поставок и росту цен.",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-15",
@@ -15001,7 +14978,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-16T04:28:23.986809+00:00",
+  "checked": "2026-10-16T05:28:23.993121+00:00",
   "sec_seen": [
    "0001177394-26-000117",
    "0001951059-26-000018",
@@ -15013,11 +14990,11 @@
    "0001689498-26-000002",
    "0002090886-26-000012",
    "0001632063-26-000005",
+   "0001193125-26-423229",
    "0001522767-26-000206",
    "0001652149-26-000006",
-   "0001193125-26-423228",
-   "0001453368-26-000002",
    "0002058781-26-000003",
+   "0001453368-26-000002",
    "0001218363-26-000005",
    "0001531152-26-000073",
    "0001498287-26-000001",
@@ -15049,7 +15026,7 @@
    "0001193125-26-423227",
    "0001171520-26-000309",
    "0001628280-26-066035",
-   "0001193125-26-423229"
+   "0001193125-26-423228"
   ],
   "errors": {}
  }
