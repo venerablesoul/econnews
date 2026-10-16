@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "be0f14e14a486e48": "2026-10-13T09:25:02.986308+00:00",
-  "4351551321f76b6e": "2026-10-13T09:25:02.986308+00:00",
-  "70e1b25a97aee61d": "2026-10-13T09:25:02.986308+00:00",
   "4376b32053590856": "2026-10-13T09:35:03.010841+00:00",
   "78f0db725f2c74a2": "2026-10-13T09:35:03.010841+00:00",
   "976bf4e5c96d2611": "2026-10-13T09:45:02.970210+00:00",
@@ -1145,22 +1142,10 @@
   "cbc14f1b82d7ab9c": "2026-10-16T09:13:52.152282+00:00",
   "f2a4b6d6c08a9767": "2026-10-16T09:23:52.157385+00:00",
   "9fbe11e873eb5751": "2026-10-16T09:23:52.157385+00:00",
-  "91b659551b94a71c": "2026-10-16T09:23:52.157385+00:00"
+  "91b659551b94a71c": "2026-10-16T09:23:52.157385+00:00",
+  "7496a9925710aa7b": "2026-10-16T09:33:52.089024+00:00"
  },
  "recent": [
-  {
-   "title": "German September inflation confirmed at 3.3%",
-   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOdllCaWhnRFJJRHdRa2hHZVZIQVVfcTJjTC1sTkNnS2hMSFVhWFRTUkN6QjB6TWFHXzNyaU5DZkFpQ2VVLW1KQWRPSVk4SU4yV1BDeFo0N3RONGN2V3A3X003NXd0RWUtUVFCNVNqVkFQSUhaT1YtMHdPRVU4SE4xMHpjZW5Ub3Nqa0NfcExBWlhqZw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-13T09:25:02.986308+00:00",
-   "title_ru": "Сентябрьская инфляция в Германии подтверждена на уровне 3,3%",
-   "tags": [
-    "инфляция"
-   ]
-  },
   {
    "title": "AI Selloff Drags Emerging Stocks Down, Weighs on Currency Gauge",
    "link": "https://www.bloomberg.com/news/articles/2026-10-13/ai-selloff-drags-emerging-stocks-down-weighs-on-currency-gauge",
@@ -11967,6 +11952,16 @@
    "score": 3,
    "ts": "2026-10-16T09:23:52.157385+00:00",
    "title_ru": "Низкая волатильность рынка порождает самоуспокоенность инвесторов, говорит эксперт"
+  },
+  {
+   "title": "Doctors and Lawyers Are Joining AI’s $400-an-Hour Gig Economy",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNckZWSnVtMHFLWUJWZXhicy1QWEtCMHM1R21ETVNlYjdLSDVsaUFzbVpIQThhS2hlU2doR3FnZmRydklzdXI2X2J1dHNXV2xqNUtpOU8yMmFhdGEyNTFlOTlRTTgwbmJfaWV1N3lSYXBQSFk3QlU4T0VyTC1QYV9aWU02dHZUQXBXdGx2UlRMX1dvTThVYTU3NEI4QThkaDVCeFo5V2Y2UFQ4RzRwV3R1d2Jn?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T09:33:52.089024+00:00",
+   "title_ru": "Врачи и юристы присоединяются к экономике искусственного интеллекта с оплатой 400 долларов в час"
   }
  ],
  "last_digest": "2026-10-15",
@@ -12007,7 +12002,7 @@
   "2026-10-16-09"
  ],
  "calendar": {
-  "fetched": "2026-10-16T03:33:24.068467+00:00",
+  "fetched": "2026-10-16T09:33:52.089024+00:00",
   "events": [
    {
     "title": "Bank Holiday",
@@ -15038,7 +15033,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-16T08:33:52.076660+00:00",
+  "checked": "2026-10-16T09:33:52.089024+00:00",
   "sec_seen": [
    "0001453368-26-000002",
    "0001193125-26-423187",
