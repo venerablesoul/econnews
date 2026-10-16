@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "313dd99ebeae708a": "2026-10-13T12:45:30.531963+00:00",
-  "7d294c65cd50f257": "2026-10-13T12:45:30.531963+00:00",
-  "1a1876e2d8706928": "2026-10-13T12:45:30.531963+00:00",
-  "fc35c6c8843f3a1b": "2026-10-13T12:45:30.531963+00:00",
   "63389e84634b5a5d": "2026-10-13T12:55:30.536117+00:00",
   "eb12c5836326f664": "2026-10-13T12:55:30.536117+00:00",
   "7f1366864ec216c9": "2026-10-13T12:55:30.536117+00:00",
@@ -1149,33 +1145,13 @@
   "84f74ae0e6cb03be": "2026-10-16T12:44:26.594553+00:00",
   "2c1ed659c89566e3": "2026-10-16T12:44:26.594553+00:00",
   "37c2791b0ea051c6": "2026-10-16T12:44:26.594553+00:00",
-  "af9a94fa75285058": "2026-10-16T12:44:26.594553+00:00"
+  "af9a94fa75285058": "2026-10-16T12:44:26.594553+00:00",
+  "539b463be3b6ad98": "2026-10-16T12:49:26.433690+00:00",
+  "045892f1d9199a0c": "2026-10-16T12:49:26.433690+00:00",
+  "dbc6bbb139c442a2": "2026-10-16T12:49:26.433690+00:00",
+  "dd8d6cf6fb57681a": "2026-10-16T12:49:26.433690+00:00"
  },
  "recent": [
-  {
-   "title": "Brazil Analysts Cut Rate Bets as Bolsonaro Tops Polls",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-13/brazil-economists-cut-selic-bets-as-bolsonaro-leads-runoff-polls",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T12:45:30.531963+00:00",
-   "title_ru": "Бразильские аналитики снизили ставки, поскольку Болсонару лидирует по опросам",
-   "lead": "Brazil analysts lowered their interest rate forecasts for the end of this year as right-wing candidate Flávio Bolsonaro leads polls for the presidential runoff, boosting investor hopes of tighter fiscal policy.",
-   "lead_ru": "Бразильские аналитики понизили свои прогнозы по процентным ставкам на конец этого года, поскольку правый кандидат Флавио Болсонару возглавляет опросы во втором туре президентских выборов, что усиливает надежды инвесторов на ужесточение налогово-бюджетной политики.",
-   "tags": [
-    "ставки"
-   ]
-  },
-  {
-   "title": "Fund managers retain surprising optimism in the face of stagnant stock market and tumultuous bond market",
-   "link": "https://www.marketwatch.com/story/fund-managers-retain-surprising-optimism-in-the-face-of-stagnant-stock-market-and-tumultuous-bond-market-3d9763dd?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 2,
-   "ts": "2026-10-13T12:45:30.531963+00:00"
-  },
   {
    "title": "IMF and World Bank 2026 Annual Meetings in Bangkok",
    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQT09EZkpSMTlmNG40cnRkOTZmSFlIa2Z6SGdZa0hxMGkxYXpGS3kzRTQ3LUwxeE5oRUtMYjh2SGcxMnVpczJQZFkwaWtwbkhzM3V1Y0xjeDNpeFFNUG5GRldJekMweGdWTkxXWGNKWUkxaTgxSzhyMFhRX1F0dkVrcFFwSGJVbUVpLVgxR3VXZ0puLTE4YXhBN2plTDZSdXJBV3lYWlF2U1FOZEVEWW1tV0xGZ1E3Y3RDWk1DYks2Zw?oc=5",
@@ -12201,6 +12177,58 @@
    ],
    "score": 1,
    "ts": "2026-10-16T12:44:26.594553+00:00"
+  },
+  {
+   "title": "Europe must boost growth or borrow less to keep debt sustainable, IMF says",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQLTFJTlBURGN2am9IMTFlUUppek9EdGlIcEQzMzJscE9LekhoWVE1LVJnVlVhUVFDVTA2WElwQlpQM2M1eG1CVXF5SnR6SnRRNm81akFzeU9VamlZOFA1dVExbWxrRy1heExNVjFyZWI4c0NnNDZTTzgtWVlabVZzQ3RMWFRqYlRKMTdCWktVYlYtZkluS3JwaHVDTWd2RW01VVBTMWFNMXozY3Zhbm1uU0ZPRFg5UQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-16T12:49:26.433690+00:00",
+   "title_ru": "Европа должна стимулировать рост или занимать меньше, чтобы поддерживать приемлемый уровень долга, говорит МВФ"
+  },
+  {
+   "title": "Wall St Week Ahead As AI rally wobbles, stock market's spotlight turns to earnings",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNR0cyVkR4czJqcmtMVHU0c21pVnRHR1h1Q3VFRUdyX1FtSzg1alVJSFRqSmI0al95bGpvRkJpRG1EUy14djN1Y2xWXzlfVC04X2xIcUt4QkROSTR6V01la3plVWVhX202alJTYmhJSXIxQTJrM3VyTVZOVXhmWExqYVFWMVJQWUt3X3VUb0loWEp1SmphZ3E4MDVXS0ZZX3dkSThsTFAtMmEzRHpHMzFxTWhrblZQZFRoT1lFdXN5X3M5Y0dUQ0I5bzBR?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-16T12:49:26.433690+00:00",
+   "title_ru": "Wall St Week Ahead По мере того, как ралли ИИ колеблется, внимание фондового рынка обращается к доходам",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "Tesla Showcases Roadster, China Moves to Prop Up Stocks",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-16/the-opening-trade-10-16-2026-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T12:49:26.433690+00:00",
+   "title_ru": "Tesla демонстрирует родстер, Китай движется, чтобы поддержать акции",
+   "lead": "Tesla unveiled its new Roadster sports car, which will give the company another offering in its lineup when it goes on sale.",
+   "lead_ru": "Tesla представила свой новый спортивный автомобиль Roadster, который даст компании еще одно предложение в своей линейке, когда он поступит в продажу.",
+   "tags": [
+    "markets",
+    "China"
+   ]
+  },
+  {
+   "title": "CoreWeave bond rout tests market's math on AI buildout",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOdm5VTll1VmRrVEdWNm9HMmh4dUtxaDN2alV3YnJxUmtZdVJjZV9obW5Kc2tOYTNEQVdQNE1XMnFNbk1PaFBTTHZqcWxFZklDOVRtYm9IOWhnMjRuZTYyM2U0NVA1WmY0a3ZGQTFJbFp5cU1ha3h2WXBwLVFBSmtjRnVmZm8xdUtCMWlaX1YyUkpCSDhZamRzRG9UV3paVU9MalVpa0FFbzRBZw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T12:49:26.433690+00:00",
+   "title_ru": "Маршрут облигаций CoreWeave проверяет математику рынка на построении ИИ",
+   "tags": [
+    "bonds"
+   ]
   }
  ],
  "last_digest": "2026-10-15",
@@ -15322,8 +15350,8 @@
    "0002063872-26-000008",
    "0001213900-26-110031",
    "0001628280-26-066045",
-   "0001193125-26-423227",
    "0001689498-26-000002",
+   "0001193125-26-423227",
    "0001193125-26-423228",
    "0001632063-26-000005",
    "0001422978-26-000018",
