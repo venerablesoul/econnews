@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "65d389fd7812f311": "2026-10-13T20:02:05.159396+00:00",
-  "101c24c47dff112a": "2026-10-13T20:02:05.159396+00:00",
-  "7b046126f653cd76": "2026-10-13T20:02:05.159396+00:00",
   "dcae732b88f7d619": "2026-10-13T20:12:05.188715+00:00",
   "e0f11261b57349ca": "2026-10-13T20:12:05.188715+00:00",
   "d956ed20de8c70a2": "2026-10-13T20:12:05.188715+00:00",
@@ -1161,25 +1158,6 @@
   "bddbe9ab4474a050": "2026-10-16T19:54:55.600148+00:00"
  },
  "recent": [
-  {
-   "title": "Shell to sell its Nigeria gas business to Vaaris Energy",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOR3FsTHd4OGFfa3l4X2lJRmdpdnlDRmVfSzJ4c1dxWTd1OXEyVDNLb0pwa056Vm56LTdzMUxMTkNqQ0lMM3EzeW9Iek1HRV8tMGZieGkxcmU0LU9GbEVqY2N4aTlUc0tyNFV6NGJzOTV4bUQyc29laFBLSEZWRnF3MUU2dzJpNEhzVWdwbDVIaHh2ejJadlFRZDNWUk1nTEFDU1ow?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T20:02:05.159396+00:00",
-   "title_ru": "Shell продаст свой газовый бизнес в Нигерии компании Vaaris Energy"
-  },
-  {
-   "title": "Midterm voters haven’t seen this many housing proposals on the ballot in 20 years",
-   "link": "https://www.marketwatch.com/story/midterm-voters-havent-seen-this-many-housing-proposals-on-the-ballot-in-20-years-8cdf1405?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-13T20:02:05.159396+00:00"
-  },
   {
    "title": "Fed's Collins sees another rate hike on the table before end of 2026",
    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPQTNoWUtZWjdLcTc2ZmNycnptRmR1cmluWThZU2ZTYU5JUkdaazY1Z2hEdjIxNWZ3VU5RSVZvejc3VnlueGZoN0JyNlNmdkptQk9ZNEZqU1MyLTNUblpOaF9FMkdGbnZhX1hTVllLTzYxNFEwamlyazZKem00N1k1UFBablNQSVRCZTgySWNNR3pHemxzSEl1S0VBeE1DQlYyS0Ntdw?oc=5",
@@ -14338,6 +14316,22 @@
    },
    {
     "src": "sec",
+    "id": "1cf31913850bde22",
+    "ticker": "BYRN",
+    "company": "Byrna Technologies Inc.",
+    "who": "Adam L. Roth",
+    "role": "Director",
+    "type": "buy",
+    "value": 70375,
+    "shares": 15000,
+    "price": 4.69,
+    "plan": false,
+    "date": "2026-10-15",
+    "disclosed": "2026-10-16",
+    "link": "https://www.sec.gov/Archives/edgar/data/2086723/000143774926032801/0001437749-26-032801-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "98da5e40af377ecf",
     "ticker": "AFL",
     "company": "AFLAC INC",
@@ -14415,6 +14409,38 @@
     "date": "2026-10-14",
     "disclosed": "2026-10-16",
     "link": "https://www.sec.gov/Archives/edgar/data/2121444/000121390026110188/0001213900-26-110188-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "3fcf22d6fbdabe83",
+    "ticker": "PEP",
+    "company": "PEPSICO INC",
+    "who": "Robert C Pohlad",
+    "role": "Director",
+    "type": "buy",
+    "value": 23686389,
+    "shares": 184646,
+    "price": 128.28,
+    "plan": false,
+    "date": "2026-10-14",
+    "disclosed": "2026-10-16",
+    "link": "https://www.sec.gov/Archives/edgar/data/1061272/000106127226000004/0001061272-26-000004-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "0a1ae840d43cc0fa",
+    "ticker": "PAYX",
+    "company": "PAYCHEX INC",
+    "who": "Joseph M Velli",
+    "role": "Director",
+    "type": "sell",
+    "value": 844104,
+    "shares": 7839,
+    "price": 107.68,
+    "plan": false,
+    "date": "2026-10-14",
+    "disclosed": "2026-10-16",
+    "link": "https://www.sec.gov/Archives/edgar/data/1209494/000119312526424044/0001193125-26-424044-index.htm"
    },
    {
     "src": "sec",
@@ -15432,14 +15458,28 @@
   },
   "checked": "2026-10-16T19:49:55.632734+00:00",
   "sec_seen": [
-   "0001292814-26-004946",
-   "0001193125-26-423979",
-   "0002022936-26-000017",
-   "0001477932-26-006298",
-   "0001493152-26-047389",
+   "0001193125-26-424046",
+   "0002062500-26-000010",
+   "0001193125-26-424042",
    "0001193125-26-424035",
-   "0000108985-26-000084",
-   "0001225208-26-008430"
+   "0001193125-26-424048",
+   "0001193125-26-424040",
+   "0001061272-26-000004",
+   "0001193125-26-424038",
+   "0001210231-26-000003",
+   "0001140361-26-039917",
+   "0001193125-26-423979",
+   "0001193125-26-424056",
+   "0001477932-26-006298",
+   "0001413614-26-000015",
+   "0001225208-26-008430",
+   "0001193125-26-424039",
+   "0001193125-26-424041",
+   "0001193125-26-424047",
+   "0001193125-26-424044",
+   "0001193125-26-424045",
+   "0001437749-26-032801",
+   "0001193125-26-424043"
   ],
   "errors": {}
  }
