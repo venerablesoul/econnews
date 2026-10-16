@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "4ad5043316276d6a": "2026-10-13T06:24:38.028966+00:00",
-  "e73578a41f6fa9fc": "2026-10-13T06:24:38.028966+00:00",
   "0206db8fcc9c90bc": "2026-10-13T06:34:38.038710+00:00",
   "b15c5454ab27af87": "2026-10-13T06:34:38.038710+00:00",
   "a2823a5297ddbe3c": "2026-10-13T06:44:38.014268+00:00",
@@ -1137,39 +1135,12 @@
   "02251fdf9d3a6eb3": "2026-10-16T06:13:52.058409+00:00",
   "d82838bd055dadfb": "2026-10-16T06:18:52.067875+00:00",
   "4e9e6b5d0672c5d1": "2026-10-16T06:18:52.067875+00:00",
-  "e1284df873d52cb3": "2026-10-16T06:18:52.067875+00:00"
+  "e1284df873d52cb3": "2026-10-16T06:18:52.067875+00:00",
+  "c3873567057162a6": "2026-10-16T06:23:52.089418+00:00",
+  "3f34c38ed7912c10": "2026-10-16T06:28:52.070202+00:00",
+  "e4a941bab398ba44": "2026-10-16T06:28:52.070202+00:00"
  },
  "recent": [
-  {
-   "title": "BP Debt Shrinks With Boost From Oil and Gas Trading, Refining",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-13/bp-debt-shrinks-with-boost-from-oil-and-gas-trading-refining",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-13T06:24:38.028966+00:00",
-   "title_ru": "Долг BP сокращается благодаря росту торговли нефтью и газом, а также переработки нефти",
-   "lead": "BP Plc said net debt has already reached the company’s 2027 target after surging prices drove windfall profits from energy trading and refining in the third quarter.",
-   "lead_ru": "BP Plc заявила, что чистый долг уже достиг целевого показателя компании на 2027 год после того, как растущие цены привели к непредвиденной прибыли от торговли энергоносителями и переработки в третьем квартале.",
-   "tags": [
-    "нефть"
-   ]
-  },
-  {
-   "title": "Saudi Arabia Reports Fresh Attacks as Wider Conflict Could Push Oil to $120",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-13/horizons-middle-east-africa-10-13-2026-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T06:24:38.028966+00:00",
-   "title_ru": "Саудовская Аравия сообщает о новых атаках, поскольку более широкий конфликт может подтолкнуть нефть к 120 долларам",
-   "lead": "Horizons Middle East & Africa is your daily spotlight on one of the world's fastest-growing regions. Live from Dubai, we bring you the latest global markets and analysis, plus news-making interviews, with a special focus on MEA.",
-   "lead_ru": "Horizons Middle East & Africa — это ваш ежедневный обзор одного из самых быстрорастущих регионов мира. В прямом эфире из Дубая мы представляем вам последние новости о мировых рынках и аналитические материалы, а также новостные интервью с особым акцентом на Ближнем Востоке и в Африке.",
-   "tags": [
-    "нефть"
-   ]
-  },
   {
    "title": "Контрсанкции сыграли вдолгую // Эксперты оценили последствия продовольственного эмбарго",
    "link": "https://www.kommersant.ru/doc/9025018",
@@ -11952,6 +11923,29 @@
    "score": 3,
    "ts": "2026-10-16T06:18:52.067875+00:00",
    "title_ru": "Главный экономический советник говорит, что Centerview остается финансовым советником Венесуэлы"
+  },
+  {
+   "title": "John Healey set to raise bank taxes in the budget – business live",
+   "link": "https://www.theguardian.com/business/live/2026/oct/16/john-healey-set-to-raise-bank-taxes-shares-profits-stock-markets-imf-latest-news-updates",
+   "sources": [
+    "The Guardian"
+   ],
+   "score": 2,
+   "ts": "2026-10-16T06:23:52.089418+00:00"
+  },
+  {
+   "title": "Fed's Goolsbee on inflation: discouraging, but still some optimism",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPcXR1ek9vWXFJUnhjSUhmTnNnd0o1MERLZ3Q5OWxEX2J4UERIT1dGNWMwaVI4MkpiajNzZmprSE1vZWRaSDZ4RjlkSjFlSG1FSWxYT2JkSVNSaVp5alFfbGQ1RHd0WHdaeGw2bU1aaHQ2cmJhSnM4STd2cS1odWZreU1nU0hqYm5WeVJkUmdxMmg2NFRiMkFmMkRtMWQxTWd5SHRNM2FR?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-16T06:28:52.070202+00:00",
+   "title_ru": "Goolsbee ФРС по инфляции: обескураживающий, но все же некоторый оптимизм",
+   "tags": [
+    "Fed",
+    "inflation"
+   ]
   }
  ],
  "last_digest": "2026-10-15",
@@ -15023,7 +15017,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-16T05:28:23.993121+00:00",
+  "checked": "2026-10-16T06:28:52.070202+00:00",
   "sec_seen": [
    "0001453368-26-000002",
    "0001193125-26-423187",
