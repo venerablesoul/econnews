@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "b64b3717a98ad142": "2026-10-13T16:35:30.548091+00:00",
   "fdf4639479d06f53": "2026-10-13T16:45:30.527514+00:00",
   "b7f67f1a5a189623": "2026-10-13T16:45:30.527514+00:00",
   "45f7323ccaf172d9": "2026-10-13T16:45:30.527514+00:00",
@@ -1154,19 +1153,13 @@
   "3aac6989311811c6": "2026-10-16T16:24:26.523931+00:00",
   "ced1e5fb44b97f12": "2026-10-16T16:24:26.523931+00:00",
   "c18751d046c942f7": "2026-10-16T16:29:26.544587+00:00",
-  "b054206ab1711bc8": "2026-10-16T16:34:26.449364+00:00"
+  "b054206ab1711bc8": "2026-10-16T16:34:26.449364+00:00",
+  "f1373ac3b3659d0a": "2026-10-16T16:39:26.552957+00:00",
+  "819f2fe9add99c4d": "2026-10-16T16:39:26.552957+00:00",
+  "cbca5b596a52625c": "2026-10-16T16:39:26.552957+00:00",
+  "314715e0ec41e522": "2026-10-16T16:39:26.552957+00:00"
  },
  "recent": [
-  {
-   "title": "Inside ETFs: The bull market turns four",
-   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9ENHJkbmhzci1kb1k4ZUtDT2E5LS1ydk5BOU0tTVMyOWhVd3hxUXBILUtHNVBKcURaTWE1TFdqWUdpTk9vWEotUWxWT2hfMUhyc0ZOaktnMjdZTndiNEFxOG9yS0RrQQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T16:35:30.548091+00:00",
-   "title_ru": "Внутри ETF: бычьему рынку исполнилось четыре года"
-  },
   {
    "title": "US Treasury yields yet to peak as Fed may tighten further, PIMCO's Ivascyn says",
    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQckVkLTFFNXNKUmlRWTVjWE1tOWZ5OXYxU3NFSWU3V0w0dkk3WEVsamFRVWY5Y0FlNVgzV1dZQlJtNWoyY1ByVlVWT0dBNEp6QnlRVG9HTXpKTENiMXlNT0gtYXRnbHFHRk5TUFREaWZmUEk2WElGUDJfY3d3dHc2ZEh5QUdoQlMzZVBKcUlXamtqTmlsQ1kxZXI2MTV6dGVDU1p3QXQwWVJjN1dkVTc3NXlBRm96SVRkQVE?oc=5",
@@ -12200,6 +12193,62 @@
     "Fed",
     "dollar"
    ]
+  },
+  {
+   "title": "Kiribati: Staff Concluding Statement of the 2026 IMF Staff Visit",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQVThYV0ZhOHd5NmFVdF9QNE83OXNoN09IN0pzdUY1elQyTG1WZmlORmJjNXdUd01NSDMyWHlSb1lIUnZNdWp1aXQ2V0dEOWFIZmxoem95UUgtVWxCbG9hUDRtNlgtS3hpTk5KX2tkUTVoTld5TF9NU0diTDRTYm5GbE44cU9lM19JZGVwUWhBRmJNOUFoNjBkVXExME9oQVl0ZWptUnNlZUdSdm9SZEtxNE1MVFd0WTZUNlZ3YlB3?oc=5",
+   "sources": [
+    "IMF"
+   ],
+   "score": 5,
+   "ts": "2026-10-16T16:39:26.552957+00:00",
+   "title_ru": "Кирибати: Заключительное заявление сотрудников МВФ по итогам визита сотрудников МВФ 2026 года"
+  },
+  {
+   "title": "Trump has failed to listen to voters on inflation",
+   "link": "https://www.ft.com/content/a0a143ac-6a48-410a-b121-92f293b0ad6d",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 5,
+   "ts": "2026-10-16T16:39:26.552957+00:00",
+   "title_ru": "Трамп не прислушался к избирателям по поводу инфляции",
+   "lead": "People elect presidents to fix problems, not to diagnose their causes",
+   "lead_ru": "Люди выбирают президентов, чтобы решать проблемы, а не диагностировать их причины",
+   "tags": [
+    "inflation"
+   ]
+  },
+  {
+   "title": "The hunt for Fed October",
+   "link": "https://www.ft.com/content/5b36d8a4-49f1-4877-8719-2db984c13081",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 4,
+   "ts": "2026-10-16T16:39:26.552957+00:00",
+   "title_ru": "Охота за октябрьским ФРС",
+   "lead": "Rate markets have been particularly volatile on the outcome of the Fed’s next rate decision later in the month",
+   "lead_ru": "Рынки ставок были особенно волатильными в связи с результатами следующего решения ФРС по ставке позднее в этом месяце.",
+   "tags": [
+    "Fed",
+    "rates"
+   ]
+  },
+  {
+   "title": "Long-Term Treasuries Fall as Dealer Survey Offers Little Signal",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-16/long-term-treasuries-fall-as-dealer-survey-offers-little-signal",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T16:39:26.552957+00:00",
+   "title_ru": "Долгосрочные казначейские облигации падают, поскольку опрос дилеров дает мало сигналов",
+   "lead": "Long-term Treasuries fell after some Wall Street predictions fell flat that US government officials would directly nod at the possibility of reducing its sales of those securities.",
+   "lead_ru": "Долгосрочные казначейские облигации упали после того, как некоторые прогнозы Уолл-стрит не оправдались, согласно которым правительственные чиновники США прямо кивнут на возможность сокращения продаж этих ценных бумаг.",
+   "tags": [
+    "bonds"
+   ]
   }
  ],
  "last_digest": "2026-10-15",
@@ -15383,7 +15432,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-16T15:39:26.500877+00:00",
+  "checked": "2026-10-16T16:39:26.552957+00:00",
   "sec_seen": [
    "0001193125-26-423655",
    "0001193125-26-423639",
@@ -15394,7 +15443,6 @@
    "0001193125-26-423653",
    "0001766116-26-000028",
    "0001193125-26-423651",
-   "0001193125-26-423597",
    "0001193125-26-423648",
    "0001816757-26-000001",
    "0001193125-26-423635",
