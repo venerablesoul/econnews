@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "44a54fd96ba424cf": "2026-10-13T12:25:30.517391+00:00",
-  "a69055075857eaa2": "2026-10-13T12:25:30.517391+00:00",
   "638d2c816d88d4c9": "2026-10-13T12:35:30.519918+00:00",
   "b537b5b5addc77c5": "2026-10-13T12:35:30.519918+00:00",
   "5486096310c659d3": "2026-10-13T12:35:30.519918+00:00",
@@ -1143,39 +1141,15 @@
   "0dfdc3648b967228": "2026-10-16T12:14:26.488491+00:00",
   "54305d5695678d38": "2026-10-16T12:24:26.427407+00:00",
   "9a1e0ce26d2efea4": "2026-10-16T12:24:26.427407+00:00",
-  "61f04e6cafdc37c9": "2026-10-16T12:24:26.427407+00:00"
+  "61f04e6cafdc37c9": "2026-10-16T12:24:26.427407+00:00",
+  "90b2fabb1b67bda4": "2026-10-16T12:34:26.411400+00:00",
+  "a2ce8c3e1dbc4ca5": "2026-10-16T12:34:26.411400+00:00",
+  "9d5a9fef06c5a32e": "2026-10-16T12:34:26.411400+00:00",
+  "fe8520421e6f09a0": "2026-10-16T12:34:26.411400+00:00",
+  "cabb6d62bd555880": "2026-10-16T12:34:26.411400+00:00",
+  "203cebfc7cd2a635": "2026-10-16T12:34:26.411400+00:00"
  },
  "recent": [
-  {
-   "title": "S&P 500 Futures Little Changed as Banks Report, Chipmakers Fall",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-13/s-p-500-futures-little-changed-as-banks-report-chipmakers-fall",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-13T12:25:30.517391+00:00",
-   "title_ru": "Фьючерсы на S&P 500 мало изменились после отчета банков и падения производителей чипов",
-   "lead": "US equity futures held firm Tuesday despite a deepening selloff in chipmakers, as traders sorted through a slew of bank results from JPMorgan Chase & Co., Goldman Sachs Group Inc.",
-   "lead_ru": "Фьючерсы на американские акции во вторник оставались устойчивыми, несмотря на усиливающуюся распродажу акций производителей микросхем, поскольку трейдеры анализировали множество банковских результатов от JPMorgan Chase & Co., Goldman Sachs Group Inc.",
-   "tags": [
-    "рынки"
-   ]
-  },
-  {
-   "title": "Blackstone’s Gray, Fed’s Waller See Warning From France’s Stress",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-13/blackstone-s-gray-fed-s-waller-see-warning-from-france-s-stress",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T12:25:30.517391+00:00",
-   "title_ru": "Грей из Blackstone и Уоллер из ФРС видят предупреждение о стрессе во Франции",
-   "lead": "Blackstone Inc.",
-   "lead_ru": "Блэкстоун Инк.",
-   "tags": [
-    "ФРС"
-   ]
-  },
   {
    "title": "Decline in Russian Crude Output Slowed in September, OPEC Says",
    "link": "https://www.bloomberg.com/news/articles/2026-10-13/decline-in-russian-crude-output-slowed-in-september-opec-says",
@@ -12130,6 +12104,83 @@
    "title_ru": "Всемирный банк рассматривает возможные кредиты Венесуэле на сумму до 5 миллиардов долларов",
    "lead": "The World Bank could loan Venezuela as much as $5 billion over the next two years, as the country resumes relations with the Washington-based lender, a top official said.",
    "lead_ru": "Всемирный банк может предоставить Венесуэле кредит на сумму до 5 миллиардов долларов в течение следующих двух лет, поскольку страна возобновит отношения с кредитором, базирующимся в Вашингтоне, сообщил высокопоставленный чиновник."
+  },
+  {
+   "title": "The once-obscure tech at the heart of the green energy trade war",
+   "link": "https://www.ft.com/content/bc221890-6718-4792-967c-9828e96f38af?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 6,
+   "ts": "2026-10-16T12:34:26.411400+00:00",
+   "title_ru": "Некогда скрытая технология, лежащая в основе торговой войны за зеленую энергию",
+   "lead": "Power inverters are central to the global clean electricity boom but reliance on China is triggering security fears",
+   "lead_ru": "Силовые инверторы занимают центральное место в глобальном буме чистой электроэнергии, но зависимость от Китая вызывает опасения по поводу безопасности",
+   "tags": [
+    "China",
+    "tariffs"
+   ]
+  },
+  {
+   "title": "Regional Economic Outlook for the Western Hemisphere, October 2026",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNc0xmT253d1ZBa0duVEwwU25Bajd2N2kwdmdMQ1MzMm5qa1dkODFoRnpSYXBZS0NmVlltZkFnVTFRQnVzVXRoOGNMUlZBdG4ySFVUSEhnU3VEY3Y2ZndGaU9LcHlfZTZxMWx1dnJreTladUw3OG1aNWkwa2VnelVRZEFEeDBqWVB5dExlTklNZkV5LW5acHd3LUZwcDJvTjg0RG5jNS0zWFpQLVVYMFoyTng0ZE9mMV80SUtiTnhsaXdNMDBp?oc=5",
+   "sources": [
+    "IMF"
+   ],
+   "score": 5,
+   "ts": "2026-10-16T12:34:26.411400+00:00",
+   "title_ru": "Перспективы региональной экономики для Западного полушария, октябрь 2026 г."
+  },
+  {
+   "title": "U.S. Import and Export Price Indexes News Release",
+   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1EOV9YT1JVZFNSbGYzSnFhZXNNcUdLaHpmYXFkNkpmdXBNaGV1S0xRZzNfeGFsczE2R1Zpb0ZuLWhTckswd0JsRUxKTkNpSV8xWV9hVGIxN1U5d2hDMXpqbjlkY1lac25oVFRtMXBn?oc=5",
+   "sources": [
+    "US Labor Statistics (BLS)"
+   ],
+   "score": 4,
+   "ts": "2026-10-16T12:34:26.411400+00:00",
+   "title_ru": "Индексы импортных и экспортных цен США"
+  },
+  {
+   "title": "India's battered IT stocks head for best week in 18 years on earnings boost",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPS1FQTURRYWZrT3Z6RTFsekNsSWVOUndiZ1J1TG9xMnZqMGVELTFhdEN3MzA4bHhOYmlqT01VYmQ2OHlOMWpkV2hLZlJRNU5LWm03VWtCRTIzbExVT0VWVjEwcGMzS1F0WXlfMTdjUzgzM09uSHdWaFZRUlZIb0ozeHBZb2gwTGJpWWNleWFHbGdja05GaHR5TmZ6YXptbUFFLUdqRVRWUkhOM1J6U3hQS3FB?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-16T12:34:26.411400+00:00",
+   "title_ru": "Пораженные ИТ-акции Индии возглавляют лучшую неделю за 18 лет на фоне роста доходов",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "Steelmaker Celsa Said to Ask Banks for Pitches on IPO or Sale",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-16/steelmaker-celsa-said-to-ask-banks-for-pitches-on-ipo-or-sale",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T12:34:26.411400+00:00",
+   "title_ru": "Сталелитейщик Celsa сказал, что попросит банки о подаче заявок на IPO или продажу",
+   "lead": "Spanish steelmaker Celsa Group has reached out to banks as it weighs strategic options, including a sale or an initial public offering, according to people familiar with the matter.",
+   "lead_ru": "По словам людей, знакомых с этим вопросом, испанская сталелитейная компания Celsa Group обратилась к банкам, поскольку она взвешивает стратегические варианты, включая продажу или первичное публичное размещение акций."
+  },
+  {
+   "title": "In Bangkok, central bankers push back on market rate-tightening bets",
+   "link": "https://www.ft.com/content/4c83ec2c-cd77-4f9b-94e6-fdf70af706ef",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T12:34:26.411400+00:00",
+   "title_ru": "В Бангкоке центральные банки отбрасывают ставки на ужесточение рыночных ставок",
+   "lead": "Federal Reserve and ECB play down likelihood of October rate rises while BoE says data does not currently support substantial further tightening",
+   "lead_ru": "Федеральная резервная система и ЕЦБ снижают вероятность повышения ставки в октябре, в то время как Банк Англии говорит, что данные в настоящее время не поддерживают существенное дальнейшее ужесточение",
+   "tags": [
+    "Fed",
+    "ECB"
+   ]
   }
  ],
  "last_digest": "2026-10-15",
