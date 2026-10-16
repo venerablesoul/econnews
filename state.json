@@ -1157,7 +1157,9 @@
   "93779ccdfdf6428f": "2026-10-16T14:19:26.548189+00:00",
   "340af28ec2bb2f46": "2026-10-16T14:19:26.548189+00:00",
   "164563ac33ffadb0": "2026-10-16T14:24:26.445765+00:00",
-  "c10990405e28552a": "2026-10-16T14:29:26.550835+00:00"
+  "c10990405e28552a": "2026-10-16T14:29:26.550835+00:00",
+  "dd10af1619fb6d3a": "2026-10-16T14:34:26.425984+00:00",
+  "c527b11c46a546bc": "2026-10-16T14:34:26.425984+00:00"
  },
  "recent": [
   {
@@ -12267,6 +12269,27 @@
    "tags": [
     "bonds"
    ]
+  },
+  {
+   "title": "Netflix Brings in New Executive to Spur Growth",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-16/netflix-brings-in-new-executive-to-spur-growth-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T14:34:26.425984+00:00",
+   "title_ru": "Netflix привлекает нового руководителя для стимулирования роста",
+   "lead": "Netflix Inc. is replacing its chief creative officer with Peter Rice, a veteran TV and film executive, as it tries to spur growth and find new hits.",
+   "lead_ru": "Netflix Inc. заменяет своего главного креативного директора Питером Райсом, опытным руководителем телевидения и кино, поскольку она пытается стимулировать рост и находить новые хиты."
+  },
+  {
+   "title": "The stock market has already crashed: Why a Wall Street veteran says Nike is the ultimate turnaround trade.",
+   "link": "https://www.marketwatch.com/story/the-stock-market-has-already-crashed-why-a-wall-street-veteran-says-nike-is-the-ultimate-turnaround-trade-f4429eb3?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 2,
+   "ts": "2026-10-16T14:34:26.425984+00:00"
   }
  ],
  "last_digest": "2026-10-15",
@@ -15453,21 +15476,23 @@
   "checked": "2026-10-16T13:39:26.455902+00:00",
   "sec_seen": [
    "0001104659-26-116480",
-   "0001984020-26-000004",
+   "0000079879-26-000308",
    "0001104659-26-116484",
-   "0002030386-26-000004",
+   "0000079879-26-000307",
    "0001104659-26-116482",
+   "0000079879-26-000312",
+   "0000079879-26-000309",
    "0001104659-26-116486",
    "0001104659-26-116487",
+   "0000079879-26-000310",
    "0001104659-26-116485",
    "0001104659-26-116483",
    "0001493152-26-047346",
-   "0001572806-26-000007",
-   "0001984098-26-000003",
+   "0000079879-26-000311",
    "0001104659-26-116481",
-   "0001984100-26-000005",
    "0001628280-26-066061",
-   "0001104659-26-116488"
+   "0001104659-26-116488",
+   "0000079879-26-000306"
   ],
   "errors": {}
  }
