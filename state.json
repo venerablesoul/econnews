@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "98816a27064a9634": "2026-10-13T16:25:30.583133+00:00",
-  "9f84092b4f426bc9": "2026-10-13T16:25:30.583133+00:00",
-  "cb88b41178966493": "2026-10-13T16:25:30.583133+00:00",
-  "28e5eb10f2d27183": "2026-10-13T16:25:30.583133+00:00",
   "b64b3717a98ad142": "2026-10-13T16:35:30.548091+00:00",
   "fdf4639479d06f53": "2026-10-13T16:45:30.527514+00:00",
   "b7f67f1a5a189623": "2026-10-13T16:45:30.527514+00:00",
@@ -1154,41 +1150,12 @@
   "505e2d578305fad5": "2026-10-16T16:14:26.481800+00:00",
   "96b2804c947af402": "2026-10-16T16:14:26.481800+00:00",
   "f402cd32ee795cfe": "2026-10-16T16:19:26.466269+00:00",
-  "a761a89616fe6b73": "2026-10-16T16:19:26.466269+00:00"
+  "a761a89616fe6b73": "2026-10-16T16:19:26.466269+00:00",
+  "3aac6989311811c6": "2026-10-16T16:24:26.523931+00:00",
+  "ced1e5fb44b97f12": "2026-10-16T16:24:26.523931+00:00",
+  "c18751d046c942f7": "2026-10-16T16:29:26.544587+00:00"
  },
  "recent": [
-  {
-   "title": "Iran Escalates Attacks on Ships, Threatening Oil Export Recovery",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQLTUzR213ZGFwb1pwMXpVZ2cwMjRzOGVNMXRQdEhzWHAtbDZxTW9VY25KdVFBeHBYWVdDSzNKMWZKbmoxRjN4T0FRQWZWenFSeE1PZ0NwdWs0X0dWSzBidHc3dGw2WmpkM1dYZ2NRUlZyZUZrUnhka1d0Tk5LZ2hzREwxaTFwVG5qM3JaXy1tMTMtaEt3VDhFVlFtT08tVUlHbGwwUk9YSDRiSXVtbU5mVTNGR1Y?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T16:25:30.583133+00:00",
-   "title_ru": "Иран усиливает нападения на суда, угрожая восстановлению экспорта нефти",
-   "tags": [
-    "нефть"
-   ]
-  },
-  {
-   "title": "Fears AI harm is near for banks. Watchdogs step up containment efforts.",
-   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9WLVdzR0xIQ3RQN1lwelp4YUJlTHc0VHFNdkhMYi10SjhxTG02ckU2RUFYcE5jUHZPWElJTWZqVGJITE1QYV9DQUhQTmFjaVBRUXlOQ1pmU3ZUWE5aWmhzc3hoWTIzcXpJVG5YSThPNEstSTNiQnppbTQzbXM2UQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T16:25:30.583133+00:00",
-   "title_ru": "Опасения, что банки могут нанести вред искусственному интеллекту. Сторожевые псы активизируют усилия по сдерживанию."
-  },
-  {
-   "title": "‘Superintelligence’ may never arrive, Deutsche Bank says. What that could mean for the U.S. economy.",
-   "link": "https://www.marketwatch.com/story/superintelligence-may-never-arrive-deutsche-bank-says-what-that-could-mean-for-the-u-s-economy-765b89a8?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-13T16:25:30.583133+00:00"
-  },
   {
    "title": "Inside ETFs: The bull market turns four",
    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9ENHJkbmhzci1kb1k4ZUtDT2E5LS1ydk5BOU0tTVMyOWhVd3hxUXBILUtHNVBKcURaTWE1TFdqWUdpTk9vWEotUWxWT2hfMUhyc0ZOaktnMjdZTndiNEFxOG9yS0RrQQ?oc=5",
@@ -12191,6 +12158,30 @@
    "title_ru": "Италия договаривается с ЕС о мерах по ограничению влияния цен на газ на стоимость электроэнергии",
    "tags": [
     "gas"
+   ]
+  },
+  {
+   "title": "Дмитриев рассказал о просьбе американского Минфина к РФПИ",
+   "link": "https://www.rbc.ru/economics/16/10/2026/6ad23cad9a79473867fbb059",
+   "sources": [
+    "RBC"
+   ],
+   "score": 1,
+   "ts": "2026-10-16T16:24:26.523931+00:00"
+  },
+  {
+   "title": "Chip Stocks Set for Longest Losing Run Since 2008",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-16/bloomberg-surveillance-10-16-2026-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T16:29:26.544587+00:00",
+   "title_ru": "Акции чипов переживают самый продолжительный убыточный период с 2008 года",
+   "lead": "Jonathan Ferro, Lisa Abramowicz and Annmarie Hordern speak daily with leaders and decision makers from Wall Street to Washington and beyond.",
+   "lead_ru": "Джонатан Ферро, Лиза Абрамович и Аннмари Хордерн ежедневно беседуют с лидерами и лицами, принимающими решения, от Уолл-стрит до Вашингтона и за его пределами.",
+   "tags": [
+    "markets"
    ]
   }
  ],
