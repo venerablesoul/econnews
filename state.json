@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "afc2da2fadfb7385": "2026-10-13T11:15:02.959734+00:00",
-  "a6319fb2d7cb0938": "2026-10-13T11:15:02.959734+00:00",
-  "081cc2626260fb01": "2026-10-13T11:15:02.959734+00:00",
-  "62e0487efd976a17": "2026-10-13T11:15:02.959734+00:00",
   "718a1918e908f4ce": "2026-10-13T11:35:02.959469+00:00",
   "eb0c1fe7c54b7936": "2026-10-13T11:35:02.959469+00:00",
   "5b18103cc323f871": "2026-10-13T11:35:02.959469+00:00",
@@ -1143,31 +1139,11 @@
   "8d7c8cf8da274d14": "2026-10-16T11:08:52.052581+00:00",
   "48da39e340ce15cf": "2026-10-16T11:08:52.052581+00:00",
   "3fc219ff8e2d9e57": "2026-10-16T11:13:52.053345+00:00",
-  "10b56a26574095a1": "2026-10-16T11:13:52.053345+00:00"
+  "10b56a26574095a1": "2026-10-16T11:13:52.053345+00:00",
+  "e746eb978a70ada7": "2026-10-16T11:18:52.090650+00:00",
+  "96d49f684a005686": "2026-10-16T11:18:52.090650+00:00"
  },
  "recent": [
-  {
-   "title": "IMF Media Center",
-   "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE01VF9HTjdRNWF0bS1FT1RvYUt4RzU4aUxsaWdPTmNkU09jMnBWNmJFVVR3aVd1QWdfY0F3UDhDWi1sUHBMSFVyR0Vfa05iNWE0clJJaTBqcTlYT25qRUVN?oc=5",
-   "sources": [
-    "МВФ"
-   ],
-   "score": 5,
-   "ts": "2026-10-13T11:15:02.959734+00:00",
-   "title_ru": "Медиа-центр МВФ"
-  },
-  {
-   "title": "BOK Governor Backs Further Won Gains, Vows to Keep Policy Tight",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-13/bok-governor-backs-further-won-gains-vows-to-keep-policy-tight",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T11:15:02.959734+00:00",
-   "title_ru": "Губернатор БОК поддерживает дальнейшие достигнутые успехи и обещает сохранять жесткую политику",
-   "lead": "Bank of Korea Governor Shin Hyun Song said further gains in the won would be desirable, pointing to stronger household purchasing power from the currency’s substantial appreciation since the central bank shifted to tighter…",
-   "lead_ru": "Управляющий Банка Кореи Шин Хён Сон заявил, что желателен дальнейший рост воны, указав на усиление покупательной способности домохозяйств в результате существенного повышения курса валюты, поскольку центральный банк перешел к ужесточению…"
-  },
   {
    "title": "Chip Selloff Deepens Before Wall Street Earnings",
    "link": "https://www.bloomberg.com/news/videos/2026-10-13/the-opening-trade-10-13-2026-video",
@@ -12071,6 +12047,36 @@
    "tags": [
     "bonds"
    ]
+  },
+  {
+   "title": "Turkey’s Fast-Growing Corporate Bond Market Grapples With Funds Crisis Fallout",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-16/turkey-s-fast-growing-corporate-bond-market-grapples-with-funds-crisis-fallout",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T11:18:52.090650+00:00",
+   "title_ru": "Быстрорастущий рынок корпоративных облигаций Турции борется с последствиями финансового кризиса",
+   "lead": "The crisis roiling Turkey’s investment industry may be spilling into its fast-growing corporate bond market, potentially crimping smaller companies’ access to financing.",
+   "lead_ru": "Кризис, охвативший инвестиционную индустрию Турции, может распространиться на ее быстрорастущий рынок корпоративных облигаций, потенциально ограничивая доступ мелких компаний к финансированию.",
+   "tags": [
+    "bonds"
+   ]
+  },
+  {
+   "title": "BC Leans on US to Fund Deficit as Eby Rides Anti-American Mood",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-16/bc-leans-on-us-to-fund-deficit-as-eby-rides-anti-american-mood",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T11:18:52.090650+00:00",
+   "title_ru": "Британская Колумбия рассчитывает на то, что США профинансируют дефицит, поскольку у Эби антиамериканские настроения",
+   "lead": "With British Columbia voters heading to the polls next week, the ruling party is raising anti-US sentiment and urging residents to avoid the country altogether. The boycott doesn’t seem to apply to the bond market.",
+   "lead_ru": "Поскольку избиратели Британской Колумбии на следующей неделе отправятся на избирательные участки, правящая партия усиливает антиамериканские настроения и призывает жителей вообще избегать страны. Бойкот, похоже, не распространяется на рынок облигаций.",
+   "tags": [
+    "bonds"
+   ]
   }
  ],
  "last_digest": "2026-10-15",
@@ -15172,15 +15178,13 @@
    "0001193125-26-423159",
    "0001201490-26-000004",
    "0001798757-26-000009",
-   "0001895111-26-000020",
    "0001242654-26-000016",
    "0001193125-26-423227",
    "0002058781-26-000003",
    "0001887782-26-000009",
-   "0002004903-26-000006",
    "0001140361-26-039793",
+   "0002004903-26-000006",
    "0001529306-26-000009",
-   "0001531152-26-000073",
    "0001498287-26-000001",
    "0001652149-26-000006",
    "0001961877-26-000049",
