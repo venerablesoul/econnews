@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "544f861281086a47": "2026-10-13T08:05:02.987110+00:00",
   "87d5ecd7e951b662": "2026-10-13T08:15:02.959857+00:00",
   "297496af3cb2e03f": "2026-10-13T08:15:02.959857+00:00",
   "fc0b54bfbb97cc3a": "2026-10-13T08:25:02.990402+00:00",
@@ -1143,19 +1142,13 @@
   "7e14763e6ef2c3b7": "2026-10-16T07:38:52.140616+00:00",
   "0ee02fd7697b845b": "2026-10-16T07:53:52.129910+00:00",
   "5e46713be6032682": "2026-10-16T07:53:52.129910+00:00",
-  "179d46be6c95a27a": "2026-10-16T08:03:52.030170+00:00"
+  "179d46be6c95a27a": "2026-10-16T08:03:52.030170+00:00",
+  "c01e8247e0636b3e": "2026-10-16T08:08:52.069851+00:00",
+  "b17200efcec54a44": "2026-10-16T08:08:52.069851+00:00",
+  "cadf79635cab9073": "2026-10-16T08:08:52.069851+00:00",
+  "23f3dfef68aa588c": "2026-10-16T08:08:52.069851+00:00"
  },
  "recent": [
-  {
-   "title": "Growing debt burden poses significant risk to developing nations, G24 chair says",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOT3B3ejNMWVd0dnlLSnZHeW9jVTRPMEEybmpXY1Q5NHMwMlJCczJ5UVRtVDM0TTBFNm5USzZRazJpczFWUGNlRzE4bzJPUFhCRXBGUkphTnl1ckdjbTZuLUZmLWlFT2dNNUJ5TFNuUk5LTFptNGpfTXpFX3ZyWk54S01fZldaVHNDTGtVNTZOUVlxamNTZ2NmNzZHQ1BhX2xMOUpVS0x3M1YzYjVfbkEyN05zUFB1VGkzVmJiNkotM1ZSckE?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T08:05:02.987110+00:00",
-   "title_ru": "Растущее долговое бремя представляет значительный риск для развивающихся стран, заявил председатель G24"
-  },
   {
    "title": "BofA Poll Shows Investors Most Exposed to Tech Stocks Since 2020",
    "link": "https://www.bloomberg.com/news/articles/2026-10-13/bofa-poll-shows-investors-most-exposed-to-tech-stocks-since-2020",
@@ -11974,6 +11967,53 @@
     "bonds",
     "markets"
    ]
+  },
+  {
+   "title": "BOJ chief flags inflation overshoot risk, stresses importance of 2% anchor",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPdk5PYkp5bUZhRHk4VUJJdDhYWjFYTDNKU3poQ2d2b2pRbDNndWJvdElqZVdFM3FhZTRVQ2diM2I4bVlCUU5wd2tNYTZTN1VINjhYaDZfSzgwR1BJaTNqU3RjcGJSa3N2MGhIdmhFM2o1MzAtdjBUNXAyYmI1NXJRWmpYVk9BR3VyWkZmUmx6MmIyUGVmMFFtQzlWMkZzVllTaTdnZGFGWThZVkYybHd4d29iZndkTWc2QUFNa01TSFo4Zw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-16T08:08:52.069851+00:00",
+   "title_ru": "Глава БАНКА ЯПОНИИ отмечает, что инфляция превышает риск, подчеркивает важность 2% якоря",
+   "tags": [
+    "inflation"
+   ]
+  },
+  {
+   "title": "Asset Managers Curb Inflows Into Gold ETFs on Weak India Rupee",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-16/asset-managers-curb-inflows-into-gold-etfs-on-weak-india-rupee",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T08:08:52.069851+00:00",
+   "title_ru": "Управляющие активами сдерживают приток средств в золотые ETF на слабой индийской рупии",
+   "lead": "Indian asset managers are restricting fresh investments into gold products ahead of the key festive season when demand is strong, adding to the nation’s efforts to curb appetite for the precious metal amid a historic slide in the…",
+   "lead_ru": "Индийские управляющие активами ограничивают новые инвестиции в золотые изделия в преддверии ключевого праздничного сезона, когда спрос будет высоким, что усиливает усилия страны по сдерживанию аппетита к драгоценному металлу на фоне исторического падения...",
+   "tags": [
+    "gold"
+   ]
+  },
+  {
+   "title": "South Korea Turns to Dirty Coal as Winter Gas Squeeze Looms",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPaGtwaVdLdTNSMkU3WU1iXzFZcDEtOU1FTzhsYWF3R0tRWUFBaTl2bV9GRFo0MUgtS3JfNXVZRWxacGNkSGR3Vm9leVBLeVg3NHhfSHZCUkRpRWt2UGVMT2liX3laVTRvM192TEw2ejZoVDZHQzU5LWd0bVBaTGN0VUszdWI3bDZCazV3QVc3aF9PVU1fTGlKaFlmOUJubU1TSU5FeE1ZelhpdVJ5cDZv?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T08:08:52.069851+00:00",
+   "title_ru": "Южная Корея превращается в грязный уголь, поскольку зимние газовые станки выжимают"
+  },
+  {
+   "title": "Зарплаты педагогов высшей школы проиндексируют на 6,8% в 2027 году",
+   "link": "https://www.rbc.ru/rbcfreenews/6ad1d4fb2239caff4a435c65",
+   "sources": [
+    "RBC"
+   ],
+   "score": 1,
+   "ts": "2026-10-16T08:08:52.069851+00:00"
   }
  ],
  "last_digest": "2026-10-15",
@@ -15053,12 +15093,11 @@
    "0001568238-26-000001",
    "0001593199-26-000004",
    "0001218363-26-000005",
-   "0001778564-26-000185",
    "0001951059-26-000018",
    "0001628280-26-066035",
    "0001895106-26-000021",
-   "0001522767-26-000210",
    "0001104659-26-116322",
+   "0001522767-26-000210",
    "0001225208-26-008428",
    "0001522767-26-000208",
    "0001689498-26-000002",
@@ -15071,6 +15110,7 @@
    "0001798757-26-000009",
    "0001895111-26-000020",
    "0001581760-26-000171",
+   "0001525358-26-000034",
    "0001242654-26-000016",
    "0001522767-26-000206",
    "0001193125-26-423227",
@@ -15089,7 +15129,7 @@
    "0001193125-26-423158",
    "0001193125-26-423224",
    "0001593199-26-000005",
-   "0001525358-26-000034",
+   "0001778564-26-000185",
    "0001354116-26-000001",
    "0002058769-26-000006",
    "0001222287-26-000028",
