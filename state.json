@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "11c336d2f53bc2ea": "2026-10-13T00:44:05.898923+00:00",
-  "272d8c3587e2895a": "2026-10-13T00:44:05.898923+00:00",
-  "a86acb6b8893b87e": "2026-10-13T00:44:05.898923+00:00",
   "0b1b2b704ee2bf34": "2026-10-13T00:54:05.884923+00:00",
   "b773fc31b5f3ddca": "2026-10-13T00:54:05.884923+00:00",
   "62ebd3809ada8ac2": "2026-10-13T00:54:05.884923+00:00",
@@ -1141,38 +1138,10 @@
   "2d1c04f082d959ae": "2026-10-15T23:57:36.452163+00:00",
   "21c76c00e55204c1": "2026-10-16T00:22:36.424425+00:00",
   "cf9c135a01889dd9": "2026-10-16T00:32:36.439339+00:00",
-  "8de7718fc74f60ae": "2026-10-16T00:43:25.081492+00:00"
+  "8de7718fc74f60ae": "2026-10-16T00:43:25.081492+00:00",
+  "c68b7baece2af626": "2026-10-16T00:53:24.019900+00:00"
  },
  "recent": [
-  {
-   "title": "Korean Chip Stocks Sink on Chinese Rival Worry, Broadcom Remarks",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-13/korean-chip-stocks-sink-on-chinese-rival-worry-broadcom-remarks",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-13T00:44:05.898923+00:00",
-   "title_ru": "Акции корейских производителей чипов падают из-за опасений китайских конкурентов, заявление Broadcom",
-   "lead": "Samsung Electronics Co. and SK Hynix Inc. shares extended their recent selloff, as concerns about Chinese rivals and the stretched artificial intelligence stock rally intensified.",
-   "lead_ru": "Акции Samsung Electronics Co. и SK Hynix Inc. продолжили недавнюю распродажу, поскольку усилились опасения по поводу китайских конкурентов и затянувшегося ралли акций искусственного интеллекта.",
-   "tags": [
-    "рынки",
-    "Китай"
-   ]
-  },
-  {
-   "title": "Oil Holds Advance as Expanding Middle East War Threatens Supply",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOTkhVUHZmTDFoVTNnbXBIZlBxdl9WcTNRd1hXck91OXpJcEhOdEdOamV3V21KbzZYaVpraENpOExKX0M0Y2xTaVNTY1FaY3NfVk5SR3FqdFFRQ0hIZENYTWVLTzVnRGFpTS0xeTBVaV9fbVhkY1FDQTFweDg4dTFWNnpfcDd4ZEVpcUY3V1FscHMxZjdmUmh3TS03eTRvUQ?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T00:44:05.898923+00:00",
-   "title_ru": "Нефть удерживает рост, поскольку расширяющаяся война на Ближнем Востоке угрожает поставкам",
-   "tags": [
-    "нефть"
-   ]
-  },
   {
    "title": "BNY's LaRusse Sees Scope for Bond Market Relief Rally",
    "link": "https://www.bloomberg.com/news/videos/2026-10-13/bny-s-larusse-sees-scope-for-bond-market-relief-rally-video",
@@ -12036,6 +12005,16 @@
    "tags": [
     "China"
    ]
+  },
+  {
+   "title": "Singapore's September exports rise 68.4% on year",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNTU5maEZYSUVZRXJNaDBsVTJEY2ktQndYdUw1emJoYS1WZzJZUGNQckpwZ1Fxelp5T09kNmlCZ242Rm05UDV2Y2lPM2xTQnpWTHFLd2tLVW5EQU16dWtXd1NRekU2eXdXeWlkMzJYNjB3QW95WXUyVldmWkNFSklEN1hIb3d0YmVjekZwRl84UTB2UGMtN0oxb3BCTVpudw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T00:53:24.019900+00:00",
+   "title_ru": "Сентябрьский экспорт Сингапура вырос на 68,4% в годовом исчислении"
   }
  ],
  "last_digest": "2026-10-15",
@@ -15132,7 +15111,6 @@
    "0001522767-26-000208",
    "0001140361-26-039793",
    "0001354116-26-000001",
-   "0001213900-26-109933",
    "0001193125-26-423187",
    "0001798757-26-000009",
    "0001522767-26-000210",
@@ -15147,7 +15125,6 @@
    "0002019295-26-000012",
    "0001104659-26-116320",
    "0001225208-26-008428",
-   "0001104659-26-116317",
    "0002058769-26-000006",
    "0001193125-26-423158",
    "0001593199-26-000005",
