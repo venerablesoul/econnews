@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "7c9911cfef643590": "2026-10-13T14:05:30.537019+00:00",
-  "87e838380c373877": "2026-10-13T14:05:30.537019+00:00",
   "87bb5a523f98807c": "2026-10-13T14:15:30.544510+00:00",
   "bad02d5a5dfc73ee": "2026-10-13T14:25:30.583640+00:00",
   "cf1179d4726f508b": "2026-10-13T14:25:30.583640+00:00",
@@ -1156,36 +1154,10 @@
   "d1d50de41ffc7ae2": "2026-10-16T13:39:26.455902+00:00",
   "fa385e745830acb8": "2026-10-16T13:44:26.439612+00:00",
   "6873cd80065e1148": "2026-10-16T13:44:26.439612+00:00",
-  "281fb37eea27f63c": "2026-10-16T14:04:26.511873+00:00"
+  "281fb37eea27f63c": "2026-10-16T14:04:26.511873+00:00",
+  "4be6dad96c25ec6f": "2026-10-16T14:09:26.485490+00:00"
  },
  "recent": [
-  {
-   "title": "The RBA keeps hiking interest rates – but are the rate rises actually working?",
-   "link": "https://www.theguardian.com/business/2026/oct/14/rba-keeps-hiking-interest-rates-but-are-rises-actually-working",
-   "sources": [
-    "The Guardian"
-   ],
-   "score": 7,
-   "ts": "2026-10-13T14:05:30.537019+00:00",
-   "title_ru": "РБА продолжает повышать процентные ставки – но действительно ли повышение ставок работает?",
-   "lead": "With the cash rate at a 15-year high, consumer confidence has tanked – while household spending is still growing Get our breaking news email , free app or daily news podcast Interest rates have risen to 15-year highs and are…",
-   "lead_ru": "Поскольку ставка наличных денег достигла 15-летнего максимума, доверие потребителей упало, а расходы домохозяйств все еще растут. Получайте наши последние новости по электронной почте, бесплатному приложению или подкасту ежедневных новостей. Процентные ставки выросли до 15-летнего максимума и…",
-   "tags": [
-    "ставки"
-   ]
-  },
-  {
-   "title": "US Existing-Home Sales Edged Up Ahead of Mortgage-Rate Shock",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-13/us-existing-home-sales-edged-up-ahead-of-mortgage-rate-shock",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T14:05:30.537019+00:00",
-   "title_ru": "Продажи вторичного жилья в США выросли в преддверии шока ставок по ипотечным кредитам",
-   "lead": "Sales of US existing homes rose in September for the first time in four months, although a surge in mortgage rates and high prices are set to keep activity depressed through the remainder of the year.",
-   "lead_ru": "Продажи существующих домов в США выросли в сентябре впервые за четыре месяца, хотя рост ставок по ипотечным кредитам и высокие цены будут сдерживать активность до конца года."
-  },
   {
    "title": "Why one hedge-fund billionaire believes stocks are heading for a ‘really challenging’ 2027",
    "link": "https://www.marketwatch.com/story/why-one-hedge-fund-billionaire-believes-stocks-are-heading-for-a-really-challenging-2027-bb68f19e?mod=mw_rss_topstories",
@@ -12249,6 +12221,21 @@
    "score": 4,
    "ts": "2026-10-16T13:44:26.439612+00:00",
    "title_ru": "Аналитический уголок: Грядущие великие репрессии? Новые меры и столетие доказательств"
+  },
+  {
+   "title": "Глава «Газпром нефти» заявил о новых вызовах для мировой нефтяной отрасли",
+   "link": "https://www.rbc.ru/business/16/10/2026/6ad22ba6c69ebebcfba1ea97",
+   "sources": [
+    "RBC"
+   ],
+   "score": 4,
+   "ts": "2026-10-16T14:09:26.485490+00:00",
+   "title_en": "The head of Gazprom Neft announced new challenges for the global oil industry",
+   "lead": "Нефтяные компании в результате энергокризиса столкнулись с новыми вызовами, за счет чего приоритет развития сместился в сторону обеспечения прочности бизнеса.",
+   "lead_en": "As a result of the energy crisis, oil companies faced new challenges, due to which the development priority shifted towards ensuring the strength of the business.",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-15",
@@ -15410,20 +15397,19 @@
    "0000919574-26-007000",
    "0001104659-26-116484",
    "0002030386-26-000004",
-   "0000313927-26-000332",
    "0002074304-26-000004",
    "0001104659-26-116482",
    "0001104659-26-116486",
    "0001104659-26-116487",
    "0001104659-26-116485",
    "0001104659-26-116483",
-   "0001984098-26-000003",
+   "0001493152-26-047346",
    "0001572806-26-000007",
+   "0001984098-26-000003",
    "0001984142-26-000004",
    "0001104659-26-116481",
    "0001984100-26-000005",
-   "0001104659-26-116488",
-   "0000313927-26-000330"
+   "0001104659-26-116488"
   ],
   "errors": {}
  }
