@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "31a2bbd9d03d7971": "2026-10-13T18:32:05.057140+00:00",
   "2d7f423f3ce5896b": "2026-10-13T18:42:05.068019+00:00",
   "39087b5b917f054a": "2026-10-13T18:42:05.068019+00:00",
   "e299dbc092a7e817": "2026-10-13T18:52:05.041621+00:00",
@@ -1150,19 +1149,14 @@
   "945eca93fb5b4bbc": "2026-10-16T18:09:55.595324+00:00",
   "da27e7ac744641f4": "2026-10-16T18:14:55.649025+00:00",
   "95d5ce76b21b86f4": "2026-10-16T18:24:55.647038+00:00",
-  "7824b258e4dd582e": "2026-10-16T18:24:55.647038+00:00"
+  "7824b258e4dd582e": "2026-10-16T18:24:55.647038+00:00",
+  "90e642875f228126": "2026-10-16T18:29:55.612798+00:00",
+  "12ab1b6980bca0f3": "2026-10-16T18:29:55.612798+00:00",
+  "b6f98e8d2a15aa6f": "2026-10-16T18:29:55.612798+00:00",
+  "969e230a9ab47d14": "2026-10-16T18:34:55.656697+00:00",
+  "c0526b8008dd7de2": "2026-10-16T18:34:55.656697+00:00"
  },
  "recent": [
-  {
-   "title": "Philip R. Lane: The AI opportunity for Europe",
-   "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261013~9db9bf4fd6.en.html",
-   "sources": [
-    "ЕЦБ"
-   ],
-   "score": 4,
-   "ts": "2026-10-13T18:32:05.057140+00:00",
-   "title_ru": "Филип Р. Лейн: Возможности ИИ для Европы"
-  },
   {
    "title": "Sheinbaum Vows to Buy More Goods From the US to Sign Trade Deal",
    "link": "https://www.bloomberg.com/news/articles/2026-10-13/sheinbaum-vows-to-buy-more-goods-from-the-us-to-sign-trade-deal",
@@ -12118,6 +12112,28 @@
    "score": 4,
    "ts": "2026-10-16T18:24:55.647038+00:00",
    "title_ru": "Стенограмма брифинга для прессы: Ежегодные собрания Департамента Западного полушария, 2026 г."
+  },
+  {
+   "title": "US Posts $1.99 Trillion Budget Gap for 2026 on Spending Rise",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-16/us-posts-1-99-trillion-budget-gap-for-2026-as-spending-climbs",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T18:34:55.656697+00:00",
+   "title_ru": "США объявили о дефиците бюджета на 2026 год в размере 1,99 триллиона долларов из-за роста расходов",
+   "lead": "The US federal budget deficit widened to nearly $2 trillion for the 2026 fiscal year, serving a fresh reminder of the scale of government borrowing needs and leaving the nation on track for a record high debt burden in coming…",
+   "lead_ru": "Дефицит федерального бюджета США в 2026 финансовом году увеличился почти до $2 триллионов, что послужило новым напоминанием о масштабах потребностей правительства в заимствованиях и поставило страну на путь рекордно высокого долгового бремени в предстоящие годы."
+  },
+  {
+   "title": "Private credit roundup: CoreWeave's debt stress tests private credit's AI financing boom",
+   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOTXFuNmFhVWZ1ekJvUURza2FlWVN5dGlWOWpScUFKQ1pOTlVIMUVnd0FUVndpNHdBVEZ5YW1VYjlUeVk5eU0yZHJVcGN5ZVNCQklJQVd4RWJSZVNYRW5oSXEyeXdyQzR4MkltanN2NjVJRnVfejkwUHVQZHlSb0t6eEtwM2RtUUU0WVg4SFEwUGMxOHVncGFudTBLWFRvTnpmRk5fakFoeXl6OHM5MEZiM2luOWo0S0FKTExibXRxYnduY25OaDZXUkVzWGNKOGxmQWc?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T18:34:55.656697+00:00",
+   "title_ru": "Обзор частных кредитов: долговой стресс CoreWeave проверяет бум финансирования ИИ в сфере частного кредитования"
   }
  ],
  "last_digest": "2026-10-16",
@@ -15306,11 +15322,13 @@
   "sec_seen": [
    "0001628280-26-066099",
    "0000070858-26-000486",
+   "0000007789-26-000246",
    "0001214659-26-012986",
-   "0000007789-26-000245",
+   "0001791771-26-000007",
+   "0000764180-26-000108",
+   "0002081604-26-000013",
    "0001419536-26-000160",
-   "0001382452-26-000006",
-   "0001476342-26-000004"
+   "0000007789-26-000245"
   ],
   "errors": {}
  }
