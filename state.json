@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "718a1918e908f4ce": "2026-10-13T11:35:02.959469+00:00",
-  "eb0c1fe7c54b7936": "2026-10-13T11:35:02.959469+00:00",
-  "5b18103cc323f871": "2026-10-13T11:35:02.959469+00:00",
   "0b56cc29258771d0": "2026-10-13T11:45:02.970588+00:00",
   "3609b2aecc0e349f": "2026-10-13T11:45:02.970588+00:00",
   "c80742ee83e84e79": "2026-10-13T11:45:02.970588+00:00",
@@ -1145,33 +1142,13 @@
   "4c75f1eee9872259": "2026-10-16T11:28:52.043369+00:00",
   "7cb806baae0d2ae4": "2026-10-16T11:28:52.043369+00:00",
   "d76b1652ee67b7af": "2026-10-16T11:28:52.043369+00:00",
-  "94a8e74d5b9796b0": "2026-10-16T11:33:52.065441+00:00"
+  "94a8e74d5b9796b0": "2026-10-16T11:33:52.065441+00:00",
+  "3be41831bf51ff37": "2026-10-16T11:39:26.416483+00:00",
+  "1f001fea97bb13e3": "2026-10-16T11:44:26.459236+00:00",
+  "b41a9bb9c6e194ae": "2026-10-16T11:44:26.459236+00:00",
+  "a677dde44236c959": "2026-10-16T11:44:26.459236+00:00"
  },
  "recent": [
-  {
-   "title": "Chip Selloff Deepens Before Wall Street Earnings",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-13/the-opening-trade-10-13-2026-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-13T11:35:02.959469+00:00",
-   "title_ru": "Распродажа фишек усиливается раньше, чем доходы Уолл-стрит",
-   "lead": "A selloff in chipmakers extended for another day, putting pressure on equity markets as traders also prepared for Wall Street banks to kick off the US earnings season in earnest.",
-   "lead_ru": "Распродажа акций производителей чипов продлилась еще на один день, оказав давление на фондовые рынки, поскольку трейдеры также готовились к тому, что банки Уолл-стрит всерьез начнут сезон отчетности в США.",
-   "tags": [
-    "рынки"
-   ]
-  },
-  {
-   "title": "U.S. wealth has shifted to stocks from homes. There are big reasons to worry.",
-   "link": "https://www.marketwatch.com/story/u-s-wealth-has-shifted-to-stocks-from-homes-there-are-big-reasons-to-worry-aa05864d?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-13T11:35:02.959469+00:00"
-  },
   {
    "title": "BlackRock cools on US stocks, turns bullish on short-dated Treasuries",
    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOWHlTeUJyODlNSGNJVjRKdzloTDJOZUZmb1NWN0xsRW05VkJETkJQejVsNTFVUG05N0FKZEJDaWhMb0JYMmc2dWk4QjdmRFpNUGQ1TEVmbGRPS2F2cmxjR1RsdEpoY3ZVYUFzWUtOeVpDMmxzam13X0dkNG1nZnMtWDlqNzQ1dEdxVFdNWm5Rb1F2b1loeU9JMzFzV2pFbGk0RTdRNnYzMUMtMTQ?oc=5",
@@ -12125,6 +12102,44 @@
     "oil",
     "China"
    ]
+  },
+  {
+   "title": "ЕС увеличил импорт российского СПГ на 60% на фоне ограничений",
+   "link": "https://www.rbc.ru/economics/16/10/2026/6ad1ebb57bfe5dbe1b87b965",
+   "sources": [
+    "RBC"
+   ],
+   "score": 1,
+   "ts": "2026-10-16T11:39:26.416483+00:00"
+  },
+  {
+   "title": "CoreWeave shares, bonds headed for steep weekly losses as AI borrowing concerns mount",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOQ2NPeFhDRXRadVpwTmIwYlN0MlBfU2tLdWJfcHRKRHFvU3NuXzY1WW5RVEgyZThFbmdVajVEZnpQUklNbjFlbmRDcUVQNTZJWDJOZ253eHVHeGlNMkk0Vm9VQk1xZGVJNEs0cFV2WUxTei1FNW5oNGZOZXBxWWhZcDh2T25EQl9OUDYtM0dEdEFFa1ZkZ2hHcGtveVRKeEFrd0tDeHB4eXEzeEFxLUw1VWo1RHQ2WUs0ODBITVJvZw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-16T11:44:26.459236+00:00",
+   "title_ru": "Акции и облигации CoreWeave понесли резкие недельные потери из-за растущих опасений по поводу заимствований в сфере ИИ",
+   "tags": [
+    "bonds",
+    "markets"
+   ]
+  },
+  {
+   "title": "Traders Are Shelling Out Millions to Secure Copper",
+   "link": "https://www.bloomberg.com/news/newsletters/2026-10-16/traders-are-shelling-out-millions-to-secure-copper",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T11:44:26.459236+00:00",
+   "title_ru": "Трейдеры тратят миллионы, чтобы обеспечить медь",
+   "lead": "The threat of Trump tariffs is driving huge demand for the red metal.",
+   "lead_ru": "Угроза тарифов Трампа стимулирует огромный спрос на красный металл.",
+   "tags": [
+    "tariffs"
+   ]
   }
  ],
  "last_digest": "2026-10-15",
@@ -15228,27 +15243,24 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-16T10:38:52.050591+00:00",
+  "checked": "2026-10-16T11:39:26.416483+00:00",
   "sec_seen": [
    "0001887782-26-000009",
    "0001778564-26-000185",
    "0001652149-26-000006",
    "0001193125-26-423224",
    "0002004903-26-000006",
-   "0001193125-26-423158",
    "0002058769-26-000006",
    "0001193125-26-423229",
    "0001140361-26-039793",
    "0001568238-26-000001",
    "0001536288-26-000013",
    "0001453368-26-000002",
-   "0001798757-26-000009",
    "0001498287-26-000001",
    "0001222287-26-000028",
    "0001529306-26-000009",
    "0002127484-26-000021",
    "0001104659-26-116383",
-   "0001224095-26-000003",
    "0002058781-26-000003",
    "0002063872-26-000008",
    "0001628280-26-066045",
