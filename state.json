@@ -1142,7 +1142,9 @@
   "f0144117839768be": "2026-10-16T21:34:55.536616+00:00",
   "130882a2db80c9c5": "2026-10-16T21:49:55.587692+00:00",
   "88101cf3f43cfc51": "2026-10-16T21:54:55.613102+00:00",
-  "2c8e0f4cd7612664": "2026-10-16T21:54:55.613102+00:00"
+  "2c8e0f4cd7612664": "2026-10-16T21:54:55.613102+00:00",
+  "fdd491c5fb7e26bc": "2026-10-16T22:04:55.628812+00:00",
+  "a513b95c9c5f6773": "2026-10-16T22:04:55.628812+00:00"
  },
  "recent": [
   {
@@ -12031,6 +12033,31 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Raising bank tax is not best choice for UK budget, IMF says",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQcTRwblU5c0l3TUtmQ3ZPeXBTRjYwUWZBOWxNLVhVUm9MTndOQUY5aUUyaHFYdDZFOVhwaHNRUExDdFJEOGo5RDJoeVlXV1dtSnJxeUI1NUlYaVhQWkx3cDZJdUp2YzVLQlptWGVvM29zdUpsaGl3REVDOUZ4bUNLR3FwcnBRVkdIVDFtMWQ3NDU2RElvbU9SYXg1amlmRjNh?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-16T22:04:55.628812+00:00",
+   "title_ru": "Повышение банковского налога – не лучший выбор для бюджета Великобритании, считают в МВФ"
+  },
+  {
+   "title": "Nowhere to hide: Tech selloff hits software and chip stocks alike",
+   "link": "https://www.marketwatch.com/story/nowhere-to-hide-tech-selloff-hits-software-and-chip-stocks-alike-6d96773c?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 4,
+   "ts": "2026-10-16T22:04:55.628812+00:00",
+   "title_ru": "Негде спрятаться: распродажа технологий одинаково ударила по акциям производителей программного обеспечения и микросхем",
+   "lead": "The software and semiconductor sectors haven’t been trading in tandem much this year, but they collectively fell Friday as AI and interest-rate fears hit the market.",
+   "lead_ru": "Секторы программного обеспечения и полупроводников в этом году не торговались в тандеме, но в пятницу они в целом упали, поскольку на рынок обрушились опасения по поводу искусственного интеллекта и процентных ставок.",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-16",
@@ -14204,6 +14231,22 @@
    },
    {
     "src": "sec",
+    "id": "b8c7f32d3a23fdf1",
+    "ticker": "PACS",
+    "company": "PACS Group, Inc.",
+    "who": "Jason Hulse Murray",
+    "role": "CEO, 10% owner",
+    "type": "sell",
+    "value": 5614667,
+    "shares": 118729,
+    "price": 47.29,
+    "plan": true,
+    "date": "2026-10-16",
+    "disclosed": "2026-10-16",
+    "link": "https://www.sec.gov/Archives/edgar/data/2014386/000201438626000020/0002014386-26-000020-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "a62608ea7a58d5bf",
     "ticker": "EDRY",
     "company": "EuroDry Ltd.",
@@ -14572,6 +14615,38 @@
    },
    {
     "src": "sec",
+    "id": "aea71caa45492def",
+    "ticker": "MDT",
+    "company": "Medtronic plc",
+    "who": "Michael Marinaro",
+    "role": "EVP, Pres MedSurg and Americas",
+    "type": "sell",
+    "value": 1000320,
+    "shares": 10420,
+    "price": 96.0,
+    "plan": true,
+    "date": "2026-10-15",
+    "disclosed": "2026-10-16",
+    "link": "https://www.sec.gov/Archives/edgar/data/1984186/000198418626000010/0001984186-26-000010-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "a5b14eba35154ebb",
+    "ticker": "MDT",
+    "company": "Medtronic plc",
+    "who": "Geoffrey Martha",
+    "role": "CEO",
+    "type": "sell",
+    "value": 4750000,
+    "shares": 50000,
+    "price": 95.0,
+    "plan": true,
+    "date": "2026-10-15",
+    "disclosed": "2026-10-16",
+    "link": "https://www.sec.gov/Archives/edgar/data/1613103/000156040926000011/0001560409-26-000011-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "98da5e40af377ecf",
     "ticker": "AFL",
     "company": "AFLAC INC",
@@ -14841,6 +14916,22 @@
     "date": "2026-10-14",
     "disclosed": "2026-10-16",
     "link": "https://www.sec.gov/Archives/edgar/data/1674416/000119312526424317/0001193125-26-424317-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "81abbb98968aaa29",
+    "ticker": "PACS",
+    "company": "PACS Group, Inc.",
+    "who": "Joshua Jergensen",
+    "role": "COO",
+    "type": "sell",
+    "value": 1780004,
+    "shares": 40000,
+    "price": 44.5,
+    "plan": true,
+    "date": "2026-10-14",
+    "disclosed": "2026-10-16",
+    "link": "https://www.sec.gov/Archives/edgar/data/2014275/000201427526000016/0002014275-26-000016-index.htm"
    },
    {
     "src": "sec",
@@ -15864,7 +15955,6 @@
    "0001628280-26-066186",
    "0001628280-26-066175",
    "0001061630-26-000085",
-   "0001193125-26-424289",
    "0001364096-26-000008",
    "0001628280-26-066178",
    "0001924023-26-000003",
@@ -15872,38 +15962,39 @@
    "0000055135-26-000165",
    "0002116060-26-000002",
    "0001628280-26-066185",
-   "0001193125-26-424283",
-   "0001193125-26-424285",
    "0001591094-26-000004",
+   "0001560409-26-000011",
    "0001061630-26-000089",
    "0002089263-26-000018",
+   "0002014386-26-000020",
    "0001061630-26-000087",
+   "0001216725-26-000014",
+   "0001815099-26-000010",
    "0001628280-26-066183",
    "0001628280-26-066182",
    "0001974777-26-000020",
    "0001061630-26-000086",
    "0001628280-26-066180",
-   "0001193125-26-424287",
    "0000009389-26-000126",
-   "0001193125-26-424288",
-   "0001628280-26-066172",
+   "0001984186-26-000010",
    "0001628280-26-066179",
    "0000009389-26-000124",
    "0001628280-26-066177",
-   "0001628280-26-066173",
-   "0001193125-26-424286",
    "0001548312-26-000051",
    "0001870987-26-000029",
+   "0000055135-26-000167",
    "0001061630-26-000088",
    "0001577526-26-000140",
    "0001098231-26-000012",
    "0001628280-26-066176",
-   "0001193125-26-424284",
    "0002129321-26-000017",
    "0001193125-26-424317",
+   "0002014275-26-000016",
    "0001822289-26-000012",
+   "0001437749-26-032849",
    "0001839017-26-000003",
    "0001628280-26-066184",
+   "0000719955-26-000221",
    "0002089362-26-000021",
    "0001628280-26-066181"
   ],
