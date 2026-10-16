@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "7cb4209dd2caf892": "2026-10-13T09:55:02.987819+00:00",
-  "48e9b07beb7b4db0": "2026-10-13T09:55:02.987819+00:00",
-  "6e635a02005a9d6c": "2026-10-13T09:55:02.987819+00:00",
   "27230cc576cd9ef9": "2026-10-13T10:05:02.986267+00:00",
   "47d1068e693233a1": "2026-10-13T10:05:02.986267+00:00",
   "817d44f935c89856": "2026-10-13T10:05:02.986267+00:00",
@@ -1146,36 +1143,12 @@
   "c734cf11fe0a3fe4": "2026-10-16T09:43:52.034981+00:00",
   "119f51e2bd5cf9fa": "2026-10-16T09:48:52.134831+00:00",
   "0692814faeed76b7": "2026-10-16T09:53:52.071815+00:00",
-  "d068e279dd08da82": "2026-10-16T09:53:52.071815+00:00"
+  "d068e279dd08da82": "2026-10-16T09:53:52.071815+00:00",
+  "c1b98aa2eccba191": "2026-10-16T09:58:52.099555+00:00",
+  "14f0ae7acdf64b86": "2026-10-16T09:58:52.099555+00:00",
+  "26d6fbaee3561f28": "2026-10-16T09:58:52.099555+00:00"
  },
  "recent": [
-  {
-   "title": "Cracks Grow Across the AI Trade as Memory-Chip Stocks Tumble",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-13/cracks-grow-across-the-ai-trade-as-memory-chip-stocks-tumble",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-13T09:55:02.987819+00:00",
-   "title_ru": "В сфере торговли искусственным интеллектом растут трещины, поскольку акции чипов памяти падают",
-   "lead": "The global artificial intelligence trade is coming under increasing pressure, with a deepening selloff in chip stocks instilling fresh doubts about the sustainability of one of the most powerful investment themes of recent years.",
-   "lead_ru": "Мировая торговля искусственным интеллектом находится под растущим давлением, поскольку усиливающаяся распродажа акций чипов вселяет новые сомнения в устойчивости одной из самых мощных инвестиционных тем последних лет.",
-   "tags": [
-    "рынки"
-   ]
-  },
-  {
-   "title": "India, Africa Leaders on Emerging Market Investment",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-13/india-africa-leaders-on-emerging-market-investment-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T09:55:02.987819+00:00",
-   "title_ru": "Индия и Африка лидируют по инвестициям в развивающиеся рынки",
-   "lead": "Alain Ebobissé, CEO, Africa50 and Smt.",
-   "lead_ru": "Ален Эбобиссе, генеральный директор Africa50 и Smt."
-  },
   {
    "title": "ECB Attacks Finland’s Bid to Make Bank Supervisors Target Growth",
    "link": "https://www.bloomberg.com/news/articles/2026-10-13/ecb-attacks-finland-s-bid-to-make-bank-supervisors-target-growth",
@@ -11996,6 +11969,44 @@
    "title_ru": "MSCI подстегивает рост рынка Индонезии после нескольких месяцев предупреждений",
    "lead": "For the staid and often predictable world of stock-market indexing, it was a bombshell moment.",
    "lead_ru": "Для уравновешенного и часто предсказуемого мира индексации фондового рынка это был момент разорвавшейся бомбы."
+  },
+  {
+   "title": "Fed chief Warsh: economy robust, but don't ask me about rates",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE43QW5EMmVnOGg5Z0JaQWl0S2FyalctWkdiNVNrQzJ1d0JwMnBwVFAxYm5JbGlIZ0dWWmxPUnhHSWswT3JRZlUyMDZNb0t2UzNHUkNURVhaUjI1NkpxaGVsUGNfYndlQkE?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-16T09:58:52.099555+00:00",
+   "title_ru": "Глава ФРС Уорш: экономика крепкая, но не спрашивайте меня о ставках",
+   "tags": [
+    "Fed"
+   ]
+  },
+  {
+   "title": "Uganda in Final Stages of Oil Production (Video)",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-16/uganda-in-final-stages-of-oil-production-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T09:58:52.099555+00:00",
+   "title_ru": "Уганда находится на заключительной стадии добычи нефти (Видео)",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "Indonesia Unveils $117 Million in Fines After MSCI Warning",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-16/indonesia-unveils-117-million-in-fines-after-msci-warning",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T09:58:52.099555+00:00",
+   "title_ru": "Индонезия объявила о штрафах на 117 миллионов долларов после предупреждения MSCI",
+   "lead": "Indonesia announced about $117 million in fines tied to manipulative market practices involving three companies, hours after global index provider MSCI Inc.",
+   "lead_ru": "Индонезия объявила о штрафах на сумму 117 миллионов долларов, связанных с манипулятивными рыночными практиками с участием трех компаний, спустя несколько часов после того, как глобальный поставщик индексов MSCI Inc."
   }
  ],
  "last_digest": "2026-10-15",
@@ -15075,12 +15086,11 @@
    "0001568238-26-000001",
    "0001593199-26-000004",
    "0001218363-26-000005",
-   "0001778564-26-000185",
    "0001951059-26-000018",
    "0001628280-26-066035",
    "0001895106-26-000021",
-   "0001522767-26-000210",
    "0001104659-26-116322",
+   "0001522767-26-000210",
    "0001225208-26-008428",
    "0001522767-26-000208",
    "0001689498-26-000002",
@@ -15093,6 +15103,7 @@
    "0001798757-26-000009",
    "0001895111-26-000020",
    "0001581760-26-000171",
+   "0001525358-26-000034",
    "0001242654-26-000016",
    "0001522767-26-000206",
    "0001193125-26-423227",
@@ -15111,7 +15122,7 @@
    "0001193125-26-423158",
    "0001193125-26-423224",
    "0001593199-26-000005",
-   "0001525358-26-000034",
+   "0001778564-26-000185",
    "0001354116-26-000001",
    "0002058769-26-000006",
    "0001222287-26-000028",
