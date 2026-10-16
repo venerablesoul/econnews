@@ -1142,7 +1142,10 @@
   "bc167b5caf8620c0": "2026-10-16T09:08:52.073845+00:00",
   "4ba27f8d8b48ec46": "2026-10-16T09:08:52.073845+00:00",
   "060f4284caf5f02d": "2026-10-16T09:08:52.073845+00:00",
-  "cbc14f1b82d7ab9c": "2026-10-16T09:13:52.152282+00:00"
+  "cbc14f1b82d7ab9c": "2026-10-16T09:13:52.152282+00:00",
+  "f2a4b6d6c08a9767": "2026-10-16T09:23:52.157385+00:00",
+  "9fbe11e873eb5751": "2026-10-16T09:23:52.157385+00:00",
+  "91b659551b94a71c": "2026-10-16T09:23:52.157385+00:00"
  },
  "recent": [
   {
@@ -11944,6 +11947,26 @@
    "score": 3,
    "ts": "2026-10-16T09:13:52.152282+00:00",
    "title_ru": "Продажи жилья в Канаде упали в сентябре из-за повышения ставок по ипотечным кредитам, сообщает CREA"
+  },
+  {
+   "title": "Short-term trading not worth it for most investors, says expert",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE04aThVUk1Qd3hBZThVaXp3X2RRQTAtYVFlajZ3a1pTeThPSzFhQlZJQXZnNHlRNmdSZkYwVmpxSTdHcF9jbkpnWnQ4UnBSM0J5aHNfUmV2YjZlS0k3VWVXczBrdG5DUk0?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T09:23:52.157385+00:00",
+   "title_ru": "Краткосрочная торговля не стоит того для большинства инвесторов, говорит эксперт"
+  },
+  {
+   "title": "Low market volatility breeds investor complacency, says expert",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE56dmdqTklPRGtBMm5NYkRvbWhERlRGc3NYN1hwb2hoVERiTWM5NWRMYmxIYXRiUE1OZ244X2lBcnJFaElpSG9uMEV0Z1FMMDFYNlBNOFpaODFKZkRISUoxV2JqeV9NT0k?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T09:23:52.157385+00:00",
+   "title_ru": "Низкая волатильность рынка порождает самоуспокоенность инвесторов, говорит эксперт"
   }
  ],
  "last_digest": "2026-10-15",
@@ -11966,7 +11989,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 1,
+  "Fed": 0,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
