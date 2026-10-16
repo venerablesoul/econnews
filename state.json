@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e5d590bc85fb0e2f": "2026-10-13T09:05:02.979675+00:00",
-  "17305a9464617ec2": "2026-10-13T09:05:02.979675+00:00",
   "be0f14e14a486e48": "2026-10-13T09:25:02.986308+00:00",
   "4351551321f76b6e": "2026-10-13T09:25:02.986308+00:00",
   "70e1b25a97aee61d": "2026-10-13T09:25:02.986308+00:00",
@@ -1139,27 +1137,13 @@
   "2e226c8d82019f1f": "2026-10-16T08:53:52.027501+00:00",
   "c8a4fad626bf16c7": "2026-10-16T08:53:52.027501+00:00",
   "d70b9ada83e32403": "2026-10-16T09:03:52.026195+00:00",
-  "368159d118c8b776": "2026-10-16T09:03:52.026195+00:00"
+  "368159d118c8b776": "2026-10-16T09:03:52.026195+00:00",
+  "f5586560e6b618bf": "2026-10-16T09:08:52.073845+00:00",
+  "bc167b5caf8620c0": "2026-10-16T09:08:52.073845+00:00",
+  "4ba27f8d8b48ec46": "2026-10-16T09:08:52.073845+00:00",
+  "060f4284caf5f02d": "2026-10-16T09:08:52.073845+00:00"
  },
  "recent": [
-  {
-   "title": "This one chart from the IMF tells the entire story of the world economy this year",
-   "link": "https://www.marketwatch.com/story/this-one-chart-from-the-imf-tells-the-entire-story-of-the-world-economy-this-year-8cc81534?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 2,
-   "ts": "2026-10-13T09:05:02.979675+00:00"
-  },
-  {
-   "title": "The Korean stock market’s in freefall, and these are the reasons why",
-   "link": "https://www.marketwatch.com/story/the-korean-stock-markets-in-freefall-and-these-are-the-reasons-why-9615ac8d?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-13T09:05:02.979675+00:00"
-  },
   {
    "title": "German September inflation confirmed at 3.3%",
    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOdllCaWhnRFJJRHdRa2hHZVZIQVVfcTJjTC1sTkNnS2hMSFVhWFRTUkN6QjB6TWFHXzNyaU5DZkFpQ2VVLW1KQWRPSVk4SU4yV1BDeFo0N3RONGN2V3A3X003NXd0RWUtUVFCNVNqVkFQSUhaT1YtMHdPRVU4SE4xMHpjZW5Ub3Nqa0NfcExBWlhqZw?oc=5",
@@ -11914,6 +11898,41 @@
    "score": 3,
    "ts": "2026-10-16T09:03:52.026195+00:00",
    "title_ru": "Французский политический кризис, перерастающий в долговой кризис"
+  },
+  {
+   "title": "Indonesia regulator announces sanctions against 3 listed firms",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPT19xNkFlWGlKRk14ZTJVYnFwTGM0eEIxeGdLdUN4OE5NekIyOWJkSVNuZWdZdW1NYndTYU1RUF9EQm1kdklJaHNWMjg2TFNNaU1PZkJmdGdtb0FIaExBb0tUdV85a3ZDdVgwLU9IOXNQWTVvRDQ0ZGJINTdQYWJ2ZUt5S3BXbnFHMXBPazh3Y0dWaXBuQ2RscXBmb2FadnVKWkxNTXQ5bDRmWl9aaDh1bWxhaF9fR210?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-16T09:08:52.073845+00:00",
+   "title_ru": "Регулятор Индонезии объявляет о санкциях против трех компаний, котирующихся на бирже",
+   "tags": [
+    "sanctions"
+   ]
+  },
+  {
+   "title": "Hedge funds' role comes into focus following European bonds turmoil",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNOXExeXEzNDNZOWtnSFNGYU5jLUJKLUJPc2lMNGZQRWE4c2VSOW8zVEV0eGFEOFJIMnFhM3YxMVdhZk1USG0zNGtWdEE3cXZJTEtJamJSY2pOMVU0clcybWljQjlsNnM0NGhDRkUwMlhCbnRQWGljZEZ5ZkE4eEptUHBGRkRfc2ZScG9FOVZJS0dsMjEzX1BqTzFJSFV4R2NmbXU5Z3BCdnREQ0ZyQld5cnVwVFZmZzRhakE?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T09:08:52.073845+00:00",
+   "title_ru": "Роль хедж-фондов становится в центре внимания после кризиса на европейских облигациях",
+   "tags": [
+    "bonds"
+   ]
+  },
+  {
+   "title": "Разгон на биотопливе: как отходы становятся драйвером экономики",
+   "link": "https://www.rbc.ru/opinions/economics/16/10/2026/6accfd909a7947c6104ca4bc",
+   "sources": [
+    "RBC"
+   ],
+   "score": 1,
+   "ts": "2026-10-16T09:08:52.073845+00:00"
   }
  ],
  "last_digest": "2026-10-15",
@@ -14993,12 +15012,11 @@
    "0001568238-26-000001",
    "0001593199-26-000004",
    "0001218363-26-000005",
-   "0001778564-26-000185",
    "0001951059-26-000018",
    "0001628280-26-066035",
    "0001895106-26-000021",
-   "0001522767-26-000210",
    "0001104659-26-116322",
+   "0001522767-26-000210",
    "0001225208-26-008428",
    "0001522767-26-000208",
    "0001689498-26-000002",
@@ -15011,6 +15029,7 @@
    "0001798757-26-000009",
    "0001895111-26-000020",
    "0001581760-26-000171",
+   "0001525358-26-000034",
    "0001242654-26-000016",
    "0001522767-26-000206",
    "0001193125-26-423227",
@@ -15029,7 +15048,7 @@
    "0001193125-26-423158",
    "0001193125-26-423224",
    "0001593199-26-000005",
-   "0001525358-26-000034",
+   "0001778564-26-000185",
    "0001354116-26-000001",
    "0002058769-26-000006",
    "0001222287-26-000028",
