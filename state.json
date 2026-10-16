@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "0206db8fcc9c90bc": "2026-10-13T06:34:38.038710+00:00",
-  "b15c5454ab27af87": "2026-10-13T06:34:38.038710+00:00",
   "a2823a5297ddbe3c": "2026-10-13T06:44:38.014268+00:00",
   "da1eb05e5cba2d12": "2026-10-13T06:45:03.232200+00:00",
   "6676c3ee7afd4511": "2026-10-13T06:55:02.964919+00:00",
@@ -1139,35 +1137,13 @@
   "c3873567057162a6": "2026-10-16T06:23:52.089418+00:00",
   "3f34c38ed7912c10": "2026-10-16T06:28:52.070202+00:00",
   "e4a941bab398ba44": "2026-10-16T06:28:52.070202+00:00",
-  "eddb90c9868605f4": "2026-10-16T06:33:52.064774+00:00"
+  "eddb90c9868605f4": "2026-10-16T06:33:52.064774+00:00",
+  "7ee10f1dcd9c280e": "2026-10-16T06:38:52.126622+00:00",
+  "87040ff586241e48": "2026-10-16T06:38:52.126622+00:00",
+  "a3744d5c25955a54": "2026-10-16T06:38:52.126622+00:00",
+  "05ae031deb1a0a80": "2026-10-16T06:38:52.126622+00:00"
  },
  "recent": [
-  {
-   "title": "Контрсанкции сыграли вдолгую // Эксперты оценили последствия продовольственного эмбарго",
-   "link": "https://www.kommersant.ru/doc/9025018",
-   "sources": [
-    "Коммерсантъ"
-   ],
-   "score": 4,
-   "ts": "2026-10-13T06:34:38.038710+00:00",
-   "lead": "Рейтинговое агентство АКРА проанализировало влияние продовольственного эмбарго, действующего с 2014 года, на российский агропромышленный комплекс.",
-   "tags": [
-    "Россия"
-   ]
-  },
-  {
-   "title": "China's exports seen growing at faster pace in September",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQa2dMX2RhX045ck4teTcxZTRUS2hEN01GZjRMRlJuYmxRWlpOM3N5UnVXYV9wT3UzbHpRQTNtM2J6MG82RE9SNkdtb3JkTmdCQzdmRElsWG5Dd0RVVlcyajBBc21LZWRnU1BCbVhzNG1WTHgyMUFDNTVuSkpXUTY3d3dGLW5xbXNLTXljNXRCb0poYTZ6anh3RVNvbHBYOFRpUTA3QzJaQQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T06:34:38.038710+00:00",
-   "title_ru": "В сентябре экспорт Китая рос более быстрыми темпами",
-   "tags": [
-    "Китай"
-   ]
-  },
   {
    "title": "Press Briefing: World Economic Outlook, October 2026",
    "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBzWlZSNFNIemZhVUhPcGRLM2JFN2FyVDZOS2FvV2Q0eFpjLXo4RjVvQWRqX2ZiRTNkMnNQWTA1VXRUdWozUlJSMTZMOGJHWV9KT21uYW50ck9UQ29X?oc=5",
@@ -11957,6 +11933,50 @@
    "score": 4,
    "ts": "2026-10-16T06:33:52.064774+00:00",
    "title_ru": "Как первый бюджет Healey в Великобритании может отразиться на рынках"
+  },
+  {
+   "title": "Indonesian Stocks Sink as MSCI Mulls Downgrade",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-16/the-china-show-10-16-2026-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-16T06:38:52.126622+00:00",
+   "title_ru": "Индонезийские акции падают, поскольку MSCI обдумывает понижение",
+   "lead": "“Bloomberg: The China Show” is your definitive source for news and analysis on the world's second-biggest economy.",
+   "lead_ru": "«Bloomberg: The China Show» - ваш исчерпывающий источник новостей и аналитических материалов о второй по величине экономике мира.",
+   "tags": [
+    "markets",
+    "China"
+   ]
+  },
+  {
+   "title": "Macro Matters: Inflation's 'self-fufilling prophecy'",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5yOW5XVnJTMWMyT2xjTWVGS0FHU191ejd6UW9IY0piR0ZJeGUtZUs4ekhMUVdENkVKYVVtVGg5b2lWTWZaWjhnaXdDbHlmLXBBVk1jQjNBLVdSMU9TcHQ1c3FwX29OUGM?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-16T06:38:52.126622+00:00",
+   "title_ru": "Макро-материалы: «самоисполняющееся пророчество» инфляции",
+   "tags": [
+    "inflation"
+   ]
+  },
+  {
+   "title": "Bets on Fed rate hold in October strengthen after Warsh comments",
+   "link": "https://www.ft.com/content/95a8e05d-fc20-441d-b271-64e87fe41f76?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T06:38:52.126622+00:00",
+   "title_ru": "Ставки на удержание ставки ФРС в октябре укрепляются после комментариев Warsh",
+   "lead": "US central bank chair says economy has “broadly conformed with our expectations” since rate increase in September",
+   "lead_ru": "Председатель центрального банка США говорит, что экономика «в целом соответствовала нашим ожиданиям» с момента повышения ставки в сентябре",
+   "tags": [
+    "Fed"
+   ]
   }
  ],
  "last_digest": "2026-10-15",
@@ -15036,12 +15056,11 @@
    "0001568238-26-000001",
    "0001593199-26-000004",
    "0001218363-26-000005",
-   "0001778564-26-000185",
    "0001951059-26-000018",
    "0001628280-26-066035",
    "0001895106-26-000021",
-   "0001522767-26-000210",
    "0001104659-26-116322",
+   "0001522767-26-000210",
    "0001225208-26-008428",
    "0001522767-26-000208",
    "0001689498-26-000002",
@@ -15054,6 +15073,7 @@
    "0001798757-26-000009",
    "0001895111-26-000020",
    "0001581760-26-000171",
+   "0001525358-26-000034",
    "0001242654-26-000016",
    "0001522767-26-000206",
    "0001193125-26-423227",
@@ -15072,7 +15092,7 @@
    "0001193125-26-423158",
    "0001193125-26-423224",
    "0001593199-26-000005",
-   "0001525358-26-000034",
+   "0001778564-26-000185",
    "0001354116-26-000001",
    "0002058769-26-000006",
    "0001222287-26-000028",
