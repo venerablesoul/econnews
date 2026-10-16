@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "2351ac61d7da3156": "2026-10-13T07:35:02.971211+00:00",
   "df195f332e3d4cf2": "2026-10-13T07:45:02.965034+00:00",
   "9cc9106192905829": "2026-10-13T07:55:02.985466+00:00",
   "8a7af415733ee1a9": "2026-10-13T07:55:02.985466+00:00",
@@ -1142,19 +1141,12 @@
   "911c6f14df530f96": "2026-10-16T07:03:52.096370+00:00",
   "ec02ea4f0fabec18": "2026-10-16T07:08:52.088744+00:00",
   "5a2ba1d18e476ec0": "2026-10-16T07:08:52.088744+00:00",
-  "82521f95c0a01a7e": "2026-10-16T07:28:52.075369+00:00"
+  "82521f95c0a01a7e": "2026-10-16T07:28:52.075369+00:00",
+  "8aef1efb69ee4c7e": "2026-10-16T07:38:52.140616+00:00",
+  "08e49c936a25d253": "2026-10-16T07:38:52.140616+00:00",
+  "7e14763e6ef2c3b7": "2026-10-16T07:38:52.140616+00:00"
  },
  "recent": [
-  {
-   "title": "More Weak Banks in IMF Doomsday Scenario as AI Boom Fuels Risks",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPQ3k0YjU1VnZDVmdsLUxNNmtIdnB1ZzFpM0NqbWVsTWZ1YWZuUVZoeUU3dnRtYVdTVGdjVXBCWUc2MVBKTzBFQ1Q4cFBIZEJIOVdsNk1VZGcyRGx0dFNTa0FxdjJXczhPNHNoRU1zVkJZdWxxUktHYVpNSlkwblg0djRKeXV5WFZUN1Z2aWM3b3J4V1NzczdudDRXc01ncWtZU1JuMk1LcUc1M2pveUxjVExjelE?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-13T07:35:02.971211+00:00",
-   "title_ru": "Больше слабых банков в сценарии Судного дня МВФ, поскольку бум искусственного интеллекта усиливает риски"
-  },
   {
    "title": "Банки заявили о миллионах запросов ФССП о должниках",
    "link": "https://www.rbc.ru/finances/13/10/2026/6acdd876483927e3a7d40667",
@@ -11963,6 +11955,47 @@
    ],
    "score": 1,
    "ts": "2026-10-16T07:28:52.075369+00:00"
+  },
+  {
+   "title": "IMF Sees One More BOJ Hike Toward Neutral, Urges Flexibility",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-16/imf-sees-one-more-boj-hike-toward-neutral-urges-flexibility",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-16T07:38:52.140616+00:00",
+   "title_ru": "МВФ видит еще один поход БАНКА ЯПОНИИ к нейтралитету, призывает к гибкости",
+   "lead": "The International Monetary Fund expects the Bank of Japan to raise interest rates one more times toward the neutral rate, while stressing the need to remain flexible on subsequent steps amid heightened global uncertainty…",
+   "lead_ru": "Международный валютный фонд ожидает, что Банк Японии повысит процентные ставки еще раз к нейтральной ставке, подчеркивая при этом необходимость сохранять гибкость в отношении последующих шагов на фоне повышенной глобальной неопределенности...",
+   "tags": [
+    "rates"
+   ]
+  },
+  {
+   "title": "China Moves to Prop Up Stock Market With Selling Curbs, Buybacks",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-16/china-moves-to-prop-up-stock-market-with-selling-curbs-buybacks",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T07:38:52.140616+00:00",
+   "title_ru": "Китай продвигает фондовый рынок, продавая бордюры и выкупая акции",
+   "lead": "China moved to stabilize its equity market by urging companies and state funds to buy shares while guiding some investors to curb selling, people familiar with the matter said.",
+   "lead_ru": "По словам людей, знакомых с этим вопросом, Китай предпринял шаги по стабилизации своего фондового рынка, призвав компании и государственные фонды покупать акции, а некоторых инвесторов - сдерживать продажи.",
+   "tags": [
+    "markets",
+    "China"
+   ]
+  },
+  {
+   "title": "EXCLUSIVE: PetroChina set for record trading profit as war upends market, sources say",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNQW5fbkZTYm9qdzQzT19nUjIyTVZDN1hhOEhkRmI5Rm9PQ3RKUk10Z00wUWZ3a0JFZlVyQV9NQlFSVF9jZU5MTXBPQXBwbFE4UlJEa3lGTVpELVktUWJVRHB5MHRFMWNHVEJHMWc3LXFaYXd3LVNtbW9ycDJydGN2Q3pOWWk1bTRsaWV5c0RvLTZDM3JhdUVSWHc5U01CLU9GTHlObjNqRXNibU5MbUxndFFBWV9jR0tyU0E?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T07:38:52.140616+00:00",
+   "title_ru": "Эксклюзив: PetroChina установила рекордную прибыль от торговли, поскольку война перевернула рынок, говорят источники"
   }
  ],
  "last_digest": "2026-10-15",
@@ -15042,12 +15075,11 @@
    "0001568238-26-000001",
    "0001593199-26-000004",
    "0001218363-26-000005",
-   "0001778564-26-000185",
    "0001951059-26-000018",
    "0001628280-26-066035",
    "0001895106-26-000021",
-   "0001522767-26-000210",
    "0001104659-26-116322",
+   "0001522767-26-000210",
    "0001225208-26-008428",
    "0001522767-26-000208",
    "0001689498-26-000002",
@@ -15060,6 +15092,7 @@
    "0001798757-26-000009",
    "0001895111-26-000020",
    "0001581760-26-000171",
+   "0001525358-26-000034",
    "0001242654-26-000016",
    "0001522767-26-000206",
    "0001193125-26-423227",
@@ -15078,7 +15111,7 @@
    "0001193125-26-423158",
    "0001193125-26-423224",
    "0001593199-26-000005",
-   "0001525358-26-000034",
+   "0001778564-26-000185",
    "0001354116-26-000001",
    "0002058769-26-000006",
    "0001222287-26-000028",
