@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "56db7e6d35dc1a56": "2026-10-13T16:15:30.560562+00:00",
-  "0dbee12cac1d3802": "2026-10-13T16:15:30.560562+00:00",
   "98816a27064a9634": "2026-10-13T16:25:30.583133+00:00",
   "9f84092b4f426bc9": "2026-10-13T16:25:30.583133+00:00",
   "cb88b41178966493": "2026-10-13T16:25:30.583133+00:00",
@@ -1154,32 +1152,11 @@
   "4d8b5a22566c08f7": "2026-10-16T16:09:26.513922+00:00",
   "b1bb16964da02ccd": "2026-10-16T16:14:26.481800+00:00",
   "505e2d578305fad5": "2026-10-16T16:14:26.481800+00:00",
-  "96b2804c947af402": "2026-10-16T16:14:26.481800+00:00"
+  "96b2804c947af402": "2026-10-16T16:14:26.481800+00:00",
+  "f402cd32ee795cfe": "2026-10-16T16:19:26.466269+00:00",
+  "a761a89616fe6b73": "2026-10-16T16:19:26.466269+00:00"
  },
  "recent": [
-  {
-   "title": "Saudis Tell OPEC That Oil Output Recovered From Three-Decade Low",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPVjkzY3Y2MWdvOE1pQVhjSnNXWjQ0RGIyTHdrbzhNN1loVzVDZW8yUkh3QmJtdHdSRVR1aUFRdmU4c3l3R09kZVRvQ1RLenpZbHBKV3F2cG9WeU9DcGxhTXBSSFZOVmw5TmlfQlh3RVp3d1JQYzY4UnhwMUFiTnhwQlRVcXFvVTROMG96VUdneW1GbDBsSGs5VnlPRUtUWE9zUVdQeHFGWnpzb2hxWkc5d3NuTWNJUQ?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-13T16:15:30.560562+00:00",
-   "title_ru": "Саудовская Аравия сообщила ОПЕК, что добыча нефти восстановилась с минимума за последние три десятилетия",
-   "tags": [
-    "нефть"
-   ]
-  },
-  {
-   "title": "US existing home sales rise in September; higher mortgage rates dim outlook",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPSTd6ZlFyT3BzT2ZINW5WY1c2X3E4cGF0YlZWT3JVWVh1ZjUzNHpNNHVwbDliOXk0V2J0a0x1VXo4dGdZOTBaTlZ5Z0JTLUJrVEk2SjMtX1pzUU1odjZMODV3SnZUTjZlVV9mM1NiNWxEX1BmZ0Jlc0MwTW9PZHcwNkFBZlJEWDNIWE1jVk9CMlN2cmdtY193Rzcyd1NtSk9IMnJIT2tWZ1FTcnlVdmhfUTZqcEVXTmc?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T16:15:30.560562+00:00",
-   "title_ru": "Продажи вторичного жилья в США выросли в сентябре; более высокие ставки по ипотеке ухудшают перспективы"
-  },
   {
    "title": "Iran Escalates Attacks on Ships, Threatening Oil Export Recovery",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQLTUzR213ZGFwb1pwMXpVZ2cwMjRzOGVNMXRQdEhzWHAtbDZxTW9VY25KdVFBeHBYWVdDSzNKMWZKbmoxRjN4T0FRQWZWenFSeE1PZ0NwdWs0X0dWSzBidHc3dGw2WmpkM1dYZ2NRUlZyZUZrUnhka1d0Tk5LZ2hzREwxaTFwVG5qM3JaXy1tMTMtaEt3VDhFVlFtT08tVUlHbGwwUk9YSDRiSXVtbU5mVTNGR1Y?oc=5",
@@ -12202,6 +12179,19 @@
    ],
    "score": 1,
    "ts": "2026-10-16T16:14:26.481800+00:00"
+  },
+  {
+   "title": "Italy clinches deal with EU over measures to limit impact of gas prices on electricity costs",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOMWRWUHVNUlFoLTN1X1lyWWoyN05FWGJOV3JFdDNWYUNvWWl3WTRKYVhpWjZaZmUteWJXNVU5d0Q4MVFHNzE0azRMc0p6Vk1PYnlKUzVtazBYRkNKTS1XRzNlSjB3SVFFWXV3T3psSFlYak8xVElnZU1SRURVT0N2WnZld1FrUDdNcl9Kd2dIM0F0Y3BYS0FRQl9CNHgtV0Nib2I4VDNibTdmY2VlSWpRRlA1dHJjOFA1VE5XQThTOA?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T16:19:26.466269+00:00",
+   "title_ru": "Италия договаривается с ЕС о мерах по ограничению влияния цен на газ на стоимость электроэнергии",
+   "tags": [
+    "gas"
+   ]
   }
  ],
  "last_digest": "2026-10-15",
@@ -15397,6 +15387,7 @@
    "0001193125-26-423651",
    "0001193125-26-423597",
    "0001193125-26-423648",
+   "0001816757-26-000001",
    "0001193125-26-423635",
    "0001193125-26-423629"
   ],
