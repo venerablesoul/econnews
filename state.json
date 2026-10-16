@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "f8b2b9b8f810f35b": "2026-10-13T15:55:30.543620+00:00",
-  "5acf8fd50cd6b94c": "2026-10-13T15:55:30.543620+00:00",
-  "a1ba52891be16693": "2026-10-13T15:55:30.543620+00:00",
   "d16b120f51effc40": "2026-10-13T16:05:30.540518+00:00",
   "085d86c99e2a1eae": "2026-10-13T16:05:30.540518+00:00",
   "56db7e6d35dc1a56": "2026-10-13T16:15:30.560562+00:00",
@@ -1151,36 +1148,11 @@
   "908c534e462dbf27": "2026-10-16T15:54:26.424232+00:00",
   "c610c3560e4ec72c": "2026-10-16T15:54:26.424232+00:00",
   "ed17e724ce351e15": "2026-10-16T15:54:26.424232+00:00",
-  "b5a4c9c3ab291703": "2026-10-16T15:54:26.424232+00:00"
+  "b5a4c9c3ab291703": "2026-10-16T15:54:26.424232+00:00",
+  "b5eb05e23cc15b91": "2026-10-16T15:59:26.460822+00:00",
+  "f909ea2ff0667498": "2026-10-16T15:59:26.460822+00:00"
  },
  "recent": [
-  {
-   "title": "Goolsbee says AI-induced inflation is 'jumping out of its lane,' Semafor reports",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQdHM0clpOMnFqajYyN2FLbEZGZ0FyRUxDc1B1WGI4Nnd1ZDV0dUtEQ3BOa2lEbHBUN3JmWklkNGhuZDZ2dHJmTTZ0STRseE1KU1JHSlkySXhXbHRzMGdZbkh0OUM2NGdtbVhwUU9UbkRIeFhNWjUtbEJ3aDN6RjhzMXgwMUdtSXpaQmF0ajBCSTdzNnZIZENIMTRXMlhEc1NXeUdNczRxdm1CMnBsYmJETk5ibGV5Z19jMzNn?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-13T15:55:30.543620+00:00",
-   "title_ru": "Гулсби говорит, что инфляция, вызванная ИИ, «выскакивает из своей полосы», сообщает Семафор",
-   "tags": [
-    "инфляция"
-   ]
-  },
-  {
-   "title": "US chip stocks extend slide as China memory report, AI spending jitters hit sector",
-   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQdjlLc0J0QjMyZmZRZWM1SldodnE0RV8xUWN0S0EzdUtWX1VjNXRiTVRKdDJQQVNkNkNadU50bGFueTItd3V0Zk43aFRiV2xsMVdCS1lFbFh3TVI3b05yd253VjBLSWdlYmwyb3VIOFBLQm5VbFRlR1ZQczRlekUyWHNOMjUwdmhvMXA2MWl1UUp6aDFydkZRZWdjUzZnRUR2NXAteDNMZS1zdDNUWm1HRVBxYlo3TXh6ZGZKT1lNOXFHUjBp?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T15:55:30.543620+00:00",
-   "title_ru": "Акции чипов в США продолжают падать на фоне отчета о памяти Китая, колебания расходов на ИИ ударили по сектору",
-   "tags": [
-    "рынки",
-    "Китай"
-   ]
-  },
   {
    "title": "Legacy Carmakers Seen Losing Mass Market to Chinese Rivals",
    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPeVB3dmxuWW5Ic3FfNm9PWWFGdE91TzZrZGNPQ1JGMjFoaVRkbVVyR0paRERSZUNoaG1xREZuMW93VExFeXNCNmV3MGlldEp1YUFBYXlwTF9nbFhVLUQ5VTBWcGhQemZuNWV5ZkszclFCWWdGVkN4bko5SjVqSi1xWDlCaHNORU10eXdjTkxVSXhyOWZNY1BiTGJfcnV0T2lrYTRFRHZRNTBEYWlpT0E?oc=5",
@@ -12160,6 +12132,21 @@
    "score": 3,
    "ts": "2026-10-16T15:54:26.424232+00:00",
    "title_ru": "Южноафриканский рэнд растет, поскольку внимание переключается на среднесрочный бюджет на следующую неделю"
+  },
+  {
+   "title": "CoreWeave Debt Stress; JB Hunt Falls on Rising Costs | Stock Movers",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-16/coreweave-debt-stress-jb-hunt-falls-on-rising-costs-stock-movers",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-16T15:59:26.460822+00:00",
+   "title_ru": "Долговой стресс CoreWeave; JB Hunt падает из-за растущих затрат | Перевозчики запасов",
+   "lead": "On this episode of Stock Movers: - CoreWeave (CRWV) shares are moving as it remains at the center of the tech selloff this week.",
+   "lead_ru": "В этом выпуске Stock Movers: - Акции CoreWeave (CRWV) движутся, поскольку на этой неделе они остаются в центре распродажи технологических компаний.",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-15",
@@ -15345,11 +15332,14 @@
   },
   "checked": "2026-10-16T15:39:26.500877+00:00",
   "sec_seen": [
+   "0001193125-26-423655",
    "0001193125-26-423639",
    "0001193125-26-423637",
    "0001193125-26-423645",
    "0001683168-26-007921",
    "0001193125-26-423626",
+   "0001193125-26-423653",
+   "0001193125-26-423651",
    "0001193125-26-423597",
    "0001193125-26-423648",
    "0001193125-26-423635",
