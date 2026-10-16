@@ -1138,7 +1138,11 @@
   "249b609173f0d6e1": "2026-10-16T12:04:26.452639+00:00",
   "95fb92a92874f526": "2026-10-16T12:04:26.452639+00:00",
   "1d2848abcd1d30cc": "2026-10-16T12:09:26.473614+00:00",
-  "b87472457b27a305": "2026-10-16T12:09:26.473614+00:00"
+  "b87472457b27a305": "2026-10-16T12:09:26.473614+00:00",
+  "f7c994abf15f00df": "2026-10-16T12:14:26.488491+00:00",
+  "38dae6b91790b6b0": "2026-10-16T12:14:26.488491+00:00",
+  "f259fe45c69a5491": "2026-10-16T12:14:26.488491+00:00",
+  "0dfdc3648b967228": "2026-10-16T12:14:26.488491+00:00"
  },
  "recent": [
   {
@@ -12057,6 +12061,55 @@
    "tags": [
     "China"
    ]
+  },
+  {
+   "title": "Big change at the ECB? How Christine Lagarde could step down early",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9VNE9XV1pIdE9ham02c2swYWZsOVNheVNnQmM3bzY2R1NCbFI4TGdCWTZnSzBwX0VVeWppdG9DM0ViYnlKdXU2TUxpdF90d19YV2wxekFpcWtOV1pkeTZ5R3dMRFpXWGZUR3hQT0w5ZDgwd0Q5QVNac0hOYVc0Zw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-16T12:14:26.488491+00:00",
+   "title_ru": "Большие перемены в ЕЦБ? Как Кристин Лагард могла уйти в отставку досрочно",
+   "tags": [
+    "ECB"
+   ]
+  },
+  {
+   "title": "Beijing seeks tighter grip on AI exports amid US rivalry",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNMWNnS1haU3c5T3lybTBzQUNxZF9lMmhWaFp0Yk5UbzhDdklobHpkRHk2dExFU1dWZmVMVENFNEVLOW9JWDdscm15VDhObXhhc1JwYjlIelZjeFJuMG9jVERmTHRNRTZtSlBRYndNc2IxZTRkdWtPUGdlWDhoSEZQTHVZNzIwMFUzWVhjT3gxUWl1X2VpM1VOM29BZElFRjlaek1uRDFQb2N5aF9FTlF4U1N4WFZRVmtyUTBLdmVJc0Rzb3E2NkZ5ZQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T12:14:26.488491+00:00",
+   "title_ru": "Пекин стремится ужесточить контроль над экспортом ИИ на фоне соперничества с США",
+   "tags": [
+    "China"
+   ]
+  },
+  {
+   "title": "Deutsche Bank prepares crypto custody launch, targets Asia growth",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNWnpsZnAzT2VQZWFCcGkyLXVQVDNxelp4bmVZczcwSzlJUjhIUnZ2MzVGa2VVd1JQczIzYXIxT0lIVW8tZTJxdW5jR2xaLUU5QjBiSDl4a01oaE5qeTBEUnNUMEdabUZiTDRRQjFaWnlJRHYwT1VLZTV6SmNYSERRYkwtbV9KSkQybkdaQkJSOF80d2hYRFBGWEhJcE1TT1lQUDBKTTlBbHlyeTVIS0ZtTDg0Y1JONUF3?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T12:14:26.488491+00:00",
+   "title_ru": "Deutsche Bank готовит запуск криптовалютного депозитария и нацелен на рост в Азии",
+   "tags": [
+    "crypto"
+   ]
+  },
+  {
+   "title": "Morning Bid: AI’s debt burden",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBSNU1PekVhRTAwU25ESFc0a2Y0Z1FlcVNkeTZEVnR5VVFPa1lrNkxjb09yV3NWSm92aXEwUDdTUHlhbnFWc1FfbjZPSHZGZlotaWhBbTNhV3d5S3RfQUY1Y0lfVXJMZw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T12:14:26.488491+00:00",
+   "title_ru": "Утренняя ставка: долговое бремя ИИ"
   }
  ],
  "last_digest": "2026-10-15",
@@ -15163,8 +15216,8 @@
   "checked": "2026-10-16T11:39:26.416483+00:00",
   "sec_seen": [
    "0001887782-26-000009",
-   "0001193125-26-423224",
    "0001652149-26-000006",
+   "0001193125-26-423224",
    "0002004903-26-000006",
    "0002058769-26-000006",
    "0001193125-26-423229",
