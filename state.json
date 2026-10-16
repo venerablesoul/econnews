@@ -1144,7 +1144,8 @@
   "bddbe9ab4474a050": "2026-10-16T19:54:55.600148+00:00",
   "e3a7c6dda4f1f84f": "2026-10-16T20:09:55.628708+00:00",
   "cfdc35c0c90bf226": "2026-10-16T20:14:56.602532+00:00",
-  "1ced21d933db9a71": "2026-10-16T20:24:55.597322+00:00"
+  "1ced21d933db9a71": "2026-10-16T20:24:55.597322+00:00",
+  "8119ccc950270c6c": "2026-10-16T20:44:55.590880+00:00"
  },
  "recent": [
   {
@@ -12017,6 +12018,19 @@
    "title_ru": "Частный долг здорового стационара приближается к 1 миллиарду долларов после отказа от кредита",
    "lead": "Sound Inpatient Physicians Inc. is close to clinching a $1 billion refinancing with existing lenders, including Monarch Alternative Capital and PGIM, according to people familiar with the matter.",
    "lead_ru": "По словам людей, знакомых с ситуацией, компания Sound Inpatient Physicians Inc. близка к заключению рефинансирования на сумму $1 млрд с существующими кредиторами, включая Monarch Alternative Capital и PGIM."
+  },
+  {
+   "title": "Judge Threatens Trump With Sanctions to Testify in BBC Lawsuit",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNNVdwLS1hQURJSWIwMU5SWXRic0szNnQ3MjlXMXh5X2FqT2psM0M2U1VCM1pEVVRTMkJOcmdmaTZQNHFiWEpIYVc2aWNqTVZkcmlHdmdwN1lHSEo4ZV93LW5YYTBFY2dHMDRHb01idmNYdkg5ZUhjd1hMTzI3T3Vrb3lpNm5rMHd5cEk3VTJTTEo4LVlPRGFabzJPcTJJR3ZtREhZSVE3N1JtSk5XeFVOVFJzbw?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-16T20:44:55.590880+00:00",
+   "title_ru": "Судья пригрозил Трампу санкциями за дачу показаний по иску BBC",
+   "tags": [
+    "sanctions"
+   ]
   }
  ],
  "last_digest": "2026-10-16",
@@ -14158,6 +14172,22 @@
    },
    {
     "src": "sec",
+    "id": "b769333d51080ace",
+    "ticker": "MRVL",
+    "company": "Marvell Technology, Inc.",
+    "who": "Sandeep Bharathi",
+    "role": "President",
+    "type": "sell",
+    "value": 865864,
+    "shares": 3685,
+    "price": 234.97,
+    "plan": true,
+    "date": "2026-10-16",
+    "disclosed": "2026-10-16",
+    "link": "https://www.sec.gov/Archives/edgar/data/1975808/000162828026066137/0001628280-26-066137-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "a62608ea7a58d5bf",
     "ticker": "EDRY",
     "company": "EuroDry Ltd.",
@@ -14398,6 +14428,22 @@
    },
    {
     "src": "sec",
+    "id": "358fd0089d2680c6",
+    "ticker": "WMT",
+    "company": "Walmart Inc.",
+    "who": "John R. Furner",
+    "role": "CEO",
+    "type": "sell",
+    "value": 1582901,
+    "shares": 13125,
+    "price": 120.6,
+    "plan": true,
+    "date": "2026-10-15",
+    "disclosed": "2026-10-16",
+    "link": "https://www.sec.gov/Archives/edgar/data/1696737/000169673726000021/0001696737-26-000021-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "98da5e40af377ecf",
     "ticker": "AFL",
     "company": "AFLAC INC",
@@ -14539,6 +14585,54 @@
     "date": "2026-10-14",
     "disclosed": "2026-10-16",
     "link": "https://www.sec.gov/Archives/edgar/data/1889539/000119312526424142/0001193125-26-424142-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "46a4c6414452e901",
+    "ticker": "WMT",
+    "company": "Walmart Inc.",
+    "who": "Latriece Watkins",
+    "role": "Executive Vice President",
+    "type": "sell",
+    "value": 575000,
+    "shares": 5000,
+    "price": 115.0,
+    "plan": true,
+    "date": "2026-10-14",
+    "disclosed": "2026-10-16",
+    "link": "https://www.sec.gov/Archives/edgar/data/1886367/000188636726000029/0001886367-26-000029-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "7b70bf34ee41ee13",
+    "ticker": "P",
+    "company": "Everpure, Inc.",
+    "who": "John Colgrove",
+    "role": "Chief Visionary Officer",
+    "type": "sell",
+    "value": 14499541,
+    "shares": 100000,
+    "price": 145.0,
+    "plan": true,
+    "date": "2026-10-14",
+    "disclosed": "2026-10-16",
+    "link": "https://www.sec.gov/Archives/edgar/data/1651902/000147443226000103/0001474432-26-000103-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "c63e4445c4eaaad0",
+    "ticker": "P",
+    "company": "Everpure, Inc.",
+    "who": "Scott Dietzen",
+    "role": "Director",
+    "type": "sell",
+    "value": 8495878,
+    "shares": 60000,
+    "price": 141.6,
+    "plan": false,
+    "date": "2026-10-14",
+    "disclosed": "2026-10-16",
+    "link": "https://www.sec.gov/Archives/edgar/data/1651908/000147443226000102/0001474432-26-000102-index.htm"
    },
    {
     "src": "sec",
@@ -15557,24 +15651,22 @@
   "checked": "2026-10-16T19:49:55.632734+00:00",
   "sec_seen": [
    "0001685700-26-000006",
-   "0001193125-26-424142",
-   "0001939410-26-000006",
-   "0001104659-26-116625",
-   "0001608349-26-000006",
-   "0001278800-26-000007",
-   "0001628280-26-066134",
-   "0001104659-26-116629",
-   "0000037996-26-000186",
-   "0001382452-26-000008",
-   "0002155496-26-000006",
+   "0001493152-26-047414",
+   "0001696737-26-000021",
+   "0001474432-26-000102",
+   "0001886367-26-000029",
+   "0000832988-26-000236",
+   "0001493152-26-047411",
    "0001225208-26-008431",
-   "0001630196-26-000010",
    "0001231589-26-000022",
+   "0001266163-26-000003",
    "0001106578-26-000165",
-   "0000897069-26-001846",
    "0002106572-26-000003",
-   "0001493152-26-047403",
-   "0001476342-26-000006"
+   "0001628280-26-066141",
+   "0001474432-26-000103",
+   "0001628280-26-066137",
+   "0001992808-26-000029",
+   "0001193125-26-424188"
   ],
   "errors": {}
  }
