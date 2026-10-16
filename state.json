@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "7bb948bd0584c8c8": "2026-10-13T05:04:38.008721+00:00",
   "e2214ff21880664c": "2026-10-13T05:14:38.020253+00:00",
   "12ab1b6980bca0f3": "2026-10-13T05:24:38.053180+00:00",
   "6a31cbfd8b2fd538": "2026-10-13T05:24:38.053180+00:00",
@@ -1128,22 +1127,10 @@
   "da9028a674abe108": "2026-10-16T04:43:23.959509+00:00",
   "48ad89c96e54ad8b": "2026-10-16T04:43:23.959509+00:00",
   "942a106fe39a195d": "2026-10-16T04:43:23.959509+00:00",
-  "8e63af13a49f805a": "2026-10-16T05:03:23.967948+00:00"
+  "8e63af13a49f805a": "2026-10-16T05:03:23.967948+00:00",
+  "1f64c53c25d94134": "2026-10-16T05:08:24.080076+00:00"
  },
  "recent": [
-  {
-   "title": "IMF cites AI slowdown, spiking yields as looming global market risks",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQcDlSTHJNVmVDQkFXaW1Wa1R4TjZCVUh6dW9FZF9fN2lNcGNUVEFhMUs1V3ZBdjVjUG5UT29Bc1U3aldpZDlWbF9yTUhuS2RzSnYzY2lxNlJTb3dVMzROam9wYVZfcjQ3MUlVRWFZYlcxVUQzcDlGS195NWd3UDgxXzRzWm5VdG5EaDZnbnFkQjVWeHU2ZUM3RFVpSFpuWEV0Wmd1bnlVRFhwclJzR1EtaDROQkJZQ2dW?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-13T05:04:38.008721+00:00",
-   "title_ru": "МВФ называет замедление развития искусственного интеллекта и резкий рост доходности надвигающимися глобальными рыночными рисками",
-   "tags": [
-    "облигации"
-   ]
-  },
   {
    "title": "South African Factories Crater as China Imports Stunt Revival",
    "link": "https://www.bloomberg.com/news/articles/2026-10-13/south-african-factories-crater-as-china-imports-stunt-revival",
@@ -11882,6 +11869,22 @@
    ],
    "score": 2,
    "ts": "2026-10-16T05:03:23.967948+00:00"
+  },
+  {
+   "title": "Metals Rebound as Sentiment Improves After US Inflation Shock",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-16/metals-rebound-as-sentiment-improves-after-us-inflation-shock",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-16T05:08:24.080076+00:00",
+   "title_ru": "Металлы восстанавливаются по мере улучшения настроений после инфляционного шока в США",
+   "lead": "Metals — including copper, aluminum and zinc — rebounded in London after a shaky few days of trading fueled by fears of more aggressive tightening by the Federal Reserve.",
+   "lead_ru": "Металлы, включая медь, алюминий и цинк, восстановились в Лондоне после шатких нескольких дней торгов, вызванных опасениями более агрессивного ужесточения со стороны Федеральной резервной системы.",
+   "tags": [
+    "Fed",
+    "inflation"
+   ]
   }
  ],
  "last_digest": "2026-10-15",
@@ -14964,11 +14967,11 @@
    "0001689498-26-000002",
    "0002090886-26-000012",
    "0001632063-26-000005",
+   "0001193125-26-423229",
    "0001522767-26-000206",
    "0001652149-26-000006",
-   "0001193125-26-423228",
-   "0001453368-26-000002",
    "0002058781-26-000003",
+   "0001453368-26-000002",
    "0001218363-26-000005",
    "0001531152-26-000073",
    "0001498287-26-000001",
@@ -15000,7 +15003,7 @@
    "0001193125-26-423227",
    "0001171520-26-000309",
    "0001628280-26-066035",
-   "0001193125-26-423229"
+   "0001193125-26-423228"
   ],
   "errors": {}
  }
