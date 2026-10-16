@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c6134f3489804647": "2026-10-13T23:29:08.412521+00:00",
-  "d320602fc25e9d46": "2026-10-13T23:29:08.412521+00:00",
   "0c93dbca4e6f4a41": "2026-10-13T23:39:08.410553+00:00",
   "57ef92d01c392662": "2026-10-13T23:49:08.348989+00:00",
   "d9258585d72bab8c": "2026-10-14T00:09:08.592540+00:00",
@@ -1144,23 +1142,6 @@
   "2a0983f01b50b28e": "2026-10-16T23:20:25.249453+00:00"
  },
  "recent": [
-  {
-   "title": "World-Beating China Bonds Can Overcome Paltry Yields, Funds Say",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-13/world-beating-china-bonds-can-overcome-paltry-yields-funds-say",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-13T23:29:08.412521+00:00",
-   "title_ru": "Фонды говорят, что лидирующие в мире облигации Китая могут преодолеть ничтожную доходность",
-   "lead": "China’s world-beating bonds have dodged the selloff in global debt and some fund managers are positioning for further gains due to a strong yuan and a sluggish domestic economy.",
-   "lead_ru": "Облигации Китая, превзошедшие мировые рекорды, сумели избежать распродажи мирового долга, и некоторые управляющие фондами готовятся к дальнейшему росту благодаря сильному юаню и вялой внутренней экономике.",
-   "tags": [
-    "облигации",
-    "рынки",
-    "Китай"
-   ]
-  },
   {
    "title": "Trump says Houthis trying to drive up oil prices ahead of US midterm elections",
    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPUjJueXpwNnRLbk1Db0NkZzBZS0tqUGF4NHU3ZWYxcWRHdVU0WW9uYVZJeUlpUVR2amR3Q0dyd1ZwYTFwZjRkUXU2VWRmX2otWUh5dHBmTW1Tak1iczg5a3pzR21oZTk3S3lzN0NfWmZ4TWRFalFNLVBsdU5vVTFkSDQ4TnNGVDZOcnVTS2FWTzBTbW1pN0ZoamZrRG5fQlc2QXpZWjV3?oc=5",
@@ -14202,6 +14183,22 @@
    },
    {
     "src": "sec",
+    "id": "a70a6d066704c944",
+    "ticker": "ADPT",
+    "company": "Adaptive Biotechnologies Corp",
+    "who": "Julie Rubinstein",
+    "role": "COO",
+    "type": "sell",
+    "value": 897356,
+    "shares": 35643,
+    "price": 25.18,
+    "plan": true,
+    "date": "2026-10-16",
+    "disclosed": "2026-10-16",
+    "link": "https://www.sec.gov/Archives/edgar/data/1780664/000178066426000041/0001780664-26-000041-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "a62608ea7a58d5bf",
     "ticker": "EDRY",
     "company": "EuroDry Ltd.",
@@ -15969,14 +15966,13 @@
   "checked": "2026-10-16T22:55:25.308294+00:00",
   "sec_seen": [
    "0000037785-26-000164",
-   "0002014275-26-000016",
    "0000037785-26-000159",
    "0001439288-26-000137",
    "0001357615-26-000185",
    "0001193125-26-424350",
    "0001209189-26-000010",
    "0001787626-26-000004",
-   "0001560409-26-000011",
+   "0001780664-26-000041",
    "0001901021-26-000020",
    "0001439288-26-000139",
    "0000037785-26-000157",
@@ -15989,15 +15985,15 @@
    "0002152984-26-000004",
    "0002152990-26-000002",
    "0001439288-26-000136",
-   "0001984186-26-000010",
-   "0001437749-26-032849",
    "0000719955-26-000221",
+   "0001437749-26-032849",
    "0002116103-26-000002",
    "0001905272-26-000018",
    "0001213900-26-110401",
    "0002006416-26-000019",
    "0001561861-26-000076",
    "0000037785-26-000165",
+   "0001213900-26-110404",
    "0001193125-26-424368",
    "0001357615-26-000186",
    "0001822629-26-000018",
@@ -16016,7 +16012,8 @@
    "0002117961-26-000002",
    "0001193125-26-424324",
    "0000037785-26-000163",
-   "0000037785-26-000160"
+   "0000037785-26-000160",
+   "0001213900-26-110405"
   ],
   "errors": {}
  }
