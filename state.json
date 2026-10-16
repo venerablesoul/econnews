@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "2de880ed4d16b8e2": "2026-10-13T02:54:38.023049+00:00",
-  "ee0dd2d102d31fa6": "2026-10-13T02:54:38.023049+00:00",
-  "16d0ed626e55dc42": "2026-10-13T02:54:38.023049+00:00",
   "15ff11ba19c47961": "2026-10-13T03:14:38.028092+00:00",
   "0ed2b7da8afe3e9c": "2026-10-13T03:24:38.030740+00:00",
   "e538a8767cc31447": "2026-10-13T03:24:38.030740+00:00",
@@ -1119,38 +1116,11 @@
   "0c4f1bf2a498a851": "2026-10-16T02:48:23.991527+00:00",
   "ca7508941492ad65": "2026-10-16T02:53:23.962358+00:00",
   "76a3c274aa2c686e": "2026-10-16T02:53:23.962358+00:00",
-  "a7fe1ec1540cb598": "2026-10-16T02:53:23.962358+00:00"
+  "a7fe1ec1540cb598": "2026-10-16T02:53:23.962358+00:00",
+  "fa70b22e1ad31d1a": "2026-10-16T03:03:24.072380+00:00",
+  "54c4cb01150cde4c": "2026-10-16T03:03:24.072380+00:00"
  },
  "recent": [
-  {
-   "title": "South Korea's Lee says country cannot avoid raising interest rates",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNU0hXdVlXbkVhZGhjT1p6UXlndU52X2gwbVZod1BQbUNjM2stUlFvMHFyaEZsRHJWb0M1ekhCbTY0UFpEdEhZaWxZMHpncWFxRGdrUzhBcUFBcGNqYmtxX1JabV9sWnRfaEZSeUV2b3lhTVI5QVVNc0ViaVp0S1laRWxKd0s3YXc5NTFCYzJpTGh4dGFTM29vOHg1UENVMDNqeHdlQWRXMVBHS3pyR2RnTmVVTGIzbWh0bnl5Vg?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-13T02:54:38.023049+00:00",
-   "title_ru": "Ли из Южной Кореи заявил, что страна не может избежать повышения процентных ставок",
-   "tags": [
-    "ставки"
-   ]
-  },
-  {
-   "title": "Treasuries Gain on Haven Demand as Trading Resumes After Holiday",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-13/treasuries-gain-on-haven-demand-as-trading-resumes-after-holiday",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T02:54:38.023049+00:00",
-   "title_ru": "Казначейские облигации растут на спросе на активы, поскольку торговля возобновляется после праздников",
-   "lead": "Treasuries advanced as trading resumed after a long weekend, with a slide in Asian equities fueling demand for haven assets.",
-   "lead_ru": "Казначейские бумаги выросли, поскольку торги возобновились после длинных выходных, а падение азиатских акций усилило спрос на активы-убежища.",
-   "tags": [
-    "облигации",
-    "рынки"
-   ]
-  },
   {
    "title": "India’s Rupee Rescue Faces Test From Oil, Inflation and Outflows",
    "link": "https://www.bloomberg.com/news/articles/2026-10-13/india-s-rupee-rescue-faces-test-from-oil-inflation-and-outflows",
@@ -11803,6 +11773,35 @@
    "lead_ru": "На этой неделе запасы информационных технологий Индии готовы превзойти своих глобальных полупроводниковых конкурентов больше всего за два десятилетия, при этом аналитики говорят, что сектор будет продолжать опережать, поскольку ралли искусственного интеллекта...",
    "tags": [
     "markets"
+   ]
+  },
+  {
+   "title": "Australia’s Three-Year Bond Sale Sees Highest Demand Since 2018",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-16/australia-s-three-year-bond-sale-sees-highest-demand-since-2018",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T03:03:24.072380+00:00",
+   "title_ru": "Продажа трехлетних облигаций в Австралии демонстрирует самый высокий спрос с 2018 года",
+   "lead": "Demand at an Australian three-year bond auction surged to the highest since 2018 as traders bet the nation’s central bank is nearing the end if its interest-rate hike cycle.",
+   "lead_ru": "Спрос на австралийском трехлетнем аукционе облигаций вырос до самого высокого уровня с 2018 года, поскольку трейдеры делают ставку на то, что центральный банк страны приближается к концу, если его цикл повышения процентных ставок закончится.",
+   "tags": [
+    "rates",
+    "bonds"
+   ]
+  },
+  {
+   "title": "Everyone Wants a Bite of China’s Egg Tart Economy",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNaDdaeGRRaGJ5Z012c0pmOTJXcFR0dmFSMlZRTFNLaHl6WTJoZG1URF90ZFRseGpyT2ZiOUlsQVFZZ1BZcmhpMEFRSmhtNVdrNzJlUURTNzA0alVxNWIxdEktNEpvcjdzSkdKZC13RGpMV0xWWERwRVJTdm1aT29IRUtkUmp4M3JQa0x6X0lLaXFfVll3eEdaM2lETml4bnlVa3RRZnBkMTg?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T03:03:24.072380+00:00",
+   "title_ru": "Все хотят откусить от китайской экономики яичного пирога",
+   "tags": [
+    "China"
    ]
   }
  ],
