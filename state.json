@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "9b689421c976fbc6": "2026-10-13T19:22:05.049199+00:00",
-  "6af43e0c778b02c9": "2026-10-13T19:22:05.049199+00:00",
-  "04febb726c93cde4": "2026-10-13T19:22:05.049199+00:00",
-  "d1acc6948e50a117": "2026-10-13T19:22:05.049199+00:00",
   "0aa8c9ebbe80fa84": "2026-10-13T19:52:05.090579+00:00",
   "7e8903ff0897a0a9": "2026-10-13T19:52:05.090579+00:00",
   "0957877d1da93d80": "2026-10-13T19:52:05.090579+00:00",
@@ -1155,44 +1151,11 @@
   "c20361c8e16dd884": "2026-10-16T18:59:55.635436+00:00",
   "f191fbd6522ec23d": "2026-10-16T19:09:55.670844+00:00",
   "58a59c3565e86791": "2026-10-16T19:19:55.610661+00:00",
-  "243904e5d1a1edeb": "2026-10-16T19:19:55.610661+00:00"
+  "243904e5d1a1edeb": "2026-10-16T19:19:55.610661+00:00",
+  "9b689421c976fbc6": "2026-10-16T19:29:55.584481+00:00",
+  "88ec43a2f04239fe": "2026-10-16T19:29:55.584481+00:00"
  },
  "recent": [
-  {
-   "title": "Argentina Posts Second Straight Month of Inflation Below 2%",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-13/argentina-posts-second-straight-month-of-inflation-below-2",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-13T19:22:05.049199+00:00",
-   "title_ru": "В Аргентине второй месяц подряд инфляция ниже 2%",
-   "lead": "Monthly inflation in Argentina accelerated in line with expectations in September, still notching its second straight month below a symbolic threshold.",
-   "lead_ru": "Месячная инфляция в Аргентине ускорилась в соответствии с ожиданиями в сентябре, по-прежнему второй месяц подряд оставаясь ниже символического порога.",
-   "tags": [
-    "инфляция"
-   ]
-  },
-  {
-   "title": "Wall Street banks see deals slow on market jitters but pipeline is strong",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxON29nUVNjUV9hd0F0V2MtV0QzcGxPZndNSEc1Yk4yUEl3eXNMWHNydTJVTklTRmF2YkdFc21EX3k2TzBWQlJqT3hnbGFhSnBrSjhwVEtfMHpSc3VLeEc2NGxlSTZSVXpfSE9jS0d1UjV5WDA0VVBnZUgzaGR0aERtWHNBU3hNR3MwNXJ0a0lZMUQwUWhjMmswM0p5VmZzeVRTNUR3cGF5OWVSV2kxbUExbTBMb01wVl9x?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-13T19:22:05.049199+00:00",
-   "title_ru": "Банки Уолл-стрит видят замедление сделок из-за нестабильности рынка, но поток инвестиций силен"
-  },
-  {
-   "title": "India's Tata Elxsi posts higher quarterly profit on growth in transportation unit",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOU3Y3eVVsQTZNd0xCaWpvZEl3VUpHT2QySjIxck1KZHlmdWhkdXVRQXpoS1Azd0phTDVlN3VuVFZVMGd4cE5DOXVJQTBDSkZKNDhlbWYwUm5JdnZOTmpBMi0yVXo3NUtUM2ZqMzJTN3lVQ016d0xmM1BFaTNPX3prcWstN0lZd0FZMzhmZk5PSC1WYkJ3dFVYZnl4NVM4Tk9GcUhWWjFyT3F0NUozMmtVdVhBamJ1RjhNWk5tcWdIVQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T19:22:05.049199+00:00",
-   "title_ru": "Индийская Tata Elxsi сообщила о более высокой квартальной прибыли благодаря росту транспортного подразделения"
-  },
   {
    "title": "Fitch warns bond yield surge is worsening debt outlook for developed economies",
    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQeWk1RWRubkZnVkRhdVlTOUxXQjZRQmhZeGZJNFNybEg5ZnktUTVvQTg0VDFRZnloRm5kbG05MEVyd0tMbGliNWIzRmk3NTBsU3NLS21MMjhsWm1lWXNnUm12SnJVaW14Wm5DLVZvZUhGcFNDU1hoTWI1N0JlczFHYVp6bmp6SGNEMlBKUkZqeWlqYURjMkVycHJvNWFleEF6RGV0TG1hdDUwZ0tmdTBoTlg0b19HZG5LTHByb1RqRQ?oc=5",
@@ -12129,6 +12092,19 @@
    "tags": [
     "bonds"
    ]
+  },
+  {
+   "title": "Longest Chip Selloff Since 2006 Mints Short Sellers $32 Billion",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPN00waURWRkZiczRHR3pQU0xRb3RNUnlrX2dzSkZHVlBHQk9md1RNLXF6X2pQdjA3ZHlHXzVBc2tUSG9Qc2xTYllwX25XUVd1R3FHR1dvOWZCdnlpc0VDTWdPTFRQN2pRY2NoT2w0YXlKdXdmSjE5RTI1VXVHaVp6SGRycXg4ei1QLV9wamRHMWFvYTR1MFREbDI3UkdYb1ZGOHZvUHd2amVoWVpROHlaUEhYUQ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-16T19:29:55.584481+00:00",
+   "title_ru": "Самая продолжительная распродажа фишек с 2006 года позволила коротким продавцам получить 32 миллиарда долларов",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-16",
@@ -15365,7 +15341,6 @@
   "sec_seen": [
    "0000007789-26-000247",
    "0001292814-26-004946",
-   "0000764180-26-000108",
    "0001213900-26-110188",
    "0001862314-26-000014",
    "0001292208-26-000012",
@@ -15379,7 +15354,6 @@
    "0001213190-26-000023",
    "0001791771-26-000007",
    "0001929185-26-000014",
-   "0002081604-26-000013",
    "0001437749-26-032791",
    "0001794684-26-000016",
    "0001437749-26-032788",
