@@ -1,12 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "4c4ccbbe6cbd098d": "2026-10-13T13:25:30.533442+00:00",
-  "bc2899c3ecf89228": "2026-10-13T13:25:30.533442+00:00",
-  "33ee1bf4534f5890": "2026-10-13T13:25:30.533442+00:00",
-  "4ddad90235ea68b5": "2026-10-13T13:25:30.533442+00:00",
-  "d8c7f5ab3ca7c41c": "2026-10-13T13:25:30.533442+00:00",
-  "0eeacf9c63378188": "2026-10-13T13:25:30.533442+00:00",
   "f6715e733f6de2e2": "2026-10-13T13:35:30.541228+00:00",
   "47d4aa693e260db7": "2026-10-13T13:35:30.541228+00:00",
   "6c85525003660b23": "2026-10-13T13:35:30.541228+00:00",
@@ -1158,68 +1152,13 @@
   "4a2b60b120e4a680": "2026-10-16T13:19:26.498788+00:00",
   "20aa54f2f3a956f4": "2026-10-16T13:19:26.498788+00:00",
   "e8552b9b51de68ce": "2026-10-16T13:24:26.450400+00:00",
-  "9c51a8de5420bdbb": "2026-10-16T13:24:26.450400+00:00"
+  "9c51a8de5420bdbb": "2026-10-16T13:24:26.450400+00:00",
+  "bd893fbc3f8384e5": "2026-10-16T13:29:26.428536+00:00",
+  "05bd4ce5fb057f14": "2026-10-16T13:29:26.428536+00:00",
+  "0daccf5f1b137b34": "2026-10-16T13:29:26.428536+00:00",
+  "26ba2b66ca16e717": "2026-10-16T13:29:26.428536+00:00"
  },
  "recent": [
-  {
-   "title": "UK grocery inflation accelerates over last month, says Worldpanel",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOLXp1cWdoT0RnaEYxZl9tZkIxVkQwby1TZzBwV1dUNGt2OEV6cklCRm44T0Y3elNzOThnSXRHaHFuaHJJUWJCZUtUXzdSN0sxeF9Ua2Y2OEJYTWZQSlhZMVozWXRUTHYzeWR3SnBPcVpqWHpOS2Nsa3B2dDVmWGhwa21ILWdzajh6d2xieWl6b3Y5X25sM3hzNVd0ckY1cVZrUGY3Nmt5WWxZcGJFaFFCeUhfOUxObXFGelJuN2d3TF8xMEU?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-13T13:25:30.533442+00:00",
-   "title_ru": "Инфляция продуктовых магазинов в Великобритании ускорилась за последний месяц, сообщает Worldpanel",
-   "tags": [
-    "инфляция"
-   ]
-  },
-  {
-   "title": "Euro Repo Traders Turn to Humans Over Machines in Flight to Cash",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-13/euro-repo-traders-turn-to-humans-over-machines-in-flight-to-cash",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T13:25:30.533442+00:00",
-   "title_ru": "Трейдеры еврорепо обращаются к людям, а не к машинам в бегстве к наличным",
-   "lead": "Brokers increased their share of Europe’s repo market to the highest since 2012 as automated trading lost ground to more discreet ways of raising cash during turbulence sparked by the Iran war.",
-   "lead_ru": "Брокеры увеличили свою долю на европейском рынке репо до самого высокого уровня с 2012 года, поскольку автоматическая торговля уступила место более осторожным способам привлечения денежных средств во время турбулентности, вызванной войной в Иране."
-  },
-  {
-   "title": "Freight rates for Russian Urals oil shipments to India hit fresh records in early October",
-   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNcVpHcU5oOWl3WUt1NFlQNi1Ld3JVQWI5Z0l3Z3p4UTFGSDdsMk5Yak5zdy16Z1NCcl9NMzBqbkgxaEdSLUtBSWVJWXQ5MnBiTzlDMXUyZE5iemFmQlJ2b3JlRWgxTlRMdnhHMVptZXhvMUtwMHZpb3IwM0VOZEUyLXpVenhqb2toWmJUdU9kQ25odHY2enA2a2xvd19mQ2U0WTVIVUlYa0kzYUdWYUVIaGtQSVdZY2pGVC15b2pEZlZhRDVteFVlOGFCOA?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T13:25:30.533442+00:00",
-   "title_ru": "Ставки фрахта на поставку российской нефти марки Юралс в Индию в начале октября достигли новых рекордов",
-   "tags": [
-    "нефть",
-    "Россия"
-   ]
-  },
-  {
-   "title": "India's Adani Enterprises eyes $210 mln fundraise via rupee debt, bankers say",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOSFJmZy1RREc0aFRhT0Z1b0h0Z25VVnUtaFdLLV9VNkMtT0tndWQwbHNabUZ5a0t0Y1dJQk93SThLRENjVm82RW55V3E1QnFRbTYxZ2wzcFBHSTE2R292X1o0LV9WY2NHeks1VUt5dGY4M1NYb0hONm5LMGpUbXZSTUlOX2lmM1BFQTVkLTJYOXhaZXFZVm56OEZNM09QclBQQ0JXRTRtZHZWQ1FKS3U4aHluOHZjTEZYY29pRDJ3OA?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T13:25:30.533442+00:00",
-   "title_ru": "Индийская компания Adani Enterprises планирует привлечь $210 млн за счет долга в рупиях, говорят банкиры"
-  },
-  {
-   "title": "PODCAST: Saudi alert system, IMF outlook and French fridge hack",
-   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOMFNmeFBLSS1xeG9renNZMGVXMnBSNGNuQk1GZnRERmZTMkZWYS1DclRVelVlSlRubXBpQzEtSDFrejU3c1ZjcGFmUWJjUW9WaHl1eUhoNGlsX1NqWHdHZkNxdWRQSGdPNUJ6cFg1c1FGZjhkTlpLRlVkR2IxY25vZE1FaFhaa3VMZ0dIeHM2Q1V1ZzljQ2J3TWdR?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T13:25:30.533442+00:00",
-   "title_ru": "ПОДКАСТ: саудовская система оповещения, прогноз МВФ и взлом французского холодильника"
-  },
   {
    "title": "Seema Shah Sees Opportunity in Bank Stocks",
    "link": "https://www.bloomberg.com/news/videos/2026-10-13/seema-shah-sees-opportunity-in-bank-stocks-video",
@@ -12302,6 +12241,54 @@
    "score": 3,
    "ts": "2026-10-16T13:24:26.450400+00:00",
    "title_ru": "Эмитент стейблкоинов Circle выйдет на 40 новых рынков, говорит генеральный директор"
+  },
+  {
+   "title": "Taiwan to Curb AI Chip Exports to China as Part of US Trade Deal",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOSU1LakZhV2xQNHBFM0lFWU9pT1JCdGMyTXY4Q01TSjZYd3dNbWZ4Rk50ME1UQnUzVkgta3U0RFpFY0VNZGNaeXZfV25jZm9lMjBDdjVONUhlMmJKLTNwT2xwM1I0Mkl5N2N2c25IQWZwbWtORDRYbUJMMC1hZXhWbzllSFZ2bDJzNThDSFRYYmVyYXJnSVc4V0QzVjFMWHBQWVc4NTlRb1E0WEJsYVl1OV9yZEFBQQ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-16T13:29:26.428536+00:00",
+   "title_ru": "Тайвань ограничит экспорт чипов ИИ в Китай в рамках торговой сделки США",
+   "tags": [
+    "China"
+   ]
+  },
+  {
+   "title": "IMF Says Colombia’s Fiscal Situation is Unsustainable, Untenable",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-16/imf-says-colombia-s-fiscal-situation-is-unsustainable-untenable",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T13:29:26.428536+00:00",
+   "title_ru": "МВФ говорит, что налогово-бюджетная ситуация в Колумбии неустойчива и несостоятельна",
+   "lead": "The International Monetary Fund warned that Colombia’s fiscal situation is unsustainable, sharpening its assessment of the country’s public finances as the new government seeks the lender’s help to stabilize its accounts.",
+   "lead_ru": "Международный валютный фонд предупредил, что финансовая ситуация в Колумбии неустойчива, обострив свою оценку государственных финансов страны, поскольку новое правительство ищет помощь кредитора для стабилизации своих счетов."
+  },
+  {
+   "title": "ExxonMobil signals $4.5 billion refining earnings boost as margins soar",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQTjlyZU82NGZleDhibTRDcWl1NzJId0JjZUpmMEVGZ1lRbzU2enR3WXV5a2xDME12TXdfYS1TaHJlMXh1bTIyNmNjbHVzNS1yb1laSVFHdWkxbnV4YTFyVXFVeGxzQktWV1ppWmZnQ1VHa2ljVVFrZjFOSHNqUjQ1U0lOTDJfTTRKT2FIWnRHRjg0MjhtXzlIYTJ2ZmdhUnJY?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T13:29:26.428536+00:00",
+   "title_ru": "ExxonMobil сигнализирует о росте прибыли от нефтепереработки на $ 4,5 млрд по мере роста маржи"
+  },
+  {
+   "title": "Chinese automakers make tech-led pitch for Europe's premium car market",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQWThYSzgwSG5kZ3ZmUEJMamwyN3NJOVJJaVRTMXV5UVM4YkwzTkFSdkxFcENtTU52cGVSY2JmRFpJSUxjQ1hGQTk5akZVdHJ6Z2l2dl9pc0dJV092dGxxa3NFX3BZQmxSQUF6SnUzOG9XM2czTE5OUGEwYUlYblpWdW50MkNWZG5qZ191ZXZXVjlBelExMWRHMDY3cXhmWTNxbnlmS2p4X1duX1NZaVF4aHRYQ1hRcXNVWDVwYlZVbmFVTk1TdWlqbkNqUQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T13:29:26.428536+00:00",
+   "title_ru": "Китайские автопроизводители делают технологичный шаг для европейского рынка автомобилей премиум-класса",
+   "tags": [
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-10-15",
@@ -15446,7 +15433,6 @@
    "0001801339-26-000015",
    "0002004903-26-000006",
    "0000313927-26-000332",
-   "0001193125-26-423229",
    "0002013812-26-000024",
    "0001493152-26-047334",
    "0001547475-26-000019",
@@ -15457,9 +15443,7 @@
    "0002063872-26-000008",
    "0001213900-26-110031",
    "0001628280-26-066045",
-   "0001193125-26-423227",
    "0001422978-26-000018",
-   "0001193125-26-423228",
    "0001961877-26-000049",
    "0001104659-26-116445",
    "0000313927-26-000330"
