@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "08fd1d8845274667": "2026-10-13T16:55:30.532879+00:00",
-  "cb11c2fbd958c0bb": "2026-10-13T16:55:30.532879+00:00",
-  "20f3fcaa207d1c88": "2026-10-13T16:55:30.532879+00:00",
-  "6a3db24212b41e42": "2026-10-13T16:55:30.532879+00:00",
   "45a113cfd27c7d02": "2026-10-13T17:05:30.537977+00:00",
   "4d67d46f24799935": "2026-10-13T17:15:30.531970+00:00",
   "d515a47aab2bc35a": "2026-10-13T17:15:30.531970+00:00",
@@ -1154,54 +1150,11 @@
   "cbca5b596a52625c": "2026-10-16T16:39:26.552957+00:00",
   "314715e0ec41e522": "2026-10-16T16:39:26.552957+00:00",
   "52d96e4583113f7d": "2026-10-16T16:44:26.423178+00:00",
-  "a927e57add6b24ec": "2026-10-16T16:44:26.423178+00:00"
+  "a927e57add6b24ec": "2026-10-16T16:44:26.423178+00:00",
+  "fdf4639479d06f53": "2026-10-16T16:59:26.528949+00:00",
+  "45dcb3c5e5648ea3": "2026-10-16T16:59:26.528949+00:00"
  },
  "recent": [
-  {
-   "title": "Ray Dalio Warns Slump in Treasuries Market Has ‘Long Way to Go’",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-13/ray-dalio-warns-slump-in-treasuries-market-has-long-way-to-go",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-13T16:55:30.532879+00:00",
-   "title_ru": "Рэй Далио предупреждает, что спад на рынке казначейских облигаций «долгий путь»",
-   "lead": "Billionaire investor Ray Dalio is warning that the US bond selloff is far from over as surging government and corporate borrowing collides with weakening demand from some of the world’s biggest traditional buyers.",
-   "lead_ru": "Инвестор-миллиардер Рэй Далио предупреждает, что распродажа облигаций США еще далека от завершения, поскольку растущие государственные и корпоративные займы сталкиваются с ослаблением спроса со стороны некоторых крупнейших традиционных покупателей мира.",
-   "tags": [
-    "облигации",
-    "рынки"
-   ]
-  },
-  {
-   "title": "Europe's mass-market carmakers under 'enormous pressure', Volkswagen CEO says",
-   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOdUhVMmJiZklfVTRuRlJKVmdaYkNxQkNYLXhrYWlmazAteTRILTQzVEZvUWl4Rm1CMEpOU2MwTFRadXl3WVhsaVZZWWpaTWJZZ3d1Wmp1TWdYd1VJY2pBV3BBWXhQTW5VX2tkZ1BLN19nSmlTNzhLR01HX3dya25lUm9UMVc0d21rWVdJUFZnUlQwcVVtYVg1eXQ2N1ljaHJmYUpVTXdDUHJCUUpCeHRBM3lvTGdMemFsemRrNzNYbkZ0dFdwZkFFd2dYeGpCSXRKTzZFaDR3?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T16:55:30.532879+00:00",
-   "title_ru": "Европейские производители автомобилей массового рынка находятся под «огромным давлением», заявил генеральный директор Volkswagen"
-  },
-  {
-   "title": "BP sees refining margin triple, debt target reached, but flags more impairments",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNT0Vzam9PQWZSUjJ1ampUeU9BcVBmQjJPUHJ2ZHkxT3pEcmRManlDTVBtS0N1LTJWV1lwR1FHMHFhZGJOWUVFN2U2eE5RRmlaVEVIRVlYdFhjS0RBdkxlVDJMV2pnOUVNLW4xbGVaYlpIV1VVVWhrSVJFT2YyWDdBOTV3eEwycXR6eDdCUW9raVYwNXZOQUU2YmtTM0pWekVfX2FDUlFNWGI2WEdQZHc?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T16:55:30.532879+00:00",
-   "title_ru": "BP ожидает, что рентабельность переработки утроится, целевой показатель долга достигнут, но отмечает рост обесценения"
-  },
-  {
-   "title": "AI fatigue is gripping the market and driving chip stocks toward their worst stretch in 16 months",
-   "link": "https://www.marketwatch.com/story/ai-fatigue-is-gripping-the-market-and-driving-chip-stocks-toward-their-worst-stretch-in-16-months-6dc78ece?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 2,
-   "ts": "2026-10-13T16:55:30.532879+00:00"
-  },
   {
    "title": "Wells Fargo Earnings Beat as Strong Customers Keep Lid on Loan Losses",
    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPVktwei1DLTRrN19PR0hRdFFoUi1mQ2ZUSTY4WDctU3BnTENHbGhwY05QdUthN3dXZHU3cHZhT3I3T2MzY2VtRkhtR2syQzNZOVVhUzZZS1dUNXMtZWx4TURXNVM5ZklLWXBlSHJ3UHNFMWxJdFVKMnRGcnhCZTJfcTVBUzI0cUtpdHpUQlNEN0NyN2diREY3Y0V3MWZKRzYxcmIycnJaRWpmaHczdldEZV9R?oc=5",
