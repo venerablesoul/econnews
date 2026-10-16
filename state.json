@@ -1,14 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "221b0300e4887a89": "2026-10-13T12:05:02.980239+00:00",
-  "d2d377420d4f2841": "2026-10-13T12:05:02.980239+00:00",
-  "70beaa2bbebdec5c": "2026-10-13T12:05:02.980239+00:00",
-  "a7b18b60ffb6800c": "2026-10-13T12:05:02.980239+00:00",
-  "138e38d4e88efefe": "2026-10-13T12:05:02.980239+00:00",
-  "5ec1e3b48d2347bf": "2026-10-13T12:05:02.980239+00:00",
-  "108af690c9e68cf1": "2026-10-13T12:05:30.715587+00:00",
-  "9a6a22f61a96a580": "2026-10-13T12:05:30.715587+00:00",
   "70e7b2a9c9d47cd3": "2026-10-13T12:15:30.534008+00:00",
   "f7bca8ff7ef3d9fd": "2026-10-13T12:15:30.534008+00:00",
   "44a54fd96ba424cf": "2026-10-13T12:25:30.517391+00:00",
@@ -1144,82 +1136,11 @@
   "2b7b1226e77ad0ff": "2026-10-16T11:59:26.421701+00:00",
   "8d9a3fa5bb4472f6": "2026-10-16T11:59:26.421701+00:00",
   "249b609173f0d6e1": "2026-10-16T12:04:26.452639+00:00",
-  "95fb92a92874f526": "2026-10-16T12:04:26.452639+00:00"
+  "95fb92a92874f526": "2026-10-16T12:04:26.452639+00:00",
+  "1d2848abcd1d30cc": "2026-10-16T12:09:26.473614+00:00",
+  "b87472457b27a305": "2026-10-16T12:09:26.473614+00:00"
  },
  "recent": [
-  {
-   "title": "World Economic Outlook, October 2026: Key Facts",
-   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE90c25pT1ZSbjlKdzBQcEwwS0czdEJUN0U0eExseVNoTEEwS1c1ZXROOXVNU1gzTmFLLVcwRzFSMC1faldWSWdjQk15QUt4Z2FrYnhsQllvenI?oc=5",
-   "sources": [
-    "МВФ"
-   ],
-   "score": 5,
-   "ts": "2026-10-13T12:05:02.980239+00:00",
-   "title_ru": "Перспективы мировой экономики, октябрь 2026 г.: ключевые факты"
-  },
-  {
-   "title": "S&P 500, Dow futures muted after big bank earnings, chip slide weighs",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPdkNncVkwQU9JeFhSRFFWQ1FhcW5SUk5hY1hQMkpocmdCRlZ5b04zOGJnZ184T1lONDh1cUQwZFY3RVJxUmJzZDhpUWZ0RlhsUGluV3hoVG1TV2JWNEZtUS12R1Z0VURRQmt3SjkyUU44UkZTcmF1RnFaTm9POE9LYW5TWjY3el9jNzQwV1lOVkhaOGFDTE9Wc1NrM0RYTzJ5UFM4eF92UWV3LW03SHJ1U1I5cHF4eDNFS1liNw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-13T12:05:02.980239+00:00",
-   "title_ru": "Фьючерсы на S&P 500 и Dow приглушены после доходов крупных банков, падение фишек весит",
-   "tags": [
-    "рынки"
-   ]
-  },
-  {
-   "title": "Record Share of Investors Shun French Stocks, BofA Survey Shows",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-13/record-share-of-investors-shun-french-stocks-bofa-survey-shows",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-13T12:05:02.980239+00:00",
-   "title_ru": "Рекордная доля инвесторов избегает французских акций, показывает опрос BofA",
-   "lead": "A record number of investors say they’re planning to curb exposure to French equities as the country’s political and fiscal stresses cast a shadow over regional stocks, according to a Bank of America Corp. poll.",
-   "lead_ru": "Согласно опросу Bank of America Corp., рекордное количество инвесторов заявили, что планируют ограничить влияние на французские акции, поскольку политические и финансовые трудности в стране бросают тень на региональные акции.",
-   "tags": [
-    "рынки"
-   ]
-  },
-  {
-   "title": "Three things we've learnt about the UK economy from the IMF",
-   "link": "https://www.bbc.co.uk/news/articles/cmly05l1g15yo?at_medium=RSS&at_campaign=rss",
-   "sources": [
-    "BBC"
-   ],
-   "score": 4,
-   "ts": "2026-10-13T12:05:02.980239+00:00",
-   "title_ru": "Три вещи, которые мы узнали об экономике Великобритании от МВФ",
-   "lead": "The influential economics body has upgraded its UK growth forecast for this year, but risks remain.",
-   "lead_ru": "Влиятельный экономический орган повысил прогноз роста экономики Великобритании на этот год, но риски остаются."
-  },
-  {
-   "title": "The Nobel Prize in Economics Is a Message to the Fed",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQM2E4NVNQLXpEbFpiNDJtdExGQnVWN05QR1N6LUQ0eWpVWE1TM3J6VjhFU1ZTY0diXzFZTHJlOWVLX195V2dEMmIybF9fNnZlQ0FnaVlGR1Azc0FDZlo0U0JhQU1aWThYOUJqdlFiVjM1YjFzNWJkUTJ0MkhEYmNIejdncGw3WVJUQkRWZFNnUFJjOGJpRTlwN05LY24wQUh6NG9ONDRUOWVuemNuTnN0a2lvcEdhUQ?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T12:05:02.980239+00:00",
-   "title_ru": "Нобелевская премия по экономике — послание ФРС",
-   "tags": [
-    "ФРС"
-   ]
-  },
-  {
-   "title": "Press Briefing: G-24",
-   "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE52OU5PYjc2Y1hCTjJCQ0ktUGRwcjdWd2hDd0ZGWVR6NGZ6UUZJbTRyVS1UZzdPOWdzczc0NnFwby1sdUkybVROb3VKa3JxeURlbVVlb0RFeTlTZWFz?oc=5",
-   "sources": [
-    "МВФ"
-   ],
-   "score": 4,
-   "ts": "2026-10-13T12:05:30.715587+00:00",
-   "title_ru": "Пресс-брифинг: Группа 24"
-  },
   {
    "title": "Wells Fargo profit rises on robust loan growth, interest income",
    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPZ3h0SU11NWFMTHJPeWw2ZGlmZlJ5RzNzRm9FZWZ3MURpVmtwajFQV2RnRDkxeVJVXzZGcEduYzF1RFdtT0RKYkRub1pfazFCbUNiWHllejh6V3Y2TVZnU1gzNV9qSkExVGhoWk1WampqaHduYjVoNGRVQ2NBb3lueThEZExQaTlQb1J0SmpLdUg5akhSY1NXNFNjY1d5dmx3SEhscjd4MFFyTFZtR0FtNkRB?oc=5",
@@ -12105,6 +12026,37 @@
    "title_ru": "Сенегал планирует сократить дефицит бюджета ниже прогноза МВФ в следующем году",
    "lead": "Senegal is cutting spending next year as it seeks to restructure its debt and secure a new financing program from the International Monetary Fund.",
    "lead_ru": "Сенегал сокращает расходы в следующем году, стремясь реструктурировать свой долг и получить новую программу финансирования от Международного валютного фонда."
+  },
+  {
+   "title": "Страховые пенсии проиндексируют темпами выше инфляции в 2027 году",
+   "link": "https://www.kommersant.ru/doc/9040424",
+   "sources": [
+    "Kommersant"
+   ],
+   "score": 5,
+   "ts": "2026-10-16T12:09:26.473614+00:00",
+   "title_en": "Insurance pensions will be indexed at a rate higher than inflation in 2027",
+   "lead": "Страховые пенсии в 2027 году будут индексироваться темпами выше инфляции. Об этом заявил председатель Социального фонда России (СФР) Сергей Чирков на заседании комитета Госдумы по бюджету и налогам.",
+   "lead_en": "Insurance pensions in 2027 will be indexed at a rate higher than inflation. This was stated by the Chairman of the Social Fund of Russia (SFR) Sergei Chirkov at a meeting of the State Duma Committee on Budget and Taxes.",
+   "tags": [
+    "inflation",
+    "Russia"
+   ]
+  },
+  {
+   "title": "Shahin Vallée: Europe Must Rebalance Trade with China",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-16/shahin-vallee-europe-must-rebalance-trade-with-china-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T12:09:26.473614+00:00",
+   "title_ru": "Шахин Валле: Европа должна сбалансировать торговлю с Китаем",
+   "lead": "As the EU weighs new measures to block Chinese imports, Shahin Vallée of the German Council on Foreign Relations and formerly of the French Ministry of the Economy and Finance, joins Bloomberg's Anna Edwards, Guy Johnson, and Tom…",
+   "lead_ru": "В то время как ЕС обдумывает новые меры по блокированию китайского импорта, Шахин Валле из Немецкого совета по международным отношениям и бывшего Министерства экономики и финансов Франции присоединяется к Анне Эдвардс из Bloomberg, Гаю Джонсону и Тому…",
+   "tags": [
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-10-15",
@@ -15211,12 +15163,11 @@
   "checked": "2026-10-16T11:39:26.416483+00:00",
   "sec_seen": [
    "0001887782-26-000009",
-   "0001652149-26-000006",
    "0001193125-26-423224",
+   "0001652149-26-000006",
    "0002004903-26-000006",
    "0002058769-26-000006",
    "0001193125-26-423229",
-   "0001140361-26-039793",
    "0001568238-26-000001",
    "0001493152-26-047334",
    "0001536288-26-000013",
