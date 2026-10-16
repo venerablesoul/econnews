@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "54c831da709a10b8": "2026-10-13T02:34:38.022394+00:00",
-  "fd82dc4afab99468": "2026-10-13T02:34:38.022394+00:00",
-  "cd2b9bbe00d68774": "2026-10-13T02:34:38.022394+00:00",
   "4dc68ea4d5602e72": "2026-10-13T02:44:38.018385+00:00",
   "2c66d3a75903adeb": "2026-10-13T02:44:38.018385+00:00",
   "22b269d26d697360": "2026-10-13T02:44:38.018385+00:00",
@@ -1121,42 +1118,10 @@
   "8915f04e51275866": "2026-10-16T02:18:24.065189+00:00",
   "0e7ff21c3dd31995": "2026-10-16T02:23:24.023402+00:00",
   "bc789703137a88ff": "2026-10-16T02:28:23.977136+00:00",
-  "ce2290b28f505873": "2026-10-16T02:33:23.962915+00:00"
+  "ce2290b28f505873": "2026-10-16T02:33:23.962915+00:00",
+  "98c1c1acee618366": "2026-10-16T02:38:24.034599+00:00"
  },
  "recent": [
-  {
-   "title": "Thai Minister of Finance Flagship Event - Building Resilience in a Fragmented World",
-   "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOM1JRTUlDUGlWTXNvVEV6OGZlcy03MG84MUcwNlVRX0xxYmJPTzYxd3hxM243cF8yaWFITmFjTXQ4TFQ3NjVvT1VMcXdBWWZHOEVsWTBWRTROMlhKb051M2IzS0xlNDQyMnhRV0EtWnk4aV9OUjFqMHd4RnBvR0NGM1I5VmNlaGtabTdkUVF4bVhGM3hncUQ3cm5wTFRSVzFHbDR0T3NabzZyVlAxcVgwNUpGMmEyUkQ4UkVlSHB0cDVod01oNVlfeXVidzZ0V0ppdi1uV3NsMHlucURSR1E?oc=5",
-   "sources": [
-    "МВФ"
-   ],
-   "score": 4,
-   "ts": "2026-10-13T02:34:38.022394+00:00",
-   "title_ru": "Флагманское мероприятие министра финансов Таиланда: повышение устойчивости в фрагментированном мире"
-  },
-  {
-   "title": "EU looking at oil and gas windfall profit tax, as energy prices soar",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRkFnZHlycnVIT0dJR21Nd1NXQ215NHNYZGp5WHM5Rk9MeEdBbktzUFhMSmZyWHRUS2o3Vkl6MWdGTVhmeVB4NUxPNG0zeHVSNU0yY2otd2Z0REhpWmhscGxzN3B4RW1CYlJYZmFhUnpucDBYMGJfMHdpSWx3YWtsTlFWc1lzVktYcDZvZXhYU1d1dEF4TklNekJ0cHk0ZVZsUE1aQU5JSVZXbWNLd3c?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-13T02:34:38.022394+00:00",
-   "title_ru": "ЕС рассматривает вопрос о налоге на непредвиденную прибыль от нефти и газа, поскольку цены на энергоносители растут",
-   "tags": [
-    "нефть"
-   ]
-  },
-  {
-   "title": "IMF cuts Latin America, Caribbean growth forecasts on energy shock, little AI boost",
-   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPZ21qSmpyZzRDaFJwUUh1Zldnb25yMGphSVlOa0NiN3hPdDVXcThHVzlEdTM2U0NhdkwwSFdnanZ2VENlYVhDZWF3UlA4eVBGRms1clZabHdJbnJQeVpOWEd4NkkyWkVPbzQxRG8xQnFhWGVfVEpseXhfOURzLUI0SVptcW9KNWxjUGlLT1N6Nkh0cVRrMmdmQ2xoS09NbVBQa3RzWFgtWnRFQkZlUnMwekl0U0NJTm5wM2o3QURySFpJNldySHgzUjNzOVhRZw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-13T02:34:38.022394+00:00",
-   "title_ru": "МВФ снизил прогнозы роста в Латинской Америке и Карибском бассейне из-за энергетического шока и незначительного стимулирования искусственного интеллекта"
-  },
   {
    "title": "Indian Bonds Face Double Blow From Rupee Defense, Inflation",
    "link": "https://www.bloomberg.com/news/newsletters/2026-10-13/indian-bonds-face-double-blow-from-rupee-defense-inflation",
@@ -11847,6 +11812,21 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Tardy China Stimulus Sets Up Second Quarter of Sub-Target Growth",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-16/tardy-china-stimulus-sets-up-second-quarter-of-sub-target-growth",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-16T02:38:24.034599+00:00",
+   "title_ru": "Tardy China стимулирует второй квартал роста субцелей",
+   "lead": "China’s economy is heading for a second straight quarter of growth below the 2026 target set by the nation’s leaders, with policymakers’ recent stimulus measures having come too late to make a notable impact.",
+   "lead_ru": "Экономика Китая движется ко второму кварталу подряд роста ниже целевого показателя 2026 года, установленного лидерами страны, при этом недавние меры стимулирования, принятые политиками, пришли слишком поздно, чтобы оказать заметное влияние.",
+   "tags": [
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-10-15",
@@ -14929,11 +14909,11 @@
    "0001689498-26-000002",
    "0002090886-26-000012",
    "0001632063-26-000005",
+   "0001193125-26-423229",
    "0001522767-26-000206",
    "0001652149-26-000006",
-   "0001193125-26-423228",
-   "0001453368-26-000002",
    "0002058781-26-000003",
+   "0001453368-26-000002",
    "0001218363-26-000005",
    "0001531152-26-000073",
    "0001498287-26-000001",
@@ -14965,7 +14945,7 @@
    "0001193125-26-423227",
    "0001171520-26-000309",
    "0001628280-26-066035",
-   "0001193125-26-423229"
+   "0001193125-26-423228"
   ],
   "errors": {}
  }
