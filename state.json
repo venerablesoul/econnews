@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "fdf4639479d06f53": "2026-10-13T16:45:30.527514+00:00",
-  "b7f67f1a5a189623": "2026-10-13T16:45:30.527514+00:00",
-  "45f7323ccaf172d9": "2026-10-13T16:45:30.527514+00:00",
-  "26b9c74ce8f16753": "2026-10-13T16:45:30.527514+00:00",
-  "9cd308ae5b70e13a": "2026-10-13T16:45:30.527514+00:00",
   "08fd1d8845274667": "2026-10-13T16:55:30.532879+00:00",
   "cb11c2fbd958c0bb": "2026-10-13T16:55:30.532879+00:00",
   "20f3fcaa207d1c88": "2026-10-13T16:55:30.532879+00:00",
@@ -1162,47 +1157,6 @@
   "a927e57add6b24ec": "2026-10-16T16:44:26.423178+00:00"
  },
  "recent": [
-  {
-   "title": "US Treasury yields yet to peak as Fed may tighten further, PIMCO's Ivascyn says",
-   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQckVkLTFFNXNKUmlRWTVjWE1tOWZ5OXYxU3NFSWU3V0w0dkk3WEVsamFRVWY5Y0FlNVgzV1dZQlJtNWoyY1ByVlVWT0dBNEp6QnlRVG9HTXpKTENiMXlNT0gtYXRnbHFHRk5TUFREaWZmUEk2WElGUDJfY3d3dHc2ZEh5QUdoQlMzZVBKcUlXamtqTmlsQ1kxZXI2MTV6dGVDU1p3QXQwWVJjN1dkVTc3NXlBRm96SVRkQVE?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-13T16:45:30.527514+00:00",
-   "title_ru": "Доходность казначейских облигаций США еще не достигла пика, поскольку ФРС может продолжить ужесточение политики, говорит Иваскин из PIMCO",
-   "tags": [
-    "ФРС",
-    "облигации"
-   ]
-  },
-  {
-   "title": "Guyana Oil Exports to Top 1 Million Barrels a Day for First Time",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-13/guyana-oil-exports-to-top-1-million-barrels-a-day-for-first-time",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-13T16:45:30.527514+00:00",
-   "title_ru": "Экспорт нефти Гайаны впервые превысил 1 миллион баррелей в день",
-   "lead": "Guyana’s crude oil exports are set to surpass 1 million barrels a day for the first time when the country starts shipping its Uaru grade in December.",
-   "lead_ru": "Экспорт сырой нефти Гайаны впервые превысит 1 миллион баррелей в день, когда в декабре страна начнет поставлять нефть сорта Уару.",
-   "tags": [
-    "нефть"
-   ]
-  },
-  {
-   "title": "Big Banks Deliver Mixed Results to Kick Off Earnings on Wall Street",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-13/bloomberg-surveillance-10-13-2026-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-13T16:45:30.527514+00:00",
-   "title_ru": "Крупные банки показали неоднозначные результаты, чтобы начать прибыль на Уолл-стрит",
-   "lead": "Jonathan Ferro, Lisa Abramowicz and Annmarie Hordern speak daily with leaders and decision makers from Wall Street to Washington and beyond.",
-   "lead_ru": "Джонатан Ферро, Лиза Абрамович и Аннмари Хордерн ежедневно беседуют с лидерами и лицами, принимающими решения, от Уолл-стрит до Вашингтона и за его пределами."
-  },
   {
    "title": "Ray Dalio Warns Slump in Treasuries Market Has ‘Long Way to Go’",
    "link": "https://www.bloomberg.com/news/articles/2026-10-13/ray-dalio-warns-slump-in-treasuries-market-has-long-way-to-go",
@@ -15452,18 +15406,25 @@
    "0001193125-26-423655",
    "0001193125-26-423639",
    "0000752642-26-000131",
+   "0001608349-26-000004",
    "0001193125-26-423637",
+   "0000752642-26-000132",
+   "0001628280-26-066091",
+   "0001685700-26-000004",
+   "0001193125-26-423626",
+   "0001816757-26-000001",
+   "0001193125-26-423629",
    "0001630196-26-000008",
    "0001193125-26-423645",
-   "0001683168-26-007921",
-   "0001193125-26-423626",
-   "0001193125-26-423653",
    "0001766116-26-000028",
+   "0001193125-26-423635",
+   "0001939410-26-000004",
    "0001193125-26-423651",
    "0001193125-26-423648",
-   "0001816757-26-000001",
-   "0001193125-26-423635",
-   "0001193125-26-423629"
+   "0001382452-26-000006",
+   "0001683168-26-007921",
+   "0001193125-26-423653",
+   "0001476342-26-000004"
   ],
   "errors": {}
  }
