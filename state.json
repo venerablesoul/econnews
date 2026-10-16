@@ -1,14 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "44bb850816f52291": "2026-10-13T02:14:38.055093+00:00",
-  "ec57a27e4ad766c3": "2026-10-13T02:14:38.055093+00:00",
-  "2c7e949f4c0958b7": "2026-10-13T02:14:38.055093+00:00",
-  "39fa973a539b75e4": "2026-10-13T02:14:38.055093+00:00",
-  "c45cd3b52117168d": "2026-10-13T02:14:38.055093+00:00",
-  "01ed74cbac7f20f0": "2026-10-13T02:14:38.055093+00:00",
-  "f92591a9fbd53419": "2026-10-13T02:14:38.055093+00:00",
-  "007c325b7990da5d": "2026-10-13T02:14:38.055093+00:00",
   "54c831da709a10b8": "2026-10-13T02:34:38.022394+00:00",
   "fd82dc4afab99468": "2026-10-13T02:34:38.022394+00:00",
   "cd2b9bbe00d68774": "2026-10-13T02:34:38.022394+00:00",
@@ -1125,84 +1117,11 @@
   "44f0e1faa0f9745f": "2026-10-16T02:03:24.200868+00:00",
   "3c4fbce0e34510de": "2026-10-16T02:08:24.118732+00:00",
   "70dc23ba6a1519f1": "2026-10-16T02:08:24.118732+00:00",
-  "822095ec9e33807e": "2026-10-16T02:13:23.992391+00:00"
+  "822095ec9e33807e": "2026-10-16T02:13:23.992391+00:00",
+  "8915f04e51275866": "2026-10-16T02:18:24.065189+00:00",
+  "0e7ff21c3dd31995": "2026-10-16T02:23:24.023402+00:00"
  },
  "recent": [
-  {
-   "title": "IMF expects gradual BOJ rate hike towards neutral setting",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNWXQtTWY1cWNhbC0tUDFkUld5Zmd0X0pKTGhvQ2ZKUzBGVlU2WlQySHk2WjNaMGRUQTduNG93elRxa3RnUC15SEJWREVaRGN2QUs1Y0szdUc4eGJ2M0dLYlI1TlMtZGdOc1h2a3BDSFdYLWRlSjAwTzZWVGgyRWNwQ1pBRnVRdGxsN3RWZnlKaDVGRzc0NFdnZ0pMU29RR3FBcG8xd1B4WXRRMG5XUkQzNzhn?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 7,
-   "ts": "2026-10-13T02:14:38.055093+00:00",
-   "title_ru": "МВФ ожидает постепенного повышения ставки Банком Японии до нейтрального уровня",
-   "tags": [
-    "ставки"
-   ]
-  },
-  {
-   "title": "IMF sees higher energy prices and interest rates hitting UK growth",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUTJyMHNnWkhKZFRYM0ZuTkVjem1qaGRJRGwyaW1zQWVJUXhYOXVTbURmVFI2c2tfRVFlSEMyUnh0SEVuYXpzRzFtTmVBQTlQY2xkLWF2LU9veG1IYU5qeFo5Q2ZhS1VGSHAzQWVObEM2cnJYS2lkVHVlXzJTbjBHZXpmTGVORnFPd3dBX1VHS0pxV2lTTUw4MGZWQ0lJSlVhNzlzcXp5clNudU0?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 7,
-   "ts": "2026-10-13T02:14:38.055093+00:00",
-   "title_ru": "МВФ считает, что повышение цен на энергоносители и процентных ставок негативно скажется на экономическом росте Великобритании",
-   "tags": [
-    "ставки"
-   ]
-  },
-  {
-   "title": "IMF Urges Caution on Cost of Living Support Before UK Budget",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-13/imf-urges-caution-on-cost-of-living-support-before-uk-budget",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-13T02:14:38.055093+00:00",
-   "title_ru": "МВФ призывает с осторожностью относиться к поддержке стоимости жизни перед бюджетом Великобритании",
-   "lead": "UK Chancellor of the Exchequer John Healey has received a warning from the International Monetary Fund ahead of his budget this month: use cost-of-living support “sparingly” or risk reigniting inflation.",
-   "lead_ru": "Канцлер казначейства Великобритании Джон Хили получил предупреждение от Международного валютного фонда в преддверии своего бюджета в этом месяце: используйте поддержку стоимости жизни «экономно», иначе рискуете вновь разжечь инфляцию.",
-   "tags": [
-    "инфляция"
-   ]
-  },
-  {
-   "title": "IMF says AI investment propping up global growth, but war and debt threaten outlook",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPVlNmbDdlaDUwX1pOeWRzM1FhdDNhWTNnVnk4bXZLZlR2VGwxMFRCcWdiNngwM2p1Tmp3YjZMY0FwY1puZHk3bTlEYWNyd2pYYUxPd19nZVpqQU9CQjVlck9RUGtoajF5SGY4VnYzSWpZXzY2TWZ3TVY3Yl9ucVdEWnc3b2xzT19vbzBqazJUMzlCdmpfakw4VjAzOVZ3Ui13dmlJOV90Nk9pVUxWY1htUHYtNDZhTGhyTDYwZEk3SQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-13T02:14:38.055093+00:00",
-   "title_ru": "МВФ заявляет, что инвестиции в ИИ поддерживают глобальный рост, но война и долги угрожают перспективам"
-  },
-  {
-   "title": "World Economy Holds Up But Nears Limits of Resilience, IMF Says",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-13/world-economy-holds-up-but-nears-limits-of-resilience-imf-says",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-13T02:14:38.055093+00:00",
-   "title_ru": "Мировая экономика держится, но близка к пределу устойчивости, говорит МВФ",
-   "lead": "The International Monetary Fund said global growth should pick up next year with a boost from AI investment, but warned the world economy is nearing the limits of its resilience as the energy squeeze persists and financial risks…",
-   "lead_ru": "Международный валютный фонд заявил, что глобальный рост должен ускориться в следующем году благодаря увеличению инвестиций в искусственный интеллект, но предупредил, что мировая экономика приближается к пределу своей устойчивости, поскольку сохраняется дефицит энергоресурсов и финансовые риски..."
-  },
-  {
-   "title": "Global economy to slow less than expected in 2026 as AI boom offsets war hit: IMF",
-   "link": "https://www.cnbc.com/2026/10/12/imf-world-bank-annual-meetings-october-bangkok-asia-.html",
-   "sources": [
-    "CNBC"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T02:14:38.055093+00:00",
-   "title_ru": "Мировая экономика в 2026 году замедлится меньше, чем ожидалось, поскольку бум искусственного интеллекта компенсирует ущерб от войны: МВФ",
-   "lead": "The IMF raised its 2026 global growth forecast to 3.1%, as AI investment helped offset the war’s energy shock.",
-   "lead_ru": "МВФ повысил прогноз мирового роста на 2026 год до 3,1%, поскольку инвестиции в ИИ помогли компенсировать энергетический шок, вызванный войной."
-  },
   {
    "title": "Thai Minister of Finance Flagship Event - Building Resilience in a Fragmented World",
    "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOM1JRTUlDUGlWTXNvVEV6OGZlcy03MG84MUcwNlVRX0xxYmJPTzYxd3hxM243cF8yaWFITmFjTXQ4TFQ3NjVvT1VMcXdBWWZHOEVsWTBWRTROMlhKb051M2IzS0xlNDQyMnhRV0EtWnk4aV9OUjFqMHd4RnBvR0NGM1I5VmNlaGtabTdkUVF4bVhGM3hncUQ3cm5wTFRSVzFHbDR0T3NabzZyVlAxcVgwNUpGMmEyUkQ4UkVlSHB0cDVod01oNVlfeXVidzZ0V0ppdi1uV3NsMHlucURSR1E?oc=5",
@@ -11888,6 +11807,16 @@
    "tags": [
     "China"
    ]
+  },
+  {
+   "title": "Investors see outflow and FX risks as MSCI moves to downgrade Indonesia",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNMUlPWHcyMzdHSU9rZ3JoTDFpdlNqdENIdm9IX0tINXBMZEVtQnBJb2J5dTVDSHk3dXdnSXQ4YW5sN3VMNUpBS2UxR0g1OHRCRmxULUZzUldHRkoxcFJxeV81dkZZYlRnVlcyQTJwbVBJQ3B6aDU5LS1BcFp2a1doN04wS1J3M2Z6TWtfaEw4SktVYndoX2dJZ0EwMXhqNldZQ2REbXljT0J5TWVhOUN5cWFDMjZTblU?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-16T02:23:24.023402+00:00",
+   "title_ru": "Инвесторы видят отток и валютные риски по мере того, как MSCI переходит к понижению рейтинга Индонезии"
   }
  ],
  "last_digest": "2026-10-15",
@@ -14957,7 +14886,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-16T01:13:24.118500+00:00",
+  "checked": "2026-10-16T02:18:24.065189+00:00",
   "sec_seen": [
    "0001177394-26-000117",
    "0001951059-26-000018",
