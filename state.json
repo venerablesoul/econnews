@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "648e8446403da030": "2026-10-13T04:24:38.004375+00:00",
   "8bd0190d544e1f00": "2026-10-13T04:34:38.037307+00:00",
   "4325818cda7b21a3": "2026-10-13T04:34:38.037307+00:00",
   "6c2d421219936bca": "2026-10-13T04:44:38.014259+00:00",
@@ -1124,7 +1123,10 @@
   "1e8b1583f7595dbe": "2026-10-16T04:08:24.036424+00:00",
   "0c6fbb2c870c2648": "2026-10-16T04:13:24.001008+00:00",
   "5a2a74e3b48fbce6": "2026-10-16T04:13:24.001008+00:00",
-  "46a1e51a287e3cbf": "2026-10-16T04:23:24.023556+00:00"
+  "46a1e51a287e3cbf": "2026-10-16T04:23:24.023556+00:00",
+  "038baa58e7439058": "2026-10-16T04:28:23.986809+00:00",
+  "94c8d55683986676": "2026-10-16T04:28:23.986809+00:00",
+  "8b2a4ff2c82b1d92": "2026-10-16T04:28:23.986809+00:00"
  },
  "recent": [
   {
@@ -11852,6 +11854,42 @@
    "tags": [
     "bonds"
    ]
+  },
+  {
+   "title": "Most Asian stocks rise as calm returns after CoreWeave shock; Indonesia faces market downgrade",
+   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPMUpLRUNwWEpRNVpNVWJPOWQyQXdKRjkzdTU5RjFiOUxpUFZGU1ZBa1VaS3ctN0xlc0lSMkptbUVMRlprcFFtZ3B6Z2ZFTG5XX2FBUHBoSk4xRTdiQm1ucERORXE4ZzNFZ09ySlpvUDlzb0tGUjFQZ3c0UmotdEstMEZCUQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 7,
+   "ts": "2026-10-16T04:28:23.986809+00:00",
+   "title_ru": "Большинство азиатских акций растут как спокойная доходность после шока CoreWeave; Индонезия сталкивается с понижением рынка",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "Fed's Warsh gives no hint on October policy decision",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPbUpNSUtZSU1FYnJCSDNWNnJRMmF3bmQ1QkdEaVhZb3I3c0lpYWhyQjNSemVVdGttRHE3UTFNOXg0enZ6eHAzcDY3UXBmQUJJRzl1T3gtMEZad0Z0Xy12TTlFcVRGeVdNYmVkZ3NPQThlUWRLUTh5c2J0UHFPVVRKT0hpR2RyU2tlRnJhVnBZZkxxUFhaTzRBVUlkbWFUUQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T04:28:23.986809+00:00",
+   "title_ru": "Уорш из ФРС не дает никаких намеков на октябрьское политическое решение",
+   "tags": [
+    "Fed"
+   ]
+  },
+  {
+   "title": "Malaysia's economy grows 5.3% on year in Q3, official advance estimate shows",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPODVNWVhZbm1QRVo4WmZjOGNkb1lXcnRXa3RsVHNncG9oTXhmZ1pwNFZpLTJEU1Y4MjdVMTBiazRWTm5oVUVidEZnWkVzQ01qZmF4ZmxnZWVEcWhhS1FnOUFZOU9VTGtpN2h4YXA2T2JVN0FLOFpKUW1Ka2xUQkxkZjAxZ3lFblJiSE1XQ0I2MVk0SzE4cUdjUVM3VUxOLS1DV3Y4cURadzJ3SVk5ME92UzhBVDBuT0p3WkQxNDFB?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T04:28:23.986809+00:00",
+   "title_ru": "В третьем квартале экономика Малайзии выросла на 5,3% в годовом исчислении, как показывает официальная предварительная оценка"
   }
  ],
  "last_digest": "2026-10-15",
@@ -14922,7 +14960,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-16T03:23:24.082170+00:00",
+  "checked": "2026-10-16T04:28:23.986809+00:00",
   "sec_seen": [
    "0001177394-26-000117",
    "0001951059-26-000018",
@@ -14934,11 +14972,11 @@
    "0001689498-26-000002",
    "0002090886-26-000012",
    "0001632063-26-000005",
+   "0001193125-26-423229",
    "0001522767-26-000206",
    "0001652149-26-000006",
-   "0001193125-26-423228",
-   "0001453368-26-000002",
    "0002058781-26-000003",
+   "0001453368-26-000002",
    "0001218363-26-000005",
    "0001531152-26-000073",
    "0001498287-26-000001",
@@ -14970,7 +15008,7 @@
    "0001193125-26-423227",
    "0001171520-26-000309",
    "0001628280-26-066035",
-   "0001193125-26-423229"
+   "0001193125-26-423228"
   ],
   "errors": {}
  }
