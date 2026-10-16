@@ -1144,7 +1144,8 @@
   "96d49f684a005686": "2026-10-16T11:18:52.090650+00:00",
   "4c75f1eee9872259": "2026-10-16T11:28:52.043369+00:00",
   "7cb806baae0d2ae4": "2026-10-16T11:28:52.043369+00:00",
-  "d76b1652ee67b7af": "2026-10-16T11:28:52.043369+00:00"
+  "d76b1652ee67b7af": "2026-10-16T11:28:52.043369+00:00",
+  "94a8e74d5b9796b0": "2026-10-16T11:33:52.065441+00:00"
  },
  "recent": [
   {
@@ -12110,6 +12111,20 @@
    "tags": [
     "bonds"
    ]
+  },
+  {
+   "title": "COMMENTARY: AI jitters, Trump's fading oil clout and China shock 2.0: The financial week in five charts",
+   "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPT0JUeTlGZHJqb29Dcnp1dEhpLXFEN0EwdG1IX0pzb29pampFTEhISTdSODVqdDd4a2dSRllSSy12YzBHSXR1bmZCVmJyRXFmTl9IN2tDVTkwbWFXa09hTUFhaER0U2hZMkh3YTZwaXlMZzkyUUNMUWtRUW96clBaR3JpNnVFanlyUjFqek1FWTV3TGtqbHRHWDR1RDZZZnBiRFlzdElpcEw3czFJaVkyT3pMLURLQm1FQzhxY0lJdHBUbUYwd25Ralk4R21xb1VQdUdqempCX2lpRUNwbHc?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T11:33:52.065441+00:00",
+   "title_ru": "КОММЕНТАРИЙ: ИИ нервничает, ослабление нефтяного влияния Трампа и китайский шок 2.0: финансовая неделя в пяти графиках",
+   "tags": [
+    "oil",
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-10-15",
@@ -14204,6 +14219,22 @@
    },
    {
     "src": "sec",
+    "id": "a1418852760c9b44",
+    "ticker": "BORR",
+    "company": "Borr Drilling Ltd",
+    "who": "Tor Olav Troim",
+    "role": "Director",
+    "type": "buy",
+    "value": 2299150,
+    "shares": 500000,
+    "price": 4.6,
+    "plan": false,
+    "date": "2026-10-15",
+    "disclosed": "2026-10-16",
+    "link": "https://www.sec.gov/Archives/edgar/data/1715497/000162828026066045/0001628280-26-066045-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "a1ac076c38942b00",
     "ticker": "CRESY",
     "company": "CRESUD INC",
@@ -15204,6 +15235,7 @@
    "0001568238-26-000001",
    "0001593199-26-000004",
    "0001689498-26-000002",
+   "0001628280-26-066045",
    "0001193125-26-423228",
    "0001193125-26-423229",
    "0002127484-26-000021",
@@ -15212,11 +15244,11 @@
    "0001798757-26-000009",
    "0001242654-26-000016",
    "0001193125-26-423227",
-   "0002058781-26-000003",
    "0001529306-26-000009",
-   "0001140361-26-039793",
-   "0001887782-26-000009",
+   "0002058781-26-000003",
    "0002004903-26-000006",
+   "0001887782-26-000009",
+   "0001140361-26-039793",
    "0001498287-26-000001",
    "0001652149-26-000006",
    "0001961877-26-000049",
@@ -15230,8 +15262,7 @@
    "0001593199-26-000005",
    "0001778564-26-000185",
    "0002058769-26-000006",
-   "0001222287-26-000028",
-   "0001790292-26-000003"
+   "0001222287-26-000028"
   ],
   "errors": {}
  }
