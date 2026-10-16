@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "a656734a7f51b223": "2026-10-13T13:05:30.567668+00:00",
-  "177b014ba7403938": "2026-10-13T13:05:30.567668+00:00",
   "33ffdf7e0bd7ec98": "2026-10-13T13:15:30.532455+00:00",
   "4c4ccbbe6cbd098d": "2026-10-13T13:25:30.533442+00:00",
   "bc2899c3ecf89228": "2026-10-13T13:25:30.533442+00:00",
@@ -1150,34 +1148,13 @@
   "463ce21227f87a49": "2026-10-16T12:54:26.416430+00:00",
   "bbd42824b9c07bc2": "2026-10-16T12:54:26.416430+00:00",
   "4b103c60490716f9": "2026-10-16T12:59:26.469853+00:00",
-  "c26d63d35bd2578a": "2026-10-16T12:59:26.469853+00:00"
+  "c26d63d35bd2578a": "2026-10-16T12:59:26.469853+00:00",
+  "980f938186f24de8": "2026-10-16T13:09:26.514154+00:00",
+  "06cba18f65a9f610": "2026-10-16T13:09:26.514154+00:00",
+  "a24b9172321134b1": "2026-10-16T13:09:26.514154+00:00",
+  "83ecad54c4503099": "2026-10-16T13:09:26.514154+00:00"
  },
  "recent": [
-  {
-   "title": "Chipmakers Under Pressure; Saudi Arabia Intercepts Missiles",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-13/bloomberg-brief-10-13-2026-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T13:05:30.567668+00:00",
-   "title_ru": "Производители микросхем под давлением; Саудовская Аравия перехватывает ракеты",
-   "lead": "A selloff in chipmakers drag US equity futures down ahead of bank earnings. Saudi Arabia intercepted more ballistic missiles launched by Yemen's Houthis, targeting Riyadh and Khamis Mushait.",
-   "lead_ru": "Распродажа акций производителей микросхем привела к падению фьючерсов на акции США, опережая доходы банков. Саудовская Аравия перехватила еще больше баллистических ракет, запущенных йеменскими хуситами по Эр-Рияду и Хамис-Мушаиту.",
-   "tags": [
-    "рынки"
-   ]
-  },
-  {
-   "title": "В МВФ предупредили о близком к исчерпанию запасе прочности мировой экономики",
-   "link": "https://www.kommersant.ru/doc/9025384",
-   "sources": [
-    "Коммерсантъ"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T13:05:30.567668+00:00",
-   "lead": "Мировая экономика сохраняет устойчивость, но ее запас прочности практически исчерпан, предупредила главный экономист Международного валютного фонда (МВФ) Сильвана Тенрейро."
-  },
   {
    "title": "IMFC Extends Term of Chair Mohammed Aljadaan by One Year",
    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNQ1dUOThWdnVUTkVNWVZMbHRTM1lCX1gzaHlLeGJIRjQ3Nm92OF9oNDFzWkgwbldmMk03V0dreUV5a1hGVDVCVWpoV25RWjNOOFUyQWRpR1ZDUXNaRDBKcGNzMm94LVZyUDFsTVlZV3dsYUxTaU5DRWp5UmhISzBHdHd1U1FwT0pFTk1pNDhCT3YxOW56OTFEWXhqU254WVZUMk03cG5jYlVtLXRfZExn?oc=5",
@@ -12244,6 +12221,33 @@
    "tags": [
     "Russia"
    ]
+  },
+  {
+   "title": "Equity Trading Gives Banks a Bright Spot This Earnings Season",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-16/equity-trading-gives-banks-a-bright-spot-this-earnings-season-mvayr9z8",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-16T13:09:26.514154+00:00",
+   "title_ru": "Торговля акциями дает банкам яркое пятно в этом сезоне заработка",
+   "lead": "Big bank earnings offered little to alter the dimming views on the sector mired in the longest losing streak since the financial crisis. The bright spot: equities trading.",
+   "lead_ru": "Прибыль крупных банков мало что дала для изменения тусклых взглядов на сектор, погрязший в самой длинной полосе убытков со времен финансового кризиса. Светлое пятно: торговля акциями.",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "BNY Targets Blind Spots in ABS After Tricolor Mess Rocked Market",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-16/bny-targets-blind-spots-in-abs-after-tricolor-mess-rocked-market",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T13:09:26.514154+00:00",
+   "title_ru": "BNY нацелился на «слепые зоны» на АБС после потрясения на рынке «Триколора»",
+   "lead": "A year after a pair of massive frauds exposed hidden risks in otherwise routine financial documents, BNY is rolling out tools to safeguard against blind spots in the roughly $1 trillion asset-backed securities market.",
+   "lead_ru": "Спустя год после того, как пара массовых мошенничеств выявила скрытые риски в обычных финансовых документах, BNY внедряет инструменты для защиты от слепых зон на рынке ценных бумаг, обеспеченных активами примерно на $ 1 трлн."
   }
  ],
  "last_digest": "2026-10-15",
@@ -14354,6 +14358,22 @@
    },
    {
     "src": "sec",
+    "id": "98da5e40af377ecf",
+    "ticker": "AFL",
+    "company": "AFLAC INC",
+    "who": "Japan Post Holdings Co., Ltd.",
+    "role": "10% owner",
+    "type": "sell",
+    "value": 6478470,
+    "shares": 55000,
+    "price": 117.79,
+    "plan": true,
+    "date": "2026-10-14",
+    "disclosed": "2026-10-16",
+    "link": "https://www.sec.gov/Archives/edgar/data/1783464/000110465926116445/0001104659-26-116445-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "a1ac076c38942b00",
     "ticker": "CRESY",
     "company": "CRESUD INC",
@@ -15359,8 +15379,6 @@
    "0001493152-26-047334",
    "0001547475-26-000019",
    "0001536288-26-000013",
-   "0001498287-26-000001",
-   "0001222287-26-000028",
    "0001529306-26-000009",
    "0002127484-26-000021",
    "0001104659-26-116383",
@@ -15368,12 +15386,11 @@
    "0001213900-26-110031",
    "0001628280-26-066045",
    "0001193125-26-423227",
-   "0001193125-26-423228",
    "0001422978-26-000018",
-   "0001593199-26-000005",
+   "0001193125-26-423228",
    "0001961877-26-000049",
+   "0001104659-26-116445",
    "0001193125-26-423187",
-   "0001593199-26-000004",
    "0001242654-26-000016"
   ],
   "errors": {}
