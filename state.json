@@ -1159,7 +1159,8 @@
   "170c959198f31002": "2026-10-16T14:19:26.548189+00:00",
   "1b70c1155ad4ca11": "2026-10-16T14:19:26.548189+00:00",
   "93779ccdfdf6428f": "2026-10-16T14:19:26.548189+00:00",
-  "340af28ec2bb2f46": "2026-10-16T14:19:26.548189+00:00"
+  "340af28ec2bb2f46": "2026-10-16T14:19:26.548189+00:00",
+  "164563ac33ffadb0": "2026-10-16T14:24:26.445765+00:00"
  },
  "recent": [
   {
@@ -12300,6 +12301,16 @@
    ],
    "score": 1,
    "ts": "2026-10-16T14:19:26.548189+00:00"
+  },
+  {
+   "title": "EXCLUSIVE: Naftogaz chief says Ukraine's gas reserves hit six-year high ahead of winter",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxON29wRXNnSDhoWUxFd0FpaklIeG1uOTI2VkdUdzZKU2NuemNyZGoyZFFEcl9OT3o1aUx5V1lwNEtUUDZtT0Y5MFlmUmRjVFhXTWk5VVM0clR6RjhqZFJvQlN0YVhfNnB0OGU4R0VJLXBPTXlLMFo3eTNfd0x5bU5tMUFHUTdKRkRESnhSVnk0YUR1azlnWGtXcjE1NnB5R0xzbFZVaVVfVU1MM3VtYW9BS3VLYVVLQU9NYWNRQ1RSTkZKZw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T14:24:26.445765+00:00",
+   "title_ru": "ЭКСКЛЮЗИВ: Глава Нафтогаза заявил, что запасы газа в Украине достигнут шестилетнего максимума накануне зимы"
   }
  ],
  "last_digest": "2026-10-15",
@@ -14442,6 +14453,38 @@
    },
    {
     "src": "sec",
+    "id": "efe83addc53f6a27",
+    "ticker": "BORR",
+    "company": "Borr Drilling Ltd",
+    "who": "Harvey Edward Snowling",
+    "role": "COO",
+    "type": "buy",
+    "value": 1473000,
+    "shares": 300000,
+    "price": 4.91,
+    "plan": false,
+    "date": "2026-10-14",
+    "disclosed": "2026-10-16",
+    "link": "https://www.sec.gov/Archives/edgar/data/2116137/000162828026066061/0001628280-26-066061-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "b8a428b1e3ce2846",
+    "ticker": "BORR",
+    "company": "Borr Drilling Ltd",
+    "who": "Harvey Edward Snowling",
+    "role": "COO",
+    "type": "sell",
+    "value": 1473000,
+    "shares": 300000,
+    "price": 4.91,
+    "plan": false,
+    "date": "2026-10-14",
+    "disclosed": "2026-10-16",
+    "link": "https://www.sec.gov/Archives/edgar/data/2116137/000162828026066061/0001628280-26-066061-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "01467fa79c5d1bae",
     "ticker": "INSW",
     "company": "International Seaways, Inc.",
@@ -15466,11 +15509,12 @@
    "0001104659-26-116485",
    "0001104659-26-116483",
    "0001493152-26-047346",
-   "0001572806-26-000007",
    "0001984098-26-000003",
+   "0001572806-26-000007",
    "0001984142-26-000004",
    "0001104659-26-116481",
    "0001984100-26-000005",
+   "0001628280-26-066061",
    "0001104659-26-116488"
   ],
   "errors": {}
