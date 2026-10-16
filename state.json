@@ -1155,7 +1155,8 @@
   "48dc1cecb1e39729": "2026-10-16T19:49:55.632734+00:00",
   "5e26d3feef23cc99": "2026-10-16T19:49:55.632734+00:00",
   "6b384be0ab5e95d4": "2026-10-16T19:49:55.632734+00:00",
-  "bddbe9ab4474a050": "2026-10-16T19:54:55.600148+00:00"
+  "bddbe9ab4474a050": "2026-10-16T19:54:55.600148+00:00",
+  "e3a7c6dda4f1f84f": "2026-10-16T20:09:55.628708+00:00"
  },
  "recent": [
   {
@@ -12127,6 +12128,18 @@
    ],
    "score": 1,
    "ts": "2026-10-16T19:54:55.600148+00:00"
+  },
+  {
+   "title": "Sound Inpatient Nears $1 Billion Private Debt After Pulling Loan",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-16/sound-inpatient-nears-1-billion-private-debt-after-pulling-loan",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T20:09:55.628708+00:00",
+   "title_ru": "Частный долг здорового стационара приближается к 1 миллиарду долларов после отказа от кредита",
+   "lead": "Sound Inpatient Physicians Inc. is close to clinching a $1 billion refinancing with existing lenders, including Monarch Alternative Capital and PGIM, according to people familiar with the matter.",
+   "lead_ru": "По словам людей, знакомых с ситуацией, компания Sound Inpatient Physicians Inc. близка к заключению рефинансирования на сумму $1 млрд с существующими кредиторами, включая Monarch Alternative Capital и PGIM."
   }
  ],
  "last_digest": "2026-10-16",
@@ -14236,6 +14249,22 @@
   "insiders": [
    {
     "src": "sec",
+    "id": "dcf24125c5f09212",
+    "ticker": "NBIS",
+    "company": "Nebius Group N.V.",
+    "who": "Arne Grimme",
+    "role": "Director",
+    "type": "buy",
+    "value": 50317,
+    "shares": 296,
+    "price": 169.99,
+    "plan": true,
+    "date": "2026-10-16",
+    "disclosed": "2026-10-16",
+    "link": "https://www.sec.gov/Archives/edgar/data/2091395/000151384526000130/0001513845-26-000130-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "a62608ea7a58d5bf",
     "ticker": "EDRY",
     "company": "EuroDry Ltd.",
@@ -14329,6 +14358,38 @@
     "date": "2026-10-15",
     "disclosed": "2026-10-16",
     "link": "https://www.sec.gov/Archives/edgar/data/2086723/000143774926032801/0001437749-26-032801-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "a2c402f834fb261c",
+    "ticker": "MRNA",
+    "company": "Moderna, Inc.",
+    "who": "Stephen Hoge",
+    "role": "President",
+    "type": "sell",
+    "value": 17013538,
+    "shares": 78369,
+    "price": 217.1,
+    "plan": true,
+    "date": "2026-10-15",
+    "disclosed": "2026-10-16",
+    "link": "https://www.sec.gov/Archives/edgar/data/1760669/000168285226000187/0001682852-26-000187-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "a2754b330904bcaf",
+    "ticker": "FIS",
+    "company": "Fidelity National Information Services, Inc.",
+    "who": "Jeffrey A Goldstein",
+    "role": "Director",
+    "type": "buy",
+    "value": 57694,
+    "shares": 1585,
+    "price": 36.4,
+    "plan": true,
+    "date": "2026-10-15",
+    "disclosed": "2026-10-16",
+    "link": "https://www.sec.gov/Archives/edgar/data/1375299/000162828026066127/0001628280-26-066127-index.htm"
    },
    {
     "src": "sec",
@@ -15458,27 +15519,38 @@
   },
   "checked": "2026-10-16T19:49:55.632734+00:00",
   "sec_seen": [
+   "0001520700-26-000010",
+   "0002156015-26-000005",
    "0001193125-26-424046",
+   "0001672013-26-000174",
+   "0002160413-26-000004",
    "0002062500-26-000010",
+   "0001628280-26-066127",
+   "0001193125-26-424048",
    "0001193125-26-424042",
    "0001193125-26-424035",
-   "0001193125-26-424048",
+   "0001682852-26-000187",
    "0001193125-26-424040",
-   "0001061272-26-000004",
    "0001193125-26-424038",
+   "0001061272-26-000004",
    "0001210231-26-000003",
+   "0001513845-26-000130",
+   "0002034921-26-000007",
    "0001140361-26-039917",
-   "0001193125-26-423979",
+   "0001924613-26-000046",
    "0001193125-26-424056",
-   "0001477932-26-006298",
    "0001413614-26-000015",
-   "0001225208-26-008430",
+   "0001229305-26-000011",
    "0001193125-26-424039",
    "0001193125-26-424041",
    "0001193125-26-424047",
    "0001193125-26-424044",
+   "0002120516-26-000018",
+   "0001087997-26-000012",
+   "0002041258-26-000006",
    "0001193125-26-424045",
    "0001437749-26-032801",
+   "0001517991-26-000011",
    "0001193125-26-424043"
   ],
   "errors": {}
