@@ -1,12 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "850d641be977b6a4": "2026-10-13T18:02:05.043315+00:00",
-  "d85e5d3609348b27": "2026-10-13T18:02:05.043315+00:00",
-  "9ca2426b4c5fa787": "2026-10-13T18:02:05.043315+00:00",
-  "0043f845549ddcec": "2026-10-13T18:02:05.043315+00:00",
-  "83a3a757b029ef47": "2026-10-13T18:02:05.043315+00:00",
-  "b9158136653e9876": "2026-10-13T18:02:05.043315+00:00",
   "eb75d26234ed4a8a": "2026-10-13T18:12:05.029122+00:00",
   "87969acdd195c5f0": "2026-10-13T18:12:05.029122+00:00",
   "00ce41192e2f158f": "2026-10-13T18:12:05.029122+00:00",
@@ -1151,74 +1145,13 @@
   "e04926ef6a28433b": "2026-10-16T17:29:55.568091+00:00",
   "d800290b51c193ba": "2026-10-16T17:29:55.568091+00:00",
   "7d5ffbb64838f701": "2026-10-16T17:34:55.663425+00:00",
-  "a713a3864ecdb5c5": "2026-10-16T17:49:55.643037+00:00"
+  "a713a3864ecdb5c5": "2026-10-16T17:49:55.643037+00:00",
+  "cb9d8ca2d514845f": "2026-10-16T18:04:55.657033+00:00",
+  "f54fe74900e57c52": "2026-10-16T18:04:55.657033+00:00",
+  "18fc2fc6c5542fc8": "2026-10-16T18:04:55.657033+00:00",
+  "ea9cc90071e57164": "2026-10-16T18:04:55.657033+00:00"
  },
  "recent": [
-  {
-   "title": "Lagarde Faces ECB Staff Questions Over Book, Talks With Fink",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-13/lagarde-faces-ecb-staff-questions-over-book-and-talks-with-fink",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-13T18:02:05.043315+00:00",
-   "title_ru": "Лагард отвечает на вопросы сотрудников ЕЦБ по поводу книги и переговоров с Финком",
-   "lead": "Christine Lagarde was invited by European Central Bank employees to explain how promotion of her book and negotiations on her next role stack up ethically.",
-   "lead_ru": "Кристин Лагард была приглашена сотрудниками Европейского центрального банка, чтобы объяснить, как продвижение ее книги и переговоры о ее следующей должности имеют этическое значение.",
-   "tags": [
-    "ЕЦБ"
-   ]
-  },
-  {
-   "title": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
-   "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm",
-   "sources": [
-    "ФРС США"
-   ],
-   "score": 4,
-   "ts": "2026-10-13T18:02:05.043315+00:00",
-   "title_ru": "Протоколы заседаний Совета директоров по учетным ставкам от 17 августа, 9 сентября и 16 сентября 2026 г."
-  },
-  {
-   "title": "Rosenberg Sees Most Dangerous US Market of His 40-Year Career",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-13/rosenberg-sees-most-dangerous-us-market-of-his-40-year-career",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T18:02:05.043315+00:00",
-   "title_ru": "Розенберг считает самый опасный рынок США за свою 40-летнюю карьеру",
-   "lead": "David Rosenberg said the US stock market was increasingly looking like a bubble, with valuations, leverage and investor positioning at extremes unseen in his 40-year career.",
-   "lead_ru": "Дэвид Розенберг сказал, что фондовый рынок США все больше похож на пузырь: оценки, кредитное плечо и позиция инвесторов находятся на экстремальных уровнях, невиданных за его 40-летнюю карьеру."
-  },
-  {
-   "title": "Domino's forecasts muted annual same-store sales as competition, cautious consumers weigh on demand",
-   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOWjdkTWFfZEhzUzhBM1M2Y3NfZVVPcnpZN1ZfUXRFNmFFOHlYZ0NXa05tdUtSSjhKaTF3Q0pDRExvSnBLcC1IWlFYMnM3b0U5U0pBR0dpYWZ5TmRyNUUzVEdneFdsLTZORXpoRFJsSnlLVmVxbjR4TXV3elRTbGU3SXZxemZXaDc2WEVMd3BaWTZNWExrd0hBUkEwYVJHQlgtb2lnVEJMSmhkaGE0clBiUU9rLUphQmZMTlk3QmYxSlhRQzJTY05zcVJudG41R0JPb1pKeUpn?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T18:02:05.043315+00:00",
-   "title_ru": "Прогнозы Domino снизили ежегодные продажи в одних и тех же магазинах по сравнению с конкурентами, осторожные потребители влияют на спрос"
-  },
-  {
-   "title": "New SEC rules would fleece everyday investors to enrich Wall Street",
-   "link": "https://www.marketwatch.com/story/new-sec-rules-would-fleece-everyday-investors-to-enrich-wall-street-0a00fe03?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-13T18:02:05.043315+00:00"
-  },
-  {
-   "title": "Пожар на газопроводе под Пензой не нарушил подачу газа в Казахстан",
-   "link": "https://www.rbc.ru/rbcfreenews/6ace6594d2ead36224bc1740",
-   "sources": [
-    "РБК"
-   ],
-   "score": 1,
-   "ts": "2026-10-13T18:02:05.043315+00:00"
-  },
   {
    "title": "Fed’s Williams Interview With Bloomberg News: Full Transcript",
    "link": "https://www.bloomberg.com/news/articles/2026-10-13/fed-s-williams-interview-with-bloomberg-news-full-transcript",
@@ -12161,9 +12094,53 @@
    "tags": [
     "bonds"
    ]
+  },
+  {
+   "title": "European shares close out best week since June as earnings soften blow from tech selloff",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOa1lsVE9lQzRmN0pzeFRqTUcyTFN0a3ZfNDh6Zk9MdU9hYUFXSnIzZzFINmJOd0pCbFcxaTV6VnU2QnRfazFpR1lSNHdEMlB4NHJ6RDZOVmhlZVkwZ0hPbEJoVlBrOUpYcF81YUJTYjIyRTdhNE5mNzhUeExmOS1HNDliT3Z6MEYxX2t2OVVSeDJJLVlWM0dJa3dqZUVKOTBIVmsxVlAwZEgyM3lvT2VUUlJiRkFhQi13OHBmRA?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 7,
+   "ts": "2026-10-16T18:04:55.657033+00:00",
+   "title_ru": "Европейские акции закрыли лучшую неделю с июня, поскольку прибыль смягчила удар от распродажи технологических компаний",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "'A good day for motorists and for jobs': Reactions to Germany-France car deal",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOWVBObHhWVUdWUUJfUkJxWkx4blZPcWpxVllXNUkxcHFRZEQ3eWloeGQ4bnNmbjFSa0FmYXZEUUVlaUkxMmpnWFROMkhOeVluYVU1UlpJSHE2WVgyOGViM19XRjBNRDNRMzQxZDF0Ymo2Y2l5U3l4dEdtUmxIUEJNazZEWW15SWdlV2k2ZlA3VmFuT0tuWWlSS3ZTQjJ3OV9ob0hxUExzOA?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T18:04:55.657033+00:00",
+   "title_ru": "«Хороший день для автомобилистов и рабочих мест»: реакция на автомобильную сделку Германии и Франции",
+   "tags": [
+    "jobs"
+   ]
+  },
+  {
+   "title": "Welcome to the ‘AI burnout trade’ — as investors grow tired of debating tech’s promises",
+   "link": "https://www.marketwatch.com/story/welcome-to-the-ai-burnout-trade-as-investors-grow-tired-of-debating-techs-promises-6ae7836e?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 2,
+   "ts": "2026-10-16T18:04:55.657033+00:00"
+  },
+  {
+   "title": "The U.S. budget deficit just hit almost $2 trillion — and Washington isn’t doing much about it",
+   "link": "https://www.marketwatch.com/story/the-u-s-budget-deficit-just-hit-almost-2-trillion-and-washington-isnt-doing-much-about-it-a1b5c4ea?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 2,
+   "ts": "2026-10-16T18:04:55.657033+00:00"
   }
  ],
- "last_digest": "2026-10-15",
+ "last_digest": "2026-10-16",
  "fail_streak": {
   "РБК": 0,
   "МВФ": 0,
@@ -12198,7 +12175,8 @@
   "2026-10-14-21",
   "2026-10-15-09",
   "2026-10-15-21",
-  "2026-10-16-09"
+  "2026-10-16-09",
+  "2026-10-16-21"
  ],
  "calendar": {
   "fetched": "2026-10-16T15:34:26.556940+00:00",
@@ -15348,9 +15326,9 @@
   "sec_seen": [
    "0001939410-26-000004",
    "0000752642-26-000132",
-   "0001766116-26-000028",
-   "0001608349-26-000004",
+   "0001628280-26-066099",
    "0001685700-26-000004",
+   "0001608349-26-000004",
    "0001630196-26-000008",
    "0000752642-26-000131",
    "0001382452-26-000006",
