@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "0b1b2b704ee2bf34": "2026-10-13T00:54:05.884923+00:00",
-  "b773fc31b5f3ddca": "2026-10-13T00:54:05.884923+00:00",
-  "62ebd3809ada8ac2": "2026-10-13T00:54:05.884923+00:00",
   "d1030d80b9bf0ebc": "2026-10-13T01:04:05.925743+00:00",
   "41baa953c9754c92": "2026-10-13T01:04:05.925743+00:00",
   "4853ddbd88a16546": "2026-10-13T01:04:05.925743+00:00",
@@ -1139,41 +1136,12 @@
   "21c76c00e55204c1": "2026-10-16T00:22:36.424425+00:00",
   "cf9c135a01889dd9": "2026-10-16T00:32:36.439339+00:00",
   "8de7718fc74f60ae": "2026-10-16T00:43:25.081492+00:00",
-  "c68b7baece2af626": "2026-10-16T00:53:24.019900+00:00"
+  "c68b7baece2af626": "2026-10-16T00:53:24.019900+00:00",
+  "0b1b2b704ee2bf34": "2026-10-16T01:03:24.156586+00:00",
+  "c6ebfc0f7cf6791b": "2026-10-16T01:03:24.156586+00:00",
+  "16f415cde619e439": "2026-10-16T01:03:24.156586+00:00"
  },
  "recent": [
-  {
-   "title": "BNY's LaRusse Sees Scope for Bond Market Relief Rally",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-13/bny-s-larusse-sees-scope-for-bond-market-relief-rally-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-13T00:54:05.884923+00:00",
-   "title_ru": "ЛаРусс из BNY видит возможности для ралли помощи рынку облигаций",
-   "lead": "April LaRusse, co-head of global client portfolio management at BNY Investments, says it is too early to confidently call a peak in Treasury yields.",
-   "lead_ru": "Эйприл ЛаРусс, соруководитель отдела управления глобальным клиентским портфелем в BNY Investments, говорит, что еще слишком рано с уверенностью говорить о пике доходности казначейских облигаций.",
-   "tags": [
-    "облигации",
-    "рынки"
-   ]
-  },
-  {
-   "title": "RBA Raised Key Rate to Counter Upside Price Risk, Remains Alert",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-13/rba-raised-key-rate-to-counter-upside-price-risk-remains-alert",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-13T00:54:05.884923+00:00",
-   "title_ru": "РБА повысил ключевую ставку, чтобы противостоять риску повышения цен, остается начеку",
-   "lead": "Australia’s central bank raised its key interest rate two weeks ago because upside risks to inflation were coming to pass and waiting could prove costly, while adding the outlook would be heavily influenced by the ongoing…",
-   "lead_ru": "Центральный банк Австралии поднял свою ключевую процентную ставку две недели назад, потому что риски роста инфляции приближались, и ожидание может оказаться дорогостоящим, в то время как добавление того, что прогноз будет сильно зависеть от продолжающегося...",
-   "tags": [
-    "ставки",
-    "инфляция"
-   ]
-  },
   {
    "title": "Oil ticks lower as Russia diesel supply prospects counter Gulf supply risks",
    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPa2sxWTVlekZ2bXloVXNiOUltMm5iODVOMW9NTUo4Q016ZU02OFQ5TU9relFTcUZSaW8xV0c2YmNVbE5jWW5uQjhKeXNKaWxBcE92SU1fQUU0R2RVamdNUzRhTER3NzEzMFUtRVd3bzVnZ1g0ZmtRek95VHdYbVNNMmNacmlDd3dLTThmaGF2VVJDYTc4c1hQeUZfX0ZGQzZjTXlpLU52U3JuUGpjOHJjWndoS19LandSX0dtMmdUMzNKZw?oc=5",
@@ -12015,6 +11983,21 @@
    "score": 3,
    "ts": "2026-10-16T00:53:24.019900+00:00",
    "title_ru": "Сентябрьский экспорт Сингапура вырос на 68,4% в годовом исчислении"
+  },
+  {
+   "title": "Indonesia Outflows to Worsen as MSCI Mulls Cut, Analysts Say",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-16/indonesia-outflows-to-worsen-as-msci-mulls-cut-analysts-say",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T01:03:24.156586+00:00",
+   "title_ru": "Аналитики говорят, что отток из Индонезии ухудшается, поскольку MSCI обдумывает сокращение",
+   "lead": "Indonesian stocks will likely see further outflows as the nation faces a potential ejection from global stock indexes following MSCI Inc.’s latest proposal to downgrade the country, according to analysts.",
+   "lead_ru": "По мнению аналитиков, индонезийские акции, скорее всего, столкнутся с дальнейшим оттоком, поскольку страна столкнется с потенциальным выбросом из глобальных фондовых индексов после последнего предложения MSCI Inc. о понижении рейтинга страны.",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-15",
@@ -12955,7 +12938,8 @@
   "USD|2026-10-15T12:30:00+00:00|Core PPI m/m",
   "USD|2026-10-15T12:30:00+00:00|Core Retail Sales m/m",
   "USD|2026-10-15T12:30:00+00:00|PPI m/m",
-  "USD|2026-10-15T12:30:00+00:00|Retail Sales m/m"
+  "USD|2026-10-15T12:30:00+00:00|Retail Sales m/m",
+  "GBP|2026-10-16T02:00:00+00:00|BOE Gov Bailey Speaks"
  ],
  "last_morning": "2026-10-15",
  "all_down_alerted": false,
