@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "6e2009e0f2e03a96": "2026-10-13T21:29:08.590775+00:00",
-  "21c495a47bc2a361": "2026-10-13T21:29:08.590775+00:00",
-  "9f1915bcbe37b871": "2026-10-13T21:29:08.590775+00:00",
   "e1f9fc13c592e5b3": "2026-10-13T21:39:08.608803+00:00",
   "769c8d748107c050": "2026-10-13T21:49:08.661162+00:00",
   "ec7fd528598f3f9b": "2026-10-13T21:49:08.661162+00:00",
@@ -1145,37 +1142,11 @@
   "6ed2ad744240408c": "2026-10-16T21:09:55.623186+00:00",
   "eb8240e4daa99c59": "2026-10-16T21:14:55.581270+00:00",
   "7c20d250f331e348": "2026-10-16T21:24:55.606793+00:00",
-  "83a3a757b029ef47": "2026-10-16T21:24:55.606793+00:00"
+  "83a3a757b029ef47": "2026-10-16T21:24:55.606793+00:00",
+  "3d1da8446c04adeb": "2026-10-16T21:34:55.536616+00:00",
+  "f0144117839768be": "2026-10-16T21:34:55.536616+00:00"
  },
  "recent": [
-  {
-   "title": "Skydance Bonds Extend Losses Amid Warner Bros. Buyout Angst",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-13/skydance-bonds-extend-losses-amid-warner-bros-buyout-angst",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-13T21:29:08.590775+00:00",
-   "title_ru": "Облигации Skydance увеличивают убытки на фоне опасений по поводу выкупа Warner Bros.",
-   "lead": "Skydance Corp. bonds weakened further on Tuesday, and the cost of protecting the company’s debt against default jumped, as investors fretted about the profitability of the company after its $110 billion acquisition of Warner Bros.",
-   "lead_ru": "Облигации Skydance Corp. во вторник еще больше ослабли, а стоимость защиты долга компании от дефолта подскочила, поскольку инвесторы беспокоились о прибыльности компании после приобретения Warner Bros. за 110 миллиардов долларов.",
-   "tags": [
-    "облигации"
-   ]
-  },
-  {
-   "title": "Nigeria's Dangote oil refinery swings to net profit ahead of IPO",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxORHQ4ckprUzBSV25RU0swWEQ0TVhKZkJzLWpXbUdoQ1dzb2U3UXdwWHZNbmZ2VURVeVVKNDBtcDFGNVlMOURQRzRvVHNXdW9WZDJTMFVDZEY0SlJleHNRWXlqRUxJWW50TndabnFCUHRqYzR5UHZOdnJiTE1zMUplbWZ3UkFjVlBxSXNsVDV3c1Z6WWR6UjN3bDdmNDBsTG15bmJBY1FhQWJmZDVoM0E?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T21:29:08.590775+00:00",
-   "title_ru": "Нигерийский нефтеперерабатывающий завод Данготе получил чистую прибыль в преддверии IPO",
-   "tags": [
-    "нефть"
-   ]
-  },
   {
    "title": "Fed's Collins Says Rates Will Likely Need to Rise More",
    "link": "https://www.bloomberg.com/news/videos/2026-10-13/fed-s-collins-says-rates-will-likely-need-to-rise-more-video",
@@ -12053,6 +12024,35 @@
    ],
    "score": 1,
    "ts": "2026-10-16T21:24:55.606793+00:00"
+  },
+  {
+   "title": "The bond market shrugged off two inflation shocks. Why stock investors should pay attention.",
+   "link": "https://www.marketwatch.com/story/the-bond-market-shrugged-off-two-inflation-shocks-why-stock-investors-should-pay-attention-5da4f771?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 7,
+   "ts": "2026-10-16T21:34:55.536616+00:00",
+   "title_ru": "Рынок облигаций пережил два инфляционных шока. Почему инвесторам в акции следует обратить внимание.",
+   "lead": "Hot CPI and PPI data should have pushed Treasury yields higher. Instead, bond buyers stepped in to suggest yields have risen high enough to become attractive for investors.",
+   "lead_ru": "Горячие данные по индексу потребительских цен и индексу цен производителей должны были подтолкнуть доходность казначейских облигаций к росту. Вместо этого вмешались покупатели облигаций, предположившие, что доходность выросла достаточно высоко, чтобы стать привлекательными для инвесторов.",
+   "tags": [
+    "inflation",
+    "bonds"
+   ]
+  },
+  {
+   "title": "Mexico limits tariffs break to established local carmakers",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPdno1S1hpa0pyaXl2RWtmamJpdjk2VW5LZmhzNk55dktqVl9VLWNLdTZvQXN6MnJ1ODZxWmp3cU9xaGhFaHljRmJ5ZDhEdGF2ZS1nOWkwWldERTlOSWtYb3dsLUNiQ3hoaE5lY0cydW8wd1hWTzF4WEYzMkJ3R21oM2tWRlR5NDFLVF9sd3E1aGFoOGNQcEpBMFdnOTJmQVh4UE5pTWZ4STEydXI5TUlYT1o3R2xGbUZpUnZ2Q3ZR?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-16T21:34:55.536616+00:00",
+   "title_ru": "Мексика ограничивает снижение тарифов для местных автопроизводителей",
+   "tags": [
+    "tariffs"
+   ]
   }
  ],
  "last_digest": "2026-10-16",
@@ -12094,7 +12094,7 @@
   "2026-10-16-21"
  ],
  "calendar": {
-  "fetched": "2026-10-16T15:34:26.556940+00:00",
+  "fetched": "2026-10-16T21:34:55.536616+00:00",
   "events": [
    {
     "title": "Bank Holiday",
@@ -12939,7 +12939,7 @@
    {
     "title": "Federal Budget Balance",
     "country": "USD",
-    "ts": "2026-10-16T18:00:00+00:00",
+    "ts": "2026-10-16T18:05:00+00:00",
     "impact": "Low",
     "forecast": "-34.7B",
     "previous": "-166.8B"
@@ -15784,37 +15784,48 @@
   },
   "checked": "2026-10-16T20:49:55.642309+00:00",
   "sec_seen": [
-   "0001070750-26-000143",
-   "0001658452-26-000009",
-   "0002074298-26-000019",
    "0001072627-26-000058",
-   "0001883581-26-000007",
-   "0002158778-26-000004",
-   "0001070750-26-000145",
-   "0001900875-26-000003",
-   "0001437749-26-032825",
+   "0001628280-26-066174",
+   "0001628280-26-066175",
+   "0001628280-26-066186",
+   "0001193125-26-424289",
+   "0001628280-26-066178",
+   "0001924023-26-000003",
+   "0000055135-26-000165",
+   "0001628280-26-066185",
+   "0001193125-26-424283",
+   "0001193125-26-424285",
    "0001072627-26-000057",
-   "0001213900-26-110340",
-   "0001493152-26-047455",
-   "0001070750-26-000142",
+   "0001591094-26-000004",
+   "0001193125-26-424280",
+   "0001628280-26-066183",
+   "0001628280-26-066182",
    "0001193125-26-424273",
+   "0001628280-26-066180",
+   "0001193125-26-424281",
    "0000899751-26-000077",
-   "0001493152-26-047454",
-   "0001628280-26-066169",
-   "0001953981-26-000003",
+   "0001193125-26-424287",
+   "0001193125-26-424288",
+   "0001628280-26-066172",
+   "0001628280-26-066179",
+   "0001628280-26-066177",
+   "0001628280-26-066173",
+   "0001193125-26-424286",
+   "0001870987-26-000029",
+   "0001193125-26-424279",
    "0001493152-26-047458",
    "0001493152-26-047457",
-   "0001690332-26-000003",
-   "0001288952-26-000016",
-   "0001070750-26-000144",
-   "0001070750-26-000146",
+   "0001098231-26-000012",
+   "0001628280-26-066176",
+   "0001193125-26-424284",
+   "0002129321-26-000017",
    "0001493152-26-047456",
-   "0001532133-26-000006",
-   "0001437749-26-032829",
-   "0001437749-26-032827",
+   "0001839017-26-000003",
+   "0001628280-26-066184",
    "0002114165-26-000002",
-   "0001493152-26-047453",
-   "0001012975-26-000957"
+   "0001193125-26-424278",
+   "0002156505-26-000006",
+   "0001628280-26-066181"
   ],
   "errors": {}
  }
