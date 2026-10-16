@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "4d67d46f24799935": "2026-10-13T17:15:30.531970+00:00",
-  "d515a47aab2bc35a": "2026-10-13T17:15:30.531970+00:00",
   "a85b12f5104fe9f4": "2026-10-13T17:25:30.550107+00:00",
   "250a8202478bf194": "2026-10-13T17:52:05.060566+00:00",
   "0b55fae00a407154": "2026-10-13T17:52:05.060566+00:00",
@@ -1154,7 +1152,9 @@
   "45dcb3c5e5648ea3": "2026-10-16T16:59:26.528949+00:00",
   "643580cbe1e33104": "2026-10-16T17:09:55.612673+00:00",
   "0f3f74e8decc8fec": "2026-10-16T17:14:55.653323+00:00",
-  "67ced0d4edad7744": "2026-10-16T17:14:55.653323+00:00"
+  "67ced0d4edad7744": "2026-10-16T17:14:55.653323+00:00",
+  "3e3819d0176a8bf0": "2026-10-16T17:24:55.647049+00:00",
+  "cd15cb7f471be6a4": "2026-10-16T17:24:55.647049+00:00"
  },
  "recent": [
   {
@@ -12182,6 +12182,31 @@
    "score": 5,
    "ts": "2026-10-16T17:14:55.653323+00:00",
    "title_ru": "Региональные банки США присоединяются к более крупным банкам, сигнализируя об устойчивой экономике, поскольку кредитование остается устойчивым"
+  },
+  {
+   "title": "Big US Bank Shares Set for Worst Weekly Losing Streak Since 2008",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-16/big-us-bank-shares-set-for-worst-weekly-losing-streak-since-2008",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-16T17:24:55.647049+00:00",
+   "title_ru": "Акции крупных банков США переживают худшую недельную полосу падения с 2008 года",
+   "lead": "Big US bank shares are set to record their worst weekly losing streak since the 2008 Global Financial Crisis, after quarterly earnings didn’t do enough to lift sentiment for the ailing sector.",
+   "lead_ru": "Акции крупных банков США собираются зафиксировать худшую недельную полосу падения со времен мирового финансового кризиса 2008 года, после того как квартальные доходы не смогли поднять настроения в ослабленном секторе.",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "Trudy forecast to near Mexico's Pacific coast as major hurricane through the weekend",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPeEE2eWszelJJRDBCMUQ4Z0lUWi15OWVxcklqY2RGM0dCYUl4MlBPNHowSTcwVGhpcWp5MHdSWktQbTdKTHNCRWNDVnRiNjFIVUR2S2FmRWlSYUt0akxFNmVoRDFORzBDQTB5Yk4wN3U2akxVeGpTZ3o0SXFDaGFUOERvcXNpR1lqQlQ1TzlVZjFwMWU0QzBlcGxqSXBTRDI3X0kwUnJTU0hsM0hDa2hJSDdQdU5FZ0hIWEtZdzNZaDg5akp3Yjdodw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T17:24:55.647049+00:00",
+   "title_ru": "Труди прогнозирует, что к тихоокеанскому побережью Мексики в выходные дни пройдет сильный ураган"
   }
  ],
  "last_digest": "2026-10-15",
@@ -15377,16 +15402,12 @@
    "0001608349-26-000004",
    "0001685700-26-000004",
    "0001193125-26-423639",
-   "0001193125-26-423637",
-   "0001193125-26-423629",
    "0000752642-26-000131",
    "0001382452-26-000006",
    "0001630196-26-000008",
    "0001193125-26-423648",
    "0000752642-26-000132",
    "0001766116-26-000028",
-   "0001683168-26-007921",
-   "0001193125-26-423635",
    "0001628280-26-066091"
   ],
   "errors": {}
