@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "33ffdf7e0bd7ec98": "2026-10-13T13:15:30.532455+00:00",
   "4c4ccbbe6cbd098d": "2026-10-13T13:25:30.533442+00:00",
   "bc2899c3ecf89228": "2026-10-13T13:25:30.533442+00:00",
   "33ee1bf4534f5890": "2026-10-13T13:25:30.533442+00:00",
@@ -1154,19 +1153,12 @@
   "a24b9172321134b1": "2026-10-16T13:09:26.514154+00:00",
   "83ecad54c4503099": "2026-10-16T13:09:26.514154+00:00",
   "ffa2294a4a10351e": "2026-10-16T13:14:26.470659+00:00",
-  "f1c7f9a00a48ffe1": "2026-10-16T13:14:26.470659+00:00"
+  "f1c7f9a00a48ffe1": "2026-10-16T13:14:26.470659+00:00",
+  "42106bce478b5f4d": "2026-10-16T13:19:26.498788+00:00",
+  "4a2b60b120e4a680": "2026-10-16T13:19:26.498788+00:00",
+  "20aa54f2f3a956f4": "2026-10-16T13:19:26.498788+00:00"
  },
  "recent": [
-  {
-   "title": "IMFC Extends Term of Chair Mohammed Aljadaan by One Year",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNQ1dUOThWdnVUTkVNWVZMbHRTM1lCX1gzaHlLeGJIRjQ3Nm92OF9oNDFzWkgwbldmMk03V0dreUV5a1hGVDVCVWpoV25RWjNOOFUyQWRpR1ZDUXNaRDBKcGNzMm94LVZyUDFsTVlZV3dsYUxTaU5DRWp5UmhISzBHdHd1U1FwT0pFTk1pNDhCT3YxOW56OTFEWXhqU254WVZUMk03cG5jYlVtLXRfZExn?oc=5",
-   "sources": [
-    "МВФ"
-   ],
-   "score": 4,
-   "ts": "2026-10-13T13:15:30.532455+00:00",
-   "title_ru": "МВФК продлил срок полномочий председателя Мохаммеда Альджадана на один год"
-  },
   {
    "title": "UK grocery inflation accelerates over last month, says Worldpanel",
    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOLXp1cWdoT0RnaEYxZl9tZkIxVkQwby1TZzBwV1dUNGt2OEV6cklCRm44T0Y3elNzOThnSXRHaHFuaHJJUWJCZUtUXzdSN0sxeF9Ua2Y2OEJYTWZQSlhZMVozWXRUTHYzeWR3SnBPcVpqWHpOS2Nsa3B2dDVmWGhwa21ILWdzajh6d2xieWl6b3Y5X25sM3hzNVd0ckY1cVZrUGY3Nmt5WWxZcGJFaFFCeUhfOUxObXFGelJuN2d3TF8xMEU?oc=5",
@@ -12272,6 +12264,32 @@
    "score": 3,
    "ts": "2026-10-16T13:14:26.470659+00:00",
    "title_ru": "Подразделение Dolce & Gabbana Beauty демонстрирует двузначный рост в 2026 году"
+  },
+  {
+   "title": "European majors set for Q3 earnings growth despite darkening view on consumer cyclicals",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNWGxWLW1iZXhfWTNWVGhDNXlEd21tVndMS3J4UW9SeHNCTEJab0FNMVh5Q19vYXhQV3N6QmNyVi1ucUJCSjJ1TUJ6ZVpIUjlhZ1hVeGtGS2JnNGVBZEFtSExvWHNCWWF6dWZWNTg2dnVySVJTUVVySEZSOElCRGJXa1d0eVFLWDZ0X3liVENxVUVnVlhXLXNsYXZaRmRQMFA2dFJPbnB0bHR6eDlybkNnWjUwbXNhM096eXBYYUNUUHlqUkFYb1J1dTg4QW9TZw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-16T13:19:26.498788+00:00",
+   "title_ru": "Европейские мейджоры настроены на рост прибыли в третьем квартале, несмотря на мрачный взгляд на потребительские циклические процессы"
+  },
+  {
+   "title": "China Warns EU Not to Underestimate Ability to Fight on Trade",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-16/china-warns-eu-not-to-underestimate-ability-to-fight-on-trade",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T13:19:26.498788+00:00",
+   "title_ru": "Китай предостерегает ЕС от недооценки способности бороться за торговлю",
+   "lead": "China warned the European Union not to underestimate Beijing’s determination to defend its interests, dismissing claims that the bloc’s pressure yielded concessions in recent automotive trade talks.",
+   "lead_ru": "Китай предупредил Европейский союз не недооценивать решимость Пекина защищать свои интересы, отвергнув утверждения о том, что давление блока привело к уступкам на недавних автомобильных торговых переговорах.",
+   "tags": [
+    "bonds",
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-10-15",
@@ -14398,6 +14416,22 @@
    },
    {
     "src": "sec",
+    "id": "01467fa79c5d1bae",
+    "ticker": "INSW",
+    "company": "International Seaways, Inc.",
+    "who": "Famatown Finance Ltd et al.",
+    "role": "10% owner",
+    "type": "sell",
+    "value": 107307432,
+    "shares": 1106190,
+    "price": 97.01,
+    "plan": false,
+    "date": "2026-10-08",
+    "disclosed": "2026-10-16",
+    "link": "https://www.sec.gov/Archives/edgar/data/1731638/000091957426007000/0000919574-26-007000-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "a1ac076c38942b00",
     "ticker": "CRESY",
     "company": "CRESUD INC",
@@ -15394,10 +15428,13 @@
   "checked": "2026-10-16T12:39:26.451995+00:00",
   "sec_seen": [
    "0001078942-26-000018",
+   "0000313927-26-000334",
    "0001887782-26-000009",
+   "0000919574-26-007000",
    "0001193125-26-423224",
    "0001801339-26-000015",
    "0002004903-26-000006",
+   "0000313927-26-000332",
    "0001193125-26-423229",
    "0002013812-26-000024",
    "0001493152-26-047334",
