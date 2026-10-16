@@ -1,13 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "0ed2b7da8afe3e9c": "2026-10-13T03:24:38.030740+00:00",
-  "e538a8767cc31447": "2026-10-13T03:24:38.030740+00:00",
-  "9e58dc30161bca32": "2026-10-13T03:24:38.030740+00:00",
-  "b4742b3097c6fce8": "2026-10-13T03:24:38.030740+00:00",
-  "ac413aaef67579e5": "2026-10-13T03:24:38.030740+00:00",
-  "5bc71a37c46f37a4": "2026-10-13T03:24:38.030740+00:00",
-  "be920b09a1299e70": "2026-10-13T03:24:38.030740+00:00",
   "15984f59dae0686a": "2026-10-13T03:34:38.047877+00:00",
   "a1109ccc3c2ab5a4": "2026-10-13T03:34:38.047877+00:00",
   "b55383f091837bda": "2026-10-13T03:34:38.047877+00:00",
@@ -1122,104 +1115,10 @@
   "fd312364b71e81e9": "2026-10-16T03:18:24.015777+00:00",
   "cc3650bac9f1c332": "2026-10-16T03:23:24.082170+00:00",
   "bd555117d089754f": "2026-10-16T03:23:24.082170+00:00",
-  "0252cd2d6d34b473": "2026-10-16T03:23:24.082170+00:00"
+  "0252cd2d6d34b473": "2026-10-16T03:23:24.082170+00:00",
+  "3a1bcbc14a02e44b": "2026-10-16T03:28:23.977388+00:00"
  },
  "recent": [
-  {
-   "title": "IMF warns bond yields could see a 'disorderly' spike as debt, inflation risks worsen",
-   "link": "https://www.cnbc.com/2026/10/13/treasury-yields-imf-debt-inflation-.html",
-   "sources": [
-    "CNBC"
-   ],
-   "score": 9,
-   "ts": "2026-10-13T03:24:38.030740+00:00",
-   "title_ru": "МВФ предупреждает, что доходность облигаций может вырасти «беспорядочно» по мере увеличения долга и рисков инфляции",
-   "lead": "The IMF says risks in the government bond market have worsened and that yields could jump sharply and disorderly.",
-   "lead_ru": "МВФ заявляет, что риски на рынке государственных облигаций возросли, а доходность может резко и беспорядочно подскочить.",
-   "tags": [
-    "инфляция",
-    "облигации"
-   ]
-  },
-  {
-   "title": "Surging Bond Yields Are Top Risk to Financial System, IMF Says",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-13/surging-bond-yields-are-top-risk-to-financial-system-imf-says",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-13T03:24:38.030740+00:00",
-   "title_ru": "Рост доходности облигаций представляет собой главный риск для финансовой системы, считает МВФ",
-   "lead": "A surge in government bond yields is the biggest emerging risk to the global financial system, a top official at the International Monetary Fund said, as the IMF presented its twice-yearly report on the financial stability…",
-   "lead_ru": "Рост доходности государственных облигаций является крупнейшим новым риском для мировой финансовой системы, заявил высокопоставленный чиновник Международного валютного фонда, когда МВФ представил свой два раза в год отчет о финансовой стабильности...",
-   "tags": [
-    "облигации"
-   ]
-  },
-  {
-   "title": "Threat of AI share crash puts world financial stability at risk, says IMF",
-   "link": "https://www.theguardian.com/business/2026/oct/13/ai-share-crash-risk-global-imf-debt-corrowing-cyber-attacks",
-   "sources": [
-    "The Guardian"
-   ],
-   "score": 5,
-   "ts": "2026-10-13T03:24:38.030740+00:00",
-   "title_ru": "Угроза краха акций ИИ ставит под угрозу мировую финансовую стабильность, говорит МВФ",
-   "lead": "High valuations and debt put sector in danger, while fund also warns on government borrowing and cyber-attacks The threat of an AI share price crash rippling out across global markets is putting world financial stability at risk…",
-   "lead_ru": "Высокие оценки и долг подвергают сектор опасности, в то время как фонд также предупреждает о государственных заимствованиях и кибератаках. Угроза обвала цен на акции ИИ, распространяющегося по мировым рынкам, ставит под угрозу мировую финансовую стабильность…"
-  },
-  {
-   "title": "BNP Paribas' Mateos y Lago on the Global Economy",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-13/bnp-paribas-mateos-y-lago-on-the-global-economy-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-13T03:24:38.030740+00:00",
-   "title_ru": "Матеос и Лаго из BNP Paribas о глобальной экономике",
-   "lead": "Isabelle Mateos y Lago, Group Chief Economist at BNP Paribas, says the global economy remains resilient, but faces strains from rising interest rates and energy shocks.",
-   "lead_ru": "Изабель Матеос-и-Лаго, главный экономист группы BNP Paribas, говорит, что мировая экономика остается устойчивой, но сталкивается с трудностями из-за роста процентных ставок и энергетических потрясений.",
-   "tags": [
-    "ставки"
-   ]
-  },
-  {
-   "title": "Asian stocks dive on AI jitters ahead of US bank earnings",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOZDZBM1pYcUNfelRkWE5NNC1Ja0laMUZPTm5Yei0wWGVpV3BVR3RVNDh0cHQ5ZXRDTFJpdm1wNU8wRTlkN3A2aE1LeEt2dEctUmREeXBRajEzUG1tNXc1YUxqV2ttOUFRS1pPRWhiZnJNd184SDJRV1QyVWJlMGJ4NndIZnU?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-13T03:24:38.030740+00:00",
-   "title_ru": "Азиатские акции падают из-за опасений по поводу искусственного интеллекта в преддверии отчетов банков США",
-   "tags": [
-    "рынки"
-   ]
-  },
-  {
-   "title": "State Street Investment Management's CIO on Markets",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-13/state-street-investment-management-s-cio-on-markets-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T03:24:38.030740+00:00",
-   "title_ru": "Директор по информационным технологиям State Street Investment Management по рынкам",
-   "lead": "Lori Heinel, Global CIO at State Street Investment Management, says AI is a transformative technology with long-term benefits that could spread across the global economy.",
-   "lead_ru": "Лори Хейнель, директор по информационным технологиям State Street Investment Management, говорит, что искусственный интеллект — это преобразующая технология с долгосрочными преимуществами, которые могут распространиться на всю мировую экономику."
-  },
-  {
-   "title": "Asia has become the largest producer of zombie companies, IMF warns",
-   "link": "https://www.ft.com/content/ee4105fc-aa85-47ef-aa64-1fc3f344d740?syn-25a6b1a6=1",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T03:24:38.030740+00:00",
-   "title_ru": "Азия стала крупнейшим производителем компаний-зомби, предупреждает МВФ",
-   "lead": "Share of groups unable to service debt in region has doubled since 2008, lender says",
-   "lead_ru": "Доля групп, неспособных обслуживать долг в регионе, удвоилась с 2008 года, говорит кредитор"
-  },
   {
    "title": "Global Financial Markets Face Rising Risks From AI, Bond Yields, and Cyberattacks",
    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOTlNERkJRam56NDQ0Wjd0SVhoTFd2WWhDdko1d25qZkwyVWY4Y3ViRkpMQUVZN3RzYlpacXc4WjFnLUtiRDVJaUdkeFhITnY1ZTRtTjQxSHNtVHZXclZVSnpicXdhTDVQX1BFamFSVUhXSVlXWEd1WGRBa2NFeU1QQ3JfX2lENUFBbWR4U2tJNFpVWWVmVW5BSGNLWE9MWi04QzR0aXBSU2xxOVpYYWZ0U1h4RXBncjcxMFdxRi1nNlZDQVhicDlB?oc=5",
@@ -11865,6 +11764,16 @@
    "tags": [
     "ECB"
    ]
+  },
+  {
+   "title": "IMF Fiscal Monitor Press Briefing",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQVlllVXJlTFBKdGFpOHl4ODNZMVlRZFdoa0lzZkgzdWlGdWE4bElOSERQelZhMk53c1ppV29BTUJCSFhIYkZnUXRCYW9Bb1pnYXNhcTE3aHNodkc5VkJSbWR1dzFQc0ZwSklJNEY1UFFLdlB3RXhhMUlVS0NFeUIzWmpNYVNleUtlS3NxM3FiTDY5amdiTG5aQVpwck82UUFYWThqcDAwNkk?oc=5",
+   "sources": [
+    "IMF"
+   ],
+   "score": 5,
+   "ts": "2026-10-16T03:28:23.977388+00:00",
+   "title_ru": "Пресс-брифинг по финансовому мониторингу МВФ"
   }
  ],
  "last_digest": "2026-10-15",
@@ -14947,11 +14856,11 @@
    "0001689498-26-000002",
    "0002090886-26-000012",
    "0001632063-26-000005",
+   "0001193125-26-423229",
    "0001522767-26-000206",
    "0001652149-26-000006",
-   "0001193125-26-423228",
-   "0001453368-26-000002",
    "0002058781-26-000003",
+   "0001453368-26-000002",
    "0001218363-26-000005",
    "0001531152-26-000073",
    "0001498287-26-000001",
@@ -14983,7 +14892,7 @@
    "0001193125-26-423227",
    "0001171520-26-000309",
    "0001628280-26-066035",
-   "0001193125-26-423229"
+   "0001193125-26-423228"
   ],
   "errors": {}
  }
