@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e2efb619b18e91f8": "2026-10-13T15:05:30.550882+00:00",
-  "73235becd5570c8e": "2026-10-13T15:05:30.550882+00:00",
   "05c1b2395a796ecb": "2026-10-13T15:15:30.529866+00:00",
   "e384f04cb382324f": "2026-10-13T15:15:30.529866+00:00",
   "64a462e606b5eeee": "2026-10-13T15:15:30.529866+00:00",
@@ -1161,19 +1159,12 @@
   "e0ed86a964089919": "2026-10-16T14:54:26.567884+00:00",
   "9e1bcd29e9b37daa": "2026-10-16T14:59:26.489423+00:00",
   "70363c9b200b07ab": "2026-10-16T15:04:26.780360+00:00",
-  "e53d94a7e836b695": "2026-10-16T15:04:26.780360+00:00"
+  "e53d94a7e836b695": "2026-10-16T15:04:26.780360+00:00",
+  "37e2fae8a58e8e2e": "2026-10-16T15:09:26.490991+00:00",
+  "620fa3163a4316b0": "2026-10-16T15:14:26.476551+00:00",
+  "2f961200984e2a95": "2026-10-16T15:14:26.476551+00:00"
  },
  "recent": [
-  {
-   "title": "Tighter AI data rules could curb Germany's economic gains by €155 billion a year, study finds",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPRlpkU0J6eVRhbGpEWmFGRWt4ejEyTUV1Vy00ekZYOUoyUkFvODBPUjR1eHVQSWtwQzc4clF2QUxITEFldjJld2p6bFJQSmdZenlBVV80b3VEZWlpQ0RzSGt1ZGZmVS1GZnRic3hOTDJwV2pxY1Etc0w5eFN2MjVMM1BkR0tZaHYtMEdvM3VrYmU2OG51c2pWUlI2dVJvRThqLXJidHMyc1VVT2t4WFRMaU55ZmxPRWxiNGZIbnNB?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T15:05:30.550882+00:00",
-   "title_ru": "Ужесточение правил использования данных искусственного интеллекта может ограничить экономический рост Германии на 155 миллиардов евро в год, показало исследование"
-  },
   {
    "title": "Colombian Central Banker Sees Extended Period of High Rates",
    "link": "https://www.bloomberg.com/news/articles/2026-10-13/colombian-central-banker-sees-extended-period-of-high-rates",
@@ -12309,6 +12300,16 @@
    ],
    "score": 1,
    "ts": "2026-10-16T15:04:26.780360+00:00"
+  },
+  {
+   "title": "Prices for gasoline increased 34.2 percent over the year ended September 2026",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNZmtNaFIta0tHYUZrRk5HS1hERXBQa3ZSVzJ1alRFTmZOQVVTUDVTQWlydEZWZ251RkF4bnJ0Z1EwaFB4X2xrR2o1R0w2MW04T3dTWXlHLVAwQ3hoaHdLU1B4Q05PVFFyeEZnUkl4VVlrMFJUcXhyYzNJcFpjSFZSTjF3TWlycHRBU1RvUENzMVZ2cDU2TVFnT1h0aGY1ZHhDU1JmbVVlS0J6TUUtRHBiWWVNeWdhUQ?oc=5",
+   "sources": [
+    "US Labor Statistics (BLS)"
+   ],
+   "score": 4,
+   "ts": "2026-10-16T15:14:26.476551+00:00",
+   "title_ru": "Цены на бензин выросли на 34,2 процента за год, закончившийся в сентябре 2026 года."
   }
  ],
  "last_digest": "2026-10-15",
@@ -15494,11 +15495,7 @@
   },
   "checked": "2026-10-16T14:39:26.487316+00:00",
   "sec_seen": [
-   "0000079879-26-000312",
-   "0000079879-26-000309",
-   "0001437749-26-032768",
-   "0000079879-26-000310",
-   "0000079879-26-000311"
+   "0001437749-26-032768"
   ],
   "errors": {}
  }
