@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "2966d1c0b1682048": "2026-10-13T04:14:38.030750+00:00",
-  "f7f0d73bd5cbda45": "2026-10-13T04:14:38.030750+00:00",
   "648e8446403da030": "2026-10-13T04:24:38.004375+00:00",
   "8bd0190d544e1f00": "2026-10-13T04:34:38.037307+00:00",
   "4325818cda7b21a3": "2026-10-13T04:34:38.037307+00:00",
@@ -1125,37 +1123,10 @@
   "dfd4502696f82409": "2026-10-16T04:08:24.036424+00:00",
   "1e8b1583f7595dbe": "2026-10-16T04:08:24.036424+00:00",
   "0c6fbb2c870c2648": "2026-10-16T04:13:24.001008+00:00",
-  "5a2a74e3b48fbce6": "2026-10-16T04:13:24.001008+00:00"
+  "5a2a74e3b48fbce6": "2026-10-16T04:13:24.001008+00:00",
+  "46a1e51a287e3cbf": "2026-10-16T04:23:24.023556+00:00"
  },
  "recent": [
-  {
-   "title": "AI boom bolstered growth in global trade, benefiting China and India, IMF says",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPeVFzV2hGZjBlUUFETjhBYmxjM2pPNkFfS0dxTFlKUm5fRnJUQm9sYjBoNGhCNldSX2tlTGxwTWtRbG94cUdYVkhKZkZCZGRabTFtMWhyMHZfUFZmUjcwaUlTRzFCOE04MG81aWtjbHZfNGNsY1Q0M01oOFp3NFE4eFlodW1jd2tsaVNNYTgyUFlwX3d5b1hMaFU3Y19QVFVkYXZ6Q3YzMVYzZlYzV2NnLXNlZnQxREpOXzhVd1BPM2g3QQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-13T04:14:38.030750+00:00",
-   "title_ru": "Бум искусственного интеллекта способствовал росту мировой торговли, что принесло пользу Китаю и Индии, говорит МВФ",
-   "tags": [
-    "Китай"
-   ]
-  },
-  {
-   "title": "Xpeng Welcomes EU-China Deal on Capping Hybrid Imports",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-13/xpeng-welcomes-eu-china-deal-on-capping-hybrid-imports-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T04:14:38.030750+00:00",
-   "title_ru": "Xpeng приветствует соглашение между ЕС и Китаем об ограничении импорта гибридных автомобилей",
-   "lead": "Brian Gu, Xpeng’s vice chairman and co-president, called the EU-China agreement on hybrid imports an encouraging sign. He explained why at the Paris Motor Show. (Source: Bloomberg)",
-   "lead_ru": "Брайан Гу, вице-председатель и сопрезидент Xpeng, назвал соглашение между ЕС и Китаем о гибридном импорте обнадеживающим знаком. Почему он объяснил это на Парижском автосалоне. (Источник: Блумберг)",
-   "tags": [
-    "Китай"
-   ]
-  },
   {
    "title": "BOE’s Greene Says UK Growth Upgrade Is Proof Rate Hike Needed",
    "link": "https://www.bloomberg.com/news/articles/2026-10-13/boe-s-greene-says-uk-growth-upgrade-is-proof-rate-hike-needed",
@@ -11867,6 +11838,19 @@
    "tags": [
     "Fed",
     "jobs"
+   ]
+  },
+  {
+   "title": "US Treasury says Japan no longer faces deflationary environment, yen level must change",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOVnlFbzgwbXQ1Q3RjNk9wS2U2dHhqUzJLMENfa3Q1NU5pSUc2ZW96Mlg4Uk9sbDhic0N4YVhaNkpvbmphcTJSSnlJNjRUdFhXNWoxc3dzbUhRV054M0YyMjZBT3hRRFhSLWhYbFh0QUZjRThCUDFSRlptWVJ6YUN0OWkzYlJEQi14Z1ZMazE0WnJmU18yUHVmc2x4OXd4VU5DVlh3dUZ0cTV5UWRFQ2JrMnNEZXBSM0VjcjRxOHhabk1CY0oxaEF0SmF0ZUxJdw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T04:23:24.023556+00:00",
+   "title_ru": "Казначейство США говорит, что Япония больше не сталкивается с дефляционной средой, уровень иены должен измениться",
+   "tags": [
+    "bonds"
    ]
   }
  ],
