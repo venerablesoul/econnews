@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "976bf4e5c96d2611": "2026-10-13T09:45:02.970210+00:00",
   "7cb4209dd2caf892": "2026-10-13T09:55:02.987819+00:00",
   "48e9b07beb7b4db0": "2026-10-13T09:55:02.987819+00:00",
   "6e635a02005a9d6c": "2026-10-13T09:55:02.987819+00:00",
@@ -1144,21 +1143,10 @@
   "7496a9925710aa7b": "2026-10-16T09:33:52.089024+00:00",
   "395cfcd2470e9219": "2026-10-16T09:38:52.038387+00:00",
   "b73bb0973b0c25fa": "2026-10-16T09:38:52.038387+00:00",
-  "c734cf11fe0a3fe4": "2026-10-16T09:43:52.034981+00:00"
+  "c734cf11fe0a3fe4": "2026-10-16T09:43:52.034981+00:00",
+  "119f51e2bd5cf9fa": "2026-10-16T09:48:52.134831+00:00"
  },
  "recent": [
-  {
-   "title": "Meloni’s Budget Heads to Italian Cabinet Amid ‘Storm Clouds’",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-13/meloni-s-budget-heads-to-italian-cabinet-amid-storm-clouds",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T09:45:02.970210+00:00",
-   "title_ru": "Бюджет Мелони направляется в кабинет министров Италии на фоне «грозовых туч»",
-   "lead": "Italian Finance Minister Giancarlo Giorgetti insisted his budget will respect European Union fiscal targets even while relieving families strained by the cost-of-living crisis.",
-   "lead_ru": "Министр финансов Италии Джанкарло Джорджетти настаивал на том, что его бюджет будет соответствовать бюджетным целям Европейского Союза, даже если он облегчит семьи, испытывающие трудности из-за кризиса стоимости жизни."
-  },
   {
    "title": "Cracks Grow Across the AI Trade as Memory-Chip Stocks Tumble",
    "link": "https://www.bloomberg.com/news/articles/2026-10-13/cracks-grow-across-the-ai-trade-as-memory-chip-stocks-tumble",
@@ -11984,6 +11972,16 @@
    "tags": [
     "China"
    ]
+  },
+  {
+   "title": "UK watchdog moves to protect energy market from wholesale price swings",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPenRiT0NLdHdEVVlBVUVzNmpCemctNi1rSGl2VjNvaE91ZnZLSFZBUlJZY2ljVkw3LTY0S0pWZmxiRlNxbHVyQmV4T0hSV044dWNPT2Nyckk2Njg5UklOTTRLVXh4V3praHZQU1lTWk5Nb2pSaklDU01BQTg1NDlUTzgxTHV6Z1d5RkdTaDIzcEtQRnB2QURnNmFFanQ0Y3JsNk8ybDhucVl6NUtWMmcwazQzWEk?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T09:48:52.134831+00:00",
+   "title_ru": "Британский надзорный орган пытается защитить энергетический рынок от колебаний оптовых цен"
   }
  ],
  "last_digest": "2026-10-15",
@@ -15063,12 +15061,11 @@
    "0001568238-26-000001",
    "0001593199-26-000004",
    "0001218363-26-000005",
-   "0001778564-26-000185",
    "0001951059-26-000018",
    "0001628280-26-066035",
    "0001895106-26-000021",
-   "0001522767-26-000210",
    "0001104659-26-116322",
+   "0001522767-26-000210",
    "0001225208-26-008428",
    "0001522767-26-000208",
    "0001689498-26-000002",
@@ -15081,6 +15078,7 @@
    "0001798757-26-000009",
    "0001895111-26-000020",
    "0001581760-26-000171",
+   "0001525358-26-000034",
    "0001242654-26-000016",
    "0001522767-26-000206",
    "0001193125-26-423227",
@@ -15099,7 +15097,7 @@
    "0001193125-26-423158",
    "0001193125-26-423224",
    "0001593199-26-000005",
-   "0001525358-26-000034",
+   "0001778564-26-000185",
    "0001354116-26-000001",
    "0002058769-26-000006",
    "0001222287-26-000028",
