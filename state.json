@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "d16b120f51effc40": "2026-10-13T16:05:30.540518+00:00",
-  "085d86c99e2a1eae": "2026-10-13T16:05:30.540518+00:00",
   "56db7e6d35dc1a56": "2026-10-13T16:15:30.560562+00:00",
   "0dbee12cac1d3802": "2026-10-13T16:15:30.560562+00:00",
   "98816a27064a9634": "2026-10-13T16:25:30.583133+00:00",
@@ -1151,32 +1149,11 @@
   "b5a4c9c3ab291703": "2026-10-16T15:54:26.424232+00:00",
   "b5eb05e23cc15b91": "2026-10-16T15:59:26.460822+00:00",
   "f909ea2ff0667498": "2026-10-16T15:59:26.460822+00:00",
-  "a0e51bd62a2b866d": "2026-10-16T16:04:26.441029+00:00"
+  "a0e51bd62a2b866d": "2026-10-16T16:04:26.441029+00:00",
+  "4ee5f4b0fcc9b1d0": "2026-10-16T16:09:26.513922+00:00",
+  "4d8b5a22566c08f7": "2026-10-16T16:09:26.513922+00:00"
  },
  "recent": [
-  {
-   "title": "Legacy Carmakers Seen Losing Mass Market to Chinese Rivals",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPeVB3dmxuWW5Ic3FfNm9PWWFGdE91TzZrZGNPQ1JGMjFoaVRkbVVyR0paRERSZUNoaG1xREZuMW93VExFeXNCNmV3MGlldEp1YUFBYXlwTF9nbFhVLUQ5VTBWcGhQemZuNWV5ZkszclFCWWdGVkN4bko5SjVqSi1xWDlCaHNORU10eXdjTkxVSXhyOWZNY1BiTGJfcnV0T2lrYTRFRHZRNTBEYWlpT0E?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T16:05:30.540518+00:00",
-   "title_ru": "Устаревшие автопроизводители уступают массовый рынок китайским конкурентам",
-   "tags": [
-    "Китай"
-   ]
-  },
-  {
-   "title": "Market Talk: AI casino label is 'too brutal'",
-   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE4wWFlfckl6Zk94cEhpTE0zYVhrSlhlbEl6OGFhTXAxMW1rLWphbmpvbjJyWWp1dVBWaGpEeGRvSlJJaHcwNURlclllYjNaRlJsSlpkSjhSM1dZUGxONlVHdENBMHB4b2VrOVMyazhEWGQ2SE1zM0pPQjJlMllvQQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T16:05:30.540518+00:00",
-   "title_ru": "Market Talk: Ярлык казино с искусственным интеллектом «слишком жесток»"
-  },
   {
    "title": "Saudis Tell OPEC That Oil Output Recovered From Three-Decade Low",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPVjkzY3Y2MWdvOE1pQVhjSnNXWjQ0RGIyTHdrbzhNN1loVzVDZW8yUkh3QmJtdHdSRVR1aUFRdmU4c3l3R09kZVRvQ1RLenpZbHBKV3F2cG9WeU9DcGxhTXBSSFZOVmw5TmlfQlh3RVp3d1JQYzY4UnhwMUFiTnhwQlRVcXFvVTROMG96VUdneW1GbDBsSGs5VnlPRUtUWE9zUVdQeHFGWnpzb2hxWkc5d3NuTWNJUQ?oc=5",
@@ -12160,6 +12137,33 @@
    "title_ru": "США добиваются обмена до 17 миллионов баррелей нефти из стратегического резерва",
    "tags": [
     "oil"
+   ]
+  },
+  {
+   "title": "IMF expects at least one more 25 bps ECB rate hike in 2026",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPbUVycFZsRzVkXzRQNHZLVXlhMUxUbmtmVW1fRDdjN1hOTWQwS18zX0VqeklHb0oydmE0bjJvdHJSbFFaM3dhZThqTkV5NHJVVFNyb29PMTJfNlRfUTZjSV84cWF4aC03b1l1eEdQWE1ZX1l4TXlwQjhOc29vajRoWGhsMVFEVEZZdlhjUWk3bDZ6YTdhV25iQ25VZE9RZw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 7,
+   "ts": "2026-10-16T16:09:26.513922+00:00",
+   "title_ru": "МВФ ожидает как минимум еще одного повышения ставки ЕЦБ на 25 б.п. в 2026 году",
+   "tags": [
+    "ECB",
+    "rates"
+   ]
+  },
+  {
+   "title": "S&P 500 subdued as gains in banks offset AI jitters; Dow at one-month high",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNV0xEdzRIMVNLYnAyTkhHSmVNTnRyMDJ3WGdOeFY0Vy1kRUtmWC1FZW42aDNfWTctUHM5X2hlWkhuOHFwblR1Q054a19YV3ZLNTlVVVlmMlRTZ0wxLWE2cmN3SWpjVHU4VDJZWU12Q0hPajE5cDdvQm9ic05PNHNRVG45bEI1ZFVHaEN5QnZjbHMxUDFVbHZ2cFNlMUZydw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-16T16:09:26.513922+00:00",
+   "title_ru": "Индекс S&P 500 упал, поскольку рост банковских активов компенсировал колебания AI; Dow достиг месячного максимума",
+   "tags": [
+    "markets"
    ]
   }
  ],
