@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "66cbe36586296b8c": "2026-10-13T19:02:05.089678+00:00",
-  "17ff3578f5b0a405": "2026-10-13T19:02:05.089678+00:00",
-  "777712821e8dbe4e": "2026-10-13T19:02:05.089678+00:00",
-  "a0f7c02f2c4a036a": "2026-10-13T19:02:05.089678+00:00",
-  "90bfc8b40e1a4e9f": "2026-10-13T19:02:05.089678+00:00",
   "9b689421c976fbc6": "2026-10-13T19:22:05.049199+00:00",
   "6af43e0c778b02c9": "2026-10-13T19:22:05.049199+00:00",
   "04febb726c93cde4": "2026-10-13T19:22:05.049199+00:00",
@@ -1157,55 +1152,10 @@
   "31effc6cbbf51316": "2026-10-16T18:44:55.703984+00:00",
   "e534ad0e949eeee0": "2026-10-16T18:49:55.621854+00:00",
   "927e3b0b79248eee": "2026-10-16T18:54:55.542320+00:00",
-  "c20361c8e16dd884": "2026-10-16T18:59:55.635436+00:00"
+  "c20361c8e16dd884": "2026-10-16T18:59:55.635436+00:00",
+  "f191fbd6522ec23d": "2026-10-16T19:09:55.670844+00:00"
  },
  "recent": [
-  {
-   "title": "Fed’s Williams Currently Sees No Need for Rate Hike in 2027",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQb01adkN2OHdNQWZjaW9DMVk0NlotU0RrVkV2dGVDZDc5WTY5aEJmemJtSjY1eTJNRjM1UzY1OUlBMXNHQ0FBd09mV3ZXdWJlZXZhY2N6Sng3QnRNcW5FY1cyU216SmNtVUNIcEd4TFR4aHR1cGR1eU1CYkZOdjQ0SndhRzJKdWc0aGM1cnlTSWpHZnJJbEtrZVduWl9fSmJObDNFT2k5UXREWWtBT3J3?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-13T19:02:05.089678+00:00",
-   "title_ru": "Уильямс из ФРС в настоящее время не видит необходимости в повышении ставок в 2027 году",
-   "tags": [
-    "ФРС",
-    "ставки"
-   ]
-  },
-  {
-   "title": "US Swaps Bets Backfire, Wiping Out Billions From Funds in Chile",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-13/us-swaps-bets-backfire-wiping-out-billions-from-funds-in-chile",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-13T19:02:05.089678+00:00",
-   "title_ru": "США меняют ставки на обратные последствия, уничтожая миллиарды из фондов в Чили",
-   "lead": "The pension funds used by millions of Chileans are racing to close out bets on US interest rates that backfired after the Iran war unleashed a global inflation shock, exposing them to billions of dollars of losses.",
-   "lead_ru": "Пенсионные фонды, которыми пользуются миллионы чилийцев, стремятся закрыть ставки на процентные ставки в США, которые дали обратный эффект после того, как война в Иране вызвала глобальный инфляционный шок, подвергая их потерям в миллиарды долларов.",
-   "tags": [
-    "ставки",
-    "инфляция",
-    "доллар"
-   ]
-  },
-  {
-   "title": "Strategy’s Saylor Sees Bitcoin Moving Back Up Beyond $100,000",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-13/strategy-s-saylor-sees-bitcoin-moving-back-up-beyond-100-000",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T19:02:05.089678+00:00",
-   "title_ru": "Сэйлор из Strategy видит, что биткойн снова поднимется выше $100 000",
-   "lead": "Strategy Inc.’s Michael Saylor is declaring an end to the past year’s crypto market rout and predicting that Bitcoin is set to break $100,000 again.",
-   "lead_ru": "Майкл Сэйлор из Strategy Inc. объявляет о прекращении прошлогоднего краха рынка криптовалют и прогнозирует, что Биткойн снова преодолеет отметку в 100 000 долларов.",
-   "tags": [
-    "крипта"
-   ]
-  },
   {
    "title": "Argentina Posts Second Straight Month of Inflation Below 2%",
    "link": "https://www.bloomberg.com/news/articles/2026-10-13/argentina-posts-second-straight-month-of-inflation-below-2",
@@ -15381,22 +15331,28 @@
   "checked": "2026-10-16T18:44:55.703984+00:00",
   "sec_seen": [
    "0000007789-26-000247",
-   "0000007789-26-000249",
-   "0000007789-26-000248",
-   "0001628280-26-066099",
-   "0000070858-26-000486",
-   "0000007789-26-000246",
-   "0001510281-26-000353",
-   "0001791771-26-000007",
    "0001214659-26-012986",
-   "0001746448-26-000010",
    "0000764180-26-000108",
    "0001213900-26-110188",
-   "0002081604-26-000013",
    "0001419536-26-000160",
+   "0001862314-26-000014",
    "0001292208-26-000012",
    "0001632143-26-000006",
+   "0000007789-26-000249",
+   "0000007789-26-000248",
+   "0001510281-26-000353",
+   "0001746448-26-000010",
    "0000007789-26-000245",
+   "0001204034-26-000027",
+   "0000070858-26-000486",
+   "0001213190-26-000023",
+   "0001791771-26-000007",
+   "0001929185-26-000014",
+   "0002081604-26-000013",
+   "0001794684-26-000016",
+   "0001437749-26-032788",
+   "0001580502-26-000012",
+   "0000007789-26-000246",
    "0002014109-26-000004"
   ],
   "errors": {}
