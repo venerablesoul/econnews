@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "1940c55f3c98a6b1": "2026-10-13T05:54:38.045584+00:00",
-  "ff97e6784c0986fe": "2026-10-13T05:54:38.045584+00:00",
   "e874255546396658": "2026-10-13T06:04:38.019906+00:00",
   "71ad030e3fb5df74": "2026-10-13T06:04:38.019906+00:00",
   "f1c143e58bf4f262": "2026-10-13T06:14:38.070453+00:00",
@@ -1134,31 +1132,11 @@
   "4de059f0a2d8ebeb": "2026-10-16T05:38:23.993208+00:00",
   "5b0a6526f043fa42": "2026-10-16T05:38:23.993208+00:00",
   "4101ea5b8a62367d": "2026-10-16T05:38:23.993208+00:00",
-  "9b4807e570c3cdf0": "2026-10-16T05:43:23.950471+00:00"
+  "9b4807e570c3cdf0": "2026-10-16T05:43:23.950471+00:00",
+  "a5a95e5ca8adcd00": "2026-10-16T05:58:24.000826+00:00",
+  "e22f6091b98a32f0": "2026-10-16T05:58:24.000826+00:00"
  },
  "recent": [
-  {
-   "title": "Mike Bloomberg Opens the 2026 New Economy Forum",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-13/mike-bloomberg-opens-the-2026-new-economy-forum-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T05:54:38.045584+00:00",
-   "title_ru": "Майк Блумберг открывает Форум новой экономики 2026 года",
-   "lead": "Michael R. Bloomberg, Founder, Bloomberg L.P. & Bloomberg Philanthropies welcome delegates to the 2026 Bloomberg New Economy Forum in New Delhi. (Source: Bloomberg)",
-   "lead_ru": "Майкл Р. Блумберг, основатель Bloomberg LP и Bloomberg Philanthropies, приветствует делегатов Форума новой экономики Bloomberg 2026 в Нью-Дели. (Источник: Блумберг)"
-  },
-  {
-   "title": "Morning Bid: The fragile AI trade",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1lOGFtbjYzeFZUcDJlSnNYeHNyZk01UUhCUlhIaVhtd3dpSkxhTExrNDY3U2Zmc2c3TEU4bUhXcDlLTnE5bTc5akplUWpPcUttb0ZBckNQbEZINFFhNDdjakJqd29FTVlTNHNYS3czbkxNMTdPMk1qVXZHX25zMGM?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T05:54:38.045584+00:00",
-   "title_ru": "Утренняя ставка: хрупкая торговля ИИ"
-  },
   {
    "title": "IMF / Global Financial Stability Report Annual Meetings, 2026",
    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPb1MzOEQyTHdYem1aLVRLQVpTd3h6dkJ5b2tyNjlSUjlMYkdNMFczb2xVWnU0WHR0MnVBUmNtMnZzUTlPZ1Z1X1JWY3hxeGV2RlRZdWxDMEVSbURFT0lQaFBnbzFMWWYtVHJqME1wczlvVnFXTk5vNmRSWGdBM2xTSkYwdG16cklTLVptV3B6T2ZqZm5wT2lhSUktd0JUU0oxSkNZV01JaU5PQzdTclJmRC10eURpcjd6cS00Q1Q2cWY1b1h4eF85T1VKWW1PZw?oc=5",
@@ -11953,6 +11931,19 @@
    "score": 3,
    "ts": "2026-10-16T05:38:23.993208+00:00",
    "title_ru": "Решение Yes Bank AT-1 в Индии не повлияет на рейтинги, несмотря на снижение прибыли, сообщает S&P",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "Stocks end higher as traders shift from AI to healthcare",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1XMjdxNFFLRXdzUDJiZ3VGVzd3M3BHOXVMRFZFbURPbUNMWDJXUE96dGoycndHS3hQcFA4SE5CVV9oQVBmY1NLZFYwYUN5dTFPSjU5M0FOM19nbzVvWkJsUHFwalg4VTA?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T05:58:24.000826+00:00",
+   "title_ru": "Акции растут по мере того, как трейдеры переходят от ИИ к здравоохранению",
    "tags": [
     "markets"
    ]
