@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c1f3c528c0c85719": "2026-10-13T04:04:38.027176+00:00",
   "2966d1c0b1682048": "2026-10-13T04:14:38.030750+00:00",
   "f7f0d73bd5cbda45": "2026-10-13T04:14:38.030750+00:00",
   "648e8446403da030": "2026-10-13T04:24:38.004375+00:00",
@@ -1121,21 +1120,12 @@
   "46ef5db782fb53f6": "2026-10-16T03:58:24.014422+00:00",
   "b27f0001ef8e41dd": "2026-10-16T03:58:24.014422+00:00",
   "b5d64f9f378a7387": "2026-10-16T04:03:23.990186+00:00",
-  "7ee22e5efdc79159": "2026-10-16T04:03:23.990186+00:00"
+  "7ee22e5efdc79159": "2026-10-16T04:03:23.990186+00:00",
+  "dc51ca8843678e6d": "2026-10-16T04:08:24.036424+00:00",
+  "dfd4502696f82409": "2026-10-16T04:08:24.036424+00:00",
+  "1e8b1583f7595dbe": "2026-10-16T04:08:24.036424+00:00"
  },
  "recent": [
-  {
-   "title": "Can Peter Magyar Deliver Euro Membership for Hungary?",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-13/can-peter-magyar-deliver-euro-membership-for-hungary",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T04:04:38.027176+00:00",
-   "title_ru": "Сможет ли Петер Мадьяр обеспечить членство Венгрии в еврозоне?",
-   "lead": "The political changes in the country have been breakneck. Delivering on the promise to adopt the single currency is a wholly different challenge.",
-   "lead_ru": "Политические изменения в стране были головокружительными. Выполнение обещания ввести единую валюту – это совершенно другая задача."
-  },
   {
    "title": "AI boom bolstered growth in global trade, benefiting China and India, IMF says",
    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPeVFzV2hGZjBlUUFETjhBYmxjM2pPNkFfS0dxTFlKUm5fRnJUQm9sYjBoNGhCNldSX2tlTGxwTWtRbG94cUdYVkhKZkZCZGRabTFtMWhyMHZfUFZmUjcwaUlTRzFCOE04MG81aWtjbHZfNGNsY1Q0M01oOFp3NFE4eFlodW1jd2tsaVNNYTgyUFlwX3d5b1hMaFU3Y19QVFVkYXZ6Q3YzMVYzZlYzV2NnLXNlZnQxREpOXzhVd1BPM2g3QQ?oc=5",
@@ -11819,6 +11809,47 @@
    "tags": [
     "Fed"
    ]
+  },
+  {
+   "title": "Fed's Hammack warns inflation expectations deterioration could require Fed response",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNdnhMdGhwNHBETlB4SjVzT3pIb3NoNTlmR2FSVGJjR25xQU5VcVBxemQ5Q3JNRzMyZDJMNjRzZ0lfOWhSUmszQlkxdklrWGpTMXJveU9MUjc4TUttdHIyMGFpektjTkUzMDhGT1RYamxFLUdYQzU1cU5tcHdaYzJzaGtJY25LSUt5aE05NEhMR3VHWlE3N3I5NGl0LXExMlduQWUtdERKU1NRUlRHNFRSR051R1FKdVprYnNzTg?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-16T04:08:24.036424+00:00",
+   "title_ru": "Хэммак из ФРС предупреждает, что ухудшение инфляционных ожиданий может потребовать реакции ФРС",
+   "tags": [
+    "Fed",
+    "inflation"
+   ]
+  },
+  {
+   "title": "Heinz Solar Panels Power Telford Factory as Iran War Hits Oil",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-16/heinz-solar-panels-power-telford-factory-as-iran-war-hits-oil",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T04:08:24.036424+00:00",
+   "title_ru": "Солнечные панели Heinz питают завод в Телфорде, когда война в Иране бьет по нефти",
+   "lead": "Britain’s economic output is far less energy-intensive that it once was.",
+   "lead_ru": "Экономическое производство Великобритании стало гораздо менее энергоемким, чем когда-то.",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "Malaysia’s Growth Tops Forecasts as AI Boom Drives Export Surge",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-16/malaysia-s-growth-tops-forecasts-as-ai-boom-drives-export-surge",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T04:08:24.036424+00:00",
+   "title_ru": "Прогнозы роста Малайзии превышают прогнозы, поскольку бум ИИ стимулирует рост экспорта",
+   "lead": "Malaysia’s economic growth slowed but still exceeded expectations as the artificial intelligence boom continued to bolster exports and domestic demand remained resilient.",
+   "lead_ru": "Экономический рост Малайзии замедлился, но все еще превзошел ожидания, поскольку бум искусственного интеллекта продолжал поддерживать экспорт, а внутренний спрос оставался устойчивым."
   }
  ],
  "last_digest": "2026-10-15",
@@ -14901,11 +14932,11 @@
    "0001689498-26-000002",
    "0002090886-26-000012",
    "0001632063-26-000005",
+   "0001193125-26-423229",
    "0001522767-26-000206",
    "0001652149-26-000006",
-   "0001193125-26-423228",
-   "0001453368-26-000002",
    "0002058781-26-000003",
+   "0001453368-26-000002",
    "0001218363-26-000005",
    "0001531152-26-000073",
    "0001498287-26-000001",
@@ -14937,7 +14968,7 @@
    "0001193125-26-423227",
    "0001171520-26-000309",
    "0001628280-26-066035",
-   "0001193125-26-423229"
+   "0001193125-26-423228"
   ],
   "errors": {}
  }
