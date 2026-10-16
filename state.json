@@ -1128,7 +1128,10 @@
   "942a106fe39a195d": "2026-10-16T04:43:23.959509+00:00",
   "8e63af13a49f805a": "2026-10-16T05:03:23.967948+00:00",
   "1f64c53c25d94134": "2026-10-16T05:08:24.080076+00:00",
-  "6831e4c1a60d8d4d": "2026-10-16T05:18:24.007277+00:00"
+  "6831e4c1a60d8d4d": "2026-10-16T05:18:24.007277+00:00",
+  "f7a01bde21ee8ff7": "2026-10-16T05:23:24.000172+00:00",
+  "469c710c1e7552fe": "2026-10-16T05:23:24.000172+00:00",
+  "2147af2baafd4d4e": "2026-10-16T05:23:24.000172+00:00"
  },
  "recent": [
   {
@@ -11886,6 +11889,48 @@
     "Fed",
     "rates"
    ]
+  },
+  {
+   "title": "Kganyago: SARB Expects S. Africa CPI to Decline in 2027",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-16/kganyago-sarb-expects-s-africa-cpi-to-decline-in-2027-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-16T05:23:24.000172+00:00",
+   "title_ru": "Kganyago: SARB ожидает, что индекс потребительских цен в Южной Африке снизится в 2027 году",
+   "lead": "South African Reserve Bank Governor Lesetja Kganyago says they will make their policy decisions meeting by meeting.",
+   "lead_ru": "Управляющий Южноафриканского резервного банка Лесетя Кганьяго говорит, что они будут принимать свои политические решения на каждой встрече.",
+   "tags": [
+    "inflation"
+   ]
+  },
+  {
+   "title": "Chip Selloff Eases as Nvidia CEO Downplays CoreWeave Concerns",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-16/the-asia-trade-10-16-2026-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-16T05:23:24.000172+00:00",
+   "title_ru": "Распродажа чипов упрощается, поскольку генеральный директор Nvidia преуменьшает проблемы CoreWeave",
+   "lead": "\"Bloomberg: The Asia Trade\" brings you everything you need to know to get ahead as the trading day begins in Asia.",
+   "lead_ru": "«Bloomberg: The Asia Trade» дает вам все, что вам нужно знать, чтобы продвинуться вперед, поскольку торговый день начинается в Азии.",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "IMF Quite Confident Argentina Able to Meet 2027 Debt Obligations",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-16/imf-quite-confident-argentina-able-to-meet-2027-debt-obligations",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-16T05:23:24.000172+00:00",
+   "title_ru": "МВФ вполне уверен, что Аргентина сможет выполнить долговые обязательства 2027 года",
+   "lead": "The International Monetary Fund is “quite confident” that Argentina’s authorities are in a position to meet next year’s debt obligations, said Luis Cubeddu, deputy director of the Western Hemisphere department.",
+   "lead_ru": "Международный валютный фонд «вполне уверен», что власти Аргентины в состоянии выполнить долговые обязательства в следующем году, сказал Луис Кубедду, заместитель директора департамента Западного полушария."
   }
  ],
  "last_digest": "2026-10-15",
@@ -14968,11 +15013,11 @@
    "0001689498-26-000002",
    "0002090886-26-000012",
    "0001632063-26-000005",
-   "0001193125-26-423229",
    "0001522767-26-000206",
    "0001652149-26-000006",
-   "0002058781-26-000003",
+   "0001193125-26-423228",
    "0001453368-26-000002",
+   "0002058781-26-000003",
    "0001218363-26-000005",
    "0001531152-26-000073",
    "0001498287-26-000001",
@@ -15004,7 +15049,7 @@
    "0001193125-26-423227",
    "0001171520-26-000309",
    "0001628280-26-066035",
-   "0001193125-26-423228"
+   "0001193125-26-423229"
   ],
   "errors": {}
  }
