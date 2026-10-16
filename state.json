@@ -1130,7 +1130,11 @@
   "2147af2baafd4d4e": "2026-10-16T05:23:24.000172+00:00",
   "0c8defc2fbf126fb": "2026-10-16T05:28:23.993121+00:00",
   "815b554b6c3a7923": "2026-10-16T05:33:23.971950+00:00",
-  "2a59ef7e84c4c6dc": "2026-10-16T05:33:23.971950+00:00"
+  "2a59ef7e84c4c6dc": "2026-10-16T05:33:23.971950+00:00",
+  "bca27301a9300e22": "2026-10-16T05:38:23.993208+00:00",
+  "4de059f0a2d8ebeb": "2026-10-16T05:38:23.993208+00:00",
+  "5b0a6526f043fa42": "2026-10-16T05:38:23.993208+00:00",
+  "4101ea5b8a62367d": "2026-10-16T05:38:23.993208+00:00"
  },
  "recent": [
   {
@@ -11920,6 +11924,48 @@
    "score": 6,
    "ts": "2026-10-16T05:33:23.971950+00:00",
    "title_ru": "MSCI заморозил некоторые изменения индекса Турции, предупреждая о возможном понижении рейтинга рынка"
+  },
+  {
+   "title": "China Builds Gas Buffer for Winter as Iran War Heightens Risk",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-16/china-builds-gas-buffer-for-winter-as-iran-war-heightens-risk",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T05:38:23.993208+00:00",
+   "title_ru": "Китай строит газовый буфер на зиму, поскольку война с Ираном повышает риск",
+   "lead": "China has stockpiled enough natural gas to meet winter demand, according to analysts, as importers acted early to build supplies in anticipation of price spikes from the Iran war.",
+   "lead_ru": "По мнению аналитиков, Китай накопил достаточно природного газа для удовлетворения зимнего спроса, поскольку импортеры действовали рано, чтобы наращивать поставки в ожидании скачков цен после войны с Ираном.",
+   "tags": [
+    "gas",
+    "China"
+   ]
+  },
+  {
+   "title": "Oil heads for weekly gain with Mideast supply risks",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOY0FIVXBWc1k5eW1ObWUyOGNQS1NGZDA5anNoLVJmVDRoMGR0ZUM5aWdDYTFDX3lKN2dYbVlhZzhuTFUwcVo3N0xmTkpBNXJKV2JLVW9qUmdmNWdxaWFJVlFZLWVPVHJjZ0RTNUdYdGxoMk9RZms0aHpzQWlTVDd4LUNnQ1RKUlZmVkhFSS1FQlk5bWl1dkU2QTQ0bDA2dVdHVzMzcTlRZi00ZkM1THVWRFgzTnYtUm9id3pBM1BWeEI4ZVFqU1ltSDB2SQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T05:38:23.993208+00:00",
+   "title_ru": "Нефтяные головки для еженедельного прироста с рисками ближневосточных поставок",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "India's Yes Bank AT-1 ruling won't impact ratings despite earnings hit, S&P says",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPT2llclZtRUZMVlo3UkZqcnlOLV9nN2pqdW93aDF0RHlBMGJxTkNWZ2NUd3RxUXFES0xLT184a2xjOGMxRXUwc0FSaDEwdzRZckRwZGRQV3N3Z0sxbmhoZUpaMjFvQVJ5dkF4UVVlaFhVNWtHZllKRFRCVmQ4Mkdhdkd5WURaTEtBNzZEU2liT2NhTkZFTTloSlhGckhSelM4VmlvcFAwSUswZlh1bmo2MFJFMGh5cEMyYzVpTDIxZ1Qxdw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T05:38:23.993208+00:00",
+   "title_ru": "Решение Yes Bank AT-1 в Индии не повлияет на рейтинги, несмотря на снижение прибыли, сообщает S&P",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-15",
@@ -15002,11 +15048,11 @@
    "0001689498-26-000002",
    "0002090886-26-000012",
    "0001632063-26-000005",
+   "0001193125-26-423229",
    "0001522767-26-000206",
    "0001652149-26-000006",
-   "0001193125-26-423228",
-   "0001453368-26-000002",
    "0002058781-26-000003",
+   "0001453368-26-000002",
    "0001218363-26-000005",
    "0001531152-26-000073",
    "0001498287-26-000001",
@@ -15038,7 +15084,7 @@
    "0001193125-26-423227",
    "0001171520-26-000309",
    "0001628280-26-066035",
-   "0001193125-26-423229"
+   "0001193125-26-423228"
   ],
   "errors": {}
  }
