@@ -1,12 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "638d2c816d88d4c9": "2026-10-13T12:35:30.519918+00:00",
-  "b537b5b5addc77c5": "2026-10-13T12:35:30.519918+00:00",
-  "5486096310c659d3": "2026-10-13T12:35:30.519918+00:00",
-  "1a4dc2ee0536b9bb": "2026-10-13T12:35:30.519918+00:00",
-  "17ac6630856f2a7d": "2026-10-13T12:35:30.519918+00:00",
-  "db224d3e1fa51800": "2026-10-13T12:35:30.519918+00:00",
   "313dd99ebeae708a": "2026-10-13T12:45:30.531963+00:00",
   "7d294c65cd50f257": "2026-10-13T12:45:30.531963+00:00",
   "1a1876e2d8706928": "2026-10-13T12:45:30.531963+00:00",
@@ -1147,72 +1141,11 @@
   "9d5a9fef06c5a32e": "2026-10-16T12:34:26.411400+00:00",
   "fe8520421e6f09a0": "2026-10-16T12:34:26.411400+00:00",
   "cabb6d62bd555880": "2026-10-16T12:34:26.411400+00:00",
-  "203cebfc7cd2a635": "2026-10-16T12:34:26.411400+00:00"
+  "203cebfc7cd2a635": "2026-10-16T12:34:26.411400+00:00",
+  "22a39500d57a59dd": "2026-10-16T12:39:26.451995+00:00",
+  "7e4d03e7d6d851f0": "2026-10-16T12:39:26.451995+00:00"
  },
  "recent": [
-  {
-   "title": "Decline in Russian Crude Output Slowed in September, OPEC Says",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-13/decline-in-russian-crude-output-slowed-in-september-opec-says",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 8,
-   "ts": "2026-10-13T12:35:30.519918+00:00",
-   "title_ru": "Снижение добычи нефти в России в сентябре замедлилось, заявили в ОПЕК",
-   "lead": "The pace of decline in Russia’s crude production slowed in September as the country shipped more oil overseas, while its refiners remained under pressure.",
-   "lead_ru": "Темпы снижения добычи нефти в России замедлились в сентябре, поскольку страна поставляла больше нефти за границу, в то время как ее нефтеперерабатывающие заводы оставались под давлением.",
-   "tags": [
-    "нефть",
-    "Россия"
-   ]
-  },
-  {
-   "title": "Joint IMF – RFAs Press Release on the 11th High-Level RFA Dialogue",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOUkhvck16NjNsRk1vN3YyWGV4SG93M3lYdG05VzN2cTRZbFBqYWlqaTF0Mi16Q3hBTFNWNGFXSXV2N1ZlTjRhTHJHMjRQcHBKZDNVOWp5QklyeUxxLXEzbEtNV1BpR1dKdS0xT0VrZ3I4UGhIUmlEUGxETnBldUZPa25lYVFiTHAxekY5SjQ1M0J6RUtBb3o3azlOY0FYaUdxM1g0UWNhMnpCRVd4ckZtaFdaR2ZTbXc?oc=5",
-   "sources": [
-    "МВФ"
-   ],
-   "score": 5,
-   "ts": "2026-10-13T12:35:30.519918+00:00",
-   "title_ru": "Совместный пресс-релиз МВФ и РФМ об 11-м диалоге РФМ на высоком уровне"
-  },
-  {
-   "title": "The world economy is running hotter than expected",
-   "link": "https://www.ft.com/content/183ace53-2a89-43a9-88c1-9ea1e1b4437d?syn-25a6b1a6=1",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 4,
-   "ts": "2026-10-13T12:35:30.519918+00:00",
-   "title_ru": "Мировая экономика развивается сильнее, чем ожидалось",
-   "lead": "A statistical history of the IMF’s forecasts reveals a picture of higher growth and worse inflation",
-   "lead_ru": "Статистическая история прогнозов МВФ показывает картину более высоких темпов роста и худшей инфляции.",
-   "tags": [
-    "инфляция"
-   ]
-  },
-  {
-   "title": "Goldman Sachs Earnings: Equity Traders Top Estimates as Fixed Income Falls Short",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNQzRzMEpfTFlwMTltbUt2ejd2SGc4NWhZTm1NT09WSUdoQUhGb1VJR09WU05EeTNNVzRVdDdSUTlnX255NXp0MkVkemMzZEpSMzU0NmYzNWxaUThyaUJGeGRaTVVkeVFUNnlLNWdyb3UzU01HSVI3Qm1kbmtHNS16WG9DaUJfNm5VVTlpai05aWt3RDFuSlhreXJocV9YMElVTmVXMjhkUGNvUld2X1R5aEdqWWQxdw?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T12:35:30.519918+00:00",
-   "title_ru": "Прибыль Goldman Sachs: лучшие оценки трейдеров акциями, поскольку фиксированный доход не оправдывает ожиданий"
-  },
-  {
-   "title": "Can energy help Mexico in trade talks with Trump?",
-   "link": "https://www.ft.com/content/73257952-844b-4f5f-a1cb-112ae9cb0249?syn-25a6b1a6=1",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T12:35:30.519918+00:00",
-   "title_ru": "Может ли энергетика помочь Мексике в торговых переговорах с Трампом?",
-   "lead": "It is the sector where the US runs its largest surplus with its southern neighbour totalling about $25bn last year",
-   "lead_ru": "Это сектор, в котором США имеют самый большой профицит по сравнению со своим южным соседом, составивший в прошлом году около 25 миллиардов долларов."
-  },
   {
    "title": "Brazil Analysts Cut Rate Bets as Bolsonaro Tops Polls",
    "link": "https://www.bloomberg.com/news/articles/2026-10-13/brazil-economists-cut-selic-bets-as-bolsonaro-leads-runoff-polls",
@@ -12181,6 +12114,21 @@
     "Fed",
     "ECB"
    ]
+  },
+  {
+   "title": "Ueda ‘Can’t Tolerate’ Underlying Inflation Further Over 2%",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-16/boj-s-ueda-can-t-tolerate-underlying-inflation-further-over-2",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-16T12:39:26.451995+00:00",
+   "title_ru": "Уэда «не может терпеть» базовую инфляцию, превышающую 2%",
+   "lead": "Bank of Japan Governor Kazuo Ueda said he “can’t tolerate” underlying inflation rising further above 2%.",
+   "lead_ru": "Глава Банка Японии Кадзуо Уэда сказал, что он «не может терпеть» базовую инфляцию, поднимающуюся выше 2%.",
+   "tags": [
+    "inflation"
+   ]
   }
  ],
  "last_digest": "2026-10-15",
@@ -15284,11 +15232,10 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-16T11:39:26.416483+00:00",
+  "checked": "2026-10-16T12:39:26.451995+00:00",
   "sec_seen": [
    "0001078942-26-000018",
    "0001887782-26-000009",
-   "0001652149-26-000006",
    "0001193125-26-423224",
    "0002004903-26-000006",
    "0001193125-26-423229",
@@ -15303,14 +15250,13 @@
    "0002063872-26-000008",
    "0001213900-26-110031",
    "0001628280-26-066045",
-   "0001193125-26-423227",
    "0001689498-26-000002",
+   "0001193125-26-423227",
    "0001193125-26-423228",
    "0001632063-26-000005",
    "0001422978-26-000018",
    "0001593199-26-000005",
    "0001961877-26-000049",
-   "0001201490-26-000004",
    "0001193125-26-423187",
    "0001593199-26-000004",
    "0001242654-26-000016"
