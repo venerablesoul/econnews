@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "f6f16ff92c4854bc": "2026-10-13T13:45:30.544998+00:00",
-  "de38126b2ebc19ef": "2026-10-13T13:45:30.544998+00:00",
   "077615dabb7ffbf6": "2026-10-13T13:55:30.524585+00:00",
   "3c03c77b76285046": "2026-10-13T13:55:30.524585+00:00",
   "7c9911cfef643590": "2026-10-13T14:05:30.537019+00:00",
@@ -1162,31 +1160,6 @@
   "6873cd80065e1148": "2026-10-16T13:44:26.439612+00:00"
  },
  "recent": [
-  {
-   "title": "Intergovernmental Group of Twenty-Four on International Monetary Affairs and Development",
-   "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNYUpmX2hqeXVHYU1ueUF1V21IVjZJdTJlaWtDR2NEVThKeFA5c0hNU1RVTGxVMUVwUk45bkoxZjZqdjFaZVlKTXdFMWNHLUYtZFhpcm9weE0tUXVfNW5KMzBjOFpFeHRWMVY0SVRObmtKVnZMa09fWGNETEhpNTlLby1pM2dnamlJdHhCbUUzTnNLV3ZLU3FTU3lWeE9STFA3TE5pNVZiT0FGRG5BSWhWTGxrNEJOcmxyVHlDUzQweW9kT0lBaTRwSjRVMzVRMUFhSHZKVXFoRWRvQ3VaTFQ3MjNB?oc=5",
-   "sources": [
-    "МВФ"
-   ],
-   "score": 4,
-   "ts": "2026-10-13T13:45:30.544998+00:00",
-   "title_ru": "Межправительственная группа двадцати четырех по международным валютным вопросам и развитию"
-  },
-  {
-   "title": "Senegal’s Quickfire Debt Workout Plan Is Already Running Into Speedbumps",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-13/senegal-s-quickfire-debt-workout-plan-is-already-running-into-speedbumps",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T13:45:30.544998+00:00",
-   "title_ru": "План быстрого реагирования на долги Сенегала уже сталкивается с препятствиями",
-   "lead": "Senegal’s year-end target to finalize a deal with the International Monetary Fund and reach a debt-relief agreement with bondholders is already facing delays, according to people familiar with the situation.",
-   "lead_ru": "По словам людей, знакомых с ситуацией, цель Сенегала на конец года завершить сделку с Международным валютным фондом и достичь соглашения о списании долга с держателями облигаций уже сталкивается с задержками.",
-   "tags": [
-    "облигации"
-   ]
-  },
   {
    "title": "UnitedHealth Raises 2026 Forecast as Cost Pressures Ease",
    "link": "https://www.bloomberg.com/news/videos/2026-10-13/unitedhealth-raises-2026-forecast-as-cost-pressures-ease-video",
@@ -14409,6 +14382,22 @@
    },
    {
     "src": "sec",
+    "id": "f0dac97fec6ae297",
+    "ticker": "FERG",
+    "company": "Ferguson Enterprises Inc. /DE/",
+    "who": "Kevin Michael Murphy",
+    "role": "See Remarks",
+    "type": "sell",
+    "value": 549844,
+    "shares": 2461,
+    "price": 223.42,
+    "plan": true,
+    "date": "2026-10-15",
+    "disclosed": "2026-10-16",
+    "link": "https://www.sec.gov/Archives/edgar/data/2011641/000198461426000004/0001984614-26-000004-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "98da5e40af377ecf",
     "ticker": "AFL",
     "company": "AFLAC INC",
@@ -15436,21 +15425,27 @@
   },
   "checked": "2026-10-16T13:39:26.455902+00:00",
   "sec_seen": [
-   "0001801339-26-000015",
    "0001078942-26-000018",
    "0000313927-26-000334",
-   "0001628280-26-066045",
-   "0002127484-26-000021",
+   "0001984614-26-000004",
+   "0001984020-26-000004",
+   "0001984156-26-000003",
+   "0000919574-26-007000",
+   "0001801339-26-000015",
+   "0002030386-26-000004",
    "0000313927-26-000332",
-   "0001961877-26-000049",
-   "0001104659-26-116445",
+   "0002074304-26-000004",
    "0002013812-26-000024",
-   "0001213900-26-110031",
-   "0000313927-26-000330",
    "0001493152-26-047334",
    "0001547475-26-000019",
-   "0000919574-26-007000",
-   "0001422978-26-000018"
+   "0001213900-26-110031",
+   "0001422978-26-000018",
+   "0001984098-26-000003",
+   "0001572806-26-000007",
+   "0001104659-26-116445",
+   "0001984142-26-000004",
+   "0001984100-26-000005",
+   "0000313927-26-000330"
   ],
   "errors": {}
  }
