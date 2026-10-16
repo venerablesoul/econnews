@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "769c8d748107c050": "2026-10-13T21:49:08.661162+00:00",
-  "ec7fd528598f3f9b": "2026-10-13T21:49:08.661162+00:00",
-  "a726c20ae3c39e57": "2026-10-13T21:49:08.661162+00:00",
-  "ddd15c47c7436241": "2026-10-13T21:49:08.661162+00:00",
   "2bc1cf592e278a36": "2026-10-13T22:19:08.634017+00:00",
   "4f7eaffd190d7c60": "2026-10-13T22:19:08.634017+00:00",
   "3b48f60ae1c43ef4": "2026-10-13T22:19:08.634017+00:00",
@@ -1143,52 +1139,10 @@
   "7c20d250f331e348": "2026-10-16T21:24:55.606793+00:00",
   "83a3a757b029ef47": "2026-10-16T21:24:55.606793+00:00",
   "3d1da8446c04adeb": "2026-10-16T21:34:55.536616+00:00",
-  "f0144117839768be": "2026-10-16T21:34:55.536616+00:00"
+  "f0144117839768be": "2026-10-16T21:34:55.536616+00:00",
+  "130882a2db80c9c5": "2026-10-16T21:49:55.587692+00:00"
  },
  "recent": [
-  {
-   "title": "Fed's Collins Says Rates Will Likely Need to Rise More",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-13/fed-s-collins-says-rates-will-likely-need-to-rise-more-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-13T21:49:08.661162+00:00",
-   "title_ru": "Коллинз из ФРС говорит, что ставки, вероятно, придется еще повысить",
-   "lead": "Federal Reserve Bank of Boston President Susan Collins says interest rates will likely need to rise more before the end of the year to help rein in inflation during a banking conference hosted by the Boston Fed. (Source…",
-   "lead_ru": "Президент Федерального резервного банка Бостона Сьюзан Коллинз заявила, что процентные ставки, вероятно, придется еще больше повысить до конца года, чтобы помочь обуздать инфляцию во время банковской конференции, организованной Федеральным резервным банком Бостона. (Источник…",
-   "tags": [
-    "ФРС",
-    "ставки",
-    "инфляция"
-   ]
-  },
-  {
-   "title": "Big Take: How India’s Options Market Imploded",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-13/big-take-how-india-s-options-market-imploded-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T21:49:08.661162+00:00",
-   "title_ru": "Большой вывод: как обрушился рынок опционов в Индии",
-   "lead": "Millions chased fast profits through complex trades. It ended with billions lost. How India’s options market unraveled and where retail traders go from here. (Source: Bloomberg)",
-   "lead_ru": "Миллионы гонялись за быстрой прибылью посредством сложных сделок. Это закончилось потерей миллиардов. Как развалился индийский рынок опционов и куда дальше пойдут розничные трейдеры. (Источник: Блумберг)"
-  },
-  {
-   "title": "Bitcoin slides below $40,000 after China curbs",
-   "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1XWDdjaTR2Yi1mS0habzJUWGsxOVY2X254Mnc0YXgwZURiZmhtRjR6UVZ1YXlYUzNmdWRlb01SRmFQQW93N25jRGRuUkFNb2dJeHlLVmotZzZjS2t4?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T21:49:08.661162+00:00",
-   "title_ru": "Биткоин упал ниже $40 000 после ограничений Китая",
-   "tags": [
-    "Китай",
-    "крипта"
-   ]
-  },
   {
    "title": "Tech Stocks: Cracks Are Starting to Appear in the AI Trade",
    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPelNEYkVUUUNaLVE4RUl2c1F6czBWRVVLdHdmaFFCVV9NZ0lON2ltdHo0NUlJYmVJbURKS1NTOHlxanU0YXotRkRvZ2dhSDREYm5BREF4alprWi1NQ08tNDREa3BJa0VkbGsxOGF4RzBYb0YyTDVYeVVmX3AtUG92eXNTRGY0OXpYQ2pBSDNuakx0MkYzeWhha3dNTEQtNnlLaUJZZ3M5c0tfMkxmVVhhQg?oc=5",
@@ -14209,6 +14163,22 @@
    },
    {
     "src": "sec",
+    "id": "8d1886b928b6a6d6",
+    "ticker": "LIFE",
+    "company": "Ethos Technologies Inc.",
+    "who": "Peter George Colis",
+    "role": "CEO",
+    "type": "sell",
+    "value": 4607379,
+    "shares": 120000,
+    "price": 38.39,
+    "plan": true,
+    "date": "2026-10-16",
+    "disclosed": "2026-10-16",
+    "link": "https://www.sec.gov/Archives/edgar/data/2089362/000208936226000021/0002089362-26-000021-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "a62608ea7a58d5bf",
     "ticker": "EDRY",
     "company": "EuroDry Ltd.",
@@ -14545,6 +14515,22 @@
    },
    {
     "src": "sec",
+    "id": "707b8c624d2a6f4f",
+    "ticker": "LIFE",
+    "company": "Ethos Technologies Inc.",
+    "who": "Lingke Wang",
+    "role": "President",
+    "type": "sell",
+    "value": 4538734,
+    "shares": 118333,
+    "price": 38.36,
+    "plan": true,
+    "date": "2026-10-15",
+    "disclosed": "2026-10-16",
+    "link": "https://www.sec.gov/Archives/edgar/data/2089263/000208926326000018/0002089263-26-000018-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "98da5e40af377ecf",
     "ticker": "AFL",
     "company": "AFLAC INC",
@@ -14782,6 +14768,38 @@
     "date": "2026-10-14",
     "disclosed": "2026-10-16",
     "link": "https://www.sec.gov/Archives/edgar/data/1277392/000122520826008437/0001225208-26-008437-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "1526a621c9f2f5fd",
+    "ticker": "SAH",
+    "company": "SONIC AUTOMOTIVE INC",
+    "who": "Rusnak Paul P.",
+    "role": "10% owner",
+    "type": "buy",
+    "value": 752044,
+    "shares": 12555,
+    "price": 59.9,
+    "plan": false,
+    "date": "2026-10-14",
+    "disclosed": "2026-10-16",
+    "link": "https://www.sec.gov/Archives/edgar/data/1460471/000146047126000009/0001460471-26-000009-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "18a6ab5cb9682608",
+    "ticker": "CRSP",
+    "company": "CRISPR Therapeutics AG",
+    "who": "Simeon George",
+    "role": "Director",
+    "type": "sell",
+    "value": 720373,
+    "shares": 14514,
+    "price": 49.63,
+    "plan": true,
+    "date": "2026-10-14",
+    "disclosed": "2026-10-16",
+    "link": "https://www.sec.gov/Archives/edgar/data/1674416/000119312526424317/0001193125-26-424317-index.htm"
    },
    {
     "src": "sec",
@@ -15799,46 +15817,52 @@
   },
   "checked": "2026-10-16T20:49:55.642309+00:00",
   "sec_seen": [
-   "0001072627-26-000058",
    "0001628280-26-066174",
    "0001628280-26-066175",
    "0001628280-26-066186",
+   "0001061630-26-000085",
    "0001193125-26-424289",
    "0001628280-26-066178",
    "0001924023-26-000003",
+   "0001460471-26-000009",
    "0000055135-26-000165",
+   "0002116060-26-000002",
    "0001628280-26-066185",
-   "0001193125-26-424283",
-   "0001193125-26-424285",
-   "0001072627-26-000057",
    "0001591094-26-000004",
+   "0001193125-26-424285",
+   "0001193125-26-424283",
+   "0001061630-26-000089",
    "0001193125-26-424280",
+   "0002089263-26-000018",
+   "0001061630-26-000087",
    "0001628280-26-066183",
    "0001628280-26-066182",
    "0001974777-26-000020",
-   "0001193125-26-424273",
+   "0001061630-26-000086",
    "0001628280-26-066180",
    "0001193125-26-424281",
-   "0000899751-26-000077",
    "0001193125-26-424287",
+   "0000009389-26-000126",
    "0001193125-26-424288",
    "0001628280-26-066172",
    "0001628280-26-066179",
+   "0000009389-26-000124",
    "0001628280-26-066177",
    "0001628280-26-066173",
    "0001193125-26-424286",
    "0001548312-26-000051",
    "0001870987-26-000029",
    "0001193125-26-424279",
+   "0001061630-26-000088",
    "0001098231-26-000012",
    "0001628280-26-066176",
    "0001193125-26-424284",
+   "0002089362-26-000021",
    "0002129321-26-000017",
+   "0001193125-26-424317",
    "0001822289-26-000012",
    "0001839017-26-000003",
    "0001628280-26-066184",
-   "0002114165-26-000002",
-   "0001193125-26-424278",
    "0002156505-26-000006",
    "0001628280-26-066181"
   ],
