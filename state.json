@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "4dc68ea4d5602e72": "2026-10-13T02:44:38.018385+00:00",
-  "2c66d3a75903adeb": "2026-10-13T02:44:38.018385+00:00",
-  "22b269d26d697360": "2026-10-13T02:44:38.018385+00:00",
-  "b425917d86c03ef6": "2026-10-13T02:44:38.018385+00:00",
   "2de880ed4d16b8e2": "2026-10-13T02:54:38.023049+00:00",
   "ee0dd2d102d31fa6": "2026-10-13T02:54:38.023049+00:00",
   "16d0ed626e55dc42": "2026-10-13T02:54:38.023049+00:00",
@@ -1119,60 +1115,10 @@
   "0e7ff21c3dd31995": "2026-10-16T02:23:24.023402+00:00",
   "bc789703137a88ff": "2026-10-16T02:28:23.977136+00:00",
   "ce2290b28f505873": "2026-10-16T02:33:23.962915+00:00",
-  "98c1c1acee618366": "2026-10-16T02:38:24.034599+00:00"
+  "98c1c1acee618366": "2026-10-16T02:38:24.034599+00:00",
+  "0c4f1bf2a498a851": "2026-10-16T02:48:23.991527+00:00"
  },
  "recent": [
-  {
-   "title": "Indian Bonds Face Double Blow From Rupee Defense, Inflation",
-   "link": "https://www.bloomberg.com/news/newsletters/2026-10-13/indian-bonds-face-double-blow-from-rupee-defense-inflation",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-13T02:44:38.018385+00:00",
-   "title_ru": "Индийские облигации столкнулись с двойным ударом из-за защиты рупии и инфляции",
-   "lead": "Benchmark 10-year yields jumped to their highest since March 2023 on Monday.",
-   "lead_ru": "В понедельник доходность эталонных 10-летних облигаций подскочила до самого высокого уровня с марта 2023 года.",
-   "tags": [
-    "инфляция",
-    "облигации"
-   ]
-  },
-  {
-   "title": "Japan's wholesale inflation remains elevated, keeps alive BOJ rate-hike view",
-   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOV3hkUE0tV0pBM20wbEUtQTFuM011aHFUTWVPRDI3VEJ3d2lPaTRzNW1iYl9UeGRMaVE4VjhkWEV2OF9rVkxmMFZBd0FXMElhYVNoYkN3UFBBdnJ1b0RlRmliQ1ZZYzBpcDN0ZFhnYVl3dThzRHp6aXBSdGp3M0J2bW9wa3RELWQ0RTBmeXhDVkNjV0NVMUwyYlNjUWRrdkc4YjczQVRBYXVZMmhCZEFSdFMzZmdHZFFxaS1NbTBGaXF4Z2NJcjB6Zw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-13T02:44:38.018385+00:00",
-   "title_ru": "Оптовая инфляция в Японии остается высокой, что подтверждает мнение Банка Японии о повышении ставок",
-   "tags": [
-    "инфляция"
-   ]
-  },
-  {
-   "title": "Top economies heading for biggest budget deficits since Covid, IMF warns",
-   "link": "https://www.ft.com/content/c877685b-0f4a-4aa8-b52b-33f4babd1acb?syn-25a6b1a6=1",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 5,
-   "ts": "2026-10-13T02:44:38.018385+00:00",
-   "title_ru": "Ведущие экономики ждут самый большой бюджетный дефицит со времен Covid, предупреждает МВФ",
-   "lead": "At its annual meeting, the fund calls for ‘urgent’ action to rebuild public finances",
-   "lead_ru": "На своем ежегодном собрании фонд призывает к «срочным» действиям по восстановлению государственных финансов."
-  },
-  {
-   "title": "Shell calls Australia's gas reserve plan a 'sledgehammer' that risks market failure",
-   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPV3o4Y181VTFwdU9mNFBnSE4xWDVfRWozOEItaU9NdVlwODBIYlQ2Q05iNWRyOGtwN2M0US1jZ2U1Z2NrRHRFTnVsZEJfbENqNzdYS1EwVUtJMnFVRG5GMlBNM2F3SllZQlBIUldWUnpGNFlWQ1VVVWFoU1BQWVR3d0R4N2g0UkpYRk9Xb2xMc0k0dzQ1QkdtdmZzRFFhQkV2QXJxVEQwRlp4cUhlenV5bmg0NmZhUkxqZHBVWi00aVRObUJXWE5TSXZ3?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-13T02:44:38.018385+00:00",
-   "title_ru": "Shell называет план по запасам газа в Австралии «кувалдой», которая рискует провалить рынок"
-  },
   {
    "title": "South Korea's Lee says country cannot avoid raising interest rates",
    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNU0hXdVlXbkVhZGhjT1p6UXlndU52X2gwbVZod1BQbUNjM2stUlFvMHFyaEZsRHJWb0M1ekhCbTY0UFpEdEhZaWxZMHpncWFxRGdrUzhBcUFBcGNqYmtxX1JabV9sWnRfaEZSeUV2b3lhTVI5QVVNc0ViaVp0S1laRWxKd0s3YXc5NTFCYzJpTGh4dGFTM29vOHg1UENVMDNqeHdlQWRXMVBHS3pyR2RnTmVVTGIzbWh0bnl5Vg?oc=5",
@@ -11826,6 +11772,19 @@
    "lead_ru": "Экономика Китая движется ко второму кварталу подряд роста ниже целевого показателя 2026 года, установленного лидерами страны, при этом недавние меры стимулирования, принятые политиками, пришли слишком поздно, чтобы оказать заметное влияние.",
    "tags": [
     "China"
+   ]
+  },
+  {
+   "title": "Jakarta stocks plunge 11% as MSCI set to drop Indonesia from indexes",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPTGZDclBEV0w3ZFJ3bE8tckwwTE1YTXBXTG1GdGNfN2Vkb1BsaXFoZVo1QUF4YUhzanBOM05HNmR6X1gyalBGR05HQk5NM1VhY0VGbUhqb0dIN2txQklscWtMaVd3MVE3QTdISTRVbDZXdEpXa25EUHpZejdrZ1ozdFlOOTBBT2VfT3VFcmh5UmpjRWFoelZTUEZKOTl5UEhrc1dpWVQ3ZUpMd1NmVE8ybA?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T02:48:23.991527+00:00",
+   "title_ru": "Акции в Джакарте упали на 11%, поскольку MSCI собирается исключить Индонезию из индексов",
+   "tags": [
+    "markets"
    ]
   }
  ],
