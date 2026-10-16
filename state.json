@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "4376b32053590856": "2026-10-13T09:35:03.010841+00:00",
-  "78f0db725f2c74a2": "2026-10-13T09:35:03.010841+00:00",
   "976bf4e5c96d2611": "2026-10-13T09:45:02.970210+00:00",
   "7cb4209dd2caf892": "2026-10-13T09:55:02.987819+00:00",
   "48e9b07beb7b4db0": "2026-10-13T09:55:02.987819+00:00",
@@ -1143,33 +1141,11 @@
   "f2a4b6d6c08a9767": "2026-10-16T09:23:52.157385+00:00",
   "9fbe11e873eb5751": "2026-10-16T09:23:52.157385+00:00",
   "91b659551b94a71c": "2026-10-16T09:23:52.157385+00:00",
-  "7496a9925710aa7b": "2026-10-16T09:33:52.089024+00:00"
+  "7496a9925710aa7b": "2026-10-16T09:33:52.089024+00:00",
+  "395cfcd2470e9219": "2026-10-16T09:38:52.038387+00:00",
+  "b73bb0973b0c25fa": "2026-10-16T09:38:52.038387+00:00"
  },
  "recent": [
-  {
-   "title": "AI Selloff Drags Emerging Stocks Down, Weighs on Currency Gauge",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-13/ai-selloff-drags-emerging-stocks-down-weighs-on-currency-gauge",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-13T09:35:03.010841+00:00",
-   "title_ru": "Распродажа ИИ тянет вниз акции развивающихся стран и оказывает давление на валютный курс",
-   "lead": "The deepening selloff in shares linked to artificial intelligence pushed the key emerging-market equity index down for a second day and triggered a decline in currencies of Asia’s technology hubs.",
-   "lead_ru": "Углубляющаяся распродажа акций, связанная с искусственным интеллектом, привела к падению ключевого индекса акций развивающихся рынков второй день подряд и спровоцировала падение валют технологических центров Азии.",
-   "tags": [
-    "рынки"
-   ]
-  },
-  {
-   "title": "What to expect from Europe’s most valuable company before it kicks off tech earnings",
-   "link": "https://www.marketwatch.com/story/what-to-expect-from-europes-most-valuable-company-before-it-kicks-off-tech-earnings-a6272cc0?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-13T09:35:03.010841+00:00"
-  },
   {
    "title": "Meloni’s Budget Heads to Italian Cabinet Amid ‘Storm Clouds’",
    "link": "https://www.bloomberg.com/news/articles/2026-10-13/meloni-s-budget-heads-to-italian-cabinet-amid-storm-clouds",
@@ -11962,6 +11938,36 @@
    "score": 3,
    "ts": "2026-10-16T09:33:52.089024+00:00",
    "title_ru": "Врачи и юристы присоединяются к экономике искусственного интеллекта с оплатой 400 долларов в час"
+  },
+  {
+   "title": "Ship attack reports near Hormuz reach record high as oil exports slow",
+   "link": "https://www.bbc.co.uk/news/articles/cmde8dpg8g0no?at_medium=RSS&at_campaign=rss",
+   "sources": [
+    "BBC"
+   ],
+   "score": 4,
+   "ts": "2026-10-16T09:38:52.038387+00:00",
+   "title_ru": "Сообщения о нападениях на корабли возле Ормуза достигли рекордного уровня, поскольку экспорт нефти замедляется",
+   "lead": "BBC Verify analysis of data from a UK maritime agency shows 12 vessels were struck in a week.",
+   "lead_ru": "Анализ BBC Verify данных морского агентства Великобритании показывает, что за неделю пострадало 12 судов.",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "Indonesia Rate-Hike Bets Grow as MSCI Alarm Pressures Rupiah",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-16/indonesia-rate-hike-bets-grow-as-msci-alarm-pressures-rupiah",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T09:38:52.038387+00:00",
+   "title_ru": "Ставки на повышение ставок в Индонезии растут, поскольку сигнал тревоги MSCI оказывает давление на рупию",
+   "lead": "Bank Indonesia faces pressure to raise interest rates next week after MSCI Inc. warned it may reclassify the country’s stock market, according to analysts.",
+   "lead_ru": "По мнению аналитиков, Банк Индонезии столкнется с давлением с целью повышения процентных ставок на следующей неделе после того, как MSCI Inc. предупредила, что может реклассифицировать фондовый рынок страны.",
+   "tags": [
+    "rates"
+   ]
   }
  ],
  "last_digest": "2026-10-15",
@@ -15041,12 +15047,11 @@
    "0001568238-26-000001",
    "0001593199-26-000004",
    "0001218363-26-000005",
-   "0001778564-26-000185",
    "0001951059-26-000018",
    "0001628280-26-066035",
    "0001895106-26-000021",
-   "0001522767-26-000210",
    "0001104659-26-116322",
+   "0001522767-26-000210",
    "0001225208-26-008428",
    "0001522767-26-000208",
    "0001689498-26-000002",
@@ -15059,6 +15064,7 @@
    "0001798757-26-000009",
    "0001895111-26-000020",
    "0001581760-26-000171",
+   "0001525358-26-000034",
    "0001242654-26-000016",
    "0001522767-26-000206",
    "0001193125-26-423227",
@@ -15077,7 +15083,7 @@
    "0001193125-26-423158",
    "0001193125-26-423224",
    "0001593199-26-000005",
-   "0001525358-26-000034",
+   "0001778564-26-000185",
    "0001354116-26-000001",
    "0002058769-26-000006",
    "0001222287-26-000028",
