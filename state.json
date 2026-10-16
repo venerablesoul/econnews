@@ -1116,7 +1116,11 @@
   "cc3650bac9f1c332": "2026-10-16T03:23:24.082170+00:00",
   "bd555117d089754f": "2026-10-16T03:23:24.082170+00:00",
   "0252cd2d6d34b473": "2026-10-16T03:23:24.082170+00:00",
-  "3a1bcbc14a02e44b": "2026-10-16T03:28:23.977388+00:00"
+  "3a1bcbc14a02e44b": "2026-10-16T03:28:23.977388+00:00",
+  "81f96c10c8218294": "2026-10-16T03:33:24.068467+00:00",
+  "02f6ef3e9bddc810": "2026-10-16T03:33:24.068467+00:00",
+  "e22c90085fd7cad5": "2026-10-16T03:33:24.068467+00:00",
+  "dc063ed3d03e67bf": "2026-10-16T03:33:24.068467+00:00"
  },
  "recent": [
   {
@@ -11774,6 +11778,52 @@
    "score": 5,
    "ts": "2026-10-16T03:28:23.977388+00:00",
    "title_ru": "Пресс-брифинг по финансовому мониторингу МВФ"
+  },
+  {
+   "title": "BOE’s Bailey Sees Little Evidence of Second-Round Inflation",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-16/boe-s-bailey-sees-little-evidence-of-second-round-inflation",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-16T03:33:24.068467+00:00",
+   "title_ru": "BOE's Bailey видит мало доказательств инфляции второго раунда",
+   "lead": "Bank of England Governor Andrew Bailey said there is little evidence yet of inflation becoming embedded in UK price and wage-setting.",
+   "lead_ru": "Управляющий Банка Англии Эндрю Бейли сказал, что пока мало доказательств того, что инфляция внедряется в установление цен и заработной платы в Великобритании.",
+   "tags": [
+    "inflation"
+   ]
+  },
+  {
+   "title": "Sitharaman Says China’s Trade Barriers Biggest Hurdle to Ties",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-16/sitharaman-says-china-s-trade-barriers-biggest-hurdle-to-ties",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-16T03:33:24.068467+00:00",
+   "title_ru": "Ситхараман говорит, что торговые барьеры Китая являются самым большим препятствием для связей",
+   "lead": "India faces growing trade imbalances with China as Beijing’s non-tariff barriers continue to restrict access for Indian products, Finance Minister Nirmala Sitharaman said on Friday.",
+   "lead_ru": "Индия сталкивается с растущими торговыми дисбалансами с Китаем, поскольку нетарифные барьеры Пекина продолжают ограничивать доступ к индийской продукции, заявила в пятницу министр финансов Нирмала Ситхараман.",
+   "tags": [
+    "China",
+    "tariffs"
+   ]
+  },
+  {
+   "title": "Indonesia Stocks Sink as MSCI Weighs Index Removal",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-16/indonesia-stocks-sink-as-msci-weighs-index-removal-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T03:33:24.068467+00:00",
+   "title_ru": "Индонезийские акции падают, поскольку MSCI взвешивает удаление индекса",
+   "lead": "Indonesian stocks tumbled after MSCI Inc. said the country no longer merits emerging-market status, risking an ejection from its global indexes and triggering fears of foreign capital flight.",
+   "lead_ru": "Индонезийские акции упали после того, как MSCI Inc. заявила, что страна больше не заслуживает статуса развивающегося рынка, рискуя выбросом из своих глобальных индексов и вызывая опасения по поводу оттока иностранного капитала.",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-15",
@@ -11813,7 +11863,7 @@
   "2026-10-15-21"
  ],
  "calendar": {
-  "fetched": "2026-10-15T21:32:36.426665+00:00",
+  "fetched": "2026-10-16T03:33:24.068467+00:00",
   "events": [
    {
     "title": "Bank Holiday",
@@ -14856,11 +14906,11 @@
    "0001689498-26-000002",
    "0002090886-26-000012",
    "0001632063-26-000005",
-   "0001193125-26-423229",
    "0001522767-26-000206",
    "0001652149-26-000006",
-   "0002058781-26-000003",
+   "0001193125-26-423228",
    "0001453368-26-000002",
+   "0002058781-26-000003",
    "0001218363-26-000005",
    "0001531152-26-000073",
    "0001498287-26-000001",
@@ -14892,7 +14942,7 @@
    "0001193125-26-423227",
    "0001171520-26-000309",
    "0001628280-26-066035",
-   "0001193125-26-423228"
+   "0001193125-26-423229"
   ],
   "errors": {}
  }
