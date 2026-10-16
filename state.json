@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "fc0b54bfbb97cc3a": "2026-10-13T08:25:02.990402+00:00",
   "b649ee41c44152df": "2026-10-13T08:35:02.981987+00:00",
   "382a45f77bca85d4": "2026-10-13T08:45:02.985699+00:00",
   "907eab31f22ac316": "2026-10-13T08:45:02.985699+00:00",
@@ -1144,7 +1143,9 @@
   "c01e8247e0636b3e": "2026-10-16T08:08:52.069851+00:00",
   "b17200efcec54a44": "2026-10-16T08:08:52.069851+00:00",
   "cadf79635cab9073": "2026-10-16T08:08:52.069851+00:00",
-  "23f3dfef68aa588c": "2026-10-16T08:08:52.069851+00:00"
+  "23f3dfef68aa588c": "2026-10-16T08:08:52.069851+00:00",
+  "c39ab4d1eae56c7f": "2026-10-16T08:23:52.047308+00:00",
+  "abfc44c41b4cfc20": "2026-10-16T08:28:52.065555+00:00"
  },
  "recent": [
   {
@@ -11988,6 +11989,16 @@
    ],
    "score": 1,
    "ts": "2026-10-16T08:08:52.069851+00:00"
+  },
+  {
+   "title": "IMF chief says AI risks may exceed opportunities without safeguards and ethical framework",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNS2IzOWJIRFRrNjFuc3M5M1RRQUNUS1dQcGVaSVhPa2lZVzd2a0JKamxsTFR4dU5QMThydUVyTks4bXhjM29fOE1oVWltNkVKcnk3ZFZEZmlmWXl5UlZDZXRfSmRfRTltdGU5dGdUbF9hSEI1Qi02R05ScVNvZVJ0V0xvelkxTmFsbXVvM1VjNWRCQU5FZUJXbnFQSUgtYlpxclUtbkV3ejNiVGs2V2pQOS1LNTN5TzZVb00xbGlBVQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-16T08:28:52.065555+00:00",
+   "title_ru": "Глава МВФ говорит, что риски ИИ могут превышать возможности без гарантий и этических рамок"
   }
  ],
  "last_digest": "2026-10-15",
