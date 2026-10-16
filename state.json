@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "13c6e02be1f332c7": "2026-10-13T22:29:08.604187+00:00",
-  "8be72b8d88b12e40": "2026-10-13T22:29:08.604187+00:00",
   "85b746b57ca91351": "2026-10-13T23:09:08.436044+00:00",
   "c6134f3489804647": "2026-10-13T23:29:08.412521+00:00",
   "d320602fc25e9d46": "2026-10-13T23:29:08.412521+00:00",
@@ -1139,41 +1137,10 @@
   "2c8e0f4cd7612664": "2026-10-16T21:54:55.613102+00:00",
   "fdd491c5fb7e26bc": "2026-10-16T22:04:55.628812+00:00",
   "a513b95c9c5f6773": "2026-10-16T22:04:55.628812+00:00",
-  "fcfdaf53beb60a53": "2026-10-16T22:09:55.603847+00:00"
+  "fcfdaf53beb60a53": "2026-10-16T22:09:55.603847+00:00",
+  "e3463be39d9cb97a": "2026-10-16T22:35:25.260257+00:00"
  },
  "recent": [
-  {
-   "title": "Asia Stocks to Gain on Signal for Fewer Fed Hikes: Markets Wrap",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-13/stock-market-today-dow-s-p-live-updates",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-13T22:29:08.604187+00:00",
-   "title_ru": "Азиатские акции вырастут на сигнале о меньшем повышении ставок ФРС: итоги рынков",
-   "lead": "Asian stocks looked set for broad gains on Wednesday after US equities recovered from session lows on signals that the Federal Reserve may not need to raise interest rates aggressively next year.",
-   "lead_ru": "Азиатские акции в среду выглядели настроенными на значительный рост после того, как акции США восстановились с сессионных минимумов на фоне сигналов о том, что Федеральной резервной системе, возможно, не понадобится агрессивно повышать процентные ставки в следующем году.",
-   "tags": [
-    "ФРС",
-    "ставки",
-    "рынки"
-   ]
-  },
-  {
-   "title": "Fed’s Lisa Cook Puts Off White House Hearing Over Trump’s Allegations",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-13/fed-s-lisa-cook-puts-off-white-house-hearing-over-trump-s-allegations",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T22:29:08.604187+00:00",
-   "title_ru": "Глава ФРС Лиза Кук откладывает слушания в Белом доме по поводу обвинений Трампа",
-   "lead": "Federal Reserve Governor Lisa Cook says she will be unable to attend a Nov. 5 hearing at the White House that’s part of a new investigation into mortgage fraud allegations by President Donald Trump.",
-   "lead_ru": "Управляющий Федеральной резервной системы Лиза Кук заявила, что не сможет присутствовать на слушаниях 5 ноября в Белом доме, которые являются частью нового расследования обвинений президента Дональда Трампа в мошенничестве с ипотекой.",
-   "tags": [
-    "ФРС"
-   ]
-  },
   {
    "title": "Lawyer for Fed's Cook denounces Trump's latest attempt to remove her",
    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNV2FUcXdjUFlhbzVNRWFtNXpFWnhJbkhXQXFqakhHUFlTUFZKcHVvMlNxb0RzZ2oyQTVBNUVTY1NQRUdkbUxvQlprZlhQclJxYS1pakFmakttb1VSUzlXTThNQ0sxZWJ0SEFrZmNQVHNzNW1PbDh2ejFqS1dfOS0xd2hlUTVEYXVmWEpBUlIwbTg4RzRvdnNFZzlNTktpS3ZTS0h4bGEtRQ?oc=5",
@@ -14920,6 +14887,22 @@
    },
    {
     "src": "sec",
+    "id": "261f3d5b728abb1c",
+    "ticker": "RDDT",
+    "company": "Reddit, Inc.",
+    "who": "Jennifer L. Wong",
+    "role": "COO",
+    "type": "sell",
+    "value": 9032837,
+    "shares": 60000,
+    "price": 150.55,
+    "plan": true,
+    "date": "2026-10-14",
+    "disclosed": "2026-10-16",
+    "link": "https://www.sec.gov/Archives/edgar/data/1713445/000166365126000023/0001663651-26-000023-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "01467fa79c5d1bae",
     "ticker": "INSW",
     "company": "International Seaways, Inc.",
@@ -15945,7 +15928,6 @@
    "0001560409-26-000011",
    "0001098231-26-000012",
    "0001061630-26-000086",
-   "0001628280-26-066181",
    "0001439288-26-000139",
    "0001815099-26-000010",
    "0002156505-26-000006",
@@ -15960,6 +15942,7 @@
    "0001437749-26-032849",
    "0000719955-26-000221",
    "0000009389-26-000124",
+   "0002006416-26-000019",
    "0001974777-26-000020",
    "0001839017-26-000003",
    "0002129321-26-000017",
@@ -15968,11 +15951,11 @@
    "0001061630-26-000087",
    "0001628280-26-066182",
    "0001439288-26-000138",
+   "0001663651-26-000023",
    "0002089263-26-000018",
-   "0001628280-26-066180",
    "0001061630-26-000088",
-   "0001591094-26-000004",
    "0001924023-26-000003",
+   "0001862209-26-000010",
    "0001628280-26-066184",
    "0001439288-26-000135",
    "0001776865-26-000026",
