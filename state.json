@@ -1157,7 +1157,10 @@
   "85cfdcd057f487b0": "2026-10-16T19:39:55.588664+00:00",
   "36be421291ae172a": "2026-10-16T19:39:55.588664+00:00",
   "f109e3e2bc194d5f": "2026-10-16T19:44:55.627493+00:00",
-  "4e6499830f533aa8": "2026-10-16T19:44:55.627493+00:00"
+  "4e6499830f533aa8": "2026-10-16T19:44:55.627493+00:00",
+  "48dc1cecb1e39729": "2026-10-16T19:49:55.632734+00:00",
+  "5e26d3feef23cc99": "2026-10-16T19:49:55.632734+00:00",
+  "6b384be0ab5e95d4": "2026-10-16T19:49:55.632734+00:00"
  },
  "recent": [
   {
@@ -12139,6 +12142,19 @@
    ],
    "score": 1,
    "ts": "2026-10-16T19:44:55.627493+00:00"
+  },
+  {
+   "title": "Trump’s Foreign Policy Takes a Toll on Canadian Oil Prices",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNcFU3cUxnTXRBODJfemVXV0dEeFBRaDFKeVd0OWZMNWtDeXJaYjBzNjdsa3ZpRDg0ZVlpaWFSOHQ5dkNad3dvQ0ltS0I1Z210SHRjaGxhUVJBZUUtZDZvLWVsRzdKTTdRVExzbThYR3Y3WmtvNXE5U0l6V2xXYkRWSWZiOGhmRk5sel9MRDZyZm9CeTc1Y09NYjlaanJON2JCTkVHVzhNcVFjbVEyLVE?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-16T19:49:55.632734+00:00",
+   "title_ru": "Внешняя политика Трампа негативно сказывается на ценах на канадскую нефть",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-16",
@@ -13089,6 +13105,36 @@
  "all_down_alerted": false,
  "trades": {
   "congress": [
+   {
+    "src": "house",
+    "who": "David J. Taylor",
+    "where": "House, OH-02",
+    "owner": "",
+    "ticker": "FITB",
+    "asset": "Fifth Third Bancorp - Common Stock",
+    "type": "buy",
+    "amin": 1001,
+    "amax": 15000,
+    "date": "2026-10-09",
+    "disclosed": "2026-10-15",
+    "link": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035660.pdf",
+    "id": "94c0348e2ee11df8"
+   },
+   {
+    "src": "house",
+    "who": "David J. Taylor",
+    "where": "House, OH-02",
+    "owner": "",
+    "ticker": "RPM",
+    "asset": "RPM International Inc. Common Stock",
+    "type": "buy",
+    "amin": 1001,
+    "amax": 15000,
+    "date": "2026-10-09",
+    "disclosed": "2026-10-15",
+    "link": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035660.pdf",
+    "id": "40d6e9f8c99dfd74"
+   },
    {
     "src": "house",
     "who": "Richard W. Allen",
@@ -15379,7 +15425,10 @@
    "20035648": "2026-10-14",
    "20035627": "2026-10-14",
    "20035652": "2026-10-14",
-   "20035651": "2026-10-14"
+   "20035651": "2026-10-14",
+   "9116378": "2026-10-14",
+   "20035637": "2026-10-15",
+   "20035660": "2026-10-15"
   },
   "queue": [],
   "ready": {
@@ -15387,20 +15436,19 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-16T18:44:55.703984+00:00",
+  "checked": "2026-10-16T19:49:55.632734+00:00",
   "sec_seen": [
    "0001437749-26-032788",
-   "0001213190-26-000023",
    "0001580502-26-000012",
+   "0001213190-26-000023",
    "0001292814-26-004946",
    "0001929185-26-000014",
    "0001193125-26-423979",
-   "0001213900-26-110188",
    "0002022936-26-000017",
+   "0001477932-26-006298",
    "0001437749-26-032791",
    "0001493152-26-047389",
    "0001862314-26-000014",
-   "0001292208-26-000012",
    "0001204034-26-000027",
    "0001794684-26-000016",
    "0000108985-26-000084",
