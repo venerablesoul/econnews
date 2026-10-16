@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "45a113cfd27c7d02": "2026-10-13T17:05:30.537977+00:00",
   "4d67d46f24799935": "2026-10-13T17:15:30.531970+00:00",
   "d515a47aab2bc35a": "2026-10-13T17:15:30.531970+00:00",
   "a85b12f5104fe9f4": "2026-10-13T17:25:30.550107+00:00",
@@ -1152,19 +1151,10 @@
   "52d96e4583113f7d": "2026-10-16T16:44:26.423178+00:00",
   "a927e57add6b24ec": "2026-10-16T16:44:26.423178+00:00",
   "fdf4639479d06f53": "2026-10-16T16:59:26.528949+00:00",
-  "45dcb3c5e5648ea3": "2026-10-16T16:59:26.528949+00:00"
+  "45dcb3c5e5648ea3": "2026-10-16T16:59:26.528949+00:00",
+  "643580cbe1e33104": "2026-10-16T17:09:55.612673+00:00"
  },
  "recent": [
-  {
-   "title": "Wells Fargo Earnings Beat as Strong Customers Keep Lid on Loan Losses",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPVktwei1DLTRrN19PR0hRdFFoUi1mQ2ZUSTY4WDctU3BnTENHbGhwY05QdUthN3dXZHU3cHZhT3I3T2MzY2VtRkhtR2syQzNZOVVhUzZZS1dUNXMtZWx4TURXNVM5ZklLWXBlSHJ3UHNFMWxJdFVKMnRGcnhCZTJfcTVBUzI0cUtpdHpUQlNEN0NyN2diREY3Y0V3MWZKRzYxcmIycnJaRWpmaHczdldEZV9R?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T17:05:30.537977+00:00",
-   "title_ru": "Прибыль Wells Fargo выросла, поскольку сильные клиенты контролируют потери по кредитам"
-  },
   {
    "title": "Bassman Warns of ‘Nightmare Scenario’ Amplifying US Bond Selloff",
    "link": "https://www.bloomberg.com/news/articles/2026-10-13/bassman-warns-of-nightmare-scenario-amplifying-us-bond-selloff",
@@ -12171,6 +12161,15 @@
    "tags": [
     "tariffs"
    ]
+  },
+  {
+   "title": "Here’s how the Fed should reveal its outlook for the economy",
+   "link": "https://www.marketwatch.com/story/heres-how-the-fed-should-reveal-its-outlook-for-the-economy-79629f25?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 2,
+   "ts": "2026-10-16T17:09:55.612673+00:00"
   }
  ],
  "last_digest": "2026-10-15",
@@ -15357,7 +15356,6 @@
   "checked": "2026-10-16T16:39:26.552957+00:00",
   "sec_seen": [
    "0001939410-26-000004",
-   "0001193125-26-423626",
    "0001193125-26-423645",
    "0001193125-26-423655",
    "0001476342-26-000004",
