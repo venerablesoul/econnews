@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "6676c3ee7afd4511": "2026-10-13T06:55:02.964919+00:00",
   "dea4294ef5cb9ada": "2026-10-13T07:05:02.963360+00:00",
   "66c42f413965ad08": "2026-10-13T07:15:02.975165+00:00",
   "9815263b0e9083cc": "2026-10-13T07:25:02.955877+00:00",
@@ -1143,24 +1142,10 @@
   "8715604258485543": "2026-10-16T06:48:52.226398+00:00",
   "cb5f57e563c970f5": "2026-10-16T06:53:52.086191+00:00",
   "2295a262844e3349": "2026-10-16T06:53:52.086191+00:00",
-  "d8ec1922043eec34": "2026-10-16T06:53:52.086191+00:00"
+  "d8ec1922043eec34": "2026-10-16T06:53:52.086191+00:00",
+  "911c6f14df530f96": "2026-10-16T07:03:52.096370+00:00"
  },
  "recent": [
-  {
-   "title": "Healey should ‘stay the course’ and repair UK finances, says top IMF economist",
-   "link": "https://www.theguardian.com/business/2026/oct/13/john-healey-uk-finances-imf-gdp-growth-forecast-2026",
-   "sources": [
-    "The Guardian"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T06:55:02.964919+00:00",
-   "title_ru": "Хили следует «держаться курса» и восстановить финансы Великобритании, говорит ведущий экономист МВФ",
-   "lead": "Fund upgrades UK’s GDP growth forecast for 2026 to 1.3%, but says it is likely to ‘edge down’ next year IMF warns global economy ‘could soon test the limits of resilience’ John Healey should “stay the course” and continue…",
-   "lead_ru": "Фонд повышает прогноз роста ВВП Великобритании на 2026 год до 1,3%, но говорит, что в следующем году он, скорее всего, «снизится». МВФ предупреждает, что мировая экономика «скоро может проверить пределы устойчивости».",
-   "tags": [
-    "ВВП"
-   ]
-  },
   {
    "title": "Альфа-банк стал акционером группы «Медси»",
    "link": "https://www.rbc.ru/business/13/10/2026/6accf5e2bebe89c22aa7946e",
@@ -11983,6 +11968,20 @@
    "lead_ru": "Некоторые из крупнейших в мире фондов нагреваются до казначейских облигаций США, поскольку доходность поднимается до многолетних максимумов. Гарри Ричардс из Jupiter Asset Management не входит в их число.",
    "tags": [
     "bonds"
+   ]
+  },
+  {
+   "title": "Emerging-Market Stocks Gain as Fed’s Warsh Backs AI Optimism",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPVVl2dHcyRGc2LWRmSVNPdW12aGxGMHBlVC13RTBGY3BNSW5vd3I0S2VRa01VRjhUbTdELUNBYS03RmpVNmRSblBNMERMaEJjQlRzT1FoMHhaVTk2MENIZk5FdUxmenE2WGJ4Q3hLRWt6YWxUNXd2WVJfNjdDN2Z6c2R0THprdGZFV1lnai1PRnFlbnZxQ05vbXZtX2lQVXQwWEZ0ZzRWRTByMERRM2Y0QQ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-16T07:03:52.096370+00:00",
+   "title_ru": "Акции развивающихся рынков растут, поскольку WARSH ФРС поддерживает оптимизм ИИ",
+   "tags": [
+    "Fed",
+    "markets"
    ]
   }
  ],
