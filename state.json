@@ -1,13 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "dcae732b88f7d619": "2026-10-13T20:12:05.188715+00:00",
-  "e0f11261b57349ca": "2026-10-13T20:12:05.188715+00:00",
-  "d956ed20de8c70a2": "2026-10-13T20:12:05.188715+00:00",
-  "08fb06f1269f0558": "2026-10-13T20:15:09.310695+00:00",
-  "2009fef2951a8422": "2026-10-13T20:15:09.310695+00:00",
-  "0f4d626ae49921a6": "2026-10-13T20:15:09.310695+00:00",
-  "3c65b22952bc2e0d": "2026-10-13T20:18:10.066165+00:00",
   "e6e082b2df02243a": "2026-10-13T20:29:08.351030+00:00",
   "267ed25bb77465b3": "2026-10-13T20:39:08.412881+00:00",
   "63a3f9de92304561": "2026-10-13T20:39:08.412881+00:00",
@@ -1156,55 +1149,10 @@
   "5e26d3feef23cc99": "2026-10-16T19:49:55.632734+00:00",
   "6b384be0ab5e95d4": "2026-10-16T19:49:55.632734+00:00",
   "bddbe9ab4474a050": "2026-10-16T19:54:55.600148+00:00",
-  "e3a7c6dda4f1f84f": "2026-10-16T20:09:55.628708+00:00"
+  "e3a7c6dda4f1f84f": "2026-10-16T20:09:55.628708+00:00",
+  "cfdc35c0c90bf226": "2026-10-16T20:14:56.602532+00:00"
  },
  "recent": [
-  {
-   "title": "Fed's Collins sees another rate hike on the table before end of 2026",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPQTNoWUtZWjdLcTc2ZmNycnptRmR1cmluWThZU2ZTYU5JUkdaazY1Z2hEdjIxNWZ3VU5RSVZvejc3VnlueGZoN0JyNlNmdkptQk9ZNEZqU1MyLTNUblpOaF9FMkdGbnZhX1hTVllLTzYxNFEwamlyazZKem00N1k1UFBablNQSVRCZTgySWNNR3pHemxzSEl1S0VBeE1DQlYyS0Ntdw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-13T20:12:05.188715+00:00",
-   "title_ru": "Коллинз из ФРС ожидает еще одного повышения ставок до конца 2026 года",
-   "tags": [
-    "ФРС",
-    "ставки"
-   ]
-  },
-  {
-   "title": "Fed’s Collins Sees Higher Rates Likely This Year to Tame Prices",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-13/fed-s-collins-sees-higher-rates-likely-this-year-to-tame-prices",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-13T20:12:05.188715+00:00",
-   "title_ru": "Коллинз из ФРС считает, что в этом году вероятно повышение ставок для сдерживания цен",
-   "lead": "Federal Reserve Bank of Boston President Susan Collins said interest rates will likely need to rise more before the end of the year to help rein in inflation.",
-   "lead_ru": "Президент Федерального резервного банка Бостона Сьюзан Коллинз заявила, что процентные ставки, вероятно, придется еще больше повысить до конца года, чтобы помочь обуздать инфляцию.",
-   "tags": [
-    "ФРС",
-    "ставки",
-    "инфляция"
-   ]
-  },
-  {
-   "title": "How you can prepare for 6% bond yields",
-   "link": "https://www.marketwatch.com/story/how-you-can-prepare-for-6-bond-yields-b45723c8?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 3,
-   "ts": "2026-10-13T20:18:10.066165+00:00",
-   "title_ru": "Как подготовиться к доходности облигаций в 6%",
-   "lead": "Savers and investors at current yields stand to benefit, but fears are growing about the rest of the economy outside of the AI boom",
-   "lead_ru": "Владельцы сбережений и инвесторы при текущей доходности могут получить выгоду, но растут опасения по поводу остальной части экономики, помимо бума искусственного интеллекта.",
-   "tags": [
-    "облигации"
-   ]
-  },
   {
    "title": "US blockade keeps Iranian crude exports at zero in October, report says",
    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQSmFzZDZiY3ExNTlsMjFjTDcxaHlMTHhtcWlyQzhoNzZGZk52bDVFUGQyZnlPTy1vVmNWdVRucFdqU0JBVi1JclRCaGFNVy1JMjFxQzhvcy11TllRWTdpV20zWDM3d1lXNTRTNWl4N2w1ZEJNZ2d2U3pBSkVKeklCNlRITmN1eG5CejQzdU56N3oyeXVidVd0TEVIQklXVWtNZlJ4Y3hCOTVrR1ZiQnNCaUc2cjlLcEE?oc=5",
@@ -14393,6 +14341,70 @@
    },
    {
     "src": "sec",
+    "id": "bdd8c95c62e3c564",
+    "ticker": "BJ",
+    "company": "BJ's Wholesale Club Holdings, Inc.",
+    "who": "Laura L. Felice",
+    "role": "CFO",
+    "type": "sell",
+    "value": 887037,
+    "shares": 8452,
+    "price": 104.95,
+    "plan": true,
+    "date": "2026-10-15",
+    "disclosed": "2026-10-16",
+    "link": "https://www.sec.gov/Archives/edgar/data/1743504/000153115226000075/0001531152-26-000075-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "3b21089f324eebb4",
+    "ticker": "TDG",
+    "company": "TransDigm Group INC",
+    "who": "Joel Reiss",
+    "role": "COO",
+    "type": "sell",
+    "value": 4624944,
+    "shares": 4100,
+    "price": 1128.04,
+    "plan": true,
+    "date": "2026-10-15",
+    "disclosed": "2026-10-16",
+    "link": "https://www.sec.gov/Archives/edgar/data/1656109/000165610926000009/0001656109-26-000009-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "6fe57b5e5feab646",
+    "ticker": "PCTY",
+    "company": "Paylocity Holding Corp",
+    "who": "Steven R Beauchamp",
+    "role": "Chair",
+    "type": "sell",
+    "value": 2478270,
+    "shares": 15000,
+    "price": 165.22,
+    "plan": true,
+    "date": "2026-10-15",
+    "disclosed": "2026-10-16",
+    "link": "https://www.sec.gov/Archives/edgar/data/1591698/000159169826000140/0001591698-26-000140-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "03d9ad8c6b11594e",
+    "ticker": "PCTY",
+    "company": "Paylocity Holding Corp",
+    "who": "Steven I Sarowitz",
+    "role": "Director, 10% owner",
+    "type": "sell",
+    "value": 2933728,
+    "shares": 17694,
+    "price": 165.8,
+    "plan": true,
+    "date": "2026-10-15",
+    "disclosed": "2026-10-16",
+    "link": "https://www.sec.gov/Archives/edgar/data/1597870/000159169826000139/0001591698-26-000139-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "98da5e40af377ecf",
     "ticker": "AFL",
     "company": "AFLAC INC",
@@ -15519,39 +15531,36 @@
   },
   "checked": "2026-10-16T19:49:55.632734+00:00",
   "sec_seen": [
-   "0001520700-26-000010",
-   "0002156015-26-000005",
-   "0001193125-26-424046",
-   "0001672013-26-000174",
-   "0002160413-26-000004",
-   "0002062500-26-000010",
-   "0001628280-26-066127",
-   "0001193125-26-424048",
-   "0001193125-26-424042",
-   "0001193125-26-424035",
-   "0001682852-26-000187",
-   "0001193125-26-424040",
-   "0001193125-26-424038",
-   "0001061272-26-000004",
-   "0001210231-26-000003",
-   "0001513845-26-000130",
-   "0002034921-26-000007",
-   "0001140361-26-039917",
-   "0001924613-26-000046",
-   "0001193125-26-424056",
-   "0001413614-26-000015",
-   "0001229305-26-000011",
-   "0001193125-26-424039",
-   "0001193125-26-424041",
-   "0001193125-26-424047",
-   "0001193125-26-424044",
-   "0002120516-26-000018",
-   "0001087997-26-000012",
-   "0002041258-26-000006",
-   "0001193125-26-424045",
-   "0001437749-26-032801",
-   "0001517991-26-000011",
-   "0001193125-26-424043"
+   "0000730464-26-000060",
+   "0001798435-26-000011",
+   "0002061801-26-000021",
+   "0002029478-26-000011",
+   "0001828630-26-000007",
+   "0001628280-26-066128",
+   "0000730464-26-000059",
+   "0001855980-26-000007",
+   "0001531152-26-000075",
+   "0001672013-26-000176",
+   "0001656109-26-000009",
+   "0001591698-26-000140",
+   "0002061219-26-000021",
+   "0001171520-26-000311",
+   "0001999371-26-022968",
+   "0002154854-26-000009",
+   "0001591698-26-000139",
+   "0002034458-26-000011",
+   "0001104659-26-116615",
+   "0001310204-26-000031",
+   "0001864141-26-000007",
+   "0001782135-26-000035",
+   "0002151678-26-000005",
+   "0002096999-26-000013",
+   "0001733535-26-000011",
+   "0001494259-26-000080",
+   "0001875741-26-000010",
+   "0001214107-26-000010",
+   "0002155824-26-000005",
+   "0001504780-26-000011"
   ],
   "errors": {}
  }
