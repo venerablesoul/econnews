@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "ef1a4461c751085a": "2026-10-14T03:29:37.683559+00:00",
-  "bace0ae3d38c6d6f": "2026-10-14T03:29:37.683559+00:00",
-  "654b2ac7dc163b23": "2026-10-14T03:29:37.683559+00:00",
-  "8751da36940714c7": "2026-10-14T03:29:37.683559+00:00",
-  "9be7683e4e16e3cc": "2026-10-14T03:29:37.683559+00:00",
   "67f1ee294a8e7b57": "2026-10-14T03:39:37.713537+00:00",
   "ff959de8230ff3ba": "2026-10-14T03:39:37.713537+00:00",
   "956e19cb9b22f0b3": "2026-10-14T03:49:37.725241+00:00",
@@ -1119,64 +1114,11 @@
   "d219eebef9d8ea25": "2026-10-17T02:40:25.236627+00:00",
   "d5a9cdbbd1975b63": "2026-10-17T02:55:25.214847+00:00",
   "167ee50172592cd6": "2026-10-17T03:05:25.260654+00:00",
-  "aa7002d9106b7d7e": "2026-10-17T03:05:25.260654+00:00"
+  "aa7002d9106b7d7e": "2026-10-17T03:05:25.260654+00:00",
+  "a54c0ee303a5abcd": "2026-10-17T03:35:25.190341+00:00",
+  "bace0ae3d38c6d6f": "2026-10-17T03:35:25.190341+00:00"
  },
  "recent": [
-  {
-   "title": "Regional Economic Outlook: Asia and Pacific, October 2026",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPX3BTVERWZUthUF9wQ09TY3IzMnpQRHdwdWQtSHEtbnR3TWdFQUVRaHY0MmNiSEVuSDU1dG9EQTFTVjVvNmtwMENhR2VHQXZydW84MnlqNmZLYWRhNjU3QmxyLXJteGUzUEtVNDVZYTNNcWVJUWY0d01SeE5BVF9jc0diY000aTdUYTdfS3daQVNoN3cyTHFfbVR5bFhuMFQtYWw0Z1lCbHJ3Nk54NThFSXF0VnRnOXhHdmdreXJKSQ?oc=5",
-   "sources": [
-    "МВФ"
-   ],
-   "score": 5,
-   "ts": "2026-10-14T03:29:37.683559+00:00",
-   "title_ru": "Обзор региональной экономики: Азиатско-Тихоокеанский регион, октябрь 2026 г."
-  },
-  {
-   "title": "Saudi Aramco’s New China Refinery Venture Gets First Crude Cargo",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-14/saudi-aramco-s-new-china-refinery-venture-gets-first-crude-cargo",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-14T03:29:37.683559+00:00",
-   "title_ru": "Новый нефтеперерабатывающий завод Saudi Aramco в Китае получил первую партию сырой нефти",
-   "lead": "Saudi Aramco and its local partners have received the first crude cargo for their new refining complex in China, bringing the billion-dollar mega plant a step closer to production.",
-   "lead_ru": "Saudi Aramco и ее местные партнеры получили первую партию сырой нефти для своего нового нефтеперерабатывающего комплекса в Китае, что сделало мегазавод стоимостью миллиард долларов еще на шаг ближе к производству.",
-   "tags": [
-    "нефть",
-    "доллар",
-    "Китай"
-   ]
-  },
-  {
-   "title": "China’s Trade Surplus Nears $940 Billion as Export Growth Surges",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-14/china-s-trade-surplus-nears-940-billion-as-export-growth-surges",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-14T03:29:37.683559+00:00",
-   "title_ru": "Профицит торгового баланса Китая приближается к $940 млрд на фоне резкого роста экспорта",
-   "lead": "China’s trade surplus ballooned to $938 billion for the first nine months, keeping it on pace to exceed last year’s record as export growth surged faster than expected in September.",
-   "lead_ru": "Профицит торгового баланса Китая вырос до $938 млрд за первые девять месяцев, что позволяет ему превысить прошлогодний рекорд, поскольку в сентябре рост экспорта вырос быстрее, чем ожидалось.",
-   "tags": [
-    "Китай"
-   ]
-  },
-  {
-   "title": "Citi Shares Drop Even After Fixed-Income Traders Post Higher Revenue",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOTEJxcFJwSDE0LVFfV3dkZ00zUFRUNDVsY0s0UEVNSXVFaDNKY3NnUlhVVTI3UHZoTXpfXzJlZTFFTlJVWE1BUjdKbmw5ZGNqU3lYeDgxMGoxRE8yYllWQzN5dnIwcUpmX21VZWJjOFJhY3E0aW1HdlhHVVB5aUt2TTNtZExQc29iZzZ1N3cxazdsUzZyWWlaNjhfYkI4ZC16ODBkaTh6b0hsMm5QT0pabThxVQ?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-14T03:29:37.683559+00:00",
-   "title_ru": "Акции Citi упали даже после того, как трейдеры с фиксированной доходностью сообщили о более высоких доходах",
-   "tags": [
-    "рынки"
-   ]
-  },
   {
    "title": "ECB Will Probably Have to Hike Interest Rates Again, Wunsch Says",
    "link": "https://www.bloomberg.com/news/articles/2026-10-14/ecb-will-probably-have-to-hike-interest-rates-again-wunsch-says",
@@ -11701,6 +11643,16 @@
    ],
    "score": 1,
    "ts": "2026-10-17T03:05:25.260654+00:00"
+  },
+  {
+   "title": "Regional Economic Outlook: Asia and Pacific, October 2026",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPX3BTVERWZUthUF9wQ09TY3IzMnpQRHdwdWQtSHEtbnR3TWdFQUVRaHY0MmNiSEVuSDU1dG9EQTFTVjVvNmtwMENhR2VHQXZydW84MnlqNmZLYWRhNjU3QmxyLXJteGUzUEtVNDVZYTNNcWVJUWY0d01SeE5BVF9jc0diY000aTdUYTdfS3daQVNoN3cyTHFfbVR5bFhuMFQtYWw0Z1lCbHJ3Nk54NThFSXF0VnRnOXhHdmdreXJKSQ?oc=5",
+   "sources": [
+    "IMF"
+   ],
+   "score": 5,
+   "ts": "2026-10-17T03:35:25.190341+00:00",
+   "title_ru": "Обзор региональной экономики: Азиатско-Тихоокеанский регион, октябрь 2026 г."
   }
  ],
  "last_digest": "2026-10-16",
@@ -11742,7 +11694,7 @@
   "2026-10-16-21"
  ],
  "calendar": {
-  "fetched": "2026-10-16T21:34:55.536616+00:00",
+  "fetched": "2026-10-17T03:35:25.190341+00:00",
   "events": [
    {
     "title": "Bank Holiday",
