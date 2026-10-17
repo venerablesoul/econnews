@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "43d0bfd47c42cbcf": "2026-10-14T20:10:58.716332+00:00",
   "df400e09d3d2da6d": "2026-10-14T20:20:58.780450+00:00",
   "1f1565cedc1aff92": "2026-10-14T20:20:58.780450+00:00",
   "e73650328fe32da4": "2026-10-14T20:30:58.707383+00:00",
@@ -882,19 +881,10 @@
   "f609188b61929c58": "2026-10-17T19:12:11.221763+00:00",
   "155d1e0aaeb144fc": "2026-10-17T19:27:11.219550+00:00",
   "70cce20a6c6ae6cd": "2026-10-17T19:37:11.190517+00:00",
-  "0d4102c6e1aefbdd": "2026-10-17T20:02:11.230447+00:00"
+  "0d4102c6e1aefbdd": "2026-10-17T20:02:11.230447+00:00",
+  "ca3075ef18dbd2b2": "2026-10-17T20:17:39.331932+00:00"
  },
  "recent": [
-  {
-   "title": "Perspectives économiques mondiales : Points principaux",
-   "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5JalJUN3hkLUU0M3Y3YlIyc25meHNIdTZjM3FyRGZHTk5oZUg4UUdXNlVXSGtaWVE2eFBRWHZqU2o5c0poM3JNSTVCdkd6aHhmWGstYlAzallJamdY?oc=5",
-   "sources": [
-    "МВФ"
-   ],
-   "score": 4,
-   "ts": "2026-10-14T20:10:58.716332+00:00",
-   "title_ru": "Перспективы мировой экономики: основные моменты"
-  },
   {
    "title": "IMF Executive Board Completes the Fourth Review under the Extended Credit Facility Arrangement and First Review under the Resilience and Sustainability Facility Arrangement for Liberia",
    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQTlh0ME9tWUJRVWVfelk5enFwU19KS3RKMjR1RTVSVWZKMVVqMnJkSHhNUk91NVNSZlBWZUNvQ1doRmxpUVhnQUZrVkVXR29tOWI0Tk5VWGt6ZEhrY0pzcGNUNnJRU3l0dlZRZnRWQnE5TkdWRFVqcVhCZWxhcUdOMWJ4dTdUTHdPSEFIOXNyN1NJckM2bUZrUERrckJKQ1EtNXd4NjRsZ083NEZqR21leEdFNm0ydFNackZObTZvQkZDLUZ2eUx3UjUtSmdBb3c?oc=5",
@@ -8997,6 +8987,22 @@
    "score": 4,
    "ts": "2026-10-17T20:02:11.230447+00:00",
    "title_ru": "Прогнозы на 25-2031 годы – данные BLS"
+  },
+  {
+   "title": "UK Inflation Can Seal the Deal on the BOE’s November Rate Hike",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-17/uk-inflation-can-seal-the-deal-on-the-boe-s-november-rate-hike",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 9,
+   "ts": "2026-10-17T20:17:39.331932+00:00",
+   "title_ru": "Инфляция в Великобритании может решить проблему ноябрьского повышения ставок Банком Англии",
+   "lead": "A pickup in UK inflation to a nine-month high in data this week is likely to set the stage for key decisions from the upcoming budget to a likely interest-rate increase.",
+   "lead_ru": "Рост инфляции в Великобритании до девятимесячного максимума, согласно данным на этой неделе, вероятно, создаст основу для принятия ключевых решений от предстоящего бюджета до вероятного повышения процентных ставок.",
+   "tags": [
+    "rates",
+    "inflation"
+   ]
   }
  ],
  "last_digest": "2026-10-17",
