@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "bd85eb5bff899be8": "2026-10-14T18:30:58.853659+00:00",
-  "9c3fcde5a6960e74": "2026-10-14T18:30:58.853659+00:00",
-  "86a1dcd4d65b95c1": "2026-10-14T18:30:58.853659+00:00",
   "7c8872c624794e51": "2026-10-14T18:40:58.860042+00:00",
   "dbab82565f88ead8": "2026-10-14T18:40:58.860042+00:00",
   "d0f21ba4b43cd6db": "2026-10-14T18:40:58.860042+00:00",
@@ -899,24 +896,10 @@
   "b20a095ce78bf965": "2026-10-17T17:57:11.195971+00:00",
   "d61a93a3e173f2d0": "2026-10-17T17:57:11.195971+00:00",
   "9880f5af8a28129a": "2026-10-17T18:17:11.238883+00:00",
-  "51a1255c651c1d05": "2026-10-17T18:27:11.231482+00:00"
+  "51a1255c651c1d05": "2026-10-17T18:27:11.231482+00:00",
+  "09d22651ab7c7418": "2026-10-17T18:32:11.231973+00:00"
  },
  "recent": [
-  {
-   "title": "Fed’s Beige Book Shows Intensifying Price Growth in Some Areas",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-14/fed-s-beige-book-shows-intensifying-price-growth-in-some-areas",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-14T18:30:58.853659+00:00",
-   "title_ru": "Бежевая книга ФРС показывает усиление роста цен в некоторых сферах",
-   "lead": "Half of the 12 Federal Reserve districts saw robust or intensifying price pressures in recent weeks as higher energy prices permeated the local economies, according to a survey of the central bank’s regional contacts.",
-   "lead_ru": "Согласно опросу региональных контактов центрального банка, в половине из 12 округов Федеральной резервной системы в последние недели наблюдалось сильное или усиливающееся ценовое давление, поскольку более высокие цены на энергоносители проникли в местную экономику.",
-   "tags": [
-    "ФРС"
-   ]
-  },
   {
    "title": "Consumer Price Index, New York-Newark-Jersey City — September 2026",
    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQVXN3ek9zT2RvMjY3WnRZSlE5YmhuM21XNzhBQWtwWG9yU0RrOC1uOU9CN1Y0RkFtSEVWOGdOb01WdE0zRkQyWkkwOTZVUjk2YWJPOUpCTWRSRzc2TGJPdU82eGxSMU8yRURTUWhJZ0hVNkE1NEdyXzB4b1dzcU8ySF9iYTlvM0FSSzQ4d3pHM3ZYaEtTWnlxSHRrTQ?oc=5",
@@ -9176,6 +9159,16 @@
    "score": 3,
    "ts": "2026-10-17T18:17:11.238883+00:00",
    "title_ru": "Высокий долг и растущая напряженность заставляют акцентировать внимание на необходимости новых подходов к развитию."
+  },
+  {
+   "title": "Tens of thousands march in Lisbon over housing and living costs",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOa3NQRHI0VTRqeGpNXzZSN0hkTU1aOTh3M3BKdHBQVGc1b1pGdmRRVWJ4WTdSbnVaNlJXQXNJeklhMEJlYkhocVVwRGtzcjlISk43UW9tU2RYWXNQR09Wd3k4a2xCQm9Ua1Z4bkY2UlI3NFpzMXZKcHNGTy1PdlJBMkV6YTN0Y210eHJWN0xtbVByX0o1RlV6V2lOVQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-17T18:32:11.231973+00:00",
+   "title_ru": "Десятки тысяч человек вышли на марш в Лиссабоне из-за стоимости жилья и жизни"
   }
  ],
  "last_digest": "2026-10-17",
@@ -13235,11 +13228,11 @@
    "0002116103-26-000002",
    "0001213900-26-110404",
    "0001801661-26-000123",
-   "0000037785-26-000161",
    "0001193125-26-424413",
    "0000037785-26-000165",
    "0002086163-26-000012",
    "0001509409-26-000012",
+   "0001780664-26-000041",
    "0000037785-26-000158",
    "0001193125-26-424421",
    "0001193125-26-424439",
@@ -13247,7 +13240,6 @@
    "0001213900-26-110434",
    "0001477932-26-006312",
    "0001213900-26-110405",
-   "0001561861-26-000076",
    "0001213900-26-110401",
    "0001193125-26-424426",
    "0000037785-26-000164",
@@ -13258,9 +13250,10 @@
    "0001213900-26-110428",
    "0000037785-26-000157",
    "0001493152-26-047473",
+   "0000037785-26-000161",
    "0001213900-26-110429",
    "0002152990-26-000002",
-   "0001780664-26-000041"
+   "0001561861-26-000076"
   ],
   "errors": {}
  }
