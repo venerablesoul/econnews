@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "f0b9bc5133529bde": "2026-10-14T02:59:37.740009+00:00",
   "75fa6eb84ca6f0f8": "2026-10-14T03:09:37.722010+00:00",
   "0ca19bbc48669d72": "2026-10-14T03:09:37.722010+00:00",
   "b6c81d5b1885be7e": "2026-10-14T03:19:37.725848+00:00",
@@ -1121,24 +1120,11 @@
   "6b46f89470c55219": "2026-10-17T02:10:25.307978+00:00",
   "036b88c2d9f52df6": "2026-10-17T02:35:25.264841+00:00",
   "d219eebef9d8ea25": "2026-10-17T02:40:25.236627+00:00",
-  "d5a9cdbbd1975b63": "2026-10-17T02:55:25.214847+00:00"
+  "d5a9cdbbd1975b63": "2026-10-17T02:55:25.214847+00:00",
+  "167ee50172592cd6": "2026-10-17T03:05:25.260654+00:00",
+  "aa7002d9106b7d7e": "2026-10-17T03:05:25.260654+00:00"
  },
  "recent": [
-  {
-   "title": "China’s Producer Prices Jolted by $100 Oil as Inflation Rebounds",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOT1dERlVieFVVeXBPSzJJVHU0TXJETVlLU1VpUVFaMWV0SzBzWnJXaDVIZHZ1cU9xTnZIdzJYN3lpdG5OMFdOUUIxTTBUOVRnVGsxRmNvcTVqQWtmemtOR010TFh6YzVKeTlsWGQ0WG1BOTJhc25fYmMzUkFpUmRNNUdRMEFUNFZwUEt2SEVrbzl0c3RGU3pXTm5BbHZhNmEyTWY1dEJwRDlHMUJ1RHR3VGxEb2U?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-14T02:59:37.740009+00:00",
-   "title_ru": "Цены производителей Китая подскочили на 100 долларов за нефть на фоне восстановления инфляции",
-   "tags": [
-    "инфляция",
-    "нефть",
-    "Китай"
-   ]
-  },
   {
    "title": "Asia shares edge up as chip selloff eases; US CPI awaited",
    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNcE96RkhyZDBlQ2VWRERNYlZtdm5FaVdQSXF2M3ZtR3JIOU05UExLWnZ3dmFBY1NZcndTRlozR29sdmxWaExXUmIycmZPZGk3UXI1amRxTDR6WHpSQl82ckhxZ016SnZYdGtPdC14TnZVWlpjeHl4SW5pUnJKbjl2M0pzcw?oc=5",
@@ -11735,6 +11721,25 @@
     "Fed",
     "gold"
    ]
+  },
+  {
+   "title": "Nvidia CEO on AI Market Turmoil: ‘All of This Is Going to Pass’",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPUnVUc280UUFsc3NKaDM5VU5Bbng3WXA4bGhETWY4RE1NVTY5Yk5qVmhsN2VFdHE2M1pIUTRrTTk3QjZsYUMxWTQ3QmRacGhiUzdMM1VwQnh3c0c0Tk5zandkMjhhdnUxb0tMZzZDc3dIOUZhT2ZGSlRnVG5qdGp2RUplaWFxU1NiSXZGZHhBZTZjekdLSU1WZUhvZXMzUzd4YXRmMS0yYnNkTkp1cndfNQ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-17T03:05:25.260654+00:00",
+   "title_ru": "Генеральный директор Nvidia о потрясениях на рынке искусственного интеллекта: «Все это пройдет»"
+  },
+  {
+   "title": "Как между зарплатой и производительностью растет разрыв. Инфографика",
+   "link": "https://www.rbc.ru/economics/17/10/2026/6ac8d3879a7947860b7e3327",
+   "sources": [
+    "RBC"
+   ],
+   "score": 1,
+   "ts": "2026-10-17T03:05:25.260654+00:00"
   }
  ],
  "last_digest": "2026-10-16",
