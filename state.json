@@ -1,13 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "8560c410b38b35a0": "2026-10-14T04:39:37.738179+00:00",
-  "7738e5fc2a89e216": "2026-10-14T04:39:37.738179+00:00",
-  "06692c54c34bbe26": "2026-10-14T04:39:37.738179+00:00",
-  "842e4317047b49a8": "2026-10-14T04:39:37.738179+00:00",
-  "9712dba7721b45d7": "2026-10-14T04:39:37.738179+00:00",
-  "f1ff32bb4fb8b910": "2026-10-14T04:39:37.738179+00:00",
-  "1ae5c387d722e7ad": "2026-10-14T04:39:37.738179+00:00",
   "8458b76f1cbb7b0c": "2026-10-14T04:49:37.699127+00:00",
   "7963786f79687db9": "2026-10-14T04:49:37.699127+00:00",
   "96f04e1c7bf6d664": "2026-10-14T04:49:37.699127+00:00",
@@ -1107,91 +1100,11 @@
   "ca70c5ce9230fe1a": "2026-10-17T03:50:53.616400+00:00",
   "2bc1cf592e278a36": "2026-10-17T03:50:53.616400+00:00",
   "db7a0ba32507d144": "2026-10-17T03:55:51.264247+00:00",
-  "2d7aa1e24aa29815": "2026-10-17T04:30:51.318768+00:00"
+  "2d7aa1e24aa29815": "2026-10-17T04:30:51.318768+00:00",
+  "787d06c65faf6594": "2026-10-17T04:40:51.252666+00:00",
+  "378dacc916a5dc97": "2026-10-17T04:40:51.252666+00:00"
  },
  "recent": [
-  {
-   "title": "IMF Says US Growth Not Enough To Fight High Debt, Deficit Levels",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-14/imf-says-us-growth-not-enough-to-fight-high-debt-deficit-levels",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-14T04:39:37.738179+00:00",
-   "title_ru": "МВФ заявляет, что экономического роста США недостаточно для борьбы с высоким уровнем долга и дефицита",
-   "lead": "The International Monetary Fund said that US economic growth can’t fix the country’s mounting debt and fiscal deficit problems fast enough, and that other measures are needed.",
-   "lead_ru": "Международный валютный фонд заявил, что экономический рост США не может решить проблемы растущего долга и бюджетного дефицита страны достаточно быстро, и что необходимы другие меры."
-  },
-  {
-   "title": "Gold prices hold firm ahead of US inflation data",
-   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNZkM3NGdUajlORC1ZZjBNcFZtNjYwa2JRaFczS1V4OVRORGhzZG1NUGxaY3ppRjdfQlFvUmREakJQM1RGaDNZZmZFMnJrY2Rtemc2Z1dBY1pPRy1ZbnBJVzNfTG1MMGJ5TXY5VzFpaDd6UENqd1pUOVdlTm1sS241QkFzNm1kdDJXTjl5emhLV200WUI1QVh4RQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-14T04:39:37.738179+00:00",
-   "title_ru": "Цены на золото остаются стабильными в преддверии данных по инфляции в США",
-   "tags": [
-    "инфляция",
-    "золото"
-   ]
-  },
-  {
-   "title": "US grocery prices poised to climb as soaring fuel costs drive inflation",
-   "link": "https://www.ft.com/content/13929c26-1c01-41b2-b81a-d337fa5c9d27?syn-25a6b1a6=1",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 5,
-   "ts": "2026-10-14T04:39:37.738179+00:00",
-   "title_ru": "Цены на продукты в США могут вырасти, поскольку растущие цены на топливо стимулируют инфляцию",
-   "lead": "Food manufacturers warn of impact on consumers ahead of midterm elections",
-   "lead_ru": "Производители продуктов питания предупреждают о последствиях для потребителей в преддверии промежуточных выборов",
-   "tags": [
-    "инфляция"
-   ]
-  },
-  {
-   "title": "'Godzilla El Niño' is wreaking havoc with Philippine central bank's inflation forecasts",
-   "link": "https://www.cnbc.com/2026/10/14/godzilla-el-nino-asia-inflation-philippines.html",
-   "sources": [
-    "CNBC"
-   ],
-   "score": 5,
-   "ts": "2026-10-14T04:39:37.738179+00:00",
-   "title_ru": "«Годзилла Эль-Ниньо» сеет хаос в прогнозах центрального банка Филиппин по инфляции",
-   "lead": "The Philippine central bank is running policy scenarios for a severe El Niño on top of the oil shock, with inflation at a three-year high.",
-   "lead_ru": "Центральный банк Филиппин разрабатывает политические сценарии на случай серьезного Эль-Ниньо в дополнение к нефтяному шоку с инфляцией на трехлетнем максимуме.",
-   "tags": [
-    "инфляция",
-    "нефть"
-   ]
-  },
-  {
-   "title": "China Is Poised to Spearhead a $5 Trillion Humanoid Robot Market",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPeTQ5OHU0dmR0LW81WUFpMUlTaDNjNTZHU2NfNkdmc0tnRlVQSTJKck8xR0lwUFZrek1waG02c0tuQkM3Qk04cHYxRWswZjQzTThtc0hNckNVZXF2d0pmeWFkMUFPcUJtZVQxRGtwR1ZvUGh6ZlRvMlBkR255VjQ0aHlSMkZqSkJJazFDNDJiWnJTX1gzdV81RGNVbVoyZVYwbmtjUURFb204dDI0RUpDVElOMFRIcjVvbDM0?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-14T04:39:37.738179+00:00",
-   "title_ru": "Китай готов возглавить рынок гуманоидных роботов стоимостью 5 триллионов долларов",
-   "tags": [
-    "Китай"
-   ]
-  },
-  {
-   "title": "The global economy and the art of living dangerously",
-   "link": "https://www.ft.com/content/5e6d1d30-0934-4fda-b2c0-27b0d96aeba3?syn-25a6b1a6=1",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 3,
-   "ts": "2026-10-14T04:39:37.738179+00:00",
-   "title_ru": "Глобальная экономика и искусство жить опасно",
-   "lead": "It would be nice to think that the world will become less shock-prone, but it probably won’t",
-   "lead_ru": "Было бы неплохо думать, что мир станет менее подвержен потрясениям, но, скорее всего, это не так."
-  },
   {
    "title": "Oil prices climb as Iran deploys new tactics to target ships transiting Hormuz",
    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxON0hPaGRDOW9haXRKcUJ3WVU5dVdwSjB2ZzNMZTVWd0lRYV9ZUjRNRTI4VjVXeERGeW1XVU1GanZidjZneXhKeFh1dWM0OUJ6ZGltVXFXdHJNVk52MDN5M3NvRnhUUWN6aEFiSldFUWxfeHNPYmQ2R21JMGlhaUNaWEFNckc0T0ItSFpYcHA3MmM4UUdnTVd0VFg0NWhtbm91MllPWllha0pqdVBjZlRldDgxaG5PclVud0xtNQ?oc=5",
