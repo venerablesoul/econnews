@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "afd582d3586a0cf1": "2026-10-14T21:40:58.662276+00:00",
   "ed1aa4feb5ddcb6f": "2026-10-14T22:00:58.815041+00:00",
   "0de332b88f7907fe": "2026-10-14T22:00:58.815041+00:00",
   "f5edfa0599c1e6d8": "2026-10-14T22:00:58.815041+00:00",
@@ -865,7 +864,8 @@
   "155d1e0aaeb144fc": "2026-10-17T19:27:11.219550+00:00",
   "70cce20a6c6ae6cd": "2026-10-17T19:37:11.190517+00:00",
   "0d4102c6e1aefbdd": "2026-10-17T20:02:11.230447+00:00",
-  "ca3075ef18dbd2b2": "2026-10-17T20:17:39.331932+00:00"
+  "ca3075ef18dbd2b2": "2026-10-17T20:17:39.331932+00:00",
+  "045210accf8b7d96": "2026-10-17T21:42:39.350822+00:00"
  },
  "recent": [
   {
@@ -8782,6 +8782,16 @@
     "rates",
     "inflation"
    ]
+  },
+  {
+   "title": "Couriers and Messengers: NAICS 492",
+   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9KRjhFWHkyWG5XLWdJbXQ3SWRoZExwNXlfcDZYS3piYUNZYUN0cDNpTkdVSnExS0w2Rm9jdk8ySmJuVUFwRVUxOFcxclBqZDQ3TFRwbXNYSFE?oc=5",
+   "sources": [
+    "US Labor Statistics (BLS)"
+   ],
+   "score": 4,
+   "ts": "2026-10-17T21:42:39.350822+00:00",
+   "title_ru": "Курьеры и посланники: NAICS 492."
   }
  ],
  "last_digest": "2026-10-17",
