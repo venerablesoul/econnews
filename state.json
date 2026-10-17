@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "d534f3bb1e68de4b": "2026-10-14T10:20:02.799575+00:00",
-  "1be4047289339a35": "2026-10-14T10:20:02.799575+00:00",
-  "75f70739a412ecc4": "2026-10-14T10:20:02.799575+00:00",
-  "0de9d91911381f06": "2026-10-14T10:20:02.799575+00:00",
-  "a9bd08eb7a0846d5": "2026-10-14T10:20:02.799575+00:00",
   "a7126e129ffff4f2": "2026-10-14T10:30:02.937454+00:00",
   "3ae85ba30ff7bf23": "2026-10-14T10:30:02.937454+00:00",
   "2a21cbdd445473a5": "2026-10-14T10:40:02.802793+00:00",
@@ -1032,67 +1027,10 @@
   "0e166fbdc5c61bbc": "2026-10-17T09:46:19.246974+00:00",
   "06856943d5334990": "2026-10-17T09:51:19.287654+00:00",
   "685860af6e92a5a8": "2026-10-17T10:01:19.203648+00:00",
-  "605d34182e90c291": "2026-10-17T10:01:19.203648+00:00"
+  "605d34182e90c291": "2026-10-17T10:01:19.203648+00:00",
+  "100814bb45f7ff8e": "2026-10-17T10:16:19.266930+00:00"
  },
  "recent": [
-  {
-   "title": "South African rand edges up ahead of US inflation data",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNYlRMRWhlQ2VsQVZXdmxYekxoenBKai00cmNaMzdkNmMxSUpuLWVwczkzTTRLTTJIMWwxWTVMWGpWYXM4WS1DTWdOclRrZi16ZlpHZlRmSXRVV2x5T255MjhpTDkxdlU5bEtHS2M4ZkNFR3pkNEZ2RGR2V18tOXhBaFQyd0lJTDBYZ3V6T0MxRkNWSm1RNTJFR2hyRmQ1WGJRSGc?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-14T10:20:02.799575+00:00",
-   "title_ru": "Южноафриканский рэнд вырос в преддверии данных по инфляции в США",
-   "tags": [
-    "инфляция"
-   ]
-  },
-  {
-   "title": "Conférence de presse : G-24, octobre 2026",
-   "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1UZEhWSVVDRmtINmpUX1pzeEVFdDc3ajZSQXVSZWZiaDNvUGlxbUhfcTQteEtkTnhhRnhteFhsT3lHbmM4WU5PWW92ZFVYcDNReTlvdW9Zd1V5bFM3?oc=5",
-   "sources": [
-    "МВФ"
-   ],
-   "score": 4,
-   "ts": "2026-10-14T10:20:02.799575+00:00",
-   "title_ru": "Пресс-конференция: G-24, октябрь 2026 г."
-  },
-  {
-   "title": "Wages May Deliver a £9 Billion Boost for Healey at UK Budget",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-14/wages-may-deliver-a-9-billion-boost-for-healey-at-uk-budget",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-14T10:20:02.799575+00:00",
-   "title_ru": "Заработная плата может обеспечить Хили повышение на 9 миллиардов фунтов стерлингов в бюджете Великобритании",
-   "lead": "Even small tweaks in the economic forecasts being prepared for UK Chancellor of the Exchequer John Healey could be the difference between a painful or painless budget this month.",
-   "lead_ru": "Даже небольшие изменения в экономических прогнозах, готовящихся для канцлера казначейства Великобритании Джона Хили, могут стать решающим фактором между болезненным или безболезненным бюджетом в этом месяце."
-  },
-  {
-   "title": "India's proxy AI trade shines in a bleak year for stocks",
-   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxONFg4czRQdUJBU2hDSFBNUklpaFVweHg2LTVmMGJZckh2S3FFZXFBQUw3alJJMkVKcUgtYlZJSUc2Z2RuT3RvRlJwVFlwMXdZRDUyUkdzWHJINURxajIwdloxMVk2OE5JV2ZsMnVuTTFEcWlfeEFBc0M2U0FEeUctTVFXVy1pNUpHdlFDRkhMTXBQY0RFU09lQS13?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-14T10:20:02.799575+00:00",
-   "title_ru": "Торговля прокси-ИИ в Индии сияет в мрачный год для акций",
-   "tags": [
-    "рынки"
-   ]
-  },
-  {
-   "title": "No signs of new EU debt crisis, but prudent fiscal policy is needed",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQdTdOR21SbDBTc2d2VXB2Q1U1b09Lb1VXUE1qTTlRVnV5TC03SGJ5VTRZdGNJeXlWQW45bGMwRVhPZmxaYTVWNEFNQndtd0xrcVBmTWdZZXd5MWh2VDM5bUZYa3VPQVF2MUYwZlRhT3pZcDRnUm1IQllKdHZDdWRZLUt2Zl9COF94RklNZlZsdGRvSFgyeWpKaDBCeDJTSTUyeWRKeFpYOVhnRWRiTndFZC1ULWxmUzQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-14T10:20:02.799575+00:00",
-   "title_ru": "Никаких признаков нового долгового кризиса в ЕС нет, но необходима разумная фискальная политика"
-  },
   {
    "title": "Strategists See European Stocks Posting a Bumper Earnings Season",
    "link": "https://www.bloomberg.com/news/articles/2026-10-14/strategists-see-european-stocks-posting-a-bumper-earnings-season",
