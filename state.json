@@ -1,12 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "4b7af1d4a1539ce1": "2026-10-14T09:20:02.840024+00:00",
-  "68f586d15afcd3ff": "2026-10-14T09:20:02.840024+00:00",
-  "bafecdf5f01e0c35": "2026-10-14T09:20:02.840024+00:00",
-  "d8aef8b76d0f6258": "2026-10-14T09:20:02.840024+00:00",
-  "4745790aa136225d": "2026-10-14T09:20:02.840024+00:00",
-  "fcc6b91ecbe8ad2c": "2026-10-14T09:20:02.840024+00:00",
   "0f2c9c70dc75946e": "2026-10-14T09:30:02.819775+00:00",
   "5cfdebc7435a3359": "2026-10-14T09:30:02.819775+00:00",
   "d01ef874d2fcc4f2": "2026-10-14T09:30:02.819775+00:00",
@@ -1048,62 +1042,11 @@
   "8bc376bdd5f35934": "2026-10-17T08:50:51.268888+00:00",
   "25d44e820eec59a0": "2026-10-17T08:55:51.306760+00:00",
   "e1f9fc13c592e5b3": "2026-10-17T09:05:51.251845+00:00",
-  "a2447d51573d1aad": "2026-10-17T09:10:51.308558+00:00"
+  "a2447d51573d1aad": "2026-10-17T09:10:51.308558+00:00",
+  "da9003f7eb212803": "2026-10-17T09:21:19.255516+00:00",
+  "832a78355b5128d5": "2026-10-17T09:21:19.255516+00:00"
  },
  "recent": [
-  {
-   "title": "Spain's inflation rises at fastest pace in more than three years",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPTDhaREIyYllJX0htTGZZa1ByMUJOTTFqcTdOMnNoWkRHMS1IWGZ5d29hUUFsd2xHMHpRZy1tQnZ5czZrcHhGVTNBeGZtWXVuQ3dEVDBjU2ctMzdIRkRIMzFSU3NzWVljRHBhRk0wZlJ4dEJ5UUdMdTVLMHl5UWpVSU56eW9kQ1lFSEh6QlE1TGJnSjVGcFVuS2trMjlXMEtsMFpzRQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-14T09:20:02.840024+00:00",
-   "title_ru": "Инфляция в Испании растет самыми быстрыми темпами за последние три года",
-   "tags": [
-    "инфляция"
-   ]
-  },
-  {
-   "title": "Global Leaders on Redrawing the Supply Chain Map",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-14/global-leaders-on-redrawing-the-supply-chain-map-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-14T09:20:02.840024+00:00",
-   "title_ru": "Мировые лидеры перекраивают карту цепочки поставок",
-   "lead": "Beto Abreu, CEO, Suzano; T.H. Helene Budliger Artieda, State Secretary, Swiss Confederation; T.H.",
-   "lead_ru": "Бето Абреу, генеральный директор Suzano; Т.Х. Элен Будлигер Артьеда, государственный секретарь Швейцарской Конфедерации; Т.Х."
-  },
-  {
-   "title": "‘I earn $110,000 a year’: I lost my home in the Great Recession. I’m renting in my 50s. Why is that judged as failure?",
-   "link": "https://www.marketwatch.com/story/i-earn-110-000-a-year-i-lost-my-home-in-the-great-recession-im-renting-in-my-50s-why-is-that-judged-as-failure-d1371d67?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 3,
-   "ts": "2026-10-14T09:20:02.840024+00:00",
-   "title_ru": "«Я зарабатываю 110 000 долларов в год»: я потерял дом во время Великой рецессии. Снимаю в 50 лет. Почему это считается провалом?",
-   "lead": "“I lost my job and eventually my home — and it’s still hard.”",
-   "lead_ru": "«Я потерял работу и, в конечном итоге, дом — и это все еще тяжело».",
-   "tags": [
-    "ВВП"
-   ]
-  },
-  {
-   "title": "Голикова: около 12 млн россиян нужны рынку труда до 2032 года",
-   "link": "https://www.kommersant.ru/doc/9026217",
-   "sources": [
-    "Коммерсантъ"
-   ],
-   "score": 3,
-   "ts": "2026-10-14T09:20:02.840024+00:00",
-   "lead": "12 млн россиян нужно привлечь в российскую экономику как на новые рабочие места, так и на замену тем, кто выходит на пенсию. Об этом заявила вице-премьер Татьяна Голикова.",
-   "tags": [
-    "Россия"
-   ]
-  },
   {
    "title": "IMF Managing Director’s Briefing on the Global Policy Agenda Press Briefing",
    "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOeFhQT0xVblZQeUg3NUViamxGem5HMldFUGNsc1pqTV9wOTR1WDRpQkRqSDg1ODNkdnJtckNoUjlOQjlPUnpmWjIwSnI0UW9JSU9yM1gyVTFaVEJhQXJxczNrVWFKN2IteWNnNXNGN3lwR2hBLVpLZm5PdjdfOGREaEQ4NnYxVmVvQW0wYUJYdi12dnF0ODBid19fSTJMcE9pMzhveFdBbFh5aThyQmY4b0VPcDdlNUVSTEdZX0ROWE1pd2FOQXhkVGJ4WnhyanNhaDhjNWpDUzgzOWpGOUVjX3ZB?oc=5",
@@ -10802,6 +10745,19 @@
    "score": 3,
    "ts": "2026-10-17T09:10:51.308558+00:00",
    "title_ru": "Члены МВФ призывают к большей поддержке на фоне военных потрясений и рисков «передовой разведки»"
+  },
+  {
+   "title": "Anthropic's Clark says AI's impact accelerating quickly and could vastly boost US GDP",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQbk9CdFVPN2k3VV9iLUx0SGxFc184WkJQSDVpNGhBTkxVUElnNmFvRk5YeHJNVjloYlFXZWY1MC1TQjBaT3RMSmJXQjl4YUU4X0ZDVllhRGR5T09ncE1vRTVhZVBqZGZYeE1kRG9jRVFram83dWZSd3N1eU9jeWpPckdNTTFyYV9jN1kxTHBWR3YycW1DRlVMU095QzMxVnVNb1RULVZPaXYtVlRaMlF4TEFEd1U4aFpySG83R3BMaDNXYlpPclE?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-17T09:21:19.255516+00:00",
+   "title_ru": "Кларк из Anthropic говорит, что влияние ИИ быстро ускоряется и может значительно повысить ВВП США",
+   "tags": [
+    "GDP"
+   ]
   }
  ],
  "last_digest": "2026-10-16",
@@ -14854,6 +14810,7 @@
    "0001225208-26-008439",
    "0001213900-26-110404",
    "0001213900-26-110429",
+   "0001437749-26-032864",
    "0001214659-26-013018",
    "0001437749-26-032866",
    "0001493152-26-047473",
@@ -14868,7 +14825,6 @@
    "0002086163-26-000012",
    "0001193125-26-424413",
    "0001193125-26-424414",
-   "0001780664-26-000041",
    "0001801661-26-000123",
    "0002088549-26-000015",
    "0001214659-26-013016",
@@ -14885,7 +14841,7 @@
    "0001193125-26-424412",
    "0001213900-26-110434",
    "0001193125-26-424428",
-   "0001437749-26-032864"
+   "0001780664-26-000041"
   ],
   "errors": {}
  }
