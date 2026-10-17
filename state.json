@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "406ae13551018534": "2026-10-14T17:20:32.294945+00:00",
-  "f356e8aecb3ad5c0": "2026-10-14T17:20:32.294945+00:00",
   "5f1ea465b64b48f6": "2026-10-14T17:30:32.314784+00:00",
   "045d672da6df0ceb": "2026-10-14T17:40:32.304431+00:00",
   "faa6346566b55752": "2026-10-14T17:40:32.304431+00:00",
@@ -905,41 +903,11 @@
   "183b9f7c60dcc637": "2026-10-17T16:27:11.188084+00:00",
   "b566aa5f01dd989a": "2026-10-17T16:27:11.188084+00:00",
   "1e00c6fc540eb92c": "2026-10-17T16:57:11.225338+00:00",
-  "015aeccf4c240947": "2026-10-17T17:02:11.238745+00:00"
+  "015aeccf4c240947": "2026-10-17T17:02:11.238745+00:00",
+  "7024a0123ecb9632": "2026-10-17T17:22:11.253286+00:00",
+  "66302b9996133336": "2026-10-17T17:27:11.228119+00:00"
  },
  "recent": [
-  {
-   "title": "Hot Inflation Print Pushes Wall Street to Raise Rate Hike Bets",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-14/bloomberg-surveillance-10-14-2026-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 8,
-   "ts": "2026-10-14T17:20:32.294945+00:00",
-   "title_ru": "Горячая инфляция подталкивает Уолл-стрит к повышению ставок на повышение ставок",
-   "lead": "Jonathan Ferro, Lisa Abramowicz and Annmarie Hordern speak daily with leaders and decision makers from Wall Street to Washington and beyond.",
-   "lead_ru": "Джонатан Ферро, Лиза Абрамович и Аннмари Хордерн ежедневно беседуют с лидерами и лицами, принимающими решения, от Уолл-стрит до Вашингтона и за его пределами.",
-   "tags": [
-    "ставки",
-    "инфляция"
-   ]
-  },
-  {
-   "title": "Bessent Pushes IMF on ‘Distortionary’ Policies, in China Signal",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-14/bessent-pushes-imf-on-distortionary-policies-in-china-signal",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-14T17:20:32.294945+00:00",
-   "title_ru": "Бессент подталкивает МВФ к «искажительной» политике в Китае",
-   "lead": "Treasury Secretary Scott Bessent pushed the International Monetary Fund to call out “distortionary policies” by non-market economies that are posing challenges for global policymakers, in an apparent veiled reference to China and…",
-   "lead_ru": "Министр финансов Скотт Бессент подтолкнул Международный валютный фонд обратить внимание на «искажающую политику» стран с нерыночной экономикой, которая создает проблемы для мировых политиков, явно имея в виду завуалированную ссылку на Китай и…",
-   "tags": [
-    "облигации",
-    "Китай"
-   ]
-  },
   {
    "title": "Дизелю не хватает мощности // МЭА ожидает сохранения дефицита топлива до середины 2027 года",
    "link": "https://www.kommersant.ru/doc/9026683",
@@ -9275,6 +9243,22 @@
    "score": 3,
    "ts": "2026-10-17T16:07:11.258428+00:00",
    "title_ru": "Кэтрин Гровер, Cboe Global Markets Inc: профиль и биография"
+  },
+  {
+   "title": "Russia Sanctions Waived, AI Debt Concerns, Making 'GTA VI'",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-17/bloomberg-this-weekend-10-17-2026-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-17T17:27:11.228119+00:00",
+   "title_ru": "Отмена санкций против России, опасения по поводу долгов AI, создание GTA VI",
+   "lead": "The news doesn’t stop when markets close. Hosts David Gura, Christina Ruffini and Lisa Mateo bring clarity, context and a bit of humor to the weekend’s biggest headlines, LIVE from New York.",
+   "lead_ru": "Новости не прекращаются, когда рынки закрываются. Ведущие Дэвид Гура, Кристина Руффини и Лиза Матео привносят ясность, контекст и немного юмора в главные заголовки выходных в прямом эфире из Нью-Йорка.",
+   "tags": [
+    "sanctions",
+    "Russia"
+   ]
   }
  ],
  "last_digest": "2026-10-16",
