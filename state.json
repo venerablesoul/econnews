@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "78ef0d2d572059f1": "2026-10-14T20:00:58.724768+00:00",
-  "3b3a4fd7623405d4": "2026-10-14T20:00:58.724768+00:00",
-  "937bdf9915684977": "2026-10-14T20:00:58.724768+00:00",
   "43d0bfd47c42cbcf": "2026-10-14T20:10:58.716332+00:00",
   "df400e09d3d2da6d": "2026-10-14T20:20:58.780450+00:00",
   "1f1565cedc1aff92": "2026-10-14T20:20:58.780450+00:00",
@@ -884,35 +881,10 @@
   "09d22651ab7c7418": "2026-10-17T18:32:11.231973+00:00",
   "f609188b61929c58": "2026-10-17T19:12:11.221763+00:00",
   "155d1e0aaeb144fc": "2026-10-17T19:27:11.219550+00:00",
-  "70cce20a6c6ae6cd": "2026-10-17T19:37:11.190517+00:00"
+  "70cce20a6c6ae6cd": "2026-10-17T19:37:11.190517+00:00",
+  "0d4102c6e1aefbdd": "2026-10-17T20:02:11.230447+00:00"
  },
  "recent": [
-  {
-   "title": "US chip stocks slide as inflation and AI debt fears unsettle investors",
-   "link": "https://www.ft.com/content/fb258413-e88d-47fe-98c8-f645adaea1e1?syn-25a6b1a6=1",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 8,
-   "ts": "2026-10-14T20:00:58.724768+00:00",
-   "title_ru": "Акции чипов в США падают, поскольку инфляция и опасения по поводу долгов в области искусственного интеллекта тревожат инвесторов",
-   "lead": "Nvidia, Oracle and CoreWeave fall as fervour around the technology cools",
-   "lead_ru": "Nvidia, Oracle и CoreWeave терпят крах, поскольку энтузиазм вокруг этой технологии остывает",
-   "tags": [
-    "инфляция",
-    "рынки"
-   ]
-  },
-  {
-   "title": "Mexico's Banamex markets risky debt ahead of Citi split",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOMzdCQ0NKdG5ZaG1QZWd5ZDloWnMyemk1aVEtbTNNUkxMcmhmXzc2b1RlMUV3bm12ek9kd0ZETURZTEhyd0xzMmZSNUpMeE5sUUg5Z3dXa1hfbGpIV2tRWGlnLUstcTNISTFYRU5JOGlhdHNPanBrWnB3ZDdJVDVYZGx1ajZ5RkdFRjZrZVlUMVBkU0lvd1JJUTlHX21yTkVReEFzYVlNTmE5Wnc?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-14T20:00:58.724768+00:00",
-   "title_ru": "Мексиканская компания Banamex продает рискованный долг в преддверии разделения Citi"
-  },
   {
    "title": "Perspectives économiques mondiales : Points principaux",
    "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5JalJUN3hkLUU0M3Y3YlIyc25meHNIdTZjM3FyRGZHTk5oZUg4UUdXNlVXSGtaWVE2eFBRWHZqU2o5c0poM3JNSTVCdkd6aHhmWGstYlAzallJamdY?oc=5",
@@ -9015,6 +8987,16 @@
    ],
    "score": 2,
    "ts": "2026-10-17T19:37:11.190517+00:00"
+  },
+  {
+   "title": "Projections for 25-2031 - BLS Data",
+   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQY0k3OWRITzlFREx5Q2dOdmp1WnZwSDVwVE9oUWhHQnN4OVhjODRqTkEzTkpTYnkta3ZMa3hMdGV6a09Cb0NOSUJNM00wQXp2dHdsX2pfaERmbTZGdWZvejlMdXN3bmw5NTlRUmV2MmNOOEZYOWxMZlFmUnVRUEI0OFN3?oc=5",
+   "sources": [
+    "US Labor Statistics (BLS)"
+   ],
+   "score": 4,
+   "ts": "2026-10-17T20:02:11.230447+00:00",
+   "title_ru": "Прогнозы на 25-2031 годы – данные BLS"
   }
  ],
  "last_digest": "2026-10-17",
