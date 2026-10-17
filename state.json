@@ -982,7 +982,11 @@
   "c188048fda85b2ce": "2026-10-17T11:56:19.289776+00:00",
   "1b8948e46756c1f9": "2026-10-17T12:06:19.226150+00:00",
   "f2d5f53c6ac1f4c8": "2026-10-17T12:11:19.218371+00:00",
-  "f321e6cb9ba5593a": "2026-10-17T12:11:19.218371+00:00"
+  "f321e6cb9ba5593a": "2026-10-17T12:11:19.218371+00:00",
+  "4b037303f2f9ce23": "2026-10-17T12:26:19.306666+00:00",
+  "401f60ccf83b2eeb": "2026-10-17T12:26:19.306666+00:00",
+  "3fd0b89b45bb6d9f": "2026-10-17T12:26:19.306666+00:00",
+  "937c6706108b51a1": "2026-10-17T12:26:19.306666+00:00"
  },
  "recent": [
   {
@@ -10081,6 +10085,29 @@
    "score": 3,
    "ts": "2026-10-17T12:11:19.218371+00:00",
    "title_ru": "Немецкий министр ищет освобождение от долгового тормоза для поддержания помощи Украине"
+  },
+  {
+   "title": "Charting the Global Economy: Inflationary Pressures Mount in US",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQeXl4SUV1NTFjOWVMZnRWUndTS1puajhGQ2cwZ21jcndqS2FPTmVBSC1Fbkc3ZjlYZDBLNlZPdUUyNEF1aWZVNlNIanJGRlNaX1lka1FDcXJTa0p6aEo1TDdxbEUzZTZDUmpZRVZYTWRjcmNGel9aZnRpaFlkSllCZ3RnWlN1X0dYeFVuZEJZRVExbVdhVWEyYVFKV09jN1htYXdiV21YcGhoUQ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-17T12:26:19.306666+00:00",
+   "title_ru": "График мировой экономики: инфляционное давление в США растет",
+   "tags": [
+    "inflation"
+   ]
+  },
+  {
+   "title": "World’s Oldest Gunmaker Opens to Capital Markets With Ruger Deal",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNSmw5VHZwaEJ2SFFXS0I3ODJBQWJsNlludWZSaEUzUVBlbDkwZVh4Nk1SZnEzQjZaTjVoaEhjRm56NGFUYjl5ZEpRX1RBWldzVXh1WEVmaXVXVjIzUWctT3Q2Z05XR1dOdEQyeUx3VUJtSmk1QUphWTZCcGxfSEtMMHVNRXJfTmREeHU0WF9oYVFvZm5iYkdEWmlKSzNweGhtczg3X1NTSXMzSFBXaUVhcDMwUFRKdw?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-17T12:26:19.306666+00:00",
+   "title_ru": "Старейший в мире производитель оружия выходит на рынки капитала со сделкой с Ruger"
   }
  ],
  "last_digest": "2026-10-16",
@@ -14115,7 +14142,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-17T11:26:19.268734+00:00",
+  "checked": "2026-10-17T12:26:19.306666+00:00",
   "sec_seen": [
    "0002116103-26-000002",
    "0001214659-26-013017",
@@ -14133,7 +14160,6 @@
    "0001225208-26-008439",
    "0001213900-26-110404",
    "0001213900-26-110429",
-   "0001437749-26-032864",
    "0001214659-26-013018",
    "0001437749-26-032866",
    "0001493152-26-047473",
@@ -14148,6 +14174,7 @@
    "0002086163-26-000012",
    "0001193125-26-424413",
    "0001193125-26-424414",
+   "0001780664-26-000041",
    "0001801661-26-000123",
    "0002088549-26-000015",
    "0001214659-26-013016",
@@ -14164,7 +14191,7 @@
    "0001193125-26-424412",
    "0001213900-26-110434",
    "0001193125-26-424428",
-   "0001780664-26-000041"
+   "0001437749-26-032864"
   ],
   "errors": {}
  }
