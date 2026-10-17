@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "706525b7ff13bca1": "2026-10-14T16:30:32.382495+00:00",
-  "638ace6a54026b8b": "2026-10-14T16:30:32.382495+00:00",
   "31fa85e97fb92419": "2026-10-14T16:40:32.405536+00:00",
   "f2512b43140e96a6": "2026-10-14T16:40:32.405536+00:00",
   "824eb62a0e8deb85": "2026-10-14T16:40:32.405536+00:00",
@@ -924,40 +922,6 @@
   "b566aa5f01dd989a": "2026-10-17T16:27:11.188084+00:00"
  },
  "recent": [
-  {
-   "title": "Stocks, Bonds Fall as CPI Data Fuel Fed-Hike Bets",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-14/stocks-bonds-fall-as-cpi-data-fuel-fed-hike-bets-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 10,
-   "ts": "2026-10-14T16:30:32.382495+00:00",
-   "title_ru": "Акции и облигации падают, поскольку данные по индексу потребительских цен подкрепляют ставки на повышение ФРС",
-   "lead": "Stocks joined bonds lower as the fastest increase in inflation since April bolstered bets the Federal Reserve will keep lifting interest rates amid elevated energy costs.",
-   "lead_ru": "Акции присоединились к падению облигаций, поскольку самый быстрый рост инфляции с апреля укрепил ставки на то, что Федеральная резервная система продолжит повышать процентные ставки на фоне роста цен на энергоносители.",
-   "tags": [
-    "ФРС",
-    "ставки",
-    "инфляция"
-   ]
-  },
-  {
-   "title": "Rising bond yields and higher inflation leave the Fed trapped in a rate-hike dilemma",
-   "link": "https://www.marketwatch.com/story/rising-bond-yields-and-higher-inflation-leave-the-fed-trapped-in-a-rate-hike-dilemma-d34ba326?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 7,
-   "ts": "2026-10-14T16:30:32.382495+00:00",
-   "title_ru": "Рост доходности облигаций и более высокая инфляция ставят ФРС перед дилеммой повышения ставок.",
-   "lead": "There isn’t any way to spin Wednesday’s hot consumer-price index report as good, especially when looking at the bond market’s reaction.",
-   "lead_ru": "Невозможно представить опубликованный в среду горячий отчет по индексу потребительских цен так же хорошо, особенно если посмотреть на реакцию рынка облигаций.",
-   "tags": [
-    "ФРС",
-    "инфляция",
-    "облигации"
-   ]
-  },
   {
    "title": "US Mortgage Rates Reach 7.5%; Home-Buying Slump Hits Sixth Week",
    "link": "https://www.bloomberg.com/news/videos/2026-10-14/us-mortgage-rates-reach-7-5-video",
@@ -13478,7 +13442,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-17T15:32:11.198914+00:00",
+  "checked": "2026-10-17T16:32:11.210551+00:00",
   "sec_seen": [
    "0002152984-26-000004",
    "0001213900-26-110436",
