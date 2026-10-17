@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "a5013c0c7795c27b": "2026-10-14T05:39:37.667394+00:00",
-  "b89f730412016b4b": "2026-10-14T05:39:37.667394+00:00",
-  "60115d95a70f09d9": "2026-10-14T05:39:37.667394+00:00",
-  "3449016b04b80117": "2026-10-14T05:39:37.667394+00:00",
-  "ccf211171ac3e611": "2026-10-14T05:39:37.667394+00:00",
   "f095ac4b0a5c3bfa": "2026-10-14T05:49:37.669225+00:00",
   "a143df8dd5ee8211": "2026-10-14T05:49:37.669225+00:00",
   "9b44a0a2e7d65534": "2026-10-14T05:49:37.669225+00:00",
@@ -1087,41 +1082,10 @@
   "787d06c65faf6594": "2026-10-17T04:40:51.252666+00:00",
   "378dacc916a5dc97": "2026-10-17T04:40:51.252666+00:00",
   "b3cab51499395c91": "2026-10-17T04:55:51.324117+00:00",
-  "e545c030814a8792": "2026-10-17T05:05:51.309121+00:00"
+  "e545c030814a8792": "2026-10-17T05:05:51.309121+00:00",
+  "f924252e90b6332a": "2026-10-17T05:40:51.285378+00:00"
  },
  "recent": [
-  {
-   "title": "IMF and World Bank Group Release ‘Bangkok Blueprint’ to Combat Cyber-Enabled Fraud in Digital Finance",
-   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPVElIbk1hOFo5QzlVUDRaWC03S0F6aHJudVhuRURhYVdvT2xVMzFybzVyUjVsWTdiMkdDVFhnR1dERVdwZ3doUG5aWXA4WkdWRk83LW1RYnlDN2dQejJVcDJ6RjV0bTBhVDJkYTlHQ0IzTUZDVUx2cWhDcExaZlYxMGViTVVHQXEyTWlIRkl4eU9EN1JQQ3k5bUFwWkFYYzV0aUtObk43T0NLTWZJbUdNZHJtcjdRVVN3X1hBM0NMVTFMaXRacDNLVlFONXg1alROVkNtS0hyZHNiQQ?oc=5",
-   "sources": [
-    "МВФ"
-   ],
-   "score": 6,
-   "ts": "2026-10-14T05:39:37.667394+00:00",
-   "title_ru": "МВФ и Группа Всемирного банка опубликовали «Бангкокский план» по борьбе с кибермошенничеством в сфере цифровых финансов"
-  },
-  {
-   "title": "African Caucus and IMF Reaffirm Partnership to Strengthen Resilience and Advance Economic Transformation",
-   "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOR0pkNUt1bnE2RERtVWNLcXNHZ2RSWk5EWE5rTXo3NjNGNldVbTFKTWhOQ01RWXM5Sl9HZVo0UkVCR3E2b011a3d3THBfVnQzbmpnZTJtejkwUktJd0lvR1FWcGlKNHpBZFgyNDRVVWRxeUV2MWlYd0RNVGIxV0xQbDJObDZhNFMtNTlQV3dyXy1LZE0tc0p2Zlktdk93dGdULURZZ2w2bTQ0cXFuYjFKUVNQQmRpRTR0bklHV2J6d2xZMGktMUFOLUhneTBlc1dTMEZvY2tRTHhBVWdPcWc?oc=5",
-   "sources": [
-    "МВФ"
-   ],
-   "score": 6,
-   "ts": "2026-10-14T05:39:37.667394+00:00",
-   "title_ru": "Африканская группа и МВФ подтверждают партнерство в целях повышения устойчивости и продвижения экономической трансформации"
-  },
-  {
-   "title": "MSETCL Said to Pick Banks for Up to $800 Million India IPO",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-14/msetcl-said-to-pick-banks-for-up-to-800-million-india-ipo",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-14T05:39:37.667394+00:00",
-   "title_ru": "MSETCL планирует выбрать банки для IPO в Индии на сумму до 800 миллионов долларов",
-   "lead": "Maharashtra State Electricity Transmission Co. has selected six investment banks for a planned initial public offering that could raise as much as $800 million, according to people familiar with the matter.",
-   "lead_ru": "По словам людей, знакомых с ситуацией, компания Maharashtra State Electricity Transmission Co. выбрала шесть инвестиционных банков для запланированного первичного публичного размещения акций, которое может привлечь до $800 млн."
-  },
   {
    "title": "China's Trade Surplus Nears $1T as Exports Surge",
    "link": "https://www.bloomberg.com/news/videos/2026-10-14/the-china-show-10-14-2026-video",
@@ -11229,6 +11193,16 @@
    "tags": [
     "ECB"
    ]
+  },
+  {
+   "title": "Chair’s Statement Fifty-Fourth Meeting of the IMFC",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWHlUTy02QUxtb0RmRGZYOUpFQnVZRmRHSlVBUWY0NV9QdUhMMGlRWmZTRkJEd1JZOS1PZzR4bkxqSW0zTWZjSUQ0RGZRdm5uZXQ2THlvS2ZmZ2J3MUpsTG8yRnNqQXY1eV9waG5KX2lCMVM2TWVQLXJEOUs0czk5ckc2ak1KN01qOHJOZDB5SndwUkp6WklhRm8zb1hOZzZIMTRUNDZVYlg?oc=5",
+   "sources": [
+    "IMF"
+   ],
+   "score": 4,
+   "ts": "2026-10-17T05:40:51.285378+00:00",
+   "title_ru": "Заявление Председателя Пятьдесят четвертое заседание МВФК"
   }
  ],
  "last_digest": "2026-10-16",
@@ -15272,7 +15246,6 @@
    "0001509409-26-000012",
    "0001193125-26-424421",
    "0002152990-26-000002",
-   "0001104659-26-116675",
    "0001213900-26-110401",
    "0002116103-26-000002",
    "0001213900-26-110404",
@@ -15280,6 +15253,7 @@
    "0000037785-26-000163",
    "0000037785-26-000160",
    "0000037785-26-000159",
+   "0001801661-26-000124",
    "0001214659-26-013016",
    "0001437749-26-032865",
    "0001193125-26-424413",
@@ -15310,7 +15284,7 @@
    "0001213900-26-110429",
    "0001193125-26-424412",
    "0001213900-26-110433",
-   "0001801661-26-000124",
+   "0001104659-26-116675",
    "0000037785-26-000165"
   ],
   "errors": {}
