@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e4bf0567e24ccaaf": "2026-10-14T01:09:08.381045+00:00",
   "d1942b80c4380e2e": "2026-10-14T01:19:08.529807+00:00",
   "770577da520d3e95": "2026-10-14T01:19:08.529807+00:00",
   "2ff16236e22cc053": "2026-10-14T01:19:08.529807+00:00",
@@ -1138,19 +1137,6 @@
   "8fa550907ff9ecca": "2026-10-17T00:50:25.267285+00:00"
  },
  "recent": [
-  {
-   "title": "Tech, energy, health stocks key this earnings season, says strategist",
-   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBXSU5aRjRzTmtGNVFoR1dodmlPdnFsUjVpRUcyQzhjQzQtTXNqVHVENUxnbl8yMWtyQ2VJR3ZKUlNYWlNGODhILTRtcHV5RVJwS2Z3NmRCNGtoT2hWSUZNY0FPQmc4N1FuSG1rendKS0w2WVdqb1N4RW5R?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-14T01:09:08.381045+00:00",
-   "title_ru": "Акции технологических, энергетических и медицинских компаний являются ключевыми в этом сезоне отчетности, говорит стратег",
-   "tags": [
-    "рынки"
-   ]
-  },
   {
    "title": "ECB’s Lane Says Boom in AI Is Tightening Financing Conditions",
    "link": "https://www.bloomberg.com/news/articles/2026-10-13/ecb-s-lane-says-boom-in-ai-is-tightening-financing-conditions",
@@ -11938,7 +11924,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 0,
+  "Fed": 1,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
