@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "0dfc4992d0876b7a": "2026-10-14T19:10:58.725679+00:00",
-  "a9261ba152f1139c": "2026-10-14T19:10:58.725679+00:00",
-  "16004354436cfad6": "2026-10-14T19:10:58.725679+00:00",
-  "65ad82a919bf2a02": "2026-10-14T19:10:58.725679+00:00",
-  "2e3928179b6a3f43": "2026-10-14T19:10:58.725679+00:00",
   "f083e216ca9c2779": "2026-10-14T19:40:58.778415+00:00",
   "5fc8b7576031891e": "2026-10-14T19:40:58.778415+00:00",
   "78ef0d2d572059f1": "2026-10-14T20:00:58.724768+00:00",
@@ -888,34 +883,10 @@
   "d61a93a3e173f2d0": "2026-10-17T17:57:11.195971+00:00",
   "9880f5af8a28129a": "2026-10-17T18:17:11.238883+00:00",
   "51a1255c651c1d05": "2026-10-17T18:27:11.231482+00:00",
-  "09d22651ab7c7418": "2026-10-17T18:32:11.231973+00:00"
+  "09d22651ab7c7418": "2026-10-17T18:32:11.231973+00:00",
+  "f609188b61929c58": "2026-10-17T19:12:11.221763+00:00"
  },
  "recent": [
-  {
-   "title": "Time to Worry About Tomorrow’s Trade War",
-   "link": "https://www.bloomberg.com/news/newsletters/2026-10-14/time-to-worry-about-tomorrow-s-trade-war",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-14T19:10:58.725679+00:00",
-   "title_ru": "Время беспокоиться о завтрашней торговой войне",
-   "lead": "Where Europe stands after trade talks with China.",
-   "lead_ru": "Какова позиция Европы после торговых переговоров с Китаем.",
-   "tags": [
-    "Китай",
-    "пошлины"
-   ]
-  },
-  {
-   "title": "What to expect at the next Fed meeting now that rate-hike odds are rising",
-   "link": "https://www.marketwatch.com/story/heres-what-the-fed-might-do-at-this-months-meeting-after-todays-hot-inflation-reading-087511b6?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 2,
-   "ts": "2026-10-14T19:10:58.725679+00:00"
-  },
   {
    "title": "Trump tariff threat built a US copper mountain, but the effects are fading",
    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPY3gxd3YzdVNNTjE2dnBDNTRBcTMwSkw4U0Z4R3pybkdaVHlILVBYUllUdVNWLXBVbGJLaHNmU2NkSzVWZTh4UHBWM3FwQlh6MFdmMnhoZE5CWU1sT0xfSUFramVfaVpoaTBUdTdrSGFJb3gxWENXZHhORnJiXzlWOUJldFBhVEJCM09SYTNSTWV6ZUtqREtmSGtuVnNHOHljRzZzVWQ5YmduV05zVnM5bDNKVTJ0Z3Zxa1E?oc=5",
@@ -9048,6 +9019,19 @@
    "score": 3,
    "ts": "2026-10-17T18:32:11.231973+00:00",
    "title_ru": "Десятки тысяч человек вышли на марш в Лиссабоне из-за стоимости жилья и жизни"
+  },
+  {
+   "title": "Managing Director's Fireside Chat with Federal Reserve Chairman Kevin Warsh",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQa1p1b3RUeVFZTWdxY3BkbXZpOTNYbmdPZmNybkV1T1VyQml6ak12REp3TVM5NEN4VllkeTJkSFFIczVoMzZ3M0lmcWk0anh2ZFdsY0hoUlloX1daWldyQXhhM05PXzRjSnFodEZiQVhReUlzdFVtbV9oRjFjdHhfcE9oTjY3SERKMkpTSXpB?oc=5",
+   "sources": [
+    "IMF"
+   ],
+   "score": 5,
+   "ts": "2026-10-17T19:12:11.221763+00:00",
+   "title_ru": "Беседа у камина управляющего директора с председателем Федеральной резервной системы Кевином Уоршем",
+   "tags": [
+    "Fed"
+   ]
   }
  ],
  "last_digest": "2026-10-17",
@@ -13134,8 +13118,6 @@
    "0002152990-26-000002",
    "0001780664-26-000041"
   ],
-  "errors": {
-   "sec": "TimeoutError: The read operation timed out"
-  }
+  "errors": {}
  }
 }
