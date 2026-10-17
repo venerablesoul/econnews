@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "a586d67672ff080f": "2026-10-14T07:20:02.827419+00:00",
   "1ac24fe9729b1221": "2026-10-14T07:40:02.803070+00:00",
   "9b93bbfc520dc5ac": "2026-10-14T07:40:02.803070+00:00",
   "e7360aa593fb2171": "2026-10-14T07:50:02.793145+00:00",
@@ -1067,22 +1066,11 @@
   "2d1597eea2d60755": "2026-10-17T06:05:51.266188+00:00",
   "1e2359f84ee5fe3e": "2026-10-17T06:15:51.316572+00:00",
   "f5264af38b63d68f": "2026-10-17T06:35:51.264678+00:00",
-  "2122e38ef9b365b3": "2026-10-17T06:50:51.298154+00:00"
+  "2122e38ef9b365b3": "2026-10-17T06:50:51.298154+00:00",
+  "25d90a7d08ab34b8": "2026-10-17T07:20:51.299514+00:00",
+  "9358634272222e93": "2026-10-17T07:20:51.299514+00:00"
  },
  "recent": [
-  {
-   "title": "Trump says oil, gas and mineral exploration to begin in Greenland",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNRXAwYWFZMS12UWs5MXF5SVpmYk9hR1Bka01FNFNTdVE3bUFYbi1qdXZjbVNDaDVfMWQ0ZGhZNERJYUhYVHFLR0ZiYl9Eby1sUG84VTNqVmViTXJmaWVBbEVQeVZHZzRfVGxNd0xBOWJ6c3RzVW1FY3NpUEtLaHdBTzNDWmhUS3Utb3B4ajFjVUxUcGFHdmotT0NwMU5kS2lmSVNYTGd5a0NWdw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-14T07:20:02.827419+00:00",
-   "title_ru": "Трамп заявил, что в Гренландии начнется разведка нефти, газа и полезных ископаемых",
-   "tags": [
-    "нефть"
-   ]
-  },
   {
    "title": "Сбербанк ждет сохранения ключевой ставки ЦБ в октябре",
    "link": "https://www.kommersant.ru/doc/9026103",
@@ -11022,6 +11010,33 @@
    "title_ru": "Ирак ищет программу МВФ, глава фонда обещает «очень твердую» поддержку",
    "lead": "The head of the IMF said that Iraq has approached the Washington-based lender for a new program, a request she said the fund intends to support.",
    "lead_ru": "Глава МВФ заявила, что Ирак обратился к вашингтонскому кредитору с просьбой о новой программе, и, по ее словам, фонд намерен поддержать эту просьбу."
+  },
+  {
+   "title": "Healey Laps Up the IMF’s Praise But the Real Test Is His Budget",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-17/healey-laps-up-the-imf-s-praise-but-the-real-test-is-his-budget",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-17T07:20:51.299514+00:00",
+   "title_ru": "Хили хвалит МВФ, но реальным тестом является его бюджет",
+   "lead": "Britain received unexpected praise for its fiscal restraint at the International Monetary Fund’s annual meetings in Bangkok this week.",
+   "lead_ru": "Великобритания получила неожиданную похвалу за свои финансовые ограничения на ежегодных заседаниях Международного валютного фонда в Бангкоке на этой неделе."
+  },
+  {
+   "title": "ECB Leans Toward December Hike as Bangkok Talks Expose Risks",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-17/ecb-leans-toward-december-hike-as-bangkok-talks-expose-risks",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-17T07:20:51.299514+00:00",
+   "title_ru": "ЕЦБ склоняется к декабрьскому подъему, поскольку переговоры в Бангкоке подвергают риску",
+   "lead": "European Central Bank officials are preparing to finish 2026 with a third interest-rate increase, the last before an increasingly complex backdrop overshadows decisions next year.",
+   "lead_ru": "Должностные лица Европейского центрального банка готовятся закончить 2026 год с третьим повышением процентной ставки, последнее, прежде чем все более сложный фон затмит решения в следующем году.",
+   "tags": [
+    "ECB"
+   ]
   }
  ],
  "last_digest": "2026-10-16",
@@ -15056,7 +15071,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-17T06:15:51.316572+00:00",
+  "checked": "2026-10-17T07:20:51.299514+00:00",
   "sec_seen": [
    "0000037785-26-000162",
    "0001193125-26-424426",
