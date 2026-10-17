@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "dce3ee81d9767226": "2026-10-14T10:00:02.847251+00:00",
-  "e7aa3c6c612bfea8": "2026-10-14T10:00:02.847251+00:00",
-  "7f81db8e3fcd9821": "2026-10-14T10:00:02.847251+00:00",
   "8479377da1bc8f62": "2026-10-14T10:10:02.831577+00:00",
   "19636e2d9c464f88": "2026-10-14T10:10:02.831577+00:00",
   "ab0b6e560d31fd3e": "2026-10-14T10:10:02.831577+00:00",
@@ -1039,35 +1036,11 @@
   "4b7af1d4a1539ce1": "2026-10-17T09:31:19.486583+00:00",
   "bafa27c0fa066c5b": "2026-10-17T09:46:19.246974+00:00",
   "0e166fbdc5c61bbc": "2026-10-17T09:46:19.246974+00:00",
-  "06856943d5334990": "2026-10-17T09:51:19.287654+00:00"
+  "06856943d5334990": "2026-10-17T09:51:19.287654+00:00",
+  "685860af6e92a5a8": "2026-10-17T10:01:19.203648+00:00",
+  "605d34182e90c291": "2026-10-17T10:01:19.203648+00:00"
  },
  "recent": [
-  {
-   "title": "Cheaper Yuan Debt Gives Chinese Firms an AI Funding Edge",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNNW81Q3B1SzVOcF9rbm84TkhzV1NDQjJOMWZ3MUNsdkFRRjZRejFfU3BZVVpCcWJqMUUtQU5uTGo0MmJSQm5IMzBiNkwtSGJ3TjFMQzBXVGNiTlZYN283Q25reUs3MThkU0poYUF0SDQ5Q3BFam1qQzZlbWRna1B2V1Z0VHN0TUItLXJGYTREaTYyUUMxYUMzeThSWm9ISTlSZndlYzVjdktadw?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-14T10:00:02.847251+00:00",
-   "title_ru": "Удешевление долга в юанях дает китайским фирмам преимущество в финансировании ИИ",
-   "tags": [
-    "Китай"
-   ]
-  },
-  {
-   "title": "Yemen's Houthis vow more attacks on Saudi airports, oil facilities after Aramco HQ hit",
-   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNV3VzaTd1VDVxNXczQ2FRa2FsXzdOV0Y5ZlFoaUthcVJhUnlFMHROUUMtWWZzUGZNWFd5WVNZbnJyZ3A4azRaUzNabVQ1U2ZMMmNYTzM1R2ZoeDF5dVQ0Q3FldDNEMW5lVC1oaVQ3Rmdaei01eS1GaFVla0prYUVZeEtJZlBZV2hoUm8yVTJNR3RYSXlhZTBPVWswNmdTWE5nclRiSldzUE91cXNZbzRGZzVOSFpMX294VWs3UlFpV2Q1Z09xTnl4Rw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-14T10:00:02.847251+00:00",
-   "title_ru": "Йеменские хуситы обещают увеличить количество нападений на саудовские аэропорты и нефтяные объекты после удара по штаб-квартире Aramco",
-   "tags": [
-    "нефть"
-   ]
-  },
   {
    "title": "S&P 500, Dow futures rise ahead of big bank results, CPI data",
    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPMDkzb0Zhb0ExSzhlSnR6c25HbzdpY2g1djVFZ1R4eVktaWtCZ2gya1lEdHpzcHlEM1VITE1Pdlc1MmlDclhQQmxOWC13NXdXZjhPOEYtUnc3bm80eThIZ0lEam8tN0hXV3kxNnhob3g5OHFxNHd5VzJsTks4SzlJR0JRVE5LZ2JMbXhYNFhvOC1yTUJ5bWFEN0JWTFdpaFkxN2c?oc=5",
@@ -10699,6 +10672,36 @@
    "tags": [
     "inflation"
    ]
+  },
+  {
+   "title": "ECB's Lagarde says bond selloff will slow inflation",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxORnNpbWFQTVJFZTQ1NDEzNVA1QlMyNThGdl8tR19Bd0UtQTAyVnBGRFBldDVOMFFnRHR0WkRHaS1CODVMSUFvSTZJdzN5a2NSbHFLbHA2bnZ0ZVBXYUprYS1oeGN6eF9lakVpVmRTSVB6VkpwUzlOVXZCME5ldGVmNmZPTUtuSGVnRTZzbENrQ1pGcFlScVZ1Sl9rQ1pHWUo1c1l4VUJn?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 11,
+   "ts": "2026-10-17T10:01:19.203648+00:00",
+   "title_ru": "Глава ЕЦБ Лагард заявила, что распродажа облигаций замедлит инфляцию",
+   "tags": [
+    "ECB",
+    "inflation",
+    "bonds"
+   ]
+  },
+  {
+   "title": "‘Resilience’ is the buzzword, but the scale of subsidies to weather chaos is untenable, warns IMF",
+   "link": "https://www.theguardian.com/business/2026/oct/17/imf-warns-scale-subsidies-weather-global-chaos-untenable",
+   "sources": [
+    "The Guardian"
+   ],
+   "score": 3,
+   "ts": "2026-10-17T10:01:19.203648+00:00",
+   "title_ru": "«Устойчивость» — модное слово, но масштабы субсидий на борьбу с погодным хаосом несостоятельны, предупреждает МВФ",
+   "lead": "Sky-high oil prices and geopolitical turmoil have made less of a dent than feared … just don’t bank on it to last Inside the vast, glass-walled Queen Sirikit conference centre in Bangkok, the air-conditioned atmosphere was calm…",
+   "lead_ru": "Заоблачные цены на нефть и геополитические потрясения оказали меньшее влияние, чем опасались… просто не рассчитывайте на то, что это продлится долго. Внутри огромного конференц-центра Queen Sirikit со стеклянными стенами в Бангкоке царила спокойная атмосфера с кондиционированием воздуха…",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-16",
@@ -14751,6 +14754,7 @@
    "0001225208-26-008439",
    "0001213900-26-110404",
    "0001213900-26-110429",
+   "0001437749-26-032864",
    "0001214659-26-013018",
    "0001437749-26-032866",
    "0001493152-26-047473",
@@ -14765,7 +14769,6 @@
    "0002086163-26-000012",
    "0001193125-26-424413",
    "0001193125-26-424414",
-   "0001780664-26-000041",
    "0001801661-26-000123",
    "0002088549-26-000015",
    "0001214659-26-013016",
@@ -14782,7 +14785,7 @@
    "0001193125-26-424412",
    "0001213900-26-110434",
    "0001193125-26-424428",
-   "0001437749-26-032864"
+   "0001780664-26-000041"
   ],
   "errors": {}
  }
