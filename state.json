@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "b20a095ce78bf965": "2026-10-14T17:50:32.306921+00:00",
-  "c058ae9af61a4b31": "2026-10-14T17:50:32.306921+00:00",
-  "5fd008f67f31ba3a": "2026-10-14T17:50:32.306921+00:00",
-  "1a6481b7e58503bf": "2026-10-14T17:50:59.032134+00:00",
   "5b8f68529b88ad41": "2026-10-14T18:10:59.260240+00:00",
   "4acc4b23f7259373": "2026-10-14T18:10:59.260240+00:00",
   "a61a106848f0d127": "2026-10-14T18:20:58.732349+00:00",
@@ -902,41 +898,11 @@
   "015aeccf4c240947": "2026-10-17T17:02:11.238745+00:00",
   "7024a0123ecb9632": "2026-10-17T17:22:11.253286+00:00",
   "66302b9996133336": "2026-10-17T17:27:11.228119+00:00",
-  "7573c5257a0af532": "2026-10-17T17:37:11.189508+00:00"
+  "7573c5257a0af532": "2026-10-17T17:37:11.189508+00:00",
+  "b20a095ce78bf965": "2026-10-17T17:57:11.195971+00:00",
+  "d61a93a3e173f2d0": "2026-10-17T17:57:11.195971+00:00"
  },
  "recent": [
-  {
-   "title": "Citi turns hawkish on Fed after inflation surprise, expects December rate hike",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQaTlWWnFXTFVrM3lHcHBOZF9YMzFUQkx5WmJXNE5ieXJoY29tVkZKZGRGT3JoX3NBNGNPSERqeW5CTnlDdWh0SWZDZ3gtcGQyOTBFSW90dmgwOEJTdV85SVJxV2dQUmtETDc1RlR4RFNXSzRDZTY2ZFNQTk4tajdmNWZST0FRd1BmaG5kSjhrbWdnVHY2MFNrcFNiaHF6aU1BOEZCSkNCOFZHTGV4TFNmS2czNWg1RHZnOHZN?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 9,
-   "ts": "2026-10-14T17:50:32.306921+00:00",
-   "title_ru": "Citi становится ястребиным в отношении ФРС после сюрприза по инфляции и ожидает повышения ставок в декабре",
-   "tags": [
-    "ФРС",
-    "ставки",
-    "инфляция"
-   ]
-  },
-  {
-   "title": "Fed’s Warsh to Get Final Word in Bangkok as Inflation Roars Back",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-14/fed-s-warsh-to-get-final-word-in-bangkok-as-inflation-roars-back",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 7,
-   "ts": "2026-10-14T17:50:32.306921+00:00",
-   "title_ru": "Уорш ФРС выскажет последнее слово в Бангкоке, поскольку инфляция возвращается",
-   "lead": "September’s hot inflation data lit up expectations that the Federal Reserve may raise interest rates this month, a prospect that appeared unlikely after policymakers in recent weeks signaled they had time to wait.",
-   "lead_ru": "Горячие сентябрьские данные по инфляции усилили ожидания того, что Федеральная резервная система может повысить процентные ставки в этом месяце, но эта перспектива оказалась маловероятной после того, как политики в последние недели дали понять, что у них есть время подождать.",
-   "tags": [
-    "ФРС",
-    "ставки",
-    "инфляция"
-   ]
-  },
   {
    "title": "Will mortgage rates stay above 7% in 2027?",
    "link": "https://www.marketwatch.com/story/will-mortgage-rates-stay-above-7-in-2027-437873bd?mod=mw_rss_topstories",
@@ -9213,6 +9179,16 @@
     "sanctions",
     "Russia"
    ]
+  },
+  {
+   "title": "Florida's stone crab season begins amid economic woes",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5QeGNEUndKMDZESW45SWVsRXpGOHIzUjNwclRhd1pzTmt5VnUxNzYwMmloZUE0cE5zbVYybEV4X3UtZ2pxVGRmTk1MU2pCTHVJZTBsMXhhNTV0UlB2RGdnR19URndrYW5hUm5nTVFvT0UtQzFqOUk2ZnFuZDhWUQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-17T17:57:11.195971+00:00",
+   "title_ru": "Сезон каменных крабов во Флориде начинается на фоне экономических проблем"
   }
  ],
  "last_digest": "2026-10-16",
