@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "7f16e50d442fda68": "2026-10-14T04:59:37.717953+00:00",
   "0df526d7137af531": "2026-10-14T05:09:37.726093+00:00",
   "13833870da423396": "2026-10-14T05:09:37.726093+00:00",
   "a1d13a0288227198": "2026-10-14T05:09:37.726093+00:00",
@@ -1100,19 +1099,10 @@
   "2d7aa1e24aa29815": "2026-10-17T04:30:51.318768+00:00",
   "787d06c65faf6594": "2026-10-17T04:40:51.252666+00:00",
   "378dacc916a5dc97": "2026-10-17T04:40:51.252666+00:00",
-  "b3cab51499395c91": "2026-10-17T04:55:51.324117+00:00"
+  "b3cab51499395c91": "2026-10-17T04:55:51.324117+00:00",
+  "e545c030814a8792": "2026-10-17T05:05:51.309121+00:00"
  },
  "recent": [
-  {
-   "title": "IMF's Georgieva says US growth will not be enough to shrink debt",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPTzl5X29wWW9IbDNPaWhLZDBzeGN2bjdVbnhRSGVmV2xyTHdkZmVnVkZocndZV3pTX2ItUWJ2eUZpa0hFNEw2bk1pR1pGZ0ZsX3dQc0RlZzZpYjdrRERRUXNyTkJfbGJNcUQ3ZHlGQU1TcWRNYjFQQ3oxT3ROVFQwNWVRUERON05HbUpOZ0tIdWtFeXZKMURlUnBIVXJGT0RUc0Q3MXUtZmU?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-14T04:59:37.717953+00:00",
-   "title_ru": "Представитель МВФ Георгиева говорит, что экономического роста США будет недостаточно для сокращения долга"
-  },
   {
    "title": "IMF / Fiscal Monitor Report Annual Meetings, 2026",
    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQcjQzOEJSb29semg4S1RHYTVrZHAwd0o3NW1hd3FXbDliYlppbGp1OHlVM09EZk1LTmRmTXRFRjJXNE11S3BxOUZndC1PXzBJTlA2QWJfemQ4U2FGZlRYMjlBVnRtSnlwdzFKQVN2R2J4My1IVzZ4dDFiOFBlekxNRXNKTXNndHRMSjdoQTRsSVNtM201amlmRmx2bjdIdXdVSmRLTVFsM1J1VHYzOHlVMk5DelJCNG5yb0Y0cndR?oc=5",
@@ -11401,6 +11391,19 @@
    "title_ru": "Банку Японии, возможно, придется ужесточать политику быстрее, если инфляция превысит прогноз, говорит МВФ",
    "tags": [
     "inflation"
+   ]
+  },
+  {
+   "title": "Christine Lagarde: IMFC Statement",
+   "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261017~7015ea3099.en.html",
+   "sources": [
+    "ECB"
+   ],
+   "score": 7,
+   "ts": "2026-10-17T05:05:51.309121+00:00",
+   "title_ru": "Кристин Лагард: Заявление МВФК",
+   "tags": [
+    "ECB"
    ]
   }
  ],
