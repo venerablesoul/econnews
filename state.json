@@ -1039,7 +1039,9 @@
   "a2447d51573d1aad": "2026-10-17T09:10:51.308558+00:00",
   "da9003f7eb212803": "2026-10-17T09:21:19.255516+00:00",
   "832a78355b5128d5": "2026-10-17T09:21:19.255516+00:00",
-  "4b7af1d4a1539ce1": "2026-10-17T09:31:19.486583+00:00"
+  "4b7af1d4a1539ce1": "2026-10-17T09:31:19.486583+00:00",
+  "bafa27c0fa066c5b": "2026-10-17T09:46:19.246974+00:00",
+  "0e166fbdc5c61bbc": "2026-10-17T09:46:19.246974+00:00"
  },
  "recent": [
   {
@@ -10707,6 +10709,31 @@
    "tags": [
     "GDP"
    ]
+  },
+  {
+   "title": "Press Briefing Transcript: International Monetary and Financial Committee, Annual Meetings 2026",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNUVhrTF9OSkpROGpEcmZqcENnWkl5YzF3S2dtczROaTgwNVBSUGdoTkJoQ1hGNldsYXMzajU3ek1GMFdMaHEyLVRnVTJfazZraWczd0wybDJvakVVVDI2Rk9NTF8zbEpoRzZBWW45WGo1MHhoakkzeVRfYVZ4UllWZEliTDhvcmdLd0dJSWJuSXduWnZKU2dpSkRYSTNGcWRsSENmYzZneERwWFNwSU5Xaw?oc=5",
+   "sources": [
+    "IMF"
+   ],
+   "score": 4,
+   "ts": "2026-10-17T09:46:19.246974+00:00",
+   "title_ru": "Стенограмма пресс-брифинга: Ежегодные заседания Международного валютно-финансового комитета в 2026 г."
+  },
+  {
+   "title": "World Economy Latest: Inflationary Pressures Mount in US",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-17/world-economy-latest-inflationary-pressures-mount-in-us",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-17T09:46:19.246974+00:00",
+   "title_ru": "Последние новости мировой экономики: инфляционное давление в США растет",
+   "lead": "Inflationary pressures are mounting in the US, with fresh consumer and wholesale price data indicating costlier fuel is filtering through into higher prices for other goods and services.",
+   "lead_ru": "Инфляционное давление в США растет: свежие данные о потребительских и оптовых ценах указывают на то, что более дорогое топливо приводит к росту цен на другие товары и услуги.",
+   "tags": [
+    "inflation"
+   ]
   }
  ],
  "last_digest": "2026-10-16",
@@ -14759,7 +14786,6 @@
    "0001225208-26-008439",
    "0001213900-26-110404",
    "0001213900-26-110429",
-   "0001437749-26-032864",
    "0001214659-26-013018",
    "0001437749-26-032866",
    "0001493152-26-047473",
@@ -14774,6 +14800,7 @@
    "0002086163-26-000012",
    "0001193125-26-424413",
    "0001193125-26-424414",
+   "0001780664-26-000041",
    "0001801661-26-000123",
    "0002088549-26-000015",
    "0001214659-26-013016",
@@ -14790,7 +14817,7 @@
    "0001193125-26-424412",
    "0001213900-26-110434",
    "0001193125-26-424428",
-   "0001780664-26-000041"
+   "0001437749-26-032864"
   ],
   "errors": {}
  }
