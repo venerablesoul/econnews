@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "b9c8a07bf7e8357b": "2026-10-14T02:29:37.683979+00:00",
-  "81f409a6b610b530": "2026-10-14T02:29:37.683979+00:00",
-  "dd12e8e21d0a2bd4": "2026-10-14T02:29:37.683979+00:00",
-  "8581bfb7e3599be7": "2026-10-14T02:29:37.683979+00:00",
   "c07b55a8d6dbf2b2": "2026-10-14T02:39:37.695124+00:00",
   "2f0bc9352cc4463c": "2026-10-14T02:49:37.735854+00:00",
   "7f4c148f94715149": "2026-10-14T02:49:37.735854+00:00",
@@ -1127,47 +1123,10 @@
   "53e47341db83ad5b": "2026-10-17T01:40:25.253607+00:00",
   "d1dfbbc61f5cbc36": "2026-10-17T01:50:25.255763+00:00",
   "6964f959c6bc9540": "2026-10-17T02:05:25.292211+00:00",
-  "6b46f89470c55219": "2026-10-17T02:10:25.307978+00:00"
+  "6b46f89470c55219": "2026-10-17T02:10:25.307978+00:00",
+  "036b88c2d9f52df6": "2026-10-17T02:35:25.264841+00:00"
  },
  "recent": [
-  {
-   "title": "IMF says higher bond yields underscore urgency of fiscal consolidation",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPVl9LNkxlZ1YzZDRNdElzSkY5WU5kX00tdUxSbU5CY1RZeGl2VkVIS1VSMWNyYkpZSnRyM1FTdzd4YjFPTnB3M0xMRXJaZkV6REk4YzRhZVRaSXRCSGY2a3VZcVdaLW9nbWVibGc3ZTFidHFMakFibnYxZ1RTdGg1d25OMy1hcTRqNWNCNXJmQ3paZ0ZZcnlVaVozNXIxbTQza2lDWno1dUdmbUlYeTlqV3NFeUlwdw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-14T02:29:37.683979+00:00",
-   "title_ru": "МВФ заявляет, что более высокая доходность облигаций подчеркивает срочность бюджетной консолидации",
-   "tags": [
-    "облигации"
-   ]
-  },
-  {
-   "title": "Stocks end lower as chipmakers fall and bank earnings roll in",
-   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1yZWVTSDVBcDk2a2xmeVpicXdEdHJrQjk5U1lLQ0xSWFhiM21XZnNscENLWkdRWEZzYVh4bjdCS3hrcXlnOE5qRUx6aDdGVXlNaG1jSGdQOTVwTGFtMnUtVjFRV1lJRDg?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-14T02:29:37.683979+00:00",
-   "title_ru": "Акции заканчиваются падением, поскольку производители чипов падают, а доходы банков растут",
-   "tags": [
-    "рынки"
-   ]
-  },
-  {
-   "title": "How HSBC Is Pivoting to Indian Growth Opportunities",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-14/how-hsbc-is-pivoting-to-indian-growth-opportunities-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-14T02:29:37.683979+00:00",
-   "title_ru": "Как HSBC ориентируется на возможности роста Индии",
-   "lead": "Surendra Rosha, HSBC Asia & Middle East Co-Chief Executive, discusses growth opportunities in India including infrastructure buildout. (Source: Bloomberg)",
-   "lead_ru": "Сурендра Роша, сопредседатель правления HSBC по Азии и Ближнему Востоку, обсуждает возможности роста в Индии, включая строительство инфраструктуры. (Источник: Блумберг)"
-  },
   {
    "title": "Speculation Over STT Cut Lifts Sentiment for Indian Stocks",
    "link": "https://www.bloomberg.com/news/newsletters/2026-10-14/speculation-over-stt-cut-lifts-sentiment-for-indian-stocks",
@@ -11796,6 +11755,19 @@
     "tariffs",
     "sanctions",
     "Russia"
+   ]
+  },
+  {
+   "title": "NY Fed service sector survey finds notable price pressures",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNRUZQN0xNTG13b0ZRZk04Q0pxNHNKYjdMMFFoRTZPcHVWYXB2amtrQjJ3bWZfTUliRnR2MTlmTWJCaG9ybm8tR0JlanVIbjlGMFBiUmNtTXhKSTZQRUloN2p3eXN3b0JZa0xNaHNqWVZFZ0t0WDBzSXlsWDg4ekFzWlR5NTcxSm5NRlhlVmoxMHlHM1RJcGFXUklSbTJ3MkM4c3Q1ZHN3?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-17T02:35:25.264841+00:00",
+   "title_ru": "Исследование сектора услуг ФРС Нью-Йорка выявило заметное ценовое давление",
+   "tags": [
+    "Fed"
    ]
   }
  ],
