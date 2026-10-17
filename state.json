@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "1e00c6fc540eb92c": "2026-10-14T16:50:32.307685+00:00",
-  "dac09cfb2e2fba79": "2026-10-14T16:50:32.307685+00:00",
-  "3b81581eaf02a4cf": "2026-10-14T16:50:32.307685+00:00",
-  "cfa09962906efcdf": "2026-10-14T16:50:32.307685+00:00",
   "a409f8ebdb3f8eb3": "2026-10-14T17:00:32.413656+00:00",
   "de5b2fb1d93d6874": "2026-10-14T17:00:32.413656+00:00",
   "481e35200bed802a": "2026-10-14T17:00:32.413656+00:00",
@@ -915,45 +911,10 @@
   "a3ae602645029b26": "2026-10-17T16:07:11.258428+00:00",
   "2fb9a3ff9b2258ea": "2026-10-17T16:17:11.234853+00:00",
   "183b9f7c60dcc637": "2026-10-17T16:27:11.188084+00:00",
-  "b566aa5f01dd989a": "2026-10-17T16:27:11.188084+00:00"
+  "b566aa5f01dd989a": "2026-10-17T16:27:11.188084+00:00",
+  "1e00c6fc540eb92c": "2026-10-17T16:57:11.225338+00:00"
  },
  "recent": [
-  {
-   "title": "Инфляция в России ускорилась до 7,22%",
-   "link": "https://www.kommersant.ru/doc/9026710",
-   "sources": [
-    "Коммерсантъ"
-   ],
-   "score": 5,
-   "ts": "2026-10-14T16:50:32.307685+00:00",
-   "lead": "Годовая инфляция в России на 12 октября составила 7,22% против 7,17% неделей ранее. Это следует из данных Минэкономики.",
-   "tags": [
-    "инфляция",
-    "Россия"
-   ]
-  },
-  {
-   "title": "SEC Approves Cboe’s KPI Prediction-Market Bets With Robinhood",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-14/sec-approves-cboe-s-kpi-prediction-market-bets-with-robinhood",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-14T16:50:32.307685+00:00",
-   "title_ru": "Комиссия по ценным бумагам и биржам (SEC) одобрила ставки CBOE на рынке прогнозов KPI с помощью Robinhood",
-   "lead": "Cboe Global Markets Inc. won approval from the Securities and Exchange Commission to become the first securities exchange to list options contracts tied to publicly-traded companies’ performance metrics.",
-   "lead_ru": "Cboe Global Markets Inc. получила одобрение Комиссии по ценным бумагам и биржам и стала первой биржей ценных бумаг, которая разместила опционные контракты, привязанные к показателям эффективности публично торгуемых компаний."
-  },
-  {
-   "title": "As Wall Street banks finance and adopt AI, risks mount on both fronts",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQZDh1RnYtQmd3b0ZLYjh6dVd0cllieVhyUkpCbHB3SjdLMFc0N3FKOFVDbm1ISVhGNVVnY3ktVUVxcmszWjZacjJ5TkNLWVkyOHJpQTUzaEg5M0RsdXBvRXBqaWlWVFdHSU8wSGRWdi1kMkVmaGZjSVVEZWIzQnI3U21vTHBzS3VzRE5qckVzOVg4NXcwR1JpTDMyT083cTRYb1NWWWFIY1ZUd3h6MklfamVTNEw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-14T16:50:32.307685+00:00",
-   "title_ru": "Поскольку банки Уолл-стрит финансируют и внедряют ИИ, риски растут на обоих фронтах."
-  },
   {
    "title": "How high inflation became a 'fact of life' in the U.S.",
    "link": "https://www.cnbc.com/2026/10/14/high-inflation-fed-expectations.html",
