@@ -1,12 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "8479377da1bc8f62": "2026-10-14T10:10:02.831577+00:00",
-  "19636e2d9c464f88": "2026-10-14T10:10:02.831577+00:00",
-  "ab0b6e560d31fd3e": "2026-10-14T10:10:02.831577+00:00",
-  "c2a8c5748beb63d5": "2026-10-14T10:10:02.831577+00:00",
-  "c6ed9b5f2b296be4": "2026-10-14T10:10:02.831577+00:00",
-  "cfab709b502d2c30": "2026-10-14T10:10:02.831577+00:00",
   "d534f3bb1e68de4b": "2026-10-14T10:20:02.799575+00:00",
   "1be4047289339a35": "2026-10-14T10:20:02.799575+00:00",
   "75f70739a412ecc4": "2026-10-14T10:20:02.799575+00:00",
@@ -1041,76 +1035,6 @@
   "605d34182e90c291": "2026-10-17T10:01:19.203648+00:00"
  },
  "recent": [
-  {
-   "title": "S&P 500, Dow futures rise ahead of big bank results, CPI data",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPMDkzb0Zhb0ExSzhlSnR6c25HbzdpY2g1djVFZ1R4eVktaWtCZ2gya1lEdHpzcHlEM1VITE1Pdlc1MmlDclhQQmxOWC13NXdXZjhPOEYtUnc3bm80eThIZ0lEam8tN0hXV3kxNnhob3g5OHFxNHd5VzJsTks4SzlJR0JRVE5LZ2JMbXhYNFhvOC1yTUJ5bWFEN0JWTFdpaFkxN2c?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 7,
-   "ts": "2026-10-14T10:10:02.831577+00:00",
-   "title_ru": "S&P 500, фьючерсы на Dow растут в преддверии результатов крупных банков и данных CPI",
-   "tags": [
-    "инфляция",
-    "рынки"
-   ]
-  },
-  {
-   "title": "Bank of England's Pill says he's sceptical about market pricing four rate hikes",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNTzF1Y3FqN0hEMDctSVFDTU1EajlQcmhEa18zY1lGUW8zR253eWF3LUs5UGxXcnlZYUxrQ0Q2RUdyeFBXbkU2bUVRTnZKTFJzU0ZiMVVFSVVBSktXT284aGtlTVpqTXNZRE9aS01jZ3poNlVudjZxSDM3YWxnMDR5a2NUWllQQmlKRE9ydi03cTlxOWdPaUZzZ0QxVlNsM3NaMnpTX1c1V0JNQUJKejFTM2JWTUZidGxfYjdZ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-14T10:10:02.831577+00:00",
-   "title_ru": "Представитель Банка Англии говорит, что он скептически относится к рыночным ценам на четыре повышения ставок",
-   "tags": [
-    "ставки"
-   ]
-  },
-  {
-   "title": "Slovak Lawmakers Back Wider Deficit as Fico Readies for Election",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-14/slovak-lawmakers-back-wider-deficit-as-fico-readies-for-election",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-14T10:10:02.831577+00:00",
-   "title_ru": "Словацкие законодатели поддерживают увеличение дефицита, поскольку Fico готовится к выборам",
-   "lead": "Slovakia’s parliament backed a budget for next year criticized by the opposition and fiscal watchdog as Prime Minister Robert Fico looks set to seek a fifth term in office.",
-   "lead_ru": "Парламент Словакии поддержал бюджет на следующий год, который подвергся критике со стороны оппозиции и органов финансового надзора, поскольку премьер-министр Роберт Фицо, похоже, собирается баллотироваться на пятый срок."
-  },
-  {
-   "title": "'It's definitely tight trying to budget on maternity leave'",
-   "link": "https://www.bbc.co.uk/news/articles/c3ewegye0g0qo?at_medium=RSS&at_campaign=rss",
-   "sources": [
-    "BBC"
-   ],
-   "score": 3,
-   "ts": "2026-10-14T10:10:02.831577+00:00",
-   "title_ru": "«Определенно сложно планировать бюджет отпуска по беременности и родам»",
-   "lead": "An estimated 47,500 people in Sheffield are unable to make ends meet and pay their bills.",
-   "lead_ru": "По оценкам, 47 500 человек в Шеффилде не могут свести концы с концами и оплатить свои счета."
-  },
-  {
-   "title": "UK's Ashmore first-quarter inflows beat expectations on emerging market resilience",
-   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPTVNqT3dkY254Y0VlaEpXTEREb0lmb0ZjMFM4X2JtN2V2bUMwYVpyU09wSmhHZkczS0d2ZTdPZElUeXo1RHI2QlVZMHJZNFl1MV8tcUN5SF9SUjl5WnFGRU1FY1JYTF9aOFllNTNMYzhNazl1MXlIQVBtSkViSzJZWkpFRmszOTRPRzZiMm5Oei15VlQ1amd3TnNoeVVIdGo0b3lscExHZEltLUViNWRlLW40UExiZXZkZk9TZWZCbEhaN3ZHUWNrLXpsMA?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-14T10:10:02.831577+00:00",
-   "title_ru": "Приток инвестиций в Ашмор в Великобритании в первом квартале превзошел ожидания устойчивости развивающихся рынков"
-  },
-  {
-   "title": "Investors have made big bets on tech stocks. Why one strategist just downgraded the sector.",
-   "link": "https://www.marketwatch.com/story/investors-have-made-big-bets-on-tech-stocks-why-one-strategist-just-downgraded-the-sector-4c893077?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 2,
-   "ts": "2026-10-14T10:10:02.831577+00:00"
-  },
   {
    "title": "South African rand edges up ahead of US inflation data",
    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNYlRMRWhlQ2VsQVZXdmxYekxoenBKai00cmNaMzdkNmMxSUpuLWVwczkzTTRLTTJIMWwxWTVMWGpWYXM4WS1DTWdOclRrZi16ZlpHZlRmSXRVV2x5T255MjhpTDkxdlU5bEtHS2M4ZkNFR3pkNEZ2RGR2V18tOXhBaFQyd0lJTDBYZ3V6T0MxRkNWSm1RNTJFR2hyRmQ1WGJRSGc?oc=5",
