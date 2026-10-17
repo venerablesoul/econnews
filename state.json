@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "b75fe5fe830a4cf2": "2026-10-14T05:59:37.703799+00:00",
-  "ec16f8a611e27bbe": "2026-10-14T05:59:37.703799+00:00",
   "44aed4e6dd329e97": "2026-10-14T06:09:37.726479+00:00",
   "32ec3a42efb0206f": "2026-10-14T06:09:37.726479+00:00",
   "c735077890cada2b": "2026-10-14T06:09:37.726479+00:00",
@@ -1083,34 +1081,6 @@
   "f924252e90b6332a": "2026-10-17T05:40:51.285378+00:00"
  },
  "recent": [
-  {
-   "title": "BOE’s Bailey Says Getting Harder to Avoid Inflationary Impact",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-13/boe-s-bailey-says-getting-harder-to-avoid-inflationary-impact",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-14T05:59:37.703799+00:00",
-   "title_ru": "Бэйли из Банка Англии говорит, что становится все труднее избежать инфляционного воздействия",
-   "lead": "Bank of England Governor Andrew Bailey said that while the impact of the energy-cost shock from the US-Iran war on broader UK inflation has been limited so far, it’s getting harder to avoid.",
-   "lead_ru": "Управляющий Банка Англии Эндрю Бэйли заявил, что, хотя влияние шока цен на энергоносители, вызванного американо-иранской войной, на более широкую инфляцию в Великобритании пока ограничено, его становится все труднее избежать.",
-   "tags": [
-    "инфляция"
-   ]
-  },
-  {
-   "title": "FTSE 100 Live: Pound, UK Stocks Set for Small Gains",
-   "link": "https://www.bloomberg.com/news/live-blog/2026-10-14/ftse-100-live-updates-pound-gilts-bonds-oil-prices-asml-ecb-what-s-moving-uk-markets-right-now-markets-today",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-14T05:59:37.703799+00:00",
-   "title_ru": "FTSE 100 в реальном времени: фунт и британские акции ждут небольшой рост",
-   "tags": [
-    "рынки"
-   ]
-  },
   {
    "title": "ECB's Lagarde says solution to French debt woes is at home",
    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOMEJ0NHFvYk1XVi1ZRzBuRGUxMDA1czZ1SjNXYTE3OHZSWmV2ak9ZajNJamlmODVYd2w1QWMyTmppSVpHOGs1allzSS1QV2JwaHlkeVdtZ0tBU0R0ODhjOWV4a1F1Sktlel81aHYyNDA0VlhqLUJrdk1fV1J2S1VHRTR1ZW1rcF9nR2JUajZKanY0UWRfZkp5Zlp3SjBXSkhkSHpVMy1tSQ?oc=5",
@@ -11196,7 +11166,8 @@
   "2026-10-15-09",
   "2026-10-15-21",
   "2026-10-16-09",
-  "2026-10-16-21"
+  "2026-10-16-21",
+  "2026-10-17-09"
  ],
  "calendar": {
   "fetched": "2026-10-17T03:35:25.190341+00:00",
@@ -12104,7 +12075,7 @@
   "GBP|2026-10-16T02:00:00+00:00|BOE Gov Bailey Speaks",
   "USD|2026-10-16T03:30:00+00:00|Fed Chairman Warsh Speaks"
  ],
- "last_morning": "2026-10-16",
+ "last_morning": "2026-10-17",
  "all_down_alerted": false,
  "trades": {
   "congress": [
