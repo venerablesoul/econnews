@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "f083e216ca9c2779": "2026-10-14T19:40:58.778415+00:00",
-  "5fc8b7576031891e": "2026-10-14T19:40:58.778415+00:00",
   "78ef0d2d572059f1": "2026-10-14T20:00:58.724768+00:00",
   "3b3a4fd7623405d4": "2026-10-14T20:00:58.724768+00:00",
   "937bdf9915684977": "2026-10-14T20:00:58.724768+00:00",
@@ -885,35 +883,10 @@
   "51a1255c651c1d05": "2026-10-17T18:27:11.231482+00:00",
   "09d22651ab7c7418": "2026-10-17T18:32:11.231973+00:00",
   "f609188b61929c58": "2026-10-17T19:12:11.221763+00:00",
-  "155d1e0aaeb144fc": "2026-10-17T19:27:11.219550+00:00"
+  "155d1e0aaeb144fc": "2026-10-17T19:27:11.219550+00:00",
+  "70cce20a6c6ae6cd": "2026-10-17T19:37:11.190517+00:00"
  },
  "recent": [
-  {
-   "title": "Trump tariff threat built a US copper mountain, but the effects are fading",
-   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPY3gxd3YzdVNNTjE2dnBDNTRBcTMwSkw4U0Z4R3pybkdaVHlILVBYUllUdVNWLXBVbGJLaHNmU2NkSzVWZTh4UHBWM3FwQlh6MFdmMnhoZE5CWU1sT0xfSUFramVfaVpoaTBUdTdrSGFJb3gxWENXZHhORnJiXzlWOUJldFBhVEJCM09SYTNSTWV6ZUtqREtmSGtuVnNHOHljRzZzVWQ5YmduV05zVnM5bDNKVTJ0Z3Zxa1E?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-14T19:40:58.778415+00:00",
-   "title_ru": "Тарифная угроза Трампа создала медную гору в США, но эффект ослабевает",
-   "tags": [
-    "пошлины"
-   ]
-  },
-  {
-   "title": "Nigeria State Oil Firm Advances IPO Plans After Dangote Success",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPYWMwMGlRMWN1MFNLbTdndW14enVyWjhmckxoaTBraUFsR0lUU3hWbXZTLV9IMGk4dzZ3LVZMaXF6NFNNNkVqZGFseWVWSW83bG5HSFFGS3luUDRUMHF6LWFKaV9ZQlVCRHpSR09wNE1WMktRSnZqdW9jbnRoUkE5RzhfUE93M0twREtVTXRReVhzeUg1am5uUzJZVFN5VlpISGIwU29HQkNnbjlPMlhENE1rai0?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-14T19:40:58.778415+00:00",
-   "title_ru": "Государственная нефтяная компания Нигерии продвигает планы IPO после успеха в Данготе",
-   "tags": [
-    "нефть"
-   ]
-  },
   {
    "title": "US chip stocks slide as inflation and AI debt fears unsettle investors",
    "link": "https://www.ft.com/content/fb258413-e88d-47fe-98c8-f645adaea1e1?syn-25a6b1a6=1",
@@ -9033,6 +9006,15 @@
    "tags": [
     "Fed"
    ]
+  },
+  {
+   "title": "Bild узнал об увеличении дефицита бюджета Германии до более 30% к 2030 г.",
+   "link": "https://www.rbc.ru/economics/17/10/2026/6ad3a74d6930dce2d3971637",
+   "sources": [
+    "RBC"
+   ],
+   "score": 2,
+   "ts": "2026-10-17T19:37:11.190517+00:00"
   }
  ],
  "last_digest": "2026-10-17",
@@ -13068,7 +13050,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-17T18:37:11.210846+00:00",
+  "checked": "2026-10-17T19:42:11.289089+00:00",
   "sec_seen": [
    "0002152984-26-000004",
    "0001213900-26-110436",
