@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "63452fa41d99e3f9": "2026-10-14T16:00:32.383929+00:00",
-  "a6af96c2bc723efc": "2026-10-14T16:00:32.383929+00:00",
-  "a6ff37e3d20857ad": "2026-10-14T16:00:32.383929+00:00",
-  "8f343acbc9ce1342": "2026-10-14T16:00:32.383929+00:00",
   "902e93ec51296e3e": "2026-10-14T16:10:32.335886+00:00",
   "5c12b14c3f3add50": "2026-10-14T16:10:32.335886+00:00",
   "183b9f7c60dcc637": "2026-10-14T16:20:32.289384+00:00",
@@ -923,49 +919,13 @@
   "9cf0ebd78a4e9306": "2026-10-17T14:21:19.236667+00:00",
   "bda51c97fd34bfe4": "2026-10-17T14:41:19.318350+00:00",
   "913bd1eedc5400b9": "2026-10-17T15:17:11.198507+00:00",
-  "8740d1c9ead0b426": "2026-10-17T15:37:11.242550+00:00"
+  "8740d1c9ead0b426": "2026-10-17T15:37:11.242550+00:00",
+  "37c90152e665a905": "2026-10-17T16:07:11.258428+00:00",
+  "a929471a3473abff": "2026-10-17T16:07:11.258428+00:00",
+  "816a80d6751e770b": "2026-10-17T16:07:11.258428+00:00",
+  "a3ae602645029b26": "2026-10-17T16:07:11.258428+00:00"
  },
  "recent": [
-  {
-   "title": "'It's rough out here': Americans struggle with rising inflation",
-   "link": "https://www.bbc.co.uk/news/articles/c305649p2d6o?at_medium=RSS&at_campaign=rss",
-   "sources": [
-    "BBC"
-   ],
-   "score": 5,
-   "ts": "2026-10-14T16:00:32.383929+00:00",
-   "title_ru": "«Здесь тяжело»: американцы борются с растущей инфляцией",
-   "lead": "US inflation continues to rise, and this month the jump was above forecasts. Here's how some are surviving.",
-   "lead_ru": "Инфляция в США продолжает расти, и в этом месяце скачок оказался выше прогнозов. Вот как некоторые выживают.",
-   "tags": [
-    "инфляция"
-   ]
-  },
-  {
-   "title": "Fujimori Approval Sinks as Peruvians Fret Over Economy, Crime",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbHg1a19QSHpPRk5rZjc4T29tTGsyWW9LMVJSYmE0eDhlN3c1WUJDRVhYSnMzUjh0eGlBMnR0UmotbzFQRzJyek5aX2Via1M5ejhZSlVNelJFNVlWWl9IeFpzTE90b2gwdjFxWjZCOHB1WEhidnVfUUhqMjBTbWlXUk16TVVWdjV0M3FtZEpJWTNMUkpuMFBzSFh3VFU1Ni1Tbzc0UVpyUjJSTk9FcEJVMA?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-14T16:00:32.383929+00:00",
-   "title_ru": "Одобрение Фухимори падает, поскольку перуанцы обеспокоены экономикой и преступностью"
-  },
-  {
-   "title": "Netflix to cut 1,000 jobs worldwide",
-   "link": "https://www.bbc.co.uk/news/articles/c6zxj0gzk4x4o?at_medium=RSS&at_campaign=rss",
-   "sources": [
-    "BBC"
-   ],
-   "score": 3,
-   "ts": "2026-10-14T16:00:32.383929+00:00",
-   "title_ru": "Netflix сократит 1000 рабочих мест по всему миру",
-   "lead": "The streaming giant had a slowdown in subscriptions.",
-   "lead_ru": "У стримингового гиганта наблюдался спад числа подписок.",
-   "tags": [
-    "занятость"
-   ]
-  },
   {
    "title": "EXCLUSIVE: Bank of America consumer retail M&A banker Peacock to leave, sources say",
    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNQzF2UlFiYlk4S1JJTDJOZGlVelE1NXIzeHp4UnRyeTFPTmpYVWJnOGVTVWw3Sk50SjZFQ2tFQ1pod0gtZHI4WVcyYWpNTXdSS05WZGg5MGZBc0ZBWjNxNkVvaXBTTEM4Tl9tTEhnaWZJbU8xdEllR0N6TS1tdnJaT0hDQ3lUcm5XWUlLcEZvNGVaTTllZGg0bE1lUkNnS1l4bUNaOW4xWkNOOXRZVnpEa091S2Z0YUFfYjZlQQ?oc=5",
@@ -9501,6 +9461,16 @@
     "sanctions",
     "Russia"
    ]
+  },
+  {
+   "title": "Catherine Grover, Cboe Global Markets Inc: Profile and Biography",
+   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1aOGdrZnRQY2F0cHh4dHNpNE9LX2wxN1d0QWRQVkVaTTNRcmFSRDBiREZNaHI5SDZLUEo2Vi12T0R0czdBbXRlWExHczJ2X0JLZWx2UnBUeDNjVFR1ZEE?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-17T16:07:11.258428+00:00",
+   "title_ru": "Кэтрин Гровер, Cboe Global Markets Inc: профиль и биография"
   }
  ],
  "last_digest": "2026-10-16",
