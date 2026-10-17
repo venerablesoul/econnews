@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "91c5749a8618fcd2": "2026-10-14T15:40:32.433164+00:00",
   "d59b891cf9e653f2": "2026-10-14T15:50:32.328699+00:00",
   "1591699c86942c78": "2026-10-14T15:50:32.328699+00:00",
   "63452fa41d99e3f9": "2026-10-14T16:00:32.383929+00:00",
@@ -929,21 +928,6 @@
   "8740d1c9ead0b426": "2026-10-17T15:37:11.242550+00:00"
  },
  "recent": [
-  {
-   "title": "CoreWeave Bonds Tumble Into Distress, Drawing ‘Yikes’ From Musk",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-14/coreweave-bonds-tumble-into-distress-drawing-yikes-from-musk",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-14T15:40:32.433164+00:00",
-   "title_ru": "Облигации CoreWeave терпят крах из-за мускуса",
-   "lead": "CoreWeave Inc.’s bonds have plunged to levels that typically indicate distress, in a swift move that has caught the attention of Silicon Valley leaders including Chamath Palihapitiya and Elon Musk.",
-   "lead_ru": "Облигации CoreWeave Inc. упали до уровня, который обычно указывает на кризис, и это быстрое движение привлекло внимание лидеров Кремниевой долины, включая Чамата Палихапитию и Илона Маска.",
-   "tags": [
-    "облигации"
-   ]
-  },
   {
    "title": "UAE Oil Production Surged to Records in September, IEA Says",
    "link": "https://www.bloomberg.com/news/articles/2026-10-14/uae-oil-production-surged-to-records-in-september-iea-says",
@@ -9556,7 +9540,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 1,
+  "Fed": 0,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
