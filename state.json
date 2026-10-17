@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "44aed4e6dd329e97": "2026-10-14T06:09:37.726479+00:00",
-  "32ec3a42efb0206f": "2026-10-14T06:09:37.726479+00:00",
-  "c735077890cada2b": "2026-10-14T06:09:37.726479+00:00",
-  "0a1787b0c6860710": "2026-10-14T06:09:37.726479+00:00",
-  "11e1ccb7e99b7e78": "2026-10-14T06:09:37.726479+00:00",
   "1062369de4bf788f": "2026-10-14T06:19:37.725166+00:00",
   "869b5c177141ec48": "2026-10-14T06:19:37.725166+00:00",
   "96498e8638f926f1": "2026-10-14T06:19:37.725166+00:00",
@@ -1079,41 +1074,10 @@
   "b3cab51499395c91": "2026-10-17T04:55:51.324117+00:00",
   "e545c030814a8792": "2026-10-17T05:05:51.309121+00:00",
   "f924252e90b6332a": "2026-10-17T05:40:51.285378+00:00",
-  "2d1597eea2d60755": "2026-10-17T06:05:51.266188+00:00"
+  "2d1597eea2d60755": "2026-10-17T06:05:51.266188+00:00",
+  "1e2359f84ee5fe3e": "2026-10-17T06:15:51.316572+00:00"
  },
  "recent": [
-  {
-   "title": "ECB's Lagarde says solution to French debt woes is at home",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOMEJ0NHFvYk1XVi1ZRzBuRGUxMDA1czZ1SjNXYTE3OHZSWmV2ak9ZajNJamlmODVYd2w1QWMyTmppSVpHOGs1allzSS1QV2JwaHlkeVdtZ0tBU0R0ODhjOWV4a1F1Sktlel81aHYyNDA0VlhqLUJrdk1fV1J2S1VHRTR1ZW1rcF9nR2JUajZKanY0UWRfZkp5Zlp3SjBXSkhkSHpVMy1tSQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 7,
-   "ts": "2026-10-14T06:09:37.726479+00:00",
-   "title_ru": "Глава ЕЦБ Лагард заявила, что решение долговых проблем Франции находится дома",
-   "tags": [
-    "ЕЦБ"
-   ]
-  },
-  {
-   "title": "COMMENTARY: TRADING DAY Earnings season debuts to mixed reviews",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOMnM4cmRWOHp2enVzNDcwRzZTMUxYVGl1VmFncTlidmgxSVBLUTFvYkVYUThpZTdQcGJXNUVmckdLOWxUZmtpNVloOXluY2Y0QXIwWl9NX2kwdjNkdDZXU2ZhQWFiNWZQU0JBQ3RMRXJjWXllQ1lJd2oyT2J4S3l6UWVIZjZXM1JsMURrZE5TLW5Xci14TGdLcjd2NA?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-14T06:09:37.726479+00:00",
-   "title_ru": "КОММЕНТАРИЙ: Сезон отчетности TRADING DAY получил неоднозначные отзывы"
-  },
-  {
-   "title": "IMF sounds alarm on rising government borrowing costs – business live",
-   "link": "https://www.theguardian.com/business/live/2026/oct/14/imf-rising-government-borrowing-costs-inflation-oil-stock-markets-latest-news-updates",
-   "sources": [
-    "The Guardian"
-   ],
-   "score": 2,
-   "ts": "2026-10-14T06:09:37.726479+00:00"
-  },
   {
    "title": "ECB Not Seeing Second-Round Inflation Effects, Lagarde Says",
    "link": "https://www.bloomberg.com/news/articles/2026-10-14/ecb-not-seeing-second-round-inflation-effects-lagarde-says",
@@ -11144,6 +11108,19 @@
    "tags": [
     "ECB"
    ]
+  },
+  {
+   "title": "COMMENTARY: Strong dollar, weak hand for Trump before midterms: McGeever",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQbHhCQTRkREZKSk45aHZsYUNiQUt3R1lMb1d1NTBxU2M0c3FOemhDZE5MOGNhTWtZbEY2bm1YZlNRNUZCekJNMXhQR09pRzNDWDNmaFpBNHFKNkFUbXZ1YXFUb1lBRVRfcGZtMTdMWjZES3pBTnllaTJQN25mblNKdHpaY1YtcWEybERGM2ZDeGU4YzhJaDF2UFlNYnA5MXVpNk1SV19qa3NhV2c5MC1jVl81c25qckV5WkRJQlp0S2k?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-17T06:15:51.316572+00:00",
+   "title_ru": "КОММЕНТАРИЙ: Сильный доллар, слабая рука Трампа перед промежуточными выборами: Макгивер",
+   "tags": [
+    "dollar"
+   ]
   }
  ],
  "last_digest": "2026-10-16",
@@ -15178,7 +15155,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-17T05:15:51.287168+00:00",
+  "checked": "2026-10-17T06:15:51.316572+00:00",
   "sec_seen": [
    "0000037785-26-000162",
    "0001193125-26-424426",
