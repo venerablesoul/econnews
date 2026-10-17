@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "519b8e287ab59e0b": "2026-10-14T02:09:37.727429+00:00",
-  "744433e17d80084a": "2026-10-14T02:09:37.727429+00:00",
-  "ef158d9a3dda3cea": "2026-10-14T02:09:37.727429+00:00",
-  "c721da4c0fab2a46": "2026-10-14T02:09:37.727429+00:00",
   "7f39350936de9f07": "2026-10-14T02:19:37.745409+00:00",
   "3b68775161625e1f": "2026-10-14T02:19:37.745409+00:00",
   "b9c8a07bf7e8357b": "2026-10-14T02:29:37.683979+00:00",
@@ -1132,60 +1128,10 @@
   "5b5e4065f1d0d13e": "2026-10-17T01:35:25.258677+00:00",
   "53e47341db83ad5b": "2026-10-17T01:40:25.253607+00:00",
   "d1dfbbc61f5cbc36": "2026-10-17T01:50:25.255763+00:00",
-  "6964f959c6bc9540": "2026-10-17T02:05:25.292211+00:00"
+  "6964f959c6bc9540": "2026-10-17T02:05:25.292211+00:00",
+  "6b46f89470c55219": "2026-10-17T02:10:25.307978+00:00"
  },
  "recent": [
-  {
-   "title": "Singapore keeps monetary policy unchanged, surprising analysts",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQTkZsNjgxcWtmVi11UjBKNWxKVG5VQnk5WWpyakxHdnFWVFRsMldXNFgtV1FRRExUWlBvTmRiTTBhRS1CNDE0MWlpUjR4bk9iUHJqcl9qUTViVHB3by1LM1Q1MDR0VjVMWU9qYzRfSEFsRnkzZktPdGhPbTNGdFYyY3BVcmVVem1oT25OdUF0c2dLTllmT3hhTDNfN2VVa0l2Q1U4cl9hSEswdmNVWkg5bFlQQ2pGaWs?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-14T02:09:37.727429+00:00",
-   "title_ru": "Сингапур сохраняет монетарную политику неизменной, удивляя аналитиков",
-   "tags": [
-    "ставки"
-   ]
-  },
-  {
-   "title": "Rising Sovereign Yields Raise the Fiscal Stakes",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPcG05d21Td2FJbTJCOFhrWlhFWGh5VFItb0FybnZjSjU4VXRsazJoY3JMWGlyYTV4UmFqWWZwMmtvUkNObWNDTnNCR0VPcUIzWmNoMVlMeDByTl84YVdWR0VUbGRScTdQXzM2SE9UckNYOXdNSDVBOGlOREtoNjFvWUxDYmtuMEVudmRvcGFFVmZ3Mm02aGk0V0pWRzQ?oc=5",
-   "sources": [
-    "МВФ"
-   ],
-   "score": 4,
-   "ts": "2026-10-14T02:09:37.727429+00:00",
-   "title_ru": "Рост доходности суверенных облигаций повышает бюджетные ставки",
-   "tags": [
-    "облигации"
-   ]
-  },
-  {
-   "title": "France’s Budget Must Get ‘Timely Approval,’ IMF’s Valdes Says",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-14/france-s-budget-must-get-timely-approval-imf-s-valdes-says",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-14T02:09:37.727429+00:00",
-   "title_ru": "Бюджет Франции должен получить «своевременное одобрение», говорит Вальдес из МВФ",
-   "lead": "France must ensure “timely approval” of its budget bill to preserve credibility and bolster market confidence, an International Monetary Fund official said.",
-   "lead_ru": "Франция должна обеспечить «своевременное одобрение» своего законопроекта о бюджете, чтобы сохранить доверие и укрепить доверие рынка, заявил представитель Международного валютного фонда."
-  },
-  {
-   "title": "AI limiting European workers' bargaining power, ECB's Lane says",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOdnRkQy1hOHktbU11UnE4NXZyWkxXSXZnck1FVEdUaVRibDRPejVnN0hqTGpQRUJEVWwyX2pacTkzS2JaYW40cjBkd0lCMWs1UEtZLWctN201NnRFMWM1Z2gxOTFpU0g1QWxuckVycXpSazA1MDJTakRsdTZSV3lBV3dadzhQQlhpcExxRS1XWHllTnpzbDNXNXBGazBMbmNkemd2N3dvVE4?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-14T02:09:37.727429+00:00",
-   "title_ru": "ИИ ограничивает переговорную силу европейских рабочих, говорит Лейн из ЕЦБ",
-   "tags": [
-    "ЕЦБ"
-   ]
-  },
   {
    "title": "China producer inflation beats forecasts as commodity costs rise, CPI lags",
    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQM3BORVdqSzA0ekdnTDNtVWhTUFZKd0d2eW5meFgtdkd2MHhHRG5KUWRZSGpJZ2FKemlrSzlxME5hUVBjcE5JVHZYWnBSVk5TTDBWR3o5MnFUS3JSUmRxczEyVEQtam1maTk1T0VFZHJWeko1TkZjUk1zLWpCNnBqNVRNODhna3RKdFBna1c0XzVwckt3ZnQ1Wk5Nc2JnS1VaZEp5QVlnT0pTdw?oc=5",
