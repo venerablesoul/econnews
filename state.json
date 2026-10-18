@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "59e242c9a437e691": "2026-10-15T19:12:01.006049+00:00",
-  "ffd4ec9d3744207a": "2026-10-15T19:17:01.020060+00:00",
-  "e92149f42dd5ed08": "2026-10-15T19:17:01.020060+00:00",
   "5691971884d119f8": "2026-10-15T19:22:36.427812+00:00",
   "2c848b6a772a8a78": "2026-10-15T19:32:36.438184+00:00",
   "18904c3c9ac1fdbe": "2026-10-15T19:32:36.438184+00:00",
@@ -600,38 +597,11 @@
   "a409f8ebdb3f8eb3": "2026-10-18T18:14:36.368969+00:00",
   "7f0f9d52b1b5d0cb": "2026-10-18T18:29:36.370679+00:00",
   "fa23ff3fafe82b79": "2026-10-18T18:59:36.380927+00:00",
-  "f9dac620d7484310": "2026-10-18T19:09:36.433993+00:00"
+  "f9dac620d7484310": "2026-10-18T19:09:36.433993+00:00",
+  "a849abcc7b8fb607": "2026-10-18T19:14:36.354711+00:00",
+  "4f9e746f9dfe308a": "2026-10-18T19:19:36.362144+00:00"
  },
  "recent": [
-  {
-   "title": "Zelenskyy Defies Trump, Global Tech Selloff Drives Haven Bid",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-15/zelenskyy-defies-trump-global-tech-selloff-drives-haven-bid",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-15T19:17:01.020060+00:00",
-   "title_ru": "Зеленский бросает вызов Трампу: глобальная распродажа технологий стимулирует предложение Хейвена",
-   "lead": "Ukrainian President Volodymyr Zelenskyy has ordered attacks on Russian oil refineries to resume in a spiraling confrontation with Donald Trump over restrictions on US intelligence assistance.",
-   "lead_ru": "Президент Украины Владимир Зеленский приказал возобновить нападения на российские нефтеперерабатывающие заводы в рамках растущей конфронтации с Дональдом Трампом из-за ограничений на помощь американской разведки.",
-   "tags": [
-    "oil",
-    "markets",
-    "Russia"
-   ]
-  },
-  {
-   "title": "Healey Plans to Raise UK Taxes on Banks at Budget This Month",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-15/healey-plans-to-raise-uk-taxes-on-banks-at-budget-this-month",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-15T19:17:01.020060+00:00",
-   "title_ru": "Хили планирует повысить в бюджете налоги на банки в Великобритании в этом месяце",
-   "lead": "UK Chancellor of the Exchequer John Healey is set to raise taxes on banks to fund cost-of-living support for voters and stabilize the public finances, as he looks for sources of revenue that won’t violate Labour Party campaign…",
-   "lead_ru": "Канцлер казначейства Великобритании Джон Хили намерен повысить налоги для банков, чтобы финансировать поддержку стоимости жизни избирателей и стабилизировать государственные финансы, поскольку он ищет источники доходов, которые не будут нарушать кампанию Лейбористской партии..."
-  },
   {
    "title": "Slovakia Connects Nuclear Reactor in Boost for Power Exports",
    "link": "https://www.bloomberg.com/news/articles/2026-10-15/slovakia-connects-nuclear-reactor-in-boost-for-power-exports",
@@ -5512,6 +5482,21 @@
    "tags": [
     "inflation",
     "dollar"
+   ]
+  },
+  {
+   "title": "Bond Market’s Big Short Bet Gets Wakeup Call as AI Trade Wobbles",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-18/bond-market-s-big-short-bet-gets-wakeup-call-as-ai-trade-wobbles",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-18T19:19:36.362144+00:00",
+   "title_ru": "Большая короткая ставка на рынке облигаций становится тревожным сигналом, поскольку торговля ИИ колеблется",
+   "lead": "US Treasuries are showing tentative signs of reclaiming their traditional role as a haven — threatening to wrong-foot investors who are heavily positioned for this year’s bond slump to deepen.",
+   "lead_ru": "Казначейские облигации США демонстрируют предварительные признаки возвращения к своей традиционной роли убежища, что угрожает заблудшим инвесторам, которые имеют большие шансы на углубление спада облигаций в этом году.",
+   "tags": [
+    "bonds"
    ]
   }
  ],
