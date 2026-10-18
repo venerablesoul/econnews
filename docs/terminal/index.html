@@ -14,8 +14,24 @@
 <meta name="apple-mobile-web-app-title" content="Terminal">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<!-- the font does not hold up the first screen: until it arrives the text uses the system monospace font -->
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"></noscript>
+<script>
+// telegram.org is loaded only inside Telegram and without blocking the page;
+// whatever needs the Telegram signature waits for TG_READY (at most 3 s)
+(function(){
+  var inTg = /tgWebApp/.test(location.hash + location.search) || !!window.TelegramWebviewProxy;
+  try { inTg = inTg || !!sessionStorage.getItem('__telegram__initParams') } catch(e){}
+  window.IN_TG = inTg;
+  window.TG_READY = new Promise(function(done){
+    if (!inTg) return done();
+    var s = document.createElement('script'); s.src = 'https://telegram.org/js/telegram-web-app.js';
+    s.onload = s.onerror = function(){ done() }; setTimeout(done, 3000);
+    document.head.appendChild(s);
+  });
+})();
+</script>
 <script src="i18n.js"></script>
 <style>
 :root{
@@ -556,6 +572,15 @@ var CHART_QUICK = ['S&P','Nasdaq','DAX','Brent','Золото','EUR/USD','UST10'
 function $(id){ return document.getElementById(id) }
 function el(tag, cls, text){ var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e }
 function store(k, v){ try { if (v === undefined) return localStorage.getItem(k); if (v === null) localStorage.removeItem(k); else localStorage.setItem(k, v) } catch(e){ return null } }
+// fetch with a time limit: a slow or throttled site no longer leaves a panel "loading" forever
+function tfetch(url, opts, ms){
+  if (!window.AbortController) return fetch(url, opts);
+  var ac = new AbortController(), t = setTimeout(function(){ ac.abort() }, ms || 12000);
+  return fetch(url, Object.assign({}, opts || {}, {signal: ac.signal})).then(function(r){ clearTimeout(t); return r }, function(e){ clearTimeout(t); throw e });
+}
+// the last data in the browser: the terminal shows it at once on opening and refreshes it in the background
+function cacheGet(k){ try { var v = store('c_' + k); return v ? JSON.parse(v) : null } catch(e){ return null } }
+function cachePut(k, v){ try { store('c_' + k, JSON.stringify(v)) } catch(e){} }
 function fmt(v, d){ if (v == null || isNaN(v)) return '—'; return Number(v).toLocaleString(I.num, {minimumFractionDigits:d, maximumFractionDigits:d}) }
 function pct(c, d){ if (c == null || isNaN(c)) return '—'; var s = Number(c).toFixed(d == null ? 2 : d); return (c > 0 ? '+' : '') + (I.ru ? s.replace('.', ',') : s) + '%' }
 function cls(c){ return c == null || Math.abs(c) < 0.005 ? 'flat' : (c > 0 ? 'up' : 'down') }
@@ -618,10 +643,10 @@ function ingestMarket(list){
     var v = q.value != null ? q.value : parseFloat(String(q.price).replace(/[^\d,.-]/g, '').replace(',', '.'));
     var old = Q[id] || {};
     Q[id] = {id:id, name:I.mktName(id, I.ru ? q.name : q.name_en || q.name), value:v, change:q.change, digits:q.digits != null ? q.digits : 2,
-      spark:q.spark || old.spark, src:old.src && old.src !== 'free' ? old.src : 'free', pv:old.value};
+      spark:q.spark || old.spark, src:old.src && old.src !== 'free' && old.src !== 'cache' ? old.src : 'free', pv:old.value};
     // the previous close — live quotes count the daily change from it
     Q[id].base = q.change != null && v ? v / (1 + q.change / 100) : old.base;
-    if (old.src && old.src !== 'free') { Q[id].value = old.value; Q[id].change = old.change }
+    if (old.src && old.src !== 'free' && old.src !== 'cache') { Q[id].value = old.value; Q[id].change = old.change }
   });
 }
 function rowFor(q, isYield){
@@ -671,28 +696,50 @@ function renderTape(){
 $('mkt').addEventListener('click', function(e){ var tr = e.target.closest('tr.row'); if (tr) openChart(tr.dataset.id) });
 
 /* ---------- the bot's data ---------- */
+function useData(d){
+  if (window.onData) { try { d = window.onData(d) || d } catch(e){} }
+  data = d; ingestMarket(d.market); renderMarket(); renderNews(); renderEco(); renderTrades();
+  if ($('ownc') && !($('tvc') && $('tvc').firstChild)) ownSeries(curChart, function(p){ drawOwn(p, ($('chart-title').textContent || '').replace(TX('chart_prefix'), '')) });
+  $('news-upd').textContent = d.updated ? TX('updated_at', hm(d.updated)) : '';
+}
 function loadData(){
-  fetch('../data.json?t=' + Date.now(), {cache:'no-store'}).then(function(r){ return r.json() }).then(function(d){
-    if (window.onData) { try { d = window.onData(d) || d } catch(e){} }
-    data = d; ingestMarket(d.market); renderMarket(); renderNews(); renderEco(); renderTrades();
-    if ($('ownc') && !($('tvc') && $('tvc').firstChild)) ownSeries(curChart, function(p){ drawOwn(p, ($('chart-title').textContent || '').replace(TX('chart_prefix'), '')) });
-    $('news-upd').textContent = d.updated ? TX('updated_at', hm(d.updated)) : '';
-  }).catch(function(){ $('mkt').innerHTML = ''; $('mkt').appendChild(el('div', 'note', TX('data_fail'))) });
+  tfetch('../data.json?t=' + Date.now(), {cache:'no-store'}, 20000).then(function(r){ if (!r.ok) throw new Error(r.status); return r.json() }).then(function(d){
+    useData(d); cachePut('data', d);
+  }).catch(function(){ if (!data) { $('mkt').innerHTML = ''; $('mkt').appendChild(el('div', 'note', TX('data_fail'))) } });
+}
+function loadCached(){
+  var d = cacheGet('data'); if (d && d.market) { try { useData(d) } catch(e){ data = null } }
+  var q = cacheGet('quotes');
+  if (q) { try { applyQuotes(q); Object.keys(Q).forEach(function(k){ if (Q[k].src === 'live' || Q[k].src === 'eod') Q[k].src = 'cache' }); updLabel() } catch(e){} }
+  var c = cacheGet('crypto');
+  if (c) Object.keys(c).forEach(function(k){ if (!C[k] && c[k] && c[k].price) C[k] = {price:c[k].price, change:c[k].change, high:c[k].high, low:c[k].low, open:c[k].open} });
 }
 
 /* ---------- quotes from the bot server (API keys stay on the server) ---------- */
 var API = '', apiTier = '', apiPaid = false, apiErr = false, apiTimer = null, apiRefresh = 30;
 function ownerPass(){ return (store('owner_pass') || '').trim() }
 function tgInit(){ try { return (window.Telegram && Telegram.WebApp && Telegram.WebApp.initData) || '' } catch(e){ return '' } }
+var cfgP = null;
 function loadConfig(){
-  return fetch('../config.json?t=' + Date.now(), {cache:'no-store'}).then(function(r){ return r.ok ? r.json() : {} })
-    .then(function(c){ API = String((c && c.api) || '').replace(/\/+$/, '') }).catch(function(){});
+  // the server address is remembered: quotes are requested at once, without waiting for config.json
+  if (cfgP) return cfgP;
+  var known = store('api_url') || '';
+  if (known) API = known;
+  var net = tfetch('../config.json?t=' + Date.now(), {cache:'no-store'}, 15000).then(function(r){ return r.ok ? r.json() : null })
+    .then(function(c){
+      if (!c) return;
+      var a = String(c.api || '').replace(/\/+$/, ''), changed = a !== API;
+      store('api_url', a || null); API = a;
+      if (changed && known) (window.TG_READY || Promise.resolve()).then(apiLoop);
+    }).catch(function(){});
+  cfgP = Promise.all([known ? null : net, window.TG_READY]).then(function(){});
+  return cfgP;
 }
 function apiFetch(pass){
   var h = {}, init = tgInit(), p = pass != null ? pass : ownerPass();
   if (init) h['X-Tg-Init'] = init;   // the Telegram signature: how the server recognises the person
   if (p) h['X-Owner-Key'] = p;
-  return fetch(API + '/api/quotes', {headers:h, cache:'no-store'}).then(function(r){ if (!r.ok) throw new Error('HTTP ' + r.status); return r.json() });
+  return tfetch(API + '/api/quotes', {headers:h, cache:'no-store'}, 12000).then(function(r){ if (!r.ok) throw new Error('HTTP ' + r.status); return r.json() });
 }
 function applyQuotes(d){
   var n = 0, fresh = false;
@@ -727,7 +774,7 @@ function apiLoop(){
     var wasOwner = apiTier === 'owner';
     apiErr = false; apiTier = d.tier || 'free'; apiPaid = !!d.paid; apiRefresh = d.refresh || 30;
     if (wasOwner && apiTier !== 'owner') Object.keys(Q).forEach(function(k){ if (Q[k].src === 'eod') Q[k].src = 'free' });
-    applyQuotes(d);
+    applyQuotes(d); cachePut('quotes', {stocks:d.stocks, fx:d.fx, world:d.world});
     $('st-data').title = d.errors && d.errors.length ? TX('srv_errors') + d.errors.join('; ') : TX('srv_quotes');
   }).catch(function(e){
     apiErr = true; $('st-data').title = TX('srv_unavail') + e.message;
@@ -787,9 +834,9 @@ function patchCoin(sym){
 }
 function binanceSnapshot(){
   var syms = COINS.map(function(c){ return '"' + c[0] + 'USDT"' }).join(',');
-  return fetch('https://api.binance.com/api/v3/ticker/24hr?symbols=' + encodeURIComponent('[' + syms + ']'))
+  return tfetch('https://api.binance.com/api/v3/ticker/24hr?symbols=' + encodeURIComponent('[' + syms + ']'), null, 6000)
     .then(function(r){ if (!r.ok) throw new Error(r.status); return r.json() })
-    .then(function(arr){ arr.forEach(function(x){ var s = x.symbol.replace(/USDT$/, ''); C[s] = {price:+x.lastPrice, change:+x.priceChangePercent, high:+x.highPrice, low:+x.lowPrice, open:+x.openPrice} }); renderCrypto() });
+    .then(function(arr){ arr.forEach(function(x){ var s = x.symbol.replace(/USDT$/, ''); C[s] = {price:+x.lastPrice, change:+x.priceChangePercent, high:+x.highPrice, low:+x.lowPrice, open:+x.openPrice} }); renderCrypto(); cachePut('crypto', C) });
 }
 function binanceStream(){
   var streams = COINS.map(function(c){ return c[0].toLowerCase() + 'usdt@miniTicker' }).join('/');
@@ -811,10 +858,10 @@ function startGecko(){
   setCryptoStatus('gecko');
   var ids = COINS.map(function(c){ return c[2] }).join(',');
   var run = function(){
-    fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=' + ids).then(function(r){ return r.json() }).then(function(arr){
+    tfetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=' + ids, null, 10000).then(function(r){ return r.json() }).then(function(arr){
       var by = {}; arr.forEach(function(x){ by[x.id] = x });
       COINS.forEach(function(c){ var x = by[c[2]]; if (!x) return; var q = C[c[0]] || {}; q.prev = q.price; q.price = x.current_price; q.change = x.price_change_percentage_24h; q.high = x.high_24h; q.low = x.low_24h; C[c[0]] = q });
-      renderCrypto();
+      renderCrypto(); cachePut('crypto', C);
     }).catch(function(){ $('crypto-note').textContent = TX('c_unavail') });
   };
   run(); geckoTimer = setInterval(run, 60000);
@@ -826,12 +873,12 @@ function setCryptoStatus(s){
   else { p.textContent = 'CRYPTO …'; p.className = 'pill hide-s' }
 }
 function loadGlobal(){
-  fetch('https://api.coingecko.com/api/v3/global').then(function(r){ return r.json() }).then(function(g){
+  tfetch('https://api.coingecko.com/api/v3/global', null, 10000).then(function(r){ return r.json() }).then(function(g){
     g = g.data; $('g-cap').textContent = big(g.total_market_cap.usd);
     var ch = g.market_cap_change_percentage_24h_usd; var s = $('g-capch'); s.textContent = pct(ch); s.className = cls(ch);
     $('g-btcd').textContent = fmt(g.market_cap_percentage.btc, 1) + '%';
   }).catch(function(){});
-  fetch('https://api.alternative.me/fng/?limit=1').then(function(r){ return r.json() }).then(function(f){
+  tfetch('https://api.alternative.me/fng/?limit=1', null, 10000).then(function(r){ return r.json() }).then(function(f){
     var v = +f.data[0].value;
     $('g-fng').textContent = v + ' · ' + I.fng(f.data[0].value_classification); $('g-fngm').style.left = v + '%';
   }).catch(function(){});
@@ -888,7 +935,7 @@ function ownSeries(idOrSym, cb){
   var coin = null, m = /^BINANCE:([A-Z0-9]+)USDT$/.exec(idOrSym);
   if (m) coin = m[1]; else if (idOrSym === 'BTC' || idOrSym === 'ETH') coin = idOrSym;
   if (coin) {
-    fetch('https://api.binance.com/api/v3/klines?symbol=' + coin + 'USDT&interval=1h&limit=120')
+    tfetch('https://api.binance.com/api/v3/klines?symbol=' + coin + 'USDT&interval=1h&limit=120', null, 8000)
       .then(function(r){ return r.json() }).then(function(k){ cb(k.map(function(x){ return +x[4] })) }).catch(function(){ cb(null) });
     return;
   }
@@ -1193,7 +1240,7 @@ $('k-logout').onclick = function(){
 
 /* ======================= install as an app ======================= */
 var deferredPrompt = null;
-var inTelegram = !!(window.Telegram && Telegram.WebApp && Telegram.WebApp.initData);
+var inTelegram = !!window.IN_TG;
 var standalone = window.matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
 var isIOS = /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
 if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) {
@@ -1225,12 +1272,13 @@ I.apply();
 $('b-lang').onclick = function(){ I.setLang(I.ru ? 'en' : 'ru') };
 $('k-en').onclick = function(){ I.setLang('en') }; $('k-ru').onclick = function(){ I.setLang('ru') };
 (I.ru ? $('k-ru') : $('k-en')).classList.add('solid');
-try { if (window.Telegram && Telegram.WebApp) { Telegram.WebApp.ready(); Telegram.WebApp.expand(); Telegram.WebApp.setHeaderColor && Telegram.WebApp.setHeaderColor('#000000'); Telegram.WebApp.setBackgroundColor && Telegram.WebApp.setBackgroundColor('#000000') } } catch(e){}
+(window.TG_READY || Promise.resolve()).then(function(){ try { if (window.Telegram && Telegram.WebApp) { Telegram.WebApp.ready(); Telegram.WebApp.expand(); Telegram.WebApp.setHeaderColor && Telegram.WebApp.setHeaderColor('#000000'); Telegram.WebApp.setBackgroundColor && Telegram.WebApp.setBackgroundColor('#000000') } } catch(e){} });
 if (isMobile()) $('cmd').placeholder = TX('cmd_ph_m');
 function safe(f){ try { f() } catch(e){ console.error(e) } }
 var lc = (store('last_chart') || '').split('|');
 if (lc[0]) curChart = lc[0];
 safe(function(){ if (!isMobile()) { document.querySelectorAll('.panel').forEach(function(p){ p.classList.add('show') }); openChart(lc[0] || 'S&P', lc[1] || null, true) } });
+safe(loadCached);
 safe(function(){ tick(); setInterval(tick, 15000) });
 safe(renderCrypto);
 safe(function(){ loadData(); setInterval(loadData, 120000) });
@@ -1239,7 +1287,7 @@ safe(function(){ binanceSnapshot().then(binanceStream).catch(startGecko) });
 safe(function(){ loadGlobal(); setInterval(loadGlobal, 300000) });
 safe(function(){ store('eodhd_key', null); store('finnhub_key', null) });   // old keys in the browser are no longer needed
 safe(function(){ loadConfig().then(apiLoop) });
-document.addEventListener('visibilitychange', function(){ if (!document.hidden && API) apiLoop() });
+document.addEventListener('visibilitychange', function(){ if (document.hidden) cachePut('crypto', C); else if (API) apiLoop() });
 
 /* ======================= for fn.js: company, rates, personal and layout functions ======================= */
 window.TERM = {
