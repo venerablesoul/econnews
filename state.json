@@ -1,21 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "bd570558bd354da6": "2026-10-15T20:12:36.446665+00:00",
-  "6598dadb35df2bed": "2026-10-15T20:12:36.446665+00:00",
-  "6946bd32039013b1": "2026-10-15T20:12:36.446665+00:00",
-  "c16147f998ebcd7a": "2026-10-15T20:12:36.446665+00:00",
-  "915383bd55cd1c17": "2026-10-15T20:12:36.446665+00:00",
-  "e3681b2dd41e7d61": "2026-10-15T20:12:36.446665+00:00",
-  "60b4ad74af879741": "2026-10-15T20:12:36.446665+00:00",
-  "fb5309b4254af486": "2026-10-15T20:12:36.446665+00:00",
-  "e9beba98e362da41": "2026-10-15T20:12:36.446665+00:00",
-  "6c60aef9d310b278": "2026-10-15T20:12:36.446665+00:00",
-  "e58bc47889babc84": "2026-10-15T20:12:36.446665+00:00",
-  "3cb677e09c26dcaf": "2026-10-15T20:12:36.446665+00:00",
-  "3883d6af0bb98c73": "2026-10-15T20:12:36.446665+00:00",
-  "0c8b9f1e0de8e424": "2026-10-15T20:12:36.446665+00:00",
-  "4a63eb32acb6f38b": "2026-10-15T20:12:36.446665+00:00",
   "d62ead68c3bd433e": "2026-10-15T20:22:36.529611+00:00",
   "a8511a4cf02f60d6": "2026-10-15T20:37:36.404203+00:00",
   "5afee76ae5098316": "2026-10-15T20:37:36.404203+00:00",
@@ -591,19 +576,18 @@
   "f9dac620d7484310": "2026-10-18T19:09:36.433993+00:00",
   "a849abcc7b8fb607": "2026-10-18T19:14:36.354711+00:00",
   "4f9e746f9dfe308a": "2026-10-18T19:19:36.362144+00:00",
-  "bd86d2c58d380a79": "2026-10-18T19:24:36.393830+00:00"
+  "bd86d2c58d380a79": "2026-10-18T19:24:36.393830+00:00",
+  "6598dadb35df2bed": "2026-10-18T20:19:36.401022+00:00",
+  "60b4ad74af879741": "2026-10-18T20:19:36.401022+00:00",
+  "3cb677e09c26dcaf": "2026-10-18T20:19:36.401022+00:00",
+  "e9beba98e362da41": "2026-10-18T20:19:36.401022+00:00",
+  "3883d6af0bb98c73": "2026-10-18T20:19:36.401022+00:00",
+  "6946bd32039013b1": "2026-10-18T20:19:36.401022+00:00",
+  "6c60aef9d310b278": "2026-10-18T20:19:36.401022+00:00",
+  "e58bc47889babc84": "2026-10-18T20:19:36.401022+00:00",
+  "c16147f998ebcd7a": "2026-10-18T20:19:36.401022+00:00"
  },
  "recent": [
-  {
-   "title": "naics - BLS Data - Bureau of Labor Statistics",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBsaGVVb1BhS2NFWFdwMlJQajlTWjhEYlRNaGlCa1BVMWNiTG82SWkxVmFLM1RHaHcyVFFRajBHT3lXaU1YVTl5bGtGOFZCWmhxVkhnMFY3S1NyZHpXWjRsLXJNTTNvRzVzcVQ0ag?oc=5",
-   "sources": [
-    "US Labor Statistics (BLS)"
-   ],
-   "score": 4,
-   "ts": "2026-10-15T20:12:36.446665+00:00",
-   "title_ru": "naics - BLS Data - Бюро статистики труда"
-  },
   {
    "title": "US weekly jobless claims rise marginally amid low layoffs",
    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPbFJoc29BeFZCRUZaZWlVS3AwV3ZPcFl0Z1p1eDAtM1pxd1JRd2NHWS1PUlVqWUhqRXlFc0hDaTFNNW1BRC1mR0lOQXgwVlNUQVpYSjZ3V2ZaeENUbVdtUGJkcG5ZRkhRNFVpWEhOR2stcFNGSkdMd01mSkppTTZFRzVyV1Y2aU9GZG1DUmE0NXAwXzUwLVdKRjRnaThGMDVaMXFieA?oc=5",
@@ -5410,6 +5394,16 @@
    "tags": [
     "bonds"
    ]
+  },
+  {
+   "title": "- Bureau of Labor Statistics (.gov)",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNS2xYV2Zyanl1R0tSZ2RYRUkzQl9WVXYwQkI1NHZYTnZDejBTbDhBSEd4b1h3Nk12QlJkdDlodUI1OFIxTk5ZOFFBRVZpQ3ZqZWFiSXY1Vjk1OXpxbFBXQ1JpLVI3b2t6TGs5VGVGT3VFQjZUVER3MXVkYkttWlk3RFJvT0VQUktMMWlaejQ0QzhIWmhhbjVtcEdSSERGTjJGOWpvOHZtdXNic1hhMXZNdkNmTUpNUQ?oc=5",
+   "sources": [
+    "US Labor Statistics (BLS)"
+   ],
+   "score": 4,
+   "ts": "2026-10-18T20:19:36.401022+00:00",
+   "title_ru": "- Бюро статистики труда (.gov)"
   }
  ],
  "last_digest": "2026-10-18",
