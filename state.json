@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "7e53f64d18b44c7b": "2026-10-15T11:42:29.318525+00:00",
-  "a98a46a62c349ce8": "2026-10-15T11:42:29.318525+00:00",
-  "5e8f8b73748fe49e": "2026-10-15T11:42:29.318525+00:00",
   "86a30b8d0b45060d": "2026-10-15T11:47:29.288083+00:00",
   "3731e45c980e7cf0": "2026-10-15T11:47:29.288083+00:00",
   "9095a75c06300ec9": "2026-10-15T11:47:29.288083+00:00",
@@ -700,46 +697,6 @@
   "182bd8e74703a700": "2026-10-18T11:13:30.892684+00:00"
  },
  "recent": [
-  {
-   "title": "Banks Vie for $4.25 Billion Debt Financing to Back Lantheus Deal",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-15/banks-vie-for-4-25-billion-debt-financing-to-back-lantheus-deal",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-15T11:42:29.318525+00:00",
-   "title_ru": "Банки соперничают за долговое финансирование в размере $4,25 млрд для поддержки сделки с Lantheus",
-   "lead": "Multiple banks are competing to join a $4.25 billion debt financing backing Curium’s acquisition of radiopharmaceutical company Lantheus Holdings Inc., before the deal is syndicated to investors next year.",
-   "lead_ru": "Несколько банков конкурируют за право присоединиться к долговому финансированию на сумму 4,25 миллиарда долларов, поддерживающему приобретение Curium радиофармацевтической компании Lantheus Holdings Inc., прежде чем сделка будет синдицирована среди инвесторов в следующем году."
-  },
-  {
-   "title": "Bolsonaro’s Election Lead Raises the Odds of Brazil Oil Asset Sale",
-   "link": "https://www.bloomberg.com/news/newsletters/2026-10-15/bolsonaro-s-election-lead-raises-the-odds-of-brazil-oil-asset-sale",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-15T11:42:29.318525+00:00",
-   "title_ru": "Лидер выборов Болсонару повышает шансы на продажу нефтяных активов Бразилии",
-   "lead": "Right-wing senator could renew his father’s push for more privatization.",
-   "lead_ru": "Правый сенатор мог бы возобновить настойчивые требования своего отца к дальнейшей приватизации.",
-   "tags": [
-    "oil"
-   ]
-  },
-  {
-   "title": "PODCAST: Tech stocks sink",
-   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPMEJkSmdWRWVjeUJpX25jWTBVampHOVNfMGRvbmUwbkZwMDh1eEhOSVFFb3FyZkh0R1ZweldRb3ZhTGR0THZWb3Z5TGVGM09RREs0QWc3MnZfWExhaGhxSzR4VUFaeXN6RGpzQ3VENU01V1hvcW5GRjJRZkZEWlBWVjk1b18xb3RY?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-15T11:42:29.318525+00:00",
-   "title_ru": "ПОДКАСТ: Акции технологических компаний падают",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "AI Rout Deepens; Anthropic Revenue Hits $16.8B; Warsh to Speak in Bangkok",
    "link": "https://www.bloomberg.com/news/videos/2026-10-15/bloomberg-brief-10-15-2026-video",
@@ -6802,7 +6759,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 0,
+  "Fed": 1,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
