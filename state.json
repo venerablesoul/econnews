@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "6632dd05e56235fe": "2026-10-15T09:31:58.122245+00:00",
-  "761cd48511ce5c17": "2026-10-15T09:31:58.122245+00:00",
   "4d7a77a7550ac992": "2026-10-15T09:36:58.150141+00:00",
   "ec66a7df73952dc9": "2026-10-15T09:36:58.150141+00:00",
   "05befe8e39c15dab": "2026-10-15T09:41:58.099661+00:00",
@@ -730,22 +728,10 @@
   "cad8de2b69709624": "2026-10-18T08:03:30.907053+00:00",
   "52e8ccb8d437eaa0": "2026-10-18T08:03:30.907053+00:00",
   "15e0edac7398920d": "2026-10-18T08:03:30.907053+00:00",
-  "b2ee28df98d7e0de": "2026-10-18T08:28:30.901123+00:00"
+  "b2ee28df98d7e0de": "2026-10-18T08:28:30.901123+00:00",
+  "4f8e7e09758c010e": "2026-10-18T09:33:30.905320+00:00"
  },
  "recent": [
-  {
-   "title": "Nasdaq futures dive 1% as AI rout deepens on debt concerns",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOZTRob0s4X3hCYkZQZzFfeUxuU1ZlN0tPT2hvelcwcW9QdU9yeVN1ZUZfR253ZUNoN3NjUlRHbG9aS0wzMmVGLUpNOVcyTUlHOWo3WERDX1psTXlmWGthb0JPN19GMGxnT2pkYkRWQ0R1THEyODhoWnZTd1NIQjdZbm5fLXNYb0M2c1g2YU02TENSSi1xSFZMQzRuUTc?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-15T09:31:58.122245+00:00",
-   "title_ru": "Фьючерсы на Nasdaq падают на 1% по мере того, как маршрутизация ИИ углубляется из-за долговых проблем",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Bank of England Officials Divide Over Inflation Risk Facing UK",
    "link": "https://www.bloomberg.com/news/articles/2026-10-15/bank-of-england-officials-divide-over-inflation-risk-facing-uk",
@@ -7134,6 +7120,19 @@
    "score": 3,
    "ts": "2026-10-18T08:03:30.907053+00:00",
    "title_ru": "МВФ говорит, что Сингапур входит в число азиатских победителей бума ИИ"
+  },
+  {
+   "title": "World Economic Outlook (October 2026) - Unemployment rate",
+   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9RcldxSk8zUG16b2w4a1g2dk1na2hTeG9QaXRNWTlhbENjTGZNWk1rUUtyWW0yMmtNSm1Qd3JiYWF5eXNBTnYwRzlOekFtQlRmdElGQzJKVzF6MnZacmdycG8yNlYzMDNtWlJ4dDhR?oc=5",
+   "sources": [
+    "IMF"
+   ],
+   "score": 8,
+   "ts": "2026-10-18T09:33:30.905320+00:00",
+   "title_ru": "Перспективы развития мировой экономики (октябрь 2026 г.) - Уровень безработицы",
+   "tags": [
+    "jobs"
+   ]
   }
  ],
  "last_digest": "2026-10-17",
