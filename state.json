@@ -690,22 +690,6 @@
  },
  "recent": [
   {
-   "title": "US Stock Futures Today: CoreWeave, Dell, FMC, Intel, Micron, Penske",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-15/us-stock-futures-today-coreweave-dell-fmc-intel-micron-penske",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-15T12:07:29.771902+00:00",
-   "title_ru": "Фьючерсы на акции США сегодня: CoreWeave, Dell, FMC, Intel, Micron, Penske",
-   "lead": "S&P 500 Index futures fall 0.3% as of 7:56 a.m. in New York as a selloff in the artificial-intelligence trade gathered speed and pushed investors toward the safety of bonds.",
-   "lead_ru": "Фьючерсы на индекс S&P 500 упали на 0,3% по состоянию на 7:56 утра в Нью-Йорке, поскольку распродажа в торговле искусственным интеллектом набрала скорость и подтолкнула инвесторов к безопасным облигациям.",
-   "tags": [
-    "bonds",
-    "markets"
-   ]
-  },
-  {
    "title": "Sweden to reject Irish EU presidency proposal on 2028-2034 budget plan",
    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZnVzeGhqT3ptS2pCbUtJVVVBMzZKRGlsX0RLVVRrOU5YMzdkM1g4OS1ua01HeUF4d1lNbVhFamZrblBmZ280dXJxdU4zalhTck5WNkNFTUVFT1JkZXVUVWFrdVFGVk9pOHdSR25mTTRoZHRQSE95aFdNVWt0aUxNODBOUndFTWFtUS02bmRlWUJnbGdibDNrbTR1al8xd1MyMDB1d3NBU1FGNVppU043T3doVQ?oc=5",
    "sources": [
@@ -6649,7 +6633,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 0,
+  "Fed": 1,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
