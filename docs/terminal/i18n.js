@@ -224,6 +224,7 @@ var D = {
     'Добавьте 2–6 инструментов: COMP AAPL MSFT NVDA, COMP S&P DAX IMOEX, COMP BTC ЗОЛОТО. График показывает изменение в % от начала периода.'],
   loading_d: ['Loading…', 'Загружаю…'], no_data: ['no data', 'нет данных'], no_data_c: ['No data', 'Нет данных'],
   not_loaded: [' · failed: ', ' · не загрузилось: '],
+  srv_slow: ['the server did not answer in time — try again', 'сервер не ответил вовремя — попробуйте ещё раз'],
   // EQS
   eqs_p: [{'': 'ALL', leaders: 'GAINERS', losers: 'LOSERS', value: 'LOW P/E', div: 'DIVIDENDS', growth: 'REVENUE GROWTH', year: 'BEST 1Y'},
     {'': 'ВСЕ', leaders: 'ЛИДЕРЫ ДНЯ', losers: 'АУТСАЙДЕРЫ', value: 'ДЕШЁВЫЕ P/E', div: 'ДИВИДЕНДЫ', growth: 'РОСТ ВЫРУЧКИ', year: 'ЛУЧШИЕ ЗА ГОД'}],

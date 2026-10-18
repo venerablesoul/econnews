@@ -18,6 +18,13 @@ export const flags = { failYahoo: false, failBinance: false, failGoogle: false, 
 // ------------------------------------------------------------------ data
 const now = Date.now();
 export const iso = (ms) => new Date(ms).toISOString();
+// docs/ipo.json as the news bot writes it from the Nasdaq calendar: recently priced and filed deals
+export const ipoJson = { updated: iso(now - 3600e3), source: "Nasdaq IPO calendar", ipo: [
+  { date: iso(now - 3 * 864e5).slice(0, 10), symbol: "IAM", name: "Iambic Therapeutics, Inc.", exchange: "NASDAQ Global Select", price: "16.00",
+    numberOfShares: 9375000, totalSharesValue: 150000000, status: "priced" },
+  { date: iso(now - 5 * 864e5).slice(0, 10), symbol: null, name: "EuroSPAC Acquisition Corp.", exchange: null, price: null,
+    numberOfShares: null, totalSharesValue: 143750000, status: "filed" },
+] };
 export const dataJson = {
   updated: iso(now - 600e3),
   market: [
@@ -72,7 +79,8 @@ export function route(url, init) {
   if (u.host === "pages.test") {
     const name = p.replace("/econnews/", "");
     const map = { "data.json": dataJson, "stocks.json": stocksJson, "rates.json": ratesJson, "fin/AAPL.json": finAAPL,
-      "co/AAPL.json": coAAPL, "opt/AAPL.json": optAAPL, "options.json": optionsJson, "macro.json": macroJson, "moex.json": moexJson };
+      "co/AAPL.json": coAAPL, "opt/AAPL.json": optAAPL, "options.json": optionsJson, "macro.json": macroJson, "moex.json": moexJson,
+      ...(flags.noIpoFile ? {} : { "ipo.json": ipoJson }) };
     if (map[name]) return map[name];
     return { __status: 404 };
   }
@@ -97,6 +105,7 @@ export function route(url, init) {
     if (p.endsWith("/company-news")) return [{ datetime: 1792005473, headline: "Apple beats estimates", source: "Yahoo", url: "https://n/1" },
       { datetime: 1792004936, headline: "iPhone sales jump", source: "CNBC", url: "https://n/2" }];
     if (p.endsWith("/peers")) return s === "AAPL" ? [s, "NVDA", "DELL", "HPQ"] : [s, "DELL", "HPQ"];
+    if (p.endsWith("/calendar/ipo") && flags.failFinnhubIpo) return { __status: 500 };
     if (p.endsWith("/calendar/ipo")) return { ipoCalendar: [{ date: iso(now + 864e5).slice(0, 10), exchange: "NASDAQ Global", name: "CITY THERAPEUTICS, INC.",
       numberOfShares: 9722222, price: "17.00-19.00", status: "expected", symbol: "CTY", totalSharesValue: 212430545 }] };
     if (p.endsWith("/stock/filings")) return [{ form: "4", filedDate: "2026-10-10 00:00:00", reportUrl: "https://www.sec.gov/x4" },

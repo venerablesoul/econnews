@@ -2,7 +2,7 @@
 // Every reply is built in the chat's language: chat.lang is set by index.js ("en" by default, "ru" after /lang ru).
 import { arrow, esc, pageJSON, pagesUrl, send, tg } from "./lib.js";
 import { L, getLang, sectorName } from "./i18n.js";
-import { chartImage, fh, getCompany, getHistory, getQuotes, normRange, parseSymbol } from "./market.js";
+import { chartImage, getCompany, getHistory, getIpos, getQuotes, normRange, parseSymbol } from "./market.js";
 import {
   MAX_WATCH, addAlert, alertText, deleteAlert, getUser, parseAlert, portfolioView, saveUser, userAlerts,
 } from "./user.js";
@@ -373,14 +373,15 @@ export async function cmdMacro(env, chat, args) {
 
 export async function cmdIpo(env, chat) {
   const X = L(chat.lang);
-  const from = new Date().toISOString().slice(0, 10), to = new Date(Date.now() + 30 * 864e5).toISOString().slice(0, 10);
-  const d = await fh(env, `/calendar/ipo?from=${from}&to=${to}`, 3 * 3600);
+  const d = await getIpos(env);
   const st = X.t("ipo_status");
-  const list = ((d && d.ipoCalendar) || []).filter((x) => x.date >= from).sort((a, b) => (a.date < b.date ? -1 : 1)).slice(0, 20);
-  if (!list.length) return send(env, chat, X.t("ipo_none"));
-  return send(env, chat, X.t("ipo_head") + "\n" + list.map((x) => X.t("ipo_row", X.dm(x.date), esc(x.symbol || ""), esc(x.name || ""), esc(x.price || ""),
-    x.numberOfShares ? X.fmt(x.numberOfShares, 0) : "", x.totalSharesValue ? X.money(x.totalSharesValue) : "", st[x.status] || esc(x.status || ""))).join("\n\n"),
-  kb([[terminalBtn(env, chat, "IPO", X.t("btn_terminal_fn", "IPO"))]]));
+  const row = (x) => X.t("ipo_row", X.dm(x.date), esc(x.symbol || ""), esc(x.name || ""), esc(x.price || ""),
+    x.numberOfShares ? X.fmt(x.numberOfShares, 0) : "", x.totalSharesValue ? X.money(x.totalSharesValue) : "", st[x.status] || esc(x.status || ""));
+  const up = d.ipo.filter((x) => x.status === "expected").slice(0, 20);
+  const recent = d.ipo.filter((x) => x.status === "priced").slice(0, 10);
+  let text = up.length ? X.t("ipo_head") + "\n" + up.map(row).join("\n\n") : X.t("ipo_none");
+  if (recent.length) text += "\n\n" + X.t("ipo_recent") + "\n" + recent.map(row).join("\n\n");
+  return send(env, chat, text, kb([[terminalBtn(env, chat, "IPO", X.t("btn_terminal_fn", "IPO"))]]));
 }
 
 export function moexSectors(rows) {

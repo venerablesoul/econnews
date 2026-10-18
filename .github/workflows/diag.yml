@@ -3,21 +3,29 @@ name: Server check (temporary)
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - name: Nasdaq IPO calendar (structure)
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: First IPO calendar file (the news bot keeps it fresh from its next run)
         run: |
-          UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
-          for m in 2026-10 2026-11; do
-            code=$(curl -s -m 30 -A "$UA" -H "Accept: application/json, text/plain, */*" -o /tmp/n.json -w "%{http_code}" "https://api.nasdaq.com/api/ipo/calendar?date=$m")
-            echo "::notice title=nasdaq $m::HTTP $code $(jq -c '{keys:(.data|keys), up:(.data.upcoming.upcomingTable.rows|length), priced:(.data.priced.rows|length), filed:(.data.filed.rows|length), up0:.data.upcoming.upcomingTable.rows[0], pr0:.data.priced.rows[0], fi0:.data.filed.rows[0]}' /tmp/n.json 2>&1 | head -c 1500)"
-          done
-      - name: Finnhub-free checks through the bot server
+          python ipo.py
+          echo "::notice title=ipo.json::$(python -c "import json;d=json.load(open('docs/ipo.json'));print(len(d['ipo']), [(x['symbol'],x['status'],x['date']) for x in d['ipo'][:6]])")"
+          git config user.name "news-bot"; git config user.email "news-bot@users.noreply.github.com"
+          git add docs/ipo.json
+          git diff --cached --quiet || { git commit -m "IPO calendar file"; for i in 1 2 3 4 5; do git pull --rebase --autostash origin main && git push origin HEAD:main && break; sleep 5; done; }
+      - name: Wait for the site and the server, then check
         run: |
           API="https://econnews-bot.econnews-6dce35.workers.dev"
-          for p in "/api/history?s=BTC&r=1y" "/api/history?s=AAPL&r=1y"; do
-            out=$(curl -s -m 40 -o /tmp/b -w "%{http_code} %{time_total}s" "$API$p")
-            echo "::notice title=$p::$out $(head -c 200 /tmp/b)"
-          done
+          sleep 90
+          curl -s -m 40 "$API/api/ipo" -o /tmp/i.json
+          echo "::notice title=/api/ipo::$(jq -c '{ok, source, n:(.ipo|length), first:[.ipo[:4][]|[.symbol,.status,.date]], error}' /tmp/i.json | head -c 900)"
+          curl -s -m 60 "$API/api/corr?s=S%26P,NASDAQ,DAX,NIKKEI,IMOEX,BRENT,GOLD,EURUSD,UST10,BTC&r=1y" -o /tmp/c.json -w "%{time_total}s\n" > /tmp/t
+          echo "::notice title=/api/corr::$(cat /tmp/t) $(jq -c '{ok, syms, sp:.m[0], n0:.n[0], bad, error}' /tmp/c.json | head -c 1200)"

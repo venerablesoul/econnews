@@ -11,6 +11,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.dirname(HERE))
 
 import ai          # noqa: E402
+import ipo         # noqa: E402
 import rates       # noqa: E402
 import stocks      # noqa: E402
 
@@ -763,6 +764,48 @@ class GitSync(unittest.TestCase):
                 self.assertEqual(f.read(), '{"x": 1}')
             with open(os.path.join(dev, "code.py")) as f:
                 self.assertEqual(f.read(), "v3")
+
+
+class IpoCalendar(unittest.TestCase):
+    PAYLOAD = {"data": {
+        "upcoming": {"upcomingTable": {"rows": [
+            {"dealID": "1", "proposedTickerSymbol": "NEWC", "companyName": "New Co", "proposedExchange": "NYSE",
+             "proposedSharePrice": "17.00-19.00", "sharesOffered": "9,722,222", "expectedPriceDate": "10/22/2026",
+             "dollarValueOfSharesOffered": "$212,500,000"},
+            {"dealID": "0", "proposedTickerSymbol": "OLDC", "companyName": "Old Co", "expectedPriceDate": "10/01/2026"}]}},
+        # the real Nasdaq row layout (October 2026)
+        "priced": {"rows": [{"dealID": "1273626-119431", "proposedTickerSymbol": "IAM", "companyName": "Iambic Therapeutics, Inc.",
+                             "proposedExchange": "NASDAQ Global Select", "proposedSharePrice": "16.00", "sharesOffered": "9,375,000",
+                             "pricedDate": "10/15/2026", "dollarValueOfSharesOffered": "$150,000,000", "dealStatus": "Priced"},
+                            {"dealID": "9", "proposedTickerSymbol": "AGED", "companyName": "Aged Co", "pricedDate": "06/01/2026"}]},
+        "filed": {"rows": [{"dealID": "1405985-119627", "proposedTickerSymbol": None, "companyName": "EuroSPAC Acquisition Corp.",
+                            "filedDate": "10/13/2026", "dollarValueOfSharesOffered": "$143,750,000"}]},
+        "withdrawn": None}}
+
+    def test_parse_and_select(self):
+        rows = ipo.select(ipo.parse(self.PAYLOAD) + ipo.parse(self.PAYLOAD), "2026-10-18")
+        self.assertEqual([(r["symbol"], r["status"]) for r in rows],
+                         [("NEWC", "expected"), ("IAM", "priced"), (None, "filed")], "past upcoming and old deals dropped, no duplicates")
+        self.assertEqual(rows[0], {"date": "2026-10-22", "symbol": "NEWC", "name": "New Co", "exchange": "NYSE", "price": "17.00-19.00",
+                                   "numberOfShares": 9722222, "totalSharesValue": 212500000, "status": "expected"})
+        self.assertEqual(rows[1]["date"], "2026-10-15")
+
+    def test_build_writes_file_and_keeps_old_one_on_failure(self):
+        with tempfile.TemporaryDirectory() as d:
+            path = os.path.join(d, "ipo.json")
+            now = datetime(2026, 10, 18, 12, tzinfo=timezone.utc)
+            asked = []
+            self.assertEqual(ipo.build(now, path, lambda m: asked.append(m) or self.PAYLOAD), 3)
+            self.assertEqual(asked, ["2026-09", "2026-10", "2026-11"])
+            with open(path) as f:
+                self.assertEqual(len(json.load(f)["ipo"]), 3)
+            self.assertEqual(ipo.build(now + timedelta(minutes=30), path, lambda m: self.PAYLOAD), 0, "fresh file is kept")
+
+            def down(m):
+                raise OSError("no answer")
+            self.assertEqual(ipo.build(now + timedelta(hours=3), path, down), 0)
+            with open(path) as f:
+                self.assertEqual(len(json.load(f)["ipo"]), 3, "the old file survives an outage")
 
 
 if __name__ == "__main__":

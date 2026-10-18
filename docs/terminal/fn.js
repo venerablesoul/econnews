@@ -51,7 +51,12 @@ function api(path, opts){
   var h = T.authHeaders();
   var init = {headers: h, cache: 'no-store'};
   if (opts.method) { init.method = opts.method; h['Content-Type'] = 'application/json'; init.body = JSON.stringify(opts.body || {}) }
-  return fetch(base + path, init).then(function(r){ if (!r.ok) throw new Error('HTTP ' + r.status); return r.json() }).then(function(d){
+  // a time limit: on a slow or throttled connection the panel shows an error instead of "loading" forever
+  var timer = null;
+  if (window.AbortController) { var ac = new AbortController(); init.signal = ac.signal; timer = setTimeout(function(){ ac.abort() }, (opts.timeout || 30) * 1000) }
+  return fetch(base + path, init).then(function(r){ clearTimeout(timer); if (!r.ok) throw new Error('HTTP ' + r.status); return r.json() }, function(e){
+    clearTimeout(timer); throw e && e.name === 'AbortError' ? new Error(TX('srv_slow')) : e;
+  }).then(function(d){
     if (d && d.ok === false && d.error && !opts.allowError) throw new Error(d.error);
     if (!opts.method && opts.ttl) apiCache[key] = {at: Date.now(), v: d};
     return d;
@@ -1381,22 +1386,37 @@ function drawCorr(box){
   if (!T.api()) return noApi(box, TX('m_corr'));
   var note = el('div', 'loading', TX('loading_d')); box.appendChild(note);
   var token = ana.corrToken = {};   // a newer draw (the panel can be drawn twice when it opens) wins
+  var stale = function(){ return token !== ana.corrToken || ana.tab !== 'CORR' || range !== ana.corrRange || syms.join() !== ana.corr.join() };
+  api('/api/corr?s=' + encodeURIComponent(syms.join(',')) + '&r=' + range, {ttl: 600, timeout: 40, allowError: true}).then(function(d){
+    if (!d || !d.m) throw new Error((d && d.error) || 'old server');
+    if (stale()) return;
+    note.remove();
+    drawCorrTable(box, d.syms.map(function(s, i){ return {s: s} }), d.m, (d.bad || []).map(function(b){ return b.s }));
+  }).catch(function(e){
+    if (stale()) return;
+    if (!/old server|HTTP 404/.test(e.message)) { note.remove(); return errBox(box, e) }
+    corrPerSymbol(box, note, syms, range, stale);
+  });
+}
+function corrPerSymbol(box, note, syms, range, stale){
   Promise.all(syms.map(function(s){ return history(s, range).catch(function(e){ return {error: e.message} }) })).then(function(arr){
-    if (token !== ana.corrToken || ana.tab !== 'CORR' || range !== ana.corrRange || syms.join() !== ana.corr.join()) return;
+    if (stale()) return;
     note.remove();
     var series = [], bad = [];
     arr.forEach(function(h, i){ if (h.error || !h.c) bad.push(syms[i]); else series.push({s: syms[i], r: dailyReturns(h)}) });
-    var m = corrMatrix(series);
-    var tb = table([{t: ''}].concat(series.map(function(x){ return {t: x.s} })));
-    tb.t.classList.add('mx');
-    series.forEach(function(a, i){
-      var tr = el('tr'); tr.appendChild(td(a.s, 'l tkc'));
-      m[i].forEach(function(v, j){ var c = td(v == null ? '—' : fmt(v, 2)); if (i !== j && v != null) { c.style.background = heat(v, 1); c.style.color = '#fff' } c.title = a.s + ' / ' + series[j].s; tr.appendChild(c) });
-      tb.body.appendChild(tr);
-    });
-    box.appendChild(tb.t);
-    box.appendChild(el('div', 'note', TX('corr_note') + (bad.length ? TX('not_loaded') + bad.join(', ') : '')));
+    drawCorrTable(box, series, corrMatrix(series), bad);
   });
+}
+function drawCorrTable(box, series, m, bad){
+  var tb = table([{t: ''}].concat(series.map(function(x){ return {t: x.s} })));
+  tb.t.classList.add('mx');
+  series.forEach(function(a, i){
+    var tr = el('tr'); tr.appendChild(td(a.s, 'l tkc'));
+    m[i].forEach(function(v, j){ var c = td(v == null ? '—' : fmt(v, 2)); if (i !== j && v != null) { c.style.background = heat(v, 1); c.style.color = '#fff' } c.title = a.s + ' / ' + series[j].s; tr.appendChild(c) });
+    tb.body.appendChild(tr);
+  });
+  box.appendChild(tb.t);
+  box.appendChild(el('div', 'note', TX('corr_note') + (bad.length ? TX('not_loaded') + bad.join(', ') : '')));
 }
 function drawOpt(box){
   $('ana-title').textContent = TX('opt_title');
@@ -1422,11 +1442,16 @@ function drawIpo(box){
   $('ana-title').textContent = TX('ipo_title');
   if (!T.api()) return noApi(box, TX('m_ipo'));
   loading(box);
-  api('/api/ipo', {ttl: 1800}).then(function(d){
+  api('/api/ipo', {ttl: 900}).then(function(d){
+    if (!d.ipo || !d.ipo.length) return page('ipo.json', 900).then(function(f){ return f && f.ipo && f.ipo.length ? f : d }, function(){ return d });
+    return d;
+  }, function(e){ return page('ipo.json', 900).catch(function(){ throw e }) }).then(function(d){
     if (ana.tab !== 'IPO') return;
     clear(box);
+    $('ana-sub').textContent = d.updated ? TX('updated_at', T.hm(d.updated)) : '';
     var list = d.ipo || [];
     if (!list.length) { box.appendChild(el('div', 'empty', TX('ipo_none'))); return }
+    if (!list.some(function(x){ return x.status === 'expected' })) box.appendChild(el('div', 'note', TX('ipo_none')));
     var st = TX('ipo_status'), tb = table(cols(TX('ipo_cols'), [1, 2, 3]));
     list.forEach(function(x){
       var tr = el('tr'); tr.appendChild(td(dmy(x.date), 'l')); tr.appendChild(td(x.symbol || '', 'l tkc')); tr.appendChild(td(x.name || '', 'l')); tr.appendChild(td(x.exchange || '', 'l'));

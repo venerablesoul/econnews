@@ -410,6 +410,72 @@ const FA_KEYS = ["eps", "salesPerShare", "grossMargin", "operatingMargin", "netM
 // Headlines are translated one by one (in parallel): joined together, the translator sometimes loses line breaks.
 // Google first, MyMemory if Google blocks the server; if both fail the original stays.
 // Only the Russian bot needs this: the terminal translates in the browser.
+// ---------------------------------------------------------------------------
+// Correlations (CORR): one request for the whole matrix instead of one per instrument
+// ---------------------------------------------------------------------------
+// the trading day of a bar: Moscow time for the Moscow Exchange, UTC for the rest (Yahoo stamps bars at the session open)
+function dayOf(t, src) {
+  return new Date((t + (src === "moex" ? 3 * 3600 : 0)) * 1000).toISOString().slice(0, 10);
+}
+
+export function corrPair(a, b) {
+  // returns are taken between the days both instruments traded, so weekends and holidays do not shift them
+  const common = Object.keys(a).filter((d) => b[d] != null).sort();
+  const xs = [], ys = [];
+  for (let i = 1; i < common.length; i++) {
+    const a0 = a[common[i - 1]], a1 = a[common[i]], b0 = b[common[i - 1]], b1 = b[common[i]];
+    if (a0 > 0 && b0 > 0 && a1 > 0 && b1 > 0) { xs.push(Math.log(a1 / a0)); ys.push(Math.log(b1 / b0)); }
+  }
+  const n = xs.length;
+  if (n < 10) return { r: null, n };
+  const mx = xs.reduce((s, x) => s + x, 0) / n, my = ys.reduce((s, y) => s + y, 0) / n;
+  let sxy = 0, sxx = 0, syy = 0;
+  for (let i = 0; i < n; i++) { const dx = xs[i] - mx, dy = ys[i] - my; sxy += dx * dy; sxx += dx * dx; syy += dy * dy; }
+  return { r: sxx && syy ? Math.round(sxy / Math.sqrt(sxx * syy) * 1000) / 1000 : null, n };
+}
+
+export async function getCorr(env, raws, range) {
+  range = normRange(range);
+  if (range === "1d" || range === "5d") range = "3m";
+  const list = [...new Set(raws.map((x) => String(x || "").trim()).filter(Boolean))].slice(0, 12);
+  const got = await Promise.all(list.map((s) => getHistory(env, s, range).then((h) => ({ s, h }), (e) => ({ s, error: String(e.message || e) }))));
+  const ok = got.filter((g) => g.h), bad = got.filter((g) => !g.h).map((g) => ({ s: g.s, error: g.error }));
+  const closes = ok.map(({ h }) => { const m = {}; h.t.forEach((t, i) => { if (h.c[i] != null) m[dayOf(t, h.src)] = h.c[i]; }); return m; });
+  const m = ok.map((_, i) => ok.map((__, j) => (i === j ? 1 : null)));
+  const n = ok.map(() => ok.map(() => 0));
+  for (let i = 0; i < ok.length; i++) for (let j = i + 1; j < ok.length; j++) {
+    const p = corrPair(closes[i], closes[j]);
+    m[i][j] = m[j][i] = p.r; n[i][j] = n[j][i] = p.n;
+  }
+  return { ok: true, range, syms: ok.map((g) => g.s), keys: ok.map((g) => g.h.s), m, n, bad };
+}
+
+// ---------------------------------------------------------------------------
+// IPO calendar: Finnhub (upcoming, often empty on the free key) + docs/ipo.json from the news bot (Nasdaq calendar)
+// ---------------------------------------------------------------------------
+const IPO_ORDER = { expected: 0, priced: 1, filed: 2, withdrawn: 3 };
+
+export async function getIpos(env) {
+  const from = new Date().toISOString().slice(0, 10), to = new Date(Date.now() + 30 * 864e5).toISOString().slice(0, 10);
+  const [fhd, site] = await Promise.all([
+    env.FINNHUB_API_KEY ? fh(env, `/calendar/ipo?from=${from}&to=${to}`, 3 * 3600).catch(() => null) : null,
+    pageJSON(env, "ipo.json", 600).catch(() => null),
+  ]);
+  if (!fhd && !site) throw new Error("IPO calendar: no answer from Finnhub, and the bot has not published ipo.json yet");
+  const key = (x) => (x.symbol || x.name || "").toUpperCase();
+  const rows = ((site && site.ipo) || []).filter((x) => x.status !== "expected" || x.date >= from);
+  const have = new Set(rows.filter((x) => x.status === "expected" || x.status === "priced").map(key));
+  for (const x of (fhd && fhd.ipoCalendar) || []) {
+    if (x.date < from || have.has(key(x))) continue;
+    have.add(key(x));
+    rows.push({ date: x.date, symbol: x.symbol || null, name: x.name, exchange: x.exchange || null, price: x.price || null,
+      numberOfShares: x.numberOfShares || null, totalSharesValue: x.totalSharesValue || null, status: x.status || "expected" });
+  }
+  rows.sort((a, b) => (IPO_ORDER[a.status] ?? 9) - (IPO_ORDER[b.status] ?? 9)
+    || (a.status === "expected" ? (a.date < b.date ? -1 : a.date > b.date ? 1 : 0) : (a.date < b.date ? 1 : a.date > b.date ? -1 : 0)));
+  return { ok: true, ipo: rows.slice(0, 80), updated: (site && site.updated) || null, source: site ? "Nasdaq" + (fhd ? " + Finnhub" : "") : "Finnhub" };
+}
+
 export const translateState = { errors: [] };
 
 async function translateOne(line) {

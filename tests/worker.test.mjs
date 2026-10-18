@@ -604,7 +604,9 @@ await test("morning note: watchlist companies reporting today or tomorrow, once 
 
 await test("/api/ipo and intraday history (1D, 5D)", async () => {
   const r = await api("/api/ipo");
-  assert.equal(r.json.ipo[0].symbol, "CTY");
+  assert.equal(r.json.ipo[0].symbol, "CTY", "upcoming first (Finnhub)");
+  assert.deepEqual(r.json.ipo.map((x) => x.status), ["expected", "priced", "filed"], "then recently priced and filed (Nasdaq file)");
+  assert.equal(r.json.source, "Nasdaq + Finnhub");
   const h = await api("/api/history?s=AAPL&r=1d");
   assert.equal(h.json.range, "1d");
   assert.ok(calls.some((u) => /chart\/AAPL\?range=1d&interval=5m/.test(u)), "5-minute bars");
@@ -619,6 +621,47 @@ await test("/api/ipo and intraday history (1D, 5D)", async () => {
   assert.equal(c.json.src, "coinbase");
   const out = await msg("/chart AAPL 1d"); noErrors(out);
   assert.match(texts(out), /1 day/);
+});
+
+await test("/api/ipo without Finnhub and without the file; the bot's /ipo shows recently priced deals", async () => {
+  clearMemo();
+  flags.failFinnhubIpo = true;
+  const r = await api("/api/ipo");
+  assert.deepEqual(r.json.ipo.map((x) => x.symbol), ["IAM", null], "the Nasdaq file alone");
+  let out = await msg("/ipo"); noErrors(out);
+  assert.match(texts(out), /No IPOs in the next 30 days[\s\S]*Recently priced[\s\S]*IAM · Iambic Therapeutics/);
+  clearMemo();
+  flags.noIpoFile = true;
+  const e = await api("/api/ipo");
+  assert.equal(e.json.ok, false);
+  assert.match(e.json.error, /IPO calendar/);
+  flags.failFinnhubIpo = false; flags.noIpoFile = false;
+  clearMemo();
+});
+
+await test("/api/corr: one request for the matrix; returns on common trading days", async () => {
+  const { corrPair } = await import("../worker/src/market.js");
+  // a 7-day asset and a 5-day one: returns between the days both traded, so Monday is not compared with Sunday
+  const a = {}, b = {};
+  let pa = 100, pb = 50;
+  for (let i = 0; i < 60; i++) {
+    const d = new Date(Date.UTC(2026, 0, 1) + i * 864e5), day = d.toISOString().slice(0, 10), wd = d.getUTCDay();
+    pa *= 1 + Math.sin(i * 1.7) * 0.02;
+    a[day] = pa;
+    if (wd !== 0 && wd !== 6) b[day] = pa / 2;   // the same asset, closed at weekends
+  }
+  const p = corrPair(a, b);
+  assert.equal(p.r, 1, "identical prices on common days correlate exactly");
+  assert.ok(p.n > 35);
+  const r = await api("/api/corr?s=" + encodeURIComponent("AAPL,BTC,gold,NOPE!!") + "&r=1y");
+  assert.equal(r.json.ok, true);
+  assert.deepEqual(r.json.syms, ["AAPL", "BTC", "gold"]);
+  assert.equal(r.json.m.length, 3);
+  assert.equal(r.json.m[0][0], 1);
+  assert.equal(r.json.m[0][1], r.json.m[1][0], "symmetric");
+  assert.deepEqual(r.json.bad.map((x) => x.s), ["NOPE!!"]);
+  const few = await api("/api/corr?s=AAPL");
+  assert.equal(few.status, 400);
 });
 
 await test("the root address answers", async () => {

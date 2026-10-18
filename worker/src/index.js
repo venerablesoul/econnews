@@ -12,7 +12,8 @@
 //   /api/quote      — quotes of anything: ?s=AAPL,BTC,SBER,oil
 //   /api/company    — company: ?s=AAPL&parts=des,fa,ern,anr,cn,hds,co,dvd,cf,opt,rv[&lang=ru]
 //   /api/history    — price history: ?s=AAPL&r=1y (1d 5d 1m 3m 6m ytd 1y 2y 5y)
-//   /api/ipo        — IPO calendar for the next 30 days (Finnhub)
+//   /api/ipo        — IPO calendar: upcoming, recently priced and filed (Nasdaq calendar via the news bot + Finnhub)
+//   /api/corr       — correlation matrix in one request: ?s=S%26P,GOLD,BTC&r=1y (3m 6m 1y 2y 5y)
 //   /api/live       — fresh stories and quotes from the news bot
 //   /api/me         — watchlist, portfolio and alerts (sign-in via Telegram or the owner's password)
 //   cron            — every 2 minutes checks alerts and sends messages
@@ -24,7 +25,7 @@
 import {
   arrow, cached, cors, esc, hex, hmac, hookKey, isOwnerChat, json, pagesUrl, send, siteData, syncKey, tg,
 } from "./lib.js";
-import { COMPANY_PARTS, fh, getCompany, getHistory, getQuotes, mktName, parseSymbol, worldQuotes } from "./market.js";
+import { COMPANY_PARTS, getCompany, getCorr, getHistory, getIpos, getQuotes, mktName, parseSymbol, worldQuotes } from "./market.js";
 import { isNewCallback, newCallback, newCommand, watchReminders } from "./botcmd.js";
 import { L, aiSum, getLang, newsField, norm, setLang, sourceName, t, tagName, tradeLabel, TRADE_TYPE } from "./i18n.js";
 import { checkAlerts, meApi } from "./user.js";
@@ -71,6 +72,7 @@ export default {
       if (url.pathname === "/api/company") return cors(await companyApi(env, url));
       if (url.pathname === "/api/ipo") return cors(await ipoApi(env));
       if (url.pathname === "/api/history") return cors(await historyApi(env, url));
+      if (url.pathname === "/api/corr") return cors(await corrApi(env, url));
       if (url.pathname === "/api/live") return cors(await liveApi(env));
       if (url.pathname === "/api/me") {
         return cors(json(await meApi(req, env, await whoIs(req, env), norm(url.searchParams.get("lang"))), 200, { "Cache-Control": "no-store" }));
@@ -446,10 +448,13 @@ async function companyApi(env, url) {
 }
 
 async function ipoApi(env) {
-  const from = new Date().toISOString().slice(0, 10), to = new Date(Date.now() + 30 * 864e5).toISOString().slice(0, 10);
-  const d = await fh(env, `/calendar/ipo?from=${from}&to=${to}`, 3 * 3600);
-  const ipo = ((d && d.ipoCalendar) || []).filter((x) => x.date >= from).sort((a, b) => (a.date < b.date ? -1 : 1)).slice(0, 60);
-  return json({ ok: true, ipo }, 200, { "Cache-Control": "public, max-age=1800" });
+  return json(await getIpos(env), 200, { "Cache-Control": "public, max-age=900" });
+}
+
+async function corrApi(env, url) {
+  const syms = (url.searchParams.get("s") || "").split(",").map((x) => x.trim()).filter(Boolean);
+  if (syms.length < 2) return json({ ok: false, error: "add at least two instruments: s=S%26P,GOLD" }, 400);
+  return json(await getCorr(env, syms, url.searchParams.get("r") || "1y"), 200, { "Cache-Control": "public, max-age=600" });
 }
 
 async function historyApi(env, url) {
