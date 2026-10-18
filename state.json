@@ -1,12 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "a8511a4cf02f60d6": "2026-10-15T20:37:36.404203+00:00",
-  "5afee76ae5098316": "2026-10-15T20:37:36.404203+00:00",
-  "28a042584b98b317": "2026-10-15T20:37:36.404203+00:00",
-  "59f82561e3edc9ad": "2026-10-15T20:37:36.404203+00:00",
-  "71efe846db890abd": "2026-10-15T20:37:36.404203+00:00",
-  "35394eae149a15f1": "2026-10-15T20:42:36.492282+00:00",
   "a362288c218b5dee": "2026-10-15T20:47:36.464755+00:00",
   "e9e4f6c1062bad64": "2026-10-15T20:52:36.574741+00:00",
   "083c30f3d0135231": "2026-10-15T20:52:36.574741+00:00",
@@ -592,58 +586,6 @@
   "221e7a2180b9eaee": "2026-10-18T20:34:36.411648+00:00"
  },
  "recent": [
-  {
-   "title": "US weekly jobless claims rise marginally amid low layoffs",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPbFJoc29BeFZCRUZaZWlVS3AwV3ZPcFl0Z1p1eDAtM1pxd1JRd2NHWS1PUlVqWUhqRXlFc0hDaTFNNW1BRC1mR0lOQXgwVlNUQVpYSjZ3V2ZaeENUbVdtUGJkcG5ZRkhRNFVpWEhOR2stcFNGSkdMd01mSkppTTZFRzVyV1Y2aU9GZG1DUmE0NXAwXzUwLVdKRjRnaThGMDVaMXFieA?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-15T20:37:36.404203+00:00",
-   "title_ru": "Еженедельные заявки на пособие по безработице в США незначительно растут на фоне низких увольнений",
-   "tags": [
-    "jobs"
-   ]
-  },
-  {
-   "title": "Dollar Wraps Its Worst Day in Over a Month on AI Risk Concerns",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-15/dollar-wraps-its-worst-day-in-over-a-month-on-ai-risk-concerns",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-15T20:37:36.404203+00:00",
-   "title_ru": "Доллар завершает худший день за месяц из-за проблем с риском ИИ",
-   "lead": "The dollar fell the most in more than a month, erasing gains fueled by hotter-than-expected inflation data.",
-   "lead_ru": "Доллар упал больше всего более чем за месяц, стирая прибыль, подпитываемую более жаркими, чем ожидалось, данными по инфляции.",
-   "tags": [
-    "inflation",
-    "dollar"
-   ]
-  },
-  {
-   "title": "India markets regulator partly reverses derivative settlement rules after pushback",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQZGRONTRmdHRZYTJ6Yk54UE52QjBqX1NCZzdZRmFZb3JFR2tBTGF5cHpJWkZoaURDYXVkazBOcnFqdHZIOUNkZ0xNLTRtWnhFeVRrcVo5d0c2TmYwY1BzUDgxYzV3SUxMTlU3RHliUzFDM0Zsc1ZwRlZQQXJTZE5HWGpGOGxUVVBHM3FsQzZGV3VIS1JYOFcxVWYwbWFjRVFUQnUxN0RHVkF3em90RDNRbEd0T0V4eEQ1VlRxM1JR?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-15T20:37:36.404203+00:00",
-   "title_ru": "Индийский регулятор рынков частично отменяет правила расчетов по деривативам после отката"
-  },
-  {
-   "title": "Italy's UniCredit wins ECB approval to control Germany's Commerzbank",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPUVFTa1VwRXR2TUlHR2FGRG9UU0xMY04yZU5JeGlqajl2T29mZGJqalB3TThYNi1nWjRpODB6X3dRTENISUhPdWp2Rk1yRFpNRnYxR1VNUTZuQUl5RW5ldmljNFhqY3pJX3M4RVczRm13UzF4TWhTX1Z2UWF6aHRkUUNqLXZDd3FOSjRONVhEQkFjd0NWa09uQXNad0FONWdxdkVvRmdwWlFxczczT1VSanRjeU0zMUU?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-15T20:37:36.404203+00:00",
-   "title_ru": "Итальянский UniCredit получил одобрение ЕЦБ на контроль немецкого Commerzbank",
-   "tags": [
-    "ECB"
-   ]
-  },
   {
    "title": "International Paper Jumps on Potential Multibillion-Dollar Bids | Closing Bell",
    "link": "https://www.bloomberg.com/news/videos/2026-10-15/international-paper-jumps-on-bids-closing-bell-video",
@@ -5455,7 +5397,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 1,
+  "Fed": 0,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
