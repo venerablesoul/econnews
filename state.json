@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "bc31c6dffc650b7d": "2026-10-15T23:17:36.439568+00:00",
   "208bc81ed0657e7d": "2026-10-15T23:27:36.418716+00:00",
   "6d38451622e1132d": "2026-10-15T23:32:36.449793+00:00",
   "8ee5baf84ff00d5e": "2026-10-15T23:37:36.409064+00:00",
@@ -572,24 +571,10 @@
   "792442693243bf5d": "2026-10-18T23:09:36.391604+00:00",
   "cea6927cb3b16471": "2026-10-18T23:09:36.391604+00:00",
   "a8275e02227b60ee": "2026-10-18T23:14:36.368519+00:00",
-  "30d1e6ab87016853": "2026-10-18T23:14:36.368519+00:00"
+  "30d1e6ab87016853": "2026-10-18T23:14:36.368519+00:00",
+  "5e8287a78fb6bbe2": "2026-10-18T23:20:13.679658+00:00"
  },
  "recent": [
-  {
-   "title": "China’s Plan to Make Yuan a Global Currency Enters Faster Phase",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-15/china-s-plan-to-make-yuan-a-global-currency-enters-faster-phase",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-15T23:17:36.439568+00:00",
-   "title_ru": "План Китая по превращению юаня в мировую валюту вступает в более быструю фазу",
-   "lead": "China’s campaign to promote the global use of the yuan appears to be accelerating as the authorities seek to build a more comprehensive financial ecosystem for the currency beyond just trade settlement.",
-   "lead_ru": "Кампания Китая по продвижению глобального использования юаня, похоже, ускоряется, поскольку власти стремятся создать более всеобъемлющую финансовую экосистему для валюты, выходящую за рамки справедливых торговых расчетов.",
-   "tags": [
-    "China"
-   ]
-  },
   {
    "title": "US chip stocks set to wipe out $2 trillion after latest selloff",
    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNVDZEYU5ySFdLYUlmY29XeGxBbzZ1Nk92dHprTE44dzd5V19Yd09NdmUxUFpXMHhxdzYwenJiUjJQRFhPOXhBcHptTW9rY2J2Y01kM1loR3VQMVBXRG9mR2hQbkdWVnNGQVpCN01KelozT1h4aGx0RjRYeUZHRVRCYnlLWlpXWmpwbFRmRG4tSFR1RkNpRHNTb0lueU1VdWlpSjVFVGljZw?oc=5",
@@ -5242,6 +5227,22 @@
     "sanctions",
     "Russia"
    ]
+  },
+  {
+   "title": "US rate rises are being amplified in global markets",
+   "link": "https://www.ft.com/content/cea20e2a-379c-4ea2-af94-353b1896b748",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 3,
+   "ts": "2026-10-18T23:20:13.679658+00:00",
+   "title_ru": "Повышение ставок в США усиливается на мировых рынках",
+   "lead": "The Iran war and shifts by China are tightening the supply of dollars in international markets",
+   "lead_ru": "Иранская война и сдвиги со стороны Китая ужесточают предложение долларов на международных рынках",
+   "tags": [
+    "dollar",
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-10-18",
@@ -9089,9 +9090,9 @@
    "0001213900-26-110401",
    "0000037785-26-000164",
    "0001214659-26-013018",
-   "0001646382-26-000023",
    "0000037785-26-000163",
    "0001193125-26-424368",
+   "0001646382-26-000023",
    "0001213900-26-110428",
    "0001213900-26-110436",
    "0001104659-26-116675",
