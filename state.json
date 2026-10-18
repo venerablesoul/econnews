@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "bae5323924c350b6": "2026-10-15T04:56:57.649601+00:00",
-  "9953b9ede2a5eb66": "2026-10-15T04:56:57.649601+00:00",
   "5ad39845e4d34e98": "2026-10-15T05:01:57.427481+00:00",
   "a9bb199c6a262f49": "2026-10-15T05:01:57.427481+00:00",
   "ed31c55ba99e2929": "2026-10-15T05:01:57.427481+00:00",
@@ -798,23 +796,10 @@
   "83bcdf8885c2d887": "2026-10-18T04:08:04.653434+00:00",
   "bc6de2973c2c5205": "2026-10-18T04:18:04.663635+00:00",
   "ff0b1bbfc107c366": "2026-10-18T04:38:04.685859+00:00",
-  "628bfac291530e3d": "2026-10-18T04:48:04.666154+00:00"
+  "628bfac291530e3d": "2026-10-18T04:48:04.666154+00:00",
+  "a4348ade7db45996": "2026-10-18T04:58:04.667273+00:00"
  },
  "recent": [
-  {
-   "title": "Fed's Goolsbee says September CPI data was discouraging",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNNXZVX0VsdE85NGlqRkdpZXRvdk1fdmM4R04xWW5mRW91aGhGMXpBSjBPa01sc2laemlFTklJeTNkS3gxdk5LNlptQll5YUh3VGVhNzlnSUtPdTlDRmNyekZEZ3NFbGQ4SFVWRlpmeE1ONm9HbDRhLUkwWlRPUVlLcHdxSDBpTy1xWnVFenlGcFd4OFFEd3cyMmU5UlZhUGxNYVAxM3dkODhNUFEyR28zRURCTWhNZw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-15T04:56:57.649601+00:00",
-   "title_ru": "Гулсби из ФРС говорит, что сентябрьские данные по индексу потребительских цен были разочаровывающими",
-   "tags": [
-    "ФРС",
-    "инфляция"
-   ]
-  },
   {
    "title": "Ukraine to Resume Russia Oil Refinery Strikes, FT Reports",
    "link": "https://www.bloomberg.com/news/articles/2026-10-15/ukraine-to-resume-russia-refinery-strikes-zelenskyy-tells-ft-mv911ocb",
@@ -7946,6 +7931,21 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Global economy set for AI-driven surge, FT survey suggests",
+   "link": "https://www.ft.com/content/c6aeb3a1-1874-4947-8ffc-4d993301244a?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 3,
+   "ts": "2026-10-18T04:58:04.667273+00:00",
+   "title_ru": "Согласно исследованию FT, мировая экономика ожидает резкий рост благодаря искусственному интеллекту",
+   "lead": "Poll of 94 economists points to benefits reaching far beyond the US and China",
+   "lead_ru": "Опрос 94 экономистов указывает на то, что выгоды выходят далеко за пределы США и Китая.",
+   "tags": [
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-10-17",
@@ -7968,7 +7968,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 1,
+  "Fed": 0,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
