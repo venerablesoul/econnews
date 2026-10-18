@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "3e0a3f73ce379d96": "2026-10-15T11:57:29.328210+00:00",
-  "97ba392ce70a3ffe": "2026-10-15T12:02:29.623406+00:00",
-  "71b5eb1e8129e2a0": "2026-10-15T12:02:29.623406+00:00",
-  "be7c39b1ca193c40": "2026-10-15T12:02:29.623406+00:00",
   "266af4434e114c66": "2026-10-15T13:52:00.117944+00:00",
   "851350a59a335916": "2026-10-15T13:52:00.117944+00:00",
   "d237212da10b5111": "2026-10-15T13:52:00.117944+00:00",
@@ -688,61 +684,11 @@
   "fbb1aca8fc2a5a62": "2026-10-18T10:53:30.894167+00:00",
   "5e7c7b955328deba": "2026-10-18T11:03:30.900162+00:00",
   "5a89324960192d99": "2026-10-18T11:03:30.900162+00:00",
-  "182bd8e74703a700": "2026-10-18T11:13:30.892684+00:00"
+  "182bd8e74703a700": "2026-10-18T11:13:30.892684+00:00",
+  "6c44cac32b8c5c12": "2026-10-18T12:03:30.908193+00:00",
+  "009f0ebde59cc26e": "2026-10-18T12:03:30.908193+00:00"
  },
  "recent": [
-  {
-   "title": "Bonds Are Back, Says BlackRock’s Wei Li",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-15/bonds-are-back-says-blackrock-s-wei-li-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-15T11:57:29.328210+00:00",
-   "title_ru": "Облигации вернулись, говорит Вэй Ли из BlackRock",
-   "lead": "Wei Li, global chief investment strategist at BlackRock, explains her firm’s bullish move on short-term US Treasuries while downgrading stocks. She speaks on “Bloomberg Surveillance.” (Source: Bloomberg)",
-   "lead_ru": "Вэй Ли, главный глобальный инвестиционный стратег BlackRock, объясняет оптимистичный шаг своей фирмы в отношении краткосрочных казначейских облигаций США, одновременно снижая рейтинг акций. Она рассказывает о «Наблюдении Bloomberg». (Источник: Блумберг)",
-   "tags": [
-    "bonds",
-    "markets"
-   ]
-  },
-  {
-   "title": "Eskom CEO Still Sees Scope for Growth",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-15/eskom-ceo-still-sees-scope-for-growth",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-15T12:02:29.623406+00:00",
-   "title_ru": "Генеральный директор Eskom по-прежнему видит возможности для роста",
-   "lead": "As South Africa’s state power utility relinquishes its monopoly over electricity provision, CEO Dan Marokane says it will remain a dominant player in the country and take on an increasingly important role in neighboring states.",
-   "lead_ru": "Поскольку государственная энергетическая компания Южной Африки отказывается от своей монополии на поставку электроэнергии, генеральный директор Дэн Марокейн говорит, что она останется доминирующим игроком в стране и будет играть все более важную роль в соседних государствах."
-  },
-  {
-   "title": "Macroeconomic policy must now do many things at once",
-   "link": "https://www.ft.com/content/825b0ed4-060e-49dd-8199-b6accc393ff1?syn-25a6b1a6=1",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 3,
-   "ts": "2026-10-15T12:02:29.623406+00:00",
-   "title_ru": "Макроэкономическая политика теперь должна делать много вещей одновременно",
-   "lead": "Is it possible to contain debt and inflation without damaging the investment needed to restructure the economy?",
-   "lead_ru": "Возможно ли сдержать долг и инфляцию, не нанося ущерба инвестициям, необходимым для реструктуризации экономики?",
-   "tags": [
-    "inflation"
-   ]
-  },
-  {
-   "title": "Bad news for Trump ahead of the midterms: it’s still the economy, stupid",
-   "link": "https://www.theguardian.com/business/2026/oct/15/trump-economy-midterm-elections",
-   "sources": [
-    "The Guardian"
-   ],
-   "score": 2,
-   "ts": "2026-10-15T12:02:29.623406+00:00"
-  },
   {
    "title": "US Stock Futures Today: CoreWeave, Dell, FMC, Intel, Micron, Penske",
    "link": "https://www.bloomberg.com/news/articles/2026-10-15/us-stock-futures-today-coreweave-dell-fmc-intel-micron-penske",
@@ -6663,6 +6609,24 @@
    "title_ru": "Вернут ли доходы Meta доверие к буму ИИ?",
    "lead": "Market Questions is the FT’s guide to the week ahead",
    "lead_ru": "Вопросы рынка - это руководство FT по предстоящей неделе"
+  },
+  {
+   "title": "There is a silent market rotation inside the S&P 500 that’s warning of more weakness ahead",
+   "link": "https://www.marketwatch.com/story/there-is-a-silent-market-rotation-inside-the-s-p-500-thats-warning-of-more-weakness-ahead-549e7650?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 2,
+   "ts": "2026-10-18T12:03:30.908193+00:00"
+  },
+  {
+   "title": "Small business owners are doing OK – but will that help Trump overcome his low approval ratings?",
+   "link": "https://www.theguardian.com/business/2026/oct/18/small-business-owners-trump-economy",
+   "sources": [
+    "The Guardian"
+   ],
+   "score": 2,
+   "ts": "2026-10-18T12:03:30.908193+00:00"
   }
  ],
  "last_digest": "2026-10-17",
