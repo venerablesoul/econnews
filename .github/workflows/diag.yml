@@ -1,0 +1,20 @@
+name: Server check (temporary)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ask the bot server for IPO and price history
+        run: |
+          API="https://econnews-bot.econnews-6dce35.workers.dev"
+          probe() {
+            out=$(curl -s -m 40 -o /tmp/b -w "%{http_code} %{time_total}s" "$API$1")
+            body=$(head -c 400 /tmp/b | tr '\n\r' '  ')
+            echo "::notice title=$1::$out $body"
+          }
+          probe "/api/ipo"
+          for s in S%26P NASDAQ DAX NIKKEI IMOEX BRENT GOLD EURUSD UST10 BTC; do probe "/api/history?s=$s&r=1y"; done
+          probe "/api/history?s=AAPL&r=3m"
