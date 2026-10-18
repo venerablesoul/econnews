@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "778ee9d96ecb21c6": "2026-10-15T11:22:29.407349+00:00",
-  "c9821591a08aa16a": "2026-10-15T11:22:29.407349+00:00",
   "c7a679049e7f8283": "2026-10-15T11:32:29.296628+00:00",
   "09d0c2086643c32d": "2026-10-15T11:32:29.296628+00:00",
   "1f11764e5d5b1095": "2026-10-15T11:32:29.296628+00:00",
@@ -706,30 +704,6 @@
   "182bd8e74703a700": "2026-10-18T11:13:30.892684+00:00"
  },
  "recent": [
-  {
-   "title": "AI Stocks Slide as TSMC Outlook Fails to Ease Bubble Fears",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-15/the-pulse-10-15-2026-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-15T11:22:29.407349+00:00",
-   "title_ru": "Акции AI падают, поскольку прогноз TSMC не может развеять опасения о пузыре",
-   "lead": "\"The Pulse With Francine Lacqua\" is all about conversations with high profile guests in the beating heart of global business, economics, finance and politics.",
-   "lead_ru": "«Пульс с Франсин Лаква» — это беседы с высокопоставленными гостями в самом сердце мирового бизнеса, экономики, финансов и политики.",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "This 30-year market veteran is alarmed by a near-record S&P 500. Here’s where he’s investing instead.",
-   "link": "https://www.marketwatch.com/story/this-30-year-market-veteran-is-alarmed-by-a-near-record-s-p-500-heres-where-hes-investing-instead-c6611143?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 2,
-   "ts": "2026-10-15T11:22:29.407349+00:00"
-  },
   {
    "title": "Pound rises against weaker dollar, UK GDP unexpectedly rises",
    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOUGlrUlN1d29DekMyUDJCVW9SQ3B3aURmNlhsWDlmeGI4bGhndWlKMURKc0dFWjRnN1JzTGowRTdNNklvWjNjMFh5eWgybjBKalNpVy1YWEY2dXgwZjZ3bUNfVDJpeENvTzVENVZQb3l5ZDU3ZjRpVUhyX0pvT1gyMjU0em41SWFGV3R3RlROdVdLX1hBWEFoYWZVb29GM1N5Q1k0TTZsRQ?oc=5",
@@ -6881,7 +6855,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 0,
+  "Fed": 1,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
@@ -10694,7 +10668,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-18T10:23:30.891958+00:00",
+  "checked": "2026-10-18T11:23:30.919482+00:00",
   "sec_seen": [
    "0000037785-26-000163",
    "0001801661-26-000124",
