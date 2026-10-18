@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "551424c533638937": "2026-10-15T04:01:24.977941+00:00",
   "bc6de2973c2c5205": "2026-10-15T04:11:25.021282+00:00",
   "45f1488373d9066f": "2026-10-15T04:11:25.021282+00:00",
   "c4d25372adbdd61f": "2026-10-15T04:11:25.021282+00:00",
@@ -808,22 +807,10 @@
   "abd11067834a2d56": "2026-10-18T02:13:04.699778+00:00",
   "3969158ce5249498": "2026-10-18T02:58:04.686421+00:00",
   "3313d9c88feba79f": "2026-10-18T03:48:04.664295+00:00",
-  "dd0c1a41f9830fed": "2026-10-18T03:48:04.664295+00:00"
+  "dd0c1a41f9830fed": "2026-10-18T03:48:04.664295+00:00",
+  "83bcdf8885c2d887": "2026-10-18T04:08:04.653434+00:00"
  },
  "recent": [
-  {
-   "title": "IMF urges China to deploy bigger fiscal stimulus",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNUVk3Tk5qRC1rS0NxcVU2N280MWE1bk4wZFJMdS11aXJ2SmxlcWhRbzluOHV2djk3aHNxam9oRzFOSjBqbzd1THEwVjBiWkIzcHpFUXpqQkR0X29ycWpmZkFyWVg1MG9QdnZTSnVuMDQ0QVZOcXk1WmxEWkZvbWE1VndUZTdLTkJTSnhhVU5xWUlORFhucmc4THMxUHJhRHlKbVE?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-15T04:01:24.977941+00:00",
-   "title_ru": "МВФ призывает Китай развернуть более масштабное налогово-бюджетное стимулирование",
-   "tags": [
-    "Китай"
-   ]
-  },
   {
    "title": "UK’s Healey Says He Will ‘Stay The Path’ On Deficit Reduction",
    "link": "https://www.bloomberg.com/news/articles/2026-10-15/uk-s-healey-says-he-will-stay-the-path-on-deficit-reduction",
@@ -8085,6 +8072,15 @@
     "sanctions",
     "Russia"
    ]
+  },
+  {
+   "title": "Банки указали на рост запросов данных с банковской тайной от налоговиков",
+   "link": "https://www.rbc.ru/finances/18/10/2026/6ad3b5a80181bcdfac902061",
+   "sources": [
+    "RBC"
+   ],
+   "score": 1,
+   "ts": "2026-10-18T04:08:04.653434+00:00"
   }
  ],
  "last_digest": "2026-10-17",
@@ -12119,7 +12115,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-18T02:58:04.686421+00:00",
+  "checked": "2026-10-18T04:03:04.712957+00:00",
   "sec_seen": [
    "0000037785-26-000158",
    "0000037785-26-000163",
