@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "29350db746d7e77e": "2026-10-15T05:46:58.102796+00:00",
   "322bf54c78f064de": "2026-10-15T06:01:58.090645+00:00",
   "f0feb9f126d4a7fa": "2026-10-15T06:06:58.113086+00:00",
   "01ff4a46ed46e8f1": "2026-10-15T06:11:58.225416+00:00",
@@ -787,7 +786,8 @@
   "b16a84e03a3bcf32": "2026-10-18T05:03:04.653453+00:00",
   "5ad39845e4d34e98": "2026-10-18T05:08:04.687981+00:00",
   "72d0007aca439daa": "2026-10-18T05:33:04.659229+00:00",
-  "515ff6eaf7b5d4f9": "2026-10-18T05:43:04.673701+00:00"
+  "515ff6eaf7b5d4f9": "2026-10-18T05:43:04.673701+00:00",
+  "de27c8a1727e3772": "2026-10-18T05:53:04.653935+00:00"
  },
  "recent": [
   {
@@ -7831,6 +7831,16 @@
    "tags": [
     "gold"
    ]
+  },
+  {
+   "title": "Todos los autores",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5BVmtJUUJfX2loNUE5ODB6RnVpLWlOR3FPSHlrX2c0QXYzdHZPU1RWelljVUtCRzIzckowRHduSzdmbmVGQzFtUndaMVBtaEt0X2dMYk5hSHVJMmh0SUFOaUkydmk?oc=5",
+   "sources": [
+    "IMF"
+   ],
+   "score": 4,
+   "ts": "2026-10-18T05:53:04.653935+00:00",
+   "title_ru": "Все авторы"
   }
  ],
  "last_digest": "2026-10-17",
