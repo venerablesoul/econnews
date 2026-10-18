@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "138d26a9d4b97389": "2026-10-15T22:57:36.431611+00:00",
-  "8cf6a9bf2c08b9c4": "2026-10-15T22:57:36.431611+00:00",
-  "792442693243bf5d": "2026-10-15T23:02:36.486703+00:00",
   "a8275e02227b60ee": "2026-10-15T23:07:36.499685+00:00",
   "0279c9a043c5ea78": "2026-10-15T23:07:36.499685+00:00",
   "7207d5d03e96918a": "2026-10-15T23:12:36.421421+00:00",
@@ -573,7 +570,8 @@
   "28f27ef00c64abe7": "2026-10-18T22:34:36.368396+00:00",
   "fd44f56663449a36": "2026-10-18T22:44:36.375359+00:00",
   "82edbfdb4317c9a2": "2026-10-18T22:49:36.341437+00:00",
-  "d3be7a472d9b1534": "2026-10-18T22:49:36.341437+00:00"
+  "d3be7a472d9b1534": "2026-10-18T22:49:36.341437+00:00",
+  "148eef8540963ed7": "2026-10-18T23:04:36.368046+00:00"
  },
  "recent": [
   {
@@ -5205,6 +5203,15 @@
    "title_en": "We are not united by trade // The IMF assessed the height of barriers within the European Union",
    "lead": "Европейские компании, несмотря на существование единого рынка в ЕС, сталкиваются с препятствиями при торговле внутри объединения, следует из нового обзора Международного валютного фонда.",
    "lead_en": "European companies, despite the existence of a single market in the EU, face obstacles when trading within the union, according to a new review by the International Monetary Fund."
+  },
+  {
+   "title": "India’s Finance Minister blames easy exits and excess liquidity for equity market's underperformance",
+   "link": "https://www.cnbc.com/2026/10/18/india-ai-nifty50-sensex-investors.html",
+   "sources": [
+    "CNBC"
+   ],
+   "score": 2,
+   "ts": "2026-10-18T23:04:36.368046+00:00"
   }
  ],
  "last_digest": "2026-10-18",
