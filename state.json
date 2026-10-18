@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e465f2f8ec400a91": "2026-10-15T19:07:01.094744+00:00",
-  "3d2f3695a2b728d6": "2026-10-15T19:07:01.094744+00:00",
   "59e242c9a437e691": "2026-10-15T19:12:01.006049+00:00",
   "ffd4ec9d3744207a": "2026-10-15T19:17:01.020060+00:00",
   "e92149f42dd5ed08": "2026-10-15T19:17:01.020060+00:00",
@@ -601,31 +599,10 @@
   "edc3aefa5ae4ff4c": "2026-10-18T16:39:04.201762+00:00",
   "a409f8ebdb3f8eb3": "2026-10-18T18:14:36.368969+00:00",
   "7f0f9d52b1b5d0cb": "2026-10-18T18:29:36.370679+00:00",
-  "fa23ff3fafe82b79": "2026-10-18T18:59:36.380927+00:00"
+  "fa23ff3fafe82b79": "2026-10-18T18:59:36.380927+00:00",
+  "f9dac620d7484310": "2026-10-18T19:09:36.433993+00:00"
  },
  "recent": [
-  {
-   "title": "Indian mutual funds stop bulk subscriptions to gold ETFs ahead of festive season",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNa1dJUmxWRVJFR2xLMFhiSTRENmk2eklvZndkX2dzUmZGLUtKc0o2YldJRF9WbTNoVnJPc3Jjdy1qMTgtRXdWNjR0c3pIaVZxQzVZSk9JazRsdXNkLWtsenMyZzBFbHNlOTlzN1FVcWxKWm10Q3VlQkF6ZXVvcHduQ00xbnlqaE1wek9HQXJhU20zWERTN1NFSlRlRmFSQnp3aUFjYVp6aFhJYUwyZTlZdjRDR2tobk1la1hLbVBqZw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-15T19:07:01.094744+00:00",
-   "title_ru": "Индийские взаимные фонды прекращают массовую подписку на золотые ETF в преддверии праздничного сезона",
-   "tags": [
-    "gold"
-   ]
-  },
-  {
-   "title": "This one governor’s race could derail the AI trade that’s powered the stock market",
-   "link": "https://www.marketwatch.com/story/this-one-governors-race-could-derail-the-ai-trade-thats-powered-the-stock-market-6bbf06f8?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 2,
-   "ts": "2026-10-15T19:07:01.094744+00:00"
-  },
   {
    "title": "Zelenskyy Defies Trump, Global Tech Selloff Drives Haven Bid",
    "link": "https://www.bloomberg.com/news/videos/2026-10-15/zelenskyy-defies-trump-global-tech-selloff-drives-haven-bid",
@@ -5519,6 +5496,22 @@
    "tags": [
     "sanctions",
     "Russia"
+   ]
+  },
+  {
+   "title": "CPI Test Set to Make or Break New Zealand Dollar’s Losing Run",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-18/cpi-test-set-to-make-or-break-new-zealand-dollar-s-losing-run",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-18T19:09:36.433993+00:00",
+   "title_ru": "Набор тестов ИПЦ поможет или прервет падение новозеландского доллара",
+   "lead": "The New Zealand dollar has fallen for five straight quarters and if analysts are right, it may be on course to test a pandemic-era low.",
+   "lead_ru": "Новозеландский доллар падал пять кварталов подряд, и, если аналитики правы, он, возможно, находится на пути к тестированию минимума эпохи пандемии.",
+   "tags": [
+    "inflation",
+    "dollar"
    ]
   }
  ],
