@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "a53ec7ea6fd38bb6": "2026-10-15T22:32:36.426708+00:00",
-  "6f5fa54c60a73acc": "2026-10-15T22:32:36.426708+00:00",
-  "08261c93c6199036": "2026-10-15T22:32:36.426708+00:00",
   "7443800d9ab2a9da": "2026-10-15T22:37:36.424274+00:00",
   "82edbfdb4317c9a2": "2026-10-15T22:42:36.437955+00:00",
   "d3be7a472d9b1534": "2026-10-15T22:42:36.437955+00:00",
@@ -574,34 +571,12 @@
   "c095575cc278ea2a": "2026-10-18T22:14:36.336932+00:00",
   "8358c84e4a016c10": "2026-10-18T22:24:36.365666+00:00",
   "7ab5e9422fa33a7f": "2026-10-18T22:24:36.365666+00:00",
-  "02a0de84fe9b59a1": "2026-10-18T22:24:36.365666+00:00"
+  "02a0de84fe9b59a1": "2026-10-18T22:24:36.365666+00:00",
+  "2b2820df55b1e305": "2026-10-18T22:29:36.410538+00:00",
+  "a42c560d7863b405": "2026-10-18T22:34:36.368396+00:00",
+  "28f27ef00c64abe7": "2026-10-18T22:34:36.368396+00:00"
  },
  "recent": [
-  {
-   "title": "Asian Stocks Set for Gains as Tech Selloff Eases: Markets Wrap",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-15/stock-market-today-dow-s-p-live-updates",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 7,
-   "ts": "2026-10-15T22:32:36.426708+00:00",
-   "title_ru": "Азиатские акции приносят прибыль по мере того, как распродажа технологий облегчает: рынки завершаются",
-   "lead": "Asian stocks were set to rebound Friday as concerns over stretched artificial-intelligence valuations eased, putting the region on course for its first gain this week after a four-day slide.",
-   "lead_ru": "Азиатские акции должны были отскочить в пятницу, поскольку опасения по поводу растянутых оценок искусственного интеллекта ослабли, поставив регион на курс своего первого роста на этой неделе после четырехдневного спада.",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "AI and the Global Economy: From Risk to Opportunity",
-   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQbm9fQnRjbUNHWXZxLTgyODA5dll5NlhrQlpUV3g5ZExCQzVRRzBWVV82eU9yX0ZCN1psak93eXJEZkQzbjRaanJ5UXZsYUpmbTNGbzVIZ2tuYlRrZ0MxVDRjT2N5S3VYMW16U2lzaDZlWThJVm40V2U2dEoyd1dmbFJOY2hqQWZ0azNyc0NNQlMwdw?oc=5",
-   "sources": [
-    "IMF"
-   ],
-   "score": 5,
-   "ts": "2026-10-15T22:32:36.426708+00:00",
-   "title_ru": "ИИ и глобальная экономика: от риска к возможности"
-  },
   {
    "title": "Китайские поставки вышли на новый максимум // Мониторинг мировой экономики",
    "link": "https://www.kommersant.ru/doc/9027494",
@@ -5218,6 +5193,21 @@
    "title_ru": "Торговая война Трампа: путеводитель новостей по его второму президентскому сроку",
    "tags": [
     "tariffs"
+   ]
+  },
+  {
+   "title": "Kioxia Shares Face Headwinds From Margin-Buying Gone Wrong",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-18/kioxia-shares-face-headwinds-from-margin-buying-gone-wrong",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-18T22:34:36.368396+00:00",
+   "title_ru": "Акции Kioxia сталкиваются с препятствиями из-за неудачных маржинальных покупок",
+   "lead": "Kioxia Holdings Corp. shares face further downward pressure because of a buildup of positions from investors who borrowed to buy the stock on the assumption it would rise, and now may need to sell at a loss.",
+   "lead_ru": "Акции Kioxia Holdings Corp. сталкиваются с дальнейшим понижательным давлением из-за наращивания позиций инвесторов, которые взяли взаймы для покупки акций в предположении, что они вырастут, и теперь, возможно, придется продать их с убытком.",
+   "tags": [
+    "markets"
    ]
   }
  ],
