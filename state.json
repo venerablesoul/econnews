@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "4165c37f2d5af7ad": "2026-10-15T00:41:24.990201+00:00",
-  "3166f09145430b6c": "2026-10-15T00:41:24.990201+00:00",
-  "c475bbb726e7beac": "2026-10-15T00:41:24.990201+00:00",
-  "5ce70032bc4b3b4d": "2026-10-15T00:41:24.990201+00:00",
   "22885f6740d16967": "2026-10-15T00:51:24.987524+00:00",
   "553d8d01403139b9": "2026-10-15T01:01:24.999019+00:00",
   "7858a3dacbec1d6e": "2026-10-15T01:11:25.000276+00:00",
@@ -847,61 +843,11 @@
   "045210accf8b7d96": "2026-10-17T21:42:39.350822+00:00",
   "8e11a0641c63306e": "2026-10-17T22:07:39.393307+00:00",
   "649b18a63c9ada96": "2026-10-17T23:57:39.342578+00:00",
-  "4b960f37ad7a270f": "2026-10-18T00:02:39.405189+00:00"
+  "4b960f37ad7a270f": "2026-10-18T00:02:39.405189+00:00",
+  "51d50dc0cbb04fac": "2026-10-18T00:42:39.381966+00:00",
+  "518e42acc2130652": "2026-10-18T00:42:39.381966+00:00"
  },
  "recent": [
-  {
-   "title": "Treasuries Extend Gains as Equities Selloff Dents Risk Sentiment",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-15/treasuries-extend-gains-as-equities-selloff-dents-risk-sentiment",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-15T00:41:24.990201+00:00",
-   "title_ru": "Казначейские облигации увеличивают прибыль, поскольку распродажа акций снижает настроение риска",
-   "lead": "US Treasuries rallied across the curve as a global equities selloff spurred demand for haven assets.",
-   "lead_ru": "Казначейские облигации США выросли поперек кривой, поскольку глобальная распродажа акций стимулировала спрос на активы-убежища.",
-   "tags": [
-    "облигации",
-    "рынки"
-   ]
-  },
-  {
-   "title": "APU0000712112 - BLS Data",
-   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE8tcktBYXB6aDlJZ2E0NjBBamQyMVJiNXRaSjV6SE9DZkpWd1dZRnNUWUVyY3pFYjljcE5XQWFsemJKVjFFX2dmTU44em90M0xMQk5xOUw3Vk4?oc=5",
-   "sources": [
-    "Статистика труда США (BLS)"
-   ],
-   "score": 4,
-   "ts": "2026-10-15T00:41:24.990201+00:00",
-   "title_ru": "APU0000712112 — Данные BLS"
-  },
-  {
-   "title": "Registered nurses - Bureau of Labor Statistics",
-   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBTbk1aLVhEN0RCM2lsSmtFMFdCVHltQlVGMVZqZUJ5a1dvNVVnR1dJUTlWX1VkUVA5UENVUkhfR3BUWkQ5LTFrT3J0M3pSNjlZMVVicHUzN3lJS0sxSkx3ZF92MnVLRmZXUlVIRUd4TQ?oc=5",
-   "sources": [
-    "Статистика труда США (BLS)"
-   ],
-   "score": 4,
-   "ts": "2026-10-15T00:41:24.990201+00:00",
-   "title_ru": "Дипломированные медсестры - Бюро статистики труда"
-  },
-  {
-   "title": "Bolivia Revamps Gold Export Rules in Bid to Attract Dollars",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-15/bolivia-revamps-gold-export-rules-in-bid-to-attract-dollars",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-15T00:41:24.990201+00:00",
-   "title_ru": "Боливия меняет правила экспорта золота в попытке привлечь доллары",
-   "lead": "Bolivia aims to boost private gold exports while increasing dollar inflows to domestic banks in a reform backed by President Rodrigo Paz that ends a three-year-old system overseen by the central bank.",
-   "lead_ru": "Боливия стремится увеличить частный экспорт золота, одновременно увеличивая приток долларов в отечественные банки в рамках реформы, поддержанной президентом Родриго Пасом, которая положила конец трехлетней системе, контролируемой центральным банком.",
-   "tags": [
-    "золото",
-    "доллар"
-   ]
-  },
   {
    "title": "Australian Unemployment Rate Was 4.7% in September on Job Losses",
    "link": "https://www.bloomberg.com/news/articles/2026-10-15/australian-unemployment-rate-was-4-7-in-september-on-job-losses",
@@ -8611,6 +8557,35 @@
    "title_ru": "Нигер прекращает экспорт дизельного топлива и бензина, чтобы защитить внутренние поставки",
    "lead": "Niger banned exports of diesel and premium petrol in a bid to address fuel supply challenges that the country has been facing in recent days, the ministry of trade and industry said in a statement on its Facebook page.",
    "lead_ru": "Нигер запретил экспорт дизельного топлива и бензина премиум-класса, пытаясь решить проблемы с поставками топлива, с которыми страна столкнулась в последние дни, говорится в заявлении министерства торговли и промышленности на его странице в Facebook."
+  },
+  {
+   "title": "Australian Home Auctions Decline as Rate Hikes Dampen Activity",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-17/australian-home-auctions-decline-as-rate-hikes-dampen-activity",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-18T00:42:39.381966+00:00",
+   "title_ru": "Австралийские домашние аукционы снижаются, поскольку повышение ставок снижает активность",
+   "lead": "The number of homes auctioned in Australia dropped over the past week as interest rates at a 15-year high weigh on activity in the housing market.",
+   "lead_ru": "Количество домов, выставленных на аукционах в Австралии, за последнюю неделю сократилось, поскольку процентные ставки, достигшие 15-летнего максимума, оказывают давление на активность на рынке жилья.",
+   "tags": [
+    "rates"
+   ]
+  },
+  {
+   "title": "Trump’s Russia Sanctions Waiver Called Mistake by GOP Allies",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOdlBhMEdBRVg3TkZWNHNYNDc3ZVdfRVhpVmtWQUlhY2t2eW9vTW5wdTNLX0pUUDdyUXdUcU5neVFrLVp1ZXZ2R1VVM1h5YnZFQ3NVM0hraDZwUzBJMHRBb0NYa2JjRTZEbmJnMW5MNW9FcV9vbzhBSU5odzlBcTRTTGIzSEJHLU1NZVFnRHRHSGdfZVdmSnJzRzFVQTlsbTRfS05Pd05kb3lDWWE5cEJKbTMzRncyQQ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-18T00:42:39.381966+00:00",
+   "title_ru": "Отказ Трампа от санкций против России назван союзниками Республиканской партии ошибкой",
+   "tags": [
+    "sanctions",
+    "Russia"
+   ]
   }
  ],
  "last_digest": "2026-10-17",
