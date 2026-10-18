@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "1ffd05d1dfb4118f": "2026-10-15T11:07:29.243027+00:00",
-  "473571cba7d58764": "2026-10-15T11:12:29.262464+00:00",
-  "b8727310cf1b7935": "2026-10-15T11:12:29.262464+00:00",
-  "b96be7b3a74893bc": "2026-10-15T11:12:29.262464+00:00",
   "778ee9d96ecb21c6": "2026-10-15T11:22:29.407349+00:00",
   "c9821591a08aa16a": "2026-10-15T11:22:29.407349+00:00",
   "c7a679049e7f8283": "2026-10-15T11:32:29.296628+00:00",
@@ -706,49 +702,10 @@
   "cccc77875e337510": "2026-10-18T10:28:30.873613+00:00",
   "fbb1aca8fc2a5a62": "2026-10-18T10:53:30.894167+00:00",
   "5e7c7b955328deba": "2026-10-18T11:03:30.900162+00:00",
-  "5a89324960192d99": "2026-10-18T11:03:30.900162+00:00"
+  "5a89324960192d99": "2026-10-18T11:03:30.900162+00:00",
+  "182bd8e74703a700": "2026-10-18T11:13:30.892684+00:00"
  },
  "recent": [
-  {
-   "title": "UniCredit Weighs Risk Transfer on $1 Billion of German Mortgages",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-15/unicredit-weighs-risk-transfer-on-1-billion-of-german-mortgages",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-15T11:07:29.243027+00:00",
-   "title_ru": "UniCredit взвешивает возможность передачи рисков по немецким ипотечным кредитам на сумму $1 млрд.",
-   "lead": "UniCredit SpA is working on a potential deal to hedge €1 billion ($1.1 billion) in German home loans as it prepares to expand its footprint in Europe’s biggest economy.",
-   "lead_ru": "UniCredit SpA работает над потенциальной сделкой по хеджированию ипотечных кредитов в Германии на сумму 1 млрд евро (1,1 млрд долларов США), поскольку компания готовится расширить свое присутствие в крупнейшей экономике Европы."
-  },
-  {
-   "title": "Italy State Lender Chief Says MTS Key in Debt Management",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-15/italy-state-lender-chief-says-mts-key-in-debt-management",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-15T11:12:29.262464+00:00",
-   "title_ru": "Глава государственного кредитора Италии заявил, что МТС играет ключевую роль в управлении долгом",
-   "lead": "European bond trading platform MTS SpA is an important strategic asset for Italy, Cassa Depositi e Prestiti SpA Chief Executive Officer Dario Scannapieco said.",
-   "lead_ru": "Европейская платформа для торговли облигациями MTS SpA является важным стратегическим активом для Италии, заявил генеральный директор Cassa Depositi e Prestiti SpA Дарио Сканнапьеко.",
-   "tags": [
-    "bonds"
-   ]
-  },
-  {
-   "title": "Warsh's quest for quiet Fed gets vocal pushback",
-   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQTGZfUDY0VWFGY3BYQXAwTW5aZU1lUTl1bldnbk54UG9VTi1KRFlIeHpWdW1wRVRqNVJpTHoyZFF6R0lvejcxOEdQb3Z6dDVQckNPR2k4WFBWSWN5eUItNFNWZFUyTmJvNnhranNqZkpMN1RkSDhValZ0T0xkcXdUdEh0Y2drbm12TVFIUGxTUlN6WVE?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-15T11:12:29.262464+00:00",
-   "title_ru": "Стремление Уорша к тишине в ФРС вызывает громкую критику",
-   "tags": [
-    "Fed"
-   ]
-  },
   {
    "title": "AI Stocks Slide as TSMC Outlook Fails to Ease Bubble Fears",
    "link": "https://www.bloomberg.com/news/videos/2026-10-15/the-pulse-10-15-2026-video",
@@ -6890,6 +6847,18 @@
    "title_ru": "Группа Gleaning предоставляет продовольственным банкам £ 1 млн продукции",
    "lead": "Gleaning Cornwall warns that more funding is needed as costs rise sharply.",
    "lead_ru": "Gleaning Cornwall предупреждает, что требуется больше финансирования, поскольку затраты резко возрастают."
+  },
+  {
+   "title": "Will Meta’s earnings restore confidence in the AI boom?",
+   "link": "https://www.ft.com/content/7c2e889e-2eb5-4c62-821b-1a7f88c13d05?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 3,
+   "ts": "2026-10-18T11:13:30.892684+00:00",
+   "title_ru": "Вернут ли доходы Meta доверие к буму ИИ?",
+   "lead": "Market Questions is the FT’s guide to the week ahead",
+   "lead_ru": "Вопросы рынка - это руководство FT по предстоящей неделе"
   }
  ],
  "last_digest": "2026-10-17",
