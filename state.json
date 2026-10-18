@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "7ab5e9422fa33a7f": "2026-10-15T22:17:36.400173+00:00",
-  "07c00ee49eb99875": "2026-10-15T22:17:36.400173+00:00",
-  "1fe8c58dec759ba9": "2026-10-15T22:17:36.400173+00:00",
   "a53ec7ea6fd38bb6": "2026-10-15T22:32:36.426708+00:00",
   "6f5fa54c60a73acc": "2026-10-15T22:32:36.426708+00:00",
   "08261c93c6199036": "2026-10-15T22:32:36.426708+00:00",
@@ -574,34 +571,12 @@
   "f8a72bebecdc1405": "2026-10-18T22:14:36.336932+00:00",
   "6f1678c0f08ae5a3": "2026-10-18T22:14:36.336932+00:00",
   "4cf3038fb2d19f6c": "2026-10-18T22:14:36.336932+00:00",
-  "c095575cc278ea2a": "2026-10-18T22:14:36.336932+00:00"
+  "c095575cc278ea2a": "2026-10-18T22:14:36.336932+00:00",
+  "8358c84e4a016c10": "2026-10-18T22:24:36.365666+00:00",
+  "7ab5e9422fa33a7f": "2026-10-18T22:24:36.365666+00:00",
+  "02a0de84fe9b59a1": "2026-10-18T22:24:36.365666+00:00"
  },
  "recent": [
-  {
-   "title": "Latest Oil Market News and Analysis for Oct. 16",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-15/latest-oil-market-news-and-analysis-for-oct-16",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-15T22:17:36.400173+00:00",
-   "title_ru": "Последние новости и аналитика рынка нефти за 16 октября",
-   "lead": "Oil was set for a second weekly advance as increasing Middle East supply risks weighed against a fresh release of emergency reserves.",
-   "lead_ru": "Нефть была настроена на второе недельное повышение, поскольку растущие риски поставок на Ближний Восток взвешивались против свежего высвобождения аварийных запасов.",
-   "tags": [
-    "oil"
-   ]
-  },
-  {
-   "title": "The Troubling Picture Emerging From US Consumer Data",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNRGMyV24yeE5WdmRHYkF2Z1Z5NkczRFFqeHpMRUs4bV96bVhhMlc4RDJBTFBmS19YS25JNUJLZDd0SWVRZVJFb3VpRmNGMXZvZnY4RG44LXpRNTZhejlnQWRTUS00SDVaRUtjeDMxeGthMEhqQklJS0p0YWpLMVN3ZmtaU3RlT3JRLVNzemdFWTVBZUl4cXlmTkdZVDJwM19kUkNGT2l4bHBNU0JoejZldHBzZm9Nd0ROZTEzMk8tRzVUTGM?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-15T22:17:36.400173+00:00",
-   "title_ru": "Тревожная картина, вытекающая из данных о потребителях США"
-  },
   {
    "title": "Asian Stocks Set for Gains as Tech Selloff Eases: Markets Wrap",
    "link": "https://www.bloomberg.com/news/articles/2026-10-15/stock-market-today-dow-s-p-live-updates",
@@ -5230,6 +5205,19 @@
    "tags": [
     "oil",
     "China"
+   ]
+  },
+  {
+   "title": "Trump’s Trade War: A News Guide to His Second Term as President",
+   "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9iZGVGa3RSQWJwcFpkd2tPbVpiOExBWWZzdmc2YTM3d3BDal8tT0Z5ejhLSHNXXzBEbEx1UkRFRklRS0hEb2VBM3F6V0FnY3JSRnp4Nk5n?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-18T22:24:36.365666+00:00",
+   "title_ru": "Торговая война Трампа: путеводитель новостей по его второму президентскому сроку",
+   "tags": [
+    "tariffs"
    ]
   }
  ],
