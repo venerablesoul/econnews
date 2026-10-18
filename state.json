@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "6d38451622e1132d": "2026-10-15T23:32:36.449793+00:00",
   "8ee5baf84ff00d5e": "2026-10-15T23:37:36.409064+00:00",
   "d9d72e645dfede20": "2026-10-15T23:52:36.403039+00:00",
   "2d1c04f082d959ae": "2026-10-15T23:57:36.452163+00:00",
@@ -572,22 +571,11 @@
   "a8275e02227b60ee": "2026-10-18T23:14:36.368519+00:00",
   "30d1e6ab87016853": "2026-10-18T23:14:36.368519+00:00",
   "5e8287a78fb6bbe2": "2026-10-18T23:20:13.679658+00:00",
-  "e165aef8d78b8efb": "2026-10-18T23:30:13.729050+00:00"
+  "e165aef8d78b8efb": "2026-10-18T23:30:13.729050+00:00",
+  "b7801dab164803ae": "2026-10-18T23:35:13.689520+00:00",
+  "9f308b9c06a26bb1": "2026-10-18T23:35:13.689520+00:00"
  },
  "recent": [
-  {
-   "title": "US chip stocks set to wipe out $2 trillion after latest selloff",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNVDZEYU5ySFdLYUlmY29XeGxBbzZ1Nk92dHprTE44dzd5V19Yd09NdmUxUFpXMHhxdzYwenJiUjJQRFhPOXhBcHptTW9rY2J2Y01kM1loR3VQMVBXRG9mR2hQbkdWVnNGQVpCN01KelozT1h4aGx0RjRYeUZHRVRCYnlLWlpXWmpwbFRmRG4tSFR1RkNpRHNTb0lueU1VdWlpSjVFVGljZw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-15T23:32:36.449793+00:00",
-   "title_ru": "Американские акции чипов уничтожат $ 2 трлн после последней распродажи",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Anthropic Stands Alone as Rest of US IPO Market Slows to a Crawl",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNQ0ZiNFh4Ni0zMzZ3cDNHNGxORE1jQVNmSlM5LWZwa1NIT1V0SFRfM1E4QjdCTUJ0MFhZeHFTdjRnY1VSazNHR2RNVFN5dnI3UGxZMUZMYzdMakNMRFpXZU5QUlp5YVI2dUp5eGhxNmZKelRVMTdHS1FYblNDdTR2QU42Ukt0YUdqdDRrTmthT3pjSm5Xa1ZVRXRnT01NaFNoSi12UWZJMkZfelZtTUdCREFSNXAxUQ?oc=5",
@@ -5258,6 +5246,36 @@
    "tags": [
     "Russia"
    ]
+  },
+  {
+   "title": "Japanese Equities Set to Fall on Tech Share Selloff, Higher Oil",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQclp0cmlPVzk4TGpWXy1MMWY5OG95aUtWR0YzZk56ZmZrd1pFaklZMHVFeXE0Um5GVzZOWERjMDJoSWJpeGc1RjRaak1rVlgxanNieF9fR2tYOE1vZllTQlE0ampXMVVXUlpBUzFqZ2VibXEtaG5mMkNFY1VsOXJvcHE4WGlYeU1PYVZTWUVRQnVTMzlHZDY5cDZsUEhXZC1ET1h3amdQb2NxakYtWlo1S2gxTQ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-18T23:35:13.689520+00:00",
+   "title_ru": "Японские акции упадут на фоне распродажи технологических акций и роста цен на нефть",
+   "tags": [
+    "oil",
+    "markets"
+   ]
+  },
+  {
+   "title": "EU tariffs aimed at China hitting Ukraine, steel boss says",
+   "link": "https://www.bbc.co.uk/news/articles/cwdd8z6gyy96o?at_medium=RSS&at_campaign=rss",
+   "sources": [
+    "BBC"
+   ],
+   "score": 5,
+   "ts": "2026-10-18T23:35:13.689520+00:00",
+   "title_ru": "Тарифы ЕС направлены на то, чтобы Китай ударил по Украине, говорит стальной босс",
+   "lead": "The boss of one of Ukraine's biggest steel companies says the country has been \"bundled together\" in measures aimed at curbing cheap imports.",
+   "lead_ru": "Босс одной из крупнейших сталелитейных компаний Украины говорит, что страна была «объединена» мерами, направленными на сдерживание дешевого импорта.",
+   "tags": [
+    "China",
+    "tariffs"
+   ]
   }
  ],
  "last_digest": "2026-10-18",
@@ -9105,9 +9123,9 @@
    "0001213900-26-110401",
    "0000037785-26-000164",
    "0001214659-26-013018",
-   "0000037785-26-000163",
-   "0001193125-26-424368",
    "0001646382-26-000023",
+   "0001193125-26-424368",
+   "0000037785-26-000163",
    "0001213900-26-110428",
    "0001213900-26-110436",
    "0001104659-26-116675",
