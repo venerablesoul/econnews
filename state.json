@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "399b52ceff06bf6c": "2026-10-15T13:56:58.823126+00:00",
-  "9944a5977e777659": "2026-10-15T13:56:58.823126+00:00",
-  "3a5917176c896e1b": "2026-10-15T13:56:58.823126+00:00",
-  "6a91b2012ef2fcf8": "2026-10-15T14:02:00.451478+00:00",
-  "68bd83ae902befb1": "2026-10-15T14:02:00.451478+00:00",
   "21a03b414024b036": "2026-10-15T14:07:00.464117+00:00",
   "614cf2eaa8ad53fb": "2026-10-15T14:07:00.464117+00:00",
   "ff82e8218744e5ab": "2026-10-15T14:07:00.464117+00:00",
@@ -657,50 +652,10 @@
   "009f0ebde59cc26e": "2026-10-18T12:03:30.908193+00:00",
   "cf536115c7253cef": "2026-10-18T12:23:30.878958+00:00",
   "13e56523345d38f1": "2026-10-18T12:59:03.479011+00:00",
-  "3aa3de2305d8dcef": "2026-10-18T13:04:03.513777+00:00"
+  "3aa3de2305d8dcef": "2026-10-18T13:04:03.513777+00:00",
+  "51989d0a872aef4d": "2026-10-18T14:04:03.481210+00:00"
  },
  "recent": [
-  {
-   "title": "Fed Won't Raise Rates at Next Meeting, Strategist Amoroso Says",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-15/fed-won-t-hike-rates-at-next-meeting-strategist-amoroso-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-15T13:56:58.823126+00:00",
-   "title_ru": "ФРС не будет повышать ставки на следующем заседании, говорит стратег Аморосо",
-   "lead": "Anastasia Amoroso, Partners Group chief investment strategist, says the Federal Reserve is unlikely to raise interest rates at its next meeting, even after hotter-than-expected producer price data.",
-   "lead_ru": "Анастасия Аморосо, главный инвестиционный стратег Partners Group, говорит, что Федеральная резервная система вряд ли поднимет процентные ставки на своем следующем заседании, даже после более горячих, чем ожидалось, данных о ценах производителей.",
-   "tags": [
-    "Fed",
-    "rates"
-   ]
-  },
-  {
-   "title": "US FTC subpoenas OpenAI and Anthropic over consumer harms, Axios reports",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNSjB0ci1GS09NczVkMHZGUlZQVE5PUWJuYlZUODlnZUtxWWxQVVNNcGRHVjh2U0p3ZU9iTHQ3aThVOWpnYXVZRGQxaTc0Q293bGFoeUowbnloOU1qNm1ZMlloOGl0c251c2pQRXh6cExNQXo5OXQ3ZDRpSVZZZ211alY0ZENWb0FJT3QwRzQyb1lRejMxTkFreExtLXhIUm9oUFBkRzRCZ1dzSGN6MVhNSGl3?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-15T13:56:58.823126+00:00",
-   "title_ru": "Федеральная торговая комиссия США вызывает в суд OpenAI и Anthropic по поводу причинения вреда потребителям, сообщает Axios"
-  },
-  {
-   "title": "IEA Agrees to Release of Outstanding 100 Million Barrels of Oil",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-15/iea-agrees-to-release-of-outstanding-100-million-barrels-of-oil",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-15T14:02:00.451478+00:00",
-   "title_ru": "МЭА соглашается выпустить выдающиеся 100 миллионов баррелей нефти",
-   "lead": "The International Energy Agency said that members agreed to complete the release of 100 million barrels of oil that are still outstanding from an intervention in March aimed at calming global markets.",
-   "lead_ru": "Международное энергетическое агентство заявило, что члены согласились завершить выпуск 100 миллионов баррелей нефти, которые все еще находятся в обращении после интервенции в марте, направленной на успокоение мировых рынков.",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "Explainer: Why are credit default swaps unnerving AI investors?",
    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPYWRtVm1RTmdMcHZLMFFUTUphS2UweFlGVUtpa0Q3WndrcHVrWnl2Szkwc1VnaU1WMHBtOG5nSEJ0OG5BNldxWHp4RWUyejFqNENpSjZPa0Q4OFNXbHk4MDBLUWlzQmlDQVNYcTg1RkRsVDZ0T0JJaUVGQmhXWVF5XzI4U2haYmNZ?oc=5",
@@ -6253,6 +6208,21 @@
    "lead_ru": "Идея о том, что торговля ИИ в основном невосприимчива к росту доходности облигаций, не совсем верна, отмечает один стратег.",
    "tags": [
     "bonds",
+    "markets"
+   ]
+  },
+  {
+   "title": "These surprising stocks could be some of the biggest drivers of S&P 500 earnings growth",
+   "link": "https://www.marketwatch.com/story/these-surprising-stocks-could-be-some-of-the-biggest-drivers-of-s-p-500-earnings-growth-ea073a07?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 4,
+   "ts": "2026-10-18T14:04:03.481210+00:00",
+   "title_ru": "Эти удивительные акции могут стать одними из крупнейших драйверов роста прибыли S&P 500.",
+   "lead": "Boeing, Meta and EchoStar recorded steep charges and expenses a year ago, which are expected to make this latest quarter’s results look especially strong by comparison.",
+   "lead_ru": "Год назад Boeing, Meta и EchoStar зафиксировали высокие расходы и расходы, по сравнению с которыми ожидается, что результаты последнего квартала будут выглядеть особенно сильными.",
+   "tags": [
     "markets"
    ]
   }
