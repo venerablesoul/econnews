@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "6d60b9dfc347223f": "2026-10-15T07:56:58.107797+00:00",
-  "63b5f1f419d17993": "2026-10-15T08:01:58.174375+00:00",
   "0e9179f48da3cf79": "2026-10-15T08:06:58.086045+00:00",
   "32dc59e80ac11dfb": "2026-10-15T08:06:58.086045+00:00",
   "6634ea89957d83a0": "2026-10-15T08:06:58.086045+00:00",
@@ -752,39 +750,12 @@
   "824ffd8b4cfd0fde": "2026-10-18T07:18:30.880939+00:00",
   "dc7af6c4580f768f": "2026-10-18T07:23:30.921902+00:00",
   "dc894e81b0656c01": "2026-10-18T07:28:30.895975+00:00",
-  "d7c9b6e0e6b8e9b9": "2026-10-18T07:43:30.894479+00:00"
+  "d7c9b6e0e6b8e9b9": "2026-10-18T07:43:30.894479+00:00",
+  "cad8de2b69709624": "2026-10-18T08:03:30.907053+00:00",
+  "52e8ccb8d437eaa0": "2026-10-18T08:03:30.907053+00:00",
+  "15e0edac7398920d": "2026-10-18T08:03:30.907053+00:00"
  },
  "recent": [
-  {
-   "title": "UK finance minister calls for tighter Russian shipping sanctions",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQS0tMZUNxemw4Z1ZyYzl0cE5QMjltbGIzOHMxYUJUUW5Wb2NOdFgtX215ODM4YWcySG9WbnNOY1RyU3hfTWs4RTY5RGktSGtRa2VlNG5WWWZ4RDQ3UkVSMUNJd3hFZGdQb1lreTNUWkhESV9xODBhaXJTbUNNWWRMRXE2V3BheVBwSU1iekpHWEoyQUQ2aHhBVmp2WUZKdmw5eXpfZ3p4MW4?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-15T07:56:58.107797+00:00",
-   "title_ru": "Министр финансов Великобритании призывает к ужесточению российских санкций в отношении судоходства",
-   "tags": [
-    "sanctions",
-    "Russia"
-   ]
-  },
-  {
-   "title": "Odd Lots: Jeff Yan on How Hyperliquid Works (Podcast)",
-   "link": "https://www.bloomberg.com/news/audio/2026-10-15/odd-lots-jeff-yan-on-how-hyperliquid-works-podcast",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-15T08:01:58.174375+00:00",
-   "title_ru": "Нечетные лоты: Джефф Ян о том, как работает гиперликвид (подкаст)",
-   "lead": "Traders and market watchers around the world started talking about a crypto platform called Hyperliquid earlier this year, when speculators used markets built on top of it to trade crude oil after war broke out in Iran.",
-   "lead_ru": "Трейдеры и наблюдатели за рынком по всему миру начали говорить о криптоплатформе под названием Hyperliquid в начале этого года, когда спекулянты использовали рынки, построенные на ней, для торговли сырой нефтью после начала войны в Иране.",
-   "tags": [
-    "oil",
-    "crypto"
-   ]
-  },
   {
    "title": "ECB in No Rush to Act Amid Opposing Economic Forces, Kazaks Says",
    "link": "https://www.bloomberg.com/news/articles/2026-10-15/ecb-in-no-rush-to-act-amid-opposing-economic-forces-kazaks-says",
@@ -7440,6 +7411,29 @@
    "tags": [
     "GDP"
    ]
+  },
+  {
+   "title": "PBOC Deputy Urges Private Role in Sovereign Debt Restructuring",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQdXo1cmppWm52cFdYRlB0SFJiTTRDYWRlNmxIOVpOVVRxVWM2N0N4UTQ4eFVRM3dNclp4MzlhUjhzVnZNVXZ5aldRQ1hSVjcyZ3czcVJsOF9LcXl0T0F0THI2MmQzTDkyNk5IbGtkQ1JZdzNDc1huc1YwaldnWkJGa2tvSFl1b0NOREtOaGljNGppY0NGSnNDRFdQVnZJc2JrSV84b1NvYUtSeV9pY2pLbTUxTQ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-18T08:03:30.907053+00:00",
+   "title_ru": "Депутат НБК призывает к частной роли в реструктуризации суверенного долга",
+   "tags": [
+    "China"
+   ]
+  },
+  {
+   "title": "IMF Says Singapore Is Among Asian Winners of the AI Boom",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQcHA4OTNfcl9IcFlhb3EtbEZBaFJpRUJyemg5UzYzUlE0b2xrWThiQjgyWW9reTJzdzFfc3hEbWFzWV9NaFQ5UVBFa2M2Y0ZhWVZ4WkJpZzl4ZDNvLXJ0anB2Y3dEX012R2dKN240eHV2MTl5WG5DTnVheXlmd2M1NzhFR1E1ZV9VdGU5NXNTTjRMckh4eHFGTmcxcG5NZFBsX09CVzRQYlR5WFctYVVlWmJ0TQ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-18T08:03:30.907053+00:00",
+   "title_ru": "МВФ говорит, что Сингапур входит в число азиатских победителей бума ИИ"
   }
  ],
  "last_digest": "2026-10-17",
