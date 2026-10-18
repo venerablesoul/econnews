@@ -1,14 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "545e96ec9631ef00": "2026-10-15T16:12:01.040807+00:00",
-  "8358c84e4a016c10": "2026-10-15T16:17:01.019713+00:00",
-  "d2ead7ae28ec9d5a": "2026-10-15T16:17:01.019713+00:00",
-  "ce35b5c5b6970c94": "2026-10-15T16:17:01.019713+00:00",
-  "9980b43655cbe7f4": "2026-10-15T16:17:01.019713+00:00",
-  "6ac44759595c2227": "2026-10-15T16:17:01.019713+00:00",
-  "0e1dcb559c224b9e": "2026-10-15T16:17:01.019713+00:00",
-  "b94c0936f1d74a80": "2026-10-15T16:17:01.019713+00:00",
   "ab54cffb876e5503": "2026-10-15T16:27:01.035912+00:00",
   "a414382d6f57a713": "2026-10-15T16:27:01.035912+00:00",
   "fa69b83ca09f8ece": "2026-10-15T16:27:01.035912+00:00",
@@ -633,62 +625,10 @@
   "0dcd5ae070c87d3a": "2026-10-18T15:39:04.174821+00:00",
   "d69287b0a77b28d5": "2026-10-18T15:39:04.174821+00:00",
   "891ed1b4d7822876": "2026-10-18T15:54:04.174533+00:00",
-  "5c89bf39e886882a": "2026-10-18T16:04:04.233595+00:00"
+  "5c89bf39e886882a": "2026-10-18T16:04:04.233595+00:00",
+  "7deb3b9cd78a6a71": "2026-10-18T16:19:04.171928+00:00"
  },
  "recent": [
-  {
-   "title": "UBS extends Fed tightening cycle forecast with March rate hike after inflation surprise",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNTkxzQTlzckZ6U0lMVWlyYnNreWlmSU1WbWdncVFVaHNUTEk0VGU2S3gxNkwzMFV1NmxwV2N5U05zWEdTMG9xSUNKVnduLThfTU5zT0JlLVVISHYya0UxclBtY05EcHo3VzdyNkE0dlFLZUFCN2ZkZXpvenptaUxYNHBwTk9aZjg3QzJXUzVVX01Vc2xfSFNCYXpTSVNJb2l1MUNPSmxNTjFXanB3WVlyY3lteWd6Y3FuZUpoa2p4TXk?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 10,
-   "ts": "2026-10-15T16:17:01.019713+00:00",
-   "title_ru": "UBS продлевает прогноз ужесточения цикла ФРС с мартовским повышением ставки после инфляционного сюрприза",
-   "tags": [
-    "Fed",
-    "rates",
-    "inflation"
-   ]
-  },
-  {
-   "title": "Nigeria's inflation rate eases slightly but still a worry for many citizens",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPcGZERzFMVDBTcFVXaWJRdWZrUnJWbmtjSWtIWmtVSTJydEpNdkdiZzlVNzltT0R6MTM0cTRaa1JfeUwtME1oLWpEWF83TTh4SlUyZWZMOU42T2hRc21XMHlGdG9sSlRpakVXNjktZUxZRExGeUpjX3lKRG5TVlJQT0w1c19mcFd4Nm1RR0xsWkRsYnZSZFprSEFZcnJOUXBiTVUyZHM5aTRkQVY4?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-15T16:17:01.019713+00:00",
-   "title_ru": "Уровень инфляции в Нигерии немного снижается, но все еще вызывает беспокойство у многих граждан",
-   "tags": [
-    "inflation"
-   ]
-  },
-  {
-   "title": "Ethiopia's central bank joins African payments system PAPSS",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNR1NrVGQxY3NKbldLQ2VIaS1Udm92UmJVbFJ2UE8zVnVwOVFoMl9rMEM4dFpzUVlVY3hkeG04RVJQdnBBZjRXYXpoVHhET01VZW5PQk11ZG5JajVXS19KZ202TjVfcHBpbElsbi1ydzR4WWJSZ25LVDhHOHBjR1Q5OE9Nc05heHJGdWlETWZob1lDY1Y4OUhodWdvMHdlZ0IyNUNOWGN0MVpxZ1E?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-15T16:17:01.019713+00:00",
-   "title_ru": "Центральный банк Эфиопии присоединился к африканской платежной системе PAPSS"
-  },
-  {
-   "title": "Путин попросил ЦБ и правительство проработать экосистему длинных денег",
-   "link": "https://www.kommersant.ru/doc/9027549",
-   "sources": [
-    "Kommersant"
-   ],
-   "score": 3,
-   "ts": "2026-10-15T16:17:01.019713+00:00",
-   "title_en": "Putin asked the Central Bank and the government to work out an ecosystem of long money",
-   "lead": "Заместитель генерального директора HeadHunter Мария Комарова на форуме «Деловой России» предложила проработать идею развития фондов роста, а также стимулы со стороны регуляторов, которые позволят привлекать долгосрочный капитал.",
-   "lead_en": "Maria Komarova, Deputy General Director of HeadHunter, proposed at the Business Russia forum to work out the idea of developing growth funds, as well as incentives from regulators that will allow attracting long-term capital.",
-   "tags": [
-    "Russia"
-   ]
-  },
   {
    "title": "In AI-dominated markets, LatAm debt is a diversifier",
    "link": "https://www.ft.com/content/086b7a80-acdd-48d2-bd5c-a04bad812264",
