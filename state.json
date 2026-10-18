@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "ec29fb169c4c2861": "2026-10-15T09:46:58.154025+00:00",
-  "d01e322ee7e0d9ae": "2026-10-15T09:51:58.136031+00:00",
-  "23018bb8eba34131": "2026-10-15T09:51:58.136031+00:00",
   "0bf183eaa4cb5739": "2026-10-15T09:56:58.128376+00:00",
   "aeb8f77412dc241b": "2026-10-15T09:56:58.128376+00:00",
   "ec4f7cc8ed84d406": "2026-10-15T09:56:58.128376+00:00",
@@ -727,30 +724,6 @@
   "4f8e7e09758c010e": "2026-10-18T09:33:30.905320+00:00"
  },
  "recent": [
-  {
-   "title": "IMF Says Africa Showing Resilience but More Vulnerable to Shocks",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-15/imf-says-africa-showing-resilience-but-more-vulnerable-to-shocks",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-15T09:46:58.154025+00:00",
-   "title_ru": "МВФ говорит, что Африка демонстрирует устойчивость, но более уязвима к потрясениям",
-   "lead": "The International Monetary Fund nudged up its forecast for economic growth in sub-Saharan Africa, but said it stands ready to help if geopolitical challenges put the region under undue strain.",
-   "lead_ru": "Международный валютный фонд подтолкнул свой прогноз экономического роста в странах Африки к югу от Сахары, но заявил, что готов помочь, если геополитические проблемы поставят регион под чрезмерную нагрузку."
-  },
-  {
-   "title": "Dangote Pushes African Market Access for IPO With Egypt Visit",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-15/dangote-pushes-african-market-access-for-ipo-with-egypt-visit",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-15T09:51:58.136031+00:00",
-   "title_ru": "Данготе продвигает доступ к африканскому рынку для IPO с визитом в Египет",
-   "lead": "Aliko Dangote is pushing the expansion of capital markets as Africa’s richest man readies to offer global depository receipts in Egypt.",
-   "lead_ru": "Алико Данготе продвигает расширение рынков капитала, поскольку самый богатый человек Африки готов предложить глобальные депозитарные расписки в Египте."
-  },
   {
    "title": "China Q3 growth set to pick up on stimulus, keeping 2026 goal within reach",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPUnFSUnFOaFNjbUE4U09LUG9xb1lsbjU5TXdIajM1YW9SQzJnUzRoREFOanJUU3JaMUxCS1lVWU5LS2FzbGNXVTBGWnk4bTdUbWdIZjdOa2Q0ekdtQlVTWUNBcEJqZ1pMVUdzTE9nZHV3SXhac0tkaG1EY1U5bnhtdUpzd1ljUUNNQWJJMURlUWtzcXFjblp4RmZkcGhmYTljUTdLWFp0V0J5UmZzTHBoeTlhemttUQ?oc=5",
@@ -7094,7 +7067,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 0,
+  "Fed": 1,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
