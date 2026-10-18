@@ -586,7 +586,10 @@
   "e58bc47889babc84": "2026-10-18T20:19:36.401022+00:00",
   "c16147f998ebcd7a": "2026-10-18T20:19:36.401022+00:00",
   "93b6a0e3b385cb9f": "2026-10-18T20:24:36.370499+00:00",
-  "465199a17bca4193": "2026-10-18T20:24:36.370499+00:00"
+  "465199a17bca4193": "2026-10-18T20:24:36.370499+00:00",
+  "915383bd55cd1c17": "2026-10-18T20:29:36.408112+00:00",
+  "e3681b2dd41e7d61": "2026-10-18T20:29:36.408112+00:00",
+  "221e7a2180b9eaee": "2026-10-18T20:34:36.411648+00:00"
  },
  "recent": [
   {
@@ -5420,6 +5423,16 @@
    "tags": [
     "tariffs"
    ]
+  },
+  {
+   "title": "- International Monetary Fund | IMF",
+   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA2dDVpN2FDckxmN1hnZ2NWS1oxX0p3NWV3b1JlRTBHRE0tSDNXbW0tQjFkWjNVYUR2S3R1OXRVU2VNRFlkY3dBbnktYWVaeFRDRFdMeUJQVGExdw?oc=5",
+   "sources": [
+    "IMF"
+   ],
+   "score": 5,
+   "ts": "2026-10-18T20:34:36.411648+00:00",
+   "title_ru": "- Международный валютный фонд | МВФ"
   }
  ],
  "last_digest": "2026-10-18",
@@ -5442,7 +5455,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 0,
+  "Fed": 1,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
@@ -9256,7 +9269,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-18T19:34:36.356137+00:00",
+  "checked": "2026-10-18T20:34:36.411648+00:00",
   "sec_seen": [
    "0001193125-26-424426",
    "0001193125-26-424428",
