@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "07aa7691dddd4cd6": "2026-10-15T15:32:01.147974+00:00",
-  "a56a0f9cb2e98e92": "2026-10-15T15:37:01.068095+00:00",
-  "51c9d1e92bf1de42": "2026-10-15T15:37:01.068095+00:00",
   "0fa4f4ec491d1395": "2026-10-15T15:42:01.090894+00:00",
   "2a4b124b15f4efe6": "2026-10-15T15:42:01.090894+00:00",
   "b78822cc7f31b592": "2026-10-15T15:52:01.060380+00:00",
@@ -639,39 +636,11 @@
   "f2d30e01410c3896": "2026-10-18T15:04:03.621588+00:00",
   "be8b44959de28353": "2026-10-18T15:24:04.161730+00:00",
   "d157be01a9026e49": "2026-10-18T15:24:04.161730+00:00",
-  "d45db56b67a046cc": "2026-10-18T15:24:04.161730+00:00"
+  "d45db56b67a046cc": "2026-10-18T15:24:04.161730+00:00",
+  "0dcd5ae070c87d3a": "2026-10-18T15:39:04.174821+00:00",
+  "d69287b0a77b28d5": "2026-10-18T15:39:04.174821+00:00"
  },
  "recent": [
-  {
-   "title": "ECB Officials Get Impatient for Lagarde to Clear Up Future Plans",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-15/ecb-officials-get-impatient-for-lagarde-to-clear-up-future-plans",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-15T15:37:01.068095+00:00",
-   "title_ru": "Чиновники ЕЦБ с нетерпением ждут Лагард, чтобы прояснить планы на будущее",
-   "lead": "European Central Bank policymakers are getting impatient with Christine Lagarde’s refusal to offer clarity on her future, people familiar with the matter said.",
-   "lead_ru": "По словам людей, знакомых с этим вопросом, политики Европейского центрального банка с нетерпением ждут отказа Кристин Лагард внести ясность в ее будущее.",
-   "tags": [
-    "ECB"
-   ]
-  },
-  {
-   "title": "Defense Stock Rout Lures Dip Buyers Looking Past US Election",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-15/defense-stock-rout-lures-dip-buyers-looking-past-election-risk",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-15T15:37:01.068095+00:00",
-   "title_ru": "Заманчивые покупатели Defense Stock Rout, смотрящие на прошлые выборы в США",
-   "lead": "A quick and painful selloff in shares of companies that make military equipment, missiles and planes is attracting investors who are betting the stocks will have an open runway once the midterm elections are over and fuel prices…",
-   "lead_ru": "Быстрая и болезненная распродажа акций компаний, которые производят военную технику, ракеты и самолеты, привлекает инвесторов, которые делают ставку на то, что акции будут иметь открытую взлетно-посадочную полосу после промежуточных выборов и цен на топливо...",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "There's Not Going to Be a Sharp Downturn in Jobs, Says Lakshman Achuthan",
    "link": "https://www.bloomberg.com/news/videos/2026-10-15/there-won-t-be-a-sharp-downturn-in-jobs-says-achuthan-video",
@@ -6010,6 +5979,19 @@
    "tags": [
     "China"
    ]
+  },
+  {
+   "title": "Oil lifts Saudi bourse; Egypt tumbles on regional tensions",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPdkJ2LXpMXzV0dEQ2b1NYcm9XT1FZMTUyZUlVQlZaZ2RYNFhvVFlnVFRJM1RJTU5CNzlDNVdKTmtzX2E0S0xvV2h6UEpOWFJtUlNGczZxeGR4a2NYQlU5NktIN0JQbE54SlRaS3QzRVVvWUdSRGpqWmNYWXlQSWtMbkM2R3lnRWtERTVLcTNadXMwbGxVQm9GXzVLRmVpZDY1OFFDVmI1ZlM3cGVZ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-18T15:39:04.174821+00:00",
+   "title_ru": "Нефть поднимает саудовскую биржу; Египет терпит крах из-за региональной напряженности",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-17",
@@ -6054,7 +6036,7 @@
   "2026-10-18-09"
  ],
  "calendar": {
-  "fetched": "2026-10-18T09:38:30.878191+00:00",
+  "fetched": "2026-10-18T15:39:04.174821+00:00",
   "events": [
    {
     "title": "IMF Meetings",
