@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "ab54cffb876e5503": "2026-10-15T16:27:01.035912+00:00",
-  "a414382d6f57a713": "2026-10-15T16:27:01.035912+00:00",
-  "fa69b83ca09f8ece": "2026-10-15T16:27:01.035912+00:00",
-  "7a4c57c0fe1c42ea": "2026-10-15T16:27:01.035912+00:00",
-  "9e5051b7bb183b08": "2026-10-15T16:27:01.035912+00:00",
   "96f20d51c38d220b": "2026-10-15T16:37:01.033112+00:00",
   "1b26a7b35169634d": "2026-10-15T16:47:01.039024+00:00",
   "c6e2cd87793b1a30": "2026-10-15T16:52:01.018865+00:00",
@@ -626,62 +621,10 @@
   "d69287b0a77b28d5": "2026-10-18T15:39:04.174821+00:00",
   "891ed1b4d7822876": "2026-10-18T15:54:04.174533+00:00",
   "5c89bf39e886882a": "2026-10-18T16:04:04.233595+00:00",
-  "7deb3b9cd78a6a71": "2026-10-18T16:19:04.171928+00:00"
+  "7deb3b9cd78a6a71": "2026-10-18T16:19:04.171928+00:00",
+  "21336a8511028457": "2026-10-18T16:29:04.222849+00:00"
  },
  "recent": [
-  {
-   "title": "In AI-dominated markets, LatAm debt is a diversifier",
-   "link": "https://www.ft.com/content/086b7a80-acdd-48d2-bd5c-a04bad812264",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 4,
-   "ts": "2026-10-15T16:27:01.035912+00:00",
-   "title_ru": "На рынках, где доминирует ИИ, долг LatAm является диверсификатором",
-   "lead": "A series of ostensibly market-friendly electoral victories across the region has boosted local currency bonds",
-   "lead_ru": "Серия якобы благоприятных для рынка побед на выборах по всему региону способствовала росту облигаций в местной валюте",
-   "tags": [
-    "bonds"
-   ]
-  },
-  {
-   "title": "Schwab Tops Estimates as Client Assets Grow Amid Market Surge",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxONk4zYW9XXzJoLXZSemdEZ1FFYlJKLXdUcnhoQkU0R01vSWw4RTZpSEh6TExGQ2NLV3hLUUQ4ZEtyNEp6cEYzNWFTLVFDdjB6TDVqTWFZOUVjUm9VUHFWYmFBUVhLOGkxbUdZOVM4T29OaktPYXRHOHF4Q1d3R0VNSjVveUJaRjdXMm9PMjVqM1JaTGFDdlltaDdKN3NSQ29Wb2NLWTZUQ3l6LWZldHJHTUZR?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-15T16:27:01.035912+00:00",
-   "title_ru": "Оценки Schwab Tops по мере роста клиентских активов на фоне всплеска рынка"
-  },
-  {
-   "title": "How Aramco learned to keep pumping oil under fire",
-   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOMEo4RHMzbGVMLUpQcnFqT28tSlU2Q0FBUlZtc2MzaUZSLXpsd3o3X1VGQXplLWJUaUJuQ1BCbFdVbzZwZUk0OURuZ0dmcWVkaWNaclNBcHBlRGR1bWViNWROR21UV2pSRTdqNDZfUVFDdHR2TG9lUDd5eDlNRzVtWHRVNFI5d3I4MUtQdG04SVA1OURzQzI5WXk3N3ItUEE?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-15T16:27:01.035912+00:00",
-   "title_ru": "Как Aramco научилась качать нефть под огнем",
-   "tags": [
-    "oil"
-   ]
-  },
-  {
-   "title": "CoreWeave investors are feeling spooked, as the company’s stock and bonds see fresh pressure",
-   "link": "https://www.marketwatch.com/story/coreweave-investors-are-feeling-spooked-as-the-companys-stock-and-bonds-see-fresh-pressure-ba39a931?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 3,
-   "ts": "2026-10-15T16:27:01.035912+00:00",
-   "title_ru": "Инвесторы CoreWeave чувствуют себя напуганными, поскольку акции и облигации компании испытывают новое давление",
-   "lead": "It’s getting more expensive for investors to buy protection against a CoreWeave default.",
-   "lead_ru": "Инвесторам становится все дороже покупать защиту от дефолта CoreWeave.",
-   "tags": [
-    "bonds"
-   ]
-  },
   {
    "title": "Stocks Fall, Yields Plunge as CoreWeave Worries Weigh on Tech",
    "link": "https://www.bloomberg.com/news/videos/2026-10-15/bloomberg-surveillance-10-15-2026-video",
