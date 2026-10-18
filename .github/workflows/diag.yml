@@ -7,14 +7,17 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - name: Ask the bot server for IPO and price history
+      - name: Nasdaq IPO calendar (structure)
+        run: |
+          UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+          for m in 2026-10 2026-11; do
+            code=$(curl -s -m 30 -A "$UA" -H "Accept: application/json, text/plain, */*" -o /tmp/n.json -w "%{http_code}" "https://api.nasdaq.com/api/ipo/calendar?date=$m")
+            echo "::notice title=nasdaq $m::HTTP $code $(jq -c '{keys:(.data|keys), up:(.data.upcoming.upcomingTable.rows|length), priced:(.data.priced.rows|length), filed:(.data.filed.rows|length), up0:.data.upcoming.upcomingTable.rows[0], pr0:.data.priced.rows[0], fi0:.data.filed.rows[0]}' /tmp/n.json 2>&1 | head -c 1500)"
+          done
+      - name: Finnhub-free checks through the bot server
         run: |
           API="https://econnews-bot.econnews-6dce35.workers.dev"
-          probe() {
-            out=$(curl -s -m 40 -o /tmp/b -w "%{http_code} %{time_total}s" "$API$1")
-            body=$(head -c 400 /tmp/b | tr '\n\r' '  ')
-            echo "::notice title=$1::$out $body"
-          }
-          probe "/api/ipo"
-          for s in S%26P NASDAQ DAX NIKKEI IMOEX BRENT GOLD EURUSD UST10 BTC; do probe "/api/history?s=$s&r=1y"; done
-          probe "/api/history?s=AAPL&r=3m"
+          for p in "/api/history?s=BTC&r=1y" "/api/history?s=AAPL&r=1y"; do
+            out=$(curl -s -m 40 -o /tmp/b -w "%{http_code} %{time_total}s" "$API$p")
+            echo "::notice title=$p::$out $(head -c 200 /tmp/b)"
+          done
