@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "2f9d84a375f78cdd": "2026-10-15T10:57:29.257901+00:00",
-  "e05f1a0d9f289ad4": "2026-10-15T11:02:29.259896+00:00",
-  "20061fab3218dcfd": "2026-10-15T11:02:29.259896+00:00",
-  "28a791cc8c23ae9c": "2026-10-15T11:02:29.259896+00:00",
-  "a689c7db29e7e24f": "2026-10-15T11:02:29.259896+00:00",
   "1ffd05d1dfb4118f": "2026-10-15T11:07:29.243027+00:00",
   "473571cba7d58764": "2026-10-15T11:12:29.262464+00:00",
   "b8727310cf1b7935": "2026-10-15T11:12:29.262464+00:00",
@@ -709,69 +704,11 @@
   "4f8e7e09758c010e": "2026-10-18T09:33:30.905320+00:00",
   "d09475409559ad17": "2026-10-18T10:03:30.902896+00:00",
   "cccc77875e337510": "2026-10-18T10:28:30.873613+00:00",
-  "fbb1aca8fc2a5a62": "2026-10-18T10:53:30.894167+00:00"
+  "fbb1aca8fc2a5a62": "2026-10-18T10:53:30.894167+00:00",
+  "5e7c7b955328deba": "2026-10-18T11:03:30.900162+00:00",
+  "5a89324960192d99": "2026-10-18T11:03:30.900162+00:00"
  },
  "recent": [
-  {
-   "title": "Warsh Takes IMF Stage as Hot Inflation Spurs Rate Hike Bets",
-   "link": "https://www.bloomberg.com/news/newsletters/2026-10-15/warsh-takes-imf-stage-as-hot-inflation-spurs-rate-hike-bets",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 9,
-   "ts": "2026-10-15T11:02:29.259896+00:00",
-   "title_ru": "Уорш выступил на сцене МВФ, поскольку горячая инфляция подстегивает ставки на повышение ставок",
-   "lead": "The Fed chief’s fireside chat in Bangkok will be scrutinized for any hint of a move in October.",
-   "lead_ru": "Беседа главы ФРС в Бангкоке будет внимательно изучена на предмет каких-либо намеков на какие-либо шаги в октябре.",
-   "tags": [
-    "Fed",
-    "rates",
-    "inflation"
-   ]
-  },
-  {
-   "title": "Chokepoints and the impact on the global economy and inflation",
-   "link": "https://www.bloomberg.com/news/newsletters/2026-10-15/chokepoints-and-the-impact-on-the-global-economy-and-inflation",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-15T11:02:29.259896+00:00",
-   "title_ru": "Узкие места и влияние на мировую экономику и инфляцию",
-   "lead": "The BIS explores fallout on economies, inflation in a world beset with supply disruptions",
-   "lead_ru": "БМР исследует последствия для экономики и инфляции в мире, страдающем от перебоев в поставках",
-   "tags": [
-    "inflation"
-   ]
-  },
-  {
-   "title": "Angola Seeks to Keep Oil Output Above 1 Million Barrels a Day",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-15/angola-seeks-to-keep-oil-output-above-1-million-barrels-a-day",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-15T11:02:29.259896+00:00",
-   "title_ru": "Ангола стремится сохранить добычу нефти на уровне выше 1 миллиона баррелей в день",
-   "lead": "Angola wants to keep crude production above 1 million barrels a day as Africa’s third-biggest oil producer tries to offset a decline in output from mature fields.",
-   "lead_ru": "Ангола хочет поддерживать добычу нефти на уровне выше 1 миллиона баррелей в день, поскольку третий по величине производитель нефти в Африке пытается компенсировать снижение добычи на зрелых месторождениях.",
-   "tags": [
-    "oil"
-   ]
-  },
-  {
-   "title": "Gulf stocks fall after Houthis threaten more Saudi attacks",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPRno4UkRJYXkzMldxaU9XbzNpLWtsNVd4SmUtelluWEFxOHNCTjdpSmVJVzBac0h1TDF6TE8wY2FZNHBHaF9XTjZ0WTByY29yOTR4SDVKaG02YWItZkNVdXlQWWF6bWROd0ZSRDM5SDRSSEs2M0dBZHRVekJTVHhpYnMzemVCa3RQY3dmZ3g5UFBUZ2ZySWRjT0g0M2FuZElsaVkzUk1KSHB4ODRTdjBkbzJR?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-15T11:02:29.259896+00:00",
-   "title_ru": "Акции стран Персидского залива упали после того, как хуситы угрожают новыми атаками Саудовской Аравии",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "UniCredit Weighs Risk Transfer on $1 Billion of German Mortgages",
    "link": "https://www.bloomberg.com/news/articles/2026-10-15/unicredit-weighs-risk-transfer-on-1-billion-of-german-mortgages",
@@ -6927,6 +6864,32 @@
    "score": 4,
    "ts": "2026-10-18T10:53:30.894167+00:00",
    "title_ru": "Заседания МВФ/Всемирного банка оставляют развивающимся странам больше вопросов, чем ответов"
+  },
+  {
+   "title": "Carney’s pipeline push is unlikely to bring back Canada’s oil jobs boom",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOcEtubmtfLWRIRC0xYjJxNnpzbkdOSzJPakNObmdUZ1EyRnB4cThXMjdRY3FWb1padzJMVVdoSG80Nk5lTmFMUU56dHdIU3kxcl9BYlVzOUROZzg5Y1lnTTdSS3h1YkJqdzJFaTB6b1JoV2h3dWxiUHRMNU1zMEpfcWx6b2pHQlJVXzJZLU1EdDVXXzd5X19DUW5memxWTHlPdTdqYl9YT0lrWndI?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-18T11:03:30.900162+00:00",
+   "title_ru": "Трубопроводный толчок Карни вряд ли вернет бум нефтяных рабочих мест в Канаде",
+   "tags": [
+    "oil",
+    "jobs"
+   ]
+  },
+  {
+   "title": "Gleaning group gives £1m of produce to food banks",
+   "link": "https://www.bbc.co.uk/news/articles/c6n49w1r2zxjo?at_medium=RSS&at_campaign=rss",
+   "sources": [
+    "BBC"
+   ],
+   "score": 3,
+   "ts": "2026-10-18T11:03:30.900162+00:00",
+   "title_ru": "Группа Gleaning предоставляет продовольственным банкам £ 1 млн продукции",
+   "lead": "Gleaning Cornwall warns that more funding is needed as costs rise sharply.",
+   "lead_ru": "Gleaning Cornwall предупреждает, что требуется больше финансирования, поскольку затраты резко возрастают."
   }
  ],
  "last_digest": "2026-10-17",
