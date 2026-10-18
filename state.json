@@ -1,12 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "86a30b8d0b45060d": "2026-10-15T11:47:29.288083+00:00",
-  "3731e45c980e7cf0": "2026-10-15T11:47:29.288083+00:00",
-  "9095a75c06300ec9": "2026-10-15T11:47:29.288083+00:00",
-  "8ad0d27704272160": "2026-10-15T11:47:29.288083+00:00",
-  "c707941429e5ec7b": "2026-10-15T11:52:29.251937+00:00",
-  "7bed78288b466d09": "2026-10-15T11:52:29.251937+00:00",
   "3e0a3f73ce379d96": "2026-10-15T11:57:29.328210+00:00",
   "97ba392ce70a3ffe": "2026-10-15T12:02:29.623406+00:00",
   "71b5eb1e8129e2a0": "2026-10-15T12:02:29.623406+00:00",
@@ -697,74 +691,6 @@
   "182bd8e74703a700": "2026-10-18T11:13:30.892684+00:00"
  },
  "recent": [
-  {
-   "title": "AI Rout Deepens; Anthropic Revenue Hits $16.8B; Warsh to Speak in Bangkok",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-15/bloomberg-brief-10-15-2026-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-15T11:47:29.288083+00:00",
-   "title_ru": "Разгром ИИ углубляется; Антропный доход достиг $16,8 млрд; Уорш выступит в Бангкоке",
-   "lead": "US equity futures fall as a selloff in AI-related stocks gathers speed, pushing investors toward bonds. Investors await PPI, retail sales and jobless claims data as well as Fed Chair Warsh's remarks in Bangkok.",
-   "lead_ru": "Фьючерсы на американские акции падают, поскольку распродажа акций, связанных с искусственным интеллектом, набирает обороты, подталкивая инвесторов к облигациям. Инвесторы ждут данных по индексу цен производителей, розничным продажам и заявкам на пособие по безработице, а также выступления председателя ФРС Уорша в Бангкоке.",
-   "tags": [
-    "Fed",
-    "bonds",
-    "markets"
-   ]
-  },
-  {
-   "title": "Wall St banks caught in capital markets lull after a strong first half of 2026",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNb29DeVJTNUVLRVV2LWFBdlBoTEMxOWdMWElmRTlGNm5HR2RXWUdobVdoZk55X3pqU1cwZUtpZno2RkZ3RU1TXzllSGc4emxJS3VMakU1ZkNLYWJLbDBUSF9kQkY5OENramlRZjVGbWVPckxsaGFzOU9sSnhMbWVUNk5uRGo4LU1BakdIZWZxZlZqcGl0QzFiMGdaT1QwWW1vLWh5VUtlUldiMmFxMENQMl9DNEx3YlZKeXlqSVRnUlI?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-15T11:47:29.288083+00:00",
-   "title_ru": "Банки Уолл-стрит оказались в ситуации затишья на рынках капитала после сильной первой половины 2026 года"
-  },
-  {
-   "title": "Mapping the Market: Micron shares appear set for further losses",
-   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOUlZwdXhDclVXOTh0V3VReV9vNzkwMjROYWI5ZDdqc3ItdU4yNGJ5ekRBaUxCZUVfWGVIQWhhZE5nMzlpOXBrbHltTHhRMWUtTUlvTEQxeTc5a3VtMTl5bXNCcC1EMk9uZ1hHeDFORVVFYTR3dm1nYnJLbU12U1RzRmpNRmlaeXFvR2JLWA?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-15T11:47:29.288083+00:00",
-   "title_ru": "Картирование рынка: акции Micron, похоже, ждут дальнейшие потери",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "Spain’s Opposition Leader Backs De Cos to Succeed Lagarde at ECB",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-15/spain-s-opposition-leader-backs-de-cos-to-succeed-lagarde-at-ecb",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-15T11:52:29.251937+00:00",
-   "title_ru": "Лидер испанской оппозиции поддерживает Де Коса как преемника Лагард в ЕЦБ",
-   "lead": "Spain’s opposition leader backed Pablo Hernández de Cos to run the European Central Bank, a boon for his candidacy just as the country approaches a snap election.",
-   "lead_ru": "Лидер испанской оппозиции поддержал Пабло Эрнандеса де Коса в качестве руководителя Европейского центрального банка, что является благом для его кандидатуры как раз в тот момент, когда страна приближается к внеочередным выборам.",
-   "tags": [
-    "ECB"
-   ]
-  },
-  {
-   "title": "S&P 500's march to 8,000 hinges on 'very, very strong' third quarter",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQeDNuYWYyZHBTTUNybko0NWxLZGc4aEl4bTYyazY0aVNmQ1ZWZUFPYVZnOG9FMDcwTUlGdlptbUR6eHpTQ2hQamVCODlMNHRyYURUVV8zMndqaXJQWEZJREJHUGxraWF3WnAwTnB6eWtOTXpySnpaYUw1WEUtOFVxT0JJcG1LUDdUQUhXamYxN1NlWnB3UVRqX2YtUVdna3o5V3RnaXoxcUphRmlUT2c?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-15T11:52:29.251937+00:00",
-   "title_ru": "Рост индекса S&P 500 до 8000 зависит от «очень, очень сильного» третьего квартала",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Bonds Are Back, Says BlackRock’s Wei Li",
    "link": "https://www.bloomberg.com/news/videos/2026-10-15/bonds-are-back-says-blackrock-s-wei-li-video",
@@ -6759,7 +6685,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 1,
+  "Fed": 0,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
