@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "247cbf93e56bacd4": "2026-10-15T18:02:01.031497+00:00",
   "c0d0159f3847fdc5": "2026-10-15T18:07:01.125355+00:00",
   "908a6ef99f577de8": "2026-10-15T18:07:01.125355+00:00",
   "6ba0e588120ec3ba": "2026-10-15T18:17:01.002421+00:00",
@@ -609,19 +608,6 @@
   "edc3aefa5ae4ff4c": "2026-10-18T16:39:04.201762+00:00"
  },
  "recent": [
-  {
-   "title": "NEWSLETTER: Investors head back to bonds",
-   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1DQXp4cVlpTllvLUFyQVpjakkxZlBhWHAwWW5aQzdoWnZocVBJZVoxTUpqQXYyZXo3dTVkZVFqRUtOMHRnWXFFXzZoaVJMRHhYTWFUbG1FdlppRFN2Rk5PTHMxVjNxT1dmX1o3c0pIc0FzM2t4?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-15T18:02:01.031497+00:00",
-   "title_ru": "NEWSLETTER: Инвесторы возвращаются к облигациям",
-   "tags": [
-    "bonds"
-   ]
-  },
   {
    "title": "EU Prepares Trade Tool That Could Block China From Single Market",
    "link": "https://www.bloomberg.com/news/articles/2026-10-15/eu-prepares-trade-tool-that-could-block-china-from-single-market",
@@ -5587,7 +5573,7 @@
    ]
   }
  ],
- "last_digest": "2026-10-17",
+ "last_digest": "2026-10-18",
  "fail_streak": {
   "РБК": 0,
   "МВФ": 0,
@@ -5626,7 +5612,8 @@
   "2026-10-16-21",
   "2026-10-17-09",
   "2026-10-17-21",
-  "2026-10-18-09"
+  "2026-10-18-09",
+  "2026-10-18-21"
  ],
  "calendar": {
   "fetched": "2026-10-18T15:39:04.174821+00:00",
@@ -9426,7 +9413,6 @@
    "0001193125-26-424428",
    "0000950103-26-015746",
    "0000037785-26-000165",
-   "0001214659-26-013016",
    "0002152984-26-000004",
    "0001193125-26-424412",
    "0001213900-26-110429",
@@ -9436,6 +9422,7 @@
    "0001646382-26-000023",
    "0000037785-26-000164",
    "0001437749-26-032866",
+   "0000037785-26-000157",
    "0001213900-26-110404",
    "0001104659-26-116675",
    "0000037785-26-000161",
@@ -9469,7 +9456,7 @@
    "0000037785-26-000159",
    "0001437749-26-032865",
    "0002152990-26-000002",
-   "0000037785-26-000157"
+   "0001214659-26-013016"
   ],
   "errors": {}
  }
