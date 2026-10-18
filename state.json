@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "ab6d58e98ccf90d8": "2026-10-15T22:07:36.464934+00:00",
-  "935fd7fc2e51f586": "2026-10-15T22:12:36.446132+00:00",
   "7ab5e9422fa33a7f": "2026-10-15T22:17:36.400173+00:00",
   "07c00ee49eb99875": "2026-10-15T22:17:36.400173+00:00",
   "1fe8c58dec759ba9": "2026-10-15T22:17:36.400173+00:00",
@@ -570,29 +568,15 @@
   "2b2186a4c3eebf8d": "2026-10-18T21:19:36.397481+00:00",
   "47b432bae73c0bc1": "2026-10-18T21:24:36.425376+00:00",
   "23b936abfe86ffd4": "2026-10-18T21:44:36.373772+00:00",
-  "9ea2bd65f169f9e7": "2026-10-18T21:54:36.370242+00:00"
+  "9ea2bd65f169f9e7": "2026-10-18T21:54:36.370242+00:00",
+  "681e7ee2e3251b6b": "2026-10-18T22:09:36.358097+00:00",
+  "dc7e498fa993f6a0": "2026-10-18T22:14:36.336932+00:00",
+  "f8a72bebecdc1405": "2026-10-18T22:14:36.336932+00:00",
+  "6f1678c0f08ae5a3": "2026-10-18T22:14:36.336932+00:00",
+  "4cf3038fb2d19f6c": "2026-10-18T22:14:36.336932+00:00",
+  "c095575cc278ea2a": "2026-10-18T22:14:36.336932+00:00"
  },
  "recent": [
-  {
-   "title": "MSCI weighs downgrading Indonesia to standalone-market status",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxONlg4UjV3N2U0ZUVvYWhOTF9YNEI5c1VCaVd3ZTdCcUl2dFBGUklnZngtVlNhaS1BSFJWUkVqcGluT05jLVNqNll0RWRJQWZOdVRZWnM4TUR2UHJTVGNYbnNOVmgtVWVqcjJWOHdDWTVVME9BVHBiLXBiclQyN3ljTDlfaTdnWDdzcmZTZk1wX2p6b3NXVjJNVE04QU82aGVTQW5xdWEzcm5tNU9OT2JMVVlINA?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-15T22:07:36.464934+00:00",
-   "title_ru": "MSCI взвешивает понижение Индонезии до статуса отдельного рынка"
-  },
-  {
-   "title": "The World Can’t Afford to Get AI Wrong",
-   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNcUpHZG5KRXJ4d1VXVlBaOVN2VlZCV1liOGItZ3NrTmN4ZEp6OEtIZ1hxLXNBOEVwNGRMajFTNlUzcWpHWXRiTHhDOUxVQVA5dDZvaVBqYXlELXlOc251X08wWElXanNIMEFjM0lvamd3czBDWkhYX2hHdEJITTQ0TmZmak5QVnotaU9jTklzMA?oc=5",
-   "sources": [
-    "IMF"
-   ],
-   "score": 4,
-   "ts": "2026-10-15T22:12:36.446132+00:00",
-   "title_ru": "Мир не может позволить себе ошибиться с ИИ"
-  },
   {
    "title": "Latest Oil Market News and Analysis for Oct. 16",
    "link": "https://www.bloomberg.com/news/articles/2026-10-15/latest-oil-market-news-and-analysis-for-oct-16",
@@ -5218,6 +5202,35 @@
    "score": 5,
    "ts": "2026-10-18T20:34:36.411648+00:00",
    "title_ru": "- Международный валютный фонд | МВФ"
+  },
+  {
+   "title": "Brent Crude Holds Near $110 on Mideast and Ukraine Conflicts",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZW11ZjRDTUdpUHpzY1JpNFZtWjZ1bGhZejdHX2h3Q0NTb1pKU0pxM0NtSDR5QlA4YnQ5NHUybkxGS0VxSWJQcHo0NWcyb3A4S21SbVNld2cyLTQ5eFowV2lqRlh1QUMteG1taWQ5b0dPUGg1SnpxVUlRYmlDWkkxZzBQWVpBTjlwdzEyZDBTRWRacVU1ZFhZMjhrMGd5dw?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-18T22:14:36.336932+00:00",
+   "title_ru": "Нефть марки Brent держится около $110 из-за конфликтов на Ближнем Востоке и в Украине",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "US Stock Futures Rise Ahead of Busy Earnings Week: Markets Wrap",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-18/stock-market-today-dow-s-p-live-updates",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-18T22:14:36.336932+00:00",
+   "title_ru": "Фьючерсы на акции США растут в преддверии напряженной недели отчетности: итоги рынков",
+   "lead": "US stock futures rose and oil edged lower as traders prepared for a packed week of corporate earnings and Chinese economic data against a backdrop of heightened geopolitical risks.",
+   "lead_ru": "Фьючерсы на американские акции выросли, а нефть снизилась, поскольку трейдеры готовились к насыщенной неделе корпоративными отчетами и экономическими данными Китая на фоне возросших геополитических рисков.",
+   "tags": [
+    "oil",
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-10-18",
