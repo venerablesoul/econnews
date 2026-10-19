@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "980f938186f24de8": "2026-10-16T13:09:26.514154+00:00",
-  "06cba18f65a9f610": "2026-10-16T13:09:26.514154+00:00",
-  "a24b9172321134b1": "2026-10-16T13:09:26.514154+00:00",
-  "83ecad54c4503099": "2026-10-16T13:09:26.514154+00:00",
   "ffa2294a4a10351e": "2026-10-16T13:14:26.470659+00:00",
   "f1c7f9a00a48ffe1": "2026-10-16T13:14:26.470659+00:00",
   "42106bce478b5f4d": "2026-10-16T13:19:26.498788+00:00",
@@ -561,33 +557,6 @@
   "36f802ae1a7177d1": "2026-10-19T13:01:15.473423+00:00"
  },
  "recent": [
-  {
-   "title": "Equity Trading Gives Banks a Bright Spot This Earnings Season",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-16/equity-trading-gives-banks-a-bright-spot-this-earnings-season-mvayr9z8",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-16T13:09:26.514154+00:00",
-   "title_ru": "Торговля акциями дает банкам яркое пятно в этом сезоне заработка",
-   "lead": "Big bank earnings offered little to alter the dimming views on the sector mired in the longest losing streak since the financial crisis. The bright spot: equities trading.",
-   "lead_ru": "Прибыль крупных банков мало что дала для изменения тусклых взглядов на сектор, погрязший в самой длинной полосе убытков со времен финансового кризиса. Светлое пятно: торговля акциями.",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "BNY Targets Blind Spots in ABS After Tricolor Mess Rocked Market",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-16/bny-targets-blind-spots-in-abs-after-tricolor-mess-rocked-market",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T13:09:26.514154+00:00",
-   "title_ru": "BNY нацелился на «слепые зоны» на АБС после потрясения на рынке «Триколора»",
-   "lead": "A year after a pair of massive frauds exposed hidden risks in otherwise routine financial documents, BNY is rolling out tools to safeguard against blind spots in the roughly $1 trillion asset-backed securities market.",
-   "lead_ru": "Спустя год после того, как пара массовых мошенничеств выявила скрытые риски в обычных финансовых документах, BNY внедряет инструменты для защиты от слепых зон на рынке ценных бумаг, обеспеченных активами примерно на $ 1 трлн."
-  },
   {
    "title": "Bank of Italy Lifts Growth Outlook, Matching Government Forecast",
    "link": "https://www.bloomberg.com/news/articles/2026-10-16/bank-of-italy-lifts-growth-outlook-matching-government-forecast",
@@ -6710,6 +6679,22 @@
    },
    {
     "src": "sec",
+    "id": "7f89cc87be6bb25c",
+    "ticker": "CIEN",
+    "company": "CIENA CORP",
+    "who": "David M Rothenstein",
+    "role": "EVP & Chief Strategy Officer",
+    "type": "sell",
+    "value": 870157,
+    "shares": 2500,
+    "price": 348.06,
+    "plan": true,
+    "date": "2026-10-15",
+    "disclosed": "2026-10-19",
+    "link": "https://www.sec.gov/Archives/edgar/data/1444157/000144415726000028/0001444157-26-000028-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "0bd25d90d8b6ef2e",
     "ticker": "ELTP",
     "company": "ELITE PHARMACEUTICALS INC /NV/",
@@ -8647,22 +8632,23 @@
    "0001233433-26-000008",
    "0001513845-26-000132",
    "0001628280-26-066217",
+   "0000108985-26-000087",
    "0001628280-26-066215",
-   "0001573338-26-000021",
    "0001900445-26-000006",
    "0001193125-26-424723",
    "0000950103-26-015756",
-   "0001543262-26-000010",
    "0001193125-26-424699",
    "0001628280-26-066202",
+   "0001708055-26-000079",
    "0001628280-26-066214",
    "0001104659-26-116752",
    "0001628280-26-066216",
-   "0001493152-26-047486",
+   "0001708055-26-000080",
+   "0001708055-26-000078",
    "0000108985-26-000086",
-   "0001193125-26-424593",
+   "0001444157-26-000028",
+   "0000108985-26-000088",
    "0000950103-26-015755",
-   "0001493152-26-047482",
    "0001628280-26-066213",
    "0001768860-26-000012",
    "0001391935-26-000009",
