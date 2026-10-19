@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "f764c58c2470e157": "2026-10-16T21:04:55.607130+00:00",
-  "60b5d9d4b0e3d4c5": "2026-10-16T21:04:55.607130+00:00",
-  "5399886da2a91c60": "2026-10-16T21:04:55.607130+00:00",
   "6ed2ad744240408c": "2026-10-16T21:09:55.623186+00:00",
   "eb8240e4daa99c59": "2026-10-16T21:14:55.581270+00:00",
   "7c20d250f331e348": "2026-10-16T21:24:55.606793+00:00",
@@ -518,27 +515,14 @@
   "260d3b7e3c9f34a1": "2026-10-19T20:05:37.821870+00:00",
   "d66686fab9134433": "2026-10-19T20:20:37.558433+00:00",
   "9b9bdc9af8b8cf58": "2026-10-19T20:25:37.571212+00:00",
-  "0be5036fd2da260c": "2026-10-19T20:55:37.787783+00:00"
+  "0be5036fd2da260c": "2026-10-19T20:55:37.787783+00:00",
+  "2db6fc4b02b67001": "2026-10-19T21:00:37.779178+00:00",
+  "9c66c658e853daaf": "2026-10-19T21:05:37.551757+00:00",
+  "570c272c9acf7623": "2026-10-19T21:05:37.551757+00:00",
+  "d5cd076e334f8355": "2026-10-19T21:05:37.551757+00:00",
+  "929d00035febd4d7": "2026-10-19T21:05:37.551757+00:00"
  },
  "recent": [
-  {
-   "title": "Don’t buy this dip: Several signs suggest there’s more pain ahead for tech stocks",
-   "link": "https://www.marketwatch.com/story/dont-buy-this-dip-several-signs-suggest-theres-more-pain-ahead-for-tech-stocks-83f971d7?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-16T21:04:55.607130+00:00"
-  },
-  {
-   "title": "Год шоков: участники РЭН — о новой реальности на мировом рынке топлива",
-   "link": "https://www.rbc.ru/business/17/10/2026/6ad25f0064fe3a360ae286fb",
-   "sources": [
-    "RBC"
-   ],
-   "score": 1,
-   "ts": "2026-10-16T21:04:55.607130+00:00"
-  },
   {
    "title": "General Government Debt",
    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNWFJ2elZTeXFtVEd4Vm9YV0xiN0pBZzdKbGVwemEtZ3F4M2YyMVduVHEwc2ZNQWdibERraGtJTXZTd2ZhdmhTaXRPREd3ekM5ZTNRZ0l3a0w0UEctRDRaUGxob3V5OUJpRHhSQVRnbWNHRS0taEcxQTVUY21TNlJzRWZhdGg?oc=5",
@@ -4321,6 +4305,44 @@
     "inflation",
     "oil"
    ]
+  },
+  {
+   "title": "Beyond Technology: Building the Data Foundation for Digital Treasury Management",
+   "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9VVVE1Mms0b2hYVmQtNEtJQXVYUlpUYTBrZU1UWGFOVUhNa2RZUmtHclVIVktST1pDbGdFN2h2QUg0ek13dXpySllxSS1aT3NkaTEzZXJ1cHh1NEs3cjUwRWExeWFKQXlGSmcwdW9vTlhBZlhzRkc4ZFJMSQ?oc=5",
+   "sources": [
+    "IMF"
+   ],
+   "score": 4,
+   "ts": "2026-10-19T21:05:37.551757+00:00",
+   "title_ru": "За пределами технологий: создание базы данных для управления цифровым казначейством",
+   "tags": [
+    "bonds"
+   ]
+  },
+  {
+   "title": "South Africa’s president eyes trade with China and India as US ties sour",
+   "link": "https://www.ft.com/content/617fb017-e08e-4e37-abac-a38731b2de3c?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 4,
+   "ts": "2026-10-19T21:05:37.551757+00:00",
+   "title_ru": "Президент ЮАР присматривается к торговле с Китаем и Индией, поскольку отношения с США ухудшаются",
+   "lead": "Cyril Ramaphosa says Pretoria wants to take advantage of growing tariff-free access benefits with Beijing",
+   "lead_ru": "Сирил Рамафоса говорит, что Претория хочет воспользоваться растущими преимуществами беспошлинного доступа с Пекином",
+   "tags": [
+    "China",
+    "tariffs"
+   ]
+  },
+  {
+   "title": "Why the midterm elections are likely to become a strong tailwind for the stock market",
+   "link": "https://www.marketwatch.com/story/why-the-midterm-elections-are-likely-to-become-a-strong-tailwind-for-the-stock-market-3edfca6c?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-19T21:05:37.551757+00:00"
   }
  ],
  "last_digest": "2026-10-19",
@@ -6428,6 +6450,22 @@
    },
    {
     "src": "sec",
+    "id": "99e4cf4334ebb890",
+    "ticker": "BPRE",
+    "company": "Bluerock Private Real Estate Fund",
+    "who": "Ramin Kamfar",
+    "role": "Director",
+    "type": "buy",
+    "value": 2422335,
+    "shares": 194228,
+    "price": 12.47,
+    "plan": false,
+    "date": "2026-10-16",
+    "disclosed": "2026-10-19",
+    "link": "https://www.sec.gov/Archives/edgar/data/1551047/000139834426018404/0001398344-26-018404-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "2ddfc0fab2269fee",
     "ticker": "NBIS",
     "company": "Nebius Group N.V.",
@@ -6649,6 +6687,38 @@
     "date": "2026-10-15",
     "disclosed": "2026-10-19",
     "link": "https://www.sec.gov/Archives/edgar/data/2128469/000212846926000009/0002128469-26-000009-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "2aeaade737e943f5",
+    "ticker": "ROKU",
+    "company": "ROKU, INC",
+    "who": "Dan Jedda",
+    "role": "CFO",
+    "type": "sell",
+    "value": 1069880,
+    "shares": 7000,
+    "price": 152.84,
+    "plan": true,
+    "date": "2026-10-15",
+    "disclosed": "2026-10-19",
+    "link": "https://www.sec.gov/Archives/edgar/data/1834902/000183490226000026/0001834902-26-000026-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "708bed77fff05b47",
+    "ticker": "PD",
+    "company": "PagerDuty, Inc.",
+    "who": "Jennifer Tejada",
+    "role": "Chair",
+    "type": "sell",
+    "value": 986988,
+    "shares": 57500,
+    "price": 17.16,
+    "plan": true,
+    "date": "2026-10-15",
+    "disclosed": "2026-10-19",
+    "link": "https://www.sec.gov/Archives/edgar/data/1736979/000173697926000023/0001736979-26-000023-index.htm"
    },
    {
     "src": "sec",
@@ -8586,24 +8656,29 @@
   },
   "checked": "2026-10-19T20:35:37.574305+00:00",
   "sec_seen": [
-   "0002065340-26-000023",
-   "0001705110-26-000094",
-   "0001753926-26-001963",
+   "0001123292-26-001415",
+   "0001193125-26-425363",
+   "0001123292-26-001414",
+   "0001627893-26-000014",
+   "0001764784-26-000012",
+   "0001968281-26-000027",
+   "0001123292-26-001411",
+   "0001123292-26-001412",
    "0001808235-26-000008",
-   "0001369304-26-000005",
-   "0001628280-26-066333",
    "0001212067-26-000024",
-   "0002128469-26-000009",
-   "0001672825-26-000009",
-   "0001205945-26-000006",
-   "0001699997-26-000005",
-   "0001534094-26-000005",
-   "0001712360-26-000006",
-   "0001843113-26-000009",
-   "0001123292-26-001405",
-   "0001230604-26-000009",
-   "0001628280-26-066331",
-   "0001628280-26-066323"
+   "0001736979-26-000023",
+   "0001398344-26-018404",
+   "0001741453-26-000008",
+   "0001628280-26-066337",
+   "0001548135-26-000010",
+   "0001680247-26-000118",
+   "0001865525-26-000030",
+   "0001104659-26-116932",
+   "0001193125-26-425358",
+   "0001104659-26-116933",
+   "0001123292-26-001413",
+   "0001834902-26-000026",
+   "0001193125-26-425359"
   ],
   "errors": {}
  }
