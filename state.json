@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "eb8240e4daa99c59": "2026-10-16T21:14:55.581270+00:00",
   "7c20d250f331e348": "2026-10-16T21:24:55.606793+00:00",
   "83a3a757b029ef47": "2026-10-16T21:24:55.606793+00:00",
   "3d1da8446c04adeb": "2026-10-16T21:34:55.536616+00:00",
@@ -520,19 +519,11 @@
   "570c272c9acf7623": "2026-10-19T21:05:37.551757+00:00",
   "d5cd076e334f8355": "2026-10-19T21:05:37.551757+00:00",
   "929d00035febd4d7": "2026-10-19T21:05:37.551757+00:00",
-  "80e72ddb77969232": "2026-10-19T21:10:37.581578+00:00"
+  "80e72ddb77969232": "2026-10-19T21:10:37.581578+00:00",
+  "1a6481b7e58503bf": "2026-10-19T21:21:05.236858+00:00",
+  "2e85ce00d912348a": "2026-10-19T21:21:05.236858+00:00"
  },
  "recent": [
-  {
-   "title": "General Government Debt",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNWFJ2elZTeXFtVEd4Vm9YV0xiN0pBZzdKbGVwemEtZ3F4M2YyMVduVHEwc2ZNQWdibERraGtJTXZTd2ZhdmhTaXRPREd3ekM5ZTNRZ0l3a0w0UEctRDRaUGxob3V5OUJpRHhSQVRnbWNHRS0taEcxQTVUY21TNlJzRWZhdGg?oc=5",
-   "sources": [
-    "IMF"
-   ],
-   "score": 5,
-   "ts": "2026-10-16T21:14:55.581270+00:00",
-   "title_ru": "Государственный долг"
-  },
   {
    "title": "EU Takes the Trade Fight to China and Braces for the Backlash",
    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQUzd0X095X0ZqSDEwWm1Wc2N4LWtWdld5eWl4X0JIUjNNZXVNNFlPUFU4NWNMSVRpSXZjTzN4TEh0ZGM4WWFKTS1WU2ZzWHdfR0hjWnFBTThqbkVtaXBLT3dJdVZyYVBVY00tSWhjOW95aTlpNUdLejI3V1BvYms0R1VZUVh3eXU1Ml94ck5PQ2xWMk1TdGg2c3JCdk9NblhsdEs3dlhHdGpZWEE3QUg3V1Vn?oc=5",
@@ -6722,6 +6713,38 @@
    },
    {
     "src": "sec",
+    "id": "86a650ba63cadf4c",
+    "ticker": "RCAT",
+    "company": "Red Cat Holdings, Inc.",
+    "who": "Jeffrey M Thompson",
+    "role": "CEO",
+    "type": "sell",
+    "value": 676500,
+    "shares": 150000,
+    "price": 4.51,
+    "plan": true,
+    "date": "2026-10-15",
+    "disclosed": "2026-10-19",
+    "link": "https://www.sec.gov/Archives/edgar/data/1397565/000162828026066340/0001628280-26-066340-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "3d2e33af56466848",
+    "ticker": "W",
+    "company": "Wayfair Inc.",
+    "who": "Steven Conine",
+    "role": "Director",
+    "type": "sell",
+    "value": 13016728,
+    "shares": 117000,
+    "price": 111.25,
+    "plan": true,
+    "date": "2026-10-15",
+    "disclosed": "2026-10-19",
+    "link": "https://www.sec.gov/Archives/edgar/data/1620052/000161670726000176/0001616707-26-000176-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "0bd25d90d8b6ef2e",
     "ticker": "ELTP",
     "company": "ELITE PHARMACEUTICALS INC /NV/",
@@ -8656,28 +8679,26 @@
   },
   "checked": "2026-10-19T20:35:37.574305+00:00",
   "sec_seen": [
-   "0001123292-26-001413",
    "0001193125-26-425368",
    "0001456817-26-000017",
    "0001685640-26-000006",
-   "0001104659-26-116933",
-   "0001968281-26-000027",
-   "0001193125-26-425359",
-   "0001398344-26-018404",
-   "0001123292-26-001415",
+   "0000950103-26-015811",
    "0002040321-26-000005",
    "0000038777-26-000268",
-   "0001123292-26-001412",
-   "0001193125-26-425358",
+   "0001628280-26-066340",
+   "0002045482-26-000010",
+   "0001998460-26-000016",
    "0001193125-26-425363",
-   "0001865525-26-000030",
+   "0001616707-26-000176",
    "0001627893-26-000014",
-   "0001123292-26-001411",
+   "0000950103-26-015810",
+   "0001225208-26-008445",
    "0001736979-26-000023",
-   "0001628280-26-066337",
    "0001510281-26-000355",
-   "0001123292-26-001414",
-   "0001741453-26-000008"
+   "0000885639-26-000182",
+   "0000885639-26-000180",
+   "0001193125-26-425377",
+   "0000105634-26-000125"
   ],
   "errors": {}
  }
