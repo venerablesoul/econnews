@@ -526,7 +526,9 @@
   "ed1aa4feb5ddcb6f": "2026-10-19T16:35:37.598326+00:00",
   "0209d0b3f2edc434": "2026-10-19T16:40:37.623294+00:00",
   "76bf0acd2bb37b74": "2026-10-19T16:40:37.623294+00:00",
-  "c565f2b05edeee08": "2026-10-19T16:45:37.605434+00:00"
+  "c565f2b05edeee08": "2026-10-19T16:45:37.605434+00:00",
+  "0b503e5461d6eb35": "2026-10-19T16:50:37.618169+00:00",
+  "f201afddd6ad24ca": "2026-10-19T16:50:37.618169+00:00"
  },
  "recent": [
   {
@@ -4318,6 +4320,37 @@
    "tags": [
     "markets",
     "Russia"
+   ]
+  },
+  {
+   "title": "Treasuries Fall as Tech Shares Rebound, Weakening Haven Demand",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-19/treasuries-fall-as-tech-shares-rebound-weakening-haven-demand",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-19T16:50:37.618169+00:00",
+   "title_ru": "Казначейские облигации падают на фоне восстановления акций технологических компаний и ослабления спроса на активы-убежища",
+   "lead": "Treasuries fell as a rebound in US technology shares sapped haven demand for US government debt.",
+   "lead_ru": "Казначейские облигации упали, поскольку восстановление американских технологических акций подорвало спрос на государственные долги США.",
+   "tags": [
+    "bonds",
+    "markets"
+   ]
+  },
+  {
+   "title": "Avis Budget (CAR) Stock Crashes as 600% Short Squeeze Rally Fully Unwinds",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-19/avis-budget-car-stock-crashes-as-600-short-squeeze-rally-fully-unwinds",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-19T16:50:37.618169+00:00",
+   "title_ru": "Акции Avis Budget (CAR) рухнули, поскольку рост доли коротких продаж на 600% полностью завершился",
+   "lead": "Shares of Avis Budget Group Inc. have crashed back to earth, ending a chapter that put bearish investors through a punishing short squeeze.",
+   "lead_ru": "Акции Avis Budget Group Inc. рухнули обратно на землю, завершив главу, в которой медвежьим инвесторам пришлось пережить суровое короткое сжатие.",
+   "tags": [
+    "markets"
    ]
   }
  ],
@@ -8327,13 +8360,9 @@
   },
   "checked": "2026-10-19T16:20:37.658721+00:00",
   "sec_seen": [
-   "0001519822-26-000011",
    "0002016329-26-000010",
-   "0001519609-26-000011",
    "0002005206-26-000007",
    "0002038741-26-000009",
-   "0001965214-26-000008",
-   "0002071271-26-000017",
    "0002005212-26-000007",
    "0001519680-26-000007",
    "0001703510-26-000011",
