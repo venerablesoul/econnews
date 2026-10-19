@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "a713a3864ecdb5c5": "2026-10-16T17:49:55.643037+00:00",
   "cb9d8ca2d514845f": "2026-10-16T18:04:55.657033+00:00",
   "f54fe74900e57c52": "2026-10-16T18:04:55.657033+00:00",
   "18fc2fc6c5542fc8": "2026-10-16T18:04:55.657033+00:00",
@@ -531,24 +530,12 @@
   "f23795856bd59946": "2026-10-19T17:35:37.692688+00:00",
   "b2ef6cbd511e621a": "2026-10-19T17:45:37.635474+00:00",
   "7a207ec99ef239eb": "2026-10-19T17:45:37.635474+00:00",
-  "9d3d900f12ab072e": "2026-10-19T17:45:37.635474+00:00"
+  "9d3d900f12ab072e": "2026-10-19T17:45:37.635474+00:00",
+  "68e0a36c4fe143ca": "2026-10-19T17:50:37.645118+00:00",
+  "0136d7aa5a7a19be": "2026-10-19T17:55:37.592105+00:00",
+  "bd6d68a95af40f58": "2026-10-19T17:55:37.592105+00:00"
  },
  "recent": [
-  {
-   "title": "Mortgage Bond Sales Put on Hold as Investors Demand More Yield",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-16/mortgage-bond-sales-put-on-hold-as-investors-demand-more-yield",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-16T17:49:55.643037+00:00",
-   "title_ru": "Продажи ипотечных облигаций приостановлены, поскольку инвесторы требуют большей доходности",
-   "lead": "A growing list of mortgage lenders is holding off on offerings of bonds backed by home and commercial-property loans as investors demand more compensation to take on the risk amid growing turbulence in rates markets.",
-   "lead_ru": "Растущий список ипотечных кредиторов воздерживается от предложений облигаций, обеспеченных кредитами на жилье и коммерческую недвижимость, поскольку инвесторы требуют большей компенсации, чтобы взять на себя риск на фоне растущей турбулентности на рынках ставок.",
-   "tags": [
-    "bonds"
-   ]
-  },
   {
    "title": "European shares close out best week since June as earnings soften blow from tech selloff",
    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOa1lsVE9lQzRmN0pzeFRqTUcyTFN0a3ZfNDh6Zk9MdU9hYUFXSnIzZzFINmJOd0pCbFcxaTV6VnU2QnRfazFpR1lSNHdEMlB4NHJ6RDZOVmhlZVkwZ0hPbEJoVlBrOUpYcF81YUJTYjIyRTdhNE5mNzhUeExmOS1HNDliT3Z6MEYxX2t2OVVSeDJJLVlWM0dJa3dqZUVKOTBIVmsxVlAwZEgyM3lvT2VUUlJiRkFhQi13OHBmRA?oc=5",
@@ -4367,6 +4354,32 @@
    ],
    "score": 1,
    "ts": "2026-10-19T17:45:37.635474+00:00"
+  },
+  {
+   "title": "Merz Says Quick Decision Can Be Reached on ECB Jobs If Needed",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-19/merz-says-quick-decision-can-be-reached-on-ecb-jobs-if-needed",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-19T17:55:37.592105+00:00",
+   "title_ru": "Мерц говорит, что в случае необходимости можно принять быстрое решение по вопросам работы ЕЦБ",
+   "lead": "German Chancellor Friedrich Merz said a rapid solution can be found to senior vacancies at the European Central Bank that are likely to include President Christine Lagarde.",
+   "lead_ru": "Канцлер Германии Фридрих Мерц заявил, что можно быстро найти решение проблемы руководящих вакансий в Европейском центральном банке, в число которых, вероятно, войдет президент Кристин Лагард.",
+   "tags": [
+    "ECB",
+    "jobs"
+   ]
+  },
+  {
+   "title": "Wells Fargo Says Earnings Off to Weak Start as Most Fall Short",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-19/wells-fargo-says-earnings-off-to-weak-start-as-most-fall-short",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-19T17:55:37.592105+00:00",
+   "title_ru": "Wells Fargo заявляет, что прибыль на старте была слабой, поскольку большинство из них терпят неудачу"
   }
  ],
  "last_digest": "2026-10-18",
@@ -8392,11 +8405,10 @@
   "checked": "2026-10-19T17:25:37.574159+00:00",
   "sec_seen": [
    "0001196963-26-000004",
-   "0001213900-26-110586",
-   "0001213900-26-110590",
-   "0001213900-26-110589",
+   "0001531183-26-000022",
+   "0001104659-26-116819",
    "0001193125-26-425009",
-   "0001213900-26-110587"
+   "0001193125-26-425032"
   ],
   "errors": {}
  }
