@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "dd10af1619fb6d3a": "2026-10-16T14:34:26.425984+00:00",
-  "c527b11c46a546bc": "2026-10-16T14:34:26.425984+00:00",
   "ef0d36eef725d9f6": "2026-10-16T14:39:26.487316+00:00",
   "1f2a3318bf518de5": "2026-10-16T14:39:26.487316+00:00",
   "953a9fdda21f2089": "2026-10-16T14:44:26.533283+00:00",
@@ -538,30 +536,11 @@
   "0976cfa9e59b571a": "2026-10-19T14:06:15.610132+00:00",
   "a4e970a594e3bff3": "2026-10-19T14:06:15.610132+00:00",
   "937696a3c2816312": "2026-10-19T14:16:15.528073+00:00",
-  "066f0dacf8dda5d8": "2026-10-19T14:21:15.458886+00:00"
+  "066f0dacf8dda5d8": "2026-10-19T14:21:15.458886+00:00",
+  "9ebd6797e7adaa5e": "2026-10-19T14:36:15.480554+00:00",
+  "7a60389f377159e7": "2026-10-19T14:36:15.480554+00:00"
  },
  "recent": [
-  {
-   "title": "Netflix Brings in New Executive to Spur Growth",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-16/netflix-brings-in-new-executive-to-spur-growth-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T14:34:26.425984+00:00",
-   "title_ru": "Netflix привлекает нового руководителя для стимулирования роста",
-   "lead": "Netflix Inc. is replacing its chief creative officer with Peter Rice, a veteran TV and film executive, as it tries to spur growth and find new hits.",
-   "lead_ru": "Netflix Inc. заменяет своего главного креативного директора Питером Райсом, опытным руководителем телевидения и кино, поскольку она пытается стимулировать рост и находить новые хиты."
-  },
-  {
-   "title": "The stock market has already crashed: Why a Wall Street veteran says Nike is the ultimate turnaround trade.",
-   "link": "https://www.marketwatch.com/story/the-stock-market-has-already-crashed-why-a-wall-street-veteran-says-nike-is-the-ultimate-turnaround-trade-f4429eb3?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 2,
-   "ts": "2026-10-16T14:34:26.425984+00:00"
-  },
   {
    "title": "Treasuries Stall as Global Stocks Recovery Clips Haven Rally",
    "link": "https://www.bloomberg.com/news/articles/2026-10-16/treasuries-slide-as-global-stocks-recovery-clips-haven-rally",
@@ -4493,6 +4472,28 @@
    "tags": [
     "jobs"
    ]
+  },
+  {
+   "title": "India probing Pernod, Diageo Scotch imports under India-UK trade pact, sources say",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQSWpNTHh4Y3hMX2pBNlZjWTA5QnI2M194bWt6ZUpXLUJyZHZ6MEpBeFB3dUZBT2FlVng4b21FV2ZOM0tOR2htU0h2bWRtbVlyZ0w5TXFPZTRibUpjQlR4TjEydUZySXF6bllGSm5ENms2elREOXNhWnZJR2lxUjhNazhfeENCWjk1alQtT0dPaG5ka2hKN3JScU90RFA5dlFNaTFLWFREU2h0dC1aLUk1cU51SG9qMnRBaUtSMVdLMGN2SnJYU0Nv?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-19T14:36:15.480554+00:00",
+   "title_ru": "Индия проверяет импорт Pernod и Diageo Scotch в соответствии с торговым соглашением между Индией и Великобританией, сообщают источники"
+  },
+  {
+   "title": "Turkey Market Regulator Chief Steps Down During Fund Crisis",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-19/turkey-market-regulator-chief-steps-down-during-fund-crisis",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-19T14:36:15.480554+00:00",
+   "title_ru": "Глава регулятора рынка Турции ушел в отставку во время фондового кризиса",
+   "lead": "Turkey’s market regulator chief, Mahmut Sutcu, stepped down on Monday during the fallout of a fund crisis that’s upended the country’s markets.",
+   "lead_ru": "Глава регулятора рынка Турции Махмут Сутчу ушел в отставку в понедельник из-за последствий фондового кризиса, который перевернул рынки страны."
   }
  ],
  "last_digest": "2026-10-18",
@@ -8497,12 +8498,12 @@
    "0001708055-26-000080",
    "0001225208-26-008441",
    "0001708055-26-000078",
-   "0000108985-26-000086",
    "0001444157-26-000028",
    "0000108985-26-000088",
    "0001437749-26-032895",
    "0001768860-26-000012",
-   "0001193125-26-424765"
+   "0001193125-26-424765",
+   "0001193125-26-424798"
   ],
   "errors": {}
  }
