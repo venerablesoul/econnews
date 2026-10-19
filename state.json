@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "52d96e4583113f7d": "2026-10-16T16:44:26.423178+00:00",
-  "a927e57add6b24ec": "2026-10-16T16:44:26.423178+00:00",
   "fdf4639479d06f53": "2026-10-16T16:59:26.528949+00:00",
   "45dcb3c5e5648ea3": "2026-10-16T16:59:26.528949+00:00",
   "643580cbe1e33104": "2026-10-16T17:09:55.612673+00:00",
@@ -527,22 +525,10 @@
   "41cbee2f338cd788": "2026-10-19T16:35:37.598326+00:00",
   "ed1aa4feb5ddcb6f": "2026-10-19T16:35:37.598326+00:00",
   "0209d0b3f2edc434": "2026-10-19T16:40:37.623294+00:00",
-  "76bf0acd2bb37b74": "2026-10-19T16:40:37.623294+00:00"
+  "76bf0acd2bb37b74": "2026-10-19T16:40:37.623294+00:00",
+  "c565f2b05edeee08": "2026-10-19T16:45:37.605434+00:00"
  },
  "recent": [
-  {
-   "title": "Canadian steelmakers offset some US tariff pain with domestic demand",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOMldhLXNyRTVtNGxxVHN2Y2xISWVPeDRjXzlnRHBWQ2pNTFlVMktheFFGMkc4MnNpeHpMVllwVVJMUFVrZHRIOHpXMVE1M2RYN0p6S2tuQlJOdE1GMTctbmdibUVDaV93YWxaa01NbHpaZ2UxSVhGbU50YWRFN0xneERkdF84clprZWIwYUVaYU9nZmFHb1YzODI1cGRxTFhncS1GOW5oR0RtRUw1NGlQSGo0Zw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-16T16:44:26.423178+00:00",
-   "title_ru": "Канадские производители стали компенсировали некоторые проблемы с тарифами США за счет внутреннего спроса",
-   "tags": [
-    "tariffs"
-   ]
-  },
   {
    "title": "Here’s how the Fed should reveal its outlook for the economy",
    "link": "https://www.marketwatch.com/story/heres-how-the-fed-should-reveal-its-outlook-for-the-economy-79629f25?mod=mw_rss_topstories",
@@ -4317,6 +4303,22 @@
    ],
    "score": 1,
    "ts": "2026-10-19T16:40:37.623294+00:00"
+  },
+  {
+   "title": "В Минфине опровергли предложения по введению акциза на конфеты // Сазанов: Минфин не предлагал вводить акциз на конфеты",
+   "link": "https://www.kommersant.ru/doc/9042374",
+   "sources": [
+    "Kommersant"
+   ],
+   "score": 4,
+   "ts": "2026-10-19T16:45:37.605434+00:00",
+   "title_en": "The Ministry of Finance denied proposals to introduce an excise tax on sweets // Sazanov: The Ministry of Finance did not propose to introduce an excise tax on sweets",
+   "lead": "Министерство финансов России не готовило и не предлагало введения акциза на конфеты. Об этом заявил заместитель главы ведомства Алексей Сазанов в Душанбе, передает ТАСС.",
+   "lead_en": "The Russian Ministry of Finance did not prepare or propose the introduction of an excise tax on sweets. This was stated by Deputy Head of the Department Alexey Sazanov in Dushanbe, TASS reports.",
+   "tags": [
+    "markets",
+    "Russia"
+   ]
   }
  ],
  "last_digest": "2026-10-18",
@@ -8326,16 +8328,14 @@
   "checked": "2026-10-19T16:20:37.658721+00:00",
   "sec_seen": [
    "0001519822-26-000011",
-   "0001519609-26-000011",
    "0002016329-26-000010",
+   "0001519609-26-000011",
    "0002005206-26-000007",
    "0002038741-26-000009",
    "0001965214-26-000008",
    "0002071271-26-000017",
    "0002005212-26-000007",
-   "0001709430-26-000010",
    "0001519680-26-000007",
-   "0001805351-26-000008",
    "0001703510-26-000011",
    "0002135904-26-000006"
   ],
