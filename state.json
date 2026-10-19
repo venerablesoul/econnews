@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "0c8defc2fbf126fb": "2026-10-16T05:28:23.993121+00:00",
   "815b554b6c3a7923": "2026-10-16T05:33:23.971950+00:00",
   "2a59ef7e84c4c6dc": "2026-10-16T05:33:23.971950+00:00",
   "bca27301a9300e22": "2026-10-16T05:38:23.993208+00:00",
@@ -596,24 +595,10 @@
   "97542760a520b1af": "2026-10-19T05:15:44.896637+00:00",
   "3da0c76b26f53ba5": "2026-10-19T05:15:44.896637+00:00",
   "bd8cb49d039b42b3": "2026-10-19T05:15:44.896637+00:00",
-  "99c2483474b5dcb6": "2026-10-19T05:25:44.843761+00:00"
+  "99c2483474b5dcb6": "2026-10-19T05:25:44.843761+00:00",
+  "8b562c5b47e2b5b4": "2026-10-19T05:30:44.858019+00:00"
  },
  "recent": [
-  {
-   "title": "Ship-Fuel Squeeze Persists Despite More Hormuz Crude, Vitol Says",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-16/ship-fuel-squeeze-persists-despite-more-hormuz-crude-vitol-says",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-16T05:28:23.993121+00:00",
-   "title_ru": "Судовое топливное сжатие сохраняется, несмотря на увеличение добычи нефти в Ормузе, говорит Витол",
-   "lead": "Accelerating crude exports through the Strait of Hormuz aren’t translating into higher production of a dirty shipping fuel, according to a top Vitol Group executive, tightening supplies and sending prices soaring.",
-   "lead_ru": "По словам топ-менеджера Vitol Group, ускорение экспорта нефти через Ормузский пролив не приводит к увеличению производства грязного судового топлива, что приводит к сокращению поставок и росту цен.",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "MSCI freezes certain Turkey index changes, warns of potential market downgrade",
    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOcUZEVFFWaFBnQ2FpV24tTElBdW51dWh2cVNhS3I3NTNJcjFYa1dYNjRSOHlSR0phVDFZeldDb3dLLVdlOGdRbW1rWWt5TjVvZkNnN1R2MUE0LTRuU2VUZDljZlBaUmpwMml4MTNJam5VQ3FnSEEzN0NCQVNuTUFvbjdLVF9nRHdhUGMxd0hGak9DTHN4S3ZzS09fLUh2U1Rsd2t0T3A1OUszN1FlLWRmQWVDbkFfM0s3b19WOXdubmExclE?oc=5",
@@ -5216,6 +5201,21 @@
    "score": 6,
    "ts": "2026-10-19T04:55:44.970270+00:00",
    "title_ru": "Перспективы развития мировой экономики (октябрь 2026 г.) - Чистое кредитование/заимствование органов государственного управления"
+  },
+  {
+   "title": "Mullman: Houthi Attacks Impose Near-Term Costs on Saudi",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-19/mullman-houthi-attacks-impose-near-term-costs-on-saudi-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-19T05:30:44.858019+00:00",
+   "title_ru": "Маллман: атаки хуситов накладывают краткосрочные расходы на Саудовскую Аравию",
+   "lead": "Oil prices pulled back from a five-month high as traders weighed escalating tensions in the Middle East against surprisingly resilient supply.",
+   "lead_ru": "Цены на нефть отступили от пятимесячного максимума, поскольку трейдеры взвесили эскалацию напряженности на Ближнем Востоке против удивительно устойчивого предложения.",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-18",
@@ -9049,14 +9049,13 @@
   "sec_seen": [
    "0001213900-26-110436",
    "0001213900-26-110428",
-   "0000037785-26-000161",
    "0001437749-26-032866",
    "0002086163-26-000012",
    "0002152984-26-000004",
    "0001437749-26-032865",
    "0001193125-26-424368",
-   "0002154954-26-000004",
    "0001214659-26-013016",
+   "0002154954-26-000004",
    "0000037785-26-000158",
    "0001193125-26-424439",
    "0001193125-26-424414",
@@ -9077,6 +9076,7 @@
    "0002152990-26-000002",
    "0001225208-26-008439",
    "0000037785-26-000157",
+   "0000037785-26-000162",
    "0001193125-26-424412",
    "0001193125-26-424426",
    "0001477932-26-006312",
@@ -9094,7 +9094,7 @@
    "0000037785-26-000164",
    "0001509409-26-000012",
    "0001193125-26-424421",
-   "0000037785-26-000162"
+   "0000037785-26-000161"
   ],
   "errors": {}
  }
