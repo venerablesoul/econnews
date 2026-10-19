@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "3fc219ff8e2d9e57": "2026-10-16T11:13:52.053345+00:00",
-  "10b56a26574095a1": "2026-10-16T11:13:52.053345+00:00",
   "e746eb978a70ada7": "2026-10-16T11:18:52.090650+00:00",
   "96d49f684a005686": "2026-10-16T11:18:52.090650+00:00",
   "4c75f1eee9872259": "2026-10-16T11:28:52.043369+00:00",
@@ -581,24 +579,12 @@
   "c48d5c8f751f88c5": "2026-10-19T11:01:15.479588+00:00",
   "961c489488f5420d": "2026-10-19T11:06:15.435355+00:00",
   "c4635721b251bb6f": "2026-10-19T11:06:15.435355+00:00",
-  "de747fc9857de2af": "2026-10-19T11:11:15.425025+00:00"
+  "de747fc9857de2af": "2026-10-19T11:11:15.425025+00:00",
+  "7266431e451a35c4": "2026-10-19T11:16:15.425404+00:00",
+  "82951c4c5bc89e81": "2026-10-19T11:16:15.425404+00:00",
+  "05ce7735c3baa91d": "2026-10-19T11:16:15.425404+00:00"
  },
  "recent": [
-  {
-   "title": "Absent Bessent Can’t Keep Spotlight Off US at IMF",
-   "link": "https://www.bloomberg.com/news/newsletters/2026-10-16/absent-bessent-can-t-keep-spotlight-off-us-at-imf",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-16T11:13:52.053345+00:00",
-   "title_ru": "Отсутствие Бессента не может отвлечь внимание США в МВФ",
-   "lead": "‘Bond yields, bond yields, bond yields’ is how one IMF attendee described chatter in Bangkok.",
-   "lead_ru": "«Доходность облигаций, доходность облигаций, доходность облигаций» — так описал болтовню в Бангкоке один из участников МВФ.",
-   "tags": [
-    "bonds"
-   ]
-  },
   {
    "title": "Turkey’s Fast-Growing Corporate Bond Market Grapples With Funds Crisis Fallout",
    "link": "https://www.bloomberg.com/news/articles/2026-10-16/turkey-s-fast-growing-corporate-bond-market-grapples-with-funds-crisis-fallout",
@@ -5029,6 +5015,21 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Iran’s Main Oil Terminals Remain Empty as US Blockade Bites",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-19/iran-s-main-oil-terminals-remain-empty-as-us-blockade-bites",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-19T11:16:15.425404+00:00",
+   "title_ru": "Основные нефтяные терминалы Ирана остаются пустыми, поскольку США блокируют укусы",
+   "lead": "Iran’s main oil-loading terminals have remained empty for weeks, adding to signs that a US naval blockade of the country is throttling Tehran’s exports.",
+   "lead_ru": "Основные нефтеналивные терминалы Ирана остаются пустыми в течение нескольких недель, что свидетельствует о том, что военно-морская блокада США ограничивает экспорт Тегерана.",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-18",
@@ -6956,6 +6957,22 @@
     "date": "2026-10-16",
     "disclosed": "2026-10-19",
     "link": "https://www.sec.gov/Archives/edgar/data/1900445/000190044526000006/0001900445-26-000006-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "448e248054348020",
+    "ticker": "APLD",
+    "company": "Applied Digital Corp.",
+    "who": "Wes Cummins",
+    "role": "CEO",
+    "type": "buy",
+    "value": 1006686,
+    "shares": 55803,
+    "price": 18.04,
+    "plan": false,
+    "date": "2026-10-16",
+    "disclosed": "2026-10-19",
+    "link": "https://www.sec.gov/Archives/edgar/data/1391935/000139193526000009/0001391935-26-000009-index.htm"
    },
    {
     "src": "sec",
@@ -8938,6 +8955,7 @@
    "0001213900-26-110434",
    "0001801661-26-000123",
    "0001193125-26-424439",
+   "0001391935-26-000009",
    "0000950103-26-015754",
    "0001193125-26-424421",
    "0001213900-26-110429"
