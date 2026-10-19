@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "620fa3163a4316b0": "2026-10-16T15:14:26.476551+00:00",
-  "2f961200984e2a95": "2026-10-16T15:14:26.476551+00:00",
   "78cb63095332026b": "2026-10-16T15:19:26.515410+00:00",
   "b165bdad24c2d021": "2026-10-16T15:34:26.556940+00:00",
   "1e6bd290617e7f71": "2026-10-16T15:44:26.481106+00:00",
@@ -532,19 +530,10 @@
   "5770bd8e0175ff1e": "2026-10-19T14:41:15.475558+00:00",
   "b063295ab5e8a54e": "2026-10-19T14:41:15.475558+00:00",
   "e04161eb5ba0b4b9": "2026-10-19T14:46:15.568812+00:00",
-  "97184458c54b3b27": "2026-10-19T14:51:15.500503+00:00"
+  "97184458c54b3b27": "2026-10-19T14:51:15.500503+00:00",
+  "e692b59a582582d6": "2026-10-19T15:16:15.563310+00:00"
  },
  "recent": [
-  {
-   "title": "Prices for gasoline increased 34.2 percent over the year ended September 2026",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNZmtNaFIta0tHYUZrRk5HS1hERXBQa3ZSVzJ1alRFTmZOQVVTUDVTQWlydEZWZ251RkF4bnJ0Z1EwaFB4X2xrR2o1R0w2MW04T3dTWXlHLVAwQ3hoaHdLU1B4Q05PVFFyeEZnUkl4VVlrMFJUcXhyYzNJcFpjSFZSTjF3TWlycHRBU1RvUENzMVZ2cDU2TVFnT1h0aGY1ZHhDU1JmbVVlS0J6TUUtRHBiWWVNeWdhUQ?oc=5",
-   "sources": [
-    "US Labor Statistics (BLS)"
-   ],
-   "score": 4,
-   "ts": "2026-10-16T15:14:26.476551+00:00",
-   "title_ru": "Цены на бензин выросли на 34,2 процента за год, закончившийся в сентябре 2026 года."
-  },
   {
    "title": "Why Tech’s AI Borrowing Binge Is Rattling Markets",
    "link": "https://www.bloomberg.com/news/articles/2026-10-16/why-tech-s-ai-borrowing-binge-is-rattling-markets",
@@ -4435,6 +4424,16 @@
    "tags": [
     "bonds"
    ]
+  },
+  {
+   "title": "Recognizing nuclear science occupations for Nuclear Science Week",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxORWdTek92Y095N25aLUFWRExBWVNiSW93d0hNUzBYMWt1dC1PUUNDUk9NRVpkbmVZSkozMThlWV9nazRfZDdGTVRtZkFkeVFFZDc3MHlnMC1FYXF2TWtZcWlSeGZXNnJ6UXdpZHBjVFc5ZEpGdm5fbVRzRVVFSjlyTTVESThNa0pSNE1scVRPSkwtVThLSFBpcEFwX21SMFpTWTRNMg?oc=5",
+   "sources": [
+    "US Labor Statistics (BLS)"
+   ],
+   "score": 4,
+   "ts": "2026-10-19T15:16:15.563310+00:00",
+   "title_ru": "Признание профессий в области ядерной науки на Неделе ядерной науки"
   }
  ],
  "last_digest": "2026-10-18",
@@ -8425,9 +8424,8 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-19T14:16:15.528073+00:00",
+  "checked": "2026-10-19T15:16:15.563310+00:00",
   "sec_seen": [
-   "0001437749-26-032895",
    "0001193125-26-424805",
    "0001193125-26-424798"
   ],
