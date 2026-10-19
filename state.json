@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "31effc6cbbf51316": "2026-10-16T18:44:55.703984+00:00",
   "e534ad0e949eeee0": "2026-10-16T18:49:55.621854+00:00",
   "927e3b0b79248eee": "2026-10-16T18:54:55.542320+00:00",
   "c20361c8e16dd884": "2026-10-16T18:59:55.635436+00:00",
@@ -526,7 +525,8 @@
   "96a620ab29368b9b": "2026-10-19T18:30:37.563984+00:00",
   "90e642875f228126": "2026-10-19T18:35:37.926782+00:00",
   "b6f98e8d2a15aa6f": "2026-10-19T18:35:37.926782+00:00",
-  "8715604258485543": "2026-10-19T18:40:37.989259+00:00"
+  "8715604258485543": "2026-10-19T18:40:37.989259+00:00",
+  "5b87b8f46d899b16": "2026-10-19T18:45:37.585131+00:00"
  },
  "recent": [
   {
@@ -4306,6 +4306,20 @@
    "title_ru": "S&P Global предупреждает, что у ведущих гипермасштабирующих компаний, вероятно, будет больше долгов, связанных с искусственным интеллектом, чем известно сейчас",
    "tags": [
     "markets"
+   ]
+  },
+  {
+   "title": "AI is driving inflation. The Fed's fix may hurt everyone else.",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBtTzZQeDFmeXdBaUhKWFF3OEd0OG44dEkxa0duMmNQSi1RTWtGVlhieXlsbm9ja1ljQzA5UGlYQnpBWV84SzA2V0lKX2M4Z05XcURPcTR6RVg5NE1DWGlfT1JyQUcyUllhampnV3FPMEs0M2ZFejRkS3BtT0hIUQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-19T18:45:37.585131+00:00",
+   "title_ru": "ИИ стимулирует инфляцию. Решение ФРС может навредить всем остальным.",
+   "tags": [
+    "Fed",
+    "inflation"
    ]
   }
  ],
