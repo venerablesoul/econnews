@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "a600e21498324279": "2026-10-16T10:33:52.022414+00:00",
-  "5dbc14cfcb2e591a": "2026-10-16T10:38:52.050591+00:00",
-  "f6aa99fc3f4e0864": "2026-10-16T10:38:52.050591+00:00",
   "6e4b725057f1295b": "2026-10-16T10:43:52.009474+00:00",
   "fbcd183efacb0964": "2026-10-16T10:48:52.044817+00:00",
   "2573f4a5d35aad8f": "2026-10-16T10:53:52.033584+00:00",
@@ -583,32 +580,11 @@
   "f335836d02483b14": "2026-10-19T10:26:15.439131+00:00",
   "dc6f3a277ac1237a": "2026-10-19T10:26:15.439131+00:00",
   "500fefd6af6adbd7": "2026-10-19T10:26:15.439131+00:00",
-  "31dd18c51f0a53c0": "2026-10-19T10:31:15.426739+00:00"
+  "31dd18c51f0a53c0": "2026-10-19T10:31:15.426739+00:00",
+  "167a06db614d6306": "2026-10-19T10:36:15.425567+00:00",
+  "413826b97fd737d6": "2026-10-19T10:41:15.500913+00:00"
  },
  "recent": [
-  {
-   "title": "Earnings, an election and an MSCI headache",
-   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNWXNOV1lOOVZ1RFdoQ21GQ3VQcUJ0Z2ZoWFRPa2dvb3luRlBlNms3R0R5S0ZwMFk5M1RPSzJReGwyaDQ1T3doYUNjWm1ia1EtRzc2MUdlcHJqalg0QV9KdEJFUGI2WTZOOXlaT3BHWTRHU28wNFNEeGJSMzdtb0MzWEVaYmJFc1UtM012OA?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T10:33:52.022414+00:00",
-   "title_ru": "Доходы, выборы и головная боль MSCI"
-  },
-  {
-   "title": "Sterling set for third weekly rise against euro, hits 3-week high vs dollar",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPVU5SVzFTSk9Hd2RpR3VCc2lINWtMc1QyUTB0QmFfbW12WEt3aktMU2p3ZUlMbnN5MGNVbS1zY1pTUEc5c0Qzd1JodGcwNnBzOWhNSHhjcVlLTm9tNUVDQVBCVXZ5clNCT1pscnVwV2hVZmJOc2lUeFFFbzNDWU93U2kwSkdGdDRCNnBqYkpIcTYydmx2UkJYWjltV1plLVZRcTctdFB2MU5zdGlETXN1SW43ZHc4UQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-16T10:38:52.050591+00:00",
-   "title_ru": "Стерлинг растет по отношению к евро третью неделю, достигнув трехнедельного максимума по отношению к доллару",
-   "tags": [
-    "dollar"
-   ]
-  },
   {
    "title": "Carlyle Buys $7.7 Billion in Consumer Loans as Truist Revamps",
    "link": "https://www.bloomberg.com/news/articles/2026-10-16/carlyle-buys-7-7-billion-in-consumer-loans-as-truist-revamps",
@@ -5065,6 +5041,22 @@
    "ts": "2026-10-19T10:31:15.426739+00:00",
    "title_ru": "Маск заявил, что подарит акции SpaceX «каждому ребенку в Америке»",
    "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "French Stocks and Bonds Retreat as Government Comes Under Pressure",
+   "link": "https://www.bloomberg.com/news/newsletters/2026-10-19/french-stocks-and-bonds-retreat-as-government-comes-under-pressure",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-19T10:41:15.500913+00:00",
+   "title_ru": "Французские акции и облигации снижаются, поскольку правительство оказывается под давлением",
+   "lead": "A mountain of debt and a budget deficit among the largest in the euro area mean France cannot simply increase spending to appease the public.",
+   "lead_ru": "Гора долгов и дефицит бюджета, один из крупнейших в зоне евро, означают, что Франция не может просто увеличить расходы, чтобы успокоить общественность.",
+   "tags": [
+    "bonds",
     "markets"
    ]
   }
