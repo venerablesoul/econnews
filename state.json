@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e2f4ca3e21cab0da": "2026-10-16T01:33:24.059622+00:00",
   "8d2bf42d520bf16d": "2026-10-16T01:38:24.051191+00:00",
   "7fc39e3e26463af5": "2026-10-16T01:48:24.035950+00:00",
   "70a47a740b7d4a19": "2026-10-16T01:53:23.987743+00:00",
@@ -581,7 +580,11 @@
   "41baa953c9754c92": "2026-10-19T01:20:13.688421+00:00",
   "223c55f43fd7bc3d": "2026-10-19T01:20:13.688421+00:00",
   "3543a35d1e98399e": "2026-10-19T01:25:13.664222+00:00",
-  "7882d193806473c0": "2026-10-19T01:30:13.718349+00:00"
+  "7882d193806473c0": "2026-10-19T01:30:13.718349+00:00",
+  "8aa394811fff650a": "2026-10-19T01:35:13.733437+00:00",
+  "59645d5fdd38fbd9": "2026-10-19T01:35:13.733437+00:00",
+  "47ee7d1d1a74ce7e": "2026-10-19T01:35:13.733437+00:00",
+  "27a8abe91d5e84ef": "2026-10-19T01:35:13.733437+00:00"
  },
  "recent": [
   {
@@ -5327,6 +5330,49 @@
    "tags": [
     "jobs"
    ]
+  },
+  {
+   "title": "New Zealand’s Trade Deficit With China Widens on EV Imports",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-19/new-zealand-s-trade-deficit-with-china-widens-on-ev-imports",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-19T01:35:13.733437+00:00",
+   "title_ru": "Торговый дефицит Новой Зеландии с Китаем расширяется за счет импорта электромобилей",
+   "lead": "New Zealand’s trade deficit with China widened in the 12 months through September amid a surge in imports of electric vehicles and mobile phones.",
+   "lead_ru": "Дефицит торгового баланса Новой Зеландии с Китаем увеличился за 12 месяцев до сентября на фоне всплеска импорта электромобилей и мобильных телефонов.",
+   "tags": [
+    "China"
+   ]
+  },
+  {
+   "title": "ECB’s Sleijpen Says Window Is Closing to Limit Warming Impact",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-19/ecb-s-sleijpen-says-window-is-closing-to-limit-warming-impact",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-19T01:35:13.733437+00:00",
+   "title_ru": "Слейпен из ЕЦБ говорит, что окно закрывается, чтобы ограничить влияние потепления",
+   "lead": "European Central Bank Governing Council member Olaf Sleijpen said that the chance to limit global warming to the limit envisaged by the Paris Agreement is almost spent.",
+   "lead_ru": "Член Совета управляющих Европейского центрального банка Олаф Слейпен заявил, что шанс ограничить глобальное потепление до предела, предусмотренного Парижским соглашением, почти израсходован.",
+   "tags": [
+    "ECB"
+   ]
+  },
+  {
+   "title": "Australia's Cleanaway agrees to $6.5 billion EQT takeover, shares surge",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQZ3BnTkYwbTF0X3R2ZUpDMy00Tk9ITWR6RjZlODdWWkdhQ0t5eVh1NWdlZmFxWVluT3hvSUZ4cHhJaTR1WEtZdU5NWEYtTk1rNVVvWU0xbXp2YjQ5ejliaHUwSEFYSDBocmc0X3lmNUN2SUVscVFSNF9XVF83VkVrVzVGdHhTQzA3dzhPU2liT1REY3dteWFaUENGWDRDMnBlZzltcTdzeFZ0T2dCUmdNRFowZEdmdjZNRl9veg?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-19T01:35:13.733437+00:00",
+   "title_ru": "Австралийская Cleanaway соглашается на поглощение EQT на $ 6,5 млрд, рост акций",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-18",
@@ -9167,9 +9213,9 @@
    "0001213900-26-110401",
    "0000037785-26-000164",
    "0001214659-26-013018",
-   "0000037785-26-000163",
-   "0001193125-26-424368",
    "0001646382-26-000023",
+   "0001193125-26-424368",
+   "0000037785-26-000163",
    "0001213900-26-110428",
    "0001213900-26-110436",
    "0001104659-26-116675",
