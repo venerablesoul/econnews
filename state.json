@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "7496a9925710aa7b": "2026-10-16T09:33:52.089024+00:00",
   "395cfcd2470e9219": "2026-10-16T09:38:52.038387+00:00",
   "b73bb0973b0c25fa": "2026-10-16T09:38:52.038387+00:00",
   "c734cf11fe0a3fe4": "2026-10-16T09:43:52.034981+00:00",
@@ -582,19 +581,11 @@
   "94d8b1d32ee6ec47": "2026-10-19T09:30:45.038128+00:00",
   "d2218855992d9f8e": "2026-10-19T09:30:45.038128+00:00",
   "e310b7bf10f97670": "2026-10-19T09:30:45.038128+00:00",
-  "94cdf7dc79e0d3d9": "2026-10-19T09:30:45.038128+00:00"
+  "94cdf7dc79e0d3d9": "2026-10-19T09:30:45.038128+00:00",
+  "fd7bef228b9c35d6": "2026-10-19T09:35:44.855402+00:00",
+  "d84177728cd18893": "2026-10-19T09:35:44.855402+00:00"
  },
  "recent": [
-  {
-   "title": "Doctors and Lawyers Are Joining AI’s $400-an-Hour Gig Economy",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNckZWSnVtMHFLWUJWZXhicy1QWEtCMHM1R21ETVNlYjdLSDVsaUFzbVpIQThhS2hlU2doR3FnZmRydklzdXI2X2J1dHNXV2xqNUtpOU8yMmFhdGEyNTFlOTlRTTgwbmJfaWV1N3lSYXBQSFk3QlU4T0VyTC1QYV9aWU02dHZUQXBXdGx2UlRMX1dvTThVYTU3NEI4QThkaDVCeFo5V2Y2UFQ4RzRwV3R1d2Jn?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T09:33:52.089024+00:00",
-   "title_ru": "Врачи и юристы присоединяются к экономике искусственного интеллекта с оплатой 400 долларов в час"
-  },
   {
    "title": "Ship attack reports near Hormuz reach record high as oil exports slow",
    "link": "https://www.bbc.co.uk/news/articles/cmde8dpg8g0no?at_medium=RSS&at_campaign=rss",
@@ -5137,6 +5128,31 @@
    "score": 3,
    "ts": "2026-10-19T09:30:45.038128+00:00",
    "title_ru": "Регулятор Гонконга прогнозирует рост листинга молодых развивающихся компаний"
+  },
+  {
+   "title": "South Africa’s Business Mood Steadies Despite Ongoing Iran War",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-19/south-africa-s-business-mood-steadies-despite-ongoing-iran-war",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-19T09:35:44.855402+00:00",
+   "title_ru": "Деловые настроения в ЮАР стабилизировались, несмотря на продолжающуюся войну с Ираном",
+   "lead": "South African business sentiment steadied in September, underpinned by high precious-metal prices and a pickup in tourism and car sales, though inflationary pressures from high oil prices remain a concern.",
+   "lead_ru": "В сентябре деловые настроения в Южной Африке стабилизировались, чему способствовали высокие цены на драгоценные металлы и рост туризма и продаж автомобилей, хотя инфляционное давление из-за высоких цен на нефть по-прежнему вызывает беспокойство.",
+   "tags": [
+    "inflation",
+    "oil"
+   ]
+  },
+  {
+   "title": "France and the U.S. share the same debt trap. Only one has a global lifeline.",
+   "link": "https://www.marketwatch.com/story/france-and-the-u-s-share-the-same-debt-trap-only-one-has-a-global-lifeline-3ae61b42?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-19T09:35:44.855402+00:00"
   }
  ],
  "last_digest": "2026-10-18",
@@ -8971,13 +8987,14 @@
   "sec_seen": [
    "0001213900-26-110436",
    "0001213900-26-110428",
+   "0000037785-26-000161",
    "0001437749-26-032866",
    "0002086163-26-000012",
    "0002152984-26-000004",
    "0001437749-26-032865",
    "0001193125-26-424368",
-   "0001214659-26-013016",
    "0002154954-26-000004",
+   "0001214659-26-013016",
    "0000037785-26-000158",
    "0001193125-26-424439",
    "0001193125-26-424414",
@@ -8998,7 +9015,6 @@
    "0002152990-26-000002",
    "0001225208-26-008439",
    "0000037785-26-000157",
-   "0000037785-26-000162",
    "0001193125-26-424412",
    "0001193125-26-424426",
    "0001477932-26-006312",
@@ -9016,7 +9032,7 @@
    "0000037785-26-000164",
    "0001509409-26-000012",
    "0001193125-26-424421",
-   "0000037785-26-000161"
+   "0000037785-26-000162"
   ],
   "errors": {}
  }
