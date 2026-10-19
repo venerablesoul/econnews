@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "d82838bd055dadfb": "2026-10-16T06:18:52.067875+00:00",
-  "4e9e6b5d0672c5d1": "2026-10-16T06:18:52.067875+00:00",
-  "e1284df873d52cb3": "2026-10-16T06:18:52.067875+00:00",
   "c3873567057162a6": "2026-10-16T06:23:52.089418+00:00",
   "3f34c38ed7912c10": "2026-10-16T06:28:52.070202+00:00",
   "e4a941bab398ba44": "2026-10-16T06:28:52.070202+00:00",
@@ -587,19 +584,11 @@
   "69afe8bb3edd9dc9": "2026-10-19T06:05:44.844086+00:00",
   "06e3a3f2dd08d738": "2026-10-19T06:10:44.914783+00:00",
   "ecda752f29169f93": "2026-10-19T06:15:44.862697+00:00",
-  "9fd9bdd05f849345": "2026-10-19T06:15:44.862697+00:00"
+  "9fd9bdd05f849345": "2026-10-19T06:15:44.862697+00:00",
+  "5c3a62aa2571a4e8": "2026-10-19T06:20:44.876624+00:00",
+  "3b5b18e97f82d39e": "2026-10-19T06:20:44.876624+00:00"
  },
  "recent": [
-  {
-   "title": "Top economic adviser says Centerview remains Venezuela's financial adviser",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQQzhKbjZ6V3FHUlRfcGh6VGVrYTF4cUVZcjBkNnNQR05OZ1JVSmFGdk1PVkk1SGpCVlJfYXc3cVNpd3Zac2ZrMFBmcnlsamtsZlV4cmdpR192WDZheFAtaFFybU9MU3psWUUwblo0Zm9tOC1GUG9tem0tVXViTU1MTTRyVnUxZFMzLTRWYmJUeDBxNnBwZlhGLVI2d1pPWnNic3l1bmNCZU9hSlBPTjdnUWY5ZXN0YnUwci10UFgxcUktdw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T06:18:52.067875+00:00",
-   "title_ru": "Главный экономический советник говорит, что Centerview остается финансовым советником Венесуэлы"
-  },
   {
    "title": "John Healey set to raise bank taxes in the budget – business live",
    "link": "https://www.theguardian.com/business/live/2026/oct/16/john-healey-set-to-raise-bank-taxes-shares-profits-stock-markets-imf-latest-news-updates",
@@ -5168,6 +5157,19 @@
    "score": 3,
    "ts": "2026-10-19T06:15:44.862697+00:00",
    "title_ru": "Стимулирование добавленной стоимости полезных ископаемых в Африке интересует инвесторов, но сталкивается с энергетическими препятствиями"
+  },
+  {
+   "title": "India sugar stocks slide as government halts sugar diversion to ethanol",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOMlFmT0M5dG0wX2EyLUlXVzJHNlFjRjJGMUZ3dC1rUGpMbDFGRllfNlJlR2dTbEM0eV9sOUptaEZtTXYtS0RyQVozT2JkMjVxay0wT0hyT2c5Y09rZ3k0dHNfNFY4MVZaREVUdWk2eVVWTldqRGZqVVlmSkFnaks1UFBEMTNQSk9YV0NsQWZISGp0MjVNX1p1WE9oVmg4cDlXLW10ODN5WDVBVl9jQnZOUnZUVQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-19T06:20:44.876624+00:00",
+   "title_ru": "Запасы сахара в Индии снижаются, поскольку правительство прекращает перенаправление сахара на этанол",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-18",
@@ -9002,14 +9004,13 @@
   "sec_seen": [
    "0001213900-26-110436",
    "0001213900-26-110428",
-   "0000037785-26-000161",
    "0001437749-26-032866",
    "0002086163-26-000012",
    "0002152984-26-000004",
    "0001437749-26-032865",
    "0001193125-26-424368",
-   "0002154954-26-000004",
    "0001214659-26-013016",
+   "0002154954-26-000004",
    "0000037785-26-000158",
    "0001193125-26-424439",
    "0001193125-26-424414",
@@ -9030,6 +9031,7 @@
    "0002152990-26-000002",
    "0001225208-26-008439",
    "0000037785-26-000157",
+   "0000037785-26-000162",
    "0001193125-26-424412",
    "0001193125-26-424426",
    "0001477932-26-006312",
@@ -9047,7 +9049,7 @@
    "0000037785-26-000164",
    "0001509409-26-000012",
    "0001193125-26-424421",
-   "0000037785-26-000162"
+   "0000037785-26-000161"
   ],
   "errors": {}
  }
