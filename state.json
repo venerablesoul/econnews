@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "0e7ff21c3dd31995": "2026-10-16T02:23:24.023402+00:00",
   "bc789703137a88ff": "2026-10-16T02:28:23.977136+00:00",
   "ce2290b28f505873": "2026-10-16T02:33:23.962915+00:00",
   "98c1c1acee618366": "2026-10-16T02:38:24.034599+00:00",
@@ -589,19 +588,12 @@
   "bed3356286007ad7": "2026-10-19T02:10:13.716914+00:00",
   "54b71220f13840b3": "2026-10-19T02:10:13.716914+00:00",
   "b92653cdb9be3d57": "2026-10-19T02:20:13.778863+00:00",
-  "4604fb673d0bc567": "2026-10-19T02:20:13.778863+00:00"
+  "4604fb673d0bc567": "2026-10-19T02:20:13.778863+00:00",
+  "284e9ceee0477b5e": "2026-10-19T02:25:13.727454+00:00",
+  "e2efd17226796b8b": "2026-10-19T02:25:13.727454+00:00",
+  "ef19184afb48a587": "2026-10-19T02:25:13.727454+00:00"
  },
  "recent": [
-  {
-   "title": "Investors see outflow and FX risks as MSCI moves to downgrade Indonesia",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNMUlPWHcyMzdHSU9rZ3JoTDFpdlNqdENIdm9IX0tINXBMZEVtQnBJb2J5dTVDSHk3dXdnSXQ4YW5sN3VMNUpBS2UxR0g1OHRCRmxULUZzUldHRkoxcFJxeV81dkZZYlRnVlcyQTJwbVBJQ3B6aDU5LS1BcFp2a1doN04wS1J3M2Z6TWtfaEw4SktVYndoX2dJZ0EwMXhqNldZQ2REbXljT0J5TWVhOUN5cWFDMjZTblU?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-16T02:23:24.023402+00:00",
-   "title_ru": "Инвесторы видят отток и валютные риски по мере того, как MSCI переходит к понижению рейтинга Индонезии"
-  },
   {
    "title": "Bank of England's Bailey says second-round inflation pressures look subdued so far",
    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPTG5XUks5NHU3SnZ2Wk1EVklSZm9Od1ljNWFieUZmZTlibEZHOGJiSlBWWlVsMGttUi1pZjlkc2hfZjA4TEZaTGltSEJfMjdDUDJZZ2dLQ1hqX05TcklZd2J4dTFXQVA3V0p0ZG1uSWV2aFpGVnFrRUEza0hTUm9hdXVyMk1icGxLQk9LMUFrc3VTcF9RR1N3VHVxZjE4eld5dnM3TUxySGRfSXYzQV82R1haZUx6VDIwMi15YWJickk?oc=5",
@@ -5419,6 +5411,31 @@
    "tags": [
     "China"
    ]
+  },
+  {
+   "title": "Japan PM Takaichi Denies She’s Driving Weak Yen, High Rates",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-19/japan-pm-takaichi-denies-she-s-driving-weak-yen-high-rates",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-19T02:25:13.727454+00:00",
+   "title_ru": "Премьер-министр Японии Такаити отрицает, что она водит машину со слабыми иенами и высокими тарифами",
+   "lead": "Japanese Prime Minister Sanae Takaichi strongly denied the notion that she’s responsible for a weak yen and high interest rates.",
+   "lead_ru": "Премьер-министр Японии Санаэ Такаити категорически отрицает, что она ответственна за слабую иену и высокие процентные ставки.",
+   "tags": [
+    "rates"
+   ]
+  },
+  {
+   "title": "UK Economy: Trending News, Latest Updates, Analysis",
+   "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9vWVRCMzhEbkM4ZnRGdFVmTm5oOXVOSS1KdzI1bjRDa19WRlNLdWNBNXp5TFc5VTdoSUJfRlAySHNfYXBMZmdzcExSOENYMk94?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-19T02:25:13.727454+00:00",
+   "title_ru": "Экономика Великобритании: трендовые новости, последние обновления, анализ"
   }
  ],
  "last_digest": "2026-10-18",
@@ -9259,9 +9276,9 @@
    "0001213900-26-110401",
    "0000037785-26-000164",
    "0001214659-26-013018",
-   "0000037785-26-000163",
-   "0001193125-26-424368",
    "0001646382-26-000023",
+   "0001193125-26-424368",
+   "0000037785-26-000163",
    "0001213900-26-110428",
    "0001213900-26-110436",
    "0001104659-26-116675",
