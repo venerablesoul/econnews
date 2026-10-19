@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "fd312364b71e81e9": "2026-10-16T03:18:24.015777+00:00",
   "cc3650bac9f1c332": "2026-10-16T03:23:24.082170+00:00",
   "bd555117d089754f": "2026-10-16T03:23:24.082170+00:00",
   "0252cd2d6d34b473": "2026-10-16T03:23:24.082170+00:00",
@@ -597,25 +596,12 @@
   "0c0a4336b657230e": "2026-10-19T03:10:13.702155+00:00",
   "6ddad9a17fc2ea92": "2026-10-19T03:10:13.702155+00:00",
   "a362288c218b5dee": "2026-10-19T03:15:13.715784+00:00",
-  "222a05033e073f2f": "2026-10-19T03:15:13.715784+00:00"
+  "222a05033e073f2f": "2026-10-19T03:15:13.715784+00:00",
+  "ccf53b24bbf2ceec": "2026-10-19T03:20:13.643743+00:00",
+  "37509b87afa524d0": "2026-10-19T03:20:13.643743+00:00",
+  "58d06c2965cbfe1e": "2026-10-19T03:20:13.643743+00:00"
  },
  "recent": [
-  {
-   "title": "ECB’s Rehn Praises Measured Approach, Sees More Data in December",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-16/ecb-s-rehn-praises-measured-approach-sees-more-data-in-december",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-16T03:18:24.015777+00:00",
-   "title_ru": "Рен из ЕЦБ хвалит взвешенный подход, видит больше данных в декабре",
-   "lead": "European Central Bank Governing Council member Olli Rehn said policymakers will have additional information at the final rate decision of the year, while suggesting the current policy approach is working.",
-   "lead_ru": "Член Совета управляющих Европейского центрального банка Олли Рен сказал, что директивные органы будут иметь дополнительную информацию при принятии окончательного решения по ставке в этом году, в то же время предполагая, что текущий политический подход работает.",
-   "tags": [
-    "ECB",
-    "rates"
-   ]
-  },
   {
    "title": "BOE Chief Says Energy Shock Delays 2% Inflation Target",
    "link": "https://www.bloomberg.com/news/videos/2026-10-16/boe-chief-says-energy-shock-delays-2-inflation-target-video",
@@ -5411,6 +5397,31 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Gold edges higher on softer oil; Fed rate outlook in focus",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOcHBoaXFtRmhELVpxR3BOYzNDX3IzS1Y1UHZaZUlWRnBiY0Y3WWxwa19vSlVRUENyTGtpZVJFSEFSLW9hVWhEaktYRTVhVWpObTFOYThBVXNRX19VY0phaUJjSkdSMjFZQ19FUFZGMm44UnNpZkZGSnNCeUc2SFZ4c1ZZUU9lV2tiUk1odm44Wmc2WGVjSG5pYUU3QnE2NGYx?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-19T03:20:13.643743+00:00",
+   "title_ru": "Золото растет на фоне более мягкой нефти; прогноз ставки ФРС в фокусе",
+   "tags": [
+    "Fed",
+    "oil",
+    "gold"
+   ]
+  },
+  {
+   "title": "How is Labor Demand Changing as AI Improves? New Global Evidence",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQMlV6UEEzZVFUTU5JRUdTMk5uS19sYW1XTDIzbDRKVG5NTEFJNXhkWV9NS3BkRXhZRHExajB6OVRCOU5lWjd1dUNjU0ZwbjJCT3g3WkFtem0wcnZMblpzWVk3VEc4aHdrOGZfTUpwaEJibnM3Nl9tWlljX2ZHR3JDejdnbFlZTFY2dnBDQW8wMGMzUXFpc2paS1RpOUoxemdhaWdHN1FLVnZYZHVmZmtESWdIM3BkRWpnLUUzakJmZWZiLXRrMnc?oc=5",
+   "sources": [
+    "IMF"
+   ],
+   "score": 4,
+   "ts": "2026-10-19T03:20:13.643743+00:00",
+   "title_ru": "Как меняется спрос на рабочую силу по мере совершенствования ИИ? Новые глобальные данные"
   }
  ],
  "last_digest": "2026-10-18",
@@ -9251,9 +9262,9 @@
    "0001213900-26-110401",
    "0000037785-26-000164",
    "0001214659-26-013018",
-   "0001646382-26-000023",
-   "0001193125-26-424368",
    "0000037785-26-000163",
+   "0001193125-26-424368",
+   "0001646382-26-000023",
    "0001213900-26-110428",
    "0001213900-26-110436",
    "0001104659-26-116675",
