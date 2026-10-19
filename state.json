@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "9b689421c976fbc6": "2026-10-16T19:29:55.584481+00:00",
-  "88ec43a2f04239fe": "2026-10-16T19:29:55.584481+00:00",
   "85cfdcd057f487b0": "2026-10-16T19:39:55.588664+00:00",
   "36be421291ae172a": "2026-10-16T19:39:55.588664+00:00",
   "f109e3e2bc194d5f": "2026-10-16T19:44:55.627493+00:00",
@@ -527,22 +525,12 @@
   "3c0b366ce72dee92": "2026-10-19T19:05:37.645766+00:00",
   "afc8e91fc0054b8d": "2026-10-19T19:20:37.565564+00:00",
   "7e3c829c71c4f8e8": "2026-10-19T19:20:37.565564+00:00",
-  "5af9949f691c97e1": "2026-10-19T19:25:37.589096+00:00"
+  "5af9949f691c97e1": "2026-10-19T19:25:37.589096+00:00",
+  "9c588cc5ecc6b03b": "2026-10-19T19:35:37.531326+00:00",
+  "69110f8333ceed46": "2026-10-19T19:35:37.531326+00:00",
+  "e4c94d8c49a9f7e5": "2026-10-19T19:35:37.531326+00:00"
  },
  "recent": [
-  {
-   "title": "Longest Chip Selloff Since 2006 Mints Short Sellers $32 Billion",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPN00waURWRkZiczRHR3pQU0xRb3RNUnlrX2dzSkZHVlBHQk9md1RNLXF6X2pQdjA3ZHlHXzVBc2tUSG9Qc2xTYllwX25XUVd1R3FHR1dvOWZCdnlpc0VDTWdPTFRQN2pRY2NoT2w0YXlKdXdmSjE5RTI1VXVHaVp6SGRycXg4ei1QLV9wamRHMWFvYTR1MFREbDI3UkdYb1ZGOHZvUHd2amVoWVpROHlaUEhYUQ?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-16T19:29:55.584481+00:00",
-   "title_ru": "Самая продолжительная распродажа фишек с 2006 года позволила коротким продавцам получить 32 миллиарда долларов",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Microsoft wants to make AI cheaper. Will investors actually see the savings?",
    "link": "https://www.marketwatch.com/story/microsoft-wants-to-make-ai-cheaper-will-investors-actually-see-the-savings-0a3c3ac0?mod=mw_rss_topstories",
@@ -4370,6 +4358,31 @@
    "score": 4,
    "ts": "2026-10-19T19:25:37.589096+00:00",
    "title_ru": "Стресс-тестирование корпоративного сектора с учетом динамики эндогенного баланса, WP/26/209, октябрь 2026 г."
+  },
+  {
+   "title": "Bank of Canada Hike Bets Grow Among Economists, Traders",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-19/bank-of-canada-hike-bets-grow-among-economists-traders",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-19T19:35:37.531326+00:00",
+   "title_ru": "Среди экономистов и трейдеров растут ставки на повышение Банка Канады",
+   "lead": "More economists and traders expect the Bank of Canada to hike interest rates next week after the central bank’s latest surveys showed inflation expectations rising.",
+   "lead_ru": "Все больше экономистов и трейдеров ожидают, что Банк Канады повысит процентные ставки на следующей неделе после того, как последние исследования центрального банка показали рост инфляционных ожиданий.",
+   "tags": [
+    "rates",
+    "inflation"
+   ]
+  },
+  {
+   "title": "Why Elon Musk, Anthropic and other AI titans are giving away shares",
+   "link": "https://www.marketwatch.com/story/why-elon-musk-anthropic-and-other-ai-titans-are-giving-away-shares-a6709d24?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-19T19:35:37.531326+00:00"
   }
  ],
  "last_digest": "2026-10-19",
@@ -8393,9 +8406,9 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-19T18:25:37.769395+00:00",
+  "checked": "2026-10-19T19:30:37.618497+00:00",
   "sec_seen": [
-   "0001046257-26-000262"
+   "0001214659-26-013041"
   ],
   "errors": {}
  }
