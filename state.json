@@ -541,7 +541,9 @@
   "ada659b0447d666d": "2026-10-19T13:26:15.454264+00:00",
   "32c3e085cdc377e4": "2026-10-19T13:26:15.454264+00:00",
   "7cc916d135f1e789": "2026-10-19T13:46:15.487262+00:00",
-  "78ce690271973d1a": "2026-10-19T13:56:15.492290+00:00"
+  "78ce690271973d1a": "2026-10-19T13:56:15.492290+00:00",
+  "929a16ea27394d14": "2026-10-19T14:01:15.638403+00:00",
+  "ee20063ac6844173": "2026-10-19T14:01:15.638403+00:00"
  },
  "recent": [
   {
@@ -4560,6 +4562,21 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "US Natural Gas Inches Up on Colder Weather, Higher Flows to LNG",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-19/us-natural-gas-inches-up-on-colder-weather-higher-flows-to-lng",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-19T14:01:15.638403+00:00",
+   "title_ru": "Природный газ в США увеличивается на фоне более холодной погоды и увеличения потоков в СПГ",
+   "lead": "US natural gas futures increased slightly as forecasts shifted to show colder weather than previously expected across the eastern US, indicating higher demand for the furnace fuel as consumers crank up the heat.",
+   "lead_ru": "Фьючерсы на природный газ в США немного выросли, поскольку прогнозы изменились и показали более холодную погоду, чем ожидалось ранее, на востоке США, что указывает на более высокий спрос на печное топливо, поскольку потребители активизируют отопление.",
+   "tags": [
+    "gas"
+   ]
   }
  ],
  "last_digest": "2026-10-18",
@@ -8574,7 +8591,6 @@
    "0001193125-26-424765",
    "0000108985-26-000085",
    "0001192952-26-000008",
-   "0001493152-26-047506",
    "0001292814-26-004950"
   ],
   "errors": {}
