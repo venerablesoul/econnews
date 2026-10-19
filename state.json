@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "54305d5695678d38": "2026-10-16T12:24:26.427407+00:00",
-  "9a1e0ce26d2efea4": "2026-10-16T12:24:26.427407+00:00",
-  "61f04e6cafdc37c9": "2026-10-16T12:24:26.427407+00:00",
   "90b2fabb1b67bda4": "2026-10-16T12:34:26.411400+00:00",
   "a2ce8c3e1dbc4ca5": "2026-10-16T12:34:26.411400+00:00",
   "9d5a9fef06c5a32e": "2026-10-16T12:34:26.411400+00:00",
@@ -576,35 +573,6 @@
   "8f97c2389ea3d9bd": "2026-10-19T12:16:15.440013+00:00"
  },
  "recent": [
-  {
-   "title": "Kapteyn: Hot Inflation Raises Risk of Fed Hikes Beyond December",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-16/kapteyn-hot-inflation-risks-fed-hikes-beyond-december-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 8,
-   "ts": "2026-10-16T12:24:26.427407+00:00",
-   "title_ru": "Каптейн: Горячая инфляция повышает риск повышения ставок ФРС после декабря",
-   "lead": "UBS Chief Economist Arend Kapteyn discusses the Fed’s rate outlook following hotter inflation data, the impact of AI investment and borrowing on bond yields, and why he believes AI fundamentals remain strong despite the recent…",
-   "lead_ru": "Главный экономист UBS Аренд Каптейн обсуждает прогноз ФРС по ставкам после более горячих данных по инфляции, влияние инвестиций в ИИ и заимствований на доходность облигаций, а также почему, по его мнению, фундаментальные показатели ИИ остаются сильными, несмотря на недавние…",
-   "tags": [
-    "Fed",
-    "inflation",
-    "bonds"
-   ]
-  },
-  {
-   "title": "World Bank Sees Up to $5 Billion in Possible Loans to Venezuela",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-16/world-bank-sees-up-to-5-billion-in-possible-loans-to-venezuela",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T12:24:26.427407+00:00",
-   "title_ru": "Всемирный банк рассматривает возможные кредиты Венесуэле на сумму до 5 миллиардов долларов",
-   "lead": "The World Bank could loan Venezuela as much as $5 billion over the next two years, as the country resumes relations with the Washington-based lender, a top official said.",
-   "lead_ru": "Всемирный банк может предоставить Венесуэле кредит на сумму до 5 миллиардов долларов в течение следующих двух лет, поскольку страна возобновит отношения с кредитором, базирующимся в Вашингтоне, сообщил высокопоставленный чиновник."
-  },
   {
    "title": "The once-obscure tech at the heart of the green energy trade war",
    "link": "https://www.ft.com/content/bc221890-6718-4792-967c-9828e96f38af?syn-25a6b1a6=1",
@@ -8826,8 +8794,7 @@
    "0001801661-26-000123",
    "0001391935-26-000009",
    "0001493152-26-047506",
-   "0000950103-26-015754",
-   "0001213900-26-110429"
+   "0000950103-26-015754"
   ],
   "errors": {}
  }
