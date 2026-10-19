@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "3e3819d0176a8bf0": "2026-10-16T17:24:55.647049+00:00",
-  "cd15cb7f471be6a4": "2026-10-16T17:24:55.647049+00:00",
   "e04926ef6a28433b": "2026-10-16T17:29:55.568091+00:00",
   "d800290b51c193ba": "2026-10-16T17:29:55.568091+00:00",
   "7d5ffbb64838f701": "2026-10-16T17:34:55.663425+00:00",
@@ -527,34 +525,10 @@
   "273584fcb52c24be": "2026-10-19T17:05:37.951356+00:00",
   "c6971bfe8b4f4caa": "2026-10-19T17:15:37.580419+00:00",
   "9b4807e570c3cdf0": "2026-10-19T17:20:37.587292+00:00",
-  "f04e60139d74313f": "2026-10-19T17:20:37.587292+00:00"
+  "f04e60139d74313f": "2026-10-19T17:20:37.587292+00:00",
+  "31554e62df12b8bd": "2026-10-19T17:25:37.574159+00:00"
  },
  "recent": [
-  {
-   "title": "Big US Bank Shares Set for Worst Weekly Losing Streak Since 2008",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-16/big-us-bank-shares-set-for-worst-weekly-losing-streak-since-2008",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-16T17:24:55.647049+00:00",
-   "title_ru": "Акции крупных банков США переживают худшую недельную полосу падения с 2008 года",
-   "lead": "Big US bank shares are set to record their worst weekly losing streak since the 2008 Global Financial Crisis, after quarterly earnings didn’t do enough to lift sentiment for the ailing sector.",
-   "lead_ru": "Акции крупных банков США собираются зафиксировать худшую недельную полосу падения со времен мирового финансового кризиса 2008 года, после того как квартальные доходы не смогли поднять настроения в ослабленном секторе.",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "Trudy forecast to near Mexico's Pacific coast as major hurricane through the weekend",
-   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPeEE2eWszelJJRDBCMUQ4Z0lUWi15OWVxcklqY2RGM0dCYUl4MlBPNHowSTcwVGhpcWp5MHdSWktQbTdKTHNCRWNDVnRiNjFIVUR2S2FmRWlSYUt0akxFNmVoRDFORzBDQTB5Yk4wN3U2akxVeGpTZ3o0SXFDaGFUOERvcXNpR1lqQlQ1TzlVZjFwMWU0QzBlcGxqSXBTRDI3X0kwUnJTU0hsM0hDa2hJSDdQdU5FZ0hIWEtZdzNZaDg5akp3Yjdodw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T17:24:55.647049+00:00",
-   "title_ru": "Труди прогнозирует, что к тихоокеанскому побережью Мексики в выходные дни пройдет сильный ураган"
-  },
   {
    "title": "Families wait for answers after Nigerian military plane crash",
    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOX1MyRUZkdkpqZEtTbk1ndWpXMnVhT1dDX3duOE1LVG1feE1aeml2azRQVXhhRFBYc1Q5VFFocXFVbUJ2bXFzSC1EMFZDTzhFNFBtRnJoazdXSXlsNm55clJYRFpCWlpaa0thMWxseDlJLWdTbDdOT25rZVIzaFhuT1FTY202bEFXenZTUDM4SXg1LVdSSmhFQjY1ZWcybHBBUmlVM2s0cElNQQ?oc=5",
@@ -4332,6 +4306,18 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "CoreWeave Upgraded to Buy at Goldman on Overblown Debt Worries",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-19/coreweave-upgraded-to-buy-at-goldman-on-overblown-debt-worries",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-19T17:25:37.574159+00:00",
+   "title_ru": "CoreWeave повышен до покупки в Goldman из-за опасений по поводу раздутой задолженности",
+   "lead": "CoreWeave Inc. was upgraded to buy from neutral at Goldman Sachs, a move that represents a vote of confidence in the cloud-computing provider following a period of heavy volatility for the stock related to its debt.",
+   "lead_ru": "Рейтинг CoreWeave Inc. был повышен до нейтральной позиции в Goldman Sachs, что представляет собой вотум доверия поставщику облачных вычислений после периода сильной волатильности акций, связанного с его долгом."
   }
  ],
  "last_digest": "2026-10-18",
@@ -8338,12 +8324,12 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-19T16:20:37.658721+00:00",
+  "checked": "2026-10-19T17:25:37.574159+00:00",
   "sec_seen": [
    "0001225208-26-008442",
    "0001196963-26-000004",
-   "0001213900-26-110590",
    "0001213900-26-110586",
+   "0001213900-26-110590",
    "0001213900-26-110585",
    "0001213900-26-110589",
    "0001870078-26-000003",
