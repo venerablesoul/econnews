@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "b4ec47a37e263b54": "2026-10-16T20:54:55.623292+00:00",
-  "f19c3fd8ac75a9eb": "2026-10-16T20:54:55.623292+00:00",
   "f764c58c2470e157": "2026-10-16T21:04:55.607130+00:00",
   "60b5d9d4b0e3d4c5": "2026-10-16T21:04:55.607130+00:00",
   "5399886da2a91c60": "2026-10-16T21:04:55.607130+00:00",
@@ -519,24 +517,10 @@
   "05d0f91031e24727": "2026-10-19T19:50:37.611794+00:00",
   "260d3b7e3c9f34a1": "2026-10-19T20:05:37.821870+00:00",
   "d66686fab9134433": "2026-10-19T20:20:37.558433+00:00",
-  "9b9bdc9af8b8cf58": "2026-10-19T20:25:37.571212+00:00"
+  "9b9bdc9af8b8cf58": "2026-10-19T20:25:37.571212+00:00",
+  "0be5036fd2da260c": "2026-10-19T20:55:37.787783+00:00"
  },
  "recent": [
-  {
-   "title": "Foreign Holdings of US Treasuries Rise From Almost One-Year Low",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-16/foreign-holdings-of-us-treasuries-rise-from-almost-one-year-low",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T20:54:55.623292+00:00",
-   "title_ru": "Иностранные запасы казначейских облигаций США выросли с почти годового минимума",
-   "lead": "Foreign holdings of US Treasuries rose in August from the lowest level since October 2025, led by increases in the stockpiles of Canada and Belgium.",
-   "lead_ru": "Иностранные запасы казначейских облигаций США выросли в августе с самого низкого уровня с октября 2025 года, что обусловлено увеличением запасов Канады и Бельгии.",
-   "tags": [
-    "bonds"
-   ]
-  },
   {
    "title": "Don’t buy this dip: Several signs suggest there’s more pain ahead for tech stocks",
    "link": "https://www.marketwatch.com/story/dont-buy-this-dip-several-signs-suggest-theres-more-pain-ahead-for-tech-stocks-83f971d7?mod=mw_rss_topstories",
@@ -4319,6 +4303,23 @@
    "tags": [
     "oil",
     "gas"
+   ]
+  },
+  {
+   "title": "New Zealand’s Year-End Inflation Surge Points to More Rate Hikes",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-19/new-zealand-s-year-end-inflation-surge-points-to-more-rate-hikes",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 9,
+   "ts": "2026-10-19T20:55:37.787783+00:00",
+   "title_ru": "Всплеск инфляции в Новой Зеландии в конце года указывает на дальнейшее повышение ставок",
+   "lead": "New Zealand inflation likely eased slightly in the third quarter, but the respite is set to be short-lived as a weaker currency and surging oil prices drive an acceleration in the final three months of the year, building the case…",
+   "lead_ru": "Инфляция в Новой Зеландии, вероятно, немного снизилась в третьем квартале, но передышка будет недолгой, поскольку более слабая валюта и растущие цены на нефть приводят к ускорению в последние три месяца года, что усиливает ситуацию…",
+   "tags": [
+    "rates",
+    "inflation",
+    "oil"
    ]
   }
  ],
@@ -8585,30 +8586,23 @@
   },
   "checked": "2026-10-19T20:35:37.574305+00:00",
   "sec_seen": [
-   "0001193125-26-425328",
    "0002065340-26-000023",
-   "0000927653-26-000255",
+   "0001705110-26-000094",
    "0001753926-26-001963",
-   "0001628280-26-066331",
+   "0001808235-26-000008",
    "0001369304-26-000005",
    "0001628280-26-066333",
-   "0001291899-26-000006",
-   "0001227654-26-000080",
-   "0001193125-26-425327",
-   "0002107550-26-000004",
-   "0001659994-26-000007",
-   "0001227654-26-000081",
-   "0001809523-26-000018",
+   "0001212067-26-000024",
    "0002128469-26-000009",
-   "0001193125-26-425329",
    "0001672825-26-000009",
-   "0001227654-26-000079",
    "0001205945-26-000006",
    "0001699997-26-000005",
    "0001534094-26-000005",
+   "0001712360-26-000006",
+   "0001843113-26-000009",
    "0001123292-26-001405",
    "0001230604-26-000009",
-   "0001712360-26-000006",
+   "0001628280-26-066331",
    "0001628280-26-066323"
   ],
   "errors": {}
