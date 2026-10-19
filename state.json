@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "70363c9b200b07ab": "2026-10-16T15:04:26.780360+00:00",
-  "e53d94a7e836b695": "2026-10-16T15:04:26.780360+00:00",
-  "37e2fae8a58e8e2e": "2026-10-16T15:09:26.490991+00:00",
   "620fa3163a4316b0": "2026-10-16T15:14:26.476551+00:00",
   "2f961200984e2a95": "2026-10-16T15:14:26.476551+00:00",
   "78cb63095332026b": "2026-10-16T15:19:26.515410+00:00",
@@ -538,28 +535,6 @@
   "97184458c54b3b27": "2026-10-19T14:51:15.500503+00:00"
  },
  "recent": [
-  {
-   "title": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
-   "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm",
-   "sources": [
-    "Fed"
-   ],
-   "score": 5,
-   "ts": "2026-10-16T15:04:26.780360+00:00",
-   "title_ru": "Совет Федеральной резервной системы объявляет о прекращении принудительных мер в отношении Gardner Bancshares, Inc. и Small Business Bank",
-   "tags": [
-    "Fed"
-   ]
-  },
-  {
-   "title": "«Росатом» подписал первое в мире соглашение об экспорте плавучих АЭС",
-   "link": "https://www.rbc.ru/economics/16/10/2026/6ad231259a79474c39d1e089",
-   "sources": [
-    "RBC"
-   ],
-   "score": 1,
-   "ts": "2026-10-16T15:04:26.780360+00:00"
-  },
   {
    "title": "Prices for gasoline increased 34.2 percent over the year ended September 2026",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNZmtNaFIta0tHYUZrRk5HS1hERXBQa3ZSVzJ1alRFTmZOQVVTUDVTQWlydEZWZ251RkF4bnJ0Z1EwaFB4X2xrR2o1R0w2MW04T3dTWXlHLVAwQ3hoaHdLU1B4Q05PVFFyeEZnUkl4VVlrMFJUcXhyYzNJcFpjSFZSTjF3TWlycHRBU1RvUENzMVZ2cDU2TVFnT1h0aGY1ZHhDU1JmbVVlS0J6TUUtRHBiWWVNeWdhUQ?oc=5",
@@ -8454,9 +8429,6 @@
   "sec_seen": [
    "0001437749-26-032895",
    "0001193125-26-424805",
-   "0001225208-26-008441",
-   "0001437749-26-032891",
-   "0001437749-26-032893",
    "0001193125-26-424798"
   ],
   "errors": {}
