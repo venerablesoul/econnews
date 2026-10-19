@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "72ec0ab494d26ca6": "2026-10-16T11:08:52.052581+00:00",
-  "8d7c8cf8da274d14": "2026-10-16T11:08:52.052581+00:00",
-  "48da39e340ce15cf": "2026-10-16T11:08:52.052581+00:00",
   "3fc219ff8e2d9e57": "2026-10-16T11:13:52.053345+00:00",
   "10b56a26574095a1": "2026-10-16T11:13:52.053345+00:00",
   "e746eb978a70ada7": "2026-10-16T11:18:52.090650+00:00",
@@ -583,51 +580,10 @@
   "a8bbcab898826486": "2026-10-19T10:51:15.413067+00:00",
   "c48d5c8f751f88c5": "2026-10-19T11:01:15.479588+00:00",
   "961c489488f5420d": "2026-10-19T11:06:15.435355+00:00",
-  "c4635721b251bb6f": "2026-10-19T11:06:15.435355+00:00"
+  "c4635721b251bb6f": "2026-10-19T11:06:15.435355+00:00",
+  "de747fc9857de2af": "2026-10-19T11:11:15.425025+00:00"
  },
  "recent": [
-  {
-   "title": "BofA’s Hartnett Sees Investors Avoiding Risk on Fed, Midterms",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-16/bofa-s-hartnett-sees-investors-avoiding-risk-on-fed-midterms",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-16T11:08:52.052581+00:00",
-   "title_ru": "Хартнетт из BofA считает, что инвесторы избегают рисков на промежуточных отчетах ФРС",
-   "lead": "Risk aversion is set to dominate markets in coming weeks as investors seek shelter from higher interest rates and volatility around US midterm elections and the AI trade, according to Bank of America Corp.’s Michael Hartnett.",
-   "lead_ru": "По мнению Майкла Хартнетта из Bank of America Corp., в ближайшие недели на рынках будет доминировать неприятие риска, поскольку инвесторы ищут убежища от более высоких процентных ставок и волатильности вокруг промежуточных выборов в США и торговли искусственным интеллектом.",
-   "tags": [
-    "Fed",
-    "rates"
-   ]
-  },
-  {
-   "title": "Market Talk: 'Investors are looking to see if the numbers add up' in AI",
-   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE0yRGNmODVTMFRtQVBPWFNYS3A3ZUdRNGd5VkwtT1JseTJoX1dTNk51aVkwamYydjZwRG1lb0xzeHk0MWJWYkpRVVU3dmw0NlpZZFRNSGswMm1rdTFxN3JVanFzRk42LUhJQ0NBbnNnU2VkZElSWHpLWA?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-16T11:08:52.052581+00:00",
-   "title_ru": "Market Talk: «Инвесторы хотят увидеть, складываются ли цифры» в области искусственного интеллекта"
-  },
-  {
-   "title": "US-China Blame Game Over Global Economy Tilts in Beijing’s Favor",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-16/us-china-blame-game-over-global-economy-tilts-in-beijing-s-favor",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T11:08:52.052581+00:00",
-   "title_ru": "Американо-Китайская игра виновата в том, что глобальная экономика склоняется в пользу Пекина",
-   "lead": "At the last major summit, Scott Bessent worked hard to tag China as the cause of dangerous fault lines in the world economy. With the US Treasury chief absent from Bangkok this week, it was America and its allies in the spotlight.",
-   "lead_ru": "На последнем крупном саммите Скотт Бессент упорно работал над тем, чтобы назвать Китай причиной опасных линий разлома в мировой экономике. Поскольку глава Казначейства США на этой неделе отсутствовал в Бангкоке, в центре внимания оказались Америка и ее союзники.",
-   "tags": [
-    "bonds",
-    "China"
-   ]
-  },
   {
    "title": "Absent Bessent Can’t Keep Spotlight Off US at IMF",
    "link": "https://www.bloomberg.com/news/newsletters/2026-10-16/absent-bessent-can-t-keep-spotlight-off-us-at-imf",
@@ -5058,6 +5014,21 @@
    "tags": [
     "China"
    ]
+  },
+  {
+   "title": "Indonesia to Exclude Tightly Owned Stocks From Benchmark Index",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-19/indonesia-to-exclude-tightly-owned-stocks-from-benchmark-index",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-19T11:11:15.425025+00:00",
+   "title_ru": "Индонезия исключит акции, находящиеся в тесном владении, из эталонного индекса",
+   "lead": "Indonesia will remove stocks with concentrated ownership from its benchmark equities index, the latest effort to avert a possible downgrade of its market status by MSCI Inc.",
+   "lead_ru": "Индонезия исключит акции с концентрированным владением из своего эталонного индекса акций, что является последней попыткой предотвратить возможное снижение статуса рынка MSCI Inc.",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-18",
@@ -6970,6 +6941,22 @@
    }
   ],
   "insiders": [
+   {
+    "src": "sec",
+    "id": "e02e935959492ff3",
+    "ticker": "APLD",
+    "company": "Applied Digital Corp.",
+    "who": "Jason Gechen Zhang",
+    "role": "President",
+    "type": "buy",
+    "value": 5658000,
+    "shares": 300000,
+    "price": 18.86,
+    "plan": false,
+    "date": "2026-10-16",
+    "disclosed": "2026-10-19",
+    "link": "https://www.sec.gov/Archives/edgar/data/1900445/000190044526000006/0001900445-26-000006-index.htm"
+   },
    {
     "src": "sec",
     "id": "2ddfc0fab2269fee",
@@ -8920,7 +8907,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-19T10:06:17.864340+00:00",
+  "checked": "2026-10-19T11:11:15.425025+00:00",
   "sec_seen": [
    "0001233433-26-000008",
    "0001513845-26-000132",
@@ -8928,6 +8915,7 @@
    "0001437749-26-032866",
    "0001493152-26-047473",
    "0001573338-26-000021",
+   "0001900445-26-000006",
    "0001213900-26-110428",
    "0000950103-26-015756",
    "0001543262-26-000010",
@@ -8936,7 +8924,6 @@
    "0001214659-26-013018",
    "0001104659-26-116675",
    "0001193125-26-424426",
-   "0001214659-26-013017",
    "0001213900-26-110436",
    "0001493152-26-047486",
    "0001477932-26-006312",
