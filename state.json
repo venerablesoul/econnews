@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c28c1ff7400ce48f": "2026-10-16T03:13:23.983095+00:00",
   "fd312364b71e81e9": "2026-10-16T03:18:24.015777+00:00",
   "cc3650bac9f1c332": "2026-10-16T03:23:24.082170+00:00",
   "bd555117d089754f": "2026-10-16T03:23:24.082170+00:00",
@@ -596,21 +595,11 @@
   "76a3c274aa2c686e": "2026-10-19T03:00:13.704581+00:00",
   "841f6555711535ab": "2026-10-19T03:05:13.666811+00:00",
   "0c0a4336b657230e": "2026-10-19T03:10:13.702155+00:00",
-  "6ddad9a17fc2ea92": "2026-10-19T03:10:13.702155+00:00"
+  "6ddad9a17fc2ea92": "2026-10-19T03:10:13.702155+00:00",
+  "a362288c218b5dee": "2026-10-19T03:15:13.715784+00:00",
+  "222a05033e073f2f": "2026-10-19T03:15:13.715784+00:00"
  },
  "recent": [
-  {
-   "title": "India’s Rupee Rebound Comes With Growing Strains in FX Market",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-16/india-s-rupee-rebound-comes-with-growing-strains-in-fx-market",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T03:13:23.983095+00:00",
-   "title_ru": "Отскок индийской рупии сопровождается ростом напряженности на валютном рынке",
-   "lead": "The rupee’s rebound from near a record low, after the Reserve Bank of India mounted its most aggressive defense of the currency since 2013, has bought the currency some time but at a steep cost.",
-   "lead_ru": "Отскок рупии от рекордно низкого уровня после того, как Резервный банк Индии установил свою самую агрессивную защиту валюты с 2013 года, купил валюту некоторое время, но по крутой цене."
-  },
   {
    "title": "ECB’s Rehn Praises Measured Approach, Sees More Data in December",
    "link": "https://www.bloomberg.com/news/articles/2026-10-16/ecb-s-rehn-praises-measured-approach-sees-more-data-in-december",
@@ -5409,6 +5398,19 @@
    "tags": [
     "China"
    ]
+  },
+  {
+   "title": "Ampol shares slump as maintenance work overshadows strong refining margins",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNV0Rpb0dacldSOUZ3TG11d3VadnByc1JiamhHd1RwOUFNSTd6V29yN1FSVWtnaF9DT0V6VTFFOUFYQ2ZhZ0VsamgzVUZpQnZmbGlWWWdCc09lb1RDZ0stRU1VQzZuS3QzZjlGd3ducF9WclB0cndFYzBKcTdnRVZkYU5aZHBVZExDSmtQVEVXSWJ3N3hjNGNvT1NYR0N3VDAwWjVjaTdTS0NUaWt3WERoQ19NWTMxSlZnTFNFekVXeE0?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-19T03:15:13.715784+00:00",
+   "title_ru": "Падение акций Ampol, поскольку работы по техническому обслуживанию затмевают сильную маржу нефтепереработки",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-18",
@@ -9249,9 +9251,9 @@
    "0001213900-26-110401",
    "0000037785-26-000164",
    "0001214659-26-013018",
-   "0000037785-26-000163",
-   "0001193125-26-424368",
    "0001646382-26-000023",
+   "0001193125-26-424368",
+   "0000037785-26-000163",
    "0001213900-26-110428",
    "0001213900-26-110436",
    "0001104659-26-116675",
