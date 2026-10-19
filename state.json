@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c239e042370aa451": "2026-10-16T06:03:23.987338+00:00",
   "2dd539d95c908fae": "2026-10-16T06:08:23.991118+00:00",
   "41cbee2f338cd788": "2026-10-16T06:08:53.660958+00:00",
   "486c54fa916d5893": "2026-10-16T06:13:52.058409+00:00",
@@ -588,22 +587,10 @@
   "bd8cb49d039b42b3": "2026-10-19T05:15:44.896637+00:00",
   "99c2483474b5dcb6": "2026-10-19T05:25:44.843761+00:00",
   "8b562c5b47e2b5b4": "2026-10-19T05:30:44.858019+00:00",
-  "2bc3fea1b9410316": "2026-10-19T05:35:44.888347+00:00"
+  "2bc3fea1b9410316": "2026-10-19T05:35:44.888347+00:00",
+  "69afe8bb3edd9dc9": "2026-10-19T06:05:44.844086+00:00"
  },
  "recent": [
-  {
-   "title": "FTSE 100 Poised to Underperform as Stocks Rebound - Live",
-   "link": "https://www.bloomberg.com/news/live-blog/2026-10-16/ftse-100-live-updates-pound-bonds-gilts-fed-warsh-boe-bailey-eurozone-inflation-what-s-moving-uk-markets-right-now-markets-today-mvaju0t0",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T06:03:23.987338+00:00",
-   "title_ru": "FTSE 100 готовится к снижению по мере отскока акций - Live",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "World Bank's Banga sets goal of quintupling critical minerals financing in five years",
    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOMURDQ2RXU1hVUVRzWnlhdG1vclRwaEFnWlRvVGY2bFJ0SFhfWDNOR0ktX28zRC1mUjFGbklkRThPckpQa0FfUXNkZHZJRm9hTnB0YmFNMzJIdVNOa3dtMlBUbGVSbFRscFVjYmx6TS0xRHA0WFk2RVJPRkdpVnl5MDNsUFlfUmU0ZDg4RmpoaVJZVVJBT29FdGtPZFF5TTFGNnlXOXpqUExLTU9tV2RfY1M5Q3hrRHd2a01JNDBUemNiNC1iVTBScXItYw?oc=5",
@@ -5156,6 +5143,16 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Frank Elderson: From climate and nature risks to economic resilience and competitiveness",
+   "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261019~f0a3e053de.en.html",
+   "sources": [
+    "ECB"
+   ],
+   "score": 5,
+   "ts": "2026-10-19T06:05:44.844086+00:00",
+   "title_ru": "Фрэнк Элдерсон: От климатических и природных рисков до экономической устойчивости и конкурентоспособности"
   }
  ],
  "last_digest": "2026-10-18",
@@ -8990,13 +8987,14 @@
   "sec_seen": [
    "0001213900-26-110436",
    "0001213900-26-110428",
+   "0000037785-26-000161",
    "0001437749-26-032866",
    "0002086163-26-000012",
    "0002152984-26-000004",
    "0001437749-26-032865",
    "0001193125-26-424368",
-   "0001214659-26-013016",
    "0002154954-26-000004",
+   "0001214659-26-013016",
    "0000037785-26-000158",
    "0001193125-26-424439",
    "0001193125-26-424414",
@@ -9017,7 +9015,6 @@
    "0002152990-26-000002",
    "0001225208-26-008439",
    "0000037785-26-000157",
-   "0000037785-26-000162",
    "0001193125-26-424412",
    "0001193125-26-424426",
    "0001477932-26-006312",
@@ -9035,7 +9032,7 @@
    "0000037785-26-000164",
    "0001509409-26-000012",
    "0001193125-26-424421",
-   "0000037785-26-000161"
+   "0000037785-26-000162"
   ],
   "errors": {}
  }
