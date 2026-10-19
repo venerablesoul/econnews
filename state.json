@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "fdd491c5fb7e26bc": "2026-10-16T22:04:55.628812+00:00",
-  "a513b95c9c5f6773": "2026-10-16T22:04:55.628812+00:00",
   "fcfdaf53beb60a53": "2026-10-16T22:09:55.603847+00:00",
   "e3463be39d9cb97a": "2026-10-16T22:35:25.260257+00:00",
   "a40d64394e1aa2f8": "2026-10-16T22:50:25.265547+00:00",
@@ -517,34 +515,10 @@
   "2e85ce00d912348a": "2026-10-19T21:21:05.236858+00:00",
   "6c767b38e8519249": "2026-10-19T21:26:05.375687+00:00",
   "9d9d7e352dd4f913": "2026-10-19T21:41:05.272045+00:00",
-  "03121b233626bc9e": "2026-10-19T21:51:05.402466+00:00"
+  "03121b233626bc9e": "2026-10-19T21:51:05.402466+00:00",
+  "4a63eb32acb6f38b": "2026-10-19T22:06:05.260300+00:00"
  },
  "recent": [
-  {
-   "title": "Raising bank tax is not best choice for UK budget, IMF says",
-   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQcTRwblU5c0l3TUtmQ3ZPeXBTRjYwUWZBOWxNLVhVUm9MTndOQUY5aUUyaHFYdDZFOVhwaHNRUExDdFJEOGo5RDJoeVlXV1dtSnJxeUI1NUlYaVhQWkx3cDZJdUp2YzVLQlptWGVvM29zdUpsaGl3REVDOUZ4bUNLR3FwcnBRVkdIVDFtMWQ3NDU2RElvbU9SYXg1amlmRjNh?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-16T22:04:55.628812+00:00",
-   "title_ru": "Повышение банковского налога – не лучший выбор для бюджета Великобритании, считают в МВФ"
-  },
-  {
-   "title": "Nowhere to hide: Tech selloff hits software and chip stocks alike",
-   "link": "https://www.marketwatch.com/story/nowhere-to-hide-tech-selloff-hits-software-and-chip-stocks-alike-6d96773c?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 4,
-   "ts": "2026-10-16T22:04:55.628812+00:00",
-   "title_ru": "Негде спрятаться: распродажа технологий одинаково ударила по акциям производителей программного обеспечения и микросхем",
-   "lead": "The software and semiconductor sectors haven’t been trading in tandem much this year, but they collectively fell Friday as AI and interest-rate fears hit the market.",
-   "lead_ru": "Секторы программного обеспечения и полупроводников в этом году не торговались в тандеме, но в пятницу они в целом упали, поскольку на рынок обрушились опасения по поводу искусственного интеллекта и процентных ставок.",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Graza CEO on Market Expansion, Consumer Outlook",
    "link": "https://www.bloomberg.com/news/videos/2026-10-16/graza-ceo-on-market-expansion-consumer-outlook-video",
@@ -6835,6 +6809,38 @@
    },
    {
     "src": "sec",
+    "id": "7d8dd9edb86b6e08",
+    "ticker": "DSM",
+    "company": "BNY MELLON STRATEGIC MUNICIPAL BOND FUND, INC.",
+    "who": "Saba Capital Management, L.p.",
+    "role": "10% owner",
+    "type": "buy",
+    "value": 72113,
+    "shares": 13762,
+    "price": 5.24,
+    "plan": false,
+    "date": "2026-10-15",
+    "disclosed": "2026-10-19",
+    "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000359/0001510281-26-000359-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "ce79971e2e8ed0bc",
+    "ticker": "EP",
+    "company": "EMPIRE PETROLEUM CORP",
+    "who": "Phil E Mulacek",
+    "role": "Director, 10% owner",
+    "type": "buy",
+    "value": 312811,
+    "shares": 97981,
+    "price": 3.19,
+    "plan": false,
+    "date": "2026-10-15",
+    "disclosed": "2026-10-19",
+    "link": "https://www.sec.gov/Archives/edgar/data/1670677/000107261326000827/0001072613-26-000827-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "0bd25d90d8b6ef2e",
     "ticker": "ELTP",
     "company": "ELITE PHARMACEUTICALS INC /NV/",
@@ -8773,22 +8779,23 @@
    "0000796343-26-000170",
    "0001998826-26-000023",
    "0001628280-26-066354",
-   "0001104659-26-116956",
    "0001104659-26-116958",
    "0000796343-26-000166",
+   "0001510281-26-000359",
    "0001193125-26-425443",
    "0001104659-26-116962",
+   "0000950103-26-015815",
+   "0001193125-26-425436",
    "0001610717-26-000443",
    "0000897069-26-001855",
    "0001104659-26-116965",
-   "0001193125-26-425436",
    "0001193125-26-425403",
-   "0000796343-26-000167",
    "0001510281-26-000357",
+   "0000796343-26-000167",
    "0000796343-26-000168",
-   "0001934884-26-000007",
    "0001628280-26-066352",
    "0001104659-26-116963",
+   "0000950103-26-015816",
    "0000897069-26-001853",
    "0001628280-26-066353",
    "0000796343-26-000164",
@@ -8797,9 +8804,10 @@
    "0001493152-26-047631",
    "0001839799-26-000143",
    "0001402057-26-000110",
+   "0000950103-26-015814",
+   "0000950103-26-015813",
    "0001104659-26-116966",
    "0001628280-26-066355",
-   "0001628280-26-066344",
    "0001679049-26-000163",
    "0000902664-26-004215",
    "0000950103-26-015812",
@@ -8807,13 +8815,13 @@
    "0001818383-26-000254",
    "0000796343-26-000169",
    "0000905148-26-004496",
-   "0001225208-26-008447",
    "0000897069-26-001857",
    "0001510281-26-000358",
    "0002058648-26-000014",
    "0001616707-26-000181",
    "0000796343-26-000165",
    "0001628280-26-066348",
+   "0001072613-26-000827",
    "0001104659-26-116959",
    "0001193125-26-425444"
   ],
