@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "cf4550fcb36a97ab": "2026-10-16T14:54:26.567884+00:00",
-  "e0ed86a964089919": "2026-10-16T14:54:26.567884+00:00",
-  "9e1bcd29e9b37daa": "2026-10-16T14:59:26.489423+00:00",
   "70363c9b200b07ab": "2026-10-16T15:04:26.780360+00:00",
   "e53d94a7e836b695": "2026-10-16T15:04:26.780360+00:00",
   "37e2fae8a58e8e2e": "2026-10-16T15:09:26.490991+00:00",
@@ -541,28 +538,6 @@
   "97184458c54b3b27": "2026-10-19T14:51:15.500503+00:00"
  },
  "recent": [
-  {
-   "title": "IMF chief urges cooperation on AI and war risks, as US hails economic momentum",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOaC1kZ3BadTRtNzZPdmw0UzNSSHNNTHh3cGltTWJvQ0hHanZaeWhoTDFrSG5GdnNkU2NRamJ3OXF6VVVtdDRncGJtdnpKemJQeHpqbTZFaFVOMUgtOFhNYnU5UFlFbTdtUWZ0SGhMVEtZVnYtMHFQTUlCZG5yN2txMnJjTklQWWtrYTFkS1JTeGRqNkNMa2Vra19qYk5XVzZ2V3pjZnczVERFb0pOOTFaQzZmaThwQ0RSRXM1VA?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-16T14:54:26.567884+00:00",
-   "title_ru": "Глава МВФ призывает к сотрудничеству в области искусственного интеллекта и военных рисков, поскольку США приветствуют экономический импульс"
-  },
-  {
-   "title": "Jump, DRW Bet on New Compute Market as AI Boom Faces Scrutiny",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-16/jump-drw-bet-on-new-compute-market-as-ai-boom-faces-scrutiny",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T14:54:26.567884+00:00",
-   "title_ru": "Jump и DRW делают ставку на новый рынок вычислений, поскольку бум искусственного интеллекта находится под пристальным вниманием",
-   "lead": "Jump Trading and DRW are committing traders and capital to an emerging market for financial contracts tied to computing power, as efforts to make the infrastructure behind the AI boom tradable move from theory into practice.",
-   "lead_ru": "Jump Trading и DRW направляют трейдеров и капитал на развивающийся рынок финансовых контрактов, связанных с вычислительными мощностями, поскольку усилия по превращению инфраструктуры, лежащей в основе бума искусственного интеллекта, в торговлю, переходят от теории к практике."
-  },
   {
    "title": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
    "link": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm",
@@ -8481,9 +8456,7 @@
    "0001193125-26-424805",
    "0001225208-26-008441",
    "0001437749-26-032891",
-   "0001437749-26-032889",
    "0001437749-26-032893",
-   "0001193125-26-424765",
    "0001193125-26-424798"
   ],
   "errors": {}
