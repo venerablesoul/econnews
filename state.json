@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "4ee5f4b0fcc9b1d0": "2026-10-16T16:09:26.513922+00:00",
-  "4d8b5a22566c08f7": "2026-10-16T16:09:26.513922+00:00",
   "b1bb16964da02ccd": "2026-10-16T16:14:26.481800+00:00",
   "505e2d578305fad5": "2026-10-16T16:14:26.481800+00:00",
   "96b2804c947af402": "2026-10-16T16:14:26.481800+00:00",
@@ -534,36 +532,11 @@
   "8f5de7de7fb1adac": "2026-10-19T15:55:37.628888+00:00",
   "2b7717bcdd8df7b0": "2026-10-19T15:55:37.628888+00:00",
   "c610c3560e4ec72c": "2026-10-19T16:00:37.822441+00:00",
-  "ed17e724ce351e15": "2026-10-19T16:00:37.822441+00:00"
+  "ed17e724ce351e15": "2026-10-19T16:00:37.822441+00:00",
+  "d82838bd055dadfb": "2026-10-19T16:10:37.568874+00:00",
+  "55d6abc36fd216d2": "2026-10-19T16:10:37.568874+00:00"
  },
  "recent": [
-  {
-   "title": "IMF expects at least one more 25 bps ECB rate hike in 2026",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPbUVycFZsRzVkXzRQNHZLVXlhMUxUbmtmVW1fRDdjN1hOTWQwS18zX0VqeklHb0oydmE0bjJvdHJSbFFaM3dhZThqTkV5NHJVVFNyb29PMTJfNlRfUTZjSV84cWF4aC03b1l1eEdQWE1ZX1l4TXlwQjhOc29vajRoWGhsMVFEVEZZdlhjUWk3bDZ6YTdhV25iQ25VZE9RZw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 7,
-   "ts": "2026-10-16T16:09:26.513922+00:00",
-   "title_ru": "МВФ ожидает как минимум еще одного повышения ставки ЕЦБ на 25 б.п. в 2026 году",
-   "tags": [
-    "ECB",
-    "rates"
-   ]
-  },
-  {
-   "title": "S&P 500 subdued as gains in banks offset AI jitters; Dow at one-month high",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNV0xEdzRIMVNLYnAyTkhHSmVNTnRyMDJ3WGdOeFY0Vy1kRUtmWC1FZW42aDNfWTctUHM5X2hlWkhuOHFwblR1Q054a19YV3ZLNTlVVVlmMlRTZ0wxLWE2cmN3SWpjVHU4VDJZWU12Q0hPajE5cDdvQm9ic05PNHNRVG45bEI1ZFVHaEN5QnZjbHMxUDFVbHZ2cFNlMUZydw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-16T16:09:26.513922+00:00",
-   "title_ru": "Индекс S&P 500 упал, поскольку рост банковских активов компенсировал колебания AI; Dow достиг месячного максимума",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Caputo Sees Strong Argentina Recovery, Dismisses Recession Odds",
    "link": "https://www.bloomberg.com/news/articles/2026-10-16/caputo-sees-strong-argentina-recovery-dismisses-recession-odds",
@@ -4461,6 +4434,21 @@
    "score": 3,
    "ts": "2026-10-19T15:55:37.628888+00:00",
    "title_ru": "Перспективы канадских компаний ухудшились после провала торговых переговоров, показало исследование Банка Канады"
+  },
+  {
+   "title": "Stocks Rise as Tech Rebounds",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-19/bloomberg-surveillance-10-19-2026-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-19T16:10:37.568874+00:00",
+   "title_ru": "Акции растут на фоне восстановления технологий",
+   "lead": "Jonathan Ferro, Lisa Abramowicz and Annmarie Hordern speak daily with leaders and decision makers from Wall Street to Washington and beyond.",
+   "lead_ru": "Джонатан Ферро, Лиза Абрамович и Аннмари Хордерн ежедневно беседуют с лидерами и лицами, принимающими решения, от Уолл-стрит до Вашингтона и за его пределами.",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-18",
@@ -8470,18 +8458,19 @@
   "checked": "2026-10-19T15:16:15.563310+00:00",
   "sec_seen": [
    "0001519822-26-000011",
-   "0000904454-26-000519",
-   "0001519609-26-000011",
    "0000904454-26-000521",
-   "0001709430-26-000010",
+   "0001519609-26-000011",
+   "0001519952-26-000008",
    "0002005206-26-000007",
    "0002038741-26-000009",
    "0001965214-26-000008",
    "0002071271-26-000017",
    "0001959506-26-000008",
-   "0001519952-26-000008",
+   "0002005212-26-000007",
+   "0001709430-26-000010",
    "0001519680-26-000007",
-   "0001805351-26-000008"
+   "0001805351-26-000008",
+   "0001703510-26-000011"
   ],
   "errors": {}
  }
