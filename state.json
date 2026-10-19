@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "953a9fdda21f2089": "2026-10-16T14:44:26.533283+00:00",
-  "66d0498145790ad1": "2026-10-16T14:49:26.547350+00:00",
   "cf4550fcb36a97ab": "2026-10-16T14:54:26.567884+00:00",
   "e0ed86a964089919": "2026-10-16T14:54:26.567884+00:00",
   "9e1bcd29e9b37daa": "2026-10-16T14:59:26.489423+00:00",
@@ -538,24 +536,11 @@
   "9ebd6797e7adaa5e": "2026-10-19T14:36:15.480554+00:00",
   "7a60389f377159e7": "2026-10-19T14:36:15.480554+00:00",
   "5770bd8e0175ff1e": "2026-10-19T14:41:15.475558+00:00",
-  "b063295ab5e8a54e": "2026-10-19T14:41:15.475558+00:00"
+  "b063295ab5e8a54e": "2026-10-19T14:41:15.475558+00:00",
+  "e04161eb5ba0b4b9": "2026-10-19T14:46:15.568812+00:00",
+  "97184458c54b3b27": "2026-10-19T14:51:15.500503+00:00"
  },
  "recent": [
-  {
-   "title": "Fed Divisions and AI Debt Risks Shape Rate Outlook",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-16/fed-divisions-and-ai-debt-risks-shape-rate-outlook-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-16T14:44:26.533283+00:00",
-   "title_ru": "Подразделения ФРС и долговые риски AI формируют прогноз по ставке",
-   "lead": "Sree Kochugovind said recent UK data has surprised to the upside, showing resilience against a challenging global backdrop.",
-   "lead_ru": "Шри Кочуговинд заявила, что недавние данные по Великобритании удивили ростом, продемонстрировав устойчивость экономики на сложном глобальном фоне.",
-   "tags": [
-    "Fed"
-   ]
-  },
   {
    "title": "IMF chief urges cooperation on AI and war risks, as US hails economic momentum",
    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOaC1kZ3BadTRtNzZPdmw0UzNSSHNNTHh3cGltTWJvQ0hHanZaeWhoTDFrSG5GdnNkU2NRamJ3OXF6VVVtdDRncGJtdnpKemJQeHpqbTZFaFVOMUgtOFhNYnU5UFlFbTdtUWZ0SGhMVEtZVnYtMHFQTUlCZG5yN2txMnJjTklQWWtrYTFkS1JTeGRqNkNMa2Vra19qYk5XVzZ2V3pjZnczVERFb0pOOTFaQzZmaThwQ0RSRXM1VA?oc=5",
@@ -4485,6 +4470,21 @@
    ],
    "score": 1,
    "ts": "2026-10-19T14:41:15.475558+00:00"
+  },
+  {
+   "title": "Bank of America Sees Corporate Bonds Sales in Africa Running at Five-Year High",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-19/bank-of-america-sees-corporate-bonds-sales-in-africa-running-at-five-year-high",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-19T14:51:15.500503+00:00",
+   "title_ru": "Bank of America ожидает, что продажи корпоративных облигаций в Африке достигнут пятилетнего максимума",
+   "lead": "African companies’ hard-currency bond sales are running at the fastest pace in five years, according to Bank of America Corp, which predicts issuance will remain robust over the coming years.",
+   "lead_ru": "По данным Bank of America Corp, продажи облигаций в твердой валюте африканскими компаниями идут самыми быстрыми темпами за последние пять лет, которые прогнозируют, что в ближайшие годы выпуск останется стабильным.",
+   "tags": [
+    "bonds"
+   ]
   }
  ],
  "last_digest": "2026-10-18",
@@ -8477,19 +8477,14 @@
   },
   "checked": "2026-10-19T14:16:15.528073+00:00",
   "sec_seen": [
-   "0001708055-26-000080",
    "0001437749-26-032895",
+   "0001193125-26-424805",
    "0001225208-26-008441",
    "0001437749-26-032891",
-   "0001032553-26-000045",
    "0001437749-26-032889",
    "0001437749-26-032893",
    "0001193125-26-424765",
-   "0001708055-26-000079",
-   "0001193125-26-424798",
-   "0000108985-26-000089",
-   "0001887782-26-000011",
-   "0000108985-26-000088"
+   "0001193125-26-424798"
   ],
   "errors": {}
  }
