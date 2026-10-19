@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "4b103c60490716f9": "2026-10-16T12:59:26.469853+00:00",
-  "c26d63d35bd2578a": "2026-10-16T12:59:26.469853+00:00",
   "980f938186f24de8": "2026-10-16T13:09:26.514154+00:00",
   "06cba18f65a9f610": "2026-10-16T13:09:26.514154+00:00",
   "a24b9172321134b1": "2026-10-16T13:09:26.514154+00:00",
@@ -559,38 +557,10 @@
   "767bd0a0a0415413": "2026-10-19T12:41:15.452830+00:00",
   "a2ce8c3e1dbc4ca5": "2026-10-19T12:41:15.452830+00:00",
   "062ea3b449e77b8e": "2026-10-19T12:46:15.464259+00:00",
-  "67cb658039d02eb0": "2026-10-19T12:56:15.496751+00:00"
+  "67cb658039d02eb0": "2026-10-19T12:56:15.496751+00:00",
+  "36f802ae1a7177d1": "2026-10-19T13:01:15.473423+00:00"
  },
  "recent": [
-  {
-   "title": "Global fuel oil market stays tight as conflicts hit Mideast, Russia supplies, Vitol says",
-   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQdjV1SVlVZE9yUElzNHR6OGdPbjI2UW1CT3NNMjNINkgyV2N6aEZwcUZqNWRXcWoySHNKVGZNcUdMVWs3WEcyeXVBOFdxRjFpVVQtNDJMU05LTEdERlgtckVhQlk0Y3htcHlKQzR4VGxseXRyVG9QTHM4Qlk2YmpjWGtGaWRqTWtxNWplWEM1Ny1WSDNvMVJkUlE1Y0pXakNxMFBNUjJwUGpXMEMwb21GaHU0SEkzYWtRSlVneEdEN3hqSjBMbDM2TzB3?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-16T12:59:26.469853+00:00",
-   "title_ru": "Мировой рынок мазута остается напряженным, поскольку конфликты поражают Ближний Восток, поставки в Россию, говорит Витол",
-   "tags": [
-    "oil",
-    "Russia"
-   ]
-  },
-  {
-   "title": "Социальный фонд представил проект бюджета на 2027–2029 годы",
-   "link": "https://www.kommersant.ru/doc/9040445",
-   "sources": [
-    "Kommersant"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T12:59:26.469853+00:00",
-   "title_en": "The Social Fund presented the draft budget for 2027–2029",
-   "lead": "Председатель Социального фонда России Сергей Чирков представил на заседании комитета Госдумы по бюджету и налогам проект бюджета СФР на 2027 год и плановый период 2028-2029 годов. Об этом сообщила пресс-служба Фонда.",
-   "lead_en": "Chairman of the Social Fund of Russia Sergey Chirkov presented at a meeting of the State Duma Committee on Budget and Taxes the draft budget of the SFD for 2027 and the planning period of 2028-2029. This was reported by the press service of the Fund.",
-   "tags": [
-    "Russia"
-   ]
-  },
   {
    "title": "Equity Trading Gives Banks a Bright Spot This Earnings Season",
    "link": "https://www.bloomberg.com/news/articles/2026-10-16/equity-trading-gives-banks-a-bright-spot-this-earnings-season-mvayr9z8",
@@ -4733,6 +4703,19 @@
     "markets",
     "Russia"
    ]
+  },
+  {
+   "title": "US Futures Climb With Semiconductor Stocks Rebounding After Rout",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNbE5wTUhYRkNobDJkODFuQ1V0LW1RN2tvRnhTR2kwNHNETUV0WEpIZzdDaC1sWTk5aHIxRGhpcUtMTWFGdEhuclQ2Ml92cklhQUNsb1FMUWdYX0kxUXROMVFYVkhlVnh3eGkzdE1pR0RwUW01clMtSVZjRUVRRmNpckZfUl9sSnJTT1FQTkkwS1dwVWxaUWVBeE9HQVFJRTB4OFJjc05Ga0ktVTNMdWVadUxvaEJlQQ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-19T13:01:15.473423+00:00",
+   "title_ru": "Фьючерсы в США растут на фоне восстановления акций полупроводников после падения",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-18",
@@ -6711,6 +6694,22 @@
    },
    {
     "src": "sec",
+    "id": "a104e8b2ad4a841d",
+    "ticker": "AFL",
+    "company": "AFLAC INC",
+    "who": "Japan Post Holdings Co., Ltd.",
+    "role": "10% owner",
+    "type": "sell",
+    "value": 13465866,
+    "shares": 113611,
+    "price": 118.53,
+    "plan": true,
+    "date": "2026-10-15",
+    "disclosed": "2026-10-19",
+    "link": "https://www.sec.gov/Archives/edgar/data/1783464/000110465926116752/0001104659-26-116752-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "0bd25d90d8b6ef2e",
     "ticker": "ELTP",
     "company": "ELITE PHARMACEUTICALS INC /NV/",
@@ -8656,16 +8655,16 @@
    "0001543262-26-000010",
    "0001193125-26-424699",
    "0001628280-26-066202",
-   "0001493152-26-047479",
    "0001628280-26-066214",
+   "0001104659-26-116752",
    "0001628280-26-066216",
    "0001493152-26-047486",
-   "0001477932-26-006312",
    "0000108985-26-000086",
    "0001193125-26-424593",
    "0000950103-26-015755",
    "0001493152-26-047482",
    "0001628280-26-066213",
+   "0001768860-26-000012",
    "0001391935-26-000009",
    "0000108985-26-000085",
    "0001192952-26-000008",
