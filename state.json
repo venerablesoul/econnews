@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "78ce690271973d1a": "2026-10-16T13:39:26.455902+00:00",
-  "b48f4e4fe7d71317": "2026-10-16T13:39:26.455902+00:00",
-  "d1d50de41ffc7ae2": "2026-10-16T13:39:26.455902+00:00",
-  "fa385e745830acb8": "2026-10-16T13:44:26.439612+00:00",
-  "6873cd80065e1148": "2026-10-16T13:44:26.439612+00:00",
   "281fb37eea27f63c": "2026-10-16T14:04:26.511873+00:00",
   "4be6dad96c25ec6f": "2026-10-16T14:09:26.485490+00:00",
   "be91b122e95010c2": "2026-10-16T14:14:26.453999+00:00",
@@ -544,44 +539,10 @@
   "67cb658039d02eb0": "2026-10-19T12:56:15.496751+00:00",
   "36f802ae1a7177d1": "2026-10-19T13:01:15.473423+00:00",
   "ada659b0447d666d": "2026-10-19T13:26:15.454264+00:00",
-  "32c3e085cdc377e4": "2026-10-19T13:26:15.454264+00:00"
+  "32c3e085cdc377e4": "2026-10-19T13:26:15.454264+00:00",
+  "7cc916d135f1e789": "2026-10-19T13:46:15.487262+00:00"
  },
  "recent": [
-  {
-   "title": "Italian banks should be predators not prey in M&A wave, economy minister says",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNV0UwWkx3LTYtRjJYcGQydDBVRUY1a0lSZUdSOHBZZ1k2bVFBUmdPMUU5LWZVTWdIYUlYYUxtME10dG1DTURCdUs5aGNJc0Y3RGwxOWVJUG1feGtNb3FiN25KNVVmSjg1aUVhM0tBTkMyVFdqSEJrb21nZ3hpalR6ZkFuNXQ5TkFISmFoTmQ2QUFNWkdoaUZfeUVsc2NFMFRlNUhzeGp2aW12b1VteWo0MGZ6WVlRUFpzdzFaSGxGbDRNMHZVdU9z?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-16T13:39:26.455902+00:00",
-   "title_ru": "Итальянские банки должны быть хищниками, а не жертвами волны слияний и поглощений, говорит министр экономики"
-  },
-  {
-   "title": "Bank of America Taps High-Grade Bond Market After Turbulent Week",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-16/bank-of-america-taps-high-grade-bond-market-after-turbulent-week",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T13:39:26.455902+00:00",
-   "title_ru": "Bank of America выходит на рынок высококачественных облигаций после неспокойной недели",
-   "lead": "Bank of America Corp. has kicked off the sale of investment-grade bonds, becoming the third major Wall Street firm to tap a turbulent market this week after reporting third-quarter results.",
-   "lead_ru": "Bank of America Corp. начал продажу облигаций инвестиционного уровня, став третьей крупной фирмой с Уолл-стрит, которая вышла на неспокойный рынок на этой неделе после публикации результатов за третий квартал.",
-   "tags": [
-    "bonds"
-   ]
-  },
-  {
-   "title": "Analytical Corner: The Coming Great Repression? New Measures and a Century of Evidence",
-   "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9VNHRWUFpwSldjU0ZZbWhnY1g2WVUwTzBTY001UURHd1BPVks4M3EyTG8yZk9XU0o5Q3ZhTWw0OHJLamh0OWJXV0ZsOVFTUFotY3dudkFHeE5CWVlR?oc=5",
-   "sources": [
-    "IMF"
-   ],
-   "score": 4,
-   "ts": "2026-10-16T13:44:26.439612+00:00",
-   "title_ru": "Аналитический уголок: Грядущие великие репрессии? Новые меры и столетие доказательств"
-  },
   {
    "title": "Глава «Газпром нефти» заявил о новых вызовах для мировой нефтяной отрасли",
    "link": "https://www.rbc.ru/business/16/10/2026/6ad22ba6c69ebebcfba1ea97",
@@ -4585,6 +4546,19 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "US chip stocks rise after steepest weekly selloff in months",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQQnRpUlhFSVItYXlyM2JtRDAxZFNzc1owV1VBSFM4VERhS3dYOW1wVWtOeERTaDRrWlZyQVJTVVdvNFktdG5oSGpjY0ZwY1hBbnllN2d6Qkg4aExFcWdNT3F3dWlxdTFtbU92WV9WTC1NVEw0QmlWb201cXB6NGJCajVtbmZjYnJ4MWZ3TDZYR1l3ZmZFRFJORzhlNE1Yb0QtNDlyc3ZnY2tuenV1OFgwVQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-19T13:46:15.487262+00:00",
+   "title_ru": "Акции чипов в США растут после самой крутой недельной распродажи за последние месяцы",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-18",
@@ -6547,6 +6521,22 @@
    },
    {
     "src": "sec",
+    "id": "c2218d1bb8e0c398",
+    "ticker": "FUL",
+    "company": "FULLER H B CO",
+    "who": "Muhammad Shahbaz Malik",
+    "role": "Senior VP, BAS",
+    "type": "buy",
+    "value": 25000,
+    "shares": 479,
+    "price": 52.23,
+    "plan": false,
+    "date": "2026-10-16",
+    "disclosed": "2026-10-19",
+    "link": "https://www.sec.gov/Archives/edgar/data/1621150/000122520826008441/0001225208-26-008441-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "2ddfc0fab2269fee",
     "ticker": "NBIS",
     "company": "Nebius Group N.V.",
@@ -6608,6 +6598,22 @@
     "date": "2026-10-15",
     "disclosed": "2026-10-19",
     "link": "https://www.sec.gov/Archives/edgar/data/1032553/000103255326000045/0001032553-26-000045-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "e8bd5d97c684784d",
+    "ticker": "GLBE",
+    "company": "Global-E Online Ltd.",
+    "who": "Nir Debbi",
+    "role": "President",
+    "type": "sell",
+    "value": 580510,
+    "shares": 14582,
+    "price": 39.81,
+    "plan": true,
+    "date": "2026-10-15",
+    "disclosed": "2026-10-19",
+    "link": "https://www.sec.gov/Archives/edgar/data/1964141/000119312526424765/0001193125-26-424765-index.htm"
    },
    {
     "src": "sec",
@@ -8545,26 +8551,26 @@
   },
   "checked": "2026-10-19T13:16:15.462743+00:00",
   "sec_seen": [
+   "0001437749-26-032891",
    "0001032553-26-000045",
    "0001437749-26-032889",
    "0001628280-26-066217",
    "0000108985-26-000087",
    "0000108985-26-000089",
-   "0001628280-26-066215",
    "0001193125-26-424723",
    "0001193125-26-424699",
+   "0001437749-26-032893",
    "0001708055-26-000079",
-   "0001628280-26-066214",
    "0001104659-26-116752",
-   "0001628280-26-066216",
    "0001887782-26-000011",
    "0001708055-26-000080",
+   "0001225208-26-008441",
    "0001708055-26-000078",
    "0000108985-26-000086",
    "0001444157-26-000028",
    "0000108985-26-000088",
-   "0001628280-26-066213",
    "0001768860-26-000012",
+   "0001193125-26-424765",
    "0000108985-26-000085",
    "0001192952-26-000008",
    "0001493152-26-047506",
