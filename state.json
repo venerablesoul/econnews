@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "22a39500d57a59dd": "2026-10-16T12:39:26.451995+00:00",
-  "7e4d03e7d6d851f0": "2026-10-16T12:39:26.451995+00:00",
   "3d6b4f7d54de64f6": "2026-10-16T12:44:26.594553+00:00",
   "4af847c38a835973": "2026-10-16T12:44:26.594553+00:00",
   "84f74ae0e6cb03be": "2026-10-16T12:44:26.594553+00:00",
@@ -569,24 +567,11 @@
   "2013f5ca44160fe1": "2026-10-19T12:31:15.464685+00:00",
   "6622d690510f0540": "2026-10-19T12:31:15.464685+00:00",
   "9c0720ac911bd2bb": "2026-10-19T12:36:15.489191+00:00",
-  "e85ae464d3b479f5": "2026-10-19T12:36:15.489191+00:00"
+  "e85ae464d3b479f5": "2026-10-19T12:36:15.489191+00:00",
+  "767bd0a0a0415413": "2026-10-19T12:41:15.452830+00:00",
+  "a2ce8c3e1dbc4ca5": "2026-10-19T12:41:15.452830+00:00"
  },
  "recent": [
-  {
-   "title": "Ueda ‘Can’t Tolerate’ Underlying Inflation Further Over 2%",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-16/boj-s-ueda-can-t-tolerate-underlying-inflation-further-over-2",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-16T12:39:26.451995+00:00",
-   "title_ru": "Уэда «не может терпеть» базовую инфляцию, превышающую 2%",
-   "lead": "Bank of Japan Governor Kazuo Ueda said he “can’t tolerate” underlying inflation rising further above 2%.",
-   "lead_ru": "Глава Банка Японии Кадзуо Уэда сказал, что он «не может терпеть» базовую инфляцию, поднимающуюся выше 2%.",
-   "tags": [
-    "inflation"
-   ]
-  },
   {
    "title": "Treasuries ‘Absolutely’ Still a Safe Haven, Says JPMorgan’s Misra",
    "link": "https://www.bloomberg.com/news/videos/2026-10-16/treasuries-absolutely-still-a-safe-haven-jpm-s-misra-video",
@@ -4854,6 +4839,30 @@
    "score": 3,
    "ts": "2026-10-19T12:36:15.489191+00:00",
    "title_ru": "Южная Африка настроена на более оптимистичные финансовые перспективы в среднесрочном бюджете в среду"
+  },
+  {
+   "title": "Trump's Russia sanctions waiver eases India's energy woes, lifts trade deal chances",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPX1JDdGd6aEZHMGQ5OXppVnA5d3FlSzNmbDdjOURNajl2Sjg3T0VrRzRLSC1DdVpLekQ5ZHBVdjQ1eV9UcF81anZNVklVYjZnQlNfQUlWRVMtNzEwVVVDQWlYTmQtU29FOU5xTFlGYTFUVV90bXI3dXU5UU5IUG9ZNjNYVHNUdzNjT3JXb244bm84d240TG56ZDVLbXNhMWpucjVTZXdtaTZQYjViOFU3bDZnZlFEQjduUDBfMWdwMVBXUFl3VFRJ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-19T12:41:15.452830+00:00",
+   "title_ru": "Отказ Трампа от санкций в отношении России облегчает энергетические проблемы Индии и повышает шансы на торговую сделку",
+   "tags": [
+    "sanctions",
+    "Russia"
+   ]
+  },
+  {
+   "title": "Regional Economic Outlook for the Western Hemisphere, October 2026",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNc0xmT253d1ZBa0duVEwwU25Bajd2N2kwdmdMQ1MzMm5qa1dkODFoRnpSYXBZS0NmVlltZkFnVTFRQnVzVXRoOGNMUlZBdG4ySFVUSEhnU3VEY3Y2ZndGaU9LcHlfZTZxMWx1dnJreTladUw3OG1aNWkwa2VnelVRZEFEeDBqWVB5dExlTklNZkV5LW5acHd3LUZwcDJvTjg0RG5jNS0zWFpQLVVYMFoyTng0ZE9mMV80SUtiTnhsaXdNMDBp?oc=5",
+   "sources": [
+    "IMF"
+   ],
+   "score": 5,
+   "ts": "2026-10-19T12:41:15.452830+00:00",
+   "title_ru": "Прогноз региональной экономики Западного полушария, октябрь 2026 г."
   }
  ],
  "last_digest": "2026-10-18",
@@ -6797,6 +6806,22 @@
     "date": "2026-10-16",
     "disclosed": "2026-10-19",
     "link": "https://www.sec.gov/Archives/edgar/data/1391935/000139193526000009/0001391935-26-000009-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "e67d43a333baf760",
+    "ticker": "API",
+    "company": "Agora, Inc.",
+    "who": "Bin Zhao",
+    "role": "CEO",
+    "type": "buy",
+    "value": 76930,
+    "shares": 17345,
+    "price": 4.44,
+    "plan": true,
+    "date": "2026-10-16",
+    "disclosed": "2026-10-19",
+    "link": "https://www.sec.gov/Archives/edgar/data/1843236/000119312526424723/0001193125-26-424723-index.htm"
    },
    {
     "src": "sec",
@@ -8756,6 +8781,7 @@
    "0001628280-26-066215",
    "0001573338-26-000021",
    "0001900445-26-000006",
+   "0001193125-26-424723",
    "0000950103-26-015756",
    "0001543262-26-000010",
    "0001193125-26-424699",
@@ -8763,7 +8789,6 @@
    "0001493152-26-047479",
    "0001628280-26-066214",
    "0001628280-26-066216",
-   "0001104659-26-116675",
    "0001493152-26-047486",
    "0001477932-26-006312",
    "0001801661-26-000124",
