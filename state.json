@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "46a1e51a287e3cbf": "2026-10-16T04:23:24.023556+00:00",
   "038baa58e7439058": "2026-10-16T04:28:23.986809+00:00",
   "94c8d55683986676": "2026-10-16T04:28:23.986809+00:00",
   "8b2a4ff2c82b1d92": "2026-10-16T04:28:23.986809+00:00",
@@ -589,22 +588,11 @@
   "3004687de9e7f86a": "2026-10-19T04:10:13.668988+00:00",
   "3ed0f9a942ab7d8e": "2026-10-19T04:10:13.668988+00:00",
   "7a256fc447757b67": "2026-10-19T04:10:13.668988+00:00",
-  "98cd277f85c9fc11": "2026-10-19T04:20:13.695373+00:00"
+  "98cd277f85c9fc11": "2026-10-19T04:20:13.695373+00:00",
+  "54d120b9ef19c337": "2026-10-19T04:25:13.666077+00:00",
+  "ab814d25698795dd": "2026-10-19T04:25:13.666077+00:00"
  },
  "recent": [
-  {
-   "title": "US Treasury says Japan no longer faces deflationary environment, yen level must change",
-   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOVnlFbzgwbXQ1Q3RjNk9wS2U2dHhqUzJLMENfa3Q1NU5pSUc2ZW96Mlg4Uk9sbDhic0N4YVhaNkpvbmphcTJSSnlJNjRUdFhXNWoxc3dzbUhRV054M0YyMjZBT3hRRFhSLWhYbFh0QUZjRThCUDFSRlptWVJ6YUN0OWkzYlJEQi14Z1ZMazE0WnJmU18yUHVmc2x4OXd4VU5DVlh3dUZ0cTV5UWRFQ2JrMnNEZXBSM0VjcjRxOHhabk1CY0oxaEF0SmF0ZUxJdw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T04:23:24.023556+00:00",
-   "title_ru": "Казначейство США говорит, что Япония больше не сталкивается с дефляционной средой, уровень иены должен измениться",
-   "tags": [
-    "bonds"
-   ]
-  },
   {
    "title": "Most Asian stocks rise as calm returns after CoreWeave shock; Indonesia faces market downgrade",
    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPMUpLRUNwWEpRNVpNVWJPOWQyQXdKRjkzdTU5RjFiOUxpUFZGU1ZBa1VaS3ctN0xlc0lSMkptbUVMRlprcFFtZ3B6Z2ZFTG5XX2FBUHBoSk4xRTdiQm1ucERORXE4ZzNFZ09ySlpvUDlzb0tGUjFQZ3c0UmotdEstMEZCUQ?oc=5",
@@ -5249,6 +5237,31 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "PIIE’s Lovely on China-US Trade",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-19/piie-s-lovely-on-china-us-trade-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-19T04:25:13.666077+00:00",
+   "title_ru": "PIIE прекрасна в китайско-американской торговле",
+   "lead": "Mary Lovely, Senior Fellow at PIIE, says China’s dominance in rare earth production gives Beijing significant leverage in trade issues with the US. She speaks with Stephen Engle on the sidelines of the Bund Summit in Shanghai.",
+   "lead_ru": "Мэри Лавли, старший научный сотрудник PIIE, говорит, что доминирование Китая в производстве редкоземельных металлов дает Пекину значительные рычаги в торговых вопросах с США. Она разговаривает со Стивеном Энглом в кулуарах саммита Бунда в Шанхае.",
+   "tags": [
+    "China"
+   ]
+  },
+  {
+   "title": "Nextdc Flags Earnings Risk on Melbourne Data Center Power Delay",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOQkFGNWJNbXJOaVJkd2FDcFZMbGRSc2l3andidHFUY2JNZWlzb09jSzVKRGhQcUJ5Z1BISUZjTGd2aG9jM19uMlVRUTlFWTBGQ3ZaVEMxQnJpU3pENmVYSUV2T25SR05lYVNrY3FacTJYWXp0a2g5R0FzanBEcm5DSkp0dDV5N0tJbmxxVUY0T0J0S1htQl9JaUlEd3E4blBtbG5ndG1scUtobVQwTHVPNG9UVE8?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-19T04:25:13.666077+00:00",
+   "title_ru": "Риск заработка Nextdc Flags при задержке питания центра обработки данных в Мельбурне"
   }
  ],
  "last_digest": "2026-10-18",
@@ -9089,9 +9102,9 @@
    "0001213900-26-110401",
    "0000037785-26-000164",
    "0001214659-26-013018",
-   "0000037785-26-000163",
-   "0001193125-26-424368",
    "0001646382-26-000023",
+   "0001193125-26-424368",
+   "0000037785-26-000163",
    "0001213900-26-110428",
    "0001213900-26-110436",
    "0001104659-26-116675",
