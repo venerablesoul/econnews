@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "4c75f1eee9872259": "2026-10-16T11:28:52.043369+00:00",
-  "7cb806baae0d2ae4": "2026-10-16T11:28:52.043369+00:00",
-  "d76b1652ee67b7af": "2026-10-16T11:28:52.043369+00:00",
-  "94a8e74d5b9796b0": "2026-10-16T11:33:52.065441+00:00",
   "3be41831bf51ff37": "2026-10-16T11:39:26.416483+00:00",
   "1f001fea97bb13e3": "2026-10-16T11:44:26.459236+00:00",
   "b41a9bb9c6e194ae": "2026-10-16T11:44:26.459236+00:00",
@@ -586,53 +582,10 @@
   "aa0d2b962f156076": "2026-10-19T11:21:15.468096+00:00",
   "a3744d5c25955a54": "2026-10-19T11:26:15.480755+00:00",
   "b84821d4f58e7ae2": "2026-10-19T11:26:15.480755+00:00",
-  "cc0151d5ca3e79a0": "2026-10-19T11:26:15.480755+00:00"
+  "cc0151d5ca3e79a0": "2026-10-19T11:26:15.480755+00:00",
+  "da97a804190d1625": "2026-10-19T11:36:15.419337+00:00"
  },
  "recent": [
-  {
-   "title": "Pimco’s Balls Sees Good Value in Long End of Yield Curve",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-16/pimco-s-balls-sees-good-value-in-long-end-of-yield-curve-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-16T11:28:52.043369+00:00",
-   "title_ru": "Компания Pimco’s Balls видит выгоду в длинном конце кривой доходности",
-   "lead": "Andrew Balls, global fixed income CIO at Pimco, says one to two further interest-rate hikes from the Federal Reserve “seems reasonable” as the central bank targets a return to 2% inflation.",
-   "lead_ru": "Эндрю Боллс, глобальный директор по информационным технологиям с фиксированным доходом в Pimco, говорит, что одно-два дальнейших повышения процентных ставок со стороны Федеральной резервной системы «кажется разумным», поскольку центральный банк нацелен на возврат инфляции к уровню 2%.",
-   "tags": [
-    "Fed",
-    "rates",
-    "inflation"
-   ]
-  },
-  {
-   "title": "Asian bonds record biggest monthly foreign outflow since March 2020",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPNVdHcUQwdGcwMGEta09vOHBBWDgzUWlRaGZIbERYcTI3MDg1T0FWTGRFX2dFYmN5S2E3MkR1cEp2ZGl6X2xaU0FHZmpxZzFJMjJtcXIydEpsbWg3aU9va0NuajVZUjM3UW5keHM3OEEzSWdSa3VWMkJWakMxcDFlZ2g2Y3o5WW1mQVdWZVZxdUxyazEySE14NmtqMzg4OGt3dGhBU281aGVzYVlXcnh5dGs5WFlaeFdFQzRLZk5NOA?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T11:28:52.043369+00:00",
-   "title_ru": "Азиатские облигации зафиксировали самый большой ежемесячный отток иностранной валюты с марта 2020 года",
-   "tags": [
-    "bonds"
-   ]
-  },
-  {
-   "title": "COMMENTARY: AI jitters, Trump's fading oil clout and China shock 2.0: The financial week in five charts",
-   "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPT0JUeTlGZHJqb29Dcnp1dEhpLXFEN0EwdG1IX0pzb29pampFTEhISTdSODVqdDd4a2dSRllSSy12YzBHSXR1bmZCVmJyRXFmTl9IN2tDVTkwbWFXa09hTUFhaER0U2hZMkh3YTZwaXlMZzkyUUNMUWtRUW96clBaR3JpNnVFanlyUjFqek1FWTV3TGtqbHRHWDR1RDZZZnBiRFlzdElpcEw3czFJaVkyT3pMLURLQm1FQzhxY0lJdHBUbUYwd25Ralk4R21xb1VQdUdqempCX2lpRUNwbHc?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T11:33:52.065441+00:00",
-   "title_ru": "КОММЕНТАРИЙ: ИИ нервничает, ослабление нефтяного влияния Трампа и китайский шок 2.0: финансовая неделя в пяти графиках",
-   "tags": [
-    "oil",
-    "China"
-   ]
-  },
   {
    "title": "ЕС увеличил импорт российского СПГ на 60% на фоне ограничений",
    "link": "https://www.rbc.ru/economics/16/10/2026/6ad1ebb57bfe5dbe1b87b965",
@@ -5046,6 +4999,15 @@
     "bonds",
     "markets"
    ]
+  },
+  {
+   "title": "Tech stocks stumbled. Now comes a crucial week for Wall Street.",
+   "link": "https://www.marketwatch.com/story/tech-stocks-stumbled-now-comes-a-crucial-week-for-wall-street-2a093abe?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-19T11:36:15.419337+00:00"
   }
  ],
  "last_digest": "2026-10-18",
@@ -8972,7 +8934,6 @@
    "0001193125-26-424439",
    "0001391935-26-000009",
    "0000950103-26-015754",
-   "0001193125-26-424421",
    "0001213900-26-110429"
   ],
   "errors": {}
