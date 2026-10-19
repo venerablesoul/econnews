@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c01e8247e0636b3e": "2026-10-16T08:08:52.069851+00:00",
-  "b17200efcec54a44": "2026-10-16T08:08:52.069851+00:00",
-  "cadf79635cab9073": "2026-10-16T08:08:52.069851+00:00",
-  "23f3dfef68aa588c": "2026-10-16T08:08:52.069851+00:00",
   "c39ab4d1eae56c7f": "2026-10-16T08:23:52.047308+00:00",
   "abfc44c41b4cfc20": "2026-10-16T08:28:52.065555+00:00",
   "4de3b550c5bbb649": "2026-10-16T08:48:52.065812+00:00",
@@ -586,56 +582,10 @@
   "41f7f3c6f72daae4": "2026-10-19T07:55:44.897200+00:00",
   "ef5d25b473bf012c": "2026-10-19T07:55:44.897200+00:00",
   "8f56e24f8e94ebea": "2026-10-19T08:00:44.928441+00:00",
-  "4295cc038f425333": "2026-10-19T08:05:44.847857+00:00"
+  "4295cc038f425333": "2026-10-19T08:05:44.847857+00:00",
+  "20bd7222bb840ccf": "2026-10-19T08:10:44.847621+00:00"
  },
  "recent": [
-  {
-   "title": "BOJ chief flags inflation overshoot risk, stresses importance of 2% anchor",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPdk5PYkp5bUZhRHk4VUJJdDhYWjFYTDNKU3poQ2d2b2pRbDNndWJvdElqZVdFM3FhZTRVQ2diM2I4bVlCUU5wd2tNYTZTN1VINjhYaDZfSzgwR1BJaTNqU3RjcGJSa3N2MGhIdmhFM2o1MzAtdjBUNXAyYmI1NXJRWmpYVk9BR3VyWkZmUmx6MmIyUGVmMFFtQzlWMkZzVllTaTdnZGFGWThZVkYybHd4d29iZndkTWc2QUFNa01TSFo4Zw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-16T08:08:52.069851+00:00",
-   "title_ru": "Глава БАНКА ЯПОНИИ отмечает, что инфляция превышает риск, подчеркивает важность 2% якоря",
-   "tags": [
-    "inflation"
-   ]
-  },
-  {
-   "title": "Asset Managers Curb Inflows Into Gold ETFs on Weak India Rupee",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-16/asset-managers-curb-inflows-into-gold-etfs-on-weak-india-rupee",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T08:08:52.069851+00:00",
-   "title_ru": "Управляющие активами сдерживают приток средств в золотые ETF на слабой индийской рупии",
-   "lead": "Indian asset managers are restricting fresh investments into gold products ahead of the key festive season when demand is strong, adding to the nation’s efforts to curb appetite for the precious metal amid a historic slide in the…",
-   "lead_ru": "Индийские управляющие активами ограничивают новые инвестиции в золотые изделия в преддверии ключевого праздничного сезона, когда спрос будет высоким, что усиливает усилия страны по сдерживанию аппетита к драгоценному металлу на фоне исторического падения...",
-   "tags": [
-    "gold"
-   ]
-  },
-  {
-   "title": "South Korea Turns to Dirty Coal as Winter Gas Squeeze Looms",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPaGtwaVdLdTNSMkU3WU1iXzFZcDEtOU1FTzhsYWF3R0tRWUFBaTl2bV9GRFo0MUgtS3JfNXVZRWxacGNkSGR3Vm9leVBLeVg3NHhfSHZCUkRpRWt2UGVMT2liX3laVTRvM192TEw2ejZoVDZHQzU5LWd0bVBaTGN0VUszdWI3bDZCazV3QVc3aF9PVU1fTGlKaFlmOUJubU1TSU5FeE1ZelhpdVJ5cDZv?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T08:08:52.069851+00:00",
-   "title_ru": "Южная Корея превращается в грязный уголь, поскольку зимние газовые станки выжимают"
-  },
-  {
-   "title": "Зарплаты педагогов высшей школы проиндексируют на 6,8% в 2027 году",
-   "link": "https://www.rbc.ru/rbcfreenews/6ad1d4fb2239caff4a435c65",
-   "sources": [
-    "RBC"
-   ],
-   "score": 1,
-   "ts": "2026-10-16T08:08:52.069851+00:00"
-  },
   {
    "title": "IMF chief says AI risks may exceed opportunities without safeguards and ethical framework",
    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNS2IzOWJIRFRrNjFuc3M5M1RRQUNUS1dQcGVaSVhPa2lZVzd2a0JKamxsTFR4dU5QMThydUVyTks4bXhjM29fOE1oVWltNkVKcnk3ZFZEZmlmWXl5UlZDZXRfSmRfRTltdGU5dGdUbF9hSEI1Qi02R05ScVNvZVJ0V0xvelkxTmFsbXVvM1VjNWRCQU5FZUJXbnFQSUgtYlpxclUtbkV3ejNiVGs2V2pQOS1LNTN5TzZVb00xbGlBVQ?oc=5",
@@ -5169,6 +5119,16 @@
     "oil",
     "dollar"
    ]
+  },
+  {
+   "title": "Indonesia stock exchange to meet MSCI on Monday, seeking clarification on downgrade warning",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNTE5LaGtJejUxOFd5bFNMUnVTSTdEWXZDMFV0RTIxbjF1ckpOQ0F3VU9JZzV4TWxPWUNacWFNTHo0UDZONUloQnUwSS1uNklteUJnbGd6M19QNGtnMjVodkRfbXBjeXEyLS1vbUFaX0phR1h1V2RzR2ljbWtZWEpkaDJndWY2c1JJMFV0Y1pXc2l4V1AwdGdueXBSUWdDdjFQT1RLV3AxVzh6UFp1RjlBb3pJOWFNUjhnWWZLN1JuUTdTVHRnT3dZ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-19T08:10:44.847621+00:00",
+   "title_ru": "Индонезийская фондовая биржа встретится с MSCI в понедельник, чтобы получить разъяснения по поводу предупреждения о понижении рейтинга"
   }
  ],
  "last_digest": "2026-10-18",
@@ -9003,14 +8963,13 @@
   "sec_seen": [
    "0001213900-26-110436",
    "0001213900-26-110428",
-   "0000037785-26-000161",
    "0001437749-26-032866",
    "0002086163-26-000012",
    "0002152984-26-000004",
    "0001437749-26-032865",
    "0001193125-26-424368",
-   "0002154954-26-000004",
    "0001214659-26-013016",
+   "0002154954-26-000004",
    "0000037785-26-000158",
    "0001193125-26-424439",
    "0001193125-26-424414",
@@ -9031,6 +8990,7 @@
    "0002152990-26-000002",
    "0001225208-26-008439",
    "0000037785-26-000157",
+   "0000037785-26-000162",
    "0001193125-26-424412",
    "0001193125-26-424426",
    "0001477932-26-006312",
@@ -9048,7 +9008,7 @@
    "0000037785-26-000164",
    "0001509409-26-000012",
    "0001193125-26-424421",
-   "0000037785-26-000162"
+   "0000037785-26-000161"
   ],
   "errors": {}
  }
