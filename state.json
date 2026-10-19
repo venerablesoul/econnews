@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "395cfcd2470e9219": "2026-10-16T09:38:52.038387+00:00",
-  "b73bb0973b0c25fa": "2026-10-16T09:38:52.038387+00:00",
   "c734cf11fe0a3fe4": "2026-10-16T09:43:52.034981+00:00",
   "119f51e2bd5cf9fa": "2026-10-16T09:48:52.134831+00:00",
   "0692814faeed76b7": "2026-10-16T09:53:52.071815+00:00",
@@ -583,39 +581,10 @@
   "e310b7bf10f97670": "2026-10-19T09:30:45.038128+00:00",
   "94cdf7dc79e0d3d9": "2026-10-19T09:30:45.038128+00:00",
   "fd7bef228b9c35d6": "2026-10-19T09:35:44.855402+00:00",
-  "d84177728cd18893": "2026-10-19T09:35:44.855402+00:00"
+  "d84177728cd18893": "2026-10-19T09:35:44.855402+00:00",
+  "155ff4df77856ec3": "2026-10-19T09:40:44.891797+00:00"
  },
  "recent": [
-  {
-   "title": "Ship attack reports near Hormuz reach record high as oil exports slow",
-   "link": "https://www.bbc.co.uk/news/articles/cmde8dpg8g0no?at_medium=RSS&at_campaign=rss",
-   "sources": [
-    "BBC"
-   ],
-   "score": 4,
-   "ts": "2026-10-16T09:38:52.038387+00:00",
-   "title_ru": "Сообщения о нападениях на корабли возле Ормуза достигли рекордного уровня, поскольку экспорт нефти замедляется",
-   "lead": "BBC Verify analysis of data from a UK maritime agency shows 12 vessels were struck in a week.",
-   "lead_ru": "Анализ BBC Verify данных морского агентства Великобритании показывает, что за неделю пострадало 12 судов.",
-   "tags": [
-    "oil"
-   ]
-  },
-  {
-   "title": "Indonesia Rate-Hike Bets Grow as MSCI Alarm Pressures Rupiah",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-16/indonesia-rate-hike-bets-grow-as-msci-alarm-pressures-rupiah",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T09:38:52.038387+00:00",
-   "title_ru": "Ставки на повышение ставок в Индонезии растут, поскольку сигнал тревоги MSCI оказывает давление на рупию",
-   "lead": "Bank Indonesia faces pressure to raise interest rates next week after MSCI Inc. warned it may reclassify the country’s stock market, according to analysts.",
-   "lead_ru": "По мнению аналитиков, Банк Индонезии столкнется с давлением с целью повышения процентных ставок на следующей неделе после того, как MSCI Inc. предупредила, что может реклассифицировать фондовый рынок страны.",
-   "tags": [
-    "rates"
-   ]
-  },
   {
    "title": "China Moves to Restrict Exports of Some Solar Technologies",
    "link": "https://www.bloomberg.com/news/articles/2026-10-16/china-moves-to-restrict-exports-of-some-solar-technologies",
@@ -5153,6 +5122,19 @@
    ],
    "score": 1,
    "ts": "2026-10-19T09:35:44.855402+00:00"
+  },
+  {
+   "title": "Explainer: MSCI's case against Indonesian stocks and the $65 billion fallout",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOV0hicmI2MG4yeTRybTVNaHJFSWhnS2VxY0FUUVl0YUtCVmE5NHRjdEZ1cmhYTU9iNFlScnlFb2pKT1Fra2lnLWdHTzFyUW9aZy1tM0xoVkRjckI2Nk1jUFlwbjQ0SVlMdURDUmluQmNaQTdEVDlrbDlvSUN1WVlhd1lsZ2FVVXhzTjB6Q05VYXlzZGpPajFwWjlCYjdBREtCS2VoZUQ5M0pVb2p5cDVN?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-19T09:40:44.891797+00:00",
+   "title_ru": "Объяснитель: дело MSCI против индонезийских акций и последствия в 65 миллиардов долларов",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-18",
@@ -8987,14 +8969,13 @@
   "sec_seen": [
    "0001213900-26-110436",
    "0001213900-26-110428",
-   "0000037785-26-000161",
    "0001437749-26-032866",
    "0002086163-26-000012",
    "0002152984-26-000004",
    "0001437749-26-032865",
    "0001193125-26-424368",
-   "0002154954-26-000004",
    "0001214659-26-013016",
+   "0002154954-26-000004",
    "0000037785-26-000158",
    "0001193125-26-424439",
    "0001193125-26-424414",
@@ -9015,6 +8996,7 @@
    "0002152990-26-000002",
    "0001225208-26-008439",
    "0000037785-26-000157",
+   "0000037785-26-000162",
    "0001193125-26-424412",
    "0001193125-26-424426",
    "0001477932-26-006312",
@@ -9032,7 +9014,7 @@
    "0000037785-26-000164",
    "0001509409-26-000012",
    "0001193125-26-424421",
-   "0000037785-26-000162"
+   "0000037785-26-000161"
   ],
   "errors": {}
  }
