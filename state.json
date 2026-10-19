@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "f7c994abf15f00df": "2026-10-16T12:14:26.488491+00:00",
-  "38dae6b91790b6b0": "2026-10-16T12:14:26.488491+00:00",
-  "f259fe45c69a5491": "2026-10-16T12:14:26.488491+00:00",
-  "0dfdc3648b967228": "2026-10-16T12:14:26.488491+00:00",
   "54305d5695678d38": "2026-10-16T12:24:26.427407+00:00",
   "9a1e0ce26d2efea4": "2026-10-16T12:24:26.427407+00:00",
   "61f04e6cafdc37c9": "2026-10-16T12:24:26.427407+00:00",
@@ -576,58 +572,10 @@
   "da97a804190d1625": "2026-10-19T11:36:15.419337+00:00",
   "e9e88a8c32bbe169": "2026-10-19T11:56:15.427247+00:00",
   "efe4cea5280275f1": "2026-10-19T12:01:15.473108+00:00",
-  "997fe04ffe89279b": "2026-10-19T12:01:15.473108+00:00"
+  "997fe04ffe89279b": "2026-10-19T12:01:15.473108+00:00",
+  "8f97c2389ea3d9bd": "2026-10-19T12:16:15.440013+00:00"
  },
  "recent": [
-  {
-   "title": "Big change at the ECB? How Christine Lagarde could step down early",
-   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9VNE9XV1pIdE9ham02c2swYWZsOVNheVNnQmM3bzY2R1NCbFI4TGdCWTZnSzBwX0VVeWppdG9DM0ViYnlKdXU2TUxpdF90d19YV2wxekFpcWtOV1pkeTZ5R3dMRFpXWGZUR3hQT0w5ZDgwd0Q5QVNac0hOYVc0Zw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-16T12:14:26.488491+00:00",
-   "title_ru": "Большие перемены в ЕЦБ? Как Кристин Лагард могла уйти в отставку досрочно",
-   "tags": [
-    "ECB"
-   ]
-  },
-  {
-   "title": "Beijing seeks tighter grip on AI exports amid US rivalry",
-   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNMWNnS1haU3c5T3lybTBzQUNxZF9lMmhWaFp0Yk5UbzhDdklobHpkRHk2dExFU1dWZmVMVENFNEVLOW9JWDdscm15VDhObXhhc1JwYjlIelZjeFJuMG9jVERmTHRNRTZtSlBRYndNc2IxZTRkdWtPUGdlWDhoSEZQTHVZNzIwMFUzWVhjT3gxUWl1X2VpM1VOM29BZElFRjlaek1uRDFQb2N5aF9FTlF4U1N4WFZRVmtyUTBLdmVJc0Rzb3E2NkZ5ZQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T12:14:26.488491+00:00",
-   "title_ru": "Пекин стремится ужесточить контроль над экспортом ИИ на фоне соперничества с США",
-   "tags": [
-    "China"
-   ]
-  },
-  {
-   "title": "Deutsche Bank prepares crypto custody launch, targets Asia growth",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNWnpsZnAzT2VQZWFCcGkyLXVQVDNxelp4bmVZczcwSzlJUjhIUnZ2MzVGa2VVd1JQczIzYXIxT0lIVW8tZTJxdW5jR2xaLUU5QjBiSDl4a01oaE5qeTBEUnNUMEdabUZiTDRRQjFaWnlJRHYwT1VLZTV6SmNYSERRYkwtbV9KSkQybkdaQkJSOF80d2hYRFBGWEhJcE1TT1lQUDBKTTlBbHlyeTVIS0ZtTDg0Y1JONUF3?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T12:14:26.488491+00:00",
-   "title_ru": "Deutsche Bank готовит запуск криптовалютного депозитария и нацелен на рост в Азии",
-   "tags": [
-    "crypto"
-   ]
-  },
-  {
-   "title": "Morning Bid: AI’s debt burden",
-   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBSNU1PekVhRTAwU25ESFc0a2Y0Z1FlcVNkeTZEVnR5VVFPa1lrNkxjb09yV3NWSm92aXEwUDdTUHlhbnFWc1FfbjZPSHZGZlotaWhBbTNhV3d5S3RfQUY1Y0lfVXJMZw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T12:14:26.488491+00:00",
-   "title_ru": "Утренняя ставка: долговое бремя ИИ"
-  },
   {
    "title": "Kapteyn: Hot Inflation Raises Risk of Fed Hikes Beyond December",
    "link": "https://www.bloomberg.com/news/videos/2026-10-16/kapteyn-hot-inflation-risks-fed-hikes-beyond-december-video",
@@ -4937,6 +4885,23 @@
     "oil",
     "China"
    ]
+  },
+  {
+   "title": "Market Rightfully Lowering ECB Hike Expectations, Says Morgan Stanley’s Sheets",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-19/market-rightfully-lowering-ecb-hike-expectations-sheets-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-19T12:16:15.440013+00:00",
+   "title_ru": "Рынок справедливо снижает ожидания повышения ЕЦБ, говорится в отчетах Morgan Stanley",
+   "lead": "Andrew Sheets, global head of fixed income research at Morgan Stanley, examines what impact volatility in French bonds and equities may have on European Central Bank policy and how his firm is approaching European markets.",
+   "lead_ru": "Эндрю Шитс, руководитель отдела исследований фиксированного дохода в Morgan Stanley, исследует, какое влияние волатильность французских облигаций и акций может оказать на политику Европейского центрального банка и как его фирма выходит на европейские рынки.",
+   "tags": [
+    "ECB",
+    "bonds",
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-18",
@@ -8840,9 +8805,9 @@
    "0001628280-26-066215",
    "0001573338-26-000021",
    "0001900445-26-000006",
-   "0001213900-26-110428",
    "0000950103-26-015756",
    "0001543262-26-000010",
+   "0001193125-26-424699",
    "0001628280-26-066202",
    "0001493152-26-047479",
    "0001628280-26-066214",
