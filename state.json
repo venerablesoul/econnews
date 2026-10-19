@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c39ab4d1eae56c7f": "2026-10-16T08:23:52.047308+00:00",
   "abfc44c41b4cfc20": "2026-10-16T08:28:52.065555+00:00",
   "4de3b550c5bbb649": "2026-10-16T08:48:52.065812+00:00",
   "907e7af65c45dedc": "2026-10-16T08:53:52.027501+00:00",
@@ -584,7 +583,11 @@
   "8f56e24f8e94ebea": "2026-10-19T08:00:44.928441+00:00",
   "4295cc038f425333": "2026-10-19T08:05:44.847857+00:00",
   "20bd7222bb840ccf": "2026-10-19T08:10:44.847621+00:00",
-  "b2284d6e2a789835": "2026-10-19T08:15:44.885173+00:00"
+  "b2284d6e2a789835": "2026-10-19T08:15:44.885173+00:00",
+  "5f44fdd088e309d2": "2026-10-19T08:20:44.899158+00:00",
+  "d36a04202d2792ab": "2026-10-19T08:25:44.871255+00:00",
+  "82e87c5dbf159f1d": "2026-10-19T08:25:44.871255+00:00",
+  "019e8631ca63d62f": "2026-10-19T08:25:44.871255+00:00"
  },
  "recent": [
   {
@@ -5146,6 +5149,42 @@
     "bonds",
     "markets"
    ]
+  },
+  {
+   "title": "Indonesia's Selloff Deepens With Officials set for MSCI Meeting",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-19/insonesia-s-selloff-deepens-after-msci-warning-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-19T08:25:44.871255+00:00",
+   "title_ru": "Распродажа в Индонезии углубляется, поскольку официальные лица собираются на встречу MSCI",
+   "lead": "Indonesian markets extended their selloff, with stocks deepening their worst rout in almost 30 years and losses spreading to bonds and the rupiah after MSCI warned the country may face a two-step downgrade.",
+   "lead_ru": "Индонезийские рынки продолжили распродажу, акции усугубили худшее падение почти за 30 лет, а потери распространились на облигации и рупию после того, как MSCI предупредил, что страна может столкнуться с понижением рейтинга на два этапа.",
+   "tags": [
+    "bonds",
+    "markets"
+   ]
+  },
+  {
+   "title": "UK's Serica Energy lowers annual production forecast on Triton delays",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQTzliUHdaZTFxRzNOaU5zY21KSFA0cjVnR1NZOHl1aXU4WjV1UGFkeWp5ZEZFNTkwN2x1TW80NXo0SGRwLXlFYUo1a3d4TWwteVRxNGt3QzJIWnJGRF81bmNaeEVBMG1BM1hqQTBEWkZkcFBZX1llUUlqZ3B1Y1JYSUpRREUyd05JdlNDUWdRSjlOTUpuUVpSeVlJWVU5YV9BSEF0SjNsTGlDX3Z0R0tvSi1wMHlfV2Yx?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-19T08:25:44.871255+00:00",
+   "title_ru": "Британская Serica Energy снизила годовой прогноз добычи из-за задержек Triton"
+  },
+  {
+   "title": "Japan PM says won't rule out debt issuance to fund tax cut",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNQXFRLWQ4eGdhRXk3Y09zSFZldlp2TTVWeERpVXp5Z2M4WFF2N3NvQjlCOGplMml6cjh0NVdhVHEyY1FncWtMN2NEeGF0TWkyeVdFVU56Rm5EbV9xOGhIcDU0bmtKMWhTSi1GZVZZeW92SXVxa3U3SkRCRmwwZEtGY1NKMG5DeGlieWtwbmxoNkJQZmxKZ0t4S3BLN1AyN0h1T2JIU2x3MFdWVE5KNmc?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-19T08:25:44.871255+00:00",
+   "title_ru": "Премьер-министр Японии заявил, что не исключает выпуска долговых обязательств для финансирования снижения налогов"
   }
  ],
  "last_digest": "2026-10-18",
