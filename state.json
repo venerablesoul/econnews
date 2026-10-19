@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "2b7b1226e77ad0ff": "2026-10-16T11:59:26.421701+00:00",
-  "8d9a3fa5bb4472f6": "2026-10-16T11:59:26.421701+00:00",
   "249b609173f0d6e1": "2026-10-16T12:04:26.452639+00:00",
   "95fb92a92874f526": "2026-10-16T12:04:26.452639+00:00",
   "1d2848abcd1d30cc": "2026-10-16T12:09:26.473614+00:00",
@@ -580,19 +578,11 @@
   "b84821d4f58e7ae2": "2026-10-19T11:26:15.480755+00:00",
   "cc0151d5ca3e79a0": "2026-10-19T11:26:15.480755+00:00",
   "da97a804190d1625": "2026-10-19T11:36:15.419337+00:00",
-  "e9e88a8c32bbe169": "2026-10-19T11:56:15.427247+00:00"
+  "e9e88a8c32bbe169": "2026-10-19T11:56:15.427247+00:00",
+  "efe4cea5280275f1": "2026-10-19T12:01:15.473108+00:00",
+  "997fe04ffe89279b": "2026-10-19T12:01:15.473108+00:00"
  },
  "recent": [
-  {
-   "title": "Mapping the Market: Bulls beware",
-   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNVzhyTExkaER4WEJ3VXV5MnMyVjNxMW16aVE3YXFlRDkwSGtseDVfUzJOVkZLci04NG1KTFlfWTB4RlFmZmFxdUs3blpoOVJDTjJ2VTFRMXJDZjY4OWFSQ0hEbUN0UnZGUGh4TDZfbFF4Ui1qZGhLbWxOdjd6OHZ5MnktMA?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T11:59:26.421701+00:00",
-   "title_ru": "Картирование рынка: быки, будьте осторожны"
-  },
   {
    "title": "Senegal Plans to Cut Budget Deficit Below IMF Forecast Next Year",
    "link": "https://www.bloomberg.com/news/articles/2026-10-16/senegal-plans-to-cut-budget-deficit-below-imf-forecast-next-year",
@@ -4967,6 +4957,33 @@
    ],
    "score": 1,
    "ts": "2026-10-19T11:36:15.419337+00:00"
+  },
+  {
+   "title": "Qatar LNG Cargo Makes Rare Red Sea Journey to Get Gas to Europe",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQeWpKMENJOFNXdE1Zdy1yYzJtVHIta2FnaXBWZUpHU3U3cVBOY3MxblRmRldiRkdOTzkwM0pDOXJDTTYtNzFMMl9rUUJLZF9xeTFTQjlmNVBseEdZZTlyaWpTNnZTdnRpaEdiMkpZRjBtT0hpVkg1bThTbjRCc0wySUFzQldIblpZbWVSMXR3MWU1UVk5UXBtVV9wYlkyTEZfYkNKRzg1T2FVVmM3QWdUdHFkVVI?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-19T12:01:15.473108+00:00",
+   "title_ru": "Qatar LNG Cargo совершает редкое путешествие по Красному морю для доставки газа в Европу",
+   "tags": [
+    "gas"
+   ]
+  },
+  {
+   "title": "Chinese oilfield service company Anton starts marketing Iraqi oil",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNb0szdXFuMEYyRHpXNHhVcUF1UDhNQVAyWGw3cm9hNUY3RGNyOVQyN3k3TWJFd0JEWXd0YS13TzFjMGpPZ1FSbUtDNkktQW5WZ3RaNGc3UGlpdmhtUGszRVM4MV9HQWlfcS1rREF1eTRhOHRHSFU4emVFWnp5MVdXM2hVcU55OGFoUHd3NXZacHVPNWZRMHJjUHVZSktBMG9GaFZaS3NTZlNMZ1VPS1UwTE4za3kwMzNK?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-19T12:01:15.473108+00:00",
+   "title_ru": "Китайская нефтесервисная компания Anton начинает сбыт иракской нефти",
+   "tags": [
+    "oil",
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-10-18",
@@ -5013,7 +5030,7 @@
   "2026-10-19-09"
  ],
  "calendar": {
-  "fetched": "2026-10-19T06:00:44.865624+00:00",
+  "fetched": "2026-10-19T12:01:15.473108+00:00",
   "events": [
    {
     "title": "IMF Meetings",
@@ -5118,14 +5135,6 @@
     "impact": "Low",
     "forecast": "-0.3%",
     "previous": "0.4%"
-   },
-   {
-    "title": "Foreign Direct Investment ytd/y",
-    "country": "CNY",
-    "ts": "2026-10-19T09:10:00+00:00",
-    "impact": "Low",
-    "forecast": "",
-    "previous": "-5.3%"
    },
    {
     "title": "CPI m/m",
@@ -5254,6 +5263,14 @@
     "impact": "Low",
     "forecast": "23.6",
     "previous": "25.8"
+   },
+   {
+    "title": "Foreign Direct Investment ytd/y",
+    "country": "CNY",
+    "ts": "2026-10-20T09:10:00+00:00",
+    "impact": "Low",
+    "forecast": "",
+    "previous": "-5.3%"
    },
    {
     "title": "10-y Bond Auction",
@@ -8892,8 +8909,8 @@
    "0001213900-26-110434",
    "0001628280-26-066213",
    "0001801661-26-000123",
-   "0001193125-26-424439",
    "0001391935-26-000009",
+   "0001493152-26-047506",
    "0000950103-26-015754",
    "0001213900-26-110429"
   ],
