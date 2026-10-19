@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "8715604258485543": "2026-10-16T06:48:52.226398+00:00",
   "cb5f57e563c970f5": "2026-10-16T06:53:52.086191+00:00",
   "2295a262844e3349": "2026-10-16T06:53:52.086191+00:00",
   "d8ec1922043eec34": "2026-10-16T06:53:52.086191+00:00",
@@ -583,7 +582,11 @@
   "e44329f088f37a9b": "2026-10-19T06:25:44.892773+00:00",
   "2b41075f86c91e64": "2026-10-19T06:40:44.906919+00:00",
   "13bf803942331dfd": "2026-10-19T06:45:44.877540+00:00",
-  "cae857f25966f652": "2026-10-19T06:45:44.877540+00:00"
+  "cae857f25966f652": "2026-10-19T06:45:44.877540+00:00",
+  "edbfc75fec54bd72": "2026-10-19T06:50:44.840005+00:00",
+  "517c1f99dbed9280": "2026-10-19T06:50:44.840005+00:00",
+  "c2c64bec82277ce7": "2026-10-19T06:50:44.840005+00:00",
+  "f4535cae33fc9a26": "2026-10-19T06:50:44.840005+00:00"
  },
  "recent": [
   {
@@ -5129,6 +5132,45 @@
    "score": 3,
    "ts": "2026-10-19T06:45:44.877540+00:00",
    "title_ru": "Йока: Республика Конго проводит «реальные реформы» для стимулирования экономики (видео)"
+  },
+  {
+   "title": "UK Gilts Face Budget Test as Bond Market Calm Holds",
+   "link": "https://www.bloomberg.com/news/newsletters/2026-10-19/uk-gilts-face-budget-test-as-bond-market-calm-holds",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-19T06:50:44.840005+00:00",
+   "title_ru": "Британские облигации сталкиваются с бюджетным испытанием, поскольку на рынке облигаций сохраняется спокойствие",
+   "lead": "Investors say a budget that avoids surprises could even spark a relief rally",
+   "lead_ru": "Инвесторы говорят, что бюджет, который избегает сюрпризов, может даже спровоцировать ралли помощи",
+   "tags": [
+    "bonds",
+    "markets"
+   ]
+  },
+  {
+   "title": "Real Estate Markets",
+   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE8xQ1h1ZFVQOVo3U1JqdWxJSWpBYk83cVJxQVhoUEc0Q1Npc0xuWDNIYkZEdHR0dkNIM1FhallHTEhQVmRDbmtnMGt6ekpraWFXel9LUE9wbXVkUjBINFpWSzJnUQ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-19T06:50:44.840005+00:00",
+   "title_ru": "Рынки недвижимости"
+  },
+  {
+   "title": "COMMENTARY: Asian refiners' pain is Middle East oil producers' problem: Bousso",
+   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxORXo3cnhIZDJzWmtCS3BfenR2LVNIbWYxQ2dfNTVOdFlnMm8wZGIwemtWUC1vdTlTd2V3SzhIUTJWRmY5cG1JbWg5QzJfUGQ5UlZ0aDlydmVQbTZWNURyWGtFWlY3NDY4Y215MnpVT0xMdFlBaWlBMllnd0h0Zjh6TzdDMk5UT1JxR1FQSHkxRlhJeE5qQjF6SzduTTVOMUdLTFdDSG9hOGVoY3BPY2t3eUVVa0g2MDV1SktDc2ljaUJzWUkycGhubEgxUl8?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-19T06:50:44.840005+00:00",
+   "title_ru": "КОММЕНТАРИЙ: Боль азиатских нефтеперерабатывающих заводов – это проблема нефтедобывающих стран Ближнего Востока: Буссо",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-18",
@@ -8963,14 +9005,13 @@
   "sec_seen": [
    "0001213900-26-110436",
    "0001213900-26-110428",
-   "0000037785-26-000161",
    "0001437749-26-032866",
    "0002086163-26-000012",
    "0002152984-26-000004",
    "0001437749-26-032865",
    "0001193125-26-424368",
-   "0002154954-26-000004",
    "0001214659-26-013016",
+   "0002154954-26-000004",
    "0000037785-26-000158",
    "0001193125-26-424439",
    "0001193125-26-424414",
@@ -8991,6 +9032,7 @@
    "0002152990-26-000002",
    "0001225208-26-008439",
    "0000037785-26-000157",
+   "0000037785-26-000162",
    "0001193125-26-424412",
    "0001193125-26-424426",
    "0001477932-26-006312",
@@ -9008,7 +9050,7 @@
    "0000037785-26-000164",
    "0001509409-26-000012",
    "0001193125-26-424421",
-   "0000037785-26-000162"
+   "0000037785-26-000161"
   ],
   "errors": {}
  }
