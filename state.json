@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e04926ef6a28433b": "2026-10-16T17:29:55.568091+00:00",
-  "d800290b51c193ba": "2026-10-16T17:29:55.568091+00:00",
   "7d5ffbb64838f701": "2026-10-16T17:34:55.663425+00:00",
   "a713a3864ecdb5c5": "2026-10-16T17:49:55.643037+00:00",
   "cb9d8ca2d514845f": "2026-10-16T18:04:55.657033+00:00",
@@ -526,19 +524,11 @@
   "c6971bfe8b4f4caa": "2026-10-19T17:15:37.580419+00:00",
   "9b4807e570c3cdf0": "2026-10-19T17:20:37.587292+00:00",
   "f04e60139d74313f": "2026-10-19T17:20:37.587292+00:00",
-  "31554e62df12b8bd": "2026-10-19T17:25:37.574159+00:00"
+  "31554e62df12b8bd": "2026-10-19T17:25:37.574159+00:00",
+  "0c8b9f1e0de8e424": "2026-10-19T17:30:37.576828+00:00",
+  "2d43c579113eb921": "2026-10-19T17:30:37.576828+00:00"
  },
  "recent": [
-  {
-   "title": "Families wait for answers after Nigerian military plane crash",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOX1MyRUZkdkpqZEtTbk1ndWpXMnVhT1dDX3duOE1LVG1feE1aeml2azRQVXhhRFBYc1Q5VFFocXFVbUJ2bXFzSC1EMFZDTzhFNFBtRnJoazdXSXlsNm55clJYRFpCWlpaa0thMWxseDlJLWdTbDdOT25rZVIzaFhuT1FTY202bEFXenZTUDM4SXg1LVdSSmhFQjY1ZWcybHBBUmlVM2s0cElNQQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-16T17:29:55.568091+00:00",
-   "title_ru": "Семьи ждут ответов после крушения военного самолета в Нигерии"
-  },
   {
    "title": "Mortgage Bond Sales Put on Hold as Investors Demand More Yield",
    "link": "https://www.bloomberg.com/news/articles/2026-10-16/mortgage-bond-sales-put-on-hold-as-investors-demand-more-yield",
@@ -4318,6 +4308,16 @@
    "title_ru": "CoreWeave повышен до покупки в Goldman из-за опасений по поводу раздутой задолженности",
    "lead": "CoreWeave Inc. was upgraded to buy from neutral at Goldman Sachs, a move that represents a vote of confidence in the cloud-computing provider following a period of heavy volatility for the stock related to its debt.",
    "lead_ru": "Рейтинг CoreWeave Inc. был повышен до нейтральной позиции в Goldman Sachs, что представляет собой вотум доверия поставщику облачных вычислений после периода сильной волатильности акций, связанного с его долгом."
+  },
+  {
+   "title": "South Africa must prepare for potential loss of US trade benefits, president says",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQSEVHdjlrUFl3c0pOclgxa3gwWEF1NHpLYkgzOEdLOGQ2OFBxVDdNNk1DYW1pbXFxVTZnbjlGX3BCY3VuTVliaGtfSDVad2o5RWh6aW42NmFvaEZ3bGd4aXpXRGtQWEdCakR4RXlta21wbm9Vb2R2anFQYXJKa1podEFOT1prNDc0aVBpZXo3MDYyUVBOZGlDcW9vQzBLdmFvRXZrYXFxU29vekZOV2lvY19BZEh1MWFwckw4ZVJB?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-19T17:30:37.576828+00:00",
+   "title_ru": "Южная Африка должна подготовиться к потенциальной потере торговых выгод США, говорит президент"
   }
  ],
  "last_digest": "2026-10-18",
@@ -6392,6 +6392,22 @@
    },
    {
     "src": "sec",
+    "id": "27127f6e94ead03b",
+    "ticker": "LNBIX",
+    "company": "Lincoln Bain Capital Total Credit Fund",
+    "who": "Lincoln Financial Investments Corp",
+    "role": "10% owner",
+    "type": "buy",
+    "value": 25000000,
+    "shares": 2477701,
+    "price": 10.09,
+    "plan": false,
+    "date": "2026-10-15",
+    "disclosed": "2026-10-19",
+    "link": "https://www.sec.gov/Archives/edgar/data/2054992/000119312526425009/0001193125-26-425009-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "0bd25d90d8b6ef2e",
     "ticker": "ELTP",
     "company": "ELITE PHARMACEUTICALS INC /NV/",
@@ -8328,10 +8344,11 @@
   "sec_seen": [
    "0001225208-26-008442",
    "0001196963-26-000004",
-   "0001213900-26-110586",
    "0001213900-26-110590",
+   "0001213900-26-110586",
    "0001213900-26-110585",
    "0001213900-26-110589",
+   "0001193125-26-425009",
    "0001870078-26-000003",
    "0001213900-26-110587"
   ],
