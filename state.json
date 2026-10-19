@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c3873567057162a6": "2026-10-16T06:23:52.089418+00:00",
   "3f34c38ed7912c10": "2026-10-16T06:28:52.070202+00:00",
   "e4a941bab398ba44": "2026-10-16T06:28:52.070202+00:00",
   "eddb90c9868605f4": "2026-10-16T06:33:52.064774+00:00",
@@ -586,18 +585,11 @@
   "ecda752f29169f93": "2026-10-19T06:15:44.862697+00:00",
   "9fd9bdd05f849345": "2026-10-19T06:15:44.862697+00:00",
   "5c3a62aa2571a4e8": "2026-10-19T06:20:44.876624+00:00",
-  "3b5b18e97f82d39e": "2026-10-19T06:20:44.876624+00:00"
+  "3b5b18e97f82d39e": "2026-10-19T06:20:44.876624+00:00",
+  "71a562717814a1c5": "2026-10-19T06:25:44.892773+00:00",
+  "e44329f088f37a9b": "2026-10-19T06:25:44.892773+00:00"
  },
  "recent": [
-  {
-   "title": "John Healey set to raise bank taxes in the budget – business live",
-   "link": "https://www.theguardian.com/business/live/2026/oct/16/john-healey-set-to-raise-bank-taxes-shares-profits-stock-markets-imf-latest-news-updates",
-   "sources": [
-    "The Guardian"
-   ],
-   "score": 2,
-   "ts": "2026-10-16T06:23:52.089418+00:00"
-  },
   {
    "title": "Fed's Goolsbee on inflation: discouraging, but still some optimism",
    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPcXR1ek9vWXFJUnhjSUhmTnNnd0o1MERLZ3Q5OWxEX2J4UERIT1dGNWMwaVI4MkpiajNzZmprSE1vZWRaSDZ4RjlkSjFlSG1FSWxYT2JkSVNSaVp5alFfbGQ1RHd0WHdaeGw2bU1aaHQ2cmJhSnM4STd2cS1odWZreU1nU0hqYm5WeVJkUmdxMmg2NFRiMkFmMkRtMWQxTWd5SHRNM2FR?oc=5",
@@ -5170,6 +5162,35 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "South African rand gains slightly as traders await budget speech, inflation data",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQNi1CSlFMVHVjQ1hCYWU0aDlBLXp6cFlwQnRBanBWb0Z2emxXWXlWY1B3THZWNWMteWFsVXhFN1hOLU1qb1RYMWlaNlFjSXVSY1puRERweUxEcFU1OGpvTDVKaGlRcVdnYmZsay16N3JXc0tfLUxxMFNwcmpISm9qc2wxQUdyc1plZS1sRm1SVmhwUjBaNjhjcDZINWo1S1lDUmhHVnE5ckN6OWlnU21rbXVaQjFtNW9rc21XbjNpS3NRaTA?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-19T06:25:44.892773+00:00",
+   "title_ru": "Южноафриканский рэнд немного вырос, поскольку трейдеры ждут бюджетной речи, данные по инфляции",
+   "tags": [
+    "inflation"
+   ]
+  },
+  {
+   "title": "China On Track To Meet GDP Goal as Support Moves Kick In",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-19/the-china-show-10-19-2026-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-19T06:25:44.892773+00:00",
+   "title_ru": "Китай на пути к достижению цели по ВВП, поскольку поддержка начинает действовать",
+   "lead": "“Bloomberg: The China Show” is your definitive source for news and analysis on the world's second-biggest economy.",
+   "lead_ru": "«Bloomberg: The China Show» - ваш исчерпывающий источник новостей и аналитических материалов о второй по величине экономике мира.",
+   "tags": [
+    "China",
+    "GDP"
+   ]
   }
  ],
  "last_digest": "2026-10-18",
@@ -9004,13 +9025,14 @@
   "sec_seen": [
    "0001213900-26-110436",
    "0001213900-26-110428",
+   "0000037785-26-000161",
    "0001437749-26-032866",
    "0002086163-26-000012",
    "0002152984-26-000004",
    "0001437749-26-032865",
    "0001193125-26-424368",
-   "0001214659-26-013016",
    "0002154954-26-000004",
+   "0001214659-26-013016",
    "0000037785-26-000158",
    "0001193125-26-424439",
    "0001193125-26-424414",
@@ -9031,7 +9053,6 @@
    "0002152990-26-000002",
    "0001225208-26-008439",
    "0000037785-26-000157",
-   "0000037785-26-000162",
    "0001193125-26-424412",
    "0001193125-26-424426",
    "0001477932-26-006312",
@@ -9049,7 +9070,7 @@
    "0000037785-26-000164",
    "0001509409-26-000012",
    "0001193125-26-424421",
-   "0000037785-26-000161"
+   "0000037785-26-000162"
   ],
   "errors": {}
  }
