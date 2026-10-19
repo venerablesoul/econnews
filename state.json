@@ -1,12 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "90b2fabb1b67bda4": "2026-10-16T12:34:26.411400+00:00",
-  "a2ce8c3e1dbc4ca5": "2026-10-16T12:34:26.411400+00:00",
-  "9d5a9fef06c5a32e": "2026-10-16T12:34:26.411400+00:00",
-  "fe8520421e6f09a0": "2026-10-16T12:34:26.411400+00:00",
-  "cabb6d62bd555880": "2026-10-16T12:34:26.411400+00:00",
-  "203cebfc7cd2a635": "2026-10-16T12:34:26.411400+00:00",
   "22a39500d57a59dd": "2026-10-16T12:39:26.451995+00:00",
   "7e4d03e7d6d851f0": "2026-10-16T12:39:26.451995+00:00",
   "3d6b4f7d54de64f6": "2026-10-16T12:44:26.594553+00:00",
@@ -573,86 +567,11 @@
   "8f97c2389ea3d9bd": "2026-10-19T12:16:15.440013+00:00",
   "38ab20ff24e32679": "2026-10-19T12:31:15.464685+00:00",
   "2013f5ca44160fe1": "2026-10-19T12:31:15.464685+00:00",
-  "6622d690510f0540": "2026-10-19T12:31:15.464685+00:00"
+  "6622d690510f0540": "2026-10-19T12:31:15.464685+00:00",
+  "9c0720ac911bd2bb": "2026-10-19T12:36:15.489191+00:00",
+  "e85ae464d3b479f5": "2026-10-19T12:36:15.489191+00:00"
  },
  "recent": [
-  {
-   "title": "The once-obscure tech at the heart of the green energy trade war",
-   "link": "https://www.ft.com/content/bc221890-6718-4792-967c-9828e96f38af?syn-25a6b1a6=1",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 6,
-   "ts": "2026-10-16T12:34:26.411400+00:00",
-   "title_ru": "Некогда скрытая технология, лежащая в основе торговой войны за зеленую энергию",
-   "lead": "Power inverters are central to the global clean electricity boom but reliance on China is triggering security fears",
-   "lead_ru": "Силовые инверторы занимают центральное место в глобальном буме чистой электроэнергии, но зависимость от Китая вызывает опасения по поводу безопасности",
-   "tags": [
-    "China",
-    "tariffs"
-   ]
-  },
-  {
-   "title": "Regional Economic Outlook for the Western Hemisphere, October 2026",
-   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNc0xmT253d1ZBa0duVEwwU25Bajd2N2kwdmdMQ1MzMm5qa1dkODFoRnpSYXBZS0NmVlltZkFnVTFRQnVzVXRoOGNMUlZBdG4ySFVUSEhnU3VEY3Y2ZndGaU9LcHlfZTZxMWx1dnJreTladUw3OG1aNWkwa2VnelVRZEFEeDBqWVB5dExlTklNZkV5LW5acHd3LUZwcDJvTjg0RG5jNS0zWFpQLVVYMFoyTng0ZE9mMV80SUtiTnhsaXdNMDBp?oc=5",
-   "sources": [
-    "IMF"
-   ],
-   "score": 5,
-   "ts": "2026-10-16T12:34:26.411400+00:00",
-   "title_ru": "Перспективы региональной экономики для Западного полушария, октябрь 2026 г."
-  },
-  {
-   "title": "U.S. Import and Export Price Indexes News Release",
-   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1EOV9YT1JVZFNSbGYzSnFhZXNNcUdLaHpmYXFkNkpmdXBNaGV1S0xRZzNfeGFsczE2R1Zpb0ZuLWhTckswd0JsRUxKTkNpSV8xWV9hVGIxN1U5d2hDMXpqbjlkY1lac25oVFRtMXBn?oc=5",
-   "sources": [
-    "US Labor Statistics (BLS)"
-   ],
-   "score": 4,
-   "ts": "2026-10-16T12:34:26.411400+00:00",
-   "title_ru": "Индексы импортных и экспортных цен США"
-  },
-  {
-   "title": "India's battered IT stocks head for best week in 18 years on earnings boost",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPS1FQTURRYWZrT3Z6RTFsekNsSWVOUndiZ1J1TG9xMnZqMGVELTFhdEN3MzA4bHhOYmlqT01VYmQ2OHlOMWpkV2hLZlJRNU5LWm03VWtCRTIzbExVT0VWVjEwcGMzS1F0WXlfMTdjUzgzM09uSHdWaFZRUlZIb0ozeHBZb2gwTGJpWWNleWFHbGdja05GaHR5TmZ6YXptbUFFLUdqRVRWUkhOM1J6U3hQS3FB?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-16T12:34:26.411400+00:00",
-   "title_ru": "Пораженные ИТ-акции Индии возглавляют лучшую неделю за 18 лет на фоне роста доходов",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "Steelmaker Celsa Said to Ask Banks for Pitches on IPO or Sale",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-16/steelmaker-celsa-said-to-ask-banks-for-pitches-on-ipo-or-sale",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T12:34:26.411400+00:00",
-   "title_ru": "Сталелитейщик Celsa сказал, что попросит банки о подаче заявок на IPO или продажу",
-   "lead": "Spanish steelmaker Celsa Group has reached out to banks as it weighs strategic options, including a sale or an initial public offering, according to people familiar with the matter.",
-   "lead_ru": "По словам людей, знакомых с этим вопросом, испанская сталелитейная компания Celsa Group обратилась к банкам, поскольку она взвешивает стратегические варианты, включая продажу или первичное публичное размещение акций."
-  },
-  {
-   "title": "In Bangkok, central bankers push back on market rate-tightening bets",
-   "link": "https://www.ft.com/content/4c83ec2c-cd77-4f9b-94e6-fdf70af706ef",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T12:34:26.411400+00:00",
-   "title_ru": "В Бангкоке центральные банки отбрасывают ставки на ужесточение рыночных ставок",
-   "lead": "Federal Reserve and ECB play down likelihood of October rate rises while BoE says data does not currently support substantial further tightening",
-   "lead_ru": "Федеральная резервная система и ЕЦБ снижают вероятность повышения ставки в октябре, в то время как Банк Англии говорит, что данные в настоящее время не поддерживают существенное дальнейшее ужесточение",
-   "tags": [
-    "Fed",
-    "ECB"
-   ]
-  },
   {
    "title": "Ueda ‘Can’t Tolerate’ Underlying Inflation Further Over 2%",
    "link": "https://www.bloomberg.com/news/articles/2026-10-16/boj-s-ueda-can-t-tolerate-underlying-inflation-further-over-2",
@@ -4910,6 +4829,31 @@
    "title_ru": "Саморазрушительное принятие желаемого за действительное в отношении европейских автомобилей и торговли",
    "lead": "France and Germany have synthesised their bad ideas about cars into a terrible plan",
    "lead_ru": "Франция и Германия объединили свои плохие идеи об автомобилях в ужасный план"
+  },
+  {
+   "title": "Canada Inflation Rate Edges Up to 3.1%, Core Measures Ease",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-19/canada-inflation-rate-edges-up-to-3-1-core-measures-ease",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-19T12:36:15.489191+00:00",
+   "title_ru": "Инфляция в Канаде выросла до 3,1%, основные показатели ослабевают",
+   "lead": "Canada’s inflation rate ticked up to 3.1% in September as gasoline prices rose, while gauges of underlying price pressures eased.",
+   "lead_ru": "Уровень инфляции в Канаде вырос до 3,1% в сентябре, поскольку цены на бензин выросли, в то время как показатели базового ценового давления ослабли.",
+   "tags": [
+    "inflation"
+   ]
+  },
+  {
+   "title": "South Africa set for brighter fiscal outlook in Wednesday's mid-term budget",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQYUFTVVV0cHhDV19XS0VVZ1gtVWRGNk9EbWNkT2VBelVBNUw5ME95dFlOWmQ4b3p6YTJpY0doclh6blZ4S0ZCbU14di1iR0V1SGxBYlFEa092dFFhRDk5UXJza1d6Tm1mMHNKaDUxT2U3dDF2THpFQTVtZlNKZGF5WVNnOFdndWdqRUViNGg4LThUS05BNDQyaDhXc0xoRy1hbUZvdXVtenpPSEk1Ym5MNnZoTUthb3M?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-19T12:36:15.489191+00:00",
+   "title_ru": "Южная Африка настроена на более оптимистичные финансовые перспективы в среднесрочном бюджете в среду"
   }
  ],
  "last_digest": "2026-10-18",
@@ -8820,7 +8764,6 @@
    "0001628280-26-066214",
    "0001628280-26-066216",
    "0001104659-26-116675",
-   "0001213900-26-110436",
    "0001493152-26-047486",
    "0001477932-26-006312",
    "0001801661-26-000124",
