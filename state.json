@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "fa70b22e1ad31d1a": "2026-10-16T03:03:24.072380+00:00",
-  "54c4cb01150cde4c": "2026-10-16T03:03:24.072380+00:00",
   "c28c1ff7400ce48f": "2026-10-16T03:13:23.983095+00:00",
   "fd312364b71e81e9": "2026-10-16T03:18:24.015777+00:00",
   "cc3650bac9f1c332": "2026-10-16T03:23:24.082170+00:00",
@@ -595,38 +593,12 @@
   "bec807856c71f037": "2026-10-19T02:50:13.731849+00:00",
   "20ff2cd86af2487b": "2026-10-19T02:55:13.731121+00:00",
   "ca7508941492ad65": "2026-10-19T03:00:13.704581+00:00",
-  "76a3c274aa2c686e": "2026-10-19T03:00:13.704581+00:00"
+  "76a3c274aa2c686e": "2026-10-19T03:00:13.704581+00:00",
+  "841f6555711535ab": "2026-10-19T03:05:13.666811+00:00",
+  "0c0a4336b657230e": "2026-10-19T03:10:13.702155+00:00",
+  "6ddad9a17fc2ea92": "2026-10-19T03:10:13.702155+00:00"
  },
  "recent": [
-  {
-   "title": "Australia’s Three-Year Bond Sale Sees Highest Demand Since 2018",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-16/australia-s-three-year-bond-sale-sees-highest-demand-since-2018",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T03:03:24.072380+00:00",
-   "title_ru": "Продажа трехлетних облигаций в Австралии демонстрирует самый высокий спрос с 2018 года",
-   "lead": "Demand at an Australian three-year bond auction surged to the highest since 2018 as traders bet the nation’s central bank is nearing the end if its interest-rate hike cycle.",
-   "lead_ru": "Спрос на австралийском трехлетнем аукционе облигаций вырос до самого высокого уровня с 2018 года, поскольку трейдеры делают ставку на то, что центральный банк страны приближается к концу, если его цикл повышения процентных ставок закончится.",
-   "tags": [
-    "rates",
-    "bonds"
-   ]
-  },
-  {
-   "title": "Everyone Wants a Bite of China’s Egg Tart Economy",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNaDdaeGRRaGJ5Z012c0pmOTJXcFR0dmFSMlZRTFNLaHl6WTJoZG1URF90ZFRseGpyT2ZiOUlsQVFZZ1BZcmhpMEFRSmhtNVdrNzJlUURTNzA0alVxNWIxdEktNEpvcjdzSkdKZC13RGpMV0xWWERwRVJTdm1aT29IRUtkUmp4M3JQa0x6X0lLaXFfVll3eEdaM2lETml4bnlVa3RRZnBkMTg?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T03:03:24.072380+00:00",
-   "title_ru": "Все хотят откусить от китайской экономики яичного пирога",
-   "tags": [
-    "China"
-   ]
-  },
   {
    "title": "India’s Rupee Rebound Comes With Growing Strains in FX Market",
    "link": "https://www.bloomberg.com/news/articles/2026-10-16/india-s-rupee-rebound-comes-with-growing-strains-in-fx-market",
@@ -5421,6 +5393,21 @@
    "lead_ru": "Объявление появилось, когда Anthropic закладывает основу для листинга на фондовом рынке.",
    "tags": [
     "markets"
+   ]
+  },
+  {
+   "title": "China’s economy expands 4.5% in third quarter",
+   "link": "https://www.ft.com/content/cf113314-1077-4ab4-b667-9912656684f1?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 3,
+   "ts": "2026-10-19T03:10:13.702155+00:00",
+   "title_ru": "Экономика Китая в третьем квартале выросла на 4,5%",
+   "lead": "Strong exports buoy growth as domestic demand lags",
+   "lead_ru": "Сильный экспорт стимулирует рост, поскольку внутренний спрос отстает",
+   "tags": [
+    "China"
    ]
   }
  ],
