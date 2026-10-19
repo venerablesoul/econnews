@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "0c4f1bf2a498a851": "2026-10-16T02:48:23.991527+00:00",
   "ca7508941492ad65": "2026-10-16T02:53:23.962358+00:00",
   "76a3c274aa2c686e": "2026-10-16T02:53:23.962358+00:00",
   "a7fe1ec1540cb598": "2026-10-16T02:53:23.962358+00:00",
@@ -592,22 +591,13 @@
   "acea4cbde425c221": "2026-10-19T02:30:13.746842+00:00",
   "fda42d351a687542": "2026-10-19T02:35:13.712066+00:00",
   "f57b0fffdd475b52": "2026-10-19T02:35:13.712066+00:00",
-  "c2865eadfd6f1b28": "2026-10-19T02:40:13.730455+00:00"
+  "c2865eadfd6f1b28": "2026-10-19T02:40:13.730455+00:00",
+  "525f6162cc711330": "2026-10-19T02:45:13.681875+00:00",
+  "ef1c796b9935fa25": "2026-10-19T02:45:13.681875+00:00",
+  "30c423def7e9a4cc": "2026-10-19T02:50:13.731849+00:00",
+  "bec807856c71f037": "2026-10-19T02:50:13.731849+00:00"
  },
  "recent": [
-  {
-   "title": "Jakarta stocks plunge 11% as MSCI set to drop Indonesia from indexes",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPTGZDclBEV0w3ZFJ3bE8tckwwTE1YTXBXTG1GdGNfN2Vkb1BsaXFoZVo1QUF4YUhzanBOM05HNmR6X1gyalBGR05HQk5NM1VhY0VGbUhqb0dIN2txQklscWtMaVd3MVE3QTdISTRVbDZXdEpXa25EUHpZejdrZ1ozdFlOOTBBT2VfT3VFcmh5UmpjRWFoelZTUEZKOTl5UEhrc1dpWVQ3ZUpMd1NmVE8ybA?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T02:48:23.991527+00:00",
-   "title_ru": "Акции в Джакарте упали на 11%, поскольку MSCI собирается исключить Индонезию из индексов",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Indian Software Stocks Set to Beat AI Peers by Most in Decades",
    "link": "https://www.bloomberg.com/news/articles/2026-10-16/indian-software-stocks-set-to-beat-ai-peers-by-most-in-decades",
@@ -5419,6 +5409,34 @@
    "title_ru": "Nifty Bank Heavyweights HDFC, ICICI в фокусе после выходных",
    "lead": "HDFC Bank, ICICI Bank and Axis Bank report a mixed set of numbers.",
    "lead_ru": "HDFC Bank, ICICI Bank и Axis Bank сообщают о смешанном наборе цифр."
+  },
+  {
+   "title": "VIEW China's economic growth accelerates to 4.5% in third quarter",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPcXFNS245X3pBcV9XTmxwQVljcVRHRW9YWER5N3EtUlo3UnBXVm9WaE5VbUdDTTBMczJnY0hQeEpEYUdackhNb1g4VGhIcUM4VGl5UnlwOEJCT1ZqREhRZXMwVUFMVzlmT3lneGZROGR0STFaeGNuVmlCTnNEaFNjYlRta3RSd2tXVEJyOHJWNkgtSjdqZnZtanRYOUNDckZ4RUtfeTgzOTV5b3RYX0hFTg?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-19T02:50:13.731849+00:00",
+   "title_ru": "Экономический рост Китая ускорился до 4,5% в третьем квартале",
+   "tags": [
+    "China"
+   ]
+  },
+  {
+   "title": "Anthropic says it will commit 5% of its shares to 'public benefit fund'",
+   "link": "https://www.bbc.co.uk/news/articles/cm2kez327gdko?at_medium=RSS&at_campaign=rss",
+   "sources": [
+    "BBC"
+   ],
+   "score": 3,
+   "ts": "2026-10-19T02:50:13.731849+00:00",
+   "title_ru": "Anthropic заявляет, что передаст 5% своих акций в «фонд общественной пользы»",
+   "lead": "The announcement comes as Anthropic lays the ground for a blockbuster stock market listing.",
+   "lead_ru": "Объявление появилось, когда Anthropic закладывает основу для листинга на фондовом рынке.",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-18",
