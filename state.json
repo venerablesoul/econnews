@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "da9028a674abe108": "2026-10-16T04:43:23.959509+00:00",
-  "48ad89c96e54ad8b": "2026-10-16T04:43:23.959509+00:00",
-  "942a106fe39a195d": "2026-10-16T04:43:23.959509+00:00",
   "8e63af13a49f805a": "2026-10-16T05:03:23.967948+00:00",
   "1f64c53c25d94134": "2026-10-16T05:08:24.080076+00:00",
   "6831e4c1a60d8d4d": "2026-10-16T05:18:24.007277+00:00",
@@ -594,19 +591,10 @@
   "0604971327662a28": "2026-10-19T04:40:13.802104+00:00",
   "76f1d50b22bbe76e": "2026-10-19T04:40:13.802104+00:00",
   "047f55984a0a8410": "2026-10-19T04:40:46.229209+00:00",
-  "84bc11e9baf092c0": "2026-10-19T04:40:46.229209+00:00"
+  "84bc11e9baf092c0": "2026-10-19T04:40:46.229209+00:00",
+  "58c235a717b988a4": "2026-10-19T04:45:44.845848+00:00"
  },
  "recent": [
-  {
-   "title": "IMF urges Latin America to cut debt, lift productivity while tailwinds last",
-   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOcVBJUU5iQTRsZFktRGYwLU1NU2U2OEJFX1pOMllrQzlKUmUxemF3aFNPRXFianRFNElGdDRXOHRwR0pnTE1LazVuaEVKck9ualFEYjM3b3dhcjVxRDlkVkN5SGo2SjBxb2RVRFc5TVNvZWdURFkwcHY1Z043YVNGa3lfZEZEZVE0clVPOE9xWDZHYW5FdWlxMDVCRzZXbnN6S3JiQjB4TjFVajNVd2ZHMjM5SW9qNVpjSmc?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-16T04:43:23.959509+00:00",
-   "title_ru": "МВФ призывает Латинскую Америку сократить задолженность, повысить производительность, в то время как попутный ветер остается последним"
-  },
   {
    "title": "Repairing Brexit economic damage should be Burnham’s top priority, business chief says",
    "link": "https://www.theguardian.com/business/2026/oct/16/brexit-economic-damage-andy-burnham-uk-business-eu-trading-relationship",
@@ -5266,6 +5254,22 @@
    "score": 3,
    "ts": "2026-10-19T04:40:46.229209+00:00",
    "title_ru": "Франция может дождаться Ле Пен, но рынки этого не сделают"
+  },
+  {
+   "title": "MAIA: Indonesia Stocks Sell Off Again. Here's What May Cushion the Market.",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-19/indonesia-selloff-deepens-what-can-cushion-the-market-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-19T04:45:44.845848+00:00",
+   "title_ru": "MAIA: Индонезийские акции снова распродаются. Вот что может смягчить рынок.",
+   "lead": "Indonesian markets extended their selloff, with losses in bonds and the rupiah, after MSCI warned of a potential downgrade. Bloomberg's Anthony Stephens talks about the potential buffers against foreign selling. (Source…",
+   "lead_ru": "Индонезийские рынки расширили свою распродажу с потерями в облигациях и рупии после того, как MSCI предупредил о потенциальном понижении рейтинга. Энтони Стивенс из Bloomberg говорит о потенциальных буферах против иностранных продаж. (Источник…",
+   "tags": [
+    "bonds",
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-18",
@@ -9099,15 +9103,16 @@
   "sec_seen": [
    "0001213900-26-110436",
    "0001213900-26-110428",
+   "0000037785-26-000161",
    "0001437749-26-032866",
    "0002086163-26-000012",
    "0002152984-26-000004",
    "0001437749-26-032865",
    "0001193125-26-424368",
-   "0001193125-26-424439",
-   "0000037785-26-000158",
    "0002154954-26-000004",
    "0001214659-26-013016",
+   "0001193125-26-424439",
+   "0000037785-26-000158",
    "0001193125-26-424414",
    "0002088549-26-000015",
    "0001780664-26-000041",
@@ -9125,7 +9130,6 @@
    "0000037785-26-000165",
    "0002152990-26-000002",
    "0001225208-26-008439",
-   "0000037785-26-000162",
    "0000037785-26-000157",
    "0001193125-26-424412",
    "0001193125-26-424426",
@@ -9144,7 +9148,7 @@
    "0000037785-26-000164",
    "0001509409-26-000012",
    "0001193125-26-424421",
-   "0000037785-26-000161"
+   "0000037785-26-000162"
   ],
   "errors": {}
  }
