@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "6e4b725057f1295b": "2026-10-16T10:43:52.009474+00:00",
   "fbcd183efacb0964": "2026-10-16T10:48:52.044817+00:00",
   "2573f4a5d35aad8f": "2026-10-16T10:53:52.033584+00:00",
   "3b74faae6409b750": "2026-10-16T10:58:52.064912+00:00",
@@ -582,21 +581,11 @@
   "500fefd6af6adbd7": "2026-10-19T10:26:15.439131+00:00",
   "31dd18c51f0a53c0": "2026-10-19T10:31:15.426739+00:00",
   "167a06db614d6306": "2026-10-19T10:36:15.425567+00:00",
-  "413826b97fd737d6": "2026-10-19T10:41:15.500913+00:00"
+  "413826b97fd737d6": "2026-10-19T10:41:15.500913+00:00",
+  "5dbc14cfcb2e591a": "2026-10-19T10:46:15.417314+00:00",
+  "9cf91f2a01027188": "2026-10-19T10:46:15.417314+00:00"
  },
  "recent": [
-  {
-   "title": "Carlyle Buys $7.7 Billion in Consumer Loans as Truist Revamps",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-16/carlyle-buys-7-7-billion-in-consumer-loans-as-truist-revamps",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T10:43:52.009474+00:00",
-   "title_ru": "Carlyle покупает потребительские кредиты на сумму 7,7 миллиарда долларов в рамках модернизации Truist",
-   "lead": "Carlyle Group Inc. has agreed to buy $7.7 billion of unsecured personal loans from Truist Financial Corp., among the asset manager’s largest such deals as it expands a push into asset-back credit.",
-   "lead_ru": "Carlyle Group Inc. согласилась купить необеспеченные потребительские кредиты на сумму $7,7 млрд у Truist Financial Corp., что является одной из крупнейших подобных сделок управляющей компании, поскольку она расширяет возможности кредитования возврата активов."
-  },
   {
    "title": "Indonesian Stocks Tumble on MSCI Downgrade Warning",
    "link": "https://www.bloomberg.com/news/videos/2026-10-16/indonesian-stocks-tumble-on-msci-downgrade-warning-video",
@@ -5059,6 +5048,16 @@
     "bonds",
     "markets"
    ]
+  },
+  {
+   "title": "FTSE 100 slips as banks, miners drag",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOSktyR2k0NjJYQ3VQZDQyUy13dHpIbV9MWTU1QVU4ZmNnaHRyVGxlZWdVUUoxXzFKLTVJNlhGX3hvOVoxd0JpYzVYNWhZcWVaMEVQMWE5bzdScWVhX2szZFg4aEFlUXlhRmlhUzlqSUh0dnJqaDV6aERFdWFReEZyMDNjSlA3LURlWVNMVmVR?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-19T10:46:15.417314+00:00",
+   "title_ru": "Индекс FTSE 100 падает, поскольку банки и горнодобывающие компании тянут его"
   }
  ],
  "last_digest": "2026-10-18",
