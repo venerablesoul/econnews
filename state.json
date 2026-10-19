@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "b1bb16964da02ccd": "2026-10-16T16:14:26.481800+00:00",
-  "505e2d578305fad5": "2026-10-16T16:14:26.481800+00:00",
-  "96b2804c947af402": "2026-10-16T16:14:26.481800+00:00",
-  "f402cd32ee795cfe": "2026-10-16T16:19:26.466269+00:00",
-  "a761a89616fe6b73": "2026-10-16T16:19:26.466269+00:00",
   "3aac6989311811c6": "2026-10-16T16:24:26.523931+00:00",
   "ced1e5fb44b97f12": "2026-10-16T16:24:26.523931+00:00",
   "c18751d046c942f7": "2026-10-16T16:29:26.544587+00:00",
@@ -534,56 +529,10 @@
   "c610c3560e4ec72c": "2026-10-19T16:00:37.822441+00:00",
   "ed17e724ce351e15": "2026-10-19T16:00:37.822441+00:00",
   "d82838bd055dadfb": "2026-10-19T16:10:37.568874+00:00",
-  "55d6abc36fd216d2": "2026-10-19T16:10:37.568874+00:00"
+  "55d6abc36fd216d2": "2026-10-19T16:10:37.568874+00:00",
+  "5c0a233b8940be39": "2026-10-19T16:15:38.117443+00:00"
  },
  "recent": [
-  {
-   "title": "Caputo Sees Strong Argentina Recovery, Dismisses Recession Odds",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-16/caputo-sees-strong-argentina-recovery-dismisses-recession-odds",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-16T16:14:26.481800+00:00",
-   "title_ru": "Капуто прогнозирует сильное восстановление экономики Аргентины и отвергает вероятность рецессии",
-   "lead": "Argentina’s Economy Minister Luis Caputo expects a strong rebound in the fourth quarter and dismissed the prospect of a recession, even as growth slows.",
-   "lead_ru": "Министр экономики Аргентины Луис Капуто ожидает сильного восстановления в четвертом квартале и отвергает перспективу рецессии, даже несмотря на замедление роста.",
-   "tags": [
-    "GDP"
-   ]
-  },
-  {
-   "title": "US manufacturing output rises in September",
-   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOQVYxNGI1Sk9lWk02OVNrTnNyczRlbF9WTFJUa3lLUi1mLThHVGp3Y2RQUWtNcGVnWHRqcGVZSzdzOUp6c3psQy1jS3JhM3h2RnVlTEkzcS1wZGR2aThrd1IyaDF0MnJKRXh3TjYtSmVFem5WMGNfQ1ExekdTLXdTQnlkNEhrZzFfQXNoQQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T16:14:26.481800+00:00",
-   "title_ru": "Объем промышленного производства в США вырос в сентябре"
-  },
-  {
-   "title": "Many of 2026’s hottest stocks have seen dramatic comedowns this week",
-   "link": "https://www.marketwatch.com/story/many-of-2026s-hottest-stocks-have-seen-dramatic-comedowns-this-week-e5ae5d06?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-16T16:14:26.481800+00:00"
-  },
-  {
-   "title": "Italy clinches deal with EU over measures to limit impact of gas prices on electricity costs",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOMWRWUHVNUlFoLTN1X1lyWWoyN05FWGJOV3JFdDNWYUNvWWl3WTRKYVhpWjZaZmUteWJXNVU5d0Q4MVFHNzE0azRMc0p6Vk1PYnlKUzVtazBYRkNKTS1XRzNlSjB3SVFFWXV3T3psSFlYak8xVElnZU1SRURVT0N2WnZld1FrUDdNcl9Kd2dIM0F0Y3BYS0FRQl9CNHgtV0Nib2I4VDNibTdmY2VlSWpRRlA1dHJjOFA1VE5XQThTOA?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T16:19:26.466269+00:00",
-   "title_ru": "Италия договаривается с ЕС о мерах по ограничению влияния цен на газ на стоимость электроэнергии",
-   "tags": [
-    "gas"
-   ]
-  },
   {
    "title": "Дмитриев рассказал о просьбе американского Минфина к РФПИ",
    "link": "https://www.rbc.ru/economics/16/10/2026/6ad23cad9a79473867fbb059",
@@ -4449,6 +4398,15 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Минфин назвал маловероятными изменения по налогу на сверхдоход",
+   "link": "https://www.rbc.ru/finances/19/10/2026/6ad63a1c999a437636783c1e",
+   "sources": [
+    "RBC"
+   ],
+   "score": 1,
+   "ts": "2026-10-19T16:15:38.117443+00:00"
   }
  ],
  "last_digest": "2026-10-18",
@@ -8455,10 +8413,9 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-19T15:16:15.563310+00:00",
+  "checked": "2026-10-19T16:20:37.658721+00:00",
   "sec_seen": [
    "0001519822-26-000011",
-   "0000904454-26-000521",
    "0001519609-26-000011",
    "0001519952-26-000008",
    "0002005206-26-000007",
