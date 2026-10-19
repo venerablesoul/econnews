@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "b165bdad24c2d021": "2026-10-16T15:34:26.556940+00:00",
-  "1e6bd290617e7f71": "2026-10-16T15:44:26.481106+00:00",
   "68e0a36c4fe143ca": "2026-10-16T15:54:26.424232+00:00",
   "908c534e462dbf27": "2026-10-16T15:54:26.424232+00:00",
   "c610c3560e4ec72c": "2026-10-16T15:54:26.424232+00:00",
@@ -533,38 +531,13 @@
   "e692b59a582582d6": "2026-10-19T15:16:15.563310+00:00",
   "db543744cfbc5d3f": "2026-10-19T15:21:15.612091+00:00",
   "153e4de17c51469b": "2026-10-19T15:31:15.808854+00:00",
-  "f88fc6870451bb0a": "2026-10-19T15:31:15.808854+00:00"
+  "f88fc6870451bb0a": "2026-10-19T15:31:15.808854+00:00",
+  "7756e98408fb2ca6": "2026-10-19T15:45:39.114316+00:00",
+  "67926133a6bee3fb": "2026-10-19T15:45:39.114316+00:00",
+  "2c4c56b1dafab1de": "2026-10-19T15:45:39.114316+00:00",
+  "6d931fead74bc922": "2026-10-19T15:45:39.114316+00:00"
  },
  "recent": [
-  {
-   "title": "Target pensions or welfare, not banks, IMF tells John Healey",
-   "link": "https://www.theguardian.com/business/2026/oct/16/target-pensions-or-welfare-not-banks-imf-tells-john-healey",
-   "sources": [
-    "The Guardian"
-   ],
-   "score": 4,
-   "ts": "2026-10-16T15:34:26.556940+00:00",
-   "title_ru": "Ориентируйтесь на пенсии или социальное обеспечение, а не на банки, говорит МВФ Джону Хили",
-   "lead": "Supporters of planned tax, however, say banks were bailed out by taxpayers during the financial crisis and can afford to pay more now The International Monetary Fund has urged John Healey to target savings on pensions and…",
-   "lead_ru": "Сторонники планового налога, однако, говорят, что банки получили помощь от налогоплательщиков во время финансового кризиса и теперь могут позволить себе платить больше. Международный валютный фонд призвал Джона Хили направить сбережения на пенсии и…"
-  },
-  {
-   "title": "Analysis: Everyone expects the Fed to hold rates in October. Kevin Warsh could surprise us all",
-   "link": "https://www.cnbc.com/2026/10/16/kevin-warsh-fed-october-rate-hike-interest-rates-markets.html",
-   "sources": [
-    "CNBC"
-   ],
-   "score": 4,
-   "ts": "2026-10-16T15:44:26.481106+00:00",
-   "title_ru": "Анализ: Все ожидают, что ФРС сохранит ставки в октябре. Кевин Уорш может всех нас удивить",
-   "lead": "Investors expect the Fed to pause rate hikes in October, but Kevin Warsh's rejection of traditional communications practices and continued concern about inflation leave the decision uncertain.",
-   "lead_ru": "Инвесторы ожидают, что ФРС приостановит повышение ставок в октябре, но отказ Кевина Уорша от традиционных коммуникационных методов и продолжающаяся обеспокоенность по поводу инфляции оставляют решение неопределенным.",
-   "tags": [
-    "Fed",
-    "rates",
-    "inflation"
-   ]
-  },
   {
    "title": "South African rand edges up as focus turns to next week's medium-term budget",
    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPMk5zRmZXejNwMlhnenBGLXhXZEpCMUlQZjRWU0x3UzZmWUJiQUpkWERydW5wcTNlWWd3VDBEeVdoLTRWQWJJMEltc0xOeHBidG1jMGozU01mYWZIb3dpWlhwSnZLYjFhSVpCWWJlYk9qVzFzR0NEYkQ1TlY5OTFMcEZwY1RlZDJMQ2lVWWgzbkdYMVNweG1MZ24yRDRJdEZmT1UxU0Y1R1NmLVB4enpTbGFucFVtclRlb2c?oc=5",
@@ -4446,6 +4419,62 @@
    "title_ru": "Высокочастотный трейдер Optiver ищет пакет долгов на 900 миллионов долларов",
    "lead": "Optiver Holding BV is looking to secure about $900 million in financing as the market maker seeks to expand its trading activities, according to people familiar with the matter.",
    "lead_ru": "По словам людей, знакомых с вопросом, Optiver Holding BV надеется получить около $900 млн финансирования, поскольку маркет-мейкер стремится расширить свою торговую деятельность."
+  },
+  {
+   "title": "BOC Surveys Show Higher Inflation Expectations, Passthrough",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-19/boc-surveys-show-higher-inflation-expectations-passthrough",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-19T15:45:39.114316+00:00",
+   "title_ru": "Опросы Банка Канады показывают более высокие инфляционные ожидания и эффект переноса",
+   "lead": "Bank of Canada surveys showed inflation expectations moving higher, and more evidence that firms plan to pass on higher input costs to customers.",
+   "lead_ru": "Опросы Банка Канады показали рост инфляционных ожиданий и появление новых свидетельств того, что компании планируют переложить на клиентов более высокие затраты на вводимые ресурсы.",
+   "tags": [
+    "inflation"
+   ]
+  },
+  {
+   "title": "The Copper Rally Faces a Tariff Test",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-19/the-copper-rally-faces-a-tariff-test-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-19T15:45:39.114316+00:00",
+   "title_ru": "Медному ралли грозит проверка тарифов",
+   "lead": "Copper has surged amid tariff fears, but the rally may be vulnerable if U.S. trade measures don't materialize.",
+   "lead_ru": "Медь выросла на фоне опасений по поводу тарифов, но ралли может оказаться уязвимым, если торговые меры США не материализуются.",
+   "tags": [
+    "markets",
+    "tariffs"
+   ]
+  },
+  {
+   "title": "Walmart Sells US Debt, Eyes Canadian Market as Spending Grows",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-19/walmart-sells-us-debt-eyes-canadian-market-as-spending-grows",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-19T15:45:39.114316+00:00",
+   "title_ru": "Walmart продает долг США и присматривается к канадскому рынку по мере роста расходов",
+   "lead": "Walmart Inc. is selling US dollar bonds for a second time this year and sounding out investors for a debut Canadian debt offering as the world’s largest retailer seeks to diversify its funding sources amid a spending spree.",
+   "lead_ru": "Walmart Inc. продает долларовые облигации во второй раз в этом году и ищет инвесторов для дебютного размещения канадских долговых обязательств, поскольку крупнейший в мире ритейлер стремится диверсифицировать свои источники финансирования на фоне резкого увеличения расходов.",
+   "tags": [
+    "dollar",
+    "bonds"
+   ]
+  },
+  {
+   "title": "Минфин обсудит продление налогового эксперимента для самозанятых",
+   "link": "https://www.rbc.ru/finances/19/10/2026/6ad63603e244862e774f6742",
+   "sources": [
+    "RBC"
+   ],
+   "score": 1,
+   "ts": "2026-10-19T15:45:39.114316+00:00"
   }
  ],
  "last_digest": "2026-10-18",
@@ -6504,6 +6533,22 @@
    },
    {
     "src": "sec",
+    "id": "2d2d3ba6b88f181a",
+    "ticker": "TER",
+    "company": "TERADYNE, INC",
+    "who": "Gregory Stephen Smith",
+    "role": "CEO",
+    "type": "sell",
+    "value": 1365120,
+    "shares": 4000,
+    "price": 341.28,
+    "plan": true,
+    "date": "2026-10-15",
+    "disclosed": "2026-10-19",
+    "link": "https://www.sec.gov/Archives/edgar/data/1666934/000090445426000521/0000904454-26-000521-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "0bd25d90d8b6ef2e",
     "ticker": "ELTP",
     "company": "ELITE PHARMACEUTICALS INC /NV/",
@@ -8438,8 +8483,10 @@
   },
   "checked": "2026-10-19T15:16:15.563310+00:00",
   "sec_seen": [
-   "0001193125-26-424805",
-   "0001193125-26-424798"
+   "0001193125-26-424798",
+   "0000904454-26-000519",
+   "0000904454-26-000521",
+   "0001193125-26-424805"
   ],
   "errors": {}
  }
