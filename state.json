@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "bc789703137a88ff": "2026-10-16T02:28:23.977136+00:00",
-  "ce2290b28f505873": "2026-10-16T02:33:23.962915+00:00",
   "98c1c1acee618366": "2026-10-16T02:38:24.034599+00:00",
   "0c4f1bf2a498a851": "2026-10-16T02:48:23.991527+00:00",
   "ca7508941492ad65": "2026-10-16T02:53:23.962358+00:00",
@@ -591,37 +589,12 @@
   "4604fb673d0bc567": "2026-10-19T02:20:13.778863+00:00",
   "284e9ceee0477b5e": "2026-10-19T02:25:13.727454+00:00",
   "e2efd17226796b8b": "2026-10-19T02:25:13.727454+00:00",
-  "ef19184afb48a587": "2026-10-19T02:25:13.727454+00:00"
+  "ef19184afb48a587": "2026-10-19T02:25:13.727454+00:00",
+  "acea4cbde425c221": "2026-10-19T02:30:13.746842+00:00",
+  "fda42d351a687542": "2026-10-19T02:35:13.712066+00:00",
+  "f57b0fffdd475b52": "2026-10-19T02:35:13.712066+00:00"
  },
  "recent": [
-  {
-   "title": "Bank of England's Bailey says second-round inflation pressures look subdued so far",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPTG5XUks5NHU3SnZ2Wk1EVklSZm9Od1ljNWFieUZmZTlibEZHOGJiSlBWWlVsMGttUi1pZjlkc2hfZjA4TEZaTGltSEJfMjdDUDJZZ2dLQ1hqX05TcklZd2J4dTFXQVA3V0p0ZG1uSWV2aFpGVnFrRUEza0hTUm9hdXVyMk1icGxLQk9LMUFrc3VTcF9RR1N3VHVxZjE4eld5dnM3TUxySGRfSXYzQV82R1haZUx6VDIwMi15YWJickk?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-16T02:28:23.977136+00:00",
-   "title_ru": "Бэйли из Банка Англии говорит, что инфляционное давление во втором раунде пока выглядит сдержанным",
-   "tags": [
-    "inflation"
-   ]
-  },
-  {
-   "title": "India IT Gains Favor as an Anti-AI Bet Despite Mixed Earnings",
-   "link": "https://www.bloomberg.com/news/newsletters/2026-10-16/india-it-gains-favor-as-an-anti-ai-bet-despite-mixed-earnings",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T02:33:23.962915+00:00",
-   "title_ru": "Индийские ИТ-специалисты получают преимущество в качестве ставки против ИИ, несмотря на смешанные доходы",
-   "lead": "Indian IT shares climbed to a five-week high.",
-   "lead_ru": "Индийские IT-акции поднялись до пятинедельного максимума.",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Tardy China Stimulus Sets Up Second Quarter of Sub-Target Growth",
    "link": "https://www.bloomberg.com/news/articles/2026-10-16/tardy-china-stimulus-sets-up-second-quarter-of-sub-target-growth",
@@ -5436,6 +5409,19 @@
    "score": 3,
    "ts": "2026-10-19T02:25:13.727454+00:00",
    "title_ru": "Экономика Великобритании: трендовые новости, последние обновления, анализ"
+  },
+  {
+   "title": "China's economic growth picks up in third quarter, beating expectations",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPelFIVGVwcy1oY2RvRVlaQTl5REpEc1hfS0ZUb1lTeWN0M2tBbTctTWo4NzVXeWthQVNab2p1eUFYQ2xtejBoc1ktQlZFQXh1U3hOSWdNdlBzTzNvcThPMFVyNnIzSTgyQ3lXbW8taGQtTV92Vl9uUGZOWjc1cGp6NTJBTDNpcWpEUnRCMjhXcVRYNkVXSFNwaHF3UGFGU0NqZTZWZzJXc0FyX3BnUkxhVWVSNzI?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-19T02:35:13.712066+00:00",
+   "title_ru": "Экономический рост Китая ускорился в третьем квартале, превзойдя ожидания",
+   "tags": [
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-10-18",
