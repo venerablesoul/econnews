@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e3a7c6dda4f1f84f": "2026-10-16T20:09:55.628708+00:00",
-  "cfdc35c0c90bf226": "2026-10-16T20:14:56.602532+00:00",
   "1ced21d933db9a71": "2026-10-16T20:24:55.597322+00:00",
   "8119ccc950270c6c": "2026-10-16T20:44:55.590880+00:00",
   "795a0326b69ef5b5": "2026-10-16T20:49:55.642309+00:00",
@@ -523,21 +521,10 @@
   "e4c94d8c49a9f7e5": "2026-10-19T19:35:37.531326+00:00",
   "d1030d80b9bf0ebc": "2026-10-19T19:50:37.611794+00:00",
   "05d0f91031e24727": "2026-10-19T19:50:37.611794+00:00",
-  "260d3b7e3c9f34a1": "2026-10-19T20:05:37.821870+00:00"
+  "260d3b7e3c9f34a1": "2026-10-19T20:05:37.821870+00:00",
+  "d66686fab9134433": "2026-10-19T20:20:37.558433+00:00"
  },
  "recent": [
-  {
-   "title": "Sound Inpatient Nears $1 Billion Private Debt After Pulling Loan",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-16/sound-inpatient-nears-1-billion-private-debt-after-pulling-loan",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T20:09:55.628708+00:00",
-   "title_ru": "Частный долг здорового стационара приближается к 1 миллиарду долларов после отказа от кредита",
-   "lead": "Sound Inpatient Physicians Inc. is close to clinching a $1 billion refinancing with existing lenders, including Monarch Alternative Capital and PGIM, according to people familiar with the matter.",
-   "lead_ru": "По словам людей, знакомых с ситуацией, компания Sound Inpatient Physicians Inc. близка к заключению рефинансирования на сумму $1 млрд с существующими кредиторами, включая Monarch Alternative Capital и PGIM."
-  },
   {
    "title": "Judge Threatens Trump With Sanctions to Testify in BBC Lawsuit",
    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNNVdwLS1hQURJSWIwMU5SWXRic0szNnQ3MjlXMXh5X2FqT2psM0M2U1VCM1pEVVRTMkJOcmdmaTZQNHFiWEpIYVc2aWNqTVZkcmlHdmdwN1lHSEo4ZV93LW5YYTBFY2dHMDRHb01idmNYdkg5ZUhjd1hMTzI3T3Vrb3lpNm5rMHd5cEk3VTJTTEo4LVlPRGFabzJPcTJJR3ZtREhZSVE3N1JtSk5XeFVOVFJzbw?oc=5",
@@ -4335,6 +4322,20 @@
    ],
    "score": 1,
    "ts": "2026-10-19T19:50:37.611794+00:00"
+  },
+  {
+   "title": "US Allows Dark-Fleet Oil Tankers to Shed Sanctions, Wright Says",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQXzR2UF9wUDNocnlfSDhDc2xseUM3SjNaR2M2MmpEa1pfYkdTbVFMRE5XVmRmOW9YLV9VaFZzOVUxcXVzRUZZMzhER1VhRW1yb1lPcWp2NEZhOTJMSWpqdkhYSmF4TFdwRlVKclUxSDJtQk1VZldXSXY4aU9jcDFKVHYxRldabHZ2Y09wZF9DSHNRbzRFWDlWNHN6VzV6T2NaeElSM2VoRFQ3aGJmS1pjelNieDU4RV9XMDlwSW5lYw?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-19T20:20:37.558433+00:00",
+   "title_ru": "США позволяют нефтяным танкерам темного флота снимать санкции, говорит Райт",
+   "tags": [
+    "oil",
+    "sanctions"
+   ]
   }
  ],
  "last_digest": "2026-10-19",
@@ -6330,6 +6331,38 @@
    },
    {
     "src": "sec",
+    "id": "2097cba71445075a",
+    "ticker": "MA",
+    "company": "Mastercard Inc",
+    "who": "Hai Ling",
+    "role": "CFO",
+    "type": "sell",
+    "value": 2676540,
+    "shares": 4317,
+    "price": 620.0,
+    "plan": true,
+    "date": "2026-10-16",
+    "disclosed": "2026-10-19",
+    "link": "https://www.sec.gov/Archives/edgar/data/1923565/000114139126000118/0001141391-26-000118-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "9d6c2e54bc398442",
+    "ticker": "WS",
+    "company": "Worthington Steel, Inc.",
+    "who": "Clifford Larivey",
+    "role": "President",
+    "type": "sell",
+    "value": 784582,
+    "shares": 19470,
+    "price": 40.3,
+    "plan": true,
+    "date": "2026-10-16",
+    "disclosed": "2026-10-19",
+    "link": "https://www.sec.gov/Archives/edgar/data/2048670/000119312526425263/0001193125-26-425263-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "2ddfc0fab2269fee",
     "ticker": "NBIS",
     "company": "Nebius Group N.V.",
@@ -6455,6 +6488,22 @@
     "date": "2026-10-15",
     "disclosed": "2026-10-19",
     "link": "https://www.sec.gov/Archives/edgar/data/1763494/000176349426000008/0001763494-26-000008-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "1d5bf4511ccd3363",
+    "ticker": "AMD",
+    "company": "ADVANCED MICRO DEVICES INC",
+    "who": "Forrest Eugene Norrod",
+    "role": "EVP & GM DSG",
+    "type": "sell",
+    "value": 9333585,
+    "shares": 17262,
+    "price": 540.7,
+    "plan": true,
+    "date": "2026-10-15",
+    "disclosed": "2026-10-19",
+    "link": "https://www.sec.gov/Archives/edgar/data/1622864/000000248826000184/0000002488-26-000184-index.htm"
    },
    {
     "src": "sec",
@@ -8392,39 +8441,38 @@
   },
   "checked": "2026-10-19T19:30:37.618497+00:00",
   "sec_seen": [
-   "0001846069-26-000187",
-   "0001846069-26-000184",
-   "0001683168-26-007954",
-   "0001104659-26-116873",
-   "0001493152-26-047577",
-   "0001104659-26-116870",
-   "0001140536-26-000254",
-   "0001628280-26-066275",
-   "0001140536-26-000253",
-   "0000950142-26-002785",
-   "0001683168-26-007956",
-   "0001846069-26-000186",
-   "0001846069-26-000185",
-   "0001005817-26-000137",
-   "0001493152-26-047575",
-   "0001493152-26-047570",
-   "0001493152-26-047571",
-   "0001846069-26-000188",
-   "0001683168-26-007955",
-   "0001046257-26-000264",
-   "0001846069-26-000189",
-   "0001104659-26-116874",
-   "0001683168-26-007953",
-   "0001193125-26-425227",
-   "0001628280-26-066276",
-   "0001140536-26-000255",
-   "0002062017-26-000004",
-   "0001493152-26-047573",
-   "0001104659-26-116871",
-   "0001628280-26-066277",
-   "0001178913-26-004792",
-   "0001763494-26-000008",
-   "0001140536-26-000256"
+   "0001594073-26-000014",
+   "0000002488-26-000184",
+   "0001564533-26-000014",
+   "0000785161-26-000232",
+   "0001193125-26-425263",
+   "0002115245-26-000004",
+   "0001801170-26-000276",
+   "0001745186-26-000009",
+   "0001222801-26-000014",
+   "0001177394-26-000120",
+   "0000785161-26-000231",
+   "0001758209-26-000018",
+   "0001437749-26-032934",
+   "0001177394-26-000118",
+   "0001797894-26-000006",
+   "0001437749-26-032935",
+   "0001437749-26-032937",
+   "0001193125-26-425261",
+   "0001909539-26-000018",
+   "0002082837-26-000006",
+   "0001193125-26-425254",
+   "0001426400-26-000009",
+   "0001961416-26-000014",
+   "0001262116-26-000016",
+   "0001256896-26-000011",
+   "0002141620-26-000008",
+   "0001589723-26-000013",
+   "0002087537-26-000004",
+   "0001437749-26-032938",
+   "0001813761-26-000014",
+   "0001437749-26-032936",
+   "0001044258-26-000013"
   ],
   "errors": {}
  }
