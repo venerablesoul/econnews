@@ -528,7 +528,10 @@
   "2d43c579113eb921": "2026-10-19T17:30:37.576828+00:00",
   "908c534e462dbf27": "2026-10-19T17:35:37.692688+00:00",
   "af2d0b522c778a79": "2026-10-19T17:35:37.692688+00:00",
-  "f23795856bd59946": "2026-10-19T17:35:37.692688+00:00"
+  "f23795856bd59946": "2026-10-19T17:35:37.692688+00:00",
+  "b2ef6cbd511e621a": "2026-10-19T17:45:37.635474+00:00",
+  "7a207ec99ef239eb": "2026-10-19T17:45:37.635474+00:00",
+  "9d3d900f12ab072e": "2026-10-19T17:45:37.635474+00:00"
  },
  "recent": [
   {
@@ -4330,6 +4333,40 @@
    "score": 3,
    "ts": "2026-10-19T17:35:37.692688+00:00",
    "title_ru": "Путин повысил министра финансов на фоне растущего бюджетного давления"
+  },
+  {
+   "title": "US Airlines Plan 4Q Capacity Growth in Key Markets",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-19/us-airlines-plan-4q-capacity-growth-in-key-markets-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-19T17:45:37.635474+00:00",
+   "title_ru": "Авиакомпании США планируют увеличить пропускную способность на ключевых рынках в четвертом квартале",
+   "lead": "Bloomberg Intelligence Senior Aerospace, Defense, & Airlines Analyst, George Ferguson discusses the outlook for US airlines as they aim to boost capacity into Q4. He also looks ahead to SpaceX earnings this week.",
+   "lead_ru": "Старший аналитик Bloomberg Intelligence в области аэрокосмической, оборонной и авиационной промышленности Джордж Фергюсон обсуждает перспективы авиакомпаний США, поскольку они стремятся увеличить пропускную способность в четвертом квартале. Он также ожидает доходов SpaceX на этой неделе."
+  },
+  {
+   "title": "German industry has lost nearly half a million jobs since 2019, Ifo says",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPMzNXS3lWYzJXYnR1TzdqT1pTdGg0b1otZnZhR2c0N0d2ZjlNTEowT1M5c0RRLUNLR1dGX0docXg4ZHBaamlHeXN0Qm4zTzl6Q0VwejFnaFp2Z3RxSG9IWnA1eGlGMFBBVS1yaDcwVDBTajFtNmp6ODY2Y3RvLTVxUEpGanpjNTZtN0dEaVY0RWlaUnhJemRhRG82Z2R1SVZLSjhZcVAwTGRhanVMNWI4aWtOQVI?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-19T17:45:37.635474+00:00",
+   "title_ru": "Немецкая промышленность потеряла почти полмиллиона рабочих мест с 2019 года, сообщает Ifo",
+   "tags": [
+    "jobs"
+   ]
+  },
+  {
+   "title": "One of this year’s most important relationships in global financial markets is falling apart",
+   "link": "https://www.marketwatch.com/story/one-of-this-years-most-important-relationships-in-global-financial-markets-is-falling-apart-2cf58121?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-19T17:45:37.635474+00:00"
   }
  ],
  "last_digest": "2026-10-18",
@@ -8354,14 +8391,11 @@
   },
   "checked": "2026-10-19T17:25:37.574159+00:00",
   "sec_seen": [
-   "0001225208-26-008442",
    "0001196963-26-000004",
    "0001213900-26-110586",
    "0001213900-26-110590",
-   "0001213900-26-110585",
    "0001213900-26-110589",
    "0001193125-26-425009",
-   "0001870078-26-000003",
    "0001213900-26-110587"
   ],
   "errors": {}
