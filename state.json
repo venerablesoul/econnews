@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "0ee02fd7697b845b": "2026-10-16T07:53:52.129910+00:00",
-  "5e46713be6032682": "2026-10-16T07:53:52.129910+00:00",
   "179d46be6c95a27a": "2026-10-16T08:03:52.030170+00:00",
   "c01e8247e0636b3e": "2026-10-16T08:08:52.069851+00:00",
   "b17200efcec54a44": "2026-10-16T08:08:52.069851+00:00",
@@ -585,19 +583,11 @@
   "fc3a832db1467ed3": "2026-10-19T07:30:44.848898+00:00",
   "38e359a29d58380b": "2026-10-19T07:40:44.837823+00:00",
   "12ca29d99bf901bb": "2026-10-19T07:45:44.871410+00:00",
-  "a148c16c1a077f41": "2026-10-19T07:45:44.871410+00:00"
+  "a148c16c1a077f41": "2026-10-19T07:45:44.871410+00:00",
+  "41f7f3c6f72daae4": "2026-10-19T07:55:44.897200+00:00",
+  "ef5d25b473bf012c": "2026-10-19T07:55:44.897200+00:00"
  },
  "recent": [
-  {
-   "title": "Britain’s Growth Has a Lot to Do With the Transition Away From Fossil Fuels",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQNGd4OHRGQl8tUnhGdWdGV09TWVF0VVJlcG42TUVRVkEzMWRmQWQ2M21Ia01aTnVaMUJnanpHWF9Vd1BJY3BLMnc1anpQVld2U2ZtdE5ubEJERlJzSlJ3aEVkWGFrbzZQakt6elgtZG1qbHlYQWpHZDh5YWRZakRrT1JaU0E2ZTNZMkZzSjJHbTNTc2xMbjlueUJuVmZRUTRZQmVTdmlXYXFDdS1SRTNjVTR3?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T07:53:52.129910+00:00",
-   "title_ru": "Рост Великобритании во многом связан с переходом от ископаемого топлива"
-  },
   {
    "title": "Odd Lots: French Politics Are Leading to a Debt Crisis (Podcast)",
    "link": "https://www.bloomberg.com/news/audio/2026-10-16/odd-lots-french-politics-are-leading-to-a-debt-crisis-podcast",
@@ -5153,6 +5143,16 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "UK's PHP forms joint venture with Singapore's GIC to cut debt",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPa2oweEJaZlNvYkllVE5hNFlYZFE4VmZGQzRELVpPOTJnZlpXeGJhTHN5WmpYM1F6TFltQ0tFX1pHaDM2OGFmYnM5RHV4WFpqWGF3UHdBbkk3S21hRzBldzdJczY2SVROTGNUMndGaTZDQzRyNmhmZUlmendNcV9VeWs4ZmY2VjF2aXd0TDFpSlhKd2FsYnZTTjdtSklzY3NkS3lpSzMzYU5UcHdwbUtuMER3QmtYZUZJaE1DXzdpcGJ4QWRoWjNn?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-19T07:55:44.897200+00:00",
+   "title_ru": "Британская PHP создает совместное предприятие с сингапурской GIC для сокращения долга"
   }
  ],
  "last_digest": "2026-10-18",
