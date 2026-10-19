@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "f5586560e6b618bf": "2026-10-16T09:08:52.073845+00:00",
-  "bc167b5caf8620c0": "2026-10-16T09:08:52.073845+00:00",
-  "4ba27f8d8b48ec46": "2026-10-16T09:08:52.073845+00:00",
-  "060f4284caf5f02d": "2026-10-16T09:08:52.073845+00:00",
-  "cbc14f1b82d7ab9c": "2026-10-16T09:13:52.152282+00:00",
   "f2a4b6d6c08a9767": "2026-10-16T09:23:52.157385+00:00",
   "9fbe11e873eb5751": "2026-10-16T09:23:52.157385+00:00",
   "91b659551b94a71c": "2026-10-16T09:23:52.157385+00:00",
@@ -584,54 +579,10 @@
   "3748b083fb024dc3": "2026-10-19T08:45:44.860127+00:00",
   "9460b49e5b01e272": "2026-10-19T08:55:44.928124+00:00",
   "f55a65bf4ee69bf2": "2026-10-19T08:55:44.928124+00:00",
-  "dbcfb59dc16afefc": "2026-10-19T09:05:44.883220+00:00"
+  "dbcfb59dc16afefc": "2026-10-19T09:05:44.883220+00:00",
+  "371924a829d770ed": "2026-10-19T09:15:44.833506+00:00"
  },
  "recent": [
-  {
-   "title": "Indonesia regulator announces sanctions against 3 listed firms",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPT19xNkFlWGlKRk14ZTJVYnFwTGM0eEIxeGdLdUN4OE5NekIyOWJkSVNuZWdZdW1NYndTYU1RUF9EQm1kdklJaHNWMjg2TFNNaU1PZkJmdGdtb0FIaExBb0tUdV85a3ZDdVgwLU9IOXNQWTVvRDQ0ZGJINTdQYWJ2ZUt5S3BXbnFHMXBPazh3Y0dWaXBuQ2RscXBmb2FadnVKWkxNTXQ5bDRmWl9aaDh1bWxhaF9fR210?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-16T09:08:52.073845+00:00",
-   "title_ru": "Регулятор Индонезии объявляет о санкциях против трех компаний, котирующихся на бирже",
-   "tags": [
-    "sanctions"
-   ]
-  },
-  {
-   "title": "Hedge funds' role comes into focus following European bonds turmoil",
-   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNOXExeXEzNDNZOWtnSFNGYU5jLUJKLUJPc2lMNGZQRWE4c2VSOW8zVEV0eGFEOFJIMnFhM3YxMVdhZk1USG0zNGtWdEE3cXZJTEtJamJSY2pOMVU0clcybWljQjlsNnM0NGhDRkUwMlhCbnRQWGljZEZ5ZkE4eEptUHBGRkRfc2ZScG9FOVZJS0dsMjEzX1BqTzFJSFV4R2NmbXU5Z3BCdnREQ0ZyQld5cnVwVFZmZzRhakE?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T09:08:52.073845+00:00",
-   "title_ru": "Роль хедж-фондов становится в центре внимания после кризиса на европейских облигациях",
-   "tags": [
-    "bonds"
-   ]
-  },
-  {
-   "title": "Разгон на биотопливе: как отходы становятся драйвером экономики",
-   "link": "https://www.rbc.ru/opinions/economics/16/10/2026/6accfd909a7947c6104ca4bc",
-   "sources": [
-    "RBC"
-   ],
-   "score": 1,
-   "ts": "2026-10-16T09:08:52.073845+00:00"
-  },
-  {
-   "title": "Canadian home sales fall in September as mortgage rates increase, CREA says",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOX29WOVNJd3cteWswTk93djFWUDBsMWZnbHlKbUVJSldiY3pyQnNXaUwya0RHdXA1M1hJSUJOb05BUERWX2luV2ZDZC1uWVowSGlJOHJvNjh2NXRBaTZoVUg2MkFvVVdneV9qTUk0OHJQZ3pGSXY4MC04elNFUUlhR2dScHRDODVwZ1FJQUs4dVlwWFlkdE1OUkY2X2xnMHk4YS1vb2RPcXNmbkZ2akh2NXJ1dHZCalZ1VzRR?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T09:13:52.152282+00:00",
-   "title_ru": "Продажи жилья в Канаде упали в сентябре из-за повышения ставок по ипотечным кредитам, сообщает CREA"
-  },
   {
    "title": "Short-term trading not worth it for most investors, says expert",
    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE04aThVUk1Qd3hBZThVaXp3X2RRQTAtYVFlajZ3a1pTeThPSzFhQlZJQXZnNHlRNmdSZkYwVmpxSTdHcF9jbkpnWnQ4UnBSM0J5aHNfUmV2YjZlS0k3VWVXczBrdG5DUk0?oc=5",
