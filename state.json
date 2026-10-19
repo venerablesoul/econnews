@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "3be41831bf51ff37": "2026-10-16T11:39:26.416483+00:00",
-  "1f001fea97bb13e3": "2026-10-16T11:44:26.459236+00:00",
-  "b41a9bb9c6e194ae": "2026-10-16T11:44:26.459236+00:00",
-  "a677dde44236c959": "2026-10-16T11:44:26.459236+00:00",
   "2b7b1226e77ad0ff": "2026-10-16T11:59:26.421701+00:00",
   "8d9a3fa5bb4472f6": "2026-10-16T11:59:26.421701+00:00",
   "249b609173f0d6e1": "2026-10-16T12:04:26.452639+00:00",
@@ -586,44 +582,6 @@
   "da97a804190d1625": "2026-10-19T11:36:15.419337+00:00"
  },
  "recent": [
-  {
-   "title": "ЕС увеличил импорт российского СПГ на 60% на фоне ограничений",
-   "link": "https://www.rbc.ru/economics/16/10/2026/6ad1ebb57bfe5dbe1b87b965",
-   "sources": [
-    "RBC"
-   ],
-   "score": 1,
-   "ts": "2026-10-16T11:39:26.416483+00:00"
-  },
-  {
-   "title": "CoreWeave shares, bonds headed for steep weekly losses as AI borrowing concerns mount",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOQ2NPeFhDRXRadVpwTmIwYlN0MlBfU2tLdWJfcHRKRHFvU3NuXzY1WW5RVEgyZThFbmdVajVEZnpQUklNbjFlbmRDcUVQNTZJWDJOZ253eHVHeGlNMkk0Vm9VQk1xZGVJNEs0cFV2WUxTei1FNW5oNGZOZXBxWWhZcDh2T25EQl9OUDYtM0dEdEFFa1ZkZ2hHcGtveVRKeEFrd0tDeHB4eXEzeEFxLUw1VWo1RHQ2WUs0ODBITVJvZw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-16T11:44:26.459236+00:00",
-   "title_ru": "Акции и облигации CoreWeave понесли резкие недельные потери из-за растущих опасений по поводу заимствований в сфере ИИ",
-   "tags": [
-    "bonds",
-    "markets"
-   ]
-  },
-  {
-   "title": "Traders Are Shelling Out Millions to Secure Copper",
-   "link": "https://www.bloomberg.com/news/newsletters/2026-10-16/traders-are-shelling-out-millions-to-secure-copper",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T11:44:26.459236+00:00",
-   "title_ru": "Трейдеры тратят миллионы, чтобы обеспечить медь",
-   "lead": "The threat of Trump tariffs is driving huge demand for the red metal.",
-   "lead_ru": "Угроза тарифов Трампа стимулирует огромный спрос на красный металл.",
-   "tags": [
-    "tariffs"
-   ]
-  },
   {
    "title": "Mapping the Market: Bulls beware",
    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNVzhyTExkaER4WEJ3VXV5MnMyVjNxMW16aVE3YXFlRDkwSGtseDVfUzJOVkZLci04NG1KTFlfWTB4RlFmZmFxdUs3blpoOVJDTjJ2VTFRMXJDZjY4OWFSQ0hEbUN0UnZGUGh4TDZfbFF4Ui1qZGhLbWxOdjd6OHZ5MnktMA?oc=5",
@@ -8930,6 +8888,7 @@
    "0001213900-26-110433",
    "0001437749-26-032865",
    "0001213900-26-110434",
+   "0001628280-26-066213",
    "0001801661-26-000123",
    "0001193125-26-424439",
    "0001391935-26-000009",
