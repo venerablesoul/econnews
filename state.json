@@ -1,12 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c248a1247b45c6a5": "2026-10-16T10:08:52.286389+00:00",
-  "6bef6c7641aff1ef": "2026-10-16T10:08:52.286389+00:00",
-  "b18097201fa95999": "2026-10-16T10:08:52.286389+00:00",
-  "27230cc576cd9ef9": "2026-10-16T10:13:52.041027+00:00",
-  "76c9e9c0ee0bac9e": "2026-10-16T10:13:52.041027+00:00",
-  "0b645ca42235f2ca": "2026-10-16T10:13:52.041027+00:00",
   "938828a5caf36999": "2026-10-16T10:28:52.024179+00:00",
   "fbbb441fffe2ac4a": "2026-10-16T10:28:52.024179+00:00",
   "85c5aa3b1fa05880": "2026-10-16T10:28:52.024179+00:00",
@@ -583,75 +577,13 @@
   "b49076ebce3e983e": "2026-10-19T10:05:44.860512+00:00",
   "aa77ad06061041b6": "2026-10-19T10:06:17.864340+00:00",
   "45091ee9816d2e17": "2026-10-19T10:06:17.864340+00:00",
-  "8ede6d79686f0c5e": "2026-10-19T10:06:17.864340+00:00"
+  "8ede6d79686f0c5e": "2026-10-19T10:06:17.864340+00:00",
+  "56046839efe5d390": "2026-10-19T10:16:15.420167+00:00",
+  "a1343aa71cc91b2d": "2026-10-19T10:16:15.420167+00:00",
+  "00b8e8c47e95136d": "2026-10-19T10:16:15.420167+00:00",
+  "31450a724eea4e97": "2026-10-19T10:16:15.420167+00:00"
  },
  "recent": [
-  {
-   "title": "US Steel Prices Climb to Four-Year High as Trump’s Tariffs Bite",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-16/us-steel-prices-climb-to-four-year-high-as-trump-s-tariffs-bite",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-16T10:08:52.286389+00:00",
-   "title_ru": "Цены на сталь в США поднялись до четырехлетнего максимума на фоне резкого снижения тарифов Трампа",
-   "lead": "US steel prices climbed to the highest in more than four years as President Donald Trump’s tariffs restrict foreign supplies, boosting domestic producers while raising costs for American manufacturers.",
-   "lead_ru": "Цены на сталь в США поднялись до самого высокого уровня за более чем четыре года, поскольку тарифы президента Дональда Трампа ограничивают иностранные поставки, стимулируя отечественное производство и одновременно повышая затраты для американских производителей.",
-   "tags": [
-    "tariffs"
-   ]
-  },
-  {
-   "title": "European Shares Outperform S&P 500 Amid Defensive Tilt From AI",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPQWM2bE45djhQWllsMnF2NGJtcG43N2R4aEEwQUtvel9nX2g0NU96YlB3amRGTHJnNVBCTml0a3Q0MDlrU3dxWFdZNnZVa3dkU1pHV19kQ21XZkFIdDBWNzg3c3dSbENlNjV4c181YnlPVldQQTRlWW9GLUY5NFVmVzk1MEgyNWFvaVMwUWdOOFBlZ2VQVVhOVndERWdwMW9Dc1lkZTF2emxlRnNVdFBUeU45cw?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-16T10:08:52.286389+00:00",
-   "title_ru": "Европейские акции превосходят индекс S&P 500 на фоне оборонительного уклона со стороны искусственного интеллекта",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "UK Bank Tax Plan Risks Putting Healey at Odds With BOE’s Bailey",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-16/uk-bank-tax-plan-risks-putting-healey-at-odds-with-boe-s-bailey",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T10:08:52.286389+00:00",
-   "title_ru": "Налоговый план британских банков рискует поставить Хили в противоречие с Бэйли из Банка Англии",
-   "lead": "Chancellor of the Exchequer John Healey’s plan to raise bank taxes may help ease Britain’s strained public finances, but risks an awkward difference of opinion with Bank of England Governor Andrew Bailey.",
-   "lead_ru": "План канцлера казначейства Джона Хили по повышению банковских налогов может помочь облегчить напряженные государственные финансы Великобритании, но рискует столкнуться с неловким разногласием с главой Банка Англии Эндрю Бэйли."
-  },
-  {
-   "title": "Energy Shock Filtering Through US Economy Complicates Fed’s Job",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-16/energy-shock-filtering-through-us-economy-complicates-fed-s-job",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-16T10:13:52.041027+00:00",
-   "title_ru": "Фильтрация энергетических шоков в экономике США усложняет работу ФРС",
-   "lead": "The energy shock is starting to spill across the US economy as businesses pass along rising costs, complicating the Federal Reserve’s task of stabilizing inflation.",
-   "lead_ru": "Энергетический шок начинает распространяться по экономике США, поскольку предприятия переживают рост затрат, что усложняет задачу Федеральной резервной системы по стабилизации инфляции.",
-   "tags": [
-    "Fed",
-    "inflation"
-   ]
-  },
-  {
-   "title": "PODCAST: AI’s debt burden",
-   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQUDM4OXBDTnNwdlU5Q2VyMXg0VDZjcFlHNF9xUnNOMnJEejM5eWR4SnJqaGdYS2EwNnpOcmxvWUM2WF9yV011VkRuV3BXWFNyZVp4aUdXbzNmcXBmOWozSFIyajdvckFlWE1MajhueGN2Unpja1JRcHRRU0FldmVjaC1rNHJJYU0?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T10:13:52.041027+00:00",
-   "title_ru": "ПОДКАСТ: долговое бремя ИИ"
-  },
   {
    "title": "Republicans turn on Trump’s tariffs in battle for ‘political survival’",
    "link": "https://www.ft.com/content/e2acd655-0a6a-4de6-9404-c838f6e7b8cb?syn-25a6b1a6=1",
@@ -5095,6 +5027,33 @@
    "tags": [
     "inflation"
    ]
+  },
+  {
+   "title": "Fed sees AI boom adding to inflation headache, but others may pay for the medicine",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbWZLVGpmVmN6M1o1UUJnRXhSMmVWdjY2Mm4tR0IyeXk0OHZzOVRPamx6eEdEVjhEUHVXMlkzeFhoWkg4Qnl0a3lYQ0xJdWNzVHcydDA0NFdVb0ctbEVoMExGek50RHoxWF9TRThVMXRENDhWV2RUbVRGOVhvOEtoTmlTS1NlZGk0UldmSEY4N0tRVVRBeWc5SmJqRGlaVWwzeHRPa1hHZDNHZ3UxUjhwZHBGQXo0YlIw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-19T10:16:15.420167+00:00",
+   "title_ru": "ФРС считает, что бум искусственного интеллекта усугубляет инфляционную головную боль, но за лекарство могут заплатить другие",
+   "tags": [
+    "Fed",
+    "inflation"
+   ]
+  },
+  {
+   "title": "Mapping the Market: Semiconductor stocks may be about to rise",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNaVJmbTk2QjltaGtJN210eWNBWlMtYmFSY3d3OTg2ZEx6NnZpTDVnRjk5TDRRbW8tWkRHbzNNWXhlbnZCaE51ejhvS3NMM2ZsU3JrTUNxVGFmSnJOMV9xZ3NMdUNOalh5QWxWbldRcjVKcGdValNTTWQ2bFRMR2VjeHFPR3JzZlZOejBPNQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-19T10:16:15.420167+00:00",
+   "title_ru": "Картирование рынка: акции полупроводникового сектора могут вырасти",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-18",
@@ -8943,13 +8902,13 @@
   },
   "checked": "2026-10-19T10:06:17.864340+00:00",
   "sec_seen": [
+   "0001233433-26-000008",
    "0001646382-26-000023",
    "0001437749-26-032866",
    "0001493152-26-047473",
    "0001573338-26-000021",
    "0001213900-26-110428",
    "0001543262-26-000010",
-   "0001193125-26-424414",
    "0001493152-26-047479",
    "0001214659-26-013018",
    "0001104659-26-116675",
@@ -8963,14 +8922,14 @@
    "0001801661-26-000124",
    "0001193125-26-424428",
    "0001193125-26-424593",
+   "0000950103-26-015755",
    "0001493152-26-047482",
-   "0001193125-26-424413",
    "0001213900-26-110433",
    "0001437749-26-032865",
-   "0001193125-26-424412",
    "0001213900-26-110434",
    "0001801661-26-000123",
    "0001193125-26-424439",
+   "0000950103-26-015754",
    "0001193125-26-424421",
    "0001213900-26-110429"
   ],
