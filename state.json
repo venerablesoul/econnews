@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "68e0a36c4fe143ca": "2026-10-16T15:54:26.424232+00:00",
-  "908c534e462dbf27": "2026-10-16T15:54:26.424232+00:00",
-  "c610c3560e4ec72c": "2026-10-16T15:54:26.424232+00:00",
-  "ed17e724ce351e15": "2026-10-16T15:54:26.424232+00:00",
-  "b5a4c9c3ab291703": "2026-10-16T15:54:26.424232+00:00",
   "b5eb05e23cc15b91": "2026-10-16T15:59:26.460822+00:00",
   "f909ea2ff0667498": "2026-10-16T15:59:26.460822+00:00",
   "a0e51bd62a2b866d": "2026-10-16T16:04:26.441029+00:00",
@@ -535,19 +530,14 @@
   "7756e98408fb2ca6": "2026-10-19T15:45:39.114316+00:00",
   "67926133a6bee3fb": "2026-10-19T15:45:39.114316+00:00",
   "2c4c56b1dafab1de": "2026-10-19T15:45:39.114316+00:00",
-  "6d931fead74bc922": "2026-10-19T15:45:39.114316+00:00"
+  "6d931fead74bc922": "2026-10-19T15:45:39.114316+00:00",
+  "fb5309b4254af486": "2026-10-19T15:50:37.619514+00:00",
+  "10ca7f1923821c0b": "2026-10-19T15:50:37.619514+00:00",
+  "c8d81ad93dce6bc5": "2026-10-19T15:55:37.628888+00:00",
+  "8f5de7de7fb1adac": "2026-10-19T15:55:37.628888+00:00",
+  "2b7717bcdd8df7b0": "2026-10-19T15:55:37.628888+00:00"
  },
  "recent": [
-  {
-   "title": "South African rand edges up as focus turns to next week's medium-term budget",
-   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPMk5zRmZXejNwMlhnenBGLXhXZEpCMUlQZjRWU0x3UzZmWUJiQUpkWERydW5wcTNlWWd3VDBEeVdoLTRWQWJJMEltc0xOeHBidG1jMGozU01mYWZIb3dpWlhwSnZLYjFhSVpCWWJlYk9qVzFzR0NEYkQ1TlY5OTFMcEZwY1RlZDJMQ2lVWWgzbkdYMVNweG1MZ24yRDRJdEZmT1UxU0Y1R1NmLVB4enpTbGFucFVtclRlb2c?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T15:54:26.424232+00:00",
-   "title_ru": "Южноафриканский рэнд растет, поскольку внимание переключается на среднесрочный бюджет на следующую неделю"
-  },
   {
    "title": "CoreWeave Debt Stress; JB Hunt Falls on Rising Costs | Stock Movers",
    "link": "https://www.bloomberg.com/news/videos/2026-10-16/coreweave-debt-stress-jb-hunt-falls-on-rising-costs-stock-movers",
@@ -4475,6 +4465,31 @@
    ],
    "score": 1,
    "ts": "2026-10-19T15:45:39.114316+00:00"
+  },
+  {
+   "title": "В Минфине исключили снижение допдоходов бюджета России из-за налоговых поправок",
+   "link": "https://www.kommersant.ru/doc/9042308",
+   "sources": [
+    "Kommersant"
+   ],
+   "score": 4,
+   "ts": "2026-10-19T15:55:37.628888+00:00",
+   "title_en": "The Ministry of Finance ruled out a reduction in additional revenues to the Russian budget due to tax amendments",
+   "lead": "Изменения по налогам в бюджетном пакете на 2027-2029 годы, которые приведут к снижению ожидаемых дополнительных доходов, маловероятны. Об этом заявил замминистра финансов России Алексей Сазанов.",
+   "lead_en": "Tax changes in the 2027-2029 budget package that would reduce expected additional revenues are unlikely. This was stated by Deputy Minister of Finance of Russia Alexey Sazanov.",
+   "tags": [
+    "Russia"
+   ]
+  },
+  {
+   "title": "Canadian firms' outlooks dimmed after trade talks collapse, BoC survey finds",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQMWtzWXNRTENad3R3N0lmMHZZWTZFeGVCRy1ZOG9lNlZwQ2ZfdUZvTENINXo3bVI1NDRRTTJsQUhKYU9YUUVaVV93dUlTTW1jcTB3NUlkakVxV3hJTWRCc1hyNzR2aDlSZ3p6cVBmWDE0TC1TcVROTlNpd1hoajgzT01CNm53YmlPRzlUeE1LNTRaUkhHUEdES2Fmb2hIWG5rSE02WnRabnh3cTA4RHlQR3V0UElsbzNFLTNJ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-19T15:55:37.628888+00:00",
+   "title_ru": "Перспективы канадских компаний ухудшились после провала торговых переговоров, показало исследование Банка Канады"
   }
  ],
  "last_digest": "2026-10-18",
@@ -8483,10 +8498,14 @@
   },
   "checked": "2026-10-19T15:16:15.563310+00:00",
   "sec_seen": [
-   "0001193125-26-424798",
    "0000904454-26-000519",
    "0000904454-26-000521",
-   "0001193125-26-424805"
+   "0001709430-26-000010",
+   "0001965214-26-000008",
+   "0002071271-26-000017",
+   "0001959506-26-000008",
+   "0001519952-26-000008",
+   "0001805351-26-000008"
   ],
   "errors": {}
  }
