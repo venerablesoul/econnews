@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "cb5f57e563c970f5": "2026-10-16T06:53:52.086191+00:00",
-  "2295a262844e3349": "2026-10-16T06:53:52.086191+00:00",
-  "d8ec1922043eec34": "2026-10-16T06:53:52.086191+00:00",
   "911c6f14df530f96": "2026-10-16T07:03:52.096370+00:00",
   "ec02ea4f0fabec18": "2026-10-16T07:08:52.088744+00:00",
   "5a2ba1d18e476ec0": "2026-10-16T07:08:52.088744+00:00",
@@ -586,24 +583,10 @@
   "edbfc75fec54bd72": "2026-10-19T06:50:44.840005+00:00",
   "517c1f99dbed9280": "2026-10-19T06:50:44.840005+00:00",
   "c2c64bec82277ce7": "2026-10-19T06:50:44.840005+00:00",
-  "f4535cae33fc9a26": "2026-10-19T06:50:44.840005+00:00"
+  "f4535cae33fc9a26": "2026-10-19T06:50:44.840005+00:00",
+  "61ae0ff49aa03bb9": "2026-10-19T06:55:44.876289+00:00"
  },
  "recent": [
-  {
-   "title": "Jupiter’s Richards Shuns Treasuries as High Yields Lure Rivals",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-16/jupiter-s-richards-shuns-treasuries-as-high-yields-lure-rivals",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T06:53:52.086191+00:00",
-   "title_ru": "Ричардс из Jupiter избегает казначейских облигаций как высокодоходных конкурентов",
-   "lead": "Some of the world’s biggest funds are warming to US Treasuries as yields climb to multi-decade highs. Jupiter Asset Management’s Harry Richards isn’t one of them.",
-   "lead_ru": "Некоторые из крупнейших в мире фондов нагреваются до казначейских облигаций США, поскольку доходность поднимается до многолетних максимумов. Гарри Ричардс из Jupiter Asset Management не входит в их число.",
-   "tags": [
-    "bonds"
-   ]
-  },
   {
    "title": "Emerging-Market Stocks Gain as Fed’s Warsh Backs AI Optimism",
    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPVVl2dHcyRGc2LWRmSVNPdW12aGxGMHBlVC13RTBGY3BNSW5vd3I0S2VRa01VRjhUbTdELUNBYS03RmpVNmRSblBNMERMaEJjQlRzT1FoMHhaVTk2MENIZk5FdUxmenE2WGJ4Q3hLRWt6YWxUNXd2WVJfNjdDN2Z6c2R0THprdGZFV1lnai1PRnFlbnZxQ05vbXZtX2lQVXQwWEZ0ZzRWRTByMERRM2Y0QQ?oc=5",
@@ -5171,6 +5154,19 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "Big Names Buy Gilts on Safe Budget Bet",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPRVJHZ1FtNF96MTNiTE1MWjN0c2Qyd0JEYU1lWUgtdWJNakRpdmVXRy1lSXZBTDkyQ3hFS1RqdUt4T2Y4VE1Sb0ZHTXRpbjJhSk5ibU5neVV3dGl4MTJscWJURV93RHFkSW96YS1XS0E5UDVROGV3UHBYb19aS3V5NVFIb2tvcno5T1E3c3N2djBNTk93VU5iSDBicXNWSjdGN0x4dmhYMXE?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-19T06:55:44.876289+00:00",
+   "title_ru": "Крупные компании покупают облигации, делая ставку на безопасный бюджет",
+   "tags": [
+    "bonds"
+   ]
   }
  ],
  "last_digest": "2026-10-18",
@@ -9005,13 +9001,14 @@
   "sec_seen": [
    "0001213900-26-110436",
    "0001213900-26-110428",
+   "0000037785-26-000161",
    "0001437749-26-032866",
    "0002086163-26-000012",
    "0002152984-26-000004",
    "0001437749-26-032865",
    "0001193125-26-424368",
-   "0001214659-26-013016",
    "0002154954-26-000004",
+   "0001214659-26-013016",
    "0000037785-26-000158",
    "0001193125-26-424439",
    "0001193125-26-424414",
@@ -9032,7 +9029,6 @@
    "0002152990-26-000002",
    "0001225208-26-008439",
    "0000037785-26-000157",
-   "0000037785-26-000162",
    "0001193125-26-424412",
    "0001193125-26-424426",
    "0001477932-26-006312",
@@ -9050,7 +9046,7 @@
    "0000037785-26-000164",
    "0001509409-26-000012",
    "0001193125-26-424421",
-   "0000037785-26-000161"
+   "0000037785-26-000162"
   ],
   "errors": {}
  }
