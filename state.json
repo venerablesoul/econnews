@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "4de3b550c5bbb649": "2026-10-16T08:48:52.065812+00:00",
-  "907e7af65c45dedc": "2026-10-16T08:53:52.027501+00:00",
-  "2e226c8d82019f1f": "2026-10-16T08:53:52.027501+00:00",
-  "c8a4fad626bf16c7": "2026-10-16T08:53:52.027501+00:00",
   "d70b9ada83e32403": "2026-10-16T09:03:52.026195+00:00",
   "368159d118c8b776": "2026-10-16T09:03:52.026195+00:00",
   "f5586560e6b618bf": "2026-10-16T09:08:52.073845+00:00",
@@ -587,43 +583,11 @@
   "d36a04202d2792ab": "2026-10-19T08:25:44.871255+00:00",
   "82e87c5dbf159f1d": "2026-10-19T08:25:44.871255+00:00",
   "019e8631ca63d62f": "2026-10-19T08:25:44.871255+00:00",
-  "3748b083fb024dc3": "2026-10-19T08:45:44.860127+00:00"
+  "3748b083fb024dc3": "2026-10-19T08:45:44.860127+00:00",
+  "9460b49e5b01e272": "2026-10-19T08:55:44.928124+00:00",
+  "f55a65bf4ee69bf2": "2026-10-19T08:55:44.928124+00:00"
  },
  "recent": [
-  {
-   "title": "New World in Talks With Some Banks to Extend $11.2 Billion Loan",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-16/new-world-in-talks-with-some-banks-to-extend-11-2-billion-loan",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T08:48:52.065812+00:00",
-   "title_ru": "Новый мир ведет переговоры с некоторыми банками о продлении кредита на $ 11,2 млрд",
-   "lead": "New World Development Co."
-  },
-  {
-   "title": "Global inflation debate puts BOJ rate-hike pace in spotlight",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNOW5LS2JnMk04Z3BqMmlWRi1ia2NxUXJaR21PSnY1d080cXkxMTNjS3N1QmhHXzQwc3B6Y01mc0ZfX1lkRGZ4Sl9rVkVzc3NkTGlzb0FDb2lxRDJDZFgyWmRNdl9jT2pVMnZmRi1QUUlvN1Uybl9salRydEw0U0R1RE52T1RicVBTMTNJSHBzRVc4bG1FaTk0NGJwcmNvSlAtWkYzSnFKaTZOZG44aDdNWVJR?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-16T08:53:52.027501+00:00",
-   "title_ru": "Глобальные дебаты по инфляции привлекают внимание к темпам повышения ставок БАНКА ЯПОНИИ",
-   "tags": [
-    "inflation"
-   ]
-  },
-  {
-   "title": "Kenya in talks for fresh multilateral financing, central bank chief says",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQTXBUUnh2NTFhV1JWUFMxcTRKM0hPSEJVQ3RHZFc4RVpIckNlaEt4WmpnMHpMcEtnUjh3R3FCVG5XSmZxQ1dMc1MxUk4tRlZpVnp2dDlNd3R2NDBvNndITEJ6TXJsMFRVU3cyU09SQ0xUeTFYcVNSWlUyLU9ScmlIOGdiRVpCZUdqVjV2NzhUMlZOeFdlTHdCbjhVTGZOUW94TE4xam03ZVZ3QTU1QVNjWWFSMA?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T08:53:52.027501+00:00",
-   "title_ru": "Кения ведет переговоры о новом многостороннем финансировании, заявил глава центрального банка"
-  },
   {
    "title": "China's central bank to further open up Chinese financial markets to foreigners",
    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQUms0WEVOUTlsZUpVQjNfaVZjQkV2aF9HOFhZbTQtblFHNldVUTk2N3hqeml0aDc2MG9uSzRtTzdPRC1YNXFReU5RSWV2STM3cXhWcVhLTFVONlM5UHBqOXRfeVhmZXlBZHRrVlhHQUlaWGRMeG1FYnJqNloxbEc1NmFmbjZNLUNYdThhOC1pTFFfMXF1a19tN3VKb01RMGt6bXV5UHBMNXd2cXlOQlNtaXJELW14RHBzb3o2b1RBWDhKck1Sdmc?oc=5",
@@ -5192,6 +5156,18 @@
     "gold",
     "Russia"
    ]
+  },
+  {
+   "title": "Экономика Китая показала рост 4,5% в третьем квартале",
+   "link": "https://www.kommersant.ru/doc/9041879",
+   "sources": [
+    "Kommersant"
+   ],
+   "score": 3,
+   "ts": "2026-10-19T08:55:44.928124+00:00",
+   "title_en": "China's economy grew 4.5% in the third quarter",
+   "lead": "По итогам третьего квартала экономика КНР выросла на 4,5% в годовом выражении и на 1,2% по сравнению с предыдущим кварталом. Это следует из данных Национального бюро статистики КНР.",
+   "lead_en": "At the end of the third quarter, the Chinese economy grew by 4.5% in annual terms and by 1.2% compared to the previous quarter. This follows from data from the National Bureau of Statistics of the People's Republic of China."
   }
  ],
  "last_digest": "2026-10-18",
