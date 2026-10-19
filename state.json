@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "cf9c135a01889dd9": "2026-10-16T00:32:36.439339+00:00",
   "8de7718fc74f60ae": "2026-10-16T00:43:25.081492+00:00",
   "c68b7baece2af626": "2026-10-16T00:53:24.019900+00:00",
   "0b1b2b704ee2bf34": "2026-10-16T01:03:24.156586+00:00",
@@ -579,22 +578,11 @@
   "1100a19a0fce6c14": "2026-10-19T00:30:13.698184+00:00",
   "f70f234132db1fe3": "2026-10-19T00:30:13.698184+00:00",
   "5fcb73e763d0030c": "2026-10-19T00:30:13.698184+00:00",
-  "53725d1ea62c5c9a": "2026-10-19T00:30:13.698184+00:00"
+  "53725d1ea62c5c9a": "2026-10-19T00:30:13.698184+00:00",
+  "5454c0e6de0371f6": "2026-10-19T00:40:13.819515+00:00",
+  "6abf5c40664ac223": "2026-10-19T00:40:13.819515+00:00"
  },
  "recent": [
-  {
-   "title": "China Is Too Defensive Over the Yuan",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOSWRsTE1YejMxZ0RuUWdqbUxvc2JhR1FQTld4cWtrOTA4QjRrRkhRM19FOWVMSVRzVHVDaWhuSnhfWXhhdFdIRmFVTFNIV3BXVVNmQUV2amhzakl5WTl4T1MzYzYyNHVGSWlFUi0wczFVQ2J0NkZOSzdpdV9LR1J5R25VNDg1a0ltMFcydlljckxOanpa?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T00:32:36.439339+00:00",
-   "title_ru": "Китай слишком оборонителен по отношению к юаню",
-   "tags": [
-    "China"
-   ]
-  },
   {
    "title": "Singapore's September exports rise 68.4% on year",
    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNTU5maEZYSUVZRXJNaDBsVTJEY2ktQndYdUw1emJoYS1WZzJZUGNQckpwZ1Fxelp5T09kNmlCZ242Rm05UDV2Y2lPM2xTQnpWTHFLd2tLVW5EQU16dWtXd1NRekU2eXdXeWlkMzJYNjB3QW95WXUyVldmWkNFSklEN1hIb3d0YmVjekZwRl84UTB2UGMtN0oxb3BCTVpudw?oc=5",
@@ -5302,6 +5290,16 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "UK housing market showing signs of mortgage rates impact, Rightmove says",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNaWFjYmdlWlpxc2JxSGc1YnZhM3ptTFp2bHdQbUUwVS1XTnoyeFpMVXh5TjNINy0tWm5hMmViQ2xpdzRFZWRHZjRyMHF4TkhDY0l0ZXhjS2FUTWpaNlpGRjl0ZEFUTm9qR1B2bUpYTnpWQjVNWXhwZDR0OFo0V2RheDdobm5jMGFCNWZuXzQ5WUdzM20xQ2dkd3JkUW9PWFh3Z1JrREVxcnJyNG1UR0M5ZXM0SQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-19T00:40:13.819515+00:00",
+   "title_ru": "Рынок жилья Великобритании демонстрирует признаки влияния ставок по ипотечным кредитам, говорит Rightmove"
   }
  ],
  "last_digest": "2026-10-18",
