@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "3c4fbce0e34510de": "2026-10-16T02:08:24.118732+00:00",
-  "70dc23ba6a1519f1": "2026-10-16T02:08:24.118732+00:00",
   "822095ec9e33807e": "2026-10-16T02:13:23.992391+00:00",
   "8915f04e51275866": "2026-10-16T02:18:24.065189+00:00",
   "0e7ff21c3dd31995": "2026-10-16T02:23:24.023402+00:00",
@@ -587,33 +585,13 @@
   "b06f6ec3c9ca25a4": "2026-10-19T01:55:13.673904+00:00",
   "d4760136d3255dfc": "2026-10-19T01:55:13.673904+00:00",
   "70a47a740b7d4a19": "2026-10-19T02:00:13.709098+00:00",
-  "dd8a6b1315d3588e": "2026-10-19T02:05:13.672595+00:00"
+  "dd8a6b1315d3588e": "2026-10-19T02:05:13.672595+00:00",
+  "d9b5e87586077540": "2026-10-19T02:10:13.716914+00:00",
+  "1b8b9099fcc6cb7c": "2026-10-19T02:10:13.716914+00:00",
+  "bed3356286007ad7": "2026-10-19T02:10:13.716914+00:00",
+  "54b71220f13840b3": "2026-10-19T02:10:13.716914+00:00"
  },
  "recent": [
-  {
-   "title": "Live: Fed Chief Kevin Warsh Speaks at IMF After Hotter US Inflation",
-   "link": "https://www.bloomberg.com/news/live-blog/2026-10-16/imf-world-bank-annual-meetings-bangkok-fed-warsh-bailey",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 7,
-   "ts": "2026-10-16T02:08:24.118732+00:00",
-   "title_ru": "В прямом эфире: глава ФРС Кевин Уорш выступает в МВФ после роста инфляции в США",
-   "tags": [
-    "Fed",
-    "inflation"
-   ]
-  },
-  {
-   "title": "Rebuilding Buffers Without the Luxury of Time",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQTzlNaGFhYXVQRUgzTFk4c3l6bzlkejNIRUZWcXJwY3VmdE40Sm5xME9QN2IwclVHNlN6Z3lfak83YjJFN3dRQkRfakVGYnFRbGFBdjJRVDFVSVVkM0xIX0RsdzlpSmRaZHZyVGI5UV9qQU5rMnRVZzlGZFBuNVQyc21jZzg1NzNtMVRHWkNxM0RQMzkyYVdSMUJwc1I?oc=5",
-   "sources": [
-    "IMF"
-   ],
-   "score": 4,
-   "ts": "2026-10-16T02:08:24.118732+00:00",
-   "title_ru": "Восстановление буферов без роскоши времени"
-  },
   {
    "title": "EU Eyes New Trade Powers to Curb Chinese Imports",
    "link": "https://www.bloomberg.com/news/videos/2026-10-16/eu-eyes-new-trade-powers-to-curb-chinese-imports-video",
@@ -5412,6 +5390,50 @@
     "inflation",
     "jobs"
    ]
+  },
+  {
+   "title": "Taiwan Dollar Bulls Look Past AI-Led Selloff to Year-End Rally",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPdllCaHBIdzY1OVhGakdCR1BtUFV1alFEb2pWZU14TUxpTE1zcHFqR2tvUXMyVzFRR1F0eUgta2Y0LS1sdFI1M1dsdWpJY3pKY0N4TndyTXNqNHhFb2tzSDdyRzE5dHVpaTROWW9LSm9RWnY3bWF6V0ljNVhHMm5OOVNraVowUnhQaEYwVHRVc2hCN2FjVjRZMUpaTFZLOWJ0bWtyOUhnbGJ3NHJIekRzeDFzcw?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-19T02:10:13.716914+00:00",
+   "title_ru": "Быки тайваньского доллара выглядят как прошедшие распродажи, вызванные ИИ, до ралли в конце года",
+   "tags": [
+    "dollar",
+    "markets"
+   ]
+  },
+  {
+   "title": "China's economic growth picks up as AI boom boosts exports",
+   "link": "https://www.bbc.co.uk/news/articles/cm5yn098xz8lo?at_medium=RSS&at_campaign=rss",
+   "sources": [
+    "BBC"
+   ],
+   "score": 5,
+   "ts": "2026-10-19T02:10:13.716914+00:00",
+   "title_ru": "Экономический рост Китая ускоряется, поскольку бум ИИ стимулирует экспорт",
+   "lead": "Exports have helped offset weak domestic spending, but trade tensions and AI doubts weigh on the outlook.",
+   "lead_ru": "Экспорт помог компенсировать слабые внутренние расходы, но торговая напряженность и сомнения в отношении ИИ влияют на перспективы.",
+   "tags": [
+    "China"
+   ]
+  },
+  {
+   "title": "China’s Growth Rebounds to 4.5%, Puts Annual Target Within Reach",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-19/china-s-growth-rebounds-to-4-5-puts-annual-target-within-reach",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-19T02:10:13.716914+00:00",
+   "title_ru": "Рост Китая восстановился до 4,5%, поставив годовую цель в пределах досягаемости",
+   "lead": "China’s economic growth accelerated more than expected in the third quarter, boosting the odds of reaching Beijing’s annual target and dimming the prospects for additional easing measures.",
+   "lead_ru": "В третьем квартале экономический рост Китая ускорился больше, чем ожидалось, что повысило шансы на достижение годового целевого показателя Пекина и омрачило перспективы принятия дополнительных мер по смягчению.",
+   "tags": [
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-10-18",
@@ -5434,7 +5456,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 1,
+  "Fed": 0,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
@@ -9252,9 +9274,9 @@
    "0001213900-26-110401",
    "0000037785-26-000164",
    "0001214659-26-013018",
-   "0001646382-26-000023",
-   "0001193125-26-424368",
    "0000037785-26-000163",
+   "0001193125-26-424368",
+   "0001646382-26-000023",
    "0001213900-26-110428",
    "0001213900-26-110436",
    "0001104659-26-116675",
