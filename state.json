@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "f2a4b6d6c08a9767": "2026-10-16T09:23:52.157385+00:00",
-  "9fbe11e873eb5751": "2026-10-16T09:23:52.157385+00:00",
-  "91b659551b94a71c": "2026-10-16T09:23:52.157385+00:00",
   "7496a9925710aa7b": "2026-10-16T09:33:52.089024+00:00",
   "395cfcd2470e9219": "2026-10-16T09:38:52.038387+00:00",
   "b73bb0973b0c25fa": "2026-10-16T09:38:52.038387+00:00",
@@ -581,29 +578,13 @@
   "f55a65bf4ee69bf2": "2026-10-19T08:55:44.928124+00:00",
   "dbcfb59dc16afefc": "2026-10-19T09:05:44.883220+00:00",
   "371924a829d770ed": "2026-10-19T09:15:44.833506+00:00",
-  "753c2e0a50b5b4b2": "2026-10-19T09:20:44.863877+00:00"
+  "753c2e0a50b5b4b2": "2026-10-19T09:20:44.863877+00:00",
+  "94d8b1d32ee6ec47": "2026-10-19T09:30:45.038128+00:00",
+  "d2218855992d9f8e": "2026-10-19T09:30:45.038128+00:00",
+  "e310b7bf10f97670": "2026-10-19T09:30:45.038128+00:00",
+  "94cdf7dc79e0d3d9": "2026-10-19T09:30:45.038128+00:00"
  },
  "recent": [
-  {
-   "title": "Short-term trading not worth it for most investors, says expert",
-   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE04aThVUk1Qd3hBZThVaXp3X2RRQTAtYVFlajZ3a1pTeThPSzFhQlZJQXZnNHlRNmdSZkYwVmpxSTdHcF9jbkpnWnQ4UnBSM0J5aHNfUmV2YjZlS0k3VWVXczBrdG5DUk0?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T09:23:52.157385+00:00",
-   "title_ru": "Краткосрочная торговля не стоит того для большинства инвесторов, говорит эксперт"
-  },
-  {
-   "title": "Low market volatility breeds investor complacency, says expert",
-   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE56dmdqTklPRGtBMm5NYkRvbWhERlRGc3NYN1hwb2hoVERiTWM5NWRMYmxIYXRiUE1OZ244X2lBcnJFaElpSG9uMEV0Z1FMMDFYNlBNOFpaODFKZkRISUoxV2JqeV9NT0k?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T09:23:52.157385+00:00",
-   "title_ru": "Низкая волатильность рынка порождает самоуспокоенность инвесторов, говорит эксперт"
-  },
   {
    "title": "Doctors and Lawyers Are Joining AI’s $400-an-Hour Gig Economy",
    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNckZWSnVtMHFLWUJWZXhicy1QWEtCMHM1R21ETVNlYjdLSDVsaUFzbVpIQThhS2hlU2doR3FnZmRydklzdXI2X2J1dHNXV2xqNUtpOU8yMmFhdGEyNTFlOTlRTTgwbmJfaWV1N3lSYXBQSFk3QlU4T0VyTC1QYV9aWU02dHZUQXBXdGx2UlRMX1dvTThVYTU3NEI4QThkaDVCeFo5V2Y2UFQ4RzRwV3R1d2Jn?oc=5",
@@ -5117,6 +5098,45 @@
    "title_ru": "Экономический рост Пакистана разочаровывает, поскольку кризис на Ближнем Востоке проверяет восстановление экономики",
    "lead": "Pakistan’s economy grew less than expected in the last quarter of the financial year to June, signaling a loss of momentum in the recovery as the conflict in the Middle East poses fresh risks to the outlook.",
    "lead_ru": "Экономика Пакистана выросла меньше, чем ожидалось, в последнем квартале финансового года, закончившегося в июне, что сигнализирует о потере темпов восстановления, поскольку конфликт на Ближнем Востоке создает новые риски для перспектив."
+  },
+  {
+   "title": "Bank Indonesia narrowly expected to hold interest rates despite market turmoil",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNTklTTEZCYlRSNmVCNVNkb0Nybkd0cUNtNGpDQ28wT0lnclBoMlAxUlNPd3BycE5KRzZjTU1aOFcyWDJTbUhtcmVCWWVPdEs1d05GWHZJdnl2WHdSS1YxQ3E3ajNvLVB6a3RUcVpJTVUzdEZGMEgxaGZmLXdwV2R5QkEtWlltOXVoTGZZZDI5Y3pzS1dpcWJGM3UtYzQ2VDVPS1oyNzgyYm1RUmctOXR2eVN1YzJ2UzhjM1prV2xMd2FMeU45cmlpdk5n?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-19T09:30:45.038128+00:00",
+   "title_ru": "Банк Индонезии вряд ли сохранит процентные ставки, несмотря на потрясения на рынке",
+   "tags": [
+    "rates"
+   ]
+  },
+  {
+   "title": "China’s economy grows faster than forecast after AI boom boosted exports",
+   "link": "https://www.theguardian.com/world/2026/oct/19/china-economy-grows-faster-than-forecast-after-ai-boom-boosted-exports",
+   "sources": [
+    "The Guardian"
+   ],
+   "score": 5,
+   "ts": "2026-10-19T09:30:45.038128+00:00",
+   "title_ru": "Экономика Китая растет быстрее, чем прогнозировалось, после того как бум искусственного интеллекта увеличил экспорт",
+   "lead": "Third-quarter GDP up by 4.5% compared with last year as industrial output is buoyed up by electronics demand Business live – latest updates Roaring exports lifted China’s economic growth in the third quarter of this year, with…",
+   "lead_ru": "ВВП в третьем квартале вырос на 4,5% по сравнению с прошлым годом, поскольку промышленное производство поддерживается спросом на электронику Бизнес в прямом эфире – последние новости Резкий рост экспорта способствовал экономическому росту Китая в третьем квартале этого года, с…",
+   "tags": [
+    "China",
+    "GDP"
+   ]
+  },
+  {
+   "title": "Hong Kong regulator sees rise in listing of young growth firms",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxORjV0UFFlWHlEeXpXaTFVZUU1YmF3cnREdVJaU1VndlBCTlhiVWhjV3JUOXpvMU1qcVlUclRXUEk2WHNCazBEbWpaOHk5a0RzWmtZR3pSMjhiTW1sSE1UV3U2Y1lHVF9hdW5aNC1QM0MxR2pMUy04Z09WVjNUM0ZPczkwTEVweC1wSnliUUY4WlZKU1pjV3JpV2lRSXhoRzg2YTFybkhGUQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-19T09:30:45.038128+00:00",
+   "title_ru": "Регулятор Гонконга прогнозирует рост листинга молодых развивающихся компаний"
   }
  ],
  "last_digest": "2026-10-18",
