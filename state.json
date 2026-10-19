@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "1764e66d85ace3c0": "2026-10-16T11:03:52.091922+00:00",
   "72ec0ab494d26ca6": "2026-10-16T11:08:52.052581+00:00",
   "8d7c8cf8da274d14": "2026-10-16T11:08:52.052581+00:00",
   "48da39e340ce15cf": "2026-10-16T11:08:52.052581+00:00",
@@ -582,19 +581,11 @@
   "9cf91f2a01027188": "2026-10-19T10:46:15.417314+00:00",
   "0975df5253074a26": "2026-10-19T10:51:15.413067+00:00",
   "a8bbcab898826486": "2026-10-19T10:51:15.413067+00:00",
-  "c48d5c8f751f88c5": "2026-10-19T11:01:15.479588+00:00"
+  "c48d5c8f751f88c5": "2026-10-19T11:01:15.479588+00:00",
+  "961c489488f5420d": "2026-10-19T11:06:15.435355+00:00",
+  "c4635721b251bb6f": "2026-10-19T11:06:15.435355+00:00"
  },
  "recent": [
-  {
-   "title": "Banknote imagery advisory group minutes – 15 July 2026",
-   "link": "https://www.bankofengland.co.uk/minutes/2026/july/banknote-advisory-minutes-15-july",
-   "sources": [
-    "Bank of England"
-   ],
-   "score": 4,
-   "ts": "2026-10-16T11:03:52.091922+00:00",
-   "title_ru": "Протокол консультативной группы по изображениям банкнот – 15 июля 2026 г."
-  },
   {
    "title": "BofA’s Hartnett Sees Investors Avoiding Risk on Fed, Midterms",
    "link": "https://www.bloomberg.com/news/articles/2026-10-16/bofa-s-hartnett-sees-investors-avoiding-risk-on-fed-midterms",
@@ -5035,6 +5026,38 @@
     "inflation",
     "oil"
    ]
+  },
+  {
+   "title": "Trump Puts US Politics Ahead of Global Strategy:",
+   "link": "https://www.bloomberg.com/news/newsletters/2026-10-19/trump-puts-us-politics-ahead-of-global-strategy",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-19T11:06:15.435355+00:00",
+   "title_ru": "Трамп ставит политику США выше глобальной стратегии:",
+   "lead": "From Russia sanctions to China tariffs, Trump’s economic statecraft increasingly bends to the demands of domestic politics.",
+   "lead_ru": "От санкций против России до тарифов Китая – экономическая политика Трампа все больше подчиняется требованиям внутренней политики.",
+   "tags": [
+    "China",
+    "tariffs",
+    "sanctions"
+   ]
+  },
+  {
+   "title": "China Growth Stays on Track as Retail Sales Beat Forecasts",
+   "link": "https://www.bloomberg.com/news/newsletters/2026-10-19/china-growth-stays-on-track-as-retail-sales-beat-forecasts",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-19T11:06:15.435355+00:00",
+   "title_ru": "Рост Китая остается на прежнем уровне, поскольку розничные продажи превосходят прогнозы",
+   "lead": "Sales rose at double the expected pace, as expansion stayed on track to hit targets.",
+   "lead_ru": "Продажи выросли вдвое по сравнению с ожидаемыми темпами, поскольку расширение продолжалось и достигало целевых показателей.",
+   "tags": [
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-10-18",
@@ -6947,6 +6970,22 @@
    }
   ],
   "insiders": [
+   {
+    "src": "sec",
+    "id": "2ddfc0fab2269fee",
+    "ticker": "NBIS",
+    "company": "Nebius Group N.V.",
+    "who": "John Wilson Iv Boynton",
+    "role": "Director",
+    "type": "sell",
+    "value": 1289586,
+    "shares": 7260,
+    "price": 177.63,
+    "plan": true,
+    "date": "2026-10-15",
+    "disclosed": "2026-10-19",
+    "link": "https://www.sec.gov/Archives/edgar/data/2096831/000151384526000132/0001513845-26-000132-index.htm"
+   },
    {
     "src": "sec",
     "id": "0bd25d90d8b6ef2e",
@@ -8884,6 +8923,7 @@
   "checked": "2026-10-19T10:06:17.864340+00:00",
   "sec_seen": [
    "0001233433-26-000008",
+   "0001513845-26-000132",
    "0001646382-26-000023",
    "0001437749-26-032866",
    "0001493152-26-047473",
@@ -8896,7 +8936,6 @@
    "0001214659-26-013018",
    "0001104659-26-116675",
    "0001193125-26-424426",
-   "0001214659-26-013016",
    "0001214659-26-013017",
    "0001213900-26-110436",
    "0001493152-26-047486",
