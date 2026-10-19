@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "815b554b6c3a7923": "2026-10-16T05:33:23.971950+00:00",
-  "2a59ef7e84c4c6dc": "2026-10-16T05:33:23.971950+00:00",
   "bca27301a9300e22": "2026-10-16T05:38:23.993208+00:00",
   "4de059f0a2d8ebeb": "2026-10-16T05:38:23.993208+00:00",
   "5b0a6526f043fa42": "2026-10-16T05:38:23.993208+00:00",
@@ -596,19 +594,10 @@
   "3da0c76b26f53ba5": "2026-10-19T05:15:44.896637+00:00",
   "bd8cb49d039b42b3": "2026-10-19T05:15:44.896637+00:00",
   "99c2483474b5dcb6": "2026-10-19T05:25:44.843761+00:00",
-  "8b562c5b47e2b5b4": "2026-10-19T05:30:44.858019+00:00"
+  "8b562c5b47e2b5b4": "2026-10-19T05:30:44.858019+00:00",
+  "2bc3fea1b9410316": "2026-10-19T05:35:44.888347+00:00"
  },
  "recent": [
-  {
-   "title": "MSCI freezes certain Turkey index changes, warns of potential market downgrade",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOcUZEVFFWaFBnQ2FpV24tTElBdW51dWh2cVNhS3I3NTNJcjFYa1dYNjRSOHlSR0phVDFZeldDb3dLLVdlOGdRbW1rWWt5TjVvZkNnN1R2MUE0LTRuU2VUZDljZlBaUmpwMml4MTNJam5VQ3FnSEEzN0NCQVNuTUFvbjdLVF9nRHdhUGMxd0hGak9DTHN4S3ZzS09fLUh2U1Rsd2t0T3A1OUszN1FlLWRmQWVDbkFfM0s3b19WOXdubmExclE?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-16T05:33:23.971950+00:00",
-   "title_ru": "MSCI заморозил некоторые изменения индекса Турции, предупреждая о возможном понижении рейтинга рынка"
-  },
   {
    "title": "China Builds Gas Buffer for Winter as Iran War Heightens Risk",
    "link": "https://www.bloomberg.com/news/articles/2026-10-16/china-builds-gas-buffer-for-winter-as-iran-war-heightens-risk",
@@ -5216,6 +5205,19 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "Heavyweight India Bank Stocks in Focus After Earnings-Packed Weekend",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOOF9uazJwR0UyNjRuUWlfNkxCYXRXdEhQYnpRMVc0eGdrNEdoVkMzOFZRNkhieFlNZDQtMFprNGc2TUFpVkYydDVGU0tteWhXMlhDOFBaMW1sUkFOMGt3c2hUR3BUMV8zbDNlYkxfQV9BelUtNXZfeHd0ZUFDcnVvQ0Y5THRDS2huVUdwYjRXSHBYMUpucndnT1IwUy1qX3JJUmRUTVdJSGFzOHlJcTBhTHROVG9pTnIwdEdUMA?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-19T05:35:44.888347+00:00",
+   "title_ru": "Тяжеловесные акции индийского банка в фокусе после насыщенных выходных",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-18",
@@ -9049,13 +9051,14 @@
   "sec_seen": [
    "0001213900-26-110436",
    "0001213900-26-110428",
+   "0000037785-26-000161",
    "0001437749-26-032866",
    "0002086163-26-000012",
    "0002152984-26-000004",
    "0001437749-26-032865",
    "0001193125-26-424368",
-   "0001214659-26-013016",
    "0002154954-26-000004",
+   "0001214659-26-013016",
    "0000037785-26-000158",
    "0001193125-26-424439",
    "0001193125-26-424414",
@@ -9076,7 +9079,6 @@
    "0002152990-26-000002",
    "0001225208-26-008439",
    "0000037785-26-000157",
-   "0000037785-26-000162",
    "0001193125-26-424412",
    "0001193125-26-424426",
    "0001477932-26-006312",
@@ -9094,7 +9096,7 @@
    "0000037785-26-000164",
    "0001509409-26-000012",
    "0001193125-26-424421",
-   "0000037785-26-000161"
+   "0000037785-26-000162"
   ],
   "errors": {}
  }
