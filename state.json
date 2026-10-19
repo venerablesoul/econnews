@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "2dd539d95c908fae": "2026-10-16T06:08:23.991118+00:00",
-  "41cbee2f338cd788": "2026-10-16T06:08:53.660958+00:00",
   "486c54fa916d5893": "2026-10-16T06:13:52.058409+00:00",
   "02251fdf9d3a6eb3": "2026-10-16T06:13:52.058409+00:00",
   "d82838bd055dadfb": "2026-10-16T06:18:52.067875+00:00",
@@ -588,19 +586,10 @@
   "99c2483474b5dcb6": "2026-10-19T05:25:44.843761+00:00",
   "8b562c5b47e2b5b4": "2026-10-19T05:30:44.858019+00:00",
   "2bc3fea1b9410316": "2026-10-19T05:35:44.888347+00:00",
-  "69afe8bb3edd9dc9": "2026-10-19T06:05:44.844086+00:00"
+  "69afe8bb3edd9dc9": "2026-10-19T06:05:44.844086+00:00",
+  "06e3a3f2dd08d738": "2026-10-19T06:10:44.914783+00:00"
  },
  "recent": [
-  {
-   "title": "World Bank's Banga sets goal of quintupling critical minerals financing in five years",
-   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOMURDQ2RXU1hVUVRzWnlhdG1vclRwaEFnWlRvVGY2bFJ0SFhfWDNOR0ktX28zRC1mUjFGbklkRThPckpQa0FfUXNkZHZJRm9hTnB0YmFNMzJIdVNOa3dtMlBUbGVSbFRscFVjYmx6TS0xRHA0WFk2RVJPRkdpVnl5MDNsUFlfUmU0ZDg4RmpoaVJZVVJBT29FdGtPZFF5TTFGNnlXOXpqUExLTU9tV2RfY1M5Q3hrRHd2a01JNDBUemNiNC1iVTBScXItYw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T06:08:23.991118+00:00",
-   "title_ru": "Всемирный банк поставил перед собой цель увеличить финансирование критически важных полезных ископаемых в пять раз за пять лет"
-  },
   {
    "title": "Fed's Warsh Says US Facing Massive Investment Surge",
    "link": "https://www.bloomberg.com/news/videos/2026-10-16/insight-with-haslinda-amin-10-16-2026-video",
@@ -5153,6 +5142,21 @@
    "score": 5,
    "ts": "2026-10-19T06:05:44.844086+00:00",
    "title_ru": "Фрэнк Элдерсон: От климатических и природных рисков до экономической устойчивости и конкурентоспособности"
+  },
+  {
+   "title": "Indonesia Selloff Deepens as Emerging-Market Status Comes Under Threat",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-19/insight-with-haslinda-amin-10-19-2026-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-19T06:10:44.914783+00:00",
+   "title_ru": "Распродажа в Индонезии углубляется, поскольку статус развивающихся рынков находится под угрозой",
+   "lead": "Insight with Haslinda Amin, a daily news program featuring in-depth, high-profile interviews and analysis to give viewers the complete picture on the stories that matter.",
+   "lead_ru": "Insight with Haslinda Amin, ежедневная новостная программа с подробными, громкими интервью и анализом, чтобы дать зрителям полную картину важных историй.",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-18",
@@ -8987,14 +8991,13 @@
   "sec_seen": [
    "0001213900-26-110436",
    "0001213900-26-110428",
-   "0000037785-26-000161",
    "0001437749-26-032866",
    "0002086163-26-000012",
    "0002152984-26-000004",
    "0001437749-26-032865",
    "0001193125-26-424368",
-   "0002154954-26-000004",
    "0001214659-26-013016",
+   "0002154954-26-000004",
    "0000037785-26-000158",
    "0001193125-26-424439",
    "0001193125-26-424414",
@@ -9015,6 +9018,7 @@
    "0002152990-26-000002",
    "0001225208-26-008439",
    "0000037785-26-000157",
+   "0000037785-26-000162",
    "0001193125-26-424412",
    "0001193125-26-424426",
    "0001477932-26-006312",
@@ -9032,7 +9036,7 @@
    "0000037785-26-000164",
    "0001509409-26-000012",
    "0001193125-26-424421",
-   "0000037785-26-000162"
+   "0000037785-26-000161"
   ],
   "errors": {}
  }
