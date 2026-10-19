@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "be91b122e95010c2": "2026-10-16T14:14:26.453999+00:00",
   "170c959198f31002": "2026-10-16T14:19:26.548189+00:00",
   "1b70c1155ad4ca11": "2026-10-16T14:19:26.548189+00:00",
   "93779ccdfdf6428f": "2026-10-16T14:19:26.548189+00:00",
@@ -543,24 +542,10 @@
   "929a16ea27394d14": "2026-10-19T14:01:15.638403+00:00",
   "ee20063ac6844173": "2026-10-19T14:01:15.638403+00:00",
   "0976cfa9e59b571a": "2026-10-19T14:06:15.610132+00:00",
-  "a4e970a594e3bff3": "2026-10-19T14:06:15.610132+00:00"
+  "a4e970a594e3bff3": "2026-10-19T14:06:15.610132+00:00",
+  "937696a3c2816312": "2026-10-19T14:16:15.528073+00:00"
  },
  "recent": [
-  {
-   "title": "Alberta Separatists Promise Oil Riches But Voters Are Skeptical",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-16/alberta-separatists-promise-oil-riches-but-voters-are-skeptical",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T14:14:26.453999+00:00",
-   "title_ru": "Сепаратисты Альберты обещают нефтяные богатства, но избиратели настроены скептически",
-   "lead": "Leaders of the movement for Alberta to separate from Canada have a simple, foundational argument for voters: independence will make you wealthier.",
-   "lead_ru": "У лидеров движения за отделение Альберты от Канады есть простой и фундаментальный аргумент для избирателей: независимость сделает вас богаче.",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "S&P 500 Steady as Warsh Boosts Expectations of Rate Hold",
    "link": "https://www.bloomberg.com/news/articles/2026-10-16/s-p-500-steady-as-warsh-boosts-expectations-of-rate-hold",
@@ -4562,6 +4547,21 @@
    "tags": [
     "gas"
    ]
+  },
+  {
+   "title": "Hassett Says CPI Data Shows Inflation Needs ‘Some Work’",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-19/hassett-says-cpi-data-shows-inflation-needs-some-work",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 8,
+   "ts": "2026-10-19T14:16:15.528073+00:00",
+   "title_ru": "Хассетт говорит, что данные ИПЦ показывают, что инфляция нуждается в «некоторой работе»",
+   "lead": "White House National Economic Council Director Kevin Hassett said prices have been falling for items such as beef and eggs, though consumer price data for September shows overall inflation continues to need policy attention.",
+   "lead_ru": "Директор Национального экономического совета Белого дома Кевин Хассетт заявил, что цены на такие товары, как говядина и яйца, падают, хотя данные о потребительских ценах за сентябрь показывают, что общая инфляция по-прежнему требует политического внимания.",
+   "tags": [
+    "inflation"
+   ]
   }
  ],
  "last_digest": "2026-10-18",
@@ -8552,7 +8552,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-19T13:16:15.462743+00:00",
+  "checked": "2026-10-19T14:16:15.528073+00:00",
   "sec_seen": [
    "0001437749-26-032891",
    "0001032553-26-000045",
