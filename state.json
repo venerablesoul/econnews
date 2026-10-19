@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "48dc1cecb1e39729": "2026-10-16T19:49:55.632734+00:00",
-  "5e26d3feef23cc99": "2026-10-16T19:49:55.632734+00:00",
-  "6b384be0ab5e95d4": "2026-10-16T19:49:55.632734+00:00",
-  "bddbe9ab4474a050": "2026-10-16T19:54:55.600148+00:00",
   "e3a7c6dda4f1f84f": "2026-10-16T20:09:55.628708+00:00",
   "cfdc35c0c90bf226": "2026-10-16T20:14:56.602532+00:00",
   "1ced21d933db9a71": "2026-10-16T20:24:55.597322+00:00",
@@ -524,31 +520,11 @@
   "5af9949f691c97e1": "2026-10-19T19:25:37.589096+00:00",
   "9c588cc5ecc6b03b": "2026-10-19T19:35:37.531326+00:00",
   "69110f8333ceed46": "2026-10-19T19:35:37.531326+00:00",
-  "e4c94d8c49a9f7e5": "2026-10-19T19:35:37.531326+00:00"
+  "e4c94d8c49a9f7e5": "2026-10-19T19:35:37.531326+00:00",
+  "d1030d80b9bf0ebc": "2026-10-19T19:50:37.611794+00:00",
+  "05d0f91031e24727": "2026-10-19T19:50:37.611794+00:00"
  },
  "recent": [
-  {
-   "title": "Trump’s Foreign Policy Takes a Toll on Canadian Oil Prices",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNcFU3cUxnTXRBODJfemVXV0dEeFBRaDFKeVd0OWZMNWtDeXJaYjBzNjdsa3ZpRDg0ZVlpaWFSOHQ5dkNad3dvQ0ltS0I1Z210SHRjaGxhUVJBZUUtZDZvLWVsRzdKTTdRVExzbThYR3Y3WmtvNXE5U0l6V2xXYkRWSWZiOGhmRk5sel9MRDZyZm9CeTc1Y09NYjlaanJON2JCTkVHVzhNcVFjbVEyLVE?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-16T19:49:55.632734+00:00",
-   "title_ru": "Внешняя политика Трампа негативно сказывается на ценах на канадскую нефть",
-   "tags": [
-    "oil"
-   ]
-  },
-  {
-   "title": "Миллер фразой про «елочку» оценил перспективы роста цены газа в ЕС зимой",
-   "link": "https://www.rbc.ru/economics/16/10/2026/6ad2611564fe3a360ae28700",
-   "sources": [
-    "RBC"
-   ],
-   "score": 1,
-   "ts": "2026-10-16T19:54:55.600148+00:00"
-  },
   {
    "title": "Sound Inpatient Nears $1 Billion Private Debt After Pulling Loan",
    "link": "https://www.bloomberg.com/news/articles/2026-10-16/sound-inpatient-nears-1-billion-private-debt-after-pulling-loan",
@@ -4349,6 +4325,15 @@
    ],
    "score": 1,
    "ts": "2026-10-19T19:35:37.531326+00:00"
+  },
+  {
+   "title": "SpaceX earnings will be all about AI — for better or for worse",
+   "link": "https://www.marketwatch.com/story/spacex-earnings-will-be-all-about-ai-for-better-or-for-worse-89bbc772?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-19T19:50:37.611794+00:00"
   }
  ],
  "last_digest": "2026-10-19",
@@ -8378,12 +8363,12 @@
    "0000785161-26-000225",
    "0000785161-26-000221",
    "0001886793-26-000004",
+   "0001046257-26-000264",
    "0000785161-26-000222",
    "0000785161-26-000226",
    "0000785161-26-000220",
    "0002075704-26-000040",
-   "0000785161-26-000224",
-   "0001214659-26-013041"
+   "0000785161-26-000224"
   ],
   "errors": {}
  }
