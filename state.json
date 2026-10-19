@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "927e3b0b79248eee": "2026-10-16T18:54:55.542320+00:00",
   "c20361c8e16dd884": "2026-10-16T18:59:55.635436+00:00",
   "f191fbd6522ec23d": "2026-10-16T19:09:55.670844+00:00",
   "58a59c3565e86791": "2026-10-16T19:19:55.610661+00:00",
@@ -526,18 +525,11 @@
   "b6f98e8d2a15aa6f": "2026-10-19T18:35:37.926782+00:00",
   "8715604258485543": "2026-10-19T18:40:37.989259+00:00",
   "5b87b8f46d899b16": "2026-10-19T18:45:37.585131+00:00",
-  "80402ee2f3f888c1": "2026-10-19T18:50:37.559632+00:00"
+  "80402ee2f3f888c1": "2026-10-19T18:50:37.559632+00:00",
+  "cf73662fe414f13a": "2026-10-19T18:55:37.809828+00:00",
+  "a7b3d0a55f893e35": "2026-10-19T18:55:37.809828+00:00"
  },
  "recent": [
-  {
-   "title": "AI investors have woken up to the bond market’s warning signs",
-   "link": "https://www.marketwatch.com/story/ai-investors-have-woken-up-to-the-bond-markets-warning-signs-6f604c61?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 2,
-   "ts": "2026-10-16T18:54:55.542320+00:00"
-  },
   {
    "title": "Funding Markets Diverge as T-Bills Cheapen, Overnight Repo Calm",
    "link": "https://www.bloomberg.com/news/articles/2026-10-16/funding-markets-diverge-as-t-bills-cheapen-overnight-repo-calm",
@@ -4320,6 +4312,22 @@
    "title_ru": "Венгрия сократит дефицит ниже 5% ВВП в первом бюджетном плане Мадьяра",
    "tags": [
     "GDP"
+   ]
+  },
+  {
+   "title": "US to Make Some Dark Fleet Ships Legitimate, Wright Says",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-19/us-to-make-some-dark-fleet-ships-legitimate-wright-says-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-19T18:55:37.809828+00:00",
+   "title_ru": "США сделают некоторые корабли темного флота легитимными, говорит Райт",
+   "lead": "The US will turn some \"dark fleet\" oil tankers into legitimate ships that can legally carry crude, says Energy Secretary Chris Wright. He says investors will refurbish some ships and have them carry non-sanctioned oil.",
+   "lead_ru": "США превратят некоторые нефтяные танкеры «темного флота» в законные суда, которые смогут легально перевозить нефть, говорит министр энергетики Крис Райт. Он говорит, что инвесторы отремонтируют некоторые суда и заставят их перевозить несанкционированную нефть.",
+   "tags": [
+    "oil",
+    "sanctions"
    ]
   }
  ],
@@ -8348,13 +8356,10 @@
   "sec_seen": [
    "0001104659-26-116826",
    "0001104659-26-116825",
-   "0001531183-26-000022",
    "0001046257-26-000262",
    "0001104659-26-116824",
-   "0001104659-26-116819",
    "0001104659-26-116823",
    "0001104659-26-116821",
-   "0001193125-26-425032",
    "0001104659-26-116827"
   ],
   "errors": {}
