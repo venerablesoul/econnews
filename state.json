@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "ef0d36eef725d9f6": "2026-10-16T14:39:26.487316+00:00",
-  "1f2a3318bf518de5": "2026-10-16T14:39:26.487316+00:00",
   "953a9fdda21f2089": "2026-10-16T14:44:26.533283+00:00",
   "66d0498145790ad1": "2026-10-16T14:49:26.547350+00:00",
   "cf4550fcb36a97ab": "2026-10-16T14:54:26.567884+00:00",
@@ -538,43 +536,11 @@
   "937696a3c2816312": "2026-10-19T14:16:15.528073+00:00",
   "066f0dacf8dda5d8": "2026-10-19T14:21:15.458886+00:00",
   "9ebd6797e7adaa5e": "2026-10-19T14:36:15.480554+00:00",
-  "7a60389f377159e7": "2026-10-19T14:36:15.480554+00:00"
+  "7a60389f377159e7": "2026-10-19T14:36:15.480554+00:00",
+  "5770bd8e0175ff1e": "2026-10-19T14:41:15.475558+00:00",
+  "b063295ab5e8a54e": "2026-10-19T14:41:15.475558+00:00"
  },
  "recent": [
-  {
-   "title": "Treasuries Stall as Global Stocks Recovery Clips Haven Rally",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-16/treasuries-slide-as-global-stocks-recovery-clips-haven-rally",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-16T14:39:26.487316+00:00",
-   "title_ru": "Казначейские облигации застопорились на фоне замедления восстановления мировых фондовых рынков",
-   "lead": "Long-term Treasury debt fell as a rebound in global stocks reduced the appeal of haven assets, while comments from Federal Reserve Chairman Kevin Warsh did little to alter the outlook for interest rates.",
-   "lead_ru": "Долгосрочный долг казначейства упал, поскольку восстановление мировых акций снизило привлекательность активов-убежищ, в то время как комментарии председателя Федеральной резервной системы Кевина Уорша мало что изменили прогноз процентных ставок.",
-   "tags": [
-    "Fed",
-    "rates",
-    "bonds"
-   ]
-  },
-  {
-   "title": "The Case for Mamdani-Style Populism",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-16/the-case-for-mamdani-style-populism-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-16T14:39:26.487316+00:00",
-   "title_ru": "Аргументы в пользу популизма в стиле Мамдани",
-   "lead": "As inflation shows little sign of cooling, the Fed keeps reaching for the same lever: higher interest rates, even at the risk of higher unemployment. But what if there is another way?",
-   "lead_ru": "Поскольку инфляция не проявляет никаких признаков охлаждения, ФРС продолжает использовать тот же рычаг: более высокие процентные ставки, даже несмотря на риск роста безработицы. Но что, если есть другой путь?",
-   "tags": [
-    "Fed",
-    "rates",
-    "inflation"
-   ]
-  },
   {
    "title": "Fed Divisions and AI Debt Risks Shape Rate Outlook",
    "link": "https://www.bloomberg.com/news/videos/2026-10-16/fed-divisions-and-ai-debt-risks-shape-rate-outlook-video",
@@ -4494,6 +4460,31 @@
    "title_ru": "Глава регулятора рынка Турции ушел в отставку во время фондового кризиса",
    "lead": "Turkey’s market regulator chief, Mahmut Sutcu, stepped down on Monday during the fallout of a fund crisis that’s upended the country’s markets.",
    "lead_ru": "Глава регулятора рынка Турции Махмут Сутчу ушел в отставку в понедельник из-за последствий фондового кризиса, который перевернул рынки страны."
+  },
+  {
+   "title": "Inflation Jolt to Fade, Fed to Stay on Sidelines",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-19/inflation-jolt-to-fade-fed-to-stay-on-sidelines-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 7,
+   "ts": "2026-10-19T14:41:15.475558+00:00",
+   "title_ru": "Всплеск инфляции будет ослабевать, ФРС останется в стороне",
+   "lead": "At first glance, the past week’s inflation data look hot enough to change the Fed debate, but the details were less alarming: Inflation breadth narrowed, and traders expect PCE inflation later this month to tell a similar story.",
+   "lead_ru": "На первый взгляд, данные по инфляции за прошедшую неделю выглядят достаточно горячими, чтобы изменить дебаты ФРС, но детали были менее тревожными: диапазон инфляции сузился, и трейдеры ожидают, что инфляция PCE позже в этом месяце расскажет аналогичную историю.",
+   "tags": [
+    "Fed",
+    "inflation"
+   ]
+  },
+  {
+   "title": "SZ узнала, что Volkswagen заморозит зарплаты сотрудников до 2030 года",
+   "link": "https://www.rbc.ru/business/19/10/2026/6ad602f8f0e58fb238bfef8b",
+   "sources": [
+    "RBC"
+   ],
+   "score": 1,
+   "ts": "2026-10-19T14:41:15.475558+00:00"
   }
  ],
  "last_digest": "2026-10-18",
@@ -8486,24 +8477,19 @@
   },
   "checked": "2026-10-19T14:16:15.528073+00:00",
   "sec_seen": [
+   "0001708055-26-000080",
+   "0001437749-26-032895",
+   "0001225208-26-008441",
    "0001437749-26-032891",
    "0001032553-26-000045",
    "0001437749-26-032889",
-   "0000108985-26-000087",
-   "0000108985-26-000089",
    "0001437749-26-032893",
-   "0001708055-26-000079",
-   "0001104659-26-116752",
-   "0001887782-26-000011",
-   "0001708055-26-000080",
-   "0001225208-26-008441",
-   "0001708055-26-000078",
-   "0001444157-26-000028",
-   "0000108985-26-000088",
-   "0001437749-26-032895",
-   "0001768860-26-000012",
    "0001193125-26-424765",
-   "0001193125-26-424798"
+   "0001708055-26-000079",
+   "0001193125-26-424798",
+   "0000108985-26-000089",
+   "0001887782-26-000011",
+   "0000108985-26-000088"
   ],
   "errors": {}
  }
