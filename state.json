@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e534ad0e949eeee0": "2026-10-16T18:49:55.621854+00:00",
   "927e3b0b79248eee": "2026-10-16T18:54:55.542320+00:00",
   "c20361c8e16dd884": "2026-10-16T18:59:55.635436+00:00",
   "f191fbd6522ec23d": "2026-10-16T19:09:55.670844+00:00",
@@ -526,22 +525,10 @@
   "90e642875f228126": "2026-10-19T18:35:37.926782+00:00",
   "b6f98e8d2a15aa6f": "2026-10-19T18:35:37.926782+00:00",
   "8715604258485543": "2026-10-19T18:40:37.989259+00:00",
-  "5b87b8f46d899b16": "2026-10-19T18:45:37.585131+00:00"
+  "5b87b8f46d899b16": "2026-10-19T18:45:37.585131+00:00",
+  "80402ee2f3f888c1": "2026-10-19T18:50:37.559632+00:00"
  },
  "recent": [
-  {
-   "title": "Michigan voters are fed up with the economy. Who gets their vote?",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOdVNMSzVPdUw3REVXc0hCMzM3cXNkODh0TlphWnk5Tm1TdHZGZHlsbklxczc4ZWliNnZGdDVfTGFaU0V6STN5bjdNV1ZsX2czeFlBZGc1M3NrU2U1cGZRdW5yRXZaNXlFVDV5ZHlYVlNJbEhKd01FNjR0NlN3YzNiaHBMaFR5YnA0TWpXUERVMy1TRlN0?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-16T18:49:55.621854+00:00",
-   "title_ru": "Избирателям Мичигана надоела экономика. Кто получит их голос?",
-   "tags": [
-    "Fed"
-   ]
-  },
   {
    "title": "AI investors have woken up to the bond market’s warning signs",
    "link": "https://www.marketwatch.com/story/ai-investors-have-woken-up-to-the-bond-markets-warning-signs-6f604c61?mod=mw_rss_topstories",
@@ -4320,6 +4307,19 @@
    "tags": [
     "Fed",
     "inflation"
+   ]
+  },
+  {
+   "title": "Hungary to cut deficit below 5% of GDP in Magyar's first budget plan",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNM0ZpQjBRVUpOMXVEcXoya2N5UnNMRjVzQ24yY2xnMmtQOWVIRHJGOGhVZVRRcEhaS1NzNFI5ZjhZc3NhSkt6LVkteXJWVXRTZHZUM0ZER2xULVYzamFVS3RHZ0NUQ0lodE1SUmt2NjlXSE5Xb1R0MkE0MktFekdzeG1NTXNBbE96c2U0blBvdVBJWXpMcUZaOGFQR3FYQ1ZxYlFRdw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 7,
+   "ts": "2026-10-19T18:50:37.559632+00:00",
+   "title_ru": "Венгрия сократит дефицит ниже 5% ВВП в первом бюджетном плане Мадьяра",
+   "tags": [
+    "GDP"
    ]
   }
  ],
