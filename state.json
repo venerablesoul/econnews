@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "fbcd183efacb0964": "2026-10-16T10:48:52.044817+00:00",
   "2573f4a5d35aad8f": "2026-10-16T10:53:52.033584+00:00",
   "3b74faae6409b750": "2026-10-16T10:58:52.064912+00:00",
   "e5fbd6c481f61178": "2026-10-16T10:58:52.064912+00:00",
@@ -583,24 +582,11 @@
   "167a06db614d6306": "2026-10-19T10:36:15.425567+00:00",
   "413826b97fd737d6": "2026-10-19T10:41:15.500913+00:00",
   "5dbc14cfcb2e591a": "2026-10-19T10:46:15.417314+00:00",
-  "9cf91f2a01027188": "2026-10-19T10:46:15.417314+00:00"
+  "9cf91f2a01027188": "2026-10-19T10:46:15.417314+00:00",
+  "0975df5253074a26": "2026-10-19T10:51:15.413067+00:00",
+  "a8bbcab898826486": "2026-10-19T10:51:15.413067+00:00"
  },
  "recent": [
-  {
-   "title": "Indonesian Stocks Tumble on MSCI Downgrade Warning",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-16/indonesian-stocks-tumble-on-msci-downgrade-warning-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-16T10:48:52.044817+00:00",
-   "title_ru": "Индонезийские акции упали из-за предупреждения о понижении рейтинга MSCI",
-   "lead": "Indonesian stocks suffered their worst rout in nearly three decades after MSCI warned the country’s emerging-market status was in jeopardy. David Ingles and Stephen Engle report. (Source: Bloomberg)",
-   "lead_ru": "Индонезийские акции потерпели худшее падение за почти три десятилетия после того, как MSCI предупредило, что статус страны как развивающегося рынка находится под угрозой. Отчет Дэвида Инглеса и Стивена Энгла. (Источник: Блумберг)",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Котяков назвал размер пособия по безработице в 2027 году",
    "link": "https://www.rbc.ru/rbcfreenews/6ad201cc62ba15e8852d5aa1",
@@ -5058,6 +5044,26 @@
    "score": 3,
    "ts": "2026-10-19T10:46:15.417314+00:00",
    "title_ru": "Индекс FTSE 100 падает, поскольку банки и горнодобывающие компании тянут его"
+  },
+  {
+   "title": "Mozambique courts South African investment for new gas project",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOcmJUN0pCUGFySWlWTzV0WlN5Z1llSnBGTVpCSnN1ZnJVTGlzQlNnZEt0Y29sdW1lRXhiZlZhZGFHME5FSG1BdXViSlBfUTNUVUM5WXBPMnJWdW9DaFhJMVZ6djEwdjZlVGhsV09PVGNONzBDYmJPUHJNaU10RlZramlsQzBpb2FGcW1LMVAtOHNTN1R6Wk1VV3BfMlpxNVdPdjNBM1AyRGE0ODQwLThJ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-19T10:51:15.413067+00:00",
+   "title_ru": "Мозамбик ищет южноафриканские инвестиции в новый газовый проект"
+  },
+  {
+   "title": "Sterling hits 17-month high against euro",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNQ2J4LUZhclNaU1YxRFFEQ3F2Yk1Cbi13WDZJSjFGQ2p1UzMxYk93QUpieEtPTGVwbWlJZW54NjAyenh6ZzZsUmhUVVlyenhza1BMWDhTeGEyeHYtWlRoQUk4bXdiUjJCUDJRbng4eFJvT056WWxfNVBfLVlLQjdueTlMcFd5LUtsWkJ2QTFR?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-19T10:51:15.413067+00:00",
+   "title_ru": "Стерлинг достиг 17-месячного максимума по отношению к евро"
   }
  ],
  "last_digest": "2026-10-18",
