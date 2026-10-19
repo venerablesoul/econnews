@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "038baa58e7439058": "2026-10-16T04:28:23.986809+00:00",
-  "94c8d55683986676": "2026-10-16T04:28:23.986809+00:00",
-  "8b2a4ff2c82b1d92": "2026-10-16T04:28:23.986809+00:00",
   "760cb2c229c541bd": "2026-10-16T04:33:23.970058+00:00",
   "ee7c18e5d0e31fa9": "2026-10-16T04:33:23.970058+00:00",
   "da9028a674abe108": "2026-10-16T04:43:23.959509+00:00",
@@ -590,45 +587,12 @@
   "7a256fc447757b67": "2026-10-19T04:10:13.668988+00:00",
   "98cd277f85c9fc11": "2026-10-19T04:20:13.695373+00:00",
   "54d120b9ef19c337": "2026-10-19T04:25:13.666077+00:00",
-  "ab814d25698795dd": "2026-10-19T04:25:13.666077+00:00"
+  "ab814d25698795dd": "2026-10-19T04:25:13.666077+00:00",
+  "3cc6dfdef53f4bf8": "2026-10-19T04:30:13.685652+00:00",
+  "0dec992e2e041fe7": "2026-10-19T04:30:13.685652+00:00",
+  "38ecf58826a40fe7": "2026-10-19T04:30:13.685652+00:00"
  },
  "recent": [
-  {
-   "title": "Most Asian stocks rise as calm returns after CoreWeave shock; Indonesia faces market downgrade",
-   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPMUpLRUNwWEpRNVpNVWJPOWQyQXdKRjkzdTU5RjFiOUxpUFZGU1ZBa1VaS3ctN0xlc0lSMkptbUVMRlprcFFtZ3B6Z2ZFTG5XX2FBUHBoSk4xRTdiQm1ucERORXE4ZzNFZ09ySlpvUDlzb0tGUjFQZ3c0UmotdEstMEZCUQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 7,
-   "ts": "2026-10-16T04:28:23.986809+00:00",
-   "title_ru": "Большинство азиатских акций растут как спокойная доходность после шока CoreWeave; Индонезия сталкивается с понижением рынка",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "Fed's Warsh gives no hint on October policy decision",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPbUpNSUtZSU1FYnJCSDNWNnJRMmF3bmQ1QkdEaVhZb3I3c0lpYWhyQjNSemVVdGttRHE3UTFNOXg0enZ6eHAzcDY3UXBmQUJJRzl1T3gtMEZad0Z0Xy12TTlFcVRGeVdNYmVkZ3NPQThlUWRLUTh5c2J0UHFPVVRKT0hpR2RyU2tlRnJhVnBZZkxxUFhaTzRBVUlkbWFUUQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T04:28:23.986809+00:00",
-   "title_ru": "Уорш из ФРС не дает никаких намеков на октябрьское политическое решение",
-   "tags": [
-    "Fed"
-   ]
-  },
-  {
-   "title": "Malaysia's economy grows 5.3% on year in Q3, official advance estimate shows",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPODVNWVhZbm1QRVo4WmZjOGNkb1lXcnRXa3RsVHNncG9oTXhmZ1pwNFZpLTJEU1Y4MjdVMTBiazRWTm5oVUVidEZnWkVzQ01qZmF4ZmxnZWVEcWhhS1FnOUFZOU9VTGtpN2h4YXA2T2JVN0FLOFpKUW1Ka2xUQkxkZjAxZ3lFblJiSE1XQ0I2MVk0SzE4cUdjUVM3VUxOLS1DV3Y4cURadzJ3SVk5ME92UzhBVDBuT0p3WkQxNDFB?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T04:28:23.986809+00:00",
-   "title_ru": "В третьем квартале экономика Малайзии выросла на 5,3% в годовом исчислении, как показывает официальная предварительная оценка"
-  },
   {
    "title": "‘Early days’ to see full effect of energy prices on inflation, BoE’s Bailey says",
    "link": "https://www.ft.com/content/b6255adb-3ce5-4463-92cd-de2f8e9a1f74?syn-25a6b1a6=1",
@@ -5262,6 +5226,20 @@
    "score": 3,
    "ts": "2026-10-19T04:25:13.666077+00:00",
    "title_ru": "Риск заработка Nextdc Flags при задержке питания центра обработки данных в Мельбурне"
+  },
+  {
+   "title": "Indian shares muted as investors assess key earnings against elevated oil prices",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOcW54YlY3d0RSd1ZZRVhTejMtMGtOWDVCclNUalp3RW1qLV9KaG1uR09VbUdMbnZCbWFoS2d0a1Y1X3FjSnhJUFVTdUNnSjlOM1pQTElIZ1F4MG0tQ0VNdExkbXZGZVV3bjd6MmhhcTQ2Ty1oQ0E5eGVUT3JNVVVnYlBOclQ1UC00Z09OTUVWVnFQQWlqbGl5Q255V0RNS0dZdDYwNnd5dlFpU1k?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 9,
+   "ts": "2026-10-19T04:30:13.685652+00:00",
+   "title_ru": "Индийские акции приглушились, поскольку инвесторы оценивают ключевые доходы против повышенных цен на нефть",
+   "tags": [
+    "oil",
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-18",
@@ -9102,9 +9080,9 @@
    "0001213900-26-110401",
    "0000037785-26-000164",
    "0001214659-26-013018",
-   "0001646382-26-000023",
-   "0001193125-26-424368",
    "0000037785-26-000163",
+   "0001193125-26-424368",
+   "0001646382-26-000023",
    "0001213900-26-110428",
    "0001213900-26-110436",
    "0001104659-26-116675",
