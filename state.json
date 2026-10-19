@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "b054206ab1711bc8": "2026-10-16T16:34:26.449364+00:00",
-  "f1373ac3b3659d0a": "2026-10-16T16:39:26.552957+00:00",
-  "819f2fe9add99c4d": "2026-10-16T16:39:26.552957+00:00",
-  "cbca5b596a52625c": "2026-10-16T16:39:26.552957+00:00",
-  "314715e0ec41e522": "2026-10-16T16:39:26.552957+00:00",
   "52d96e4583113f7d": "2026-10-16T16:44:26.423178+00:00",
   "a927e57add6b24ec": "2026-10-16T16:44:26.423178+00:00",
   "fdf4639479d06f53": "2026-10-16T16:59:26.528949+00:00",
@@ -528,81 +523,13 @@
   "d82838bd055dadfb": "2026-10-19T16:10:37.568874+00:00",
   "55d6abc36fd216d2": "2026-10-19T16:10:37.568874+00:00",
   "5c0a233b8940be39": "2026-10-19T16:15:38.117443+00:00",
-  "620fa3163a4316b0": "2026-10-19T16:30:37.718173+00:00"
+  "620fa3163a4316b0": "2026-10-19T16:30:37.718173+00:00",
+  "41cbee2f338cd788": "2026-10-19T16:35:37.598326+00:00",
+  "ed1aa4feb5ddcb6f": "2026-10-19T16:35:37.598326+00:00",
+  "0209d0b3f2edc434": "2026-10-19T16:40:37.623294+00:00",
+  "76bf0acd2bb37b74": "2026-10-19T16:40:37.623294+00:00"
  },
  "recent": [
-  {
-   "title": "Dollar Heads for Worst Week in Over a Month as Warsh Stays Quiet",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-16/dollar-heads-for-worst-week-in-over-a-month-as-warsh-stays-quiet",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T16:34:26.449364+00:00",
-   "title_ru": "Доллар близок к худшей неделе за месяц, поскольку Уорш хранит молчание",
-   "lead": "The dollar is about to break a four-week winning streak after remarks from Federal Reserve Chairman Kevin Warsh failed to give it a lift.",
-   "lead_ru": "Доллар вот-вот прервет четырехнедельную серию побед после того, как высказывания председателя Федеральной резервной системы Кевина Уорша не смогли его поддержать.",
-   "tags": [
-    "Fed",
-    "dollar"
-   ]
-  },
-  {
-   "title": "Kiribati: Staff Concluding Statement of the 2026 IMF Staff Visit",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQVThYV0ZhOHd5NmFVdF9QNE83OXNoN09IN0pzdUY1elQyTG1WZmlORmJjNXdUd01NSDMyWHlSb1lIUnZNdWp1aXQ2V0dEOWFIZmxoem95UUgtVWxCbG9hUDRtNlgtS3hpTk5KX2tkUTVoTld5TF9NU0diTDRTYm5GbE44cU9lM19JZGVwUWhBRmJNOUFoNjBkVXExME9oQVl0ZWptUnNlZUdSdm9SZEtxNE1MVFd0WTZUNlZ3YlB3?oc=5",
-   "sources": [
-    "IMF"
-   ],
-   "score": 5,
-   "ts": "2026-10-16T16:39:26.552957+00:00",
-   "title_ru": "Кирибати: Заключительное заявление сотрудников МВФ по итогам визита сотрудников МВФ 2026 года"
-  },
-  {
-   "title": "Trump has failed to listen to voters on inflation",
-   "link": "https://www.ft.com/content/a0a143ac-6a48-410a-b121-92f293b0ad6d",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 5,
-   "ts": "2026-10-16T16:39:26.552957+00:00",
-   "title_ru": "Трамп не прислушался к избирателям по поводу инфляции",
-   "lead": "People elect presidents to fix problems, not to diagnose their causes",
-   "lead_ru": "Люди выбирают президентов, чтобы решать проблемы, а не диагностировать их причины",
-   "tags": [
-    "inflation"
-   ]
-  },
-  {
-   "title": "The hunt for Fed October",
-   "link": "https://www.ft.com/content/5b36d8a4-49f1-4877-8719-2db984c13081",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 4,
-   "ts": "2026-10-16T16:39:26.552957+00:00",
-   "title_ru": "Охота за октябрьским ФРС",
-   "lead": "Rate markets have been particularly volatile on the outcome of the Fed’s next rate decision later in the month",
-   "lead_ru": "Рынки ставок были особенно волатильными в связи с результатами следующего решения ФРС по ставке позднее в этом месяце.",
-   "tags": [
-    "Fed",
-    "rates"
-   ]
-  },
-  {
-   "title": "Long-Term Treasuries Fall as Dealer Survey Offers Little Signal",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-16/long-term-treasuries-fall-as-dealer-survey-offers-little-signal",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T16:39:26.552957+00:00",
-   "title_ru": "Долгосрочные казначейские облигации падают, поскольку опрос дилеров дает мало сигналов",
-   "lead": "Long-term Treasuries fell after some Wall Street predictions fell flat that US government officials would directly nod at the possibility of reducing its sales of those securities.",
-   "lead_ru": "Долгосрочные казначейские облигации упали после того, как некоторые прогнозы Уолл-стрит не оправдались, согласно которым правительственные чиновники США прямо кивнут на возможность сокращения продаж этих ценных бумаг.",
-   "tags": [
-    "bonds"
-   ]
-  },
   {
    "title": "Canadian steelmakers offset some US tariff pain with domestic demand",
    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOMldhLXNyRTVtNGxxVHN2Y2xISWVPeDRjXzlnRHBWQ2pNTFlVMktheFFGMkc4MnNpeHpMVllwVVJMUFVrZHRIOHpXMVE1M2RYN0p6S2tuQlJOdE1GMTctbmdibUVDaV93YWxaa01NbHpaZ2UxSVhGbU50YWRFN0xneERkdF84clprZWIwYUVaYU9nZmFHb1YzODI1cGRxTFhncS1GOW5oR0RtRUw1NGlQSGo0Zw?oc=5",
@@ -4381,6 +4308,15 @@
    ],
    "score": 1,
    "ts": "2026-10-19T16:15:38.117443+00:00"
+  },
+  {
+   "title": "В Минфине заявил об отсутствии запросов от «Яндекса» на поддержку",
+   "link": "https://www.rbc.ru/rbcfreenews/6ad643e887ac251dadf04a61",
+   "sources": [
+    "RBC"
+   ],
+   "score": 1,
+   "ts": "2026-10-19T16:40:37.623294+00:00"
   }
  ],
  "last_digest": "2026-10-18",
@@ -8391,13 +8327,11 @@
   "sec_seen": [
    "0001519822-26-000011",
    "0001519609-26-000011",
-   "0001519952-26-000008",
    "0002016329-26-000010",
    "0002005206-26-000007",
    "0002038741-26-000009",
    "0001965214-26-000008",
    "0002071271-26-000017",
-   "0001959506-26-000008",
    "0002005212-26-000007",
    "0001709430-26-000010",
    "0001519680-26-000007",
