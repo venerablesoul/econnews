@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "0692814faeed76b7": "2026-10-16T09:53:52.071815+00:00",
-  "d068e279dd08da82": "2026-10-16T09:53:52.071815+00:00",
-  "c1b98aa2eccba191": "2026-10-16T09:58:52.099555+00:00",
-  "14f0ae7acdf64b86": "2026-10-16T09:58:52.099555+00:00",
-  "26d6fbaee3561f28": "2026-10-16T09:58:52.099555+00:00",
   "1332c9f052ca416e": "2026-10-16T10:03:52.102853+00:00",
   "c248a1247b45c6a5": "2026-10-16T10:08:52.286389+00:00",
   "6bef6c7641aff1ef": "2026-10-16T10:08:52.286389+00:00",
@@ -582,59 +577,12 @@
   "d84177728cd18893": "2026-10-19T09:35:44.855402+00:00",
   "155ff4df77856ec3": "2026-10-19T09:40:44.891797+00:00",
   "7aa9127a028ccf23": "2026-10-19T09:45:44.901318+00:00",
-  "677c33702f2e9feb": "2026-10-19T09:50:44.885870+00:00"
+  "677c33702f2e9feb": "2026-10-19T09:50:44.885870+00:00",
+  "7eb61814b5dbbcdb": "2026-10-19T10:00:44.901465+00:00",
+  "547445ef252d6722": "2026-10-19T10:00:44.901465+00:00",
+  "9210a42d6fd0516e": "2026-10-19T10:00:44.901465+00:00"
  },
  "recent": [
-  {
-   "title": "MSCI Ignites Indonesia Market Reckoning After Months of Warnings",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-16/msci-ignites-indonesia-market-reckoning-after-months-of-warnings",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T09:53:52.071815+00:00",
-   "title_ru": "MSCI подстегивает рост рынка Индонезии после нескольких месяцев предупреждений",
-   "lead": "For the staid and often predictable world of stock-market indexing, it was a bombshell moment.",
-   "lead_ru": "Для уравновешенного и часто предсказуемого мира индексации фондового рынка это был момент разорвавшейся бомбы."
-  },
-  {
-   "title": "Fed chief Warsh: economy robust, but don't ask me about rates",
-   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE43QW5EMmVnOGg5Z0JaQWl0S2FyalctWkdiNVNrQzJ1d0JwMnBwVFAxYm5JbGlIZ0dWWmxPUnhHSWswT3JRZlUyMDZNb0t2UzNHUkNURVhaUjI1NkpxaGVsUGNfYndlQkE?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-16T09:58:52.099555+00:00",
-   "title_ru": "Глава ФРС Уорш: экономика крепкая, но не спрашивайте меня о ставках",
-   "tags": [
-    "Fed"
-   ]
-  },
-  {
-   "title": "Uganda in Final Stages of Oil Production (Video)",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-16/uganda-in-final-stages-of-oil-production-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T09:58:52.099555+00:00",
-   "title_ru": "Уганда находится на заключительной стадии добычи нефти (Видео)",
-   "tags": [
-    "oil"
-   ]
-  },
-  {
-   "title": "Indonesia Unveils $117 Million in Fines After MSCI Warning",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-16/indonesia-unveils-117-million-in-fines-after-msci-warning",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T09:58:52.099555+00:00",
-   "title_ru": "Индонезия объявила о штрафах на 117 миллионов долларов после предупреждения MSCI",
-   "lead": "Indonesia announced about $117 million in fines tied to manipulative market practices involving three companies, hours after global index provider MSCI Inc.",
-   "lead_ru": "Индонезия объявила о штрафах на сумму 117 миллионов долларов, связанных с манипулятивными рыночными практиками с участием трех компаний, спустя несколько часов после того, как глобальный поставщик индексов MSCI Inc."
-  },
   {
    "title": "Euro Set to End Five-Week Losing Run as Warsh Remarks Hit Dollar",
    "link": "https://www.bloomberg.com/news/articles/2026-10-16/euro-set-to-end-five-week-losing-run-as-warsh-remarks-hit-dollar",
@@ -5110,6 +5058,41 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "UK urges firms not to take part in E1 settlement tender or risk sanctions",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNeG9CWEV1Z3N0eDN1b2U5TEw4Y21TVm51OWtfUFQ4UEhyVm9jZkpLQUFraHFaajdGeEctTWtVZmlWT3pkWGtVZXR0QzJmcC1wS1paMDVBQ3FVTUdGUWZ2TlZOdmRYRUJBMFNBeml4RjgtQlhaMW9TdFJNSzRBU2RjRGI1MmRadmI0azlNTGJQQ01EU3FhWXNsX0FyQkN2OHJKcUR6ckdwMExWanJfSVNJVFdMM1ZseGRMME43QUJR?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-19T10:00:44.901465+00:00",
+   "title_ru": "Великобритания призывает фирмы не принимать участие в тендерах по урегулированию E1 или рисковать санкциями",
+   "tags": [
+    "sanctions"
+   ]
+  },
+  {
+   "title": "China's central bank studies making overnight rate its main policy rate",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQQkZxcExIWnlGa1B2TFhUcjFWNDlzOWxQUUJnZkp3NlpJX3lwZXBvN05BN0xoRzhucmFJTWZwTUpDWUVPTzhpTWNnSGxYMDNCRjdYT0RacU1DWFEyclZHS3I2SDFUdWRkRE0wS0M2N1ZuZ3B6YjBENGlDU2R1R1FrMTdTWnJ1Z2pCUnVnM0FHWVh5X0dpRWxhbjJYS2J4X29CaEtLQWJaNFVWbEdRUG1fMEFRWlp4YmFOM0NDRkRlM0NjaE0?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-19T10:00:44.901465+00:00",
+   "title_ru": "Центральный банк Китая изучает возможность сделать ставку «овернайт» своей основной учетной ставкой",
+   "tags": [
+    "China"
+   ]
+  },
+  {
+   "title": "Big tech is wobbling. Goldman Sachs says it’s time to buy these 23 unloved stocks instead.",
+   "link": "https://www.marketwatch.com/story/big-tech-is-wobbling-goldman-sachs-says-its-time-to-buy-these-23-unloved-stocks-instead-cff7a9e0?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-19T10:00:44.901465+00:00"
   }
  ],
  "last_digest": "2026-10-18",
