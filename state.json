@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "2d1c04f082d959ae": "2026-10-15T23:57:36.452163+00:00",
   "21c76c00e55204c1": "2026-10-16T00:22:36.424425+00:00",
   "cf9c135a01889dd9": "2026-10-16T00:32:36.439339+00:00",
   "8de7718fc74f60ae": "2026-10-16T00:43:25.081492+00:00",
@@ -572,26 +571,12 @@
   "e165aef8d78b8efb": "2026-10-18T23:30:13.729050+00:00",
   "b7801dab164803ae": "2026-10-18T23:35:13.689520+00:00",
   "9f308b9c06a26bb1": "2026-10-18T23:35:13.689520+00:00",
-  "3e5217004b9061e5": "2026-10-18T23:40:13.743750+00:00"
+  "3e5217004b9061e5": "2026-10-18T23:40:13.743750+00:00",
+  "e9de1309d2b7fb32": "2026-10-19T00:00:13.786581+00:00",
+  "f2df11f131eb2a50": "2026-10-19T00:00:13.786581+00:00",
+  "fb155dcead972403": "2026-10-19T00:00:13.786581+00:00"
  },
  "recent": [
-  {
-   "title": "Gold Holds Gains With Haven Demand and Lower Yields in Focus",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-15/gold-holds-gains-with-haven-demand-and-lower-yields-in-focus",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-15T23:57:36.452163+00:00",
-   "title_ru": "Золото удерживает рост благодаря высокому спросу и снижению доходности в фокусе",
-   "lead": "Gold steadied after rising the most in more than two weeks on Thursday as investors sought safety from a stocks selloff in bonds, pushing down Treasury yields.",
-   "lead_ru": "Золото стабилизировалось после максимального роста более чем за две недели в четверг, когда инвесторы искали защиты от распродажи акций в облигациях, что привело к снижению доходности казначейских облигаций.",
-   "tags": [
-    "gold",
-    "bonds",
-    "markets"
-   ]
-  },
   {
    "title": "Progress toward a US-Mexico tariff deal has stalled, WSJ reports",
    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPVGNhSXNCbUFqT0t4bkRCWTJfaWJOSkxLSXJpSkczTHhDdjlGdXhDam9DdmNOV0drSVlqT3U1eTUwVFZuRFJNQU9rSVZBUkJKOXBZQkJjb21DYkhHNDdXNFFpWFVtTDlMQ3RoTFZaQkdGYUpSWDZPOTNJVUQxQi1VWHlDVkdzM1F1S09Xelh5X1NfaVhqS0NESGxYVGJkOUZ1V0cyb1ZyVlhwRWxqOWFrYVNseHhMMkQxX29ROUN3MXF4bHQ3U3c?oc=5",
@@ -5265,6 +5250,23 @@
     "China",
     "tariffs"
    ]
+  },
+  {
+   "title": "Gold Edges Higher as Traders Ease Rate-Hike Bets on Warsh Speech",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-18/gold-edges-higher-as-traders-ease-rate-hike-bets-on-warsh-speech",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-19T00:00:13.786581+00:00",
+   "title_ru": "Золотые преимущества растут, так как трейдеры облегчают ставки на Warsh Speech",
+   "lead": "Gold opened the week higher as traders pared bets on the Federal Reserve raising interest rates this month after remarks by Chair Kevin Warsh.",
+   "lead_ru": "Золото открылось неделей выше, так как трейдеры сделали ставку на повышение процентных ставок Федеральной резервной системы в этом месяце после замечаний председателя Кевина Уорша.",
+   "tags": [
+    "Fed",
+    "rates",
+    "gold"
+   ]
   }
  ],
  "last_digest": "2026-10-18",
@@ -5310,7 +5312,7 @@
   "2026-10-18-21"
  ],
  "calendar": {
-  "fetched": "2026-10-18T21:39:36.386261+00:00",
+  "fetched": "2026-10-19T00:00:13.786581+00:00",
   "events": [
    {
     "title": "IMF Meetings",
@@ -9066,15 +9068,8 @@
    }
   ],
   "docs": {
-   "9116355": "2026-10-01",
-   "9116356": "2026-10-01",
-   "9116357": "2026-10-01",
    "9116376": "2026-10-07",
    "9116361": "2026-10-02",
-   "20035555": "2026-10-01",
-   "20035464": "2026-10-01",
-   "20035549": "2026-10-01",
-   "6bf3b6f7-9e1b-499a-bd5a-990292ce2e72": "2026-10-01",
    "20035553": "2026-10-02",
    "20035558": "2026-10-02",
    "20035580": "2026-10-05",
@@ -9112,9 +9107,9 @@
    "0001213900-26-110401",
    "0000037785-26-000164",
    "0001214659-26-013018",
-   "0001646382-26-000023",
-   "0001193125-26-424368",
    "0000037785-26-000163",
+   "0001193125-26-424368",
+   "0001646382-26-000023",
    "0001213900-26-110428",
    "0001213900-26-110436",
    "0001104659-26-116675",
