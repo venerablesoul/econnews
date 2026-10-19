@@ -518,7 +518,8 @@
   "80e72ddb77969232": "2026-10-19T21:10:37.581578+00:00",
   "1a6481b7e58503bf": "2026-10-19T21:21:05.236858+00:00",
   "2e85ce00d912348a": "2026-10-19T21:21:05.236858+00:00",
-  "6c767b38e8519249": "2026-10-19T21:26:05.375687+00:00"
+  "6c767b38e8519249": "2026-10-19T21:26:05.375687+00:00",
+  "9d9d7e352dd4f913": "2026-10-19T21:41:05.272045+00:00"
  },
  "recent": [
   {
@@ -4280,6 +4281,21 @@
    ],
    "score": 1,
    "ts": "2026-10-19T21:05:37.551757+00:00"
+  },
+  {
+   "title": "Credit markets have entered uncharted territory as the riskiest junk bonds send a warning to investors",
+   "link": "https://www.marketwatch.com/story/credit-markets-have-entered-uncharted-territory-as-the-riskiest-junk-bonds-send-a-warning-to-investors-816a05d5?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 3,
+   "ts": "2026-10-19T21:41:05.272045+00:00",
+   "title_ru": "Кредитные рынки вступили на неизведанную территорию, поскольку самые рискованные мусорные облигации предупреждают инвесторов",
+   "lead": "Credit markets are sending unusually mixed messages to investors right now, and it’s making some people nervous.",
+   "lead_ru": "Кредитные рынки сейчас посылают инвесторам необычно смешанные сигналы, и это заставляет некоторых нервничать.",
+   "tags": [
+    "bonds"
+   ]
   }
  ],
  "last_digest": "2026-10-19",
@@ -6210,6 +6226,54 @@
   "insiders": [
    {
     "src": "sec",
+    "id": "3a146110cb1e7826",
+    "ticker": "CTY",
+    "company": "CITY THERAPEUTICS, INC.",
+    "who": "Arch Venture Partners Xii, Llc et al.",
+    "role": "10% owner",
+    "type": "buy",
+    "value": 3060000,
+    "shares": 170000,
+    "price": 18.0,
+    "plan": false,
+    "date": "2026-10-19",
+    "disclosed": "2026-10-19",
+    "link": "https://www.sec.gov/Archives/edgar/data/2143850/000110465926116966/0001104659-26-116966-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "ca8ae351aa6d69ea",
+    "ticker": "SNES",
+    "company": "SenesTech, Inc.",
+    "who": "Glenbrook Capital Management",
+    "role": "10% owner",
+    "type": "buy",
+    "value": 706057,
+    "shares": 983804,
+    "price": 0.72,
+    "plan": false,
+    "date": "2026-10-19",
+    "disclosed": "2026-10-19",
+    "link": "https://www.sec.gov/Archives/edgar/data/1680378/000090266426004215/0000902664-26-004215-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "888c5b96e9e6aa4e",
+    "ticker": "CTY",
+    "company": "CITY THERAPEUTICS, INC.",
+    "who": "Robert Nelsen",
+    "role": "Director, 10% owner",
+    "type": "buy",
+    "value": 3060000,
+    "shares": 170000,
+    "price": 18.0,
+    "plan": false,
+    "date": "2026-10-19",
+    "disclosed": "2026-10-19",
+    "link": "https://www.sec.gov/Archives/edgar/data/2143850/000110465926116965/0001104659-26-116965-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "e02e935959492ff3",
     "ticker": "APLD",
     "company": "Applied Digital Corp.",
@@ -6735,6 +6799,22 @@
     "date": "2026-10-15",
     "disclosed": "2026-10-19",
     "link": "https://www.sec.gov/Archives/edgar/data/1620093/000161670726000181/0001616707-26-000181-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "324eb4f775a3cf71",
+    "ticker": "ECF",
+    "company": "ELLSWORTH GROWTH & INCOME FUND LTD",
+    "who": "Saba Capital Management, L.p.",
+    "role": "10% owner",
+    "type": "buy",
+    "value": 115840,
+    "shares": 9969,
+    "price": 11.62,
+    "plan": false,
+    "date": "2026-10-15",
+    "disclosed": "2026-10-19",
+    "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000357/0001510281-26-000357-index.htm"
    },
    {
     "src": "sec",
@@ -8681,8 +8761,10 @@
    "0001035422-26-000017",
    "0001616707-26-000179",
    "0001104659-26-116962",
+   "0001104659-26-116965",
    "0001193125-26-425403",
-   "0001628280-26-066340",
+   "0001510281-26-000357",
+   "0001104659-26-116963",
    "0001628280-26-066341",
    "0001934884-26-000007",
    "0001213900-26-110762",
@@ -8692,16 +8774,19 @@
    "0001493152-26-047631",
    "0001510281-26-000356",
    "0001616707-26-000176",
-   "0000950103-26-015810",
+   "0001839799-26-000143",
+   "0001402057-26-000110",
+   "0001104659-26-116966",
    "0001628280-26-066344",
-   "0001225208-26-008445",
+   "0001679049-26-000163",
+   "0000902664-26-004215",
    "0001213900-26-110759",
    "0001818383-26-000254",
    "0001225208-26-008447",
    "0000885639-26-000182",
    "0001616707-26-000181",
-   "0000885639-26-000180",
    "0001193125-26-425377",
+   "0001628280-26-066348",
    "0000105634-26-000125",
    "0001104659-26-116959"
   ],
