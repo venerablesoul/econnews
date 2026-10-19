@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "3d1da8446c04adeb": "2026-10-16T21:34:55.536616+00:00",
-  "f0144117839768be": "2026-10-16T21:34:55.536616+00:00",
   "130882a2db80c9c5": "2026-10-16T21:49:55.587692+00:00",
   "88101cf3f43cfc51": "2026-10-16T21:54:55.613102+00:00",
   "2c8e0f4cd7612664": "2026-10-16T21:54:55.613102+00:00",
@@ -523,35 +521,6 @@
   "6c767b38e8519249": "2026-10-19T21:26:05.375687+00:00"
  },
  "recent": [
-  {
-   "title": "The bond market shrugged off two inflation shocks. Why stock investors should pay attention.",
-   "link": "https://www.marketwatch.com/story/the-bond-market-shrugged-off-two-inflation-shocks-why-stock-investors-should-pay-attention-5da4f771?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 7,
-   "ts": "2026-10-16T21:34:55.536616+00:00",
-   "title_ru": "Рынок облигаций пережил два инфляционных шока. Почему инвесторам в акции следует обратить внимание.",
-   "lead": "Hot CPI and PPI data should have pushed Treasury yields higher. Instead, bond buyers stepped in to suggest yields have risen high enough to become attractive for investors.",
-   "lead_ru": "Горячие данные по индексу потребительских цен и индексу цен производителей должны были подтолкнуть доходность казначейских облигаций к росту. Вместо этого вмешались покупатели облигаций, предположившие, что доходность выросла достаточно высоко, чтобы стать привлекательными для инвесторов.",
-   "tags": [
-    "inflation",
-    "bonds"
-   ]
-  },
-  {
-   "title": "Mexico limits tariffs break to established local carmakers",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPdno1S1hpa0pyaXl2RWtmamJpdjk2VW5LZmhzNk55dktqVl9VLWNLdTZvQXN6MnJ1ODZxWmp3cU9xaGhFaHljRmJ5ZDhEdGF2ZS1nOWkwWldERTlOSWtYb3dsLUNiQ3hoaE5lY0cydW8wd1hWTzF4WEYzMkJ3R21oM2tWRlR5NDFLVF9sd3E1aGFoOGNQcEpBMFdnOTJmQVh4UE5pTWZ4STEydXI5TUlYT1o3R2xGbUZpUnZ2Q3ZR?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-16T21:34:55.536616+00:00",
-   "title_ru": "Мексика ограничивает снижение тарифов для местных автопроизводителей",
-   "tags": [
-    "tariffs"
-   ]
-  },
   {
    "title": "Europe offers diversification absent in US, emerging markets, says CIO",
    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBrU3F3NjhCemI4bHU5d2NNM1A3aXd6Z3BFQW1oQ3NWeDdpdjJrOTg2TXhvTjR3bzVWZFlacmJfMm5CSEJ0SklQaXZoS3BYbXpqTHduWVc4MXVYbWg1U1FZNTB3REdEZmdTN1EycWhKVEZRSWtob3BXUVlSMUxwZw?oc=5",
@@ -5069,6 +5038,21 @@
   "congress": [
    {
     "src": "house",
+    "who": "Laurel Lee",
+    "where": "House, FL-15",
+    "owner": "SP",
+    "ticker": "NOKBF",
+    "asset": "NOKIA A SHS",
+    "type": "buy",
+    "amin": 15001,
+    "amax": 50000,
+    "date": "2026-09-18",
+    "disclosed": "2026-10-16",
+    "link": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035490.pdf",
+    "id": "62e922f96b65be2e"
+   },
+   {
+    "src": "house",
     "who": "David J. Taylor",
     "where": "House, OH-02",
     "owner": "",
@@ -6434,6 +6418,22 @@
    },
    {
     "src": "sec",
+    "id": "3f0e45b59a2705e5",
+    "ticker": "ACOG",
+    "company": "Alpha Cognition Inc.",
+    "who": "Opaleye Management Inc.",
+    "role": "10% owner",
+    "type": "buy",
+    "value": 308576,
+    "shares": 36940,
+    "price": 8.35,
+    "plan": false,
+    "date": "2026-10-16",
+    "disclosed": "2026-10-19",
+    "link": "https://www.sec.gov/Archives/edgar/data/1655923/000149315226047631/0001493152-26-047631-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "2ddfc0fab2269fee",
     "ticker": "NBIS",
     "company": "Nebius Group N.V.",
@@ -6719,6 +6719,22 @@
     "date": "2026-10-15",
     "disclosed": "2026-10-19",
     "link": "https://www.sec.gov/Archives/edgar/data/1620052/000161670726000176/0001616707-26-000176-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "64a00bca25295753",
+    "ticker": "W",
+    "company": "Wayfair Inc.",
+    "who": "Niraj Shah",
+    "role": "CEO",
+    "type": "sell",
+    "value": 13016326,
+    "shares": 117000,
+    "price": 111.25,
+    "plan": true,
+    "date": "2026-10-15",
+    "disclosed": "2026-10-19",
+    "link": "https://www.sec.gov/Archives/edgar/data/1620093/000161670726000181/0001616707-26-000181-index.htm"
    },
    {
     "src": "sec",
@@ -8646,7 +8662,8 @@
    "20035651": "2026-10-14",
    "9116378": "2026-10-14",
    "20035637": "2026-10-15",
-   "20035660": "2026-10-15"
+   "20035660": "2026-10-15",
+   "20035490": "2026-10-16"
   },
   "queue": [],
   "ready": {
@@ -8654,32 +8671,39 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-19T20:35:37.574305+00:00",
+  "checked": "2026-10-19T21:36:05.379297+00:00",
   "sec_seen": [
-   "0001456817-26-000017",
+   "0001998826-26-000023",
+   "0001104659-26-116956",
+   "0001104659-26-116958",
    "0000950103-26-015811",
    "0001225208-26-008446",
    "0001035422-26-000017",
    "0001616707-26-000179",
-   "0002040321-26-000005",
-   "0000038777-26-000268",
+   "0001104659-26-116962",
+   "0001193125-26-425403",
    "0001628280-26-066340",
    "0001628280-26-066341",
+   "0001934884-26-000007",
    "0001213900-26-110762",
    "0000885639-26-000184",
-   "0002045482-26-000010",
+   "0001628280-26-066346",
    "0001998460-26-000016",
+   "0001493152-26-047631",
    "0001510281-26-000356",
    "0001616707-26-000176",
    "0000950103-26-015810",
    "0001628280-26-066344",
    "0001225208-26-008445",
    "0001213900-26-110759",
+   "0001818383-26-000254",
    "0001225208-26-008447",
    "0000885639-26-000182",
+   "0001616707-26-000181",
    "0000885639-26-000180",
    "0001193125-26-425377",
-   "0000105634-26-000125"
+   "0000105634-26-000125",
+   "0001104659-26-116959"
   ],
   "errors": {}
  }
