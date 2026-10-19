@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "82521f95c0a01a7e": "2026-10-16T07:28:52.075369+00:00",
   "8aef1efb69ee4c7e": "2026-10-16T07:38:52.140616+00:00",
   "08e49c936a25d253": "2026-10-16T07:38:52.140616+00:00",
   "7e14763e6ef2c3b7": "2026-10-16T07:38:52.140616+00:00",
@@ -585,18 +584,10 @@
   "30533d60f28502bc": "2026-10-19T07:10:44.844341+00:00",
   "84644889aa3fbc8d": "2026-10-19T07:10:44.844341+00:00",
   "a8a61786a9c6f2d6": "2026-10-19T07:20:44.848704+00:00",
-  "c359925aff5afc0b": "2026-10-19T07:20:44.848704+00:00"
+  "c359925aff5afc0b": "2026-10-19T07:20:44.848704+00:00",
+  "fc3a832db1467ed3": "2026-10-19T07:30:44.848898+00:00"
  },
  "recent": [
-  {
-   "title": "Россияне назвали соотношение зарплат и повседневных расходов",
-   "link": "https://www.rbc.ru/rbcfreenews/6ad1cba9fe5156c3455b3af0",
-   "sources": [
-    "RBC"
-   ],
-   "score": 1,
-   "ts": "2026-10-16T07:28:52.075369+00:00"
-  },
   {
    "title": "IMF Sees One More BOJ Hike Toward Neutral, Urges Flexibility",
    "link": "https://www.bloomberg.com/news/articles/2026-10-16/imf-sees-one-more-boj-hike-toward-neutral-urges-flexibility",
@@ -5166,6 +5157,19 @@
    "title_ru": "Китай намерен оставить базовые ставки кредитования без изменений на 17-й месяц",
    "tags": [
     "China"
+   ]
+  },
+  {
+   "title": "French stocks slide after violent protests",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQdW9VVF96NDJvM0NodkZHWmFtdk9jeTFva1pDT2h6eVZwWVV4OExITXRHODRaTVRlRkVvYldLdDFMRWtjeVZGa090QjhMVE1vUHd6MFhaWm5pbTRsZk9GUFFuQ0k3Wms4eEwwM2poYVcwLWJaMjR2cW9MMWlNSDFmMldsNl9ZcWlXVFRFbll1djhULTVlREhOdw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-19T07:30:44.848898+00:00",
+   "title_ru": "Французские акции падают после бурных протестов",
+   "tags": [
+    "markets"
    ]
   }
  ],
