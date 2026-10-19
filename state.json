@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "2573f4a5d35aad8f": "2026-10-16T10:53:52.033584+00:00",
-  "3b74faae6409b750": "2026-10-16T10:58:52.064912+00:00",
-  "e5fbd6c481f61178": "2026-10-16T10:58:52.064912+00:00",
   "1764e66d85ace3c0": "2026-10-16T11:03:52.091922+00:00",
   "72ec0ab494d26ca6": "2026-10-16T11:08:52.052581+00:00",
   "8d7c8cf8da274d14": "2026-10-16T11:08:52.052581+00:00",
@@ -584,50 +581,10 @@
   "5dbc14cfcb2e591a": "2026-10-19T10:46:15.417314+00:00",
   "9cf91f2a01027188": "2026-10-19T10:46:15.417314+00:00",
   "0975df5253074a26": "2026-10-19T10:51:15.413067+00:00",
-  "a8bbcab898826486": "2026-10-19T10:51:15.413067+00:00"
+  "a8bbcab898826486": "2026-10-19T10:51:15.413067+00:00",
+  "c48d5c8f751f88c5": "2026-10-19T11:01:15.479588+00:00"
  },
  "recent": [
-  {
-   "title": "Котяков назвал размер пособия по безработице в 2027 году",
-   "link": "https://www.rbc.ru/rbcfreenews/6ad201cc62ba15e8852d5aa1",
-   "sources": [
-    "RBC"
-   ],
-   "score": 1,
-   "ts": "2026-10-16T10:53:52.033584+00:00"
-  },
-  {
-   "title": "Angola Eyes Panda and Islamic Bonds to Diversify Funding Sources",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-16/angola-eyes-panda-and-islamic-bonds-to-diversify-funding-sources",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T10:58:52.064912+00:00",
-   "title_ru": "Ангола рассматривает панду и исламские облигации для диверсификации источников финансирования",
-   "lead": "Angola is considering selling bonds in China or tapping Islamic debt markets in the Middle East as the oil-producing nation seeks to diversify its sources of financing, according to a senior finance official.",
-   "lead_ru": "По словам высокопоставленного финансового чиновника, Ангола рассматривает возможность продажи облигаций в Китае или выхода на исламские долговые рынки на Ближнем Востоке, поскольку нефтедобывающая страна стремится диверсифицировать свои источники финансирования.",
-   "tags": [
-    "oil",
-    "bonds",
-    "China"
-   ]
-  },
-  {
-   "title": "Nearly 40% of the S&P 500 is in a bear market. Here are 10 of those stocks that analysts say can gain up to 81%.",
-   "link": "https://www.marketwatch.com/story/nearly-40-of-the-s-p-500-is-in-a-bear-market-here-are-10-of-those-stocks-that-analysts-say-can-gain-up-to-81-93a51af6?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T10:58:52.064912+00:00",
-   "title_ru": "Почти 40% акций S&P 500 находятся на медвежьем рынке. Вот 10 из тех акций, которые, по мнению аналитиков, могут вырасти до 81%.",
-   "lead": "The S&P 500’s strong overall performance reflects its heavy weighting at the top. Under the surface, more than a third of the index’s stocks are down at least 20% from their 52-week highs.",
-   "lead_ru": "Высокие общие показатели индекса S&P 500 отражают его значительный вес на вершине. Под поверхностью более трети акций индекса упали как минимум на 20% по сравнению с 52-недельными максимумами.",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Banknote imagery advisory group minutes – 15 July 2026",
    "link": "https://www.bankofengland.co.uk/minutes/2026/july/banknote-advisory-minutes-15-july",
@@ -5064,6 +5021,20 @@
    "score": 3,
    "ts": "2026-10-19T10:51:15.413067+00:00",
    "title_ru": "Стерлинг достиг 17-месячного максимума по отношению к евро"
+  },
+  {
+   "title": "TSX futures edge lower as oil slips; eyes on inflation data",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOX3NHWThwRjlFWHVFWmJfUFhNV3lsREJnYlB5X0ZpbnJldjhlMl8tdDF3T19JcFlQWVFoOEt0eWxqdUMwSmFYeEg5WllRNzlfWnJzcWFFaHFUOXZtUWN5d2M2VUY1a19GU2M4Z1BuUkVObWZDX2traXdWcGt2djFxRVRTVU1KcHNlMWVOLWtDZklwcnRaYUZQQzBELThfZw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-19T11:01:15.479588+00:00",
+   "title_ru": "Фьючерсы на TSX снижаются на фоне падения нефти; внимание к данным по инфляции",
+   "tags": [
+    "inflation",
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-18",
@@ -8920,6 +8891,7 @@
    "0001213900-26-110428",
    "0000950103-26-015756",
    "0001543262-26-000010",
+   "0001628280-26-066202",
    "0001493152-26-047479",
    "0001214659-26-013018",
    "0001104659-26-116675",
