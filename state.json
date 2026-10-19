@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "8119ccc950270c6c": "2026-10-16T20:44:55.590880+00:00",
-  "795a0326b69ef5b5": "2026-10-16T20:49:55.642309+00:00",
-  "2fc080a4d5142eec": "2026-10-16T20:49:55.642309+00:00",
   "b4ec47a37e263b54": "2026-10-16T20:54:55.623292+00:00",
   "f19c3fd8ac75a9eb": "2026-10-16T20:54:55.623292+00:00",
   "f764c58c2470e157": "2026-10-16T21:04:55.607130+00:00",
@@ -525,35 +522,6 @@
   "9b9bdc9af8b8cf58": "2026-10-19T20:25:37.571212+00:00"
  },
  "recent": [
-  {
-   "title": "Judge Threatens Trump With Sanctions to Testify in BBC Lawsuit",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNNVdwLS1hQURJSWIwMU5SWXRic0szNnQ3MjlXMXh5X2FqT2psM0M2U1VCM1pEVVRTMkJOcmdmaTZQNHFiWEpIYVc2aWNqTVZkcmlHdmdwN1lHSEo4ZV93LW5YYTBFY2dHMDRHb01idmNYdkg5ZUhjd1hMTzI3T3Vrb3lpNm5rMHd5cEk3VTJTTEo4LVlPRGFabzJPcTJJR3ZtREhZSVE3N1JtSk5XeFVOVFJzbw?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-16T20:44:55.590880+00:00",
-   "title_ru": "Судья пригрозил Трампу санкциями за дачу показаний по иску BBC",
-   "tags": [
-    "sanctions"
-   ]
-  },
-  {
-   "title": "Wall Street Anxiety Spreads as AI Rout Meets $110 Oil Shock",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-16/wall-street-anxiety-spreads-as-ai-rout-meets-110-oil-shock",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-16T20:49:55.642309+00:00",
-   "title_ru": "Беспокойство на Уолл-стрит распространяется по мере того, как разгром искусственного интеллекта сталкивается с нефтяным шоком в 110 долларов",
-   "lead": "Wall Street has spent the year betting on staggering AI growth while worrying about stubborn inflation.",
-   "lead_ru": "Уолл-стрит провела год, делая ставки на ошеломляющий рост ИИ, одновременно беспокоясь о устойчивой инфляции.",
-   "tags": [
-    "inflation",
-    "oil"
-   ]
-  },
   {
    "title": "Foreign Holdings of US Treasuries Rise From Almost One-Year Low",
    "link": "https://www.bloomberg.com/news/articles/2026-10-16/foreign-holdings-of-us-treasuries-rise-from-almost-one-year-low",
@@ -6443,6 +6411,22 @@
    },
    {
     "src": "sec",
+    "id": "c694cd81f4dbd0dc",
+    "ticker": "IDT",
+    "company": "IDT CORP",
+    "who": "Marcelo Fischer",
+    "role": "CFO",
+    "type": "sell",
+    "value": 760847,
+    "shares": 9333,
+    "price": 81.52,
+    "plan": false,
+    "date": "2026-10-16",
+    "disclosed": "2026-10-19",
+    "link": "https://www.sec.gov/Archives/edgar/data/1228166/000119312526425329/0001193125-26-425329-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "2ddfc0fab2269fee",
     "ticker": "NBIS",
     "company": "Nebius Group N.V.",
@@ -6648,6 +6632,22 @@
     "date": "2026-10-15",
     "disclosed": "2026-10-19",
     "link": "https://www.sec.gov/Archives/edgar/data/1722684/000172268426000077/0001722684-26-000077-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "627a3854c9ab8775",
+    "ticker": "CNXU",
+    "company": "Conexeu Sciences Inc.",
+    "who": "Lynn Sebastian Purcell",
+    "role": "Director, 10% owner",
+    "type": "buy",
+    "value": 499998,
+    "shares": 166666,
+    "price": 3.0,
+    "plan": false,
+    "date": "2026-10-15",
+    "disclosed": "2026-10-19",
+    "link": "https://www.sec.gov/Archives/edgar/data/2128469/000212846926000009/0002128469-26-000009-index.htm"
    },
    {
     "src": "sec",
@@ -8585,34 +8585,31 @@
   },
   "checked": "2026-10-19T20:35:37.574305+00:00",
   "sec_seen": [
-   "0001628280-26-066315",
-   "0001177394-26-000130",
-   "0001177394-26-000128",
-   "0001597870-26-000015",
-   "0001213900-26-110705",
-   "0001628280-26-066307",
+   "0001193125-26-425328",
+   "0002065340-26-000023",
    "0000927653-26-000255",
-   "0001106578-26-000166",
-   "0001227654-26-000078",
-   "0001783879-26-000155",
-   "0001628280-26-066308",
-   "0001628280-26-066314",
+   "0001753926-26-001963",
+   "0001628280-26-066331",
+   "0001369304-26-000005",
+   "0001628280-26-066333",
+   "0001291899-26-000006",
    "0001227654-26-000080",
-   "0001628280-26-066310",
-   "0000950103-26-015797",
-   "0001213900-26-110704",
-   "0001722684-26-000077",
-   "0001628280-26-066305",
-   "0001177394-26-000132",
-   "0001826470-26-000075",
-   "0001752466-26-000019",
-   "0001801170-26-000284",
-   "0001628280-26-066311",
+   "0001193125-26-425327",
+   "0002107550-26-000004",
+   "0001659994-26-000007",
+   "0001227654-26-000081",
+   "0001809523-26-000018",
+   "0002128469-26-000009",
+   "0001193125-26-425329",
+   "0001672825-26-000009",
    "0001227654-26-000079",
-   "0001205703-26-000032",
-   "0001989382-26-000018",
-   "0001628280-26-066313",
-   "0001628280-26-066306"
+   "0001205945-26-000006",
+   "0001699997-26-000005",
+   "0001534094-26-000005",
+   "0001123292-26-001405",
+   "0001230604-26-000009",
+   "0001712360-26-000006",
+   "0001628280-26-066323"
   ],
   "errors": {}
  }
