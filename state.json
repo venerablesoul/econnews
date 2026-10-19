@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e8552b9b51de68ce": "2026-10-16T13:24:26.450400+00:00",
-  "9c51a8de5420bdbb": "2026-10-16T13:24:26.450400+00:00",
   "bd893fbc3f8384e5": "2026-10-16T13:29:26.428536+00:00",
   "05bd4ce5fb057f14": "2026-10-16T13:29:26.428536+00:00",
   "0daccf5f1b137b34": "2026-10-16T13:29:26.428536+00:00",
@@ -549,19 +547,11 @@
   "a2ce8c3e1dbc4ca5": "2026-10-19T12:41:15.452830+00:00",
   "062ea3b449e77b8e": "2026-10-19T12:46:15.464259+00:00",
   "67cb658039d02eb0": "2026-10-19T12:56:15.496751+00:00",
-  "36f802ae1a7177d1": "2026-10-19T13:01:15.473423+00:00"
+  "36f802ae1a7177d1": "2026-10-19T13:01:15.473423+00:00",
+  "ada659b0447d666d": "2026-10-19T13:26:15.454264+00:00",
+  "32c3e085cdc377e4": "2026-10-19T13:26:15.454264+00:00"
  },
  "recent": [
-  {
-   "title": "Stablecoin issuer Circle to push into 40 new markets, CEO says",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOeFVPNGdFX1B5eHM3eFl1WG1sV0FWUVlqcDVEMFRURDYzOWdXYl9OVTZ3TC1YT2VjUlRIOEFEVjhPbk5GaG1HZGExcm1zbExBa2VSNlpoakxpdjJ2V3NrWlZkaDg3VlhHZjgwN2lnNEgyU2RXbnBSWnpFaU9FWktOaThkb3hVQjNwSm83YnRUanhoWTFydUJ5dUEtdjFEaG85ekhISHI3VEw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T13:24:26.450400+00:00",
-   "title_ru": "Эмитент стейблкоинов Circle выйдет на 40 новых рынков, говорит генеральный директор"
-  },
   {
    "title": "Taiwan to Curb AI Chip Exports to China as Part of US Trade Deal",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOSU1LakZhV2xQNHBFM0lFWU9pT1JCdGMyTXY4Q01TSjZYd3dNbWZ4Rk50ME1UQnUzVkgta3U0RFpFY0VNZGNaeXZfV25jZm9lMjBDdjVONUhlMmJKLTNwT2xwM1I0Mkl5N2N2c25IQWZwbWtORDRYbUJMMC1hZXhWbzllSFZ2bDJzNThDSFRYYmVyYXJnSVc4V0QzVjFMWHBQWVc4NTlRb1E0WEJsYVl1OV9yZEFBQQ?oc=5",
@@ -4632,6 +4622,34 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Canada's annual inflation rate rose to 3.1% in September",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQc3VaLWlSejhHR19OQW1GMmZqTzFTZEktcUVDQXpLOW1GcjdiLUNqN3VUOHB1b0FaZFBhaUtzOVhqMWRLVkhmZl9HbHVtbXA2aVJ3bHRGR0pUdkt6b0JwQndsR01IMWdoVlZhV0hqSGpxS0pLY1NsLVh3ZVRQTmJMRzVPSmEwM0RtRUZSNkY3ajE2MGVWQWRkYkV0UHVtUDg?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-19T13:26:15.454264+00:00",
+   "title_ru": "Годовой уровень инфляции в Канаде вырос до 3,1% в сентябре",
+   "tags": [
+    "inflation"
+   ]
+  },
+  {
+   "title": "Micron and other chip stocks spring back to life after bruising selloff",
+   "link": "https://www.marketwatch.com/story/micron-and-other-chip-stocks-spring-back-to-life-after-bruising-selloff-16486541?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 4,
+   "ts": "2026-10-19T13:26:15.454264+00:00",
+   "title_ru": "Акции Micron и других производителей микросхем возвращаются к жизни после сильной распродажи",
+   "lead": "It’s a key week for tech stocks as Nvidia gears up for a European conference and Meta prepares to report earnings.",
+   "lead_ru": "Это ключевая неделя для акций технологических компаний, поскольку Nvidia готовится к европейской конференции, а Meta готовится отчитаться о прибыли.",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-18",
@@ -6642,6 +6660,22 @@
    },
    {
     "src": "sec",
+    "id": "9a8e0030ff0e0be1",
+    "ticker": "CIEN",
+    "company": "CIENA CORP",
+    "who": "Gary B Smith",
+    "role": "CEO",
+    "type": "sell",
+    "value": 1027356,
+    "shares": 2952,
+    "price": 348.02,
+    "plan": true,
+    "date": "2026-10-15",
+    "disclosed": "2026-10-19",
+    "link": "https://www.sec.gov/Archives/edgar/data/1032553/000103255326000045/0001032553-26-000045-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "0bd25d90d8b6ef2e",
     "ticker": "ELTP",
     "company": "ELITE PHARMACEUTICALS INC /NV/",
@@ -8576,6 +8610,7 @@
   },
   "checked": "2026-10-19T13:16:15.462743+00:00",
   "sec_seen": [
+   "0001032553-26-000045",
    "0001513845-26-000132",
    "0001628280-26-066217",
    "0000108985-26-000087",
@@ -8583,19 +8618,17 @@
    "0001628280-26-066215",
    "0001900445-26-000006",
    "0001193125-26-424723",
-   "0000950103-26-015756",
    "0001193125-26-424699",
-   "0001628280-26-066202",
    "0001708055-26-000079",
    "0001628280-26-066214",
    "0001104659-26-116752",
    "0001628280-26-066216",
+   "0001887782-26-000011",
    "0001708055-26-000080",
    "0001708055-26-000078",
    "0000108985-26-000086",
    "0001444157-26-000028",
    "0000108985-26-000088",
-   "0000950103-26-015755",
    "0001628280-26-066213",
    "0001768860-26-000012",
    "0001391935-26-000009",
