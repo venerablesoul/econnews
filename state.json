@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "179d46be6c95a27a": "2026-10-16T08:03:52.030170+00:00",
   "c01e8247e0636b3e": "2026-10-16T08:08:52.069851+00:00",
   "b17200efcec54a44": "2026-10-16T08:08:52.069851+00:00",
   "cadf79635cab9073": "2026-10-16T08:08:52.069851+00:00",
@@ -586,25 +585,10 @@
   "a148c16c1a077f41": "2026-10-19T07:45:44.871410+00:00",
   "41f7f3c6f72daae4": "2026-10-19T07:55:44.897200+00:00",
   "ef5d25b473bf012c": "2026-10-19T07:55:44.897200+00:00",
-  "8f56e24f8e94ebea": "2026-10-19T08:00:44.928441+00:00"
+  "8f56e24f8e94ebea": "2026-10-19T08:00:44.928441+00:00",
+  "4295cc038f425333": "2026-10-19T08:05:44.847857+00:00"
  },
  "recent": [
-  {
-   "title": "Odd Lots: French Politics Are Leading to a Debt Crisis (Podcast)",
-   "link": "https://www.bloomberg.com/news/audio/2026-10-16/odd-lots-french-politics-are-leading-to-a-debt-crisis-podcast",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-16T08:03:52.030170+00:00",
-   "title_ru": "Странные лоты: французская политика ведет к долговому кризису (подкаст)",
-   "lead": "Just about everyone is worried about what is going on in France right now: the country’s public finances are in sorry shape and there are fears that the French bond selloff, and the country’s growing debt crisis, might spillover…",
-   "lead_ru": "Почти все обеспокоены тем, что сейчас происходит во Франции: государственные финансы страны находятся в плачевном состоянии, и есть опасения, что распродажа французских облигаций и растущий долговой кризис страны могут перекинуться...",
-   "tags": [
-    "bonds",
-    "markets"
-   ]
-  },
   {
    "title": "BOJ chief flags inflation overshoot risk, stresses importance of 2% anchor",
    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPdk5PYkp5bUZhRHk4VUJJdDhYWjFYTDNKU3poQ2d2b2pRbDNndWJvdElqZVdFM3FhZTRVQ2diM2I4bVlCUU5wd2tNYTZTN1VINjhYaDZfSzgwR1BJaTNqU3RjcGJSa3N2MGhIdmhFM2o1MzAtdjBUNXAyYmI1NXJRWmpYVk9BR3VyWkZmUmx6MmIyUGVmMFFtQzlWMkZzVllTaTdnZGFGWThZVkYybHd4d29iZndkTWc2QUFNa01TSFo4Zw?oc=5",
@@ -5169,6 +5153,22 @@
    "tags": [
     "bonds"
    ]
+  },
+  {
+   "title": "Don Wilson on the GPU Market’s Trillion Dollar Question",
+   "link": "https://www.bloomberg.com/news/audio/2026-10-19/don-wilson-on-the-gpu-market-s-trillion-dollar-question",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-19T08:05:44.847857+00:00",
+   "title_ru": "Дон Уилсон о триллионе долларов на рынке GPU",
+   "lead": "When we spoke to Don Wilson, founder and CEO of DRW, in Chicago last year, he told us he wanted to build a market for GPUs that would eventually be bigger than oil.",
+   "lead_ru": "Когда мы разговаривали с Доном Уилсоном, основателем и генеральным директором DRW, в Чикаго в прошлом году, он сказал нам, что хочет построить рынок графических процессоров, который в конечном итоге будет больше, чем нефть.",
+   "tags": [
+    "oil",
+    "dollar"
+   ]
   }
  ],
  "last_digest": "2026-10-18",
@@ -8999,17 +8999,18 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-19T07:05:44.841927+00:00",
+  "checked": "2026-10-19T08:05:44.847857+00:00",
   "sec_seen": [
    "0001213900-26-110436",
    "0001213900-26-110428",
+   "0000037785-26-000161",
    "0001437749-26-032866",
    "0002086163-26-000012",
    "0002152984-26-000004",
    "0001437749-26-032865",
    "0001193125-26-424368",
-   "0001214659-26-013016",
    "0002154954-26-000004",
+   "0001214659-26-013016",
    "0000037785-26-000158",
    "0001193125-26-424439",
    "0001193125-26-424414",
@@ -9030,7 +9031,6 @@
    "0002152990-26-000002",
    "0001225208-26-008439",
    "0000037785-26-000157",
-   "0000037785-26-000162",
    "0001193125-26-424412",
    "0001193125-26-424426",
    "0001477932-26-006312",
@@ -9048,7 +9048,7 @@
    "0000037785-26-000164",
    "0001509409-26-000012",
    "0001193125-26-424421",
-   "0000037785-26-000161"
+   "0000037785-26-000162"
   ],
   "errors": {}
  }
