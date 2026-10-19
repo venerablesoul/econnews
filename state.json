@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "58a59c3565e86791": "2026-10-16T19:19:55.610661+00:00",
-  "243904e5d1a1edeb": "2026-10-16T19:19:55.610661+00:00",
   "9b689421c976fbc6": "2026-10-16T19:29:55.584481+00:00",
   "88ec43a2f04239fe": "2026-10-16T19:29:55.584481+00:00",
   "85cfdcd057f487b0": "2026-10-16T19:39:55.588664+00:00",
@@ -526,24 +524,11 @@
   "80402ee2f3f888c1": "2026-10-19T18:50:37.559632+00:00",
   "cf73662fe414f13a": "2026-10-19T18:55:37.809828+00:00",
   "a7b3d0a55f893e35": "2026-10-19T18:55:37.809828+00:00",
-  "3c0b366ce72dee92": "2026-10-19T19:05:37.645766+00:00"
+  "3c0b366ce72dee92": "2026-10-19T19:05:37.645766+00:00",
+  "afc8e91fc0054b8d": "2026-10-19T19:20:37.565564+00:00",
+  "7e3c829c71c4f8e8": "2026-10-19T19:20:37.565564+00:00"
  },
  "recent": [
-  {
-   "title": "Funding Markets Diverge as T-Bills Cheapen, Overnight Repo Calm",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-16/funding-markets-diverge-as-t-bills-cheapen-overnight-repo-calm",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-16T19:19:55.610661+00:00",
-   "title_ru": "Рынки финансирования расходятся, поскольку казначейские векселя дешевеют, а РЕПО за один день успокаивается",
-   "lead": "Treasury-bill yields have risen sharply as a wave of new issuance tests investor demand, posing a threat to the stability of overnight funding markets.",
-   "lead_ru": "Доходность казначейских векселей резко выросла, поскольку волна новых выпусков проверяет спрос инвесторов, создавая угрозу стабильности рынков однодневного финансирования.",
-   "tags": [
-    "bonds"
-   ]
-  },
   {
    "title": "Longest Chip Selloff Since 2006 Mints Short Sellers $32 Billion",
    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPN00waURWRkZiczRHR3pQU0xRb3RNUnlrX2dzSkZHVlBHQk9md1RNLXF6X2pQdjA3ZHlHXzVBc2tUSG9Qc2xTYllwX25XUVd1R3FHR1dvOWZCdnlpc0VDTWdPTFRQN2pRY2NoT2w0YXlKdXdmSjE5RTI1VXVHaVp6SGRycXg4ei1QLV9wamRHMWFvYTR1MFREbDI3UkdYb1ZGOHZvUHd2amVoWVpROHlaUEhYUQ?oc=5",
@@ -4342,6 +4327,37 @@
    "lead_en": "Russian President Vladimir Putin approved the budget execution report for 2025. The corresponding law signed by him was published on the portal of legal acts.",
    "tags": [
     "Russia"
+   ]
+  },
+  {
+   "title": "Trump Accounts, Bonds Barometer, ‘Dividend Nomads’",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-19/etf-iq-10-19-2026-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-19T19:20:37.565564+00:00",
+   "title_ru": "Счета Трампа, барометр облигаций, «дивидендные кочевники»",
+   "lead": "\"Bloomberg ETF IQ\" focuses on the opportunities, risks and current trends tied to the trillions of dollars in the global exchange traded funds industry.",
+   "lead_ru": "Bloomberg ETF IQ фокусируется на возможностях, рисках и текущих тенденциях, связанных с триллионами долларов в глобальной индустрии биржевых фондов.",
+   "tags": [
+    "dollar",
+    "bonds"
+   ]
+  },
+  {
+   "title": "CoreWeave’s selloff is a lesson in ‘Finance 101’ — and Wall Street says the stock can recover",
+   "link": "https://www.marketwatch.com/story/coreweaves-selloff-is-a-lesson-in-finance-101-and-wall-street-says-the-stock-can-recover-23ca5377?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 3,
+   "ts": "2026-10-19T19:20:37.565564+00:00",
+   "title_ru": "Распродажа CoreWeave — это урок «Finance 101» — и Уолл-стрит говорит, что акции могут восстановиться",
+   "lead": "Analysts argue CoreWeave’s underlying economics are far sturdier than nervous debt and equity investors realize.",
+   "lead_ru": "Аналитики утверждают, что лежащая в основе CoreWeave экономика гораздо прочнее, чем думают нервные инвесторы в долг и акции.",
+   "tags": [
+    "markets"
    ]
   }
  ],
