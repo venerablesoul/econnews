@@ -660,7 +660,9 @@
   "11b3b863927e621f": "2026-10-20T17:28:33.155331+00:00",
   "e526d7b1b95388ae": "2026-10-20T17:33:33.100076+00:00",
   "6aa317ba0d052c0e": "2026-10-20T17:38:33.138530+00:00",
-  "bbdcb3b673158cee": "2026-10-20T17:38:33.138530+00:00"
+  "bbdcb3b673158cee": "2026-10-20T17:38:33.138530+00:00",
+  "63406dd4c0ae5d3a": "2026-10-20T17:43:33.095119+00:00",
+  "7e75c060c11e57af": "2026-10-20T17:43:33.095119+00:00"
  },
  "recent": [
   {
@@ -6082,6 +6084,15 @@
    "score": 3,
    "ts": "2026-10-20T17:38:33.138530+00:00",
    "title_ru": "Американский оператор жилья для пожилых людей Discovery Senior Living рассматривает возможность продажи, сообщают источники"
+  },
+  {
+   "title": "Investors’ search for safety has made toothpaste stocks more expensive than tech",
+   "link": "https://www.marketwatch.com/story/investors-search-for-safety-has-made-toothpaste-stocks-more-expensive-than-tech-57a75e56?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 2,
+   "ts": "2026-10-20T17:43:33.095119+00:00"
   }
  ],
  "last_digest": "2026-10-19",
@@ -8134,6 +8145,22 @@
     "date": "2026-10-19",
     "disclosed": "2026-10-20",
     "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000360/0001510281-26-000360-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "6953b3a4b35777ae",
+    "ticker": "GF",
+    "company": "NEW GERMANY FUND INC",
+    "who": "Saba Capital Management, L.p.",
+    "role": "10% owner",
+    "type": "buy",
+    "value": 310659,
+    "shares": 30088,
+    "price": 10.33,
+    "plan": false,
+    "date": "2026-10-19",
+    "disclosed": "2026-10-20",
+    "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000361/0001510281-26-000361-index.htm"
    },
    {
     "src": "sec",
@@ -10953,9 +10980,7 @@
   "sec_seen": [
    "0001401612-26-000005",
    "0001510281-26-000360",
-   "0001193125-26-426178",
-   "0000006955-26-000083",
-   "0001193125-26-426174"
+   "0001510281-26-000361"
   ],
   "errors": {}
  }
