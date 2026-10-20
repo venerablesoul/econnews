@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "ec1f237ae9e93b9f": "2026-10-17T11:06:19.214543+00:00",
-  "80237752f735bef6": "2026-10-17T11:06:19.214543+00:00",
   "5b7dec956b562267": "2026-10-17T11:16:19.215837+00:00",
   "c4ac89f5e419c1c9": "2026-10-17T11:36:19.264569+00:00",
   "229d0ac0338a2ea0": "2026-10-17T11:41:19.234268+00:00",
@@ -603,35 +601,10 @@
   "ba9435fd59dcfd56": "2026-10-20T10:58:05.248123+00:00",
   "bb26dd982d584b4c": "2026-10-20T10:58:05.248123+00:00",
   "186aca63eb99aa5f": "2026-10-20T11:03:05.449056+00:00",
-  "ab0ca80cab0010f9": "2026-10-20T11:03:05.449056+00:00"
+  "ab0ca80cab0010f9": "2026-10-20T11:03:05.449056+00:00",
+  "c18ab572c871c7a5": "2026-10-20T11:13:05.257438+00:00"
  },
  "recent": [
-  {
-   "title": "Fed interest-rate decision this month is a closer call than markets think",
-   "link": "https://www.marketwatch.com/story/fed-interest-rate-decision-this-month-is-a-closer-call-than-markets-think-f96ccf95?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 6,
-   "ts": "2026-10-17T11:06:19.214543+00:00",
-   "title_ru": "Решение ФРС по процентной ставке в этом месяце является более близким, чем думают рынки",
-   "lead": "Here are some of the arguments against a Fed rate hike — and why some economists disagree with them.",
-   "lead_ru": "Вот некоторые аргументы против повышения ставок ФРС – и почему некоторые экономисты с ними не согласны.",
-   "tags": [
-    "Fed",
-    "rates"
-   ]
-  },
-  {
-   "title": "Students, trade unions and Yellow Vests set to protest across France",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNQ3ZSMTR3dmZDamlnT3EyMWx2U1hma3VycjFxblg3SmxXMi1mUEhibjJVTV8ySGRheTEyVndBWEF4em1sbEdoZ0pKcU0tS0JVSzVVS3VZdUVrOXdHNVNYdThleU0zaDE2RXpwMWxyYURCNGt1akVuRUF0aWhYY1VkQTV6cG9UeWd2eVRjTXV6U2V2NnpCeS1zMUl5M2N3Wk16a0t3ZQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-17T11:06:19.214543+00:00",
-   "title_ru": "Студенты, профсоюзы и «желтые жилеты» вышли на акцию протеста по всей Франции"
-  },
   {
    "title": "It was another great week for the average stock as market leadership shifts away from tech",
    "link": "https://www.marketwatch.com/story/it-was-another-great-week-for-the-average-stock-as-market-leadership-shifts-away-from-tech-8e8516da?mod=mw_rss_topstories",
@@ -5294,6 +5267,19 @@
    "title_ru": "Гигантская долговая проблема теперь маячит на политическом горизонте США",
    "lead": "The incoming cohort of US senators will face crucial questions about Social Security’s finances on their watch.",
    "lead_ru": "Новая когорта американских сенаторов столкнется с важными вопросами о финансах социального обеспечения."
+  },
+  {
+   "title": "CoreWeave debt selloff poses limited risk to global banks, J.P. Morgan says",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNOHMyRGhadi1kbGZuSEVyakFWeFp4bS1TYUc3VjBiWXpJTk84VXBaYmhjTFBZd2FVV0cyR1p5QXpNOHhsVlJtakxzNTlVRzZxbjVuMVlLTkVmQWk1b3VINFZ3Qkp1Ui1ibExKaHYwaEdMY1FfSzNYb0pkSFpWLW80VGJRREhzdUw0ek5zcy05UTM4dDJNaXFoejhfSnJVZTFrWkZQU1RqYms0X0ktbUZJNkVRSUNDMHV0RUVmVl8ySQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 7,
+   "ts": "2026-10-20T11:13:05.257438+00:00",
+   "title_ru": "Распродажа долга CoreWeave представляет ограниченный риск для глобальных банков, говорит J.P. Morgan",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-19",
@@ -10003,17 +9989,17 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-20T10:08:05.253919+00:00",
+  "checked": "2026-10-20T11:08:05.310935+00:00",
   "sec_seen": [
    "0000874015-26-000266",
    "0001060391-26-000314",
    "0001079973-26-001373",
    "0001104659-26-117064",
-   "0001060391-26-000308",
    "0001104659-26-117011",
    "0001716751-26-000011",
    "0001060391-26-000312",
    "0001104659-26-117071",
+   "0002069480-26-000006",
    "0001696555-26-000012",
    "0001873011-26-000010",
    "0001060391-26-000318",
@@ -10023,6 +10009,7 @@
    "0001060391-26-000310",
    "0001060391-26-000316",
    "0000897069-26-001859",
+   "0001781319-26-000004",
    "0001999371-26-023092",
    "0002031998-26-000008",
    "0001493152-26-047657",
