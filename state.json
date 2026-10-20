@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "ca3075ef18dbd2b2": "2026-10-17T20:17:39.331932+00:00",
   "045210accf8b7d96": "2026-10-17T21:42:39.350822+00:00",
   "8e11a0641c63306e": "2026-10-17T22:07:39.393307+00:00",
   "649b18a63c9ada96": "2026-10-17T23:57:39.342578+00:00",
@@ -686,22 +685,6 @@
   "87c6a5e566f1caea": "2026-10-20T20:09:12.096698+00:00"
  },
  "recent": [
-  {
-   "title": "UK Inflation Can Seal the Deal on the BOE’s November Rate Hike",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-17/uk-inflation-can-seal-the-deal-on-the-boe-s-november-rate-hike",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 9,
-   "ts": "2026-10-17T20:17:39.331932+00:00",
-   "title_ru": "Инфляция в Великобритании может решить проблему ноябрьского повышения ставок Банком Англии",
-   "lead": "A pickup in UK inflation to a nine-month high in data this week is likely to set the stage for key decisions from the upcoming budget to a likely interest-rate increase.",
-   "lead_ru": "Рост инфляции в Великобритании до девятимесячного максимума, согласно данным на этой неделе, вероятно, создаст основу для принятия ключевых решений от предстоящего бюджета до вероятного повышения процентных ставок.",
-   "tags": [
-    "rates",
-    "inflation"
-   ]
-  },
   {
    "title": "Couriers and Messengers: NAICS 492",
    "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9KRjhFWHkyWG5XLWdJbXQ3SWRoZExwNXlfcDZYS3piYUNZYUN0cDNpTkdVSnExS0w2Rm9jdk8ySmJuVUFwRVUxOFcxclBqZDQ3TFRwbXNYSFE?oc=5",
@@ -8374,6 +8357,22 @@
    },
    {
     "src": "sec",
+    "id": "1fd168070f989db6",
+    "ticker": "GRND",
+    "company": "Grindr Inc.",
+    "who": "George Raymond Iii Zage",
+    "role": "Director, 10% owner",
+    "type": "sell",
+    "value": 7060300,
+    "shares": 500000,
+    "price": 14.12,
+    "plan": true,
+    "date": "2026-10-19",
+    "disclosed": "2026-10-20",
+    "link": "https://www.sec.gov/Archives/edgar/data/1833678/000183367826000007/0001833678-26-000007-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "a2b0810ab37e2b0f",
     "ticker": "SCISX",
     "company": "MA Specialty Credit Income Fund",
@@ -11188,23 +11187,31 @@
   },
   "checked": "2026-10-20T19:34:11.989191+00:00",
   "sec_seen": [
-   "0001665731-26-000001",
+   "0002115592-26-000004",
+   "0001225208-26-008471",
+   "0001225208-26-008469",
+   "0002114881-26-000004",
    "0001225208-26-008467",
    "0001104659-26-117411",
+   "0000921895-26-002825",
    "0000876167-26-000129",
+   "0001984156-26-000004",
+   "0001225208-26-008473",
+   "0001833678-26-000007",
+   "0002114937-26-000007",
+   "0001437749-26-033017",
    "0001225208-26-008468",
    "0001225208-26-008465",
+   "0001225208-26-008472",
+   "0001846905-26-000008",
    "0001213900-26-111027",
    "0001813477-26-000008",
    "0001225208-26-008464",
-   "0001193125-26-426668",
-   "0001193125-26-426667",
+   "0001477932-26-006341",
    "0001225208-26-008466",
    "0001193125-26-426678",
    "0000905148-26-004522",
-   "0001104659-26-117399",
-   "0001104659-26-117408",
-   "0000905148-26-004521"
+   "0001225208-26-008470"
   ],
   "errors": {}
  }
