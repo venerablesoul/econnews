@@ -638,7 +638,11 @@
   "f7fc380388e3e26e": "2026-10-20T15:23:33.110458+00:00",
   "96f19eb5981d6316": "2026-10-20T15:28:33.250898+00:00",
   "506d93c7fa0f31b7": "2026-10-20T15:33:33.181567+00:00",
-  "f8b211d9133ea688": "2026-10-20T15:38:33.162294+00:00"
+  "f8b211d9133ea688": "2026-10-20T15:38:33.162294+00:00",
+  "9696c93c0676198a": "2026-10-20T15:48:33.101023+00:00",
+  "273649efb91554f4": "2026-10-20T15:48:33.101023+00:00",
+  "288f3e28a271c114": "2026-10-20T15:48:33.101023+00:00",
+  "1ae0d7105542e893": "2026-10-20T15:48:33.101023+00:00"
  },
  "recent": [
   {
@@ -5738,6 +5742,51 @@
    "title_ru": "Эспозито Citadel о банковском партнерстве и росте фиксированного дохода",
    "lead": "Citadel Securities President Jim Esposito discusses the firm's relationship with banks, plans to grow in the fixed income market and his views on prediction markets with Bloomberg's Dani Burger on the sidelines of Citadel's…",
    "lead_ru": "Президент Citadel Securities Джим Эспозито обсуждает отношения фирмы с банками, планы роста на рынке с фиксированным доходом и свои взгляды на рынки прогнозов с Дэни Бургер из Bloomberg в кулуарах Citadel…"
+  },
+  {
+   "title": "Treasuries Rise as Oil Retreats From Highest Levels in Weeks",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-20/treasuries-rise-as-oil-retreats-from-highest-levels-in-weeks",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-20T15:48:33.101023+00:00",
+   "title_ru": "Казначейские облигации растут, поскольку нефть отступает от самых высоких уровней за несколько недель",
+   "lead": "Treasuries rose as benchmark oil prices retreated from the highest levels in weeks, prompting traders to trim wagers on Federal Reserve interest-rate hikes over the coming year.",
+   "lead_ru": "Казначейские облигации выросли, поскольку базовые цены на нефть отступили от самых высоких уровней за несколько недель, что побудило трейдеров снизить ставки на повышение процентных ставок Федеральной резервной системы в следующем году.",
+   "tags": [
+    "Fed",
+    "rates",
+    "oil"
+   ]
+  },
+  {
+   "title": "WestJet Bonds Slide to Record Low as Fuel, Trade Tensions Rise",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-20/westjet-bonds-slide-to-record-low-as-fuel-trade-tensions-rise",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-20T15:48:33.101023+00:00",
+   "title_ru": "Облигации WestJet упали до рекордно низкого уровня, поскольку топливо и торговая напряженность растут",
+   "lead": "WestJet Airlines Ltd., Canada’s second-largest air carrier, saw its bonds fall to their lowest level since they were issued in June, as spikes in the cost of fuel and trade tensions are dimming its earnings outlook.",
+   "lead_ru": "WestJet Airlines Ltd., второй по величине авиаперевозчик Канады, увидела, что ее облигации упали до самого низкого уровня с момента их выпуска в июне, поскольку скачки цен на топливо и торговая напряженность омрачают перспективы ее прибылей.",
+   "tags": [
+    "bonds"
+   ]
+  },
+  {
+   "title": "Could fed-up Kansas voters send first Democrat to Senate in 94 years?",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4xbXZjUFZlOEx2S2dmYmFlUHkwM3h4YXFHcFcwTjJnUUFPekVuOFZBZHNYcmJURjhJNVFiTHRIb3pka1BBS210Y3Jaa0JwMXFUOTdpQWN3ZmtKbkFBaHgwY2Rxd2JmbG8?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-20T15:48:33.101023+00:00",
+   "title_ru": "Могут ли сытые по горло избиратели Канзаса отправить в Сенат первого демократа за 94 года?",
+   "tags": [
+    "Fed"
+   ]
   }
  ],
  "last_digest": "2026-10-19",
@@ -10576,10 +10625,6 @@
   "checked": "2026-10-20T15:18:33.130073+00:00",
   "sec_seen": [
    "0001292814-26-004956",
-   "0000100885-26-000314",
-   "0000100885-26-000313",
-   "0001437749-26-032986",
-   "0000100885-26-000312",
    "0002007897-26-000004"
   ],
   "errors": {}
