@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "37c90152e665a905": "2026-10-17T16:07:11.258428+00:00",
-  "a929471a3473abff": "2026-10-17T16:07:11.258428+00:00",
-  "816a80d6751e770b": "2026-10-17T16:07:11.258428+00:00",
-  "a3ae602645029b26": "2026-10-17T16:07:11.258428+00:00",
   "2fb9a3ff9b2258ea": "2026-10-17T16:17:11.234853+00:00",
   "183b9f7c60dcc637": "2026-10-17T16:27:11.188084+00:00",
   "b566aa5f01dd989a": "2026-10-17T16:27:11.188084+00:00",
@@ -649,19 +645,12 @@
   "57b1d6a20ff9b97e": "2026-10-20T15:58:33.135424+00:00",
   "8da74d37e5a7b050": "2026-10-20T15:58:33.135424+00:00",
   "8d5ed32110866ff9": "2026-10-20T16:03:33.131162+00:00",
-  "3b6bdc5f5df22bf9": "2026-10-20T16:03:33.131162+00:00"
+  "3b6bdc5f5df22bf9": "2026-10-20T16:03:33.131162+00:00",
+  "f1d469cc645dfa05": "2026-10-20T16:08:33.172614+00:00",
+  "7a3312480ce954c7": "2026-10-20T16:08:33.172614+00:00",
+  "70f26d30f053594c": "2026-10-20T16:08:33.172614+00:00"
  },
  "recent": [
-  {
-   "title": "Catherine Grover, Cboe Global Markets Inc: Profile and Biography",
-   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1aOGdrZnRQY2F0cHh4dHNpNE9LX2wxN1d0QWRQVkVaTTNRcmFSRDBiREZNaHI5SDZLUEo2Vi12T0R0czdBbXRlWExHczJ2X0JLZWx2UnBUeDNjVFR1ZEE?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-17T16:07:11.258428+00:00",
-   "title_ru": "Кэтрин Гровер, Cboe Global Markets Inc: профиль и биография"
-  },
   {
    "title": "Russia Sanctions Waived, AI Debt Concerns, Making 'GTA VI'",
    "link": "https://www.bloomberg.com/news/videos/2026-10-17/bloomberg-this-weekend-10-17-2026-video",
@@ -5875,6 +5864,52 @@
    ],
    "score": 1,
    "ts": "2026-10-20T16:03:33.131162+00:00"
+  },
+  {
+   "title": "US Economy's Resilience is 'Coming at a Cost,' Says Frances Donald",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-20/us-economy-resilience-is-coming-at-a-cost-says-donald-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-20T16:08:33.172614+00:00",
+   "title_ru": "Устойчивость экономики США «стоит дорого», говорит Фрэнсис Дональд",
+   "lead": "Treasuries are set to keep falling out of favor as an equity hedge amid a return to a persistently elevated inflation regime.",
+   "lead_ru": "Казначейские облигации будут продолжать терять популярность в качестве средства хеджирования акций на фоне возвращения к устойчиво повышенному режиму инфляции.",
+   "tags": [
+    "inflation",
+    "bonds"
+   ]
+  },
+  {
+   "title": "Vestel Offers 45% Haircut or Six-Year Extension on 2029 Bonds",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-20/vestel-offers-45-haircut-or-six-year-extension-on-2029-bonds",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-20T16:08:33.172614+00:00",
+   "title_ru": "Vestel предлагает скидку 45% или шестилетнее продление по облигациям 2029 года",
+   "lead": "Beleaguered Turkish white-goods maker Vestel Elektronik is asking holders of its 2029 bonds to back a restructuring under which they can choose to take a 45% haircut or extend the debt by six years.",
+   "lead_ru": "Попавший в беду турецкий производитель бытовой техники Vestel Elektronik просит держателей его облигаций с погашением в 2029 году поддержать реструктуризацию, в рамках которой они смогут выбрать сокращение на 45% или продление долга на шесть лет.",
+   "tags": [
+    "bonds"
+   ]
+  },
+  {
+   "title": "NYC Girls Private School Chapin Cuts Debt After Campus Expansion",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-20/nyc-girls-private-school-chapin-cuts-debt-after-campus-expansion",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-20T16:08:33.172614+00:00",
+   "title_ru": "Частная школа для девочек Нью-Йорка сократила долги после расширения кампуса",
+   "lead": "An all-girls private school on New York’s Upper East Side attended by Jacqueline Kennedy Onassis tapped the municipal bond market to refinance some of the debt it’s taken on to expand its campus.",
+   "lead_ru": "Частная школа для девочек в Верхнем Ист-Сайде Нью-Йорка, которую посещает Жаклин Кеннеди Онассис, воспользовалась рынком муниципальных облигаций, чтобы рефинансировать часть долга, который она взяла на расширение своего кампуса.",
+   "tags": [
+    "bonds"
+   ]
   }
  ],
  "last_digest": "2026-10-19",
