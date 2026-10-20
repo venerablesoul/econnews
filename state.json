@@ -568,7 +568,9 @@
   "a054ed621dff22ce": "2026-10-20T05:46:52.767574+00:00",
   "24b7d4fffbb1d7ac": "2026-10-20T05:56:52.689483+00:00",
   "089f4b4ea463d5d7": "2026-10-20T06:01:52.480170+00:00",
-  "36c768d6902413ce": "2026-10-20T06:06:53.481925+00:00"
+  "36c768d6902413ce": "2026-10-20T06:06:53.481925+00:00",
+  "1f12e7d5638235d6": "2026-10-20T06:11:52.730043+00:00",
+  "f77a1b99b7499cb4": "2026-10-20T06:11:52.730043+00:00"
  },
  "recent": [
   {
@@ -4878,6 +4880,36 @@
    "title_ru": "Что на самом деле ударило по рынку облигаций?",
    "tags": [
     "bonds"
+   ]
+  },
+  {
+   "title": "UK Payrolls Bounce Back Ahead of Chancellor Healey’s Budget",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-20/uk-payrolls-bounce-back-ahead-of-chancellor-healey-s-budget",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-20T06:11:52.730043+00:00",
+   "title_ru": "Число рабочих мест в Великобритании восстанавливается в преддверии бюджета канцлера Хили",
+   "lead": "British employers added jobs in September, according to official figures that gave an unexpected boost to Chancellor of the Exchequer John Healey ahead of his crucial budget next week.",
+   "lead_ru": "Согласно официальным данным, британские работодатели увеличили количество рабочих мест в сентябре, что дало неожиданный импульс канцлеру казначейства Джону Хили в преддверии его важного бюджета на следующей неделе.",
+   "tags": [
+    "jobs"
+   ]
+  },
+  {
+   "title": "China’s Huachen Energy Risks Fresh Default on $956 Million Debt",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-20/china-s-huachen-energy-risks-fresh-default-on-956-million-debt",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-20T06:11:52.730043+00:00",
+   "title_ru": "Китайская компания Huachen Energy рискует объявить дефолт по долгу в 956 миллионов долларов",
+   "lead": "Chinese power generation firm Huachen Energy Co.",
+   "lead_ru": "Китайская энергетическая компания Huachen Energy Co.",
+   "tags": [
+    "China"
    ]
   }
  ],
@@ -9616,6 +9648,8 @@
    "0001060391-26-000292",
    "0001104659-26-117008"
   ],
-  "errors": {}
+  "errors": {
+   "sec": "TimeoutError: The read operation timed out"
+  }
  }
 }
