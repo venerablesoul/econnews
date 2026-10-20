@@ -622,7 +622,10 @@
   "b47da59dd4b2bda1": "2026-10-20T13:43:33.148635+00:00",
   "f339285d77cd5d6a": "2026-10-20T13:48:33.092465+00:00",
   "5a9f3d538f01c590": "2026-10-20T14:03:33.246911+00:00",
-  "b45ec6a63e022a15": "2026-10-20T14:03:33.246911+00:00"
+  "b45ec6a63e022a15": "2026-10-20T14:03:33.246911+00:00",
+  "5ee46448c30c4918": "2026-10-20T14:08:33.223154+00:00",
+  "7a9a68f200a3aaed": "2026-10-20T14:08:33.223154+00:00",
+  "8dfbb5d651e1305c": "2026-10-20T14:08:33.223154+00:00"
  },
  "recent": [
   {
@@ -5592,6 +5595,41 @@
    "tags": [
     "dollar"
    ]
+  },
+  {
+   "title": "US Pending Home Sales Fall to Record Low as Mortgage Rates Rise",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-20/us-pending-home-sales-fall-to-record-low-as-mortgage-rates-rise",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-20T14:08:33.223154+00:00",
+   "title_ru": "Продажи жилья в США упали до рекордно низкого уровня в связи с ростом ставок по ипотечным кредитам",
+   "lead": "Pending sales of existing US homes fell to a record low in September as high mortgage rates continued to weigh on demand.",
+   "lead_ru": "Продажи существующих домов в США упали до рекордно низкого уровня в сентябре, поскольку высокие ставки по ипотечным кредитам продолжали оказывать давление на спрос."
+  },
+  {
+   "title": "CoreWeave’s Bond Rout Should Make the Fed Cautious",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQdjFnVTgwSHVqSHFzTS1uWmpTdDMxWGpBaDVneE5JVXJkOW1OUXU0aDdjLWJXRkNYbUFFTno5ZXZ2WktKUWZLaVVROTFwQ3Y2SzVkRWhsOEs0UDlGei0tclJjWWRvSU1vdlEzWEFjTnNMZTdhY2tfcUhuS2FET1VMSzE2Y0ZaelYzU09SS0tra1BERk1xMm50YXN3WkVNUXhBYW1hRDZVaw?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-20T14:08:33.223154+00:00",
+   "title_ru": "Маршрут выпуска облигаций CoreWeave должен сделать ФРС осторожной",
+   "tags": [
+    "Fed",
+    "bonds"
+   ]
+  },
+  {
+   "title": "Pending home sales sink to 25-year low as buyers flee high mortgage rates",
+   "link": "https://www.marketwatch.com/story/pending-home-sales-sink-to-25-year-low-as-buyers-flee-high-mortgage-rates-d02c6b30?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-20T14:08:33.223154+00:00"
   }
  ],
  "last_digest": "2026-10-19",
@@ -10342,7 +10380,6 @@
    "0000006955-26-000075",
    "0001708823-26-000009",
    "0001635164-26-000004",
-   "0001193125-26-425864",
    "0001193125-26-425873",
    "0001239441-26-000006",
    "0000945621-26-001274",
