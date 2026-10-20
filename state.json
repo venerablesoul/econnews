@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "8740d1c9ead0b426": "2026-10-17T15:37:11.242550+00:00",
   "37c90152e665a905": "2026-10-17T16:07:11.258428+00:00",
   "a929471a3473abff": "2026-10-17T16:07:11.258428+00:00",
   "816a80d6751e770b": "2026-10-17T16:07:11.258428+00:00",
@@ -637,23 +636,11 @@
   "83c1325cc16babab": "2026-10-20T15:18:33.130073+00:00",
   "12a4dbfa1ba360c6": "2026-10-20T15:23:33.110458+00:00",
   "f7fc380388e3e26e": "2026-10-20T15:23:33.110458+00:00",
-  "96f19eb5981d6316": "2026-10-20T15:28:33.250898+00:00"
+  "96f19eb5981d6316": "2026-10-20T15:28:33.250898+00:00",
+  "506d93c7fa0f31b7": "2026-10-20T15:33:33.181567+00:00",
+  "f8b211d9133ea688": "2026-10-20T15:38:33.162294+00:00"
  },
  "recent": [
-  {
-   "title": "Trump drops Russia sanctions, Israeli settlers attack US photojournalist, Oregon police say teacher and parent stopped school shooter",
-   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPZW5QUTZCMC1GdFZQbXlmYjYxd2RBakU3NjRNZksxLVZHWmEyaFB6QzJFakg1Y1NvbE8wRWhWWGlnRXlxZlFXdEJmbjlPVDViUjNiTU53VEhCenVvaFFQdHhPbnFkVUx0eUVVeGVDckVENE1BbEdNNERseXJyUXctdzBqTUE5c1daQTFZ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-17T15:37:11.242550+00:00",
-   "title_ru": "Трамп отменил санкции против России, израильские поселенцы напали на американского фотожурналиста, полиция Орегона заявляет, что учитель и родитель остановили школьного стрелка",
-   "tags": [
-    "sanctions",
-    "Russia"
-   ]
-  },
   {
    "title": "Catherine Grover, Cboe Global Markets Inc: Profile and Biography",
    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1aOGdrZnRQY2F0cHh4dHNpNE9LX2wxN1d0QWRQVkVaTTNRcmFSRDBiREZNaHI5SDZLUEo2Vi12T0R0czdBbXRlWExHczJ2X0JLZWx2UnBUeDNjVFR1ZEE?oc=5",
@@ -5730,6 +5717,27 @@
    "score": 3,
    "ts": "2026-10-20T15:28:33.250898+00:00",
    "title_ru": "Apple выделит до 100 миллионов долларов на закупку титана в США для развития отечественного производства"
+  },
+  {
+   "title": "Salesforce’s stock falls as investors chafe at the cost of latest AI purchase",
+   "link": "https://www.marketwatch.com/story/salesforce-gets-a-chilly-investor-response-to-a-6-billion-deal-at-a-58-premium-57bd260b?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-20T15:33:33.181567+00:00"
+  },
+  {
+   "title": "Citadel's Esposito on Bank Partnerships, Fixed Income Growth",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-20/citadel-s-esposito-on-bank-partners-fixed-income-growth-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-20T15:38:33.162294+00:00",
+   "title_ru": "Эспозито Citadel о банковском партнерстве и росте фиксированного дохода",
+   "lead": "Citadel Securities President Jim Esposito discusses the firm's relationship with banks, plans to grow in the fixed income market and his views on prediction markets with Bloomberg's Dani Burger on the sidelines of Citadel's…",
+   "lead_ru": "Президент Citadel Securities Джим Эспозито обсуждает отношения фирмы с банками, планы роста на рынке с фиксированным доходом и свои взгляды на рынки прогнозов с Дэни Бургер из Bloomberg в кулуарах Citadel…"
   }
  ],
  "last_digest": "2026-10-19",
@@ -10568,11 +10576,11 @@
   "checked": "2026-10-20T15:18:33.130073+00:00",
   "sec_seen": [
    "0001292814-26-004956",
-   "0001437749-26-032984",
    "0000100885-26-000314",
    "0000100885-26-000313",
    "0001437749-26-032986",
-   "0000100885-26-000312"
+   "0000100885-26-000312",
+   "0002007897-26-000004"
   ],
   "errors": {}
  }
