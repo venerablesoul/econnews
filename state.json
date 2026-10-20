@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "2122e38ef9b365b3": "2026-10-17T06:50:51.298154+00:00",
   "25d90a7d08ab34b8": "2026-10-17T07:20:51.299514+00:00",
   "9358634272222e93": "2026-10-17T07:20:51.299514+00:00",
   "fe6072fc4c974ef1": "2026-10-17T08:00:51.250768+00:00",
@@ -574,21 +573,11 @@
   "edf628a9b40d68aa": "2026-10-20T06:21:52.552592+00:00",
   "c22c8feb429dbc6d": "2026-10-20T06:26:52.851141+00:00",
   "aa5d022cf3a07956": "2026-10-20T06:41:52.470409+00:00",
-  "155c192f37b05351": "2026-10-20T06:46:52.433198+00:00"
+  "155c192f37b05351": "2026-10-20T06:46:52.433198+00:00",
+  "4146e1d8874c604c": "2026-10-20T06:56:52.431531+00:00",
+  "8b606ddfe079283e": "2026-10-20T06:56:52.431531+00:00"
  },
  "recent": [
-  {
-   "title": "Iraq Seeks IMF Program, Fund Chief Pledges ‘Very Firm’ Support",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-17/iraq-seeks-imf-program-fund-chief-pledges-very-firm-support",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-17T06:50:51.298154+00:00",
-   "title_ru": "Ирак ищет программу МВФ, глава фонда обещает «очень твердую» поддержку",
-   "lead": "The head of the IMF said that Iraq has approached the Washington-based lender for a new program, a request she said the fund intends to support.",
-   "lead_ru": "Глава МВФ заявила, что Ирак обратился к вашингтонскому кредитору с просьбой о новой программе, и, по ее словам, фонд намерен поддержать эту просьбу."
-  },
   {
    "title": "Healey Laps Up the IMF’s Praise But the Real Test Is His Budget",
    "link": "https://www.bloomberg.com/news/articles/2026-10-17/healey-laps-up-the-imf-s-praise-but-the-real-test-is-his-budget",
@@ -4940,6 +4929,32 @@
    "tags": [
     "GDP"
    ]
+  },
+  {
+   "title": "UK Jobs Data, Wage Growth Strengthens Case for Bank of England Rate Hikes",
+   "link": "https://www.bloomberg.com/news/newsletters/2026-10-20/uk-jobs-data-wage-growth-strengthens-case-for-bank-of-england-rate-hikes",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 7,
+   "ts": "2026-10-20T06:56:52.431531+00:00",
+   "title_ru": "Данные о занятости в Великобритании и рост заработной платы усиливают аргументы в пользу повышения ставок Банком Англии",
+   "lead": "Plus, the Chancellor rules out increasing capital gains tax in the budget",
+   "lead_ru": "Плюс канцлер исключает повышение налога на прирост капитала в бюджете",
+   "tags": [
+    "rates",
+    "jobs"
+   ]
+  },
+  {
+   "title": "23 октября в 15:00 состоится пресс-конференция по итогам заседания Совета директоров по денежно-кредитной политике",
+   "link": "https://www.cbr.ru/press/event/?id=32923",
+   "sources": [
+    "Bank of Russia"
+   ],
+   "score": 5,
+   "ts": "2026-10-20T06:56:52.431531+00:00",
+   "title_en": "On October 23 at 15:00 there will be a press conference following the meeting of the Board of Directors on monetary policy"
   }
  ],
  "last_digest": "2026-10-19",
