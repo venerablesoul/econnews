@@ -596,7 +596,8 @@
   "1900f392f00e2d60": "2026-10-20T10:08:05.253919+00:00",
   "b64bf858ea601095": "2026-10-20T10:08:05.253919+00:00",
   "6a88126e3d828dac": "2026-10-20T10:08:05.253919+00:00",
-  "cb7a44fc86bd6133": "2026-10-20T10:18:05.261604+00:00"
+  "cb7a44fc86bd6133": "2026-10-20T10:18:05.261604+00:00",
+  "eedc6beb9a33d6ee": "2026-10-20T10:28:05.303481+00:00"
  },
  "recent": [
   {
@@ -5223,6 +5224,21 @@
    "title_ru": "Экономике Дании, питаемой нововведениями, грозит замедление роста, сообщает Watchdog",
    "lead": "Denmark‘s economy is heading for slower growth as the pharmaceutical boom led by Novo Nordisk A/S loses steam and the industry settles into a pace more in line with the rest of the economy, the country’s financial watchdog said.",
    "lead_ru": "Экономика Дании движется к замедлению роста, поскольку фармацевтический бум, возглавляемый Novo Nordisk A/S, теряет обороты, а темпы отрасли в большей степени соответствуют темпам остальной экономики, сообщил финансовый регулятор страны."
+  },
+  {
+   "title": "Pernod Ricard Plans Debut Hybrid Bond as French Debt Risk Rises",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-20/pernod-ricard-plans-debut-hybrid-bond-as-french-debt-risk-rises",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-20T10:28:05.303481+00:00",
+   "title_ru": "Pernod Ricard планирует выпустить гибридные облигации на фоне роста долгового риска Франции",
+   "lead": "Pernod Ricard is planning the sale of a debut hybrid bond alongside a tender for some of its outstanding senior debt, as the company looks to tackle upcoming maturities with its credit ratings on negative outlook.",
+   "lead_ru": "Pernod Ricard планирует продажу дебютных гибридных облигаций одновременно с тендером на часть своего непогашенного старшего долга, поскольку компания надеется справиться с предстоящими сроками погашения, имея негативный прогноз по кредитным рейтингам.",
+   "tags": [
+    "bonds"
+   ]
   }
  ],
  "last_digest": "2026-10-19",
@@ -5245,7 +5261,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 0,
+  "Fed": 1,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
@@ -9921,14 +9937,14 @@
    "0000874015-26-000266",
    "0001060391-26-000314",
    "0001079973-26-001373",
-   "0001193125-26-425520",
+   "0001104659-26-117064",
    "0001060391-26-000308",
    "0001104659-26-117011",
    "0001716751-26-000011",
    "0001060391-26-000312",
+   "0001104659-26-117071",
    "0001060391-26-000306",
    "0001696555-26-000012",
-   "0001140361-26-040135",
    "0001873011-26-000010",
    "0001060391-26-000318",
    "0001976718-26-000013",
@@ -9941,9 +9957,9 @@
    "0002031998-26-000008",
    "0001493152-26-047657",
    "0001104659-26-117008",
+   "0001104659-26-117067",
    "0002013950-26-000003",
    "0000874015-26-000267",
-   "0001060391-26-000304",
    "0001060391-26-000320"
   ],
   "errors": {}
