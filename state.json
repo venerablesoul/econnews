@@ -662,7 +662,11 @@
   "6aa317ba0d052c0e": "2026-10-20T17:38:33.138530+00:00",
   "bbdcb3b673158cee": "2026-10-20T17:38:33.138530+00:00",
   "63406dd4c0ae5d3a": "2026-10-20T17:43:33.095119+00:00",
-  "7e75c060c11e57af": "2026-10-20T17:43:33.095119+00:00"
+  "7e75c060c11e57af": "2026-10-20T17:43:33.095119+00:00",
+  "28f2c347e18219dc": "2026-10-20T17:48:33.148946+00:00",
+  "193963a7066ef46a": "2026-10-20T17:48:33.148946+00:00",
+  "f018aa0c63e7c150": "2026-10-20T17:48:33.148946+00:00",
+  "4e4814ee1d4a5764": "2026-10-20T17:48:33.148946+00:00"
  },
  "recent": [
   {
@@ -6093,6 +6097,31 @@
    ],
    "score": 2,
    "ts": "2026-10-20T17:43:33.095119+00:00"
+  },
+  {
+   "title": "Examining disparities in work–family time-use patterns among workers with caregiving responsibilities in the context of COVID-19 : Monthly Labor Review : U.S",
+   "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxORFgxUU4yTGRDeTU0OW1VcDlqQk9nS0VvZm00RkR5Uk81bDJwRHRTcEFrbXdjZVRIUG5sTC1ZN0tfa1VsekU5RG9PUE54d002QWo0N1VmWnhZWGkwQ0FQNFpTTTZYT3ZUeVFjdG1pZndGNURjRWZNZ0o4X3JFendVYkUyMi1BUGhyRDY0YVVGYU5hazdMVG5tTlZDaTM0U1ZuaEN5YklpbGRKeTRFc0JEaUJlSU9YUHhuLW9jM1hoS1ZqMjgzNGZkVW0zcV9QQ3d5NjhLcDFhc3NrOXZ2LVZOOFVicFdfV0dBTXNpMGRpZ3VKM25QY3VyM3RlVS03MDNwWU1UUA?oc=5",
+   "sources": [
+    "US Labor Statistics (BLS)"
+   ],
+   "score": 4,
+   "ts": "2026-10-20T17:48:33.148946+00:00",
+   "title_ru": "Изучение различий в моделях использования времени между работой и семьей среди работников, выполняющих обязанности по уходу, в контексте COVID-19: Ежемесячный обзор труда: США"
+  },
+  {
+   "title": "BOE’s Greene Says UK Labor Market Is Not as Weak as Thought",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-20/boe-s-greene-says-uk-labor-market-is-not-as-weak-as-thought",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-20T17:48:33.148946+00:00",
+   "title_ru": "Грин из Банка Англии говорит, что рынок труда Великобритании не так слаб, как думают",
+   "lead": "Bank of England rate-setter Megan Greene warned that an easing in UK wage pressures has stalled, suggesting that the labor market is stronger than officials had thought.",
+   "lead_ru": "Член Банка Англии Меган Грин предупредила, что ослабление давления на заработную плату в Великобритании застопорилось, предполагая, что рынок труда сильнее, чем думали чиновники.",
+   "tags": [
+    "jobs"
+   ]
   }
  ],
  "last_digest": "2026-10-19",
@@ -10978,8 +11007,8 @@
   },
   "checked": "2026-10-20T17:28:33.155331+00:00",
   "sec_seen": [
-   "0001401612-26-000005",
    "0001510281-26-000360",
+   "0001401612-26-000005",
    "0001510281-26-000361"
   ],
   "errors": {}
