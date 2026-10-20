@@ -559,7 +559,9 @@
   "5b86952384a554fa": "2026-10-20T04:31:52.409837+00:00",
   "4b32bcfbcbc75545": "2026-10-20T04:31:52.409837+00:00",
   "4a3ad356b70c0fa4": "2026-10-20T04:36:52.898191+00:00",
-  "ee380233c2f15c86": "2026-10-20T04:56:52.581163+00:00"
+  "ee380233c2f15c86": "2026-10-20T04:56:52.581163+00:00",
+  "90d746069dec0552": "2026-10-20T05:01:52.770453+00:00",
+  "dc4f87925f7e5cfe": "2026-10-20T05:01:52.770453+00:00"
  },
  "recent": [
   {
@@ -4739,6 +4741,36 @@
    "title_ru": "Польский политик назвал слабость злотого одним из факторов повышения ставок",
    "lead": "Further weakening of the zloty is among the factors that could tip Polish policymakers to raise interest rates, a Monetary Policy Council member said.",
    "lead_ru": "Дальнейшее ослабление злотого является одним из факторов, которые могут побудить польских политиков повысить процентные ставки, сказал член Совета по денежно-кредитной политике.",
+   "tags": [
+    "rates"
+   ]
+  },
+  {
+   "title": "Hungary Set to Hold Rates After Magyar Unveils Budget Plan",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-20/hungary-set-to-hold-rates-after-magyar-unveils-budget-plan",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-20T05:01:52.770453+00:00",
+   "title_ru": "Венгрия сохранит ставки после того, как Мадьяр обнародует бюджетный план",
+   "lead": "Hungary’s central bank is set to keep interest rates unchanged for a second month after Prime Minister Peter Magyar unveiled his budget plan for next year.",
+   "lead_ru": "Центральный банк Венгрии намерен сохранить процентные ставки без изменений в течение второго месяца после того, как премьер-министр Питер Мадьяр обнародовал свой бюджетный план на следующий год.",
+   "tags": [
+    "rates"
+   ]
+  },
+  {
+   "title": "Ares Warns of Australian Private Credit Stress From Rising Rates",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-20/ares-warns-of-australian-private-credit-stress-from-rising-rates",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-20T05:01:52.770453+00:00",
+   "title_ru": "Ares предупреждает об австралийском частном кредитном стрессе из-за роста ставок",
+   "lead": "Elevated interest rates threaten to add further pressure on Australia’s private credit sector given its weighting to the country’s struggling real estate market, an Ares Management Corp. executive has warned.",
+   "lead_ru": "Повышенные процентные ставки угрожают усилить давление на частный кредитный сектор Австралии, учитывая его вес на испытывающем трудности рынке недвижимости страны, предупредил исполнительный директор Ares Management Corp.",
    "tags": [
     "rates"
    ]
@@ -9448,10 +9480,9 @@
    "0001060391-26-000298",
    "0001493152-26-047657",
    "0001999371-26-023092",
-   "0000874015-26-000266",
    "0001060391-26-000302",
+   "0000874015-26-000266",
    "0001060391-26-000320",
-   "0000950142-26-002791",
    "0000950142-26-002790",
    "0001060391-26-000312",
    "0001060391-26-000318",
@@ -9459,6 +9490,7 @@
    "0001060391-26-000304",
    "0001060391-26-000296",
    "0001976718-26-000013",
+   "0001104659-26-117008",
    "0001060391-26-000308",
    "0001872303-26-000013",
    "0001060391-26-000310",
@@ -9476,7 +9508,7 @@
    "0001060391-26-000294",
    "0000897069-26-001859",
    "0001060391-26-000292",
-   "0001104659-26-117008"
+   "0000950142-26-002791"
   ],
   "errors": {}
  }
