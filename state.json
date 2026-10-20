@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "1e2359f84ee5fe3e": "2026-10-17T06:15:51.316572+00:00",
   "f5264af38b63d68f": "2026-10-17T06:35:51.264678+00:00",
   "2122e38ef9b365b3": "2026-10-17T06:50:51.298154+00:00",
   "25d90a7d08ab34b8": "2026-10-17T07:20:51.299514+00:00",
@@ -570,22 +569,11 @@
   "089f4b4ea463d5d7": "2026-10-20T06:01:52.480170+00:00",
   "36c768d6902413ce": "2026-10-20T06:06:53.481925+00:00",
   "1f12e7d5638235d6": "2026-10-20T06:11:52.730043+00:00",
-  "f77a1b99b7499cb4": "2026-10-20T06:11:52.730043+00:00"
+  "f77a1b99b7499cb4": "2026-10-20T06:11:52.730043+00:00",
+  "4471063c598742bd": "2026-10-20T06:16:52.402068+00:00",
+  "536ada2c03364241": "2026-10-20T06:16:52.402068+00:00"
  },
  "recent": [
-  {
-   "title": "COMMENTARY: Strong dollar, weak hand for Trump before midterms: McGeever",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQbHhCQTRkREZKSk45aHZsYUNiQUt3R1lMb1d1NTBxU2M0c3FOemhDZE5MOGNhTWtZbEY2bm1YZlNRNUZCekJNMXhQR09pRzNDWDNmaFpBNHFKNkFUbXZ1YXFUb1lBRVRfcGZtMTdMWjZES3pBTnllaTJQN25mblNKdHpaY1YtcWEybERGM2ZDeGU4YzhJaDF2UFlNYnA5MXVpNk1SV19qa3NhV2c5MC1jVl81c25qckV5WkRJQlp0S2k?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-17T06:15:51.316572+00:00",
-   "title_ru": "КОММЕНТАРИЙ: Сильный доллар, слабая рука Трампа перед промежуточными выборами: Макгивер",
-   "tags": [
-    "dollar"
-   ]
-  },
   {
    "title": "Delegates walked out of IMF steering committee meeting when Russian official spoke, sources say",
    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOa05jVFdUVTlxcG85OVFRMF94Wmo0TXlmSjRUWXhlb0xYYUVXdXd3ODJ6QWFMXzlSRW0ybkJ1MHgtbmt6ZjhXNzN1UkwwTEFURzJsRk8zSVBlQldrWXlHMGlhSTJoSDdYMjc5UWttN1dDX1VKZ2xTcGRHYVEyRW16TUdGbGpSMVVKck1ITUk5dkpyOHhrODd5bi1vLXJpUy1pR0tUd2V2T1hXOUNQcDJLMlNEMVZXUVl2RlgzVGZJaEV2VUNsSGc?oc=5",
@@ -4911,6 +4899,31 @@
    "tags": [
     "China"
    ]
+  },
+  {
+   "title": "UK unemployment rate falls in pre-budget boost, but firms keep cutting vacancies – business live",
+   "link": "https://www.theguardian.com/business/live/2026/oct/20/uk-unemployment-rate-pre-budget-boost-wages-vacancies-latest-news-updates",
+   "sources": [
+    "The Guardian"
+   ],
+   "score": 5,
+   "ts": "2026-10-20T06:16:52.402068+00:00",
+   "title_ru": "Уровень безработицы в Великобритании снижается в предбюджетный период, но компании продолжают сокращать вакансии – бизнес в реальном времени",
+   "lead": "Rolling coverage of the latest economic and financial news Good morning, and welcome to our rolling coverage of business, the financial markets and the world economy.",
+   "lead_ru": "Постоянное освещение последних экономических и финансовых новостей Доброе утро и добро пожаловать на наши постоянные обзоры бизнеса, финансовых рынков и мировой экономики.",
+   "tags": [
+    "jobs"
+   ]
+  },
+  {
+   "title": "Indonesian markets inch up after authorities move to stem rout on MSCI expulsion fears",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPcWs3WmMyWFdwWmZpeTY4RTJudHB3TEpoNWxCT2RuZENNdWhiZU5YVkxuel9zOFhXQ3VlQWswWEdfY3J0Q3RNeC0tMFBYaEgzN185eC1BS0YzS3RmbWg5Yk9LclY3YURMQ2VfdFg1ZFRRendBRi1QRk5BWFBHdl9Uc25HNHJjVTBraHJhRHlwLXdYVWg4VHpnck9RTkR6RFpHWUlPaXZjcFFlczRBNERiaUd3YmhOSGZiSjBfdkU0ZTBad2U0eEJ4cnRmTmtKNEFl?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-20T06:16:52.402068+00:00",
+   "title_ru": "Индонезийские рынки растут после того, как власти пытаются остановить разгром из-за опасений исключения MSCI"
   }
  ],
  "last_digest": "2026-10-19",
@@ -9618,10 +9631,9 @@
    "0001060391-26-000298",
    "0001493152-26-047657",
    "0001999371-26-023092",
-   "0000874015-26-000266",
    "0001060391-26-000302",
+   "0000874015-26-000266",
    "0001060391-26-000320",
-   "0000950142-26-002791",
    "0000950142-26-002790",
    "0001060391-26-000312",
    "0001060391-26-000318",
@@ -9629,6 +9641,7 @@
    "0001060391-26-000304",
    "0001060391-26-000296",
    "0001976718-26-000013",
+   "0001104659-26-117008",
    "0001060391-26-000308",
    "0001872303-26-000013",
    "0001060391-26-000310",
@@ -9646,10 +9659,8 @@
    "0001060391-26-000294",
    "0000897069-26-001859",
    "0001060391-26-000292",
-   "0001104659-26-117008"
+   "0000950142-26-002791"
   ],
-  "errors": {
-   "sec": "TimeoutError: The read operation timed out"
-  }
+  "errors": {}
  }
 }
