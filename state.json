@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "6964f959c6bc9540": "2026-10-17T02:05:25.292211+00:00",
   "6b46f89470c55219": "2026-10-17T02:10:25.307978+00:00",
   "036b88c2d9f52df6": "2026-10-17T02:35:25.264841+00:00",
   "d219eebef9d8ea25": "2026-10-17T02:40:25.236627+00:00",
@@ -538,24 +537,11 @@
   "84faf59263be959a": "2026-10-20T01:26:05.139506+00:00",
   "a0a62a01597741c6": "2026-10-20T01:31:05.189404+00:00",
   "b4ec47a37e263b54": "2026-10-20T01:41:05.171600+00:00",
-  "8527592039cb58af": "2026-10-20T01:51:05.150345+00:00"
+  "8527592039cb58af": "2026-10-20T01:51:05.150345+00:00",
+  "2424fcbe71e8d17f": "2026-10-20T01:56:05.078545+00:00",
+  "56ea5be30928da02": "2026-10-20T02:06:05.104922+00:00"
  },
  "recent": [
-  {
-   "title": "Trump waives many Russia-related sanctions, tariffs before they were to take effect under new law",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQUWRsWXNvbUVMb01QdTFTbEhpSGhZLVZYVXZramJkQjg2RXUzbXRaZjZlcnY1QTNoeU1zQzhhOEhwOFZVSkRySFFZNWI3RjZtUHJLaDhybEhWVzFBTF9uVlZjWlNSQk5aX25iZ0EySjRQYjR5aVRiM1VERjVFWmpTOTR0Y1ZhNUtaTHpTaWdZZVRPUmppTUJtYl9IZlhGQnM3WkVSNmRreVBjaDF5anFfSHhqN1ZUc2p3cjRoU0pyUzRkZjlBM05B?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 8,
-   "ts": "2026-10-17T02:05:25.292211+00:00",
-   "title_ru": "Трамп отказывается от многих связанных с Россией санкций и тарифов до того, как они должны вступить в силу согласно новому закону",
-   "tags": [
-    "tariffs",
-    "sanctions",
-    "Russia"
-   ]
-  },
   {
    "title": "NY Fed service sector survey finds notable price pressures",
    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNRUZQN0xNTG13b0ZRZk04Q0pxNHNKYjdMMFFoRTZPcHVWYXB2amtrQjJ3bWZfTUliRnR2MTlmTWJCaG9ybm8tR0JlanVIbjlGMFBiUmNtTXhKSTZQRUloN2p3eXN3b0JZa0xNaHNqWVZFZ0t0WDBzSXlsWDg4ekFzWlR5NTcxSm5NRlhlVmoxMHlHM1RJcGFXUklSbTJ3MkM4c3Q1ZHN3?oc=5",
@@ -4454,6 +4440,20 @@
    "lead_ru": "Премьер-министр Японии Санаэ Такаити повторила, что она не будет полагаться на специальные облигации, покрывающие дефицит, для финансирования снижения налога с продаж на продукты питания после того, как ее предыдущие замечания вызвали слухи о том, что она меняет свою позицию.",
    "tags": [
     "bonds"
+   ]
+  },
+  {
+   "title": "Oil eases as markets assess potential waiver on Russian energy, Middle East supply risks",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPZlA3RXBMd0lXRU1feWpodXpZQ2tnUERkUHFQSlFGX2hCMjdrOVdhRVd2eVk3dmhLYklUdVM1WGtoXzc0cUt2OG44WjBYVFVZazFvQWo1UmJWRlliNzJHWlZBU1hScTU1RU9sVEdDVllsSWE4UXh5b0ZHX0VlU01fNDc3ckpxRkw3ZGdaM0xxMW1qOEhWck1XYUlSVkJWeVZyZWRRSkpqdTFQSmZhejlBRmkxZUJmMGtPVWx6Ym82SnNTcElaWGc?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-20T02:06:05.104922+00:00",
+   "title_ru": "Нефть дешевеет, поскольку рынки оценивают потенциальный отказ от российских энергоносителей и риски поставок на Ближний Восток",
+   "tags": [
+    "oil",
+    "Russia"
    ]
   }
  ],
@@ -9150,18 +9150,19 @@
   "checked": "2026-10-20T01:46:05.078217+00:00",
   "sec_seen": [
    "0001060391-26-000318",
-   "0001060391-26-000294",
    "0001060391-26-000306",
+   "0001060391-26-000294",
    "0001060391-26-000304",
    "0002031998-26-000008",
    "0001060391-26-000316",
    "0001778564-26-000187",
    "0001872303-26-000013",
    "0001193125-26-425520",
-   "0001060391-26-000308",
    "0001060391-26-000300",
+   "0001060391-26-000308",
    "0000874015-26-000266",
    "0000950142-26-002792",
+   "0001060391-26-000310",
    "0001104659-26-117008",
    "0000950142-26-002790",
    "0001104659-26-117011",
@@ -9176,7 +9177,6 @@
    "0001193125-26-425511",
    "0001823952-26-000024",
    "0001060391-26-000312",
-   "0001060391-26-000314",
    "0001140361-26-040135",
    "0001060391-26-000296",
    "0000950142-26-002791",
@@ -9189,7 +9189,7 @@
    "0000897069-26-001859",
    "0001060391-26-000292",
    "0001716751-26-000011",
-   "0001060391-26-000310"
+   "0001060391-26-000314"
   ],
   "errors": {}
  }
