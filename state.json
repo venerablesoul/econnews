@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "2d1597eea2d60755": "2026-10-17T06:05:51.266188+00:00",
   "1e2359f84ee5fe3e": "2026-10-17T06:15:51.316572+00:00",
   "f5264af38b63d68f": "2026-10-17T06:35:51.264678+00:00",
   "2122e38ef9b365b3": "2026-10-17T06:50:51.298154+00:00",
@@ -568,24 +567,10 @@
   "f9a233fd1ca4612b": "2026-10-20T05:36:52.449203+00:00",
   "a054ed621dff22ce": "2026-10-20T05:46:52.767574+00:00",
   "24b7d4fffbb1d7ac": "2026-10-20T05:56:52.689483+00:00",
-  "089f4b4ea463d5d7": "2026-10-20T06:01:52.480170+00:00"
+  "089f4b4ea463d5d7": "2026-10-20T06:01:52.480170+00:00",
+  "36c768d6902413ce": "2026-10-20T06:06:53.481925+00:00"
  },
  "recent": [
-  {
-   "title": "Lagarde Says Sustainable Finances Key for Economic Stability",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-17/lagarde-says-fiscal-sustainability-key-for-economic-stability",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-17T06:05:51.266188+00:00",
-   "title_ru": "Лагард считает, что устойчивые финансы являются ключом к экономической стабильности",
-   "lead": "European Central Bank President Christine Lagarde stressed the importance of sound public finances when she addressed ministers in charge of budgets from around the world in Thailand.",
-   "lead_ru": "Президент Европейского центрального банка Кристин Лагард подчеркнула важность здоровых государственных финансов, когда она обращалась к министрам, отвечающим за бюджеты со всего мира в Таиланде.",
-   "tags": [
-    "ECB"
-   ]
-  },
   {
    "title": "COMMENTARY: Strong dollar, weak hand for Trump before midterms: McGeever",
    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQbHhCQTRkREZKSk45aHZsYUNiQUt3R1lMb1d1NTBxU2M0c3FOemhDZE5MOGNhTWtZbEY2bm1YZlNRNUZCekJNMXhQR09pRzNDWDNmaFpBNHFKNkFUbXZ1YXFUb1lBRVRfcGZtMTdMWjZES3pBTnllaTJQN25mblNKdHpaY1YtcWEybERGM2ZDeGU4YzhJaDF2UFlNYnA5MXVpNk1SV19qa3NhV2c5MC1jVl81c25qckV5WkRJQlp0S2k?oc=5",
@@ -4881,6 +4866,19 @@
    "tags": [
     "inflation"
    ]
+  },
+  {
+   "title": "What has actually battered the bond market?",
+   "link": "https://www.ft.com/content/e5585991-c884-4b22-867e-5d70efbb0a87",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 3,
+   "ts": "2026-10-20T06:06:53.481925+00:00",
+   "title_ru": "Что на самом деле ударило по рынку облигаций?",
+   "tags": [
+    "bonds"
+   ]
   }
  ],
  "last_digest": "2026-10-19",
@@ -4929,7 +4927,7 @@
   "2026-10-20-09"
  ],
  "calendar": {
-  "fetched": "2026-10-20T00:06:05.343240+00:00",
+  "fetched": "2026-10-20T06:06:53.481925+00:00",
   "events": [
    {
     "title": "IMF Meetings",
@@ -9588,9 +9586,10 @@
    "0001060391-26-000298",
    "0001493152-26-047657",
    "0001999371-26-023092",
-   "0001060391-26-000302",
    "0000874015-26-000266",
+   "0001060391-26-000302",
    "0001060391-26-000320",
+   "0000950142-26-002791",
    "0000950142-26-002790",
    "0001060391-26-000312",
    "0001060391-26-000318",
@@ -9598,7 +9597,6 @@
    "0001060391-26-000304",
    "0001060391-26-000296",
    "0001976718-26-000013",
-   "0001104659-26-117008",
    "0001060391-26-000308",
    "0001872303-26-000013",
    "0001060391-26-000310",
@@ -9616,7 +9614,7 @@
    "0001060391-26-000294",
    "0000897069-26-001859",
    "0001060391-26-000292",
-   "0000950142-26-002791"
+   "0001104659-26-117008"
   ],
   "errors": {}
  }
