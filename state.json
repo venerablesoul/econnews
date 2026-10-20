@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "7024a0123ecb9632": "2026-10-17T17:22:11.253286+00:00",
   "66302b9996133336": "2026-10-17T17:27:11.228119+00:00",
   "7573c5257a0af532": "2026-10-17T17:37:11.189508+00:00",
   "b20a095ce78bf965": "2026-10-17T17:57:11.195971+00:00",
@@ -658,7 +657,8 @@
   "bd570558bd354da6": "2026-10-20T17:13:33.130578+00:00",
   "d9617d75eadcc671": "2026-10-20T17:13:33.130578+00:00",
   "e5db06dafbca230d": "2026-10-20T17:18:33.189434+00:00",
-  "9bbd92d3ccb00df6": "2026-10-20T17:18:33.189434+00:00"
+  "9bbd92d3ccb00df6": "2026-10-20T17:18:33.189434+00:00",
+  "0692dfbe9f41b8e1": "2026-10-20T17:23:33.138010+00:00"
  },
  "recent": [
   {
@@ -6060,6 +6060,19 @@
    "score": 3,
    "ts": "2026-10-20T17:18:33.189434+00:00",
    "title_ru": "Португальская полиция очистила лагеря жилищных протестов, арестовав 55 человек"
+  },
+  {
+   "title": "Trump drops threats against Canadian jet maker Bombardier, citing US jobs",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQT205ak0wVV9EYllxdHlsNFR6Q19wSVBXMWZjN2NxdmtYd2hYUGFKNklCZjZ2ajdwY0ZURkFodW9Fa1E1ZTFuSFJQV3RRMUpmSy1DWXpCaTZidmNicTh6S2ZSS0E2X2JYTThJNG13OEdNRU9Qelk2Tmgwd3dXLTdNalNnWXlaTDFhT3lSbHY3Mmp5Tmp0Z1NFOTYwMA?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-20T17:23:33.138010+00:00",
+   "title_ru": "Трамп отказался от угроз в адрес канадского производителя самолетов Bombardier, ссылаясь на рабочие места в США",
+   "tags": [
+    "jobs"
+   ]
   }
  ],
  "last_digest": "2026-10-19",
@@ -8128,6 +8141,22 @@
     "date": "2026-10-16",
     "disclosed": "2026-10-20",
     "link": "https://www.sec.gov/Archives/edgar/data/1964286/000119312526425992/0001193125-26-425992-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "fc49c7362e3acc4c",
+    "ticker": "GRF",
+    "company": "EAGLE CAPITAL GROWTH FUND, INC.",
+    "who": "David C Sims",
+    "role": "CFO",
+    "type": "buy",
+    "value": 108633,
+    "shares": 10787,
+    "price": 10.07,
+    "plan": false,
+    "date": "2026-10-16",
+    "disclosed": "2026-10-20",
+    "link": "https://www.sec.gov/Archives/edgar/data/1401612/000140161226000005/0001401612-26-000005-index.htm"
    },
    {
     "src": "sec",
@@ -10899,6 +10928,7 @@
   "sec_seen": [
    "0000006955-26-000081",
    "0001193125-26-426167",
+   "0001401612-26-000005",
    "0001193125-26-426162",
    "0001193125-26-426178",
    "0000006955-26-000083",
