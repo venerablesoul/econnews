@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "66302b9996133336": "2026-10-17T17:27:11.228119+00:00",
   "7573c5257a0af532": "2026-10-17T17:37:11.189508+00:00",
   "b20a095ce78bf965": "2026-10-17T17:57:11.195971+00:00",
   "d61a93a3e173f2d0": "2026-10-17T17:57:11.195971+00:00",
@@ -658,25 +657,10 @@
   "d9617d75eadcc671": "2026-10-20T17:13:33.130578+00:00",
   "e5db06dafbca230d": "2026-10-20T17:18:33.189434+00:00",
   "9bbd92d3ccb00df6": "2026-10-20T17:18:33.189434+00:00",
-  "0692dfbe9f41b8e1": "2026-10-20T17:23:33.138010+00:00"
+  "0692dfbe9f41b8e1": "2026-10-20T17:23:33.138010+00:00",
+  "11b3b863927e621f": "2026-10-20T17:28:33.155331+00:00"
  },
  "recent": [
-  {
-   "title": "Russia Sanctions Waived, AI Debt Concerns, Making 'GTA VI'",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-17/bloomberg-this-weekend-10-17-2026-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-17T17:27:11.228119+00:00",
-   "title_ru": "Отмена санкций против России, опасения по поводу долгов AI, создание GTA VI",
-   "lead": "The news doesn’t stop when markets close. Hosts David Gura, Christina Ruffini and Lisa Mateo bring clarity, context and a bit of humor to the weekend’s biggest headlines, LIVE from New York.",
-   "lead_ru": "Новости не прекращаются, когда рынки закрываются. Ведущие Дэвид Гура, Кристина Руффини и Лиза Матео привносят ясность, контекст и немного юмора в главные заголовки выходных в прямом эфире из Нью-Йорка.",
-   "tags": [
-    "sanctions",
-    "Russia"
-   ]
-  },
   {
    "title": "Florida's stone crab season begins amid economic woes",
    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5QeGNEUndKMDZESW45SWVsRXpGOHIzUjNwclRhd1pzTmt5VnUxNzYwMmloZUE0cE5zbVYybEV4X3UtZ2pxVGRmTk1MU2pCTHVJZTBsMXhhNTV0UlB2RGdnR19URndrYW5hUm5nTVFvT0UtQzFqOUk2ZnFuZDhWUQ?oc=5",
@@ -8112,6 +8096,22 @@
    },
    {
     "src": "sec",
+    "id": "cb1d11848d7b4331",
+    "ticker": "ECF",
+    "company": "ELLSWORTH GROWTH & INCOME FUND LTD",
+    "who": "Saba Capital Management, L.p.",
+    "role": "10% owner",
+    "type": "buy",
+    "value": 386339,
+    "shares": 33426,
+    "price": 11.56,
+    "plan": false,
+    "date": "2026-10-19",
+    "disclosed": "2026-10-20",
+    "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000360/0001510281-26-000360-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "a2b0810ab37e2b0f",
     "ticker": "SCISX",
     "company": "MA Specialty Credit Income Fund",
@@ -10924,17 +10924,16 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-20T16:23:33.211824+00:00",
+  "checked": "2026-10-20T17:28:33.155331+00:00",
   "sec_seen": [
    "0000006955-26-000081",
    "0001193125-26-426167",
    "0001401612-26-000005",
-   "0001193125-26-426162",
    "0001193125-26-426178",
+   "0001510281-26-000360",
    "0000006955-26-000083",
    "0001193125-26-426174",
-   "0000006955-26-000079",
-   "0000006955-26-000077"
+   "0000006955-26-000079"
   ],
   "errors": {}
  }
