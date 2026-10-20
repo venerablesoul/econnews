@@ -541,7 +541,9 @@
   "56ea5be30928da02": "2026-10-20T02:06:05.104922+00:00",
   "abded94b3f34cf74": "2026-10-20T02:11:05.101528+00:00",
   "e6c2f827282abf9a": "2026-10-20T02:11:05.101528+00:00",
-  "42197dbdb807b0f6": "2026-10-20T02:11:05.101528+00:00"
+  "42197dbdb807b0f6": "2026-10-20T02:11:05.101528+00:00",
+  "29f9ee2b5b6bf32c": "2026-10-20T02:16:05.131196+00:00",
+  "255deb47b58ded29": "2026-10-20T02:16:05.131196+00:00"
  },
  "recent": [
   {
@@ -4498,6 +4500,35 @@
    "tags": [
     "China"
    ]
+  },
+  {
+   "title": "Asian shares tumble, oil rises as markets await AI sector results",
+   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPaHdteV9meHVjc2dvbmd1WjNPa1FHR2lwTFlEcmJPWE5zZnhHSFNjQndCeHptVW1NaEpsbms3QS1oSHRiTmZyUVp2ZVR0SlMwT1kxVnM2UFdyenVSblJHVW4ySjA3aTFUcGxvbV9iaHZZMzJVZTRQV1ZtM3BZMVd4RHFsaw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-20T02:16:05.131196+00:00",
+   "title_ru": "Азиатские акции падают, нефть растет, поскольку рынки ждут результатов сектора искусственного интеллекта",
+   "tags": [
+    "oil",
+    "markets"
+   ]
+  },
+  {
+   "title": "Indonesia Stocks Rebound as Authorities Step Up Response to MSCI",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-20/indonesia-stocks-rebound-as-authorities-step-up-response-to-msci",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-20T02:16:05.131196+00:00",
+   "title_ru": "Акции Индонезии восстанавливаются, поскольку власти усиливают реакцию на MSCI",
+   "lead": "Indonesian stocks rebounded from their worst rout in nearly four decades after authorities unveiled fresh measures aimed at averting a potential two-step downgrade by MSCI Inc.",
+   "lead_ru": "Индонезийские акции восстановились после худшего падения за почти четыре десятилетия после того, как власти обнародовали новые меры, направленные на предотвращение потенциального двухступенчатого понижения рейтинга MSCI Inc.",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-19",
@@ -4523,7 +4554,7 @@
   "Fed": 0,
   "IMF": 0,
   "Kommersant": 0,
-  "RBC": 1,
+  "RBC": 0,
   "US Labor Statistics (BLS)": 0
  },
  "charts_sent": [
@@ -9193,18 +9224,19 @@
   "checked": "2026-10-20T01:46:05.078217+00:00",
   "sec_seen": [
    "0001060391-26-000318",
-   "0001060391-26-000294",
    "0001060391-26-000306",
+   "0001060391-26-000294",
    "0001060391-26-000304",
    "0002031998-26-000008",
    "0001060391-26-000316",
    "0001778564-26-000187",
    "0001872303-26-000013",
+   "0001060391-26-000300",
    "0001193125-26-425520",
    "0001060391-26-000308",
-   "0001060391-26-000300",
    "0000874015-26-000266",
    "0000950142-26-002792",
+   "0001060391-26-000310",
    "0001104659-26-117008",
    "0000950142-26-002790",
    "0001104659-26-117011",
@@ -9219,7 +9251,6 @@
    "0001193125-26-425511",
    "0001823952-26-000024",
    "0001060391-26-000312",
-   "0001060391-26-000314",
    "0001140361-26-040135",
    "0001060391-26-000296",
    "0000950142-26-002791",
@@ -9232,7 +9263,7 @@
    "0000897069-26-001859",
    "0001060391-26-000292",
    "0001716751-26-000011",
-   "0001060391-26-000310"
+   "0001060391-26-000314"
   ],
   "errors": {}
  }
