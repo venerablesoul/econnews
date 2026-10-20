@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "2d7aa1e24aa29815": "2026-10-17T04:30:51.318768+00:00",
   "787d06c65faf6594": "2026-10-17T04:40:51.252666+00:00",
   "378dacc916a5dc97": "2026-10-17T04:40:51.252666+00:00",
   "b3cab51499395c91": "2026-10-17T04:55:51.324117+00:00",
@@ -558,7 +557,10 @@
   "19d7d881756e1cb8": "2026-10-20T04:06:53.132686+00:00",
   "e1a59b7b77f699e8": "2026-10-20T04:06:53.132686+00:00",
   "fa12a3b95cb8af6f": "2026-10-20T04:11:52.581438+00:00",
-  "8aa95e5b1610ad69": "2026-10-20T04:16:52.449794+00:00"
+  "8aa95e5b1610ad69": "2026-10-20T04:16:52.449794+00:00",
+  "91c985ed73208d3f": "2026-10-20T04:31:52.409837+00:00",
+  "5b86952384a554fa": "2026-10-20T04:31:52.409837+00:00",
+  "4b32bcfbcbc75545": "2026-10-20T04:31:52.409837+00:00"
  },
  "recent": [
   {
@@ -4695,6 +4697,49 @@
    "title_ru": "Китайский чиновник заявил, что экономика устойчива, но темпы восстановления остаются слабыми",
    "tags": [
     "China"
+   ]
+  },
+  {
+   "title": "FirstFT: AI debt fears spark default insurance trading surge",
+   "link": "https://www.ft.com/content/92a2e2a4-356a-4aa3-9d1e-8b4fbaf1c365?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 6,
+   "ts": "2026-10-20T04:31:52.409837+00:00",
+   "title_ru": "FirstFT: опасения по поводу долгов ИИ вызывают всплеск торговли страхованием от дефолта",
+   "lead": "Also in today’s newsletter: UK weighs EU options and luxury retailers looted",
+   "lead_ru": "Также в сегодняшнем информационном бюллетене: Великобритания взвешивает варианты ЕС, а магазины предметов роскоши разграблены"
+  },
+  {
+   "title": "Japan ‘months’ from running out of critical rare earth as China squeezes supply",
+   "link": "https://www.ft.com/content/ebd3244a-9120-4773-b55f-41df77f60c93?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 3,
+   "ts": "2026-10-20T04:31:52.409837+00:00",
+   "title_ru": "Японии осталось несколько месяцев до того, как исчерпаются критически важные редкоземельные элементы, поскольку Китай сокращает поставки",
+   "lead": "Tokyo asks US to help convince Beijing to ease chokehold on yttrium and avert manufacturing shutdown",
+   "lead_ru": "Токио просит США помочь убедить Пекин ослабить контроль над иттрием и предотвратить остановку производства",
+   "tags": [
+    "China"
+   ]
+  },
+  {
+   "title": "Can Africa outgrow China?",
+   "link": "https://www.ft.com/content/4702e72d-ba3c-43c4-92e7-1dffccddcd16?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 3,
+   "ts": "2026-10-20T04:31:52.409837+00:00",
+   "title_ru": "Сможет ли Африка перерасти Китай?",
+   "lead": "IMF says continent’s GDP to expand faster than China for first time in decades as it beats worst expectations following Iran war",
+   "lead_ru": "МВФ заявляет, что ВВП континента будет расти быстрее, чем Китай, впервые за десятилетия, поскольку он превзошел худшие ожидания после войны с Ираном",
+   "tags": [
+    "China",
+    "GDP"
    ]
   }
  ],
