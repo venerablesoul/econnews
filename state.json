@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c188048fda85b2ce": "2026-10-17T11:56:19.289776+00:00",
   "1b8948e46756c1f9": "2026-10-17T12:06:19.226150+00:00",
   "f2d5f53c6ac1f4c8": "2026-10-17T12:11:19.218371+00:00",
   "f321e6cb9ba5593a": "2026-10-17T12:11:19.218371+00:00",
@@ -608,25 +607,11 @@
   "bfb97052a3e8dafb": "2026-10-20T11:48:05.262171+00:00",
   "5bc93ea1c94dbff9": "2026-10-20T11:48:05.262171+00:00",
   "ca5b22798cee9145": "2026-10-20T11:53:05.260394+00:00",
-  "bfba6319bd21ee9e": "2026-10-20T11:53:05.260394+00:00"
+  "bfba6319bd21ee9e": "2026-10-20T11:53:05.260394+00:00",
+  "e1f9fc13c592e5b3": "2026-10-20T11:58:05.363616+00:00",
+  "ea0eead0a6bebc09": "2026-10-20T11:58:05.363616+00:00"
  },
  "recent": [
-  {
-   "title": "Trump Puts New Russia Sanctions on Hold",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-17/trump-puts-new-russia-sanctions-on-hold-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-17T11:56:19.289776+00:00",
-   "title_ru": "Трамп приостановил новые санкции против России",
-   "lead": "Bloomberg News Russia economy and government editor Anthony Halpin and White House correspondent Jeff Mason tell Bloomberg This Weekend that President Donald Trump’s waiver of new Russia sanctions could offer Moscow economic and…",
-   "lead_ru": "Редактор Bloomberg News Russia по экономике и правительству Энтони Халпин и корреспондент Белого дома Джефф Мейсон сообщили Bloomberg на этих выходных, что отказ президента Дональда Трампа от новых санкций в отношении России может предложить Москве экономические и...",
-   "tags": [
-    "sanctions",
-    "Russia"
-   ]
-  },
   {
    "title": "Microsoft, Shopify and 3 more AI stocks that are favorite Wall Street earnings plays",
    "link": "https://www.marketwatch.com/story/microsoft-shopify-and-3-more-ai-stocks-that-are-favorite-wall-street-earnings-plays-0bb61e81?mod=mw_rss_topstories",
@@ -5409,6 +5394,16 @@
    "tags": [
     "jobs"
    ]
+  },
+  {
+   "title": "Italy's Eni to increase gas processing capacity in Egypt's Western Desert",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNS1l4WkZJUUwxaHFOS2ppai1DeDV3Vlh4UTBOaTFQa1B0RWlfbWdHejVQRmlxeGhGREd6NlpHYXdYbWtfbWhNdU1yT2RoRE5DeGRiZEhPSHVrTDI3OHhlWllRdDdJOG9GXzN1THJfYTlMRlo4d29yQ0M1SFFjQU80NEZkZXI0QldiSU5ZaVVMOTQxMGQwa01zckI1MFFFVWd0VHpoNjlxZXZzNW9PTHAzeGd0U01ldjE2?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-20T11:58:05.363616+00:00",
+   "title_ru": "Итальянская Eni увеличит мощности по переработке газа в Западной пустыне Египта"
   }
  ],
  "last_digest": "2026-10-19",
