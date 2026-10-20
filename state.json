@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "51a1255c651c1d05": "2026-10-17T18:27:11.231482+00:00",
   "09d22651ab7c7418": "2026-10-17T18:32:11.231973+00:00",
   "f609188b61929c58": "2026-10-17T19:12:11.221763+00:00",
   "155d1e0aaeb144fc": "2026-10-17T19:27:11.219550+00:00",
@@ -675,7 +674,10 @@
   "984e65abd01d5bc9": "2026-10-20T18:13:33.132219+00:00",
   "6f865bc025ebe1cc": "2026-10-20T18:13:33.132219+00:00",
   "2c7aa3530a64fad6": "2026-10-20T18:18:33.133285+00:00",
-  "75d41932a42395d9": "2026-10-20T18:18:33.133285+00:00"
+  "75d41932a42395d9": "2026-10-20T18:18:33.133285+00:00",
+  "47429ae24cf0ec96": "2026-10-20T18:28:33.150136+00:00",
+  "6ecebb7ff72a9f70": "2026-10-20T18:28:33.150136+00:00",
+  "ab7516f85890ab8d": "2026-10-20T18:28:33.150136+00:00"
  },
  "recent": [
   {
@@ -6186,6 +6188,48 @@
    ],
    "score": 2,
    "ts": "2026-10-20T18:18:33.133285+00:00"
+  },
+  {
+   "title": "IEA oil stocks release timing is up to individual members, chief says",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNbjQwUGZrTC00LUMtdFBsaTRfQTJoUWp5MzdPTG04MllSbUZXSDN4RW1IQkkyYmNHT2pCM1BKdlVaQWJkbEQ1ck5rWWF2U2VWVlZzOEFIdkJRNjN6YkZxZ3djNVBRcVIzTWR5QXpPQzVMTkZJVFJwYlVRODFqTW11WXZBSmwwaXAyUGtQNEJ2LXh0N05seUVGSk5wbTZTNGpXT29xRTlBcFFuMy1mbm1WNkt1d25QX1hF?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-20T18:28:33.150136+00:00",
+   "title_ru": "По словам руководителя МЭА, время публикации запасов нефти зависит от отдельных членов",
+   "tags": [
+    "oil",
+    "markets"
+   ]
+  },
+  {
+   "title": "EU still committed to keeping oil, coal and gas in ground in Arctic, new strategy says",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPX1dPWEItT3ZQRVJMMDdjU1ZuNVg5eG5rQ3h1UXNXMkJORFNrLXpkc05oWWpRU2NZRDJZX3Zpak5rWl9WclhBd0hGRUxia2VtMldlVEluZnI2MmNROUFFdERDRUFLaGo5NkRwNE96V1gzME9yOGhBQlNZQUVwWTNtX0dycXRkYXhuR3NkV21OTmpya0R6OXdIbWVoQUhBWUFFS0JhMmZOR0tMZWFjYklSa2lRQTZBWjJoVEstVG5sd2w?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-20T18:28:33.150136+00:00",
+   "title_ru": "ЕС по-прежнему привержен сохранению нефти, угля и газа в Арктике, говорится в новой стратегии",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "Цена двух букв // Подсчитаны потери Армении от перехода из ЕАЭС в ЕС",
+   "link": "https://www.kommersant.ru/doc/9043211",
+   "sources": [
+    "Kommersant"
+   ],
+   "score": 3,
+   "ts": "2026-10-20T18:28:33.150136+00:00",
+   "title_en": "The price of two letters // Armenia's losses from the transition from the EAEU to the EU have been calculated",
+   "lead": "Представители России, Белоруссии, Казахстана и Киргизии в Евразийском межправсовете подсчитали «цену» возможного приостановления членства Армении в ЕАЭС для этой страны.",
+   "lead_en": "Representatives of Russia, Belarus, Kazakhstan and Kyrgyzstan in the Eurasian Intergovernmental Council calculated the “cost” of the possible suspension of Armenia’s membership in the EAEU for this country.",
+   "tags": [
+    "Russia"
+   ]
   }
  ],
  "last_digest": "2026-10-20",
@@ -11104,9 +11148,7 @@
   },
   "checked": "2026-10-20T17:28:33.155331+00:00",
   "sec_seen": [
-   "0001997961-26-000004",
-   "0001510281-26-000363",
-   "0001510281-26-000362"
+   "0001510281-26-000363"
   ],
   "errors": {}
  }
