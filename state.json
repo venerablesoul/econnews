@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "d1dfbbc61f5cbc36": "2026-10-17T01:50:25.255763+00:00",
   "6964f959c6bc9540": "2026-10-17T02:05:25.292211+00:00",
   "6b46f89470c55219": "2026-10-17T02:10:25.307978+00:00",
   "036b88c2d9f52df6": "2026-10-17T02:35:25.264841+00:00",
@@ -538,19 +537,10 @@
   "24bc4feb6f5d08de": "2026-10-20T01:21:05.134175+00:00",
   "84faf59263be959a": "2026-10-20T01:26:05.139506+00:00",
   "a0a62a01597741c6": "2026-10-20T01:31:05.189404+00:00",
-  "b4ec47a37e263b54": "2026-10-20T01:41:05.171600+00:00"
+  "b4ec47a37e263b54": "2026-10-20T01:41:05.171600+00:00",
+  "8527592039cb58af": "2026-10-20T01:51:05.150345+00:00"
  },
  "recent": [
-  {
-   "title": "US annual budget gap hits nearly $2 trillion, largest in 5 years",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQbWlhaU90MklTU2wtZDJ1OC1wcVZIeDF5Y3FGRGsyam90X1VCNF9NcGRSUFNwTG1PQ21fZXZndjN3WXM4UG9LSW82OW1xLVQ0Rng3ODZLcjdwRWZtYVEzTm5oYjdlZUZhMXVmVUhubUhuWVJrMzVndXdUN29sQ2h1SHRKMnF0UkdXQ2dkWXppOU50bDV2WXhLM0tHZjk3MGtiTm4xQWNkc2FpU0dXOUE?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-17T01:50:25.255763+00:00",
-   "title_ru": "Годовой дефицит бюджета США достиг почти 2 триллионов долларов, что стало самым большим показателем за 5 лет"
-  },
   {
    "title": "Trump waives many Russia-related sanctions, tariffs before they were to take effect under new law",
    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQUWRsWXNvbUVMb01QdTFTbEhpSGhZLVZYVXZramJkQjg2RXUzbXRaZjZlcnY1QTNoeU1zQzhhOEhwOFZVSkRySFFZNWI3RjZtUHJLaDhybEhWVzFBTF9uVlZjWlNSQk5aX25iZ0EySjRQYjR5aVRiM1VERjVFWmpTOTR0Y1ZhNUtaTHpTaWdZZVRPUmppTUJtYl9IZlhGQnM3WkVSNmRreVBjaDF5anFfSHhqN1ZUc2p3cjRoU0pyUzRkZjlBM05B?oc=5",
@@ -4449,6 +4439,21 @@
    "tags": [
     "oil",
     "markets"
+   ]
+  },
+  {
+   "title": "Takaichi Reaffirms No Deficit Bonds to Fund Food Sales Tax Cut",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-20/takaichi-reaffirms-no-deficit-bonds-to-fund-food-sales-tax-cut",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-20T01:51:05.150345+00:00",
+   "title_ru": "Такаичи подтверждает бездефицитные облигации для финансирования снижения налога на продажу продуктов питания",
+   "lead": "Japanese Prime Minister Sanae Takaichi reiterated that she won’t rely on special deficit-covering bonds to fund a sales tax cut on food after her earlier remarks sparked speculation that she was changing her stance.",
+   "lead_ru": "Премьер-министр Японии Санаэ Такаити повторила, что она не будет полагаться на специальные облигации, покрывающие дефицит, для финансирования снижения налога с продаж на продукты питания после того, как ее предыдущие замечания вызвали слухи о том, что она меняет свою позицию.",
+   "tags": [
+    "bonds"
    ]
   }
  ],
@@ -9145,19 +9150,18 @@
   "checked": "2026-10-20T01:46:05.078217+00:00",
   "sec_seen": [
    "0001060391-26-000318",
-   "0001060391-26-000306",
    "0001060391-26-000294",
+   "0001060391-26-000306",
    "0001060391-26-000304",
    "0002031998-26-000008",
    "0001060391-26-000316",
    "0001778564-26-000187",
    "0001872303-26-000013",
    "0001193125-26-425520",
-   "0001060391-26-000300",
    "0001060391-26-000308",
+   "0001060391-26-000300",
    "0000874015-26-000266",
    "0000950142-26-002792",
-   "0001060391-26-000310",
    "0001104659-26-117008",
    "0000950142-26-002790",
    "0001104659-26-117011",
@@ -9172,6 +9176,7 @@
    "0001193125-26-425511",
    "0001823952-26-000024",
    "0001060391-26-000312",
+   "0001060391-26-000314",
    "0001140361-26-040135",
    "0001060391-26-000296",
    "0000950142-26-002791",
@@ -9184,7 +9189,7 @@
    "0000897069-26-001859",
    "0001060391-26-000292",
    "0001716751-26-000011",
-   "0001060391-26-000314"
+   "0001060391-26-000310"
   ],
   "errors": {}
  }
