@@ -669,7 +669,10 @@
   "51e1d33d33073910": "2026-10-20T17:58:33.130350+00:00",
   "b20a095ce78bf965": "2026-10-20T18:03:33.160641+00:00",
   "21f314981c987167": "2026-10-20T18:03:33.160641+00:00",
-  "13bef4e11e302ce5": "2026-10-20T18:03:33.160641+00:00"
+  "13bef4e11e302ce5": "2026-10-20T18:03:33.160641+00:00",
+  "624389dfa8e47a05": "2026-10-20T18:08:33.128492+00:00",
+  "af7766878e9bdf78": "2026-10-20T18:08:33.128492+00:00",
+  "fe3c4bd5e6db63db": "2026-10-20T18:08:33.128492+00:00"
  },
  "recent": [
   {
@@ -6143,6 +6146,31 @@
    "title_ru": "Правительство Великобритании сделает заявление о месторождении газа Галка",
    "lead": "The long-awaited decision about the controversial North Sea field is expected on Wednesday morning.",
    "lead_ru": "Долгожданное решение по спорному месторождению в Северном море ожидается в среду утром."
+  },
+  {
+   "title": "Indonesia Rate Hike Bets Jump as MSCI Threat Hits Rupiah",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQaHpfSXRYTEF3U0tOTUlPel9DVnZUZTB2QjJzR3hmd001LXNCTGhCdWE5Y18xNW1MUTNtWGgybTE5cW5SLVRiRHIxN200UGxjRS10VXlKM2xNek1GSGVoYldxYnlkRmpQYmN1TDRuUldkUUx0V3JVUHFxbzV2ejYzeTdESW1FVU1CaGt6SC1BQnRMUWFLelh4dFJSZGJIbWhXaEk2UURQMFdHTHZ2M0hQSDNn?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-20T18:08:33.128492+00:00",
+   "title_ru": "Ставки на повышение ставок в Индонезии подскочили, поскольку угроза MSCI достигла рупии",
+   "tags": [
+    "rates"
+   ]
+  },
+  {
+   "title": "Google resolves cloud outage affecting UK banks and websites",
+   "link": "https://www.bbc.co.uk/news/articles/cxdd8mm6qy4mo?at_medium=RSS&at_campaign=rss",
+   "sources": [
+    "BBC"
+   ],
+   "score": 3,
+   "ts": "2026-10-20T18:08:33.128492+00:00",
+   "title_ru": "Google устранил сбой в облаке, затронувший британские банки и веб-сайты",
+   "lead": "Revolut was one of the hardest hit, with banking services going down for many customers.",
+   "lead_ru": "Revolut пострадала больше всего: банковские услуги для многих клиентов были прекращены."
   }
  ],
  "last_digest": "2026-10-20",
@@ -6192,7 +6220,7 @@
   "2026-10-20-21"
  ],
  "calendar": {
-  "fetched": "2026-10-20T12:08:05.293801+00:00",
+  "fetched": "2026-10-20T18:08:33.128492+00:00",
   "events": [
    {
     "title": "IMF Meetings",
@@ -6469,7 +6497,7 @@
    {
     "title": "GDT Price Index",
     "country": "NZD",
-    "ts": "2026-10-20T14:50:00+00:00",
+    "ts": "2026-10-20T15:19:00+00:00",
     "impact": "Low",
     "forecast": "",
     "previous": "1.2%"
