@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "685860af6e92a5a8": "2026-10-17T10:01:19.203648+00:00",
-  "605d34182e90c291": "2026-10-17T10:01:19.203648+00:00",
   "100814bb45f7ff8e": "2026-10-17T10:16:19.266930+00:00",
   "803d282b06b3faf7": "2026-10-17T10:31:19.229007+00:00",
   "53793497431b3e6f": "2026-10-17T10:36:19.243179+00:00",
@@ -593,39 +591,11 @@
   "977a042f7c0b8fe2": "2026-10-20T09:38:05.249826+00:00",
   "afc787d6165d70ad": "2026-10-20T09:38:05.249826+00:00",
   "4f848315cb3bd969": "2026-10-20T09:53:05.249905+00:00",
-  "22b7ce7816598dd7": "2026-10-20T09:53:05.249905+00:00"
+  "22b7ce7816598dd7": "2026-10-20T09:53:05.249905+00:00",
+  "234d0b8c83d70f8e": "2026-10-20T09:58:05.247088+00:00",
+  "ba67ec8b92c0af0b": "2026-10-20T10:03:05.262780+00:00"
  },
  "recent": [
-  {
-   "title": "ECB's Lagarde says bond selloff will slow inflation",
-   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxORnNpbWFQTVJFZTQ1NDEzNVA1QlMyNThGdl8tR19Bd0UtQTAyVnBGRFBldDVOMFFnRHR0WkRHaS1CODVMSUFvSTZJdzN5a2NSbHFLbHA2bnZ0ZVBXYUprYS1oeGN6eF9lakVpVmRTSVB6VkpwUzlOVXZCME5ldGVmNmZPTUtuSGVnRTZzbENrQ1pGcFlScVZ1Sl9rQ1pHWUo1c1l4VUJn?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 11,
-   "ts": "2026-10-17T10:01:19.203648+00:00",
-   "title_ru": "Глава ЕЦБ Лагард заявила, что распродажа облигаций замедлит инфляцию",
-   "tags": [
-    "ECB",
-    "inflation",
-    "bonds"
-   ]
-  },
-  {
-   "title": "‘Resilience’ is the buzzword, but the scale of subsidies to weather chaos is untenable, warns IMF",
-   "link": "https://www.theguardian.com/business/2026/oct/17/imf-warns-scale-subsidies-weather-global-chaos-untenable",
-   "sources": [
-    "The Guardian"
-   ],
-   "score": 3,
-   "ts": "2026-10-17T10:01:19.203648+00:00",
-   "title_ru": "«Устойчивость» — модное слово, но масштабы субсидий на борьбу с погодным хаосом несостоятельны, предупреждает МВФ",
-   "lead": "Sky-high oil prices and geopolitical turmoil have made less of a dent than feared … just don’t bank on it to last Inside the vast, glass-walled Queen Sirikit conference centre in Bangkok, the air-conditioned atmosphere was calm…",
-   "lead_ru": "Заоблачные цены на нефть и геополитические потрясения оказали меньшее влияние, чем опасались… просто не рассчитывайте на то, что это продлится долго. Внутри огромного конференц-центра Queen Sirikit со стеклянными стенами в Бангкоке царила спокойная атмосфера с кондиционированием воздуха…",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "Growth Ambition, Strategic Autonomy and AI for Cows: Postcard from Delhi",
    "link": "https://www.bloomberg.com/news/newsletters/2026-10-17/growth-ambition-strategic-autonomy-and-ai-for-cows-postcard-from-delhi",
@@ -5210,6 +5180,22 @@
    "lead": "Премьер-министр РФ Михаил Мишустин рассказал о предложении России создать в ШОС рабочую группу по развитию космической экономики. Об этой инициативе он рассказал на заседании Совета глав правительств стран ШОС в Таджикистане.",
    "lead_en": "Russian Prime Minister Mikhail Mishustin spoke about Russia's proposal to create a working group in the SCO to develop the space economy. He spoke about this initiative at a meeting of the Council of Heads of Government of the SCO countries in Tajikistan.",
    "tags": [
+    "Russia"
+   ]
+  },
+  {
+   "title": "Силуанов счел небольшим плановый дефицит бюджета России на уровне 2% ВВП",
+   "link": "https://www.kommersant.ru/doc/9042821",
+   "sources": [
+    "Kommersant"
+   ],
+   "score": 7,
+   "ts": "2026-10-20T10:03:05.262780+00:00",
+   "title_en": "Siluanov considered Russia's planned budget deficit at 2% of GDP small",
+   "lead": "Министр финансов Антон Силуанов считает, что плановый дефицит федерального бюджета в ближайшую трехлетку — около 2% ВВП ежегодно — нельзя считать существенным.",
+   "lead_en": "Finance Minister Anton Siluanov believes that the planned federal budget deficit over the next three years - about 2% of GDP annually - cannot be considered significant.",
+   "tags": [
+    "GDP",
     "Russia"
    ]
   }
@@ -9907,7 +9893,6 @@
   },
   "checked": "2026-10-20T09:03:05.281552+00:00",
   "sec_seen": [
-   "0001060391-26-000290",
    "0000874015-26-000266",
    "0001060391-26-000300",
    "0001193125-26-425520",
@@ -9931,8 +9916,6 @@
    "0001976718-26-000013",
    "0001958125-26-000011",
    "0001060391-26-000294",
-   "0001060391-26-000292",
-   "0000950142-26-002790",
    "0001060391-26-000310",
    "0001060391-26-000302",
    "0001060391-26-000316",
@@ -9942,8 +9925,6 @@
    "0002031998-26-000008",
    "0001493152-26-047657",
    "0001104659-26-117008",
-   "0000950142-26-002792",
-   "0000950142-26-002791",
    "0002013950-26-000003",
    "0000874015-26-000267",
    "0001140361-26-040135",
