@@ -606,7 +606,9 @@
   "eb3ab987591f9b71": "2026-10-20T11:33:05.281855+00:00",
   "fc4ae6880bb5edfc": "2026-10-20T11:48:05.262171+00:00",
   "bfb97052a3e8dafb": "2026-10-20T11:48:05.262171+00:00",
-  "5bc93ea1c94dbff9": "2026-10-20T11:48:05.262171+00:00"
+  "5bc93ea1c94dbff9": "2026-10-20T11:48:05.262171+00:00",
+  "ca5b22798cee9145": "2026-10-20T11:53:05.260394+00:00",
+  "bfba6319bd21ee9e": "2026-10-20T11:53:05.260394+00:00"
  },
  "recent": [
   {
@@ -5374,6 +5376,36 @@
    "score": 3,
    "ts": "2026-10-20T11:48:05.262171+00:00",
    "title_ru": "ЭКСКЛЮЗИВ: Qualcomm сократит рабочие места по всему миру из-за увольнений, ориентированных на производительность, показывают внутренние памятки",
+   "tags": [
+    "jobs"
+   ]
+  },
+  {
+   "title": "Storm Austen to Boost Wind Power in Europe as Gas Prices Surge",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-20/storm-austen-to-boost-wind-power-in-europe-as-gas-prices-surge",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-20T11:53:05.260394+00:00",
+   "title_ru": "Storm Austen увеличит ветроэнергетику в Европе из-за роста цен на газ",
+   "lead": "The first named storm of this autumn is set to lash the UK and northwest Europe with heavy rain and wind in the coming days, potentially bringing some relief to elevated power prices.",
+   "lead_ru": "Первый названный шторм этой осени обрушится на Великобританию и северо-западную Европу сильным дождем и ветром в ближайшие дни, что потенциально принесет некоторое облегчение повышенным ценам на электроэнергию.",
+   "tags": [
+    "gas"
+   ]
+  },
+  {
+   "title": "Paddy Power-owner cuts 1,400 jobs and blames betting tax rises",
+   "link": "https://www.bbc.co.uk/news/articles/cqzrdpkm3g84o?at_medium=RSS&at_campaign=rss",
+   "sources": [
+    "BBC"
+   ],
+   "score": 3,
+   "ts": "2026-10-20T11:53:05.260394+00:00",
+   "title_ru": "Владелец Paddy Power сокращает 1400 рабочих мест и винит в этом повышение налогов на ставки",
+   "lead": "The government increased taxes on online casino and sports betting in last year's Budget.",
+   "lead_ru": "Правительство увеличило налоги на онлайн-казино и ставки на спорт в прошлогоднем бюджете.",
    "tags": [
     "jobs"
    ]
