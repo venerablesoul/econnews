@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "183b9f7c60dcc637": "2026-10-17T16:27:11.188084+00:00",
-  "b566aa5f01dd989a": "2026-10-17T16:27:11.188084+00:00",
   "1e00c6fc540eb92c": "2026-10-17T16:57:11.225338+00:00",
   "015aeccf4c240947": "2026-10-17T17:02:11.238745+00:00",
   "7024a0123ecb9632": "2026-10-17T17:22:11.253286+00:00",
@@ -650,7 +648,12 @@
   "70f26d30f053594c": "2026-10-20T16:08:33.172614+00:00",
   "ead8b461273aa1ee": "2026-10-20T16:13:33.105782+00:00",
   "5b1783d2fe86a85f": "2026-10-20T16:13:33.105782+00:00",
-  "20b4a4dde6169476": "2026-10-20T16:23:33.211824+00:00"
+  "20b4a4dde6169476": "2026-10-20T16:23:33.211824+00:00",
+  "6ed9e9490bf0a863": "2026-10-20T16:28:33.157258+00:00",
+  "e4d97e58830b6b09": "2026-10-20T16:28:33.157258+00:00",
+  "9d5bf18feccbbd02": "2026-10-20T16:28:33.157258+00:00",
+  "2bfeab2ce884de2a": "2026-10-20T16:28:33.157258+00:00",
+  "cdcea22948ea583b": "2026-10-20T16:28:33.157258+00:00"
  },
  "recent": [
   {
@@ -5937,6 +5940,61 @@
    "score": 3,
    "ts": "2026-10-20T16:13:33.105782+00:00",
    "title_ru": "БЮЛЛЕТЕНЬ: Стратегия иностранных банков в Индии: покупайте, а не стройте"
+  },
+  {
+   "title": "Carney Spent Oil Windfall on Tax Write-off, Budget Watchdog Says",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-20/carney-spent-oil-windfall-on-tax-write-off-budget-watchdog-says",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-20T16:28:33.157258+00:00",
+   "title_ru": "Карни потратил непредвиденные нефтяные доходы на списание налогов, сообщает наблюдатель за бюджетом",
+   "lead": "Canada’s budget watchdog says new federal measures, including a major tax incentive for businesses, have more than offset a surge in revenues driven largely by higher energy prices.",
+   "lead_ru": "Служба по надзору за бюджетом Канады заявляет, что новые федеральные меры, в том числе серьезные налоговые льготы для бизнеса, более чем компенсируют рост доходов, вызванный в основном более высокими ценами на энергоносители.",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "Canadian Dollar Hits Nearly One-Month High After Alberta Vote",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-20/canadian-dollar-hits-nearly-one-month-high-after-alberta-vote",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-20T16:28:33.157258+00:00",
+   "title_ru": "Канадский доллар достиг почти месячного максимума после голосования в Альберте",
+   "lead": "The Canadian dollar posted its best day in roughly four weeks and outperformed most of its Group-of-10 peers after voters in the province of Alberta rejected the idea of separating from Canada.",
+   "lead_ru": "Канадский доллар продемонстрировал лучший день примерно за четыре недели и превзошел большинство своих аналогов из «Большой десятки» после того, как избиратели в провинции Альберта отвергли идею отделения от Канады.",
+   "tags": [
+    "dollar"
+   ]
+  },
+  {
+   "title": "Wells Fargo Indicator Flashes Buy Signal After Stock Turbulence",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-20/wells-fargo-indicator-flashes-buy-signal-after-stock-turbulence",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-20T16:28:33.157258+00:00",
+   "title_ru": "Индикатор Wells Fargo мигает сигналом на покупку после турбулентности акций",
+   "lead": "Wells Fargo & Co.’s sentiment indicator is giving a “buy” signal for the first time since June 2025, suggesting that US stocks have fallen to attractive levels after a slide fueled by worries over artificial intelligence and…",
+   "lead_ru": "Индикатор настроений Wells Fargo & Co. подает сигнал «покупать» впервые с июня 2025 года, предполагая, что акции США упали до привлекательных уровней после падения, вызванного опасениями по поводу искусственного интеллекта и…",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "US single-family housing starts plunge; building permits hit 3-1/2-year low",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNY2htS1FUS3p1M0dBYTAxbU9HY1ViSVBFQ1JpU3NERnNQSkVTWFBTS1R4ekZVb0NEajZtM3RwTnlGVi1VZmxQdms4cHVqVGgyVWdvbERHc0ZLdUNvTFRCNVowOFR6OTFmUml2cmtsdzdfRE9sRHdDYnVXS3dtTEFqUmdjZ2tUSlNranZGNklxNzhWcmd0dHdFUElxRlA1cm9JXzcxNzhmeXphenFCUHJz?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-20T16:28:33.157258+00:00",
+   "title_ru": "Жилье на одну семью в США начинает падать; Разрешения на строительство упали до минимума за 3,5 года"
   }
  ],
  "last_digest": "2026-10-19",
