@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "9880f5af8a28129a": "2026-10-17T18:17:11.238883+00:00",
   "51a1255c651c1d05": "2026-10-17T18:27:11.231482+00:00",
   "09d22651ab7c7418": "2026-10-17T18:32:11.231973+00:00",
   "f609188b61929c58": "2026-10-17T19:12:11.221763+00:00",
@@ -672,19 +671,13 @@
   "13bef4e11e302ce5": "2026-10-20T18:03:33.160641+00:00",
   "624389dfa8e47a05": "2026-10-20T18:08:33.128492+00:00",
   "af7766878e9bdf78": "2026-10-20T18:08:33.128492+00:00",
-  "fe3c4bd5e6db63db": "2026-10-20T18:08:33.128492+00:00"
+  "fe3c4bd5e6db63db": "2026-10-20T18:08:33.128492+00:00",
+  "984e65abd01d5bc9": "2026-10-20T18:13:33.132219+00:00",
+  "6f865bc025ebe1cc": "2026-10-20T18:13:33.132219+00:00",
+  "2c7aa3530a64fad6": "2026-10-20T18:18:33.133285+00:00",
+  "75d41932a42395d9": "2026-10-20T18:18:33.133285+00:00"
  },
  "recent": [
-  {
-   "title": "High debt, growing strains put focus on need for new development approaches",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPUEpJSU1GZlU0b2FRWEtPbE5LVndpeGx3RkdYb1NRVHExX243Nms2bzBhSkYySk94WWRaeTRzTlN1cUxqSmd6cVNwUGdWNHdVbGV6aGlOU1N3NXFZNmtRSFMzVS0tMUlrVWJWLWpFUTFETWtzSmlqSEEwWkFsWUFOMnBDLVFadUNVOUpITWhaVDNaaUVSSElJNF8wcE1sNmJuN3VsWXdtekJXNnc5R1E?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-17T18:17:11.238883+00:00",
-   "title_ru": "Высокий долг и растущая напряженность заставляют акцентировать внимание на необходимости новых подходов к развитию."
-  },
   {
    "title": "Tens of thousands march in Lisbon over housing and living costs",
    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOa3NQRHI0VTRqeGpNXzZSN0hkTU1aOTh3M3BKdHBQVGc1b1pGdmRRVWJ4WTdSbnVaNlJXQXNJeklhMEJlYkhocVVwRGtzcjlISk43UW9tU2RYWXNQR09Wd3k4a2xCQm9Ua1Z4bkY2UlI3NFpzMXZKcHNGTy1PdlJBMkV6YTN0Y210eHJWN0xtbVByX0o1RlV6V2lOVQ?oc=5",
@@ -6171,6 +6164,28 @@
    "title_ru": "Google устранил сбой в облаке, затронувший британские банки и веб-сайты",
    "lead": "Revolut was one of the hardest hit, with banking services going down for many customers.",
    "lead_ru": "Revolut пострадала больше всего: банковские услуги для многих клиентов были прекращены."
+  },
+  {
+   "title": "The 60/40 Portfolio Is Caught in an Inflation Trap",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOMzhSN19CUmFYcGY5clFqUXVCVU1ud19Jbk5nNFppSXQ1UzNkaGJVel9XTmVVSTctemtQajhYWHRNY0M0UHJLNW53a3pSSVAtbDA2bWN2RkRmMGRSRzVLRDJrdndhNmpFZndObWMwWGEtczhacXE4cWpGX2hEa2Y0cXpsSjFVM00yQTZ2dXZBdTNsbUtXbk11aW5jZ2ZkS3B3Yjg4?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-20T18:18:33.133285+00:00",
+   "title_ru": "Портфель 60/40 попал в инфляционную ловушку",
+   "tags": [
+    "inflation"
+   ]
+  },
+  {
+   "title": "Here’s what matters most to Tesla investors heading into earnings",
+   "link": "https://www.marketwatch.com/story/heres-what-matters-most-to-tesla-investors-heading-into-earnings-6b9e5d27?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 2,
+   "ts": "2026-10-20T18:18:33.133285+00:00"
   }
  ],
  "last_digest": "2026-10-20",
@@ -8256,6 +8271,22 @@
     "date": "2026-10-19",
     "disclosed": "2026-10-20",
     "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000362/0001510281-26-000362-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "99846fd0c384f125",
+    "ticker": "JOF",
+    "company": "JAPAN SMALLER CAPITALIZATION FUND INC",
+    "who": "Saba Capital Management, L.p.",
+    "role": "10% owner",
+    "type": "buy",
+    "value": 551891,
+    "shares": 46222,
+    "price": 11.94,
+    "plan": false,
+    "date": "2026-10-19",
+    "disclosed": "2026-10-20",
+    "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000363/0001510281-26-000363-index.htm"
    },
    {
     "src": "sec",
@@ -11074,7 +11105,7 @@
   "checked": "2026-10-20T17:28:33.155331+00:00",
   "sec_seen": [
    "0001997961-26-000004",
-   "0001510281-26-000361",
+   "0001510281-26-000363",
    "0001510281-26-000362"
   ],
   "errors": {}
