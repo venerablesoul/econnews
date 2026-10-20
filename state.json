@@ -630,7 +630,10 @@
   "ce82a4445b4aa2d4": "2026-10-20T14:53:33.152976+00:00",
   "06fff7723cb2e68d": "2026-10-20T14:53:33.152976+00:00",
   "80b4e0346d95fbb3": "2026-10-20T14:58:33.125059+00:00",
-  "64bc6b5ef7d464f6": "2026-10-20T15:08:33.121286+00:00"
+  "64bc6b5ef7d464f6": "2026-10-20T15:08:33.121286+00:00",
+  "a12bb675973c101a": "2026-10-20T15:13:33.113862+00:00",
+  "547ee34de6659275": "2026-10-20T15:13:33.113862+00:00",
+  "9a19d71cc37ecf3e": "2026-10-20T15:13:33.113862+00:00"
  },
  "recent": [
   {
@@ -5651,6 +5654,30 @@
    "title_ru": "Опасения в отношении искусственного интеллекта возвращаются, доходы от технологий на палубе",
    "lead": "A rebound in the artificial intelligence trade sputtered after the dismal debut of a South Korean data center firm revived concerns about whether the technology’s spending boom can last.",
    "lead_ru": "Восстановление торговли искусственным интеллектом застопорилось после того, как мрачный дебют южнокорейской фирмы, занимающейся центрами обработки данных, возродил опасения по поводу того, продлится ли бум расходов на технологии."
+  },
+  {
+   "title": "IEA ready to go if further oil stocks release needed, chief says",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPcWJ0WUpzR0w2cnFpS2x1d0dWV1F1SFgwNlpXeEpzcVJhVlhNaGRPQlhtd1BJWVI2ZjhVM3ZFQ2lNdHZmaFVSRENORWdJaW9HNFZRRFFfX0N2NG04N0NfZW56STBCN1FFemdWT1dBVlRQM3pYeDB4WDBCQWhsbXRkNXFNcnFic1JTb0Q5Rjk0V0x4UzZ5dnZDemh3cTJ3eElBWmxiMjV4eHZ5S2RTZG1BWUhR?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-20T15:13:33.113862+00:00",
+   "title_ru": "МЭА готово действовать, если потребуется дальнейшее освобождение запасов нефти, говорит глава",
+   "tags": [
+    "oil",
+    "markets"
+   ]
+  },
+  {
+   "title": "Britain's Conservatives make pre-budget pitch to cut spending and borrowing",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPZ3owZ0UxR1JYNWdKWXBHalZrdjRsUFVVekVkeVFUblFYRm1OUjl6U1VleHJ1ZGV6LV9zdE5lU1BRdzlldi0zNnFTempuWmt5Q0VCMmNFdDdwU0h5NmtqTXVqbUZvV2xhRDR2cFJySGthVzkxYjVpZlBOMEdacW8zM2VlMUFVa0hXLVVlVmY0b1F0RUxjQWc3bGxPWjdMbFVGekxJUV9wbUtoUXVaeGlha0Fn?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-20T15:13:33.113862+00:00",
+   "title_ru": "Британские консерваторы выступили перед бюджетом с предложением сократить расходы и заимствования"
   }
  ],
  "last_digest": "2026-10-19",
@@ -10426,10 +10453,11 @@
   },
   "checked": "2026-10-20T14:13:33.348379+00:00",
   "sec_seen": [
-   "0001957908-26-000003",
    "0001437749-26-032982",
    "0001729897-26-000053",
-   "0001729859-26-000055"
+   "0001729859-26-000055",
+   "0001437749-26-032984",
+   "0001957908-26-000003"
   ],
   "errors": {}
  }
