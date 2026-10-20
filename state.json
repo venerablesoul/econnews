@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "b0585803586becf6": "2026-10-17T12:36:19.240479+00:00",
   "e68f5bbe2fc739a6": "2026-10-17T12:56:19.232854+00:00",
   "4745790aa136225d": "2026-10-17T13:06:19.362127+00:00",
   "0800f7a1f8afe834": "2026-10-17T13:06:19.362127+00:00",
@@ -609,18 +608,13 @@
   "80e8d02b2c1a400e": "2026-10-20T12:13:05.302527+00:00",
   "2935dbceb784bcba": "2026-10-20T12:13:05.302527+00:00",
   "88cba8203b48e3eb": "2026-10-20T12:23:05.343972+00:00",
-  "7858818df6db8491": "2026-10-20T12:23:05.343972+00:00"
+  "7858818df6db8491": "2026-10-20T12:23:05.343972+00:00",
+  "4a22d93052796cb7": "2026-10-20T12:38:05.308326+00:00",
+  "541c8da6096c4120": "2026-10-20T12:38:05.308326+00:00",
+  "19d042aa0fa525f9": "2026-10-20T12:38:05.308326+00:00",
+  "cc6bdf7350c3fd9b": "2026-10-20T12:38:05.308326+00:00"
  },
  "recent": [
-  {
-   "title": "Silver’s recent 50% drop from a record high hints that an economic slowdown looms",
-   "link": "https://www.marketwatch.com/story/silvers-recent-50-drop-from-a-record-high-hints-that-an-economic-slowdown-looms-e9fdfaf1?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-17T12:36:19.240479+00:00"
-  },
   {
    "title": "‘Some people did everything right’: I lost my home in the Great Recession. I rent in my 50s. Why is that judged as failure?",
    "link": "https://www.marketwatch.com/story/i-earn-110-000-a-year-i-lost-my-home-in-the-great-recession-im-renting-in-my-50s-why-is-that-judged-as-failure-d1371d67?mod=mw_rss_topstories",
@@ -5461,6 +5455,28 @@
    "score": 3,
    "ts": "2026-10-20T12:23:05.343972+00:00",
    "title_ru": "Сервисы Google Cloud отключены в Великобритании; банки, проблемы с отчетами государственного сектора"
+  },
+  {
+   "title": "GM Narrows 2026 Profit Forecast, Boosts Share Buyback",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-20/gm-narrows-2026-profit-forecast-boosts-share-buyback-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-20T12:38:05.308326+00:00",
+   "title_ru": "GM сузила прогноз прибыли на 2026 год и увеличила выкуп акций",
+   "lead": "General Motors narrowed its full-year profit forecast amid softening sales, while also announcing it will buy back another $20 billion in stock.",
+   "lead_ru": "General Motors сузила прогноз прибыли на весь год на фоне снижения продаж, а также объявила, что выкупит акции еще на 20 миллиардов долларов."
+  },
+  {
+   "title": "UK's Capita postpones capital markets event to focus on pension scheme contract",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNVW5xNTZVVFoyczE2LU5kSEpUdHJTUzRqNnV0alZ1dS1zdUpsZzRpdEVpbHdvV2R2dzVTRFAwZklsOUdha1ViVC1kS3BMbmxzN0hWV0s5d0FlVkJrd1pwNjRGM2Z5amFmdjh4cGZ4cGlXY2Q4d01sT3p3QTZYa29GWlM5OXBEbmZYdWpwRFNSVFJKTEFGTWZTbzhyTE1JdS1xaHRZMHR3WHBWYWExRWRIX3RNQ2d1TEJNUHVjdEFCdzBMUU0?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-20T12:38:05.308326+00:00",
+   "title_ru": "Британская компания Capita откладывает мероприятие на рынках капитала, чтобы сосредоточиться на контракте по пенсионной схеме"
   }
  ],
  "last_digest": "2026-10-19",
