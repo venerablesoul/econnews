@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "045210accf8b7d96": "2026-10-17T21:42:39.350822+00:00",
   "8e11a0641c63306e": "2026-10-17T22:07:39.393307+00:00",
   "649b18a63c9ada96": "2026-10-17T23:57:39.342578+00:00",
   "4b960f37ad7a270f": "2026-10-18T00:02:39.405189+00:00",
@@ -697,16 +696,6 @@
   "251865a4c388bc77": "2026-10-20T21:34:11.858977+00:00"
  },
  "recent": [
-  {
-   "title": "Couriers and Messengers: NAICS 492",
-   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9KRjhFWHkyWG5XLWdJbXQ3SWRoZExwNXlfcDZYS3piYUNZYUN0cDNpTkdVSnExS0w2Rm9jdk8ySmJuVUFwRVUxOFcxclBqZDQ3TFRwbXNYSFE?oc=5",
-   "sources": [
-    "US Labor Statistics (BLS)"
-   ],
-   "score": 4,
-   "ts": "2026-10-17T21:42:39.350822+00:00",
-   "title_ru": "Курьеры и посланники: NAICS 492."
-  },
   {
    "title": "Niger Halts Diesel, Petrol Exports to Protect Domestic Supply",
    "link": "https://www.bloomberg.com/news/articles/2026-10-17/niger-halts-diesel-petrol-exports-to-protect-domestic-supply",
@@ -8525,6 +8514,22 @@
    },
    {
     "src": "sec",
+    "id": "c0f619a208b74310",
+    "ticker": "CRSP",
+    "company": "CRISPR Therapeutics AG",
+    "who": "Samarth Kulkarni",
+    "role": "CEO",
+    "type": "sell",
+    "value": 2381326,
+    "shares": 47837,
+    "price": 49.78,
+    "plan": false,
+    "date": "2026-10-19",
+    "disclosed": "2026-10-20",
+    "link": "https://www.sec.gov/Archives/edgar/data/1682019/000119312526426878/0001193125-26-426878-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "a2b0810ab37e2b0f",
     "ticker": "SCISX",
     "company": "MA Specialty Credit Income Fund",
@@ -8618,6 +8623,22 @@
     "date": "2026-10-16",
     "disclosed": "2026-10-20",
     "link": "https://www.sec.gov/Archives/edgar/data/1889539/000119312526426865/0001193125-26-426865-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "29680ee10998ca3a",
+    "ticker": "PRCH",
+    "company": "Porch Group, Inc.",
+    "who": "Matthew Neagle",
+    "role": "COO",
+    "type": "sell",
+    "value": 713229,
+    "shares": 40625,
+    "price": 17.56,
+    "plan": true,
+    "date": "2026-10-16",
+    "disclosed": "2026-10-20",
+    "link": "https://www.sec.gov/Archives/edgar/data/1837336/000183733626000048/0001837336-26-000048-index.htm"
    },
    {
     "src": "sec",
@@ -11385,24 +11406,36 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-20T20:39:11.887807+00:00",
+  "checked": "2026-10-20T21:44:12.074641+00:00",
   "sec_seen": [
-   "0001510281-26-000365",
+   "0001859690-26-000194",
+   "0001628280-26-066556",
    "0001866738-26-000003",
+   "0001635088-26-000113",
+   "0001635088-26-000114",
+   "0001225208-26-008479",
+   "0001950180-26-000008",
+   "0001508596-26-000004",
    "0001628280-26-066552",
+   "0001437749-26-033030",
+   "0001828972-26-000154",
    "0001193125-26-426865",
    "0001940272-26-000026",
    "0001628280-26-066546",
+   "0001859690-26-000195",
    "0001612528-26-000002",
    "0001193125-26-426875",
    "0001628280-26-066543",
+   "0001193125-26-426878",
    "0001193125-26-426872",
    "0001950022-26-000008",
    "0001448765-26-000017",
+   "0001837336-26-000048",
    "0002160652-26-000004",
    "0001628280-26-066542",
    "0001628280-26-066539",
-   "0001628280-26-066544"
+   "0001628280-26-066544",
+   "0001536588-26-000043"
   ],
   "errors": {}
  }
