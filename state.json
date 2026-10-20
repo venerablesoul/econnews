@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "5b7dec956b562267": "2026-10-17T11:16:19.215837+00:00",
   "c4ac89f5e419c1c9": "2026-10-17T11:36:19.264569+00:00",
   "229d0ac0338a2ea0": "2026-10-17T11:41:19.234268+00:00",
   "f88c25743af0ad89": "2026-10-17T11:46:19.238513+00:00",
@@ -602,7 +601,8 @@
   "bb26dd982d584b4c": "2026-10-20T10:58:05.248123+00:00",
   "186aca63eb99aa5f": "2026-10-20T11:03:05.449056+00:00",
   "ab0ca80cab0010f9": "2026-10-20T11:03:05.449056+00:00",
-  "c18ab572c871c7a5": "2026-10-20T11:13:05.257438+00:00"
+  "c18ab572c871c7a5": "2026-10-20T11:13:05.257438+00:00",
+  "76a9b4fc804e9c8e": "2026-10-20T11:18:05.263608+00:00"
  },
  "recent": [
   {
@@ -5279,6 +5279,22 @@
    "title_ru": "Распродажа долга CoreWeave представляет ограниченный риск для глобальных банков, говорит J.P. Morgan",
    "tags": [
     "markets"
+   ]
+  },
+  {
+   "title": "Senegal Eurobonds Fall as Budget Standoff Puts IMF Deal at Risk",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-20/senegal-eurobonds-fall-as-budget-standoff-puts-imf-deal-at-risk",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-20T11:18:05.263608+00:00",
+   "title_ru": "Еврооблигации Сенегала падают, поскольку бюджетное противостояние ставит под угрозу сделку МВФ",
+   "lead": "Senegal’s dollar bonds weakened after opposition leader Ousmane Sonko threatened to block a revised budget for this year and 2027 spending plan, raising concern this could complicate its debt restructuring and delay a new…",
+   "lead_ru": "Долларовые облигации Сенегала ослабли после того, как лидер оппозиции Усман Сонко пригрозил заблокировать пересмотренный бюджет на этот год и план расходов на 2027 год, вызвав опасения, что это может осложнить реструктуризацию долга и задержать новый…",
+   "tags": [
+    "dollar",
+    "bonds"
    ]
   }
  ],
