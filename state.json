@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "f2d5f53c6ac1f4c8": "2026-10-17T12:11:19.218371+00:00",
-  "f321e6cb9ba5593a": "2026-10-17T12:11:19.218371+00:00",
   "4b037303f2f9ce23": "2026-10-17T12:26:19.306666+00:00",
   "401f60ccf83b2eeb": "2026-10-17T12:26:19.306666+00:00",
   "3fd0b89b45bb6d9f": "2026-10-17T12:26:19.306666+00:00",
@@ -611,31 +609,12 @@
   "ea0eead0a6bebc09": "2026-10-20T11:58:05.363616+00:00",
   "0c0d0f69071c221b": "2026-10-20T12:08:05.293801+00:00",
   "f8ee8101040d7174": "2026-10-20T12:08:05.293801+00:00",
-  "d4236bb6e792679b": "2026-10-20T12:08:05.293801+00:00"
+  "d4236bb6e792679b": "2026-10-20T12:08:05.293801+00:00",
+  "0bd07a7bc5a0604b": "2026-10-20T12:13:05.302527+00:00",
+  "80e8d02b2c1a400e": "2026-10-20T12:13:05.302527+00:00",
+  "2935dbceb784bcba": "2026-10-20T12:13:05.302527+00:00"
  },
  "recent": [
-  {
-   "title": "US Interest Costs Hit Record $1 Trillion, Risking Debt Snowball",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-17/us-interest-costs-hit-record-1-trillion-risking-debt-snowball",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-17T12:11:19.218371+00:00",
-   "title_ru": "Процентные расходы в США достигли рекордного уровня в 1 триллион $, рискуя долговым снежным комом",
-   "lead": "The US government’s debt interest burden reached a record high for fiscal 2026, eating up a growing share of federal revenue and risking a snowballing of borrowing that could leave the country more vulnerable to economic shocks.",
-   "lead_ru": "Долговое процентное бремя правительства США достигло рекордного уровня в 2026 финансовом году, съедая растущую долю федеральных доходов и рискуя снегом заимствований, который может сделать страну более уязвимой к экономическим потрясениям."
-  },
-  {
-   "title": "German minister seeks debt-brake exemption to sustain Ukraine aid",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNNzgyQjREYTJZX3VWNTU2MWE0Y1YzRFZHTi1hb2pxVWFRV1lqd05fZVdKZXZsT1pCckMtOWJKaGxEM2dDOVVBQnVhVEdtaDBEZXRpTWx1ZFhVbDZqYzh0X1hpbWI0LUNvMlk1WHJCbGFtbzZDZFhmUTJlUXFUblJIYzhXenJFTUlTelYzTFpfNVUxVkFocHRLWjlDelJnUWFIWEkzQkMtZw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-17T12:11:19.218371+00:00",
-   "title_ru": "Немецкий министр ищет освобождение от долгового тормоза для поддержания помощи Украине"
-  },
   {
    "title": "Charting the Global Economy: Inflationary Pressures Mount in US",
    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQeXl4SUV1NTFjOWVMZnRWUndTS1puajhGQ2cwZ21jcndqS2FPTmVBSC1Fbkc3ZjlYZDBLNlZPdUUyNEF1aWZVNlNIanJGRlNaX1lka1FDcXJTa0p6aEo1TDdxbEUzZTZDUmpZRVZYTWRjcmNGel9aZnRpaFlkSllCZ3RnWlN1X0dYeFVuZEJZRVExbVdhVWEyYVFKV09jN1htYXdiV21YcGhoUQ?oc=5",
@@ -5439,6 +5418,49 @@
    "tags": [
     "bonds"
    ]
+  },
+  {
+   "title": "GM shares sink as full-year profit forecast misses Wall Street estimates",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPRnpBNEpFcnF0SnZqa1ZfTHM3VnJuQWc4SE5CSWpNQXNMWV85ZmRTNHBzeUdsNmdKTklmTjZxSVZQVFp1VDZFTnBiLXhmSFE3OFlVNVVLSUludTdNSFhQV3ppc2RSY2ZFNFVmQnJPcG5NVDh3cm5XTlVxYzQ2b2MzRXRTTUVUSXV4SGxydGlIdVh6NTQ0dlBqMjhXa3RCNmJHbkhtVXZqd29jR29OLUVtUHRMQUFNTGJKMEMwRzlR?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-20T12:13:05.302527+00:00",
+   "title_ru": "Акции GM падают, поскольку прогноз прибыли за весь год не соответствует оценкам Уолл-стрит",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "European Gas Prices Rise Above €90 for First Time Since 2022",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-20/european-gas-prices-rise-above-90-for-first-time-since-2022",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-20T12:13:05.302527+00:00",
+   "title_ru": "Цены на газ в Европе поднялись выше 90 евро впервые с 2022 года",
+   "lead": "European natural gas climbed above €90 for the first time in almost four years, raising the threat of a renewed energy crunch as Europe heads into the peak winter heating season.",
+   "lead_ru": "Европейский природный газ поднялся выше 90 евро впервые за почти четыре года, что повышает угрозу возобновления энергетического кризиса, поскольку Европа приближается к пику зимнего отопительного сезона.",
+   "tags": [
+    "gas"
+   ]
+  },
+  {
+   "title": "AI Fears Return With Data Center IPO Flop; SpaceX, Netflix Earnings",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-20/bloomberg-brief-10-20-2026-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-20T12:13:05.302527+00:00",
+   "title_ru": "Искусственный интеллект опасается возвращения из-за провала IPO дата-центра; SpaceX, доходы Netflix",
+   "lead": "US equity futures slip, pausing an AI recovery in stocks, after South Korean data center company Elice plunged in its trading debut.",
+   "lead_ru": "Фьючерсы на американские акции падают, приостанавливая восстановление ИИ в акциях после того, как южнокорейская компания центров обработки данных Elice резко упала на своем торговом дебюте.",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-19",
@@ -10164,7 +10186,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-20T11:08:05.310935+00:00",
+  "checked": "2026-10-20T12:13:05.302527+00:00",
   "sec_seen": [
    "0000874015-26-000266",
    "0001060391-26-000314",
