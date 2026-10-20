@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "60848b33594e12bb": "2026-10-17T13:46:19.327716+00:00",
   "2d0f0fe5369f13c5": "2026-10-17T13:51:19.219189+00:00",
   "07fe650e86daac8e": "2026-10-17T14:11:19.245411+00:00",
   "abec4b811f51a61e": "2026-10-17T14:11:19.245411+00:00",
@@ -621,22 +620,10 @@
   "d2ca85c8c3c1f191": "2026-10-20T13:38:33.054427+00:00",
   "85c4377a974e399a": "2026-10-20T13:38:33.054427+00:00",
   "e6a2b9523e37a4a5": "2026-10-20T13:43:33.148635+00:00",
-  "b47da59dd4b2bda1": "2026-10-20T13:43:33.148635+00:00"
+  "b47da59dd4b2bda1": "2026-10-20T13:43:33.148635+00:00",
+  "f339285d77cd5d6a": "2026-10-20T13:48:33.092465+00:00"
  },
  "recent": [
-  {
-   "title": "China central bank chief supports closer IMF surveillance of fiscal, spillover risks",
-   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQcDlkTV9ZX1VzWXpSMnpIYkZiNkNJdVNxVVU4WldvNHIwMzJVZGRXWlljY1RqVnliUzZNQk0wRzhCYnhrbXF4ci1uLVJUcTJDQWFNdWFvWkdMaXhpdFNaYUZZcmY1cXpXeWJhVHU4MHlBYWFiSTk3OEdNTjFiSTNRQUNwbGxZNDdwRTJFbDJSdW8wMHZHV0QtaUNTVVNFUUI4U2JXQ3VNSFNJaDVGcklDZldnV1dIYldtX1doZHhoa0c5VFVtYlE0U0o0OUxSdw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-17T13:46:19.327716+00:00",
-   "title_ru": "Глава центрального банка Китая поддерживает более строгий надзор МВФ за бюджетными и вторичными рисками",
-   "tags": [
-    "China"
-   ]
-  },
   {
    "title": "Bank of Canada Sees Higher Oil Prices Boosting Growth, Inflation",
    "link": "https://www.bloomberg.com/news/articles/2026-10-17/bank-of-canada-sees-higher-oil-prices-boosting-growth-inflation",
@@ -5563,6 +5550,21 @@
    "tags": [
     "gas"
    ]
+  },
+  {
+   "title": "Stocks Slip as AI Infrastructure IPO Flops, SpaceX Results Loom",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-20/us-futures-slip-as-neocloud-ipo-elice-flops-spacex-results-loom",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-20T13:48:33.092465+00:00",
+   "title_ru": "Акции падают из-за провала IPO инфраструктуры искусственного интеллекта и ожидаемых результатов SpaceX",
+   "lead": "The tech-heavy Nasdaq 100 Index opened lower on Tuesday, as South Korean neocloud company Elice Inc.’s debut tanked, spurring concern about the sustainability of the global AI boom.",
+   "lead_ru": "Технологичный индекс Nasdaq 100 открылся снижением во вторник, поскольку дебют южнокорейской неооблачной компании Elice Inc. провалился, что вызвало обеспокоенность по поводу устойчивости глобального бума искусственного интеллекта.",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-19",
@@ -10294,15 +10296,13 @@
    "0001502685-26-000003",
    "0001493152-26-047696",
    "0001635164-26-000004",
-   "0001513845-26-000134",
-   "0001104659-26-117064",
    "0001239441-26-000006",
-   "0001104659-26-117067",
    "0002006087-26-000002",
    "0000006955-26-000073",
    "0001193805-26-001382",
    "0001952769-26-000003",
    "0001193125-26-425864",
+   "0001832319-26-000002",
    "0001202992-26-000003",
    "0001834227-26-000004",
    "0000006955-26-000075",
@@ -10312,10 +10312,7 @@
    "0000842517-26-000229",
    "0001343811-26-000003",
    "0001708823-26-000009",
-   "0002069480-26-000006",
-   "0001193125-26-425873",
-   "0001104659-26-117071",
-   "0001832319-26-000002"
+   "0001193125-26-425873"
   ],
   "errors": {}
  }
