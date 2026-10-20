@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "8bc376bdd5f35934": "2026-10-17T08:50:51.268888+00:00",
   "25d44e820eec59a0": "2026-10-17T08:55:51.306760+00:00",
   "e1f9fc13c592e5b3": "2026-10-17T09:05:51.251845+00:00",
   "a2447d51573d1aad": "2026-10-17T09:10:51.308558+00:00",
@@ -590,19 +589,11 @@
   "dbbec1043aaa3949": "2026-10-20T08:38:05.234571+00:00",
   "de098af981109393": "2026-10-20T08:38:05.234571+00:00",
   "26bb927e4cb7d331": "2026-10-20T08:38:05.234571+00:00",
-  "f936345d5c0e5d16": "2026-10-20T08:48:05.226593+00:00"
+  "f936345d5c0e5d16": "2026-10-20T08:48:05.226593+00:00",
+  "33987c8e8c016c71": "2026-10-20T08:53:05.227138+00:00",
+  "42e07232ee94d5b7": "2026-10-20T08:53:05.227138+00:00"
  },
  "recent": [
-  {
-   "title": "Major development banks step up support for critical minerals value chains",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPc3h2ZF9YVG81ZVh6OXlpVnhDWEdKMVJGMDZjZGkzM2ZGRml0bHZHdjN3UkFQRGRzWWp0SlA1eks2TnR0LUw4SEpDTE1TR180Z0EwVDhYb0N0U1pBSWpUNHdEVDlYc05LNDF3Rk9OeVBXTDJOMmNmcnpyTUhyeHZ2QXFJZHQwbk9xVlNUMnlxUkV4Q2ZNRnNrRmd0V1JHQU9jOGJTZWlXY1did0d3TUZKMTRlNEhjOGY0WVFpSmpBeHhjNHM?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-17T08:50:51.268888+00:00",
-   "title_ru": "Крупнейшие банки развития усиливают поддержку цепочек создания стоимости важнейших полезных ископаемых"
-  },
   {
    "title": "Greenpeace activists occupy Woodside gas project unit off Western Australia",
    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQeGM2Q0Nob2NpUjJsLW5HWGR6WDhyNGFDSUFRZ2dnVEpGbFpfY1lfcTdYbzRfLVZOT19DNTZ2a1ZXS21Ic1JPV2VVM1JoNmlJOXVJbE9qQVBmaUgwSHRNVzl5UFRfOW5WMEtJLW9Ncl9wRUstblp6ZXExVUg2OURsSE10Um1FU1RpbGh5aEdUTFdwUmYwZ1A5TURpdE5qRzZ2dGdsTXF3U0x2dDBWRHM0RmFTcVFIQ3ZVdTh2UHpaQUNzVUNrYUE?oc=5",
@@ -5132,6 +5123,35 @@
    "title_ru": "Безработица в Великобритании снижается раньше бюджета Хили (видео)",
    "tags": [
     "jobs"
+   ]
+  },
+  {
+   "title": "US Sanctions China’s Y Combinator in Google AI Secrets Case",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNSWpoclBQZGh5ZzFZX25ESkYzTy1JV1dTQXhFUkhsODdZZ1VUOUlFaDFjaDBkYlRIeUZEQzJoOXZyTmFkeFNxNkxKQ1l3QmFRRlhkQWM0WnlLOXdySUlwX0t5UHNXZjFzUHhfOWZoam1CWmNjdXNnQ1pMUnZFYUxCenVfd3l4SjNsM1lfTG1jdXkzRkFfdnpSdjVpSk51UnFsQmZMM0xCZmJIcWlPMjMw?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-20T08:53:05.227138+00:00",
+   "title_ru": "США ввели санкции против китайского Y Combinator по делу о секретах искусственного интеллекта Google",
+   "tags": [
+    "China",
+    "sanctions"
+   ]
+  },
+  {
+   "title": "Bank Indonesia Rate-Hike Bets Rise as MSCI Shock Tests Rupiah",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-20/bank-indonesia-rate-hike-bets-rise-as-msci-shock-tests-rupiah",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-20T08:53:05.227138+00:00",
+   "title_ru": "Ставки Банка Индонезии на повышение ставок растут, поскольку MSCI подвергает рупию шоковым испытаниям",
+   "lead": "Bank Indonesia’s reluctance to raise interest rates faces a fresh test Wednesday, with bets on a hike increasing as the threat of a double downgrade to the nation’s stock market fuels capital outflows and piles pressure on the…",
+   "lead_ru": "Нежелание Банка Индонезии повышать процентные ставки сталкивается с новым испытанием в среду: ставки на повышение растут, поскольку угроза двойного понижения процентных ставок на фондовом рынке страны усиливает отток капитала и усиливает давление на…",
+   "tags": [
+    "rates"
    ]
   }
  ],
@@ -9831,8 +9851,8 @@
    "0001060391-26-000290",
    "0000874015-26-000266",
    "0001060391-26-000300",
-   "0001060391-26-000314",
    "0001193125-26-425520",
+   "0001060391-26-000314",
    "0001079973-26-001373",
    "0001193125-26-425511",
    "0001872303-26-000013",
@@ -9846,7 +9866,7 @@
    "0001823952-26-000024",
    "0001778564-26-000187",
    "0001696555-26-000012",
-   "0001140361-26-040135",
+   "0001060391-26-000304",
    "0001873011-26-000010",
    "0001060391-26-000318",
    "0001976718-26-000013",
@@ -9867,7 +9887,7 @@
    "0000950142-26-002791",
    "0002013950-26-000003",
    "0000874015-26-000267",
-   "0001060391-26-000304",
+   "0001140361-26-040135",
    "0001060391-26-000320"
   ],
   "errors": {}
