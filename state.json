@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "db7a0ba32507d144": "2026-10-17T03:55:51.264247+00:00",
   "2d7aa1e24aa29815": "2026-10-17T04:30:51.318768+00:00",
   "787d06c65faf6594": "2026-10-17T04:40:51.252666+00:00",
   "378dacc916a5dc97": "2026-10-17T04:40:51.252666+00:00",
@@ -550,24 +549,14 @@
   "8ebd3dbd34175690": "2026-10-20T03:16:52.458801+00:00",
   "87f4287a7fec6638": "2026-10-20T03:21:52.438460+00:00",
   "284978cf3224a104": "2026-10-20T03:46:52.419478+00:00",
-  "973a224a2745c978": "2026-10-20T03:51:55.205467+00:00"
+  "973a224a2745c978": "2026-10-20T03:51:55.205467+00:00",
+  "2bc1cf592e278a36": "2026-10-20T03:56:52.844077+00:00",
+  "f7a1ad1b5ffe4649": "2026-10-20T04:01:52.747446+00:00",
+  "09652792ea4b5505": "2026-10-20T04:01:52.747446+00:00",
+  "94fd1a9223ad4682": "2026-10-20T04:01:52.747446+00:00",
+  "2e3a780a4015f585": "2026-10-20T04:01:52.747446+00:00"
  },
  "recent": [
-  {
-   "title": "Vietnam Prime Minister Targets 2027 GDP Growth of at Least 10%",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-17/vietnam-prime-minister-targets-2027-gdp-growth-of-at-least-10",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-17T03:55:51.264247+00:00",
-   "title_ru": "Премьер-министр Вьетнама планирует рост ВВП в 2027 году как минимум на 10%",
-   "lead": "Vietnam’s Prime Minister Le Minh Hung projected gross domestic product will expand at least 10% next year as he outlined the nation’s economic targets in a speech to parliament.",
-   "lead_ru": "Премьер-министр Вьетнама Ле Минь Хунг прогнозировал, что валовой внутренний продукт вырастет как минимум на 10% в следующем году, когда он изложил экономические цели страны в своем выступлении перед парламентом.",
-   "tags": [
-    "GDP"
-   ]
-  },
   {
    "title": "BOJ may need to tighten faster if inflation beats forecast, IMF says",
    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPdWdXNFVpZFpPVGFROEVHcjFiWGdDU1BQdDlMaTJOLWllcnNNazRiSEx4M0RjZUthU09iQzQ1YTNxckczM0dWYVR0LTJwSFpEU1pzV0EzM0x5X3AzaDJVLTM2VmU1cVZnLUQ1Y1FITGE0aXNZa0N0R2ppMGt3TWUybG15QUZlY2dteFFUemdEbU51M0pIMC05MDQ0X253QXp4bEFOZjJfcW1JaUVkb05KbE1PczdQUTNlcVZR?oc=5",
@@ -4622,6 +4611,61 @@
    "score": 3,
    "ts": "2026-10-20T03:51:55.205467+00:00",
    "title_ru": "Honeywell Aerospace ожидает роста деловой авиации за счет увеличения использования самолетов"
+  },
+  {
+   "title": "IMF's Mills on China Policy Stimulus",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-20/imf-s-mills-on-china-policy-stimulus-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-20T04:01:52.747446+00:00",
+   "title_ru": "Миллс МВФ о стимулировании политики Китая",
+   "lead": "Marshall Mills, the IMF's Senior Resident Representative for China, says the country needs more \"urgent and forceful\" measures to boost the property and consumption sectors.",
+   "lead_ru": "Маршалл Миллс, старший постоянный представитель МВФ в Китае, говорит, что стране необходимы более «срочные и решительные» меры для стимулирования секторов недвижимости и потребления.",
+   "tags": [
+    "China"
+   ]
+  },
+  {
+   "title": "More China Stimulus Needed Despite Easing: Polka Mishra",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-20/more-china-stimulus-needed-despite-easing-polka-mishra-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-20T04:01:52.747446+00:00",
+   "title_ru": "Несмотря на смягчение политики, Китаю необходимо больше стимулов: Полька Мишра",
+   "lead": "The People's Bank of China could effectively cut rates by shifting its policy benchmark from the seven-day reverse-repo rate to the overnight rate.",
+   "lead_ru": "Народный банк Китая мог бы эффективно снизить ставки, переместив ориентир своей политики с семидневной ставки обратного РЕПО на ставку овернайт.",
+   "tags": [
+    "China"
+   ]
+  },
+  {
+   "title": "CF40 Institute’s Guo on China’s Economy",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-20/cf40-institute-s-guo-on-china-s-economy-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-20T04:01:52.747446+00:00",
+   "title_ru": "Го из Института CF40 об экономике Китая",
+   "lead": "Guo Kai, former PBOC official and president of the CF40 Institute, says China’s policy stimulus is sufficient to achieve this year’s growth target. He speaks with Stephen Engle on the sidelines of the Bund Summit in Shanghai.",
+   "lead_ru": "Го Кай, бывший чиновник НБК и президент Института CF40, говорит, что политических стимулов Китая достаточно для достижения цели роста в этом году. Он беседует со Стивеном Энглом в кулуарах саммита Бунда в Шанхае.",
+   "tags": [
+    "China"
+   ]
+  },
+  {
+   "title": "Alberta Regulator Seized Gas Wells on Army Base Before Fire",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOdGV5bzRKTGhMX1FOX0RzUExwb3BMQ0c2eEFBQ0U4ejBFWXZFSmpyQld4ZnhHVENTenhGaHZOYnExSmEtMkNrOEhOXzFuQmpTSzl1dkpfVXZvVnpfdWdGbjFCLU5qM3pvZGxiMlhZMXVJZGtBeWdNUHJrcUlIaUNCOVhwSVhodnBFclFpRjNTWTVyd0tCUHVHT2g5dzdqZTFqdEQyWVRMNy1vcEVBa3FNTDdBQnhnZw?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-20T04:01:52.747446+00:00",
+   "title_ru": "Регулятор Альберты конфисковал газовые скважины на военной базе перед пожаром"
   }
  ],
  "last_digest": "2026-10-19",
