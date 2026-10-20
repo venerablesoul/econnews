@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "b3cab51499395c91": "2026-10-17T04:55:51.324117+00:00",
   "e545c030814a8792": "2026-10-17T05:05:51.309121+00:00",
   "f924252e90b6332a": "2026-10-17T05:40:51.285378+00:00",
   "2d1597eea2d60755": "2026-10-17T06:05:51.266188+00:00",
@@ -559,22 +558,10 @@
   "91c985ed73208d3f": "2026-10-20T04:31:52.409837+00:00",
   "5b86952384a554fa": "2026-10-20T04:31:52.409837+00:00",
   "4b32bcfbcbc75545": "2026-10-20T04:31:52.409837+00:00",
-  "4a3ad356b70c0fa4": "2026-10-20T04:36:52.898191+00:00"
+  "4a3ad356b70c0fa4": "2026-10-20T04:36:52.898191+00:00",
+  "ee380233c2f15c86": "2026-10-20T04:56:52.581163+00:00"
  },
  "recent": [
-  {
-   "title": "BOJ may need to tighten faster if inflation beats forecast, IMF says",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPdWdXNFVpZFpPVGFROEVHcjFiWGdDU1BQdDlMaTJOLWllcnNNazRiSEx4M0RjZUthU09iQzQ1YTNxckczM0dWYVR0LTJwSFpEU1pzV0EzM0x5X3AzaDJVLTM2VmU1cVZnLUQ1Y1FITGE0aXNZa0N0R2ppMGt3TWUybG15QUZlY2dteFFUemdEbU51M0pIMC05MDQ0X253QXp4bEFOZjJfcW1JaUVkb05KbE1PczdQUTNlcVZR?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 8,
-   "ts": "2026-10-17T04:55:51.324117+00:00",
-   "title_ru": "Банку Японии, возможно, придется ужесточать политику быстрее, если инфляция превысит прогноз, говорит МВФ",
-   "tags": [
-    "inflation"
-   ]
-  },
   {
    "title": "Christine Lagarde: IMFC Statement",
    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261017~7015ea3099.en.html",
@@ -4739,6 +4726,21 @@
    "tags": [
     "China",
     "GDP"
+   ]
+  },
+  {
+   "title": "Polish Policymaker Flags Zloty Weakness Among Rate Hike Triggers",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-20/polish-policymaker-flags-zloty-weakness-among-rate-hike-triggers",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 7,
+   "ts": "2026-10-20T04:56:52.581163+00:00",
+   "title_ru": "Польский политик назвал слабость злотого одним из факторов повышения ставок",
+   "lead": "Further weakening of the zloty is among the factors that could tip Polish policymakers to raise interest rates, a Monetary Policy Council member said.",
+   "lead_ru": "Дальнейшее ослабление злотого является одним из факторов, которые могут побудить польских политиков повысить процентные ставки, сказал член Совета по денежно-кредитной политике.",
+   "tags": [
+    "rates"
    ]
   }
  ],
@@ -9432,7 +9434,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-20T03:51:55.205467+00:00",
+  "checked": "2026-10-20T04:56:52.581163+00:00",
   "sec_seen": [
    "0001060391-26-000316",
    "0001140361-26-040135",
@@ -9446,9 +9448,10 @@
    "0001060391-26-000298",
    "0001493152-26-047657",
    "0001999371-26-023092",
-   "0001060391-26-000302",
    "0000874015-26-000266",
+   "0001060391-26-000302",
    "0001060391-26-000320",
+   "0000950142-26-002791",
    "0000950142-26-002790",
    "0001060391-26-000312",
    "0001060391-26-000318",
@@ -9456,7 +9459,6 @@
    "0001060391-26-000304",
    "0001060391-26-000296",
    "0001976718-26-000013",
-   "0001104659-26-117008",
    "0001060391-26-000308",
    "0001872303-26-000013",
    "0001060391-26-000310",
@@ -9474,7 +9476,7 @@
    "0001060391-26-000294",
    "0000897069-26-001859",
    "0001060391-26-000292",
-   "0000950142-26-002791"
+   "0001104659-26-117008"
   ],
   "errors": {}
  }
