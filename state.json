@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "f88c25743af0ad89": "2026-10-17T11:46:19.238513+00:00",
   "c188048fda85b2ce": "2026-10-17T11:56:19.289776+00:00",
   "1b8948e46756c1f9": "2026-10-17T12:06:19.226150+00:00",
   "f2d5f53c6ac1f4c8": "2026-10-17T12:11:19.218371+00:00",
@@ -604,7 +603,10 @@
   "7ec911f2c4a4bb36": "2026-10-20T11:23:05.281124+00:00",
   "85fe50d3382a5857": "2026-10-20T11:28:05.303091+00:00",
   "25e2ee2e44f0db02": "2026-10-20T11:33:05.281855+00:00",
-  "eb3ab987591f9b71": "2026-10-20T11:33:05.281855+00:00"
+  "eb3ab987591f9b71": "2026-10-20T11:33:05.281855+00:00",
+  "fc4ae6880bb5edfc": "2026-10-20T11:48:05.262171+00:00",
+  "bfb97052a3e8dafb": "2026-10-20T11:48:05.262171+00:00",
+  "5bc93ea1c94dbff9": "2026-10-20T11:48:05.262171+00:00"
  },
  "recent": [
   {
@@ -5332,6 +5334,49 @@
    ],
    "score": 1,
    "ts": "2026-10-20T11:33:05.281855+00:00"
+  },
+  {
+   "title": "US Heading for a Slowdown, Not a Recession, Says Crossmark’s Fernandez",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-20/us-heading-for-a-slowdown-not-a-recession-crossmark-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-20T11:48:05.262171+00:00",
+   "title_ru": "США движутся к замедлению, а не к рецессии, говорит Фернандес из Crossmark",
+   "lead": "Victoria Fernandez, chief market strategist at Crossmark Global Investments, explains the factors she sees pointing to a slowdown in the US economy and markets. She speaks on “Bloomberg Surveillance.” (Source: Bloomberg)",
+   "lead_ru": "Виктория Фернандес, главный рыночный стратег Crossmark Global Investments, объясняет факторы, которые, по ее мнению, указывают на замедление экономики и рынков США. Она рассказывает о «Наблюдении Bloomberg». (Источник: Блумберг)",
+   "tags": [
+    "GDP"
+   ]
+  },
+  {
+   "title": "Halliburton Sees Multi-Year Demand Growth From Energy Disruption",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-20/halliburton-sees-multi-year-demand-growth-from-energy-disruption",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-20T11:48:05.262171+00:00",
+   "title_ru": "Halliburton ожидает многолетнего роста спроса из-за перебоев в энергетике",
+   "lead": "Halliburton Co. is predicting years of growing demand for oil field services as nations in the Middle East rebuild energy assets and infrastructure damaged in the Iran war.",
+   "lead_ru": "Компания Halliburton прогнозирует годы растущего спроса на нефтесервисные услуги, поскольку страны Ближнего Востока восстанавливают энергетические активы и инфраструктуру, поврежденные в войне с Ираном.",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "EXCLUSIVE: Qualcomm to cut jobs worldwide in performance-focused layoffs, internal memo shows",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNUndSd0N2Um9RWGtEUDU1MHBGUm1LU3RkT2RpRFVDbVNzRHdNTGVGYnk1MU1pSUFCQklWMnZERzc0bEJ0VDVUWUp5N3JHV3M0eVFMaGRFOEdwcjU0WlUxOG55enFWb09Id3AySlhLenVTT0k4Zk51WUhuQ05oVlBSWmg3d3NmLTFzOVBJTHVsc3RSN21WaGdwYjNCa19RSTRGWUhIXzQ1a25mSDhxQ0JwdzNJRUZiaHdXZTREOQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-20T11:48:05.262171+00:00",
+   "title_ru": "ЭКСКЛЮЗИВ: Qualcomm сократит рабочие места по всему миру из-за увольнений, ориентированных на производительность, показывают внутренние памятки",
+   "tags": [
+    "jobs"
+   ]
   }
  ],
  "last_digest": "2026-10-19",
