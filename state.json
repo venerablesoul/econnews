@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "7573c5257a0af532": "2026-10-17T17:37:11.189508+00:00",
   "b20a095ce78bf965": "2026-10-17T17:57:11.195971+00:00",
   "d61a93a3e173f2d0": "2026-10-17T17:57:11.195971+00:00",
   "9880f5af8a28129a": "2026-10-17T18:17:11.238883+00:00",
@@ -659,7 +658,9 @@
   "9bbd92d3ccb00df6": "2026-10-20T17:18:33.189434+00:00",
   "0692dfbe9f41b8e1": "2026-10-20T17:23:33.138010+00:00",
   "11b3b863927e621f": "2026-10-20T17:28:33.155331+00:00",
-  "e526d7b1b95388ae": "2026-10-20T17:33:33.100076+00:00"
+  "e526d7b1b95388ae": "2026-10-20T17:33:33.100076+00:00",
+  "6aa317ba0d052c0e": "2026-10-20T17:38:33.138530+00:00",
+  "bbdcb3b673158cee": "2026-10-20T17:38:33.138530+00:00"
  },
  "recent": [
   {
@@ -6071,6 +6072,16 @@
    "tags": [
     "tariffs"
    ]
+  },
+  {
+   "title": "US senior housing operator Discovery Senior Living explores sale, sources say",
+   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOSjRMYl8tcWpPNU84eGJXOGRRRHVLbXBVTXlFNElyaUNval82WXhPRDhjWGd3N01XQi1fVjN1dFREZVNpaEhSQlREejJqN0lYNDI5QmtMUHdjS2ctWVN4dTVHSkxkQ2dydnBfUDBVVTZscnZBdWpMWm1oLTNvYko0bzN1cWFWOWg1R1V3Wk51dHlZRGZNT1NteWZCVnFoLTRKQnk2ajlOTUJFVUlmdnNsNDFkcHc1cndURjRPbWJFVVpBVXJaQXdYdzc2RVk?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-20T17:38:33.138530+00:00",
+   "title_ru": "Американский оператор жилья для пожилых людей Discovery Senior Living рассматривает возможность продажи, сообщают источники"
   }
  ],
  "last_digest": "2026-10-19",
@@ -10940,8 +10951,6 @@
   },
   "checked": "2026-10-20T17:28:33.155331+00:00",
   "sec_seen": [
-   "0000006955-26-000081",
-   "0001193125-26-426167",
    "0001401612-26-000005",
    "0001510281-26-000360",
    "0001193125-26-426178",
