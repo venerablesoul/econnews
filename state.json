@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "167ee50172592cd6": "2026-10-17T03:05:25.260654+00:00",
-  "aa7002d9106b7d7e": "2026-10-17T03:05:25.260654+00:00",
   "a54c0ee303a5abcd": "2026-10-17T03:35:25.190341+00:00",
   "bace0ae3d38c6d6f": "2026-10-17T03:35:25.190341+00:00",
   "ca70c5ce9230fe1a": "2026-10-17T03:50:53.616400+00:00",
@@ -550,28 +548,11 @@
   "81eaf78513b20589": "2026-10-20T02:36:05.153012+00:00",
   "8e59e41d778062ab": "2026-10-20T02:41:52.466419+00:00",
   "be4bda884802e5e2": "2026-10-20T02:46:52.426363+00:00",
-  "907e7af65c45dedc": "2026-10-20T02:51:52.418350+00:00"
+  "907e7af65c45dedc": "2026-10-20T02:51:52.418350+00:00",
+  "d22aa2d31a4a5594": "2026-10-20T03:06:52.437952+00:00",
+  "4a7d354ba3e5b316": "2026-10-20T03:06:52.437952+00:00"
  },
  "recent": [
-  {
-   "title": "Nvidia CEO on AI Market Turmoil: ‘All of This Is Going to Pass’",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPUnVUc280UUFsc3NKaDM5VU5Bbng3WXA4bGhETWY4RE1NVTY5Yk5qVmhsN2VFdHE2M1pIUTRrTTk3QjZsYUMxWTQ3QmRacGhiUzdMM1VwQnh3c0c0Tk5zandkMjhhdnUxb0tMZzZDc3dIOUZhT2ZGSlRnVG5qdGp2RUplaWFxU1NiSXZGZHhBZTZjekdLSU1WZUhvZXMzUzd4YXRmMS0yYnNkTkp1cndfNQ?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-17T03:05:25.260654+00:00",
-   "title_ru": "Генеральный директор Nvidia о потрясениях на рынке искусственного интеллекта: «Все это пройдет»"
-  },
-  {
-   "title": "Как между зарплатой и производительностью растет разрыв. Инфографика",
-   "link": "https://www.rbc.ru/economics/17/10/2026/6ac8d3879a7947860b7e3327",
-   "sources": [
-    "RBC"
-   ],
-   "score": 1,
-   "ts": "2026-10-17T03:05:25.260654+00:00"
-  },
   {
    "title": "Regional Economic Outlook: Asia and Pacific, October 2026",
    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPX3BTVERWZUthUF9wQ09TY3IzMnpQRHdwdWQtSHEtbnR3TWdFQUVRaHY0MmNiSEVuSDU1dG9EQTFTVjVvNmtwMENhR2VHQXZydW84MnlqNmZLYWRhNjU3QmxyLXJteGUzUEtVNDVZYTNNcWVJUWY0d01SeE5BVF9jc0diY000aTdUYTdfS3daQVNoN3cyTHFfbVR5bFhuMFQtYWw0Z1lCbHJ3Nk54NThFSXF0VnRnOXhHdmdreXJKSQ?oc=5",
@@ -4580,6 +4561,26 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Poultry Disease Found at MBRF Supplier in Risk to Brazil Exports",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQcDhLcGp3TUNwQWdTZi1HSFB5LWZlN0xHUnduLUxhWk9XdEU1ZzkxYUxCclpteThfaDBCY25WamhLYmd4QUJZeDF1dWU5ODM3ai1NUmNia3UwTEF6UUJCdVFrRDRlVms1MHBaZm9JV0lMUk0tQ1VzYlg4QlVXTzdiQXIwckYySC03WDlRMzRLNHg3SldTNEFma056T2o3MFhnQ1NDcGRxcmtmNGUzeUJocHBUVmUyZw?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-20T03:06:52.437952+00:00",
+   "title_ru": "Заболевание птицы, обнаруженное у поставщика MBRF, подвергает риску экспорт в Бразилию"
+  },
+  {
+   "title": "Veradermics' oral hair-loss drug shown to boost hair growth in late-stage study",
+   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQUG9Sd25BdEpKc2wxMmRZYlEwSmlsd3QxRk51bEtZakZya2JITDlKWXIyb3RvR054YUxjSWRiMmJ6TnRnSk50dGFzQmZlUm90TzFHMTlPZjZYbnFERjZzXzM3ZE5hRFpmX1hEbDM0M1ltbXdKV2lGMnI4RjJ2NVg0MjdfaEQ4b01LOFlEcDhZV1pLTGU1eTdmNEZiejhpd0FHT2p5RGpxTkdEWmN2NnFhTjNWUkRtcG9MMFhaQjBxWkZQUDZjR1Y0UVhLdjFtaENiYU1TZlpqTzRTV05H?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-20T03:06:52.437952+00:00",
+   "title_ru": "На поздней стадии исследования показано, что пероральный препарат от выпадения волос Veradermics ускоряет рост волос"
   }
  ],
  "last_digest": "2026-10-19",
