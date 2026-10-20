@@ -625,7 +625,8 @@
   "e940dfce0853ef97": "2026-10-20T14:13:33.348379+00:00",
   "b0af68538ff0a513": "2026-10-20T14:13:33.348379+00:00",
   "aafe2689fbb7b01f": "2026-10-20T14:13:33.348379+00:00",
-  "00ef235ee9b845be": "2026-10-20T14:18:33.217229+00:00"
+  "00ef235ee9b845be": "2026-10-20T14:18:33.217229+00:00",
+  "f48a34ca841feb4d": "2026-10-20T14:33:33.206272+00:00"
  },
  "recent": [
   {
@@ -5599,6 +5600,21 @@
    "tags": [
     "bonds"
    ]
+  },
+  {
+   "title": "Top-Rated Junk Debt Becomes Sweet Spot as Investors Flee Risk",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-20/top-rated-junk-debt-becomes-sweet-spot-as-investors-flee-risk",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-20T14:33:33.206272+00:00",
+   "title_ru": "Мусорный долг с самым высоким рейтингом становится «золотым пятном», поскольку инвесторы бегут от риска",
+   "lead": "High-grade investors, including T. Rowe Price Associates Inc. and Invesco, are looking at dipping into the least risky corner of junk debt after a broader selloff pushed valuations lower.",
+   "lead_ru": "Высококлассные инвесторы, в том числе T. Rowe Price Associates Inc. и Invesco, рассматривают возможность использования наименее рискованного сегмента мусорных долгов после того, как более широкая распродажа привела к снижению оценок.",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-19",
@@ -7575,6 +7591,22 @@
     "date": "2026-10-16",
     "disclosed": "2026-10-20",
     "link": "https://www.sec.gov/Archives/edgar/data/2049114/000094562126001274/0000945621-26-001274-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "17f908b02c39834a",
+    "ticker": "GLBE",
+    "company": "Global-E Online Ltd.",
+    "who": "Amir Schlachet",
+    "role": "CEO",
+    "type": "sell",
+    "value": 975931,
+    "shares": 24999,
+    "price": 39.04,
+    "plan": true,
+    "date": "2026-10-16",
+    "disclosed": "2026-10-20",
+    "link": "https://www.sec.gov/Archives/edgar/data/1964286/000119312526425992/0001193125-26-425992-index.htm"
    },
    {
     "src": "sec",
@@ -10344,8 +10376,7 @@
   "sec_seen": [
    "0001795629-26-000008",
    "0000945621-26-001274",
-   "0000006955-26-000073",
-   "0000006955-26-000075"
+   "0001193125-26-425992"
   ],
   "errors": {}
  }
