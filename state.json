@@ -564,7 +564,9 @@
   "6c4d963811b43c82": "2026-10-20T05:06:52.765446+00:00",
   "4d01c3f05fdce7e3": "2026-10-20T05:11:52.381851+00:00",
   "e8525823689fb784": "2026-10-20T05:16:52.452506+00:00",
-  "73010c19b7cc07d1": "2026-10-20T05:21:52.429334+00:00"
+  "73010c19b7cc07d1": "2026-10-20T05:21:52.429334+00:00",
+  "a7b5a8583de1a807": "2026-10-20T05:36:52.449203+00:00",
+  "f9a233fd1ca4612b": "2026-10-20T05:36:52.449203+00:00"
  },
  "recent": [
   {
@@ -4816,6 +4818,35 @@
    "score": 3,
    "ts": "2026-10-20T05:21:52.429334+00:00",
    "title_ru": "Как накапливаются безопасные убежища, поскольку технологические, энергетические и французские рынки опасаются захвата"
+  },
+  {
+   "title": "Japanese Investors Buy Most Domestic Government Bonds Since 2009",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-20/japanese-investors-buy-most-domestic-government-bonds-since-2009",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-20T05:36:52.449203+00:00",
+   "title_ru": "Японские инвесторы покупают больше всего облигаций внутреннего государственного займа с 2009 года",
+   "lead": "Japanese investors’ purchases of domestic government bonds climbed to the highest in 17 years in the fiscal first half, a move that some analysts said reflected an attempt by pension funds to rebalance their portfolios.",
+   "lead_ru": "Покупка японскими инвесторами облигаций внутреннего государственного займа выросла до самого высокого уровня за 17 лет в первом полугодии финансового года, что, по мнению некоторых аналитиков, отражает попытку пенсионных фондов сбалансировать свои портфели.",
+   "tags": [
+    "bonds"
+   ]
+  },
+  {
+   "title": "Rubio kicks off India visit with trade deal, Russian oil on agenda",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQSzVIbWZvOEliSS16aVNWeUNsMlVlcG9wSDVMUkJsdjVrSzM0TUxueEQ5YThPUGtqMFNJbGM3MkROXzVoNzhaNnhCSmpRZEZBX0Zka0Fuci1YbGxVcEpmY3FzbFU2ck0zYVRSZVJYdnJpUkpVaWRRMGd4Z3J3cnhnbFJuWGI1YmRsOHlvSlE3SDJjcnZ5MWtyOFhKRmhFVVEzOFRnLVFIQUZ1YnBFamVN?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-20T05:36:52.449203+00:00",
+   "title_ru": "Рубио начинает визит в Индию с торговой сделки, российская нефть на повестке дня",
+   "tags": [
+    "oil",
+    "Russia"
+   ]
   }
  ],
  "last_digest": "2026-10-19",
@@ -9522,9 +9553,10 @@
    "0001060391-26-000298",
    "0001493152-26-047657",
    "0001999371-26-023092",
-   "0001060391-26-000302",
    "0000874015-26-000266",
+   "0001060391-26-000302",
    "0001060391-26-000320",
+   "0000950142-26-002791",
    "0000950142-26-002790",
    "0001060391-26-000312",
    "0001060391-26-000318",
@@ -9532,7 +9564,6 @@
    "0001060391-26-000304",
    "0001060391-26-000296",
    "0001976718-26-000013",
-   "0001104659-26-117008",
    "0001060391-26-000308",
    "0001872303-26-000013",
    "0001060391-26-000310",
@@ -9550,7 +9581,7 @@
    "0001060391-26-000294",
    "0000897069-26-001859",
    "0001060391-26-000292",
-   "0000950142-26-002791"
+   "0001104659-26-117008"
   ],
   "errors": {}
  }
