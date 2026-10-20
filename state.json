@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "0d4102c6e1aefbdd": "2026-10-17T20:02:11.230447+00:00",
   "ca3075ef18dbd2b2": "2026-10-17T20:17:39.331932+00:00",
   "045210accf8b7d96": "2026-10-17T21:42:39.350822+00:00",
   "8e11a0641c63306e": "2026-10-17T22:07:39.393307+00:00",
@@ -683,19 +682,10 @@
   "f50dbbe5455bbcb6": "2026-10-20T19:44:11.937964+00:00",
   "d5e0fe36d49329fc": "2026-10-20T19:49:11.881189+00:00",
   "fc42550d0d7ee313": "2026-10-20T19:54:11.885378+00:00",
-  "8f212d06c77a0d0c": "2026-10-20T19:59:11.837813+00:00"
+  "8f212d06c77a0d0c": "2026-10-20T19:59:11.837813+00:00",
+  "87c6a5e566f1caea": "2026-10-20T20:09:12.096698+00:00"
  },
  "recent": [
-  {
-   "title": "Projections for 25-2031 - BLS Data",
-   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQY0k3OWRITzlFREx5Q2dOdmp1WnZwSDVwVE9oUWhHQnN4OVhjODRqTkEzTkpTYnkta3ZMa3hMdGV6a09Cb0NOSUJNM00wQXp2dHdsX2pfaERmbTZGdWZvejlMdXN3bmw5NTlRUmV2MmNOOEZYOWxMZlFmUnVRUEI0OFN3?oc=5",
-   "sources": [
-    "US Labor Statistics (BLS)"
-   ],
-   "score": 4,
-   "ts": "2026-10-17T20:02:11.230447+00:00",
-   "title_ru": "Прогнозы на 25-2031 годы – данные BLS"
-  },
   {
    "title": "UK Inflation Can Seal the Deal on the BOE’s November Rate Hike",
    "link": "https://www.bloomberg.com/news/articles/2026-10-17/uk-inflation-can-seal-the-deal-on-the-boe-s-november-rate-hike",
@@ -6270,6 +6260,16 @@
    "tags": [
     "tariffs"
    ]
+  },
+  {
+   "title": "Citi Mexico sees new opportunities with banks after Banamex split",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPaTZyN0plamxzOWhhNzBRSnZDVEk3d1hHV09Tdm5Yd2dDcFUxR3hJRnROcHkycWROWUFaV3pSTHJpSzFzbmJCTjNvb21xMWZSUG0zY1dSVHJfbUJEZ1JDNkxsMVdDd0ZQQlJlWXNGUTRVX2lUSjgxZy1sX194QV9HVDU0QXFEampkd29jczdGMnB2NndRMlpXbGpCRlhHRjdLQnJnTzRXaDdKbkdpQnp3RjBxaXh2cW1aOUlQaVFR?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-20T20:09:12.096698+00:00",
+   "title_ru": "Citi Mexico видит новые возможности для банков после разделения Banamex"
   }
  ],
  "last_digest": "2026-10-20",
@@ -11188,16 +11188,23 @@
   },
   "checked": "2026-10-20T19:34:11.989191+00:00",
   "sec_seen": [
-   "0001681329-26-000008",
-   "0001225208-26-008460",
-   "0001225208-26-008459",
-   "0000063754-26-000335",
-   "0001225208-26-008457",
-   "0001225208-26-008462",
-   "0001225208-26-008463",
-   "0001225208-26-008458",
-   "0001510281-26-000364",
-   "0001225208-26-008461"
+   "0001665731-26-000001",
+   "0001225208-26-008467",
+   "0001104659-26-117411",
+   "0000876167-26-000129",
+   "0001225208-26-008468",
+   "0001225208-26-008465",
+   "0001213900-26-111027",
+   "0001813477-26-000008",
+   "0001225208-26-008464",
+   "0001193125-26-426668",
+   "0001193125-26-426667",
+   "0001225208-26-008466",
+   "0001193125-26-426678",
+   "0000905148-26-004522",
+   "0001104659-26-117399",
+   "0001104659-26-117408",
+   "0000905148-26-004521"
   ],
   "errors": {}
  }
