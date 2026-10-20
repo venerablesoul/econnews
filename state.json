@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "f924252e90b6332a": "2026-10-17T05:40:51.285378+00:00",
   "2d1597eea2d60755": "2026-10-17T06:05:51.266188+00:00",
   "1e2359f84ee5fe3e": "2026-10-17T06:15:51.316572+00:00",
   "f5264af38b63d68f": "2026-10-17T06:35:51.264678+00:00",
@@ -566,19 +565,10 @@
   "e8525823689fb784": "2026-10-20T05:16:52.452506+00:00",
   "73010c19b7cc07d1": "2026-10-20T05:21:52.429334+00:00",
   "a7b5a8583de1a807": "2026-10-20T05:36:52.449203+00:00",
-  "f9a233fd1ca4612b": "2026-10-20T05:36:52.449203+00:00"
+  "f9a233fd1ca4612b": "2026-10-20T05:36:52.449203+00:00",
+  "a054ed621dff22ce": "2026-10-20T05:46:52.767574+00:00"
  },
  "recent": [
-  {
-   "title": "Chair’s Statement Fifty-Fourth Meeting of the IMFC",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWHlUTy02QUxtb0RmRGZYOUpFQnVZRmRHSlVBUWY0NV9QdUhMMGlRWmZTRkJEd1JZOS1PZzR4bkxqSW0zTWZjSUQ0RGZRdm5uZXQ2THlvS2ZmZ2J3MUpsTG8yRnNqQXY1eV9waG5KX2lCMVM2TWVQLXJEOUs0czk5ckc2ak1KN01qOHJOZDB5SndwUkp6WklhRm8zb1hOZzZIMTRUNDZVYlg?oc=5",
-   "sources": [
-    "IMF"
-   ],
-   "score": 4,
-   "ts": "2026-10-17T05:40:51.285378+00:00",
-   "title_ru": "Заявление Председателя Пятьдесят четвертое заседание МВФК"
-  },
   {
    "title": "Lagarde Says Sustainable Finances Key for Economic Stability",
    "link": "https://www.bloomberg.com/news/articles/2026-10-17/lagarde-says-fiscal-sustainability-key-for-economic-stability",
@@ -4846,6 +4836,22 @@
    "tags": [
     "oil",
     "Russia"
+   ]
+  },
+  {
+   "title": "How is the US economy really doing under President Trump?",
+   "link": "https://www.bbc.co.uk/news/articles/cv98ze40jz18o?at_medium=RSS&at_campaign=rss",
+   "sources": [
+    "BBC"
+   ],
+   "score": 4,
+   "ts": "2026-10-20T05:46:52.767574+00:00",
+   "title_ru": "Как на самом деле обстоят дела в экономике США при президенте Трампе?",
+   "lead": "Ahead of the midterms Trump has boasted about the performance of the US economy. BBC Verify looks at inflation, jobs and economic growth in the country.",
+   "lead_ru": "В преддверии промежуточных выборов Трамп похвастался показателями экономики США. BBC Verify рассматривает инфляцию, рабочие места и экономический рост в стране.",
+   "tags": [
+    "inflation",
+    "jobs"
    ]
   }
  ],
