@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "b20a095ce78bf965": "2026-10-17T17:57:11.195971+00:00",
-  "d61a93a3e173f2d0": "2026-10-17T17:57:11.195971+00:00",
   "9880f5af8a28129a": "2026-10-17T18:17:11.238883+00:00",
   "51a1255c651c1d05": "2026-10-17T18:27:11.231482+00:00",
   "09d22651ab7c7418": "2026-10-17T18:32:11.231973+00:00",
@@ -667,19 +665,13 @@
   "193963a7066ef46a": "2026-10-20T17:48:33.148946+00:00",
   "f018aa0c63e7c150": "2026-10-20T17:48:33.148946+00:00",
   "4e4814ee1d4a5764": "2026-10-20T17:48:33.148946+00:00",
-  "4e017e483aca8b96": "2026-10-20T17:53:33.162777+00:00"
+  "4e017e483aca8b96": "2026-10-20T17:53:33.162777+00:00",
+  "51e1d33d33073910": "2026-10-20T17:58:33.130350+00:00",
+  "b20a095ce78bf965": "2026-10-20T18:03:33.160641+00:00",
+  "21f314981c987167": "2026-10-20T18:03:33.160641+00:00",
+  "13bef4e11e302ce5": "2026-10-20T18:03:33.160641+00:00"
  },
  "recent": [
-  {
-   "title": "Florida's stone crab season begins amid economic woes",
-   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5QeGNEUndKMDZESW45SWVsRXpGOHIzUjNwclRhd1pzTmt5VnUxNzYwMmloZUE0cE5zbVYybEV4X3UtZ2pxVGRmTk1MU2pCTHVJZTBsMXhhNTV0UlB2RGdnR19URndrYW5hUm5nTVFvT0UtQzFqOUk2ZnFuZDhWUQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-17T17:57:11.195971+00:00",
-   "title_ru": "Сезон каменных крабов во Флориде начинается на фоне экономических проблем"
-  },
   {
    "title": "High debt, growing strains put focus on need for new development approaches",
    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPUEpJSU1GZlU0b2FRWEtPbE5LVndpeGx3RkdYb1NRVHExX243Nms2bzBhSkYySk94WWRaeTRzTlN1cUxqSmd6cVNwUGdWNHdVbGV6aGlOU1N3NXFZNmtRSFMzVS0tMUlrVWJWLWpFUTFETWtzSmlqSEEwWkFsWUFOMnBDLVFadUNVOUpITWhaVDNaaUVSSElJNF8wcE1sNmJuN3VsWXdtekJXNnc5R1E?oc=5",
@@ -6123,9 +6115,37 @@
    "tags": [
     "jobs"
    ]
+  },
+  {
+   "title": "Housing is flashing warning signs just as the Fed weighs more interest rate hikes",
+   "link": "https://www.cnbc.com/2026/10/20/housing-mortgage-rates-real-estate-federal-reserve.html",
+   "sources": [
+    "CNBC"
+   ],
+   "score": 9,
+   "ts": "2026-10-20T18:03:33.160641+00:00",
+   "title_ru": "На рынке недвижимости появляются предупреждающие знаки, в то время как ФРС рассматривает возможность дальнейшего повышения процентных ставок",
+   "lead": "Housing data deteriorated further in September, according to separate reports Tuesday.",
+   "lead_ru": "Согласно отдельным отчетам во вторник, данные по жилищному рынку в сентябре еще больше ухудшились.",
+   "tags": [
+    "Fed",
+    "rates"
+   ]
+  },
+  {
+   "title": "UK government to make Jackdaw gas field announcement",
+   "link": "https://www.bbc.co.uk/news/articles/cvze4wx3elj1o?at_medium=RSS&at_campaign=rss",
+   "sources": [
+    "BBC"
+   ],
+   "score": 3,
+   "ts": "2026-10-20T18:03:33.160641+00:00",
+   "title_ru": "Правительство Великобритании сделает заявление о месторождении газа Галка",
+   "lead": "The long-awaited decision about the controversial North Sea field is expected on Wednesday morning.",
+   "lead_ru": "Долгожданное решение по спорному месторождению в Северном море ожидается в среду утром."
   }
  ],
- "last_digest": "2026-10-19",
+ "last_digest": "2026-10-20",
  "fail_streak": {
   "РБК": 0,
   "МВФ": 0,
@@ -6168,7 +6188,8 @@
   "2026-10-18-21",
   "2026-10-19-09",
   "2026-10-19-21",
-  "2026-10-20-09"
+  "2026-10-20-09",
+  "2026-10-20-21"
  ],
  "calendar": {
   "fetched": "2026-10-20T12:08:05.293801+00:00",
@@ -11025,10 +11046,8 @@
   "checked": "2026-10-20T17:28:33.155331+00:00",
   "sec_seen": [
    "0001997961-26-000004",
-   "0001401612-26-000005",
-   "0001510281-26-000360",
-   "0001510281-26-000362",
-   "0001510281-26-000361"
+   "0001510281-26-000361",
+   "0001510281-26-000362"
   ],
   "errors": {}
  }
