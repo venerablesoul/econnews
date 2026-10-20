@@ -544,7 +544,9 @@
   "42197dbdb807b0f6": "2026-10-20T02:11:05.101528+00:00",
   "29f9ee2b5b6bf32c": "2026-10-20T02:16:05.131196+00:00",
   "255deb47b58ded29": "2026-10-20T02:16:05.131196+00:00",
-  "e0589481ede90596": "2026-10-20T02:21:05.152162+00:00"
+  "e0589481ede90596": "2026-10-20T02:21:05.152162+00:00",
+  "249445fcae292f63": "2026-10-20T02:26:05.096270+00:00",
+  "86c6c9f5f46e4c24": "2026-10-20T02:31:05.179033+00:00"
  },
  "recent": [
   {
@@ -4542,6 +4544,20 @@
    "title_ru": "Кредитный риск группы SoftBank достиг 4-летнего максимума из-за проблем с финансированием ИИ",
    "lead": "SoftBank Group Corp.’s credit risk, as measured by its credit-default swaps, has risen to the highest level in nearly four years as concerns grow over AI-related funding and a potential large acquisition.",
    "lead_ru": "Кредитный риск SoftBank Group Corp., измеряемый ее кредитно-дефолтными свопами, поднялся до самого высокого уровня почти за четыре года, поскольку растут опасения по поводу финансирования, связанного с искусственным интеллектом, и потенциального крупного приобретения."
+  },
+  {
+   "title": "Gold slips as investors weigh Fed rate outlook",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOLVJCYm9CRFhWY01aUkRqYnVXb0RzRC1RUnhfOEFicHItalFBMnRMc0ZjcWRVcGNnZVg3ZXQ3WXNXeUZLN183enN0NFAtdmxuUHJhRU5jOHlQbTg1TldhNVdtbF9IWU1GZ1BfOEZvTnJpUEhGTE5xUkRSbl9FZVR4NlFJMEE2V1VYZ1hVRzk3SmpJMi1qelE?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-20T02:31:05.179033+00:00",
+   "title_ru": "Золото падает, поскольку инвесторы взвешивают прогноз по ставке ФРС",
+   "tags": [
+    "Fed",
+    "gold"
+   ]
   }
  ],
  "last_digest": "2026-10-19",
@@ -4564,7 +4580,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 0,
+  "Fed": 1,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
@@ -9244,9 +9260,9 @@
    "0001060391-26-000316",
    "0001778564-26-000187",
    "0001872303-26-000013",
-   "0001060391-26-000300",
-   "0001060391-26-000308",
    "0001193125-26-425520",
+   "0001060391-26-000308",
+   "0001060391-26-000300",
    "0000874015-26-000266",
    "0000950142-26-002792",
    "0001104659-26-117008",
