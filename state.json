@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "bda51c97fd34bfe4": "2026-10-17T14:41:19.318350+00:00",
   "913bd1eedc5400b9": "2026-10-17T15:17:11.198507+00:00",
   "8740d1c9ead0b426": "2026-10-17T15:37:11.242550+00:00",
   "37c90152e665a905": "2026-10-17T16:07:11.258428+00:00",
@@ -626,24 +625,10 @@
   "b0af68538ff0a513": "2026-10-20T14:13:33.348379+00:00",
   "aafe2689fbb7b01f": "2026-10-20T14:13:33.348379+00:00",
   "00ef235ee9b845be": "2026-10-20T14:18:33.217229+00:00",
-  "f48a34ca841feb4d": "2026-10-20T14:33:33.206272+00:00"
+  "f48a34ca841feb4d": "2026-10-20T14:33:33.206272+00:00",
+  "bf24b2064b79159d": "2026-10-20T14:43:33.228179+00:00"
  },
  "recent": [
-  {
-   "title": "CoreWeave Woes Risk Shutting Down AI Junk Market: Credit Weekly",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-17/coreweave-woes-risk-shutting-down-ai-junk-market-credit-weekly",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-17T14:41:19.318350+00:00",
-   "title_ru": "CoreWeave обеспокоен риском закрытия рынка мусора в сфере искусственного интеллекта: Credit Weekly",
-   "lead": "Junk bond buyers are increasingly freezing out tech startups looking for financing, as CoreWeave Inc.’s pain raises bigger questions about how artificial intelligence companies will fund themselves.",
-   "lead_ru": "Покупатели мусорных облигаций все чаще блокируют технологические стартапы, ищущие финансирование, поскольку проблемы CoreWeave Inc. поднимают более серьезные вопросы о том, как компании, занимающиеся искусственным интеллектом, будут финансировать себя.",
-   "tags": [
-    "bonds"
-   ]
-  },
   {
    "title": "Trump Faces Midterm Fuel Reckoning as Gas Prices Near Biden’s Average",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOWGJLZ1Rxcm83b0JILUMtTGptU1J2eWVvNkJ1REI1TTg4cDk4U0xscER4cUJKcUtmdnZBbkdsZGg0ZkJDbEZlODlUdnpXTno3MHNEc3llVE5QV1RiNlFWLUw0NDNHaDE1NUpmb3RqNXI5dmZ0d2ttNkFBSWlHbVBydlBKY2dmRmlwUXEzNkhudkc5WFVuSkk2YktKYXF3RUo0ZVIxVW82UjlXdkFEZXhjbTF0cVA?oc=5",
@@ -5615,6 +5600,18 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Elice Plunges in Trading Debut; General Motors Falls on Forecast | Stock Movers",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-20/elice-plunges-in-debut-general-motors-falls-on-forecast-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-20T14:43:33.228179+00:00",
+   "title_ru": "Элис дебютирует в трейдинге; General Motors падает по прогнозу | Перевозчики запасов",
+   "lead": "On this episode of Stock Movers: - Elice (KS) is floundering as it plunged in their trading debut, falling as much as 38% and finishing the day with a 32% loss.",
+   "lead_ru": "В этом выпуске Stock Movers: - Elice (KS) терпит неудачу во время своего дебютного торгового дня, упав на 38% и завершив день с потерей 32%."
   }
  ],
  "last_digest": "2026-10-19",
@@ -7575,6 +7572,22 @@
     "date": "2026-10-19",
     "disclosed": "2026-10-20",
     "link": "https://www.sec.gov/Archives/edgar/data/2042077/000119380526001382/0001193805-26-001382-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "c2141e994064b367",
+    "ticker": "NXG",
+    "company": "NXG NextGen Infrastructure Income Fund",
+    "who": "Sunderland Todd",
+    "role": "",
+    "type": "buy",
+    "value": 46500,
+    "shares": 1000,
+    "price": 46.5,
+    "plan": false,
+    "date": "2026-10-19",
+    "disclosed": "2026-10-20",
+    "link": "https://www.sec.gov/Archives/edgar/data/1957908/000195790826000003/0001957908-26-000003-index.htm"
    },
    {
     "src": "sec",
@@ -10375,7 +10388,7 @@
   "checked": "2026-10-20T14:13:33.348379+00:00",
   "sec_seen": [
    "0001795629-26-000008",
-   "0000945621-26-001274",
+   "0001957908-26-000003",
    "0001193125-26-425992"
   ],
   "errors": {}
