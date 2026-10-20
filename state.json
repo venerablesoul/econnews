@@ -686,7 +686,12 @@
   "96fcfebc3bbd1e8e": "2026-10-20T20:49:11.914284+00:00",
   "508582e94deabc34": "2026-10-20T20:49:11.914284+00:00",
   "ed25636c94c948e1": "2026-10-20T20:49:11.914284+00:00",
-  "3ca9f06e82ef5e95": "2026-10-20T20:49:11.914284+00:00"
+  "3ca9f06e82ef5e95": "2026-10-20T20:49:11.914284+00:00",
+  "4e2fa7305fb86302": "2026-10-20T20:54:11.840017+00:00",
+  "7ee2448e74c44844": "2026-10-20T20:59:11.929140+00:00",
+  "dd9c09d6b2d69108": "2026-10-20T20:59:11.929140+00:00",
+  "35b0466006cc2383": "2026-10-20T20:59:11.929140+00:00",
+  "ba02a05599b0887f": "2026-10-20T20:59:11.929140+00:00"
  },
  "recent": [
   {
@@ -6266,6 +6271,51 @@
    ],
    "score": 2,
    "ts": "2026-10-20T20:49:11.914284+00:00"
+  },
+  {
+   "title": "Coming Soon: Regional Economic Outlook for the Middle East and Central Asia",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPdDBrSVVDckRvbVFTbXVzSDJEZ3RTa3ZkREZCalJib1lsUGQyNFF4WngtbVR0YkI2RXYyRmNiekZ3U2tQbnYwV2VxNUZaRE1Qa2NLV0JFQWZXSC1nVkh1VlNNWERZcTRobk1DZ2ZRVXBZTnJlV3lOTzdveXotOGFxejZBTFhRT0lsMUl1ZWJFOVpWbV9HVXkzbHNSOXhlV1lsRFpDQjhCT2NQc29HcThrRzUxd051QkdCSlNkVlp4RDZTQjhr?oc=5",
+   "sources": [
+    "IMF"
+   ],
+   "score": 5,
+   "ts": "2026-10-20T20:59:11.929140+00:00",
+   "title_ru": "Скоро: Региональные экономические перспективы для Ближнего Востока и Центральной Азии"
+  },
+  {
+   "title": "Bank of England's Greene says inflation risks are bigger than thought",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNbVNqRlM4X0NJV0Zma2RJY3FySGIwdFN6UlZpN1VtMTFzc3RkalpkMUxXQUZKbGpoTGNjTUtOaFNvYm5kc1F5UHl3ZVFVTU0wcTV0ckwyc3ZUeFlJYWhUanBSU2dmZHEwY3dmZTg4RzdkT1BQeGpJU05nZ3BfcUVWdmNhYXB1T01IdjA1ZDM3c0ZMMEYtblB1QUN3RlRIS00yaUp6amtjSFowOHg1ZVBr?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-20T20:59:11.929140+00:00",
+   "title_ru": "Грин из Банка Англии говорит, что инфляционные риски больше, чем предполагалось",
+   "tags": [
+    "inflation"
+   ]
+  },
+  {
+   "title": "Emerging Stocks Are Trading at Biggest-Ever Discount to US",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNay1ra1pFVHpSaG1Ucm9ZbnNCMmZJcEpIRTY2UTgyOS1PcjNldzdrQmp3TnFGUVZkYXUwVmRORnNTYTFFeWVUUWMzVFZ4ZjhlemtTSjhoR0ZJZmpVcERKMnhkUjhaTUN2SFdoQWxaa2pEcVR0enFHOTlCX3FDeVNqZXQ3eU1OdTZlR3g4d1ZCSk1ZdmktT2tpQUlUa1pVZ18zc253dTM2eGJPbnpsLWZEcmRTNzVGUQ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-20T20:59:11.929140+00:00",
+   "title_ru": "Акции развивающихся стран торгуются с самой большой за всю историю скидкой по отношению к США",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "Netflix vows to revive viewership trends, but investors hit ‘sell’ on the stock",
+   "link": "https://www.marketwatch.com/story/netflix-vows-to-revive-viewership-trends-but-investors-hit-sell-on-the-stock-3e24420a?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-20T20:59:11.929140+00:00"
   }
  ],
  "last_digest": "2026-10-20",
@@ -11233,15 +11283,15 @@
   "checked": "2026-10-20T20:39:11.887807+00:00",
   "sec_seen": [
    "0001683168-26-007994",
-   "0001193125-26-426784",
    "0001839066-26-000057",
-   "0001193125-26-426772",
+   "0001193125-26-426784",
    "0001193125-26-426798",
+   "0001193125-26-426772",
+   "0001297602-26-000035",
    "0001193125-26-426791",
-   "0001989210-26-000022",
-   "0001193125-26-426766",
-   "0001628280-26-066517",
-   "0001628280-26-066518"
+   "0001104659-26-117443",
+   "0001193125-26-426810",
+   "0001989210-26-000022"
   ],
   "errors": {}
  }
