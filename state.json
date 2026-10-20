@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "913bd1eedc5400b9": "2026-10-17T15:17:11.198507+00:00",
   "8740d1c9ead0b426": "2026-10-17T15:37:11.242550+00:00",
   "37c90152e665a905": "2026-10-17T16:07:11.258428+00:00",
   "a929471a3473abff": "2026-10-17T16:07:11.258428+00:00",
@@ -633,22 +632,11 @@
   "64bc6b5ef7d464f6": "2026-10-20T15:08:33.121286+00:00",
   "a12bb675973c101a": "2026-10-20T15:13:33.113862+00:00",
   "547ee34de6659275": "2026-10-20T15:13:33.113862+00:00",
-  "9a19d71cc37ecf3e": "2026-10-20T15:13:33.113862+00:00"
+  "9a19d71cc37ecf3e": "2026-10-20T15:13:33.113862+00:00",
+  "3e95ed3965a61f95": "2026-10-20T15:18:33.130073+00:00",
+  "83c1325cc16babab": "2026-10-20T15:18:33.130073+00:00"
  },
  "recent": [
-  {
-   "title": "Trump Faces Midterm Fuel Reckoning as Gas Prices Near Biden’s Average",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOWGJLZ1Rxcm83b0JILUMtTGptU1J2eWVvNkJ1REI1TTg4cDk4U0xscER4cUJKcUtmdnZBbkdsZGg0ZkJDbEZlODlUdnpXTno3MHNEc3llVE5QV1RiNlFWLUw0NDNHaDE1NUpmb3RqNXI5dmZ0d2ttNkFBSWlHbVBydlBKY2dmRmlwUXEzNkhudkc5WFVuSkk2YktKYXF3RUo0ZVIxVW82UjlXdkFEZXhjbTF0cVA?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-17T15:17:11.198507+00:00",
-   "title_ru": "Трампу грозит промежуточный расчет топлива, поскольку цены на газ близки к средним ценам Байдена",
-   "tags": [
-    "gas"
-   ]
-  },
   {
    "title": "Trump drops Russia sanctions, Israeli settlers attack US photojournalist, Oregon police say teacher and parent stopped school shooter",
    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPZW5QUTZCMC1GdFZQbXlmYjYxd2RBakU3NjRNZksxLVZHWmEyaFB6QzJFakg1Y1NvbE8wRWhWWGlnRXlxZlFXdEJmbjlPVDViUjNiTU53VEhCenVvaFFQdHhPbnFkVUx0eUVVeGVDckVENE1BbEdNNERseXJyUXctdzBqTUE5c1daQTFZ?oc=5",
@@ -5678,6 +5666,31 @@
    "score": 3,
    "ts": "2026-10-20T15:13:33.113862+00:00",
    "title_ru": "Британские консерваторы выступили перед бюджетом с предложением сократить расходы и заимствования"
+  },
+  {
+   "title": "Jeanne Sun Favors US Stocks as AI Rally Continues",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-20/jeanne-sun-favors-us-stocks-as-ai-rally-continues-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-20T15:18:33.130073+00:00",
+   "title_ru": "Джин Сан отдает предпочтение акциям США, поскольку ралли искусственного интеллекта продолжается",
+   "lead": "Jeanne Sun of Citi discusses resilient earnings, AI-driven productivity gains and how investors are navigating market volatility.",
+   "lead_ru": "Джин Сан из Citi обсуждает устойчивые доходы, рост производительности за счет искусственного интеллекта и то, как инвесторы справляются с волатильностью рынка.",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "Germany's Merz touts defence, AI and chip investment drive in pitch to investors",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNaGFxUm93NXNFanpMQnpJU1NSeldmZUEyX3REOWdfckRZaVBFaHFBVl9uRS04UExUU1M4QlJXODdKbUxtOWNxTkpPNVJZRUhJZWZjX19qY25hZnlGMjNrN1F3MXVPeHpfZUw0SDhMQzhCMFl0YkMtR3pUZjN1VEIxMnVGLTViSlo2bGN3N3RHMlAzSVFiSGI0TnU0YmR5V3Nubm1nanJWNklQWmV3bUNreEpuSQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-20T15:18:33.130073+00:00",
+   "title_ru": "Немецкая компания Merz рекламирует инвесторам инвестиции в оборону, искусственный интеллект и чипы"
   }
  ],
  "last_digest": "2026-10-19",
@@ -6435,6 +6448,66 @@
  "all_down_alerted": false,
  "trades": {
   "congress": [
+   {
+    "src": "house",
+    "who": "Michael Rulli",
+    "where": "House, OH-06",
+    "owner": "",
+    "ticker": "WSBC",
+    "asset": "WesBanco, Inc. - Common Stock",
+    "type": "sell",
+    "amin": 1001,
+    "amax": 15000,
+    "date": "2026-10-16",
+    "disclosed": "2026-10-19",
+    "link": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035671.pdf",
+    "id": "bda32cfaef2e8577"
+   },
+   {
+    "src": "house",
+    "who": "Jonathan Jackson",
+    "where": "House, IL-01",
+    "owner": "JT",
+    "ticker": "EL",
+    "asset": "Estee Lauder Companies, Inc.",
+    "type": "buy",
+    "amin": 50001,
+    "amax": 100000,
+    "date": "2026-09-28",
+    "disclosed": "2026-10-19",
+    "link": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035551.pdf",
+    "id": "7b535d3e47bfc943"
+   },
+   {
+    "src": "house",
+    "who": "Jonathan Jackson",
+    "where": "House, IL-01",
+    "owner": "JT",
+    "ticker": "WMT",
+    "asset": "Walmart Inc. - Common Stock",
+    "type": "sell",
+    "amin": 50001,
+    "amax": 100000,
+    "date": "2026-09-28",
+    "disclosed": "2026-10-19",
+    "link": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035551.pdf",
+    "id": "917bcd65d56b39bd"
+   },
+   {
+    "src": "house",
+    "who": "Jonathan Jackson",
+    "where": "House, IL-01",
+    "owner": "SP",
+    "ticker": "TYG",
+    "asset": "Tortoise Energy Infrastructure Corporation Common Stock",
+    "type": "sell",
+    "amin": 1001,
+    "amax": 15000,
+    "date": "2026-09-04",
+    "disclosed": "2026-10-19",
+    "link": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035551.pdf",
+    "id": "923379be85e123af"
+   },
    {
     "src": "house",
     "who": "Laurel Lee",
@@ -10443,7 +10516,9 @@
    "9116378": "2026-10-14",
    "20035637": "2026-10-15",
    "20035660": "2026-10-15",
-   "20035490": "2026-10-16"
+   "20035490": "2026-10-16",
+   "20035551": "2026-10-19",
+   "20035671": "2026-10-19"
   },
   "queue": [],
   "ready": {
@@ -10451,13 +10526,16 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-20T14:13:33.348379+00:00",
+  "checked": "2026-10-20T15:18:33.130073+00:00",
   "sec_seen": [
    "0001437749-26-032982",
    "0001729897-26-000053",
    "0001729859-26-000055",
    "0001437749-26-032984",
-   "0001957908-26-000003"
+   "0000100885-26-000314",
+   "0000100885-26-000313",
+   "0001437749-26-032986",
+   "0000100885-26-000312"
   ],
   "errors": {}
  }
