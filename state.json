@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "036b88c2d9f52df6": "2026-10-17T02:35:25.264841+00:00",
   "d219eebef9d8ea25": "2026-10-17T02:40:25.236627+00:00",
   "d5a9cdbbd1975b63": "2026-10-17T02:55:25.214847+00:00",
   "167ee50172592cd6": "2026-10-17T03:05:25.260654+00:00",
@@ -546,22 +545,13 @@
   "255deb47b58ded29": "2026-10-20T02:16:05.131196+00:00",
   "e0589481ede90596": "2026-10-20T02:21:05.152162+00:00",
   "249445fcae292f63": "2026-10-20T02:26:05.096270+00:00",
-  "86c6c9f5f46e4c24": "2026-10-20T02:31:05.179033+00:00"
+  "86c6c9f5f46e4c24": "2026-10-20T02:31:05.179033+00:00",
+  "a40d64394e1aa2f8": "2026-10-20T02:36:05.153012+00:00",
+  "84d41ef35a8c44cd": "2026-10-20T02:36:05.153012+00:00",
+  "42bf6338261475cf": "2026-10-20T02:36:05.153012+00:00",
+  "81eaf78513b20589": "2026-10-20T02:36:05.153012+00:00"
  },
  "recent": [
-  {
-   "title": "NY Fed service sector survey finds notable price pressures",
-   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNRUZQN0xNTG13b0ZRZk04Q0pxNHNKYjdMMFFoRTZPcHVWYXB2amtrQjJ3bWZfTUliRnR2MTlmTWJCaG9ybm8tR0JlanVIbjlGMFBiUmNtTXhKSTZQRUloN2p3eXN3b0JZa0xNaHNqWVZFZ0t0WDBzSXlsWDg4ekFzWlR5NTcxSm5NRlhlVmoxMHlHM1RJcGFXUklSbTJ3MkM4c3Q1ZHN3?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-17T02:35:25.264841+00:00",
-   "title_ru": "Исследование сектора услуг ФРС Нью-Йорка выявило заметное ценовое давление",
-   "tags": [
-    "Fed"
-   ]
-  },
   {
    "title": "UK finance minister says Heathrow expansion would boost growth",
    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOTHkwZFZ1VzR3UmFudm1pNWg4ZlJ6WjFfT3BncTk3NExYMEhSVXdjSFJ1czlPbjk0ZFRHWkZvWDBVcHhsY0tiX210bTlfc2poU0VQcXJ2SHVmVkgtWTU4a2FZLS00XzJKSF9zUFV3QjE5Q0tZVTRXOVJSMDkxNHZJOHdGTWFHMWFCdXRLLXRXZHhMeThFaDgzMFg2MGh5VzR3RHQyeWhDRmk1Rm8?oc=5",
@@ -4558,6 +4548,32 @@
     "Fed",
     "gold"
    ]
+  },
+  {
+   "title": "Chipmakers Lead Korean Stock Selloff on Yield Spike, IPO Stumble",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-20/chipmakers-lead-korean-stock-selloff-on-yield-spike-ipo-stumble",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-20T02:36:05.153012+00:00",
+   "title_ru": "Производители микросхем возглавили распродажу корейских акций из-за скачка доходности и провала IPO",
+   "lead": "Chipmakers drove losses in South Korean equities Tuesday, as foreign investors reduced exposure on a rise in Treasury yields and a weak stock market debut by a data center firm.",
+   "lead_ru": "Производители микросхем во вторник понесли потери на южнокорейских акциях, поскольку иностранные инвесторы сократили риски из-за роста доходности казначейских облигаций и слабого дебюта на фондовом рынке компании, занимающейся центрами обработки данных.",
+   "tags": [
+    "bonds",
+    "markets"
+   ]
+  },
+  {
+   "title": "Trump says Mexico and US are close to trade deal",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPX3Bkc0ZpcWlrNVo2Y0VQaUlDNFdrXzB5Vmg1OHBLZFd0UVd3dnJkV1QxY2FUWTYyMHlzUHc0NjVoR0U0dllIZGtTZGpoY05xcDlxdVU2cWxNVG92VTNablpxbE5ubUdUWFRidzN0V0c0ZFJGUlY3NnNvbk1LVE1idVFKUUNyS3RPRTQ1NWJmdGZmMUhxQm5j?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-20T02:36:05.153012+00:00",
+   "title_ru": "Трамп заявил, что Мексика и США близки к торговому соглашению"
   }
  ],
  "last_digest": "2026-10-19",
@@ -4580,7 +4596,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 1,
+  "Fed": 0,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
@@ -9253,18 +9269,19 @@
   "checked": "2026-10-20T01:46:05.078217+00:00",
   "sec_seen": [
    "0001060391-26-000318",
-   "0001060391-26-000294",
    "0001060391-26-000306",
+   "0001060391-26-000294",
    "0001060391-26-000304",
    "0002031998-26-000008",
    "0001060391-26-000316",
    "0001778564-26-000187",
    "0001872303-26-000013",
+   "0001060391-26-000300",
    "0001193125-26-425520",
    "0001060391-26-000308",
-   "0001060391-26-000300",
    "0000874015-26-000266",
    "0000950142-26-002792",
+   "0001060391-26-000310",
    "0001104659-26-117008",
    "0000950142-26-002790",
    "0001104659-26-117011",
@@ -9279,7 +9296,6 @@
    "0001193125-26-425511",
    "0001823952-26-000024",
    "0001060391-26-000312",
-   "0001060391-26-000314",
    "0001140361-26-040135",
    "0001060391-26-000296",
    "0000950142-26-002791",
@@ -9292,7 +9308,7 @@
    "0000897069-26-001859",
    "0001060391-26-000292",
    "0001716751-26-000011",
-   "0001060391-26-000310"
+   "0001060391-26-000314"
   ],
   "errors": {}
  }
