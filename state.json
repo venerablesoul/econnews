@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "06856943d5334990": "2026-10-17T09:51:19.287654+00:00",
   "685860af6e92a5a8": "2026-10-17T10:01:19.203648+00:00",
   "605d34182e90c291": "2026-10-17T10:01:19.203648+00:00",
   "100814bb45f7ff8e": "2026-10-17T10:16:19.266930+00:00",
@@ -592,7 +591,9 @@
   "d24c454cb26b43a2": "2026-10-20T09:33:05.262787+00:00",
   "4d0bd953a05fa2d7": "2026-10-20T09:33:05.262787+00:00",
   "977a042f7c0b8fe2": "2026-10-20T09:38:05.249826+00:00",
-  "afc787d6165d70ad": "2026-10-20T09:38:05.249826+00:00"
+  "afc787d6165d70ad": "2026-10-20T09:38:05.249826+00:00",
+  "4f848315cb3bd969": "2026-10-20T09:53:05.249905+00:00",
+  "22b7ce7816598dd7": "2026-10-20T09:53:05.249905+00:00"
  },
  "recent": [
   {
@@ -5183,6 +5184,34 @@
    "title_ru": "Стратегия влияния Индонезии раздражает инвесторов перед риском MSCI",
    "lead": "At a meeting on Sunday afternoon involving officials from Indonesia’s Financial Services Authority and the country’s stock exchange, some attendees were surprised to see several prominent Instagrammers present.",
    "lead_ru": "На встрече в воскресенье днем ​​с участием чиновников Управления финансовых услуг Индонезии и фондовой биржи страны некоторые участники были удивлены, увидев на ней несколько известных пользователей Instagram."
+  },
+  {
+   "title": "Asia Refiners in Dispute With Saudis Over 2027 Oil Contracts",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNWTY5djNyVEZxeHdOdzZMZUFvSlJyYmdWZ2Q0d0pmX1RVYUtROEppM29CeF9vdVZpZWo5ZnNydmhDUjRMVkhORHl3NE13aUZkSWFBSUEzdnRHLWVzVmxadWZTRjFsc2NWZHROOXhGWTN5SV8wUlJielpIYm13dEZ4TWl0V2wwUjhKVjVHVG1vcGlQWEwzX1VoOV9OMUI2VWthV1o5WXVsNVg1Y0xRRDhiamd3?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-20T09:53:05.249905+00:00",
+   "title_ru": "Азиатские нефтеперерабатывающие заводы спорят с саудовцами по поводу нефтяных контрактов на 2027 год",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "Мишустин рассказал о предложении России к ШОС развивать космическую экономику",
+   "link": "https://www.kommersant.ru/doc/9042811",
+   "sources": [
+    "Kommersant"
+   ],
+   "score": 3,
+   "ts": "2026-10-20T09:53:05.249905+00:00",
+   "title_en": "Mishustin spoke about Russia's proposal to the SCO to develop a space economy",
+   "lead": "Премьер-министр РФ Михаил Мишустин рассказал о предложении России создать в ШОС рабочую группу по развитию космической экономики. Об этой инициативе он рассказал на заседании Совета глав правительств стран ШОС в Таджикистане.",
+   "lead_en": "Russian Prime Minister Mikhail Mishustin spoke about Russia's proposal to create a working group in the SCO to develop the space economy. He spoke about this initiative at a meeting of the Council of Heads of Government of the SCO countries in Tajikistan.",
+   "tags": [
+    "Russia"
+   ]
   }
  ],
  "last_digest": "2026-10-19",
@@ -9881,8 +9910,8 @@
    "0001060391-26-000290",
    "0000874015-26-000266",
    "0001060391-26-000300",
-   "0001060391-26-000314",
    "0001193125-26-425520",
+   "0001060391-26-000314",
    "0001079973-26-001373",
    "0001193125-26-425511",
    "0001872303-26-000013",
@@ -9896,7 +9925,7 @@
    "0001823952-26-000024",
    "0001778564-26-000187",
    "0001696555-26-000012",
-   "0001140361-26-040135",
+   "0001060391-26-000304",
    "0001873011-26-000010",
    "0001060391-26-000318",
    "0001976718-26-000013",
@@ -9917,7 +9946,7 @@
    "0000950142-26-002791",
    "0002013950-26-000003",
    "0000874015-26-000267",
-   "0001060391-26-000304",
+   "0001140361-26-040135",
    "0001060391-26-000320"
   ],
   "errors": {}
