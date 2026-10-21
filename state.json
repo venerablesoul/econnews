@@ -862,7 +862,9 @@
   "ab11fa921bb35bff": "2026-10-21T14:21:04.121242+00:00",
   "d9f7820b5ca4e5ae": "2026-10-21T14:26:04.124127+00:00",
   "0e11caacd88577a0": "2026-10-21T14:26:04.124127+00:00",
-  "6e84fd1ac7d2a702": "2026-10-21T14:26:04.124127+00:00"
+  "6e84fd1ac7d2a702": "2026-10-21T14:26:04.124127+00:00",
+  "aa9847be04342216": "2026-10-21T14:31:03.855011+00:00",
+  "f9bb7671767ce530": "2026-10-21T14:36:04.138103+00:00"
  },
  "recent": [
   {
@@ -8325,6 +8327,21 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "Middle East Oil Flows Near Prewar Levels Defy Hormuz Attacks",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-21/middle-east-oil-flows-near-prewar-levels-defy-hormuz-attacks",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-21T14:36:04.138103+00:00",
+   "title_ru": "Потоки нефти на Ближнем Востоке близки к довоенным уровням, несмотря на атаки в Ормузе",
+   "lead": "Oil shipments from the Middle East are showing little sign of buckling in the face of Iran’s more frequent and damaging attacks on merchant ships in the region.",
+   "lead_ru": "Поставки нефти с Ближнего Востока практически не проявляют признаков спада перед лицом более частых и разрушительных нападений Ирана на торговые суда в регионе.",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-20",
@@ -10332,6 +10349,22 @@
     "date": "2026-10-20",
     "disclosed": "2026-10-21",
     "link": "https://www.sec.gov/Archives/edgar/data/1437226/000119312526427279/0001193125-26-427279-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "21b8349d74c29cc0",
+    "ticker": "YORW",
+    "company": "YORK WATER CO",
+    "who": "David M Velazquez",
+    "role": "Director",
+    "type": "buy",
+    "value": 40000,
+    "shares": 1288,
+    "price": 31.07,
+    "plan": false,
+    "date": "2026-10-20",
+    "disclosed": "2026-10-21",
+    "link": "https://www.sec.gov/Archives/edgar/data/1367846/000010898526000091/0000108985-26-000091-index.htm"
    },
    {
     "src": "sec",
@@ -13565,12 +13598,12 @@
   },
   "checked": "2026-10-21T14:16:04.117757+00:00",
   "sec_seen": [
-   "0001193125-26-427145",
    "0001628280-26-066621",
-   "0001493152-26-047849",
+   "0000108985-26-000091",
    "0001094629-26-000004",
+   "0001493152-26-047849",
+   "0001628280-26-066630",
    "0000108985-26-000090",
-   "0002109337-26-000012",
    "0001976408-26-000898",
    "0001193125-26-427279",
    "0001628280-26-066625"
