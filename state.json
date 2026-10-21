@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "8358c84e4a016c10": "2026-10-18T22:24:36.365666+00:00",
-  "7ab5e9422fa33a7f": "2026-10-18T22:24:36.365666+00:00",
-  "02a0de84fe9b59a1": "2026-10-18T22:24:36.365666+00:00",
-  "2b2820df55b1e305": "2026-10-18T22:29:36.410538+00:00",
   "a42c560d7863b405": "2026-10-18T22:34:36.368396+00:00",
   "28f27ef00c64abe7": "2026-10-18T22:34:36.368396+00:00",
   "fd44f56663449a36": "2026-10-18T22:44:36.375359+00:00",
@@ -897,22 +893,11 @@
   "d57e9a37d22d44fc": "2026-10-21T21:56:32.216172+00:00",
   "1cc09ce97db5eaf1": "2026-10-21T22:12:00.028446+00:00",
   "cfded63c9e0300be": "2026-10-21T22:17:00.043086+00:00",
-  "9dc07a42d5c95f8b": "2026-10-21T22:17:00.043086+00:00"
+  "9dc07a42d5c95f8b": "2026-10-21T22:17:00.043086+00:00",
+  "7ab5e9422fa33a7f": "2026-10-21T22:31:59.930018+00:00",
+  "eb60c0e14aa309f9": "2026-10-21T22:31:59.930018+00:00"
  },
  "recent": [
-  {
-   "title": "Trump’s Trade War: A News Guide to His Second Term as President",
-   "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9iZGVGa3RSQWJwcFpkd2tPbVpiOExBWWZzdmc2YTM3d3BDal8tT0Z5ejhLSHNXXzBEbEx1UkRFRklRS0hEb2VBM3F6V0FnY3JSRnp4Nk5n?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-18T22:24:36.365666+00:00",
-   "title_ru": "Торговая война Трампа: путеводитель новостей по его второму президентскому сроку",
-   "tags": [
-    "tariffs"
-   ]
-  },
   {
    "title": "Kioxia Shares Face Headwinds From Margin-Buying Gone Wrong",
    "link": "https://www.bloomberg.com/news/articles/2026-10-18/kioxia-shares-face-headwinds-from-margin-buying-gone-wrong",
@@ -8867,6 +8852,21 @@
    "score": 3,
    "ts": "2026-10-21T22:17:00.043086+00:00",
    "title_ru": "Прогнозируемые максимумы Texas Instruments после роста спроса"
+  },
+  {
+   "title": "US Stock Futures Slip as Tech Earnings Rally Fades: Markets Wrap",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-21/stock-market-today-dow-s-p-live-updates",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-21T22:31:59.930018+00:00",
+   "title_ru": "Фьючерсы на акции США проскальзывают по мере того, как технологическое ралли доходов затухает: рынки сворачиваются",
+   "lead": "US equity-index futures fell as a technology rally faded, trimming gains sparked by strong earnings that had bolstered confidence in the artificial intelligence trade.",
+   "lead_ru": "Фьючерсы на фондовые индексы США упали, поскольку технологическое ралли исчезло, сократив прибыль, вызванную высокими доходами, которые укрепили доверие к торговле искусственным интеллектом.",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-21",
@@ -9628,6 +9628,261 @@
  "all_down_alerted": false,
  "trades": {
   "congress": [
+   {
+    "src": "senate",
+    "who": "John Boozman",
+    "where": "Senate",
+    "owner": "Joint",
+    "ticker": "APTV",
+    "asset": "Aptiv PLC Ordinary Shares",
+    "type": "sell_part",
+    "amin": 1001,
+    "amax": 15000,
+    "date": "2026-09-25",
+    "disclosed": "2026-10-21",
+    "link": "https://efdsearch.senate.gov/search/view/ptr/7dfdae57-9401-4bf1-9059-85d1e5ee4a84/",
+    "id": "31ae63f6d58fdb24"
+   },
+   {
+    "src": "senate",
+    "who": "John Boozman",
+    "where": "Senate",
+    "owner": "Joint",
+    "ticker": "MU",
+    "asset": "Micron Technology, Inc. - Common Stock",
+    "type": "sell_part",
+    "amin": 1001,
+    "amax": 15000,
+    "date": "2026-09-24",
+    "disclosed": "2026-10-21",
+    "link": "https://efdsearch.senate.gov/search/view/ptr/7dfdae57-9401-4bf1-9059-85d1e5ee4a84/",
+    "id": "5db66997725cb320"
+   },
+   {
+    "src": "senate",
+    "who": "John Boozman",
+    "where": "Senate",
+    "owner": "Joint",
+    "ticker": "CSCO",
+    "asset": "Cisco Systems, Inc. - Common Stock",
+    "type": "buy",
+    "amin": 1001,
+    "amax": 15000,
+    "date": "2026-09-24",
+    "disclosed": "2026-10-21",
+    "link": "https://efdsearch.senate.gov/search/view/ptr/94c5f7b9-cdbc-40b4-aeba-de920da58588/",
+    "id": "dcb9001b8e961a1b"
+   },
+   {
+    "src": "senate",
+    "who": "John Boozman",
+    "where": "Senate",
+    "owner": "Joint",
+    "ticker": "O",
+    "asset": "Realty Income Corporation Common Stock",
+    "type": "buy",
+    "amin": 1001,
+    "amax": 15000,
+    "date": "2026-09-24",
+    "disclosed": "2026-10-21",
+    "link": "https://efdsearch.senate.gov/search/view/ptr/94c5f7b9-cdbc-40b4-aeba-de920da58588/",
+    "id": "72440e54439ebce1"
+   },
+   {
+    "src": "senate",
+    "who": "John Boozman",
+    "where": "Senate",
+    "owner": "Joint",
+    "ticker": "TLH",
+    "asset": "iShares 10-20 Year Treasury Bond ETF",
+    "type": "sell_part",
+    "amin": 1001,
+    "amax": 15000,
+    "date": "2026-09-21",
+    "disclosed": "2026-10-21",
+    "link": "https://efdsearch.senate.gov/search/view/ptr/7dfdae57-9401-4bf1-9059-85d1e5ee4a84/",
+    "id": "f02cc7659f1e2d0b"
+   },
+   {
+    "src": "senate",
+    "who": "John Boozman",
+    "where": "Senate",
+    "owner": "Joint",
+    "ticker": "XTWO",
+    "asset": "BondBloxx Bloomberg Two Year Target Duration US Treasury ETF",
+    "type": "buy",
+    "amin": 1001,
+    "amax": 15000,
+    "date": "2026-09-21",
+    "disclosed": "2026-10-21",
+    "link": "https://efdsearch.senate.gov/search/view/ptr/94c5f7b9-cdbc-40b4-aeba-de920da58588/",
+    "id": "a68c8aa4e5790d28"
+   },
+   {
+    "src": "senate",
+    "who": "John Boozman",
+    "where": "Senate",
+    "owner": "Joint",
+    "ticker": "VEA",
+    "asset": "Vanguard Developed Markets Index Fund - ETF Shares",
+    "type": "sell_part",
+    "amin": 1001,
+    "amax": 15000,
+    "date": "2026-09-09",
+    "disclosed": "2026-10-21",
+    "link": "https://efdsearch.senate.gov/search/view/ptr/7dfdae57-9401-4bf1-9059-85d1e5ee4a84/",
+    "id": "8f6f7b1712f384e8"
+   },
+   {
+    "src": "senate",
+    "who": "John Boozman",
+    "where": "Senate",
+    "owner": "Joint",
+    "ticker": "SPYM",
+    "asset": "Tradr 2X Long SPY Monthly ETF",
+    "type": "sell_part",
+    "amin": 1001,
+    "amax": 15000,
+    "date": "2026-09-09",
+    "disclosed": "2026-10-21",
+    "link": "https://efdsearch.senate.gov/search/view/ptr/7dfdae57-9401-4bf1-9059-85d1e5ee4a84/",
+    "id": "5c5ab629075a5609"
+   },
+   {
+    "src": "senate",
+    "who": "John Boozman",
+    "where": "Senate",
+    "owner": "Joint",
+    "ticker": "EFA",
+    "asset": "iShares MSCI EAFE ETF",
+    "type": "sell_part",
+    "amin": 1001,
+    "amax": 15000,
+    "date": "2026-09-09",
+    "disclosed": "2026-10-21",
+    "link": "https://efdsearch.senate.gov/search/view/ptr/7dfdae57-9401-4bf1-9059-85d1e5ee4a84/",
+    "id": "88b917118784a65d"
+   },
+   {
+    "src": "senate",
+    "who": "John Boozman",
+    "where": "Senate",
+    "owner": "Joint",
+    "ticker": "MU",
+    "asset": "Micron Technology, Inc. - Common Stock",
+    "type": "sell_part",
+    "amin": 1001,
+    "amax": 15000,
+    "date": "2026-09-09",
+    "disclosed": "2026-10-21",
+    "link": "https://efdsearch.senate.gov/search/view/ptr/7dfdae57-9401-4bf1-9059-85d1e5ee4a84/",
+    "id": "3f21f5d39cc7ed89"
+   },
+   {
+    "src": "senate",
+    "who": "John Boozman",
+    "where": "Senate",
+    "owner": "Joint",
+    "ticker": "GIGB",
+    "asset": "Goldman Sachs Access Investment Grade Corporate Bond ETF",
+    "type": "buy",
+    "amin": 1001,
+    "amax": 15000,
+    "date": "2026-09-09",
+    "disclosed": "2026-10-21",
+    "link": "https://efdsearch.senate.gov/search/view/ptr/94c5f7b9-cdbc-40b4-aeba-de920da58588/",
+    "id": "5b4c4673d69ae26f"
+   },
+   {
+    "src": "senate",
+    "who": "John Boozman",
+    "where": "Senate",
+    "owner": "Joint",
+    "ticker": "JMBS",
+    "asset": "Janus Henderson Mortgage-Backed Securities ETF",
+    "type": "buy",
+    "amin": 1001,
+    "amax": 15000,
+    "date": "2026-09-09",
+    "disclosed": "2026-10-21",
+    "link": "https://efdsearch.senate.gov/search/view/ptr/94c5f7b9-cdbc-40b4-aeba-de920da58588/",
+    "id": "de7b0ae1dfa0a0ac"
+   },
+   {
+    "src": "senate",
+    "who": "John Boozman",
+    "where": "Senate",
+    "owner": "Joint",
+    "ticker": "XFIV",
+    "asset": "BondBloxx Bloomberg Five Year Target Duration US Treasury ETF",
+    "type": "buy",
+    "amin": 1001,
+    "amax": 15000,
+    "date": "2026-09-09",
+    "disclosed": "2026-10-21",
+    "link": "https://efdsearch.senate.gov/search/view/ptr/94c5f7b9-cdbc-40b4-aeba-de920da58588/",
+    "id": "b6171cdfeac4b97f"
+   },
+   {
+    "src": "senate",
+    "who": "John Boozman",
+    "where": "Senate",
+    "owner": "Joint",
+    "ticker": "MBB",
+    "asset": "iShares MBS ETF",
+    "type": "buy",
+    "amin": 1001,
+    "amax": 15000,
+    "date": "2026-09-09",
+    "disclosed": "2026-10-21",
+    "link": "https://efdsearch.senate.gov/search/view/ptr/94c5f7b9-cdbc-40b4-aeba-de920da58588/",
+    "id": "8e98370a1ad65c5c"
+   },
+   {
+    "src": "senate",
+    "who": "John Boozman",
+    "where": "Senate",
+    "owner": "Joint",
+    "ticker": "IEF",
+    "asset": "iShares 7-10 Year Treasury Bond ETF",
+    "type": "buy",
+    "amin": 1001,
+    "amax": 15000,
+    "date": "2026-09-09",
+    "disclosed": "2026-10-21",
+    "link": "https://efdsearch.senate.gov/search/view/ptr/94c5f7b9-cdbc-40b4-aeba-de920da58588/",
+    "id": "86893d73bc9b80e7"
+   },
+   {
+    "src": "senate",
+    "who": "John Boozman",
+    "where": "Senate",
+    "owner": "Joint",
+    "ticker": "TLH",
+    "asset": "iShares 10-20 Year Treasury Bond ETF",
+    "type": "buy",
+    "amin": 1001,
+    "amax": 15000,
+    "date": "2026-09-09",
+    "disclosed": "2026-10-21",
+    "link": "https://efdsearch.senate.gov/search/view/ptr/94c5f7b9-cdbc-40b4-aeba-de920da58588/",
+    "id": "e9cee8833739803c"
+   },
+   {
+    "src": "senate",
+    "who": "John Boozman",
+    "where": "Senate",
+    "owner": "Joint",
+    "ticker": "CMBS",
+    "asset": "iShares CMBS ETF",
+    "type": "buy",
+    "amin": 1001,
+    "amax": 15000,
+    "date": "2026-09-09",
+    "disclosed": "2026-10-21",
+    "link": "https://efdsearch.senate.gov/search/view/ptr/94c5f7b9-cdbc-40b4-aeba-de920da58588/",
+    "id": "23c2e01898eaa9a0"
+   },
    {
     "src": "house",
     "who": "Michael Rulli",
@@ -14660,7 +14915,9 @@
    "20035551": "2026-10-19",
    "20035671": "2026-10-19",
    "20035687": "2026-10-20",
-   "20035691": "2026-10-20"
+   "20035691": "2026-10-20",
+   "7dfdae57-9401-4bf1-9059-85d1e5ee4a84": "2026-10-21",
+   "94c5f7b9-cdbc-40b4-aeba-de920da58588": "2026-10-21"
   },
   "queue": [],
   "ready": {
@@ -14668,7 +14925,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-21T21:31:32.296733+00:00",
+  "checked": "2026-10-21T22:31:59.930018+00:00",
   "sec_seen": [
    "0001193125-26-428030",
    "0001398344-26-018550",
