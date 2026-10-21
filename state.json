@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "04681cad0724e111": "2026-10-18T14:09:03.559409+00:00",
   "27414ca91531e0c1": "2026-10-18T14:39:03.499992+00:00",
   "7031356bcc875869": "2026-10-18T14:39:03.499992+00:00",
   "0c70ded9f2b6700e": "2026-10-18T14:49:03.526626+00:00",
@@ -854,18 +853,12 @@
   "eac2f5fa5e65eea4": "2026-10-21T13:46:03.696758+00:00",
   "4776ceda1ddaeaf7": "2026-10-21T13:51:03.737518+00:00",
   "277c5647ed578765": "2026-10-21T13:56:03.710296+00:00",
-  "541f36afd2cf25ec": "2026-10-21T14:06:03.814046+00:00"
+  "541f36afd2cf25ec": "2026-10-21T14:06:03.814046+00:00",
+  "1f9bd04895a9bb11": "2026-10-21T14:11:03.758287+00:00",
+  "043f834fd7983dfd": "2026-10-21T14:11:03.758287+00:00",
+  "5dcc34e12d8aa306": "2026-10-21T14:11:03.758287+00:00"
  },
  "recent": [
-  {
-   "title": "Глава «Деловой России» назвал препятствия для развития новой экономики",
-   "link": "https://www.rbc.ru/economics/18/10/2026/6ad4c67cbde8eceba45e155e",
-   "sources": [
-    "RBC"
-   ],
-   "score": 1,
-   "ts": "2026-10-18T14:09:03.559409+00:00"
-  },
   {
    "title": "Option Traders Brace for VIX Surge as AI Jitters Jolt Market",
    "link": "https://www.bloomberg.com/news/articles/2026-10-18/option-traders-brace-for-vix-surge-as-ai-jitters-jolt-market",
@@ -8237,6 +8230,41 @@
    "title_ru": "Энди Бернхэм планирует сократить постоянные расходы на коммунальные счета за газ",
    "lead": "Experts say providers would probably recover loss of daily fixed fee via the unit rate",
    "lead_ru": "Эксперты говорят, что поставщики, вероятно, возместят потерю ежедневной фиксированной платы за счет удельной ставки."
+  },
+  {
+   "title": "European shares flat as strong earnings offset French unrest worries",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQR0l0UndFem5tT1A5MjFoMDI2dXJGY3FiRnNaZE1CNzVRVmJmWmlOY19xLXRDclZkbkgwWGFVdlNqbGlpckJFQUYxRXpHZmtnS2NMVDB6cnV5T3Q4eW9DalhZRHJ4MTRJSDVRaGFJVGdJTFJYQ3E2RFhOUWpXTFB0X0tnaHhIdHBKQmxaS0I1LU5OWHlYc3VnaVdDRVktMFJxWDdjNnhHOFVBbk5HQXpNM2pqUlFTZG8?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-21T14:11:03.758287+00:00",
+   "title_ru": "Европейские акции не изменились, так как сильные прибыли компенсировали опасения по поводу волнений во Франции",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "Indian central bank rejects all bids at treasury bill auction as short-term yields surge",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPdUNZdWpoUHRuMm9NQkFzanljSGhwblpRaW5fcFBscEtiOHkwYWJKZXNmSFllcWNNZkNKR3doSkItZ0k0dkE4RFdReDRhTHRaaXZOVENkRnhFaTVKa0s0RV9nS1Q0SHpkbWl2eENqT0dpSE92LTFtSU1tcDR0TkdvYVE0UDZXZWJWMHU3R3FHbTBOWlZjNmZfeE53RG9WMk8xWXlZT01FY1FZNnBOb2JTd0doMXpEdklNY0dPUkc3cGNuUQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-21T14:11:03.758287+00:00",
+   "title_ru": "Центральный банк Индии отклоняет все заявки на аукционе казначейских векселей из-за резкого роста доходности краткосрочных облигаций",
+   "tags": [
+    "bonds"
+   ]
+  },
+  {
+   "title": "Meta’s AI spending spree has investors taking a page from the financial-crisis playbook",
+   "link": "https://www.marketwatch.com/story/metas-ai-spending-spree-has-investors-taking-a-page-from-the-financial-crisis-playbook-4ea05f5c?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 2,
+   "ts": "2026-10-21T14:11:03.758287+00:00"
   }
  ],
  "last_digest": "2026-10-20",
@@ -13479,11 +13507,9 @@
   "sec_seen": [
    "0001193125-26-427145",
    "0001628280-26-066621",
-   "0001094629-26-000004",
    "0001493152-26-047849",
+   "0001094629-26-000004",
    "0000919574-26-007106",
-   "0001859690-26-000196",
-   "0001646649-26-000034",
    "0001193125-26-427144",
    "0002109337-26-000012",
    "0001976408-26-000898",
