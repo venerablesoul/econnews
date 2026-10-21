@@ -827,7 +827,11 @@
   "6f02bdc5e5a90b96": "2026-10-21T12:01:03.675715+00:00",
   "488f6c58f0f8f110": "2026-10-21T12:01:03.675715+00:00",
   "6f90868447b9634e": "2026-10-21T12:06:03.672066+00:00",
-  "6a9015b6d4a71aa4": "2026-10-21T12:11:03.679580+00:00"
+  "6a9015b6d4a71aa4": "2026-10-21T12:11:03.679580+00:00",
+  "51a1255c651c1d05": "2026-10-21T12:16:03.637203+00:00",
+  "5ad39845e4d34e98": "2026-10-21T12:16:03.637203+00:00",
+  "cc59101b3f2b025d": "2026-10-21T12:16:03.637203+00:00",
+  "598fdccac7d22e21": "2026-10-21T12:16:03.637203+00:00"
  },
  "recent": [
   {
@@ -7972,6 +7976,34 @@
    "title_ru": "Южная Африка ужесточает бюджетные правила по мере стабилизации государственного долга",
    "lead": "South African Finance Minister Enoch Godongwana unveiled new rules to ensure fiscal sustainability as debt peaked.",
    "lead_ru": "Министр финансов ЮАР Энох Годонгвана представил новые правила, призванные обеспечить финансовую устойчивость в условиях пика долга."
+  },
+  {
+   "title": "French bonds lead euro zone yields higher",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNMk5MTWU0OHd6RWtKSTFHNTZ4Q0Q0dFhaNnQzeHBHeTE4Q3BmY2FpaGdCbERYWVItcWE1ejJ2RUtMQ044Q1hGemNOY05vcDl1bHp0Z1pmbF81UW1nQnBCLThwYkh6LXhEOUQ4NGJGYmZ3WGRzTmxqWTV1NThkS3IzWGp4WXlUdjVUWFBlTnJQaw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-21T12:16:03.637203+00:00",
+   "title_ru": "Французские облигации привели к росту доходности еврозоны",
+   "tags": [
+    "bonds"
+   ]
+  },
+  {
+   "title": "Civil servant denies 'criminal intent' after juggling five government jobs",
+   "link": "https://www.bbc.co.uk/news/articles/cmze4w63ly42o?at_medium=RSS&at_campaign=rss",
+   "sources": [
+    "BBC"
+   ],
+   "score": 3,
+   "ts": "2026-10-21T12:16:03.637203+00:00",
+   "title_ru": "Госслужащий отрицает «преступные намерения» после того, как совмещал пять государственных должностей",
+   "lead": "Kashim Chowdhury was contracted for 183 hours a week, more than the number of hours in seven days.",
+   "lead_ru": "С Кашимом Чоудхури был заключен контракт на 183 часа в неделю, что больше, чем количество часов за семь дней.",
+   "tags": [
+    "jobs"
+   ]
   }
  ],
  "last_digest": "2026-10-20",
@@ -13194,7 +13226,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-21T11:16:03.634244+00:00",
+  "checked": "2026-10-21T12:16:03.637203+00:00",
   "sec_seen": [
    "0001437749-26-033037",
    "0000804328-26-000106",
