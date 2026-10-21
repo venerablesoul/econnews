@@ -889,7 +889,10 @@
   "7426f0fa177666e0": "2026-10-21T17:36:32.172855+00:00",
   "9b689421c976fbc6": "2026-10-21T17:46:33.195194+00:00",
   "6d99e04ccb6e825d": "2026-10-21T17:46:33.195194+00:00",
-  "b6420a9ba1e1b7f0": "2026-10-21T17:46:33.195194+00:00"
+  "b6420a9ba1e1b7f0": "2026-10-21T17:46:33.195194+00:00",
+  "a8b7bb4571618653": "2026-10-21T18:11:32.992183+00:00",
+  "454d26b8b8195cbf": "2026-10-21T18:11:32.992183+00:00",
+  "615904c4b8cc6abd": "2026-10-21T18:11:32.992183+00:00"
  },
  "recent": [
   {
@@ -8679,6 +8682,29 @@
    "score": 3,
    "ts": "2026-10-21T17:46:33.195194+00:00",
    "title_ru": "ЕС предложит новые инструменты для защиты рынка, говорит фон дер Ляйен"
+  },
+  {
+   "title": "Brookings paper offers broad plan to shrink Fed balance sheet",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQOWJYd0NERVlESGhjUzBFQm1tQkdDMVZtbnZxXzByQkxIS29abXpTRXZqYXhyamV2b19FbUpCR2RoWW9aUGVvenh5Q20tVWpWQzhRYnQzTk1iaEtQZWxPTnJUZU5kUHR2NUxvMHlLS1JRR0g2dFktUEhCbDVvTGRUU2YybEk5SzFYRjRpZjFqUVhKQ0JQaElseUI2QjhGMmY1R3d1NGZxcmYwMVlyQ1dvWQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-21T18:11:32.992183+00:00",
+   "title_ru": "В документе Брукингса предлагается обширный план по сокращению баланса ФРС",
+   "tags": [
+    "Fed"
+   ]
+  },
+  {
+   "title": "Europe's financial regulators query Google over cloud outage that hit banks",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOUzllb1hMZlRLZ3ZfSFFIOGpJQXR1bG0ycmt2dElIZ25fck94R08tWmxRaXlGVUUwWXNjUF9wNEREWU00dEtEZnBMcV8tVmhZb3JnUmlvVE9icm13azlSZWRmTm1oMFBBa3BvQVNTNzh3ZUxoUDBpN09ZclN0Z0pRdEExWEdSdXBSRGNsbVBJSEx5OE9QLVVySll5MXZ5M0VMcFI1VWZKcExhWWVVY0NpRE1sOWJ2LWgzaWN6eHFhRVJzalE1Mmc?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-21T18:11:32.992183+00:00",
+   "title_ru": "Европейские финансовые регуляторы запрашивают Google из-за сбоя в работе облака, который ударил по банкам"
   }
  ],
  "last_digest": "2026-10-21",
@@ -8730,7 +8756,7 @@
   "2026-10-21-21"
  ],
  "calendar": {
-  "fetched": "2026-10-21T12:11:03.679580+00:00",
+  "fetched": "2026-10-21T18:11:32.992183+00:00",
   "events": [
    {
     "title": "IMF Meetings",
@@ -9225,7 +9251,7 @@
     "country": "USD",
     "ts": "2026-10-22T14:30:00+00:00",
     "impact": "Low",
-    "forecast": "83B",
+    "forecast": "80B",
     "previous": "67B"
    },
    {
@@ -9377,7 +9403,7 @@
     "country": "USD",
     "ts": "2026-10-23T13:45:00+00:00",
     "impact": "Medium",
-    "forecast": "57.8",
+    "forecast": "57.9",
     "previous": "58.7"
    },
    {
@@ -13970,17 +13996,12 @@
   },
   "checked": "2026-10-21T17:26:32.437435+00:00",
   "sec_seen": [
-   "0000006955-26-000085",
    "0001628280-26-066669",
-   "0000006955-26-000089",
-   "0002156811-26-000002",
-   "0001193125-26-427623",
+   "0001628280-26-066673",
    "0001213900-26-111290",
    "0001628280-26-066670",
    "0000912593-26-000266",
    "0001628280-26-066667",
-   "0001628280-26-066649",
-   "0000006955-26-000087",
    "0001213900-26-111283",
    "0001213900-26-111291"
   ],
