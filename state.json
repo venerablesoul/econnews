@@ -743,7 +743,8 @@
   "7b50493101aa3b40": "2026-10-21T05:20:00.374560+00:00",
   "1d170ceaf6659036": "2026-10-21T05:20:00.374560+00:00",
   "316c57d889129b6b": "2026-10-21T05:20:00.374560+00:00",
-  "cd08cc1dbb6b49e9": "2026-10-21T05:25:00.424392+00:00"
+  "cd08cc1dbb6b49e9": "2026-10-21T05:25:00.424392+00:00",
+  "7c5b327d002b854e": "2026-10-21T05:30:00.333038+00:00"
  },
  "recent": [
   {
@@ -6937,6 +6938,18 @@
     "China",
     "jobs"
    ]
+  },
+  {
+   "title": "SpaceX 3Q Earnings Beat, SpaceX and Tesla Discuss Potential Merger",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-21/the-asia-trade-10-21-2026-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-21T05:30:00.333038+00:00",
+   "title_ru": "Прибыль SpaceX за 3-й квартал превзошла, SpaceX и Tesla обсуждают возможное слияние",
+   "lead": "\"Bloomberg: The Asia Trade\" brings you everything you need to know to get ahead as the trading day begins in Asia.",
+   "lead_ru": "«Bloomberg: The Asia Trade» предлагает вам все, что вам нужно знать, чтобы двигаться вперед, когда в Азии начинается торговый день."
   }
  ],
  "last_digest": "2026-10-20",
@@ -12177,6 +12190,8 @@
    "0002156232-26-000003",
    "0001628280-26-066575"
   ],
-  "errors": {}
+  "errors": {
+   "sec": "TimeoutError: The read operation timed out"
+  }
  }
 }
