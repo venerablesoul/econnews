@@ -838,7 +838,9 @@
   "bee9e65933b7d06d": "2026-10-21T12:36:03.690382+00:00",
   "3aea26094d3b2f61": "2026-10-21T12:36:03.690382+00:00",
   "194a4f34fdc2663c": "2026-10-21T12:41:03.633595+00:00",
-  "b359b6892b7e8d12": "2026-10-21T12:51:03.654660+00:00"
+  "b359b6892b7e8d12": "2026-10-21T12:51:03.654660+00:00",
+  "2ba06d9b185e3998": "2026-10-21T12:56:03.662759+00:00",
+  "92005e5a6108e5b0": "2026-10-21T12:56:03.662759+00:00"
  },
  "recent": [
   {
@@ -8083,6 +8085,33 @@
     "rates",
     "Russia"
    ]
+  },
+  {
+   "title": "Sticky Inflation Is Testing the Fed’s Resolve",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPQkUxWWNmVENYWHNyd3ZtSlV1SGVPSGpFdXl0dm5GWHpVVktsMi1wZ3RmdG4xdkV4SUpmaVMxLTFhQkpDLUs0VDdWOXZnVGZidXVZRGdkOUFNS0E4Tmd2Z3VLZ0wyUjY3SGptbjZnLWp5TUVJekdodHdId0trTWFWUTZQT09YVWluWkdCNFBIaFhfYjZRQkRfNEVRS21PV181TlQyaklJNVM1Qm8?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-21T12:56:03.662759+00:00",
+   "title_ru": "Устойчивая инфляция проверяет решимость ФРС",
+   "tags": [
+    "Fed",
+    "inflation"
+   ]
+  },
+  {
+   "title": "Nasdaq futures lead gains as SpaceX, Super Micro results lift AI stocks",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQZUJTOXdaa0JmVzZubm12MGt4VnNSemsyOW1fQXpCMnhEc25HSVJRZk93d2NYUXQ3eHBuQklaNE1FT1QyQ1NqdTFkdExDbmoxY2JtOWhLQkVtYXczMHh3a3VsZmhub1JFc0FIZHN1eEcwc3FRZVZWQnBoSjFjekFYTUN6X2d5WHJUWGpDU2paekhhU24zenhNbWpXUmtfdmo5cTFIZVZwTXdiRzZoeUtiazhHWkJEWEVZLTVmQmRMcw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-21T12:56:03.662759+00:00",
+   "title_ru": "Фьючерсы Nasdaq лидируют в росте, поскольку результаты SpaceX и Super Micro поднимают акции ИИ",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-20",
@@ -13323,7 +13352,6 @@
   },
   "checked": "2026-10-21T12:16:03.637203+00:00",
   "sec_seen": [
-   "0001437749-26-033037",
    "0000804328-26-000106",
    "0001090355-26-000009",
    "0001775297-26-000014",
