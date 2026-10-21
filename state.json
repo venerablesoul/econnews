@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "a849abcc7b8fb607": "2026-10-18T19:14:36.354711+00:00",
-  "4f9e746f9dfe308a": "2026-10-18T19:19:36.362144+00:00",
   "bd86d2c58d380a79": "2026-10-18T19:24:36.393830+00:00",
   "6598dadb35df2bed": "2026-10-18T20:19:36.401022+00:00",
   "60b4ad74af879741": "2026-10-18T20:19:36.401022+00:00",
@@ -897,21 +895,6 @@
   "ab3c7a9e46fa4e5e": "2026-10-21T19:11:32.200553+00:00"
  },
  "recent": [
-  {
-   "title": "Bond Market’s Big Short Bet Gets Wakeup Call as AI Trade Wobbles",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-18/bond-market-s-big-short-bet-gets-wakeup-call-as-ai-trade-wobbles",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-18T19:19:36.362144+00:00",
-   "title_ru": "Большая короткая ставка на рынке облигаций становится тревожным сигналом, поскольку торговля ИИ колеблется",
-   "lead": "US Treasuries are showing tentative signs of reclaiming their traditional role as a haven — threatening to wrong-foot investors who are heavily positioned for this year’s bond slump to deepen.",
-   "lead_ru": "Казначейские облигации США демонстрируют предварительные признаки возвращения к своей традиционной роли убежища, что угрожает заблудшим инвесторам, которые имеют большие шансы на углубление спада облигаций в этом году.",
-   "tags": [
-    "bonds"
-   ]
-  },
   {
    "title": "- Bureau of Labor Statistics (.gov)",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNS2xYV2Zyanl1R0tSZ2RYRUkzQl9WVXYwQkI1NHZYTnZDejBTbDhBSEd4b1h3Nk12QlJkdDlodUI1OFIxTk5ZOFFBRVZpQ3ZqZWFiSXY1Vjk1OXpxbFBXQ1JpLVI3b2t6TGs5VGVGT3VFQjZUVER3MXVkYkttWlk3RFJvT0VQUktMMWlaejQ0QzhIWmhhbjVtcEdSSERGTjJGOWpvOHZtdXNic1hhMXZNdkNmTUpNUQ?oc=5",
@@ -10747,6 +10730,22 @@
    },
    {
     "src": "sec",
+    "id": "c04de42912e0f4a8",
+    "ticker": "GF",
+    "company": "NEW GERMANY FUND INC",
+    "who": "Saba Capital Management, L.p.",
+    "role": "10% owner",
+    "type": "buy",
+    "value": 906898,
+    "shares": 87623,
+    "price": 10.35,
+    "plan": false,
+    "date": "2026-10-20",
+    "disclosed": "2026-10-21",
+    "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000367/0001510281-26-000367-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "c05a530a67a0ee25",
     "ticker": "SE",
     "company": "Sea Ltd",
@@ -13995,6 +13994,7 @@
   },
   "checked": "2026-10-21T18:26:33.200156+00:00",
   "sec_seen": [
+   "0001510281-26-000367",
    "0001510281-26-000366",
    "0000354647-26-000118",
    "0001760581-26-000071"
