@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "de27c8a1727e3772": "2026-10-18T05:53:04.653935+00:00",
   "1b06a23e4bf51eb4": "2026-10-18T06:13:04.669210+00:00",
   "824ffd8b4cfd0fde": "2026-10-18T07:18:30.880939+00:00",
   "dc7af6c4580f768f": "2026-10-18T07:23:30.921902+00:00",
@@ -745,19 +744,11 @@
   "7c5b327d002b854e": "2026-10-21T05:30:00.333038+00:00",
   "f5316af10a0919e0": "2026-10-21T05:35:00.328560+00:00",
   "e26dcb66516139fd": "2026-10-21T05:40:00.388981+00:00",
-  "f0d3733216414341": "2026-10-21T05:45:00.383754+00:00"
+  "f0d3733216414341": "2026-10-21T05:45:00.383754+00:00",
+  "a6250d80be5abc34": "2026-10-21T05:55:34.254420+00:00",
+  "418df03155f6cba3": "2026-10-21T05:55:34.254420+00:00"
  },
  "recent": [
-  {
-   "title": "Todos los autores",
-   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5BVmtJUUJfX2loNUE5ODB6RnVpLWlOR3FPSHlrX2c0QXYzdHZPU1RWelljVUtCRzIzckowRHduSzdmbmVGQzFtUndaMVBtaEt0X2dMYk5hSHVJMmh0SUFOaUkydmk?oc=5",
-   "sources": [
-    "IMF"
-   ],
-   "score": 4,
-   "ts": "2026-10-18T05:53:04.653935+00:00",
-   "title_ru": "Все авторы"
-  },
   {
    "title": "Heating oil customers face tough winter",
    "link": "https://www.bbc.co.uk/news/articles/cq1j3x66e1rno?at_medium=RSS&at_campaign=rss",
@@ -6991,6 +6982,33 @@
    "score": 4,
    "ts": "2026-10-21T05:45:00.383754+00:00",
    "title_ru": "Норвежский банк DNB превысил прогноз прибыли в третьем квартале, поскольку норвежская экономика остается устойчивой"
+  },
+  {
+   "title": "In China, ECB makes case for euro liquidity lines",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNN3NOb19uSnBzc0sxX3ZDZjdhVDNlNTVHR0tYZnFCT1NPc0wwSE9oSkp0SjA2WXJzMmJnNnY5NEVKN3ZBdlE3aTJBNmRpaC10YmFjekVvWS1fQW83RWE3NDBRVDRXdmVVS2NFRFBWelRZQ3lIakk5RUhSdExqM0F4NktQOHdkVkFnQ2pGaDhIaFNsTmpRWnhYSWVR?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-21T05:55:34.254420+00:00",
+   "title_ru": "В Китае ЕЦБ выступает за линии ликвидности в евро",
+   "tags": [
+    "ECB",
+    "China"
+   ]
+  },
+  {
+   "title": "Indian share benchmarks rise, led by IT stocks, Reliance with Jio IPO in focus",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQdjNITnczLXgyWGppRkFrTDc1dE9MOWM3aENNVGVKRkFJWU9XT0RUcWM4WTFUaVlxanNvVVZQV0E3OGFZWEM4UDFLSXFuV3psVEFxOGtqVFgxdGpVWDRILWJxS1IwUW1PU0FDSGg4ZUNjQnlUeG54aDI5TTREMDIwWXJHdXU5WW1ndEp2YTBVejl3UW5YeXpVRUItV2NKbGdqb2ZwNlV3Wm8xWThfRU9xVQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-21T05:55:34.254420+00:00",
+   "title_ru": "Индексы индийских акций растут во главе с акциями IT-компаний, Reliance и IPO Jio в центре внимания",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-20",
