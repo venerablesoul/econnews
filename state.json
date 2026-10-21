@@ -813,7 +813,12 @@
   "e087efbd2b8b0b2e": "2026-10-21T11:10:34.267441+00:00",
   "6f4a1c500524c38f": "2026-10-21T11:16:03.634244+00:00",
   "853c6a887266f9fe": "2026-10-21T11:16:03.634244+00:00",
-  "e338e4ded9c53283": "2026-10-21T11:26:03.639596+00:00"
+  "e338e4ded9c53283": "2026-10-21T11:26:03.639596+00:00",
+  "a88381438741027f": "2026-10-21T11:31:03.634038+00:00",
+  "143da3aa7d4e731c": "2026-10-21T11:36:03.634524+00:00",
+  "84010c89b9e851cd": "2026-10-21T11:36:03.634524+00:00",
+  "422768cacdf8a8dc": "2026-10-21T11:36:03.634524+00:00",
+  "b3cd194a68800493": "2026-10-21T11:36:03.634524+00:00"
  },
  "recent": [
   {
@@ -7821,6 +7826,47 @@
    ],
    "score": 1,
    "ts": "2026-10-21T11:26:03.639596+00:00"
+  },
+  {
+   "title": "South African inflation rises modestly but bigger fuel-driven jump seen in October",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOampUMVFEMmRCN2JXOXg1dTR6aGdjaFVmRF9IeGF4Q3J4a05MQ2hpdmk3ZU04MU01dTFVQzZ6dGoxUGxTRktfbUpURUxtZmdMdWdid054OFJHWGVYVmI4eTdvWUlCak1LM0JZNjJTRDB5NWllNlI0TUZfOTZEMlhUbV9PMW1nWE5hNTV5ZUVHQjNnVkw5UU5oTUkzNVZPSWhNVkZPMV9fcTc?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-21T11:36:03.634524+00:00",
+   "title_ru": "Инфляция в Южной Африке растет умеренно, но в октябре наблюдался более крупный скачок, вызванный топливом",
+   "tags": [
+    "inflation"
+   ]
+  },
+  {
+   "title": "Oppenheimer’s Stoltzfus Sees ‘Broader Rally’ in Stocks to Year End",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-21/oppenheimer-s-stoltzfus-sees-broader-rally-to-year-end-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-21T11:36:03.634524+00:00",
+   "title_ru": "Штольцфус Оппенгеймера предвидит «более широкое ралли» акций до конца года",
+   "lead": "John Stoltzfus, chief investment strategist at Oppenheimer, says traders have been carrying the equity market for the last month or so and expects “improved breadth in the market as we go forward.” He speaks on “Bloomberg…",
+   "lead_ru": "Джон Столцфус, главный инвестиционный стратег Oppenheimer, говорит, что трейдеры поддерживают рынок акций в течение последнего месяца или около того, и ожидает «увеличения широты рынка по мере нашего продвижения вперед». Он говорит в программе «Bloomberg…",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "The AI Boom Is Setting Up the Fed for a Rate Seesaw",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPbkxhbENxdmJIejMzbHhFeUVPZl9jNi1uY2x3WlhBWnNZM3J6ekVycGlQTzRPRTQtamNnXzJqbFM4R0xfYkRrZUhuNHEweDZDR2MtZ2E5OG5sR3FxWk9uYTJ1eTNkYVZwNGE3X18zWVBNUHZoQTBHbjdLU0g2bFV2SVFGV1I2TGRQbkNsVzJOeWVQYkZtN1RjdHFLN0dUTjdJaU82d01naWQ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-21T11:36:03.634524+00:00",
+   "title_ru": "Бум искусственного интеллекта настраивает ФРС на колебания ставок",
+   "tags": [
+    "Fed"
+   ]
   }
  ],
  "last_digest": "2026-10-20",
@@ -9828,6 +9874,22 @@
     "date": "2026-10-19",
     "disclosed": "2026-10-21",
     "link": "https://www.sec.gov/Archives/edgar/data/2113220/000119312526427145/0001193125-26-427145-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "d4657ab87af57a0b",
+    "ticker": "OWLS",
+    "company": "OBOOK HOLDINGS INC.",
+    "who": "Chun Kai Wang",
+    "role": "CEO",
+    "type": "buy",
+    "value": 52037,
+    "shares": 12192,
+    "price": 4.27,
+    "plan": false,
+    "date": "2026-10-19",
+    "disclosed": "2026-10-21",
+    "link": "https://www.sec.gov/Archives/edgar/data/2109337/000210933726000012/0002109337-26-000012-index.htm"
    },
    {
     "src": "sec",
@@ -13031,10 +13093,10 @@
   "sec_seen": [
    "0001437749-26-033037",
    "0000804328-26-000106",
-   "0001104659-26-117509",
    "0001090355-26-000009",
    "0001775297-26-000014",
    "0001140361-26-040292",
+   "0001976408-26-000898",
    "0001626201-26-000023",
    "0001917389-26-000025",
    "0001742734-26-000022",
@@ -13042,7 +13104,6 @@
    "0001628280-26-066577",
    "0001193125-26-427144",
    "0002071761-26-000013",
-   "0001104659-26-117507",
    "0001213900-26-111132",
    "0000907654-26-000110",
    "0002156232-26-000003",
@@ -13052,6 +13113,7 @@
    "0001713683-26-000208",
    "0001568238-26-000003",
    "0001646649-26-000034",
+   "0002109337-26-000012",
    "0001713683-26-000204",
    "0001193125-26-427145",
    "0001140361-26-040298",
