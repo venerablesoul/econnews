@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "1b06a23e4bf51eb4": "2026-10-18T06:13:04.669210+00:00",
   "824ffd8b4cfd0fde": "2026-10-18T07:18:30.880939+00:00",
   "dc7af6c4580f768f": "2026-10-18T07:23:30.921902+00:00",
   "dc894e81b0656c01": "2026-10-18T07:28:30.895975+00:00",
@@ -755,24 +754,12 @@
   "6b19d6aa99d8ff49": "2026-10-21T06:10:34.262503+00:00",
   "b4a8274ead94fb2d": "2026-10-21T06:10:34.262503+00:00",
   "34f3b1766052c8f0": "2026-10-21T06:10:34.262503+00:00",
-  "6b9a0ca1886336f6": "2026-10-21T06:10:34.262503+00:00"
+  "6b9a0ca1886336f6": "2026-10-21T06:10:34.262503+00:00",
+  "4284eb86584b23a3": "2026-10-21T06:15:34.290720+00:00",
+  "4e2f57ad9e141e2b": "2026-10-21T06:15:34.290720+00:00",
+  "7d40d4441d5608ea": "2026-10-21T06:15:34.290720+00:00"
  },
  "recent": [
-  {
-   "title": "Heating oil customers face tough winter",
-   "link": "https://www.bbc.co.uk/news/articles/cq1j3x66e1rno?at_medium=RSS&at_campaign=rss",
-   "sources": [
-    "BBC"
-   ],
-   "score": 4,
-   "ts": "2026-10-18T06:13:04.669210+00:00",
-   "title_ru": "Потребителям мазута предстоит суровая зима",
-   "lead": "The government plans to regulate heating oil prices after increases.",
-   "lead_ru": "Правительство планирует регулировать цены на мазут после повышения.",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "China proposes export controls on solar-manufacturing technologies",
    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOaGtBN1ctcU1NbGFxLXVKb01UVVdDUklxa3Z6Tk1ac05vT2lkd0d2THJqR1Q4VDBDTjJFSUlJYXNCdF83Tko2S0hrbDZSX3NrWWRrWFljNFNHOWhVUnpib3JpdjY3TWZJUEpEQzJKdnFpckZhZTM4X3RXTnhuMzVJWXRxemxoUTdlcDcwckxSUlROQ1pqbHZWdFplOEZUTHh1dDVxb3pfTlN3X2dURk1ETnJzTXJmUFluU0dfck1OSFl4YVlqZHE1NA?oc=5",
@@ -7141,6 +7128,44 @@
    "score": 3,
    "ts": "2026-10-21T06:10:34.262503+00:00",
    "title_ru": "Южноафриканский ранд не изменился до пересмотра бюджета в середине года"
+  },
+  {
+   "title": "FTSE 100 Live: UK Inflation Accelerated More Than Expected",
+   "link": "https://www.bloomberg.com/news/live-blog/2026-10-21/ftse-100-live-uk-inflation-data-cpi-pound-bonds-gilts-oil-prices-ai-stocks-what-s-moving-uk-markets-right-now-markets-today",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-21T06:15:34.290720+00:00",
+   "title_ru": "FTSE 100 в реальном времени: инфляция в Великобритании ускорилась больше, чем ожидалось",
+   "tags": [
+    "inflation"
+   ]
+  },
+  {
+   "title": "UK Borrowing Exceeds Forecast in Final Data Before Budget",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-21/uk-borrowing-exceeds-forecast-in-final-data-before-budget",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-21T06:15:34.290720+00:00",
+   "title_ru": "Заимствование Великобритании превысило прогноз по окончательным данным перед бюджетом",
+   "lead": "Britain borrowed more than forecast in the first six months of the fiscal year, highlighting the constraints facing Chancellor of the Exchequer John Healey ahead of his inaugural budget next week.",
+   "lead_ru": "Британия заняла больше, чем прогнозировалось, за первые шесть месяцев финансового года, что подчеркивает трудности, с которыми сталкивается канцлер казначейства Джон Хили в преддверии своего первого бюджета на следующей неделе."
+  },
+  {
+   "title": "Indonesia Haze Threatens Tiny Bugs That Power Palm Oil Output",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOc0pTc1JBa29zaklOQk9DeGR6UGkxN0UzS29QcmEtM3JmeVN3ajk1aW9iNHpiSzhVeWdMbkFFTTJPcXd0WVRFeWoxc3lON2VLUmxLaUVnMW5TUVU1enU5eFIxYk54VkV5cG1CNTlhQjlSbHlPaHcwM2lmT3B5bERFM1FqLTh4eXp1UzVXRnJydExLbmE4QVBSTHE4LU55U2MyWlNxRDhkbVdOQ1JxZHphdHJR?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-21T06:15:34.290720+00:00",
+   "title_ru": "Дымка в Индонезии угрожает крошечным жукам, которые питают производство пальмового масла",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-20",
@@ -12336,8 +12361,8 @@
    "0002071761-26-000013",
    "0000923120-26-000017",
    "0001140361-26-040298",
-   "0001437749-26-033037",
    "0000923120-26-000019",
+   "0001437749-26-033037",
    "0000919574-26-007106",
    "0001917389-26-000025",
    "0000804328-26-000106",
@@ -12348,8 +12373,8 @@
    "0001213900-26-111132",
    "0001713683-26-000206",
    "0001628280-26-066572",
-   "0001742734-26-000022",
    "0001104659-26-117507",
+   "0001742734-26-000022",
    "0001104659-26-117510",
    "0000907654-26-000110",
    "0002111867-26-000014",
