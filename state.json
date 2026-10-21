@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "7deb3b9cd78a6a71": "2026-10-18T16:19:04.171928+00:00",
   "21336a8511028457": "2026-10-18T16:29:04.222849+00:00",
   "edc3aefa5ae4ff4c": "2026-10-18T16:39:04.201762+00:00",
   "a409f8ebdb3f8eb3": "2026-10-18T18:14:36.368969+00:00",
@@ -870,7 +869,8 @@
   "78525365a8e69f6b": "2026-10-21T16:11:03.685861+00:00",
   "de9b3ce3be287748": "2026-10-21T16:11:03.685861+00:00",
   "2b847334fa089334": "2026-10-21T16:11:03.685861+00:00",
-  "bb316b9959cf7f2b": "2026-10-21T16:16:03.731327+00:00"
+  "bb316b9959cf7f2b": "2026-10-21T16:16:03.731327+00:00",
+  "af3112366a2367d7": "2026-10-21T16:21:03.707310+00:00"
  },
  "recent": [
   {
@@ -8435,6 +8435,16 @@
    "title_ru": "SpaceX возрождает торговлю искусственным интеллектом в преддверии результатов Meta и Tesla",
    "lead": "Jonathan Ferro, Lisa Abramowicz and Annmarie Hordern speak daily with leaders and decision makers from Wall Street to Washington and beyond.",
    "lead_ru": "Джонатан Ферро, Лиза Абрамович и Аннмари Хордерн ежедневно беседуют с лидерами и лицами, принимающими решения, от Уолл-стрит до Вашингтона и за его пределами."
+  },
+  {
+   "title": "Meta Earnings Will Provide a Gut Check for Struggling AI Trade",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQVk5TUHZuRWljMFJjM0IzbEtLSjFQdVRZb3hMWHhkN0FjZG9CMnNOWFJQWFJMUnBOWlFCRnh1LWRUeXZJMHdDd2V5OGw5OGotU1hJamNXUmpHWHBLVHBHQUlEMkRsMDJkdjAxckRYVl9vZklkVlZ6WjgtSEJkZGlFQllTQkVDc0JvMzdZakFLSDB4ajFRTHFZQXJVYTNiU29ZQ3hPdWs2YVhKaXJOTmtYY1pxMA?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-21T16:21:03.707310+00:00",
+   "title_ru": "Мета-доходы станут проверкой для борьбы с торговлей искусственным интеллектом"
   }
  ],
  "last_digest": "2026-10-20",
@@ -13710,6 +13720,7 @@
    "0001628280-26-066641",
    "0002058897-26-000324",
    "0002058897-26-000326",
+   "0001251987-26-000010",
    "0002058897-26-000318",
    "0001193125-26-427524",
    "0001111794-26-000016",
