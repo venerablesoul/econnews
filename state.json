@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "5e7c7b955328deba": "2026-10-18T11:03:30.900162+00:00",
-  "5a89324960192d99": "2026-10-18T11:03:30.900162+00:00",
   "182bd8e74703a700": "2026-10-18T11:13:30.892684+00:00",
   "6c44cac32b8c5c12": "2026-10-18T12:03:30.908193+00:00",
   "009f0ebde59cc26e": "2026-10-18T12:03:30.908193+00:00",
@@ -808,35 +806,13 @@
   "728e5087ce0dbb2a": "2026-10-21T10:25:34.239991+00:00",
   "fda44f6f88faac99": "2026-10-21T10:35:34.254173+00:00",
   "8046a29908587b8e": "2026-10-21T10:35:34.254173+00:00",
-  "937c15cafec26b54": "2026-10-21T10:45:34.303780+00:00"
+  "937c15cafec26b54": "2026-10-21T10:45:34.303780+00:00",
+  "1b9b90b9cce78d44": "2026-10-21T11:05:34.306293+00:00",
+  "8a0df6d9a73f22d8": "2026-10-21T11:05:34.306293+00:00",
+  "57aa1d0263c18ace": "2026-10-21T11:05:34.306293+00:00",
+  "342882277c02f129": "2026-10-21T11:05:34.306293+00:00"
  },
  "recent": [
-  {
-   "title": "Carney’s pipeline push is unlikely to bring back Canada’s oil jobs boom",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOcEtubmtfLWRIRC0xYjJxNnpzbkdOSzJPakNObmdUZ1EyRnB4cThXMjdRY3FWb1padzJMVVdoSG80Nk5lTmFMUU56dHdIU3kxcl9BYlVzOUROZzg5Y1lnTTdSS3h1YkJqdzJFaTB6b1JoV2h3dWxiUHRMNU1zMEpfcWx6b2pHQlJVXzJZLU1EdDVXXzd5X19DUW5memxWTHlPdTdqYl9YT0lrWndI?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-18T11:03:30.900162+00:00",
-   "title_ru": "Трубопроводный толчок Карни вряд ли вернет бум нефтяных рабочих мест в Канаде",
-   "tags": [
-    "oil",
-    "jobs"
-   ]
-  },
-  {
-   "title": "Gleaning group gives £1m of produce to food banks",
-   "link": "https://www.bbc.co.uk/news/articles/c6n49w1r2zxjo?at_medium=RSS&at_campaign=rss",
-   "sources": [
-    "BBC"
-   ],
-   "score": 3,
-   "ts": "2026-10-18T11:03:30.900162+00:00",
-   "title_ru": "Группа Gleaning предоставляет продовольственным банкам £ 1 млн продукции",
-   "lead": "Gleaning Cornwall warns that more funding is needed as costs rise sharply.",
-   "lead_ru": "Gleaning Cornwall предупреждает, что требуется больше финансирования, поскольку затраты резко возрастают."
-  },
   {
    "title": "Will Meta’s earnings restore confidence in the AI boom?",
    "link": "https://www.ft.com/content/7c2e889e-2eb5-4c62-821b-1a7f88c13d05?syn-25a6b1a6=1",
@@ -7751,6 +7727,58 @@
    "title_ru": "Акции производителя Ray-Ban подскочили на фоне беспокойства по поводу высоких продаж очков",
    "tags": [
     "markets"
+   ]
+  },
+  {
+   "title": "French 10-year bond yields hit 5%, highest since 2002",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOYXc5VF91b3J6TjJpdkR6VFR1SUtTX1VUY1ZTUFBTNXFIT3ZZQ3RBMTVPaDNjMVNZbzRqcGdqRjRXcFhEQjRZd0V6R2ZRZVJwOHdmeHl5LWhva0Y3c285ZUNuaG80bWxBNUMyczhxWWdPd0NZZlNUTVJmUEszM1dCMzU2dU43ZzJ0bHNMQVF5cjgzZWZMUWViWE5aeWc3NUYwSkE?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-21T11:05:34.306293+00:00",
+   "title_ru": "Доходность французских 10-летних облигаций достигла 5%, самого высокого уровня с 2002 года",
+   "tags": [
+    "bonds"
+   ]
+  },
+  {
+   "title": "Asia’s Chip Exports Soar as AI Bubble Debate Rages",
+   "link": "https://www.bloomberg.com/news/newsletters/2026-10-21/asia-s-chip-exports-soar-as-ai-bubble-debate-rages",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-21T11:05:34.306293+00:00",
+   "title_ru": "Экспорт чипов в Азии стремительно растет на фоне бушующих дебатов о пузыре искусственного интеллекта",
+   "lead": "As financial markets ask if the boom is healthy, Asia’s shipments are surging",
+   "lead_ru": "Поскольку финансовые рынки задаются вопросом, является ли бум здоровым, поставки в Азию растут."
+  },
+  {
+   "title": "Japan’s Premier Faces Delivery Test on Her Economic Pledges",
+   "link": "https://www.bloomberg.com/news/newsletters/2026-10-21/japan-s-premier-faces-delivery-test-on-her-economic-pledges",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-21T11:05:34.306293+00:00",
+   "title_ru": "Премьер-министру Японии предстоит испытание на выполнение своих экономических обещаний",
+   "lead": "The premier remains popular a year into her term but faces a host of economic challenges.",
+   "lead_ru": "Премьер-министр остается популярным даже год после своего президентского срока, но сталкивается с множеством экономических проблем."
+  },
+  {
+   "title": "Opposition to data centers will drive up inflation, says BlackRock’s Larry Fink",
+   "link": "https://www.marketwatch.com/story/opposition-to-data-centers-will-drive-up-inflation-says-blackrocks-larry-fink-831c25b9?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 3,
+   "ts": "2026-10-21T11:05:34.306293+00:00",
+   "title_ru": "Противодействие дата-центрам приведет к росту инфляции, говорит Ларри Финк из BlackRock",
+   "lead": "Fight the datacenters at your economic peril, says BlackRock’s CEO Larry Fink.",
+   "lead_ru": "Борьба с центрами обработки данных сопряжена с экономическим риском, — говорит генеральный директор BlackRock Ларри Финк.",
+   "tags": [
+    "inflation"
    ]
   }
  ],
