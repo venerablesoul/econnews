@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "148eef8540963ed7": "2026-10-18T23:04:36.368046+00:00",
-  "792442693243bf5d": "2026-10-18T23:09:36.391604+00:00",
-  "cea6927cb3b16471": "2026-10-18T23:09:36.391604+00:00",
   "a8275e02227b60ee": "2026-10-18T23:14:36.368519+00:00",
   "30d1e6ab87016853": "2026-10-18T23:14:36.368519+00:00",
   "5e8287a78fb6bbe2": "2026-10-18T23:20:13.679658+00:00",
@@ -898,32 +895,14 @@
   "82edbfdb4317c9a2": "2026-10-21T22:56:59.975106+00:00",
   "d3be7a472d9b1534": "2026-10-21T22:56:59.975106+00:00",
   "fc8843914b4d0503": "2026-10-21T22:56:59.975106+00:00",
-  "3acf591da5347eae": "2026-10-21T23:02:00.031864+00:00"
+  "3acf591da5347eae": "2026-10-21T23:02:00.031864+00:00",
+  "72db873980255609": "2026-10-21T23:06:59.946639+00:00",
+  "64fa5d29626df040": "2026-10-21T23:11:59.986478+00:00",
+  "2fb0d4accb28d9c5": "2026-10-21T23:11:59.986478+00:00",
+  "612f4e0253bd1383": "2026-10-21T23:11:59.986478+00:00",
+  "fd7b15fcce432406": "2026-10-21T23:11:59.986478+00:00"
  },
  "recent": [
-  {
-   "title": "India’s Finance Minister blames easy exits and excess liquidity for equity market's underperformance",
-   "link": "https://www.cnbc.com/2026/10/18/india-ai-nifty50-sensex-investors.html",
-   "sources": [
-    "CNBC"
-   ],
-   "score": 2,
-   "ts": "2026-10-18T23:04:36.368046+00:00"
-  },
-  {
-   "title": "China's Q3 GDP growth set to pick up as exports power ahead",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOcGVkYXFpU09qRXZIdVQyMDVVaHpJTUo4dE15M2hUSnM4Zm5VR09CLWNRelhzZUd3VDRSbWdCQkljSnJtTWoxNkJ0WXg4cFNLdExWSUlpV3ZEdEhUdTB4WG43RmIxQ0FqMlZrNUpnQ3liTlVraFdfbW1mTnBueVdNMGdaaFAzMVdFdW5nMGFaTEFTMmdqdVNERTA1RzlGanVEZVE?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 7,
-   "ts": "2026-10-18T23:09:36.391604+00:00",
-   "title_ru": "Рост ВВП Китая в третьем квартале должен ускориться, поскольку впереди экспортная мощь",
-   "tags": [
-    "China",
-    "GDP"
-   ]
-  },
   {
    "title": "Oil slips as Trump's sanction waiver may lead to more Russian fuel supplies",
    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPMmVLc19hd0VSYXIydVNTWENKZ2J5WVNvVDRQUjRfTUJXWGhjOGxGZkFHVm9SNnZzeU9TWUhrYnJTRU1sVFRnX1BwZVd3NHB5a0NLdThkbDRldlg2eHdhTll2b3RnQTJ4U3dHVGczM25FdjJHRGQ5WGJDV2Qxd1hzLV9EcjNWaUQ4cXEzbWVHRzNuS1dGVVNBSmdXWGR6THN1dXhvSUdFS0dMMTJZTnBBZEFfZ2JoYVVFSWNMZw?oc=5",
@@ -8878,6 +8857,46 @@
    "score": 3,
    "ts": "2026-10-21T23:02:00.031864+00:00",
    "title_ru": "Kinder Morgan инвестирует $ 4,7 млрд в два проекта газопровода в связи с ростом спроса"
+  },
+  {
+   "title": "Philippines to Lift Key Rate as El Niño Adds to Inflation Threat",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-21/philippines-to-lift-key-rate-as-el-nino-adds-to-inflation-threat",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-21T23:11:59.986478+00:00",
+   "title_ru": "Филиппины повысят ключевую ставку, поскольку Эль-Ниньо усиливает инфляционную угрозу",
+   "lead": "The Philippine central bank is on track to raise the key rate for a fourth consecutive meeting as a severe El Niño dry spell threatens to further fan resurgent inflation.",
+   "lead_ru": "Центральный банк Филиппин находится на пути к повышению ключевой ставки уже четвертое заседание подряд, поскольку серьезный засушливый период Эль-Ниньо угрожает дальнейшей инфляцией.",
+   "tags": [
+    "rates",
+    "inflation"
+   ]
+  },
+  {
+   "title": "APA to Build Major Australia Gas Pipeline to Avert Shortfalls",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-21/apa-to-build-major-australia-gas-pipeline-to-avert-shortfalls",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-21T23:11:59.986478+00:00",
+   "title_ru": "APA построит крупный газопровод в Австралии, чтобы избежать перебоев",
+   "lead": "APA Group reached a final investment decision on a natural gas pipeline between Queensland and New South Wales states, which could help alleviate projected shortfalls in the more heavily populated southeast of Australia.",
+   "lead_ru": "APA Group приняла окончательное инвестиционное решение по газопроводу между штатами Квинсленд и Новый Южный Уэльс, который может помочь смягчить прогнозируемый дефицит на более густонаселенном юго-востоке Австралии.",
+   "tags": [
+    "gas"
+   ]
+  },
+  {
+   "title": "Meta’s stock rises as investors glimpse an opportunity that could dwarf the ad business",
+   "link": "https://www.marketwatch.com/story/metas-stock-rises-as-investors-glimpse-an-opportunity-that-could-dwarf-the-ad-business-89369c6c?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-21T23:11:59.986478+00:00"
   }
  ],
  "last_digest": "2026-10-21",
@@ -15010,6 +15029,7 @@
    "0002109272-26-000012",
    "0001493152-26-047949",
    "0001193125-26-428043",
+   "0000935703-26-000120",
    "0001493152-26-047950"
   ],
   "errors": {}
