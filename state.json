@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "a8275e02227b60ee": "2026-10-18T23:14:36.368519+00:00",
-  "30d1e6ab87016853": "2026-10-18T23:14:36.368519+00:00",
-  "5e8287a78fb6bbe2": "2026-10-18T23:20:13.679658+00:00",
   "e165aef8d78b8efb": "2026-10-18T23:30:13.729050+00:00",
   "b7801dab164803ae": "2026-10-18T23:35:13.689520+00:00",
   "9f308b9c06a26bb1": "2026-10-18T23:35:13.689520+00:00",
@@ -900,40 +897,13 @@
   "64fa5d29626df040": "2026-10-21T23:11:59.986478+00:00",
   "2fb0d4accb28d9c5": "2026-10-21T23:11:59.986478+00:00",
   "612f4e0253bd1383": "2026-10-21T23:11:59.986478+00:00",
-  "fd7b15fcce432406": "2026-10-21T23:11:59.986478+00:00"
+  "fd7b15fcce432406": "2026-10-21T23:11:59.986478+00:00",
+  "792442693243bf5d": "2026-10-21T23:16:59.949585+00:00",
+  "a8275e02227b60ee": "2026-10-21T23:21:59.996400+00:00",
+  "8f11102a569ae78d": "2026-10-21T23:21:59.996400+00:00",
+  "83c1140d69e669f3": "2026-10-21T23:21:59.996400+00:00"
  },
  "recent": [
-  {
-   "title": "Oil slips as Trump's sanction waiver may lead to more Russian fuel supplies",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPMmVLc19hd0VSYXIydVNTWENKZ2J5WVNvVDRQUjRfTUJXWGhjOGxGZkFHVm9SNnZzeU9TWUhrYnJTRU1sVFRnX1BwZVd3NHB5a0NLdThkbDRldlg2eHdhTll2b3RnQTJ4U3dHVGczM25FdjJHRGQ5WGJDV2Qxd1hzLV9EcjNWaUQ4cXEzbWVHRzNuS1dGVVNBSmdXWGR6THN1dXhvSUdFS0dMMTJZTnBBZEFfZ2JoYVVFSWNMZw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-18T23:14:36.368519+00:00",
-   "title_ru": "Нефть проскальзывает, поскольку отказ Трампа от санкций может привести к увеличению поставок российского топлива",
-   "tags": [
-    "oil",
-    "sanctions",
-    "Russia"
-   ]
-  },
-  {
-   "title": "US rate rises are being amplified in global markets",
-   "link": "https://www.ft.com/content/cea20e2a-379c-4ea2-af94-353b1896b748",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 3,
-   "ts": "2026-10-18T23:20:13.679658+00:00",
-   "title_ru": "Повышение ставок в США усиливается на мировых рынках",
-   "lead": "The Iran war and shifts by China are tightening the supply of dollars in international markets",
-   "lead_ru": "Иранская война и сдвиги со стороны Китая ужесточают предложение долларов на международных рынках",
-   "tags": [
-    "dollar",
-    "China"
-   ]
-  },
   {
    "title": "Euro Falls as Russia Risk, France Protests Dent Trader Sentiment",
    "link": "https://www.bloomberg.com/news/articles/2026-10-18/euro-falls-as-russia-risk-france-protests-dent-trader-sentiment",
@@ -8897,6 +8867,35 @@
    ],
    "score": 1,
    "ts": "2026-10-21T23:11:59.986478+00:00"
+  },
+  {
+   "title": "Santos Posts Record Quarterly Output on New LNG, Oil Projects",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-21/santos-posts-record-quarterly-output-on-new-lng-oil-projects",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-21T23:21:59.996400+00:00",
+   "title_ru": "Santos сообщает о рекордном ежеквартальном выходе на новые СПГ, нефтяные проекты",
+   "lead": "Australian liquefied natural gas exporter Santos Ltd. said production in the three months through September hit a quarterly record, as it increased output from two major projects.",
+   "lead_ru": "Австралийский экспортер сжиженного природного газа Santos Ltd. заявил, что производство за три месяца до сентября достигло квартального рекорда, поскольку оно увеличило объем производства в рамках двух крупных проектов.",
+   "tags": [
+    "oil",
+    "gas"
+   ]
+  },
+  {
+   "title": "Nasdaq leads Wall Street gains as SpaceX, Super Micro aid AI sentiment",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1iV0lNNHNqWDhpeXhqRVdzbnd4VFlwRzd6TzliWm1JRDVTbzJIMXlaS1BIZEk2UjZVNUo3dEZyczV4QXBVZkVWUkFiVjdjMFNWMmZXdG1mOXRNY0Zra2JWLVZOVy1xaXFIWklmY1p4SEVVUWZFRWhkeFFZd3FYZw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-21T23:21:59.996400+00:00",
+   "title_ru": "Nasdaq лидирует на Уолл-стрит как SpaceX, Super Micro помогает настроениям ИИ",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-21",
@@ -11592,6 +11591,22 @@
     "date": "2026-10-20",
     "disclosed": "2026-10-21",
     "link": "https://www.sec.gov/Archives/edgar/data/1785783/000178578326000019/0001785783-26-000019-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "cfa330217ca96e49",
+    "ticker": "ALMR",
+    "company": "Alamar Biosciences, Inc.",
+    "who": "Qiming Corporate Gp Vi, Ltd. et al.",
+    "role": "10% owner",
+    "type": "sell",
+    "value": 5949983,
+    "shares": 217512,
+    "price": 27.35,
+    "plan": false,
+    "date": "2026-10-20",
+    "disclosed": "2026-10-21",
+    "link": "https://www.sec.gov/Archives/edgar/data/2129740/000123191926001485/0001231919-26-001485-index.htm"
    },
    {
     "src": "sec",
@@ -14997,12 +15012,10 @@
    "0001671445-26-000012",
    "0001193125-26-428042",
    "0002014386-26-000022",
-   "0001591747-26-000009",
-   "0002071271-26-000018",
    "0001213900-26-111426",
-   "0000950142-26-002799",
    "0001701247-26-000014",
    "0001193125-26-428041",
+   "0001193125-26-428104",
    "0001882764-26-000009",
    "0001867888-26-000010",
    "0001193125-26-428040",
@@ -15010,17 +15023,21 @@
    "0001780664-26-000043",
    "0001823543-26-000002",
    "0002074298-26-000020",
+   "0000804328-26-000108",
    "0001193125-26-428009",
    "0002041533-26-000008",
-   "0001995487-26-000006",
+   "0001493152-26-047950",
+   "0000804328-26-000112",
    "0001826731-26-000012",
+   "0000804328-26-000107",
    "0001807136-26-000002",
+   "0000804328-26-000109",
    "0001193125-26-428018",
    "0001674510-26-000002",
    "0002108845-26-000007",
    "0001140361-26-040424",
+   "0000804328-26-000111",
    "0001402348-26-000020",
-   "0001785783-26-000019",
    "0000950103-26-015980",
    "0001193125-26-428010",
    "0001193125-26-428044",
@@ -15029,8 +15046,10 @@
    "0002109272-26-000012",
    "0001493152-26-047949",
    "0001193125-26-428043",
+   "0001193125-26-428106",
    "0000935703-26-000120",
-   "0001493152-26-047950"
+   "0001231919-26-001485",
+   "0000804328-26-000110"
   ],
   "errors": {}
  }
