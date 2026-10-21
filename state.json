@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "824ffd8b4cfd0fde": "2026-10-18T07:18:30.880939+00:00",
   "dc7af6c4580f768f": "2026-10-18T07:23:30.921902+00:00",
   "dc894e81b0656c01": "2026-10-18T07:28:30.895975+00:00",
   "d7c9b6e0e6b8e9b9": "2026-10-18T07:43:30.894479+00:00",
@@ -771,22 +770,12 @@
   "61fcdf9a4a66366f": "2026-10-21T07:05:34.248957+00:00",
   "6c341c9e61316a9e": "2026-10-21T07:05:34.248957+00:00",
   "4873b7b987c62c66": "2026-10-21T07:10:34.274660+00:00",
-  "083d61aa6c00a439": "2026-10-21T07:10:34.274660+00:00"
+  "083d61aa6c00a439": "2026-10-21T07:10:34.274660+00:00",
+  "fe199bee15f954fb": "2026-10-21T07:20:34.290482+00:00",
+  "025b1d7c499b3b2e": "2026-10-21T07:20:34.290482+00:00",
+  "62d6f4f9ede31549": "2026-10-21T07:20:34.290482+00:00"
  },
  "recent": [
-  {
-   "title": "China proposes export controls on solar-manufacturing technologies",
-   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOaGtBN1ctcU1NbGFxLXVKb01UVVdDUklxa3Z6Tk1ac05vT2lkd0d2THJqR1Q4VDBDTjJFSUlJYXNCdF83Tko2S0hrbDZSX3NrWWRrWFljNFNHOWhVUnpib3JpdjY3TWZJUEpEQzJKdnFpckZhZTM4X3RXTnhuMzVJWXRxemxoUTdlcDcwckxSUlROQ1pqbHZWdFplOEZUTHh1dDVxb3pfTlN3X2dURk1ETnJzTXJmUFluU0dfck1OSFl4YVlqZHE1NA?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-18T07:18:30.880939+00:00",
-   "title_ru": "Китай предлагает экспортный контроль за технологиями производства солнечной энергии",
-   "tags": [
-    "China"
-   ]
-  },
   {
    "title": "Vietnam signs free-trade pact with European countries including Norway, Switzerland",
    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQeXJUYmVON2MyaDNUd3JSbXFwUmZ3ODRXVW05RTVSZ0cwQzRSSjF3OGkzNWMxQjVobFU3emI3a3FJVVRMQnRxSnFNWXF5QXQzVTZTZmlxNHdUd1hseVliMEJwZ0FEYm5FN1pPYVlfazVxaXpIRkRhZXhJaU1FSTlxRnNScThrMjlkQUhJVmZ6cHpkVF90bjZES2dYNEYtSWZDcXFYNGpsWFVEejdrSnJ5czJhQ0I2TTgzRW1keEw5dFk1Z3M?oc=5",
@@ -7312,6 +7301,36 @@
    "score": 3,
    "ts": "2026-10-21T07:10:34.274660+00:00",
    "title_ru": "Великобритания одобряет давно отложенное газовое месторождение Jackdaw"
+  },
+  {
+   "title": "UK inflation and borrowing top forecasts in blow to Healey ahead of Budget",
+   "link": "https://www.ft.com/content/443ce2f3-ba36-4dc7-aa0b-a2bc593fa563?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 6,
+   "ts": "2026-10-21T07:20:34.290482+00:00",
+   "title_ru": "Инфляция в Великобритании и заимствование лучших прогнозов нанесли удар по Хили в преддверии бюджета",
+   "lead": "Inflation figure will also cement expectations of Bank of England rate rise in November",
+   "lead_ru": "Показатель инфляции также укрепит ожидания роста ставки Банка Англии в ноябре",
+   "tags": [
+    "inflation"
+   ]
+  },
+  {
+   "title": "UK September inflation fuels expectations of imminent BoE rate rise",
+   "link": "https://www.ft.com/content/70f1da13-3c33-4881-aaa8-3458c1ba7eaf",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 6,
+   "ts": "2026-10-21T07:20:34.290482+00:00",
+   "title_ru": "Сентябрьская инфляция в Великобритании подпитывает ожидания неминуемого повышения ставки Банка Англии",
+   "lead": "Headline and core inflation accelerates ahead of November meeting",
+   "lead_ru": "Заголовок и базовая инфляция ускоряются в преддверии ноябрьского заседания",
+   "tags": [
+    "inflation"
+   ]
   }
  ],
  "last_digest": "2026-10-20",
