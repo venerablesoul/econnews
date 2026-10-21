@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "182bd8e74703a700": "2026-10-18T11:13:30.892684+00:00",
   "6c44cac32b8c5c12": "2026-10-18T12:03:30.908193+00:00",
   "009f0ebde59cc26e": "2026-10-18T12:03:30.908193+00:00",
   "cf536115c7253cef": "2026-10-18T12:23:30.878958+00:00",
@@ -811,21 +810,11 @@
   "8a0df6d9a73f22d8": "2026-10-21T11:05:34.306293+00:00",
   "57aa1d0263c18ace": "2026-10-21T11:05:34.306293+00:00",
   "342882277c02f129": "2026-10-21T11:05:34.306293+00:00",
-  "e087efbd2b8b0b2e": "2026-10-21T11:10:34.267441+00:00"
+  "e087efbd2b8b0b2e": "2026-10-21T11:10:34.267441+00:00",
+  "6f4a1c500524c38f": "2026-10-21T11:16:03.634244+00:00",
+  "853c6a887266f9fe": "2026-10-21T11:16:03.634244+00:00"
  },
  "recent": [
-  {
-   "title": "Will Meta’s earnings restore confidence in the AI boom?",
-   "link": "https://www.ft.com/content/7c2e889e-2eb5-4c62-821b-1a7f88c13d05?syn-25a6b1a6=1",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 3,
-   "ts": "2026-10-18T11:13:30.892684+00:00",
-   "title_ru": "Вернут ли доходы Meta доверие к буму ИИ?",
-   "lead": "Market Questions is the FT’s guide to the week ahead",
-   "lead_ru": "Вопросы рынка - это руководство FT по предстоящей неделе"
-  },
   {
    "title": "There is a silent market rotation inside the S&P 500 that’s warning of more weakness ahead",
    "link": "https://www.marketwatch.com/story/there-is-a-silent-market-rotation-inside-the-s-p-500-thats-warning-of-more-weakness-ahead-549e7650?mod=mw_rss_topstories",
@@ -7796,6 +7785,32 @@
     "inflation",
     "dollar"
    ]
+  },
+  {
+   "title": "COMMENTARY: China uses crude stockpiles, but rising oil imports may curtail draws",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQMXlFU3FvdEtaU3AxTmhWTm5iUHV1R1pLeWhhM3JFR0FUSm9ua3pod2x4WUdUWHZXMW5Mc1FaY0RMakFzNkN3akV5OE0tODVVRHp4QWlMS0ZiUTg3NkhuODdNVkdkR3RHRGh0Mkhaa2QzNl9aUEl0bVlvSWRoTjJfTnhxeEVpU0pzbE5lcjFUS0R5b2xTSTB2ZkdGX1VtcUxyOTRhejdLWmxVUmRFTElxV01JZXUtaUZWb2s1cTNlM1hyZ1ltUF82NkxVV3RZdw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 7,
+   "ts": "2026-10-21T11:16:03.634244+00:00",
+   "title_ru": "КОММЕНТАРИЙ: Китай использует запасы сырой нефти, но растущий импорт нефти может ограничить ее добычу.",
+   "tags": [
+    "oil",
+    "China"
+   ]
+  },
+  {
+   "title": "IMF Urges Currency Flexibility as RBI Mounts Rupee Defense",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-21/imf-urges-currency-flexibility-as-rbi-mounts-rupee-defense",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-21T11:16:03.634244+00:00",
+   "title_ru": "МВФ призывает к гибкости валюты, поскольку RBI укрепляет защиту рупии",
+   "lead": "Foreign-exchange intervention offers limited benefits beyond the near term and currencies should be allowed to adjust to global shocks, a top International Monetary Fund official said.",
+   "lead_ru": "Валютные интервенции приносят ограниченные выгоды за пределами краткосрочной перспективы, и валютам необходимо дать возможность приспособиться к глобальным потрясениям, заявил высокопоставленный представитель Международного валютного фонда."
   }
  ],
  "last_digest": "2026-10-20",
@@ -13002,7 +13017,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-21T10:15:34.329030+00:00",
+  "checked": "2026-10-21T11:16:03.634244+00:00",
   "sec_seen": [
    "0001437749-26-033037",
    "0000804328-26-000106",
@@ -13010,7 +13025,6 @@
    "0001090355-26-000009",
    "0001775297-26-000014",
    "0001140361-26-040292",
-   "0001104659-26-117506",
    "0001626201-26-000023",
    "0001917389-26-000025",
    "0001742734-26-000022",
@@ -13020,8 +13034,8 @@
    "0002071761-26-000013",
    "0001104659-26-117507",
    "0001213900-26-111132",
-   "0002156232-26-000003",
    "0000907654-26-000110",
+   "0002156232-26-000003",
    "0001166288-26-000002",
    "0001140361-26-040294",
    "0002111867-26-000014",
