@@ -823,7 +823,11 @@
   "6f8066d07ffd8e24": "2026-10-21T11:46:03.672242+00:00",
   "6510ed3606c1ba97": "2026-10-21T11:46:03.672242+00:00",
   "be77e7c0b0c7c2cf": "2026-10-21T11:51:03.648257+00:00",
-  "bfad766ff67d2c63": "2026-10-21T11:51:03.648257+00:00"
+  "bfad766ff67d2c63": "2026-10-21T11:51:03.648257+00:00",
+  "515ff6eaf7b5d4f9": "2026-10-21T12:01:03.675715+00:00",
+  "bc6de2973c2c5205": "2026-10-21T12:01:03.675715+00:00",
+  "6f02bdc5e5a90b96": "2026-10-21T12:01:03.675715+00:00",
+  "488f6c58f0f8f110": "2026-10-21T12:01:03.675715+00:00"
  },
  "recent": [
   {
@@ -7937,6 +7941,29 @@
    "title_ru": "Результаты SpaceX возобновили торговлю искусственным интеллектом, мета-результаты на палубе",
    "lead": "US stock futures rose after strong results from SpaceX eased concerns over whether a global investment spree in artificial intelligence can prove sustainable.",
    "lead_ru": "Фьючерсы на акции США выросли после того, как хорошие результаты SpaceX ослабили опасения по поводу того, может ли глобальный инвестиционный бум в искусственный интеллект оказаться устойчивым."
+  },
+  {
+   "title": "Market Talk: UK markets crave a 'boring budget'",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBlek54Q2czR285M0w3MnFLb3RiZkJfbmVyWDJVcEFYUlc4UngyU3FtNkQyclI3UGtJUFZWX1RRSlFtWVZjVzctQXhDLWtfUmtRZXR6X0FyM2h3U3EwLXR5QWl0empkd0E?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-21T12:01:03.675715+00:00",
+   "title_ru": "Market Talk: рынки Великобритании жаждут «скучного бюджета»"
+  },
+  {
+   "title": "Most Gulf shares retreat as Iran-US diplomacy stalls",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOdGVfYlNJZFNZQ3pscG5sYjNSVGZITlhmSl9MbjJHWXVFVjJPWEFCU2FaMTZmeFFRVnM4LTdGNWFhTm1USllBY3FOeTRQaWdDaEp5NVNtb0c0Q1hrejNVbGR4a1hHc3hkUGJ1NU1TMlFBamlCaTJEWUJZQjlkVW94VGJUYzFQWm1UOE40RUlRMkZGTmY5bW5pb3dGM21YOTBFV1BKX1Fn?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-21T12:01:03.675715+00:00",
+   "title_ru": "Акции большинства стран Персидского залива падают из-за застоя в дипломатии Ирана и США",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-20",
@@ -13182,6 +13209,7 @@
    "0002111867-26-000014",
    "0001713683-26-000208",
    "0001568238-26-000003",
+   "0001493152-26-047849",
    "0001646649-26-000034",
    "0002109337-26-000012",
    "0001713683-26-000204",
@@ -13191,7 +13219,6 @@
    "0000921895-26-002832",
    "0000919574-26-007106",
    "0001859690-26-000196",
-   "0001437749-26-033033",
    "0001713683-26-000206"
   ],
   "errors": {}
