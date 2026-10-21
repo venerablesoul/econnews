@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "dc7e498fa993f6a0": "2026-10-18T22:14:36.336932+00:00",
-  "f8a72bebecdc1405": "2026-10-18T22:14:36.336932+00:00",
-  "6f1678c0f08ae5a3": "2026-10-18T22:14:36.336932+00:00",
-  "4cf3038fb2d19f6c": "2026-10-18T22:14:36.336932+00:00",
-  "c095575cc278ea2a": "2026-10-18T22:14:36.336932+00:00",
   "8358c84e4a016c10": "2026-10-18T22:24:36.365666+00:00",
   "7ab5e9422fa33a7f": "2026-10-18T22:24:36.365666+00:00",
   "02a0de84fe9b59a1": "2026-10-18T22:24:36.365666+00:00",
@@ -900,38 +895,11 @@
   "9ec7ff09436e0076": "2026-10-21T21:51:32.146697+00:00",
   "2e5e0c5c76fe7295": "2026-10-21T21:56:32.216172+00:00",
   "d57e9a37d22d44fc": "2026-10-21T21:56:32.216172+00:00",
-  "1cc09ce97db5eaf1": "2026-10-21T22:12:00.028446+00:00"
+  "1cc09ce97db5eaf1": "2026-10-21T22:12:00.028446+00:00",
+  "cfded63c9e0300be": "2026-10-21T22:17:00.043086+00:00",
+  "9dc07a42d5c95f8b": "2026-10-21T22:17:00.043086+00:00"
  },
  "recent": [
-  {
-   "title": "Brent Crude Holds Near $110 on Mideast and Ukraine Conflicts",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZW11ZjRDTUdpUHpzY1JpNFZtWjZ1bGhZejdHX2h3Q0NTb1pKU0pxM0NtSDR5QlA4YnQ5NHUybkxGS0VxSWJQcHo0NWcyb3A4S21SbVNld2cyLTQ5eFowV2lqRlh1QUMteG1taWQ5b0dPUGg1SnpxVUlRYmlDWkkxZzBQWVpBTjlwdzEyZDBTRWRacVU1ZFhZMjhrMGd5dw?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-18T22:14:36.336932+00:00",
-   "title_ru": "Нефть марки Brent держится около $110 из-за конфликтов на Ближнем Востоке и в Украине",
-   "tags": [
-    "oil"
-   ]
-  },
-  {
-   "title": "US Stock Futures Rise Ahead of Busy Earnings Week: Markets Wrap",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-18/stock-market-today-dow-s-p-live-updates",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-18T22:14:36.336932+00:00",
-   "title_ru": "Фьючерсы на акции США растут в преддверии напряженной недели отчетности: итоги рынков",
-   "lead": "US stock futures rose and oil edged lower as traders prepared for a packed week of corporate earnings and Chinese economic data against a backdrop of heightened geopolitical risks.",
-   "lead_ru": "Фьючерсы на американские акции выросли, а нефть снизилась, поскольку трейдеры готовились к насыщенной неделе корпоративными отчетами и экономическими данными Китая на фоне возросших геополитических рисков.",
-   "tags": [
-    "oil",
-    "China"
-   ]
-  },
   {
    "title": "Trump’s Trade War: A News Guide to His Second Term as President",
    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9iZGVGa3RSQWJwcFpkd2tPbVpiOExBWWZzdmc2YTM3d3BDal8tT0Z5ejhLSHNXXzBEbEx1UkRFRklRS0hEb2VBM3F6V0FnY3JSRnp4Nk5n?oc=5",
@@ -8889,6 +8857,16 @@
    "tags": [
     "inflation"
    ]
+  },
+  {
+   "title": "Texas Instruments Forecast Tops Estimates After Demand Picks Up",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOU2tPY2NCTDJjS1VSaDFZek5SVE93U19HWDRGQl82WWpGMmNEMkRnU2RFeHM1c0JzZ3g5czBDdFpsU3hveG1ab2w0WnAtUWRqVUhaODh4aThfbTlpcjc3dzRjOHpxdUF2eTBxVXkwaGJqUVF4RGdKWm1pMi1rMzl2MU1fSkhTUUo1b21SdUJXYmR4VHoyRkdnTmZRV2ktSVNhWWltcWVjQ2VQTm9MenZSWkExZzI?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-21T22:17:00.043086+00:00",
+   "title_ru": "Прогнозируемые максимумы Texas Instruments после роста спроса"
   }
  ],
  "last_digest": "2026-10-21",
@@ -11441,6 +11419,22 @@
     "date": "2026-10-19",
     "disclosed": "2026-10-21",
     "link": "https://www.sec.gov/Archives/edgar/data/1564475/000095010326015980/0000950103-26-015980-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "e0b7f03994438f2e",
+    "ticker": "TALO",
+    "company": "TALOS ENERGY INC.",
+    "who": "Control Empresarial De Capitales S.a. De C.v.",
+    "role": "10% owner",
+    "type": "sell",
+    "value": 38562754,
+    "shares": 2141590,
+    "price": 18.01,
+    "plan": false,
+    "date": "2026-10-19",
+    "disclosed": "2026-10-21",
+    "link": "https://www.sec.gov/Archives/edgar/data/1724965/000114036126040419/0001140361-26-040419-index.htm"
    },
    {
     "src": "sec",
@@ -14676,9 +14670,9 @@
    "0001882764-26-000009",
    "0001867888-26-000010",
    "0001193125-26-428040",
+   "0001140361-26-040419",
    "0001468818-26-000008",
    "0002074298-26-000020",
-   "0001695028-26-000012",
    "0001193125-26-428009",
    "0001995487-26-000006",
    "0001826731-26-000012",
