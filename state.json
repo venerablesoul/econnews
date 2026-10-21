@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "93b6a0e3b385cb9f": "2026-10-18T20:24:36.370499+00:00",
-  "465199a17bca4193": "2026-10-18T20:24:36.370499+00:00",
   "915383bd55cd1c17": "2026-10-18T20:29:36.408112+00:00",
   "e3681b2dd41e7d61": "2026-10-18T20:29:36.408112+00:00",
   "221e7a2180b9eaee": "2026-10-18T20:34:36.411648+00:00",
@@ -888,24 +886,16 @@
   "c7182ff808652991": "2026-10-21T19:36:32.179977+00:00",
   "93308a971233d00f": "2026-10-21T19:51:32.167194+00:00",
   "2088fb81f4678c38": "2026-10-21T19:56:32.153645+00:00",
-  "36312d6489c31896": "2026-10-21T20:01:32.233163+00:00"
+  "36312d6489c31896": "2026-10-21T20:01:32.233163+00:00",
+  "0004b6c92b922c6d": "2026-10-21T20:26:32.137748+00:00",
+  "e58bc47889babc84": "2026-10-21T20:26:32.137748+00:00",
+  "6946bd32039013b1": "2026-10-21T20:26:32.137748+00:00",
+  "6c60aef9d310b278": "2026-10-21T20:26:32.137748+00:00",
+  "c16147f998ebcd7a": "2026-10-21T20:26:32.137748+00:00",
+  "e9beba98e362da41": "2026-10-21T20:26:32.137748+00:00",
+  "6598dadb35df2bed": "2026-10-21T20:26:32.137748+00:00"
  },
  "recent": [
-  {
-   "title": "Traders Grow Wary of Copper Bull Market With No Sign of Tariffs",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-18/traders-grow-wary-of-copper-bull-market-with-no-sign-of-tariffs",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 7,
-   "ts": "2026-10-18T20:24:36.370499+00:00",
-   "title_ru": "Трейдеры настороженно относятся к бычьему рынку меди без каких-либо признаков тарифов",
-   "lead": "Since Donald Trump came back into office, copper has surged on a seismic reshuffling of global inventories linked to the risk that he’ll impose tariffs on the metal.",
-   "lead_ru": "С тех пор как Дональд Трамп вернулся к власти, цены на медь выросли из-за сейсмической перетасовки мировых запасов, связанной с риском того, что он введет тарифы на этот металл.",
-   "tags": [
-    "tariffs"
-   ]
-  },
   {
    "title": "- International Monetary Fund | IMF",
    "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA2dDVpN2FDckxmN1hnZ2NWS1oxX0p3NWV3b1JlRTBHRE0tSDNXbW0tQjFkWjNVYUR2S3R1OXRVU2VNRFlkY3dBbnktYWVaeFRDRFdMeUJQVGExdw?oc=5",
@@ -8731,6 +8721,30 @@
    "score": 3,
    "ts": "2026-10-21T19:56:32.153645+00:00",
    "title_ru": "Nvidia - это центральный банк ИИ. Теперь Дженсен Хуанг должен сделать шаг вперед"
+  },
+  {
+   "title": "Canadian dollar holds near four-week high as investors stick to rate hike bets",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNTjdXLUZRZWYzNFRMX1BUMnNnUlJKVkJCVU5LVlFZbDdYblowYkx6Y1JDajVMWUlNZ01maFMzMFdqbVhpcmcxWTVUZWF5MThaZ085UzB4QnprTm02RGI2Z1I5WlJRamF5TjVjTlk2ZTFNcmUxSlAxVGxlamJuUThtTWJlOW1fc1FydElMR3hnSk01bE1xRzFpUnJMLXRWRk5GQXd6b2ItdFdMWmxRQUtiOTVoZElfNzhP?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 7,
+   "ts": "2026-10-21T20:26:32.137748+00:00",
+   "title_ru": "Канадский доллар держится около четырехнедельного максимума, поскольку инвесторы придерживаются ставок на повышение ставок",
+   "tags": [
+    "rates",
+    "dollar"
+   ]
+  },
+  {
+   "title": "- Bureau of Labor Statistics (.gov)",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNS2xYV2Zyanl1R0tSZ2RYRUkzQl9WVXYwQkI1NHZYTnZDejBTbDhBSEd4b1h3Nk12QlJkdDlodUI1OFIxTk5ZOFFBRVZpQ3ZqZWFiSXY1Vjk1OXpxbFBXQ1JpLVI3b2t6TGs5VGVGT3VFQjZUVER3MXVkYkttWlk3RFJvT0VQUktMMWlaejQ0QzhIWmhhbjVtcEdSSERGTjJGOWpvOHZtdXNic1hhMXZNdkNmTUpNUQ?oc=5",
+   "sources": [
+    "US Labor Statistics (BLS)"
+   ],
+   "score": 4,
+   "ts": "2026-10-21T20:26:32.137748+00:00",
+   "title_ru": "- Бюро трудовой статистики"
   }
  ],
  "last_digest": "2026-10-21",
@@ -10995,6 +11009,38 @@
     "date": "2026-10-19",
     "disclosed": "2026-10-21",
     "link": "https://www.sec.gov/Archives/edgar/data/1896237/000162828026066716/0001628280-26-066716-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "9c2d90d34ec118b4",
+    "ticker": "GTLB",
+    "company": "Gitlab Inc.",
+    "who": "Sytse Sijbrandij",
+    "role": "Director",
+    "type": "sell",
+    "value": 6190375,
+    "shares": 116200,
+    "price": 53.27,
+    "plan": true,
+    "date": "2026-10-19",
+    "disclosed": "2026-10-21",
+    "link": "https://www.sec.gov/Archives/edgar/data/1886022/000165348226000176/0001653482-26-000176-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "64d91a38cf0fb485",
+    "ticker": "PETV",
+    "company": "PetVivo Holdings, Inc.",
+    "who": "A.l. Sarroff Fund, Llc",
+    "role": "10% owner",
+    "type": "buy",
+    "value": 56127,
+    "shares": 78855,
+    "price": 0.71,
+    "plan": false,
+    "date": "2026-10-16",
+    "disclosed": "2026-10-21",
+    "link": "https://www.sec.gov/Archives/edgar/data/1553209/000109991026000286/0001099910-26-000286-index.htm"
    },
    {
     "src": "sec",
@@ -14203,23 +14249,21 @@
    "0001628280-26-066705",
    "0001628280-26-066703",
    "0001513845-26-000136",
-   "0001510281-26-000368",
    "0001493152-26-047899",
    "0001493152-26-047898",
    "0001193125-26-427847",
    "0001193125-26-427868",
-   "0001193125-26-427799",
    "0000826675-26-000124",
    "0001493839-26-000005",
    "0001213900-26-111354",
    "0001493152-26-047900",
-   "0001193125-26-427830",
    "0001870974-26-000020",
+   "0001193125-26-427830",
    "0001565687-26-000120",
    "0001177394-26-000134",
-   "0001213900-26-111339",
    "0001123292-26-001417",
    "0001493152-26-047896",
+   "0001099910-26-000286",
    "0001829126-26-011387",
    "0001213900-26-111341",
    "0001628280-26-066716",
@@ -14227,11 +14271,12 @@
    "0001628280-26-066706",
    "0001493152-26-047902",
    "0001193125-26-427840",
-   "0001597870-26-000017",
    "0001510281-26-000369",
    "0001733998-26-000149",
    "0001628280-26-066724",
-   "0001193125-26-427846"
+   "0001193125-26-427846",
+   "0001524472-26-000140",
+   "0001653482-26-000176"
   ],
   "errors": {}
  }
