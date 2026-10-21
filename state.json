@@ -747,7 +747,11 @@
   "f0d3733216414341": "2026-10-21T05:45:00.383754+00:00",
   "a6250d80be5abc34": "2026-10-21T05:55:34.254420+00:00",
   "418df03155f6cba3": "2026-10-21T05:55:34.254420+00:00",
-  "e7d7745794a4703a": "2026-10-21T06:00:34.275946+00:00"
+  "e7d7745794a4703a": "2026-10-21T06:00:34.275946+00:00",
+  "3a986a97d5618d62": "2026-10-21T06:05:34.290571+00:00",
+  "8a1fd4933784d72c": "2026-10-21T06:05:34.290571+00:00",
+  "ee9d45913a487258": "2026-10-21T06:05:34.290571+00:00",
+  "a9fb560d257bcd60": "2026-10-21T06:05:34.290571+00:00"
  },
  "recent": [
   {
@@ -7025,6 +7029,59 @@
    "tags": [
     "bonds"
    ]
+  },
+  {
+   "title": "Key Mideast Oil Benchmark Hits 3-Month Low on Resilient Exports",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-21/key-mideast-oil-benchmark-hits-3-month-low-on-resilient-exports",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-21T06:05:34.290571+00:00",
+   "title_ru": "Ключевой индикатор нефти на Ближнем Востоке достиг трехмесячного минимума из-за устойчивого экспорта",
+   "lead": "A key benchmark for Middle East crude fell to its lowest in nearly three months, an indication of the resilience of the region’s exports despite intensifying Iranian attacks on shipping.",
+   "lead_ru": "Ключевой ориентир для ближневосточной нефти упал до самого низкого уровня почти за три месяца, что свидетельствует об устойчивости экспорта региона, несмотря на усиление иранских атак на судоходство.",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "Monetary and Fiscal Policy Analysis with DSGE Models",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQRjJYbllKelpTSmZQRkoweDhlWmt4VnZRN3Y5V252YUlEYVhfMG9RZ0FXVllzUlpDUVByTXZYbndYUmpmRXdlOE5BMkhuYmFjY0lLZ09xU0Zkd0xIR1pTZUFHS3U1QmM5Y1JGTDUwOE1IMGkxbC1XMnBvWGhxZE92bkVoaU9URzJ4V1ZhOTg4aXI?oc=5",
+   "sources": [
+    "IMF"
+   ],
+   "score": 4,
+   "ts": "2026-10-21T06:05:34.290571+00:00",
+   "title_ru": "Анализ денежно-кредитной и налогово-бюджетной политики с использованием моделей DSGE"
+  },
+  {
+   "title": "UK inflation rises by more than expected to 3.5% as war drives up fuel prices",
+   "link": "https://www.theguardian.com/business/2026/oct/21/inflation-rises-middle-east-conflict-drives-up-fuel-prices",
+   "sources": [
+    "The Guardian"
+   ],
+   "score": 4,
+   "ts": "2026-10-21T06:05:34.290571+00:00",
+   "title_ru": "Инфляция в Великобритании выросла больше, чем ожидалось, до 3,5%, поскольку война приводит к росту цен на топливо",
+   "lead": "Increase in annual price growth in September comes amid fears rate will breach 4% next year UK inflation climbed by more than expected in September to 3.5% after a surge in prices from the conflict in the Middle East that pushed…",
+   "lead_ru": "Увеличение годового роста цен в сентябре происходит на фоне опасений, что в следующем году ставка превысит 4%, инфляция в Великобритании выросла больше, чем ожидалось, в сентябре до 3,5% после резкого роста цен из-за конфликта на Ближнем Востоке, который подтолкнул…",
+   "tags": [
+    "inflation"
+   ]
+  },
+  {
+   "title": "Thrown Punches and Missed Warnings: Inside a Billion-Dollar Fund's Collapse",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQQzdtQlg3WHFIVkNoTzJWeE94elVCZFdaRWZBUjFPXzdqSUpfSG84azF2ZW9xOUhrZzN0N29pc1BVR0dEZ0VxV1hRVE5Ibk5kSkU4SEh5SFRyRzZDZ0xSS2F1UDdOeWJzYnMzTnRiaEgxNFFYdUJVakpMOXQ5VjJCSGNXUHRqOEdVR3dtNWtXblN1SC1PSUpaSHJnZTlVRDhEVXRJYVRObkJWczJqckRaV18tNA?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-21T06:05:34.290571+00:00",
+   "title_ru": "Нанесенные удары и пропущенные предупреждения: изнутри краха фонда на миллиард долларов",
+   "tags": [
+    "dollar"
+   ]
   }
  ],
  "last_digest": "2026-10-20",
@@ -12220,8 +12277,8 @@
    "0002071761-26-000013",
    "0000923120-26-000017",
    "0001140361-26-040298",
-   "0001437749-26-033037",
    "0000923120-26-000019",
+   "0001437749-26-033037",
    "0000919574-26-007106",
    "0001917389-26-000025",
    "0000804328-26-000106",
@@ -12232,8 +12289,8 @@
    "0001213900-26-111132",
    "0001713683-26-000206",
    "0001628280-26-066572",
-   "0001742734-26-000022",
    "0001104659-26-117507",
+   "0001742734-26-000022",
    "0001104659-26-117510",
    "0000907654-26-000110",
    "0002111867-26-000014",
