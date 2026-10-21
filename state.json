@@ -751,7 +751,11 @@
   "3a986a97d5618d62": "2026-10-21T06:05:34.290571+00:00",
   "8a1fd4933784d72c": "2026-10-21T06:05:34.290571+00:00",
   "ee9d45913a487258": "2026-10-21T06:05:34.290571+00:00",
-  "a9fb560d257bcd60": "2026-10-21T06:05:34.290571+00:00"
+  "a9fb560d257bcd60": "2026-10-21T06:05:34.290571+00:00",
+  "6b19d6aa99d8ff49": "2026-10-21T06:10:34.262503+00:00",
+  "b4a8274ead94fb2d": "2026-10-21T06:10:34.262503+00:00",
+  "34f3b1766052c8f0": "2026-10-21T06:10:34.262503+00:00",
+  "6b9a0ca1886336f6": "2026-10-21T06:10:34.262503+00:00"
  },
  "recent": [
   {
@@ -7082,6 +7086,61 @@
    "tags": [
     "dollar"
    ]
+  },
+  {
+   "title": "UK Inflation Hits 11-Month High as Bank of England Eyes Rate Hike",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-21/inflation-jumps-to-11-month-high-as-bank-of-england-considers-a-hike",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 8,
+   "ts": "2026-10-21T06:10:34.262503+00:00",
+   "title_ru": "Инфляция в Великобритании достигла 11-месячного максимума, поскольку Банк Англии ожидает повышения ставки",
+   "lead": "UK inflation jumped to an 11-month high after a surge in petrol and diesel costs, a surprisingly large increase that leaves the Bank of England on track for its first interest-rate hike in over three years.",
+   "lead_ru": "Инфляция в Великобритании подскочила до 11-месячного максимума после резкого роста цен на бензин и дизельное топливо. Это удивительно большое увеличение, которое дает Банку Англии возможность впервые за более чем три года повысить процентные ставки.",
+   "tags": [
+    "rates",
+    "inflation"
+   ]
+  },
+  {
+   "title": "UK inflation jumps to 3.5% — cementing rate hike expectations",
+   "link": "https://www.cnbc.com/2026/10/21/inflation-uk-cpi-interest-rates.html",
+   "sources": [
+    "CNBC"
+   ],
+   "score": 7,
+   "ts": "2026-10-21T06:10:34.262503+00:00",
+   "title_ru": "Инфляция в Великобритании подскочила до 3,5% — усиливаются ожидания повышения ставок",
+   "tags": [
+    "rates",
+    "inflation"
+   ]
+  },
+  {
+   "title": "Surging fuel prices push UK inflation rate to 3.5% ahead of Budget",
+   "link": "https://www.bbc.co.uk/news/articles/c6gel2xv4493o?at_medium=RSS&at_campaign=rss",
+   "sources": [
+    "BBC"
+   ],
+   "score": 6,
+   "ts": "2026-10-21T06:10:34.262503+00:00",
+   "title_ru": "Растущие цены на топливо приводят к росту инфляции в Великобритании до 3,5%, опережая бюджет",
+   "lead": "Inflation accelerated to 3.5% from 3.1% in the year to September, according to the Office for National Statistics (ONS).",
+   "lead_ru": "По данным Управления национальной статистики (ONS), инфляция ускорилась до 3,5% с 3,1% за год до сентября.",
+   "tags": [
+    "inflation"
+   ]
+  },
+  {
+   "title": "South African rand flat before mid-year budget review",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNRjVUdHlWWmdldUNJbUdkS0Rtb2d1WWRzcWJ5em1CeC1vTkRCN2s1RzB2djlBd0NLVUg4M2hONnpiTEY2TTE5YU1Vbl9MX3hlYldLalRKeHFVXy1oOG1raFBRR09IY3ZidnFWUlNEa3VIVmlBUS1PR0oxWGJaZHk2OV93blJfeVRqM0tCa2ZRcEZGTi12cE5KUEs0aEp6dGNHeHktOA?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-21T06:10:34.262503+00:00",
+   "title_ru": "Южноафриканский ранд не изменился до пересмотра бюджета в середине года"
   }
  ],
  "last_digest": "2026-10-20",
@@ -7132,7 +7191,7 @@
   "2026-10-21-09"
  ],
  "calendar": {
-  "fetched": "2026-10-21T00:09:12.065526+00:00",
+  "fetched": "2026-10-21T06:10:34.262503+00:00",
   "events": [
    {
     "title": "IMF Meetings",
@@ -12272,13 +12331,13 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-21T05:10:00.354092+00:00",
+  "checked": "2026-10-21T06:10:34.262503+00:00",
   "sec_seen": [
    "0002071761-26-000013",
    "0000923120-26-000017",
    "0001140361-26-040298",
-   "0000923120-26-000019",
    "0001437749-26-033037",
+   "0000923120-26-000019",
    "0000919574-26-007106",
    "0001917389-26-000025",
    "0000804328-26-000106",
@@ -12289,8 +12348,8 @@
    "0001213900-26-111132",
    "0001713683-26-000206",
    "0001628280-26-066572",
-   "0001104659-26-117507",
    "0001742734-26-000022",
+   "0001104659-26-117507",
    "0001104659-26-117510",
    "0000907654-26-000110",
    "0002111867-26-000014",
