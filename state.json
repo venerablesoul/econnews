@@ -780,7 +780,10 @@
   "828d32473e794992": "2026-10-21T08:25:34.270547+00:00",
   "0bf183eaa4cb5739": "2026-10-21T08:30:34.291849+00:00",
   "1e64f60c0006881d": "2026-10-21T08:35:34.231210+00:00",
-  "ad1d90ad30ce6faa": "2026-10-21T08:35:34.231210+00:00"
+  "ad1d90ad30ce6faa": "2026-10-21T08:35:34.231210+00:00",
+  "072763dac95ce9e3": "2026-10-21T08:40:34.229633+00:00",
+  "93bab896b61d62f7": "2026-10-21T08:40:34.229633+00:00",
+  "1ef65dfa9f22f55e": "2026-10-21T08:40:34.229633+00:00"
  },
  "recent": [
   {
@@ -7407,6 +7410,44 @@
    "score": 3,
    "ts": "2026-10-21T08:35:34.231210+00:00",
    "title_ru": "Место Франции в мировой экономике тоже горит"
+  },
+  {
+   "title": "What is happening to UK prices?",
+   "link": "https://www.bbc.co.uk/news/articles/c17rgd8e9gjo?at_medium=RSS&at_campaign=rss",
+   "sources": [
+    "BBC"
+   ],
+   "score": 3,
+   "ts": "2026-10-21T08:40:34.229633+00:00",
+   "title_ru": "Что происходит с ценами в Великобритании?",
+   "lead": "UK inflation rose in September, pushed up by higher petrol and diesel prices.",
+   "lead_ru": "Инфляция в Великобритании выросла в сентябре, чему способствовал рост цен на бензин и дизельное топливо.",
+   "tags": [
+    "inflation"
+   ]
+  },
+  {
+   "title": "Adidas shares rise after 2026 guidance hike",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxObG9EYWxSbnpnQk02eEJ5Q2QyOU5QWmVFY0hCclVpWUg2blZkcnF1NjBQTUNwRk1UU1BfVWZScXlrTC1neUdkdmlnRU50dGpCQTN0NnBQNXhlZnY5bG90clRfMENXTW5BX0VyQ3lLeHJ2akVSSzBMbWVuSHFJa3lrazhqNHNmdFNwUEtqNUt6N3ZocHl6OUF0MmFMZG1HVjNJRFJEWW8tbw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-21T08:40:34.229633+00:00",
+   "title_ru": "Акции Adidas выросли после повышения прогноза на 2026 год",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "Kennedy says Trump administration aims for regulated market for peptides",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNd1E5X1I2Vm5lRnlNLXI3aHpBaWVJc0p6THlfdXNuWUVJQXg2U25IeTJZWlJhTWZCMng2eEo1YVZ3NVRDRWxmeGoyRnpuNGNLeW5Vc0xUZHU2bzRZem1kWlY4Yl9SRGlzM1A0UE1weWxvbDFQMlRWZGY3ZnNZYlUwV21KRl9ZV1pINFVqRjBtdjhJaTR1M2I4Ty1CY0ltUDItTExnUVR5VHVSZw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-21T08:40:34.229633+00:00",
+   "title_ru": "Кеннеди говорит, что администрация Трампа стремится к регулируемому рынку пептидов"
   }
  ],
  "last_digest": "2026-10-20",
@@ -12602,8 +12643,8 @@
    "0002071761-26-000013",
    "0000923120-26-000017",
    "0001140361-26-040298",
-   "0000923120-26-000019",
    "0001437749-26-033037",
+   "0000923120-26-000019",
    "0000919574-26-007106",
    "0001917389-26-000025",
    "0000804328-26-000106",
@@ -12614,8 +12655,8 @@
    "0001213900-26-111132",
    "0001713683-26-000206",
    "0001628280-26-066572",
-   "0001104659-26-117507",
    "0001742734-26-000022",
+   "0001104659-26-117507",
    "0001104659-26-117510",
    "0000907654-26-000110",
    "0002111867-26-000014",
