@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "cad8de2b69709624": "2026-10-18T08:03:30.907053+00:00",
-  "52e8ccb8d437eaa0": "2026-10-18T08:03:30.907053+00:00",
-  "15e0edac7398920d": "2026-10-18T08:03:30.907053+00:00",
   "b2ee28df98d7e0de": "2026-10-18T08:28:30.901123+00:00",
   "4f8e7e09758c010e": "2026-10-18T09:33:30.905320+00:00",
   "d09475409559ad17": "2026-10-18T10:03:30.902896+00:00",
@@ -772,32 +769,13 @@
   "025b1d7c499b3b2e": "2026-10-21T07:20:34.290482+00:00",
   "62d6f4f9ede31549": "2026-10-21T07:20:34.290482+00:00",
   "f79296ed55278ea5": "2026-10-21T07:50:34.280972+00:00",
-  "7961bc1183fa3202": "2026-10-21T07:55:34.317344+00:00"
+  "7961bc1183fa3202": "2026-10-21T07:55:34.317344+00:00",
+  "7501a8dff45a26c1": "2026-10-21T08:00:34.233163+00:00",
+  "c89c45c477634a5e": "2026-10-21T08:05:34.285104+00:00",
+  "b5347c1bb8d457c8": "2026-10-21T08:05:34.285104+00:00",
+  "b9e3ddb4c71be7aa": "2026-10-21T08:05:34.285104+00:00"
  },
  "recent": [
-  {
-   "title": "PBOC Deputy Urges Private Role in Sovereign Debt Restructuring",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQdXo1cmppWm52cFdYRlB0SFJiTTRDYWRlNmxIOVpOVVRxVWM2N0N4UTQ4eFVRM3dNclp4MzlhUjhzVnZNVXZ5aldRQ1hSVjcyZ3czcVJsOF9LcXl0T0F0THI2MmQzTDkyNk5IbGtkQ1JZdzNDc1huc1YwaldnWkJGa2tvSFl1b0NOREtOaGljNGppY0NGSnNDRFdQVnZJc2JrSV84b1NvYUtSeV9pY2pLbTUxTQ?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-18T08:03:30.907053+00:00",
-   "title_ru": "Депутат НБК призывает к частной роли в реструктуризации суверенного долга",
-   "tags": [
-    "China"
-   ]
-  },
-  {
-   "title": "IMF Says Singapore Is Among Asian Winners of the AI Boom",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQcHA4OTNfcl9IcFlhb3EtbEZBaFJpRUJyemg5UzYzUlE0b2xrWThiQjgyWW9reTJzdzFfc3hEbWFzWV9NaFQ5UVBFa2M2Y0ZhWVZ4WkJpZzl4ZDNvLXJ0anB2Y3dEX012R2dKN240eHV2MTl5WG5DTnVheXlmd2M1NzhFR1E1ZV9VdGU5NXNTTjRMckh4eHFGTmcxcG5NZFBsX09CVzRQYlR5WFctYVVlWmJ0TQ?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-18T08:03:30.907053+00:00",
-   "title_ru": "МВФ говорит, что Сингапур входит в число азиатских победителей бума ИИ"
-  },
   {
    "title": "World Economic Outlook (October 2026) - Unemployment rate",
    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9RcldxSk8zUG16b2w4a1g2dk1na2hTeG9QaXRNWTlhbENjTGZNWk1rUUtyWW0yMmtNSm1Qd3JiYWF5eXNBTnYwRzlOekFtQlRmdElGQzJKVzF6MnZacmdycG8yNlYzMDNtWlJ4dDhR?oc=5",
@@ -7329,6 +7307,36 @@
    "score": 4,
    "ts": "2026-10-21T07:55:34.317344+00:00",
    "title_ru": "Заимствования Великобритании и долг в £ 3 трлн предвещают жесткий бюджет для Healey"
+  },
+  {
+   "title": "Piero Cipollone: Pontes and Appia: unlocking opportunities for banks",
+   "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261021_1~d190f2c349.en.pdf",
+   "sources": [
+    "ECB"
+   ],
+   "score": 5,
+   "ts": "2026-10-21T08:05:34.285104+00:00",
+   "title_ru": "Пьеро Чиполлоне: Понтес и Аппиа: открывая возможности для банков"
+  },
+  {
+   "title": "COMMENTARY: Smouldering debt risk haunts French markets",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQRV9VaEVucUdBMnRRa1pUOVBSUjdUMjVzMXRwVUlKMkZMNWg2QTNPckpRV3RUdVBSVnF1N0NoV1lUaGlfa19BLVRxUV9YSDNQM1FZY3JCS2lob1pXMUZwbHBZSmpTUnp3c1EyTmZsb1J4Nk43UG9HTUpHMk5iSTNFZi0xRkozZDF0MnN5YnVIeVV1LVdmeVQ3dE1JbGZCWHdNVlZZcXFDc3prdzBpSUxWOG9B?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-21T08:05:34.285104+00:00",
+   "title_ru": "КОММЕНТАРИЙ: тлеющий долговой риск преследует французские рынки"
+  },
+  {
+   "title": "Indonesia's central bank keeps main rate unchanged, hikes deposit facility rate",
+   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPbjl2OVZIN3QyVWh2TlJoS3VMZzYxa1N0cWZJRUxmeDVwanFSMU1RN3pDTVBHaXFJOGZqdno0cUVKT1ZCblNfTlVmbFRqZzBxNl9aM19jMkRPN1g5X1FmYUJRQVRzNXZJMkJJLUlZSllSNXIzSmt3M29tYWZmWkF4cUxlQVowb1hMN1ZzdXNJVTBJN25wTUEyaXpwS3R1aUR0RmZCYXdQc3hZd0FUY2czVUYwU2lSdjNLa3kzY2JCSG1UZUFCZW9mY1dzMV8?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-21T08:05:34.285104+00:00",
+   "title_ru": "Центральный банк Индонезии сохраняет основную ставку без изменений, повышая ставку по депозитам"
   }
  ],
  "last_digest": "2026-10-20",
