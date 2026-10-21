@@ -837,7 +837,8 @@
   "f90db2850afc01dd": "2026-10-21T12:26:03.640594+00:00",
   "bee9e65933b7d06d": "2026-10-21T12:36:03.690382+00:00",
   "3aea26094d3b2f61": "2026-10-21T12:36:03.690382+00:00",
-  "194a4f34fdc2663c": "2026-10-21T12:41:03.633595+00:00"
+  "194a4f34fdc2663c": "2026-10-21T12:41:03.633595+00:00",
+  "b359b6892b7e8d12": "2026-10-21T12:51:03.654660+00:00"
  },
  "recent": [
   {
@@ -8065,6 +8066,23 @@
    "tags": [
     "China"
    ]
+  },
+  {
+   "title": "Шохин спрогнозировал снижение ключевой ставки не раньше 2027 года // Шохин: ЦБ на заседании 23 октября сохранит ставку при более жестком сигнале",
+   "link": "https://www.kommersant.ru/doc/9043910",
+   "sources": [
+    "Kommersant"
+   ],
+   "score": 9,
+   "ts": "2026-10-21T12:51:03.654660+00:00",
+   "title_en": "Shokhin predicted a reduction in the key rate no earlier than 2027 // Shokhin: The Central Bank at its meeting on October 23 will keep the rate with a tougher signal",
+   "lead": "Банк России (ЦБ) на заседании 23 октября сохранит ставку на прежнем уровне. Регулятор вернется к снижению показателя не раньше 2027 года.",
+   "lead_en": "The Bank of Russia (Central Bank) will keep the rate at the same level at its meeting on October 23. The regulator will return to reducing the indicator no earlier than 2027.",
+   "tags": [
+    "BankOfRussia",
+    "rates",
+    "Russia"
+   ]
   }
  ],
  "last_digest": "2026-10-20",
@@ -10057,6 +10075,22 @@
    }
   ],
   "insiders": [
+   {
+    "src": "sec",
+    "id": "f22238f0c1583f29",
+    "ticker": "MHH",
+    "company": "Mastech Digital, Inc.",
+    "who": "Shaw Steven A",
+    "role": "10% owner",
+    "type": "buy",
+    "value": 30026,
+    "shares": 4700,
+    "price": 6.39,
+    "plan": false,
+    "date": "2026-10-20",
+    "disclosed": "2026-10-21",
+    "link": "https://www.sec.gov/Archives/edgar/data/1437226/000119312526427279/0001193125-26-427279-index.htm"
+   },
    {
     "src": "sec",
     "id": "c05a530a67a0ee25",
@@ -13295,6 +13329,7 @@
    "0001775297-26-000014",
    "0001140361-26-040292",
    "0001976408-26-000898",
+   "0001193125-26-427279",
    "0001626201-26-000023",
    "0001917389-26-000025",
    "0001742734-26-000022",
@@ -13308,7 +13343,6 @@
    "0001140361-26-040294",
    "0002111867-26-000014",
    "0001713683-26-000208",
-   "0001568238-26-000003",
    "0001493152-26-047849",
    "0001646649-26-000034",
    "0002109337-26-000012",
