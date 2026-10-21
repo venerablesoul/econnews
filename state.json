@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "7f0f9d52b1b5d0cb": "2026-10-18T18:29:36.370679+00:00",
   "fa23ff3fafe82b79": "2026-10-18T18:59:36.380927+00:00",
   "f9dac620d7484310": "2026-10-18T19:09:36.433993+00:00",
   "a849abcc7b8fb607": "2026-10-18T19:14:36.354711+00:00",
@@ -895,19 +894,6 @@
   "4d67d46f24799935": "2026-10-21T18:21:32.163755+00:00"
  },
  "recent": [
-  {
-   "title": "Anthropic Plans to Shift Some Shares Into New ‘Public Good’ Fund",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxORmMyNWxod0hjdmwxeU0tdEk1dGpOSXdfSVdrLXdIVjB2LVR5YlpmZFhMZnlYcDNRNV9zRTcxY3piNFAzZm5mMThxeXJmVW5rMHFUSkpkQjc2NkJNWG0zUHE4RUNuV2w0RGFTQXlVQ0RtQ2VJbVdfVjE2Nmg4aDdFYXBVZGlhVzRmV3U4bXQzMHgtR1hqcl94YnRJNTVqRjVsT1h0SjJvVDUtZTdDSHJwWWxHbw?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-18T18:29:36.370679+00:00",
-   "title_ru": "Антропные планы перевести часть акций в новый фонд «Общественного блага»",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "UK Signals ‘Different View’ From Trump on Russia Sanctions",
    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQRTMtYlhaaWtFbVBlWXFUYUd4YjNYN0RKeWMzLTFTYlE1Wk1QRGNHSmZfZXpyWmwxMFZkM21Pc3RvUk1peWEzRkRnWGkxTGVPNGRZTkpzdU4ybFJfSzhrS3FDTVpEcW9FRHVHYjNTZGJsS2p0VTdqamFRYkF2S01OOTBDS0t1YVBDbUVXWmlVR1d5S01UNnJqUkdxcUlMSDlaQkNuVzBjWGk2b1k?oc=5",
@@ -13994,9 +13980,11 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-21T17:26:32.437435+00:00",
+  "checked": "2026-10-21T18:26:33.200156+00:00",
   "sec_seen": [
-   "0001213900-26-111306"
+   "0001213900-26-111306",
+   "0000354647-26-000118",
+   "0001510281-26-000366"
   ],
   "errors": {}
  }
