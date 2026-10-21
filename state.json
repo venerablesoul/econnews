@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "d7c9b6e0e6b8e9b9": "2026-10-18T07:43:30.894479+00:00",
   "cad8de2b69709624": "2026-10-18T08:03:30.907053+00:00",
   "52e8ccb8d437eaa0": "2026-10-18T08:03:30.907053+00:00",
   "15e0edac7398920d": "2026-10-18T08:03:30.907053+00:00",
@@ -771,22 +770,10 @@
   "083d61aa6c00a439": "2026-10-21T07:10:34.274660+00:00",
   "fe199bee15f954fb": "2026-10-21T07:20:34.290482+00:00",
   "025b1d7c499b3b2e": "2026-10-21T07:20:34.290482+00:00",
-  "62d6f4f9ede31549": "2026-10-21T07:20:34.290482+00:00"
+  "62d6f4f9ede31549": "2026-10-21T07:20:34.290482+00:00",
+  "f79296ed55278ea5": "2026-10-21T07:50:34.280972+00:00"
  },
  "recent": [
-  {
-   "title": "World Economic Outlook (October 2026) - Real GDP growth",
-   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPVlNabHhrbkduZ2VGaXE1M3NuR0hRd3FKRmYzOHI1dEZYN0plUFN3aGdCdXJDM0ZmNGlDS0xUVk5Qd3BTZlVsbF9ONzdLU2V2bVR0bTZTb2x5dmV4ZmdxeHk4RVdkc1ZXbVlsa2ZEamJmYlpKbDBFTkw1a1lxQWxadnQwTUNqODU0amNwaE52UQ?oc=5",
-   "sources": [
-    "IMF"
-   ],
-   "score": 9,
-   "ts": "2026-10-18T07:43:30.894479+00:00",
-   "title_ru": "Перспективы развития мировой экономики (октябрь 2026 г.) - Рост реального ВВП",
-   "tags": [
-    "GDP"
-   ]
-  },
   {
    "title": "PBOC Deputy Urges Private Role in Sovereign Debt Restructuring",
    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQdXo1cmppWm52cFdYRlB0SFJiTTRDYWRlNmxIOVpOVVRxVWM2N0N4UTQ4eFVRM3dNclp4MzlhUjhzVnZNVXZ5aldRQ1hSVjcyZ3czcVJsOF9LcXl0T0F0THI2MmQzTDkyNk5IbGtkQ1JZdzNDc1huc1YwaldnWkJGa2tvSFl1b0NOREtOaGljNGppY0NGSnNDRFdQVnZJc2JrSV84b1NvYUtSeV9pY2pLbTUxTQ?oc=5",
@@ -7319,6 +7306,18 @@
    "tags": [
     "inflation"
    ]
+  },
+  {
+   "title": "Former Hungarian Central Bank Governor Gyorg Matolcsy Detained",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-21/former-hungarian-central-bank-governor-matolcsy-detained-telex",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-21T07:50:34.280972+00:00",
+   "title_ru": "Задержан бывший глава Центрального банка Венгрии Дьорг Матольчи",
+   "lead": "Former Hungarian central bank Governor Gyorgy Matolcsy was detained early on Wednesday, Telex reported, citing his lawyer Pal Batki.",
+   "lead_ru": "Бывший глава центрального банка Венгрии Дьёрдь Матольчи был задержан рано утром в среду, сообщает Telex со ссылкой на своего адвоката Пала Батки."
   }
  ],
  "last_digest": "2026-10-20",
