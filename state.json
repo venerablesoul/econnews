@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "83bcdf8885c2d887": "2026-10-18T04:08:04.653434+00:00",
   "bc6de2973c2c5205": "2026-10-18T04:18:04.663635+00:00",
   "ff0b1bbfc107c366": "2026-10-18T04:38:04.685859+00:00",
   "628bfac291530e3d": "2026-10-18T04:48:04.666154+00:00",
@@ -728,18 +727,10 @@
   "b13bdafaa8616c65": "2026-10-21T03:50:00.371706+00:00",
   "1854e1d955ecc516": "2026-10-21T03:55:00.334646+00:00",
   "d01f4127d392795f": "2026-10-21T04:05:00.467490+00:00",
-  "ce10e76b44794d8d": "2026-10-21T04:05:00.467490+00:00"
+  "ce10e76b44794d8d": "2026-10-21T04:05:00.467490+00:00",
+  "60fa47903a4770b4": "2026-10-21T04:15:00.360748+00:00"
  },
  "recent": [
-  {
-   "title": "Банки указали на рост запросов данных с банковской тайной от налоговиков",
-   "link": "https://www.rbc.ru/finances/18/10/2026/6ad3b5a80181bcdfac902061",
-   "sources": [
-    "RBC"
-   ],
-   "score": 1,
-   "ts": "2026-10-18T04:08:04.653434+00:00"
-  },
   {
    "title": "Saudi-led coalition says helicopter crash in Najran kills two crew members",
    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNbFZiZFozb1RWTzVBbk4wZU8xMHlSeHhuSmhkMi1FSVhqTTZ5U3BMbF9aaU5fVjRpWnI1MkJTMTZscVcxTWM0YnVFRXFWdXQ2SnpSdVNPVm5LR1QzbVhpQjliR3VNZFl4WXhjODUzbjNZRXg0S0l0al80ZDlwdjc5ejFRU0E3NlJBZm1iOWg3VjhybzNLbWpOelQ4ZDZBWTkxS3Y4Rm9MUm9vTjdfYk9iaVRJd29DSDhMUi1KOGZMcDhzZGs?oc=5",
@@ -6768,7 +6759,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 1,
+  "Fed": 0,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
