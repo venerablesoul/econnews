@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "3313d9c88feba79f": "2026-10-18T03:48:04.664295+00:00",
-  "dd0c1a41f9830fed": "2026-10-18T03:48:04.664295+00:00",
   "83bcdf8885c2d887": "2026-10-18T04:08:04.653434+00:00",
   "bc6de2973c2c5205": "2026-10-18T04:18:04.663635+00:00",
   "ff0b1bbfc107c366": "2026-10-18T04:38:04.685859+00:00",
@@ -726,23 +724,10 @@
   "de8c44d18ee3706e": "2026-10-21T03:40:00.354386+00:00",
   "d738b0d3bcd1d680": "2026-10-21T03:45:00.362884+00:00",
   "a2880d06f0933237": "2026-10-21T03:45:00.362884+00:00",
-  "08c5ea1bd515abf9": "2026-10-21T03:45:00.362884+00:00"
+  "08c5ea1bd515abf9": "2026-10-21T03:45:00.362884+00:00",
+  "b13bdafaa8616c65": "2026-10-21T03:50:00.371706+00:00"
  },
  "recent": [
-  {
-   "title": "Rubio says Trump to take up to 60 days to weigh Russia sanctions",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNRlRkQlBQYXFvck1VQUYxcVpwM2dEVDMwQThIY3ZHRldBd0M0dmV5NXFnZlBXMnpuUnozQlhLbkg4ZjZCT3kzVW5mcnl3RVEwUXRpdUJsZGViRlE1MFdJbHZWZ3pRTXNOUDQtOTRsQU5nSzd4a3d5Z3c2dTkzZWZSNlZsbXZBamFSMS1qVEVnaHc2MTZJUHZ4YU1zS0hfNVM4eVE?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-18T03:48:04.664295+00:00",
-   "title_ru": "Рубио говорит, что Трампу потребуется до 60 дней, чтобы взвесить санкции против России",
-   "tags": [
-    "sanctions",
-    "Russia"
-   ]
-  },
   {
    "title": "Банки указали на рост запросов данных с банковской тайной от налоговиков",
    "link": "https://www.rbc.ru/finances/18/10/2026/6ad3b5a80181bcdfac902061",
@@ -6718,6 +6703,22 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "BOJ Likely to Keep Hiking Rates Every Quarter, Ex-Official Says",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-21/boj-likely-to-keep-hiking-rates-every-quarter-ex-official-says",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-21T03:50:00.371706+00:00",
+   "title_ru": "Банк Японии, скорее всего, будет продолжать повышать ставки каждый квартал, говорит бывший чиновник",
+   "lead": "The Bank of Japan will probably keep raising interest rates every three months to contain risks of inflation deviating from its stable price target, according to a former BOJ executive director who oversaw monetary policy.",
+   "lead_ru": "По словам бывшего исполнительного директора Банка Японии, курировавшего денежно-кредитную политику, Банк Японии, вероятно, будет продолжать повышать процентные ставки каждые три месяца, чтобы сдерживать риски отклонения инфляции от своего стабильного целевого показателя.",
+   "tags": [
+    "rates",
+    "inflation"
+   ]
   }
  ],
  "last_digest": "2026-10-20",
@@ -11911,7 +11912,6 @@
    "0001742734-26-000022",
    "0001628280-26-066566",
    "0002111867-26-000014",
-   "0001166288-26-000002",
    "0002071761-26-000013",
    "0001917389-26-000025",
    "0001104659-26-117507",
@@ -11920,6 +11920,7 @@
    "0000923120-26-000019",
    "0000923120-26-000017",
    "0001628280-26-066572",
+   "0001628280-26-066575",
    "0000921895-26-002832",
    "0001646649-26-000034",
    "0000719955-26-000229",
@@ -11955,7 +11956,7 @@
    "0001713683-26-000206",
    "0001040470-26-000309",
    "0002156232-26-000003",
-   "0001628280-26-066575"
+   "0001166288-26-000002"
   ],
   "errors": {}
  }
