@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "edc3aefa5ae4ff4c": "2026-10-18T16:39:04.201762+00:00",
   "a409f8ebdb3f8eb3": "2026-10-18T18:14:36.368969+00:00",
   "7f0f9d52b1b5d0cb": "2026-10-18T18:29:36.370679+00:00",
   "fa23ff3fafe82b79": "2026-10-18T18:59:36.380927+00:00",
@@ -873,7 +872,10 @@
   "85428ecaa39b1ae3": "2026-10-21T16:31:03.753246+00:00",
   "21336a8511028457": "2026-10-21T16:36:03.721476+00:00",
   "9f05b3c3336c8fce": "2026-10-21T16:36:03.721476+00:00",
-  "aa7069c73a2ddc72": "2026-10-21T16:36:03.721476+00:00"
+  "aa7069c73a2ddc72": "2026-10-21T16:36:03.721476+00:00",
+  "461de92c440d9816": "2026-10-21T16:46:32.286034+00:00",
+  "a642ab3f5ec2b2c7": "2026-10-21T16:46:32.286034+00:00",
+  "de8d618320de928c": "2026-10-21T16:46:32.286034+00:00"
  },
  "recent": [
   {
@@ -8482,6 +8484,38 @@
     "oil",
     "gas"
    ]
+  },
+  {
+   "title": "Tax-Busting Trades Fuel Rush for Muni ETFs After Fall Selloff",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-21/tax-busting-trades-fuel-rush-for-muni-etfs-after-fall-selloff",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-21T16:46:32.286034+00:00",
+   "title_ru": "Налоговые сделки стимулируют лихорадку для Muni ETF после осенней распродажи",
+   "lead": "Owners of municipal bonds usually aren’t happy to see their holdings go into the red, but this year, they’re taking full advantage of negative returns in September and early October.",
+   "lead_ru": "Владельцы муниципальных облигаций обычно не рады, когда их активы уходят в минус, но в этом году они в полной мере воспользовались отрицательной доходностью в сентябре и начале октября.",
+   "tags": [
+    "bonds",
+    "markets"
+   ]
+  },
+  {
+   "title": "Недельная инфляция в России замедлилась до 0,05%",
+   "link": "https://www.kommersant.ru/doc/9044191",
+   "sources": [
+    "Kommersant"
+   ],
+   "score": 5,
+   "ts": "2026-10-21T16:46:32.286034+00:00",
+   "title_en": "Weekly inflation in Russia slowed to 0.05%",
+   "lead": "Потребительские цены в России с 13 по 19 октября выросли на 0,05% против 0,11% на прошлой неделе. С начала месяца цены выросли на 1,06%, с начала года — на 6,15%, следует из подсчетов Росстата.",
+   "lead_en": "Consumer prices in Russia from October 13 to October 19 increased by 0.05% compared to 0.11% last week. Since the beginning of the month, prices have increased by 1.06%, since the beginning of the year - by 6.15%, according to Rosstat calculations.",
+   "tags": [
+    "inflation",
+    "Russia"
+   ]
   }
  ],
  "last_digest": "2026-10-20",
@@ -13757,8 +13791,8 @@
   "checked": "2026-10-21T16:26:03.713547+00:00",
   "sec_seen": [
    "0001628280-26-066642",
-   "0001628280-26-066643",
    "0001193125-26-427542",
+   "0001628280-26-066643",
    "0001628280-26-066638",
    "0001193125-26-427524",
    "0001111794-26-000016",
