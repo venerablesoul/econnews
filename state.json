@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "b16a84e03a3bcf32": "2026-10-18T05:03:04.653453+00:00",
-  "5ad39845e4d34e98": "2026-10-18T05:08:04.687981+00:00",
   "72d0007aca439daa": "2026-10-18T05:33:04.659229+00:00",
   "515ff6eaf7b5d4f9": "2026-10-18T05:43:04.673701+00:00",
   "de27c8a1727e3772": "2026-10-18T05:53:04.653935+00:00",
@@ -734,22 +732,12 @@
   "694a754bcb980601": "2026-10-21T04:30:00.382369+00:00",
   "b46d7009e29fbbef": "2026-10-21T04:35:00.333468+00:00",
   "1a48b9e1a53595f9": "2026-10-21T04:35:00.333468+00:00",
-  "e29e07c27f3f0cb2": "2026-10-21T04:50:00.319750+00:00"
+  "e29e07c27f3f0cb2": "2026-10-21T04:50:00.319750+00:00",
+  "69d7d337e4c4a008": "2026-10-21T05:10:00.354092+00:00",
+  "62b21b1d1145c526": "2026-10-21T05:10:00.354092+00:00",
+  "78fc93ace4c7ae7c": "2026-10-21T05:10:00.354092+00:00"
  },
  "recent": [
-  {
-   "title": "Parveen Bhadan, Sea Gold Infrastructure Limited: Profile and Biography",
-   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5IY0NpM0k0bXRRMEpUa2tmdDJSQ0VLbFVyY05IX1FpYU5uSTdqTzd2OTBDUWZlWUU5TUVVUXRfOVo2WDJ1TmJzdnA5cjdnazgzbV9oVmhjRVl5aElVLVE?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-18T05:03:04.653453+00:00",
-   "title_ru": "Парвин Бхадан, Sea Gold Infrastructure Limited: профиль и биография",
-   "tags": [
-    "gold"
-   ]
-  },
   {
    "title": "Todos los autores",
    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5BVmtJUUJfX2loNUE5ODB6RnVpLWlOR3FPSHlrX2c0QXYzdHZPU1RWelljVUtCRzIzckowRHduSzdmbmVGQzFtUndaMVBtaEt0X2dMYk5hSHVJMmh0SUFOaUkydmk?oc=5",
@@ -6822,6 +6810,33 @@
    "score": 3,
    "ts": "2026-10-21T04:50:00.319750+00:00",
    "title_ru": "Исследование показывает, что искусственный интеллект подстегнет цифровую экономику Юго-Восточной Азии до 368 миллиардов долларов"
+  },
+  {
+   "title": "Bond selloff revives debate about euro zone banks' 'doom loop'",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNSE45YzVMT3FwR1hwcF9lMDBYS3pEYkozajNuaFFteWx0TlZIaVZjdzRQMkstbnhiUEhXVjlLU0lha011VmNwYmZWeTdVb1pUSHNKY3hOVkZXTzZJWndTakUyZVo3ejJNcXlJbldSMTBQTURvcDBvU2ZnYU1Tc202dXJ1VHlzZnlncTVCX284Nlg5ZE50b3hMNlBTZEl2TC13Q2FvOWFyYmZETDdDRjlSczZFbjZXZw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 7,
+   "ts": "2026-10-21T05:10:00.354092+00:00",
+   "title_ru": "Распродажа облигаций возобновила дебаты о «круговой петле» банков еврозоны",
+   "tags": [
+    "bonds",
+    "markets"
+   ]
+  },
+  {
+   "title": "Australian AI data centre operator NextDC shares shed 44% on revenue delay",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxONWJyOF9XbWhodGFsMWVRYUhMYzlCUDRMR2ZqRDdTdTFsOTJZWVdTcS1sRTg1UldzbkMyN1JTMkFmWkpJT0s0NkVnOWgyeXNlRnMwOVlXX3RueEt4SkJ6OTU2em5yZzBpS3o5Q3paWUk1WjJLNXhrUjQ4bGhUb2xjSHYzOTV4N3lreHREMkFBa0F3bVpJdE9VMHg4d0d4ZWJJbVFEX2xZM0xyOU9PMWItaXItTUVSWWlid003RExodnIxUFE?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-21T05:10:00.354092+00:00",
+   "title_ru": "Акции австралийского оператора дата-центров NextDC упали на 44% из-за задержки доходов",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-20",
@@ -12011,7 +12026,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-21T04:05:00.467490+00:00",
+  "checked": "2026-10-21T05:10:00.354092+00:00",
   "sec_seen": [
    "0001742734-26-000022",
    "0001628280-26-066566",
