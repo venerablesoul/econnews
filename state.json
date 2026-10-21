@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "f9dac620d7484310": "2026-10-18T19:09:36.433993+00:00",
   "a849abcc7b8fb607": "2026-10-18T19:14:36.354711+00:00",
   "4f9e746f9dfe308a": "2026-10-18T19:19:36.362144+00:00",
   "bd86d2c58d380a79": "2026-10-18T19:24:36.393830+00:00",
@@ -893,25 +892,11 @@
   "4d67d46f24799935": "2026-10-21T18:21:32.163755+00:00",
   "e7d863f7a41b5ccd": "2026-10-21T18:36:32.193652+00:00",
   "f1c7fc62f633b4a8": "2026-10-21T18:56:32.171653+00:00",
-  "e277f895e5b01efc": "2026-10-21T19:01:32.421006+00:00"
+  "e277f895e5b01efc": "2026-10-21T19:01:32.421006+00:00",
+  "f14f6fbb98ff1a31": "2026-10-21T19:11:32.200553+00:00",
+  "ab3c7a9e46fa4e5e": "2026-10-21T19:11:32.200553+00:00"
  },
  "recent": [
-  {
-   "title": "CPI Test Set to Make or Break New Zealand Dollar’s Losing Run",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-18/cpi-test-set-to-make-or-break-new-zealand-dollar-s-losing-run",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-18T19:09:36.433993+00:00",
-   "title_ru": "Набор тестов ИПЦ поможет или прервет падение новозеландского доллара",
-   "lead": "The New Zealand dollar has fallen for five straight quarters and if analysts are right, it may be on course to test a pandemic-era low.",
-   "lead_ru": "Новозеландский доллар падал пять кварталов подряд, и, если аналитики правы, он, возможно, находится на пути к тестированию минимума эпохи пандемии.",
-   "tags": [
-    "inflation",
-    "dollar"
-   ]
-  },
   {
    "title": "Bond Market’s Big Short Bet Gets Wakeup Call as AI Trade Wobbles",
    "link": "https://www.bloomberg.com/news/articles/2026-10-18/bond-market-s-big-short-bet-gets-wakeup-call-as-ai-trade-wobbles",
@@ -8704,6 +8689,21 @@
    "score": 3,
    "ts": "2026-10-21T19:01:32.421006+00:00",
    "title_ru": "Антикоррупционная полиция Украины обыскивает центральный банк, губернатор заявил, что нет связи с деятельностью банка"
+  },
+  {
+   "title": "KPC CEO Al-Sabah Says Oil Output Well Over 2M Barrels Daily",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-21/kpc-ceo-al-sabah-says-oil-output-over-2m-barrels-daily-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-21T19:11:32.200553+00:00",
+   "title_ru": "Генеральный директор KPC Аль-Сабах заявил, что добыча нефти превышает 2 миллиона баррелей в день",
+   "lead": "Kuwait Petroleum Corporation CEO Sheikh Nawaf Al-Sabah said that company told customers that it would do 'everything possible' to ensure shipments of crude would continue despite the closure of the Strait of Hormuz.",
+   "lead_ru": "Генеральный директор Kuwait Petroleum Corporation шейх Наваф Аль-Сабах заявил, что компания заявила клиентам, что сделает «все возможное», чтобы поставки сырой нефти продолжались, несмотря на закрытие Ормузского пролива.",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-21",
@@ -13996,7 +13996,8 @@
   "checked": "2026-10-21T18:26:33.200156+00:00",
   "sec_seen": [
    "0001510281-26-000366",
-   "0000354647-26-000118"
+   "0000354647-26-000118",
+   "0001760581-26-000071"
   ],
   "errors": {}
  }
