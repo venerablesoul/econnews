@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e165aef8d78b8efb": "2026-10-18T23:30:13.729050+00:00",
   "b7801dab164803ae": "2026-10-18T23:35:13.689520+00:00",
   "9f308b9c06a26bb1": "2026-10-18T23:35:13.689520+00:00",
   "3e5217004b9061e5": "2026-10-18T23:40:13.743750+00:00",
@@ -901,24 +900,12 @@
   "792442693243bf5d": "2026-10-21T23:16:59.949585+00:00",
   "a8275e02227b60ee": "2026-10-21T23:21:59.996400+00:00",
   "8f11102a569ae78d": "2026-10-21T23:21:59.996400+00:00",
-  "83c1140d69e669f3": "2026-10-21T23:21:59.996400+00:00"
+  "83c1140d69e669f3": "2026-10-21T23:21:59.996400+00:00",
+  "188c08f5df1c6c32": "2026-10-21T23:32:00.058630+00:00",
+  "3064c65a8f930160": "2026-10-21T23:32:00.058630+00:00",
+  "13185e0a8342b850": "2026-10-21T23:32:00.058630+00:00"
  },
  "recent": [
-  {
-   "title": "Euro Falls as Russia Risk, France Protests Dent Trader Sentiment",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-18/euro-falls-as-russia-risk-france-protests-dent-trader-sentiment",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-18T23:30:13.729050+00:00",
-   "title_ru": "Евро падает, поскольку Россия рискует, Франция протестует против настроений трейдера Dent",
-   "lead": "The euro fell against most of its Group-of-10 peers as escalating tensions in Ukraine and widespread protests in France dented sentiment toward the common currency.",
-   "lead_ru": "Евро упал против большинства своих коллег по Группе 10, поскольку эскалация напряженности в Украине и широкомасштабные протесты во Франции подорвали настроения в отношении единой валюты.",
-   "tags": [
-    "Russia"
-   ]
-  },
   {
    "title": "Japanese Equities Set to Fall on Tech Share Selloff, Higher Oil",
    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQclp0cmlPVzk4TGpWXy1MMWY5OG95aUtWR0YzZk56ZmZrd1pFaklZMHVFeXE0Um5GVzZOWERjMDJoSWJpeGc1RjRaak1rVlgxanNieF9fR2tYOE1vZllTQlE0ampXMVVXUlpBUzFqZ2VibXEtaG5mMkNFY1VsOXJvcHE4WGlYeU1PYVZTWUVRQnVTMzlHZDY5cDZsUEhXZC1ET1h3amdQb2NxakYtWlo1S2gxTQ?oc=5",
@@ -8896,6 +8883,25 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Venezuela to attract investors after elections, Branson says",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQYjM3czJkMGVZSHMzXzBkcUhRV204bGpXZm9MaDhEeFNlNFl0RHI0SHVBU1JnMklWaDF6NnVXY1doajRyUUhGbHZZVnNiaVVScnFaY1FaSEJGdVBqbmxoVFk5RnBraTJEM2hmb29wbGRMRFpibjRJdmszTTNTSWczTlpLODhyaGRzNF9xdjV3Wk40QmxIUzRRN1M4dzVEZWdISnVfRXNSY2dfOFk?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-21T23:32:00.058630+00:00",
+   "title_ru": "Венесуэла привлечет инвесторов после выборов, говорит Брэнсон"
+  },
+  {
+   "title": "Tesla’s stock falls as Elon Musk leaves investors wanting more",
+   "link": "https://www.marketwatch.com/story/teslas-stock-falls-as-elon-musk-leaves-investors-wanting-more-eb347f38?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-21T23:32:00.058630+00:00"
   }
  ],
  "last_digest": "2026-10-21",
@@ -15018,7 +15024,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-21T22:31:59.930018+00:00",
+  "checked": "2026-10-21T23:32:00.058630+00:00",
   "sec_seen": [
    "0001193125-26-428030",
    "0001798821-26-000007",
@@ -15031,8 +15037,8 @@
    "0001213900-26-111426",
    "0001701247-26-000014",
    "0001193125-26-428041",
-   "0001193125-26-428104",
    "0001191473-26-000008",
+   "0001193125-26-428104",
    "0001882764-26-000009",
    "0001867888-26-000010",
    "0001193125-26-428040",
@@ -15042,13 +15048,13 @@
    "0002074298-26-000020",
    "0000804328-26-000108",
    "0002041533-26-000008",
+   "0001493152-26-047950",
    "0000804328-26-000112",
    "0001826731-26-000012",
    "0000804328-26-000107",
    "0001193125-26-428110",
    "0001807136-26-000002",
    "0000804328-26-000109",
-   "0000804328-26-000110",
    "0001193125-26-428018",
    "0001674510-26-000002",
    "0002108845-26-000007",
@@ -15066,7 +15072,7 @@
    "0001193125-26-428106",
    "0000935703-26-000120",
    "0001231919-26-001485",
-   "0001493152-26-047950"
+   "0000804328-26-000110"
   ],
   "errors": {}
  }
