@@ -865,7 +865,9 @@
   "a3136ea9ea7b6cb5": "2026-10-21T14:46:03.764119+00:00",
   "b80bbd5c554e54c6": "2026-10-21T14:51:03.713074+00:00",
   "ed675778242659fb": "2026-10-21T14:51:03.713074+00:00",
-  "fa4cbc58b7ed3968": "2026-10-21T14:56:04.858862+00:00"
+  "fa4cbc58b7ed3968": "2026-10-21T14:56:04.858862+00:00",
+  "38447091af3f9e89": "2026-10-21T15:11:03.696694+00:00",
+  "e0f8cb6f89351760": "2026-10-21T15:11:03.696694+00:00"
  },
  "recent": [
   {
@@ -8374,6 +8376,16 @@
    "title_ru": "Венгерские политики называют 2032 год вероятной датой вступления в Европу",
    "lead": "Hungarian policymakers flagged 2032 as a potential date for adopting the euro, arguing that an even faster switch would require a markedly more upbeat global growth environment than currently anticipated.",
    "lead_ru": "Венгерские политики отметили 2032 год как потенциальную дату перехода на евро, утверждая, что еще более быстрый переход потребует заметно более оптимистичной глобальной среды роста, чем ожидается в настоящее время."
+  },
+  {
+   "title": "Producer Price Index up 6.3 percent in September; largest 12-month increase since December 2022",
+   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQZ0NDejhnTzZVT29aRjBQLVl6cE14ZmxXdXZzdW53RXhZUGpUNWlDMFJvWTVMTm5kdEM4NW5QbkhzSzl5eU1BRlUybGdRUGlKYUpaeWJOSV96V3RWOWw4enVyNGlGa2JkNTMzVGlJRE9RRndvMFFQNVNtMnY5NmhYUkZtOHJCbW9iajFWTUpYNXhLXzVHMExSMzd3Nm5DcVRrUWVGQkQ2M3QtOXoyY1A4YXpfOHNvSEtQS1NTRG93TWhxbHNFXzhxSWFsTTc?oc=5",
+   "sources": [
+    "US Labor Statistics (BLS)"
+   ],
+   "score": 4,
+   "ts": "2026-10-21T15:11:03.696694+00:00",
+   "title_ru": "Индекс цен производителей вырос на 6,3 процента в сентябре; самый большой 12-месячный рост с декабря 2022 года"
   }
  ],
  "last_digest": "2026-10-20",
@@ -13646,7 +13658,6 @@
   },
   "checked": "2026-10-21T14:16:04.117757+00:00",
   "sec_seen": [
-   "0001628280-26-066621",
    "0000108985-26-000091",
    "0001628280-26-066630",
    "0000108985-26-000090",
