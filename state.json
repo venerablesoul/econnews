@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "4f8e7e09758c010e": "2026-10-18T09:33:30.905320+00:00",
   "d09475409559ad17": "2026-10-18T10:03:30.902896+00:00",
   "cccc77875e337510": "2026-10-18T10:28:30.873613+00:00",
   "fbb1aca8fc2a5a62": "2026-10-18T10:53:30.894167+00:00",
@@ -792,22 +791,13 @@
   "d2049ca86f0f5498": "2026-10-21T09:20:34.259601+00:00",
   "6748a4ce4fba4bb3": "2026-10-21T09:25:34.290654+00:00",
   "59c5893e5cd5a636": "2026-10-21T09:25:34.290654+00:00",
-  "4c574bef4ad8af38": "2026-10-21T09:30:34.282613+00:00"
+  "4c574bef4ad8af38": "2026-10-21T09:30:34.282613+00:00",
+  "0aa8c9ebbe80fa84": "2026-10-21T09:35:34.233890+00:00",
+  "8c7fc4c8c4d72c1c": "2026-10-21T09:35:34.233890+00:00",
+  "200788aeb11360cb": "2026-10-21T09:40:34.268626+00:00",
+  "b8044bef39f86235": "2026-10-21T09:40:34.268626+00:00"
  },
  "recent": [
-  {
-   "title": "World Economic Outlook (October 2026) - Unemployment rate",
-   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9RcldxSk8zUG16b2w4a1g2dk1na2hTeG9QaXRNWTlhbENjTGZNWk1rUUtyWW0yMmtNSm1Qd3JiYWF5eXNBTnYwRzlOekFtQlRmdElGQzJKVzF6MnZacmdycG8yNlYzMDNtWlJ4dDhR?oc=5",
-   "sources": [
-    "IMF"
-   ],
-   "score": 8,
-   "ts": "2026-10-18T09:33:30.905320+00:00",
-   "title_ru": "Перспективы развития мировой экономики (октябрь 2026 г.) - Уровень безработицы",
-   "tags": [
-    "jobs"
-   ]
-  },
   {
    "title": "World Bank says ‘small AI’ could transform developing countries",
    "link": "https://www.theguardian.com/technology/2026/oct/18/world-bank-artificial-intelligence-developing-economies",
@@ -7548,6 +7538,34 @@
    "lead_ru": "Япония получила около ¥ 195 трлн ($ 1,2 трлн) в налогово-бюджетной сфере, поскольку инфляция подрывает реальную стоимость государственного долга, по словам бывшего чиновника Банка Японии, который говорит, что выгода может помочь премьер-министру Санаэ...",
    "tags": [
     "inflation"
+   ]
+  },
+  {
+   "title": "Auto industry bosses expect software, China growth to reshape sector by 2035, survey shows",
+   "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNTndqRDVwV293U0FKSkpLcUdFYl9VSm9ka2toR2t5TXpRSHJDQ1Fpc0wxMDhxZ2Y0Ylo2LXJ6X3R2dk9HQnNLbm1ra0U3aUlRN1JhaEtBSXZtOWVZZXo3QXlLMHNVMHFXTWZmdEJqUmdsQmVHUkxiRktkd3ZoaFNVY05xTjR6Wm80OElBVnJHSDRKdk43aHFxamIwM2l5MnEtYVZWTW5IaHVYTkduRnk3MlJaTjZtLXZoYm5xanhKY1BmVEx2Y0gwVHdIdU95SGlqNGFFV0RMWVNhLWdCeEE?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-21T09:40:34.268626+00:00",
+   "title_ru": "Руководители автомобильной промышленности ожидают программного обеспечения, рост в Китае изменит сектор к 2035 году, показывает опрос",
+   "tags": [
+    "China"
+   ]
+  },
+  {
+   "title": "Путин: Россия готова поставлять большие объемы удобрений на рынок США",
+   "link": "https://www.kommersant.ru/doc/9043635",
+   "sources": [
+    "Kommersant"
+   ],
+   "score": 3,
+   "ts": "2026-10-21T09:40:34.268626+00:00",
+   "title_en": "Putin: Russia is ready to supply large volumes of fertilizers to the US market",
+   "lead": "Россия готова поставлять удобрения в больших количествах на американский рынок. Об этом заявил президент Владимир Путин на встрече в Санкт-Петербурге со спецпосланником президента США Стивом Уиткоффом.",
+   "lead_en": "Russia is ready to supply fertilizers in large quantities to the American market. This was stated by President Vladimir Putin at a meeting in St. Petersburg with Special Envoy of the President of the United States Steve Whitkoff.",
+   "tags": [
+    "Russia"
    ]
   }
  ],
