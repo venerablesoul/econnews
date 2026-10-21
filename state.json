@@ -880,7 +880,8 @@
   "f848c6f1c94ac652": "2026-10-21T16:56:32.403045+00:00",
   "7117bdfdb670543f": "2026-10-21T17:01:32.467994+00:00",
   "e2586570f5198c2f": "2026-10-21T17:11:32.658272+00:00",
-  "044c75c8e1d71a87": "2026-10-21T17:11:32.658272+00:00"
+  "044c75c8e1d71a87": "2026-10-21T17:11:32.658272+00:00",
+  "7e6c305ba3f49d40": "2026-10-21T17:16:32.480193+00:00"
  },
  "recent": [
   {
@@ -8567,6 +8568,19 @@
    "title_ru": "Предупреждение всем, у кого есть задолженность по кредитной карте...",
    "lead": "Martin’s leading this week’s podcast with an urgent warning for anyone carrying credit card: now is the time to act.",
    "lead_ru": "На этой неделе Мартин ведет подкаст с настоятельным предупреждением для всех, у кого есть кредитная карта: сейчас самое время действовать."
+  },
+  {
+   "title": "US to Tap Heating Oil Reserve as Prices Soar Before Election",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNb0NRQ0R1TmJXTjdJbThTNDRTZWtkbU5tb2ZLWS12dkdnUGM0MmUxRTQxTXloa2ptekVhTWN2RmlUOEZuUVJBVHNtWGxvaUlZTG1qRmVfTWY0VnlQNFFSbVR1WlBuZG52T2owNnhRaUpZMlV6SGhvcTNYckxBYlVjN3ZPZVNKczlpWWgza1FtSl9NamFoUWFLd0dYUGF3VEhDZkJsWFd3UGI1bTJ5YUJjamI4Y2tEdw?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-21T17:16:32.480193+00:00",
+   "title_ru": "США будут использовать запасы мазута, поскольку цены взлетают перед выборами",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-20",
@@ -10638,6 +10652,22 @@
     "date": "2026-10-19",
     "disclosed": "2026-10-21",
     "link": "https://www.sec.gov/Archives/edgar/data/2109337/000210933726000012/0002109337-26-000012-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "babf635ed7eab1cf",
+    "ticker": "GLBE",
+    "company": "Global-E Online Ltd.",
+    "who": "Shahar Tamari",
+    "role": "COO",
+    "type": "sell",
+    "value": 988423,
+    "shares": 24999,
+    "price": 39.54,
+    "plan": true,
+    "date": "2026-10-19",
+    "disclosed": "2026-10-21",
+    "link": "https://www.sec.gov/Archives/edgar/data/1964142/000119312526427623/0001193125-26-427623-index.htm"
    },
    {
     "src": "sec",
@@ -13841,19 +13871,19 @@
   },
   "checked": "2026-10-21T16:26:03.713547+00:00",
   "sec_seen": [
+   "0000006955-26-000085",
    "0001628280-26-066642",
-   "0002058897-26-000326",
    "0001193125-26-427542",
    "0002156811-26-000002",
-   "0001628280-26-066638",
    "0001193125-26-427524",
    "0001111794-26-000016",
-   "0002058897-26-000324",
+   "0001628280-26-066643",
+   "0001193125-26-427623",
    "0001193125-26-427545",
    "0001251987-26-000010",
    "0001628280-26-066641",
    "0001628280-26-066649",
-   "0001628280-26-066643"
+   "0000006955-26-000087"
   ],
   "errors": {}
  }
