@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "628bfac291530e3d": "2026-10-18T04:48:04.666154+00:00",
   "a4348ade7db45996": "2026-10-18T04:58:04.667273+00:00",
   "b16a84e03a3bcf32": "2026-10-18T05:03:04.653453+00:00",
   "5ad39845e4d34e98": "2026-10-18T05:08:04.687981+00:00",
@@ -735,22 +734,10 @@
   "1b11e202dd035230": "2026-10-21T04:30:00.382369+00:00",
   "694a754bcb980601": "2026-10-21T04:30:00.382369+00:00",
   "b46d7009e29fbbef": "2026-10-21T04:35:00.333468+00:00",
-  "1a48b9e1a53595f9": "2026-10-21T04:35:00.333468+00:00"
+  "1a48b9e1a53595f9": "2026-10-21T04:35:00.333468+00:00",
+  "e29e07c27f3f0cb2": "2026-10-21T04:50:00.319750+00:00"
  },
  "recent": [
-  {
-   "title": "AI Trade Reversal Pierces Asia’s Star Picks-and-Shovels Stocks",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOREtWM3dzNTRIb29DY2pnS3JHYmJpLVRURzBlT1RQX0FSZGMzWkFuS0w0dXVhXzlSQTR3MVhZdm9nTm90S21JWWp1UjhLTjdPamxGSUMxVFd1ekZVWGp4bXBsTlFyVDJLRWpvalFqMlpldURMUXpPbFR5MlY0RWNMc3dTdW9BaFFEemc5bEJIbnBseEJkN3hlbGhMTEpaenVzMGJpa052RmZKbzU4bTF3cGpIQQ?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-18T04:48:04.666154+00:00",
-   "title_ru": "Разворот торговли ИИ пронзил акции звезд Азии",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Global economy set for AI-driven surge, FT survey suggests",
    "link": "https://www.ft.com/content/c6aeb3a1-1874-4947-8ffc-4d993301244a?syn-25a6b1a6=1",
@@ -6841,6 +6828,16 @@
    "title_ru": "Борьба Coke за выход на мировой рынок кофе стоимостью 500 миллиардов долларов",
    "lead": "Coca-Cola’s acquisition of Costa Coffee was supposed to lead to thousands of self-serve espresso machines around the world. Instead, Coke got burned. Kristina Peterson reports. (Source: Bloomberg)",
    "lead_ru": "Приобретение Coca-Cola компании Costa Coffee должно было привести к появлению тысяч кофемашин самообслуживания по всему миру. Вместо этого кока-кола сгорела. Рассказывает Кристина Петерсон. (Источник: Блумберг)"
+  },
+  {
+   "title": "AI to Spur SE Asian Digital Economy to $368 Billion, Study Shows",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPaUJRRkxsNVRQaGhEeHYtQWM3cmRxemVjYUstcGI2ZGs1RjRLaDE1aWF1d3pOZ3RXTDUtamRDazc2X2RWT1VNaDBEQUdyUW1SSVZRSC1HendNV0ItNnR6QlA1c2pIa2lRdjVUSFpLZWJ1UzJEcTNMVTZvX1NEV1c5NEhQbzNNZmtoMm04VXFhN1JSeXdJc1gxQjV5ZjA2ZUVKUDRWXzJ4QnByRUpXZzJiaUloMA?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-21T04:50:00.319750+00:00",
+   "title_ru": "Исследование показывает, что искусственный интеллект подстегнет цифровую экономику Юго-Восточной Азии до 368 миллиардов долларов"
   }
  ],
  "last_digest": "2026-10-20",
@@ -12034,7 +12031,6 @@
    "0001742734-26-000022",
    "0001628280-26-066566",
    "0002111867-26-000014",
-   "0001166288-26-000002",
    "0002071761-26-000013",
    "0001917389-26-000025",
    "0001104659-26-117507",
@@ -12043,6 +12039,7 @@
    "0000923120-26-000019",
    "0000923120-26-000017",
    "0001628280-26-066572",
+   "0001628280-26-066575",
    "0000921895-26-002832",
    "0001646649-26-000034",
    "0000719955-26-000229",
@@ -12078,7 +12075,7 @@
    "0001713683-26-000206",
    "0001040470-26-000309",
    "0002156232-26-000003",
-   "0001628280-26-066575"
+   "0001166288-26-000002"
   ],
   "errors": {}
  }
