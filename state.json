@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "a3b3f57cf41df663": "2026-10-18T01:43:04.655270+00:00",
   "6c1ea57bc1ad72df": "2026-10-18T02:13:04.699778+00:00",
   "abd11067834a2d56": "2026-10-18T02:13:04.699778+00:00",
   "3969158ce5249498": "2026-10-18T02:58:04.686421+00:00",
@@ -723,16 +722,6 @@
   "9f1d865b62e1f49e": "2026-10-21T01:05:00.459153+00:00"
  },
  "recent": [
-  {
-   "title": "- IMF eLibrary",
-   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFAtTV80NmZaaUx3dmQ1ZDhKajJrLTdRNmtaNjhrYW9kOGZnZlZpT2VtMzAwbnVRVDQ0MjgtcGc1bnpQdTF3ZGFBc2xqUzVudlpIbGhKMzhRZENpS3ozQkxMclIyZw?oc=5",
-   "sources": [
-    "IMF"
-   ],
-   "score": 5,
-   "ts": "2026-10-18T01:43:04.655270+00:00",
-   "title_ru": "- Электронная библиотека МВФ"
-  },
   {
    "title": "Guyana to Block Vape Product Imports Amid Youth Health Concerns",
    "link": "https://www.bloomberg.com/news/articles/2026-10-18/guyana-to-block-vape-product-imports-amid-youth-health-concerns",
@@ -9064,6 +9053,22 @@
    },
    {
     "src": "sec",
+    "id": "13528c87cb615824",
+    "ticker": "NTRA",
+    "company": "Natera, Inc.",
+    "who": "Jonathan Sheena",
+    "role": "Director",
+    "type": "sell",
+    "value": 603710,
+    "shares": 1500,
+    "price": 402.47,
+    "plan": true,
+    "date": "2026-10-16",
+    "disclosed": "2026-10-20",
+    "link": "https://www.sec.gov/Archives/edgar/data/1646649/000164664926000034/0001646649-26-000034-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "3a146110cb1e7826",
     "ticker": "CTY",
     "company": "CITY THERAPEUTICS, INC.",
@@ -11844,6 +11849,7 @@
    "0001628280-26-066572",
    "0001628280-26-066575",
    "0000921895-26-002832",
+   "0001646649-26-000034",
    "0000719955-26-000229",
    "0001456823-26-000012",
    "0001568238-26-000003",
@@ -11852,9 +11858,7 @@
    "0001628280-26-066570",
    "0001628280-26-066574",
    "0001140361-26-040294",
-   "0001506307-26-000128",
    "0000923120-26-000020",
-   "0001628280-26-066565",
    "0001140361-26-040292",
    "0001437749-26-033033",
    "0001628280-26-066571",
@@ -11866,6 +11870,7 @@
    "0001104659-26-117510",
    "0001628280-26-066567",
    "0001628280-26-066577",
+   "0001859690-26-000196",
    "0001713683-26-000208",
    "0000923120-26-000016",
    "0000923120-26-000018",
