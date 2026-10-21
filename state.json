@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "b7801dab164803ae": "2026-10-18T23:35:13.689520+00:00",
-  "9f308b9c06a26bb1": "2026-10-18T23:35:13.689520+00:00",
   "3e5217004b9061e5": "2026-10-18T23:40:13.743750+00:00",
   "e9de1309d2b7fb32": "2026-10-19T00:00:13.786581+00:00",
   "f2df11f131eb2a50": "2026-10-19T00:00:13.786581+00:00",
@@ -903,39 +901,10 @@
   "83c1140d69e669f3": "2026-10-21T23:21:59.996400+00:00",
   "188c08f5df1c6c32": "2026-10-21T23:32:00.058630+00:00",
   "3064c65a8f930160": "2026-10-21T23:32:00.058630+00:00",
-  "13185e0a8342b850": "2026-10-21T23:32:00.058630+00:00"
+  "13185e0a8342b850": "2026-10-21T23:32:00.058630+00:00",
+  "871671182ad8cea7": "2026-10-21T23:37:00.104277+00:00"
  },
  "recent": [
-  {
-   "title": "Japanese Equities Set to Fall on Tech Share Selloff, Higher Oil",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQclp0cmlPVzk4TGpWXy1MMWY5OG95aUtWR0YzZk56ZmZrd1pFaklZMHVFeXE0Um5GVzZOWERjMDJoSWJpeGc1RjRaak1rVlgxanNieF9fR2tYOE1vZllTQlE0ampXMVVXUlpBUzFqZ2VibXEtaG5mMkNFY1VsOXJvcHE4WGlYeU1PYVZTWUVRQnVTMzlHZDY5cDZsUEhXZC1ET1h3amdQb2NxakYtWlo1S2gxTQ?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-18T23:35:13.689520+00:00",
-   "title_ru": "Японские акции упадут на фоне распродажи технологических акций и роста цен на нефть",
-   "tags": [
-    "oil",
-    "markets"
-   ]
-  },
-  {
-   "title": "EU tariffs aimed at China hitting Ukraine, steel boss says",
-   "link": "https://www.bbc.co.uk/news/articles/cwdd8z6gyy96o?at_medium=RSS&at_campaign=rss",
-   "sources": [
-    "BBC"
-   ],
-   "score": 5,
-   "ts": "2026-10-18T23:35:13.689520+00:00",
-   "title_ru": "Тарифы ЕС направлены на то, чтобы Китай ударил по Украине, говорит стальной босс",
-   "lead": "The boss of one of Ukraine's biggest steel companies says the country has been \"bundled together\" in measures aimed at curbing cheap imports.",
-   "lead_ru": "Босс одной из крупнейших сталелитейных компаний Украины говорит, что страна была «объединена» мерами, направленными на сдерживание дешевого импорта.",
-   "tags": [
-    "China",
-    "tariffs"
-   ]
-  },
   {
    "title": "Gold Edges Higher as Traders Ease Rate-Hike Bets on Warsh Speech",
    "link": "https://www.bloomberg.com/news/articles/2026-10-18/gold-edges-higher-as-traders-ease-rate-hike-bets-on-warsh-speech",
@@ -8902,6 +8871,22 @@
    ],
    "score": 1,
    "ts": "2026-10-21T23:32:00.058630+00:00"
+  },
+  {
+   "title": "The \"trillion pound\" oil fund the government believes Britain could have built",
+   "link": "https://www.bbc.co.uk/news/articles/cm4g1zrl2nrqo?at_medium=RSS&at_campaign=rss",
+   "sources": [
+    "BBC"
+   ],
+   "score": 3,
+   "ts": "2026-10-21T23:37:00.104277+00:00",
+   "title_ru": "Нефтяной фонд «триллион фунтов», который, по мнению правительства, Великобритания могла бы построить",
+   "lead": "For the first time, the Treasury calculates how much the UK could have raised by investing North Sea proceeds.",
+   "lead_ru": "Впервые Казначейство подсчитывает, сколько Великобритания могла бы привлечь, инвестируя доходы от Северного моря.",
+   "tags": [
+    "oil",
+    "bonds"
+   ]
   }
  ],
  "last_digest": "2026-10-21",
@@ -15037,8 +15022,8 @@
    "0001213900-26-111426",
    "0001701247-26-000014",
    "0001193125-26-428041",
-   "0001191473-26-000008",
    "0001193125-26-428104",
+   "0001191473-26-000008",
    "0001882764-26-000009",
    "0001867888-26-000010",
    "0001193125-26-428040",
@@ -15048,13 +15033,14 @@
    "0002074298-26-000020",
    "0000804328-26-000108",
    "0002041533-26-000008",
-   "0001493152-26-047950",
    "0000804328-26-000112",
    "0001826731-26-000012",
    "0000804328-26-000107",
    "0001193125-26-428110",
    "0001807136-26-000002",
    "0000804328-26-000109",
+   "0000804328-26-000110",
+   "0001193125-26-428121",
    "0001193125-26-428018",
    "0001674510-26-000002",
    "0002108845-26-000007",
@@ -15062,7 +15048,6 @@
    "0000804328-26-000111",
    "0001402348-26-000020",
    "0000950103-26-015980",
-   "0001193125-26-428010",
    "0001193125-26-428044",
    "0001493152-26-047944",
    "0001193125-26-428045",
@@ -15072,7 +15057,7 @@
    "0001193125-26-428106",
    "0000935703-26-000120",
    "0001231919-26-001485",
-   "0000804328-26-000110"
+   "0001493152-26-047950"
   ],
   "errors": {}
  }
