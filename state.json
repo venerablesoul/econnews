@@ -735,7 +735,9 @@
   "e29e07c27f3f0cb2": "2026-10-21T04:50:00.319750+00:00",
   "69d7d337e4c4a008": "2026-10-21T05:10:00.354092+00:00",
   "62b21b1d1145c526": "2026-10-21T05:10:00.354092+00:00",
-  "78fc93ace4c7ae7c": "2026-10-21T05:10:00.354092+00:00"
+  "78fc93ace4c7ae7c": "2026-10-21T05:10:00.354092+00:00",
+  "d93d48077c0e70ec": "2026-10-21T05:15:00.356644+00:00",
+  "a5aa2d3479a46988": "2026-10-21T05:15:00.356644+00:00"
  },
  "recent": [
   {
@@ -6837,6 +6839,26 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "South Korea October 1-20 exports surge 105% on record chip sales",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxObDlCTlk1SjdBTm1wd2kxQ0FBaEU0dEdyUzhzenRzUTF4WFEzRmcwQUgydTVMVUpydW5VWVJTY3BIX3hvRElkX2t4ZUp1dVVuRmdlVmQtZzczTU9iaml6ZXgtbFE5dHFFbHdUcU55VjdBQ2ZYVVlvVjBEWkQwUmhFU2dfMWFxUERfajVIWUh0OE1tMXJGbmU5UVJrS2JzMEJmcHZLZ3d5Ty15RUJvWU9sb3lRU2pMZw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-21T05:15:00.356644+00:00",
+   "title_ru": "Экспорт Южной Кореи с 1 по 20 октября вырос на 105% благодаря рекордным продажам чипов"
+  },
+  {
+   "title": "Netflix co-CEO Sarandos says 'we could do better' after weak forecast",
+   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNQmJuWl84Zk9TanlERndybWRsaTVoaF95bUgzbldjVzJKNzcwZEFEUFh4Z0xVa2o0aGFSSEVJT3d2WENIeURzMWV3VUFTY2NxRWF2WHBjTVRjZURraFVHMkZ6M0pkOXJOb01FYW5OWTdkcmM3WkVFcXR5UC1QbDVqOFRIYWpsc1VxaUdhMENKa0I1S1ZWSk1BZ3BrYmRYVVQ5Q1FpRHBlY1NZbndHMVZnYjBfRnQ3cGktWkcwZ28tVDVQSFNqR1dZaFJGSTJ0b0U?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-21T05:15:00.356644+00:00",
+   "title_ru": "Со-генеральный директор Netflix Сарандос говорит, что «мы могли бы добиться большего» после слабого прогноза"
   }
  ],
  "last_digest": "2026-10-20",
@@ -12031,6 +12053,7 @@
    "0001742734-26-000022",
    "0001628280-26-066566",
    "0002111867-26-000014",
+   "0001166288-26-000002",
    "0002071761-26-000013",
    "0001917389-26-000025",
    "0001104659-26-117507",
@@ -12039,7 +12062,6 @@
    "0000923120-26-000019",
    "0000923120-26-000017",
    "0001628280-26-066572",
-   "0001628280-26-066575",
    "0000921895-26-002832",
    "0001646649-26-000034",
    "0000719955-26-000229",
@@ -12075,7 +12097,7 @@
    "0001713683-26-000206",
    "0001040470-26-000309",
    "0002156232-26-000003",
-   "0001166288-26-000002"
+   "0001628280-26-066575"
   ],
   "errors": {}
  }
