@@ -737,7 +737,12 @@
   "62b21b1d1145c526": "2026-10-21T05:10:00.354092+00:00",
   "78fc93ace4c7ae7c": "2026-10-21T05:10:00.354092+00:00",
   "d93d48077c0e70ec": "2026-10-21T05:15:00.356644+00:00",
-  "a5aa2d3479a46988": "2026-10-21T05:15:00.356644+00:00"
+  "a5aa2d3479a46988": "2026-10-21T05:15:00.356644+00:00",
+  "903d6fd99e99aa0f": "2026-10-21T05:20:00.374560+00:00",
+  "da0b0da5c2d9c674": "2026-10-21T05:20:00.374560+00:00",
+  "7b50493101aa3b40": "2026-10-21T05:20:00.374560+00:00",
+  "1d170ceaf6659036": "2026-10-21T05:20:00.374560+00:00",
+  "316c57d889129b6b": "2026-10-21T05:20:00.374560+00:00"
  },
  "recent": [
   {
@@ -6859,6 +6864,64 @@
    "score": 3,
    "ts": "2026-10-21T05:15:00.356644+00:00",
    "title_ru": "Со-генеральный директор Netflix Сарандос говорит, что «мы могли бы добиться большего» после слабого прогноза"
+  },
+  {
+   "title": "Belgian Government Facing Push to Sell 5.7% BNP Paribas Stake",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-21/belgian-government-facing-push-to-sell-5-7-bnp-paribas-stake",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-21T05:20:00.374560+00:00",
+   "title_ru": "Бельгийскому правительству грозит продажа 5,7% акций BNP Paribas",
+   "lead": "Belgium is ramping up efforts to divest from stakes it amassed in banks during the global financial crisis, with some in the government pushing to prioritize the sale of its 5.7% stake in BNP Paribas SA.",
+   "lead_ru": "Бельгия наращивает усилия по продаже долей, которые она накопила в банках во время мирового финансового кризиса, при этом некоторые в правительстве настаивают на том, чтобы отдать приоритет продаже своей 5,7% доли в BNP Paribas SA."
+  },
+  {
+   "title": "Goldman Sachs Says War Spurs Sevenfold Jump in Oil Freight Rates",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQU2U4a0h6MGo2bjVwQjlTMkQwUndDbkdZb1lLRkpYckxmV0lWWDJvdFNZbXpzSk82M2FwVlF5N2ItbEg3UHpYY0dSSVBMU1ZWem1FaGZwVnAyUWltMVZNNTAwQmJEdTd4Q3ItZm9hbGZMV0hZUC1zWjVJc0Qzd00xZE91dVFqZFRlNWZmLVg5bEY1dzB1QnZBQTlIYWxBZ3BqQjNCTWphaU9CQVV5eldIdnlZQXZvZw?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-21T05:20:00.374560+00:00",
+   "title_ru": "Goldman Sachs заявляет, что война привела к семикратному росту тарифов на фрахт нефти",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "Tiffany Japan Building Faces 30% Price Cut As Debt Costs Rise",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNYlF1alFZWXBCWWpFTVdKczRzSFVTeFY3MlpzNlA2aVl5MlNIbDJHam1pMUYwb2ZXeVhVOUVtdTBDOE02U3pld3RCUkRoRFZCU1NjYnhxbDczdkUyWjlBdzlLS3ptaDJkMEMtelAwMk5naWdYRmlkNTNXcDlJclM5akhXdHNVLTRZdXo4Mk1DRi1INFdlUkFzci1GaGVaLVJOOE5ZdDNjNU1CTHQ1NmhpTw?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-21T05:20:00.374560+00:00",
+   "title_ru": "Tiffany Japan Building грозит снижение цен на 30% из-за роста долговых расходов"
+  },
+  {
+   "title": "Oil rises on Middle East supply fears, US inventory drawdowns",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPNTdIRmp3MTB3c3JZNGxXMUl1Wk5haXFwcjdJNXgtQnJkOEM4aWVVWG5tai03TmhHSWZidkliV1VlRkRvOVJCX3Q3QXhCWVdZeXlYQmViOUdOaU85anVWMXpSWFNCOHAtVU5id3Fad1BhX1BzVEt6S1A4N2s1YjJocFh6QXFTVXhHdDJJVzZBX21WUQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-21T05:20:00.374560+00:00",
+   "title_ru": "Нефть дорожает на опасениях по поводу поставок на Ближнем Востоке и сокращении запасов в США",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "Australia's Woodside Energy trims 2026 output forecast; third-quarter revenue tops estimates",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQeTVOcmtBcDZsWnczN2JteVlzazdETXRGaEtySVFSN0Z0WjIxRGNkSHJnTGYwWEJJbmZpeFpKaHRRWmRqMkhPUnJHU1JESEdWeloyYlNGR3NuLUM3a2FrYmJ6TDZ6empKc2RmSTJsTlJJY2ZrSG10OE5NZ1o0bEZ3QkVoWFAxaHNULVBFOFpWRm44dGp1enFCX2dWM2x5aVB6VWdnTGI4SmJIZ0FKNlVHLUhkQjZjN3M2SVZYbWRkVlNsTWUxQTNpYQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-21T05:20:00.374560+00:00",
+   "title_ru": "Австралийская компания Woodside Energy снизила прогноз добычи на 2026 год; Выручка в третьем квартале превысила прогнозы"
   }
  ],
  "last_digest": "2026-10-20",
@@ -12053,7 +12116,6 @@
    "0001742734-26-000022",
    "0001628280-26-066566",
    "0002111867-26-000014",
-   "0001166288-26-000002",
    "0002071761-26-000013",
    "0001917389-26-000025",
    "0001104659-26-117507",
@@ -12062,6 +12124,7 @@
    "0000923120-26-000019",
    "0000923120-26-000017",
    "0001628280-26-066572",
+   "0001628280-26-066575",
    "0000921895-26-002832",
    "0001646649-26-000034",
    "0000719955-26-000229",
@@ -12097,7 +12160,7 @@
    "0001713683-26-000206",
    "0001040470-26-000309",
    "0002156232-26-000003",
-   "0001628280-26-066575"
+   "0001166288-26-000002"
   ],
   "errors": {}
  }
