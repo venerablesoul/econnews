@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "cccc77875e337510": "2026-10-18T10:28:30.873613+00:00",
   "fbb1aca8fc2a5a62": "2026-10-18T10:53:30.894167+00:00",
   "5e7c7b955328deba": "2026-10-18T11:03:30.900162+00:00",
   "5a89324960192d99": "2026-10-18T11:03:30.900162+00:00",
@@ -807,21 +806,11 @@
   "1bb23c7d97e4d32f": "2026-10-21T10:25:34.239991+00:00",
   "c6f2a47c88e02a66": "2026-10-21T10:25:34.239991+00:00",
   "8213f4875e22dc02": "2026-10-21T10:25:34.239991+00:00",
-  "728e5087ce0dbb2a": "2026-10-21T10:25:34.239991+00:00"
+  "728e5087ce0dbb2a": "2026-10-21T10:25:34.239991+00:00",
+  "fda44f6f88faac99": "2026-10-21T10:35:34.254173+00:00",
+  "8046a29908587b8e": "2026-10-21T10:35:34.254173+00:00"
  },
  "recent": [
-  {
-   "title": "What is the Budget and what could be in it?",
-   "link": "https://www.bbc.co.uk/news/articles/c6x2zrjl7kjno?at_medium=RSS&at_campaign=rss",
-   "sources": [
-    "BBC"
-   ],
-   "score": 3,
-   "ts": "2026-10-18T10:28:30.873613+00:00",
-   "title_ru": "Что такое Бюджет и что в нем может быть?",
-   "lead": "Chancellor John Healey will set out his plans for UK taxes on 28 October.",
-   "lead_ru": "Канцлер Джон Хили изложит свои планы по налогам в Великобритании 28 октября."
-  },
   {
    "title": "IMF/World Bank meetings leave developing countries with more questions than answers",
    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOek14dnVaSHRfckw2SkxnWUlJb0ZXSmcyeTJuNlpXMjR6bS1WRExZejg4dUFweG5sUmVUTndpeXQ4X0EwVHFwVzIxU24xME1OaHVUeHdqYjJpSGJ3SDB4aVFWcmlNVEZVMHFDbndVSC1aQ0NhY09odHctV2xKWFpwNEtvaDYwakF1WHVOTHJzbVEwRkx6Z214RGk2U0tGUE0xcDNBenZGZU5KSnZLRkVKVUxuTjNYdzhyczBn?oc=5",
@@ -7731,6 +7720,35 @@
    "title_ru": "Немецкая экономика, вероятно, стагнировала в третьем квартале: Бундесбанк",
    "lead": "Germany’s economy probably stagnated in the third quarter, but is set to record strong growth toward year-end, according to the Bundesbank.",
    "lead_ru": "По данным Бундесбанка, экономика Германии, вероятно, стагнировала в третьем квартале, но к концу года будет зафиксирован сильный рост."
+  },
+  {
+   "title": "ECB’s Kazaks Says More Tightening May Be Needed: Econostream",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-21/ecb-s-kazaks-says-more-tightening-may-be-needed-econostream",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-21T10:35:34.254173+00:00",
+   "title_ru": "Казахстан в ЕЦБ заявил, что может потребоваться дальнейшее ужесточение политики: Econostream",
+   "lead": "European Central Bank Governing Council member Martins Kazaks said interest rates may have to be lifted further if consumer-price gains remain elevated, according to Econostream.",
+   "lead_ru": "По данным Econostream, член Совета управляющих Европейского центрального банка Мартиньш Казакс заявил, что процентные ставки, возможно, придется поднять дальше, если рост потребительских цен останется высоким.",
+   "tags": [
+    "ECB",
+    "rates"
+   ]
+  },
+  {
+   "title": "Indian Oil to trim Middle East oil imports under annual deals amid Iran war",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOMXE3WlNvck1LNktoX2lmc1NPNVZaNkRJdnJidHRaRE1RcWxTSC1rYzgyS3J1RnlpeEMwTlh5YnRBMXNPLXJiYTJOR2o2RGF0eTlMQm9Wa24wMUJXX0VzaDVGc042V0JLcnJlTTJYdzVNLWtIbFVuQkN4cXFielNxdi1RUUNRcTY2Zlo3MXJEUEZQaE1DWnh0aTludkNSWlZfbjc2TXZPSVVQZUFpaW5SXzVFSU1WVzZ1TzVLNFFSYkNCZw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-21T10:35:34.254173+00:00",
+   "title_ru": "Индийская нефть сократит импорт нефти с Ближнего Востока в рамках ежегодных соглашений на фоне войны с Ираном",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-20",
