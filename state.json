@@ -769,7 +769,9 @@
   "cf2b79d0918f12e8": "2026-10-21T06:55:34.216651+00:00",
   "f4bfe123f53bac14": "2026-10-21T07:00:34.370776+00:00",
   "61fcdf9a4a66366f": "2026-10-21T07:05:34.248957+00:00",
-  "6c341c9e61316a9e": "2026-10-21T07:05:34.248957+00:00"
+  "6c341c9e61316a9e": "2026-10-21T07:05:34.248957+00:00",
+  "4873b7b987c62c66": "2026-10-21T07:10:34.274660+00:00",
+  "083d61aa6c00a439": "2026-10-21T07:10:34.274660+00:00"
  },
  "recent": [
   {
@@ -7284,6 +7286,32 @@
     "bonds",
     "markets"
    ]
+  },
+  {
+   "title": "CATL's HK Shares Drop By Record After Earnings Miss",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-21/the-china-show-10-21-2026-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-21T07:10:34.274660+00:00",
+   "title_ru": "Акции CATL в Гонконге упали на рекорд после промаха в прибыли",
+   "lead": "“Bloomberg: The China Show” is your definitive source for news and analysis on the world's second-biggest economy.",
+   "lead_ru": "«Bloomberg: The China Show» - ваш исчерпывающий источник новостей и аналитических материалов о второй по величине экономике мира.",
+   "tags": [
+    "markets",
+    "China"
+   ]
+  },
+  {
+   "title": "UK approves long-delayed Jackdaw gas field",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOMVhqQWZMc3FMQ2lhTXRCMm92QVlKRlk3Y2lNenRKRTJmWWxHUlNWc3pTZWJyOU92aHlVTmtwLXVTeE01WFZxU3NpQ19Eazh6TkM5VWZaaUpqRFo5SFZJbmRHeFVvYkRiZGJUYUpza0ZyMWZ1NThlMFpEM1U5dlRZeUNJQVBqN0VpbTFscWViMFNHdm84T1FhMWxB?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-21T07:10:34.274660+00:00",
+   "title_ru": "Великобритания одобряет давно отложенное газовое месторождение Jackdaw"
   }
  ],
  "last_digest": "2026-10-20",
@@ -12474,13 +12502,13 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-21T06:10:34.262503+00:00",
+  "checked": "2026-10-21T07:10:34.274660+00:00",
   "sec_seen": [
    "0002071761-26-000013",
    "0000923120-26-000017",
    "0001140361-26-040298",
-   "0000923120-26-000019",
    "0001437749-26-033037",
+   "0000923120-26-000019",
    "0000919574-26-007106",
    "0001917389-26-000025",
    "0000804328-26-000106",
@@ -12491,8 +12519,8 @@
    "0001213900-26-111132",
    "0001713683-26-000206",
    "0001628280-26-066572",
-   "0001104659-26-117507",
    "0001742734-26-000022",
+   "0001104659-26-117507",
    "0001104659-26-117510",
    "0000907654-26-000110",
    "0002111867-26-000014",
