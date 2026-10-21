@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "51d50dc0cbb04fac": "2026-10-18T00:42:39.381966+00:00",
-  "518e42acc2130652": "2026-10-18T00:42:39.381966+00:00",
   "88ac8814e31125e3": "2026-10-18T01:02:39.408233+00:00",
   "bcef2a78a38699f8": "2026-10-18T01:07:39.360284+00:00",
   "752b128da20b4134": "2026-10-18T01:27:39.392378+00:00",
@@ -722,38 +720,10 @@
   "30627d71e684ceb7": "2026-10-21T00:25:00.361708+00:00",
   "f8a787c5a3dd7f23": "2026-10-21T00:30:00.362862+00:00",
   "f7f5dd190f2765b9": "2026-10-21T00:30:00.362862+00:00",
-  "c98a3904a1059ec3": "2026-10-21T00:30:00.362862+00:00"
+  "c98a3904a1059ec3": "2026-10-21T00:30:00.362862+00:00",
+  "04f8192ab31d1728": "2026-10-21T00:45:00.390892+00:00"
  },
  "recent": [
-  {
-   "title": "Australian Home Auctions Decline as Rate Hikes Dampen Activity",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-17/australian-home-auctions-decline-as-rate-hikes-dampen-activity",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-18T00:42:39.381966+00:00",
-   "title_ru": "Австралийские домашние аукционы снижаются, поскольку повышение ставок снижает активность",
-   "lead": "The number of homes auctioned in Australia dropped over the past week as interest rates at a 15-year high weigh on activity in the housing market.",
-   "lead_ru": "Количество домов, выставленных на аукционах в Австралии, за последнюю неделю сократилось, поскольку процентные ставки, достигшие 15-летнего максимума, оказывают давление на активность на рынке жилья.",
-   "tags": [
-    "rates"
-   ]
-  },
-  {
-   "title": "Trump’s Russia Sanctions Waiver Called Mistake by GOP Allies",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOdlBhMEdBRVg3TkZWNHNYNDc3ZVdfRVhpVmtWQUlhY2t2eW9vTW5wdTNLX0pUUDdyUXdUcU5neVFrLVp1ZXZ2R1VVM1h5YnZFQ3NVM0hraDZwUzBJMHRBb0NYa2JjRTZEbmJnMW5MNW9FcV9vbzhBSU5odzlBcTRTTGIzSEJHLU1NZVFnRHRHSGdfZVdmSnJzRzFVQTlsbTRfS05Pd05kb3lDWWE5cEJKbTMzRncyQQ?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-18T00:42:39.381966+00:00",
-   "title_ru": "Отказ Трампа от санкций против России назван союзниками Республиканской партии ошибкой",
-   "tags": [
-    "sanctions",
-    "Russia"
-   ]
-  },
   {
    "title": "Venezuela expects nearly $76 billion in oil investment over five years, acting president says",
    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNNjRrMjhGV0NJUjVPZmZUdm1Da3JxcUFDaW9PTTVhVjZqSUszdzlLMGIwdjk4MFc0UXlUU0ZSZ1h4aGNTMmE1V3ZfdGJNcFVIUVIzbGFwTFdjd2xMVWtLWlBlV21QNlNxY0ZBcXVWTS05Z0c5UnY5d0tIWVFXOEdnLUZUTk84UXB1ektOV3A3OHhXSmxVYnhMZktTMl9PZUFaRGdpUkF4VXlGMlBoWVdhclhOa2p0bFExTTljdWtRZGs1bXM?oc=5",
@@ -6641,6 +6611,21 @@
    "score": 3,
    "ts": "2026-10-21T00:30:00.362862+00:00",
    "title_ru": "Сентябрьский экспорт Японии вырос на 16,7%, чему способствовал спрос на чипы"
+  },
+  {
+   "title": "China’s Economy in Six Charts: Growth, Exports and the Property Slump",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-21/china-s-economy-in-six-charts-growth-exports-and-the-property-slump",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-21T00:45:00.390892+00:00",
+   "title_ru": "Экономика Китая в шести графиках: рост, экспорт и спад недвижимости",
+   "lead": "China’s breakneck economic growth – which lifted incomes at home and reshaped markets abroad – once seemed as inevitable as a law of nature.",
+   "lead_ru": "Головокружительный экономический рост Китая, который поднял доходы внутри страны и изменил рынки за рубежом, когда-то казался столь же неизбежным, как закон природы.",
+   "tags": [
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-10-20",
@@ -8710,6 +8695,22 @@
     "date": "2026-10-20",
     "disclosed": "2026-10-20",
     "link": "https://www.sec.gov/Archives/edgar/data/1917389/000191738926000025/0001917389-26-000025-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "39e4d2a7d43a5b3b",
+    "ticker": "ORKA",
+    "company": "Oruka Therapeutics, Inc.",
+    "who": "Paul T Quinlan",
+    "role": "General Counsel",
+    "type": "sell",
+    "value": 706735,
+    "shares": 9000,
+    "price": 78.53,
+    "plan": true,
+    "date": "2026-10-20",
+    "disclosed": "2026-10-20",
+    "link": "https://www.sec.gov/Archives/edgar/data/1333277/000090765426000110/0000907654-26-000110-index.htm"
    },
    {
     "src": "sec",
@@ -11786,7 +11787,6 @@
    "0001628280-26-066566",
    "0002111867-26-000014",
    "0000923120-26-000015",
-   "0001166288-26-000002",
    "0002071761-26-000013",
    "0001917389-26-000025",
    "0001104659-26-117507",
@@ -11794,6 +11794,7 @@
    "0000923120-26-000019",
    "0000923120-26-000017",
    "0001628280-26-066572",
+   "0001628280-26-066575",
    "0001193125-26-426908",
    "0000921895-26-002832",
    "0000719955-26-000229",
@@ -11805,7 +11806,6 @@
    "0001628280-26-066570",
    "0001628280-26-066574",
    "0001140361-26-040294",
-   "0001472375-26-000222",
    "0001506307-26-000128",
    "0000923120-26-000020",
    "0001628280-26-066565",
@@ -11825,11 +11825,13 @@
    "0001193125-26-426899",
    "0000923120-26-000016",
    "0000923120-26-000018",
+   "0001140361-26-040298",
+   "0000907654-26-000110",
    "0000923120-26-000022",
    "0001104659-26-117506",
    "0001040470-26-000309",
    "0002156232-26-000003",
-   "0001628280-26-066575"
+   "0001166288-26-000002"
   ],
   "errors": {}
  }
