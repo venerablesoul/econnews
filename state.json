@@ -826,7 +826,8 @@
   "bc6de2973c2c5205": "2026-10-21T12:01:03.675715+00:00",
   "6f02bdc5e5a90b96": "2026-10-21T12:01:03.675715+00:00",
   "488f6c58f0f8f110": "2026-10-21T12:01:03.675715+00:00",
-  "6f90868447b9634e": "2026-10-21T12:06:03.672066+00:00"
+  "6f90868447b9634e": "2026-10-21T12:06:03.672066+00:00",
+  "6a9015b6d4a71aa4": "2026-10-21T12:11:03.679580+00:00"
  },
  "recent": [
   {
@@ -7959,6 +7960,18 @@
     "China",
     "tariffs"
    ]
+  },
+  {
+   "title": "South Africa Tightens Budget Rules as Government Debt Stabilizes",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-21/south-africa-tightens-budget-rules-as-government-debt-stabilizes",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-21T12:11:03.679580+00:00",
+   "title_ru": "Южная Африка ужесточает бюджетные правила по мере стабилизации государственного долга",
+   "lead": "South African Finance Minister Enoch Godongwana unveiled new rules to ensure fiscal sustainability as debt peaked.",
+   "lead_ru": "Министр финансов ЮАР Энох Годонгвана представил новые правила, призванные обеспечить финансовую устойчивость в условиях пика долга."
   }
  ],
  "last_digest": "2026-10-20",
@@ -8009,7 +8022,7 @@
   "2026-10-21-09"
  ],
  "calendar": {
-  "fetched": "2026-10-21T06:10:34.262503+00:00",
+  "fetched": "2026-10-21T12:11:03.679580+00:00",
   "events": [
    {
     "title": "IMF Meetings",
@@ -8396,14 +8409,6 @@
     "previous": "1.4%"
    },
    {
-    "title": "Foreign Direct Investment ytd/y",
-    "country": "CNY",
-    "ts": "2026-10-21T09:10:00+00:00",
-    "impact": "Low",
-    "forecast": "",
-    "previous": "-5.3%"
-   },
-   {
     "title": "German Buba Monthly Report",
     "country": "EUR",
     "ts": "2026-10-21T10:00:00+00:00",
@@ -8442,6 +8447,14 @@
     "impact": "Low",
     "forecast": "",
     "previous": ""
+   },
+   {
+    "title": "Foreign Direct Investment ytd/y",
+    "country": "CNY",
+    "ts": "2026-10-22T09:10:00+00:00",
+    "impact": "Low",
+    "forecast": "",
+    "previous": "-5.3%"
    },
    {
     "title": "CBI Industrial Order Expectations",
