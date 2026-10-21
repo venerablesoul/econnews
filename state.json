@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "9ea2bd65f169f9e7": "2026-10-18T21:54:36.370242+00:00",
   "681e7ee2e3251b6b": "2026-10-18T22:09:36.358097+00:00",
   "dc7e498fa993f6a0": "2026-10-18T22:14:36.336932+00:00",
   "f8a72bebecdc1405": "2026-10-18T22:14:36.336932+00:00",
@@ -898,7 +897,10 @@
   "24c01e0e944f16f6": "2026-10-21T21:26:32.207642+00:00",
   "47b432bae73c0bc1": "2026-10-21T21:31:32.296733+00:00",
   "b89c89cc174f623a": "2026-10-21T21:31:32.296733+00:00",
-  "f16fe343b7d84a18": "2026-10-21T21:36:32.281700+00:00"
+  "f16fe343b7d84a18": "2026-10-21T21:36:32.281700+00:00",
+  "9ec7ff09436e0076": "2026-10-21T21:51:32.146697+00:00",
+  "2e5e0c5c76fe7295": "2026-10-21T21:56:32.216172+00:00",
+  "d57e9a37d22d44fc": "2026-10-21T21:56:32.216172+00:00"
  },
  "recent": [
   {
@@ -8839,6 +8841,41 @@
    "score": 3,
    "ts": "2026-10-21T21:36:32.281700+00:00",
    "title_ru": "Торговые переговоры между США и Мексикой зашли в тупик, поскольку Лютник оказывает влияние"
+  },
+  {
+   "title": "Why investors should be skeptical of a potential Tesla-SpaceX merger",
+   "link": "https://www.marketwatch.com/story/why-investors-should-be-skeptical-of-a-potential-tesla-spacex-merger-9e119d32?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-21T21:51:32.146697+00:00"
+  },
+  {
+   "title": "US Aims Iran ‘Shadow Fleet’ Sanctions at Law Firm, Shippers",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOc0IyUXo0UUJMVVpzdEd1RVBOUGprY05ycTNSV3AtRWJfdW8yT3l3WWVpckJoTWFsM09oWWg3M0xXNXRXSm9sX2M4V25RX2g4bFVlUWFSeXg3azBFN0ZSaGNEb1ducXlDa1pid3BkTm85elpnTjluRzNmYVV3Z1dfZndNcGRUcTNZbDZtWldPc21rY3E0QnZRQVMya3dhMkw3M19XWG5uTXVKS0E?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-21T21:56:32.216172+00:00",
+   "title_ru": "США нацеливают санкции против «теневого флота» Ирана на юридическую фирму и грузоотправителей",
+   "tags": [
+    "sanctions"
+   ]
+  },
+  {
+   "title": "South Africa Unveils Fiscal Anchor in ‘Bond-Friendly’ Budget",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQQjZGYjBKTlc3RWtmQzJjS2E2VWtCYzNfTm9GcS15LWc3em1Oa0ZRdTJqdF9meDFIc0RBWVU4QnZGX3JaQldWM2MyLWVCRWVzNFNvT19Da01iMFBQQS1aVWpoMnFnMG5fT01OU0llbGtIdmpUY1h6M1F3b1ZMQ3RLcC1uMWJERnFhN2R4WlhYU0RtMEstaEo3M0dNLVdNQlcwYmltUmgyNFNpV09zS2RuRmpqa2tTdw?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-21T21:56:32.216172+00:00",
+   "title_ru": "Южная Африка представляет фискальный якорь в «дружественном к облигациям» бюджете",
+   "tags": [
+    "bonds"
+   ]
   }
  ],
  "last_digest": "2026-10-21",
@@ -10911,6 +10948,22 @@
     "date": "2026-10-21",
     "disclosed": "2026-10-21",
     "link": "https://www.sec.gov/Archives/edgar/data/938543/000095014226002799/0000950142-26-002799-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "b6b54c4e885e0fef",
+    "ticker": "RAPP",
+    "company": "Rapport Therapeutics, Inc.",
+    "who": "Troy A. Ignelzi",
+    "role": "CFO",
+    "type": "buy",
+    "value": 143550,
+    "shares": 5500,
+    "price": 26.1,
+    "plan": false,
+    "date": "2026-10-21",
+    "disclosed": "2026-10-21",
+    "link": "https://www.sec.gov/Archives/edgar/data/2012593/000119312526428018/0001193125-26-428018-index.htm"
    },
    {
     "src": "sec",
@@ -14562,28 +14615,32 @@
   },
   "checked": "2026-10-21T21:31:32.296733+00:00",
   "sec_seen": [
-   "0001193125-26-427957",
    "0001995487-26-000006",
+   "0001776828-26-000012",
    "0001628280-26-066758",
    "0002074298-26-000020",
+   "0001193125-26-428018",
+   "0001882764-26-000009",
    "0001469998-26-000014",
    "0001193125-26-427983",
+   "0001826731-26-000012",
    "0001468818-26-000008",
    "0000950142-26-002799",
-   "0001398344-26-018542",
+   "0001701247-26-000014",
    "0001244438-26-000006",
    "0001193125-26-427965",
    "0001493152-26-047944",
    "0001861460-26-000010",
    "0001193125-26-428010",
-   "0001554855-26-002151",
+   "0001671445-26-000012",
    "0001942464-26-000004",
-   "0000006281-26-000081",
+   "0001193125-26-428030",
+   "0002109272-26-000012",
    "0001942499-26-000004",
    "0001695028-26-000012",
    "0002071271-26-000018",
    "0001193125-26-427979",
-   "0001398344-26-018541",
+   "0001867888-26-000010",
    "0001213900-26-111426",
    "0001193125-26-428009",
    "0001591747-26-000009",
