@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "88ac8814e31125e3": "2026-10-18T01:02:39.408233+00:00",
   "bcef2a78a38699f8": "2026-10-18T01:07:39.360284+00:00",
   "752b128da20b4134": "2026-10-18T01:27:39.392378+00:00",
   "c1be65d202a1b6d1": "2026-10-18T01:32:39.423867+00:00",
@@ -722,7 +721,10 @@
   "f7f5dd190f2765b9": "2026-10-21T00:30:00.362862+00:00",
   "c98a3904a1059ec3": "2026-10-21T00:30:00.362862+00:00",
   "04f8192ab31d1728": "2026-10-21T00:45:00.390892+00:00",
-  "b91d80bdcdc60bf3": "2026-10-21T00:55:00.474489+00:00"
+  "b91d80bdcdc60bf3": "2026-10-21T00:55:00.474489+00:00",
+  "f15d9a260b5cb4fc": "2026-10-21T01:00:00.470484+00:00",
+  "1bb9048db23f5b95": "2026-10-21T01:05:00.459153+00:00",
+  "9f1d865b62e1f49e": "2026-10-21T01:05:00.459153+00:00"
  },
  "recent": [
   {
@@ -6642,6 +6644,35 @@
    "tags": [
     "China"
    ]
+  },
+  {
+   "title": "UK Open to Discussing Chinese Car Tariffs Ahead of EU Summit",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-20/uk-open-to-discussing-chinese-car-tariffs-ahead-of-eu-summit",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-21T01:05:00.459153+00:00",
+   "title_ru": "Великобритания открыта для обсуждения китайских автомобильных тарифов в преддверии саммита ЕС",
+   "lead": "Business Secretary Jonathan Reynolds signaled he’s open to hitting Chinese electric vehicles with tariffs to win enhanced access to European markets, but would make the call based on UK needs not demands from the EU.",
+   "lead_ru": "Министр бизнеса Джонатан Рейнольдс дал понять, что готов ввести тарифы на китайские электромобили, чтобы получить расширенный доступ к европейским рынкам, но сделает этот призыв, исходя из потребностей Великобритании, а не требований ЕС.",
+   "tags": [
+    "China",
+    "tariffs"
+   ]
+  },
+  {
+   "title": "Japan shifting to wage-driven inflation phase, finance minister says",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOM0Fielo1REtWUHdnb2xnMDZvaHhmc1BWQjg4NS1YYlZJYWJLelVpTUQ1a2xuRk8yNkw2R1RiSE5kbVVEMW84ZjZMQmlxalZ3WG02ODJBb1BsSXR3b2tiUlNVc3dGV1ZWZF8yM2Z4SUhqRURzTGNqcC1BcHdacG1fV1NLQnpVOXZFTVRQWVdlWUdyV1k2Zmh2ZDlKWlNHZU03MDA0RjhZeDBwWnF6bFpQS1dzWmJYdEx0NTJJ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-21T01:05:00.459153+00:00",
+   "title_ru": "Япония переходит к фазе инфляции, обусловленной заработной платой, заявил министр финансов",
+   "tags": [
+    "inflation"
+   ]
   }
  ],
  "last_digest": "2026-10-20",
@@ -8727,6 +8758,22 @@
     "date": "2026-10-20",
     "disclosed": "2026-10-20",
     "link": "https://www.sec.gov/Archives/edgar/data/1333277/000090765426000110/0000907654-26-000110-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "ddcc7bf626fce967",
+    "ticker": "MGTX",
+    "company": "MeiraGTx Holdings plc",
+    "who": "Richard Giroux",
+    "role": "CFO",
+    "type": "sell",
+    "value": 557200,
+    "shares": 56000,
+    "price": 9.95,
+    "plan": true,
+    "date": "2026-10-20",
+    "disclosed": "2026-10-20",
+    "link": "https://www.sec.gov/Archives/edgar/data/1742734/000174273426000022/0001742734-26-000022-index.htm"
    },
    {
     "src": "sec",
@@ -11800,6 +11847,7 @@
   },
   "checked": "2026-10-21T00:55:00.474489+00:00",
   "sec_seen": [
+   "0001742734-26-000022",
    "0001628280-26-066566",
    "0002111867-26-000014",
    "0000923120-26-000015",
@@ -11838,7 +11886,6 @@
    "0000895345-26-000470",
    "0001628280-26-066567",
    "0001628280-26-066577",
-   "0001193125-26-426899",
    "0000923120-26-000016",
    "0000923120-26-000018",
    "0001140361-26-040298",
