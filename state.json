@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "be8b44959de28353": "2026-10-18T15:24:04.161730+00:00",
-  "d157be01a9026e49": "2026-10-18T15:24:04.161730+00:00",
-  "d45db56b67a046cc": "2026-10-18T15:24:04.161730+00:00",
   "0dcd5ae070c87d3a": "2026-10-18T15:39:04.174821+00:00",
   "d69287b0a77b28d5": "2026-10-18T15:39:04.174821+00:00",
   "891ed1b4d7822876": "2026-10-18T15:54:04.174533+00:00",
@@ -868,7 +865,9 @@
   "fa4cbc58b7ed3968": "2026-10-21T14:56:04.858862+00:00",
   "38447091af3f9e89": "2026-10-21T15:11:03.696694+00:00",
   "e0f8cb6f89351760": "2026-10-21T15:11:03.696694+00:00",
-  "22768e4a3aa12c7f": "2026-10-21T15:16:03.719047+00:00"
+  "22768e4a3aa12c7f": "2026-10-21T15:16:03.719047+00:00",
+  "c59d03ecfd24baba": "2026-10-21T15:26:03.679486+00:00",
+  "038a62447871e394": "2026-10-21T15:26:03.679486+00:00"
  },
  "recent": [
   {
@@ -8387,6 +8386,33 @@
    "score": 4,
    "ts": "2026-10-21T15:11:03.696694+00:00",
    "title_ru": "Индекс цен производителей вырос на 6,3 процента в сентябре; самый большой 12-месячный рост с декабря 2022 года"
+  },
+  {
+   "title": "BOE’s Bailey Defends Speaking Out Over Trump Attacks on Powell",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-21/boe-s-bailey-defends-speaking-out-over-trump-attacks-on-powell",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-21T15:26:03.679486+00:00",
+   "title_ru": "Бэйли из Банка Англии защищает высказывание по поводу нападок Трампа на Пауэлла",
+   "lead": "Bank of England Governor Andrew Bailey said he was right to defend then-Federal Reserve Chair Jerome Powell from Donald Trump’s attacks and would do so again.",
+   "lead_ru": "Управляющий Банка Англии Эндрю Бейли заявил, что был прав, защищая тогдашнего председателя Федеральной резервной системы Джерома Пауэлла от нападок Дональда Трампа, и сделает это снова.",
+   "tags": [
+    "Fed"
+   ]
+  },
+  {
+   "title": "Jackdaw Gas Field Gets UK Approval After Years of Debate",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-21/jackdaw-gas-field-gets-uk-approval-after-years-of-debate-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-21T15:26:03.679486+00:00",
+   "title_ru": "Газовое месторождение Галка получило одобрение Великобритании после многих лет дебатов",
+   "lead": "President Trump praised the UK's decision to approve the highly controversial Jackdaw gas field. Jess Shankleman explains why Britain is once again turning to the North Sea. (Source: Bloomberg)",
+   "lead_ru": "Президент Трамп высоко оценил решение Великобритании одобрить весьма спорное газовое месторождение Галка. Джесс Шанклеман объясняет, почему Великобритания снова поворачивается к Северному морю. (Источник: Блумберг)"
   }
  ],
  "last_digest": "2026-10-20",
@@ -13660,6 +13686,7 @@
   "checked": "2026-10-21T15:21:03.746279+00:00",
   "sec_seen": [
    "0000108985-26-000091",
+   "0000007789-26-000253",
    "0001628280-26-066630",
    "0000108985-26-000090",
    "0001104659-26-117603",
