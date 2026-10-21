@@ -894,7 +894,11 @@
   "9a3b08d2ba267fb7": "2026-10-21T22:37:00.122256+00:00",
   "29350db746d7e77e": "2026-10-21T22:52:00.008432+00:00",
   "7151d3cd349e7f3a": "2026-10-21T22:52:00.008432+00:00",
-  "2663276924295829": "2026-10-21T22:52:00.008432+00:00"
+  "2663276924295829": "2026-10-21T22:52:00.008432+00:00",
+  "82edbfdb4317c9a2": "2026-10-21T22:56:59.975106+00:00",
+  "d3be7a472d9b1534": "2026-10-21T22:56:59.975106+00:00",
+  "fc8843914b4d0503": "2026-10-21T22:56:59.975106+00:00",
+  "3acf591da5347eae": "2026-10-21T23:02:00.031864+00:00"
  },
  "recent": [
   {
@@ -8864,6 +8868,16 @@
    "score": 3,
    "ts": "2026-10-21T22:52:00.008432+00:00",
    "title_ru": "IBM сообщает о росте продаж на 5%, говорит, что инфраструктурные сделки вернулись"
+  },
+  {
+   "title": "Kinder Morgan to invest $4.7 billion in two gas pipeline projects as demand surges",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPdUl3bWtsdWdwdG1wRGxadS0xN2pvc3JzdFNJUmhOdVVUamJMQXdLMWtyaEhQRVQ5bTJSSXZqclphNlhzbW56MGdDUXJMUEtja0dhYUR6X0RkcEZUV2ZTU1BjWWgyeGJyUk1yY0NHU295YzRHcW1PSEJGN3lJVkNMbVZHaDhwb0xFYjUydTRzcGZoSDI5SFlRMkJ6ZnNfbVdDOHVINmVvQzBxY09hUFAwUlNaRkVDMkhWbkdjYlpLanYzUQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-21T23:02:00.031864+00:00",
+   "title_ru": "Kinder Morgan инвестирует $ 4,7 млрд в два проекта газопровода в связи с ростом спроса"
   }
  ],
  "last_digest": "2026-10-21",
@@ -11719,6 +11733,22 @@
     "date": "2026-10-19",
     "disclosed": "2026-10-21",
     "link": "https://www.sec.gov/Archives/edgar/data/1724965/000114036126040419/0001140361-26-040419-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "2ebab78dfa27f397",
+    "ticker": "SNOW",
+    "company": "Snowflake Inc.",
+    "who": "Frank Slootman",
+    "role": "Director",
+    "type": "sell",
+    "value": 94930176,
+    "shares": 300000,
+    "price": 316.43,
+    "plan": true,
+    "date": "2026-10-19",
+    "disclosed": "2026-10-21",
+    "link": "https://www.sec.gov/Archives/edgar/data/1640147/000140234826000020/0001402348-26-000020-index.htm"
    },
    {
     "src": "sec",
@@ -14941,6 +14971,7 @@
   "checked": "2026-10-21T22:31:59.930018+00:00",
   "sec_seen": [
    "0001193125-26-428030",
+   "0001798821-26-000007",
    "0001398344-26-018550",
    "0001776828-26-000012",
    "0001628280-26-066758",
@@ -14969,6 +15000,7 @@
    "0001674510-26-000002",
    "0002108845-26-000007",
    "0001140361-26-040424",
+   "0001402348-26-000020",
    "0001785783-26-000019",
    "0000950103-26-015980",
    "0001193125-26-428010",
@@ -14977,7 +15009,8 @@
    "0001193125-26-428045",
    "0002109272-26-000012",
    "0001493152-26-047949",
-   "0001193125-26-428043"
+   "0001193125-26-428043",
+   "0001493152-26-047950"
   ],
   "errors": {}
  }
