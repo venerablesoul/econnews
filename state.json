@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "0c70ded9f2b6700e": "2026-10-18T14:49:03.526626+00:00",
   "0e9af2d3b6750687": "2026-10-18T14:54:03.637879+00:00",
   "f2d30e01410c3896": "2026-10-18T15:04:03.621588+00:00",
   "be8b44959de28353": "2026-10-18T15:24:04.161730+00:00",
@@ -865,7 +864,9 @@
   "f9bb7671767ce530": "2026-10-21T14:36:04.138103+00:00",
   "134244fc5721353f": "2026-10-21T14:41:03.721887+00:00",
   "6240ea9b0378459b": "2026-10-21T14:46:03.764119+00:00",
-  "a3136ea9ea7b6cb5": "2026-10-21T14:46:03.764119+00:00"
+  "a3136ea9ea7b6cb5": "2026-10-21T14:46:03.764119+00:00",
+  "b80bbd5c554e54c6": "2026-10-21T14:51:03.713074+00:00",
+  "ed675778242659fb": "2026-10-21T14:51:03.713074+00:00"
  },
  "recent": [
   {
@@ -8362,6 +8363,19 @@
    "score": 3,
    "ts": "2026-10-21T14:46:03.764119+00:00",
    "title_ru": "КОММЕНТАРИЙ: Пять причуд и загадок ИИ, на которые стоит обратить внимание в этом сезоне отчетности"
+  },
+  {
+   "title": "Jio Platforms' IPO-linked inflows boost rupee; elevated oil prices spur caution",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPMFFMSF9nLXRwYy1COGJKYnBBYXkzOTFESWIxSnROTmJGa2hQZ3BTTExjMEUtTXhrUVFka3kzdXBjQXBqV1d6WW9wcDV0Z2NHbEhnellaWHpwMEx0d19NOHdaaGxyTUd5NEV0VHozczYxeVlVNU1NMjNRaEc0ZVFEMTFpamJVNWl1N0swSkdRbERORjN2c3dlVGhMMXVTQjFJUDVWZnhhMnY4MzZvMW1kQ25QSGY5dmhLc1d5aTNrRGR6N2c?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-21T14:51:03.713074+00:00",
+   "title_ru": "Притоки средств Jio Platforms, связанные с IPO, повышают рупию; Высокие цены на нефть вызывают осторожность",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-20",
@@ -13620,10 +13634,9 @@
   "sec_seen": [
    "0001628280-26-066621",
    "0000108985-26-000091",
-   "0001094629-26-000004",
+   "0001628280-26-066632",
    "0001628280-26-066630",
    "0000108985-26-000090",
-   "0001193125-26-427279",
    "0001628280-26-066625"
   ],
   "errors": {}
