@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "a4348ade7db45996": "2026-10-18T04:58:04.667273+00:00",
   "b16a84e03a3bcf32": "2026-10-18T05:03:04.653453+00:00",
   "5ad39845e4d34e98": "2026-10-18T05:08:04.687981+00:00",
   "72d0007aca439daa": "2026-10-18T05:33:04.659229+00:00",
@@ -738,21 +737,6 @@
   "e29e07c27f3f0cb2": "2026-10-21T04:50:00.319750+00:00"
  },
  "recent": [
-  {
-   "title": "Global economy set for AI-driven surge, FT survey suggests",
-   "link": "https://www.ft.com/content/c6aeb3a1-1874-4947-8ffc-4d993301244a?syn-25a6b1a6=1",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 3,
-   "ts": "2026-10-18T04:58:04.667273+00:00",
-   "title_ru": "Согласно исследованию FT, мировая экономика ожидает резкий рост благодаря искусственному интеллекту",
-   "lead": "Poll of 94 economists points to benefits reaching far beyond the US and China",
-   "lead_ru": "Опрос 94 экономистов указывает на то, что выгоды выходят далеко за пределы США и Китая.",
-   "tags": [
-    "China"
-   ]
-  },
   {
    "title": "Parveen Bhadan, Sea Gold Infrastructure Limited: Profile and Biography",
    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5IY0NpM0k0bXRRMEpUa2tmdDJSQ0VLbFVyY05IX1FpYU5uSTdqTzd2OTBDUWZlWUU5TUVVUXRfOVo2WDJ1TmJzdnA5cjdnazgzbV9oVmhjRVl5aElVLVE?oc=5",
@@ -7590,7 +7574,8 @@
   "USD|2026-10-15T12:30:00+00:00|PPI m/m",
   "USD|2026-10-15T12:30:00+00:00|Retail Sales m/m",
   "GBP|2026-10-16T02:00:00+00:00|BOE Gov Bailey Speaks",
-  "USD|2026-10-16T03:30:00+00:00|Fed Chairman Warsh Speaks"
+  "USD|2026-10-16T03:30:00+00:00|Fed Chairman Warsh Speaks",
+  "GBP|2026-10-21T06:00:00+00:00|CPI y/y"
  ],
  "last_morning": "2026-10-20",
  "all_down_alerted": false,
