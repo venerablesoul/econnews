@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "a42c560d7863b405": "2026-10-18T22:34:36.368396+00:00",
-  "28f27ef00c64abe7": "2026-10-18T22:34:36.368396+00:00",
   "fd44f56663449a36": "2026-10-18T22:44:36.375359+00:00",
   "82edbfdb4317c9a2": "2026-10-18T22:49:36.341437+00:00",
   "d3be7a472d9b1534": "2026-10-18T22:49:36.341437+00:00",
@@ -895,24 +893,10 @@
   "cfded63c9e0300be": "2026-10-21T22:17:00.043086+00:00",
   "9dc07a42d5c95f8b": "2026-10-21T22:17:00.043086+00:00",
   "7ab5e9422fa33a7f": "2026-10-21T22:31:59.930018+00:00",
-  "eb60c0e14aa309f9": "2026-10-21T22:31:59.930018+00:00"
+  "eb60c0e14aa309f9": "2026-10-21T22:31:59.930018+00:00",
+  "9a3b08d2ba267fb7": "2026-10-21T22:37:00.122256+00:00"
  },
  "recent": [
-  {
-   "title": "Kioxia Shares Face Headwinds From Margin-Buying Gone Wrong",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-18/kioxia-shares-face-headwinds-from-margin-buying-gone-wrong",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-18T22:34:36.368396+00:00",
-   "title_ru": "Акции Kioxia сталкиваются с препятствиями из-за неудачных маржинальных покупок",
-   "lead": "Kioxia Holdings Corp. shares face further downward pressure because of a buildup of positions from investors who borrowed to buy the stock on the assumption it would rise, and now may need to sell at a loss.",
-   "lead_ru": "Акции Kioxia Holdings Corp. сталкиваются с дальнейшим понижательным давлением из-за наращивания позиций инвесторов, которые взяли взаймы для покупки акций в предположении, что они вырастут, и теперь, возможно, придется продать их с убытком.",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Не торговлей едины // МВФ оценил высоту барьеров внутри Евросоюза",
    "link": "https://www.kommersant.ru/doc/9041395",
@@ -8867,6 +8851,21 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "FirstFT: Scott Bessent shrugs off ‘systemic’ AI risks at private event with investors",
+   "link": "https://www.ft.com/content/b739c6e8-5b77-46e3-91a5-382fd52389bc?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 3,
+   "ts": "2026-10-21T22:37:00.122256+00:00",
+   "title_ru": "FirstFT: Скотт Бессент отмахивается от «системных» рисков ИИ на закрытом мероприятии с инвесторами",
+   "lead": "Also in today’s newsletter: Elon Musk’s $3.6tn gamble and China’s battery makers race to invest abroad",
+   "lead_ru": "Также в сегодняшнем информационном бюллетене: азартная игра Илона Маска на $ 3,6 трлн и гонка китайских производителей аккумуляторов за инвестиции за рубежом",
+   "tags": [
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-10-21",
@@ -11242,6 +11241,22 @@
     "date": "2026-10-21",
     "disclosed": "2026-10-21",
     "link": "https://www.sec.gov/Archives/edgar/data/1551047/000139834426018550/0001398344-26-018550-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "1623aeedcae1e351",
+    "ticker": "ADPT",
+    "company": "Adaptive Biotechnologies Corp",
+    "who": "Julie Rubinstein",
+    "role": "COO",
+    "type": "sell",
+    "value": 879088,
+    "shares": 35643,
+    "price": 24.66,
+    "plan": true,
+    "date": "2026-10-21",
+    "disclosed": "2026-10-21",
+    "link": "https://www.sec.gov/Archives/edgar/data/1780664/000178066426000043/0001780664-26-000043-index.htm"
    },
    {
     "src": "sec",
@@ -14944,6 +14959,7 @@
    "0001867888-26-000010",
    "0001193125-26-428040",
    "0001140361-26-040419",
+   "0001780664-26-000043",
    "0002074298-26-000020",
    "0001193125-26-428009",
    "0002041533-26-000008",
