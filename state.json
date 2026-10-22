@@ -937,7 +937,9 @@
   "3f94321efcfd769e": "2026-10-22T23:40:20.312027+00:00",
   "d82838bd055dadfb": "2026-10-22T23:45:20.290349+00:00",
   "12ab1b6980bca0f3": "2026-10-22T23:45:20.290349+00:00",
-  "adde03cfb5fdea73": "2026-10-22T23:45:20.290349+00:00"
+  "adde03cfb5fdea73": "2026-10-22T23:45:20.290349+00:00",
+  "b48abfc5fb875e91": "2026-10-22T23:50:20.311504+00:00",
+  "3deb167b5ad56e13": "2026-10-22T23:50:20.311504+00:00"
  },
  "recent": [
   {
@@ -9558,6 +9560,35 @@
    "tags": [
     "gas"
    ]
+  },
+  {
+   "title": "Japan Inflation Rises Above BOJ Target Level, Backing Rate Hikes",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-22/japan-inflation-rises-above-boj-target-level-backing-rate-hikes",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 11,
+   "ts": "2026-10-22T23:50:20.311504+00:00",
+   "title_ru": "Инфляция в Японии превысила целевой уровень Банка Японии, что привело к повышению ставок",
+   "lead": "Japan’s key price gauge rose above the Bank of Japan’s target level for the first time this year, supporting the case for a widely expected BOJ interest rate hike in December.",
+   "lead_ru": "Ключевой индикатор цен в Японии впервые в этом году превысил целевой уровень Банка Японии, что подтверждает широко ожидаемое повышение процентной ставки Банком Японии в декабре.",
+   "tags": [
+    "rates",
+    "inflation"
+   ]
+  },
+  {
+   "title": "S&P 500, Nasdaq end lower as revived AI doubts spark tech selloff",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1wd05Tbmh2LVJoWDlXeVU5SzQxT1lCa01MdjlwQjFDbzlfVXBiTnB6LU9kdVRnZUhPSFd5ZkRndlBsOEIzRjFyYjZKd2syZGFhaE0zMmx6SVF4ZHZ0VmN6X2JTUnZFNUNBd2U4ZFlRZUpoNkkyOEh3OEFHemo2dw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 7,
+   "ts": "2026-10-22T23:50:20.311504+00:00",
+   "title_ru": "S&P 500 и Nasdaq завершили снижение, поскольку возрождение сомнений в области искусственного интеллекта спровоцировало распродажу технологических компаний",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-22",
@@ -15853,12 +15884,11 @@
    "0001193125-26-429162",
    "0001193125-26-429202",
    "0001334945-26-000005",
-   "0001400954-26-000013",
    "0002161365-26-000008",
-   "0000109563-26-000045",
-   "0001930044-26-000010",
+   "0001400954-26-000013",
    "0001753539-26-000149",
-   "0001193125-26-429124",
+   "0001930044-26-000010",
+   "0000109563-26-000045",
    "0001950180-26-000010",
    "0001993147-26-000004",
    "0001187377-26-000004",
@@ -15875,6 +15905,7 @@
    "0001628280-26-066951",
    "0001212813-26-000005",
    "0001628280-26-066941",
+   "0001455134-26-000023",
    "0000829224-26-000149",
    "0001266824-26-000217",
    "0001596532-26-000248",
