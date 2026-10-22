@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "31554e62df12b8bd": "2026-10-19T17:25:37.574159+00:00",
   "0c8b9f1e0de8e424": "2026-10-19T17:30:37.576828+00:00",
   "2d43c579113eb921": "2026-10-19T17:30:37.576828+00:00",
   "908c534e462dbf27": "2026-10-19T17:35:37.692688+00:00",
@@ -919,21 +918,10 @@
   "8308070aca6f5f46": "2026-10-22T17:14:40.178708+00:00",
   "c610c3560e4ec72c": "2026-10-22T17:19:40.225583+00:00",
   "bc834d3fcc60a067": "2026-10-22T17:24:40.200107+00:00",
-  "33e234aba1a8990b": "2026-10-22T17:24:40.200107+00:00"
+  "33e234aba1a8990b": "2026-10-22T17:24:40.200107+00:00",
+  "1cf9c01e3502ff93": "2026-10-22T17:29:40.173985+00:00"
  },
  "recent": [
-  {
-   "title": "CoreWeave Upgraded to Buy at Goldman on Overblown Debt Worries",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-19/coreweave-upgraded-to-buy-at-goldman-on-overblown-debt-worries",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T17:25:37.574159+00:00",
-   "title_ru": "CoreWeave повышен до покупки в Goldman из-за опасений по поводу раздутой задолженности",
-   "lead": "CoreWeave Inc. was upgraded to buy from neutral at Goldman Sachs, a move that represents a vote of confidence in the cloud-computing provider following a period of heavy volatility for the stock related to its debt.",
-   "lead_ru": "Рейтинг CoreWeave Inc. был повышен до нейтральной позиции в Goldman Sachs, что представляет собой вотум доверия поставщику облачных вычислений после периода сильной волатильности акций, связанного с его долгом."
-  },
   {
    "title": "South Africa must prepare for potential loss of US trade benefits, president says",
    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQSEVHdjlrUFl3c0pOclgxa3gwWEF1NHpLYkgzOEdLOGQ2OFBxVDdNNk1DYW1pbXFxVTZnbjlGX3BCY3VuTVliaGtfSDVad2o5RWh6aW42NmFvaEZ3bGd4aXpXRGtQWEdCakR4RXlta21wbm9Vb2R2anFQYXJKa1podEFOT1prNDc0aVBpZXo3MDYyUVBOZGlDcW9vQzBLdmFvRXZrYXFxU29vekZOV2lvY19BZEh1MWFwckw4ZVJB?oc=5",
@@ -9400,6 +9388,19 @@
    ],
    "score": 2,
    "ts": "2026-10-22T17:24:40.200107+00:00"
+  },
+  {
+   "title": "French bond pain puts euro zone's weak links on notice",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOQTZkYXJBbWNfVFRidzIxNDh2aDRva0x2Q05TTlROaTBOLTRhR3RZcTBqbm96d2dKWU8xVDRBMGN2TXR3Uzh5QWg2T3I1UDhILTl4TnBqdFA5bWlxZi0wWG1KWTcyQi0taWJvbjNSRExHRzNfamlwSFN1U3Z2QTYyYm1FT1Y5WjB5R3dOZ2RDdzdjcFVkSVdpeG1hdw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T17:29:40.173985+00:00",
+   "title_ru": "Проблемы с французскими облигациями обращают внимание на слабые звенья еврозоны",
+   "tags": [
+    "bonds"
+   ]
   }
  ],
  "last_digest": "2026-10-21",
@@ -11679,6 +11680,54 @@
     "date": "2026-10-21",
     "disclosed": "2026-10-22",
     "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000370/0001510281-26-000370-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "9cf1724901b2e431",
+    "ticker": "BROS",
+    "company": "Dutch Bros Inc.",
+    "who": "Dm Individual Aggregator, Llc",
+    "role": "10% owner",
+    "type": "sell",
+    "value": 2231602,
+    "shares": 50709,
+    "price": 44.01,
+    "plan": true,
+    "date": "2026-10-20",
+    "disclosed": "2026-10-22",
+    "link": "https://www.sec.gov/Archives/edgar/data/1883096/000186658126000160/0001866581-26-000160-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "145c9d49a1936f25",
+    "ticker": "BROS",
+    "company": "Dutch Bros Inc.",
+    "who": "Dm Trust Aggregator, Llc",
+    "role": "10% owner",
+    "type": "sell",
+    "value": 4179792,
+    "shares": 94978,
+    "price": 44.01,
+    "plan": true,
+    "date": "2026-10-20",
+    "disclosed": "2026-10-22",
+    "link": "https://www.sec.gov/Archives/edgar/data/1883105/000186658126000159/0001866581-26-000159-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "c8f79df2fd1704a0",
+    "ticker": "BROS",
+    "company": "Dutch Bros Inc.",
+    "who": "Travis Boersma",
+    "role": "Chair, 10% owner",
+    "type": "sell",
+    "value": 6411393,
+    "shares": 145687,
+    "price": 44.01,
+    "plan": true,
+    "date": "2026-10-20",
+    "disclosed": "2026-10-22",
+    "link": "https://www.sec.gov/Archives/edgar/data/1883154/000186658126000158/0001866581-26-000158-index.htm"
    },
    {
     "src": "sec",
@@ -15572,11 +15621,15 @@
   },
   "checked": "2026-10-22T17:19:40.225583+00:00",
   "sec_seen": [
-   "0001193125-26-428690",
    "0001193125-26-428684",
+   "0001193125-26-428690",
+   "0001866581-26-000159",
+   "0001866581-26-000158",
    "0001251987-26-000012",
+   "0001193125-26-428693",
    "0001510281-26-000370",
-   "0000006955-26-000091"
+   "0000006955-26-000091",
+   "0001866581-26-000160"
   ],
   "errors": {}
  }
