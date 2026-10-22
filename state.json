@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c6971bfe8b4f4caa": "2026-10-19T17:15:37.580419+00:00",
-  "9b4807e570c3cdf0": "2026-10-19T17:20:37.587292+00:00",
-  "f04e60139d74313f": "2026-10-19T17:20:37.587292+00:00",
   "31554e62df12b8bd": "2026-10-19T17:25:37.574159+00:00",
   "0c8b9f1e0de8e424": "2026-10-19T17:30:37.576828+00:00",
   "2d43c579113eb921": "2026-10-19T17:30:37.576828+00:00",
@@ -919,7 +916,10 @@
   "e2ecce3384847288": "2026-10-22T17:09:40.264169+00:00",
   "340888be9207097d": "2026-10-22T17:14:40.178708+00:00",
   "5ed754435a96cf7b": "2026-10-22T17:14:40.178708+00:00",
-  "8308070aca6f5f46": "2026-10-22T17:14:40.178708+00:00"
+  "8308070aca6f5f46": "2026-10-22T17:14:40.178708+00:00",
+  "c610c3560e4ec72c": "2026-10-22T17:19:40.225583+00:00",
+  "bc834d3fcc60a067": "2026-10-22T17:24:40.200107+00:00",
+  "33e234aba1a8990b": "2026-10-22T17:24:40.200107+00:00"
  },
  "recent": [
   {
@@ -9381,6 +9381,25 @@
    "tags": [
     "bonds"
    ]
+  },
+  {
+   "title": "UK’s FTSE 100 falls as banks, miners drag; Barclays slides on job cuts",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNDQwcEVFMHRuT3dQMkdaSlhraExsN3RuZ1RoX056UkRUSWRCTDVHWUVjRVhRdzJUVVVMRl9zM1dwSDl1WXh3ZTBmdkhkTk5kam5IeHlyN0JuX0RMTTdneWdkMk83WC1GREhLaGgwUlJDQm1RWXlOOHBBT2RfX0dobTk1dlZwT0RhV0NMQ1V2NDZIWUlSbHFKQw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T17:24:40.200107+00:00",
+   "title_ru": "Британский индекс FTSE 100 падает из-за падения банков и горнодобывающих компаний; Barclays отказывается от сокращения рабочих мест"
+  },
+  {
+   "title": "Young investors are betting on prediction markets and crypto. But this bestselling author says the boring money moves still work.",
+   "link": "https://www.marketwatch.com/story/young-investors-are-betting-on-prediction-markets-and-crypto-but-this-bestselling-author-says-the-boring-money-moves-still-work-cd9d350a?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 2,
+   "ts": "2026-10-22T17:24:40.200107+00:00"
   }
  ],
  "last_digest": "2026-10-21",
@@ -15551,8 +15570,10 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-22T16:19:40.209379+00:00",
+  "checked": "2026-10-22T17:19:40.225583+00:00",
   "sec_seen": [
+   "0001193125-26-428690",
+   "0001193125-26-428684",
    "0001251987-26-000012",
    "0001510281-26-000370",
    "0000006955-26-000091"
