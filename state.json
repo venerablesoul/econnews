@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "56046839efe5d390": "2026-10-19T10:16:15.420167+00:00",
-  "a1343aa71cc91b2d": "2026-10-19T10:16:15.420167+00:00",
-  "00b8e8c47e95136d": "2026-10-19T10:16:15.420167+00:00",
-  "31450a724eea4e97": "2026-10-19T10:16:15.420167+00:00",
-  "27230cc576cd9ef9": "2026-10-19T10:21:15.432417+00:00",
   "f335836d02483b14": "2026-10-19T10:26:15.439131+00:00",
   "dc6f3a277ac1237a": "2026-10-19T10:26:15.439131+00:00",
   "500fefd6af6adbd7": "2026-10-19T10:26:15.439131+00:00",
@@ -890,36 +885,12 @@
   "75e6cada690c010e": "2026-10-22T10:08:36.829010+00:00",
   "a2eba563865f4303": "2026-10-22T10:08:36.829010+00:00",
   "dc7e498fa993f6a0": "2026-10-22T10:13:36.833722+00:00",
-  "0501beb846697447": "2026-10-22T10:13:36.833722+00:00"
+  "0501beb846697447": "2026-10-22T10:13:36.833722+00:00",
+  "3df85d330489cea2": "2026-10-22T10:23:36.836037+00:00",
+  "0f305d257c0519d6": "2026-10-22T10:23:36.836037+00:00",
+  "7228ee66f2cfc731": "2026-10-22T10:23:36.836037+00:00"
  },
  "recent": [
-  {
-   "title": "Fed sees AI boom adding to inflation headache, but others may pay for the medicine",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbWZLVGpmVmN6M1o1UUJnRXhSMmVWdjY2Mm4tR0IyeXk0OHZzOVRPamx6eEdEVjhEUHVXMlkzeFhoWkg4Qnl0a3lYQ0xJdWNzVHcydDA0NFdVb0ctbEVoMExGek50RHoxWF9TRThVMXRENDhWV2RUbVRGOVhvOEtoTmlTS1NlZGk0UldmSEY4N0tRVVRBeWc5SmJqRGlaVWwzeHRPa1hHZDNHZ3UxUjhwZHBGQXo0YlIw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-19T10:16:15.420167+00:00",
-   "title_ru": "ФРС считает, что бум искусственного интеллекта усугубляет инфляционную головную боль, но за лекарство могут заплатить другие",
-   "tags": [
-    "Fed",
-    "inflation"
-   ]
-  },
-  {
-   "title": "Mapping the Market: Semiconductor stocks may be about to rise",
-   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNaVJmbTk2QjltaGtJN210eWNBWlMtYmFSY3d3OTg2ZEx6NnZpTDVnRjk5TDRRbW8tWkRHbzNNWXhlbnZCaE51ejhvS3NMM2ZsU3JrTUNxVGFmSnJOMV9xZ3NMdUNOalh5QWxWbldRcjVKcGdValNTTWQ2bFRMR2VjeHFPR3JzZlZOejBPNQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-19T10:16:15.420167+00:00",
-   "title_ru": "Картирование рынка: акции полупроводникового сектора могут вырасти",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Cameroon Eurobond Yields Soar as Fitch Downgrade Flags Risks",
    "link": "https://www.bloomberg.com/news/articles/2026-10-19/cameroon-eurobond-yields-soar-as-fitch-downgrade-flags-risks",
@@ -9013,6 +8984,29 @@
    "tags": [
     "bonds"
    ]
+  },
+  {
+   "title": "Greece says it is implementing sanctions linked to Iran",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNMFJaZ0t6eFMxSzJVenJlSEdyVkFjWXVuYmsxUy14ajVPdWZEMEUybm1ySE5zbzE1N05TNlVaeW1rZmNHOWVkLWxMQ193QzlRMTdYMGFYZmk2TzROdWptVDB5LXAtV3BiSW9nVERSSTF0bkpLWGVSREdja21vcFpGcnZmb1UtbUtFdE9QSUtVZENOMzJURl9Rd1lEbGZTVW1ISk5PamhUaUhGZw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-22T10:23:36.836037+00:00",
+   "title_ru": "Греция заявляет, что вводит санкции, связанные с Ираном",
+   "tags": [
+    "sanctions"
+   ]
+  },
+  {
+   "title": "India's JSW Paints eyes 4, 5-year debt to refinance acquisition-led funding, bankers say",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQSUNoTldCVnVHdFNDTVdoVnJLRFZaa0JFZmVPOXB2SXV3S21oaEg0X2o4V3BOSzJoSFhvWktSa1RmTk1fMXNCNGFRZFowbTdVNTBuWDVKRUp2MUpObkRUWGJ6al9ZcG0xZU9ta3VyVXZZNHlaZm03eHZfd2RCbnFJUVowMVUwb3ZoTmJKQ05oRjhxM3ZUay0waUdaeTdEeFh6YldFcmRsWjB3T1Vob0V2LXB5ZDhBNUVsVS1FQ05wclctal9k?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T10:23:36.836037+00:00",
+   "title_ru": "Банкиры говорят, что индийская JSW Paints рассматривает 4,5-летний долг для рефинансирования финансирования, основанного на поглощениях"
   }
  ],
  "last_digest": "2026-10-21",
@@ -15153,15 +15147,9 @@
   },
   "checked": "2026-10-22T09:58:36.880177+00:00",
   "sec_seen": [
-   "0001398344-26-018550",
-   "0001674510-26-000002",
    "0001193125-26-428279",
    "0001818383-26-000257",
-   "0001140361-26-040424",
-   "0002108845-26-000007",
    "0000804328-26-000109",
-   "0001823543-26-000002",
-   "0001140361-26-040419",
    "0000804328-26-000110",
    "0001193125-26-428121",
    "0001231919-26-001485",
@@ -15170,20 +15158,14 @@
    "0001477932-26-006387",
    "0001193125-26-428272",
    "0001193125-26-428106",
-   "0002041533-26-000008",
    "0000935703-26-000120",
    "0001818383-26-000258",
    "0001778564-26-000189",
-   "0001780664-26-000043",
    "0000804328-26-000111",
    "0001193125-26-428110",
    "0001191473-26-000008",
    "0000804328-26-000107",
    "0000804328-26-000108",
-   "0001493152-26-047950",
-   "0001807136-26-000002",
-   "0001798821-26-000007",
-   "0001402348-26-000020",
    "0001193125-26-428104"
   ],
   "errors": {}
