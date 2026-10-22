@@ -204,7 +204,6 @@ export function geoRoute(u) {
   }
   if (u.host === "api.open-meteo.com") return G.openMeteo((q.get("latitude") || "").split(",").length);
   if (u.host === "date.nager.at") { const m = /PublicHolidays\/(\d+)\/(\w+)/.exec(p); return m ? G.nager(m[2], m[1]) : [] }
-  if (u.host === "api.fiscaldata.treasury.gov") return G.treasury;
   return undefined;
 }
 

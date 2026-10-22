@@ -88,15 +88,15 @@ export function nager(cc, y) {
     { date: y + "-11-04", localName: "День народного единства", name: "Unity Day", countryCode: cc, global: true, types: ["Public"] }].filter((h) => cc === "RU" || h.name !== "Unity Day");
 }
 
-// the Treasury's Fiscal Data API (auctions_query): strings, "null" for empty
-export const treasury = { data: [
+// docs/auctions.json as the bot writes it (auctions.py): two bills with results and an announced note
+export const auctionsJson = { updated: new Date(now - 3600e3).toISOString(), source: "US Treasury Fiscal Data", rows: [
+  { cusip: "91282CRR4", security_type: "Note", security_term: "5-Year", auction_date: day(now + 6 * 864e5), issue_date: day(now + 9 * 864e5), maturity_date: day(now + 5 * 365 * 864e5),
+    offering_amt: 26000000000, inflation_index_security: "Yes" },
   { cusip: "912797QX8", security_type: "Bill", security_term: "13-Week", auction_date: day(now - 3 * 864e5), issue_date: day(now), maturity_date: day(now + 91 * 864e5),
-    high_yield: "null", high_discnt_rate: "3.885", high_investment_rate: "3.962", int_rate: "null", bid_to_cover_ratio: "2.91", offering_amt: "86000000000", reopening: "No",
-    inflation_index_security: "No", floating_rate: "No" },
+    high_discnt_rate: 3.885, high_investment_rate: 3.962, bid_to_cover_ratio: 2.91, offering_amt: 86000000000 },
   { cusip: "912797QY6", security_type: "Bill", security_term: "26-Week", auction_date: day(now - 3 * 864e5), issue_date: day(now), maturity_date: day(now + 182 * 864e5),
-    high_yield: "null", high_discnt_rate: "3.790", high_investment_rate: "3.890", int_rate: "null", bid_to_cover_ratio: "2.77", offering_amt: "77000000000", reopening: "No",
-    inflation_index_security: "No", floating_rate: "No" },
-], meta: { "total-count": 2 } };
+    high_discnt_rate: 3.79, high_investment_rate: 3.89, bid_to_cover_ratio: 2.77, offering_amt: 77000000000 },
+] };
 
 export const binanceTrades = Array.from({ length: 20 }, (_, i) => ({ id: 1000 + i, price: String(81000 + i), qty: String(0.01 * (i + 1)), quoteQty: "810", time: now - (20 - i) * 1000, isBuyerMaker: i % 3 === 0 }));
 

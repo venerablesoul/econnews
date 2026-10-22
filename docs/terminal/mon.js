@@ -271,10 +271,20 @@ function drawBi(box){
 }
 
 /* ---------- FPC: ETF returns ranked ---------- */
-var FUNDS = [['SPY', 'eq'], ['QQQ', 'eq'], ['DIA', 'eq'], ['IWM', 'eq'], ['VTI', 'eq'], ['EFA', 'eq'], ['VGK', 'eq'], ['EWJ', 'eq'], ['EEM', 'eq'], ['FXI', 'eq'], ['INDA', 'eq'], ['EWZ', 'eq'],
-  ['XLK', 'sec'], ['XLF', 'sec'], ['XLE', 'sec'], ['XLV', 'sec'], ['XLY', 'sec'], ['XLP', 'sec'], ['XLI', 'sec'], ['XLU', 'sec'], ['XLB', 'sec'], ['XLRE', 'sec'], ['XLC', 'sec'], ['SMH', 'sec'],
-  ['TLT', 'bond'], ['IEF', 'bond'], ['SHY', 'bond'], ['LQD', 'bond'], ['HYG', 'bond'], ['TIP', 'bond'], ['EMB', 'bond'],
-  ['GLD', 'cmd'], ['SLV', 'cmd'], ['USO', 'cmd'], ['UNG', 'cmd'], ['DBA', 'cmd'], ['VNQ', 'alt'], ['IBIT', 'alt']];
+// ticker, group, what it holds (English, Russian)
+var FUNDS = [['SPY', 'eq', 'S&P 500', 'S&P 500'], ['QQQ', 'eq', 'Nasdaq 100', 'Nasdaq 100'], ['DIA', 'eq', 'Dow Jones', 'Dow Jones'], ['IWM', 'eq', 'Russell 2000 (small caps)', 'Russell 2000 (малые компании)'],
+  ['VTI', 'eq', 'Total US market', 'Весь рынок США'], ['EFA', 'eq', 'Developed ex-US', 'Развитые рынки без США'], ['VGK', 'eq', 'Europe', 'Европа'], ['EWJ', 'eq', 'Japan', 'Япония'],
+  ['EEM', 'eq', 'Emerging markets', 'Развивающиеся рынки'], ['FXI', 'eq', 'China large caps', 'Крупные компании Китая'], ['INDA', 'eq', 'India', 'Индия'], ['EWZ', 'eq', 'Brazil', 'Бразилия'],
+  ['XLK', 'sec', 'Technology', 'Технологии'], ['XLF', 'sec', 'Financials', 'Финансы'], ['XLE', 'sec', 'Energy', 'Энергетика'], ['XLV', 'sec', 'Health care', 'Здравоохранение'],
+  ['XLY', 'sec', 'Consumer discretionary', 'Товары не первой необходимости'], ['XLP', 'sec', 'Consumer staples', 'Товары первой необходимости'], ['XLI', 'sec', 'Industrials', 'Промышленность'],
+  ['XLU', 'sec', 'Utilities', 'Коммунальные услуги'], ['XLB', 'sec', 'Materials', 'Сырьё и материалы'], ['XLRE', 'sec', 'Real estate', 'Недвижимость'], ['XLC', 'sec', 'Communication', 'Связь и медиа'],
+  ['SMH', 'sec', 'Semiconductors', 'Полупроводники'],
+  ['TLT', 'bond', 'Treasuries 20Y+', 'Трежерис 20+ лет'], ['IEF', 'bond', 'Treasuries 7–10Y', 'Трежерис 7–10 лет'], ['SHY', 'bond', 'Treasuries 1–3Y', 'Трежерис 1–3 года'],
+  ['LQD', 'bond', 'Investment-grade corporates', 'Корпоративные инвест. уровня'], ['HYG', 'bond', 'High-yield corporates', 'Высокодоходные корпоративные'], ['TIP', 'bond', 'TIPS (inflation-linked)', 'TIPS (защита от инфляции)'],
+  ['EMB', 'bond', 'Emerging-market bonds ($)', 'Облигации развивающихся рынков ($)'],
+  ['GLD', 'cmd', 'Gold', 'Золото'], ['SLV', 'cmd', 'Silver', 'Серебро'], ['USO', 'cmd', 'WTI crude oil', 'Нефть WTI'], ['UNG', 'cmd', 'US natural gas', 'Природный газ США'],
+  ['DBA', 'cmd', 'Agriculture', 'Сельхозтовары'], ['VNQ', 'alt', 'US REITs', 'Фонды недвижимости США (REIT)'], ['IBIT', 'alt', 'Bitcoin', 'Биткоин']];
+var FUND_NAME = {}; FUNDS.forEach(function(f){ FUND_NAME[f[0]] = f });
 var FPC_P = ['1d', '1w', '1m', '3m', 'ytd', '1y', '3y'];
 mon.fpcGrp = 'all';
 function drawFpc(box){
@@ -294,7 +304,7 @@ function drawFpc(box){
     var colsDef = [{t: '#', l: true}, {t: 'ETF', l: true}, {t: TX('name'), l: true}].concat(FPC_P.map(function(p){ return {t: TX('per_' + p), k: p, sort: true, title: p === '3y' ? TX('per_ann') : ''} }));
     var tb = table(colsDef, {sortKey: mon.fpcSort, sortDir: -mon.fpcDir, onSort: function(k){ if (mon.fpcSort === k) mon.fpcDir = -mon.fpcDir; else { mon.fpcSort = k; mon.fpcDir = -1 } drawFpc(box) }});
     rows.forEach(function(r, i){
-      var tr = el('tr', 'row'); tr.appendChild(td(String(i + 1), 'l')); tr.appendChild(td(r.s, 'l tkc')); tr.appendChild(td(r.name || '', 'l nm'));
+      var tr = el('tr', 'row'); tr.appendChild(td(String(i + 1), 'l')); tr.appendChild(td(r.s, 'l tkc')); tr.appendChild(td(FUND_NAME[r.s] ? FUND_NAME[r.s][I.ru ? 3 : 2] : r.name || '', 'l nm'));
       FPC_P.forEach(function(p){ var v = r.r[p], c = td(v == null ? '—' : pct(v, 1), 'num'); if (v != null) { c.style.background = F.heat(v, /^(1d|1w)$/.test(p) ? 2 : /^(1m)$/.test(p) ? 5 : 20); c.style.color = '#fff' } tr.appendChild(c) });
       tr.onclick = function(){ T.runCommand('TECH ' + r.s) }; tb.body.appendChild(tr);
     });
@@ -349,18 +359,47 @@ function nyseHolidays(y){
   var nth = function(m, wd, n){ var d = new Date(Date.UTC(y, m - 1, 1)), c = 0; while (true) { if (d.getUTCDay() === wd && ++c === n) return d2(m, d.getUTCDate()); d.setUTCDate(d.getUTCDate() + 1) } };
   var last = function(m, wd){ var d = new Date(Date.UTC(y, m, 0)); while (d.getUTCDay() !== wd) d.setUTCDate(d.getUTCDate() - 1); return d2(m, d.getUTCDate()) };
   var obs = function(m, d, name){ var dt = new Date(Date.UTC(y, m - 1, d)), w = dt.getUTCDay(); if (w === 6) dt.setUTCDate(d - 1); if (w === 0) dt.setUTCDate(d + 1); if (dt.getUTCFullYear() === y) out.push([dt.toISOString().slice(0, 10), name]) };
-  // Easter (Anonymous Gregorian algorithm) → Good Friday
-  var a = y % 19, b = Math.floor(y / 100), c = y % 100, d = Math.floor(b / 4), e = b % 4, f = Math.floor((b + 8) / 25), g = Math.floor((b - f + 1) / 3), h = (19 * a + b - d - g + 15) % 30,
-    i = Math.floor(c / 4), k = c % 4, l = (32 + 2 * e + 2 * i - h - k) % 7, m = Math.floor((a + 11 * h + 22 * l) / 451), mon_ = Math.floor((h + l - 7 * m + 114) / 31), day = ((h + l - 7 * m + 114) % 31) + 1;
-  var gf = new Date(Date.UTC(y, mon_ - 1, day - 2)).toISOString().slice(0, 10);
+  var gf = easter(y, -2);
   obs(1, 1, "New Year's Day"); out.push([nth(1, 1, 3), 'Martin Luther King Jr. Day']); out.push([nth(2, 1, 3), "Washington's Birthday"]); out.push([gf, 'Good Friday']);
   out.push([last(5, 1), 'Memorial Day']); obs(6, 19, 'Juneteenth'); obs(7, 4, 'Independence Day'); out.push([nth(9, 1, 1), 'Labor Day']); out.push([nth(11, 4, 4), 'Thanksgiving Day']); obs(12, 25, 'Christmas Day');
   return out.sort(function(x, z){ return x[0] < z[0] ? -1 : 1 });
 }
+// Easter Sunday (Anonymous Gregorian algorithm) plus `shift` days, as YYYY-MM-DD
+function easter(y, shift){
+  var a = y % 19, b = Math.floor(y / 100), c = y % 100, d = Math.floor(b / 4), e = b % 4, f = Math.floor((b + 8) / 25), g = Math.floor((b - f + 1) / 3), h = (19 * a + b - d - g + 15) % 30,
+    i = Math.floor(c / 4), k = c % 4, l = (32 + 2 * e + 2 * i - h - k) % 7, m = Math.floor((a + 11 * h + 22 * l) / 451), mon_ = Math.floor((h + l - 7 * m + 114) / 31), day = ((h + l - 7 * m + 114) % 31) + 1;
+  return new Date(Date.UTC(y, mon_ - 1, day + (shift || 0))).toISOString().slice(0, 10);
+}
+// European exchanges keep their own calendars, not the country's public holidays (Euronext trades on Bastille Day,
+// Xetra on German regional holidays): the published closing days, by rule
+var HOL_NAMES = {ny: ["New Year's Day", 'Новый год'], ny2: ["Berchtold's Day", 'День святого Бертольда'], gf: ['Good Friday', 'Страстная пятница'], em: ['Easter Monday', 'Пасхальный понедельник'],
+  may1: ['Labour Day', 'День труда'], asc: ['Ascension Day', 'Вознесение'], wm: ['Whit Monday', 'Духов понедельник'], ch1: ['Swiss National Day', 'Национальный день Швейцарии'],
+  xe: ['Christmas Eve', 'Сочельник'], x1: ['Christmas Day', 'Рождество'], x2: ['Boxing Day', 'День подарков'], nye: ["New Year's Eve", 'Канун Нового года'],
+  bh_may: ['Early May bank holiday', 'Майский банковский выходной'], bh_spr: ['Spring bank holiday', 'Весенний банковский выходной'], bh_sum: ['Summer bank holiday', 'Летний банковский выходной']};
+function ruleHolidays(code, y){
+  var d2 = function(m, d){ return y + '-' + ('0' + m).slice(-2) + '-' + ('0' + d).slice(-2) };
+  var wd = function(s){ return new Date(s + 'T12:00:00Z').getUTCDay() };
+  var monday = function(m, last){ var d = new Date(Date.UTC(y, last ? m : m - 1, last ? 0 : 1)); while (d.getUTCDay() !== 1) d.setUTCDate(d.getUTCDate() + (last ? -1 : 1)); return d.toISOString().slice(0, 10) };
+  var L = [];
+  if (code === 'LSE') {   // England and Wales bank holidays, moved to a weekday when they fall on a weekend
+    var ny = d2(1, 1); while (wd(ny) === 0 || wd(ny) === 6) ny = new Date(Date.parse(ny) + 864e5).toISOString().slice(0, 10);
+    var x1 = d2(12, 25), x2 = d2(12, 26), w = wd(x1);
+    if (w === 6) { x1 = d2(12, 27); x2 = d2(12, 28) } else if (w === 0) { x1 = d2(12, 27) } else if (w === 5) { x2 = d2(12, 28) }
+    L = [[ny, 'ny'], [easter(y, -2), 'gf'], [easter(y, 1), 'em'], [monday(5), 'bh_may'], [monday(5, true), 'bh_spr'], [monday(8, true), 'bh_sum'], [x1, 'x1'], [x2, 'x2']];
+  } else {
+    L = [[d2(1, 1), 'ny'], [easter(y, -2), 'gf'], [easter(y, 1), 'em'], [d2(5, 1), 'may1'], [d2(12, 25), 'x1'], [d2(12, 26), 'x2']];
+    if (code === 'XETRA') L.push([d2(12, 24), 'xe'], [d2(12, 31), 'nye']);
+    if (code === 'SIX') L.push([d2(1, 2), 'ny2'], [easter(y, 39), 'asc'], [easter(y, 50), 'wm'], [d2(8, 1), 'ch1'], [d2(12, 24), 'xe'], [d2(12, 31), 'nye']);
+  }
+  return L.filter(function(h){ return wd(h[0]) !== 0 && wd(h[0]) !== 6 }).map(function(h){ return {date: h[0], name: HOL_NAMES[h[1]][I.ru ? 1 : 0]} })
+    .sort(function(a, b){ return a.date < b.date ? -1 : 1 });
+}
+var RULE_EX = {LSE: 1, XETRA: 1, EPA: 1, SIX: 1};
 var holCache = {};
-function holidays(cc){
+function holidays(cc, code){
   var y = new Date().getUTCFullYear();
   if (cc === 'US') return Promise.resolve(nyseHolidays(y).concat(nyseHolidays(y + 1)).map(function(h){ return {date: h[0], name: h[1]} }));
+  if (RULE_EX[code]) return Promise.resolve(ruleHolidays(code, y).concat(ruleHolidays(code, y + 1)));
   if (holCache[cc]) return holCache[cc];
   var get = function(yy){
     var url = 'https://date.nager.at/api/v3/PublicHolidays/' + yy + '/' + cc;
@@ -370,8 +409,11 @@ function holidays(cc){
     });
   };
   holCache[cc] = Promise.all([get(y), get(y + 1).catch(function(){ return [] })]).then(function(a){
-    return a[0].concat(a[1]).filter(function(h){ return !h.types || h.types.indexOf('Public') >= 0 || h.global !== false })
-      .map(function(h){ return {date: h.date, name: I.ru && h.localName && /[а-яё]/i.test(h.localName) ? h.localName : h.name} });
+    // nationwide public holidays only (regional ones, Armistice Day in a few provinces, do not close the exchange), one per date
+    var seen = {};
+    return a[0].concat(a[1]).filter(function(h){ if (h.global === false || seen[h.date]) return false; seen[h.date] = 1; return true })
+      .map(function(h){ return {date: h.date, name: I.ru && h.localName && /[а-яё]/i.test(h.localName) ? h.localName : h.name} })
+      .sort(function(x, z){ return x.date < z.date ? -1 : 1 });
   }).catch(function(e){ delete holCache[cc]; throw e });
   return holCache[cc];
 }
@@ -390,14 +432,14 @@ function exStatus(x, hol){
 function drawCdr(box){
   title('cdr_title');
   clear(box);
-  var tb = table(cols(TX('cdr_cols'), [0, 1, 4, 5]));
+  var tb = table(cols(TX('cdr_cols'), [0, 1, 4, 5])); tb.t.classList.add('cdr');
   var rows = EXCHANGES.map(function(x){
     var tr = el('tr'), s0 = exStatus(x, null);
     tr.appendChild(td(x[0], 'l tkc')); tr.appendChild(td(I.ru ? x[2] : x[1], 'l'));
     tr.appendChild(td(s0.local, 'num'));
-    var msk = x[4].map(function(s){ return toMsk(x[3], s[0]) + '–' + toMsk(x[3], s[1]) }).join(', ');
-    tr.appendChild(td(msk, 'num'));
-    var stc = el('td', 'l'), nx = el('td', 'l');
+    var msk = x[4].map(function(s){ return toMsk(x[3], s[0]) + '–' + toMsk(x[3], s[1]) }).join(' ');
+    tr.appendChild(td(msk, 'num ses'));
+    var stc = el('td', 'l'), nx = el('td', 'l hol');
     tr.appendChild(stc); tr.appendChild(nx);
     tb.body.appendChild(tr);
     var paint = function(hol){
@@ -408,7 +450,7 @@ function drawCdr(box){
       nx.textContent = next.length ? next.map(function(h){ return dmy(h.date) + ' ' + h.name }).join(' · ') : (hol ? '—' : '…');
     };
     paint(null);
-    holidays(x[5]).then(paint).catch(function(){ nx.textContent = TX('cdr_nohol') });
+    holidays(x[5], x[0]).then(paint).catch(function(){ nx.textContent = TX('cdr_nohol') });
     return tr;
   });
   box.appendChild(tb.t);
@@ -538,51 +580,48 @@ F.GC_TABS.MMR = function(box, d){
   box.appendChild(tb.t);
   box.appendChild(el('div', 'note', TX('mmr_note')));
 };
-// US Treasury securities: auctions and their results (the Treasury's Fiscal Data API — open to browsers)
+// US Treasury securities: auctions and their results. The Treasury's Fiscal Data API does not answer browsers,
+// so the bot keeps a copy (auctions.py → auctions.json): ~13 months back and the announced ones
 var srch = {type: 'Bill', q: ''};
-var FD = 'https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/od/auctions_query';
-function fdNum(x){ var v = parseFloat(x); return x == null || x === 'null' || isNaN(v) ? null : v }
 F.GC_TABS.SRCH = function(box){
   clear(box);
-  $('gc-title').textContent = TX('srch_title'); $('gc-sub').textContent = 'Treasury Fiscal Data';
+  $('gc-title').textContent = TX('srch_title'); $('gc-sub').textContent = '';
   var f = el('form', 'frm'); f.autocomplete = 'off';
   ['Bill', 'Note', 'Bond'].forEach(function(k){ var b = el('button', 'chipbtn' + (srch.type === k ? ' on' : ''), k); b.type = 'button'; b.onclick = function(){ srch.type = k; F.GC_TABS.SRCH(box) }; f.appendChild(b) });
   var inp = el('input', 't'); inp.placeholder = TX('srch_ph'); inp.value = srch.q; inp.style.width = '150px'; f.appendChild(inp);
-  f.onsubmit = function(e){ e.preventDefault(); srch.q = inp.value.trim().toUpperCase(); paint() };
-  inp.oninput = function(){ srch.q = inp.value.trim().toUpperCase(); paint() };
   box.appendChild(f);
   var out = el('div'); box.appendChild(out); F.loading(out);
-  var from = new Date(Date.now() - 400 * 864e5).toISOString().slice(0, 10);
-  var url = FD + '?filter=' + encodeURIComponent('auction_date:gte:' + from + ',security_type:eq:' + srch.type) + '&sort=-auction_date&page[size]=400';
-  var rows = null, type = srch.type, today = new Date().toISOString().slice(0, 10);
+  var rows = null, today = new Date().toISOString().slice(0, 10), recent = new Date(Date.now() - 14 * 864e5).toISOString().slice(0, 10);
   var paint = function(){
     if (!rows) return;
     clear(out);
-    var list = rows.filter(function(x){ return !srch.q || (x.cusip + ' ' + x.security_term + (x.inflation_index_security === 'Yes' ? ' TIPS' : '') + (x.floating_rate === 'Yes' ? ' FRN' : '')).toUpperCase().indexOf(srch.q) >= 0 });
+    var list = rows.filter(function(x){
+      return x.security_type === srch.type && (!srch.q || (x.cusip + ' ' + x.security_term + (x.inflation_index_security ? ' TIPS' : '') + (x.floating_rate ? ' FRN' : '')).toUpperCase().indexOf(srch.q) >= 0);
+    });
     var tb = table(cols(TX('srch_cols'), [0, 1]));
     list.slice(0, 200).forEach(function(x){
-      var tr = el('tr'), term = x.security_term + (x.inflation_index_security === 'Yes' ? ' TIPS' : '') + (x.floating_rate === 'Yes' ? ' FRN' : '') + (x.reopening === 'Yes' ? ' ' + TX('srch_reopen') : '');
+      var tr = el('tr'), term = x.security_term + (x.inflation_index_security ? ' TIPS' : '') + (x.floating_rate ? ' FRN' : '') + (x.reopening ? ' ' + TX('srch_reopen') : '');
       tr.appendChild(td(x.cusip, 'l tkc')); tr.appendChild(td(term, 'l'));
-      tr.appendChild(td(dmy(x.auction_date), 'num')); tr.appendChild(td(dmy(x.issue_date), 'num')); tr.appendChild(td(dmy(x.maturity_date), 'num'));
-      var y = fdNum(x.high_yield) != null ? fdNum(x.high_yield) : fdNum(x.high_investment_rate) != null ? fdNum(x.high_investment_rate) : fdNum(x.high_discnt_rate);
-      var soon = y == null && fdNum(x.bid_to_cover_ratio) == null && x.auction_date >= today;
-      tr.appendChild(td(y != null ? num(y, 3) + '%' : soon ? TX('srch_coming') : '—', 'num' + (soon ? ' flat' : '')));
-      tr.appendChild(td(fdNum(x.int_rate) != null ? num(fdNum(x.int_rate), 3) + '%' : '—', 'num'));
-      tr.appendChild(td(fdNum(x.bid_to_cover_ratio) != null ? num(fdNum(x.bid_to_cover_ratio), 2) : '—', 'num'));
-      tr.appendChild(td(fdNum(x.offering_amt) != null ? money(fdNum(x.offering_amt)) : '—', 'num'));
+      tr.appendChild(td(dmy(x.auction_date), 'num')); tr.appendChild(td(x.issue_date ? dmy(x.issue_date) : '—', 'num')); tr.appendChild(td(x.maturity_date ? dmy(x.maturity_date) : '—', 'num'));
+      var y = x.high_yield != null ? x.high_yield : x.high_investment_rate != null ? x.high_investment_rate : x.high_discnt_rate;
+      // no results yet: announced (ahead) or just held — the Treasury publishes the results in its data with a lag of days
+      var nores = y == null && x.bid_to_cover_ratio == null, soon = nores && x.auction_date >= today, pend = nores && !soon && x.auction_date >= recent;
+      tr.appendChild(td(y != null ? num(y, 3) + '%' : soon ? TX('srch_coming') : pend ? TX('srch_pending') : '—', 'num' + (soon || pend ? ' flat' : '')));
+      tr.appendChild(td(x.int_rate != null ? num(x.int_rate, 3) + '%' : '—', 'num'));
+      tr.appendChild(td(x.bid_to_cover_ratio != null ? num(x.bid_to_cover_ratio, 2) : '—', 'num'));
+      tr.appendChild(td(x.offering_amt != null ? money(x.offering_amt) : '—', 'num'));
       tb.body.appendChild(tr);
     });
     if (!list.length) out.appendChild(el('div', 'empty', TX('nothing'))); else out.appendChild(tb.t);
     out.appendChild(el('div', 'note', TX('srch_note')));
   };
-  fetch(url).then(function(r){ if (!r.ok) throw new Error('HTTP ' + r.status); return r.json() }).catch(function(e){
-    if (!T.api()) throw e;
-    return fetch(T.api() + '/api/geo?u=' + encodeURIComponent(url)).then(function(r){ return r.json() }).then(function(d){ if (d && d.ok === false) throw new Error(d.error); return d });
-  }).then(function(d){
-    if (srch.type !== type) return;
-    rows = (d && d.data) || [];
+  f.onsubmit = function(e){ e.preventDefault(); srch.q = inp.value.trim().toUpperCase(); paint() };
+  inp.oninput = function(){ srch.q = inp.value.trim().toUpperCase(); paint() };
+  F.page('auctions.json', 1800).then(function(d){
+    rows = (d && d.rows) || [];
+    $('gc-sub').textContent = d.updated ? TX('updated_at', T.hm(d.updated)) : '';
     paint();
-  }).catch(function(e){ F.errBox(out, e) });
+  }).catch(function(){ clear(out); out.appendChild(el('div', 'empty', TX('srch_wait'))) });
 };
 function openGcTab(tab, arg){ gcArg = arg ? String(arg).trim().toUpperCase().split(/\s+/)[0] : gcArg; if (arg && tab === 'BTMM') store('btmm_c', gcArg); F.openGc(tab) }
 
@@ -624,5 +663,5 @@ C.RELS = function(a){ F.openDes(a, 'RV') }; C.FUND = function(a){ F.openDes(a, '
 ['EM', 'PHDC', 'ISSD', 'BQ', 'RELS', 'FUND'].forEach(function(k){ T.SUFFIX[k] = 1 });
 ['BAS', 'PICK'].forEach(function(k){ C[k] = function(){ mon.na = k; mon.tab = 'NA'; F.setTab($('mon-tabs'), 't', ''); T.show('p-mon'); renderMon() } });
 
-window.MON = {open: openMon, nyseHolidays: nyseHolidays, exStatus: exStatus, EXCHANGES: EXCHANGES, TOPICS: TOPICS, state: mon};
+window.MON = {open: openMon, nyseHolidays: nyseHolidays, ruleHolidays: ruleHolidays, easter: easter, exStatus: exStatus, EXCHANGES: EXCHANGES, TOPICS: TOPICS, state: mon};
 })();

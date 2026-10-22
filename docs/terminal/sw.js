@@ -1,6 +1,6 @@
 // The terminal's service worker: needed to install it as an app and for an offline splash.
 // Quotes, news and charts are NOT cached here — they come fresh from the network (the page keeps its own last copy).
-const CACHE = 'econ-terminal-v12';
+const CACHE = 'econ-terminal-v13';
 const SHELL = ['./', './i18n.js', './fn.js', './tech.js', './mon.js', './map.js', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png'];
 
 self.addEventListener('install', e => {

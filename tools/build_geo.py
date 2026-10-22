@@ -85,6 +85,12 @@ def encode(ring):
     return out
 
 
+# shorter everyday names where Natural Earth gives the formal one (the map's labels and the ECO list)
+SHORT = {"USA": ("United States", "США"), "CHN": ("China", "Китай"), "KOR": ("South Korea", "Южная Корея"), "PRK": ("North Korea", "КНДР"),
+         "ARE": ("UAE", "ОАЭ"), "CAF": ("Central African Rep.", "ЦАР"), "COD": ("DR Congo", "ДР Конго"), "COG": ("Congo", "Конго"),
+         "DOM": ("Dominican Rep.", "Доминикана"), "CYN": ("Northern Cyprus", "Северный Кипр")}
+
+
 def countries(src):
     gj = json.load(open(os.path.join(src, "ne", "geojson", "ne_50m_admin_0_countries.geojson"), encoding="utf-8"))
     rows = []
@@ -104,9 +110,18 @@ def countries(src):
                 rings.append(encode(s))
         if not rings:
             continue
-        rows.append([iso, p.get("NAME_EN") or p["NAME"], p.get("NAME_RU") or p.get("NAME_EN") or p["NAME"],
-                     round(p.get("LABEL_X") or 0, 2), round(p.get("LABEL_Y") or 0, 2), rings])
-    rows.sort(key=lambda r: r[0])
+        en, ru = SHORT.get(iso) or (p.get("NAME_EN") or p["NAME"], p.get("NAME_RU") or p.get("NAME_EN") or p["NAME"])
+        rows.append([iso, en, ru, round(p.get("LABEL_X") or 0, 2), round(p.get("LABEL_Y") or 0, 2), rings, area(big)])
+    # one entry per code: an overseas territory under its country's code (Australia's Indian Ocean islands) joins it,
+    # and the bigger part keeps the name and the label
+    rows.sort(key=lambda r: (r[0], -r[6]))
+    merged = []
+    for r in rows:
+        if merged and merged[-1][0] == r[0]:
+            merged[-1][5] += r[5]
+        else:
+            merged.append(r)
+    rows = [r[:6] for r in merged]
     return {"q": Q, "src": "Natural Earth 1:50m (public domain)", "c": rows}
 
 

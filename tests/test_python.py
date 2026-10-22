@@ -810,6 +810,51 @@ class MapsAndMonitorsData(unittest.TestCase):
         self.assertNotIn("NGDPD", m)
 
 
+class TreasuryAuctions(unittest.TestCase):
+    def test_clean_both_sources(self):
+        import auctions
+        fd = {"cusip": "912797VA2", "security_type": "Bill", "security_term": "6-Week", "auction_date": "2026-10-20", "issue_date": "2026-10-22",
+              "maturity_date": "2026-12-03", "high_yield": "null", "high_discnt_rate": "3.885", "high_investment_rate": "3.962", "int_rate": "null",
+              "bid_to_cover_ratio": "2.91", "offering_amt": "95000000000", "reopening": "No", "inflation_index_security": "No", "floating_rate": "No"}
+        r = auctions.clean(fd)
+        self.assertEqual(r, {"cusip": "912797VA2", "security_type": "Bill", "security_term": "6-Week", "auction_date": "2026-10-20", "issue_date": "2026-10-22",
+                             "maturity_date": "2026-12-03", "high_discnt_rate": 3.885, "high_investment_rate": 3.962, "bid_to_cover_ratio": 2.91, "offering_amt": 95000000000})
+        td = {"cusip": "91282CRR4", "securityType": "Note", "securityTerm": "5-Year", "auctionDate": "2026-10-22T00:00:00", "issueDate": "2026-10-30T00:00:00",
+              "maturityDate": "2031-10-15T00:00:00", "highYield": "", "interestRate": "", "offeringAmount": "26000000000", "tips": "Yes", "floatingRate": "No"}
+        r = auctions.clean(td, auctions.TD_FIELDS)
+        self.assertEqual((r["auction_date"], r["inflation_index_security"], r["offering_amt"]), ("2026-10-22", "Yes", 26000000000))
+        self.assertNotIn("high_yield", r)
+        self.assertIsNone(auctions.clean({"cusip": "X", "security_type": "CMB", "auction_date": "2026-10-20"}))
+
+    def test_build_falls_back_and_keeps_fresh_file(self):
+        import auctions
+        calls = []
+
+        def bill(i, **kw):
+            return {"cusip": f"9127{i:05d}", "securityType": "Bill", "securityTerm": "4-Week", "auctionDate": f"2026-09-{1 + i % 28:02d}T00:00:00", **kw}
+
+        def fetch(url):
+            calls.append(url)
+            if "fiscaldata" in url:
+                raise OSError("525")
+            if "upcoming" in url:
+                return [bill(99, auctionDate="2026-10-27T00:00:00")]
+            return [bill(i, bidToCoverRatio="2.8") for i in range(30)] if "type=Bill" in url else []
+
+        with tempfile.TemporaryDirectory() as d:
+            path = os.path.join(d, "auctions.json")
+            now = datetime(2026, 10, 22, 12, tzinfo=timezone.utc)
+            self.assertEqual(auctions.build(now, path=path, fetch=fetch), 31)
+            self.assertIn("fields=cusip", calls[0])
+            with open(path, encoding="utf-8") as f:
+                out = json.load(f)
+            self.assertEqual(out["source"], "TreasuryDirect")
+            self.assertEqual(out["rows"][0]["auction_date"], "2026-10-27")   # newest first, the announced one on top
+            calls.clear()
+            self.assertEqual(auctions.build(now + timedelta(hours=2), path=path, fetch=fetch), 0)
+            self.assertEqual(calls, [])
+
+
 class GitSync(unittest.TestCase):
     """The bot's push to GitHub survives a race with other commits and a rebase that got stuck."""
 

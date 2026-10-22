@@ -669,8 +669,8 @@ await test("/api/geo: only the listed sources, JSON passed through; /api/perf: r
   assert.equal(ok.status, 200);
   assert.ok(Array.isArray(ok.json.features) && ok.json.features.length > 0);
   assert.equal(ok.headers.get("Access-Control-Allow-Origin"), "*");
-  const fd = await api("/api/geo?u=" + encodeURIComponent("https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/od/auctions_query?page[size]=5"));
-  assert.equal(fd.json.data[0].cusip, "912797QX8");
+  const hol = await api("/api/geo?u=" + encodeURIComponent("https://date.nager.at/api/v3/PublicHolidays/2026/RU"));
+  assert.ok(Array.isArray(hol.json) && hol.json.some((x) => x.date.endsWith("-11-04")), JSON.stringify(hol.json).slice(0, 200));
   for (const bad of ["https://evil.example.com/x.json", "http://earthquake.usgs.gov/x", "file:///etc/passwd", "not a url"]) {
     const r = await api("/api/geo?u=" + encodeURIComponent(bad));
     assert.equal(r.json.ok, false, bad);

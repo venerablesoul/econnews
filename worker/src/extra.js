@@ -12,7 +12,7 @@ const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
 export const GEO_HOSTS = {
   "earthquake.usgs.gov": 120, "eonet.gsfc.nasa.gov": 600, "www.gdacs.org": 600, "gdacs.org": 600,
   "services9.arcgis.com": 1800, "api.open-meteo.com": 900, "date.nager.at": 86400, "www.treasurydirect.gov": 1800,
-  "markets.newyorkfed.org": 1800, "data-api.ecb.europa.eu": 1800, "www.nhc.noaa.gov": 600, "api.fiscaldata.treasury.gov": 1800,
+  "markets.newyorkfed.org": 1800, "data-api.ecb.europa.eu": 1800, "www.nhc.noaa.gov": 600,
 };
 
 export async function geoProxy(raw) {

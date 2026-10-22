@@ -18,7 +18,7 @@ import e2e_terminal as E  # noqa: E402
 from playwright.sync_api import sync_playwright  # noqa: E402
 
 DIRECT = ("earthquake.usgs.gov", "eonet.gsfc.nasa.gov", "www.gdacs.org", "services9.arcgis.com", "api.open-meteo.com")
-VIA_SERVER = ("api.fiscaldata.treasury.gov", "date.nager.at")   # the test blocks them in the browser: the terminal must use /api/geo
+VIA_SERVER = ("date.nager.at",)   # the test blocks them in the browser: the terminal must use /api/geo
 TRADES = [{"id": 1000 + i, "price": str(81000 + i), "qty": str(round(0.01 * (i + 1), 2)), "quoteQty": "810", "time": 1792000000000 + i * 1000,
            "isBuyerMaker": i % 3 == 0} for i in range(20)]
 check = E.check
@@ -38,7 +38,7 @@ def run():
     static, sport = E.start_static()
     proc, wport = E.start_fake_worker()
     api = f"http://127.0.0.1:{wport}"
-    fx = {n: urllib.request.urlopen(f"{api}/__fx/{n}").read() for n in ("data.json", "stocks.json", "rates.json", "macro.json", "moex.json", "options.json", "wpe.json")}
+    fx = {n: urllib.request.urlopen(f"{api}/__fx/{n}").read() for n in ("data.json", "stocks.json", "rates.json", "macro.json", "moex.json", "options.json", "wpe.json", "auctions.json")}
     base = f"http://127.0.0.1:{sport}/terminal/"
     errors = []
     geo_calls = []
@@ -47,7 +47,10 @@ def run():
         def handle(route):
             url = route.request.url
             u = urllib.parse.urlparse(url)
-            if "api.binance.com/api/v3/trades" in url:
+            if "/api/v3/trades" in url:
+                # binance.com closed (as from the US): the terminal turns to Binance's market-data mirror; no feed at all for ETH
+                if u.netloc == "api.binance.com" or "ETHUSDT" in url:
+                    return route.abort()
                 return route.fulfill(status=200, content_type="application/json", headers={"Access-Control-Allow-Origin": "*"}, body=json.dumps(TRADES))
             if u.netloc in DIRECT:
                 geo_calls.append(u.netloc)
@@ -129,6 +132,9 @@ def run():
         cmd(page, "QR BTC")
         wait_text(page, "#tech-body", "Bought")
         check("QR: crypto trades from Binance", page.locator("#tech-body tbody tr").count() == 20 and "sell" in page.inner_text("#tech-body tbody"))
+        cmd(page, "QR ETH")
+        wait_text(page, "#tech-body", "does not answer from your network")
+        check("QR: no trade feed at all — the day's bars instead of an error", page.locator("#tech-body tbody tr").count() >= 10, page.inner_text("#tech-body")[:300])
         cmd(page, "QR AAPL")
         wait_text(page, "#tech-body", "no free tick-by-tick")
         check("QR: stocks — the day's bars and an honest note", page.locator("#tech-body tbody tr").count() >= 10)
@@ -188,10 +194,18 @@ def run():
         cmd(page, "FPC")
         page.wait_for_selector("#mon-body tbody tr", timeout=30000)
         check("FPC: ETFs ranked", page.locator("#mon-body tbody tr").count() >= 30, page.locator("#mon-body tbody tr").count())
+        check("FPC: each fund says what it holds", "Treasuries 20Y+" in page.inner_text("#mon-body") and "Semiconductors" in page.inner_text("#mon-body"))
         cmd(page, "CDR")
         page.wait_for_selector("#mon-body tbody tr")
         page.wait_for_function("[...document.querySelectorAll('#mon-body tbody tr')].find(r => r.textContent.includes('MOEX')).textContent.includes('Unity Day')", timeout=10000)
         cdr = page.inner_text("#mon-body")
+        moex = page.evaluate("[...document.querySelectorAll('#mon-body tbody tr')].find(r => r.textContent.includes('MOEX')).querySelector('td.hol').textContent")
+        check("CDR: the nearest holidays come first", moex.index("Unity Day") < moex.index("Christmas"), moex)
+        lse = page.evaluate("MON.ruleHolidays('LSE', 2026).map(h => h.date).join(',')")
+        check("CDR: London bank holidays 2026 (Boxing Day on a Saturday moves to Monday)",
+              lse == "2026-01-01,2026-04-03,2026-04-06,2026-05-04,2026-05-25,2026-08-31,2026-12-25,2026-12-28", lse)
+        xe = page.evaluate("[MON.easter(2027, 0), MON.ruleHolidays('XETRA', 2026).length, MON.ruleHolidays('SIX', 2026).map(h => h.date).includes('2026-05-14'), MON.ruleHolidays('EPA', 2026).some(h => h.date === '2026-07-14')]")
+        check("CDR: Easter, Xetra and SIX calendars, Euronext open on Bastille Day", xe == ["2027-03-28", 7, True, False], xe)
         check("CDR: 18 exchanges, NYSE holidays by rule, others via the server", page.locator("#mon-body tbody tr").count() == 18 and ("Thanksgiving" in cdr or "Christmas" in cdr), cdr[:500])
         shot(page, "f05_cdr")
         cmd(page, "BAS")
@@ -214,11 +228,16 @@ def run():
         check("MMR: overnight rates against policy rates", page.locator("#gc-body tbody tr").count() == 3)
         cmd(page, "SRCH")
         wait_text(page, "#gc-body", "912797QX8", 10000)
-        check("SRCH: Treasury auctions through the server", page.locator("#gc-body tbody tr").count() == 2)
+        check("SRCH: Treasury auctions from the bot's copy", page.locator("#gc-body tbody tr").count() == 2)
         check("SRCH: the investment yield and the bid-to-cover", "3.962%" in page.inner_text("#gc-body") and "2.91" in page.inner_text("#gc-body"))
         page.fill("#gc-body input.t", "26-WEEK")
         page.wait_for_timeout(200)
         check("SRCH: filter by term", page.locator("#gc-body tbody tr").count() == 1 and "912797QY6" in page.inner_text("#gc-body tbody"))
+        page.fill("#gc-body input.t", "")
+        page.click("#gc-body .chipbtn:has-text('Note')")
+        wait_text(page, "#gc-body", "91282CRR4")
+        nt = page.inner_text("#gc-body tbody")
+        check("SRCH: an announced TIPS auction", "TIPS" in nt and "announced" in nt and page.locator("#gc-body tbody tr").count() == 1, nt)
         shot(page, "f06_srch")
 
         # ---------------- news topics ----------------

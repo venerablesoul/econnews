@@ -510,13 +510,24 @@ function drawTsm(box, h){
 /* ======================= QR: time & sales ======================= */
 var qrTimer = null;
 function coinOf(sym){ var s = String(sym || '').toUpperCase().replace(/^BINANCE:/, '').replace(/USDT$/, ''); return T.COINS.some(function(c){ return c[0] === s }) ? s : null }
+// Binance's trades; its public market-data mirror answers where binance.com is closed (the US, some networks)
+function binanceTrades(coin){
+  var q = '/api/v3/trades?symbol=' + coin + 'USDT&limit=80', hosts = ['https://api.binance.com', 'https://data-api.binance.vision'];
+  var i = qrHost;
+  var go = function(k){
+    return fetch(hosts[(i + k) % 2] + q).then(function(r){ if (!r.ok) throw new Error('Binance: HTTP ' + r.status); qrHost = (i + k) % 2; return r.json() })
+      .catch(function(e){ if (k) throw e; return go(1) });
+  };
+  return go(0);
+}
+var qrHost = 0;
 function drawQr(box){
   clearTimeout(qrTimer);
   var coin = coinOf(tc.sym);
-  if (!coin) {   // stocks and indices: no free tick feed — the day's 5-minute bars instead
+  if (!coin || qrBars[coin]) {   // stocks and indices (and a coin without a trade feed): the day's 5-minute bars instead
     return load('1d').then(function(h){
       clear(box); symForm(box);
-      box.appendChild(el('div', 'note', TX('qr_bars_note')));
+      box.appendChild(el('div', 'note', TX(coin ? 'qr_nofeed_note' : 'qr_bars_note')));
       var tb = table(cols(TX('qr_bar_cols'), [0])), dgt = h.c[h.c.length - 1] >= 1000 ? 0 : 2;
       for (var i = h.c.length - 1; i >= 0 && i >= h.c.length - 120; i--) {
         var tr = el('tr'); tr.appendChild(td(tlabel(h.t[i], true), 'l')); tr.appendChild(td(fmt(h.c[i], dgt), 'num ' + (i ? cls(h.c[i] - h.c[i - 1]) : ''))); tr.appendChild(td(fmt(h.v[i] || 0, 0), 'num')); tb.body.appendChild(tr);
@@ -524,7 +535,7 @@ function drawQr(box){
       box.appendChild(tb.t);
     }).catch(function(e){ F.errBox(box, e) });
   }
-  fetch('https://api.binance.com/api/v3/trades?symbol=' + coin + 'USDT&limit=80').then(function(r){ if (!r.ok) throw new Error('Binance: HTTP ' + r.status); return r.json() }).then(function(arr){
+  binanceTrades(coin).then(function(arr){
     if (tc.tab !== 'QR' || coinOf(tc.sym) !== coin) return;
     var keep = box.scrollTop; clear(box); symForm(box);
     var buy = 0, sell = 0; arr.forEach(function(x){ if (x.isBuyerMaker) sell += +x.qty; else buy += +x.qty });
@@ -540,8 +551,12 @@ function drawQr(box){
     box.appendChild(tb.t); box.appendChild(el('div', 'note', TX('qr_note')));
     box.scrollTop = keep;
     qrTimer = setTimeout(function(){ if (tc.tab === 'QR' && F.visible('p-tech') && !document.hidden) drawQr(box) }, 4000);
-  }).catch(function(e){ F.errBox(box, e) });
+  }).catch(function(){
+    if (tc.tab !== 'QR' || coinOf(tc.sym) !== coin) return;
+    qrBars[coin] = 1; drawQr(box);   // no trade feed from here: the bars, like for stocks
+  });
 }
+var qrBars = {};
 
 /* ======================= TRA: total return with dividends ======================= */
 function drawTra(box, h){

@@ -2,14 +2,14 @@
 // Run: node tests/fake_server.mjs 8787
 import http from "node:http";
 import { PAGES, TOKEN, OWNER, KV, installMocks, dataJson, stocksJson, ratesJson, coAAPL, optAAPL, optionsJson, macroJson, moexJson, geoRoute } from "./mocks.mjs";
-import { wpeJson, ratesExtra, macroMap } from "./geo_fixtures.mjs";
+import { wpeJson, ratesExtra, macroMap, auctionsJson } from "./geo_fixtures.mjs";
 
 installMocks();
 const worker = (await import("../worker/src/index.js")).default;
 const env = { TELEGRAM_BOT_TOKEN: TOKEN, OWNER_ID: OWNER, FINNHUB_API_KEY: "FHKEY", TERMINAL_PASSWORD: "pw", PAGES_URL: PAGES, SUBS: new KV() };
 const ctx = { waitUntil() {} };
 const FX = { "data.json": dataJson, "stocks.json": stocksJson, "rates.json": ratesJson, "co/AAPL.json": coAAPL, "opt/AAPL.json": optAAPL,
-  "options.json": optionsJson, "macro.json": { ...macroJson, map: macroMap }, "moex.json": moexJson, "wpe.json": wpeJson,
+  "options.json": optionsJson, "macro.json": { ...macroJson, map: macroMap }, "moex.json": moexJson, "wpe.json": wpeJson, "auctions.json": auctionsJson,
   "rates.json": { ...ratesJson, ...ratesExtra } };
 
 const port = Number(process.argv[2] || 8787);

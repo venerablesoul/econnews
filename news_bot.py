@@ -1274,7 +1274,7 @@ def update_extras(now, dry=False):
     except Exception as e:
         print(f"  ! rates (rates.py): {type(e).__name__}: {e}"[:200])
     for mod, label in (("company", "company files"), ("options", "option chains"), ("macro", "macro"), ("moex", "MOEX"),
-                       ("ipo", "IPO"), ("wpe", "world valuations")):
+                       ("ipo", "IPO"), ("wpe", "world valuations"), ("auctions", "Treasury auctions")):
         try:
             n = __import__(mod).build(now)
             if n:
@@ -1320,7 +1320,8 @@ def load_dotenv(path):
 
 # what the bot writes: only it changes these files, so on a clash its own versions win
 DATA_PATHS = ("state.json", "docs/data.json", "docs/stocks.json", "docs/rates.json", "docs/fin", "docs/co", "docs/opt",
-              "docs/options.json", "docs/macro.json", "docs/moex.json", "docs/ipo.json", "docs/wpe.json")
+              "docs/options.json", "docs/macro.json", "docs/moex.json", "docs/ipo.json", "docs/wpe.json",
+              "docs/auctions.json")
 
 
 def git_sync(stage, repo):
