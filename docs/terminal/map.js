@@ -239,7 +239,10 @@ function gdSearch(list, days, levels){
 function isCurrent(p){ return String(p.iscurrent).toLowerCase() === 'true' }
 function loadStorms(){
   return gdSearch('TC', 20, 'Green;Orange;Red').then(function(g){
-    var pts = [], lines = [], polys = [], seen = {}, jobs = [];
+    var pts = [], lines = [], polys = [], seen = {}, jobs = [], data = {pts: pts, lines: lines, polys: polys};
+    // tracks and cones are heavy and GDACS can be slow with them: the storms show at once, each track joins when it comes
+    var addLine = function(l){ l.f = l.pts.map(function(q){ return [mx(q[0]), my(q[1])] }); lines.push(l) };
+    var addPoly = function(pg){ pg.f = pg.rings.map(function(r){ return r.map(function(q){ return [mx(q[0]), my(q[1])] }) }); polys.push(pg) };
     (g.features || []).forEach(function(f){
       var p = f.properties || {}, geo_ = f.geometry || {};
       if (p.eventtype !== 'TC' || geo_.type !== 'Point' || !isCurrent(p) || seen[p.eventid]) return;
@@ -254,13 +257,14 @@ function loadStorms(){
         (gg.features || []).forEach(function(ff){
           var q = ff.properties || {}, gt = ff.geometry || {}, cl = String(q.Class || ''), lb = String(q.polygonlabel || '');
           var each = function(t, f){ (gt.type === t ? [gt.coordinates] : gt.coordinates).forEach(f) };
-          if (/^Line_/.test(cl) && /LineString/.test(gt.type)) each('LineString', function(c){ lines.push({pts: c, c: TRACK_COL[lb] || col, w: 2}) });
-          else if (cl === 'Poly_Cones' && /Polygon/.test(gt.type)) each('Polygon', function(pg){ polys.push({rings: [pg[0]], c: '#ffffff', a: 0.07}) });
-          else if (/^Poly_(Green|Orange|Red)$/.test(cl) && /km\/h/.test(lb) && /Polygon/.test(gt.type)) each('Polygon', function(pg){ polys.push({rings: [pg[0]], c: alertCol(cl.slice(5)), a: 0.12}) });
+          if (/^Line_/.test(cl) && /LineString/.test(gt.type)) each('LineString', function(c){ addLine({pts: c, c: TRACK_COL[lb] || col, w: 2}) });
+          else if (cl === 'Poly_Cones' && /Polygon/.test(gt.type)) each('Polygon', function(pg){ addPoly({rings: [pg[0]], c: '#ffffff', a: 0.07}) });
+          else if (/^Poly_(Green|Orange|Red)$/.test(cl) && /km\/h/.test(lb) && /Polygon/.test(gt.type)) each('Polygon', function(pg){ addPoly({rings: [pg[0]], c: alertCol(cl.slice(5)), a: 0.12}) });
         });
+        if (M.data.storms === data) redraw();
       }).catch(function(){}));
     });
-    return Promise.all(jobs).then(function(){ return {pts: pts, lines: lines, polys: polys} });
+    return Promise.race([Promise.all(jobs), new Promise(function(r){ setTimeout(r, 3000) })]).then(function(){ return data });
   });
 }
 // track segments by the storm's strength then: hurricane/typhoon, tropical storm, depression
