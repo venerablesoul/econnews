@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "cf73662fe414f13a": "2026-10-19T18:55:37.809828+00:00",
-  "a7b3d0a55f893e35": "2026-10-19T18:55:37.809828+00:00",
   "3c0b366ce72dee92": "2026-10-19T19:05:37.645766+00:00",
   "afc8e91fc0054b8d": "2026-10-19T19:20:37.565564+00:00",
   "7e3c829c71c4f8e8": "2026-10-19T19:20:37.565564+00:00",
@@ -917,25 +915,11 @@
   "90e642875f228126": "2026-10-22T18:44:40.183881+00:00",
   "b6f98e8d2a15aa6f": "2026-10-22T18:44:40.183881+00:00",
   "6f756255b81d9490": "2026-10-22T18:49:40.277614+00:00",
-  "29a38bb5eab7bea9": "2026-10-22T18:54:40.177617+00:00"
+  "29a38bb5eab7bea9": "2026-10-22T18:54:40.177617+00:00",
+  "85a0ca39ae4eefd6": "2026-10-22T19:04:40.244080+00:00",
+  "d012aa564ff47e12": "2026-10-22T19:04:40.244080+00:00"
  },
  "recent": [
-  {
-   "title": "US to Make Some Dark Fleet Ships Legitimate, Wright Says",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-19/us-to-make-some-dark-fleet-ships-legitimate-wright-says-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T18:55:37.809828+00:00",
-   "title_ru": "США сделают некоторые корабли темного флота легитимными, говорит Райт",
-   "lead": "The US will turn some \"dark fleet\" oil tankers into legitimate ships that can legally carry crude, says Energy Secretary Chris Wright. He says investors will refurbish some ships and have them carry non-sanctioned oil.",
-   "lead_ru": "США превратят некоторые нефтяные танкеры «темного флота» в законные суда, которые смогут легально перевозить нефть, говорит министр энергетики Крис Райт. Он говорит, что инвесторы отремонтируют некоторые суда и заставят их перевозить несанкционированную нефть.",
-   "tags": [
-    "oil",
-    "sanctions"
-   ]
-  },
   {
    "title": "Путин подписал закон об исполнении федерального бюджета за 2025 год",
    "link": "https://www.kommersant.ru/doc/9042457",
@@ -9421,6 +9405,31 @@
    "score": 3,
    "ts": "2026-10-22T18:54:40.177617+00:00",
    "title_ru": "Скачок цен на газ ударил по штатам Среднего Запада за несколько дней до промежуточных выборов"
+  },
+  {
+   "title": "AI Spending Woes, Investors Seek Havens, France Debt Crisis",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-22/real-yield-10-22-2026-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-22T19:04:40.244080+00:00",
+   "title_ru": "Проблемы с расходами на ИИ, инвесторы ищут убежище, долговой кризис Франции",
+   "lead": "\"Bloomberg Real Yield\" highlights the market-moving news you need to know.",
+   "lead_ru": "«Bloomberg Real Yield» освещает важные новости, которые вам нужно знать.",
+   "tags": [
+    "bonds"
+   ]
+  },
+  {
+   "title": "Investors see risk from US midterms to AI trade as data center backlash builds",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPN1FMNjdldVFMRjM1VlhaMGJCSG9GR3d4TzBjRVUxRk1NYnpHZWxDU1BLNVN4Y1BxUHhrdDhCc3JDYXpiN0c1T2NGRHFRNUxRcEFFVkpadTYxX0h4QXREYWtEZjVyOVJSdkQ0NlBnS05lRVlTUzhVNTRrdGNpbGM4blFKb2NiSnktRGdERWV4R1psd3BqbTROX242TjBkbFl2RVVhenBXVDZEVks3M1FsYTZBOGhhYVRfT0s1TmZ4SXQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-22T19:04:40.244080+00:00",
+   "title_ru": "Инвесторы видят риск от промежуточных выборов в США для торговли ИИ, поскольку нарастает негативная реакция центров обработки данных"
   }
  ],
  "last_digest": "2026-10-22",
@@ -15660,7 +15669,6 @@
    "0001488168-26-000010",
    "0001493152-26-048080",
    "0000001750-26-000104",
-   "0001493152-26-048062",
    "0001193125-26-428770"
   ],
   "errors": {}
