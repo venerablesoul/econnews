@@ -918,7 +918,10 @@
   "eefc1108a18b74c6": "2026-10-22T19:45:20.192327+00:00",
   "2dea1f3e8d142760": "2026-10-22T19:50:19.590736+00:00",
   "2661e64138da9c73": "2026-10-22T20:00:19.583062+00:00",
-  "0310435821446d02": "2026-10-22T20:00:19.583062+00:00"
+  "0310435821446d02": "2026-10-22T20:00:19.583062+00:00",
+  "c6e2cd87793b1a30": "2026-10-22T20:05:19.484861+00:00",
+  "778a135d3e149c51": "2026-10-22T20:05:19.484861+00:00",
+  "5b098a8a514560c1": "2026-10-22T20:05:19.484861+00:00"
  },
  "recent": [
   {
@@ -9426,6 +9429,18 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "Regulators unveil plans to simplify Senior Manager and Certification Regime",
+   "link": "https://www.bankofengland.co.uk/news/2026/october/regulators-unveil-plans-to-simplify-senior-manager-and-certification-regime",
+   "sources": [
+    "Bank of England"
+   ],
+   "score": 4,
+   "ts": "2026-10-22T20:05:19.484861+00:00",
+   "title_ru": "Регуляторы обнародовали планы по упрощению режима сертификации старших менеджеров и сертификации",
+   "lead": "The number of financial services roles required to face enhanced checks from regulators will fall significantly under proposals that will support growth.",
+   "lead_ru": "Число должностей в сфере финансовых услуг, которые должны пройти усиленные проверки со стороны регулирующих органов, значительно сократится в соответствии с предложениями, которые будут поддерживать экономический рост."
   }
  ],
  "last_digest": "2026-10-22",
@@ -11692,6 +11707,22 @@
    },
    {
     "src": "sec",
+    "id": "5a0406e44b12a13e",
+    "ticker": "ACN",
+    "company": "Accenture plc",
+    "who": "Ryoji Sekido",
+    "role": "CEO",
+    "type": "sell",
+    "value": 1430826,
+    "shares": 5844,
+    "price": 244.84,
+    "plan": false,
+    "date": "2026-10-22",
+    "disclosed": "2026-10-22",
+    "link": "https://www.sec.gov/Archives/edgar/data/2030833/000203083326000004/0002030833-26-000004-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "dff8db13dd14cd3c",
     "ticker": "AGMB",
     "company": "AgomAb Therapeutics NV",
@@ -11740,6 +11771,22 @@
    },
    {
     "src": "sec",
+    "id": "74d99c2861dc877c",
+    "ticker": "TRV",
+    "company": "TRAVELERS COMPANIES, INC.",
+    "who": "Maria Olivo",
+    "role": "EVP, ERM & Chief Risk Officer",
+    "type": "sell",
+    "value": 6016506,
+    "shares": 15100,
+    "price": 398.44,
+    "plan": false,
+    "date": "2026-10-21",
+    "disclosed": "2026-10-22",
+    "link": "https://www.sec.gov/Archives/edgar/data/1224083/000008631226000184/0000086312-26-000184-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "9cf1724901b2e431",
     "ticker": "BROS",
     "company": "Dutch Bros Inc.",
@@ -11785,6 +11832,54 @@
     "date": "2026-10-20",
     "disclosed": "2026-10-22",
     "link": "https://www.sec.gov/Archives/edgar/data/1883154/000186658126000158/0001866581-26-000158-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "33aeae808a18ae77",
+    "ticker": "STT",
+    "company": "STATE STREET CORP",
+    "who": "Hanley Ronald P O",
+    "role": "CEO",
+    "type": "sell",
+    "value": 2395588,
+    "shares": 14554,
+    "price": 164.6,
+    "plan": true,
+    "date": "2026-10-20",
+    "disclosed": "2026-10-22",
+    "link": "https://www.sec.gov/Archives/edgar/data/1180495/000009375126000594/0000093751-26-000594-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "08fcc3162bc31772",
+    "ticker": "TRV",
+    "company": "TRAVELERS COMPANIES, INC.",
+    "who": "Michael Frederick Klein",
+    "role": "EVP & President, Personal Ins.",
+    "type": "sell",
+    "value": 2945933,
+    "shares": 7500,
+    "price": 392.79,
+    "plan": false,
+    "date": "2026-10-20",
+    "disclosed": "2026-10-22",
+    "link": "https://www.sec.gov/Archives/edgar/data/1689571/000008631226000183/0000086312-26-000183-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "b4a8d0a7e007d03d",
+    "ticker": "PCTY",
+    "company": "Paylocity Holding Corp",
+    "who": "Steven I Sarowitz",
+    "role": "Director, 10% owner",
+    "type": "sell",
+    "value": 1802346,
+    "shares": 10617,
+    "price": 169.76,
+    "plan": true,
+    "date": "2026-10-20",
+    "disclosed": "2026-10-22",
+    "link": "https://www.sec.gov/Archives/edgar/data/1597870/000159787026000019/0001597870-26-000019-index.htm"
    },
    {
     "src": "sec",
@@ -15593,54 +15688,6 @@
     "date": "2026-10-12",
     "disclosed": "2026-10-14",
     "link": "https://www.sec.gov/Archives/edgar/data/1860787/000160925326000140/0001609253-26-000140-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "d08df046027be945",
-    "ticker": "SNEX",
-    "company": "StoneX Group Inc.",
-    "who": "Maurer Mark Lowry",
-    "role": "",
-    "type": "sell",
-    "value": 3195650,
-    "shares": 52953,
-    "price": 60.35,
-    "plan": true,
-    "date": "2026-10-12",
-    "disclosed": "2026-10-14",
-    "link": "https://www.sec.gov/Archives/edgar/data/1662210/000166221026000018/0001662210-26-000018-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "4604b09b64e1671b",
-    "ticker": "CRWV",
-    "company": "CoreWeave, Inc.",
-    "who": "Nitin Agrawal",
-    "role": "CFO",
-    "type": "sell",
-    "value": 1809260,
-    "shares": 22579,
-    "price": 80.13,
-    "plan": true,
-    "date": "2026-10-12",
-    "disclosed": "2026-10-14",
-    "link": "https://www.sec.gov/Archives/edgar/data/2058038/000176962826000449/0001769628-26-000449-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "b57c33efcef37f24",
-    "ticker": "PAYS",
-    "company": "Paysign, Inc.",
-    "who": "Mark Newcomer",
-    "role": "CEO, 10% owner",
-    "type": "sell",
-    "value": 766895,
-    "shares": 50000,
-    "price": 15.34,
-    "plan": true,
-    "date": "2026-10-09",
-    "disclosed": "2026-10-14",
-    "link": "https://www.sec.gov/Archives/edgar/data/1506415/000168316826007854/0001683168-26-007854-index.htm"
    }
   ],
   "docs": {
@@ -15678,10 +15725,21 @@
   },
   "checked": "2026-10-22T19:24:40.196287+00:00",
   "sec_seen": [
-   "0001510281-26-000371",
+   "0001846069-26-000191",
+   "0001140536-26-000264",
+   "0000929638-26-003985",
+   "0001178913-26-004821",
+   "0002030833-26-000004",
+   "0001225208-26-008483",
    "0000070858-26-000495",
+   "0001193125-26-428912",
+   "0000086312-26-000183",
+   "0000929638-26-003986",
+   "0001597870-26-000019",
+   "0000093751-26-000594",
    "0001213900-26-111684",
-   "0001225208-26-008483"
+   "0001437749-26-033265",
+   "0000086312-26-000184"
   ],
   "errors": {}
  }
