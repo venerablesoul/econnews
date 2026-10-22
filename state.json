@@ -926,7 +926,8 @@
   "0f2de9cf45096e6e": "2026-10-22T20:30:20.020381+00:00",
   "9b4807e570c3cdf0": "2026-10-22T20:30:20.020381+00:00",
   "ed17e724ce351e15": "2026-10-22T20:30:20.020381+00:00",
-  "52940eff731d5e09": "2026-10-22T20:30:20.020381+00:00"
+  "52940eff731d5e09": "2026-10-22T20:30:20.020381+00:00",
+  "aae2a3aaaeb5935e": "2026-10-22T20:45:20.361854+00:00"
  },
  "recent": [
   {
@@ -9438,6 +9439,19 @@
    "title_en": "Siluanov on the budget: you need to live more economically, but without tightening your belts",
    "lead": "Вице-премьер — министр финансов Антон Силуанов встретился с фракцией «Новые люди» в Госдуме. Один из депутатов спросил его, говоря о бюджете страны, действительно ли «жить нужно экономнее».",
    "lead_en": "Deputy Prime Minister - Minister of Finance Anton Siluanov met with the New People faction in the State Duma. One of the deputies asked him, speaking about the country’s budget, whether “we really need to live more economically.”"
+  },
+  {
+   "title": "Moderna, Merck Shares Fall After Possible Melanoma Data Leak",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQSGF1R0FYdlVEamdsa29mMjBOQ2tQVXk0LWlfRmxOSXhSMTRqQnNXUDVJZVgwQ21KUGFwTVJqajFQT0w5WlZES2ZaLVQxOG85SjhDLUhtM2hJbU5jWWt2dnc2YWhPejRuc0FMOUw3TjdRU3Y2bGlYNVA2ZEQtWFpHcmJYTnpiVi1MdTJIWFpNRGRxQmlEVUFWNnRTLThDbXgwalZQaWx0NmlXV1BCazI0TG5tVDU?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T20:45:20.361854+00:00",
+   "title_ru": "Акции Moderna и Merck упали после возможной утечки данных о меланоме",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-22",
@@ -11829,6 +11843,22 @@
     "date": "2026-10-21",
     "disclosed": "2026-10-22",
     "link": "https://www.sec.gov/Archives/edgar/data/1877198/000119312526428980/0001193125-26-428980-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "fce0422c1c7394e3",
+    "ticker": "UTHR",
+    "company": "UNITED THERAPEUTICS Corp",
+    "who": "Martine A Rothblatt",
+    "role": "CEO",
+    "type": "sell",
+    "value": 5320681,
+    "shares": 9500,
+    "price": 560.07,
+    "plan": true,
+    "date": "2026-10-21",
+    "disclosed": "2026-10-22",
+    "link": "https://www.sec.gov/Archives/edgar/data/1106578/000110657826000169/0001106578-26-000169-index.htm"
    },
    {
     "src": "sec",
@@ -15669,22 +15699,6 @@
     "date": "2026-10-13",
     "disclosed": "2026-10-14",
     "link": "https://www.sec.gov/Archives/edgar/data/1870652/000119312526421998/0001193125-26-421998-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "fe432db05c7dc07a",
-    "ticker": "BMBL",
-    "company": "Bumble Inc.",
-    "who": "Blackstone Holdings Iii Gp Management L.l.c. et al.",
-    "role": "10% owner",
-    "type": "sell",
-    "value": 9789181,
-    "shares": 2763510,
-    "price": 3.54,
-    "plan": true,
-    "date": "2026-10-13",
-    "disclosed": "2026-10-14",
-    "link": "https://www.sec.gov/Archives/edgar/data/1844987/000119312526421996/0001193125-26-421996-index.htm"
    }
   ],
   "docs": {
@@ -15726,32 +15740,24 @@
    "0000821002-26-000046",
    "0001193125-26-428980",
    "0000821002-26-000045",
-   "0001177394-26-000136",
-   "0001210677-26-000050",
-   "0001227348-26-000010",
+   "0001106578-26-000169",
    "0001398344-26-018633",
    "0000070858-26-000498",
    "0001981599-26-000130",
-   "0001193125-26-428940",
    "0001193125-26-428985",
    "0001493152-26-048109",
-   "0000070858-26-000497",
-   "0001954584-26-000026",
-   "0001590714-26-000074",
+   "0002061219-26-000023",
    "0001398344-26-018631",
-   "0001214659-26-013142",
    "0000070858-26-000500",
    "0002146790-26-000023",
-   "0001482541-26-000062",
    "0001398344-26-018632",
    "0002100241-26-000005",
-   "0001510281-26-000372",
+   "0002047749-26-000006",
    "0001398344-26-018630",
-   "0001193125-26-428933",
-   "0002152531-26-000006",
-   "0001477932-26-006407",
+   "0001983992-26-000009",
+   "0001411282-26-000024",
    "0000070858-26-000499",
-   "0000875320-26-000283"
+   "0001225208-26-008484"
   ],
   "errors": {}
  }
