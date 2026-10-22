@@ -911,7 +911,11 @@
   "3fbb5875ffba5d68": "2026-10-22T15:14:40.178935+00:00",
   "4c7a1d3ba18425be": "2026-10-22T15:14:40.178935+00:00",
   "28ff9a15775d5bef": "2026-10-22T15:14:40.178935+00:00",
-  "562b510695d8b493": "2026-10-22T15:24:40.267741+00:00"
+  "562b510695d8b493": "2026-10-22T15:24:40.267741+00:00",
+  "65178232c8d976f3": "2026-10-22T15:29:40.400030+00:00",
+  "9ae53a3ccca842fc": "2026-10-22T15:29:40.400030+00:00",
+  "4eb4c94f2bfbb50e": "2026-10-22T15:29:40.400030+00:00",
+  "93268a1e0c647067": "2026-10-22T15:29:40.400030+00:00"
  },
  "recent": [
   {
@@ -9249,6 +9253,56 @@
    "tags": [
     "jobs"
    ]
+  },
+  {
+   "title": "ECB’s Panetta Says Rising Bond Yields Will Restrain Economy",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-22/ecb-s-panetta-says-rising-bond-yields-will-restrain-economy",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 7,
+   "ts": "2026-10-22T15:29:40.400030+00:00",
+   "title_ru": "Глава ЕЦБ Панетта заявил, что рост доходности облигаций будет сдерживать экономику",
+   "lead": "European Central Bank Governing Council member Fabio Panetta said the jump in bond yields will restrain the region’s economy, though isn’t critical as things stand.",
+   "lead_ru": "Член Совета управляющих Европейского центрального банка Фабио Панетта заявил, что скачок доходности облигаций будет сдерживать экономику региона, хотя при нынешних обстоятельствах это не критично.",
+   "tags": [
+    "ECB",
+    "bonds"
+   ]
+  },
+  {
+   "title": "Houthis Step Up Attacks on Saudi, Sending Oil Higher",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-22/houthis-step-up-attacks-on-saudi-sending-oil-higher-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-22T15:29:40.400030+00:00",
+   "title_ru": "Хуситы усиливают атаки на Саудовскую Аравию, вызывая рост нефти",
+   "lead": "Iran-backed Houthi rebels in Yemen step up their attacks on Saudi Arabia. Saudi Aramco had to evacuate its headquarters and the kingdom is on alert for more strikes.",
+   "lead_ru": "Поддерживаемые Ираном повстанцы-хуситы в Йемене усиливают нападения на Саудовскую Аравию. Saudi Aramco пришлось эвакуировать свою штаб-квартиру, и королевство готово к новым ударам.",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "Peru rolls out economic measures to counter El Niño impact",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNYk5Yc19PLXhaRWhTUU9sSnZacEFXWGJzb0hEN2NqZ3J3UnhWWTNtcnVfOHU3YTdvTUc4dmh6OHJiVmItVjBUSUxRNElQQnRXNW1ZUl90ajNMM2tNVndvU0NEQmwyY0hmVHdxVzlTTERPUUkwOG1EaUpFVDBMMm1xUENRMkQ0VHp3QWFLZ3hoNTB1N3gxYTd1N0loWW5qVWJFR2gzVnplVEJqZFBMZVAwTg?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T15:29:40.400030+00:00",
+   "title_ru": "Перу принимает экономические меры для противодействия воздействию Эль-Ниньо"
+  },
+  {
+   "title": "The Atlantic назвал уязвимость экономики Китая",
+   "link": "https://www.rbc.ru/economics/22/10/2026/6ada22ab3efa5d13b89b34d5",
+   "sources": [
+    "RBC"
+   ],
+   "score": 1,
+   "ts": "2026-10-22T15:29:40.400030+00:00"
   }
  ],
  "last_digest": "2026-10-21",
@@ -15405,13 +15459,13 @@
   },
   "checked": "2026-10-22T15:14:40.178935+00:00",
   "sec_seen": [
-   "0001783201-26-000006",
    "0001213900-26-111561",
    "0001213900-26-111560",
    "0001193125-26-428524",
    "0001062993-26-005478",
    "0001435109-26-000159",
    "0001746129-26-000065",
+   "0001193125-26-428562",
    "0001435109-26-000160",
    "0001062993-26-005480"
   ],
