@@ -916,7 +916,9 @@
   "66f7c02f862d4486": "2026-10-22T19:39:40.178665+00:00",
   "bee7d8316f3ed102": "2026-10-22T19:44:40.352261+00:00",
   "eefc1108a18b74c6": "2026-10-22T19:45:20.192327+00:00",
-  "2dea1f3e8d142760": "2026-10-22T19:50:19.590736+00:00"
+  "2dea1f3e8d142760": "2026-10-22T19:50:19.590736+00:00",
+  "2661e64138da9c73": "2026-10-22T20:00:19.583062+00:00",
+  "0310435821446d02": "2026-10-22T20:00:19.583062+00:00"
  },
  "recent": [
   {
@@ -9395,6 +9397,35 @@
    "tags": [
     "bonds"
    ]
+  },
+  {
+   "title": "Oil Tankers Plying the US-China Route Command $60 Million. It’s Crushing Demand.",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-22/oil-tankers-plying-the-us-china-route-command-60-million-it-s-crushing-demand",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-22T20:00:19.583062+00:00",
+   "title_ru": "Нефтяные танкеры, курсирующие по маршруту США-Китай, оцениваются в 60 миллионов долларов. Это сокрушительный спрос.",
+   "lead": "US crude oil exports to Asia are set to hit multi-year lows after the Iran war disrupted global shipping and pushed the cost to lease a tanker for the Pacific journey to a record of almost $80 million.",
+   "lead_ru": "Экспорт сырой нефти из США в Азию может достичь многолетнего минимума после того, как война с Ираном нарушила глобальное судоходство и увеличила стоимость аренды танкера для путешествия по Тихому океану до рекордных почти 80 миллионов долларов.",
+   "tags": [
+    "oil",
+    "China"
+   ]
+  },
+  {
+   "title": "US regulator is probing suspicious Iran oil trading, official says",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPem1fOEZ2aU10cDBTVHhDUXFuN3ZTU1l3ZXR4dkpMUUNCazJDMEk4V0UxT01nZ2tNckxuTllmYXhNeUlhSTQzbzg5dHN2aVNjMUpnNnU0T2FJWmNtTGZ4ZTg0UXNjRFhReHlDbThZalczOHdVZFBKLU9pVEp3YTBTS096QUdKVm4tbTdlQzJSYWQ5eGhDZ05FSjJJWFhNYkt2dHZERzg1Zmltc2xKUkd1UjBXUEpTdjNC?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T20:00:19.583062+00:00",
+   "title_ru": "Регулятор США расследует подозрительную торговлю иранской нефтью, заявил чиновник",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-22",
@@ -15648,6 +15679,7 @@
   "checked": "2026-10-22T19:24:40.196287+00:00",
   "sec_seen": [
    "0001510281-26-000371",
+   "0000070858-26-000495",
    "0001213900-26-111684",
    "0001225208-26-008483"
   ],
