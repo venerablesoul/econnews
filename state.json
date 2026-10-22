@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "fd7bef228b9c35d6": "2026-10-19T09:35:44.855402+00:00",
-  "d84177728cd18893": "2026-10-19T09:35:44.855402+00:00",
-  "155ff4df77856ec3": "2026-10-19T09:40:44.891797+00:00",
   "7aa9127a028ccf23": "2026-10-19T09:45:44.901318+00:00",
   "677c33702f2e9feb": "2026-10-19T09:50:44.885870+00:00",
   "7eb61814b5dbbcdb": "2026-10-19T10:00:44.901465+00:00",
@@ -889,47 +886,10 @@
   "b967efbdbde70cb6": "2026-10-22T09:28:36.813895+00:00",
   "a4e84f8963f794ae": "2026-10-22T09:28:36.813895+00:00",
   "70e83eef72ea2af0": "2026-10-22T09:28:36.813895+00:00",
-  "45cd2431a770f492": "2026-10-22T09:33:36.877724+00:00"
+  "45cd2431a770f492": "2026-10-22T09:33:36.877724+00:00",
+  "36a039c52f3a4275": "2026-10-22T09:43:36.818328+00:00"
  },
  "recent": [
-  {
-   "title": "South Africa’s Business Mood Steadies Despite Ongoing Iran War",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-19/south-africa-s-business-mood-steadies-despite-ongoing-iran-war",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T09:35:44.855402+00:00",
-   "title_ru": "Деловые настроения в ЮАР стабилизировались, несмотря на продолжающуюся войну с Ираном",
-   "lead": "South African business sentiment steadied in September, underpinned by high precious-metal prices and a pickup in tourism and car sales, though inflationary pressures from high oil prices remain a concern.",
-   "lead_ru": "В сентябре деловые настроения в Южной Африке стабилизировались, чему способствовали высокие цены на драгоценные металлы и рост туризма и продаж автомобилей, хотя инфляционное давление из-за высоких цен на нефть по-прежнему вызывает беспокойство.",
-   "tags": [
-    "inflation",
-    "oil"
-   ]
-  },
-  {
-   "title": "France and the U.S. share the same debt trap. Only one has a global lifeline.",
-   "link": "https://www.marketwatch.com/story/france-and-the-u-s-share-the-same-debt-trap-only-one-has-a-global-lifeline-3ae61b42?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-19T09:35:44.855402+00:00"
-  },
-  {
-   "title": "Explainer: MSCI's case against Indonesian stocks and the $65 billion fallout",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOV0hicmI2MG4yeTRybTVNaHJFSWhnS2VxY0FUUVl0YUtCVmE5NHRjdEZ1cmhYTU9iNFlScnlFb2pKT1Fra2lnLWdHTzFyUW9aZy1tM0xoVkRjckI2Nk1jUFlwbjQ0SVlMdURDUmluQmNaQTdEVDlrbDlvSUN1WVlhd1lsZ2FVVXhzTjB6Q05VYXlzZGpPajFwWjlCYjdBREtCS2VoZUQ5M0pVb2p5cDVN?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T09:40:44.891797+00:00",
-   "title_ru": "Объяснитель: дело MSCI против индонезийских акций и последствия в 65 миллиардов долларов",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "UK urges firms not to take part in E1 settlement tender or risk sanctions",
    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNeG9CWEV1Z3N0eDN1b2U5TEw4Y21TVm51OWtfUFQ4UEhyVm9jZkpLQUFraHFaajdGeEctTWtVZmlWT3pkWGtVZXR0QzJmcC1wS1paMDVBQ3FVTUdGUWZ2TlZOdmRYRUJBMFNBeml4RjgtQlhaMW9TdFJNSzRBU2RjRGI1MmRadmI0azlNTGJQQ01EU3FhWXNsX0FyQkN2OHJKcUR6ckdwMExWanJfSVNJVFdMM1ZseGRMME43QUJR?oc=5",
@@ -9014,6 +8974,22 @@
    "title_ru": "Ликвидаторы China Evergrande взыскивают 1% долговых требований через 2,5 года",
    "tags": [
     "China"
+   ]
+  },
+  {
+   "title": "Price of Physical Oil Barrels Slides Just as Crude Futures Rally",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-22/price-of-physical-oil-barrels-slides-just-as-crude-futures-rally",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-22T09:43:36.818328+00:00",
+   "title_ru": "Цена на физические баррели нефти падает так же, как и рост фьючерсов на сырую нефть",
+   "lead": "The oil market is suddenly being gripped by a divergence between futures and physical prices, something that’s playing out in two closely watched versions of Brent crude.",
+   "lead_ru": "Нефтяной рынок внезапно оказался охвачен расхождением между фьючерсными и физическими ценами, что проявляется в двух внимательно наблюдаемых версиях нефти марки Brent.",
+   "tags": [
+    "oil",
+    "markets"
    ]
   }
  ],
