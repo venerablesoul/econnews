@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "8b562c5b47e2b5b4": "2026-10-19T05:30:44.858019+00:00",
   "2bc3fea1b9410316": "2026-10-19T05:35:44.888347+00:00",
   "69afe8bb3edd9dc9": "2026-10-19T06:05:44.844086+00:00",
   "06e3a3f2dd08d738": "2026-10-19T06:10:44.914783+00:00",
@@ -870,24 +869,10 @@
   "e72007495676faed": "2026-10-22T04:47:44.978600+00:00",
   "76843d9e3f214cc0": "2026-10-22T05:17:44.980791+00:00",
   "268653d89550de05": "2026-10-22T05:22:45.028680+00:00",
-  "6ba4aaba7b67b8f3": "2026-10-22T05:27:44.985761+00:00"
+  "6ba4aaba7b67b8f3": "2026-10-22T05:27:44.985761+00:00",
+  "149fd17d22358dc0": "2026-10-22T05:32:45.008961+00:00"
  },
  "recent": [
-  {
-   "title": "Mullman: Houthi Attacks Impose Near-Term Costs on Saudi",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-19/mullman-houthi-attacks-impose-near-term-costs-on-saudi-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T05:30:44.858019+00:00",
-   "title_ru": "Маллман: атаки хуситов накладывают краткосрочные расходы на Саудовскую Аравию",
-   "lead": "Oil prices pulled back from a five-month high as traders weighed escalating tensions in the Middle East against surprisingly resilient supply.",
-   "lead_ru": "Цены на нефть отступили от пятимесячного максимума, поскольку трейдеры взвесили эскалацию напряженности на Ближнем Востоке против удивительно устойчивого предложения.",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "Heavyweight India Bank Stocks in Focus After Earnings-Packed Weekend",
    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOOF9uazJwR0UyNjRuUWlfNkxCYXRXdEhQYnpRMVc0eGdrNEdoVkMzOFZRNkhieFlNZDQtMFprNGc2TUFpVkYydDVGU0tteWhXMlhDOFBaMW1sUkFOMGt3c2hUR3BUMV8zbDNlYkxfQV9BelUtNXZfeHd0ZUFDcnVvQ0Y5THRDS2huVUdwYjRXSHBYMUpucndnT1IwUy1qX3JJUmRUTVdJSGFzOHlJcTBhTHROVG9pTnIwdEdUMA?oc=5",
@@ -8719,6 +8704,21 @@
     "oil",
     "gold",
     "markets"
+   ]
+  },
+  {
+   "title": "Woman 'scared to turn heating on' due to oil cost",
+   "link": "https://www.bbc.co.uk/news/articles/cmgel220j7nvo?at_medium=RSS&at_campaign=rss",
+   "sources": [
+    "BBC"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T05:32:45.008961+00:00",
+   "title_ru": "Женщина «боится включать отопление» из-за дороговизны нефти",
+   "lead": "Roslynn Garner-Gatley starts using a hot water bottle, bed socks and earlier bedtimes to stay warm.",
+   "lead_ru": "Рослинн Гарнер-Гатли начинает использовать грелку, носки и ложиться спать раньше, чтобы согреться.",
+   "tags": [
+    "oil"
    ]
   }
  ],
