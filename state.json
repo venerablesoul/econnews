@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "9460b49e5b01e272": "2026-10-19T08:55:44.928124+00:00",
-  "f55a65bf4ee69bf2": "2026-10-19T08:55:44.928124+00:00",
   "dbcfb59dc16afefc": "2026-10-19T09:05:44.883220+00:00",
   "371924a829d770ed": "2026-10-19T09:15:44.833506+00:00",
   "753c2e0a50b5b4b2": "2026-10-19T09:20:44.863877+00:00",
@@ -885,21 +883,11 @@
   "c068a38136a18cde": "2026-10-22T08:42:44.965791+00:00",
   "da6b40cae9e85ad7": "2026-10-22T08:47:45.039807+00:00",
   "c413aca0238a2929": "2026-10-22T08:52:45.002972+00:00",
-  "6dad0651ab2c37fa": "2026-10-22T08:52:45.002972+00:00"
+  "6dad0651ab2c37fa": "2026-10-22T08:52:45.002972+00:00",
+  "44225e5f0ed68a9d": "2026-10-22T08:58:36.826747+00:00",
+  "c523a21d7662ae73": "2026-10-22T08:58:36.826747+00:00"
  },
  "recent": [
-  {
-   "title": "Экономика Китая показала рост 4,5% в третьем квартале",
-   "link": "https://www.kommersant.ru/doc/9041879",
-   "sources": [
-    "Kommersant"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T08:55:44.928124+00:00",
-   "title_en": "China's economy grew 4.5% in the third quarter",
-   "lead": "По итогам третьего квартала экономика КНР выросла на 4,5% в годовом выражении и на 1,2% по сравнению с предыдущим кварталом. Это следует из данных Национального бюро статистики КНР.",
-   "lead_en": "At the end of the third quarter, the Chinese economy grew by 4.5% in annual terms and by 1.2% compared to the previous quarter. This follows from data from the National Bureau of Statistics of the People's Republic of China."
-  },
   {
    "title": "Kelly Clarkson’s expensive purchases: A multi-million dollar real-estate portfolio that spans the country",
    "link": "https://www.marketwatch.com/story/kelly-clarksons-expensive-purchases-a-multi-million-dollar-real-estate-portfolio-that-spans-the-country-fe1d3bc7?mod=mw_rss_topstories",
@@ -8941,6 +8929,21 @@
    ],
    "score": 2,
    "ts": "2026-10-22T08:52:45.002972+00:00"
+  },
+  {
+   "title": "Apple’s Cash Flow Machine Makes It Investors’ Favorite AI Hedge",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-22/apple-s-cash-flow-machine-makes-it-investors-favorite-ai-hedge",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T08:58:36.826747+00:00",
+   "title_ru": "Машина денежных потоков Apple делает ее любимым хеджированием искусственного интеллекта среди инвесторов",
+   "lead": "It’s become one of the most reliable trades in the stock market as sentiment toward artificial intelligence swings wildly: Whatever AI stocks do, Apple Inc. does the opposite.",
+   "lead_ru": "Эта сделка стала одной из самых надежных на фондовом рынке, поскольку отношение к искусственному интеллекту резко колеблется: что бы ни делали акции ИИ, Apple Inc. делает противоположное.",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-21",
@@ -15083,7 +15086,6 @@
   "sec_seen": [
    "0001398344-26-018550",
    "0001674510-26-000002",
-   "0001818383-26-000257",
    "0001826731-26-000012",
    "0001140361-26-040424",
    "0000950103-26-015980",
@@ -15094,6 +15096,7 @@
    "0001867888-26-000010",
    "0001193125-26-428040",
    "0001823543-26-000002",
+   "0001193125-26-428041",
    "0001140361-26-040419",
    "0000804328-26-000110",
    "0001193125-26-428121",
@@ -15125,7 +15128,7 @@
    "0001493152-26-047949",
    "0001493152-26-047950",
    "0001807136-26-000002",
-   "0001193125-26-428041",
+   "0001818383-26-000257",
    "0001402348-26-000020",
    "0001193125-26-428104"
   ],
