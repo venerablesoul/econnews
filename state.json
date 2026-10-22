@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "0b1b2b704ee2bf34": "2026-10-19T01:10:13.642727+00:00",
   "41baa953c9754c92": "2026-10-19T01:20:13.688421+00:00",
   "223c55f43fd7bc3d": "2026-10-19T01:20:13.688421+00:00",
   "3543a35d1e98399e": "2026-10-19T01:25:13.664222+00:00",
@@ -904,7 +903,9 @@
   "8de7718fc74f60ae": "2026-10-22T00:56:59.995789+00:00",
   "d67064a5f9961941": "2026-10-22T00:56:59.995789+00:00",
   "8a866a6c3718dcc0": "2026-10-22T01:02:00.009101+00:00",
-  "0bc842aab4896129": "2026-10-22T01:02:00.009101+00:00"
+  "0bc842aab4896129": "2026-10-22T01:02:00.009101+00:00",
+  "2b2186a4c3eebf8d": "2026-10-22T01:07:00.003311+00:00",
+  "9870777bf1638053": "2026-10-22T01:12:00.108306+00:00"
  },
  "recent": [
   {
@@ -8877,6 +8878,19 @@
    "title_ru": "Бум ИИ, вероятно, смягчит Азию, несмотря на проблемы с доходами",
    "lead": "Bloomberg's Mark Cranfield argues robust AI infrastructure demand will likely continue to support Asian chip makers despite near-term volatility sparked by big tech earnings. (Source: Bloomberg)",
    "lead_ru": "Марк Крэнфилд из Bloomberg утверждает, что устойчивый спрос на инфраструктуру ИИ, вероятно, продолжит поддерживать азиатских производителей чипов, несмотря на краткосрочную волатильность, вызванную большими технологическими доходами. (Источник: Bloomberg)"
+  },
+  {
+   "title": "Japan funding conditions still loose despite interest rate hikes, survey shows",
+   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPQXB1d2NtbFR5MGg3cXlMeWlOcjN0QnN4ZHRRSWloNXRsM2pzT1BoTEtpd0dvZWRONWdHbHNfZ0hWR25UTjhrMzVvbENxR0dHYXZiZGxPTlAyLXBTY09tOXZvSUtpVWQwa0d2UGdYOXg4S0Z5d0xiMEZRblJpMDE2S3l5ejhSbW54UTdoMU50WFo2MkJabWMxWTJsYV82QkYxUHFjSkNUOXFUNWtxUWU1cVlpVnUyLVpxbjJYeUhXRVN2NFVUYXhJTE5Qcko?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 8,
+   "ts": "2026-10-22T01:12:00.108306+00:00",
+   "title_ru": "Опрос показывает, что условия финансирования в Японии по-прежнему свободны, несмотря на повышение процентных ставок",
+   "tags": [
+    "rates"
+   ]
   }
  ],
  "last_digest": "2026-10-21",
