@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "413826b97fd737d6": "2026-10-19T10:41:15.500913+00:00",
-  "5dbc14cfcb2e591a": "2026-10-19T10:46:15.417314+00:00",
-  "9cf91f2a01027188": "2026-10-19T10:46:15.417314+00:00",
   "0975df5253074a26": "2026-10-19T10:51:15.413067+00:00",
   "a8bbcab898826486": "2026-10-19T10:51:15.413067+00:00",
   "c48d5c8f751f88c5": "2026-10-19T11:01:15.479588+00:00",
@@ -885,35 +882,10 @@
   "0f305d257c0519d6": "2026-10-22T10:23:36.836037+00:00",
   "7228ee66f2cfc731": "2026-10-22T10:23:36.836037+00:00",
   "27230cc576cd9ef9": "2026-10-22T10:28:36.801547+00:00",
-  "df19f4cd472b46a0": "2026-10-22T10:38:36.858091+00:00"
+  "df19f4cd472b46a0": "2026-10-22T10:38:36.858091+00:00",
+  "e50293f6e469242c": "2026-10-22T10:48:36.819348+00:00"
  },
  "recent": [
-  {
-   "title": "French Stocks and Bonds Retreat as Government Comes Under Pressure",
-   "link": "https://www.bloomberg.com/news/newsletters/2026-10-19/french-stocks-and-bonds-retreat-as-government-comes-under-pressure",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-19T10:41:15.500913+00:00",
-   "title_ru": "Французские акции и облигации снижаются, поскольку правительство оказывается под давлением",
-   "lead": "A mountain of debt and a budget deficit among the largest in the euro area mean France cannot simply increase spending to appease the public.",
-   "lead_ru": "Гора долгов и дефицит бюджета, один из крупнейших в зоне евро, означают, что Франция не может просто увеличить расходы, чтобы успокоить общественность.",
-   "tags": [
-    "bonds",
-    "markets"
-   ]
-  },
-  {
-   "title": "FTSE 100 slips as banks, miners drag",
-   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOSktyR2k0NjJYQ3VQZDQyUy13dHpIbV9MWTU1QVU4ZmNnaHRyVGxlZWdVUUoxXzFKLTVJNlhGX3hvOVoxd0JpYzVYNWhZcWVaMEVQMWE5bzdScWVhX2szZFg4aEFlUXlhRmlhUzlqSUh0dnJqaDV6aERFdWFReEZyMDNjSlA3LURlWVNMVmVR?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T10:46:15.417314+00:00",
-   "title_ru": "Индекс FTSE 100 падает, поскольку банки и горнодобывающие компании тянут его"
-  },
   {
    "title": "Mozambique courts South African investment for new gas project",
    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOcmJUN0pCUGFySWlWTzV0WlN5Z1llSnBGTVpCSnN1ZnJVTGlzQlNnZEt0Y29sdW1lRXhiZlZhZGFHME5FSG1BdXViSlBfUTNUVUM5WXBPMnJWdW9DaFhJMVZ6djEwdjZlVGhsV09PVGNONzBDYmJPUHJNaU10RlZramlsQzBpb2FGcW1LMVAtOHNTN1R6Wk1VV3BfMlpxNVdPdjNBM1AyRGE0ODQwLThJ?oc=5",
@@ -8968,6 +8940,22 @@
    "title_ru": "Инвесторам недостаточно расходов на ИИ",
    "lead": "Markets want evidence that AI investments are generating revenue.",
    "lead_ru": "Рынки хотят получить доказательства того, что инвестиции в ИИ приносят доход."
+  },
+  {
+   "title": "UGX/USD: Uganda Shilling Drops 2.5%, Erasing Gains After Rate Hike",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-22/ugx-usd-uganda-shilling-drops-2-5-erasing-gains-after-rate-hike",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-22T10:48:36.819348+00:00",
+   "title_ru": "UGX/USD: Угандийский шиллинг упал на 2,5%, сведя на нет прибыль после повышения ставки",
+   "lead": "Uganda’s shilling has erased all its gains and plunged to a record low days after a jumbo central bank rate hike and dollar sales to smoothen out currency volatility.",
+   "lead_ru": "Шиллинг Уганды свел на нет все свои доходы и упал до рекордно низкого уровня через несколько дней после резкого повышения ставок центральным банком и продажи долларов, направленной на сглаживание волатильности валюты.",
+   "tags": [
+    "rates",
+    "dollar"
+   ]
   }
  ],
  "last_digest": "2026-10-21",
@@ -15118,7 +15106,6 @@
    "0001193125-26-428272",
    "0001477932-26-006387",
    "0001193125-26-428106",
-   "0000935703-26-000120",
    "0001818383-26-000258",
    "0001778564-26-000189",
    "0000804328-26-000111",
