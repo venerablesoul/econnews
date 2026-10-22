@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "f2667329a553d227": "2026-10-19T22:46:05.176849+00:00",
   "33619b0e9322e2c3": "2026-10-19T22:56:05.204931+00:00",
   "b4070cd4f8f6bc80": "2026-10-19T22:56:05.204931+00:00",
   "e717e1eb5a82a868": "2026-10-19T23:01:05.185616+00:00",
@@ -938,19 +937,6 @@
   "6b088d149a38e48f": "2026-10-22T22:40:20.356032+00:00"
  },
  "recent": [
-  {
-   "title": "EU Retreats From Arctic Oil Ban Language in Strategy Draft",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNbGlfLWx1aXVKVGFSdFFTemRIbnhvcEQzM0xTTzBVWF9sZGJyWGVaU2Q0T1FjV2s0OXFIbFppVHl0LVFqdHh3WEpNc0xfWVBvMGw3QWttQlJyT0tUb3lNR2tCNnRWT09MenJFdl80Z1J2d01uUjhKd3dyaVhLTnhQYnVBeksyckZMYTVrY1Y1SEtjSnQ1WHZXOERHZkdQa1dyTlVjMkRnN2NyZHJGb1E?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T22:46:05.176849+00:00",
-   "title_ru": "ЕС отказывается от формулировок о запрете на арктическую нефть в проекте стратегии",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "'I'm fed up of swiping': Why singles now want to meet IRL",
    "link": "https://www.bbc.co.uk/news/articles/cj62y9dnd6pwo?at_medium=RSS&at_campaign=rss",
@@ -11953,6 +11939,38 @@
    },
    {
     "src": "sec",
+    "id": "206e63f35763c455",
+    "ticker": "XYZ",
+    "company": "Block, Inc.",
+    "who": "Anthony Mathew Eisen",
+    "role": "Director",
+    "type": "sell",
+    "value": 1406280,
+    "shares": 18000,
+    "price": 78.13,
+    "plan": true,
+    "date": "2026-10-22",
+    "disclosed": "2026-10-22",
+    "link": "https://www.sec.gov/Archives/edgar/data/1933928/000162828026066941/0001628280-26-066941-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "25e19f86b400bf1e",
+    "ticker": "SNES",
+    "company": "SenesTech, Inc.",
+    "who": "Glenbrook Capital Management",
+    "role": "10% owner",
+    "type": "buy",
+    "value": 74838,
+    "shares": 103875,
+    "price": 0.72,
+    "plan": false,
+    "date": "2026-10-22",
+    "disclosed": "2026-10-22",
+    "link": "https://www.sec.gov/Archives/edgar/data/1680378/000090266426004257/0000902664-26-004257-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "dff8db13dd14cd3c",
     "ticker": "AGMB",
     "company": "AgomAb Therapeutics NV",
@@ -12382,6 +12400,22 @@
     "date": "2026-10-20",
     "disclosed": "2026-10-22",
     "link": "https://www.sec.gov/Archives/edgar/data/1780525/000114036126040540/0001140361-26-040540-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "a7fbf03586593397",
+    "ticker": "ROIV",
+    "company": "Roivant Sciences Ltd.",
+    "who": "Eric Venker",
+    "role": "CEO",
+    "type": "sell",
+    "value": 7022668,
+    "shares": 200000,
+    "price": 35.11,
+    "plan": true,
+    "date": "2026-10-20",
+    "disclosed": "2026-10-22",
+    "link": "https://www.sec.gov/Archives/edgar/data/1801917/000163508826000116/0001635088-26-000116-index.htm"
    },
    {
     "src": "sec",
@@ -15758,54 +15792,6 @@
     "date": "2026-10-14",
     "disclosed": "2026-10-15",
     "link": "https://www.sec.gov/Archives/edgar/data/1593199/000159319926000004/0001593199-26-000004-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "c976d6d90b286a4e",
-    "ticker": "AFL",
-    "company": "AFLAC INC",
-    "who": "Japan Post Holdings Co., Ltd.",
-    "role": "10% owner",
-    "type": "sell",
-    "value": 4887764,
-    "shares": 42000,
-    "price": 116.38,
-    "plan": true,
-    "date": "2026-10-13",
-    "disclosed": "2026-10-15",
-    "link": "https://www.sec.gov/Archives/edgar/data/1783464/000110465926116015/0001104659-26-116015-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "f920bdb1c9e60ffb",
-    "ticker": "VMO",
-    "company": "Invesco Municipal Opportunity Trust",
-    "who": "Setcavage Rebecca",
-    "role": "",
-    "type": "buy",
-    "value": 25920,
-    "shares": 3000,
-    "price": 8.64,
-    "plan": false,
-    "date": "2026-10-13",
-    "disclosed": "2026-10-15",
-    "link": "https://www.sec.gov/Archives/edgar/data/1852367/000185236726000009/0001852367-26-000009-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "b35cafbb2b2971cd",
-    "ticker": "FLYW",
-    "company": "Flywire Corp",
-    "who": "David R. King",
-    "role": "See Remarks",
-    "type": "sell",
-    "value": 675838,
-    "shares": 36900,
-    "price": 18.32,
-    "plan": true,
-    "date": "2026-10-13",
-    "disclosed": "2026-10-15",
-    "link": "https://www.sec.gov/Archives/edgar/data/1862946/000162828026065995/0001628280-26-065995-index.htm"
    }
   ],
   "docs": {
@@ -15854,8 +15840,8 @@
    "0001334945-26-000005",
    "0001400954-26-000013",
    "0001930044-26-000010",
-   "0001753539-26-000149",
    "0000109563-26-000045",
+   "0001753539-26-000149",
    "0001193125-26-429124",
    "0001950180-26-000010",
    "0001993147-26-000004",
@@ -15868,15 +15854,16 @@
    "0001193125-26-429152",
    "0001213900-26-111771",
    "0000897069-26-001865",
+   "0000902664-26-004257",
    "0001510281-26-000373",
    "0001849050-26-000007",
    "0001212813-26-000005",
+   "0001628280-26-066941",
    "0001266824-26-000217",
    "0001193125-26-429133",
-   "0001242648-26-000047"
+   "0001242648-26-000047",
+   "0001635088-26-000116"
   ],
-  "errors": {
-   "sec": "TimeoutError: The read operation timed out"
-  }
+  "errors": {}
  }
 }
