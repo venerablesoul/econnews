@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "9d9d7e352dd4f913": "2026-10-19T21:41:05.272045+00:00",
   "03121b233626bc9e": "2026-10-19T21:51:05.402466+00:00",
   "4a63eb32acb6f38b": "2026-10-19T22:06:05.260300+00:00",
   "90d827b1a51e3a5f": "2026-10-19T22:21:05.213274+00:00",
@@ -929,24 +928,10 @@
   "ef347d046db2cbc2": "2026-10-22T21:35:20.451858+00:00",
   "e346d34f8f9ec5a0": "2026-10-22T21:35:20.451858+00:00",
   "f764c58c2470e157": "2026-10-22T21:40:20.336636+00:00",
-  "ed31ed3894f096bf": "2026-10-22T21:40:20.336636+00:00"
+  "ed31ed3894f096bf": "2026-10-22T21:40:20.336636+00:00",
+  "25e0d73dd496ab00": "2026-10-22T21:45:20.312230+00:00"
  },
  "recent": [
-  {
-   "title": "Credit markets have entered uncharted territory as the riskiest junk bonds send a warning to investors",
-   "link": "https://www.marketwatch.com/story/credit-markets-have-entered-uncharted-territory-as-the-riskiest-junk-bonds-send-a-warning-to-investors-816a05d5?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T21:41:05.272045+00:00",
-   "title_ru": "Кредитные рынки вступили на неизведанную территорию, поскольку самые рискованные мусорные облигации предупреждают инвесторов",
-   "lead": "Credit markets are sending unusually mixed messages to investors right now, and it’s making some people nervous.",
-   "lead_ru": "Кредитные рынки сейчас посылают инвесторам необычно смешанные сигналы, и это заставляет некоторых нервничать.",
-   "tags": [
-    "bonds"
-   ]
-  },
   {
    "title": "Ghana Plans to Ban Raw Mineral Exports by 2030, President Says",
    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPRGpwRzd0RXlRdEY4akhjXzZtZ0diNEVwWnBrT3ZVMnpFTVducUR1VnJsZ3NxNjdIOHJWRUlxamlRVHJ3NU5qZUxqZmtlZ0c1djQycE96NjMtNkl0czNoSklHTmluUGZWb2hTR01pSkdvM1d2UXNsY015Q0gtRUZILXY5ZjlHU1pLNzBiNjZrMXU1WjBtZDVQNVVUNElQaXV2dndCN2JhMHV2NHRxdFVFLVBn?oc=5",
@@ -9485,6 +9470,16 @@
    "score": 4,
    "ts": "2026-10-22T21:40:20.336636+00:00",
    "title_ru": "Центральный банк Швеции возрождает дебаты об электронной кроне на фоне роста угрозы цифрового евро и стейблкоинов"
+  },
+  {
+   "title": "Trump directs trade negotiations on wind turbine imports in executive order",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbXBnbGtXTC1kdE85WW5oRjI1dW9WU1d6RGdZLXoyRS12V0l0NXZyT21Rcnk5eERXeDhacVlpSWRDNVc2VlhoOUJyWWFvOVV3ck5oeU45eXZHQVpCaklMLTh4QXJkcXVWX192VUQ3QmNEa2VyMVdWNUtTaGlYdm1qb3pNRGtDazdsdjFQb3lISUNBNDNEWkJjUkFhLXJXcGpjWndUaVJLaDJFaHRIQk9KZQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-22T21:45:20.312230+00:00",
+   "title_ru": "Трамп руководит торговыми переговорами по импорту ветряных турбин своим указом"
   }
  ],
  "last_digest": "2026-10-22",
@@ -12228,6 +12223,22 @@
     "date": "2026-10-20",
     "disclosed": "2026-10-22",
     "link": "https://www.sec.gov/Archives/edgar/data/1837336/000183733626000050/0001837336-26-000050-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "8be5b89d962f9ffe",
+    "ticker": "AMT",
+    "company": "AMERICAN TOWER CORP /MA/",
+    "who": "Teresa Hillary Clarke",
+    "role": "Director",
+    "type": "buy",
+    "value": 63718,
+    "shares": 338,
+    "price": 188.38,
+    "plan": false,
+    "date": "2026-10-20",
+    "disclosed": "2026-10-22",
+    "link": "https://www.sec.gov/Archives/edgar/data/1875332/000105350726000151/0001053507-26-000151-index.htm"
    },
    {
     "src": "sec",
@@ -15716,22 +15727,6 @@
     "date": "2026-10-13",
     "disclosed": "2026-10-15",
     "link": "https://www.sec.gov/Archives/edgar/data/1227847/000168316826007902/0001683168-26-007902-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "bd4d046b5ecfd1a0",
-    "ticker": "P",
-    "company": "Everpure, Inc.",
-    "who": "Ajay Singh",
-    "role": "Chief Product Officer",
-    "type": "sell",
-    "value": 2835769,
-    "shares": 18267,
-    "price": 155.24,
-    "plan": false,
-    "date": "2026-10-13",
-    "disclosed": "2026-10-15",
-    "link": "https://www.sec.gov/Archives/edgar/data/1897944/000189794426000014/0001897944-26-000014-index.htm"
    }
   ],
   "docs": {
@@ -15771,10 +15766,9 @@
   "sec_seen": [
    "0001176401-26-000007",
    "0001193125-26-429125",
-   "0000891103-26-000151",
+   "0001493152-26-048144",
    "0000310354-26-000100",
    "0000891103-26-000156",
-   "0000891103-26-000153",
    "0001834046-26-000010",
    "0001895188-26-000005",
    "0001334945-26-000005",
@@ -15783,9 +15777,10 @@
    "0001950180-26-000010",
    "0000905148-26-004542",
    "0001888935-26-000028",
-   "0000891103-26-000154",
+   "0001053507-26-000151",
    "0001510281-26-000374",
    "0001837336-26-000050",
+   "0001193125-26-429152",
    "0001510281-26-000373",
    "0001849050-26-000007",
    "0001212813-26-000005",
@@ -15793,7 +15788,6 @@
    "0001193125-26-429089",
    "0001616707-26-000183",
    "0001193125-26-429133",
-   "0000891103-26-000152",
    "0000891103-26-000155"
   ],
   "errors": {}
