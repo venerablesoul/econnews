@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "371924a829d770ed": "2026-10-19T09:15:44.833506+00:00",
   "753c2e0a50b5b4b2": "2026-10-19T09:20:44.863877+00:00",
   "94d8b1d32ee6ec47": "2026-10-19T09:30:45.038128+00:00",
   "d2218855992d9f8e": "2026-10-19T09:30:45.038128+00:00",
@@ -888,7 +887,9 @@
   "5389bf2d622105a7": "2026-10-22T09:03:36.840363+00:00",
   "c08ba1f8d87ee8c8": "2026-10-22T09:03:36.840363+00:00",
   "02525cac2985b44d": "2026-10-22T09:08:36.820098+00:00",
-  "8c05c3eef0138a03": "2026-10-22T09:08:36.820098+00:00"
+  "8c05c3eef0138a03": "2026-10-22T09:08:36.820098+00:00",
+  "eb45cbfa4760b820": "2026-10-22T09:18:36.866981+00:00",
+  "552f6a9cc616f445": "2026-10-22T09:18:36.866981+00:00"
  },
  "recent": [
   {
@@ -8988,6 +8989,33 @@
    ],
    "score": 1,
    "ts": "2026-10-22T09:08:36.820098+00:00"
+  },
+  {
+   "title": "MSCI’s Downgrade Warning Whipsaws Indonesian Markets. What’s Next?: Live Q&A",
+   "link": "https://www.bloomberg.com/sessions/2026-10-22/live-q-amp-a-msci-s-double-downgrade-warning-whipsaws-indonesian-markets-what-s-next",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-22T09:18:36.866981+00:00",
+   "title_ru": "Предупреждение MSCI о понижении рейтинга резко подрывает индонезийские рынки. Что дальше?: вопросы и ответы в прямом эфире",
+   "lead": "Bloomberg reporters answer your questions about the challenges Southeast Asia's biggest economy faces on Oct. 23 at 11 a.m. HKT",
+   "lead_ru": "Репортеры Bloomberg ответят на ваши вопросы о проблемах, с которыми сталкивается крупнейшая экономика Юго-Восточной Азии 23 октября в 11:00 по Гонконгскому времени."
+  },
+  {
+   "title": "Bruising Day for Stocks as Havens Rally: Market Analysis",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-22/bruising-day-for-stocks-as-havens-rally-3-minutes-mliv-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-22T09:18:36.866981+00:00",
+   "title_ru": "День синяков для акций как ралли гаваней: анализ рынка",
+   "lead": "Anna Edwards, Guy Johnson, and Paul Dobson break down today's key themes for analysts and investors on \"Bloomberg: The Opening Trade.\" (Source: Bloomberg)",
+   "lead_ru": "Анна Эдвардс, Гай Джонсон и Пол Добсон раскрывают ключевые темы сегодняшнего дня для аналитиков и инвесторов в программе «Bloomberg: The Opening Trade». (Источник: Блумберг)",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-21",
