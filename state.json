@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "19f8efd8103f1cf3": "2026-10-19T18:05:37.945799+00:00",
   "4da50f7099735cf5": "2026-10-19T18:20:37.608818+00:00",
   "96a620ab29368b9b": "2026-10-19T18:30:37.563984+00:00",
   "90e642875f228126": "2026-10-19T18:35:37.926782+00:00",
@@ -915,19 +914,11 @@
   "c756aa60e94d8a51": "2026-10-22T17:59:40.172740+00:00",
   "cdea6c71e0280959": "2026-10-22T17:59:40.172740+00:00",
   "1626fc46d3aea473": "2026-10-22T18:04:40.176159+00:00",
-  "402e83ee1c281234": "2026-10-22T18:04:40.176159+00:00"
+  "402e83ee1c281234": "2026-10-22T18:04:40.176159+00:00",
+  "176f6fccfdf0952f": "2026-10-22T18:14:40.201196+00:00",
+  "d9eb8f52e579f9b0": "2026-10-22T18:14:40.201196+00:00"
  },
  "recent": [
-  {
-   "title": "Europe EV sales rose 70% in September, around 30% of market share",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQZ0ctREhXOHRCbnByZlQ4RDNoM051bnJjZzZFSzczeEdGWmFHQXpyV1FLM1dMWGNyQnI1b19XbmJENmQxWUtvdWN2NXlGX09xc3RxVWUxWVlaLVl6dVJqM3lMcWwteUROMnhsZUEzaHZxOTF4RldpZ1RsYTBrRjhNeGI0WUo5MTdaN2taeVR5T2JzSmluejd2aTVJVktpUl8tWXVJ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T18:05:37.945799+00:00",
-   "title_ru": "Продажи электромобилей в Европе выросли на 70% в сентябре, что составляет около 30% доли рынка."
-  },
   {
    "title": "Top hyperscalers likely to have more AI-linked debt than now known, S&P Global warns",
    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOR0R4ajM1WGNGNnB0Sms4Uy1aWV8teXNzd0Z5YlllYzE1NlRvSm9oX01Ic1p2SmFDOE5mcmZtSEMtRmh4bU9xZGYyME5NMUdwdmY4cWIwWjU2RXMwUFVmek40YjVSd1E0dElQSmRpSVhNNkJaQndZRnZ4NzZqUWxNbmdxdE9vZTcyUXhKN2trMWVGejRXZldCcWVyTDRBWXJlMXFsRjVDMFZJSGR3N0xIMXVpenZfMHdvcjB4SzlSN3p0UQ?oc=5",
@@ -9404,6 +9395,29 @@
    "score": 3,
    "ts": "2026-10-22T18:04:40.176159+00:00",
    "title_ru": "Центральный банк Парагвая находится под давлением из-за кредитора с политическими связями"
+  },
+  {
+   "title": "Oil Firm Pitches Exemption to Canada’s Thorny BC Tanker Ban",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZ01Tb0xHWGpRdEU3TFpfbGVibjdWS2MzZzNDWmJQTV85N0VaampxT0ROMVB0ZERGVE53SW5qLWM5aHpuUkRoT1FTUTMzUmtVLW9nc1UxUUNuYTUwZU5uVzBtbE5wSXM0dDdRaXB1OHdoN0ppbzhvNHA0azZDTGtsd0ZOVVYtN09kOWRJTVlLMjV6a2U3QVhSQ1VkNEhkNl9DbHc3R1hXekZtNjQ3WlJNNUlaUEdZZw?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T18:14:40.201196+00:00",
+   "title_ru": "Нефтяная компания предлагает освобождение от сурового запрета на танкеры в Британской Колумбии",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "European corporate earnings set to get a boost from energy windfall",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQVUJnTGN1WFJubWJyWFhuRThRRzhEMVZTTUpkaGJ1RGp6a3BfWHpSVkRNa2VvdFNNUFpvUU5YbGdOaVR6SUpKbi1vdG05b0MxQk5OamlhOEpvSmo5ZU4zdjF6UGZrSXNtWVAxRkxRV2w5WEU0R1c5MmpVLWFNUWZwSFFSZlNla0pnN0hkSDhTMDZpcWlHWDVzcXRudVpRVjZFajJ6Yw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T18:14:40.201196+00:00",
+   "title_ru": "Прибыль европейских корпораций увеличится за счет непредвиденных доходов от энергетики"
   }
  ],
  "last_digest": "2026-10-22",
@@ -9455,7 +9469,7 @@
   "2026-10-22-21"
  ],
  "calendar": {
-  "fetched": "2026-10-22T12:13:36.829690+00:00",
+  "fetched": "2026-10-22T18:14:40.201196+00:00",
   "events": [
    {
     "title": "IMF Meetings",
@@ -9898,36 +9912,36 @@
     "previous": "-9"
    },
    {
-    "title": "IPPI m/m",
-    "country": "CAD",
-    "ts": "2026-10-22T12:30:00+00:00",
-    "impact": "Low",
-    "forecast": "0.9%",
-    "previous": "1.3%"
-   },
-   {
-    "title": "NHPI m/m",
-    "country": "CAD",
-    "ts": "2026-10-22T12:30:00+00:00",
-    "impact": "Low",
-    "forecast": "-0.1%",
-    "previous": "-0.1%"
-   },
-   {
-    "title": "RMPI m/m",
-    "country": "CAD",
-    "ts": "2026-10-22T12:30:00+00:00",
-    "impact": "Low",
-    "forecast": "3.1%",
-    "previous": "3.1%"
-   },
-   {
     "title": "Unemployment Claims",
     "country": "USD",
     "ts": "2026-10-22T12:30:00+00:00",
     "impact": "Medium",
     "forecast": "200K",
     "previous": "199K"
+   },
+   {
+    "title": "IPPI m/m",
+    "country": "CAD",
+    "ts": "2026-10-22T12:38:00+00:00",
+    "impact": "Low",
+    "forecast": "0.9%",
+    "previous": "1.3%"
+   },
+   {
+    "title": "RMPI m/m",
+    "country": "CAD",
+    "ts": "2026-10-22T12:38:00+00:00",
+    "impact": "Low",
+    "forecast": "3.1%",
+    "previous": "3.1%"
+   },
+   {
+    "title": "NHPI m/m",
+    "country": "CAD",
+    "ts": "2026-10-22T13:55:00+00:00",
+    "impact": "Low",
+    "forecast": "-0.1%",
+    "previous": "-0.1%"
    },
    {
     "title": "Consumer Confidence",
