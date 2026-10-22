@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "937696a3c2816312": "2026-10-19T14:16:15.528073+00:00",
   "066f0dacf8dda5d8": "2026-10-19T14:21:15.458886+00:00",
   "9ebd6797e7adaa5e": "2026-10-19T14:36:15.480554+00:00",
   "7a60389f377159e7": "2026-10-19T14:36:15.480554+00:00",
@@ -901,24 +900,10 @@
   "2dcb65a6f4bf13fc": "2026-10-22T14:08:36.852884+00:00",
   "96458f4d4f65ea46": "2026-10-22T14:13:36.869768+00:00",
   "5828cd349d1addba": "2026-10-22T14:13:36.869768+00:00",
-  "a5ba2f0077d6b4ae": "2026-10-22T14:13:36.869768+00:00"
+  "a5ba2f0077d6b4ae": "2026-10-22T14:13:36.869768+00:00",
+  "fc3b187fc13cfae3": "2026-10-22T14:18:36.912486+00:00"
  },
  "recent": [
-  {
-   "title": "Hassett Says CPI Data Shows Inflation Needs ‘Some Work’",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-19/hassett-says-cpi-data-shows-inflation-needs-some-work",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 8,
-   "ts": "2026-10-19T14:16:15.528073+00:00",
-   "title_ru": "Хассетт говорит, что данные ИПЦ показывают, что инфляция нуждается в «некоторой работе»",
-   "lead": "White House National Economic Council Director Kevin Hassett said prices have been falling for items such as beef and eggs, though consumer price data for September shows overall inflation continues to need policy attention.",
-   "lead_ru": "Директор Национального экономического совета Белого дома Кевин Хассетт заявил, что цены на такие товары, как говядина и яйца, падают, хотя данные о потребительских ценах за сентябрь показывают, что общая инфляция по-прежнему требует политического внимания.",
-   "tags": [
-    "inflation"
-   ]
-  },
   {
    "title": "How Will AI Affect Jobs? The UK Finance Industry Is Showing Us",
    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNMzd5NWdlcEpuVzlCVGRIQkJSUkRZTTZ2OHNUX0NtSlUxY0R6TWY1ZFh1ZFkyT0FtZFJobEJzME42ajJBX1ZsSk1Vb3dGcV93Nnplb0JFR2ZuUXhTaTZ3VzNKUngzRl93a3gzMXhvd2lLazZjNUo5aDEzREx5YVkxd3pMUDBhOUQ0bFZ3RG85QnRSRUlsNVBvNTcxZVo3V2pvOGZLaDBVTUpZUE40czRr?oc=5",
@@ -9164,6 +9149,22 @@
    ],
    "score": 1,
    "ts": "2026-10-22T14:13:36.869768+00:00"
+  },
+  {
+   "title": "ECB on course for another rate rise in 2026",
+   "link": "https://www.ft.com/content/93852564-cae6-41f6-aa79-8db53e2b7774",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 4,
+   "ts": "2026-10-22T14:18:36.912486+00:00",
+   "title_ru": "ЕЦБ готовится к очередному повышению ставок в 2026 году",
+   "lead": "Read the October scenario by the FT’s Monetary Policy Radar team",
+   "lead_ru": "Прочтите октябрьский сценарий команды радара денежно-кредитной политики FT.",
+   "tags": [
+    "ECB",
+    "rates"
+   ]
   }
  ],
  "last_digest": "2026-10-21",
@@ -15321,20 +15322,19 @@
   "checked": "2026-10-22T14:13:36.869768+00:00",
   "sec_seen": [
    "0001628280-26-066801",
-   "0001628280-26-066802",
    "0001628280-26-066810",
+   "0001628280-26-066802",
    "0001487630-26-000020",
    "0001628280-26-066808",
-   "0001435109-26-000158",
    "0001628280-26-066805",
    "0002030833-26-000003",
    "0001628280-26-066809",
    "0001783201-26-000006",
    "0001299077-26-000004",
+   "0001628280-26-066806",
    "0001628280-26-066804",
-   "0001455134-26-000022",
    "0001746129-26-000065",
-   "0001628280-26-066806"
+   "0001435109-26-000158"
   ],
   "errors": {}
  }
