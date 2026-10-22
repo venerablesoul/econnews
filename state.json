@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "fb5309b4254af486": "2026-10-19T15:50:37.619514+00:00",
-  "10ca7f1923821c0b": "2026-10-19T15:50:37.619514+00:00",
-  "c8d81ad93dce6bc5": "2026-10-19T15:55:37.628888+00:00",
-  "8f5de7de7fb1adac": "2026-10-19T15:55:37.628888+00:00",
-  "2b7717bcdd8df7b0": "2026-10-19T15:55:37.628888+00:00",
   "c610c3560e4ec72c": "2026-10-19T16:00:37.822441+00:00",
   "ed17e724ce351e15": "2026-10-19T16:00:37.822441+00:00",
   "d82838bd055dadfb": "2026-10-19T16:10:37.568874+00:00",
@@ -917,34 +912,10 @@
   "22333262d4ae34c0": "2026-10-22T15:39:40.207590+00:00",
   "96648df819a08af0": "2026-10-22T15:44:40.191128+00:00",
   "667860d705259b87": "2026-10-22T15:49:40.194664+00:00",
-  "0ba552da787649f4": "2026-10-22T15:49:40.194664+00:00"
+  "0ba552da787649f4": "2026-10-22T15:49:40.194664+00:00",
+  "fb5309b4254af486": "2026-10-22T15:59:40.363028+00:00"
  },
  "recent": [
-  {
-   "title": "В Минфине исключили снижение допдоходов бюджета России из-за налоговых поправок",
-   "link": "https://www.kommersant.ru/doc/9042308",
-   "sources": [
-    "Kommersant"
-   ],
-   "score": 4,
-   "ts": "2026-10-19T15:55:37.628888+00:00",
-   "title_en": "The Ministry of Finance ruled out a reduction in additional revenues to the Russian budget due to tax amendments",
-   "lead": "Изменения по налогам в бюджетном пакете на 2027-2029 годы, которые приведут к снижению ожидаемых дополнительных доходов, маловероятны. Об этом заявил замминистра финансов России Алексей Сазанов.",
-   "lead_en": "Tax changes in the 2027-2029 budget package that would reduce expected additional revenues are unlikely. This was stated by Deputy Minister of Finance of Russia Alexey Sazanov.",
-   "tags": [
-    "Russia"
-   ]
-  },
-  {
-   "title": "Canadian firms' outlooks dimmed after trade talks collapse, BoC survey finds",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQMWtzWXNRTENad3R3N0lmMHZZWTZFeGVCRy1ZOG9lNlZwQ2ZfdUZvTENINXo3bVI1NDRRTTJsQUhKYU9YUUVaVV93dUlTTW1jcTB3NUlkakVxV3hJTWRCc1hyNzR2aDlSZ3p6cVBmWDE0TC1TcVROTlNpd1hoajgzT01CNm53YmlPRzlUeE1LNTRaUkhHUEdES2Fmb2hIWG5rSE02WnRabnh3cTA4RHlQR3V0UElsbzNFLTNJ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T15:55:37.628888+00:00",
-   "title_ru": "Перспективы канадских компаний ухудшились после провала торговых переговоров, показало исследование Банка Канады"
-  },
   {
    "title": "Stocks Rise as Tech Rebounds",
    "link": "https://www.bloomberg.com/news/videos/2026-10-19/bloomberg-surveillance-10-19-2026-video",
@@ -15458,12 +15429,8 @@
   },
   "checked": "2026-10-22T15:14:40.178935+00:00",
   "sec_seen": [
-   "0001213900-26-111561",
-   "0001213900-26-111560",
    "0001193125-26-428524",
-   "0001193125-26-428562",
-   "0001435109-26-000160",
-   "0001062993-26-005480"
+   "0001193125-26-428562"
   ],
   "errors": {}
  }
