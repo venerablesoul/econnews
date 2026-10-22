@@ -908,7 +908,11 @@
   "2e11f75ddfc96f39": "2026-10-22T15:04:40.206912+00:00",
   "78ce690271973d1a": "2026-10-22T15:09:40.346959+00:00",
   "247a4a4ca24be61a": "2026-10-22T15:09:40.346959+00:00",
-  "24170f360c90c1d5": "2026-10-22T15:09:40.346959+00:00"
+  "24170f360c90c1d5": "2026-10-22T15:09:40.346959+00:00",
+  "da69ab0af8c5056f": "2026-10-22T15:14:40.178935+00:00",
+  "3fbb5875ffba5d68": "2026-10-22T15:14:40.178935+00:00",
+  "4c7a1d3ba18425be": "2026-10-22T15:14:40.178935+00:00",
+  "28ff9a15775d5bef": "2026-10-22T15:14:40.178935+00:00"
  },
  "recent": [
   {
@@ -9203,6 +9207,54 @@
    "score": 3,
    "ts": "2026-10-22T15:09:40.346959+00:00",
    "title_ru": "Центробанк Ирландии оштрафовал подразделение Coinbase на 3,25 миллиона евро"
+  },
+  {
+   "title": "Retirement Longevity Risk a Top Factor for Investors",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-22/retirement-longevity-risk-a-top-factor-for-investors-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T15:14:40.178935+00:00",
+   "title_ru": "Риск пенсионного долголетия — главный фактор для инвесторов",
+   "lead": "Many older Americans do not feel comfortable spending money on pleasure due to fear of outliving their savings.",
+   "lead_ru": "Многие пожилые американцы не чувствуют себя комфортно тратить деньги на удовольствия из-за страха пережить свои сбережения."
+  },
+  {
+   "title": "‘Paralyzed’ US IPO Market Asks If There’s Life After Anthropic",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-22/-paralyzed-us-ipo-market-asks-if-there-s-life-after-anthropic",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T15:14:40.178935+00:00",
+   "title_ru": "«Парализованный» рынок IPO США задается вопросом, есть ли жизнь после антропной",
+   "lead": "The debate over artificial intelligence is keeping IPOs stuck on the launching pad, and with the shadow of Anthropic PBC’s market debut looming larger by the day, billions of dollars of capital and months of preparations are…",
+   "lead_ru": "Дебаты по поводу искусственного интеллекта удерживают IPO на стартовой площадке, а тень рыночного дебюта Anthropic PBC с каждым днем ​​становится все больше, миллиарды долларов капитала и месяцы подготовки…",
+   "tags": [
+    "dollar"
+   ]
+  },
+  {
+   "title": "Partners’ EyeCare Set to Close Deal to Repay Debt at Discount",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-22/partners-eyecare-set-to-close-deal-to-repay-debt-at-discount",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T15:14:40.178935+00:00",
+   "title_ru": "Partners’ EyeCare намерена закрыть сделку по погашению долга со скидкой",
+   "lead": "EyeCare Partners is set to close a deal with its creditors this week to sell assets and repay its debt at a discount, according to people familiar with the matter.",
+   "lead_ru": "По словам людей, знакомых с ситуацией, EyeCare Partners собирается на этой неделе заключить сделку со своими кредиторами о продаже активов и погашении долга со скидкой."
+  },
+  {
+   "title": "Investors’ recent money moves show a preference for quality over momentum within the S&P 500",
+   "link": "https://www.marketwatch.com/story/investors-recent-money-moves-show-a-preference-for-quality-over-momentum-within-the-s-p-500-ed6b5149?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 2,
+   "ts": "2026-10-22T15:14:40.178935+00:00"
   }
  ],
  "last_digest": "2026-10-21",
@@ -15357,19 +15409,16 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-22T14:13:36.869768+00:00",
+  "checked": "2026-10-22T15:14:40.178935+00:00",
   "sec_seen": [
    "0001783201-26-000006",
    "0001213900-26-111561",
-   "0001435109-26-000158",
+   "0001435109-26-000160",
    "0001213900-26-111560",
    "0001193125-26-428524",
-   "0001628280-26-066810",
    "0001062993-26-005478",
-   "0001628280-26-066809",
    "0001435109-26-000159",
    "0001746129-26-000065",
-   "0001435109-26-000160",
    "0001062993-26-005480"
   ],
   "errors": {}
