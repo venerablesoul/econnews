@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "a362288c218b5dee": "2026-10-19T03:15:13.715784+00:00",
-  "222a05033e073f2f": "2026-10-19T03:15:13.715784+00:00",
-  "ccf53b24bbf2ceec": "2026-10-19T03:20:13.643743+00:00",
-  "37509b87afa524d0": "2026-10-19T03:20:13.643743+00:00",
-  "58d06c2965cbfe1e": "2026-10-19T03:20:13.643743+00:00",
   "91d52632bc9af552": "2026-10-19T03:25:13.665592+00:00",
   "756dacd6ed0ce12f": "2026-10-19T03:35:13.676099+00:00",
   "81f96c10c8218294": "2026-10-19T03:40:13.685867+00:00",
@@ -888,47 +883,11 @@
   "4a40abb6f1c0051e": "2026-10-22T02:56:59.987396+00:00",
   "ca7508941492ad65": "2026-10-22T03:06:59.947539+00:00",
   "2982e250b1e9a762": "2026-10-22T03:06:59.947539+00:00",
-  "50b4ed3837a418af": "2026-10-22T03:12:00.115747+00:00"
+  "50b4ed3837a418af": "2026-10-22T03:12:00.115747+00:00",
+  "c6ea679dd8debddf": "2026-10-22T03:16:59.981271+00:00",
+  "a362288c218b5dee": "2026-10-22T03:21:59.941057+00:00"
  },
  "recent": [
-  {
-   "title": "Ampol shares slump as maintenance work overshadows strong refining margins",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNV0Rpb0dacldSOUZ3TG11d3VadnByc1JiamhHd1RwOUFNSTd6V29yN1FSVWtnaF9DT0V6VTFFOUFYQ2ZhZ0VsamgzVUZpQnZmbGlWWWdCc09lb1RDZ0stRU1VQzZuS3QzZjlGd3ducF9WclB0cndFYzBKcTdnRVZkYU5aZHBVZExDSmtQVEVXSWJ3N3hjNGNvT1NYR0N3VDAwWjVjaTdTS0NUaWt3WERoQ19NWTMxSlZnTFNFekVXeE0?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T03:15:13.715784+00:00",
-   "title_ru": "Падение акций Ampol, поскольку работы по техническому обслуживанию затмевают сильную маржу нефтепереработки",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "Gold edges higher on softer oil; Fed rate outlook in focus",
-   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOcHBoaXFtRmhELVpxR3BOYzNDX3IzS1Y1UHZaZUlWRnBiY0Y3WWxwa19vSlVRUENyTGtpZVJFSEFSLW9hVWhEaktYRTVhVWpObTFOYThBVXNRX19VY0phaUJjSkdSMjFZQ19FUFZGMm44UnNpZkZGSnNCeUc2SFZ4c1ZZUU9lV2tiUk1odm44Wmc2WGVjSG5pYUU3QnE2NGYx?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-19T03:20:13.643743+00:00",
-   "title_ru": "Золото растет на фоне более мягкой нефти; прогноз ставки ФРС в фокусе",
-   "tags": [
-    "Fed",
-    "oil",
-    "gold"
-   ]
-  },
-  {
-   "title": "How is Labor Demand Changing as AI Improves? New Global Evidence",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQMlV6UEEzZVFUTU5JRUdTMk5uS19sYW1XTDIzbDRKVG5NTEFJNXhkWV9NS3BkRXhZRHExajB6OVRCOU5lWjd1dUNjU0ZwbjJCT3g3WkFtem0wcnZMblpzWVk3VEc4aHdrOGZfTUpwaEJibnM3Nl9tWlljX2ZHR3JDejdnbFlZTFY2dnBDQW8wMGMzUXFpc2paS1RpOUoxemdhaWdHN1FLVnZYZHVmZmtESWdIM3BkRWpnLUUzakJmZWZiLXRrMnc?oc=5",
-   "sources": [
-    "IMF"
-   ],
-   "score": 4,
-   "ts": "2026-10-19T03:20:13.643743+00:00",
-   "title_ru": "Как меняется спрос на рабочую силу по мере совершенствования ИИ? Новые глобальные данные"
-  },
   {
    "title": "China State Funds Active as Stocks Post Record Weekly Losing Run",
    "link": "https://www.bloomberg.com/news/articles/2026-10-19/china-state-funds-active-as-stocks-post-record-weekly-losing-run",
@@ -8788,6 +8747,25 @@
     "markets",
     "China"
    ]
+  },
+  {
+   "title": "My father-in-law, 81, sold his $75,000 home and paid off his daughter’s $50,000 debt. What happens to him now?",
+   "link": "https://www.marketwatch.com/story/my-father-in-law-81-sold-his-75-000-home-and-paid-off-his-daughters-50-000-debt-what-happens-to-him-now-60e8fc72?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-22T03:16:59.981271+00:00"
+  },
+  {
+   "title": "- International Monetary Fund | IMF",
+   "link": "https://news.google.com/rss/articles/CBMiNEFVX3lxTE5mZDc5ODQxVWpwSF85dzZ4NS1VR05iSVZUU2txQUJQZ2d6d2IzUExaaFhqY2M?oc=5",
+   "sources": [
+    "IMF"
+   ],
+   "score": 5,
+   "ts": "2026-10-22T03:21:59.941057+00:00",
+   "title_ru": "- Международный валютный фонд | МВФ"
   }
  ],
  "last_digest": "2026-10-21",
