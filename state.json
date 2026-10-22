@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "7eb61814b5dbbcdb": "2026-10-19T10:00:44.901465+00:00",
-  "547445ef252d6722": "2026-10-19T10:00:44.901465+00:00",
-  "9210a42d6fd0516e": "2026-10-19T10:00:44.901465+00:00",
   "b49076ebce3e983e": "2026-10-19T10:05:44.860512+00:00",
   "aa77ad06061041b6": "2026-10-19T10:06:17.864340+00:00",
   "45091ee9816d2e17": "2026-10-19T10:06:17.864340+00:00",
@@ -890,44 +887,12 @@
   "548cc147187795df": "2026-10-22T09:48:36.815889+00:00",
   "7d53c7fea30ceb13": "2026-10-22T09:48:36.815889+00:00",
   "08fb06f1269f0558": "2026-10-22T09:53:36.859705+00:00",
-  "b48308c6c34aa310": "2026-10-22T09:53:36.859705+00:00"
+  "b48308c6c34aa310": "2026-10-22T09:53:36.859705+00:00",
+  "81f96c10c8218294": "2026-10-22T09:58:36.880177+00:00",
+  "9f3ca0cdb64cdb3c": "2026-10-22T09:58:36.880177+00:00",
+  "491791710e3c787f": "2026-10-22T10:03:36.798521+00:00"
  },
  "recent": [
-  {
-   "title": "UK urges firms not to take part in E1 settlement tender or risk sanctions",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNeG9CWEV1Z3N0eDN1b2U5TEw4Y21TVm51OWtfUFQ4UEhyVm9jZkpLQUFraHFaajdGeEctTWtVZmlWT3pkWGtVZXR0QzJmcC1wS1paMDVBQ3FVTUdGUWZ2TlZOdmRYRUJBMFNBeml4RjgtQlhaMW9TdFJNSzRBU2RjRGI1MmRadmI0azlNTGJQQ01EU3FhWXNsX0FyQkN2OHJKcUR6ckdwMExWanJfSVNJVFdMM1ZseGRMME43QUJR?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-19T10:00:44.901465+00:00",
-   "title_ru": "Великобритания призывает фирмы не принимать участие в тендерах по урегулированию E1 или рисковать санкциями",
-   "tags": [
-    "sanctions"
-   ]
-  },
-  {
-   "title": "China's central bank studies making overnight rate its main policy rate",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQQkZxcExIWnlGa1B2TFhUcjFWNDlzOWxQUUJnZkp3NlpJX3lwZXBvN05BN0xoRzhucmFJTWZwTUpDWUVPTzhpTWNnSGxYMDNCRjdYT0RacU1DWFEyclZHS3I2SDFUdWRkRE0wS0M2N1ZuZ3B6YjBENGlDU2R1R1FrMTdTWnJ1Z2pCUnVnM0FHWVh5X0dpRWxhbjJYS2J4X29CaEtLQWJaNFVWbEdRUG1fMEFRWlp4YmFOM0NDRkRlM0NjaE0?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T10:00:44.901465+00:00",
-   "title_ru": "Центральный банк Китая изучает возможность сделать ставку «овернайт» своей основной учетной ставкой",
-   "tags": [
-    "China"
-   ]
-  },
-  {
-   "title": "Big tech is wobbling. Goldman Sachs says it’s time to buy these 23 unloved stocks instead.",
-   "link": "https://www.marketwatch.com/story/big-tech-is-wobbling-goldman-sachs-says-its-time-to-buy-these-23-unloved-stocks-instead-cff7a9e0?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-19T10:00:44.901465+00:00"
-  },
   {
    "title": "German Inflation Risks Clearly Tilted to Upside, Bundesbank Says",
    "link": "https://www.bloomberg.com/news/articles/2026-10-19/german-inflation-risks-clearly-tilted-to-upside-bundesbank-says",
@@ -9028,6 +8993,16 @@
    "title_ru": "Нигерия видит бюджетный дефицит на 2026 год ниже целевого показателя из-за падения ставок",
    "lead": "Nigeria expects its federal fiscal deficit to come in below target this year as higher revenue and lower borrowing costs ease pressure on the West African nation’s budget, Finance Minister Taiwo Oyedele said.",
    "lead_ru": "Нигерия ожидает, что ее дефицит федерального бюджета в этом году окажется ниже целевого показателя, поскольку более высокие доходы и снижение стоимости заимствований ослабят давление на бюджет западноафриканской страны, заявил министр финансов Тайво Ойеделе."
+  },
+  {
+   "title": "Japan Scrambles to Patch PHP Flaws as Banks, Airlines Go Offline",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNeENRS2FoZ0dYQmhuX05JNlFSbVFqbThVbjFGenNhNTgzdXFUZjUwSmFRWmQ5aFlIQXZVMmE2R0llSWIwQWFSaVljSDBPbWEwYTJ3cVNxcUlWOTJXSEtwMHJ6ZzlZUDFQcUxsTGpxMExYQTNEZXFva2l6b3FjVFlSWXJwSzJ5cGN0UzBrd0VHbEtqSVNPMGI2WFpmYzVSdlZjNkY0SEhrN3JSbVM0dVJySDlFcUM?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T10:03:36.798521+00:00",
+   "title_ru": "Япония пытается исправить недостатки PHP, поскольку банки и авиакомпании отключаются от сети"
   }
  ],
  "last_digest": "2026-10-21",
@@ -15166,37 +15141,25 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-22T08:53:38.792236+00:00",
+  "checked": "2026-10-22T09:58:36.880177+00:00",
   "sec_seen": [
    "0001398344-26-018550",
    "0001674510-26-000002",
    "0001818383-26-000257",
-   "0001826731-26-000012",
    "0001140361-26-040424",
    "0000950103-26-015980",
-   "0001776828-26-000012",
    "0002108845-26-000007",
-   "0001671445-26-000012",
    "0000804328-26-000109",
-   "0001867888-26-000010",
-   "0001193125-26-428040",
    "0001823543-26-000002",
    "0001140361-26-040419",
    "0000804328-26-000110",
    "0001193125-26-428121",
    "0001231919-26-001485",
-   "0001193125-26-428042",
    "0000804328-26-000112",
-   "0001882764-26-000009",
-   "0001701247-26-000014",
    "0001185185-26-004899",
-   "0001193125-26-428043",
-   "0001193125-26-428045",
    "0001477932-26-006387",
    "0001193125-26-428106",
-   "0002109272-26-000012",
    "0002041533-26-000008",
-   "0002014386-26-000022",
    "0000935703-26-000120",
    "0001818383-26-000258",
    "0001778564-26-000189",
@@ -15205,14 +15168,11 @@
    "0000804328-26-000111",
    "0001193125-26-428110",
    "0001191473-26-000008",
-   "0001193125-26-428030",
-   "0001193125-26-428044",
    "0000804328-26-000107",
    "0000804328-26-000108",
    "0001493152-26-047949",
    "0001493152-26-047950",
    "0001807136-26-000002",
-   "0001193125-26-428041",
    "0001402348-26-000020",
    "0001193125-26-428104"
   ],
