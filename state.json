@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "066f0dacf8dda5d8": "2026-10-19T14:21:15.458886+00:00",
   "9ebd6797e7adaa5e": "2026-10-19T14:36:15.480554+00:00",
   "7a60389f377159e7": "2026-10-19T14:36:15.480554+00:00",
   "5770bd8e0175ff1e": "2026-10-19T14:41:15.475558+00:00",
@@ -902,22 +901,11 @@
   "5828cd349d1addba": "2026-10-22T14:13:36.869768+00:00",
   "a5ba2f0077d6b4ae": "2026-10-22T14:13:36.869768+00:00",
   "fc3b187fc13cfae3": "2026-10-22T14:18:36.912486+00:00",
-  "72d79eb304e135eb": "2026-10-22T14:19:41.622612+00:00"
+  "72d79eb304e135eb": "2026-10-22T14:19:41.622612+00:00",
+  "12b41e5a57ee7813": "2026-10-22T14:24:40.213466+00:00",
+  "16e136f1f702381c": "2026-10-22T14:24:40.213466+00:00"
  },
  "recent": [
-  {
-   "title": "How Will AI Affect Jobs? The UK Finance Industry Is Showing Us",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNMzd5NWdlcEpuVzlCVGRIQkJSUkRZTTZ2OHNUX0NtSlUxY0R6TWY1ZFh1ZFkyT0FtZFJobEJzME42ajJBX1ZsSk1Vb3dGcV93Nnplb0JFR2ZuUXhTaTZ3VzNKUngzRl93a3gzMXhvd2lLazZjNUo5aDEzREx5YVkxd3pMUDBhOUQ0bFZ3RG85QnRSRUlsNVBvNTcxZVo3V2pvOGZLaDBVTUpZUE40czRr?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T14:21:15.458886+00:00",
-   "title_ru": "Как ИИ повлияет на рабочие места? Финансовая индустрия Великобритании показывает нам",
-   "tags": [
-    "jobs"
-   ]
-  },
   {
    "title": "India probing Pernod, Diageo Scotch imports under India-UK trade pact, sources say",
    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQSWpNTHh4Y3hMX2pBNlZjWTA5QnI2M194bWt6ZUpXLUJyZHZ6MEpBeFB3dUZBT2FlVng4b21FV2ZOM0tOR2htU0h2bWRtbVlyZ0w5TXFPZTRibUpjQlR4TjEydUZySXF6bllGSm5ENms2elREOXNhWnZJR2lxUjhNazhfeENCWjk1alQtT0dPaG5ka2hKN3JScU90RFA5dlFNaTFLWFREU2h0dC1aLUk1cU51SG9qMnRBaUtSMVdLMGN2SnJYU0Nv?oc=5",
@@ -9166,6 +9154,21 @@
     "ECB",
     "rates"
    ]
+  },
+  {
+   "title": "Copper’s AI Tailwind Faces Supply and Demand Uncertainty",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-22/copper-s-ai-tailwind-faces-supply-and-demand-uncertainty-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T14:24:40.213466+00:00",
+   "title_ru": "Попутный ветер искусственного интеллекта в меди сталкивается с неопределенностью спроса и предложения",
+   "lead": "At LME week, Amy Gower of Morgan Stanley said copper traders lack conviction about the metal’s direction. Copper has tracked AI stocks closely, although AI is still a small share of demand; uncertainty over possible U.S.",
+   "lead_ru": "На неделе LME Эми Гауэр из Morgan Stanley заявила, что трейдеры меди не уверены в направлении движения металла. Медь внимательно отслеживает акции AI, хотя спрос на AI по-прежнему составляет небольшую долю; неопределенность относительно возможного США",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-21",
@@ -15324,7 +15327,6 @@
   "sec_seen": [
    "0001783201-26-000006",
    "0001628280-26-066801",
-   "0001435109-26-000158",
    "0001628280-26-066805",
    "0001628280-26-066802",
    "0001628280-26-066808",
@@ -15332,9 +15334,10 @@
    "0001299077-26-000004",
    "0001628280-26-066809",
    "0001628280-26-066806",
-   "0001746129-26-000065",
+   "0001435109-26-000159",
+   "0001435109-26-000158",
    "0001628280-26-066804",
-   "0002030833-26-000003"
+   "0001746129-26-000065"
   ],
   "errors": {}
  }
