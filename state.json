@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "da97a804190d1625": "2026-10-19T11:36:15.419337+00:00",
   "e9e88a8c32bbe169": "2026-10-19T11:56:15.427247+00:00",
   "efe4cea5280275f1": "2026-10-19T12:01:15.473108+00:00",
   "997fe04ffe89279b": "2026-10-19T12:01:15.473108+00:00",
@@ -885,18 +884,12 @@
   "71eafb601dbb76ba": "2026-10-22T11:23:36.850757+00:00",
   "8d032e0db0867e1e": "2026-10-22T11:28:37.274120+00:00",
   "d2518db42ada908e": "2026-10-22T11:28:37.274120+00:00",
-  "c406722f95b60689": "2026-10-22T11:33:36.885909+00:00"
+  "c406722f95b60689": "2026-10-22T11:33:36.885909+00:00",
+  "88fa4203b07bf87b": "2026-10-22T11:38:36.941888+00:00",
+  "51f599ee6bdc742b": "2026-10-22T11:38:36.941888+00:00",
+  "989e2ad2cc332742": "2026-10-22T11:38:36.941888+00:00"
  },
  "recent": [
-  {
-   "title": "Tech stocks stumbled. Now comes a crucial week for Wall Street.",
-   "link": "https://www.marketwatch.com/story/tech-stocks-stumbled-now-comes-a-crucial-week-for-wall-street-2a093abe?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-19T11:36:15.419337+00:00"
-  },
   {
    "title": "Qatar LNG Cargo Makes Rare Red Sea Journey to Get Gas to Europe",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQeWpKMENJOFNXdE1Zdy1yYzJtVHIta2FnaXBWZUpHU3U3cVBOY3MxblRmRldiRkdOTzkwM0pDOXJDTTYtNzFMMl9rUUJLZF9xeTFTQjlmNVBseEdZZTlyaWpTNnZTdnRpaEdiMkpZRjBtT0hpVkg1bThTbjRCc0wySUFzQldIblpZbWVSMXR3MWU1UVk5UXBtVV9wYlkyTEZfYkNKRzg1T2FVVmM3QWdUdHFkVVI?oc=5",
@@ -8997,6 +8990,41 @@
    "score": 3,
    "ts": "2026-10-22T11:33:36.885909+00:00",
    "title_ru": "Рынки Персидского залива падают, поскольку новые удары хуситов по Саудовской Аравии повышают региональный риск"
+  },
+  {
+   "title": "US Futures Slip as Risk-Off Sentiment Dominates With Oil Rising",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-22/us-futures-slip-as-risk-off-sentiment-dominates-with-oil-rising",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-22T11:38:36.941888+00:00",
+   "title_ru": "Фьючерсы на США проскальзывают, поскольку настроения риска доминируют с ростом цен на нефть",
+   "lead": "Futures were under pressure as escalating concern about Mideast conflict pushed oil futures higher, spurring inflation fears with US midterm elections less than two weeks away.",
+   "lead_ru": "Фьючерсы находились под давлением, поскольку растущая обеспокоенность по поводу ближневосточного конфликта подтолкнула нефтяные фьючерсы к росту, что вызвало опасения по поводу инфляции, поскольку до промежуточных выборов в США осталось менее двух недель.",
+   "tags": [
+    "inflation",
+    "oil"
+   ]
+  },
+  {
+   "title": "SAP Cloud Growth Beats Forecast as Software Stays Resilient",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOalJYdTFFMk1IaEswM2dEVThzcnJ2VF9Sc2tUeVpQTlJzajMwUEp1MU9sWVlHLW9IOFRwY2I1YnlyZWFYLURsTmhkNmVNejgwZHowY2VOd2pvSlpWUl9BWlo0SGt2OVE0REl1LVZwdDlRc1VZNlMzZVp3SnIyc0dSYkZVUDlTV2w0MV9DMjNpMFNUakFBaUx3LUZEMWktTF96dVV0SUM2X0tMYkRZX1NvdWtreV9YUQ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-22T11:38:36.941888+00:00",
+   "title_ru": "Рост SAP Cloud опережает прогнозы, поскольку программное обеспечение остается устойчивым"
+  },
+  {
+   "title": "Mideast oil exports are recovering. Fresh attacks in Saudi Arabia show risks remain.",
+   "link": "https://www.marketwatch.com/story/mideast-oil-exports-are-recovering-fresh-attacks-in-saudi-arabia-show-risks-remain-1473391a?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 2,
+   "ts": "2026-10-22T11:38:36.941888+00:00"
   }
  ],
  "last_digest": "2026-10-21",
@@ -15144,8 +15172,8 @@
    "0001231919-26-001485",
    "0000804328-26-000112",
    "0001185185-26-004899",
-   "0001477932-26-006387",
    "0001193125-26-428272",
+   "0001477932-26-006387",
    "0001193125-26-428106",
    "0001778564-26-000189",
    "0001818383-26-000258",
