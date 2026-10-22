@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e692b59a582582d6": "2026-10-19T15:16:15.563310+00:00",
-  "db543744cfbc5d3f": "2026-10-19T15:21:15.612091+00:00",
   "153e4de17c51469b": "2026-10-19T15:31:15.808854+00:00",
   "f88fc6870451bb0a": "2026-10-19T15:31:15.808854+00:00",
   "7756e98408fb2ca6": "2026-10-19T15:45:39.114316+00:00",
@@ -912,29 +910,10 @@
   "da69ab0af8c5056f": "2026-10-22T15:14:40.178935+00:00",
   "3fbb5875ffba5d68": "2026-10-22T15:14:40.178935+00:00",
   "4c7a1d3ba18425be": "2026-10-22T15:14:40.178935+00:00",
-  "28ff9a15775d5bef": "2026-10-22T15:14:40.178935+00:00"
+  "28ff9a15775d5bef": "2026-10-22T15:14:40.178935+00:00",
+  "562b510695d8b493": "2026-10-22T15:24:40.267741+00:00"
  },
  "recent": [
-  {
-   "title": "Recognizing nuclear science occupations for Nuclear Science Week",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxORWdTek92Y095N25aLUFWRExBWVNiSW93d0hNUzBYMWt1dC1PUUNDUk9NRVpkbmVZSkozMThlWV9nazRfZDdGTVRtZkFkeVFFZDc3MHlnMC1FYXF2TWtZcWlSeGZXNnJ6UXdpZHBjVFc5ZEpGdm5fbVRzRVVFSjlyTTVESThNa0pSNE1scVRPSkwtVThLSFBpcEFwX21SMFpTWTRNMg?oc=5",
-   "sources": [
-    "US Labor Statistics (BLS)"
-   ],
-   "score": 4,
-   "ts": "2026-10-19T15:16:15.563310+00:00",
-   "title_ru": "Признание профессий в области ядерной науки на Неделе ядерной науки"
-  },
-  {
-   "title": "French markets tumble as riots add to political crisis",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNa3dENVpSdjlaYWJ6dmVsNlJoS2hqR3dqWVczcHhGMlJpeVpoeGNuWUlacWJSVGN2UmhHbENLS2tjWW5vcmZyeUUyUDNwS25uLVI3bGJDbmdZR05pRDY3THVPa1dmNTVuQXphWWxNZzFHN1ZqMjF4N3hjVVZUUGdEQ1BEeXlRcmdPblBYcUh1WTVBLWN4ZkYwX2FLd1NfWEpoRXQ4?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T15:21:15.612091+00:00",
-   "title_ru": "Французские рынки падают, поскольку беспорядки усугубляют политический кризис"
-  },
   {
    "title": "High Frequency Trader Optiver Seeks $900 Million Debt Package",
    "link": "https://www.bloomberg.com/news/articles/2026-10-19/high-frequency-trader-optiver-seeks-900-million-debt-package",
@@ -9255,6 +9234,21 @@
    ],
    "score": 2,
    "ts": "2026-10-22T15:14:40.178935+00:00"
+  },
+  {
+   "title": "'I wasn't thinking straight' says five jobs civil servant",
+   "link": "https://www.bbc.co.uk/news/articles/cmx23dwp3qzro?at_medium=RSS&at_campaign=rss",
+   "sources": [
+    "BBC"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T15:24:40.267741+00:00",
+   "title_ru": "«Я не совсем мыслил», — говорит госслужащий с пятью должностями",
+   "lead": "Kashim Chowdhury is accused of fraudulently juggling multiple public sector jobs.",
+   "lead_ru": "Кашим Чоудхури обвиняется в обманном совмещении нескольких должностей в государственном секторе.",
+   "tags": [
+    "jobs"
+   ]
   }
  ],
  "last_digest": "2026-10-21",
@@ -15413,12 +15407,12 @@
   "sec_seen": [
    "0001783201-26-000006",
    "0001213900-26-111561",
-   "0001435109-26-000160",
    "0001213900-26-111560",
    "0001193125-26-428524",
    "0001062993-26-005478",
    "0001435109-26-000159",
    "0001746129-26-000065",
+   "0001435109-26-000160",
    "0001062993-26-005480"
   ],
   "errors": {}
