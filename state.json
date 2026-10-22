@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "3c0b366ce72dee92": "2026-10-19T19:05:37.645766+00:00",
   "afc8e91fc0054b8d": "2026-10-19T19:20:37.565564+00:00",
   "7e3c829c71c4f8e8": "2026-10-19T19:20:37.565564+00:00",
   "5af9949f691c97e1": "2026-10-19T19:25:37.589096+00:00",
@@ -920,21 +919,6 @@
   "d012aa564ff47e12": "2026-10-22T19:04:40.244080+00:00"
  },
  "recent": [
-  {
-   "title": "Путин подписал закон об исполнении федерального бюджета за 2025 год",
-   "link": "https://www.kommersant.ru/doc/9042457",
-   "sources": [
-    "Kommersant"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T19:05:37.645766+00:00",
-   "title_en": "Putin signed the law on the execution of the federal budget for 2025",
-   "lead": "Президент России Владимир Путин утвердил отчет об исполнении бюджета за 2025 год. Соответствующий закон за его подписью опубликован на портале правовых актов.",
-   "lead_en": "Russian President Vladimir Putin approved the budget execution report for 2025. The corresponding law signed by him was published on the portal of legal acts.",
-   "tags": [
-    "Russia"
-   ]
-  },
   {
    "title": "Trump Accounts, Bonds Barometer, ‘Dividend Nomads’",
    "link": "https://www.bloomberg.com/news/videos/2026-10-19/etf-iq-10-19-2026-video",
@@ -15668,8 +15652,8 @@
   "sec_seen": [
    "0001488168-26-000010",
    "0001493152-26-048080",
-   "0000001750-26-000104",
-   "0001193125-26-428770"
+   "0001193125-26-428770",
+   "0000001750-26-000104"
   ],
   "errors": {}
  }
