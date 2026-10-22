@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c2865eadfd6f1b28": "2026-10-19T02:40:13.730455+00:00",
   "525f6162cc711330": "2026-10-19T02:45:13.681875+00:00",
   "ef1c796b9935fa25": "2026-10-19T02:45:13.681875+00:00",
   "30c423def7e9a4cc": "2026-10-19T02:50:13.731849+00:00",
@@ -888,21 +887,11 @@
   "f6779324c5647b5b": "2026-10-22T02:16:59.975701+00:00",
   "04f8b680af1219cf": "2026-10-22T02:16:59.975701+00:00",
   "9d2ddc5f02ada842": "2026-10-22T02:21:59.940409+00:00",
-  "bb6f3692609f7d13": "2026-10-22T02:36:59.975991+00:00"
+  "bb6f3692609f7d13": "2026-10-22T02:36:59.975991+00:00",
+  "ef7ca1a90574c276": "2026-10-22T02:41:59.937692+00:00",
+  "886293b1d3443b68": "2026-10-22T02:41:59.937692+00:00"
  },
  "recent": [
-  {
-   "title": "Nifty Bank Heavyweights HDFC, ICICI in Focus After Weekend Earnings",
-   "link": "https://www.bloomberg.com/news/newsletters/2026-10-19/nifty-bank-heavyweights-hdfc-icici-in-focus-after-weekend-earnings",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T02:40:13.730455+00:00",
-   "title_ru": "Nifty Bank Heavyweights HDFC, ICICI в фокусе после выходных",
-   "lead": "HDFC Bank, ICICI Bank and Axis Bank report a mixed set of numbers.",
-   "lead_ru": "HDFC Bank, ICICI Bank и Axis Bank сообщают о смешанном наборе цифр."
-  },
   {
    "title": "VIEW China's economic growth accelerates to 4.5% in third quarter",
    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPcXFNS245X3pBcV9XTmxwQVljcVRHRW9YWER5N3EtUlo3UnBXVm9WaE5VbUdDTTBMczJnY0hQeEpEYUdackhNb1g4VGhIcUM4VGl5UnlwOEJCT1ZqREhRZXMwVUFMVzlmT3lneGZROGR0STFaeGNuVmlCTnNEaFNjYlRta3RSd2tXVEJyOHJWNkgtSjdqZnZtanRYOUNDckZ4RUtfeTgzOTV5b3RYX0hFTg?oc=5",
@@ -8731,6 +8720,19 @@
    "score": 3,
    "ts": "2026-10-22T02:36:59.975991+00:00",
    "title_ru": "Southwest Airlines снижает прогноз прибыли, поскольку расходы на топливо затмевают прибыль от оборота"
+  },
+  {
+   "title": "The World’s Rich Are Finding a New Home for Their Gold in Singapore",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxObUd1Wlg5SlVQZGlEVGcxSUdDcGZNY3J0VG9yUjJEZGFwaG81SVp6NFpRdnV6dmhkS0ZseFNYck9lVzlXSGp5TUd4S2U4Q0pISU9FbkYyRkM2TkhwRnN5RFp6TWNoU2dvN2djNzI5SHpZMTNWbW8yOUxvU2dDM2lpeENuaHNUUDg5RWF2STI3STZtcjk4RVp1TWFZNC1OdUpaYzZJRQ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T02:41:59.937692+00:00",
+   "title_ru": "Богатые люди мира находят новый дом для своего золота в Сингапуре",
+   "tags": [
+    "gold"
+   ]
   }
  ],
  "last_digest": "2026-10-21",
@@ -14869,7 +14871,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-22T01:37:00.009924+00:00",
+  "checked": "2026-10-22T02:41:59.937692+00:00",
   "sec_seen": [
    "0001185185-26-004899",
    "0001193125-26-428030",
@@ -14881,8 +14883,9 @@
    "0002014386-26-000022",
    "0001701247-26-000014",
    "0001193125-26-428041",
-   "0001193125-26-428104",
    "0001191473-26-000008",
+   "0001193125-26-428104",
+   "0001818383-26-000258",
    "0001882764-26-000009",
    "0001867888-26-000010",
    "0001193125-26-428040",
@@ -14891,7 +14894,6 @@
    "0001823543-26-000002",
    "0000804328-26-000108",
    "0002041533-26-000008",
-   "0001493152-26-047950",
    "0000804328-26-000112",
    "0001826731-26-000012",
    "0000804328-26-000107",
@@ -14917,7 +14919,7 @@
    "0001193125-26-428106",
    "0000935703-26-000120",
    "0001231919-26-001485",
-   "0001818383-26-000258"
+   "0001493152-26-047950"
   ],
   "errors": {}
  }
