@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "9c0720ac911bd2bb": "2026-10-19T12:36:15.489191+00:00",
-  "e85ae464d3b479f5": "2026-10-19T12:36:15.489191+00:00",
   "767bd0a0a0415413": "2026-10-19T12:41:15.452830+00:00",
   "a2ce8c3e1dbc4ca5": "2026-10-19T12:41:15.452830+00:00",
   "062ea3b449e77b8e": "2026-10-19T12:46:15.464259+00:00",
@@ -893,34 +891,10 @@
   "bfb74a1c22320b8f": "2026-10-22T12:28:36.842213+00:00",
   "659d764dfd98fa70": "2026-10-22T12:28:36.842213+00:00",
   "fa7d126dfe526519": "2026-10-22T12:28:36.842213+00:00",
-  "1ea687875b27cc7b": "2026-10-22T12:33:36.838680+00:00"
+  "1ea687875b27cc7b": "2026-10-22T12:33:36.838680+00:00",
+  "d4d637c429168601": "2026-10-22T12:38:36.863066+00:00"
  },
  "recent": [
-  {
-   "title": "Canada Inflation Rate Edges Up to 3.1%, Core Measures Ease",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-19/canada-inflation-rate-edges-up-to-3-1-core-measures-ease",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-19T12:36:15.489191+00:00",
-   "title_ru": "Инфляция в Канаде выросла до 3,1%, основные показатели ослабевают",
-   "lead": "Canada’s inflation rate ticked up to 3.1% in September as gasoline prices rose, while gauges of underlying price pressures eased.",
-   "lead_ru": "Уровень инфляции в Канаде вырос до 3,1% в сентябре, поскольку цены на бензин выросли, в то время как показатели базового ценового давления ослабли.",
-   "tags": [
-    "inflation"
-   ]
-  },
-  {
-   "title": "South Africa set for brighter fiscal outlook in Wednesday's mid-term budget",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQYUFTVVV0cHhDV19XS0VVZ1gtVWRGNk9EbWNkT2VBelVBNUw5ME95dFlOWmQ4b3p6YTJpY0doclh6blZ4S0ZCbU14di1iR0V1SGxBYlFEa092dFFhRDk5UXJza1d6Tm1mMHNKaDUxT2U3dDF2THpFQTVtZlNKZGF5WVNnOFdndWdqRUViNGg4LThUS05BNDQyaDhXc0xoRy1hbUZvdXVtenpPSEk1Ym5MNnZoTUthb3M?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T12:36:15.489191+00:00",
-   "title_ru": "Южная Африка настроена на более оптимистичные финансовые перспективы в среднесрочном бюджете в среду"
-  },
   {
    "title": "Trump's Russia sanctions waiver eases India's energy woes, lifts trade deal chances",
    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPX1JDdGd6aEZHMGQ5OXppVnA5d3FlSzNmbDdjOURNajl2Sjg3T0VrRzRLSC1DdVpLekQ5ZHBVdjQ1eV9UcF81anZNVklVYjZnQlNfQUlWRVMtNzEwVVVDQWlYTmQtU29FOU5xTFlGYTFUVV90bXI3dXU5UU5IUG9ZNjNYVHNUdzNjT3JXb244bm84d240TG56ZDVLbXNhMWpucjVTZXdtaTZQYjViOFU3bDZnZlFEQjduUDBfMWdwMVBXUFl3VFRJ?oc=5",
@@ -9101,6 +9075,21 @@
     "rates",
     "inflation"
    ]
+  },
+  {
+   "title": "US Initial Jobless Claims Fall to Three-Month Low of 194,000",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-22/us-initial-jobless-claims-fall-to-three-month-low",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-22T12:38:36.863066+00:00",
+   "title_ru": "Первоначальные заявки на пособие по безработице в США упали до трехмесячного минимума в 194 000",
+   "lead": "Applications for US unemployment benefits fell to a three-month low last week, underscoring the stability of the labor market.",
+   "lead_ru": "Заявки на пособие по безработице в США упали до трехмесячного минимума на прошлой неделе, что подчеркивает стабильность рынка труда.",
+   "tags": [
+    "jobs"
+   ]
   }
  ],
  "last_digest": "2026-10-21",
@@ -15266,8 +15255,8 @@
    "0000804328-26-000112",
    "0001185185-26-004899",
    "0001445826-26-000015",
-   "0001477932-26-006387",
    "0001193125-26-428272",
+   "0001477932-26-006387",
    "0001193125-26-428106",
    "0001778564-26-000189",
    "0001818383-26-000258",
