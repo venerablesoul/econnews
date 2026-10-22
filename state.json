@@ -1,13 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "6edf10bbea2361d5": "2026-10-19T04:05:13.884746+00:00",
-  "21ffb0dc6c383bf4": "2026-10-19T04:05:13.884746+00:00",
-  "abfaf374e5ecb11c": "2026-10-19T04:10:13.668988+00:00",
-  "653356d171a74142": "2026-10-19T04:10:13.668988+00:00",
-  "3004687de9e7f86a": "2026-10-19T04:10:13.668988+00:00",
-  "3ed0f9a942ab7d8e": "2026-10-19T04:10:13.668988+00:00",
-  "7a256fc447757b67": "2026-10-19T04:10:13.668988+00:00",
   "98cd277f85c9fc11": "2026-10-19T04:20:13.695373+00:00",
   "54d120b9ef19c337": "2026-10-19T04:25:13.666077+00:00",
   "ab814d25698795dd": "2026-10-19T04:25:13.666077+00:00",
@@ -891,74 +884,6 @@
   "3ddf9778553823a0": "2026-10-22T04:02:44.980304+00:00"
  },
  "recent": [
-  {
-   "title": "The UK Shows How AI Could Affect Jobs",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-19/opinion-the-uk-shows-how-ai-could-affect-jobs-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T04:05:13.884746+00:00",
-   "title_ru": "Великобритания показывает, как ИИ может повлиять на рабочие места",
-   "lead": "The UK is at the sharp end of transformations in the age of AI because finance, one of the industries most exposed to disruption, is also one of the UK’s biggest employers and most important exports.",
-   "lead_ru": "Великобритания переживает резкий конец трансформаций в эпоху ИИ, потому что финансы, одна из отраслей, наиболее подверженных сбоям, также является одним из крупнейших работодателей Великобритании и наиболее важным экспортом.",
-   "tags": [
-    "jobs"
-   ]
-  },
-  {
-   "title": "Global food inflation is expected to intensify as supply shocks pile up",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQUVRkb2hsTDU1SE9pWjNla2I5RTYxUFJQZndkWkVIQ05EbzhUOWlfbGp5X2J2SHA0bTJpMGptenRDdXdWZ3E2VkthVVdBY2YxTFQ0SjhPc2xadGJWRFR2dENBZ1luZ1lEOUlsVTFxYnJxYmJ4ck9kZmtaQlg1bzFjemN5Rk1WdFhSb0tpT2c2OVVGd2lRenlBVnRud2E5S2ZsMlRucENKZ0hpLWJBd1dCX0R5VG10YkU?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-19T04:10:13.668988+00:00",
-   "title_ru": "Ожидается, что глобальная продовольственная инфляция усилится по мере нарастания шоков предложения",
-   "tags": [
-    "inflation"
-   ]
-  },
-  {
-   "title": "China's Growth Rebounds While Home-Price Slump Eases",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-19/china-s-growth-rebounds-while-home-price-slump-eases-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-19T04:10:13.668988+00:00",
-   "title_ru": "Рост Китая восстанавливается, в то время как падение цен на жилье ослабевает",
-   "lead": "China’s growth accelerated more than expected in the third quarter while home prices fell at a slower pace in September. Maybank Macro Research Director Erica Tay discusses what it may mean for stimulus expectations.",
-   "lead_ru": "В третьем квартале рост Китая ускорился больше, чем ожидалось, в то время как цены на жилье в сентябре упали более медленными темпами. Директор по макро-исследованиям Maybank Эрика Тэй обсуждает, что это может означать для ожиданий стимулов.",
-   "tags": [
-    "China"
-   ]
-  },
-  {
-   "title": "Malaysia September Exports Surge to Five-Year High on AI Demand",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-19/malaysia-september-exports-surge-to-five-year-high-on-ai-demand",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T04:10:13.668988+00:00",
-   "title_ru": "Экспорт Малайзии в сентябре вырос до пятилетнего максимума спроса на ИИ",
-   "lead": "Malaysia’s exports surged to its highest level in more than five years in September as the trade-dependent nation continues to benefit from demand for artificial intelligence-related products.",
-   "lead_ru": "В сентябре экспорт Малайзии вырос до самого высокого уровня за последние пять лет, поскольку страна, зависящая от торговли, продолжает извлекать выгоду из спроса на продукты, связанные с искусственным интеллектом."
-  },
-  {
-   "title": "Rupee likely pinned near 95 as RBI defence counters oil headwinds",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOa3NLUV9hTjZtMURDMENEaVZFZFBNWFNJVXNoakRPSjZTa1lGU1FQZHlVYU9HQVUyWGg0eDI3Y3lsRXFRZ2lhV0FSMFhPN3pwaHJ0SEVSOENrTUVtY1cxMjRZRWpxTVFwMDlJMURMRVN3dURIbVhQc3hiUTR3Nmh0QXJkUnRKNjJVSFkzTkFPYmRCT0JyZkpzaFF3LUJMZzlDbm5TMXRJUlZ1VUhSbXA4?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T04:10:13.668988+00:00",
-   "title_ru": "Рупия, вероятно, застряла около 95, поскольку защита RBI противодействует нефтяным встречным ветрам",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "PIIE’s Lovely on China-US Trade",
    "link": "https://www.bloomberg.com/news/videos/2026-10-19/piie-s-lovely-on-china-us-trade-video",
