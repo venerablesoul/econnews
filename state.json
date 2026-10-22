@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "03121b233626bc9e": "2026-10-19T21:51:05.402466+00:00",
   "4a63eb32acb6f38b": "2026-10-19T22:06:05.260300+00:00",
   "90d827b1a51e3a5f": "2026-10-19T22:21:05.213274+00:00",
   "8b35ca7d9ff6146e": "2026-10-19T22:21:05.213274+00:00",
@@ -929,19 +928,11 @@
   "e346d34f8f9ec5a0": "2026-10-22T21:35:20.451858+00:00",
   "f764c58c2470e157": "2026-10-22T21:40:20.336636+00:00",
   "ed31ed3894f096bf": "2026-10-22T21:40:20.336636+00:00",
-  "25e0d73dd496ab00": "2026-10-22T21:45:20.312230+00:00"
+  "25e0d73dd496ab00": "2026-10-22T21:45:20.312230+00:00",
+  "14d8dd241e3b4c79": "2026-10-22T21:55:20.361832+00:00",
+  "0115d1dea27f8466": "2026-10-22T21:55:20.361832+00:00"
  },
  "recent": [
-  {
-   "title": "Ghana Plans to Ban Raw Mineral Exports by 2030, President Says",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPRGpwRzd0RXlRdEY4akhjXzZtZ0diNEVwWnBrT3ZVMnpFTVducUR1VnJsZ3NxNjdIOHJWRUlxamlRVHJ3NU5qZUxqZmtlZ0c1djQycE96NjMtNkl0czNoSklHTmluUGZWb2hTR01pSkdvM1d2UXNsY015Q0gtRUZILXY5ZjlHU1pLNzBiNjZrMXU1WjBtZDVQNVVUNElQaXV2dndCN2JhMHV2NHRxdFVFLVBn?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T21:51:05.402466+00:00",
-   "title_ru": "Гана планирует запретить экспорт минерального сырья к 2030 году, заявил президент"
-  },
   {
    "title": "Latest Oil Market News and Analysis for Oct. 20",
    "link": "https://www.bloomberg.com/news/articles/2026-10-19/latest-oil-market-news-and-analysis-for-oct-20",
@@ -9480,6 +9471,28 @@
    "score": 4,
    "ts": "2026-10-22T21:45:20.312230+00:00",
    "title_ru": "Трамп руководит торговыми переговорами по импорту ветряных турбин своим указом"
+  },
+  {
+   "title": "Kroger CFO: We Are an Agent for the Consumer",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-22/kroger-cfo-we-are-an-agent-for-the-consumer-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-22T21:55:20.361832+00:00",
+   "title_ru": "Финансовый директор Kroger: Мы — агент потребителя",
+   "lead": "Kroger CFO David Kennerley discusses the company plans to invest $5 billion in consumer value, including affordable groceries and simpler promotions, while seeking to fund the effort through $4 billion in structural cost savings.",
+   "lead_ru": "Финансовый директор Kroger Дэвид Кеннерли обсуждает планы компании инвестировать 5 миллиардов долларов в потребительскую ценность, включая доступные продукты и более простые рекламные акции, стремясь профинансировать эти усилия за счет структурной экономии в 4 миллиарда долларов."
+  },
+  {
+   "title": "First Tungsten Hedge Trades on Prediction Market Kalshi",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQYWRrUzFTNi1jc0RseXhUdDNMTElYVUtmdHVBYV93MmR3bmpJbk1qTWJzd1ZOOGFZTGFheFB0MGt5Mk92VFdNbHdkaHdVMGUtR1BuMnlPZTFRLVBEaTc5R0hnMVVEUVNaZlJINjA2WEZ1SXY3RExTcDg4TWtublFlNHNzRmcxbWFaN3RCRXdLaUpiM0FfZTJRaENEYUNMVm0zSklCdkFwaHBsQQ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T21:55:20.361832+00:00",
+   "title_ru": "Первые хедж-сделки по вольфраму на рынке прогнозов в Калши"
   }
  ],
  "last_digest": "2026-10-22",
@@ -15766,12 +15779,13 @@
   "sec_seen": [
    "0001176401-26-000007",
    "0001193125-26-429125",
+   "0001873304-26-000003",
    "0001493152-26-048144",
    "0000310354-26-000100",
-   "0000891103-26-000156",
    "0001834046-26-000010",
    "0001895188-26-000005",
    "0001334945-26-000005",
+   "0001400954-26-000013",
    "0000109563-26-000045",
    "0001193125-26-429124",
    "0001950180-26-000010",
@@ -15787,8 +15801,7 @@
    "0001825022-26-000006",
    "0001193125-26-429089",
    "0001616707-26-000183",
-   "0001193125-26-429133",
-   "0000891103-26-000155"
+   "0001193125-26-429133"
   ],
   "errors": {}
  }
