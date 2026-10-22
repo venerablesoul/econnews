@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "99c2483474b5dcb6": "2026-10-19T05:25:44.843761+00:00",
   "8b562c5b47e2b5b4": "2026-10-19T05:30:44.858019+00:00",
   "2bc3fea1b9410316": "2026-10-19T05:35:44.888347+00:00",
   "69afe8bb3edd9dc9": "2026-10-19T06:05:44.844086+00:00",
@@ -870,7 +869,8 @@
   "9e568c8369408690": "2026-10-22T04:42:45.121381+00:00",
   "e72007495676faed": "2026-10-22T04:47:44.978600+00:00",
   "76843d9e3f214cc0": "2026-10-22T05:17:44.980791+00:00",
-  "268653d89550de05": "2026-10-22T05:22:45.028680+00:00"
+  "268653d89550de05": "2026-10-22T05:22:45.028680+00:00",
+  "6ba4aaba7b67b8f3": "2026-10-22T05:27:44.985761+00:00"
  },
  "recent": [
   {
@@ -8705,6 +8705,21 @@
    "score": 3,
    "ts": "2026-10-22T05:22:45.028680+00:00",
    "title_ru": "ЕС приближается к реформе секьюритизации рынка в попытке высвободить миллиарды"
+  },
+  {
+   "title": "Gold drops over 1% as oil rally reinforces higher-for-longer rate outlook",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPdWF1N1NOek9pQi1IYkRUMll1bHRXOFluVmtuYm9LR1dtMThlWlZDYXB5RlVwYko2MVFRS01SSnIwRGhMRnFULTZvdURKV0MxOHk1clF4NW1wTkJUOWkyMng4b2J5QjI4X2tLRkVMSGxDcTIxV0xXTThnZkxvQjVUajZBMmY4RURVTzQtcFN1T2gybVJWRkMwX0RCdkxGTVpLbUdlT0paVU80cWc0VS0xenk0QnZRYS1B?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-22T05:27:44.985761+00:00",
+   "title_ru": "Золото упало более чем на 1%, так как ралли нефти усиливает прогноз по повышению ставок в долгосрочной перспективе",
+   "tags": [
+    "oil",
+    "gold",
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-21",
