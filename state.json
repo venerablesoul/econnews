@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "94d8b1d32ee6ec47": "2026-10-19T09:30:45.038128+00:00",
-  "d2218855992d9f8e": "2026-10-19T09:30:45.038128+00:00",
-  "e310b7bf10f97670": "2026-10-19T09:30:45.038128+00:00",
-  "94cdf7dc79e0d3d9": "2026-10-19T09:30:45.038128+00:00",
   "fd7bef228b9c35d6": "2026-10-19T09:35:44.855402+00:00",
   "d84177728cd18893": "2026-10-19T09:35:44.855402+00:00",
   "155ff4df77856ec3": "2026-10-19T09:40:44.891797+00:00",
@@ -892,48 +888,10 @@
   "18efa2d20e9bc1aa": "2026-10-22T09:23:36.851644+00:00",
   "b967efbdbde70cb6": "2026-10-22T09:28:36.813895+00:00",
   "a4e84f8963f794ae": "2026-10-22T09:28:36.813895+00:00",
-  "70e83eef72ea2af0": "2026-10-22T09:28:36.813895+00:00"
+  "70e83eef72ea2af0": "2026-10-22T09:28:36.813895+00:00",
+  "45cd2431a770f492": "2026-10-22T09:33:36.877724+00:00"
  },
  "recent": [
-  {
-   "title": "Bank Indonesia narrowly expected to hold interest rates despite market turmoil",
-   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNTklTTEZCYlRSNmVCNVNkb0Nybkd0cUNtNGpDQ28wT0lnclBoMlAxUlNPd3BycE5KRzZjTU1aOFcyWDJTbUhtcmVCWWVPdEs1d05GWHZJdnl2WHdSS1YxQ3E3ajNvLVB6a3RUcVpJTVUzdEZGMEgxaGZmLXdwV2R5QkEtWlltOXVoTGZZZDI5Y3pzS1dpcWJGM3UtYzQ2VDVPS1oyNzgyYm1RUmctOXR2eVN1YzJ2UzhjM1prV2xMd2FMeU45cmlpdk5n?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-19T09:30:45.038128+00:00",
-   "title_ru": "Банк Индонезии вряд ли сохранит процентные ставки, несмотря на потрясения на рынке",
-   "tags": [
-    "rates"
-   ]
-  },
-  {
-   "title": "China’s economy grows faster than forecast after AI boom boosted exports",
-   "link": "https://www.theguardian.com/world/2026/oct/19/china-economy-grows-faster-than-forecast-after-ai-boom-boosted-exports",
-   "sources": [
-    "The Guardian"
-   ],
-   "score": 5,
-   "ts": "2026-10-19T09:30:45.038128+00:00",
-   "title_ru": "Экономика Китая растет быстрее, чем прогнозировалось, после того как бум искусственного интеллекта увеличил экспорт",
-   "lead": "Third-quarter GDP up by 4.5% compared with last year as industrial output is buoyed up by electronics demand Business live – latest updates Roaring exports lifted China’s economic growth in the third quarter of this year, with…",
-   "lead_ru": "ВВП в третьем квартале вырос на 4,5% по сравнению с прошлым годом, поскольку промышленное производство поддерживается спросом на электронику Бизнес в прямом эфире – последние новости Резкий рост экспорта способствовал экономическому росту Китая в третьем квартале этого года, с…",
-   "tags": [
-    "China",
-    "GDP"
-   ]
-  },
-  {
-   "title": "Hong Kong regulator sees rise in listing of young growth firms",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxORjV0UFFlWHlEeXpXaTFVZUU1YmF3cnREdVJaU1VndlBCTlhiVWhjV3JUOXpvMU1qcVlUclRXUEk2WHNCazBEbWpaOHk5a0RzWmtZR3pSMjhiTW1sSE1UV3U2Y1lHVF9hdW5aNC1QM0MxR2pMUy04Z09WVjNUM0ZPczkwTEVweC1wSnliUUY4WlZKU1pjV3JpV2lRSXhoRzg2YTFybkhGUQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T09:30:45.038128+00:00",
-   "title_ru": "Регулятор Гонконга прогнозирует рост листинга молодых развивающихся компаний"
-  },
   {
    "title": "South Africa’s Business Mood Steadies Despite Ongoing Iran War",
    "link": "https://www.bloomberg.com/news/articles/2026-10-19/south-africa-s-business-mood-steadies-despite-ongoing-iran-war",
@@ -9044,6 +9002,19 @@
    "score": 3,
    "ts": "2026-10-22T09:28:36.813895+00:00",
    "title_ru": "Япония рассмотрит возможность повторного введения субсидий на газ и электроэнергию, сообщают источники"
+  },
+  {
+   "title": "China Evergrande liquidators recover 1% of debt claims after 2-1/2 years",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNVzN0dTBZMTZadGROV3h5d2NiTjRQUXoxTHdVOGJ3OE5sR2g0Z1lYYV9nWDZPUlk0d241ZDJuMlVxbXk0bDUyR0ZVQklaT18yVHFicnYwNlZrdmVsMkQ0YkNXOUhqajlPN2c4QnFmOGhXQ1VMc25rZ28wT0xmTGlVZ0FYQTh3dWt0cWFZeTRhaTJLTVhreXB2TU5aRDMwT2pFbUhZMEkwbHp4VU1WdDlTUWJWRFpxd2hDaHQ2RA?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T09:33:36.877724+00:00",
+   "title_ru": "Ликвидаторы China Evergrande взыскивают 1% долговых требований через 2,5 года",
+   "tags": [
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-10-21",
@@ -15186,6 +15157,7 @@
   "sec_seen": [
    "0001398344-26-018550",
    "0001674510-26-000002",
+   "0001818383-26-000257",
    "0001826731-26-000012",
    "0001140361-26-040424",
    "0000950103-26-015980",
@@ -15196,7 +15168,6 @@
    "0001867888-26-000010",
    "0001193125-26-428040",
    "0001823543-26-000002",
-   "0001193125-26-428041",
    "0001140361-26-040419",
    "0000804328-26-000110",
    "0001193125-26-428121",
@@ -15228,7 +15199,7 @@
    "0001493152-26-047949",
    "0001493152-26-047950",
    "0001807136-26-000002",
-   "0001818383-26-000257",
+   "0001193125-26-428041",
    "0001402348-26-000020",
    "0001193125-26-428104"
   ],
