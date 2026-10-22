@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "9ebd6797e7adaa5e": "2026-10-19T14:36:15.480554+00:00",
-  "7a60389f377159e7": "2026-10-19T14:36:15.480554+00:00",
-  "5770bd8e0175ff1e": "2026-10-19T14:41:15.475558+00:00",
-  "b063295ab5e8a54e": "2026-10-19T14:41:15.475558+00:00",
   "e04161eb5ba0b4b9": "2026-10-19T14:46:15.568812+00:00",
   "97184458c54b3b27": "2026-10-19T14:51:15.500503+00:00",
   "e692b59a582582d6": "2026-10-19T15:16:15.563310+00:00",
@@ -909,53 +905,6 @@
   "f0e9bb9846d13562": "2026-10-22T14:34:40.275975+00:00"
  },
  "recent": [
-  {
-   "title": "India probing Pernod, Diageo Scotch imports under India-UK trade pact, sources say",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQSWpNTHh4Y3hMX2pBNlZjWTA5QnI2M194bWt6ZUpXLUJyZHZ6MEpBeFB3dUZBT2FlVng4b21FV2ZOM0tOR2htU0h2bWRtbVlyZ0w5TXFPZTRibUpjQlR4TjEydUZySXF6bllGSm5ENms2elREOXNhWnZJR2lxUjhNazhfeENCWjk1alQtT0dPaG5ka2hKN3JScU90RFA5dlFNaTFLWFREU2h0dC1aLUk1cU51SG9qMnRBaUtSMVdLMGN2SnJYU0Nv?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-19T14:36:15.480554+00:00",
-   "title_ru": "Индия проверяет импорт Pernod и Diageo Scotch в соответствии с торговым соглашением между Индией и Великобританией, сообщают источники"
-  },
-  {
-   "title": "Turkey Market Regulator Chief Steps Down During Fund Crisis",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-19/turkey-market-regulator-chief-steps-down-during-fund-crisis",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T14:36:15.480554+00:00",
-   "title_ru": "Глава регулятора рынка Турции ушел в отставку во время фондового кризиса",
-   "lead": "Turkey’s market regulator chief, Mahmut Sutcu, stepped down on Monday during the fallout of a fund crisis that’s upended the country’s markets.",
-   "lead_ru": "Глава регулятора рынка Турции Махмут Сутчу ушел в отставку в понедельник из-за последствий фондового кризиса, который перевернул рынки страны."
-  },
-  {
-   "title": "Inflation Jolt to Fade, Fed to Stay on Sidelines",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-19/inflation-jolt-to-fade-fed-to-stay-on-sidelines-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 7,
-   "ts": "2026-10-19T14:41:15.475558+00:00",
-   "title_ru": "Всплеск инфляции будет ослабевать, ФРС останется в стороне",
-   "lead": "At first glance, the past week’s inflation data look hot enough to change the Fed debate, but the details were less alarming: Inflation breadth narrowed, and traders expect PCE inflation later this month to tell a similar story.",
-   "lead_ru": "На первый взгляд, данные по инфляции за прошедшую неделю выглядят достаточно горячими, чтобы изменить дебаты ФРС, но детали были менее тревожными: диапазон инфляции сузился, и трейдеры ожидают, что инфляция PCE позже в этом месяце расскажет аналогичную историю.",
-   "tags": [
-    "Fed",
-    "inflation"
-   ]
-  },
-  {
-   "title": "SZ узнала, что Volkswagen заморозит зарплаты сотрудников до 2030 года",
-   "link": "https://www.rbc.ru/business/19/10/2026/6ad602f8f0e58fb238bfef8b",
-   "sources": [
-    "RBC"
-   ],
-   "score": 1,
-   "ts": "2026-10-19T14:41:15.475558+00:00"
-  },
   {
    "title": "Bank of America Sees Corporate Bonds Sales in Africa Running at Five-Year High",
    "link": "https://www.bloomberg.com/news/articles/2026-10-19/bank-of-america-sees-corporate-bonds-sales-in-africa-running-at-five-year-high",
@@ -15354,6 +15303,9 @@
   "checked": "2026-10-22T14:13:36.869768+00:00",
   "sec_seen": [
    "0001783201-26-000006",
+   "0001213900-26-111561",
+   "0001435109-26-000160",
+   "0001213900-26-111560",
    "0001628280-26-066805",
    "0001628280-26-066808",
    "0001628280-26-066810",
