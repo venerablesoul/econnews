@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "7756e98408fb2ca6": "2026-10-19T15:45:39.114316+00:00",
-  "67926133a6bee3fb": "2026-10-19T15:45:39.114316+00:00",
-  "2c4c56b1dafab1de": "2026-10-19T15:45:39.114316+00:00",
-  "6d931fead74bc922": "2026-10-19T15:45:39.114316+00:00",
   "fb5309b4254af486": "2026-10-19T15:50:37.619514+00:00",
   "10ca7f1923821c0b": "2026-10-19T15:50:37.619514+00:00",
   "c8d81ad93dce6bc5": "2026-10-19T15:55:37.628888+00:00",
@@ -919,65 +915,11 @@
   "edc3aefa5ae4ff4c": "2026-10-22T15:39:40.207590+00:00",
   "9d7ecf6f71d7362a": "2026-10-22T15:39:40.207590+00:00",
   "22333262d4ae34c0": "2026-10-22T15:39:40.207590+00:00",
-  "96648df819a08af0": "2026-10-22T15:44:40.191128+00:00"
+  "96648df819a08af0": "2026-10-22T15:44:40.191128+00:00",
+  "667860d705259b87": "2026-10-22T15:49:40.194664+00:00",
+  "0ba552da787649f4": "2026-10-22T15:49:40.194664+00:00"
  },
  "recent": [
-  {
-   "title": "BOC Surveys Show Higher Inflation Expectations, Passthrough",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-19/boc-surveys-show-higher-inflation-expectations-passthrough",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-19T15:45:39.114316+00:00",
-   "title_ru": "Опросы Банка Канады показывают более высокие инфляционные ожидания и эффект переноса",
-   "lead": "Bank of Canada surveys showed inflation expectations moving higher, and more evidence that firms plan to pass on higher input costs to customers.",
-   "lead_ru": "Опросы Банка Канады показали рост инфляционных ожиданий и появление новых свидетельств того, что компании планируют переложить на клиентов более высокие затраты на вводимые ресурсы.",
-   "tags": [
-    "inflation"
-   ]
-  },
-  {
-   "title": "The Copper Rally Faces a Tariff Test",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-19/the-copper-rally-faces-a-tariff-test-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-19T15:45:39.114316+00:00",
-   "title_ru": "Медному ралли грозит проверка тарифов",
-   "lead": "Copper has surged amid tariff fears, but the rally may be vulnerable if U.S. trade measures don't materialize.",
-   "lead_ru": "Медь выросла на фоне опасений по поводу тарифов, но ралли может оказаться уязвимым, если торговые меры США не материализуются.",
-   "tags": [
-    "markets",
-    "tariffs"
-   ]
-  },
-  {
-   "title": "Walmart Sells US Debt, Eyes Canadian Market as Spending Grows",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-19/walmart-sells-us-debt-eyes-canadian-market-as-spending-grows",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-19T15:45:39.114316+00:00",
-   "title_ru": "Walmart продает долг США и присматривается к канадскому рынку по мере роста расходов",
-   "lead": "Walmart Inc. is selling US dollar bonds for a second time this year and sounding out investors for a debut Canadian debt offering as the world’s largest retailer seeks to diversify its funding sources amid a spending spree.",
-   "lead_ru": "Walmart Inc. продает долларовые облигации во второй раз в этом году и ищет инвесторов для дебютного размещения канадских долговых обязательств, поскольку крупнейший в мире ритейлер стремится диверсифицировать свои источники финансирования на фоне резкого увеличения расходов.",
-   "tags": [
-    "dollar",
-    "bonds"
-   ]
-  },
-  {
-   "title": "Минфин обсудит продление налогового эксперимента для самозанятых",
-   "link": "https://www.rbc.ru/finances/19/10/2026/6ad63603e244862e774f6742",
-   "sources": [
-    "RBC"
-   ],
-   "score": 1,
-   "ts": "2026-10-19T15:45:39.114316+00:00"
-  },
   {
    "title": "В Минфине исключили снижение допдоходов бюджета России из-за налоговых поправок",
    "link": "https://www.kommersant.ru/doc/9042308",
@@ -9336,6 +9278,30 @@
    "score": 3,
    "ts": "2026-10-22T15:44:40.191128+00:00",
    "title_ru": "Торговое соглашение между Индией и ЕС может вступить в силу в начале 2027 года, заявил министр торговли Индии"
+  },
+  {
+   "title": "Stocks Fall as Meta and Tesla Earnings Fail to Support AI Trade",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-22/bloomberg-surveillance-10-22-2026-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-22T15:49:40.194664+00:00",
+   "title_ru": "Акции падают, поскольку доходы Meta и Tesla не поддерживают торговлю AI",
+   "lead": "Jonathan Ferro, Lisa Abramowicz and Annmarie Hordern speak daily with leaders and decision makers from Wall Street to Washington and beyond.",
+   "lead_ru": "Джонатан Ферро, Лиза Абрамович и Аннмари Хордерн ежедневно беседуют с лидерами и лицами, принимающими решения, от Уолл-стрит до Вашингтона и за его пределами.",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "На МИПФ-2026 обсудили условия кредитования промышленных проектов",
+   "link": "https://www.rbc.ru/rbcfreenews/6ada2c8255d6c15724329ebf",
+   "sources": [
+    "RBC"
+   ],
+   "score": 2,
+   "ts": "2026-10-22T15:49:40.194664+00:00"
   }
  ],
  "last_digest": "2026-10-21",
