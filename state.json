@@ -896,7 +896,10 @@
   "d6fb7e4dbec92338": "2026-10-22T13:13:36.863897+00:00",
   "961f4a39f174176f": "2026-10-22T13:18:36.842602+00:00",
   "17a936d2bd7df9b4": "2026-10-22T13:18:36.842602+00:00",
-  "3fa967f48424f4ef": "2026-10-22T13:18:36.842602+00:00"
+  "3fa967f48424f4ef": "2026-10-22T13:18:36.842602+00:00",
+  "a5def08b7d10facc": "2026-10-22T13:33:36.830077+00:00",
+  "dd0ce14df0cf9bde": "2026-10-22T13:33:36.830077+00:00",
+  "d008efdeee58878d": "2026-10-22T13:33:36.830077+00:00"
  },
  "recent": [
   {
@@ -9092,6 +9095,35 @@
     "China",
     "tariffs"
    ]
+  },
+  {
+   "title": "Jobless claims near the lowest since the 1960s as low-fire trend continues",
+   "link": "https://www.cnbc.com/2026/10/22/jobless-claims-record-low-weekly.html",
+   "sources": [
+    "CNBC"
+   ],
+   "score": 4,
+   "ts": "2026-10-22T13:33:36.830077+00:00",
+   "title_ru": "Заявки на пособие по безработице близки к самому низкому уровню с 1960-х годов, поскольку тенденция к сокращению числа пожаров сохраняется",
+   "lead": "Initial filings for unemployment insurance slipped to a seasonally adjusted 194,000.",
+   "lead_ru": "Первоначальные заявки на страхование по безработице снизились до 194 000 с учетом сезонных колебаний.",
+   "tags": [
+    "jobs"
+   ]
+  },
+  {
+   "title": "Australia's treasurer warns of softer growth, higher unemployment",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOcGxzcU9wZHpsMXVHNXNiTkhMaTcxQTZGdlZva0ZXWWE2dmJ4S3NNRnZOZElMYVA2ckkwZ3RiUDJ1c0N5MTVTLU4ydkEycmNVcmNIRGVqWUF6R2VmbGtycmRQVXA5VXduSkpWNFpOcHF6THZ5ajVUX1Z3Nk5GQkFxM292Nm94QW9pZjByYVlaZHhTaExUYlZjRTF3STA5MFBudWY2LWJWdGlUbWJ1ejV3bV9fNFhPQQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T13:33:36.830077+00:00",
+   "title_ru": "Министр финансов Австралии предупреждает о замедлении экономического роста и повышении безработицы",
+   "tags": [
+    "bonds",
+    "jobs"
+   ]
   }
  ],
  "last_digest": "2026-10-21",
@@ -15249,7 +15281,6 @@
   "checked": "2026-10-22T13:13:36.863897+00:00",
   "sec_seen": [
    "0001628280-26-066801",
-   "0001783059-26-000019",
    "0001792845-26-000019",
    "0001911109-26-000019",
    "0001628280-26-066802",
@@ -15257,15 +15288,16 @@
    "0002093121-26-000008",
    "0001193125-26-428390",
    "0001487630-26-000020",
+   "0002030833-26-000003",
    "0001299077-26-000004",
    "0002030855-26-000008",
-   "0001455134-26-000022",
    "0002080406-26-000019",
    "0001445826-26-000015",
-   "0001628280-26-066800",
+   "0001455134-26-000022",
    "0002030841-26-000005",
-   "0002030833-26-000003",
-   "0001493152-26-048021"
+   "0001783059-26-000019",
+   "0001493152-26-048021",
+   "0001628280-26-066800"
   ],
   "errors": {}
  }
