@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "68e0a36c4fe143ca": "2026-10-19T17:50:37.645118+00:00",
   "0136d7aa5a7a19be": "2026-10-19T17:55:37.592105+00:00",
   "bd6d68a95af40f58": "2026-10-19T17:55:37.592105+00:00",
   "f65227e80de8cf65": "2026-10-19T18:00:37.839081+00:00",
@@ -914,7 +913,8 @@
   "1cf9c01e3502ff93": "2026-10-22T17:29:40.173985+00:00",
   "eea9c9be54ee0eaf": "2026-10-22T17:34:40.221083+00:00",
   "77bd5fa8fcd14436": "2026-10-22T17:39:40.169511+00:00",
-  "643482b1ab277067": "2026-10-22T17:49:40.207700+00:00"
+  "643482b1ab277067": "2026-10-22T17:49:40.207700+00:00",
+  "1c648ed7e4cdff5d": "2026-10-22T17:54:40.185170+00:00"
  },
  "recent": [
   {
@@ -9371,6 +9371,21 @@
     "markets",
     "crypto"
    ]
+  },
+  {
+   "title": "Тайное станет явным автоматически // Госдума поддержала открытие данных в ЕГРЮЛ после исчезновения у компаний санкционных рисков",
+   "link": "https://www.kommersant.ru/doc/9045194",
+   "sources": [
+    "Kommersant"
+   ],
+   "score": 5,
+   "ts": "2026-10-22T17:54:40.185170+00:00",
+   "title_en": "The secret will become obvious automatically // The State Duma supported the opening of data in the Unified State Register of Legal Entities after the disappearance of sanctions risks for companies",
+   "lead": "Госдума 22 октября одобрила во втором чтении законопроект, упрощающий механизм возобновления доступа к закрытым из-за санкционных рисков данным об организациях из Единого государственного реестра юридических лиц (ЕГРЮЛ).",
+   "lead_en": "On October 22, the State Duma approved in the second reading a bill that simplifies the mechanism for restoring access to data on organizations from the Unified State Register of Legal Entities (USRLE) that was closed due to sanctions risks.",
+   "tags": [
+    "sanctions"
+   ]
   }
  ],
  "last_digest": "2026-10-21",
@@ -15591,14 +15606,15 @@
   },
   "checked": "2026-10-22T17:19:40.225583+00:00",
   "sec_seen": [
-   "0001193125-26-428684",
    "0001193125-26-428690",
+   "0001193125-26-428684",
    "0001866581-26-000159",
    "0001193125-26-428698",
    "0001866581-26-000158",
    "0001193125-26-428693",
    "0001510281-26-000370",
    "0000006955-26-000091",
+   "0001493152-26-048062",
    "0001866581-26-000160",
    "0001193125-26-428702"
   ],
