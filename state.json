@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "00c6b363a8914e31": "2026-10-19T22:31:07.260403+00:00",
-  "bc192c2eb8e3db87": "2026-10-19T22:31:07.260403+00:00",
-  "d832dcd6ded0fcb4": "2026-10-19T22:31:07.260403+00:00",
-  "76f3ee23069429dc": "2026-10-19T22:31:07.260403+00:00",
   "c55509c82e691cac": "2026-10-19T22:36:05.064005+00:00",
   "f2667329a553d227": "2026-10-19T22:46:05.176849+00:00",
   "33619b0e9322e2c3": "2026-10-19T22:56:05.204931+00:00",
@@ -939,19 +935,6 @@
   "cfbd6756fe1c220c": "2026-10-22T22:25:20.352145+00:00"
  },
  "recent": [
-  {
-   "title": "How the gold boom is fuelling tree loss from Ghana to the Amazon",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxObUxGRUVjWUdwSVNNUGFIeXRUWVdadTNPQ2NFclNhZDluSzZ4dnFRUTdEUFVidUtlVDlVWXdCc2ZnaFNmTkQ2Yk9fc19WSEo2blI3aVRsN1dFbVBtVkxaSXlkZW02ZjJQaXNEX1Z6OGJPR3ZaRm04ekJPWV9wbFBDLUk4bmtDeWRkelF5NWRBV2xtWnlGSHNXZUpISGxSd3lTU3FVRGpxSERBcHZ3X0JxMkw4dTJyR1B1SVV4SUZBdS0yNHQ5UU9R?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T22:31:07.260403+00:00",
-   "title_ru": "Как золотой бум способствует потере деревьев от Ганы до Амазонки",
-   "tags": [
-    "gold"
-   ]
-  },
   {
    "title": "EU Retreats From Arctic Oil Ban Language in Strategy Draft",
    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNbGlfLWx1aXVKVGFSdFFTemRIbnhvcEQzM0xTTzBVWF9sZGJyWGVaU2Q0T1FjV2s0OXFIbFppVHl0LVFqdHh3WEpNc0xfWVBvMGw3QWttQlJyT0tUb3lNR2tCNnRWT09MenJFdl80Z1J2d01uUjhKd3dyaVhLTnhQYnVBeksyckZMYTVrY1Y1SEtjSnQ1WHZXOERHZkdQa1dyTlVjMkRnN2NyZHJGb1E?oc=5",
@@ -11892,6 +11875,38 @@
    },
    {
     "src": "sec",
+    "id": "6e577ad20e9be2f8",
+    "ticker": "DOLE",
+    "company": "Dole plc",
+    "who": "Pale Fire Capital Se et al.",
+    "role": "10% owner",
+    "type": "buy",
+    "value": 8554410,
+    "shares": 648356,
+    "price": 13.19,
+    "plan": false,
+    "date": "2026-10-22",
+    "disclosed": "2026-10-22",
+    "link": "https://www.sec.gov/Archives/edgar/data/2055254/000092189526002845/0000921895-26-002845-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "77ae1ea5a5cfd31c",
+    "ticker": "LIND",
+    "company": "LINDBLAD EXPEDITIONS HOLDINGS, INC.",
+    "who": "Sven-Olof Lindblad",
+    "role": "Director, 10% owner",
+    "type": "sell",
+    "value": 8638477,
+    "shares": 240989,
+    "price": 35.85,
+    "plan": false,
+    "date": "2026-10-22",
+    "disclosed": "2026-10-22",
+    "link": "https://www.sec.gov/Archives/edgar/data/1639304/000089706926001865/0000897069-26-001865-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "dff8db13dd14cd3c",
     "ticker": "AGMB",
     "company": "AgomAb Therapeutics NV",
@@ -12065,6 +12080,22 @@
     "date": "2026-10-21",
     "disclosed": "2026-10-22",
     "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000374/0001510281-26-000374-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "1a6e628f9bcd1dbc",
+    "ticker": "CNXN",
+    "company": "PC CONNECTION INC",
+    "who": "Patricia Gallup et al.",
+    "role": "Chair, 10% owner",
+    "type": "sell",
+    "value": 1320030,
+    "shares": 15196,
+    "price": 86.87,
+    "plan": true,
+    "date": "2026-10-21",
+    "disclosed": "2026-10-22",
+    "link": "https://www.sec.gov/Archives/edgar/data/1930044/000193004426000010/0001930044-26-000010-index.htm"
    },
    {
     "src": "sec",
@@ -12289,6 +12320,22 @@
     "date": "2026-10-20",
     "disclosed": "2026-10-22",
     "link": "https://www.sec.gov/Archives/edgar/data/1875332/000105350726000151/0001053507-26-000151-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "b8568d12f19a1aa9",
+    "ticker": "AAPL",
+    "company": "Apple Inc.",
+    "who": "Jennifer Newstead",
+    "role": "SVP, GC and Government Affairs",
+    "type": "sell",
+    "value": 814748,
+    "shares": 2399,
+    "price": 339.62,
+    "plan": true,
+    "date": "2026-10-20",
+    "disclosed": "2026-10-22",
+    "link": "https://www.sec.gov/Archives/edgar/data/1780525/000114036126040540/0001140361-26-040540-index.htm"
    },
    {
     "src": "sec",
@@ -15713,70 +15760,6 @@
     "date": "2026-10-13",
     "disclosed": "2026-10-15",
     "link": "https://www.sec.gov/Archives/edgar/data/1862946/000162828026065995/0001628280-26-065995-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "25099f55c53160e1",
-    "ticker": "CXM",
-    "company": "Sprinklr, Inc.",
-    "who": "Jr Stephen M Ward",
-    "role": "Director",
-    "type": "buy",
-    "value": 850500,
-    "shares": 150000,
-    "price": 5.67,
-    "plan": false,
-    "date": "2026-10-13",
-    "disclosed": "2026-10-15",
-    "link": "https://www.sec.gov/Archives/edgar/data/1569345/000116464426000008/0001164644-26-000008-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "d13787c39159300a",
-    "ticker": "CRBG",
-    "company": "Corebridge Financial, Inc.",
-    "who": "Nippon Life Insurance Co",
-    "role": "10% owner",
-    "type": "buy",
-    "value": 8801941,
-    "shares": 253776,
-    "price": 34.68,
-    "plan": true,
-    "date": "2026-10-13",
-    "disclosed": "2026-10-15",
-    "link": "https://www.sec.gov/Archives/edgar/data/1889539/000119312526422935/0001193125-26-422935-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "4e7d86c5e5e4115d",
-    "ticker": "TRXB",
-    "company": "TRex Bio, Inc.",
-    "who": "Alexandria Venture Investments, Llc",
-    "role": "10% owner",
-    "type": "buy",
-    "value": 2499994,
-    "shares": 178571,
-    "price": 14.0,
-    "plan": false,
-    "date": "2026-10-13",
-    "disclosed": "2026-10-15",
-    "link": "https://www.sec.gov/Archives/edgar/data/2139097/000172202426000004/0001722024-26-000004-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "3fb1c38dbe7d9568",
-    "ticker": "LWAY",
-    "company": "Lifeway Foods, Inc.",
-    "who": "Smolyansky Edward",
-    "role": "10% owner",
-    "type": "sell",
-    "value": 679200,
-    "shares": 30000,
-    "price": 22.64,
-    "plan": false,
-    "date": "2026-10-13",
-    "disclosed": "2026-10-15",
-    "link": "https://www.sec.gov/Archives/edgar/data/1227847/000168316826007902/0001683168-26-007902-index.htm"
    }
   ],
   "docs": {
@@ -15814,18 +15797,19 @@
   },
   "checked": "2026-10-22T22:30:20.367730+00:00",
   "sec_seen": [
-   "0001176401-26-000007",
    "0001193125-26-429125",
    "0001873304-26-000003",
    "0001493152-26-048144",
+   "0000921895-26-002845",
    "0000310354-26-000100",
    "0001349983-26-000013",
+   "0001140361-26-040540",
    "0001193125-26-429162",
-   "0001895188-26-000005",
    "0001334945-26-000005",
    "0001400954-26-000013",
-   "0000109563-26-000045",
+   "0001930044-26-000010",
    "0001753539-26-000149",
+   "0000109563-26-000045",
    "0001193125-26-429124",
    "0001950180-26-000010",
    "0001993147-26-000004",
@@ -15837,11 +15821,11 @@
    "0001837336-26-000050",
    "0001193125-26-429152",
    "0001213900-26-111771",
+   "0000897069-26-001865",
    "0001510281-26-000373",
    "0001849050-26-000007",
    "0001212813-26-000005",
    "0001266824-26-000217",
-   "0001616707-26-000183",
    "0001193125-26-429133",
    "0001242648-26-000047"
   ],
