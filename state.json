@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "fda42d351a687542": "2026-10-19T02:35:13.712066+00:00",
-  "f57b0fffdd475b52": "2026-10-19T02:35:13.712066+00:00",
   "c2865eadfd6f1b28": "2026-10-19T02:40:13.730455+00:00",
   "525f6162cc711330": "2026-10-19T02:45:13.681875+00:00",
   "ef1c796b9935fa25": "2026-10-19T02:45:13.681875+00:00",
@@ -889,22 +887,10 @@
   "13b70e985b13ef4c": "2026-10-22T02:06:59.999121+00:00",
   "f6779324c5647b5b": "2026-10-22T02:16:59.975701+00:00",
   "04f8b680af1219cf": "2026-10-22T02:16:59.975701+00:00",
-  "9d2ddc5f02ada842": "2026-10-22T02:21:59.940409+00:00"
+  "9d2ddc5f02ada842": "2026-10-22T02:21:59.940409+00:00",
+  "bb6f3692609f7d13": "2026-10-22T02:36:59.975991+00:00"
  },
  "recent": [
-  {
-   "title": "China's economic growth picks up in third quarter, beating expectations",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPelFIVGVwcy1oY2RvRVlaQTl5REpEc1hfS0ZUb1lTeWN0M2tBbTctTWo4NzVXeWthQVNab2p1eUFYQ2xtejBoc1ktQlZFQXh1U3hOSWdNdlBzTzNvcThPMFVyNnIzSTgyQ3lXbW8taGQtTV92Vl9uUGZOWjc1cGp6NTJBTDNpcWpEUnRCMjhXcVRYNkVXSFNwaHF3UGFGU0NqZTZWZzJXc0FyX3BnUkxhVWVSNzI?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-19T02:35:13.712066+00:00",
-   "title_ru": "Экономический рост Китая ускорился в третьем квартале, превзойдя ожидания",
-   "tags": [
-    "China"
-   ]
-  },
   {
    "title": "Nifty Bank Heavyweights HDFC, ICICI in Focus After Weekend Earnings",
    "link": "https://www.bloomberg.com/news/newsletters/2026-10-19/nifty-bank-heavyweights-hdfc-icici-in-focus-after-weekend-earnings",
@@ -8735,6 +8721,16 @@
     "Fed",
     "dollar"
    ]
+  },
+  {
+   "title": "Southwest Airlines cuts profit forecast as fuel costs overshadow turnaround gains",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNSnJId1FFNzhweDNmbDMybnA4N21ETWMtMW5nYjY3Njc0WDQtcFduODFKRzVFZEVnUGJDS2piYnRFSE9CbDU2eldCbl82eGhDMVBIM3BKaDltUndGWXhQbnRQS2Jyb05tcFhoaWx0U1ZmZThEMUpuNzFLUWVPRDBqTTZhUko1bGIzblpMMjZYMnh0M1NGZWJnVDgxZHFnX29KcmVEcUJQSFR2Zw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T02:36:59.975991+00:00",
+   "title_ru": "Southwest Airlines снижает прогноз прибыли, поскольку расходы на топливо затмевают прибыль от оборота"
   }
  ],
  "last_digest": "2026-10-21",
@@ -14885,9 +14881,8 @@
    "0002014386-26-000022",
    "0001701247-26-000014",
    "0001193125-26-428041",
-   "0001191473-26-000008",
    "0001193125-26-428104",
-   "0001818383-26-000258",
+   "0001191473-26-000008",
    "0001882764-26-000009",
    "0001867888-26-000010",
    "0001193125-26-428040",
@@ -14896,6 +14891,7 @@
    "0001823543-26-000002",
    "0000804328-26-000108",
    "0002041533-26-000008",
+   "0001493152-26-047950",
    "0000804328-26-000112",
    "0001826731-26-000012",
    "0000804328-26-000107",
@@ -14921,7 +14917,7 @@
    "0001193125-26-428106",
    "0000935703-26-000120",
    "0001231919-26-001485",
-   "0001493152-26-047950"
+   "0001818383-26-000258"
   ],
   "errors": {}
  }
