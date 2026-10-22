@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "0b503e5461d6eb35": "2026-10-19T16:50:37.618169+00:00",
-  "f201afddd6ad24ca": "2026-10-19T16:50:37.618169+00:00",
   "273584fcb52c24be": "2026-10-19T17:05:37.951356+00:00",
   "c6971bfe8b4f4caa": "2026-10-19T17:15:37.580419+00:00",
   "9b4807e570c3cdf0": "2026-10-19T17:20:37.587292+00:00",
@@ -916,40 +914,10 @@
   "d9821e341f84e847": "2026-10-22T16:34:40.236248+00:00",
   "b9e41f679523ad3d": "2026-10-22T16:39:40.238014+00:00",
   "f89153a0e31ae83c": "2026-10-22T16:39:40.238014+00:00",
-  "ed1aa4feb5ddcb6f": "2026-10-22T16:44:40.179116+00:00"
+  "ed1aa4feb5ddcb6f": "2026-10-22T16:44:40.179116+00:00",
+  "5292216b632a8c9a": "2026-10-22T16:59:40.228671+00:00"
  },
  "recent": [
-  {
-   "title": "Treasuries Fall as Tech Shares Rebound, Weakening Haven Demand",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-19/treasuries-fall-as-tech-shares-rebound-weakening-haven-demand",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-19T16:50:37.618169+00:00",
-   "title_ru": "Казначейские облигации падают на фоне восстановления акций технологических компаний и ослабления спроса на активы-убежища",
-   "lead": "Treasuries fell as a rebound in US technology shares sapped haven demand for US government debt.",
-   "lead_ru": "Казначейские облигации упали, поскольку восстановление американских технологических акций подорвало спрос на государственные долги США.",
-   "tags": [
-    "bonds",
-    "markets"
-   ]
-  },
-  {
-   "title": "Avis Budget (CAR) Stock Crashes as 600% Short Squeeze Rally Fully Unwinds",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-19/avis-budget-car-stock-crashes-as-600-short-squeeze-rally-fully-unwinds",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T16:50:37.618169+00:00",
-   "title_ru": "Акции Avis Budget (CAR) рухнули, поскольку рост доли коротких продаж на 600% полностью завершился",
-   "lead": "Shares of Avis Budget Group Inc. have crashed back to earth, ending a chapter that put bearish investors through a punishing short squeeze.",
-   "lead_ru": "Акции Avis Budget Group Inc. рухнули обратно на землю, завершив главу, в которой медвежьим инвесторам пришлось пережить суровое короткое сжатие.",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "CoreWeave Upgraded to Buy at Goldman on Overblown Debt Worries",
    "link": "https://www.bloomberg.com/news/articles/2026-10-19/coreweave-upgraded-to-buy-at-goldman-on-overblown-debt-worries",
@@ -11627,6 +11595,22 @@
    },
    {
     "src": "sec",
+    "id": "6912ae491c754b1d",
+    "ticker": "ECF",
+    "company": "ELLSWORTH GROWTH & INCOME FUND LTD",
+    "who": "Saba Capital Management, L.p.",
+    "role": "10% owner",
+    "type": "buy",
+    "value": 30108,
+    "shares": 2600,
+    "price": 11.58,
+    "plan": false,
+    "date": "2026-10-21",
+    "disclosed": "2026-10-22",
+    "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000370/0001510281-26-000370-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "d0cd22094e57b543",
     "ticker": "NBIS",
     "company": "Nebius Group N.V.",
@@ -15517,14 +15501,10 @@
   },
   "checked": "2026-10-22T16:19:40.209379+00:00",
   "sec_seen": [
-   "0001437749-26-033219",
    "0001437749-26-033222",
    "0001251987-26-000012",
-   "0000904454-26-000526",
-   "0001437749-26-033217",
-   "0001437749-26-033215",
+   "0001510281-26-000370",
    "0001437749-26-033220",
-   "0001437749-26-033216",
    "0001437749-26-033223"
   ],
   "errors": {}
