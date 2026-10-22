@@ -38,6 +38,18 @@ EFFR_URL = "https://markets.newyorkfed.org/api/rates/unsecured/effr/last/1.json"
 FOMC_URL = "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
 CBR_URL = "https://www.cbr.ru/hd_base/KeyRate/?UniDbQuery.Posted=True&UniDbQuery.From={frm}&UniDbQuery.To={to}"
 ZQ_URL = "https://query1.finance.yahoo.com/v8/finance/chart/{sym}?range=5d&interval=1d"
+# more curves for WB: Bank of Canada (Valet API), Reserve Bank of Australia (table F2)
+BOC_URL = ("https://www.bankofcanada.ca/valet/observations/BD.CDN.2YR.DQ.YLD,BD.CDN.5YR.DQ.YLD,BD.CDN.10YR.DQ.YLD,"
+           "BD.CDN.LONG.DQ.YLD/json?recent=40")
+RBA_URL = "https://www.rba.gov.au/statistics/tables/csv/f2-data.csv"
+# money-market rates (MMR): New York Fed, ECB, Bank of England, Bank of Russia, Moscow Exchange
+NYFED_URL = "https://markets.newyorkfed.org/api/rates/{kind}/{k}/last/2.json"
+ESTR_URL = "https://data-api.ecb.europa.eu/service/data/EST/B.EU000A2X2A25.WT?lastNObservations=3&format=csvdata"
+SONIA_URL = ("https://www.bankofengland.co.uk/boeapps/database/_iadb-fromshowcolumns.asp?csv.x=yes&Datefrom={frm}"
+             "&Dateto=now&SeriesCodes=IUDSOIA&CSVF=TN&UsingCodes=Y&VPD=Y&VFD=N")
+RUONIA_URL = "https://www.cbr.ru/hd_base/ruonia/dynamics/?UniDbQuery.Posted=True&UniDbQuery.From={frm}&UniDbQuery.To={to}"
+RUSFAR_URL = ("https://iss.moex.com/iss/engines/stock/markets/index/securities/RUSFAR.json?iss.meta=off&iss.only=marketdata"
+              "&marketdata.columns=SECID,CURRENTVALUE,LASTVALUE,TRADEDATE")
 
 MONTH_CODES = "FGHJKMNQUVXZ"
 
@@ -234,6 +246,46 @@ def ru_curve(today):
             "w": None, "m": None, "wd": None, "md": None}
 
 
+def parse_boc(payload):
+    """Bank of Canada Valet: {observations: [{d: date, SERIES: {v: "2.61"}}]} → rows for curve_from_rows."""
+    names = {"BD.CDN.2YR.DQ.YLD": "2Y", "BD.CDN.5YR.DQ.YLD": "5Y", "BD.CDN.10YR.DQ.YLD": "10Y", "BD.CDN.LONG.DQ.YLD": "30Y"}
+    rows = []
+    for o in (payload or {}).get("observations") or []:
+        try:
+            d = datetime.strptime(o["d"], "%Y-%m-%d").date()
+        except (KeyError, ValueError):
+            continue
+        rows.append((d, {lbl: _f((o.get(code) or {}).get("v")) for code, lbl in names.items()}))
+    return rows
+
+
+def ca_curve(today):
+    return curve_from_rows(parse_boc(json.loads(_get(BOC_URL))), ["2Y", "5Y", "10Y", "30Y"])
+
+
+def parse_rba(text):
+    """RBA table F2: a header block, a "Series ID" line, then "16-Oct-2026,3.51,3.62,3.88,4.31,1.95"."""
+    rows, started = [], False
+    for line in text.splitlines():
+        parts = [p.strip() for p in line.split(",")]
+        if parts and parts[0] == "Series ID":
+            started = True
+            continue
+        if not started or len(parts) < 5:
+            continue
+        try:
+            d = datetime.strptime(parts[0], "%d-%b-%Y").date()
+        except ValueError:
+            continue
+        rows.append((d, {"2Y": _f(parts[1]), "3Y": _f(parts[2]), "5Y": _f(parts[3]), "10Y": _f(parts[4])}))
+    return rows
+
+
+def au_curve(today):
+    rows = parse_rba(_get(RBA_URL, timeout=60).decode("utf-8-sig", "replace"))
+    return curve_from_rows(rows[-60:], ["2Y", "3Y", "5Y", "10Y"])
+
+
 # code, (English name, Russian name), flag, loader, fallback (code, names, loader)
 CURVES = [
     ("US", ("United States", "США"), "🇺🇸", us_curve, None),
@@ -241,6 +293,8 @@ CURVES = [
     ("UK", ("United Kingdom", "Великобритания"), "🇬🇧", uk_curve, None),
     ("JP", ("Japan", "Япония"), "🇯🇵", jp_curve, None),
     ("RU", ("Russia (OFZ)", "Россия (ОФЗ)"), "🇷🇺", ru_curve, None),
+    ("CA", ("Canada", "Канада"), "🇨🇦", ca_curve, None),
+    ("AU", ("Australia", "Австралия"), "🇦🇺", au_curve, None),
 ]
 
 
@@ -441,6 +495,85 @@ def wirp(today):
 
 
 # ---------------------------------------------------------------------------
+# Денежный рынок (MMR): ставки овернайт
+# ---------------------------------------------------------------------------
+def _pair(obs):
+    """[(date, value)] → (last date, last value, previous value)."""
+    obs = sorted(o for o in obs if o[1] is not None)
+    if not obs:
+        return None
+    return obs[-1][0], obs[-1][1], obs[-2][1] if len(obs) > 1 else None
+
+
+def parse_nyfed(payload):
+    return _pair([(r.get("effectiveDate"), _f(r.get("percentRate"))) for r in (payload or {}).get("refRates") or []])
+
+
+def parse_estr(text):
+    return _pair([(r.get("TIME_PERIOD"), _f(r.get("OBS_VALUE"))) for r in csv.DictReader(io.StringIO(text))])
+
+
+def parse_sonia(text):
+    obs = []
+    for r in csv.DictReader(io.StringIO(text)):
+        try:
+            obs.append((datetime.strptime(r["DATE"].strip(), "%d %b %Y").date().isoformat(), _f(r.get("IUDSOIA"))))
+        except (KeyError, ValueError):
+            continue
+    return _pair(obs)
+
+
+def parse_ruonia(html_text):
+    rows = re.findall(r"<td>(\d\d\.\d\d\.\d{4})</td>\s*<td[^>]*>([\d,]+)</td>", html_text)
+    return _pair([(datetime.strptime(d, "%d.%m.%Y").date().isoformat(), _f(v)) for d, v in rows])
+
+
+def parse_rusfar(payload):
+    t = (payload or {}).get("marketdata") or {}
+    cols, data = t.get("columns") or [], t.get("data") or []
+    if not data:
+        return None
+    r = dict(zip(cols, data[0]))
+    v = _f(r.get("CURRENTVALUE")) or _f(r.get("LASTVALUE"))
+    return (r.get("TRADEDATE"), v, _f(r.get("LASTVALUE")) if r.get("CURRENTVALUE") else None) if v is not None else None
+
+
+# key, country, English, Russian, loader
+MM = [
+    ("SOFR", "US", "Secured overnight financing rate", "Обеспеченная ставка овернайт (SOFR)",
+     lambda t: parse_nyfed(json.loads(_get(NYFED_URL.format(kind="secured", k="sofr"))))),
+    ("EFFR", "US", "Effective federal funds rate", "Эффективная ставка по федеральным фондам",
+     lambda t: parse_nyfed(json.loads(_get(NYFED_URL.format(kind="unsecured", k="effr"))))),
+    ("OBFR", "US", "Overnight bank funding rate", "Ставка межбанковского фондирования овернайт",
+     lambda t: parse_nyfed(json.loads(_get(NYFED_URL.format(kind="unsecured", k="obfr"))))),
+    ("ESTR", "EA", "Euro short-term rate (€STR)", "Краткосрочная ставка евро (€STR)",
+     lambda t: parse_estr(_get(ESTR_URL).decode("utf-8", "replace"))),
+    ("SONIA", "UK", "Sterling overnight index average", "Средняя ставка овернайт в фунтах (SONIA)",
+     lambda t: parse_sonia(_get(SONIA_URL.format(frm=(t - timedelta(days=14)).strftime("%d/%b/%Y"))).decode("utf-8", "replace"))),
+    ("RUONIA", "RU", "Ruble overnight index average", "Индикатор RUONIA",
+     lambda t: parse_ruonia(_get(RUONIA_URL.format(frm=(t - timedelta(days=14)).strftime("%d.%m.%Y"), to=t.strftime("%d.%m.%Y"))).decode("utf-8", "replace"))),
+    ("RUSFAR", "RU", "Ruble secured funding rate (repo)", "Ставка RUSFAR (репо)",
+     lambda t: parse_rusfar(json.loads(_get(RUSFAR_URL)))),
+]
+
+
+def money_markets(today, prev=None):
+    out = []
+    old = {x.get("k"): x for x in prev or []}
+    for k, c, en, ru, fn in MM:
+        try:
+            r = fn(today)
+            if r and r[1] is not None:
+                out.append({"k": k, "c": c, "en": en, "ru": ru, "date": r[0], "v": round(r[1], 4), "prev": round(r[2], 4) if r[2] is not None else None})
+                continue
+        except Exception as e:
+            print(f"  ! money market {k}: {type(e).__name__}: {e}"[:200])
+        if k in old:   # keep the last known value rather than lose the row
+            out.append(old[k])
+    return out
+
+
+# ---------------------------------------------------------------------------
 def load_previous(path=RATES_FILE):
     try:
         with open(path, encoding="utf-8") as f:
@@ -457,7 +590,7 @@ def build(now=None, path=RATES_FILE, max_age_h=2.0, force=False):
         return prev
     today = now.date()
     data = {"updated": now.isoformat(), "curves": dict(prev.get("curves") or {}),
-            "cb": prev.get("cb") or [], "wirp": prev.get("wirp")}
+            "cb": prev.get("cb") or [], "wirp": prev.get("wirp"), "mm": prev.get("mm") or []}
     for code, names, flag, fn, fallback in CURVES:
         try:
             c = fn(today)
@@ -482,6 +615,12 @@ def build(now=None, path=RATES_FILE, max_age_h=2.0, force=False):
             data["cb"] = cb
     except Exception as e:
         print(f"  ! central bank rates: {type(e).__name__}: {e}"[:200])
+    try:
+        mm = money_markets(today, data["mm"])
+        if mm:
+            data["mm"] = mm
+    except Exception as e:
+        print(f"  ! money markets: {type(e).__name__}: {e}"[:200])
     try:
         w = wirp(today)
         if w and w.get("meetings"):

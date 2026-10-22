@@ -63,6 +63,23 @@ def parse(payloads, years):
     return rows
 
 
+def world_map(payloads, year):
+    """Every country's value for the current year, by indicator — for the world map (MAP ECO).
+    IMF codes of countries are ISO 3166 alpha-3; groups (WEOWORLD, ADVEC, EURO…) are longer and left out."""
+    out = {"year": year}
+    for ind, d in payloads.items():
+        if ind == "NGDPD":
+            continue
+        vals = {}
+        for code, series in ((d.get("values") or {}).get(ind) or {}).items():
+            v = (series or {}).get(str(year))
+            if len(code) == 3 and code.isalpha() and code.isupper() and isinstance(v, (int, float)):
+                vals[code] = round(v, 1)
+        if vals:
+            out[ind] = vals
+    return out
+
+
 def build(now=None, path=OUT, fetcher=fetch, max_age_h=24):
     """Returns the number of countries written (0 when the file is fresh or the IMF did not answer)."""
     now = now or datetime.now(timezone.utc)
@@ -85,7 +102,7 @@ def build(now=None, path=OUT, fetcher=fetch, max_age_h=24):
         return 0   # keep yesterday's file rather than a half-empty one
     data = {"updated": now.isoformat(), "source": "IMF World Economic Outlook", "years": years,
             "ind": {k: {"en": en, "ru": ru, "unit": u} for k, (en, ru, u) in INDICATORS.items() if k in payloads},
-            "rows": rows}
+            "rows": rows, "map": world_map(payloads, now.year)}
     with open(path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, separators=(",", ":"))
     return len(rows)

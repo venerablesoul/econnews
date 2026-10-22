@@ -316,6 +316,79 @@ nav.tabs button.more{flex:.7;color:var(--amber)}
 .fnlist button b{color:var(--amber);display:block}
 .fnlist button span{color:var(--muted);font-size:11.5px}
 
+/* карта (MAP, STORM, SHIP, WETR, ECO) */
+.gm{display:flex!important;flex-direction:row;overflow:hidden;position:relative}
+.gm-wrap{position:relative;flex:1;min-width:0;min-height:0;background:#000;cursor:grab;touch-action:none;overflow:hidden}
+.gm-wrap.drag{cursor:grabbing}
+.gm-wrap>canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.gm-side{flex:none;width:240px;border-left:1px solid var(--line2);background:#060606;overflow:auto;scrollbar-width:thin;scrollbar-color:#333 transparent}
+.gm-side .sh{color:var(--amber);padding:6px 8px 4px;border-bottom:1px solid var(--line);font-size:11.5px;display:flex;justify-content:space-between;gap:6px;position:sticky;top:0;background:#060606;z-index:1}
+.gm-side .sh small{color:var(--faint)}
+.gm-ly{display:flex;align-items:center;gap:7px;width:100%;text-align:left;padding:4px 8px;border-bottom:1px solid #111;color:var(--muted)}
+.gm-ly:hover{background:var(--hl)}
+.gm-ly i,.gm-row i{width:9px;height:9px;border-radius:50%;flex:none;border:1px solid #333}
+.gm-ly.on{color:var(--text)}
+.gm-ly small{margin-left:auto;color:var(--faint);font-size:10.5px}
+.gm-row{display:flex;align-items:flex-start;gap:7px;width:100%;text-align:left;padding:5px 8px;border-bottom:1px solid #111}
+.gm-row:hover{background:var(--hl)}
+.gm-row i{margin-top:3px}
+.gm-row div{display:flex;flex-direction:column;min-width:0}
+.gm-row div b{font-weight:500;color:var(--text)}
+.gm-row div span{color:var(--muted);font-size:11.5px}
+.gm-row .gm-near{color:var(--amber-dim)}
+.gm-ch{align-items:center}
+.gm-ch .nm{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.gm-ch .num{min-width:44px}
+.gm-chips{display:flex;flex-wrap:wrap;gap:4px;padding:6px 8px;border-bottom:1px solid var(--line)}
+.gm-chips .chipbtn{font-size:11px;padding:1px 6px}
+.gm-ctl{position:absolute;right:8px;top:8px;display:flex;flex-direction:column;gap:2px;z-index:3}
+.gm-ctl button{background:#0b0b0b;border:1px solid var(--line2);color:var(--amber);width:28px;height:26px}
+.gm-ctl button:hover{border-color:var(--amber)}
+.gm-ctl .gm-tbtn{display:none}
+.gm-att{position:absolute;left:6px;bottom:3px;color:#5a5a5a;font-size:10px;z-index:2;pointer-events:none;max-width:75%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.gm-leg{position:absolute;left:8px;top:8px;background:rgba(0,0,0,.9);border:1px solid var(--line2);padding:5px 8px;font-size:11px;z-index:2;color:var(--muted);max-width:min(60%,260px);pointer-events:none}
+.gm-leg div{display:flex;align-items:center;gap:5px}
+.gm-leg i{display:inline-block;width:8px;height:8px;border-radius:50%}
+.gm-leg b{color:var(--text);font-weight:500;display:block;margin-bottom:3px}
+.gm-grad{height:8px;width:180px;margin:2px 0}
+.gm-ends{display:flex!important;justify-content:space-between;width:180px;font-size:10px}
+.gm-note{color:var(--faint);font-size:10.5px;margin-top:2px}
+.gm-info{position:relative;padding:8px 26px 8px 10px;border-bottom:1px solid var(--amber-dim);background:#0c0905;display:flex;flex-direction:column;gap:2px;font-size:12px;color:var(--muted)}
+.gm-info b{color:var(--yellow);font-weight:500}
+.gm-info a{color:var(--amber);text-decoration:none;margin-top:3px}
+.gm-info .chipbtn{align-self:flex-start;margin-top:4px}
+.gm-info .gm-x{position:absolute;right:6px;top:5px;color:var(--faint)}
+.gm-spark{display:block;margin:4px 0;background:#050505}
+.gm.narrow .gm-side{position:absolute;right:0;top:0;bottom:0;z-index:4;display:none;box-shadow:-6px 0 18px rgba(0,0,0,.6)}
+.gm.narrow.side-open .gm-side{display:block}
+.gm.narrow .gm-ctl .gm-tbtn{display:block}
+.gm.narrow.side-open .gm-ctl{right:248px}
+.gm.narrow.side-open .gm-leg{display:none}
+.tm-tip b{display:block;color:var(--yellow);font-weight:500;margin-bottom:2px}
+
+/* технический анализ (TECH) */
+.tc-ctl{gap:4px}
+.tc-ctl .chipbtn{font-size:11px;padding:1px 6px}
+.tc-sep{width:1px;align-self:stretch;background:var(--line2);margin:0 2px}
+.tc-cv{min-height:330px;flex:none!important;height:max(330px,calc(100% - 150px))}
+.tc-x{position:absolute;inset:0;width:100%;height:100%}
+.tc-sum{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:1px;background:var(--line);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.tc-sum div{background:var(--panel);padding:4px 8px;display:flex;justify-content:space-between;align-items:baseline;gap:8px;min-width:0}
+.tc-sum div span{color:var(--muted)}
+.tc-sum div span{flex:none}
+.tc-sum div b{font-weight:500;text-align:right}
+.tc-tabs2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:8px;padding:4px 0}
+
+/* мониторы (MOV, MOST…) */
+.mon-in{display:contents}
+.mv-nm{max-width:150px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.mv-nm b{font-weight:500}
+.mv-nm small{color:var(--muted)}
+.mon-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1px;background:var(--line)}
+.mon-2>div{background:var(--panel);min-width:0;overflow-x:auto}
+.mbar{display:inline-block;height:8px;margin-right:6px;vertical-align:middle;opacity:.9}
+.tbl td.nm{max-width:170px}
+
 /* мобильная навигация */
 nav.tabs{display:none}
 
@@ -416,7 +489,7 @@ nav.tabs{display:none}
     <div class="ptabs" id="des-tabs">
       <button data-t="DES" class="on">DES</button><button data-t="FA">FA</button><button data-t="ERN">ERN</button><button data-t="EE">EE</button>
       <button data-t="ANR">ANR</button><button data-t="CN">CN</button><button data-t="HDS">HDS</button><button data-t="DVD">DVD</button>
-      <button data-t="OMON">OMON</button><button data-t="RV">RV</button><button data-t="CF">CF</button><span class="sp"></span>
+      <button data-t="OMON">OMON</button><button data-t="RV">RV</button><button data-t="CF">CF</button><button data-t="GE">GE</button><button data-t="CACS">CACS</button><button data-t="CRPR">CRPR</button><span class="sp"></span>
     </div>
     <div class="pb" id="des-body"><div class="empty" data-i18n-html="des_empty">Type a ticker and a function: <b>AAPL DES</b>, <b>NVDA FA</b>, <b>TSLA ERN</b>, <b>MSFT ANR</b>, <b>AMZN CN</b>. Moscow Exchange works too: <b>SBER DES</b>.</div></div>
   </section>
@@ -444,7 +517,7 @@ nav.tabs{display:none}
 
   <section class="panel" id="p-gc">
     <div class="ph"><span class="code" id="gc-code">GC</span><span class="ttl" id="gc-title" data-i18n="p_gc">BONDS &amp; RATES</span><span class="sub" id="gc-sub"></span></div>
-    <div class="ptabs" id="gc-tabs"><button data-t="GC" data-i18n="gc_tab" class="on">GC · CURVES</button><button data-t="CB" data-i18n="cb_tab">CB · CENTRAL BANKS</button><button data-t="WIRP" data-i18n="wirp_tab">WIRP · FED</button><span class="sp"></span></div>
+    <div class="ptabs" id="gc-tabs"><button data-t="GC" data-i18n="gc_tab" class="on">GC · CURVES</button><button data-t="CB" data-i18n="cb_tab">CB · CENTRAL BANKS</button><button data-t="WIRP" data-i18n="wirp_tab">WIRP · FED</button><button data-t="WB" data-i18n="wb_tab">WB · WORLD BONDS</button><button data-t="BTMM" data-i18n="btmm_tab">BTMM · COUNTRY</button><button data-t="MMR" data-i18n="mmr_tab">MMR · MONEY MARKETS</button><button data-t="SRCH" data-i18n="srch_tab">SRCH · TREASURIES</button><span class="sp"></span></div>
     <div class="pb" id="gc-body" style="display:flex;flex-direction:column"><div class="loading" data-i18n="loading">Loading</div></div>
   </section>
 
@@ -452,6 +525,24 @@ nav.tabs{display:none}
     <div class="ph"><span class="code" id="ana-code">ECST</span><span class="ttl" id="ana-title" data-i18n="p_ana">WORLD ECONOMY &amp; CROSS-ASSET</span><span class="sub" id="ana-sub"></span></div>
     <div class="ptabs" id="ana-tabs"><button data-t="ECST" data-i18n="ecst_tab" class="on">ECST · ECONOMIES</button><button data-t="FXC" data-i18n="fxc_tab">FXC · CROSS RATES</button><button data-t="CORR" data-i18n="corr_tab">CORR · CORRELATION</button><button data-t="OPT" data-i18n="opt_tab">OMON · OPTIONS</button><button data-t="IPO" data-i18n="ipo_tab">IPO · CALENDAR</button><span class="sp"></span></div>
     <div class="pb" id="ana-body"><div class="loading" data-i18n="loading">Loading</div></div>
+  </section>
+
+  <section class="panel" id="p-tech">
+    <div class="ph"><span class="code" id="tech-code">TECH</span><span class="ttl" id="tech-title" data-i18n="p_tech">TECHNICAL ANALYSIS</span><span class="sub" id="tech-sub"></span></div>
+    <div class="ptabs" id="tech-tabs"><button data-t="TECH" class="on" data-i18n="tech_tab">TECH · CHART</button><button data-t="VAP" data-i18n="vap_tab">VAP · VOLUME AT PRICE</button><button data-t="TSM" data-i18n="tsm_tab">TSM · TRADE SUMMARY</button><button data-t="QR" data-i18n="qr_tab">QR · TIME &amp; SALES</button><button data-t="TRA" data-i18n="tra_tab">TRA · TOTAL RETURN</button><button data-t="TRAY" data-i18n="tray_tab">TRAY · RETURNS TABLE</button><span class="sp"></span></div>
+    <div class="pb" id="tech-body" style="display:flex;flex-direction:column"><div class="empty" data-i18n-html="tech_empty">Technical analysis: <b>TECH AAPL</b>, <b>BTC GPO</b>, <b>GOLD TA</b>.</div></div>
+  </section>
+
+  <section class="panel" id="p-mon">
+    <div class="ph"><span class="code" id="mon-code">MOV</span><span class="ttl" id="mon-title" data-i18n="p_mon">MARKET MONITORS</span><span class="sub" id="mon-sub"></span></div>
+    <div class="ptabs" id="mon-tabs"><button data-t="MOV" class="on" data-i18n="mov_tab">MOV · MOVERS</button><button data-t="MOST" data-i18n="most_tab">MOST · ACTIVE</button><button data-t="MRR" data-i18n="mrr_tab">MRR · RETURNS</button><button data-t="MEMB" data-i18n="memb_tab">MEMB · WEIGHTS</button><button data-t="WPE" data-i18n="wpe_tab">WPE · VALUATION</button><button data-t="BI" data-i18n="bi_tab">BI · SECTORS</button><button data-t="FPC" data-i18n="fpc_tab">FPC · FUNDS</button><button data-t="CDR" data-i18n="cdr_tab">CDR · EXCHANGES</button><span class="sp"></span></div>
+    <div class="pb" id="mon-body"><div class="loading" data-i18n="loading">Loading</div></div>
+  </section>
+
+  <section class="panel" id="p-map">
+    <div class="ph"><span class="code" id="map-code">MAP</span><span class="ttl" id="map-title" data-i18n="p_map">WORLD MAP</span><span class="sub" id="map-sub"></span></div>
+    <div class="ptabs" id="map-tabs"><button data-t="MAP" class="on" data-i18n="map_tab">MAP · LAYERS</button><button data-t="STORM" data-i18n="storm_tab">STORM · STORMS</button><button data-t="SHIP" data-i18n="ship_tab">SHIP · SHIPPING</button><button data-t="WETR" data-i18n="wetr_tab">WETR · WEATHER</button><button data-t="ECO" data-i18n="mapeco_tab">ECO · COUNTRIES</button><span class="sp"></span></div>
+    <div class="pb gm" id="map-body"></div>
   </section>
 
   <section class="panel" id="p-my">
@@ -612,7 +703,7 @@ function flash(node, dir){ if (!node || !dir) return; node.classList.remove('fla
 var Q = {};          // world market quotes by id
 var C = {};          // crypto by ticker
 var data = null;     // the bot's data.json
-var newsFilter = 'all', newsQuery = '';
+var newsFilter = 'all', newsQuery = '', newsPred = null, newsPredLabel = '';
 var trdKind = 'congress', trdBuy = false, trdQuery = '';
 var curChart = 'S&P';
 
@@ -997,6 +1088,7 @@ function renderNews(){
   var items = (data.news || []).filter(function(n){
     if (newsFilter === 'high' && n.level !== 'high') return false;
     if (newsFilter.charAt(0) === '#' && (n.tags || []).map(I.tagKey).indexOf(newsFilter.slice(1)) < 0) return false;
+    if (newsFilter === 'pred' && newsPred && !newsPred(n)) return false;
     if (q && [n.title, n.title_en, n.title_ru, n.original, n.lead, n.lead_en, n.lead_ru, (n.tags || []).map(I.tag).join(' '), (n.tags || []).join(' '), (n.tk || []).join(' ')]
       .join(' ').toLowerCase().indexOf(q) < 0) return false;
     return true;
@@ -1031,6 +1123,7 @@ function setNewsFilter(f){
   var tools = $('ntools');
   tools.querySelectorAll('.chip.tag').forEach(function(c){ c.remove() });
   if (f.charAt(0) === '#') { var c = el('button', 'chip on tag', '#' + I.tag(f.slice(1)) + ' ✕'); c.onclick = function(){ setNewsFilter('all') }; tools.appendChild(c) }
+  if (f === 'pred' && newsPred) { var c2 = el('button', 'chip on tag', newsPredLabel + ' ✕'); c2.onclick = function(){ setNewsFilter('all') }; tools.appendChild(c2) }
   tools.querySelectorAll('.chip[data-f]').forEach(function(c){ c.classList.toggle('on', c.dataset.f === f) });
   renderNews();
 }
@@ -1146,6 +1239,7 @@ function openTrd(kind, arg){
 /* ======================= panels and commands ======================= */
 var isMobile = function(){ return window.matchMedia('(max-width:760px)').matches };
 function show(pid){
+  var tip = $('tm-tip'); if (tip) tip.style.display = 'none';   // a chart's hover card must not outlive the chart
   if (!isMobile() && window.Layout) { window.Layout.place(pid); return }
   document.querySelectorAll('.panel').forEach(function(p){ p.classList.toggle('show', p.id === pid); p.classList.toggle('focus', p.id === pid) });
   document.querySelectorAll('#tabs button').forEach(function(b){ b.classList.toggle('on', b.dataset.p === pid) });
@@ -1297,6 +1391,7 @@ window.TERM = {
   show: show, isMobile: isMobile, openChart: openChart, runSymbol: runSymbol, runCommand: runCommand,
   openOverlay: openOverlay, curChart: function(){ return curChart },
   api: function(){ return API }, loadConfig: loadConfig,
+  newsTopic: function(pred, label, query){ show('p-news'); newsPred = pred; newsPredLabel = label; $('nq').value = query || ''; newsQuery = query || ''; setNewsFilter(pred ? 'pred' : 'all') },
   authHeaders: function(){ var h = {}, init = tgInit(), p = ownerPass(); if (init) h['X-Tg-Init'] = init; if (p) h['X-Owner-Key'] = p; return h },
   hasIdentity: function(){ return !!(tgInit() || ownerPass()) },
   apiTier: function(){ return apiTier }, dmy: dmy, I: I, TX: TX
@@ -1304,5 +1399,8 @@ window.TERM = {
 })();
 </script>
 <script src="fn.js"></script>
+<script src="tech.js"></script>
+<script src="mon.js"></script>
+<script src="map.js"></script>
 </body>
 </html>

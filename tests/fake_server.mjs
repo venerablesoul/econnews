@@ -1,20 +1,27 @@
 // A local bot server for the terminal e2e tests: the real worker/src code with faked external services.
 // Run: node tests/fake_server.mjs 8787
 import http from "node:http";
-import { PAGES, TOKEN, OWNER, KV, installMocks, dataJson, stocksJson, ratesJson, coAAPL, optAAPL, optionsJson, macroJson, moexJson } from "./mocks.mjs";
+import { PAGES, TOKEN, OWNER, KV, installMocks, dataJson, stocksJson, ratesJson, coAAPL, optAAPL, optionsJson, macroJson, moexJson, geoRoute } from "./mocks.mjs";
+import { wpeJson, ratesExtra, macroMap } from "./geo_fixtures.mjs";
 
 installMocks();
 const worker = (await import("../worker/src/index.js")).default;
 const env = { TELEGRAM_BOT_TOKEN: TOKEN, OWNER_ID: OWNER, FINNHUB_API_KEY: "FHKEY", TERMINAL_PASSWORD: "pw", PAGES_URL: PAGES, SUBS: new KV() };
 const ctx = { waitUntil() {} };
 const FX = { "data.json": dataJson, "stocks.json": stocksJson, "rates.json": ratesJson, "co/AAPL.json": coAAPL, "opt/AAPL.json": optAAPL,
-  "options.json": optionsJson, "macro.json": macroJson, "moex.json": moexJson };
+  "options.json": optionsJson, "macro.json": { ...macroJson, map: macroMap }, "moex.json": moexJson, "wpe.json": wpeJson,
+  "rates.json": { ...ratesJson, ...ratesExtra } };
 
 const port = Number(process.argv[2] || 8787);
 http.createServer(async (req, res) => {
   try {
     const url = "http://127.0.0.1:" + port + req.url;
     const path = new URL(url).pathname;
+    if (path === "/__geo") {   // what a map source would answer (the browser's direct requests in the e2e tests)
+      const body = geoRoute(new URL(new URL(url).searchParams.get("u")));
+      res.writeHead(body && body.__status ? body.__status : 200, { "content-type": "application/json", "Access-Control-Allow-Origin": "*" });
+      return res.end(JSON.stringify(body === undefined ? { error: "no fixture" } : body));
+    }
     if (path.startsWith("/__fx/")) {
       const body = FX[path.slice(6)];
       res.writeHead(body ? 200 : 404, { "content-type": "application/json", "Access-Control-Allow-Origin": "*" });

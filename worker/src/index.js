@@ -16,6 +16,8 @@
 //   /api/corr       — correlation matrix in one request: ?s=S%26P,GOLD,BTC&r=1y (3m 6m 1y 2y 5y)
 //   /api/live       — fresh stories and quotes from the news bot
 //   /api/me         — watchlist, portfolio and alerts (sign-in via Telegram or the owner's password)
+//   /api/geo        — map layers and calendars from sources that do not allow browsers: ?u=<address> (listed hosts only)
+//   /api/perf       — returns over 1D…5Y for up to 40 instruments: ?s=SPY,QQQ,GOLD (TRAY, FPC)
 //   cron            — every 2 minutes checks alerts and sends messages
 //
 // Secrets (set automatically from the GitHub secrets):
@@ -29,6 +31,7 @@ import { COMPANY_PARTS, getCompany, getCorr, getHistory, getIpos, getQuotes, mkt
 import { isNewCallback, newCallback, newCommand, watchReminders } from "./botcmd.js";
 import { L, aiSum, getLang, newsField, norm, setLang, sourceName, t, tagName, tradeLabel, TRADE_TYPE } from "./i18n.js";
 import { checkAlerts, meApi } from "./user.js";
+import { geoProxy, getPerf } from "./extra.js";
 
 // US stocks and ETFs — free Finnhub key, for everyone
 const STOCKS = ["SPY", "QQQ", "DIA", "IWM", "AAPL", "MSFT", "NVDA", "AMZN", "GOOGL", "META", "TSLA"];
@@ -74,6 +77,8 @@ export default {
       if (url.pathname === "/api/history") return cors(await historyApi(env, url));
       if (url.pathname === "/api/corr") return cors(await corrApi(env, url));
       if (url.pathname === "/api/live") return cors(await liveApi(env));
+      if (url.pathname === "/api/geo") return cors(await geoProxy(url.searchParams.get("u")));
+      if (url.pathname === "/api/perf") return cors(json(await getPerf(env, (url.searchParams.get("s") || "").split(",")), 200, { "Cache-Control": "public, max-age=300" }));
       if (url.pathname === "/api/me") {
         return cors(json(await meApi(req, env, await whoIs(req, env), norm(url.searchParams.get("lang"))), 200, { "Cache-Control": "no-store" }));
       }

@@ -2,6 +2,7 @@
 // Telegram, QuickChart, translators and the site's files. No network.
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
+import * as G from "./geo_fixtures.mjs";
 
 // site files built by the Python scripts (company.py, options.py, macro.py, moex.py) — generated from real answers
 const page = (name) => JSON.parse(readFileSync(new URL("./fixtures/pages/" + name, import.meta.url), "utf8"));
@@ -63,8 +64,10 @@ export const ratesJson = {
     { c: "RU", name: "Bank of Russia", name_ru: "ЦБ РФ", flag: "🇷🇺", rate: 14, prev: 15, since: "2026-09-12" }],
   wirp: { effr: 3.88, lo: 3.75, hi: 4.0, meetings: [{ date: "2026-10-28", after: 4.005, d_bp: 12.5, cum_bp: 12.5, hike: 50, hold: 50, cut: 0, hike50: 0 }] },
 };
-export const finAAPL = { s: "AAPL", annual: [{ end: "2025-09-27", rev: 416e9, ni: 112e9, eps: 7.46, fcf: 98e9, cash: 30e9, debt: 90e9, eq: 70e9 }],
-  quarterly: [{ end: "2026-06-27", rev: 109.4e9, ni: 29.8e9, eps: 2.02 }] };
+export const finAAPL = { s: "AAPL", annual: [{ end: "2025-09-27", rev: 416e9, ni: 112e9, eps: 7.46, fcf: 98e9, cash: 30e9, debt: 90e9, eq: 70e9 },
+  { end: "2024-09-28", rev: 391e9, ni: 93.7e9, eps: 6.08 }, { end: "2023-09-30", rev: 383e9, ni: 97e9, eps: 6.13 }, { end: "2022-09-24", rev: 394e9, ni: 99.8e9, eps: 6.11 }],
+  quarterly: [{ end: "2026-06-27", rev: 109.4e9, ni: 29.8e9, eps: 2.02 }, { end: "2026-03-28", rev: 111e9, ni: 29.5e9, eps: 2.01 },
+    { end: "2025-12-27", rev: 140e9, ni: 41e9, eps: 2.84 }, { end: "2025-09-27", rev: 102e9, ni: 27e9, eps: 1.85 }, { end: "2025-06-28", rev: 94e9, ni: 23.4e9, eps: 1.57 }] };
 const closes = Array.from({ length: 250 }, (_, i) => 250 + i * 0.4);
 
 export function route(url, init) {
@@ -172,8 +175,37 @@ export function route(url, init) {
     return Array.from({ length: n }, (_, i) => { const t = to - i * g; const c = 80000 + (i % 50); return [t, c - 5, c + 5, c, c, 3] });
   }
   if (u.host === "quickchart.io") return { success: true, url: "https://quickchart.io/chart/render/zf-test" };
+  const geoAnswer = geoRoute(u);
+  if (geoAnswer !== undefined) return geoAnswer;
   if (u.host === "api.coingecko.com") return { bitcoin: { usd: 81800, usd_24h_change: -1.9 } };
   throw new Error("unexpected request: " + url);
+}
+
+// the map and monitor sources (/api/geo and the terminal e2e tests)
+export function geoRoute(u) {
+  const p = u.pathname, q = u.searchParams;
+  if (u.host === "earthquake.usgs.gov") return G.usgs;
+  if (u.host === "eonet.gsfc.nasa.gov") return G.eonet;
+  if (u.host === "www.gdacs.org") {
+    if (p.includes("/polygons/getgeometry")) return G.gdacsGeometry;
+    if (p.includes("/geteventlist/SEARCH")) {
+      const list = (q.get("eventlist") || "").split(";");
+      if (list.includes("TC")) return G.gdacsSearchTC;
+      return { ...G.gdacsAlerts, features: G.gdacsAlerts.features.filter((f) => list.includes(f.properties.eventtype)) };
+    }
+    return { __status: 400 };
+  }
+  if (u.host === "services9.arcgis.com") {
+    const off = +(q.get("resultOffset") || 0), n = +(q.get("resultRecordCount") || 1000);
+    const page = (rows) => ({ features: rows.slice(off, off + n), exceededTransferLimit: off + n < rows.length });
+    if (p.includes("PortWatch_chokepoints_database")) return G.pwChokepoints;
+    if (p.includes("Daily_Chokepoints_Data")) return page(G.pwDaily.features);
+    if (p.includes("PortWatch_ports_database")) return page(G.pwPorts.features);
+  }
+  if (u.host === "api.open-meteo.com") return G.openMeteo((q.get("latitude") || "").split(",").length);
+  if (u.host === "date.nager.at") { const m = /PublicHolidays\/(\d+)\/(\w+)/.exec(p); return m ? G.nager(m[2], m[1]) : [] }
+  if (u.host === "api.fiscaldata.treasury.gov") return G.treasury;
+  return undefined;
 }
 
 export function installMocks() {

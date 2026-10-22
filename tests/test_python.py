@@ -704,6 +704,112 @@ class MacroAndMoex(unittest.TestCase):
             self.assertEqual(moex.build(now + timedelta(minutes=20), path=path, fetcher=fetcher), 0)
 
 
+class MapsAndMonitorsData(unittest.TestCase):
+    """Data for the terminal's new functions: CA/AU curves, overnight rates (MMR/BTMM), world valuations (WPE), the map of forecasts."""
+
+    def test_canada_and_australia_curves(self):
+        boc = {"observations": [
+            {"d": "2026-10-15", "BD.CDN.2YR.DQ.YLD": {"v": "2.50"}, "BD.CDN.5YR.DQ.YLD": {"v": "2.70"}, "BD.CDN.10YR.DQ.YLD": {"v": "3.10"}, "BD.CDN.LONG.DQ.YLD": {"v": "3.50"}},
+            {"d": "2026-10-16", "BD.CDN.2YR.DQ.YLD": {"v": "2.55"}, "BD.CDN.5YR.DQ.YLD": {"v": "2.72"}, "BD.CDN.10YR.DQ.YLD": {"v": "3.12"}, "BD.CDN.LONG.DQ.YLD": {"v": "3.52"}},
+            {"d": "bad"}]}
+        rows = rates.parse_boc(boc)
+        self.assertEqual(len(rows), 2)
+        self.assertEqual(rows[-1], (date(2026, 10, 16), {"2Y": 2.55, "5Y": 2.72, "10Y": 3.12, "30Y": 3.52}))
+        cv = rates.curve_from_rows(rows, ["2Y", "5Y", "10Y", "30Y"])
+        self.assertEqual(cv["t"], ["2Y", "5Y", "10Y", "30Y"])
+        self.assertEqual(cv["y"][2], 3.12)
+        rba = ("F2 CAPITAL MARKET YIELDS - GOVERNMENT BONDS - DAILY,,,,\nTitle,2 yr,3 yr,5 yr,10 yr\n"
+               "Series ID,FCMYGBAG2D,FCMYGBAG3D,FCMYGBAG5D,FCMYGBAG10D\n15-Oct-2026,3.50,3.60,3.85,4.30\n16-Oct-2026,3.51,3.62,3.88,4.31\n")
+        rows = rates.parse_rba(rba)
+        self.assertEqual([r[0] for r in rows], [date(2026, 10, 15), date(2026, 10, 16)])
+        self.assertEqual(rows[-1][1], {"2Y": 3.51, "3Y": 3.62, "5Y": 3.88, "10Y": 4.31})
+        self.assertIn("CA", [c[0] for c in rates.CURVES])
+        self.assertIn("AU", [c[0] for c in rates.CURVES])
+
+    def test_overnight_rate_parsers(self):
+        ny = {"refRates": [{"effectiveDate": "2026-10-20", "percentRate": 4.31}, {"effectiveDate": "2026-10-21", "percentRate": 4.33}]}
+        self.assertEqual(rates.parse_nyfed(ny), ("2026-10-21", 4.33, 4.31))
+        self.assertIsNone(rates.parse_nyfed({"refRates": []}))
+        estr = "KEY,TIME_PERIOD,OBS_VALUE\nEST.B,2026-10-20,1.921\nEST.B,2026-10-21,1.923\n"
+        self.assertEqual(rates.parse_estr(estr), ("2026-10-21", 1.923, 1.921))
+        sonia = "DATE,IUDSOIA\n20 Oct 2026,3.9712\n21 Oct 2026,3.9705\n"
+        self.assertEqual(rates.parse_sonia(sonia), ("2026-10-21", 3.9705, 3.9712))
+        ru = "<tr><td>20.10.2026</td> <td class='right'>16,52</td></tr><tr><td>21.10.2026</td> <td>16,61</td></tr>"
+        self.assertEqual(rates.parse_ruonia(ru), ("2026-10-21", 16.61, 16.52))
+        rus = {"marketdata": {"columns": ["SECID", "TRADEDATE", "CURRENTVALUE", "LASTVALUE"], "data": [["RUSFAR", "2026-10-22", 16.4, 16.3]]}}
+        self.assertEqual(rates.parse_rusfar(rus), ("2026-10-22", 16.4, 16.3))
+        self.assertIsNone(rates.parse_rusfar({"marketdata": {"columns": [], "data": []}}))
+
+    def test_money_markets_keep_old_values_on_failure(self):
+        def ok(t):
+            return ("2026-10-21", 4.33, 4.31)
+
+        def broken(t):
+            raise OSError("timeout")
+
+        old = [{"k": "ESTR", "c": "EA", "en": "x", "ru": "x", "date": "2026-10-01", "v": 1.9, "prev": None}]
+        mm = [("SOFR", "US", "a", "а", ok), ("ESTR", "EA", "b", "б", broken), ("SONIA", "UK", "c", "в", broken)]
+        with mock.patch.object(rates, "MM", mm):
+            out = rates.money_markets(date(2026, 10, 22), old)
+        self.assertEqual([x["k"] for x in out], ["SOFR", "ESTR"])
+        self.assertEqual(out[0]["v"], 4.33)
+        self.assertEqual(out[1]["date"], "2026-10-01")   # the last known value, not a lost row
+
+    def test_wpe_parse_and_build(self):
+        import wpe
+        qs = {"summaryDetail": {"trailingPE": {"raw": 27.3461}, "yield": {"raw": 0.0118}, "totalAssets": {"raw": 6.5e11}},
+              "defaultKeyStatistics": {"ytdReturn": {"raw": 0.1432}, "52WeekChange": {"raw": 0.21}},
+              "topHoldings": {"equityHoldings": {"priceToEarnings": {"raw": 0.04}, "priceToBook": {"raw": 0.2}, "priceToSales": {"raw": 3.1}}},
+              "price": {"regularMarketChangePercent": {"raw": -0.0042}, "regularMarketPrice": {"raw": 671.2}}}
+        r = wpe.parse(qs)
+        self.assertEqual(r["pe"], 27.35)
+        self.assertEqual(r["pb"], 5.0)        # stored inverted
+        self.assertEqual(r["ps"], 3.1)
+        self.assertEqual(r["dy"], 1.18)
+        self.assertEqual(r["ch"], -0.42)      # Yahoo gives fractions
+        self.assertEqual(r["rytd"], 14.32)
+        # no trailing P/E: the holdings' one
+        r2 = wpe.parse({"topHoldings": {"equityHoldings": {"priceToEarnings": {"raw": 0.05}}}})
+        self.assertEqual(r2["pe"], 20.0)
+        self.assertIsNone(r2["dy"])
+
+        class S:
+            def __init__(self, fail):
+                self.fail = fail
+
+            def quote_summary(self, sym, modules):
+                if sym in self.fail:
+                    raise OSError("429")
+                return qs
+
+        with tempfile.TemporaryDirectory() as d:
+            path = os.path.join(d, "wpe.json")
+            now = datetime(2026, 10, 22, 6, tzinfo=timezone.utc)
+            n = wpe.build(now, path=path, session=S({"EWZ"}), sleep=0)
+            self.assertEqual(n, len(wpe.MARKETS) - 1)
+            with open(path, encoding="utf-8") as f:
+                out = json.load(f)
+            self.assertEqual(out["rows"][0]["s"], "SPY")
+            self.assertNotIn("EWZ", [x["s"] for x in out["rows"]])
+            self.assertEqual(wpe.build(now + timedelta(hours=2), path=path, session=S(set()), sleep=0), 0)   # fresh
+            # most markets failing: yesterday's file stays
+            all_but = {m[1] for m in wpe.MARKETS[2:]}
+            self.assertEqual(wpe.build(now + timedelta(days=1), path=path, session=S(all_but), sleep=0), 0)
+            with open(path, encoding="utf-8") as f:
+                self.assertEqual(json.load(f)["updated"], now.isoformat())
+
+    def test_macro_world_map(self):
+        import macro
+        payloads = {"NGDP_RPCH": {"values": {"NGDP_RPCH": {"USA": {"2026": 1.94}, "ARG": {"2026": 4.46}, "WEOWORLD": {"2026": 3.1}, "XYZ": {"2025": 1}}}},
+                    "PCPIPCH": {"values": {"PCPIPCH": {"ARG": {"2026": 41.27}, "USA": {"2026": None}}}},
+                    "NGDPD": {"values": {"NGDPD": {"USA": {"2026": 30000}}}}}
+        m = macro.world_map(payloads, 2026)
+        self.assertEqual(m["year"], 2026)
+        self.assertEqual(m["NGDP_RPCH"], {"USA": 1.9, "ARG": 4.5})   # groups and other years left out
+        self.assertEqual(m["PCPIPCH"], {"ARG": 41.3})
+        self.assertNotIn("NGDPD", m)
+
+
 class GitSync(unittest.TestCase):
     """The bot's push to GitHub survives a race with other commits and a rebase that got stuck."""
 

@@ -664,6 +664,31 @@ await test("/api/corr: one request for the matrix; returns on common trading day
   assert.equal(few.status, 400);
 });
 
+await test("/api/geo: only the listed sources, JSON passed through; /api/perf: returns over periods", async () => {
+  const ok = await api("/api/geo?u=" + encodeURIComponent("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.geojson"));
+  assert.equal(ok.status, 200);
+  assert.ok(Array.isArray(ok.json.features) && ok.json.features.length > 0);
+  assert.equal(ok.headers.get("Access-Control-Allow-Origin"), "*");
+  const fd = await api("/api/geo?u=" + encodeURIComponent("https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/od/auctions_query?page[size]=5"));
+  assert.equal(fd.json.data[0].cusip, "912797QX8");
+  for (const bad of ["https://evil.example.com/x.json", "http://earthquake.usgs.gov/x", "file:///etc/passwd", "not a url"]) {
+    const r = await api("/api/geo?u=" + encodeURIComponent(bad));
+    assert.equal(r.json.ok, false, bad);
+  }
+  const { returnsFrom } = await import("../worker/src/extra.js");
+  const day = 86400, t1 = Date.UTC(2026, 9, 21) / 1000, t = [], c = [];
+  for (let i = 400; i >= 0; i--) { t.push(t1 - i * day); c.push(100 + (400 - i) * 0.25); }   // +0.25 a day
+  const r = returnsFrom({ t, c });
+  assert.equal(r["1d"], Math.round((200 / 199.75 - 1) * 1e4) / 100);
+  assert.ok(r["1y"] > 50 && r["1y"] < 100, "a year: " + r["1y"]);
+  assert.ok(r.ytd > 0 && r.mtd > 0 && r.qtd >= r.mtd);
+  const perf = await api("/api/perf?s=AAPL,ZZZZ!!");
+  assert.equal(perf.json.ok, true);
+  const a = perf.json.rows.find((x) => x.s === "AAPL");
+  assert.ok(a && a.r && typeof a.r["1d"] === "number", JSON.stringify(a));
+  assert.ok(perf.json.rows.find((x) => x.s === "ZZZZ!!").error);
+});
+
 await test("the root address answers", async () => {
   const r = await api("/");
   assert.equal(r.json.ok, true);

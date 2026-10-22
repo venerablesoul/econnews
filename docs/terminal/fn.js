@@ -145,19 +145,24 @@ var PANELS = [
   {id:'p-eco', code:'ECO', name:TX('fn_eco')}, {id:'p-trd', code:'TRD', name:TX('fn_trd')},
   {id:'p-des', code:'DES', name:TX('fn_des')}, {id:'p-hp', code:'HP', name:TX('fn_hp')},
   {id:'p-eqs', code:'EQS', name:TX('fn_eqs')}, {id:'p-imap', code:'IMAP', name:TX('fn_imap')},
-  {id:'p-gc', code:'GC', name:TX('fn_gc')}, {id:'p-my', code:'W', name:TX('fn_my')}, {id:'p-ana', code:'ECST', name:TX('fn_ana')}
+  {id:'p-gc', code:'GC', name:TX('fn_gc')}, {id:'p-my', code:'W', name:TX('fn_my')}, {id:'p-ana', code:'ECST', name:TX('fn_ana')},
+  {id:'p-tech', code:'TECH', name:TX('fn_tech')}, {id:'p-mon', code:'MOV', name:TX('fn_mon')}, {id:'p-map', code:'MAP', name:TX('fn_map')}
 ];
 var LAYOUTS = {
   '1': {cols:'minmax(330px,26%) 1fr minmax(320px,25%)', rows:'62% 38%', areas:'"a b c" "a d e"', slots:['a','b','c','d','e'],
         def:['p-mkt','p-chart','p-crypto','p-news','p-eco'],
-        pref:{'p-des':'c','p-gc':'c','p-my':'c','p-crypto':'c','p-hp':'b','p-eqs':'b','p-imap':'b','p-ana':'b','p-chart':'b','p-news':'d','p-eco':'e','p-trd':'e','p-mkt':'a'}},
+        pref:{'p-des':'c','p-gc':'c','p-my':'c','p-crypto':'c','p-hp':'b','p-eqs':'b','p-imap':'b','p-ana':'b','p-chart':'b','p-news':'d','p-eco':'e','p-trd':'e','p-mkt':'a',
+              'p-tech':'b','p-mon':'b','p-map':'b'}},
   '4': {cols:'1fr 1fr', rows:'1fr 1fr', areas:'"a b" "c d"', slots:['a','b','c','d'], def:['p-chart','p-des','p-news','p-mkt'],
-        pref:{'p-chart':'a','p-hp':'a','p-imap':'a','p-ana':'a','p-eqs':'c','p-des':'b','p-gc':'b','p-my':'d','p-mkt':'d','p-news':'c','p-eco':'d','p-trd':'d','p-crypto':'d'}},
+        pref:{'p-chart':'a','p-hp':'a','p-imap':'a','p-ana':'a','p-eqs':'c','p-des':'b','p-gc':'b','p-my':'d','p-mkt':'d','p-news':'c','p-eco':'d','p-trd':'d','p-crypto':'d',
+              'p-tech':'a','p-mon':'c','p-map':'a'}},
   '6': {cols:'1fr 1fr 1fr', rows:'1fr 1fr', areas:'"a b c" "d e f"', slots:['a','b','c','d','e','f'],
         def:['p-mkt','p-chart','p-des','p-news','p-eqs','p-my'],
-        pref:{'p-mkt':'a','p-chart':'b','p-hp':'b','p-des':'c','p-news':'d','p-eqs':'e','p-imap':'e','p-ana':'e','p-my':'f','p-gc':'f','p-eco':'f','p-trd':'f','p-crypto':'a'}},
+        pref:{'p-mkt':'a','p-chart':'b','p-hp':'b','p-des':'c','p-news':'d','p-eqs':'e','p-imap':'e','p-ana':'e','p-my':'f','p-gc':'f','p-eco':'f','p-trd':'f','p-crypto':'a',
+              'p-tech':'b','p-mon':'e','p-map':'b'}},
   't': {cols:'minmax(300px,40%) 1fr', rows:'55% 45%', areas:'"a b" "c d"', slots:['a','b','c','d'], def:['p-mkt','p-chart','p-crypto','p-news'],
-        pref:{'p-mkt':'a','p-chart':'b','p-hp':'b','p-imap':'b','p-eqs':'b','p-ana':'b','p-des':'c','p-gc':'c','p-my':'c','p-crypto':'c','p-news':'d','p-eco':'d','p-trd':'d'}}
+        pref:{'p-mkt':'a','p-chart':'b','p-hp':'b','p-imap':'b','p-eqs':'b','p-ana':'b','p-des':'c','p-gc':'c','p-my':'c','p-crypto':'c','p-news':'d','p-eco':'d','p-trd':'d',
+              'p-tech':'b','p-mon':'b','p-map':'b'}}
 };
 var RENDER = {};   // pid → function to call when the panel appears on screen
 var Layout = (function(){
@@ -270,7 +275,14 @@ window.addEventListener('resize', function(){ clearTimeout(rzT); rzT = setTimeou
     ['ECST', TX('m_ecst'), 'p-ana', 'ECST'], ['FXC', TX('m_fxc'), 'p-ana', 'FXC'], ['CORR', TX('m_corr'), 'p-ana', 'CORR'], ['OMON', TX('m_opt'), 'p-ana', 'OMON'],
     ['IPO', TX('m_ipo'), 'p-ana', 'IPO'], ['GC', TX('m_gc'), 'p-gc'],
     ['CB', TX('m_cb'), 'p-gc', 'CB'], ['WIRP', TX('m_wirp'), 'p-gc', 'WIRP'], ['W', TX('m_w'), 'p-my', 'W'],
-    ['PORT', TX('m_port'), 'p-my', 'PORT'], ['ALRT', TX('m_alrt'), 'p-my', 'ALRT'], ['HELP', TX('m_help'), null, 'HELP']
+    ['PORT', TX('m_port'), 'p-my', 'PORT'], ['ALRT', TX('m_alrt'), 'p-my', 'ALRT'],
+    ['TECH', TX('m_tech'), 'p-tech', 'TECH'], ['VAP', TX('m_vap'), 'p-tech', 'VAP'], ['TRA', TX('m_tra'), 'p-tech', 'TRA'], ['TRAY', TX('m_tray'), 'p-tech', 'TRAY'],
+    ['MOV', TX('m_mov'), 'p-mon', 'MOV'], ['MOST', TX('m_most'), 'p-mon', 'MOST'], ['MEMB', TX('m_memb'), 'p-mon', 'MEMB'], ['WPE', TX('m_wpe'), 'p-mon', 'WPE'],
+    ['BI', TX('m_bi'), 'p-mon', 'BI'], ['FPC', TX('m_fpc'), 'p-mon', 'FPC'], ['CDR', TX('m_cdr'), 'p-mon', 'CDR'],
+    ['WB', TX('m_wb'), 'p-gc', 'WB'], ['BTMM', TX('m_btmm'), 'p-gc', 'BTMM'], ['MMR', TX('m_mmr'), 'p-gc', 'MMR'], ['SRCH', TX('m_srch'), 'p-gc', 'SRCH'],
+    ['MAP', TX('m_map'), 'p-map', 'MAP'], ['STORM', TX('m_storm'), 'p-map', 'STORM'], ['SHIP', TX('m_ship'), 'p-map', 'SHIP'],
+    ['WETR', TX('m_wetr'), 'p-map', 'WETR'], ['MAP ECO', TX('m_mapeco'), 'p-map', 'MAP ECO'],
+    ['HELP', TX('m_help'), null, 'HELP']
   ];
   FN.forEach(function(f){
     var b = el('button'); b.appendChild(el('b', null, f[0])); b.appendChild(el('span', null, f[1]));
@@ -282,6 +294,7 @@ window.addEventListener('resize', function(){ clearTimeout(rzT); rzT = setTimeou
 
 /* ======================= DES: company ======================= */
 var des = {sym: '', tab: 'DES', data: null, faMode: 'q', loadingSym: ''};
+var MOEX_TABS = {};   // tabs that also work for Moscow Exchange shares (registered by other modules)
 function openDes(sym, tab){
   sym = upSym(sym || des.sym);
   if (tab) des.tab = tab;
@@ -310,10 +323,12 @@ function renderDes(){
   $('des-title').textContent = (p.name || d.s) + ' · ' + d.s;
   $('des-sub').textContent = q.px != null ? (d.kind === 'moex' ? '' : '$') + price(q.px) + (d.kind === 'moex' ? ' ₽' : '') + ' ' + pct(q.ch) : '';
   clear(box);
-  if (d.kind === 'moex' && des.tab !== 'DES') { box.appendChild(el('div', 'empty', TX('moex_only_des'))); return }
-  ({DES: desMain, FA: desFa, ERN: desErn, EE: desEe, ANR: desAnr, CN: desCn, HDS: desHds, DVD: desDvd, OMON: desOmon, RV: desRv, CF: desCf}[des.tab] || desMain)(box, d);
+  if (d.kind === 'moex' && des.tab !== 'DES' && !MOEX_TABS[des.tab]) { box.appendChild(el('div', 'empty', TX('moex_only_des'))); return }
+  (DES_TABS[des.tab] || desMain)(box, d);
   if (des.scrollTo) { var target = $(des.scrollTo); des.scrollTo = null; if (target) target.scrollIntoView({block: 'start'}) }
 }
+// the company tabs; tech.js adds GE, CACS and CRPR
+var DES_TABS = {DES: desMain, FA: desFa, ERN: desErn, EE: desEe, ANR: desAnr, CN: desCn, HDS: desHds, DVD: desDvd, OMON: desOmon, RV: desRv, CF: desCf};
 function kv(box, pairs){
   var g = el('div', 'kv');
   pairs.forEach(function(x){ if (!x) return; var c = el('div'); c.appendChild(el('span', null, x[0])); var b = el('b', x[2] || null, x[1]); c.appendChild(b); if (x[3]) c.title = x[3]; g.appendChild(c) });
@@ -1125,18 +1140,19 @@ RENDER['p-imap'] = function(){ setTimeout(renderImap, 30) };
 /* ======================= GC / CB / WIRP ======================= */
 var gc = {tab: 'GC', sel: ['US', 'DE', 'UK', 'JP']};
 try { var sg = JSON.parse(store('gc_sel') || 'null'); if (Array.isArray(sg) && sg.length) gc.sel = sg } catch(e){}
-var GC_COL = {US: '#4fa3ff', DE: '#ffd400', UK: '#c77dff', JP: '#ff4b4b', RU: '#21c66f', EA: '#ffd400'};
+var GC_COL = {US: '#4fa3ff', DE: '#ffd400', UK: '#c77dff', JP: '#ff4b4b', RU: '#21c66f', EA: '#ffd400', CA: '#ff8c5a', AU: '#56d6d6', CH: '#e0e0e0'};
+var GC_TABS = {};   // GC, CB, WIRP here; mon.js adds WB, BTMM, MMR, SRCH
 tabs($('gc-tabs'), 't', function(t){ gc.tab = t; renderGc() });
 function openGc(tab){ gc.tab = tab || 'GC'; setTab($('gc-tabs'), 't', gc.tab); T.show('p-gc'); renderGc() }
 function renderGc(){
   $('gc-code').textContent = gc.tab;
   var box = $('gc-body');
-  page('rates.json', 300).then(function(d){ ({GC: drawGc, CB: drawCb, WIRP: drawWirp}[gc.tab])(box, d) })
+  page('rates.json', 300).then(function(d){ (GC_TABS[gc.tab] || drawGc)(box, d) })
     .catch(function(e){ clear(box).appendChild(el('div', 'empty', TX('gc_wait'))) });
 }
 function drawGc(box, d){
   clear(box);
-  var curves = d.curves || {}, codes = ['US', 'DE', 'UK', 'JP', 'RU'].filter(function(c){ return curves[c] });
+  var curves = d.curves || {}, codes = ['US', 'DE', 'UK', 'JP', 'RU', 'CA', 'AU', 'CH'].filter(function(c){ return curves[c] });
   $('gc-title').textContent = TX('gc_title'); $('gc-sub').textContent = d.updated ? TX('updated_at', T.hm(d.updated)) : '';
   var chips = el('div', 'gc-c');
   codes.forEach(function(c){
@@ -1253,6 +1269,7 @@ function drawWirp(box, d){
   box.appendChild(tb.t);
   box.appendChild(el('div', 'note', TX('wirp_note')));
 }
+GC_TABS.GC = drawGc; GC_TABS.CB = drawCb; GC_TABS.WIRP = drawWirp;
 RENDER['p-gc'] = function(){ if (!$('gc-body').querySelector('table,svg')) renderGc() };
 
 /* ======================= ECST / FXC / CORR / OPT / IPO ======================= */
@@ -1300,6 +1317,18 @@ function drawEcst(box){
       });
       box.appendChild(tb.t);
       box.appendChild(el('div', 'note', '* ' + TX('fcst')));
+      return;
+    }
+    // a country outside the main list: this year's values from the IMF map data (MAP ECO)
+    var mp = d.map || {};
+    if (q && code.length === 3 && Object.keys(d.ind || {}).some(function(k){ return mp[k] && mp[k][code] != null })) {
+      var back2 = el('div', 'ptabs'), bb2 = el('button', null, TX('ecst_back')); bb2.onclick = function(){ ana.country = ''; drawEcst(box) }; back2.appendChild(bb2);
+      back2.appendChild(el('span', 'sp')); box.appendChild(back2);
+      h4(box, (window.MAPS && window.MAPS.countryName ? window.MAPS.countryName(code) : code) + ' · ' + (mp.year || y));
+      var t2 = table([{t: TX('ecst_ind'), l: true}, {t: String(mp.year || y)}]);
+      Object.keys(d.ind || {}).forEach(function(k){ var x = mp[k] && mp[k][code]; if (x == null) return; var tr = el('tr'); tr.appendChild(td(I.ru ? d.ind[k].ru : d.ind[k].en, 'l')); tr.appendChild(td(fmt(x, 1), 'num')); t2.body.appendChild(tr) });
+      box.appendChild(t2.t);
+      box.appendChild(el('div', 'note', TX('ecst_map_note')));
       return;
     }
     var v = function(r, k, i){ var a = (r.v || {})[k]; return a && a[i] != null ? a[i] : null };
@@ -1755,7 +1784,8 @@ C['ИСТОРИЯ'] = C.HP;
 C.COMP = function(arg){ var p = String(arg || '').trim().split(/[\s,]+/).filter(Boolean), r = p.length && /^(1D|5D|1M|3M|6M|YTD|1Y|2Y|5Y)$/i.test(p[p.length - 1]) ? p.pop().toLowerCase() : null; openComp(p, r) };
 C.COMPARE = C.COMP; C['СРАВНИ'] = C['СРАВНЕНИЕ'] = C.COMP;
 C.EQS = function(arg){ openEqs(arg ? arg : null) }; C.SCREENER = C.EQS; C['СКРИНЕР'] = C.EQS;
-C.IMAP = function(arg){ var a = String(arg || '').trim().toUpperCase(); openImap(/^(RU|RUS|MOEX|РФ|РОССИЯ|МОСБИРЖА)$/.test(a) ? 'RU' : a === 'US' ? 'US' : null) }; C.MAP = C.IMAP; C.HEAT = C.IMAP; C['КАРТА'] = C.IMAP;
+C.IMAP = function(arg){ var a = String(arg || '').trim().toUpperCase(); openImap(/^(RU|RUS|MOEX|РФ|РОССИЯ|МОСБИРЖА)$/.test(a) ? 'RU' : a === 'US' ? 'US' : null) }; C.HEAT = C.IMAP;
+C['ТЕПЛОКАРТА'] = C['КАРТАРЫНКА'] = C.IMAP;
 C.GC = function(){ openGc('GC') }; C.CURVE = C.GC; C.YCRV = C.GC; C['КРИВЫЕ'] = C.GC; C['ОБЛИГАЦИИ'] = C.GC; C['GOVT'] = C.GC;
 C.CB = function(){ openGc('CB') }; C.CBR = C.CB; C['СТАВКИ'] = C.CB;
 C.WIRP = function(){ openGc('WIRP') }; C.FEDWATCH = C.WIRP;
@@ -1776,11 +1806,22 @@ window.onSymbol = function(s){ if (isStock(s) && visible('p-des') && T.api()) { 
 // on a phone the main script shows the panel — here we only draw its content
 window.onPanelShow = function(pid){ if (RENDER[pid]) RENDER[pid]() };
 
+/* ======================= for map.js, mon.js, tech.js ======================= */
+window.FN = {
+  clear: clear, txt: txt, money: money, dg: dg, price: price, dmy: dmy, dmShort: dmShort, num: num, upSym: upSym, isStock: isStock,
+  noApi: noApi, errBox: errBox, loading: loading, api: api, page: page, table: table, td: td, cols: cols, chg: chg, sma: sma, rsi: rsi,
+  downloadText: downloadText, tabs: tabs, setTab: setTab, visible: visible, COLORS: COLORS, RENDER: RENDER, Layout: Layout,
+  history: history, heat: heat, h4: h4, kv: kv, openDes: openDes, openHP: openHP, openGc: openGc, des: des, DES_TABS: DES_TABS,
+  MOEX_TABS: MOEX_TABS, GC_TABS: GC_TABS, gc: gc, svgBars: svgBars, drawLines: drawLines, redrawCanvases: redrawCanvases,
+  canvases: function(){ return canvases }, MON: MON, locName: locName
+};
+
 /* ======================= start ======================= */
 Layout._mob = T.isMobile();
 Layout.apply();
 renderEarn();
-T.loadConfig().then(function(){
+var domReady = new Promise(function(done){ if (document.readyState !== 'loading') done(); else document.addEventListener('DOMContentLoaded', done) });
+Promise.all([T.loadConfig(), domReady]).then(function(){
   pollLive();
   try {
     var start = new URLSearchParams(location.search).get('cmd');
