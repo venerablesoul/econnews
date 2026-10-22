@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "a3744d5c25955a54": "2026-10-19T11:26:15.480755+00:00",
-  "b84821d4f58e7ae2": "2026-10-19T11:26:15.480755+00:00",
-  "cc0151d5ca3e79a0": "2026-10-19T11:26:15.480755+00:00",
   "da97a804190d1625": "2026-10-19T11:36:15.419337+00:00",
   "e9e88a8c32bbe169": "2026-10-19T11:56:15.427247+00:00",
   "efe4cea5280275f1": "2026-10-19T12:01:15.473108+00:00",
@@ -885,41 +882,11 @@
   "dfb9e580b2cef6ef": "2026-10-22T11:13:36.837180+00:00",
   "13d981677c0a8535": "2026-10-22T11:18:36.813384+00:00",
   "331a4d6d22ab2b9e": "2026-10-22T11:18:36.813384+00:00",
-  "71eafb601dbb76ba": "2026-10-22T11:23:36.850757+00:00"
+  "71eafb601dbb76ba": "2026-10-22T11:23:36.850757+00:00",
+  "8d032e0db0867e1e": "2026-10-22T11:28:37.274120+00:00",
+  "d2518db42ada908e": "2026-10-22T11:28:37.274120+00:00"
  },
  "recent": [
-  {
-   "title": "Trump’s Russia Sanctions Waiver Draws GOP Anger",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-19/trump-s-russia-sanctions-waiver-draws-gop-anger-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-19T11:26:15.480755+00:00",
-   "title_ru": "Отказ Трампа от санкций в отношении России вызывает гнев Республиканской партии",
-   "lead": "Republican lawmakers blasted President Donald Trump for waiving new tariffs and sanctions on Russia, prompting the president to defend himself against some of his strongest allies on Capitol Hill.",
-   "lead_ru": "Республиканские законодатели раскритиковали президента Дональда Трампа за отказ от новых тарифов и санкций в отношении России, что побудило президента защитить себя от некоторых из его самых сильных союзников на Капитолийском холме.",
-   "tags": [
-    "tariffs",
-    "sanctions",
-    "Russia"
-   ]
-  },
-  {
-   "title": "Wall St futures climb as AI stocks rebound; oil, yields fall",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPX21SVVhfUjZRQ255YlFzVWVEZ3BFMmt3aWlDdkVPVENFOExuRE9KOXZ6WjNqbzdHelUwdzZudy02TjlyNkxVZWcxQmFzZF9NaUE0SFZYaWI3dmxlYTBVdjdULWhLMkNQNnlMUXFaM1J5T1dPMEo3ajhkb0RQLUM3M0pkYlFqbHNKQ1U1c3k5WlUtdjR1UkNCV0JkdjJZTzdIa2c?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-19T11:26:15.480755+00:00",
-   "title_ru": "Фьючерсы Wall St растут по мере отскока акций ИИ; нефть, доходность падает",
-   "tags": [
-    "oil",
-    "bonds",
-    "markets"
-   ]
-  },
   {
    "title": "Tech stocks stumbled. Now comes a crucial week for Wall Street.",
    "link": "https://www.marketwatch.com/story/tech-stocks-stumbled-now-comes-a-crucial-week-for-wall-street-2a093abe?mod=mw_rss_topstories",
@@ -9009,6 +8976,16 @@
     "rates",
     "inflation"
    ]
+  },
+  {
+   "title": "Upcoming credit ratings could further dent French economy",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE80YmwtQ0F0d2QxY3dVVGh3SVNhUmI0S0haZENwcmdXNHZKejVWLTVyNW9lZ1lPVXRVb2VyNW5Gc1V6a2E2Y1lJTndxSlN4SlBoY3llRmpjLTJHTmZNenRpaHA1eHA1S1E?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T11:28:37.274120+00:00",
+   "title_ru": "Предстоящие кредитные рейтинги могут еще больше подорвать экономику Франции"
   }
  ],
  "last_digest": "2026-10-21",
@@ -15156,8 +15133,8 @@
    "0001231919-26-001485",
    "0000804328-26-000112",
    "0001185185-26-004899",
-   "0001477932-26-006387",
    "0001193125-26-428272",
+   "0001477932-26-006387",
    "0001193125-26-428106",
    "0001778564-26-000189",
    "0001818383-26-000258",
