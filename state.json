@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "5af9949f691c97e1": "2026-10-19T19:25:37.589096+00:00",
   "9c588cc5ecc6b03b": "2026-10-19T19:35:37.531326+00:00",
   "69110f8333ceed46": "2026-10-19T19:35:37.531326+00:00",
   "e4c94d8c49a9f7e5": "2026-10-19T19:35:37.531326+00:00",
@@ -916,19 +915,10 @@
   "85a0ca39ae4eefd6": "2026-10-22T19:04:40.244080+00:00",
   "d012aa564ff47e12": "2026-10-22T19:04:40.244080+00:00",
   "b5799a855f5a376f": "2026-10-22T19:24:40.196287+00:00",
-  "a387076ce3e04d35": "2026-10-22T19:24:40.196287+00:00"
+  "a387076ce3e04d35": "2026-10-22T19:24:40.196287+00:00",
+  "3e587b9d443a3083": "2026-10-22T19:34:40.169463+00:00"
  },
  "recent": [
-  {
-   "title": "Corporate Sector Stress Testing with Endogenous Balance Sheet Dynamics, WP/26/209, October 2026",
-   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOcUV5dWhib09iLXc3cjZrXzhkM1pHc0VGSUhGYnhkdTdpeGJMSzE4NmdhTkxCWl9aNldZR0otazZXY1IxdVUyemRXSm9sVWd0WlBJcFNwYUVzRC1zd0dOZDUycG13NnBRMWVfZFdURkFhbC1iYm5PNFRqZmVTZjZORm53TFJ6X1Y5YnE1UzdDd0M?oc=5",
-   "sources": [
-    "IMF"
-   ],
-   "score": 4,
-   "ts": "2026-10-19T19:25:37.589096+00:00",
-   "title_ru": "Стресс-тестирование корпоративного сектора с учетом динамики эндогенного баланса, WP/26/209, октябрь 2026 г."
-  },
   {
    "title": "Bank of Canada Hike Bets Grow Among Economists, Traders",
    "link": "https://www.bloomberg.com/news/articles/2026-10-19/bank-of-canada-hike-bets-grow-among-economists-traders",
@@ -9406,6 +9396,15 @@
    "score": 3,
    "ts": "2026-10-22T19:24:40.196287+00:00",
    "title_ru": "Индийская Swiggy углубляет присутствие Instamart на существующих рынках по мере увеличения потерь"
+  },
+  {
+   "title": "Moderna’s cancer vaccine hits its targets, but an embargo breach rattles investors and the stock tumbles",
+   "link": "https://www.marketwatch.com/story/modernas-stock-tumbles-after-reported-leak-of-data-for-cancer-vaccine-dcc897c1?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-22T19:34:40.169463+00:00"
   }
  ],
  "last_digest": "2026-10-22",
