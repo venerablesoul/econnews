@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "41baa953c9754c92": "2026-10-19T01:20:13.688421+00:00",
-  "223c55f43fd7bc3d": "2026-10-19T01:20:13.688421+00:00",
   "3543a35d1e98399e": "2026-10-19T01:25:13.664222+00:00",
   "7882d193806473c0": "2026-10-19T01:30:13.718349+00:00",
   "8aa394811fff650a": "2026-10-19T01:35:13.733437+00:00",
@@ -905,23 +903,10 @@
   "8a866a6c3718dcc0": "2026-10-22T01:02:00.009101+00:00",
   "0bc842aab4896129": "2026-10-22T01:02:00.009101+00:00",
   "2b2186a4c3eebf8d": "2026-10-22T01:07:00.003311+00:00",
-  "9870777bf1638053": "2026-10-22T01:12:00.108306+00:00"
+  "9870777bf1638053": "2026-10-22T01:12:00.108306+00:00",
+  "f8d35115afcaea9f": "2026-10-22T01:22:00.000644+00:00"
  },
  "recent": [
-  {
-   "title": "China Set to Release Third-Quarter GDP Data",
-   "link": "https://www.bloomberg.com/news/live-blog/2026-10-19/china-third-quarter-gdp-data-industrial-production-fixed-asset-retail-sales",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-19T01:20:13.688421+00:00",
-   "title_ru": "Китай опубликует данные по ВВП за третий квартал",
-   "tags": [
-    "China",
-    "GDP"
-   ]
-  },
   {
    "title": "First-Time UK Homeowners Are Facing Mortgage Payments That Cost More Than Rent",
    "link": "https://www.bloomberg.com/news/articles/2026-10-18/first-time-uk-homeowners-are-facing-mortgage-payments-that-cost-more-than-rent",
@@ -8890,6 +8875,21 @@
    "title_ru": "Опрос показывает, что условия финансирования в Японии по-прежнему свободны, несмотря на повышение процентных ставок",
    "tags": [
     "rates"
+   ]
+  },
+  {
+   "title": "Singapore Dollar Gains on Yen as Carry Funder, Analysts Say",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-22/singapore-dollar-gains-on-yen-as-carry-funder-analysts-say",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-22T01:22:00.000644+00:00",
+   "title_ru": "Аналитики говорят, что сингапурский доллар вырос на иене как Carry Funder",
+   "lead": "The Singapore dollar is gaining favor as a funding currency for carry trades as cheap borrowing costs and fading expectations for appreciation make it increasingly attractive relative to the Japanese yen, strategists say.",
+   "lead_ru": "Сингапурский доллар завоевывает популярность в качестве валюты финансирования для керри-трейдов, поскольку дешевые затраты по займам и угасающие ожидания роста делают его все более привлекательным по отношению к японской иене, говорят стратеги.",
+   "tags": [
+    "dollar"
    ]
   }
  ],
