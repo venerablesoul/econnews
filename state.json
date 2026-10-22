@@ -876,7 +876,9 @@
   "1d494f76cc450fcd": "2026-10-22T05:52:44.984087+00:00",
   "5a44d681611e2fec": "2026-10-22T05:52:44.984087+00:00",
   "bcaca8940d77e732": "2026-10-22T05:57:45.065252+00:00",
-  "b0d8e1058f313f3a": "2026-10-22T05:57:45.065252+00:00"
+  "b0d8e1058f313f3a": "2026-10-22T05:57:45.065252+00:00",
+  "7a4dfa4b3a1ddb8e": "2026-10-22T06:02:44.976895+00:00",
+  "39efd63ba7519f02": "2026-10-22T06:02:44.976895+00:00"
  },
  "recent": [
   {
@@ -8774,6 +8776,26 @@
    "score": 3,
    "ts": "2026-10-22T05:57:45.065252+00:00",
    "title_ru": "Индонезия наложила рекордные штрафы на компании за нарушения на фондовом рынке"
+  },
+  {
+   "title": "Using rupee as stabiliser can hurt real economy, ex-Indian central bank official says",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOWFBSTnBrOGQ5c0tGLS13aFl3YTZ3RTVtNkxVcWpjRF84TUcxMHBwZnZpZkxZR29nTHNKQ3Y4U3NKNkRKNVJvVGFkclo1U183czhXcjNTaDFINzR0eFdpOExLZVVlT1g1S29TdnVSR001QjY2QUwxQ0JaRVhWenR1U2pmZzd1U2FQTzBuZnQ3Mlo5dmlGZVdjelpySk1sMWFacWpGbVdSbUtvc0RhemprbDZmSlMxUzdUcTZXdG5aT29oQQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-22T06:02:44.976895+00:00",
+   "title_ru": "Использование рупии в качестве стабилизатора может нанести вред реальной экономике, говорит бывший чиновник ЦБ Индии"
+  },
+  {
+   "title": "Morning Bid: France's debt strains, AI in focus",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5iY1JOSkkwSHo0X2pQdzhWZFJuX2JIdGZEaWxKQy1oWlFJcHFuMXFhOFBoVHk4MHdRWTN6V09XOHVQZWw5d2tWMHIyRHVYcURiZmEzY1BGaFliTlJNcTJkUlZJZ0M0U19HbVJfX3BYakVkZExGNUZPYTRzOFBKT1U?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T06:02:44.976895+00:00",
+   "title_ru": "Утренняя ставка: долговая нагрузка Франции, искусственный интеллект в центре внимания"
   }
  ],
  "last_digest": "2026-10-21",
@@ -8796,14 +8818,13 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 1,
+  "Fed": 0,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
   "US Labor Statistics (BLS)": 0
  },
  "charts_sent": [
-  "2026-10-12-09",
   "2026-10-12-21",
   "2026-10-13-09",
   "2026-10-13-21",
@@ -8822,7 +8843,8 @@
   "2026-10-20-09",
   "2026-10-20-21",
   "2026-10-21-09",
-  "2026-10-21-21"
+  "2026-10-21-21",
+  "2026-10-22-09"
  ],
  "calendar": {
   "fetched": "2026-10-22T00:11:59.973035+00:00",
@@ -9531,7 +9553,7 @@
   "USD|2026-10-16T03:30:00+00:00|Fed Chairman Warsh Speaks",
   "GBP|2026-10-21T06:00:00+00:00|CPI y/y"
  ],
- "last_morning": "2026-10-21",
+ "last_morning": "2026-10-22",
  "all_down_alerted": false,
  "trades": {
   "congress": [
