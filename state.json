@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "41f7f3c6f72daae4": "2026-10-19T07:55:44.897200+00:00",
-  "ef5d25b473bf012c": "2026-10-19T07:55:44.897200+00:00",
-  "8f56e24f8e94ebea": "2026-10-19T08:00:44.928441+00:00",
   "4295cc038f425333": "2026-10-19T08:05:44.847857+00:00",
   "20bd7222bb840ccf": "2026-10-19T08:10:44.847621+00:00",
   "b2284d6e2a789835": "2026-10-19T08:15:44.885173+00:00",
@@ -881,34 +878,12 @@
   "077f93f61a86d42a": "2026-10-22T07:22:45.002037+00:00",
   "03212f5527409c65": "2026-10-22T07:32:45.031213+00:00",
   "54e08ee0e482dc6e": "2026-10-22T07:47:45.047112+00:00",
-  "b2d76a518eccbc48": "2026-10-22T07:52:45.003873+00:00"
+  "b2d76a518eccbc48": "2026-10-22T07:52:45.003873+00:00",
+  "76a3c274aa2c686e": "2026-10-22T08:02:45.020258+00:00",
+  "3d992320b1be747a": "2026-10-22T08:02:45.020258+00:00",
+  "aad2abd45d20b79e": "2026-10-22T08:02:45.020258+00:00"
  },
  "recent": [
-  {
-   "title": "UK's PHP forms joint venture with Singapore's GIC to cut debt",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPa2oweEJaZlNvYkllVE5hNFlYZFE4VmZGQzRELVpPOTJnZlpXeGJhTHN5WmpYM1F6TFltQ0tFX1pHaDM2OGFmYnM5RHV4WFpqWGF3UHdBbkk3S21hRzBldzdJczY2SVROTGNUMndGaTZDQzRyNmhmZUlmendNcV9VeWs4ZmY2VjF2aXd0TDFpSlhKd2FsYnZTTjdtSklzY3NkS3lpSzMzYU5UcHdwbUtuMER3QmtYZUZJaE1DXzdpcGJ4QWRoWjNn?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T07:55:44.897200+00:00",
-   "title_ru": "Британская PHP создает совместное предприятие с сингапурской GIC для сокращения долга"
-  },
-  {
-   "title": "France’s Bonds Drop as Rioting Heaps Pressure on Government",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-19/france-s-bonds-drop-as-rioting-heaps-pressure-on-government",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T08:00:44.928441+00:00",
-   "title_ru": "Облигации Франции падают, поскольку беспорядки оказывают давление на правительство",
-   "lead": "France’s sovereign bonds dropped as violence flared across the country, underlining the tension between protesters and a government that’s hamstrung by poor public finances.",
-   "lead_ru": "Суверенные облигации Франции упали, поскольку насилие вспыхнуло по всей стране, подчеркивая напряженность между протестующими и правительством, которое страдает от плохих государственных финансов.",
-   "tags": [
-    "bonds"
-   ]
-  },
   {
    "title": "Don Wilson on the GPU Market’s Trillion Dollar Question",
    "link": "https://www.bloomberg.com/news/audio/2026-10-19/don-wilson-on-the-gpu-market-s-trillion-dollar-question",
@@ -8901,6 +8876,28 @@
    "score": 3,
    "ts": "2026-10-22T07:52:45.003873+00:00",
    "title_ru": "Barclays сообщает о прибылях европейских банков с ростом прибыли на 12%"
+  },
+  {
+   "title": "Bhaskar Sunkara Thinks the Market Has a Place Under Socialism",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-22/bhaskar-sunkara-thinks-the-market-has-a-place-under-socialism",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T08:02:45.020258+00:00",
+   "title_ru": "Бхаскар Сункара считает, что рынку есть место при социализме"
+  },
+  {
+   "title": "Odd Lots: Bhaskar Sunkara’s Case for Market Socialism (Podcast)",
+   "link": "https://www.bloomberg.com/news/audio/2026-10-22/odd-lots-bhaskar-sunkara-s-case-for-market-socialism-podcast",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T08:02:45.020258+00:00",
+   "title_ru": "Нечетные лоты: аргументы Бхаскара Сункары в пользу рыночного социализма (подкаст)",
+   "lead": "In September, Gallup released a poll that showed that 43% percent of Americans viewed socialism positively, the highest approval since Gallup began the poll back in 2010.",
+   "lead_ru": "В сентябре Gallup опубликовал опрос, который показал, что 43% американцев относятся к социализму положительно, что является самым высоким показателем с тех пор, как Gallup начал опрос еще в 2010 году."
   }
  ],
  "last_digest": "2026-10-21",
