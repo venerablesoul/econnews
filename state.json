@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "9c66c658e853daaf": "2026-10-19T21:05:37.551757+00:00",
-  "570c272c9acf7623": "2026-10-19T21:05:37.551757+00:00",
-  "d5cd076e334f8355": "2026-10-19T21:05:37.551757+00:00",
-  "929d00035febd4d7": "2026-10-19T21:05:37.551757+00:00",
   "80e72ddb77969232": "2026-10-19T21:10:37.581578+00:00",
   "1a6481b7e58503bf": "2026-10-19T21:21:05.236858+00:00",
   "2e85ce00d912348a": "2026-10-19T21:21:05.236858+00:00",
@@ -930,47 +926,10 @@
   "8c113020cb477fc1": "2026-10-22T20:50:20.262788+00:00",
   "67ecae0c9fa4bdc5": "2026-10-22T20:50:20.262788+00:00",
   "dffba5b229821e51": "2026-10-22T20:55:20.456813+00:00",
-  "81f89cc16b0fd35a": "2026-10-22T21:05:20.414371+00:00"
+  "81f89cc16b0fd35a": "2026-10-22T21:05:20.414371+00:00",
+  "0079e32d813cbb96": "2026-10-22T21:10:20.353000+00:00"
  },
  "recent": [
-  {
-   "title": "Beyond Technology: Building the Data Foundation for Digital Treasury Management",
-   "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9VVVE1Mms0b2hYVmQtNEtJQXVYUlpUYTBrZU1UWGFOVUhNa2RZUmtHclVIVktST1pDbGdFN2h2QUg0ek13dXpySllxSS1aT3NkaTEzZXJ1cHh1NEs3cjUwRWExeWFKQXlGSmcwdW9vTlhBZlhzRkc4ZFJMSQ?oc=5",
-   "sources": [
-    "IMF"
-   ],
-   "score": 4,
-   "ts": "2026-10-19T21:05:37.551757+00:00",
-   "title_ru": "За пределами технологий: создание базы данных для управления цифровым казначейством",
-   "tags": [
-    "bonds"
-   ]
-  },
-  {
-   "title": "South Africa’s president eyes trade with China and India as US ties sour",
-   "link": "https://www.ft.com/content/617fb017-e08e-4e37-abac-a38731b2de3c?syn-25a6b1a6=1",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 4,
-   "ts": "2026-10-19T21:05:37.551757+00:00",
-   "title_ru": "Президент ЮАР присматривается к торговле с Китаем и Индией, поскольку отношения с США ухудшаются",
-   "lead": "Cyril Ramaphosa says Pretoria wants to take advantage of growing tariff-free access benefits with Beijing",
-   "lead_ru": "Сирил Рамафоса говорит, что Претория хочет воспользоваться растущими преимуществами беспошлинного доступа с Пекином",
-   "tags": [
-    "China",
-    "tariffs"
-   ]
-  },
-  {
-   "title": "Why the midterm elections are likely to become a strong tailwind for the stock market",
-   "link": "https://www.marketwatch.com/story/why-the-midterm-elections-are-likely-to-become-a-strong-tailwind-for-the-stock-market-3edfca6c?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-19T21:05:37.551757+00:00"
-  },
   {
    "title": "Credit markets have entered uncharted territory as the riskiest junk bonds send a warning to investors",
    "link": "https://www.marketwatch.com/story/credit-markets-have-entered-uncharted-territory-as-the-riskiest-junk-bonds-send-a-warning-to-investors-816a05d5?mod=mw_rss_topstories",
@@ -9476,6 +9435,16 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Nebius gets $3.5 billion Citi facility for data center growth",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOMkVEMW1MRy1WVS1lMXhwMmxPV0ZieGVlUXlsaW9hUEczbDlsOUliSktHT1ZVTEdsR2k4YldJWS1ZejJaVDZPRTgxd3NGdUE4TlZ6Rng3WHJwUEVvTDN0NVFXTlJPalhlUTN2T1V5V0ZKMDhEMUhLS2JISkJLbEFXd29ZZldpNHNQV0NqV0U2NmZJYlFCYldqZ29XUy1STnNmWVVhRw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T21:10:20.353000+00:00",
+   "title_ru": "Nebius получает от Citi средства на сумму 3,5 миллиарда долларов для развития центров обработки данных"
   }
  ],
  "last_digest": "2026-10-22",
@@ -12123,6 +12092,22 @@
     "date": "2026-10-20",
     "disclosed": "2026-10-22",
     "link": "https://www.sec.gov/Archives/edgar/data/1889539/000119312526429089/0001193125-26-429089-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "4aaa725cd7528e12",
+    "ticker": "W",
+    "company": "Wayfair Inc.",
+    "who": "Fiona Tan",
+    "role": "CTO",
+    "type": "sell",
+    "value": 920000,
+    "shares": 8000,
+    "price": 115.0,
+    "plan": true,
+    "date": "2026-10-20",
+    "disclosed": "2026-10-22",
+    "link": "https://www.sec.gov/Archives/edgar/data/1867558/000161670726000183/0001616707-26-000183-index.htm"
    },
    {
     "src": "sec",
@@ -15707,22 +15692,6 @@
     "date": "2026-10-13",
     "disclosed": "2026-10-15",
     "link": "https://www.sec.gov/Archives/edgar/data/1780525/000114036126039785/0001140361-26-039785-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "d52eddda71d18b93",
-    "ticker": "DBX",
-    "company": "DROPBOX, INC.",
-    "who": "Andrew Houston",
-    "role": "CEO, 10% owner",
-    "type": "sell",
-    "value": 1035235,
-    "shares": 29500,
-    "price": 35.09,
-    "plan": true,
-    "date": "2026-10-12",
-    "disclosed": "2026-10-15",
-    "link": "https://www.sec.gov/Archives/edgar/data/1734563/000173456326000023/0001734563-26-000023-index.htm"
    }
   ],
   "docs": {
@@ -15760,6 +15729,7 @@
   },
   "checked": "2026-10-22T20:25:20.091660+00:00",
   "sec_seen": [
+   "0001176401-26-000007",
    "0000891103-26-000147",
    "0000891103-26-000151",
    "0001193125-26-429074",
@@ -15770,31 +15740,28 @@
    "0000891103-26-000153",
    "0002128771-26-000004",
    "0002103972-26-000007",
-   "0001832316-26-000008",
    "0001834046-26-000010",
+   "0001895188-26-000005",
    "0000891103-26-000146",
-   "0000891103-26-000155",
    "0000891103-26-000150",
-   "0001718133-26-000005",
-   "0001368800-26-000005",
+   "0001914220-26-000009",
    "0000891103-26-000149",
-   "0001193125-26-429058",
-   "0001258394-26-000020",
    "0000891103-26-000154",
    "0001193125-26-429075",
    "0002050784-26-000005",
    "0000891103-26-000143",
    "0001777298-26-000005",
    "0002050724-26-000004",
-   "0001070235-26-000139",
+   "0001825022-26-000006",
    "0001193125-26-429089",
    "0000891103-26-000145",
    "0000897069-26-001863",
    "0000891103-26-000152",
+   "0001616707-26-000183",
    "0001193125-26-429073",
    "0000891103-26-000148",
-   "0001914220-26-000009",
-   "0001738255-26-000006"
+   "0001368800-26-000005",
+   "0000891103-26-000155"
   ],
   "errors": {}
  }
