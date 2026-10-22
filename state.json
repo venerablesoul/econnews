@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "a8a61786a9c6f2d6": "2026-10-19T07:20:44.848704+00:00",
-  "c359925aff5afc0b": "2026-10-19T07:20:44.848704+00:00",
   "fc3a832db1467ed3": "2026-10-19T07:30:44.848898+00:00",
   "38e359a29d58380b": "2026-10-19T07:40:44.837823+00:00",
   "12ca29d99bf901bb": "2026-10-19T07:45:44.871410+00:00",
@@ -882,22 +880,11 @@
   "8ee685c352afbc1b": "2026-10-22T07:07:45.071351+00:00",
   "273ed92c3d15b270": "2026-10-22T07:07:45.071351+00:00",
   "24ae0aaea4334b25": "2026-10-22T07:12:45.031950+00:00",
-  "412c4f8eab9cc479": "2026-10-22T07:12:45.031950+00:00"
+  "412c4f8eab9cc479": "2026-10-22T07:12:45.031950+00:00",
+  "0b754d585be0f0a9": "2026-10-22T07:22:45.002037+00:00",
+  "077f93f61a86d42a": "2026-10-22T07:22:45.002037+00:00"
  },
  "recent": [
-  {
-   "title": "China set to leave benchmark lending rates unchanged for 17th month",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQV0dSY2gyXzJ6LVdfTmNQQWFzZUJodXg0N09QQ0VEQXFvUVc4SXRIY3Z5U1JCOFZSV1Rmc0h6QWFJcGoxRzRxTkU0TVQwS1A2V09jVnJ4YmNYaF80T2h5b0xtM1ZpRHA2clQtWmdGVHhNaWJHYjQ5M3FiNl9kREpWMFJ4MDNmRGh6YTluTTBialgxcEd6T3BLdzBPWDh6X0ZuYjZ3ZS1seUgyV1hE?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T07:20:44.848704+00:00",
-   "title_ru": "Китай намерен оставить базовые ставки кредитования без изменений на 17-й месяц",
-   "tags": [
-    "China"
-   ]
-  },
   {
    "title": "French stocks slide after violent protests",
    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQdW9VVF96NDJvM0NodkZHWmFtdk9jeTFva1pDT2h6eVZwWVV4OExITXRHODRaTVRlRkVvYldLdDFMRWtjeVZGa090QjhMVE1vUHd6MFhaWm5pbTRsZk9GUFFuQ0k3Wms4eEwwM2poYVcwLWJaMjR2cW9MMWlNSDFmMldsNl9ZcWlXVFRFbll1djhULTVlREhOdw?oc=5",
@@ -8892,6 +8879,32 @@
    "score": 3,
    "ts": "2026-10-22T07:12:45.031950+00:00",
    "title_ru": "Ofgem одобрил сделку по сохранению мощностей по импорту газа в Великобританию"
+  },
+  {
+   "title": "China Stocks Drop Most Since Liberation Day",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-22/the-china-show-10-22-2026-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T07:22:45.002037+00:00",
+   "title_ru": "Акции Китая упали больше всего со дня освобождения",
+   "lead": "“Bloomberg: The China Show” is your definitive source for news and analysis on the world's second-biggest economy.",
+   "lead_ru": "«Bloomberg: The China Show» — ваш надежный источник новостей и анализа второй по величине экономики мира.",
+   "tags": [
+    "markets",
+    "China"
+   ]
+  },
+  {
+   "title": "SoftBank Market Value Poised to Halve From Peak as AI Fears Grow",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPOG8weGZRSElpWE5UbDlaeVpidW5rQ2hoa3BJTVlyakJKUmdfQ0RqSWltdkU5NHkzTGN6UXR2dzUxVDA5MDl0M0hLZTQwcWRxNjBnU0hBdDNiYnRLd2VaOTlkOF9yLW1PWU5hOURtLWRSZHVpSVZOSGJWM2JzWXdiRkhIVHpuZ1JKeFVUY2w4Z1ZSUTE0VHVGdGY1c3ItYUhMem5FU21PNW02aW1kZWxQalVSdzJTUQ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T07:22:45.002037+00:00",
+   "title_ru": "Рыночная стоимость SoftBank может снизиться вдвое по сравнению с пиком по мере роста опасений в отношении искусственного интеллекта"
   }
  ],
  "last_digest": "2026-10-21",
@@ -15080,6 +15093,8 @@
    "0001493152-26-047950",
    "0001778564-26-000189"
   ],
-  "errors": {}
+  "errors": {
+   "sec": "TimeoutError: The read operation timed out"
+  }
  }
 }
