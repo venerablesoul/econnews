@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "67cb658039d02eb0": "2026-10-19T12:56:15.496751+00:00",
-  "36f802ae1a7177d1": "2026-10-19T13:01:15.473423+00:00",
   "ada659b0447d666d": "2026-10-19T13:26:15.454264+00:00",
   "32c3e085cdc377e4": "2026-10-19T13:26:15.454264+00:00",
   "7cc916d135f1e789": "2026-10-19T13:46:15.487262+00:00",
@@ -893,39 +891,11 @@
   "906fbf4bb7733896": "2026-10-22T12:43:36.815812+00:00",
   "210c35b59182a196": "2026-10-22T12:43:36.815812+00:00",
   "6ff663cdefa9a1b0": "2026-10-22T12:43:36.815812+00:00",
-  "f218889746b9a520": "2026-10-22T12:53:36.882761+00:00"
+  "f218889746b9a520": "2026-10-22T12:53:36.882761+00:00",
+  "8cc05578a4395116": "2026-10-22T13:03:36.928624+00:00",
+  "d942c7f399a332f0": "2026-10-22T13:03:36.928624+00:00"
  },
  "recent": [
-  {
-   "title": "US Stocks Rebound Ahead of Earnings; Zelenskyy Says Trump Pushing Kyiv to Yield",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-19/bloomberg-brief-10-19-2026-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-19T12:56:15.496751+00:00",
-   "title_ru": "Акции США восстанавливаются в преддверии отчетов; Зеленский заявил, что Трамп заставляет Киев уступить",
-   "lead": "US equity future rise as tech stocks look set to snap a 8-session losing streak. President Zelenskyy accuses President Trump of trying to push Ukraine to give in to Russia.",
-   "lead_ru": "Будущее акций США растет, поскольку акции технологических компаний, судя по всему, прервут полосу неудач, длившуюся 8 сессий. Президент Зеленский обвиняет президента Трампа в попытке заставить Украину уступить России.",
-   "tags": [
-    "bonds",
-    "markets",
-    "Russia"
-   ]
-  },
-  {
-   "title": "US Futures Climb With Semiconductor Stocks Rebounding After Rout",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNbE5wTUhYRkNobDJkODFuQ1V0LW1RN2tvRnhTR2kwNHNETUV0WEpIZzdDaC1sWTk5aHIxRGhpcUtMTWFGdEhuclQ2Ml92cklhQUNsb1FMUWdYX0kxUXROMVFYVkhlVnh3eGkzdE1pR0RwUW01clMtSVZjRUVRRmNpckZfUl9sSnJTT1FQTkkwS1dwVWxaUWVBeE9HQVFJRTB4OFJjc05Ga0ktVTNMdWVadUxvaEJlQQ?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T13:01:15.473423+00:00",
-   "title_ru": "Фьючерсы в США растут на фоне восстановления акций полупроводников после падения",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Canada's annual inflation rate rose to 3.1% in September",
    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQc3VaLWlSejhHR19OQW1GMmZqTzFTZEktcUVDQXpLOW1GcjdiLUNqN3VUOHB1b0FaZFBhaUtzOVhqMWRLVkhmZl9HbHVtbXA2aVJ3bHRGR0pUdkt6b0JwQndsR01IMWdoVlZhV0hqSGpxS0pLY1NsLVh3ZVRQTmJMRzVPSmEwM0RtRUZSNkY3ajE2MGVWQWRkYkV0UHVtUDg?oc=5",
@@ -15263,25 +15233,22 @@
   },
   "checked": "2026-10-22T12:08:36.861644+00:00",
   "sec_seen": [
-   "0001193125-26-428279",
-   "0001193125-26-428390",
-   "0000804328-26-000109",
-   "0001193125-26-428121",
-   "0000804328-26-000110",
-   "0000804328-26-000112",
-   "0001185185-26-004899",
-   "0001445826-26-000015",
-   "0001477932-26-006387",
-   "0001193125-26-428272",
-   "0001193125-26-428106",
+   "0001193125-26-428104",
    "0001778564-26-000189",
    "0001818383-26-000258",
-   "0000804328-26-000111",
+   "0001193125-26-428279",
+   "0001193125-26-428390",
+   "0001193125-26-428121",
+   "0001477932-26-006387",
+   "0000804328-26-000112",
+   "0001185185-26-004899",
    "0001193125-26-428110",
-   "0001191473-26-000008",
-   "0001493152-26-048021",
    "0001818383-26-000257",
-   "0001193125-26-428104"
+   "0001445826-26-000015",
+   "0001191473-26-000008",
+   "0001193125-26-428272",
+   "0001493152-26-048021",
+   "0001193125-26-428106"
   ],
   "errors": {}
  }
