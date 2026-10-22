@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "97184458c54b3b27": "2026-10-19T14:51:15.500503+00:00",
   "e692b59a582582d6": "2026-10-19T15:16:15.563310+00:00",
   "db543744cfbc5d3f": "2026-10-19T15:21:15.612091+00:00",
   "153e4de17c51469b": "2026-10-19T15:31:15.808854+00:00",
@@ -902,24 +901,11 @@
   "e27a49358c63b062": "2026-10-22T14:29:40.192753+00:00",
   "8b91dbe839403300": "2026-10-22T14:29:40.192753+00:00",
   "f0e9bb9846d13562": "2026-10-22T14:34:40.275975+00:00",
-  "7ba5ce442439a1eb": "2026-10-22T14:49:40.233784+00:00"
+  "7ba5ce442439a1eb": "2026-10-22T14:49:40.233784+00:00",
+  "a25d2a225352068b": "2026-10-22T14:54:40.165173+00:00",
+  "eaa96deacfb93521": "2026-10-22T14:59:40.169206+00:00"
  },
  "recent": [
-  {
-   "title": "Bank of America Sees Corporate Bonds Sales in Africa Running at Five-Year High",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-19/bank-of-america-sees-corporate-bonds-sales-in-africa-running-at-five-year-high",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T14:51:15.500503+00:00",
-   "title_ru": "Bank of America ожидает, что продажи корпоративных облигаций в Африке достигнут пятилетнего максимума",
-   "lead": "African companies’ hard-currency bond sales are running at the fastest pace in five years, according to Bank of America Corp, which predicts issuance will remain robust over the coming years.",
-   "lead_ru": "По данным Bank of America Corp, продажи облигаций в твердой валюте африканскими компаниями идут самыми быстрыми темпами за последние пять лет, которые прогнозируют, что в ближайшие годы выпуск останется стабильным.",
-   "tags": [
-    "bonds"
-   ]
-  },
   {
    "title": "Recognizing nuclear science occupations for Nuclear Science Week",
    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxORWdTek92Y095N25aLUFWRExBWVNiSW93d0hNUzBYMWt1dC1PUUNDUk9NRVpkbmVZSkozMThlWV9nazRfZDdGTVRtZkFkeVFFZDc3MHlnMC1FYXF2TWtZcWlSeGZXNnJ6UXdpZHBjVFc5ZEpGdm5fbVRzRVVFSjlyTTVESThNa0pSNE1scVRPSkwtVThLSFBpcEFwX21SMFpTWTRNMg?oc=5",
@@ -9159,6 +9145,16 @@
    "tags": [
     "jobs"
    ]
+  },
+  {
+   "title": "Libya's eastern parliament accepts central bank governor resignation, spokesperson says",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQUmZZVFpPdHR0ZXM0QllwRldsMlJCd3lxcU9BTHY5RE1IOTNNUFdMbTd1cVFzWG1ZUURydWpVU0NJM0M5a1BKZEw2cklMV25udUlqUk9WMkJXd1RHZEVuODBSMlJwNm1tekNVTWwwdzdsVEw1eHJyYzdVQ3E3czNFSnE5NzByUi1XY1g3aUZBaGtGRC04LUlQaXlZYjExRV8xMEFpb1dBVnhRLTNJdHBYVTJxdy1sSmRtWkhQa1JEU1hnaDNsVWNleA?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T14:59:40.169206+00:00",
+   "title_ru": "Восточный парламент Ливии принял отставку главы центрального банка, сообщил представитель"
   }
  ],
  "last_digest": "2026-10-21",
@@ -15317,18 +15313,15 @@
   "sec_seen": [
    "0001783201-26-000006",
    "0001213900-26-111561",
+   "0001435109-26-000160",
    "0001213900-26-111560",
-   "0001628280-26-066805",
    "0001628280-26-066808",
-   "0001746129-26-000065",
    "0001628280-26-066810",
    "0001062993-26-005478",
    "0001628280-26-066809",
-   "0001628280-26-066806",
    "0001435109-26-000159",
    "0001435109-26-000158",
-   "0001628280-26-066804",
-   "0001435109-26-000160",
+   "0001746129-26-000065",
    "0001062993-26-005480"
   ],
   "errors": {}
