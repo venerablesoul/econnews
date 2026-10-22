@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "12ab1b6980bca0f3": "2026-10-19T23:36:05.142204+00:00",
-  "83e0f621f03781db": "2026-10-19T23:36:05.142204+00:00",
-  "75d564d99058ccc7": "2026-10-19T23:36:05.142204+00:00",
   "0e34c82ed0fbbf5b": "2026-10-20T00:01:05.153367+00:00",
   "9197c58ac2fd84cb": "2026-10-20T00:01:05.153367+00:00",
   "9dca4127043ce76e": "2026-10-20T00:06:05.343240+00:00",
@@ -935,22 +932,11 @@
   "ac4278ffe0910f7f": "2026-10-22T23:10:20.320654+00:00",
   "1b9edf61140ed368": "2026-10-22T23:15:20.339839+00:00",
   "c722ee5ac130b5e4": "2026-10-22T23:15:20.339839+00:00",
-  "aa2699e4d4d179f3": "2026-10-22T23:35:20.377963+00:00"
+  "aa2699e4d4d179f3": "2026-10-22T23:35:20.377963+00:00",
+  "620fa3163a4316b0": "2026-10-22T23:40:20.312027+00:00",
+  "3f94321efcfd769e": "2026-10-22T23:40:20.312027+00:00"
  },
  "recent": [
-  {
-   "title": "Nasdaq climbs as chip and AI-linked stocks bounce back",
-   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9iZWF0TU9rTjVEZmZhdEg0ak5Wc1BXY2pkTjM2cGdFcjlRMmNhcHlySkNrbkFZOFNSX3diMG5vTmtwc182THpkb1RZV0YtYXhMOUp1Yks4V3F5NHZicFlOTkI4Q2lvLWVSYnNuZUl3ZjZIcW56aDVZajZOSGs1Zw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-19T23:36:05.142204+00:00",
-   "title_ru": "Nasdaq растет, поскольку акции, связанные с чипами и искусственным интеллектом, восстанавливаются",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Gold Holds Decline as Energy-Led Inflation Weighs on Rate Path",
    "link": "https://www.bloomberg.com/news/articles/2026-10-19/gold-holds-decline-as-energy-led-inflation-weighs-on-rate-path",
@@ -9544,6 +9530,16 @@
    "title_ru": "Потребительское доверие в Великобритании упало настолько же сильно, как шок от Брексита, сообщает GfK",
    "lead": "UK consumer sentiment plunged in October as soaring fuel prices brought home the scale of the cost-of-living hit from the Middle East conflict.",
    "lead_ru": "Потребительские настроения в Великобритании в октябре резко упали, поскольку растущие цены на топливо продемонстрировали масштабы снижения стоимости жизни в результате ближневосточного конфликта."
+  },
+  {
+   "title": "Ahead of the US midterms, Gen Z investors are making portfolio changes",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOaDN4TDhBbHBrVlhiUzVMTTM2LXNkMG5ZM1hDcU54OVg3V3o0a0Z5ZDBLak51UmN1YURXSlJ0UEVnQ1BXU0FwcWQxc3ZJcjF5RWxrdWM4QnZIdk5oWDE4M2l1RmdQQ3VBZFVVa3lxdUhTNGV0b2lrcVBFbEdLeXAzeWhFOS1ZY3BHYUpuaWc0emhfdlU3QWIyQWdkcjJ4Wm9henFvS1M4YmtoZWd6Uk4zUmhnN2F2bXhXbUhF?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T23:40:20.312027+00:00",
+   "title_ru": "В преддверии промежуточных выборов в США инвесторы поколения Z вносят изменения в портфели"
   }
  ],
  "last_digest": "2026-10-22",
@@ -12431,6 +12427,22 @@
     "date": "2026-10-20",
     "disclosed": "2026-10-22",
     "link": "https://www.sec.gov/Archives/edgar/data/1605808/000159653226000248/0001596532-26-000248-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "48cd22936ec3e786",
+    "ticker": "LIQT",
+    "company": "LIQTECH INTERNATIONAL INC",
+    "who": "Peyton Boswell",
+    "role": "Director",
+    "type": "buy",
+    "value": 50000,
+    "shares": 50000,
+    "price": 1.0,
+    "plan": false,
+    "date": "2026-06-05",
+    "disclosed": "2026-10-22",
+    "link": "https://www.sec.gov/Archives/edgar/data/1715018/000143774926033305/0001437749-26-033305-index.htm"
    },
    {
     "src": "sec",
@@ -15775,22 +15787,6 @@
     "date": "2026-10-14",
     "disclosed": "2026-10-15",
     "link": "https://www.sec.gov/Archives/edgar/data/1724965/000114036126039793/0001140361-26-039793-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "90a485780db1c2e7",
-    "ticker": "CRWD",
-    "company": "CrowdStrike Holdings, Inc.",
-    "who": "George Kurtz",
-    "role": "CEO",
-    "type": "sell",
-    "value": 5153490,
-    "shares": 20000,
-    "price": 257.67,
-    "plan": true,
-    "date": "2026-10-14",
-    "disclosed": "2026-10-15",
-    "link": "https://www.sec.gov/Archives/edgar/data/1778564/000177856426000185/0001778564-26-000185-index.htm"
    }
   ],
   "docs": {
@@ -15835,16 +15831,17 @@
    "0000921895-26-002845",
    "0001349983-26-000013",
    "0001140361-26-040540",
+   "0001437749-26-033305",
    "0001193125-26-429162",
    "0001193125-26-429202",
    "0001334945-26-000005",
+   "0002161365-26-000008",
    "0001400954-26-000013",
+   "0001753539-26-000149",
    "0001930044-26-000010",
    "0000109563-26-000045",
-   "0001753539-26-000149",
    "0001193125-26-429124",
    "0001950180-26-000010",
-   "0002161365-26-000008",
    "0001993147-26-000004",
    "0001187377-26-000004",
    "0001053507-26-000151",
