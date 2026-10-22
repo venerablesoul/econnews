@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "767bd0a0a0415413": "2026-10-19T12:41:15.452830+00:00",
-  "a2ce8c3e1dbc4ca5": "2026-10-19T12:41:15.452830+00:00",
   "062ea3b449e77b8e": "2026-10-19T12:46:15.464259+00:00",
   "67cb658039d02eb0": "2026-10-19T12:56:15.496751+00:00",
   "36f802ae1a7177d1": "2026-10-19T13:01:15.473423+00:00",
@@ -892,33 +890,12 @@
   "659d764dfd98fa70": "2026-10-22T12:28:36.842213+00:00",
   "fa7d126dfe526519": "2026-10-22T12:28:36.842213+00:00",
   "1ea687875b27cc7b": "2026-10-22T12:33:36.838680+00:00",
-  "d4d637c429168601": "2026-10-22T12:38:36.863066+00:00"
+  "d4d637c429168601": "2026-10-22T12:38:36.863066+00:00",
+  "906fbf4bb7733896": "2026-10-22T12:43:36.815812+00:00",
+  "210c35b59182a196": "2026-10-22T12:43:36.815812+00:00",
+  "6ff663cdefa9a1b0": "2026-10-22T12:43:36.815812+00:00"
  },
  "recent": [
-  {
-   "title": "Trump's Russia sanctions waiver eases India's energy woes, lifts trade deal chances",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPX1JDdGd6aEZHMGQ5OXppVnA5d3FlSzNmbDdjOURNajl2Sjg3T0VrRzRLSC1DdVpLekQ5ZHBVdjQ1eV9UcF81anZNVklVYjZnQlNfQUlWRVMtNzEwVVVDQWlYTmQtU29FOU5xTFlGYTFUVV90bXI3dXU5UU5IUG9ZNjNYVHNUdzNjT3JXb244bm84d240TG56ZDVLbXNhMWpucjVTZXdtaTZQYjViOFU3bDZnZlFEQjduUDBfMWdwMVBXUFl3VFRJ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-19T12:41:15.452830+00:00",
-   "title_ru": "Отказ Трампа от санкций в отношении России облегчает энергетические проблемы Индии и повышает шансы на торговую сделку",
-   "tags": [
-    "sanctions",
-    "Russia"
-   ]
-  },
-  {
-   "title": "Regional Economic Outlook for the Western Hemisphere, October 2026",
-   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNc0xmT253d1ZBa0duVEwwU25Bajd2N2kwdmdMQ1MzMm5qa1dkODFoRnpSYXBZS0NmVlltZkFnVTFRQnVzVXRoOGNMUlZBdG4ySFVUSEhnU3VEY3Y2ZndGaU9LcHlfZTZxMWx1dnJreTladUw3OG1aNWkwa2VnelVRZEFEeDBqWVB5dExlTklNZkV5LW5acHd3LUZwcDJvTjg0RG5jNS0zWFpQLVVYMFoyTng0ZE9mMV80SUtiTnhsaXdNMDBp?oc=5",
-   "sources": [
-    "IMF"
-   ],
-   "score": 5,
-   "ts": "2026-10-19T12:41:15.452830+00:00",
-   "title_ru": "Прогноз региональной экономики Западного полушария, октябрь 2026 г."
-  },
   {
    "title": "US Stocks Rebound Ahead of Earnings; Zelenskyy Says Trump Pushing Kyiv to Yield",
    "link": "https://www.bloomberg.com/news/videos/2026-10-19/bloomberg-brief-10-19-2026-video",
@@ -9090,6 +9067,46 @@
    "tags": [
     "jobs"
    ]
+  },
+  {
+   "title": "All-or-Nothing Biotech Bets Dented by Rising Treasury Yields",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-22/all-or-nothing-biotech-bets-dented-by-rising-treasury-yields",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-22T12:43:36.815812+00:00",
+   "title_ru": "Ставки на биотехнологии «все или ничего» пошатнулись растущей доходностью казначейских облигаций",
+   "lead": "Investors are beginning to turn cautious on biotechnology stocks as a rapid rise in Treasury yields dents the appeal for shares of companies that are often viewed as risky all-or-nothing bets on breakthrough medical treatments.",
+   "lead_ru": "Инвесторы начинают проявлять осторожность в отношении акций биотехнологий, поскольку быстрый рост доходности казначейских облигаций снижает привлекательность акций компаний, которые часто рассматриваются как рискованная ставка «все или ничего» на революционные методы лечения.",
+   "tags": [
+    "bonds",
+    "markets"
+   ]
+  },
+  {
+   "title": "Dow Sees Earnings in Biggest Unit Almost Doubling This Quarter",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-22/dow-sees-earnings-in-biggest-unit-almost-doubling-this-quarter",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-22T12:43:36.815812+00:00",
+   "title_ru": "Dow ожидает, что прибыль крупнейшего подразделения в этом квартале увеличится почти вдвое",
+   "lead": "Dow Inc. said it expects earnings in its largest business to almost double in the fourth quarter from a year earlier.",
+   "lead_ru": "Компания Dow Inc. заявила, что ожидает, что прибыль ее крупнейшего бизнеса почти удвоится в четвертом квартале по сравнению с годом ранее.",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "Markets are pricing in long-term AI winners. This veteran investor says history proves customers win more than innovators.",
+   "link": "https://www.marketwatch.com/story/markets-are-pricing-in-long-term-ai-winners-this-veteran-investor-says-history-proves-customers-win-more-than-innovators-f7043439?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-22T12:43:36.815812+00:00"
   }
  ],
  "last_digest": "2026-10-21",
@@ -15255,8 +15272,8 @@
    "0000804328-26-000112",
    "0001185185-26-004899",
    "0001445826-26-000015",
-   "0001193125-26-428272",
    "0001477932-26-006387",
+   "0001193125-26-428272",
    "0001193125-26-428106",
    "0001778564-26-000189",
    "0001818383-26-000258",
