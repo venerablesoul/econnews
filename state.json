@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "3748b083fb024dc3": "2026-10-19T08:45:44.860127+00:00",
   "9460b49e5b01e272": "2026-10-19T08:55:44.928124+00:00",
   "f55a65bf4ee69bf2": "2026-10-19T08:55:44.928124+00:00",
   "dbcfb59dc16afefc": "2026-10-19T09:05:44.883220+00:00",
@@ -882,26 +881,11 @@
   "e2274a27bd883ced": "2026-10-22T08:17:44.996222+00:00",
   "4b576dbd790fa30f": "2026-10-22T08:27:45.012769+00:00",
   "10c91ececcc23866": "2026-10-22T08:27:45.012769+00:00",
-  "dfb316054a1fa823": "2026-10-22T08:37:44.980971+00:00"
+  "dfb316054a1fa823": "2026-10-22T08:37:44.980971+00:00",
+  "c068a38136a18cde": "2026-10-22T08:42:44.965791+00:00",
+  "da6b40cae9e85ad7": "2026-10-22T08:47:45.039807+00:00"
  },
  "recent": [
-  {
-   "title": "Госдума поддержала предложение поднять налоговую ставку на добычу золота",
-   "link": "https://www.rbc.ru/rbcfreenews/6ad5c9771e6a318271e633d2",
-   "sources": [
-    "RBC"
-   ],
-   "score": 4,
-   "ts": "2026-10-19T08:45:44.860127+00:00",
-   "title_en": "The State Duma supported the proposal to raise the tax rate on gold mining",
-   "lead": "В России рассматривают возможность изменения налоговой политики в отношении золотодобычи.",
-   "lead_en": "Russia is considering the possibility of changing tax policy regarding gold mining.",
-   "tags": [
-    "rates",
-    "gold",
-    "Russia"
-   ]
-  },
   {
    "title": "Экономика Китая показала рост 4,5% в третьем квартале",
    "link": "https://www.kommersant.ru/doc/9041879",
@@ -8908,6 +8892,31 @@
    "title_ru": "Доходы от продажи оружия на реке Гудзон в Индии демонстрируют раннее влияние суровых мер по опционам",
    "lead": "Hudson River Trading LLC’s Indian unit reported modest profit and revenue growth in fiscal 2026, an early sign that tighter regulation of the country’s options market may be weighing on high-frequency trading firms.",
    "lead_ru": "Индийское подразделение Hudson River Trading LLC сообщило о скромном росте прибыли и доходов в 2026 финансовом году, что является ранним признаком того, что ужесточение регулирования опционного рынка страны может оказывать давление на фирмы, занимающиеся высокочастотной торговлей."
+  },
+  {
+   "title": "French borrowing costs overtake US amid budget turmoil",
+   "link": "https://www.theguardian.com/world/2026/oct/22/french-borrowing-costs-overtake-us-amid-budget-turmoil",
+   "sources": [
+    "The Guardian"
+   ],
+   "score": 2,
+   "ts": "2026-10-22T08:42:44.965791+00:00"
+  },
+  {
+   "title": "Indonesia Eyes $1.5 Billion Panda Bond as It Confronts MSCI Risk",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-22/indonesia-eyes-1-5-billion-panda-bond-as-it-confronts-msci-risk",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T08:47:45.039807+00:00",
+   "title_ru": "Индонезия рассматривает возможность выпуска облигаций Panda на сумму 1,5 миллиарда долларов, поскольку она противостоит риску MSCI",
+   "lead": "Indonesia is seeking to raise 10 billion yuan ($1.5 billion) through a panda bond sale, returning to China’s onshore debt market as Southeast Asia’s largest economy confronts MSCI Inc.’s double downgrade threat.",
+   "lead_ru": "Индонезия стремится привлечь 10 миллиардов юаней (1,5 миллиарда долларов) посредством продажи панда-облигаций, возвращаясь на внутренний долговой рынок Китая, поскольку крупнейшая экономика Юго-Восточной Азии сталкивается с угрозой двойного понижения рейтинга MSCI Inc.",
+   "tags": [
+    "bonds",
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-10-21",
