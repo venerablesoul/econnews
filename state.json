@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "81f96c10c8218294": "2026-10-19T03:40:13.685867+00:00",
   "3c44a32141e7b525": "2026-10-19T04:00:13.668693+00:00",
   "6edf10bbea2361d5": "2026-10-19T04:05:13.884746+00:00",
   "21ffb0dc6c383bf4": "2026-10-19T04:05:13.884746+00:00",
@@ -885,7 +884,9 @@
   "c6ea679dd8debddf": "2026-10-22T03:16:59.981271+00:00",
   "a362288c218b5dee": "2026-10-22T03:21:59.941057+00:00",
   "ae4a2996ddaf2033": "2026-10-22T03:32:45.023444+00:00",
-  "51be054928776810": "2026-10-22T03:37:45.033587+00:00"
+  "51be054928776810": "2026-10-22T03:37:45.033587+00:00",
+  "b6090409032eaea7": "2026-10-22T03:42:45.042771+00:00",
+  "1896096c6f162044": "2026-10-22T03:42:45.042771+00:00"
  },
  "recent": [
   {
@@ -8750,6 +8751,37 @@
    "score": 5,
    "ts": "2026-10-22T03:21:59.941057+00:00",
    "title_ru": "- Международный валютный фонд | МВФ"
+  },
+  {
+   "title": "Copper Declines as Tech-Stock Selloff Dulls Appetite for Risk",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-22/copper-declines-as-tech-stock-selloff-dulls-appetite-for-risk",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-22T03:42:45.042771+00:00",
+   "title_ru": "Медь падает, поскольку распродажа акций технологических компаний притупляет аппетит к риску",
+   "lead": "Copper fell with other industrial metals, as a selloff in AI-related stocks sapped risk appetite across global markets.",
+   "lead_ru": "Медь упала вместе с другими промышленными металлами, поскольку распродажа акций, связанных с искусственным интеллектом, подорвала склонность к риску на мировых рынках.",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "Alibaba Shares Post Steepest Drop in Two Months on China Curbs",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-22/alibaba-shares-post-steepest-drop-in-two-months-on-china-curbs",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T03:42:45.042771+00:00",
+   "title_ru": "Акции Alibaba сообщили о самом резком падении за два месяца из-за ограничений в Китае",
+   "lead": "Alibaba Group Holding Ltd.’s shares suffered their steepest decline in two months as investors fretted over Chinese authorities’ push to tighten product-quality standards and strengthen consumer protection.",
+   "lead_ru": "Акции Alibaba Group Holding Ltd. пережили самое резкое падение за два месяца, поскольку инвесторы были обеспокоены стремлением китайских властей ужесточить стандарты качества продукции и усилить защиту потребителей.",
+   "tags": [
+    "markets",
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-10-21",
@@ -14888,7 +14920,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-22T02:41:59.937692+00:00",
+  "checked": "2026-10-22T03:42:45.042771+00:00",
   "sec_seen": [
    "0001823543-26-000002",
    "0001193125-26-428030",
