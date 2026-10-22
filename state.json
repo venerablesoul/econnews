@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "0976cfa9e59b571a": "2026-10-19T14:06:15.610132+00:00",
-  "a4e970a594e3bff3": "2026-10-19T14:06:15.610132+00:00",
   "937696a3c2816312": "2026-10-19T14:16:15.528073+00:00",
   "066f0dacf8dda5d8": "2026-10-19T14:21:15.458886+00:00",
   "9ebd6797e7adaa5e": "2026-10-19T14:36:15.480554+00:00",
@@ -898,7 +896,9 @@
   "d008efdeee58878d": "2026-10-22T13:33:36.830077+00:00",
   "e2aeb5f218f786b7": "2026-10-22T13:38:36.875362+00:00",
   "cc2f48fcaecb2c86": "2026-10-22T13:38:36.875362+00:00",
-  "7281600cfefaed7b": "2026-10-22T13:43:36.925227+00:00"
+  "7281600cfefaed7b": "2026-10-22T13:43:36.925227+00:00",
+  "1dbd734723baf34d": "2026-10-22T14:08:36.852884+00:00",
+  "2dcb65a6f4bf13fc": "2026-10-22T14:08:36.852884+00:00"
  },
  "recent": [
   {
@@ -9117,6 +9117,29 @@
    "title_ru": "Тайфун Чампи закрыл тайваньский фондовый рынок стоимостью 5 триллионов долларов",
    "lead": "Taiwan’s stock exchange will shut Friday as Typhoon Champi approaches the island, bringing heavy rainfall and strong winds and prompting authorities to shut offices and schools in capital city Taipei.",
    "lead_ru": "Тайваньская фондовая биржа закроется в пятницу, поскольку к острову приближается тайфун Чампи, который принесет проливные дожди и сильные ветры и побудит власти закрыть офисы и школы в столице Тайбэе."
+  },
+  {
+   "title": "South Africa's trade with China surges after duty-free deal",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOR1BYaDluc1pIdnprZmpzRkRlVEVVS0VwdDNvVl9zb3E4cXItWmxQN2NwYVFkWTh6WUw1bmVpallwenNNbDZEWndrUWZxa1R6Uk5ZX2REVTF0VmlTN2JuanpFZW9wYXVCUE9TTXdERDlhQ0Mwd1VKalp2U2NLd1BrYTloMmVEb1RRaVFDVW0tYVhFcWIwQVR3RGVFNFgyOWoyQk55OFItZVc1UmRycnFMV0FiNA?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T14:08:36.852884+00:00",
+   "title_ru": "Торговля ЮАР с Китаем выросла после соглашения о беспошлинной торговле",
+   "tags": [
+    "China"
+   ]
+  },
+  {
+   "title": "Blackstone's profit falls as choppy market tempers investment exits",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxORldGZFBnWFM0UnNpZTVWZE95SkdVdVFyVjhpU3E0Sl9ucFhTTXJsX3NWVkZvOWd6TmhJRVZOQjhKb1dES3B2YUFHT0hJdWZIdk9VaFhmS2xub0dOVWsxMUxCV2wwVTdkcFV0TzFQSUhkMURBQ1BIMHViUVNxUXYydG94ajVNNWNEQmpZZDZBYi0wYWpKYklaeUlIWnpLSFhIdnd6WGtaQk9JUG1fWVg0b2cxTGJxWWxFeFZz?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T14:08:36.852884+00:00",
+   "title_ru": "Прибыль Blackstone падает, поскольку нестабильный рынок ограничивает выход инвестиций"
   }
  ],
  "last_digest": "2026-10-21",
@@ -15278,17 +15301,15 @@
    "0001487630-26-000020",
    "0001628280-26-066809",
    "0002080406-26-000019",
-   "0001911109-26-000019",
    "0002028611-26-000017",
    "0001628280-26-066805",
+   "0001783201-26-000006",
    "0001299077-26-000004",
    "0001628280-26-066806",
-   "0002030855-26-000008",
    "0001628280-26-066804",
    "0001455134-26-000022",
    "0001435109-26-000158",
    "0002030833-26-000003",
-   "0001792845-26-000019",
    "0001628280-26-066810",
    "0001628280-26-066808",
    "0001783059-26-000019"
