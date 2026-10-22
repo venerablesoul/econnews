@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "b2284d6e2a789835": "2026-10-19T08:15:44.885173+00:00",
   "5f44fdd088e309d2": "2026-10-19T08:20:44.899158+00:00",
   "d36a04202d2792ab": "2026-10-19T08:25:44.871255+00:00",
   "82e87c5dbf159f1d": "2026-10-19T08:25:44.871255+00:00",
@@ -883,25 +882,10 @@
   "0b1b2b704ee2bf34": "2026-10-22T08:07:45.001667+00:00",
   "52e8775d890cc5f9": "2026-10-22T08:07:45.001667+00:00",
   "afba33024997c404": "2026-10-22T08:07:45.001667+00:00",
-  "0124584213bd4494": "2026-10-22T08:12:44.994781+00:00"
+  "0124584213bd4494": "2026-10-22T08:12:44.994781+00:00",
+  "e2274a27bd883ced": "2026-10-22T08:17:44.996222+00:00"
  },
  "recent": [
-  {
-   "title": "France hit by debt sell-off as protests unnerve investors",
-   "link": "https://www.theguardian.com/world/2026/oct/19/france-hit-by-debt-sell-off-as-protests-unnerve-investors",
-   "sources": [
-    "The Guardian"
-   ],
-   "score": 6,
-   "ts": "2026-10-19T08:15:44.885173+00:00",
-   "title_ru": "Франция пострадала от распродажи долгов, поскольку протесты нервируют инвесторов",
-   "lead": "Difference between French and German 10-year borrowing costs widens after violence breaks out Business live – latest updates France was hit by a fresh wave of selling in its bond and stock markets on Monday after violent protests…",
-   "lead_ru": "Разница между французской и немецкой 10-летней стоимостью заимствований увеличивается после вспышки насилия Business Live – последние новости Франция пострадала от новой волны продаж на своих рынках облигаций и акций в понедельник после бурных протестов...",
-   "tags": [
-    "bonds",
-    "markets"
-   ]
-  },
   {
    "title": "Indonesia's Selloff Deepens With Officials set for MSCI Meeting",
    "link": "https://www.bloomberg.com/news/videos/2026-10-19/insonesia-s-selloff-deepens-after-msci-warning-video",
@@ -8911,6 +8895,21 @@
    "title_ru": "Потребительское доверие в Турции упало больше всего за несколько лет после сокращения финансирования",
    "lead": "Turkish consumer confidence suffered its sharpest monthly drop in three years following a fund crisis that triggered a stock rout and left investors unable to access some of their assets.",
    "lead_ru": "Потребительское доверие в Турции пережило самое резкое ежемесячное падение за три года после фондового кризиса, который спровоцировал обвал акций и лишил инвесторов доступа к некоторым из своих активов."
+  },
+  {
+   "title": "Tech Stocks Lead Asia Rout, Houthi Attacks Prompt US Diplomat Departures",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-22/insight-with-haslinda-amin-10-22-2026-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T08:17:44.996222+00:00",
+   "title_ru": "Акции технологических компаний опережают Азию, нападения хуситов спровоцировали отъезд американских дипломатов",
+   "lead": "\"Insight with Haslinda Amin\" is a daily news program featuring in-depth, high-profile interviews and analysis to give viewers the complete picture on the stories that matter.",
+   "lead_ru": "«Insight with Haslinda Amin» — это ежедневная новостная программа, включающая подробные, громкие интервью и аналитические материалы, которые дают зрителям полное представление о важных событиях.",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-21",
