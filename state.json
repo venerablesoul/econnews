@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "97542760a520b1af": "2026-10-19T05:15:44.896637+00:00",
-  "3da0c76b26f53ba5": "2026-10-19T05:15:44.896637+00:00",
-  "bd8cb49d039b42b3": "2026-10-19T05:15:44.896637+00:00",
   "99c2483474b5dcb6": "2026-10-19T05:25:44.843761+00:00",
   "8b562c5b47e2b5b4": "2026-10-19T05:30:44.858019+00:00",
   "2bc3fea1b9410316": "2026-10-19T05:35:44.888347+00:00",
@@ -871,7 +868,8 @@
   "b09c2bcac2e61277": "2026-10-22T04:37:44.997871+00:00",
   "baba3d8c9ec1d02a": "2026-10-22T04:42:45.121381+00:00",
   "9e568c8369408690": "2026-10-22T04:42:45.121381+00:00",
-  "e72007495676faed": "2026-10-22T04:47:44.978600+00:00"
+  "e72007495676faed": "2026-10-22T04:47:44.978600+00:00",
+  "76843d9e3f214cc0": "2026-10-22T05:17:44.980791+00:00"
  },
  "recent": [
   {
@@ -8683,6 +8681,19 @@
    "score": 3,
    "ts": "2026-10-22T04:37:44.997871+00:00",
    "title_ru": "Канадский Карни посетил Турцию, чтобы ослабить торговую зависимость США"
+  },
+  {
+   "title": "Nestle third quarter organic sales beat forecast, deconsolidates Russian business",
+   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOcjd6X2hsZ1RlbmxpaE5jV2JudkVOSzc3VnB5V2xKbmF4MTJtZXlabFY0ZnR2bWs1dTh3OFVpWTBnSmxTTm51MEtPMl9fWWFjbGJJS0xIVmlYNEc1Wjh2MGpyd0QyeVdGamYzcFhLTHF6RWVkSDJ1eDhVNldhTXVZUkVHWTlpREc3c0dBRGZRT0RTN0VjaW1aRDVfdFZfb1huQWZUYm5WNWp3dVRsdXp4TXc1Vm5mQXo0YUY4TC10MmliNGpuSDM3RE5xUFJZbzJ5QWE3OVdxdEs?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T05:17:44.980791+00:00",
+   "title_ru": "Продажи органической продукции Nestle в третьем квартале превысили прогноз, деконсолидация российского бизнеса",
+   "tags": [
+    "Russia"
+   ]
   }
  ],
  "last_digest": "2026-10-21",
