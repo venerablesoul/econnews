@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "f65227e80de8cf65": "2026-10-19T18:00:37.839081+00:00",
-  "0549f3f1ca859678": "2026-10-19T18:00:37.839081+00:00",
   "19f8efd8103f1cf3": "2026-10-19T18:05:37.945799+00:00",
   "4da50f7099735cf5": "2026-10-19T18:20:37.608818+00:00",
   "96a620ab29368b9b": "2026-10-19T18:30:37.563984+00:00",
@@ -915,21 +913,11 @@
   "1c648ed7e4cdff5d": "2026-10-22T17:54:40.185170+00:00",
   "c5bac7e758a1e849": "2026-10-22T17:59:40.172740+00:00",
   "c756aa60e94d8a51": "2026-10-22T17:59:40.172740+00:00",
-  "cdea6c71e0280959": "2026-10-22T17:59:40.172740+00:00"
+  "cdea6c71e0280959": "2026-10-22T17:59:40.172740+00:00",
+  "1626fc46d3aea473": "2026-10-22T18:04:40.176159+00:00",
+  "402e83ee1c281234": "2026-10-22T18:04:40.176159+00:00"
  },
  "recent": [
-  {
-   "title": "CoreWeave’s Business is Sound Despite Debt Fears, JPMorgan Says",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-19/coreweave-s-business-is-sound-despite-debt-fears-jpmorgan-says",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T18:00:37.839081+00:00",
-   "title_ru": "Бизнес CoreWeave процветает, несмотря на опасения по поводу долгов, заявляет JPMorgan",
-   "lead": "Investor concerns over CoreWeave Inc.’s mounting debt and rapid cash burn are likely overdone, analysts at JPMorgan Chase & Co. said, given that rapid expansion is driving its financing needs rather than weak project economics.",
-   "lead_ru": "Аналитики JPMorgan Chase & Co. считают, что опасения инвесторов по поводу растущего долга CoreWeave Inc. и быстрого расходования денежных средств, вероятно, преувеличены, учитывая, что быстрое расширение стимулирует потребности в финансировании, а не слабую экономику проекта."
-  },
   {
    "title": "Europe EV sales rose 70% in September, around 30% of market share",
    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQZ0ctREhXOHRCbnByZlQ4RDNoM051bnJjZzZFSzczeEdGWmFHQXpyV1FLM1dMWGNyQnI1b19XbmJENmQxWUtvdWN2NXlGX09xc3RxVWUxWVlaLVl6dVJqM3lMcWwteUROMnhsZUEzaHZxOTF4RldpZ1RsYTBrRjhNeGI0WUo5MTdaN2taeVR5T2JzSmluejd2aTVJVktpUl8tWXVJ?oc=5",
@@ -9396,9 +9384,29 @@
    "score": 3,
    "ts": "2026-10-22T17:59:40.172740+00:00",
    "title_ru": "«Мы будем наращивать эскалацию»: индонезийские студенты настаивают на том, чтобы их услышали о дымке и экономике"
+  },
+  {
+   "title": "Ben Bland on Southeast Asia in a Fragmented World",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQeXo2X005ZVRKWjlWa1phRXYzLVZEVUVtVzZIQ1VvaWk2MEdKRFFqQzFoc3hfR3M1dE9uZ3BkbEtqLTgxMGJtTnpTNjlvSVVvUU94MmdHWGdUcTBYYnZlWlpla2lmaGRFTXVQUDUzdlFmWl9zcEc5MzBkYjVWb0Q3V19JalhPcnk4MEhIeVg5Vndudw?oc=5",
+   "sources": [
+    "IMF"
+   ],
+   "score": 4,
+   "ts": "2026-10-22T18:04:40.176159+00:00",
+   "title_ru": "Бен Блэнд о Юго-Восточной Азии в фрагментированном мире"
+  },
+  {
+   "title": "Paraguay's central bank under pressure over politically connected lender",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPQkttWTU1WHM3ZHo1N04tMXo2ajRjOGpTX3VRWkFmVGhwNlZkUEc0bEtBa2hKdEFBYzhGV21BTFNfQzVjVTY4OGVPem1wdHZEZjZERkYyakdwcGVMaU5HOUxtQXZNaVlNd0dKazVQYUlpU0d2WGNhV0l1T3pJN1djVkhhbGZ6X1JlWXhQTFJXczFORWd0eHRpMHFUVjZHMkJtbGJWbWVYekVlYjNpMERSV2tqV2JNWHpyemNEQU84bHowQQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T18:04:40.176159+00:00",
+   "title_ru": "Центральный банк Парагвая находится под давлением из-за кредитора с политическими связями"
   }
  ],
- "last_digest": "2026-10-21",
+ "last_digest": "2026-10-22",
  "fail_streak": {
   "РБК": 0,
   "МВФ": 0,
@@ -9425,7 +9433,6 @@
   "US Labor Statistics (BLS)": 0
  },
  "charts_sent": [
-  "2026-10-12-21",
   "2026-10-13-09",
   "2026-10-13-21",
   "2026-10-14-09",
@@ -9444,7 +9451,8 @@
   "2026-10-20-21",
   "2026-10-21-09",
   "2026-10-21-21",
-  "2026-10-22-09"
+  "2026-10-22-09",
+  "2026-10-22-21"
  ],
  "calendar": {
   "fetched": "2026-10-22T12:13:36.829690+00:00",
@@ -15616,13 +15624,12 @@
   },
   "checked": "2026-10-22T17:19:40.225583+00:00",
   "sec_seen": [
-   "0001193125-26-428684",
    "0001193125-26-428690",
+   "0001193125-26-428684",
    "0001866581-26-000159",
    "0001193125-26-428698",
    "0001866581-26-000158",
    "0001193125-26-428693",
-   "0001510281-26-000370",
    "0000006955-26-000091",
    "0001493152-26-048062",
    "0001866581-26-000160",
