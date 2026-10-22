@@ -872,7 +872,11 @@
   "149fd17d22358dc0": "2026-10-22T05:32:45.008961+00:00",
   "63309e8cfffa21df": "2026-10-22T05:42:45.004577+00:00",
   "31cd63bafc8c07eb": "2026-10-22T05:42:45.004577+00:00",
-  "8a337b851b1e12f0": "2026-10-22T05:47:44.976849+00:00"
+  "8a337b851b1e12f0": "2026-10-22T05:47:44.976849+00:00",
+  "1d494f76cc450fcd": "2026-10-22T05:52:44.984087+00:00",
+  "5a44d681611e2fec": "2026-10-22T05:52:44.984087+00:00",
+  "bcaca8940d77e732": "2026-10-22T05:57:45.065252+00:00",
+  "b0d8e1058f313f3a": "2026-10-22T05:57:45.065252+00:00"
  },
  "recent": [
   {
@@ -8738,6 +8742,38 @@
    "tags": [
     "China"
    ]
+  },
+  {
+   "title": "Росстат назвал регионы с самой высокой и низкой зарплатой",
+   "link": "https://www.rbc.ru/rbcfreenews/6ad99bf5fcdf1d1064ff25d7",
+   "sources": [
+    "RBC"
+   ],
+   "score": 2,
+   "ts": "2026-10-22T05:52:44.984087+00:00"
+  },
+  {
+   "title": "FTSE 100 Live: UK Stocks Set for Losses as Global Equities Decline",
+   "link": "https://www.bloomberg.com/news/live-blog/2026-10-22/ftse-100-live-pound-gilts-barclays-sainsbury-ai-trade-nestle-oil-prices-hormuz-trump-iran-what-s-moving-uk-markets-right-now-markets-today",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T05:57:45.065252+00:00",
+   "title_ru": "FTSE 100 в реальном времени: акции Великобритании потерпят убытки на фоне падения мировых фондовых рынков",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "Indonesia issues record fines to companies over stock market violations",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNY3MzeE9TNmZPQTI1dUhlSW9PZktuNzdWOUFsdnFkbkcxT01LMjZwRHJEU0xVVU84eERjYjhmcGd4X3FjVnM2NXJKWVptM2RfaE9MeXpraE5oT1BFenV3NTZxR2ptOWFmYkJUYmJmRVpieGhEX0VHRmxYQ2NMTzdwYmRuTUZ4OWxmLVpLZTJNS040TVJjOUIwcDdrbDlXZUh6RU1wNGhSWVV5WGtpWnIzVERpVEt2MWtub2h2Q3JId18?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T05:57:45.065252+00:00",
+   "title_ru": "Индонезия наложила рекордные штрафы на компании за нарушения на фондовом рынке"
   }
  ],
  "last_digest": "2026-10-21",
@@ -8760,7 +8796,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 0,
+  "Fed": 1,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
