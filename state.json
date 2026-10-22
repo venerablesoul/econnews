@@ -927,7 +927,10 @@
   "9b4807e570c3cdf0": "2026-10-22T20:30:20.020381+00:00",
   "ed17e724ce351e15": "2026-10-22T20:30:20.020381+00:00",
   "52940eff731d5e09": "2026-10-22T20:30:20.020381+00:00",
-  "aae2a3aaaeb5935e": "2026-10-22T20:45:20.361854+00:00"
+  "aae2a3aaaeb5935e": "2026-10-22T20:45:20.361854+00:00",
+  "8715604258485543": "2026-10-22T20:50:20.262788+00:00",
+  "8c113020cb477fc1": "2026-10-22T20:50:20.262788+00:00",
+  "67ecae0c9fa4bdc5": "2026-10-22T20:50:20.262788+00:00"
  },
  "recent": [
   {
@@ -9452,6 +9455,31 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Oil prices approach Iran-war highs as soaring tanker rates trigger a second energy squeeze",
+   "link": "https://www.marketwatch.com/story/oil-prices-approach-iran-war-highs-as-soaring-tanker-rates-trigger-a-second-energy-squeeze-2d726982?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 4,
+   "ts": "2026-10-22T20:50:20.262788+00:00",
+   "title_ru": "Цены на нефть приближаются к максимумам времен войны в Иране, поскольку растущие ставки на танкеры вызывают второе сокращение энергоресурсов",
+   "lead": "Wall Street may be starting to price in the scenario everyone fears: a full-scale regional conflict that could further choke off global energy supplies and unleash a fresh wave of turmoil across financial markets.",
+   "lead_ru": "Уолл-стрит, возможно, начинает оценивать сценарий, которого все боятся: полномасштабный региональный конфликт, который может еще больше перекрыть глобальные поставки энергоносителей и вызвать новую волну потрясений на финансовых рынках.",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "Prada shows resilience in tough luxury market, hot weather weighs on shop traffic",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNZnh3My14a0xaYlZ0VDdVTWFZdTZVZlpHQjNDWk4wRnhhVTlzNFdpRUl0YVM3bDdEWFhaUXNkTjRwMVJCOTJPSy1tdHFsNHd3RWxhakwtaGNHaTY3NE5FbUozMW44TXd4TmxFallKdkd2TjRmOV95amRiVThJUXVVM3o3U2VfOUNsVTAydmhuOFFXa012Z0Q3UHB4VEsyQS1Ia1Q0U1BXTjNnanlYVFJPOFBrTTlXanE5Q0VCLUZ3VjA0Z0Myd1E?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T20:50:20.262788+00:00",
+   "title_ru": "Prada демонстрирует устойчивость на жестком рынке предметов роскоши, жаркая погода снижает посещаемость магазинов"
   }
  ],
  "last_digest": "2026-10-22",
@@ -11734,6 +11762,22 @@
    },
    {
     "src": "sec",
+    "id": "11e16a9e837f0c2e",
+    "ticker": "BB",
+    "company": "BLACKBERRY Ltd",
+    "who": "John Joseph Giamatteo",
+    "role": "CEO",
+    "type": "sell",
+    "value": 2284660,
+    "shares": 250000,
+    "price": 9.14,
+    "plan": false,
+    "date": "2026-10-22",
+    "disclosed": "2026-10-22",
+    "link": "https://www.sec.gov/Archives/edgar/data/1234080/000107023526000139/0001070235-26-000139-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "dff8db13dd14cd3c",
     "ticker": "AGMB",
     "company": "AgomAb Therapeutics NV",
@@ -11859,6 +11903,22 @@
     "date": "2026-10-21",
     "disclosed": "2026-10-22",
     "link": "https://www.sec.gov/Archives/edgar/data/1106578/000110657826000169/0001106578-26-000169-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "1bde5e12c6f172d5",
+    "ticker": "XFLT",
+    "company": "XAI Floating Rate & Alternative Income Trust",
+    "who": "Spence John Yogi",
+    "role": "",
+    "type": "buy",
+    "value": 34140,
+    "shares": 2000,
+    "price": 17.07,
+    "plan": false,
+    "date": "2026-10-21",
+    "disclosed": "2026-10-22",
+    "link": "https://www.sec.gov/Archives/edgar/data/1718133/000171813326000005/0001718133-26-000005-index.htm"
    },
    {
     "src": "sec",
@@ -15667,38 +15727,6 @@
     "date": "2026-10-14",
     "disclosed": "2026-10-14",
     "link": "https://www.sec.gov/Archives/edgar/data/1583648/000110465926115916/0001104659-26-115916-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "75ccf1c3b4216c53",
-    "ticker": "CRWV",
-    "company": "CoreWeave, Inc.",
-    "who": "Jonathan Jones",
-    "role": "Chief Revenue Officer",
-    "type": "sell",
-    "value": 2940519,
-    "shares": 37380,
-    "price": 78.67,
-    "plan": true,
-    "date": "2026-10-13",
-    "disclosed": "2026-10-14",
-    "link": "https://www.sec.gov/Archives/edgar/data/2092880/000176962826000448/0001769628-26-000448-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "04395488c344290d",
-    "ticker": "BMBL",
-    "company": "Bumble Inc.",
-    "who": "Bx Buzz Ml-1 Gp Llc et al.",
-    "role": "10% owner",
-    "type": "sell",
-    "value": 9789181,
-    "shares": 2763510,
-    "price": 3.54,
-    "plan": true,
-    "date": "2026-10-13",
-    "disclosed": "2026-10-14",
-    "link": "https://www.sec.gov/Archives/edgar/data/1870652/000119312526421998/0001193125-26-421998-index.htm"
    }
   ],
   "docs": {
@@ -15736,27 +15764,30 @@
   },
   "checked": "2026-10-22T20:25:20.091660+00:00",
   "sec_seen": [
-   "0001193125-26-428976",
    "0000821002-26-000046",
-   "0001193125-26-428980",
+   "0002045848-26-000009",
    "0000821002-26-000045",
    "0001106578-26-000169",
    "0001398344-26-018633",
-   "0000070858-26-000498",
    "0001981599-26-000130",
    "0001193125-26-428985",
    "0001493152-26-048109",
+   "0001718133-26-000005",
+   "0001193125-26-429058",
+   "0001258394-26-000020",
    "0002061219-26-000023",
+   "0001193125-26-429026",
    "0001398344-26-018631",
    "0000070858-26-000500",
-   "0002146790-26-000023",
    "0001398344-26-018632",
    "0002100241-26-000005",
    "0002047749-26-000006",
+   "0001070235-26-000139",
    "0001398344-26-018630",
    "0001983992-26-000009",
    "0001411282-26-000024",
    "0000070858-26-000499",
+   "0001738255-26-000006",
    "0001225208-26-008484"
   ],
   "errors": {}
