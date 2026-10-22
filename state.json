@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "273584fcb52c24be": "2026-10-19T17:05:37.951356+00:00",
   "c6971bfe8b4f4caa": "2026-10-19T17:15:37.580419+00:00",
   "9b4807e570c3cdf0": "2026-10-19T17:20:37.587292+00:00",
   "f04e60139d74313f": "2026-10-19T17:20:37.587292+00:00",
@@ -916,7 +915,8 @@
   "f89153a0e31ae83c": "2026-10-22T16:39:40.238014+00:00",
   "ed1aa4feb5ddcb6f": "2026-10-22T16:44:40.179116+00:00",
   "5292216b632a8c9a": "2026-10-22T16:59:40.228671+00:00",
-  "51a59f20aa6bd9d8": "2026-10-22T17:04:40.208362+00:00"
+  "51a59f20aa6bd9d8": "2026-10-22T17:04:40.208362+00:00",
+  "e2ecce3384847288": "2026-10-22T17:09:40.264169+00:00"
  },
  "recent": [
   {
@@ -9340,6 +9340,16 @@
    "score": 3,
    "ts": "2026-10-22T17:04:40.208362+00:00",
    "title_ru": "Короткие продавцы получают 6 миллиардов долларов нереализованной прибыли, поскольку неооблака падают из-за опасений по поводу долгов ИИ"
+  },
+  {
+   "title": "UK restarts large-calibre weapon manufacturing after 20 years in defence push",
+   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNVnBOa2V4YWZERVlSU0FpTmFNX0ZsOUY2ZkJYLWVPX2NJYzVIV20tZmFqY2lfQVBiSWlSYVV3YW1EWm5scmNTSG5CVlVVcnhsLUZZdDVPekRXcTUtbmNJWl9pQUttS2FxdE9qSDlCNm1NZEdmVnpXWm5RR2tDSGQydldpVzJjQ1JVX0RCcGpxczBvMmlZZmhmVk5ha0JGRDM1X1QxXzVzUGxLQ2hSa2dIbEdGb1J3dTRqUDRkWnV3Q0JvNzN3MXVLX1BEclcycHc0bXBv?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T17:09:40.264169+00:00",
+   "title_ru": "Великобритания возобновляет производство крупнокалиберного оружия после 20 лет оборонной деятельности"
   }
  ],
  "last_digest": "2026-10-21",
@@ -15512,9 +15522,9 @@
   },
   "checked": "2026-10-22T16:19:40.209379+00:00",
   "sec_seen": [
+   "0001510281-26-000370",
    "0001437749-26-033222",
    "0001251987-26-000012",
-   "0001510281-26-000370",
    "0001437749-26-033223"
   ],
   "errors": {}
