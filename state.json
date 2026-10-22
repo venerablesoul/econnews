@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "fc3a832db1467ed3": "2026-10-19T07:30:44.848898+00:00",
   "38e359a29d58380b": "2026-10-19T07:40:44.837823+00:00",
   "12ca29d99bf901bb": "2026-10-19T07:45:44.871410+00:00",
   "a148c16c1a077f41": "2026-10-19T07:45:44.871410+00:00",
@@ -882,22 +881,10 @@
   "24ae0aaea4334b25": "2026-10-22T07:12:45.031950+00:00",
   "412c4f8eab9cc479": "2026-10-22T07:12:45.031950+00:00",
   "0b754d585be0f0a9": "2026-10-22T07:22:45.002037+00:00",
-  "077f93f61a86d42a": "2026-10-22T07:22:45.002037+00:00"
+  "077f93f61a86d42a": "2026-10-22T07:22:45.002037+00:00",
+  "03212f5527409c65": "2026-10-22T07:32:45.031213+00:00"
  },
  "recent": [
-  {
-   "title": "French stocks slide after violent protests",
-   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQdW9VVF96NDJvM0NodkZHWmFtdk9jeTFva1pDT2h6eVZwWVV4OExITXRHODRaTVRlRkVvYldLdDFMRWtjeVZGa090QjhMVE1vUHd6MFhaWm5pbTRsZk9GUFFuQ0k3Wms4eEwwM2poYVcwLWJaMjR2cW9MMWlNSDFmMldsNl9ZcWlXVFRFbll1djhULTVlREhOdw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T07:30:44.848898+00:00",
-   "title_ru": "Французские акции падают после бурных протестов",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "BoE scrutinises Barclays over claim traders misrepresented private credit exposure, FT reports",
    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQSUFpLTRDXzBZLUNxdTJiY29fNlNnSjgzdWRIMmZISEtvUUtrSU1pUTBtX2U0NGExZFhTajAwUUgwYVh6WXVWSktYNGItbDg1VUdhOFVDc2VqX2g2SW1jZzFrY3NrclU2U3NMMF8yLW1SeS0yaWdRNnRZeUdzRFdOT01reC1WaDY3NkFNZDFwcVRRQXhqS2NYZE04VXRFVlNsTlI2VURYOGVXVG5lWU9XazlkcjNockRpRlJUcVhaZEEyUl9E?oc=5",
@@ -8905,6 +8892,19 @@
    "score": 3,
    "ts": "2026-10-22T07:22:45.002037+00:00",
    "title_ru": "Рыночная стоимость SoftBank может снизиться вдвое по сравнению с пиком по мере роста опасений в отношении искусственного интеллекта"
+  },
+  {
+   "title": "STOXX 600 slips as Barclays, Hermes disappoint; oil climbs",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNdVJKdFpHOVNMc2FWbnFjeWFhUnpnQmhwSXAtNHA0amRvS0tSVjZYVTFTTWZNa01FaEVsQVp5TVRtSTVjMERpS0NaZnZoYWVwWDdsQV9IcXRoemlWc040dnI4MV82RDNsZVB2RlBCVmd6a1hTV0k4aXU4cG9Edzh4WHF0LXdXelJuUXRNbUhtalFoVm1OWVRFQXh1SHdEcWpIbFFhLUZYYw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T07:32:45.031213+00:00",
+   "title_ru": "STOXX 600 падает, а Barclays разочаровывает Hermes; нефть растёт",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-21",
@@ -15093,8 +15093,6 @@
    "0001493152-26-047950",
    "0001778564-26-000189"
   ],
-  "errors": {
-   "sec": "TimeoutError: The read operation timed out"
-  }
+  "errors": {}
  }
 }
