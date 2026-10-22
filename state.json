@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "69afe8bb3edd9dc9": "2026-10-19T06:05:44.844086+00:00",
   "06e3a3f2dd08d738": "2026-10-19T06:10:44.914783+00:00",
   "ecda752f29169f93": "2026-10-19T06:15:44.862697+00:00",
   "9fd9bdd05f849345": "2026-10-19T06:15:44.862697+00:00",
@@ -878,19 +877,10 @@
   "bcaca8940d77e732": "2026-10-22T05:57:45.065252+00:00",
   "b0d8e1058f313f3a": "2026-10-22T05:57:45.065252+00:00",
   "7a4dfa4b3a1ddb8e": "2026-10-22T06:02:44.976895+00:00",
-  "39efd63ba7519f02": "2026-10-22T06:02:44.976895+00:00"
+  "39efd63ba7519f02": "2026-10-22T06:02:44.976895+00:00",
+  "f3cf90883d47586d": "2026-10-22T06:07:45.002854+00:00"
  },
  "recent": [
-  {
-   "title": "Frank Elderson: From climate and nature risks to economic resilience and competitiveness",
-   "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261019~f0a3e053de.en.html",
-   "sources": [
-    "ECB"
-   ],
-   "score": 5,
-   "ts": "2026-10-19T06:05:44.844086+00:00",
-   "title_ru": "Фрэнк Элдерсон: От климатических и природных рисков до экономической устойчивости и конкурентоспособности"
-  },
   {
    "title": "Indonesia Selloff Deepens as Emerging-Market Status Comes Under Threat",
    "link": "https://www.bloomberg.com/news/videos/2026-10-19/insight-with-haslinda-amin-10-19-2026-video",
@@ -8796,6 +8786,19 @@
    "score": 3,
    "ts": "2026-10-22T06:02:44.976895+00:00",
    "title_ru": "Утренняя ставка: долговая нагрузка Франции, искусственный интеллект в центре внимания"
+  },
+  {
+   "title": "India's Mideast oil imports return to pre-war levels in September",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNRl9GVUFVbTBqSFIzbnJpZmJ0c3Q5ZFJlQ0hQUkkwZW5aVDdVWTMwczBlRFRTbF9zM0NNODcyWG9PUTg5WXZKOXRfSUdJSXhHM1FPcFhUOTVmb0pIUHh5Rl9tYldSWDd1all5UV9fV2VMSmNxSUU4anJpUVVvMkFadHpQcmwxdFhRSHlvSXhpMEY1bXNkV2NnUnVNelltUHVRQjFzWE14TWZVVnhrRndv?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-22T06:07:45.002854+00:00",
+   "title_ru": "Импорт ближневосточной нефти Индии в сентябре вернулся к довоенному уровню",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-21",
@@ -14984,6 +14987,8 @@
    "0001493152-26-047950",
    "0001778564-26-000189"
   ],
-  "errors": {}
+  "errors": {
+   "sec": "TimeoutError: The read operation timed out"
+  }
  }
 }
