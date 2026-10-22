@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "f335836d02483b14": "2026-10-19T10:26:15.439131+00:00",
-  "dc6f3a277ac1237a": "2026-10-19T10:26:15.439131+00:00",
-  "500fefd6af6adbd7": "2026-10-19T10:26:15.439131+00:00",
-  "31dd18c51f0a53c0": "2026-10-19T10:31:15.426739+00:00",
   "167a06db614d6306": "2026-10-19T10:36:15.425567+00:00",
   "413826b97fd737d6": "2026-10-19T10:41:15.500913+00:00",
   "5dbc14cfcb2e591a": "2026-10-19T10:46:15.417314+00:00",
@@ -888,57 +884,10 @@
   "0501beb846697447": "2026-10-22T10:13:36.833722+00:00",
   "3df85d330489cea2": "2026-10-22T10:23:36.836037+00:00",
   "0f305d257c0519d6": "2026-10-22T10:23:36.836037+00:00",
-  "7228ee66f2cfc731": "2026-10-22T10:23:36.836037+00:00"
+  "7228ee66f2cfc731": "2026-10-22T10:23:36.836037+00:00",
+  "27230cc576cd9ef9": "2026-10-22T10:28:36.801547+00:00"
  },
  "recent": [
-  {
-   "title": "Cameroon Eurobond Yields Soar as Fitch Downgrade Flags Risks",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-19/cameroon-eurobond-yields-soar-as-fitch-downgrade-flags-risks",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-19T10:26:15.439131+00:00",
-   "title_ru": "Доходность еврооблигаций Камеруна взлетела, поскольку Fitch понизило рейтинг",
-   "lead": "Cameroon’s dollar-bond yields climbed for a fourth trading session after Fitch Ratings downgraded the sovereign, citing heightened political risks and mounting financing pressures in Central Africa’s biggest economy.",
-   "lead_ru": "Доходность долларовых облигаций Камеруна выросла уже четвертую торговую сессию после того, как Fitch Ratings понизило суверенный рейтинг, сославшись на возросшие политические риски и растущее финансовое давление в крупнейшей экономике Центральной Африки.",
-   "tags": [
-    "dollar",
-    "bonds"
-   ]
-  },
-  {
-   "title": "Indonesian markets tumble after MSCI's warning. Here's what's at stake.",
-   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE4yRGl2UjdPUXk4MjNLbHQtS0szc2xEZjd6TGU2c19MYlZHS3pZeEVpeDdOYmhSYnlVSXg5WjRrNUZFX0YxVHFGN3NPeDFjNlNTcnpRdWZid0RDdnhrLV9OY3pwaDRUbTJ5eGN4dXRDdkZ6MWdscUhJUE44VExjZw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T10:26:15.439131+00:00",
-   "title_ru": "Индонезийские рынки упали после предупреждения MSCI. Вот что поставлено на карту."
-  },
-  {
-   "title": "The S&P 500 is masking a hidden market pullback. Why Morgan Stanley says an index retreat would signal a buying opportunity.",
-   "link": "https://www.marketwatch.com/story/the-s-p-500-is-masking-a-hidden-market-pullback-why-morgan-stanley-says-an-index-retreat-would-signal-a-buying-opportunity-08d079c0?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 2,
-   "ts": "2026-10-19T10:26:15.439131+00:00"
-  },
-  {
-   "title": "Musk Says He Will Gift SpaceX Shares to ‘Every Kid in America’",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNNUNlQWZkbHFJbmR0U3dTTXhlcXNBaktwcV9NZkEtSV9MYXlGcVlwS0FpV1lpSktYVFRCcWp1cWlIVGdYNWlBd3JsS2thdVVTNnBzOHZuV1B4QU95dHdnai1BUFQ3Y2FrUG0zV3gzN1hJcDUtWFpaa1BmbnZNelFXQ29QRHBvTWFXNmt5a2pQd1AzX3g4WVVES3BQdm4wYlRvOVZsbTlUbVE5bGY0b29udw?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T10:31:15.426739+00:00",
-   "title_ru": "Маск заявил, что подарит акции SpaceX «каждому ребенку в Америке»",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "French Stocks and Bonds Retreat as Government Comes Under Pressure",
    "link": "https://www.bloomberg.com/news/newsletters/2026-10-19/french-stocks-and-bonds-retreat-as-government-comes-under-pressure",
@@ -15148,10 +15097,9 @@
   "checked": "2026-10-22T09:58:36.880177+00:00",
   "sec_seen": [
    "0001193125-26-428279",
-   "0001818383-26-000257",
    "0000804328-26-000109",
-   "0000804328-26-000110",
    "0001193125-26-428121",
+   "0000804328-26-000110",
    "0001231919-26-001485",
    "0000804328-26-000112",
    "0001185185-26-004899",
@@ -15166,6 +15114,7 @@
    "0001191473-26-000008",
    "0000804328-26-000107",
    "0000804328-26-000108",
+   "0001818383-26-000257",
    "0001193125-26-428104"
   ],
   "errors": {}
