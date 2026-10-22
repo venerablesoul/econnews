@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "dbcfb59dc16afefc": "2026-10-19T09:05:44.883220+00:00",
   "371924a829d770ed": "2026-10-19T09:15:44.833506+00:00",
   "753c2e0a50b5b4b2": "2026-10-19T09:20:44.863877+00:00",
   "94d8b1d32ee6ec47": "2026-10-19T09:30:45.038128+00:00",
@@ -887,18 +886,11 @@
   "44225e5f0ed68a9d": "2026-10-22T08:58:36.826747+00:00",
   "c523a21d7662ae73": "2026-10-22T08:58:36.826747+00:00",
   "5389bf2d622105a7": "2026-10-22T09:03:36.840363+00:00",
-  "c08ba1f8d87ee8c8": "2026-10-22T09:03:36.840363+00:00"
+  "c08ba1f8d87ee8c8": "2026-10-22T09:03:36.840363+00:00",
+  "02525cac2985b44d": "2026-10-22T09:08:36.820098+00:00",
+  "8c05c3eef0138a03": "2026-10-22T09:08:36.820098+00:00"
  },
  "recent": [
-  {
-   "title": "Kelly Clarkson’s expensive purchases: A multi-million dollar real-estate portfolio that spans the country",
-   "link": "https://www.marketwatch.com/story/kelly-clarksons-expensive-purchases-a-multi-million-dollar-real-estate-portfolio-that-spans-the-country-fe1d3bc7?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-19T09:05:44.883220+00:00"
-  },
   {
    "title": "Pakistan Growth Disappoints as Middle East Crisis Tests Recovery",
    "link": "https://www.bloomberg.com/news/articles/2026-10-19/pakistan-growth-disappoints-as-middle-east-crisis-tests-recovery",
@@ -8974,6 +8966,28 @@
    "tags": [
     "Russia"
    ]
+  },
+  {
+   "title": "Bitcoin Falls Below $83,000 as AI Jitters Weigh on Sentiment",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQSEg5MlR0cUtacXN1aGtzX2FxMFdqYkhhSGNPQnhkZHNLb0FqSVNuQS1FdHViQi0xcVlpeUhHUFpYRHM5YUkxVWtfV1ZkTExvbUhDMm52eVFJYldwQ1hFUWNNeXVWVU8zcFJIWkZ4RTV1S3BTUEVNS0htMjVUaFU3cHNoUzZYSk4tWmJLSERYUm5kaElhdnBfQ1BSTFIwNHJWcXU0a3FBXy1nZDd6X2U4?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T09:08:36.820098+00:00",
+   "title_ru": "Биткойн упал ниже $83 000, поскольку нервозность ИИ влияет на настроения",
+   "tags": [
+    "crypto"
+   ]
+  },
+  {
+   "title": "Why a JPMorgan strategist says the stock market’s tailspin might have run its course",
+   "link": "https://www.marketwatch.com/story/why-a-jpmorgan-strategist-says-the-stock-markets-tailspin-might-have-run-its-course-71571335?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-22T09:08:36.820098+00:00"
   }
  ],
  "last_digest": "2026-10-21",
@@ -15116,7 +15130,6 @@
   "sec_seen": [
    "0001398344-26-018550",
    "0001674510-26-000002",
-   "0001818383-26-000257",
    "0001826731-26-000012",
    "0001140361-26-040424",
    "0000950103-26-015980",
@@ -15127,6 +15140,7 @@
    "0001867888-26-000010",
    "0001193125-26-428040",
    "0001823543-26-000002",
+   "0001193125-26-428041",
    "0001140361-26-040419",
    "0000804328-26-000110",
    "0001193125-26-428121",
@@ -15158,7 +15172,7 @@
    "0001493152-26-047949",
    "0001493152-26-047950",
    "0001807136-26-000002",
-   "0001193125-26-428041",
+   "0001818383-26-000257",
    "0001402348-26-000020",
    "0001193125-26-428104"
   ],
