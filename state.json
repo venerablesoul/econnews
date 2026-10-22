@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "33619b0e9322e2c3": "2026-10-19T22:56:05.204931+00:00",
-  "b4070cd4f8f6bc80": "2026-10-19T22:56:05.204931+00:00",
   "e717e1eb5a82a868": "2026-10-19T23:01:05.185616+00:00",
   "84eb73c203290f7e": "2026-10-19T23:11:05.122260+00:00",
   "b5df730d10e4d552": "2026-10-19T23:16:05.137949+00:00",
@@ -934,7 +932,10 @@
   "908c534e462dbf27": "2026-10-22T22:40:20.356032+00:00",
   "61f07b236f1d50e4": "2026-10-22T22:40:20.356032+00:00",
   "7e9e0d19c22224cb": "2026-10-22T22:40:20.356032+00:00",
-  "6b088d149a38e48f": "2026-10-22T22:40:20.356032+00:00"
+  "6b088d149a38e48f": "2026-10-22T22:40:20.356032+00:00",
+  "41cbee2f338cd788": "2026-10-22T23:00:20.330517+00:00",
+  "48e3a30fc97aac7b": "2026-10-22T23:00:20.330517+00:00",
+  "86af4c00bbc2b7fe": "2026-10-22T23:00:20.330517+00:00"
  },
  "recent": [
   {
@@ -9545,6 +9546,19 @@
    "tags": [
     "Russia"
    ]
+  },
+  {
+   "title": "Trump invokes Cold War-era Defense Production Act for oil production, refining",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOdm9ka0hnal9OOUFnN19HQmRZd0ljY2tJOVNoN2tIWURrMHExZ0p0NWN0UEpTMmFORG1TTU1CeXZkb3RhenhtelltYVY2SmRyZEctMnRIcUNEQlFXODdsZGxBMXhpem81NjJwRjRCbVl1N2tyWVkxeXU0T2k3ZEttNk5lbzZCVzRrUEtwT3JPTlJiUUVmSjU4b25EaXNIQ3dyS3c3NlJUSkFBdWZSMDFZVmZ1dmhncGFIYjNQU0tOd1I5dFk?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T23:00:20.330517+00:00",
+   "title_ru": "Трамп ссылается на Закон об оборонном производстве времен холодной войны для добычи и переработки нефти",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-22",
@@ -15840,8 +15854,8 @@
    "0001334945-26-000005",
    "0001400954-26-000013",
    "0001930044-26-000010",
-   "0000109563-26-000045",
    "0001753539-26-000149",
+   "0000109563-26-000045",
    "0001193125-26-429124",
    "0001950180-26-000010",
    "0001993147-26-000004",
