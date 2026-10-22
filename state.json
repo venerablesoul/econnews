@@ -927,7 +927,9 @@
   "a409f8ebdb3f8eb3": "2026-10-22T21:25:20.370447+00:00",
   "b566aa5f01dd989a": "2026-10-22T21:30:20.315052+00:00",
   "ef347d046db2cbc2": "2026-10-22T21:35:20.451858+00:00",
-  "e346d34f8f9ec5a0": "2026-10-22T21:35:20.451858+00:00"
+  "e346d34f8f9ec5a0": "2026-10-22T21:35:20.451858+00:00",
+  "f764c58c2470e157": "2026-10-22T21:40:20.336636+00:00",
+  "ed31ed3894f096bf": "2026-10-22T21:40:20.336636+00:00"
  },
  "recent": [
   {
@@ -9473,6 +9475,16 @@
     "bonds",
     "GDP"
    ]
+  },
+  {
+   "title": "Swedish central bank revives e-krona debate as digital euro, stablecoin threat grows",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPVy1xaDI3WlUteUFnVTZtUGRnbnlYRmRWREp5akpFX29zZGVhajhhUUpXUE1RVjUya3dvNFlVdVlTdmd4TkRNVWdELU5IQmV2U0d1Vk1MXy1teXEzSzhWSWtRU3pRNmpKYUpmQjdIZlV4WlRlbVJRZjhOS3V5TDZ2TFhsM1lXdlhYWF9fdmQ4Z1JhTXpvaVQ2WEdvTHB3R082YmZNVXBkeXktc2Y0SXhScGVnckVqU2xFZnlaZmpwVldxSWlDOGZTZzJLSUpQUQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-22T21:40:20.336636+00:00",
+   "title_ru": "Центральный банк Швеции возрождает дебаты об электронной кроне на фоне роста угрозы цифрового евро и стейблкоинов"
   }
  ],
  "last_digest": "2026-10-22",
@@ -11995,6 +12007,22 @@
    },
    {
     "src": "sec",
+    "id": "b6e88d0149be02c3",
+    "ticker": "LEO",
+    "company": "BNY MELLON STRATEGIC MUNICIPALS, INC.",
+    "who": "Saba Capital Management, L.p.",
+    "role": "10% owner",
+    "type": "buy",
+    "value": 262612,
+    "shares": 45831,
+    "price": 5.73,
+    "plan": false,
+    "date": "2026-10-21",
+    "disclosed": "2026-10-22",
+    "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000374/0001510281-26-000374-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "9cf1724901b2e431",
     "ticker": "BROS",
     "company": "Dutch Bros Inc.",
@@ -12184,6 +12212,22 @@
     "date": "2026-10-20",
     "disclosed": "2026-10-22",
     "link": "https://www.sec.gov/Archives/edgar/data/1888935/000188893526000028/0001888935-26-000028-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "1fcc805ac0844ee7",
+    "ticker": "PRCH",
+    "company": "Porch Group, Inc.",
+    "who": "Matthew Neagle",
+    "role": "COO",
+    "type": "sell",
+    "value": 562966,
+    "shares": 31250,
+    "price": 18.01,
+    "plan": true,
+    "date": "2026-10-20",
+    "disclosed": "2026-10-22",
+    "link": "https://www.sec.gov/Archives/edgar/data/1837336/000183733626000050/0001837336-26-000050-index.htm"
    },
    {
     "src": "sec",
@@ -15688,38 +15732,6 @@
     "date": "2026-10-13",
     "disclosed": "2026-10-15",
     "link": "https://www.sec.gov/Archives/edgar/data/1897944/000189794426000014/0001897944-26-000014-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "32100c3f1d28b58e",
-    "ticker": "KNTK",
-    "company": "Kinetik Holdings Inc.",
-    "who": "Isq Global Fund Ii Gp Llc et al.",
-    "role": "10% owner",
-    "type": "sell",
-    "value": 109540000,
-    "shares": 2000000,
-    "price": 54.77,
-    "plan": false,
-    "date": "2026-10-13",
-    "disclosed": "2026-10-15",
-    "link": "https://www.sec.gov/Archives/edgar/data/2020905/000090514826004480/0000905148-26-004480-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "7bcaa36ebee91bab",
-    "ticker": "APLD",
-    "company": "Applied Digital Corp.",
-    "who": "Richard N Nottenburg",
-    "role": "Director",
-    "type": "sell",
-    "value": 682500,
-    "shares": 31250,
-    "price": 21.84,
-    "plan": false,
-    "date": "2026-10-13",
-    "disclosed": "2026-10-15",
-    "link": "https://www.sec.gov/Archives/edgar/data/1166816/000116681626000007/0001166816-26-000007-index.htm"
    }
   ],
   "docs": {
@@ -15763,25 +15775,25 @@
    "0000310354-26-000100",
    "0000891103-26-000156",
    "0000891103-26-000153",
-   "0002103972-26-000007",
    "0001834046-26-000010",
    "0001895188-26-000005",
    "0001334945-26-000005",
-   "0000891103-26-000150",
    "0000109563-26-000045",
    "0001193125-26-429124",
-   "0000891103-26-000149",
+   "0001950180-26-000010",
    "0000905148-26-004542",
    "0001888935-26-000028",
    "0000891103-26-000154",
+   "0001510281-26-000374",
+   "0001837336-26-000050",
    "0001510281-26-000373",
    "0001849050-26-000007",
+   "0001212813-26-000005",
    "0001825022-26-000006",
    "0001193125-26-429089",
    "0001616707-26-000183",
    "0001193125-26-429133",
    "0000891103-26-000152",
-   "0000891103-26-000148",
    "0000891103-26-000155"
   ],
   "errors": {}
