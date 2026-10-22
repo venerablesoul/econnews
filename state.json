@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e9de1309d2b7fb32": "2026-10-19T00:00:13.786581+00:00",
-  "f2df11f131eb2a50": "2026-10-19T00:00:13.786581+00:00",
-  "fb155dcead972403": "2026-10-19T00:00:13.786581+00:00",
-  "8e9b126605983ad5": "2026-10-19T00:05:13.675199+00:00",
   "e5d367bedd490c99": "2026-10-19T00:15:13.692940+00:00",
   "1100a19a0fce6c14": "2026-10-19T00:30:13.698184+00:00",
   "f70f234132db1fe3": "2026-10-19T00:30:13.698184+00:00",
@@ -908,41 +904,10 @@
   "626cb04082548329": "2026-10-21T23:52:00.075168+00:00",
   "6d118bd3504fd55e": "2026-10-21T23:57:00.013125+00:00",
   "3cb677e09c26dcaf": "2026-10-21T23:57:00.013125+00:00",
-  "d843e3c7f332464d": "2026-10-21T23:57:00.013125+00:00"
+  "d843e3c7f332464d": "2026-10-21T23:57:00.013125+00:00",
+  "78517ba2821aa3f1": "2026-10-22T00:02:00.082671+00:00"
  },
  "recent": [
-  {
-   "title": "Gold Edges Higher as Traders Ease Rate-Hike Bets on Warsh Speech",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-18/gold-edges-higher-as-traders-ease-rate-hike-bets-on-warsh-speech",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-19T00:00:13.786581+00:00",
-   "title_ru": "Золотые преимущества растут, так как трейдеры облегчают ставки на Warsh Speech",
-   "lead": "Gold opened the week higher as traders pared bets on the Federal Reserve raising interest rates this month after remarks by Chair Kevin Warsh.",
-   "lead_ru": "Золото открылось неделей выше, так как трейдеры сделали ставку на повышение процентных ставок Федеральной резервной системы в этом месяце после замечаний председателя Кевина Уорша.",
-   "tags": [
-    "Fed",
-    "rates",
-    "gold"
-   ]
-  },
-  {
-   "title": "Cleanaway Shares Jump 21% After $6.5 Billion EQT Takeover Deal",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-18/eqt-agrees-to-buy-australia-s-cleanaway-waste-for-6-5-billion",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T00:05:13.675199+00:00",
-   "title_ru": "Акции Cleanaway подскочили на 21% после сделки по поглощению EQT на $ 6,5 млрд",
-   "lead": "Shares of Australia’s Cleanaway Waste Management Ltd.",
-   "lead_ru": "Акции австралийской компании Cleanaway Waste Management Ltd.",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "BOJ Governor Ueda says underlying inflation 'quite close' to 2% target",
    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOOUlPaThzNFplTl9JQ0oxQjlBY1VFT0N4ZnBGY09mTXZRaG9yeko1M1pzXzNfZ0Zla1RpZlNrVUd1dHRDMzY2cGNmUU13VzNmY2RFTW1VTW5kdDI1NEJsZTBxZ2Y0MHcxTTQweThkSUpZbmRyV1pLMEtpcXc3VWxmd3FqWmhmbzYya1lvSnEwa0J3QXQtMllSTjlfMWlIWVlpQV9KZnFBcDVaRkMtM2R1M1hVb2VJejdUYWRR?oc=5",
@@ -11661,6 +11626,22 @@
    },
    {
     "src": "sec",
+    "id": "8dec18be062b3dfc",
+    "ticker": "CRWD",
+    "company": "CrowdStrike Holdings, Inc.",
+    "who": "George Kurtz",
+    "role": "CEO",
+    "type": "sell",
+    "value": 4557951,
+    "shares": 20000,
+    "price": 227.9,
+    "plan": true,
+    "date": "2026-10-20",
+    "disclosed": "2026-10-21",
+    "link": "https://www.sec.gov/Archives/edgar/data/1778564/000177856426000189/0001778564-26-000189-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "c05a530a67a0ee25",
     "ticker": "SE",
     "company": "Sea Ltd",
@@ -15063,7 +15044,6 @@
    "0001671445-26-000012",
    "0001193125-26-428042",
    "0002014386-26-000022",
-   "0001213900-26-111426",
    "0001701247-26-000014",
    "0001193125-26-428041",
    "0001193125-26-428104",
@@ -15093,6 +15073,7 @@
    "0001402348-26-000020",
    "0000950103-26-015980",
    "0001193125-26-428044",
+   "0001778564-26-000189",
    "0001493152-26-047944",
    "0001193125-26-428045",
    "0002109272-26-000012",
