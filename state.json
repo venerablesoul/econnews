@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "41cbee2f338cd788": "2026-10-19T16:35:37.598326+00:00",
-  "ed1aa4feb5ddcb6f": "2026-10-19T16:35:37.598326+00:00",
   "0209d0b3f2edc434": "2026-10-19T16:40:37.623294+00:00",
   "76bf0acd2bb37b74": "2026-10-19T16:40:37.623294+00:00",
   "c565f2b05edeee08": "2026-10-19T16:45:37.605434+00:00",
@@ -918,7 +916,9 @@
   "4a5d590d760c28db": "2026-10-22T16:29:40.170352+00:00",
   "e79ca2a61b51ee0b": "2026-10-22T16:29:40.170352+00:00",
   "a5dc5469ac3c0fdf": "2026-10-22T16:34:40.236248+00:00",
-  "d9821e341f84e847": "2026-10-22T16:34:40.236248+00:00"
+  "d9821e341f84e847": "2026-10-22T16:34:40.236248+00:00",
+  "b9e41f679523ad3d": "2026-10-22T16:39:40.238014+00:00",
+  "f89153a0e31ae83c": "2026-10-22T16:39:40.238014+00:00"
  },
  "recent": [
   {
@@ -9360,6 +9360,34 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "‘AI is on trial’: Bond yields sink below 5% as investors look for safety",
+   "link": "https://www.marketwatch.com/story/ai-is-on-trial-bond-yields-sink-below-5-as-investors-look-for-safety-dbc86ee9?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 4,
+   "ts": "2026-10-22T16:39:40.238014+00:00",
+   "title_ru": "«ИИ находится под судом»: доходность облигаций упала ниже 5%, поскольку инвесторы ищут безопасности",
+   "lead": "Investors are flooding back into Treasurys for safety to hedge the risks of more AI fallout in stocks and credit markets.",
+   "lead_ru": "Инвесторы возвращаются в казначейские облигации в поисках безопасности, чтобы хеджировать риски новых последствий искусственного интеллекта на фондовых и кредитных рынках.",
+   "tags": [
+    "bonds",
+    "markets"
+   ]
+  },
+  {
+   "title": "Blackstone Leads Debt Package to Take Gooch & Housego Private",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-22/blackstone-leads-debt-package-to-take-gooch-housego-private",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T16:39:40.238014+00:00",
+   "title_ru": "Blackstone возглавляет пакет долговых обязательств по приватизации Gooch & Housego",
+   "lead": "Blackstone Inc. led a $300 million debt package backing US buyout firm Arlington Capital Partners’ take-private of Gooch & Housego Plc, according to people familiar with the matter.",
+   "lead_ru": "По словам людей, знакомых с ситуацией, Blackstone Inc. возглавила пакет долговых обязательств в размере 300 миллионов долларов, поддерживая поглощение Gooch & Housego Plc американской фирмой Arlington Capital Partners."
   }
  ],
  "last_digest": "2026-10-21",
