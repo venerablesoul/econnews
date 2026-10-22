@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "d82838bd055dadfb": "2026-10-19T16:10:37.568874+00:00",
-  "55d6abc36fd216d2": "2026-10-19T16:10:37.568874+00:00",
   "5c0a233b8940be39": "2026-10-19T16:15:38.117443+00:00",
   "620fa3163a4316b0": "2026-10-19T16:30:37.718173+00:00",
   "41cbee2f338cd788": "2026-10-19T16:35:37.598326+00:00",
@@ -912,24 +910,13 @@
   "667860d705259b87": "2026-10-22T15:49:40.194664+00:00",
   "0ba552da787649f4": "2026-10-22T15:49:40.194664+00:00",
   "fb5309b4254af486": "2026-10-22T15:59:40.363028+00:00",
-  "cecf827a56cedbd1": "2026-10-22T16:04:40.164421+00:00"
+  "cecf827a56cedbd1": "2026-10-22T16:04:40.164421+00:00",
+  "19d4853c8515ad6d": "2026-10-22T16:09:40.182449+00:00",
+  "82c3673e2643c740": "2026-10-22T16:09:40.182449+00:00",
+  "265693843adfac6e": "2026-10-22T16:14:40.177070+00:00",
+  "dcb3ce649dc2240f": "2026-10-22T16:14:40.177070+00:00"
  },
  "recent": [
-  {
-   "title": "Stocks Rise as Tech Rebounds",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-19/bloomberg-surveillance-10-19-2026-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T16:10:37.568874+00:00",
-   "title_ru": "Акции растут на фоне восстановления технологий",
-   "lead": "Jonathan Ferro, Lisa Abramowicz and Annmarie Hordern speak daily with leaders and decision makers from Wall Street to Washington and beyond.",
-   "lead_ru": "Джонатан Ферро, Лиза Абрамович и Аннмари Хордерн ежедневно беседуют с лидерами и лицами, принимающими решения, от Уолл-стрит до Вашингтона и за его пределами.",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Минфин назвал маловероятными изменения по налогу на сверхдоход",
    "link": "https://www.rbc.ru/finances/19/10/2026/6ad63a1c999a437636783c1e",
@@ -9288,6 +9275,19 @@
     "oil",
     "markets"
    ]
+  },
+  {
+   "title": "Citi sees oil risks skewed to upside despite recovery in Gulf exports",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOakVZV3hhS1BtQ2puTC1WcVZBYXo2bEI3bE0xaS1keVpmVkduLTBFT2tvSkRiSUk3RTA2dDBXd3o5TDk1VjFJNFpWN2xXdmZGby1UWWl2MkFxMDZJd056WnpmRU1IUXhWaXZiR2JzWkQwaFBvcC04MGZjUUd6THZTd0c2TmZ4YjlwUHVxeWR6bzRnSDV6VW5jNDlDRDgyaTFoclFnQi02aXZUZnJKa1Q1OTlkaVdlQQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-22T16:14:40.177070+00:00",
+   "title_ru": "Citi считает, что нефтяные риски смещены в сторону роста, несмотря на восстановление экспорта в Персидском заливе",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-21",
@@ -15444,8 +15444,15 @@
   },
   "checked": "2026-10-22T15:14:40.178935+00:00",
   "sec_seen": [
-   "0001193125-26-428562",
-   "0001193125-26-428524"
+   "0001437749-26-033214",
+   "0001437749-26-033219",
+   "0001437749-26-033222",
+   "0000904454-26-000526",
+   "0001437749-26-033217",
+   "0001437749-26-033215",
+   "0001437749-26-033220",
+   "0001437749-26-033216",
+   "0001437749-26-033223"
   ],
   "errors": {}
  }
