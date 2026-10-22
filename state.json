@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "b49076ebce3e983e": "2026-10-19T10:05:44.860512+00:00",
-  "aa77ad06061041b6": "2026-10-19T10:06:17.864340+00:00",
-  "45091ee9816d2e17": "2026-10-19T10:06:17.864340+00:00",
-  "8ede6d79686f0c5e": "2026-10-19T10:06:17.864340+00:00",
   "56046839efe5d390": "2026-10-19T10:16:15.420167+00:00",
   "a1343aa71cc91b2d": "2026-10-19T10:16:15.420167+00:00",
   "00b8e8c47e95136d": "2026-10-19T10:16:15.420167+00:00",
@@ -890,24 +886,11 @@
   "b48308c6c34aa310": "2026-10-22T09:53:36.859705+00:00",
   "81f96c10c8218294": "2026-10-22T09:58:36.880177+00:00",
   "9f3ca0cdb64cdb3c": "2026-10-22T09:58:36.880177+00:00",
-  "491791710e3c787f": "2026-10-22T10:03:36.798521+00:00"
+  "491791710e3c787f": "2026-10-22T10:03:36.798521+00:00",
+  "75e6cada690c010e": "2026-10-22T10:08:36.829010+00:00",
+  "a2eba563865f4303": "2026-10-22T10:08:36.829010+00:00"
  },
  "recent": [
-  {
-   "title": "German Inflation Risks Clearly Tilted to Upside, Bundesbank Says",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-19/german-inflation-risks-clearly-tilted-to-upside-bundesbank-says",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-19T10:05:44.860512+00:00",
-   "title_ru": "Инфляционные риски в Германии явно склонны к повышению, заявляет Бундесбанк",
-   "lead": "German inflation probably won’t be as bad as after the pandemic, but a long list of threats could push prices up more than currently expected, the Bundesbank said.",
-   "lead_ru": "Инфляция в Германии, вероятно, не будет такой сильной, как после пандемии, но длинный список угроз может привести к росту цен больше, чем ожидается в настоящее время, заявил Бундесбанк.",
-   "tags": [
-    "inflation"
-   ]
-  },
   {
    "title": "Fed sees AI boom adding to inflation headache, but others may pay for the medicine",
    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbWZLVGpmVmN6M1o1UUJnRXhSMmVWdjY2Mm4tR0IyeXk0OHZzOVRPamx6eEdEVjhEUHVXMlkzeFhoWkg4Qnl0a3lYQ0xJdWNzVHcydDA0NFdVb0ctbEVoMExGek50RHoxWF9TRThVMXRENDhWV2RUbVRGOVhvOEtoTmlTS1NlZGk0UldmSEY4N0tRVVRBeWc5SmJqRGlaVWwzeHRPa1hHZDNHZ3UxUjhwZHBGQXo0YlIw?oc=5",
@@ -9003,6 +8986,16 @@
    "score": 3,
    "ts": "2026-10-22T10:03:36.798521+00:00",
    "title_ru": "Япония пытается исправить недостатки PHP, поскольку банки и авиакомпании отключаются от сети"
+  },
+  {
+   "title": "Brace for a Midterm Market Mess",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxORG9hYXVuV3lHSWk1RnhWUG1PR3VTU3R2a0N2WlBtVjRYbG1WekZEVVFSNkx1SkVWQVYzaDA1ZWhTQWJyN1NSdkdpMXl1QzROSVpLTjROcHNONjhsNE1OR2VUbDZoYjJzSE9HeElURzhsTFE1OXVKT1o5VFVvcjZOdEg4dWZmeWJGM21ZNkxHcXRTM3BDVC1ISVFMRlRCMlIzZzluWklveFk?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T10:08:36.829010+00:00",
+   "title_ru": "Готовьтесь к среднесрочному хаосу на рынке"
   }
  ],
  "last_digest": "2026-10-21",
@@ -15145,7 +15138,6 @@
   "sec_seen": [
    "0001398344-26-018550",
    "0001674510-26-000002",
-   "0001818383-26-000257",
    "0001140361-26-040424",
    "0000950103-26-015980",
    "0002108845-26-000007",
@@ -15173,6 +15165,7 @@
    "0001493152-26-047949",
    "0001493152-26-047950",
    "0001807136-26-000002",
+   "0001818383-26-000257",
    "0001402348-26-000020",
    "0001193125-26-428104"
   ],
