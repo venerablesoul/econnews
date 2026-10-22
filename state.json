@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "753c2e0a50b5b4b2": "2026-10-19T09:20:44.863877+00:00",
   "94d8b1d32ee6ec47": "2026-10-19T09:30:45.038128+00:00",
   "d2218855992d9f8e": "2026-10-19T09:30:45.038128+00:00",
   "e310b7bf10f97670": "2026-10-19T09:30:45.038128+00:00",
@@ -889,21 +888,10 @@
   "02525cac2985b44d": "2026-10-22T09:08:36.820098+00:00",
   "8c05c3eef0138a03": "2026-10-22T09:08:36.820098+00:00",
   "eb45cbfa4760b820": "2026-10-22T09:18:36.866981+00:00",
-  "552f6a9cc616f445": "2026-10-22T09:18:36.866981+00:00"
+  "552f6a9cc616f445": "2026-10-22T09:18:36.866981+00:00",
+  "18efa2d20e9bc1aa": "2026-10-22T09:23:36.851644+00:00"
  },
  "recent": [
-  {
-   "title": "Pakistan Growth Disappoints as Middle East Crisis Tests Recovery",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-19/pakistan-growth-disappoints-as-middle-east-crisis-tests-recovery",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T09:20:44.863877+00:00",
-   "title_ru": "Экономический рост Пакистана разочаровывает, поскольку кризис на Ближнем Востоке проверяет восстановление экономики",
-   "lead": "Pakistan’s economy grew less than expected in the last quarter of the financial year to June, signaling a loss of momentum in the recovery as the conflict in the Middle East poses fresh risks to the outlook.",
-   "lead_ru": "Экономика Пакистана выросла меньше, чем ожидалось, в последнем квартале финансового года, закончившегося в июне, что сигнализирует о потере темпов восстановления, поскольку конфликт на Ближнем Востоке создает новые риски для перспектив."
-  },
   {
    "title": "Bank Indonesia narrowly expected to hold interest rates despite market turmoil",
    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNTklTTEZCYlRSNmVCNVNkb0Nybkd0cUNtNGpDQ28wT0lnclBoMlAxUlNPd3BycE5KRzZjTU1aOFcyWDJTbUhtcmVCWWVPdEs1d05GWHZJdnl2WHdSS1YxQ3E3ajNvLVB6a3RUcVpJTVUzdEZGMEgxaGZmLXdwV2R5QkEtWlltOXVoTGZZZDI5Y3pzS1dpcWJGM3UtYzQ2VDVPS1oyNzgyYm1RUmctOXR2eVN1YzJ2UzhjM1prV2xMd2FMeU45cmlpdk5n?oc=5",
@@ -9016,6 +9004,21 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Palm Oil Glut Lures Indian Buyers as Price Gap to Rivals Widens",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-22/palm-oil-glut-lures-indian-buyers-as-price-gap-to-rivals-widens",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T09:23:36.851644+00:00",
+   "title_ru": "Перенасыщение пальмовым маслом привлекает индийских покупателей, поскольку ценовой разрыв с конкурентами увеличивается",
+   "lead": "A palm oil glut is making the crop increasingly attractive against rivals, luring buyers in top importer India and other major markets.",
+   "lead_ru": "Избыток пальмового масла делает этот урожай все более привлекательным по сравнению с конкурентами, привлекая покупателей в ведущего импортера Индии и на других крупных рынках.",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-21",
@@ -15158,6 +15161,7 @@
   "sec_seen": [
    "0001398344-26-018550",
    "0001674510-26-000002",
+   "0001818383-26-000257",
    "0001826731-26-000012",
    "0001140361-26-040424",
    "0000950103-26-015980",
@@ -15168,7 +15172,6 @@
    "0001867888-26-000010",
    "0001193125-26-428040",
    "0001823543-26-000002",
-   "0001193125-26-428041",
    "0001140361-26-040419",
    "0000804328-26-000110",
    "0001193125-26-428121",
@@ -15200,7 +15203,7 @@
    "0001493152-26-047949",
    "0001493152-26-047950",
    "0001807136-26-000002",
-   "0001818383-26-000257",
+   "0001193125-26-428041",
    "0001402348-26-000020",
    "0001193125-26-428104"
   ],
