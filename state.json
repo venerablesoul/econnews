@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "4295cc038f425333": "2026-10-19T08:05:44.847857+00:00",
   "20bd7222bb840ccf": "2026-10-19T08:10:44.847621+00:00",
   "b2284d6e2a789835": "2026-10-19T08:15:44.885173+00:00",
   "5f44fdd088e309d2": "2026-10-19T08:20:44.899158+00:00",
@@ -881,25 +880,12 @@
   "b2d76a518eccbc48": "2026-10-22T07:52:45.003873+00:00",
   "76a3c274aa2c686e": "2026-10-22T08:02:45.020258+00:00",
   "3d992320b1be747a": "2026-10-22T08:02:45.020258+00:00",
-  "aad2abd45d20b79e": "2026-10-22T08:02:45.020258+00:00"
+  "aad2abd45d20b79e": "2026-10-22T08:02:45.020258+00:00",
+  "0b1b2b704ee2bf34": "2026-10-22T08:07:45.001667+00:00",
+  "52e8775d890cc5f9": "2026-10-22T08:07:45.001667+00:00",
+  "afba33024997c404": "2026-10-22T08:07:45.001667+00:00"
  },
  "recent": [
-  {
-   "title": "Don Wilson on the GPU Market’s Trillion Dollar Question",
-   "link": "https://www.bloomberg.com/news/audio/2026-10-19/don-wilson-on-the-gpu-market-s-trillion-dollar-question",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-19T08:05:44.847857+00:00",
-   "title_ru": "Дон Уилсон о триллионе долларов на рынке GPU",
-   "lead": "When we spoke to Don Wilson, founder and CEO of DRW, in Chicago last year, he told us he wanted to build a market for GPUs that would eventually be bigger than oil.",
-   "lead_ru": "Когда мы разговаривали с Доном Уилсоном, основателем и генеральным директором DRW, в Чикаго в прошлом году, он сказал нам, что хочет построить рынок графических процессоров, который в конечном итоге будет больше, чем нефть.",
-   "tags": [
-    "oil",
-    "dollar"
-   ]
-  },
   {
    "title": "Indonesia stock exchange to meet MSCI on Monday, seeking clarification on downgrade warning",
    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNTE5LaGtJejUxOFd5bFNMUnVTSTdEWXZDMFV0RTIxbjF1ckpOQ0F3VU9JZzV4TWxPWUNacWFNTHo0UDZONUloQnUwSS1uNklteUJnbGd6M19QNGtnMjVodkRfbXBjeXEyLS1vbUFaX0phR1h1V2RzR2ljbWtZWEpkaDJndWY2c1JJMFV0Y1pXc2l4V1AwdGdueXBSUWdDdjFQT1RLV3AxVzh6UFp1RjlBb3pJOWFNUjhnWWZLN1JuUTdTVHRnT3dZ?oc=5",
@@ -8898,6 +8884,31 @@
    "title_ru": "Нечетные лоты: аргументы Бхаскара Сункары в пользу рыночного социализма (подкаст)",
    "lead": "In September, Gallup released a poll that showed that 43% percent of Americans viewed socialism positively, the highest approval since Gallup began the poll back in 2010.",
    "lead_ru": "В сентябре Gallup опубликовал опрос, который показал, что 43% американцев относятся к социализму положительно, что является самым высоким показателем с тех пор, как Gallup начал опрос еще в 2010 году."
+  },
+  {
+   "title": "Barclays cutting 5,000 jobs as it increases reliance on AI",
+   "link": "https://www.bbc.co.uk/news/articles/cm4g1p347qgxo?at_medium=RSS&at_campaign=rss",
+   "sources": [
+    "BBC"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T08:07:45.001667+00:00",
+   "title_ru": "Barclays сокращает 5000 рабочих мест из-за увеличения зависимости от искусственного интеллекта",
+   "lead": "The bank says it is using more AI leading to a 5% reduction in its workforce.",
+   "lead_ru": "Банк заявляет, что использует больше искусственного интеллекта, что приводит к сокращению штата сотрудников на 5%.",
+   "tags": [
+    "jobs"
+   ]
+  },
+  {
+   "title": "India's PC Jeweller jumps on rise in quarterly profit and debt-free status",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZy1LTFhqaXJMNGRLLTBybTFMcEp3eEdqSHJqTGE1M0ZnUGF1ckJnSGd0dk5fOHA3VmZYVkE2N1NQemxOSlpSMDRocGRjTzJMcnlDX0UxUVAwMUUyMzc3Zm1Uc2twcjl1Q01uRGl0WElzNmRBWHFDRnlxYkxZSk8tRi10NUxsTHJSUmx3S3IyVXZwc1RwVGdqRjBUaGZCc2hBV1RqRVVCeHBPUmZ2WGZGZw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T08:07:45.001667+00:00",
+   "title_ru": "Индийская PC Jeweller резко выросла благодаря росту квартальной прибыли и состоянию отсутствия долгов"
   }
  ],
  "last_digest": "2026-10-21",
