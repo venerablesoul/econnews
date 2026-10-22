@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "0c0a4336b657230e": "2026-10-19T03:10:13.702155+00:00",
-  "6ddad9a17fc2ea92": "2026-10-19T03:10:13.702155+00:00",
   "a362288c218b5dee": "2026-10-19T03:15:13.715784+00:00",
   "222a05033e073f2f": "2026-10-19T03:15:13.715784+00:00",
   "ccf53b24bbf2ceec": "2026-10-19T03:20:13.643743+00:00",
@@ -889,24 +887,10 @@
   "6d0e069466a4d8e1": "2026-10-22T02:56:59.987396+00:00",
   "4a40abb6f1c0051e": "2026-10-22T02:56:59.987396+00:00",
   "ca7508941492ad65": "2026-10-22T03:06:59.947539+00:00",
-  "2982e250b1e9a762": "2026-10-22T03:06:59.947539+00:00"
+  "2982e250b1e9a762": "2026-10-22T03:06:59.947539+00:00",
+  "50b4ed3837a418af": "2026-10-22T03:12:00.115747+00:00"
  },
  "recent": [
-  {
-   "title": "China’s economy expands 4.5% in third quarter",
-   "link": "https://www.ft.com/content/cf113314-1077-4ab4-b667-9912656684f1?syn-25a6b1a6=1",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T03:10:13.702155+00:00",
-   "title_ru": "Экономика Китая в третьем квартале выросла на 4,5%",
-   "lead": "Strong exports buoy growth as domestic demand lags",
-   "lead_ru": "Сильный экспорт стимулирует рост, поскольку внутренний спрос отстает",
-   "tags": [
-    "China"
-   ]
-  },
   {
    "title": "Ampol shares slump as maintenance work overshadows strong refining margins",
    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNV0Rpb0dacldSOUZ3TG11d3VadnByc1JiamhHd1RwOUFNSTd6V29yN1FSVWtnaF9DT0V6VTFFOUFYQ2ZhZ0VsamgzVUZpQnZmbGlWWWdCc09lb1RDZ0stRU1VQzZuS3QzZjlGd3ducF9WclB0cndFYzBKcTdnRVZkYU5aZHBVZExDSmtQVEVXSWJ3N3hjNGNvT1NYR0N3VDAwWjVjaTdTS0NUaWt3WERoQ19NWTMxSlZnTFNFekVXeE0?oc=5",
@@ -8788,6 +8772,22 @@
    "tags": [
     "bonds"
    ]
+  },
+  {
+   "title": "China Stocks Set for Bear Market as AI Trade, Policy Hopes Fade",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-22/china-stocks-set-for-bear-market-as-ai-trade-policy-hopes-fade",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-22T03:12:00.115747+00:00",
+   "title_ru": "Акции Китая настроены на медвежий рынок из-за торговли ИИ, надежды на политику угасают",
+   "lead": "China’s mainland-listed shares are on track to enter a technical bear market as waning hopes for substantial stimulus, lackluster earnings and lingering jitters over the global artificial intelligence trade weigh on sentiment.",
+   "lead_ru": "Акции материкового Китая находятся на пути к техническому медвежьему рынку, поскольку ослабевшие надежды на существенное стимулирование, слабые доходы и сохраняющиеся опасения по поводу глобальной торговли искусственным интеллектом влияют на настроения.",
+   "tags": [
+    "markets",
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-10-21",
@@ -14938,8 +14938,9 @@
    "0002014386-26-000022",
    "0001701247-26-000014",
    "0001193125-26-428041",
-   "0001193125-26-428104",
    "0001191473-26-000008",
+   "0001193125-26-428104",
+   "0001818383-26-000258",
    "0001882764-26-000009",
    "0001867888-26-000010",
    "0001193125-26-428040",
@@ -14948,7 +14949,6 @@
    "0001823543-26-000002",
    "0000804328-26-000108",
    "0002041533-26-000008",
-   "0001493152-26-047950",
    "0000804328-26-000112",
    "0001826731-26-000012",
    "0000804328-26-000107",
@@ -14974,7 +14974,7 @@
    "0001193125-26-428106",
    "0000935703-26-000120",
    "0001231919-26-001485",
-   "0001818383-26-000258"
+   "0001493152-26-047950"
   ],
   "errors": {}
  }
