@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "b5df730d10e4d552": "2026-10-19T23:16:05.137949+00:00",
-  "f1c5862aa463f24c": "2026-10-19T23:21:05.064413+00:00",
-  "f62e9a30453a5a69": "2026-10-19T23:21:05.064413+00:00",
   "12ab1b6980bca0f3": "2026-10-19T23:36:05.142204+00:00",
   "83e0f621f03781db": "2026-10-19T23:36:05.142204+00:00",
   "75d564d99058ccc7": "2026-10-19T23:36:05.142204+00:00",
@@ -940,44 +937,6 @@
   "c722ee5ac130b5e4": "2026-10-22T23:15:20.339839+00:00"
  },
  "recent": [
-  {
-   "title": "Mynt’s Record IPO Brings a New Heavyweight to Philippine Stocks",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-19/mynt-s-record-ipo-brings-a-new-heavyweight-to-philippine-stocks",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T23:16:05.137949+00:00",
-   "title_ru": "Рекордное IPO Mynt привело к появлению нового тяжеловеса на филиппинских акциях",
-   "lead": "Shares of Mynt Inc. are set to make their debut Tuesday after the biggest-ever initial public offering in the Philippines, potentially giving global investors a new bet in a market they have ignored for years.",
-   "lead_ru": "Акции Mynt Inc. дебютируют во вторник после крупнейшего в истории первичного публичного размещения акций на Филиппинах, что потенциально даст глобальным инвесторам новую ставку на рынке, который они игнорировали в течение многих лет.",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "China's securities regulator vows to prioritise market stability as global risks mount",
-   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQSmZGVFlJV21Id3g4Z3g4ZkNnRExYaGtuRVZORFpYb2pRZkRBYmpjbzNZVWotUUVhYzdyOHNtU3VOVldqWnRFVERMR1NqNWtzVlBqcWVPTkdVcVdKSGRLQTFrUVpoc3JoaktaX3YtalFTcDdCdXd4c0RiNWxRTjdGYnlaVWZJclp6RFBuTVlxRWw0SHBQTzJOMmhZclJqSWNqVnFFSUVMaEwwYXc2UUo4c2lwOEFzUXJrZ1VvRVlpOEFNb0JUNFpqV1lySXA?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T23:21:05.064413+00:00",
-   "title_ru": "Регулятор рынка ценных бумаг Китая обещает уделять приоритетное внимание стабильности рынка в условиях роста глобальных рисков",
-   "tags": [
-    "China"
-   ]
-  },
-  {
-   "title": "Barclays defends £15 billion private credit book after reported BoE scrutiny",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQMERBcFo5YWhscVF4cnpuNHpTU1ZtdmhEWUVRb20yTHpRX2wzZ2l3YnJMcWN4UVRQYURvY0xlMm9Uekd0aUJ6azhHakREYnYxb0xXU3JWalZyalNyUkRhR3R6VVktZUtoVnpjQ0swZDdXVFV2Rnl3N3dWOU1HZ0RvZEtvWUE3UndzeXZQaEdSV1pXTmM5SkNrTHdZZmZ4UFJHOWQzbzVna2FWZV8xUVNwOHk1cUJVVjhGZ2IxbkxadFJjUkFERnlZ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T23:21:05.064413+00:00",
-   "title_ru": "Barclays защищает частную кредитную книгу на сумму 15 миллиардов фунтов стерлингов после сообщения о проверке со стороны Банка Англии"
-  },
   {
    "title": "Nasdaq climbs as chip and AI-linked stocks bounce back",
    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9iZWF0TU9rTjVEZmZhdEg0ak5Wc1BXY2pkTjM2cGdFcjlRMmNhcHlySkNrbkFZOFNSX3diMG5vTmtwc182THpkb1RZV0YtYXhMOUp1Yks4V3F5NHZicFlOTkI4Q2lvLWVSYnNuZUl3ZjZIcW56aDVZajZOSGs1Zw?oc=5",
@@ -12458,6 +12417,22 @@
    },
    {
     "src": "sec",
+    "id": "479f0838d3bc497c",
+    "ticker": "ANET",
+    "company": "Arista Networks, Inc.",
+    "who": "Kenneth Duda",
+    "role": "CTO",
+    "type": "sell",
+    "value": 7839496,
+    "shares": 43333,
+    "price": 180.91,
+    "plan": true,
+    "date": "2026-10-20",
+    "disclosed": "2026-10-22",
+    "link": "https://www.sec.gov/Archives/edgar/data/1605808/000159653226000248/0001596532-26-000248-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "d0cd22094e57b543",
     "ticker": "NBIS",
     "company": "Nebius Group N.V.",
@@ -15815,22 +15790,6 @@
     "date": "2026-10-14",
     "disclosed": "2026-10-15",
     "link": "https://www.sec.gov/Archives/edgar/data/1778564/000177856426000185/0001778564-26-000185-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "655d0fce27a9a11a",
-    "ticker": "MU",
-    "company": "MICRON TECHNOLOGY INC",
-    "who": "Michael Charles Ray",
-    "role": "General Counsel",
-    "type": "sell",
-    "value": 5845568,
-    "shares": 6288,
-    "price": 929.64,
-    "plan": true,
-    "date": "2026-10-14",
-    "disclosed": "2026-10-15",
-    "link": "https://www.sec.gov/Archives/edgar/data/1593199/000159319926000004/0001593199-26-000004-index.htm"
    }
   ],
   "docs": {
@@ -15872,7 +15831,6 @@
    "0001873304-26-000003",
    "0001493152-26-048144",
    "0000921895-26-002845",
-   "0000310354-26-000100",
    "0001349983-26-000013",
    "0001140361-26-040540",
    "0001193125-26-429162",
@@ -15888,6 +15846,7 @@
    "0001888935-26-000028",
    "0001187377-26-000004",
    "0001053507-26-000151",
+   "0001628280-26-066948",
    "0001510281-26-000374",
    "0001493152-26-048147",
    "0001837336-26-000050",
@@ -15896,13 +15855,16 @@
    "0000897069-26-001865",
    "0000902664-26-004257",
    "0001510281-26-000373",
+   "0001628280-26-066951",
    "0001212813-26-000005",
    "0001628280-26-066941",
    "0000829224-26-000149",
    "0001266824-26-000217",
+   "0001596532-26-000248",
    "0001193125-26-429133",
    "0001242648-26-000047",
-   "0001635088-26-000116"
+   "0001635088-26-000116",
+   "0001628280-26-066949"
   ],
   "errors": {}
  }
