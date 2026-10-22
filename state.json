@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "5c0a233b8940be39": "2026-10-19T16:15:38.117443+00:00",
   "620fa3163a4316b0": "2026-10-19T16:30:37.718173+00:00",
   "41cbee2f338cd788": "2026-10-19T16:35:37.598326+00:00",
   "ed1aa4feb5ddcb6f": "2026-10-19T16:35:37.598326+00:00",
@@ -914,18 +913,10 @@
   "19d4853c8515ad6d": "2026-10-22T16:09:40.182449+00:00",
   "82c3673e2643c740": "2026-10-22T16:09:40.182449+00:00",
   "265693843adfac6e": "2026-10-22T16:14:40.177070+00:00",
-  "dcb3ce649dc2240f": "2026-10-22T16:14:40.177070+00:00"
+  "dcb3ce649dc2240f": "2026-10-22T16:14:40.177070+00:00",
+  "e75b9f07c77c06ec": "2026-10-22T16:19:40.209379+00:00"
  },
  "recent": [
-  {
-   "title": "Минфин назвал маловероятными изменения по налогу на сверхдоход",
-   "link": "https://www.rbc.ru/finances/19/10/2026/6ad63a1c999a437636783c1e",
-   "sources": [
-    "RBC"
-   ],
-   "score": 1,
-   "ts": "2026-10-19T16:15:38.117443+00:00"
-  },
   {
    "title": "В Минфине заявил об отсутствии запросов от «Яндекса» на поддержку",
    "link": "https://www.rbc.ru/rbcfreenews/6ad643e887ac251dadf04a61",
@@ -9288,6 +9279,19 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "COMMENTARY: Morning Bid: Rattled by oil, tech and France",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNYTJtSEpzaWd5YmFEdkpRY3YwYkpiZ05tZlRsNlpodFpNSVN4VlRfaTQzN21EY0o2cnl4VUpUdURnWXFnbEhjX19Nb2VQaC1EYnhJWC1CeDFoU0dZb3RhUFFHdFpEVHRxWWh1bGNiZXY3ajZqWEtUR3pyTEZQdXI3R05aWGJOOHRYSjY0Q18zSkw5T3JXc0Fj?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T16:19:40.209379+00:00",
+   "title_ru": "КОММЕНТАРИЙ: Утренняя ставка: потрясена нефтью, технологиями и Францией",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-21",
@@ -15442,7 +15446,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-22T15:14:40.178935+00:00",
+  "checked": "2026-10-22T16:19:40.209379+00:00",
   "sec_seen": [
    "0001437749-26-033214",
    "0001437749-26-033219",
