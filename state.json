@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "8f97c2389ea3d9bd": "2026-10-19T12:16:15.440013+00:00",
   "38ab20ff24e32679": "2026-10-19T12:31:15.464685+00:00",
   "2013f5ca44160fe1": "2026-10-19T12:31:15.464685+00:00",
   "6622d690510f0540": "2026-10-19T12:31:15.464685+00:00",
@@ -889,26 +888,11 @@
   "69f578ee4a885db3": "2026-10-22T11:53:36.805498+00:00",
   "7f495757569fe9f5": "2026-10-22T12:08:36.861644+00:00",
   "c30fc9cb03b2882e": "2026-10-22T12:08:36.861644+00:00",
-  "d854ce85cd68ef3a": "2026-10-22T12:13:36.829690+00:00"
+  "d854ce85cd68ef3a": "2026-10-22T12:13:36.829690+00:00",
+  "e24999e5b3458ee2": "2026-10-22T12:18:36.882654+00:00",
+  "665d1dd9ae2889c7": "2026-10-22T12:18:36.882654+00:00"
  },
  "recent": [
-  {
-   "title": "Market Rightfully Lowering ECB Hike Expectations, Says Morgan Stanley’s Sheets",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-19/market-rightfully-lowering-ecb-hike-expectations-sheets-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-19T12:16:15.440013+00:00",
-   "title_ru": "Рынок справедливо снижает ожидания повышения ЕЦБ, говорится в отчетах Morgan Stanley",
-   "lead": "Andrew Sheets, global head of fixed income research at Morgan Stanley, examines what impact volatility in French bonds and equities may have on European Central Bank policy and how his firm is approaching European markets.",
-   "lead_ru": "Эндрю Шитс, руководитель отдела исследований фиксированного дохода в Morgan Stanley, исследует, какое влияние волатильность французских облигаций и акций может оказать на политику Европейского центрального банка и как его фирма выходит на европейские рынки.",
-   "tags": [
-    "ECB",
-    "bonds",
-    "markets"
-   ]
-  },
   {
    "title": "Kimberly-Clark Offers Bonds to Help Fund Tylenol Maker Takeover",
    "link": "https://www.bloomberg.com/news/articles/2026-10-19/kimberly-clark-offers-bonds-to-help-fund-tylenol-maker-takeover",
@@ -9058,6 +9042,20 @@
    "title_ru": "Частная кредитная группа говорит, что страхи рынка оторваны от реальности",
    "lead": "Public sentiment about private credit has become “divorced from the market-wide reality,” according to a report from the Alternative Credit Council, which represents fund managers in the industry.",
    "lead_ru": "Общественное мнение о частном кредите стало «оторванным от общерыночной реальности», согласно отчету Совета по альтернативному кредитованию, который представляет управляющих фондами в отрасли."
+  },
+  {
+   "title": "Nasdaq futures drop over 1% as AI worries resurface, oil climbs",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNTWxDZDg5X0padGNvb2k2V2ZkX2tEWW9YWkdjeVdMZHNUTlg1MXY4TmUyTDZHdUhNTHFRNWRPRjc2VFlEN3RXTDhNSjhDYmRfTWZGXzdKYXdLejRHNGgwRVdNbmZRUkFhSm9GakxMek56UUZ2OUtqajd6NVkzRkR1VzBNWlo5VWp5NUFkX2phUjlSSFlndUlNNGxvUXlHSm1wMlpTbkRR?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-22T12:18:36.882654+00:00",
+   "title_ru": "Фьючерсы на Nasdaq упали более чем на 1%, поскольку ИИ обеспокоен возобновлением роста, ростом цен на нефть",
+   "tags": [
+    "oil",
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-21",
@@ -11306,6 +11304,22 @@
    }
   ],
   "insiders": [
+   {
+    "src": "sec",
+    "id": "dff8db13dd14cd3c",
+    "ticker": "AGMB",
+    "company": "AgomAb Therapeutics NV",
+    "who": "David R Epstein",
+    "role": "Director",
+    "type": "buy",
+    "value": 88800,
+    "shares": 10000,
+    "price": 8.88,
+    "plan": false,
+    "date": "2026-10-21",
+    "disclosed": "2026-10-22",
+    "link": "https://www.sec.gov/Archives/edgar/data/2020932/000144582626000015/0001445826-26-000015-index.htm"
+   },
    {
     "src": "sec",
     "id": "d0cd22094e57b543",
@@ -15205,8 +15219,9 @@
    "0001231919-26-001485",
    "0000804328-26-000112",
    "0001185185-26-004899",
-   "0001477932-26-006387",
+   "0001445826-26-000015",
    "0001193125-26-428272",
+   "0001477932-26-006387",
    "0001193125-26-428106",
    "0001778564-26-000189",
    "0001818383-26-000258",
@@ -15214,7 +15229,6 @@
    "0001193125-26-428110",
    "0001191473-26-000008",
    "0001493152-26-048021",
-   "0000804328-26-000107",
    "0000804328-26-000108",
    "0001818383-26-000257",
    "0001193125-26-428104"
