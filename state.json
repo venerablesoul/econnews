@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c6bc1f115b5c9980": "2026-10-19T04:35:13.659047+00:00",
   "961f4a39f174176f": "2026-10-19T04:40:13.802104+00:00",
   "0604971327662a28": "2026-10-19T04:40:13.802104+00:00",
   "76f1d50b22bbe76e": "2026-10-19T04:40:13.802104+00:00",
@@ -879,22 +878,11 @@
   "d9b9590831a2400b": "2026-10-22T04:27:45.016293+00:00",
   "7e176e23965a69ab": "2026-10-22T04:32:45.017173+00:00",
   "624daae053eadb7f": "2026-10-22T04:32:45.017173+00:00",
-  "8d107be0de60b520": "2026-10-22T04:32:45.017173+00:00"
+  "8d107be0de60b520": "2026-10-22T04:32:45.017173+00:00",
+  "18739868a33c7c45": "2026-10-22T04:37:44.997871+00:00",
+  "b09c2bcac2e61277": "2026-10-22T04:37:44.997871+00:00"
  },
  "recent": [
-  {
-   "title": "Markets left to figure out sanctions",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE15Zk9kSXZkOVBJMWZjbXNlSmI2a2F6VG5EUFFfcHlMUjhaX25qaW1qWGNCVFpRaUlMN042UHdTNEh1eHY0MUFmS2RLZTJOd2VLRTlkX082UFNjTHdSZjBlQTB4b0hpeXlzY2UzZXlTNWoyX1pOVi1RTVV6UEhtOG8?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-19T04:35:13.659047+00:00",
-   "title_ru": "Рынки ушли, чтобы выяснить санкции",
-   "tags": [
-    "sanctions"
-   ]
-  },
   {
    "title": "Magyar to Unveil Budget as Bullish Traders Eye Hungary Euro Plan",
    "link": "https://www.bloomberg.com/news/articles/2026-10-19/magyar-to-unveil-budget-as-bullish-traders-eye-hungary-euro-plan",
@@ -8756,6 +8744,31 @@
    "title_ru": "Какая экономика G7 является образцом расточительности?",
    "lead": "Among the group, France and the US are heading into a wall",
    "lead_ru": "Среди группы Франция и США упираются в стену."
+  },
+  {
+   "title": "Indian shares slip at open as high oil prices fuel inflation worries",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQZDhVMWdGc0J2bURPNnV2YnBaRXlMSkVqcXRGX1FBZ2lUOXQ4eVJyd3RsTE1CckJ4cjRuVEdPQVJLaGVXaVA5clJIZ0lQSTBsMm1iQ0xfeTZkNXhqWUtoX2ExQkNlRFVfSVhKckRtenZfWW41bDlxWWc0WVFuRTVTTHlIdEtPcEI2Z2hWR2pyd2NGOGRiNXNMUkM3OE5qcFV5VUxQUkVDem1HdXN4X0pKY3RrejhKeHcxRjdV?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 10,
+   "ts": "2026-10-22T04:37:44.997871+00:00",
+   "title_ru": "Индийские акции снижаются на открытии, так как высокие цены на нефть усиливают опасения по поводу инфляции",
+   "tags": [
+    "inflation",
+    "oil",
+    "markets"
+   ]
+  },
+  {
+   "title": "Canada's Carney visits Turkey in push to ease US trade dependence",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPTFJvR29OUUpTMi1BYlRleWhiSElXNW11WEdfS2tnTjhTdzN3RFd4a2NFbmdJanduZzl0cVRDTWVHWExiR2hxdnYwWEU5bmhZRWVWWlZYNGY2QW5oTUFJTTlVNy1VeEF1X2lxbi14VHBBSGtZSU5HbWk0VllxTmJFZkJLVUVob28zdmhqdlBIMlNxQlRMX1dTN2Uyb01kbmlRWmFNWEZ0TWY3YmtpbVE?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T04:37:44.997871+00:00",
+   "title_ru": "Канадский Карни посетил Турцию, чтобы ослабить торговую зависимость США"
   }
  ],
  "last_digest": "2026-10-21",
@@ -8778,7 +8791,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 1,
+  "Fed": 0,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
