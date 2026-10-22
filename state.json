@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "908c534e462dbf27": "2026-10-19T17:35:37.692688+00:00",
-  "af2d0b522c778a79": "2026-10-19T17:35:37.692688+00:00",
-  "f23795856bd59946": "2026-10-19T17:35:37.692688+00:00",
   "b2ef6cbd511e621a": "2026-10-19T17:45:37.635474+00:00",
   "7a207ec99ef239eb": "2026-10-19T17:45:37.635474+00:00",
   "9d3d900f12ab072e": "2026-10-19T17:45:37.635474+00:00",
@@ -918,19 +915,10 @@
   "bc834d3fcc60a067": "2026-10-22T17:24:40.200107+00:00",
   "33e234aba1a8990b": "2026-10-22T17:24:40.200107+00:00",
   "1cf9c01e3502ff93": "2026-10-22T17:29:40.173985+00:00",
-  "eea9c9be54ee0eaf": "2026-10-22T17:34:40.221083+00:00"
+  "eea9c9be54ee0eaf": "2026-10-22T17:34:40.221083+00:00",
+  "77bd5fa8fcd14436": "2026-10-22T17:39:40.169511+00:00"
  },
  "recent": [
-  {
-   "title": "Putin elevates finance minister amid mounting budget pressures",
-   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxORXFIbEpxSmkybWNGczBUYVEyMnFKYm1GN1BwVTBkaWZDREF1Sk5WcEVFOHVwaTF4YXc2Z0RQcnB2TlNGdTY3bHFMODUtckcwMWdXWUV0eWtLWndTc1A0TTNlcUQ2S2ptUVFYN2hSRWVpMmdyNG1kbk43U0NaOHNYc1BzSHEzck0?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T17:35:37.692688+00:00",
-   "title_ru": "Путин повысил министра финансов на фоне растущего бюджетного давления"
-  },
   {
    "title": "US Airlines Plan 4Q Capacity Growth in Key Markets",
    "link": "https://www.bloomberg.com/news/videos/2026-10-19/us-airlines-plan-4q-capacity-growth-in-key-markets-video",
@@ -9403,6 +9391,22 @@
    "tags": [
     "jobs"
    ]
+  },
+  {
+   "title": "Tokenized Stocks, ETF Onchain Trading Surged to $37 Billion Last Quarter: Dune",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-22/tokenized-stocks-etf-onchain-trading-surged-to-37-billion-last-quarter-dune",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T17:39:40.169511+00:00",
+   "title_ru": "Токенизированные акции и онлайн-трейдинг ETF выросли до 37 миллиардов долларов в прошлом квартале: Dune",
+   "lead": "The broader cryptocurrency market may be flagging, but newer corners of the industry are surging, fueled by an expanding regulatory framework and growing demand for hyper-speculative investments.",
+   "lead_ru": "Более широкий рынок криптовалют, возможно, ослабевает, но новые сегменты отрасли стремительно растут, чему способствуют расширяющаяся нормативно-правовая база и растущий спрос на гиперспекулятивные инвестиции.",
+   "tags": [
+    "markets",
+    "crypto"
+   ]
   }
  ],
  "last_digest": "2026-10-21",
@@ -15623,8 +15627,8 @@
   },
   "checked": "2026-10-22T17:19:40.225583+00:00",
   "sec_seen": [
-   "0001193125-26-428690",
    "0001193125-26-428684",
+   "0001193125-26-428690",
    "0001866581-26-000159",
    "0001193125-26-428698",
    "0001866581-26-000158",
