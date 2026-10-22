@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "edbfc75fec54bd72": "2026-10-19T06:50:44.840005+00:00",
-  "517c1f99dbed9280": "2026-10-19T06:50:44.840005+00:00",
-  "c2c64bec82277ce7": "2026-10-19T06:50:44.840005+00:00",
-  "f4535cae33fc9a26": "2026-10-19T06:50:44.840005+00:00",
   "61ae0ff49aa03bb9": "2026-10-19T06:55:44.876289+00:00",
   "30533d60f28502bc": "2026-10-19T07:10:44.844341+00:00",
   "84644889aa3fbc8d": "2026-10-19T07:10:44.844341+00:00",
@@ -880,48 +876,10 @@
   "c840ab52073de79a": "2026-10-22T06:42:44.982007+00:00",
   "2354d087fff2d01f": "2026-10-22T06:47:44.953589+00:00",
   "9549ab9cc820fe67": "2026-10-22T06:47:44.953589+00:00",
-  "3df8d2bce9937b1b": "2026-10-22T06:47:44.953589+00:00"
+  "3df8d2bce9937b1b": "2026-10-22T06:47:44.953589+00:00",
+  "76d27700f3780166": "2026-10-22T06:52:44.968100+00:00"
  },
  "recent": [
-  {
-   "title": "UK Gilts Face Budget Test as Bond Market Calm Holds",
-   "link": "https://www.bloomberg.com/news/newsletters/2026-10-19/uk-gilts-face-budget-test-as-bond-market-calm-holds",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-19T06:50:44.840005+00:00",
-   "title_ru": "Британские облигации сталкиваются с бюджетным испытанием, поскольку на рынке облигаций сохраняется спокойствие",
-   "lead": "Investors say a budget that avoids surprises could even spark a relief rally",
-   "lead_ru": "Инвесторы говорят, что бюджет, который избегает сюрпризов, может даже спровоцировать ралли помощи",
-   "tags": [
-    "bonds",
-    "markets"
-   ]
-  },
-  {
-   "title": "Real Estate Markets",
-   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE8xQ1h1ZFVQOVo3U1JqdWxJSWpBYk83cVJxQVhoUEc0Q1Npc0xuWDNIYkZEdHR0dkNIM1FhallHTEhQVmRDbmtnMGt6ekpraWFXel9LUE9wbXVkUjBINFpWSzJnUQ?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T06:50:44.840005+00:00",
-   "title_ru": "Рынки недвижимости"
-  },
-  {
-   "title": "COMMENTARY: Asian refiners' pain is Middle East oil producers' problem: Bousso",
-   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxORXo3cnhIZDJzWmtCS3BfenR2LVNIbWYxQ2dfNTVOdFlnMm8wZGIwemtWUC1vdTlTd2V3SzhIUTJWRmY5cG1JbWg5QzJfUGQ5UlZ0aDlydmVQbTZWNURyWGtFWlY3NDY4Y215MnpVT0xMdFlBaWlBMllnd0h0Zjh6TzdDMk5UT1JxR1FQSHkxRlhJeE5qQjF6SzduTTVOMUdLTFdDSG9hOGVoY3BPY2t3eUVVa0g2MDV1SktDc2ljaUJzWUkycGhubEgxUl8?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T06:50:44.840005+00:00",
-   "title_ru": "КОММЕНТАРИЙ: Боль азиатских нефтеперерабатывающих заводов – это проблема нефтедобывающих стран Ближнего Востока: Буссо",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "Big Names Buy Gilts on Safe Budget Bet",
    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPRVJHZ1FtNF96MTNiTE1MWjN0c2Qyd0JEYU1lWUgtdWJNakRpdmVXRy1lSXZBTDkyQ3hFS1RqdUt4T2Y4VE1Sb0ZHTXRpbjJhSk5ibU5neVV3dGl4MTJscWJURV93RHFkSW96YS1XS0E5UDVROGV3UHBYb19aS3V5NVFIb2tvcno5T1E3c3N2djBNTk93VU5iSDBicXNWSjdGN0x4dmhYMXE?oc=5",
@@ -8856,6 +8814,16 @@
    ],
    "score": 1,
    "ts": "2026-10-22T06:47:44.953589+00:00"
+  },
+  {
+   "title": "COMMENTARY: Surging sterling shakes off Britain's budget blues",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPRHVLWGNYWHM4MEpBbVZqbDFtbUh0R3ozS2dzNmlBVjB5WWhLWk9XZ1BwbTJMakRhQU9GVEJQNTRzbC13dlhpcXdFVnEzaksyZG42MnpXOWJIS094ZFNBT0ozRzM4cGI2VnpyX0N2R0JpOGJZeHNBNHlPTlJDeF9tQ1ZYYlJzdVZsZTZYRW9aZWFBdEdCVWlKV21VWjhmbzJPQmF1Skp5WHJwYzd6Z0tQX2MxbFdrbFFBWFE?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T06:52:44.968100+00:00",
+   "title_ru": "КОММЕНТАРИЙ: Рост фунта стерлингов избавляет британский бюджет от уныния"
   }
  ],
  "last_digest": "2026-10-21",
@@ -14994,7 +14962,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-22T05:47:44.976849+00:00",
+  "checked": "2026-10-22T06:52:44.968100+00:00",
   "sec_seen": [
    "0001823543-26-000002",
    "0001193125-26-428030",
