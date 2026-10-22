@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "afc8e91fc0054b8d": "2026-10-19T19:20:37.565564+00:00",
-  "7e3c829c71c4f8e8": "2026-10-19T19:20:37.565564+00:00",
   "5af9949f691c97e1": "2026-10-19T19:25:37.589096+00:00",
   "9c588cc5ecc6b03b": "2026-10-19T19:35:37.531326+00:00",
   "69110f8333ceed46": "2026-10-19T19:35:37.531326+00:00",
@@ -916,40 +914,11 @@
   "6f756255b81d9490": "2026-10-22T18:49:40.277614+00:00",
   "29a38bb5eab7bea9": "2026-10-22T18:54:40.177617+00:00",
   "85a0ca39ae4eefd6": "2026-10-22T19:04:40.244080+00:00",
-  "d012aa564ff47e12": "2026-10-22T19:04:40.244080+00:00"
+  "d012aa564ff47e12": "2026-10-22T19:04:40.244080+00:00",
+  "b5799a855f5a376f": "2026-10-22T19:24:40.196287+00:00",
+  "a387076ce3e04d35": "2026-10-22T19:24:40.196287+00:00"
  },
  "recent": [
-  {
-   "title": "Trump Accounts, Bonds Barometer, ‘Dividend Nomads’",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-19/etf-iq-10-19-2026-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T19:20:37.565564+00:00",
-   "title_ru": "Счета Трампа, барометр облигаций, «дивидендные кочевники»",
-   "lead": "\"Bloomberg ETF IQ\" focuses on the opportunities, risks and current trends tied to the trillions of dollars in the global exchange traded funds industry.",
-   "lead_ru": "Bloomberg ETF IQ фокусируется на возможностях, рисках и текущих тенденциях, связанных с триллионами долларов в глобальной индустрии биржевых фондов.",
-   "tags": [
-    "dollar",
-    "bonds"
-   ]
-  },
-  {
-   "title": "CoreWeave’s selloff is a lesson in ‘Finance 101’ — and Wall Street says the stock can recover",
-   "link": "https://www.marketwatch.com/story/coreweaves-selloff-is-a-lesson-in-finance-101-and-wall-street-says-the-stock-can-recover-23ca5377?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T19:20:37.565564+00:00",
-   "title_ru": "Распродажа CoreWeave — это урок «Finance 101» — и Уолл-стрит говорит, что акции могут восстановиться",
-   "lead": "Analysts argue CoreWeave’s underlying economics are far sturdier than nervous debt and equity investors realize.",
-   "lead_ru": "Аналитики утверждают, что лежащая в основе CoreWeave экономика гораздо прочнее, чем думают нервные инвесторы в долг и акции.",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Corporate Sector Stress Testing with Endogenous Balance Sheet Dynamics, WP/26/209, October 2026",
    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOcUV5dWhib09iLXc3cjZrXzhkM1pHc0VGSUhGYnhkdTdpeGJMSzE4NmdhTkxCWl9aNldZR0otazZXY1IxdVUyemRXSm9sVWd0WlBJcFNwYUVzRC1zd0dOZDUycG13NnBRMWVfZFdURkFhbC1iYm5PNFRqZmVTZjZORm53TFJ6X1Y5YnE1UzdDd0M?oc=5",
@@ -9414,6 +9383,29 @@
    "score": 4,
    "ts": "2026-10-22T19:04:40.244080+00:00",
    "title_ru": "Инвесторы видят риск от промежуточных выборов в США для торговли ИИ, поскольку нарастает негативная реакция центров обработки данных"
+  },
+  {
+   "title": "Nasdaq CEO flags 'modest softening' in IPO market as macro uncertainty hits debuts",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNa2tNRmp3a3M1dmlVenEyZWI1YUNVcTZXQlJTeDNrdGpsTXhFQ1NDQURlUDZOZUpvNWtjMGtBb1IyYmNnUVY3MlE1U3o4a01XWDM3WWZnVGltTTBGN2k3akZHb1hTVW52RlhFdEZOclBTSlVOQlp0aGxZdU5PeWR3THRZa2Z1M0R6VVVxT3ZDdWtlc2FfajRUMWRxNWlRb2tMUjRRdkttYlZTSGpja1V3SnRndlEyRVJUZ3QtRVlSRWFMX2I3YXIwa3R3?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-22T19:24:40.196287+00:00",
+   "title_ru": "Генеральный директор Nasdaq отмечает «скромное смягчение» на рынке IPO, поскольку макроэкономическая неопределенность поражает дебюты",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "India's Swiggy to deepen Instamart presence in existing markets as losses widen",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPdEw2aFBRVDNXSGdFNEdHQlo3dVlhMzRETnlSZjUybWRTeUpSWGN4NG9nd1hCMC00VGNwSFVWdWVwLUxZejlKdGtnalFlb0lERHhxZTFXY0UtMGFGVktNTmpHVVRVcEYwZVNlUDdIbVBYemM3LVJrSWZKLUVoWnNwT1hvVld4WUFXdjdvaHNNNHR1SW9nb3VPeUU5cG42UEE4QS1rbkhB?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T19:24:40.196287+00:00",
+   "title_ru": "Индийская Swiggy углубляет присутствие Instamart на существующих рынках по мере увеличения потерь"
   }
  ],
  "last_digest": "2026-10-22",
@@ -11709,6 +11701,22 @@
     "date": "2026-10-21",
     "disclosed": "2026-10-22",
     "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000370/0001510281-26-000370-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "b13ee9b98fa61b35",
+    "ticker": "GF",
+    "company": "NEW GERMANY FUND INC",
+    "who": "Saba Capital Management, L.p.",
+    "role": "10% owner",
+    "type": "buy",
+    "value": 25703,
+    "shares": 2462,
+    "price": 10.44,
+    "plan": false,
+    "date": "2026-10-21",
+    "disclosed": "2026-10-22",
+    "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000371/0001510281-26-000371-index.htm"
    },
    {
     "src": "sec",
@@ -15648,9 +15656,9 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-22T18:24:40.180130+00:00",
+  "checked": "2026-10-22T19:24:40.196287+00:00",
   "sec_seen": [
-   "0001488168-26-000010",
+   "0001510281-26-000371",
    "0001493152-26-048080",
    "0001193125-26-428770",
    "0000001750-26-000104"
