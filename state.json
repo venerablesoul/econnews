@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "0209d0b3f2edc434": "2026-10-19T16:40:37.623294+00:00",
-  "76bf0acd2bb37b74": "2026-10-19T16:40:37.623294+00:00",
-  "c565f2b05edeee08": "2026-10-19T16:45:37.605434+00:00",
   "0b503e5461d6eb35": "2026-10-19T16:50:37.618169+00:00",
   "f201afddd6ad24ca": "2026-10-19T16:50:37.618169+00:00",
   "273584fcb52c24be": "2026-10-19T17:05:37.951356+00:00",
@@ -918,34 +915,10 @@
   "a5dc5469ac3c0fdf": "2026-10-22T16:34:40.236248+00:00",
   "d9821e341f84e847": "2026-10-22T16:34:40.236248+00:00",
   "b9e41f679523ad3d": "2026-10-22T16:39:40.238014+00:00",
-  "f89153a0e31ae83c": "2026-10-22T16:39:40.238014+00:00"
+  "f89153a0e31ae83c": "2026-10-22T16:39:40.238014+00:00",
+  "ed1aa4feb5ddcb6f": "2026-10-22T16:44:40.179116+00:00"
  },
  "recent": [
-  {
-   "title": "В Минфине заявил об отсутствии запросов от «Яндекса» на поддержку",
-   "link": "https://www.rbc.ru/rbcfreenews/6ad643e887ac251dadf04a61",
-   "sources": [
-    "RBC"
-   ],
-   "score": 1,
-   "ts": "2026-10-19T16:40:37.623294+00:00"
-  },
-  {
-   "title": "В Минфине опровергли предложения по введению акциза на конфеты // Сазанов: Минфин не предлагал вводить акциз на конфеты",
-   "link": "https://www.kommersant.ru/doc/9042374",
-   "sources": [
-    "Kommersant"
-   ],
-   "score": 4,
-   "ts": "2026-10-19T16:45:37.605434+00:00",
-   "title_en": "The Ministry of Finance denied proposals to introduce an excise tax on sweets // Sazanov: The Ministry of Finance did not propose to introduce an excise tax on sweets",
-   "lead": "Министерство финансов России не готовило и не предлагало введения акциза на конфеты. Об этом заявил заместитель главы ведомства Алексей Сазанов в Душанбе, передает ТАСС.",
-   "lead_en": "The Russian Ministry of Finance did not prepare or propose the introduction of an excise tax on sweets. This was stated by Deputy Head of the Department Alexey Sazanov in Dushanbe, TASS reports.",
-   "tags": [
-    "markets",
-    "Russia"
-   ]
-  },
   {
    "title": "Treasuries Fall as Tech Shares Rebound, Weakening Haven Demand",
    "link": "https://www.bloomberg.com/news/articles/2026-10-19/treasuries-fall-as-tech-shares-rebound-weakening-haven-demand",
@@ -15544,7 +15517,6 @@
   },
   "checked": "2026-10-22T16:19:40.209379+00:00",
   "sec_seen": [
-   "0001437749-26-033214",
    "0001437749-26-033219",
    "0001437749-26-033222",
    "0001251987-26-000012",
