@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "ada659b0447d666d": "2026-10-19T13:26:15.454264+00:00",
-  "32c3e085cdc377e4": "2026-10-19T13:26:15.454264+00:00",
   "7cc916d135f1e789": "2026-10-19T13:46:15.487262+00:00",
   "78ce690271973d1a": "2026-10-19T13:56:15.492290+00:00",
   "929a16ea27394d14": "2026-10-19T14:01:15.638403+00:00",
@@ -901,34 +899,6 @@
   "3fa967f48424f4ef": "2026-10-22T13:18:36.842602+00:00"
  },
  "recent": [
-  {
-   "title": "Canada's annual inflation rate rose to 3.1% in September",
-   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQc3VaLWlSejhHR19OQW1GMmZqTzFTZEktcUVDQXpLOW1GcjdiLUNqN3VUOHB1b0FaZFBhaUtzOVhqMWRLVkhmZl9HbHVtbXA2aVJ3bHRGR0pUdkt6b0JwQndsR01IMWdoVlZhV0hqSGpxS0pLY1NsLVh3ZVRQTmJMRzVPSmEwM0RtRUZSNkY3ajE2MGVWQWRkYkV0UHVtUDg?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-19T13:26:15.454264+00:00",
-   "title_ru": "Годовой уровень инфляции в Канаде вырос до 3,1% в сентябре",
-   "tags": [
-    "inflation"
-   ]
-  },
-  {
-   "title": "Micron and other chip stocks spring back to life after bruising selloff",
-   "link": "https://www.marketwatch.com/story/micron-and-other-chip-stocks-spring-back-to-life-after-bruising-selloff-16486541?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 4,
-   "ts": "2026-10-19T13:26:15.454264+00:00",
-   "title_ru": "Акции Micron и других производителей микросхем возвращаются к жизни после сильной распродажи",
-   "lead": "It’s a key week for tech stocks as Nvidia gears up for a European conference and Meta prepares to report earnings.",
-   "lead_ru": "Это ключевая неделя для акций технологических компаний, поскольку Nvidia готовится к европейской конференции, а Meta готовится отчитаться о прибыли.",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "US chip stocks rise after steepest weekly selloff in months",
    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQQnRpUlhFSVItYXlyM2JtRDAxZFNzc1owV1VBSFM4VERhS3dYOW1wVWtOeERTaDRrWlZyQVJTVVdvNFktdG5oSGpjY0ZwY1hBbnllN2d6Qkg4aExFcWdNT3F3dWlxdTFtbU92WV9WTC1NVEw0QmlWb201cXB6NGJCajVtbmZjYnJ4MWZ3TDZYR1l3ZmZFRFJORzhlNE1Yb0QtNDlyc3ZnY2tuenV1OFgwVQ?oc=5",
@@ -15278,25 +15248,24 @@
   },
   "checked": "2026-10-22T13:13:36.863897+00:00",
   "sec_seen": [
-   "0001193125-26-428279",
+   "0001628280-26-066801",
+   "0001783059-26-000019",
+   "0001792845-26-000019",
+   "0001911109-26-000019",
+   "0001628280-26-066802",
+   "0002028611-26-000017",
+   "0002093121-26-000008",
    "0001193125-26-428390",
    "0001487630-26-000020",
-   "0002080406-26-000019",
-   "0001628280-26-066800",
-   "0001911109-26-000019",
-   "0002028611-26-000017",
-   "0001185185-26-004899",
-   "0001445826-26-000015",
-   "0002030841-26-000005",
-   "0001193125-26-428272",
-   "0001477932-26-006387",
-   "0002093121-26-000008",
+   "0001299077-26-000004",
    "0002030855-26-000008",
    "0001455134-26-000022",
+   "0002080406-26-000019",
+   "0001445826-26-000015",
+   "0001628280-26-066800",
+   "0002030841-26-000005",
    "0002030833-26-000003",
-   "0001493152-26-048021",
-   "0001792845-26-000019",
-   "0001783059-26-000019"
+   "0001493152-26-048021"
   ],
   "errors": {}
  }
