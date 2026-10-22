@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "38ab20ff24e32679": "2026-10-19T12:31:15.464685+00:00",
-  "2013f5ca44160fe1": "2026-10-19T12:31:15.464685+00:00",
-  "6622d690510f0540": "2026-10-19T12:31:15.464685+00:00",
   "9c0720ac911bd2bb": "2026-10-19T12:36:15.489191+00:00",
   "e85ae464d3b479f5": "2026-10-19T12:36:15.489191+00:00",
   "767bd0a0a0415413": "2026-10-19T12:41:15.452830+00:00",
@@ -895,46 +892,10 @@
   "133bf9b72df8e0b3": "2026-10-22T12:23:36.836232+00:00",
   "bfb74a1c22320b8f": "2026-10-22T12:28:36.842213+00:00",
   "659d764dfd98fa70": "2026-10-22T12:28:36.842213+00:00",
-  "fa7d126dfe526519": "2026-10-22T12:28:36.842213+00:00"
+  "fa7d126dfe526519": "2026-10-22T12:28:36.842213+00:00",
+  "1ea687875b27cc7b": "2026-10-22T12:33:36.838680+00:00"
  },
  "recent": [
-  {
-   "title": "Kimberly-Clark Offers Bonds to Help Fund Tylenol Maker Takeover",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-19/kimberly-clark-offers-bonds-to-help-fund-tylenol-maker-takeover",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T12:31:15.464685+00:00",
-   "title_ru": "Kimberly-Clark предлагает облигации для финансирования поглощения производителя тайленола",
-   "lead": "Kimberly-Clark Corp. is selling investment-grade bonds in as many as five parts to help fund its pending acquisition of Tylenol maker Kenvue Inc.",
-   "lead_ru": "Kimberly-Clark Corp. продает облигации инвестиционного уровня целых пятью частями, чтобы помочь профинансировать предстоящее приобретение производителя тайленола Kenvue Inc.",
-   "tags": [
-    "bonds"
-   ]
-  },
-  {
-   "title": "SpaceX, Tesla earnings to test Musk's AI spending ambitions as merger talk grows",
-   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNdi1oa1VDTm0wMUJualVQRU5ieHFCQmFCejlxdEx1cEM3am1WaEV4LVJwRGVab29QU05IUl9fYzhsaFFFSk5hVGtTZFFLNGNOUVNFMjJ4RkE2b2RCdVJmN0t5UmVBeWpPb2ZwMThLcVRkVENsdFhRc0JOUml0Z3F3MFg5bDhsNmZrX2tuS1ZkRFl2elAzd0p0ZDlFb0E1MF9malVCZXhEZnJqRUFYMUxFNDV5ZmRrZkYxZndkWGthUEpPQVdOTHAtMHBVTQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T12:31:15.464685+00:00",
-   "title_ru": "Доходы SpaceX и Tesla проверят амбиции Маска по расходам на ИИ на фоне растущих разговоров о слиянии"
-  },
-  {
-   "title": "The self-destructive wishful thinking about European autos and trade",
-   "link": "https://www.ft.com/content/7dbe983c-fcd2-41dd-bbe4-9f38a489e6c2?syn-25a6b1a6=1",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T12:31:15.464685+00:00",
-   "title_ru": "Саморазрушительное принятие желаемого за действительное в отношении европейских автомобилей и торговли",
-   "lead": "France and Germany have synthesised their bad ideas about cars into a terrible plan",
-   "lead_ru": "Франция и Германия объединили свои плохие идеи об автомобилях в ужасный план"
-  },
   {
    "title": "Canada Inflation Rate Edges Up to 3.1%, Core Measures Ease",
    "link": "https://www.bloomberg.com/news/articles/2026-10-19/canada-inflation-rate-edges-up-to-3-1-core-measures-ease",
@@ -9124,6 +9085,22 @@
    "score": 3,
    "ts": "2026-10-22T12:28:36.842213+00:00",
    "title_ru": "Рост индийского подразделения высокоскоростного трейдера Hudson River замедляется, поскольку опционы сдерживают укус"
+  },
+  {
+   "title": "Mexico Inflation Ticks Up as Banxico Weighs Next Rate Move",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-22/mexico-inflation-ticks-up-as-banxico-weighs-next-rate-move",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-22T12:33:36.838680+00:00",
+   "title_ru": "Инфляция в Мексике растет, поскольку Банксико взвешивает следующее движение ставки",
+   "lead": "Mexico’s annual inflation accelerated more than expected in early October, putting pressure on central bankers meeting next month to reconsider a five-month hold on interest rates.",
+   "lead_ru": "Годовая инфляция в Мексике ускорилась больше, чем ожидалось в начале октября, оказав давление на центральные банки, которые соберутся в следующем месяце, чтобы пересмотреть пятимесячную задержку процентных ставок.",
+   "tags": [
+    "rates",
+    "inflation"
+   ]
   }
  ],
  "last_digest": "2026-10-21",
@@ -15289,8 +15266,8 @@
    "0000804328-26-000112",
    "0001185185-26-004899",
    "0001445826-26-000015",
-   "0001193125-26-428272",
    "0001477932-26-006387",
+   "0001193125-26-428272",
    "0001193125-26-428106",
    "0001778564-26-000189",
    "0001818383-26-000258",
