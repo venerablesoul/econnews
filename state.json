@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "2bc3fea1b9410316": "2026-10-19T05:35:44.888347+00:00",
   "69afe8bb3edd9dc9": "2026-10-19T06:05:44.844086+00:00",
   "06e3a3f2dd08d738": "2026-10-19T06:10:44.914783+00:00",
   "ecda752f29169f93": "2026-10-19T06:15:44.862697+00:00",
@@ -870,22 +869,11 @@
   "76843d9e3f214cc0": "2026-10-22T05:17:44.980791+00:00",
   "268653d89550de05": "2026-10-22T05:22:45.028680+00:00",
   "6ba4aaba7b67b8f3": "2026-10-22T05:27:44.985761+00:00",
-  "149fd17d22358dc0": "2026-10-22T05:32:45.008961+00:00"
+  "149fd17d22358dc0": "2026-10-22T05:32:45.008961+00:00",
+  "63309e8cfffa21df": "2026-10-22T05:42:45.004577+00:00",
+  "31cd63bafc8c07eb": "2026-10-22T05:42:45.004577+00:00"
  },
  "recent": [
-  {
-   "title": "Heavyweight India Bank Stocks in Focus After Earnings-Packed Weekend",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOOF9uazJwR0UyNjRuUWlfNkxCYXRXdEhQYnpRMVc0eGdrNEdoVkMzOFZRNkhieFlNZDQtMFprNGc2TUFpVkYydDVGU0tteWhXMlhDOFBaMW1sUkFOMGt3c2hUR3BUMV8zbDNlYkxfQV9BelUtNXZfeHd0ZUFDcnVvQ0Y5THRDS2huVUdwYjRXSHBYMUpucndnT1IwUy1qX3JJUmRUTVdJSGFzOHlJcTBhTHROVG9pTnIwdEdUMA?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-19T05:35:44.888347+00:00",
-   "title_ru": "Тяжеловесные акции индийского банка в фокусе после насыщенных выходных",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Frank Elderson: From climate and nature risks to economic resilience and competitiveness",
    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261019~f0a3e053de.en.html",
@@ -8719,6 +8707,22 @@
    "lead_ru": "Рослинн Гарнер-Гатли начинает использовать грелку, носки и ложиться спать раньше, чтобы согреться.",
    "tags": [
     "oil"
+   ]
+  },
+  {
+   "title": "Treasuries Climb With Yen as AI Trade Jitters Fuel Haven Bid",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-22/long-end-us-yield-hits-one-month-low-as-ai-fears-fuel-haven-bid",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-22T05:42:45.004577+00:00",
+   "title_ru": "Казначейские облигации растут вместе с иеной, поскольку торговый искусственный интеллект подпитывает ставку на убежище",
+   "lead": "Treasuries rose along with the yen and Swiss franc as investors sought shelter in havens after stocks stumbled on renewed concerns about the artificial intelligence trade.",
+   "lead_ru": "Казначейские облигации выросли вместе с иеной и швейцарским франком, поскольку инвесторы искали убежище в убежищах после того, как акции упали из-за возобновившихся опасений по поводу торговли искусственным интеллектом.",
+   "tags": [
+    "bonds",
+    "markets"
    ]
   }
  ],
