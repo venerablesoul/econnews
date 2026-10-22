@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "0136d7aa5a7a19be": "2026-10-19T17:55:37.592105+00:00",
-  "bd6d68a95af40f58": "2026-10-19T17:55:37.592105+00:00",
   "f65227e80de8cf65": "2026-10-19T18:00:37.839081+00:00",
   "0549f3f1ca859678": "2026-10-19T18:00:37.839081+00:00",
   "19f8efd8103f1cf3": "2026-10-19T18:05:37.945799+00:00",
@@ -914,35 +912,12 @@
   "eea9c9be54ee0eaf": "2026-10-22T17:34:40.221083+00:00",
   "77bd5fa8fcd14436": "2026-10-22T17:39:40.169511+00:00",
   "643482b1ab277067": "2026-10-22T17:49:40.207700+00:00",
-  "1c648ed7e4cdff5d": "2026-10-22T17:54:40.185170+00:00"
+  "1c648ed7e4cdff5d": "2026-10-22T17:54:40.185170+00:00",
+  "c5bac7e758a1e849": "2026-10-22T17:59:40.172740+00:00",
+  "c756aa60e94d8a51": "2026-10-22T17:59:40.172740+00:00",
+  "cdea6c71e0280959": "2026-10-22T17:59:40.172740+00:00"
  },
  "recent": [
-  {
-   "title": "Merz Says Quick Decision Can Be Reached on ECB Jobs If Needed",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-19/merz-says-quick-decision-can-be-reached-on-ecb-jobs-if-needed",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-19T17:55:37.592105+00:00",
-   "title_ru": "Мерц говорит, что в случае необходимости можно принять быстрое решение по вопросам работы ЕЦБ",
-   "lead": "German Chancellor Friedrich Merz said a rapid solution can be found to senior vacancies at the European Central Bank that are likely to include President Christine Lagarde.",
-   "lead_ru": "Канцлер Германии Фридрих Мерц заявил, что можно быстро найти решение проблемы руководящих вакансий в Европейском центральном банке, в число которых, вероятно, войдет президент Кристин Лагард.",
-   "tags": [
-    "ECB",
-    "jobs"
-   ]
-  },
-  {
-   "title": "Wells Fargo Says Earnings Off to Weak Start as Most Fall Short",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-19/wells-fargo-says-earnings-off-to-weak-start-as-most-fall-short",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T17:55:37.592105+00:00",
-   "title_ru": "Wells Fargo заявляет, что прибыль на старте была слабой, поскольку большинство из них терпят неудачу"
-  },
   {
    "title": "CoreWeave’s Business is Sound Despite Debt Fears, JPMorgan Says",
    "link": "https://www.bloomberg.com/news/articles/2026-10-19/coreweave-s-business-is-sound-despite-debt-fears-jpmorgan-says",
@@ -9386,6 +9361,41 @@
    "tags": [
     "sanctions"
    ]
+  },
+  {
+   "title": "Yen Jumps as Traders Seek Safety Amid Global Risk Averse Pivot",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-22/yen-outpaces-peers-as-risk-aversion-rises-flows-in-focus",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-22T17:59:40.172740+00:00",
+   "title_ru": "Иена подскочила, поскольку трейдеры ищут безопасности на фоне глобального поворота к неприятию риска",
+   "lead": "The yen outperformed all its major counterparts on Thursday as a selloff in global equities fueled risk aversion and boosted demand for havens.",
+   "lead_ru": "В четверг иена превзошла все основные валюты, поскольку распродажа мировых акций усилила неприятие риска и повысила спрос на активы-убежища.",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "India's markets regulator proposes easing approval rules for some exchange investments",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPandGLVdqR1pHdFN6dlJ4V2RMUGdWV3hycXM2VGhZY01YN19IeFVjOEgweE1mN0lZeU5VVWt6QVJhU3JjN3l5SS1jUlZiTW4tMERHSFhDMHpiRXZMNjl5YUQ5ZmhVUFNvZnVvejBoc2RrUm41dWliRHBHNUhYYjJkTHRPSHhSQkpFZnFBNE5jYmxFbl9Ld0tOTEZEVGFFUUxkRjFTSUk0ZTk3ZU5kdVlfeFZILTZDd2l1b2xZdDc2aw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T17:59:40.172740+00:00",
+   "title_ru": "Регулятор рынков Индии предлагает смягчить правила одобрения некоторых биржевых инвестиций"
+  },
+  {
+   "title": "'We will escalate': Indonesian students push to be heard on haze, economy",
+   "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5BY1paNG83bS1DNV8ybG1lVGlYYXJZTkI5ZDdCaVdCRzdpNUZBQkVyYkloTTBmbndGLXRaTDVzQ28yVnJ0NDQ0RWl1dy1QeF9aM3VPaDFXcDV5VW1X?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T17:59:40.172740+00:00",
+   "title_ru": "«Мы будем наращивать эскалацию»: индонезийские студенты настаивают на том, чтобы их услышали о дымке и экономике"
   }
  ],
  "last_digest": "2026-10-21",
@@ -15606,8 +15616,8 @@
   },
   "checked": "2026-10-22T17:19:40.225583+00:00",
   "sec_seen": [
-   "0001193125-26-428690",
    "0001193125-26-428684",
+   "0001193125-26-428690",
    "0001866581-26-000159",
    "0001193125-26-428698",
    "0001866581-26-000158",
