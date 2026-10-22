@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "06e3a3f2dd08d738": "2026-10-19T06:10:44.914783+00:00",
   "ecda752f29169f93": "2026-10-19T06:15:44.862697+00:00",
   "9fd9bdd05f849345": "2026-10-19T06:15:44.862697+00:00",
   "5c3a62aa2571a4e8": "2026-10-19T06:20:44.876624+00:00",
@@ -878,24 +877,11 @@
   "b0d8e1058f313f3a": "2026-10-22T05:57:45.065252+00:00",
   "7a4dfa4b3a1ddb8e": "2026-10-22T06:02:44.976895+00:00",
   "39efd63ba7519f02": "2026-10-22T06:02:44.976895+00:00",
-  "f3cf90883d47586d": "2026-10-22T06:07:45.002854+00:00"
+  "f3cf90883d47586d": "2026-10-22T06:07:45.002854+00:00",
+  "d2fe128c9cb9ac05": "2026-10-22T06:12:44.975528+00:00",
+  "4b8e2b2b105b8733": "2026-10-22T06:12:44.975528+00:00"
  },
  "recent": [
-  {
-   "title": "Indonesia Selloff Deepens as Emerging-Market Status Comes Under Threat",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-19/insight-with-haslinda-amin-10-19-2026-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-19T06:10:44.914783+00:00",
-   "title_ru": "Распродажа в Индонезии углубляется, поскольку статус развивающихся рынков находится под угрозой",
-   "lead": "Insight with Haslinda Amin, a daily news program featuring in-depth, high-profile interviews and analysis to give viewers the complete picture on the stories that matter.",
-   "lead_ru": "Insight with Haslinda Amin, ежедневная новостная программа с подробными, громкими интервью и анализом, чтобы дать зрителям полную картину важных историй.",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "UK Debt Is a Buy for Traders Betting on a Play-It-Safe Budget",
    "link": "https://www.bloomberg.com/news/articles/2026-10-19/uk-debt-is-a-buy-for-traders-betting-on-a-play-it-safe-budget",
@@ -8799,6 +8785,32 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "Oil Market Crunch Could Happen in Months: BofA's Blanch",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-22/oil-market-crunch-could-happen-in-months-bofa-s-blanch-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-22T06:12:44.975528+00:00",
+   "title_ru": "Крах рынка нефти может произойти через несколько месяцев: Бланш BofA",
+   "lead": "Francisco Blanch, Bank of America Commodities and Derivates Research Global Head, discusses energy markets and the volatile context around oil inventories as conflicts in the Middle East and Russia's invasion of Ukraine continue.",
+   "lead_ru": "Франсиско Бланш, глобальный руководитель исследования сырьевых и производных финансовых инструментов Bank of America, обсуждает энергетические рынки и нестабильный контекст вокруг запасов нефти на фоне продолжающихся конфликтов на Ближнем Востоке и вторжения России в Украину.",
+   "tags": [
+    "oil",
+    "Russia"
+   ]
+  },
+  {
+   "title": "Hermes third-quarter growth slows as ready-to-wear turns negative",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNelF5dFZmRFNaOVViQVNRdzhkd3JlMWVxWnEtOUQ5RTRkbkgtdzhuV0ozSS1CNnVSa0k0TnByZW0tUWpZcFBRcEYyMEVIVFBwQ0ROckFPN19BNmcwQ2hhbnBoeDN3blhDZHJRMEY5RnBLUExHR2c4LWMwYzVHMU1RWXFTRk9wSVA0Ty1KeTh4YzY4c2FReU1qTG94WWdKUlBKVmV4UEtnTFNvTVRlUGJ3ME16b2k3TDl6MlJPZGRRU2k?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T06:12:44.975528+00:00",
+   "title_ru": "Рост Hermes в третьем квартале замедлился, поскольку продажи готовой одежды стали отрицательными"
   }
  ],
  "last_digest": "2026-10-21",
@@ -8850,7 +8862,7 @@
   "2026-10-22-09"
  ],
  "calendar": {
-  "fetched": "2026-10-22T00:11:59.973035+00:00",
+  "fetched": "2026-10-22T06:12:44.975528+00:00",
   "events": [
    {
     "title": "IMF Meetings",
@@ -14987,8 +14999,6 @@
    "0001493152-26-047950",
    "0001778564-26-000189"
   ],
-  "errors": {
-   "sec": "TimeoutError: The read operation timed out"
-  }
+  "errors": {}
  }
 }
