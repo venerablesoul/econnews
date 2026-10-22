@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "13bf803942331dfd": "2026-10-19T06:45:44.877540+00:00",
-  "cae857f25966f652": "2026-10-19T06:45:44.877540+00:00",
   "edbfc75fec54bd72": "2026-10-19T06:50:44.840005+00:00",
   "517c1f99dbed9280": "2026-10-19T06:50:44.840005+00:00",
   "c2c64bec82277ce7": "2026-10-19T06:50:44.840005+00:00",
@@ -879,19 +877,12 @@
   "2d766c2590ed9dde": "2026-10-22T06:37:45.003491+00:00",
   "2771838e1f00967e": "2026-10-22T06:42:44.982007+00:00",
   "924b18488f410694": "2026-10-22T06:42:44.982007+00:00",
-  "c840ab52073de79a": "2026-10-22T06:42:44.982007+00:00"
+  "c840ab52073de79a": "2026-10-22T06:42:44.982007+00:00",
+  "2354d087fff2d01f": "2026-10-22T06:47:44.953589+00:00",
+  "9549ab9cc820fe67": "2026-10-22T06:47:44.953589+00:00",
+  "3df8d2bce9937b1b": "2026-10-22T06:47:44.953589+00:00"
  },
  "recent": [
-  {
-   "title": "Yoka: Rep. Congo Pursues ‘Real Reforms’ to Boost Economy (Video)",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-19/yoka-rep-congo-pursues-real-reforms-to-boost-economy-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T06:45:44.877540+00:00",
-   "title_ru": "Йока: Республика Конго проводит «реальные реформы» для стимулирования экономики (видео)"
-  },
   {
    "title": "UK Gilts Face Budget Test as Bond Market Calm Holds",
    "link": "https://www.bloomberg.com/news/newsletters/2026-10-19/uk-gilts-face-budget-test-as-bond-market-calm-holds",
@@ -8833,6 +8824,38 @@
    "score": 3,
    "ts": "2026-10-22T06:42:44.982007+00:00",
    "title_ru": "МВФ прогнозирует сокращение на 1,3% на Ближнем Востоке, в Северной Африке и Пакистане в 2026 году"
+  },
+  {
+   "title": "Japanese investors sell foreign bonds for fifth straight week, eye home market",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQaWFpYXNMY0l3alFBQnlRTUNpdUl4aUlld1F2VmxJb0ZETkVqM0FNWHFqQlZxSHhNM3VhdnlpQW1CV3I1ZDRWNGhQVXJ3QVFyX294cHFScXYtNVEzYjlyUHotQm5vWHRlQXQ4SW03cDZSaWRxSXJtQ0Jaams2eWxVYXhEdEUxcFdnRnRPdS0yRy05ODkyMGMtZk1DSHZsRjVtM0I5bXRkLVlqVkRHUV9HQmZTWEdrRTBUMTNFbnF1RTFNTHg2amQ4?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-22T06:47:44.953589+00:00",
+   "title_ru": "Японские инвесторы продают иностранные облигации пятую неделю подряд, следя за внутренним рынком",
+   "tags": [
+    "bonds"
+   ]
+  },
+  {
+   "title": "Roche third-quarter sales beat forecast with growth across divisions, currency boost",
+   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQcnlRMUFVVVJGZ2xRNVFJcEZmYVIwcXlCQXNxVFYtczMyTGtfYVRueHExRVhmckZTX2luOFR6bkdKdzB2U0xVc0lUY2RVMmtnSm56VXA4MEZnVmZ5MDdLV01HdVpOcG5CQW42cU5VQThjV2ppTVVWYU9sTnBxWURYdkFSNWZxOWlUdnR2MWlPQlo2V2E2VXpJclJCc3NXZ0VKUTlQTUpmVHRkSy1yYXpDdl83ZnprNFpkR3ZzbXJBRWo1SDU5NDl6Z2FWQnJRb2xURlRzTXpHVEo2OUk?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-22T06:47:44.953589+00:00",
+   "title_ru": "Продажи Roche в третьем квартале превзошли прогнозы благодаря росту в подразделениях и росту валютных курсов"
+  },
+  {
+   "title": "Top HSBC strategist has a warning for retail investors chasing the AI rally",
+   "link": "https://www.marketwatch.com/story/top-hsbc-strategist-has-a-warning-for-retail-investors-chasing-the-ai-rally-e0318ada?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-22T06:47:44.953589+00:00"
   }
  ],
  "last_digest": "2026-10-21",
