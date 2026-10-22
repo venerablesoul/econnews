@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "5b87b8f46d899b16": "2026-10-19T18:45:37.585131+00:00",
-  "80402ee2f3f888c1": "2026-10-19T18:50:37.559632+00:00",
   "cf73662fe414f13a": "2026-10-19T18:55:37.809828+00:00",
   "a7b3d0a55f893e35": "2026-10-19T18:55:37.809828+00:00",
   "3c0b366ce72dee92": "2026-10-19T19:05:37.645766+00:00",
@@ -917,36 +915,11 @@
   "aada4935d071d6af": "2026-10-22T18:24:40.180130+00:00",
   "cd9b7096bba6c5d2": "2026-10-22T18:24:40.180130+00:00",
   "90e642875f228126": "2026-10-22T18:44:40.183881+00:00",
-  "b6f98e8d2a15aa6f": "2026-10-22T18:44:40.183881+00:00"
+  "b6f98e8d2a15aa6f": "2026-10-22T18:44:40.183881+00:00",
+  "6f756255b81d9490": "2026-10-22T18:49:40.277614+00:00",
+  "29a38bb5eab7bea9": "2026-10-22T18:54:40.177617+00:00"
  },
  "recent": [
-  {
-   "title": "AI is driving inflation. The Fed's fix may hurt everyone else.",
-   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBtTzZQeDFmeXdBaUhKWFF3OEd0OG44dEkxa0duMmNQSi1RTWtGVlhieXlsbm9ja1ljQzA5UGlYQnpBWV84SzA2V0lKX2M4Z05XcURPcTR6RVg5NE1DWGlfT1JyQUcyUllhampnV3FPMEs0M2ZFejRkS3BtT0hIUQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-19T18:45:37.585131+00:00",
-   "title_ru": "ИИ стимулирует инфляцию. Решение ФРС может навредить всем остальным.",
-   "tags": [
-    "Fed",
-    "inflation"
-   ]
-  },
-  {
-   "title": "Hungary to cut deficit below 5% of GDP in Magyar's first budget plan",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNM0ZpQjBRVUpOMXVEcXoya2N5UnNMRjVzQ24yY2xnMmtQOWVIRHJGOGhVZVRRcEhaS1NzNFI5ZjhZc3NhSkt6LVkteXJWVXRTZHZUM0ZER2xULVYzamFVS3RHZ0NUQ0lodE1SUmt2NjlXSE5Xb1R0MkE0MktFekdzeG1NTXNBbE96c2U0blBvdVBJWXpMcUZaOGFQR3FYQ1ZxYlFRdw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 7,
-   "ts": "2026-10-19T18:50:37.559632+00:00",
-   "title_ru": "Венгрия сократит дефицит ниже 5% ВВП в первом бюджетном плане Мадьяра",
-   "tags": [
-    "GDP"
-   ]
-  },
   {
    "title": "US to Make Some Dark Fleet Ships Legitimate, Wright Says",
    "link": "https://www.bloomberg.com/news/videos/2026-10-19/us-to-make-some-dark-fleet-ships-legitimate-wright-says-video",
@@ -9438,6 +9411,16 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Gas Price Surge Hits Midwest Battleground States Days Before Midterms",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPb0pkS1ppVnM0dDBnaXFqb3ZMZjMxci1RNG85VGt2bUJLRll0MUZ6Zl9rQjl3SVllTjdhU0p1b3RadVUxY1FIUzY3ZVctc3RvOFU3SEJwMGVkUEM2V0FBMUJpYnJLVFBWdjF3SlZnaUdvUldHeEJhdm1DZ0tnRE9vSUp6VVBnSndVOXh1cURoZmk4dGpBSFc4dDNwWlRoWFJZblZUQnlnRUZYenBmUlotag?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T18:54:40.177617+00:00",
+   "title_ru": "Скачок цен на газ ударил по штатам Среднего Запада за несколько дней до промежуточных выборов"
   }
  ],
  "last_digest": "2026-10-22",
@@ -11686,6 +11669,22 @@
    }
   ],
   "insiders": [
+   {
+    "src": "sec",
+    "id": "51e23b8d7310b2c2",
+    "ticker": "LOAN",
+    "company": "MANHATTAN BRIDGE CAPITAL, INC",
+    "who": "Assaf Ran",
+    "role": "CEO, 10% owner",
+    "type": "buy",
+    "value": 34693,
+    "shares": 10000,
+    "price": 3.47,
+    "plan": false,
+    "date": "2026-10-22",
+    "disclosed": "2026-10-22",
+    "link": "https://www.sec.gov/Archives/edgar/data/1084777/000149315226048080/0001493152-26-048080-index.htm"
+   },
    {
     "src": "sec",
     "id": "dff8db13dd14cd3c",
@@ -15659,9 +15658,10 @@
   "checked": "2026-10-22T18:24:40.180130+00:00",
   "sec_seen": [
    "0001488168-26-000010",
+   "0001493152-26-048080",
+   "0000001750-26-000104",
    "0001493152-26-048062",
-   "0001193125-26-428770",
-   "0000001750-26-000104"
+   "0001193125-26-428770"
   ],
   "errors": {}
  }
