@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "0975df5253074a26": "2026-10-19T10:51:15.413067+00:00",
-  "a8bbcab898826486": "2026-10-19T10:51:15.413067+00:00",
   "c48d5c8f751f88c5": "2026-10-19T11:01:15.479588+00:00",
   "961c489488f5420d": "2026-10-19T11:06:15.435355+00:00",
   "c4635721b251bb6f": "2026-10-19T11:06:15.435355+00:00",
@@ -883,29 +881,13 @@
   "7228ee66f2cfc731": "2026-10-22T10:23:36.836037+00:00",
   "27230cc576cd9ef9": "2026-10-22T10:28:36.801547+00:00",
   "df19f4cd472b46a0": "2026-10-22T10:38:36.858091+00:00",
-  "e50293f6e469242c": "2026-10-22T10:48:36.819348+00:00"
+  "e50293f6e469242c": "2026-10-22T10:48:36.819348+00:00",
+  "5dbc14cfcb2e591a": "2026-10-22T10:53:36.815947+00:00",
+  "f2472f479dc546ec": "2026-10-22T10:53:36.815947+00:00",
+  "d43357d5642c2c39": "2026-10-22T10:53:36.815947+00:00",
+  "3da0d07e19446878": "2026-10-22T10:53:36.815947+00:00"
  },
  "recent": [
-  {
-   "title": "Mozambique courts South African investment for new gas project",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOcmJUN0pCUGFySWlWTzV0WlN5Z1llSnBGTVpCSnN1ZnJVTGlzQlNnZEt0Y29sdW1lRXhiZlZhZGFHME5FSG1BdXViSlBfUTNUVUM5WXBPMnJWdW9DaFhJMVZ6djEwdjZlVGhsV09PVGNONzBDYmJPUHJNaU10RlZramlsQzBpb2FGcW1LMVAtOHNTN1R6Wk1VV3BfMlpxNVdPdjNBM1AyRGE0ODQwLThJ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T10:51:15.413067+00:00",
-   "title_ru": "Мозамбик ищет южноафриканские инвестиции в новый газовый проект"
-  },
-  {
-   "title": "Sterling hits 17-month high against euro",
-   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNQ2J4LUZhclNaU1YxRFFEQ3F2Yk1Cbi13WDZJSjFGQ2p1UzMxYk93QUpieEtPTGVwbWlJZW54NjAyenh6ZzZsUmhUVVlyenhza1BMWDhTeGEyeHYtWlRoQUk4bXdiUjJCUDJRbng4eFJvT056WWxfNVBfLVlLQjdueTlMcFd5LUtsWkJ2QTFR?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-19T10:51:15.413067+00:00",
-   "title_ru": "Стерлинг достиг 17-месячного максимума по отношению к евро"
-  },
   {
    "title": "TSX futures edge lower as oil slips; eyes on inflation data",
    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOX3NHWThwRjlFWHVFWmJfUFhNV3lsREJnYlB5X0ZpbnJldjhlMl8tdDF3T19JcFlQWVFoOEt0eWxqdUMwSmFYeEg5WllRNzlfWnJzcWFFaHFUOXZtUWN5d2M2VUY1a19GU2M4Z1BuUkVObWZDX2traXdWcGt2djFxRVRTVU1KcHNlMWVOLWtDZklwcnRaYUZQQzBELThfZw?oc=5",
@@ -8956,6 +8938,47 @@
     "rates",
     "dollar"
    ]
+  },
+  {
+   "title": "Saudi Attacks Push Oil Higher as Stocks Slide on Tech Earnings",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-22/the-pulse-10-22-2026-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-22T10:53:36.815947+00:00",
+   "title_ru": "Атаки Саудовской Аравии подтолкнули нефть к росту, поскольку акции падают на фоне доходов технологических компаний",
+   "lead": "\"The Pulse With Francine Lacqua\" is all about conversations with high profile guests in the beating heart of global business, economics, finance and politics.",
+   "lead_ru": "«Пульс с Франсин Лаква» — это беседы с высокопоставленными гостями в самом сердце мирового бизнеса, экономики, финансов и политики.",
+   "tags": [
+    "oil",
+    "markets"
+   ]
+  },
+  {
+   "title": "Oil Climbs as Houthi Attacks on Saudi Arabia Continue",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-22/oil-climbs-as-houthi-attacks-on-saudi-arabia-continue-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T10:53:36.815947+00:00",
+   "title_ru": "Нефть растет на фоне продолжения атак хуситов на Саудовскую Аравию",
+   "lead": "Three people were killed in two attacks on an Aramco oil field and an airport in Saudi Arabia’s Eastern Province Wednesday.",
+   "lead_ru": "Три человека погибли в результате двух нападений на нефтяное месторождение Aramco и аэропорт в Восточной провинции Саудовской Аравии в среду.",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "IMF, OECD warn AI could widen rich-poor country divide",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNQ0FFZnl0NzhvUHNkTEpENjNIeTlMNktuSk5DRUlZX21yUk9ZTGFhOWNZRGMwRXBrRkV3dmpKMDFUdGZYMlQyYmR0Tm55aUtCSXVWZ0FCZkI5SUQtUGFCXzFRaF9nNW5JU2czZUJmZURDR21VX3FWRXV3a01xMHdZcHlyWDVGNW1MZlBKTkJJNzk3MzBHNXBXcmdFeFVTdS15NG9GSW1jR05Kdw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-22T10:53:36.815947+00:00",
+   "title_ru": "МВФ и ОЭСР предупреждают, что ИИ может увеличить разрыв между богатыми и бедными странами"
   }
  ],
  "last_digest": "2026-10-21",
@@ -15103,11 +15126,11 @@
    "0001231919-26-001485",
    "0000804328-26-000112",
    "0001185185-26-004899",
-   "0001193125-26-428272",
    "0001477932-26-006387",
+   "0001193125-26-428272",
    "0001193125-26-428106",
-   "0001818383-26-000258",
    "0001778564-26-000189",
+   "0001818383-26-000258",
    "0000804328-26-000111",
    "0001193125-26-428110",
    "0001191473-26-000008",
