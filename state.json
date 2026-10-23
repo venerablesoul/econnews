@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c18ab572c871c7a5": "2026-10-20T11:13:05.257438+00:00",
   "76a9b4fc804e9c8e": "2026-10-20T11:18:05.263608+00:00",
   "7ec911f2c4a4bb36": "2026-10-20T11:23:05.281124+00:00",
   "85fe50d3382a5857": "2026-10-20T11:28:05.303091+00:00",
@@ -993,22 +992,11 @@
   "d4a6b4dca34ba7d7": "2026-10-23T11:06:24.957669+00:00",
   "4fabf130300ba1c1": "2026-10-23T11:06:24.957669+00:00",
   "d8d8e41e636d9af2": "2026-10-23T11:06:24.957669+00:00",
-  "be4796a8a665619a": "2026-10-23T11:06:24.957669+00:00"
+  "be4796a8a665619a": "2026-10-23T11:06:24.957669+00:00",
+  "fed269de4dd6561a": "2026-10-23T11:11:24.922418+00:00",
+  "a10c2004dfc41653": "2026-10-23T11:16:24.896054+00:00"
  },
  "recent": [
-  {
-   "title": "CoreWeave debt selloff poses limited risk to global banks, J.P. Morgan says",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNOHMyRGhadi1kbGZuSEVyakFWeFp4bS1TYUc3VjBiWXpJTk84VXBaYmhjTFBZd2FVV0cyR1p5QXpNOHhsVlJtakxzNTlVRzZxbjVuMVlLTkVmQWk1b3VINFZ3Qkp1Ui1ibExKaHYwaEdMY1FfSzNYb0pkSFpWLW80VGJRREhzdUw0ek5zcy05UTM4dDJNaXFoejhfSnJVZTFrWkZQU1RqYms0X0ktbUZJNkVRSUNDMHV0RUVmVl8ySQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 7,
-   "ts": "2026-10-20T11:13:05.257438+00:00",
-   "title_ru": "Распродажа долга CoreWeave представляет ограниченный риск для глобальных банков, говорит J.P. Morgan",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Senegal Eurobonds Fall as Budget Standoff Puts IMF Deal at Risk",
    "link": "https://www.bloomberg.com/news/articles/2026-10-20/senegal-eurobonds-fall-as-budget-standoff-puts-imf-deal-at-risk",
@@ -10171,6 +10159,20 @@
    "lead_en": "The Russian economy as a whole is growing at a moderate pace in 2026. The pressure on prices is increased.",
    "tags": [
     "Russia"
+   ]
+  },
+  {
+   "title": "UK stocks set for weekly declines as oil prices soar",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNLUFBR0xnWGVNdnlZWHllVVp3bmdPQ2xsMEVHbXktYXUwMVRmZlZNU1E4Z3F1R0paZVZfZkFUbFU1cG5ZZnZteFVxUXRRS0c5RmFiVUtiU25makZIMTVaR2dlbGZLQ2VRN0tKYnpmblZLdUZkajhmUFgxMG1wNEU2N21Wdno3UHFoMGhnM2EyMDZkY1JLZ0FDT1lnSWNQU0NlZTFyNUo1QkpNTWFm?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 7,
+   "ts": "2026-10-23T11:16:24.896054+00:00",
+   "title_ru": "Британские акции готовятся к еженедельному снижению, поскольку цены на нефть растут",
+   "tags": [
+    "oil",
+    "markets"
    ]
   }
  ],
