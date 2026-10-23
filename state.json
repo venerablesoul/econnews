@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "ede3c6c228c54e6c": "2026-10-20T07:11:52.423811+00:00",
   "0431d879b4cb8482": "2026-10-20T07:16:52.405793+00:00",
   "95e9b9653ad52986": "2026-10-20T07:36:52.423985+00:00",
   "b7d55c331870d830": "2026-10-20T07:46:52.424675+00:00",
@@ -963,19 +962,10 @@
   "c50bc460782691a4": "2026-10-23T07:06:24.961277+00:00",
   "f95dbeb263f44a95": "2026-10-23T07:11:24.881713+00:00",
   "4fa427fa4332bd08": "2026-10-23T07:11:24.881713+00:00",
-  "6eb0573ec8a44572": "2026-10-23T07:11:24.881713+00:00"
+  "6eb0573ec8a44572": "2026-10-23T07:11:24.881713+00:00",
+  "fd72c211baa6926a": "2026-10-23T07:16:24.876188+00:00"
  },
  "recent": [
-  {
-   "title": "Correction fears fade as AI bull market holds, says strategist",
-   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9lVk0yZ2Z4WHJ5dVhxSWZzTFhKTWVicG81QzJYSWRndHdxUUVfM0ZRLXVaRDN3TnlUelM3UzdsNU9vQmtwMnRVZWJlMlVMYkloQlBCX1pVVW5BUkdhT0RJYXhWUGhLZ0U?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T07:11:52.423811+00:00",
-   "title_ru": "Опасения по поводу коррекции исчезают, поскольку бычий рынок ИИ держится, говорит стратег"
-  },
   {
    "title": "South African rand holds steady ahead of budget, inflation data",
    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQbV9XZGNnZHlLZFV0MS00Z3hLOWhxNmxkSFBtYl9pY1N3YTlPQnhhRlJKemJmbnlmY3lXZWNRWE1ua2ZTMmVPVXF0Mk9RMDlhOHk1QW9OS3VhdDI2TmN3X004WG5iUll1dUh6WUNqclhFU2FhSTMwTXVqUmgzeGlxNU1XbGpMNDBUSF9NYUF4bTVkUU1Fa19RVGU5QzBtT3B2cVhVVXQxMk5QU3lx?oc=5",
@@ -9810,6 +9800,16 @@
    ],
    "score": 1,
    "ts": "2026-10-23T07:11:24.881713+00:00"
+  },
+  {
+   "title": "India October business growth hits 4-month high; hiring stalls, PMI shows",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOOVd1UzNhOV9iT2JldWFINDZ2Y3VrQTRuYXRCNzdpNjhpS2RLSW9WNmwyTVZOa0hlWEhoNXdSVU53cnowMENfRmJVbktqME9PNTRaTDlubVg1S2F2TnVoWm5aSXZ3b1prOGRBY1RiYnZFeVBMcFNoSnZLT0szTmVDT0tvREs4ZTloVWlPUmVrUUJCaUZGR0R3NlF1TDRjaklfWkhfNDZXRmcwRWZTenQxeWptemhGN2xwUjhj?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-23T07:16:24.876188+00:00",
+   "title_ru": "Индия Октябрьский рост бизнеса достиг 4-месячного максимума; найм киосков, PMI показывает"
   }
  ],
  "last_digest": "2026-10-22",
@@ -16108,8 +16108,8 @@
   },
   "checked": "2026-10-23T06:51:24.925269+00:00",
   "sec_seen": [
-   "0001769628-26-000450",
    "0001607879-26-000008",
+   "0001769628-26-000450",
    "0001193125-26-429202",
    "0001493152-26-048153",
    "0001944970-26-000029",
@@ -16119,8 +16119,8 @@
    "0001855880-26-000022",
    "0002157445-26-000002",
    "0000921895-26-002845",
-   "0002161365-26-000008",
    "0001635088-26-000116",
+   "0002161365-26-000008",
    "0001062993-26-005508",
    "0002032458-26-000030",
    "0000897069-26-001865",
@@ -16131,6 +16131,7 @@
    "0001493152-26-048149",
    "0001891037-26-000011",
    "0001266824-26-000217",
+   "0001628280-26-066951",
    "0001213900-26-111771",
    "0000829224-26-000149",
    "0001193125-26-429162",
@@ -16144,12 +16145,11 @@
    "0001628280-26-066941",
    "0002066491-26-000013",
    "0000902664-26-004257",
-   "0001753539-26-000149",
    "0001891751-26-000010",
    "0001628280-26-066949",
    "0001193125-26-429245",
    "0001973495-26-000007",
-   "0001628280-26-066951",
+   "0001753539-26-000149",
    "0001349983-26-000013",
    "0001493152-26-048147"
   ],
