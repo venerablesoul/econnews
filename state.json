@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "32f91f4f95fe759e": "2026-10-20T22:04:11.851281+00:00",
-  "3a5001fe9881b72c": "2026-10-20T22:04:11.851281+00:00",
-  "6c3e75b49e4d10b1": "2026-10-20T22:04:11.851281+00:00",
   "2aeaae9be726222a": "2026-10-20T22:09:11.846242+00:00",
   "4e8bcb23170ea908": "2026-10-20T22:14:11.838242+00:00",
   "855b9c2b030d4116": "2026-10-20T22:14:11.838242+00:00",
@@ -1012,41 +1009,10 @@
   "bd24ce5d70dda29f": "2026-10-23T21:22:41.414176+00:00",
   "2bc1cf592e278a36": "2026-10-23T21:47:41.430212+00:00",
   "4cd960199fc9c646": "2026-10-23T21:52:41.422387+00:00",
-  "953b8561374f8ae3": "2026-10-23T21:52:41.422387+00:00"
+  "953b8561374f8ae3": "2026-10-23T21:52:41.422387+00:00",
+  "4900d8ebc6b6ea86": "2026-10-23T22:07:41.439877+00:00"
  },
  "recent": [
-  {
-   "title": "Netflix Sales Growth to Decline for Fourth Quarter in a Row",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-20/netflix-forecasts-adds-to-growth-concerns-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T22:04:11.851281+00:00",
-   "title_ru": "Рост продаж Netflix снизится четвертый квартал подряд",
-   "lead": "Netflix reported earnings for the third quarter that exceeded Wall Street expectations, but forecast a fourth consecutive quarter of slowing sales growth, a projection that may amplify concerns about the performance of the…",
-   "lead_ru": "Netflix сообщила о прибыли за третий квартал, которая превзошла ожидания Уолл-стрит, но прогнозирует замедление роста продаж в четвертом квартале подряд, и этот прогноз может усилить опасения по поводу показателей..."
-  },
-  {
-   "title": "3M Lifts Forecast Again in Boost to Revitalization Effort",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQVTMwU0xLZkdIOEU4MDh2eFU4WTBiY0N2TjlHTzd4U3JNN0RoY291UXpvdThSbDdERGc5R2RtNVc4b3hZaFFQQ1hRckN1YVdPeFc1WkttUk5sei1uUXJOdVM1b0NwdTNVdS1zS3huWFhpQVY3NWdoaGRwS3UzZzBtcnZmOTVRc2wxb1lQdEhhQUR3RWlwc2dDaEhQQURaZHJrR3p4b1g4T2t2d3NPQ3pKclpBb1U?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T22:04:11.851281+00:00",
-   "title_ru": "3M снова повышает прогноз в целях активизации усилий по возрождению"
-  },
-  {
-   "title": "Citadel Securities’ Rubner Says AI Trade to Gain After Midterms",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQUVlMMEFHdnNnWUozNFNkc3BQN1d2VnNxQV9XZGdUM0ZTazM4NmhtWHBzSjlUanNMQjdOa0pZQXBNVlhnNjRoeGpzeGVrUEFrRkhLM0RvRlZ6c2ppaS1uUlRKdWQwR0g2bG5SaGFUOWN5bXdlZDloRjZPTmlKVHVjYnhOSmdOSFNLbGV4N3ZkRTFnYjM2RWtOY1l0V3h3c3ZIUU1UeUx2bHN6SUlGTkViOTIwUQ?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T22:04:11.851281+00:00",
-   "title_ru": "Рубнер из Citadel Securities считает, что торговля искусственным интеллектом вырастет после промежуточных выборов"
-  },
   {
    "title": "BOJ to raise rates to 1.50% in December, sticking to quarterly pace: Reuters poll",
    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQM01keWQ2YlhOUEZEODRRcFlSQzBtYnREaldoaTh0ZkpYVTFtYVJrbURVMDVyaEFkSFFoU2hiRmtfYVlYLW83SHdVMHlNbW9aV19oR3I1OG5ERnAwOV9EdjU0NDRkRUxVSXg3R2hJZUpiTXdIeWVSNVlfc1U0bGRndHhFNlhtbXA4N2I4dUhabFRsZDFsRUZFNWNHTDc0cWJPTGJnbU01aTR5VjA?oc=5",
@@ -16693,24 +16659,25 @@
   "checked": "2026-10-23T21:27:41.446840+00:00",
   "sec_seen": [
    "0001670723-26-000005",
+   "0001588894-26-000024",
    "0000904454-26-000531",
    "0001993529-26-000005",
    "0001437906-26-000005",
    "0001834046-26-000012",
    "0001628280-26-067097",
-   "0001275238-26-000009",
    "0001934887-26-000005",
    "0001349334-26-000012",
    "0001062993-26-005533",
    "0002076243-26-000005",
    "0001628280-26-067095",
+   "0000904454-26-000535",
    "0001683168-26-008055",
    "0001628280-26-067099",
-   "0001876042-26-000291",
-   "0001348490-26-000008",
+   "0000311094-26-000060",
    "0002060000-26-000005",
    "0001354719-26-000001",
    "0001013594-26-001082",
+   "0000904454-26-000534",
    "0001193125-26-430695",
    "0001195306-26-000005"
   ],
