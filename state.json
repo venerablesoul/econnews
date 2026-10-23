@@ -1000,7 +1000,11 @@
   "4802a882bfa91781": "2026-10-23T12:21:55.721813+00:00",
   "ac450de61ed3ed28": "2026-10-23T12:21:55.721813+00:00",
   "bc231ad185b0fdb2": "2026-10-23T12:26:55.689547+00:00",
-  "d83a9537429053a5": "2026-10-23T12:26:55.689547+00:00"
+  "d83a9537429053a5": "2026-10-23T12:26:55.689547+00:00",
+  "d3544c9e7ee32892": "2026-10-23T12:31:55.664240+00:00",
+  "72aabf0aeda63812": "2026-10-23T12:31:55.664240+00:00",
+  "ac967404af3747f4": "2026-10-23T12:31:55.664240+00:00",
+  "a495d2cc033e59e1": "2026-10-23T12:31:55.664240+00:00"
  },
  "recent": [
   {
@@ -10206,6 +10210,74 @@
    ],
    "score": 1,
    "ts": "2026-10-23T12:26:55.689547+00:00"
+  },
+  {
+   "title": "ЦБ предметно рассматривал на заседании только сохранение уровня ключевой ставки",
+   "link": "https://www.kommersant.ru/doc/9059077",
+   "sources": [
+    "Kommersant"
+   ],
+   "score": 7,
+   "ts": "2026-10-23T12:31:55.664240+00:00",
+   "title_en": "The Central Bank substantively considered at the meeting only the preservation of the level of the key rate",
+   "lead": "Совет директоров Банка России (ЦБ) на сегодняшнем заседании предметно рассматривал только паузу в снижении ключевой ставки и нейтральный сигнал. Об этом заявила председатель регулятора Эльвира Набиуллина.",
+   "lead_en": "The Board of Directors of the Bank of Russia (CB) at today's meeting substantively considered only a pause in reducing the key rate and a neutral signal. This was stated by the chairman of the regulator Elvira Nabiullina.",
+   "tags": [
+    "BankOfRussia",
+    "rates",
+    "Russia"
+   ]
+  },
+  {
+   "title": "Набиуллина заявила, что бюджет не будет препятствовать снижению инфляции",
+   "link": "https://www.rbc.ru/rbcfreenews/6adb52c9ec53e5b0ff5f0cd7",
+   "sources": [
+    "RBC"
+   ],
+   "score": 7,
+   "ts": "2026-10-23T12:31:55.664240+00:00",
+   "title_en": "Nabiullina said that the budget will not prevent inflation from decreasing",
+   "lead": "Банк России ожидает, что бюджетная политика не будет препятствовать снижению инфляции, а, напротив, будет способствовать замедлению роста цен.",
+   "lead_en": "The Bank of Russia expects that fiscal policy will not impede the decline in inflation, but, on the contrary, will contribute to a slowdown in price growth.",
+   "tags": [
+    "BankOfRussia",
+    "inflation",
+    "Russia"
+   ]
+  },
+  {
+   "title": "ЦБ объяснил сохранение ставки в 14% эффектом выбытия мощностей",
+   "link": "https://www.kommersant.ru/doc/9059074",
+   "sources": [
+    "Kommersant"
+   ],
+   "score": 6,
+   "ts": "2026-10-23T12:31:55.664240+00:00",
+   "title_en": "The Central Bank explained the preservation of the rate of 14% by the effect of capacity retirement",
+   "lead": "Банк России сохранил ключевую ставку на уровне 14% годовых, поскольку эффекты временного выбытия производственных мощностей могут оказаться более продолжительными.",
+   "lead_en": "The Bank of Russia kept the key rate at 14% per annum, as the effects of the temporary disposal of production facilities may be longer-lasting.",
+   "tags": [
+    "BankOfRussia",
+    "rates",
+    "Russia"
+   ]
+  },
+  {
+   "title": "Набиуллина увидела сокращение пространства для снижения ставки ЦБ",
+   "link": "https://www.rbc.ru/economics/23/10/2026/6adb51f809a30fd51b0e8404",
+   "sources": [
+    "RBC"
+   ],
+   "score": 4,
+   "ts": "2026-10-23T12:31:55.664240+00:00",
+   "title_en": "Nabiullina saw a reduction in the space for reducing the Central Bank rate",
+   "lead": "Пространство для снижения ключевой ставки в 2027 году сократилось, заявила председатель Банка России Эльвира Набиуллина на пресс-конференции после заседания регулятора.",
+   "lead_en": "The space for reducing the key rate in 2027 has shrunk, Bank of Russia Governor Elvira Nabiullina said at a press conference after the regulator's meeting.",
+   "tags": [
+    "BankOfRussia",
+    "rates",
+    "Russia"
+   ]
   }
  ],
  "last_digest": "2026-10-22",
