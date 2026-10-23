@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "abded94b3f34cf74": "2026-10-20T02:11:05.101528+00:00",
-  "e6c2f827282abf9a": "2026-10-20T02:11:05.101528+00:00",
-  "42197dbdb807b0f6": "2026-10-20T02:11:05.101528+00:00",
-  "29f9ee2b5b6bf32c": "2026-10-20T02:16:05.131196+00:00",
-  "255deb47b58ded29": "2026-10-20T02:16:05.131196+00:00",
   "e0589481ede90596": "2026-10-20T02:21:05.152162+00:00",
   "249445fcae292f63": "2026-10-20T02:26:05.096270+00:00",
   "86c6c9f5f46e4c24": "2026-10-20T02:31:05.179033+00:00",
@@ -955,79 +950,11 @@
   "f90f6cf942e88dff": "2026-10-23T02:00:51.579588+00:00",
   "14ecfa88342424ef": "2026-10-23T02:00:51.579588+00:00",
   "fdf4639479d06f53": "2026-10-23T02:05:51.529706+00:00",
-  "aa1e574fdecd0ee2": "2026-10-23T02:10:51.640825+00:00"
+  "aa1e574fdecd0ee2": "2026-10-23T02:10:51.640825+00:00",
+  "37610e12111f754e": "2026-10-23T02:20:51.538382+00:00",
+  "2e26b53365633179": "2026-10-23T02:20:51.538382+00:00"
  },
  "recent": [
-  {
-   "title": "Indonesia’s Tightly Held Stock Cut a Positive Move, Analysts Say",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-20/indonesia-s-tightly-held-stock-cut-a-positive-move-analysts-say",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T02:11:05.101528+00:00",
-   "title_ru": "По мнению аналитиков, акции Индонезии продемонстрировали положительную динамику",
-   "lead": "The Indonesia Stock Exchange’s plan to remove shares with highly concentrated ownership from its benchmark is a step in the right direction as regulators work to avoid a double market downgrade by MSCI Inc., analysts said.",
-   "lead_ru": "План Индонезийской фондовой биржи по исключению акций с высокой концентрацией собственности из ее эталонного показателя является шагом в правильном направлении, поскольку регуляторы работают над тем, чтобы избежать двойного понижения рыночного рейтинга со стороны MSCI Inc., говорят аналитики.",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "3M expands Amazon data center partnership, shares gain",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNdFJFY2JqbjhtdTFfVDFUSkNrUHJhbWxWYjMzaG01Z1k5X005ZzFmWkJ5a0tUQjhjU0dkcHFBZjJzdGU0cUVBdEVBUmhXLXJTU1NHMUlmbHJfRkZ0WVFZWHpSN1h3MXpoTVZtaERMUll4NlJ0cHgyS1pWMHFVcldDUzFKQzVrdnVQbnFvOEdqNjE3WGxCdTNKemhjZnVKbW5tb3g3SnR3Qi1UN0gzNlEwZGV5NWE?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T02:11:05.101528+00:00",
-   "title_ru": "3M расширяет партнерство с центрами обработки данных Amazon, акции растут",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "China's September US soybean imports rebound from zero a year earlier, data shows",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNX3Z1Y0FYWF9KYnBhb3VJazV4NTlFRGVvX010YzJYVnlPSE96a25GT0ZWLXVIZWQwbDZ0VHJWc2l3bllMR0ptRUlKOVhLODJyRVBsX01XTG16S0J4RXZnczlzS3hRX29VUGdjakh3TWUyR3lpNldYNDVmcXJBYlpLSFQyU21qR0ZEYmpjZTdQREtNb2kwNHc3T0t2OFlTOWhBQ3hZTXVPYzdxSVJSQ1dPSDJjLU1SblA1cmJZMg?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T02:11:05.101528+00:00",
-   "title_ru": "Данные показывают, что сентябрьский импорт сои в США в Китай восстановился с нуля годом ранее",
-   "tags": [
-    "China"
-   ]
-  },
-  {
-   "title": "Asian shares tumble, oil rises as markets await AI sector results",
-   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPaHdteV9meHVjc2dvbmd1WjNPa1FHR2lwTFlEcmJPWE5zZnhHSFNjQndCeHptVW1NaEpsbms3QS1oSHRiTmZyUVp2ZVR0SlMwT1kxVnM2UFdyenVSblJHVW4ySjA3aTFUcGxvbV9iaHZZMzJVZTRQV1ZtM3BZMVd4RHFsaw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-20T02:16:05.131196+00:00",
-   "title_ru": "Азиатские акции падают, нефть растет, поскольку рынки ждут результатов сектора искусственного интеллекта",
-   "tags": [
-    "oil",
-    "markets"
-   ]
-  },
-  {
-   "title": "Indonesia Stocks Rebound as Authorities Step Up Response to MSCI",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-20/indonesia-stocks-rebound-as-authorities-step-up-response-to-msci",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-20T02:16:05.131196+00:00",
-   "title_ru": "Акции Индонезии восстанавливаются, поскольку власти усиливают реакцию на MSCI",
-   "lead": "Indonesian stocks rebounded from their worst rout in nearly four decades after authorities unveiled fresh measures aimed at averting a potential two-step downgrade by MSCI Inc.",
-   "lead_ru": "Индонезийские акции восстановились после худшего падения за почти четыре десятилетия после того, как власти обнародовали новые меры, направленные на предотвращение потенциального двухступенчатого понижения рейтинга MSCI Inc.",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "SoftBank Group Credit Risk Hits 4-Year High on AI Funding Strain",
    "link": "https://www.bloomberg.com/news/articles/2026-10-20/softbank-group-credit-risk-hits-4-year-high-on-ai-funding-strain",
@@ -9741,6 +9668,29 @@
     "bonds",
     "markets"
    ]
+  },
+  {
+   "title": "Canadian Oil Explorer Logan Energy Said to Weigh Potential Sale",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQU0hfVWxHSTgzZVRoWHN3QVNHckNiR0U4YUJ6d2JaMVc1di1wRTJRLUg1ZjVnRXg0RGpTbThiV2FsZlQxQjZJSWswaTRoc2JjUWlMWkp2SnQ3dFB3LVVCcGlrdkpTOHBUbzRiNnY4SFhfYXJlZVR5Y3pTMUxQQ21ZSkRKUFRmblVyZ05odmNfUmZSdWt1Zl96dmUyYnJIWjMxMjJ3ZVRYN1RfUmNENUxXd3RBd1c?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T02:20:51.538382+00:00",
+   "title_ru": "Канадский нефтяной исследователь Logan Energy сказал, что взвешивает потенциальную продажу",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "Yen shines as AI jitters spur safe-haven rush",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNRU4zMGRzLXpsS3VUeXg0YlJGV1NNYnZCUTZaOVJhSm5KQkUxcExfVEZ0cmsyUkFHX2JubWJKV3RwVkpVd3dodmFLcHV2YU83S1JQSGF4YzlnOUdldHBHeks2bFpZLVJBVGhDeGxONTd1S05KSkxTZlhqYWFqZXA3bmloWDhhVEdQa3dpcllLbk16eURmMzhpUzJueE9vZw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T02:20:51.538382+00:00",
+   "title_ru": "Иена сияет, когда дрожь ИИ подстегивает спешку в безопасном убежище"
   }
  ],
  "last_digest": "2026-10-22",
