@@ -1005,7 +1005,9 @@
   "92ed6710d9f3edda": "2026-10-23T19:52:41.497850+00:00",
   "82e9268c66dc2f06": "2026-10-23T20:07:41.454673+00:00",
   "475aee22f3c60663": "2026-10-23T20:12:41.474481+00:00",
-  "74907efa05ab5371": "2026-10-23T20:17:41.452025+00:00"
+  "74907efa05ab5371": "2026-10-23T20:17:41.452025+00:00",
+  "a732864d1bbe80e9": "2026-10-23T20:22:41.474683+00:00",
+  "58dedade8337fc05": "2026-10-23T20:22:41.474683+00:00"
  },
  "recent": [
   {
@@ -10270,6 +10272,30 @@
    "tags": [
     "tariffs"
    ]
+  },
+  {
+   "title": "White House says the US is lifting tariffs on some Canadian goods",
+   "link": "https://www.bbc.co.uk/news/articles/c60qk573yzz8o?at_medium=RSS&at_campaign=rss",
+   "sources": [
+    "BBC"
+   ],
+   "score": 6,
+   "ts": "2026-10-23T20:22:41.474683+00:00",
+   "title_ru": "Белый дом заявляет, что США отменяют тарифы на некоторые канадские товары",
+   "lead": "Susan Collins, a Republican in a tight race to keep her senate seat in next month's elections, said she had been working with the White House on tariff relief.",
+   "lead_ru": "Сьюзан Коллинз, республиканец в жесткой гонке за сохранение своего места в сенате на выборах в следующем месяце, сказала, что она работает с Белым домом над снижением тарифов.",
+   "tags": [
+    "tariffs"
+   ]
+  },
+  {
+   "title": "The U.S. economy is great by this measure, and the good times aren’t over. So why are Americans so sour?",
+   "link": "https://www.marketwatch.com/story/the-u-s-economy-is-great-by-this-measure-and-the-good-times-arent-over-so-why-are-americans-so-sour-4be897db?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-23T20:22:41.474683+00:00"
   }
  ],
  "last_digest": "2026-10-23",
@@ -12711,6 +12737,22 @@
    },
    {
     "src": "sec",
+    "id": "3fa2a1f6d49d69b9",
+    "ticker": "WTFC",
+    "company": "WINTRUST FINANCIAL CORP",
+    "who": "Richard B Murphy",
+    "role": "Chair",
+    "type": "sell",
+    "value": 1060838,
+    "shares": 7136,
+    "price": 148.66,
+    "plan": false,
+    "date": "2026-10-22",
+    "disclosed": "2026-10-23",
+    "link": "https://www.sec.gov/Archives/edgar/data/1267655/000126765526000019/0001267655-26-000019-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "90db8e8051c36de3",
     "ticker": "[NONE]",
     "company": "VISTA CREDIT STRATEGIC LENDING CORP.",
@@ -12884,6 +12926,22 @@
     "date": "2026-10-21",
     "disclosed": "2026-10-23",
     "link": "https://www.sec.gov/Archives/edgar/data/2094454/000101297526000980/0001012975-26-000980-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "da43a7d5e5f0187a",
+    "ticker": "LHAI",
+    "company": "Linkhome Holdings Inc.",
+    "who": "Us Innovation Foundation",
+    "role": "10% owner",
+    "type": "sell",
+    "value": 1599775,
+    "shares": 3020000,
+    "price": 0.53,
+    "plan": false,
+    "date": "2026-10-19",
+    "disclosed": "2026-10-23",
+    "link": "https://www.sec.gov/Archives/edgar/data/2158407/000121390026112127/0001213900-26-112127-index.htm"
    },
    {
     "src": "sec",
@@ -16500,38 +16558,6 @@
     "date": "2026-10-15",
     "disclosed": "2026-10-15",
     "link": "https://www.sec.gov/Archives/edgar/data/1595040/000088563926000178/0000885639-26-000178-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "8d8caf796930fc3a",
-    "ticker": "VG",
-    "company": "Venture Global, Inc.",
-    "who": "Keith D Larson",
-    "role": "General Counsel",
-    "type": "sell",
-    "value": 10124464,
-    "shares": 784657,
-    "price": 12.9,
-    "plan": true,
-    "date": "2026-10-15",
-    "disclosed": "2026-10-15",
-    "link": "https://www.sec.gov/Archives/edgar/data/2050857/000205085726000018/0002050857-26-000018-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "9bc94bda5847aec4",
-    "ticker": "FLSC",
-    "company": "Frazier Life Sciences Acquisition Corp. II",
-    "who": "Albert Cha et al.",
-    "role": "CEO, 10% owner",
-    "type": "buy",
-    "value": 3000000,
-    "shares": 300000,
-    "price": 10.0,
-    "plan": false,
-    "date": "2026-10-15",
-    "disclosed": "2026-10-15",
-    "link": "https://www.sec.gov/Archives/edgar/data/2153600/000119312526422957/0001193125-26-422957-index.htm"
    }
   ],
   "docs": {
@@ -16566,27 +16592,28 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-23T19:22:41.458970+00:00",
+  "checked": "2026-10-23T20:22:41.474683+00:00",
   "sec_seen": [
-   "0000007536-26-000148",
    "0001979522-26-000015",
+   "0001213900-26-112127",
    "0001980265-26-000011",
-   "0000086312-26-000187",
    "0000086312-26-000190",
    "0001012975-26-000981",
-   "0001439222-26-000122",
    "0000086312-26-000189",
+   "0001267655-26-000019",
    "0001677418-26-000016",
-   "0000086312-26-000186",
    "0001213900-26-112120",
    "0001193125-26-430449",
    "0001981372-26-000019",
    "0001003078-26-000112",
    "0001012975-26-000982",
    "0001179684-26-000017",
+   "0001213900-26-112129",
+   "0001959910-26-000008",
+   "0001193125-26-430460",
    "0001177394-26-000138",
    "0001633414-26-000011",
-   "0001012975-26-000980",
+   "0001628280-26-067060",
    "0001213900-26-112119"
   ],
   "errors": {
