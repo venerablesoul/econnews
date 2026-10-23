@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "2491c73415c0fca0": "2026-10-20T09:08:05.234559+00:00",
   "a162c3c4205130b0": "2026-10-20T09:13:05.228495+00:00",
   "bbe63d13d663883d": "2026-10-20T09:18:05.245312+00:00",
   "7cefbab4338f17b5": "2026-10-20T09:18:05.245312+00:00",
@@ -976,18 +975,10 @@
   "d0d466ac93c98ffd": "2026-10-23T09:06:24.962258+00:00",
   "3d799e11056aa0ee": "2026-10-23T09:06:24.962258+00:00",
   "f195e6568041fe5f": "2026-10-23T09:06:24.962258+00:00",
-  "dec873acecd87202": "2026-10-23T09:06:24.962258+00:00"
+  "dec873acecd87202": "2026-10-23T09:06:24.962258+00:00",
+  "e688c79b99f71a7d": "2026-10-23T09:11:24.931995+00:00"
  },
  "recent": [
-  {
-   "title": "The multi-million dollar real estate portfolio of Buffalo Bills QB Josh Allen and actress Hailee Steinfeld",
-   "link": "https://www.marketwatch.com/story/the-multi-million-dollar-real-estate-portfolio-of-buffalo-bills-qb-josh-allen-and-actress-hailee-steinfeld-58a9bd62?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-20T09:08:05.234559+00:00"
-  },
   {
    "title": "UK Payrolls Rebound and Unemployment Drops Ahead of Budget",
    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPcUtUSGkydjN6NWRheVBoOGIyaUxRckNHb3U3aExvTm9sOEktVGtUVXVwT0hhbFo5YnlxVG1ianJybkNXUkFkZHctbFQ4cmtWYURBVzBWdTZ6ZVRxMUl2TF9oUVRyazRzNFhmVUxsVFpyMWRRNW9IbmVvZDdoU1dSVkZuX3dBcWR4ZXoyeUtkQk4zNlNlNExwdE1NeFk2YjB1SzNXUWt3UzNIU1JMandR?oc=5",
@@ -9951,6 +9942,16 @@
    ],
    "score": 1,
    "ts": "2026-10-23T09:06:24.962258+00:00"
+  },
+  {
+   "title": "India's Welspun bags $580 million US gas pipeline order tied to data centre buildout",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNcWphMFNwdGZkOGo5TGZxMXk3SFhidGZOWXpKWV8xN2hYeXY2MlRITjRIZDM0ZE1RYnpPRTNzdzlaVEwwMGZnR0pqWG9Kd0xJbC1KX1gtUVZfRTZ2T0ZOZUw0bjJ2a3hBYWU4bDl0eWRQQXpUYllPTndTVEJxYzhXLWtETldoYmdOYkVLNUE4RWRPRGcyc1hBWFZUQmNsSXkxdTJkWnlQcURjOVJHZWhYZmc0X2x5OVlQSGpYMTRhb1lWOXBWNU8wLTh0UQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T09:11:24.931995+00:00",
+   "title_ru": "Индийский Welspun суммирует заказ на газопровод в США на $ 580 млн, привязанный к строительству центра обработки данных"
   }
  ],
  "last_digest": "2026-10-22",
@@ -16249,8 +16250,8 @@
   },
   "checked": "2026-10-23T09:01:24.897084+00:00",
   "sec_seen": [
-   "0001607879-26-000008",
    "0001769628-26-000450",
+   "0001607879-26-000008",
    "0001193125-26-429202",
    "0001493152-26-048153",
    "0001944970-26-000029",
@@ -16260,9 +16261,9 @@
    "0001855880-26-000022",
    "0002157445-26-000002",
    "0000921895-26-002845",
+   "0002161365-26-000008",
    "0001635088-26-000116",
    "0001062993-26-005508",
-   "0002161365-26-000008",
    "0002032458-26-000030",
    "0000897069-26-001865",
    "0001628280-26-066948",
@@ -16272,7 +16273,6 @@
    "0001493152-26-048149",
    "0001891037-26-000011",
    "0001266824-26-000217",
-   "0001628280-26-066951",
    "0001213900-26-111771",
    "0000829224-26-000149",
    "0001193125-26-429162",
@@ -16286,11 +16286,12 @@
    "0001628280-26-066941",
    "0002066491-26-000013",
    "0000902664-26-004257",
+   "0001753539-26-000149",
    "0001891751-26-000010",
    "0001628280-26-066949",
    "0001193125-26-429245",
    "0001973495-26-000007",
-   "0001753539-26-000149",
+   "0001628280-26-066951",
    "0001349983-26-000013",
    "0001493152-26-048147"
   ],
