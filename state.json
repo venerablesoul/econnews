@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "2aeaae9be726222a": "2026-10-20T22:09:11.846242+00:00",
   "4e8bcb23170ea908": "2026-10-20T22:14:11.838242+00:00",
   "855b9c2b030d4116": "2026-10-20T22:14:11.838242+00:00",
   "5ad4c8ae3b7b4dc6": "2026-10-20T22:19:12.847852+00:00",
@@ -1010,7 +1009,8 @@
   "2bc1cf592e278a36": "2026-10-23T21:47:41.430212+00:00",
   "4cd960199fc9c646": "2026-10-23T21:52:41.422387+00:00",
   "953b8561374f8ae3": "2026-10-23T21:52:41.422387+00:00",
-  "4900d8ebc6b6ea86": "2026-10-23T22:07:41.439877+00:00"
+  "4900d8ebc6b6ea86": "2026-10-23T22:07:41.439877+00:00",
+  "c750874909946380": "2026-10-23T22:12:41.458547+00:00"
  },
  "recent": [
   {
@@ -10360,6 +10360,21 @@
    ],
    "score": 1,
    "ts": "2026-10-23T21:52:41.422387+00:00"
+  },
+  {
+   "title": "Data Centers Face Downgrade Risk Amid Local Pushback, S&P Says",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-23/data-centers-face-downgrade-risk-amid-local-pushback-s-p-says",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-23T22:12:41.458547+00:00",
+   "title_ru": "По словам S&P, дата-центры сталкиваются с риском снижения рейтинга на фоне локального противодействия",
+   "lead": "Data centers face potential credit rating downgrades due to moratoriums and cancellations driven by public opposition, according to S&P Global Ratings.",
+   "lead_ru": "Согласно S&P Global Ratings, центры обработки данных сталкиваются с потенциальным понижением кредитного рейтинга из-за мораториев и аннулирований, вызванных общественной оппозицией.",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-23",
@@ -13214,6 +13229,22 @@
     "date": "2026-10-21",
     "disclosed": "2026-10-23",
     "link": "https://www.sec.gov/Archives/edgar/data/1876042/000187604226000291/0001876042-26-000291-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "a0a917375acf7ca9",
+    "ticker": "PNI",
+    "company": "PIMCO NEW YORK MUNICIPAL INCOME FUND II",
+    "who": "Bank Of America Corp /de/ et al.",
+    "role": "10% owner",
+    "type": "buy",
+    "value": 77085,
+    "shares": 12170,
+    "price": 6.33,
+    "plan": false,
+    "date": "2026-10-21",
+    "disclosed": "2026-10-23",
+    "link": "https://www.sec.gov/Archives/edgar/data/1170311/000007085826000508/0000070858-26-000508-index.htm"
    },
    {
     "src": "sec",
@@ -16606,22 +16637,6 @@
     "date": "2026-10-14",
     "disclosed": "2026-10-16",
     "link": "https://www.sec.gov/Archives/edgar/data/1502670/000162828026066134/0001628280-26-066134-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "ad80a116ac144825",
-    "ticker": "CRBG",
-    "company": "Corebridge Financial, Inc.",
-    "who": "Nippon Life Insurance Co",
-    "role": "10% owner",
-    "type": "buy",
-    "value": 20487096,
-    "shares": 602103,
-    "price": 34.03,
-    "plan": true,
-    "date": "2026-10-14",
-    "disclosed": "2026-10-16",
-    "link": "https://www.sec.gov/Archives/edgar/data/1889539/000119312526424142/0001193125-26-424142-index.htm"
    }
   ],
   "docs": {
@@ -16662,11 +16677,11 @@
    "0001588894-26-000024",
    "0000904454-26-000531",
    "0001993529-26-000005",
+   "0000904454-26-000539",
    "0001437906-26-000005",
-   "0001834046-26-000012",
+   "0000904454-26-000537",
    "0001628280-26-067097",
    "0001934887-26-000005",
-   "0001349334-26-000012",
    "0001062993-26-005533",
    "0002076243-26-000005",
    "0001628280-26-067095",
@@ -16674,6 +16689,7 @@
    "0001683168-26-008055",
    "0001628280-26-067099",
    "0000311094-26-000060",
+   "0000070858-26-000508",
    "0002060000-26-000005",
    "0001354719-26-000001",
    "0001013594-26-001082",
