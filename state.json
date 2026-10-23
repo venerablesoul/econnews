@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "ca5b22798cee9145": "2026-10-20T11:53:05.260394+00:00",
-  "bfba6319bd21ee9e": "2026-10-20T11:53:05.260394+00:00",
   "e1f9fc13c592e5b3": "2026-10-20T11:58:05.363616+00:00",
   "ea0eead0a6bebc09": "2026-10-20T11:58:05.363616+00:00",
   "0c0d0f69071c221b": "2026-10-20T12:08:05.293801+00:00",
@@ -996,39 +994,12 @@
   "5c41445d16ecc5a7": "2026-10-23T11:36:24.927201+00:00",
   "979f400400229229": "2026-10-23T11:36:24.927201+00:00",
   "a579e8be3df4142c": "2026-10-23T11:46:24.965040+00:00",
-  "4e8aacd8579c88e3": "2026-10-23T11:51:24.934892+00:00"
+  "4e8aacd8579c88e3": "2026-10-23T11:51:24.934892+00:00",
+  "725bed47dc931bee": "2026-10-23T11:56:24.932001+00:00",
+  "e5fb8de12e2040ad": "2026-10-23T11:56:24.932001+00:00",
+  "d5aae8d1dc8b7fbb": "2026-10-23T11:56:24.932001+00:00"
  },
  "recent": [
-  {
-   "title": "Storm Austen to Boost Wind Power in Europe as Gas Prices Surge",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-20/storm-austen-to-boost-wind-power-in-europe-as-gas-prices-surge",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T11:53:05.260394+00:00",
-   "title_ru": "Storm Austen увеличит ветроэнергетику в Европе из-за роста цен на газ",
-   "lead": "The first named storm of this autumn is set to lash the UK and northwest Europe with heavy rain and wind in the coming days, potentially bringing some relief to elevated power prices.",
-   "lead_ru": "Первый названный шторм этой осени обрушится на Великобританию и северо-западную Европу сильным дождем и ветром в ближайшие дни, что потенциально принесет некоторое облегчение повышенным ценам на электроэнергию.",
-   "tags": [
-    "gas"
-   ]
-  },
-  {
-   "title": "Paddy Power-owner cuts 1,400 jobs and blames betting tax rises",
-   "link": "https://www.bbc.co.uk/news/articles/cqzrdpkm3g84o?at_medium=RSS&at_campaign=rss",
-   "sources": [
-    "BBC"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T11:53:05.260394+00:00",
-   "title_ru": "Владелец Paddy Power сокращает 1400 рабочих мест и винит в этом повышение налогов на ставки",
-   "lead": "The government increased taxes on online casino and sports betting in last year's Budget.",
-   "lead_ru": "Правительство увеличило налоги на онлайн-казино и ставки на спорт в прошлогоднем бюджете.",
-   "tags": [
-    "jobs"
-   ]
-  },
   {
    "title": "Italy's Eni to increase gas processing capacity in Egypt's Western Desert",
    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNS1l4WkZJUUwxaHFOS2ppai1DeDV3Vlh4UTBOaTFQa1B0RWlfbWdHejVQRmlxeGhGREd6NlpHYXdYbWtfbWhNdU1yT2RoRE5DeGRiZEhPSHVrTDI3OHhlWllRdDdJOG9GXzN1THJfYTlMRlo4d29yQ0M1SFFjQU80NEZkZXI0QldiSU5ZaVVMOTQxMGQwa01zckI1MFFFVWd0VHpoNjlxZXZzNW9PTHAzeGd0U01ldjE2?oc=5",
@@ -10183,6 +10154,48 @@
    "tags": [
     "bonds"
    ]
+  },
+  {
+   "title": "Laura Cooper on AI Jitters, Oil and the Fed",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-23/laura-cooper-on-ai-jitters-oil-and-the-fed-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-23T11:56:24.932001+00:00",
+   "title_ru": "Лора Купер о дрожании ИИ, нефти и ФРС",
+   "lead": "Laura Cooper of Nuveen discusses AI jitters, rising oil prices and the outlook for Treasury yields and Fed policy. She also explains why investors are becoming more selective on AI and looking toward broader diversification.",
+   "lead_ru": "Лора Купер из Nuveen обсуждает дрожь ИИ, рост цен на нефть и перспективы доходности казначейских облигаций и политику ФРС. Она также объясняет, почему инвесторы становятся более избирательными в отношении ИИ и стремятся к более широкой диверсификации.",
+   "tags": [
+    "Fed",
+    "oil",
+    "bonds"
+   ]
+  },
+  {
+   "title": "Retail Traders Find a Back Door to 24/7 Oil Trading",
+   "link": "https://www.bloomberg.com/news/newsletters/2026-10-23/retail-traders-find-a-back-door-to-24-7-oil-trading",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T11:56:24.932001+00:00",
+   "title_ru": "Розничные трейдеры находят заднюю дверь для круглосуточной торговли нефтью",
+   "lead": "US investors are using VPNs to access offshore platforms, prompting warnings from regulated commodity firms over market risks.",
+   "lead_ru": "Американские инвесторы используют VPN для доступа к оффшорным платформам, вызывая предупреждения регулируемых сырьевых компаний о рыночных рисках.",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "'Drill, baby, drill?' The UK goes for gas",
+   "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBmQ1B2WHhVS0hXRU9zQXJMVU9mVE5pUktZX0NwUWVNQ0VyQktCZDBtSVNLRmhpckthNDJ6RXdwbFJtbVdDSVFfNlQwUVJJcnB1RmlqeVE0UmZ6Qnhi?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T11:56:24.932001+00:00",
+   "title_ru": "«Дрель, детка, дрель?» Великобритания идет за газом"
   }
  ],
  "last_digest": "2026-10-22",
@@ -16481,8 +16494,8 @@
   },
   "checked": "2026-10-23T11:06:24.957669+00:00",
   "sec_seen": [
-   "0001769628-26-000450",
    "0001607879-26-000008",
+   "0001769628-26-000450",
    "0001193125-26-429202",
    "0001493152-26-048153",
    "0001944970-26-000029",
