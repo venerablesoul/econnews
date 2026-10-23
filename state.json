@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "624389dfa8e47a05": "2026-10-20T18:08:33.128492+00:00",
-  "af7766878e9bdf78": "2026-10-20T18:08:33.128492+00:00",
-  "fe3c4bd5e6db63db": "2026-10-20T18:08:33.128492+00:00",
   "984e65abd01d5bc9": "2026-10-20T18:13:33.132219+00:00",
   "6f865bc025ebe1cc": "2026-10-20T18:13:33.132219+00:00",
   "2c7aa3530a64fad6": "2026-10-20T18:18:33.133285+00:00",
@@ -1010,34 +1007,10 @@
   "bc69e814021ec031": "2026-10-23T17:57:41.448140+00:00",
   "4a22d93052796cb7": "2026-10-23T18:07:41.474844+00:00",
   "693771ef8abcee98": "2026-10-23T18:07:41.474844+00:00",
-  "4972d5ce46bbd9ec": "2026-10-23T18:07:41.474844+00:00"
+  "4972d5ce46bbd9ec": "2026-10-23T18:07:41.474844+00:00",
+  "9a3212c3bb551d1b": "2026-10-23T18:12:41.636074+00:00"
  },
  "recent": [
-  {
-   "title": "Indonesia Rate Hike Bets Jump as MSCI Threat Hits Rupiah",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQaHpfSXRYTEF3U0tOTUlPel9DVnZUZTB2QjJzR3hmd001LXNCTGhCdWE5Y18xNW1MUTNtWGgybTE5cW5SLVRiRHIxN200UGxjRS10VXlKM2xNek1GSGVoYldxYnlkRmpQYmN1TDRuUldkUUx0V3JVUHFxbzV2ejYzeTdESW1FVU1CaGt6SC1BQnRMUWFLelh4dFJSZGJIbWhXaEk2UURQMFdHTHZ2M0hQSDNn?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-20T18:08:33.128492+00:00",
-   "title_ru": "Ставки на повышение ставок в Индонезии подскочили, поскольку угроза MSCI достигла рупии",
-   "tags": [
-    "rates"
-   ]
-  },
-  {
-   "title": "Google resolves cloud outage affecting UK banks and websites",
-   "link": "https://www.bbc.co.uk/news/articles/cxdd8mm6qy4mo?at_medium=RSS&at_campaign=rss",
-   "sources": [
-    "BBC"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T18:08:33.128492+00:00",
-   "title_ru": "Google устранил сбой в облаке, затронувший британские банки и веб-сайты",
-   "lead": "Revolut was one of the hardest hit, with banking services going down for many customers.",
-   "lead_ru": "Revolut пострадала больше всего: банковские услуги для многих клиентов были прекращены."
-  },
   {
    "title": "The 60/40 Portfolio Is Caught in an Inflation Trap",
    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOMzhSN19CUmFYcGY5clFqUXVCVU1ud19Jbk5nNFppSXQ1UzNkaGJVel9XTmVVSTctemtQajhYWHRNY0M0UHJLNW53a3pSSVAtbDA2bWN2RkRmMGRSRzVLRDJrdndhNmpFZndObWMwWGEtczhacXE4cWpGX2hEa2Y0cXpsSjFVM00yQTZ2dXZBdTNsbUtXbk11aW5jZ2ZkS3B3Yjg4?oc=5",
@@ -10288,6 +10261,19 @@
    "score": 3,
    "ts": "2026-10-23T18:07:41.474844+00:00",
    "title_ru": "AmEx повышает прогноз прибыли на 2026 год и планирует сократить 5% персонала"
+  },
+  {
+   "title": "India's Bharat Petroleum profit drops amid crude oil price volatility",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQcVdwV1JLUVdlRmdFcGNlOFFfZlZaVEEzRWxVMTM2YTV5SmJ0TENiZURHbkJZdEcyd3lybVE3NGFvbnk5ZUFNN0RNMENoVVE3TVhEbkxpcko2aTNfUVRnZU9wY1RCay1yZUhyaUNVRlYxdng3RGc0STA0cnZqTVJtbzZsVnNicnRjaGZPNVJrM21FcVlvMjZGSUJoaU9UZS1SeTRwanJCNmMxQUg1UHdrczRhRl9oZzNkaDVVSg?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-23T18:12:41.636074+00:00",
+   "title_ru": "Прибыль индийской Bharat Petroleum упала на фоне волатильности цен на нефть",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-23",
@@ -12598,6 +12584,22 @@
     "date": "2026-10-22",
     "disclosed": "2026-10-23",
     "link": "https://www.sec.gov/Archives/edgar/data/2093073/000076406526000117/0000764065-26-000117-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "e45956fdd5b9c7b2",
+    "ticker": "KSS",
+    "company": "KOHLS Corp",
+    "who": "Jennifer J. Kent",
+    "role": "General Counsel",
+    "type": "sell",
+    "value": 550560,
+    "shares": 22940,
+    "price": 24.0,
+    "plan": true,
+    "date": "2026-10-22",
+    "disclosed": "2026-10-23",
+    "link": "https://www.sec.gov/Archives/edgar/data/1595040/000088563926000186/0000885639-26-000186-index.htm"
    },
    {
     "src": "sec",
@@ -16534,22 +16536,6 @@
     "date": "2026-10-14",
     "disclosed": "2026-10-15",
     "link": "https://www.sec.gov/Archives/edgar/data/1912453/000121390026109819/0001213900-26-109819-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "fd5511793ffe148f",
-    "ticker": "REGN",
-    "company": "REGENERON PHARMACEUTICALS, INC.",
-    "who": "Andrew J Murphy",
-    "role": "Co-Chief Scientific Officer",
-    "type": "sell",
-    "value": 3204376,
-    "shares": 4147,
-    "price": 772.7,
-    "plan": true,
-    "date": "2026-10-14",
-    "disclosed": "2026-10-15",
-    "link": "https://www.sec.gov/Archives/edgar/data/1796226/000179622626000002/0001796226-26-000002-index.htm"
    }
   ],
   "docs": {
@@ -16591,14 +16577,12 @@
    "0001437749-26-033377",
    "0001760581-26-000073",
    "0001578926-26-000050",
+   "0000885639-26-000186",
    "0001493152-26-048199",
    "0001096906-26-001615",
    "0001214659-26-013158",
    "0001437749-26-033379",
-   "0001437749-26-033369",
    "0001215315-26-000046",
-   "0001437749-26-033367",
-   "0001060529-26-000002",
    "0001750052-26-000052",
    "0001950027-26-000053",
    "0002111103-26-000043",
