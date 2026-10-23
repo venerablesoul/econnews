@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "f48a34ca841feb4d": "2026-10-20T14:33:33.206272+00:00",
   "bf24b2064b79159d": "2026-10-20T14:43:33.228179+00:00",
   "ce82a4445b4aa2d4": "2026-10-20T14:53:33.152976+00:00",
   "06fff7723cb2e68d": "2026-10-20T14:53:33.152976+00:00",
@@ -1016,24 +1015,11 @@
   "cae4132b0b921271": "2026-10-23T14:16:55.714462+00:00",
   "48ca05cbe342530b": "2026-10-23T14:16:55.714462+00:00",
   "22cc8bfcf637d04c": "2026-10-23T14:26:55.700630+00:00",
-  "12566dde4f8009e8": "2026-10-23T14:31:55.753900+00:00"
+  "12566dde4f8009e8": "2026-10-23T14:31:55.753900+00:00",
+  "1b295f2d0bfb383c": "2026-10-23T14:36:55.863319+00:00",
+  "35c769892033e428": "2026-10-23T14:36:55.863319+00:00"
  },
  "recent": [
-  {
-   "title": "Top-Rated Junk Debt Becomes Sweet Spot as Investors Flee Risk",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-20/top-rated-junk-debt-becomes-sweet-spot-as-investors-flee-risk",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-20T14:33:33.206272+00:00",
-   "title_ru": "Мусорный долг с самым высоким рейтингом становится «золотым пятном», поскольку инвесторы бегут от риска",
-   "lead": "High-grade investors, including T. Rowe Price Associates Inc. and Invesco, are looking at dipping into the least risky corner of junk debt after a broader selloff pushed valuations lower.",
-   "lead_ru": "Высококлассные инвесторы, в том числе T. Rowe Price Associates Inc. и Invesco, рассматривают возможность использования наименее рискованного сегмента мусорных долгов после того, как более широкая распродажа привела к снижению оценок.",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Elice Plunges in Trading Debut; General Motors Falls on Forecast | Stock Movers",
    "link": "https://www.bloomberg.com/news/videos/2026-10-20/elice-plunges-in-debut-general-motors-falls-on-forecast-video",
@@ -10428,6 +10414,16 @@
    "score": 3,
    "ts": "2026-10-23T14:31:55.753900+00:00",
    "title_ru": "Потребительские настроения в США близки к рекордно низкому уровню в преддверии"
+  },
+  {
+   "title": "Italy may hike tax on energy firms to fund budget, sources say",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPbmp3dmpsTVJkVkRuSUdtclFKWm54TVJQbFpjUm5JVXpfbGFJVXd2ZE5DVE9VZkVfU2VCVE9JN1BBZXMtanVyMllVcklRb0xRWTFuai11NW1wY1J5bXVOX2ZSS18xaFk2bTN0ZGpkZ1FVSC1WOXA1RlhwWndQTE0zc1ZIVWtxR3BTT01kczVPeEkya1ptSXB5a01EdG9Ndy01ZWdsUWVhdE56U3M?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T14:36:55.863319+00:00",
+   "title_ru": "Италия может повысить налог на энергетические компании для финансирования бюджета, говорят источники"
   }
  ],
  "last_digest": "2026-10-22",
@@ -16726,10 +16722,10 @@
   },
   "checked": "2026-10-23T14:06:55.769626+00:00",
   "sec_seen": [
-   "0000764065-26-000117",
    "0001493152-26-048187",
+   "0001510281-26-000375",
    "0001193125-26-429600",
-   "0001510281-26-000375"
+   "0000764065-26-000117"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
