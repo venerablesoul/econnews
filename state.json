@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "bf7e59f82046cf43": "2026-10-20T21:04:12.031323+00:00",
   "a3d081b08b4002ba": "2026-10-20T21:34:11.858977+00:00",
   "251865a4c388bc77": "2026-10-20T21:34:11.858977+00:00",
   "32f91f4f95fe759e": "2026-10-20T22:04:11.851281+00:00",
@@ -1006,22 +1005,12 @@
   "fbc7ede144c78f98": "2026-10-23T20:57:41.427848+00:00",
   "0cc2d7583b33826d": "2026-10-23T20:57:41.427848+00:00",
   "7da32245dd636306": "2026-10-23T20:57:41.427848+00:00",
-  "8ac4b5157c53d3ed": "2026-10-23T21:02:41.424074+00:00"
+  "8ac4b5157c53d3ed": "2026-10-23T21:02:41.424074+00:00",
+  "c0429058b02ccc07": "2026-10-23T21:07:41.454979+00:00",
+  "7ee2448e74c44844": "2026-10-23T21:07:41.454979+00:00",
+  "6ae8e9aaa2cf9d17": "2026-10-23T21:07:41.454979+00:00"
  },
  "recent": [
-  {
-   "title": "Hilton to move stock listing to Nasdaq",
-   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPZFhNS2xBNHlPZElTVkgxNzVDQUNnWjByLXFZbm1vVUVyeUFrTDNuM29McElTd2hKQjFBLXVTd09kV2ZHT3lkXzFBLVZ1QlFTeXRiLVE3Sm9DaHpIT09HMXNnS2dVZE16VGZMcUdTM3ZSYWFmaWR4NGhrVmJYZnFjYW43RQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T21:04:12.031323+00:00",
-   "title_ru": "Hilton перенесет листинг акций на Nasdaq",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "State Employment and Unemployment (Monthly) News Release",
    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5qdzhkekhxUTVLZnllM0JiaU5OM0cxM0ZvckFVMTNEc05JdkFrcmRMaWV2TEw0TWF3dHItRHBuTm15VjF3Sm9pR1lrTWR6WlNULUdsZlhSZmRPZVo2eTkzM05TU0xmTWNzUTBj?oc=5",
@@ -10341,6 +10330,44 @@
     "rates",
     "inflation"
    ]
+  },
+  {
+   "title": "Coffins and Canoes From Canada Get 50% Tariff Under New Trump Order",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-23/coffins-and-canoes-from-canada-get-50-tariff-under-new-trump-order",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-23T21:07:41.454979+00:00",
+   "title_ru": "Гробы и каноэ из Канады получили 50% -ный тариф по новому заказу Трампа",
+   "lead": "The White House is exempting some Canadian products from tariffs and adding duties to others, an effort to boost Susan Collins’ campaign to keep her US Senate seat.",
+   "lead_ru": "Белый дом освобождает некоторые канадские продукты от тарифов и добавляет пошлины к другим, чтобы поддержать кампанию Сьюзан Коллинз по сохранению ее места в Сенате США.",
+   "tags": [
+    "tariffs"
+   ]
+  },
+  {
+   "title": "Regional Economic Outlook for the Middle East and Central Asia, October 2026",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPdDBrSVVDckRvbVFTbXVzSDJEZ3RTa3ZkREZCalJib1lsUGQyNFF4WngtbVR0YkI2RXYyRmNiekZ3U2tQbnYwV2VxNUZaRE1Qa2NLV0JFQWZXSC1nVkh1VlNNWERZcTRobk1DZ2ZRVXBZTnJlV3lOTzdveXotOGFxejZBTFhRT0lsMUl1ZWJFOVpWbV9HVXkzbHNSOXhlV1lsRFpDQjhCT2NQc29HcThrRzUxd051QkdCSlNkVlp4RDZTQjhr?oc=5",
+   "sources": [
+    "IMF"
+   ],
+   "score": 5,
+   "ts": "2026-10-23T21:07:41.454979+00:00",
+   "title_ru": "Перспективы региональной экономики для Ближнего Востока и Центральной Азии, октябрь 2026 г."
+  },
+  {
+   "title": "Buy financials, avoid healthcare stocks, says portfolio manager",
+   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFA0VDR1eXNISC1sYTREejFWM2NjWk8xNEphdVBiSGZadF9YV3dvbExkSUY1OHBFNHFJaWpoZ3NmTDY1UXdtUEZVMHc5aEEzdW9lTTdBUkdqbnJxZDNsN0JiTEhnbkt1alplRW9mNmljZk1zT0dDY1NPbDdR?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T21:07:41.454979+00:00",
+   "title_ru": "Покупайте финансовые активы, избегайте медицинских акций, говорит портфельный менеджер",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-23",
@@ -12654,6 +12681,22 @@
    },
    {
     "src": "sec",
+    "id": "d4a5e045e18f209a",
+    "ticker": "VLTO",
+    "company": "Veralto Corp",
+    "who": "Jennifer Honeycutt",
+    "role": "CEO",
+    "type": "sell",
+    "value": 745290,
+    "shares": 7098,
+    "price": 105.0,
+    "plan": true,
+    "date": "2026-10-23",
+    "disclosed": "2026-10-23",
+    "link": "https://www.sec.gov/Archives/edgar/data/1967680/000183404626000012/0001834046-26-000012-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "7587fb69b5816e0f",
     "ticker": "BETA",
     "company": "BETA Technologies, Inc.",
@@ -13131,6 +13174,22 @@
     "date": "2026-10-21",
     "disclosed": "2026-10-23",
     "link": "https://www.sec.gov/Archives/edgar/data/1754045/000175404526000010/0001754045-26-000010-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "4ac5bf2f2395d9f3",
+    "ticker": "CRCL",
+    "company": "Circle Internet Group, Inc.",
+    "who": "Jeremy Fox-Geen",
+    "role": "CFO",
+    "type": "sell",
+    "value": 1350000,
+    "shares": 15000,
+    "price": 90.0,
+    "plan": true,
+    "date": "2026-10-21",
+    "disclosed": "2026-10-23",
+    "link": "https://www.sec.gov/Archives/edgar/data/1876042/000187604226000291/0001876042-26-000291-index.htm"
    },
    {
     "src": "sec",
@@ -16571,38 +16630,6 @@
     "date": "2026-10-14",
     "disclosed": "2026-10-16",
     "link": "https://www.sec.gov/Archives/edgar/data/1651902/000147443226000103/0001474432-26-000103-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "c63e4445c4eaaad0",
-    "ticker": "P",
-    "company": "Everpure, Inc.",
-    "who": "Scott Dietzen",
-    "role": "Director",
-    "type": "sell",
-    "value": 8495878,
-    "shares": 60000,
-    "price": 141.6,
-    "plan": false,
-    "date": "2026-10-14",
-    "disclosed": "2026-10-16",
-    "link": "https://www.sec.gov/Archives/edgar/data/1651908/000147443226000102/0001474432-26-000102-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "403c4128380cf200",
-    "ticker": "AMBQ",
-    "company": "Ambiq Micro, Inc.",
-    "who": "Sean Chihhsiang Chen",
-    "role": "COO",
-    "type": "sell",
-    "value": 772438,
-    "shares": 15000,
-    "price": 51.5,
-    "plan": true,
-    "date": "2026-10-14",
-    "disclosed": "2026-10-16",
-    "link": "https://www.sec.gov/Archives/edgar/data/2078559/000207855926000016/0002078559-26-000016-index.htm"
    }
   ],
   "docs": {
@@ -16639,7 +16666,6 @@
   },
   "checked": "2026-10-23T20:22:41.474683+00:00",
   "sec_seen": [
-   "0001783879-26-000157",
    "0001764013-26-000114",
    "0001193125-26-430603",
    "0001477932-26-006439",
@@ -16647,24 +16673,24 @@
    "0001193125-26-430616",
    "0001437749-26-033424",
    "0001193125-26-430600",
-   "0001739445-26-000174",
    "0001193125-26-430610",
-   "0001491874-26-000005",
+   "0001834046-26-000012",
    "0001193125-26-430612",
    "0001437749-26-033428",
+   "0001275238-26-000009",
    "0001437749-26-033429",
    "0001673356-26-000010",
    "0001754045-26-000010",
    "0001193125-26-430605",
+   "0001349334-26-000012",
    "0001437749-26-033427",
    "0001193125-26-430611",
    "0001899813-26-000003",
-   "0001560849-26-000013",
    "0001824992-26-000010",
    "0001108524-26-000227",
-   "0001739445-26-000175",
    "0001193125-26-430606",
    "0001203302-26-000014",
+   "0001876042-26-000291",
    "0001763161-26-000013",
    "0001261778-26-000009",
    "0001348490-26-000008",
