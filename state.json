@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "5f72ac70bbe2d312": "2026-10-20T12:43:05.292513+00:00",
   "a75fbff66238ee8c": "2026-10-20T12:48:05.307762+00:00",
   "86ab768f823f4f23": "2026-10-20T12:58:05.292810+00:00",
   "a6fcca02187fb8a8": "2026-10-20T13:08:05.264457+00:00",
@@ -1004,23 +1003,10 @@
   "8b606ddfe079283e": "2026-10-23T12:36:55.681447+00:00",
   "8afe37e143cd7309": "2026-10-23T12:36:55.681447+00:00",
   "4c54aca1579a7883": "2026-10-23T12:36:55.681447+00:00",
-  "92c4766211c762d7": "2026-10-23T12:41:55.682510+00:00"
+  "92c4766211c762d7": "2026-10-23T12:41:55.682510+00:00",
+  "047a88ab5514dd49": "2026-10-23T12:46:55.743506+00:00"
  },
  "recent": [
-  {
-   "title": "Nasdaq futures dip as oil prices climb, earnings loom",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOT2JsXzZ4YTVKcDJjNE9iTW42aU0wY0VOZXRtdDYxTzJTanBUOGZIT1FLSl9FVTNxQ1RpTVFSWHlsejgyR0Y1b3JQWXRlT0dEMjJPWWpXYlpfdFJQaHZKZG5KdUNMdW53NmlMd2RwUWJKWFB3dE9Xc2ZBbnRfalF3cWNzblhxTGJOTGlKYUh1a0FmWC1vaGQydWZXdTMzemJjSVg5NWZ0bw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 8,
-   "ts": "2026-10-20T12:43:05.292513+00:00",
-   "title_ru": "Фьючерсы на Nasdaq падают на фоне роста цен на нефть и прогнозируемых прибылей",
-   "tags": [
-    "oil",
-    "markets"
-   ]
-  },
   {
    "title": "US Housing Starts Fall to Four-Month Low as Demand Falters",
    "link": "https://www.bloomberg.com/news/articles/2026-10-20/us-housing-starts-fall-to-four-month-low-as-demand-falters",
@@ -10309,6 +10295,23 @@
     "inflation",
     "Russia"
    ]
+  },
+  {
+   "title": "Глава ЦБ заявила об отсутствии рисков для финансовой стабильности России",
+   "link": "https://www.rbc.ru/economics/23/10/2026/6adb56cfbf6191353b9a599a",
+   "sources": [
+    "RBC"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T12:46:55.743506+00:00",
+   "title_en": "The head of the Central Bank stated that there were no risks to the financial stability of Russia",
+   "lead": "Набиуллина отметила, что несмотря на повышение прогноза по ключевой ставки, он предполагает снижение средней ключевой ставки в следующем году",
+   "lead_en": "Nabiullina noted that despite the increase in the forecast for the key rate, it assumes a decrease in the average key rate next year",
+   "tags": [
+    "BankOfRussia",
+    "rates",
+    "Russia"
+   ]
   }
  ],
  "last_digest": "2026-10-22",
@@ -16640,8 +16643,7 @@
    "0001891037-26-000011"
   ],
   "errors": {
-   "senate": "HTTPError: HTTP Error 403: Forbidden",
-   "sec": "TimeoutError: The read operation timed out"
+   "senate": "HTTPError: HTTP Error 403: Forbidden"
   }
  }
 }
