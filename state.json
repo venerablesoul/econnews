@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "b20a095ce78bf965": "2026-10-20T18:03:33.160641+00:00",
-  "21f314981c987167": "2026-10-20T18:03:33.160641+00:00",
-  "13bef4e11e302ce5": "2026-10-20T18:03:33.160641+00:00",
   "624389dfa8e47a05": "2026-10-20T18:08:33.128492+00:00",
   "af7766878e9bdf78": "2026-10-20T18:08:33.128492+00:00",
   "fe3c4bd5e6db63db": "2026-10-20T18:08:33.128492+00:00",
@@ -1010,37 +1007,12 @@
   "0a4b47dfabcf11bc": "2026-10-23T17:47:41.544108+00:00",
   "46fb6871f51657f6": "2026-10-23T17:52:41.437127+00:00",
   "805bd0d4c3de15fe": "2026-10-23T17:52:41.437127+00:00",
-  "bc69e814021ec031": "2026-10-23T17:57:41.448140+00:00"
+  "bc69e814021ec031": "2026-10-23T17:57:41.448140+00:00",
+  "4a22d93052796cb7": "2026-10-23T18:07:41.474844+00:00",
+  "693771ef8abcee98": "2026-10-23T18:07:41.474844+00:00",
+  "4972d5ce46bbd9ec": "2026-10-23T18:07:41.474844+00:00"
  },
  "recent": [
-  {
-   "title": "Housing is flashing warning signs just as the Fed weighs more interest rate hikes",
-   "link": "https://www.cnbc.com/2026/10/20/housing-mortgage-rates-real-estate-federal-reserve.html",
-   "sources": [
-    "CNBC"
-   ],
-   "score": 9,
-   "ts": "2026-10-20T18:03:33.160641+00:00",
-   "title_ru": "На рынке недвижимости появляются предупреждающие знаки, в то время как ФРС рассматривает возможность дальнейшего повышения процентных ставок",
-   "lead": "Housing data deteriorated further in September, according to separate reports Tuesday.",
-   "lead_ru": "Согласно отдельным отчетам во вторник, данные по жилищному рынку в сентябре еще больше ухудшились.",
-   "tags": [
-    "Fed",
-    "rates"
-   ]
-  },
-  {
-   "title": "UK government to make Jackdaw gas field announcement",
-   "link": "https://www.bbc.co.uk/news/articles/cvze4wx3elj1o?at_medium=RSS&at_campaign=rss",
-   "sources": [
-    "BBC"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T18:03:33.160641+00:00",
-   "title_ru": "Правительство Великобритании сделает заявление о месторождении газа Галка",
-   "lead": "The long-awaited decision about the controversial North Sea field is expected on Wednesday morning.",
-   "lead_ru": "Долгожданное решение по спорному месторождению в Северном море ожидается в среду утром."
-  },
   {
    "title": "Indonesia Rate Hike Bets Jump as MSCI Threat Hits Rupiah",
    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQaHpfSXRYTEF3U0tOTUlPel9DVnZUZTB2QjJzR3hmd001LXNCTGhCdWE5Y18xNW1MUTNtWGgybTE5cW5SLVRiRHIxN200UGxjRS10VXlKM2xNek1GSGVoYldxYnlkRmpQYmN1TDRuUldkUUx0V3JVUHFxbzV2ejYzeTdESW1FVU1CaGt6SC1BQnRMUWFLelh4dFJSZGJIbWhXaEk2UURQMFdHTHZ2M0hQSDNn?oc=5",
@@ -10292,6 +10264,30 @@
    "score": 3,
    "ts": "2026-10-23T17:52:41.437127+00:00",
    "title_ru": "Германия обеспечивает дополнительные зимние поставки газа, поскольку уровни хранения отстают"
+  },
+  {
+   "title": "China calls on oil, gas firms to boost output, build strategic supply bases",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOQ0RFYzFuVnNTcWFqV3k0V2R3NVJjN3VLcmwyMk9WZnlKWTNxTVdwTEdOMUlYZmFMNGUydHYyYUdKd1ZUSzU1b2dfdDZFN3BGLWVfbkJyNmlQLVh5RmE1MEY0SXlzdVB2d2UwcHhPSUpIZmVxMEhCVXRFSGZCZEtHVV84X3FhbDVodmV4SHJlS1Axa3VHd0NUZ0RqQXNLRlczMEQzNmE5VjdtMXFza2MyTThOSmw2bzFVMV9z?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-23T18:07:41.474844+00:00",
+   "title_ru": "Китай призывает нефтегазовые компании увеличить добычу и построить стратегические базы поставок",
+   "tags": [
+    "oil",
+    "China"
+   ]
+  },
+  {
+   "title": "AmEx lifts 2026 profit forecast, plans to cut 5% of workforce",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPeldMNkpFRVBpTW1jQjdoSVBaMFg3VzVvUkZ3X2hqNmp0VjZwamlOQkxGLTlOTFQxUFVOc01wU0NhRFJESDBYTTlTZXFNUFNpQ0NVd0lSQXJEcmpoVlVLNkZnMWRhSmRrak5uajBkbFpmOUV2bnQ2V1NEdWdEdmJORDFySVlodDYtTFdVbjR0S3IzVjQyVUN3Z0Y1NEh6U3otM2c0QmZ5RlNQYkt0c1JLVkpkVGVNZnR2RkpJZGpZZw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T18:07:41.474844+00:00",
+   "title_ru": "AmEx повышает прогноз прибыли на 2026 год и планирует сократить 5% персонала"
   }
  ],
  "last_digest": "2026-10-23",
