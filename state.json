@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "dbbec1043aaa3949": "2026-10-20T08:38:05.234571+00:00",
-  "de098af981109393": "2026-10-20T08:38:05.234571+00:00",
-  "26bb927e4cb7d331": "2026-10-20T08:38:05.234571+00:00",
   "f936345d5c0e5d16": "2026-10-20T08:48:05.226593+00:00",
   "33987c8e8c016c71": "2026-10-20T08:53:05.227138+00:00",
   "42e07232ee94d5b7": "2026-10-20T08:53:05.227138+00:00",
@@ -975,43 +972,10 @@
   "e144eacd15377e4d": "2026-10-23T08:21:24.933822+00:00",
   "10383391a6223846": "2026-10-23T08:26:24.902878+00:00",
   "5527c4a9b37ba1d0": "2026-10-23T08:36:24.934514+00:00",
-  "d726603bb280fda7": "2026-10-23T08:36:24.934514+00:00"
+  "d726603bb280fda7": "2026-10-23T08:36:24.934514+00:00",
+  "8eb62d0c6fb9702a": "2026-10-23T08:41:24.904418+00:00"
  },
  "recent": [
-  {
-   "title": "Hungary Plans to Bring Deficit to Below 3% by 2030, Magyar Says",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-20/hungary-plans-to-bring-deficit-to-below-3-by-2030-magyar-says",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T08:38:05.234571+00:00",
-   "title_ru": "Венгрия планирует довести дефицит до уровня ниже 3% к 2030 году, говорит Мадьяр",
-   "lead": "Hungary plans to bring its budget deficit to below 3% by 2030, Prime Minister Peter Magyar said as he stressed the importance of setting public finances on a sustainable path.",
-   "lead_ru": "Венгрия планирует довести дефицит своего бюджета до уровня ниже 3% к 2030 году, заявил премьер-министр Петер Мадьяр, подчеркнув важность перевода государственных финансов на устойчивый путь."
-  },
-  {
-   "title": "14 dead, 7 injured in Colombia illegal gold mine collapse",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNTHVXaHBWTFY2WGgyaWFyS3V0YmpRMGJnS3lQV0V2N2VJWVNTS1MzQXBwd2dHSnFsZENfNHBaN2V1ZEw2c0MwNjZfamhtVldFSl92OGNYS1pIT0VnV0g3akIybWlrenVlZ1dVUV8wUVFwR2F3bnZqb3VIWEh4aURGeXZaVWpkaHBDVjQyLUhDSzNIUWZRa1JBeTJvN1pzZDNPMnhWS2xDTQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T08:38:05.234571+00:00",
-   "title_ru": "14 погибших и 7 раненых в результате обрушения незаконного золотого рудника в Колумбии",
-   "tags": [
-    "gold"
-   ]
-  },
-  {
-   "title": "Surprise drop in UK unemployment to 4.7% as John Healey’s first budget looms",
-   "link": "https://www.theguardian.com/business/2026/oct/20/uk-unemployment-rate-surprise-drop",
-   "sources": [
-    "The Guardian"
-   ],
-   "score": 2,
-   "ts": "2026-10-20T08:38:05.234571+00:00"
-  },
   {
    "title": "UK Unemployment Drops Ahead of Healey's Budget (Video)",
    "link": "https://www.bloomberg.com/news/videos/2026-10-20/uk-unemployment-drops-ahead-of-healey-s-budget-video",
@@ -9959,6 +9923,21 @@
    "tags": [
     "rates"
    ]
+  },
+  {
+   "title": "UK Growth Hits Eight-Month High and Jobs Slump Ends, PMI Shows",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-23/uk-growth-hits-eight-month-high-and-jobs-slump-ends-pmi-shows",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-23T08:41:24.904418+00:00",
+   "title_ru": "Рост в Великобритании достиг восьмимесячного максимума, а падение рабочих мест закончилось, показывает PMI",
+   "lead": "Britain’s private sector grew at the fastest pace in eight months and a two-year jobs downturn ended, according to a closely watched survey that suggests the economy continued to defy the Iran war energy shock.",
+   "lead_ru": "Частный сектор Великобритании рос самыми быстрыми темпами за восемь месяцев, и двухлетний спад занятости закончился, согласно тщательно изученному опросу, который предполагает, что экономика продолжала игнорировать энергетический шок войны с Ираном.",
+   "tags": [
+    "jobs"
+   ]
   }
  ],
  "last_digest": "2026-10-22",
@@ -16257,8 +16236,8 @@
   },
   "checked": "2026-10-23T07:56:24.936051+00:00",
   "sec_seen": [
-   "0001607879-26-000008",
    "0001769628-26-000450",
+   "0001607879-26-000008",
    "0001193125-26-429202",
    "0001493152-26-048153",
    "0001944970-26-000029",
@@ -16268,9 +16247,9 @@
    "0001855880-26-000022",
    "0002157445-26-000002",
    "0000921895-26-002845",
+   "0002161365-26-000008",
    "0001635088-26-000116",
    "0001062993-26-005508",
-   "0002161365-26-000008",
    "0002032458-26-000030",
    "0000897069-26-001865",
    "0001628280-26-066948",
@@ -16280,7 +16259,6 @@
    "0001493152-26-048149",
    "0001891037-26-000011",
    "0001266824-26-000217",
-   "0001628280-26-066951",
    "0001213900-26-111771",
    "0000829224-26-000149",
    "0001193125-26-429162",
@@ -16294,11 +16272,12 @@
    "0001628280-26-066941",
    "0002066491-26-000013",
    "0000902664-26-004257",
+   "0001753539-26-000149",
    "0001891751-26-000010",
    "0001628280-26-066949",
    "0001193125-26-429245",
    "0001973495-26-000007",
-   "0001753539-26-000149",
+   "0001628280-26-066951",
    "0001349983-26-000013",
    "0001493152-26-048147"
   ],
