@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "91c985ed73208d3f": "2026-10-20T04:31:52.409837+00:00",
-  "5b86952384a554fa": "2026-10-20T04:31:52.409837+00:00",
-  "4b32bcfbcbc75545": "2026-10-20T04:31:52.409837+00:00",
   "4a3ad356b70c0fa4": "2026-10-20T04:36:52.898191+00:00",
   "ee380233c2f15c86": "2026-10-20T04:56:52.581163+00:00",
   "90d746069dec0552": "2026-10-20T05:01:52.770453+00:00",
@@ -953,52 +950,13 @@
   "6d58427e04155edc": "2026-10-23T04:25:51.528715+00:00",
   "6761f13ba18ba7eb": "2026-10-23T04:25:51.528715+00:00",
   "6634c7ad7d36e65c": "2026-10-23T04:30:51.553210+00:00",
-  "e83c7c0ccd7f9b3e": "2026-10-23T04:30:51.553210+00:00"
+  "e83c7c0ccd7f9b3e": "2026-10-23T04:30:51.553210+00:00",
+  "5c363d83bd369900": "2026-10-23T04:35:51.570726+00:00",
+  "ffc6a67c8d1be466": "2026-10-23T04:35:51.570726+00:00",
+  "844412fbe180c205": "2026-10-23T04:35:51.570726+00:00",
+  "9b2b0208b678bd6f": "2026-10-23T04:35:51.570726+00:00"
  },
  "recent": [
-  {
-   "title": "FirstFT: AI debt fears spark default insurance trading surge",
-   "link": "https://www.ft.com/content/92a2e2a4-356a-4aa3-9d1e-8b4fbaf1c365?syn-25a6b1a6=1",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 6,
-   "ts": "2026-10-20T04:31:52.409837+00:00",
-   "title_ru": "FirstFT: опасения по поводу долгов ИИ вызывают всплеск торговли страхованием от дефолта",
-   "lead": "Also in today’s newsletter: UK weighs EU options and luxury retailers looted",
-   "lead_ru": "Также в сегодняшнем информационном бюллетене: Великобритания взвешивает варианты ЕС, а магазины предметов роскоши разграблены"
-  },
-  {
-   "title": "Japan ‘months’ from running out of critical rare earth as China squeezes supply",
-   "link": "https://www.ft.com/content/ebd3244a-9120-4773-b55f-41df77f60c93?syn-25a6b1a6=1",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T04:31:52.409837+00:00",
-   "title_ru": "Японии осталось несколько месяцев до того, как исчерпаются критически важные редкоземельные элементы, поскольку Китай сокращает поставки",
-   "lead": "Tokyo asks US to help convince Beijing to ease chokehold on yttrium and avert manufacturing shutdown",
-   "lead_ru": "Токио просит США помочь убедить Пекин ослабить контроль над иттрием и предотвратить остановку производства",
-   "tags": [
-    "China"
-   ]
-  },
-  {
-   "title": "Can Africa outgrow China?",
-   "link": "https://www.ft.com/content/4702e72d-ba3c-43c4-92e7-1dffccddcd16?syn-25a6b1a6=1",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T04:31:52.409837+00:00",
-   "title_ru": "Сможет ли Африка перерасти Китай?",
-   "lead": "IMF says continent’s GDP to expand faster than China for first time in decades as it beats worst expectations following Iran war",
-   "lead_ru": "МВФ заявляет, что ВВП континента будет расти быстрее, чем Китай, впервые за десятилетия, поскольку он превзошел худшие ожидания после войны с Ираном",
-   "tags": [
-    "China",
-    "GDP"
-   ]
-  },
   {
    "title": "Polish Policymaker Flags Zloty Weakness Among Rate Hike Triggers",
    "link": "https://www.bloomberg.com/news/articles/2026-10-20/polish-policymaker-flags-zloty-weakness-among-rate-hike-triggers",
@@ -9717,6 +9675,51 @@
     "inflation",
     "Russia"
    ]
+  },
+  {
+   "title": "Milei’s economic reforms under pressure",
+   "link": "https://www.ft.com/content/bba22699-a32b-4c1e-bc19-8a53de122fc9?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 4,
+   "ts": "2026-10-23T04:35:51.570726+00:00",
+   "title_ru": "Экономические реформы Milei под давлением",
+   "lead": "Argentine president’s radical plan to transform the country is proving painful as the economy stagnates, weighed down by austerity and tight monetary policy",
+   "lead_ru": "Радикальный план президента Аргентины по преобразованию страны оказывается болезненным, поскольку экономика стагнирует, отягощенная мерами жесткой экономии и жесткой денежно-кредитной политикой",
+   "tags": [
+    "rates"
+   ]
+  },
+  {
+   "title": "Argentina in global trading sweet spot",
+   "link": "https://www.ft.com/content/f1e6e30a-7f2b-49c9-bc8d-ef3821c9695a?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T04:35:51.570726+00:00",
+   "title_ru": "Аргентина в сладком месте мировой торговли",
+   "lead": "Donald Trump’s tariffs have left the country relatively unscathed, although analysts fear tensions with Brazil are putting survival of trade group Mercosur at risk",
+   "lead_ru": "Тарифы Дональда Трампа оставили страну относительно невредимой, хотя аналитики опасаются, что напряженность в отношениях с Бразилией ставит под угрозу выживание торговой группы МЕРКОСУР",
+   "tags": [
+    "tariffs"
+   ]
+  },
+  {
+   "title": "Yen rallies as global tech rout sparks flight to safety",
+   "link": "https://www.ft.com/content/8948193b-438b-4d71-a0b1-31dff56fc308?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T04:35:51.570726+00:00",
+   "title_ru": "Ралли иены, поскольку глобальный технологический маршрут вызывает бегство в безопасное место",
+   "lead": "Asian stock markets follow Wall Street lower as Japanese currency gains against the dollar",
+   "lead_ru": "Азиатские фондовые рынки следуют за Уолл-стрит вниз, поскольку японская валюта растет по отношению к",
+   "tags": [
+    "dollar"
+   ]
   }
  ],
  "last_digest": "2026-10-22",
@@ -15999,15 +16002,46 @@
   },
   "checked": "2026-10-23T03:45:51.553301+00:00",
   "sec_seen": [
-   "0001193125-26-428698",
-   "0001493152-26-048062",
-   "0001488168-26-000010",
-   "0001866581-26-000159",
-   "0001866581-26-000158",
-   "0001866581-26-000160",
-   "0001193125-26-428693",
-   "0001193125-26-428702",
-   "0001193125-26-428690"
+   "0001062993-26-005508",
+   "0001930044-26-000010",
+   "0001213900-26-111813",
+   "0002157445-26-000002",
+   "0000897069-26-001865",
+   "0001607879-26-000008",
+   "0001973495-26-000007",
+   "0001855880-26-000022",
+   "0001944970-26-000029",
+   "0000829224-26-000149",
+   "0001769628-26-000450",
+   "0002083595-26-000010",
+   "0001455134-26-000023",
+   "0001891751-26-000010",
+   "0001769628-26-000451",
+   "0001628280-26-066948",
+   "0001493152-26-048153",
+   "0001628280-26-066949",
+   "0001213900-26-111795",
+   "0001493152-26-048147",
+   "0001493152-26-048157",
+   "0000921895-26-002845",
+   "0001891037-26-000011",
+   "0001628280-26-066941",
+   "0001596532-26-000248",
+   "0001635088-26-000116",
+   "0002161365-26-000008",
+   "0001437749-26-033305",
+   "0001242648-26-000047",
+   "0001187377-26-000004",
+   "0002066491-26-000013",
+   "0001834164-26-000005",
+   "0001193125-26-429245",
+   "0001193125-26-429202",
+   "0001628280-26-066951",
+   "0000902664-26-004257",
+   "0001140361-26-040540",
+   "0002032458-26-000030",
+   "0001213900-26-111771",
+   "0001493152-26-048149"
   ],
   "errors": {}
  }
