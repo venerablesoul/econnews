@@ -1,12 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "5ee46448c30c4918": "2026-10-20T14:08:33.223154+00:00",
-  "7a9a68f200a3aaed": "2026-10-20T14:08:33.223154+00:00",
-  "8dfbb5d651e1305c": "2026-10-20T14:08:33.223154+00:00",
-  "e940dfce0853ef97": "2026-10-20T14:13:33.348379+00:00",
-  "b0af68538ff0a513": "2026-10-20T14:13:33.348379+00:00",
-  "aafe2689fbb7b01f": "2026-10-20T14:13:33.348379+00:00",
   "00ef235ee9b845be": "2026-10-20T14:18:33.217229+00:00",
   "f48a34ca841feb4d": "2026-10-20T14:33:33.206272+00:00",
   "bf24b2064b79159d": "2026-10-20T14:43:33.228179+00:00",
@@ -1018,69 +1012,12 @@
   "3013dd8f2dafbf90": "2026-10-23T13:51:55.678301+00:00",
   "89386a8006b481bf": "2026-10-23T13:51:55.678301+00:00",
   "d157be01a9026e49": "2026-10-23T14:01:55.752346+00:00",
-  "61709f68fd91a5dd": "2026-10-23T14:06:55.769626+00:00"
+  "61709f68fd91a5dd": "2026-10-23T14:06:55.769626+00:00",
+  "6961318ec12ce745": "2026-10-23T14:11:55.666007+00:00",
+  "cae4132b0b921271": "2026-10-23T14:16:55.714462+00:00",
+  "48ca05cbe342530b": "2026-10-23T14:16:55.714462+00:00"
  },
  "recent": [
-  {
-   "title": "US Pending Home Sales Fall to Record Low as Mortgage Rates Rise",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-20/us-pending-home-sales-fall-to-record-low-as-mortgage-rates-rise",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T14:08:33.223154+00:00",
-   "title_ru": "Продажи жилья в США упали до рекордно низкого уровня в связи с ростом ставок по ипотечным кредитам",
-   "lead": "Pending sales of existing US homes fell to a record low in September as high mortgage rates continued to weigh on demand.",
-   "lead_ru": "Продажи существующих домов в США упали до рекордно низкого уровня в сентябре, поскольку высокие ставки по ипотечным кредитам продолжали оказывать давление на спрос."
-  },
-  {
-   "title": "CoreWeave’s Bond Rout Should Make the Fed Cautious",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQdjFnVTgwSHVqSHFzTS1uWmpTdDMxWGpBaDVneE5JVXJkOW1OUXU0aDdjLWJXRkNYbUFFTno5ZXZ2WktKUWZLaVVROTFwQ3Y2SzVkRWhsOEs0UDlGei0tclJjWWRvSU1vdlEzWEFjTnNMZTdhY2tfcUhuS2FET1VMSzE2Y0ZaelYzU09SS0tra1BERk1xMm50YXN3WkVNUXhBYW1hRDZVaw?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T14:08:33.223154+00:00",
-   "title_ru": "Маршрут выпуска облигаций CoreWeave должен сделать ФРС осторожной",
-   "tags": [
-    "Fed",
-    "bonds"
-   ]
-  },
-  {
-   "title": "Pending home sales sink to 25-year low as buyers flee high mortgage rates",
-   "link": "https://www.marketwatch.com/story/pending-home-sales-sink-to-25-year-low-as-buyers-flee-high-mortgage-rates-d02c6b30?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-20T14:08:33.223154+00:00"
-  },
-  {
-   "title": "Brazil central bank looks to encourage responsible lending in consumer debt crackdown, sources say",
-   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNbVNIX1FUZlA3bUZzWWJoT3VRSXRxTUtQZnE3akZ1T05ZRGVQdXBPY0RYVGhjWXRMUWctcGx3akhycVJQT1VPSXRXalRsUi1ET0J4SDdsLWZMNmNRZU9KSmQ0cU5NOGNFcDRkb0JQTDZDNWJwOFNTM0J5Z2FkOU0zTWExcUNObEctaWsyRDFfaUJ0UDlpcnQ2MHlQc3ExVVFjejRzdEZQNjVxWGx4Y0JNVUZuOS1PU1IydmVKcDN1RGFvNHFSc3VHUkRn?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-20T14:13:33.348379+00:00",
-   "title_ru": "Центральный банк Бразилии стремится поощрять ответственное кредитование для борьбы с потребительской задолженностью, сообщают источники"
-  },
-  {
-   "title": "Bessent Sees No Spillover From France Bond Market’s Turmoil",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-20/bessent-sees-no-spillover-from-france-bond-market-s-turmoil",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T14:13:33.348379+00:00",
-   "title_ru": "Бессент не видит последствий потрясений на рынке облигаций Франции",
-   "lead": "US Treasury Secretary Scott Bessent said he doesn’t anticipate a spillover from the French bond market, which has seen surging yields that have in turn driven a broader conversation about the European nation’s finances.",
-   "lead_ru": "Министр финансов США Скотт Бессент заявил, что не ожидает побочных эффектов со стороны французского рынка облигаций, на котором наблюдался рост доходности, что, в свою очередь, вызвало более широкий разговор о финансах европейской страны.",
-   "tags": [
-    "bonds"
-   ]
-  },
   {
    "title": "Top-Rated Junk Debt Becomes Sweet Spot as Investors Flee Risk",
    "link": "https://www.bloomberg.com/news/articles/2026-10-20/top-rated-junk-debt-becomes-sweet-spot-as-investors-flee-risk",
@@ -10461,6 +10398,16 @@
     "rates",
     "inflation"
    ]
+  },
+  {
+   "title": "Infosys cuts forecast as AI spending shift deepens North America slowdown",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQNWdWWnJFN3I3MnZQQzBBRUFVMnBTbkduVklRcFVPbWZVTGFxM2NRbkRtRHlXa2JBdlpnQWMxSkh1WU91clBJQnpqYXItXzAtcTJ5NlFETjRETndtM2VyRGxkaElVREFxRjRfeUdkMzlxR3hYdlZSX1R1LXNRX3dxTUlyYzJNYUp1NGpfOU5mNUQ0YWZ3bE1TOVAxaUk?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T14:16:55.714462+00:00",
+   "title_ru": "Infosys сокращает прогноз, поскольку изменения в расходах на ИИ усугубляют замедление в Северной Америке"
   }
  ],
  "last_digest": "2026-10-22",
@@ -16759,17 +16706,11 @@
   },
   "checked": "2026-10-23T14:06:55.769626+00:00",
   "sec_seen": [
-   "0001193125-26-429389",
-   "0001193125-26-429392",
    "0001493152-26-048181",
-   "0001493152-26-048157",
    "0001510281-26-000375",
-   "0001104659-26-118281",
-   "0001193125-26-429381",
    "0001628280-26-066981",
    "0000764065-26-000117",
-   "0000711377-26-000034",
-   "0001769628-26-000451",
+   "0001493152-26-048187",
    "0001193125-26-429600"
   ],
   "errors": {
