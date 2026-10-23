@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "fa12a3b95cb8af6f": "2026-10-20T04:11:52.581438+00:00",
-  "8aa95e5b1610ad69": "2026-10-20T04:16:52.449794+00:00",
   "91c985ed73208d3f": "2026-10-20T04:31:52.409837+00:00",
   "5b86952384a554fa": "2026-10-20T04:31:52.409837+00:00",
   "4b32bcfbcbc75545": "2026-10-20T04:31:52.409837+00:00",
@@ -949,22 +947,10 @@
   "9c40a31e12933cd1": "2026-10-23T04:00:51.583392+00:00",
   "78fd077fd00fe3fc": "2026-10-23T04:00:51.583392+00:00",
   "eea4f31f94f24465": "2026-10-23T04:00:51.583392+00:00",
-  "dcb28ff19c24f1c4": "2026-10-23T04:00:51.583392+00:00"
+  "dcb28ff19c24f1c4": "2026-10-23T04:00:51.583392+00:00",
+  "332fc4c0875deda0": "2026-10-23T04:20:51.565157+00:00"
  },
  "recent": [
-  {
-   "title": "Chinese official says economy resilient but recovery momentum remains weak",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOTlF5X0F6MVFKS0tNYzhDMXA3QTJSNGozakNGNDhPX29qeVpYU0lNYlVzYTl3dWlsTDJvV0tDVVZPZHNFQ1FVMVdSaVZvc3h6T1ZCbnlZRjhQVG5uOEJQNnNSVVVPRkpudFk3R3NvbnRpeF9fclZHMDZldXNvTEl4T2dxNTR0Q2tuS3BteXRDRE1aNkpFeUVVeFhhaXNFVjduNndGcDdSdTFJaVhJRGVPbHBXUmlLZTltamY1amNOalNZc1k?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T04:11:52.581438+00:00",
-   "title_ru": "Китайский чиновник заявил, что экономика устойчива, но темпы восстановления остаются слабыми",
-   "tags": [
-    "China"
-   ]
-  },
   {
    "title": "FirstFT: AI debt fears spark default insurance trading surge",
    "link": "https://www.ft.com/content/92a2e2a4-356a-4aa3-9d1e-8b4fbaf1c365?syn-25a6b1a6=1",
@@ -9665,6 +9651,19 @@
    ],
    "score": 1,
    "ts": "2026-10-23T04:00:51.583392+00:00"
+  },
+  {
+   "title": "Newmont beats quarterly profit estimates on higher gold prices, Cadia recovery",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNajFlVFVVNzNoeTg5cTNJM2ZuNjZoU3RBUVUwdnZOUXljd2tpM2dHbDhjbUU4V0JCZkZMWmlrNWlTeHJLM2g0aE01MGE1VkZndzdPb2J0R2Q3bjJtWkJvMG5DeWdLUmJwamw3ckpNeG9jb3RYSFFiLW5PanFLdlRUUXNvN3ptWDBjZ01aR1JMaFRwXzd5RE1jWnNqMDhTWU1SZmp5ekxrWQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T04:20:51.565157+00:00",
+   "title_ru": "Newmont превзошел прогнозы квартальной прибыли на фоне более высоких цен на золото, восстановление Cadia",
+   "tags": [
+    "gold"
+   ]
   }
  ],
  "last_digest": "2026-10-22",
