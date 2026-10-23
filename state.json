@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e6a2b9523e37a4a5": "2026-10-20T13:43:33.148635+00:00",
-  "b47da59dd4b2bda1": "2026-10-20T13:43:33.148635+00:00",
-  "f339285d77cd5d6a": "2026-10-20T13:48:33.092465+00:00",
   "5a9f3d538f01c590": "2026-10-20T14:03:33.246911+00:00",
   "b45ec6a63e022a15": "2026-10-20T14:03:33.246911+00:00",
   "5ee46448c30c4918": "2026-10-20T14:08:33.223154+00:00",
@@ -1018,37 +1015,12 @@
   "67f011abba325c2e": "2026-10-23T13:36:55.694608+00:00",
   "de5c9900b5a76573": "2026-10-23T13:36:55.694608+00:00",
   "f5dfae6fb78deea4": "2026-10-23T13:41:55.696714+00:00",
-  "4b880f3fe3ebc3f1": "2026-10-23T13:41:55.696714+00:00"
+  "4b880f3fe3ebc3f1": "2026-10-23T13:41:55.696714+00:00",
+  "4eea1de76c174cd7": "2026-10-23T13:51:55.678301+00:00",
+  "3013dd8f2dafbf90": "2026-10-23T13:51:55.678301+00:00",
+  "89386a8006b481bf": "2026-10-23T13:51:55.678301+00:00"
  },
  "recent": [
-  {
-   "title": "Market Talk: US gas prices 'still elevated' despite Trump moves",
-   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9uMkFJTERJTTVidUo3WC1FY0RLdWFmV2lrYTFTRkllVTRpeFJXRXJoRjVJa2VXdFh6Smk2YXhFMXlmVXp3UjFmRkdVLXJqalJhSXVkSldtZnF4VUg1a0tRRzlHb2FzZUgwUWxjdXA0QVVLby1xX0VfTw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-20T13:43:33.148635+00:00",
-   "title_ru": "Обсуждение рынка: цены на газ в США «все еще растут», несмотря на действия Трампа",
-   "tags": [
-    "gas"
-   ]
-  },
-  {
-   "title": "Stocks Slip as AI Infrastructure IPO Flops, SpaceX Results Loom",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-20/us-futures-slip-as-neocloud-ipo-elice-flops-spacex-results-loom",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T13:48:33.092465+00:00",
-   "title_ru": "Акции падают из-за провала IPO инфраструктуры искусственного интеллекта и ожидаемых результатов SpaceX",
-   "lead": "The tech-heavy Nasdaq 100 Index opened lower on Tuesday, as South Korean neocloud company Elice Inc.’s debut tanked, spurring concern about the sustainability of the global AI boom.",
-   "lead_ru": "Технологичный индекс Nasdaq 100 открылся снижением во вторник, поскольку дебют южнокорейской неооблачной компании Elice Inc. провалился, что вызвало обеспокоенность по поводу устойчивости глобального бума искусственного интеллекта.",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "FTSE 100 slips as banks weigh; defensive stocks limit decline",
    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPeUJnNTg4TVpXUEhLRF9SWXZHRlVMY181Nks1THF3VW1RdHRMSjJFR3J1VmJ5YWRaQ0lGRXFyemU5WkxZZzdlVWdwRFJuYXJSTk1PTkxDeldhYWs3VlBFaElmeGtMWm4xOFhkZ2VtMEJ3aVRlcmo0VlNaYUY1UklfcXR1ZWNwV2JvOWFrbmlPXzdRRTZsaFVjcGs3TnctMWtkWGIxZFowSUhKSGJFalNn?oc=5",
@@ -10470,6 +10442,35 @@
    "tags": [
     "Fed"
    ]
+  },
+  {
+   "title": "Набиуллина выступила против увеличения объемов льготной ипотеки",
+   "link": "https://www.kommersant.ru/doc/9059141",
+   "sources": [
+    "Kommersant"
+   ],
+   "score": 6,
+   "ts": "2026-10-23T13:51:55.678301+00:00",
+   "title_en": "Nabiullina opposed an increase in the volume of preferential mortgages",
+   "lead": "Льготная ипотека в России должна быть ограничена, заявила глава Банка России Эльвира Набиуллина. По ее словам, объемы таких льготных программ кредитования не должны расти.",
+   "lead_en": "Preferential mortgages in Russia should be limited, said the head of the Bank of Russia Elvira Nabiullina. According to her, the volume of such preferential lending programs should not grow.",
+   "tags": [
+    "BankOfRussia",
+    "Russia"
+   ]
+  },
+  {
+   "title": "Brazil mid-month inflation undershoots forecasts ahead of presidential runoff",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNNm41N1RtbkRMQktyOXpBZl9ZeE10bVZMLVRqMU91OW03SXNuTUdzeEwzUDlBTjZydzdqcWR3MHVWUXhYb2ZHWndDV2tmWjkzc2pQMzRrRm8wSEFGczlKVFNLUWNHSElBMnp6VjBpVVFTM1RqWkt2NjhyemY2M296czZld0w1clhFcFJCVFdvMEljc1ZTRFB5TnJn?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-23T13:51:55.678301+00:00",
+   "title_ru": "Инфляция в Бразилии в середине месяца снижает прогнозы в преддверии второго тура президентских выборов",
+   "tags": [
+    "inflation"
+   ]
   }
  ],
  "last_digest": "2026-10-22",
@@ -16779,8 +16780,9 @@
    "0001104659-26-118281",
    "0001628280-26-066981",
    "0000711377-26-000034",
-   "0001493152-26-048153",
+   "0001193125-26-429600",
    "0001493152-26-048181",
+   "0001510281-26-000375",
    "0001193125-26-429392",
    "0001213900-26-111813",
    "0001493152-26-048157",
