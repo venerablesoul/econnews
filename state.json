@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "9f6e64dca3e7952f": "2026-10-20T07:56:52.394641+00:00",
-  "1d1af6d4cd1a0498": "2026-10-20T07:56:52.394641+00:00",
-  "b581ac935066e958": "2026-10-20T07:56:52.394641+00:00",
   "37af461472cc6615": "2026-10-20T08:01:52.368831+00:00",
   "0816c0af4e847327": "2026-10-20T08:01:52.368831+00:00",
   "53593c20540b1e20": "2026-10-20T08:13:05.257989+00:00",
@@ -971,19 +968,12 @@
   "b52d2115f6fbfd91": "2026-10-23T07:41:24.940960+00:00",
   "a60592e69461acda": "2026-10-23T07:41:24.940960+00:00",
   "0491fbc849dd6314": "2026-10-23T07:46:24.890241+00:00",
-  "3789a5a865c51025": "2026-10-23T07:46:24.890241+00:00"
+  "3789a5a865c51025": "2026-10-23T07:46:24.890241+00:00",
+  "d4b6e4102b856bdb": "2026-10-23T08:01:25.016113+00:00",
+  "5c97d3da80e0a3ec": "2026-10-23T08:01:25.016113+00:00",
+  "6ed00aa519d924dc": "2026-10-23T08:01:25.016113+00:00"
  },
  "recent": [
-  {
-   "title": "Morocco's new government targets 5% growth in 2027-2031",
-   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNSkJCTGczTjZtRXN1ZmJZZEhEdDRNYTNoOEk0VWtIaWtfSC1VUmpJX21GLUFzdWhnOHVxR0RZbTdjcVFsTHJNQVF3NlZBQzJsSGtHOEI2dlh0dV9jVFNla2JqZFJ5QmV1ZlhRUG9uQ0JVd21DazhqNkY1d2F1SVp5ZHMybWxYV2JXamhPbEw5YmdUU1dGLTZPdDVEQVJDcGJT?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T07:56:52.394641+00:00",
-   "title_ru": "Новое правительство Марокко планирует рост экономики на 5% в 2027-2031 годах."
-  },
   {
    "title": "UK jobs market shows some recovery signs as BoE mulls rate hike",
    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNUmZlU01BMnM1M2hmTVcybjZ5RkZFdWRLcnU1cllLaTN4Z0hwRHZnVTdJeEFRQ1hOSFZJb2N0VGpCY0tKVHNlVUZXSERMS2hCcnVuRFhKU1o4SDZsYVpGUFJtQlFLYktRUzFocFBUQVFEVFFSd0JiR2pyZFZvNXU1TTN6RGNfa3RMNEljRlNxVFV6alZOb2lPTUI2UkZYV2pPNmc?oc=5",
@@ -9919,6 +9909,31 @@
    "score": 4,
    "ts": "2026-10-23T07:46:24.890241+00:00",
    "title_ru": "Рост деловой активности в Германии в октябре замедлился, показывает PMI"
+  },
+  {
+   "title": "China Barely Eased Austerity Just Before Shift to Stimulus Mode",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-23/china-barely-eased-austerity-just-before-shift-to-stimulus-mode",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-23T08:01:25.016113+00:00",
+   "title_ru": "Китай едва ослабил режим жесткой экономии перед переходом в режим стимулирования",
+   "lead": "China trimmed its government spending for the seventh straight month, before policymakers delivered a modest package of additional stimulus to ensure the economy hits Beijing’s annual growth target.",
+   "lead_ru": "Китай сократил свои государственные расходы седьмой месяц подряд, прежде чем политики предоставили скромный пакет дополнительных стимулов для обеспечения того, чтобы экономика достигла годового целевого показателя роста Пекина.",
+   "tags": [
+    "China"
+   ]
+  },
+  {
+   "title": "UK Seen More Reliant on Gas Imports This Winter as Prices Surge",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOcEJRRzRjSGh6ZFIzOUtVWTA4WDlYTWFsQm1rcGViOERmaURWT19aZWFHdTJpX1lJaUxTU3lyLTBFal9SVnpULUZSaGFxRkpRNG9oQWxmQmxVaWJnNkpmR0h6bndMdk9jWkRwTmlKYl9iZTJ6ZXo5QnNpUXU1NGhRa1R5V292WDBnbDk2dnFQMjJWdm9kT24zVXRUa1IwQWNJajk2T2M4Wl9pTWpGT0FJTWtMcEU?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-23T08:01:25.016113+00:00",
+   "title_ru": "Великобритания стала более зависимой от импорта газа этой зимой, поскольку цены выросли"
   }
  ],
  "last_digest": "2026-10-22",
@@ -16217,8 +16232,8 @@
   },
   "checked": "2026-10-23T07:56:24.936051+00:00",
   "sec_seen": [
-   "0001607879-26-000008",
    "0001769628-26-000450",
+   "0001607879-26-000008",
    "0001193125-26-429202",
    "0001493152-26-048153",
    "0001944970-26-000029",
@@ -16228,8 +16243,8 @@
    "0001855880-26-000022",
    "0002157445-26-000002",
    "0000921895-26-002845",
-   "0002161365-26-000008",
    "0001635088-26-000116",
+   "0002161365-26-000008",
    "0001062993-26-005508",
    "0002032458-26-000030",
    "0000897069-26-001865",
@@ -16240,7 +16255,6 @@
    "0001493152-26-048149",
    "0001891037-26-000011",
    "0001266824-26-000217",
-   "0001628280-26-066951",
    "0001213900-26-111771",
    "0000829224-26-000149",
    "0001193125-26-429162",
@@ -16254,11 +16268,12 @@
    "0001628280-26-066941",
    "0002066491-26-000013",
    "0000902664-26-004257",
+   "0001753539-26-000149",
    "0001891751-26-000010",
    "0001628280-26-066949",
    "0001193125-26-429245",
    "0001973495-26-000007",
-   "0001753539-26-000149",
+   "0001628280-26-066951",
    "0001349983-26-000013",
    "0001493152-26-048147"
   ],
