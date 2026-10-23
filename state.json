@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "24bc4feb6f5d08de": "2026-10-20T01:21:05.134175+00:00",
   "84faf59263be959a": "2026-10-20T01:26:05.139506+00:00",
   "a0a62a01597741c6": "2026-10-20T01:31:05.189404+00:00",
   "b4ec47a37e263b54": "2026-10-20T01:41:05.171600+00:00",
@@ -952,22 +951,10 @@
   "51c9d83991292a65": "2026-10-23T01:00:20.404311+00:00",
   "dff01a5e23becbfe": "2026-10-23T01:10:20.329652+00:00",
   "1e86324bd4fc5fb8": "2026-10-23T01:10:20.329652+00:00",
-  "4869b3a84fe09fc7": "2026-10-23T01:20:51.559140+00:00"
+  "4869b3a84fe09fc7": "2026-10-23T01:20:51.559140+00:00",
+  "5a628e55a15faea4": "2026-10-23T01:25:51.664564+00:00"
  },
  "recent": [
-  {
-   "title": "Dollar and euro drift, yen slips as markets seek direction",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOazFGS3ZwNDhmME9ZUDdoZVQzMkV3UEJQUEJsTE1LdnFTcjNXRzI2emE2Z3VvZE1YNGRpam95VTF3UGgyTVFjRExnWkJ1TGxpenBQUHFhbmU1MUpEYVhDcURRS05xQ1BycHRUT3F3bExRQjZfaUFVeGlKcHpmaGFEMkVwQ0RxSk5iLU4zaDVaVDJzQzEyQ0R4OVFZeHZuVXJKZ3pESWtudFQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-20T01:21:05.134175+00:00",
-   "title_ru": "Доллар и евро дрейфуют, иена падает, поскольку рынки ищут направление",
-   "tags": [
-    "dollar"
-   ]
-  },
   {
    "title": "Oil stocks in US strategic petroleum reserve fall to lowest level since 1982",
    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOTS1qZEVDSUY0Z2dXY0l6TzZCaGpGRnJOMF9Wb0Q1Q0pCVTI5YjN2Q2VyVXJKVnlQa1RuOEdYWWdZc3dQYjRxTVQ5RUVpZzUtc2hJMU50NlA2aUFhcHZCd3o1TFZ4c0hmdnZPckxSTHduS0JNN05CRWdKVUJBSzdkYm10U2pCSFIyLTlvT2NrRWVVOVhYSnpGSEdjSVJTZnJXbGhaXy1GUDBjVGttZl9BUkpzd0tYNDBGUUh4cUt4cw?oc=5",
@@ -9727,6 +9714,22 @@
     "rates",
     "inflation"
    ]
+  },
+  {
+   "title": "Yen Hits One-Month High as US Tech Rout Revives Haven Appeal",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-23/yen-hits-one-month-high-as-us-tech-rout-revives-haven-appeal",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-23T01:25:51.664564+00:00",
+   "title_ru": "Иена достигла месячного максимума, поскольку US Tech Rout возрождает привлекательность Haven",
+   "lead": "The yen extended its rally to the strongest level in more than a month, as a deepening selloff in technology stocks drove investors to traditional haven assets including Japan’s currency, the nation’s government bonds and US…",
+   "lead_ru": "Иена продлила свое ралли до самого сильного уровня более чем за месяц, поскольку углубляющаяся распродажа акций технологических компаний подтолкнула инвесторов к традиционным активам-убежищам, включая японскую валюту, государственные облигации страны и американские...",
+   "tags": [
+    "bonds",
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-22",
@@ -16012,8 +16015,10 @@
    "0001993147-26-000004",
    "0001062993-26-005508",
    "0001930044-26-000010",
+   "0001213900-26-111813",
    "0000897069-26-001865",
    "0001349983-26-000013",
+   "0002032458-26-000030",
    "0001193125-26-429152",
    "0001607879-26-000008",
    "0001855880-26-000022",
@@ -16021,7 +16026,6 @@
    "0000829224-26-000149",
    "0002083595-26-000010",
    "0001266824-26-000217",
-   "0001455134-26-000023",
    "0001193125-26-429162",
    "0001891751-26-000010",
    "0001628280-26-066948",
@@ -16047,7 +16051,7 @@
    "0001628280-26-066951",
    "0002066491-26-000013",
    "0001140361-26-040540",
-   "0002032458-26-000030",
+   "0001455134-26-000023",
    "0001213900-26-111771",
    "0001493152-26-048149",
    "0001437749-26-033305"
