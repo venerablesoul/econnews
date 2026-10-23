@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "8d5ed32110866ff9": "2026-10-20T16:03:33.131162+00:00",
-  "3b6bdc5f5df22bf9": "2026-10-20T16:03:33.131162+00:00",
   "f1d469cc645dfa05": "2026-10-20T16:08:33.172614+00:00",
   "7a3312480ce954c7": "2026-10-20T16:08:33.172614+00:00",
   "70f26d30f053594c": "2026-10-20T16:08:33.172614+00:00",
@@ -1021,32 +1019,6 @@
   "4baf01a83c1b7e8f": "2026-10-23T16:01:55.693225+00:00"
  },
  "recent": [
-  {
-   "title": "JPMorgan Asset Sees Bitcoin Beating Stocks, But With a Catch",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-20/jpmorgan-asset-sees-bitcoin-beating-stocks-but-with-a-catch",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-20T16:03:33.131162+00:00",
-   "title_ru": "JPMorgan Asset видит, что биткойн превосходит акции, но с подвохом",
-   "lead": "JPMorgan Asset Management has included Bitcoin in its long-term capital market assumptions for the first time, forecasting returns that could beat stocks, bonds and gold in a milestone for its Wall Street acceptance.",
-   "lead_ru": "JPMorgan Asset Management впервые включил Биткойн в свои долгосрочные предположения на рынке капитала, прогнозируя доходность, которая может превзойти акции, облигации и золото, что станет важной вехой для его принятия на Уолл-стрит.",
-   "tags": [
-    "gold",
-    "bonds",
-    "markets"
-   ]
-  },
-  {
-   "title": "Looking for AI stocks that are still cheap? Consider these two under-the-radar picks.",
-   "link": "https://www.marketwatch.com/story/looking-for-ai-stocks-that-are-still-cheap-consider-these-two-under-the-radar-picks-b4ca2b28?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-20T16:03:33.131162+00:00"
-  },
   {
    "title": "US Economy's Resilience is 'Coming at a Cost,' Says Frances Donald",
    "link": "https://www.bloomberg.com/news/videos/2026-10-20/us-economy-resilience-is-coming-at-a-cost-says-donald-video",
@@ -12728,6 +12700,22 @@
    },
    {
     "src": "sec",
+    "id": "74f2669b20f2e012",
+    "ticker": "CRAFX",
+    "company": "Cascade Real Assets Fund",
+    "who": "Matthew Eugene Worley",
+    "role": "Director",
+    "type": "buy",
+    "value": 431249,
+    "shares": 41910,
+    "price": 10.29,
+    "plan": false,
+    "date": "2026-10-21",
+    "disclosed": "2026-10-23",
+    "link": "https://www.sec.gov/Archives/edgar/data/2114459/000121390026111971/0001213900-26-111971-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "51e23b8d7310b2c2",
     "ticker": "LOAN",
     "company": "MANHATTAN BRIDGE CAPITAL, INC",
@@ -16645,22 +16633,6 @@
     "date": "2026-10-14",
     "disclosed": "2026-10-15",
     "link": "https://www.sec.gov/Archives/edgar/data/1796226/000179622626000002/0001796226-26-000002-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "47a9cdebaeeb0662",
-    "ticker": "AII",
-    "company": "American Integrity Insurance Group, Inc.",
-    "who": "Robert C Ritchie",
-    "role": "CEO",
-    "type": "sell",
-    "value": 719852,
-    "shares": 26436,
-    "price": 27.23,
-    "plan": true,
-    "date": "2026-10-14",
-    "disclosed": "2026-10-15",
-    "link": "https://www.sec.gov/Archives/edgar/data/2063843/000119312526422892/0001193125-26-422892-index.htm"
    }
   ],
   "docs": {
@@ -16699,7 +16671,8 @@
   "sec_seen": [
    "0001096906-26-001611",
    "0001193125-26-429845",
-   "0001096906-26-001612"
+   "0001096906-26-001612",
+   "0001213900-26-111971"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
