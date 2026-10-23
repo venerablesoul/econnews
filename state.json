@@ -1017,7 +1017,8 @@
   "22cc8bfcf637d04c": "2026-10-23T14:26:55.700630+00:00",
   "12566dde4f8009e8": "2026-10-23T14:31:55.753900+00:00",
   "1b295f2d0bfb383c": "2026-10-23T14:36:55.863319+00:00",
-  "35c769892033e428": "2026-10-23T14:36:55.863319+00:00"
+  "35c769892033e428": "2026-10-23T14:36:55.863319+00:00",
+  "174ce83c411c3e60": "2026-10-23T14:41:55.694662+00:00"
  },
  "recent": [
   {
@@ -10424,6 +10425,16 @@
    "score": 3,
    "ts": "2026-10-23T14:36:55.863319+00:00",
    "title_ru": "Италия может повысить налог на энергетические компании для финансирования бюджета, говорят источники"
+  },
+  {
+   "title": "EXCLUSIVE: Algerian urea exports to France under threat as diplomatic tensions persist, sources say",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNMXY2aExCaWttQ0loM1VFWUd5QVlVYzUzMjdsSXUwZXJUZFllVmQtYmVlaE5qWVNwb0RlRERNTllxWkQxZ1h1bHdsY2ZpSFczMGJBZTd1Sl96enlpWW1MOHdRSkdwOXhXYXM1RkZTb2oydHpaN3dCemp1N1lHWGNxVlpBLVQ5aDU3TWJVdUFTOVNSc0lYR2p1Ynh0RHllZUQ5alczYzJrR051dkJhT0tjQUxONWh2enBJbEplM3pqbG9OZmt6?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T14:41:55.694662+00:00",
+   "title_ru": "Эксклюзив: Алжирский экспорт карбамида во Францию под угрозой, поскольку дипломатическая напряженность сохраняется, говорят источники"
   }
  ],
  "last_digest": "2026-10-22",
@@ -16722,10 +16733,10 @@
   },
   "checked": "2026-10-23T14:06:55.769626+00:00",
   "sec_seen": [
+   "0000764065-26-000117",
    "0001493152-26-048187",
-   "0001510281-26-000375",
    "0001193125-26-429600",
-   "0000764065-26-000117"
+   "0001510281-26-000375"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
