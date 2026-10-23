@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "8ae525def2016ae2": "2026-10-20T01:01:05.159041+00:00",
   "24bc4feb6f5d08de": "2026-10-20T01:21:05.134175+00:00",
   "84faf59263be959a": "2026-10-20T01:26:05.139506+00:00",
   "a0a62a01597741c6": "2026-10-20T01:31:05.189404+00:00",
@@ -950,25 +949,11 @@
   "1ccd8342cef80187": "2026-10-23T00:50:20.280013+00:00",
   "ea4dbdeadaf28757": "2026-10-23T00:50:20.280013+00:00",
   "86fd1bcdb5c83d7b": "2026-10-23T00:55:20.376494+00:00",
-  "51c9d83991292a65": "2026-10-23T01:00:20.404311+00:00"
+  "51c9d83991292a65": "2026-10-23T01:00:20.404311+00:00",
+  "dff01a5e23becbfe": "2026-10-23T01:10:20.329652+00:00",
+  "1e86324bd4fc5fb8": "2026-10-23T01:10:20.329652+00:00"
  },
  "recent": [
-  {
-   "title": "Treasuries Losing Luster as Hedge Tool, Citi Australia CEO Says",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-20/treasuries-losing-luster-as-hedge-tool-citi-australia-ceo-says",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-20T01:01:05.159041+00:00",
-   "title_ru": "Казначейские облигации теряют блеск как инструмент хеджирования, говорит генеральный директор Citi Australia",
-   "lead": "Treasuries are losing their luster as a portfolio hedge as increasing supply, persistent inflation and rising neutral rates weaken their appeal, according to Citigroup Inc.’s top Australia banker.",
-   "lead_ru": "По мнению ведущего австралийского банкира Citigroup Inc., казначейские облигации теряют свою привлекательность в качестве инструмента хеджирования портфеля, поскольку увеличение предложения, постоянная инфляция и рост нейтральных ставок ослабляют их привлекательность.",
-   "tags": [
-    "inflation",
-    "bonds"
-   ]
-  },
   {
    "title": "Dollar and euro drift, yen slips as markets seek direction",
    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOazFGS3ZwNDhmME9ZUDdoZVQzMkV3UEJQUEJsTE1LdnFTcjNXRzI2emE2Z3VvZE1YNGRpam95VTF3UGgyTVFjRExnWkJ1TGxpenBQUHFhbmU1MUpEYVhDcURRS05xQ1BycHRUT3F3bExRQjZfaUFVeGlKcHpmaGFEMkVwQ0RxSk5iLU4zaDVaVDJzQzEyQ0R4OVFZeHZuVXJKZ3pESWtudFQ?oc=5",
@@ -9727,6 +9712,20 @@
     "bonds",
     "markets"
    ]
+  },
+  {
+   "title": "Japan core inflation exceeds BOJ target, cements near-term rate hike chance",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQOTJqdzA2UHpkbmExTlVYbWgxX2VuMGQ3ck9XcUpfUEgxQURja19JdmlfLURneW9HUWpZbzNPMFJ3bS15Zk5DYlNTWU1teWprbW1hOHlJNXdDNWxYbExYRUU0bTIyVzFPLVlRZjY2cFk0THZTb094X2FrM3lPZ005THBHczdTdEl4WEhIUXVCdnA2TE9qTEtFWHh4aHloeWZFU0RuQmhlR0VRSDRCTURWZDB2eTNnWDloNWJIWktsNG5Pak5NSEdtSQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 9,
+   "ts": "2026-10-23T01:10:20.329652+00:00",
+   "title_ru": "Базовая инфляция в Японии превышает целевой показатель Банка Японии, что укрепляет шансы на повышение ставок в краткосрочной перспективе",
+   "tags": [
+    "rates",
+    "inflation"
+   ]
   }
  ],
  "last_digest": "2026-10-22",
@@ -16010,24 +16009,25 @@
   "checked": "2026-10-23T00:40:20.287571+00:00",
   "sec_seen": [
    "0001213900-26-111795",
+   "0001493152-26-048153",
    "0001873304-26-000003",
-   "0001855880-26-000022",
    "0001193125-26-429245",
+   "0001855880-26-000022",
    "0001493152-26-048144",
    "0001891037-26-000011",
    "0000921895-26-002845",
    "0001349983-26-000013",
    "0001140361-26-040540",
+   "0001891751-26-000010",
    "0001437749-26-033305",
    "0001944970-26-000029",
-   "0001891751-26-000010",
    "0001607879-26-000008",
    "0001193125-26-429162",
    "0001193125-26-429202",
    "0002161365-26-000008",
    "0001400954-26-000013",
-   "0001930044-26-000010",
    "0001753539-26-000149",
+   "0001930044-26-000010",
    "0001950180-26-000010",
    "0002083595-26-000010",
    "0001993147-26-000004",
@@ -16042,7 +16042,6 @@
    "0000902664-26-004257",
    "0001493152-26-048149",
    "0001628280-26-066951",
-   "0001212813-26-000005",
    "0001628280-26-066941",
    "0002066491-26-000013",
    "0001455134-26-000023",
