@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "ba67ec8b92c0af0b": "2026-10-20T10:03:05.262780+00:00",
   "1900f392f00e2d60": "2026-10-20T10:08:05.253919+00:00",
   "b64bf858ea601095": "2026-10-20T10:08:05.253919+00:00",
   "6a88126e3d828dac": "2026-10-20T10:08:05.253919+00:00",
@@ -980,25 +979,13 @@
   "a96f9389b84b3692": "2026-10-23T09:51:25.064751+00:00",
   "28fcaf8fa8c784ce": "2026-10-23T09:51:25.064751+00:00",
   "60a34e8dc5fd301b": "2026-10-23T09:56:24.916601+00:00",
-  "36dec35d1cf97351": "2026-10-23T10:01:24.915988+00:00"
+  "36dec35d1cf97351": "2026-10-23T10:01:24.915988+00:00",
+  "0fa74fd2d519c1c5": "2026-10-23T10:06:24.930997+00:00",
+  "7593f510199421e4": "2026-10-23T10:06:24.930997+00:00",
+  "b6f9c515d991b004": "2026-10-23T10:06:24.930997+00:00",
+  "7ab0f9e783cda31c": "2026-10-23T10:06:24.930997+00:00"
  },
  "recent": [
-  {
-   "title": "Силуанов счел небольшим плановый дефицит бюджета России на уровне 2% ВВП",
-   "link": "https://www.kommersant.ru/doc/9042821",
-   "sources": [
-    "Kommersant"
-   ],
-   "score": 7,
-   "ts": "2026-10-20T10:03:05.262780+00:00",
-   "title_en": "Siluanov considered Russia's planned budget deficit at 2% of GDP small",
-   "lead": "Министр финансов Антон Силуанов считает, что плановый дефицит федерального бюджета в ближайшую трехлетку — около 2% ВВП ежегодно — нельзя считать существенным.",
-   "lead_en": "Finance Minister Anton Siluanov believes that the planned federal budget deficit over the next three years - about 2% of GDP annually - cannot be considered significant.",
-   "tags": [
-    "GDP",
-    "Russia"
-   ]
-  },
   {
    "title": "BGR News Feed",
    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE8zam9ZbTJCZmxfVE8tVk9FcUFwMmVLcFUxMnFIWDdyM0gzX1RXbVU3TnhaWndJSmZqRk82M21MTWJUOWlEaFlTdVg5d2V1ZFpPdU1tZjJIeGFRYWw1XzJMSWx5Zw?oc=5",
@@ -10003,6 +9990,52 @@
    "score": 3,
    "ts": "2026-10-23T10:01:24.915988+00:00",
    "title_ru": "Газовые и электрические сети Великобритании готовы к зиме, несмотря на глобальные потрясения, говорят операторы"
+  },
+  {
+   "title": "AT1s’ Easy-Money Run Fades as Banks Pay Up for Riskiest Debt",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-23/at1s-easy-money-run-fades-as-banks-pay-up-for-riskiest-debt",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-23T10:06:24.930997+00:00",
+   "title_ru": "Бег с легкими деньгами AT1s исчезает, поскольку банки платят за самый рискованный долг",
+   "lead": "Investors in the riskiest instruments sold by US and European banks are starting to demand more compensation on new deals.",
+   "lead_ru": "Инвесторы в самые рискованные инструменты, продаваемые американскими и европейскими банками, начинают требовать больше компенсаций по новым сделкам."
+  },
+  {
+   "title": "US Election Angst Looms for Stocks and the AI Boom",
+   "link": "https://www.bloomberg.com/news/newsletters/2026-10-23/us-election-angst-looms-for-stocks-and-the-ai-boom",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T10:06:24.930997+00:00",
+   "title_ru": "Тоска по выборам в США вырисовывается для акций и бума искусственного интеллекта",
+   "lead": "Markets would be just fine with more gridlock.",
+   "lead_ru": "Рынки были бы просто в порядке с большей тупиковой ситуацией.",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "Anthropic, Please Get on With Your IPO to Soothe the AI Trade",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMUIxX2phbXhMZG53ekFDa3JvUVhDbUVxT3FQRVdjUUoxTUlwSXNsV0xVLTVDUU5pVWYxM0RETzhyMVhORjVlOXVJZXo2Z0pjZEgxbzNBYjVTazNnV0RfczZOSEp5dkNxdHhKZ2dUR0Fmdm8ydDc2WDJlWmNpeGhCZm1LazhUOW5FUjVoZXlaRWlTYkhjTnd4UXhuQVAwdVRjb05naTdqNk9kX0ZSaUFGa2JBZ2Q?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T10:06:24.930997+00:00",
+   "title_ru": "Anthropic, пожалуйста, продолжайте свое IPO, чтобы успокоить торговлю ИИ"
+  },
+  {
+   "title": "Какое решение по ключевой ставке примет Банк России. Спецэфир Радио РБК",
+   "link": "https://www.rbc.ru/finances/23/10/2026/6adb0f9dd06b4e2565f444f0",
+   "sources": [
+    "RBC"
+   ],
+   "score": 1,
+   "ts": "2026-10-23T10:06:24.930997+00:00"
   }
  ],
  "last_digest": "2026-10-22",
@@ -12266,6 +12299,22 @@
    }
   ],
   "insiders": [
+   {
+    "src": "sec",
+    "id": "7587fb69b5816e0f",
+    "ticker": "BETA",
+    "company": "BETA Technologies, Inc.",
+    "who": "Kyle Clark",
+    "role": "SEE REMARKS",
+    "type": "sell",
+    "value": 559205,
+    "shares": 30000,
+    "price": 18.64,
+    "plan": true,
+    "date": "2026-10-22",
+    "disclosed": "2026-10-23",
+    "link": "https://www.sec.gov/Archives/edgar/data/2090083/000119312526429389/0001193125-26-429389-index.htm"
+   },
    {
     "src": "sec",
     "id": "51e23b8d7310b2c2",
@@ -16249,22 +16298,6 @@
     "date": "2026-10-14",
     "disclosed": "2026-10-15",
     "link": "https://www.sec.gov/Archives/edgar/data/1558242/000155824226000026/0001558242-26-000026-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "4aaf76ce5cf83ca2",
-    "ticker": "BPRE",
-    "company": "Bluerock Private Real Estate Fund",
-    "who": "Jordan B. Ruddy",
-    "role": "President",
-    "type": "buy",
-    "value": 44317,
-    "shares": 3520,
-    "price": 12.59,
-    "plan": false,
-    "date": "2026-10-14",
-    "disclosed": "2026-10-15",
-    "link": "https://www.sec.gov/Archives/edgar/data/1575426/000139834426018255/0001398344-26-018255-index.htm"
    }
   ],
   "docs": {
@@ -16301,44 +16334,37 @@
   },
   "checked": "2026-10-23T10:01:24.915988+00:00",
   "sec_seen": [
-   "0001769628-26-000450",
    "0001607879-26-000008",
+   "0001769628-26-000450",
    "0001193125-26-429202",
    "0001493152-26-048153",
    "0001944970-26-000029",
-   "0001930044-26-000010",
    "0001213900-26-111813",
    "0001834164-26-000005",
    "0001855880-26-000022",
    "0002157445-26-000002",
-   "0000921895-26-002845",
-   "0001635088-26-000116",
-   "0002161365-26-000008",
    "0001062993-26-005508",
+   "0002161365-26-000008",
    "0002032458-26-000030",
-   "0000897069-26-001865",
    "0001628280-26-066948",
    "0001769628-26-000451",
    "0001213900-26-111795",
-   "0001140361-26-040540",
    "0001493152-26-048149",
    "0001891037-26-000011",
-   "0001213900-26-111771",
    "0000829224-26-000149",
    "0001455134-26-000023",
    "0001437749-26-033305",
    "0002083595-26-000010",
+   "0001193125-26-429389",
    "0001596532-26-000248",
    "0001493152-26-048157",
-   "0001628280-26-066941",
    "0002066491-26-000013",
-   "0000902664-26-004257",
+   "0001193125-26-429381",
    "0001891751-26-000010",
    "0001628280-26-066949",
    "0001193125-26-429245",
    "0001973495-26-000007",
-   "0001628280-26-066951",
-   "0001493152-26-048147"
+   "0001628280-26-066951"
   ],
   "errors": {}
  }
