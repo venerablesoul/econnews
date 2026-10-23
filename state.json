@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "590ef692edf0a09f": "2026-10-20T10:58:05.248123+00:00",
-  "ba9435fd59dcfd56": "2026-10-20T10:58:05.248123+00:00",
-  "bb26dd982d584b4c": "2026-10-20T10:58:05.248123+00:00",
-  "186aca63eb99aa5f": "2026-10-20T11:03:05.449056+00:00",
-  "ab0ca80cab0010f9": "2026-10-20T11:03:05.449056+00:00",
   "c18ab572c871c7a5": "2026-10-20T11:13:05.257438+00:00",
   "76a9b4fc804e9c8e": "2026-10-20T11:18:05.263608+00:00",
   "7ec911f2c4a4bb36": "2026-10-20T11:23:05.281124+00:00",
@@ -991,53 +986,16 @@
   "041d359d1687e4dd": "2026-10-23T10:46:24.887622+00:00",
   "1c76bdfd3faee74d": "2026-10-23T10:51:24.954250+00:00",
   "eb92ac57e1dd2b4f": "2026-10-23T10:51:24.954250+00:00",
-  "682388b9603190ad": "2026-10-23T10:56:24.923522+00:00"
+  "682388b9603190ad": "2026-10-23T10:56:24.923522+00:00",
+  "763d11ee6670936d": "2026-10-23T11:01:24.887071+00:00",
+  "371c3e3dd34a1e08": "2026-10-23T11:01:24.887071+00:00",
+  "4753145adad3db87": "2026-10-23T11:06:24.957669+00:00",
+  "d4a6b4dca34ba7d7": "2026-10-23T11:06:24.957669+00:00",
+  "4fabf130300ba1c1": "2026-10-23T11:06:24.957669+00:00",
+  "d8d8e41e636d9af2": "2026-10-23T11:06:24.957669+00:00",
+  "be4796a8a665619a": "2026-10-23T11:06:24.957669+00:00"
  },
  "recent": [
-  {
-   "title": "ECB’s Rehn Says French Spread to Germany Has Widened ‘Somewhat’",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-20/ecb-s-rehn-says-french-spread-to-germany-has-widened-somewhat",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T10:58:05.248123+00:00",
-   "title_ru": "Глава ЕЦБ Рен заявил, что распространение Франции на Германию «несколько расширилось»",
-   "lead": "French bond spreads relative to German bunds have widened “somewhat” as a result of both global and country-specific factors, European Central Bank Governing Council member Olli Rehn said.",
-   "lead_ru": "Спреды французских облигаций по отношению к немецким облигациям «несколько» расширились в результате как глобальных, так и страновых факторов, сказал член Управляющего совета Европейского центрального банка Олли Рен.",
-   "tags": [
-    "ECB",
-    "bonds"
-   ]
-  },
-  {
-   "title": "Traders are growing wary of a copper price crash with no sign of tariffs",
-   "link": "https://www.bloomberg.com/news/newsletters/2026-10-20/traders-are-growing-wary-of-a-copper-price-crash-with-no-sign-of-tariffs",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 8,
-   "ts": "2026-10-20T11:03:05.449056+00:00",
-   "title_ru": "Трейдеры все больше опасаются падения цен на медь без каких-либо признаков тарифов",
-   "lead": "A historic shift in global inventories has helped drive copper to records, but the trade behind the rally is looking increasingly fragile.",
-   "lead_ru": "Исторический сдвиг в мировых запасах помог поднять медь до рекордного уровня, но торговля, стоящая за этим ралли, выглядит все более хрупкой.",
-   "tags": [
-    "markets",
-    "tariffs"
-   ]
-  },
-  {
-   "title": "A Giant Debt Quandary Now Looms Within the US Political Horizon",
-   "link": "https://www.bloomberg.com/news/newsletters/2026-10-20/a-giant-debt-quandary-now-looms-within-the-us-political-horizon",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T11:03:05.449056+00:00",
-   "title_ru": "Гигантская долговая проблема теперь маячит на политическом горизонте США",
-   "lead": "The incoming cohort of US senators will face crucial questions about Social Security’s finances on their watch.",
-   "lead_ru": "Новая когорта американских сенаторов столкнется с важными вопросами о финансах социального обеспечения."
-  },
   {
    "title": "CoreWeave debt selloff poses limited risk to global banks, J.P. Morgan says",
    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNOHMyRGhadi1kbGZuSEVyakFWeFp4bS1TYUc3VjBiWXpJTk84VXBaYmhjTFBZd2FVV0cyR1p5QXpNOHhsVlJtakxzNTlVRzZxbjVuMVlLTkVmQWk1b3VINFZ3Qkp1Ui1ibExKaHYwaEdMY1FfSzNYb0pkSFpWLW80VGJRREhzdUw0ek5zcy05UTM4dDJNaXFoejhfSnJVZTFrWkZQU1RqYms0X0ktbUZJNkVRSUNDMHV0RUVmVl8ySQ?oc=5",
@@ -10172,6 +10130,48 @@
    "title_ru": "Лимит дохода до £ 140K для схемы кредитования покупателей-новичков",
    "lead": "The Your First Home scheme will offer government-backed loans for those buying new-builds in England.",
    "lead_ru": "Схема «Ваш первый дом» будет предлагать кредиты, поддерживаемые правительством, для тех, кто покупает новостройки в Англии."
+  },
+  {
+   "title": "Oil Climbs on Threats of a Widening War in Middle East",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-23/oil-climbs-on-threats-of-a-widening-war-in-middle-east-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-23T11:06:24.957669+00:00",
+   "title_ru": "Нефть растет на фоне угроз расширения войны на Ближнем Востоке",
+   "lead": "Brent oil traded at the highest level since May on Friday. Iran-backed Houthi militants claimed recent attacks on the Saudi Red Sea port of Yanbu, as well as deadly strikes on an oil field and airport in the kingdom.",
+   "lead_ru": "Нефть марки Brent в пятницу торговалась на самом высоком уровне с мая. Поддерживаемые Ираном боевики-хуситы заявили о недавних нападениях на саудовский порт Янбу на Красном море, а также о смертоносных ударах по нефтяному месторождению и аэропорту в королевстве.",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "Bolsonaro Trade Faces Reckoning in Too-Close-to-Call Brazil Vote",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-23/bolsonaro-trade-faces-reckoning-in-too-close-to-call-brazil-vote",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T11:06:24.957669+00:00",
+   "title_ru": "Торговля Bolsonaro сталкивается с расплатой в слишком близкой к вызову Бразилии Голосование",
+   "lead": "Wall Street strategists who recommended loading up on Brazil assets after Flávio Bolsonaro emerged as the frontrunner for president are about to see if they led clients astray or to profits ahead of Sunday’s too-close-to-call…",
+   "lead_ru": "Стратеги Уолл-стрит, которые рекомендовали загрузить бразильские активы после того, как Флавио Болсонару стал лидером президентской гонки, собираются выяснить, сбивают ли они клиентов с пути или приносят прибыль в преддверии воскресного..."
+  },
+  {
+   "title": "ЦБ указал на устойчивый рост цен в России // ЦБ: рост цен в России находится в диапазоне 5-6% в пересчете на год",
+   "link": "https://www.kommersant.ru/doc/9058970",
+   "sources": [
+    "Kommersant"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T11:06:24.957669+00:00",
+   "title_en": "The Central Bank pointed to a steady increase in prices in Russia // The Central Bank: price growth in Russia is in the range of 5-6% per year",
+   "lead": "Российская экономика в целом в 2026 году растет умеренными темпами. Давление на цены повышенное.",
+   "lead_en": "The Russian economy as a whole is growing at a moderate pace in 2026. The pressure on prices is increased.",
+   "tags": [
+    "Russia"
+   ]
   }
  ],
  "last_digest": "2026-10-22",
@@ -16468,7 +16468,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-23T10:01:24.915988+00:00",
+  "checked": "2026-10-23T11:06:24.957669+00:00",
   "sec_seen": [
    "0001607879-26-000008",
    "0001769628-26-000450",
@@ -16494,7 +16494,6 @@
    "0002083595-26-000010",
    "0001193125-26-429389",
    "0000711377-26-000034",
-   "0001596532-26-000248",
    "0001493152-26-048157",
    "0002066491-26-000013",
    "0001193125-26-429381",
@@ -16504,6 +16503,8 @@
    "0001973495-26-000007",
    "0001628280-26-066951"
   ],
-  "errors": {}
+  "errors": {
+   "senate": "HTTPError: HTTP Error 403: Forbidden"
+  }
  }
 }
