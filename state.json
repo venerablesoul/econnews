@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "edf628a9b40d68aa": "2026-10-20T06:21:52.552592+00:00",
   "c22c8feb429dbc6d": "2026-10-20T06:26:52.851141+00:00",
   "aa5d022cf3a07956": "2026-10-20T06:41:52.470409+00:00",
   "155c192f37b05351": "2026-10-20T06:46:52.433198+00:00",
@@ -954,22 +953,10 @@
   "348141846e1a4df6": "2026-10-23T06:15:51.532052+00:00",
   "43fb1e23e711c58c": "2026-10-23T06:20:51.511841+00:00",
   "5a4ba0144133b82e": "2026-10-23T06:20:51.511841+00:00",
-  "9527bca1466c883e": "2026-10-23T06:20:51.511841+00:00"
+  "9527bca1466c883e": "2026-10-23T06:20:51.511841+00:00",
+  "6f7f8f98c7ba8194": "2026-10-23T06:25:51.525322+00:00"
  },
  "recent": [
-  {
-   "title": "COMMENTARY: Markets' squeal is music to Fed ears",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOanNEc3U3RUp6cGJ5a2hycUVSd2ZoYkJfSl9Qd1JEWkx5OFlOMTE5TjVXLUZNLUh0ZkZab0JSN1BHVHAteGI1cFRkckUycldMNHFPbWljOFMxNHVDcFFpMjlvRVpQclZnTWU4cTZVUUlkOExfMDEyVjItaC1GMTlKX0RNRzRGRnpacmo3QXlnclAxNWZsd1lpSUpCQWtqYllaZFhDTkdfRDRsTVhQdmplX1gyVEwzb3ow?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-20T06:21:52.552592+00:00",
-   "title_ru": "КОММЕНТАРИЙ: Визг рынков — это музыка для ушей ФРС",
-   "tags": [
-    "Fed"
-   ]
-  },
   {
    "title": "Copper Boom Belies a Deepening ‘Mining Recession’ in Top Producer",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQcUZZV3dka0trejF6WjhKRkVKZVJ2TEU1bktCX1lsemQtZ05kcC1hX3lHaVlHckROWkpHNEpBakc0cTNMQVRzdFJSaUVXbUpubnlMYUlBMHZVX1l2WjR5cGUzZWFrb2oyTU9MQjBiNUZkQjdJYVZWWU45aTIwTjYxeXdjNWhXMEtVbzFuSk00OFlaaTBTek03WktqSnZIUWthU2NTTVR4U2FGc3RlMVduRkFNd24?oc=5",
@@ -9673,6 +9660,19 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "World Economic Outlook (October 2026) - Real GDP growth",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNNjIyQjM2WlJfMUxQZ3NvTTN3eWlEWkdkZWE4cUNUOGVVOVd1ekdLaFVTcTdrTlZWNkJNam04Wk5JY0ZhU1dla3VqcTdTVkJTbjA2cjl6REtjbXlDSllwQk1QOGE5M2poZk5OZWNKcWsxbjVBa1p2SUFDYlV4OGkzM19lU2lQVGVZMC1EekhLaGw?oc=5",
+   "sources": [
+    "IMF"
+   ],
+   "score": 9,
+   "ts": "2026-10-23T06:25:51.525322+00:00",
+   "title_ru": "Перспективы развития мировой экономики (октябрь 2026 г.) - Рост реального ВВП",
+   "tags": [
+    "GDP"
+   ]
   }
  ],
  "last_digest": "2026-10-22",
@@ -15977,7 +15977,6 @@
    "0002157445-26-000002",
    "0000897069-26-001865",
    "0001349983-26-000013",
-   "0002032458-26-000030",
    "0001607879-26-000008",
    "0001973495-26-000007",
    "0001855880-26-000022",
@@ -15986,6 +15985,7 @@
    "0001769628-26-000450",
    "0002083595-26-000010",
    "0001266824-26-000217",
+   "0001455134-26-000023",
    "0001193125-26-429162",
    "0001891751-26-000010",
    "0001769628-26-000451",
@@ -16011,7 +16011,7 @@
    "0001628280-26-066951",
    "0000902664-26-004257",
    "0001140361-26-040540",
-   "0001455134-26-000023",
+   "0002032458-26-000030",
    "0001213900-26-111771",
    "0001493152-26-048149",
    "0001437749-26-033305"
