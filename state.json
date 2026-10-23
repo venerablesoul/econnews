@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "089f4b4ea463d5d7": "2026-10-20T06:01:52.480170+00:00",
-  "36c768d6902413ce": "2026-10-20T06:06:53.481925+00:00",
-  "1f12e7d5638235d6": "2026-10-20T06:11:52.730043+00:00",
-  "f77a1b99b7499cb4": "2026-10-20T06:11:52.730043+00:00",
   "4471063c598742bd": "2026-10-20T06:16:52.402068+00:00",
   "536ada2c03364241": "2026-10-20T06:16:52.402068+00:00",
   "edf628a9b40d68aa": "2026-10-20T06:21:52.552592+00:00",
@@ -955,65 +951,11 @@
   "1e494241952e7f25": "2026-10-23T05:30:51.697727+00:00",
   "bc3263a883a0dac9": "2026-10-23T05:40:51.729300+00:00",
   "adb8bccc47a53475": "2026-10-23T05:55:51.536053+00:00",
-  "64a643598f38fca1": "2026-10-23T06:00:51.602535+00:00"
+  "64a643598f38fca1": "2026-10-23T06:00:51.602535+00:00",
+  "d8f1175c2d5e64b1": "2026-10-23T06:15:51.532052+00:00",
+  "348141846e1a4df6": "2026-10-23T06:15:51.532052+00:00"
  },
  "recent": [
-  {
-   "title": "Bank of Japan may raise inflation forecast, stand pat on rates, sources say",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNNEt0OVZkdE8tYkUwUDFsdDhhSDV5UURBdVNxVU5JdldQdFl0WkFpdzE4RkhhSUgxZG9LeVB4ZmxnZV9qWlFjNGctenU2T05DZWxlNVNGX3YteEM3TFg3Y2FUN3pJUVNjdF8zSFo4Rm13NGZjWXdUQ0RRZXNpbXpXYVI4UnUxc3F2SkV1OVRFMUpmcWlpN292VjBsM0hCeGFnSGdDaWpBZjg5V2l5TzRWbEhWQjM0eU9sRkpRM2ZCRQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-20T06:01:52.480170+00:00",
-   "title_ru": "Банк Японии может повысить прогноз инфляции, стоять на ставках, говорят источники",
-   "tags": [
-    "inflation"
-   ]
-  },
-  {
-   "title": "What has actually battered the bond market?",
-   "link": "https://www.ft.com/content/e5585991-c884-4b22-867e-5d70efbb0a87",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T06:06:53.481925+00:00",
-   "title_ru": "Что на самом деле ударило по рынку облигаций?",
-   "tags": [
-    "bonds"
-   ]
-  },
-  {
-   "title": "UK Payrolls Bounce Back Ahead of Chancellor Healey’s Budget",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-20/uk-payrolls-bounce-back-ahead-of-chancellor-healey-s-budget",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-20T06:11:52.730043+00:00",
-   "title_ru": "Число рабочих мест в Великобритании восстанавливается в преддверии бюджета канцлера Хили",
-   "lead": "British employers added jobs in September, according to official figures that gave an unexpected boost to Chancellor of the Exchequer John Healey ahead of his crucial budget next week.",
-   "lead_ru": "Согласно официальным данным, британские работодатели увеличили количество рабочих мест в сентябре, что дало неожиданный импульс канцлеру казначейства Джону Хили в преддверии его важного бюджета на следующей неделе.",
-   "tags": [
-    "jobs"
-   ]
-  },
-  {
-   "title": "China’s Huachen Energy Risks Fresh Default on $956 Million Debt",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-20/china-s-huachen-energy-risks-fresh-default-on-956-million-debt",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-20T06:11:52.730043+00:00",
-   "title_ru": "Китайская компания Huachen Energy рискует объявить дефолт по долгу в 956 миллионов долларов",
-   "lead": "Chinese power generation firm Huachen Energy Co.",
-   "lead_ru": "Китайская энергетическая компания Huachen Energy Co.",
-   "tags": [
-    "China"
-   ]
-  },
   {
    "title": "UK unemployment rate falls in pre-budget boost, but firms keep cutting vacancies – business live",
    "link": "https://www.theguardian.com/business/live/2026/oct/20/uk-unemployment-rate-pre-budget-boost-wages-vacancies-latest-news-updates",
@@ -9700,6 +9642,18 @@
    "score": 5,
    "ts": "2026-10-23T05:55:51.536053+00:00",
    "title_ru": "Рост южнокорейской экономики, вероятно, ускорился в третьем квартале по экспорту чипов"
+  },
+  {
+   "title": "UK Retail Sales Fall 0.4% in September, More Than Forecast",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-23/uk-retail-sales-fall-0-4-in-september-more-than-forecast",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-23T06:15:51.532052+00:00",
+   "title_ru": "Розничные продажи в Великобритании упали на 0,4% в сентябре, больше, чем прогнозировалось",
+   "lead": "UK retail sales fell in September as shoppers bought less food and above-average temperatures hit demand for autumn clothing.",
+   "lead_ru": "Розничные продажи в Великобритании упали в сентябре, поскольку покупатели покупали меньше продуктов питания, а температура выше средней повлияла на спрос на осеннюю одежду."
   }
  ],
  "last_digest": "2026-10-22",
@@ -9751,7 +9705,7 @@
   "2026-10-23-09"
  ],
  "calendar": {
-  "fetched": "2026-10-23T00:15:20.326960+00:00",
+  "fetched": "2026-10-23T06:15:51.532052+00:00",
   "events": [
    {
     "title": "IMF Meetings",
@@ -16004,7 +15958,6 @@
    "0002157445-26-000002",
    "0000897069-26-001865",
    "0001349983-26-000013",
-   "0002032458-26-000030",
    "0001607879-26-000008",
    "0001973495-26-000007",
    "0001855880-26-000022",
@@ -16013,6 +15966,7 @@
    "0001769628-26-000450",
    "0002083595-26-000010",
    "0001266824-26-000217",
+   "0001455134-26-000023",
    "0001193125-26-429162",
    "0001891751-26-000010",
    "0001769628-26-000451",
@@ -16038,7 +15992,7 @@
    "0001628280-26-066951",
    "0000902664-26-004257",
    "0001140361-26-040540",
-   "0001455134-26-000023",
+   "0002032458-26-000030",
    "0001213900-26-111771",
    "0001493152-26-048149",
    "0001437749-26-033305"
