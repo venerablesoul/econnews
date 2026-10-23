@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "249445fcae292f63": "2026-10-20T02:26:05.096270+00:00",
-  "86c6c9f5f46e4c24": "2026-10-20T02:31:05.179033+00:00",
   "a40d64394e1aa2f8": "2026-10-20T02:36:05.153012+00:00",
   "84d41ef35a8c44cd": "2026-10-20T02:36:05.153012+00:00",
   "42bf6338261475cf": "2026-10-20T02:36:05.153012+00:00",
@@ -953,23 +951,10 @@
   "37610e12111f754e": "2026-10-23T02:20:51.538382+00:00",
   "2e26b53365633179": "2026-10-23T02:20:51.538382+00:00",
   "8f26826afa0d2051": "2026-10-23T02:25:51.572679+00:00",
-  "5893ce8ca197271c": "2026-10-23T02:25:51.572679+00:00"
+  "5893ce8ca197271c": "2026-10-23T02:25:51.572679+00:00",
+  "8911f2c145f3c753": "2026-10-23T02:35:51.595090+00:00"
  },
  "recent": [
-  {
-   "title": "Gold slips as investors weigh Fed rate outlook",
-   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOLVJCYm9CRFhWY01aUkRqYnVXb0RzRC1RUnhfOEFicHItalFBMnRMc0ZjcWRVcGNnZVg3ZXQ3WXNXeUZLN183enN0NFAtdmxuUHJhRU5jOHlQbTg1TldhNVdtbF9IWU1GZ1BfOEZvTnJpUEhGTE5xUkRSbl9FZVR4NlFJMEE2V1VYZ1hVRzk3SmpJMi1qelE?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-20T02:31:05.179033+00:00",
-   "title_ru": "Золото падает, поскольку инвесторы взвешивают прогноз по ставке ФРС",
-   "tags": [
-    "Fed",
-    "gold"
-   ]
-  },
   {
    "title": "Chipmakers Lead Korean Stock Selloff on Yield Spike, IPO Stumble",
    "link": "https://www.bloomberg.com/news/articles/2026-10-20/chipmakers-lead-korean-stock-selloff-on-yield-spike-ipo-stumble",
@@ -9709,6 +9694,19 @@
    "lead_ru": "Ожидается, что HSBC Holdings Plc и Standard Chartered Plc будут поддерживать высокую доходность по более высоким ставкам и азиатским сборам за богатство, хотя более жесткие правила движения капитала в Китае и ценовое давление омрачают перспективы.",
    "tags": [
     "China"
+   ]
+  },
+  {
+   "title": "ECB's Santos Pereira pushes for deeper EU integration",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQQ1VyZ3MxYmxhbTJmNGNBbFhkOG80Ulo0WklKWHZfWU5PcUhzbktCaFVtbUVaTkxPQ3ZteGFVR29CRWtlYWdFYlNFM3d3aWZ1S0NkMjNIby05N3RGSXZiVnE1WlI2T2tQOWtrNHF3S0EwMFE0aXVoYXBCNkVUX1NkTkpodTl2aFQyRld4bnZBc2hHOHFabTAwYw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T02:35:51.595090+00:00",
+   "title_ru": "Сантос Перейра из ЕЦБ настаивает на более глубокой интеграции в ЕС",
+   "tags": [
+    "ECB"
    ]
   }
  ],
