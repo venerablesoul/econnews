@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "20c33c9417073060": "2026-10-20T16:38:33.338384+00:00",
   "8dc52b41c89c77a0": "2026-10-20T16:43:33.151326+00:00",
   "bd570558bd354da6": "2026-10-20T17:13:33.130578+00:00",
   "d9617d75eadcc671": "2026-10-20T17:13:33.130578+00:00",
@@ -1015,22 +1014,11 @@
   "8b8236f223b8c451": "2026-10-23T16:31:55.759067+00:00",
   "b6e4df026ce5747c": "2026-10-23T16:31:55.759067+00:00",
   "1cab292e4320e2c7": "2026-10-23T16:36:55.763055+00:00",
-  "5f96d67e9a3d3177": "2026-10-23T16:36:55.763055+00:00"
+  "5f96d67e9a3d3177": "2026-10-23T16:36:55.763055+00:00",
+  "fbee1b3aed7fe41e": "2026-10-23T16:41:55.717790+00:00",
+  "46db2820f878ce72": "2026-10-23T16:41:55.717790+00:00"
  },
  "recent": [
-  {
-   "title": "Small businesses file new lawsuit to block Trump's Canada tariffs",
-   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQWU9VVXlWbnBJUWluWHZlOTVjRVVOdU9vOWt5ZklwVk5iN01SVGVmdThoc1h2XzFMb1VMdkhMWHh3UmtOVnp3MXhxUG5weFFTYi1kWWw5dWFWcEw1TFdXWS13S3FFdS1BbVFsdm5KZ0tfcUp6aGZ3RTBjcDl1ZVNCcGlDLXY5Yk93RlBKQXBVS3M2U0QwY1hvcmdtTjZ4TG1FanVXS25n?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-20T16:38:33.338384+00:00",
-   "title_ru": "Малый бизнес подал новый иск о блокировании пошлин Трампа в Канаде",
-   "tags": [
-    "tariffs"
-   ]
-  },
   {
    "title": "Watch Big Take: CoreWeave And The Fragile AI Economy",
    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNNTIxd0RzQXY1cEdCRGpUY3V4OUwtU0Vnb1JCSG9ZdWF4WWdjcEpyNlhEZFhlaUZaSEpxb2xVckpOTlNhMktZMnFsZnVRekljNG9LV2IyV0hxYzR4NW9WR1dQamVHTV9tNGZJck0xUEs4dUh1cW5ULTE1SlJpT0pkRTlVMlhxbVV3a2VpNFVLY2NpS0xxWWF3djl3?oc=5",
@@ -10287,6 +10275,19 @@
    "tags": [
     "bonds"
    ]
+  },
+  {
+   "title": "Nasdaq ticks up as tech stocks steady; SpaceX worries hit telecoms",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQR01KeXBjdXBubVRzTlJfWWJTMHctb2hFS2pVT21ydWtZNzBaMldxd1c2ZUJGNWhIeGV6MUxvQVZvSl9GdFh5QThQbFpuT0IwYi02Y3JGM19YSWJ3LXMtb29RbS1WZUljdGtsS2dockxHVm5SWnBSMzJpM0Y4RFItdW5SMzFsdXg2LWtrYWE1SC1TQlkxOERJZHNtQVREdw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-23T16:41:55.717790+00:00",
+   "title_ru": "Nasdaq растет, поскольку акции технологических компаний стабильны; опасения SpaceX бьют по телекоммуникациям",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-22",
@@ -16586,9 +16587,8 @@
   "checked": "2026-10-23T16:11:55.772277+00:00",
   "sec_seen": [
    "0001193125-26-429845",
-   "0001213900-26-111971",
-   "0001096906-26-001612",
-   "0001493152-26-048196"
+   "0001493152-26-048196",
+   "0001213900-26-111971"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
