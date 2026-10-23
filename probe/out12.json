@@ -1,0 +1,13 @@
+{
+ "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<meta name=\"robots\" content=\"noindex, nofollow\">\n<title>Terminal Bloom</title>\n<link rel=\"icon\" href=\"data:,\">\n<script>\nif (location.protocol === \"http:\" && window.fetch) {\n  fetch(\"https://\" + location.host + \"/\", { method: \"HEAD\", mode: \"no-cors\", cache: \"no-store\" })\n    .then(function () { location.replace(\"https://\" + location.host + location.pathname + location.search); })\n    .catch(function () {});\n}\n</script>\n</head>\n<body>\n</body>\n</html>\n",
+ "final_url": "https://terminalbloom.com/",
+ "frames": [
+  "https://terminalbloom.com/"
+ ],
+ "maps_in_frames": [
+  [
+   "https://terminalbloom.com/",
+   false
+  ]
+ ]
+}
