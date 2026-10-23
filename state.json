@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "80b4e0346d95fbb3": "2026-10-20T14:58:33.125059+00:00",
   "64bc6b5ef7d464f6": "2026-10-20T15:08:33.121286+00:00",
   "a12bb675973c101a": "2026-10-20T15:13:33.113862+00:00",
   "547ee34de6659275": "2026-10-20T15:13:33.113862+00:00",
@@ -1018,22 +1017,12 @@
   "174ce83c411c3e60": "2026-10-23T14:41:55.694662+00:00",
   "6184e020e376e2f2": "2026-10-23T14:46:55.729359+00:00",
   "15292115ed16f4e1": "2026-10-23T14:46:55.729359+00:00",
-  "478ef26b19a09981": "2026-10-23T14:46:55.729359+00:00"
+  "478ef26b19a09981": "2026-10-23T14:46:55.729359+00:00",
+  "d7a4048ef6072d53": "2026-10-23T15:01:55.748795+00:00",
+  "f6856db654e7072f": "2026-10-23T15:06:55.734188+00:00",
+  "1a291f027ff488ea": "2026-10-23T15:06:55.734188+00:00"
  },
  "recent": [
-  {
-   "title": "TSX futures dip as inflation expectations, US trade tensions weigh",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQQ3FLY3g1VUNPNmprZ3VyOVZvLXdKQUVDWjVpUEZTYncwTl93dW01bmNmOGMwQVAwS19SWUxjdFA0bk9mLU1oMVFIazRTWTl0cVRSZENmanhfQTVXRkhGQmRibndRa1JhNXNFS1I1alI5bDRrVVFVeUlQMVotWnNpMHplTlhLckJEVDNsR3hTdmFkQjJteGlxTDU1TFlVSVpud2gyZUc0cU1nLXM?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-20T14:58:33.125059+00:00",
-   "title_ru": "Фьючерсы на TSX падают на фоне инфляционных ожиданий и торговой напряженности в США",
-   "tags": [
-    "inflation"
-   ]
-  },
   {
    "title": "AI Fears Roar Back, Tech Earnings on Deck",
    "link": "https://www.bloomberg.com/news/videos/2026-10-20/ai-fears-roar-back-tech-earnings-on-deck",
@@ -10435,6 +10424,16 @@
    ],
    "score": 2,
    "ts": "2026-10-23T14:46:55.729359+00:00"
+  },
+  {
+   "title": "India central bank to impose new leverage rules for banks from April 1, 2027",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPVENUVUkyNksxVm5rWUs0SFNJaWJfYkRQNTAwZ0ZNUy1XUzJmRUR6MXNkRjBwY1dRZ0Q4a09QTlQtSTRJTE8xSGpfOXAyQVZrdU1vVnljckpIR2IwMm91VzNPSW50TENOV0NRVU9RTDBvZWJvdU9UelpjWjUtZ3lWeDFMVDJrMUFoekJhVndJdjB2d1ZPVS1Xbk95UmhYUGRJeERvdGtXdmVTX2FiSWptVA?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-23T15:06:55.734188+00:00",
+   "title_ru": "Центральный банк Индии введет новые правила кредитного плеча для банков с 1 апреля 2027 года"
   }
  ],
  "last_digest": "2026-10-22",
@@ -10457,7 +10456,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 1,
+  "Fed": 0,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
@@ -16733,8 +16732,7 @@
   },
   "checked": "2026-10-23T14:06:55.769626+00:00",
   "sec_seen": [
-   "0001493152-26-048187",
-   "0001193125-26-429600"
+   "0001493152-26-048187"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
