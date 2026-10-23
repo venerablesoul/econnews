@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "6c4d963811b43c82": "2026-10-20T05:06:52.765446+00:00",
   "4d01c3f05fdce7e3": "2026-10-20T05:11:52.381851+00:00",
   "e8525823689fb784": "2026-10-20T05:16:52.452506+00:00",
   "73010c19b7cc07d1": "2026-10-20T05:21:52.429334+00:00",
@@ -952,24 +951,12 @@
   "844412fbe180c205": "2026-10-23T04:35:51.570726+00:00",
   "9b2b0208b678bd6f": "2026-10-23T04:35:51.570726+00:00",
   "26e35ff8a36f3760": "2026-10-23T04:50:51.507191+00:00",
-  "04f3724f0129887b": "2026-10-23T05:05:51.540516+00:00"
+  "04f3724f0129887b": "2026-10-23T05:05:51.540516+00:00",
+  "677c33702f2e9feb": "2026-10-23T05:10:51.550957+00:00",
+  "88e0238fa0091ddb": "2026-10-23T05:10:51.550957+00:00",
+  "aca38300e107a6f4": "2026-10-23T05:10:51.550957+00:00"
  },
  "recent": [
-  {
-   "title": "«РИА Новости»: зарплаты выше 500 тысяч рублей зафиксированы в девяти отраслях",
-   "link": "https://www.kommersant.ru/doc/9042537",
-   "sources": [
-    "Kommersant"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T05:06:52.765446+00:00",
-   "title_en": "\"Ria Novosti\": salaries above 500 thousand rubles are fixed in nine industries",
-   "lead": "В январе—июле 2026 года средние зарплаты выше 500 тыс. руб. получали работники в девяти отраслях экономики.",
-   "lead_en": "In January-July 2026, employees in nine sectors of the economy received average salaries above 500 thousand rubles.",
-   "tags": [
-    "ruble"
-   ]
-  },
   {
    "title": "Chancellor rejects calls to raise Capital Gains Tax in Budget",
    "link": "https://www.bbc.co.uk/news/articles/c50me4w4x1vyo?at_medium=RSS&at_campaign=rss",
@@ -9701,6 +9688,37 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "Singapore’s Core Inflation for September Unexpectedly Cools",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-23/singapore-s-core-inflation-for-september-unexpectedly-cools",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-23T05:10:51.550957+00:00",
+   "title_ru": "Базовая инфляция в Сингапуре в сентябре неожиданно снизилась",
+   "lead": "Singapore’s core inflation rate unexpectedly slowed in September as the import-reliant economy largely withstood the resurgence of global oil prices, reinforcing the central bank’s decision last week to hold policy steady.",
+   "lead_ru": "Уровень базовой инфляции в Сингапуре неожиданно замедлился в сентябре, поскольку экономика, зависящая от импорта, в значительной степени выдержала всплеск мировых цен на нефть, что укрепило решение центрального банка на прошлой неделе о сохранении стабильной политики.",
+   "tags": [
+    "inflation",
+    "oil"
+   ]
+  },
+  {
+   "title": "Healey’s First Budget to Push UK’s Hard Choices to Another Day",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-23/healey-s-first-budget-to-push-uk-s-hard-choices-to-another-day",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T05:10:51.550957+00:00",
+   "title_ru": "Первый бюджет Healey, который перенесет трудный выбор Великобритании на другой день",
+   "lead": "Britons looking for a flavor of the upcoming first budget of Andy Burnham’s UK government need look no further than the descriptors emanating from Chancellor of the Exchequer John Healey and his officials at the Treasury: Do no…",
+   "lead_ru": "Британцам, ищущим аромат предстоящего первого бюджета правительства Энди Бернхэма в Великобритании, не нужно смотреть дальше, чем на дескрипторы, исходящие от канцлера казначейства Джона Хили и его должностных лиц в Казначействе: Не...",
+   "tags": [
+    "bonds"
+   ]
   }
  ],
  "last_digest": "2026-10-22",
@@ -16005,6 +16023,7 @@
    "0002157445-26-000002",
    "0000897069-26-001865",
    "0001349983-26-000013",
+   "0002032458-26-000030",
    "0001607879-26-000008",
    "0001973495-26-000007",
    "0001855880-26-000022",
@@ -16013,7 +16032,6 @@
    "0001769628-26-000450",
    "0002083595-26-000010",
    "0001266824-26-000217",
-   "0001455134-26-000023",
    "0001193125-26-429162",
    "0001891751-26-000010",
    "0001769628-26-000451",
@@ -16039,7 +16057,7 @@
    "0001628280-26-066951",
    "0000902664-26-004257",
    "0001140361-26-040540",
-   "0002032458-26-000030",
+   "0001455134-26-000023",
    "0001213900-26-111771",
    "0001493152-26-048149",
    "0001437749-26-033305"
