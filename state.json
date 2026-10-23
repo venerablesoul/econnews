@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "9696c93c0676198a": "2026-10-20T15:48:33.101023+00:00",
-  "273649efb91554f4": "2026-10-20T15:48:33.101023+00:00",
-  "288f3e28a271c114": "2026-10-20T15:48:33.101023+00:00",
-  "1ae0d7105542e893": "2026-10-20T15:48:33.101023+00:00",
   "3dad6ad9ee9421cf": "2026-10-20T15:53:33.343300+00:00",
   "571c5ff0b1d41985": "2026-10-20T15:53:33.343300+00:00",
   "a43aba47a9445e94": "2026-10-20T15:58:33.135424+00:00",
@@ -1023,54 +1019,12 @@
   "978c62361dde3b71": "2026-10-23T15:36:55.903274+00:00",
   "420236f67deef8a8": "2026-10-23T15:36:55.903274+00:00",
   "ced7e1f4b0922a38": "2026-10-23T15:36:55.903274+00:00",
-  "352b16183a5330e6": "2026-10-23T15:46:55.731081+00:00"
+  "352b16183a5330e6": "2026-10-23T15:46:55.731081+00:00",
+  "c33d633d4f0ccafe": "2026-10-23T15:51:55.844709+00:00",
+  "b6a296030d05553b": "2026-10-23T15:51:55.844709+00:00",
+  "17a726239616bc0d": "2026-10-23T15:51:55.844709+00:00"
  },
  "recent": [
-  {
-   "title": "Treasuries Rise as Oil Retreats From Highest Levels in Weeks",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-20/treasuries-rise-as-oil-retreats-from-highest-levels-in-weeks",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-20T15:48:33.101023+00:00",
-   "title_ru": "Казначейские облигации растут, поскольку нефть отступает от самых высоких уровней за несколько недель",
-   "lead": "Treasuries rose as benchmark oil prices retreated from the highest levels in weeks, prompting traders to trim wagers on Federal Reserve interest-rate hikes over the coming year.",
-   "lead_ru": "Казначейские облигации выросли, поскольку базовые цены на нефть отступили от самых высоких уровней за несколько недель, что побудило трейдеров снизить ставки на повышение процентных ставок Федеральной резервной системы в следующем году.",
-   "tags": [
-    "Fed",
-    "rates",
-    "oil"
-   ]
-  },
-  {
-   "title": "WestJet Bonds Slide to Record Low as Fuel, Trade Tensions Rise",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-20/westjet-bonds-slide-to-record-low-as-fuel-trade-tensions-rise",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-20T15:48:33.101023+00:00",
-   "title_ru": "Облигации WestJet упали до рекордно низкого уровня, поскольку топливо и торговая напряженность растут",
-   "lead": "WestJet Airlines Ltd., Canada’s second-largest air carrier, saw its bonds fall to their lowest level since they were issued in June, as spikes in the cost of fuel and trade tensions are dimming its earnings outlook.",
-   "lead_ru": "WestJet Airlines Ltd., второй по величине авиаперевозчик Канады, увидела, что ее облигации упали до самого низкого уровня с момента их выпуска в июне, поскольку скачки цен на топливо и торговая напряженность омрачают перспективы ее прибылей.",
-   "tags": [
-    "bonds"
-   ]
-  },
-  {
-   "title": "Could fed-up Kansas voters send first Democrat to Senate in 94 years?",
-   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4xbXZjUFZlOEx2S2dmYmFlUHkwM3h4YXFHcFcwTjJnUUFPekVuOFZBZHNYcmJURjhJNVFiTHRIb3pka1BBS210Y3Jaa0JwMXFUOTdpQWN3ZmtKbkFBaHgwY2Rxd2JmbG8?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T15:48:33.101023+00:00",
-   "title_ru": "Могут ли сытые по горло избиратели Канзаса отправить в Сенат первого демократа за 94 года?",
-   "tags": [
-    "Fed"
-   ]
-  },
   {
    "title": "US Eyes India’s Reliance to Refine Venezuelan Oil",
    "link": "https://www.bloomberg.com/news/articles/2026-10-20/us-eyes-india-s-reliance-to-refine-venezuelan-oil",
@@ -10452,6 +10406,42 @@
    "tags": [
     "bonds",
     "markets"
+   ]
+  },
+  {
+   "title": "Final second wave estimates available in new database",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOdkdXQTZPLUdJMU9jZkZKSnpBbWk2ZllkdUVTLWhobTFmaVF1MkE0T2VadERuYTNGQmZLVHZfc1lPYUhkZWtWRFVNb3ZMR1E5enIzSk5fMjRfMUk5RFlnbXExVl9VVGt4azRpTUtLdWtGenlNTGJfZzhXQjlaTU1lX3hxU21QUXR6cmgxaTdLR2tWZ19IYUczWWVn?oc=5",
+   "sources": [
+    "US Labor Statistics (BLS)"
+   ],
+   "score": 4,
+   "ts": "2026-10-23T15:51:55.844709+00:00",
+   "title_ru": "Окончательные оценки второй волны доступны в новой базе данных"
+  },
+  {
+   "title": "China's Chery expects overseas-manufactured vehicles to top 50% of exports, exec says",
+   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQZHk5ZHpHczUxaXlFNzU2WEpmd0RwZWlmcUlPSlIzTTMtZElTcV9OR3U1OUYyblNndl9DZzFSekswOE85SS1Qb2VIeng4WkVXN1hRX3VpMlI3TC1SZ1BzMUpOY05kR2VmUWFLdU5TTHFKQ0Q5NjZPZkNuek9STzR1TEJyZC10dUF1eW5qeU5CanFlb3lnRUl2cVJreWdPQ2hadTRPOVNNazU1T0tZa0haTmtrX212OUVLVTNQQUxSSUwyalVmNk14NllPUzRoSHhfR3ZNdDBDX01GUQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T15:51:55.844709+00:00",
+   "title_ru": "Китайская Chery ожидает, что автомобили, произведенные за рубежом, превысят 50% экспорта, говорит исполнительный директор",
+   "tags": [
+    "China"
+   ]
+  },
+  {
+   "title": "US authorizes emergency release of up to 400,000 oil barrels from strategic reserve",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPN09NY3ROanZFXzE0MUt5cTZmYkozTFNRNng5X0tUUkhHeENpY3oxTlBYVG5HWmdVdnhYcFhmZnhaRTlxWlZMRXZmczNqZTRUbzlJWnJ3WFVURmJORklmeVd0WG03VzY1VVl3THUwT0pxTUNXQVRiLWFFSUU4ZnFKZXdjZHhzNXItQ0NWb1Y3N3NERW1IUHkyMjRoclBqRXZyN1dMVTZRblB6TGFXZTZuQ1hmb1lCeUtOQkhKY0RjdEE?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T15:51:55.844709+00:00",
+   "title_ru": "США разрешают экстренное высвобождение до 400 000 баррелей нефти из стратегического резерва",
+   "tags": [
+    "oil"
    ]
   }
  ],
