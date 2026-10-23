@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "249ce724845c162b": "2026-10-20T23:29:11.821168+00:00",
-  "737f0345b9de920f": "2026-10-20T23:29:11.821168+00:00",
-  "84be998f02b98ded": "2026-10-20T23:29:11.821168+00:00",
   "f15f8f1e0a7a233d": "2026-10-20T23:39:11.827974+00:00",
   "63893dd7a75a0694": "2026-10-20T23:44:11.841345+00:00",
   "8489a27146e68314": "2026-10-20T23:54:11.887987+00:00",
@@ -1010,38 +1007,10 @@
   "f8e1957d87401714": "2026-10-23T22:53:31.869654+00:00",
   "f66c737ff5d4bc6b": "2026-10-23T23:23:26.788812+00:00",
   "7987238ab23ec08a": "2026-10-23T23:28:26.760434+00:00",
-  "1156240badd4b24a": "2026-10-23T23:28:26.760434+00:00"
+  "1156240badd4b24a": "2026-10-23T23:28:26.760434+00:00",
+  "316ce8bc418d4510": "2026-10-23T23:38:26.788372+00:00"
  },
  "recent": [
-  {
-   "title": "Скидки на российскую нефть для Китая сократились // Мониторинг внешней торговли",
-   "link": "https://www.kommersant.ru/doc/9043135",
-   "sources": [
-    "Kommersant"
-   ],
-   "score": 5,
-   "ts": "2026-10-20T23:29:11.821168+00:00",
-   "title_en": "Discounts on Russian oil for China have decreased // Foreign Trade Monitoring",
-   "lead": "Разрыв между средней ценой нефти из РФ и от остальных поставщиков в китайском импорте в августе сократился до 5,2% после 15,6% в июле, следует из октябрьского мониторинга Института Гайдара (ИЭП).",
-   "lead_en": "The gap between the average price of oil from the Russian Federation and from other suppliers in Chinese imports in August narrowed to 5.2% after 15.6% in July, according to the October monitoring of the Gaidar Institute (IEP).",
-   "tags": [
-    "oil",
-    "China",
-    "Russia"
-   ]
-  },
-  {
-   "title": "South Africa Set to Tighten Budget Rules as Pressures From Iran War Mount",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-20/south-africa-set-to-tighten-budget-rules-as-pressures-from-iran-war-mount",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T23:29:11.821168+00:00",
-   "title_ru": "Южная Африка намерена ужесточить бюджетные правила из-за давления со стороны Иранской войны",
-   "lead": "South African Finance Minister Enoch Godongwana is poised to unveil a fiscal anchor to entrench progress made in repairing the nation’s public finances as the Iran war puts those gains to the test.",
-   "lead_ru": "Министр финансов ЮАР Энох Годонгвана готов представить фискальный якорь, чтобы закрепить прогресс, достигнутый в восстановлении государственных финансов страны, поскольку война в Иране подвергает эти достижения испытанию."
-  },
   {
    "title": "Defensive stocks' surge signals more pain for AI-led market, says CIO",
    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1jajJXUzMxRXljbURsekFma2p3eXcyQ2ZIZDUtV1phdTVieTd3S1BZY1RVNjlsUXZTckRiTW90QUFtcmx0akFGb3B2VGNxRllJV1BmX3JxZ1J5dXdkMjBrcElfMkczbzQ?oc=5",
@@ -10367,6 +10336,19 @@
    "score": 3,
    "ts": "2026-10-23T23:28:26.760434+00:00",
    "title_ru": "Центральный банк Нигерии предоставил JPMorgan первоначальный NOD для запуска торгового банка"
+  },
+  {
+   "title": "Stocks fall across the board but AI stocks stabilize",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9mU3JWcTQ1RDl6WjRsM2kyNkdJNG5yQWNIY2xkWEhhUGxWdEw5UVRGYkdqdkNjbjFTc2dhRTMyZUR6djlGS3g2cjhjSDB2T1J4UHZIN1NQMFFnTzd5V2ZWejRlN1ZYUQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T23:38:26.788372+00:00",
+   "title_ru": "Акции падают повсеместно, но акции ИИ стабилизируются",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-23",
@@ -11128,6 +11110,36 @@
  "all_down_alerted": false,
  "trades": {
   "congress": [
+   {
+    "src": "house",
+    "who": "Cleo Fields",
+    "where": "House, LA-06",
+    "owner": "",
+    "ticker": "TSM",
+    "asset": "Taiwan Semiconductor Manufacturing Company Ltd.",
+    "type": "buy",
+    "amin": 1001,
+    "amax": 15000,
+    "date": "2026-10-09",
+    "disclosed": "2026-10-22",
+    "link": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035669.pdf",
+    "id": "8e858b9bc9375a78"
+   },
+   {
+    "src": "house",
+    "who": "Cleo Fields",
+    "where": "House, LA-06",
+    "owner": "",
+    "ticker": "NVDA",
+    "asset": "NVIDIA Corporation - Common Stock",
+    "type": "buy",
+    "amin": 1001,
+    "amax": 15000,
+    "date": "2026-10-01",
+    "disclosed": "2026-10-22",
+    "link": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035669.pdf",
+    "id": "d299744ed163d979"
+   },
    {
     "src": "senate",
     "who": "Alan Armstrong",
@@ -12949,6 +12961,22 @@
     "date": "2026-10-22",
     "disclosed": "2026-10-23",
     "link": "https://www.sec.gov/Archives/edgar/data/1549966/000101359426001082/0001013594-26-001082-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "e8ed220b88407364",
+    "ticker": "ALMR",
+    "company": "Alamar Biosciences, Inc.",
+    "who": "Qiming Corporate Gp Vi, Ltd. et al.",
+    "role": "10% owner",
+    "type": "sell",
+    "value": 10253095,
+    "shares": 342626,
+    "price": 29.93,
+    "plan": false,
+    "date": "2026-10-22",
+    "disclosed": "2026-10-23",
+    "link": "https://www.sec.gov/Archives/edgar/data/2129740/000123191926001497/0001231919-26-001497-index.htm"
    },
    {
     "src": "sec",
@@ -16613,22 +16641,6 @@
     "date": "2026-10-14",
     "disclosed": "2026-10-16",
     "link": "https://www.sec.gov/Archives/edgar/data/2116137/000162828026066061/0001628280-26-066061-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "4c2d3722ba1a18a8",
-    "ticker": "JOF",
-    "company": "JAPAN SMALLER CAPITALIZATION FUND INC",
-    "who": "Saba Capital Management, L.p.",
-    "role": "10% owner",
-    "type": "buy",
-    "value": 161930,
-    "shares": 13133,
-    "price": 12.33,
-    "plan": false,
-    "date": "2026-10-14",
-    "disclosed": "2026-10-16",
-    "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000353/0001510281-26-000353-index.htm"
    }
   ],
   "docs": {
@@ -16655,7 +16667,9 @@
    "20035691": "2026-10-20",
    "7dfdae57-9401-4bf1-9059-85d1e5ee4a84": "2026-10-21",
    "94c5f7b9-cdbc-40b4-aeba-de920da58588": "2026-10-21",
-   "6aa5ccb2-ff27-491a-9314-778b9ab37964": "2026-10-22"
+   "6aa5ccb2-ff27-491a-9314-778b9ab37964": "2026-10-22",
+   "20035669": "2026-10-22",
+   "20035700": "2026-10-22"
   },
   "queue": [],
   "ready": {
@@ -16663,24 +16677,31 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-23T22:32:41.439985+00:00",
+  "checked": "2026-10-23T23:33:26.730203+00:00",
   "sec_seen": [
    "0001062993-26-005533",
    "0002076243-26-000005",
    "0001437906-26-000005",
+   "0001022079-26-000110",
    "0001193125-26-430695",
    "0001193125-26-430728",
    "0001193125-26-430729",
    "0001100682-26-000151",
    "0000904454-26-000537",
+   "0001022079-26-000113",
+   "0001022079-26-000114",
+   "0001022079-26-000111",
    "0001193125-26-430732",
    "0001821737-26-000017",
    "0001851564-26-000045",
+   "0001934887-26-000005",
    "0000070858-26-000508",
    "0000904454-26-000534",
    "0001585521-26-000155",
    "0000904454-26-000535",
+   "0001022079-26-000115",
    "0001670723-26-000005",
+   "0001022079-26-000116",
    "0000904454-26-000539",
    "0001193125-26-430727",
    "0001993529-26-000005",
@@ -16692,10 +16713,12 @@
    "0000950103-26-016119",
    "0000904454-26-000531",
    "0001585521-26-000153",
+   "0001022079-26-000112",
+   "0001231919-26-001497",
    "0000311094-26-000060",
    "0001193125-26-430731",
    "0001588894-26-000024",
-   "0001934887-26-000005",
+   "0001022079-26-000109",
    "0000950103-26-016120"
   ],
   "errors": {
