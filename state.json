@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "984e65abd01d5bc9": "2026-10-20T18:13:33.132219+00:00",
-  "6f865bc025ebe1cc": "2026-10-20T18:13:33.132219+00:00",
-  "2c7aa3530a64fad6": "2026-10-20T18:18:33.133285+00:00",
-  "75d41932a42395d9": "2026-10-20T18:18:33.133285+00:00",
   "47429ae24cf0ec96": "2026-10-20T18:28:33.150136+00:00",
   "6ecebb7ff72a9f70": "2026-10-20T18:28:33.150136+00:00",
   "ab7516f85890ab8d": "2026-10-20T18:28:33.150136+00:00",
@@ -1008,31 +1004,10 @@
   "4a22d93052796cb7": "2026-10-23T18:07:41.474844+00:00",
   "693771ef8abcee98": "2026-10-23T18:07:41.474844+00:00",
   "4972d5ce46bbd9ec": "2026-10-23T18:07:41.474844+00:00",
-  "9a3212c3bb551d1b": "2026-10-23T18:12:41.636074+00:00"
+  "9a3212c3bb551d1b": "2026-10-23T18:12:41.636074+00:00",
+  "03d7ed4a3cdbc197": "2026-10-23T18:22:41.510338+00:00"
  },
  "recent": [
-  {
-   "title": "The 60/40 Portfolio Is Caught in an Inflation Trap",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOMzhSN19CUmFYcGY5clFqUXVCVU1ud19Jbk5nNFppSXQ1UzNkaGJVel9XTmVVSTctemtQajhYWHRNY0M0UHJLNW53a3pSSVAtbDA2bWN2RkRmMGRSRzVLRDJrdndhNmpFZndObWMwWGEtczhacXE4cWpGX2hEa2Y0cXpsSjFVM00yQTZ2dXZBdTNsbUtXbk11aW5jZ2ZkS3B3Yjg4?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-20T18:18:33.133285+00:00",
-   "title_ru": "Портфель 60/40 попал в инфляционную ловушку",
-   "tags": [
-    "inflation"
-   ]
-  },
-  {
-   "title": "Here’s what matters most to Tesla investors heading into earnings",
-   "link": "https://www.marketwatch.com/story/heres-what-matters-most-to-tesla-investors-heading-into-earnings-6b9e5d27?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 2,
-   "ts": "2026-10-20T18:18:33.133285+00:00"
-  },
   {
    "title": "IEA oil stocks release timing is up to individual members, chief says",
    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNbjQwUGZrTC00LUMtdFBsaTRfQTJoUWp5MzdPTG04MllSbUZXSDN4RW1IQkkyYmNHT2pCM1BKdlVaQWJkbEQ1ck5rWWF2U2VWVlZzOEFIdkJRNjN6YkZxZ3djNVBRcVIzTWR5QXpPQzVMTkZJVFJwYlVRODFqTW11WXZBSmwwaXAyUGtQNEJ2LXh0N05seUVGSk5wbTZTNGpXT29xRTlBcFFuMy1mbm1WNkt1d25QX1hF?oc=5",
@@ -10274,6 +10249,15 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "Can Nvidia’s stock become a safe haven as Wall Street rethinks the AI trade?",
+   "link": "https://www.marketwatch.com/story/can-nvidias-stock-become-a-safe-haven-as-wall-street-rethinks-the-ai-trade-64862936?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-23T18:22:41.510338+00:00"
   }
  ],
  "last_digest": "2026-10-23",
@@ -10325,7 +10309,7 @@
   "2026-10-23-21"
  ],
  "calendar": {
-  "fetched": "2026-10-23T12:16:55.686706+00:00",
+  "fetched": "2026-10-23T18:17:41.443541+00:00",
   "events": [
    {
     "title": "IMF Meetings",
@@ -12600,6 +12584,22 @@
     "date": "2026-10-22",
     "disclosed": "2026-10-23",
     "link": "https://www.sec.gov/Archives/edgar/data/1595040/000088563926000186/0000885639-26-000186-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "aa0e395095c49c07",
+    "ticker": "MXF",
+    "company": "MEXICO EQUITY & INCOME FUND INC",
+    "who": "Saba Capital Management, L.p.",
+    "role": "10% owner",
+    "type": "buy",
+    "value": 40280,
+    "shares": 2000,
+    "price": 20.14,
+    "plan": false,
+    "date": "2026-10-22",
+    "disclosed": "2026-10-23",
+    "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000376/0001510281-26-000376-index.htm"
    },
    {
     "src": "sec",
@@ -16520,22 +16520,6 @@
     "date": "2026-10-14",
     "disclosed": "2026-10-15",
     "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000351/0001510281-26-000351-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "a82fdfaf724e31bc",
-    "ticker": "DGXX",
-    "company": "Digi Power X Inc.",
-    "who": "Michel Amar",
-    "role": "CEO, 10% owner",
-    "type": "buy",
-    "value": 55256,
-    "shares": 20000,
-    "price": 2.76,
-    "plan": false,
-    "date": "2026-10-14",
-    "disclosed": "2026-10-15",
-    "link": "https://www.sec.gov/Archives/edgar/data/1912453/000121390026109819/0001213900-26-109819-index.htm"
    }
   ],
   "docs": {
@@ -16570,25 +16554,24 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-23T17:16:55.802869+00:00",
+  "checked": "2026-10-23T18:17:41.443541+00:00",
   "sec_seen": [
    "0001437749-26-033375",
-   "0001437749-26-033371",
+   "0001510281-26-000376",
+   "0001214659-26-013158",
+   "0001437749-26-033379",
+   "0002111103-26-000043",
    "0001437749-26-033377",
    "0001760581-26-000073",
+   "0001190249-26-000001",
    "0001578926-26-000050",
    "0000885639-26-000186",
    "0001493152-26-048199",
-   "0001096906-26-001615",
-   "0001214659-26-013158",
-   "0001437749-26-033379",
    "0001215315-26-000046",
-   "0001750052-26-000052",
-   "0001950027-26-000053",
-   "0002111103-26-000043",
-   "0001190249-26-000001",
    "0001968243-26-000054",
    "0001437749-26-033381",
+   "0001750052-26-000052",
+   "0001950027-26-000053",
    "0001185185-26-004959"
   ],
   "errors": {
