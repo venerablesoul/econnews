@@ -1005,7 +1005,11 @@
   "92c4766211c762d7": "2026-10-23T12:41:55.682510+00:00",
   "047a88ab5514dd49": "2026-10-23T12:46:55.743506+00:00",
   "86dc34f8eae1c144": "2026-10-23T12:51:55.697460+00:00",
-  "39b8b77fe6a9ebbc": "2026-10-23T12:51:55.697460+00:00"
+  "39b8b77fe6a9ebbc": "2026-10-23T12:51:55.697460+00:00",
+  "21cec0710208882f": "2026-10-23T12:56:55.768878+00:00",
+  "b40df6e71c634f18": "2026-10-23T12:56:55.768878+00:00",
+  "7f099d12c7489cba": "2026-10-23T12:56:55.768878+00:00",
+  "47425fee5e93b461": "2026-10-23T12:56:55.768878+00:00"
  },
  "recent": [
   {
@@ -10327,6 +10331,53 @@
    "tags": [
     "jobs"
    ]
+  },
+  {
+   "title": "Wall St Week Ahead Earnings flood, Fed meeting pose pivotal tests for rickety AI market rally",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPR3FjeUJFd2Z6ZFBxOEFlLUx4anZlN1BqeFkxQ1pFcTdXTENYc0tMdW9RbjJ1Vk91Y2tmSXVoRDFCTmZoQ2cxN3BaSlFfTXplZUNZTFIzVmR3OTVmUVYzWnBXVkxRNXAtOEpBSUpIVjlBMnJ6cVViYnFSSHZoaC1CbkR5TnBzZndWNEo5aFlkWTVKY0hSYzRuOTlzUjYwcGlrcFJKQXhlbmFOMHNWLTRiRHZaM21fWEF1SDl1Mg?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-23T12:56:55.768878+00:00",
+   "title_ru": "Наводнение на Wall St Week Ahead Earnings, заседание ФРС представляют собой ключевые тесты для шаткого ралли рынка ИИ",
+   "tags": [
+    "Fed",
+    "markets"
+   ]
+  },
+  {
+   "title": "Заседание совета директоров ЦБ России. Главное",
+   "link": "https://www.kommersant.ru/doc/9059054",
+   "sources": [
+    "Kommersant"
+   ],
+   "score": 5,
+   "ts": "2026-10-23T12:56:55.768878+00:00",
+   "title_en": "Meeting of the Board of Directors of the Central Bank of Russia. The main",
+   "lead": "В пятницу, 23 октября, Банк России принял решение сохранить ключевую ставку на уровне 14%. «Ъ» собрал ключевые заявления ЦБ РФ по итогам заседания совета директоров.",
+   "lead_en": "On Friday, October 23, the Bank of Russia decided to keep the key rate at 14%. Kommersant has collected key statements of the Central Bank of the Russian Federation following the meeting of the Board of Directors.",
+   "tags": [
+    "BankOfRussia",
+    "rates",
+    "Russia"
+   ]
+  },
+  {
+   "title": "Глава ЦБ заявила о необходимости ограничения льготной ипотеки",
+   "link": "https://www.rbc.ru/economics/23/10/2026/6adb586d9765ed241acb0237",
+   "sources": [
+    "RBC"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T12:56:55.768878+00:00",
+   "title_en": "The head of the Central Bank stated the need to limit preferential mortgages",
+   "lead": "Льготная ипотека в России должна быть ограничена и ее объемы не должны расти, заявила на пресс-конференции глава Центробанка Эльвира Набиуллина.",
+   "lead_en": "Preferential mortgages in Russia should be limited and their volumes should not grow, the head of the Central Bank Elvira Nabiullina said at a press conference.",
+   "tags": [
+    "BankOfRussia",
+    "Russia"
+   ]
   }
  ],
  "last_digest": "2026-10-22",
@@ -16653,7 +16704,6 @@
    "0001493152-26-048157",
    "0001973495-26-000007",
    "0001213900-26-111795",
-   "0002161365-26-000008",
    "0001891037-26-000011"
   ],
   "errors": {
