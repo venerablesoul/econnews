@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c22c8feb429dbc6d": "2026-10-20T06:26:52.851141+00:00",
   "aa5d022cf3a07956": "2026-10-20T06:41:52.470409+00:00",
   "155c192f37b05351": "2026-10-20T06:46:52.433198+00:00",
   "4146e1d8874c604c": "2026-10-20T06:56:52.431531+00:00",
@@ -954,22 +953,10 @@
   "43fb1e23e711c58c": "2026-10-23T06:20:51.511841+00:00",
   "5a4ba0144133b82e": "2026-10-23T06:20:51.511841+00:00",
   "9527bca1466c883e": "2026-10-23T06:20:51.511841+00:00",
-  "6f7f8f98c7ba8194": "2026-10-23T06:25:51.525322+00:00"
+  "6f7f8f98c7ba8194": "2026-10-23T06:25:51.525322+00:00",
+  "56fe187ad6c1acf0": "2026-10-23T06:30:51.521337+00:00"
  },
  "recent": [
-  {
-   "title": "Copper Boom Belies a Deepening ‘Mining Recession’ in Top Producer",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQcUZZV3dka0trejF6WjhKRkVKZVJ2TEU1bktCX1lsemQtZ05kcC1hX3lHaVlHckROWkpHNEpBakc0cTNMQVRzdFJSaUVXbUpubnlMYUlBMHZVX1l2WjR5cGUzZWFrb2oyTU9MQjBiNUZkQjdJYVZWWU45aTIwTjYxeXdjNWhXMEtVbzFuSk00OFlaaTBTek03WktqSnZIUWthU2NTTVR4U2FGc3RlMVduRkFNd24?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-20T06:26:52.851141+00:00",
-   "title_ru": "Медный бум опровергает углубляющуюся «рецессию в горнодобывающей промышленности» в крупнейшей стране-производителе",
-   "tags": [
-    "GDP"
-   ]
-  },
   {
    "title": "UK Jobs Data, Wage Growth Strengthens Case for Bank of England Rate Hikes",
    "link": "https://www.bloomberg.com/news/newsletters/2026-10-20/uk-jobs-data-wage-growth-strengthens-case-for-bank-of-england-rate-hikes",
@@ -9673,6 +9660,18 @@
    "tags": [
     "GDP"
    ]
+  },
+  {
+   "title": "AI Rout Hits Asia as Investors Rush to Safety",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-23/insight-with-haslinda-amin-10-23-2026-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T06:30:51.521337+00:00",
+   "title_ru": "AI Rout поражает Азию, поскольку инвесторы спешат в безопасное место",
+   "lead": "\"Insight with Haslinda Amin\" is a daily news program featuring in-depth, high-profile interviews and analysis to give viewers the complete picture on the stories that matter.",
+   "lead_ru": "«Инсайт с Хаслиндой Амин» - это ежедневная новостная программа с подробными, громкими интервью и анализом, чтобы дать зрителям полное представление о важных историях."
   }
  ],
  "last_digest": "2026-10-22",
@@ -15977,6 +15976,7 @@
    "0002157445-26-000002",
    "0000897069-26-001865",
    "0001349983-26-000013",
+   "0002032458-26-000030",
    "0001607879-26-000008",
    "0001973495-26-000007",
    "0001855880-26-000022",
@@ -15985,7 +15985,6 @@
    "0001769628-26-000450",
    "0002083595-26-000010",
    "0001266824-26-000217",
-   "0001455134-26-000023",
    "0001193125-26-429162",
    "0001891751-26-000010",
    "0001769628-26-000451",
@@ -16011,7 +16010,7 @@
    "0001628280-26-066951",
    "0000902664-26-004257",
    "0001140361-26-040540",
-   "0002032458-26-000030",
+   "0001455134-26-000023",
    "0001213900-26-111771",
    "0001493152-26-048149",
    "0001437749-26-033305"
