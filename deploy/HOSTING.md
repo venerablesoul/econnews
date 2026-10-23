@@ -15,7 +15,7 @@ The fix is a one-file relay on any ordinary PHP hosting (terminalbloom.com is on
    Either upload them or create them with **+ File** and paste the text.
 3. Open `https://terminalbloom.com/api/ping` — it must show `{"ok":true,"service":"econnews-bot",...}`.
 
-That is all: `docs/config.json` already lists `https://terminalbloom.com` in `api_alt`. Every viewer's terminal asks
+Then add the address to `api_alt` in `docs/config.json` — only a domain you own: the terminal sends the viewer's sign-in headers there. Every viewer's terminal asks
 all addresses at once and keeps the first that answers, so viewers abroad stay on workers.dev and viewers in Russia
 switch to the relay by themselves.
 
