@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e526d7b1b95388ae": "2026-10-20T17:33:33.100076+00:00",
   "6aa317ba0d052c0e": "2026-10-20T17:38:33.138530+00:00",
   "bbdcb3b673158cee": "2026-10-20T17:38:33.138530+00:00",
   "63406dd4c0ae5d3a": "2026-10-20T17:43:33.095119+00:00",
@@ -1015,22 +1014,10 @@
   "2c3621f279ebf047": "2026-10-23T17:06:55.706480+00:00",
   "4745790aa136225d": "2026-10-23T17:06:55.706480+00:00",
   "ca83b44ad457c04f": "2026-10-23T17:16:55.802869+00:00",
-  "ea33f14243b97861": "2026-10-23T17:32:41.488316+00:00"
+  "ea33f14243b97861": "2026-10-23T17:32:41.488316+00:00",
+  "119137cb82a0d0be": "2026-10-23T17:37:41.462341+00:00"
  },
  "recent": [
-  {
-   "title": "Trump Administration Sued Over 50% Tariffs on Canadian Products",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPUGVFb0Mtd09NZF90S24wRWJyVjc0amRwSUlOOGJYa01oeUM4WkZiLTJVLUw2aWZYYXY5NmdDNWVYT1FvNlEyRi0yYXhoSGxVdWwxdFdGdzhMZ2M2ZFhkM1dTV2M4UFJON1BFbkRkNmIwUHFlMHB2MVhsd1BRSWFac1FNejF2ckZoWER6ZHFoRmpMel82Q2NEb3p3MWRBSFdEZ3dNTDZwak11bW9WUEhnQTFzRQ?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-20T17:33:33.100076+00:00",
-   "title_ru": "Администрация Трампа подала в суд на более чем 50% тарифы на канадские товары",
-   "tags": [
-    "tariffs"
-   ]
-  },
   {
    "title": "US senior housing operator Discovery Senior Living explores sale, sources say",
    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOSjRMYl8tcWpPNU84eGJXOGRRRHVLbXBVTXlFNElyaUNval82WXhPRDhjWGd3N01XQi1fVjN1dFREZVNpaEhSQlREejJqN0lYNDI5QmtMUHdjS2ctWVN4dTVHSkxkQ2dydnBfUDBVVTZscnZBdWpMWm1oLTNvYko0bzN1cWFWOWg1R1V3Wk51dHlZRGZNT1NteWZCVnFoLTRKQnk2ajlOTUJFVUlmdnNsNDFkcHc1cndURjRPbWJFVVpBVXJaQXdYdzc2RVk?oc=5",
@@ -10305,6 +10292,19 @@
    "title_ru": "Рынок репо настроен на волатильность в позднем клиринговом толчке, говорит CIBC",
    "lead": "US funding markets risk facing a volatile, last-minute “scramble” to meet a key 2027 deadline for mandatory central clearing of daily transactions, strategists at Canadian Imperial Bank of Commerce warned.",
    "lead_ru": "Фондовые рынки США рискуют столкнуться с волатильной «схваткой» в последнюю минуту, чтобы уложиться в ключевой срок 2027 года для обязательного центрального клиринга ежедневных транзакций, предупредили стратеги Canadian Imperial Bank of Commerce."
+  },
+  {
+   "title": "UAE Closes Some Beaches After Tanker Oil Spill in Persian Gulf",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQckU3WnhmY1F3bjhocVpfT0VBbGc2amk0UmhWZE9jeXdzclRESW5sRWxrWnFCY2NwaWhkNkg1bUZNSUROdW1aVy1Xa1Bub2x5b0FsWW5FLThVZk5rQVFSbVdieVJtQ2J6OEE0ZkdvREZYc2tBSzhHZmk0V2FGYmdBNkFfWXllVGNjdWlKdUZEQVdpd1F0aWVsTnc1TFB0OEpDd1RWSU56aG81aXdidjZ0VEJ4aw?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T17:37:41.462341+00:00",
+   "title_ru": "ОАЭ закрывают некоторые пляжи после разлива танкерной нефти в Персидском заливе",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-22",
@@ -16605,9 +16605,12 @@
   "sec_seen": [
    "0001437749-26-033367",
    "0001060529-26-000002",
+   "0001437749-26-033371",
    "0001437749-26-033369",
    "0001493152-26-048196",
-   "0001062993-26-005522"
+   "0001190249-26-000001",
+   "0001062993-26-005522",
+   "0001096906-26-001615"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
