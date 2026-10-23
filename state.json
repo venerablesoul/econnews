@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "f15f8f1e0a7a233d": "2026-10-20T23:39:11.827974+00:00",
   "63893dd7a75a0694": "2026-10-20T23:44:11.841345+00:00",
   "8489a27146e68314": "2026-10-20T23:54:11.887987+00:00",
   "fdfba29b79e793b5": "2026-10-20T23:54:11.887987+00:00",
@@ -1008,22 +1007,11 @@
   "f66c737ff5d4bc6b": "2026-10-23T23:23:26.788812+00:00",
   "7987238ab23ec08a": "2026-10-23T23:28:26.760434+00:00",
   "1156240badd4b24a": "2026-10-23T23:28:26.760434+00:00",
-  "316ce8bc418d4510": "2026-10-23T23:38:26.788372+00:00"
+  "316ce8bc418d4510": "2026-10-23T23:38:26.788372+00:00",
+  "7f92f54da78ef813": "2026-10-23T23:43:26.729162+00:00",
+  "774cede80e249aaf": "2026-10-23T23:43:26.729162+00:00"
  },
  "recent": [
-  {
-   "title": "Defensive stocks' surge signals more pain for AI-led market, says CIO",
-   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1jajJXUzMxRXljbURsekFma2p3eXcyQ2ZIZDUtV1phdTVieTd3S1BZY1RVNjlsUXZTckRiTW90QUFtcmx0akFGb3B2VGNxRllJV1BmX3JxZ1J5dXdkMjBrcElfMkczbzQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-20T23:39:11.827974+00:00",
-   "title_ru": "Рост защитных акций сигнализирует о еще большей боли для рынка, основанного на искусственном интеллекте, говорит ИТ-директор",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Oil Steadies as Traders Weigh Conflicting Signals on Iran Talks",
    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNblJWeWlxaDBENVkyZVNvTWhzNVFvNldZd01GVE9venlBdk5IRkw1RHpJQ2UtaWFrQmtnR1NNbVpsb0hzcTR2X0VBaWdhckRVd3BwYkphakFYcWJtZk1IZWZlcDAwMmxGbkpOaTk0M1hiaTFpMmZPVFRMUXhEZFpoazZtSnoyczE5akRHNVpBYnBPcHl6dDFoSHV6MjJ4UQ?oc=5",
@@ -10349,6 +10337,16 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "UK regulator urges tighter private market controls to avoid conflicts of interest",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQTzBKeHpHaWFUb3pJVkdRSlRzU09ObXlzYzdMN3gzNnNvMzF3VVA1U0g4cm5zc25kZW9INFJNSzhEWUR4alRpeWU5bDdHSzlxNkowbEdzeWtBQnFhUjJQWUpTX1RXZlZhaEJ1Y0JCRGRqVjdZSkc3bkN1TmJJTTBrbnFKQ0NkOVQ2NUM0Q2FYakV0a29lZVNpN0FvbnB4b29xeFFfM2lUVVFNLU8xR21wZHlzZEhrZ3A3dWhqR2x2UjRpSDJ6bkxN?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T23:43:26.729162+00:00",
+   "title_ru": "Регулятор Великобритании призывает ужесточить контроль над частным рынком, чтобы избежать конфликта интересов"
   }
  ],
  "last_digest": "2026-10-23",
@@ -12977,6 +12975,22 @@
     "date": "2026-10-22",
     "disclosed": "2026-10-23",
     "link": "https://www.sec.gov/Archives/edgar/data/2129740/000123191926001497/0001231919-26-001497-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "2a4145a4439c5695",
+    "ticker": "PUBM",
+    "company": "PubMatic, Inc.",
+    "who": "Rajeev K. Goel",
+    "role": "CEO, 10% owner",
+    "type": "sell",
+    "value": 863237,
+    "shares": 50021,
+    "price": 17.26,
+    "plan": true,
+    "date": "2026-10-22",
+    "disclosed": "2026-10-23",
+    "link": "https://www.sec.gov/Archives/edgar/data/1833511/000183351126000042/0001833511-26-000042-index.htm"
    },
    {
     "src": "sec",
@@ -16625,22 +16639,6 @@
     "date": "2026-10-14",
     "disclosed": "2026-10-16",
     "link": "https://www.sec.gov/Archives/edgar/data/2116137/000162828026066061/0001628280-26-066061-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "b8a428b1e3ce2846",
-    "ticker": "BORR",
-    "company": "Borr Drilling Ltd",
-    "who": "Harvey Edward Snowling",
-    "role": "COO",
-    "type": "sell",
-    "value": 1473000,
-    "shares": 300000,
-    "price": 4.91,
-    "plan": false,
-    "date": "2026-10-14",
-    "disclosed": "2026-10-16",
-    "link": "https://www.sec.gov/Archives/edgar/data/2116137/000162828026066061/0001628280-26-066061-index.htm"
    }
   ],
   "docs": {
@@ -16687,14 +16685,15 @@
    "0001193125-26-430728",
    "0001193125-26-430729",
    "0001100682-26-000151",
+   "0001022079-26-000109",
+   "0001833511-26-000042",
    "0000904454-26-000537",
    "0001022079-26-000113",
    "0001022079-26-000114",
    "0001022079-26-000111",
    "0001193125-26-430732",
    "0001821737-26-000017",
-   "0001851564-26-000045",
-   "0001934887-26-000005",
+   "0001588894-26-000024",
    "0000070858-26-000508",
    "0000904454-26-000534",
    "0001585521-26-000155",
@@ -16708,7 +16707,6 @@
    "0001193125-26-430730",
    "0001585521-26-000154",
    "0002060000-26-000005",
-   "0001013594-26-001082",
    "0001195306-26-000005",
    "0000950103-26-016119",
    "0000904454-26-000531",
@@ -16717,8 +16715,8 @@
    "0001231919-26-001497",
    "0000311094-26-000060",
    "0001193125-26-430731",
-   "0001588894-26-000024",
-   "0001022079-26-000109",
+   "0001851564-26-000045",
+   "0001934887-26-000005",
    "0000950103-26-016120"
   ],
   "errors": {
