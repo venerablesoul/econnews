@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "0431d879b4cb8482": "2026-10-20T07:16:52.405793+00:00",
   "95e9b9653ad52986": "2026-10-20T07:36:52.423985+00:00",
   "b7d55c331870d830": "2026-10-20T07:46:52.424675+00:00",
   "4b15dd3a58c207ad": "2026-10-20T07:51:52.397237+00:00",
@@ -963,22 +962,11 @@
   "f95dbeb263f44a95": "2026-10-23T07:11:24.881713+00:00",
   "4fa427fa4332bd08": "2026-10-23T07:11:24.881713+00:00",
   "6eb0573ec8a44572": "2026-10-23T07:11:24.881713+00:00",
-  "fd72c211baa6926a": "2026-10-23T07:16:24.876188+00:00"
+  "fd72c211baa6926a": "2026-10-23T07:16:24.876188+00:00",
+  "8f7f61c1333e4a9f": "2026-10-23T07:21:24.927765+00:00",
+  "af150fa0c48645d5": "2026-10-23T07:21:24.927765+00:00"
  },
  "recent": [
-  {
-   "title": "South African rand holds steady ahead of budget, inflation data",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQbV9XZGNnZHlLZFV0MS00Z3hLOWhxNmxkSFBtYl9pY1N3YTlPQnhhRlJKemJmbnlmY3lXZWNRWE1ua2ZTMmVPVXF0Mk9RMDlhOHk1QW9OS3VhdDI2TmN3X004WG5iUll1dUh6WUNqclhFU2FhSTMwTXVqUmgzeGlxNU1XbGpMNDBUSF9NYUF4bTVkUU1Fa19RVGU5QzBtT3B2cVhVVXQxMk5QU3lx?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-20T07:16:52.405793+00:00",
-   "title_ru": "Южноафриканский ранд держится стабильно, опережая бюджет и данные по инфляции",
-   "tags": [
-    "inflation"
-   ]
-  },
   {
    "title": "China flags APEC's role as key for a challenged global economy",
    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOQXlaQTdVSjB0cS1HeThNc1hMYlJiZjdrT1VTLUNhZjl5QjNpYU1EQTEtaDVfUWtSeGEtZG5ZNWxxeS0zbmpVV202NnJwQlVUWWU3RUo2QzFlV25nX2haVEg2YU5VaUh3UmxTZndSSG1fZGVRU0FIcnIySnRIcXA3c3FUbnBIcUJPZEUtQVZsNTgxS2JudFZpMl9RZUVkR284STBrek9md3JlSjg?oc=5",
@@ -9810,6 +9798,33 @@
    "score": 4,
    "ts": "2026-10-23T07:16:24.876188+00:00",
    "title_ru": "Индия Октябрьский рост бизнеса достиг 4-месячного максимума; найм киосков, PMI показывает"
+  },
+  {
+   "title": "Kazakhstan Cuts Base Rate by 50 Basis Points as Inflation Slows",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-23/kazakhstan-cuts-base-rate-by-50-basis-points-as-inflation-slows",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-23T07:21:24.927765+00:00",
+   "title_ru": "Казахстан снижает базовую ставку на 50 базисных пунктов в связи с замедлением инфляции",
+   "lead": "Kazakhstan cut interest rates for a fourth consecutive meeting after inflation in Central Asia’s largest oil producer slowed to the lowest level since early 2025, but warned there’s little chance of a further reduction this year.",
+   "lead_ru": "Казахстан снизил процентные ставки четвертый раз подряд после того, как инфляция в крупнейшем производителе нефти в Центральной Азии замедлилась до самого низкого уровня с начала 2025 года, но предупредил, что в этом году мало шансов на дальнейшее снижение.",
+   "tags": [
+    "rates",
+    "inflation",
+    "oil"
+   ]
+  },
+  {
+   "title": "From Buenos Aires to Colombo, discontent simmers under the surface of rebounding economies",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQUmd4c1NoUjhtblFiOGZ6UThLeU9KdnBqOTQ2c0dXTklMcXA5ZU9QT2pXcUlLSGlKdVVKRzZpZGVram92azF3S0VQcXN4TmpvMENXNVdhYlNCSzVlMW9pZVE1Q3Jrb3hqNjFxa20wTXZHdERSN2NuR05ONC16QkNZZm5FZWh2NVJMVmhndHV4QkNkYTJ0OWd4S0xKM2V1VElHcTdXM3pEeVh6U0FleEJjMGNEWFdfQUhrd3lCblhMUXhQU2Y2U2c?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T07:21:24.927765+00:00",
+   "title_ru": "От Буэнос-Айреса до Коломбо недовольство кипит под поверхностью восстанавливающихся экономик"
   }
  ],
  "last_digest": "2026-10-22",
@@ -16108,8 +16123,8 @@
   },
   "checked": "2026-10-23T06:51:24.925269+00:00",
   "sec_seen": [
-   "0001607879-26-000008",
    "0001769628-26-000450",
+   "0001607879-26-000008",
    "0001193125-26-429202",
    "0001493152-26-048153",
    "0001944970-26-000029",
@@ -16120,8 +16135,8 @@
    "0002157445-26-000002",
    "0000921895-26-002845",
    "0001635088-26-000116",
-   "0002161365-26-000008",
    "0001062993-26-005508",
+   "0002161365-26-000008",
    "0002032458-26-000030",
    "0000897069-26-001865",
    "0001628280-26-066948",
@@ -16131,7 +16146,6 @@
    "0001493152-26-048149",
    "0001891037-26-000011",
    "0001266824-26-000217",
-   "0001628280-26-066951",
    "0001213900-26-111771",
    "0000829224-26-000149",
    "0001193125-26-429162",
@@ -16145,11 +16159,12 @@
    "0001628280-26-066941",
    "0002066491-26-000013",
    "0000902664-26-004257",
+   "0001753539-26-000149",
    "0001891751-26-000010",
    "0001628280-26-066949",
    "0001193125-26-429245",
    "0001973495-26-000007",
-   "0001753539-26-000149",
+   "0001628280-26-066951",
    "0001349983-26-000013",
    "0001493152-26-048147"
   ],
