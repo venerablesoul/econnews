@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "0bd07a7bc5a0604b": "2026-10-20T12:13:05.302527+00:00",
-  "80e8d02b2c1a400e": "2026-10-20T12:13:05.302527+00:00",
-  "2935dbceb784bcba": "2026-10-20T12:13:05.302527+00:00",
   "88cba8203b48e3eb": "2026-10-20T12:23:05.343972+00:00",
   "7858818df6db8491": "2026-10-20T12:23:05.343972+00:00",
   "4a22d93052796cb7": "2026-10-20T12:38:05.308326+00:00",
@@ -999,52 +996,11 @@
   "908b3876f2f7d4d7": "2026-10-23T12:02:00.724408+00:00",
   "84716fe2e36f65f9": "2026-10-23T12:06:55.655595+00:00",
   "9697878d96ec8d7a": "2026-10-23T12:11:55.682806+00:00",
-  "85c92bd6d59ec864": "2026-10-23T12:11:55.682806+00:00"
+  "85c92bd6d59ec864": "2026-10-23T12:11:55.682806+00:00",
+  "7da3d7f1aead97ea": "2026-10-23T12:16:55.686706+00:00",
+  "3820822129523b56": "2026-10-23T12:16:55.686706+00:00"
  },
  "recent": [
-  {
-   "title": "GM shares sink as full-year profit forecast misses Wall Street estimates",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPRnpBNEpFcnF0SnZqa1ZfTHM3VnJuQWc4SE5CSWpNQXNMWV85ZmRTNHBzeUdsNmdKTklmTjZxSVZQVFp1VDZFTnBiLXhmSFE3OFlVNVVLSUludTdNSFhQV3ppc2RSY2ZFNFVmQnJPcG5NVDh3cm5XTlVxYzQ2b2MzRXRTTUVUSXV4SGxydGlIdVh6NTQ0dlBqMjhXa3RCNmJHbkhtVXZqd29jR29OLUVtUHRMQUFNTGJKMEMwRzlR?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-20T12:13:05.302527+00:00",
-   "title_ru": "Акции GM падают, поскольку прогноз прибыли за весь год не соответствует оценкам Уолл-стрит",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "European Gas Prices Rise Above €90 for First Time Since 2022",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-20/european-gas-prices-rise-above-90-for-first-time-since-2022",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T12:13:05.302527+00:00",
-   "title_ru": "Цены на газ в Европе поднялись выше 90 евро впервые с 2022 года",
-   "lead": "European natural gas climbed above €90 for the first time in almost four years, raising the threat of a renewed energy crunch as Europe heads into the peak winter heating season.",
-   "lead_ru": "Европейский природный газ поднялся выше 90 евро впервые за почти четыре года, что повышает угрозу возобновления энергетического кризиса, поскольку Европа приближается к пику зимнего отопительного сезона.",
-   "tags": [
-    "gas"
-   ]
-  },
-  {
-   "title": "AI Fears Return With Data Center IPO Flop; SpaceX, Netflix Earnings",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-20/bloomberg-brief-10-20-2026-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T12:13:05.302527+00:00",
-   "title_ru": "Искусственный интеллект опасается возвращения из-за провала IPO дата-центра; SpaceX, доходы Netflix",
-   "lead": "US equity futures slip, pausing an AI recovery in stocks, after South Korean data center company Elice plunged in its trading debut.",
-   "lead_ru": "Фьючерсы на американские акции падают, приостанавливая восстановление ИИ в акциях после того, как южнокорейская компания центров обработки данных Elice резко упала на своем торговом дебюте.",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Russia Ships the Least Oil in a Month as Major Baltic Port Halts",
    "link": "https://www.bloomberg.com/news/articles/2026-10-20/russia-ships-the-least-oil-in-a-month-as-major-baltic-port-halts",
@@ -10193,6 +10149,31 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "GLP-1 boom in China, India, Brazil could create $22 bln market by 2035, J.P. Morgan says",
+   "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQSW50UXhIb0ltNzNLV2piN1NQWGlud3p2YWJSMFZGYXE1NjRiSUY5SDdDQmI5UU9rVVBEWjhHWjZFckhKc2luSHhzTE5pSmJudVZmMXUtOG1PSE9XbTZTUVpaZWF1dkQ2R01BMTN3NnFNUmw3cWozalZRS0ZVcnJKOE1abXB5RnFUX1F1RlRoMGNxQW5BWmczbWhNTEQtcXNCTVNrR1pqV2RxRVVaRlZROWtpV28zUUZXTW9Odl9RMnFnQjZfcG1KRklZaWZJSnhQdlFPbGdKT0pUek1DVXpIWTNsWkNKdw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T12:16:55.686706+00:00",
+   "title_ru": "Бум GLP-1 в Китае, Индии, Бразилии может создать рынок на $ 22 млрд к 2035 году, говорит J.P. Morgan",
+   "tags": [
+    "China"
+   ]
+  },
+  {
+   "title": "What the coming copper crunch means for the global economy",
+   "link": "https://www.ft.com/content/06209f51-de7c-4de0-8e66-5c621a960b87?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T12:16:55.686706+00:00",
+   "title_ru": "Что означает грядущий медный кризис для мировой экономики",
+   "lead": "A looming shortage of the metal will push up costs for AI, defence tech and the green transition",
+   "lead_ru": "Надвигающаяся нехватка металла приведет к росту затрат на ИИ, оборонные технологии и зеленый переход"
   }
  ],
  "last_digest": "2026-10-22",
@@ -10244,7 +10225,7 @@
   "2026-10-23-09"
  ],
  "calendar": {
-  "fetched": "2026-10-23T06:15:51.532052+00:00",
+  "fetched": "2026-10-23T12:16:55.686706+00:00",
   "events": [
    {
     "title": "IMF Meetings",
@@ -16496,7 +16477,6 @@
    "0001944970-26-000029",
    "0001769628-26-000450",
    "0001193125-26-429381",
-   "0001628280-26-066951",
    "0002157445-26-000002",
    "0001769628-26-000451",
    "0001062993-26-005508",
