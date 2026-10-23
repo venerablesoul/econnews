@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "d2ca85c8c3c1f191": "2026-10-20T13:38:33.054427+00:00",
-  "85c4377a974e399a": "2026-10-20T13:38:33.054427+00:00",
   "e6a2b9523e37a4a5": "2026-10-20T13:43:33.148635+00:00",
   "b47da59dd4b2bda1": "2026-10-20T13:43:33.148635+00:00",
   "f339285d77cd5d6a": "2026-10-20T13:48:33.092465+00:00",
@@ -1018,22 +1016,11 @@
   "bc510bece5bc9e72": "2026-10-23T13:31:55.759150+00:00",
   "4b7af1d4a1539ce1": "2026-10-23T13:36:55.694608+00:00",
   "67f011abba325c2e": "2026-10-23T13:36:55.694608+00:00",
-  "de5c9900b5a76573": "2026-10-23T13:36:55.694608+00:00"
+  "de5c9900b5a76573": "2026-10-23T13:36:55.694608+00:00",
+  "f5dfae6fb78deea4": "2026-10-23T13:41:55.696714+00:00",
+  "4b880f3fe3ebc3f1": "2026-10-23T13:41:55.696714+00:00"
  },
  "recent": [
-  {
-   "title": "Fed to skip October but raise rates again in December, nearly all economists say",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOZUFYOUZFZXZ4UWJSN1J6RkRxM1lkdGJsUFZRZ2puQkFnRk9rczVQZF9iUS12amVsUl9ESnA4MmNlUmFuVnBVY3BoeVZoVWx1dmwtSWdCa2tGUUlXeXdWR0o0U2o5NHdUend5d2o3c1NoUlZTQUNyWFFEalBHY25QMVptcnFoRnZiSk1JVDFyb1VFYkg0NGRJaXhWemlUY3gxX3YxeVh0YkNMSHNQU21pWkc0OVQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T13:38:33.054427+00:00",
-   "title_ru": "ФРС пропустит октябрь, но снова повысит ставки в декабре, говорят почти все экономисты",
-   "tags": [
-    "Fed"
-   ]
-  },
   {
    "title": "Market Talk: US gas prices 'still elevated' despite Trump moves",
    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9uMkFJTERJTTVidUo3WC1FY0RLdWFmV2lrYTFTRkllVTRpeFJXRXJoRjVJa2VXdFh6Smk2YXhFMXlmVXp3UjFmRkdVLXJqalJhSXVkSldtZnF4VUg1a0tRRzlHb2FzZUgwUWxjdXA0QVVLby1xX0VfTw?oc=5",
@@ -10457,6 +10444,32 @@
     "ruble",
     "Russia"
    ]
+  },
+  {
+   "title": "Physical Oil Prices Drop in Mideast as Flows Via Hormuz Hold Up",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPU2JHWWVTdGUzemo5WVMyVy1IcFZ0QUFhSlNueVh1NDhLbkpQNFpuNmo5VFNvSF9ISkpCNHQxM2ZqZWVLZUJOZ01XTUhUU0dzbmVOdmtaUklwSU9ldExUaV9OdldDNUVBLUViVmRKeUh2YTh6QjZfR09tb3R1QnhnTFcyS0I0ZWJCRS14TDBEYTNzcjN5V19CRWRudWwtYnkycFRyMjhDXzhjWDhZTG4tbXd5Rkw?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-23T13:41:55.696714+00:00",
+   "title_ru": "Цены на физическую нефть падают на Ближнем Востоке, поскольку потоки через Ормуз удерживаются",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "The Fed Faces Its Most Confusing Economy Yet",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOTWtTcnB5VzZ4eWIwQV9sRU5BWmxDNXU3a1MyYm9MNEdvSXM4cjA0THVHMWVfT29lTnp2RDdXSG5JOERnci1iNjZCRWp2MkhYV1N4LXB3b0pILVVGc1c1d3RJWUNDSzFnS0dDRURUNTNCX3VmTWQ0djBYXy0wV0IwQ0xIVFByRGtJSUtSSDdPWkNBckhtTm1GbXktcmx6X3ZZY1dYbzlCTHZFcW9iMVM1dGlLWmpva3lzWUhTUHJqNC1fallTRzJZ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-23T13:41:55.696714+00:00",
+   "title_ru": "ФРС сталкивается со своей самой запутанной экономикой",
+   "tags": [
+    "Fed"
+   ]
   }
  ],
  "last_digest": "2026-10-22",
@@ -16755,7 +16768,6 @@
   },
   "checked": "2026-10-23T13:06:55.669422+00:00",
   "sec_seen": [
-   "0001891751-26-000010",
    "0001193125-26-429389",
    "0001769628-26-000450",
    "0001193125-26-429381",
@@ -16771,7 +16783,6 @@
    "0001493152-26-048181",
    "0001193125-26-429392",
    "0001213900-26-111813",
-   "0002066491-26-000013",
    "0001493152-26-048157",
    "0001973495-26-000007"
   ],
