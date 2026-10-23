@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "506d93c7fa0f31b7": "2026-10-20T15:33:33.181567+00:00",
   "f8b211d9133ea688": "2026-10-20T15:38:33.162294+00:00",
   "9696c93c0676198a": "2026-10-20T15:48:33.101023+00:00",
   "273649efb91554f4": "2026-10-20T15:48:33.101023+00:00",
@@ -1019,18 +1018,14 @@
   "4892ae6e79133f2b": "2026-10-23T15:21:55.675248+00:00",
   "4c58c31d73be4861": "2026-10-23T15:21:55.675248+00:00",
   "c23e77250f9ae64a": "2026-10-23T15:21:55.675248+00:00",
-  "b8311217250e6439": "2026-10-23T15:31:55.751326+00:00"
+  "b8311217250e6439": "2026-10-23T15:31:55.751326+00:00",
+  "c55509c82e691cac": "2026-10-23T15:36:55.903274+00:00",
+  "578459f17e7a872a": "2026-10-23T15:36:55.903274+00:00",
+  "978c62361dde3b71": "2026-10-23T15:36:55.903274+00:00",
+  "420236f67deef8a8": "2026-10-23T15:36:55.903274+00:00",
+  "ced7e1f4b0922a38": "2026-10-23T15:36:55.903274+00:00"
  },
  "recent": [
-  {
-   "title": "Salesforce’s stock falls as investors chafe at the cost of latest AI purchase",
-   "link": "https://www.marketwatch.com/story/salesforce-gets-a-chilly-investor-response-to-a-6-billion-deal-at-a-58-premium-57bd260b?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-20T15:33:33.181567+00:00"
-  },
   {
    "title": "Citadel's Esposito on Bank Partnerships, Fixed Income Growth",
    "link": "https://www.bloomberg.com/news/videos/2026-10-20/citadel-s-esposito-on-bank-partners-fixed-income-growth-video",
@@ -10400,6 +10395,60 @@
    ],
    "score": 1,
    "ts": "2026-10-23T15:21:55.675248+00:00"
+  },
+  {
+   "title": "Russian ESPO oil sellers seek record premiums as Gulf exports uncertain",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNRFdMeDFRZldDUmNTY1oyRGViTC1HOVdsZEhFdE9ORFk2Mkt1eHN0OGpaY2QzeFpHdThqaW5oRUZOLVRlM1VxOVZHWDQ0WlRvWk85Nzd0Q0lnRDdNbndUWFQ5M0JKb09sc01ha3VzaU9WQktuYU1Qa3BCRHc4a3lnQVI5ZExfTmIwTEVrWExkcUFhY2l1c3BlQXU4aTZfMDBZemVxRWQ5LWM5ekt3ZGd4ZjhqQ1Z5MXZzeFR0Xw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-23T15:36:55.903274+00:00",
+   "title_ru": "Российские продавцы нефти ВСТО стремятся к рекордным премиям, поскольку экспорт из Персидского залива неясен",
+   "tags": [
+    "oil",
+    "Russia"
+   ]
+  },
+  {
+   "title": "CFTC Takes Oil Trading Oversight ‘Very Seriously,’ Selig Says",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-23/cftc-takes-very-seriously-oil-trading-oversight-selig-says",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T15:36:55.903274+00:00",
+   "title_ru": "CFTC очень серьезно относится к надзору за торговлей нефтью, говорит Селиг",
+   "lead": "The top US derivatives regulator said Friday that his agency takes market oversight “very seriously” and the agency’s enforcement division has been looking at oil trading during the Iran war.",
+   "lead_ru": "Ведущий американский регулятор деривативов заявил в пятницу, что его агентство «очень серьезно» относится к надзору за рынком, и правоохранительное подразделение агентства изучало торговлю нефтью во время войны с Ираном.",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "India’s RBI Governor Open to Rate Use to Curb Financial Risks",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-23/india-s-rbi-governor-open-to-rate-use-to-curb-financial-risks",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T15:36:55.903274+00:00",
+   "title_ru": "Губернатор Индийского банка развития (RBI) готов повысить процентную ставку для снижения финансовых рисков",
+   "lead": "India’s central bank can deploy interest rates to address financial-stability risks, if needed, said Governor Sanjay Malhotra, in comments that come when analysts expect further pressure on the rupee.",
+   "lead_ru": "Центральный банк Индии может развернуть процентные ставки для устранения рисков финансовой стабильности, если это необходимо, сказал губернатор Санджай Малхотра в комментариях, которые приходят, когда аналитики ожидают дальнейшего давления на рупию.",
+   "tags": [
+    "rates"
+   ]
+  },
+  {
+   "title": "London Developer Halts Major Project as Housing Viability Hits Crisis Point",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOY1RnaDRkWXlDSkFaNjZUTE03YkxlQzdhb3p3WGdtYjdid2pWVExRdngzMWp6LWN5YXJwVlVVWFJwQldTU1FpQk9jS29OMEVDS1pyMG0tNWxfMFNQUnFDZ3F5Q01JUGszcDVPcGdybWczVjBscHkxVnpsdE1hQW1IbFVxdzY4N2ZVQURRckN4cFhPMHdyenk5amwzLUZXa2xMV0swY3JGRkpQZUl5a1BLWjYwX1lLYjhIMjh5ZFVB?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T15:36:55.903274+00:00",
+   "title_ru": "Лондонский девелопер приостанавливает крупный проект, поскольку жизнеспособность жилья находится в критической точке"
   }
  ],
  "last_digest": "2026-10-22",
