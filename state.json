@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "79d7248fa47aa750": "2026-10-20T10:53:05.232365+00:00",
   "590ef692edf0a09f": "2026-10-20T10:58:05.248123+00:00",
   "ba9435fd59dcfd56": "2026-10-20T10:58:05.248123+00:00",
   "bb26dd982d584b4c": "2026-10-20T10:58:05.248123+00:00",
@@ -991,21 +990,10 @@
   "b521592c066d4d79": "2026-10-23T10:41:24.889804+00:00",
   "041d359d1687e4dd": "2026-10-23T10:46:24.887622+00:00",
   "1c76bdfd3faee74d": "2026-10-23T10:51:24.954250+00:00",
-  "eb92ac57e1dd2b4f": "2026-10-23T10:51:24.954250+00:00"
+  "eb92ac57e1dd2b4f": "2026-10-23T10:51:24.954250+00:00",
+  "682388b9603190ad": "2026-10-23T10:56:24.923522+00:00"
  },
  "recent": [
-  {
-   "title": "Thames Water, Creditors Offer Pimco a Compromise on New Debt",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-20/thames-water-creditors-offer-pimco-a-compromise-on-new-debt",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T10:53:05.232365+00:00",
-   "title_ru": "Thames Water, кредиторы предлагают Pimco компромисс по новому долгу",
-   "lead": "Thames Water and some of its creditors have offered Pacific Investment Management Co. a compromise in exchange for the asset manager’s endorsement of a deal to raise £2.4 billion ($3.2 billion) of additional rescue debt.",
-   "lead_ru": "Thames Water и некоторые из ее кредиторов предложили компании Pacific Investment Management Co. компромисс в обмен на одобрение управляющей компанией сделки по привлечению 2,4 миллиарда фунтов стерлингов (3,2 миллиарда долларов США) дополнительного долга по спасению."
-  },
   {
    "title": "ECB’s Rehn Says French Spread to Germany Has Widened ‘Somewhat’",
    "link": "https://www.bloomberg.com/news/articles/2026-10-20/ecb-s-rehn-says-french-spread-to-germany-has-widened-somewhat",
@@ -10172,6 +10160,18 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Earnings limit of up to £140K for first-time buyers loan scheme",
+   "link": "https://www.bbc.co.uk/news/articles/c6n8dex0zeg9o?at_medium=RSS&at_campaign=rss",
+   "sources": [
+    "BBC"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T10:56:24.923522+00:00",
+   "title_ru": "Лимит дохода до £ 140K для схемы кредитования покупателей-новичков",
+   "lead": "The Your First Home scheme will offer government-backed loans for those buying new-builds in England.",
+   "lead_ru": "Схема «Ваш первый дом» будет предлагать кредиты, поддерживаемые правительством, для тех, кто покупает новостройки в Англии."
   }
  ],
  "last_digest": "2026-10-22",
@@ -16470,8 +16470,8 @@
   },
   "checked": "2026-10-23T10:01:24.915988+00:00",
   "sec_seen": [
-   "0001769628-26-000450",
    "0001607879-26-000008",
+   "0001769628-26-000450",
    "0001193125-26-429202",
    "0001493152-26-048153",
    "0001944970-26-000029",
@@ -16493,6 +16493,7 @@
    "0001193125-26-429392",
    "0002083595-26-000010",
    "0001193125-26-429389",
+   "0000711377-26-000034",
    "0001596532-26-000248",
    "0001493152-26-048157",
    "0002066491-26-000013",
