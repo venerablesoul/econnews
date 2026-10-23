@@ -651,7 +651,9 @@ C.MA = function(){ topic('MNA') }; C.MNA = C.MA; C['СЛИЯНИЯ'] = C.MA;
 C.RATC = function(){ topic('RATC') }; C['РЕЙТИНГИ'] = C.RATC;
 // the topic codes typed on their own, as in the list: CNS, USS, OPN, COS (also "US COS"), BBEA
 ['CNS', 'USS', 'OPN', 'COS', 'BBEA'].forEach(function(k){ if (!C[k]) C[k] = function(){ topic(k) } });
-if (!C.US) C.US = function(arg){ if (/^\s*COS\s*$/i.test(arg || '')) return topic('COS'); T.runSymbol(('US ' + (arg || '')).trim().toUpperCase()) };
+// "US" alone keeps opening the US stocks section; "US COS" is the companies' news topic
+var usSection = C.US;
+C.US = function(arg){ if (/^\s*COS\s*$/i.test(arg || '')) return topic('COS'); return usSection ? usSection(arg) : T.runSymbol(('US ' + (arg || '')).trim().toUpperCase()) };
 
 /* ======================= commands ======================= */
 C.MOV = function(a){ openMon('MOV', a) }; C.MOST = function(a){ openMon('MOST', a) }; C.MRR = function(a){ openMon('MRR', a) }; C.MEMB = function(a){ openMon('MEMB', a) };

@@ -398,6 +398,10 @@ def run():
             page.wait_for_timeout(250)
         page.wait_for_timeout(1500)
         check("each of them runs without a script error", len(errors) == n_err, errors[n_err:n_err + 5])
+        page.keyboard.press("Escape")   # PDF opens the settings
+        cmd(page, "US COS")
+        wait_text(page, "#p-news", "Companies")
+        check("US COS: the companies' news topic (US alone still opens US stocks)", "Companies" in page.inner_text("#p-news"))
 
         # ---------------- phone ----------------
         m = ctx.new_page()
