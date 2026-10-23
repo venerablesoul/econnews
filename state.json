@@ -1009,7 +1009,8 @@
   "c0429058b02ccc07": "2026-10-23T21:07:41.454979+00:00",
   "7ee2448e74c44844": "2026-10-23T21:07:41.454979+00:00",
   "6ae8e9aaa2cf9d17": "2026-10-23T21:07:41.454979+00:00",
-  "2295948777a99411": "2026-10-23T21:12:41.440484+00:00"
+  "2295948777a99411": "2026-10-23T21:12:41.440484+00:00",
+  "81b44f6944b465ef": "2026-10-23T21:17:41.487291+00:00"
  },
  "recent": [
   {
@@ -10382,6 +10383,21 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "France Avoids Moody’s Downgrade in Reprieve After Week of Crisis",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-23/france-avoids-moody-s-downgrade-in-reprieve-after-week-of-crisis",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-23T21:17:41.487291+00:00",
+   "title_ru": "Франция избегает понижения рейтинга Moody's после недели кризиса",
+   "lead": "France dodged a downgrade at Moody’s Ratings, respite for a country beset by surging bond yields, political gridlock and street protests.",
+   "lead_ru": "Франция уклонилась от понижения рейтинга Moody's, передышка для страны, страдающей от роста доходности облигаций, политического тупика и уличных протестов.",
+   "tags": [
+    "bonds"
+   ]
   }
  ],
  "last_digest": "2026-10-23",
@@ -12708,6 +12724,22 @@
     "date": "2026-10-23",
     "disclosed": "2026-10-23",
     "link": "https://www.sec.gov/Archives/edgar/data/1967680/000183404626000012/0001834046-26-000012-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "bc80c0952128432d",
+    "ticker": "NXG",
+    "company": "NXG NextGen Infrastructure Income Fund",
+    "who": "Jerry V Swank",
+    "role": "See Remarks",
+    "type": "buy",
+    "value": 439493,
+    "shares": 10000,
+    "price": 43.95,
+    "plan": false,
+    "date": "2026-10-23",
+    "disclosed": "2026-10-23",
+    "link": "https://www.sec.gov/Archives/edgar/data/1506488/000135471926000001/0001354719-26-000001-index.htm"
    },
    {
     "src": "sec",
@@ -16628,22 +16660,6 @@
     "date": "2026-10-14",
     "disclosed": "2026-10-16",
     "link": "https://www.sec.gov/Archives/edgar/data/1886367/000188636726000029/0001886367-26-000029-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "7b70bf34ee41ee13",
-    "ticker": "P",
-    "company": "Everpure, Inc.",
-    "who": "John Colgrove",
-    "role": "Chief Visionary Officer",
-    "type": "sell",
-    "value": 14499541,
-    "shares": 100000,
-    "price": 145.0,
-    "plan": true,
-    "date": "2026-10-14",
-    "disclosed": "2026-10-16",
-    "link": "https://www.sec.gov/Archives/edgar/data/1651902/000147443226000103/0001474432-26-000103-index.htm"
    }
   ],
   "docs": {
@@ -16680,13 +16696,9 @@
   },
   "checked": "2026-10-23T20:22:41.474683+00:00",
   "sec_seen": [
-   "0001764013-26-000114",
-   "0001193125-26-430603",
    "0001477932-26-006439",
    "0001193125-26-430613",
    "0001193125-26-430616",
-   "0001437749-26-033424",
-   "0001193125-26-430600",
    "0001193125-26-430610",
    "0001834046-26-000012",
    "0001193125-26-430612",
@@ -16703,13 +16715,13 @@
    "0001899813-26-000003",
    "0001628280-26-067095",
    "0001683168-26-008055",
+   "0001628280-26-067099",
    "0001108524-26-000227",
    "0001193125-26-430606",
-   "0001203302-26-000014",
    "0001876042-26-000291",
-   "0001763161-26-000013",
    "0001261778-26-000009",
    "0001348490-26-000008",
+   "0001354719-26-000001",
    "0001709352-26-000010",
    "0001193125-26-430615",
    "0001193125-26-430614"
