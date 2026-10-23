@@ -1007,7 +1007,8 @@
   "475aee22f3c60663": "2026-10-23T20:12:41.474481+00:00",
   "74907efa05ab5371": "2026-10-23T20:17:41.452025+00:00",
   "a732864d1bbe80e9": "2026-10-23T20:22:41.474683+00:00",
-  "58dedade8337fc05": "2026-10-23T20:22:41.474683+00:00"
+  "58dedade8337fc05": "2026-10-23T20:22:41.474683+00:00",
+  "b2c1a4a468c2b534": "2026-10-23T20:27:41.485678+00:00"
  },
  "recent": [
   {
@@ -10296,6 +10297,21 @@
    ],
    "score": 1,
    "ts": "2026-10-23T20:22:41.474683+00:00"
+  },
+  {
+   "title": "SpaceX Shakes Up Telecom Stocks | Closing Bell",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-23/spacex-shakes-up-telecom-stocks-closing-bell-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T20:27:41.485678+00:00",
+   "title_ru": "SpaceX встряхнула акции телекоммуникационных компаний | Closing Bell",
+   "lead": "Comprehensive cross-platform coverage of the U.S. market close on Bloomberg Television, Bloomberg Radio, and YouTube with Romaine Bostick, Jess Menton, Carol Massar and Tim Stenovec. (Source: Bloomberg)",
+   "lead_ru": "Комплексное кроссплатформенное освещение рынка США закрывается на Bloomberg Television, Bloomberg Radio и YouTube с Ромейн Бостик, Джесс Ментон, Кэрол Массар и Тимом Стеновеком. (Источник: Bloomberg)",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-23",
@@ -12750,6 +12766,22 @@
     "date": "2026-10-22",
     "disclosed": "2026-10-23",
     "link": "https://www.sec.gov/Archives/edgar/data/1267655/000126765526000019/0001267655-26-000019-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "cf158fa87eea44eb",
+    "ticker": "IBTA",
+    "company": "Ibotta, Inc.",
+    "who": "Luke Roy Swanson",
+    "role": "CTO",
+    "type": "sell",
+    "value": 1249176,
+    "shares": 25018,
+    "price": 49.93,
+    "plan": true,
+    "date": "2026-10-22",
+    "disclosed": "2026-10-23",
+    "link": "https://www.sec.gov/Archives/edgar/data/1873513/000162828026067065/0001628280-26-067065-index.htm"
    },
    {
     "src": "sec",
@@ -16542,22 +16574,6 @@
     "date": "2026-10-15",
     "disclosed": "2026-10-15",
     "link": "https://www.sec.gov/Archives/edgar/data/2119764/000211976426000032/0002119764-26-000032-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "35844c8d0f6ec61b",
-    "ticker": "KSS",
-    "company": "KOHLS Corp",
-    "who": "Jennifer J. Kent",
-    "role": "General Counsel",
-    "type": "sell",
-    "value": 504680,
-    "shares": 22940,
-    "price": 22.0,
-    "plan": true,
-    "date": "2026-10-15",
-    "disclosed": "2026-10-15",
-    "link": "https://www.sec.gov/Archives/edgar/data/1595040/000088563926000178/0000885639-26-000178-index.htm"
    }
   ],
   "docs": {
@@ -16595,22 +16611,25 @@
   "checked": "2026-10-23T20:22:41.474683+00:00",
   "sec_seen": [
    "0001979522-26-000015",
+   "0000726854-26-000185",
    "0001213900-26-112127",
-   "0001980265-26-000011",
-   "0000086312-26-000190",
-   "0001012975-26-000981",
-   "0000086312-26-000189",
+   "0000726854-26-000186",
+   "0001628280-26-067065",
    "0001267655-26-000019",
-   "0001677418-26-000016",
    "0001213900-26-112120",
    "0001193125-26-430449",
    "0001981372-26-000019",
    "0001003078-26-000112",
-   "0001012975-26-000982",
+   "0001628280-26-067071",
+   "0000726854-26-000187",
    "0001179684-26-000017",
    "0001213900-26-112129",
    "0001959910-26-000008",
+   "0000726854-26-000188",
    "0001193125-26-430460",
+   "0001628280-26-067075",
+   "0001628280-26-067070",
+   "0001628280-26-067069",
    "0001177394-26-000138",
    "0001633414-26-000011",
    "0001628280-26-067060",
