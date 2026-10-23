@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "1900f392f00e2d60": "2026-10-20T10:08:05.253919+00:00",
-  "b64bf858ea601095": "2026-10-20T10:08:05.253919+00:00",
-  "6a88126e3d828dac": "2026-10-20T10:08:05.253919+00:00",
   "cb7a44fc86bd6133": "2026-10-20T10:18:05.261604+00:00",
   "eedc6beb9a33d6ee": "2026-10-20T10:28:05.303481+00:00",
   "07b384504611db0e": "2026-10-20T10:33:05.237287+00:00",
@@ -983,19 +980,13 @@
   "0fa74fd2d519c1c5": "2026-10-23T10:06:24.930997+00:00",
   "7593f510199421e4": "2026-10-23T10:06:24.930997+00:00",
   "b6f9c515d991b004": "2026-10-23T10:06:24.930997+00:00",
-  "7ab0f9e783cda31c": "2026-10-23T10:06:24.930997+00:00"
+  "7ab0f9e783cda31c": "2026-10-23T10:06:24.930997+00:00",
+  "ec0f2cbc912ee7a5": "2026-10-23T10:11:24.909272+00:00",
+  "27b9a4014bc96b2a": "2026-10-23T10:11:24.909272+00:00",
+  "1ac98c8019a234e5": "2026-10-23T10:11:24.909272+00:00",
+  "000faecb3ffd41fa": "2026-10-23T10:11:24.909272+00:00"
  },
  "recent": [
-  {
-   "title": "BGR News Feed",
-   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE8zam9ZbTJCZmxfVE8tVk9FcUFwMmVLcFUxMnFIWDdyM0gzX1RXbVU3TnhaWndJSmZqRk82M21MTWJUOWlEaFlTdVg5d2V1ZFpPdU1tZjJIeGFRYWw1XzJMSWx5Zw?oc=5",
-   "sources": [
-    "IMF"
-   ],
-   "score": 4,
-   "ts": "2026-10-20T10:08:05.253919+00:00",
-   "title_ru": "Лента новостей BGR"
-  },
   {
    "title": "Denmark’s Novo-Fueled Economy Faces Lower Growth, Watchdog Says",
    "link": "https://www.bloomberg.com/news/articles/2026-10-20/denmark-s-novo-fueled-economy-faces-lower-growth-watchdog-says",
@@ -10036,6 +10027,46 @@
    ],
    "score": 1,
    "ts": "2026-10-23T10:06:24.930997+00:00"
+  },
+  {
+   "title": "Macklem Ensnared by Market Pricing and Will Hike, Economists Say",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-23/macklem-ensnared-by-market-pricing-and-will-hike-economists-say",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-23T10:11:24.909272+00:00",
+   "title_ru": "Маклем очарован рыночным ценообразованием и будет расти, говорят экономисты",
+   "lead": "Bank of Canada Governor Tiff Macklem may have boxed himself into an interest-rate hike next week after his hawkish commentary convinced traders a hike is all but certain.",
+   "lead_ru": "Управляющий Банка Канады Тифф Маклем, возможно, ограничился повышением процентной ставки на следующей неделе после того, как его ястребиный комментарий убедил трейдеров в том, что повышение почти наверняка.",
+   "tags": [
+    "rates"
+   ]
+  },
+  {
+   "title": "Carrefour’s €2 Billion Stock Plunge Shows Cost of French Unrest",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-23/carrefour-s-2-billion-stock-plunge-shows-cost-of-french-unrest",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T10:11:24.909272+00:00",
+   "title_ru": "Падение акций Carrefour на € 2 млрд вызвало беспорядки во Франции",
+   "lead": "Carrefour SA shares are poised to log their worst week since the global financial crisis after the supermarket operator warned that violent protests and looting across France will weigh heavily on its full-year outlook.",
+   "lead_ru": "Акции Carrefour SA готовятся к худшей неделе после мирового финансового кризиса после того, как оператор супермаркета предупредил, что насильственные протесты и грабежи по всей Франции будут сильно влиять на прогноз на весь год.",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "Wall St. ends lower on mixed earnings, robust data",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE82d2hqQVVtcXNoNThmTk92QnFPZzlzWEZlUndyUlBUaXRuTUtVX2V1UlJlUWtPQlhremhlSnlLU25wbko4ZkFkTGhaUkNrUWhJa0RkVUVyOU5UamhXRnBRbG9fYzFIYUk?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T10:11:24.909272+00:00",
+   "title_ru": "Уолл-стрит заканчивается ниже на смешанной прибыли, надежные данные"
   }
  ],
  "last_digest": "2026-10-22",
@@ -16334,8 +16365,8 @@
   },
   "checked": "2026-10-23T10:01:24.915988+00:00",
   "sec_seen": [
-   "0001607879-26-000008",
    "0001769628-26-000450",
+   "0001607879-26-000008",
    "0001193125-26-429202",
    "0001493152-26-048153",
    "0001944970-26-000029",
@@ -16343,17 +16374,17 @@
    "0001834164-26-000005",
    "0001855880-26-000022",
    "0002157445-26-000002",
-   "0001062993-26-005508",
    "0002161365-26-000008",
+   "0001062993-26-005508",
    "0002032458-26-000030",
    "0001628280-26-066948",
    "0001769628-26-000451",
    "0001213900-26-111795",
    "0001493152-26-048149",
    "0001891037-26-000011",
-   "0000829224-26-000149",
    "0001455134-26-000023",
    "0001437749-26-033305",
+   "0001193125-26-429392",
    "0002083595-26-000010",
    "0001193125-26-429389",
    "0001596532-26-000248",
