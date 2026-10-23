@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "6aa317ba0d052c0e": "2026-10-20T17:38:33.138530+00:00",
-  "bbdcb3b673158cee": "2026-10-20T17:38:33.138530+00:00",
-  "63406dd4c0ae5d3a": "2026-10-20T17:43:33.095119+00:00",
-  "7e75c060c11e57af": "2026-10-20T17:43:33.095119+00:00",
   "28f2c347e18219dc": "2026-10-20T17:48:33.148946+00:00",
   "193963a7066ef46a": "2026-10-20T17:48:33.148946+00:00",
   "f018aa0c63e7c150": "2026-10-20T17:48:33.148946+00:00",
@@ -1015,28 +1011,11 @@
   "4745790aa136225d": "2026-10-23T17:06:55.706480+00:00",
   "ca83b44ad457c04f": "2026-10-23T17:16:55.802869+00:00",
   "ea33f14243b97861": "2026-10-23T17:32:41.488316+00:00",
-  "119137cb82a0d0be": "2026-10-23T17:37:41.462341+00:00"
+  "119137cb82a0d0be": "2026-10-23T17:37:41.462341+00:00",
+  "f1df9b54af7f2e8c": "2026-10-23T17:47:41.544108+00:00",
+  "0a4b47dfabcf11bc": "2026-10-23T17:47:41.544108+00:00"
  },
  "recent": [
-  {
-   "title": "US senior housing operator Discovery Senior Living explores sale, sources say",
-   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOSjRMYl8tcWpPNU84eGJXOGRRRHVLbXBVTXlFNElyaUNval82WXhPRDhjWGd3N01XQi1fVjN1dFREZVNpaEhSQlREejJqN0lYNDI5QmtMUHdjS2ctWVN4dTVHSkxkQ2dydnBfUDBVVTZscnZBdWpMWm1oLTNvYko0bzN1cWFWOWg1R1V3Wk51dHlZRGZNT1NteWZCVnFoLTRKQnk2ajlOTUJFVUlmdnNsNDFkcHc1cndURjRPbWJFVVpBVXJaQXdYdzc2RVk?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T17:38:33.138530+00:00",
-   "title_ru": "Американский оператор жилья для пожилых людей Discovery Senior Living рассматривает возможность продажи, сообщают источники"
-  },
-  {
-   "title": "Investors’ search for safety has made toothpaste stocks more expensive than tech",
-   "link": "https://www.marketwatch.com/story/investors-search-for-safety-has-made-toothpaste-stocks-more-expensive-than-tech-57a75e56?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 2,
-   "ts": "2026-10-20T17:43:33.095119+00:00"
-  },
   {
    "title": "Examining disparities in work–family time-use patterns among workers with caregiving responsibilities in the context of COVID-19 : Monthly Labor Review : U.S",
    "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxORFgxUU4yTGRDeTU0OW1VcDlqQk9nS0VvZm00RkR5Uk81bDJwRHRTcEFrbXdjZVRIUG5sTC1ZN0tfa1VsekU5RG9PUE54d002QWo0N1VmWnhZWGkwQ0FQNFpTTTZYT3ZUeVFjdG1pZndGNURjRWZNZ0o4X3JFendVYkUyMi1BUGhyRDY0YVVGYU5hazdMVG5tTlZDaTM0U1ZuaEN5YklpbGRKeTRFc0JEaUJlSU9YUHhuLW9jM1hoS1ZqMjgzNGZkVW0zcV9QQ3d5NjhLcDFhc3NrOXZ2LVZOOFVicFdfV0dBTXNpMGRpZ3VKM25QY3VyM3RlVS03MDNwWU1UUA?oc=5",
@@ -10305,6 +10284,19 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "Ready for a French test?: Five questions for the ECB",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPYzdOb3ZsTEpLWVVjaDN3M3kteFA1STBOWXhoVl9zRnZSc0wyZ3FqdktabVdwdDliNE9wQzB5cWtLMFhVeHF6Vy16Z1duRF9pUmRyLUZjcnRtRTFJSDg1a0pkb1ZVX2pUVm1ZQXZjRzJZR1cyejhYMG9lTzRmZW1MMDA5WVlTQ3FqUDJEOUhvN2F4SVU?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T17:47:41.544108+00:00",
+   "title_ru": "Готовы к тесту по французскому?: Пять вопросов к ЕЦБ",
+   "tags": [
+    "ECB"
+   ]
   }
  ],
  "last_digest": "2026-10-22",
@@ -16603,13 +16595,18 @@
   },
   "checked": "2026-10-23T17:16:55.802869+00:00",
   "sec_seen": [
+   "0001437749-26-033375",
    "0001437749-26-033367",
    "0001060529-26-000002",
    "0001437749-26-033371",
+   "0001214659-26-013158",
+   "0001437749-26-033379",
    "0001437749-26-033369",
-   "0001493152-26-048196",
+   "0001437749-26-033377",
+   "0001760581-26-000073",
    "0001190249-26-000001",
-   "0001062993-26-005522",
+   "0001215315-26-000046",
+   "0001493152-26-048199",
    "0001096906-26-001615"
   ],
   "errors": {
