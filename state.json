@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "95e9b9653ad52986": "2026-10-20T07:36:52.423985+00:00",
   "b7d55c331870d830": "2026-10-20T07:46:52.424675+00:00",
   "4b15dd3a58c207ad": "2026-10-20T07:51:52.397237+00:00",
   "86d0cd14c10af11d": "2026-10-20T07:51:52.397237+00:00",
@@ -969,22 +968,13 @@
   "bd666f64c1069710": "2026-10-23T07:26:24.957883+00:00",
   "54fb587b96b978d0": "2026-10-23T07:31:24.874763+00:00",
   "1358fc0d0c790e1c": "2026-10-23T07:31:24.874763+00:00",
-  "12aead2682840761": "2026-10-23T07:31:24.874763+00:00"
+  "12aead2682840761": "2026-10-23T07:31:24.874763+00:00",
+  "2fb9a3ff9b2258ea": "2026-10-23T07:41:24.940960+00:00",
+  "57364047e0754d55": "2026-10-23T07:41:24.940960+00:00",
+  "b52d2115f6fbfd91": "2026-10-23T07:41:24.940960+00:00",
+  "a60592e69461acda": "2026-10-23T07:41:24.940960+00:00"
  },
  "recent": [
-  {
-   "title": "China flags APEC's role as key for a challenged global economy",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOQXlaQTdVSjB0cS1HeThNc1hMYlJiZjdrT1VTLUNhZjl5QjNpYU1EQTEtaDVfUWtSeGEtZG5ZNWxxeS0zbmpVV202NnJwQlVUWWU3RUo2QzFlV25nX2haVEg2YU5VaUh3UmxTZndSSG1fZGVRU0FIcnIySnRIcXA3c3FUbnBIcUJPZEUtQVZsNTgxS2JudFZpMl9RZUVkR284STBrek9md3JlSjg?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T07:36:52.423985+00:00",
-   "title_ru": "Китай отмечает роль АТЭС как ключевую для сложной глобальной экономики",
-   "tags": [
-    "China"
-   ]
-  },
   {
    "title": "Why Japan Bond Sale Drew Record Demand: Market Analysis",
    "link": "https://www.bloomberg.com/news/videos/2026-10-20/why-japan-bond-sale-drew-record-demand-3-minutes-mliv-video",
@@ -9900,6 +9890,34 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "AI trade meets the Fed",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNOWlIdzFDR0xNQ01RZzhsaXVtMXYtbWU3U3RvejE4NzV3TFZPXzI5SUpGTG9jLUxxbEhiNGFVMTZyUU84MVhTZGJaWkxtZ2cwaG9OTlJiYmFLTzFLLXZFQURzNUE5M05Lcjc5UXQ4Q1RIaVNWOFZlSlA2MTBLUFYtSVdLcGI3V3lCN216QQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-23T07:41:24.940960+00:00",
+   "title_ru": "Торговля ИИ встречается с ФРС",
+   "tags": [
+    "Fed"
+   ]
+  },
+  {
+   "title": "German Business Activity Slows More Than Expected on Services",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-23/german-business-activity-slows-more-than-expected-on-services",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T07:41:24.940960+00:00",
+   "title_ru": "Деловая активность в Германии замедлилась больше, чем ожидалось, в сфере услуг",
+   "lead": "Germany’s private sector slowed more than anticipated as high inflation weighed on the services industry.",
+   "lead_ru": "Частный сектор Германии замедлился больше, чем ожидалось, поскольку высокая инфляция оказала давление на сферу услуг.",
+   "tags": [
+    "inflation"
+   ]
   }
  ],
  "last_digest": "2026-10-22",
@@ -16209,8 +16227,8 @@
    "0001855880-26-000022",
    "0002157445-26-000002",
    "0000921895-26-002845",
-   "0001635088-26-000116",
    "0002161365-26-000008",
+   "0001635088-26-000116",
    "0001062993-26-005508",
    "0002032458-26-000030",
    "0000897069-26-001865",
