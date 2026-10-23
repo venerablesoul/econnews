@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "76a9b4fc804e9c8e": "2026-10-20T11:18:05.263608+00:00",
   "7ec911f2c4a4bb36": "2026-10-20T11:23:05.281124+00:00",
   "85fe50d3382a5857": "2026-10-20T11:28:05.303091+00:00",
   "25e2ee2e44f0db02": "2026-10-20T11:33:05.281855+00:00",
@@ -994,25 +993,12 @@
   "d8d8e41e636d9af2": "2026-10-23T11:06:24.957669+00:00",
   "be4796a8a665619a": "2026-10-23T11:06:24.957669+00:00",
   "fed269de4dd6561a": "2026-10-23T11:11:24.922418+00:00",
-  "a10c2004dfc41653": "2026-10-23T11:16:24.896054+00:00"
+  "a10c2004dfc41653": "2026-10-23T11:16:24.896054+00:00",
+  "8076250893cbf653": "2026-10-23T11:21:24.934560+00:00",
+  "9f2be5c829b437cb": "2026-10-23T11:21:24.934560+00:00",
+  "9e99c2cb2d7662e1": "2026-10-23T11:21:24.934560+00:00"
  },
  "recent": [
-  {
-   "title": "Senegal Eurobonds Fall as Budget Standoff Puts IMF Deal at Risk",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-20/senegal-eurobonds-fall-as-budget-standoff-puts-imf-deal-at-risk",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-20T11:18:05.263608+00:00",
-   "title_ru": "Еврооблигации Сенегала падают, поскольку бюджетное противостояние ставит под угрозу сделку МВФ",
-   "lead": "Senegal’s dollar bonds weakened after opposition leader Ousmane Sonko threatened to block a revised budget for this year and 2027 spending plan, raising concern this could complicate its debt restructuring and delay a new…",
-   "lead_ru": "Долларовые облигации Сенегала ослабли после того, как лидер оппозиции Усман Сонко пригрозил заблокировать пересмотренный бюджет на этот год и план расходов на 2027 год, вызвав опасения, что это может осложнить реструктуризацию долга и задержать новый…",
-   "tags": [
-    "dollar",
-    "bonds"
-   ]
-  },
   {
    "title": "France’s Lack of Fiscal Anchor a Concern for Markets, Says Vanda’s Nordvig",
    "link": "https://www.bloomberg.com/news/videos/2026-10-20/france-s-lack-of-fiscal-anchor-a-market-concern-nordvig-video",
@@ -10174,6 +10160,32 @@
     "oil",
     "markets"
    ]
+  },
+  {
+   "title": "ЦБ держит паузу // Ключевая ставка второй раз оставлена на уровне 14%",
+   "link": "https://www.kommersant.ru/doc/9058993",
+   "sources": [
+    "Kommersant"
+   ],
+   "score": 9,
+   "ts": "2026-10-23T11:21:24.934560+00:00",
+   "title_en": "The Central Bank pauses // The key rate is left at the level of 14% for the second time",
+   "lead": "Совет директоров Банка России 23 октября в соответствии с ожиданиями аналитиков сохранил ключевую ставку на уровне 14% годовых.",
+   "lead_en": "On October 23, the Board of Directors of the Bank of Russia, in accordance with analysts' expectations, maintained the key rate at 14% per annum.",
+   "tags": [
+    "BankOfRussia",
+    "rates",
+    "Russia"
+   ]
+  },
+  {
+   "title": "Роджерс порекомендовал каждому «иметь немного золота в шкафу»",
+   "link": "https://www.rbc.ru/finances/23/10/2026/6adb36b7d7f94ddb82c3e7a7",
+   "sources": [
+    "RBC"
+   ],
+   "score": 1,
+   "ts": "2026-10-23T11:21:24.934560+00:00"
   }
  ],
  "last_digest": "2026-10-22",
@@ -16472,8 +16484,8 @@
   },
   "checked": "2026-10-23T11:06:24.957669+00:00",
   "sec_seen": [
-   "0001607879-26-000008",
    "0001769628-26-000450",
+   "0001607879-26-000008",
    "0001193125-26-429202",
    "0001493152-26-048153",
    "0001944970-26-000029",
