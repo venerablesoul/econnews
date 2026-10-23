@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "fc42550d0d7ee313": "2026-10-20T19:54:11.885378+00:00",
-  "8f212d06c77a0d0c": "2026-10-20T19:59:11.837813+00:00",
   "87c6a5e566f1caea": "2026-10-20T20:09:12.096698+00:00",
   "96fcfebc3bbd1e8e": "2026-10-20T20:49:11.914284+00:00",
   "508582e94deabc34": "2026-10-20T20:49:11.914284+00:00",
@@ -1008,19 +1006,6 @@
   "92ed6710d9f3edda": "2026-10-23T19:52:41.497850+00:00"
  },
  "recent": [
-  {
-   "title": "Food importer files new lawsuit to block Trump's Canada tariffs",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNeGlkdEs5VHlKSDJTdC1BVmNvVWd0MWVwMy0xQ0tMblBZTFBZYUg4NnN2Z1RZR0QwQmt4a1pzdWRCOHJUdFVmM3ZtMGQtVmEtNm9vWG5LTHUtUHdSS0pIUllwYURYOTJWcjZjck9FaHo1ZDJHbGY4cHZaUmJfRXRJSnFWZVRrZGJLRGZPWmQ2WF9jNU12bmFVV3RCZGpYbUxBcnFHeXUwSlBlZlJkTGs4?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-20T19:59:11.837813+00:00",
-   "title_ru": "Импортер продуктов питания подал новый иск о блокировании пошлин Трампа в Канаде",
-   "tags": [
-    "tariffs"
-   ]
-  },
   {
    "title": "Citi Mexico sees new opportunities with banks after Banamex split",
    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPaTZyN0plamxzOWhhNzBRSnZDVEk3d1hHV09Tdm5Yd2dDcFUxR3hJRnROcHkycWROWUFaV3pSTHJpSzFzbmJCTjNvb21xMWZSUG0zY1dSVHJfbUJEZ1JDNkxsMVdDd0ZQQlJlWXNGUTRVX2lUSjgxZy1sX194QV9HVDU0QXFEampkd29jczdGMnB2NndRMlpXbGpCRlhHRjdLQnJnTzRXaDdKbkdpQnp3RjBxaXh2cW1aOUlQaVFR?oc=5",
@@ -12522,6 +12507,22 @@
   "insiders": [
    {
     "src": "sec",
+    "id": "5544334074aa34fd",
+    "ticker": "RAPP",
+    "company": "Rapport Therapeutics, Inc.",
+    "who": "Ramiro Sanchez",
+    "role": "Director",
+    "type": "buy",
+    "value": 98478,
+    "shares": 3600,
+    "price": 27.35,
+    "plan": false,
+    "date": "2026-10-23",
+    "disclosed": "2026-10-23",
+    "link": "https://www.sec.gov/Archives/edgar/data/2012593/000119312526430397/0001193125-26-430397-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "7587fb69b5816e0f",
     "ticker": "BETA",
     "company": "BETA Technologies, Inc.",
@@ -12631,6 +12632,22 @@
     "date": "2026-10-21",
     "disclosed": "2026-10-23",
     "link": "https://www.sec.gov/Archives/edgar/data/2114459/000121390026111971/0001213900-26-111971-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "094f58ea6ecc8f37",
+    "ticker": "PEP",
+    "company": "PEPSICO INC",
+    "who": "Ramon Laguarta",
+    "role": "CEO",
+    "type": "sell",
+    "value": 4053891,
+    "shares": 30000,
+    "price": 135.13,
+    "plan": false,
+    "date": "2026-10-21",
+    "disclosed": "2026-10-23",
+    "link": "https://www.sec.gov/Archives/edgar/data/1630253/000163025326000007/0001630253-26-000007-index.htm"
    },
    {
     "src": "sec",
@@ -16487,38 +16504,6 @@
     "date": "2026-10-14",
     "disclosed": "2026-10-15",
     "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000349/0001510281-26-000349-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "3eed2c2784f85aec",
-    "ticker": "GF",
-    "company": "NEW GERMANY FUND INC",
-    "who": "Saba Capital Management, L.p.",
-    "role": "10% owner",
-    "type": "buy",
-    "value": 54809,
-    "shares": 5340,
-    "price": 10.26,
-    "plan": false,
-    "date": "2026-10-14",
-    "disclosed": "2026-10-15",
-    "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000350/0001510281-26-000350-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "512813b1e4743208",
-    "ticker": "MXF",
-    "company": "MEXICO EQUITY & INCOME FUND INC",
-    "who": "Saba Capital Management, L.p.",
-    "role": "10% owner",
-    "type": "buy",
-    "value": 254285,
-    "shares": 12791,
-    "price": 19.88,
-    "plan": false,
-    "date": "2026-10-14",
-    "disclosed": "2026-10-15",
-    "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000351/0001510281-26-000351-index.htm"
    }
   ],
   "docs": {
@@ -16555,9 +16540,16 @@
   },
   "checked": "2026-10-23T19:22:41.458970+00:00",
   "sec_seen": [
+   "0001193125-26-430397",
+   "0001630253-26-000007",
    "0001493152-26-048219",
+   "0001493152-26-048221",
+   "0001193125-26-430396",
+   "0001104659-26-118462",
    "0001104659-26-118448",
-   "0001493152-26-048221"
+   "0001193125-26-430392",
+   "0001193125-26-430391",
+   "0001193125-26-430393"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
