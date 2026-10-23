@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "798ecdc113ebb239": "2026-10-20T16:33:33.220013+00:00",
   "20c33c9417073060": "2026-10-20T16:38:33.338384+00:00",
   "8dc52b41c89c77a0": "2026-10-20T16:43:33.151326+00:00",
   "bd570558bd354da6": "2026-10-20T17:13:33.130578+00:00",
@@ -1014,26 +1013,11 @@
   "14c054dc3a060c58": "2026-10-23T16:26:55.791809+00:00",
   "17f2426a2f07555c": "2026-10-23T16:31:55.759067+00:00",
   "8b8236f223b8c451": "2026-10-23T16:31:55.759067+00:00",
-  "b6e4df026ce5747c": "2026-10-23T16:31:55.759067+00:00"
+  "b6e4df026ce5747c": "2026-10-23T16:31:55.759067+00:00",
+  "1cab292e4320e2c7": "2026-10-23T16:36:55.763055+00:00",
+  "5f96d67e9a3d3177": "2026-10-23T16:36:55.763055+00:00"
  },
  "recent": [
-  {
-   "title": "Lithium Miner PLS Markets $700 Million Bond in Expansion Push",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-20/lithium-miner-pls-markets-700-million-bond-in-expansion-push",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-20T16:33:33.220013+00:00",
-   "title_ru": "Компания Lithium Miner PLS выпустила облигации на сумму 700 миллионов долларов в рамках расширения",
-   "lead": "PLS Group Ltd is returning to the US dollar bond market, braving a junk-debt selloff as the Australian lithium miner lines up investments to expand production.",
-   "lead_ru": "PLS Group Ltd возвращается на рынок облигаций в долларах США, невзирая на распродажу бросовых долгов, поскольку австралийский производитель лития направляет инвестиции для расширения производства.",
-   "tags": [
-    "dollar",
-    "bonds",
-    "markets"
-   ]
-  },
   {
    "title": "Small businesses file new lawsuit to block Trump's Canada tariffs",
    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQWU9VVXlWbnBJUWluWHZlOTVjRVVOdU9vOWt5ZklwVk5iN01SVGVmdThoc1h2XzFMb1VMdkhMWHh3UmtOVnp3MXhxUG5weFFTYi1kWWw5dWFWcEw1TFdXWS13S3FFdS1BbVFsdm5KZ0tfcUp6aGZ3RTBjcDl1ZVNCcGlDLXY5Yk93RlBKQXBVS3M2U0QwY1hvcmdtTjZ4TG1FanVXS25n?oc=5",
@@ -10288,6 +10272,21 @@
    "tags": [
     "jobs"
    ]
+  },
+  {
+   "title": "Ineos Quattro Bonds Plunge as Earnings Show Fading War Gains",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-23/ineos-quattro-bonds-plunge-as-earnings-show-fading-war-gains",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-23T16:36:55.763055+00:00",
+   "title_ru": "Облигации Ineos Quattro падают, поскольку доходы показывают угасающую военную прибыль",
+   "lead": "Bonds of Ineos Quattro slumped after the unit of Jim Ratcliffe’s chemicals empire reported that pricing gains from Iran war-related import disruptions are fading.",
+   "lead_ru": "Облигации Ineos Quattro упали после того, как подразделение химической империи Джима Рэтклиффа сообщило, что рост цен от сбоев в импорте, связанных с войной в Иране, ослабевает.",
+   "tags": [
+    "bonds"
+   ]
   }
  ],
  "last_digest": "2026-10-22",
@@ -16589,7 +16588,6 @@
    "0001193125-26-429845",
    "0001213900-26-111971",
    "0001096906-26-001612",
-   "0001096906-26-001611",
    "0001493152-26-048196"
   ],
   "errors": {
