@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "7a6fbd817a4e344e": "2026-10-20T00:51:05.079063+00:00",
   "8ae525def2016ae2": "2026-10-20T01:01:05.159041+00:00",
   "24bc4feb6f5d08de": "2026-10-20T01:21:05.134175+00:00",
   "84faf59263be959a": "2026-10-20T01:26:05.139506+00:00",
@@ -949,19 +948,11 @@
   "2557d19f07e7e050": "2026-10-23T00:45:20.369551+00:00",
   "212e6850534ea615": "2026-10-23T00:45:20.369551+00:00",
   "1ccd8342cef80187": "2026-10-23T00:50:20.280013+00:00",
-  "ea4dbdeadaf28757": "2026-10-23T00:50:20.280013+00:00"
+  "ea4dbdeadaf28757": "2026-10-23T00:50:20.280013+00:00",
+  "86fd1bcdb5c83d7b": "2026-10-23T00:55:20.376494+00:00",
+  "51c9d83991292a65": "2026-10-23T01:00:20.404311+00:00"
  },
  "recent": [
-  {
-   "title": "South Korea central bank to hold rates on October 22, hike in November",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNRlhEb1c1OS1kZy1wc0paMktybGc1SFAxMlZSLWVEUXZQaHdNOTExdXZOMmtWbWZ1LVNzVEVUOTNSUWxwZ3VMaXFNVDd0VUV3SWdRYTZKcXdaQlB6SWpXeFhsMjcxUkZubVB3R1Y3SUhMY1B3Z29lalI2S2FjLVh3TDNmNTVxbTZHa3pxTl83emVjdjQ5MFNJUnd1NEpIZXJUWUh1ODZPekpZTjR6b01DeWxoa1ZGQQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T00:51:05.079063+00:00",
-   "title_ru": "Центральный банк Южной Кореи сохранит ставки 22 октября и повысит их в ноябре"
-  },
   {
    "title": "Treasuries Losing Luster as Hedge Tool, Citi Australia CEO Says",
    "link": "https://www.bloomberg.com/news/articles/2026-10-20/treasuries-losing-luster-as-hedge-tool-citi-australia-ceo-says",
@@ -9711,6 +9702,31 @@
    "score": 3,
    "ts": "2026-10-23T00:50:20.280013+00:00",
    "title_ru": "Apple выходит на рынок складных устройств вместе с началом продаж iPhone Duo"
+  },
+  {
+   "title": "Профсоюз Škoda сообщил о планах компании заморозить зарплаты до 2030 года",
+   "link": "https://www.rbc.ru/rbcfreenews/6adaa7ba5a118679bb285fc1",
+   "sources": [
+    "RBC"
+   ],
+   "score": 1,
+   "ts": "2026-10-23T00:55:20.376494+00:00"
+  },
+  {
+   "title": "Japanese Bond Yields Fall as AI Jitters Spur Haven Demand",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-23/japanese-bond-yields-fall-as-ai-jitters-spur-haven-demand",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-23T01:00:20.404311+00:00",
+   "title_ru": "Доходность японских облигаций падает, поскольку нервозность искусственного интеллекта стимулирует спрос на убежище",
+   "lead": "Japanese government bond yields fell across the curve on Friday as an AI-driven selloff in equities boosted demand for haven assets, with a rally in US Treasuries spilling over into the Japanese market.",
+   "lead_ru": "Доходность японских государственных облигаций в пятницу упала поперек кривой, поскольку распродажа акций, вызванная искусственным интеллектом, повысила спрос на активы-убежища, а ралли казначейских облигаций США перекинулось на японский рынок.",
+   "tags": [
+    "bonds",
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-22",
@@ -12134,6 +12150,22 @@
     "date": "2026-10-22",
     "disclosed": "2026-10-22",
     "link": "https://www.sec.gov/Archives/edgar/data/1680378/000090266426004257/0000902664-26-004257-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "781069c7fe37254e",
+    "ticker": "API",
+    "company": "Agora, Inc.",
+    "who": "Bin Zhao",
+    "role": "CEO",
+    "type": "buy",
+    "value": 168305,
+    "shares": 38267,
+    "price": 4.4,
+    "plan": true,
+    "date": "2026-10-22",
+    "disclosed": "2026-10-22",
+    "link": "https://www.sec.gov/Archives/edgar/data/1843236/000119312526429245/0001193125-26-429245-index.htm"
    },
    {
     "src": "sec",
@@ -15942,22 +15974,6 @@
     "date": "2026-10-14",
     "disclosed": "2026-10-15",
     "link": "https://www.sec.gov/Archives/edgar/data/1575426/000139834426018255/0001398344-26-018255-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "2e54425eda557580",
-    "ticker": "FRMI",
-    "company": "Fermi Inc.",
-    "who": "Neugebauer Toby R et al.",
-    "role": "10% owner",
-    "type": "sell",
-    "value": 14355868,
-    "shares": 4047200,
-    "price": 3.55,
-    "plan": false,
-    "date": "2026-10-14",
-    "disclosed": "2026-10-15",
-    "link": "https://www.sec.gov/Archives/edgar/data/2088794/000090514826004482/0000905148-26-004482-index.htm"
    }
   ],
   "docs": {
@@ -15996,12 +16012,16 @@
    "0001213900-26-111795",
    "0001873304-26-000003",
    "0001855880-26-000022",
+   "0001193125-26-429245",
    "0001493152-26-048144",
+   "0001891037-26-000011",
    "0000921895-26-002845",
    "0001349983-26-000013",
    "0001140361-26-040540",
    "0001437749-26-033305",
    "0001944970-26-000029",
+   "0001891751-26-000010",
+   "0001607879-26-000008",
    "0001193125-26-429162",
    "0001193125-26-429202",
    "0002161365-26-000008",
@@ -16015,9 +16035,7 @@
    "0001053507-26-000151",
    "0002032458-26-000030",
    "0001628280-26-066948",
-   "0001510281-26-000374",
    "0001493152-26-048147",
-   "0001837336-26-000050",
    "0001193125-26-429152",
    "0001213900-26-111771",
    "0000897069-26-001865",
@@ -16026,6 +16044,7 @@
    "0001628280-26-066951",
    "0001212813-26-000005",
    "0001628280-26-066941",
+   "0002066491-26-000013",
    "0001455134-26-000023",
    "0000829224-26-000149",
    "0001266824-26-000217",
