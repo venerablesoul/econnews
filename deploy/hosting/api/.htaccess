@@ -1,0 +1,8 @@
+# every /api/... address goes to index.php in this folder (Apache and LiteSpeed — Namecheap, Beget, Timeweb, REG.RU…)
+Options -Indexes
+DirectoryIndex index.php
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^ index.php [L,QSA]
+</IfModule>

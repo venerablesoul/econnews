@@ -812,6 +812,7 @@ function loadCached(){
 }
 
 /* ---------- quotes from the bot server (API keys stay on the server) ---------- */
+var API_LIST = [], pickP = null, pickAt = 0;
 var API = '', apiTier = '', apiPaid = false, apiErr = false, apiTimer = null, apiRefresh = 30;
 function ownerPass(){ return (store('owner_pass') || '').trim() }
 function tgInit(){ try { return (window.Telegram && Telegram.WebApp && Telegram.WebApp.initData) || '' } catch(e){ return '' } }
@@ -821,15 +822,42 @@ function loadConfig(){
   if (cfgP) return cfgP;
   var known = store('api_url') || '';
   if (known) API = known;
+  try { API_LIST = JSON.parse(store('api_list') || '[]') } catch(e){ API_LIST = [] }
   var net = tfetch('../config.json?t=' + Date.now(), {cache:'no-store'}, 15000).then(function(r){ return r.ok ? r.json() : null })
     .then(function(c){
       if (!c) return;
-      var a = String(c.api || '').replace(/\/+$/, ''), changed = a !== API;
-      store('api_url', a || null); API = a;
-      if (changed && known) (window.TG_READY || Promise.resolve()).then(apiLoop);
+      var list = [c.api].concat(c.api_alt || []).map(function(a){ return String(a || '').replace(/\/+$/, '') })
+        .filter(function(a, i, all){ return a && all.indexOf(a) === i });
+      API_LIST = list; store('api_list', JSON.stringify(list));
+      if (!list.length) { store('api_url', null); API = ''; return }
+      if (list.indexOf(API) < 0) { API = list[0]; store('api_url', API) }
+      return pickApi();
     }).catch(function(){});
   cfgP = Promise.all([known ? null : net, window.TG_READY]).then(function(){});
   return cfgP;
+}
+// Several addresses of the same server: *.workers.dev is blocked by some providers (Russia), the relay on our own
+// domain is not. Every address is asked a tiny /api/ping at once; the first that answers is used and remembered.
+function pickApi(force){
+  if (API_LIST.length < 2) return Promise.resolve(API);
+  if (pickP) return pickP;
+  if (!force && Date.now() - pickAt < 20000) return Promise.resolve(API);
+  pickAt = Date.now();
+  var before = API;
+  pickP = new Promise(function(done){
+    var left = API_LIST.length, won = false;
+    API_LIST.forEach(function(base){
+      tfetch(base + '/api/ping', {cache:'no-store'}, 7000).then(function(r){ if (!r.ok) throw new Error(r.status); return r.json() })
+        .then(function(d){ if (!d || d.ok !== true) throw new Error('bad'); if (!won) { won = true; done(base) } })
+        .catch(function(){ if (--left === 0 && !won) done(null) });
+    });
+  }).then(function(base){
+    pickP = null;
+    if (base && base !== API) { API = base; store('api_url', base) }
+    if (API !== before) (window.TG_READY || Promise.resolve()).then(apiLoop);
+    return API;
+  });
+  return pickP;
 }
 function apiFetch(pass){
   var h = {}, init = tgInit(), p = pass != null ? pass : ownerPass();
@@ -874,6 +902,7 @@ function apiLoop(){
     $('st-data').title = d.errors && d.errors.length ? TX('srv_errors') + d.errors.join('; ') : TX('srv_quotes');
   }).catch(function(e){
     apiErr = true; $('st-data').title = TX('srv_unavail') + e.message;
+    pickApi();   // perhaps another address of the server works on this network
   }).then(function(){ updStatus(); apiTimer = setTimeout(apiLoop, (apiErr ? 60 : apiRefresh) * 1000) });
 }
 function patchMarket(){
@@ -1395,7 +1424,7 @@ window.TERM = {
   data: function(){ return data }, setData: function(d){ data = d }, renderNews: renderNews, renderEco: renderEco,
   show: show, isMobile: isMobile, openChart: openChart, runSymbol: runSymbol, runCommand: runCommand,
   openOverlay: openOverlay, curChart: function(){ return curChart },
-  api: function(){ return API }, loadConfig: loadConfig,
+  api: function(){ return API }, loadConfig: loadConfig, pickApi: pickApi,
   newsTopic: function(pred, label, query){ show('p-news'); newsPred = pred; newsPredLabel = label; $('nq').value = query || ''; newsQuery = query || ''; setNewsFilter(pred ? 'pred' : 'all') },
   authHeaders: function(){ var h = {}, init = tgInit(), p = ownerPass(); if (init) h['X-Tg-Init'] = init; if (p) h['X-Owner-Key'] = p; return h },
   hasIdentity: function(){ return !!(tgInit() || ownerPass()) },

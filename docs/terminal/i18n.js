@@ -225,6 +225,7 @@ var D = {
   loading_d: ['Loading…', 'Загружаю…'], no_data: ['no data', 'нет данных'], no_data_c: ['No data', 'Нет данных'],
   not_loaded: [' · failed: ', ' · не загрузилось: '],
   srv_slow: ['the server did not answer in time — try again', 'сервер не ответил вовремя — попробуйте ещё раз'],
+  co_offline: ['The server is unreachable from your network — showing the copy saved on the site (price delayed up to 10 min; no peers or company news).', 'Сервер недоступен из вашей сети — показана копия с сайта (цена с задержкой до 10 минут, без конкурентов и новостей компании).'],
   // EQS
   eqs_p: [{'': 'ALL', leaders: 'GAINERS', losers: 'LOSERS', value: 'LOW P/E', div: 'DIVIDENDS', growth: 'REVENUE GROWTH', year: 'BEST 1Y'},
     {'': 'ВСЕ', leaders: 'ЛИДЕРЫ ДНЯ', losers: 'АУТСАЙДЕРЫ', value: 'ДЕШЁВЫЕ P/E', div: 'ДИВИДЕНДЫ', growth: 'РОСТ ВЫРУЧКИ', year: 'ЛУЧШИЕ ЗА ГОД'}],

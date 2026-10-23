@@ -18,6 +18,8 @@
 //   /api/me         — watchlist, portfolio and alerts (sign-in via Telegram or the owner's password)
 //   /api/geo        — map layers and calendars from sources that do not allow browsers: ?u=<address> (listed hosts only)
 //   /api/perf       — returns over 1D…5Y for up to 40 instruments: ?s=SPY,QQQ,GOLD (TRAY, FPC)
+//   /api/ping       — a tiny answer: the terminal picks the server address that works on the viewer's network
+//                     (*.workers.dev is blocked by some Russian providers; deploy/hosting/api is a relay for them)
 //   cron            — every 2 minutes checks alerts and sends messages
 //
 // Secrets (set automatically from the GitHub secrets):
@@ -85,7 +87,7 @@ export default {
       if (url.pathname === "/sync/live" && req.method === "POST") return await syncLive(req, env);
       if (url.pathname === "/subs" && req.method === "GET") return await subsList(req, env);
       if (url.pathname === "/subs/remove" && req.method === "POST") return await subsRemove(req, env);
-      if (url.pathname === "/") return json({ ok: true, service: "econnews-bot", version: 3 });
+      if (url.pathname === "/" || url.pathname === "/api/ping") return cors(json({ ok: true, service: "econnews-bot", version: 3 }, 200, { "Cache-Control": "no-store" }));
       return new Response("not found", { status: 404 });
     } catch (e) {
       console.log("error", e && e.stack || e);

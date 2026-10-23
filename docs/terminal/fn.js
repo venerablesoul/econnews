@@ -55,7 +55,13 @@ function api(path, opts){
   var timer = null;
   if (window.AbortController) { var ac = new AbortController(); init.signal = ac.signal; timer = setTimeout(function(){ ac.abort() }, (opts.timeout || 30) * 1000) }
   return fetch(base + path, init).then(function(r){ clearTimeout(timer); if (!r.ok) throw new Error('HTTP ' + r.status); return r.json() }, function(e){
-    clearTimeout(timer); throw e && e.name === 'AbortError' ? new Error(TX('srv_slow')) : e;
+    clearTimeout(timer);
+    // the address did not answer at all (blocked or down): if another address of the server works, repeat there once
+    if (!opts.retried && T.pickApi) return T.pickApi(true).then(function(b){
+      if (b && b !== base) return api(path, Object.assign({}, opts, {retried: true}));
+      throw e && e.name === 'AbortError' ? new Error(TX('srv_slow')) : e;
+    });
+    throw e && e.name === 'AbortError' ? new Error(TX('srv_slow')) : e;
   }).then(function(d){
     if (d && d.ok === false && d.error && !opts.allowError) throw new Error(d.error);
     if (!opts.method && opts.ttl) apiCache[key] = {at: Date.now(), v: d};
@@ -312,7 +318,28 @@ function loadDes(){
   api('/api/company?s=' + encodeURIComponent(sym) + (I.ru ? '&lang=ru' : ''), {ttl: 120}).then(function(d){
     if (des.sym !== sym) return;
     des.data = d; des.sym = (d.s || sym); renderDes();
-  }).catch(function(e){ if (des.sym === sym) errBox(box, e) });
+  }).catch(function(e){
+    if (des.sym !== sym) return;
+    // the server is unreachable: the ~100 largest US companies also have a daily copy on the site itself
+    siteCompany(sym).then(function(d){
+      if (des.sym !== sym) return;
+      d.offlineWhy = e && e.message || ''; des.data = d; renderDes();
+    }).catch(function(){ errBox(box, e) });
+  });
+}
+// a company card from the files the news bot publishes (docs/co, docs/fin, docs/opt, stocks.json) — no server needed
+function siteCompany(sym){
+  if (!/^[A-Z][A-Z0-9.\-]{0,9}$/.test(sym)) return Promise.reject(new Error('no file'));
+  var opt = function(name){ return page(name, 600).catch(function(){ return null }) };
+  return Promise.all([page('co/' + sym + '.json', 600), opt('fin/' + sym + '.json'), opt('opt/' + sym + '.json'), opt('stocks.json')]).then(function(a){
+    var co = a[0], row = ((a[3] || {}).stocks || []).filter(function(x){ return x.s === sym })[0] || {}, cp = co.profile || {}, nx = co.next;
+    var m = {};
+    ['pe', 'fpe', 'ps', 'pb', 'dy', 'beta', 'eps', 'epsg', 'revg', 'roe', 'nm', 'gm', 'de', 'h52', 'l52', 'r5d', 'r13w', 'r52', 'rytd', 'mcap'].forEach(function(k){ if (row[k] != null) m[k] = row[k] });
+    return {ok: true, s: sym, kind: 'us', offline: true, co: co, fin: a[1] || undefined, opt: a[2] || undefined, m: m,
+      profile: {name: cp.name || row.n || sym, ind: row.sec ? I.sector(row.sec) : '', web: cp.website || cp.web || ''},
+      quote: row.px != null ? {px: row.px, ch: row.ch} : {},
+      next: nx && nx.date ? {date: nx.date, eps_e: nx.eps && nx.eps.avg, rev_e: nx.rev && nx.rev.avg} : null};
+  });
 }
 tabs($('des-tabs'), 't', function(t){ des.tab = t; renderDes() });
 function renderDes(){
@@ -324,6 +351,7 @@ function renderDes(){
   $('des-sub').textContent = q.px != null ? (d.kind === 'moex' ? '' : '$') + price(q.px) + (d.kind === 'moex' ? ' ₽' : '') + ' ' + pct(q.ch) : '';
   clear(box);
   if (d.kind === 'moex' && des.tab !== 'DES' && !MOEX_TABS[des.tab]) { box.appendChild(el('div', 'empty', TX('moex_only_des'))); return }
+  if (d.offline) { var off = el('div', 'note', TX('co_offline') + (d.offlineWhy ? ' (' + d.offlineWhy + ')' : '')); off.style.color = 'var(--amber, #f5a623)'; box.appendChild(off) }
   (DES_TABS[des.tab] || desMain)(box, d);
   if (des.scrollTo) { var target = $(des.scrollTo); des.scrollTo = null; if (target) target.scrollIntoView({block: 'start'}) }
 }
@@ -1015,7 +1043,7 @@ function drawEqs(box, d){
   rows.forEach(function(r){ var x = I.sector(r.sec); if (secs.indexOf(x) < 0) secs.push(x) });
   var sel = el('select'); sel.appendChild(new Option(TX('all_sectors'), ''));
   secs.sort().forEach(function(s){ sel.appendChild(new Option(s, s)) }); sel.value = eqs.sec ? I.sector(eqs.sec) : '';
-  var field = function(label, key, ph, w){ var l = el('label', null, label); var i = el('input', 'n'); i.value = eqs[key]; i.placeholder = ph; if (w) i.style.width = w; i.inputMode = 'decimal';
+  var field = function(label, key, ph, w){ var l = el('label', null, label); var i = el('input', 'n'); i.value = eqs[key]; i.placeholder = ph; if (w) i.style.width = w; if (key !== 'q') i.inputMode = 'decimal';
     i.oninput = function(){ eqs[key] = i.value; eqs.preset = ''; store('eqs', JSON.stringify(eqs)); clearTimeout(drawEqs._t); drawEqs._t = setTimeout(function(){ drawEqs(box, d); var x = box.querySelector('input[data-k="' + key + '"]'); if (x) { x.focus(); x.setSelectionRange(x.value.length, x.value.length) } }, 300) };
     i.dataset.k = key; l.appendChild(i); return l };
   sel.onchange = function(){ eqs.sec = sel.value; eqs.preset = ''; store('eqs', JSON.stringify(eqs)); drawEqs(box, d) };
