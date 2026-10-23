@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "0878229faea2739a": "2026-10-20T18:54:13.749300+00:00",
-  "e64b27103b648801": "2026-10-20T18:54:13.749300+00:00",
   "315c1e99632cd4e1": "2026-10-20T19:04:11.853697+00:00",
   "9e6f781918db60f1": "2026-10-20T19:04:11.853697+00:00",
   "878470455206f74c": "2026-10-20T19:19:12.066780+00:00",
@@ -1005,7 +1003,9 @@
   "03d7ed4a3cdbc197": "2026-10-23T18:22:41.510338+00:00",
   "92e30bb8ea7bb6e4": "2026-10-23T18:32:41.429817+00:00",
   "147a66d4f710e135": "2026-10-23T18:47:41.523607+00:00",
-  "8d6c73af11739041": "2026-10-23T18:47:41.523607+00:00"
+  "8d6c73af11739041": "2026-10-23T18:47:41.523607+00:00",
+  "903f585e285cb4e3": "2026-10-23T18:57:41.446566+00:00",
+  "c6a22c96dceea706": "2026-10-23T18:57:41.446566+00:00"
  },
  "recent": [
   {
@@ -10235,6 +10235,35 @@
    "score": 3,
    "ts": "2026-10-23T18:47:41.523607+00:00",
    "title_ru": "Наблюдайте за рынками: хедж-фонды страдают от самой широкой ежедневной просадки со времен Covid"
+  },
+  {
+   "title": "US to remove 50% tariffs on some Canadian goods to help Republicans in midterms, WSJ reports",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQRWdrcmlzeVVGU0lLY2lmdVZHQ094Uk80eXhLb25UQkVoYjhXX3lXSERuOW1pVzNpRGEzQWMtMUVfVEp5bERnM2hqM0hFZFNrb1B5Y1QxRG9tMDUtTFNQSFFoMFZodXFPbmtDUUhpYXVIOXhNRTdkNU9RcDkzRW8xTkM0REpYZ0k3TlhDOGx6WEhYSUJIWG5WSE1Ia1FLWHVTVHN5UFhjVmhtb1J4TkpDTU90LVp4eWR0MnBxaA?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-23T18:57:41.446566+00:00",
+   "title_ru": "США снимут 50% тарифы на некоторые канадские товары, чтобы помочь республиканцам в среднесрочной перспективе, сообщает WSJ",
+   "tags": [
+    "tariffs"
+   ]
+  },
+  {
+   "title": "Набиуллина заявила об отсутствии угроз финансовой стабильности России",
+   "link": "https://www.kommersant.ru/doc/9059393",
+   "sources": [
+    "Kommersant"
+   ],
+   "score": 5,
+   "ts": "2026-10-23T18:57:41.446566+00:00",
+   "title_en": "Nabiullina stated that there were no threats to Russia's financial stability",
+   "lead": "Рисков для финансовой стабильности в России нет. Долговые проблемы, которые возникают у некоторых компаний, временные и не влияют на общую ситуацию.",
+   "lead_en": "There are no risks to financial stability in Russia. The debt problems that some companies have are temporary and do not affect the overall situation.",
+   "tags": [
+    "BankOfRussia",
+    "Russia"
+   ]
   }
  ],
  "last_digest": "2026-10-23",
@@ -16535,15 +16564,11 @@
   "sec_seen": [
    "0001836969-26-000004",
    "0001510281-26-000376",
-   "0001437749-26-033379",
    "0002111103-26-000043",
-   "0001437749-26-033377",
    "0001760581-26-000073",
    "0001968243-26-000054",
    "0001578926-26-000050",
    "0000885639-26-000186",
-   "0001493152-26-048199",
-   "0001215315-26-000046",
    "0001437749-26-033381",
    "0001750052-26-000052",
    "0001950027-26-000053",
