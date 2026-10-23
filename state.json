@@ -1015,7 +1015,8 @@
   "6961318ec12ce745": "2026-10-23T14:11:55.666007+00:00",
   "cae4132b0b921271": "2026-10-23T14:16:55.714462+00:00",
   "48ca05cbe342530b": "2026-10-23T14:16:55.714462+00:00",
-  "22cc8bfcf637d04c": "2026-10-23T14:26:55.700630+00:00"
+  "22cc8bfcf637d04c": "2026-10-23T14:26:55.700630+00:00",
+  "12566dde4f8009e8": "2026-10-23T14:31:55.753900+00:00"
  },
  "recent": [
   {
@@ -10417,6 +10418,16 @@
    ],
    "score": 1,
    "ts": "2026-10-23T14:26:55.700630+00:00"
+  },
+  {
+   "title": "US consumer sentiment near record low ahead of midterm elections",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPR05CVGk5UUlBVHZBTDJObFp0eHJZUlpOdGdnSkxWZUtQWWR5V1BvRkZIQTQwSGtoa21PTFNNUHFPbGpkSm05QXc5MXB0Q3VNWTBxd21hQmpSdDlhc1pHNkhMeWhLd2xpR21nQ2Rxa0d4Ym0yQ0Jtb2I1dWlMYlUzenFWVkVlNG9xbmxKUENEQjFzWnhFTFZLQkhCR2Fucmd0ZUhCU0ttQ2xXUQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T14:31:55.753900+00:00",
+   "title_ru": "Потребительские настроения в США близки к рекордно низкому уровню в преддверии"
   }
  ],
  "last_digest": "2026-10-22",
@@ -16715,10 +16726,10 @@
   },
   "checked": "2026-10-23T14:06:55.769626+00:00",
   "sec_seen": [
-   "0001510281-26-000375",
    "0000764065-26-000117",
    "0001493152-26-048187",
-   "0001193125-26-429600"
+   "0001193125-26-429600",
+   "0001510281-26-000375"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
