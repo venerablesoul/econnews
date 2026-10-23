@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "bd570558bd354da6": "2026-10-20T17:13:33.130578+00:00",
-  "d9617d75eadcc671": "2026-10-20T17:13:33.130578+00:00",
   "e5db06dafbca230d": "2026-10-20T17:18:33.189434+00:00",
   "9bbd92d3ccb00df6": "2026-10-20T17:18:33.189434+00:00",
   "0692dfbe9f41b8e1": "2026-10-20T17:23:33.138010+00:00",
@@ -1019,19 +1017,10 @@
   "b376803a30b92bf9": "2026-10-23T16:46:55.736225+00:00",
   "4650f03d03072830": "2026-10-23T16:46:55.736225+00:00",
   "2c3621f279ebf047": "2026-10-23T17:06:55.706480+00:00",
-  "4745790aa136225d": "2026-10-23T17:06:55.706480+00:00"
+  "4745790aa136225d": "2026-10-23T17:06:55.706480+00:00",
+  "ca83b44ad457c04f": "2026-10-23T17:16:55.802869+00:00"
  },
  "recent": [
-  {
-   "title": "General Motors Drops After Tempering Outlook for Earnings Upside",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQbm5VbGxYTWd6UFlhYWV4dXhqcFBqNVJlclZCNU9jOEZYby04S0hGelFDbFJVQVdXTnl6bDZtUjRJZUJNRXdleDE4WVhQYnFPLTdwR3ZUMEw4MkwyR0RzcFVzZ3hQdG5SSXZnaGxxTDEydWtfcEFWX3JtWXF6LVlGdUhObXRZaVpua2d2N1Y3WTN6aktwT0JGQ3NLVDhwM2FfTXNlbkwzQ3ZfN3ZsclF1Wjdod0E?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T17:13:33.130578+00:00",
-   "title_ru": "Акции General Motors упали после смягчения прогнозов по поводу потенциала роста прибыли"
-  },
   {
    "title": "Portuguese police clear housing protest camps, arresting 55",
    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOdWwxLWtmTWFlcG1YV2s1RV91eXlPVFlCeFNzY2ZkX2Z4T1pnZllxOXB0eFlkX3hnWllLT1N5SmVNUnJZRnI3UDBxcTNuQnRsYUFZeWFyUktlcEMxbkdBQW96VGJxdjNjbjRNTXFrdDVVbUhSOUw1OFRDaE9jNkpGdmQzbUZMR0thZUY1MklFcTU4YXhvNDRmNHlyMGxiNDd4clE?oc=5",
@@ -10320,6 +10309,16 @@
    "tags": [
     "GDP"
    ]
+  },
+  {
+   "title": "From Argentina to Sri Lanka, economic reforms bite at home",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1oWnFYLUFFSll3WlZPRV85VkdDUUZwM0RKZkY3YXFIaGhhR3BQY2pQaHpFaEZZOHdWLTBUTWRkWF9la1NHQnNRRmM1ZG9zUlFSSENvV3pxTFBpVjVqVUEzSnZ0SWhEZlE?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T17:16:55.802869+00:00",
+   "title_ru": "От Аргентины до Шри-Ланки экономические реформы кусают дома"
   }
  ],
  "last_digest": "2026-10-22",
@@ -16616,9 +16615,8 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-23T16:11:55.772277+00:00",
+  "checked": "2026-10-23T17:16:55.802869+00:00",
   "sec_seen": [
-   "0001193125-26-429845",
    "0001213900-26-111971",
    "0001062993-26-005522",
    "0001493152-26-048196"
