@@ -1004,7 +1004,8 @@
   "a49d3311d11a1582": "2026-10-23T19:47:41.451947+00:00",
   "92ed6710d9f3edda": "2026-10-23T19:52:41.497850+00:00",
   "82e9268c66dc2f06": "2026-10-23T20:07:41.454673+00:00",
-  "475aee22f3c60663": "2026-10-23T20:12:41.474481+00:00"
+  "475aee22f3c60663": "2026-10-23T20:12:41.474481+00:00",
+  "74907efa05ab5371": "2026-10-23T20:17:41.452025+00:00"
  },
  "recent": [
   {
@@ -10254,6 +10255,21 @@
    "title_ru": "Хедж-фонды увеличивают медвежьи ставки в евро до максимума с 2020 года: CFTC",
    "lead": "Hedge funds boost their bets against the euro to the most since March 2020 as political turmoil in France rattles European markets and weighs on the currency.",
    "lead_ru": "Хедж-фонды увеличивают свои ставки против евро до максимума с марта 2020 года, поскольку политические потрясения во Франции сотрясают европейские рынки и оказывают давление на валюту."
+  },
+  {
+   "title": "Trump to cut Canadian tariffs after pressure from Republicans",
+   "link": "https://www.ft.com/content/d3d12f54-fcf0-400c-96f1-484aea980be5?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 5,
+   "ts": "2026-10-23T20:17:41.452025+00:00",
+   "title_ru": "Трамп снизит канадские тарифы после давления со стороны республиканцев",
+   "lead": "President to ease some levies to help candidates facing tough US Senate election battles",
+   "lead_ru": "Президент ослабит некоторые сборы, чтобы помочь кандидатам, столкнувшимся с жесткими предвыборными баталиями в Сенате США",
+   "tags": [
+    "tariffs"
+   ]
   }
  ],
  "last_digest": "2026-10-23",
@@ -12535,6 +12551,22 @@
    },
    {
     "src": "sec",
+    "id": "fd215b3a5c99093e",
+    "ticker": "MSM",
+    "company": "MSC INDUSTRIAL DIRECT CO INC",
+    "who": "Reuben E Slone",
+    "role": "Director",
+    "type": "buy",
+    "value": 50129,
+    "shares": 433,
+    "price": 115.77,
+    "plan": false,
+    "date": "2026-10-23",
+    "disclosed": "2026-10-23",
+    "link": "https://www.sec.gov/Archives/edgar/data/1518692/000100307826000112/0001003078-26-000112-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "7587fb69b5816e0f",
     "ticker": "BETA",
     "company": "BETA Technologies, Inc.",
@@ -12660,6 +12692,22 @@
     "date": "2026-10-22",
     "disclosed": "2026-10-23",
     "link": "https://www.sec.gov/Archives/edgar/data/1689378/000008631226000189/0000086312-26-000189-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "d4a87f01b3d53b46",
+    "ticker": "SNX",
+    "company": "TD SYNNEX CORP",
+    "who": "Alim Dhanji",
+    "role": "Chief Human Resources Officer",
+    "type": "sell",
+    "value": 909794,
+    "shares": 3775,
+    "price": 241.01,
+    "plan": false,
+    "date": "2026-10-22",
+    "disclosed": "2026-10-23",
+    "link": "https://www.sec.gov/Archives/edgar/data/2051665/000117739426000138/0001177394-26-000138-index.htm"
    },
    {
     "src": "sec",
@@ -16484,38 +16532,6 @@
     "date": "2026-10-15",
     "disclosed": "2026-10-15",
     "link": "https://www.sec.gov/Archives/edgar/data/2153600/000119312526422957/0001193125-26-422957-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "b3ec861466d96713",
-    "ticker": "RSKD",
-    "company": "RISKIFIED LTD.",
-    "who": "Ravi Kumaraswami",
-    "role": "Pres. Worldwide Field Ops.",
-    "type": "sell",
-    "value": 543127,
-    "shares": 65000,
-    "price": 8.36,
-    "plan": true,
-    "date": "2026-10-15",
-    "disclosed": "2026-10-15",
-    "link": "https://www.sec.gov/Archives/edgar/data/1956098/000195609826000024/0001956098-26-000024-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "98d5c78377cfa4cd",
-    "ticker": "ORKA",
-    "company": "Oruka Therapeutics, Inc.",
-    "who": "Joana Goncalves",
-    "role": "Chief Medical Officer",
-    "type": "sell",
-    "value": 523648,
-    "shares": 7000,
-    "price": 74.81,
-    "plan": true,
-    "date": "2026-10-15",
-    "disclosed": "2026-10-15",
-    "link": "https://www.sec.gov/Archives/edgar/data/1756991/000090765426000108/0000907654-26-000108-index.htm"
    }
   ],
   "docs": {
@@ -16554,28 +16570,24 @@
   "sec_seen": [
    "0000007536-26-000148",
    "0001979522-26-000015",
-   "0001104659-26-118466",
    "0001980265-26-000011",
    "0000086312-26-000187",
-   "0001193125-26-430420",
    "0000086312-26-000190",
-   "0001104659-26-118462",
    "0001012975-26-000981",
    "0001439222-26-000122",
    "0000086312-26-000189",
    "0001677418-26-000016",
    "0000086312-26-000186",
-   "0001630253-26-000007",
-   "0001193125-26-430416",
-   "0001193125-26-430396",
-   "0001193125-26-430393",
-   "0001193125-26-430397",
+   "0001213900-26-112120",
+   "0001193125-26-430449",
+   "0001981372-26-000019",
+   "0001003078-26-000112",
    "0001012975-26-000982",
+   "0001179684-26-000017",
+   "0001177394-26-000138",
    "0001633414-26-000011",
-   "0001193125-26-430414",
-   "0001597870-26-000021",
-   "0001628280-26-067037",
-   "0001012975-26-000980"
+   "0001012975-26-000980",
+   "0001213900-26-112119"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
