@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "d5e0fe36d49329fc": "2026-10-20T19:49:11.881189+00:00",
   "fc42550d0d7ee313": "2026-10-20T19:54:11.885378+00:00",
   "8f212d06c77a0d0c": "2026-10-20T19:59:11.837813+00:00",
   "87c6a5e566f1caea": "2026-10-20T20:09:12.096698+00:00",
@@ -1005,24 +1004,10 @@
   "05526fc74c2459ec": "2026-10-23T19:17:41.430968+00:00",
   "e03461a3ec0216fa": "2026-10-23T19:22:41.458970+00:00",
   "e0444880f3aa1592": "2026-10-23T19:37:41.453079+00:00",
-  "a49d3311d11a1582": "2026-10-23T19:47:41.451947+00:00"
+  "a49d3311d11a1582": "2026-10-23T19:47:41.451947+00:00",
+  "92ed6710d9f3edda": "2026-10-23T19:52:41.497850+00:00"
  },
  "recent": [
-  {
-   "title": "Trump sued over Canadian tariffs in latest legal challenge",
-   "link": "https://www.bbc.co.uk/news/articles/cqrkyj13m588o?at_medium=RSS&at_campaign=rss",
-   "sources": [
-    "BBC"
-   ],
-   "score": 5,
-   "ts": "2026-10-20T19:49:11.881189+00:00",
-   "title_ru": "Трамп подал в суд из-за канадских тарифов в рамках последнего судебного иска",
-   "lead": "The lawsuit argues the White House exceeded its authority in imposing the latest tariffs on the country and caused \"immediate harm to American businesses\".",
-   "lead_ru": "В иске утверждается, что Белый дом превысил свои полномочия, введя последние пошлины в отношении страны, и нанес «непосредственный ущерб американскому бизнесу».",
-   "tags": [
-    "tariffs"
-   ]
-  },
   {
    "title": "Food importer files new lawsuit to block Trump's Canada tariffs",
    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNeGlkdEs5VHlKSDJTdC1BVmNvVWd0MWVwMy0xQ0tMblBZTFBZYUg4NnN2Z1RZR0QwQmt4a1pzdWRCOHJUdFVmM3ZtMGQtVmEtNm9vWG5LTHUtUHdSS0pIUllwYURYOTJWcjZjck9FaHo1ZDJHbGY4cHZaUmJfRXRJSnFWZVRrZGJLRGZPWmQ2WF9jNU12bmFVV3RCZGpYbUxBcnFHeXUwSlBlZlJkTGs4?oc=5",
@@ -10259,6 +10244,19 @@
    "score": 3,
    "ts": "2026-10-23T19:37:41.453079+00:00",
    "title_ru": "Эксклюзив: индийское шотландское расследование Diageo, Pernod подрывает преимущества индийско-британского пакта, говорит торговая группа"
+  },
+  {
+   "title": "Trump says he spoke with UK's prime minister, discussed oil",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPNUNKODFrR1F2TUlucF9FcWd0TV8xUHFzc0RKOHdfUk4tcEtaa1ZCUGZLNV80NXFUQlJLajRxOHRZSTZ5NUJnSllzWDZJMFNFbnBkd3NTaTNkNWV0NTFrZnF2THNmd3U4S1E4cU5hN0VJRFdUR1FHeEJLcFBhUTUtMHRjaEQycVN5Zkx2SThGaVZKMzNQdnVGaUtuaFBmaTVLZ1pmN0g0T09vZDVZWmc?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T19:52:41.497850+00:00",
+   "title_ru": "Трамп говорит, что разговаривал с премьер-министром Великобритании, обсуждал нефть",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-23",
@@ -16557,9 +16555,9 @@
   },
   "checked": "2026-10-23T19:22:41.458970+00:00",
   "sec_seen": [
-   "0001493152-26-048221",
+   "0001493152-26-048219",
    "0001104659-26-118448",
-   "0001493152-26-048219"
+   "0001493152-26-048221"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
