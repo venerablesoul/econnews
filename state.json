@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "53593c20540b1e20": "2026-10-20T08:13:05.257989+00:00",
-  "ff6be929fa23b6a7": "2026-10-20T08:13:05.257989+00:00",
   "12a3957e69afb1be": "2026-10-20T08:18:05.252061+00:00",
   "d8a68a6215c50216": "2026-10-20T08:28:05.268252+00:00",
   "27a51b7de753abd4": "2026-10-20T08:33:05.257168+00:00",
@@ -975,32 +973,10 @@
   "464e1ea239080c8e": "2026-10-23T08:06:24.887604+00:00",
   "d7a38ed4136b0203": "2026-10-23T08:11:24.882012+00:00",
   "e4727dd3c95a64df": "2026-10-23T08:11:24.882012+00:00",
-  "70745a4e976eaadc": "2026-10-23T08:11:24.882012+00:00"
+  "70745a4e976eaadc": "2026-10-23T08:11:24.882012+00:00",
+  "cccc77875e337510": "2026-10-23T08:16:24.969643+00:00"
  },
  "recent": [
-  {
-   "title": "Asian refiners use smaller tankers, buy delivered crude as freight rates soar",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOZ2ZqUG1VeDQwZ1U1Vmc2NDFHWU1KUEdiMmhXVFhjX0FleHIwdnJyRHliLTJWb0FaWDAwbFBMaEdMdHdfemljUEdFX3lpcUdYSmdKcjRUZHhiNjNTMUhobzNFWkpTSEhtZUN1RUxMeHY5b0RJaFJuc2wwRDFJT3hkYUxLS1BycXZMeFVWVExXcGpqMUxVdE1qWUxyRVN1emZ3UGhONmZ1NWJYVWUyMmJRLUZSN29Ib0J5WmNsQ2Vrb1VmOEk?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-20T08:13:05.257989+00:00",
-   "title_ru": "Азиатские нефтеперерабатывающие заводы используют танкеры меньшего размера и покупают доставленную нефть, поскольку фрахтовые ставки растут",
-   "tags": [
-    "oil"
-   ]
-  },
-  {
-   "title": "Europe's earnings boom widens beyond energy and AI",
-   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOQ1JyMkRkWjBlbnZpSlhVTEZHczJ5UFpPdGJXWTdUQnhMSjM1cGNldnhlWWRJLUtNOEVtekMwUzU0bW40S0ZRYW1BbUV0UnB6bHI2NF80VGwyU1ZQbG1nTGhMRFlhYWNMUEN6azBIc1ZmajRQaFdXRTBDWUkzWXRpNnlBbk5weXVWTmdXUzFGTFhHTVhoVm96eWYwNHdWaFE?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T08:13:05.257989+00:00",
-   "title_ru": "Бум доходов в Европе выходит за рамки энергетики и искусственного интеллекта"
-  },
   {
    "title": "It’s a rough housing market, and Goldman Sachs expects it to get worse",
    "link": "https://www.marketwatch.com/story/its-a-rough-housing-market-and-goldman-sachs-expects-it-to-get-worse-be2c5aac?mod=mw_rss_topstories",
@@ -9976,6 +9952,18 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "What is the Budget and what could be in it?",
+   "link": "https://www.bbc.co.uk/news/articles/c6x2zrjl7kjno?at_medium=RSS&at_campaign=rss",
+   "sources": [
+    "BBC"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T08:16:24.969643+00:00",
+   "title_ru": "Что такое Бюджет и что в нем может быть?",
+   "lead": "Chancellor John Healey will set out his plans for UK taxes on 28 October.",
+   "lead_ru": "Канцлер Джон Хили изложит свои планы по налогам в Великобритании 28 октября."
   }
  ],
  "last_digest": "2026-10-22",
@@ -16274,8 +16262,8 @@
   },
   "checked": "2026-10-23T07:56:24.936051+00:00",
   "sec_seen": [
-   "0001769628-26-000450",
    "0001607879-26-000008",
+   "0001769628-26-000450",
    "0001193125-26-429202",
    "0001493152-26-048153",
    "0001944970-26-000029",
@@ -16285,8 +16273,8 @@
    "0001855880-26-000022",
    "0002157445-26-000002",
    "0000921895-26-002845",
-   "0002161365-26-000008",
    "0001635088-26-000116",
+   "0002161365-26-000008",
    "0001062993-26-005508",
    "0002032458-26-000030",
    "0000897069-26-001865",
@@ -16297,6 +16285,7 @@
    "0001493152-26-048149",
    "0001891037-26-000011",
    "0001266824-26-000217",
+   "0001628280-26-066951",
    "0001213900-26-111771",
    "0000829224-26-000149",
    "0001193125-26-429162",
@@ -16310,12 +16299,11 @@
    "0001628280-26-066941",
    "0002066491-26-000013",
    "0000902664-26-004257",
-   "0001753539-26-000149",
    "0001891751-26-000010",
    "0001628280-26-066949",
    "0001193125-26-429245",
    "0001973495-26-000007",
-   "0001628280-26-066951",
+   "0001753539-26-000149",
    "0001349983-26-000013",
    "0001493152-26-048147"
   ],
