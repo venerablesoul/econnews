@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "fc78910f54a2e768": "2026-10-20T23:14:11.843355+00:00",
-  "a75708349bfe7aa4": "2026-10-20T23:19:11.822980+00:00",
   "249ce724845c162b": "2026-10-20T23:29:11.821168+00:00",
   "737f0345b9de920f": "2026-10-20T23:29:11.821168+00:00",
   "84be998f02b98ded": "2026-10-20T23:29:11.821168+00:00",
@@ -1009,22 +1007,10 @@
   "5c5767c90ce585c8": "2026-10-23T22:52:41.410773+00:00",
   "a9253d2fd4319482": "2026-10-23T22:52:41.410773+00:00",
   "a40d64394e1aa2f8": "2026-10-23T22:53:31.869654+00:00",
-  "f8e1957d87401714": "2026-10-23T22:53:31.869654+00:00"
+  "f8e1957d87401714": "2026-10-23T22:53:31.869654+00:00",
+  "f66c737ff5d4bc6b": "2026-10-23T23:23:26.788812+00:00"
  },
  "recent": [
-  {
-   "title": "US bank J.P. Morgan facilitates Syrian deal for Saudi oil products",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPMDBMZWE2MDdMSEVnOWduZE83YjRxc3l0TW44dEktSFZGMHdVUVl4anNIX2tmUFFyVExXN2xMRmdLX3p1UWV6YW15UE85NTBId3lKc0Uxekk4OXV3RHpFWFBSVDNDN09WS1N1NDFVREFGVGp1blR1dml1eU1ZYnFuc0I1bXJXQmktdVNQSHZGNEJleU5tSzhiQ3RHMjBBcktqMWhIQzM0TEFEclAzMkVfY240X2g?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T23:14:11.843355+00:00",
-   "title_ru": "Американский банк J.P. Morgan содействует сирийской сделке по поставке саудовских нефтепродуктов",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "Скидки на российскую нефть для Китая сократились // Мониторинг внешней торговли",
    "link": "https://www.kommersant.ru/doc/9043135",
@@ -10346,6 +10332,19 @@
    "score": 3,
    "ts": "2026-10-23T22:52:41.410773+00:00",
    "title_ru": "Банк Италии призывает банки инвестировать в цифровые активы, несмотря на неопределенность"
+  },
+  {
+   "title": "China’s Porcelain Capital Jingdezhen Drives Global Innovation and 100-Billion-Yuan Industrial Transformation",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxORFU2THFPRmVBZElnUnYwWnFHSU1fVDM3VXZTUm9id0FSQ2o5bFJrSG95dG5CaG1RVG1wb3A1SWd0N2xhX2loSWlfd3lMZlhvV1B1Y2N6Y2hjZUNJS3pnRTY1MHhBcjZ0T1ROS3JfbU1BeDZHeGpLeW9fSVJDRDh5dG0xSjNBeGZvejRnTG5qMkpRTUk1dnR6TTBJN3d5Q1pDaXNlZlFSSVpkMlY2Tk1UdFZhTXBVSDBTeUE?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T23:23:26.788812+00:00",
+   "title_ru": "Фарфоровая столица Китая Цзиндэчжэнь стимулирует глобальные инновации и промышленную трансформацию на 100 миллиардов юаней",
+   "tags": [
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-10-23",
