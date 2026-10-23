@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "64bc6b5ef7d464f6": "2026-10-20T15:08:33.121286+00:00",
   "a12bb675973c101a": "2026-10-20T15:13:33.113862+00:00",
   "547ee34de6659275": "2026-10-20T15:13:33.113862+00:00",
   "9a19d71cc37ecf3e": "2026-10-20T15:13:33.113862+00:00",
@@ -1020,21 +1019,11 @@
   "478ef26b19a09981": "2026-10-23T14:46:55.729359+00:00",
   "d7a4048ef6072d53": "2026-10-23T15:01:55.748795+00:00",
   "f6856db654e7072f": "2026-10-23T15:06:55.734188+00:00",
-  "1a291f027ff488ea": "2026-10-23T15:06:55.734188+00:00"
+  "1a291f027ff488ea": "2026-10-23T15:06:55.734188+00:00",
+  "7a7f78f441347b01": "2026-10-23T15:11:55.713584+00:00",
+  "52e7fa5e141ad8ae": "2026-10-23T15:11:55.713584+00:00"
  },
  "recent": [
-  {
-   "title": "AI Fears Roar Back, Tech Earnings on Deck",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-20/ai-fears-roar-back-tech-earnings-on-deck",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T15:08:33.121286+00:00",
-   "title_ru": "Опасения в отношении искусственного интеллекта возвращаются, доходы от технологий на палубе",
-   "lead": "A rebound in the artificial intelligence trade sputtered after the dismal debut of a South Korean data center firm revived concerns about whether the technology’s spending boom can last.",
-   "lead_ru": "Восстановление торговли искусственным интеллектом застопорилось после того, как мрачный дебют южнокорейской фирмы, занимающейся центрами обработки данных, возродил опасения по поводу того, продлится ли бум расходов на технологии."
-  },
   {
    "title": "IEA ready to go if further oil stocks release needed, chief says",
    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPcWJ0WUpzR0w2cnFpS2x1d0dWV1F1SFgwNlpXeEpzcVJhVlhNaGRPQlhtd1BJWVI2ZjhVM3ZFQ2lNdHZmaFVSRENORWdJaW9HNFZRRFFfX0N2NG04N0NfZW56STBCN1FFemdWT1dBVlRQM3pYeDB4WDBCQWhsbXRkNXFNcnFic1JTb0Q5Rjk0V0x4UzZ5dnZDemh3cTJ3eElBWmxiMjV4eHZ5S2RTZG1BWUhR?oc=5",
@@ -10434,6 +10423,29 @@
    "score": 4,
    "ts": "2026-10-23T15:06:55.734188+00:00",
    "title_ru": "Центральный банк Индии введет новые правила кредитного плеча для банков с 1 апреля 2027 года"
+  },
+  {
+   "title": "UK government promises to save businesses £800 million in paperwork and tariffs",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPTFM0SWI5QmdpcUtXMmF3bUUwekJQbVlUQ1k3dGNvZEpMNkdkZEJWNGMtTkNBNHNQbWhDam13YjVHUF9RWW5wTmhlVDVPRU42V1hiMEZzMVBrNnUtbkZvby15YzhnWVhPOE5iNTdJbFNFR2lfSkFWSDBVYXlTXzNEeXBudzBGT3ppN2FMUmxlVllPVU9rQmtfTUp4UTlfaEtKb2V0SVR0UWtkWG84d0VkNV8yNA?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-23T15:11:55.713584+00:00",
+   "title_ru": "Правительство Великобритании обещает сэкономить предприятиям £ 800 млн на оформлении документов и тарифах",
+   "tags": [
+    "tariffs"
+   ]
+  },
+  {
+   "title": "Employment up in the nation, down in the District of Columbia, December 2024 to December 2025",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPcnJhdzFGZjhNaVFSZlRMS201UWhlcjZGQ3dmWUYxbEdRZ2lHeHRleTZEZEFhUXQ2cUZnT2ZKeHpNMzlqZjdRNXFkVl9semFwS1p4bkNxMDUxOEtsN0V3UEt6b1lqckJJRlF4TXdyM1NVcndLbGo5YklDMWpnRG5zN012X3kxcEFtMmJRc2pzQUw4WUFfeWlWU08zbXJYbk5wUzdvZHM5VDJhRjRoclhKUmJsRDk3WmRaMzNvM0w5QUw0bUh4ZGExMQ?oc=5",
+   "sources": [
+    "US Labor Statistics (BLS)"
+   ],
+   "score": 4,
+   "ts": "2026-10-23T15:11:55.713584+00:00",
+   "title_ru": "Занятость в стране выросла, снизившись в округе Колумбия, с декабря 2024 года по декабрь 2025 года"
   }
  ],
  "last_digest": "2026-10-22",
@@ -16730,10 +16742,8 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-23T14:06:55.769626+00:00",
-  "sec_seen": [
-   "0001493152-26-048187"
-  ],
+  "checked": "2026-10-23T15:11:55.713584+00:00",
+  "sec_seen": [],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
   }
