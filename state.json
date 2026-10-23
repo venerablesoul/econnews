@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "3fcbda34b80a11d8": "2026-10-20T22:44:11.850974+00:00",
-  "037d08fd3b60f8a5": "2026-10-20T22:44:11.850974+00:00",
   "aaf164ef6c9f1296": "2026-10-20T22:49:11.874125+00:00",
   "fc78910f54a2e768": "2026-10-20T23:14:11.843355+00:00",
   "a75708349bfe7aa4": "2026-10-20T23:19:11.822980+00:00",
@@ -1006,18 +1004,11 @@
   "4900d8ebc6b6ea86": "2026-10-23T22:07:41.439877+00:00",
   "c750874909946380": "2026-10-23T22:12:41.458547+00:00",
   "b20a095ce78bf965": "2026-10-23T22:17:41.490326+00:00",
-  "e54466f64ec33585": "2026-10-23T22:17:41.490326+00:00"
+  "e54466f64ec33585": "2026-10-23T22:17:41.490326+00:00",
+  "f7699d77aa3ae4ee": "2026-10-23T22:47:41.391035+00:00",
+  "7edea1d5420ae4b3": "2026-10-23T22:47:41.391035+00:00"
  },
  "recent": [
-  {
-   "title": "Super Micro’s stock soars after surprise update — with Dell and HPE shares joining the rally",
-   "link": "https://www.marketwatch.com/story/super-micros-stock-soars-after-surprise-update-with-dell-and-hpe-shares-joining-the-rally-1837a69f?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-20T22:44:11.850974+00:00"
-  },
   {
    "title": "US Stock Futures Advance on AI Earnings Boost: Markets Wrap",
    "link": "https://www.bloomberg.com/news/articles/2026-10-20/stock-market-today-dow-s-p-live-updates",
@@ -10333,6 +10324,16 @@
    "score": 3,
    "ts": "2026-10-23T22:17:41.490326+00:00",
    "title_ru": "Марокко ожидает стабильного бюджетного дефицита, несмотря на снижение налогов в 2027 году"
+  },
+  {
+   "title": "France spared Moody's ratings downgrade as it struggles with unrest",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQNDNzYlVKMzN1VE5rMDhtcVFnY1NsRXZNYmRVZmZKc2dxVC1xZ19abmEtTTlHclVXQWc4YWJXWHNtNktWU2ZBSUVWT1lwWmo1UDVsdFd1RUxjQUkwUGRROUVhWVZkTnJmSU1pdUl4d1FCYU1nTGRMckNaUnpaQVVlOFhkdzZuVFZKaUNCajRGWXFxS0RIODZYSUtVU0o?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-23T22:47:41.391035+00:00",
+   "title_ru": "Франция пощадила рейтинги Moody's, борясь с беспорядками"
   }
  ],
  "last_digest": "2026-10-23",
@@ -13203,6 +13204,38 @@
     "date": "2026-10-21",
     "disclosed": "2026-10-23",
     "link": "https://www.sec.gov/Archives/edgar/data/1170311/000007085826000508/0000070858-26-000508-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "2a3e2c6ed4835633",
+    "ticker": "CRL",
+    "company": "CHARLES RIVER LABORATORIES INTERNATIONAL, INC.",
+    "who": "Shannon M Parisotto",
+    "role": "CEVP, Disc & Safety Assessment",
+    "type": "sell",
+    "value": 742548,
+    "shares": 2156,
+    "price": 344.41,
+    "plan": true,
+    "date": "2026-10-21",
+    "disclosed": "2026-10-23",
+    "link": "https://www.sec.gov/Archives/edgar/data/1952784/000110068226000151/0001100682-26-000151-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "5775d0ecdce9b19a",
+    "ticker": "SNOW",
+    "company": "Snowflake Inc.",
+    "who": "Benoit Dageville",
+    "role": "Director",
+    "type": "sell",
+    "value": 16087000,
+    "shares": 50000,
+    "price": 321.74,
+    "plan": true,
+    "date": "2026-10-21",
+    "disclosed": "2026-10-23",
+    "link": "https://www.sec.gov/Archives/edgar/data/1821737/000182173726000017/0001821737-26-000017-index.htm"
    },
    {
     "src": "sec",
@@ -16563,38 +16596,6 @@
     "date": "2026-10-14",
     "disclosed": "2026-10-16",
     "link": "https://www.sec.gov/Archives/edgar/data/1061272/000106127226000004/0001061272-26-000004-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "0a1ae840d43cc0fa",
-    "ticker": "PAYX",
-    "company": "PAYCHEX INC",
-    "who": "Joseph M Velli",
-    "role": "Director",
-    "type": "sell",
-    "value": 844104,
-    "shares": 7839,
-    "price": 107.68,
-    "plan": false,
-    "date": "2026-10-14",
-    "disclosed": "2026-10-16",
-    "link": "https://www.sec.gov/Archives/edgar/data/1209494/000119312526424044/0001193125-26-424044-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "792584dc17a630dd",
-    "ticker": "VEEV",
-    "company": "VEEVA SYSTEMS INC",
-    "who": "Jonathan Faddis",
-    "role": "SVP, Gen. Counsel, Secretary",
-    "type": "sell",
-    "value": 1557920,
-    "shares": 5198,
-    "price": 299.72,
-    "plan": true,
-    "date": "2026-10-14",
-    "disclosed": "2026-10-16",
-    "link": "https://www.sec.gov/Archives/edgar/data/1502670/000162828026066134/0001628280-26-066134-index.htm"
    }
   ],
   "docs": {
@@ -16642,6 +16643,7 @@
    "0001193125-26-430728",
    "0000904454-26-000537",
    "0001628280-26-067097",
+   "0001100682-26-000151",
    "0001934887-26-000005",
    "0001193125-26-430730",
    "0001062993-26-005533",
@@ -16654,6 +16656,7 @@
    "0000070858-26-000508",
    "0002060000-26-000005",
    "0001354719-26-000001",
+   "0001821737-26-000017",
    "0001013594-26-001082",
    "0000904454-26-000534",
    "0001193125-26-430695",
