@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "25e2ee2e44f0db02": "2026-10-20T11:33:05.281855+00:00",
-  "eb3ab987591f9b71": "2026-10-20T11:33:05.281855+00:00",
   "fc4ae6880bb5edfc": "2026-10-20T11:48:05.262171+00:00",
   "bfb97052a3e8dafb": "2026-10-20T11:48:05.262171+00:00",
   "5bc93ea1c94dbff9": "2026-10-20T11:48:05.262171+00:00",
@@ -997,28 +995,11 @@
   "9e99c2cb2d7662e1": "2026-10-23T11:21:24.934560+00:00",
   "c85984e2a4ff9d6b": "2026-10-23T11:31:25.034673+00:00",
   "6d1a4939d11d0fa6": "2026-10-23T11:31:25.034673+00:00",
-  "107fb1c6f1059be5": "2026-10-23T11:31:25.034673+00:00"
+  "107fb1c6f1059be5": "2026-10-23T11:31:25.034673+00:00",
+  "5c41445d16ecc5a7": "2026-10-23T11:36:24.927201+00:00",
+  "979f400400229229": "2026-10-23T11:36:24.927201+00:00"
  },
  "recent": [
-  {
-   "title": "Everybody Seems to Hate This Bull Market",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPT1VvMXFQWjB2QXJMXzRpRV9fdmV0Z3AtbTBGM0xlaXVZY3B2b1RYT1RsRzNDMm16TW5VbUQ4czJxSUFQek1SOENvTGJ5SGUyd1prZDJyV2hQdUpIRjg0OWx6Q213bnUzdGFiOV9BQXdSY3hhdmtDdUNzSjFsQzVhNE9UZUQ1ZDFZdzFWMEljeG9mQUZwUnZaWGtmMjE4X2diRWNsbmFMci1zR0ZaNDNmbjBNdw?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T11:33:05.281855+00:00",
-   "title_ru": "Кажется, все ненавидят этот бычий рынок"
-  },
-  {
-   "title": "The AI boom is getting all the attention. We’re about to find out how the rest of the economy is holding up.",
-   "link": "https://www.marketwatch.com/story/the-ai-boom-is-getting-all-the-attention-were-about-to-find-out-how-the-rest-of-the-economy-is-holding-up-77b2266d?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-20T11:33:05.281855+00:00"
-  },
   {
    "title": "US Heading for a Slowdown, Not a Recession, Says Crossmark’s Fernandez",
    "link": "https://www.bloomberg.com/news/videos/2026-10-20/us-heading-for-a-slowdown-not-a-recession-crossmark-video",
@@ -10185,6 +10166,37 @@
    ],
    "score": 1,
    "ts": "2026-10-23T11:31:25.034673+00:00"
+  },
+  {
+   "title": "SLB Sees Growth Driven by Middle East Oil Field Recovery",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-23/slb-sees-growth-driven-by-middle-east-oil-field-recovery",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-23T11:36:24.927201+00:00",
+   "title_ru": "SLB видит рост, обусловленный восстановлением нефтяных месторождений на Ближнем Востоке",
+   "lead": "SLB, the world’s biggest oil field services provider, said it has seen a gradual recovery in its Middle East business despite disruptions from the Iran war.",
+   "lead_ru": "SLB, крупнейший в мире поставщик нефтесервисных услуг, заявил, что в его ближневосточном бизнесе наблюдается постепенное восстановление, несмотря на сбои в результате войны с Ираном.",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "Volvo CEO Says China Market Gone, Luxury Weakness Remains",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-23/the-opening-trade-10-23-2026-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T11:36:24.927201+00:00",
+   "title_ru": "Генеральный директор Volvo говорит, что рынок Китая ушел, слабость роскоши остается",
+   "lead": "Volvo plunged by about 30% to a record low after the Swedish automaker’s chief executive officer said the market for Western-developed cars in China is disappearing fast, prompting it to cut 2,500 more jobs.",
+   "lead_ru": "Volvo упала примерно на 30% до рекордно низкого уровня после того, как главный исполнительный директор шведского автопроизводителя заявил, что рынок автомобилей западного производства в Китае быстро исчезает, что побудило его сократить еще 2500 рабочих мест.",
+   "tags": [
+    "China",
+    "jobs"
+   ]
   }
  ],
  "last_digest": "2026-10-22",
@@ -16483,8 +16495,8 @@
   },
   "checked": "2026-10-23T11:06:24.957669+00:00",
   "sec_seen": [
-   "0001769628-26-000450",
    "0001607879-26-000008",
+   "0001769628-26-000450",
    "0001193125-26-429202",
    "0001493152-26-048153",
    "0001944970-26-000029",
