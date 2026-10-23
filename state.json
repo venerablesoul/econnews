@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e0589481ede90596": "2026-10-20T02:21:05.152162+00:00",
   "249445fcae292f63": "2026-10-20T02:26:05.096270+00:00",
   "86c6c9f5f46e4c24": "2026-10-20T02:31:05.179033+00:00",
   "a40d64394e1aa2f8": "2026-10-20T02:36:05.153012+00:00",
@@ -952,21 +951,11 @@
   "fdf4639479d06f53": "2026-10-23T02:05:51.529706+00:00",
   "aa1e574fdecd0ee2": "2026-10-23T02:10:51.640825+00:00",
   "37610e12111f754e": "2026-10-23T02:20:51.538382+00:00",
-  "2e26b53365633179": "2026-10-23T02:20:51.538382+00:00"
+  "2e26b53365633179": "2026-10-23T02:20:51.538382+00:00",
+  "8f26826afa0d2051": "2026-10-23T02:25:51.572679+00:00",
+  "5893ce8ca197271c": "2026-10-23T02:25:51.572679+00:00"
  },
  "recent": [
-  {
-   "title": "SoftBank Group Credit Risk Hits 4-Year High on AI Funding Strain",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-20/softbank-group-credit-risk-hits-4-year-high-on-ai-funding-strain",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T02:21:05.152162+00:00",
-   "title_ru": "Кредитный риск группы SoftBank достиг 4-летнего максимума из-за проблем с финансированием ИИ",
-   "lead": "SoftBank Group Corp.’s credit risk, as measured by its credit-default swaps, has risen to the highest level in nearly four years as concerns grow over AI-related funding and a potential large acquisition.",
-   "lead_ru": "Кредитный риск SoftBank Group Corp., измеряемый ее кредитно-дефолтными свопами, поднялся до самого высокого уровня почти за четыре года, поскольку растут опасения по поводу финансирования, связанного с искусственным интеллектом, и потенциального крупного приобретения."
-  },
   {
    "title": "Gold slips as investors weigh Fed rate outlook",
    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOLVJCYm9CRFhWY01aUkRqYnVXb0RzRC1RUnhfOEFicHItalFBMnRMc0ZjcWRVcGNnZVg3ZXQ3WXNXeUZLN183enN0NFAtdmxuUHJhRU5jOHlQbTg1TldhNVdtbF9IWU1GZ1BfOEZvTnJpUEhGTE5xUkRSbl9FZVR4NlFJMEE2V1VYZ1hVRzk3SmpJMi1qelE?oc=5",
@@ -9691,6 +9680,36 @@
    "score": 3,
    "ts": "2026-10-23T02:20:51.538382+00:00",
    "title_ru": "Иена сияет, когда дрожь ИИ подстегивает спешку в безопасном убежище"
+  },
+  {
+   "title": "China Stocks Sink Deeper Into Bear Market Despite State Buying",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-23/china-stocks-sink-deeper-into-bear-market-despite-state-buying",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-23T02:25:51.572679+00:00",
+   "title_ru": "Акции Китая все глубже проникают на медвежий рынок, несмотря на государственные закупки",
+   "lead": "Chinese stocks slid deeper into a bear market as rescue efforts by state-backed funds fail to rebuild investor confidence.",
+   "lead_ru": "Китайские акции углубились в медвежий рынок, поскольку усилия по спасению, предпринимаемые фондами, поддерживаемыми государством, не смогли восстановить доверие инвесторов.",
+   "tags": [
+    "markets",
+    "China"
+   ]
+  },
+  {
+   "title": "HSBC, Standard Chartered Face Cost Test as Rates, Wealth Support Earnings",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-23/hsbc-standard-chartered-face-cost-test-as-rates-wealth-support-earnings",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T02:25:51.572679+00:00",
+   "lead": "HSBC Holdings Plc and Standard Chartered Plc are expected to sustain strong returns on higher rates and Asian wealth fees, though China’s tighter capital-flow rules and cost pressures cloud the outlook.",
+   "lead_ru": "Ожидается, что HSBC Holdings Plc и Standard Chartered Plc будут поддерживать высокую доходность по более высоким ставкам и азиатским сборам за богатство, хотя более жесткие правила движения капитала в Китае и ценовое давление омрачают перспективы.",
+   "tags": [
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-10-22",
@@ -15979,6 +15998,7 @@
    "0002157445-26-000002",
    "0000897069-26-001865",
    "0001349983-26-000013",
+   "0002032458-26-000030",
    "0001607879-26-000008",
    "0001855880-26-000022",
    "0001973495-26-000007",
@@ -15987,7 +16007,6 @@
    "0002083595-26-000010",
    "0001769628-26-000450",
    "0001266824-26-000217",
-   "0001455134-26-000023",
    "0001193125-26-429162",
    "0001891751-26-000010",
    "0001628280-26-066948",
@@ -16013,7 +16032,7 @@
    "0002066491-26-000013",
    "0001834164-26-000005",
    "0001140361-26-040540",
-   "0002032458-26-000030",
+   "0001455134-26-000023",
    "0001213900-26-111771",
    "0001493152-26-048149",
    "0001437749-26-033305"
