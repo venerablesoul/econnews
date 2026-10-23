@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "88cba8203b48e3eb": "2026-10-20T12:23:05.343972+00:00",
-  "7858818df6db8491": "2026-10-20T12:23:05.343972+00:00",
   "4a22d93052796cb7": "2026-10-20T12:38:05.308326+00:00",
   "541c8da6096c4120": "2026-10-20T12:38:05.308326+00:00",
   "19d042aa0fa525f9": "2026-10-20T12:38:05.308326+00:00",
@@ -1000,35 +998,11 @@
   "7da3d7f1aead97ea": "2026-10-23T12:16:55.686706+00:00",
   "3820822129523b56": "2026-10-23T12:16:55.686706+00:00",
   "4802a882bfa91781": "2026-10-23T12:21:55.721813+00:00",
-  "ac450de61ed3ed28": "2026-10-23T12:21:55.721813+00:00"
+  "ac450de61ed3ed28": "2026-10-23T12:21:55.721813+00:00",
+  "bc231ad185b0fdb2": "2026-10-23T12:26:55.689547+00:00",
+  "d83a9537429053a5": "2026-10-23T12:26:55.689547+00:00"
  },
  "recent": [
-  {
-   "title": "Russia Ships the Least Oil in a Month as Major Baltic Port Halts",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-20/russia-ships-the-least-oil-in-a-month-as-major-baltic-port-halts",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T12:23:05.343972+00:00",
-   "title_ru": "Россия переправила меньше всего нефти за месяц из-за остановки крупного порта на Балтике",
-   "lead": "Shipments from key port of Primorsk tumbled last week, likely on maintenance work",
-   "lead_ru": "Отгрузки из ключевого порта Приморска на прошлой неделе упали, вероятно, из-за ремонтных работ.",
-   "tags": [
-    "oil",
-    "Russia"
-   ]
-  },
-  {
-   "title": "Google Cloud services down in UK; banks, public sector report issues",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQS0VTdUFWc1FhZzJaWWZDMkN3dkl0RzdnMU84OHNOS1g0eDdGZ0RNWDVJcVd1MXZzMHU2Unp0QXBXN0tvc3ZZcW1iRlg1Y1h4TFl3Yi1oM2pWRW5KLUNTT0M1NU1YMGdrUjY2MkZTNW82U2FOX0VYRkRVaTlmckJ0ZElGcjJYNzlhSnVCQzA3X0tiVTZ2Z092U2haTQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T12:23:05.343972+00:00",
-   "title_ru": "Сервисы Google Cloud отключены в Великобритании; банки, проблемы с отчетами государственного сектора"
-  },
   {
    "title": "GM Narrows 2026 Profit Forecast, Boosts Share Buyback",
    "link": "https://www.bloomberg.com/news/videos/2026-10-20/gm-narrows-2026-profit-forecast-boosts-share-buyback-video",
@@ -10208,6 +10182,30 @@
    "tags": [
     "BankOfRussia"
    ]
+  },
+  {
+   "title": "Brazil Inflation Shoots Through Target Limit Before Runoff Vote",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-23/brazil-inflation-shoots-through-target-limit-before-runoff-vote",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-23T12:26:55.689547+00:00",
+   "title_ru": "Инфляция в Бразилии преодолевает целевой лимит до голосования по второму туру",
+   "lead": "Brazil’s annual inflation rate shot through the target ceiling in early October, adding to voters’ frustrations as they prepare to pick their next president on Sunday.",
+   "lead_ru": "Годовой уровень инфляции в Бразилии превысил целевой потолок в начале октября, что усилило разочарование избирателей, поскольку они готовятся выбрать своего следующего президента в воскресенье.",
+   "tags": [
+    "inflation"
+   ]
+  },
+  {
+   "title": "It’s been a painful month for hedge funds. To turn it around, they are shorting U.S. stocks.",
+   "link": "https://www.marketwatch.com/story/its-been-a-painful-month-for-hedge-funds-to-turn-it-around-they-are-shorting-u-s-stocks-d36ee922?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-23T12:26:55.689547+00:00"
   }
  ],
  "last_digest": "2026-10-22",
@@ -16527,6 +16525,7 @@
    "0001855880-26-000022",
    "0001493152-26-048149",
    "0001193125-26-429202",
+   "0001493152-26-048181",
    "0002032458-26-000030",
    "0001193125-26-429392",
    "0001213900-26-111813",
