@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "eedc6beb9a33d6ee": "2026-10-20T10:28:05.303481+00:00",
   "07b384504611db0e": "2026-10-20T10:33:05.237287+00:00",
   "041d359d1687e4dd": "2026-10-20T10:38:05.260613+00:00",
   "a392efca5e1facb9": "2026-10-20T10:43:05.317392+00:00",
@@ -987,24 +986,11 @@
   "1900f392f00e2d60": "2026-10-23T10:16:24.974664+00:00",
   "9b9116613afbd25b": "2026-10-23T10:21:24.907212+00:00",
   "60bea810f4bb0c18": "2026-10-23T10:21:24.907212+00:00",
-  "5ce851f148330c0d": "2026-10-23T10:21:24.907212+00:00"
+  "5ce851f148330c0d": "2026-10-23T10:21:24.907212+00:00",
+  "bb83f9ef1e4c8bda": "2026-10-23T10:31:24.911827+00:00",
+  "b55cb092fae8ce51": "2026-10-23T10:31:24.911827+00:00"
  },
  "recent": [
-  {
-   "title": "Pernod Ricard Plans Debut Hybrid Bond as French Debt Risk Rises",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-20/pernod-ricard-plans-debut-hybrid-bond-as-french-debt-risk-rises",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T10:28:05.303481+00:00",
-   "title_ru": "Pernod Ricard планирует выпустить гибридные облигации на фоне роста долгового риска Франции",
-   "lead": "Pernod Ricard is planning the sale of a debut hybrid bond alongside a tender for some of its outstanding senior debt, as the company looks to tackle upcoming maturities with its credit ratings on negative outlook.",
-   "lead_ru": "Pernod Ricard планирует продажу дебютных гибридных облигаций одновременно с тендером на часть своего непогашенного старшего долга, поскольку компания надеется справиться с предстоящими сроками погашения, имея негативный прогноз по кредитным рейтингам.",
-   "tags": [
-    "bonds"
-   ]
-  },
   {
    "title": "Why smaller stocks face worse prospects than the S&P 500 in the coming years",
    "link": "https://www.marketwatch.com/story/why-smaller-stocks-face-worse-prospects-than-the-s-p-500-in-the-coming-years-f9f703ae?mod=mw_rss_topstories",
@@ -10097,6 +10083,33 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "Банк России второй раз подряд оставил ключевую ставку без изменений",
+   "link": "https://www.rbc.ru/finances/23/10/2026/6ad9c2b70c9f3ab561c8f2ad",
+   "sources": [
+    "RBC"
+   ],
+   "score": 8,
+   "ts": "2026-10-23T10:31:24.911827+00:00",
+   "title_en": "The Bank of Russia left the key rate unchanged for the second time in a row",
+   "lead": "Банк России снова сохранил ставку на уровне 14%. Пауза в смягчении ДКП продлена на фоне данных по инфляции выше цели и повышенных инфляционных ожиданий населения",
+   "lead_en": "The Bank of Russia again kept the rate at 14%. The pause in the mitigation of the PrEP was extended against the background of data on inflation above the target and increased inflation expectations of the population",
+   "tags": [
+    "BankOfRussia",
+    "rates",
+    "inflation"
+   ]
+  },
+  {
+   "title": "Sterling edges up to fresh 17-month high versus euro after UK data",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPTnJQUGVyMnI5c00yTDVhSktCN3lpeGRYb20yT0w5VlVmMGNXdkp3VmRqOGNuUVdXSEE1V3BLd011ZTFBMERRTW9HYnExalZGNzdwVDRwOXZKdWx2X2QtcFJrSnd5VUFlX2t2VHJMRTdYZTVyc2J2alp3VC1FbmxaNjJDdDJmTDNPTkFabDBHTzR3Y2lpbjJuSHljdlJNSWZvRHF0TDhQV3c3N29f?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T10:31:24.911827+00:00",
+   "title_ru": "После данных по Великобритании фунт стерлингов вырос до свежего 17-месячного максимума по отношению к евро"
   }
  ],
  "last_digest": "2026-10-22",
