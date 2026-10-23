@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "a40d64394e1aa2f8": "2026-10-20T02:36:05.153012+00:00",
-  "84d41ef35a8c44cd": "2026-10-20T02:36:05.153012+00:00",
-  "42bf6338261475cf": "2026-10-20T02:36:05.153012+00:00",
-  "81eaf78513b20589": "2026-10-20T02:36:05.153012+00:00",
   "8e59e41d778062ab": "2026-10-20T02:41:52.466419+00:00",
   "be4bda884802e5e2": "2026-10-20T02:46:52.426363+00:00",
   "907e7af65c45dedc": "2026-10-20T02:51:52.418350+00:00",
@@ -952,35 +948,11 @@
   "2e26b53365633179": "2026-10-23T02:20:51.538382+00:00",
   "8f26826afa0d2051": "2026-10-23T02:25:51.572679+00:00",
   "5893ce8ca197271c": "2026-10-23T02:25:51.572679+00:00",
-  "8911f2c145f3c753": "2026-10-23T02:35:51.595090+00:00"
+  "8911f2c145f3c753": "2026-10-23T02:35:51.595090+00:00",
+  "2c0bbeb05209694b": "2026-10-23T02:40:51.538128+00:00",
+  "27616156a560cf19": "2026-10-23T02:40:51.538128+00:00"
  },
  "recent": [
-  {
-   "title": "Chipmakers Lead Korean Stock Selloff on Yield Spike, IPO Stumble",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-20/chipmakers-lead-korean-stock-selloff-on-yield-spike-ipo-stumble",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-20T02:36:05.153012+00:00",
-   "title_ru": "Производители микросхем возглавили распродажу корейских акций из-за скачка доходности и провала IPO",
-   "lead": "Chipmakers drove losses in South Korean equities Tuesday, as foreign investors reduced exposure on a rise in Treasury yields and a weak stock market debut by a data center firm.",
-   "lead_ru": "Производители микросхем во вторник понесли потери на южнокорейских акциях, поскольку иностранные инвесторы сократили риски из-за роста доходности казначейских облигаций и слабого дебюта на фондовом рынке компании, занимающейся центрами обработки данных.",
-   "tags": [
-    "bonds",
-    "markets"
-   ]
-  },
-  {
-   "title": "Trump says Mexico and US are close to trade deal",
-   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPX3Bkc0ZpcWlrNVo2Y0VQaUlDNFdrXzB5Vmg1OHBLZFd0UVd3dnJkV1QxY2FUWTYyMHlzUHc0NjVoR0U0dllIZGtTZGpoY05xcDlxdVU2cWxNVG92VTNablpxbE5ubUdUWFRidzN0V0c0ZFJGUlY3NnNvbk1LVE1idVFKUUNyS3RPRTQ1NWJmdGZmMUhxQm5j?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T02:36:05.153012+00:00",
-   "title_ru": "Трамп заявил, что Мексика и США близки к торговому соглашению"
-  },
   {
    "title": "PBOC Rate Shift Plan Would Lower Borrowing Costs: Analysts",
    "link": "https://www.bloomberg.com/news/articles/2026-10-20/pboc-rate-shift-plan-would-lower-borrowing-costs-analysts",
@@ -9708,6 +9680,21 @@
    "tags": [
     "ECB"
    ]
+  },
+  {
+   "title": "India Retail Traders Cut Back on Leveraged Bets as Stocks Slide",
+   "link": "https://www.bloomberg.com/news/newsletters/2026-10-23/india-retail-traders-cut-back-on-leveraged-bets-as-stocks-slide",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T02:40:51.538128+00:00",
+   "title_ru": "Розничные трейдеры Индии сократили ставки с кредитным плечом, поскольку акции упали",
+   "lead": "Zerodha founder Nithin Kamath has repeatedly voiced concerns about the use of margin loans by clients to buy stocks.",
+   "lead_ru": "Основатель Zerodha Нитин Каматх неоднократно высказывал опасения по поводу использования клиентами маржинальных кредитов для покупки акций.",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-22",
@@ -15996,7 +15983,6 @@
    "0002157445-26-000002",
    "0000897069-26-001865",
    "0001349983-26-000013",
-   "0002032458-26-000030",
    "0001607879-26-000008",
    "0001855880-26-000022",
    "0001973495-26-000007",
@@ -16005,6 +15991,7 @@
    "0002083595-26-000010",
    "0001769628-26-000450",
    "0001266824-26-000217",
+   "0001455134-26-000023",
    "0001193125-26-429162",
    "0001891751-26-000010",
    "0001628280-26-066948",
@@ -16030,7 +16017,7 @@
    "0002066491-26-000013",
    "0001834164-26-000005",
    "0001140361-26-040540",
-   "0001455134-26-000023",
+   "0002032458-26-000030",
    "0001213900-26-111771",
    "0001493152-26-048149",
    "0001437749-26-033305"
