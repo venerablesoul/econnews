@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "0e34c82ed0fbbf5b": "2026-10-20T00:01:05.153367+00:00",
-  "9197c58ac2fd84cb": "2026-10-20T00:01:05.153367+00:00",
   "9dca4127043ce76e": "2026-10-20T00:06:05.343240+00:00",
   "fdf4639479d06f53": "2026-10-20T00:26:05.177567+00:00",
   "04ef7e4a85ef3e7b": "2026-10-20T00:26:05.177567+00:00",
@@ -940,40 +938,10 @@
   "adde03cfb5fdea73": "2026-10-22T23:45:20.290349+00:00",
   "b48abfc5fb875e91": "2026-10-22T23:50:20.311504+00:00",
   "3deb167b5ad56e13": "2026-10-22T23:50:20.311504+00:00",
-  "c01f9ddbea5cb378": "2026-10-22T23:55:20.312538+00:00"
+  "c01f9ddbea5cb378": "2026-10-22T23:55:20.312538+00:00",
+  "57ce9caefcf1853a": "2026-10-23T00:00:20.367952+00:00"
  },
  "recent": [
-  {
-   "title": "Gold Holds Decline as Energy-Led Inflation Weighs on Rate Path",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-19/gold-holds-decline-as-energy-led-inflation-weighs-on-rate-path",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 8,
-   "ts": "2026-10-20T00:01:05.153367+00:00",
-   "title_ru": "Золото продолжает снижаться, поскольку инфляция, вызванная энергетикой, оказывает давление на курс ставок",
-   "lead": "Gold held a decline, as elevated oil prices fueled inflation concerns and clouded the Federal Reserve’s path for interest-rate hikes.",
-   "lead_ru": "Золото продолжало снижаться, поскольку высокие цены на нефть усилили опасения по поводу инфляции и затмили путь Федеральной резервной системы к повышению процентных ставок.",
-   "tags": [
-    "Fed",
-    "rates",
-    "inflation"
-   ]
-  },
-  {
-   "title": "Canadian dollar notches nearly four-week high on BoC rate hike bets",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQejFjMHFhbTY3RGNrb3ZLNnZvd2QtWjl4eDg5cG9vRmR3Qk9zbGNBWXM1VXE5Z0ZWamFZYUptd0RwTmdieTRjQXVjWE5YVEhlVzFOUEo3WnF4aVRqSmNvUUFTZnVwVHo2aHVuTXZybk5UT0ZqSmtGNHdfRXZhNWdzVnpDRWRja2ExdFFHNTYwUDg2bmxzWjdRekRHeUtKU3RuY1Z3M2FZSktjdXliQlpZZjBn?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-20T00:01:05.153367+00:00",
-   "title_ru": "Канадский доллар достиг почти четырехнедельного максимума на фоне ставок Банка Канады на повышение ставок",
-   "tags": [
-    "rates",
-    "dollar"
-   ]
-  },
   {
    "title": "Oil Wavers as Iran Threats Vie With Robust Gulf Crude Flows",
    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOdTg3VzlWcDBwMEpkaGtLOW0wN2VROGM3RDdVZ1JpY0toSUNqS0JVNHlmQkNTa0d3SEg1bkFjektMYUd0ZFVrM0JKcnY3bWo4QlViYlpUdXNRWTZEVTRfR20wZ0VLUjVKT1dVWUtVTjhSaTlqcFZsS1gyRC1kcXdfVHhGUUctV1FJVzNDUUUzRkp5dENkUTRsQmpuXzFRQQ?oc=5",
@@ -15854,8 +15822,6 @@
   ],
   "docs": {
    "9116376": "2026-10-07",
-   "20035580": "2026-10-05",
-   "20035539": "2026-10-05",
    "20035590": "2026-10-07",
    "20035562": "2026-10-07",
    "0541be4f-4f96-4d84-8d6f-d349f218bb2a": "2026-10-07",
@@ -15889,21 +15855,23 @@
   "sec_seen": [
    "0001213900-26-111795",
    "0001873304-26-000003",
+   "0001855880-26-000022",
    "0001493152-26-048144",
    "0000921895-26-002845",
    "0001349983-26-000013",
    "0001140361-26-040540",
    "0001437749-26-033305",
+   "0001944970-26-000029",
    "0001193125-26-429162",
    "0001193125-26-429202",
    "0001334945-26-000005",
-   "0001400954-26-000013",
    "0002161365-26-000008",
-   "0000109563-26-000045",
+   "0001400954-26-000013",
    "0001930044-26-000010",
    "0001753539-26-000149",
    "0001950180-26-000010",
    "0001993147-26-000004",
+   "0002083595-26-000010",
    "0001187377-26-000004",
    "0001053507-26-000151",
    "0002032458-26-000030",
@@ -15915,7 +15883,6 @@
    "0001213900-26-111771",
    "0000897069-26-001865",
    "0000902664-26-004257",
-   "0001510281-26-000373",
    "0001628280-26-066951",
    "0001212813-26-000005",
    "0001628280-26-066941",
@@ -15923,7 +15890,6 @@
    "0000829224-26-000149",
    "0001266824-26-000217",
    "0001596532-26-000248",
-   "0001193125-26-429133",
    "0001242648-26-000047",
    "0001635088-26-000116",
    "0001628280-26-066949"
