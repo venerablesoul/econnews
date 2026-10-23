@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "24b7d4fffbb1d7ac": "2026-10-20T05:56:52.689483+00:00",
   "089f4b4ea463d5d7": "2026-10-20T06:01:52.480170+00:00",
   "36c768d6902413ce": "2026-10-20T06:06:53.481925+00:00",
   "1f12e7d5638235d6": "2026-10-20T06:11:52.730043+00:00",
@@ -955,22 +954,10 @@
   "f030cfac65781eea": "2026-10-23T05:25:51.843996+00:00",
   "1e494241952e7f25": "2026-10-23T05:30:51.697727+00:00",
   "bc3263a883a0dac9": "2026-10-23T05:40:51.729300+00:00",
-  "adb8bccc47a53475": "2026-10-23T05:55:51.536053+00:00"
+  "adb8bccc47a53475": "2026-10-23T05:55:51.536053+00:00",
+  "64a643598f38fca1": "2026-10-23T06:00:51.602535+00:00"
  },
  "recent": [
-  {
-   "title": "FTSE 100 Live: UK Stocks Set to Fall as European Weakness Extends",
-   "link": "https://www.bloomberg.com/news/live-blog/2026-10-20/ftse-100-live-pound-uk-jobs-data-bonds-gilts-ai-stocks-french-protests-what-s-moving-uk-markets-right-now-markets-today",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T05:56:52.689483+00:00",
-   "title_ru": "FTSE 100 Live: акции Великобритании упадут по мере расширения слабости Европы",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Bank of Japan may raise inflation forecast, stand pat on rates, sources say",
    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNNEt0OVZkdE8tYkUwUDFsdDhhSDV5UURBdVNxVU5JdldQdFl0WkFpdzE4RkhhSUgxZG9LeVB4ZmxnZV9qWlFjNGctenU2T05DZWxlNVNGX3YteEM3TFg3Y2FUN3pJUVNjdF8zSFo4Rm13NGZjWXdUQ0RRZXNpbXpXYVI4UnUxc3F2SkV1OVRFMUpmcWlpN292VjBsM0hCeGFnSGdDaWpBZjg5V2l5TzRWbEhWQjM0eU9sRkpRM2ZCRQ?oc=5",
@@ -9742,7 +9729,6 @@
   "US Labor Statistics (BLS)": 0
  },
  "charts_sent": [
-  "2026-10-13-09",
   "2026-10-13-21",
   "2026-10-14-09",
   "2026-10-14-21",
@@ -9761,7 +9747,8 @@
   "2026-10-21-09",
   "2026-10-21-21",
   "2026-10-22-09",
-  "2026-10-22-21"
+  "2026-10-22-21",
+  "2026-10-23-09"
  ],
  "calendar": {
   "fetched": "2026-10-23T00:15:20.326960+00:00",
@@ -10470,7 +10457,7 @@
   "USD|2026-10-16T03:30:00+00:00|Fed Chairman Warsh Speaks",
   "GBP|2026-10-21T06:00:00+00:00|CPI y/y"
  ],
- "last_morning": "2026-10-22",
+ "last_morning": "2026-10-23",
  "all_down_alerted": false,
  "trades": {
   "congress": [
@@ -16017,6 +16004,7 @@
    "0002157445-26-000002",
    "0000897069-26-001865",
    "0001349983-26-000013",
+   "0002032458-26-000030",
    "0001607879-26-000008",
    "0001973495-26-000007",
    "0001855880-26-000022",
@@ -16025,7 +16013,6 @@
    "0001769628-26-000450",
    "0002083595-26-000010",
    "0001266824-26-000217",
-   "0001455134-26-000023",
    "0001193125-26-429162",
    "0001891751-26-000010",
    "0001769628-26-000451",
@@ -16051,7 +16038,7 @@
    "0001628280-26-066951",
    "0000902664-26-004257",
    "0001140361-26-040540",
-   "0002032458-26-000030",
+   "0001455134-26-000023",
    "0001213900-26-111771",
    "0001493152-26-048149",
    "0001437749-26-033305"
