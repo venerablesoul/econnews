@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "312593cf7a5c3e90": "2026-10-20T00:46:05.088570+00:00",
   "7a6fbd817a4e344e": "2026-10-20T00:51:05.079063+00:00",
   "8ae525def2016ae2": "2026-10-20T01:01:05.159041+00:00",
   "24bc4feb6f5d08de": "2026-10-20T01:21:05.134175+00:00",
@@ -948,19 +947,11 @@
   "a4f9ee8a0d8aaecf": "2026-10-23T00:40:20.287571+00:00",
   "27191de0574e9be4": "2026-10-23T00:40:20.287571+00:00",
   "2557d19f07e7e050": "2026-10-23T00:45:20.369551+00:00",
-  "212e6850534ea615": "2026-10-23T00:45:20.369551+00:00"
+  "212e6850534ea615": "2026-10-23T00:45:20.369551+00:00",
+  "1ccd8342cef80187": "2026-10-23T00:50:20.280013+00:00",
+  "ea4dbdeadaf28757": "2026-10-23T00:50:20.280013+00:00"
  },
  "recent": [
-  {
-   "title": "VC Investor Oza Says Public Markets Will Fix Bloated Valuations",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNSklsdjdqOUlPQ0hjVV9Mand5UkVNUEttOFM3MGFwRjJEd2FCME1sQUxtMWlJcnVSaHJ5bEp0U1FNSUd2NmdLcERjN3BSWlRyanFOd2E5Uk82UW1NdnZZWmlXZF9xNElDWUNoaFkwMjB2d3FJS2RkR0l2UC0wZUc4RWhaRjRvWHBsZlFpUmthT3RZSWxyOXcybzd5bUJLUFVtTnEzS0poWUlQM2U4SDQ3X2dVSnQ?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T00:46:05.088570+00:00",
-   "title_ru": "Венчурный инвестор Оза говорит, что публичные рынки исправят раздутые оценки"
-  },
   {
    "title": "South Korea central bank to hold rates on October 22, hike in November",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNRlhEb1c1OS1kZy1wc0paMktybGc1SFAxMlZSLWVEUXZQaHdNOTExdXZOMmtWbWZ1LVNzVEVUOTNSUWxwZ3VMaXFNVDd0VUV3SWdRYTZKcXdaQlB6SWpXeFhsMjcxUkZubVB3R1Y3SUhMY1B3Z29lalI2S2FjLVh3TDNmNTVxbTZHa3pxTl83emVjdjQ5MFNJUnd1NEpIZXJUWUh1ODZPekpZTjR6b01DeWxoa1ZGQQ?oc=5",
@@ -9697,6 +9688,29 @@
    "score": 5,
    "ts": "2026-10-23T00:45:20.369551+00:00",
    "title_ru": "Рост производства в Японии в октябре замедлился до 7-месячного минимума, показывает индекс PMI"
+  },
+  {
+   "title": "Treasury Unveils Rule to Ban Large Investors From Homebuying",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQY0JiLTJfNWFiSzBJMWZZX3lxZHd6WmNpR3l1RnRpdm94Um9HRV9haTczT0JEUU5JQkpVNlF4VmFIaTFzbkphcmNBRzl1ZjgySG5SU1hlUXhzckw3VVJJcl9Lb2EtRzVPOTVCTlZVa21sRkZYUjJFcWRzMVA1LVk2QnZic2twNEk3Rml3NTV1ejFVNVlfTm51VHp2Z2xGYmNQWnhTdm5qTDA2bldjVWI2am5vNG93Zw?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T00:50:20.280013+00:00",
+   "title_ru": "Казначейство обнародовало правило, запрещающее крупным инвесторам покупать жилье",
+   "tags": [
+    "bonds"
+   ]
+  },
+  {
+   "title": "Apple launches into foldable market as iPhone Duo sales begin",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQMTlwRzRMSWgwZGFjeWp0bG01c2c1WUkxckYtOGR3MUhieUYwZUwxRVNHdFBCbWUwSm02TWgzdG5fRGxEX0U1TUtvUnF5bGpXQkRaN1lnbmJZeTVuZmZzS21ob0FTMnBYekcySDlic3VVUE0ySjZTOHhJR2V1RzlmN09ZdDh1Mlg1a0N3dXR5ckstOW13Mk91YjJOcmdqNkd3dFR1MzhKYmFORFItakQyMTltekVOaVQyc0ZMSm5B?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T00:50:20.280013+00:00",
+   "title_ru": "Apple выходит на рынок складных устройств вместе с началом продаж iPhone Duo"
   }
  ],
  "last_digest": "2026-10-22",
@@ -15995,8 +16009,8 @@
    "0001930044-26-000010",
    "0001753539-26-000149",
    "0001950180-26-000010",
-   "0001993147-26-000004",
    "0002083595-26-000010",
+   "0001993147-26-000004",
    "0001187377-26-000004",
    "0001053507-26-000151",
    "0002032458-26-000030",
