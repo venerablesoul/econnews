@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "8e59e41d778062ab": "2026-10-20T02:41:52.466419+00:00",
-  "be4bda884802e5e2": "2026-10-20T02:46:52.426363+00:00",
   "907e7af65c45dedc": "2026-10-20T02:51:52.418350+00:00",
   "d22aa2d31a4a5594": "2026-10-20T03:06:52.437952+00:00",
   "4a7d354ba3e5b316": "2026-10-20T03:06:52.437952+00:00",
@@ -950,38 +948,10 @@
   "5893ce8ca197271c": "2026-10-23T02:25:51.572679+00:00",
   "8911f2c145f3c753": "2026-10-23T02:35:51.595090+00:00",
   "2c0bbeb05209694b": "2026-10-23T02:40:51.538128+00:00",
-  "27616156a560cf19": "2026-10-23T02:40:51.538128+00:00"
+  "27616156a560cf19": "2026-10-23T02:40:51.538128+00:00",
+  "40cd65c03a326a79": "2026-10-23T02:50:51.605177+00:00"
  },
  "recent": [
-  {
-   "title": "PBOC Rate Shift Plan Would Lower Borrowing Costs: Analysts",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-20/pboc-rate-shift-plan-would-lower-borrowing-costs-analysts",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T02:41:52.466419+00:00",
-   "title_ru": "План изменения ставок НБК снизит стоимость заимствований: аналитики",
-   "lead": "The People’s Bank of China’s consideration of shifting its policy rate benchmark to the overnight reverse-repo rate would effectively lower borrowing costs, supporting bond investments, according to analysts.",
-   "lead_ru": "По мнению аналитиков, рассмотрение Народным банком Китая вопроса о переводе базовой процентной ставки на однодневную ставку обратного РЕПО эффективно снизит стоимость заимствований, поддержав инвестиции в облигации, по мнению аналитиков.",
-   "tags": [
-    "bonds",
-    "China"
-   ]
-  },
-  {
-   "title": "South Korea's Elice shares plunge 28% in market debut as data centre stocks shunned",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNU1JYM3hYdDlsc1JuLWVCVHlKcld3Skc0Y1M0WWgzbk1JNFVJbzhsNU13eVVmSUNTX0hPX1ZGUXotNzVkV3UxTi1yMTlhNm04S2lzODk4NlRhOXFDMUFfb1cxbXd3TzZoZVl3QS00aldHcmNieDZSZ0x1eDlEYjZ5NmRCbWVEeTQwQ2RreWdkb2ljUXB5cDlKalhpTWZ3SnN5ek5pVzlBRWNEQ0d1SVdOREpqMUE1LUZf?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-20T02:46:52.426363+00:00",
-   "title_ru": "Акции южнокорейской Elice упали на 28% на дебютном рынке, поскольку акции центров обработки данных избегали",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Poultry Disease Found at MBRF Supplier in Risk to Brazil Exports",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQcDhLcGp3TUNwQWdTZi1HSFB5LWZlN0xHUnduLUxhWk9XdEU1ZzkxYUxCclpteThfaDBCY25WamhLYmd4QUJZeDF1dWU5ODM3ai1NUmNia3UwTEF6UUJCdVFrRDRlVms1MHBaZm9JV0lMUk0tQ1VzYlg4QlVXTzdiQXIwckYySC03WDlRMzRLNHg3SldTNEFma056T2o3MFhnQ1NDcGRxcmtmNGUzeUJocHBUVmUyZw?oc=5",
@@ -9695,6 +9665,19 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Oil little changed as supply concern lingers amid Houthi attacks on Saudi Arabia",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPR2dZUC10TmJYRUk2RmM5WWpxaUx2XzBPZ0ZTV3hIR3BkaGFvZ3B2T1hhd0xEcXZOWk5LdXhLLUF5QU9XdTRQdnRyTk9jcmVNMEZvZlZBRW8xcG1TVW1fTkY2UnFrcXlVWlUwbDhRYk9pcW1fdEdzMVNRR2ZhYVl2T0RZa09uZTktZGFWRVRWSEpGeFhYVXVPR09zNDVaTVdiNDdRRHg3VFNyZWNNWVBmdkxGMWFOa05yN2NBRnRVZjF3eF9i?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T02:50:51.605177+00:00",
+   "title_ru": "Нефть мало изменилась, поскольку беспокойство по поводу поставок задерживается на фоне нападений хуситов на Саудовскую Аравию",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-22",
@@ -15975,7 +15958,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-23T01:40:51.640079+00:00",
+  "checked": "2026-10-23T02:45:51.511006+00:00",
   "sec_seen": [
    "0001062993-26-005508",
    "0001930044-26-000010",
