@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "3dad6ad9ee9421cf": "2026-10-20T15:53:33.343300+00:00",
-  "571c5ff0b1d41985": "2026-10-20T15:53:33.343300+00:00",
-  "a43aba47a9445e94": "2026-10-20T15:58:33.135424+00:00",
-  "57b1d6a20ff9b97e": "2026-10-20T15:58:33.135424+00:00",
-  "8da74d37e5a7b050": "2026-10-20T15:58:33.135424+00:00",
   "8d5ed32110866ff9": "2026-10-20T16:03:33.131162+00:00",
   "3b6bdc5f5df22bf9": "2026-10-20T16:03:33.131162+00:00",
   "f1d469cc645dfa05": "2026-10-20T16:08:33.172614+00:00",
@@ -1022,64 +1017,10 @@
   "352b16183a5330e6": "2026-10-23T15:46:55.731081+00:00",
   "c33d633d4f0ccafe": "2026-10-23T15:51:55.844709+00:00",
   "b6a296030d05553b": "2026-10-23T15:51:55.844709+00:00",
-  "17a726239616bc0d": "2026-10-23T15:51:55.844709+00:00"
+  "17a726239616bc0d": "2026-10-23T15:51:55.844709+00:00",
+  "4baf01a83c1b7e8f": "2026-10-23T16:01:55.693225+00:00"
  },
  "recent": [
-  {
-   "title": "US Eyes India’s Reliance to Refine Venezuelan Oil",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-20/us-eyes-india-s-reliance-to-refine-venezuelan-oil",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-20T15:53:33.343300+00:00",
-   "title_ru": "США видят зависимость Индии от переработки венесуэльской нефти",
-   "lead": "The US is looking to persuade India’s Reliance Industries Ltd. to refine more Venezuelan crude as Washington seeks to bring additional supplies to a market rattled by the Iran conflict.",
-   "lead_ru": "США стремятся убедить индийскую Reliance Industries Ltd. перерабатывать больше венесуэльской нефти, поскольку Вашингтон стремится обеспечить дополнительные поставки на рынок, потрясенный иранским конфликтом.",
-   "tags": [
-    "oil"
-   ]
-  },
-  {
-   "title": "Radiology Partners Pulls Loan in Latest Sign of Market Weakness",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-20/radiology-partners-pulls-loan-in-latest-sign-of-market-weakness",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T15:53:33.343300+00:00",
-   "title_ru": "Radiology Partners отозвала кредит из-за последнего признака слабости рынка",
-   "lead": "Radiology Partners Inc. has pulled a loan offering to help fund an acquisition, the latest sign of weakness in the leveraged loan market.",
-   "lead_ru": "Radiology Partners Inc. отозвала кредит для финансирования приобретения, что является последним признаком слабости на рынке кредитов с использованием заемных средств."
-  },
-  {
-   "title": "Bank of Israel to pause rate cuts ahead of October 27 election",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNUVQ5UjE5RFoyXzlHb3ZYbVAtbFRSUnMyYzhYZ1N1QWktUmtLZXpNY3JyRlpYNUFONmg0MGQ3Zzk1NV8yNTE1NkRrS0liYU1vZXdsUkxvdlY1VDNQVEVkcHVCRXJjcDlZcS1KaU83aEdLOGlLYklsNGdaVnVWa0EzTVRzeWVmRVFVVmpuSTk5VUgzYTFZY29hN2h3ZndiRnc5RUdGNHd6ZFVHY3c?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-20T15:58:33.135424+00:00",
-   "title_ru": "Банк Израиля приостановит снижение ставок в преддверии выборов 27 октября",
-   "tags": [
-    "rates"
-   ]
-  },
-  {
-   "title": "Russell Weighs Letting Growth Stocks Claim Up to 60% in Indexes",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-20/russell-weighs-letting-growth-stocks-claim-up-to-60-in-indexes",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-20T15:58:33.135424+00:00",
-   "title_ru": "Рассел взвешивает, что позволит растущим акциям претендовать на долю до 60% в индексах",
-   "lead": "For almost four decades, FTSE Russell has divided the market value of stocks in its benchmarks evenly between growth companies prized for their earnings potential and value stocks favored for their relatively cheap prices.",
-   "lead_ru": "На протяжении почти четырех десятилетий FTSE Russell равномерно делил рыночную стоимость акций в своих индексах между растущими компаниями, которые ценятся за свой потенциал прибыли, и стоимостными акциями, предпочитаемыми за их относительно низкие цены.",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "JPMorgan Asset Sees Bitcoin Beating Stocks, But With a Catch",
    "link": "https://www.bloomberg.com/news/articles/2026-10-20/jpmorgan-asset-sees-bitcoin-beating-stocks-but-with-a-catch",
@@ -10443,6 +10384,21 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "Russian central bank keeps key rate on hold at 14%, raises 2026 inflation forecast",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPQ1lYMHE1UVNEa0dXTWVkQjZ0OUJIOVNQRm5laTJuRlZpakY2R012ekNrRmZ6LTdNYmNqLVBCOFBJekpQWXFrejA0Y0xjZ2UwVjR1d2QtZ1NxYi1GUFBFa3NSNy12anA5WE84amszX2t4Z1JoZXRndDVBcS1NTDluU2NuODd1b25GSWNpNjNSdFc3cF9sQlp2RUx1VTI3U3piNkstRGdZN0ZHTkwxLVhaNFRTM0szQjdKT2lN?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 7,
+   "ts": "2026-10-23T16:01:55.693225+00:00",
+   "title_ru": "Центральный банк России удерживает ключевую ставку на уровне 14%, повышая прогноз инфляции на 2026 год",
+   "tags": [
+    "rates",
+    "inflation",
+    "Russia"
+   ]
   }
  ],
  "last_digest": "2026-10-22",
@@ -12753,6 +12709,22 @@
     "date": "2026-10-22",
     "disclosed": "2026-10-23",
     "link": "https://www.sec.gov/Archives/edgar/data/2093073/000076406526000117/0000764065-26-000117-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "90db8e8051c36de3",
+    "ticker": "[NONE]",
+    "company": "VISTA CREDIT STRATEGIC LENDING CORP.",
+    "who": "Gregory T Galligan",
+    "role": "CEO",
+    "type": "buy",
+    "value": 100000,
+    "shares": 5144,
+    "price": 19.44,
+    "plan": false,
+    "date": "2026-10-21",
+    "disclosed": "2026-10-23",
+    "link": "https://www.sec.gov/Archives/edgar/data/1973908/000119312526429845/0001193125-26-429845-index.htm"
    },
    {
     "src": "sec",
@@ -16689,22 +16661,6 @@
     "date": "2026-10-14",
     "disclosed": "2026-10-15",
     "link": "https://www.sec.gov/Archives/edgar/data/2063843/000119312526422892/0001193125-26-422892-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "5f1b67b00f848581",
-    "ticker": "PRTA",
-    "company": "PROTHENA CORP PUBLIC LTD CO",
-    "who": "Scully William P",
-    "role": "10% owner",
-    "type": "buy",
-    "value": 920049,
-    "shares": 110000,
-    "price": 8.36,
-    "plan": false,
-    "date": "2026-10-14",
-    "disclosed": "2026-10-15",
-    "link": "https://www.sec.gov/Archives/edgar/data/1559053/000104546326000021/0001045463-26-000021-index.htm"
    }
   ],
   "docs": {
@@ -16742,6 +16698,7 @@
   "checked": "2026-10-23T15:11:55.713584+00:00",
   "sec_seen": [
    "0001096906-26-001611",
+   "0001193125-26-429845",
    "0001096906-26-001612"
   ],
   "errors": {
