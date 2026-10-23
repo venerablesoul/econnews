@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "aaf164ef6c9f1296": "2026-10-20T22:49:11.874125+00:00",
   "fc78910f54a2e768": "2026-10-20T23:14:11.843355+00:00",
   "a75708349bfe7aa4": "2026-10-20T23:19:11.822980+00:00",
   "249ce724845c162b": "2026-10-20T23:29:11.821168+00:00",
@@ -1006,24 +1005,11 @@
   "b20a095ce78bf965": "2026-10-23T22:17:41.490326+00:00",
   "e54466f64ec33585": "2026-10-23T22:17:41.490326+00:00",
   "f7699d77aa3ae4ee": "2026-10-23T22:47:41.391035+00:00",
-  "7edea1d5420ae4b3": "2026-10-23T22:47:41.391035+00:00"
+  "7edea1d5420ae4b3": "2026-10-23T22:47:41.391035+00:00",
+  "5c5767c90ce585c8": "2026-10-23T22:52:41.410773+00:00",
+  "a9253d2fd4319482": "2026-10-23T22:52:41.410773+00:00"
  },
  "recent": [
-  {
-   "title": "US Stock Futures Advance on AI Earnings Boost: Markets Wrap",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-20/stock-market-today-dow-s-p-live-updates",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-20T22:49:11.874125+00:00",
-   "title_ru": "Фьючерсы на акции США растут благодаря росту доходов ИИ: итоги рынков",
-   "lead": "Asian stocks were set to track US stock futures higher as strong earnings from some of the biggest beneficiaries of the artificial intelligence boom helped revive the tech trade.",
-   "lead_ru": "Азиатские акции будут следовать за фьючерсами на американские акции выше, поскольку высокие доходы некоторых из крупнейших бенефициаров бума искусственного интеллекта помогли оживить торговлю технологиями.",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "US bank J.P. Morgan facilitates Syrian deal for Saudi oil products",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPMDBMZWE2MDdMSEVnOWduZE83YjRxc3l0TW44dEktSFZGMHdVUVl4anNIX2tmUFFyVExXN2xMRmdLX3p1UWV6YW15UE85NTBId3lKc0Uxekk4OXV3RHpFWFBSVDNDN09WS1N1NDFVREFGVGp1blR1dml1eU1ZYnFuc0I1bXJXQmktdVNQSHZGNEJleU5tSzhiQ3RHMjBBcktqMWhIQzM0TEFEclAzMkVfY240X2g?oc=5",
@@ -10334,6 +10320,30 @@
    "score": 5,
    "ts": "2026-10-23T22:47:41.391035+00:00",
    "title_ru": "Франция пощадила рейтинги Moody's, борясь с беспорядками"
+  },
+  {
+   "title": "Canadian dollar hits five-week high as data supports rate hike bets",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRHNLSXpMVmtYQ3JMZDE5UW81bFo4cG5VT04zWFBSUm1XeWhnWURVZlpMdmZ2b0F3RWo4RUxZekt2ZUFMbkwwN1E5R1M3TXhaeU5SdXltUlJEYk5oY21TU1lUMWota1BFZ19yVVNFSWt6WUxsa00zVXpmTDB1Sm83X2E3VkhOVFVnY1ZDRVZhTU9jY3EtbzR0MG5RZTNBZmtrVWdmamluektNOGFFdlE?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-23T22:52:41.410773+00:00",
+   "title_ru": "Канадский доллар достиг пятинедельного максимума, поскольку данные поддерживают ставки на повышение ставок",
+   "tags": [
+    "rates",
+    "dollar"
+   ]
+  },
+  {
+   "title": "Bank of Italy calls for digital asset investments by banks despite uncertainty",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPeWJaUzBocHF6S0JJZEEya3l3T25FSjZ5UWNhY1hfZGlIYS15enpoMjFaZFJTMVcxcVBPVEJ2TUpxT2JueEZfUDlSdVBGSUp5NTl4Rnhlay1NWXZFbTNPQXNtamNBcDdFWjE5U0ZhODZBYnBBcnJSZUdaeEJRLUpiMFJFTWVVamV6Sjd6QnJfSElfanl6ZzN6SEZrZ3NBSllOV0VWSWhBWWx0RTVyaHFaV0hBOFpRS1hiZnhsc2tHU0E0dw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T22:52:41.410773+00:00",
+   "title_ru": "Банк Италии призывает банки инвестировать в цифровые активы, несмотря на неопределенность"
   }
  ],
  "last_digest": "2026-10-23",
@@ -12676,6 +12686,22 @@
     "date": "2026-10-23",
     "disclosed": "2026-10-23",
     "link": "https://www.sec.gov/Archives/edgar/data/1506488/000135471926000001/0001354719-26-000001-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "6e8437df49d469d7",
+    "ticker": "CRCT",
+    "company": "Cricut, Inc.",
+    "who": "Arora Ashish",
+    "role": "CEO, 10% owner",
+    "type": "sell",
+    "value": 1133604,
+    "shares": 180000,
+    "price": 6.3,
+    "plan": true,
+    "date": "2026-10-23",
+    "disclosed": "2026-10-23",
+    "link": "https://www.sec.gov/Archives/edgar/data/1851564/000185156426000045/0001851564-26-000045-index.htm"
    },
    {
     "src": "sec",
@@ -16580,22 +16606,6 @@
     "date": "2026-10-14",
     "disclosed": "2026-10-16",
     "link": "https://www.sec.gov/Archives/edgar/data/2121444/000121390026110188/0001213900-26-110188-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "3fcf22d6fbdabe83",
-    "ticker": "PEP",
-    "company": "PEPSICO INC",
-    "who": "Robert C Pohlad",
-    "role": "Director",
-    "type": "buy",
-    "value": 23686389,
-    "shares": 184646,
-    "price": 128.28,
-    "plan": false,
-    "date": "2026-10-14",
-    "disclosed": "2026-10-16",
-    "link": "https://www.sec.gov/Archives/edgar/data/1061272/000106127226000004/0001061272-26-000004-index.htm"
    }
   ],
   "docs": {
@@ -16632,6 +16642,7 @@
   },
   "checked": "2026-10-23T22:32:41.439985+00:00",
   "sec_seen": [
+   "0000904454-26-000534",
    "0001670723-26-000005",
    "0001588894-26-000024",
    "0000904454-26-000531",
@@ -16642,7 +16653,6 @@
    "0001437906-26-000005",
    "0001193125-26-430728",
    "0000904454-26-000537",
-   "0001628280-26-067097",
    "0001100682-26-000151",
    "0001934887-26-000005",
    "0001193125-26-430730",
@@ -16653,12 +16663,12 @@
    "0001628280-26-067099",
    "0000311094-26-000060",
    "0001193125-26-430732",
+   "0001851564-26-000045",
    "0000070858-26-000508",
    "0002060000-26-000005",
    "0001354719-26-000001",
-   "0001821737-26-000017",
    "0001013594-26-001082",
-   "0000904454-26-000534",
+   "0001821737-26-000017",
    "0001193125-26-430695",
    "0001195306-26-000005"
   ],
