@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "2bc1cf592e278a36": "2026-10-20T03:56:52.844077+00:00",
   "f7a1ad1b5ffe4649": "2026-10-20T04:01:52.747446+00:00",
   "09652792ea4b5505": "2026-10-20T04:01:52.747446+00:00",
   "94fd1a9223ad4682": "2026-10-20T04:01:52.747446+00:00",
@@ -952,7 +951,11 @@
   "b4ec47a37e263b54": "2026-10-23T03:40:51.576655+00:00",
   "2612ad10efb3c911": "2026-10-23T03:40:51.576655+00:00",
   "4aba753e5c770c07": "2026-10-23T03:45:51.553301+00:00",
-  "f9f3efa67f52c20e": "2026-10-23T03:55:51.641997+00:00"
+  "f9f3efa67f52c20e": "2026-10-23T03:55:51.641997+00:00",
+  "9c40a31e12933cd1": "2026-10-23T04:00:51.583392+00:00",
+  "78fd077fd00fe3fc": "2026-10-23T04:00:51.583392+00:00",
+  "eea4f31f94f24465": "2026-10-23T04:00:51.583392+00:00",
+  "dcb28ff19c24f1c4": "2026-10-23T04:00:51.583392+00:00"
  },
  "recent": [
   {
@@ -9694,6 +9697,48 @@
     "rates",
     "dollar"
    ]
+  },
+  {
+   "title": "Indian shares seen opening higher after 3-session drop; oil surge clouds outlook",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOeVk5bXN2THRVWVBubnpudHpPQ2dreFhuVUxXSUFqZWJLa2psTU1rbjl3UktXTlVabEpvVEM0YUpuZVBUWkJQSjB4X1o1QlI5OEZYNE1fNE5QREZ1RjZqeURTcEFZSm5DbkFGYkFCLVNVYkpRNXRCQ3RMTDExMGVJdS1lUjUtdlBFVkJQY1VXdVBZTF9qVklpbU1YRXp6dHpXNWhqcHVFVFNsZUtQeXV6SGNBTnJYaHBzWlE5SF9EeFpiYllha3c?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-23T04:00:51.583392+00:00",
+   "title_ru": "Индийские акции показали рост после падения на 3 сессии; перспективы нефтяного всплеска",
+   "tags": [
+    "oil",
+    "markets"
+   ]
+  },
+  {
+   "title": "Australia's Zip tumbles 50% after fraud incident dents first-quarter customer growth",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOdnNsLVEtTUNXTl85RWdPd3d5YjNMbE02QmlxVE5PcFdLWkZhblJCTFhwbGVKeFU4bkRRbk9aYTBHV3RjRmQwSm9LV3hVMUhmckZkS2xKSG5lVUxoUHQzamxlaUlrNDlwNlpNZExPUnUzSGZkMWwyR2lKNzdzd21yWjU3UWpkU0hNWklJOFVya1doeUpsVjJNa3BDQkx5WkFuVzNHZC1WelpweEhWVWVmUDBpSXkyMXlDcmgwcjBZNG9mdGtKN2U4?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T04:00:51.583392+00:00",
+   "title_ru": "Австралийский Zip упал на 50% после того, как инцидент с мошенничеством повлиял на рост числа клиентов в первом квартале"
+  },
+  {
+   "title": "UK consumer confidence falls at fastest rate since Covid as cost of living bites",
+   "link": "https://www.theguardian.com/business/2026/oct/23/uk-consumer-confidence-falls-fastest-since-covid-cost-of-living",
+   "sources": [
+    "The Guardian"
+   ],
+   "score": 2,
+   "ts": "2026-10-23T04:00:51.583392+00:00"
+  },
+  {
+   "title": "ЦБ и Мосбиржа введут ограничения из-за случаев дестабилизации цен бондов",
+   "link": "https://www.rbc.ru/finances/23/10/2026/6ad9f181512fe030cca340df",
+   "sources": [
+    "RBC"
+   ],
+   "score": 1,
+   "ts": "2026-10-23T04:00:51.583392+00:00"
   }
  ],
  "last_digest": "2026-10-22",
@@ -15982,7 +16027,6 @@
    "0002157445-26-000002",
    "0000897069-26-001865",
    "0001349983-26-000013",
-   "0002032458-26-000030",
    "0001607879-26-000008",
    "0001855880-26-000022",
    "0001973495-26-000007",
@@ -15991,6 +16035,7 @@
    "0002083595-26-000010",
    "0001769628-26-000450",
    "0001266824-26-000217",
+   "0001455134-26-000023",
    "0001193125-26-429162",
    "0001891751-26-000010",
    "0001628280-26-066948",
@@ -16016,7 +16061,7 @@
    "0002066491-26-000013",
    "0001834164-26-000005",
    "0001140361-26-040540",
-   "0001455134-26-000023",
+   "0002032458-26-000030",
    "0001213900-26-111771",
    "0001493152-26-048149",
    "0001437749-26-033305"
