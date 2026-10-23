@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "4b7af1d4a1539ce1": "2026-10-20T13:28:05.419248+00:00",
-  "919722a05e50dd72": "2026-10-20T13:28:05.419248+00:00",
   "d2ca85c8c3c1f191": "2026-10-20T13:38:33.054427+00:00",
   "85c4377a974e399a": "2026-10-20T13:38:33.054427+00:00",
   "e6a2b9523e37a4a5": "2026-10-20T13:43:33.148635+00:00",
@@ -1014,7 +1012,13 @@
   "0b2bbf600bfcab07": "2026-10-23T13:21:55.671723+00:00",
   "b8ef7b45db0d19dd": "2026-10-23T13:26:55.711135+00:00",
   "fda989b6a5e81a0e": "2026-10-23T13:26:55.711135+00:00",
-  "9dde434f64c4f71f": "2026-10-23T13:26:55.711135+00:00"
+  "9dde434f64c4f71f": "2026-10-23T13:26:55.711135+00:00",
+  "305880292e18f179": "2026-10-23T13:31:55.759150+00:00",
+  "bc2de053132f57b8": "2026-10-23T13:31:55.759150+00:00",
+  "bc510bece5bc9e72": "2026-10-23T13:31:55.759150+00:00",
+  "4b7af1d4a1539ce1": "2026-10-23T13:36:55.694608+00:00",
+  "67f011abba325c2e": "2026-10-23T13:36:55.694608+00:00",
+  "de5c9900b5a76573": "2026-10-23T13:36:55.694608+00:00"
  },
  "recent": [
   {
@@ -10421,6 +10425,38 @@
    "tags": [
     "BankOfRussia"
    ]
+  },
+  {
+   "title": "Germany Wants to Stop More Oil Refinery Closures as Costs Mount",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-23/germany-wants-to-stop-more-oil-refinery-closures-as-costs-mount",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T13:36:55.694608+00:00",
+   "title_ru": "Германия хочет остановить закрытие нефтеперерабатывающих заводов по мере роста затрат",
+   "lead": "Germany said it will seek to stem the loss of oil refining capacity, arguing that closures are hurting not only fuel suppliers and consumers but the country’s vast chemicals manufacturing sector too.",
+   "lead_ru": "Германия заявила, что будет стремиться остановить потерю мощностей по переработке нефти, утверждая, что закрытия наносят ущерб не только поставщикам и потребителям топлива, но и обширному химическому сектору страны.",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "Набиуллина назвала общее число открытых счетов цифрового рубля",
+   "link": "https://www.rbc.ru/rbcfreenews/6adb61b89c1f7a969ec1ebd0",
+   "sources": [
+    "RBC"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T13:36:55.694608+00:00",
+   "title_en": "Nabiullina called the total number of opened digital ruble accounts",
+   "lead": "В России открыто 270 тыс. счетов цифрового рубля, из них 15 тыс.",
+   "lead_en": "270 thousand digital ruble accounts have been opened in Russia, of which 15 thousand",
+   "tags": [
+    "BankOfRussia",
+    "ruble",
+    "Russia"
+   ]
   }
  ],
  "last_digest": "2026-10-22",
@@ -12715,6 +12751,22 @@
     "date": "2026-10-22",
     "disclosed": "2026-10-23",
     "link": "https://www.sec.gov/Archives/edgar/data/1975717/000110465926118281/0001104659-26-118281-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "11f4feace469f458",
+    "ticker": "CLF",
+    "company": "CLEVELAND-CLIFFS INC.",
+    "who": "Edilson Camara",
+    "role": "Director",
+    "type": "buy",
+    "value": 99826,
+    "shares": 7400,
+    "price": 13.49,
+    "plan": false,
+    "date": "2026-10-22",
+    "disclosed": "2026-10-23",
+    "link": "https://www.sec.gov/Archives/edgar/data/2093073/000076406526000117/0000764065-26-000117-index.htm"
    },
    {
     "src": "sec",
@@ -16667,22 +16719,6 @@
     "date": "2026-10-14",
     "disclosed": "2026-10-15",
     "link": "https://www.sec.gov/Archives/edgar/data/1559053/000104546326000021/0001045463-26-000021-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "e8e9d68b184ff323",
-    "ticker": "UTHR",
-    "company": "UNITED THERAPEUTICS Corp",
-    "who": "Martine A Rothblatt",
-    "role": "CEO",
-    "type": "sell",
-    "value": 5129873,
-    "shares": 9500,
-    "price": 539.99,
-    "plan": true,
-    "date": "2026-10-14",
-    "disclosed": "2026-10-15",
-    "link": "https://www.sec.gov/Archives/edgar/data/1106578/000110657826000164/0001106578-26-000164-index.htm"
    }
   ],
   "docs": {
@@ -16723,24 +16759,21 @@
    "0001193125-26-429389",
    "0001769628-26-000450",
    "0001193125-26-429381",
+   "0000764065-26-000117",
    "0002157445-26-000002",
    "0001769628-26-000451",
    "0001062993-26-005508",
-   "0001607879-26-000008",
    "0001834164-26-000005",
    "0001104659-26-118281",
    "0001628280-26-066981",
    "0000711377-26-000034",
    "0001493152-26-048153",
-   "0001193125-26-429245",
-   "0001493152-26-048149",
    "0001493152-26-048181",
    "0001193125-26-429392",
    "0001213900-26-111813",
    "0002066491-26-000013",
    "0001493152-26-048157",
-   "0001973495-26-000007",
-   "0001891037-26-000011"
+   "0001973495-26-000007"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
