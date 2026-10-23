@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "4e2fa7305fb86302": "2026-10-20T20:54:11.840017+00:00",
   "7ee2448e74c44844": "2026-10-20T20:59:11.929140+00:00",
   "dd9c09d6b2d69108": "2026-10-20T20:59:11.929140+00:00",
   "35b0466006cc2383": "2026-10-20T20:59:11.929140+00:00",
@@ -1007,7 +1006,10 @@
   "b2c1a4a468c2b534": "2026-10-23T20:27:41.485678+00:00",
   "3640acecdbd816fd": "2026-10-23T20:42:41.508298+00:00",
   "7089f4716ef8b384": "2026-10-23T20:47:41.467218+00:00",
-  "540a58d9eb2e4ec3": "2026-10-23T20:52:41.501907+00:00"
+  "540a58d9eb2e4ec3": "2026-10-23T20:52:41.501907+00:00",
+  "fbc7ede144c78f98": "2026-10-23T20:57:41.427848+00:00",
+  "0cc2d7583b33826d": "2026-10-23T20:57:41.427848+00:00",
+  "7da32245dd636306": "2026-10-23T20:57:41.427848+00:00"
  },
  "recent": [
   {
@@ -10330,6 +10332,46 @@
    "tags": [
     "tariffs"
    ]
+  },
+  {
+   "title": "Fiscal Sustainability (FS)",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOWnRMQ3ZQemx4ZV9ZNFRkdnZWYTY2MFpqWGlIOW44VlE4TlN0MnFPZ1NfZkpWYzVSeFBRUW9CUXc0eUkwVmF3c2xLQzJGdHplQnoxVklmQXJrX09LVWQtRXFoaE5TczFEUTRLQy1mbS1hX0lpQ3ZpamI1VEtldC1sV2xETUwtUXh3TjB2dHhB?oc=5",
+   "sources": [
+    "IMF"
+   ],
+   "score": 4,
+   "ts": "2026-10-23T20:57:41.427848+00:00",
+   "title_ru": "Фискальная устойчивость (ФУ)"
+  },
+  {
+   "title": "AI Trade Stumbles Again as Investors Rediscover Treasury Haven",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-23/ai-trade-stumbles-again-as-investors-rediscover-treasury-haven",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-23T20:57:41.427848+00:00",
+   "title_ru": "Торговля искусственным интеллектом снова спотыкается, поскольку инвесторы вновь открывают для себя казначейскую гавань",
+   "lead": "According to the president of Blackstone Inc., there’s no bubble in artificial intelligence. Treasury Secretary Scott Bessent isn’t seeing a “systemic problem” in the boom.",
+   "lead_ru": "По словам президента Blackstone Inc., в искусственном интеллекте нет пузыря. Министр финансов Скотт Бессент не видит «системной проблемы» в буме.",
+   "tags": [
+    "bonds"
+   ]
+  },
+  {
+   "title": "Hedge Funds Are Record Short Natural Gas on Mild Winter Outlook",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-23/hedge-funds-are-record-short-natural-gas-on-mild-winter-outlook",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T20:57:41.427848+00:00",
+   "title_ru": "Хедж-фонды являются рекордными по дефициту природного газа в умеренном зимнем прогнозе",
+   "lead": "Hedge-fund managers have amassed a record short position in US natural gas on expectations for an unusually mild northern winter that points to anemic demand for the furnace and power-plant fuel.",
+   "lead_ru": "Менеджеры хедж-фондов накопили рекордную короткую позицию по природному газу в США по ожиданиям необычно мягкой северной зимы, что указывает на анемичный спрос на топливо для печей и электростанций.",
+   "tags": [
+    "gas"
+   ]
   }
  ],
  "last_digest": "2026-10-23",
@@ -16658,7 +16700,8 @@
    "0001739445-26-000165"
   ],
   "errors": {
-   "senate": "HTTPError: HTTP Error 403: Forbidden"
+   "senate": "HTTPError: HTTP Error 403: Forbidden",
+   "sec": "TimeoutError: The read operation timed out"
   }
  }
 }
