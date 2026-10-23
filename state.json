@@ -966,7 +966,10 @@
   "8f7f61c1333e4a9f": "2026-10-23T07:21:24.927765+00:00",
   "af150fa0c48645d5": "2026-10-23T07:21:24.927765+00:00",
   "efc616d42d588a29": "2026-10-23T07:26:24.957883+00:00",
-  "bd666f64c1069710": "2026-10-23T07:26:24.957883+00:00"
+  "bd666f64c1069710": "2026-10-23T07:26:24.957883+00:00",
+  "54fb587b96b978d0": "2026-10-23T07:31:24.874763+00:00",
+  "1358fc0d0c790e1c": "2026-10-23T07:31:24.874763+00:00",
+  "12aead2682840761": "2026-10-23T07:31:24.874763+00:00"
  },
  "recent": [
   {
@@ -9857,6 +9860,46 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "French Business Activity Shrinks on Budget Trouble and Unrest",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-23/french-business-activity-unexpectedly-shrinks-on-budget-unrest",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T07:31:24.874763+00:00",
+   "title_ru": "Деловая активность во Франции снижается из-за проблем с бюджетом и беспорядков",
+   "lead": "French business activity contracted as renewed concerns about the country’s finances prompted a rout in government bonds and the country was gripped by protests and riots.",
+   "lead_ru": "Французская деловая активность сократилась, поскольку возобновившиеся опасения по поводу финансов страны вызвали разгром государственных облигаций, и страна была охвачена протестами и беспорядками.",
+   "tags": [
+    "bonds"
+   ]
+  },
+  {
+   "title": "French Crisis Creates a Cheap Contrarian Trade: Taking Stock",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-23/french-crisis-creates-a-cheap-contrarian-trade-taking-stock",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T07:31:24.874763+00:00",
+   "title_ru": "Французский кризис создает дешевую противоположную торговлю: подведение итогов",
+   "lead": "A deepening social and economic crisis has turned France into the most disliked equity market in Europe and a serious bet for a reversal, though not one for the faint-hearted.",
+   "lead_ru": "Углубляющийся социально-экономический кризис превратил Францию в самый нелюбимый фондовый рынок в Европе и серьезную ставку на разворот, хотя и не для слабонервных."
+  },
+  {
+   "title": "Little-Known South Korean Shipowner Dominates Hormuz Transits As Oil Flows Rebound",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOakkxenhPNzlkTldkVlNLWHllUGc4MlhPdUxJR1hldjZ5T0ktVERSc2Z6TlJEUW5LSzVWaWpJQU8zWFVfTFV5QURuSVdVbmM4aWtwUUw1THctNjlpRHpySnpyN0ZsdGpzSE9vZkNkRl9uWnItNDM5RzhSeTVtbWlMeVF4ZlhaOWdrVWJmdmRweGwwSDNmZ2FxWnRaY0hSMmRCeXUtblg0Zk1YSWl3RF83V1N4MVFrdw?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T07:31:24.874763+00:00",
+   "title_ru": "Малоизвестный южнокорейский судовладелец доминирует в транзите через Ормуз, когда потоки нефти отскакивают",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-22",
@@ -16155,8 +16198,8 @@
   },
   "checked": "2026-10-23T06:51:24.925269+00:00",
   "sec_seen": [
-   "0001607879-26-000008",
    "0001769628-26-000450",
+   "0001607879-26-000008",
    "0001193125-26-429202",
    "0001493152-26-048153",
    "0001944970-26-000029",
@@ -16166,8 +16209,8 @@
    "0001855880-26-000022",
    "0002157445-26-000002",
    "0000921895-26-002845",
-   "0002161365-26-000008",
    "0001635088-26-000116",
+   "0002161365-26-000008",
    "0001062993-26-005508",
    "0002032458-26-000030",
    "0000897069-26-001865",
@@ -16178,7 +16221,6 @@
    "0001493152-26-048149",
    "0001891037-26-000011",
    "0001266824-26-000217",
-   "0001628280-26-066951",
    "0001213900-26-111771",
    "0000829224-26-000149",
    "0001193125-26-429162",
@@ -16192,11 +16234,12 @@
    "0001628280-26-066941",
    "0002066491-26-000013",
    "0000902664-26-004257",
+   "0001753539-26-000149",
    "0001891751-26-000010",
    "0001628280-26-066949",
    "0001193125-26-429245",
    "0001973495-26-000007",
-   "0001753539-26-000149",
+   "0001628280-26-066951",
    "0001349983-26-000013",
    "0001493152-26-048147"
   ],
