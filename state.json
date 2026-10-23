@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "fdf4639479d06f53": "2026-10-20T00:26:05.177567+00:00",
-  "04ef7e4a85ef3e7b": "2026-10-20T00:26:05.177567+00:00",
-  "a8ce42daabd06ee7": "2026-10-20T00:26:05.177567+00:00",
   "312593cf7a5c3e90": "2026-10-20T00:46:05.088570+00:00",
   "7a6fbd817a4e344e": "2026-10-20T00:51:05.079063+00:00",
   "8ae525def2016ae2": "2026-10-20T01:01:05.159041+00:00",
@@ -943,7 +940,10 @@
   "e126388b082457fa": "2026-10-23T00:20:20.302499+00:00",
   "a6ab6849baaa8c2a": "2026-10-23T00:20:20.302499+00:00",
   "f298f08f1831f189": "2026-10-23T00:20:20.302499+00:00",
-  "897c999bac94ae49": "2026-10-23T00:20:20.302499+00:00"
+  "897c999bac94ae49": "2026-10-23T00:20:20.302499+00:00",
+  "ec02ea4f0fabec18": "2026-10-23T00:25:20.355683+00:00",
+  "767385bbe439ec84": "2026-10-23T00:30:20.397438+00:00",
+  "e8521c68ac29cdd3": "2026-10-23T00:30:20.397438+00:00"
  },
  "recent": [
   {
@@ -9631,6 +9631,31 @@
    "title_ru": "«Неумолимое» давление на стоимость жизни привело к падению потребительского доверия в Великобритании",
    "lead": "Index measuring how people view their finances and economic prospects suffers largest monthly drop since onset of Covid in 2020",
    "lead_ru": "Индекс, измеряющий то, как люди оценивают свои финансы и экономические перспективы, претерпел самое большое ежемесячное падение с момента появления Covid в 2020 году."
+  },
+  {
+   "title": "October 2026 Regional Economic Outlook, Asia and Pacific: Resilience Amid Uncertainty: Can it be Sustained?",
+   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQTHJiM1pRNnFMbDVoN1J1dHd0VkNSUzBxYVo4OHd5Uzl2Y2lNbVZmV0xJdUJpTjJyNDFKcWE4VkhiQmdfbjJOZnNLekFIdXA5QXo2XzRSUWl1T1Z3WmU3dWJ5RTNTU3ZrMkFkQ253TmRYeTdUaERZVW5QMDI1bUJUc3NTUQ?oc=5",
+   "sources": [
+    "IMF"
+   ],
+   "score": 5,
+   "ts": "2026-10-23T00:30:20.397438+00:00",
+   "title_ru": "Октябрь 2026 г. Обзор региональной экономики, Азиатско-Тихоокеанский регион: устойчивость в условиях неопределенности: можно ли ее сохранить?"
+  },
+  {
+   "title": "Zip Shares Slide 50% After Flagging Costs Tied to US Fraud Event",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-23/zip-shares-slide-50-after-flagging-costs-tied-to-us-fraud-event",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T00:30:20.397438+00:00",
+   "title_ru": "Акции Zip упали на 50% после сообщения о расходах, связанных с мошенничеством в США",
+   "lead": "Shares of Australian payments firm Zip Co. roughly halved after the company flagged A$10.1 million ($7.1 million) in expenses related to an external fraud event in the US.",
+   "lead_ru": "Акции австралийской платежной компании Zip Co. упали примерно вдвое после того, как компания сообщила о расходах в размере 10,1 млн австралийских долларов (7,1 млн долларов США), связанных с внешним мошенничеством в США.",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-22",
@@ -12518,6 +12543,22 @@
     "date": "2026-10-20",
     "disclosed": "2026-10-22",
     "link": "https://www.sec.gov/Archives/edgar/data/1605808/000159653226000248/0001596532-26-000248-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "b29e99c57ea1de11",
+    "ticker": "IHT",
+    "company": "INNSUITES HOSPITALITY TRUST",
+    "who": "James F Wirth",
+    "role": "CEO, 10% owner",
+    "type": "sell",
+    "value": 2011316976,
+    "shares": 43111,
+    "price": 46654.38,
+    "plan": true,
+    "date": "2026-10-20",
+    "disclosed": "2026-10-22",
+    "link": "https://www.sec.gov/Archives/edgar/data/1055365/000149315226048149/0001493152-26-048149-index.htm"
    },
    {
     "src": "sec",
@@ -15862,22 +15903,6 @@
     "date": "2026-10-14",
     "disclosed": "2026-10-15",
     "link": "https://www.sec.gov/Archives/edgar/data/2088794/000090514826004482/0000905148-26-004482-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "f545f5919c20c56d",
-    "ticker": "TALO",
-    "company": "TALOS ENERGY INC.",
-    "who": "Control Empresarial De Capitales S.a. De C.v.",
-    "role": "10% owner",
-    "type": "sell",
-    "value": 51869937,
-    "shares": 2965446,
-    "price": 17.49,
-    "plan": false,
-    "date": "2026-10-14",
-    "disclosed": "2026-10-15",
-    "link": "https://www.sec.gov/Archives/edgar/data/1724965/000114036126039793/0001140361-26-039793-index.htm"
    }
   ],
   "docs": {
@@ -15924,7 +15949,6 @@
    "0001944970-26-000029",
    "0001193125-26-429162",
    "0001193125-26-429202",
-   "0001334945-26-000005",
    "0002161365-26-000008",
    "0001400954-26-000013",
    "0001930044-26-000010",
@@ -15943,6 +15967,7 @@
    "0001213900-26-111771",
    "0000897069-26-001865",
    "0000902664-26-004257",
+   "0001493152-26-048149",
    "0001628280-26-066951",
    "0001212813-26-000005",
    "0001628280-26-066941",
