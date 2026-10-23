@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "28f2c347e18219dc": "2026-10-20T17:48:33.148946+00:00",
-  "193963a7066ef46a": "2026-10-20T17:48:33.148946+00:00",
-  "f018aa0c63e7c150": "2026-10-20T17:48:33.148946+00:00",
-  "4e4814ee1d4a5764": "2026-10-20T17:48:33.148946+00:00",
   "4e017e483aca8b96": "2026-10-20T17:53:33.162777+00:00",
   "51e1d33d33073910": "2026-10-20T17:58:33.130350+00:00",
   "b20a095ce78bf965": "2026-10-20T18:03:33.160641+00:00",
@@ -1013,34 +1009,11 @@
   "ea33f14243b97861": "2026-10-23T17:32:41.488316+00:00",
   "119137cb82a0d0be": "2026-10-23T17:37:41.462341+00:00",
   "f1df9b54af7f2e8c": "2026-10-23T17:47:41.544108+00:00",
-  "0a4b47dfabcf11bc": "2026-10-23T17:47:41.544108+00:00"
+  "0a4b47dfabcf11bc": "2026-10-23T17:47:41.544108+00:00",
+  "46fb6871f51657f6": "2026-10-23T17:52:41.437127+00:00",
+  "805bd0d4c3de15fe": "2026-10-23T17:52:41.437127+00:00"
  },
  "recent": [
-  {
-   "title": "Examining disparities in work–family time-use patterns among workers with caregiving responsibilities in the context of COVID-19 : Monthly Labor Review : U.S",
-   "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxORFgxUU4yTGRDeTU0OW1VcDlqQk9nS0VvZm00RkR5Uk81bDJwRHRTcEFrbXdjZVRIUG5sTC1ZN0tfa1VsekU5RG9PUE54d002QWo0N1VmWnhZWGkwQ0FQNFpTTTZYT3ZUeVFjdG1pZndGNURjRWZNZ0o4X3JFendVYkUyMi1BUGhyRDY0YVVGYU5hazdMVG5tTlZDaTM0U1ZuaEN5YklpbGRKeTRFc0JEaUJlSU9YUHhuLW9jM1hoS1ZqMjgzNGZkVW0zcV9QQ3d5NjhLcDFhc3NrOXZ2LVZOOFVicFdfV0dBTXNpMGRpZ3VKM25QY3VyM3RlVS03MDNwWU1UUA?oc=5",
-   "sources": [
-    "US Labor Statistics (BLS)"
-   ],
-   "score": 4,
-   "ts": "2026-10-20T17:48:33.148946+00:00",
-   "title_ru": "Изучение различий в моделях использования времени между работой и семьей среди работников, выполняющих обязанности по уходу, в контексте COVID-19: Ежемесячный обзор труда: США"
-  },
-  {
-   "title": "BOE’s Greene Says UK Labor Market Is Not as Weak as Thought",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-20/boe-s-greene-says-uk-labor-market-is-not-as-weak-as-thought",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-20T17:48:33.148946+00:00",
-   "title_ru": "Грин из Банка Англии говорит, что рынок труда Великобритании не так слаб, как думают",
-   "lead": "Bank of England rate-setter Megan Greene warned that an easing in UK wage pressures has stalled, suggesting that the labor market is stronger than officials had thought.",
-   "lead_ru": "Член Банка Англии Меган Грин предупредила, что ослабление давления на заработную плату в Великобритании застопорилось, предполагая, что рынок труда сильнее, чем думали чиновники.",
-   "tags": [
-    "jobs"
-   ]
-  },
   {
    "title": "Housing is flashing warning signs just as the Fed weighs more interest rate hikes",
    "link": "https://www.cnbc.com/2026/10/20/housing-mortgage-rates-real-estate-federal-reserve.html",
@@ -10297,6 +10270,29 @@
    "tags": [
     "ECB"
    ]
+  },
+  {
+   "title": "On Republican Turf, Independents Court Voters Fed Up with Both Parties",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPTE1XTXBPQlVXZXVSVzVnNEdMNzlZdmZFY2s2VllpeFY1MjNJQWtvaVJwMEpUSFNoN3M3dHZsM0pkMzkxQ0JlUXpFQjNvRXhrcVJaNERPVnRvdUMwNllveGNfWkVlSjk1Wm05Z2xRQVR3dk5wWkNiSmtGMVRtZ1IzbXZ5RTd2U3EySnVwV094bU16czNoemtIVG05WUxBSGJiTnJJWHRrbEZ4WjZzWDM5azJXcUJ0SGFuZXc?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T17:52:41.437127+00:00",
+   "title_ru": "На республиканском газоне независимые избиратели суда сыты по горло обеими сторонами",
+   "tags": [
+    "Fed"
+   ]
+  },
+  {
+   "title": "Germany secures extra winter gas supplies as storage levels lag",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPcU5wNWhZZFdPM1dQUUNFSmt0WDd2WDIyTmlvN3dueERMelY5V3VTNDVabnBjRmVEUG5ycDg0aWN2aFFKRTg3bmVQTXUxSmxfMUlDYXhQZTFRUUdNMXBMSWdkek0zcGpZcWhTN09XTVdNNGJRcHZBTHpUaFgyRzg4NFY3S0xSaldOTkZ1d1h5eXQzeUJFUEVYc1Q3UGE2MWw2M3RDSmluUVRsTkl5U2JtR1B3?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T17:52:41.437127+00:00",
+   "title_ru": "Германия обеспечивает дополнительные зимние поставки газа, поскольку уровни хранения отстают"
   }
  ],
  "last_digest": "2026-10-22",
@@ -16596,18 +16592,24 @@
   "checked": "2026-10-23T17:16:55.802869+00:00",
   "sec_seen": [
    "0001437749-26-033375",
-   "0001437749-26-033367",
-   "0001060529-26-000002",
    "0001437749-26-033371",
+   "0001437749-26-033377",
+   "0001760581-26-000073",
+   "0001578926-26-000050",
+   "0001493152-26-048199",
+   "0001096906-26-001615",
    "0001214659-26-013158",
    "0001437749-26-033379",
    "0001437749-26-033369",
-   "0001437749-26-033377",
-   "0001760581-26-000073",
-   "0001190249-26-000001",
    "0001215315-26-000046",
-   "0001493152-26-048199",
-   "0001096906-26-001615"
+   "0001437749-26-033367",
+   "0001060529-26-000002",
+   "0001750052-26-000052",
+   "0001950027-26-000053",
+   "0002111103-26-000043",
+   "0001190249-26-000001",
+   "0001968243-26-000054",
+   "0001437749-26-033381"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
