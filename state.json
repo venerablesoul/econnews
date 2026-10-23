@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e1f9fc13c592e5b3": "2026-10-20T11:58:05.363616+00:00",
-  "ea0eead0a6bebc09": "2026-10-20T11:58:05.363616+00:00",
   "0c0d0f69071c221b": "2026-10-20T12:08:05.293801+00:00",
   "f8ee8101040d7174": "2026-10-20T12:08:05.293801+00:00",
   "d4236bb6e792679b": "2026-10-20T12:08:05.293801+00:00",
@@ -997,19 +995,10 @@
   "4e8aacd8579c88e3": "2026-10-23T11:51:24.934892+00:00",
   "725bed47dc931bee": "2026-10-23T11:56:24.932001+00:00",
   "e5fb8de12e2040ad": "2026-10-23T11:56:24.932001+00:00",
-  "d5aae8d1dc8b7fbb": "2026-10-23T11:56:24.932001+00:00"
+  "d5aae8d1dc8b7fbb": "2026-10-23T11:56:24.932001+00:00",
+  "5580b3e486b709e4": "2026-10-23T12:01:24.965076+00:00"
  },
  "recent": [
-  {
-   "title": "Italy's Eni to increase gas processing capacity in Egypt's Western Desert",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNS1l4WkZJUUwxaHFOS2ppai1DeDV3Vlh4UTBOaTFQa1B0RWlfbWdHejVQRmlxeGhGREd6NlpHYXdYbWtfbWhNdU1yT2RoRE5DeGRiZEhPSHVrTDI3OHhlWllRdDdJOG9GXzN1THJfYTlMRlo4d29yQ0M1SFFjQU80NEZkZXI0QldiSU5ZaVVMOTQxMGQwa01zckI1MFFFVWd0VHpoNjlxZXZzNW9PTHAzeGd0U01ldjE2?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T11:58:05.363616+00:00",
-   "title_ru": "Итальянская Eni увеличит мощности по переработке газа в Западной пустыне Египта"
-  },
   {
    "title": "Hungary Holds Interest Rate With Budget and Euro Path In Focus",
    "link": "https://www.bloomberg.com/news/articles/2026-10-20/hungary-holds-interest-rate-with-budget-and-euro-path-in-focus",
@@ -10196,6 +10185,21 @@
    "score": 3,
    "ts": "2026-10-23T11:56:24.932001+00:00",
    "title_ru": "«Дрель, детка, дрель?» Великобритания идет за газом"
+  },
+  {
+   "title": "Island inflation rate rises to 3%, figures show",
+   "link": "https://www.bbc.co.uk/news/articles/cmz6581p1ee8o?at_medium=RSS&at_campaign=rss",
+   "sources": [
+    "BBC"
+   ],
+   "score": 5,
+   "ts": "2026-10-23T12:01:24.965076+00:00",
+   "title_ru": "Уровень инфляции на острове вырос до 3%, показывают цифры",
+   "lead": "The rising cost of food and alcohol drives an increase in the inflation rate, figures show.",
+   "lead_ru": "Рост цен на продукты питания и алкоголь стимулирует рост инфляции, показывают цифры.",
+   "tags": [
+    "inflation"
+   ]
   }
  ],
  "last_digest": "2026-10-22",
@@ -16494,8 +16498,8 @@
   },
   "checked": "2026-10-23T11:06:24.957669+00:00",
   "sec_seen": [
-   "0001607879-26-000008",
    "0001769628-26-000450",
+   "0001607879-26-000008",
    "0001193125-26-429202",
    "0001493152-26-048153",
    "0001944970-26-000029",
