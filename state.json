@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "cb7a44fc86bd6133": "2026-10-20T10:18:05.261604+00:00",
   "eedc6beb9a33d6ee": "2026-10-20T10:28:05.303481+00:00",
   "07b384504611db0e": "2026-10-20T10:33:05.237287+00:00",
   "041d359d1687e4dd": "2026-10-20T10:38:05.260613+00:00",
@@ -984,21 +983,13 @@
   "ec0f2cbc912ee7a5": "2026-10-23T10:11:24.909272+00:00",
   "27b9a4014bc96b2a": "2026-10-23T10:11:24.909272+00:00",
   "1ac98c8019a234e5": "2026-10-23T10:11:24.909272+00:00",
-  "000faecb3ffd41fa": "2026-10-23T10:11:24.909272+00:00"
+  "000faecb3ffd41fa": "2026-10-23T10:11:24.909272+00:00",
+  "1900f392f00e2d60": "2026-10-23T10:16:24.974664+00:00",
+  "9b9116613afbd25b": "2026-10-23T10:21:24.907212+00:00",
+  "60bea810f4bb0c18": "2026-10-23T10:21:24.907212+00:00",
+  "5ce851f148330c0d": "2026-10-23T10:21:24.907212+00:00"
  },
  "recent": [
-  {
-   "title": "Denmark’s Novo-Fueled Economy Faces Lower Growth, Watchdog Says",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-20/denmark-s-novo-fueled-economy-faces-lower-growth-watchdog-says",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-20T10:18:05.261604+00:00",
-   "title_ru": "Экономике Дании, питаемой нововведениями, грозит замедление роста, сообщает Watchdog",
-   "lead": "Denmark‘s economy is heading for slower growth as the pharmaceutical boom led by Novo Nordisk A/S loses steam and the industry settles into a pace more in line with the rest of the economy, the country’s financial watchdog said.",
-   "lead_ru": "Экономика Дании движется к замедлению роста, поскольку фармацевтический бум, возглавляемый Novo Nordisk A/S, теряет обороты, а темпы отрасли в большей степени соответствуют темпам остальной экономики, сообщил финансовый регулятор страны."
-  },
   {
    "title": "Pernod Ricard Plans Debut Hybrid Bond as French Debt Risk Rises",
    "link": "https://www.bloomberg.com/news/articles/2026-10-20/pernod-ricard-plans-debut-hybrid-bond-as-french-debt-risk-rises",
@@ -10067,6 +10058,45 @@
    "score": 3,
    "ts": "2026-10-23T10:11:24.909272+00:00",
    "title_ru": "Уолл-стрит заканчивается ниже на смешанной прибыли, надежные данные"
+  },
+  {
+   "title": "Bitcoin Billionaires Are Racing to Ride a 3,000% Crypto Boom",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-23/bitcoin-billionaires-are-racing-to-ride-a-3-000-crypto-boom",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T10:21:24.907212+00:00",
+   "title_ru": "Биткойн-миллиардеры мчатся на 3000% крипто-бум",
+   "lead": "Some of the most prominent early investors in Bitcoin are squaring off again. This time they are seeking to capitalize on a massive rally in the year’s standout major cryptocurrency.",
+   "lead_ru": "Некоторые из самых известных ранних инвесторов в Биткойн снова встают на ноги. На этот раз они стремятся извлечь выгоду из массового ралли выдающейся криптовалюты года.",
+   "tags": [
+    "markets",
+    "crypto"
+   ]
+  },
+  {
+   "title": "Swiss energy company VAROPreem looks to double earnings by 2030 as Europe faces fuel supply crunch",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPU3o5UDBrRVZzOUplM2RtTUp0c3M1Q052a01kRDdYN19GU25xQUVseGtBMW5oZ1EtYUswcmt5TkxlZDFiNnh6b1M1a3BpYW04S1lvaktPMFA0M3czU0NOaUJpMkFKSkdXWWQ5QVZJZWdCUjBVRFpQajJjR1hXeU8xUXM2T29OMHoyOERVYlJaZXJuMzhneHBIZ0tqY0JDdnpTdm1UcWstSm1ydWxJVDd4RTE4MV9CUUdMLTVtUUl1SlFaLU8ySDNlVWd3?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T10:21:24.907212+00:00",
+   "title_ru": "Швейцарская энергетическая компания VAROPreem рассчитывает удвоить прибыль к 2030 году, поскольку Европа сталкивается с кризисом поставок топлива"
+  },
+  {
+   "title": "EXCLUSIVE: Chevron uses Permian playbook to breathe life into Argentina’s ‘Dead Cow’ oil region",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNNExqRXFMam8wTEFHalRwVDJneUltbGcxRnpHdUp5QkhLVzBqTjdlWmRaeG0xY3ZTSlRxanBEOU9JZHRyNi04ZTVlZHE0V1BBU2l0NDJESVRFazNxdXlwV2xwVzY2WklGTDV0NEdfcFVBMzFYMTFqSnJhWDhOR0pWSFptNGEzNTI0aW1mbkpKTzQtUURKck96RXBTV2JEUzVqeUI4QTJDdllDc1ZfUFBpUk54RldTUmd3Y25feF9xUDRKVFo2Z29sTWpn?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T10:21:24.907212+00:00",
+   "title_ru": "Эксклюзив: Chevron использует пермский сценарий, чтобы вдохнуть жизнь в аргентинский нефтяной регион «Мертвая корова»",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-22",
