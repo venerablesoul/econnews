@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "bf24b2064b79159d": "2026-10-20T14:43:33.228179+00:00",
   "ce82a4445b4aa2d4": "2026-10-20T14:53:33.152976+00:00",
   "06fff7723cb2e68d": "2026-10-20T14:53:33.152976+00:00",
   "80b4e0346d95fbb3": "2026-10-20T14:58:33.125059+00:00",
@@ -1018,21 +1017,12 @@
   "12566dde4f8009e8": "2026-10-23T14:31:55.753900+00:00",
   "1b295f2d0bfb383c": "2026-10-23T14:36:55.863319+00:00",
   "35c769892033e428": "2026-10-23T14:36:55.863319+00:00",
-  "174ce83c411c3e60": "2026-10-23T14:41:55.694662+00:00"
+  "174ce83c411c3e60": "2026-10-23T14:41:55.694662+00:00",
+  "6184e020e376e2f2": "2026-10-23T14:46:55.729359+00:00",
+  "15292115ed16f4e1": "2026-10-23T14:46:55.729359+00:00",
+  "478ef26b19a09981": "2026-10-23T14:46:55.729359+00:00"
  },
  "recent": [
-  {
-   "title": "Elice Plunges in Trading Debut; General Motors Falls on Forecast | Stock Movers",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-20/elice-plunges-in-debut-general-motors-falls-on-forecast-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-20T14:43:33.228179+00:00",
-   "title_ru": "Элис дебютирует в трейдинге; General Motors падает по прогнозу | Перевозчики запасов",
-   "lead": "On this episode of Stock Movers: - Elice (KS) is floundering as it plunged in their trading debut, falling as much as 38% and finishing the day with a 32% loss.",
-   "lead_ru": "В этом выпуске Stock Movers: - Elice (KS) терпит неудачу во время своего дебютного торгового дня, упав на 38% и завершив день с потерей 32%."
-  },
   {
    "title": "Colombian Congress approves $201.1 billion budget for 2027",
    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPTXZfVjZtWS1FOWlIWG4tLVVWNWlNS21zaWx0N0JBc2dsZXREbW1XenZ3SDBtZWRiZGRKelZ2NWd0TVh2NE1PY1ppM19Bcl9BbFRaOXlySkgzWXF3NkktX0didWR6UHVmaldyV09MOTNhU3FzUFJ0X29HV0ZLczQwSmEzNXRRUGMtU2NqSEpOM3JONWtSVXc2SlhqU0JEbVR2NlpPcU9B?oc=5",
@@ -10435,6 +10425,28 @@
    "score": 3,
    "ts": "2026-10-23T14:41:55.694662+00:00",
    "title_ru": "Эксклюзив: Алжирский экспорт карбамида во Францию под угрозой, поскольку дипломатическая напряженность сохраняется, говорят источники"
+  },
+  {
+   "title": "German home prices stagnate as interest rates pressure market, IW data show",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQbUFLVk9Gd1lnZDI2Y3l2QUxKeWRIckV2MXpCMzZYQlA3ZFdONU01RkxUY3Rxc1hVdm11YlhuRlE2RlRUeTFuUUsyYWI5bmZtUTBOZnBfMjhFbVVxOEV2a2d0NTBibWd4VDg0OE10XzZMZDFCWXp1UHB0cmMzbEU1T20wNDVrX2lNbUhjZFdUbXdkZlNxbEtKd1l2RExZbllfa29iZlExcVVTRkhYS2R4Qm91NzU5cFpZM3JFa2dCNVNoQQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-23T14:46:55.729359+00:00",
+   "title_ru": "Данные IW показывают, что цены на жилье в Германии стагнируют из-за давления на рынок процентных ставок",
+   "tags": [
+    "rates"
+   ]
+  },
+  {
+   "title": "Минэкономразвития предупредило о рисках дорогого кредита после решения ЦБ",
+   "link": "https://www.rbc.ru/rbcfreenews/6adb7151243fd31f6d2bb1a0",
+   "sources": [
+    "RBC"
+   ],
+   "score": 2,
+   "ts": "2026-10-23T14:46:55.729359+00:00"
   }
  ],
  "last_digest": "2026-10-22",
@@ -16733,10 +16745,10 @@
   },
   "checked": "2026-10-23T14:06:55.769626+00:00",
   "sec_seen": [
-   "0000764065-26-000117",
    "0001493152-26-048187",
+   "0001510281-26-000375",
    "0001193125-26-429600",
-   "0001510281-26-000375"
+   "0000764065-26-000117"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
