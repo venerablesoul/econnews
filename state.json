@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "4d01c3f05fdce7e3": "2026-10-20T05:11:52.381851+00:00",
   "e8525823689fb784": "2026-10-20T05:16:52.452506+00:00",
   "73010c19b7cc07d1": "2026-10-20T05:21:52.429334+00:00",
   "a7b5a8583de1a807": "2026-10-20T05:36:52.449203+00:00",
@@ -954,21 +953,10 @@
   "04f3724f0129887b": "2026-10-23T05:05:51.540516+00:00",
   "677c33702f2e9feb": "2026-10-23T05:10:51.550957+00:00",
   "88e0238fa0091ddb": "2026-10-23T05:10:51.550957+00:00",
-  "aca38300e107a6f4": "2026-10-23T05:10:51.550957+00:00"
+  "aca38300e107a6f4": "2026-10-23T05:10:51.550957+00:00",
+  "3c55dedb2f8861d6": "2026-10-23T05:15:51.640233+00:00"
  },
  "recent": [
-  {
-   "title": "Chancellor rejects calls to raise Capital Gains Tax in Budget",
-   "link": "https://www.bbc.co.uk/news/articles/c50me4w4x1vyo?at_medium=RSS&at_campaign=rss",
-   "sources": [
-    "BBC"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T05:11:52.381851+00:00",
-   "title_ru": "Канцлер отклонила призывы повысить налог на прирост капитала в бюджете",
-   "lead": "Influential Labour figures had been pushing for equalising CGT and income tax, but critics have said this could drive wealthy people out of Britain.",
-   "lead_ru": "Влиятельные деятели лейбористской партии настаивали на выравнивании CGT и подоходного налога, но критики говорили, что это может изгнать богатых людей из Великобритании."
-  },
   {
    "title": "BofA, BNP See South Africa Rating Upgrade After Budget",
    "link": "https://www.bloomberg.com/news/articles/2026-10-20/bofa-bnp-see-south-africa-rating-upgrade-after-budget",
@@ -9719,6 +9707,18 @@
    "tags": [
     "bonds"
    ]
+  },
+  {
+   "title": "Vietnam Bets Big on High-Speed Rail To Transform Economy",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-23/vietnam-bets-big-on-high-speed-rail-to-transform-economy",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T05:15:51.640233+00:00",
+   "title_ru": "Вьетнам делает большие ставки на высокоскоростные железные дороги для трансформации экономики",
+   "lead": "Vietnam is betting big on a $65 billion high-speed railway linking Hanoi and Ho Chi Minh City. Construction is set to start in late 2027 and take at least a decade to complete.",
+   "lead_ru": "Вьетнам делает большую ставку на высокоскоростную железную дорогу стоимостью $ 65 млрд, соединяющую Ханой и Хошимин. Строительство начнется в конце 2027 года и займет не менее десяти лет."
   }
  ],
  "last_digest": "2026-10-22",
@@ -16023,7 +16023,6 @@
    "0002157445-26-000002",
    "0000897069-26-001865",
    "0001349983-26-000013",
-   "0002032458-26-000030",
    "0001607879-26-000008",
    "0001973495-26-000007",
    "0001855880-26-000022",
@@ -16032,6 +16031,7 @@
    "0001769628-26-000450",
    "0002083595-26-000010",
    "0001266824-26-000217",
+   "0001455134-26-000023",
    "0001193125-26-429162",
    "0001891751-26-000010",
    "0001769628-26-000451",
@@ -16057,7 +16057,7 @@
    "0001628280-26-066951",
    "0000902664-26-004257",
    "0001140361-26-040540",
-   "0001455134-26-000023",
+   "0002032458-26-000030",
    "0001213900-26-111771",
    "0001493152-26-048149",
    "0001437749-26-033305"
