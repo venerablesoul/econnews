@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "d8a68a6215c50216": "2026-10-20T08:28:05.268252+00:00",
-  "27a51b7de753abd4": "2026-10-20T08:33:05.257168+00:00",
   "dbbec1043aaa3949": "2026-10-20T08:38:05.234571+00:00",
   "de098af981109393": "2026-10-20T08:38:05.234571+00:00",
   "26bb927e4cb7d331": "2026-10-20T08:38:05.234571+00:00",
@@ -975,21 +973,11 @@
   "70745a4e976eaadc": "2026-10-23T08:11:24.882012+00:00",
   "cccc77875e337510": "2026-10-23T08:16:24.969643+00:00",
   "e144eacd15377e4d": "2026-10-23T08:21:24.933822+00:00",
-  "10383391a6223846": "2026-10-23T08:26:24.902878+00:00"
+  "10383391a6223846": "2026-10-23T08:26:24.902878+00:00",
+  "5527c4a9b37ba1d0": "2026-10-23T08:36:24.934514+00:00",
+  "d726603bb280fda7": "2026-10-23T08:36:24.934514+00:00"
  },
  "recent": [
-  {
-   "title": "AI’s Advance Has FX Market Asking Whether Governance Can Keep Up",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-20/ai-s-advance-has-fx-market-asking-whether-governance-can-keep-up",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T08:33:05.257168+00:00",
-   "title_ru": "Прогресс искусственного интеллекта заставил валютный рынок задаться вопросом, сможет ли управление идти в ногу со временем",
-   "lead": "There’s a growing push to review guidelines for the $9.5 trillion-a-day currency market more often, to make sure they keep pace with artificial intelligence’s rapid advance.",
-   "lead_ru": "Растет стремление чаще пересматривать руководящие принципы для валютного рынка с оборотом в 9,5 триллионов долларов в день, чтобы убедиться, что они идут в ногу с быстрым развитием искусственного интеллекта."
-  },
   {
    "title": "Hungary Plans to Bring Deficit to Below 3% by 2030, Magyar Says",
    "link": "https://www.bloomberg.com/news/articles/2026-10-20/hungary-plans-to-bring-deficit-to-below-3-by-2030-magyar-says",
@@ -9956,6 +9944,21 @@
    "title_ru": "Что такое Бюджет и что в нем может быть?",
    "lead": "Chancellor John Healey will set out his plans for UK taxes on 28 October.",
    "lead_ru": "Канцлер Джон Хили изложит свои планы по налогам в Великобритании 28 октября."
+  },
+  {
+   "title": "BOJ Is Said to Keep Rate Hikes on Fast Track, December in Focus",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-23/boj-is-said-to-keep-rate-hikes-on-fast-track-december-in-focus",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-23T08:36:24.934514+00:00",
+   "title_ru": "БАНК ЯПОНИИ, как говорят, сохранит повышение ставок на ускоренном уровне, декабрь в фокусе",
+   "lead": "The Bank of Japan may maintain a continued fast pace of rate hikes given current price trends and a view at the bank that the impact of increases on the economy so far has been limited, with December the next potential move…",
+   "lead_ru": "Банк Японии может сохранить быстрые темпы повышения ставок, учитывая текущие ценовые тенденции и мнение банка о том, что влияние роста на экономику до сих пор было ограниченным, а декабрь - следующим потенциальным шагом...",
+   "tags": [
+    "rates"
+   ]
   }
  ],
  "last_digest": "2026-10-22",
@@ -16265,9 +16268,9 @@
    "0001855880-26-000022",
    "0002157445-26-000002",
    "0000921895-26-002845",
-   "0002161365-26-000008",
    "0001635088-26-000116",
    "0001062993-26-005508",
+   "0002161365-26-000008",
    "0002032458-26-000030",
    "0000897069-26-001865",
    "0001628280-26-066948",
