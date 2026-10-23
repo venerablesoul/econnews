@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "ce82a4445b4aa2d4": "2026-10-20T14:53:33.152976+00:00",
-  "06fff7723cb2e68d": "2026-10-20T14:53:33.152976+00:00",
   "80b4e0346d95fbb3": "2026-10-20T14:58:33.125059+00:00",
   "64bc6b5ef7d464f6": "2026-10-20T15:08:33.121286+00:00",
   "a12bb675973c101a": "2026-10-20T15:13:33.113862+00:00",
@@ -1023,16 +1021,6 @@
   "478ef26b19a09981": "2026-10-23T14:46:55.729359+00:00"
  },
  "recent": [
-  {
-   "title": "Colombian Congress approves $201.1 billion budget for 2027",
-   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPTXZfVjZtWS1FOWlIWG4tLVVWNWlNS21zaWx0N0JBc2dsZXREbW1XenZ3SDBtZWRiZGRKelZ2NWd0TVh2NE1PY1ppM19Bcl9BbFRaOXlySkgzWXF3NkktX0didWR6UHVmaldyV09MOTNhU3FzUFJ0X29HV0ZLczQwSmEzNXRRUGMtU2NqSEpOM3JONWtSVXc2SlhqU0JEbVR2NlpPcU9B?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T14:53:33.152976+00:00",
-   "title_ru": "Конгресс Колумбии утвердил бюджет на 2027 год в размере $201,1 млрд."
-  },
   {
    "title": "TSX futures dip as inflation expectations, US trade tensions weigh",
    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQQ3FLY3g1VUNPNmprZ3VyOVZvLXdKQUVDWjVpUEZTYncwTl93dW01bmNmOGMwQVAwS19SWUxjdFA0bk9mLU1oMVFIazRTWTl0cVRSZENmanhfQTVXRkhGQmRibndRa1JhNXNFS1I1alI5bDRrVVFVeUlQMVotWnNpMHplTlhLckJEVDNsR3hTdmFkQjJteGlxTDU1TFlVSVpud2gyZUc0cU1nLXM?oc=5",
@@ -10469,7 +10457,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 0,
+  "Fed": 1,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
@@ -16746,9 +16734,7 @@
   "checked": "2026-10-23T14:06:55.769626+00:00",
   "sec_seen": [
    "0001493152-26-048187",
-   "0001510281-26-000375",
-   "0001193125-26-429600",
-   "0000764065-26-000117"
+   "0001193125-26-429600"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
