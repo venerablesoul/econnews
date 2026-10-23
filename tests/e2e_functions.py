@@ -17,11 +17,16 @@ sys.path.insert(0, HERE)
 import e2e_terminal as E  # noqa: E402
 from playwright.sync_api import sync_playwright  # noqa: E402
 
-DIRECT = ("earthquake.usgs.gov", "eonet.gsfc.nasa.gov", "www.gdacs.org", "services9.arcgis.com", "api.open-meteo.com")
+DIRECT = ("earthquake.usgs.gov", "eonet.gsfc.nasa.gov", "www.gdacs.org", "services9.arcgis.com", "api.open-meteo.com", "meri.digitraffic.fi")
 VIA_SERVER = ("date.nager.at",)   # the test blocks them in the browser: the terminal must use /api/geo
 TRADES = [{"id": 1000 + i, "price": str(81000 + i), "qty": str(round(0.01 * (i + 1), 2)), "quoteQty": "810", "time": 1792000000000 + i * 1000,
            "isBuyerMaker": i % 3 == 0} for i in range(20)]
 check = E.check
+# the Bloomberg functions in the two lists the owner sent (alerts, ALRT, already existed)
+CODES_CFI = """N TOP TOPCA NSE CNS USS MNA OPN COS BBEA WEI WPE ECO ECST MOV MA WFX FXC RATC BTMM USSW FIT WB CDR MMR SRCH CRVF PICK
+BI MOST FPC ECDR PDF DES MGMT CN ISSD RELS FA DVD ERN EE GE EM ANR PHDC CRPR CACS CF GIP QR BQ BAS AQR VAP TSM OMON
+RV COMP TRA GP GPO HP SI G TRAY MRR MEMB""".split()
+CODES_FORMARSE = "G TA IND CORR FUND ALRT".split()
 
 
 def shot(page, name):
@@ -272,6 +277,27 @@ def run():
         page.click("#map-body .gm-ly:has-text('Oil refineries')")
         page.wait_for_function("window.MAPS.M.data.refin && window.MAPS.M.data.refin.pts.length > 400", timeout=10000)
         check("MAP: refineries layer", True)
+        page.click("#map-body .gm-ly:has-text('Heavy industry')")
+        page.wait_for_function("window.MAPS.M.data.fact && window.MAPS.M.data.fact.pts.length > 6000", timeout=15000)
+        n_all = int(page.inner_text("#map-body .gm-ly:has-text('Heavy industry') small").replace(",", ""))
+        page.click("#map-body .gm-chips .chipbtn:has-text('Cement')")
+        n_nocem = int(page.inner_text("#map-body .gm-ly:has-text('Heavy industry') small").replace(",", ""))
+        check("MAP: heavy industry (Climate TRACE) with kinds that switch off", n_all > 6000 and 0 < n_nocem < n_all - 2000, [n_all, n_nocem])
+        fact = page.evaluate("window.MAPS.M.data.fact.pts.filter(p => /POSCO Gwangyang/.test(p.t))[0]")
+        check("MAP: a steel plant with its owner, capacity and emissions", fact and "POSCO Holdings" in " ".join(fact["s"]) and "Mt a year" in " ".join(fact["s"]), fact)
+        page.click("#map-body .gm-ly:has-text('Natural gas')")
+        page.wait_for_function("window.MAPS.M.data.gas && window.MAPS.M.data.gas.pts.length > 300", timeout=10000)
+        kinds = page.evaluate("[...new Set(window.MAPS.M.data.gas.pts.map(p => p.s[0].split(' · ')[0]))].sort()")
+        check("MAP: gas fields and underground gas storage", kinds == ["Natural gas field", "Underground gas storage"], kinds)
+        page.click("#map-body .gm-ly:has-text('Oil terminals')")
+        page.wait_for_function("window.MAPS.M.data.oilst && window.MAPS.M.data.oilst.pts.length > 800", timeout=10000)
+        top = page.evaluate("window.MAPS.M.data.oilst.pts[window.MAPS.M.data.oilst.pts.length - 1]")
+        check("MAP: oil terminals — the busiest tanker port on top, with the oil depots", top["t"] == "🛢 Rotterdam" and "15,000" in " ".join(top["s"]), top)
+        page.evaluate("window.MAPS.M.S = window.MAPS.M.S0 * 3; window.MAPS.M.cx = (10 + 180) / 360; window.MAPS.M.cy = 0.33")
+        page.mouse.move(700, 400); page.mouse.wheel(0, 1); page.wait_for_timeout(400)
+        shot(page, "f07b_industry")
+        for lay in ("Heavy industry", "Natural gas", "Oil terminals"):
+            page.click(f"#map-body .gm-ly:has-text('{lay}')")
         page.mouse.move(700, 400)
         page.mouse.wheel(0, -400)
         page.wait_for_timeout(300)
@@ -303,6 +329,20 @@ def run():
         check("SHIP: the 40-day chart of a chokepoint", page.locator("#map-body .gm-info svg rect").count() >= 60)
         page.wait_for_function("window.MAPS.M.data.ports && window.MAPS.M.data.ports.pts.length === 150", timeout=10000)
         check("SHIP: ports from PortWatch (pages of an ArcGIS layer)", True)
+        page.wait_for_function("window.MAPS.M.data.ships", timeout=10000)
+        wait_text(page, "#map-body .gm-side", "VESSELS")
+        sk = page.inner_text("#map-body .gm-side")
+        ships = page.evaluate("window.MAPS.M.data.ships.pts.map(p => [p.t, p.fuel, p.hd])")
+        check("SHIP: live Baltic vessels — a stale position dropped, tankers on top, course only when moving",
+              len(ships) == 4 and ships[0][1] == "tanker" and ships[0][2] == 251 and [s for s in ships if s[0] == "🚢 VOLGA CARGO"][0][2] is None and "Tankers" in sk, [ships, sk[-300:]])
+        crude = page.evaluate("window.MAPS.M.data.ships.pts.filter(p => p.t === '🚢 BALTIC CRUDE')[0].s.join(' | ')")
+        check("SHIP: a tanker's speed, destination and draught", "11.2 kn" in crude and "RUPRI" in crude and "14.8 m" in crude, crude)
+        page.click("#map-body .gm-side .chipbtn:has-text('Gulf of Finland')")
+        page.wait_for_timeout(200)
+        check("SHIP: a button flies to the Gulf of Finland", page.evaluate("window.MAPS.M.S / window.MAPS.M.S0") > 20)
+        page.click("#map-body .gm-chips .chipbtn:has-text('Passenger')")
+        check("SHIP: a kind of vessel switched off", page.evaluate("!!window.MAPS.M.off.ships.pass"))
+        page.click("#map-body .gm-chips .chipbtn:has-text('Passenger')")
         shot(page, "f09_ship")
         cmd(page, "WETR")
         page.wait_for_function("document.querySelectorAll('#map-body .gm-side .gm-ch').length === 43", timeout=10000)
@@ -347,6 +387,17 @@ def run():
         help_t = page.inner_text("#help-t")
         check("HELP lists the new functions", all(x in help_t for x in ("TECH AAPL", "MOV, MOV RU", "STORM (BMAP STORM)", "WB", "NSE MNA")), help_t[-600:])
         page.keyboard.press("Escape")
+
+        # ---------------- every code from the two lists the owner sent (CFI and formarse.es) ----------------
+        codes = sorted(set(CODES_CFI + CODES_FORMARSE + ["MAP", "BMAP", "STORM", "SHIP", "WETR"]))
+        known = page.evaluate("cs => cs.filter(c => TERM.CMDS[c] || TERM.SUFFIX[c])", codes)
+        check(f"all {len(codes)} codes from the lists are terminal functions", len(known) == len(codes), sorted(set(codes) - set(known)))
+        n_err = len(errors)
+        for c in codes:
+            cmd(page, c if page.evaluate("c => !!TERM.CMDS[c]", c) else "AAPL " + c)
+            page.wait_for_timeout(250)
+        page.wait_for_timeout(1500)
+        check("each of them runs without a script error", len(errors) == n_err, errors[n_err:n_err + 5])
 
         # ---------------- phone ----------------
         m = ctx.new_page()

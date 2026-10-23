@@ -119,3 +119,18 @@ export const macroMap = { year: new Date().getUTCFullYear(), NGDP_RPCH: { USA: 2
 export const pwPorts = { features: Array.from({ length: 150 }, (_, i) => ({ attributes: i === 0
   ? { portname: "Rotterdam", country: "Netherlands", ISO3: "NLD", lat: 51.95, lon: 4.14, vessel_count_total: 52000, vessel_count_tanker: 15000, industry_top1: "Container" }
   : { portname: "Port " + i, country: "Somewhere", ISO3: "XXX", lat: -40 + (i * 0.53) % 80, lon: -170 + (i * 7.3) % 340, vessel_count_total: 100 + i * 37, vessel_count_tanker: 10 + i, industry_top1: "Dry bulk" } })) };
+
+// Digitraffic AIS (the Baltic): positions and the vessels' static data
+export const dtLocations = { type: "FeatureCollection", dataUpdatedTime: new Date(now - 60e3).toISOString(), features: [
+  { mmsi: 273100001, type: "Feature", geometry: { type: "Point", coordinates: [28.62, 60.33] }, properties: { mmsi: 273100001, sog: 11.2, cog: 250.4, navStat: 0, heading: 251, timestampExternal: now - 120e3 } },
+  { mmsi: 273100002, type: "Feature", geometry: { type: "Point", coordinates: [28.4, 59.7] }, properties: { mmsi: 273100002, sog: 0.1, cog: 12, navStat: 1, heading: 511, timestampExternal: now - 600e3 } },
+  { mmsi: 230100003, type: "Feature", geometry: { type: "Point", coordinates: [24.95, 60.15] }, properties: { mmsi: 230100003, sog: 18.5, cog: 180, navStat: 0, heading: 181, timestampExternal: now - 60e3 } },
+  { mmsi: 230100004, type: "Feature", geometry: { type: "Point", coordinates: [24.9, 60.16] }, properties: { mmsi: 230100004, sog: 0, cog: 0, navStat: 5, heading: 511, timestampExternal: now - 60e3 } },
+  { mmsi: 230100005, type: "Feature", geometry: { type: "Point", coordinates: [21.0, 57.0] }, properties: { mmsi: 230100005, sog: 9, cog: 90, navStat: 0, heading: 90, timestampExternal: now - 30 * 3600e3 } },
+] };
+export const dtVessels = [
+  { mmsi: 273100001, name: "BALTIC CRUDE", shipType: 80, destination: "RUPRI", draught: 148 },
+  { mmsi: 273100002, name: "VOLGA CARGO", shipType: 70, destination: "RUULU", draught: 92 },
+  { mmsi: 230100003, name: "SILJA EXPRESS", shipType: 60, destination: "EETLL", draught: 61 },
+  { mmsi: 230100004, name: "TUG ONE", shipType: 52, destination: "", draught: 40 },
+];

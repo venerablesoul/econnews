@@ -185,6 +185,7 @@ export function route(url, init) {
 export function geoRoute(u) {
   const p = u.pathname, q = u.searchParams;
   if (u.host === "earthquake.usgs.gov") return G.usgs;
+  if (u.host === "meri.digitraffic.fi") return p.endsWith("/locations") ? G.dtLocations : p.endsWith("/vessels") ? G.dtVessels : undefined;
   if (u.host === "eonet.gsfc.nasa.gov") return G.eonet;
   if (u.host === "www.gdacs.org") {
     if (p.includes("/polygons/getgeometry")) return G.gdacsGeometry;

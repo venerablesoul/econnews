@@ -138,15 +138,19 @@ var LAYERS = {
   plants: {grp: 'infra', color: '#c77dff', src: 'WRI GPPD', load: loadPlants},
   refin: {grp: 'infra', color: '#ff4b4b', src: '', load: function(){ return loadInfra('refineries.json', '#ff4b4b', 'gm_refin') }},
   lng: {grp: 'infra', color: '#21c66f', src: '', load: function(){ return loadInfra('lng.json', '#21c66f', 'gm_lng') }},
+  gas: {grp: 'infra', color: '#b7e34b', src: '', load: loadGas},
+  oilst: {grp: 'infra', color: '#ffb35c', src: '', load: loadOilStorage},
+  fact: {grp: 'infra', color: '#b8c4d6', src: 'Climate TRACE', load: loadFactories},
+  ships: {grp: 'mkt', color: '#ffe066', src: 'Digitraffic AIS', ttl: 180, load: loadShips},
   wx: {grp: 'wx', color: '#ffd400', src: 'Open-Meteo', ttl: 1800, load: loadWeather}
 };
-var ORDER = ['plants', 'ports', 'refin', 'lng', 'wx', 'alerts', 'fires', 'volc', 'quakes', 'choke', 'storms', 'exch'];
+var ORDER = ['plants', 'fact', 'ports', 'oilst', 'refin', 'lng', 'gas', 'ships', 'wx', 'alerts', 'fires', 'volc', 'quakes', 'choke', 'storms', 'exch'];
 var GROUPS = [['live', 'gm_g_live'], ['mkt', 'gm_g_mkt'], ['infra', 'gm_g_infra'], ['wx', 'gm_g_wx']];
 // which layers each tab shows: "base" always, "opt" can be ticked
 var TABS = {
   MAP: {opt: ORDER.slice(), def: ['quakes', 'storms', 'fires', 'exch', 'choke']},
-  STORM: {base: ['storms'], opt: ['refin', 'lng', 'ports', 'plants', 'alerts'], def: ['refin', 'lng', 'ports']},
-  SHIP: {base: ['choke'], opt: ['ports', 'refin', 'lng', 'storms'], def: ['ports']},
+  STORM: {base: ['storms'], opt: ['refin', 'lng', 'gas', 'oilst', 'ports', 'plants', 'fact', 'alerts'], def: ['refin', 'lng', 'ports']},
+  SHIP: {base: ['choke'], opt: ['ships', 'ports', 'oilst', 'refin', 'lng', 'storms'], def: ['ports', 'ships']},
   WETR: {base: ['wx'], opt: ['storms', 'exch'], def: []},
   ECO: {base: [], opt: ['exch'], def: []}
 };
@@ -155,7 +159,12 @@ var M = {tab: 'MAP', W: 0, H: 0, S: 0, S0: 0, cx: 0.5, cy: my(22), dpr: 1, on: {
   eco: store('map_eco') || 'NGDP_RPCH', wx: store('map_wx') || 'now', fuels: {}, sideOpen: false, built: false};
 try { var sv = JSON.parse(store('map_on') || 'null'); if (sv && typeof sv === 'object') M.on = sv } catch(e){}
 try { var sf = JSON.parse(store('map_fuels') || 'null'); if (sf && typeof sf === 'object') M.fuels = sf } catch(e){}
+// the categories switched off, per layer (the power plants' fuels keep their old storage key)
+M.off = {plants: M.fuels, fact: {}, ships: {}};
+['fact', 'ships'].forEach(function(id){ try { var o = JSON.parse(store('map_off_' + id) || 'null'); if (o && typeof o === 'object') M.off[id] = o } catch(e){} });
 Object.keys(TABS).forEach(function(t){ if (!M.on[t]) { M.on[t] = {}; TABS[t].def.forEach(function(k){ M.on[t][k] = 1 }) } });
+// layers added later switch on once for those who saved their choice before
+if (store('map_on_v') !== '2') { if (M.on.SHIP.ships == null) M.on.SHIP.ships = 1; store('map_on_v', '2'); store('map_on', JSON.stringify(M.on)) }
 function saveOn(){ store('map_on', JSON.stringify(M.on)) }
 function active(){
   var t = TABS[M.tab], out = (t.base || []).slice();
@@ -382,8 +391,15 @@ function arcgisAll(url, max){
 function countryName(iso){ var c = world && world.c[iso]; return c ? (I.ru ? c.ru : c.en) : iso || '' }
 
 /* ---------- ports: IMF PortWatch (with their traffic), Natural Earth if it does not answer ---------- */
+// the ports database once for both layers that use it (seaports, oil terminals)
+var portsRawP = null;
+function portsRaw(){
+  if (!portsRawP) portsRawP = arcgisAll(PW + 'PortWatch_ports_database/FeatureServer/0/query?where=1%3D1&outFields=portname,country,ISO3,lat,lon,vessel_count_total,vessel_count_tanker,industry_top1&returnGeometry=false&f=json', 3000)
+    .catch(function(e){ portsRawP = null; throw e });
+  return portsRawP;
+}
 function loadPorts(){
-  return arcgisAll(PW + 'PortWatch_ports_database/FeatureServer/0/query?where=1%3D1&outFields=portname,country,ISO3,lat,lon,vessel_count_total,vessel_count_tanker,industry_top1&returnGeometry=false&f=json', 3000)
+  return portsRaw()
     .then(function(d){
       var pts = (d.features || []).map(function(f){
         var a = f.attributes || {}; if (a.lat == null || a.lon == null) return null;
@@ -424,6 +440,92 @@ function loadInfra(file, col, key){
       return {lon: p[0], lat: p[1], r: 3.4, c: col, ring: true, t: p[2] || TX(key), s: [TX(key) + (p[3] ? ' · ' + countryName(p[3]) : ''), p[4] || ''].filter(Boolean), k: key};
     }), src: d.src};
   });
+}
+
+/* ---------- natural gas: fields (Wikidata) and underground storage (Wikidata, OpenStreetMap) ---------- */
+function loadGas(){
+  return geo('gas.json').then(function(d){
+    return {pts: (d.p || []).map(function(p){
+      // [lon, lat, kind (0 field, 1 storage), name, iso3, operator]
+      var st = p[2] === 1, key = st ? 'gm_gas_storage' : 'gm_gas_field';
+      return {lon: p[0], lat: p[1], r: st ? 3.6 : 2.8, c: st ? '#3fd0a8' : '#b7e34b', ring: true, t: p[3], k: 'gas',
+        s: [TX(key) + (p[4] ? ' · ' + countryName(p[4]) : ''), p[5] || ''].filter(Boolean)};
+    }), src: d.src};
+  });
+}
+
+/* ---------- oil terminals: the ports where most tankers call (IMF PortWatch) and oil depots (OpenStreetMap) ---------- */
+function loadOilStorage(){
+  var ports = portsRaw().then(function(d){
+    var rows = (d.features || []).map(function(f){ return f.attributes || {} }).filter(function(a){ return a.lat != null && a.vessel_count_tanker > 0 })
+      .sort(function(a, b){ return b.vessel_count_tanker - a.vessel_count_tanker }).slice(0, 250);
+    var top = rows.length ? rows[0].vessel_count_tanker : 1;
+    return rows.map(function(a){
+      var share = a.vessel_count_total ? a.vessel_count_tanker / a.vessel_count_total * 100 : null;
+      return {lon: a.lon, lat: a.lat, r: 2 + 5 * Math.sqrt(a.vessel_count_tanker / top), c: '#ffb35c', ring: true, t: '🛢 ' + a.portname, k: 'oilport', v: a.vessel_count_tanker,
+        s: [TX('gm_oil_port') + (a.country ? ' · ' + a.country : ''), TX('gm_tanker_calls', fmt(a.vessel_count_tanker, 0)) + (share != null ? ' · ' + TX('gm_tanker_share', fmt(share, 0)) : '')],
+        lbl: a.portname, minLbl: 3};
+    });
+  }).catch(function(){ return [] });
+  var depots = geo('depots.json').then(function(d){
+    return (d.p || []).map(function(p){
+      // [lon, lat, name, iso3, operator]
+      return {lon: p[0], lat: p[1], r: 1.8, c: '#d98a3a', t: p[2] || TX('gm_depot'), k: 'depot', s: [TX('gm_depot') + (p[3] ? ' · ' + countryName(p[3]) : ''), p[4] || ''].filter(Boolean)};
+    });
+  }).catch(function(){ return [] });
+  return Promise.all([ports, depots]).then(function(a){
+    if (!a[0].length && !a[1].length) throw new Error(TX('load_fail'));
+    var pts = a[1].concat(a[0].sort(function(x, y){ return x.v - y.v }));
+    a[0].forEach(function(p, i){ if (i > 30) p.lbl = null });   // names of the 30 busiest
+    return {pts: pts, src: (a[0].length ? 'IMF PortWatch · ' : '') + 'OpenStreetMap contributors (ODbL)'};
+  });
+}
+
+/* ---------- heavy industry: Climate TRACE's inventory of plants ---------- */
+var FACT_COL = {steel: '#9fb3cc', aluminium: '#c9b8ff', cement: '#d8c49a', chemicals: '#ff7ad9', paper: '#8fd18f', glass: '#7fe0e0', metals: '#e0a060'};
+function loadFactories(){
+  return geo('factories.json').then(function(d){
+    var cats = d.cats, types = d.types || [], top = 1;
+    d.p.forEach(function(p){ if (p[7] > top) top = p[7] });
+    return {pts: d.p.map(function(p){
+      // [lon, lat, category, name, iso3, owner, capacity t a year, CO2e t a year, type]
+      var cat = cats[p[2]], ty = types[p[8]] || '';
+      return {lon: p[0], lat: p[1], r: 1.1 + 5 * Math.sqrt((p[7] || 0) / top), c: FACT_COL[cat] || '#aaa', fuel: cat, k: 'fact', t: p[3],
+        s: [TX('gm_fact_' + cat) + (ty ? ' (' + ty + ')' : '') + (p[4] ? ' · ' + countryName(p[4]) : ''), p[5] || '',
+          p[6] ? TX('gm_capacity', fmt(p[6] / 1e6, p[6] < 1e6 ? 2 : 1)) : '', p[7] ? TX('gm_co2', fmt(p[7] / 1e6, p[7] < 1e6 ? 2 : 1)) : ''].filter(Boolean)};
+    }).reverse(), src: d.src, cats: cats};   // the biggest drawn last, on top
+  });
+}
+
+/* ---------- vessels: live AIS of the Baltic Sea (Finland's Digitraffic) ---------- */
+// AIS ship type → the map's kind
+var SHIP_KINDS = ['tanker', 'cargo', 'pass', 'service', 'other'];
+var SHIP_COL = {tanker: '#ff9f40', cargo: '#5ab0ff', pass: '#d58cff', service: '#9ad06a', other: '#9a9a9a'};
+function shipKind(t){ return t >= 80 && t < 90 ? 'tanker' : t >= 70 && t < 80 ? 'cargo' : t >= 60 && t < 70 ? 'pass' : (t >= 50 && t < 60) || (t >= 31 && t <= 33) ? 'service' : 'other' }
+var DT = 'https://meri.digitraffic.fi/api/ais/v1/';
+function loadShips(){
+  return Promise.all([live(DT + 'locations', true), (M.shipMeta && Date.now() - M.shipMeta.at < 3600e3) ? Promise.resolve(M.shipMeta.d) : live(DT + 'vessels', true).then(function(v){ M.shipMeta = {at: Date.now(), d: v}; return v })])
+    .then(function(a){
+      var meta = {}; (a[1] || []).forEach(function(v){ meta[v.mmsi] = v });
+      var cut = Date.now() - 6 * 3600e3;
+      var pts = ((a[0] || {}).features || []).map(function(f){
+        var pr = f.properties || {}, c = f.geometry && f.geometry.coordinates, v = meta[f.mmsi || pr.mmsi] || {};
+        if (!c || c[0] == null || (pr.timestampExternal && pr.timestampExternal < cut)) return null;
+        var kind = shipKind(v.shipType || 0), moving = pr.sog > 0.5 && pr.navStat !== 1 && pr.navStat !== 5;
+        var name = (v.name || '').trim() || 'MMSI ' + (f.mmsi || pr.mmsi);
+        var s = [TX('gm_ship1_' + kind) + ' · ' + (moving ? TX('gm_ship_speed', fmt(pr.sog, 1)) : TX(pr.navStat === 1 ? 'gm_ship_anchor' : pr.navStat === 5 ? 'gm_ship_moored' : 'gm_ship_still'))];
+        if (v.destination && v.destination.trim()) s.push(TX('gm_ship_dest', v.destination.trim()));
+        if (v.draught) s.push(TX('gm_ship_draught', fmt(v.draught / 10, 1)));
+        s.push(ago(pr.timestampExternal));
+        return {lon: c[0], lat: c[1], r: kind === 'tanker' || kind === 'cargo' ? 2.4 : 1.8, c: SHIP_COL[kind], fuel: kind, k: 'ship', t: '🚢 ' + name, s: s,
+          hd: moving ? (pr.heading != null && pr.heading < 360 ? pr.heading : pr.cog) : null, u: 'https://www.marinetraffic.com/en/ais/details/ships/mmsi:' + (f.mmsi || pr.mmsi)};
+      }).filter(Boolean);
+      if (!pts.length) throw new Error('Digitraffic');
+      // tankers and cargo ships on top
+      var rank = {other: 0, service: 1, pass: 2, cargo: 3, tanker: 4};
+      pts.sort(function(x, y){ return rank[y.fuel] - rank[x.fuel] });
+      return {pts: pts, src: 'Digitraffic AIS (CC BY 4.0)', updated: (a[0] || {}).dataUpdatedTime};
+    });
 }
 
 /* ---------- Open-Meteo: weather in the big cities ---------- */
@@ -608,7 +710,7 @@ function draw(){
     var d = M.data[id]; if (!d || !d.pts) return;
     var dense = d.pts.length > 3000;
     if (dense) g.globalCompositeOperation = 'lighter';
-    var fuelOff = id === 'plants' ? M.fuels : null;
+    var fuelOff = M.off[id] || null;
     for (var i = d.pts.length - 1; i >= 0; i--) {   // big ones first, small ones on top
       var p = d.pts[i];
       if (fuelOff && fuelOff[p.fuel]) continue;
@@ -622,6 +724,7 @@ function draw(){
           g.globalAlpha = p.ring ? 0.85 : 0.9; g.beginPath(); g.arc(x, y, r, 0, 6.2832); g.fill();
           if (p.ring) { g.globalAlpha = 1; g.lineWidth = 1; g.strokeStyle = 'rgba(0,0,0,.8)'; g.stroke() }
         }
+        if (p.hd != null && zf() > 1.8) { var ang = (p.hd - 90) * Math.PI / 180; g.globalAlpha = 0.9; g.strokeStyle = p.c; g.lineWidth = 1.2; g.beginPath(); g.moveTo(x, y); g.lineTo(x + Math.cos(ang) * r * 3.2, y + Math.sin(ang) * r * 3.2); g.stroke() }
         if (p.lbl && (!p.minLbl || M.S / M.S0 >= p.minLbl)) labels.push({x: x, y: y, r: r, t: p.lbl, c: p.c});
       }
     }
@@ -747,7 +850,7 @@ function pick(px, py){
   var best = null, bd = 1e9, z = zf(), ks = copies(), act = active();
   for (var a = act.length - 1; a >= 0; a--) {
     var d = M.data[act[a]]; if (!d || !d.pts) continue;
-    var fuelOff = act[a] === 'plants' ? M.fuels : null, dense = d.pts.length > 3000;
+    var fuelOff = M.off[act[a]] || null, dense = d.pts.length > 3000;
     for (var i = 0; i < d.pts.length; i++) {
       var p = d.pts[i]; if (p.nohit || (fuelOff && fuelOff[p.fuel])) continue;
       var y = sy(p.fy); if (Math.abs(y - py) > 16) continue;
@@ -823,7 +926,7 @@ function layerRow(id){
   var L = LAYERS[id], on = active().indexOf(id) >= 0, base = (TABS[M.tab].base || []).indexOf(id) >= 0;
   var b = el('button', 'gm-ly' + (on ? ' on' : '')), i = el('i'); i.style.background = on ? L.color : 'transparent'; i.style.borderColor = L.color;
   b.appendChild(i); b.appendChild(el('span', null, TX('gm_l_' + id)));
-  var st = M.status[id], n = M.data[id] && M.data[id].pts ? M.data[id].pts.filter(function(p){ return !p.nohit }).length : null;
+  var off = M.off[id], st = M.status[id], n = M.data[id] && M.data[id].pts ? M.data[id].pts.filter(function(p){ return !p.nohit && !(off && off[p.fuel]) }).length : null;
   b.appendChild(el('small', st === 'err' ? 'down' : null, !on ? '' : st === 'loading' ? '…' : st === 'err' ? '✕' : n != null ? fmt(n, 0) : ''));
   if (st === 'err' && M.err && M.err[id]) b.title = M.err[id];
   b.onclick = function(){
@@ -834,17 +937,25 @@ function layerRow(id){
   };
   return b;
 }
-function fuelChips(){
-  var d = M.data.plants; if (!d || !d.fuels) return null;
+// the chips under a layer that has categories: a click hides or shows one
+var CATS = {
+  plants: {list: function(d){ return d.fuels }, col: function(f){ return FUEL_COL[f] }, name: function(f){ return TX('gm_fuel_' + f.toLowerCase()) }, key: 'map_fuels'},
+  fact: {list: function(d){ return d.cats }, col: function(f){ return FACT_COL[f] }, name: function(f){ return TX('gm_fact_' + f) }, key: 'map_off_fact'},
+  ships: {list: function(){ return SHIP_KINDS }, col: function(f){ return SHIP_COL[f] }, name: function(f){ return TX('gm_ship_' + f) }, key: 'map_off_ships'}
+};
+function catChips(id){
+  var d = M.data[id], C_ = CATS[id], off = M.off[id]; if (!d || !C_ || active().indexOf(id) < 0) return null;
+  var list = C_.list(d); if (!list || !list.length) return null;
   var w = el('div', 'gm-chips');
-  d.fuels.forEach(function(f){
-    var b = el('button', 'chipbtn' + (M.fuels[f] ? '' : ' on'), TX('gm_fuel_' + f.toLowerCase()));
-    b.style.borderColor = FUEL_COL[f]; if (!M.fuels[f]) { b.style.background = FUEL_COL[f]; b.style.color = '#000' }
-    b.onclick = function(){ if (M.fuels[f]) delete M.fuels[f]; else M.fuels[f] = 1; store('map_fuels', JSON.stringify(M.fuels)); renderSide(); redraw() };
+  list.forEach(function(f){
+    var col = C_.col(f) || '#888', b = el('button', 'chipbtn' + (off[f] ? '' : ' on'), C_.name(f));
+    b.style.borderColor = col; if (!off[f]) { b.style.background = col; b.style.color = '#000' }
+    b.onclick = function(){ if (off[f]) delete off[f]; else off[f] = 1; store(C_.key, JSON.stringify(off)); renderSide(); redraw() };
     w.appendChild(b);
   });
   return w;
 }
+function fuelChips(){ return catChips('plants') }
 function renderSide(){
   if (!side) return;
   var keep = side.scrollTop;
@@ -859,7 +970,7 @@ function sideMap(){
     var ids = (TABS.MAP.opt || []).filter(function(id){ return LAYERS[id].grp === gr[0] });
     if (!ids.length) return;
     side.appendChild(sh(TX(gr[1])));
-    ids.forEach(function(id){ side.appendChild(layerRow(id)); if (id === 'plants' && active().indexOf('plants') >= 0) { var fc = fuelChips(); if (fc) side.appendChild(fc) } });
+    ids.forEach(function(id){ side.appendChild(layerRow(id)); var fc = catChips(id); if (fc) side.appendChild(fc) });
   });
   side.appendChild(el('div', 'note', TX('gm_map_note')));
 }
@@ -867,7 +978,7 @@ function optRows(){
   var o = TABS[M.tab].opt || [];
   if (!o.length) return;
   side.appendChild(sh(TX('gm_overlays')));
-  o.forEach(function(id){ side.appendChild(layerRow(id)); if (id === 'plants' && active().indexOf('plants') >= 0) { var fc = fuelChips(); if (fc) side.appendChild(fc) } });
+  o.forEach(function(id){ side.appendChild(layerRow(id)); var fc = catChips(id); if (fc) side.appendChild(fc) });
 }
 function sideStorm(){
   var d = M.data.storms, st = M.status.storms;
@@ -876,7 +987,7 @@ function sideStorm(){
   var list = d ? d.pts.filter(function(p){ return p.k === 'storm' }) : [];
   if (d && !list.length) side.appendChild(el('div', 'empty', TX('gm_no_storms')));
   // energy assets within 300 km of each storm
-  var assets = ['refin', 'lng', 'ports', 'plants'].filter(function(id){ return M.data[id] });
+  var assets = ['refin', 'lng', 'gas', 'oilst', 'ports', 'plants', 'fact'].filter(function(id){ return M.data[id] && active().indexOf(id) >= 0 });
   list.sort(function(a, b){ return (b.kmh || 0) - (a.kmh || 0) }).forEach(function(s){
     var b = el('button', 'gm-row');
     var i = el('i'); i.style.background = s.c; b.appendChild(i);
@@ -908,8 +1019,29 @@ function sideShip(){
     b.onclick = function(){ flyTo(c.lon, c.lat, 6); pinChoke(c) };
     side.appendChild(b);
   });
+  shipBlock();
   optRows();
   side.appendChild(el('div', 'note', TX('gm_ship_note')));
+}
+// live vessels: how many of each kind are under way, at anchor or moored, and where to look
+function shipBlock(){
+  if (active().indexOf('ships') < 0) return;
+  var d = M.data.ships, st = M.status.ships;
+  side.appendChild(sh(TX('gm_ships_t'), st === 'loading' ? '…' : TX('gm_ships_cols')));
+  if (st === 'err') side.appendChild(el('div', 'err', TX('load_fail') + (M.err && M.err.ships || '')));
+  if (!d) return;
+  var cnt = {};
+  d.pts.forEach(function(p){ var c = cnt[p.fuel] = cnt[p.fuel] || {all: 0, go: 0}; c.all++; if (p.hd != null) c.go++ });
+  SHIP_KINDS.forEach(function(k){
+    if (!cnt[k]) return;
+    var r = el('div', 'gm-row gm-sk'), i = el('i'); i.style.background = SHIP_COL[k]; r.appendChild(i);
+    r.appendChild(el('span', 'nm', TX('gm_ship_' + k))); r.appendChild(el('span', 'num', fmt(cnt[k].all, 0))); r.appendChild(el('span', 'num', fmt(cnt[k].go, 0)));
+    side.appendChild(r);
+  });
+  if (d.updated) side.appendChild(el('div', 'note', TX('gm_ships_at', T.hm(d.updated))));
+  var fly = el('div', 'gm-chips');
+  [['gm_fly_gof', 27.8, 59.9, 24], ['gm_fly_baltic', 19, 59, 12]].forEach(function(x){ var b = el('button', 'chipbtn', TX(x[0])); b.onclick = function(){ flyTo(x[1], x[2], x[3]) }; fly.appendChild(b) });
+  side.appendChild(fly);
 }
 function pinChoke(c){
   var NS = 'http://www.w3.org/2000/svg', W = 212, H = 64, svg = document.createElementNS(NS, 'svg');
