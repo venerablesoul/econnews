@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e8525823689fb784": "2026-10-20T05:16:52.452506+00:00",
-  "73010c19b7cc07d1": "2026-10-20T05:21:52.429334+00:00",
   "a7b5a8583de1a807": "2026-10-20T05:36:52.449203+00:00",
   "f9a233fd1ca4612b": "2026-10-20T05:36:52.449203+00:00",
   "a054ed621dff22ce": "2026-10-20T05:46:52.767574+00:00",
@@ -954,34 +952,12 @@
   "677c33702f2e9feb": "2026-10-23T05:10:51.550957+00:00",
   "88e0238fa0091ddb": "2026-10-23T05:10:51.550957+00:00",
   "aca38300e107a6f4": "2026-10-23T05:10:51.550957+00:00",
-  "3c55dedb2f8861d6": "2026-10-23T05:15:51.640233+00:00"
+  "3c55dedb2f8861d6": "2026-10-23T05:15:51.640233+00:00",
+  "a47cc4c517565b3f": "2026-10-23T05:20:51.774413+00:00",
+  "33cfcd9e366846ec": "2026-10-23T05:25:51.843996+00:00",
+  "f030cfac65781eea": "2026-10-23T05:25:51.843996+00:00"
  },
  "recent": [
-  {
-   "title": "BofA, BNP See South Africa Rating Upgrade After Budget",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-20/bofa-bnp-see-south-africa-rating-upgrade-after-budget",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-20T05:16:52.452506+00:00",
-   "title_ru": "BofA, BNP См. Повышение рейтинга в Южной Африке после завершения бюджета",
-   "lead": "South African Finance Minister Enoch Godongwana is expected to signal the country’s commitment to fiscal discipline on Wednesday, with its debt-to-GDP ratio set to decline for the first time in more than two decades — potentially…",
-   "lead_ru": "Ожидается, что министр финансов Южной Африки Енох Годонгвана в среду сигнализирует о приверженности страны фискальной дисциплине, поскольку соотношение долга к ВВП снизится впервые за более чем два десятилетия — потенциально...",
-   "tags": [
-    "GDP"
-   ]
-  },
-  {
-   "title": "How safe havens stack up as tech, energy and France fears grip markets",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNcHQwSENyS3lkNi05UkRqMGdnZVg3dUlBWC1KdE8wemZkNmthdFBhSG9MSXB5VV9Yd3ExSWI1ZDBFVEdpY1JKSl92RzlOOHhfbHpqeEdmUWlwa09IdlVqb0pyNDAzTzVGZjJDd05xMHlRazVZTUQ0eWxZWm8wZEFSRlllNkg5Mml6MFNBNEJ1OXdnTHlE?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T05:21:52.429334+00:00",
-   "title_ru": "Как накапливаются безопасные убежища, поскольку технологические, энергетические и французские рынки опасаются захвата"
-  },
   {
    "title": "Japanese Investors Buy Most Domestic Government Bonds Since 2009",
    "link": "https://www.bloomberg.com/news/articles/2026-10-20/japanese-investors-buy-most-domestic-government-bonds-since-2009",
@@ -9719,6 +9695,34 @@
    "title_ru": "Вьетнам делает большие ставки на высокоскоростные железные дороги для трансформации экономики",
    "lead": "Vietnam is betting big on a $65 billion high-speed railway linking Hanoi and Ho Chi Minh City. Construction is set to start in late 2027 and take at least a decade to complete.",
    "lead_ru": "Вьетнам делает большую ставку на высокоскоростную железную дорогу стоимостью $ 65 млрд, соединяющую Ханой и Хошимин. Строительство начнется в конце 2027 года и займет не менее десяти лет."
+  },
+  {
+   "title": "Tech Selloff Deepens, SK Hynix Scraps Solidigm US IPO Plans",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-23/the-asia-trade-10-23-2026-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-23T05:25:51.843996+00:00",
+   "title_ru": "Распродажа технологий углубляется, SK Hynix отказывается от планов IPO Solidigm в США",
+   "lead": "\"Bloomberg: The Asia Trade\" brings you everything you need to know to get ahead as the trading day begins in Asia.",
+   "lead_ru": "«Bloomberg: The Asia Trade» дает вам все, что вам нужно знать, чтобы продвинуться вперед, поскольку торговый день начинается в Азии.",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "Treasuries’ Link to AI Shows Sharp Shift as Haven Trade Returns",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOV0dULXFaUm9nREVVNEJjUFlvODVTbkwyV21vZXJ1eVJveDc4cEd4SG5lWEZsRjNxVWNkZWlvRFJPMi10cXhjcldVUkxGd2wtMWtQbzVpYXJLR29taWlmQThpZE5ObWhFSXFpX0VYZlJMZFQ1WFdKYnF4cWhwUDE3b2NueThFenpCWEJSeDg4UzNfRDZleS1qcmpxY2sxWjhwV3ZnUjZqLTRBT2k4bDJoOVc4Zw?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-23T05:25:51.843996+00:00",
+   "title_ru": "Связь казначейских облигаций с ИИ показывает резкий сдвиг по мере возврата к торговле в Haven",
+   "tags": [
+    "bonds"
+   ]
   }
  ],
  "last_digest": "2026-10-22",
