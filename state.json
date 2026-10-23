@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "878470455206f74c": "2026-10-20T19:19:12.066780+00:00",
   "b56636cf07927cd5": "2026-10-20T19:34:11.989191+00:00",
   "f50dbbe5455bbcb6": "2026-10-20T19:44:11.937964+00:00",
   "d5e0fe36d49329fc": "2026-10-20T19:49:11.881189+00:00",
@@ -1005,19 +1004,10 @@
   "903f585e285cb4e3": "2026-10-23T18:57:41.446566+00:00",
   "c6a22c96dceea706": "2026-10-23T18:57:41.446566+00:00",
   "3012342334bb2f2c": "2026-10-23T19:17:41.430968+00:00",
-  "05526fc74c2459ec": "2026-10-23T19:17:41.430968+00:00"
+  "05526fc74c2459ec": "2026-10-23T19:17:41.430968+00:00",
+  "e03461a3ec0216fa": "2026-10-23T19:22:41.458970+00:00"
  },
  "recent": [
-  {
-   "title": "Data on display Projections of the U.S. economy, labor force, and productivity 2025–35",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPS0pDUjJQR2taYXZBUFBKbkhaYXdQOUh4N3FqczlISDZwd0R2eWE5dW9pTEh3Qk1PSS1UQ1I1dVBJMFRONTNjdjNRTjU5c0U3WlRKeWMydHJ6SmgyM2FQM3dNRVMxTXNsTkEzS2xVYmxqTkExMVVJUFcyYWVVZkFubzBBQmo5SnlDMG5Ud0hPM1R1ZTVONncxQWhjRQ?oc=5",
-   "sources": [
-    "US Labor Statistics (BLS)"
-   ],
-   "score": 5,
-   "ts": "2026-10-20T19:19:12.066780+00:00",
-   "title_ru": "Данные на дисплее Прогнозы экономики, рабочей силы и производительности США на 2025–2035 годы."
-  },
   {
    "title": "Tech Credit Risk Hits Fresh Highs on Fears of Debt Wave to Come",
    "link": "https://www.bloomberg.com/news/articles/2026-10-20/tech-credit-risk-hits-fresh-highs-on-fears-of-debt-wave-to-come",
@@ -10261,6 +10251,19 @@
    "score": 3,
    "ts": "2026-10-23T19:17:41.430968+00:00",
    "title_ru": "Франция и ОАЭ возобновили разработку военных самолетов Rafale на фоне проблем с бюджетом Франции"
+  },
+  {
+   "title": "Oncologists Cheer Melanoma Data That Tanked Moderna’s Shares",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOTlZNay05ZE1VbTNBVmZHT0ZMYzkxZ2VKOS10X1dKbVR6WU1kc2pLRk05aVZzU2txX3VqMlRQOXhXSW9iYWczN0NpQjJkN2dSRzhFVkVlNFFubUxFdUs5dTJMenBpM3cxSnJlQ28wTHJCYVNvRW5aSUpsUkFBS1dUbWIxRkhDSUhrc2E1bjZoUElKRGdqTEIzT2RzRC1lYUpWaE45U2djZDM5c0JxME1CVQ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T19:22:41.458970+00:00",
+   "title_ru": "Онкологи приветствуют данные о меланоме, которые повлияли на акции Moderna",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-23",
@@ -16557,12 +16560,11 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-23T18:17:41.443541+00:00",
+  "checked": "2026-10-23T19:22:41.458970+00:00",
   "sec_seen": [
    "0001836969-26-000004",
    "0000885639-26-000186",
-   "0001510281-26-000376",
-   "0001185185-26-004959"
+   "0001510281-26-000376"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
