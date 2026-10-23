@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "155c192f37b05351": "2026-10-20T06:46:52.433198+00:00",
   "4146e1d8874c604c": "2026-10-20T06:56:52.431531+00:00",
   "8b606ddfe079283e": "2026-10-20T06:56:52.431531+00:00",
   "18ada448671ff7fc": "2026-10-20T07:01:52.363392+00:00",
@@ -957,7 +956,12 @@
   "ca258e53b80791a9": "2026-10-23T06:35:51.570237+00:00",
   "ccb51a4535bcddd5": "2026-10-23T06:41:24.919424+00:00",
   "1c3b9bf93effac38": "2026-10-23T06:46:24.927545+00:00",
-  "f0e87787bce48195": "2026-10-23T06:46:24.927545+00:00"
+  "f0e87787bce48195": "2026-10-23T06:46:24.927545+00:00",
+  "56869dffe679e3a3": "2026-10-23T06:51:24.925269+00:00",
+  "5b193cfcce727eb9": "2026-10-23T06:51:24.925269+00:00",
+  "d8cbbc5704678818": "2026-10-23T06:51:24.925269+00:00",
+  "4b3dae6fe954d0c2": "2026-10-23T06:51:24.925269+00:00",
+  "f70765deb2df7515": "2026-10-23T06:51:24.925269+00:00"
  },
  "recent": [
   {
@@ -9729,6 +9733,65 @@
     "bonds",
     "markets"
    ]
+  },
+  {
+   "title": "UK Retail Sales Fall, Consumer Confidence Worst Since Covid",
+   "link": "https://www.bloomberg.com/news/newsletters/2026-10-23/uk-retail-sales-fall-consumer-confidence-worst-since-covid",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-23T06:51:24.925269+00:00",
+   "title_ru": "Розничные продажи в Великобритании упали, потребительское доверие стало худшим со времен Covid",
+   "lead": "Plus, the nation’s bonds and stocks are showing resilience in the run up to the budget",
+   "lead_ru": "Кроме того, национальные облигации и акции демонстрируют устойчивость в преддверии бюджета",
+   "tags": [
+    "bonds",
+    "markets"
+   ]
+  },
+  {
+   "title": "Tech Rout Leaves South Korean Stocks Twice as Cheap as Indonesia",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-23/tech-rout-leaves-south-korean-stocks-twice-as-cheap-as-indonesia",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-23T06:51:24.925269+00:00",
+   "title_ru": "Tech Rout покидает южнокорейские акции в два раза дешевле, чем Индонезия",
+   "lead": "South Korea has transformed from this year’s hottest major market into the world’s cheapest following a brutal tech selloff, with valuations falling to roughly half of Indonesia’s.",
+   "lead_ru": "Южная Корея превратилась из самого горячего крупного рынка в этом году в самый дешевый в мире после жестокой распродажи технологий, когда оценки упали примерно до половины индонезийских.",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "Volvo Cars to cut 2,500 jobs as third quarter swings to loss",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxONjE0Qml6Mkw5WkFyRXlUcjZ3QTE3LWtGVF9kckI3cExBa0dsaHM2S1dyY1IzZnk0aFlYOGc4M1RoYzd0TVQ0aVNWM1I1RmVCRTNDcURBeHluNDFOOEJaMXVaOUo5ZGN0U0RoTFNuUmJHSjVSdFQzcHdCbHdyNHU1cUFaU290VVhzbV9HbVJjeDJrNGV1TGJOdmNzaHdmR29H?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T06:51:24.925269+00:00",
+   "title_ru": "Volvo Cars сократит 2500 рабочих мест, поскольку третий квартал катится к убытку",
+   "tags": [
+    "jobs"
+   ]
+  },
+  {
+   "title": "How nervous are bond markets about France?",
+   "link": "https://www.ft.com/content/9aa4549e-26f4-4963-94eb-50cf0fc0b8f9",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T06:51:24.925269+00:00",
+   "title_ru": "Насколько рынки облигаций нервничают по поводу Франции?",
+   "lead": "Dusting off our apples-for-apples spreadsheet",
+   "lead_ru": "Удаление пыли из таблицы «яблоки в обмен на яблоки»",
+   "tags": [
+    "bonds"
+   ]
   }
  ],
  "last_digest": "2026-10-22",
@@ -16025,10 +16088,10 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-23T05:50:51.521642+00:00",
+  "checked": "2026-10-23T06:51:24.925269+00:00",
   "sec_seen": [
-   "0001607879-26-000008",
    "0001769628-26-000450",
+   "0001607879-26-000008",
    "0001193125-26-429202",
    "0001493152-26-048153",
    "0001944970-26-000029",
@@ -16039,8 +16102,8 @@
    "0002157445-26-000002",
    "0000921895-26-002845",
    "0001635088-26-000116",
-   "0002161365-26-000008",
    "0001062993-26-005508",
+   "0002161365-26-000008",
    "0002032458-26-000030",
    "0000897069-26-001865",
    "0001628280-26-066948",
@@ -16050,7 +16113,6 @@
    "0001493152-26-048149",
    "0001891037-26-000011",
    "0001266824-26-000217",
-   "0001628280-26-066951",
    "0001213900-26-111771",
    "0000829224-26-000149",
    "0001193125-26-429162",
@@ -16064,11 +16126,12 @@
    "0001628280-26-066941",
    "0002066491-26-000013",
    "0000902664-26-004257",
+   "0001753539-26-000149",
    "0001891751-26-000010",
    "0001628280-26-066949",
    "0001193125-26-429245",
    "0001973495-26-000007",
-   "0001753539-26-000149",
+   "0001628280-26-066951",
    "0001349983-26-000013",
    "0001493152-26-048147"
   ],
