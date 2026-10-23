@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "0c0d0f69071c221b": "2026-10-20T12:08:05.293801+00:00",
-  "f8ee8101040d7174": "2026-10-20T12:08:05.293801+00:00",
-  "d4236bb6e792679b": "2026-10-20T12:08:05.293801+00:00",
   "0bd07a7bc5a0604b": "2026-10-20T12:13:05.302527+00:00",
   "80e8d02b2c1a400e": "2026-10-20T12:13:05.302527+00:00",
   "2935dbceb784bcba": "2026-10-20T12:13:05.302527+00:00",
@@ -999,51 +996,12 @@
   "5580b3e486b709e4": "2026-10-23T12:01:24.965076+00:00",
   "e1f9fc13c592e5b3": "2026-10-23T12:02:00.724408+00:00",
   "da9adc90c1b9851c": "2026-10-23T12:02:00.724408+00:00",
-  "908b3876f2f7d4d7": "2026-10-23T12:02:00.724408+00:00"
+  "908b3876f2f7d4d7": "2026-10-23T12:02:00.724408+00:00",
+  "84716fe2e36f65f9": "2026-10-23T12:06:55.655595+00:00",
+  "9697878d96ec8d7a": "2026-10-23T12:11:55.682806+00:00",
+  "85c92bd6d59ec864": "2026-10-23T12:11:55.682806+00:00"
  },
  "recent": [
-  {
-   "title": "Hungary Holds Interest Rate With Budget and Euro Path In Focus",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-20/hungary-holds-interest-rate-with-budget-and-euro-path-in-focus",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 8,
-   "ts": "2026-10-20T12:08:05.293801+00:00",
-   "title_ru": "Венгрия сохраняет процентную ставку, сосредоточив внимание на бюджете и еврозоне",
-   "lead": "Hungary’s central bank held interest rates for a second month after Prime Minister Peter Magyar unveiled his budget plan for next year.",
-   "lead_ru": "Центральный банк Венгрии удерживал процентные ставки второй месяц после того, как премьер-министр Петер Мадьяр обнародовал свой бюджетный план на следующий год.",
-   "tags": [
-    "rates"
-   ]
-  },
-  {
-   "title": "Sterling rises as strong labour market data reinforces rate hike bets",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOeVc2VlJwWldpcmYtQ0FXa2JtemMzSXJtTTM4T01kRl9sTmNTUDk4Sldrc0xONWZEY0ZQcVlWYjhwWjg3Ql9KQWJxQ0psYXlhTXhiZEVvVmVyOE5sSVAyc19JY084LVhLWjNCN3dzV2pPd0RnN3paMTlxdEhYdGl1WmNoWW9BUlRoMTZRMlE3YnM5RkNfYVlULXZydkhFVUt1d1RTUjNwV0JxbHdTTVVkSQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-20T12:08:05.293801+00:00",
-   "title_ru": "Фунт стерлингов растет, поскольку сильные данные по рынку труда усиливают ставки на повышение ставок",
-   "tags": [
-    "rates",
-    "jobs"
-   ]
-  },
-  {
-   "title": "French bond yields near 24-year high as new protests loom",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdzNSV1VKT0t1WFIzSE9fT0Mzck9VVWRTWktvUTFOYXM5Q0w3NWZVWGEyWkROMl9FaGQ0Zk1pbU1WS3lwT1FaQkhxM2NsbEQ2cUtOY01RUi1TR3U0YVhPYlo1N2MwRG5IMzdKMjRqUmJLczAxOXJqSTgzRFMyNmZ2TFdIaldhUXRlN0daZmROMXY5SFBfakpTb3F3eWdqRW80MTl3?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-20T12:08:05.293801+00:00",
-   "title_ru": "Доходность французских облигаций приблизилась к 24-летнему максимуму на фоне надвигающихся новых протестов",
-   "tags": [
-    "bonds"
-   ]
-  },
   {
    "title": "GM shares sink as full-year profit forecast misses Wall Street estimates",
    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPRnpBNEpFcnF0SnZqa1ZfTHM3VnJuQWc4SE5CSWpNQXNMWV85ZmRTNHBzeUdsNmdKTklmTjZxSVZQVFp1VDZFTnBiLXhmSFE3OFlVNVVLSUludTdNSFhQV3ppc2RSY2ZFNFVmQnJPcG5NVDh3cm5XTlVxYzQ2b2MzRXRTTUVUSXV4SGxydGlIdVh6NTQ0dlBqMjhXa3RCNmJHbkhtVXZqd29jR29OLUVtUHRMQUFNTGJKMEMwRzlR?oc=5",
@@ -10220,6 +10178,21 @@
     "rates",
     "Russia"
    ]
+  },
+  {
+   "title": "Jio’s Record IPO Draws Strong Demand, Defying India Market Rout",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-23/jio-s-record-ipo-draws-strong-demand-defying-india-market-rout",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-23T12:11:55.682806+00:00",
+   "title_ru": "Рекордное IPO Jio привлекает сильный спрос, бросая вызов рынку Индии",
+   "lead": "Jio Platforms Ltd.’s $3.1 billion initial public offering drew strong demand, particularly from institutional investors, as the country’s biggest-ever share sale defied the drag of a weeklong selloff in Indian equities.",
+   "lead_ru": "Первоначальное публичное размещение Jio Platforms Ltd. на сумму $ 3,1 млрд вызвало сильный спрос, особенно со стороны институциональных инвесторов, поскольку крупнейшая в истории страны продажа акций бросила вызов недельной распродаже индийских акций.",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-22",
@@ -16516,15 +16489,15 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-23T11:06:24.957669+00:00",
+  "checked": "2026-10-23T12:06:55.655595+00:00",
   "sec_seen": [
    "0001891751-26-000010",
    "0001193125-26-429389",
    "0001944970-26-000029",
    "0001769628-26-000450",
    "0001193125-26-429381",
-   "0002157445-26-000002",
    "0001628280-26-066951",
+   "0002157445-26-000002",
    "0001769628-26-000451",
    "0001062993-26-005508",
    "0002083595-26-000010",
@@ -16542,7 +16515,6 @@
    "0001193125-26-429202",
    "0002032458-26-000030",
    "0001193125-26-429392",
-   "0001628280-26-066949",
    "0001213900-26-111813",
    "0002066491-26-000013",
    "0001493152-26-048157",
