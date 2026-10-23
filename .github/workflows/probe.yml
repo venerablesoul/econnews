@@ -1,0 +1,34 @@
+name: Probe data sources (temporary)
+on:
+  push:
+    branches: [probe]
+    paths: ["probe/probe.py", ".github/workflows/probe.yml"]
+permissions:
+  contents: write
+  actions: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Browser
+        run: pip install playwright==1.47.0
+      - name: Probe
+        env:
+          FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
+          EODHD_API_KEY: ${{ secrets.EODHD_API_KEY }}
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+          GH_TOKEN: ${{ github.token }}
+        run: python probe/probe.py 2>&1 | tail -5 | sed 's/^/::warning::probe /'; ls -la probe | sed 's/^/::warning::ls /'
+      - name: Save result
+        run: |
+          git config user.name "news-bot"
+          git config user.email "news-bot@users.noreply.github.com"
+          git add probe/out* 2>&1 | sed 's/^/::warning::add /'
+          git status --short | head -5 | sed 's/^/::warning::status /'
+          git commit -q -m "probe result" 2>&1 | sed 's/^/::warning::commit /'
+          git push origin HEAD:probe 2>&1 | sed 's/^/::warning::push /' 
