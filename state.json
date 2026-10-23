@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "86ab768f823f4f23": "2026-10-20T12:58:05.292810+00:00",
   "a6fcca02187fb8a8": "2026-10-20T13:08:05.264457+00:00",
   "10dfbda861a3399a": "2026-10-20T13:13:05.369102+00:00",
   "1847ae4b65e9119c": "2026-10-20T13:18:05.340891+00:00",
@@ -1009,21 +1008,11 @@
   "21cec0710208882f": "2026-10-23T12:56:55.768878+00:00",
   "b40df6e71c634f18": "2026-10-23T12:56:55.768878+00:00",
   "7f099d12c7489cba": "2026-10-23T12:56:55.768878+00:00",
-  "47425fee5e93b461": "2026-10-23T12:56:55.768878+00:00"
+  "47425fee5e93b461": "2026-10-23T12:56:55.768878+00:00",
+  "fac8ad8eda000a27": "2026-10-23T13:01:55.665491+00:00",
+  "45fb7a104fd876c6": "2026-10-23T13:01:55.665491+00:00"
  },
  "recent": [
-  {
-   "title": "Drop in Insolvencies Adds to Signs of Resilience in UK Economy",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-20/uk-insolvencies-drop-as-businesses-endure-higher-costs",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T12:58:05.292810+00:00",
-   "title_ru": "Сокращение числа банкротств усиливает признаки устойчивости экономики Великобритании",
-   "lead": "The number of company insolvencies in England and Wales declined in September from August, the latest sign that the UK economy is holding up in the face of surging energy prices and higher borrowing costs.",
-   "lead_ru": "Число банкротств компаний в Англии и Уэльсе снизилось в сентябре по сравнению с августом, что является последним признаком того, что экономика Великобритании держится перед лицом растущих цен на энергоносители и более высоких затрат по займам."
-  },
   {
    "title": "AI worries weigh on ABB shares despite record orders",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOZkFHUzZvYlhRNk11cUJiYnJwbEpidDYtWGduV1FBM2dsdG5yRU42TzExRHJ0V2dHNHlzSGJad2w3MmxIakpPR2tZZFM0M1NsRHRYQ0d0WmdWVjVHNk13YzdzQ3dSaDN1cjJKN0VIQm83WEFKblpDVlFqUmRTYl9janBtVmswM0x0czMyMnRQZjRmdG5HQ25XODFWcGRiWE9JNWR4UHNzVUZmQTVXVHhzUmZMQ3ZPZw?oc=5",
@@ -10378,6 +10367,22 @@
     "BankOfRussia",
     "Russia"
    ]
+  },
+  {
+   "title": "China’s CMOC Sees Earnings Soar on Copper Rally and More Output",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-23/china-s-cmoc-sees-earnings-soar-on-copper-rally-and-more-output",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T13:01:55.665491+00:00",
+   "title_ru": "Китайская CMOC видит рост прибыли на медном ралли и увеличение объемов производства",
+   "lead": "Chinese miner CMOC Group Ltd.’s earnings for the first nine months of the year surged 68% as copper prices soared toward a record.",
+   "lead_ru": "Прибыль китайской горнодобывающей компании CMOC Group Ltd. за первые девять месяцев года выросла на 68%, поскольку цены на медь взлетели до рекордного уровня.",
+   "tags": [
+    "markets",
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-10-22",
@@ -16687,7 +16692,6 @@
    "0002083595-26-000010",
    "0001607879-26-000008",
    "0001834164-26-000005",
-   "0001437749-26-033305",
    "0001104659-26-118281",
    "0001455134-26-000023",
    "0001628280-26-066981",
@@ -16703,7 +16707,6 @@
    "0002066491-26-000013",
    "0001493152-26-048157",
    "0001973495-26-000007",
-   "0001213900-26-111795",
    "0001891037-26-000011"
   ],
   "errors": {
