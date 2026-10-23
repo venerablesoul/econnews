@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "f8b211d9133ea688": "2026-10-20T15:38:33.162294+00:00",
   "9696c93c0676198a": "2026-10-20T15:48:33.101023+00:00",
   "273649efb91554f4": "2026-10-20T15:48:33.101023+00:00",
   "288f3e28a271c114": "2026-10-20T15:48:33.101023+00:00",
@@ -1023,21 +1022,10 @@
   "578459f17e7a872a": "2026-10-23T15:36:55.903274+00:00",
   "978c62361dde3b71": "2026-10-23T15:36:55.903274+00:00",
   "420236f67deef8a8": "2026-10-23T15:36:55.903274+00:00",
-  "ced7e1f4b0922a38": "2026-10-23T15:36:55.903274+00:00"
+  "ced7e1f4b0922a38": "2026-10-23T15:36:55.903274+00:00",
+  "352b16183a5330e6": "2026-10-23T15:46:55.731081+00:00"
  },
  "recent": [
-  {
-   "title": "Citadel's Esposito on Bank Partnerships, Fixed Income Growth",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-20/citadel-s-esposito-on-bank-partners-fixed-income-growth-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T15:38:33.162294+00:00",
-   "title_ru": "Эспозито Citadel о банковском партнерстве и росте фиксированного дохода",
-   "lead": "Citadel Securities President Jim Esposito discusses the firm's relationship with banks, plans to grow in the fixed income market and his views on prediction markets with Bloomberg's Dani Burger on the sidelines of Citadel's…",
-   "lead_ru": "Президент Citadel Securities Джим Эспозито обсуждает отношения фирмы с банками, планы роста на рынке с фиксированным доходом и свои взгляды на рынки прогнозов с Дэни Бургер из Bloomberg в кулуарах Citadel…"
-  },
   {
    "title": "Treasuries Rise as Oil Retreats From Highest Levels in Weeks",
    "link": "https://www.bloomberg.com/news/articles/2026-10-20/treasuries-rise-as-oil-retreats-from-highest-levels-in-weeks",
@@ -10449,6 +10437,22 @@
    "score": 3,
    "ts": "2026-10-23T15:36:55.903274+00:00",
    "title_ru": "Лондонский девелопер приостанавливает крупный проект, поскольку жизнеспособность жилья находится в критической точке"
+  },
+  {
+   "title": "AI Tech Fears Push Global Credit Spreads to 17-Month High",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-23/ai-fears-push-global-credit-spreads-to-17-month-high-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T15:46:55.731081+00:00",
+   "title_ru": "Опасения AI Tech подталкивают глобальные кредитные спреды к 17-месячному максимуму",
+   "lead": "Metrics across global bond markets are signaling their biggest risk-off sentiment in more than a year, as a selloff in AI stocks and growing geopolitical tensions caused investors to seek out safe-haven assets.",
+   "lead_ru": "Показатели на мировых рынках облигаций сигнализируют о самом большом рискованном настроении за более чем год, поскольку распродажа акций ИИ и растущая геополитическая напряженность заставили инвесторов искать безопасные активы.",
+   "tags": [
+    "bonds",
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-22",
@@ -16746,7 +16750,10 @@
    "sec": true
   },
   "checked": "2026-10-23T15:11:55.713584+00:00",
-  "sec_seen": [],
+  "sec_seen": [
+   "0001096906-26-001611",
+   "0001096906-26-001612"
+  ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
   }
