@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "1847ae4b65e9119c": "2026-10-20T13:18:05.340891+00:00",
-  "bce3a4a3a90f392c": "2026-10-20T13:18:05.340891+00:00",
   "4b7af1d4a1539ce1": "2026-10-20T13:28:05.419248+00:00",
   "919722a05e50dd72": "2026-10-20T13:28:05.419248+00:00",
   "d2ca85c8c3c1f191": "2026-10-20T13:38:33.054427+00:00",
@@ -1012,18 +1010,10 @@
   "6b9147bd3d6ebad5": "2026-10-23T13:06:55.669422+00:00",
   "749be2200ebae302": "2026-10-23T13:06:55.669422+00:00",
   "b3f8ecebc55e9c28": "2026-10-23T13:11:55.742565+00:00",
-  "39ca58dcc7f27308": "2026-10-23T13:16:55.689375+00:00"
+  "39ca58dcc7f27308": "2026-10-23T13:16:55.689375+00:00",
+  "0b2bbf600bfcab07": "2026-10-23T13:21:55.671723+00:00"
  },
  "recent": [
-  {
-   "title": "Strategist Tom Lee says he’s buying the dip in AI stocks, and Cisco holds the key",
-   "link": "https://www.marketwatch.com/story/strategist-tom-lee-says-hes-buying-the-ai-stock-dip-and-cisco-holds-the-key-33233a9d?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-20T13:18:05.340891+00:00"
-  },
   {
    "title": "Fed to skip October but raise rates again in December, nearly all economists say",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOZUFYOUZFZXZ4UWJSN1J6RkRxM1lkdGJsUFZRZ2puQkFnRk9rczVQZF9iUS12amVsUl9ESnA4MmNlUmFuVnBVY3BoeVZoVWx1dmwtSWdCa2tGUUlXeXdWR0o0U2o5NHdUend5d2o3c1NoUlZTQUNyWFFEalBHY25QMVptcnFoRnZiSk1JVDFyb1VFYkg0NGRJaXhWemlUY3gxX3YxeVh0YkNMSHNQU21pWkc0OVQ?oc=5",
@@ -10387,6 +10377,19 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Axel Springer to Cut Telegraph Jobs After Buying UK Newspaper",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQUHg5TFl4WDZkTVNUdEJGMDVWSU83VmFpRFRIVjhrQzdFQWl5em1nTjVHZTlwVnlZd1h5d0E1d3ZVN0E4dUp4SHpfR3FGX1JfUzJwczl4cUhFd1FKLWRKMkxidjJnUjJ2YXlaNExLbDZlQzVmTUlsbWYycG9icUF6N2NxM1BWcVFRaUdnOVEyMzRPQVZ3dmQ2OHltbEV4OUxrMHpBTEF2U3htY24xcV9DTk93?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-23T13:21:55.671723+00:00",
+   "title_ru": "Аксель Спрингер сократит работу телеграфа после покупки британской газеты",
+   "tags": [
+    "jobs"
+   ]
   }
  ],
  "last_digest": "2026-10-22",
@@ -16687,7 +16690,6 @@
   "sec_seen": [
    "0001891751-26-000010",
    "0001193125-26-429389",
-   "0001944970-26-000029",
    "0001769628-26-000450",
    "0001193125-26-429381",
    "0002157445-26-000002",
