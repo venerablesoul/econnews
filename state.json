@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "9dca4127043ce76e": "2026-10-20T00:06:05.343240+00:00",
   "fdf4639479d06f53": "2026-10-20T00:26:05.177567+00:00",
   "04ef7e4a85ef3e7b": "2026-10-20T00:26:05.177567+00:00",
   "a8ce42daabd06ee7": "2026-10-20T00:26:05.177567+00:00",
@@ -939,22 +938,10 @@
   "b48abfc5fb875e91": "2026-10-22T23:50:20.311504+00:00",
   "3deb167b5ad56e13": "2026-10-22T23:50:20.311504+00:00",
   "c01f9ddbea5cb378": "2026-10-22T23:55:20.312538+00:00",
-  "57ce9caefcf1853a": "2026-10-23T00:00:20.367952+00:00"
+  "57ce9caefcf1853a": "2026-10-23T00:00:20.367952+00:00",
+  "e53a88575e3f4f15": "2026-10-23T00:15:20.326960+00:00"
  },
  "recent": [
-  {
-   "title": "Oil Wavers as Iran Threats Vie With Robust Gulf Crude Flows",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOdTg3VzlWcDBwMEpkaGtLOW0wN2VROGM3RDdVZ1JpY0toSUNqS0JVNHlmQkNTa0d3SEg1bkFjektMYUd0ZFVrM0JKcnY3bWo4QlViYlpUdXNRWTZEVTRfR20wZ0VLUjVKT1dVWUtVTjhSaTlqcFZsS1gyRC1kcXdfVHhGUUctV1FJVzNDUUUzRkp5dENkUTRsQmpuXzFRQQ?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-20T00:06:05.343240+00:00",
-   "title_ru": "Нефть колеблется, поскольку угрозы Ирана соперничают с мощными потоками нефти из Персидского залива",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "VC Investor Oza Says Public Markets Will Fix Bloated Valuations",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNSklsdjdqOUlPQ0hjVV9Mand5UkVNUEttOFM3MGFwRjJEd2FCME1sQUxtMWlJcnVSaHJ5bEp0U1FNSUd2NmdLcERjN3BSWlRyanFOd2E5Uk82UW1NdnZZWmlXZF9xNElDWUNoaFkwMjB2d3FJS2RkR0l2UC0wZUc4RWhaRjRvWHBsZlFpUmthT3RZSWxyOXcybzd5bUJLUFVtTnEzS0poWUlQM2U4SDQ3X2dVSnQ?oc=5",
@@ -9571,6 +9558,16 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "CodeCoin Launches the World's First \"Licensed Stablecoin + Quantum Encryption\" Visa Consumer Card During the IMF Annual Meetings",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPTkFBRHFHZ3ZjRUp2SWpoUkxnZmx2bmNjaXp0MDlxaFJPU3dvNkVsWEl4MDdaQlJyVDdtd1dIa3RyRVJCaEFSdUJCRmtseDdfSzM2Wk95QkpCemE3QkpVSDcwUzFvVS1EUTFSY2JrbzM2YmhDMWZ1bHVSaU5wdDZTSXU3aW1ZUGN2QWRqTXFIWkRFM0lwWnZOVVgxWjE5LUJ5LVk1WA?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-23T00:15:20.326960+00:00",
+   "title_ru": "CodeCoin запускает первую в мире потребительскую карту Visa «Лицензионная стабильная монета + квантовое шифрование» во время ежегодных собраний МВФ"
   }
  ],
  "last_digest": "2026-10-22",
@@ -9592,7 +9589,7 @@
   "Банк Англии": 0,
   "Bank of England": 0,
   "Bank of Russia": 0,
-  "ECB": 0,
+  "ECB": 1,
   "Fed": 0,
   "IMF": 0,
   "Kommersant": 0,
@@ -9622,7 +9619,7 @@
   "2026-10-22-21"
  ],
  "calendar": {
-  "fetched": "2026-10-22T18:14:40.201196+00:00",
+  "fetched": "2026-10-23T00:15:20.326960+00:00",
   "events": [
    {
     "title": "IMF Meetings",
