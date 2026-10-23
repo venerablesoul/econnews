@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "4a22d93052796cb7": "2026-10-20T12:38:05.308326+00:00",
-  "541c8da6096c4120": "2026-10-20T12:38:05.308326+00:00",
-  "19d042aa0fa525f9": "2026-10-20T12:38:05.308326+00:00",
-  "cc6bdf7350c3fd9b": "2026-10-20T12:38:05.308326+00:00",
   "5f72ac70bbe2d312": "2026-10-20T12:43:05.292513+00:00",
   "a75fbff66238ee8c": "2026-10-20T12:48:05.307762+00:00",
   "86ab768f823f4f23": "2026-10-20T12:58:05.292810+00:00",
@@ -1007,31 +1003,10 @@
   "a495d2cc033e59e1": "2026-10-23T12:31:55.664240+00:00",
   "8b606ddfe079283e": "2026-10-23T12:36:55.681447+00:00",
   "8afe37e143cd7309": "2026-10-23T12:36:55.681447+00:00",
-  "4c54aca1579a7883": "2026-10-23T12:36:55.681447+00:00"
+  "4c54aca1579a7883": "2026-10-23T12:36:55.681447+00:00",
+  "92c4766211c762d7": "2026-10-23T12:41:55.682510+00:00"
  },
  "recent": [
-  {
-   "title": "GM Narrows 2026 Profit Forecast, Boosts Share Buyback",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-20/gm-narrows-2026-profit-forecast-boosts-share-buyback-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T12:38:05.308326+00:00",
-   "title_ru": "GM сузила прогноз прибыли на 2026 год и увеличила выкуп акций",
-   "lead": "General Motors narrowed its full-year profit forecast amid softening sales, while also announcing it will buy back another $20 billion in stock.",
-   "lead_ru": "General Motors сузила прогноз прибыли на весь год на фоне снижения продаж, а также объявила, что выкупит акции еще на 20 миллиардов долларов."
-  },
-  {
-   "title": "UK's Capita postpones capital markets event to focus on pension scheme contract",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNVW5xNTZVVFoyczE2LU5kSEpUdHJTUzRqNnV0alZ1dS1zdUpsZzRpdEVpbHdvV2R2dzVTRFAwZklsOUdha1ViVC1kS3BMbmxzN0hWV0s5d0FlVkJrd1pwNjRGM2Z5amFmdjh4cGZ4cGlXY2Q4d01sT3p3QTZYa29GWlM5OXBEbmZYdWpwRFNSVFJKTEFGTWZTbzhyTE1JdS1xaHRZMHR3WHBWYWExRWRIX3RNQ2d1TEJNUHVjdEFCdzBMUU0?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-20T12:38:05.308326+00:00",
-   "title_ru": "Британская компания Capita откладывает мероприятие на рынках капитала, чтобы сосредоточиться на контракте по пенсионной схеме"
-  },
   {
    "title": "Nasdaq futures dip as oil prices climb, earnings loom",
    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOT2JsXzZ4YTVKcDJjNE9iTW42aU0wY0VOZXRtdDYxTzJTanBUOGZIT1FLSl9FVTNxQ1RpTVFSWHlsejgyR0Y1b3JQWXRlT0dEMjJPWWpXYlpfdFJQaHZKZG5KdUNMdW53NmlMd2RwUWJKWFB3dE9Xc2ZBbnRfalF3cWNzblhxTGJOTGlKYUh1a0FmWC1vaGQydWZXdTMzemJjSVg5NWZ0bw?oc=5",
@@ -10317,6 +10292,23 @@
    "score": 3,
    "ts": "2026-10-23T12:36:55.681447+00:00",
    "title_ru": "Ставка Blackstone на фишки привела к долговому буму, который перевернул кредиты"
+  },
+  {
+   "title": "Набиуллина назвала сроки снижения инфляции до 4%",
+   "link": "https://www.rbc.ru/rbcfreenews/6adb524b4e327f98dfd615e7",
+   "sources": [
+    "RBC"
+   ],
+   "score": 6,
+   "ts": "2026-10-23T12:41:55.682510+00:00",
+   "title_en": "Nabiullina called the timing of reducing inflation to 4%",
+   "lead": "Текущие темпы роста цен вернутся к целевым 4% в течение первого полугодия 2027 года, заявила председатель Банка России Эльвира Набиуллина на пресс-конференции по итогам заседания совета директоров регулятора.",
+   "lead_en": "The current rate of price growth will return to the target 4% during the first half of 2027, Bank of Russia Governor Elvira Nabiullina said at a press conference following a meeting of the regulator's board of directors.",
+   "tags": [
+    "BankOfRussia",
+    "inflation",
+    "Russia"
+   ]
   }
  ],
  "last_digest": "2026-10-22",
@@ -16648,7 +16640,8 @@
    "0001891037-26-000011"
   ],
   "errors": {
-   "senate": "HTTPError: HTTP Error 403: Forbidden"
+   "senate": "HTTPError: HTTP Error 403: Forbidden",
+   "sec": "TimeoutError: The read operation timed out"
   }
  }
 }
