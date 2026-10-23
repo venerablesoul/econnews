@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "5a9f3d538f01c590": "2026-10-20T14:03:33.246911+00:00",
-  "b45ec6a63e022a15": "2026-10-20T14:03:33.246911+00:00",
   "5ee46448c30c4918": "2026-10-20T14:08:33.223154+00:00",
   "7a9a68f200a3aaed": "2026-10-20T14:08:33.223154+00:00",
   "8dfbb5d651e1305c": "2026-10-20T14:08:33.223154+00:00",
@@ -1019,35 +1017,10 @@
   "4eea1de76c174cd7": "2026-10-23T13:51:55.678301+00:00",
   "3013dd8f2dafbf90": "2026-10-23T13:51:55.678301+00:00",
   "89386a8006b481bf": "2026-10-23T13:51:55.678301+00:00",
-  "d157be01a9026e49": "2026-10-23T14:01:55.752346+00:00"
+  "d157be01a9026e49": "2026-10-23T14:01:55.752346+00:00",
+  "61709f68fd91a5dd": "2026-10-23T14:06:55.769626+00:00"
  },
  "recent": [
-  {
-   "title": "FTSE 100 slips as banks weigh; defensive stocks limit decline",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPeUJnNTg4TVpXUEhLRF9SWXZHRlVMY181Nks1THF3VW1RdHRMSjJFR3J1VmJ5YWRaQ0lGRXFyemU5WkxZZzdlVWdwRFJuYXJSTk1PTkxDeldhYWs3VlBFaElmeGtMWm4xOFhkZ2VtMEJ3aVRlcmo0VlNaYUY1UklfcXR1ZWNwV2JvOWFrbmlPXzdRRTZsaFVjcGs3TnctMWtkWGIxZFowSUhKSGJFalNn?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-20T14:03:33.246911+00:00",
-   "title_ru": "Индекс FTSE 100 падает на фоне роста банков; защитные акции ограничивают снижение",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "Mapping the Market: Canadian dollar could make a comeback against US dollar",
-   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1sNlJtdGRFbmZQNS1RRmxjVlBsTEMxdjB2YllsWDJpRExVRVpONDRKeGd1WkRtNGh1N0pwa0VDZnRhbHdBMUJWQWVRZFFhNnBjV091NmJaeFBLWHJIaDgtM2tjLVMtZHlzT1RBZ1NmZllacDZxODZieWMxdHY?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-20T14:03:33.246911+00:00",
-   "title_ru": "Картирование рынка: канадский доллар может вернуться к доллару США",
-   "tags": [
-    "dollar"
-   ]
-  },
   {
    "title": "US Pending Home Sales Fall to Record Low as Mortgage Rates Rise",
    "link": "https://www.bloomberg.com/news/articles/2026-10-20/us-pending-home-sales-fall-to-record-low-as-mortgage-rates-rise",
@@ -10472,6 +10445,22 @@
    "tags": [
     "inflation"
    ]
+  },
+  {
+   "title": "US Consumer Sentiment Slips to Five-Month Low on Inflation Woes",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-23/us-consumer-sentiment-slips-to-five-month-low-on-inflation-woes",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 7,
+   "ts": "2026-10-23T14:06:55.769626+00:00",
+   "title_ru": "Потребительские настроения в США снизились до пятимесячного минимума из-за проблем с инфляцией",
+   "lead": "US consumer sentiment edged down to a five-month low in October as high prices and rising interest rates depressed morale.",
+   "lead_ru": "Потребительские настроения в США упали до пятимесячного минимума в октябре, поскольку высокие цены и рост процентных ставок снизили моральный дух.",
+   "tags": [
+    "rates",
+    "inflation"
+   ]
   }
  ],
  "last_digest": "2026-10-22",
@@ -16768,23 +16757,20 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-23T13:06:55.669422+00:00",
+  "checked": "2026-10-23T14:06:55.769626+00:00",
   "sec_seen": [
    "0001193125-26-429389",
-   "0001834164-26-000005",
+   "0001193125-26-429392",
    "0001493152-26-048181",
-   "0001769628-26-000450",
    "0001493152-26-048157",
    "0001510281-26-000375",
-   "0001973495-26-000007",
    "0001104659-26-118281",
-   "0000711377-26-000034",
    "0001193125-26-429381",
    "0001628280-26-066981",
    "0000764065-26-000117",
-   "0001193125-26-429600",
+   "0000711377-26-000034",
    "0001769628-26-000451",
-   "0001193125-26-429392"
+   "0001193125-26-429600"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
