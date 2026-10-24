@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "070f448103b223ea": "2026-10-21T17:26:32.437435+00:00",
-  "182e5aefeca9ddf9": "2026-10-21T17:31:32.266157+00:00",
   "70c3a84ff884142d": "2026-10-21T17:36:32.172855+00:00",
   "7426f0fa177666e0": "2026-10-21T17:36:32.172855+00:00",
   "9b689421c976fbc6": "2026-10-21T17:46:33.195194+00:00",
@@ -855,33 +853,6 @@
   "4134639cb2ca0247": "2026-10-24T17:25:19.687618+00:00"
  },
  "recent": [
-  {
-   "title": "Electronic Arts to Cut 400 Jobs, Shut Down BioWare",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQNFd6b2UybTFwd05pQ01rNDJpM2RLNjJvVy1VYW4zNWFVaVRveDBOQ1o3LVZ6azhKV1Jqc3BkdUkwQ0FMRVRtU0pUeWkyclhlYXlySHFPMldlNDZLTE4xNFZhcUVxSnNWel9DUE5oUHNFNWwydUVFM0wyLXRNOHBHZnhPRnpmem5pbTA1eUpNdkFKbGxrT21WaUVXcWtnNVZwdFE?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-21T17:26:32.437435+00:00",
-   "title_ru": "Electronic Arts сократит 400 рабочих мест и закроет BioWare",
-   "tags": [
-    "jobs"
-   ]
-  },
-  {
-   "title": "Price of Russian oil used for tax calculations jumps 60% above the budget level",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOM1VvUFdrcXA5VlZyOURwRi1jUmhOMGhBTDYyVVEwbWNZRjhTT0NnbDVIT1JpeW1FOU1PTjVfWGEwYUhkNzBGTnNSb0tWZWt3VzE0ZTJTU3pUV3hOOVhBdFlfajhkZ1lOTzE5V2N1RXlFVE5VYmQwZTFfdW4tZEpRSTVFSmVMLVN4MHZJQnhDa1F6SWdSVlEzWGhNWEZHUWZwNHk5RTNwdURIYUVxY3JjZlBZODdEUUtTRy1N?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-21T17:31:32.266157+00:00",
-   "title_ru": "Цена российской нефти, используемой для налоговых расчетов, подскочила на 60% выше бюджетного уровня",
-   "tags": [
-    "oil",
-    "Russia"
-   ]
-  },
   {
    "title": "Argentina’s Bond Selloff Blindsides Bulls as Election Fears Grow",
    "link": "https://www.bloomberg.com/news/articles/2026-10-21/argentina-s-bond-selloff-blindsides-bulls-as-election-fears-grow",
@@ -8440,7 +8411,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 1,
+  "Fed": 0,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
