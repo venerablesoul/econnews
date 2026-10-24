@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "10900f333e50b1e1": "2026-10-21T14:16:04.117757+00:00",
-  "2d5f1fb4a0930d56": "2026-10-21T14:16:04.117757+00:00",
-  "ab11fa921bb35bff": "2026-10-21T14:21:04.121242+00:00",
   "d9f7820b5ca4e5ae": "2026-10-21T14:26:04.124127+00:00",
   "0e11caacd88577a0": "2026-10-21T14:26:04.124127+00:00",
   "6e84fd1ac7d2a702": "2026-10-21T14:26:04.124127+00:00",
@@ -878,21 +875,10 @@
   "6e608799c836c550": "2026-10-24T13:24:23.620704+00:00",
   "54476157e2303b49": "2026-10-24T13:39:23.584574+00:00",
   "9b2c9c9f4e3a25e7": "2026-10-24T13:44:23.612990+00:00",
-  "2b9676d03b546fb7": "2026-10-24T14:04:23.551623+00:00"
+  "2b9676d03b546fb7": "2026-10-24T14:04:23.551623+00:00",
+  "c3d39e7016b29203": "2026-10-24T14:24:23.587293+00:00"
  },
  "recent": [
-  {
-   "title": "Netflix Eyes Sports to Drive Growth",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-21/netflix-eyes-sports-to-drive-growth-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-21T14:21:04.121242+00:00",
-   "title_ru": "Netflix смотрит на спорт, чтобы стимулировать рост",
-   "lead": "Netflix's sales growth is slowing, and investors want to know what comes next.",
-   "lead_ru": "Рост продаж Netflix замедляется, и инвесторы хотят знать, что будет дальше."
-  },
   {
    "title": "BofA’s Cabana Asks Fed on Rate Hikes ‘Why Wait Now?’",
    "link": "https://www.bloomberg.com/news/videos/2026-10-21/bofa-s-cabana-asks-fed-on-rate-hikes-why-wait-now-video",
@@ -8682,6 +8668,20 @@
    "score": 3,
    "ts": "2026-10-24T13:44:23.612990+00:00",
    "title_ru": "Почему успех искусственного интеллекта может нанести серьезный ущерб рынкам: Меррин говорит о деньгах"
+  },
+  {
+   "title": "Some Canadian Tariffs Exempted, Oil at Six-Month High, More",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQa1I1c3JrMEp6VmVmQjVVZ3dscktGYmhLdHVaSnB5Mi1tN2VFakdTOWVMMWxMbGhqTHo1VXVWLWM1TnV1QmRfSktkWVY3N2ZHd0F2RnYyakpkT3pWa2ltNzAxTlhXXy01LXA0MTRUUUFheGxvLTNWa1lOSV9SNzNRTkp5bzdXNTlNYzZobXFla09Zd0gtMi1wS3l2a0M4SzVVVnM4UDJiSUo?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-24T14:24:23.587293+00:00",
+   "title_ru": "Некоторые канадские тарифы освобождены, нефть на шестимесячном максимуме, больше",
+   "tags": [
+    "oil",
+    "tariffs"
+   ]
   }
  ],
  "last_digest": "2026-10-23",
