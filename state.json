@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "7501a8dff45a26c1": "2026-10-21T08:00:34.233163+00:00",
   "c89c45c477634a5e": "2026-10-21T08:05:34.285104+00:00",
   "b5347c1bb8d457c8": "2026-10-21T08:05:34.285104+00:00",
   "b9e3ddb4c71be7aa": "2026-10-21T08:05:34.285104+00:00",
@@ -949,7 +948,8 @@
   "d4573db42d171ffa": "2026-10-24T04:38:55.367358+00:00",
   "23d46987719eb79b": "2026-10-24T06:03:55.368268+00:00",
   "e951fa22fc6e54ce": "2026-10-24T06:58:55.373372+00:00",
-  "c7ae34fd8bc24510": "2026-10-24T07:18:55.361678+00:00"
+  "c7ae34fd8bc24510": "2026-10-24T07:18:55.361678+00:00",
+  "d5cf3c527fba997c": "2026-10-24T08:03:55.439947+00:00"
  },
  "recent": [
   {
@@ -9549,6 +9549,21 @@
    "lead_ru": "Акции швейцарских сверхзащищенных крупных компаний являются ярким пятном в бурный период для европейских фондовых рынков.",
    "tags": [
     "markets"
+   ]
+  },
+  {
+   "title": "Indonesia Begins Trimming Pipeline Gas Exports to Singapore",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-24/indonesia-begins-trimming-pipeline-gas-exports-to-singapore",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-24T08:03:55.439947+00:00",
+   "title_ru": "Индонезия начала сокращать экспорт трубопроводного газа в Сингапур",
+   "lead": "Indonesia is reducing natural gas exports to neighboring Singapore as President Prabowo Subianto seeks to shore up domestic supply and strengthen energy security for Southeast Asia’s largest economy.",
+   "lead_ru": "Индонезия сокращает экспорт природного газа в соседний Сингапур, поскольку президент Прабово Субианто стремится укрепить внутренние поставки и укрепить энергетическую безопасность крупнейшей экономики Юго-Восточной Азии.",
+   "tags": [
+    "gas"
    ]
   }
  ],
