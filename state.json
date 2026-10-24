@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c2d4adaee854cacc": "2026-10-21T10:10:34.255822+00:00",
-  "0cf4f3e68e0668f2": "2026-10-21T10:15:34.329030+00:00",
   "9d7a21e0d80746b8": "2026-10-21T10:20:34.245367+00:00",
   "1bb23c7d97e4d32f": "2026-10-21T10:25:34.239991+00:00",
   "c6f2a47c88e02a66": "2026-10-21T10:25:34.239991+00:00",
@@ -923,35 +921,11 @@
   "7aa2bbe4ea79e0cf": "2026-10-24T09:54:23.557498+00:00",
   "20965cfd92f8921b": "2026-10-24T09:54:23.557498+00:00",
   "dc0f411870ad50a6": "2026-10-24T09:59:23.512211+00:00",
-  "f4bfe123f53bac14": "2026-10-24T10:09:23.587716+00:00"
+  "f4bfe123f53bac14": "2026-10-24T10:09:23.587716+00:00",
+  "b5a8bf0780f7a4c8": "2026-10-24T10:19:23.569375+00:00",
+  "199e7c4d329f3e34": "2026-10-24T10:19:23.569375+00:00"
  },
  "recent": [
-  {
-   "title": "Sudan's currency tumbles to new low as war hammers economy",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxObWxDQTE0QkwwSENSbi1rVnNZX3M1TU5WN1FGS0drYmMyY1I2MldCcDdOVHE3a3VDbmhXckpia2k4MFVXbW9ZZHl4azhHRG5XTW90aXZWb29WYVNITHppMEhleVdORjAwUV8yblNTZUZpTmtrSHk1NkN6aGlVdV9VQkg5S2hhX3hobkFWSEdtaTdFSTVuLVMxMHZMckxrd1pYV3c?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-21T10:10:34.255822+00:00",
-   "title_ru": "Валюта Судана падает до нового минимума, поскольку экономика войны молотит"
-  },
-  {
-   "title": "French Bond Risk Hits 15-Year High on $110 Crude, Budget Concern",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-21/french-bond-risk-gauge-nears-160-basis-points-hits-15-year-high",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-21T10:15:34.329030+00:00",
-   "title_ru": "Риск французских облигаций достиг 15-летнего максимума на $ 110, что вызывает беспокойство по поводу бюджета",
-   "lead": "A gauge of French government bond risk hit the highest level in 15 years as rising energy prices exacerbated concern over the country’s fiscal outlook.",
-   "lead_ru": "Показатель риска французских государственных облигаций достиг самого высокого уровня за 15 лет, поскольку рост цен на энергоносители усугубил беспокойство по поводу фискальных перспектив страны.",
-   "tags": [
-    "oil",
-    "bonds"
-   ]
-  },
   {
    "title": "Ghana Plans to Unveil $10 Billion Economic Program to Drive Jobs",
    "link": "https://www.bloomberg.com/news/articles/2026-10-21/ghana-plans-to-unveil-10-billion-economic-program-to-drive-jobs",
@@ -9263,6 +9237,19 @@
    "score": 3,
    "ts": "2026-10-24T10:09:23.587716+00:00",
    "title_ru": "Гиганты красоты нацелены на «оземпическое лицо», поскольку бум лекарств от ожирения открывает новый рынок"
+  },
+  {
+   "title": "As winter nears, heating oil emerges as hurdle for Republicans in US Senate races",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPWk5FamNJdG52SWx6b2FvaS1zcEFZZUJkbl9Kdl9DS2g2bGZadUJTcUZoMy03VWNrRlMtVFNnc2Q5clJJNVZ5eldDendydEU5b1lndTQ5TXViQW9uN2tTN185S1FkWnV3UHZxZkwtZE5zb0hZYm43ZG5sMHpIYWNGejQ3OWFNSjBjYUZfeEVoN1FvNk9zMmNDdEFrczJ1OEpadEM2U2RmdmtMMy1xUl9DWTkwVWd1ZFNIZjZ2Wg?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-24T10:19:23.569375+00:00",
+   "title_ru": "С приближением зимы мазут становится препятствием для республиканцев на выборах в Сенат США",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-23",
