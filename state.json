@@ -1,12 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "8c1d0006cbcecdbb": "2026-10-21T13:11:03.685476+00:00",
-  "e96c739bcf7ea9f9": "2026-10-21T13:11:03.685476+00:00",
-  "a2aee0379a77f898": "2026-10-21T13:11:03.685476+00:00",
-  "a0ab9bc3cab2b64b": "2026-10-21T13:11:03.685476+00:00",
-  "fb6bfa1e76cd2e90": "2026-10-21T13:11:03.685476+00:00",
-  "6f36db6a8103128d": "2026-10-21T13:11:03.685476+00:00",
   "1bbe924a0deff514": "2026-10-21T13:26:03.687375+00:00",
   "ceadd9b78f1a865e": "2026-10-21T13:26:03.687375+00:00",
   "4cb6b526603cc1e6": "2026-10-21T13:46:03.696758+00:00",
@@ -896,77 +890,6 @@
   "52b039a2b9649dfe": "2026-10-24T12:59:23.657284+00:00"
  },
  "recent": [
-  {
-   "title": "Israel Pauses Interest Rate Cuts Ahead of Crucial Election",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-21/israel-pauses-interest-rate-cuts-ahead-of-crucial-election",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 9,
-   "ts": "2026-10-21T13:11:03.685476+00:00",
-   "title_ru": "Израиль приостанавливает снижение процентных ставок в преддверии важных выборов",
-   "lead": "Israel held interest rates steady after three consecutive cuts, just six days before the country faces one of its most consequential elections.",
-   "lead_ru": "Израиль сохранил процентные ставки на стабильном уровне после трех последовательных снижений, всего за шесть дней до того, как стране предстоят одни из самых важных выборов.",
-   "tags": [
-    "rates"
-   ]
-  },
-  {
-   "title": "Saudi crude oil exports hit five-month high in August, data shows",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNekotZUduQW5FQm0wOVZHbVlzT3U0OWxVdVhNNDRfUjZlVjlxZmNMWEh2M09yTGhwNUhSOGlGQWJDTkg4NDBxdVNSNC1oZWN5cldTZ0xBSzFlYTNXRjBUOVpuMlYzWUo1aWEyaDJSM2NlSURCSFhQWlRHallSdU43TUU0ckpkXzI0UWhINjZqbW9IU0FhcUZjdlhNbi15djVCSktpVEE0LXNXOGFITzluWDBTRQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 7,
-   "ts": "2026-10-21T13:11:03.685476+00:00",
-   "title_ru": "Экспорт сырой нефти из Саудовской Аравии в августе достиг пятимесячного максимума, свидетельствуют данные",
-   "tags": [
-    "oil"
-   ]
-  },
-  {
-   "title": "Indonesia Holds Rates in ‘Policy Mix’ to Support FX and Growth",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQVEdxajdIckE5ZmJNVEJISHVSaGhnMXVrX3JENHQ3MjE5UlU3QWQ3TVJuNGtGeDhCU2RTcC03RmtiS09LaEdSemVrODJvZGpqWnVqNlRYQ0theF9Sa19jQ2R2ZlBkVmJBamhkOWROcm5HUkNEYXBLMzIwUk5IMGI2dmZsaW42MmRPZmFLd3luQmZSVU1JQkM5VEpRa09QNFJncEZYdkdJcnhIU28?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-21T13:11:03.685476+00:00",
-   "title_ru": "Индонезия сохраняет ставки в «комплексе мер политики» для поддержки валютного курса и экономического роста"
-  },
-  {
-   "title": "Prabowo accuses MSCI of trying to intimidate Indonesia after market rout",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNRVJUeUxFejlDaTdtaHlGNW9mUklkVm5OZV9qSUJLUTRWSFpMbkdkOTF6WWt4TlNyYWNGem9Lc245Y280TTVvZXlHb0dTZGRaa0hIczlCeTc4NjZyeTRRSk9oNDVMUHQ2c3JVc3BLc2lPRWhqRXkyUTQzcWV0SDUybUF5TUZaX1Fud3R1UEMtbl92MUxhZVUxd3ZxYWZDTENqY2pvWC1FOXVmVk44bUYzR3B1WjJFRDFrZmxsdjR3?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-21T13:11:03.685476+00:00",
-   "title_ru": "Прабово обвиняет MSCI в попытке запугать Индонезию после разгрома рынка"
-  },
-  {
-   "title": "Abbott plans to spin off nutrition business, cuts 2026 sales growth view",
-   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNWGtxUVgyODRDVEJyUEYyVnA3Ti0xTTFBbFVfYW93YlhQMTlrUjQ3WllPczFzQTByR0lIMjdJX19Wc1lGRnI0bGtYaFFUU3JGVXBUWXdCcTZpbkp3UGMxQUtQRlNPRV9xQmx2akZCbzE0XzZqUUVocHVvYkVmN0pZN3VHb3hzd0YzTDZuZmhyVFJWc2d5NFB2RkpuQWhmWlFkckNLbUFXM3V4VjVaOUJSelByeW5jcGMxR1dwTGM0cF9UbnowVHR1aFktSmRleDZqd1E?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-21T13:11:03.685476+00:00",
-   "title_ru": "Abbott планирует выделить бизнес по производству продуктов питания и сократить прогноз роста продаж в 2026 году"
-  },
-  {
-   "title": "EXCLUSIVE: US aims to loan about a third of heating oil reserve in bid to tame prices",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNUzkxVzJaMlBtRGhfVVdxVERodk94eEllV09nNDlZVFV5MnZxMUttc2d5djloZTFuVEN6UUlfbFo4aGFNZk83RGQ4MzNZV0ZzMXU1RjM0bnhNelR3Tmd6cUNacEJjdko4dnd5Q081U3dheFNZVm9aVmM1aHc1a2xJaVZadUFEX1YyWm9XSTNOT29RYk1wckVnZllWLUU2aUFkclNYS3NQQmpkUnMxakhDcUNR?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-21T13:11:03.685476+00:00",
-   "title_ru": "ЭКСКЛЮЗИВ: США намерены предоставить взаймы около трети запасов печного топлива в попытке укротить цены",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "Too many Birkins on the market? The Hermes bag is losing its exclusivity",
    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBsNGFaajdZdzNUQWxZaFE0QU1qSTZZOVRPZVQ5cmhGRHVfbHJFY3E1QWdsMWZSb3RDLWc5MGJtNHFwWlFmdlBUckpJc0Q1QTBibHdjNldHZnRZOXV4d1RTS1R4NjV0M3h3ek4wbFFDUlo3bGtUc3FELU1qLWxNUQ?oc=5",
