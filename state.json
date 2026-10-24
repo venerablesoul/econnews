@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "8489a27146e68314": "2026-10-20T23:54:11.887987+00:00",
-  "fdfba29b79e793b5": "2026-10-20T23:54:11.887987+00:00",
-  "a729b4ad960094f5": "2026-10-20T23:54:11.887987+00:00",
   "6d94f68e1a2d0c44": "2026-10-21T00:04:12.038911+00:00",
   "ac47ceb68d4d626d": "2026-10-21T00:04:12.038911+00:00",
   "2e38911c36ee61f8": "2026-10-21T00:14:11.854609+00:00",
@@ -1010,32 +1007,12 @@
   "7f92f54da78ef813": "2026-10-23T23:43:26.729162+00:00",
   "774cede80e249aaf": "2026-10-23T23:43:26.729162+00:00",
   "4fdd3b8de219aeef": "2026-10-23T23:53:26.775354+00:00",
-  "b49867f1d412dd27": "2026-10-23T23:53:26.775354+00:00"
+  "b49867f1d412dd27": "2026-10-23T23:53:26.775354+00:00",
+  "f51858023887e730": "2026-10-23T23:58:26.761921+00:00",
+  "39ffa2a5c3ff5467": "2026-10-24T00:03:26.740984+00:00",
+  "e90b82ad866c7202": "2026-10-24T00:03:26.740984+00:00"
  },
  "recent": [
-  {
-   "title": "Dow leads Wall Street higher, investors focus on healthcare stocks",
-   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE11TE5pNy1NMi12NHdXMC1UZ2VSMWZmNzVxd3JNNUlyN0lxV0hhNWRIQTJiZ0JZRHNGVXhNVmt0V1l4WlFKQ0FfVkluOEhWNk5nNUE2OUV6c3hBakZYa25Bd2ZUWmw4T0VfYUw3RUNfbC1OSWhzem91ODRR?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-20T23:54:11.887987+00:00",
-   "title_ru": "Dow ведет Уолл-стрит вверх, инвесторы сосредоточены на акциях здравоохранения",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "Consumers 'under pressure,' could be issue for US economy, says CIO",
-   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5IWU1ibGJyVklwSWF5ckVJV0xmelA4NDBWVl94Y0hlVHN6Z2lWRG1xSFMyR09zb1VXLVJWR0JLRjNnWmg5NmpUVnF6X1RrRzV4ME14S1pCckpyeXl5czFjTWZjX1h2ZGc?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-20T23:54:11.887987+00:00",
-   "title_ru": "Потребители «под давлением» могут стать проблемой для экономики США, говорит директор по информационным технологиям"
-  },
   {
    "title": "S. Korea’s Export Boom Stays Strong Ahead of BOK Rate Decision",
    "link": "https://www.bloomberg.com/news/articles/2026-10-21/s-korea-s-export-boom-stays-strong-ahead-of-bok-rate-decision",
@@ -10345,6 +10322,16 @@
    "score": 4,
    "ts": "2026-10-23T23:53:26.775354+00:00",
    "title_ru": "Набор данных о глобальных фискальных действиях (GFA)"
+  },
+  {
+   "title": "Projections for 29-1240 - BLS Data",
+   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOd0ZEN1hoRTl1c0VxWDBCMjdDZ29VeTZNWmlfVlNlTEdiWGdPd04zVVBHQndQR0h2YjI5WWhZdUdnWnVLeFBueXl5SXppUXhSRkVKQWlfclQtNnpQRlVGUU9HcDFBd3BUV0hLQk1xakVjUkdfNVhPNFBpNEZjRXRwMUZn?oc=5",
+   "sources": [
+    "US Labor Statistics (BLS)"
+   ],
+   "score": 4,
+   "ts": "2026-10-24T00:03:26.740984+00:00",
+   "title_ru": "Прогнозы на 29-1240 - Данные BLS"
   }
  ],
  "last_digest": "2026-10-23",
@@ -12989,6 +12976,22 @@
     "date": "2026-10-22",
     "disclosed": "2026-10-23",
     "link": "https://www.sec.gov/Archives/edgar/data/1833511/000183351126000042/0001833511-26-000042-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "6d906f57c5e14703",
+    "ticker": "CRWD",
+    "company": "CrowdStrike Holdings, Inc.",
+    "who": "George Kurtz",
+    "role": "CEO",
+    "type": "sell",
+    "value": 4761854,
+    "shares": 20000,
+    "price": 238.09,
+    "plan": true,
+    "date": "2026-10-22",
+    "disclosed": "2026-10-23",
+    "link": "https://www.sec.gov/Archives/edgar/data/1778564/000177856426000191/0001778564-26-000191-index.htm"
    },
    {
     "src": "sec",
@@ -16621,22 +16624,6 @@
     "date": "2026-10-14",
     "disclosed": "2026-10-16",
     "link": "https://www.sec.gov/Archives/edgar/data/1783464/000110465926116445/0001104659-26-116445-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "efe83addc53f6a27",
-    "ticker": "BORR",
-    "company": "Borr Drilling Ltd",
-    "who": "Harvey Edward Snowling",
-    "role": "COO",
-    "type": "buy",
-    "value": 1473000,
-    "shares": 300000,
-    "price": 4.91,
-    "plan": false,
-    "date": "2026-10-14",
-    "disclosed": "2026-10-16",
-    "link": "https://www.sec.gov/Archives/edgar/data/2116137/000162828026066061/0001628280-26-066061-index.htm"
    }
   ],
   "docs": {
@@ -16675,13 +16662,12 @@
   },
   "checked": "2026-10-23T23:33:26.730203+00:00",
   "sec_seen": [
-   "0001062993-26-005533",
    "0001022079-26-000110",
-   "0001193125-26-430695",
+   "0001778564-26-000191",
    "0001193125-26-430728",
    "0001193125-26-430729",
    "0001100682-26-000151",
-   "0001022079-26-000109",
+   "0001493152-26-048311",
    "0001833511-26-000042",
    "0000904454-26-000537",
    "0001022079-26-000113",
@@ -16690,24 +16676,28 @@
    "0001022079-26-000111",
    "0000923120-26-000027",
    "0001193125-26-430732",
+   "0001493152-26-048310",
    "0001821737-26-000017",
-   "0001588894-26-000024",
    "0000923120-26-000025",
    "0000070858-26-000508",
    "0000904454-26-000534",
    "0001585521-26-000155",
+   "0001493152-26-048315",
    "0000904454-26-000535",
    "0001022079-26-000115",
    "0000923120-26-000026",
    "0000923120-26-000023",
+   "0002160363-26-000003",
    "0001022079-26-000116",
+   "0001493152-26-048314",
+   "0001493152-26-048312",
    "0000904454-26-000539",
    "0001193125-26-430727",
-   "0001993529-26-000005",
    "0001193125-26-430730",
+   "0001493152-26-048309",
    "0001585521-26-000154",
    "0000950103-26-016119",
-   "0000904454-26-000531",
+   "0001493152-26-048313",
    "0001585521-26-000153",
    "0001022079-26-000112",
    "0001231919-26-001497",
@@ -16716,6 +16706,7 @@
    "0000923120-26-000024",
    "0001193125-26-430731",
    "0001851564-26-000045",
+   "0001022079-26-000109",
    "0000950103-26-016120",
    "0000923120-26-000030"
   ],
