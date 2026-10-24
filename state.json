@@ -865,7 +865,8 @@
   "d06589c2d735c223": "2026-10-24T14:54:23.575642+00:00",
   "7367cef58a08b8a0": "2026-10-24T14:54:23.575642+00:00",
   "de2ce1014a77d03b": "2026-10-24T14:54:23.575642+00:00",
-  "e045eab72d86de7c": "2026-10-24T15:15:19.697562+00:00"
+  "e045eab72d86de7c": "2026-10-24T15:15:19.697562+00:00",
+  "b42198f5cf0a1421": "2026-10-24T15:40:19.675764+00:00"
  },
  "recent": [
   {
@@ -8536,6 +8537,18 @@
    "score": 4,
    "ts": "2026-10-24T14:54:23.575642+00:00",
    "title_ru": "Экономика Великобритании на данный момент бурно развивается, несмотря на промокшие потребители"
+  },
+  {
+   "title": "‘Total Meltdown’ in Riskiest Debt Unnerves Market: Credit Weekly",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-24/-total-meltdown-in-riskiest-debt-unnerves-market-credit-weekly",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-24T15:40:19.675764+00:00",
+   "title_ru": "«Полный обвал» на самом рискованном рынке долговых обязательств: Credit Weekly",
+   "lead": "It was a panicked message from a colleague that woke fund manager Ivelina Green at 5 a.m. on Thursday morning in New York: “Total meltdown.”",
+   "lead_ru": "Это было паническое сообщение от коллеги, которая разбудила управляющую фондом Ивелину Грин в 5 часов утра в четверг в Нью-Йорке: «Полный крах»."
   }
  ],
  "last_digest": "2026-10-23",
@@ -8560,7 +8573,7 @@
   "ECB": 0,
   "Fed": 0,
   "IMF": 0,
-  "Kommersant": 1,
+  "Kommersant": 0,
   "RBC": 0,
   "US Labor Statistics (BLS)": 0
  },
