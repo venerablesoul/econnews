@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "bb316b9959cf7f2b": "2026-10-21T16:16:03.731327+00:00",
-  "af3112366a2367d7": "2026-10-21T16:21:03.707310+00:00",
   "85428ecaa39b1ae3": "2026-10-21T16:31:03.753246+00:00",
   "21336a8511028457": "2026-10-21T16:36:03.721476+00:00",
   "9f05b3c3336c8fce": "2026-10-21T16:36:03.721476+00:00",
@@ -866,28 +864,6 @@
   "87ccab3bd4da7b41": "2026-10-24T16:05:19.740762+00:00"
  },
  "recent": [
-  {
-   "title": "SpaceX Revives AI Trade Ahead of Meta and Tesla Results",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-21/bloomberg-surveillance-10-21-2026-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-21T16:16:03.731327+00:00",
-   "title_ru": "SpaceX возрождает торговлю искусственным интеллектом в преддверии результатов Meta и Tesla",
-   "lead": "Jonathan Ferro, Lisa Abramowicz and Annmarie Hordern speak daily with leaders and decision makers from Wall Street to Washington and beyond.",
-   "lead_ru": "Джонатан Ферро, Лиза Абрамович и Аннмари Хордерн ежедневно беседуют с лидерами и лицами, принимающими решения, от Уолл-стрит до Вашингтона и за его пределами."
-  },
-  {
-   "title": "Meta Earnings Will Provide a Gut Check for Struggling AI Trade",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQVk5TUHZuRWljMFJjM0IzbEtLSjFQdVRZb3hMWHhkN0FjZG9CMnNOWFJQWFJMUnBOWlFCRnh1LWRUeXZJMHdDd2V5OGw5OGotU1hJamNXUmpHWHBLVHBHQUlEMkRsMDJkdjAxckRYVl9vZklkVlZ6WjgtSEJkZGlFQllTQkVDc0JvMzdZakFLSDB4ajFRTHFZQXJVYTNiU29ZQ3hPdWs2YVhKaXJOTmtYY1pxMA?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-21T16:21:03.707310+00:00",
-   "title_ru": "Мета-доходы станут проверкой для борьбы с торговлей искусственным интеллектом"
-  },
   {
    "title": "Iberdrola raises outlook again, sees higher profit growth through 2030",
    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPS0dwMHJTa2NRRkRLUDFmWVE1Z2JXdmRqOGdERXItcklpT19ETUNoUHBSZFdJSTBvVDlQWi1xR3I2czhPaFdvclZiUDBkcXRQbjdiNWtjTFBRdThIZW5GY1hKYlpRX2JCaFNJME9UYjYwLXFmTmlxQ25uRlMxLVBWemJSZW84ZTB6VVdaZnZFWkNoLVYtbVBtenA0bkRuRzNUMUt3b1lEZ2Y5VmdVZnJ6SWk2V1FRNVZodjZwMUVB?oc=5",
@@ -8576,7 +8552,7 @@
   "ECB": 0,
   "Fed": 0,
   "IMF": 0,
-  "Kommersant": 1,
+  "Kommersant": 0,
   "RBC": 0,
   "US Labor Statistics (BLS)": 0
  },
