@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "38447091af3f9e89": "2026-10-21T15:11:03.696694+00:00",
-  "e0f8cb6f89351760": "2026-10-21T15:11:03.696694+00:00",
-  "22768e4a3aa12c7f": "2026-10-21T15:16:03.719047+00:00",
   "c59d03ecfd24baba": "2026-10-21T15:26:03.679486+00:00",
   "038a62447871e394": "2026-10-21T15:26:03.679486+00:00",
   "225c44bd8c97a31f": "2026-10-21T15:46:03.728128+00:00",
@@ -869,19 +866,10 @@
   "3b6bdc5f5df22bf9": "2026-10-24T14:44:23.618583+00:00",
   "d06589c2d735c223": "2026-10-24T14:54:23.575642+00:00",
   "7367cef58a08b8a0": "2026-10-24T14:54:23.575642+00:00",
-  "de2ce1014a77d03b": "2026-10-24T14:54:23.575642+00:00"
+  "de2ce1014a77d03b": "2026-10-24T14:54:23.575642+00:00",
+  "e045eab72d86de7c": "2026-10-24T15:15:19.697562+00:00"
  },
  "recent": [
-  {
-   "title": "Producer Price Index up 6.3 percent in September; largest 12-month increase since December 2022",
-   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQZ0NDejhnTzZVT29aRjBQLVl6cE14ZmxXdXZzdW53RXhZUGpUNWlDMFJvWTVMTm5kdEM4NW5QbkhzSzl5eU1BRlUybGdRUGlKYUpaeWJOSV96V3RWOWw4enVyNGlGa2JkNTMzVGlJRE9RRndvMFFQNVNtMnY5NmhYUkZtOHJCbW9iajFWTUpYNXhLXzVHMExSMzd3Nm5DcVRrUWVGQkQ2M3QtOXoyY1A4YXpfOHNvSEtQS1NTRG93TWhxbHNFXzhxSWFsTTc?oc=5",
-   "sources": [
-    "US Labor Statistics (BLS)"
-   ],
-   "score": 4,
-   "ts": "2026-10-21T15:11:03.696694+00:00",
-   "title_ru": "Индекс цен производителей вырос на 6,3 процента в сентябре; самый большой 12-месячный рост с декабря 2022 года"
-  },
   {
    "title": "BOE’s Bailey Defends Speaking Out Over Trump Attacks on Powell",
    "link": "https://www.bloomberg.com/news/articles/2026-10-21/boe-s-bailey-defends-speaking-out-over-trump-attacks-on-powell",
@@ -8601,7 +8589,7 @@
   "ECB": 0,
   "Fed": 0,
   "IMF": 0,
-  "Kommersant": 0,
+  "Kommersant": 1,
   "RBC": 0,
   "US Labor Statistics (BLS)": 0
  },
@@ -14905,7 +14893,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-24T14:14:23.620094+00:00",
+  "checked": "2026-10-24T15:15:19.697562+00:00",
   "sec_seen": [
    "0001493152-26-048313",
    "0001022079-26-000115",
