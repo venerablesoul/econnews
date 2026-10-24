@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "2e38911c36ee61f8": "2026-10-21T00:14:11.854609+00:00",
-  "f31f6a70e0a8251d": "2026-10-21T00:14:11.854609+00:00",
-  "1a68152bc4e5e7cc": "2026-10-21T00:20:01.790139+00:00",
   "30627d71e684ceb7": "2026-10-21T00:25:00.361708+00:00",
   "f8a787c5a3dd7f23": "2026-10-21T00:30:00.362862+00:00",
   "f7f5dd190f2765b9": "2026-10-21T00:30:00.362862+00:00",
@@ -1012,46 +1009,6 @@
   "317c94c0117fa41d": "2026-10-24T00:13:26.794602+00:00"
  },
  "recent": [
-  {
-   "title": "S. Korea’s Export Boom Stays Strong Ahead of BOK Rate Decision",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-21/s-korea-s-export-boom-stays-strong-ahead-of-bok-rate-decision",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-21T00:14:11.854609+00:00",
-   "title_ru": "Экспортный бум Южной Кореи остается сильным в преддверии решения по ставке BOK",
-   "lead": "South Korea’s exports maintained strong growth in early October as booming global demand for artificial intelligence fueled semiconductor shipments, underscoring the economy’s resilience on the eve of the central bank’s…",
-   "lead_ru": "Экспорт Южной Кореи сохранил высокие темпы роста в начале октября, поскольку бум мирового спроса на искусственный интеллект стимулировал поставки полупроводников, подчеркивая устойчивость экономики накануне решения центрального банка…",
-   "tags": [
-    "rates"
-   ]
-  },
-  {
-   "title": "Japan’s Export Growth Stays Solid, Supported by Chips, Cars",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-21/japan-s-export-growth-stays-solid-supported-by-chips-cars",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-21T00:14:11.854609+00:00",
-   "title_ru": "Рост экспорта Японии остается стабильным, чему способствуют чипы и автомобили",
-   "lead": "Japan’s export growth remained solid in September, with shipments of chips and cars rising.",
-   "lead_ru": "В сентябре рост экспорта Японии оставался стабильным, при этом росли поставки чипов и автомобилей."
-  },
-  {
-   "title": "COMMENTARY: Trading Day: Oil reversal lifts spirits",
-   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPaU1PVWVqVTFDdTIyTFEwTzRRRm12eVZCd19RNnhPY2tKY29HOURqclNJNnJoeHM5TlBVaDI3SE5JdUROOEtTNXJyZm9NX29jcmVmYVQzZDdiMnllRnA1M3h4VzR5YjBuanlSaXBqUTUzdmE2THI4UGpULUVMNzRpOVRuY2hyQU9sYl94dXFSR1pKQzlKc0ZPNFNBd1A3RXpSSTIwR0hB?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-21T00:20:01.790139+00:00",
-   "title_ru": "КОММЕНТАРИЙ: Торговый день: разворот нефти поднимает настроение",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "RBA’s Hauser Says Australia Inflation Outlook ‘Materially Worse’",
    "link": "https://www.bloomberg.com/news/articles/2026-10-20/rba-s-hauser-says-australia-inflation-outlook-materially-worse",
@@ -10382,7 +10339,7 @@
   "2026-10-23-21"
  ],
  "calendar": {
-  "fetched": "2026-10-23T18:17:41.443541+00:00",
+  "fetched": "2026-10-24T00:18:26.759718+00:00",
   "events": [
    {
     "title": "IMF Meetings",
@@ -16679,7 +16636,6 @@
    "0001821737-26-000017",
    "0000923120-26-000025",
    "0000070858-26-000508",
-   "0000904454-26-000534",
    "0001493152-26-048317",
    "0001585521-26-000155",
    "0001493152-26-048315",
@@ -16693,6 +16649,7 @@
    "0001493152-26-048312",
    "0000904454-26-000539",
    "0001193125-26-430727",
+   "0001493152-26-048319",
    "0001193125-26-430730",
    "0001493152-26-048309",
    "0001585521-26-000154",
