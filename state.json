@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "69d7d337e4c4a008": "2026-10-21T05:10:00.354092+00:00",
-  "62b21b1d1145c526": "2026-10-21T05:10:00.354092+00:00",
-  "78fc93ace4c7ae7c": "2026-10-21T05:10:00.354092+00:00",
-  "d93d48077c0e70ec": "2026-10-21T05:15:00.356644+00:00",
-  "a5aa2d3479a46988": "2026-10-21T05:15:00.356644+00:00",
   "903d6fd99e99aa0f": "2026-10-21T05:20:00.374560+00:00",
   "da0b0da5c2d9c674": "2026-10-21T05:20:00.374560+00:00",
   "7b50493101aa3b40": "2026-10-21T05:20:00.374560+00:00",
@@ -997,53 +992,6 @@
   "d4573db42d171ffa": "2026-10-24T04:38:55.367358+00:00"
  },
  "recent": [
-  {
-   "title": "Bond selloff revives debate about euro zone banks' 'doom loop'",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNSE45YzVMT3FwR1hwcF9lMDBYS3pEYkozajNuaFFteWx0TlZIaVZjdzRQMkstbnhiUEhXVjlLU0lha011VmNwYmZWeTdVb1pUSHNKY3hOVkZXTzZJWndTakUyZVo3ejJNcXlJbldSMTBQTURvcDBvU2ZnYU1Tc202dXJ1VHlzZnlncTVCX284Nlg5ZE50b3hMNlBTZEl2TC13Q2FvOWFyYmZETDdDRjlSczZFbjZXZw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 7,
-   "ts": "2026-10-21T05:10:00.354092+00:00",
-   "title_ru": "Распродажа облигаций возобновила дебаты о «круговой петле» банков еврозоны",
-   "tags": [
-    "bonds",
-    "markets"
-   ]
-  },
-  {
-   "title": "Australian AI data centre operator NextDC shares shed 44% on revenue delay",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxONWJyOF9XbWhodGFsMWVRYUhMYzlCUDRMR2ZqRDdTdTFsOTJZWVdTcS1sRTg1UldzbkMyN1JTMkFmWkpJT0s0NkVnOWgyeXNlRnMwOVlXX3RueEt4SkJ6OTU2em5yZzBpS3o5Q3paWUk1WjJLNXhrUjQ4bGhUb2xjSHYzOTV4N3lreHREMkFBa0F3bVpJdE9VMHg4d0d4ZWJJbVFEX2xZM0xyOU9PMWItaXItTUVSWWlid003RExodnIxUFE?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-21T05:10:00.354092+00:00",
-   "title_ru": "Акции австралийского оператора дата-центров NextDC упали на 44% из-за задержки доходов",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "South Korea October 1-20 exports surge 105% on record chip sales",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxObDlCTlk1SjdBTm1wd2kxQ0FBaEU0dEdyUzhzenRzUTF4WFEzRmcwQUgydTVMVUpydW5VWVJTY3BIX3hvRElkX2t4ZUp1dVVuRmdlVmQtZzczTU9iaml6ZXgtbFE5dHFFbHdUcU55VjdBQ2ZYVVlvVjBEWkQwUmhFU2dfMWFxUERfajVIWUh0OE1tMXJGbmU5UVJrS2JzMEJmcHZLZ3d5Ty15RUJvWU9sb3lRU2pMZw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-21T05:15:00.356644+00:00",
-   "title_ru": "Экспорт Южной Кореи с 1 по 20 октября вырос на 105% благодаря рекордным продажам чипов"
-  },
-  {
-   "title": "Netflix co-CEO Sarandos says 'we could do better' after weak forecast",
-   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNQmJuWl84Zk9TanlERndybWRsaTVoaF95bUgzbldjVzJKNzcwZEFEUFh4Z0xVa2o0aGFSSEVJT3d2WENIeURzMWV3VUFTY2NxRWF2WHBjTVRjZURraFVHMkZ6M0pkOXJOb01FYW5OWTdkcmM3WkVFcXR5UC1QbDVqOFRIYWpsc1VxaUdhMENKa0I1S1ZWSk1BZ3BrYmRYVVQ5Q1FpRHBlY1NZbndHMVZnYjBfRnQ3cGktWkcwZ28tVDVQSFNqR1dZaFJGSTJ0b0U?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-21T05:15:00.356644+00:00",
-   "title_ru": "Со-генеральный директор Netflix Сарандос говорит, что «мы могли бы добиться большего» после слабого прогноза"
-  },
   {
    "title": "Belgian Government Facing Push to Sell 5.7% BNP Paribas Stake",
    "link": "https://www.bloomberg.com/news/articles/2026-10-21/belgian-government-facing-push-to-sell-5-7-bnp-paribas-stake",
