@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "430da0ff1e4d652d": "2026-10-21T09:55:34.257516+00:00",
-  "6525df70039b7f00": "2026-10-21T09:55:34.257516+00:00",
   "e97627acdf3f33bb": "2026-10-21T10:00:34.344518+00:00",
   "4b678de376dc0bb2": "2026-10-21T10:05:34.284177+00:00",
   "7106cb997b696307": "2026-10-21T10:05:34.284177+00:00",
@@ -926,34 +924,10 @@
   "13456efd79d0f9d3": "2026-10-24T09:13:55.356338+00:00",
   "6eec1ba637ef318c": "2026-10-24T09:23:55.365288+00:00",
   "7aa2bbe4ea79e0cf": "2026-10-24T09:54:23.557498+00:00",
-  "20965cfd92f8921b": "2026-10-24T09:54:23.557498+00:00"
+  "20965cfd92f8921b": "2026-10-24T09:54:23.557498+00:00",
+  "dc0f411870ad50a6": "2026-10-24T09:59:23.512211+00:00"
  },
  "recent": [
-  {
-   "title": "RBI Turns Away All Bids at Treasury Bill Sale Amid Bond Selloff",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-21/rbi-turns-away-all-bids-at-treasury-bill-sale-amid-bond-selloff",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-21T09:55:34.257516+00:00",
-   "title_ru": "RBI отклоняет все заявки на продажу казначейских векселей на фоне распродажи облигаций",
-   "lead": "India’s central bank rejected all bids at a sale of federal treasury bills on Wednesday amid a bond selloff that pushed borrowing costs to multi-year highs.",
-   "lead_ru": "Центральный банк Индии отклонил все заявки на продажу федеральных казначейских векселей в среду на фоне распродажи облигаций, которая подтолкнула стоимость заимствований к многолетним максимумам.",
-   "tags": [
-    "bonds",
-    "markets"
-   ]
-  },
-  {
-   "title": "В Венгрии задержали экс-главу Центробанка времен Орбана",
-   "link": "https://www.rbc.ru/economics/21/10/2026/6ad877beb37a7eccd28731cc",
-   "sources": [
-    "RBC"
-   ],
-   "score": 1,
-   "ts": "2026-10-21T09:55:34.257516+00:00"
-  },
   {
    "title": "Super Micro climbs after upbeat forecast shows robust AI demand",
    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPUEFHMHlEUHh1eC1kVDZtTVVJdnJNamlzUDBWVUtlbHd4RGFrbEM0MURQbUEtX0toNkIxTy1fNVBIMGdCeHlOcWVTUUJDaGtHWlRtZW9YeGZybFFKaGFTdXpLSm1zMk1MZS1aa0cxSl9jVlpXWnRCNndlcTQyWmliTVEybmc5SDVXRGdpd0VneThCRlV0YXZnbGpvbFo2d05BUF91UC1odHdCVDFM?oc=5",
@@ -9309,6 +9283,19 @@
    "score": 4,
    "ts": "2026-10-24T09:23:55.365288+00:00",
    "title_ru": "Финансовый мониторинг (октябрь 2026 г.) - Расходы"
+  },
+  {
+   "title": "Andy Burnham Tests Labour Loyalty With Budget Built for Bond Market",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQTjlMbGpqOHdpeFhGVjMyT3p3MWhDNThqRm9NcGI2WW93SkdBZjdfLVE2QjNMenFlNlRoTlBLU0hWMy02ZE9rZS1JbDAtSkZTYmhXUS1CLUxNUHpGcVhEb1JkUnY0WE9sWldZRm02bWRtUDNIUlRGMy02QkV1LUtlTUo5VE1xaWJMOHV5QU0xenR6eTFWdDc2QVdLZUg3dGQ5bVIzRXRhMmJDaC1zcGtBbnlnQ0JVNjVwemc?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-24T09:59:23.512211+00:00",
+   "title_ru": "Энди Бернем проверяет трудовую лояльность с помощью бюджета, созданного для рынка облигаций",
+   "tags": [
+    "bonds"
+   ]
   }
  ],
  "last_digest": "2026-10-23",
@@ -15637,7 +15624,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-24T08:58:55.359272+00:00",
+  "checked": "2026-10-24T09:59:23.512211+00:00",
   "sec_seen": [
    "0001231919-26-001497",
    "0001493152-26-048309",
@@ -15650,8 +15637,8 @@
    "0001851564-26-000045",
    "0001100682-26-000151",
    "0001022079-26-000111",
-   "0002160363-26-000003",
    "0001493152-26-048319",
+   "0002160363-26-000003",
    "0001585521-26-000153",
    "0001801661-26-000126",
    "0001022079-26-000110",
