@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "1bb9048db23f5b95": "2026-10-21T01:05:00.459153+00:00",
-  "9f1d865b62e1f49e": "2026-10-21T01:05:00.459153+00:00",
   "cbe73fede3f35147": "2026-10-21T02:05:00.399950+00:00",
   "724d772adda83e39": "2026-10-21T02:25:00.391040+00:00",
   "7a89f45d2dd07006": "2026-10-21T02:25:00.391040+00:00",
@@ -1004,38 +1002,10 @@
   "896638884bf04324": "2026-10-24T00:38:26.760452+00:00",
   "a81b8eb547dee505": "2026-10-24T00:43:28.292042+00:00",
   "c33c4848cf7b56dc": "2026-10-24T00:48:26.794313+00:00",
-  "e90a733dfbad3914": "2026-10-24T01:03:26.802175+00:00"
+  "e90a733dfbad3914": "2026-10-24T01:03:26.802175+00:00",
+  "33571b106aa298b2": "2026-10-24T01:13:26.771389+00:00"
  },
  "recent": [
-  {
-   "title": "UK Open to Discussing Chinese Car Tariffs Ahead of EU Summit",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-20/uk-open-to-discussing-chinese-car-tariffs-ahead-of-eu-summit",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-21T01:05:00.459153+00:00",
-   "title_ru": "Великобритания открыта для обсуждения китайских автомобильных тарифов в преддверии саммита ЕС",
-   "lead": "Business Secretary Jonathan Reynolds signaled he’s open to hitting Chinese electric vehicles with tariffs to win enhanced access to European markets, but would make the call based on UK needs not demands from the EU.",
-   "lead_ru": "Министр бизнеса Джонатан Рейнольдс дал понять, что готов ввести тарифы на китайские электромобили, чтобы получить расширенный доступ к европейским рынкам, но сделает этот призыв, исходя из потребностей Великобритании, а не требований ЕС.",
-   "tags": [
-    "China",
-    "tariffs"
-   ]
-  },
-  {
-   "title": "Japan shifting to wage-driven inflation phase, finance minister says",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOM0Fielo1REtWUHdnb2xnMDZvaHhmc1BWQjg4NS1YYlZJYWJLelVpTUQ1a2xuRk8yNkw2R1RiSE5kbVVEMW84ZjZMQmlxalZ3WG02ODJBb1BsSXR3b2tiUlNVc3dGV1ZWZF8yM2Z4SUhqRURzTGNqcC1BcHdacG1fV1NLQnpVOXZFTVRQWVdlWUdyV1k2Zmh2ZDlKWlNHZU03MDA0RjhZeDBwWnF6bFpQS1dzWmJYdEx0NTJJ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-21T01:05:00.459153+00:00",
-   "title_ru": "Япония переходит к фазе инфляции, обусловленной заработной платой, заявил министр финансов",
-   "tags": [
-    "inflation"
-   ]
-  },
   {
    "title": "Before Tera’s 95% Crash, Punches Were Thrown and Warnings Missed",
    "link": "https://www.bloomberg.com/news/articles/2026-10-21/before-tera-s-95-crash-punches-were-thrown-and-warnings-missed",
@@ -10280,7 +10250,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 0,
+  "Fed": 1,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
