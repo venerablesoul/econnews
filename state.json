@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "d569c064d30098a4": "2026-10-21T17:21:32.198691+00:00",
   "070f448103b223ea": "2026-10-21T17:26:32.437435+00:00",
   "182e5aefeca9ddf9": "2026-10-21T17:31:32.266157+00:00",
   "70c3a84ff884142d": "2026-10-21T17:36:32.172855+00:00",
@@ -852,22 +851,10 @@
   "89e81438e487d406": "2026-10-24T16:35:19.689718+00:00",
   "ca9364e330cb6191": "2026-10-24T16:40:19.853787+00:00",
   "fd58287d56aa19fc": "2026-10-24T16:50:19.687727+00:00",
-  "8316697ea077bbc5": "2026-10-24T17:10:19.672453+00:00"
+  "8316697ea077bbc5": "2026-10-24T17:10:19.672453+00:00",
+  "4134639cb2ca0247": "2026-10-24T17:25:19.687618+00:00"
  },
  "recent": [
-  {
-   "title": "Kalshi to Allow Leveraged Futures Bets With Bitcoin-Backed Loans",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOQWNtM2t3aWlnWjJMa3Y1SnE2dXFiYVZZTktlZzZXekxpenVsUVdKMktZRHM1Z1Y4ZWdXcHhzY19RVmw5X2NsaXk5NzJ6ZjNDaXhFQmpxZ3hpV01XZVNDWTJTMEQ5b2RZeEhMNkQzYzM2d3pkbTBzdTd1SEcyYlZUdk8xdk5JOHViMndzQUZHUDBRT1hxOUJEYnRmNWhqYzhxVjFHQ3FUVU1xS3FJak9rS2VsZG1mQQ?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-21T17:21:32.198691+00:00",
-   "title_ru": "Калши разрешит ставки на фьючерсы с кредитным плечом с помощью кредитов, обеспеченных биткойнами",
-   "tags": [
-    "crypto"
-   ]
-  },
   {
    "title": "Electronic Arts to Cut 400 Jobs, Shut Down BioWare",
    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQNFd6b2UybTFwd05pQ01rNDJpM2RLNjJvVy1VYW4zNWFVaVRveDBOQ1o3LVZ6azhKV1Jqc3BkdUkwQ0FMRVRtU0pUeWkyclhlYXlySHFPMldlNDZLTE4xNFZhcUVxSnNWel9DUE5oUHNFNWwydUVFM0wyLXRNOHBHZnhPRnpmem5pbTA1eUpNdkFKbGxrT21WaUVXcWtnNVZwdFE?oc=5",
@@ -8421,6 +8408,16 @@
    "tags": [
     "bonds"
    ]
+  },
+  {
+   "title": "Paris Police Use Tear Gas, Water Cannon to Disperse Protesters",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQbVFScDJ1SVVuME1jTXpQV21DNkVFSHJydi1ycHJQVEUzVS1GN0hEbUVVWlRaY25Zc2lsUXg1ci1NZDNWV3RDU0Njc194X0xXVkluZndYdWNnVTFkQVFjbmlDUF8wRU9UTEJDanJhREFNZDhRVk80dW5ndXhCazFMZm15a2FHNGJEZmRubmdKM1F4dGdSX0U2NlVidEdXSlphZzB0aGJGZ2w3UVBYSl85Ym5tQ2Q3dw?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-24T17:25:19.687618+00:00",
+   "title_ru": "Полиция Парижа применила слезоточивый газ и водометы для разгона демонстрантов"
   }
  ],
  "last_digest": "2026-10-23",
@@ -8443,7 +8440,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 0,
+  "Fed": 1,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
@@ -14771,7 +14768,6 @@
    "0000923120-26-000027",
    "0001193125-26-430728",
    "0002160363-26-000003",
-   "0001493152-26-048321",
    "0001398344-26-018733",
    "0000923120-26-000028",
    "0001585521-26-000153",
@@ -14786,6 +14782,7 @@
    "0000923120-26-000024",
    "0001022079-26-000114",
    "0000950103-26-016120",
+   "0001100682-26-000151",
    "0001231919-26-001497",
    "0001193125-26-430731",
    "0001801661-26-000126",
@@ -14795,7 +14792,7 @@
    "0001493152-26-048309",
    "0000950103-26-016119",
    "0001193125-26-430729",
-   "0001100682-26-000151",
+   "0001493152-26-048321",
    "0001493152-26-048319",
    "0001022079-26-000110"
   ],
