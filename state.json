@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "4873b7b987c62c66": "2026-10-21T07:10:34.274660+00:00",
-  "083d61aa6c00a439": "2026-10-21T07:10:34.274660+00:00",
   "fe199bee15f954fb": "2026-10-21T07:20:34.290482+00:00",
   "025b1d7c499b3b2e": "2026-10-21T07:20:34.290482+00:00",
   "62d6f4f9ede31549": "2026-10-21T07:20:34.290482+00:00",
@@ -955,35 +953,10 @@
   "996ee4c1f8d1d321": "2026-10-24T04:19:00.387165+00:00",
   "d4573db42d171ffa": "2026-10-24T04:38:55.367358+00:00",
   "23d46987719eb79b": "2026-10-24T06:03:55.368268+00:00",
-  "e951fa22fc6e54ce": "2026-10-24T06:58:55.373372+00:00"
+  "e951fa22fc6e54ce": "2026-10-24T06:58:55.373372+00:00",
+  "c7ae34fd8bc24510": "2026-10-24T07:18:55.361678+00:00"
  },
  "recent": [
-  {
-   "title": "CATL's HK Shares Drop By Record After Earnings Miss",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-21/the-china-show-10-21-2026-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-21T07:10:34.274660+00:00",
-   "title_ru": "Акции CATL в Гонконге упали на рекорд после промаха в прибыли",
-   "lead": "“Bloomberg: The China Show” is your definitive source for news and analysis on the world's second-biggest economy.",
-   "lead_ru": "«Bloomberg: The China Show» - ваш исчерпывающий источник новостей и аналитических материалов о второй по величине экономике мира.",
-   "tags": [
-    "markets",
-    "China"
-   ]
-  },
-  {
-   "title": "UK approves long-delayed Jackdaw gas field",
-   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOMVhqQWZMc3FMQ2lhTXRCMm92QVlKRlk3Y2lNenRKRTJmWWxHUlNWc3pTZWJyOU92aHlVTmtwLXVTeE01WFZxU3NpQ19Eazh6TkM5VWZaaUpqRFo5SFZJbmRHeFVvYkRiZGJUYUpza0ZyMWZ1NThlMFpEM1U5dlRZeUNJQVBqN0VpbTFscWViMFNHdm84T1FhMWxB?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-21T07:10:34.274660+00:00",
-   "title_ru": "Великобритания одобряет давно отложенное газовое месторождение Jackdaw"
-  },
   {
    "title": "UK inflation and borrowing top forecasts in blow to Healey ahead of Budget",
    "link": "https://www.ft.com/content/443ce2f3-ba36-4dc7-aa0b-a2bc593fa563?syn-25a6b1a6=1",
@@ -9619,6 +9592,21 @@
    "score": 4,
    "ts": "2026-10-24T06:03:55.368268+00:00",
    "title_ru": "Пьеро Чиполлоне: Интервью Milano Finanza"
+  },
+  {
+   "title": "Swiss Stocks Are Becoming a Haven From AI Fears Roiling Markets",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-24/swiss-stocks-are-becoming-a-haven-from-ai-fears-roiling-markets",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-24T07:18:55.361678+00:00",
+   "title_ru": "Швейцарские акции становятся убежищем от опасений ИИ на бурно растущих рынках",
+   "lead": "Shares of Switzerland’s ultra-defensive big companies are a bright spot in a tumultuous period for European equity markets.",
+   "lead_ru": "Акции швейцарских сверхзащищенных крупных компаний являются ярким пятном в бурный период для европейских фондовых рынков.",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-23",
