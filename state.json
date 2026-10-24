@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "70c3a84ff884142d": "2026-10-21T17:36:32.172855+00:00",
-  "7426f0fa177666e0": "2026-10-21T17:36:32.172855+00:00",
   "9b689421c976fbc6": "2026-10-21T17:46:33.195194+00:00",
   "6d99e04ccb6e825d": "2026-10-21T17:46:33.195194+00:00",
   "b6420a9ba1e1b7f0": "2026-10-21T17:46:33.195194+00:00",
@@ -850,37 +848,10 @@
   "ca9364e330cb6191": "2026-10-24T16:40:19.853787+00:00",
   "fd58287d56aa19fc": "2026-10-24T16:50:19.687727+00:00",
   "8316697ea077bbc5": "2026-10-24T17:10:19.672453+00:00",
-  "4134639cb2ca0247": "2026-10-24T17:25:19.687618+00:00"
+  "4134639cb2ca0247": "2026-10-24T17:25:19.687618+00:00",
+  "988ebacbfd134936": "2026-10-24T17:40:19.813241+00:00"
  },
  "recent": [
-  {
-   "title": "Argentina’s Bond Selloff Blindsides Bulls as Election Fears Grow",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-21/argentina-s-bond-selloff-blindsides-bulls-as-election-fears-grow",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-21T17:36:32.172855+00:00",
-   "title_ru": "Распродажа облигаций Аргентины ослепляет быков по мере роста опасений перед выборами",
-   "lead": "A rout in Argentina’s bonds has taken bullish investors by surprise, as a global emerging markets pullback compounds concerns over President Javier Milei’s reelection prospects and the country’s ability to meet billions in…",
-   "lead_ru": "Обвал аргентинских облигаций застал бычьих инвесторов врасплох, поскольку откат глобальных развивающихся рынков усугубляет обеспокоенность по поводу перспектив переизбрания президента Хавьера Милея и способности страны удовлетворить миллиарды долларов в…",
-   "tags": [
-    "bonds",
-    "markets"
-   ]
-  },
-  {
-   "title": "US Mortgage Rates Fall for First Time Since Early August",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-21/us-mortgage-rates-fall-for-first-time-since-early-august",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-21T17:36:32.172855+00:00",
-   "title_ru": "Ставки по ипотеке в США упали впервые с начала августа",
-   "lead": "US mortgage rates fell last week for the first time in more than two months, a small step down that did little to revive a moribund housing market.",
-   "lead_ru": "Ставки по ипотечным кредитам в США упали на прошлой неделе впервые за более чем два месяца, небольшой шаг вниз, который мало что сделал для оживления умирающего рынка жилья."
-  },
   {
    "title": "University of Chicago Professor on What Made the US Economy Thrive",
    "link": "https://www.bloomberg.com/news/videos/2026-10-21/odd-lots-what-made-the-us-economy-thrive-video",
@@ -8389,6 +8360,19 @@
    "score": 3,
    "ts": "2026-10-24T17:25:19.687618+00:00",
    "title_ru": "Полиция Парижа применила слезоточивый газ и водометы для разгона демонстрантов"
+  },
+  {
+   "title": "Houthis say they attacked Saudi oil sites, strikes reported on Yemen's Aden",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNU1JpTkpxd3RUSFgwb29mWkRuSmg5UFd5d1RMQkZMdE5tV3F4cEN6SXFOODhTQUZTbTZucHJGVnpxMWpGZVFuSXJzZ045Q0o1Uzh5NFNvVENFX1M2dFQ0NzRGYjUtWk9TYjBWcldGNS1hY21yS2IyOXBsX29hcFg5N2ZENUlIV2oyTE1OT3hJQUFaS1pjTHV3VnZUTkRWbVFnd0JqYV9iZmVwUW4xcGNVOUdUZmgtaWpkVGdsVzJ1SXR1U1hyWG5uWg?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-24T17:40:19.813241+00:00",
+   "title_ru": "Хуситы говорят, что они атаковали саудовские нефтяные объекты, об ударах сообщили в йеменском Адене",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-23",
@@ -14739,6 +14723,7 @@
    "0000923120-26-000027",
    "0001193125-26-430728",
    "0002160363-26-000003",
+   "0001493152-26-048321",
    "0001398344-26-018733",
    "0000923120-26-000028",
    "0001585521-26-000153",
@@ -14753,7 +14738,6 @@
    "0000923120-26-000024",
    "0001022079-26-000114",
    "0000950103-26-016120",
-   "0001100682-26-000151",
    "0001231919-26-001497",
    "0001193125-26-430731",
    "0001801661-26-000126",
@@ -14763,7 +14747,7 @@
    "0001493152-26-048309",
    "0000950103-26-016119",
    "0001193125-26-430729",
-   "0001493152-26-048321",
+   "0001100682-26-000151",
    "0001493152-26-048319",
    "0001022079-26-000110"
   ],
