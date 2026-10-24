@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "cbe73fede3f35147": "2026-10-21T02:05:00.399950+00:00",
   "724d772adda83e39": "2026-10-21T02:25:00.391040+00:00",
   "7a89f45d2dd07006": "2026-10-21T02:25:00.391040+00:00",
   "79426e95cda7f63c": "2026-10-21T02:25:00.391040+00:00",
@@ -1005,21 +1004,12 @@
   "e90a733dfbad3914": "2026-10-24T01:03:26.802175+00:00",
   "33571b106aa298b2": "2026-10-24T01:13:26.771389+00:00",
   "23e3aee6d09c0a9c": "2026-10-24T01:48:26.740407+00:00",
-  "f15d9a260b5cb4fc": "2026-10-24T01:48:26.740407+00:00"
+  "f15d9a260b5cb4fc": "2026-10-24T01:48:26.740407+00:00",
+  "22af173d59f6d7d3": "2026-10-24T02:08:26.768848+00:00",
+  "c92a00d423f23d8a": "2026-10-24T02:08:26.768848+00:00",
+  "bdb1624f3849f0e4": "2026-10-24T02:08:26.768848+00:00"
  },
  "recent": [
-  {
-   "title": "Before Tera’s 95% Crash, Punches Were Thrown and Warnings Missed",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-21/before-tera-s-95-crash-punches-were-thrown-and-warnings-missed",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-21T02:05:00.399950+00:00",
-   "title_ru": "До 95%-ного краха Теры были нанесены удары и пропущены предупреждения",
-   "lead": "Long before Tera imploded, suspicious trading had begun to alarm executives, investors and regulators",
-   "lead_ru": "Задолго до краха Tera подозрительная торговля начала тревожить руководителей, инвесторов и регулирующих органов."
-  },
   {
    "title": "Dollar on back foot as US yields, crude prices dip; Aussie buoyed by hawkish RBA",
    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQMmhtRnJCbDhIc08yUUUxQnBOU0tmczBNT3JOTjBKVy1LY0VCUW1pdk9hNW83QXdqM3pKOGthelR0NldvLUx6ZHdfUWpTTnpHOVhVeG9nR0tUWjVqNlUyT09jbVp3eUZDb1RLbjhLakZYUXZfcXNoVndFSG50cUw5alpFRHVpNWdUMWtxLWpXMUZsdFE1RVhtX0RWVkVLazFFNUlIZi1fcHRJUjZYY090OVBwaTZMUnJ4TmdtbWFR?oc=5",
@@ -10230,6 +10220,39 @@
     "oil",
     "markets"
    ]
+  },
+  {
+   "title": "Effectiveness of Monetary Policy Transmission in Morocco amid Reforms to the Monetary Policy Framework",
+   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQSk85QW51MEVrVDM3QXZqVjVJZFI4Q2FxUDU0emRMN3ZlLVNMZjlndE5ybkRIOFgwZ2NOUEZVYmY3eXktRTJoUDNWeUhwZ3Y1el9lYmlYbnBCbm1WRklJUVZ2U2ltSkNJU3FleGw5elFvcS1Cc1pCZGk5UEV0cUZRLWZOdTJNaTdzRGNLdk1JbUVfWVJYTG5VU2FLSUdGcEd3U2tOeUZ3U2h0V1ExZm00eFZ3d1hSU1RSVG55M0l1cnFDTnZKZl9PcjVzV3dfTE9LQnBkMHpQRTFDUmQwbjVDa2xnZw?oc=5",
+   "sources": [
+    "IMF"
+   ],
+   "score": 7,
+   "ts": "2026-10-24T02:08:26.768848+00:00",
+   "title_ru": "Эффективность передачи денежно-кредитной политики в Марокко на фоне реформ в рамках денежно-кредитной политики",
+   "tags": [
+    "rates"
+   ]
+  },
+  {
+   "title": "Ethiopia: Climate Policy Diagnostic; high level summary, Oct 2026",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOUnpqcDZ0RElUX2FadmR3V3o5c3R0d1hXTE1FbFh5dUs3LTExZXRlZkNoYUNJSjFoVXp6bGJ3cnB0NUJ2SmxvTU01YkZQNDVLeGtUR0lRSFVDaHY0Q2JQY3Q5RzUtMVlrNVdET1I0X0dTWi02VURNbF8xckgyQ2JtSjJfemVQdldkcF83RG9wbGU?oc=5",
+   "sources": [
+    "IMF"
+   ],
+   "score": 4,
+   "ts": "2026-10-24T02:08:26.768848+00:00",
+   "title_ru": "Эфиопия: Диагностика климатической политики; резюме высокого уровня, октябрь 2026 г."
+  },
+  {
+   "title": "Eni to sign up to $1.8 billion of infrastructure contracts for Cyprus gas project soon, WSJ reports",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQdUo0aXdzdG5qM2xRbmJwOG82bWpveHI5cHcwSFJuaEVhREpXWjVObmFMRDQ5V2RBd3ZCeWNNZVRVUVVtYnlyVG1kbzVQVUhremNTN2VoVW0zeXQxWVpiZzdFSGwwRTFnRnE2R2o1YXVKXy13UUNSR3RzMVZURHMwZ2tYT2tFT1ozVl8tTDlVMjBGdUZwa3dMMUVwOXVyY0l3djZRVmsxRkVnTG81YUkxdDl3QmVEYzNBc3RhQzNwcDRpUkVWdnc?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-24T02:08:26.768848+00:00",
+   "title_ru": "Eni в ближайшее время подпишет инфраструктурные контракты на сумму $ 1,8 млрд для газового проекта на Кипре, сообщает WSJ"
   }
  ],
  "last_digest": "2026-10-23",
