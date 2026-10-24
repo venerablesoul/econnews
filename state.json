@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "44f90c281dec97c7": "2026-10-21T20:51:33.002995+00:00",
-  "c2c7bb7a62e93bcc": "2026-10-21T20:51:33.002995+00:00",
   "c805d74bb39c2e4b": "2026-10-21T21:06:32.173006+00:00",
   "cdb921abc8b15a21": "2026-10-21T21:06:32.173006+00:00",
   "a9205fe6976c71ac": "2026-10-21T21:06:32.173006+00:00",
@@ -840,22 +838,11 @@
   "c16147f998ebcd7a": "2026-10-24T20:35:19.712331+00:00",
   "e58bc47889babc84": "2026-10-24T20:35:19.712331+00:00",
   "915383bd55cd1c17": "2026-10-24T20:45:47.251364+00:00",
-  "38a3f88e8f553dc8": "2026-10-24T20:45:47.251364+00:00"
+  "38a3f88e8f553dc8": "2026-10-24T20:45:47.251364+00:00",
+  "e3c9e38b78dc74cc": "2026-10-24T20:55:47.207380+00:00",
+  "720054f2c29aea9a": "2026-10-24T20:55:47.207380+00:00"
  },
  "recent": [
-  {
-   "title": "Bank of Israel holds interest rates steady a week before election",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQYjY0R2x3UTRHdVR2YnBrTDVSQTlfNzdyYllyRHkwbDJaTlNPdmI3V05sc19tMXBRS2NubkM2cU5oYzR0OE9TZ3pUcjd4VUphWFc2RUZsU2N0SGF6TGxuczVjOE1HUzVxWDlYRkMwV2k3UTlTZlFyd2RUcFJfSl9TLVBXSGRrSE5QRnpIcUxDbGtTNEZwR2ZDb0dpZnhKLVQzTm5CN3c3aGx2R19icHpLOE9ZYWs?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-21T20:51:33.002995+00:00",
-   "title_ru": "Банк Израиля держит процентные ставки стабильными за неделю до выборов",
-   "tags": [
-    "rates"
-   ]
-  },
   {
    "title": "Most BOJ Watchers Expect Next Interest Rate Hike in December",
    "link": "https://www.bloomberg.com/news/articles/2026-10-21/most-boj-watchers-expect-next-interest-rate-hike-in-december",
@@ -8260,6 +8247,22 @@
    "score": 4,
    "ts": "2026-10-24T20:45:47.251364+00:00",
    "title_ru": "Долговой фонд для развивающихся рынков American Century;INV (AEDVX.O) | Курс акций и последние новости"
+  },
+  {
+   "title": "Fed Set to Lead G7 Trio in Hawkish Rate Pause: Eco Week Ahead",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-24/fed-set-to-lead-g7-trio-in-hawkish-rate-pause-eco-week-ahead",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-24T20:55:47.207380+00:00",
+   "title_ru": "ФРС намерена возглавить тройку стран G7 в условиях приостановки процентных ставок: впереди экономическая неделя",
+   "lead": "The Federal Reserve and its peers in the euro zone and Japan will probably keep interest rates steady in the coming week, opting to bide their time before potential further hikes.",
+   "lead_ru": "Федеральная резервная система и ее коллеги в еврозоне и Японии, вероятно, сохранят процентные ставки на стабильном уровне на предстоящей неделе, решив выждать время перед возможным дальнейшим повышением.",
+   "tags": [
+    "Fed",
+    "rates"
+   ]
   }
  ],
  "last_digest": "2026-10-24",
@@ -14592,9 +14595,9 @@
   "sec_seen": [
    "0000923120-26-000025",
    "0001022079-26-000116",
+   "0000923120-26-000027",
    "0001493152-26-048309",
    "0001022079-26-000114",
-   "0001022079-26-000110",
    "0001493152-26-048313",
    "0001821737-26-000017",
    "0001778564-26-000191",
@@ -14607,7 +14610,6 @@
    "0001193125-26-430730",
    "0001100682-26-000151",
    "0001231919-26-001497",
-   "0000923120-26-000029",
    "0001022079-26-000115",
    "0001022079-26-000109",
    "0001585521-26-000153",
@@ -14616,6 +14618,7 @@
    "0001493152-26-048311",
    "0000923120-26-000030",
    "0001833511-26-000042",
+   "0001851564-26-000045",
    "0001193125-26-430728",
    "0000923120-26-000028",
    "0000923120-26-000023",
@@ -14633,10 +14636,10 @@
    "0002160363-26-000003",
    "0001398344-26-018733",
    "0001493152-26-048315",
-   "0001851564-26-000045",
+   "0000923120-26-000029",
    "0001493152-26-048314",
    "0001022079-26-000113",
-   "0000923120-26-000027"
+   "0001022079-26-000110"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
