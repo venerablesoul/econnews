@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "0d8b9dd61f422f0c": "2026-10-21T04:20:00.345026+00:00",
-  "c66aeb50a0f620f8": "2026-10-21T04:20:00.345026+00:00",
-  "6e842f839e79b07f": "2026-10-21T04:20:00.345026+00:00",
-  "506cb7108ca05e44": "2026-10-21T04:20:00.345026+00:00",
-  "5d6d3f10de8a1de6": "2026-10-21T04:20:00.345026+00:00",
   "1b11e202dd035230": "2026-10-21T04:30:00.382369+00:00",
   "694a754bcb980601": "2026-10-21T04:30:00.382369+00:00",
   "b46d7009e29fbbef": "2026-10-21T04:35:00.333468+00:00",
@@ -1006,75 +1001,6 @@
   "996ee4c1f8d1d321": "2026-10-24T04:19:00.387165+00:00"
  },
  "recent": [
-  {
-   "title": "Lane Says Greater Global Euro Use May Help ECB Control Inflation",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-21/lane-says-greater-global-euro-use-may-help-ecb-control-inflation",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 7,
-   "ts": "2026-10-21T04:20:00.345026+00:00",
-   "title_ru": "Лейн считает, что увеличение использования евро в мире может помочь ЕЦБ контролировать инфляцию",
-   "lead": "Wider global usage of the euro could help the European Central Bank hit its inflation target, according to Chief Economist Philip Lane.",
-   "lead_ru": "По мнению главного экономиста Филипа Лейна, более широкое глобальное использование евро может помочь Европейскому центральному банку достичь целевого показателя инфляции.",
-   "tags": [
-    "ECB",
-    "inflation"
-   ]
-  },
-  {
-   "title": "Philip R. Lane: Euro liquidity lines and the international monetary system",
-   "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261021~401d6c4b70.en.html",
-   "sources": [
-    "ECB"
-   ],
-   "score": 5,
-   "ts": "2026-10-21T04:20:00.345026+00:00",
-   "title_ru": "Филип Р. Лейн: Линии ликвидности в евро и международная валютная система"
-  },
-  {
-   "title": "Indonesia’s Top Stocks Face Outsized Selling, Says Allspring",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-21/indonesia-s-top-stocks-face-outsized-selling-says-allspring",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-21T04:20:00.345026+00:00",
-   "title_ru": "Allspring сообщает, что ведущие акции Индонезии сталкиваются с чрезмерными продажами",
-   "lead": "Indonesian banks and telecommunication stocks may face further losses, as the nation’s best-run companies struggle to stay immune from any broad selloff on the risk of a downgrade by MSCI Inc., according to Allspring Global…",
-   "lead_ru": "По данным Allspring Global, индонезийские банки и акции телекоммуникационных компаний могут столкнуться с дальнейшими потерями, поскольку наиболее управляемые компании страны изо всех сил пытаются избежать любой широкой распродажи из-за риска понижения рейтинга MSCI Inc.",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "Merdeka Gold Braves Indonesia Turmoil With $559 Million Offering",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-21/merdeka-gold-braves-indonesia-turmoil-with-559-million-offering",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-21T04:20:00.345026+00:00",
-   "title_ru": "Merdeka Gold выдерживает волнения в Индонезии, предложив 559 миллионов долларов",
-   "lead": "Indonesian miner PT Merdeka Gold Resources plans to raise about $559 million through a share sale, embarking on a major capital increase at a chaotic time for local markets.",
-   "lead_ru": "Индонезийская горнодобывающая компания PT Merdeka Gold Resources планирует привлечь около $559 млн за счет продажи акций, приступив к значительному увеличению капитала в хаотичное для местных рынков время.",
-   "tags": [
-    "gold"
-   ]
-  },
-  {
-   "title": "Six Charts That Explain the Forces Shaping China’s Economy",
-   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNb3ZnNVBMZm1Fak5PVkRhd2RESk9aRDF0UjFIdllJbDRwY2x1ck1XZm1GM2RkU21wYlpZMERfcC04QlJiS2FObTItRDYzbVItVklFSGRJQ0RfdF9wbjJ1X0cteUhkTm1FcDA3Vjlid1VSU3hDNEVfZ05pNXZMbmRVQWFfcFFrZTBEa0JfQU1BWUpfZzlSZHVVRUlTcUwxQnRwbG9CWnluUGwwNUpBUE1JMHZHX1RiQ0JLTWc?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-21T04:20:00.345026+00:00",
-   "title_ru": "Шесть диаграмм, объясняющих силы, формирующие экономику Китая",
-   "tags": [
-    "China"
-   ]
-  },
   {
    "title": "GM Embraces Hybrid Vehicles as Soaring Gas Prices Spur a Rethink",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOMDZ2N19XSjNkV3p1NlpPTWNZRVIyVHRQNEpVS2FVQm9fX3MtWUNCVmpyNTMtSnhIMzF3VVBxbmMzOWJPdkhEdEFqZ3BsdjVBREFqc3FTUWpoT092UGZNb1hjVkFRTzZ0NER6QjRMVmEzU2psejM3Y0hiOFJTb3RteWkxUGc3NVdKOF9tUzRZMWJ4czNxWldFYlN2N0RjaW1vTnJtSHFaU0pRTVpEVDlSZ3B3ajczdw?oc=5",
