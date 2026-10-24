@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "bee9e65933b7d06d": "2026-10-21T12:36:03.690382+00:00",
-  "3aea26094d3b2f61": "2026-10-21T12:36:03.690382+00:00",
-  "194a4f34fdc2663c": "2026-10-21T12:41:03.633595+00:00",
   "b359b6892b7e8d12": "2026-10-21T12:51:03.654660+00:00",
   "2ba06d9b185e3998": "2026-10-21T12:56:03.662759+00:00",
   "92005e5a6108e5b0": "2026-10-21T12:56:03.662759+00:00",
@@ -896,22 +893,11 @@
   "bc6de2973c2c5205": "2026-10-24T12:09:23.575661+00:00",
   "51a1255c651c1d05": "2026-10-24T12:24:23.638242+00:00",
   "5ad39845e4d34e98": "2026-10-24T12:24:23.638242+00:00",
-  "a28c4e4eefa7e4db": "2026-10-24T12:24:23.638242+00:00"
+  "a28c4e4eefa7e4db": "2026-10-24T12:24:23.638242+00:00",
+  "90161fe87ebcccca": "2026-10-24T12:44:23.595774+00:00",
+  "aa243b16d113dae6": "2026-10-24T12:44:23.595774+00:00"
  },
  "recent": [
-  {
-   "title": "South Africa looks to unlock China's cherry market as US relations droop",
-   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE95T016R2MzRE1HTWJvcFFXc01VQ3hmUml5dnFGXzZlNHotUzI3VEZCUXBib0ljbWtDRmIxUTNUNG5sWWoxSXQ4WVBHdFhEVGxkcVVkV1lkdDNESlZUOHpod25TYzVsV28?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-21T12:36:03.690382+00:00",
-   "title_ru": "Южная Африка надеется открыть китайский рынок вишни на фоне ухудшения отношений с США",
-   "tags": [
-    "China"
-   ]
-  },
   {
    "title": "Шохин спрогнозировал снижение ключевой ставки не раньше 2027 года // Шохин: ЦБ на заседании 23 октября сохранит ставку при более жестком сигнале",
    "link": "https://www.kommersant.ru/doc/9043910",
@@ -8867,6 +8853,29 @@
    "lead_ru": "Главный экономист Bloomberg Economics по развивающимся рынкам Зиад Дауд сообщил Bloomberg в эти выходные, что риск возобновления боевых действий между США, Израилем и Ираном растет, что помогает поддерживать высокие цены на нефть, даже несмотря на потоки энергоносителей...",
    "tags": [
     "oil"
+   ]
+  },
+  {
+   "title": "AI Preparedness Index (AIPI) - Regulation and Ethics",
+   "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA4bGIxNTdzd2xsRld2WFFkVEpyRDhUUS11VHBYcUIzUHR0dU1Ud3labFBrclRJZ2Qtc2xMalU2Qy1iWnQ2aXpJXzh0ZzJkRlFHREpoaENra19lMUNJR25NUg?oc=5",
+   "sources": [
+    "IMF"
+   ],
+   "score": 4,
+   "ts": "2026-10-24T12:44:23.595774+00:00",
+   "title_ru": "Индекс готовности ИИ (AIPI) - Регулирование и этика"
+  },
+  {
+   "title": "North Korea's Kim crosses new bridge into China as trade ties warm",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOOTlLSVZQYy0tZFRieEJTYXU0WnM4NElhS29hMlJ4R3g1Mzl3Wmo4TzFRRlE1QXhsQ09SQWV0Uzg5LUdSdWpfdjI4LU1YSXRqY3pOSTEzbTA0cjdHM2MzVUpqbUdOSm13ZGZZdHN3VWlfbm1laGVQSmEtRklGaHhDejhUT2F4MUktamhqTS13ZHpNaERZekprMkp0TWdyX0t4bXhsOGJ1bUwzZw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-24T12:44:23.595774+00:00",
+   "title_ru": "Ким Чен Ын пересекает новый мост в Китай, поскольку торговые связи теплые",
+   "tags": [
+    "China"
    ]
   }
  ],
