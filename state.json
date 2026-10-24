@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "a8b7bb4571618653": "2026-10-21T18:11:32.992183+00:00",
-  "454d26b8b8195cbf": "2026-10-21T18:11:32.992183+00:00",
-  "615904c4b8cc6abd": "2026-10-21T18:11:32.992183+00:00",
   "4d67d46f24799935": "2026-10-21T18:21:32.163755+00:00",
   "e7d863f7a41b5ccd": "2026-10-21T18:36:32.193652+00:00",
   "f1c7fc62f633b4a8": "2026-10-21T18:56:32.171653+00:00",
@@ -851,29 +848,6 @@
   "06657573b8574874": "2026-10-24T18:05:19.707462+00:00"
  },
  "recent": [
-  {
-   "title": "Brookings paper offers broad plan to shrink Fed balance sheet",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQOWJYd0NERVlESGhjUzBFQm1tQkdDMVZtbnZxXzByQkxIS29abXpTRXZqYXhyamV2b19FbUpCR2RoWW9aUGVvenh5Q20tVWpWQzhRYnQzTk1iaEtQZWxPTnJUZU5kUHR2NUxvMHlLS1JRR0g2dFktUEhCbDVvTGRUU2YybEk5SzFYRjRpZjFqUVhKQ0JQaElseUI2QjhGMmY1R3d1NGZxcmYwMVlyQ1dvWQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-21T18:11:32.992183+00:00",
-   "title_ru": "В документе Брукингса предлагается обширный план по сокращению баланса ФРС",
-   "tags": [
-    "Fed"
-   ]
-  },
-  {
-   "title": "Europe's financial regulators query Google over cloud outage that hit banks",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOUzllb1hMZlRLZ3ZfSFFIOGpJQXR1bG0ycmt2dElIZ25fck94R08tWmxRaXlGVUUwWXNjUF9wNEREWU00dEtEZnBMcV8tVmhZb3JnUmlvVE9icm13azlSZWRmTm1oMFBBa3BvQVNTNzh3ZUxoUDBpN09ZclN0Z0pRdEExWEdSdXBSRGNsbVBJSEx5OE9QLVVySll5MXZ5M0VMcFI1VWZKcExhWWVVY0NpRE1sOWJ2LWgzaWN6eHFhRVJzalE1Mmc?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-21T18:11:32.992183+00:00",
-   "title_ru": "Европейские финансовые регуляторы запрашивают Google из-за сбоя в работе облака, который ударил по банкам"
-  },
   {
    "title": "Kuwait Petroleum CEO Says Oil Output Tops 2 Million Barrels a Day",
    "link": "https://www.bloomberg.com/news/videos/2026-10-21/kuwait-petroleum-producing-2m-barrels-a-day-ceo-says-video",
@@ -8392,7 +8366,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 0,
+  "Fed": 1,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
