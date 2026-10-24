@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "64fa5d29626df040": "2026-10-21T23:11:59.986478+00:00",
-  "2fb0d4accb28d9c5": "2026-10-21T23:11:59.986478+00:00",
-  "612f4e0253bd1383": "2026-10-21T23:11:59.986478+00:00",
-  "fd7b15fcce432406": "2026-10-21T23:11:59.986478+00:00",
-  "792442693243bf5d": "2026-10-21T23:16:59.949585+00:00",
   "a8275e02227b60ee": "2026-10-21T23:21:59.996400+00:00",
   "8f11102a569ae78d": "2026-10-21T23:21:59.996400+00:00",
   "83c1140d69e669f3": "2026-10-21T23:21:59.996400+00:00",
@@ -821,49 +816,11 @@
   "b0af22f2a2d8787a": "2026-10-24T22:40:47.242884+00:00",
   "82edbfdb4317c9a2": "2026-10-24T23:05:47.316200+00:00",
   "d3be7a472d9b1534": "2026-10-24T23:05:47.316200+00:00",
-  "5ad55d0cc3aed1be": "2026-10-24T23:10:47.550141+00:00"
+  "5ad55d0cc3aed1be": "2026-10-24T23:10:47.550141+00:00",
+  "40d8a2a831fa9740": "2026-10-24T23:15:47.233944+00:00",
+  "f06838f075fde3da": "2026-10-24T23:20:47.267571+00:00"
  },
  "recent": [
-  {
-   "title": "Philippines to Lift Key Rate as El Niño Adds to Inflation Threat",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-21/philippines-to-lift-key-rate-as-el-nino-adds-to-inflation-threat",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-21T23:11:59.986478+00:00",
-   "title_ru": "Филиппины повысят ключевую ставку, поскольку Эль-Ниньо усиливает инфляционную угрозу",
-   "lead": "The Philippine central bank is on track to raise the key rate for a fourth consecutive meeting as a severe El Niño dry spell threatens to further fan resurgent inflation.",
-   "lead_ru": "Центральный банк Филиппин находится на пути к повышению ключевой ставки уже четвертое заседание подряд, поскольку серьезный засушливый период Эль-Ниньо угрожает дальнейшей инфляцией.",
-   "tags": [
-    "rates",
-    "inflation"
-   ]
-  },
-  {
-   "title": "APA to Build Major Australia Gas Pipeline to Avert Shortfalls",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-21/apa-to-build-major-australia-gas-pipeline-to-avert-shortfalls",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-21T23:11:59.986478+00:00",
-   "title_ru": "APA построит крупный газопровод в Австралии, чтобы избежать перебоев",
-   "lead": "APA Group reached a final investment decision on a natural gas pipeline between Queensland and New South Wales states, which could help alleviate projected shortfalls in the more heavily populated southeast of Australia.",
-   "lead_ru": "APA Group приняла окончательное инвестиционное решение по газопроводу между штатами Квинсленд и Новый Южный Уэльс, который может помочь смягчить прогнозируемый дефицит на более густонаселенном юго-востоке Австралии.",
-   "tags": [
-    "gas"
-   ]
-  },
-  {
-   "title": "Meta’s stock rises as investors glimpse an opportunity that could dwarf the ad business",
-   "link": "https://www.marketwatch.com/story/metas-stock-rises-as-investors-glimpse-an-opportunity-that-could-dwarf-the-ad-business-89369c6c?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-21T23:11:59.986478+00:00"
-  },
   {
    "title": "Santos Posts Record Quarterly Output on New LNG, Oil Projects",
    "link": "https://www.bloomberg.com/news/articles/2026-10-21/santos-posts-record-quarterly-output-on-new-lng-oil-projects",
@@ -8073,6 +8030,21 @@
    "score": 4,
    "ts": "2026-10-24T22:40:47.242884+00:00",
    "title_ru": "Джуд Нволуне, Eterna Oil & Gas PLC: профиль и биография",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "Rosebank: Life on the oil field at the centre of a political storm",
+   "link": "https://www.bbc.co.uk/news/articles/cqy8ljkle97ro?at_medium=RSS&at_campaign=rss",
+   "sources": [
+    "BBC"
+   ],
+   "score": 3,
+   "ts": "2026-10-24T23:20:47.267571+00:00",
+   "title_ru": "Rosebank: Жизнь на нефтяном месторождении в центре политического шторма",
+   "lead": "Scotland editor James Cook finds out what life is like on board a ship in an untapped oil field awaiting its fate.",
+   "lead_ru": "Шотландский редактор Джеймс Кук узнает, какова жизнь на борту корабля на неиспользованном нефтяном месторождении, ожидающем своей судьбы.",
    "tags": [
     "oil"
    ]
