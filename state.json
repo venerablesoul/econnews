@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e087efbd2b8b0b2e": "2026-10-21T11:10:34.267441+00:00",
   "6f4a1c500524c38f": "2026-10-21T11:16:03.634244+00:00",
   "853c6a887266f9fe": "2026-10-21T11:16:03.634244+00:00",
   "e338e4ded9c53283": "2026-10-21T11:26:03.639596+00:00",
@@ -915,24 +914,10 @@
   "09b29eacb314fe99": "2026-10-24T10:29:23.597848+00:00",
   "1ea1decc178404d8": "2026-10-24T10:34:23.556560+00:00",
   "0bc5eeb12e462f1f": "2026-10-24T10:49:23.561618+00:00",
-  "4d9d8233dcfdb17d": "2026-10-24T10:59:23.606303+00:00"
+  "4d9d8233dcfdb17d": "2026-10-24T10:59:23.606303+00:00",
+  "9a5560ba7dce5032": "2026-10-24T11:14:23.633131+00:00"
  },
  "recent": [
-  {
-   "title": "Pound gains against dollar, euro as inflation data cements future rate hike bets",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxONEtnY2tIVF9OZTdBSTNUOHpQWjFKYzlBd1JYdEx6eXBBTGV3M0U1RGVQT08tT1o2NEdXTzUzZ3d4eGV4OVN2Ukc3c0h1RjRMNy02VHNpd3hiSl9fcFNnV2tyUjNyaVpzeWc0akVmVk94Z3VTU3VFZi1TMlp6S2xUR2habU5BYkVhWWtoMVhCNGlDMmFCa245OUJPWlFvRl9PcFdFdWo4VGEwVFNPalVITEkzYWZtT3pBMUNrT0hR?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 10,
-   "ts": "2026-10-21T11:10:34.267441+00:00",
-   "title_ru": "Фунт растет по отношению к доллару и евро, поскольку данные по инфляции укрепляют ставки на будущее повышение ставок",
-   "tags": [
-    "rates",
-    "inflation",
-    "dollar"
-   ]
-  },
   {
    "title": "COMMENTARY: China uses crude stockpiles, but rising oil imports may curtail draws",
    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQMXlFU3FvdEtaU3AxTmhWTm5iUHV1R1pLeWhhM3JFR0FUSm9ua3pod2x4WUdUWHZXMW5Mc1FaY0RMakFzNkN3akV5OE0tODVVRHp4QWlMS0ZiUTg3NkhuODdNVkdkR3RHRGh0Mkhaa2QzNl9aUEl0bVlvSWRoTjJfTnhxeEVpU0pzbE5lcjFUS0R5b2xTSTB2ZkdGX1VtcUxyOTRhejdLWmxVUmRFTElxV01JZXUtaUZWb2s1cTNlM1hyZ1ltUF82NkxVV3RZdw?oc=5",
@@ -9123,6 +9108,21 @@
    "score": 4,
    "ts": "2026-10-24T10:59:23.606303+00:00",
    "title_ru": "Индонезия сократила экспорт трубопроводного газа в Сингапур примерно на 9%"
+  },
+  {
+   "title": "Barclays ‘House of Fixed Income’ Pins Future Growth on Equities",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-24/barclays-house-of-fixed-income-pins-future-growth-on-equities",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-24T11:14:23.633131+00:00",
+   "lead": "The house built by fixed income is facing an overhaul. Barclays Plc is showing it can do more for clients than trade bonds and arrange debt deals.",
+   "lead_ru": "Дом, построенный с фиксированным доходом, подвергается капитальному ремонту. Barclays Plc показывает, что может сделать для клиентов больше, чем торговые облигации и организация долговых сделок.",
+   "tags": [
+    "bonds",
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-23",
@@ -15464,8 +15464,8 @@
    "0001851564-26-000045",
    "0001100682-26-000151",
    "0001022079-26-000111",
-   "0001493152-26-048319",
    "0002160363-26-000003",
+   "0001493152-26-048319",
    "0001585521-26-000153",
    "0001801661-26-000126",
    "0001022079-26-000110",
