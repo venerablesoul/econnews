@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e7d7745794a4703a": "2026-10-21T06:00:34.275946+00:00",
   "3a986a97d5618d62": "2026-10-21T06:05:34.290571+00:00",
   "8a1fd4933784d72c": "2026-10-21T06:05:34.290571+00:00",
   "ee9d45913a487258": "2026-10-21T06:05:34.290571+00:00",
@@ -977,24 +976,10 @@
   "5c966f9cfd30277c": "2026-10-24T04:08:26.748587+00:00",
   "66adc73f3a49d100": "2026-10-24T04:08:26.748587+00:00",
   "996ee4c1f8d1d321": "2026-10-24T04:19:00.387165+00:00",
-  "d4573db42d171ffa": "2026-10-24T04:38:55.367358+00:00"
+  "d4573db42d171ffa": "2026-10-24T04:38:55.367358+00:00",
+  "23d46987719eb79b": "2026-10-24T06:03:55.368268+00:00"
  },
  "recent": [
-  {
-   "title": "Cameroon’s Bonds Plunge as Investors Worry About a Future Without Biya",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-21/cameroon-s-bonds-plunge-as-investors-worry-about-a-future-without-biya",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-21T06:00:34.275946+00:00",
-   "title_ru": "Облигации Камеруна падают, поскольку инвесторы беспокоятся о будущем без Бийи",
-   "lead": "Cameroon is getting hammered by bond investors after a credit downgrade. Having a nonagenarian leader with no public succession plan doesn’t help.",
-   "lead_ru": "Камерун испытывает давление со стороны инвесторов в облигации после понижения кредитного рейтинга. Наличие девяностолетнего лидера без публичного плана преемственности не помогает.",
-   "tags": [
-    "bonds"
-   ]
-  },
   {
    "title": "Key Mideast Oil Benchmark Hits 3-Month Low on Resilient Exports",
    "link": "https://www.bloomberg.com/news/articles/2026-10-21/key-mideast-oil-benchmark-hits-3-month-low-on-resilient-exports",
@@ -9898,6 +9883,16 @@
     "sanctions",
     "Russia"
    ]
+  },
+  {
+   "title": "Piero Cipollone: Interview with Milano Finanza",
+   "link": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261024~ee2ba73cf3.en.html",
+   "sources": [
+    "ECB"
+   ],
+   "score": 4,
+   "ts": "2026-10-24T06:03:55.368268+00:00",
+   "title_ru": "Пьеро Чиполлоне: Интервью Milano Finanza"
   }
  ],
  "last_digest": "2026-10-23",
@@ -9927,7 +9922,6 @@
   "US Labor Statistics (BLS)": 0
  },
  "charts_sent": [
-  "2026-10-14-09",
   "2026-10-14-21",
   "2026-10-15-09",
   "2026-10-15-21",
@@ -9946,7 +9940,8 @@
   "2026-10-22-09",
   "2026-10-22-21",
   "2026-10-23-09",
-  "2026-10-23-21"
+  "2026-10-23-21",
+  "2026-10-24-09"
  ],
  "calendar": {
   "fetched": "2026-10-24T00:18:26.759718+00:00",
@@ -10655,7 +10650,7 @@
   "USD|2026-10-16T03:30:00+00:00|Fed Chairman Warsh Speaks",
   "GBP|2026-10-21T06:00:00+00:00|CPI y/y"
  ],
- "last_morning": "2026-10-23",
+ "last_morning": "2026-10-24",
  "all_down_alerted": false,
  "trades": {
   "congress": [
