@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "f16fe343b7d84a18": "2026-10-21T21:36:32.281700+00:00",
   "9ec7ff09436e0076": "2026-10-21T21:51:32.146697+00:00",
   "2e5e0c5c76fe7295": "2026-10-21T21:56:32.216172+00:00",
   "d57e9a37d22d44fc": "2026-10-21T21:56:32.216172+00:00",
@@ -831,19 +830,11 @@
   "e3c9e38b78dc74cc": "2026-10-24T20:55:47.207380+00:00",
   "720054f2c29aea9a": "2026-10-24T20:55:47.207380+00:00",
   "525f6162cc711330": "2026-10-24T21:00:47.319232+00:00",
-  "24c01e0e944f16f6": "2026-10-24T21:35:47.262383+00:00"
+  "24c01e0e944f16f6": "2026-10-24T21:35:47.262383+00:00",
+  "47b432bae73c0bc1": "2026-10-24T21:40:47.230337+00:00",
+  "607fc20158f2bc1e": "2026-10-24T21:40:47.230337+00:00"
  },
  "recent": [
-  {
-   "title": "US-Mexico Trade Talks Hit Impasse as Lutnick Exerts Influence",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNX3Eyc1g2QWdUVDdjbkV4M1h1OXVOS1p6RFNqR25hcTFVdjRKeFdpQVJ4MDZsTlJQZU1wTGJ3bWtlY0xlejhPUnZKR2llZ0ttU2EtQWs4Tm0wWjh6NlJsc1YwNWJGRUwtcGtQQVNFSjBJT1VCbUo0SkNvdHVoVHk3VTNERGpWZWNpYVJDNjNnYmV5MFlBMXpzUDNFSjh0cGhKS05QeUdHdlE5NlczV0l3b1pB?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-21T21:36:32.281700+00:00",
-   "title_ru": "Торговые переговоры между США и Мексикой зашли в тупик, поскольку Лютник оказывает влияние"
-  },
   {
    "title": "Why investors should be skeptical of a potential Tesla-SpaceX merger",
    "link": "https://www.marketwatch.com/story/why-investors-should-be-skeptical-of-a-potential-tesla-spacex-merger-9e119d32?mod=mw_rss_topstories",
@@ -8178,6 +8169,19 @@
     "Fed",
     "rates"
    ]
+  },
+  {
+   "title": "Takahiro Yamamoto, Taiyo Oil Co: Profile and Biography",
+   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9abGFPS05mTWxEMHNJZ0xVU0NsZ1FSVmJhWFA5NnZ0SHBwT0RFdldoZ3kwU0J5bkVFTnNXakxOcWVGNnF1aHJ5WGhRNTBOUTFPZUZmY05VUzBQQ2hBYlRjR0dHdHJEaEgyZTNINWJadTNmZ2xtejdj?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-24T21:40:47.230337+00:00",
+   "title_ru": "Такахиро Ямамото, Taiyo Oil Co: профиль и биография",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-24",
@@ -14510,9 +14514,9 @@
   "sec_seen": [
    "0000923120-26-000025",
    "0001022079-26-000116",
-   "0000923120-26-000027",
    "0001493152-26-048309",
    "0001022079-26-000114",
+   "0001022079-26-000110",
    "0001493152-26-048313",
    "0001821737-26-000017",
    "0001778564-26-000191",
@@ -14525,6 +14529,7 @@
    "0001193125-26-430730",
    "0001100682-26-000151",
    "0001231919-26-001497",
+   "0000923120-26-000029",
    "0001022079-26-000115",
    "0001022079-26-000109",
    "0001585521-26-000153",
@@ -14533,7 +14538,6 @@
    "0001493152-26-048311",
    "0000923120-26-000030",
    "0001833511-26-000042",
-   "0001851564-26-000045",
    "0001193125-26-430728",
    "0000923120-26-000028",
    "0000923120-26-000023",
@@ -14551,10 +14555,10 @@
    "0002160363-26-000003",
    "0001398344-26-018733",
    "0001493152-26-048315",
-   "0000923120-26-000029",
+   "0001851564-26-000045",
    "0001493152-26-048314",
    "0001022079-26-000113",
-   "0001022079-26-000110"
+   "0000923120-26-000027"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
