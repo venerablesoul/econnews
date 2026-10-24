@@ -1,12 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "903d6fd99e99aa0f": "2026-10-21T05:20:00.374560+00:00",
-  "da0b0da5c2d9c674": "2026-10-21T05:20:00.374560+00:00",
-  "7b50493101aa3b40": "2026-10-21T05:20:00.374560+00:00",
-  "1d170ceaf6659036": "2026-10-21T05:20:00.374560+00:00",
-  "316c57d889129b6b": "2026-10-21T05:20:00.374560+00:00",
-  "cd08cc1dbb6b49e9": "2026-10-21T05:25:00.424392+00:00",
   "7c5b327d002b854e": "2026-10-21T05:30:00.333038+00:00",
   "f5316af10a0919e0": "2026-10-21T05:35:00.328560+00:00",
   "e26dcb66516139fd": "2026-10-21T05:40:00.388981+00:00",
@@ -992,78 +986,6 @@
   "d4573db42d171ffa": "2026-10-24T04:38:55.367358+00:00"
  },
  "recent": [
-  {
-   "title": "Belgian Government Facing Push to Sell 5.7% BNP Paribas Stake",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-21/belgian-government-facing-push-to-sell-5-7-bnp-paribas-stake",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-21T05:20:00.374560+00:00",
-   "title_ru": "Бельгийскому правительству грозит продажа 5,7% акций BNP Paribas",
-   "lead": "Belgium is ramping up efforts to divest from stakes it amassed in banks during the global financial crisis, with some in the government pushing to prioritize the sale of its 5.7% stake in BNP Paribas SA.",
-   "lead_ru": "Бельгия наращивает усилия по продаже долей, которые она накопила в банках во время мирового финансового кризиса, при этом некоторые в правительстве настаивают на том, чтобы отдать приоритет продаже своей 5,7% доли в BNP Paribas SA."
-  },
-  {
-   "title": "Goldman Sachs Says War Spurs Sevenfold Jump in Oil Freight Rates",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQU2U4a0h6MGo2bjVwQjlTMkQwUndDbkdZb1lLRkpYckxmV0lWWDJvdFNZbXpzSk82M2FwVlF5N2ItbEg3UHpYY0dSSVBMU1ZWem1FaGZwVnAyUWltMVZNNTAwQmJEdTd4Q3ItZm9hbGZMV0hZUC1zWjVJc0Qzd00xZE91dVFqZFRlNWZmLVg5bEY1dzB1QnZBQTlIYWxBZ3BqQjNCTWphaU9CQVV5eldIdnlZQXZvZw?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-21T05:20:00.374560+00:00",
-   "title_ru": "Goldman Sachs заявляет, что война привела к семикратному росту тарифов на фрахт нефти",
-   "tags": [
-    "oil"
-   ]
-  },
-  {
-   "title": "Tiffany Japan Building Faces 30% Price Cut As Debt Costs Rise",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNYlF1alFZWXBCWWpFTVdKczRzSFVTeFY3MlpzNlA2aVl5MlNIbDJHam1pMUYwb2ZXeVhVOUVtdTBDOE02U3pld3RCUkRoRFZCU1NjYnhxbDczdkUyWjlBdzlLS3ptaDJkMEMtelAwMk5naWdYRmlkNTNXcDlJclM5akhXdHNVLTRZdXo4Mk1DRi1INFdlUkFzci1GaGVaLVJOOE5ZdDNjNU1CTHQ1NmhpTw?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-21T05:20:00.374560+00:00",
-   "title_ru": "Tiffany Japan Building грозит снижение цен на 30% из-за роста долговых расходов"
-  },
-  {
-   "title": "Oil rises on Middle East supply fears, US inventory drawdowns",
-   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPNTdIRmp3MTB3c3JZNGxXMUl1Wk5haXFwcjdJNXgtQnJkOEM4aWVVWG5tai03TmhHSWZidkliV1VlRkRvOVJCX3Q3QXhCWVdZeXlYQmViOUdOaU85anVWMXpSWFNCOHAtVU5id3Fad1BhX1BzVEt6S1A4N2s1YjJocFh6QXFTVXhHdDJJVzZBX21WUQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-21T05:20:00.374560+00:00",
-   "title_ru": "Нефть дорожает на опасениях по поводу поставок на Ближнем Востоке и сокращении запасов в США",
-   "tags": [
-    "oil"
-   ]
-  },
-  {
-   "title": "Australia's Woodside Energy trims 2026 output forecast; third-quarter revenue tops estimates",
-   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQeTVOcmtBcDZsWnczN2JteVlzazdETXRGaEtySVFSN0Z0WjIxRGNkSHJnTGYwWEJJbmZpeFpKaHRRWmRqMkhPUnJHU1JESEdWeloyYlNGR3NuLUM3a2FrYmJ6TDZ6empKc2RmSTJsTlJJY2ZrSG10OE5NZ1o0bEZ3QkVoWFAxaHNULVBFOFpWRm44dGp1enFCX2dWM2x5aVB6VWdnTGI4SmJIZ0FKNlVHLUhkQjZjN3M2SVZYbWRkVlNsTWUxQTNpYQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-21T05:20:00.374560+00:00",
-   "title_ru": "Австралийская компания Woodside Energy снизила прогноз добычи на 2026 год; Выручка в третьем квартале превысила прогнозы"
-  },
-  {
-   "title": "China's Moonshot AI to operate in Singapore, jobs post shows",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOdGlrT3VHMGtGQ2c1RjRPbDFMR3NRTE9GNlU3LTZoQmxiVld6aTJDa1dyQnhzOFo3RTlKc1d3WE44akpOS1hMSHRyckFaR2FEV3h2d1RLU3BXcGpNWUw1YW13NWFUWmZNM0VNdzdMR0dLS0FTT0t2cGgxb1haWFE4bFJsY1dnNG9qRVFhc1lWMmptUGcwd19jZjVZazhlOGl5QlE?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-21T05:25:00.424392+00:00",
-   "title_ru": "Китайский искусственный интеллект Moonshot будет работать в Сингапуре, говорится в сообщении о вакансиях",
-   "tags": [
-    "China",
-    "jobs"
-   ]
-  },
   {
    "title": "SpaceX 3Q Earnings Beat, SpaceX and Tesla Discuss Potential Merger",
    "link": "https://www.bloomberg.com/news/videos/2026-10-21/the-asia-trade-10-21-2026-video",
