@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "7ab5e9422fa33a7f": "2026-10-21T22:31:59.930018+00:00",
-  "eb60c0e14aa309f9": "2026-10-21T22:31:59.930018+00:00",
-  "9a3b08d2ba267fb7": "2026-10-21T22:37:00.122256+00:00",
   "29350db746d7e77e": "2026-10-21T22:52:00.008432+00:00",
   "7151d3cd349e7f3a": "2026-10-21T22:52:00.008432+00:00",
   "2663276924295829": "2026-10-21T22:52:00.008432+00:00",
@@ -827,39 +824,11 @@
   "24c01e0e944f16f6": "2026-10-24T21:35:47.262383+00:00",
   "47b432bae73c0bc1": "2026-10-24T21:40:47.230337+00:00",
   "607fc20158f2bc1e": "2026-10-24T21:40:47.230337+00:00",
-  "0c7580d5474c7a9e": "2026-10-24T21:50:47.248258+00:00"
+  "0c7580d5474c7a9e": "2026-10-24T21:50:47.248258+00:00",
+  "7ab5e9422fa33a7f": "2026-10-24T22:40:47.242884+00:00",
+  "b0af22f2a2d8787a": "2026-10-24T22:40:47.242884+00:00"
  },
  "recent": [
-  {
-   "title": "US Stock Futures Slip as Tech Earnings Rally Fades: Markets Wrap",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-21/stock-market-today-dow-s-p-live-updates",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-21T22:31:59.930018+00:00",
-   "title_ru": "Фьючерсы на акции США проскальзывают по мере того, как технологическое ралли доходов затухает: рынки сворачиваются",
-   "lead": "US equity-index futures fell as a technology rally faded, trimming gains sparked by strong earnings that had bolstered confidence in the artificial intelligence trade.",
-   "lead_ru": "Фьючерсы на фондовые индексы США упали, поскольку технологическое ралли исчезло, сократив прибыль, вызванную высокими доходами, которые укрепили доверие к торговле искусственным интеллектом.",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "FirstFT: Scott Bessent shrugs off ‘systemic’ AI risks at private event with investors",
-   "link": "https://www.ft.com/content/b739c6e8-5b77-46e3-91a5-382fd52389bc?syn-25a6b1a6=1",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 3,
-   "ts": "2026-10-21T22:37:00.122256+00:00",
-   "title_ru": "FirstFT: Скотт Бессент отмахивается от «системных» рисков ИИ на закрытом мероприятии с инвесторами",
-   "lead": "Also in today’s newsletter: Elon Musk’s $3.6tn gamble and China’s battery makers race to invest abroad",
-   "lead_ru": "Также в сегодняшнем информационном бюллетене: азартная игра Илона Маска на $ 3,6 трлн и гонка китайских производителей аккумуляторов за инвестиции за рубежом",
-   "tags": [
-    "China"
-   ]
-  },
   {
    "title": "IBM Posts 5% Sales Growth, Says Infrastructure Deals Came Back",
    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPNUxPVjVWN3RFWUZadGo4VWtPcTVOcmNSTDhDMWVXVnI4LW5kYWlWeXhFM05jc3lfbTB5a05QNVNGbGQtN2xpbXdMenJ5elA5MzZ3UW5ldFFidVVVTUktSV9YY3pfa0llSG0xd1dXZV9NXzJWUTdSMFo2TjQ4eUx0T1FHbUU0NTQ0MmdEaUpQOEJtNVd6WElfZkRuaWlOQ0g2d2hSbGg2Zld0WmpOamp3VQ?oc=5",
@@ -8119,6 +8088,19 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "Jude Nwaulune, Eterna Oil & Gas PLC: Profile and Biography",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBJeERZeWZyTnptYU9vMDhOc3FXOXFIa2prMDNGUGlEakszZWZmelRCVmpOQjJaN3ZPZE9rYjdmVVZydjBNU2M3Z0FLYXJXU19oQjNrbGx2VE9qUXJOTGF5cGhkaHVhN3BrLVlCZHBXcUpRUQ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-24T22:40:47.242884+00:00",
+   "title_ru": "Джуд Нволуне, Eterna Oil & Gas PLC: профиль и биография",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-24",
@@ -14447,7 +14429,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-24T21:30:47.351408+00:00",
+  "checked": "2026-10-24T22:35:47.259010+00:00",
   "sec_seen": [
    "0000923120-26-000025",
    "0001022079-26-000116",
