@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "6240ea9b0378459b": "2026-10-21T14:46:03.764119+00:00",
-  "a3136ea9ea7b6cb5": "2026-10-21T14:46:03.764119+00:00",
-  "b80bbd5c554e54c6": "2026-10-21T14:51:03.713074+00:00",
-  "ed675778242659fb": "2026-10-21T14:51:03.713074+00:00",
   "fa4cbc58b7ed3968": "2026-10-21T14:56:04.858862+00:00",
   "38447091af3f9e89": "2026-10-21T15:11:03.696694+00:00",
   "e0f8cb6f89351760": "2026-10-21T15:11:03.696694+00:00",
@@ -871,48 +867,12 @@
   "9b2c9c9f4e3a25e7": "2026-10-24T13:44:23.612990+00:00",
   "2b9676d03b546fb7": "2026-10-24T14:04:23.551623+00:00",
   "c3d39e7016b29203": "2026-10-24T14:24:23.587293+00:00",
-  "3b6bdc5f5df22bf9": "2026-10-24T14:44:23.618583+00:00"
+  "3b6bdc5f5df22bf9": "2026-10-24T14:44:23.618583+00:00",
+  "d06589c2d735c223": "2026-10-24T14:54:23.575642+00:00",
+  "7367cef58a08b8a0": "2026-10-24T14:54:23.575642+00:00",
+  "de2ce1014a77d03b": "2026-10-24T14:54:23.575642+00:00"
  },
  "recent": [
-  {
-   "title": "Moody’s Earnings Fall Short of Estimates, Shares Decline",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-21/moody-s-earnings-fall-short-of-estimates-shares-decline",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-21T14:46:03.764119+00:00",
-   "title_ru": "Прибыль Moody's не соответствует оценкам, акции падают",
-   "lead": "Moody’s Corp. posted quarterly results that fell short of average analyst estimates, hurt by weaker revenue in its ratings business as rising yields weighed on corporate bond sales, and its shares fell.",
-   "lead_ru": "Корпорация Moody's опубликовала квартальные результаты, которые оказались ниже средних оценок аналитиков, что пострадало от снижения доходов в рейтинговом бизнесе, поскольку рост доходности оказал давление на продажи корпоративных облигаций, а ее акции упали.",
-   "tags": [
-    "bonds",
-    "markets"
-   ]
-  },
-  {
-   "title": "COMMENTARY: Five AI quirks and conundrums to watch this earnings season",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQd1B1bUZjZ09QOC1FaEFmZVZkMWpPT1ZINU5VVnl4RUZUc3VFWDE3UFFWeXNpZ3pBSEFwYVlObjJkd2dOVFgwbXVqSzVLb3ZHWVVBbERZX0V4ZWRNTTI4c19RUHFZbmdHMkt5QjJVVkptaXN4TDYzc2tFdjdqTU8wbnlQT1BsOVdwNnQ1aEE4YXFSa0FSZDRBS0NKZ2NURS1ON0dxUWZicDJSeWdaRXFPMmNhQVI3QzhlMW5SeWdR?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-21T14:46:03.764119+00:00",
-   "title_ru": "КОММЕНТАРИЙ: Пять причуд и загадок ИИ, на которые стоит обратить внимание в этом сезоне отчетности"
-  },
-  {
-   "title": "Jio Platforms' IPO-linked inflows boost rupee; elevated oil prices spur caution",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPMFFMSF9nLXRwYy1COGJKYnBBYXkzOTFESWIxSnROTmJGa2hQZ3BTTExjMEUtTXhrUVFka3kzdXBjQXBqV1d6WW9wcDV0Z2NHbEhnellaWHpwMEx0d19NOHdaaGxyTUd5NEV0VHozczYxeVlVNU1NMjNRaEc0ZVFEMTFpamJVNWl1N0swSkdRbERORjN2c3dlVGhMMXVTQjFJUDVWZnhhMnY4MzZvMW1kQ25QSGY5dmhLc1d5aTNrRGR6N2c?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-21T14:51:03.713074+00:00",
-   "title_ru": "Притоки средств Jio Platforms, связанные с IPO, повышают рупию; Высокие цены на нефть вызывают осторожность",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "Hungarian Policymakers Flag 2032 as Likely Euro-Accession Date",
    "link": "https://www.bloomberg.com/news/articles/2026-10-21/hungarian-policymakers-flag-2032-as-likely-euro-accession-date",
@@ -8620,6 +8580,16 @@
    ],
    "score": 1,
    "ts": "2026-10-24T14:44:23.618583+00:00"
+  },
+  {
+   "title": "UK Economy Storms Ahead for Now, Despite Sodden Consumers",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOVTJ5MURfZ3BlR1drZGljcVFDbWRCTW9oRXFEQl9McVkzVVdUWERVbFZ0RjFzVGNHNWZYZXdGVFZZeHV3aHBONGlZVWwtRENwRi1oWEhJbUJSS1FPOUw0T2V1dDhyYXRzZEFBRE1reFpfRDhOdnczTGRjbUFsd0VVbFUyazJNMmxnc3NkWkhZaVZIWTRtMDBlX05PU0IwSmtObTM5czVHbEdJQTJqNm1B?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-24T14:54:23.575642+00:00",
+   "title_ru": "Экономика Великобритании на данный момент бурно развивается, несмотря на промокшие потребители"
   }
  ],
  "last_digest": "2026-10-23",
