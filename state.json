@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "f218889746b9a520": "2026-10-22T12:53:36.882761+00:00",
   "8cc05578a4395116": "2026-10-22T13:03:36.928624+00:00",
   "d942c7f399a332f0": "2026-10-22T13:03:36.928624+00:00",
   "1b57f52103e21efd": "2026-10-22T13:08:36.853270+00:00",
@@ -690,7 +689,8 @@
   "46cf89f1a6155552": "2026-10-25T12:26:42.608229+00:00",
   "a57203ae6ff7e6c8": "2026-10-25T12:36:42.578727+00:00",
   "3ed6cb55f6943682": "2026-10-25T12:46:42.620370+00:00",
-  "e1a225428f4f1189": "2026-10-25T12:46:42.620370+00:00"
+  "e1a225428f4f1189": "2026-10-25T12:46:42.620370+00:00",
+  "fdd2315ac72e7099": "2026-10-25T13:02:19.718020+00:00"
  },
  "recent": [
   {
@@ -6443,6 +6443,21 @@
    "lead_ru": "Инвесторы от JPMorgan Asset Management до Generali и Ninety One SA нагружают долги развивающихся рынков, игнорируя рост доходности казначейских облигаций, который когда-то заставил бы их бежать к выходу.",
    "tags": [
     "bonds"
+   ]
+  },
+  {
+   "title": "Worried about this stock-market selloff? Relief may be coming after the midterms — no matter who wins.",
+   "link": "https://www.marketwatch.com/story/worried-about-this-stock-market-selloff-relief-may-be-coming-after-the-midterms-no-matter-who-wins-39322c07?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 4,
+   "ts": "2026-10-25T13:02:19.718020+00:00",
+   "title_ru": "Беспокоитесь об этой распродаже на фондовом рынке? Облегчение может наступить после промежуточных выборов – независимо от того, кто победит.",
+   "lead": "The nine months between Election Day and June 30 have seen the S&P 500 deliver an average return of 15.5% going back to 1950.",
+   "lead_ru": "За девять месяцев между днем ​​выборов и 30 июня индекс S&P 500, начиная с 1950 года, обеспечил среднюю доходность в 15,5%.",
+   "tags": [
+    "markets"
    ]
   }
  ],
