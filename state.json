@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "7f495757569fe9f5": "2026-10-22T12:08:36.861644+00:00",
-  "c30fc9cb03b2882e": "2026-10-22T12:08:36.861644+00:00",
   "d854ce85cd68ef3a": "2026-10-22T12:13:36.829690+00:00",
   "e24999e5b3458ee2": "2026-10-22T12:18:36.882654+00:00",
   "665d1dd9ae2889c7": "2026-10-22T12:18:36.882654+00:00",
@@ -697,31 +695,12 @@
   "5dbc14cfcb2e591a": "2026-10-25T11:06:42.589010+00:00",
   "e093c8a6e791a480": "2026-10-25T11:36:42.745400+00:00",
   "2667232859700e8a": "2026-10-25T11:51:42.640271+00:00",
-  "d2b9cb2c7477536d": "2026-10-25T12:01:42.586679+00:00"
+  "d2b9cb2c7477536d": "2026-10-25T12:01:42.586679+00:00",
+  "5ba3753803d58086": "2026-10-25T12:06:42.607655+00:00",
+  "543db73309ee4256": "2026-10-25T12:11:42.613204+00:00",
+  "8b21902f03d7bf09": "2026-10-25T12:11:42.613204+00:00"
  },
  "recent": [
-  {
-   "title": "Meta Offers Zuckerberg New Shares to Keep Him in California",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOb1FfZ3ZRcmdpVzRDNS1YVFJ5Rzd2UVlCR01pNXdfdER1eExOZGs3alc4M0tGYVlOWTlmZV93MlFCekZTSzIyN3R3aXR6RTI4ZE1ERlZtM04ybVpybWdZdUFRUU0wcVl2U3ZWaEkyUjE3VDBqbmRoYktWM0twT1h3dmRTNF9XYmNiZ2xVeGdGTnRPTzQySE93ZUwzZXdwUnhJTkFWSTZsQU9Qb2ZLMngwd2Nybw?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-22T12:08:36.861644+00:00",
-   "title_ru": "Meta предлагает Цукербергу новые акции, чтобы удержать его в Калифорнии",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "IBM’s stock falls as investors struggle to shake off July earnings miss",
-   "link": "https://www.marketwatch.com/story/ibms-stock-falls-as-investors-struggle-to-shake-off-july-earnings-miss-0969b9e3?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 2,
-   "ts": "2026-10-22T12:08:36.861644+00:00"
-  },
   {
    "title": "Private Credit Group Says Market Fears Are Divorced From Reality",
    "link": "https://www.bloomberg.com/news/articles/2026-10-22/private-credit-group-says-market-fears-are-divorced-from-reality",
@@ -6540,6 +6519,46 @@
    "lead_ru": "Эксперты говорят, что Банк Англии вряд ли повысит ставки на полный процентный пункт – и может снизить их к концу 2027 года. Финансовые рынки ошибаются, предсказывая, что Банк Англии поднимет процентные ставки в Великобритании на полный процент…",
    "tags": [
     "rates"
+   ]
+  },
+  {
+   "title": "Why economic health no longer dictates stock-market returns",
+   "link": "https://www.marketwatch.com/story/why-economic-health-no-longer-dictates-stock-market-returns-c44b88f2?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 2,
+   "ts": "2026-10-25T12:06:42.607655+00:00"
+  },
+  {
+   "title": "Audi to build $4bn US plant as it grapples with tariffs",
+   "link": "https://www.ft.com/content/8f034740-12a8-47fe-9010-149f87e70f8e?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 5,
+   "ts": "2026-10-25T12:11:42.613204+00:00",
+   "title_ru": "Audi построит завод в США стоимостью 4 миллиарда долларов, поскольку борется с тарифами",
+   "lead": "Move announced at Trump rally in Georgia comes as carmaker and its parent Volkswagen seek relief from president’s levies",
+   "lead_ru": "Решение, объявленное на митинге Трампа в Джорджии, связано с тем, что автопроизводитель и его материнская компания Volkswagen требуют освобождения от президентских сборов.",
+   "tags": [
+    "markets",
+    "tariffs"
+   ]
+  },
+  {
+   "title": "Will the Fed drop any hints on rate rises?",
+   "link": "https://www.ft.com/content/181316cc-0f4c-4328-b990-ad0d43ce424c?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 3,
+   "ts": "2026-10-25T12:11:42.613204+00:00",
+   "title_ru": "Будет ли ФРС намекать на повышение ставок?",
+   "lead": "Market Questions is the FT’s guide to the week ahead",
+   "lead_ru": "«Рыночные вопросы» — путеводитель FT на предстоящую неделю",
+   "tags": [
+    "Fed"
    ]
   }
  ],
