@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e50293f6e469242c": "2026-10-22T10:48:36.819348+00:00",
   "5dbc14cfcb2e591a": "2026-10-22T10:53:36.815947+00:00",
   "f2472f479dc546ec": "2026-10-22T10:53:36.815947+00:00",
   "d43357d5642c2c39": "2026-10-22T10:53:36.815947+00:00",
@@ -714,25 +713,11 @@
   "81f96c10c8218294": "2026-10-25T10:06:42.584087+00:00",
   "4e56b1fa13d3e320": "2026-10-25T10:16:42.665350+00:00",
   "240657c6c57b5d4f": "2026-10-25T10:21:42.593644+00:00",
-  "27230cc576cd9ef9": "2026-10-25T10:36:42.611077+00:00"
+  "27230cc576cd9ef9": "2026-10-25T10:36:42.611077+00:00",
+  "9677dc593c03f769": "2026-10-25T10:51:42.582369+00:00",
+  "786a0f45db1a6c9b": "2026-10-25T10:51:42.582369+00:00"
  },
  "recent": [
-  {
-   "title": "UGX/USD: Uganda Shilling Drops 2.5%, Erasing Gains After Rate Hike",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-22/ugx-usd-uganda-shilling-drops-2-5-erasing-gains-after-rate-hike",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-22T10:48:36.819348+00:00",
-   "title_ru": "UGX/USD: Угандийский шиллинг упал на 2,5%, сведя на нет прибыль после повышения ставки",
-   "lead": "Uganda’s shilling has erased all its gains and plunged to a record low days after a jumbo central bank rate hike and dollar sales to smoothen out currency volatility.",
-   "lead_ru": "Шиллинг Уганды свел на нет все свои доходы и упал до рекордно низкого уровня через несколько дней после резкого повышения ставок центральным банком и продажи долларов, направленной на сглаживание волатильности валюты.",
-   "tags": [
-    "rates",
-    "dollar"
-   ]
-  },
   {
    "title": "Saudi Attacks Push Oil Higher as Stocks Slide on Tech Earnings",
    "link": "https://www.bloomberg.com/news/videos/2026-10-22/the-pulse-10-22-2026-video",
@@ -6755,6 +6740,22 @@
    "tags": [
     "ECB",
     "bonds"
+   ]
+  },
+  {
+   "title": "RBA’s Hunter Says Rate ‘Not Quite Yet’ Done Fighting Inflation",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-25/rba-s-hunter-says-rate-not-quite-yet-done-fighting-inflation",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-25T10:51:42.582369+00:00",
+   "title_ru": "Хантер из RBA говорит, что ставка «еще не совсем» завершила борьбу с инфляцией",
+   "lead": "The Reserve Bank of Australia is “not quite yet” done fighting inflation, said Assistant Governor Sarah Hunter, signaling another rate hike is likely when policymakers meet early next month.",
+   "lead_ru": "Резервный банк Австралии «еще не закончил» борьбу с инфляцией, сказала помощник управляющего Сара Хантер, сигнализируя о том, что новое повышение ставок вероятно, когда политики соберутся в начале следующего месяца.",
+   "tags": [
+    "rates",
+    "inflation"
    ]
   }
  ],
@@ -13181,9 +13182,9 @@
    "0001100682-26-000151",
    "0001493152-26-048319",
    "0001022079-26-000114",
+   "0001231919-26-001497",
    "0001398344-26-018733",
    "0001493152-26-048313",
-   "0002160363-26-000004",
    "0001193125-26-430730",
    "0001493152-26-048321",
    "0000923120-26-000028",
@@ -13207,7 +13208,7 @@
    "0001493152-26-048309",
    "0000950103-26-016119",
    "0000923120-26-000029",
-   "0001231919-26-001497",
+   "0002160363-26-000004",
    "0000923120-26-000024"
   ],
   "errors": {
