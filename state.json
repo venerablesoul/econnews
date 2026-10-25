@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "6f756255b81d9490": "2026-10-22T18:49:40.277614+00:00",
-  "29a38bb5eab7bea9": "2026-10-22T18:54:40.177617+00:00",
   "85a0ca39ae4eefd6": "2026-10-22T19:04:40.244080+00:00",
   "d012aa564ff47e12": "2026-10-22T19:04:40.244080+00:00",
   "b5799a855f5a376f": "2026-10-22T19:24:40.196287+00:00",
@@ -628,19 +626,12 @@
   "bc192c2eb8e3db87": "2026-10-25T17:49:01.484794+00:00",
   "84eb73c203290f7e": "2026-10-25T17:58:25.695204+00:00",
   "6643d8abc7ff4a77": "2026-10-25T18:48:25.712051+00:00",
-  "223efdfd6db72bda": "2026-10-25T18:48:25.712051+00:00"
+  "223efdfd6db72bda": "2026-10-25T18:48:25.712051+00:00",
+  "90e642875f228126": "2026-10-25T18:53:25.730113+00:00",
+  "b6f98e8d2a15aa6f": "2026-10-25T18:58:25.666810+00:00",
+  "89e063af50269ba6": "2026-10-25T18:58:25.666810+00:00"
  },
  "recent": [
-  {
-   "title": "Gas Price Surge Hits Midwest Battleground States Days Before Midterms",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPb0pkS1ppVnM0dDBnaXFqb3ZMZjMxci1RNG85VGt2bUJLRll0MUZ6Zl9rQjl3SVllTjdhU0p1b3RadVUxY1FIUzY3ZVctc3RvOFU3SEJwMGVkUEM2V0FBMUJpYnJLVFBWdjF3SlZnaUdvUldHeEJhdm1DZ0tnRE9vSUp6VVBnSndVOXh1cURoZmk4dGpBSFc4dDNwWlRoWFJZblZUQnlnRUZYenBmUlotag?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-22T18:54:40.177617+00:00",
-   "title_ru": "Скачок цен на газ ударил по штатам Среднего Запада за несколько дней до промежуточных выборов"
-  },
   {
    "title": "AI Spending Woes, Investors Seek Havens, France Debt Crisis",
    "link": "https://www.bloomberg.com/news/videos/2026-10-22/real-yield-10-22-2026-video",
@@ -5762,6 +5753,16 @@
    "score": 3,
    "ts": "2026-10-25T18:48:25.712051+00:00",
    "title_ru": "Хассетт говорит, что торговые переговоры между США и Канадой «очень близки» к сделке"
+  },
+  {
+   "title": "iShares MSCI Emerging Markets ETF (EEM.N) | Stock Price & Latest News",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1CVE15Q3c1WVhqNWpXVTBXWDZSNm85ckZzeUUwbmtRd3pyZklPNExVZkR6WC1xVlVZVVpjT3MzdzVXa1plU2pxdG5nZ01OY2R5ZDg3YUNRRGZubHp1YXpfRWRLYS1QSlZmM3c?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-25T18:58:25.666810+00:00",
+   "title_ru": "iShares MSCI Emerging Markets ETF (EEM.N) | Курс акций и последние новости"
   }
  ],
  "last_digest": "2026-10-25",
@@ -5786,7 +5787,7 @@
   "ECB": 0,
   "Fed": 0,
   "IMF": 0,
-  "Kommersant": 1,
+  "Kommersant": 0,
   "RBC": 0,
   "US Labor Statistics (BLS)": 0
  },
@@ -12166,7 +12167,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-25T17:49:01.484794+00:00",
+  "checked": "2026-10-25T18:53:25.730113+00:00",
   "sec_seen": [
    "0001493152-26-048310",
    "0000923120-26-000026",
