@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c406722f95b60689": "2026-10-22T11:33:36.885909+00:00",
-  "88fa4203b07bf87b": "2026-10-22T11:38:36.941888+00:00",
-  "51f599ee6bdc742b": "2026-10-22T11:38:36.941888+00:00",
-  "989e2ad2cc332742": "2026-10-22T11:38:36.941888+00:00",
   "be78d363b447e8b5": "2026-10-22T11:43:36.886981+00:00",
   "69f578ee4a885db3": "2026-10-22T11:53:36.805498+00:00",
   "7f495757569fe9f5": "2026-10-22T12:08:36.861644+00:00",
@@ -700,54 +696,10 @@
   "27230cc576cd9ef9": "2026-10-25T10:36:42.611077+00:00",
   "9677dc593c03f769": "2026-10-25T10:51:42.582369+00:00",
   "786a0f45db1a6c9b": "2026-10-25T10:51:42.582369+00:00",
-  "5dbc14cfcb2e591a": "2026-10-25T11:06:42.589010+00:00"
+  "5dbc14cfcb2e591a": "2026-10-25T11:06:42.589010+00:00",
+  "e093c8a6e791a480": "2026-10-25T11:36:42.745400+00:00"
  },
  "recent": [
-  {
-   "title": "Gulf markets fall as fresh Houthi strikes on Saudi Arabia raise regional risk",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOQS1ESU5ra242UzdCbkxuVkNzUkV2NWZVTGlRcDZnSzJBeE5KTkFyMEZvaTd0ZEl4LWduc0lmbGZkRnV6REF1dV9VUkRESHpVM3lLUkt0SmtfQzJDLXdnZ0l6akwwOWZpS1lza2tSbHczcnlpU2JPSXo5eHNrY0c4aWNpWjNJSlFYa2M2UEhDNnVsUnQySGF6MVJSY1FPam1LSlliSkJUTzFKck9tZ2J6S2xlUnVSam1TTllJbUxQWmtTcjQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-22T11:33:36.885909+00:00",
-   "title_ru": "Рынки Персидского залива падают, поскольку новые удары хуситов по Саудовской Аравии повышают региональный риск"
-  },
-  {
-   "title": "US Futures Slip as Risk-Off Sentiment Dominates With Oil Rising",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-22/us-futures-slip-as-risk-off-sentiment-dominates-with-oil-rising",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-22T11:38:36.941888+00:00",
-   "title_ru": "Фьючерсы на США проскальзывают, поскольку настроения риска доминируют с ростом цен на нефть",
-   "lead": "Futures were under pressure as escalating concern about Mideast conflict pushed oil futures higher, spurring inflation fears with US midterm elections less than two weeks away.",
-   "lead_ru": "Фьючерсы находились под давлением, поскольку растущая обеспокоенность по поводу ближневосточного конфликта подтолкнула нефтяные фьючерсы к росту, что вызвало опасения по поводу инфляции, поскольку до промежуточных выборов в США осталось менее двух недель.",
-   "tags": [
-    "inflation",
-    "oil"
-   ]
-  },
-  {
-   "title": "SAP Cloud Growth Beats Forecast as Software Stays Resilient",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOalJYdTFFMk1IaEswM2dEVThzcnJ2VF9Sc2tUeVpQTlJzajMwUEp1MU9sWVlHLW9IOFRwY2I1YnlyZWFYLURsTmhkNmVNejgwZHowY2VOd2pvSlpWUl9BWlo0SGt2OVE0REl1LVZwdDlRc1VZNlMzZVp3SnIyc0dSYkZVUDlTV2w0MV9DMjNpMFNUakFBaUx3LUZEMWktTF96dVV0SUM2X0tMYkRZX1NvdWtreV9YUQ?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-22T11:38:36.941888+00:00",
-   "title_ru": "Рост SAP Cloud опережает прогнозы, поскольку программное обеспечение остается устойчивым"
-  },
-  {
-   "title": "Mideast oil exports are recovering. Fresh attacks in Saudi Arabia show risks remain.",
-   "link": "https://www.marketwatch.com/story/mideast-oil-exports-are-recovering-fresh-attacks-in-saudi-arabia-show-risks-remain-1473391a?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 2,
-   "ts": "2026-10-22T11:38:36.941888+00:00"
-  },
   {
    "title": "Barclays to Cut 5K Jobs, AI Trade Stumbles After Tech Earnings",
    "link": "https://www.bloomberg.com/news/videos/2026-10-22/the-opening-trade-10-22-2026-video",
@@ -6575,6 +6527,15 @@
     "rates",
     "inflation"
    ]
+  },
+  {
+   "title": "Here’s the real signal to watch for the Fed’s next move",
+   "link": "https://www.marketwatch.com/story/heres-the-real-signal-to-watch-for-the-feds-next-move-9189cb51?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-25T11:36:42.745400+00:00"
   }
  ],
  "last_digest": "2026-10-24",
