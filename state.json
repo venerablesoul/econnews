@@ -1,12 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "65178232c8d976f3": "2026-10-22T15:29:40.400030+00:00",
-  "9ae53a3ccca842fc": "2026-10-22T15:29:40.400030+00:00",
-  "4eb4c94f2bfbb50e": "2026-10-22T15:29:40.400030+00:00",
-  "93268a1e0c647067": "2026-10-22T15:29:40.400030+00:00",
-  "cceefac1d6be112d": "2026-10-22T15:34:40.237225+00:00",
-  "49b0d6d541ebb910": "2026-10-22T15:34:40.237225+00:00",
   "edc3aefa5ae4ff4c": "2026-10-22T15:39:40.207590+00:00",
   "9d7ecf6f71d7362a": "2026-10-22T15:39:40.207590+00:00",
   "22333262d4ae34c0": "2026-10-22T15:39:40.207590+00:00",
@@ -669,68 +663,6 @@
   "d6945f712b2cd7a2": "2026-10-25T15:12:19.767606+00:00"
  },
  "recent": [
-  {
-   "title": "ECB’s Panetta Says Rising Bond Yields Will Restrain Economy",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-22/ecb-s-panetta-says-rising-bond-yields-will-restrain-economy",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 7,
-   "ts": "2026-10-22T15:29:40.400030+00:00",
-   "title_ru": "Глава ЕЦБ Панетта заявил, что рост доходности облигаций будет сдерживать экономику",
-   "lead": "European Central Bank Governing Council member Fabio Panetta said the jump in bond yields will restrain the region’s economy, though isn’t critical as things stand.",
-   "lead_ru": "Член Совета управляющих Европейского центрального банка Фабио Панетта заявил, что скачок доходности облигаций будет сдерживать экономику региона, хотя при нынешних обстоятельствах это не критично.",
-   "tags": [
-    "ECB",
-    "bonds"
-   ]
-  },
-  {
-   "title": "Houthis Step Up Attacks on Saudi, Sending Oil Higher",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-22/houthis-step-up-attacks-on-saudi-sending-oil-higher-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-22T15:29:40.400030+00:00",
-   "title_ru": "Хуситы усиливают атаки на Саудовскую Аравию, вызывая рост нефти",
-   "lead": "Iran-backed Houthi rebels in Yemen step up their attacks on Saudi Arabia. Saudi Aramco had to evacuate its headquarters and the kingdom is on alert for more strikes.",
-   "lead_ru": "Поддерживаемые Ираном повстанцы-хуситы в Йемене усиливают нападения на Саудовскую Аравию. Saudi Aramco пришлось эвакуировать свою штаб-квартиру, и королевство готово к новым ударам.",
-   "tags": [
-    "oil"
-   ]
-  },
-  {
-   "title": "Peru rolls out economic measures to counter El Niño impact",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNYk5Yc19PLXhaRWhTUU9sSnZacEFXWGJzb0hEN2NqZ3J3UnhWWTNtcnVfOHU3YTdvTUc4dmh6OHJiVmItVjBUSUxRNElQQnRXNW1ZUl90ajNMM2tNVndvU0NEQmwyY0hmVHdxVzlTTERPUUkwOG1EaUpFVDBMMm1xUENRMkQ0VHp3QWFLZ3hoNTB1N3gxYTd1N0loWW5qVWJFR2gzVnplVEJqZFBMZVAwTg?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-22T15:29:40.400030+00:00",
-   "title_ru": "Перу принимает экономические меры для противодействия воздействию Эль-Ниньо"
-  },
-  {
-   "title": "The Atlantic назвал уязвимость экономики Китая",
-   "link": "https://www.rbc.ru/economics/22/10/2026/6ada22ab3efa5d13b89b34d5",
-   "sources": [
-    "RBC"
-   ],
-   "score": 1,
-   "ts": "2026-10-22T15:29:40.400030+00:00"
-  },
-  {
-   "title": "Peru Government to Seek Higher Fiscal Deficits to Shield Economy",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-22/peru-government-to-seek-higher-fiscal-deficits-to-shield-economy",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-22T15:34:40.237225+00:00",
-   "title_ru": "Правительство Перу будет добиваться увеличения бюджетного дефицита для защиты экономики",
-   "lead": "Peru’s government is seeking to raise its fiscal deficit ceilings in coming years, giving officials more spending room to protect the economy from severe weather and higher global fuel prices.",
-   "lead_ru": "Правительство Перу стремится повысить лимиты бюджетного дефицита в ближайшие годы, предоставляя чиновникам больше возможностей для расходов, чтобы защитить экономику от суровых погодных условий и более высоких мировых цен на топливо."
-  },
   {
    "title": "Pound edges higher, outperforming as investor nerves rattle euro zone markets",
    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPNjNoMVJaTEVIbGhjVlBPOVdQN1FYS1JDV1RCSFBUNFlFYzRpNmpCblMxMXNqYXk2WHRBSENOcUdHU21NdllLazl3Q0tWY2QzNXRrdS0zR0IyNThDam0wXzhSb0RhMEp0aUprRVRRbVZhY25yMUp2eU9lalpJYTBDNlBzSVBfQm1RdzJETllUbHhfbnMxSGlRT2hMUXAtTHVIZG1zTUl1ams0eVVWN1hFd0VzSGdTSlVJdWc?oc=5",
