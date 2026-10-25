@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "8a05f681b210807a": "2026-10-22T22:20:20.323699+00:00",
-  "a4df2de44614b5d9": "2026-10-22T22:20:20.323699+00:00",
-  "f61726e4b2d4e05c": "2026-10-22T22:20:20.323699+00:00",
-  "211e18cfe34ca40e": "2026-10-22T22:20:20.323699+00:00",
   "cfbd6756fe1c220c": "2026-10-22T22:25:20.352145+00:00",
   "908c534e462dbf27": "2026-10-22T22:40:20.356032+00:00",
   "61f07b236f1d50e4": "2026-10-22T22:40:20.356032+00:00",
@@ -603,34 +599,12 @@
   "0c70ded9f2b6700e": "2026-10-25T21:48:25.767287+00:00",
   "f89ce3ab6be94361": "2026-10-25T21:48:25.767287+00:00",
   "d9c1d7b5668854b6": "2026-10-25T21:53:25.677813+00:00",
-  "68e0a36c4fe143ca": "2026-10-25T22:13:57.734064+00:00"
+  "68e0a36c4fe143ca": "2026-10-25T22:13:57.734064+00:00",
+  "c293588cd08c1eda": "2026-10-25T22:18:52.445586+00:00",
+  "493b1bc52cef48c9": "2026-10-25T22:18:52.445586+00:00",
+  "bbaf0e8eaa68ddce": "2026-10-25T22:23:52.455083+00:00"
  },
  "recent": [
-  {
-   "title": "Asian Stocks to Slide on Tech Rout, Bonds Rally: Markets Wrap",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-22/stock-market-today-dow-s-p-live-updates",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-22T22:20:20.323699+00:00",
-   "title_ru": "Азиатские акции падают из-за технологического разгрома и ралли облигаций: итоги рынков",
-   "lead": "Asian stocks were set to extend losses Friday, tracking a slump on Wall Street as a rout in technology giants and escalating Middle East hostilities drove investors toward the safety of bonds.",
-   "lead_ru": "Азиатские акции в пятницу продолжат падение, следуя за спадом на Уолл-стрит, поскольку разгром технологических гигантов и эскалация военных действий на Ближнем Востоке подтолкнули инвесторов к безопасным облигациям.",
-   "tags": [
-    "bonds",
-    "markets"
-   ]
-  },
-  {
-   "title": "The U.S. stock market is fracturing into two camps, and it’s leaving investors with a brutal case of whiplash",
-   "link": "https://www.marketwatch.com/story/the-u-s-stock-market-is-fracturing-into-two-camps-and-its-leaving-investors-with-a-brutal-case-of-whiplash-e8580a99?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 2,
-   "ts": "2026-10-22T22:20:20.323699+00:00"
-  },
   {
    "title": "Франция притормаживает // Ослабление деловой активности ухудшает динамику ВВП страны",
    "link": "https://www.kommersant.ru/doc/9045204",
@@ -5477,6 +5451,21 @@
    "title_ru": "Премьер Сенегала поднимает конституционный вариант бюджетного противостояния",
    "lead": "Senegalese Prime Minister Ahmadou Al Aminou Lo said the government could use constitutional means to resolve a standoff over its 2026 budget if talks with lawmakers fail, as the dispute threatens to complicate efforts to secure a…",
    "lead_ru": "Премьер-министр Сенегала Ахмаду Аль-Аминоу Ло заявил, что правительство может использовать конституционные средства для разрешения разногласий по поводу бюджета на 2026 год, если переговоры с законодателями потерпят неудачу, поскольку спор угрожает осложнить усилия по обеспечению…"
+  },
+  {
+   "title": "US Equity Futures Climb as Crude Oil Price Dips: Markets Wrap",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-25/us-equity-futures-climb-as-crude-oil-price-dips-markets-wrap",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 7,
+   "ts": "2026-10-25T22:23:52.455083+00:00",
+   "title_ru": "Фьючерсы на акции в США растут по мере падения цен на сырую нефть: рыночная конъюнктура",
+   "lead": "US stock futures advanced and crude oil retreated as traders weighed the latest geopolitical developments over Iran and looked ahead to a string of central bank rate decisions this week.",
+   "lead_ru": "Фьючерсы на акции США выросли, а сырая нефть отступила, поскольку трейдеры взвесили последние геополитические события вокруг Ирана и ожидали принятия ряда решений о ставках центрального банка на этой неделе.",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-25",
