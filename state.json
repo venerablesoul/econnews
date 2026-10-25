@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "bfb74a1c22320b8f": "2026-10-22T12:28:36.842213+00:00",
-  "659d764dfd98fa70": "2026-10-22T12:28:36.842213+00:00",
-  "fa7d126dfe526519": "2026-10-22T12:28:36.842213+00:00",
-  "1ea687875b27cc7b": "2026-10-22T12:33:36.838680+00:00",
   "d4d637c429168601": "2026-10-22T12:38:36.863066+00:00",
   "906fbf4bb7733896": "2026-10-22T12:43:36.815812+00:00",
   "210c35b59182a196": "2026-10-22T12:43:36.815812+00:00",
@@ -695,60 +691,10 @@
   "543db73309ee4256": "2026-10-25T12:11:42.613204+00:00",
   "8b21902f03d7bf09": "2026-10-25T12:11:42.613204+00:00",
   "d4dfbbaf1eceace9": "2026-10-25T12:16:42.627115+00:00",
-  "46cf89f1a6155552": "2026-10-25T12:26:42.608229+00:00"
+  "46cf89f1a6155552": "2026-10-25T12:26:42.608229+00:00",
+  "a57203ae6ff7e6c8": "2026-10-25T12:36:42.578727+00:00"
  },
  "recent": [
-  {
-   "title": "Norwegians Leave Gold in Forest as Some Fall for Scam",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-22/norwegians-leave-gold-in-forest-as-some-fall-for-scam",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-22T12:28:36.842213+00:00",
-   "title_ru": "Норвежцы оставляют золото в лесу, опасаясь мошенничества",
-   "lead": "Swindlers have persuaded Norwegians into buying gold and leaving it in the forest as part of a growing investment fraud, according to the country’s banking lobby.",
-   "lead_ru": "По данным банковского лобби страны, мошенники убедили норвежцев покупать золото и оставлять его в лесу в рамках растущего инвестиционного мошенничества.",
-   "tags": [
-    "gold"
-   ]
-  },
-  {
-   "title": "What Different US Midterm Outcomes Could Mean for Markets",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOdXdWUWlDSEE1bW1YY3A1T0k3S3I5T2VHY1hwejNnbWI5OHlXWUtlaFRvMllSTEFYbzBoZTlqSXNXdVJ2TmV4emt2SUhFTnF6V1FkTHhYdmdhWU5TLVRqeThsLTB5MlhxNHc4SEN1bjFVOVJRTXRoNlgzT3dqMzZQenhEcENZeTdmQnZzSHdJSG5lRUNHeVJMS20tWEFfU1hSck5RZE5CR1hQSlVSeE5LUlNEcDByUHc?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-22T12:28:36.842213+00:00",
-   "title_ru": "Какие различные среднесрочные результаты США могут означать для рынков"
-  },
-  {
-   "title": "High-Speed Trader Hudson River’s India Unit Growth Slows as Options Curbs Bite",
-   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQbFN2dFdZMndPOGZWaXlpS0V4S2NZbWp4Ym16RE9vVm5NNGQ5U3AxNzdBVks4M1d5OHhxbF96R1Z3WWlvZXBHakdPRENJU3hPazV3ZWdEcFBZXzFmNlc3STQ4ZGlfM1RsVWExa0xISkVrOENIN1hxQUNoRlVVaDU0eXZUeHJtdl95eTJnRUxPSzNYaDJ4SG43LWJqZFNrZDFJdlIwR2M0emdQUThNT3Rxei1wdWI5ckxVcE1JM0ZtYnBIVG5Wc2Njdw?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-22T12:28:36.842213+00:00",
-   "title_ru": "Рост индийского подразделения высокоскоростного трейдера Hudson River замедляется, поскольку опционы сдерживают укус"
-  },
-  {
-   "title": "Mexico Inflation Ticks Up as Banxico Weighs Next Rate Move",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-22/mexico-inflation-ticks-up-as-banxico-weighs-next-rate-move",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-22T12:33:36.838680+00:00",
-   "title_ru": "Инфляция в Мексике растет, поскольку Банксико взвешивает следующее движение ставки",
-   "lead": "Mexico’s annual inflation accelerated more than expected in early October, putting pressure on central bankers meeting next month to reconsider a five-month hold on interest rates.",
-   "lead_ru": "Годовая инфляция в Мексике ускорилась больше, чем ожидалось в начале октября, оказав давление на центральные банки, которые соберутся в следующем месяце, чтобы пересмотреть пятимесячную задержку процентных ставок.",
-   "tags": [
-    "rates",
-    "inflation"
-   ]
-  },
   {
    "title": "US Initial Jobless Claims Fall to Three-Month Low of 194,000",
    "link": "https://www.bloomberg.com/news/articles/2026-10-22/us-initial-jobless-claims-fall-to-three-month-low",
@@ -6524,6 +6470,21 @@
    "title_ru": "Акции Саудовской Аравии и Египта падают из-за обострения конфликта в Йемене",
    "tags": [
     "markets"
+   ]
+  },
+  {
+   "title": "What’s Happening in EM: Bond Investors Turn to Developing World",
+   "link": "https://www.bloomberg.com/news/audio/2026-10-25/what-s-happening-in-em-bond-investors-turn-to-developing-world",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-25T12:36:42.578727+00:00",
+   "title_ru": "Что происходит в развивающихся странах: инвесторы в облигации обращаются к развивающимся странам",
+   "lead": "This week, Mpho Hlakudi and Selcuk Gokoluk discuss how some of the world’s biggest asset managers increase their exposure to emerging markets despite the surge in US Treasury yields, weakening a traditional correlation in…",
+   "lead_ru": "На этой неделе Мфо Хлакуди и Сельчук Гоколук обсуждают, как некоторые из крупнейших в мире управляющих активами увеличивают свое присутствие на развивающихся рынках, несмотря на рост доходности казначейских облигаций США, ослабляя традиционную корреляцию в…",
+   "tags": [
+    "bonds"
    ]
   }
  ],
