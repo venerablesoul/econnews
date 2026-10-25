@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "d7ce0579d8753601": "2026-10-22T06:37:45.003491+00:00",
-  "2d766c2590ed9dde": "2026-10-22T06:37:45.003491+00:00",
-  "2771838e1f00967e": "2026-10-22T06:42:44.982007+00:00",
-  "924b18488f410694": "2026-10-22T06:42:44.982007+00:00",
-  "c840ab52073de79a": "2026-10-22T06:42:44.982007+00:00",
   "2354d087fff2d01f": "2026-10-22T06:47:44.953589+00:00",
   "9549ab9cc820fe67": "2026-10-22T06:47:44.953589+00:00",
   "3df8d2bce9937b1b": "2026-10-22T06:47:44.953589+00:00",
@@ -766,76 +761,10 @@
   "d6c419ba722e9f08": "2026-10-25T05:36:11.482262+00:00",
   "e06681b03dcc19b8": "2026-10-25T06:06:11.440118+00:00",
   "11e68e6f80ec2b6b": "2026-10-25T06:11:11.486947+00:00",
-  "9a6b99cc8c92ab2a": "2026-10-25T06:26:11.508784+00:00"
+  "9a6b99cc8c92ab2a": "2026-10-25T06:26:11.508784+00:00",
+  "f903f03c84bfd685": "2026-10-25T06:46:11.635084+00:00"
  },
  "recent": [
-  {
-   "title": "Philippines Delivers Jumbo Rate Hike as Inflation Heats Up Anew",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-22/philippines-delivers-jumbo-rate-hike-as-inflation-heats-up-anew",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 8,
-   "ts": "2026-10-22T06:37:45.003491+00:00",
-   "title_ru": "Филиппины резко повысили ставки на фоне нового повышения инфляции",
-   "lead": "The Philippine central bank raised the key rate for a fourth consecutive meeting to rein in resurgent inflation and support a weak peso that’s sunk to a record low.",
-   "lead_ru": "Центральный банк Филиппин повысил ключевую ставку четвертое заседание подряд, чтобы обуздать возрождающуюся инфляцию и поддержать слабый песо, который упал до рекордно низкого уровня.",
-   "tags": [
-    "rates",
-    "inflation"
-   ]
-  },
-  {
-   "title": "Lumpy Jio IPO inflows push rupee into 'overbought' zone just as oil renews rise",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPOVNZbG9QbzVrUDFGaTZHVkJwZ0cyZHRYa0RwQjlwU0xQXzYtc1hDaHZCMjhuLU5nS0o5Uk1BamlZSlB0T0dYU1Y5U1FTRU1YQ2lLNlQyOUF3THZRSElCX0prb1ZrUzZQNm5vUGhnMVo5QVl6NkdyekloV2JIbjl1VWhLWTBrdDV6Yjc5d0x5cFFRWmYxX2RXcVhJTkhrQWpNaE1DbWlHaVU?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-22T06:37:45.003491+00:00",
-   "title_ru": "Неровный приток IPO Jio толкает рупию в зону «перекупленности», в то время как цены на нефть растут",
-   "tags": [
-    "oil"
-   ]
-  },
-  {
-   "title": "BOE Interest Rates Beyond November Clouded by Energy Uncertainty",
-   "link": "https://www.bloomberg.com/news/newsletters/2026-10-22/boe-interest-rates-beyond-november-clouded-by-energy-uncertainty",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-22T06:42:44.982007+00:00",
-   "title_ru": "Процентные ставки Банка Англии после ноября омрачены неопределенностью в сфере энергетики",
-   "lead": "Plus, Barclays announces a £500 million share buyback",
-   "lead_ru": "Кроме того, Barclays объявляет о выкупе акций на 500 миллионов фунтов стерлингов.",
-   "tags": [
-    "rates"
-   ]
-  },
-  {
-   "title": "Indonesian sovereign fund Danantara says it has bought stocks after market rout",
-   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOdmtKSk9BTE9RNjJhbWZ2dVdFZlAyQzhnUHBXT2RGS3JHb3ltcmpyanlwQ2RJZmJvaHhvaHRTelQtdVdfY29USi0tRnRQdmw2enFWSzBSSzMwZEVkRGtldGhmV2tnbFVmLXFaY1NpNzdKN0xMN1dDSTVUdHNGOGtBazgzTkRDQmh2RjNFNW5HNkg1UkdUb3hndFZDRnUzRncwSzNGX185LU9yV0IxZjkzenhTWTNpMDBWWC13Z3Q4ZWFEc1FUVElJb3k0TnI1Nmc?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-22T06:42:44.982007+00:00",
-   "title_ru": "Индонезийский суверенный фонд Danantara заявил, что купил акции после обвала рынка",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "IMF sees 1.3% contraction in Middle East, North Africa and Pakistan in 2026",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQc0pwaXRXY250QlJhREhaOWJuV1A0a0tWNGRXLW9VdjlFS2dSR09IdFNSRnA1VnotZW9ydlUwYy1GN3Rhb3JmaDlFRzZROVZyUUtqcUg4NzN3S1lfRzBtMERGcmREaFdvUXFwS2pCSXlLdzVUaDRLVm91TVZ4c1p2Q2xwSEZudGhuRkVhOGJLUDY0SUhuMFlVeFkyOEtWYlBvOVFBQW9lV2IzSTFxb09lT0k4d2tmZlk?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-22T06:42:44.982007+00:00",
-   "title_ru": "МВФ прогнозирует сокращение на 1,3% на Ближнем Востоке, в Северной Африке и Пакистане в 2026 году"
-  },
   {
    "title": "Japanese investors sell foreign bonds for fifth straight week, eye home market",
    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQaWFpYXNMY0l3alFBQnlRTUNpdUl4aUlld1F2VmxJb0ZETkVqM0FNWHFqQlZxSHhNM3VhdnlpQW1CV3I1ZDRWNGhQVXJ3QVFyX294cHFScXYtNVEzYjlyUHotQm5vWHRlQXQ4SW03cDZSaWRxSXJtQ0Jaams2eWxVYXhEdEUxcFdnRnRPdS0yRy05ODkyMGMtZk1DSHZsRjVtM0I5bXRkLVlqVkRHUV9HQmZTWEdrRTBUMTNFbnF1RTFNTHg2amQ4?oc=5",
