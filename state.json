@@ -601,7 +601,9 @@
   "68e0a36c4fe143ca": "2026-10-25T22:13:57.734064+00:00",
   "c293588cd08c1eda": "2026-10-25T22:18:52.445586+00:00",
   "493b1bc52cef48c9": "2026-10-25T22:18:52.445586+00:00",
-  "bbaf0e8eaa68ddce": "2026-10-25T22:23:52.455083+00:00"
+  "bbaf0e8eaa68ddce": "2026-10-25T22:23:52.455083+00:00",
+  "a0d56c6adcf40c95": "2026-10-25T22:38:52.460676+00:00",
+  "3c87eac76bfb315a": "2026-10-25T22:38:52.460676+00:00"
  },
  "recent": [
   {
@@ -5462,6 +5464,34 @@
    "title_ru": "Фьючерсы на акции в США растут по мере падения цен на сырую нефть: рыночная конъюнктура",
    "lead": "US stock futures advanced and crude oil retreated as traders weighed the latest geopolitical developments over Iran and looked ahead to a string of central bank rate decisions this week.",
    "lead_ru": "Фьючерсы на акции США выросли, а сырая нефть отступила, поскольку трейдеры взвесили последние геополитические события вокруг Ирана и ожидали принятия ряда решений о ставках центрального банка на этой неделе.",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "Latest Oil Market News and Analysis for Oct. 26",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-25/latest-oil-market-news-and-analysis-for-oct-26",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-25T22:38:52.460676+00:00",
+   "title_ru": "Последние новости и аналитика нефтяного рынка за 26 октября",
+   "lead": "Oil edged lower from a six-month high, even as US President Donald Trump signaled he was prepared to resume attacks on Iran.",
+   "lead_ru": "Нефть упала с шестимесячного максимума, даже когда президент США Дональд Трамп дал понять, что готов возобновить атаки на Иран.",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "Oil Edges Lower From Six-Month High as Traders Assess Iran Risks",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNaW5ZbFF1Z3RzeDVBb3VnYW8tWVJvR0ZLSVByR0Z4M1R1YktrbWNNVXdjaXJydERES0R2Q0lzR1BXZnBPYndtbXdtR2NRaHVFc2FvYU4tUmRCOS1xWXA3clVqeVZlSS1aVFhfYjFXbzNpQTJxRzQyYVVlUlJCbWN3LS1SR2xyV1FYYlpNaXZWQkppQUNYSF9vZENvQlMxZk9QaHVmU3dJTGhoR3pjdlpSQnd3?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-25T22:38:52.460676+00:00",
+   "title_ru": "Нефтяные края снижаются с шестимесячного максимума, поскольку трейдеры оценивают риски Ирана",
    "tags": [
     "oil"
    ]
@@ -11882,7 +11912,6 @@
    "0001100682-26-000151",
    "0001022079-26-000115",
    "0000923120-26-000029",
-   "0000923120-26-000030",
    "0000923120-26-000025",
    "0001493152-26-048313",
    "0001585521-26-000154",
@@ -11911,13 +11940,14 @@
    "0000923120-26-000024",
    "0001801661-26-000126",
    "0001493152-26-048319",
+   "0001193125-26-430729",
    "0001022079-26-000111",
    "0001585521-26-000153",
    "0001193125-26-430728",
    "0001022079-26-000113",
    "0001022079-26-000110",
    "0001493152-26-048315",
-   "0001193125-26-430729"
+   "0000923120-26-000030"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
