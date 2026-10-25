@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "90e642875f228126": "2026-10-22T18:44:40.183881+00:00",
-  "b6f98e8d2a15aa6f": "2026-10-22T18:44:40.183881+00:00",
   "6f756255b81d9490": "2026-10-22T18:49:40.277614+00:00",
   "29a38bb5eab7bea9": "2026-10-22T18:54:40.177617+00:00",
   "85a0ca39ae4eefd6": "2026-10-22T19:04:40.244080+00:00",
@@ -628,7 +626,9 @@
   "183b9f7c60dcc637": "2026-10-25T17:13:25.654395+00:00",
   "e32a15d29a559eac": "2026-10-25T17:33:25.677170+00:00",
   "bc192c2eb8e3db87": "2026-10-25T17:49:01.484794+00:00",
-  "84eb73c203290f7e": "2026-10-25T17:58:25.695204+00:00"
+  "84eb73c203290f7e": "2026-10-25T17:58:25.695204+00:00",
+  "6643d8abc7ff4a77": "2026-10-25T18:48:25.712051+00:00",
+  "223efdfd6db72bda": "2026-10-25T18:48:25.712051+00:00"
  },
  "recent": [
   {
@@ -5739,6 +5739,29 @@
    "tags": [
     "rates"
    ]
+  },
+  {
+   "title": "A 50% Yield? The AI Trade Is Getting Wild After CoreWeave",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOeXh0eDlOMEdYR0VYMVlwOC1vUXFGMlJLUlhSaG5iRFlpZjNUQmtISUxWdk04SlBxanh4Sjk2TEhFb3dwRUY5S09VMDRENzlpTGcyX1hRZzdKQ0FwX1dzREhTMHppeXBQYVJZVlM5X2JaSnhZNUlBdTZpSWtJc3dfMERxV0daREJWbXdDb2Jxc2hQNS1YcUtZSHJsY1BoclY0WXg4dWNqQWdpUU9WRGc?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-25T18:48:25.712051+00:00",
+   "title_ru": "50% доходности? Сделка с ИИ становится дикой после CoreWeave",
+   "tags": [
+    "bonds"
+   ]
+  },
+  {
+   "title": "Hassett Says US-Canada Trade Talks Are ‘Very Close’ to a Deal",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNVmdYU2JKSktsSURRM0x5WDJUUXRIWlp6d2hEMEdHRHpEOEpHcnpIemdUdXp6ZDFCWFBzSGxqcU5OT3cza0xnS0ZFZGFGdGkxdU1TdWg2MnJScTVIWWtwNmw5NDN4UFN1Y3oyWkJtVXFLdXlNYjdtOWNCNE1ydVdKcTNwdDJ0aW0yWTFleTVLRVZNaVlHemg4SGswRW9tSDlSQXc4c0ZjNTNHb3dGcURF?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-25T18:48:25.712051+00:00",
+   "title_ru": "Хассетт говорит, что торговые переговоры между США и Канадой «очень близки» к сделке"
   }
  ],
  "last_digest": "2026-10-25",
@@ -5763,7 +5786,7 @@
   "ECB": 0,
   "Fed": 0,
   "IMF": 0,
-  "Kommersant": 0,
+  "Kommersant": 1,
   "RBC": 0,
   "US Labor Statistics (BLS)": 0
  },
@@ -12147,8 +12170,8 @@
   "sec_seen": [
    "0001493152-26-048310",
    "0000923120-26-000026",
-   "0001022079-26-000116",
    "0001801661-26-000126",
+   "0001022079-26-000116",
    "0001493152-26-048315",
    "0001193125-26-430732",
    "0000923120-26-000025",
