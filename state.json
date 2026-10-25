@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "1c648ed7e4cdff5d": "2026-10-22T17:54:40.185170+00:00",
-  "c5bac7e758a1e849": "2026-10-22T17:59:40.172740+00:00",
-  "c756aa60e94d8a51": "2026-10-22T17:59:40.172740+00:00",
-  "cdea6c71e0280959": "2026-10-22T17:59:40.172740+00:00",
   "1626fc46d3aea473": "2026-10-22T18:04:40.176159+00:00",
   "402e83ee1c281234": "2026-10-22T18:04:40.176159+00:00",
   "176f6fccfdf0952f": "2026-10-22T18:14:40.201196+00:00",
@@ -639,59 +635,10 @@
   "d342d6b9347c20b5": "2026-10-25T17:08:25.737171+00:00",
   "183b9f7c60dcc637": "2026-10-25T17:13:25.654395+00:00",
   "e32a15d29a559eac": "2026-10-25T17:33:25.677170+00:00",
-  "bc192c2eb8e3db87": "2026-10-25T17:49:01.484794+00:00"
+  "bc192c2eb8e3db87": "2026-10-25T17:49:01.484794+00:00",
+  "84eb73c203290f7e": "2026-10-25T17:58:25.695204+00:00"
  },
  "recent": [
-  {
-   "title": "Тайное станет явным автоматически // Госдума поддержала открытие данных в ЕГРЮЛ после исчезновения у компаний санкционных рисков",
-   "link": "https://www.kommersant.ru/doc/9045194",
-   "sources": [
-    "Kommersant"
-   ],
-   "score": 5,
-   "ts": "2026-10-22T17:54:40.185170+00:00",
-   "title_en": "The secret will become obvious automatically // The State Duma supported the opening of data in the Unified State Register of Legal Entities after the disappearance of sanctions risks for companies",
-   "lead": "Госдума 22 октября одобрила во втором чтении законопроект, упрощающий механизм возобновления доступа к закрытым из-за санкционных рисков данным об организациях из Единого государственного реестра юридических лиц (ЕГРЮЛ).",
-   "lead_en": "On October 22, the State Duma approved in the second reading a bill that simplifies the mechanism for restoring access to data on organizations from the Unified State Register of Legal Entities (USRLE) that was closed due to sanctions risks.",
-   "tags": [
-    "sanctions"
-   ]
-  },
-  {
-   "title": "Yen Jumps as Traders Seek Safety Amid Global Risk Averse Pivot",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-22/yen-outpaces-peers-as-risk-aversion-rises-flows-in-focus",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-22T17:59:40.172740+00:00",
-   "title_ru": "Иена подскочила, поскольку трейдеры ищут безопасности на фоне глобального поворота к неприятию риска",
-   "lead": "The yen outperformed all its major counterparts on Thursday as a selloff in global equities fueled risk aversion and boosted demand for havens.",
-   "lead_ru": "В четверг иена превзошла все основные валюты, поскольку распродажа мировых акций усилила неприятие риска и повысила спрос на активы-убежища.",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "India's markets regulator proposes easing approval rules for some exchange investments",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPandGLVdqR1pHdFN6dlJ4V2RMUGdWV3hycXM2VGhZY01YN19IeFVjOEgweE1mN0lZeU5VVWt6QVJhU3JjN3l5SS1jUlZiTW4tMERHSFhDMHpiRXZMNjl5YUQ5ZmhVUFNvZnVvejBoc2RrUm41dWliRHBHNUhYYjJkTHRPSHhSQkpFZnFBNE5jYmxFbl9Ld0tOTEZEVGFFUUxkRjFTSUk0ZTk3ZU5kdVlfeFZILTZDd2l1b2xZdDc2aw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-22T17:59:40.172740+00:00",
-   "title_ru": "Регулятор рынков Индии предлагает смягчить правила одобрения некоторых биржевых инвестиций"
-  },
-  {
-   "title": "'We will escalate': Indonesian students push to be heard on haze, economy",
-   "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5BY1paNG83bS1DNV8ybG1lVGlYYXJZTkI5ZDdCaVdCRzdpNUZBQkVyYkloTTBmbndGLXRaTDVzQ28yVnJ0NDQ0RWl1dy1QeF9aM3VPaDFXcDV5VW1X?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-22T17:59:40.172740+00:00",
-   "title_ru": "«Мы будем наращивать эскалацию»: индонезийские студенты настаивают на том, чтобы их услышали о дымке и экономике"
-  },
   {
    "title": "Ben Bland on Southeast Asia in a Fragmented World",
    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQeXo2X005ZVRKWjlWa1phRXYzLVZEVUVtVzZIQ1VvaWk2MEdKRFFqQzFoc3hfR3M1dE9uZ3BkbEtqLTgxMGJtTnpTNjlvSVVvUU94MmdHWGdUcTBYYnZlWlpla2lmaGRFTXVQUDUzdlFmWl9zcEc5MzBkYjVWb0Q3V19JalhPcnk4MEhIeVg5Vndudw?oc=5",
@@ -5877,7 +5824,7 @@
    ]
   }
  ],
- "last_digest": "2026-10-24",
+ "last_digest": "2026-10-25",
  "fail_streak": {
   "РБК": 0,
   "МВФ": 0,
@@ -5904,7 +5851,6 @@
   "US Labor Statistics (BLS)": 0
  },
  "charts_sent": [
-  "2026-10-15-21",
   "2026-10-16-09",
   "2026-10-16-21",
   "2026-10-17-09",
@@ -5923,7 +5869,8 @@
   "2026-10-23-21",
   "2026-10-24-09",
   "2026-10-24-21",
-  "2026-10-25-09"
+  "2026-10-25-09",
+  "2026-10-25-21"
  ],
  "calendar": {
   "fetched": "2026-10-25T12:21:42.626408+00:00",
