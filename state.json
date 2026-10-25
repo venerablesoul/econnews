@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "81f89cc16b0fd35a": "2026-10-22T21:05:20.414371+00:00",
-  "0079e32d813cbb96": "2026-10-22T21:10:20.353000+00:00",
   "a409f8ebdb3f8eb3": "2026-10-22T21:25:20.370447+00:00",
   "b566aa5f01dd989a": "2026-10-22T21:30:20.315052+00:00",
   "ef347d046db2cbc2": "2026-10-22T21:35:20.451858+00:00",
@@ -612,32 +610,11 @@
   "3d9e566b3cb9237f": "2026-10-25T20:43:25.693799+00:00",
   "c610c3560e4ec72c": "2026-10-25T20:48:25.688986+00:00",
   "9a0261a88c6e2cf9": "2026-10-25T20:48:25.688986+00:00",
-  "bd4f4e51392381af": "2026-10-25T21:03:25.731887+00:00"
+  "bd4f4e51392381af": "2026-10-25T21:03:25.731887+00:00",
+  "d62ead68c3bd433e": "2026-10-25T21:08:25.684651+00:00",
+  "ad93e424c9145904": "2026-10-25T21:13:25.665405+00:00"
  },
  "recent": [
-  {
-   "title": "Financials, pharma stocks provide non-AI opportunities, says investor",
-   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1NRFNGVjhoNFJYZGd3SVRxa2pJR1I0NkpPazFjMk40aEtOMFJuRmxnOVY1djJzdDlscjlpUENHR0NmZnhKQ3dFcnRJTVJWTnVEVWJRNFcwOTJhb1JaYlprejl0ZFN1dEpyU2dzem4yUkxIYTdmb0RMX3N4cHF3QQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-22T21:05:20.414371+00:00",
-   "title_ru": "Финансовые и фармацевтические компании открывают возможности, не связанные с искусственным интеллектом, говорит инвестор",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "Nebius gets $3.5 billion Citi facility for data center growth",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOMkVEMW1MRy1WVS1lMXhwMmxPV0ZieGVlUXlsaW9hUEczbDlsOUliSktHT1ZVTEdsR2k4YldJWS1ZejJaVDZPRTgxd3NGdUE4TlZ6Rng3WHJwUEVvTDN0NVFXTlJPalhlUTN2T1V5V0ZKMDhEMUhLS2JISkJLbEFXd29ZZldpNHNQV0NqV0U2NmZJYlFCYldqZ29XUy1STnNmWVVhRw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-22T21:10:20.353000+00:00",
-   "title_ru": "Nebius получает от Citi средства на сумму 3,5 миллиарда долларов для развития центров обработки данных"
-  },
   {
    "title": "TD Cowen Analyst on Chipotle Downgrade",
    "link": "https://www.bloomberg.com/news/videos/2026-10-22/td-cowen-analyst-on-chipotle-downgrade-video",
@@ -12012,8 +11989,8 @@
   "sec_seen": [
    "0001493152-26-048310",
    "0000923120-26-000026",
-   "0001022079-26-000116",
    "0001801661-26-000126",
+   "0001022079-26-000116",
    "0001493152-26-048315",
    "0001193125-26-430732",
    "0000923120-26-000025",
