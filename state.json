@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "0b1b2b704ee2bf34": "2026-10-22T08:07:45.001667+00:00",
-  "52e8775d890cc5f9": "2026-10-22T08:07:45.001667+00:00",
-  "afba33024997c404": "2026-10-22T08:07:45.001667+00:00",
   "0124584213bd4494": "2026-10-22T08:12:44.994781+00:00",
   "e2274a27bd883ced": "2026-10-22T08:17:44.996222+00:00",
   "4b576dbd790fa30f": "2026-10-22T08:27:45.012769+00:00",
@@ -745,34 +742,11 @@
   "f903f03c84bfd685": "2026-10-25T06:46:11.635084+00:00",
   "da14b003ae0bda17": "2026-10-25T06:56:11.479301+00:00",
   "a82b46945df8c8cf": "2026-10-25T07:11:11.504017+00:00",
-  "e9d1515acbda2578": "2026-10-25T07:16:11.517599+00:00"
+  "e9d1515acbda2578": "2026-10-25T07:16:11.517599+00:00",
+  "76a3c274aa2c686e": "2026-10-25T08:11:42.573257+00:00",
+  "c5c7573e5359adbf": "2026-10-25T08:11:42.573257+00:00"
  },
  "recent": [
-  {
-   "title": "Barclays cutting 5,000 jobs as it increases reliance on AI",
-   "link": "https://www.bbc.co.uk/news/articles/cm4g1p347qgxo?at_medium=RSS&at_campaign=rss",
-   "sources": [
-    "BBC"
-   ],
-   "score": 3,
-   "ts": "2026-10-22T08:07:45.001667+00:00",
-   "title_ru": "Barclays сокращает 5000 рабочих мест из-за увеличения зависимости от искусственного интеллекта",
-   "lead": "The bank says it is using more AI leading to a 5% reduction in its workforce.",
-   "lead_ru": "Банк заявляет, что использует больше искусственного интеллекта, что приводит к сокращению штата сотрудников на 5%.",
-   "tags": [
-    "jobs"
-   ]
-  },
-  {
-   "title": "India's PC Jeweller jumps on rise in quarterly profit and debt-free status",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZy1LTFhqaXJMNGRLLTBybTFMcEp3eEdqSHJqTGE1M0ZnUGF1ckJnSGd0dk5fOHA3VmZYVkE2N1NQemxOSlpSMDRocGRjTzJMcnlDX0UxUVAwMUUyMzc3Zm1Uc2twcjl1Q01uRGl0WElzNmRBWHFDRnlxYkxZSk8tRi10NUxsTHJSUmx3S3IyVXZwc1RwVGdqRjBUaGZCc2hBV1RqRVVCeHBPUmZ2WGZGZw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-22T08:07:45.001667+00:00",
-   "title_ru": "Индийская PC Jeweller резко выросла благодаря росту квартальной прибыли и состоянию отсутствия долгов"
-  },
   {
    "title": "Turkey Consumer Confidence Slumps Most in Years After Fund Rout",
    "link": "https://www.bloomberg.com/news/articles/2026-10-22/turkey-consumer-confidence-slumps-most-in-years-after-fund-rout",
@@ -7143,6 +7117,18 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "Goldman Cuts Kospi 12-Month Target by 25% as AI Trade Unravels",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-25/goldman-cuts-kospi-12-month-target-by-25-as-ai-trade-unravels",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-25T08:11:42.573257+00:00",
+   "title_ru": "Goldman снижает 12-месячную цель Kospi на 25% из-за развала торговли искусственным интеллектом",
+   "lead": "Goldman Sachs Group Inc. strategists slashed their target for South Korea’s Kospi Index by 25%, after raising it repeatedly this year, as concerns over the artificial intelligence trade intensify.",
+   "lead_ru": "Стратеги Goldman Sachs Group Inc. снизили целевой показатель южнокорейского индекса Kospi на 25% после неоднократного повышения его в этом году на фоне усиления опасений по поводу торговли искусственным интеллектом."
   }
  ],
  "last_digest": "2026-10-24",
@@ -13568,9 +13554,9 @@
    "0001100682-26-000151",
    "0001493152-26-048319",
    "0001022079-26-000114",
+   "0001231919-26-001497",
    "0001398344-26-018733",
    "0001493152-26-048313",
-   "0002160363-26-000004",
    "0001193125-26-430730",
    "0001493152-26-048321",
    "0000923120-26-000028",
@@ -13594,7 +13580,7 @@
    "0001493152-26-048309",
    "0000950103-26-016119",
    "0000923120-26-000029",
-   "0001231919-26-001497",
+   "0002160363-26-000004",
    "0000923120-26-000024"
   ],
   "errors": {
