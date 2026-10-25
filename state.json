@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "ef7ca1a90574c276": "2026-10-22T02:41:59.937692+00:00",
-  "886293b1d3443b68": "2026-10-22T02:41:59.937692+00:00",
   "483722d2523223f9": "2026-10-22T02:51:59.976112+00:00",
   "00a65c52d510b49d": "2026-10-22T02:51:59.976112+00:00",
   "d83ce41a2739da11": "2026-10-22T02:51:59.976112+00:00",
@@ -800,22 +798,10 @@
   "60b4ad74af879741": "2026-10-25T01:45:47.243632+00:00",
   "e2f4ca3e21cab0da": "2026-10-25T01:55:47.237519+00:00",
   "8de7718fc74f60ae": "2026-10-25T02:06:11.515211+00:00",
-  "70a47a740b7d4a19": "2026-10-25T02:16:11.568507+00:00"
+  "70a47a740b7d4a19": "2026-10-25T02:16:11.568507+00:00",
+  "5b5a43504a4dbb47": "2026-10-25T02:51:11.507391+00:00"
  },
  "recent": [
-  {
-   "title": "The World’s Rich Are Finding a New Home for Their Gold in Singapore",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxObUd1Wlg5SlVQZGlEVGcxSUdDcGZNY3J0VG9yUjJEZGFwaG81SVp6NFpRdnV6dmhkS0ZseFNYck9lVzlXSGp5TUd4S2U4Q0pISU9FbkYyRkM2TkhwRnN5RFp6TWNoU2dvN2djNzI5SHpZMTNWbW8yOUxvU2dDM2lpeENuaHNUUDg5RWF2STI3STZtcjk4RVp1TWFZNC1OdUpaYzZJRQ?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-22T02:41:59.937692+00:00",
-   "title_ru": "Богатые люди мира находят новый дом для своего золота в Сингапуре",
-   "tags": [
-    "gold"
-   ]
-  },
   {
    "title": "From groceries to home loans, high oil prices permeate daily life",
    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPam52bzA3TTBVZjZQOC1ISHZJal8xZmcyc3hYZVJEYXpTZ1VUWHBvUVBQZDlKUUlwSFIwWFYtMUxucy1lS1ZRRDZEaW0tZmd5WndsSnNDNVUycTJVYWUyaFVVNDJIZnlfb0tMNGY5dW9BNkU1R0lVOWY0czhfN3pxcUhzejl5SUdLaGlMWFpjWnhWekJ4TWxzM3E2YXo3VVZzbGdCdi1CblkyTzRP?oc=5",
@@ -7826,6 +7812,16 @@
     "markets",
     "tariffs"
    ]
+  },
+  {
+   "title": "UK budget set to hand English mayors new borrowing powers, growth funding",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNU3VRR245SGlYN3JOTVU4QVBwSU1KcWVCSHc0VkhEWXJWZHdqUjRPY3hYaXdneVBlby1VRTBqSFM1WDk5Z2N2WjBGNXFlbzZlbGdLdG94RldrTXFKMldETExwUmp4eEhUbGtfLW5JM1h6TlpaREgyUFBXcnhnam1yX3VKR2dkMVN3d2VwT2R6WUx1c0MzWWRkNDZQTHVYU2x0X2ZoSVpON0sydmNYNjVaRkpOQ3I?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-25T02:51:11.507391+00:00",
+   "title_ru": "Бюджет Великобритании предоставит английским мэрам новые полномочия по заимствованию и финансированию роста"
   }
  ],
  "last_digest": "2026-10-24",
@@ -14150,7 +14146,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-25T01:45:47.243632+00:00",
+  "checked": "2026-10-25T02:46:11.555945+00:00",
   "sec_seen": [
    "0000923120-26-000026",
    "0001193125-26-430729",
