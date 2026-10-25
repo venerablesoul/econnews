@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "b48abfc5fb875e91": "2026-10-22T23:50:20.311504+00:00",
-  "3deb167b5ad56e13": "2026-10-22T23:50:20.311504+00:00",
   "c01f9ddbea5cb378": "2026-10-22T23:55:20.312538+00:00",
   "57ce9caefcf1853a": "2026-10-23T00:00:20.367952+00:00",
   "e53a88575e3f4f15": "2026-10-23T00:15:20.326960+00:00",
@@ -594,38 +592,11 @@
   "450e9e01f225157c": "2026-10-25T23:18:52.525010+00:00",
   "9188fa6d89ea031b": "2026-10-25T23:28:52.459624+00:00",
   "14303ddef5dd7d96": "2026-10-25T23:33:52.575802+00:00",
-  "1f3fabb6308219ff": "2026-10-25T23:38:52.496870+00:00"
+  "1f3fabb6308219ff": "2026-10-25T23:38:52.496870+00:00",
+  "191a01341220ced3": "2026-10-25T23:53:52.427166+00:00",
+  "8559a49272adc70f": "2026-10-25T23:53:52.427166+00:00"
  },
  "recent": [
-  {
-   "title": "Japan Inflation Rises Above BOJ Target Level, Backing Rate Hikes",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-22/japan-inflation-rises-above-boj-target-level-backing-rate-hikes",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 11,
-   "ts": "2026-10-22T23:50:20.311504+00:00",
-   "title_ru": "Инфляция в Японии превысила целевой уровень Банка Японии, что привело к повышению ставок",
-   "lead": "Japan’s key price gauge rose above the Bank of Japan’s target level for the first time this year, supporting the case for a widely expected BOJ interest rate hike in December.",
-   "lead_ru": "Ключевой индикатор цен в Японии впервые в этом году превысил целевой уровень Банка Японии, что подтверждает широко ожидаемое повышение процентной ставки Банком Японии в декабре.",
-   "tags": [
-    "rates",
-    "inflation"
-   ]
-  },
-  {
-   "title": "S&P 500, Nasdaq end lower as revived AI doubts spark tech selloff",
-   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1wd05Tbmh2LVJoWDlXeVU5SzQxT1lCa01MdjlwQjFDbzlfVXBiTnB6LU9kdVRnZUhPSFd5ZkRndlBsOEIzRjFyYjZKd2syZGFhaE0zMmx6SVF4ZHZ0VmN6X2JTUnZFNUNBd2U4ZFlRZUpoNkkyOEh3OEFHemo2dw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 7,
-   "ts": "2026-10-22T23:50:20.311504+00:00",
-   "title_ru": "S&P 500 и Nasdaq завершили снижение, поскольку возрождение сомнений в области искусственного интеллекта спровоцировало распродажу технологических компаний",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Oil Holds Biggest Gain in Week as Saudi Attacks Fan Supply Risks",
    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPZjR5Ukt1bFQ2cG5CR2xEckxfejgwaHhOLWwyTGFRM0xFOUowbGEyUEphdVZFQ2hjaEFLZ3g0ZndDWUxLNzNUN0ZzQUx6a3NtMjZtTG05WDI5cjh1NzlkLVdBQzNqR05ZQURMeE9GWlRuUXA0MDR5alI0N1JrNmtsenhPcGtZcnJwRk1xWlpTQVpuamwwaHdBenB0cTJTZw?oc=5",
@@ -5392,6 +5363,35 @@
    "title_ru": "КОММЕНТАРИЙ: Почему стимулирование Китая продолжает не достигать цели: Маниши Райчаудхури",
    "tags": [
     "China"
+   ]
+  },
+  {
+   "title": "Algeria Votes to Send Troops to Protect Niger’s Oil Facilities",
+   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxONklNclhrcmZic2Q3Q2U2OTdrci15a183WjVkQ2ZxODZkVm9PY0d1QVdGMG1yejZoeFlYNnlkbDVvQXVIU2lkR3lTZk5pVGdpSWRUTVFLbVJwNVVJWENRMlNMVXNtQnBHTF95R19ka1FsTmpBSnp6dGRUMlk2TzVnYzJ4R1c2VWhMYWM4bG1FNGxJdW54VmViclFUcmtZVkhuVTFGVFAtSlRKdjdsbVFydldYUGpYcEdqbm5DSTlTUHpGeHR6cGZHT25YV0pKYjJNNHc?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-25T23:53:52.427166+00:00",
+   "title_ru": "Алжир проголосовал за отправку войск для защиты нефтяных объектов Нигера",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "Инвестиции не лечатся // Минфин США предложил ограничить вложения в китайские биотехнологии",
+   "link": "https://www.kommersant.ru/doc/9060229",
+   "sources": [
+    "Kommersant"
+   ],
+   "score": 3,
+   "ts": "2026-10-25T23:53:52.427166+00:00",
+   "title_en": "Investments cannot be cured // The US Treasury proposed limiting investments in Chinese biotechnologies",
+   "lead": "Правила контроля американских инвестиций за рубежом планируется обновить. Как следует из опубликованного Минфином США проекта, предлагается запретить вложения в китайские биотехнологии, включая разработку лекарств.",
+   "lead_en": "Rules for monitoring American investments abroad are planned to be updated. As follows from the draft published by the US Treasury, it is proposed to ban investments in Chinese biotechnology, including the development of drugs.",
+   "tags": [
+    "China",
+    "Russia"
    ]
   }
  ],
@@ -11810,6 +11810,7 @@
    "0001100682-26-000151",
    "0001022079-26-000115",
    "0000923120-26-000029",
+   "0000923120-26-000030",
    "0000923120-26-000025",
    "0001493152-26-048313",
    "0001585521-26-000154",
@@ -11838,14 +11839,13 @@
    "0000923120-26-000024",
    "0001801661-26-000126",
    "0001493152-26-048319",
-   "0001193125-26-430729",
    "0001022079-26-000111",
    "0001585521-26-000153",
    "0001193125-26-430728",
    "0001022079-26-000113",
    "0001022079-26-000110",
    "0001493152-26-048315",
-   "0000923120-26-000030"
+   "0001193125-26-430729"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
