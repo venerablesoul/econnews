@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "d854ce85cd68ef3a": "2026-10-22T12:13:36.829690+00:00",
-  "e24999e5b3458ee2": "2026-10-22T12:18:36.882654+00:00",
-  "665d1dd9ae2889c7": "2026-10-22T12:18:36.882654+00:00",
   "334ab4734a95ab7b": "2026-10-22T12:23:36.836232+00:00",
   "133bf9b72df8e0b3": "2026-10-22T12:23:36.836232+00:00",
   "bfb74a1c22320b8f": "2026-10-22T12:28:36.842213+00:00",
@@ -698,35 +695,10 @@
   "d2b9cb2c7477536d": "2026-10-25T12:01:42.586679+00:00",
   "5ba3753803d58086": "2026-10-25T12:06:42.607655+00:00",
   "543db73309ee4256": "2026-10-25T12:11:42.613204+00:00",
-  "8b21902f03d7bf09": "2026-10-25T12:11:42.613204+00:00"
+  "8b21902f03d7bf09": "2026-10-25T12:11:42.613204+00:00",
+  "d4dfbbaf1eceace9": "2026-10-25T12:16:42.627115+00:00"
  },
  "recent": [
-  {
-   "title": "Private Credit Group Says Market Fears Are Divorced From Reality",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-22/private-credit-group-says-market-fears-are-divorced-from-reality",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-22T12:13:36.829690+00:00",
-   "title_ru": "Частная кредитная группа говорит, что страхи рынка оторваны от реальности",
-   "lead": "Public sentiment about private credit has become “divorced from the market-wide reality,” according to a report from the Alternative Credit Council, which represents fund managers in the industry.",
-   "lead_ru": "Общественное мнение о частном кредите стало «оторванным от общерыночной реальности», согласно отчету Совета по альтернативному кредитованию, который представляет управляющих фондами в отрасли."
-  },
-  {
-   "title": "Nasdaq futures drop over 1% as AI worries resurface, oil climbs",
-   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNTWxDZDg5X0padGNvb2k2V2ZkX2tEWW9YWkdjeVdMZHNUTlg1MXY4TmUyTDZHdUhNTHFRNWRPRjc2VFlEN3RXTDhNSjhDYmRfTWZGXzdKYXdLejRHNGgwRVdNbmZRUkFhSm9GakxMek56UUZ2OUtqajd6NVkzRkR1VzBNWlo5VWp5NUFkX2phUjlSSFlndUlNNGxvUXlHSm1wMlpTbkRR?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-22T12:18:36.882654+00:00",
-   "title_ru": "Фьючерсы на Nasdaq упали более чем на 1%, поскольку ИИ обеспокоен возобновлением роста, ростом цен на нефть",
-   "tags": [
-    "oil",
-    "markets"
-   ]
-  },
   {
    "title": "Czech Policymaker Sees Tough Rate Hike Call as Energy Risks Grow",
    "link": "https://www.bloomberg.com/news/articles/2026-10-22/czech-policymaker-sees-tough-rate-hike-call-as-energy-risks-grow",
@@ -6560,6 +6532,15 @@
    "tags": [
     "Fed"
    ]
+  },
+  {
+   "title": "FT узнала о последствиях иска против «Dow Jones судоходства» из-за Ормуза",
+   "link": "https://www.rbc.ru/business/25/10/2026/6addbe45d80b3ec512b460ab",
+   "sources": [
+    "RBC"
+   ],
+   "score": 1,
+   "ts": "2026-10-25T12:16:42.627115+00:00"
   }
  ],
  "last_digest": "2026-10-24",
@@ -6611,7 +6592,7 @@
   "2026-10-25-09"
  ],
  "calendar": {
-  "fetched": "2026-10-25T06:21:11.465145+00:00",
+  "fetched": "2026-10-25T12:21:42.626408+00:00",
   "events": [
    {
     "title": "Bank Holiday",
@@ -12964,7 +12945,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-25T11:16:42.611248+00:00",
+  "checked": "2026-10-25T12:16:42.627115+00:00",
   "sec_seen": [
    "0000923120-26-000023",
    "0000923120-26-000027",
