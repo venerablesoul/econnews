@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "491791710e3c787f": "2026-10-22T10:03:36.798521+00:00",
-  "75e6cada690c010e": "2026-10-22T10:08:36.829010+00:00",
-  "a2eba563865f4303": "2026-10-22T10:08:36.829010+00:00",
   "dc7e498fa993f6a0": "2026-10-22T10:13:36.833722+00:00",
   "0501beb846697447": "2026-10-22T10:13:36.833722+00:00",
   "3df85d330489cea2": "2026-10-22T10:23:36.836037+00:00",
@@ -720,29 +717,10 @@
   "a3a59e26a38e5634": "2026-10-25T09:51:42.598857+00:00",
   "d9b5e87586077540": "2026-10-25T09:56:42.799697+00:00",
   "08fb06f1269f0558": "2026-10-25T10:01:42.628333+00:00",
-  "7eae723493ff6aef": "2026-10-25T10:01:42.628333+00:00"
+  "7eae723493ff6aef": "2026-10-25T10:01:42.628333+00:00",
+  "81f96c10c8218294": "2026-10-25T10:06:42.584087+00:00"
  },
  "recent": [
-  {
-   "title": "Japan Scrambles to Patch PHP Flaws as Banks, Airlines Go Offline",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNeENRS2FoZ0dYQmhuX05JNlFSbVFqbThVbjFGenNhNTgzdXFUZjUwSmFRWmQ5aFlIQXZVMmE2R0llSWIwQWFSaVljSDBPbWEwYTJ3cVNxcUlWOTJXSEtwMHJ6ZzlZUDFQcUxsTGpxMExYQTNEZXFva2l6b3FjVFlSWXJwSzJ5cGN0UzBrd0VHbEtqSVNPMGI2WFpmYzVSdlZjNkY0SEhrN3JSbVM0dVJySDlFcUM?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-22T10:03:36.798521+00:00",
-   "title_ru": "Япония пытается исправить недостатки PHP, поскольку банки и авиакомпании отключаются от сети"
-  },
-  {
-   "title": "Brace for a Midterm Market Mess",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxORG9hYXVuV3lHSWk1RnhWUG1PR3VTU3R2a0N2WlBtVjRYbG1WekZEVVFSNkx1SkVWQVYzaDA1ZWhTQWJyN1NSdkdpMXl1QzROSVpLTjROcHNONjhsNE1OR2VUbDZoYjJzSE9HeElURzhsTFE1OXVKT1o5VFVvcjZOdEg4dWZmeWJGM21ZNkxHcXRTM3BDVC1ISVFMRlRCMlIzZzluWklveFk?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-22T10:08:36.829010+00:00",
-   "title_ru": "Готовьтесь к среднесрочному хаосу на рынке"
-  },
   {
    "title": "Europe’s bracing reality on US bond yields",
    "link": "https://www.ft.com/content/92e1700d-7990-4c6a-bd3f-63685df2fdf6?syn-25a6b1a6=1",
@@ -13220,7 +13198,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-25T09:06:42.599131+00:00",
+  "checked": "2026-10-25T10:11:42.602617+00:00",
   "sec_seen": [
    "0000923120-26-000023",
    "0000923120-26-000027",
