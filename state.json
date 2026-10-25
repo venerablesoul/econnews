@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "be78d363b447e8b5": "2026-10-22T11:43:36.886981+00:00",
   "69f578ee4a885db3": "2026-10-22T11:53:36.805498+00:00",
   "7f495757569fe9f5": "2026-10-22T12:08:36.861644+00:00",
   "c30fc9cb03b2882e": "2026-10-22T12:08:36.861644+00:00",
@@ -697,24 +696,10 @@
   "9677dc593c03f769": "2026-10-25T10:51:42.582369+00:00",
   "786a0f45db1a6c9b": "2026-10-25T10:51:42.582369+00:00",
   "5dbc14cfcb2e591a": "2026-10-25T11:06:42.589010+00:00",
-  "e093c8a6e791a480": "2026-10-25T11:36:42.745400+00:00"
+  "e093c8a6e791a480": "2026-10-25T11:36:42.745400+00:00",
+  "2667232859700e8a": "2026-10-25T11:51:42.640271+00:00"
  },
  "recent": [
-  {
-   "title": "Barclays to Cut 5K Jobs, AI Trade Stumbles After Tech Earnings",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-22/the-opening-trade-10-22-2026-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-22T11:43:36.886981+00:00",
-   "title_ru": "Barclays сократит 5 тыс. рабочих мест, торговля ИИ споткнулась о технологические доходы",
-   "lead": "Barclays said it’s cutting 5,000 jobs as part of an effort to reduce costs, adding that artificial intelligence is starting to create efficiency.",
-   "lead_ru": "Barclays заявил, что сокращает 5000 рабочих мест в рамках усилий по сокращению затрат, добавив, что искусственный интеллект начинает создавать эффективность.",
-   "tags": [
-    "jobs"
-   ]
-  },
   {
    "title": "Trump's approval rating on economy hits all-time low as midterm looms: CNBC survey",
    "link": "https://www.cnbc.com/2026/10/22/trump-economic-approval-rating-midterms-poll.html",
@@ -6536,6 +6521,20 @@
    ],
    "score": 1,
    "ts": "2026-10-25T11:36:42.745400+00:00"
+  },
+  {
+   "title": "Netanyahu rebuked for plan to use crypto to bypass economic sanctions",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOdEZIYi1YYkZXSDlUeWN0cUgzdzdudTFUNlF5bHE1eVM4Z1NZeUFxVWZrVXp3d0N1dnRRWU5iYzZSc3J5QlJiQ3c4bllDUXFJcFFFdjNGeTFPbGhxc2VRZjYzV1dLSmtKX2JqQlpfd2U4RTFmWUhoRGFtVUVtVWRSc0NBZjc0NjhUdUVLNmM2dDVBYUxLOWRob3BwWkY2bnBKSlhnSGc0aXVfTEZ5RjBsTDJ3?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-25T11:51:42.640271+00:00",
+   "title_ru": "Нетаньяху раскритиковали за план использования криптовалюты в обход экономических санкций",
+   "tags": [
+    "sanctions",
+    "crypto"
+   ]
   }
  ],
  "last_digest": "2026-10-24",
