@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c01f9ddbea5cb378": "2026-10-22T23:55:20.312538+00:00",
   "57ce9caefcf1853a": "2026-10-23T00:00:20.367952+00:00",
   "e53a88575e3f4f15": "2026-10-23T00:15:20.326960+00:00",
   "e126388b082457fa": "2026-10-23T00:20:20.302499+00:00",
@@ -594,22 +593,13 @@
   "14303ddef5dd7d96": "2026-10-25T23:33:52.575802+00:00",
   "1f3fabb6308219ff": "2026-10-25T23:38:52.496870+00:00",
   "191a01341220ced3": "2026-10-25T23:53:52.427166+00:00",
-  "8559a49272adc70f": "2026-10-25T23:53:52.427166+00:00"
+  "8559a49272adc70f": "2026-10-25T23:53:52.427166+00:00",
+  "298b2348dddec91b": "2026-10-25T23:58:52.476177+00:00",
+  "a27a72704eea99b3": "2026-10-25T23:58:52.476177+00:00",
+  "99870d45ec7c3d18": "2026-10-25T23:58:52.476177+00:00",
+  "1e6c6dfa419ebacc": "2026-10-25T23:58:52.476177+00:00"
  },
  "recent": [
-  {
-   "title": "Oil Holds Biggest Gain in Week as Saudi Attacks Fan Supply Risks",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPZjR5Ukt1bFQ2cG5CR2xEckxfejgwaHhOLWwyTGFRM0xFOUowbGEyUEphdVZFQ2hjaEFLZ3g0ZndDWUxLNzNUN0ZzQUx6a3NtMjZtTG05WDI5cjh1NzlkLVdBQzNqR05ZQURMeE9GWlRuUXA0MDR5alI0N1JrNmtsenhPcGtZcnJwRk1xWlpTQVpuamwwaHdBenB0cTJTZw?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-22T23:55:20.312538+00:00",
-   "title_ru": "Нефть продемонстрировала самый большой рост за неделю, поскольку Саудовская Аравия атакует риски поставок",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "CodeCoin Launches the World's First \"Licensed Stablecoin + Quantum Encryption\" Visa Consumer Card During the IMF Annual Meetings",
    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPTkFBRHFHZ3ZjRUp2SWpoUkxnZmx2bmNjaXp0MDlxaFJPU3dvNkVsWEl4MDdaQlJyVDdtd1dIa3RyRVJCaEFSdUJCRmtseDdfSzM2Wk95QkpCemE3QkpVSDcwUzFvVS1EUTFSY2JrbzM2YmhDMWZ1bHVSaU5wdDZTSXU3aW1ZUGN2QWRqTXFIWkRFM0lwWnZOVVgxWjE5LUJ5LVk1WA?oc=5",
@@ -5392,6 +5382,52 @@
    "tags": [
     "China",
     "Russia"
+   ]
+  },
+  {
+   "title": "Gold Steadies After Weekly Drop as Focus Shifts to Fed Meeting",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-25/gold-steadies-after-weekly-drop-as-focus-shifts-to-fed-meeting",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-25T23:58:52.476177+00:00",
+   "title_ru": "Золото стабилизируется после недельного падения, поскольку фокус смещается на заседание ФРС",
+   "lead": "Gold steadied after its biggest weekly drop since June, with traders weighing stubbornly high energy prices ahead of the Federal Reserve’s upcoming policy meeting.",
+   "lead_ru": "Золото стабилизировалось после самого большого недельного падения с июня, поскольку трейдеры упорно взвешивают высокие цены на энергоносители в преддверии предстоящего заседания Федеральной резервной системы по политике.",
+   "tags": [
+    "Fed",
+    "gold"
+   ]
+  },
+  {
+   "title": "Goldman Says Yen Becoming Better Hedge Against AI Market Shock",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-25/goldman-says-yen-becoming-better-hedge-against-ai-market-shock",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-25T23:58:52.476177+00:00",
+   "title_ru": "Goldman говорит, что иена становится лучшей защитой от шока на рынке искусственного интеллекта",
+   "lead": "The yen is becoming a more effective hedge against an artificial intelligence-driven market shock as changes in Japan’s policy backdrop reduce the risk of the currency weakening sharply when global yields rise, according to…",
+   "lead_ru": "По данным…",
+   "tags": [
+    "bonds"
+   ]
+  },
+  {
+   "title": "Baht to Rebound on Inflows Into Nation’s Bonds, Analysts Say",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-25/baht-to-rebound-on-inflows-into-nation-s-bonds-analysts-say",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-25T23:58:52.476177+00:00",
+   "title_ru": "Аналитики говорят, что бат восстановится благодаря притоку средств в государственные облигации",
+   "lead": "Thailand’s baht may be nearing a turning point after a bruising eight months, with analysts seeing scope for a rebound as foreign money returns to the nation’s bonds and an improving current account supports the currency.",
+   "lead_ru": "Курс тайского бата, возможно, приближается к поворотному моменту после тяжелых восьми месяцев, при этом аналитики видят возможности для восстановления, поскольку иностранные деньги возвращаются в облигации страны, а улучшение текущего счета поддерживает валюту.",
+   "tags": [
+    "bonds"
    ]
   }
  ],
@@ -11810,7 +11846,6 @@
    "0001100682-26-000151",
    "0001022079-26-000115",
    "0000923120-26-000029",
-   "0000923120-26-000030",
    "0000923120-26-000025",
    "0001493152-26-048313",
    "0001585521-26-000154",
@@ -11839,13 +11874,14 @@
    "0000923120-26-000024",
    "0001801661-26-000126",
    "0001493152-26-048319",
+   "0001193125-26-430729",
    "0001022079-26-000111",
    "0001585521-26-000153",
    "0001193125-26-430728",
    "0001022079-26-000113",
    "0001022079-26-000110",
    "0001493152-26-048315",
-   "0001193125-26-430729"
+   "0000923120-26-000030"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
