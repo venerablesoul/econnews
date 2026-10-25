@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "149fd17d22358dc0": "2026-10-22T05:32:45.008961+00:00",
   "63309e8cfffa21df": "2026-10-22T05:42:45.004577+00:00",
   "31cd63bafc8c07eb": "2026-10-22T05:42:45.004577+00:00",
   "8a337b851b1e12f0": "2026-10-22T05:47:44.976849+00:00",
@@ -776,24 +775,11 @@
   "c6ea679dd8debddf": "2026-10-25T03:26:11.495671+00:00",
   "43a97c4521d79466": "2026-10-25T04:06:11.511052+00:00",
   "177ee20d981065d6": "2026-10-25T04:41:11.514310+00:00",
-  "c619ef7a9d8c81dc": "2026-10-25T05:31:11.525439+00:00"
+  "c619ef7a9d8c81dc": "2026-10-25T05:31:11.525439+00:00",
+  "3ddee3342475be14": "2026-10-25T05:36:11.482262+00:00",
+  "d6c419ba722e9f08": "2026-10-25T05:36:11.482262+00:00"
  },
  "recent": [
-  {
-   "title": "Woman 'scared to turn heating on' due to oil cost",
-   "link": "https://www.bbc.co.uk/news/articles/cmgel220j7nvo?at_medium=RSS&at_campaign=rss",
-   "sources": [
-    "BBC"
-   ],
-   "score": 3,
-   "ts": "2026-10-22T05:32:45.008961+00:00",
-   "title_ru": "Женщина «боится включать отопление» из-за дороговизны нефти",
-   "lead": "Roslynn Garner-Gatley starts using a hot water bottle, bed socks and earlier bedtimes to stay warm.",
-   "lead_ru": "Рослинн Гарнер-Гатли начинает использовать грелку, носки и ложиться спать раньше, чтобы согреться.",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "Treasuries Climb With Yen as AI Trade Jitters Fuel Haven Bid",
    "link": "https://www.bloomberg.com/news/articles/2026-10-22/long-end-us-yield-hits-one-month-low-as-ai-fears-fuel-haven-bid",
@@ -7530,6 +7516,16 @@
    "score": 3,
    "ts": "2026-10-25T05:31:11.525439+00:00",
    "title_ru": "Португальская полиция очистила лагерь жилищных протестов в Лиссабоне и произвела аресты"
+  },
+  {
+   "title": "Sonia Carrillo, West Bay Imports Inc: Profile and Biography",
+   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE80NVFYQkpPc2J3VTNfQXRiVmFHaThNZUt2Vjh1RVZlT1A2Ty1WVjR5ZWVpUFd2ajhZSEtvLVBqYm1fS2ZUNkZTTjZYLUVkRzdfZGdVMjBISkozN2FuOVZSRUhnRlB1VWRjeDRQeDF1VUh6V28?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-25T05:36:11.482262+00:00",
+   "title_ru": "Соня Каррильо, West Bay Imports Inc: профиль и биография"
   }
  ],
  "last_digest": "2026-10-24",
@@ -13865,9 +13861,9 @@
    "0001585521-26-000153",
    "0001851564-26-000045",
    "0001022079-26-000111",
-   "0001231919-26-001497",
-   "0000923120-26-000030",
    "0001493152-26-048314",
+   "0000923120-26-000030",
+   "0001231919-26-001497",
    "0001833511-26-000042",
    "0001022079-26-000110",
    "0001100682-26-000151",
