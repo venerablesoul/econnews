@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "bcaca8940d77e732": "2026-10-22T05:57:45.065252+00:00",
-  "b0d8e1058f313f3a": "2026-10-22T05:57:45.065252+00:00",
   "7a4dfa4b3a1ddb8e": "2026-10-22T06:02:44.976895+00:00",
   "39efd63ba7519f02": "2026-10-22T06:02:44.976895+00:00",
   "f3cf90883d47586d": "2026-10-22T06:07:45.002854+00:00",
@@ -775,29 +773,6 @@
   "d6c419ba722e9f08": "2026-10-25T05:36:11.482262+00:00"
  },
  "recent": [
-  {
-   "title": "FTSE 100 Live: UK Stocks Set for Losses as Global Equities Decline",
-   "link": "https://www.bloomberg.com/news/live-blog/2026-10-22/ftse-100-live-pound-gilts-barclays-sainsbury-ai-trade-nestle-oil-prices-hormuz-trump-iran-what-s-moving-uk-markets-right-now-markets-today",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-22T05:57:45.065252+00:00",
-   "title_ru": "FTSE 100 в реальном времени: акции Великобритании потерпят убытки на фоне падения мировых фондовых рынков",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "Indonesia issues record fines to companies over stock market violations",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNY3MzeE9TNmZPQTI1dUhlSW9PZktuNzdWOUFsdnFkbkcxT01LMjZwRHJEU0xVVU84eERjYjhmcGd4X3FjVnM2NXJKWVptM2RfaE9MeXpraE5oT1BFenV3NTZxR2ptOWFmYkJUYmJmRVpieGhEX0VHRmxYQ2NMTzdwYmRuTUZ4OWxmLVpLZTJNS040TVJjOUIwcDdrbDlXZUh6RU1wNGhSWVV5WGtpWnIzVERpVEt2MWtub2h2Q3JId18?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-22T05:57:45.065252+00:00",
-   "title_ru": "Индонезия наложила рекордные штрафы на компании за нарушения на фондовом рынке"
-  },
   {
    "title": "Using rupee as stabiliser can hurt real economy, ex-Indian central bank official says",
    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOWFBSTnBrOGQ5c0tGLS13aFl3YTZ3RTVtNkxVcWpjRF84TUcxMHBwZnZpZkxZR29nTHNKQ3Y4U3NKNkRKNVJvVGFkclo1U183czhXcjNTaDFINzR0eFdpOExLZVVlT1g1S29TdnVSR001QjY2QUwxQ0JaRVhWenR1U2pmZzd1U2FQTzBuZnQ3Mlo5dmlGZVdjelpySk1sMWFacWpGbVdSbUtvc0RhemprbDZmSlMxUzdUcTZXdG5aT29oQQ?oc=5",
@@ -7512,7 +7487,6 @@
   "US Labor Statistics (BLS)": 0
  },
  "charts_sent": [
-  "2026-10-15-09",
   "2026-10-15-21",
   "2026-10-16-09",
   "2026-10-16-21",
@@ -7531,7 +7505,8 @@
   "2026-10-23-09",
   "2026-10-23-21",
   "2026-10-24-09",
-  "2026-10-24-21"
+  "2026-10-24-21",
+  "2026-10-25-09"
  ],
  "calendar": {
   "fetched": "2026-10-25T00:20:47.266323+00:00",
@@ -8240,7 +8215,7 @@
   "USD|2026-10-16T03:30:00+00:00|Fed Chairman Warsh Speaks",
   "GBP|2026-10-21T06:00:00+00:00|CPI y/y"
  ],
- "last_morning": "2026-10-24",
+ "last_morning": "2026-10-25",
  "all_down_alerted": false,
  "trades": {
   "congress": [
@@ -13807,7 +13782,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-25T04:56:11.532542+00:00",
+  "checked": "2026-10-25T06:01:11.501338+00:00",
   "sec_seen": [
    "0000923120-26-000026",
    "0001193125-26-430729",
@@ -13818,9 +13793,9 @@
    "0001585521-26-000153",
    "0001851564-26-000045",
    "0001022079-26-000111",
-   "0001493152-26-048314",
-   "0000923120-26-000030",
    "0001231919-26-001497",
+   "0000923120-26-000030",
+   "0001493152-26-048314",
    "0001833511-26-000042",
    "0001022079-26-000110",
    "0001100682-26-000151",
