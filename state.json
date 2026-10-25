@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "f3cf90883d47586d": "2026-10-22T06:07:45.002854+00:00",
   "d2fe128c9cb9ac05": "2026-10-22T06:12:44.975528+00:00",
   "4b8e2b2b105b8733": "2026-10-22T06:12:44.975528+00:00",
   "1bab1e0497783a74": "2026-10-22T06:17:45.021768+00:00",
@@ -769,22 +768,10 @@
   "c619ef7a9d8c81dc": "2026-10-25T05:31:11.525439+00:00",
   "3ddee3342475be14": "2026-10-25T05:36:11.482262+00:00",
   "d6c419ba722e9f08": "2026-10-25T05:36:11.482262+00:00",
-  "e06681b03dcc19b8": "2026-10-25T06:06:11.440118+00:00"
+  "e06681b03dcc19b8": "2026-10-25T06:06:11.440118+00:00",
+  "11e68e6f80ec2b6b": "2026-10-25T06:11:11.486947+00:00"
  },
  "recent": [
-  {
-   "title": "India's Mideast oil imports return to pre-war levels in September",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNRl9GVUFVbTBqSFIzbnJpZmJ0c3Q5ZFJlQ0hQUkkwZW5aVDdVWTMwczBlRFRTbF9zM0NNODcyWG9PUTg5WXZKOXRfSUdJSXhHM1FPcFhUOTVmb0pIUHh5Rl9tYldSWDd1all5UV9fV2VMSmNxSUU4anJpUVVvMkFadHpQcmwxdFhRSHlvSXhpMEY1bXNkV2NnUnVNelltUHVRQjFzWE14TWZVVnhrRndv?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-22T06:07:45.002854+00:00",
-   "title_ru": "Импорт ближневосточной нефти Индии в сентябре вернулся к довоенному уровню",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "Oil Market Crunch Could Happen in Months: BofA's Blanch",
    "link": "https://www.bloomberg.com/news/videos/2026-10-22/oil-market-crunch-could-happen-in-months-bofa-s-blanch-video",
@@ -7449,6 +7436,19 @@
    "title_ru": "Четыре способа, которыми лейбористы могут собрать деньги в бюджет без повышения подоходного налога",
    "lead": "Chancellor John Healey may need to raise money to boost his fiscal headroom - BBC Verify examines what options could be on the table.",
    "lead_ru": "Канцлеру Джону Хили, возможно, придется собрать деньги, чтобы увеличить свой финансовый запас - BBC Verify изучает, какие варианты могут быть на столе."
+  },
+  {
+   "title": "UAE Shuts More Beaches as It Deals with Oil Spill in Gulf",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNYlo3d3ZWMXZXcGtBMXF1dU9iRUlyNE1VUHVoVXVuR1Q2T2J3Rm5Fd1JWN003U3h2d1VSaktRUlJMTmRJekN3WFd5bHg4U2JzdGthUzIwZEVRNW80cnY3ZTFEQWx5MmpKSlBBVGNYZ2FWYW91VEhBQWI5SzU5THRrMGJtUVhjdk1SOHhsaTZudEd2MTdhZzJUWVdBNFJuWmJWVS1qSGtHZXB0cDRod3JPNmdUNF9IbGFDMVBwenFBYWhtM3N4dnQtWExvdw?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-25T06:11:11.486947+00:00",
+   "title_ru": "ОАЭ закрывают все больше пляжей из-за разлива нефти в Персидском заливе",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-24",
@@ -7471,7 +7471,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 0,
+  "Fed": 1,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
@@ -13784,9 +13784,9 @@
    "0001585521-26-000153",
    "0001851564-26-000045",
    "0001022079-26-000111",
-   "0001493152-26-048314",
-   "0000923120-26-000030",
    "0001231919-26-001497",
+   "0000923120-26-000030",
+   "0001493152-26-048314",
    "0001833511-26-000042",
    "0001022079-26-000110",
    "0001100682-26-000151",
