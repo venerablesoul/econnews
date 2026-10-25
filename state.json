@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "5389bf2d622105a7": "2026-10-22T09:03:36.840363+00:00",
-  "c08ba1f8d87ee8c8": "2026-10-22T09:03:36.840363+00:00",
-  "02525cac2985b44d": "2026-10-22T09:08:36.820098+00:00",
-  "8c05c3eef0138a03": "2026-10-22T09:08:36.820098+00:00",
   "eb45cbfa4760b820": "2026-10-22T09:18:36.866981+00:00",
   "552f6a9cc616f445": "2026-10-22T09:18:36.866981+00:00",
   "18efa2d20e9bc1aa": "2026-10-22T09:23:36.851644+00:00",
@@ -737,56 +733,6 @@
   "0b1b2b704ee2bf34": "2026-10-25T08:16:42.612480+00:00"
  },
  "recent": [
-  {
-   "title": "Barclays to cut 5,000 jobs this year",
-   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNNnpycDlZTWVVLTN4MW5nX2gydHZsVU5iZXlqdVktS3J0d1A2Slp3U1VOWng3bGdla19QV1FQbnpOZVdpV3FLUFh5UUx3dldxR3dLZEhPcWlRZG1qQjZJb2FBQXZINlFHbUE0MjB2Z0lvbjlyUGNXSUdfNG9VdVc0d1I4dHFaZXFjeHF6RVZwYW5hZFl4aWc?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-22T09:03:36.840363+00:00",
-   "title_ru": "Barclays сократит 5000 рабочих мест в этом году",
-   "tags": [
-    "jobs"
-   ]
-  },
-  {
-   "title": "Россияне взяли рекордное за два года количество кредитов наличными в сентябре",
-   "link": "https://www.kommersant.ru/doc/9044615",
-   "sources": [
-    "Kommersant"
-   ],
-   "score": 3,
-   "ts": "2026-10-22T09:03:36.840363+00:00",
-   "title_en": "Russians took out a two-year record number of cash loans in September",
-   "lead": "В сентябре банки выдали россиянам 2,42 млн кредитов наличными, что на 53% больше по сравнению с аналогичным периодом 2025 года — 1,58 млн.",
-   "lead_en": "In September, banks issued 2.42 million cash loans to Russians, which is 53% more than the same period in 2025 — 1.58 million.",
-   "tags": [
-    "Russia"
-   ]
-  },
-  {
-   "title": "Bitcoin Falls Below $83,000 as AI Jitters Weigh on Sentiment",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQSEg5MlR0cUtacXN1aGtzX2FxMFdqYkhhSGNPQnhkZHNLb0FqSVNuQS1FdHViQi0xcVlpeUhHUFpYRHM5YUkxVWtfV1ZkTExvbUhDMm52eVFJYldwQ1hFUWNNeXVWVU8zcFJIWkZ4RTV1S3BTUEVNS0htMjVUaFU3cHNoUzZYSk4tWmJLSERYUm5kaElhdnBfQ1BSTFIwNHJWcXU0a3FBXy1nZDd6X2U4?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-22T09:08:36.820098+00:00",
-   "title_ru": "Биткойн упал ниже $83 000, поскольку нервозность ИИ влияет на настроения",
-   "tags": [
-    "crypto"
-   ]
-  },
-  {
-   "title": "Why a JPMorgan strategist says the stock market’s tailspin might have run its course",
-   "link": "https://www.marketwatch.com/story/why-a-jpmorgan-strategist-says-the-stock-markets-tailspin-might-have-run-its-course-71571335?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-22T09:08:36.820098+00:00"
-  },
   {
    "title": "MSCI’s Downgrade Warning Whipsaws Indonesian Markets. What’s Next?: Live Q&A",
    "link": "https://www.bloomberg.com/sessions/2026-10-22/live-q-amp-a-msci-s-double-downgrade-warning-whipsaws-indonesian-markets-what-s-next",
@@ -13399,7 +13345,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-25T08:01:42.665173+00:00",
+  "checked": "2026-10-25T09:06:42.599131+00:00",
   "sec_seen": [
    "0000923120-26-000023",
    "0000923120-26-000027",
