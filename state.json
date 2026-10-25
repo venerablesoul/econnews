@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "a5def08b7d10facc": "2026-10-22T13:33:36.830077+00:00",
-  "dd0ce14df0cf9bde": "2026-10-22T13:33:36.830077+00:00",
-  "d008efdeee58878d": "2026-10-22T13:33:36.830077+00:00",
   "e2aeb5f218f786b7": "2026-10-22T13:38:36.875362+00:00",
   "cc2f48fcaecb2c86": "2026-10-22T13:38:36.875362+00:00",
   "7281600cfefaed7b": "2026-10-22T13:43:36.925227+00:00",
@@ -683,38 +680,11 @@
   "a57203ae6ff7e6c8": "2026-10-25T12:36:42.578727+00:00",
   "3ed6cb55f6943682": "2026-10-25T12:46:42.620370+00:00",
   "e1a225428f4f1189": "2026-10-25T12:46:42.620370+00:00",
-  "fdd2315ac72e7099": "2026-10-25T13:02:19.718020+00:00"
+  "fdd2315ac72e7099": "2026-10-25T13:02:19.718020+00:00",
+  "961f4a39f174176f": "2026-10-25T13:27:19.734882+00:00",
+  "2c2498da958d243d": "2026-10-25T13:37:19.723460+00:00"
  },
  "recent": [
-  {
-   "title": "Jobless claims near the lowest since the 1960s as low-fire trend continues",
-   "link": "https://www.cnbc.com/2026/10/22/jobless-claims-record-low-weekly.html",
-   "sources": [
-    "CNBC"
-   ],
-   "score": 4,
-   "ts": "2026-10-22T13:33:36.830077+00:00",
-   "title_ru": "Заявки на пособие по безработице близки к самому низкому уровню с 1960-х годов, поскольку тенденция к сокращению числа пожаров сохраняется",
-   "lead": "Initial filings for unemployment insurance slipped to a seasonally adjusted 194,000.",
-   "lead_ru": "Первоначальные заявки на страхование по безработице снизились до 194 000 с учетом сезонных колебаний.",
-   "tags": [
-    "jobs"
-   ]
-  },
-  {
-   "title": "Australia's treasurer warns of softer growth, higher unemployment",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOcGxzcU9wZHpsMXVHNXNiTkhMaTcxQTZGdlZva0ZXWWE2dmJ4S3NNRnZOZElMYVA2ckkwZ3RiUDJ1c0N5MTVTLU4ydkEycmNVcmNIRGVqWUF6R2VmbGtycmRQVXA5VXduSkpWNFpOcHF6THZ5ajVUX1Z3Nk5GQkFxM292Nm94QW9pZjByYVlaZHhTaExUYlZjRTF3STA5MFBudWY2LWJWdGlUbWJ1ejV3bV9fNFhPQQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-22T13:33:36.830077+00:00",
-   "title_ru": "Министр финансов Австралии предупреждает о замедлении экономического роста и повышении безработицы",
-   "tags": [
-    "bonds",
-    "jobs"
-   ]
-  },
   {
    "title": "Meta falls as investors balance Muse growth with rising AI costs",
    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQdnFibXQ2bEZfUWFpTEoxYTNPQ3dHTlMwMjZRaFcxZlphTlplUlNFWkgta2xwdVBvU0l5OWNkMEctQmNrM2s1UDRpSW5jNFhpLW9TQUlzYlpmZFZudjhvM0RtcC1hQ24xSmVOMDYwbUIzNDQ3NlAwTEpILTc4akh1czlRcThIUnU3Y2VkbWJJWE9jdXJzbWtzclVfeUh5RzN6UzdaTlZjRWlMQQ?oc=5",
@@ -6412,6 +6382,16 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "AI Spending Fears Threaten to Swamp Big Tech’s Strong Earnings",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQX0l3bHQyejdhX0oxSnVaMDl0TTRTQlF2M25FUE1fZV96VVFXSUdjXzFGblEwOWdOYkM4OWFjV0VVck4yWlVfSVVxemJVUG5PRTVnZHZXMHVSeVJMSUUzNjZTM041MTlyVjd6QUF3ckVDUlVJSFVCcF8xSi1aNWdndVdhd1lSaWNQUUJZNE5VWUQtRjJJampiRlkzRWczOFZyU1dtamtXVWpFdDdxVnFNTWRGSQ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-25T13:37:19.723460+00:00",
+   "title_ru": "Страхи по поводу расходов на ИИ угрожают подорвать высокие доходы крупных технологических компаний"
   }
  ],
  "last_digest": "2026-10-24",
@@ -12821,6 +12801,7 @@
    "0000923120-26-000025",
    "0000950103-26-016119",
    "0000923120-26-000028",
+   "0001493152-26-048319",
    "0000923120-26-000029",
    "0000923120-26-000024",
    "0001493152-26-048309",
@@ -12852,7 +12833,6 @@
    "0002160363-26-000003",
    "0001585521-26-000154",
    "0001493152-26-048313",
-   "0001493152-26-048310",
    "0000923120-26-000030",
    "0001022079-26-000114",
    "0001193125-26-430731",
@@ -12860,7 +12840,7 @@
    "0001833511-26-000042",
    "0001100682-26-000151",
    "0001646649-26-000035",
-   "0001493152-26-048319",
+   "0001493152-26-048310",
    "0001493152-26-048312",
    "0001022079-26-000111",
    "0001193125-26-430729",
