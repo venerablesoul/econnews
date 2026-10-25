@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "2354d087fff2d01f": "2026-10-22T06:47:44.953589+00:00",
-  "9549ab9cc820fe67": "2026-10-22T06:47:44.953589+00:00",
-  "3df8d2bce9937b1b": "2026-10-22T06:47:44.953589+00:00",
-  "76d27700f3780166": "2026-10-22T06:52:44.968100+00:00",
   "4f9c52d85bbe2a8c": "2026-10-22T06:57:44.988829+00:00",
   "89c0e0b6392ffb3a": "2026-10-22T07:02:45.059519+00:00",
   "b67f07d0c85a4532": "2026-10-22T07:02:45.059519+00:00",
@@ -762,51 +758,10 @@
   "e06681b03dcc19b8": "2026-10-25T06:06:11.440118+00:00",
   "11e68e6f80ec2b6b": "2026-10-25T06:11:11.486947+00:00",
   "9a6b99cc8c92ab2a": "2026-10-25T06:26:11.508784+00:00",
-  "f903f03c84bfd685": "2026-10-25T06:46:11.635084+00:00"
+  "f903f03c84bfd685": "2026-10-25T06:46:11.635084+00:00",
+  "da14b003ae0bda17": "2026-10-25T06:56:11.479301+00:00"
  },
  "recent": [
-  {
-   "title": "Japanese investors sell foreign bonds for fifth straight week, eye home market",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQaWFpYXNMY0l3alFBQnlRTUNpdUl4aUlld1F2VmxJb0ZETkVqM0FNWHFqQlZxSHhNM3VhdnlpQW1CV3I1ZDRWNGhQVXJ3QVFyX294cHFScXYtNVEzYjlyUHotQm5vWHRlQXQ4SW03cDZSaWRxSXJtQ0Jaams2eWxVYXhEdEUxcFdnRnRPdS0yRy05ODkyMGMtZk1DSHZsRjVtM0I5bXRkLVlqVkRHUV9HQmZTWEdrRTBUMTNFbnF1RTFNTHg2amQ4?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-22T06:47:44.953589+00:00",
-   "title_ru": "Японские инвесторы продают иностранные облигации пятую неделю подряд, следя за внутренним рынком",
-   "tags": [
-    "bonds"
-   ]
-  },
-  {
-   "title": "Roche third-quarter sales beat forecast with growth across divisions, currency boost",
-   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQcnlRMUFVVVJGZ2xRNVFJcEZmYVIwcXlCQXNxVFYtczMyTGtfYVRueHExRVhmckZTX2luOFR6bkdKdzB2U0xVc0lUY2RVMmtnSm56VXA4MEZnVmZ5MDdLV01HdVpOcG5CQW42cU5VQThjV2ppTVVWYU9sTnBxWURYdkFSNWZxOWlUdnR2MWlPQlo2V2E2VXpJclJCc3NXZ0VKUTlQTUpmVHRkSy1yYXpDdl83ZnprNFpkR3ZzbXJBRWo1SDU5NDl6Z2FWQnJRb2xURlRzTXpHVEo2OUk?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-22T06:47:44.953589+00:00",
-   "title_ru": "Продажи Roche в третьем квартале превзошли прогнозы благодаря росту в подразделениях и росту валютных курсов"
-  },
-  {
-   "title": "Top HSBC strategist has a warning for retail investors chasing the AI rally",
-   "link": "https://www.marketwatch.com/story/top-hsbc-strategist-has-a-warning-for-retail-investors-chasing-the-ai-rally-e0318ada?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-22T06:47:44.953589+00:00"
-  },
-  {
-   "title": "COMMENTARY: Surging sterling shakes off Britain's budget blues",
-   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPRHVLWGNYWHM4MEpBbVZqbDFtbUh0R3ozS2dzNmlBVjB5WWhLWk9XZ1BwbTJMakRhQU9GVEJQNTRzbC13dlhpcXdFVnEzaksyZG42MnpXOWJIS094ZFNBT0ozRzM4cGI2VnpyX0N2R0JpOGJZeHNBNHlPTlJDeF9tQ1ZYYlJzdVZsZTZYRW9aZWFBdEdCVWlKV21VWjhmbzJPQmF1Skp5WHJwYzd6Z0tQX2MxbFdrbFFBWFE?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-22T06:52:44.968100+00:00",
-   "title_ru": "КОММЕНТАРИЙ: Рост фунта стерлингов избавляет британский бюджет от уныния"
-  },
   {
    "title": "COMMENTARY: Don't mistake Mideast oil rebound for normality",
    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPNnNNcW94aG5WWHAzeXd2Zzl1TFVkQ3BxSzdlbm50RE9WS2tXcFBwLXk2TGdpQ25GZjcwb05fekJTZUY4eWxHSW9udnBqdDRhQ0JvLXZPSUFmNWZPYmR3T1hOaVZBb0hXWHFIODJPeVBWWERsVDRHelhSODBoWEZVbzFQTnBQRmFZT0h6MS04WlQ3eThuYUEzNjAtcHphdkNGNGpUSW5BNFVRNGlJQU1Mcw?oc=5",
