@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "41cbee2f338cd788": "2026-10-22T23:00:20.330517+00:00",
-  "48e3a30fc97aac7b": "2026-10-22T23:00:20.330517+00:00",
-  "86af4c00bbc2b7fe": "2026-10-22T23:00:20.330517+00:00",
   "3c94a74353155fa9": "2026-10-22T23:10:20.320654+00:00",
   "ac4278ffe0910f7f": "2026-10-22T23:10:20.320654+00:00",
   "1b9edf61140ed368": "2026-10-22T23:15:20.339839+00:00",
@@ -601,22 +598,11 @@
   "a0d56c6adcf40c95": "2026-10-25T22:38:52.460676+00:00",
   "3c87eac76bfb315a": "2026-10-25T22:38:52.460676+00:00",
   "8b8f35348a5d1316": "2026-10-25T22:58:52.417284+00:00",
-  "bd9a2141807619f8": "2026-10-25T22:58:52.417284+00:00"
+  "bd9a2141807619f8": "2026-10-25T22:58:52.417284+00:00",
+  "41cbee2f338cd788": "2026-10-25T23:08:52.445805+00:00",
+  "7305b4fe3b682ef3": "2026-10-25T23:08:52.445805+00:00"
  },
  "recent": [
-  {
-   "title": "Trump invokes Cold War-era Defense Production Act for oil production, refining",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOdm9ka0hnal9OOUFnN19HQmRZd0ljY2tJOVNoN2tIWURrMHExZ0p0NWN0UEpTMmFORG1TTU1CeXZkb3RhenhtelltYVY2SmRyZEctMnRIcUNEQlFXODdsZGxBMXhpem81NjJwRjRCbVl1N2tyWVkxeXU0T2k3ZEttNk5lbzZCVzRrUEtwT3JPTlJiUUVmSjU4b25EaXNIQ3dyS3c3NlJUSkFBdWZSMDFZVmZ1dmhncGFIYjNQU0tOd1I5dFk?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-22T23:00:20.330517+00:00",
-   "title_ru": "Трамп ссылается на Закон об оборонном производстве времен холодной войны для добычи и переработки нефти",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "New Zealand Likely Facing Pre-Election Rate Hike, Economists Say",
    "link": "https://www.bloomberg.com/news/articles/2026-10-22/new-zealand-likely-facing-pre-election-rate-hike-economists-say",
@@ -5462,6 +5448,19 @@
    "title_ru": "ProShares Nasdaq-100 Autocallable Income ETF (ACQQ.OQ) | Курс акций и последние новости",
    "tags": [
     "markets"
+   ]
+  },
+  {
+   "title": "COMMENTARY: Why China’s stimulus keeps missing the mark: Manishi Raychaudhuri",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOazJDSjk5eWVKMWY5eFVycmx2U3ZWUDRxRUhuVDVaNUlkcGNQN18tREhKOU1DWDE2d3puS0kwZHBGRU40NGk5YVZTZFBqVER2R2NhdEtYOGZNY19xVE02QVk1bXYtUDVWOWNmTVFzTG0yZmcxZVQyXzJNTndaOU1rTDc4NkllWmlkMldBUEdLNjJBTVN1T3RSVXJjSkE5RVlaUGlxSldVWWl3OWVYZkJvVV82MHY4bTJSZHZjWk8yQXFJeEdDam1n?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-25T23:08:52.445805+00:00",
+   "title_ru": "КОММЕНТАРИЙ: Почему стимулирование Китая продолжает не достигать цели: Маниши Райчаудхури",
+   "tags": [
+    "China"
    ]
   }
  ],
@@ -11867,7 +11866,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-25T22:03:25.653925+00:00",
+  "checked": "2026-10-25T23:03:52.498223+00:00",
   "sec_seen": [
    "0001022079-26-000109",
    "0001493152-26-048311",
