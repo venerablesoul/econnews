@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "36a039c52f3a4275": "2026-10-22T09:43:36.818328+00:00",
-  "d9b5e87586077540": "2026-10-22T09:48:36.815889+00:00",
-  "548cc147187795df": "2026-10-22T09:48:36.815889+00:00",
-  "7d53c7fea30ceb13": "2026-10-22T09:48:36.815889+00:00",
   "08fb06f1269f0558": "2026-10-22T09:53:36.859705+00:00",
   "b48308c6c34aa310": "2026-10-22T09:53:36.859705+00:00",
   "81f96c10c8218294": "2026-10-22T09:58:36.880177+00:00",
@@ -724,47 +720,10 @@
   "76a3c274aa2c686e": "2026-10-25T08:11:42.573257+00:00",
   "c5c7573e5359adbf": "2026-10-25T08:11:42.573257+00:00",
   "0b1b2b704ee2bf34": "2026-10-25T08:16:42.612480+00:00",
-  "36201dc5ff3d5c95": "2026-10-25T09:36:42.582835+00:00"
+  "36201dc5ff3d5c95": "2026-10-25T09:36:42.582835+00:00",
+  "a3a59e26a38e5634": "2026-10-25T09:51:42.598857+00:00"
  },
  "recent": [
-  {
-   "title": "Price of Physical Oil Barrels Slides Just as Crude Futures Rally",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-22/price-of-physical-oil-barrels-slides-just-as-crude-futures-rally",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-22T09:43:36.818328+00:00",
-   "title_ru": "Цена на физические баррели нефти падает так же, как и рост фьючерсов на сырую нефть",
-   "lead": "The oil market is suddenly being gripped by a divergence between futures and physical prices, something that’s playing out in two closely watched versions of Brent crude.",
-   "lead_ru": "Нефтяной рынок внезапно оказался охвачен расхождением между фьючерсными и физическими ценами, что проявляется в двух внимательно наблюдаемых версиях нефти марки Brent.",
-   "tags": [
-    "oil",
-    "markets"
-   ]
-  },
-  {
-   "title": "Saudi Aramco seeks to partner with countries to expand its oil stockpile, CEO says",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQcnBIaFNpRTVBNGxoQnowWUV6YnVWQkMzUl9ENWo5ZG95djJvRVZsTHVsTmFoX1V1OEQxcEE1Qmo4azB1MDlxc1VIM2VKbGFWT3BCTS1paXlteFJMazdobHJXd1hOaUR2a01RN05fMThEYzVFU3R3RlNCcXkxOHduaUtWSGJRWGJ3WjFBbnpZYjRCcjV5eUpXaC12M0RLaVlfV2lvMGNjUHhoSFhoUFJ5UlNWVGZEM0lEOHhCelVfcEdDTlBDZEE?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-22T09:48:36.815889+00:00",
-   "title_ru": "Saudi Aramco стремится сотрудничать со странами для расширения своих запасов нефти, говорит генеральный директор",
-   "tags": [
-    "oil"
-   ]
-  },
-  {
-   "title": "Chancellor accepts Labour has put a ‘lot of pressure’ on business and says helping entrepreneurs will be a budget priority – UK politics live",
-   "link": "https://www.theguardian.com/politics/live/2026/oct/22/john-healey-chancellor-budget-red-tape-small-businsesses-jackdaw-oil-latest-news-updates",
-   "sources": [
-    "The Guardian"
-   ],
-   "score": 2,
-   "ts": "2026-10-22T09:48:36.815889+00:00"
-  },
   {
    "title": "Nigeria Sees 2026 Fiscal Deficit Below Target as Rates Fall",
    "link": "https://www.bloomberg.com/news/articles/2026-10-22/nigeria-sees-2026-fiscal-deficit-below-target-as-rates-fall",
@@ -6858,6 +6817,18 @@
    "title_ru": "Goldman снижает 12-месячную цель Kospi на 25% из-за развала торговли искусственным интеллектом",
    "lead": "Goldman Sachs Group Inc. strategists slashed their target for South Korea’s Kospi Index by 25%, after raising it repeatedly this year, as concerns over the artificial intelligence trade intensify.",
    "lead_ru": "Стратеги Goldman Sachs Group Inc. снизили целевой показатель южнокорейского индекса Kospi на 25% после неоднократного повышения его в этом году на фоне усиления опасений по поводу торговли искусственным интеллектом."
+  },
+  {
+   "title": "Israel Election 2026: War-Focused Campaign Masks Underlying Economic Schism",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-25/israel-election-2026-war-focused-campaign-masks-underlying-economic-schism",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-25T09:51:42.598857+00:00",
+   "title_ru": "Выборы в Израиле 2026 года: маски предвыборной кампании, ориентированные на войну, лежат в основе экономического раскола",
+   "lead": "Israel’s election campaign has been consumed by Iran, national security and the impact of three years of war, with Israeli Prime Minister Benjamin Netanyahu and his main challenger, Gadi Eisenkot, rarely straying from the theme.",
+   "lead_ru": "Избирательная кампания Израиля была поглощена Ираном, национальной безопасностью и последствиями трехлетней войны, при этом премьер-министр Израиля Биньямин Нетаньяху и его главный соперник Гади Айзенкот редко отклонялись от этой темы."
   }
  ],
  "last_digest": "2026-10-24",
