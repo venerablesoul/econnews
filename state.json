@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "1dbd734723baf34d": "2026-10-22T14:08:36.852884+00:00",
-  "2dcb65a6f4bf13fc": "2026-10-22T14:08:36.852884+00:00",
   "96458f4d4f65ea46": "2026-10-22T14:13:36.869768+00:00",
   "5828cd349d1addba": "2026-10-22T14:13:36.869768+00:00",
   "a5ba2f0077d6b4ae": "2026-10-22T14:13:36.869768+00:00",
@@ -682,32 +680,10 @@
   "2c2498da958d243d": "2026-10-25T13:37:19.723460+00:00",
   "a4dafb4ffd3d8ff3": "2026-10-25T13:47:19.765856+00:00",
   "c2f26e3efc273e07": "2026-10-25T13:57:19.735408+00:00",
-  "d28ef54367605019": "2026-10-25T14:02:19.754081+00:00"
+  "d28ef54367605019": "2026-10-25T14:02:19.754081+00:00",
+  "be035fcf5fb64e0c": "2026-10-25T14:12:19.777995+00:00"
  },
  "recent": [
-  {
-   "title": "South Africa's trade with China surges after duty-free deal",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOR1BYaDluc1pIdnprZmpzRkRlVEVVS0VwdDNvVl9zb3E4cXItWmxQN2NwYVFkWTh6WUw1bmVpallwenNNbDZEWndrUWZxa1R6Uk5ZX2REVTF0VmlTN2JuanpFZW9wYXVCUE9TTXdERDlhQ0Mwd1VKalp2U2NLd1BrYTloMmVEb1RRaVFDVW0tYVhFcWIwQVR3RGVFNFgyOWoyQk55OFItZVc1UmRycnFMV0FiNA?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-22T14:08:36.852884+00:00",
-   "title_ru": "Торговля ЮАР с Китаем выросла после соглашения о беспошлинной торговле",
-   "tags": [
-    "China"
-   ]
-  },
-  {
-   "title": "Blackstone's profit falls as choppy market tempers investment exits",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxORldGZFBnWFM0UnNpZTVWZE95SkdVdVFyVjhpU3E0Sl9ucFhTTXJsX3NWVkZvOWd6TmhJRVZOQjhKb1dES3B2YUFHT0hJdWZIdk9VaFhmS2xub0dOVWsxMUxCV2wwVTdkcFV0TzFQSUhkMURBQ1BIMHViUVNxUXYydG94ajVNNWNEQmpZZDZBYi0wYWpKYklaeUlIWnpLSFhIdnd6WGtaQk9JUG1fWVg0b2cxTGJxWWxFeFZz?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-22T14:08:36.852884+00:00",
-   "title_ru": "Прибыль Blackstone падает, поскольку нестабильный рынок ограничивает выход инвестиций"
-  },
   {
    "title": "Texas Developer Seeks $3.5 Billion in Debt Financing for AT&T (T) Headquarters",
    "link": "https://www.bloomberg.com/news/articles/2026-10-22/texas-developer-seeks-3-5-billion-in-debt-financing-for-at-t-t-headquarters",
@@ -6409,6 +6385,21 @@
    "lead_ru": "«Учитывая осторожные и негативные настроения рынка, эта неделя может оказаться непростой», — говорит один из стратегов.",
    "tags": [
     "markets"
+   ]
+  },
+  {
+   "title": "Inside The Two Argentinas Under Javier Milei",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-25/inside-the-two-argentinas-under-javier-milei-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-25T14:12:19.777995+00:00",
+   "title_ru": "Внутри двух Аргентин под руководством Хавьера Милея",
+   "lead": "President Javier Milei has brought inflation down and opened Argentina to more investment, helping fuel a boom in energy and other export industries.",
+   "lead_ru": "Президент Хавьер Милей снизил инфляцию и открыл Аргентину для большего количества инвестиций, способствуя буму в энергетике и других экспортных отраслях.",
+   "tags": [
+    "inflation"
    ]
   }
  ],
