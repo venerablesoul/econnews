@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "69f578ee4a885db3": "2026-10-22T11:53:36.805498+00:00",
   "7f495757569fe9f5": "2026-10-22T12:08:36.861644+00:00",
   "c30fc9cb03b2882e": "2026-10-22T12:08:36.861644+00:00",
   "d854ce85cd68ef3a": "2026-10-22T12:13:36.829690+00:00",
@@ -697,18 +696,10 @@
   "786a0f45db1a6c9b": "2026-10-25T10:51:42.582369+00:00",
   "5dbc14cfcb2e591a": "2026-10-25T11:06:42.589010+00:00",
   "e093c8a6e791a480": "2026-10-25T11:36:42.745400+00:00",
-  "2667232859700e8a": "2026-10-25T11:51:42.640271+00:00"
+  "2667232859700e8a": "2026-10-25T11:51:42.640271+00:00",
+  "d2b9cb2c7477536d": "2026-10-25T12:01:42.586679+00:00"
  },
  "recent": [
-  {
-   "title": "Trump's approval rating on economy hits all-time low as midterm looms: CNBC survey",
-   "link": "https://www.cnbc.com/2026/10/22/trump-economic-approval-rating-midterms-poll.html",
-   "sources": [
-    "CNBC"
-   ],
-   "score": 2,
-   "ts": "2026-10-22T11:53:36.805498+00:00"
-  },
   {
    "title": "Meta Offers Zuckerberg New Shares to Keep Him in California",
    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOb1FfZ3ZRcmdpVzRDNS1YVFJ5Rzd2UVlCR01pNXdfdER1eExOZGs3alc4M0tGYVlOWTlmZV93MlFCekZTSzIyN3R3aXR6RTI4ZE1ERlZtM04ybVpybWdZdUFRUU0wcVl2U3ZWaEkyUjE3VDBqbmRoYktWM0twT1h3dmRTNF9XYmNiZ2xVeGdGTnRPTzQySE93ZUwzZXdwUnhJTkFWSTZsQU9Qb2ZLMngwd2Nybw?oc=5",
@@ -6534,6 +6525,21 @@
    "tags": [
     "sanctions",
     "crypto"
+   ]
+  },
+  {
+   "title": "Interest rates unlikely to reach 4.75% by next summer, say City economists",
+   "link": "https://www.theguardian.com/business/2026/oct/25/interest-rates-bank-of-england-rises-summer-2027",
+   "sources": [
+    "The Guardian"
+   ],
+   "score": 5,
+   "ts": "2026-10-25T12:01:42.586679+00:00",
+   "title_ru": "Экономисты Сити считают, что процентные ставки вряд ли достигнут 4,75% к следующему лету",
+   "lead": "Experts say Bank of England unlikely to increase rates by full percentage point – and could lower them by end of 2027 Financial markets are wrong to predict the Bank of England will raise UK interest rates by a full percentage…",
+   "lead_ru": "Эксперты говорят, что Банк Англии вряд ли повысит ставки на полный процентный пункт – и может снизить их к концу 2027 года. Финансовые рынки ошибаются, предсказывая, что Банк Англии поднимет процентные ставки в Великобритании на полный процент…",
+   "tags": [
+    "rates"
    ]
   }
  ],
@@ -12960,9 +12966,9 @@
    "0001100682-26-000151",
    "0001493152-26-048319",
    "0001022079-26-000114",
-   "0001231919-26-001497",
    "0001398344-26-018733",
    "0001493152-26-048313",
+   "0002160363-26-000004",
    "0001193125-26-430730",
    "0001493152-26-048321",
    "0000923120-26-000028",
@@ -12986,7 +12992,7 @@
    "0001493152-26-048309",
    "0000950103-26-016119",
    "0000923120-26-000029",
-   "0002160363-26-000004",
+   "0001231919-26-001497",
    "0000923120-26-000024"
   ],
   "errors": {
