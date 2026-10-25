@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "d4d637c429168601": "2026-10-22T12:38:36.863066+00:00",
-  "906fbf4bb7733896": "2026-10-22T12:43:36.815812+00:00",
-  "210c35b59182a196": "2026-10-22T12:43:36.815812+00:00",
-  "6ff663cdefa9a1b0": "2026-10-22T12:43:36.815812+00:00",
   "f218889746b9a520": "2026-10-22T12:53:36.882761+00:00",
   "8cc05578a4395116": "2026-10-22T13:03:36.928624+00:00",
   "d942c7f399a332f0": "2026-10-22T13:03:36.928624+00:00",
@@ -692,64 +688,11 @@
   "8b21902f03d7bf09": "2026-10-25T12:11:42.613204+00:00",
   "d4dfbbaf1eceace9": "2026-10-25T12:16:42.627115+00:00",
   "46cf89f1a6155552": "2026-10-25T12:26:42.608229+00:00",
-  "a57203ae6ff7e6c8": "2026-10-25T12:36:42.578727+00:00"
+  "a57203ae6ff7e6c8": "2026-10-25T12:36:42.578727+00:00",
+  "3ed6cb55f6943682": "2026-10-25T12:46:42.620370+00:00",
+  "e1a225428f4f1189": "2026-10-25T12:46:42.620370+00:00"
  },
  "recent": [
-  {
-   "title": "US Initial Jobless Claims Fall to Three-Month Low of 194,000",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-22/us-initial-jobless-claims-fall-to-three-month-low",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-22T12:38:36.863066+00:00",
-   "title_ru": "Первоначальные заявки на пособие по безработице в США упали до трехмесячного минимума в 194 000",
-   "lead": "Applications for US unemployment benefits fell to a three-month low last week, underscoring the stability of the labor market.",
-   "lead_ru": "Заявки на пособие по безработице в США упали до трехмесячного минимума на прошлой неделе, что подчеркивает стабильность рынка труда.",
-   "tags": [
-    "jobs"
-   ]
-  },
-  {
-   "title": "All-or-Nothing Biotech Bets Dented by Rising Treasury Yields",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-22/all-or-nothing-biotech-bets-dented-by-rising-treasury-yields",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-22T12:43:36.815812+00:00",
-   "title_ru": "Ставки на биотехнологии «все или ничего» пошатнулись растущей доходностью казначейских облигаций",
-   "lead": "Investors are beginning to turn cautious on biotechnology stocks as a rapid rise in Treasury yields dents the appeal for shares of companies that are often viewed as risky all-or-nothing bets on breakthrough medical treatments.",
-   "lead_ru": "Инвесторы начинают проявлять осторожность в отношении акций биотехнологий, поскольку быстрый рост доходности казначейских облигаций снижает привлекательность акций компаний, которые часто рассматриваются как рискованная ставка «все или ничего» на революционные методы лечения.",
-   "tags": [
-    "bonds",
-    "markets"
-   ]
-  },
-  {
-   "title": "Dow Sees Earnings in Biggest Unit Almost Doubling This Quarter",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-22/dow-sees-earnings-in-biggest-unit-almost-doubling-this-quarter",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-22T12:43:36.815812+00:00",
-   "title_ru": "Dow ожидает, что прибыль крупнейшего подразделения в этом квартале увеличится почти вдвое",
-   "lead": "Dow Inc. said it expects earnings in its largest business to almost double in the fourth quarter from a year earlier.",
-   "lead_ru": "Компания Dow Inc. заявила, что ожидает, что прибыль ее крупнейшего бизнеса почти удвоится в четвертом квартале по сравнению с годом ранее.",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "Markets are pricing in long-term AI winners. This veteran investor says history proves customers win more than innovators.",
-   "link": "https://www.marketwatch.com/story/markets-are-pricing-in-long-term-ai-winners-this-veteran-investor-says-history-proves-customers-win-more-than-innovators-f7043439?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-22T12:43:36.815812+00:00"
-  },
   {
    "title": "Saudi Arabia Seeks Access to Overseas Oil Storage for Aramco",
    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQTFpPdFdDNDhRZmZEMHpzaDFyaFJUSmluU0RscDNXdHI0aGZici1hQVlQYllPaUpjVGpZODBva0g3OFVLVDJGY0I2bl9JTkFyQ053ZzhwTHhLREJScUhBRFJPbmdxZS1GMmVRY05hdEZ6SVJRbl8tME82RFB1SHE3dk1UTTh6UVJhTU1zRzhVQW1CN0FrYnFzWkJiM3ZsdVI2cGJueng0VlY4bTVFQ2FxVA?oc=5",
@@ -6483,6 +6426,21 @@
    "title_ru": "Что происходит в развивающихся странах: инвесторы в облигации обращаются к развивающимся странам",
    "lead": "This week, Mpho Hlakudi and Selcuk Gokoluk discuss how some of the world’s biggest asset managers increase their exposure to emerging markets despite the surge in US Treasury yields, weakening a traditional correlation in…",
    "lead_ru": "На этой неделе Мфо Хлакуди и Сельчук Гоколук обсуждают, как некоторые из крупнейших в мире управляющих активами увеличивают свое присутствие на развивающихся рынках, несмотря на рост доходности казначейских облигаций США, ослабляя традиционную корреляцию в…",
+   "tags": [
+    "bonds"
+   ]
+  },
+  {
+   "title": "Emerging Debt Outruns Treasuries as Rich-World Fiscal Fears Grow",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-25/emerging-debt-outruns-treasuries-as-rich-world-fiscal-fears-grow",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-25T12:46:42.620370+00:00",
+   "title_ru": "Долг развивающихся стран обгоняет казначейские облигации по мере роста финансовых опасений в богатых странах",
+   "lead": "Investors from JPMorgan Asset Management to Generali and Ninety One SA are loading up on emerging-market debt, defying a surge in Treasury yields that would once have sent them running for the exits.",
+   "lead_ru": "Инвесторы от JPMorgan Asset Management до Generali и Ninety One SA нагружают долги развивающихся рынков, игнорируя рост доходности казначейских облигаций, который когда-то заставил бы их бежать к выходу.",
    "tags": [
     "bonds"
    ]
