@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "24ae0aaea4334b25": "2026-10-22T07:12:45.031950+00:00",
-  "412c4f8eab9cc479": "2026-10-22T07:12:45.031950+00:00",
   "0b754d585be0f0a9": "2026-10-22T07:22:45.002037+00:00",
   "077f93f61a86d42a": "2026-10-22T07:22:45.002037+00:00",
   "03212f5527409c65": "2026-10-22T07:32:45.031213+00:00",
@@ -754,32 +752,10 @@
   "9a6b99cc8c92ab2a": "2026-10-25T06:26:11.508784+00:00",
   "f903f03c84bfd685": "2026-10-25T06:46:11.635084+00:00",
   "da14b003ae0bda17": "2026-10-25T06:56:11.479301+00:00",
-  "a82b46945df8c8cf": "2026-10-25T07:11:11.504017+00:00"
+  "a82b46945df8c8cf": "2026-10-25T07:11:11.504017+00:00",
+  "e9d1515acbda2578": "2026-10-25T07:16:11.517599+00:00"
  },
  "recent": [
-  {
-   "title": "Uganda export earnings up 36% in August on higher gold receipts",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPMFc2YnpWVnIyZTF5emJNNEFDaUVuT1dMVmF0NEZKLWExdlFtTThhU0hJVEMtRWpkbTdlVXo3UUFTajR2aldXMFZYQlctRGMzZFJFVUxraVRIenVWZWlmVFVfNUtxeXgtQlk2Y081c2dTUHA4Z2Jxblc0RzdlbENkOWRLc2pwVldHd3hDblUyam8tQzF2TVZJVThmRDlScjVtYk5JNzdqSlU?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-22T07:12:45.031950+00:00",
-   "title_ru": "Доходы от экспорта Уганды выросли на 36% в августе благодаря увеличению поступлений от золота",
-   "tags": [
-    "gold"
-   ]
-  },
-  {
-   "title": "Ofgem approves deal to maintain UK gas import capacity",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOWTZ3Uk5sNjNBbzZtZWxwMVlFcG1JS0VtSWtxTUx3RkVLOC1jVE5EcWdoMEZsWnQzVE9kQ1FZOFo5Vzh6ZnRvVERHbjFuZndqWElxWWhIRlV3Mno2M3FIRzFKdlc2ME55QlZFUUVkMENNbV9kZnNsWXZwbUlEUGtEWHNwZ1h1RUVPX2w0R2gxRzBON1I4a1E5ODBiNEY?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-22T07:12:45.031950+00:00",
-   "title_ru": "Ofgem одобрил сделку по сохранению мощностей по импорту газа в Великобританию"
-  },
   {
    "title": "China Stocks Drop Most Since Liberation Day",
    "link": "https://www.bloomberg.com/news/videos/2026-10-22/the-china-show-10-22-2026-video",
@@ -7241,6 +7217,21 @@
    "tags": [
     "jobs"
    ]
+  },
+  {
+   "title": "Heating oil costs 'more than double' ahead of winter",
+   "link": "https://www.bbc.co.uk/news/articles/c6n8de1jgrdvo?at_medium=RSS&at_campaign=rss",
+   "sources": [
+    "BBC"
+   ],
+   "score": 3,
+   "ts": "2026-10-25T07:16:11.517599+00:00",
+   "title_ru": "Нагрев масла стоит «более чем вдвое» перед зимой",
+   "lead": "Middleton in Teesdale has no mains gas supply so many residents use expensive heating oil.",
+   "lead_ru": "В Миддлтоне в Тисдейле нет сетевого газоснабжения, поэтому многие жители используют дорогостоящее печное топливо.",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-24",
@@ -13656,9 +13647,9 @@
    "0001585521-26-000153",
    "0001851564-26-000045",
    "0001022079-26-000111",
-   "0001231919-26-001497",
-   "0000923120-26-000030",
    "0001493152-26-048314",
+   "0000923120-26-000030",
+   "0001231919-26-001497",
    "0001833511-26-000042",
    "0001022079-26-000110",
    "0001100682-26-000151",
