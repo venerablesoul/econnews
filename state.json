@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "aae2a3aaaeb5935e": "2026-10-22T20:45:20.361854+00:00",
   "8715604258485543": "2026-10-22T20:50:20.262788+00:00",
   "8c113020cb477fc1": "2026-10-22T20:50:20.262788+00:00",
   "67ecae0c9fa4bdc5": "2026-10-22T20:50:20.262788+00:00",
@@ -613,22 +612,12 @@
   "65d389fd7812f311": "2026-10-25T20:13:25.695426+00:00",
   "0f4d626ae49921a6": "2026-10-25T20:33:25.662879+00:00",
   "00c6b363a8914e31": "2026-10-25T20:33:25.662879+00:00",
-  "6625a4ff9bb3416c": "2026-10-25T20:33:25.662879+00:00"
+  "6625a4ff9bb3416c": "2026-10-25T20:33:25.662879+00:00",
+  "3d9e566b3cb9237f": "2026-10-25T20:43:25.693799+00:00",
+  "c610c3560e4ec72c": "2026-10-25T20:48:25.688986+00:00",
+  "9a0261a88c6e2cf9": "2026-10-25T20:48:25.688986+00:00"
  },
  "recent": [
-  {
-   "title": "Moderna, Merck Shares Fall After Possible Melanoma Data Leak",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQSGF1R0FYdlVEamdsa29mMjBOQ2tQVXk0LWlfRmxOSXhSMTRqQnNXUDVJZVgwQ21KUGFwTVJqajFQT0w5WlZES2ZaLVQxOG85SjhDLUhtM2hJbU5jWWt2dnc2YWhPejRuc0FMOUw3TjdRU3Y2bGlYNVA2ZEQtWFpHcmJYTnpiVi1MdTJIWFpNRGRxQmlEVUFWNnRTLThDbXgwalZQaWx0NmlXV1BCazI0TG5tVDU?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-22T20:45:20.361854+00:00",
-   "title_ru": "Акции Moderna и Merck упали после возможной утечки данных о меланоме",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Oil prices approach Iran-war highs as soaring tanker rates trigger a second energy squeeze",
    "link": "https://www.marketwatch.com/story/oil-prices-approach-iran-war-highs-as-soaring-tanker-rates-trigger-a-second-energy-squeeze-2d726982?mod=mw_rss_topstories",
@@ -5623,6 +5612,16 @@
    "score": 5,
    "ts": "2026-10-25T19:18:25.695026+00:00",
    "title_ru": "Автокатастрофа с демократом из Аляски Пелтолой откладывает предвыборные митинги"
+  },
+  {
+   "title": "Musk says SpaceX raised $40 billion in debt for GPUs",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNUXFtN2R4aGlycUhma055anhqaWRzSVFqRHg3NDJHQXpJb1ZXZGtqZF8wSENhc2xNTjlBNmJyMWdzaWdQZmU2d0NvWDJ1VzI4RlVCUG1ERDFnWlJpUmlEdTJDZUt2ckM1bjBleS11a3ZQaDF1QjByVzNYV1Y4YV9CWEFOYWFVaHhhM1l3d29kQm55MjFUUTlZWm9mVnlnamJBUWg3NWVR?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-25T20:48:25.688986+00:00",
+   "title_ru": "Маск говорит, что SpaceX привлекла $ 40 млрд долга за графические процессоры"
   }
  ],
  "last_digest": "2026-10-25",
