@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "dc7e498fa993f6a0": "2026-10-22T10:13:36.833722+00:00",
-  "0501beb846697447": "2026-10-22T10:13:36.833722+00:00",
   "3df85d330489cea2": "2026-10-22T10:23:36.836037+00:00",
   "0f305d257c0519d6": "2026-10-22T10:23:36.836037+00:00",
   "7228ee66f2cfc731": "2026-10-22T10:23:36.836037+00:00",
@@ -718,24 +716,10 @@
   "d9b5e87586077540": "2026-10-25T09:56:42.799697+00:00",
   "08fb06f1269f0558": "2026-10-25T10:01:42.628333+00:00",
   "7eae723493ff6aef": "2026-10-25T10:01:42.628333+00:00",
-  "81f96c10c8218294": "2026-10-25T10:06:42.584087+00:00"
+  "81f96c10c8218294": "2026-10-25T10:06:42.584087+00:00",
+  "4e56b1fa13d3e320": "2026-10-25T10:16:42.665350+00:00"
  },
  "recent": [
-  {
-   "title": "Europe’s bracing reality on US bond yields",
-   "link": "https://www.ft.com/content/92e1700d-7990-4c6a-bd3f-63685df2fdf6?syn-25a6b1a6=1",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 5,
-   "ts": "2026-10-22T10:13:36.833722+00:00",
-   "title_ru": "Бодрящая реальность Европы относительно доходности облигаций США",
-   "lead": "The region cannot just hope for a fall in borrowing costs across the Atlantic - it must tackle its own problems",
-   "lead_ru": "Регион не может просто надеяться на снижение стоимости заимствований по ту сторону Атлантики – он должен решать свои собственные проблемы.",
-   "tags": [
-    "bonds"
-   ]
-  },
   {
    "title": "Greece says it is implementing sanctions linked to Iran",
    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNMFJaZ0t6eFMxSzJVenJlSEdyVkFjWXVuYmsxUy14ajVPdWZEMEUybm1ySE5zbzE1N05TNlVaeW1rZmNHOWVkLWxMQ193QzlRMTdYMGFYZmk2TzROdWptVDB5LXAtV3BiSW9nVERSSTF0bkpLWGVSREdja21vcFpGcnZmb1UtbUtFdE9QSUtVZENOMzJURl9Rd1lEbGZTVW1ISk5PamhUaUhGZw?oc=5",
@@ -6794,6 +6778,22 @@
    "title_ru": "Выборы в Израиле 2026 года: маски предвыборной кампании, ориентированные на войну, лежат в основе экономического раскола",
    "lead": "Israel’s election campaign has been consumed by Iran, national security and the impact of three years of war, with Israeli Prime Minister Benjamin Netanyahu and his main challenger, Gadi Eisenkot, rarely straying from the theme.",
    "lead_ru": "Избирательная кампания Израиля была поглощена Ираном, национальной безопасностью и последствиями трехлетней войны, при этом премьер-министр Израиля Биньямин Нетаньяху и его главный соперник Гади Айзенкот редко отклонялись от этой темы."
+  },
+  {
+   "title": "French Bond Rout Puts Crisis at Heart of ECB Succession Endgame",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-25/french-bond-rout-puts-crisis-at-heart-of-ecb-succession-endgame",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-25T10:16:42.665350+00:00",
+   "title_ru": "Разгром французских облигаций ставит кризис в основу завершения процесса преемственности ЕЦБ",
+   "lead": "The European Central Bank’s presidency race looks increasingly likely to hinge on which candidate can best take on the bond vigilantes.",
+   "lead_ru": "Гонка за пост президента Европейского центрального банка, похоже, все больше будет зависеть от того, какой кандидат сможет лучше всего справиться с линчевателями облигаций.",
+   "tags": [
+    "ECB",
+    "bonds"
+   ]
   }
  ],
  "last_digest": "2026-10-24",
@@ -13219,9 +13219,9 @@
    "0001100682-26-000151",
    "0001493152-26-048319",
    "0001022079-26-000114",
-   "0001231919-26-001497",
    "0001398344-26-018733",
    "0001493152-26-048313",
+   "0002160363-26-000004",
    "0001193125-26-430730",
    "0001493152-26-048321",
    "0000923120-26-000028",
@@ -13245,7 +13245,7 @@
    "0001493152-26-048309",
    "0000950103-26-016119",
    "0000923120-26-000029",
-   "0002160363-26-000004",
+   "0001231919-26-001497",
    "0000923120-26-000024"
   ],
   "errors": {
