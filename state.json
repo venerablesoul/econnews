@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "14c054dc3a060c58": "2026-10-23T16:26:55.791809+00:00",
-  "17f2426a2f07555c": "2026-10-23T16:31:55.759067+00:00",
-  "8b8236f223b8c451": "2026-10-23T16:31:55.759067+00:00",
-  "b6e4df026ce5747c": "2026-10-23T16:31:55.759067+00:00",
   "1cab292e4320e2c7": "2026-10-23T16:36:55.763055+00:00",
   "5f96d67e9a3d3177": "2026-10-23T16:36:55.763055+00:00",
   "fbee1b3aed7fe41e": "2026-10-23T16:41:55.717790+00:00",
@@ -600,37 +596,11 @@
   "35719ba38f9bec21": "2026-10-26T16:06:22.747403+00:00",
   "e44751151741d909": "2026-10-26T16:11:22.719224+00:00",
   "6c80094cc8d747c6": "2026-10-26T16:16:22.775380+00:00",
-  "c4bba32c0dfafff1": "2026-10-26T16:26:22.737531+00:00"
+  "c4bba32c0dfafff1": "2026-10-26T16:26:22.737531+00:00",
+  "ed1aa4feb5ddcb6f": "2026-10-26T16:36:22.767844+00:00",
+  "9f30f945a45f495a": "2026-10-26T16:36:22.767844+00:00"
  },
  "recent": [
-  {
-   "title": "GM Shares Eye Worst Week Since 2023 Amid Wider Autos Selloff",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-23/gm-analysts-say-buy-the-dip-as-stock-eyes-worst-week-since-2025",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-23T16:31:55.759067+00:00",
-   "title_ru": "GM демонстрирует худшую неделю с 2023 года на фоне более широкой распродажи автомобилей",
-   "lead": "General Motors Co. shares are set to record their worst week in more than three years, leading a wider selloff in automotive stocks on Friday. Yet, bullish Wall Street analysts are doubling down on the carmaker.",
-   "lead_ru": "Акции General Motors Co. должны зафиксировать худшую неделю за последние три года, что приведет к более широкой распродаже автомобильных акций в пятницу. Тем не менее, бычьи аналитики Уолл-стрит удваивают ставки на автопроизводителя.",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "LVHM-owned watchmaker Zenith to cut jobs, shift upmarket, source says",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOUE9WYm1qY2hqOFFhMlZyY0dsX05GNHFpN0g2Tjd0NjA2b0ZKQVZwY241VEVCQ2xzQ1RWUEVQM1dkSVVCTXE4RGJDMXFnclFZcUZoR0JrUld6SFg4OE9JVlpIN093SW5vaUlELUZMQld0d2JuOFd0VlhjWjNPS1FZMXhoUnNuQnBzQS1JcDZ6bnlNbUV4SUVvS3dMS2JhLXU0Z1FPMDZFcEZ6S3FwVGxxOUMxaGNRay13SmlKMmt1cFJlTTA?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T16:31:55.759067+00:00",
-   "title_ru": "Часовая компания Zenith, принадлежащая LVHM, сократит рабочие места и изменит рынок, говорит источник",
-   "tags": [
-    "jobs"
-   ]
-  },
   {
    "title": "Ineos Quattro Bonds Plunge as Earnings Show Fading War Gains",
    "link": "https://www.bloomberg.com/news/articles/2026-10-23/ineos-quattro-bonds-plunge-as-earnings-show-fading-war-gains",
@@ -11206,9 +11176,9 @@
   },
   "checked": "2026-10-26T15:51:23.163711+00:00",
   "sec_seen": [
-   "0000080424-26-000261",
+   "0001718133-26-000006",
    "0001493152-26-048460",
-   "0001718133-26-000006"
+   "0000080424-26-000261"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
