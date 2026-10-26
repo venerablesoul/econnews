@@ -602,7 +602,9 @@
   "92092bbd250ae3bc": "2026-10-26T09:25:24.146578+00:00",
   "c6e2cd87793b1a30": "2026-10-26T09:35:24.244114+00:00",
   "a598a1a8273e52f9": "2026-10-26T09:35:24.244114+00:00",
-  "b394f5f216553cd5": "2026-10-26T09:35:24.244114+00:00"
+  "b394f5f216553cd5": "2026-10-26T09:35:24.244114+00:00",
+  "5f42bc88d5d9f8b3": "2026-10-26T09:40:24.585771+00:00",
+  "4f510a4a1f142f19": "2026-10-26T09:40:24.585771+00:00"
  },
  "recent": [
   {
@@ -4898,6 +4900,31 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "CoreWeave Rout Sends Warning Sign to Rest of the Stock Market",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-26/coreweave-rout-sends-warning-sign-to-rest-of-the-stock-market",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T09:40:24.585771+00:00",
+   "title_ru": "CoreWeave Rout посылает предупреждающий знак остальному фондовому рынку",
+   "lead": "Wall Street strategists are warning that declines in shares of AI cloud-computing providers will spill into other corners of the tech trade, potentially dragging the US stock market down to its June lows.",
+   "lead_ru": "Стратеги с Уолл-стрит предупреждают, что снижение акций поставщиков облачных вычислений на базе искусственного интеллекта распространится и на другие сферы торговли технологиями, что потенциально приведет к падению фондового рынка США до июньских минимумов.",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "Moody's says South Africa's budget update is credit positive",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNaVY1cGhPSFg2cUdtdjltZlUwZ0FiczN4cU5IZlZhSzd0U3NKTFV3WTNpTEt1eEdrV19ualZxWGIwT0UzM2I1VmgwUUpaenVQU3NfSTRSUy13RXBPLXVrLV84c1hLUFg1dXpBdWdFc1I0VUpxUkhrc0k2S1JVZkVrUkgzSmR0cFlCRTA5ZGZIemlEUUtDbnVvNHJwWDB2WDh6SzhCMHFxaHZ2cFE?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T09:40:24.585771+00:00",
+   "title_ru": "Moody's заявило, что обновленный бюджет ЮАР является позитивным для кредитоспособности"
   }
  ],
  "last_digest": "2026-10-25",
@@ -11315,7 +11342,6 @@
    "0001585521-26-000155",
    "0001022079-26-000109",
    "0000923120-26-000030",
-   "0001493152-26-048317",
    "0000923120-26-000026",
    "0001022079-26-000112",
    "0002160363-26-000004",
@@ -11342,6 +11368,7 @@
    "0001493152-26-048309",
    "0001493152-26-048310",
    "0000923120-26-000027",
+   "0000923120-26-000025",
    "0001493152-26-048311",
    "0001193125-26-430730",
    "0000950103-26-016120",
@@ -11350,7 +11377,7 @@
    "0001022079-26-000116",
    "0001193125-26-430729",
    "0001493152-26-048315",
-   "0000923120-26-000025"
+   "0001493152-26-048317"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
