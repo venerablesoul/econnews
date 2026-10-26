@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "2fcc95968d1b173d": "2026-10-23T16:16:55.783890+00:00",
-  "fbc8654cd6092608": "2026-10-23T16:16:55.783890+00:00",
-  "bef3f5a51d3e50ab": "2026-10-23T16:21:55.716185+00:00",
   "14c054dc3a060c58": "2026-10-23T16:26:55.791809+00:00",
   "17f2426a2f07555c": "2026-10-23T16:31:55.759067+00:00",
   "8b8236f223b8c451": "2026-10-23T16:31:55.759067+00:00",
@@ -602,26 +599,10 @@
   "54fb4bea1c8e0f5c": "2026-10-26T15:56:22.726397+00:00",
   "35719ba38f9bec21": "2026-10-26T16:06:22.747403+00:00",
   "e44751151741d909": "2026-10-26T16:11:22.719224+00:00",
-  "6c80094cc8d747c6": "2026-10-26T16:16:22.775380+00:00"
+  "6c80094cc8d747c6": "2026-10-26T16:16:22.775380+00:00",
+  "c4bba32c0dfafff1": "2026-10-26T16:26:22.737531+00:00"
  },
  "recent": [
-  {
-   "title": "Stocks Continue to Sell Off as Rising Oil Prices Keep Lid on Treasuries",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-23/bloomberg-surveillance-10-23-2026-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 8,
-   "ts": "2026-10-23T16:21:55.716185+00:00",
-   "title_ru": "Акции продолжают распродаваться, поскольку растущие цены на нефть сдерживают казначейские облигации",
-   "lead": "Jonathan Ferro, Lisa Abramowicz and Annmarie Hordern speak daily with leaders and decision makers from Wall Street to Washington and beyond.",
-   "lead_ru": "Джонатан Ферро, Лиза Абрамович и Аннмари Хордерн ежедневно общаются с лидерами и лицами, принимающими решения, от Уолл-стрит до Вашингтона и за его пределами.",
-   "tags": [
-    "oil",
-    "bonds",
-    "markets"
-   ]
-  },
   {
    "title": "GM Shares Eye Worst Week Since 2023 Amid Wider Autos Selloff",
    "link": "https://www.bloomberg.com/news/articles/2026-10-23/gm-analysts-say-buy-the-dip-as-stock-eyes-worst-week-since-2025",
@@ -4807,6 +4788,18 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Shock Lula Win Derails $6 Billion in Equity Sales as Banks Reel",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-26/shock-lula-win-derails-6-billion-in-equity-sales-as-banks-reel",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T16:26:22.737531+00:00",
+   "title_ru": "Shock Lula Win срывает продажи акций на $ 6 млрд по мере того, как банки набирают обороты",
+   "lead": "Brazilian companies had some $6 billion in equity sales lined up for the weeks after the vote that they expected would crown conservative Flávio Bolsonaro as the next president of Latin America’s largest economy.",
+   "lead_ru": "У бразильских компаний было около $ 6 млрд в продажах акций в течение нескольких недель после голосования, которое, как они ожидали, станет короной консерватора Флавио Болсонару в качестве следующего президента крупнейшей экономики Латинской Америки."
   }
  ],
  "last_digest": "2026-10-25",
@@ -11213,8 +11206,8 @@
   },
   "checked": "2026-10-26T15:51:23.163711+00:00",
   "sec_seen": [
-   "0001493152-26-048460",
    "0000080424-26-000261",
+   "0001493152-26-048460",
    "0001718133-26-000006"
   ],
   "errors": {
