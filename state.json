@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "4cd960199fc9c646": "2026-10-23T21:52:41.422387+00:00",
-  "953b8561374f8ae3": "2026-10-23T21:52:41.422387+00:00",
   "4900d8ebc6b6ea86": "2026-10-23T22:07:41.439877+00:00",
   "c750874909946380": "2026-10-23T22:12:41.458547+00:00",
   "b20a095ce78bf965": "2026-10-23T22:17:41.490326+00:00",
@@ -600,15 +598,6 @@
   "2f5c7d62240d8ebf": "2026-10-26T21:52:01.257657+00:00"
  },
  "recent": [
-  {
-   "title": "Investors piled a record sum into a leveraged semiconductor ETF last week. Things didn’t work out.",
-   "link": "https://www.marketwatch.com/story/investors-piled-a-record-sum-into-a-leveraged-semiconductor-etf-last-week-things-didnt-work-out-4680b2f3?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-23T21:52:41.422387+00:00"
-  },
   {
    "title": "Data Centers Face Downgrade Risk Amid Local Pushback, S&P Says",
    "link": "https://www.bloomberg.com/news/articles/2026-10-23/data-centers-face-downgrade-risk-amid-local-pushback-s-p-says",
@@ -7500,6 +7489,22 @@
    },
    {
     "src": "sec",
+    "id": "a1cbbd813b30f6c4",
+    "ticker": "HTFL",
+    "company": "Heartflow, Inc.",
+    "who": "Campbell Rogers",
+    "role": "Chief Medical Officer",
+    "type": "sell",
+    "value": 1316554,
+    "shares": 23933,
+    "price": 55.01,
+    "plan": true,
+    "date": "2026-10-22",
+    "disclosed": "2026-10-26",
+    "link": "https://www.sec.gov/Archives/edgar/data/1585724/000146452126000156/0001464521-26-000156-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "c152a25d2051b1fb",
     "ticker": "OIG",
     "company": "Orion180 Insurance Group Inc.",
@@ -10985,22 +10990,6 @@
     "date": "2026-10-16",
     "disclosed": "2026-10-16",
     "link": "https://www.sec.gov/Archives/edgar/data/2089362/000208936226000021/0002089362-26-000021-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "b8c7f32d3a23fdf1",
-    "ticker": "PACS",
-    "company": "PACS Group, Inc.",
-    "who": "Jason Hulse Murray",
-    "role": "CEO, 10% owner",
-    "type": "sell",
-    "value": 5614667,
-    "shares": 118729,
-    "price": 47.29,
-    "plan": true,
-    "date": "2026-10-16",
-    "disclosed": "2026-10-16",
-    "link": "https://www.sec.gov/Archives/edgar/data/2014386/000201438626000020/0002014386-26-000020-index.htm"
    }
   ],
   "docs": {
@@ -11035,6 +11024,7 @@
   },
   "checked": "2026-10-26T21:12:01.223283+00:00",
   "sec_seen": [
+   "0001193125-26-432230",
    "0001225208-26-008502",
    "0001193125-26-432220",
    "0002050987-26-000002",
@@ -11049,10 +11039,11 @@
    "0002005471-26-000002",
    "0001767197-26-000006",
    "0001193125-26-432226",
+   "0001464521-26-000156",
    "0001649840-26-000004",
    "0001225208-26-008507",
-   "0001225208-26-008503",
    "0001225208-26-008504",
+   "0001225208-26-008503",
    "0001225208-26-008508",
    "0001225208-26-008509",
    "0001437749-26-033535",
