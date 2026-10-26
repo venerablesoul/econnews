@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "d4b6e4102b856bdb": "2026-10-23T08:01:25.016113+00:00",
-  "5c97d3da80e0a3ec": "2026-10-23T08:01:25.016113+00:00",
-  "6ed00aa519d924dc": "2026-10-23T08:01:25.016113+00:00",
   "da039c1481bed46e": "2026-10-23T08:06:24.887604+00:00",
   "1ff7bfbc44a25dd6": "2026-10-23T08:06:24.887604+00:00",
   "464e1ea239080c8e": "2026-10-23T08:06:24.887604+00:00",
@@ -598,34 +595,10 @@
   "0d1510001304639d": "2026-10-26T07:49:41.384029+00:00",
   "669035a6446d8c44": "2026-10-26T07:54:41.392393+00:00",
   "2cf22a5eb4bdf513": "2026-10-26T07:54:41.392393+00:00",
-  "b12bea3720a9df94": "2026-10-26T07:54:41.392393+00:00"
+  "b12bea3720a9df94": "2026-10-26T07:54:41.392393+00:00",
+  "a9b874272c9889b1": "2026-10-26T08:04:41.395164+00:00"
  },
  "recent": [
-  {
-   "title": "China Barely Eased Austerity Just Before Shift to Stimulus Mode",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-23/china-barely-eased-austerity-just-before-shift-to-stimulus-mode",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-23T08:01:25.016113+00:00",
-   "title_ru": "Китай едва ослабил режим жесткой экономии перед переходом в режим стимулирования",
-   "lead": "China trimmed its government spending for the seventh straight month, before policymakers delivered a modest package of additional stimulus to ensure the economy hits Beijing’s annual growth target.",
-   "lead_ru": "Китай сократил свои государственные расходы седьмой месяц подряд, прежде чем политики предоставили скромный пакет дополнительных стимулов для обеспечения того, чтобы экономика достигла годового целевого показателя роста Пекина.",
-   "tags": [
-    "China"
-   ]
-  },
-  {
-   "title": "UK Seen More Reliant on Gas Imports This Winter as Prices Surge",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOcEJRRzRjSGh6ZFIzOUtVWTA4WDlYTWFsQm1rcGViOERmaURWT19aZWFHdTJpX1lJaUxTU3lyLTBFal9SVnpULUZSaGFxRkpRNG9oQWxmQmxVaWJnNkpmR0h6bndMdk9jWkRwTmlKYl9iZTJ6ZXo5QnNpUXU1NGhRa1R5V292WDBnbDk2dnFQMjJWdm9kT24zVXRUa1IwQWNJajk2T2M4Wl9pTWpGT0FJTWtMcEU?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-23T08:01:25.016113+00:00",
-   "title_ru": "Великобритания стала более зависимой от импорта газа этой зимой, поскольку цены выросли"
-  },
   {
    "title": "ECB Consumer Expectations Survey results – September 2026",
    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261023~a3d201c97c.en.html",
@@ -5016,6 +4989,21 @@
    "lead_ru": "Кроме того, почему правительство хочет больше опираться на казначейские векселя",
    "tags": [
     "bonds"
+   ]
+  },
+  {
+   "title": "Odd Lots: AI Agents Are Changing the Prices of Goods (Podcast)",
+   "link": "https://www.bloomberg.com/news/audio/2026-10-26/odd-lots-ai-agents-are-changing-the-prices-of-goods-podcast",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T08:04:41.395164+00:00",
+   "title_ru": "Нечетные лоты: ИИ-агенты меняют цены на товары (подкаст)",
+   "lead": "It’s obvious that things are getting more expensive, and there are plenty of reasons behind the surge in prices — whether it’s wars or inflation or companies padding their profit margins.",
+   "lead_ru": "Очевидно, что вещи становятся все дороже, и есть много причин для роста цен — будь то войны, инфляция или компании, увеличивающие свою прибыль.",
+   "tags": [
+    "inflation"
    ]
   }
  ],
