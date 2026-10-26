@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "332fc4c0875deda0": "2026-10-23T04:20:51.565157+00:00",
   "866800ab34f25668": "2026-10-23T04:25:51.528715+00:00",
   "6d58427e04155edc": "2026-10-23T04:25:51.528715+00:00",
   "6761f13ba18ba7eb": "2026-10-23T04:25:51.528715+00:00",
@@ -596,22 +595,11 @@
   "12ab1b6980bca0f3": "2026-10-26T04:14:41.445276+00:00",
   "b9abee1db04031a9": "2026-10-26T04:19:41.370469+00:00",
   "2eda1976f2832339": "2026-10-26T04:19:41.370469+00:00",
-  "ee0758837b1f1a2b": "2026-10-26T04:19:41.370469+00:00"
+  "ee0758837b1f1a2b": "2026-10-26T04:19:41.370469+00:00",
+  "2ff5590774d302a8": "2026-10-26T04:24:41.347791+00:00",
+  "1e2c1a64212cef34": "2026-10-26T04:24:41.347791+00:00"
  },
  "recent": [
-  {
-   "title": "Newmont beats quarterly profit estimates on higher gold prices, Cadia recovery",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNajFlVFVVNzNoeTg5cTNJM2ZuNjZoU3RBUVUwdnZOUXljd2tpM2dHbDhjbUU4V0JCZkZMWmlrNWlTeHJLM2g0aE01MGE1VkZndzdPb2J0R2Q3bjJtWkJvMG5DeWdLUmJwamw3ckpNeG9jb3RYSFFiLW5PanFLdlRUUXNvN3ptWDBjZ01aR1JMaFRwXzd5RE1jWnNqMDhTWU1SZmp5ekxrWQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T04:20:51.565157+00:00",
-   "title_ru": "Newmont превзошел прогнозы квартальной прибыли на фоне более высоких цен на золото, восстановление Cadia",
-   "tags": [
-    "gold"
-   ]
-  },
   {
    "title": "ECB Set to Raise Rates in December After Pause, Economists Say",
    "link": "https://www.bloomberg.com/news/articles/2026-10-23/ecb-set-to-raise-rates-in-december-after-pause-economists-say",
@@ -5302,6 +5290,26 @@
    "score": 3,
    "ts": "2026-10-26T04:19:41.370469+00:00",
    "title_ru": "Поставщик одежды Gap Gokaldas планирует удвоить долю европейского экспорта, чтобы снизить зависимость США"
+  },
+  {
+   "title": "Investors expect markets to unwind as Brazil's Lula reelected",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQN2NwbFFDLVhWTUJuTGZxYkI1YWtMOFNFM29UMndmRUp3V1RzM0wyeTdvS2dzalE3WFRKdUVvWTdpOXVzakNmajA1TFVkX1RmdG5xRmRWUm9pQ1lOMEYwM2tMQVY0emRfdjVWeks3QVBhdWNzVXd4dEN1TE5oc1Q2ZHpOUDE3NmM4bWE0Sk1mS3RSeF9CUUlqdjhkZmJiNFpRWUp3ZTRDb3ZHWkU?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-26T04:24:41.347791+00:00",
+   "title_ru": "Инвесторы ожидают, что рынки успокоятся после переизбрания президента Бразилии Лулы"
+  },
+  {
+   "title": "Indonesia strengthens measures against stock manipulation after market rout triggered by MSCI",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPUE9yTXpNTi04M0d2WkhjaGJGMHN2amxERHk0TVpPWjY4S2xGN2tIOU05eGxudUcyWW5iSXFIUUJWOUlYZlZFVmlBcGNibk5XQ29XR09lNW15LUZhenNKejJ0TlowVE9zMS1HWW5tQUJMcnNzNWtiVFc3LUZVcThyXzJ2RU4weGdVU3dJbTRXVHBzMmRZT1B3TERGNjBTU3Q3WThOZldPcG9CTFcyblF6WE81LVZ6UWdmeFQ1Y1pnTTR0TmUwaTIyWm5R?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T04:24:41.347791+00:00",
+   "title_ru": "Индонезия усиливает меры против манипулирования акциями после обвала рынка, вызванного MSCI"
   }
  ],
  "last_digest": "2026-10-25",
@@ -5324,7 +5332,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 1,
+  "Fed": 0,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
