@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "5c41445d16ecc5a7": "2026-10-23T11:36:24.927201+00:00",
-  "979f400400229229": "2026-10-23T11:36:24.927201+00:00",
   "a579e8be3df4142c": "2026-10-23T11:46:24.965040+00:00",
   "4e8aacd8579c88e3": "2026-10-23T11:51:24.934892+00:00",
   "725bed47dc931bee": "2026-10-23T11:56:24.932001+00:00",
@@ -604,40 +602,13 @@
   "3b5b91f474dd64a5": "2026-10-26T11:15:24.145265+00:00",
   "c0f481cbf906ce98": "2026-10-26T11:20:24.158305+00:00",
   "1d8153ba3c654e93": "2026-10-26T11:25:24.133288+00:00",
-  "e69b42b6e86d8a4c": "2026-10-26T11:35:24.325038+00:00"
+  "e69b42b6e86d8a4c": "2026-10-26T11:35:24.325038+00:00",
+  "d4b119c86e5bf992": "2026-10-26T11:40:24.194002+00:00",
+  "04b3cf620910e36d": "2026-10-26T11:40:24.194002+00:00",
+  "75da3691a3a589cf": "2026-10-26T11:45:24.253298+00:00",
+  "c48e398364de0474": "2026-10-26T11:45:24.253298+00:00"
  },
  "recent": [
-  {
-   "title": "SLB Sees Growth Driven by Middle East Oil Field Recovery",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-23/slb-sees-growth-driven-by-middle-east-oil-field-recovery",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-23T11:36:24.927201+00:00",
-   "title_ru": "SLB видит рост, обусловленный восстановлением нефтяных месторождений на Ближнем Востоке",
-   "lead": "SLB, the world’s biggest oil field services provider, said it has seen a gradual recovery in its Middle East business despite disruptions from the Iran war.",
-   "lead_ru": "SLB, крупнейший в мире поставщик нефтесервисных услуг, заявил, что в его ближневосточном бизнесе наблюдается постепенное восстановление, несмотря на сбои в результате войны с Ираном.",
-   "tags": [
-    "oil"
-   ]
-  },
-  {
-   "title": "Volvo CEO Says China Market Gone, Luxury Weakness Remains",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-23/the-opening-trade-10-23-2026-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T11:36:24.927201+00:00",
-   "title_ru": "Генеральный директор Volvo говорит, что рынок Китая ушел, слабость роскоши остается",
-   "lead": "Volvo plunged by about 30% to a record low after the Swedish automaker’s chief executive officer said the market for Western-developed cars in China is disappearing fast, prompting it to cut 2,500 more jobs.",
-   "lead_ru": "Volvo упала примерно на 30% до рекордно низкого уровня после того, как главный исполнительный директор шведского автопроизводителя заявил, что рынок автомобилей западного производства в Китае быстро исчезает, что побудило его сократить еще 2500 рабочих мест.",
-   "tags": [
-    "China",
-    "jobs"
-   ]
-  },
   {
    "title": "Bloomberg Brief 10/23/2026",
    "link": "https://www.bloomberg.com/news/videos/2026-10-23/bloomberg-brief-10-23-2026-video",
@@ -4961,6 +4932,41 @@
    "title_ru": "Нигерия представила проект экономического плана, способного пережить правительства",
    "lead": "Nigerian Finance Minister Taiwo Oyedele unveiled a draft economic policy framework designed to serve as a blueprint for government plans, budgets and policies, regardless of the administration in power.",
    "lead_ru": "Министр финансов Нигерии Тайво Ойеделе представил проект рамок экономической политики, призванный служить основой для правительственных планов, бюджетов и политики, независимо от того, какая администрация находится у власти."
+  },
+  {
+   "title": "The stock market’s biggest test in weeks is here",
+   "link": "https://www.marketwatch.com/story/the-stock-markets-biggest-test-in-weeks-is-here-256f5a37?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-26T11:40:24.194002+00:00"
+  },
+  {
+   "title": "Gulf Oil Bargains Lure India Away From Russia as Freight Soars",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-26/gulf-oil-bargains-lure-india-away-from-russia-as-freight-soars",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-26T11:45:24.253298+00:00",
+   "title_ru": "Нефтяные сделки в Персидском заливе отвлекают Индию от России, поскольку грузоперевозки растут",
+   "lead": "Indian refiners are increasingly turning to Persian Gulf crude and pulling back from their mainstay supplier Russia, as sky-high freight costs erode the economics of long-haul shipments.",
+   "lead_ru": "Индийские нефтеперерабатывающие заводы все чаще обращаются к сырой нефти из Персидского залива и отказываются от своего основного поставщика - России, поскольку заоблачные расходы на фрахт подрывают экономику дальних перевозок.",
+   "tags": [
+    "oil",
+    "Russia"
+   ]
+  },
+  {
+   "title": "Airtel Money reports 25% growth in first-half revenue in maiden results",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPcVlFZ0d1WHloRlFVVjA1QlowLXNHUGY5bkhCRVgzeEt1aG1CS09DY0R4S0h4cWJUY3VNb3FQY0wtZEFvQUhVdE1DY19KWC0tb2MxM3J2VDg2a2JJTXR2UWU2cF9tMUhPWXBQcmtpV3RoOFJYNFpBRmUzTHZZaE5wcG5IdHNFTHZuNzhUdGxTNVpvUmRzcnRGb29USWZBSHkwZm5ZYlhEMkxOdElTZkZWWVhBRQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T11:45:24.253298+00:00",
+   "title_ru": "Airtel Money сообщает о росте выручки в первом полугодии на 25%"
   }
  ],
  "last_digest": "2026-10-25",
