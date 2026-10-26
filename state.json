@@ -604,7 +604,9 @@
   "a598a1a8273e52f9": "2026-10-26T09:35:24.244114+00:00",
   "b394f5f216553cd5": "2026-10-26T09:35:24.244114+00:00",
   "5f42bc88d5d9f8b3": "2026-10-26T09:40:24.585771+00:00",
-  "4f510a4a1f142f19": "2026-10-26T09:40:24.585771+00:00"
+  "4f510a4a1f142f19": "2026-10-26T09:40:24.585771+00:00",
+  "36c085a335f40594": "2026-10-26T09:45:24.205670+00:00",
+  "2f19c17d001f232d": "2026-10-26T09:45:24.205670+00:00"
  },
  "recent": [
   {
@@ -4925,6 +4927,32 @@
    "score": 3,
    "ts": "2026-10-26T09:40:24.585771+00:00",
    "title_ru": "Moody's заявило, что обновленный бюджет ЮАР является позитивным для кредитоспособности"
+  },
+  {
+   "title": "French Markets Rebound After Nation Avoids Moody’s Downgrade",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-26/french-markets-rebound-after-nation-avoids-moody-s-downgrade",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 7,
+   "ts": "2026-10-26T09:45:24.205670+00:00",
+   "title_ru": "Французские рынки восстанавливаются после того, как страна избежала понижения рейтинга Moody's",
+   "lead": "France’s bonds and stocks gained after the nation dodged a downgrade at Moody’s Ratings, pausing a selloff that has roiled domestic assets in recent weeks.",
+   "lead_ru": "Облигации и акции Франции выросли после того, как страна уклонилась от понижения рейтинга Moody's Ratings, приостановив распродажу, которая взбудоражила внутренние активы в последние недели.",
+   "tags": [
+    "bonds",
+    "markets"
+   ]
+  },
+  {
+   "title": "UK to set out path to NATO target in Wednesday's budget, PM says",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNdFpjamZfZHVIb3NCTmJGY0pTcDRPY0xCRFhxb19qM0F2UTR4VWxjSEZFU21yRm1UTXBxVmZIRDJTek1zZ21JM3owM1JYZ0lodVJ3ZGp1MWM1NG1TUG1Na2plTkp5LUxvOVFPcEZsUE1Ld2lEamFDZzAwa3NGN0ZoTE5NOW1nSERZOWJtQmhYeWJHT1J1cE4xdzdCN243NGRk?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T09:45:24.205670+00:00",
+   "title_ru": "Великобритания наметит путь к цели НАТО в бюджете в среду, заявил премьер-министр"
   }
  ],
  "last_digest": "2026-10-25",
@@ -11342,6 +11370,7 @@
    "0001585521-26-000155",
    "0001022079-26-000109",
    "0000923120-26-000030",
+   "0001493152-26-048317",
    "0000923120-26-000026",
    "0001022079-26-000112",
    "0002160363-26-000004",
@@ -11368,7 +11397,6 @@
    "0001493152-26-048309",
    "0001493152-26-048310",
    "0000923120-26-000027",
-   "0000923120-26-000025",
    "0001493152-26-048311",
    "0001193125-26-430730",
    "0000950103-26-016120",
@@ -11377,7 +11405,7 @@
    "0001022079-26-000116",
    "0001193125-26-430729",
    "0001493152-26-048315",
-   "0001493152-26-048317"
+   "0000923120-26-000025"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
