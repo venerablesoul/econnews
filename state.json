@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "4900d8ebc6b6ea86": "2026-10-23T22:07:41.439877+00:00",
   "c750874909946380": "2026-10-23T22:12:41.458547+00:00",
   "b20a095ce78bf965": "2026-10-23T22:17:41.490326+00:00",
   "e54466f64ec33585": "2026-10-23T22:17:41.490326+00:00",
@@ -595,7 +594,10 @@
   "e4870f6a5a803f0b": "2026-10-26T21:17:01.154444+00:00",
   "91480cc2d66f9b89": "2026-10-26T21:52:01.257657+00:00",
   "520d2dccb9258e1f": "2026-10-26T21:52:01.257657+00:00",
-  "2f5c7d62240d8ebf": "2026-10-26T21:52:01.257657+00:00"
+  "2f5c7d62240d8ebf": "2026-10-26T21:52:01.257657+00:00",
+  "d108e95f96ae4c6c": "2026-10-26T22:07:01.229022+00:00",
+  "152dc5ecb390f727": "2026-10-26T22:12:01.160665+00:00",
+  "aad2d4de3e023baa": "2026-10-26T22:12:01.160665+00:00"
  },
  "recent": [
   {
@@ -4610,6 +4612,32 @@
    "score": 3,
    "ts": "2026-10-26T21:52:01.257657+00:00",
    "title_ru": "Аналитики говорят, что Boeing прогнозирует небольшой квартальный убыток, несмотря на недавние победы"
+  },
+  {
+   "title": "Options traders are seizing control of the S&P 500",
+   "link": "https://www.marketwatch.com/story/options-traders-are-seizing-control-of-the-s-p-500-1add94ca?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-26T22:07:01.229022+00:00"
+  },
+  {
+   "title": "Asian Stocks to Gain as Anthropic Files for IPO: Markets Wrap",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-26/stock-market-today-dow-s-p-live-updates",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-26T22:12:01.160665+00:00",
+   "title_ru": "Азиатские акции вырастут в цене из-за антропных файлов для IPO: итоги рынков",
+   "lead": "Asian stocks were set to rise, tracking gains on Wall Street as Anthropic PBC’s initial public offering filing revived enthusiasm for artificial intelligence ahead of big tech earnings and the Federal Reserve’s rate decision.",
+   "lead_ru": "Азиатские акции должны были вырасти, следуя за ростом на Уолл-стрит, поскольку подача заявки на первичное публичное размещение акций Anthropic PBC возродила энтузиазм в отношении искусственного интеллекта в преддверии больших доходов от высоких технологий и решения Федеральной резервной системы по ставке.",
+   "tags": [
+    "Fed",
+    "rates",
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-26",
@@ -7073,6 +7101,22 @@
    },
    {
     "src": "sec",
+    "id": "81c7645cbaf60e84",
+    "ticker": "GRCE",
+    "company": "Grace Therapeutics, Inc.",
+    "who": "Opaleye Management Inc.",
+    "role": "10% owner",
+    "type": "buy",
+    "value": 158601,
+    "shares": 87801,
+    "price": 1.81,
+    "plan": false,
+    "date": "2026-10-26",
+    "disclosed": "2026-10-26",
+    "link": "https://www.sec.gov/Archives/edgar/data/1595855/000149315226048591/0001493152-26-048591-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "c5b797c693505c23",
     "ticker": "CART",
     "company": "Maplebear Inc.",
@@ -7406,6 +7450,22 @@
     "date": "2026-10-23",
     "disclosed": "2026-10-26",
     "link": "https://www.sec.gov/Archives/edgar/data/1625756/000119312526432218/0001193125-26-432218-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "ed856ad858620fc0",
+    "ticker": "PACS",
+    "company": "PACS Group, Inc.",
+    "who": "Jason Hulse Murray",
+    "role": "CEO, 10% owner",
+    "type": "sell",
+    "value": 4000387,
+    "shares": 82613,
+    "price": 48.42,
+    "plan": true,
+    "date": "2026-10-23",
+    "disclosed": "2026-10-26",
+    "link": "https://www.sec.gov/Archives/edgar/data/2014386/000201438626000024/0002014386-26-000024-index.htm"
    },
    {
     "src": "sec",
@@ -10958,38 +11018,6 @@
     "date": "2026-10-16",
     "disclosed": "2026-10-16",
     "link": "https://www.sec.gov/Archives/edgar/data/2106572/000210657226000003/0002106572-26-000003-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "b769333d51080ace",
-    "ticker": "MRVL",
-    "company": "Marvell Technology, Inc.",
-    "who": "Sandeep Bharathi",
-    "role": "President",
-    "type": "sell",
-    "value": 865864,
-    "shares": 3685,
-    "price": 234.97,
-    "plan": true,
-    "date": "2026-10-16",
-    "disclosed": "2026-10-16",
-    "link": "https://www.sec.gov/Archives/edgar/data/1975808/000162828026066137/0001628280-26-066137-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "8d1886b928b6a6d6",
-    "ticker": "LIFE",
-    "company": "Ethos Technologies Inc.",
-    "who": "Peter George Colis",
-    "role": "CEO",
-    "type": "sell",
-    "value": 4607379,
-    "shares": 120000,
-    "price": 38.39,
-    "plan": true,
-    "date": "2026-10-16",
-    "disclosed": "2026-10-16",
-    "link": "https://www.sec.gov/Archives/edgar/data/2089362/000208936226000021/0002089362-26-000021-index.htm"
    }
   ],
   "docs": {
@@ -11026,6 +11054,7 @@
   "sec_seen": [
    "0001193125-26-432230",
    "0001225208-26-008502",
+   "0001731729-26-000008",
    "0001193125-26-432220",
    "0002050987-26-000002",
    "0001225208-26-008501",
@@ -11036,8 +11065,8 @@
    "0002066961-26-000002",
    "0001733126-26-000013",
    "0001510281-26-000377",
+   "0001140361-26-040789",
    "0002005471-26-000002",
-   "0001767197-26-000006",
    "0001193125-26-432226",
    "0001464521-26-000156",
    "0001649840-26-000004",
@@ -11045,7 +11074,9 @@
    "0001225208-26-008504",
    "0001225208-26-008503",
    "0001225208-26-008508",
+   "0001493152-26-048591",
    "0001225208-26-008509",
+   "0002014386-26-000024",
    "0001437749-26-033535",
    "0001128404-26-000006",
    "0001193125-26-432207",
