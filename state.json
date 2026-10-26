@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "12566dde4f8009e8": "2026-10-23T14:31:55.753900+00:00",
-  "1b295f2d0bfb383c": "2026-10-23T14:36:55.863319+00:00",
-  "35c769892033e428": "2026-10-23T14:36:55.863319+00:00",
   "174ce83c411c3e60": "2026-10-23T14:41:55.694662+00:00",
   "6184e020e376e2f2": "2026-10-23T14:46:55.729359+00:00",
   "15292115ed16f4e1": "2026-10-23T14:46:55.729359+00:00",
@@ -598,29 +595,12 @@
   "2eb54c153271dd49": "2026-10-26T14:25:24.256601+00:00",
   "f024e49411a5cdfc": "2026-10-26T14:30:24.216515+00:00",
   "a7e71e4915fe82b2": "2026-10-26T14:30:24.216515+00:00",
-  "34fb680aedde6407": "2026-10-26T14:30:24.216515+00:00"
+  "34fb680aedde6407": "2026-10-26T14:30:24.216515+00:00",
+  "ba41b3bfaf5855bb": "2026-10-26T14:41:22.831357+00:00",
+  "f8bded95943f8d78": "2026-10-26T14:41:22.831357+00:00",
+  "f8248943121cec82": "2026-10-26T14:41:22.831357+00:00"
  },
  "recent": [
-  {
-   "title": "US consumer sentiment near record low ahead of midterm elections",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPR05CVGk5UUlBVHZBTDJObFp0eHJZUlpOdGdnSkxWZUtQWWR5V1BvRkZIQTQwSGtoa21PTFNNUHFPbGpkSm05QXc5MXB0Q3VNWTBxd21hQmpSdDlhc1pHNkhMeWhLd2xpR21nQ2Rxa0d4Ym0yQ0Jtb2I1dWlMYlUzenFWVkVlNG9xbmxKUENEQjFzWnhFTFZLQkhCR2Fucmd0ZUhCU0ttQ2xXUQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T14:31:55.753900+00:00",
-   "title_ru": "Потребительские настроения в США близки к рекордно низкому уровню в преддверии"
-  },
-  {
-   "title": "Italy may hike tax on energy firms to fund budget, sources say",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPbmp3dmpsTVJkVkRuSUdtclFKWm54TVJQbFpjUm5JVXpfbGFJVXd2ZE5DVE9VZkVfU2VCVE9JN1BBZXMtanVyMllVcklRb0xRWTFuai11NW1wY1J5bXVOX2ZSS18xaFk2bTN0ZGpkZ1FVSC1WOXA1RlhwWndQTE0zc1ZIVWtxR3BTT01kczVPeEkya1ptSXB5a01EdG9Ndy01ZWdsUWVhdE56U3M?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T14:36:55.863319+00:00",
-   "title_ru": "Италия может повысить налог на энергетические компании для финансирования бюджета, говорят источники"
-  },
   {
    "title": "EXCLUSIVE: Algerian urea exports to France under threat as diplomatic tensions persist, sources say",
    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNMXY2aExCaWttQ0loM1VFWUd5QVlVYzUzMjdsSXUwZXJUZFllVmQtYmVlaE5qWVNwb0RlRERNTllxWkQxZ1h1bHdsY2ZpSFczMGJBZTd1Sl96enlpWW1MOHdRSkdwOXhXYXM1RkZTb2oydHpaN3dCemp1N1lHWGNxVlpBLVQ5aDU3TWJVdUFTOVNSc0lYR2p1Ynh0RHllZUQ5alczYzJrR051dkJhT0tjQUxONWh2enBJbEplM3pqbG9OZmt6?oc=5",
@@ -4799,6 +4779,23 @@
    "lead_ru": "Фьючерсы на природный газ в США упали на 5,4% до самого низкого уровня с апреля, поскольку прогнозы значительно ухудшились в выходные дни, что указывает на снижение спроса на топливо для печей и электростанций в первые недели…",
    "tags": [
     "gas"
+   ]
+  },
+  {
+   "title": "Claudia Sahm Makes the Case for an October Fed Rate Hike",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-26/claudia-sahm-makes-case-for-an-october-fed-rate-hike-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 8,
+   "ts": "2026-10-26T14:41:22.831357+00:00",
+   "title_ru": "Клаудия Сахм оправдывает октябрьское повышение ставки ФРС",
+   "lead": "New Century Advisors Chief Economist Claudia Sahm argues that high energy costs could spread into other consumer prices and that tariffs on Canada may rise, creating upside inflation risks that could justify a rate hike in…",
+   "lead_ru": "Главный экономист New Century Advisors Клаудия Сахм утверждает, что высокие цены на энергоносители могут распространиться на другие потребительские цены и что тарифы в Канаде могут возрасти, создавая риски роста инфляции, которые могут оправдать повышение ставок в...",
+   "tags": [
+    "Fed",
+    "rates",
+    "inflation"
    ]
   }
  ],
@@ -11207,11 +11204,7 @@
   "checked": "2026-10-26T13:45:24.292760+00:00",
   "sec_seen": [
    "0001749928-26-000007",
-   "0001976408-26-000905",
    "0001193125-26-431207",
-   "0001976408-26-000902",
-   "0001976408-26-000907",
-   "0001976408-26-000904",
    "0000821026-26-000136",
    "0000821026-26-000138",
    "0000080424-26-000260"
