@@ -1,12 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "da039c1481bed46e": "2026-10-23T08:06:24.887604+00:00",
-  "1ff7bfbc44a25dd6": "2026-10-23T08:06:24.887604+00:00",
-  "464e1ea239080c8e": "2026-10-23T08:06:24.887604+00:00",
-  "d7a38ed4136b0203": "2026-10-23T08:11:24.882012+00:00",
-  "e4727dd3c95a64df": "2026-10-23T08:11:24.882012+00:00",
-  "70745a4e976eaadc": "2026-10-23T08:11:24.882012+00:00",
   "cccc77875e337510": "2026-10-23T08:16:24.969643+00:00",
   "e144eacd15377e4d": "2026-10-23T08:21:24.933822+00:00",
   "10383391a6223846": "2026-10-23T08:26:24.902878+00:00",
@@ -596,77 +590,13 @@
   "669035a6446d8c44": "2026-10-26T07:54:41.392393+00:00",
   "2cf22a5eb4bdf513": "2026-10-26T07:54:41.392393+00:00",
   "b12bea3720a9df94": "2026-10-26T07:54:41.392393+00:00",
-  "a9b874272c9889b1": "2026-10-26T08:04:41.395164+00:00"
+  "a9b874272c9889b1": "2026-10-26T08:04:41.395164+00:00",
+  "bb35d3242e48fe9c": "2026-10-26T08:14:41.387855+00:00",
+  "66c8619b9af7e215": "2026-10-26T08:14:41.387855+00:00",
+  "d14af8c33d2eb77c": "2026-10-26T08:14:41.387855+00:00",
+  "5d1a0a710a706974": "2026-10-26T08:14:41.387855+00:00"
  },
  "recent": [
-  {
-   "title": "ECB Consumer Expectations Survey results – September 2026",
-   "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261023~a3d201c97c.en.html",
-   "sources": [
-    "ECB"
-   ],
-   "score": 6,
-   "ts": "2026-10-23T08:06:24.887604+00:00",
-   "title_ru": "Результаты опроса потребительских ожиданий ЕЦБ – сентябрь 2026 г.",
-   "tags": [
-    "ECB"
-   ]
-  },
-  {
-   "title": "Euro-Zone Business Activity Slowed as France Unrest Weighs",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-23/euro-zone-business-activity-slowed-as-france-unrest-weighs",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T08:06:24.887604+00:00",
-   "title_ru": "Деловая активность в еврозоне замедлилась из-за беспорядков во Франции",
-   "lead": "The euro area’s private sector slowed more than expected in October, weighed down by France as the region’s No.2 economy grapples with fiscal and political tensions.",
-   "lead_ru": "Частный сектор еврозоны замедлился больше, чем ожидалось, в октябре, отягощенный Францией, поскольку экономика № 2 в регионе борется с фискальной и политической напряженностью."
-  },
-  {
-   "title": "Odd Lots: The Forgotten Godmother of Economic Writing (Podcast)",
-   "link": "https://www.bloomberg.com/news/audio/2026-10-23/odd-lots-the-forgotten-godmother-of-economic-writing-podcast",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T08:06:24.887604+00:00",
-   "title_ru": "Нечетные лоты: забытая крестная мать экономического письма (подкаст)",
-   "lead": "In 1776, the field of economics was born with the publication of Adam Smith’s The Wealth of Nations. And among the book’s earliest readers, and most ardent advocates, was a Regency-era novelist named Maria Edgeworth.",
-   "lead_ru": "В 1776 году область экономики родилась с публикацией книги Адама Смита «Богатство народов». И среди первых читателей книги и самых ярых сторонников был романист эпохи Регентства по имени Мария Эджворт."
-  },
-  {
-   "title": "ECB Says Consumers’ Inflation Expectations Edge Up in September",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-23/ecb-says-consumers-inflation-expectations-edge-up-in-september",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 7,
-   "ts": "2026-10-23T08:11:24.882012+00:00",
-   "title_ru": "ЕЦБ говорит, что инфляционные ожидания потребителей вырастут в сентябре",
-   "lead": "Inflation expectations among euro-area households increased slightly in September, supporting expectations that the European Central Bank will keep raising borrowing costs.",
-   "lead_ru": "Инфляционные ожидания среди домохозяйств еврозоны немного увеличились в сентябре, поддерживая ожидания того, что Европейский центральный банк продолжит повышать стоимость заимствований.",
-   "tags": [
-    "ECB",
-    "inflation"
-   ]
-  },
-  {
-   "title": "Hidden Rallies Emerge From Tech Selloff: Market Analysis",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-23/hidden-rallies-emerge-from-tech-selloff-3-minutes-mliv-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-23T08:11:24.882012+00:00",
-   "title_ru": "Скрытые ралли, связанные с продажей технологий: анализ рынка",
-   "lead": "Anna Edwards, Guy Johnson, and Paul Dobson break down today's key themes for analysts and investors on \"Bloomberg: The Opening Trade.\" (Source: Bloomberg)",
-   "lead_ru": "Анна Эдвардс, Гай Джонсон и Пол Добсон делят сегодняшние ключевые темы для аналитиков и инвесторов на \"Bloomberg: The Opening Trade.\" (Источник: Bloomberg)",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "What is the Budget and what could be in it?",
    "link": "https://www.bbc.co.uk/news/articles/c6x2zrjl7kjno?at_medium=RSS&at_campaign=rss",
