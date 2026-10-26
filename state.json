@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "7a7f78f441347b01": "2026-10-23T15:11:55.713584+00:00",
-  "52e7fa5e141ad8ae": "2026-10-23T15:11:55.713584+00:00",
   "1f1ca2ac56509c4e": "2026-10-23T15:16:55.764553+00:00",
   "7e0e5436ac51d52a": "2026-10-23T15:21:55.675248+00:00",
   "4892ae6e79133f2b": "2026-10-23T15:21:55.675248+00:00",
@@ -604,32 +602,11 @@
   "a9f70dedcc5b9896": "2026-10-26T15:11:22.727822+00:00",
   "dff26f21e5e1bb26": "2026-10-26T15:11:22.727822+00:00",
   "2d777c10e4c87cff": "2026-10-26T15:11:22.727822+00:00",
-  "7dac84b8c6c3e52d": "2026-10-26T15:11:22.727822+00:00"
+  "7dac84b8c6c3e52d": "2026-10-26T15:11:22.727822+00:00",
+  "8b3e62890f64a43d": "2026-10-26T15:16:22.777559+00:00",
+  "dcd223ed9d76747a": "2026-10-26T15:16:22.777559+00:00"
  },
  "recent": [
-  {
-   "title": "UK government promises to save businesses £800 million in paperwork and tariffs",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPTFM0SWI5QmdpcUtXMmF3bUUwekJQbVlUQ1k3dGNvZEpMNkdkZEJWNGMtTkNBNHNQbWhDam13YjVHUF9RWW5wTmhlVDVPRU42V1hiMEZzMVBrNnUtbkZvby15YzhnWVhPOE5iNTdJbFNFR2lfSkFWSDBVYXlTXzNEeXBudzBGT3ppN2FMUmxlVllPVU9rQmtfTUp4UTlfaEtKb2V0SVR0UWtkWG84d0VkNV8yNA?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-23T15:11:55.713584+00:00",
-   "title_ru": "Правительство Великобритании обещает сэкономить предприятиям £ 800 млн на оформлении документов и тарифах",
-   "tags": [
-    "tariffs"
-   ]
-  },
-  {
-   "title": "Employment up in the nation, down in the District of Columbia, December 2024 to December 2025",
-   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPcnJhdzFGZjhNaVFSZlRMS201UWhlcjZGQ3dmWUYxbEdRZ2lHeHRleTZEZEFhUXQ2cUZnT2ZKeHpNMzlqZjdRNXFkVl9semFwS1p4bkNxMDUxOEtsN0V3UEt6b1lqckJJRlF4TXdyM1NVcndLbGo5YklDMWpnRG5zN012X3kxcEFtMmJRc2pzQUw4WUFfeWlWU08zbXJYbk5wUzdvZHM5VDJhRjRoclhKUmJsRDk3WmRaMzNvM0w5QUw0bUh4ZGExMQ?oc=5",
-   "sources": [
-    "US Labor Statistics (BLS)"
-   ],
-   "score": 4,
-   "ts": "2026-10-23T15:11:55.713584+00:00",
-   "title_ru": "Занятость в стране выросла, снизившись в округе Колумбия, с декабря 2024 года по декабрь 2025 года"
-  },
   {
    "title": "Civil servant who juggled five jobs says he was 'surprised' to be charged with fraud",
    "link": "https://www.bbc.co.uk/news/articles/c6lykzwjkj1eo?at_medium=RSS&at_campaign=rss",
@@ -4812,6 +4789,19 @@
    ],
    "score": 2,
    "ts": "2026-10-26T15:11:22.727822+00:00"
+  },
+  {
+   "title": "S&P Dow Jones partners with Kalshi for index-based events contracts, use prediction data",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOQzU5TzROYXlCRk1Obk1SaDNxVUJDRHd1eGFWaWpDS3FuVXRqTTVtZ3NRX0tKZko0SjZnZGV4b3FuR2hUOVlPZHc0dWszOVZzbzIzSlBYX3REblZnZlFQaGcxZ3VucmxveHhMdGVZSjlRMDFXUlpzSThKc0JxdFV6OFpzTTRHZThhdHFxQWlnOVdzTlJ2WVNwQ2V4S2JrdkgwMFloQi16M2dJbi14Y2I4eUVCM05vb0haRGliRkNQcmxPT0hka0NKNS1R?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T15:16:22.777559+00:00",
+   "title_ru": "S&P Dow Jones сотрудничает с Калши по контрактам на индексные события, использует данные прогнозов",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-25",
