@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "a579e8be3df4142c": "2026-10-23T11:46:24.965040+00:00",
   "4e8aacd8579c88e3": "2026-10-23T11:51:24.934892+00:00",
   "725bed47dc931bee": "2026-10-23T11:56:24.932001+00:00",
   "e5fb8de12e2040ad": "2026-10-23T11:56:24.932001+00:00",
@@ -606,26 +605,12 @@
   "d4b119c86e5bf992": "2026-10-26T11:40:24.194002+00:00",
   "04b3cf620910e36d": "2026-10-26T11:40:24.194002+00:00",
   "75da3691a3a589cf": "2026-10-26T11:45:24.253298+00:00",
-  "c48e398364de0474": "2026-10-26T11:45:24.253298+00:00"
+  "c48e398364de0474": "2026-10-26T11:45:24.253298+00:00",
+  "f3c8a6a3d2180949": "2026-10-26T11:50:24.143659+00:00",
+  "a4e79cb965d3ab52": "2026-10-26T11:50:24.143659+00:00",
+  "97eccc64e7369667": "2026-10-26T11:50:24.143659+00:00"
  },
  "recent": [
-  {
-   "title": "Bloomberg Brief 10/23/2026",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-23/bloomberg-brief-10-23-2026-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T11:46:24.965040+00:00",
-   "title_ru": "Бриф Bloomberg 23.10.2026",
-   "lead": "Declines in yields ease after a selloff in tech stocks drove investors to Treasuries. Oil heads for a third consecutive weekly gain as escalating attacks on Saudi Arabia stoke supply concerns.",
-   "lead_ru": "Снижение доходности снизилось после того, как распродажа акций технологических компаний привела инвесторов к выпуску казначейских облигаций. Нефть возглавляет третий раз подряд еженедельный прирост, поскольку эскалация атак на Саудовскую Аравию вызывает опасения по поводу поставок.",
-   "tags": [
-    "oil",
-    "bonds",
-    "markets"
-   ]
-  },
   {
    "title": "Bond dealers see small rise in UK debt issuance after budget, more in 2027",
    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPN1M3bTZwMUVmTW9kNHpENWNURGhTU0dEd1dybHN6VVVoV20wZjRVQ0Y0UlF1b0pLTEl0WmtySFVBTnpuSzFRNmVxMWZLWThVR0dESzQ5WGxkNkFwcldmRHZXZXU2S000dHVKMGl2czBpSy1jdmpWeG04cndqSktxMTNwTW9pSk5Cb0lXbzA5d1IySFBJLXMtcFRoM2YtZnJxcnNHQ1Rsbjg4ZEx6QVdVZU9R?oc=5",
@@ -4967,6 +4952,20 @@
    "score": 3,
    "ts": "2026-10-26T11:45:24.253298+00:00",
    "title_ru": "Airtel Money сообщает о росте выручки в первом полугодии на 25%"
+  },
+  {
+   "title": "India's BPCL expects Russian crude purchases to fall in November",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQb09zQjlRbXc1LWNxcS1CaE1iZlpKcUNXSjNCalFGczd5ZGtTaXhsbi1XVng1RVphOWdMcU9WSjdRY2dwLUpaTFdsYU05ZTJrQ0lCWFItbHktZTFBdE9ROHl2MkdDRk5kRWFCdEhaV3hNQTNEQlc2ZU96RkQtZzRtSzZUbUJtMm52TGk1eWl0VHlnZzM5b05rWDlHUll2OWEyM2pEOWlfQ3REeVNBVXc?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-26T11:50:24.143659+00:00",
+   "title_ru": "Индийская BPCL ожидает падения закупок российской нефти в ноябре",
+   "tags": [
+    "oil",
+    "Russia"
+   ]
   }
  ],
  "last_digest": "2026-10-25",
