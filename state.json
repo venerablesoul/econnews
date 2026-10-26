@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "56869dffe679e3a3": "2026-10-23T06:51:24.925269+00:00",
-  "5b193cfcce727eb9": "2026-10-23T06:51:24.925269+00:00",
-  "d8cbbc5704678818": "2026-10-23T06:51:24.925269+00:00",
-  "4b3dae6fe954d0c2": "2026-10-23T06:51:24.925269+00:00",
-  "f70765deb2df7515": "2026-10-23T06:51:24.925269+00:00",
   "b5e720e203023e8f": "2026-10-23T07:06:24.961277+00:00",
   "c50bc460782691a4": "2026-10-23T07:06:24.961277+00:00",
   "f95dbeb263f44a95": "2026-10-23T07:11:24.881713+00:00",
@@ -605,68 +600,11 @@
   "e5454e6723ec5ea1": "2026-10-26T06:39:41.375406+00:00",
   "907e7af65c45dedc": "2026-10-26T06:44:41.434307+00:00",
   "b96d57ce8b5a7025": "2026-10-26T06:44:41.434307+00:00",
-  "6e6dcb3ed504b18b": "2026-10-26T06:49:41.408375+00:00"
+  "6e6dcb3ed504b18b": "2026-10-26T06:49:41.408375+00:00",
+  "e1b279cf7de7c1b4": "2026-10-26T06:54:41.400506+00:00",
+  "1cb259a91c6db884": "2026-10-26T06:54:41.400506+00:00"
  },
  "recent": [
-  {
-   "title": "UK Retail Sales Fall, Consumer Confidence Worst Since Covid",
-   "link": "https://www.bloomberg.com/news/newsletters/2026-10-23/uk-retail-sales-fall-consumer-confidence-worst-since-covid",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-23T06:51:24.925269+00:00",
-   "title_ru": "Розничные продажи в Великобритании упали, потребительское доверие стало худшим со времен Covid",
-   "lead": "Plus, the nation’s bonds and stocks are showing resilience in the run up to the budget",
-   "lead_ru": "Кроме того, национальные облигации и акции демонстрируют устойчивость в преддверии бюджета",
-   "tags": [
-    "bonds",
-    "markets"
-   ]
-  },
-  {
-   "title": "Tech Rout Leaves South Korean Stocks Twice as Cheap as Indonesia",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-23/tech-rout-leaves-south-korean-stocks-twice-as-cheap-as-indonesia",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-23T06:51:24.925269+00:00",
-   "title_ru": "Tech Rout покидает южнокорейские акции в два раза дешевле, чем Индонезия",
-   "lead": "South Korea has transformed from this year’s hottest major market into the world’s cheapest following a brutal tech selloff, with valuations falling to roughly half of Indonesia’s.",
-   "lead_ru": "Южная Корея превратилась из самого горячего крупного рынка в этом году в самый дешевый в мире после жестокой распродажи технологий, когда оценки упали примерно до половины индонезийских.",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "Volvo Cars to cut 2,500 jobs as third quarter swings to loss",
-   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxONjE0Qml6Mkw5WkFyRXlUcjZ3QTE3LWtGVF9kckI3cExBa0dsaHM2S1dyY1IzZnk0aFlYOGc4M1RoYzd0TVQ0aVNWM1I1RmVCRTNDcURBeHluNDFOOEJaMXVaOUo5ZGN0U0RoTFNuUmJHSjVSdFQzcHdCbHdyNHU1cUFaU290VVhzbV9HbVJjeDJrNGV1TGJOdmNzaHdmR29H?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T06:51:24.925269+00:00",
-   "title_ru": "Volvo Cars сократит 2500 рабочих мест, поскольку третий квартал катится к убытку",
-   "tags": [
-    "jobs"
-   ]
-  },
-  {
-   "title": "How nervous are bond markets about France?",
-   "link": "https://www.ft.com/content/9aa4549e-26f4-4963-94eb-50cf0fc0b8f9",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T06:51:24.925269+00:00",
-   "title_ru": "Насколько рынки облигаций нервничают по поводу Франции?",
-   "lead": "Dusting off our apples-for-apples spreadsheet",
-   "lead_ru": "Удаление пыли из таблицы «яблоки в обмен на яблоки»",
-   "tags": [
-    "bonds"
-   ]
-  },
   {
    "title": "WB Банк продлил кредитные каникулы для пострадавших продавцов Wildberries",
    "link": "https://www.rbc.ru/rbcfreenews/6ad9ff07abe35d89a9ce97ea",
@@ -5156,6 +5094,37 @@
    ],
    "score": 2,
    "ts": "2026-10-26T06:49:41.408375+00:00"
+  },
+  {
+   "title": "Gold gains on softer oil prices; Fed decision in focus",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPZml1aC0yS2NrLUloeEFPZnYyeExpazhPVExTT1BLcV9HZGxEZWFzcHFUMTJFbDhUTjgyaE5EbGRja1BRX0p2UzlDSmEzUUpzTG9ZT2xKZEZMczFvb1pzU2xrdXlNT0dDUXYtQnhoLUFpT09xQmF5Q25FQXdKNGpjOERVdTB1UTk4NkhSd2k3cUNBSTJRMVVsUlpSWQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 8,
+   "ts": "2026-10-26T06:54:41.400506+00:00",
+   "title_ru": "Золото растет на более мягких ценах на нефть; решение ФРС в центре внимания",
+   "tags": [
+    "Fed",
+    "oil",
+    "gold"
+   ]
+  },
+  {
+   "title": "French Bond Rout Draws Australia Pension Into Market Others Shun",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-26/french-bond-oats-australia-pension-australian-retirement-trust-yields-ecb",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-26T06:54:41.400506+00:00",
+   "title_ru": "French Bond Rout выводит австралийскую пенсию на рынок Другие избегают",
+   "lead": "Australia’s second-biggest pension fund is buying French government bonds on the view that markets have overpriced France’s fiscal troubles and the prospect of European Central Bank interest-rate hikes.",
+   "lead_ru": "Второй по величине пенсионный фонд Австралии покупает французские государственные облигации на том основании, что рынки переоценили финансовые проблемы Франции и перспективы повышения процентных ставок Европейского центрального банка.",
+   "tags": [
+    "rates",
+    "bonds"
+   ]
   }
  ],
  "last_digest": "2026-10-25",
