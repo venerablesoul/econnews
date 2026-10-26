@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "4a22d93052796cb7": "2026-10-23T18:07:41.474844+00:00",
-  "693771ef8abcee98": "2026-10-23T18:07:41.474844+00:00",
-  "4972d5ce46bbd9ec": "2026-10-23T18:07:41.474844+00:00",
-  "9a3212c3bb551d1b": "2026-10-23T18:12:41.636074+00:00",
   "03d7ed4a3cdbc197": "2026-10-23T18:22:41.510338+00:00",
   "92e30bb8ea7bb6e4": "2026-10-23T18:32:41.429817+00:00",
   "147a66d4f710e135": "2026-10-23T18:47:41.523607+00:00",
@@ -594,46 +590,11 @@
   "b7ef2c4e05366a49": "2026-10-26T17:26:23.787700+00:00",
   "1f2ba21d6e4a6585": "2026-10-26T17:51:23.853947+00:00",
   "f47b375b5bfeae06": "2026-10-26T17:51:23.853947+00:00",
-  "a2afcbe69dbd060e": "2026-10-26T18:06:23.183887+00:00"
+  "a2afcbe69dbd060e": "2026-10-26T18:06:23.183887+00:00",
+  "4a22d93052796cb7": "2026-10-26T18:16:22.698706+00:00",
+  "fa619a8b824aee62": "2026-10-26T18:16:22.698706+00:00"
  },
  "recent": [
-  {
-   "title": "China calls on oil, gas firms to boost output, build strategic supply bases",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOQ0RFYzFuVnNTcWFqV3k0V2R3NVJjN3VLcmwyMk9WZnlKWTNxTVdwTEdOMUlYZmFMNGUydHYyYUdKd1ZUSzU1b2dfdDZFN3BGLWVfbkJyNmlQLVh5RmE1MEY0SXlzdVB2d2UwcHhPSUpIZmVxMEhCVXRFSGZCZEtHVV84X3FhbDVodmV4SHJlS1Axa3VHd0NUZ0RqQXNLRlczMEQzNmE5VjdtMXFza2MyTThOSmw2bzFVMV9z?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-23T18:07:41.474844+00:00",
-   "title_ru": "Китай призывает нефтегазовые компании увеличить добычу и построить стратегические базы поставок",
-   "tags": [
-    "oil",
-    "China"
-   ]
-  },
-  {
-   "title": "AmEx lifts 2026 profit forecast, plans to cut 5% of workforce",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPeldMNkpFRVBpTW1jQjdoSVBaMFg3VzVvUkZ3X2hqNmp0VjZwamlOQkxGLTlOTFQxUFVOc01wU0NhRFJESDBYTTlTZXFNUFNpQ0NVd0lSQXJEcmpoVlVLNkZnMWRhSmRrak5uajBkbFpmOUV2bnQ2V1NEdWdEdmJORDFySVlodDYtTFdVbjR0S3IzVjQyVUN3Z0Y1NEh6U3otM2c0QmZ5RlNQYkt0c1JLVkpkVGVNZnR2RkpJZGpZZw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T18:07:41.474844+00:00",
-   "title_ru": "AmEx повышает прогноз прибыли на 2026 год и планирует сократить 5% персонала"
-  },
-  {
-   "title": "India's Bharat Petroleum profit drops amid crude oil price volatility",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQcVdwV1JLUVdlRmdFcGNlOFFfZlZaVEEzRWxVMTM2YTV5SmJ0TENiZURHbkJZdEcyd3lybVE3NGFvbnk5ZUFNN0RNMENoVVE3TVhEbkxpcko2aTNfUVRnZU9wY1RCay1yZUhyaUNVRlYxdng3RGc0STA0cnZqTVJtbzZsVnNicnRjaGZPNVJrM21FcVlvMjZGSUJoaU9UZS1SeTRwanJCNmMxQUg1UHdrczRhRl9oZzNkaDVVSg?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-23T18:12:41.636074+00:00",
-   "title_ru": "Прибыль индийской Bharat Petroleum упала на фоне волатильности цен на нефть",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "Can Nvidia’s stock become a safe haven as Wall Street rethinks the AI trade?",
    "link": "https://www.marketwatch.com/story/can-nvidias-stock-become-a-safe-haven-as-wall-street-rethinks-the-ai-trade-64862936?mod=mw_rss_topstories",
@@ -4711,6 +4672,15 @@
    "title_ru": "Ричардс из Марафона предупреждает: «Выхода нет» из-за побитого долга CCC",
    "lead": "A big swath of the riskiest borrowers have few options other than defaulting on their piling debt as it’s getting increasingly expensive to refinance, CVC Marathon Chief Executive Officer Bruce Richards warned.",
    "lead_ru": "У большого числа наиболее рискованных заемщиков мало вариантов, кроме дефолта по накопившимся долгам, поскольку рефинансирование становится все более дорогим, предупредил генеральный директор CVC Marathon Брюс Ричардс."
+  },
+  {
+   "title": "These energy stocks are poised to profit from an imminent AI power crunch",
+   "link": "https://www.marketwatch.com/story/these-energy-stocks-are-poised-to-profit-from-an-imminent-ai-power-crunch-00c1a50d?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-26T18:16:22.698706+00:00"
   }
  ],
  "last_digest": "2026-10-26",
@@ -11126,7 +11096,9 @@
   "checked": "2026-10-26T18:01:22.742766+00:00",
   "sec_seen": [
    "0001343600-26-000015",
-   "0002160813-26-000005",
+   "0001225208-26-008494",
+   "0001225208-26-008493",
+   "0001062993-26-005547",
    "0000080661-26-000369"
   ],
   "errors": {
