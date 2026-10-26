@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "bb83f9ef1e4c8bda": "2026-10-23T10:31:24.911827+00:00",
-  "b55cb092fae8ce51": "2026-10-23T10:31:24.911827+00:00",
   "f5be4df52b92f44a": "2026-10-23T10:36:24.927812+00:00",
   "359c3ef4fdf2b295": "2026-10-23T10:36:24.927812+00:00",
   "e45e011c132421e2": "2026-10-23T10:36:24.927812+00:00",
@@ -607,36 +605,12 @@
   "6a731ec4989caa98": "2026-10-26T10:15:24.254828+00:00",
   "bea96386d1037719": "2026-10-26T10:20:24.241024+00:00",
   "c74f2e472ec1c67d": "2026-10-26T10:25:24.116334+00:00",
-  "a4d58eba8d893b0a": "2026-10-26T10:25:24.116334+00:00"
+  "a4d58eba8d893b0a": "2026-10-26T10:25:24.116334+00:00",
+  "f3400f6b485c89dd": "2026-10-26T10:30:24.206858+00:00",
+  "43763a5282922b03": "2026-10-26T10:35:24.242855+00:00",
+  "a0c5f9a1832c0ba9": "2026-10-26T10:35:24.242855+00:00"
  },
  "recent": [
-  {
-   "title": "Банк России второй раз подряд оставил ключевую ставку без изменений",
-   "link": "https://www.rbc.ru/finances/23/10/2026/6ad9c2b70c9f3ab561c8f2ad",
-   "sources": [
-    "RBC"
-   ],
-   "score": 8,
-   "ts": "2026-10-23T10:31:24.911827+00:00",
-   "title_en": "The Bank of Russia left the key rate unchanged for the second time in a row",
-   "lead": "Банк России снова сохранил ставку на уровне 14%. Пауза в смягчении ДКП продлена на фоне данных по инфляции выше цели и повышенных инфляционных ожиданий населения",
-   "lead_en": "The Bank of Russia again kept the rate at 14%. The pause in the mitigation of the PrEP was extended against the background of data on inflation above the target and increased inflation expectations of the population",
-   "tags": [
-    "BankOfRussia",
-    "rates",
-    "inflation"
-   ]
-  },
-  {
-   "title": "Sterling edges up to fresh 17-month high versus euro after UK data",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPTnJQUGVyMnI5c00yTDVhSktCN3lpeGRYb20yT0w5VlVmMGNXdkp3VmRqOGNuUVdXSEE1V3BLd011ZTFBMERRTW9HYnExalZGNzdwVDRwOXZKdWx2X2QtcFJrSnd5VUFlX2t2VHJMRTdYZTVyc2J2alp3VC1FbmxaNjJDdDJmTDNPTkFabDBHTzR3Y2lpbjJuSHljdlJNSWZvRHF0TDhQV3c3N29f?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T10:31:24.911827+00:00",
-   "title_ru": "После данных по Великобритании фунт стерлингов вырос до свежего 17-месячного максимума по отношению к евро"
-  },
   {
    "title": "ЦБ сохранил ключевую ставку на уровне 14%",
    "link": "https://www.kommersant.ru/doc/9049591",
@@ -4993,6 +4967,21 @@
    "tags": [
     "jobs"
    ]
+  },
+  {
+   "title": "Brazil Catches Investors Leaning the Wrong Way",
+   "link": "https://www.bloomberg.com/news/newsletters/2026-10-26/brazil-catches-investors-leaning-the-wrong-way",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T10:35:24.242855+00:00",
+   "title_ru": "Бразилия поймала инвесторов на неправильном пути",
+   "lead": "ETF tracking Brazilian stocks is plunging 27% this morning.",
+   "lead_ru": "ETF, отслеживающий бразильские акции, сегодня утром упал на 27%.",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-25",
@@ -5015,7 +5004,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 1,
+  "Fed": 0,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
@@ -11397,7 +11386,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-26T09:25:24.146578+00:00",
+  "checked": "2026-10-26T10:30:24.206858+00:00",
   "sec_seen": [
    "0001801661-26-000126",
    "0002160363-26-000004",
