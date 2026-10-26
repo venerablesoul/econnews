@@ -44,10 +44,10 @@ jobs:
             fi
           fi
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262  # v4.4.0
         if: env.SKIP != '1'
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020  # v4.4.0
         if: env.SKIP != '1'
         with:
           node-version: "22"
@@ -61,14 +61,14 @@ jobs:
       - name: Deploy server
         if: env.SKIP != '1'
         working-directory: worker
-        run: npx --yes wrangler@4 deploy --var "PAGES_URL:${PAGES_URL,,}"
+        run: npx --yes wrangler@4.153.0 deploy --var "PAGES_URL:${PAGES_URL,,}"
 
       - name: Upload keys as server secrets
         if: env.SKIP != '1'
         working-directory: worker
         run: |
           python3 deploy.py secrets
-          npx --yes wrangler@4 secret bulk .secrets.json
+          npx --yes wrangler@4.153.0 secret bulk .secrets.json
           rm -f .secrets.json
 
       - name: Connect Telegram and check everything
