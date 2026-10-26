@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "1ccd8342cef80187": "2026-10-23T00:50:20.280013+00:00",
-  "ea4dbdeadaf28757": "2026-10-23T00:50:20.280013+00:00",
-  "86fd1bcdb5c83d7b": "2026-10-23T00:55:20.376494+00:00",
   "51c9d83991292a65": "2026-10-23T01:00:20.404311+00:00",
   "dff01a5e23becbfe": "2026-10-23T01:10:20.329652+00:00",
   "1e86324bd4fc5fb8": "2026-10-23T01:10:20.329652+00:00",
@@ -587,41 +584,11 @@
   "37772872aaa95261": "2026-10-26T00:03:52.451513+00:00",
   "33619b0e9322e2c3": "2026-10-26T00:18:52.529389+00:00",
   "5bf7f3e3ccb22610": "2026-10-26T00:23:52.462882+00:00",
-  "2420d7dac20f0122": "2026-10-26T00:48:52.544062+00:00"
+  "2420d7dac20f0122": "2026-10-26T00:48:52.544062+00:00",
+  "158d72bd86764f91": "2026-10-26T00:58:52.515046+00:00",
+  "75c71506186f1ce8": "2026-10-26T00:58:52.515046+00:00"
  },
  "recent": [
-  {
-   "title": "Treasury Unveils Rule to Ban Large Investors From Homebuying",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQY0JiLTJfNWFiSzBJMWZZX3lxZHd6WmNpR3l1RnRpdm94Um9HRV9haTczT0JEUU5JQkpVNlF4VmFIaTFzbkphcmNBRzl1ZjgySG5SU1hlUXhzckw3VVJJcl9Lb2EtRzVPOTVCTlZVa21sRkZYUjJFcWRzMVA1LVk2QnZic2twNEk3Rml3NTV1ejFVNVlfTm51VHp2Z2xGYmNQWnhTdm5qTDA2bldjVWI2am5vNG93Zw?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T00:50:20.280013+00:00",
-   "title_ru": "Казначейство обнародовало правило, запрещающее крупным инвесторам покупать жилье",
-   "tags": [
-    "bonds"
-   ]
-  },
-  {
-   "title": "Apple launches into foldable market as iPhone Duo sales begin",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQMTlwRzRMSWgwZGFjeWp0bG01c2c1WUkxckYtOGR3MUhieUYwZUwxRVNHdFBCbWUwSm02TWgzdG5fRGxEX0U1TUtvUnF5bGpXQkRaN1lnbmJZeTVuZmZzS21ob0FTMnBYekcySDlic3VVUE0ySjZTOHhJR2V1RzlmN09ZdDh1Mlg1a0N3dXR5ckstOW13Mk91YjJOcmdqNkd3dFR1MzhKYmFORFItakQyMTltekVOaVQyc0ZMSm5B?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T00:50:20.280013+00:00",
-   "title_ru": "Apple выходит на рынок складных устройств вместе с началом продаж iPhone Duo"
-  },
-  {
-   "title": "Профсоюз Škoda сообщил о планах компании заморозить зарплаты до 2030 года",
-   "link": "https://www.rbc.ru/rbcfreenews/6adaa7ba5a118679bb285fc1",
-   "sources": [
-    "RBC"
-   ],
-   "score": 1,
-   "ts": "2026-10-23T00:55:20.376494+00:00"
-  },
   {
    "title": "Japanese Bond Yields Fall as AI Jitters Spur Haven Demand",
    "link": "https://www.bloomberg.com/news/articles/2026-10-23/japanese-bond-yields-fall-as-ai-jitters-spur-haven-demand",
@@ -5326,6 +5293,30 @@
    "score": 3,
    "ts": "2026-10-26T00:48:52.544062+00:00",
    "title_ru": "Пять экономических проблем, стоящих перед переизбранным президентом Бразилии Лулой"
+  },
+  {
+   "title": "Musk Claims SpaceX Closed $40 Billion Debt Deal for AI Chips",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPbVAyZmZTRzViZmxwNzRUSGd5MXpWNlRFLWlzT3RBMWx2cUhhaFhXUGRHeHRjam9LUldoZUpJNnVyTk9JcGdzVC1FTzNhQWVnWUJlV2hEZ1lFRzR6aE1TWXFiUG1tYWF1c3FjX00tX3FoMXk5bUtrNm1Sd2k3QTd1b0dYUUlhbHBJRDRabHg5VmdyLTV5TXRtZ1ZMWmJIeF9iYWh5T1dqMUZYbkF0ZlVBaWtn?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T00:58:52.515046+00:00",
+   "title_ru": "Маск утверждает, что SpaceX закрыла долговую сделку на $ 40 млрд по ИИ-чипам"
+  },
+  {
+   "title": "Asian shares make cautious start, Brent eases from six-month high",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE90MHowUDNReVJUUkkxWEZhTnAyYnZZNGNXQjJPVWt0QjgtaERfUHM4bERQd2k2NW5kMXR5dld0NHpsYnBhOENieXU1VU9saFBya202TXRjUktMa0l6OXF0OEZFUDdxR3FtSTdCLUxRVGpZNnBndExIcGVEZmtXZw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T00:58:52.515046+00:00",
+   "title_ru": "Азиатские акции осторожно стартуют, Brent ослабевает с шестимесячного максимума",
+   "tags": [
+    "oil",
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-25",
