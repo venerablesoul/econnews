@@ -597,7 +597,9 @@
   "e6740adc9c56dd3f": "2026-10-26T19:01:22.737301+00:00",
   "84799d220cf4c3df": "2026-10-26T19:06:22.770709+00:00",
   "e4ad86d907c7c077": "2026-10-26T19:06:22.770709+00:00",
-  "fbe4f652c0437925": "2026-10-26T19:11:22.703689+00:00"
+  "fbe4f652c0437925": "2026-10-26T19:11:22.703689+00:00",
+  "a362288c218b5dee": "2026-10-26T19:16:22.807972+00:00",
+  "4ffcd20e7c6f8afe": "2026-10-26T19:16:22.807972+00:00"
  },
  "recent": [
   {
@@ -4689,6 +4691,19 @@
    "title_en": "The single market will look for a price // Serbia will have to calculate the benefits of joining the EU",
    "lead": "Политические перемены в Сербии ставят вопрос о будущем ее экономики.",
    "lead_en": "Political changes in Serbia raise the question of the future of its economy."
+  },
+  {
+   "title": "Canadian dollar steadies after posting longest daily winning streak in four years",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNTFdmU2VIdzAyUUNGdDlZOFVtM294LUY2SWhlY3ZsRWFEeDlrZkpwN1V0dU9yY3lhMlctZ2VRWUJ1T3k3a0x5RC1nWmZxemkzMUxERklVM0s3cmw2RExqVUVMYVh5REdsWjVvT0xUZFVZVmFlVDYxQlBzX2FCU1V5aTZIbE52a3ZCUmJLZU5KVUFDMno1SC1lMWpjcU54MkZwR3FPLVlOSFdyOXAxUGdNOHVhYlVPWS0wandVN2x3Q0w?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T19:16:22.807972+00:00",
+   "title_ru": "Канадский доллар стабилизировался после публикации самой длинной ежедневной серии побед за четыре года",
+   "tags": [
+    "dollar"
+   ]
   }
  ],
  "last_digest": "2026-10-26",
@@ -11106,11 +11121,11 @@
    "0001274559-26-000007",
    "0001335253-26-000007",
    "0001628280-26-067240",
-   "0001213900-26-112441",
+   "0001702938-26-000004",
    "0001897970-26-000010",
    "0001280628-26-000016",
    "0001493152-26-048493",
-   "0001702938-26-000004"
+   "0001213900-26-112441"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
