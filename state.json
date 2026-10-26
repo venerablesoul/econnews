@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "7987238ab23ec08a": "2026-10-23T23:28:26.760434+00:00",
-  "1156240badd4b24a": "2026-10-23T23:28:26.760434+00:00",
   "316ce8bc418d4510": "2026-10-23T23:38:26.788372+00:00",
   "7f92f54da78ef813": "2026-10-23T23:43:26.729162+00:00",
   "774cede80e249aaf": "2026-10-23T23:43:26.729162+00:00",
@@ -605,29 +603,11 @@
   "9fdccd93da551745": "2026-10-26T23:22:01.165221+00:00",
   "c1fe7b246386e767": "2026-10-26T23:22:01.165221+00:00",
   "6f796792f7bfa601": "2026-10-26T23:27:01.166672+00:00",
-  "e4fd510be0e4e785": "2026-10-26T23:27:01.166672+00:00"
+  "e4fd510be0e4e785": "2026-10-26T23:27:01.166672+00:00",
+  "dc7e498fa993f6a0": "2026-10-26T23:32:01.308262+00:00",
+  "b5284156bba2b5bf": "2026-10-26T23:32:01.308262+00:00"
  },
  "recent": [
-  {
-   "title": "SpaceX $40 Billion Off-Balance Sheet Debt Snarled by AI Turmoil",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOTk5rLVFMR3BRUmZhUWE2LUQ4N1F3THVtNGNtanU2LXRSU0pmeElzNmNGVWZoY19ha0Q5ek14ZnRhOTM3RjdVNk1GQmVFVk8tOERRN0tXNUxnNUswN2JTc3RuSU1hc2stVmdJbTF4U1RvS3BJbUs3ZzlYQ0lwOGh6QkxCVDZfX2JYS1BCRmdMVVNLcUE2LVI5YThzbDVsTG1SLVpZSFJvLWxzSmJ5cEl1OEVGMA?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T23:28:26.760434+00:00",
-   "title_ru": "Внебалансовый долг SpaceX в размере $ 40 млрд зашкаливает из-за беспорядков с искусственным интеллектом"
-  },
-  {
-   "title": "Nigeria central bank grants JPMorgan initial nod to launch merchant bank",
-   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOSHZpZXZNTGh4emhON2o3bXlQUGt1eWJDbjRmaTh4MXRQMThTN1lUSTdGVEhjOU81WDF2MFhOcEZfWHE5WmYtVjlqNjEyNHQ3SkloQ3dFZGVzVEZJWFBCWjZNQmhkOXJaYmd4bU5GeE5qZjlxZUtzbl9tQUE3QV9zT0ktSUx0cHppQ21JTzdaUnFnVUwyUV9NaE9ZbEhFSUNsRVNnUk92QWxBRUlIMlJUcHpwY21Fa2dXU3c?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T23:28:26.760434+00:00",
-   "title_ru": "Центральный банк Нигерии предоставил JPMorgan первоначальный NOD для запуска торгового банка"
-  },
   {
    "title": "Stocks fall across the board but AI stocks stabilize",
    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9mU3JWcTQ1RDl6WjRsM2kyNkdJNG5yQWNIY2xkWEhhUGxWdEw5UVRGYkdqdkNjbjFTc2dhRTMyZUR6djlGS3g2cjhjSDB2T1J4UHZIN1NQMFFnTzd5V2ZWejRlN1ZYUQ?oc=5",
@@ -4717,6 +4697,23 @@
    "score": 3,
    "ts": "2026-10-26T23:27:01.166672+00:00",
    "title_ru": "Экономика Южной Кореи в третьем квартале растет быстрее, чем ожидалось"
+  },
+  {
+   "title": "Gold Steadies Above $4,000 With Fed Rate Decision in Focus",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-26/gold-steadies-above-4-000-with-fed-rate-decision-in-focus",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 8,
+   "ts": "2026-10-26T23:32:01.308262+00:00",
+   "title_ru": "Золото стабилизируется выше $4000 на фоне решения ФРС по ставке",
+   "lead": "Gold held above $4,000 an ounce as traders prepared for a Federal Reserve decision this week that’s expected to keep interest rates steady.",
+   "lead_ru": "Золото держалось выше $4000 за унцию, поскольку трейдеры готовились к решению Федеральной резервной системы на этой неделе, которое, как ожидается, сохранит процентные ставки на стабильном уровне.",
+   "tags": [
+    "Fed",
+    "rates",
+    "gold"
+   ]
   }
  ],
  "last_digest": "2026-10-26",
@@ -11139,8 +11136,8 @@
    "0001137789-26-000292",
    "0000902664-26-004286",
    "0001137789-26-000288",
-   "0002050422-26-000017",
    "0000912282-26-001400",
+   "0002050422-26-000017",
    "0001225208-26-008516",
    "0000912282-26-001396",
    "0000909832-26-000113",
