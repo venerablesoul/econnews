@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "047a88ab5514dd49": "2026-10-23T12:46:55.743506+00:00",
   "86dc34f8eae1c144": "2026-10-23T12:51:55.697460+00:00",
   "39b8b77fe6a9ebbc": "2026-10-23T12:51:55.697460+00:00",
   "21cec0710208882f": "2026-10-23T12:56:55.768878+00:00",
@@ -599,26 +598,11 @@
   "33e49e1c2fe25712": "2026-10-26T12:45:24.163303+00:00",
   "8b606ddfe079283e": "2026-10-26T12:45:24.163303+00:00",
   "5365980c0c83e9b3": "2026-10-26T12:45:24.163303+00:00",
-  "e31384bb79df2440": "2026-10-26T12:45:24.163303+00:00"
+  "e31384bb79df2440": "2026-10-26T12:45:24.163303+00:00",
+  "b4cdeb1d36d206f1": "2026-10-26T12:50:24.668019+00:00",
+  "563bc917a644bfba": "2026-10-26T12:50:24.668019+00:00"
  },
  "recent": [
-  {
-   "title": "Глава ЦБ заявила об отсутствии рисков для финансовой стабильности России",
-   "link": "https://www.rbc.ru/economics/23/10/2026/6adb56cfbf6191353b9a599a",
-   "sources": [
-    "RBC"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T12:46:55.743506+00:00",
-   "title_en": "The head of the Central Bank stated that there were no risks to the financial stability of Russia",
-   "lead": "Набиуллина отметила, что несмотря на повышение прогноза по ключевой ставки, он предполагает снижение средней ключевой ставки в следующем году",
-   "lead_en": "Nabiullina noted that despite the increase in the forecast for the key rate, it assumes a decrease in the average key rate next year",
-   "tags": [
-    "BankOfRussia",
-    "rates",
-    "Russia"
-   ]
-  },
   {
    "title": "India plans jobs survey changes to add unpaid work, improve gig worker data",
    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOUklXaWtPMTNndVZCY1dGV0thSFctdmxUcUJpS29MVk5zdS1oZ29SaWVsQkU0N3FocDgwSndDQ2MwcTd3WGdCaEk5eTdMTk00LV81OFZiSHZVMjlFV1lNNjBPeGR0S0hCYWJKVDRObl9WdVU4bk1VS0FMMEdVZWZuOFhJTjMxZEd1eUMweV90Si03c0lubUdGTTZoQmhDNHVsM1Z5OFpka1JXS0huVXA0Y25HRXVUWV81VGVv?oc=5",
@@ -4779,6 +4763,34 @@
    "title_ru": "Турция пренебрегает мелкими инвесторами после скандала, вызвавшего ликвидацию",
    "lead": "Turkey’s market regulator raised the threshold for qualified investors fivefold in the wake of a fund rout that rocked capital markets and erased billions of dollars of equity value.",
    "lead_ru": "Рыночный регулятор Турции поднял порог для квалифицированных инвесторов в пять раз после разгрома фонда, который потряс рынки капитала и стер миллиарды долларов стоимости акций.",
+   "tags": [
+    "dollar"
+   ]
+  },
+  {
+   "title": "A Stock Investor’s Guide to UK Budget Winners and Losers",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-26/a-stock-investor-s-guide-to-uk-budget-winners-and-losers",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T12:50:24.668019+00:00",
+   "title_ru": "Руководство для фондовых инвесторов о победителях и проигравших в британском бюджете",
+   "lead": "The first budget of Andy Burnham’s government is likely to provide contrasting outcomes for UK stocks, from banks to homebuilders and utilities, with several proposals widely briefed in the run-up to Wednesday’s event.",
+   "lead_ru": "Первый бюджет правительства Энди Бернхэма, вероятно, обеспечит контрастные результаты для акций Великобритании, от банков до домостроителей и коммунальных предприятий, с несколькими предложениями, широко представленными в преддверии мероприятия в среду.",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "Egypt's pound hits record low against dollar",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOX2RLclVQUDV2S0d2aUt4VWNIUWxSVUR6S1Y4Uk5qZy11QWIyRmRIbHh4bEd2UGk1STY1Z2gxamFyOTZYNl9wUGx5VTQ5NnQ1am0xeEc0ZURadU9KaGh3Z0c4NUFhRG9lbVpRQ2ZwbkQ0NFFuSFlvMWtOVTUtTWV0bXFSWGlTNDdtRVBWRjMwbmVQaERaR2xV?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T12:50:24.668019+00:00",
+   "title_ru": "Фунт Египта достиг рекордно низкого уровня по отношению к доллару",
    "tags": [
     "dollar"
    ]
