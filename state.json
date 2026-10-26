@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "dff01a5e23becbfe": "2026-10-23T01:10:20.329652+00:00",
-  "1e86324bd4fc5fb8": "2026-10-23T01:10:20.329652+00:00",
   "4869b3a84fe09fc7": "2026-10-23T01:20:51.559140+00:00",
   "5a628e55a15faea4": "2026-10-23T01:25:51.664564+00:00",
   "721bdf8316e9993f": "2026-10-23T01:30:51.583459+00:00",
@@ -585,23 +583,12 @@
   "5bf7f3e3ccb22610": "2026-10-26T00:23:52.462882+00:00",
   "2420d7dac20f0122": "2026-10-26T00:48:52.544062+00:00",
   "158d72bd86764f91": "2026-10-26T00:58:52.515046+00:00",
-  "75c71506186f1ce8": "2026-10-26T00:58:52.515046+00:00"
+  "75c71506186f1ce8": "2026-10-26T00:58:52.515046+00:00",
+  "95dffe34f933f3af": "2026-10-26T01:13:52.484541+00:00",
+  "5c8e7931e99b2428": "2026-10-26T01:13:52.484541+00:00",
+  "1cce008d61d8d8b6": "2026-10-26T01:13:52.484541+00:00"
  },
  "recent": [
-  {
-   "title": "Japan core inflation exceeds BOJ target, cements near-term rate hike chance",
-   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQOTJqdzA2UHpkbmExTlVYbWgxX2VuMGQ3ck9XcUpfUEgxQURja19JdmlfLURneW9HUWpZbzNPMFJ3bS15Zk5DYlNTWU1teWprbW1hOHlJNXdDNWxYbExYRUU0bTIyVzFPLVlRZjY2cFk0THZTb094X2FrM3lPZ005THBHczdTdEl4WEhIUXVCdnA2TE9qTEtFWHh4aHloeWZFU0RuQmhlR0VRSDRCTURWZDB2eTNnWDloNWJIWktsNG5Pak5NSEdtSQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 9,
-   "ts": "2026-10-23T01:10:20.329652+00:00",
-   "title_ru": "Базовая инфляция в Японии превышает целевой показатель Банка Японии, что укрепляет шансы на повышение ставок в краткосрочной перспективе",
-   "tags": [
-    "rates",
-    "inflation"
-   ]
-  },
   {
    "title": "Yen Hits One-Month High as US Tech Rout Revives Haven Appeal",
    "link": "https://www.bloomberg.com/news/articles/2026-10-23/yen-hits-one-month-high-as-us-tech-rout-revives-haven-appeal",
@@ -5300,6 +5287,28 @@
     "oil",
     "markets"
    ]
+  },
+  {
+   "title": "Healey's Budget needs to sustain the stronger economy through gathering clouds",
+   "link": "https://www.bbc.co.uk/news/articles/ck87z4ng2l03o?at_medium=RSS&at_campaign=rss",
+   "sources": [
+    "BBC"
+   ],
+   "score": 4,
+   "ts": "2026-10-26T01:13:52.484541+00:00",
+   "title_ru": "Бюджет Хили должен поддерживать более сильную экономику за счет сгущения облаков",
+   "lead": "The economic is positive now but come January things could become trickier for the Labour government",
+   "lead_ru": "Экономическая ситуация сейчас позитивна, но в январе ситуация для лейбористского правительства может стать сложнее."
+  },
+  {
+   "title": "Australia's NEXTDC CEO to forgo fiscal 2027 bonuses after forecast cut, project delay",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPNVlqelZrbGVQSEZ6STZ1TUpGd19BNlZDSlJJbXpTNTBvcUFQN05qY0ZwNnRsNkZMeDFTVWxTMGd2MTBGMG9sbk1pZ29uaXMxWDNNUXNhYUZXTFlUcno2QWtkZ2ZjVFMyZXFERTJlZzRmUWNfOEhHNkdwZ1pJUWtma1lKQVljQmFQbGVPSmNVMnBqSEt4Q19acDVHSmxmSG5xcFlqMU5nc1BGZE1keU93cUpDYWdTSGd2X2hxRDBmdFJTYlBVQnUwWGo3YnN0QzZL?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T01:13:52.484541+00:00",
+   "title_ru": "Генеральный директор австралийской NEXTDC откажется от бонусов в 2027 финансовом году из-за сокращения прогноза и задержки проекта"
   }
  ],
  "last_digest": "2026-10-25",
@@ -11717,6 +11726,7 @@
    "0001100682-26-000151",
    "0001022079-26-000115",
    "0000923120-26-000029",
+   "0000923120-26-000030",
    "0000923120-26-000025",
    "0001493152-26-048313",
    "0001585521-26-000154",
@@ -11745,14 +11755,13 @@
    "0000923120-26-000024",
    "0001801661-26-000126",
    "0001493152-26-048319",
-   "0001193125-26-430729",
    "0001022079-26-000111",
    "0001585521-26-000153",
    "0001193125-26-430728",
    "0001022079-26-000113",
    "0001022079-26-000110",
    "0001493152-26-048315",
-   "0000923120-26-000030"
+   "0001193125-26-430729"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
