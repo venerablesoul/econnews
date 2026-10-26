@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c5b8be11ce36efd1": "2026-10-23T09:16:24.934239+00:00",
   "80386cc058b46301": "2026-10-23T09:21:24.889036+00:00",
   "d764390b6b2a5e56": "2026-10-23T09:21:24.889036+00:00",
   "6a78115f86c32cd3": "2026-10-23T09:26:25.013568+00:00",
@@ -605,22 +604,10 @@
   "08d008a4768360da": "2026-10-26T09:10:24.246531+00:00",
   "377d09579f8990a2": "2026-10-26T09:10:24.246531+00:00",
   "cb80791b320ec124": "2026-10-26T09:10:24.246531+00:00",
-  "4351c062ac60c158": "2026-10-26T09:10:24.246531+00:00"
+  "4351c062ac60c158": "2026-10-26T09:10:24.246531+00:00",
+  "eb6fae4a2fca23c7": "2026-10-26T09:20:24.192289+00:00"
  },
  "recent": [
-  {
-   "title": "September inflation keeps BoJ on tightening course",
-   "link": "https://www.ft.com/content/f968f40c-ecc8-4981-ba60-a826f808505b",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 6,
-   "ts": "2026-10-23T09:16:24.934239+00:00",
-   "title_ru": "Сентябрьская инфляция держит курс Банка Японии на ужесточение",
-   "tags": [
-    "inflation"
-   ]
-  },
   {
    "title": "UK Bonds Look Attractive After Year of Repricing, Says RLAM",
    "link": "https://www.bloomberg.com/news/articles/2026-10-23/uk-bonds-look-attractive-after-year-of-repricing-says-rlam",
@@ -4962,6 +4949,16 @@
    "score": 3,
    "ts": "2026-10-26T09:05:29.491424+00:00",
    "title_ru": "Рынки недвижимости"
+  },
+  {
+   "title": "European Gas Hits €97 for First Time Since 2022 on Winter Risks",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPdnRDWXFZTXdaQS1ZZmZldjhBSlp6TGstSVBvVGNlNHNtWnFweC10TDZkczB6dzVGT2JpT3JfWkJidlBseV9NSXNSX2UyVTcxNTZJa3RFdW9pd3h1My1Ea2cyaDZRakVRUGpIMXBrRThCdC1JenJ4cFlHZkN5OVd2Yk05UlpCOTY5N21YZEJ1SEdlVWFLdFN5SUstaGVkRnVrMXM2cWI3Qm9kdFVCUTZhS2JBdw?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T09:20:24.192289+00:00",
+   "title_ru": "Европейский газ впервые с 2022 года подорожал до 97 евро из-за зимних рисков"
   }
  ],
  "last_digest": "2026-10-25",
@@ -11379,7 +11376,6 @@
    "0001585521-26-000155",
    "0001022079-26-000109",
    "0000923120-26-000030",
-   "0001493152-26-048317",
    "0000923120-26-000026",
    "0001022079-26-000112",
    "0002160363-26-000004",
@@ -11406,6 +11402,7 @@
    "0001493152-26-048309",
    "0001493152-26-048310",
    "0000923120-26-000027",
+   "0000923120-26-000025",
    "0001493152-26-048311",
    "0001193125-26-430730",
    "0000950103-26-016120",
@@ -11414,7 +11411,7 @@
    "0001022079-26-000116",
    "0001193125-26-430729",
    "0001493152-26-048315",
-   "0000923120-26-000025"
+   "0001493152-26-048317"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
