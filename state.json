@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "d7a4048ef6072d53": "2026-10-23T15:01:55.748795+00:00",
-  "f6856db654e7072f": "2026-10-23T15:06:55.734188+00:00",
-  "1a291f027ff488ea": "2026-10-23T15:06:55.734188+00:00",
   "7a7f78f441347b01": "2026-10-23T15:11:55.713584+00:00",
   "52e7fa5e141ad8ae": "2026-10-23T15:11:55.713584+00:00",
   "1f1ca2ac56509c4e": "2026-10-23T15:16:55.764553+00:00",
@@ -602,19 +599,14 @@
   "2b6fb4c8a28b8d31": "2026-10-26T14:51:22.762924+00:00",
   "dfcfa1269d27e29c": "2026-10-26T14:56:22.808348+00:00",
   "fffe7c9b9e59b89b": "2026-10-26T15:01:22.833536+00:00",
-  "57797c10da3d3bdf": "2026-10-26T15:01:22.833536+00:00"
+  "57797c10da3d3bdf": "2026-10-26T15:01:22.833536+00:00",
+  "887ef2480631629f": "2026-10-26T15:11:22.727822+00:00",
+  "a9f70dedcc5b9896": "2026-10-26T15:11:22.727822+00:00",
+  "dff26f21e5e1bb26": "2026-10-26T15:11:22.727822+00:00",
+  "2d777c10e4c87cff": "2026-10-26T15:11:22.727822+00:00",
+  "7dac84b8c6c3e52d": "2026-10-26T15:11:22.727822+00:00"
  },
  "recent": [
-  {
-   "title": "India central bank to impose new leverage rules for banks from April 1, 2027",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPVENUVUkyNksxVm5rWUs0SFNJaWJfYkRQNTAwZ0ZNUy1XUzJmRUR6MXNkRjBwY1dRZ0Q4a09QTlQtSTRJTE8xSGpfOXAyQVZrdU1vVnljckpIR2IwMm91VzNPSW50TENOV0NRVU9RTDBvZWJvdU9UelpjWjUtZ3lWeDFMVDJrMUFoekJhVndJdjB2d1ZPVS1Xbk95UmhYUGRJeERvdGtXdmVTX2FiSWptVA?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-23T15:06:55.734188+00:00",
-   "title_ru": "Центральный банк Индии введет новые правила кредитного плеча для банков с 1 апреля 2027 года"
-  },
   {
    "title": "UK government promises to save businesses £800 million in paperwork and tariffs",
    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPTFM0SWI5QmdpcUtXMmF3bUUwekJQbVlUQ1k3dGNvZEpMNkdkZEJWNGMtTkNBNHNQbWhDam13YjVHUF9RWW5wTmhlVDVPRU42V1hiMEZzMVBrNnUtbkZvby15YzhnWVhPOE5iNTdJbFNFR2lfSkFWSDBVYXlTXzNEeXBudzBGT3ppN2FMUmxlVllPVU9rQmtfTUp4UTlfaEtKb2V0SVR0UWtkWG84d0VkNV8yNA?oc=5",
@@ -4798,6 +4790,28 @@
    "tags": [
     "Russia"
    ]
+  },
+  {
+   "title": "Musk's warning hits neocloud stocks as debt concerns mount",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQaElYSFRZcUVWRmFiRzg0SWRkSENhb0NvTGNLS1gwZnZrU015R3R6NmdiLTE4WDVCeUNkWi1LejFmRXVsUmRmRzQydEEtby1ESzFNY21ZSnhNV1ZhdU9jQ2NMMHBFZlc0anVGcjBBVEVvQU9vdl9RUVRMUmhGSzdRaFdWRmNISTg5WjlqazEwLUdJbjRtYzY3eHlTU0lZRTF4?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-26T15:11:22.727822+00:00",
+   "title_ru": "Предупреждение Маска ударило по акциям neocloud на фоне растущих долговых проблем",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "ЦБ рассказал банкам, как проверять «крупные суммы» россиян",
+   "link": "https://www.rbc.ru/finances/26/10/2026/6adf5eeb3578b97c92e97a73",
+   "sources": [
+    "RBC"
+   ],
+   "score": 2,
+   "ts": "2026-10-26T15:11:22.727822+00:00"
   }
  ],
  "last_digest": "2026-10-25",
@@ -11205,7 +11219,6 @@
   "checked": "2026-10-26T14:46:22.746502+00:00",
   "sec_seen": [
    "0000821026-26-000138",
-   "0000080424-26-000260",
    "0000821026-26-000136"
   ],
   "errors": {
