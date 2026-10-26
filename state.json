@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "a732864d1bbe80e9": "2026-10-23T20:22:41.474683+00:00",
-  "58dedade8337fc05": "2026-10-23T20:22:41.474683+00:00",
-  "b2c1a4a468c2b534": "2026-10-23T20:27:41.485678+00:00",
   "3640acecdbd816fd": "2026-10-23T20:42:41.508298+00:00",
   "7089f4716ef8b384": "2026-10-23T20:47:41.467218+00:00",
   "540a58d9eb2e4ec3": "2026-10-23T20:52:41.501907+00:00",
@@ -600,48 +597,10 @@
   "a99b22e35ba3c1ea": "2026-10-26T19:46:22.692937+00:00",
   "9fa038f7542f9e54": "2026-10-26T19:56:22.719574+00:00",
   "ea8e3be51a10e6d6": "2026-10-26T20:12:01.164395+00:00",
-  "508582e94deabc34": "2026-10-26T20:17:01.284673+00:00"
+  "508582e94deabc34": "2026-10-26T20:17:01.284673+00:00",
+  "726d52066e1e2195": "2026-10-26T20:32:01.227464+00:00"
  },
  "recent": [
-  {
-   "title": "White House says the US is lifting tariffs on some Canadian goods",
-   "link": "https://www.bbc.co.uk/news/articles/c60qk573yzz8o?at_medium=RSS&at_campaign=rss",
-   "sources": [
-    "BBC"
-   ],
-   "score": 6,
-   "ts": "2026-10-23T20:22:41.474683+00:00",
-   "title_ru": "Белый дом заявляет, что США отменяют тарифы на некоторые канадские товары",
-   "lead": "Susan Collins, a Republican in a tight race to keep her senate seat in next month's elections, said she had been working with the White House on tariff relief.",
-   "lead_ru": "Сьюзан Коллинз, республиканец в жесткой гонке за сохранение своего места в сенате на выборах в следующем месяце, сказала, что она работает с Белым домом над снижением тарифов.",
-   "tags": [
-    "tariffs"
-   ]
-  },
-  {
-   "title": "The U.S. economy is great by this measure, and the good times aren’t over. So why are Americans so sour?",
-   "link": "https://www.marketwatch.com/story/the-u-s-economy-is-great-by-this-measure-and-the-good-times-arent-over-so-why-are-americans-so-sour-4be897db?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-23T20:22:41.474683+00:00"
-  },
-  {
-   "title": "SpaceX Shakes Up Telecom Stocks | Closing Bell",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-23/spacex-shakes-up-telecom-stocks-closing-bell-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T20:27:41.485678+00:00",
-   "title_ru": "SpaceX встряхнула акции телекоммуникационных компаний | Closing Bell",
-   "lead": "Comprehensive cross-platform coverage of the U.S. market close on Bloomberg Television, Bloomberg Radio, and YouTube with Romaine Bostick, Jess Menton, Carol Massar and Tim Stenovec. (Source: Bloomberg)",
-   "lead_ru": "Комплексное кроссплатформенное освещение рынка США закрывается на Bloomberg Television, Bloomberg Radio и YouTube с Ромейн Бостик, Джесс Ментон, Кэрол Массар и Тимом Стеновеком. (Источник: Bloomberg)",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Trump to Lower Some Canada Tariffs, Maine Senator Collins Says",
    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPYjFBMU83aC1GcHBCSm5zbnM4NkRQRmJtOHoycTNVVmd0b0NGTm5RTTVhZ1ktWGR4QTJhaXE5cVd5bm1YY09yMFpsYzF1aWRrVnIzb29BU1VQX1k3Q0VfbWVfc2RjWmFGNnlJRlllbmJxU1hGVkdkbXlDek5kOC1FT3NKeW1sODc4UzFDQzRNQ2F4VzF5Y3hNdzY1MmVKeko1dTJPN2JXRmd3TmpOQjFGU3VR?oc=5",
@@ -4688,6 +4647,19 @@
    ],
    "score": 1,
    "ts": "2026-10-26T20:12:01.164395+00:00"
+  },
+  {
+   "title": "EXCLUSIVE: US, Canada working on deal to ease steel, auto tariffs, sources say",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQU1JXYWUtZ2l1TGNtSDlwbkN6SkxUR1RxaWZjQnFpNk8yTzBuLTR5OEUxQ296SmZEd3dDS25tMjh1eW5hRGg4X1gtVUpVQi1UbWIyYXpJQmh6NGxpX011WWlEYWh0Z3FKRm55UUl6UnpKUTZmM3lhUElLNUVIb0tkWDBYVkI1LXI2aWxwT1Q2aUpSZjhOcUVxaTByX21WVlExQVE?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-26T20:32:01.227464+00:00",
+   "title_ru": "Эксклюзив: США и Канада работают над сделкой по снижению тарифов на сталь и автомобили, говорят источники",
+   "tags": [
+    "tariffs"
+   ]
   }
  ],
  "last_digest": "2026-10-26",
@@ -7087,6 +7059,22 @@
    },
    {
     "src": "sec",
+    "id": "e1755f887a9a0721",
+    "ticker": "TCBX",
+    "company": "Third Coast Bancshares, Inc.",
+    "who": "William Bobbora",
+    "role": "See Remarks",
+    "type": "buy",
+    "value": 40340,
+    "shares": 1000,
+    "price": 40.34,
+    "plan": false,
+    "date": "2026-10-26",
+    "disclosed": "2026-10-26",
+    "link": "https://www.sec.gov/Archives/edgar/data/1966486/000119312526431998/0001193125-26-431998-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "c5b797c693505c23",
     "ticker": "CART",
     "company": "Maplebear Inc.",
@@ -7311,6 +7299,22 @@
    },
    {
     "src": "sec",
+    "id": "4fdd7322f661f3c9",
+    "ticker": "UTHR",
+    "company": "UNITED THERAPEUTICS Corp",
+    "who": "Martine A Rothblatt",
+    "role": "CEO",
+    "type": "sell",
+    "value": 5536235,
+    "shares": 9500,
+    "price": 582.76,
+    "plan": true,
+    "date": "2026-10-23",
+    "disclosed": "2026-10-26",
+    "link": "https://www.sec.gov/Archives/edgar/data/1106578/000110657826000171/0001106578-26-000171-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "ec5f1f7b4b190a11",
     "ticker": "CART",
     "company": "Maplebear Inc.",
@@ -7356,6 +7360,22 @@
     "date": "2026-10-22",
     "disclosed": "2026-10-26",
     "link": "https://www.sec.gov/Archives/edgar/data/1797266/000179726626000008/0001797266-26-000008-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "06607feb03807b5c",
+    "ticker": "CITR",
+    "company": "CitroTech Inc.",
+    "who": "Craig A Huff et al.",
+    "role": "Director, 10% owner",
+    "type": "buy",
+    "value": 500000,
+    "shares": 200000,
+    "price": 2.5,
+    "plan": false,
+    "date": "2026-10-22",
+    "disclosed": "2026-10-26",
+    "link": "https://www.sec.gov/Archives/edgar/data/2061007/000119312526432001/0001193125-26-432001-index.htm"
    },
    {
     "src": "sec",
@@ -11020,54 +11040,6 @@
     "date": "2026-10-15",
     "disclosed": "2026-10-16",
     "link": "https://www.sec.gov/Archives/edgar/data/1760669/000168285226000187/0001682852-26-000187-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "a2754b330904bcaf",
-    "ticker": "FIS",
-    "company": "Fidelity National Information Services, Inc.",
-    "who": "Jeffrey A Goldstein",
-    "role": "Director",
-    "type": "buy",
-    "value": 57694,
-    "shares": 1585,
-    "price": 36.4,
-    "plan": true,
-    "date": "2026-10-15",
-    "disclosed": "2026-10-16",
-    "link": "https://www.sec.gov/Archives/edgar/data/1375299/000162828026066127/0001628280-26-066127-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "bdd8c95c62e3c564",
-    "ticker": "BJ",
-    "company": "BJ's Wholesale Club Holdings, Inc.",
-    "who": "Laura L. Felice",
-    "role": "CFO",
-    "type": "sell",
-    "value": 887037,
-    "shares": 8452,
-    "price": 104.95,
-    "plan": true,
-    "date": "2026-10-15",
-    "disclosed": "2026-10-16",
-    "link": "https://www.sec.gov/Archives/edgar/data/1743504/000153115226000075/0001531152-26-000075-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "3b21089f324eebb4",
-    "ticker": "TDG",
-    "company": "TransDigm Group INC",
-    "who": "Joel Reiss",
-    "role": "COO",
-    "type": "sell",
-    "value": 4624944,
-    "shares": 4100,
-    "price": 1128.04,
-    "plan": true,
-    "date": "2026-10-15",
-    "disclosed": "2026-10-16",
-    "link": "https://www.sec.gov/Archives/edgar/data/1656109/000165610926000009/0001656109-26-000009-index.htm"
    }
   ],
   "docs": {
@@ -11103,38 +11075,23 @@
   "checked": "2026-10-26T20:07:01.282546+00:00",
   "sec_seen": [
    "0001193074-26-000013",
-   "0001789109-26-000005",
    "0001222437-26-000012",
    "0001842720-26-000012",
-   "0001628280-26-067285",
-   "0000950142-26-002853",
-   "0001628280-26-067284",
-   "0001784996-26-000105",
-   "0000898432-26-000735",
-   "0000898432-26-000733",
-   "0001493152-26-048520",
+   "0001106578-26-000171",
+   "0001193125-26-432001",
+   "0000898432-26-000745",
+   "0000310354-26-000104",
+   "0000898432-26-000744",
+   "0000310354-26-000102",
+   "0000310354-26-000106",
    "0001641294-26-000011",
-   "0001225208-26-008499",
-   "0001137789-26-000265",
-   "0001548312-26-000055",
-   "0001847776-26-000014",
-   "0001497570-26-000016",
-   "0000898432-26-000731",
-   "0001597870-26-000023",
-   "0001786769-26-000014",
+   "0001193125-26-432000",
    "0000898432-26-000743",
-   "0001193125-26-431955",
-   "0000898432-26-000737",
    "0000898432-26-000741",
-   "0001104659-26-118785",
    "0000938885-26-000016",
    "0001045463-26-000022",
    "0001123292-26-001425",
-   "0001753365-26-000004",
-   "0000062709-26-000263",
-   "0000898432-26-000739",
-   "0000062709-26-000264",
-   "0000898432-26-000727"
+   "0001193125-26-431998"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
