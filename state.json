@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "bc231ad185b0fdb2": "2026-10-23T12:26:55.689547+00:00",
-  "d83a9537429053a5": "2026-10-23T12:26:55.689547+00:00",
   "d3544c9e7ee32892": "2026-10-23T12:31:55.664240+00:00",
   "72aabf0aeda63812": "2026-10-23T12:31:55.664240+00:00",
   "ac967404af3747f4": "2026-10-23T12:31:55.664240+00:00",
@@ -600,33 +598,10 @@
   "914da9fdcffebbb8": "2026-10-26T12:10:24.133371+00:00",
   "0113200875574a92": "2026-10-26T12:15:24.312128+00:00",
   "09501a54561ee3ac": "2026-10-26T12:15:24.312128+00:00",
-  "e2467166d4a805f8": "2026-10-26T12:20:24.249081+00:00"
+  "e2467166d4a805f8": "2026-10-26T12:20:24.249081+00:00",
+  "670cb53d69bfd981": "2026-10-26T12:30:24.316387+00:00"
  },
  "recent": [
-  {
-   "title": "Brazil Inflation Shoots Through Target Limit Before Runoff Vote",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-23/brazil-inflation-shoots-through-target-limit-before-runoff-vote",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-23T12:26:55.689547+00:00",
-   "title_ru": "Инфляция в Бразилии преодолевает целевой лимит до голосования по второму туру",
-   "lead": "Brazil’s annual inflation rate shot through the target ceiling in early October, adding to voters’ frustrations as they prepare to pick their next president on Sunday.",
-   "lead_ru": "Годовой уровень инфляции в Бразилии превысил целевой потолок в начале октября, что усилило разочарование избирателей, поскольку они готовятся выбрать своего следующего президента в воскресенье.",
-   "tags": [
-    "inflation"
-   ]
-  },
-  {
-   "title": "It’s been a painful month for hedge funds. To turn it around, they are shorting U.S. stocks.",
-   "link": "https://www.marketwatch.com/story/its-been-a-painful-month-for-hedge-funds-to-turn-it-around-they-are-shorting-u-s-stocks-d36ee922?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-23T12:26:55.689547+00:00"
-  },
   {
    "title": "ЦБ предметно рассматривал на заседании только сохранение уровня ключевой ставки",
    "link": "https://www.kommersant.ru/doc/9059077",
@@ -4861,6 +4836,16 @@
    ],
    "score": 1,
    "ts": "2026-10-26T12:15:24.312128+00:00"
+  },
+  {
+   "title": "EQT to Buy Range Resources, Creating Largest US Gas Producer",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOZ3Bic2Q4OGthS1FWQ3kzQXVqUGJUbGJrRGkxVWI2ZUZhVjRzOGVlQ2VNWGVuTEF3ejRFLUFHV1U1RXBnMkFDX2JDRUhDWlp4cnR3alZYZXlDcXFVb3JJRktsM05LUVpQTW1lNUgxdExyRHN6YjFCU0FqU2x5bGxyOHpOT05kakJfZGJWTk5xUnNncXR5b3lteVNxRmpxVUxnMGZKenJGN0U?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T12:30:24.316387+00:00",
+   "title_ru": "EQT купит Range Resources, создав крупнейшего производителя газа в США"
   }
  ],
  "last_digest": "2026-10-25",
