@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "4b7af1d4a1539ce1": "2026-10-23T13:36:55.694608+00:00",
-  "67f011abba325c2e": "2026-10-23T13:36:55.694608+00:00",
-  "de5c9900b5a76573": "2026-10-23T13:36:55.694608+00:00",
   "f5dfae6fb78deea4": "2026-10-23T13:41:55.696714+00:00",
   "4b880f3fe3ebc3f1": "2026-10-23T13:41:55.696714+00:00",
   "4eea1de76c174cd7": "2026-10-23T13:51:55.678301+00:00",
@@ -599,41 +596,16 @@
   "d81da7943332b15c": "2026-10-26T13:25:24.207876+00:00",
   "178c42b4d7f0694c": "2026-10-26T13:30:24.475710+00:00",
   "ade61155197521b6": "2026-10-26T13:35:24.200123+00:00",
-  "fab0dc6032b2a105": "2026-10-26T13:35:24.200123+00:00"
+  "fab0dc6032b2a105": "2026-10-26T13:35:24.200123+00:00",
+  "f211fc3408503a8e": "2026-10-26T13:40:24.138117+00:00",
+  "c5dc189f81375d65": "2026-10-26T13:40:24.138117+00:00",
+  "1e97762ee613d41c": "2026-10-26T13:40:24.138117+00:00",
+  "12a37a6aeab5ca16": "2026-10-26T13:40:24.138117+00:00",
+  "a9a44534df6d862b": "2026-10-26T13:40:24.138117+00:00",
+  "d8f402c574c01cfd": "2026-10-26T13:40:24.138117+00:00",
+  "4598e290fbc17fa1": "2026-10-26T13:40:24.138117+00:00"
  },
  "recent": [
-  {
-   "title": "Germany Wants to Stop More Oil Refinery Closures as Costs Mount",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-23/germany-wants-to-stop-more-oil-refinery-closures-as-costs-mount",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T13:36:55.694608+00:00",
-   "title_ru": "Германия хочет остановить закрытие нефтеперерабатывающих заводов по мере роста затрат",
-   "lead": "Germany said it will seek to stem the loss of oil refining capacity, arguing that closures are hurting not only fuel suppliers and consumers but the country’s vast chemicals manufacturing sector too.",
-   "lead_ru": "Германия заявила, что будет стремиться остановить потерю мощностей по переработке нефти, утверждая, что закрытия наносят ущерб не только поставщикам и потребителям топлива, но и обширному химическому сектору страны.",
-   "tags": [
-    "oil"
-   ]
-  },
-  {
-   "title": "Набиуллина назвала общее число открытых счетов цифрового рубля",
-   "link": "https://www.rbc.ru/rbcfreenews/6adb61b89c1f7a969ec1ebd0",
-   "sources": [
-    "RBC"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T13:36:55.694608+00:00",
-   "title_en": "Nabiullina called the total number of opened digital ruble accounts",
-   "lead": "В России открыто 270 тыс. счетов цифрового рубля, из них 15 тыс.",
-   "lead_en": "270 thousand digital ruble accounts have been opened in Russia, of which 15 thousand",
-   "tags": [
-    "BankOfRussia",
-    "ruble",
-    "Russia"
-   ]
-  },
   {
    "title": "Physical Oil Prices Drop in Mideast as Flows Via Hormuz Hold Up",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPU2JHWWVTdGUzemo5WVMyVy1IcFZ0QUFhSlNueVh1NDhLbkpQNFpuNmo5VFNvSF9ISkpCNHQxM2ZqZWVLZUJOZ01XTUhUU0dzbmVOdmtaUklwSU9ldExUaV9OdldDNUVBLUViVmRKeUh2YTh6QjZfR09tb3R1QnhnTFcyS0I0ZWJCRS14TDBEYTNzcjN5V19CRWRudWwtYnkycFRyMjhDXzhjWDhZTG4tbXd5Rkw?oc=5",
@@ -4799,6 +4771,76 @@
    "score": 3,
    "ts": "2026-10-26T13:35:24.200123+00:00",
    "title_ru": "IPO Anthropic: пристальный взгляд на быстрый рост лидера в области искусственного интеллекта и растущие расходы"
+  },
+  {
+   "title": "Lula Wins Brazil Runoff; US Stocks Waver Ahead of Tech Earnings",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-26/bloomberg-brief-10-26-2026-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-26T13:40:24.138117+00:00",
+   "title_ru": "Лула побеждает во втором туре голосования в Бразилии; Акции США колеблются в преддверии доходов технологических компаний",
+   "lead": "US equity futures waver ahead of a week full of tech earnings and central bank rate decisions as oil retreats from a six-month high.",
+   "lead_ru": "Фьючерсы на акции США колеблются в преддверии недели, полной доходов от технологических компаний и решений центральных банков по процентным ставкам, поскольку нефть отступает от шестимесячного максимума.",
+   "tags": [
+    "oil",
+    "markets"
+   ]
+  },
+  {
+   "title": "Japan auto union group looks beyond inflation-linked pay hikes for 2027 talks",
+   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNYkdsZlNicmFJemYxa09ucUMxTlZxT1M1bnJ6eUpOT1BwM29kLXROSXZkSlF3Tk9TV2cwemw2eUxUejJjWVV5akp2em1tX0Zzc1JhamdSeF9IbWVWRHVBdVF0Y2E5LXZ6RGtFVy1keDJ4cWdTM09XXy1yejVmemt1ckdmaEVQRXNCclU3WVRrRUNPVjh4OEtkN3FnYmU3czlMYmRoc1Zsc0JwTEl3cU9IR21pVVdPZ2pNZXA5NU5lLTdWVGVBckFfZzE3d2Z1OXR2MkhIaG53?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-26T13:40:24.138117+00:00",
+   "title_ru": "Профсоюзная группа Японии не ограничивается повышением зарплат, связанным с инфляцией, к переговорам в 2027 году",
+   "tags": [
+    "inflation"
+   ]
+  },
+  {
+   "title": "Colombia to Sell New Dollar Bonds Amid Fiscal Pressures",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-26/colombia-to-sell-new-dollar-bonds-amid-fiscal-pressures",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-26T13:40:24.138117+00:00",
+   "title_ru": "Колумбия продаст новые долларовые облигации на фоне бюджетного давления",
+   "lead": "Colombia is selling dollar bonds for the first time since January, as a new administration pledges to rein in the widening budget gap and put the nation’s debt back on a sustainable path.",
+   "lead_ru": "Колумбия продает долларовые облигации впервые с января, поскольку новая администрация обещает обуздать растущий бюджетный дефицит и вернуть национальный долг на устойчивый путь.",
+   "tags": [
+    "dollar",
+    "bonds"
+   ]
+  },
+  {
+   "title": "Analysts forecast Brazil market plunge after Lula turnaround win",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQQUg5MG54d2NUSzFuSUtIODRNeVdrczFnOXZhMmhfem1Fc1lzdjlGNThiMXBoWkFJYzhQVWdSZDJjQlZEb0RWWFNaNVZGcU8xbVNsbm5KZXl5cnhiNFFoZ1A5ZTdrQkkwMW9lN2Mwc3hlTmx6Q0N4aHhSbUM2eUpZMTJITFI2cjgwR3hicDBhenlJWDlEbEhqSlEwNzNIamdoSUJTajlWcU4zSmVI?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-26T13:40:24.138117+00:00",
+   "title_ru": "Аналитики прогнозируют падение рынка Бразилии после победы Лулы"
+  },
+  {
+   "title": "Retail investors are getting cold feet about stocks, just when the market needs them most",
+   "link": "https://www.marketwatch.com/story/retail-investors-are-getting-cold-feet-about-stocks-just-when-the-market-needs-them-most-00a5c9c8?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T13:40:24.138117+00:00",
+   "title_ru": "Розничные инвесторы боятся акций как раз тогда, когда рынок в них больше всего нуждается",
+   "lead": "Last week’s carnage for hedge funds highlighted the relative decline in trading activity among retail investors.",
+   "lead_ru": "Резня хедж-фондов на прошлой неделе подчеркнула относительное снижение торговой активности среди розничных инвесторов.",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-25",
