@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "7089f4716ef8b384": "2026-10-23T20:47:41.467218+00:00",
-  "540a58d9eb2e4ec3": "2026-10-23T20:52:41.501907+00:00",
   "fbc7ede144c78f98": "2026-10-23T20:57:41.427848+00:00",
   "0cc2d7583b33826d": "2026-10-23T20:57:41.427848+00:00",
   "7da32245dd636306": "2026-10-23T20:57:41.427848+00:00",
@@ -602,34 +600,6 @@
   "857545c9e3b69ef5": "2026-10-26T20:37:01.308493+00:00"
  },
  "recent": [
-  {
-   "title": "Trump to Lower Some Canada Tariffs, Maine Senator Collins Says",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPYjFBMU83aC1GcHBCSm5zbnM4NkRQRmJtOHoycTNVVmd0b0NGTm5RTTVhZ1ktWGR4QTJhaXE5cVd5bm1YY09yMFpsYzF1aWRrVnIzb29BU1VQX1k3Q0VfbWVfc2RjWmFGNnlJRlllbmJxU1hGVkdkbXlDek5kOC1FT3NKeW1sODc4UzFDQzRNQ2F4VzF5Y3hNdzY1MmVKeko1dTJPN2JXRmd3TmpOQjFGU3VR?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-23T20:47:41.467218+00:00",
-   "title_ru": "Трамп снизит некоторые тарифы в Канаде, говорит сенатор от штата Мэн Коллинз",
-   "tags": [
-    "tariffs"
-   ]
-  },
-  {
-   "title": "Some Republicans are opposing Trump on tariffs. Maine’s Susan Collins just got him to back down on Canadian levies.",
-   "link": "https://www.marketwatch.com/story/some-republicans-are-opposing-trump-on-tariffs-maines-susan-collins-just-got-him-to-back-down-on-canadian-levies-02b202ae?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T20:52:41.501907+00:00",
-   "title_ru": "Некоторые республиканцы выступают против Трампа по тарифам. Сьюзан Коллинз из штата Мэн только что заставила его отказаться от канадских сборов.",
-   "lead": "As she faces a tough midterm race, the five-term GOP senator is touting her successful lobbying effort against certain tariffs on Canada",
-   "lead_ru": "Поскольку она сталкивается с жесткой промежуточной гонкой, сенатор-республиканец от Республиканской партии на пять сроков рекламирует свои успешные лоббистские усилия против определенных тарифов на Канаду",
-   "tags": [
-    "tariffs"
-   ]
-  },
   {
    "title": "Fiscal Sustainability (FS)",
    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOWnRMQ3ZQemx4ZV9ZNFRkdnZWYTY2MFpqWGlIOW44VlE4TlN0MnFPZ1NfZkpWYzVSeFBRUW9CUXc0eUkwVmF3c2xLQzJGdHplQnoxVklmQXJrX09LVWQtRXFoaE5TczFEUTRLQy1mbS1hX0lpQ3ZpamI1VEtldC1sV2xETUwtUXh3TjB2dHhB?oc=5",
@@ -7099,6 +7069,22 @@
    },
    {
     "src": "sec",
+    "id": "93b48fc4c878d469",
+    "ticker": "BOLD",
+    "company": "Boundless Bio, Inc.",
+    "who": "Tang Kevin et al.",
+    "role": "10% owner",
+    "type": "buy",
+    "value": 51619,
+    "shares": 21640,
+    "price": 2.39,
+    "plan": false,
+    "date": "2026-10-26",
+    "disclosed": "2026-10-26",
+    "link": "https://www.sec.gov/Archives/edgar/data/1782303/000117857926000020/0001178579-26-000020-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "c5b797c693505c23",
     "ticker": "CART",
     "company": "Maplebear Inc.",
@@ -7355,6 +7341,22 @@
    },
    {
     "src": "sec",
+    "id": "6899959f3207d745",
+    "ticker": "ACOG",
+    "company": "Alpha Cognition Inc.",
+    "who": "Opaleye Management Inc.",
+    "role": "10% owner",
+    "type": "buy",
+    "value": 265820,
+    "shares": 32090,
+    "price": 8.28,
+    "plan": false,
+    "date": "2026-10-23",
+    "disclosed": "2026-10-26",
+    "link": "https://www.sec.gov/Archives/edgar/data/1655923/000149315226048562/0001493152-26-048562-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "ec5f1f7b4b190a11",
     "ticker": "CART",
     "company": "Maplebear Inc.",
@@ -7416,6 +7418,22 @@
     "date": "2026-10-22",
     "disclosed": "2026-10-26",
     "link": "https://www.sec.gov/Archives/edgar/data/2061007/000119312526432001/0001193125-26-432001-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "1b81969d0f37b565",
+    "ticker": "CRL",
+    "company": "CHARLES RIVER LABORATORIES INTERNATIONAL, INC.",
+    "who": "James C Foster",
+    "role": "Director",
+    "type": "sell",
+    "value": 8414700,
+    "shares": 24042,
+    "price": 350.0,
+    "plan": true,
+    "date": "2026-10-22",
+    "disclosed": "2026-10-26",
+    "link": "https://www.sec.gov/Archives/edgar/data/1141722/000110068226000153/0001100682-26-000153-index.htm"
    },
    {
     "src": "sec",
@@ -11016,54 +11034,6 @@
     "date": "2026-10-15",
     "disclosed": "2026-10-16",
     "link": "https://www.sec.gov/Archives/edgar/data/2011641/000198461426000004/0001984614-26-000004-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "0faa0ef8e46cbcd1",
-    "ticker": "PAM",
-    "company": "Pampa Energy Inc.",
-    "who": "Marcos Marcelo Mindlin",
-    "role": "Director, 10% owner",
-    "type": "buy",
-    "value": 35139300,
-    "shares": 435000,
-    "price": 80.78,
-    "plan": false,
-    "date": "2026-10-15",
-    "disclosed": "2026-10-16",
-    "link": "https://www.sec.gov/Archives/edgar/data/2022936/000202293626000017/0002022936-26-000017-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "bee9ab27da61430c",
-    "ticker": "IDT",
-    "company": "IDT CORP",
-    "who": "Judah Schorr",
-    "role": "Director",
-    "type": "sell",
-    "value": 1122981,
-    "shares": 13753,
-    "price": 81.65,
-    "plan": false,
-    "date": "2026-10-15",
-    "disclosed": "2026-10-16",
-    "link": "https://www.sec.gov/Archives/edgar/data/1383828/000119312526423979/0001193125-26-423979-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "1cf31913850bde22",
-    "ticker": "BYRN",
-    "company": "Byrna Technologies Inc.",
-    "who": "Adam L. Roth",
-    "role": "Director",
-    "type": "buy",
-    "value": 70375,
-    "shares": 15000,
-    "price": 4.69,
-    "plan": false,
-    "date": "2026-10-15",
-    "disclosed": "2026-10-16",
-    "link": "https://www.sec.gov/Archives/edgar/data/2086723/000143774926032801/0001437749-26-032801-index.htm"
    }
   ],
   "docs": {
@@ -11102,26 +11072,26 @@
    "0000320335-26-000226",
    "0001966032-26-000006",
    "0001882375-26-000002",
-   "0001106578-26-000171",
    "0000310354-26-000112",
+   "0001178579-26-000020",
    "0001557413-26-000002",
-   "0001193125-26-432001",
-   "0000898432-26-000745",
-   "0000310354-26-000104",
-   "0000898432-26-000744",
-   "0000310354-26-000106",
+   "0000732717-26-000376",
+   "0001104659-26-118822",
+   "0001104659-26-118819",
    "0000310354-26-000108",
    "0001730096-26-000002",
-   "0001978134-26-000006",
    "0001954094-26-000002",
-   "0001193125-26-432000",
    "0001123292-26-001426",
-   "0002127293-26-000013",
+   "0001104659-26-118817",
+   "0001104659-26-118823",
+   "0001100682-26-000153",
    "0001493152-26-048539",
+   "0001104659-26-118815",
+   "0001654954-26-009146",
    "0001540021-26-000002",
+   "0001493152-26-048562",
    "0001343352-26-000027",
-   "0001899058-26-000006",
-   "0001193125-26-431998"
+   "0001899058-26-000006"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
