@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "61709f68fd91a5dd": "2026-10-23T14:06:55.769626+00:00",
-  "6961318ec12ce745": "2026-10-23T14:11:55.666007+00:00",
   "cae4132b0b921271": "2026-10-23T14:16:55.714462+00:00",
   "48ca05cbe342530b": "2026-10-23T14:16:55.714462+00:00",
   "22cc8bfcf637d04c": "2026-10-23T14:26:55.700630+00:00",
@@ -602,22 +600,6 @@
   "fcfb3b74c7b92c52": "2026-10-26T13:45:24.292760+00:00"
  },
  "recent": [
-  {
-   "title": "US Consumer Sentiment Slips to Five-Month Low on Inflation Woes",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-23/us-consumer-sentiment-slips-to-five-month-low-on-inflation-woes",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 7,
-   "ts": "2026-10-23T14:06:55.769626+00:00",
-   "title_ru": "Потребительские настроения в США снизились до пятимесячного минимума из-за проблем с инфляцией",
-   "lead": "US consumer sentiment edged down to a five-month low in October as high prices and rising interest rates depressed morale.",
-   "lead_ru": "Потребительские настроения в США упали до пятимесячного минимума в октябре, поскольку высокие цены и рост процентных ставок снизили моральный дух.",
-   "tags": [
-    "rates",
-    "inflation"
-   ]
-  },
   {
    "title": "Infosys cuts forecast as AI spending shift deepens North America slowdown",
    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQNWdWWnJFN3I3MnZQQzBBRUFVMnBTbkduVklRcFVPbWZVTGFxM2NRbkRtRHlXa2JBdlpnQWMxSkh1WU91clBJQnpqYXItXzAtcTJ5NlFETjRETndtM2VyRGxkaElVREFxRjRfeUdkMzlxR3hYdlZSX1R1LXNRX3dxTUlyYzJNYUp1NGpfOU5mNUQ0YWZ3bE1TOVAxaUk?oc=5",
@@ -11213,18 +11195,15 @@
   },
   "checked": "2026-10-26T13:45:24.292760+00:00",
   "sec_seen": [
-   "0001493152-26-048422",
-   "0002082930-26-000018",
    "0001398344-26-018736",
    "0001976408-26-000901",
    "0001976408-26-000902",
+   "0000821026-26-000136",
    "0000080424-26-000260",
-   "0001990106-26-000026",
    "0001976408-26-000905",
    "0001193125-26-431207",
-   "0001976408-26-000904",
    "0001749928-26-000007",
-   "0002022050-26-000011",
+   "0001976408-26-000904",
    "0001976408-26-000907"
   ],
   "errors": {
