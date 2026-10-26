@@ -599,7 +599,9 @@
   "00111d8c171a3b8b": "2026-10-26T22:52:01.178691+00:00",
   "bcbfbd1e7420d795": "2026-10-26T23:02:01.230282+00:00",
   "f6cf58464b22f25f": "2026-10-26T23:07:01.287097+00:00",
-  "c6c2c52d68e74132": "2026-10-26T23:07:01.287097+00:00"
+  "c6c2c52d68e74132": "2026-10-26T23:07:01.287097+00:00",
+  "a5753e9c2974ee7b": "2026-10-26T23:12:01.243608+00:00",
+  "e5e49692674858b8": "2026-10-26T23:12:01.243608+00:00"
  },
  "recent": [
   {
@@ -4641,6 +4643,29 @@
    "tags": [
     "GDP"
    ]
+  },
+  {
+   "title": "Lula’s Win Shocked the World, Especially Markets",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNcVRPTElqa0hCVGJTbzRuU1BxVk9MV2s4dVhXdmFub3ZsdXBqcGpGdkU2U2RqaXRQVDJ0d2dKTnhTZ0x2Y3c1MzNfdDRVYUJDZi01VE85Wi04ZW42eGFwRm1GM0NkdmQxRE1Nck11eE1FS2p2b3VyYThUYkVQNTU5d1Jsa2JlOFh4S2htZTBlRGxsWGFNcGhETXFnc2xLVGRFMnhqQjhIQUFmZUVYQmthUHF3?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T23:12:01.243608+00:00",
+   "title_ru": "Победа Лулы потрясла мир, особенно рынки"
+  },
+  {
+   "title": "China's lab-grown diamond makers target AI, chip sectors for next wave of growth",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQRGJjWTFGMk9ycWp1UHQwZWwtZWVkU25QRmg2NzVIVkpUdXhvR3dtTjNtY3FCSkJacUtkbE9vOGItMlRtaGduTm83Y1lkOUtOT09SanAxOWhQd2IzTGRpYmpIUVhhcmV4YmtvR3A4VFJ1dEJscVVHYVl1QzJRYkVzLTBXRXI0WkFyaHlKUVhEbDZIdFhLT1VaUzhiNEJsX1B2bU85MHVtdkhhWmUzbTZOMWFMRnJuNVBnUnRv?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T23:12:01.243608+00:00",
+   "title_ru": "Китайские производители выращенных в лаборатории бриллиантов нацеливаются на сектор искусственного интеллекта и чипов для следующей волны роста",
+   "tags": [
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-10-26",
@@ -7549,6 +7574,22 @@
     "date": "2026-10-23",
     "disclosed": "2026-10-26",
     "link": "https://www.sec.gov/Archives/edgar/data/1356389/000162828026067363/0001628280-26-067363-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "ecd9017d7cf55264",
+    "ticker": "PAGS",
+    "company": "PagSeguro Digital Ltd.",
+    "who": "Alexandre Mr Magnani",
+    "role": "Director",
+    "type": "sell",
+    "value": 568521,
+    "shares": 50000,
+    "price": 11.37,
+    "plan": false,
+    "date": "2026-10-23",
+    "disclosed": "2026-10-26",
+    "link": "https://www.sec.gov/Archives/edgar/data/2120783/000155485526002194/0001554855-26-002194-index.htm"
    },
    {
     "src": "sec",
@@ -11005,22 +11046,6 @@
     "date": "2026-10-15",
     "disclosed": "2026-10-19",
     "link": "https://www.sec.gov/Archives/edgar/data/1797370/000161071726000443/0001610717-26-000443-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "47691f6d48f65ac4",
-    "ticker": "GF",
-    "company": "NEW GERMANY FUND INC",
-    "who": "Saba Capital Management, L.p.",
-    "role": "10% owner",
-    "type": "buy",
-    "value": 170743,
-    "shares": 16577,
-    "price": 10.3,
-    "plan": false,
-    "date": "2026-10-15",
-    "disclosed": "2026-10-19",
-    "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000358/0001510281-26-000358-index.htm"
    }
   ],
   "docs": {
@@ -11063,8 +11088,8 @@
    "0001137789-26-000292",
    "0000902664-26-004286",
    "0001137789-26-000288",
-   "0002050422-26-000017",
    "0000912282-26-001400",
+   "0002050422-26-000017",
    "0001225208-26-008516",
    "0000912282-26-001396",
    "0000909832-26-000113",
@@ -11083,10 +11108,12 @@
    "0001193125-26-432264",
    "0000950103-26-016182",
    "0000912282-26-001401",
+   "0001554855-26-002194",
    "0002159567-26-000005",
    "0001628280-26-067362",
    "0000909832-26-000111",
    "0000909832-26-000119",
+   "0001379344-26-000011",
    "0001137789-26-000293",
    "0001182471-26-000007",
    "0001137789-26-000290",
