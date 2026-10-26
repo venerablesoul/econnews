@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "2c3621f279ebf047": "2026-10-23T17:06:55.706480+00:00",
-  "4745790aa136225d": "2026-10-23T17:06:55.706480+00:00",
   "ca83b44ad457c04f": "2026-10-23T17:16:55.802869+00:00",
   "ea33f14243b97861": "2026-10-23T17:32:41.488316+00:00",
   "119137cb82a0d0be": "2026-10-23T17:37:41.462341+00:00",
@@ -598,35 +596,10 @@
   "8cddad495ca7cd8b": "2026-10-26T16:56:22.707643+00:00",
   "3fb305632adf0202": "2026-10-26T16:56:22.707643+00:00",
   "353d2504ba0a060b": "2026-10-26T16:56:22.707643+00:00",
-  "ce85466c6e00df88": "2026-10-26T17:01:22.721687+00:00"
+  "ce85466c6e00df88": "2026-10-26T17:01:22.721687+00:00",
+  "aaa0d6a672684ccf": "2026-10-26T17:11:22.962456+00:00"
  },
  "recent": [
-  {
-   "title": "Wells Fargo, Intuit latest companies to object to their shares being tokenized, document shows",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPY1IyYVRJX1Vlemd2UTZ5OHpUS2ZYU3A2eHpIel9JOHdrUy1sNG40Mlp6M3h4dDhiZmRnMFR0UU5fSGx0SkdPdTVYU2t4NUxFOW9uZTBEbTNZN1RvZVdfajRXbzRrc2xiVXlZRzNvYVdqWjBtd1NaNjVwVzZnQ1QzVVk3aFhGdk9EWkJZcjdndVlIZXNBd1ZUeWlQVEo0S3NwUzdmOVdmNUxlMnRxSHE2TXA4cm00V29Nc01PVktZbFIzZ2c?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T17:06:55.706480+00:00",
-   "title_ru": "Wells Fargo, новейшие компании Intuit возражают против токенизации своих акций, как показывает документ",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "‘Some people did everything right’: I lost my home in the Great Recession. I rent in my 50s. Why is that judged as failure?",
-   "link": "https://www.marketwatch.com/story/i-earn-110-000-a-year-i-lost-my-home-in-the-great-recession-im-renting-in-my-50s-why-is-that-judged-as-failure-d1371d67?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T17:06:55.706480+00:00",
-   "title_ru": "«Некоторые люди все сделали правильно»: я потерял свой дом во время Великой рецессии. Я снимаю квартиру в 50 лет. Почему это расценивается как неудача?",
-   "tags": [
-    "GDP"
-   ]
-  },
   {
    "title": "From Argentina to Sri Lanka, economic reforms bite at home",
    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1oWnFYLUFFSll3WlZPRV85VkdDUUZwM0RKZkY3YXFIaGhhR3BQY2pQaHpFaEZZOHdWLTBUTWRkWF9la1NHQnNRRmM1ZG9zUlFSSENvV3pxTFBpVjVqVUEzSnZ0SWhEZlE?oc=5",
@@ -4773,6 +4746,21 @@
    ],
    "score": 2,
    "ts": "2026-10-26T16:56:22.707643+00:00"
+  },
+  {
+   "title": "Эр-Рияд спрячет нефть в пещерах в Азии из-за перебоев поставок. Фото",
+   "link": "https://www.rbc.ru/economics/26/10/2026/6adf686ccde96ff2fe37d396",
+   "sources": [
+    "RBC"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T17:11:22.962456+00:00",
+   "title_en": "Riyadh will hide oil in caves in Asia due to supply disruptions. Photo",
+   "lead": "Саудовскую нефть с 2027 года будут хранить в каменных пещерах у побережья Сингапура. Хранилище способно вместить до 9 млн барр. нефти. Эр-Рияд ищет хранилища в других странах из-за атак хуситов и закрытия Ормузского пролива",
+   "lead_en": "Saudi oil will be stored in rock caves off the coast of Singapore from 2027. The storage facility can hold up to 9 million barrels. oil. Riyadh is looking for storage facilities in other countries due to Houthi attacks and the closure of the Strait of Hormuz",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-25",
@@ -11179,6 +11167,7 @@
   },
   "checked": "2026-10-26T16:56:22.707643+00:00",
   "sec_seen": [
+   "0000080661-26-000369",
    "0001493152-26-048460",
    "0001718133-26-000006",
    "0002160813-26-000005"
