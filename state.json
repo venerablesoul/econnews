@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "1cab292e4320e2c7": "2026-10-23T16:36:55.763055+00:00",
-  "5f96d67e9a3d3177": "2026-10-23T16:36:55.763055+00:00",
   "fbee1b3aed7fe41e": "2026-10-23T16:41:55.717790+00:00",
   "46db2820f878ce72": "2026-10-23T16:41:55.717790+00:00",
   "b376803a30b92bf9": "2026-10-23T16:46:55.736225+00:00",
@@ -598,24 +596,10 @@
   "6c80094cc8d747c6": "2026-10-26T16:16:22.775380+00:00",
   "c4bba32c0dfafff1": "2026-10-26T16:26:22.737531+00:00",
   "ed1aa4feb5ddcb6f": "2026-10-26T16:36:22.767844+00:00",
-  "9f30f945a45f495a": "2026-10-26T16:36:22.767844+00:00"
+  "9f30f945a45f495a": "2026-10-26T16:36:22.767844+00:00",
+  "1810499ee8a61f94": "2026-10-26T16:41:22.692534+00:00"
  },
  "recent": [
-  {
-   "title": "Ineos Quattro Bonds Plunge as Earnings Show Fading War Gains",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-23/ineos-quattro-bonds-plunge-as-earnings-show-fading-war-gains",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-23T16:36:55.763055+00:00",
-   "title_ru": "Облигации Ineos Quattro падают, поскольку доходы показывают угасающую военную прибыль",
-   "lead": "Bonds of Ineos Quattro slumped after the unit of Jim Ratcliffe’s chemicals empire reported that pricing gains from Iran war-related import disruptions are fading.",
-   "lead_ru": "Облигации Ineos Quattro упали после того, как подразделение химической империи Джима Рэтклиффа сообщило, что рост цен от сбоев в импорте, связанных с войной в Иране, ослабевает.",
-   "tags": [
-    "bonds"
-   ]
-  },
   {
    "title": "Nasdaq ticks up as tech stocks steady; SpaceX worries hit telecoms",
    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQR01KeXBjdXBubVRzTlJfWWJTMHctb2hFS2pVT21ydWtZNzBaMldxd1c2ZUJGNWhIeGV6MUxvQVZvSl9GdFh5QThQbFpuT0IwYi02Y3JGM19YSWJ3LXMtb29RbS1WZUljdGtsS2dockxHVm5SWnBSMzJpM0Y4RFItdW5SMzFsdXg2LWtrYWE1SC1TQlkxOERJZHNtQVREdw?oc=5",
@@ -4770,6 +4754,16 @@
    "title_ru": "Shock Lula Win срывает продажи акций на $ 6 млрд по мере того, как банки набирают обороты",
    "lead": "Brazilian companies had some $6 billion in equity sales lined up for the weeks after the vote that they expected would crown conservative Flávio Bolsonaro as the next president of Latin America’s largest economy.",
    "lead_ru": "У бразильских компаний было около $ 6 млрд в продажах акций в течение нескольких недель после голосования, которое, как они ожидали, станет короной консерватора Флавио Болсонару в качестве следующего президента крупнейшей экономики Латинской Америки."
+  },
+  {
+   "title": "Republic of Madagascar: Third and Fourth Reviews Under the Extend Credit Facility Arrangement, Request for a Waiver of Nonobservance of a Performance Criterion, Modification of Performance Criteria, Financing Assurances Review",
+   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOQVVQNkxjcXJ6NDJLY0VDVVAxMVgxQlNwaHgxR0NPalZ6WkVBWnRya3lxZ2x6eHJUb2hCNnVnaS16VDlqWjBlRnlZamhsclAzbkFYNlgxQ3hpNEo5NXVDSDhDOURSSjFtWGlwcHJQMVlIYXlZbm5ZcWM0ZlBkZTRPZi1MWFNpWUQxRWFWb3RmYW02Wk9NYlZiNHJjanAwWEd6VW9iV2FBWkl4YkN2YjRuMWdyblJ2VFV6UEJZbmhQaERRaEpQX190SF9VS2hjZWltbVhBcDFmaTN6NFhE?oc=5",
+   "sources": [
+    "IMF"
+   ],
+   "score": 4,
+   "ts": "2026-10-26T16:41:22.692534+00:00",
+   "title_ru": "Республика Мадагаскар: третий и четвертый обзоры в рамках соглашения о продлении кредитной линии, запрос на отказ в случае несоблюдения критерия эффективности, изменение критериев эффективности, проверка гарантий финансирования"
   }
  ],
  "last_digest": "2026-10-25",
@@ -11176,9 +11170,9 @@
   },
   "checked": "2026-10-26T15:51:23.163711+00:00",
   "sec_seen": [
-   "0001718133-26-000006",
+   "0000080424-26-000261",
    "0001493152-26-048460",
-   "0000080424-26-000261"
+   "0001718133-26-000006"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
