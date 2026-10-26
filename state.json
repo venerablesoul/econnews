@@ -591,7 +591,12 @@
   "efcda77d598f245b": "2026-10-26T04:04:41.375260+00:00",
   "4e5942b3ca5973b2": "2026-10-26T04:04:41.375260+00:00",
   "52798fd7325a61c3": "2026-10-26T04:09:41.424617+00:00",
-  "034a842cabe77f61": "2026-10-26T04:09:41.424617+00:00"
+  "034a842cabe77f61": "2026-10-26T04:09:41.424617+00:00",
+  "8358c84e4a016c10": "2026-10-26T04:14:41.445276+00:00",
+  "12ab1b6980bca0f3": "2026-10-26T04:14:41.445276+00:00",
+  "b9abee1db04031a9": "2026-10-26T04:19:41.370469+00:00",
+  "2eda1976f2832339": "2026-10-26T04:19:41.370469+00:00",
+  "ee0758837b1f1a2b": "2026-10-26T04:19:41.370469+00:00"
  },
  "recent": [
   {
@@ -5287,6 +5292,16 @@
    "title_ru": "Таиланд рекордными темпами наращивает импорт ИИ и спрос на энергию",
    "lead": "Thailand’s imports surged at the fastest pace on record in September as higher energy costs and an investment boom in artificial intelligence and advanced electronics drove demand for fuel and capital goods.",
    "lead_ru": "Импорт Таиланда вырос самыми быстрыми темпами за всю историю наблюдений в сентябре, поскольку более высокие затраты на энергию и инвестиционный бум в области искусственного интеллекта и передовой электроники стимулировали спрос на топливо и средства производства."
+  },
+  {
+   "title": "Gap apparel supplier Gokaldas eyes doubling Europe exports share to cut US reliance",
+   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQNHVCTVRsc3V1VkZ3dkhISThlYUdZZkFfbmplWFZyclRHZnlvb3ZyZW9TamF4cnJXUzI4RkRnbnp1SUoyME5NZlRRenFsMndrTnAyX09KQjQzUDdEUklPVmQwTGdqclM1bUpDbXBJTzg1eDZNX0ZsMFdkcnd6eEl0anB2MzF5Z1RteHBmeVQxT0ZBLTg5V1prSjRQNjNfVjVJVjZVOXhZTUtiZEVHUkljeVlZWjJ0cEdydzVrM2lPZTFmdG5nbzNrNnl1aGtORkVMMVpJY1ZoeXg?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T04:19:41.370469+00:00",
+   "title_ru": "Поставщик одежды Gap Gokaldas планирует удвоить долю европейского экспорта, чтобы снизить зависимость США"
   }
  ],
  "last_digest": "2026-10-25",
@@ -5309,7 +5324,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 0,
+  "Fed": 1,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
@@ -11691,7 +11706,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-26T03:18:52.505041+00:00",
+  "checked": "2026-10-26T04:19:41.370469+00:00",
   "sec_seen": [
    "0001778564-26-000191",
    "0000923120-26-000023",
