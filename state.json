@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "ec0f2cbc912ee7a5": "2026-10-23T10:11:24.909272+00:00",
-  "27b9a4014bc96b2a": "2026-10-23T10:11:24.909272+00:00",
-  "1ac98c8019a234e5": "2026-10-23T10:11:24.909272+00:00",
-  "000faecb3ffd41fa": "2026-10-23T10:11:24.909272+00:00",
   "1900f392f00e2d60": "2026-10-23T10:16:24.974664+00:00",
   "9b9116613afbd25b": "2026-10-23T10:21:24.907212+00:00",
   "60bea810f4bb0c18": "2026-10-23T10:21:24.907212+00:00",
@@ -607,49 +603,14 @@
   "f1e0c8775ff01e4e": "2026-10-26T10:10:24.226348+00:00",
   "5015b1bac01b58dd": "2026-10-26T10:10:24.226348+00:00",
   "89fb3011b722eccb": "2026-10-26T10:10:24.226348+00:00",
-  "7332d2e2942cff1b": "2026-10-26T10:10:24.226348+00:00"
+  "7332d2e2942cff1b": "2026-10-26T10:10:24.226348+00:00",
+  "00f47a315de2ee7a": "2026-10-26T10:15:24.254828+00:00",
+  "6dc5a8cde2980521": "2026-10-26T10:15:24.254828+00:00",
+  "2a0155622ff2eb77": "2026-10-26T10:15:24.254828+00:00",
+  "1a3eb2bd81bae787": "2026-10-26T10:15:24.254828+00:00",
+  "6a731ec4989caa98": "2026-10-26T10:15:24.254828+00:00"
  },
  "recent": [
-  {
-   "title": "Macklem Ensnared by Market Pricing and Will Hike, Economists Say",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-23/macklem-ensnared-by-market-pricing-and-will-hike-economists-say",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-23T10:11:24.909272+00:00",
-   "title_ru": "Маклем очарован рыночным ценообразованием и будет расти, говорят экономисты",
-   "lead": "Bank of Canada Governor Tiff Macklem may have boxed himself into an interest-rate hike next week after his hawkish commentary convinced traders a hike is all but certain.",
-   "lead_ru": "Управляющий Банка Канады Тифф Маклем, возможно, ограничился повышением процентной ставки на следующей неделе после того, как его ястребиный комментарий убедил трейдеров в том, что повышение почти наверняка.",
-   "tags": [
-    "rates"
-   ]
-  },
-  {
-   "title": "Carrefour’s €2 Billion Stock Plunge Shows Cost of French Unrest",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-23/carrefour-s-2-billion-stock-plunge-shows-cost-of-french-unrest",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T10:11:24.909272+00:00",
-   "title_ru": "Падение акций Carrefour на € 2 млрд вызвало беспорядки во Франции",
-   "lead": "Carrefour SA shares are poised to log their worst week since the global financial crisis after the supermarket operator warned that violent protests and looting across France will weigh heavily on its full-year outlook.",
-   "lead_ru": "Акции Carrefour SA готовятся к худшей неделе после мирового финансового кризиса после того, как оператор супермаркета предупредил, что насильственные протесты и грабежи по всей Франции будут сильно влиять на прогноз на весь год.",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "Wall St. ends lower on mixed earnings, robust data",
-   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE82d2hqQVVtcXNoNThmTk92QnFPZzlzWEZlUndyUlBUaXRuTUtVX2V1UlJlUWtPQlhremhlSnlLU25wbko4ZkFkTGhaUkNrUWhJa0RkVUVyOU5UamhXRnBRbG9fYzFIYUk?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T10:11:24.909272+00:00",
-   "title_ru": "Уолл-стрит заканчивается ниже на смешанной прибыли, надежные данные"
-  },
   {
    "title": "Bitcoin Billionaires Are Racing to Ride a 3,000% Crypto Boom",
    "link": "https://www.bloomberg.com/news/articles/2026-10-23/bitcoin-billionaires-are-racing-to-ride-a-3-000-crypto-boom",
@@ -4983,6 +4944,67 @@
    "score": 3,
    "ts": "2026-10-26T10:10:24.226348+00:00",
    "title_ru": "Почему банки Уолл-стрит хотят, чтобы демократы поддержали их облегчение капитала"
+  },
+  {
+   "title": "Asia-focused banks face capital squeeze due to inflation, bond turbulence",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQQ3c0Nl9IZUxGNGlIRFlNSW0xRUIzUTkxZlZJYVhtWjI5NXlGNFVJcm1IMnNMNVFWZVV4c0toYkxQYjB5Z3VXanB2ZE5ycUxERkRObDhkYUw3RGlrbFlzMVM3OXpyRVZhLTNnMkZhMkhHRU9oeGpuOHBDUWtkNkprSkZuQWVlSWtxYllmX1NlWkdqOHVWZzlubGs0WExDR29iVl95S1paMEhzOEFob1JkQWxpeTlGcnZO?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-26T10:15:24.254828+00:00",
+   "title_ru": "Банки, ориентированные на Азию, сталкиваются с сокращением капитала из-за инфляции и турбулентности облигаций",
+   "tags": [
+    "inflation",
+    "bonds"
+   ]
+  },
+  {
+   "title": "Fed to hit pause on rate hikes, but maybe not for long",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQMFBxcEVKT0RxYVJKYWZGOUlGd0VJTE5vN2lNTnozcm92NTV5Vzg3aVdhT2p3eGpoVlZlZ19aaGtPa0s2VzBsS2xuamdkTnU4X2dhNGRzYjlaVTFpVzdLSkg4TDRlQThPdnZOandxOE1wV0o0WDFCcDgtbEZIQmR0a3BFOWdIM1dPZGdmQQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-26T10:15:24.254828+00:00",
+   "title_ru": "ФРС возьмет паузу в повышении ставок, но, возможно, ненадолго",
+   "tags": [
+    "Fed",
+    "rates"
+   ]
+  },
+  {
+   "title": "Bank of Canada expected to hike rate on Wednesday to stem spillover of energy inflation",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPUXpOXzVmSjQ1YVpWOEdvN2ZtR2xyVmFDTTJxZzhqekRPVGRaVzl3QUV4bFFQYjZUckk0MExrRGZYbUNPd3czSV9yQVNORlFJc19rMm03T3BoNHhVNkRtTnRQckdpM0Q4MUFscWlzU1gtYVhrSUY0SjY1UlMxby00YXROUlJleDc4cXdBS2xFTkJvSHQwTGpwVkN5aVpqZ1dVM081dk9qM3dGSy05Z2kxaGU0TlctSXVMQUpBaGlVckQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-26T10:15:24.254828+00:00",
+   "title_ru": "Банк Канады, как ожидается, повысит ставку в среду, чтобы остановить распространение энергетической инфляции",
+   "tags": [
+    "inflation"
+   ]
+  },
+  {
+   "title": "Indonesia meeting Singapore gas terms despite supply cut, minister says",
+   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOTGRBUmV5aU1iVUE5Y1pEVTRYUjZjMzNOdEZpY0VvRE02Ym5JaHBBcWljM3k0UnoydFo5bE9yRWRUeFBDWklUMVR2bmxZT1Q0M01FTlFKQlhjTGhXOGxKWHdscnBKM3dKM2NLSWZxXy13OHA3Q1BxUFhzeG1CaENld256Q0U3VTZTckpwOEVCSFlpMHVMQXBSd3RuOFhZUGpqeEhaLVhkTDZXVDFpX3V5RFdsSWVteTlPeUVKenpSUnh6WVJRbUlHQnRfMTU?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T10:15:24.254828+00:00",
+   "title_ru": "Индонезия выполняет условия Сингапура по газу, несмотря на сокращение поставок, заявил министр"
+  },
+  {
+   "title": "US growth boosted by AI, but no sign of a turning point higher",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNQWJDYTAzYXBReXFpWXVtczNMSktHdnZTRzl3QktrREpMbTgzR3B2OTdqRUo4bjlBb0Y5ZDl0ZXd1TnRYY0RwMmlEMExselZFQUZtNURZQ242S1dXdnRPT2JHbmhnWGxLeVpPNFlkb0JsM0ZYRjZTOENFUVZFWVVENTk3dC1BdFlSOVNMYUsxNWNCZFdJNk0wRVF1UU9nZw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T10:15:24.254828+00:00",
+   "title_ru": "Экономический рост в США стимулируется искусственным интеллектом, но нет никаких признаков поворотного момента"
   }
  ],
  "last_digest": "2026-10-25",
@@ -11391,7 +11413,6 @@
   "sec_seen": [
    "0001801661-26-000126",
    "0000923120-26-000030",
-   "0000923120-26-000026",
    "0002160363-26-000004",
    "0001493152-26-048321",
    "0002160363-26-000003",
@@ -11400,12 +11421,10 @@
    "0001778564-26-000191",
    "0001493152-26-048313",
    "0000923120-26-000029",
-   "0000923120-26-000028",
    "0001493152-26-048319",
    "0001493152-26-048314",
    "0001493152-26-048309",
    "0001493152-26-048310",
-   "0000923120-26-000027",
    "0001493152-26-048311",
    "0001646649-26-000035",
    "0001493152-26-048315",
