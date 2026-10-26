@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "56fe187ad6c1acf0": "2026-10-23T06:30:51.521337+00:00",
   "ca258e53b80791a9": "2026-10-23T06:35:51.570237+00:00",
   "ccb51a4535bcddd5": "2026-10-23T06:41:24.919424+00:00",
   "1c3b9bf93effac38": "2026-10-23T06:46:24.927545+00:00",
@@ -602,21 +601,13 @@
   "16fb9373a0870f63": "2026-10-26T06:19:41.367638+00:00",
   "c212cfdcb0409c20": "2026-10-26T06:19:41.367638+00:00",
   "e31688edbe4528cf": "2026-10-26T06:24:41.380317+00:00",
-  "14c512d55ab75dd5": "2026-10-26T06:29:41.363681+00:00"
+  "14c512d55ab75dd5": "2026-10-26T06:29:41.363681+00:00",
+  "e090feee3fa576ae": "2026-10-26T06:34:41.374642+00:00",
+  "a23f59bdb57e7e77": "2026-10-26T06:34:41.374642+00:00",
+  "d96aee84642dfe4b": "2026-10-26T06:34:41.374642+00:00",
+  "074ffda8466368a2": "2026-10-26T06:34:41.374642+00:00"
  },
  "recent": [
-  {
-   "title": "AI Rout Hits Asia as Investors Rush to Safety",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-23/insight-with-haslinda-amin-10-23-2026-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T06:30:51.521337+00:00",
-   "title_ru": "AI Rout поражает Азию, поскольку инвесторы спешат в безопасное место",
-   "lead": "\"Insight with Haslinda Amin\" is a daily news program featuring in-depth, high-profile interviews and analysis to give viewers the complete picture on the stories that matter.",
-   "lead_ru": "«Инсайт с Хаслиндой Амин» - это ежедневная новостная программа с подробными, громкими интервью и анализом, чтобы дать зрителям полное представление о важных историях."
-  },
   {
    "title": "Hedge Funds Log Widest Daily Drawdown Since Covid in Stock Rout",
    "link": "https://www.bloomberg.com/news/articles/2026-10-23/hedge-funds-log-widest-daily-drawdown-since-covid-in-stock-rout",
@@ -5181,6 +5172,22 @@
    "title_ru": "Южноафриканский рэнд стабилен с местными экономическими данными, решение ФРС в центре внимания",
    "tags": [
     "Fed"
+   ]
+  },
+  {
+   "title": "Euro-Zone Slowdown Will Help Keep ECB Rates on Hold for Now",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-26/euro-zone-slowdown-central-bank-ecb-rates-hold-for-now",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-26T06:34:41.374642+00:00",
+   "title_ru": "Замедление в еврозоне поможет пока удерживать ставки ЕЦБ",
+   "lead": "Waning economic momentum is one reason the European Central Bank will probably hold off from raising interest rates for the time being.",
+   "lead_ru": "Снижение экономического импульса является одной из причин, по которой Европейский центральный банк, вероятно, пока воздержится от повышения процентных ставок.",
+   "tags": [
+    "ECB",
+    "rates"
    ]
   }
  ],
