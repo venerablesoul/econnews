@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "352b16183a5330e6": "2026-10-23T15:46:55.731081+00:00",
   "c33d633d4f0ccafe": "2026-10-23T15:51:55.844709+00:00",
   "b6a296030d05553b": "2026-10-23T15:51:55.844709+00:00",
   "17a726239616bc0d": "2026-10-23T15:51:55.844709+00:00",
@@ -600,25 +599,11 @@
   "8a2ce73bfb18b282": "2026-10-26T15:26:22.762219+00:00",
   "78cc49ee4323f384": "2026-10-26T15:31:22.835032+00:00",
   "9c7771d77081f721": "2026-10-26T15:31:22.835032+00:00",
-  "0502488355bb16a0": "2026-10-26T15:31:22.835032+00:00"
+  "0502488355bb16a0": "2026-10-26T15:31:22.835032+00:00",
+  "c55509c82e691cac": "2026-10-26T15:46:22.717194+00:00",
+  "89c7903a2878620c": "2026-10-26T15:46:22.717194+00:00"
  },
  "recent": [
-  {
-   "title": "AI Tech Fears Push Global Credit Spreads to 17-Month High",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-23/ai-fears-push-global-credit-spreads-to-17-month-high-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T15:46:55.731081+00:00",
-   "title_ru": "Опасения AI Tech подталкивают глобальные кредитные спреды к 17-месячному максимуму",
-   "lead": "Metrics across global bond markets are signaling their biggest risk-off sentiment in more than a year, as a selloff in AI stocks and growing geopolitical tensions caused investors to seek out safe-haven assets.",
-   "lead_ru": "Показатели на мировых рынках облигаций сигнализируют о самом большом рискованном настроении за более чем год, поскольку распродажа акций ИИ и растущая геополитическая напряженность заставили инвесторов искать безопасные активы.",
-   "tags": [
-    "bonds",
-    "markets"
-   ]
-  },
   {
    "title": "Final second wave estimates available in new database",
    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOdkdXQTZPLUdJMU9jZkZKSnpBbWk2ZllkdUVTLWhobTFmaVF1MkE0T2VadERuYTNGQmZLVHZfc1lPYUhkZWtWRFVNb3ZMR1E5enIzSk5fMjRfMUk5RFlnbXExVl9VVGt4azRpTUtLdWtGenlNTGJfZzhXQjlaTU1lX3hxU21QUXR6cmgxaTdLR2tWZ19IYUczWWVn?oc=5",
@@ -4773,6 +4758,15 @@
     "bonds",
     "markets"
    ]
+  },
+  {
+   "title": "Курс украинской гривны к доллару США снизился на 34 копейки",
+   "link": "https://www.rbc.ru/rbcfreenews/6adf6baff98ac3abf29cbe03",
+   "sources": [
+    "RBC"
+   ],
+   "score": 1,
+   "ts": "2026-10-26T15:46:22.717194+00:00"
   }
  ],
  "last_digest": "2026-10-25",
@@ -7209,6 +7203,22 @@
     "date": "2026-10-23",
     "disclosed": "2026-10-26",
     "link": "https://www.sec.gov/Archives/edgar/data/2110932/000008042426000260/0000080424-26-000260-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "ebce5a825bee4787",
+    "ticker": "PG",
+    "company": "PROCTER & GAMBLE Co",
+    "who": "Balaji Purushothaman",
+    "role": "Chief Human Resources Officer",
+    "type": "sell",
+    "value": 671929,
+    "shares": 4181,
+    "price": 160.71,
+    "plan": false,
+    "date": "2026-10-23",
+    "disclosed": "2026-10-26",
+    "link": "https://www.sec.gov/Archives/edgar/data/1957262/000008042426000261/0000080424-26-000261-index.htm"
    },
    {
     "src": "sec",
@@ -11129,22 +11139,6 @@
     "date": "2026-10-15",
     "disclosed": "2026-10-16",
     "link": "https://www.sec.gov/Archives/edgar/data/2089263/000208926326000018/0002089263-26-000018-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "4fa46146748ae6fa",
-    "ticker": "PL",
-    "company": "Planet Labs PBC",
-    "who": "Kristen Robinson",
-    "role": "Director",
-    "type": "sell",
-    "value": 565560,
-    "shares": 40000,
-    "price": 14.14,
-    "plan": true,
-    "date": "2026-10-15",
-    "disclosed": "2026-10-16",
-    "link": "https://www.sec.gov/Archives/edgar/data/1836833/000136409626000008/0001364096-26-000008-index.htm"
    }
   ],
   "docs": {
@@ -11177,8 +11171,10 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-26T14:46:22.746502+00:00",
-  "sec_seen": [],
+  "checked": "2026-10-26T15:51:23.163711+00:00",
+  "sec_seen": [
+   "0000080424-26-000261"
+  ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
   }
