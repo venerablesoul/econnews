@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "81b44f6944b465ef": "2026-10-23T21:17:41.487291+00:00",
-  "bd24ce5d70dda29f": "2026-10-23T21:22:41.414176+00:00",
   "2bc1cf592e278a36": "2026-10-23T21:47:41.430212+00:00",
   "4cd960199fc9c646": "2026-10-23T21:52:41.422387+00:00",
   "953b8561374f8ae3": "2026-10-23T21:52:41.422387+00:00",
@@ -600,31 +598,6 @@
   "e4870f6a5a803f0b": "2026-10-26T21:17:01.154444+00:00"
  },
  "recent": [
-  {
-   "title": "France Avoids Moody’s Downgrade in Reprieve After Week of Crisis",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-23/france-avoids-moody-s-downgrade-in-reprieve-after-week-of-crisis",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-23T21:17:41.487291+00:00",
-   "title_ru": "Франция избегает понижения рейтинга Moody's после недели кризиса",
-   "lead": "France dodged a downgrade at Moody’s Ratings, respite for a country beset by surging bond yields, political gridlock and street protests.",
-   "lead_ru": "Франция уклонилась от понижения рейтинга Moody's, передышка для страны, страдающей от роста доходности облигаций, политического тупика и уличных протестов.",
-   "tags": [
-    "bonds"
-   ]
-  },
-  {
-   "title": "Portfolio manager prefers Microsoft, Amazon, Google in AI trade",
-   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5BNi1mM1lyNnh6MlpMa1A2c3NKSFozT0stalRkalE3QTZkZ0U3TWJaRFZhMC16Q0VOWTNjZXNZT21CNmlCd2N4S1VyZ1JJRVhGcEZndWwxeDBOaGRkQTFXVHlzVk9KMkE?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T21:22:41.414176+00:00",
-   "title_ru": "Портфельный менеджер отдает предпочтение Microsoft, Amazon, Google в торговле ИИ"
-  },
   {
    "title": "Investors piled a record sum into a leveraged semiconductor ETF last week. Things didn’t work out.",
    "link": "https://www.marketwatch.com/story/investors-piled-a-record-sum-into-a-leveraged-semiconductor-etf-last-week-things-didnt-work-out-4680b2f3?mod=mw_rss_topstories",
@@ -11026,34 +10999,29 @@
   },
   "checked": "2026-10-26T21:12:01.223283+00:00",
   "sec_seen": [
-   "0001079973-26-001402",
-   "0001334505-26-000004",
-   "0001193125-26-432132",
+   "0002050987-26-000002",
    "0001193125-26-432165",
+   "0001388772-26-000004",
+   "0001883925-26-000006",
    "0001193125-26-432162",
-   "0001214659-26-013230",
-   "0001104659-26-118822",
+   "0002066961-26-000002",
    "0001652739-26-000014",
    "0001511998-26-000007",
-   "0001104659-26-118819",
-   "0001193125-26-432129",
+   "0002005471-26-000002",
+   "0001767197-26-000006",
+   "0001649840-26-000004",
    "0001513845-26-000141",
    "0002014569-26-000004",
-   "0001104659-26-118817",
-   "0001104659-26-118823",
+   "0001128404-26-000006",
    "0001193125-26-432167",
-   "0001104659-26-118825",
-   "0001104659-26-118835",
+   "0002049881-26-000002",
+   "0001960954-26-000004",
    "0001978033-26-000002",
-   "0001104659-26-118831",
-   "0001721614-26-000004",
+   "0001388767-26-000006",
    "0001493152-26-048577",
    "0001193125-26-432164",
-   "0001809519-26-000179",
-   "0001104659-26-118833",
-   "0001104659-26-118828",
-   "0001214659-26-013232",
-   "0001104659-26-118826"
+   "0001695033-26-000004",
+   "0001214659-26-013232"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
