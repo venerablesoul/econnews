@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "b3f8ecebc55e9c28": "2026-10-23T13:11:55.742565+00:00",
   "39ca58dcc7f27308": "2026-10-23T13:16:55.689375+00:00",
   "0b2bbf600bfcab07": "2026-10-23T13:21:55.671723+00:00",
   "b8ef7b45db0d19dd": "2026-10-23T13:26:55.711135+00:00",
@@ -597,7 +596,9 @@
   "99e519f70b17cc32": "2026-10-26T13:05:24.188124+00:00",
   "517abfe494597f89": "2026-10-26T13:05:24.188124+00:00",
   "419caf214ab143c0": "2026-10-26T13:10:24.182897+00:00",
-  "ada6089820a5edae": "2026-10-26T13:10:24.182897+00:00"
+  "ada6089820a5edae": "2026-10-26T13:10:24.182897+00:00",
+  "588ec28156e9917a": "2026-10-26T13:15:24.138192+00:00",
+  "f686ba32bc778cf6": "2026-10-26T13:15:24.138192+00:00"
  },
  "recent": [
   {
@@ -4761,6 +4762,31 @@
    "score": 3,
    "ts": "2026-10-26T13:10:24.182897+00:00",
    "title_ru": "Anthropic открывает книги о взрывном росте ИИ и ошеломляющих затратах"
+  },
+  {
+   "title": "COMMENTARY: AI gloom revives the specter of stagflation",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQRm13Sm5yUE5uMDZnT2s5a2NmWEhIeUllOVdUVkpzTWZTX0pOZGxmQnNCVGNnZElxeEhncmNWT3VleWVTdVhaSGJiVElUbDhOWWdWZTNtbFJnQTdoaFdoNVFwVW5KWURmMDEtNWRKZWFSLUROUFdDcWRHTHRocm5UdmxReVd5Q2FoRHlMZ1AzdTdhYncwV2dFZk5FVHBXMUFlQnliT0hkaldQLWczQ0pXbWJER3pOVmR4VHRZNDZn?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-26T13:15:24.138192+00:00",
+   "title_ru": "КОММЕНТАРИЙ: Мрак ИИ возрождает призрак стагфляции"
+  },
+  {
+   "title": "Surging Natural Gas Price Tests Europe’s Appetite for Action",
+   "link": "https://www.bloomberg.com/news/newsletters/2026-10-26/surging-natural-gas-price-tests-europe-s-appetite-for-action",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T13:15:24.138192+00:00",
+   "title_ru": "Растущая цена на природный газ проверяет аппетит Европы к действиям",
+   "lead": "Benchmark futures are back at crisis levels, but the policy response isn’t there yet.",
+   "lead_ru": "Эталонные фьючерсы вернулись на кризисные уровни, но ответные меры политики еще не приняты.",
+   "tags": [
+    "gas"
+   ]
   }
  ],
  "last_digest": "2026-10-25",
@@ -11178,7 +11204,8 @@
    "0001976408-26-000905",
    "0001049521-26-000085",
    "0001976408-26-000904",
-   "0002022050-26-000011"
+   "0002022050-26-000011",
+   "0001976408-26-000907"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
