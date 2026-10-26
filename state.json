@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "8b606ddfe079283e": "2026-10-23T12:36:55.681447+00:00",
-  "8afe37e143cd7309": "2026-10-23T12:36:55.681447+00:00",
-  "4c54aca1579a7883": "2026-10-23T12:36:55.681447+00:00",
-  "92c4766211c762d7": "2026-10-23T12:41:55.682510+00:00",
   "047a88ab5514dd49": "2026-10-23T12:46:55.743506+00:00",
   "86dc34f8eae1c144": "2026-10-23T12:51:55.697460+00:00",
   "39b8b77fe6a9ebbc": "2026-10-23T12:51:55.697460+00:00",
@@ -596,62 +592,16 @@
   "09501a54561ee3ac": "2026-10-26T12:15:24.312128+00:00",
   "e2467166d4a805f8": "2026-10-26T12:20:24.249081+00:00",
   "670cb53d69bfd981": "2026-10-26T12:30:24.316387+00:00",
-  "8012e0504d99fdbd": "2026-10-26T12:35:24.169732+00:00"
+  "8012e0504d99fdbd": "2026-10-26T12:35:24.169732+00:00",
+  "6cb94c1e1d532f16": "2026-10-26T12:40:24.257552+00:00",
+  "f54a6d757e399d9d": "2026-10-26T12:45:24.163303+00:00",
+  "c9493fdb312d63af": "2026-10-26T12:45:24.163303+00:00",
+  "33e49e1c2fe25712": "2026-10-26T12:45:24.163303+00:00",
+  "8b606ddfe079283e": "2026-10-26T12:45:24.163303+00:00",
+  "5365980c0c83e9b3": "2026-10-26T12:45:24.163303+00:00",
+  "e31384bb79df2440": "2026-10-26T12:45:24.163303+00:00"
  },
  "recent": [
-  {
-   "title": "Заявление Председателя Банка России Эльвиры Набиуллиной по итогам заседания Совета директоров Банка России 23 октября 2026 года",
-   "link": "https://www.cbr.ru/press/event/?id=32929",
-   "sources": [
-    "Bank of Russia"
-   ],
-   "score": 8,
-   "ts": "2026-10-23T12:36:55.681447+00:00",
-   "title_en": "Statement of the Chairman of the Bank of Russia Elvira Nabiullina on the results of the meeting of the Board of Directors of the Bank of Russia on October 23, 20",
-   "tags": [
-    "BankOfRussia",
-    "Russia"
-   ]
-  },
-  {
-   "title": "Canada Retail Sales Rebound Set to Continue in September",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-23/canada-retail-sales-rebound-set-to-continue-in-september",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T12:36:55.681447+00:00",
-   "title_ru": "Розничные продажи в Канаде возобновятся в сентябре",
-   "lead": "Canadian retail spending is on track to continue growing in September, although at a slower pace than in August.",
-   "lead_ru": "Канадские розничные расходы продолжат расти в сентябре, хотя и более медленными темпами, чем в августе."
-  },
-  {
-   "title": "Blackstone Bet on Chips Drove a Debt Boom That’s Upending Credit",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPZHFXZTdkTnBxc0t4ZG5oMnVYVEpicDJLQUYxVEMxNXJ3bjFhWEhXcTR1R2Zsa3lIUkQ3R2JUNEZwTGg5cF9ZZERhR0V3MmxubFRCTmdlWmUwSGZKV19vbkY2bzg4b2EtaW5RalJTcm1IYWR6TklwdE9OMkVXVDBuRE9SQ2RMeC1kZG5QMldmUTdUTjdkckZneU1VNmJWY2l2R256OHFjWTFuN0NoV3dEcDlva2NyQQ?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T12:36:55.681447+00:00",
-   "title_ru": "Ставка Blackstone на фишки привела к долговому буму, который перевернул кредиты"
-  },
-  {
-   "title": "Набиуллина назвала сроки снижения инфляции до 4%",
-   "link": "https://www.rbc.ru/rbcfreenews/6adb524b4e327f98dfd615e7",
-   "sources": [
-    "RBC"
-   ],
-   "score": 6,
-   "ts": "2026-10-23T12:41:55.682510+00:00",
-   "title_en": "Nabiullina called the timing of reducing inflation to 4%",
-   "lead": "Текущие темпы роста цен вернутся к целевым 4% в течение первого полугодия 2027 года, заявила председатель Банка России Эльвира Набиуллина на пресс-конференции по итогам заседания совета директоров регулятора.",
-   "lead_en": "The current rate of price growth will return to the target 4% during the first half of 2027, Bank of Russia Governor Elvira Nabiullina said at a press conference following a meeting of the regulator's board of directors.",
-   "tags": [
-    "BankOfRussia",
-    "inflation",
-    "Russia"
-   ]
-  },
   {
    "title": "Глава ЦБ заявила об отсутствии рисков для финансовой стабильности России",
    "link": "https://www.rbc.ru/economics/23/10/2026/6adb56cfbf6191353b9a599a",
@@ -4788,6 +4738,50 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Банк России рекомендует банкам контролировать источники денежных средств при внесении клиентами крупных сумм наличных",
+   "link": "https://www.cbr.ru/press/event/?id=32933",
+   "sources": [
+    "Bank of Russia"
+   ],
+   "score": 5,
+   "ts": "2026-10-26T12:45:24.163303+00:00",
+   "title_en": "The Bank of Russia recommends that banks control the sources of funds when customers deposit large amounts of cash",
+   "tags": [
+    "BankOfRussia",
+    "Russia"
+   ]
+  },
+  {
+   "title": "US Stock Futures Gain Ahead of Big Tech Earnings, Fed Decision",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-26/us-stock-futures-gain-ahead-of-big-tech-earnings-fed-decision",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-26T12:45:24.163303+00:00",
+   "title_ru": "Фьючерсы на акции США опережают крупные технологические доходы, решение ФРС",
+   "lead": "US stock futures were slightly higher on Monday as investors await key big tech earnings this week and the Federal Reserve’s next decision on Wednesday.",
+   "lead_ru": "Фьючерсы на акции США немного выросли в понедельник, так как инвесторы ожидают ключевых крупных технологических доходов на этой неделе и следующего решения Федеральной резервной системы в среду.",
+   "tags": [
+    "Fed"
+   ]
+  },
+  {
+   "title": "Turkey Snubs Smaller Investors After Scandal Sparks Liquidations",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-26/turkey-raises-qualified-investor-bar-fivefold-after-fund-rout",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T12:45:24.163303+00:00",
+   "title_ru": "Турция пренебрегает мелкими инвесторами после скандала, вызвавшего ликвидацию",
+   "lead": "Turkey’s market regulator raised the threshold for qualified investors fivefold in the wake of a fund rout that rocked capital markets and erased billions of dollars of equity value.",
+   "lead_ru": "Рыночный регулятор Турции поднял порог для квалифицированных инвесторов в пять раз после разгрома фонда, который потряс рынки капитала и стер миллиарды долларов стоимости акций.",
+   "tags": [
+    "dollar"
+   ]
   }
  ],
  "last_digest": "2026-10-25",
@@ -7192,6 +7186,22 @@
     "date": "2026-10-23",
     "disclosed": "2026-10-26",
     "link": "https://www.sec.gov/Archives/edgar/data/2022050/000202205026000011/0002022050-26-000011-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "cb2c2c48cae24c5b",
+    "ticker": "BPRE",
+    "company": "Bluerock Private Real Estate Fund",
+    "who": "Ramin Kamfar",
+    "role": "Director",
+    "type": "buy",
+    "value": 2126091,
+    "shares": 170320,
+    "price": 12.48,
+    "plan": false,
+    "date": "2026-10-23",
+    "disclosed": "2026-10-26",
+    "link": "https://www.sec.gov/Archives/edgar/data/1551047/000139834426018736/0001398344-26-018736-index.htm"
    },
    {
     "src": "sec",
@@ -11144,22 +11154,6 @@
     "date": "2026-10-15",
     "disclosed": "2026-10-16",
     "link": "https://www.sec.gov/Archives/edgar/data/1984186/000198418626000010/0001984186-26-000010-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "a5b14eba35154ebb",
-    "ticker": "MDT",
-    "company": "Medtronic plc",
-    "who": "Geoffrey Martha",
-    "role": "CEO",
-    "type": "sell",
-    "value": 4750000,
-    "shares": 50000,
-    "price": 95.0,
-    "plan": true,
-    "date": "2026-10-15",
-    "disclosed": "2026-10-16",
-    "link": "https://www.sec.gov/Archives/edgar/data/1613103/000156040926000011/0001560409-26-000011-index.htm"
    }
   ],
   "docs": {
@@ -11192,10 +11186,11 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-26T11:35:24.325038+00:00",
+  "checked": "2026-10-26T12:40:24.257552+00:00",
   "sec_seen": [
    "0001493152-26-048422",
    "0002082930-26-000018",
+   "0001398344-26-018736",
    "0001628280-26-067128",
    "0001990106-26-000026",
    "0001976408-26-000900",
