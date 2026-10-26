@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "cae4132b0b921271": "2026-10-23T14:16:55.714462+00:00",
-  "48ca05cbe342530b": "2026-10-23T14:16:55.714462+00:00",
   "22cc8bfcf637d04c": "2026-10-23T14:26:55.700630+00:00",
   "12566dde4f8009e8": "2026-10-23T14:31:55.753900+00:00",
   "1b295f2d0bfb383c": "2026-10-23T14:36:55.863319+00:00",
@@ -597,19 +595,10 @@
   "d8f402c574c01cfd": "2026-10-26T13:40:24.138117+00:00",
   "4598e290fbc17fa1": "2026-10-26T13:40:24.138117+00:00",
   "c01b6554dcc79fe1": "2026-10-26T13:45:24.292760+00:00",
-  "fcfb3b74c7b92c52": "2026-10-26T13:45:24.292760+00:00"
+  "fcfb3b74c7b92c52": "2026-10-26T13:45:24.292760+00:00",
+  "2eb54c153271dd49": "2026-10-26T14:25:24.256601+00:00"
  },
  "recent": [
-  {
-   "title": "Infosys cuts forecast as AI spending shift deepens North America slowdown",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQNWdWWnJFN3I3MnZQQzBBRUFVMnBTbkduVklRcFVPbWZVTGFxM2NRbkRtRHlXa2JBdlpnQWMxSkh1WU91clBJQnpqYXItXzAtcTJ5NlFETjRETndtM2VyRGxkaElVREFxRjRfeUdkMzlxR3hYdlZSX1R1LXNRX3dxTUlyYzJNYUp1NGpfOU5mNUQ0YWZ3bE1TOVAxaUk?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T14:16:55.714462+00:00",
-   "title_ru": "Infosys сокращает прогноз, поскольку изменения в расходах на ИИ усугубляют замедление в Северной Америке"
-  },
   {
    "title": "Surging economy gets off to a good start in the fourth quarter — but there’s one big problem",
    "link": "https://www.marketwatch.com/story/surging-economy-gets-off-to-a-good-start-in-the-fourth-quarter-but-theres-one-big-problem-5657f399?mod=mw_rss_topstories",
@@ -4789,6 +4778,20 @@
    "score": 3,
    "ts": "2026-10-26T13:45:24.292760+00:00",
    "title_ru": "Verizon повысил прогноз на 2026 год после резкого роста числа телефонных клиентов"
+  },
+  {
+   "title": "Asia Pays Top Dollar For Canadian Oil Amid Slump in US Prices",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMmJEa3dfZmpEQ01INTFaRGpmLS00bVZ5NHZ0RTBucWZadGVFbWlJVUE2YmRNUm5nQ082SkZaUllQSUpzUDF4OUFnUXhuV1RJRHl4QXhYZW5jb3NrRUQzMEpFbFF4T2o0WFVkc2Y0eEoyQXFZZlVLeXNlc0h3TlJyWVUxSjhxVm05MG9xUXQtakVVMW5PcHZLNkhrWjRmeWVnUHlnQlJnMmdhNWUyU01NYjVR?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-26T14:25:24.256601+00:00",
+   "title_ru": "Азия платит самый высокий доллар за канадскую нефть на фоне падения цен в США",
+   "tags": [
+    "oil",
+    "dollar"
+   ]
   }
  ],
  "last_digest": "2026-10-25",
@@ -11195,7 +11198,7 @@
   },
   "checked": "2026-10-26T13:45:24.292760+00:00",
   "sec_seen": [
-   "0001398344-26-018736",
+   "0000821026-26-000138",
    "0001976408-26-000901",
    "0001976408-26-000902",
    "0000821026-26-000136",
