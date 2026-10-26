@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "ca258e53b80791a9": "2026-10-23T06:35:51.570237+00:00",
   "ccb51a4535bcddd5": "2026-10-23T06:41:24.919424+00:00",
   "1c3b9bf93effac38": "2026-10-23T06:46:24.927545+00:00",
   "f0e87787bce48195": "2026-10-23T06:46:24.927545+00:00",
@@ -605,24 +604,10 @@
   "e090feee3fa576ae": "2026-10-26T06:34:41.374642+00:00",
   "a23f59bdb57e7e77": "2026-10-26T06:34:41.374642+00:00",
   "d96aee84642dfe4b": "2026-10-26T06:34:41.374642+00:00",
-  "074ffda8466368a2": "2026-10-26T06:34:41.374642+00:00"
+  "074ffda8466368a2": "2026-10-26T06:34:41.374642+00:00",
+  "e5454e6723ec5ea1": "2026-10-26T06:39:41.375406+00:00"
  },
  "recent": [
-  {
-   "title": "Hedge Funds Log Widest Daily Drawdown Since Covid in Stock Rout",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-23/hedge-funds-log-widest-daily-drawdown-since-covid-in-stock-rout",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T06:35:51.570237+00:00",
-   "title_ru": "Журнал хедж-фондов Самая широкая ежедневная просадка со времен Covid на бирже",
-   "lead": "Global hedge funds suffered one of their broadest declines since the Covid pandemic following the stock market selloff on Thursday, according to Goldman Sachs Group Inc.’s prime brokerage desk.",
-   "lead_ru": "Глобальные хедж-фонды пережили одно из самых масштабных падений со времен пандемии Covid после распродажи на фондовом рынке в четверг, по данным главного брокерского отдела Goldman Sachs Group Inc.",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Azour: War Impact on Energy Markets Under Control (Video)",
    "link": "https://www.bloomberg.com/news/videos/2026-10-23/azour-war-impact-on-energy-markets-under-control-video",
@@ -5189,6 +5174,18 @@
     "ECB",
     "rates"
    ]
+  },
+  {
+   "title": "World Bank Flags Somalia Low Tax Revenue as Key Fiscal Challenge",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-26/world-bank-somalia-low-tax-revenue-key-fiscal-challenge",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T06:39:41.375406+00:00",
+   "title_ru": "Всемирный банк назвал низкие налоговые поступления в Сомали ключевой фискальной проблемой",
+   "lead": "Domestic revenue mobilization remains Somalia’s biggest fiscal challenge, limiting the ability of the east Africa nation’s government to finance development priorities and public services.",
+   "lead_ru": "Мобилизация внутренних доходов остается самой большой фискальной проблемой Сомали, ограничивая способность правительства восточноафриканской страны финансировать приоритеты развития и государственные услуги."
   }
  ],
  "last_digest": "2026-10-25",
