@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "763d11ee6670936d": "2026-10-23T11:01:24.887071+00:00",
-  "371c3e3dd34a1e08": "2026-10-23T11:01:24.887071+00:00",
   "4753145adad3db87": "2026-10-23T11:06:24.957669+00:00",
   "d4a6b4dca34ba7d7": "2026-10-23T11:06:24.957669+00:00",
   "4fabf130300ba1c1": "2026-10-23T11:06:24.957669+00:00",
@@ -612,7 +610,10 @@
   "14d17d9d866d0a4e": "2026-10-26T11:00:24.170523+00:00",
   "2ead218674e84a38": "2026-10-26T11:00:24.170523+00:00",
   "47b8fc01e58a00c8": "2026-10-26T11:00:24.170523+00:00",
-  "18c3f6620a9fe4f9": "2026-10-26T11:00:24.170523+00:00"
+  "18c3f6620a9fe4f9": "2026-10-26T11:00:24.170523+00:00",
+  "2f87a6e098959427": "2026-10-26T11:05:24.264928+00:00",
+  "9676140a22e5d836": "2026-10-26T11:05:24.264928+00:00",
+  "a6807bfb914a624f": "2026-10-26T11:05:24.264928+00:00"
  },
  "recent": [
   {
@@ -5007,6 +5008,37 @@
    ],
    "score": 2,
    "ts": "2026-10-26T11:00:24.170523+00:00"
+  },
+  {
+   "title": "Pakistan Hikes Interest Rate To Curb Inflation Risks",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-26/pakistan-hikes-interest-rate-to-curb-inflation-risks",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 8,
+   "ts": "2026-10-26T11:05:24.264928+00:00",
+   "title_ru": "Пакистан повышает процентную ставку, чтобы обуздать инфляционные риски",
+   "lead": "Pakistan raised its benchmark interest rate on Monday as policymakers prioritized curbing inflation stoked by the Middle East conflict over supporting a slowing economy.",
+   "lead_ru": "Пакистан повысил базовую процентную ставку в понедельник, поскольку политики отдали приоритет сдерживанию инфляции, вызванной конфликтом на Ближнем Востоке, а не поддержке замедляющейся экономики.",
+   "tags": [
+    "rates",
+    "inflation"
+   ]
+  },
+  {
+   "title": "‘We don’t have inflation’? Five charts show the US economic reality of Trump’s second term so far",
+   "link": "https://www.theguardian.com/us-news/2026/oct/26/trump-second-term-economy-charts",
+   "sources": [
+    "The Guardian"
+   ],
+   "score": 5,
+   "ts": "2026-10-26T11:05:24.264928+00:00",
+   "title_ru": "«У нас нет инфляции»? Пять диаграмм показывают экономическую реальность США во время второго срока Трампа",
+   "lead": "As the US midterm elections approach, we take a look at data to see a true picture of the US economy under Trump With the midterm elections fast approaching, many Americans have the economy on their minds.",
+   "lead_ru": "По мере приближения промежуточных выборов в США мы анализируем данные, чтобы увидеть истинную картину экономики США при Трампе. Поскольку промежуточные выборы быстро приближаются, многие американцы думают об экономике.",
+   "tags": [
+    "inflation"
+   ]
   }
  ],
  "last_digest": "2026-10-25",
