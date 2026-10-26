@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e53a88575e3f4f15": "2026-10-23T00:15:20.326960+00:00",
-  "e126388b082457fa": "2026-10-23T00:20:20.302499+00:00",
-  "a6ab6849baaa8c2a": "2026-10-23T00:20:20.302499+00:00",
-  "f298f08f1831f189": "2026-10-23T00:20:20.302499+00:00",
-  "897c999bac94ae49": "2026-10-23T00:20:20.302499+00:00",
   "ec02ea4f0fabec18": "2026-10-23T00:25:20.355683+00:00",
   "767385bbe439ec84": "2026-10-23T00:30:20.397438+00:00",
   "e8521c68ac29cdd3": "2026-10-23T00:30:20.397438+00:00",
@@ -597,78 +592,11 @@
   "a27a72704eea99b3": "2026-10-25T23:58:52.476177+00:00",
   "99870d45ec7c3d18": "2026-10-25T23:58:52.476177+00:00",
   "1e6c6dfa419ebacc": "2026-10-25T23:58:52.476177+00:00",
-  "37772872aaa95261": "2026-10-26T00:03:52.451513+00:00"
+  "37772872aaa95261": "2026-10-26T00:03:52.451513+00:00",
+  "33619b0e9322e2c3": "2026-10-26T00:18:52.529389+00:00",
+  "5bf7f3e3ccb22610": "2026-10-26T00:23:52.462882+00:00"
  },
  "recent": [
-  {
-   "title": "CodeCoin Launches the World's First \"Licensed Stablecoin + Quantum Encryption\" Visa Consumer Card During the IMF Annual Meetings",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPTkFBRHFHZ3ZjRUp2SWpoUkxnZmx2bmNjaXp0MDlxaFJPU3dvNkVsWEl4MDdaQlJyVDdtd1dIa3RyRVJCaEFSdUJCRmtseDdfSzM2Wk95QkpCemE3QkpVSDcwUzFvVS1EUTFSY2JrbzM2YmhDMWZ1bHVSaU5wdDZTSXU3aW1ZUGN2QWRqTXFIWkRFM0lwWnZOVVgxWjE5LUJ5LVk1WA?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-23T00:15:20.326960+00:00",
-   "title_ru": "CodeCoin запускает первую в мире потребительскую карту Visa «Лицензионная стабильная монета + квантовое шифрование» во время ежегодных собраний МВФ"
-  },
-  {
-   "title": "Korean Stocks Drop on Chip Losses After US Selloff, Oil Gains",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-23/korean-stocks-drop-on-chip-losses-after-us-selloff-oil-gains",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 8,
-   "ts": "2026-10-23T00:20:20.302499+00:00",
-   "title_ru": "Корейские акции падают из-за потерь после распродажи в США и роста нефти",
-   "lead": "South Korean stocks retreated as heavyweight chipmakers declined, tracking an overnight selloff in US technology shares amid rising oil prices.",
-   "lead_ru": "Южнокорейские акции упали на фоне падения цен производителей микросхем вслед за ночной распродажей акций технологических компаний США на фоне роста цен на нефть.",
-   "tags": [
-    "oil",
-    "markets"
-   ]
-  },
-  {
-   "title": "Nasdaq Drops as Doubts Grow Over AI Spending",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-23/nasdaq-drops-as-doubts-grow-over-ai-spending-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T00:20:20.302499+00:00",
-   "title_ru": "Nasdaq падает, поскольку растут сомнения по поводу расходов на ИИ",
-   "lead": "The Nasdaq 100 slid as doubts mounted over whether hyperscalers' massive AI investments will yield adequate returns. Bloomberg's Sunny Bangia explains how cash-flow concerns are fueling market movements. (Source: Bloomberg)",
-   "lead_ru": "Индекс Nasdaq 100 упал на фоне растущих сомнений в том, принесут ли масштабные инвестиции в искусственный интеллект гиперскейлеров адекватную прибыль. Санни Бангиа из Bloomberg объясняет, как проблемы с денежными потоками способствуют движениям рынка. (Источник: Блумберг)",
-   "tags": [
-    "bonds",
-    "markets"
-   ]
-  },
-  {
-   "title": "Gold Holds Near Three-Month Low as AI Jitters Fuel Volatility",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-23/gold-holds-near-three-month-low-as-ai-jitters-fuel-volatility",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T00:20:20.302499+00:00",
-   "title_ru": "Золото держится вблизи трехмесячного минимума, поскольку колебания искусственного интеллекта усиливают волатильность",
-   "lead": "Gold steadied near its lowest close in more than three months as investors sold the precious metal in a cross-market stock rout.",
-   "lead_ru": "Золото стабилизировалось вблизи самого низкого уровня закрытия более чем за три месяца, поскольку инвесторы продали драгоценный металл в результате краха акций на межбиржевых рынках.",
-   "tags": [
-    "gold"
-   ]
-  },
-  {
-   "title": "‘Relentless’ cost of living pressures behind collapse in UK consumer confidence",
-   "link": "https://www.ft.com/content/74bb3555-6f29-4ff9-bcaf-6cd20a9a3b1b?syn-25a6b1a6=1",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T00:20:20.302499+00:00",
-   "title_ru": "«Неумолимое» давление на стоимость жизни привело к падению потребительского доверия в Великобритании",
-   "lead": "Index measuring how people view their finances and economic prospects suffers largest monthly drop since onset of Covid in 2020",
-   "lead_ru": "Индекс, измеряющий то, как люди оценивают свои финансы и экономические перспективы, претерпел самое большое ежемесячное падение с момента появления Covid в 2020 году."
-  },
   {
    "title": "October 2026 Regional Economic Outlook, Asia and Pacific: Resilience Amid Uncertainty: Can it be Sustained?",
    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQTHJiM1pRNnFMbDVoN1J1dHd0VkNSUzBxYVo4OHd5Uzl2Y2lNbVZmV0xJdUJpTjJyNDFKcWE4VkhiQmdfbjJOZnNLekFIdXA5QXo2XzRSUWl1T1Z3WmU3dWJ5RTNTU3ZrMkFkQ253TmRYeTdUaERZVW5QMDI1bUJUc3NTUQ?oc=5",
@@ -5442,6 +5370,19 @@
    "tags": [
     "markets",
     "tariffs"
+   ]
+  },
+  {
+   "title": "Oil prices down almost $1 in early trading",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQb2J2QlNheno1OW9FdmN3RTJWVHF1RXdLX0VQSGlKSkZlZEtNTnFxU3FUd1Zab1FPME1felpOVl9oM1oyNXc0T2xkdDZhc0JfUVlSTFU4Vm9aYWRrd1BhQmw1QThZRDZHbEZZR3Y5UlhNaDlWWm8tbjU2bjVtaFRVM0VMcml2OXY4TUtxNXRZU2c3c0lC?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-26T00:23:52.462882+00:00",
+   "title_ru": "Цены на нефть упали почти на $ 1 в начале торгов",
+   "tags": [
+    "oil"
    ]
   }
  ],
