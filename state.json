@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "33cfcd9e366846ec": "2026-10-23T05:25:51.843996+00:00",
-  "f030cfac65781eea": "2026-10-23T05:25:51.843996+00:00",
-  "1e494241952e7f25": "2026-10-23T05:30:51.697727+00:00",
   "bc3263a883a0dac9": "2026-10-23T05:40:51.729300+00:00",
   "adb8bccc47a53475": "2026-10-23T05:55:51.536053+00:00",
   "64a643598f38fca1": "2026-10-23T06:00:51.602535+00:00",
@@ -596,47 +593,12 @@
   "b8f0382643df6e53": "2026-10-26T05:09:41.375737+00:00",
   "ad3a44dc456b4a43": "2026-10-26T05:14:41.362286+00:00",
   "f9d0284da1f30563": "2026-10-26T05:14:41.362286+00:00",
-  "5c89bf39e886882a": "2026-10-26T05:24:41.381142+00:00"
+  "5c89bf39e886882a": "2026-10-26T05:24:41.381142+00:00",
+  "10f00f1d4faa516f": "2026-10-26T05:29:41.366239+00:00",
+  "3bd339c1558979c1": "2026-10-26T05:34:41.430104+00:00",
+  "5210fe80699d1974": "2026-10-26T05:34:41.430104+00:00"
  },
  "recent": [
-  {
-   "title": "Tech Selloff Deepens, SK Hynix Scraps Solidigm US IPO Plans",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-23/the-asia-trade-10-23-2026-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-23T05:25:51.843996+00:00",
-   "title_ru": "Распродажа технологий углубляется, SK Hynix отказывается от планов IPO Solidigm в США",
-   "lead": "\"Bloomberg: The Asia Trade\" brings you everything you need to know to get ahead as the trading day begins in Asia.",
-   "lead_ru": "«Bloomberg: The Asia Trade» дает вам все, что вам нужно знать, чтобы продвинуться вперед, поскольку торговый день начинается в Азии.",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "Treasuries’ Link to AI Shows Sharp Shift as Haven Trade Returns",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOV0dULXFaUm9nREVVNEJjUFlvODVTbkwyV21vZXJ1eVJveDc4cEd4SG5lWEZsRjNxVWNkZWlvRFJPMi10cXhjcldVUkxGd2wtMWtQbzVpYXJLR29taWlmQThpZE5ObWhFSXFpX0VYZlJMZFQ1WFdKYnF4cWhwUDE3b2NueThFenpCWEJSeDg4UzNfRDZleS1qcmpxY2sxWjhwV3ZnUjZqLTRBT2k4bDJoOVc4Zw?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-23T05:25:51.843996+00:00",
-   "title_ru": "Связь казначейских облигаций с ИИ показывает резкий сдвиг по мере возврата к торговле в Haven",
-   "tags": [
-    "bonds"
-   ]
-  },
-  {
-   "title": "L'Oreal Q3 sales beat forecasts as consumers indulge in premium beauty",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZlRLSXJTajZJa0haam9Qb1UyRDJKbXVyalhKMlBwSXozWTlONFNXemZaaC1zZkpnQzdSWXVHcE1Yb194RkotaDAwSS1uWldqeE54elJCTzM0QnBFOVhpZ0NtbGNGWVlNN0RQM2ZaRGRMUmFpMTJkQWZjQk9vN2plQUhZY3ZDNS1wS1VWemNEdHlhVTVVZ2E4b3JqTThqVGlFUmFmcjdISHNBLUZhWEZzdVpOZw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T05:30:51.697727+00:00",
-   "title_ru": "Продажи L'Oreal в третьем квартале превзошли прогнозы, поскольку потребители наслаждаются премиальной красотой"
-  },
   {
    "title": "Europe’s Luxury Giants Trade at Lowest Valuations in a Decade",
    "link": "https://www.bloomberg.com/news/articles/2026-10-23/europe-luxury-lvmh-hermes-trade-at-lowest-valuations-decade",
@@ -5235,6 +5197,18 @@
    "score": 3,
    "ts": "2026-10-26T05:14:41.362286+00:00",
    "title_ru": "Инсайт: Вниз по Темзе провал строительства сдерживает рост Великобритании"
+  },
+  {
+   "title": "Can Pakistan’s military government make the economy grow?",
+   "link": "https://www.ft.com/content/14242b5e-0975-4c7d-92fd-e7c04e87238a?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T05:34:41.430104+00:00",
+   "title_ru": "Может ли военное правительство Пакистана обеспечить рост экономики?",
+   "lead": "Islamabad has stopped tailspin but faces deeper reforms to break boom-and-bust cycle and lure investment",
+   "lead_ru": "Исламабад остановил штопор, но сталкивается с более глубокими реформами, чтобы разорвать цикл бумов и спадов и привлечь инвестиции"
   }
  ],
  "last_digest": "2026-10-25",
