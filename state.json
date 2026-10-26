@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "60a34e8dc5fd301b": "2026-10-23T09:56:24.916601+00:00",
   "36dec35d1cf97351": "2026-10-23T10:01:24.915988+00:00",
   "0fa74fd2d519c1c5": "2026-10-23T10:06:24.930997+00:00",
   "7593f510199421e4": "2026-10-23T10:06:24.930997+00:00",
@@ -605,22 +604,12 @@
   "36c085a335f40594": "2026-10-26T09:45:24.205670+00:00",
   "2f19c17d001f232d": "2026-10-26T09:45:24.205670+00:00",
   "7c0f82c4ce0f384a": "2026-10-26T09:55:24.222816+00:00",
-  "f92f03499d889ee9": "2026-10-26T09:55:24.222816+00:00"
+  "f92f03499d889ee9": "2026-10-26T09:55:24.222816+00:00",
+  "dfaa07e0de0d8db4": "2026-10-26T10:00:24.300711+00:00",
+  "b746dbb879f38700": "2026-10-26T10:00:24.300711+00:00",
+  "476bfe4b5fda7471": "2026-10-26T10:00:24.300711+00:00"
  },
  "recent": [
-  {
-   "title": "Anthropic’s Pitch to Investors Starts With Taking Their Jobs",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQN1ZHY0Z3dkdON2dSODRJUFZHMHVNcHFZVjgtRUZ3YldQemdvSmcxMHpfVWhWUFNIamZhd1JySF9WYVIzZFJOVjJuZTY4dGFaNUZLVTVkdEdFSnk4NmFiQTUzY3JiQ2Q5SWxnbEdIenBwa2ZrRHU0RVhESFh0OG10dkthaExqZ0p0QmFkWVhmQ1pFdjBKYzg0cXhWQ1A4b090UHJwd2pJLVdRWGpCSEE?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-23T09:56:24.916601+00:00",
-   "title_ru": "Предложение Anthropic инвесторам начинается с их работы",
-   "tags": [
-    "jobs"
-   ]
-  },
   {
    "title": "UK gas, power grids ready for winter despite global turmoil, operators say",
    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPcko0Q21WeGM0Sms0aUI4VWVaVm1PNllSc05wM2VQLUFXdmhLeEwtOUFjenQ5VXdzYXU1S2FZdFlKeS0weFN0MmMwc0FodlFvN3k0c2VyUTBqczEtdTZ5YnNwSjBadnVfdmFhOGs0MFk1RUJoWmZOd2dzVDJvdHAyTGlfY3gzUFhuYlpBQ29WTnk3VlY3dzdSb296NFp5ckhNSmdiVVFKZDBLUXQ1eHd3R3JZaXFWR0FKVEtSYg?oc=5",
@@ -4948,6 +4937,43 @@
    ],
    "score": 1,
    "ts": "2026-10-26T09:55:24.222816+00:00"
+  },
+  {
+   "title": "Yuan Heng Gas Holdings Ltd (0332.HK) | Stock Price & Latest News",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1IaVJkQ3FNajZLbGtIOGZaekk4eW9iMFFwMW5rakl1ZXZGQUtIQ0tILWRTWG5SUV9ad2RwcmxfMFFUT1VnT0tlY0l0bVgzTlIxLUtyU09tNUczX1ZGWUxhcHY4T19KT1k2dzhEcA?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-26T10:00:24.300711+00:00",
+   "title_ru": "Юань Хэн Газ Холдингс Лтд (0332.HK) | Цена акций и последние новости",
+   "tags": [
+    "China"
+   ]
+  },
+  {
+   "title": "Chinese Conglomerate Huafa Seeks to Extend Some Debt Payments",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-26/chinese-conglomerate-huafa-seeks-to-extend-some-debt-payments",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T10:00:24.300711+00:00",
+   "title_ru": "Китайский конгломерат Huafa пытается продлить некоторые выплаты по долгам",
+   "lead": "Zhuhai Huafa Group Co., one of China’s largest local government-owned conglomerates, is in talks with creditors of some debts to push back payments, people familiar with the matter said.",
+   "lead_ru": "Zhuhai Huafa Group Co., один из крупнейших китайских конгломератов, принадлежащих местному правительству, ведет переговоры с кредиторами по поводу некоторых долгов с целью отсрочки платежей, сообщили люди, знакомые с ситуацией.",
+   "tags": [
+    "China"
+   ]
+  },
+  {
+   "title": "Cheesecake Factory was just the subject of unflattering headlines. It’s actually one of the hottest stocks around.",
+   "link": "https://www.marketwatch.com/story/cheesecake-factory-was-just-the-subject-of-unflattering-headlines-its-actually-one-of-the-hottest-stocks-around-8435cc63?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-26T10:00:24.300711+00:00"
   }
  ],
  "last_digest": "2026-10-25",
@@ -11365,7 +11391,6 @@
    "0001585521-26-000155",
    "0001022079-26-000109",
    "0000923120-26-000030",
-   "0001493152-26-048317",
    "0000923120-26-000026",
    "0001022079-26-000112",
    "0002160363-26-000004",
@@ -11392,6 +11417,7 @@
    "0001493152-26-048309",
    "0001493152-26-048310",
    "0000923120-26-000027",
+   "0000923120-26-000025",
    "0001493152-26-048311",
    "0001193125-26-430730",
    "0000950103-26-016120",
@@ -11400,7 +11426,7 @@
    "0001022079-26-000116",
    "0001193125-26-430729",
    "0001493152-26-048315",
-   "0000923120-26-000025"
+   "0001493152-26-048317"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
