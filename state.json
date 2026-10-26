@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "d8f1175c2d5e64b1": "2026-10-23T06:15:51.532052+00:00",
-  "348141846e1a4df6": "2026-10-23T06:15:51.532052+00:00",
-  "43fb1e23e711c58c": "2026-10-23T06:20:51.511841+00:00",
-  "5a4ba0144133b82e": "2026-10-23T06:20:51.511841+00:00",
-  "9527bca1466c883e": "2026-10-23T06:20:51.511841+00:00",
   "6f7f8f98c7ba8194": "2026-10-23T06:25:51.525322+00:00",
   "56fe187ad6c1acf0": "2026-10-23T06:30:51.521337+00:00",
   "ca258e53b80791a9": "2026-10-23T06:35:51.570237+00:00",
@@ -603,64 +598,13 @@
   "c5043c6937033d89": "2026-10-26T06:04:41.399007+00:00",
   "edc3aefa5ae4ff4c": "2026-10-26T06:09:41.363990+00:00",
   "afc668dcefa68458": "2026-10-26T06:09:41.363990+00:00",
-  "f28ab6312ec7c492": "2026-10-26T06:14:41.371529+00:00"
+  "f28ab6312ec7c492": "2026-10-26T06:14:41.371529+00:00",
+  "c896893b147c97c7": "2026-10-26T06:19:41.367638+00:00",
+  "16fb9373a0870f63": "2026-10-26T06:19:41.367638+00:00",
+  "c212cfdcb0409c20": "2026-10-26T06:19:41.367638+00:00",
+  "e31688edbe4528cf": "2026-10-26T06:24:41.380317+00:00"
  },
  "recent": [
-  {
-   "title": "UK Retail Sales Fall 0.4% in September, More Than Forecast",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-23/uk-retail-sales-fall-0-4-in-september-more-than-forecast",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-23T06:15:51.532052+00:00",
-   "title_ru": "Розничные продажи в Великобритании упали на 0,4% в сентябре, больше, чем прогнозировалось",
-   "lead": "UK retail sales fell in September as shoppers bought less food and above-average temperatures hit demand for autumn clothing.",
-   "lead_ru": "Розничные продажи в Великобритании упали в сентябре, поскольку покупатели покупали меньше продуктов питания, а температура выше средней повлияла на спрос на осеннюю одежду."
-  },
-  {
-   "title": "Gold heads for steep weekly loss as oil prices fuel Fed rate concerns",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOWE1LcUgzRWRwVDZmX3FEaWszVHF0cFQ1ekt6M1pyQ0lfc05PQm9DekdZcXprdm1vQk00SlNEZjEwQllCd1VwMUJySnIxcF9ZblFaRHFsV3BzSU52SlJSSi1TeWxoTmdYc1h6UHhPQTFQYU41ZEdQTFRNY3l0N1Q2bnRDV2x1MjlveGtxTk1oQWlGd3ExcUZEd2QzdF9TUkVKcXotUlIycUgtb1RrZjJ3?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 8,
-   "ts": "2026-10-23T06:20:51.511841+00:00",
-   "title_ru": "Золото ожидает резких еженедельных потерь, поскольку цены на нефть усиливают опасения по поводу ставки ФРС",
-   "tags": [
-    "Fed",
-    "oil",
-    "gold"
-   ]
-  },
-  {
-   "title": "Rathbones Warms to Longer UK Gilts on Bets for Budget Discipline",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-23/rathbones-warms-to-longer-uk-gilts-on-bets-for-budget-discipline",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T06:20:51.511841+00:00",
-   "title_ru": "Rathbones потеплели к более длинным британским поросенкам на ставках на бюджетную дисциплину",
-   "lead": "Rathbones Asset Management Ltd. is warming up to longer-maturity UK government debt on signs Chancellor of the Exchequer John Healey will avoid the confusion and market ructions that accompanied his predecessors’ budgets.",
-   "lead_ru": "Rathbones Asset Management Ltd. подогревает государственный долг Великобритании с более длительным сроком погашения по признакам того, что канцлер казначейства Джон Хили избежит путаницы и рыночных потрясений, которые сопровождали бюджеты его предшественников.",
-   "tags": [
-    "bonds"
-   ]
-  },
-  {
-   "title": "Flight to safety, rising oil put rupee’s recovery to the test",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQWXBDSi1qd2lxU2sxdVRIV3lWb3NuS1pkRFc0V2FYZnJESXNXcTBsYVhBYXd5ZGRUYTFJeXRzQzgxR2xRTjNaVjd6aG0zeklOTXJjRmloODdYM2pVV2ZqYmpEbFJuZEs0YlZpSGsyYWZlbXgxVFJCMWExSlJqMGVKOWJnUnN0NU1XYXFGQy1rV2xxUHlNY1RCMDVhbDN2dw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T06:20:51.511841+00:00",
-   "title_ru": "Бегство в безопасное место, рост цен на нефть стали испытанием для восстановления курса рупии",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "World Economic Outlook (October 2026) - Real GDP growth",
    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNNjIyQjM2WlJfMUxQZ3NvTTN3eWlEWkdkZWE4cUNUOGVVOVd1ekdLaFVTcTdrTlZWNkJNam04Wk5JY0ZhU1dla3VqcTdTVkJTbjA2cjl6REtjbXlDSllwQk1QOGE5M2poZk5OZWNKcWsxbjVBa1p2SUFDYlV4OGkzM19lU2lQVGVZMC1EekhLaGw?oc=5",
@@ -11642,7 +11586,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-26T05:19:41.421543+00:00",
+  "checked": "2026-10-26T06:24:41.380317+00:00",
   "sec_seen": [
    "0001778564-26-000191",
    "0000923120-26-000023",
