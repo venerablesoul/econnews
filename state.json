@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "4e8aacd8579c88e3": "2026-10-23T11:51:24.934892+00:00",
-  "725bed47dc931bee": "2026-10-23T11:56:24.932001+00:00",
-  "e5fb8de12e2040ad": "2026-10-23T11:56:24.932001+00:00",
-  "d5aae8d1dc8b7fbb": "2026-10-23T11:56:24.932001+00:00",
   "5580b3e486b709e4": "2026-10-23T12:01:24.965076+00:00",
   "e1f9fc13c592e5b3": "2026-10-23T12:02:00.724408+00:00",
   "da9adc90c1b9851c": "2026-10-23T12:02:00.724408+00:00",
@@ -608,64 +604,10 @@
   "c48e398364de0474": "2026-10-26T11:45:24.253298+00:00",
   "f3c8a6a3d2180949": "2026-10-26T11:50:24.143659+00:00",
   "a4e79cb965d3ab52": "2026-10-26T11:50:24.143659+00:00",
-  "97eccc64e7369667": "2026-10-26T11:50:24.143659+00:00"
+  "97eccc64e7369667": "2026-10-26T11:50:24.143659+00:00",
+  "e245e44c04a114e7": "2026-10-26T12:00:24.206042+00:00"
  },
  "recent": [
-  {
-   "title": "Bond dealers see small rise in UK debt issuance after budget, more in 2027",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPN1M3bTZwMUVmTW9kNHpENWNURGhTU0dEd1dybHN6VVVoV20wZjRVQ0Y0UlF1b0pLTEl0WmtySFVBTnpuSzFRNmVxMWZLWThVR0dESzQ5WGxkNkFwcldmRHZXZXU2S000dHVKMGl2czBpSy1jdmpWeG04cndqSktxMTNwTW9pSk5Cb0lXbzA5d1IySFBJLXMtcFRoM2YtZnJxcnNHQ1Rsbjg4ZEx6QVdVZU9R?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-23T11:51:24.934892+00:00",
-   "title_ru": "Дилеры облигаций видят небольшой рост выпуска облигаций Великобритании после бюджета, больше в 2027 году",
-   "tags": [
-    "bonds"
-   ]
-  },
-  {
-   "title": "Laura Cooper on AI Jitters, Oil and the Fed",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-23/laura-cooper-on-ai-jitters-oil-and-the-fed-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-23T11:56:24.932001+00:00",
-   "title_ru": "Лора Купер о дрожании ИИ, нефти и ФРС",
-   "lead": "Laura Cooper of Nuveen discusses AI jitters, rising oil prices and the outlook for Treasury yields and Fed policy. She also explains why investors are becoming more selective on AI and looking toward broader diversification.",
-   "lead_ru": "Лора Купер из Nuveen обсуждает дрожь ИИ, рост цен на нефть и перспективы доходности казначейских облигаций и политику ФРС. Она также объясняет, почему инвесторы становятся более избирательными в отношении ИИ и стремятся к более широкой диверсификации.",
-   "tags": [
-    "Fed",
-    "oil",
-    "bonds"
-   ]
-  },
-  {
-   "title": "Retail Traders Find a Back Door to 24/7 Oil Trading",
-   "link": "https://www.bloomberg.com/news/newsletters/2026-10-23/retail-traders-find-a-back-door-to-24-7-oil-trading",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T11:56:24.932001+00:00",
-   "title_ru": "Розничные трейдеры находят заднюю дверь для круглосуточной торговли нефтью",
-   "lead": "US investors are using VPNs to access offshore platforms, prompting warnings from regulated commodity firms over market risks.",
-   "lead_ru": "Американские инвесторы используют VPN для доступа к оффшорным платформам, вызывая предупреждения регулируемых сырьевых компаний о рыночных рисках.",
-   "tags": [
-    "oil"
-   ]
-  },
-  {
-   "title": "'Drill, baby, drill?' The UK goes for gas",
-   "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBmQ1B2WHhVS0hXRU9zQXJMVU9mVE5pUktZX0NwUWVNQ0VyQktCZDBtSVNLRmhpckthNDJ6RXdwbFJtbVdDSVFfNlQwUVJJcnB1RmlqeVE0UmZ6Qnhi?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T11:56:24.932001+00:00",
-   "title_ru": "«Дрель, детка, дрель?» Великобритания идет за газом"
-  },
   {
    "title": "Island inflation rate rises to 3%, figures show",
    "link": "https://www.bbc.co.uk/news/articles/cmz6581p1ee8o?at_medium=RSS&at_campaign=rss",
@@ -4965,6 +4907,20 @@
    "tags": [
     "oil",
     "Russia"
+   ]
+  },
+  {
+   "title": "TSX futures tick higher as gold climbs, oil falls on Iran hopes",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOaS1BdGdIUmFzU0ljYWNNT0tlZ1o4T1RXZmJCTGIxVXRVOS1zbFVTYXk0LTE2N0gzcFlTMDFzTGl5VlIxRkFwSU93em5ENzZDTkd5Mk1hV3E4cS1KU1lnV0pEX3diTTJDSk5tUlVraVAyMFpsXzY0d2hxMGIxaEJYMTVjUEFBT0lNQk5oN3FZSDhfUmNodmlVQ1hDMFE1SnlaajdJ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-26T12:00:24.206042+00:00",
+   "title_ru": "Фьючерсы на TSX растут, поскольку золото растет, нефть падает на надеждах Ирана",
+   "tags": [
+    "oil",
+    "gold"
    ]
   }
  ],
@@ -11372,6 +11328,7 @@
   },
   "checked": "2026-10-26T11:35:24.325038+00:00",
   "sec_seen": [
+   "0001976408-26-000900",
    "0001049521-26-000085",
    "0001628280-26-067128"
   ],
