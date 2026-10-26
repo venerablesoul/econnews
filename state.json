@@ -1,12 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "21cec0710208882f": "2026-10-23T12:56:55.768878+00:00",
-  "b40df6e71c634f18": "2026-10-23T12:56:55.768878+00:00",
-  "7f099d12c7489cba": "2026-10-23T12:56:55.768878+00:00",
-  "47425fee5e93b461": "2026-10-23T12:56:55.768878+00:00",
-  "fac8ad8eda000a27": "2026-10-23T13:01:55.665491+00:00",
-  "45fb7a104fd876c6": "2026-10-23T13:01:55.665491+00:00",
   "6b9147bd3d6ebad5": "2026-10-23T13:06:55.669422+00:00",
   "749be2200ebae302": "2026-10-23T13:06:55.669422+00:00",
   "b3f8ecebc55e9c28": "2026-10-23T13:11:55.742565+00:00",
@@ -601,72 +595,11 @@
   "563bc917a644bfba": "2026-10-26T12:50:24.668019+00:00",
   "ec60ce47623e6f64": "2026-10-26T12:55:24.154060+00:00",
   "1a2dd360643bb4a6": "2026-10-26T12:55:24.154060+00:00",
-  "3e3da6601574756f": "2026-10-26T12:55:24.154060+00:00"
+  "3e3da6601574756f": "2026-10-26T12:55:24.154060+00:00",
+  "99e519f70b17cc32": "2026-10-26T13:05:24.188124+00:00",
+  "517abfe494597f89": "2026-10-26T13:05:24.188124+00:00"
  },
  "recent": [
-  {
-   "title": "Wall St Week Ahead Earnings flood, Fed meeting pose pivotal tests for rickety AI market rally",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPR3FjeUJFd2Z6ZFBxOEFlLUx4anZlN1BqeFkxQ1pFcTdXTENYc0tMdW9RbjJ1Vk91Y2tmSXVoRDFCTmZoQ2cxN3BaSlFfTXplZUNZTFIzVmR3OTVmUVYzWnBXVkxRNXAtOEpBSUpIVjlBMnJ6cVViYnFSSHZoaC1CbkR5TnBzZndWNEo5aFlkWTVKY0hSYzRuOTlzUjYwcGlrcFJKQXhlbmFOMHNWLTRiRHZaM21fWEF1SDl1Mg?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-23T12:56:55.768878+00:00",
-   "title_ru": "Наводнение на Wall St Week Ahead Earnings, заседание ФРС представляют собой ключевые тесты для шаткого ралли рынка ИИ",
-   "tags": [
-    "Fed",
-    "markets"
-   ]
-  },
-  {
-   "title": "Заседание совета директоров ЦБ России. Главное",
-   "link": "https://www.kommersant.ru/doc/9059054",
-   "sources": [
-    "Kommersant"
-   ],
-   "score": 5,
-   "ts": "2026-10-23T12:56:55.768878+00:00",
-   "title_en": "Meeting of the Board of Directors of the Central Bank of Russia. The main",
-   "lead": "В пятницу, 23 октября, Банк России принял решение сохранить ключевую ставку на уровне 14%. «Ъ» собрал ключевые заявления ЦБ РФ по итогам заседания совета директоров.",
-   "lead_en": "On Friday, October 23, the Bank of Russia decided to keep the key rate at 14%. Kommersant has collected key statements of the Central Bank of the Russian Federation following the meeting of the Board of Directors.",
-   "tags": [
-    "BankOfRussia",
-    "rates",
-    "Russia"
-   ]
-  },
-  {
-   "title": "Глава ЦБ заявила о необходимости ограничения льготной ипотеки",
-   "link": "https://www.rbc.ru/economics/23/10/2026/6adb586d9765ed241acb0237",
-   "sources": [
-    "RBC"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T12:56:55.768878+00:00",
-   "title_en": "The head of the Central Bank stated the need to limit preferential mortgages",
-   "lead": "Льготная ипотека в России должна быть ограничена и ее объемы не должны расти, заявила на пресс-конференции глава Центробанка Эльвира Набиуллина.",
-   "lead_en": "Preferential mortgages in Russia should be limited and their volumes should not grow, the head of the Central Bank Elvira Nabiullina said at a press conference.",
-   "tags": [
-    "BankOfRussia",
-    "Russia"
-   ]
-  },
-  {
-   "title": "China’s CMOC Sees Earnings Soar on Copper Rally and More Output",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-23/china-s-cmoc-sees-earnings-soar-on-copper-rally-and-more-output",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T13:01:55.665491+00:00",
-   "title_ru": "Китайская CMOC видит рост прибыли на медном ралли и увеличение объемов производства",
-   "lead": "Chinese miner CMOC Group Ltd.’s earnings for the first nine months of the year surged 68% as copper prices soared toward a record.",
-   "lead_ru": "Прибыль китайской горнодобывающей компании CMOC Group Ltd. за первые девять месяцев года выросла на 68%, поскольку цены на медь взлетели до рекордного уровня.",
-   "tags": [
-    "markets",
-    "China"
-   ]
-  },
   {
    "title": "Kalshi Courts Wall Street in Bid to Be the ‘Inflation Exchange’ With CPI Futures",
    "link": "https://www.bloomberg.com/news/articles/2026-10-23/kalshi-courts-wall-street-in-bid-to-be-the-inflation-exchange-with-cpi-futures",
@@ -4808,6 +4741,31 @@
    "tags": [
     "jobs"
    ]
+  },
+  {
+   "title": "Brazil Markets Set to Dive on Lula Win, EU Plans to Hit China With More Curbs",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-26/the-opening-trade-10-26-2026-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T13:05:24.188124+00:00",
+   "title_ru": "Рынки Бразилии намерены погрузиться в Лулу Вин, ЕС планирует ударить по Китаю большим количеством бордюров",
+   "lead": "European stocks exposed to Brazil fell after President Luiz Inácio Lula da Silva came from behind to win Brazil’s runoff election, with investors dealing with the twin shock of Lula’s improbable win and Flávio Bolsonaro’s calls…",
+   "lead_ru": "Европейские акции, подверженные влиянию Бразилии, упали после того, как президент Луис Инасиу Лула да Силва победил на последних выборах в Бразилии, а инвесторы столкнулись с двойным шоком невероятной победы Лулы и звонками Флавиу Болсонару...",
+   "tags": [
+    "markets",
+    "China"
+   ]
+  },
+  {
+   "title": "Ведущие компании Бахрейна заинтересованы в экспорте московских технологий",
+   "link": "https://www.rbc.ru/rbcfreenews/6adf4f669a79474d3a9e5256",
+   "sources": [
+    "RBC"
+   ],
+   "score": 1,
+   "ts": "2026-10-26T13:05:24.188124+00:00"
   }
  ],
  "last_digest": "2026-10-25",
