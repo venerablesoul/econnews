@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c750874909946380": "2026-10-23T22:12:41.458547+00:00",
-  "b20a095ce78bf965": "2026-10-23T22:17:41.490326+00:00",
-  "e54466f64ec33585": "2026-10-23T22:17:41.490326+00:00",
   "f7699d77aa3ae4ee": "2026-10-23T22:47:41.391035+00:00",
   "7edea1d5420ae4b3": "2026-10-23T22:47:41.391035+00:00",
   "5c5767c90ce585c8": "2026-10-23T22:52:41.410773+00:00",
@@ -597,34 +594,12 @@
   "2f5c7d62240d8ebf": "2026-10-26T21:52:01.257657+00:00",
   "d108e95f96ae4c6c": "2026-10-26T22:07:01.229022+00:00",
   "152dc5ecb390f727": "2026-10-26T22:12:01.160665+00:00",
-  "aad2d4de3e023baa": "2026-10-26T22:12:01.160665+00:00"
+  "aad2d4de3e023baa": "2026-10-26T22:12:01.160665+00:00",
+  "d1759bac3a39b982": "2026-10-26T22:17:01.251396+00:00",
+  "4504aecdd5674462": "2026-10-26T22:17:01.251396+00:00",
+  "faae59e83b6dae30": "2026-10-26T22:17:01.251396+00:00"
  },
  "recent": [
-  {
-   "title": "Data Centers Face Downgrade Risk Amid Local Pushback, S&P Says",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-23/data-centers-face-downgrade-risk-amid-local-pushback-s-p-says",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-23T22:12:41.458547+00:00",
-   "title_ru": "По словам S&P, дата-центры сталкиваются с риском снижения рейтинга на фоне локального противодействия",
-   "lead": "Data centers face potential credit rating downgrades due to moratoriums and cancellations driven by public opposition, according to S&P Global Ratings.",
-   "lead_ru": "Согласно S&P Global Ratings, центры обработки данных сталкиваются с потенциальным понижением кредитного рейтинга из-за мораториев и аннулирований, вызванных общественной оппозицией.",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "Morocco expects stable fiscal deficit despite tax cuts in 2027",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPQndneW4wNWRrRG14djlhWDk5Nkp2ODlaVlJyamtvRnlHMmZaS2t3OERwSGFZdm1OZkMyRUpRQU9EcUpHb1cxMmFBUkc1M0drOE9ESzNWU2FwU0swM3RKN19VZWxXajFZN3pjd2JJV09yRTVHS1MxVDNLbWx3TVJVR25oLVcwTEtXeFdrU1k5eE9PSzZ4SzIwWkxkaVNoYldOYllpd3QtTXJ2NTdo?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T22:17:41.490326+00:00",
-   "title_ru": "Марокко ожидает стабильного бюджетного дефицита, несмотря на снижение налогов в 2027 году"
-  },
   {
    "title": "France spared Moody's ratings downgrade as it struggles with unrest",
    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQNDNzYlVKMzN1VE5rMDhtcVFnY1NsRXZNYmRVZmZKc2dxVC1xZ19abmEtTTlHclVXQWc4YWJXWHNtNktWU2ZBSUVWT1lwWmo1UDVsdFd1RUxjQUkwUGRROUVhWVZkTnJmSU1pdUl4d1FCYU1nTGRMckNaUnpaQVVlOFhkdzZuVFZKaUNCajRGWXFxS0RIODZYSUtVU0o?oc=5",
@@ -4638,6 +4613,15 @@
     "rates",
     "markets"
    ]
+  },
+  {
+   "title": "Dividend stocks are having an excellent October as tech sector struggles",
+   "link": "https://www.marketwatch.com/story/dividend-stocks-are-having-an-excellent-october-as-tech-sector-struggles-5ae40b02?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-26T22:17:01.251396+00:00"
   }
  ],
  "last_digest": "2026-10-26",
@@ -11050,26 +11034,27 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-26T21:12:01.223283+00:00",
+  "checked": "2026-10-26T22:17:01.251396+00:00",
   "sec_seen": [
    "0001193125-26-432230",
    "0001225208-26-008502",
    "0001731729-26-000008",
    "0001193125-26-432220",
-   "0002050987-26-000002",
    "0001225208-26-008501",
    "0001388772-26-000004",
    "0001883925-26-000006",
    "0001193125-26-432218",
    "0001193125-26-432206",
-   "0002066961-26-000002",
+   "0001225208-26-008516",
+   "0000909832-26-000105",
    "0001733126-26-000013",
    "0001510281-26-000377",
    "0001140361-26-040789",
-   "0002005471-26-000002",
+   "0000909832-26-000107",
+   "0000909832-26-000109",
+   "0000909832-26-000103",
    "0001193125-26-432226",
    "0001464521-26-000156",
-   "0001649840-26-000004",
    "0001225208-26-008507",
    "0001225208-26-008504",
    "0001225208-26-008503",
@@ -11078,15 +11063,14 @@
    "0001225208-26-008509",
    "0002014386-26-000024",
    "0001437749-26-033535",
-   "0001128404-26-000006",
+   "0001225208-26-008515",
    "0001193125-26-432207",
    "0001437749-26-033533",
-   "0002049881-26-000002",
    "0001225208-26-008505",
    "0001960954-26-000004",
-   "0001388767-26-000006",
+   "0000909832-26-000111",
    "0001628280-26-067340",
-   "0001695033-26-000004",
+   "0000950103-26-016181",
    "0001225208-26-008500",
    "0001225208-26-008510",
    "0001225208-26-008506"
