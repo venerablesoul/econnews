@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "305880292e18f179": "2026-10-23T13:31:55.759150+00:00",
-  "bc2de053132f57b8": "2026-10-23T13:31:55.759150+00:00",
-  "bc510bece5bc9e72": "2026-10-23T13:31:55.759150+00:00",
   "4b7af1d4a1539ce1": "2026-10-23T13:36:55.694608+00:00",
   "67f011abba325c2e": "2026-10-23T13:36:55.694608+00:00",
   "de5c9900b5a76573": "2026-10-23T13:36:55.694608+00:00",
@@ -600,7 +597,9 @@
   "f186b5fb5d5a75a8": "2026-10-26T13:25:24.207876+00:00",
   "3237e488c7ee7ddb": "2026-10-26T13:25:24.207876+00:00",
   "d81da7943332b15c": "2026-10-26T13:25:24.207876+00:00",
-  "178c42b4d7f0694c": "2026-10-26T13:30:24.475710+00:00"
+  "178c42b4d7f0694c": "2026-10-26T13:30:24.475710+00:00",
+  "ade61155197521b6": "2026-10-26T13:35:24.200123+00:00",
+  "fab0dc6032b2a105": "2026-10-26T13:35:24.200123+00:00"
  },
  "recent": [
   {
@@ -4790,6 +4789,16 @@
    "title_ru": "Anthropic раскрывает подробности запланированного исторического дебюта на фондовом рынке",
    "lead": "The company will be the first true artificial intelligence company to go public as tech firms continue to invest heavily in AI.",
    "lead_ru": "Компания станет первой настоящей компанией в области искусственного интеллекта, которая станет публичной, поскольку технологические компании продолжают активно инвестировать в ИИ."
+  },
+  {
+   "title": "Anthropic's IPO: A close look at AI frontrunner's rapid growth, spiraling costs",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPX1UzRjJ6M0VaSXoydWlIZ2pzc2tGcUZtMjlzR1JhUE9UR0llUERrRWRJNUdTRWNNQU9IUUEycmZUVk40cEtCSjZ5TzRqZVRWT1JvMEtmQmlENklzd19LLWlDREZZakJ0MWdTOTZleEdBN1FVRFJGMGxHWnpkY2owdVFSQ0FWWHNFcWlPTUtpb1ZDRkZrY0tUMkZrdHRJMnFJZEZveXVQaG41OHFibWFyMWpfNG9jTlR0aTM1enNKT18?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T13:35:24.200123+00:00",
+   "title_ru": "IPO Anthropic: пристальный взгляд на быстрый рост лидера в области искусственного интеллекта и растущие расходы"
   }
  ],
  "last_digest": "2026-10-25",
