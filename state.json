@@ -1,12 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "2fb9a3ff9b2258ea": "2026-10-23T07:41:24.940960+00:00",
-  "57364047e0754d55": "2026-10-23T07:41:24.940960+00:00",
-  "b52d2115f6fbfd91": "2026-10-23T07:41:24.940960+00:00",
-  "a60592e69461acda": "2026-10-23T07:41:24.940960+00:00",
-  "0491fbc849dd6314": "2026-10-23T07:46:24.890241+00:00",
-  "3789a5a865c51025": "2026-10-23T07:46:24.890241+00:00",
   "d4b6e4102b856bdb": "2026-10-23T08:01:25.016113+00:00",
   "5c97d3da80e0a3ec": "2026-10-23T08:01:25.016113+00:00",
   "6ed00aa519d924dc": "2026-10-23T08:01:25.016113+00:00",
@@ -600,64 +594,10 @@
   "d23d2e2f0c0a678d": "2026-10-26T07:29:41.384205+00:00",
   "56c614ce49487ae1": "2026-10-26T07:29:41.384205+00:00",
   "9b689421c976fbc6": "2026-10-26T07:39:41.376028+00:00",
-  "a9e11ab19f211ab4": "2026-10-26T07:39:41.376028+00:00"
+  "a9e11ab19f211ab4": "2026-10-26T07:39:41.376028+00:00",
+  "0d1510001304639d": "2026-10-26T07:49:41.384029+00:00"
  },
  "recent": [
-  {
-   "title": "AI trade meets the Fed",
-   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNOWlIdzFDR0xNQ01RZzhsaXVtMXYtbWU3U3RvejE4NzV3TFZPXzI5SUpGTG9jLUxxbEhiNGFVMTZyUU84MVhTZGJaWkxtZ2cwaG9OTlJiYmFLTzFLLXZFQURzNUE5M05Lcjc5UXQ4Q1RIaVNWOFZlSlA2MTBLUFYtSVdLcGI3V3lCN216QQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-23T07:41:24.940960+00:00",
-   "title_ru": "Торговля ИИ встречается с ФРС",
-   "tags": [
-    "Fed"
-   ]
-  },
-  {
-   "title": "German Business Activity Slows More Than Expected on Services",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-23/german-business-activity-slows-more-than-expected-on-services",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T07:41:24.940960+00:00",
-   "title_ru": "Деловая активность в Германии замедлилась больше, чем ожидалось, в сфере услуг",
-   "lead": "Germany’s private sector slowed more than anticipated as high inflation weighed on the services industry.",
-   "lead_ru": "Частный сектор Германии замедлился больше, чем ожидалось, поскольку высокая инфляция оказала давление на сферу услуг.",
-   "tags": [
-    "inflation"
-   ]
-  },
-  {
-   "title": "European Stocks Fall as China Woes Hit Volvo Car, Gucci",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-23/european-stocks-fall-as-china-woes-hit-volvo-car-gucci",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-23T07:46:24.890241+00:00",
-   "title_ru": "Европейские акции падают, так как китайские беды поразили автомобиль Volvo, Gucci",
-   "lead": "European stocks fell for a second day as disappointing earnings, including from Kering SA’s Gucci, added to concerns over the artificial intelligence trade and elevated oil prices.",
-   "lead_ru": "Европейские акции упали второй день подряд, поскольку разочаровывающие доходы, в том числе от Gucci Kering SA, усилили опасения по поводу торговли искусственным интеллектом и повышенных цен на нефть.",
-   "tags": [
-    "oil",
-    "markets",
-    "China"
-   ]
-  },
-  {
-   "title": "German business activity growth softens in October, PMI shows",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOZkg5d1FPZzZya2I0QVlubzdhUjZsVmdqYmtNVVJpakpzMjI3QjBLRWRlYjUxQ3duaVJFRzE0MnpwTktETmc3UnhlbWVBaV82Nnp0LVM5bmtNcFh0QTNMZ3BnVWoybnNUemdWYzdwS0x4WDJPS05SV2ZRaHR5NGNEdGhsbDBJVDRueW5YYVZUUXljUU5kLVE1dS03cjlPWHBBaU45LVZtRXZIdw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-23T07:46:24.890241+00:00",
-   "title_ru": "Рост деловой активности в Германии в октябре замедлился, показывает PMI"
-  },
   {
    "title": "China Barely Eased Austerity Just Before Shift to Stimulus Mode",
    "link": "https://www.bloomberg.com/news/articles/2026-10-23/china-barely-eased-austerity-just-before-shift-to-stimulus-mode",
@@ -5043,6 +4983,21 @@
    "lead_ru": "Международный бенчмарк ослабевает после взлета до $ 117 в конце прошлой недели",
    "tags": [
     "oil"
+   ]
+  },
+  {
+   "title": "Yen Haven Revived as Euro-Yen Bears Eye Move Below 175, BI Says",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-26/yen-haven-revived-as-euro-yen-bears-eye-move-below-175-bi-says",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-26T07:49:41.384029+00:00",
+   "title_ru": "Yen Haven возродилась, когда Euro-Yen Bears Eye опустился ниже 175, говорит BI",
+   "lead": "The yen’s appeal as a haven currency was revived as risk-off moves spread across asset classes, with euro-yen bears potentially extending below 175 and dollar-yen possibly sliding beneath 155, Bloomberg Intelligence said.",
+   "lead_ru": "По словам Bloomberg Intelligence, привлекательность иены как валюты-убежища возродилась по мере распространения рисков по классам активов, при этом медведи евро-иены потенциально могут опуститься ниже 175, а доллар-иена, возможно, опустится ниже 155.",
+   "tags": [
+    "dollar"
    ]
   }
  ],
