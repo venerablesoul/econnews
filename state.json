@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "0fa74fd2d519c1c5": "2026-10-23T10:06:24.930997+00:00",
-  "7593f510199421e4": "2026-10-23T10:06:24.930997+00:00",
-  "b6f9c515d991b004": "2026-10-23T10:06:24.930997+00:00",
-  "7ab0f9e783cda31c": "2026-10-23T10:06:24.930997+00:00",
   "ec0f2cbc912ee7a5": "2026-10-23T10:11:24.909272+00:00",
   "27b9a4014bc96b2a": "2026-10-23T10:11:24.909272+00:00",
   "1ac98c8019a234e5": "2026-10-23T10:11:24.909272+00:00",
@@ -607,55 +603,13 @@
   "dfaa07e0de0d8db4": "2026-10-26T10:00:24.300711+00:00",
   "b746dbb879f38700": "2026-10-26T10:00:24.300711+00:00",
   "476bfe4b5fda7471": "2026-10-26T10:00:24.300711+00:00",
-  "496be01d2415b7d4": "2026-10-26T10:05:24.233875+00:00"
+  "496be01d2415b7d4": "2026-10-26T10:05:24.233875+00:00",
+  "f1e0c8775ff01e4e": "2026-10-26T10:10:24.226348+00:00",
+  "5015b1bac01b58dd": "2026-10-26T10:10:24.226348+00:00",
+  "89fb3011b722eccb": "2026-10-26T10:10:24.226348+00:00",
+  "7332d2e2942cff1b": "2026-10-26T10:10:24.226348+00:00"
  },
  "recent": [
-  {
-   "title": "AT1s’ Easy-Money Run Fades as Banks Pay Up for Riskiest Debt",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-23/at1s-easy-money-run-fades-as-banks-pay-up-for-riskiest-debt",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-23T10:06:24.930997+00:00",
-   "title_ru": "Бег с легкими деньгами AT1s исчезает, поскольку банки платят за самый рискованный долг",
-   "lead": "Investors in the riskiest instruments sold by US and European banks are starting to demand more compensation on new deals.",
-   "lead_ru": "Инвесторы в самые рискованные инструменты, продаваемые американскими и европейскими банками, начинают требовать больше компенсаций по новым сделкам."
-  },
-  {
-   "title": "US Election Angst Looms for Stocks and the AI Boom",
-   "link": "https://www.bloomberg.com/news/newsletters/2026-10-23/us-election-angst-looms-for-stocks-and-the-ai-boom",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T10:06:24.930997+00:00",
-   "title_ru": "Тоска по выборам в США вырисовывается для акций и бума искусственного интеллекта",
-   "lead": "Markets would be just fine with more gridlock.",
-   "lead_ru": "Рынки были бы просто в порядке с большей тупиковой ситуацией.",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "Anthropic, Please Get on With Your IPO to Soothe the AI Trade",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMUIxX2phbXhMZG53ekFDa3JvUVhDbUVxT3FQRVdjUUoxTUlwSXNsV0xVLTVDUU5pVWYxM0RETzhyMVhORjVlOXVJZXo2Z0pjZEgxbzNBYjVTazNnV0RfczZOSEp5dkNxdHhKZ2dUR0Fmdm8ydDc2WDJlWmNpeGhCZm1LazhUOW5FUjVoZXlaRWlTYkhjTnd4UXhuQVAwdVRjb05naTdqNk9kX0ZSaUFGa2JBZ2Q?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T10:06:24.930997+00:00",
-   "title_ru": "Anthropic, пожалуйста, продолжайте свое IPO, чтобы успокоить торговлю ИИ"
-  },
-  {
-   "title": "Какое решение по ключевой ставке примет Банк России. Спецэфир Радио РБК",
-   "link": "https://www.rbc.ru/finances/23/10/2026/6adb0f9dd06b4e2565f444f0",
-   "sources": [
-    "RBC"
-   ],
-   "score": 1,
-   "ts": "2026-10-23T10:06:24.930997+00:00"
-  },
   {
    "title": "Macklem Ensnared by Market Pricing and Will Hike, Economists Say",
    "link": "https://www.bloomberg.com/news/articles/2026-10-23/macklem-ensnared-by-market-pricing-and-will-hike-economists-say",
@@ -4976,6 +4930,59 @@
    "title_ru": "Хили защитит малообеспеченных пенсионеров от подоходного налога в бюджете",
    "lead": "Changes are needed to prevent the full, flat-rate state pension becoming liable for income tax after it rises in April.",
    "lead_ru": "Изменения необходимы, чтобы не допустить, чтобы полная государственная пенсия с фиксированной ставкой стала облагаться подоходным налогом после ее повышения в апреле."
+  },
+  {
+   "title": "Fed Meeting Focus Turns to Warsh Messaging With December in Mind",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-26/fed-meeting-focus-turns-to-warsh-messaging-with-december-in-mind",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-26T10:10:24.226348+00:00",
+   "title_ru": "Фокус заседания ФРС переключается на агрессивные сообщения, имея в виду декабрь",
+   "lead": "Kevin Warsh faces a familiar challenge this week if the Federal Reserve holds interest rates steady: He must reassure investors the central bank is committed to quashing inflation while explaining why officials chose not to raise…",
+   "lead_ru": "На этой неделе Кевин Уорш столкнется со знакомой проблемой, если Федеральная резервная система сохранит процентные ставки на стабильном уровне: он должен заверить инвесторов, что центральный банк стремится подавить инфляцию, и одновременно объяснить, почему чиновники решили не повышать…",
+   "tags": [
+    "Fed",
+    "rates",
+    "inflation"
+   ]
+  },
+  {
+   "title": "US stock futures edge up as oil falls heading into earnings barrage",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPVVlfUU5UYnVIOHVRRHJCaWJNQ0NtM0V5aXdZUE5QSEhGVTAxWmdXcU1KeGVEaEtYTXlEal9YNjMwblR6bGZQcm5HODd6N2xnNUppZzdXMDVTSWwtZEc3a3p3Q0M4VzRtaHo3QTd1VDJpaGNPQmw0WjFNaEMyQ2JyOVpGcmZEbktIdk45OHp4blZxdzc5UllRT2V1cnllVTVVTjVYZm1IZ0VjWDlwTnc?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-26T10:10:24.226348+00:00",
+   "title_ru": "Фьючерсы на акции США растут, поскольку нефть падает, что приводит к обвалу прибылей",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "Oil spill off UAE widens, satellite images show, prompting more beach closures",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQbHhFSkdqM0dlc3lWWVViWVlQMDNlNnRVQkxSUWttcWR5R19wV3dvclAyOGtmNVFZMEI2YVVheGVlLUlJNTB3bzZGeDlqRTEtMGZiRk5ZN0x1dWs4a2VNaElUUW1Yd0lxaFRpTjhtVDdael9uaEpHa2kxTllSWVRHSjVIMUVLQmJSNUlGZDF5S0JEOXJ0Rk5GR1lFN0thcWNqSW15RmVsMUFrOUpGeE9lMm1oNVZVNFdjaVQ2VFJielNUM29rMG1BZUd3?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T10:10:24.226348+00:00",
+   "title_ru": "Как показывают спутниковые снимки, разлив нефти у берегов ОАЭ увеличивается, что приводит к закрытию новых пляжей",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "Why Wall Street banks want Democrats to back their capital relief",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOcXYxV3hYb2RBNHlmdUhrWXU1U1M3eGh3eHpGRE5pMjF5cDUtaU5RWWRpdzM5VkdRdGZWdU02NEY4bHd3dkp5bHlxTVcxMHNPSDZ6bjJweGN1NlJaNldWdmJQSW9wU1VHUEhGMG1razlfaVNQb1h3aVlkSDhtN0M5VUdrMndQWjNac09nRUJPQTd4cXlRVUUtNWU4WF8xNDhOclNueDRZVVZ4RW93R2EtMXFGZHJDS0NBNnc?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T10:10:24.226348+00:00",
+   "title_ru": "Почему банки Уолл-стрит хотят, чтобы демократы поддержали их облегчение капитала"
   }
  ],
  "last_digest": "2026-10-25",
@@ -11382,34 +11389,27 @@
   },
   "checked": "2026-10-26T09:25:24.146578+00:00",
   "sec_seen": [
-   "0001022079-26-000115",
    "0001801661-26-000126",
-   "0000923120-26-000024",
    "0000923120-26-000030",
-   "0001493152-26-048317",
    "0000923120-26-000026",
    "0002160363-26-000004",
    "0001493152-26-048321",
    "0002160363-26-000003",
    "0001493152-26-048312",
-   "0001833511-26-000042",
    "0001398344-26-018733",
    "0001778564-26-000191",
    "0001493152-26-048313",
    "0000923120-26-000029",
    "0000923120-26-000028",
-   "0000923120-26-000023",
    "0001493152-26-048319",
-   "0001231919-26-001497",
    "0001493152-26-048314",
    "0001493152-26-048309",
    "0001493152-26-048310",
    "0000923120-26-000027",
    "0001493152-26-048311",
    "0001646649-26-000035",
-   "0001022079-26-000116",
    "0001493152-26-048315",
-   "0000923120-26-000025"
+   "0001493152-26-048317"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
