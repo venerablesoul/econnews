@@ -587,7 +587,8 @@
   "c01a2eedc2dc786c": "2026-10-26T02:33:52.469406+00:00",
   "ce8dded2ae934383": "2026-10-26T02:33:52.469406+00:00",
   "69cea178aa52b471": "2026-10-26T02:33:52.469406+00:00",
-  "f72cbab0cca05147": "2026-10-26T02:48:52.471278+00:00"
+  "f72cbab0cca05147": "2026-10-26T02:48:52.471278+00:00",
+  "4e7465fc081c543e": "2026-10-26T02:58:52.475883+00:00"
  },
  "recent": [
   {
@@ -5276,6 +5277,16 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "IEA's Birol does not expect energy markets to return to pre-war levels in 2027",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNV2ZfTHdlczRzUzg4VTlJa2R6czhZeEtoZW8taUE3MzFxWEh1MVh0U2FPdG5XcEs2ZVhGZ2JxT3JwSkVBUEtseTR0YktxN05ycmxmODRONkVMd3JEbUJQdDIycm5QSHRMcGZqejJDSk5kMkFtT3dMa2EwNnlTV3Q0ZTNieWFSbWJGUVBoNFVDcklUZlF6UDhsMDVqbTJvd2FlWHJqMVBTVDJnM1d5ejc1V2hpTjVxZ3NmcXBhUA?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T02:58:52.475883+00:00",
+   "title_ru": "Бироль из МЭА не ожидает, что энергетические рынки вернутся к довоенному уровню в 2027 году"
   }
  ],
  "last_digest": "2026-10-25",
@@ -11693,7 +11704,6 @@
    "0001100682-26-000151",
    "0001022079-26-000115",
    "0000923120-26-000029",
-   "0000923120-26-000030",
    "0000923120-26-000025",
    "0001493152-26-048313",
    "0001585521-26-000154",
@@ -11722,13 +11732,14 @@
    "0000923120-26-000024",
    "0001801661-26-000126",
    "0001493152-26-048319",
+   "0001193125-26-430729",
    "0001022079-26-000111",
    "0001585521-26-000153",
    "0001193125-26-430728",
    "0001022079-26-000113",
    "0001022079-26-000110",
    "0001493152-26-048315",
-   "0001193125-26-430729"
+   "0000923120-26-000030"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
