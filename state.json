@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "d3544c9e7ee32892": "2026-10-23T12:31:55.664240+00:00",
-  "72aabf0aeda63812": "2026-10-23T12:31:55.664240+00:00",
-  "ac967404af3747f4": "2026-10-23T12:31:55.664240+00:00",
-  "a495d2cc033e59e1": "2026-10-23T12:31:55.664240+00:00",
   "8b606ddfe079283e": "2026-10-23T12:36:55.681447+00:00",
   "8afe37e143cd7309": "2026-10-23T12:36:55.681447+00:00",
   "4c54aca1579a7883": "2026-10-23T12:36:55.681447+00:00",
@@ -599,77 +595,10 @@
   "0113200875574a92": "2026-10-26T12:15:24.312128+00:00",
   "09501a54561ee3ac": "2026-10-26T12:15:24.312128+00:00",
   "e2467166d4a805f8": "2026-10-26T12:20:24.249081+00:00",
-  "670cb53d69bfd981": "2026-10-26T12:30:24.316387+00:00"
+  "670cb53d69bfd981": "2026-10-26T12:30:24.316387+00:00",
+  "8012e0504d99fdbd": "2026-10-26T12:35:24.169732+00:00"
  },
  "recent": [
-  {
-   "title": "ЦБ предметно рассматривал на заседании только сохранение уровня ключевой ставки",
-   "link": "https://www.kommersant.ru/doc/9059077",
-   "sources": [
-    "Kommersant"
-   ],
-   "score": 7,
-   "ts": "2026-10-23T12:31:55.664240+00:00",
-   "title_en": "The Central Bank substantively considered at the meeting only the preservation of the level of the key rate",
-   "lead": "Совет директоров Банка России (ЦБ) на сегодняшнем заседании предметно рассматривал только паузу в снижении ключевой ставки и нейтральный сигнал. Об этом заявила председатель регулятора Эльвира Набиуллина.",
-   "lead_en": "The Board of Directors of the Bank of Russia (CB) at today's meeting substantively considered only a pause in reducing the key rate and a neutral signal. This was stated by the chairman of the regulator Elvira Nabiullina.",
-   "tags": [
-    "BankOfRussia",
-    "rates",
-    "Russia"
-   ]
-  },
-  {
-   "title": "Набиуллина заявила, что бюджет не будет препятствовать снижению инфляции",
-   "link": "https://www.rbc.ru/rbcfreenews/6adb52c9ec53e5b0ff5f0cd7",
-   "sources": [
-    "RBC"
-   ],
-   "score": 7,
-   "ts": "2026-10-23T12:31:55.664240+00:00",
-   "title_en": "Nabiullina said that the budget will not prevent inflation from decreasing",
-   "lead": "Банк России ожидает, что бюджетная политика не будет препятствовать снижению инфляции, а, напротив, будет способствовать замедлению роста цен.",
-   "lead_en": "The Bank of Russia expects that fiscal policy will not impede the decline in inflation, but, on the contrary, will contribute to a slowdown in price growth.",
-   "tags": [
-    "BankOfRussia",
-    "inflation",
-    "Russia"
-   ]
-  },
-  {
-   "title": "ЦБ объяснил сохранение ставки в 14% эффектом выбытия мощностей",
-   "link": "https://www.kommersant.ru/doc/9059074",
-   "sources": [
-    "Kommersant"
-   ],
-   "score": 6,
-   "ts": "2026-10-23T12:31:55.664240+00:00",
-   "title_en": "The Central Bank explained the preservation of the rate of 14% by the effect of capacity retirement",
-   "lead": "Банк России сохранил ключевую ставку на уровне 14% годовых, поскольку эффекты временного выбытия производственных мощностей могут оказаться более продолжительными.",
-   "lead_en": "The Bank of Russia kept the key rate at 14% per annum, as the effects of the temporary disposal of production facilities may be longer-lasting.",
-   "tags": [
-    "BankOfRussia",
-    "rates",
-    "Russia"
-   ]
-  },
-  {
-   "title": "Набиуллина увидела сокращение пространства для снижения ставки ЦБ",
-   "link": "https://www.rbc.ru/economics/23/10/2026/6adb51f809a30fd51b0e8404",
-   "sources": [
-    "RBC"
-   ],
-   "score": 4,
-   "ts": "2026-10-23T12:31:55.664240+00:00",
-   "title_en": "Nabiullina saw a reduction in the space for reducing the Central Bank rate",
-   "lead": "Пространство для снижения ключевой ставки в 2027 году сократилось, заявила председатель Банка России Эльвира Набиуллина на пресс-конференции после заседания регулятора.",
-   "lead_en": "The space for reducing the key rate in 2027 has shrunk, Bank of Russia Governor Elvira Nabiullina said at a press conference after the regulator's meeting.",
-   "tags": [
-    "BankOfRussia",
-    "rates",
-    "Russia"
-   ]
-  },
   {
    "title": "Заявление Председателя Банка России Эльвиры Набиуллиной по итогам заседания Совета директоров Банка России 23 октября 2026 года",
    "link": "https://www.cbr.ru/press/event/?id=32929",
@@ -4846,6 +4775,19 @@
    "score": 3,
    "ts": "2026-10-26T12:30:24.316387+00:00",
    "title_ru": "EQT купит Range Resources, создав крупнейшего производителя газа в США"
+  },
+  {
+   "title": "Trend hedge funds saw worst week since 2024 as AI stocks fell, Goldman says",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNaXVkNFhCYXZGZWdiZXZLTHFHMnJoN1VHWlc5QWNRSTcwRThfV2lvejJsdDdzbzE3S09XVzVneWJOVmJTSWJRRFliSVNFTzc2TEJxYlZKZ2tEVTM1dG5OR2h6MkVFUE9OM04yY1Jjd3B2VUVXSmtsTjMxQzUtd2JfZy1JbVBpYmg5bHR6Tm1PQzBrdWxkbWV1MjFfTkdlYlozSXlfaWt2X3UxUl9BV0tkN3kyNW5HeXZRREVmcEdwWQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T12:35:24.169732+00:00",
+   "title_ru": "По словам Goldman Sachs, трендовые хедж-фонды пережили худшую неделю с 2024 года, когда акции ИИ упали",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-25",
