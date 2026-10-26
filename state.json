@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "f5be4df52b92f44a": "2026-10-23T10:36:24.927812+00:00",
-  "359c3ef4fdf2b295": "2026-10-23T10:36:24.927812+00:00",
-  "e45e011c132421e2": "2026-10-23T10:36:24.927812+00:00",
   "b521592c066d4d79": "2026-10-23T10:41:24.889804+00:00",
   "041d359d1687e4dd": "2026-10-23T10:46:24.887622+00:00",
   "1c76bdfd3faee74d": "2026-10-23T10:51:24.954250+00:00",
@@ -608,59 +605,13 @@
   "a4d58eba8d893b0a": "2026-10-26T10:25:24.116334+00:00",
   "f3400f6b485c89dd": "2026-10-26T10:30:24.206858+00:00",
   "43763a5282922b03": "2026-10-26T10:35:24.242855+00:00",
-  "a0c5f9a1832c0ba9": "2026-10-26T10:35:24.242855+00:00"
+  "a0c5f9a1832c0ba9": "2026-10-26T10:35:24.242855+00:00",
+  "686c3c403d643199": "2026-10-26T10:40:24.237076+00:00",
+  "b0b2b88b67fe3e04": "2026-10-26T10:40:24.237076+00:00",
+  "8e8dd7d63753315f": "2026-10-26T10:40:24.237076+00:00",
+  "3bded9ba483c3d6d": "2026-10-26T10:40:24.237076+00:00"
  },
  "recent": [
-  {
-   "title": "ЦБ сохранил ключевую ставку на уровне 14%",
-   "link": "https://www.kommersant.ru/doc/9049591",
-   "sources": [
-    "Kommersant"
-   ],
-   "score": 9,
-   "ts": "2026-10-23T10:36:24.927812+00:00",
-   "title_en": "The Central Bank kept the key rate at 14%",
-   "lead": "Банк России по итогам заседания совета директоров решил сохранить ключевую ставку на уровне 14% годовых, сообщает пресс-служба регулятора. Аналогичное решение ЦБ принимал на прошлом заседании 11 сентября.",
-   "lead_en": "Following the meeting of the Board of Directors, the Bank of Russia decided to keep the key rate at 14% per annum, the press service of the regulator reports. The Central Bank made a similar decision at the last meeting on September 11.",
-   "tags": [
-    "BankOfRussia",
-    "rates",
-    "Russia"
-   ]
-  },
-  {
-   "title": "FirstFT: AI doubts fuel tech sell-off",
-   "link": "https://www.ft.com/content/5587abab-d5c8-480d-923d-b7b68afcb3f0?syn-25a6b1a6=1",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 5,
-   "ts": "2026-10-23T10:36:24.927812+00:00",
-   "title_ru": "FirstFT: ИИ сомневается в распродаже топливных технологий",
-   "lead": "Also in today’s newsletter: Oil price surges and luxury goods group Kerring hit by falling demand",
-   "lead_ru": "Также в сегодняшнем информационном бюллетене: рост цен на нефть и группа предметов роскоши Kerring пострадали от падения спроса",
-   "tags": [
-    "oil",
-    "markets"
-   ]
-  },
-  {
-   "title": "Как меняется ключевая ставка в России. Инфографика",
-   "link": "https://www.rbc.ru/finances/24/04/2026/6082cca79a79471b74bf1eda",
-   "sources": [
-    "RBC"
-   ],
-   "score": 5,
-   "ts": "2026-10-23T10:36:24.927812+00:00",
-   "title_en": "How the key rate is changing in Russia. Infographic",
-   "lead": "ЦБ второй раз подряд сохранил ключевую ставку на уровне 14%, продлив начавшуюся в сентябре паузу после более чем года смягчения денежно-кредитной политики. Как менялась ставка за последние годы — в инфографике РБК",
-   "lead_en": "The Central Bank kept the key rate at 14% for the second time in a row, extending the pause that began in September after more than a year of easing monetary policy. How the rate has changed in recent years — in the RBC infographic",
-   "tags": [
-    "BankOfRussia",
-    "rates",
-    "Russia"
-   ]
-  },
   {
    "title": "Russia Holds Key Rate as Ukrainian Strikes Spur Inflation",
    "link": "https://www.bloomberg.com/news/articles/2026-10-23/russia-holds-key-rate-as-ukrainian-strikes-spur-inflation",
@@ -4981,6 +4932,55 @@
    "lead_ru": "ETF, отслеживающий бразильские акции, сегодня утром упал на 27%.",
    "tags": [
     "markets"
+   ]
+  },
+  {
+   "title": "Mapping the Market: Nasdaq losing its grip on rally",
+   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQY3pGTUlJcWNFT2JXaHdabVdkOEpFZUhhUEdCVUNJTFdvN0xPTHN4Q3F2cVR5ZkFVaURESmtNNHgzeVIzSWtFZkZaeXp5NEhLSC14MzBMODBHQXo3MWd5eEp4Uk52NWhCbWJ2aVl3N3pRYU45bkFnRFhlQmRBM0JRNDU1dw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-26T10:40:24.237076+00:00",
+   "title_ru": "Картирование рынка: Nasdaq теряет контроль над ралли",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "Euro zone firms find it harder to get credit, ECB survey shows",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQbkZkaU9IcHBVSFd2TXpwbWRKc1hOLS11RVVuZktKZUtZRDJGcUN5bmZGb19NS2JEd3prYUFkejdybkJscnQ0WTVPMW5GNG5jUmUwQmE0eVZ1U1o4SVZfRFZwd01ISzA5clhHMFg4UEtjWjJSeDk2NVBsbXc2Mk9vclRDMW0wWXRhNUNKSmt5LWFyTVNaSW91elhfUXlsOV9jNnRoR0RBNUYyczZ6X2pxODZ5M2U?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-26T10:40:24.237076+00:00",
+   "title_ru": "Фирмы еврозоны испытывают трудности с получением кредита, показывает опрос ЕЦБ",
+   "tags": [
+    "ECB"
+   ]
+  },
+  {
+   "title": "Markets Are Mispricing Brazil After Lula’s Epic Comeback",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQXlFa2hWSUdxck1TcTJwakwyTnVrZWtsa0ppTE5ZdWFLalJNYnlYazlUeDZ2eXVHV1hCZHltbDNlOGZyY2RjRG10TUsycV9NMTA5SDRKdGJZQjlRQzJJWkZqdGtGT0NpOS1aWk03VXRUNnZrYzMyMGVJeWJ3ZlVnREFubllWc1BkQnZkSklFWmZDNi1tVVFRMGhLTHlOckNQZnhZZU5manhLMlFkTlBn?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T10:40:24.237076+00:00",
+   "title_ru": "Рынки недооценивают Бразилию после эпического возвращения Лулы"
+  },
+  {
+   "title": "China's CITIC Securities Q3 profit falls 20.2% on weak stock market",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPV3VjZUNWOUthOWNfWTRVbkZNejNteDZ4dXA5NmFsY3NYRjJKZnJUdWhPRmx1TlBpaVJIcXpZOEE4TmxLVS1pZ2RmUEk5OFh0THhkalNxYkJuX3k4OEstanVoSVhISm9SYzVjSUVuQVJJZHplZ3k5eS1QZU1fRHpTVko3TGFiV1NQNnpoZlpfTVRBdEFjYlBFLVpxMTg0TzdWUTVYTFJTQWxydjlkVFpzZW4yOXRnc0U?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T10:40:24.237076+00:00",
+   "title_ru": "Прибыль китайской CITIC Securities в третьем квартале упала на 20,2% из-за слабого фондового рынка",
+   "tags": [
+    "China"
    ]
   }
  ],
@@ -11390,8 +11390,8 @@
   "sec_seen": [
    "0001801661-26-000126",
    "0002160363-26-000004",
-   "0001646649-26-000035",
    "0001493152-26-048321",
+   "0001646649-26-000035",
    "0001398344-26-018733"
   ],
   "errors": {
