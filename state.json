@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "4eea1de76c174cd7": "2026-10-23T13:51:55.678301+00:00",
-  "3013dd8f2dafbf90": "2026-10-23T13:51:55.678301+00:00",
-  "89386a8006b481bf": "2026-10-23T13:51:55.678301+00:00",
   "d157be01a9026e49": "2026-10-23T14:01:55.752346+00:00",
   "61709f68fd91a5dd": "2026-10-23T14:06:55.769626+00:00",
   "6961318ec12ce745": "2026-10-23T14:11:55.666007+00:00",
@@ -606,35 +603,6 @@
   "fcfb3b74c7b92c52": "2026-10-26T13:45:24.292760+00:00"
  },
  "recent": [
-  {
-   "title": "Набиуллина выступила против увеличения объемов льготной ипотеки",
-   "link": "https://www.kommersant.ru/doc/9059141",
-   "sources": [
-    "Kommersant"
-   ],
-   "score": 6,
-   "ts": "2026-10-23T13:51:55.678301+00:00",
-   "title_en": "Nabiullina opposed an increase in the volume of preferential mortgages",
-   "lead": "Льготная ипотека в России должна быть ограничена, заявила глава Банка России Эльвира Набиуллина. По ее словам, объемы таких льготных программ кредитования не должны расти.",
-   "lead_en": "Preferential mortgages in Russia should be limited, said the head of the Bank of Russia Elvira Nabiullina. According to her, the volume of such preferential lending programs should not grow.",
-   "tags": [
-    "BankOfRussia",
-    "Russia"
-   ]
-  },
-  {
-   "title": "Brazil mid-month inflation undershoots forecasts ahead of presidential runoff",
-   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNNm41N1RtbkRMQktyOXpBZl9ZeE10bVZMLVRqMU91OW03SXNuTUdzeEwzUDlBTjZydzdqcWR3MHVWUXhYb2ZHWndDV2tmWjkzc2pQMzRrRm8wSEFGczlKVFNLUWNHSElBMnp6VjBpVVFTM1RqWkt2NjhyemY2M296czZld0w1clhFcFJCVFdvMEljc1ZTRFB5TnJn?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-23T13:51:55.678301+00:00",
-   "title_ru": "Инфляция в Бразилии в середине месяца снижает прогнозы в преддверии второго тура президентских выборов",
-   "tags": [
-    "inflation"
-   ]
-  },
   {
    "title": "US Consumer Sentiment Slips to Five-Month Low on Inflation Woes",
    "link": "https://www.bloomberg.com/news/articles/2026-10-23/us-consumer-sentiment-slips-to-five-month-low-on-inflation-woes",
@@ -11258,6 +11226,7 @@
    "0001193125-26-431207",
    "0001049521-26-000085",
    "0001976408-26-000904",
+   "0001749928-26-000007",
    "0002022050-26-000011",
    "0001976408-26-000907"
   ],
