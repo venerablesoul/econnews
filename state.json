@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "2557d19f07e7e050": "2026-10-23T00:45:20.369551+00:00",
-  "212e6850534ea615": "2026-10-23T00:45:20.369551+00:00",
   "1ccd8342cef80187": "2026-10-23T00:50:20.280013+00:00",
   "ea4dbdeadaf28757": "2026-10-23T00:50:20.280013+00:00",
   "86fd1bcdb5c83d7b": "2026-10-23T00:55:20.376494+00:00",
@@ -588,19 +586,10 @@
   "1e6c6dfa419ebacc": "2026-10-25T23:58:52.476177+00:00",
   "37772872aaa95261": "2026-10-26T00:03:52.451513+00:00",
   "33619b0e9322e2c3": "2026-10-26T00:18:52.529389+00:00",
-  "5bf7f3e3ccb22610": "2026-10-26T00:23:52.462882+00:00"
+  "5bf7f3e3ccb22610": "2026-10-26T00:23:52.462882+00:00",
+  "2420d7dac20f0122": "2026-10-26T00:48:52.544062+00:00"
  },
  "recent": [
-  {
-   "title": "Japan manufacturing growth slows to 7-month low in October, PMI shows",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQYmZ6NHNId1hXcVpMa3I2djI2Zjk1RTYtMTdpMkhYN1Q5eUlTQ3dOQ3BTeUJsVG1uRWhEbG5qLWRqc0NqQmU5SzRUWGZQM0xOaHRvZXZFWTlqTmdjSUhyQXUyZ1RRM2lYTU1jSVV2OEQ0LXdiX3ZTQ0llU2VMOXJhNVktMkdJUTlVZUxhNHAxSHNRWDktanhGdXhkMkVQbGJnMzlndnV0VHI2Z3dOczJjUnZ3bHEyZl8z?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-23T00:45:20.369551+00:00",
-   "title_ru": "Рост производства в Японии в октябре замедлился до 7-месячного минимума, показывает индекс PMI"
-  },
   {
    "title": "Treasury Unveils Rule to Ban Large Investors From Homebuying",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQY0JiLTJfNWFiSzBJMWZZX3lxZHd6WmNpR3l1RnRpdm94Um9HRV9haTczT0JEUU5JQkpVNlF4VmFIaTFzbkphcmNBRzl1ZjgySG5SU1hlUXhzckw3VVJJcl9Lb2EtRzVPOTVCTlZVa21sRkZYUjJFcWRzMVA1LVk2QnZic2twNEk3Rml3NTV1ejFVNVlfTm51VHp2Z2xGYmNQWnhTdm5qTDA2bldjVWI2am5vNG93Zw?oc=5",
@@ -5327,6 +5316,16 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "Five economic challenges facing Brazil's re-elected President Lula",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPcHk0a1NUT2ZNSm9tR2JkZnJ1YUtTdHRRVk1UQ05BbXpXYmtNYy1fY2MzaklhQ09YVGRmOUdHaW4yMVhsX1RpRGRacHFrNFpOcEFsRlBJcWpMSElnNGFKaVNCZTlzSC1RMFpyc1BuY2txb0NEd3I4X3hDTUNpcVh3clpDb19YVFdiOGRsNF9LQ0xBRWVPR2dEZzd2M0UzNElWNzNHOWZPcFhwcGp1ejZ1VGluaUM3Yk0?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T00:48:52.544062+00:00",
+   "title_ru": "Пять экономических проблем, стоящих перед переизбранным президентом Бразилии Лулой"
   }
  ],
  "last_digest": "2026-10-25",
@@ -11744,7 +11743,6 @@
    "0001100682-26-000151",
    "0001022079-26-000115",
    "0000923120-26-000029",
-   "0000923120-26-000030",
    "0000923120-26-000025",
    "0001493152-26-048313",
    "0001585521-26-000154",
@@ -11773,13 +11771,14 @@
    "0000923120-26-000024",
    "0001801661-26-000126",
    "0001493152-26-048319",
+   "0001193125-26-430729",
    "0001022079-26-000111",
    "0001585521-26-000153",
    "0001193125-26-430728",
    "0001022079-26-000113",
    "0001022079-26-000110",
    "0001493152-26-048315",
-   "0001193125-26-430729"
+   "0000923120-26-000030"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
