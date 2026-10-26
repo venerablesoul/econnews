@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "7f92f54da78ef813": "2026-10-23T23:43:26.729162+00:00",
-  "774cede80e249aaf": "2026-10-23T23:43:26.729162+00:00",
   "4fdd3b8de219aeef": "2026-10-23T23:53:26.775354+00:00",
   "b49867f1d412dd27": "2026-10-23T23:53:26.775354+00:00",
   "f51858023887e730": "2026-10-23T23:58:26.761921+00:00",
@@ -604,19 +602,12 @@
   "6f796792f7bfa601": "2026-10-26T23:27:01.166672+00:00",
   "e4fd510be0e4e785": "2026-10-26T23:27:01.166672+00:00",
   "dc7e498fa993f6a0": "2026-10-26T23:32:01.308262+00:00",
-  "b5284156bba2b5bf": "2026-10-26T23:32:01.308262+00:00"
+  "b5284156bba2b5bf": "2026-10-26T23:32:01.308262+00:00",
+  "80c70211379a9274": "2026-10-26T23:47:01.184948+00:00",
+  "1771643c4f799998": "2026-10-26T23:47:01.184948+00:00",
+  "a58c4fabc50934f0": "2026-10-26T23:47:01.184948+00:00"
  },
  "recent": [
-  {
-   "title": "UK regulator urges tighter private market controls to avoid conflicts of interest",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQTzBKeHpHaWFUb3pJVkdRSlRzU09ObXlzYzdMN3gzNnNvMzF3VVA1U0g4cm5zc25kZW9INFJNSzhEWUR4alRpeWU5bDdHSzlxNkowbEdzeWtBQnFhUjJQWUpTX1RXZlZhaEJ1Y0JCRGRqVjdZSkc3bkN1TmJJTTBrbnFKQ0NkOVQ2NUM0Q2FYakV0a29lZVNpN0FvbnB4b29xeFFfM2lUVVFNLU8xR21wZHlzZEhrZ3A3dWhqR2x2UjRpSDJ6bkxN?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T23:43:26.729162+00:00",
-   "title_ru": "Регулятор Великобритании призывает ужесточить контроль над частным рынком, чтобы избежать конфликта интересов"
-  },
   {
    "title": "The Global Fiscal Actions (GFA) Dataset",
    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOM0NYX0N2UHk4MW52SW85eE9aRmVOdjl4OE8wMGRhdXlDYXItMkVtS2VEcFBfcWM5LWpwa0M4b01KTG1VTGV5SUNSMFVVSXpEVVY2bm9lUG1TMXo4ZV93YUFJclZNUWtHYXJuV0pDVDkxTzF2N2sycjMxX2U2V2FCakdONWN1SEo5Y05BcjdJeDVOTHlLSkNLMVZJMV9XcDNETlQw?oc=5",
@@ -4700,6 +4691,29 @@
     "rates",
     "gold"
    ]
+  },
+  {
+   "title": "Oil Declines as Diplomacy Offers Hope of Mideast Deescalation",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNUE5CTldfa1F0ZnVycHMtVW01c0RqeEpESThPWmEzY1VITlZGVVd6UVlOYnZwSmxoWDBRSHBiWUFBckdEUEF0UHVjaExreEtHS2RyMkl1U3p5Ul9yU21xbU15MEF3ZUprYkx6dzlJYnBhMEZDYWpHc09QWVA4RDZuWUtrdXRvSmRhXzNnVXFiOUNUVTNMV2Zja1ZBWVI1UQ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T23:47:01.184948+00:00",
+   "title_ru": "Нефть падает, поскольку дипломатия дает надежду на деэскалацию на Ближнем Востоке",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "AXS Esoterica NextG Economy ETF (WUGI.N) | Stock Price & Latest News",
+   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1OUURaQ1pRUDVSVWg3bGV4MlpFbktITGc5M2dpbllfaHdaZTQ5WEtjejZncUhUTW42S0E2SldMVk8zclhPLUlHUW8ycFd6MlhZamw5N3NDcnM?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T23:47:01.184948+00:00",
+   "title_ru": "AXS Esoterica NextG Economic ETF (WUGI.N) | Цена акций и последние новости"
   }
  ],
  "last_digest": "2026-10-26",
@@ -7624,6 +7638,22 @@
     "date": "2026-10-23",
     "disclosed": "2026-10-26",
     "link": "https://www.sec.gov/Archives/edgar/data/2120783/000155485526002194/0001554855-26-002194-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "dc03b14f101df315",
+    "ticker": "OPTU",
+    "company": "Optimum Communications, Inc.",
+    "who": "Subin Neil S et al.",
+    "role": "10% owner",
+    "type": "buy",
+    "value": 1163551,
+    "shares": 2228007,
+    "price": 0.52,
+    "plan": false,
+    "date": "2026-10-23",
+    "disclosed": "2026-10-26",
+    "link": "https://www.sec.gov/Archives/edgar/data/2159232/000121390026112593/0001213900-26-112593-index.htm"
    },
    {
     "src": "sec",
@@ -11064,22 +11094,6 @@
     "date": "2026-10-15",
     "disclosed": "2026-10-19",
     "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000357/0001510281-26-000357-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "70dce93cfcbed80a",
-    "ticker": "ELF",
-    "company": "e.l.f. Beauty, Inc.",
-    "who": "Joshua Allen Franks",
-    "role": "SVP, Operations",
-    "type": "sell",
-    "value": 873072,
-    "shares": 7926,
-    "price": 110.15,
-    "plan": true,
-    "date": "2026-10-15",
-    "disclosed": "2026-10-19",
-    "link": "https://www.sec.gov/Archives/edgar/data/1797370/000161071726000443/0001610717-26-000443-index.htm"
    }
   ],
   "docs": {
@@ -11122,15 +11136,13 @@
    "0001137789-26-000292",
    "0000902664-26-004286",
    "0001137789-26-000288",
-   "0000912282-26-001400",
    "0002050422-26-000017",
-   "0001225208-26-008516",
+   "0000912282-26-001400",
    "0000912282-26-001396",
    "0000909832-26-000113",
    "0001137789-26-000297",
    "0001193125-26-432280",
    "0001628280-26-067363",
-   "0000909832-26-000109",
    "0001422304-26-000005",
    "0001628280-26-067360",
    "0001137789-26-000296",
@@ -11138,13 +11150,13 @@
    "0000909832-26-000117",
    "0000912282-26-001392",
    "0001193125-26-432266",
-   "0001225208-26-008515",
    "0001193125-26-432264",
    "0000950103-26-016182",
    "0000912282-26-001401",
    "0001554855-26-002194",
    "0002159567-26-000005",
    "0001628280-26-067362",
+   "0001213900-26-112593",
    "0000909832-26-000111",
    "0000909832-26-000119",
    "0001379344-26-000011",
