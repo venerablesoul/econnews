@@ -1,12 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "6a78115f86c32cd3": "2026-10-23T09:26:25.013568+00:00",
-  "6c394e7b422094a8": "2026-10-23T09:26:25.013568+00:00",
-  "0a51c0312b45c1d4": "2026-10-23T09:26:25.013568+00:00",
-  "f264400eab95617d": "2026-10-23T09:26:25.013568+00:00",
-  "b9c5616784696421": "2026-10-23T09:31:24.930988+00:00",
-  "79c714d444a5dd73": "2026-10-23T09:31:24.930988+00:00",
   "53aa62072e466284": "2026-10-23T09:51:25.064751+00:00",
   "a96f9389b84b3692": "2026-10-23T09:51:25.064751+00:00",
   "28fcaf8fa8c784ce": "2026-10-23T09:51:25.064751+00:00",
@@ -605,65 +599,12 @@
   "4351c062ac60c158": "2026-10-26T09:10:24.246531+00:00",
   "eb6fae4a2fca23c7": "2026-10-26T09:20:24.192289+00:00",
   "b2f83959f7823a85": "2026-10-26T09:25:24.146578+00:00",
-  "92092bbd250ae3bc": "2026-10-26T09:25:24.146578+00:00"
+  "92092bbd250ae3bc": "2026-10-26T09:25:24.146578+00:00",
+  "c6e2cd87793b1a30": "2026-10-26T09:35:24.244114+00:00",
+  "a598a1a8273e52f9": "2026-10-26T09:35:24.244114+00:00",
+  "b394f5f216553cd5": "2026-10-26T09:35:24.244114+00:00"
  },
  "recent": [
-  {
-   "title": "AI IPOs Stall While Private Markets Heat Up (Video)",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-23/ai-ipos-stall-while-private-markets-heat-up-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T09:26:25.013568+00:00",
-   "title_ru": "IPO ИИ останавливается, в то время как частные рынки нагреваются (видео)"
-  },
-  {
-   "title": "Freight discounts prompt India's HPCL to buy oil on delivered basis",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNTEozYTJRNFJzOGxvTk5SNFhtZkUwcU5NckN5YV94SGhKbFlQYWg1OXlQX0dkV09BSGhPdlMyQ09MYnhFcEpSRklERUU0SXdybWZKWlVnWWctVGpVU24xZXY3Z19QaGhrNm1PdkZGbms0Q180MXlGRG1jT1dxQVgtbzYxOWhfeUhBb0VjdVE0U1BfQUV1bTJUSzdGQnQyRTBBa0pPUG5IWWNPMWwwQ2VIT3Fn?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T09:26:25.013568+00:00",
-   "title_ru": "Скидки на фрахт побуждают индийскую HPCL покупать нефть с доставкой",
-   "tags": [
-    "oil"
-   ]
-  },
-  {
-   "title": "This hot AI-fueled stock has been in a rut. It just beat earnings expectations by 36%.",
-   "link": "https://www.marketwatch.com/story/this-hot-ai-fueled-stock-has-been-in-a-rut-it-just-beat-earnings-expectations-by-36-4a4188cb?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-23T09:26:25.013568+00:00"
-  },
-  {
-   "title": "De Cos Is Narrow Favorite to Follow Lagarde at ECB, Survey Shows",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-23/de-cos-is-narrow-favorite-to-follow-lagarde-at-ecb-survey-shows",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-23T09:31:24.930988+00:00",
-   "title_ru": "De Cos - узкий фаворит Лагард в ЕЦБ, показывает опрос",
-   "lead": "Pablo Hernandez de Cos is most likely to succeed Christine Lagarde at the helm of the European Central Bank, though his main contender is isn’t far behind, according to a survey of economists.",
-   "lead_ru": "Согласно опросу экономистов, Пабло Эрнандес де Кос, скорее всего, сменит Кристин Лагард на посту главы Европейского центрального банка, хотя его главный соперник не отстает.",
-   "tags": [
-    "ECB"
-   ]
-  },
-  {
-   "title": "France is getting its credit rating reviewed by Moody’s. What to expect as French debt turmoil spills overseas.",
-   "link": "https://www.marketwatch.com/story/france-is-getting-its-credit-rating-reviewed-by-moodys-what-to-expect-as-french-debt-turmoil-spills-overseas-e39de111?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-23T09:31:24.930988+00:00"
-  },
   {
    "title": "Hedge fund returns worsen this week as tech selloff deepens",
    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNS0h2UUh0dUpTb1VWWGJYWm1KOXM4eXZQc1dyTlJMSWNnQ2tOVS1JRmdTMmJMaGpJSEo1c05kLUpXamZVTWVPWUppREI5OWFPUmZVV3hnektWdlRmWXVHNHpkQldJUk1PVEN0QUQ5NE0zczdSc0RMRGhOV28yYkZqeHFEMTFXUElRTDVCMXUybHRGSFhXcUFBS0hoS3V1NWVSREJGa2FCT1ludVU?oc=5",
@@ -4944,6 +4885,19 @@
    "score": 3,
    "ts": "2026-10-26T09:25:24.146578+00:00",
    "title_ru": "Сингапур защищает себя от энергетических рисков, поскольку Индонезия сокращает газ"
+  },
+  {
+   "title": "UK hostel operator Safestay exploring more property sales to boost liquidity, shares tumble",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNRVVQVnlZOGhXS1hPVjdLLXg5NEFBYUxMeF82UEQ1SUhWcWx1Ym9EZXYyMEhLRE9kUTZKZzl3emVNR3lRa1Myb0RaQm5FVjJJRlZaSlQtTmFFYUpjUW8ya3gtSTdQYlB2bFZnTWtVUk9oZVktb3A4ZFRHS0lFd0Zua01xdzNFb2hpSnRrb0RqbVE2UEtFOFlrUWxrVUxDQ1Utamwxc0ZtWml4dnpjZzNnOHY3V1FSdXNQM2RXTFJqS3dYb28?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T09:35:24.244114+00:00",
+   "title_ru": "Британский оператор хостелов Safestay рассматривает возможность увеличения продаж недвижимости для повышения ликвидности, акции падают",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-25",
