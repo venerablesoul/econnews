@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "d157be01a9026e49": "2026-10-23T14:01:55.752346+00:00",
   "61709f68fd91a5dd": "2026-10-23T14:06:55.769626+00:00",
   "6961318ec12ce745": "2026-10-23T14:11:55.666007+00:00",
   "cae4132b0b921271": "2026-10-23T14:16:55.714462+00:00",
@@ -7231,6 +7230,22 @@
    },
    {
     "src": "sec",
+    "id": "61d764b0df6a309c",
+    "ticker": "PG",
+    "company": "PROCTER & GAMBLE Co",
+    "who": "Paul Gama",
+    "role": "CEO",
+    "type": "sell",
+    "value": 698460,
+    "shares": 4331,
+    "price": 161.27,
+    "plan": false,
+    "date": "2026-10-23",
+    "disclosed": "2026-10-26",
+    "link": "https://www.sec.gov/Archives/edgar/data/2110932/000008042426000260/0000080424-26-000260-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "ec5f1f7b4b190a11",
     "ticker": "CART",
     "company": "Maplebear Inc.",
@@ -11164,22 +11179,6 @@
     "date": "2026-10-15",
     "disclosed": "2026-10-16",
     "link": "https://www.sec.gov/Archives/edgar/data/1836833/000136409626000008/0001364096-26-000008-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "aea71caa45492def",
-    "ticker": "MDT",
-    "company": "Medtronic plc",
-    "who": "Michael Marinaro",
-    "role": "EVP, Pres MedSurg and Americas",
-    "type": "sell",
-    "value": 1000320,
-    "shares": 10420,
-    "price": 96.0,
-    "plan": true,
-    "date": "2026-10-15",
-    "disclosed": "2026-10-16",
-    "link": "https://www.sec.gov/Archives/edgar/data/1984186/000198418626000010/0001984186-26-000010-index.htm"
    }
   ],
   "docs": {
@@ -11219,12 +11218,10 @@
    "0001398344-26-018736",
    "0001976408-26-000901",
    "0001976408-26-000902",
-   "0001628280-26-067128",
+   "0000080424-26-000260",
    "0001990106-26-000026",
-   "0001976408-26-000900",
    "0001976408-26-000905",
    "0001193125-26-431207",
-   "0001049521-26-000085",
    "0001976408-26-000904",
    "0001749928-26-000007",
    "0002022050-26-000011",
