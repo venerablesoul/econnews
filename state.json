@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "a5104525e259e564": "2026-10-23T09:01:24.897084+00:00",
-  "4b3787959d582e0d": "2026-10-23T09:01:24.897084+00:00",
   "d0d466ac93c98ffd": "2026-10-23T09:06:24.962258+00:00",
   "3d799e11056aa0ee": "2026-10-23T09:06:24.962258+00:00",
   "f195e6568041fe5f": "2026-10-23T09:06:24.962258+00:00",
@@ -599,18 +597,11 @@
   "e9175f525fa1c782": "2026-10-26T08:49:41.526900+00:00",
   "0d6d52779aeb309a": "2026-10-26T08:49:41.526900+00:00",
   "a295f19853d7a305": "2026-10-26T08:49:41.526900+00:00",
-  "7f456ff5de0912ed": "2026-10-26T08:59:41.484858+00:00"
+  "7f456ff5de0912ed": "2026-10-26T08:59:41.484858+00:00",
+  "f737e8530d3dd326": "2026-10-26T09:04:41.418404+00:00",
+  "a9e74d5718425258": "2026-10-26T09:04:41.418404+00:00"
  },
  "recent": [
-  {
-   "title": "The mobile ambitions of SpaceX see telecom stocks get hit again. What the latest developments mean.",
-   "link": "https://www.marketwatch.com/story/the-mobile-ambitions-of-spacex-see-telecom-stocks-get-hit-again-what-the-latest-developments-mean-9a4159b5?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-23T09:01:24.897084+00:00"
-  },
   {
    "title": "Volvo Car CEO on Earnings, China Market, Job Cuts",
    "link": "https://www.bloomberg.com/news/videos/2026-10-23/volvo-car-ceo-on-earnings-china-cost-cutting",
@@ -4982,6 +4973,25 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "Survey on the Access to Finance of Enterprises: lending conditions tightened",
+   "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261026~bde7b6d11a.en.html",
+   "sources": [
+    "ECB"
+   ],
+   "score": 5,
+   "ts": "2026-10-26T09:04:41.418404+00:00",
+   "title_ru": "Опрос о доступе предприятий к финансированию: ужесточение условий кредитования"
+  },
+  {
+   "title": "Support for semiconductor stocks could be as much as 15% lower than current levels, says Morgan Stanley",
+   "link": "https://www.marketwatch.com/story/support-for-semiconductor-stocks-could-be-as-much-as-15-lower-than-current-levels-says-morgan-stanley-1f387f16?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-26T09:04:41.418404+00:00"
   }
  ],
  "last_digest": "2026-10-25",
