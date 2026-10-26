@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "f7699d77aa3ae4ee": "2026-10-23T22:47:41.391035+00:00",
-  "7edea1d5420ae4b3": "2026-10-23T22:47:41.391035+00:00",
   "5c5767c90ce585c8": "2026-10-23T22:52:41.410773+00:00",
   "a9253d2fd4319482": "2026-10-23T22:52:41.410773+00:00",
   "a40d64394e1aa2f8": "2026-10-23T22:53:31.869654+00:00",
@@ -600,19 +598,11 @@
   "faae59e83b6dae30": "2026-10-26T22:17:01.251396+00:00",
   "b20a095ce78bf965": "2026-10-26T22:27:01.176687+00:00",
   "7313683ec6cab804": "2026-10-26T22:27:01.176687+00:00",
-  "3e34e7a03b6ab601": "2026-10-26T22:32:01.139598+00:00"
+  "3e34e7a03b6ab601": "2026-10-26T22:32:01.139598+00:00",
+  "e82156e97596f10f": "2026-10-26T22:52:01.178691+00:00",
+  "00111d8c171a3b8b": "2026-10-26T22:52:01.178691+00:00"
  },
  "recent": [
-  {
-   "title": "France spared Moody's ratings downgrade as it struggles with unrest",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQNDNzYlVKMzN1VE5rMDhtcVFnY1NsRXZNYmRVZmZKc2dxVC1xZ19abmEtTTlHclVXQWc4YWJXWHNtNktWU2ZBSUVWT1lwWmo1UDVsdFd1RUxjQUkwUGRROUVhWVZkTnJmSU1pdUl4d1FCYU1nTGRMckNaUnpaQVVlOFhkdzZuVFZKaUNCajRGWXFxS0RIODZYSUtVU0o?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-23T22:47:41.391035+00:00",
-   "title_ru": "Франция пощадила рейтинги Moody's, борясь с беспорядками"
-  },
   {
    "title": "Canadian dollar hits five-week high as data supports rate hike bets",
    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRHNLSXpMVmtYQ3JMZDE5UW81bFo4cG5VT04zWFBSUm1XeWhnWURVZlpMdmZ2b0F3RWo4RUxZekt2ZUFMbkwwN1E5R1M3TXhaeU5SdXltUlJEYk5oY21TU1lUMWota1BFZ19yVVNFSWt6WUxsa00zVXpmTDB1Sm83X2E3VkhOVFVnY1ZDRVZhTU9jY3EtbzR0MG5RZTNBZmtrVWdmamluektNOGFFdlE?oc=5",
@@ -4653,6 +4643,16 @@
    "tags": [
     "tariffs"
    ]
+  },
+  {
+   "title": "Memory Titans Test AI Demand While Bubble Fears Transfix Markets",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQR1NNS1ZjY0QxRUJaLXBTSkNHenBNQU8ySk1rT0FhbmItdVEyZFJhamF3OFdFb2kzZ0EtUW1ZV0g2SDM1cVI2TXdTMjJSNFJRZjM0NXZKbEs5OUFNZjgtSGN0RUpRemdKM2FVbzJxTm1rQkVGdldVdDdORFl0UWRDRzhNeURmWWlBUmpveXNOZk95TjBGa1dSYVB6VHJYUkdxVXptYjRtWVVfX1hTa01vTHhwa2c3QQ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T22:52:01.178691+00:00",
+   "title_ru": "Титаны памяти тестируют спрос на ИИ, в то время как пузырь боится рынков Transfix"
   }
  ],
  "last_digest": "2026-10-26",
@@ -4675,7 +4675,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 1,
+  "Fed": 0,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
@@ -7497,6 +7497,38 @@
     "date": "2026-10-23",
     "disclosed": "2026-10-26",
     "link": "https://www.sec.gov/Archives/edgar/data/2014386/000201438626000024/0002014386-26-000024-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "4aceea8986ce5973",
+    "ticker": "STC",
+    "company": "STEWART INFORMATION SERVICES CORP",
+    "who": "William S. Jr. Corey",
+    "role": "Director",
+    "type": "buy",
+    "value": 93640,
+    "shares": 2000,
+    "price": 46.82,
+    "plan": false,
+    "date": "2026-10-23",
+    "disclosed": "2026-10-26",
+    "link": "https://www.sec.gov/Archives/edgar/data/1815639/000162828026067362/0001628280-26-067362-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "bedf6a8678f96bc1",
+    "ticker": "STC",
+    "company": "STEWART INFORMATION SERVICES CORP",
+    "who": "C Allen Jr Bradley",
+    "role": "Director",
+    "type": "buy",
+    "value": 94600,
+    "shares": 2000,
+    "price": 47.3,
+    "plan": false,
+    "date": "2026-10-23",
+    "disclosed": "2026-10-26",
+    "link": "https://www.sec.gov/Archives/edgar/data/1341775/000162828026067360/0001628280-26-067360-index.htm"
    },
    {
     "src": "sec",
@@ -11001,38 +11033,6 @@
     "date": "2026-10-15",
     "disclosed": "2026-10-19",
     "link": "https://www.sec.gov/Archives/edgar/data/1823952/000182395226000024/0001823952-26-000024-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "0bd25d90d8b6ef2e",
-    "ticker": "ELTP",
-    "company": "ELITE PHARMACEUTICALS INC /NV/",
-    "who": "Barry H Dash",
-    "role": "Director",
-    "type": "buy",
-    "value": 25980,
-    "shares": 100000,
-    "price": 0.26,
-    "plan": false,
-    "date": "2026-10-09",
-    "disclosed": "2026-10-19",
-    "link": "https://www.sec.gov/Archives/edgar/data/1324222/000149315226047486/0001493152-26-047486-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "dcf24125c5f09212",
-    "ticker": "NBIS",
-    "company": "Nebius Group N.V.",
-    "who": "Arne Grimme",
-    "role": "Director",
-    "type": "buy",
-    "value": 50317,
-    "shares": 296,
-    "price": 169.99,
-    "plan": true,
-    "date": "2026-10-16",
-    "disclosed": "2026-10-16",
-    "link": "https://www.sec.gov/Archives/edgar/data/2091395/000151384526000130/0001513845-26-000130-index.htm"
    }
   ],
   "docs": {
@@ -11068,47 +11068,47 @@
   "checked": "2026-10-26T22:17:01.251396+00:00",
   "sec_seen": [
    "0001193125-26-432230",
-   "0001225208-26-008502",
    "0001731729-26-000008",
-   "0001193125-26-432220",
-   "0001225208-26-008501",
    "0000912282-26-001394",
-   "0001193125-26-432218",
+   "0001137789-26-000292",
    "0000902664-26-004286",
+   "0001137789-26-000288",
+   "0000912282-26-001400",
    "0001225208-26-008516",
+   "0000912282-26-001396",
    "0000909832-26-000113",
    "0000909832-26-000105",
-   "0000912282-26-001396",
-   "0001510281-26-000377",
+   "0001137789-26-000297",
    "0001140361-26-040789",
    "0000909832-26-000107",
    "0000909832-26-000109",
    "0000909832-26-000103",
    "0001193125-26-432226",
+   "0001628280-26-067360",
+   "0001137789-26-000296",
    "0001464521-26-000156",
    "0000912282-26-001398",
    "0000909832-26-000117",
    "0000912282-26-001392",
-   "0001225208-26-008507",
-   "0001225208-26-008504",
-   "0001225208-26-008503",
-   "0001225208-26-008508",
    "0001493152-26-048591",
-   "0001225208-26-008509",
    "0002014386-26-000024",
-   "0001225208-26-008515",
-   "0000950103-26-016182",
-   "0001193125-26-432264",
-   "0001193125-26-432207",
-   "0001225208-26-008505",
-   "0000909832-26-000111",
    "0001193125-26-432266",
-   "0001628280-26-067340",
+   "0001225208-26-008515",
+   "0001193125-26-432264",
+   "0000950103-26-016182",
+   "0000912282-26-001401",
+   "0001628280-26-067362",
+   "0000909832-26-000111",
+   "0000909832-26-000119",
+   "0001137789-26-000293",
+   "0001137789-26-000290",
    "0000950103-26-016181",
    "0000909832-26-000115",
-   "0001225208-26-008500",
-   "0001225208-26-008510",
-   "0001225208-26-008506"
+   "0001137789-26-000291",
+   "0001137789-26-000295",
+   "0001137789-26-000294",
+   "0001137789-26-000289",
+   "0001225208-26-008510"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
