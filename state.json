@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "1f1ca2ac56509c4e": "2026-10-23T15:16:55.764553+00:00",
-  "7e0e5436ac51d52a": "2026-10-23T15:21:55.675248+00:00",
-  "4892ae6e79133f2b": "2026-10-23T15:21:55.675248+00:00",
-  "4c58c31d73be4861": "2026-10-23T15:21:55.675248+00:00",
-  "c23e77250f9ae64a": "2026-10-23T15:21:55.675248+00:00",
   "b8311217250e6439": "2026-10-23T15:31:55.751326+00:00",
   "c55509c82e691cac": "2026-10-23T15:36:55.903274+00:00",
   "578459f17e7a872a": "2026-10-23T15:36:55.903274+00:00",
@@ -604,50 +599,13 @@
   "2d777c10e4c87cff": "2026-10-26T15:11:22.727822+00:00",
   "7dac84b8c6c3e52d": "2026-10-26T15:11:22.727822+00:00",
   "8b3e62890f64a43d": "2026-10-26T15:16:22.777559+00:00",
-  "dcd223ed9d76747a": "2026-10-26T15:16:22.777559+00:00"
+  "dcd223ed9d76747a": "2026-10-26T15:16:22.777559+00:00",
+  "cebb0d1140627143": "2026-10-26T15:26:22.762219+00:00",
+  "8ce937bf1e5fd601": "2026-10-26T15:26:22.762219+00:00",
+  "4f8a465d4cdaa1f0": "2026-10-26T15:26:22.762219+00:00",
+  "8a2ce73bfb18b282": "2026-10-26T15:26:22.762219+00:00"
  },
  "recent": [
-  {
-   "title": "Civil servant who juggled five jobs says he was 'surprised' to be charged with fraud",
-   "link": "https://www.bbc.co.uk/news/articles/c6lykzwjkj1eo?at_medium=RSS&at_campaign=rss",
-   "sources": [
-    "BBC"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T15:21:55.675248+00:00",
-   "title_ru": "Государственный служащий, который жонглировал пятью рабочими местами, говорит, что он был «удивлен» обвинением в мошенничестве",
-   "lead": "Kashim Chowdhury denied being dishonest when not telling employers he had other jobs.",
-   "lead_ru": "Кашим Чоудхури отрицал, что был нечестным, когда не сказал работодателям, что у него есть другая работа.",
-   "tags": [
-    "jobs"
-   ]
-  },
-  {
-   "title": "Ведев оценил, ждать ли «приятного сюрприза» от ЦБ в конце года",
-   "link": "https://www.rbc.ru/economics/23/10/2026/6adb730bc1083dfd88d880a1",
-   "sources": [
-    "RBC"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T15:21:55.675248+00:00",
-   "title_en": "Vedev estimated whether to expect a \"pleasant surprise\" from the Central Bank at the end of the year",
-   "lead": "Эксперт заявил, что к концу года россияне «не увидят» ключевую ставку на уровне 12% годовых, однако Центробанк может снизить уровнь на 25 базисных пункта",
-   "lead_en": "The expert said that by the end of the year the Russians \"will not see\" the key rate at the level of 12% per annum, but the Central Bank may reduce the level by 25 basis points",
-   "tags": [
-    "BankOfRussia",
-    "rates",
-    "Russia"
-   ]
-  },
-  {
-   "title": "Глава Nvidia предсказал Казахстану роль центра ИИ для Европы",
-   "link": "https://www.rbc.ru/rbcfreenews/6adb79c0327b4539ab2e0ced",
-   "sources": [
-    "RBC"
-   ],
-   "score": 1,
-   "ts": "2026-10-23T15:21:55.675248+00:00"
-  },
   {
    "title": "Russian ESPO oil sellers seek record premiums as Gulf exports uncertain",
    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNRFdMeDFRZldDUmNTY1oyRGViTC1HOVdsZEhFdE9ORFk2Mkt1eHN0OGpaY2QzeFpHdThqaW5oRUZOLVRlM1VxOVZHWDQ0WlRvWk85Nzd0Q0lnRDdNbndUWFQ5M0JKb09sc01ha3VzaU9WQktuYU1Qa3BCRHc4a3lnQVI5ZExfTmIwTEVrWExkcUFhY2l1c3BlQXU4aTZfMDBZemVxRWQ5LWM5ekt3ZGd4ZjhqQ1Z5MXZzeFR0Xw?oc=5",
@@ -4801,6 +4759,34 @@
    "title_ru": "S&P Dow Jones сотрудничает с Калши по контрактам на индексные события, использует данные прогнозов",
    "tags": [
     "markets"
+   ]
+  },
+  {
+   "title": "Petrobras CEO calls selloff after Lula win speculative, sees buying opportunity",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNTmdiRGEwaHZQdnQ3MHB5eERHYU1pZUtOUFhJdkg4TGN4aUt4UVYzU1FsdVdvaXFjMU9QT3NsQTZpUHpkMkNfWUx4dzZpa2dkNlBaUzZ1UDBMXzVIUjl5OUJPVkVlVjFNYUJmdW9TQ3JOSXpiMFFYQVBXSXJUMGY2QlFVVUY3ajNLc1dObW4wSU1xSHAwRWxQc3VoNDYzTFFZd2hEZ2MxRmtFOThDVkgwVlZfNmNtblAwaFNiSkVVSG9ENC1ESnNQRE1B?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-26T15:26:22.762219+00:00",
+   "title_ru": "Генеральный директор Petrobras называет распродажу после победы Лулы спекулятивной и видит возможность покупки",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "Saudi Arabia’s Houthi Challenge Shifts Fears to Non-Oil Economy",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-26/saudi-arabia-s-houthi-challenge-shifts-fears-to-non-oil-economy",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-26T15:26:22.762219+00:00",
+   "title_ru": "Вызов хуситов Саудовской Аравии переносит опасения на ненефтяную экономику",
+   "lead": "Saudi Arabia’s oil industry managed to ride out concerns in the early days of the Iran war and keep exports flowing.",
+   "lead_ru": "Нефтяной промышленности Саудовской Аравии удалось преодолеть опасения в первые дни войны с Ираном и сохранить экспорт.",
+   "tags": [
+    "oil"
    ]
   }
  ],
@@ -11207,10 +11193,7 @@
    "sec": true
   },
   "checked": "2026-10-26T14:46:22.746502+00:00",
-  "sec_seen": [
-   "0000821026-26-000138",
-   "0000821026-26-000136"
-  ],
+  "sec_seen": [],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
   }
