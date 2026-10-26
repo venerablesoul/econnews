@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e0444880f3aa1592": "2026-10-23T19:37:41.453079+00:00",
   "a49d3311d11a1582": "2026-10-23T19:47:41.451947+00:00",
   "92ed6710d9f3edda": "2026-10-23T19:52:41.497850+00:00",
   "82e9268c66dc2f06": "2026-10-23T20:07:41.454673+00:00",
@@ -600,19 +599,11 @@
   "90d22dbfc0288a61": "2026-10-26T19:21:22.919043+00:00",
   "05bb52bd10953af8": "2026-10-26T19:21:22.919043+00:00",
   "bd85eb5bff899be8": "2026-10-26T19:21:22.919043+00:00",
-  "1cd443e5888996d5": "2026-10-26T19:21:22.919043+00:00"
+  "1cd443e5888996d5": "2026-10-26T19:21:22.919043+00:00",
+  "0dfc4992d0876b7a": "2026-10-26T19:36:22.714659+00:00",
+  "327c2b700455d823": "2026-10-26T19:41:23.737367+00:00"
  },
  "recent": [
-  {
-   "title": "EXCLUSIVE: India's Scotch probe of Diageo, Pernod undermining India-UK pact benefits, trade group says",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQdjBQY3BDTHZ4N3UxczhFaWJMRzViZ3BkX3loejc4QUFEdnF1WUREYW5ZT0NhTFgyMTdNWjR1b1l5dncyd2lFOURRVEMtOW9YUVdqN3lfRm5Mb0dkcHZqMDE0VmlPX1hpSUM1SXpzeFR0T095QU9Mb2w4SXZldTZkYWpMLVRQZkFfWGtIbTBxQlJJVjYxWmxHclp0TEtMdHNyVDNwaTBVckFmQVdmRnR6Y1lnWkMySy1mMjRrLXhNTGtweEZ6UWJB?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T19:37:41.453079+00:00",
-   "title_ru": "Эксклюзив: индийское шотландское расследование Diageo, Pernod подрывает преимущества индийско-британского пакта, говорит торговая группа"
-  },
   {
    "title": "Trump says he spoke with UK's prime minister, discussed oil",
    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPNUNKODFrR1F2TUlucF9FcWd0TV8xUHFzc0RKOHdfUk4tcEtaa1ZCUGZLNV80NXFUQlJLajRxOHRZSTZ5NUJnSllzWDZJMFNFbnBkd3NTaTNkNWV0NTFrZnF2THNmd3U4S1E4cU5hN0VJRFdUR1FHeEJLcFBhUTUtMHRjaEQycVN5Zkx2SThGaVZKMzNQdnVGaUtuaFBmaTVLZ1pmN0g0T09vZDVZWmc?oc=5",
@@ -4695,6 +4686,18 @@
    "tags": [
     "dollar"
    ]
+  },
+  {
+   "title": "Lula’s Win Isn’t as Bad as Markets Think",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-26/opinion-lula-s-win-isn-t-as-bad-as-markets-think-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T19:41:23.737367+00:00",
+   "title_ru": "Победа Лулы не так плоха, как думают рынки",
+   "lead": "Luiz Inácio Lula da Silva’s shock win in Brazil against Flávio Bolsonaro triggered an investor reaction for the ages. Bloomberg Opinion columnist Juan Pablo Spinetto explains why he thinks markets are overacting.",
+   "lead_ru": "Шокирующая победа Луиса Инасио Лулы да Силвы в Бразилии над Флавио Болсонару вызвала реакцию инвесторов на долгие годы. Обозреватель Bloomberg Opinion Хуан Пабло Спинетто объясняет, почему, по его мнению, рынки переигрывают."
   }
  ],
  "last_digest": "2026-10-26",
@@ -7235,6 +7238,22 @@
     "date": "2026-10-23",
     "disclosed": "2026-10-26",
     "link": "https://www.sec.gov/Archives/edgar/data/1277620/000127762026000009/0001277620-26-000009-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "8baf763ac5198576",
+    "ticker": "PG",
+    "company": "PROCTER & GAMBLE Co",
+    "who": "Shailesh Jejurikar",
+    "role": "CEO",
+    "type": "sell",
+    "value": 5708048,
+    "shares": 35000,
+    "price": 163.09,
+    "plan": false,
+    "date": "2026-10-23",
+    "disclosed": "2026-10-26",
+    "link": "https://www.sec.gov/Archives/edgar/data/1746310/000008042426000263/0000080424-26-000263-index.htm"
    },
    {
     "src": "sec",
@@ -11059,22 +11078,6 @@
     "date": "2026-10-15",
     "disclosed": "2026-10-16",
     "link": "https://www.sec.gov/Archives/edgar/data/1696737/000169673726000021/0001696737-26-000021-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "a1469deea3108988",
-    "ticker": "GRAL",
-    "company": "GRAIL, Inc.",
-    "who": "Joshua J. Ofman",
-    "role": "CEO",
-    "type": "sell",
-    "value": 2736945,
-    "shares": 20000,
-    "price": 136.85,
-    "plan": true,
-    "date": "2026-10-15",
-    "disclosed": "2026-10-16",
-    "link": "https://www.sec.gov/Archives/edgar/data/1822088/000162828026066148/0001628280-26-066148-index.htm"
    }
   ],
   "docs": {
@@ -11111,11 +11114,14 @@
   "sec_seen": [
    "0001274559-26-000007",
    "0001628280-26-067240",
-   "0001213900-26-112441",
    "0001897970-26-000010",
+   "0000080424-26-000263",
    "0001628280-26-067255",
+   "0000943819-26-000086",
    "0001277620-26-000009",
-   "0001493152-26-048493"
+   "0001493152-26-048493",
+   "0001628280-26-067257",
+   "0001213900-26-112441"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
