@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "5527c4a9b37ba1d0": "2026-10-23T08:36:24.934514+00:00",
-  "d726603bb280fda7": "2026-10-23T08:36:24.934514+00:00",
   "8eb62d0c6fb9702a": "2026-10-23T08:41:24.904418+00:00",
   "43a276f9f4cf0c9d": "2026-10-23T08:46:24.946773+00:00",
   "a5104525e259e564": "2026-10-23T09:01:24.897084+00:00",
@@ -595,24 +593,12 @@
   "7b2f3337c5e00389": "2026-10-26T08:19:41.453760+00:00",
   "cccc77875e337510": "2026-10-26T08:24:41.667084+00:00",
   "2310ed60df129d98": "2026-10-26T08:29:41.411563+00:00",
-  "465098765aec03eb": "2026-10-26T08:34:41.389824+00:00"
+  "465098765aec03eb": "2026-10-26T08:34:41.389824+00:00",
+  "2f2832e729cecdc7": "2026-10-26T08:39:41.564245+00:00",
+  "ce7f8e9b829c10b7": "2026-10-26T08:39:41.564245+00:00",
+  "80b5a397ef1a26d8": "2026-10-26T08:39:41.564245+00:00"
  },
  "recent": [
-  {
-   "title": "BOJ Is Said to Keep Rate Hikes on Fast Track, December in Focus",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-23/boj-is-said-to-keep-rate-hikes-on-fast-track-december-in-focus",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-23T08:36:24.934514+00:00",
-   "title_ru": "БАНК ЯПОНИИ, как говорят, сохранит повышение ставок на ускоренном уровне, декабрь в фокусе",
-   "lead": "The Bank of Japan may maintain a continued fast pace of rate hikes given current price trends and a view at the bank that the impact of increases on the economy so far has been limited, with December the next potential move…",
-   "lead_ru": "Банк Японии может сохранить быстрые темпы повышения ставок, учитывая текущие ценовые тенденции и мнение банка о том, что влияние роста на экономику до сих пор было ограниченным, а декабрь - следующим потенциальным шагом...",
-   "tags": [
-    "rates"
-   ]
-  },
   {
    "title": "UK Growth Hits Eight-Month High and Jobs Slump Ends, PMI Shows",
    "link": "https://www.bloomberg.com/news/articles/2026-10-23/uk-growth-hits-eight-month-high-and-jobs-slump-ends-pmi-shows",
@@ -4960,6 +4946,21 @@
    "title_ru": "Европейские акции плоские, так как инвесторы смотрят на доходы; энергия тянет",
    "tags": [
     "markets"
+   ]
+  },
+  {
+   "title": "AI cloud computing companies face ‘guppy-level death’, Elon Musk warns, as funding dries up – business live",
+   "link": "https://www.theguardian.com/business/live/2026/oct/26/ai-cloud-computing-companies-guppy-level-death-elon-musk-stock-markets-dollar-oil-bond-yieds-latest-news-updates",
+   "sources": [
+    "The Guardian"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T08:39:41.564245+00:00",
+   "title_ru": "Илон Маск предупреждает, что компании, занимающиеся облачными вычислениями ИИ, столкнутся со «смертью на уровне гуппи», поскольку финансирование иссякает – бизнес живет",
+   "lead": "Rolling coverage of the latest economic and financial news French government bonds are rallying this morning after Paris avoided being downgrade by rating agency Moody’s last Friday night.",
+   "lead_ru": "Скользящее освещение последних экономических и финансовых новостей Французские государственные облигации растут сегодня утром после того, как Париж избежал понижения рейтинговым агентством Moody's в прошлую пятницу вечером.",
+   "tags": [
+    "bonds"
    ]
   }
  ],
