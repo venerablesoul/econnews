@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "a10c2004dfc41653": "2026-10-23T11:16:24.896054+00:00",
   "8076250893cbf653": "2026-10-23T11:21:24.934560+00:00",
   "9f2be5c829b437cb": "2026-10-23T11:21:24.934560+00:00",
   "9e99c2cb2d7662e1": "2026-10-23T11:21:24.934560+00:00",
@@ -608,23 +607,10 @@
   "2f87a6e098959427": "2026-10-26T11:05:24.264928+00:00",
   "9676140a22e5d836": "2026-10-26T11:05:24.264928+00:00",
   "a6807bfb914a624f": "2026-10-26T11:05:24.264928+00:00",
-  "3b5b91f474dd64a5": "2026-10-26T11:15:24.145265+00:00"
+  "3b5b91f474dd64a5": "2026-10-26T11:15:24.145265+00:00",
+  "c0f481cbf906ce98": "2026-10-26T11:20:24.158305+00:00"
  },
  "recent": [
-  {
-   "title": "UK stocks set for weekly declines as oil prices soar",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNLUFBR0xnWGVNdnlZWHllVVp3bmdPQ2xsMEVHbXktYXUwMVRmZlZNU1E4Z3F1R0paZVZfZkFUbFU1cG5ZZnZteFVxUXRRS0c5RmFiVUtiU25makZIMTVaR2dlbGZLQ2VRN0tKYnpmblZLdUZkajhmUFgxMG1wNEU2N21Wdno3UHFoMGhnM2EyMDZkY1JLZ0FDT1lnSWNQU0NlZTFyNUo1QkpNTWFm?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 7,
-   "ts": "2026-10-23T11:16:24.896054+00:00",
-   "title_ru": "Британские акции готовятся к еженедельному снижению, поскольку цены на нефть растут",
-   "tags": [
-    "oil",
-    "markets"
-   ]
-  },
   {
    "title": "ЦБ держит паузу // Ключевая ставка второй раз оставлена на уровне 14%",
    "link": "https://www.kommersant.ru/doc/9058993",
@@ -4991,6 +4977,19 @@
    "lead_ru": "По мере приближения промежуточных выборов в США мы анализируем данные, чтобы увидеть истинную картину экономики США при Трампе. Поскольку промежуточные выборы быстро приближаются, многие американцы думают об экономике.",
    "tags": [
     "inflation"
+   ]
+  },
+  {
+   "title": "The War Bump Is a False Victory for S&P 500 Profits",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNNURBQm1leXZNOTNYcGI4OHZER1cxUUdjRVQ3MHhZZ3dyd3lkbF8wcGtDYlV2ZkpCTmpFYVNyc0xlTHRINVVxRnpMUnpaTklxMGItSEh1blhmV2FJalR3T19PR1dfU00ydXhwclVOT25YZzNraXdBcVJiM0dnRDlSVTkzRlcxakQwWHhPZFA0RXhCajZoeG9uOHFLcEFCYmxtVE9uajhfMXQ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T11:20:24.158305+00:00",
+   "title_ru": "Военный удар — ложная победа для прибыли S&P 500",
+   "tags": [
+    "markets"
    ]
   }
  ],
