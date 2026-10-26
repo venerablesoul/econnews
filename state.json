@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "6f7f8f98c7ba8194": "2026-10-23T06:25:51.525322+00:00",
   "56fe187ad6c1acf0": "2026-10-23T06:30:51.521337+00:00",
   "ca258e53b80791a9": "2026-10-23T06:35:51.570237+00:00",
   "ccb51a4535bcddd5": "2026-10-23T06:41:24.919424+00:00",
@@ -602,22 +601,10 @@
   "c896893b147c97c7": "2026-10-26T06:19:41.367638+00:00",
   "16fb9373a0870f63": "2026-10-26T06:19:41.367638+00:00",
   "c212cfdcb0409c20": "2026-10-26T06:19:41.367638+00:00",
-  "e31688edbe4528cf": "2026-10-26T06:24:41.380317+00:00"
+  "e31688edbe4528cf": "2026-10-26T06:24:41.380317+00:00",
+  "14c512d55ab75dd5": "2026-10-26T06:29:41.363681+00:00"
  },
  "recent": [
-  {
-   "title": "World Economic Outlook (October 2026) - Real GDP growth",
-   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNNjIyQjM2WlJfMUxQZ3NvTTN3eWlEWkdkZWE4cUNUOGVVOVd1ekdLaFVTcTdrTlZWNkJNam04Wk5JY0ZhU1dla3VqcTdTVkJTbjA2cjl6REtjbXlDSllwQk1QOGE5M2poZk5OZWNKcWsxbjVBa1p2SUFDYlV4OGkzM19lU2lQVGVZMC1EekhLaGw?oc=5",
-   "sources": [
-    "IMF"
-   ],
-   "score": 9,
-   "ts": "2026-10-23T06:25:51.525322+00:00",
-   "title_ru": "Перспективы развития мировой экономики (октябрь 2026 г.) - Рост реального ВВП",
-   "tags": [
-    "GDP"
-   ]
-  },
   {
    "title": "AI Rout Hits Asia as Investors Rush to Safety",
    "link": "https://www.bloomberg.com/news/videos/2026-10-23/insight-with-haslinda-amin-10-23-2026-video",
@@ -5182,6 +5169,19 @@
    "score": 3,
    "ts": "2026-10-26T06:14:41.371529+00:00",
    "title_ru": "Revolut запускает персональные кредиты в Великобритании, привлекая крупные банки"
+  },
+  {
+   "title": "South African rand steady with local economic data, Fed decision in focus",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPblVTN1p0WUdCV2FocHA2N1VTcThyWDdaRUpoTWppb0tUXzJCT0E0Nmg1dGZIS0l6dXVXQ25SNDBLTzhuakJvSnpfejJYWGk2ZVVTNDA1bXBHQXgybXB5SUpJOW42Rm1IVEw5YU5pS2NLeFZON25xbDViZE1LUVpzd0xhZ3JDNEpfdUoxdS1wV00yLUZSNndlQmFacXVSY0pUeTdmdkRRbWloWW5heEQ5ejMxUEpOOFNIZkE?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-26T06:29:41.363681+00:00",
+   "title_ru": "Южноафриканский рэнд стабилен с местными экономическими данными, решение ФРС в центре внимания",
+   "tags": [
+    "Fed"
+   ]
   }
  ],
  "last_digest": "2026-10-25",
