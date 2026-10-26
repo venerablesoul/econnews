@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "26e35ff8a36f3760": "2026-10-23T04:50:51.507191+00:00",
   "04f3724f0129887b": "2026-10-23T05:05:51.540516+00:00",
   "677c33702f2e9feb": "2026-10-23T05:10:51.550957+00:00",
   "88e0238fa0091ddb": "2026-10-23T05:10:51.550957+00:00",
@@ -593,24 +592,11 @@
   "fd87e48941331b2d": "2026-10-26T04:34:41.381918+00:00",
   "6b0b0f9487910618": "2026-10-26T04:39:41.382446+00:00",
   "82fa9ff4f887128f": "2026-10-26T04:39:41.382446+00:00",
-  "0150aa78aa42c405": "2026-10-26T04:49:41.378443+00:00"
+  "0150aa78aa42c405": "2026-10-26T04:49:41.378443+00:00",
+  "fa3806792c5e8b5f": "2026-10-26T04:54:41.376976+00:00",
+  "1e4ff58776b3eb2e": "2026-10-26T04:54:41.376976+00:00"
  },
  "recent": [
-  {
-   "title": "Swiggy Shares Plunge After Losses Mount on Intense Competition",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-23/swiggy-shares-plunge-after-losses-mount-on-intense-competition",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T04:50:51.507191+00:00",
-   "title_ru": "Акции Swiggy падают после проигрышей на фоне интенсивной конкуренции",
-   "lead": "Swiggy Ltd. shares fell to a record low after intense competition led to wider-than-expected loss at the Indian food-delivery contender, raising questions about its long-term earnings potential.",
-   "lead_ru": "Акции Swiggy Ltd. упали до рекордно низкого уровня после того, как интенсивная конкуренция привела к более широкому, чем ожидалось, убытку у индийского претендента на доставку продуктов питания, что вызвало вопросы о его долгосрочном потенциале прибыли.",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "UAE says tanker oil spill affects beaches in Umm Al Quwain",
    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxONDVzb2o2bVZpMzFTRjc2dENKTUhpalRtLTA2bkprdkwxdWRBdXVVU0xWTHNYcmJLeEJTeV82SXhtN24wWUstUm9QV09Qcm5OSWF3dk5BVU93RmkyeWVuVVJnYloxNTZzajBhanlNNmZvUDJaRXdWbTFia1MycXpJTUtsUDRRSFVHcUJLSmlaNUY1Tk1qXy14SFRxczBUUTVJcGlaZk5FSzRvLUlJdWtWNTJB?oc=5",
@@ -5228,6 +5214,31 @@
    "tags": [
     "China",
     "tariffs"
+   ]
+  },
+  {
+   "title": "Elections, central banks and earnings on the menu",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNc08wOVYzT3pKR0lSY3VtZWt6TkhvTGRieHE2eVJqeTZiZnhzQUFQMFAzd1hlT3l0QS01ZlhlQVZDWWNCUkpiSFg3OEtDcGJLMzNXcnhsRWZrSW5ELTlIZFpnMnl1NkVfZnFwZnFYZGVXUTVJUVJmZ2ZuVFlXWU1oWm9ZOXRVbVZSUGhDX2xKR1Q?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-26T04:54:41.376976+00:00",
+   "title_ru": "Выборы, центральные банки и доходы в меню"
+  },
+  {
+   "title": "Australian Regulator Warns Higher Market Risks May Hit Liquidity",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-26/australian-regulator-warns-higher-market-risks-may-hit-liquidity",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T04:54:41.376976+00:00",
+   "title_ru": "Австралийский регулятор предупреждает, что более высокие рыночные риски могут повлиять на ликвидность",
+   "lead": "Australia’s regulator warned that ructions in the global bond market and elevated concerns linked to artificial intelligence are threatening to weaken financial market liquidity.",
+   "lead_ru": "Австралийский регулятор предупредил, что потрясения на мировом рынке облигаций и растущие опасения, связанные с искусственным интеллектом, угрожают ослабить ликвидность финансовых рынков.",
+   "tags": [
+    "bonds"
    ]
   }
  ],
