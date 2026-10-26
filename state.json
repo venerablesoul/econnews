@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "03d7ed4a3cdbc197": "2026-10-23T18:22:41.510338+00:00",
   "92e30bb8ea7bb6e4": "2026-10-23T18:32:41.429817+00:00",
   "147a66d4f710e135": "2026-10-23T18:47:41.523607+00:00",
   "8d6c73af11739041": "2026-10-23T18:47:41.523607+00:00",
@@ -592,18 +591,11 @@
   "f47b375b5bfeae06": "2026-10-26T17:51:23.853947+00:00",
   "a2afcbe69dbd060e": "2026-10-26T18:06:23.183887+00:00",
   "4a22d93052796cb7": "2026-10-26T18:16:22.698706+00:00",
-  "fa619a8b824aee62": "2026-10-26T18:16:22.698706+00:00"
+  "fa619a8b824aee62": "2026-10-26T18:16:22.698706+00:00",
+  "a409f8ebdb3f8eb3": "2026-10-26T18:26:22.755006+00:00",
+  "a41a6130aa4bca8e": "2026-10-26T18:26:22.755006+00:00"
  },
  "recent": [
-  {
-   "title": "Can Nvidia’s stock become a safe haven as Wall Street rethinks the AI trade?",
-   "link": "https://www.marketwatch.com/story/can-nvidias-stock-become-a-safe-haven-as-wall-street-rethinks-the-ai-trade-64862936?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-23T18:22:41.510338+00:00"
-  },
   {
    "title": "Oil markets are on edge ahead of the weekend, as midterm elections near and fresh U.S. strikes on Iran are predicted",
    "link": "https://www.marketwatch.com/story/oil-markets-are-on-edge-ahead-of-the-weekend-as-midterm-elections-near-and-fresh-u-s-strikes-on-iran-are-predicted-8c27e634?mod=mw_rss_topstories",
@@ -11095,11 +11087,11 @@
   },
   "checked": "2026-10-26T18:01:22.742766+00:00",
   "sec_seen": [
-   "0001343600-26-000015",
+   "0001335253-26-000007",
+   "0001062993-26-005549",
    "0001225208-26-008494",
    "0001225208-26-008493",
-   "0001062993-26-005547",
-   "0000080661-26-000369"
+   "0001062993-26-005547"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
