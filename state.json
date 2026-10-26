@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "b8ef7b45db0d19dd": "2026-10-23T13:26:55.711135+00:00",
-  "fda989b6a5e81a0e": "2026-10-23T13:26:55.711135+00:00",
-  "9dde434f64c4f71f": "2026-10-23T13:26:55.711135+00:00",
   "305880292e18f179": "2026-10-23T13:31:55.759150+00:00",
   "bc2de053132f57b8": "2026-10-23T13:31:55.759150+00:00",
   "bc510bece5bc9e72": "2026-10-23T13:31:55.759150+00:00",
@@ -602,37 +599,10 @@
   "cec9bffaf507da6d": "2026-10-26T13:25:24.207876+00:00",
   "f186b5fb5d5a75a8": "2026-10-26T13:25:24.207876+00:00",
   "3237e488c7ee7ddb": "2026-10-26T13:25:24.207876+00:00",
-  "d81da7943332b15c": "2026-10-26T13:25:24.207876+00:00"
+  "d81da7943332b15c": "2026-10-26T13:25:24.207876+00:00",
+  "178c42b4d7f0694c": "2026-10-26T13:30:24.475710+00:00"
  },
  "recent": [
-  {
-   "title": "Futures Slip as Big Tech Falters, Oil Extends Relentless Advance",
-   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQQ2RydGtUWTg4Z3BqUnoyamNuT29ueXpzTWZJb1gzb3RYNXpYTnNHdFQ1UkRJYUdQSFR1RVRhTHNqM3o1ejhVYlJ6RkgzeTdhNm1va0NraVBPVG9STVpTZjgyZGc3WmE5M01WdlBtMzEzSWowek96ODRTNmFYbk0tVmRmZ1dwVkdFSWdYVi1zVWdNMnRCcjJxOV9ubXpNVHpjb2NIU1ZB?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T13:26:55.711135+00:00",
-   "title_ru": "Фьючерсы проскальзывают, поскольку большие технологии терпят неудачу, нефть расширяет неустанное продвижение",
-   "tags": [
-    "oil"
-   ]
-  },
-  {
-   "title": "В ЦБ оценили планы банков по восстановлению сервисов на фоне атак на ЦОДы",
-   "link": "https://www.rbc.ru/finances/23/10/2026/6adb5aee0e9df1576383468a",
-   "sources": [
-    "RBC"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T13:26:55.711135+00:00",
-   "title_en": "The Central Bank assessed the plans of banks to restore services amid attacks on data centers",
-   "lead": "ЦБ находится «в постоянном контакте» с банками для купирования рисков из-за возможных атак на дата-центры, заявила Набиуллина. Но требования регулятора к срокам восстановления инфраструктуры могут быть скорректированы",
-   "lead_en": "The Central Bank is \"in constant contact\" with banks to stop risks due to possible attacks on data centers, Nabiullina said. But the regulator's requirements for the timing of infrastructure restoration can be adjusted",
-   "tags": [
-    "BankOfRussia"
-   ]
-  },
   {
    "title": "Germany Wants to Stop More Oil Refinery Closures as Costs Mount",
    "link": "https://www.bloomberg.com/news/articles/2026-10-23/germany-wants-to-stop-more-oil-refinery-closures-as-costs-mount",
@@ -4808,6 +4778,18 @@
    "score": 3,
    "ts": "2026-10-26T13:25:24.207876+00:00",
    "title_ru": "От Amazon до Google: богатые инвесторы Anthropic"
+  },
+  {
+   "title": "Anthropic unveils details of planned historic stock market debut",
+   "link": "https://www.bbc.co.uk/news/articles/cq398p1wd1evo?at_medium=RSS&at_campaign=rss",
+   "sources": [
+    "BBC"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T13:30:24.475710+00:00",
+   "title_ru": "Anthropic раскрывает подробности запланированного исторического дебюта на фондовом рынке",
+   "lead": "The company will be the first true artificial intelligence company to go public as tech firms continue to invest heavily in AI.",
+   "lead_ru": "Компания станет первой настоящей компанией в области искусственного интеллекта, которая станет публичной, поскольку технологические компании продолжают активно инвестировать в ИИ."
   }
  ],
  "last_digest": "2026-10-25",
