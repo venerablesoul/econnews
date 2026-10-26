@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "3012342334bb2f2c": "2026-10-23T19:17:41.430968+00:00",
-  "05526fc74c2459ec": "2026-10-23T19:17:41.430968+00:00",
   "e03461a3ec0216fa": "2026-10-23T19:22:41.458970+00:00",
   "e0444880f3aa1592": "2026-10-23T19:37:41.453079+00:00",
   "a49d3311d11a1582": "2026-10-23T19:47:41.451947+00:00",
@@ -599,19 +597,13 @@
   "e4ad86d907c7c077": "2026-10-26T19:06:22.770709+00:00",
   "fbe4f652c0437925": "2026-10-26T19:11:22.703689+00:00",
   "a362288c218b5dee": "2026-10-26T19:16:22.807972+00:00",
-  "4ffcd20e7c6f8afe": "2026-10-26T19:16:22.807972+00:00"
+  "4ffcd20e7c6f8afe": "2026-10-26T19:16:22.807972+00:00",
+  "90d22dbfc0288a61": "2026-10-26T19:21:22.919043+00:00",
+  "05bb52bd10953af8": "2026-10-26T19:21:22.919043+00:00",
+  "bd85eb5bff899be8": "2026-10-26T19:21:22.919043+00:00",
+  "1cd443e5888996d5": "2026-10-26T19:21:22.919043+00:00"
  },
  "recent": [
-  {
-   "title": "France, UAE revive Rafale warplane development amid French budget woes",
-   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOMHBIeDUxOEFxX0tza0M0blZ1eVVPdGk4eVFnRHBDVFhzWUhDMGpXQjB2WEh1cjkyY2pweS1VWUFpTnFmV1pKVnFDMmNSMzM1WFg0RFhUSEdTLTNrZ0doWVl4RE9ZTzNnVG5RLVJBV09ZNTIxMS15amRiTVNtbXRqWVc5cXFGelVCTVhFZjVlRF80RXV5cHdoQ3RxTnNxaWtEbXNVTnlDLVVmdW9zVmlOZkRZT2hyRm1QQld5cC0zM25aTW9hUWZGa0dXMDA?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T19:17:41.430968+00:00",
-   "title_ru": "Франция и ОАЭ возобновили разработку военных самолетов Rafale на фоне проблем с бюджетом Франции"
-  },
   {
    "title": "Oncologists Cheer Melanoma Data That Tanked Moderna’s Shares",
    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOTlZNay05ZE1VbTNBVmZHT0ZMYzkxZ2VKOS10X1dKbVR6WU1kc2pLRk05aVZzU2txX3VqMlRQOXhXSW9iYWczN0NpQjJkN2dSRzhFVkVlNFFubUxFdUs5dTJMenBpM3cxSnJlQ28wTHJCYVNvRW5aSUpsUkFBS1dUbWIxRkhDSUhrc2E1bjZoUElKRGdqTEIzT2RzRC1lYUpWaE45U2djZDM5c0JxME1CVQ?oc=5",
@@ -4704,6 +4696,19 @@
    "tags": [
     "dollar"
    ]
+  },
+  {
+   "title": "Dollar General overcharged shoppers, FTC and states allege in lawsuit",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPTURwVDZtLUFyMFhzVm04T1ZOamQ2aHhCRUpZUXNyRUQ5NmZ5QmNDTEF3ZEJCRmkyT1BvQUtUUk1fTHVhdnplYU1oNWZqM0RsZ2VqODdGQ0xyRXhkbXFERENzaVdZd0JvbjA5VTh1MDhxa2NUbC1VN2Q1QjN0dnNGZ1FFTDVyOFdzd1FQUFZYZEloeUtPcGI1Mw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T19:21:22.919043+00:00",
+   "title_ru": "Компания Dollar General завысила цену покупателям, Федеральная торговая комиссия и штаты предъявили иск",
+   "tags": [
+    "dollar"
+   ]
   }
  ],
  "last_digest": "2026-10-26",
@@ -7212,6 +7217,22 @@
     "date": "2026-10-23",
     "disclosed": "2026-10-26",
     "link": "https://www.sec.gov/Archives/edgar/data/1897970/000189797026000010/0001897970-26-000010-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "b96bc0187cc1b00f",
+    "ticker": "ISRG",
+    "company": "INTUITIVE SURGICAL INC",
+    "who": "Craig H Barratt",
+    "role": "Director",
+    "type": "sell",
+    "value": 510370,
+    "shares": 1150,
+    "price": 443.8,
+    "plan": true,
+    "date": "2026-10-23",
+    "disclosed": "2026-10-26",
+    "link": "https://www.sec.gov/Archives/edgar/data/1277620/000127762026000009/0001277620-26-000009-index.htm"
    },
    {
     "src": "sec",
@@ -11068,22 +11089,6 @@
     "date": "2026-10-15",
     "disclosed": "2026-10-16",
     "link": "https://www.sec.gov/Archives/edgar/data/1907830/000162828026066153/0001628280-26-066153-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "5e185b7c52933389",
-    "ticker": "MPLT",
-    "company": "MapLight Therapeutics, Inc.",
-    "who": "Christopher A. Kroeger",
-    "role": "CEO",
-    "type": "sell",
-    "value": 595423,
-    "shares": 73691,
-    "price": 8.08,
-    "plan": false,
-    "date": "2026-10-15",
-    "disclosed": "2026-10-16",
-    "link": "https://www.sec.gov/Archives/edgar/data/1770069/000165891826000018/0001658918-26-000018-index.htm"
    }
   ],
   "docs": {
@@ -11119,13 +11124,13 @@
   "checked": "2026-10-26T19:06:22.770709+00:00",
   "sec_seen": [
    "0001274559-26-000007",
-   "0001335253-26-000007",
    "0001628280-26-067240",
-   "0001702938-26-000004",
+   "0001213900-26-112441",
    "0001897970-26-000010",
    "0001280628-26-000016",
+   "0001277620-26-000009",
    "0001493152-26-048493",
-   "0001213900-26-112441"
+   "0001702938-26-000004"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
