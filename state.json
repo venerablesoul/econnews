@@ -598,7 +598,9 @@
   "9fa038f7542f9e54": "2026-10-26T19:56:22.719574+00:00",
   "ea8e3be51a10e6d6": "2026-10-26T20:12:01.164395+00:00",
   "508582e94deabc34": "2026-10-26T20:17:01.284673+00:00",
-  "726d52066e1e2195": "2026-10-26T20:32:01.227464+00:00"
+  "726d52066e1e2195": "2026-10-26T20:32:01.227464+00:00",
+  "75f8d5efb725d7ec": "2026-10-26T20:37:01.308493+00:00",
+  "857545c9e3b69ef5": "2026-10-26T20:37:01.308493+00:00"
  },
  "recent": [
   {
@@ -4660,6 +4662,29 @@
    "tags": [
     "tariffs"
    ]
+  },
+  {
+   "title": "Sterling drops against euro and dollar ahead of UK budget",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOTG1zRmxKejNRVlA2Mm5HTHNDb0g3T3lWVTdYLVRlQWhDamFWbDZrMXp2MmNyZnMtOS1uUDVqZ0RYX2VxWkRwTm55LTAyX0MzUVBWUGE0RVBwRW1LQi1zZ25DX0I2em5jamZRV0lkQWxIS3lyV2VodjJGTldOdzlOLTM0SWdORlBhV2JuNzd1cnFrUDRKZm9SYmNvZw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-26T20:37:01.308493+00:00",
+   "title_ru": "Фунт стерлингов падает по отношению к евро и доллару, опережая бюджет Великобритании",
+   "tags": [
+    "dollar"
+   ]
+  },
+  {
+   "title": "Budgets Can Draw the Line on Corruption",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE05ZWdrWFRKbnQ1eGkyM0gtNWJUTmZHZDJTemQ5b29KeWNydUFEUG5CVUQ0LTJBSVk5NWllQVhqU2huQmJrdlNjSHNubEo0ank4RjVrdTNnMkkxUm1ac09vRU1HYS1hM0lQUWt2T2FSVQ?oc=5",
+   "sources": [
+    "IMF"
+   ],
+   "score": 4,
+   "ts": "2026-10-26T20:37:01.308493+00:00",
+   "title_ru": "Бюджеты могут подвести черту под коррупцией"
   }
  ],
  "last_digest": "2026-10-26",
@@ -7312,6 +7337,22 @@
     "date": "2026-10-23",
     "disclosed": "2026-10-26",
     "link": "https://www.sec.gov/Archives/edgar/data/1106578/000110657826000171/0001106578-26-000171-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "43a3f5ab1e7df1ce",
+    "ticker": "GL",
+    "company": "GLOBE LIFE INC.",
+    "who": "Michael Clay Majors",
+    "role": "EVP - Chief Strategy Officer",
+    "type": "sell",
+    "value": 2220900,
+    "shares": 14377,
+    "price": 154.48,
+    "plan": false,
+    "date": "2026-10-23",
+    "disclosed": "2026-10-26",
+    "link": "https://www.sec.gov/Archives/edgar/data/1426922/000032033526000226/0000320335-26-000226-index.htm"
    },
    {
     "src": "sec",
@@ -11024,22 +11065,6 @@
     "date": "2026-10-15",
     "disclosed": "2026-10-16",
     "link": "https://www.sec.gov/Archives/edgar/data/2086723/000143774926032801/0001437749-26-032801-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "a2c402f834fb261c",
-    "ticker": "MRNA",
-    "company": "Moderna, Inc.",
-    "who": "Stephen Hoge",
-    "role": "President",
-    "type": "sell",
-    "value": 17013538,
-    "shares": 78369,
-    "price": 217.1,
-    "plan": true,
-    "date": "2026-10-15",
-    "disclosed": "2026-10-16",
-    "link": "https://www.sec.gov/Archives/edgar/data/1760669/000168285226000187/0001682852-26-000187-index.htm"
    }
   ],
   "docs": {
@@ -11074,9 +11099,8 @@
   },
   "checked": "2026-10-26T20:07:01.282546+00:00",
   "sec_seen": [
-   "0001193074-26-000013",
-   "0001222437-26-000012",
-   "0001842720-26-000012",
+   "0000310354-26-000110",
+   "0000320335-26-000226",
    "0001106578-26-000171",
    "0001193125-26-432001",
    "0000898432-26-000745",
@@ -11084,13 +11108,12 @@
    "0000898432-26-000744",
    "0000310354-26-000102",
    "0000310354-26-000106",
-   "0001641294-26-000011",
+   "0000310354-26-000108",
+   "0001978134-26-000006",
    "0001193125-26-432000",
-   "0000898432-26-000743",
-   "0000898432-26-000741",
-   "0000938885-26-000016",
-   "0001045463-26-000022",
-   "0001123292-26-001425",
+   "0001123292-26-001426",
+   "0002127293-26-000013",
+   "0001493152-26-048539",
    "0001193125-26-431998"
   ],
   "errors": {
