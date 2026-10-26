@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "8ac4b5157c53d3ed": "2026-10-23T21:02:41.424074+00:00",
   "c0429058b02ccc07": "2026-10-23T21:07:41.454979+00:00",
   "7ee2448e74c44844": "2026-10-23T21:07:41.454979+00:00",
   "6ae8e9aaa2cf9d17": "2026-10-23T21:07:41.454979+00:00",
@@ -595,26 +594,14 @@
   "726d52066e1e2195": "2026-10-26T20:32:01.227464+00:00",
   "75f8d5efb725d7ec": "2026-10-26T20:37:01.308493+00:00",
   "857545c9e3b69ef5": "2026-10-26T20:37:01.308493+00:00",
-  "3359c1478085ce57": "2026-10-26T21:02:01.213311+00:00"
+  "3359c1478085ce57": "2026-10-26T21:02:01.213311+00:00",
+  "26ce92e194bd06a8": "2026-10-26T21:07:01.193450+00:00",
+  "576d449ec23e761a": "2026-10-26T21:07:01.193450+00:00",
+  "4b5c6cafffe968e9": "2026-10-26T21:07:01.193450+00:00",
+  "544c56c6a90bb245": "2026-10-26T21:07:01.193450+00:00",
+  "f8b3628c9f568a2e": "2026-10-26T21:07:01.193450+00:00"
  },
  "recent": [
-  {
-   "title": "Chipmakers Post Longest Weekly Drop Since November",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-23/chipmakers-post-longest-weekly-drop-since-november-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-23T21:02:41.424074+00:00",
-   "title_ru": "Производители чипов сообщают о самом длинном недельном падении с ноября",
-   "lead": "A resurgence in oil prices dragged down stocks and bonds, stoking concerns about inflation just days ahead of the Federal Reserve decision on interest rates.",
-   "lead_ru": "Возобновление цен на нефть привело к падению акций и облигаций, вызвав опасения по поводу инфляции всего за несколько дней до решения Федеральной резервной системы по процентным ставкам.",
-   "tags": [
-    "Fed",
-    "rates",
-    "inflation"
-   ]
-  },
   {
    "title": "Coffins and Canoes From Canada Get 50% Tariff Under New Trump Order",
    "link": "https://www.bloomberg.com/news/articles/2026-10-23/coffins-and-canoes-from-canada-get-50-tariff-under-new-trump-order",
@@ -4624,6 +4611,48 @@
    "title_ru": "Anthropic остается мамой на инвестиционном уровне, поскольку он отмечает больше долгов",
    "lead": "Anthropic PBC warned it may need to seek more financing sooner than the artificial-intelligence company had anticipated while saying little about its potential path to an investment-grade credit rating in its closely watched IPO…",
    "lead_ru": "Anthropic PBC предупредил, что, возможно, ему придется искать больше финансирования раньше, чем ожидала компания искусственного интеллекта, мало говоря о своем потенциальном пути к кредитному рейтингу инвестиционного уровня в своем тщательно отслеживаемом IPO..."
+  },
+  {
+   "title": "В налоговый пакет доложили претензий // «Опора России» предложила свой вариант повышения налогов",
+   "link": "https://www.kommersant.ru/doc/9061160",
+   "sources": [
+    "Kommersant"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T21:07:01.193450+00:00",
+   "title_en": "Complaints were reported in the tax package// \"OPORA Russia\" offered its own option for raising taxes",
+   "lead": "Как стало известно “Ъ”, «Опора России» предложила Минфину и Госдуме смягчить налоговые новации, предложенные правительством в составе бюджетного пакета.",
+   "lead_en": "As it became known to Kommersant, OPORA Russia proposed to the Ministry of Finance and the State Duma to mitigate the tax innovations proposed by the government as part of the budget package.",
+   "tags": [
+    "Russia"
+   ]
+  },
+  {
+   "title": "Цены на газ в Европе пробили четырехлетний максимум",
+   "link": "https://www.rbc.ru/business/27/10/2026/6adf9954a948b0553b387483",
+   "sources": [
+    "RBC"
+   ],
+   "score": 2,
+   "ts": "2026-10-26T21:07:01.193450+00:00"
+  },
+  {
+   "title": "Why Lumentum’s stock led the S&P 500 higher on Monday",
+   "link": "https://www.marketwatch.com/story/why-lumentums-stock-led-the-s-p-500-higher-on-monday-0dff125b?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-26T21:07:01.193450+00:00"
+  },
+  {
+   "title": "Спрос на семейную ипотеку откатился к минимумам декабря 2022 года",
+   "link": "https://www.rbc.ru/finances/27/10/2026/6adf38fd119ddf6c1d53df74",
+   "sources": [
+    "RBC"
+   ],
+   "score": 1,
+   "ts": "2026-10-26T21:07:01.193450+00:00"
   }
  ],
  "last_digest": "2026-10-26",
@@ -7055,6 +7084,22 @@
    },
    {
     "src": "sec",
+    "id": "82a8226bcdd83564",
+    "ticker": "NBIS",
+    "company": "Nebius Group N.V.",
+    "who": "Arne Grimme",
+    "role": "Director",
+    "type": "buy",
+    "value": 122438,
+    "shares": 770,
+    "price": 159.01,
+    "plan": true,
+    "date": "2026-10-26",
+    "disclosed": "2026-10-26",
+    "link": "https://www.sec.gov/Archives/edgar/data/2091395/000151384526000141/0001513845-26-000141-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "c5b797c693505c23",
     "ticker": "CART",
     "company": "Maplebear Inc.",
@@ -7404,6 +7449,22 @@
     "date": "2026-10-22",
     "disclosed": "2026-10-26",
     "link": "https://www.sec.gov/Archives/edgar/data/1141722/000110068226000153/0001100682-26-000153-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "c152a25d2051b1fb",
+    "ticker": "OIG",
+    "company": "Orion180 Insurance Group Inc.",
+    "who": "Darling Craig et al.",
+    "role": "10% owner",
+    "type": "buy",
+    "value": 115797,
+    "shares": 10990,
+    "price": 10.54,
+    "plan": false,
+    "date": "2026-10-06",
+    "disclosed": "2026-10-26",
+    "link": "https://www.sec.gov/Archives/edgar/data/2160794/000149315226048577/0001493152-26-048577-index.htm"
    },
    {
     "src": "sec",
@@ -10972,38 +11033,6 @@
     "date": "2026-10-15",
     "disclosed": "2026-10-16",
     "link": "https://www.sec.gov/Archives/edgar/data/2127484/000212748426000021/0002127484-26-000021-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "a1418852760c9b44",
-    "ticker": "BORR",
-    "company": "Borr Drilling Ltd",
-    "who": "Tor Olav Troim",
-    "role": "Director",
-    "type": "buy",
-    "value": 2299150,
-    "shares": 500000,
-    "price": 4.6,
-    "plan": false,
-    "date": "2026-10-15",
-    "disclosed": "2026-10-16",
-    "link": "https://www.sec.gov/Archives/edgar/data/1715497/000162828026066045/0001628280-26-066045-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "f0dac97fec6ae297",
-    "ticker": "FERG",
-    "company": "Ferguson Enterprises Inc. /DE/",
-    "who": "Kevin Michael Murphy",
-    "role": "See Remarks",
-    "type": "sell",
-    "value": 549844,
-    "shares": 2461,
-    "price": 223.42,
-    "plan": true,
-    "date": "2026-10-15",
-    "disclosed": "2026-10-16",
-    "link": "https://www.sec.gov/Archives/edgar/data/2011641/000198461426000004/0001984614-26-000004-index.htm"
    }
   ],
   "docs": {
@@ -11040,17 +11069,16 @@
   "sec_seen": [
    "0001079973-26-001402",
    "0001334505-26-000004",
-   "0001104659-26-118826",
    "0001193125-26-432132",
-   "0000310354-26-000112",
    "0001178579-26-000020",
-   "0001557413-26-000002",
    "0000732717-26-000376",
+   "0001214659-26-013230",
    "0001104659-26-118822",
+   "0001652739-26-000014",
    "0001104659-26-118819",
    "0001730096-26-000002",
    "0001193125-26-432129",
-   "0001954094-26-000002",
+   "0001513845-26-000141",
    "0001104659-26-118817",
    "0001104659-26-118823",
    "0001100682-26-000153",
@@ -11059,14 +11087,14 @@
    "0001104659-26-118815",
    "0001104659-26-118831",
    "0001721614-26-000004",
+   "0001493152-26-048577",
    "0001654954-26-009146",
-   "0001540021-26-000002",
    "0001809519-26-000179",
    "0001104659-26-118833",
    "0001104659-26-118828",
    "0001493152-26-048562",
    "0001343352-26-000027",
-   "0001899058-26-000006"
+   "0001104659-26-118826"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
