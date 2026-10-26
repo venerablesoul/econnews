@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "d0d466ac93c98ffd": "2026-10-23T09:06:24.962258+00:00",
-  "3d799e11056aa0ee": "2026-10-23T09:06:24.962258+00:00",
-  "f195e6568041fe5f": "2026-10-23T09:06:24.962258+00:00",
-  "dec873acecd87202": "2026-10-23T09:06:24.962258+00:00",
-  "e688c79b99f71a7d": "2026-10-23T09:11:24.931995+00:00",
   "c5b8be11ce36efd1": "2026-10-23T09:16:24.934239+00:00",
   "80386cc058b46301": "2026-10-23T09:21:24.889036+00:00",
   "d764390b6b2a5e56": "2026-10-23T09:21:24.889036+00:00",
@@ -602,65 +597,17 @@
   "a9e74d5718425258": "2026-10-26T09:04:41.418404+00:00",
   "9048621aa4c71bff": "2026-10-26T09:05:29.491424+00:00",
   "ef19184afb48a587": "2026-10-26T09:05:29.491424+00:00",
-  "c2c64bec82277ce7": "2026-10-26T09:05:29.491424+00:00"
+  "c2c64bec82277ce7": "2026-10-26T09:05:29.491424+00:00",
+  "0defd2e200edf1e6": "2026-10-26T09:10:24.246531+00:00",
+  "877f8bc069717541": "2026-10-26T09:10:24.246531+00:00",
+  "0878229faea2739a": "2026-10-26T09:10:24.246531+00:00",
+  "8cedfd389eb5b816": "2026-10-26T09:10:24.246531+00:00",
+  "08d008a4768360da": "2026-10-26T09:10:24.246531+00:00",
+  "377d09579f8990a2": "2026-10-26T09:10:24.246531+00:00",
+  "cb80791b320ec124": "2026-10-26T09:10:24.246531+00:00",
+  "4351c062ac60c158": "2026-10-26T09:10:24.246531+00:00"
  },
  "recent": [
-  {
-   "title": "Volvo Car CEO on Earnings, China Market, Job Cuts",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-23/volvo-car-ceo-on-earnings-china-cost-cutting",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-23T09:06:24.962258+00:00",
-   "title_ru": "Генеральный директор Volvo Car о доходах, китайском рынке и сокращении рабочих мест",
-   "lead": "Volvo Car Chief Executive Officer Håkan Samuelsson discusses the company's performance in the third quarter, the market in China, and cost-cutting measures. He speaks on Bloomberg Television. (Source: Bloomberg)",
-   "lead_ru": "Главный исполнительный директор Volvo Car Хокан Самуэльссон обсуждает результаты деятельности компании в третьем квартале, рынок в Китае и меры по сокращению расходов. Он выступает на Bloomberg Television. (Источник: Bloomberg)",
-   "tags": [
-    "China"
-   ]
-  },
-  {
-   "title": "How Prediction Markets Upstaged Election Polls",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-23/how-prediction-markets-upstaged-election-polls",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T09:06:24.962258+00:00",
-   "title_ru": "Как рынки предсказаний превзошли электоральные опросы",
-   "lead": "Voters, donors and media increasingly use the betting platforms Kalshi and Polymarket to forecast election outcomes. Critics warn of new risks to democracy.",
-   "lead_ru": "Избиратели, доноры и СМИ все чаще используют букмекерские платформы Kalshi и Polymarket для прогнозирования результатов выборов. Критики предупреждают о новых рисках для демократии."
-  },
-  {
-   "title": "Retail Investors Join High-Speed Traders to Fuel a New Options Boom in India",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPSzJ0MGdjbnRfM0VTdDNpZkphRWxtZzZaMmR5WnVYRW9QWUdmMDVVOHRQNXppR21FLUFpYUlQQ0QzWm9yRXQxZWhwV0FVeE1RbnE1YUhxM0R0M01yeU10dmR6MDU3ZDRXanYtTGRtM2NuZnRqSFVVS3Z5RGlxVFBieDZTVlMySDRZVDE0NHByNW5Venl2dl9oZFM0N240blY3eDZodnhKM0t2cWxYYzJyaXZxV3ppQjRvSXl5V3ZZZGdneXlQWmh3?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T09:06:24.962258+00:00",
-   "title_ru": "Розничные инвесторы присоединяются к высокоскоростным трейдерам, чтобы стимулировать бум новых опционов в Индии"
-  },
-  {
-   "title": "This market signal just occurred for only the second time since 1999. Here’s what happened and what it means.",
-   "link": "https://www.marketwatch.com/story/this-market-signal-just-occurred-for-only-the-second-time-since-1999-heres-what-happened-and-what-it-means-a126cf31?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-23T09:06:24.962258+00:00"
-  },
-  {
-   "title": "India's Welspun bags $580 million US gas pipeline order tied to data centre buildout",
-   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNcWphMFNwdGZkOGo5TGZxMXk3SFhidGZOWXpKWV8xN2hYeXY2MlRITjRIZDM0ZE1RYnpPRTNzdzlaVEwwMGZnR0pqWG9Kd0xJbC1KX1gtUVZfRTZ2T0ZOZUw0bjJ2a3hBYWU4bDl0eWRQQXpUYllPTndTVEJxYzhXLWtETldoYmdOYkVLNUE4RWRPRGcyc1hBWFZUQmNsSXkxdTJkWnlQcURjOVJHZWhYZmc0X2x5OVlQSGpYMTRhb1lWOXBWNU8wLTh0UQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T09:11:24.931995+00:00",
-   "title_ru": "Индийский Welspun суммирует заказ на газопровод в США на $ 580 млн, привязанный к строительству центра обработки данных"
-  },
   {
    "title": "September inflation keeps BoJ on tightening course",
    "link": "https://www.ft.com/content/f968f40c-ecc8-4981-ba60-a826f808505b",
