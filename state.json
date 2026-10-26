@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "04f3724f0129887b": "2026-10-23T05:05:51.540516+00:00",
   "677c33702f2e9feb": "2026-10-23T05:10:51.550957+00:00",
   "88e0238fa0091ddb": "2026-10-23T05:10:51.550957+00:00",
   "aca38300e107a6f4": "2026-10-23T05:10:51.550957+00:00",
@@ -597,22 +596,11 @@
   "1e4ff58776b3eb2e": "2026-10-26T04:54:41.376976+00:00",
   "9abd799495a79a14": "2026-10-26T04:59:41.388981+00:00",
   "700151a70be36f4a": "2026-10-26T04:59:41.388981+00:00",
-  "4aa2eb3e52ea81d3": "2026-10-26T05:04:41.395019+00:00"
+  "4aa2eb3e52ea81d3": "2026-10-26T05:04:41.395019+00:00",
+  "948a5e5b5e77eff1": "2026-10-26T05:09:41.375737+00:00",
+  "b8f0382643df6e53": "2026-10-26T05:09:41.375737+00:00"
  },
  "recent": [
-  {
-   "title": "UAE says tanker oil spill affects beaches in Umm Al Quwain",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxONDVzb2o2bVZpMzFTRjc2dENKTUhpalRtLTA2bkprdkwxdWRBdXVVU0xWTHNYcmJLeEJTeV82SXhtN24wWUstUm9QV09Qcm5OSWF3dk5BVU93RmkyeWVuVVJnYloxNTZzajBhanlNNmZvUDJaRXdWbTFia1MycXpJTUtsUDRRSFVHcUJLSmlaNUY1Tk1qXy14SFRxczBUUTVJcGlaZk5FSzRvLUlJdWtWNTJB?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T05:05:51.540516+00:00",
-   "title_ru": "ОАЭ заявляют, что разлив танкерной нефти влияет на пляжи в Умм-эль-Кайвайне",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "Singapore’s Core Inflation for September Unexpectedly Cools",
    "link": "https://www.bloomberg.com/news/articles/2026-10-23/singapore-s-core-inflation-for-september-unexpectedly-cools",
@@ -5253,6 +5241,22 @@
    "score": 5,
    "ts": "2026-10-26T05:04:41.395019+00:00",
    "title_ru": "Фрэнк Элдерсон: Действия на благо природы – инвестиции в экономическую устойчивость и процветание"
+  },
+  {
+   "title": "BOE Officials Most Hawkish Since Inflation Was 10%, Model Shows",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-26/boe-officials-most-hawkish-since-inflation-was-10-model-shows",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 7,
+   "ts": "2026-10-26T05:09:41.375737+00:00",
+   "title_ru": "Чиновники BOE самые ястребиные со времен инфляции - 10%, показы моделей",
+   "lead": "Bank of England officials are sending their most hawkish signals in over three years, laying the ground for an interest-rate hike as early as next month.",
+   "lead_ru": "Официальные лица Банка Англии посылают свои самые ястребиные сигналы за последние три года, закладывая основу для повышения процентных ставок уже в следующем месяце.",
+   "tags": [
+    "rates",
+    "inflation"
+   ]
   }
  ],
  "last_digest": "2026-10-25",
