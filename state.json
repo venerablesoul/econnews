@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "0b2bbf600bfcab07": "2026-10-23T13:21:55.671723+00:00",
   "b8ef7b45db0d19dd": "2026-10-23T13:26:55.711135+00:00",
   "fda989b6a5e81a0e": "2026-10-23T13:26:55.711135+00:00",
   "9dde434f64c4f71f": "2026-10-23T13:26:55.711135+00:00",
@@ -599,22 +598,13 @@
   "588ec28156e9917a": "2026-10-26T13:15:24.138192+00:00",
   "f686ba32bc778cf6": "2026-10-26T13:15:24.138192+00:00",
   "8e9e4a8f3bcf51d1": "2026-10-26T13:20:24.212848+00:00",
-  "695354c58af95b9e": "2026-10-26T13:20:24.212848+00:00"
+  "695354c58af95b9e": "2026-10-26T13:20:24.212848+00:00",
+  "cec9bffaf507da6d": "2026-10-26T13:25:24.207876+00:00",
+  "f186b5fb5d5a75a8": "2026-10-26T13:25:24.207876+00:00",
+  "3237e488c7ee7ddb": "2026-10-26T13:25:24.207876+00:00",
+  "d81da7943332b15c": "2026-10-26T13:25:24.207876+00:00"
  },
  "recent": [
-  {
-   "title": "Axel Springer to Cut Telegraph Jobs After Buying UK Newspaper",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQUHg5TFl4WDZkTVNUdEJGMDVWSU83VmFpRFRIVjhrQzdFQWl5em1nTjVHZTlwVnlZd1h5d0E1d3ZVN0E4dUp4SHpfR3FGX1JfUzJwczl4cUhFd1FKLWRKMkxidjJnUjJ2YXlaNExLbDZlQzVmTUlsbWYycG9icUF6N2NxM1BWcVFRaUdnOVEyMzRPQVZ3dmQ2OHltbEV4OUxrMHpBTEF2U3htY24xcV9DTk93?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T13:21:55.671723+00:00",
-   "title_ru": "Аксель Спрингер сократит работу телеграфа после покупки британской газеты",
-   "tags": [
-    "jobs"
-   ]
-  },
   {
    "title": "Futures Slip as Big Tech Falters, Oil Extends Relentless Advance",
    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQQ2RydGtUWTg4Z3BqUnoyamNuT29ueXpzTWZJb1gzb3RYNXpYTnNHdFQ1UkRJYUdQSFR1RVRhTHNqM3o1ejhVYlJ6RkgzeTdhNm1va0NraVBPVG9STVpTZjgyZGc3WmE5M01WdlBtMzEzSWowek96ODRTNmFYbk0tVmRmZ1dwVkdFSWdYVi1zVWdNMnRCcjJxOV9ubXpNVHpjb2NIU1ZB?oc=5",
@@ -4788,6 +4778,36 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "COMMENTARY: Nice earnings forecasts you have. Shame if something happened to them",
+   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNME92MEFjQ2FZazN4di1xaHljdUF4RC14cnFHSVlVYUFsM0IwUEJaZXExc2VsbFhEOUhZT1FUaUVCVllXM1k5UVVRSlZoaEEtQzM1TFFPaHZUdExJYWRpS21xd2ZkRjM1RHZCMlhndkVsQjJfZHg1X0lHbmd2b1R1QW11RVRydnVDZlM0UjFWUGtSWWJWLVMtdVE2aGtxWVVJTzJuLWNaajFPcjJKXzJfTjY0WUtvR1Nlalk0N3g0MWotZ1c2cnBPaHNFaXhUOXQtSEJHZzRHOVl5QQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T13:25:24.207876+00:00",
+   "title_ru": "КОММЕНТАРИЙ: Хорошие у вас прогнозы по доходам. Жалко, если с ними что-то случилось"
+  },
+  {
+   "title": "Explainer: From filing to first trade: Inside the US IPO process",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNaXpEaVAwQk9GeVBoOThTNVliRWZUblF3eGxzemFDbDhnd2h1THV3MEdQUEcxMEZKckVreGF2NnNKS1RXT0NTaGFtWkZSSTFraUktSzFPSk5fZEhCUmlGX0hYNU1ZQnlIUWtQUnF2REhFRDZJc0VzeUNCMjUyNGxiSjJibDgwVnUtWmFnbDdEeTRGNnA0bnVXMQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T13:25:24.207876+00:00",
+   "title_ru": "Объяснение: От подачи заявки до первой сделки: изнутри процесса IPO в США"
+  },
+  {
+   "title": "From Amazon to Google, the deep-pocketed investors in Anthropic",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPdUNGUW5tbnZDMW55VkkxZXBQYkF3a1dOQmw2Unk3MGVVRWlsdWttLVRWTmNkWVpERlVPZVNpeGhPMlJCYWdWczhlQjN0SHc3czRuaVNOQVBGZlV4aGZycFE4S1hlUGRXSkROWmVNYU0waG44cHNiaDM1MjdiVjQyVV9FRmdBeW1WVmREXzl3QVFDUlRXczd3NmYwWjVIeld6RXpIVkZ3?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T13:25:24.207876+00:00",
+   "title_ru": "От Amazon до Google: богатые инвесторы Anthropic"
   }
  ],
  "last_digest": "2026-10-25",
@@ -11203,14 +11223,14 @@
    "0001990106-26-000026",
    "0001976408-26-000900",
    "0001976408-26-000905",
+   "0001193125-26-431207",
    "0001049521-26-000085",
    "0001976408-26-000904",
    "0002022050-26-000011",
    "0001976408-26-000907"
   ],
   "errors": {
-   "senate": "HTTPError: HTTP Error 403: Forbidden",
-   "sec": "TimeoutError: The read operation timed out"
+   "senate": "HTTPError: HTTP Error 403: Forbidden"
   }
  },
  "cal_actuals": {}
