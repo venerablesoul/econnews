@@ -598,7 +598,8 @@
   "936fc257a4083eff": "2026-10-26T08:44:41.563377+00:00",
   "e9175f525fa1c782": "2026-10-26T08:49:41.526900+00:00",
   "0d6d52779aeb309a": "2026-10-26T08:49:41.526900+00:00",
-  "a295f19853d7a305": "2026-10-26T08:49:41.526900+00:00"
+  "a295f19853d7a305": "2026-10-26T08:49:41.526900+00:00",
+  "7f456ff5de0912ed": "2026-10-26T08:59:41.484858+00:00"
  },
  "recent": [
   {
@@ -4968,6 +4969,19 @@
     "markets",
     "China"
    ]
+  },
+  {
+   "title": "BofA Sees Oil Around $120 If Iran Resumes Strikes (Video)",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-26/bofa-sees-oil-around-120-if-iran-resumes-strikes-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T08:59:41.484858+00:00",
+   "title_ru": "BofA видит нефть в районе $ 120, если Иран возобновит забастовки (видео)",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-25",
@@ -4990,7 +5004,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 1,
+  "Fed": 0,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
