@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "7da3d7f1aead97ea": "2026-10-23T12:16:55.686706+00:00",
-  "3820822129523b56": "2026-10-23T12:16:55.686706+00:00",
-  "4802a882bfa91781": "2026-10-23T12:21:55.721813+00:00",
-  "ac450de61ed3ed28": "2026-10-23T12:21:55.721813+00:00",
   "bc231ad185b0fdb2": "2026-10-23T12:26:55.689547+00:00",
   "d83a9537429053a5": "2026-10-23T12:26:55.689547+00:00",
   "d3544c9e7ee32892": "2026-10-23T12:31:55.664240+00:00",
@@ -603,66 +599,10 @@
   "e1f9fc13c592e5b3": "2026-10-26T12:10:24.133371+00:00",
   "914da9fdcffebbb8": "2026-10-26T12:10:24.133371+00:00",
   "0113200875574a92": "2026-10-26T12:15:24.312128+00:00",
-  "09501a54561ee3ac": "2026-10-26T12:15:24.312128+00:00"
+  "09501a54561ee3ac": "2026-10-26T12:15:24.312128+00:00",
+  "e2467166d4a805f8": "2026-10-26T12:20:24.249081+00:00"
  },
  "recent": [
-  {
-   "title": "GLP-1 boom in China, India, Brazil could create $22 bln market by 2035, J.P. Morgan says",
-   "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQSW50UXhIb0ltNzNLV2piN1NQWGlud3p2YWJSMFZGYXE1NjRiSUY5SDdDQmI5UU9rVVBEWjhHWjZFckhKc2luSHhzTE5pSmJudVZmMXUtOG1PSE9XbTZTUVpaZWF1dkQ2R01BMTN3NnFNUmw3cWozalZRS0ZVcnJKOE1abXB5RnFUX1F1RlRoMGNxQW5BWmczbWhNTEQtcXNCTVNrR1pqV2RxRVVaRlZROWtpV28zUUZXTW9Odl9RMnFnQjZfcG1KRklZaWZJSnhQdlFPbGdKT0pUek1DVXpIWTNsWkNKdw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T12:16:55.686706+00:00",
-   "title_ru": "Бум GLP-1 в Китае, Индии, Бразилии может создать рынок на $ 22 млрд к 2035 году, говорит J.P. Morgan",
-   "tags": [
-    "China"
-   ]
-  },
-  {
-   "title": "What the coming copper crunch means for the global economy",
-   "link": "https://www.ft.com/content/06209f51-de7c-4de0-8e66-5c621a960b87?syn-25a6b1a6=1",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T12:16:55.686706+00:00",
-   "title_ru": "Что означает грядущий медный кризис для мировой экономики",
-   "lead": "A looming shortage of the metal will push up costs for AI, defence tech and the green transition",
-   "lead_ru": "Надвигающаяся нехватка металла приведет к росту затрат на ИИ, оборонные технологии и зеленый переход"
-  },
-  {
-   "title": "Набиуллина рассказала, что потребуется для возвращения целевой инфляции",
-   "link": "https://www.rbc.ru/economics/23/10/2026/6adb4f2dc79c544603b8a1e4",
-   "sources": [
-    "RBC"
-   ],
-   "score": 6,
-   "ts": "2026-10-23T12:21:55.721813+00:00",
-   "title_en": "Nabiullina told what will be required to return the target inflation",
-   "lead": "Банку России потребуется более длительный период поддержания умеренно жестких денежно-кредитных условий для устойчивого возвращения инфляции к целевому уровню 4%.",
-   "lead_en": "The Bank of Russia will need a longer period of maintaining moderately tight monetary conditions for a sustainable return of inflation to the target level of 4%.",
-   "tags": [
-    "BankOfRussia",
-    "inflation",
-    "Russia"
-   ]
-  },
-  {
-   "title": "Набиуллина назвала «самое неприятное» для экономики",
-   "link": "https://www.rbc.ru/economics/23/10/2026/6adb4fa25ea18da5a7ad8ef4",
-   "sources": [
-    "RBC"
-   ],
-   "score": 4,
-   "ts": "2026-10-23T12:21:55.721813+00:00",
-   "title_en": "Nabiullina called \"the most unpleasant\" for the economy",
-   "lead": "Сочетание сокращения предложения и ускорение спроса являются нежелательным для экономики сочетанием, заявила глава ЦБ Эльвира Набиуллина на пресс-конференции.",
-   "lead_en": "The combination of supply reduction and demand acceleration is an undesirable combination for the economy, Central Bank Governor Elvira Nabiullina said at a press conference.",
-   "tags": [
-    "BankOfRussia"
-   ]
-  },
   {
    "title": "Brazil Inflation Shoots Through Target Limit Before Runoff Vote",
    "link": "https://www.bloomberg.com/news/articles/2026-10-23/brazil-inflation-shoots-through-target-limit-before-runoff-vote",
