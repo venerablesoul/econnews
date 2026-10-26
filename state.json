@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "1c76bdfd3faee74d": "2026-10-23T10:51:24.954250+00:00",
-  "eb92ac57e1dd2b4f": "2026-10-23T10:51:24.954250+00:00",
-  "682388b9603190ad": "2026-10-23T10:56:24.923522+00:00",
   "763d11ee6670936d": "2026-10-23T11:01:24.887071+00:00",
   "371c3e3dd34a1e08": "2026-10-23T11:01:24.887071+00:00",
   "4753145adad3db87": "2026-10-23T11:06:24.957669+00:00",
@@ -610,51 +607,14 @@
   "3bded9ba483c3d6d": "2026-10-26T10:40:24.237076+00:00",
   "d35b3e46eba89dca": "2026-10-26T10:45:24.155827+00:00",
   "faf08b5a85889334": "2026-10-26T10:45:24.155827+00:00",
-  "94140c0037f03a33": "2026-10-26T10:50:24.228388+00:00"
+  "94140c0037f03a33": "2026-10-26T10:50:24.228388+00:00",
+  "041d359d1687e4dd": "2026-10-26T10:55:24.424268+00:00",
+  "14d17d9d866d0a4e": "2026-10-26T11:00:24.170523+00:00",
+  "2ead218674e84a38": "2026-10-26T11:00:24.170523+00:00",
+  "47b8fc01e58a00c8": "2026-10-26T11:00:24.170523+00:00",
+  "18c3f6620a9fe4f9": "2026-10-26T11:00:24.170523+00:00"
  },
  "recent": [
-  {
-   "title": "Russia Holds Key Rate as Ukrainian Strikes Spur Inflation",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-23/russia-holds-key-rate-as-ukrainian-strikes-spur-inflation",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-23T10:51:24.954250+00:00",
-   "title_ru": "Россия удерживает ключевую ставку, поскольку украинские забастовки стимулируют инфляцию",
-   "lead": "Russia’s central bank held interest rates unchanged for a second straight meeting as the Kremlin battles the economic consequences of Ukrainian strikes on energy infrastructure.",
-   "lead_ru": "Центральный банк России удерживал процентные ставки без изменений в течение второго заседания подряд, поскольку Кремль борется с экономическими последствиями украинских ударов по энергетической инфраструктуре.",
-   "tags": [
-    "rates",
-    "inflation",
-    "Russia"
-   ]
-  },
-  {
-   "title": "The Week in Numbers: Indonesian stocks plummet, Meta's massive fine",
-   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9IdWJic1RJVTdYd1NyX0UxVTRtcXdWYmJGUGhqV0VYQXMzTTM5ZHN6bmFWX205cTFDYnd3bVcyWGZ4R0RtVGt6MUFVamd2ZWZOYllHbGFRRUxCaElaZlhXODlLXzFla3dLS0FiMUhMcnNsMEZoZ0FfWlV3?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T10:51:24.954250+00:00",
-   "title_ru": "Неделя в цифрах: падение индонезийских акций, огромный штраф Meta",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "Earnings limit of up to £140K for first-time buyers loan scheme",
-   "link": "https://www.bbc.co.uk/news/articles/c6n8dex0zeg9o?at_medium=RSS&at_campaign=rss",
-   "sources": [
-    "BBC"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T10:56:24.923522+00:00",
-   "title_ru": "Лимит дохода до £ 140K для схемы кредитования покупателей-новичков",
-   "lead": "The Your First Home scheme will offer government-backed loans for those buying new-builds in England.",
-   "lead_ru": "Схема «Ваш первый дом» будет предлагать кредиты, поддерживаемые правительством, для тех, кто покупает новостройки в Англии."
-  },
   {
    "title": "Oil Climbs on Threats of a Widening War in Middle East",
    "link": "https://www.bloomberg.com/news/videos/2026-10-23/oil-climbs-on-threats-of-a-widening-war-in-middle-east-video",
@@ -5005,6 +4965,48 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Middle East markets rebound as diplomacy fuels hopes of easing Iran hostilities",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNaDhPSnA1U2M2cUI1ajJYZy1COWI1WG1mNUx1ajhqR0ZaZWw2OHhTZGxISHFCa01lZUlNMlFpMFktREVjQ0NUTGNWbGF6V2hOSndpWm10djdnNHpwa01ObUc4ZjBHQzU3ZnNkSm5HTDBlOTFPLXJVejlvalhOOEZRY3Y2b3JzdjRJNnRBZHFyTXo2Zmo0UHBzRVFRcmJFS0NlMjdxazZFZEJoREtRcmJjZENtay1Xd1VraWdSQ1BYQ0pYSUhVWFE?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T11:00:24.170523+00:00",
+   "title_ru": "Рынки Ближнего Востока восстанавливаются, поскольку дипломатия подогревает надежды на ослабление боевых действий с Ираном"
+  },
+  {
+   "title": "Galp shares tumble after collapse of Moeve tie-up talks",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOcUdmRHBJcVJmcko1NVpEVHRETC1hVFI2NFhYLXdvcFBuVFJxRFA3X0FmWWR2ZWFEelRWbHJfdDc5b3RhNFI4SzB1OXBLWkcwbnF0amRmTXJYVXFKa1Z1eFV5T3FZSzV6SWlxUUpMenZ1WG5hbzAybGFWb1luMU10NjVFbHBrM0d3UlEwVWVqanVfLThBTXRNbWxhZ0ZodjZRZHFsTXhkMUVaMVVaaS1xdzJQNXY?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T11:00:24.170523+00:00",
+   "title_ru": "Акции Galp упали после провала переговоров о сотрудничестве с Moeve",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "EQT, Range Resources tie up in $50 billion-plus deal to create US gas giant",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOUDJYcWR4d21YUDJHMFFqVWNnWFlwZDQ2M25TQmFzcVZKNGUzb0lGeWRCcEUxclB5eWJBV3ExWjBDTEVvY1RiYkd0cUlHaGx4SE5sMFpGV2ZCM2JJSWdYUFBvNUhzd0s5amc3NUtBbVZxbVVMQU5JU3JTbVhxOFFRak1IZTliVlRsM2llLThFRWVRZU0?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T11:00:24.170523+00:00",
+   "title_ru": "EQT и Range Resources заключили сделку на сумму более 50 миллиардов долларов по созданию газового гиганта в США"
+  },
+  {
+   "title": "These four shocks could hand investors an unexpected buying window, strategists say",
+   "link": "https://www.marketwatch.com/story/these-four-shocks-could-hand-investors-an-unexpected-buying-window-strategists-say-5ae7c4db?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 2,
+   "ts": "2026-10-26T11:00:24.170523+00:00"
   }
  ],
  "last_digest": "2026-10-25",
@@ -11410,7 +11412,9 @@
    "sec": true
   },
   "checked": "2026-10-26T10:30:24.206858+00:00",
-  "sec_seen": [],
+  "sec_seen": [
+   "0001628280-26-067128"
+  ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
   }
