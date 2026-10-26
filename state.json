@@ -602,7 +602,9 @@
   "c6c2c52d68e74132": "2026-10-26T23:07:01.287097+00:00",
   "a5753e9c2974ee7b": "2026-10-26T23:12:01.243608+00:00",
   "e5e49692674858b8": "2026-10-26T23:12:01.243608+00:00",
-  "b17fbe9158d9df70": "2026-10-26T23:17:01.156957+00:00"
+  "b17fbe9158d9df70": "2026-10-26T23:17:01.156957+00:00",
+  "9fdccd93da551745": "2026-10-26T23:22:01.165221+00:00",
+  "c1fe7b246386e767": "2026-10-26T23:22:01.165221+00:00"
  },
  "recent": [
   {
@@ -4679,6 +4681,34 @@
    "title_ru": "Кредит ЕС Airbus угрожает торговому перемирию с США, предупреждает торговый представитель Трампа",
    "lead": "Jamieson Greer says the European Investment Bank’s historic loan to the aerospace group risks ‘violating’ the US-EU aircraft deal",
    "lead_ru": "Джеймисон Грир говорит, что исторический кредит Европейского инвестиционного банка аэрокосмической группе рискует «нарушить» соглашение по самолетам между США и ЕС"
+  },
+  {
+   "title": "South Korea’s Economy Beats Forecasts on AI-Driven Chip Boom",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-26/south-korea-s-economy-beats-forecasts-on-ai-driven-chip-boom",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T23:22:01.165221+00:00",
+   "title_ru": "Экономика Южной Кореи превзошла прогнозы по поводу бума чипов, вызванного искусственным интеллектом",
+   "lead": "South Korea’s economy grew faster than expected in the third quarter as an artificial intelligence-fueled chip boom supported exports and investment, backing the case for further interest-rate increases.",
+   "lead_ru": "Экономика Южной Кореи в третьем квартале росла быстрее, чем ожидалось, поскольку бум чипов, вызванный искусственным интеллектом, поддержал экспорт и инвестиции, что поддержало аргументы в пользу дальнейшего повышения процентных ставок."
+  },
+  {
+   "title": "В финансировании науки — без перемен // Мониторинг статистики",
+   "link": "https://www.kommersant.ru/doc/9061152",
+   "sources": [
+    "Kommersant"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T23:22:01.165221+00:00",
+   "title_en": "There are no changes in the financing of science // Monitoring statistics",
+   "lead": "Общий объем внутренних затрат на исследования и разработки в России, по оценкам Института статистических исследований и экономики знаний НИУ ВШЭ, в 2025 году составил 2,145 трлн руб., или 1% ВВП.",
+   "lead_en": "The total volume of domestic expenditures on research and development in Russia, according to estimates by the Institute of Statistical Research and Economics of Knowledge at the National Research University Higher School of Economics, in 2025 amounted to 2.145 trillion rubles, or 1% of GDP.",
+   "tags": [
+    "GDP",
+    "Russia"
+   ]
   }
  ],
  "last_digest": "2026-10-26",
@@ -11091,7 +11121,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-26T22:17:01.251396+00:00",
+  "checked": "2026-10-26T23:22:01.165221+00:00",
   "sec_seen": [
    "0000912282-26-001394",
    "0001750495-26-000007",
@@ -11101,8 +11131,8 @@
    "0001137789-26-000292",
    "0000902664-26-004286",
    "0001137789-26-000288",
-   "0002050422-26-000017",
    "0000912282-26-001400",
+   "0002050422-26-000017",
    "0001225208-26-008516",
    "0000912282-26-001396",
    "0000909832-26-000113",
