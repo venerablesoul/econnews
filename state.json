@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "5580b3e486b709e4": "2026-10-23T12:01:24.965076+00:00",
-  "e1f9fc13c592e5b3": "2026-10-23T12:02:00.724408+00:00",
-  "da9adc90c1b9851c": "2026-10-23T12:02:00.724408+00:00",
-  "908b3876f2f7d4d7": "2026-10-23T12:02:00.724408+00:00",
   "84716fe2e36f65f9": "2026-10-23T12:06:55.655595+00:00",
   "9697878d96ec8d7a": "2026-10-23T12:11:55.682806+00:00",
   "85c92bd6d59ec864": "2026-10-23T12:11:55.682806+00:00",
@@ -605,41 +601,10 @@
   "f3c8a6a3d2180949": "2026-10-26T11:50:24.143659+00:00",
   "a4e79cb965d3ab52": "2026-10-26T11:50:24.143659+00:00",
   "97eccc64e7369667": "2026-10-26T11:50:24.143659+00:00",
-  "e245e44c04a114e7": "2026-10-26T12:00:24.206042+00:00"
+  "e245e44c04a114e7": "2026-10-26T12:00:24.206042+00:00",
+  "74170627eb451503": "2026-10-26T12:05:24.141530+00:00"
  },
  "recent": [
-  {
-   "title": "Island inflation rate rises to 3%, figures show",
-   "link": "https://www.bbc.co.uk/news/articles/cmz6581p1ee8o?at_medium=RSS&at_campaign=rss",
-   "sources": [
-    "BBC"
-   ],
-   "score": 5,
-   "ts": "2026-10-23T12:01:24.965076+00:00",
-   "title_ru": "Уровень инфляции на острове вырос до 3%, показывают цифры",
-   "lead": "The rising cost of food and alcohol drives an increase in the inflation rate, figures show.",
-   "lead_ru": "Рост цен на продукты питания и алкоголь стимулирует рост инфляции, показывают цифры.",
-   "tags": [
-    "inflation"
-   ]
-  },
-  {
-   "title": "Пресс-конференция Эльвиры Набиуллиной по ключевой ставке. Трансляция",
-   "link": "https://www.rbc.ru/finances/23/10/2026/6adb112b74a6191c597a386c",
-   "sources": [
-    "RBC"
-   ],
-   "score": 5,
-   "ts": "2026-10-23T12:02:00.724408+00:00",
-   "title_en": "Press conference of Elvira Nabiullina on the key rate. Broadcast",
-   "lead": "Банк России 23 октября второй раз подряд оставил ключевую ставку без изменений— на уровне 14%.",
-   "lead_en": "On October 23, the Bank of Russia left the key rate unchanged for the second time in a row - at the level of 14%.",
-   "tags": [
-    "BankOfRussia",
-    "rates",
-    "Russia"
-   ]
-  },
   {
    "title": "Jio’s Record IPO Draws Strong Demand, Defying India Market Rout",
    "link": "https://www.bloomberg.com/news/articles/2026-10-23/jio-s-record-ipo-draws-strong-demand-defying-india-market-rout",
@@ -4922,6 +4887,21 @@
     "oil",
     "gold"
    ]
+  },
+  {
+   "title": "Trump’s tariff salesman and election politics of trade",
+   "link": "https://www.bloomberg.com/news/newsletters/2026-10-26/trump-s-tariff-salesman-and-election-politics-of-trade",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 7,
+   "ts": "2026-10-26T12:05:24.141530+00:00",
+   "title_ru": "Продавец тарифов Трампа и предвыборная торговая политика",
+   "lead": "USTR Jamieson Greer sees the short-term pain of tariffs as overblown, touting longer-term gains",
+   "lead_ru": "Торговый представитель США Джеймисон Грир считает, что краткосрочная боль от тарифов преувеличена, и рекламирует долгосрочные выгоды.",
+   "tags": [
+    "tariffs"
+   ]
   }
  ],
  "last_digest": "2026-10-25",
@@ -4973,7 +4953,7 @@
   "2026-10-26-09"
  ],
  "calendar": {
-  "fetched": "2026-10-26T06:04:41.399007+00:00",
+  "fetched": "2026-10-26T12:05:24.141530+00:00",
   "events": [
    {
     "title": "Bank Holiday",
@@ -11329,6 +11309,7 @@
   "checked": "2026-10-26T11:35:24.325038+00:00",
   "sec_seen": [
    "0001976408-26-000900",
+   "0001493152-26-048422",
    "0001049521-26-000085",
    "0001628280-26-067128"
   ],
