@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "5c363d83bd369900": "2026-10-23T04:35:51.570726+00:00",
-  "ffc6a67c8d1be466": "2026-10-23T04:35:51.570726+00:00",
-  "844412fbe180c205": "2026-10-23T04:35:51.570726+00:00",
-  "9b2b0208b678bd6f": "2026-10-23T04:35:51.570726+00:00",
   "26e35ff8a36f3760": "2026-10-23T04:50:51.507191+00:00",
   "04f3724f0129887b": "2026-10-23T05:05:51.540516+00:00",
   "677c33702f2e9feb": "2026-10-23T05:10:51.550957+00:00",
@@ -594,54 +590,11 @@
   "2ff5590774d302a8": "2026-10-26T04:24:41.347791+00:00",
   "1e2c1a64212cef34": "2026-10-26T04:24:41.347791+00:00",
   "d260ce5c8e24a422": "2026-10-26T04:34:41.381918+00:00",
-  "fd87e48941331b2d": "2026-10-26T04:34:41.381918+00:00"
+  "fd87e48941331b2d": "2026-10-26T04:34:41.381918+00:00",
+  "6b0b0f9487910618": "2026-10-26T04:39:41.382446+00:00",
+  "82fa9ff4f887128f": "2026-10-26T04:39:41.382446+00:00"
  },
  "recent": [
-  {
-   "title": "Milei’s economic reforms under pressure",
-   "link": "https://www.ft.com/content/bba22699-a32b-4c1e-bc19-8a53de122fc9?syn-25a6b1a6=1",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 4,
-   "ts": "2026-10-23T04:35:51.570726+00:00",
-   "title_ru": "Экономические реформы Milei под давлением",
-   "lead": "Argentine president’s radical plan to transform the country is proving painful as the economy stagnates, weighed down by austerity and tight monetary policy",
-   "lead_ru": "Радикальный план президента Аргентины по преобразованию страны оказывается болезненным, поскольку экономика стагнирует, отягощенная мерами жесткой экономии и жесткой денежно-кредитной политикой",
-   "tags": [
-    "rates"
-   ]
-  },
-  {
-   "title": "Argentina in global trading sweet spot",
-   "link": "https://www.ft.com/content/f1e6e30a-7f2b-49c9-bc8d-ef3821c9695a?syn-25a6b1a6=1",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T04:35:51.570726+00:00",
-   "title_ru": "Аргентина в сладком месте мировой торговли",
-   "lead": "Donald Trump’s tariffs have left the country relatively unscathed, although analysts fear tensions with Brazil are putting survival of trade group Mercosur at risk",
-   "lead_ru": "Тарифы Дональда Трампа оставили страну относительно невредимой, хотя аналитики опасаются, что напряженность в отношениях с Бразилией ставит под угрозу выживание торговой группы МЕРКОСУР",
-   "tags": [
-    "tariffs"
-   ]
-  },
-  {
-   "title": "Yen rallies as global tech rout sparks flight to safety",
-   "link": "https://www.ft.com/content/8948193b-438b-4d71-a0b1-31dff56fc308?syn-25a6b1a6=1",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T04:35:51.570726+00:00",
-   "title_ru": "Ралли иены, поскольку глобальный технологический маршрут вызывает бегство в безопасное место",
-   "lead": "Asian stock markets follow Wall Street lower as Japanese currency gains against the dollar",
-   "lead_ru": "Азиатские фондовые рынки следуют за Уолл-стрит вниз, поскольку японская валюта растет по отношению к",
-   "tags": [
-    "dollar"
-   ]
-  },
   {
    "title": "Swiggy Shares Plunge After Losses Mount on Intense Competition",
    "link": "https://www.bloomberg.com/news/articles/2026-10-23/swiggy-shares-plunge-after-losses-mount-on-intense-competition",
@@ -5259,6 +5212,22 @@
    "score": 3,
    "ts": "2026-10-26T04:24:41.347791+00:00",
    "title_ru": "Индонезия усиливает меры против манипулирования акциями после обвала рынка, вызванного MSCI"
+  },
+  {
+   "title": "China National Team ETFs Draw Most Inflows Since Trade War Rout",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-26/china-national-team-etfs-draw-most-inflows-since-trade-war-rout",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-26T04:39:41.382446+00:00",
+   "title_ru": "ETF национальной команды Китая привлекают наибольшее количество притоков со времен торговой войны",
+   "lead": "China’s state-led funds stepped into the market with the heaviest buying since the April 2025 rout, as authorities ramped up efforts to stem a market freefall.",
+   "lead_ru": "Государственные фонды Китая вышли на рынок с самыми крупными покупками с апреля 2025 года, когда власти активизировали усилия, чтобы остановить свободное падение рынка.",
+   "tags": [
+    "China",
+    "tariffs"
+   ]
   }
  ],
  "last_digest": "2026-10-25",
