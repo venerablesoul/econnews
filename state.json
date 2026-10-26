@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "b521592c066d4d79": "2026-10-23T10:41:24.889804+00:00",
-  "041d359d1687e4dd": "2026-10-23T10:46:24.887622+00:00",
   "1c76bdfd3faee74d": "2026-10-23T10:51:24.954250+00:00",
   "eb92ac57e1dd2b4f": "2026-10-23T10:51:24.954250+00:00",
   "682388b9603190ad": "2026-10-23T10:56:24.923522+00:00",
@@ -609,7 +607,10 @@
   "686c3c403d643199": "2026-10-26T10:40:24.237076+00:00",
   "b0b2b88b67fe3e04": "2026-10-26T10:40:24.237076+00:00",
   "8e8dd7d63753315f": "2026-10-26T10:40:24.237076+00:00",
-  "3bded9ba483c3d6d": "2026-10-26T10:40:24.237076+00:00"
+  "3bded9ba483c3d6d": "2026-10-26T10:40:24.237076+00:00",
+  "d35b3e46eba89dca": "2026-10-26T10:45:24.155827+00:00",
+  "faf08b5a85889334": "2026-10-26T10:45:24.155827+00:00",
+  "94140c0037f03a33": "2026-10-26T10:50:24.228388+00:00"
  },
  "recent": [
   {
@@ -4981,6 +4982,28 @@
    "title_ru": "Прибыль китайской CITIC Securities в третьем квартале упала на 20,2% из-за слабого фондового рынка",
    "tags": [
     "China"
+   ]
+  },
+  {
+   "title": "The Kospi index is the leading indicator for the global AI trade — and Goldman just slashed its forecast by 25%",
+   "link": "https://www.marketwatch.com/story/the-kospi-index-is-the-leading-indicator-for-the-global-ai-trade-and-goldman-just-slashed-its-forecast-by-25-ccfe2690?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 2,
+   "ts": "2026-10-26T10:45:24.155827+00:00"
+  },
+  {
+   "title": "Ather Energy posts first quarterly profit, shares rise 10%",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOVnhEVHdQMmhvSjlHM0h6dzZuNWJnQi14MW1wa1Q3T1dTekdSaVpxRjVUMGhTWTBHVjF0amdGMkd2ZVNGUDFtTFhXUG54aS0xWU5VYW9nQVZMS05EV2ZQN3RaWjNwYmw4Snh1YTFJckZ2NTd0ZzE4RF9LYmhlQVBUX2xBSl91WlJCY0x0TXQ5Y090YjRKQ19BQWJ1WWYxU1A4bU5OX284WG5MUUF2YTdV?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T10:50:24.228388+00:00",
+   "title_ru": "Ather Energy сообщила о первой квартальной прибыли, акции выросли на 10%",
+   "tags": [
+    "markets"
    ]
   }
  ],
@@ -11387,13 +11410,7 @@
    "sec": true
   },
   "checked": "2026-10-26T10:30:24.206858+00:00",
-  "sec_seen": [
-   "0001801661-26-000126",
-   "0002160363-26-000004",
-   "0001493152-26-048321",
-   "0001646649-26-000035",
-   "0001398344-26-018733"
-  ],
+  "sec_seen": [],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
   }
