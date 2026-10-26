@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "84716fe2e36f65f9": "2026-10-23T12:06:55.655595+00:00",
-  "9697878d96ec8d7a": "2026-10-23T12:11:55.682806+00:00",
-  "85c92bd6d59ec864": "2026-10-23T12:11:55.682806+00:00",
   "7da3d7f1aead97ea": "2026-10-23T12:16:55.686706+00:00",
   "3820822129523b56": "2026-10-23T12:16:55.686706+00:00",
   "4802a882bfa91781": "2026-10-23T12:21:55.721813+00:00",
@@ -602,24 +599,13 @@
   "a4e79cb965d3ab52": "2026-10-26T11:50:24.143659+00:00",
   "97eccc64e7369667": "2026-10-26T11:50:24.143659+00:00",
   "e245e44c04a114e7": "2026-10-26T12:00:24.206042+00:00",
-  "74170627eb451503": "2026-10-26T12:05:24.141530+00:00"
+  "74170627eb451503": "2026-10-26T12:05:24.141530+00:00",
+  "e1f9fc13c592e5b3": "2026-10-26T12:10:24.133371+00:00",
+  "914da9fdcffebbb8": "2026-10-26T12:10:24.133371+00:00",
+  "0113200875574a92": "2026-10-26T12:15:24.312128+00:00",
+  "09501a54561ee3ac": "2026-10-26T12:15:24.312128+00:00"
  },
  "recent": [
-  {
-   "title": "Jio’s Record IPO Draws Strong Demand, Defying India Market Rout",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-23/jio-s-record-ipo-draws-strong-demand-defying-india-market-rout",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-23T12:11:55.682806+00:00",
-   "title_ru": "Рекордное IPO Jio привлекает сильный спрос, бросая вызов рынку Индии",
-   "lead": "Jio Platforms Ltd.’s $3.1 billion initial public offering drew strong demand, particularly from institutional investors, as the country’s biggest-ever share sale defied the drag of a weeklong selloff in Indian equities.",
-   "lead_ru": "Первоначальное публичное размещение Jio Platforms Ltd. на сумму $ 3,1 млрд вызвало сильный спрос, особенно со стороны институциональных инвесторов, поскольку крупнейшая в истории страны продажа акций бросила вызов недельной распродаже индийских акций.",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "GLP-1 boom in China, India, Brazil could create $22 bln market by 2035, J.P. Morgan says",
    "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQSW50UXhIb0ltNzNLV2piN1NQWGlud3p2YWJSMFZGYXE1NjRiSUY5SDdDQmI5UU9rVVBEWjhHWjZFckhKc2luSHhzTE5pSmJudVZmMXUtOG1PSE9XbTZTUVpaZWF1dkQ2R01BMTN3NnFNUmw3cWozalZRS0ZVcnJKOE1abXB5RnFUX1F1RlRoMGNxQW5BWmczbWhNTEQtcXNCTVNrR1pqV2RxRVVaRlZROWtpV28zUUZXTW9Odl9RMnFnQjZfcG1KRklZaWZJSnhQdlFPbGdKT0pUek1DVXpIWTNsWkNKdw?oc=5",
@@ -4902,6 +4888,39 @@
    "tags": [
     "tariffs"
    ]
+  },
+  {
+   "title": "Nvidia, AMD and Broadcom could buy Meta shares as part of $35 billion stock offering",
+   "link": "https://www.marketwatch.com/story/nvidia-amd-and-broadcom-could-buy-meta-shares-as-part-of-35-billion-stock-offering-d816fec2?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-26T12:10:24.133371+00:00"
+  },
+  {
+   "title": "HSBC’s Max Kettner Ends Bullish Stocks Call Ahead of Midterms",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-26/hsbc-s-max-kettner-ends-bullish-stocks-call-ahead-of-midterms",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T12:15:24.312128+00:00",
+   "title_ru": "Макс Кеттнер из HSBC прекращает разговор о бычьих акциях накануне промежуточных выборов",
+   "lead": "Max Kettner, among Wall Street’s most bullish strategists, is cutting back on his bet on stocks for the first time in months, arguing that sharp mood changes among investors warrant a more cautious approach ahead of next week’s…",
+   "lead_ru": "Макс Кеттнер, один из самых оптимистичных стратегов Уолл-стрит, впервые за несколько месяцев сокращает свою ставку на акции, утверждая, что резкие изменения настроений среди инвесторов требуют более осторожного подхода в преддверии торгов на следующей неделе...",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "A dot-com survivor warns retail investors against buying the tech dip: ‘You’re taking a knife to a gunfight.’",
+   "link": "https://www.marketwatch.com/story/a-dot-com-survivor-warns-retail-investors-against-buying-the-tech-dip-youre-taking-a-knife-to-a-gunfight-6c940361?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-26T12:15:24.312128+00:00"
   }
  ],
  "last_digest": "2026-10-25",
@@ -7275,6 +7294,54 @@
    }
   ],
   "insiders": [
+   {
+    "src": "sec",
+    "id": "c5b797c693505c23",
+    "ticker": "CART",
+    "company": "Maplebear Inc.",
+    "who": "Chris Rogers",
+    "role": "CEO",
+    "type": "sell",
+    "value": 1324226,
+    "shares": 24060,
+    "price": 55.04,
+    "plan": true,
+    "date": "2026-10-23",
+    "disclosed": "2026-10-26",
+    "link": "https://www.sec.gov/Archives/edgar/data/2082930/000208293026000018/0002082930-26-000018-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "a138c81e261917c0",
+    "ticker": "CART",
+    "company": "Maplebear Inc.",
+    "who": "Emily Reuter",
+    "role": "CFO",
+    "type": "sell",
+    "value": 2750000,
+    "shares": 50000,
+    "price": 55.0,
+    "plan": true,
+    "date": "2026-10-23",
+    "disclosed": "2026-10-26",
+    "link": "https://www.sec.gov/Archives/edgar/data/2022050/000202205026000011/0002022050-26-000011-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "ec5f1f7b4b190a11",
+    "ticker": "CART",
+    "company": "Maplebear Inc.",
+    "who": "Morgan Fong",
+    "role": "General Counsel",
+    "type": "sell",
+    "value": 937934,
+    "shares": 18390,
+    "price": 51.0,
+    "plan": true,
+    "date": "2026-10-22",
+    "disclosed": "2026-10-26",
+    "link": "https://www.sec.gov/Archives/edgar/data/1990106/000199010626000026/0001990106-26-000026-index.htm"
+   },
    {
     "src": "sec",
     "id": "5544334074aa34fd",
@@ -11226,54 +11293,6 @@
     "date": "2026-10-15",
     "disclosed": "2026-10-16",
     "link": "https://www.sec.gov/Archives/edgar/data/1613103/000156040926000011/0001560409-26-000011-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "0067e143726a1778",
-    "ticker": "CORT",
-    "company": "CORCEPT THERAPEUTICS INC",
-    "who": "James N Wilson",
-    "role": "Director",
-    "type": "sell",
-    "value": 1148083,
-    "shares": 10000,
-    "price": 114.81,
-    "plan": true,
-    "date": "2026-10-15",
-    "disclosed": "2026-10-16",
-    "link": "https://www.sec.gov/Archives/edgar/data/1236387/000119312526424350/0001193125-26-424350-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "4f12548dc1fa2438",
-    "ticker": "BLLN",
-    "company": "BillionToOne, Inc.",
-    "who": "Oguzhan Atay",
-    "role": "CEO",
-    "type": "sell",
-    "value": 1090575,
-    "shares": 11000,
-    "price": 99.14,
-    "plan": true,
-    "date": "2026-10-15",
-    "disclosed": "2026-10-16",
-    "link": "https://www.sec.gov/Archives/edgar/data/2088549/000208854926000015/0002088549-26-000015-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "94132146dd84e361",
-    "ticker": "NTRA",
-    "company": "Natera, Inc.",
-    "who": "Matthew Rabinowitz",
-    "role": "Chair",
-    "type": "sell",
-    "value": 20132028,
-    "shares": 50000,
-    "price": 402.64,
-    "plan": true,
-    "date": "2026-10-15",
-    "disclosed": "2026-10-16",
-    "link": "https://www.sec.gov/Archives/edgar/data/1646382/000164638226000023/0001646382-26-000023-index.htm"
    }
   ],
   "docs": {
@@ -11308,10 +11327,13 @@
   },
   "checked": "2026-10-26T11:35:24.325038+00:00",
   "sec_seen": [
-   "0001976408-26-000900",
    "0001493152-26-048422",
+   "0002082930-26-000018",
+   "0001628280-26-067128",
+   "0001990106-26-000026",
+   "0001976408-26-000900",
    "0001049521-26-000085",
-   "0001628280-26-067128"
+   "0002022050-26-000011"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
