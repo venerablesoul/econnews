@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "39ca58dcc7f27308": "2026-10-23T13:16:55.689375+00:00",
   "0b2bbf600bfcab07": "2026-10-23T13:21:55.671723+00:00",
   "b8ef7b45db0d19dd": "2026-10-23T13:26:55.711135+00:00",
   "fda989b6a5e81a0e": "2026-10-23T13:26:55.711135+00:00",
@@ -598,22 +597,11 @@
   "419caf214ab143c0": "2026-10-26T13:10:24.182897+00:00",
   "ada6089820a5edae": "2026-10-26T13:10:24.182897+00:00",
   "588ec28156e9917a": "2026-10-26T13:15:24.138192+00:00",
-  "f686ba32bc778cf6": "2026-10-26T13:15:24.138192+00:00"
+  "f686ba32bc778cf6": "2026-10-26T13:15:24.138192+00:00",
+  "8e9e4a8f3bcf51d1": "2026-10-26T13:20:24.212848+00:00",
+  "695354c58af95b9e": "2026-10-26T13:20:24.212848+00:00"
  },
  "recent": [
-  {
-   "title": "Mapping the Market: Path to S&P 500 rally strewn with obstacles",
-   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPWHR0U3JXOGh1UGNkNnl3UXRaRzlFdm5JcngtWkRCWlhoc3c5ci1BMjRibmlCdjNqWG5rSG9zZUx5dlplQzNfYWhuQkFWUGozeWRBaTBOZ29BZ1JCSjM5OG1qZlRBckVEQVo3enB2X0xkcC1HZTNVd2Z2ZmpCOVdKNVg3Nk4zMHZJVi1RMw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-23T13:16:55.689375+00:00",
-   "title_ru": "Картирование рынка: путь к ралли S&P 500, усеянному препятствиями",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Axel Springer to Cut Telegraph Jobs After Buying UK Newspaper",
    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQUHg5TFl4WDZkTVNUdEJGMDVWSU83VmFpRFRIVjhrQzdFQWl5em1nTjVHZTlwVnlZd1h5d0E1d3ZVN0E4dUp4SHpfR3FGX1JfUzJwczl4cUhFd1FKLWRKMkxidjJnUjJ2YXlaNExLbDZlQzVmTUlsbWYycG9icUF6N2NxM1BWcVFRaUdnOVEyMzRPQVZ3dmQ2OHltbEV4OUxrMHpBTEF2U3htY24xcV9DTk93?oc=5",
@@ -4786,6 +4774,19 @@
    "lead_ru": "Эталонные фьючерсы вернулись на кризисные уровни, но ответные меры политики еще не приняты.",
    "tags": [
     "gas"
+   ]
+  },
+  {
+   "title": "FTSE 100 rises as falling oil prices boost risk appetite",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOa3RuN1E2czJLWGVWa0NLOTlTZzlNdVI2MzFnclRUZ3l0c0pRWS15MWdQUHJBMlBEdjI3U3ZtUzJVTU5OR0Q0MFlDS0JCdlI4c3I5dE90MjI1Tzk5MWtnYjZXNDJ4bkdnU20yMXVBeEpZc2JQai1ZQ0lydmd2U3lDVlZRblhSaWdGSGFaQ3dxWms0X3VBVWU4QjRGa2xzU3M?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-26T13:20:24.212848+00:00",
+   "title_ru": "Индекс FTSE 100 растет, поскольку падение цен на нефть повышает склонность к риску",
+   "tags": [
+    "oil"
    ]
   }
  ],
@@ -11208,7 +11209,8 @@
    "0001976408-26-000907"
   ],
   "errors": {
-   "senate": "HTTPError: HTTP Error 403: Forbidden"
+   "senate": "HTTPError: HTTP Error 403: Forbidden",
+   "sec": "TimeoutError: The read operation timed out"
   }
  },
  "cal_actuals": {}
