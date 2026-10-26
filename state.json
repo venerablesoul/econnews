@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "efc616d42d588a29": "2026-10-23T07:26:24.957883+00:00",
-  "bd666f64c1069710": "2026-10-23T07:26:24.957883+00:00",
   "54fb587b96b978d0": "2026-10-23T07:31:24.874763+00:00",
   "1358fc0d0c790e1c": "2026-10-23T07:31:24.874763+00:00",
   "12aead2682840761": "2026-10-23T07:31:24.874763+00:00",
@@ -600,39 +598,12 @@
   "21336a8511028457": "2026-10-26T07:19:41.374583+00:00",
   "2a769bab399e48c7": "2026-10-26T07:19:41.374583+00:00",
   "64a98b9158bb16c8": "2026-10-26T07:24:41.417476+00:00",
-  "459fffb40a70b185": "2026-10-26T07:24:41.417476+00:00"
+  "459fffb40a70b185": "2026-10-26T07:24:41.417476+00:00",
+  "ff63ed2e60e3f3d7": "2026-10-26T07:29:41.384205+00:00",
+  "d23d2e2f0c0a678d": "2026-10-26T07:29:41.384205+00:00",
+  "56c614ce49487ae1": "2026-10-26T07:29:41.384205+00:00"
  },
  "recent": [
-  {
-   "title": "Margin Trade Liquidation Speeds Indian Small-Cap Stock Decline",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-23/margin-trade-liquidation-speeds-indian-small-cap-stock-decline",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-23T07:26:24.957883+00:00",
-   "title_ru": "Ликвидация маржинальной торговли ускоряет падение индийских акций с малой капитализацией",
-   "lead": "A wave of deleveraging by retail investors has triggered the biggest rout in Indian small-cap stocks in seven months, as mounting concerns over inflation and higher interest rates weigh on sentiment.",
-   "lead_ru": "Волна сокращения доли заемных средств розничными инвесторами привела к крупнейшему падению индийских акций с малой капитализацией за семь месяцев, поскольку растущие опасения по поводу инфляции и более высоких процентных ставок влияют на настроения.",
-   "tags": [
-    "rates",
-    "inflation",
-    "markets"
-   ]
-  },
-  {
-   "title": "L'Oreal shares bounce on third-quarter sales",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNSXlucUxtZkZwNVVGN1ZPSm1XRjNDOENZcUZ3OWVROFVDeVpsck4tN1QzSTdjVFJqZmdIUHllMnlrdDN4RUh3aXBXclFqd21kUWZTY0RkYnNFMDlpNHlDa2FqS1dMeEpRZW9kbk9lNUE4ZTh2bE9OZ0FVLWxZdXJUYTJjR2FMbDJ4elhKWGpOM2RCVE9weWRzZ0dGczlQeFNlN1pr?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T07:26:24.957883+00:00",
-   "title_ru": "Акции L'Oreal отразились на продажах в третьем квартале",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "French Business Activity Shrinks on Budget Trouble and Unrest",
    "link": "https://www.bloomberg.com/news/articles/2026-10-23/french-business-activity-unexpectedly-shrinks-on-budget-unrest",
@@ -5072,6 +5043,47 @@
    "lead_ru": "По мнению дилеров государственных облигаций, Великобритания готова более широко использовать краткосрочный долг, что может снизить доходность позолоты и ослабить давление на напряженные государственные финансы страны.",
    "tags": [
     "bonds"
+   ]
+  },
+  {
+   "title": "Fed to stick with quarterly rate rises as it removes 2025 insurance cuts",
+   "link": "https://www.ft.com/content/572bc401-9f82-4e49-9282-3e896562f339",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 4,
+   "ts": "2026-10-26T07:29:41.384205+00:00",
+   "title_ru": "ФРС будет придерживаться ежеквартального повышения ставок, поскольку оно устраняет сокращение страхования в 2025 году",
+   "lead": "Read the Monetary Policy Radar team’s October scenario for the Federal Reserve",
+   "lead_ru": "Ознакомьтесь с октябрьским сценарием команды Monetary Policy Radar для Федеральной резервной системы",
+   "tags": [
+    "Fed",
+    "rates"
+   ]
+  },
+  {
+   "title": "South Korea's Lee says unlikely to join Pacific trade pact within his term",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQaUlocHg0Wi1HZlV3d1NxZTgzNnI4VnpNaXl2OWNfaWVPT0dUQTZZdUVuMWx4QVQ1YTk2QTF5aEltWF9FdExLRnUwZ2d1RTh2alVlMWxVLUxQVUhLdGQ0V29uaFBxeWFSUEdhNFBZOEJYM2EwbEhkZFJ1WGl5WUwyd1NQMk9qM1hfWkY0Wjg2Z1lQTldRQmQweUV5VTFQQjhUaEx3a1V6OTNaZm5pWUc4VnFyNXdHY1lSSjVZTHdiZ0lhaEU?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T07:29:41.384205+00:00",
+   "title_ru": "Южнокорейский Ли говорит, что вряд ли присоединится к Тихоокеанскому торговому пакту в течение своего срока"
+  },
+  {
+   "title": "Oil price falls back to $114 as traders remain focused on Middle East conflict",
+   "link": "https://www.ft.com/content/97a60042-f7b6-4c87-9387-8572968a7de0?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T07:29:41.384205+00:00",
+   "title_ru": "Цена на нефть упала до $ 114, поскольку трейдеры по-прежнему сосредоточены на конфликте на Ближнем Востоке",
+   "lead": "International benchmark eases after soaring to $117 late last week",
+   "lead_ru": "Международный бенчмарк ослабевает после взлета до $ 117 в конце прошлой недели",
+   "tags": [
+    "oil"
    ]
   }
  ],
