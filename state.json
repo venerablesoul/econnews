@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c85984e2a4ff9d6b": "2026-10-23T11:31:25.034673+00:00",
-  "6d1a4939d11d0fa6": "2026-10-23T11:31:25.034673+00:00",
-  "107fb1c6f1059be5": "2026-10-23T11:31:25.034673+00:00",
   "5c41445d16ecc5a7": "2026-10-23T11:36:24.927201+00:00",
   "979f400400229229": "2026-10-23T11:36:24.927201+00:00",
   "a579e8be3df4142c": "2026-10-23T11:46:24.965040+00:00",
@@ -606,31 +603,10 @@
   "a6807bfb914a624f": "2026-10-26T11:05:24.264928+00:00",
   "3b5b91f474dd64a5": "2026-10-26T11:15:24.145265+00:00",
   "c0f481cbf906ce98": "2026-10-26T11:20:24.158305+00:00",
-  "1d8153ba3c654e93": "2026-10-26T11:25:24.133288+00:00"
+  "1d8153ba3c654e93": "2026-10-26T11:25:24.133288+00:00",
+  "e69b42b6e86d8a4c": "2026-10-26T11:35:24.325038+00:00"
  },
  "recent": [
-  {
-   "title": "Market Talk: ECB could rescue everyone but France",
-   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5XclkwMkF0Qm5oYTk0RUFDMldoZWJES0hWcFE1NHhKTEdDQVhaMDZIXzNDYUZEU3djYnlIeDZmQVc5MVRWbE1GbHNxQUl4bkRLMGYyWTNPRmFTU1NmV1Mzbl9fU0w1N1E?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-23T11:31:25.034673+00:00",
-   "title_ru": "Разговор на рынке: ЕЦБ может спасти всех, кроме Франции",
-   "tags": [
-    "ECB"
-   ]
-  },
-  {
-   "title": "The stock market is splitting in two. Is that signaling trouble ahead, or just a new set of winners?",
-   "link": "https://www.marketwatch.com/story/the-stock-market-is-splitting-in-two-is-that-signaling-trouble-ahead-or-just-a-new-set-of-winners-f51aaeab?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-23T11:31:25.034673+00:00"
-  },
   {
    "title": "SLB Sees Growth Driven by Middle East Oil Field Recovery",
    "link": "https://www.bloomberg.com/news/articles/2026-10-23/slb-sees-growth-driven-by-middle-east-oil-field-recovery",
@@ -4973,6 +4949,18 @@
    "score": 3,
    "ts": "2026-10-26T11:25:24.133288+00:00",
    "title_ru": "Польша и Германия укрепляют экономические связи и способствуют совместной конкурентоспособности"
+  },
+  {
+   "title": "Nigeria Floats Draft Economic Plan to Outlast Governments",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-26/nigeria-floats-draft-economic-plan-to-outlast-governments",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T11:35:24.325038+00:00",
+   "title_ru": "Нигерия представила проект экономического плана, способного пережить правительства",
+   "lead": "Nigerian Finance Minister Taiwo Oyedele unveiled a draft economic policy framework designed to serve as a blueprint for government plans, budgets and policies, regardless of the administration in power.",
+   "lead_ru": "Министр финансов Нигерии Тайво Ойеделе представил проект рамок экономической политики, призванный служить основой для правительственных планов, бюджетов и политики, независимо от того, какая администрация находится у власти."
   }
  ],
  "last_digest": "2026-10-25",
@@ -11377,8 +11365,9 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-26T10:30:24.206858+00:00",
+  "checked": "2026-10-26T11:35:24.325038+00:00",
   "sec_seen": [
+   "0001049521-26-000085",
    "0001628280-26-067128"
   ],
   "errors": {
