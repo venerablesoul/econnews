@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "f66c737ff5d4bc6b": "2026-10-23T23:23:26.788812+00:00",
   "7987238ab23ec08a": "2026-10-23T23:28:26.760434+00:00",
   "1156240badd4b24a": "2026-10-23T23:28:26.760434+00:00",
   "316ce8bc418d4510": "2026-10-23T23:38:26.788372+00:00",
@@ -604,22 +603,11 @@
   "e5e49692674858b8": "2026-10-26T23:12:01.243608+00:00",
   "b17fbe9158d9df70": "2026-10-26T23:17:01.156957+00:00",
   "9fdccd93da551745": "2026-10-26T23:22:01.165221+00:00",
-  "c1fe7b246386e767": "2026-10-26T23:22:01.165221+00:00"
+  "c1fe7b246386e767": "2026-10-26T23:22:01.165221+00:00",
+  "6f796792f7bfa601": "2026-10-26T23:27:01.166672+00:00",
+  "e4fd510be0e4e785": "2026-10-26T23:27:01.166672+00:00"
  },
  "recent": [
-  {
-   "title": "China’s Porcelain Capital Jingdezhen Drives Global Innovation and 100-Billion-Yuan Industrial Transformation",
-   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxORFU2THFPRmVBZElnUnYwWnFHSU1fVDM3VXZTUm9id0FSQ2o5bFJrSG95dG5CaG1RVG1wb3A1SWd0N2xhX2loSWlfd3lMZlhvV1B1Y2N6Y2hjZUNJS3pnRTY1MHhBcjZ0T1ROS3JfbU1BeDZHeGpLeW9fSVJDRDh5dG0xSjNBeGZvejRnTG5qMkpRTUk1dnR6TTBJN3d5Q1pDaXNlZlFSSVpkMlY2Tk1UdFZhTXBVSDBTeUE?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T23:23:26.788812+00:00",
-   "title_ru": "Фарфоровая столица Китая Цзиндэчжэнь стимулирует глобальные инновации и промышленную трансформацию на 100 миллиардов юаней",
-   "tags": [
-    "China"
-   ]
-  },
   {
    "title": "SpaceX $40 Billion Off-Balance Sheet Debt Snarled by AI Turmoil",
    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOTk5rLVFMR3BRUmZhUWE2LUQ4N1F3THVtNGNtanU2LXRSU0pmeElzNmNGVWZoY19ha0Q5ek14ZnRhOTM3RjdVNk1GQmVFVk8tOERRN0tXNUxnNUswN2JTc3RuSU1hc2stVmdJbTF4U1RvS3BJbUs3ZzlYQ0lwOGh6QkxCVDZfX2JYS1BCRmdMVVNLcUE2LVI5YThzbDVsTG1SLVpZSFJvLWxzSmJ5cEl1OEVGMA?oc=5",
@@ -4709,6 +4697,26 @@
     "GDP",
     "Russia"
    ]
+  },
+  {
+   "title": "US consumers paying the most for fuel price spikes from Iran war, study says",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNQXI0Ml92cUxsR2hZRHB2OHJLOXIxeHA5MkFFU2JTb091Vk93VXRZdEZ1MFV6OUE4eFBubzhPcDA4M1ZSSjNBN0hzR3dwci1RQzNRcVM1eFJEY0MxTGVRNWdEVGpxWTJvRWl0aFNmWHhYYjBpeDljSjNsRUV5eDlyRGZqVEctMjYyYkZ0cEFHSTB3RWJmc1FxeFZ2VnI2NW9jZHhkV0R5TmJKWkRIZlJ2U3BQbV8?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T23:27:01.166672+00:00",
+   "title_ru": "Потребители в США больше всего платят за скачки цен на топливо из-за войны в Иране, говорится в исследовании"
+  },
+  {
+   "title": "South Korea's economy grows faster than expected in third quarter",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPclJITG5OM3lQUHFQQXI0Z0QxNTEzU2RjOXNHakE5aXZiWkJNUjVpYUtiNE1OcVNIY3dNMkxsTHQ3TlpfbnFXM2M0N3VSdDdXbEktX29CaFhLWnZMYS1fWGFpSmo4aERwRkpKTTJPNmRqMVcxTVFONFBnN04yM2FoRlBoaGRkb0YxNmJmU3JTSEJIR3I5N2I0ZndDREZsU01vOEhIa1RqRzlJQ1lhODJubEllc3d4MzQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T23:27:01.166672+00:00",
+   "title_ru": "Экономика Южной Кореи в третьем квартале растет быстрее, чем ожидалось"
   }
  ],
  "last_digest": "2026-10-26",
@@ -11131,8 +11139,8 @@
    "0001137789-26-000292",
    "0000902664-26-004286",
    "0001137789-26-000288",
-   "0000912282-26-001400",
    "0002050422-26-000017",
+   "0000912282-26-001400",
    "0001225208-26-008516",
    "0000912282-26-001396",
    "0000909832-26-000113",
