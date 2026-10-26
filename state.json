@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "ca83b44ad457c04f": "2026-10-23T17:16:55.802869+00:00",
   "ea33f14243b97861": "2026-10-23T17:32:41.488316+00:00",
   "119137cb82a0d0be": "2026-10-23T17:37:41.462341+00:00",
   "f1df9b54af7f2e8c": "2026-10-23T17:47:41.544108+00:00",
@@ -597,19 +596,10 @@
   "3fb305632adf0202": "2026-10-26T16:56:22.707643+00:00",
   "353d2504ba0a060b": "2026-10-26T16:56:22.707643+00:00",
   "ce85466c6e00df88": "2026-10-26T17:01:22.721687+00:00",
-  "aaa0d6a672684ccf": "2026-10-26T17:11:22.962456+00:00"
+  "aaa0d6a672684ccf": "2026-10-26T17:11:22.962456+00:00",
+  "63ddd9d0a691cefa": "2026-10-26T17:21:22.772605+00:00"
  },
  "recent": [
-  {
-   "title": "From Argentina to Sri Lanka, economic reforms bite at home",
-   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1oWnFYLUFFSll3WlZPRV85VkdDUUZwM0RKZkY3YXFIaGhhR3BQY2pQaHpFaEZZOHdWLTBUTWRkWF9la1NHQnNRRmM1ZG9zUlFSSENvV3pxTFBpVjVqVUEzSnZ0SWhEZlE?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T17:16:55.802869+00:00",
-   "title_ru": "От Аргентины до Шри-Ланки экономические реформы кусают дома"
-  },
   {
    "title": "Repo Market Set for Volatility in Late Clearing Push, CIBC Says",
    "link": "https://www.bloomberg.com/news/articles/2026-10-23/repo-market-set-for-volatility-in-late-clearing-push-cibc-says",
@@ -4761,6 +4751,18 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "NBA Reaches Deal With Prediction Markets Kalshi and Polymarket",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-26/nba-reaches-deal-with-prediction-markets-kalshi-and-polymarket",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T17:21:22.772605+00:00",
+   "title_ru": "НБА достигла соглашения с рынками прогнозов Калши и Polymarket",
+   "lead": "The National Basketball Association reached a deal with Kalshi and Polymarket that designates the platforms as the league’s preferred prediction market exchanges, in addition to announcing an information sharing agreement with…",
+   "lead_ru": "Национальная баскетбольная ассоциация достигла соглашения с «Калши» и Polymarket, согласно которому эти платформы определяются как предпочтительные биржи рынка прогнозов лиги, а также объявляется о соглашении об обмене информацией с…"
   }
  ],
  "last_digest": "2026-10-25",
