@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "5c5767c90ce585c8": "2026-10-23T22:52:41.410773+00:00",
-  "a9253d2fd4319482": "2026-10-23T22:52:41.410773+00:00",
-  "a40d64394e1aa2f8": "2026-10-23T22:53:31.869654+00:00",
-  "f8e1957d87401714": "2026-10-23T22:53:31.869654+00:00",
   "f66c737ff5d4bc6b": "2026-10-23T23:23:26.788812+00:00",
   "7987238ab23ec08a": "2026-10-23T23:28:26.760434+00:00",
   "1156240badd4b24a": "2026-10-23T23:28:26.760434+00:00",
@@ -603,30 +599,6 @@
   "00111d8c171a3b8b": "2026-10-26T22:52:01.178691+00:00"
  },
  "recent": [
-  {
-   "title": "Canadian dollar hits five-week high as data supports rate hike bets",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRHNLSXpMVmtYQ3JMZDE5UW81bFo4cG5VT04zWFBSUm1XeWhnWURVZlpMdmZ2b0F3RWo4RUxZekt2ZUFMbkwwN1E5R1M3TXhaeU5SdXltUlJEYk5oY21TU1lUMWota1BFZ19yVVNFSWt6WUxsa00zVXpmTDB1Sm83X2E3VkhOVFVnY1ZDRVZhTU9jY3EtbzR0MG5RZTNBZmtrVWdmamluektNOGFFdlE?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-23T22:52:41.410773+00:00",
-   "title_ru": "Канадский доллар достиг пятинедельного максимума, поскольку данные поддерживают ставки на повышение ставок",
-   "tags": [
-    "rates",
-    "dollar"
-   ]
-  },
-  {
-   "title": "Bank of Italy calls for digital asset investments by banks despite uncertainty",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPeWJaUzBocHF6S0JJZEEya3l3T25FSjZ5UWNhY1hfZGlIYS15enpoMjFaZFJTMVcxcVBPVEJ2TUpxT2JueEZfUDlSdVBGSUp5NTl4Rnhlay1NWXZFbTNPQXNtamNBcDdFWjE5U0ZhODZBYnBBcnJSZUdaeEJRLUpiMFJFTWVVamV6Sjd6QnJfSElfanl6ZzN6SEZrZ3NBSllOV0VWSWhBWWx0RTVyaHFaV0hBOFpRS1hiZnhsc2tHU0E0dw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T22:52:41.410773+00:00",
-   "title_ru": "Банк Италии призывает банки инвестировать в цифровые активы, несмотря на неопределенность"
-  },
   {
    "title": "China’s Porcelain Capital Jingdezhen Drives Global Innovation and 100-Billion-Yuan Industrial Transformation",
    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxORFU2THFPRmVBZElnUnYwWnFHSU1fVDM3VXZTUm9id0FSQ2o5bFJrSG95dG5CaG1RVG1wb3A1SWd0N2xhX2loSWlfd3lMZlhvV1B1Y2N6Y2hjZUNJS3pnRTY1MHhBcjZ0T1ROS3JfbU1BeDZHeGpLeW9fSVJDRDh5dG0xSjNBeGZvejRnTG5qMkpRTUk1dnR6TTBJN3d5Q1pDaXNlZlFSSVpkMlY2Tk1UdFZhTXBVSDBTeUE?oc=5",
@@ -7148,6 +7120,22 @@
    },
    {
     "src": "sec",
+    "id": "33f90ad11383d764",
+    "ticker": "ADPT",
+    "company": "Adaptive Biotechnologies Corp",
+    "who": "Julie Rubinstein",
+    "role": "COO",
+    "type": "sell",
+    "value": 897457,
+    "shares": 35643,
+    "price": 25.18,
+    "plan": true,
+    "date": "2026-10-26",
+    "disclosed": "2026-10-26",
+    "link": "https://www.sec.gov/Archives/edgar/data/1780664/000178066426000045/0001780664-26-000045-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "c5b797c693505c23",
     "ticker": "CART",
     "company": "Maplebear Inc.",
@@ -7532,6 +7520,22 @@
    },
    {
     "src": "sec",
+    "id": "262cc6990831fa6a",
+    "ticker": "STC",
+    "company": "STEWART INFORMATION SERVICES CORP",
+    "who": "Thomas G Apel",
+    "role": "Director",
+    "type": "buy",
+    "value": 95470,
+    "shares": 2000,
+    "price": 47.73,
+    "plan": false,
+    "date": "2026-10-23",
+    "disclosed": "2026-10-26",
+    "link": "https://www.sec.gov/Archives/edgar/data/1356389/000162828026067363/0001628280-26-067363-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "ec5f1f7b4b190a11",
     "ticker": "CART",
     "company": "Maplebear Inc.",
@@ -7625,6 +7629,22 @@
     "date": "2026-10-22",
     "disclosed": "2026-10-26",
     "link": "https://www.sec.gov/Archives/edgar/data/1585724/000146452126000156/0001464521-26-000156-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "236cc038119396bf",
+    "ticker": "CRBG",
+    "company": "Corebridge Financial, Inc.",
+    "who": "Nippon Life Insurance Co",
+    "role": "10% owner",
+    "type": "buy",
+    "value": 8662933,
+    "shares": 246440,
+    "price": 35.15,
+    "plan": true,
+    "date": "2026-10-22",
+    "disclosed": "2026-10-26",
+    "link": "https://www.sec.gov/Archives/edgar/data/1889539/000119312526432280/0001193125-26-432280-index.htm"
    },
    {
     "src": "sec",
@@ -10985,54 +11005,6 @@
     "date": "2026-10-15",
     "disclosed": "2026-10-19",
     "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000358/0001510281-26-000358-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "7d8dd9edb86b6e08",
-    "ticker": "DSM",
-    "company": "BNY MELLON STRATEGIC MUNICIPAL BOND FUND, INC.",
-    "who": "Saba Capital Management, L.p.",
-    "role": "10% owner",
-    "type": "buy",
-    "value": 72113,
-    "shares": 13762,
-    "price": 5.24,
-    "plan": false,
-    "date": "2026-10-15",
-    "disclosed": "2026-10-19",
-    "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000359/0001510281-26-000359-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "ce79971e2e8ed0bc",
-    "ticker": "EP",
-    "company": "EMPIRE PETROLEUM CORP",
-    "who": "Phil E Mulacek",
-    "role": "Director, 10% owner",
-    "type": "buy",
-    "value": 312811,
-    "shares": 97981,
-    "price": 3.19,
-    "plan": false,
-    "date": "2026-10-15",
-    "disclosed": "2026-10-19",
-    "link": "https://www.sec.gov/Archives/edgar/data/1670677/000107261326000827/0001072613-26-000827-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "6e9109387cfdaa0d",
-    "ticker": "PLTR",
-    "company": "Palantir Technologies Inc.",
-    "who": "Alexander D. Moore",
-    "role": "Director",
-    "type": "sell",
-    "value": 3167867,
-    "shares": 16000,
-    "price": 197.99,
-    "plan": true,
-    "date": "2026-10-15",
-    "disclosed": "2026-10-19",
-    "link": "https://www.sec.gov/Archives/edgar/data/1823952/000182395226000024/0001823952-26-000024-index.htm"
    }
   ],
   "docs": {
@@ -11067,9 +11039,11 @@
   },
   "checked": "2026-10-26T22:17:01.251396+00:00",
   "sec_seen": [
-   "0001193125-26-432230",
    "0001731729-26-000008",
    "0000912282-26-001394",
+   "0001750495-26-000007",
+   "0001780664-26-000045",
+   "0001628280-26-067365",
    "0001137789-26-000292",
    "0000902664-26-004286",
    "0001137789-26-000288",
@@ -11079,14 +11053,13 @@
    "0000909832-26-000113",
    "0000909832-26-000105",
    "0001137789-26-000297",
-   "0001140361-26-040789",
+   "0001193125-26-432280",
    "0000909832-26-000107",
+   "0001628280-26-067363",
    "0000909832-26-000109",
    "0000909832-26-000103",
-   "0001193125-26-432226",
    "0001628280-26-067360",
    "0001137789-26-000296",
-   "0001464521-26-000156",
    "0000912282-26-001398",
    "0000909832-26-000117",
    "0000912282-26-001392",
@@ -11107,8 +11080,7 @@
    "0001137789-26-000291",
    "0001137789-26-000295",
    "0001137789-26-000294",
-   "0001137789-26-000289",
-   "0001225208-26-008510"
+   "0001137789-26-000289"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
