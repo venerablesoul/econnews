@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "82e9268c66dc2f06": "2026-10-23T20:07:41.454673+00:00",
-  "475aee22f3c60663": "2026-10-23T20:12:41.474481+00:00",
   "74907efa05ab5371": "2026-10-23T20:17:41.452025+00:00",
   "a732864d1bbe80e9": "2026-10-23T20:22:41.474683+00:00",
   "58dedade8337fc05": "2026-10-23T20:22:41.474683+00:00",
@@ -601,30 +599,11 @@
   "0dfc4992d0876b7a": "2026-10-26T19:36:22.714659+00:00",
   "327c2b700455d823": "2026-10-26T19:41:23.737367+00:00",
   "a99b22e35ba3c1ea": "2026-10-26T19:46:22.692937+00:00",
-  "9fa038f7542f9e54": "2026-10-26T19:56:22.719574+00:00"
+  "9fa038f7542f9e54": "2026-10-26T19:56:22.719574+00:00",
+  "ea8e3be51a10e6d6": "2026-10-26T20:12:01.164395+00:00",
+  "508582e94deabc34": "2026-10-26T20:17:01.284673+00:00"
  },
  "recent": [
-  {
-   "title": "I want to pay off $4,500 in credit-card debt in 2 months. Is this possible?",
-   "link": "https://www.marketwatch.com/story/i-want-to-pay-off-4-500-in-credit-card-debt-in-2-months-is-this-possible-059d9a21?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-23T20:07:41.454673+00:00"
-  },
-  {
-   "title": "Hedge Funds Lift Bearish Euro Bets to Most Since 2020: CFTC",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-23/hedge-funds-lift-bearish-euro-bets-to-most-since-2020-cftc",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T20:12:41.474481+00:00",
-   "title_ru": "Хедж-фонды увеличивают медвежьи ставки в евро до максимума с 2020 года: CFTC",
-   "lead": "Hedge funds boost their bets against the euro to the most since March 2020 as political turmoil in France rattles European markets and weighs on the currency.",
-   "lead_ru": "Хедж-фонды увеличивают свои ставки против евро до максимума с марта 2020 года, поскольку политические потрясения во Франции сотрясают европейские рынки и оказывают давление на валюту."
-  },
   {
    "title": "Trump to cut Canadian tariffs after pressure from Republicans",
    "link": "https://www.ft.com/content/d3d12f54-fcf0-400c-96f1-484aea980be5?syn-25a6b1a6=1",
@@ -4716,6 +4695,15 @@
     "Fed",
     "rates"
    ]
+  },
+  {
+   "title": "Sorry investors, but there’s no such thing as an early ‘Santa Claus rally.’ Here’s when the real gains typically happen.",
+   "link": "https://www.marketwatch.com/story/sorry-investors-but-theres-no-such-thing-as-an-early-santa-claus-rally-heres-when-the-real-gains-typically-happen-7af822cd?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-26T20:12:01.164395+00:00"
   }
  ],
  "last_digest": "2026-10-26",
@@ -7291,6 +7279,38 @@
    },
    {
     "src": "sec",
+    "id": "750eee810fedf376",
+    "ticker": "MRSH",
+    "company": "MARSH & MCLENNAN COMPANIES, INC.",
+    "who": "Dean Michael Klisura",
+    "role": "CEO",
+    "type": "sell",
+    "value": 838800,
+    "shares": 4194,
+    "price": 200.0,
+    "plan": true,
+    "date": "2026-10-23",
+    "disclosed": "2026-10-26",
+    "link": "https://www.sec.gov/Archives/edgar/data/1901304/000006270926000264/0000062709-26-000264-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "cd746c4fa565e0a7",
+    "ticker": "PCTY",
+    "company": "Paylocity Holding Corp",
+    "who": "Steven I Sarowitz",
+    "role": "Director, 10% owner",
+    "type": "sell",
+    "value": 3698801,
+    "shares": 20926,
+    "price": 176.76,
+    "plan": true,
+    "date": "2026-10-23",
+    "disclosed": "2026-10-26",
+    "link": "https://www.sec.gov/Archives/edgar/data/1597870/000159787026000023/0001597870-26-000023-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "ec5f1f7b4b190a11",
     "ticker": "CART",
     "company": "Maplebear Inc.",
@@ -7304,6 +7324,38 @@
     "date": "2026-10-22",
     "disclosed": "2026-10-26",
     "link": "https://www.sec.gov/Archives/edgar/data/1990106/000199010626000026/0001990106-26-000026-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "89653378cfb9978e",
+    "ticker": "DELL",
+    "company": "Dell Technologies Inc.",
+    "who": "Lynn Vojvodich Radakovich",
+    "role": "Director",
+    "type": "sell",
+    "value": 930120,
+    "shares": 2022,
+    "price": 460.0,
+    "plan": true,
+    "date": "2026-10-22",
+    "disclosed": "2026-10-26",
+    "link": "https://www.sec.gov/Archives/edgar/data/1662205/000166220526000021/0001662205-26-000021-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "32c7f1fea5549f1e",
+    "ticker": "MSCI",
+    "company": "MSCI Inc.",
+    "who": "Robert J. Gutowski",
+    "role": "General Counsel",
+    "type": "sell",
+    "value": 1484934,
+    "shares": 2381,
+    "price": 623.66,
+    "plan": false,
+    "date": "2026-10-22",
+    "disclosed": "2026-10-26",
+    "link": "https://www.sec.gov/Archives/edgar/data/1797266/000179726626000008/0001797266-26-000008-index.htm"
    },
    {
     "src": "sec",
@@ -11032,70 +11084,6 @@
     "date": "2026-10-15",
     "disclosed": "2026-10-16",
     "link": "https://www.sec.gov/Archives/edgar/data/1591698/000159169826000140/0001591698-26-000140-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "03d9ad8c6b11594e",
-    "ticker": "PCTY",
-    "company": "Paylocity Holding Corp",
-    "who": "Steven I Sarowitz",
-    "role": "Director, 10% owner",
-    "type": "sell",
-    "value": 2933728,
-    "shares": 17694,
-    "price": 165.8,
-    "plan": true,
-    "date": "2026-10-15",
-    "disclosed": "2026-10-16",
-    "link": "https://www.sec.gov/Archives/edgar/data/1597870/000159169826000139/0001591698-26-000139-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "9085a999a714892a",
-    "ticker": "MRVL",
-    "company": "Marvell Technology, Inc.",
-    "who": "Matthew J Murphy",
-    "role": "CEO",
-    "type": "sell",
-    "value": 1766025,
-    "shares": 7500,
-    "price": 235.47,
-    "plan": true,
-    "date": "2026-10-15",
-    "disclosed": "2026-10-16",
-    "link": "https://www.sec.gov/Archives/edgar/data/1835632/000162828026066130/0001628280-26-066130-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "1fb690c1c0463046",
-    "ticker": "UTHR",
-    "company": "UNITED THERAPEUTICS Corp",
-    "who": "Paul A Mahon",
-    "role": "General Counsel",
-    "type": "sell",
-    "value": 4517709,
-    "shares": 8300,
-    "price": 544.3,
-    "plan": true,
-    "date": "2026-10-15",
-    "disclosed": "2026-10-16",
-    "link": "https://www.sec.gov/Archives/edgar/data/1231589/000123158926000022/0001231589-26-000022-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "1b4cf22434b5c018",
-    "ticker": "UTHR",
-    "company": "UNITED THERAPEUTICS Corp",
-    "who": "Martine A Rothblatt",
-    "role": "CEO",
-    "type": "sell",
-    "value": 5193200,
-    "shares": 9500,
-    "price": 546.65,
-    "plan": true,
-    "date": "2026-10-15",
-    "disclosed": "2026-10-16",
-    "link": "https://www.sec.gov/Archives/edgar/data/1106578/000110657826000165/0001106578-26-000165-index.htm"
    }
   ],
   "docs": {
@@ -11130,37 +11118,37 @@
   },
   "checked": "2026-10-26T20:07:01.282546+00:00",
   "sec_seen": [
-   "0001225208-26-008497",
-   "0001178913-26-004848",
-   "0001222437-26-000004",
-   "0001222437-26-000008",
-   "0001608560-26-000014",
-   "0001884895-26-000007",
+   "0001789109-26-000005",
    "0001683168-26-008091",
-   "0001471446-26-000008",
-   "0001790061-26-000004",
-   "0002006945-26-000007",
+   "0000950142-26-002853",
    "0001683168-26-008088",
-   "0000950142-26-002851",
-   "0001822516-26-000007",
-   "0001222437-26-000006",
-   "0001193485-26-000002",
-   "0002079445-26-000019",
+   "0001628280-26-067285",
+   "0001628280-26-067284",
+   "0000898432-26-000727",
+   "0001784996-26-000105",
+   "0000062709-26-000264",
+   "0001797266-26-000008",
+   "0000898432-26-000735",
+   "0000898432-26-000733",
+   "0001493152-26-048520",
+   "0001225208-26-008499",
+   "0001137789-26-000265",
    "0001683168-26-008089",
-   "0001302261-26-000010",
-   "0001621228-26-000008",
+   "0001662205-26-000021",
    "0001222437-26-000010",
+   "0000898432-26-000731",
+   "0001597870-26-000023",
    "0001094891-26-000312",
-   "0000905148-26-004554",
+   "0001193125-26-431955",
+   "0000898432-26-000737",
    "0001683168-26-008092",
-   "0001193125-26-431910",
+   "0001104659-26-118785",
    "0001910388-26-000012",
-   "0001178913-26-004847",
+   "0001094891-26-000313",
    "0001628280-26-067278",
-   "0001225208-26-008496",
-   "0001193125-26-431896",
+   "0001753365-26-000004",
+   "0000062709-26-000263",
    "0001683168-26-008090",
-   "0001225208-26-008498",
    "0002080878-26-000018"
   ],
   "errors": {
