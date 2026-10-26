@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "46fb6871f51657f6": "2026-10-23T17:52:41.437127+00:00",
-  "805bd0d4c3de15fe": "2026-10-23T17:52:41.437127+00:00",
-  "bc69e814021ec031": "2026-10-23T17:57:41.448140+00:00",
   "4a22d93052796cb7": "2026-10-23T18:07:41.474844+00:00",
   "693771ef8abcee98": "2026-10-23T18:07:41.474844+00:00",
   "4972d5ce46bbd9ec": "2026-10-23T18:07:41.474844+00:00",
@@ -599,29 +596,6 @@
   "f47b375b5bfeae06": "2026-10-26T17:51:23.853947+00:00"
  },
  "recent": [
-  {
-   "title": "On Republican Turf, Independents Court Voters Fed Up with Both Parties",
-   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPTE1XTXBPQlVXZXVSVzVnNEdMNzlZdmZFY2s2VllpeFY1MjNJQWtvaVJwMEpUSFNoN3M3dHZsM0pkMzkxQ0JlUXpFQjNvRXhrcVJaNERPVnRvdUMwNllveGNfWkVlSjk1Wm05Z2xRQVR3dk5wWkNiSmtGMVRtZ1IzbXZ5RTd2U3EySnVwV094bU16czNoemtIVG05WUxBSGJiTnJJWHRrbEZ4WjZzWDM5azJXcUJ0SGFuZXc?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T17:52:41.437127+00:00",
-   "title_ru": "На республиканском газоне независимые избиратели суда сыты по горло обеими сторонами",
-   "tags": [
-    "Fed"
-   ]
-  },
-  {
-   "title": "Germany secures extra winter gas supplies as storage levels lag",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPcU5wNWhZZFdPM1dQUUNFSmt0WDd2WDIyTmlvN3dueERMelY5V3VTNDVabnBjRmVEUG5ycDg0aWN2aFFKRTg3bmVQTXUxSmxfMUlDYXhQZTFRUUdNMXBMSWdkek0zcGpZcWhTN09XTVdNNGJRcHZBTHpUaFgyRzg4NFY3S0xSaldOTkZ1d1h5eXQzeUJFUEVYc1Q3UGE2MWw2M3RDSmluUVRsTkl5U2JtR1B3?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T17:52:41.437127+00:00",
-   "title_ru": "Германия обеспечивает дополнительные зимние поставки газа, поскольку уровни хранения отстают"
-  },
   {
    "title": "China calls on oil, gas firms to boost output, build strategic supply bases",
    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOQ0RFYzFuVnNTcWFqV3k0V2R3NVJjN3VLcmwyMk9WZnlKWTNxTVdwTEdOMUlYZmFMNGUydHYyYUdKd1ZUSzU1b2dfdDZFN3BGLWVfbkJyNmlQLVh5RmE1MEY0SXlzdVB2d2UwcHhPSUpIZmVxMEhCVXRFSGZCZEtHVV84X3FhbDVodmV4SHJlS1Axa3VHd0NUZ0RqQXNLRlczMEQzNmE5VjdtMXFza2MyTThOSmw2bzFVMV9z?oc=5",
@@ -4726,7 +4700,7 @@
    "lead_ru": "Национальная баскетбольная ассоциация достигла соглашения с «Калши» и Polymarket, согласно которому эти платформы определяются как предпочтительные биржи рынка прогнозов лиги, а также объявляется о соглашении об обмене информацией с…"
   }
  ],
- "last_digest": "2026-10-25",
+ "last_digest": "2026-10-26",
  "fail_streak": {
   "РБК": 0,
   "МВФ": 0,
@@ -4753,7 +4727,6 @@
   "US Labor Statistics (BLS)": 0
  },
  "charts_sent": [
-  "2026-10-16-21",
   "2026-10-17-09",
   "2026-10-17-21",
   "2026-10-18-09",
@@ -4772,7 +4745,8 @@
   "2026-10-24-21",
   "2026-10-25-09",
   "2026-10-25-21",
-  "2026-10-26-09"
+  "2026-10-26-09",
+  "2026-10-26-21"
  ],
  "calendar": {
   "fetched": "2026-10-26T12:05:24.141530+00:00",
@@ -11128,7 +11102,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-26T16:56:22.707643+00:00",
+  "checked": "2026-10-26T18:01:22.742766+00:00",
   "sec_seen": [
    "0001343600-26-000015",
    "0000080661-26-000369",
