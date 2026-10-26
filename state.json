@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "8de81261a9fb2e74": "2026-10-23T03:10:51.582377+00:00",
   "8c4088d7538fd3ff": "2026-10-23T03:30:51.545076+00:00",
   "01fc5abe8e5834fd": "2026-10-23T03:35:51.614343+00:00",
   "b4ec47a37e263b54": "2026-10-23T03:40:51.576655+00:00",
@@ -587,24 +586,10 @@
   "f72cbab0cca05147": "2026-10-26T02:48:52.471278+00:00",
   "4e7465fc081c543e": "2026-10-26T02:58:52.475883+00:00",
   "d062fb20e6d44266": "2026-10-26T03:03:52.529423+00:00",
-  "6fd6b2feb9942f7b": "2026-10-26T03:08:52.433821+00:00"
+  "6fd6b2feb9942f7b": "2026-10-26T03:08:52.433821+00:00",
+  "28931cb69f4b4344": "2026-10-26T03:13:52.448030+00:00"
  },
  "recent": [
-  {
-   "title": "Copper Heads for Weekly Loss as AI Selloff Hurts Risk Appetite",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-23/copper-heads-for-weekly-loss-as-ai-selloff-hurts-risk-appetite",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-23T03:10:51.582377+00:00",
-   "title_ru": "Медные головы для еженедельного убытка, поскольку распродажа ИИ вредит аппетиту к риску",
-   "lead": "Copper headed for a third weekly loss in four as a selloff in technology stocks deepened, sapping risk appetite across markets including for the metal that’s used in data centers and power infrastructure.",
-   "lead_ru": "Медь направилась к третьему недельному убытку за четыре, поскольку распродажа технологических акций углубилась, снижая аппетит к риску на рынках, в том числе для металла, который используется в центрах обработки данных и энергетической инфраструктуре.",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Rupee Rally Faces Limits From India’s Oil and Dollar Problem",
    "link": "https://www.bloomberg.com/news/articles/2026-10-23/rupee-rally-faces-limits-from-india-s-oil-and-dollar-problem",
@@ -5288,6 +5273,19 @@
    "title_ru": "Рынки Израиля видят потенциал роста в поражении Нетаньяху после трехлетнего ралли",
    "tags": [
     "markets"
+   ]
+  },
+  {
+   "title": "Indian rupee faces pressure from oil headwinds, lack of inflow support",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPNzNSakVvaTFJdVVXTkhsSDA3T0doSVJfVXIzaU9oNEY4RjRDNUxSbjJpZ2RuUGE4VkV4Vm9XRGdidEFUZkJyRXpsRmR6YWROSlRxajdpUDItNi12TV9HaHFhVXZxVFpGMUppdVRFckZIYnZSc0VoalRDeVpUX1BKR1lsN1NiWmFxRGliR2FidktEaHQwU2x5bzA1ejlvd0s3cFMtYmpJTWZaTm4yM1E?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T03:13:52.448030+00:00",
+   "title_ru": "Индийская рупия сталкивается с давлением нефтяных встречных ветров, отсутствием поддержки притока",
+   "tags": [
+    "oil"
    ]
   }
  ],
@@ -11706,6 +11704,7 @@
    "0001100682-26-000151",
    "0001022079-26-000115",
    "0000923120-26-000029",
+   "0000923120-26-000030",
    "0000923120-26-000025",
    "0001493152-26-048313",
    "0001585521-26-000154",
@@ -11734,14 +11733,13 @@
    "0000923120-26-000024",
    "0001801661-26-000126",
    "0001493152-26-048319",
-   "0001193125-26-430729",
    "0001022079-26-000111",
    "0001585521-26-000153",
    "0001193125-26-430728",
    "0001022079-26-000113",
    "0001022079-26-000110",
    "0001493152-26-048315",
-   "0000923120-26-000030"
+   "0001193125-26-430729"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
