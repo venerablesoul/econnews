@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "80386cc058b46301": "2026-10-23T09:21:24.889036+00:00",
-  "d764390b6b2a5e56": "2026-10-23T09:21:24.889036+00:00",
   "6a78115f86c32cd3": "2026-10-23T09:26:25.013568+00:00",
   "6c394e7b422094a8": "2026-10-23T09:26:25.013568+00:00",
   "0a51c0312b45c1d4": "2026-10-23T09:26:25.013568+00:00",
@@ -605,34 +603,11 @@
   "377d09579f8990a2": "2026-10-26T09:10:24.246531+00:00",
   "cb80791b320ec124": "2026-10-26T09:10:24.246531+00:00",
   "4351c062ac60c158": "2026-10-26T09:10:24.246531+00:00",
-  "eb6fae4a2fca23c7": "2026-10-26T09:20:24.192289+00:00"
+  "eb6fae4a2fca23c7": "2026-10-26T09:20:24.192289+00:00",
+  "b2f83959f7823a85": "2026-10-26T09:25:24.146578+00:00",
+  "92092bbd250ae3bc": "2026-10-26T09:25:24.146578+00:00"
  },
  "recent": [
-  {
-   "title": "UK Bonds Look Attractive After Year of Repricing, Says RLAM",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-23/uk-bonds-look-attractive-after-year-of-repricing-says-rlam",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T09:21:24.889036+00:00",
-   "title_ru": "Облигации Великобритании выглядят привлекательно после года переоценки, говорит RLAM",
-   "lead": "UK government bonds are heading into next week’s budget on a firmer footing and Royal London Asset Management Ltd. sees an opportunity to buy longer-dated gilts.",
-   "lead_ru": "Государственные облигации Великобритании направляются в бюджет на следующей неделе на более прочной основе, и Royal London Asset Management Ltd. видит возможность купить более долгосрочные слитки.",
-   "tags": [
-    "bonds"
-   ]
-  },
-  {
-   "title": "Ambani's $3.2 billion Jio Indian IPO lures investors as bids surge on final day",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPVnRMTFMtTUhERkVlZG4zSVcxcm54ODQ5SXo5NGMxNmVZM2RSbjdqTko3NzB4Q053b09iMEJiX3dRd3Rpem9RQ2pDa1dVMFFOZG54WjhLMkdSbHpyQnF6OXpQbDhBd0ExQ0QyRFNXRm93Q0dfUEdCSllQdTBrUVNzRFUzTWc1OVZva3F0YkVDLUdyeEZvNFh1S1VhNVdMZjFDbVVFTDZPUk9MQVVMTEN1ZmRiX3BjaEJDNi00OWlLNDY?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T09:21:24.889036+00:00",
-   "title_ru": "IPO Ambani на $ 3,2 млрд в Индии привлекает инвесторов, поскольку заявки растут в последний день"
-  },
   {
    "title": "AI IPOs Stall While Private Markets Heat Up (Video)",
    "link": "https://www.bloomberg.com/news/videos/2026-10-23/ai-ipos-stall-while-private-markets-heat-up-video",
@@ -4959,6 +4934,16 @@
    "score": 3,
    "ts": "2026-10-26T09:20:24.192289+00:00",
    "title_ru": "Европейский газ впервые с 2022 года подорожал до 97 евро из-за зимних рисков"
+  },
+  {
+   "title": "Singapore Shields Itself From Energy Risks as Indonesia Cuts Gas",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOQVFQQTh3Um5GaFI2WnQ0VE5rb2h5NHlsa01Pb1VyRTE1SC1WMEtxNnBfZTdvaF9uUnJJUGc5MGtqdFR1Wk1leHpaZ2VKZmF5Vm52bTE0VmoxN2ZuNFFSZ044MktWZVhteUs5Q3JpM2VRZExjQkc4UGp4bnJHVThDMENRXzQ1Zk45M0txc19GLXJoRDNBOERWal9WTnhhTTh3cGFKSlY1bFBGSFZkTG9vY0VxdW9xUQ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T09:25:24.146578+00:00",
+   "title_ru": "Сингапур защищает себя от энергетических рисков, поскольку Индонезия сокращает газ"
   }
  ],
  "last_digest": "2026-10-25",
@@ -11363,7 +11348,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-26T08:24:41.667084+00:00",
+  "checked": "2026-10-26T09:25:24.146578+00:00",
   "sec_seen": [
    "0001022079-26-000114",
    "0001022079-26-000115",
@@ -11376,6 +11361,7 @@
    "0001585521-26-000155",
    "0001022079-26-000109",
    "0000923120-26-000030",
+   "0001493152-26-048317",
    "0000923120-26-000026",
    "0001022079-26-000112",
    "0002160363-26-000004",
@@ -11402,7 +11388,6 @@
    "0001493152-26-048309",
    "0001493152-26-048310",
    "0000923120-26-000027",
-   "0000923120-26-000025",
    "0001493152-26-048311",
    "0001193125-26-430730",
    "0000950103-26-016120",
@@ -11411,7 +11396,7 @@
    "0001022079-26-000116",
    "0001193125-26-430729",
    "0001493152-26-048315",
-   "0001493152-26-048317"
+   "0000923120-26-000025"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
