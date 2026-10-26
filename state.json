@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "8076250893cbf653": "2026-10-23T11:21:24.934560+00:00",
-  "9f2be5c829b437cb": "2026-10-23T11:21:24.934560+00:00",
-  "9e99c2cb2d7662e1": "2026-10-23T11:21:24.934560+00:00",
   "c85984e2a4ff9d6b": "2026-10-23T11:31:25.034673+00:00",
   "6d1a4939d11d0fa6": "2026-10-23T11:31:25.034673+00:00",
   "107fb1c6f1059be5": "2026-10-23T11:31:25.034673+00:00",
@@ -608,35 +605,10 @@
   "9676140a22e5d836": "2026-10-26T11:05:24.264928+00:00",
   "a6807bfb914a624f": "2026-10-26T11:05:24.264928+00:00",
   "3b5b91f474dd64a5": "2026-10-26T11:15:24.145265+00:00",
-  "c0f481cbf906ce98": "2026-10-26T11:20:24.158305+00:00"
+  "c0f481cbf906ce98": "2026-10-26T11:20:24.158305+00:00",
+  "1d8153ba3c654e93": "2026-10-26T11:25:24.133288+00:00"
  },
  "recent": [
-  {
-   "title": "ЦБ держит паузу // Ключевая ставка второй раз оставлена на уровне 14%",
-   "link": "https://www.kommersant.ru/doc/9058993",
-   "sources": [
-    "Kommersant"
-   ],
-   "score": 9,
-   "ts": "2026-10-23T11:21:24.934560+00:00",
-   "title_en": "The Central Bank pauses // The key rate is left at the level of 14% for the second time",
-   "lead": "Совет директоров Банка России 23 октября в соответствии с ожиданиями аналитиков сохранил ключевую ставку на уровне 14% годовых.",
-   "lead_en": "On October 23, the Board of Directors of the Bank of Russia, in accordance with analysts' expectations, maintained the key rate at 14% per annum.",
-   "tags": [
-    "BankOfRussia",
-    "rates",
-    "Russia"
-   ]
-  },
-  {
-   "title": "Роджерс порекомендовал каждому «иметь немного золота в шкафу»",
-   "link": "https://www.rbc.ru/finances/23/10/2026/6adb36b7d7f94ddb82c3e7a7",
-   "sources": [
-    "RBC"
-   ],
-   "score": 1,
-   "ts": "2026-10-23T11:21:24.934560+00:00"
-  },
   {
    "title": "Market Talk: ECB could rescue everyone but France",
    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5XclkwMkF0Qm5oYTk0RUFDMldoZWJES0hWcFE1NHhKTEdDQVhaMDZIXzNDYUZEU3djYnlIeDZmQVc5MVRWbE1GbHNxQUl4bkRLMGYyWTNPRmFTU1NmV1Mzbl9fU0w1N1E?oc=5",
@@ -4991,6 +4963,16 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Poland, Germany push closer economic ties, joint competitiveness drive",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQaG5jal84UVN2di1FcnVvTGZoSFhDZmdNUTdWd2tUdTVuaHliakJXaXlwM0RTNnVkcDNNbDVsYmtMZS1qcnFXdndfU3VrMHN0U1hBUHM5VVBTQWdIYTNQN19YR0NnWXllS205WXQyVkkzcDRxX0RkQndqal9WUVVXN09pUnY3b0JEVUQyWUhoU1dzZURKZE00bmpDVnJibmo3Q1ZqcmZ2VnByb2JvTmRYOFFfNA?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T11:25:24.133288+00:00",
+   "title_ru": "Польша и Германия укрепляют экономические связи и способствуют совместной конкурентоспособности"
   }
  ],
  "last_digest": "2026-10-25",
