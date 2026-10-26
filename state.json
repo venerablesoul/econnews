@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "43a276f9f4cf0c9d": "2026-10-23T08:46:24.946773+00:00",
   "a5104525e259e564": "2026-10-23T09:01:24.897084+00:00",
   "4b3787959d582e0d": "2026-10-23T09:01:24.897084+00:00",
   "d0d466ac93c98ffd": "2026-10-23T09:06:24.962258+00:00",
@@ -596,19 +595,12 @@
   "2f2832e729cecdc7": "2026-10-26T08:39:41.564245+00:00",
   "ce7f8e9b829c10b7": "2026-10-26T08:39:41.564245+00:00",
   "80b5a397ef1a26d8": "2026-10-26T08:39:41.564245+00:00",
-  "936fc257a4083eff": "2026-10-26T08:44:41.563377+00:00"
+  "936fc257a4083eff": "2026-10-26T08:44:41.563377+00:00",
+  "e9175f525fa1c782": "2026-10-26T08:49:41.526900+00:00",
+  "0d6d52779aeb309a": "2026-10-26T08:49:41.526900+00:00",
+  "a295f19853d7a305": "2026-10-26T08:49:41.526900+00:00"
  },
  "recent": [
-  {
-   "title": "UK businesses report strongest month since February, PMI shows",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPTE4wQ3p1eHdrdWdnZkFqQlNibFVENXNmdzFYcnJYLTMwYkVpc1IyTjZSN3ZzWWxNMGloN1lQckdYaUhjb2ZiM3JwNlBqcEV2Vm1ldzVoM29rQndYVGpQdXVFNWltYUFoN3NGSlRCLUgwLVl5NUQ4cjRsYmMzM0tKR3VUZkVoYi12STd2NVlRTEZFeGVkcXBCV3kzcnJNTkZoYkZmM2g5VE1sdw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T08:46:24.946773+00:00",
-   "title_ru": "Британские компании сообщают о самом сильном месяце с февраля, показывает PMI"
-  },
   {
    "title": "The mobile ambitions of SpaceX see telecom stocks get hit again. What the latest developments mean.",
    "link": "https://www.marketwatch.com/story/the-mobile-ambitions-of-spacex-see-telecom-stocks-get-hit-again-what-the-latest-developments-mean-9a4159b5?mod=mw_rss_topstories",
@@ -4959,6 +4951,23 @@
    "title_ru": "Бразилия готовится к еще большей турбулентности рынка: анализ рынка",
    "lead": "Guy Johnson, Oliver Crook and Paul Dobson break down today's key themes for analysts and investors on \"Bloomberg: The Opening Trade.\" (Source: Bloomberg)",
    "lead_ru": "Гай Джонсон (Guy Johnson), Оливер Крук (Oliver Crook) и Пол Добсон (Paul Dobson) делят сегодняшние ключевые темы для аналитиков и инвесторов на \"Bloomberg: The Opening Trade.\" (Источник: Bloomberg)"
+  },
+  {
+   "title": "Chinese Conglomerate Huafa’s Bonds Plunge in Biggest Daily Drop",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-26/chinese-conglomerate-huafa-s-bonds-plunge-in-biggest-daily-drop",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-26T08:49:41.526900+00:00",
+   "title_ru": "Облигации китайского конгломерата Huafa упали в наибольшем ежедневном падении",
+   "lead": "Zhuhai Huafa Group Co., one of China’s largest local government-owned conglomerates, is facing a record selloff in its offshore bonds, as the country’s prolonged property crisis raises credit risks.",
+   "lead_ru": "Zhuhai Huafa Group Co., один из крупнейших местных государственных конгломератов Китая, сталкивается с рекордной распродажей своих оффшорных облигаций, поскольку затяжной кризис недвижимости в стране повышает кредитные риски.",
+   "tags": [
+    "bonds",
+    "markets",
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-10-25",
@@ -4981,7 +4990,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 0,
+  "Fed": 1,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
