@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "8f26826afa0d2051": "2026-10-23T02:25:51.572679+00:00",
-  "5893ce8ca197271c": "2026-10-23T02:25:51.572679+00:00",
   "8911f2c145f3c753": "2026-10-23T02:35:51.595090+00:00",
   "2c0bbeb05209694b": "2026-10-23T02:40:51.538128+00:00",
   "27616156a560cf19": "2026-10-23T02:40:51.538128+00:00",
@@ -587,39 +585,14 @@
   "1dd464eac9aa269b": "2026-10-26T02:03:52.499962+00:00",
   "7eecac282f624045": "2026-10-26T02:08:52.508446+00:00",
   "fdf4639479d06f53": "2026-10-26T02:13:52.515425+00:00",
-  "4041979994ec3719": "2026-10-26T02:13:52.515425+00:00"
+  "4041979994ec3719": "2026-10-26T02:13:52.515425+00:00",
+  "bf1dbf926acafe51": "2026-10-26T02:28:52.432064+00:00",
+  "ed17e724ce351e15": "2026-10-26T02:28:52.432064+00:00",
+  "c01a2eedc2dc786c": "2026-10-26T02:33:52.469406+00:00",
+  "ce8dded2ae934383": "2026-10-26T02:33:52.469406+00:00",
+  "69cea178aa52b471": "2026-10-26T02:33:52.469406+00:00"
  },
  "recent": [
-  {
-   "title": "China Stocks Sink Deeper Into Bear Market Despite State Buying",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-23/china-stocks-sink-deeper-into-bear-market-despite-state-buying",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-23T02:25:51.572679+00:00",
-   "title_ru": "Акции Китая все глубже проникают на медвежий рынок, несмотря на государственные закупки",
-   "lead": "Chinese stocks slid deeper into a bear market as rescue efforts by state-backed funds fail to rebuild investor confidence.",
-   "lead_ru": "Китайские акции углубились в медвежий рынок, поскольку усилия по спасению, предпринимаемые фондами, поддерживаемыми государством, не смогли восстановить доверие инвесторов.",
-   "tags": [
-    "markets",
-    "China"
-   ]
-  },
-  {
-   "title": "HSBC, Standard Chartered Face Cost Test as Rates, Wealth Support Earnings",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-23/hsbc-standard-chartered-face-cost-test-as-rates-wealth-support-earnings",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T02:25:51.572679+00:00",
-   "lead": "HSBC Holdings Plc and Standard Chartered Plc are expected to sustain strong returns on higher rates and Asian wealth fees, though China’s tighter capital-flow rules and cost pressures cloud the outlook.",
-   "lead_ru": "Ожидается, что HSBC Holdings Plc и Standard Chartered Plc будут поддерживать высокую доходность по более высоким ставкам и азиатским сборам за богатство, хотя более жесткие правила движения капитала в Китае и ценовое давление омрачают перспективы.",
-   "tags": [
-    "China"
-   ]
-  },
   {
    "title": "ECB's Santos Pereira pushes for deeper EU integration",
    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQQ1VyZ3MxYmxhbTJmNGNBbFhkOG80Ulo0WklKWHZfWU5PcUhzbktCaFVtbUVaTkxPQ3ZteGFVR29CRWtlYWdFYlNFM3d3aWZ1S0NkMjNIby05N3RGSXZiVnE1WlI2T2tQOWtrNHF3S0EwMFE0aXVoYXBCNkVUX1NkTkpodTl2aFQyRld4bnZBc2hHOHFabTAwYw?oc=5",
@@ -5304,6 +5277,49 @@
    "score": 4,
    "ts": "2026-10-26T02:13:52.515425+00:00",
    "title_ru": "Валютные рынки приглушились в преддверии ключевой недели центрального банка"
+  },
+  {
+   "title": "Asia’s Busiest Earnings Week Puts AI Boom in Focus After Selloff",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOaHhUTFV6NTJwVWNQY0JUbWhWMEJGekFlSEJhYUVHeDZNWlNvMGVaQ1lQSlh1SDNRUmV5Q3Z0eEFiaW5KZEo1TFBHTTV6MUtkSEZDdXVydzZWcXZLWC0zTVdZUG1WaGc2WkJNZlB0Nnl4YUhnNkNwWHBJZlk5TnVNYy1nMmp4YkpJOEs2ZDJ5NHhyUGpXaXlpZWUzRjBCaWZXWXFNM3RGS0tlcHlhYnd6aGxWTExwUQ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-26T02:33:52.469406+00:00",
+   "title_ru": "Самая загруженная неделя доходов в Азии ставит в центр внимания бум искусственного интеллекта после распродажи",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "Indian shares on track for muted open as oil concerns persist, Fed in focus",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOMGYzcFZiRkE2TE1hWGJhSDY1UldIcGcyQlBJSmttbjVOSmNPcUNhWG5LWjdMcEZkRzVfSnd6MGVCc3RlZmpXLUI1Sm03REFQeEtCYVRUNTNHampNX21PQXl3YlZLNkgtWVhjX2dxOGwwZVF0WUhUMHh0TDJoQ0RKUHk4dFdlMnVleVo1UnJTcUNIWkxxdnhxYnAxbVZZMU5hZ18yQ1NBdDlvLXhKRjdNWUkwcw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-26T02:33:52.469406+00:00",
+   "title_ru": "Открытие индийских акций будет приглушенным, поскольку опасения по поводу нефти сохраняются, ФРС в центре внимания",
+   "tags": [
+    "Fed",
+    "oil",
+    "markets"
+   ]
+  },
+  {
+   "title": "Investors Flee India Small-Caps as Margin Calls Come Knocking",
+   "link": "https://www.bloomberg.com/news/newsletters/2026-10-26/investors-flee-india-small-caps-as-margin-calls-come-knocking",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T02:33:52.469406+00:00",
+   "title_ru": "Инвесторы бегут из индийских компаний с малой капитализацией, когда стучатся требования по маржинальным требованиям",
+   "lead": "Smaller stocks account for a large share of positions funded through margin loans.",
+   "lead_ru": "На акции меньшего размера приходится большая доля позиций, финансируемых за счет маржинальных кредитов.",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-25",
