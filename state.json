@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "f1df9b54af7f2e8c": "2026-10-23T17:47:41.544108+00:00",
-  "0a4b47dfabcf11bc": "2026-10-23T17:47:41.544108+00:00",
   "46fb6871f51657f6": "2026-10-23T17:52:41.437127+00:00",
   "805bd0d4c3de15fe": "2026-10-23T17:52:41.437127+00:00",
   "bc69e814021ec031": "2026-10-23T17:57:41.448140+00:00",
@@ -596,22 +594,11 @@
   "ce85466c6e00df88": "2026-10-26T17:01:22.721687+00:00",
   "aaa0d6a672684ccf": "2026-10-26T17:11:22.962456+00:00",
   "63ddd9d0a691cefa": "2026-10-26T17:21:22.772605+00:00",
-  "b7ef2c4e05366a49": "2026-10-26T17:26:23.787700+00:00"
+  "b7ef2c4e05366a49": "2026-10-26T17:26:23.787700+00:00",
+  "1f2ba21d6e4a6585": "2026-10-26T17:51:23.853947+00:00",
+  "f47b375b5bfeae06": "2026-10-26T17:51:23.853947+00:00"
  },
  "recent": [
-  {
-   "title": "Ready for a French test?: Five questions for the ECB",
-   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPYzdOb3ZsTEpLWVVjaDN3M3kteFA1STBOWXhoVl9zRnZSc0wyZ3FqdktabVdwdDliNE9wQzB5cWtLMFhVeHF6Vy16Z1duRF9pUmRyLUZjcnRtRTFJSDg1a0pkb1ZVX2pUVm1ZQXZjRzJZR1cyejhYMG9lTzRmZW1MMDA5WVlTQ3FqUDJEOUhvN2F4SVU?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T17:47:41.544108+00:00",
-   "title_ru": "Готовы к тесту по французскому?: Пять вопросов к ЕЦБ",
-   "tags": [
-    "ECB"
-   ]
-  },
   {
    "title": "On Republican Turf, Independents Court Voters Fed Up with Both Parties",
    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPTE1XTXBPQlVXZXVSVzVnNEdMNzlZdmZFY2s2VllpeFY1MjNJQWtvaVJwMEpUSFNoN3M3dHZsM0pkMzkxQ0JlUXpFQjNvRXhrcVJaNERPVnRvdUMwNllveGNfWkVlSjk1Wm05Z2xRQVR3dk5wWkNiSmtGMVRtZ1IzbXZ5RTd2U3EySnVwV094bU16czNoemtIVG05WUxBSGJiTnJJWHRrbEZ4WjZzWDM5azJXcUJ0SGFuZXc?oc=5",
@@ -7192,6 +7179,22 @@
    },
    {
     "src": "sec",
+    "id": "b63e55386f48ae7b",
+    "ticker": "LRCX",
+    "company": "LAM RESEARCH CORP",
+    "who": "Timothy Archer",
+    "role": "CEO",
+    "type": "sell",
+    "value": 7128428,
+    "shares": 31400,
+    "price": 227.02,
+    "plan": true,
+    "date": "2026-10-23",
+    "disclosed": "2026-10-26",
+    "link": "https://www.sec.gov/Archives/edgar/data/1343600/000134360026000015/0001343600-26-000015-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "ec5f1f7b4b190a11",
     "ticker": "CART",
     "company": "Maplebear Inc.",
@@ -11093,22 +11096,6 @@
     "date": "2026-10-15",
     "disclosed": "2026-10-16",
     "link": "https://www.sec.gov/Archives/edgar/data/1822289/000182228926000012/0001822289-26-000012-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "707b8c624d2a6f4f",
-    "ticker": "LIFE",
-    "company": "Ethos Technologies Inc.",
-    "who": "Lingke Wang",
-    "role": "President",
-    "type": "sell",
-    "value": 4538734,
-    "shares": 118333,
-    "price": 38.36,
-    "plan": true,
-    "date": "2026-10-15",
-    "disclosed": "2026-10-16",
-    "link": "https://www.sec.gov/Archives/edgar/data/2089263/000208926326000018/0002089263-26-000018-index.htm"
    }
   ],
   "docs": {
@@ -11143,6 +11130,7 @@
   },
   "checked": "2026-10-26T16:56:22.707643+00:00",
   "sec_seen": [
+   "0001343600-26-000015",
    "0000080661-26-000369",
    "0002160813-26-000005"
   ],
