@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c33d633d4f0ccafe": "2026-10-23T15:51:55.844709+00:00",
-  "b6a296030d05553b": "2026-10-23T15:51:55.844709+00:00",
-  "17a726239616bc0d": "2026-10-23T15:51:55.844709+00:00",
   "4baf01a83c1b7e8f": "2026-10-23T16:01:55.693225+00:00",
   "12cc48fd47cecdd1": "2026-10-23T16:11:55.772277+00:00",
   "408e3ba4222cf0a4": "2026-10-23T16:11:55.772277+00:00",
@@ -601,45 +598,13 @@
   "9c7771d77081f721": "2026-10-26T15:31:22.835032+00:00",
   "0502488355bb16a0": "2026-10-26T15:31:22.835032+00:00",
   "c55509c82e691cac": "2026-10-26T15:46:22.717194+00:00",
-  "89c7903a2878620c": "2026-10-26T15:46:22.717194+00:00"
+  "89c7903a2878620c": "2026-10-26T15:46:22.717194+00:00",
+  "677c33702f2e9feb": "2026-10-26T15:56:22.726397+00:00",
+  "3630ed0bf249e05c": "2026-10-26T15:56:22.726397+00:00",
+  "d902d28ad2be77b2": "2026-10-26T15:56:22.726397+00:00",
+  "54fb4bea1c8e0f5c": "2026-10-26T15:56:22.726397+00:00"
  },
  "recent": [
-  {
-   "title": "Final second wave estimates available in new database",
-   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOdkdXQTZPLUdJMU9jZkZKSnpBbWk2ZllkdUVTLWhobTFmaVF1MkE0T2VadERuYTNGQmZLVHZfc1lPYUhkZWtWRFVNb3ZMR1E5enIzSk5fMjRfMUk5RFlnbXExVl9VVGt4azRpTUtLdWtGenlNTGJfZzhXQjlaTU1lX3hxU21QUXR6cmgxaTdLR2tWZ19IYUczWWVn?oc=5",
-   "sources": [
-    "US Labor Statistics (BLS)"
-   ],
-   "score": 4,
-   "ts": "2026-10-23T15:51:55.844709+00:00",
-   "title_ru": "Окончательные оценки второй волны доступны в новой базе данных"
-  },
-  {
-   "title": "China's Chery expects overseas-manufactured vehicles to top 50% of exports, exec says",
-   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQZHk5ZHpHczUxaXlFNzU2WEpmd0RwZWlmcUlPSlIzTTMtZElTcV9OR3U1OUYyblNndl9DZzFSekswOE85SS1Qb2VIeng4WkVXN1hRX3VpMlI3TC1SZ1BzMUpOY05kR2VmUWFLdU5TTHFKQ0Q5NjZPZkNuek9STzR1TEJyZC10dUF1eW5qeU5CanFlb3lnRUl2cVJreWdPQ2hadTRPOVNNazU1T0tZa0haTmtrX212OUVLVTNQQUxSSUwyalVmNk14NllPUzRoSHhfR3ZNdDBDX01GUQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T15:51:55.844709+00:00",
-   "title_ru": "Китайская Chery ожидает, что автомобили, произведенные за рубежом, превысят 50% экспорта, говорит исполнительный директор",
-   "tags": [
-    "China"
-   ]
-  },
-  {
-   "title": "US authorizes emergency release of up to 400,000 oil barrels from strategic reserve",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPN09NY3ROanZFXzE0MUt5cTZmYkozTFNRNng5X0tUUkhHeENpY3oxTlBYVG5HWmdVdnhYcFhmZnhaRTlxWlZMRXZmczNqZTRUbzlJWnJ3WFVURmJORklmeVd0WG03VzY1VVl3THUwT0pxTUNXQVRiLWFFSUU4ZnFKZXdjZHhzNXItQ0NWb1Y3N3NERW1IUHkyMjRoclBqRXZyN1dMVTZRblB6TGFXZTZuQ1hmb1lCeUtOQkhKY0RjdEE?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T15:51:55.844709+00:00",
-   "title_ru": "США разрешают экстренное высвобождение до 400 000 баррелей нефти из стратегического резерва",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "Russian central bank keeps key rate on hold at 14%, raises 2026 inflation forecast",
    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPQ1lYMHE1UVNEa0dXTWVkQjZ0OUJIOVNQRm5laTJuRlZpakY2R012ekNrRmZ6LTdNYmNqLVBCOFBJekpQWXFrejA0Y0xjZ2UwVjR1d2QtZ1NxYi1GUFBFa3NSNy12anA5WE84amszX2t4Z1JoZXRndDVBcS1NTDluU2NuODd1b25GSWNpNjNSdFc3cF9sQlp2RUx1VTI3U3piNkstRGdZN0ZHTkwxLVhaNFRTM0szQjdKT2lN?oc=5",
@@ -4767,6 +4732,53 @@
    ],
    "score": 1,
    "ts": "2026-10-26T15:46:22.717194+00:00"
+  },
+  {
+   "title": "- International Monetary Fund | IMF",
+   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1IZ1E1eWRwNjl5VFptTmhIYmdLN20xRzlxMDhFbENHVkFxaDAwV2RYcDloZzhDUkRQNmxIN3BXNU1faG05QVFFS3dmY0d2Z2VNcUNNY1lUNFJnb2c3X2ZOZi1ZMkFTYTVaX3pBRkxZTVRNVGEzT0pqOQ?oc=5",
+   "sources": [
+    "IMF"
+   ],
+   "score": 5,
+   "ts": "2026-10-26T15:56:22.726397+00:00",
+   "title_ru": "- Международный валютный фонд (МВФ);"
+  },
+  {
+   "title": "Sahm Warns Fed Against Waiting",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-26/sahm-warns-fed-against-waiting-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-26T15:56:22.726397+00:00",
+   "title_ru": "Сахм предостерегает ФРС от ожидания",
+   "lead": "Former Fed economist Claudia Sahm joins Bloomberg Open Interest to argue the central bank may be taking a bigger risk by waiting to raise rates.",
+   "lead_ru": "Бывший экономист ФРС Клаудия Сахм присоединяется к Bloomberg Open Interest, чтобы утверждать, что центральный банк может пойти на больший риск, ожидая повышения ставок.",
+   "tags": [
+    "Fed"
+   ]
+  },
+  {
+   "title": "Odd Lots: The Forgotten Godmother of Economic Literature",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-26/odd-lots-the-forgotten-godmother-of-economic-literature-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T15:56:22.726397+00:00",
+   "title_ru": "Странные партии: забытая крестная мать экономической литературы",
+   "lead": "Regency-era novelist Maria Edgeworth was famous for including economic concepts into her novels, including the idea of productive labor.",
+   "lead_ru": "Писательница эпохи Регентства Мария Эджворт прославилась тем, что включила в свои романы экономические концепции, в том числе идею производительного труда."
+  },
+  {
+   "title": "ASML may account for up to 1.6% of Dutch economy in 2026, ING says",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxONGtjNXdMdmcyX3V6bDA3N3QtSVVwRjVBWEVCNm1CS3dtdmJfYklJNzhHR1JsT0hxa2V2UHJlQ1pXRnRCbGlVc0pKMHhxRXFoUVV6el9Qa0l6Z3llbEdqN25fNnIzVHl0OGthcGpJUHVhemZRaHdLQ0lWck5GNXdOdEtrWHpURlEzNy1adk15MWpxQU0wZmViMlhkTQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-26T15:56:22.726397+00:00",
+   "title_ru": "ASML может составить до 1,6% голландской экономики в 2026 году, говорит ING"
   }
  ],
  "last_digest": "2026-10-25",
