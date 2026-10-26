@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e03461a3ec0216fa": "2026-10-23T19:22:41.458970+00:00",
   "e0444880f3aa1592": "2026-10-23T19:37:41.453079+00:00",
   "a49d3311d11a1582": "2026-10-23T19:47:41.451947+00:00",
   "92ed6710d9f3edda": "2026-10-23T19:52:41.497850+00:00",
@@ -604,19 +603,6 @@
   "1cd443e5888996d5": "2026-10-26T19:21:22.919043+00:00"
  },
  "recent": [
-  {
-   "title": "Oncologists Cheer Melanoma Data That Tanked Moderna’s Shares",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOTlZNay05ZE1VbTNBVmZHT0ZMYzkxZ2VKOS10X1dKbVR6WU1kc2pLRk05aVZzU2txX3VqMlRQOXhXSW9iYWczN0NpQjJkN2dSRzhFVkVlNFFubUxFdUs5dTJMenBpM3cxSnJlQ28wTHJCYVNvRW5aSUpsUkFBS1dUbWIxRkhDSUhrc2E1bjZoUElKRGdqTEIzT2RzRC1lYUpWaE45U2djZDM5c0JxME1CVQ?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-23T19:22:41.458970+00:00",
-   "title_ru": "Онкологи приветствуют данные о меланоме, которые повлияли на акции Moderna",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "EXCLUSIVE: India's Scotch probe of Diageo, Pernod undermining India-UK pact benefits, trade group says",
    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQdjBQY3BDTHZ4N3UxczhFaWJMRzViZ3BkX3loejc4QUFEdnF1WUREYW5ZT0NhTFgyMTdNWjR1b1l5dncyd2lFOURRVEMtOW9YUVdqN3lfRm5Mb0dkcHZqMDE0VmlPX1hpSUM1SXpzeFR0T095QU9Mb2w4SXZldTZkYWpMLVRQZkFfWGtIbTBxQlJJVjYxWmxHclp0TEtMdHNyVDNwaTBVckFmQVdmRnR6Y1lnWkMySy1mMjRrLXhNTGtweEZ6UWJB?oc=5",
@@ -7092,6 +7078,22 @@
   "insiders": [
    {
     "src": "sec",
+    "id": "ab7e20dd66db173e",
+    "ticker": "BBT",
+    "company": "Beacon Financial Corp",
+    "who": "Thomas J Hollister",
+    "role": "Director",
+    "type": "buy",
+    "value": 104984,
+    "shares": 3450,
+    "price": 30.43,
+    "plan": false,
+    "date": "2026-10-26",
+    "disclosed": "2026-10-26",
+    "link": "https://www.sec.gov/Archives/edgar/data/1368208/000162828026067255/0001628280-26-067255-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "c5b797c693505c23",
     "ticker": "CART",
     "company": "Maplebear Inc.",
@@ -11073,22 +11075,6 @@
     "date": "2026-10-15",
     "disclosed": "2026-10-16",
     "link": "https://www.sec.gov/Archives/edgar/data/1822088/000162828026066148/0001628280-26-066148-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "f109bff5a00fd77a",
-    "ticker": "ODC",
-    "company": "Oil-Dri Corp of America",
-    "who": "Christopher B Lamson",
-    "role": "Group Vice President",
-    "type": "sell",
-    "value": 561890,
-    "shares": 7000,
-    "price": 80.27,
-    "plan": false,
-    "date": "2026-10-15",
-    "disclosed": "2026-10-16",
-    "link": "https://www.sec.gov/Archives/edgar/data/1907830/000162828026066153/0001628280-26-066153-index.htm"
    }
   ],
   "docs": {
@@ -11127,10 +11113,9 @@
    "0001628280-26-067240",
    "0001213900-26-112441",
    "0001897970-26-000010",
-   "0001280628-26-000016",
+   "0001628280-26-067255",
    "0001277620-26-000009",
-   "0001493152-26-048493",
-   "0001702938-26-000004"
+   "0001493152-26-048493"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
