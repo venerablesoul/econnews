@@ -620,7 +620,10 @@
   "62acc6ea8e43d507": "2026-10-27T05:32:36.918660+00:00",
   "fa795c44a1b63929": "2026-10-27T05:32:36.918660+00:00",
   "3d1cf30e3aa3295c": "2026-10-27T05:32:36.918660+00:00",
-  "6d800311fc9ff836": "2026-10-27T05:32:36.918660+00:00"
+  "6d800311fc9ff836": "2026-10-27T05:32:36.918660+00:00",
+  "fb53c71e7e78dc84": "2026-10-27T05:37:36.849426+00:00",
+  "16af0e7474b27b73": "2026-10-27T05:37:36.849426+00:00",
+  "fdc12daf2eb13b2e": "2026-10-27T05:37:36.849426+00:00"
  },
  "recent": [
   {
@@ -4997,6 +5000,49 @@
    "score": 3,
    "ts": "2026-10-27T05:32:36.918660+00:00",
    "title_ru": "Подача заявки Anthropic на IPO: растущие риски, огромные убытки и ошеломляющий рост"
+  },
+  {
+   "title": "UK’s tariffs on Chinese diggers challenged by Caterpillar",
+   "link": "https://www.ft.com/content/71e415ce-87e9-4c29-bce2-b7f3803ac6b9?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 5,
+   "ts": "2026-10-27T05:37:36.849426+00:00",
+   "title_ru": "Пошлины Великобритании на китайские экскаваторы оспорены Caterpillar",
+   "lead": "World’s largest maker of construction equipment fights to overturn 18.81% anti-dumping duty imposed by Trade Remedies Authority",
+   "lead_ru": "Крупнейший в мире производитель строительного оборудования борется за отмену антидемпинговой пошлины в размере 18,81%, введенной Управлением по правовой защите торговли",
+   "tags": [
+    "China",
+    "tariffs"
+   ]
+  },
+  {
+   "title": "Beware the political cost of economic insecurity",
+   "link": "https://www.ft.com/content/4c7afa74-96a0-4064-879d-7d2620585608",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 4,
+   "ts": "2026-10-27T05:37:36.849426+00:00",
+   "title_ru": "Остерегайтесь политических издержек экономической нестабильности",
+   "lead": "Interest rates are a blunt tool in the fight against the rising price of essential items",
+   "lead_ru": "Процентные ставки — грубый инструмент в борьбе с ростом цен на товары первой необходимости.",
+   "tags": [
+    "rates"
+   ]
+  },
+  {
+   "title": "FirstFT: What Healey plans for his first UK Budget",
+   "link": "https://www.ft.com/content/d79ea4f9-dc54-4b9c-b739-6e6fc99feebc?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T05:37:36.849426+00:00",
+   "title_ru": "FirstFT: Что Хили планирует относительно своего первого бюджета Великобритании",
+   "lead": "Also in today’s newsletter: Israel elections and French finances",
+   "lead_ru": "Также в сегодняшнем информационном бюллетене: выборы в Израиле и финансы Франции."
   }
  ],
  "last_digest": "2026-10-26",
@@ -11461,8 +11507,7 @@
    "0000909832-26-000123"
   ],
   "errors": {
-   "senate": "HTTPError: HTTP Error 403: Forbidden",
-   "sec": "TimeoutError: The read operation timed out"
+   "senate": "HTTPError: HTTP Error 403: Forbidden"
   }
  },
  "cal_actuals": {}
