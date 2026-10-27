@@ -685,7 +685,10 @@
   "2196a6896052b5e9": "2026-10-27T11:43:09.296137+00:00",
   "ce42aaf0267d7c0d": "2026-10-27T11:48:09.332036+00:00",
   "2a73624bf04dfbfc": "2026-10-27T11:53:09.592507+00:00",
-  "8c3b2dfdc2708df1": "2026-10-27T11:58:09.276641+00:00"
+  "8c3b2dfdc2708df1": "2026-10-27T11:58:09.276641+00:00",
+  "5d89af25c4e00cfc": "2026-10-27T12:08:09.368068+00:00",
+  "6b79f5c8157069fe": "2026-10-27T12:08:09.368068+00:00",
+  "002775676caacada": "2026-10-27T12:08:09.368068+00:00"
  },
  "recent": [
   {
@@ -5842,6 +5845,45 @@
    "tags": [
     "bonds"
    ]
+  },
+  {
+   "title": "India Turns Kitchen Grease to Fuel in Drive to Cut Crude Imports",
+   "link": "https://www.bloomberg.com/news/newsletters/2026-10-27/india-turns-kitchen-grease-to-fuel-in-drive-to-cut-crude-imports",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-27T12:08:09.368068+00:00",
+   "title_ru": "Индия превращает кухонный жир в топливо, стремясь сократить импорт сырой нефти",
+   "lead": "Leftover cooking oil is attracting the attention of state-owned majors as an alternative feedstock.",
+   "lead_ru": "Остатки растительного масла привлекают внимание государственных компаний как альтернативное сырье.",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "First-time buyer wary of Budget housing loan scheme",
+   "link": "https://www.bbc.co.uk/news/articles/c3dxwznv4kyyo?at_medium=RSS&at_campaign=rss",
+   "sources": [
+    "BBC"
+   ],
+   "score": 4,
+   "ts": "2026-10-27T12:08:09.368068+00:00",
+   "title_ru": "Покупатель, впервые покупающий жилье, опасается схемы бюджетного жилищного кредита",
+   "lead": "Luke Anstee has been saving for three years but says rising living costs make home ownership harder.",
+   "lead_ru": "Люк Ансти откладывает деньги уже три года, но говорит, что рост стоимости жизни усложняет владение жильем."
+  },
+  {
+   "title": "Bending Spoons Seeks $1.5 Billion in Debt to Fund Acquisitions",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-27/bending-spoons-seeks-1-5-billion-in-debt-to-fund-acquisitions",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T12:08:09.368068+00:00",
+   "title_ru": "Bending Spoons ищет долг в размере 1,5 миллиарда долларов для финансирования приобретений",
+   "lead": "Italian technology investor Bending Spoons SpA is tapping debt markets for $1.5 billion in part to pursue its acquisition-led growth strategy.",
+   "lead_ru": "Итальянский технологический инвестор Bending Spoons SpA выходит на долговые рынки на сумму $1,5 млрд, отчасти для реализации своей стратегии роста, основанной на поглощениях."
   }
  ],
  "last_digest": "2026-10-26",
@@ -5858,17 +5900,17 @@
   "CNBC": 0,
   "ФРС США": 0,
   "Bloomberg": 0,
-  "Reuters": 21,
+  "Reuters": 23,
   "MarketWatch": 0,
   "Банк Англии": 0,
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
   "Fed": 0,
-  "IMF": 21,
+  "IMF": 23,
   "Kommersant": 0,
   "RBC": 0,
-  "US Labor Statistics (BLS)": 21
+  "US Labor Statistics (BLS)": 23
  },
  "charts_sent": [
   "2026-10-17-21",
@@ -5893,7 +5935,7 @@
   "2026-10-27-09"
  ],
  "calendar": {
-  "fetched": "2026-10-27T06:07:36.864034+00:00",
+  "fetched": "2026-10-27T12:08:09.368068+00:00",
   "events": [
    {
     "title": "Bank Holiday",
@@ -12269,10 +12311,12 @@
    "0001981856-26-000005",
    "0000950142-26-002856",
    "0001072613-26-000839",
+   "0001493152-26-048634",
    "0001072613-26-000840",
    "0001035422-26-000018",
    "0001104659-26-118926",
    "0001193125-26-432556",
+   "0002109337-26-000013",
    "0000950142-26-002859",
    "0000905148-26-004561",
    "0000909832-26-000120",
