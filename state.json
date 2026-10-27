@@ -786,7 +786,10 @@
   "0ad482a6a7e727a8": "2026-10-27T21:24:44.754944+00:00",
   "be02e5d1f56c5d48": "2026-10-27T21:24:44.754944+00:00",
   "9ce118ed96faf821": "2026-10-27T21:24:44.754944+00:00",
-  "31de8cf9cf2536de": "2026-10-27T21:29:44.647398+00:00"
+  "31de8cf9cf2536de": "2026-10-27T21:29:44.647398+00:00",
+  "3d70faf47712ba79": "2026-10-27T21:34:44.562401+00:00",
+  "d95873b76d0d2367": "2026-10-27T21:34:44.562401+00:00",
+  "9ae549c87e1b32e4": "2026-10-27T21:34:44.562401+00:00"
  },
  "recent": [
   {
@@ -6989,6 +6992,39 @@
    "tags": [
     "rates"
    ]
+  },
+  {
+   "title": "Barclays Sees FX Volatility Staying Elevated as Dollar Rises",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-27/barclays-sees-fx-volatility-staying-elevated-as-dollar-rises",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T21:34:44.562401+00:00",
+   "title_ru": "Barclays считает, что волатильность валютного курса остается высокой на фоне роста доллара",
+   "lead": "Barclays Plc strategists expect volatility in Group-of-10 currencies to rise and remain elevated as the dollar strengthens and interest-rate swings increase.",
+   "lead_ru": "Стратеги Barclays Plc ожидают, что волатильность валют «Большой десятки» будет расти и оставаться высокой по мере укрепления доллара и увеличения колебаний процентных ставок.",
+   "tags": [
+    "dollar"
+   ]
+  },
+  {
+   "title": "As Trump touts energy companies’ fortunes, U.S. consumers face the most expensive year for gas prices ever",
+   "link": "https://www.marketwatch.com/story/as-trump-touts-energy-companies-fortunes-u-s-consumers-face-the-most-expensive-year-for-gas-prices-ever-c467268c?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 2,
+   "ts": "2026-10-27T21:34:44.562401+00:00"
+  },
+  {
+   "title": "The rest of the market is leaving Big Tech behind after a historic comeback",
+   "link": "https://www.marketwatch.com/story/the-rest-of-the-market-is-leaving-big-tech-behind-after-a-historic-comeback-324e9fb2?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-27T21:34:44.562401+00:00"
   }
  ],
  "last_digest": "2026-10-27",
@@ -9724,6 +9760,22 @@
    },
    {
     "src": "sec",
+    "id": "e60469a512e43c8f",
+    "ticker": "DSM",
+    "company": "BNY MELLON STRATEGIC MUNICIPAL BOND FUND, INC.",
+    "who": "Saba Capital Management, L.p.",
+    "role": "10% owner",
+    "type": "buy",
+    "value": 111326,
+    "shares": 20616,
+    "price": 5.4,
+    "plan": false,
+    "date": "2026-10-26",
+    "disclosed": "2026-10-27",
+    "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000381/0001510281-26-000381-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "f4a3e1020db08fec",
     "ticker": "PLUR",
     "company": "Pluri Inc.",
@@ -9961,6 +10013,22 @@
     "date": "2026-10-23",
     "disclosed": "2026-10-27",
     "link": "https://www.sec.gov/Archives/edgar/data/1008015/000095014226002870/0000950142-26-002870-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "6db8d351b3db7563",
+    "ticker": "DAIO",
+    "company": "DATA I/O CORP",
+    "who": "Red Oak Partners, Llc et al.",
+    "role": "10% owner",
+    "type": "buy",
+    "value": 999996,
+    "shares": 373133,
+    "price": 2.68,
+    "plan": false,
+    "date": "2026-10-20",
+    "disclosed": "2026-10-27",
+    "link": "https://www.sec.gov/Archives/edgar/data/1605605/000132553326000012/0001325533-26-000012-index.htm"
    },
    {
     "src": "sec",
@@ -13337,38 +13405,6 @@
     "date": "2026-10-19",
     "disclosed": "2026-10-19",
     "link": "https://www.sec.gov/Archives/edgar/data/1477333/000136657426000026/0001366574-26-000026-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "f2faaf48eb714232",
-    "ticker": "BETA",
-    "company": "BETA Technologies, Inc.",
-    "who": "Kyle Clark",
-    "role": "SEE REMARKS",
-    "type": "sell",
-    "value": 550190,
-    "shares": 30000,
-    "price": 18.34,
-    "plan": true,
-    "date": "2026-10-19",
-    "disclosed": "2026-10-19",
-    "link": "https://www.sec.gov/Archives/edgar/data/2090083/000119312526425520/0001193125-26-425520-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "4bfd7d13637ee6cc",
-    "ticker": "LIND",
-    "company": "LINDBLAD EXPEDITIONS HOLDINGS, INC.",
-    "who": "Sven-Olof Lindblad",
-    "role": "Director, 10% owner",
-    "type": "sell",
-    "value": 5614448,
-    "shares": 162685,
-    "price": 34.51,
-    "plan": true,
-    "date": "2026-10-19",
-    "disclosed": "2026-10-19",
-    "link": "https://www.sec.gov/Archives/edgar/data/1639304/000089706926001859/0000897069-26-001859-index.htm"
    }
   ],
   "docs": {
@@ -13404,30 +13440,32 @@
   "checked": "2026-10-27T21:09:44.729318+00:00",
   "sec_seen": [
    "0000904454-26-000553",
+   "0001225208-26-008535",
    "0001223012-26-000005",
-   "0001292814-26-005016",
-   "0000950103-26-016254",
    "0001225208-26-008528",
-   "0001975015-26-000061",
-   "0000950103-26-016256",
-   "0000950103-26-016257",
+   "0001493152-26-048755",
    "0001028284-26-000012",
    "0001619400-26-000005",
-   "0001900188-26-000017",
-   "0001213900-26-112964",
+   "0000904454-26-000555",
    "0001225208-26-008527",
    "0001722684-26-000084",
    "0001273861-26-000006",
    "0001760265-26-000005",
    "0001193125-26-434468",
    "0001128480-26-000005",
+   "0001325533-26-000012",
    "0000904454-26-000551",
-   "0001693709-26-000011",
+   "0001225208-26-008531",
+   "0001510281-26-000381",
    "0001225208-26-008529",
+   "0001225208-26-008530",
+   "0001493152-26-048754",
+   "0001225208-26-008532",
    "0001176368-26-000006",
-   "0001754399-26-000005",
-   "0000950103-26-016255",
+   "0001225208-26-008536",
+   "0001225208-26-008534",
    "0001128483-26-000013",
+   "0001225208-26-008533",
    "0000950142-26-002870"
   ],
   "errors": {
