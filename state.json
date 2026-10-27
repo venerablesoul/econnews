@@ -739,7 +739,9 @@
   "5b0c3e1b9dea7df3": "2026-10-27T15:03:43.021977+00:00",
   "4dd9d64954467ea0": "2026-10-27T15:08:43.242337+00:00",
   "2baf08cdf117cf80": "2026-10-27T15:08:43.242337+00:00",
-  "bc0eee89f73de26b": "2026-10-27T15:08:43.242337+00:00"
+  "bc0eee89f73de26b": "2026-10-27T15:08:43.242337+00:00",
+  "6eb98343715c12f8": "2026-10-27T15:13:44.121973+00:00",
+  "b1677487220e2e4c": "2026-10-27T15:13:44.121973+00:00"
  },
  "recent": [
   {
@@ -6378,6 +6380,33 @@
    ],
    "score": 1,
    "ts": "2026-10-27T15:08:43.242337+00:00"
+  },
+  {
+   "title": "Britain issues costliest 5-year debt since 2008 before budget",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOLW1OUWtCMm9pOWNzYWNEdXRNODl2WE9rTWE5ZlRwM003ci1yLWhTRkhNZzFtU0Z0Y1REdDd2bURaX1dVYlEwN0x3T2pvLXNRS2lFRTVYR0NtVlA4bklNVnhPckl6Z09tNkxBY0Q2dXhNcDE5RWZUd1lUZnE4Qm9BeE04cE5oMkY1ejNDU29BekppNDdzcVppa2NrejhQVTIxSUdUUkRRUHh6dw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-27T15:13:44.121973+00:00",
+   "title_ru": "Британия выпустила самый дорогой пятилетний долг с 2008 года перед бюджетом"
+  },
+  {
+   "title": "Улюкаев оценил, вернется ли международный бизнес при отмене санкций",
+   "link": "https://www.rbc.ru/business/27/10/2026/6ae05b886060172ca811d3bb",
+   "sources": [
+    "RBC"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T15:13:44.121973+00:00",
+   "title_en": "Ulyukaev assessed whether international business will return if sanctions are lifted",
+   "lead": "Бывший министр финансов России считает, что для бизнеса важны гарантии безопасности, но в целом компании при принятии решений о возвращении будут ориентироваться на риски и доходность",
+   "lead_en": "The former Russian Finance Minister believes that security guarantees are important for business, but in general, companies will focus on risks and profitability when making decisions about returning",
+   "tags": [
+    "bonds",
+    "sanctions",
+    "Russia"
+   ]
   }
  ],
  "last_digest": "2026-10-26",
