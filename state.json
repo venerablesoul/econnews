@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "f571215809dc045b": "2026-10-24T19:50:19.683227+00:00",
-  "cae1c168230c38d0": "2026-10-24T19:50:19.683227+00:00",
   "82e18775de2dc28c": "2026-10-24T20:30:19.719136+00:00",
   "6946bd32039013b1": "2026-10-24T20:35:19.712331+00:00",
   "6c60aef9d310b278": "2026-10-24T20:35:19.712331+00:00",
@@ -769,7 +767,8 @@
   "0330889c09eaffcb": "2026-10-27T19:29:41.088136+00:00",
   "f4f2df2ccb5aad11": "2026-10-27T19:39:40.944101+00:00",
   "963e11b4bc0cfa77": "2026-10-27T19:39:40.944101+00:00",
-  "9b0250365df09223": "2026-10-27T19:39:40.944101+00:00"
+  "9b0250365df09223": "2026-10-27T19:39:40.944101+00:00",
+  "80b569dd368e358c": "2026-10-27T19:54:40.867572+00:00"
  },
  "recent": [
   {
@@ -6724,6 +6723,22 @@
    "tags": [
     "oil",
     "Russia"
+   ]
+  },
+  {
+   "title": "PDVSA Bonds Deemed Valid in US Ruling Amid Battle for Citgo",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-27/pdvsa-bonds-deemed-valid-in-us-ruling-amid-battle-for-citgo",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T19:54:40.867572+00:00",
+   "title_ru": "Облигации PDVSA признаны действительными в решении США на фоне битвы за Citgo",
+   "lead": "A US appeals court upheld the validity of a series of bonds issued by Venezuela’s state oil company, clearing the way for holders to seek payment from the sale of Citgo Petroleum Corp.’s parent.",
+   "lead_ru": "Апелляционный суд США подтвердил действительность серии облигаций, выпущенных государственной нефтяной компанией Венесуэлы, что открыло держателям возможность требовать выплаты от продажи материнской компании Citgo Petroleum Corp.",
+   "tags": [
+    "oil",
+    "bonds"
    ]
   }
  ],
@@ -13141,7 +13156,6 @@
   "sec_seen": [
    "0001437749-26-033633",
    "0001104659-26-119132",
-   "0001104659-26-119131",
    "0001104659-26-119134"
   ],
   "errors": {
