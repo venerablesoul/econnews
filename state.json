@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "90161fe87ebcccca": "2026-10-24T12:44:23.595774+00:00",
-  "aa243b16d113dae6": "2026-10-24T12:44:23.595774+00:00",
   "c046c1c2f750d1c7": "2026-10-24T12:49:23.604905+00:00",
   "52b039a2b9649dfe": "2026-10-24T12:59:23.657284+00:00",
   "6e608799c836c550": "2026-10-24T13:24:23.620704+00:00",
@@ -712,32 +710,11 @@
   "bcc5612469af8ec9": "2026-10-27T12:38:42.902450+00:00",
   "98756fa8f98a2037": "2026-10-27T12:43:43.036317+00:00",
   "c847d62a8a177e47": "2026-10-27T12:43:43.036317+00:00",
-  "437c4effd004d903": "2026-10-27T12:43:43.036317+00:00"
+  "437c4effd004d903": "2026-10-27T12:43:43.036317+00:00",
+  "f3d8b15cb1220a5b": "2026-10-27T12:48:43.018347+00:00",
+  "43d34b1256fceaf1": "2026-10-27T12:48:43.018347+00:00"
  },
  "recent": [
-  {
-   "title": "AI Preparedness Index (AIPI) - Regulation and Ethics",
-   "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA4bGIxNTdzd2xsRld2WFFkVEpyRDhUUS11VHBYcUIzUHR0dU1Ud3labFBrclRJZ2Qtc2xMalU2Qy1iWnQ2aXpJXzh0ZzJkRlFHREpoaENra19lMUNJR25NUg?oc=5",
-   "sources": [
-    "IMF"
-   ],
-   "score": 4,
-   "ts": "2026-10-24T12:44:23.595774+00:00",
-   "title_ru": "Индекс готовности ИИ (AIPI) - Регулирование и этика"
-  },
-  {
-   "title": "North Korea's Kim crosses new bridge into China as trade ties warm",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOOTlLSVZQYy0tZFRieEJTYXU0WnM4NElhS29hMlJ4R3g1Mzl3Wmo4TzFRRlE1QXhsQ09SQWV0Uzg5LUdSdWpfdjI4LU1YSXRqY3pOSTEzbTA0cjdHM2MzVUpqbUdOSm13ZGZZdHN3VWlfbm1laGVQSmEtRklGaHhDejhUT2F4MUktamhqTS13ZHpNaERZekprMkp0TWdyX0t4bXhsOGJ1bUwzZw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-24T12:44:23.595774+00:00",
-   "title_ru": "Ким Чен Ын пересекает новый мост в Китай, поскольку торговые связи теплые",
-   "tags": [
-    "China"
-   ]
-  },
   {
    "title": "Russian Diesel Deal Confronts Legal Uncertainty",
    "link": "https://www.bloomberg.com/news/videos/2026-10-24/russian-diesel-deal-confronts-legal-uncertainty-video",
@@ -6119,6 +6096,33 @@
    "title_ru": "Еврозона продлевает срок подачи заявок на замену Шнабеля ЕЦБ",
    "tags": [
     "ECB"
+   ]
+  },
+  {
+   "title": "French consumer confidence hits a 2013 low in October amid protests",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNUU5lTjItazhkMENWeGlZWkl5SEdxZzdjYlE2V3g1S0FnMHpXeGVnWFBWaXJBcWRtR1E4VXFGQk5Zd29iVkRXd2hLYU1reWJ2LXRpY3pMd3BLWUtyeGl1RV9jNEJyMnpiZThPV3NyUV9tVjRDSDBRNDM1ODJtRF9iR1NnNTItbGh2WldydnpUdXUtc3g4TUV1MktudXVrc0VwTS1TQW5uZXZSRmc?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T12:48:43.018347+00:00",
+   "title_ru": "Французское потребительское доверие в октябре достигло минимума 2013 года на фоне протестов"
+  },
+  {
+   "title": "Путин назвал условия для стабилизации мирового газового рынка",
+   "link": "https://www.rbc.ru/rbcfreenews/6ae097753c0647b172c10352",
+   "sources": [
+    "RBC"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T12:48:43.018347+00:00",
+   "title_en": "Putin called the conditions for stabilizing the global gas market",
+   "lead": "Президент России Владимир Путин заявил о необходимости прекращения продолжающихся конфликтов и снятия санкций для стабилизации мирового газового рынка.",
+   "lead_en": "Russian President Vladimir Putin stated the need to end ongoing conflicts and lift sanctions to stabilize the global gas market.",
+   "tags": [
+    "gas",
+    "sanctions",
+    "Russia"
    ]
   }
  ],
@@ -12532,7 +12536,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-27T11:48:09.332036+00:00",
+  "checked": "2026-10-27T12:48:43.018347+00:00",
   "sec_seen": [
    "0002109337-26-000013",
    "0001104659-26-118926",
@@ -12559,7 +12563,6 @@
    "0001501399-26-000005",
    "0001437749-26-033559",
    "0000909832-26-000124",
-   "0000909832-26-000121",
    "0000950103-26-016190",
    "0001562495-26-000004",
    "0000950142-26-002859",
