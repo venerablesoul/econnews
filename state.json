@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "915383bd55cd1c17": "2026-10-24T20:45:47.251364+00:00",
-  "38a3f88e8f553dc8": "2026-10-24T20:45:47.251364+00:00",
   "e3c9e38b78dc74cc": "2026-10-24T20:55:47.207380+00:00",
   "720054f2c29aea9a": "2026-10-24T20:55:47.207380+00:00",
   "525f6162cc711330": "2026-10-24T21:00:47.319232+00:00",
@@ -777,19 +775,10 @@
   "e9beba98e362da41": "2026-10-27T20:44:45.583234+00:00",
   "6c60aef9d310b278": "2026-10-27T20:44:45.583234+00:00",
   "e58bc47889babc84": "2026-10-27T20:44:45.583234+00:00",
-  "26d5657902248e3b": "2026-10-27T20:44:45.583234+00:00"
+  "26d5657902248e3b": "2026-10-27T20:44:45.583234+00:00",
+  "c3e0fc8147548d9e": "2026-10-27T20:49:44.619189+00:00"
  },
  "recent": [
-  {
-   "title": "American Century Emerging Markets Debt Fund;Inv (AEDVX.O) | Stock Price & Latest News",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5rSmxqcXF2NC1QbGhQRDhkZjM1SEVMTWM2dEhxZHhrdXR1V3R5X2FVSzIxSll0RldJQmJjNzhCczhpb0w1cFMzcmhXVER4TUNkYkZOTjhJLUZQSkpSN1d1X2ZYQWRMM25yMUViNQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-24T20:45:47.251364+00:00",
-   "title_ru": "Долговой фонд для развивающихся рынков American Century;INV (AEDVX.O) | Курс акций и последние новости"
-  },
   {
    "title": "Fed Set to Lead G7 Trio in Hawkish Rate Pause: Eco Week Ahead",
    "link": "https://www.bloomberg.com/news/articles/2026-10-24/fed-set-to-lead-g7-trio-in-hawkish-rate-pause-eco-week-ahead",
@@ -9563,6 +9552,22 @@
    },
    {
     "src": "sec",
+    "id": "908cda64a35afc55",
+    "ticker": "LIND",
+    "company": "LINDBLAD EXPEDITIONS HOLDINGS, INC.",
+    "who": "Sven-Olof Lindblad",
+    "role": "Director, 10% owner",
+    "type": "sell",
+    "value": 4025703,
+    "shares": 116129,
+    "price": 34.67,
+    "plan": true,
+    "date": "2026-10-26",
+    "disclosed": "2026-10-27",
+    "link": "https://www.sec.gov/Archives/edgar/data/1639304/000089706926001872/0000897069-26-001872-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "f4a3e1020db08fec",
     "ticker": "PLUR",
     "company": "Pluri Inc.",
@@ -9768,6 +9773,22 @@
     "date": "2026-10-23",
     "disclosed": "2026-10-27",
     "link": "https://www.sec.gov/Archives/edgar/data/1814738/000162828026067619/0001628280-26-067619-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "7166ec7d67c58431",
+    "ticker": "AMPL",
+    "company": "Amplitude, Inc.",
+    "who": "Spenser Skates",
+    "role": "CEO, 10% owner",
+    "type": "sell",
+    "value": 1876958,
+    "shares": 107136,
+    "price": 17.52,
+    "plan": true,
+    "date": "2026-10-23",
+    "disclosed": "2026-10-27",
+    "link": "https://www.sec.gov/Archives/edgar/data/1882913/000161071726000444/0001610717-26-000444-index.htm"
    },
    {
     "src": "sec",
@@ -13240,38 +13261,6 @@
     "date": "2026-10-16",
     "disclosed": "2026-10-19",
     "link": "https://www.sec.gov/Archives/edgar/data/1621150/000122520826008441/0001225208-26-008441-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "415d76aebc598495",
-    "ticker": "HSY",
-    "company": "HERSHEY CO",
-    "who": "Hershey Trust Co Trustee In Trust For Milton Hershey School",
-    "role": "10% owner",
-    "type": "sell",
-    "value": 3391681,
-    "shares": 20000,
-    "price": 169.58,
-    "plan": true,
-    "date": "2026-10-16",
-    "disclosed": "2026-10-19",
-    "link": "https://www.sec.gov/Archives/edgar/data/938543/000095014226002785/0000950142-26-002785-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "2097cba71445075a",
-    "ticker": "MA",
-    "company": "Mastercard Inc",
-    "who": "Hai Ling",
-    "role": "CFO",
-    "type": "sell",
-    "value": 2676540,
-    "shares": 4317,
-    "price": 620.0,
-    "plan": true,
-    "date": "2026-10-16",
-    "disclosed": "2026-10-19",
-    "link": "https://www.sec.gov/Archives/edgar/data/1923565/000114139126000118/0001141391-26-000118-index.htm"
    }
   ],
   "docs": {
@@ -13306,27 +13295,22 @@
   },
   "checked": "2026-10-27T20:09:44.686763+00:00",
   "sec_seen": [
-   "0001493152-26-048708",
-   "0001106578-26-000172",
    "0001225208-26-008526",
-   "0001225208-26-008525",
-   "0001493152-26-048707",
+   "0001768695-26-000009",
    "0001140361-26-040906",
-   "0001628280-26-067616",
-   "0001225208-26-008524",
-   "0001493152-26-048705",
-   "0001193125-26-434289",
-   "0001650164-26-000206",
-   "0001493152-26-048706",
-   "0001753926-26-002011",
-   "0001104659-26-119177",
-   "0001493152-26-048703",
+   "0001140361-26-040908",
+   "0001314152-26-000215",
+   "0001610717-26-000444",
+   "0000897069-26-001872",
+   "0001314152-26-000214",
+   "0001628280-26-067635",
    "0001628280-26-067619",
-   "0001193125-26-434287",
-   "0001104659-26-119180",
-   "0001493152-26-048709",
-   "0001493152-26-048710",
-   "0001493152-26-048704"
+   "0001314152-26-000216",
+   "0001314152-26-000217",
+   "0001783879-26-000166",
+   "0001193125-26-434363",
+   "0001314152-26-000218",
+   "0001314152-26-000213"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
