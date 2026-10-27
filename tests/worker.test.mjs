@@ -551,6 +551,35 @@ await test("bot (English): deep company functions EE ANR HDS SI DVD CF MGMT RV O
   out = await msg("/dvd SBER"); noErrors(out); assert.match(texts(out), /Moscow Exchange shares are not in the free data/);
 });
 
+await test("news on/off button: subscriber and owner", async () => {
+  const has = (out, d) => buttons(out).some((b) => b.callback_data === d);
+  let out = await msg("/start", 777);
+  assert.ok(has(out, "news:off"), "after /start the button offers to turn news off");
+  out = await cb("news:off", 777);
+  assert.equal(await env.SUBS.get("u:777"), null);
+  assert.match(texts(out), /News is off/);
+  let r = await api("/subs", { Authorization: "Bearer " + crypto.createHash("sha256").update("econnews-sync:" + TOKEN).digest("hex") });
+  assert.ok(!r.json.ids.includes("777"));
+  out = await msg("/help", 777);
+  assert.ok(has(out, "news:on"), "when off, the button offers to turn news on");
+  out = await cb("news:on", 777);
+  assert.notEqual(await env.SUBS.get("u:777"), null);
+  assert.match(texts(out), /News is on/);
+  // the owner: the mailing always reached them, now the button switches it off
+  out = await cb("news:off", Number(OWNER));
+  r = await api("/subs", { Authorization: "Bearer " + crypto.createHash("sha256").update("econnews-sync:" + TOKEN).digest("hex") });
+  assert.equal(r.json.owner_off, true);
+  await cb("news:on", Number(OWNER));
+  r = await api("/subs", { Authorization: "Bearer " + crypto.createHash("sha256").update("econnews-sync:" + TOKEN).digest("hex") });
+  assert.equal(r.json.owner_off, false);
+  await msg("/stop", Number(OWNER));
+  r = await api("/subs", { Authorization: "Bearer " + crypto.createHash("sha256").update("econnews-sync:" + TOKEN).digest("hex") });
+  assert.equal(r.json.owner_off, true);
+  await msg("/start", Number(OWNER));
+  r = await api("/subs", { Authorization: "Bearer " + crypto.createHash("sha256").update("econnews-sync:" + TOKEN).digest("hex") });
+  assert.equal(r.json.owner_off, false);
+});
+
 await test("bot (English): macro, IPO, Moscow Exchange", async () => {
   let out = await msg("/macro"); noErrors(out);
   assert.match(texts(out), /United States: GDP 2\.0 \/ 2\.1 · CPI 2\.8 \/ 2\.4/);

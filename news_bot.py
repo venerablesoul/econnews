@@ -636,8 +636,9 @@ class Telegram:
     """Sends to the owner (TELEGRAM_CHAT_ID) and everyone who pressed /start
     (the bot server keeps the subscriber list, see worker/). Each person gets their language (/lang)."""
 
-    def __init__(self, token, chat_id, dry=False, pages_url="", subscribers=(), langs=None):
+    def __init__(self, token, chat_id, dry=False, pages_url="", subscribers=(), langs=None, owner_off=False):
         self.token, self.chat_id, self.dry = token, str(chat_id).strip(), dry
+        self.owner_off = owner_off  # the owner pressed «Turn news off» in the bot
         self.pages_url = pages_url
         self.subscribers = [str(x) for x in dict.fromkeys(subscribers or []) if str(x) != self.chat_id]
         self.langs = {str(k): i18n.norm_lang(v) for k, v in (langs or {}).items()}
@@ -649,7 +650,8 @@ class Telegram:
         return self.langs.get(str(chat)) or i18n.DEFAULT
 
     def recipients(self, owner_only=False):
-        out = [self.chat_id] if self.chat_id else []
+        # service notices (owner_only) still reach the owner; the news mailing respects «off»
+        out = [self.chat_id] if self.chat_id and (owner_only or not self.owner_off) else []
         if not owner_only:
             out += [c for c in self.subscribers if c not in self.gone]
         return out
@@ -805,6 +807,7 @@ class Telegram:
 # ----------------------------------------------------------------------------
 CONFIG_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "docs", "config.json")
 _SUBS_CACHE = None   # last list received — in case the server is down for a minute
+OWNER_OFF = False    # the owner switched the news off in the bot (from /subs)
 
 
 def worker_url():
@@ -825,7 +828,7 @@ def _sync_key(token):
 
 def fetch_subscribers(token):
     """(subscriber ids, {chat id: language}) from the bot server."""
-    global _SUBS_CACHE
+    global _SUBS_CACHE, OWNER_OFF
     url = worker_url()
     if not url or not token:
         return [], {}
@@ -835,6 +838,7 @@ def fetch_subscribers(token):
             d = json.loads(r.read().decode("utf-8"))
         ids = [str(x) for x in d.get("ids", [])]
         langs = {str(k): v for k, v in (d.get("langs") or {}).items()}
+        OWNER_OFF = bool(d.get("owner_off"))
         _SUBS_CACHE = (ids, langs)
         return ids, langs
     except Exception as e:
@@ -1015,7 +1019,7 @@ def run(dry=False):
     state_path = os.environ.get("STATE_FILE", os.path.join(os.path.dirname(os.path.abspath(__file__)), "state.json"))
 
     subscribers, langs = fetch_subscribers(token)
-    tg = Telegram(token, chat, dry, pages_url, subscribers, langs)
+    tg = Telegram(token, chat, dry, pages_url, subscribers, langs, owner_off=OWNER_OFF)
     now = datetime.now(timezone.utc)
     now_msk = now.astimezone(MSK)
     st = load_state(state_path)

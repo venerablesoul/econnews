@@ -133,7 +133,9 @@ async function subsList(req, env) {
     const id = String(env.OWNER_ID).trim();
     if (!langs[id]) { const l = await getLang(env, id); if (l !== "en") langs[id] = l; }
   }
-  return json({ ok: true, ids: subs.map((s) => s.id), langs });
+  // the owner can switch their own news off with the button / /stop
+  const ownerOff = env.OWNER_ID ? (await env.SUBS.get(OWNER_OFF)) !== null : false;
+  return json({ ok: true, ids: subs.map((s) => s.id), langs, owner_off: ownerOff });
 }
 
 async function subsRemove(req, env) {
@@ -142,6 +144,25 @@ async function subsRemove(req, env) {
   const ids = (body.ids || []).map(String).filter((x) => /^-?\d+$/.test(x)).slice(0, 100);
   await Promise.all(ids.map((id) => env.SUBS.delete("u:" + id)));
   return json({ ok: true, removed: ids.length });
+}
+
+// The owner always gets the mailing unless they switched it off (KV "owner_off")
+const OWNER_OFF = "owner_off";
+
+async function newsOn(env, chat) {
+  if (isOwnerChat(env, chat.id)) return (await env.SUBS.get(OWNER_OFF)) === null;
+  return (await env.SUBS.get("u:" + chat.id)) !== null;
+}
+
+// switch the news on/off for this chat; returns the new state
+async function setNews(env, chat, from, on) {
+  if (isOwnerChat(env, chat.id)) {
+    if (on) await env.SUBS.delete(OWNER_OFF);
+    else await env.SUBS.put(OWNER_OFF, "1");
+  }
+  if (on) await subscribe(env, chat, from);
+  else await env.SUBS.delete("u:" + chat.id);
+  return on;
 }
 
 async function subscribe(env, chat, from) {
@@ -191,6 +212,10 @@ function keyboard(env, chat, extra = true) {
     rows.push([{ text: X.t("btn_calendar"), callback_data: "calendar" }, { text: X.t("btn_trades"), callback_data: "trades" }]);
     rows.push([{ text: X.t("btn_watch"), callback_data: "watch" }, { text: X.t("btn_port"), callback_data: "port" }]);
     rows.push([{ text: X.t("btn_map"), callback_data: "map" }, { text: X.t("btn_eqs"), callback_data: "eqs" }]);
+    if (chat.newsOn !== undefined) {
+      rows.push([chat.newsOn ? { text: X.t("btn_news_off"), callback_data: "news:off" }
+        : { text: X.t("btn_news_on"), callback_data: "news:on" }]);
+    }
   }
   return { inline_keyboard: rows };
 }
@@ -215,6 +240,17 @@ export async function handleUpdate(update, env) {
     const raw = cq.message && cq.message.chat;
     if (!raw) return;
     const chat = { ...raw, lang: await getLang(env, raw.id) };
+    chat.newsOn = await newsOn(env, chat);
+    if (cq.data === "news:on" || cq.data === "news:off") {
+      chat.newsOn = await setNews(env, chat, cq.from || {}, cq.data === "news:on");
+      // swap the button on the pressed message, then confirm
+      if (cq.message.message_id) {
+        await tg(env, "editMessageReplyMarkup", { chat_id: chat.id, message_id: cq.message.message_id,
+          reply_markup: keyboard(env, chat) }).catch(() => {});
+      }
+      await send(env, chat, t(chat.lang, chat.newsOn ? "news_on" : "news_off"));
+      return;
+    }
     if (/^lang:(en|ru)$/.test(cq.data || "")) return command("lang", [cq.data.slice(5)], cq.data.slice(5), chat, cq.from || {}, env);
     if (OLD_CALLBACKS.includes(cq.data)) return command(cq.data, [], "", chat, cq.from || {}, env);
     if (isNewCallback(cq.data)) {
@@ -225,6 +261,7 @@ export async function handleUpdate(update, env) {
   const msg = update.message;
   if (!msg || !msg.chat || typeof msg.text !== "string") return;
   const chat = { ...msg.chat, lang: await getLang(env, msg.chat.id) };
+  chat.newsOn = await newsOn(env, chat);
   const text = msg.text.trim();
   if (!text.startsWith("/")) {
     if (chat.type !== "private") return;
@@ -254,6 +291,8 @@ async function command(cmd, args, rest, chat, from, env) {
   const X = L(chat.lang);
   if (cmd === "start") {
     const fresh = await subscribe(env, chat, from);
+    if (owner) await env.SUBS.delete(OWNER_OFF);
+    chat.newsOn = true;
     const ruHint = !X.ru && /^(ru|uk|be|kk)/i.test(from.language_code || "");
     const hello = [...X.t("hello", { fresh, owner, ruHint }), X.t("help_short")]
       .filter((x, i, a) => x !== "" || a[i - 1] !== "").join("\n");
@@ -272,8 +311,8 @@ async function command(cmd, args, rest, chat, from, env) {
     return;
   }
   if (cmd === "stop") {
-    await env.SUBS.delete("u:" + chat.id);
-    await send(env, chat, X.t(owner ? "stop_owner" : "stop"));
+    chat.newsOn = await setNews(env, chat, from, false);
+    await send(env, chat, X.t("news_off"), keyboard(env, chat));
     return;
   }
   if (cmd === "help" || cmd === "commands" || cmd === "помощь") return void await send(env, chat, X.t("help"), keyboard(env, chat));
