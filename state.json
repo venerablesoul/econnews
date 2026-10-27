@@ -684,7 +684,8 @@
   "a5820876c03ed25c": "2026-10-27T11:38:09.269883+00:00",
   "2196a6896052b5e9": "2026-10-27T11:43:09.296137+00:00",
   "ce42aaf0267d7c0d": "2026-10-27T11:48:09.332036+00:00",
-  "2a73624bf04dfbfc": "2026-10-27T11:53:09.592507+00:00"
+  "2a73624bf04dfbfc": "2026-10-27T11:53:09.592507+00:00",
+  "8c3b2dfdc2708df1": "2026-10-27T11:58:09.276641+00:00"
  },
  "recent": [
   {
@@ -5826,6 +5827,21 @@
    ],
    "score": 1,
    "ts": "2026-10-27T11:53:09.592507+00:00"
+  },
+  {
+   "title": "Bond-Market Doubts Grow Over Gridlock as Cure for Deficit Angst",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-27/bond-market-doubts-grow-over-gridlock-as-cure-for-deficit-angst",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-27T11:58:09.276641+00:00",
+   "title_ru": "Сомнения на рынке облигаций растут из-за тупика как лекарства от страха дефицита",
+   "lead": "Bond investors are growing skeptical that the potential return of gridlock on Capitol Hill will ease their worries about the US fiscal trajectory the way it has for decades.",
+   "lead_ru": "Инвесторы в облигации все больше скептически относятся к тому, что потенциальное возвращение тупика на Капитолийском холме облегчит их опасения по поводу траектории фискальной политики США, как это было на протяжении десятилетий.",
+   "tags": [
+    "bonds"
+   ]
   }
  ],
  "last_digest": "2026-10-26",
@@ -5842,17 +5858,17 @@
   "CNBC": 0,
   "ФРС США": 0,
   "Bloomberg": 0,
-  "Reuters": 20,
+  "Reuters": 21,
   "MarketWatch": 0,
   "Банк Англии": 0,
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
   "Fed": 0,
-  "IMF": 20,
+  "IMF": 21,
   "Kommersant": 0,
   "RBC": 0,
-  "US Labor Statistics (BLS)": 20
+  "US Labor Statistics (BLS)": 21
  },
  "charts_sent": [
   "2026-10-17-21",
