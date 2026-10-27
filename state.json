@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "39ffa2a5c3ff5467": "2026-10-24T00:03:26.740984+00:00",
-  "e90b82ad866c7202": "2026-10-24T00:03:26.740984+00:00",
   "317c94c0117fa41d": "2026-10-24T00:13:26.794602+00:00",
   "ee25ea62bbabb1ef": "2026-10-24T00:33:26.745228+00:00",
   "896638884bf04324": "2026-10-24T00:38:26.760452+00:00",
@@ -606,19 +604,10 @@
   "53e6be532bbb463a": "2026-10-26T23:52:01.251458+00:00",
   "0956d32bb3922d87": "2026-10-26T23:52:01.251458+00:00",
   "6a600d39cab661fa": "2026-10-27T00:02:01.286476+00:00",
-  "29ebdec5eedb5529": "2026-10-27T00:02:01.286476+00:00"
+  "29ebdec5eedb5529": "2026-10-27T00:02:01.286476+00:00",
+  "c3fa8b8ff72574ab": "2026-10-27T00:12:01.233543+00:00"
  },
  "recent": [
-  {
-   "title": "Projections for 29-1240 - BLS Data",
-   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOd0ZEN1hoRTl1c0VxWDBCMjdDZ29VeTZNWmlfVlNlTEdiWGdPd04zVVBHQndQR0h2YjI5WWhZdUdnWnVLeFBueXl5SXppUXhSRkVKQWlfclQtNnpQRlVGUU9HcDFBd3BUV0hLQk1xakVjUkdfNVhPNFBpNEZjRXRwMUZn?oc=5",
-   "sources": [
-    "US Labor Statistics (BLS)"
-   ],
-   "score": 4,
-   "ts": "2026-10-24T00:03:26.740984+00:00",
-   "title_ru": "Прогнозы на 29-1240 - Данные BLS"
-  },
   {
    "title": "US executives quit $25bn gas venture over claims of secret Russian control",
    "link": "https://www.ft.com/content/e9cfbfbb-e65a-4303-aebb-20d59319ef1b?syn-25a6b1a6=1",
@@ -4760,6 +4749,16 @@
    "title_ru": "«Я мать-одиночка, мой доход составляет 41 000 фунтов стерлингов, и я ограничиваю свой еженедельный магазин 40 фунтами стерлингов». Чего вы хотите от бюджета?",
    "lead": "People earning from £380 a month to £150,000 a year tell the BBC what they want to see in this year's Budget.",
    "lead_ru": "Люди, зарабатывающие от 380 фунтов стерлингов в месяц до 150 000 фунтов стерлингов в год, рассказывают Би-би-си, что они хотят видеть в бюджете этого года."
+  },
+  {
+   "title": "US CFTC, NBA agree to cooperate over basketball and prediction markets",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNRUpwWFJGWXloMTBrUXEydE5jejMtVUVRMXFiZXBud2hwQjROU0U5cUk4NjVTbHhMcFU2Y3A5YjV3ME1SZGVTbno4TnpqSmUzUXFhakhmb00zZWg5NS15VWxNZG5EMlp6YU5kZ210SnVLVjRVODRxYmtmcHNwb2RwdnFrNXNzVHVmMjdjN2lZTUFzV1VDUXl1YlU4aUdRSFpxTFlMdUt2ZG5JQQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T00:12:01.233543+00:00",
+   "title_ru": "CFTC США и НБА договорились сотрудничать на рынках баскетбола и прогнозов"
   }
  ],
  "last_digest": "2026-10-26",
@@ -4811,7 +4810,7 @@
   "2026-10-26-21"
  ],
  "calendar": {
-  "fetched": "2026-10-26T18:06:23.183887+00:00",
+  "fetched": "2026-10-27T00:07:01.172160+00:00",
   "events": [
    {
     "title": "Bank Holiday",
@@ -4874,7 +4873,7 @@
     "country": "EUR",
     "ts": "2026-10-27T08:00:00+00:00",
     "impact": "Low",
-    "forecast": "9.8%",
+    "forecast": "9.9%",
     "previous": "9.9%"
    },
    {
@@ -4882,7 +4881,7 @@
     "country": "EUR",
     "ts": "2026-10-27T09:00:00+00:00",
     "impact": "Low",
-    "forecast": "3.6%",
+    "forecast": "3.5%",
     "previous": "3.5%"
    },
    {
@@ -4914,7 +4913,7 @@
     "country": "USD",
     "ts": "2026-10-27T12:30:00+00:00",
     "impact": "Low",
-    "forecast": "1.8%",
+    "forecast": "2.0%",
     "previous": "0.0%"
    },
    {
@@ -4922,7 +4921,7 @@
     "country": "USD",
     "ts": "2026-10-27T13:00:00+00:00",
     "impact": "Low",
-    "forecast": "0.1%",
+    "forecast": "0.2%",
     "previous": "0.3%"
    },
    {
@@ -4930,7 +4929,7 @@
     "country": "USD",
     "ts": "2026-10-27T13:00:00+00:00",
     "impact": "Low",
-    "forecast": "2.7%",
+    "forecast": "2.6%",
     "previous": "2.5%"
    },
    {
@@ -4938,7 +4937,7 @@
     "country": "USD",
     "ts": "2026-10-27T14:00:00+00:00",
     "impact": "Medium",
-    "forecast": "80.7",
+    "forecast": "81.2",
     "previous": "81.9"
    },
    {
@@ -4946,7 +4945,7 @@
     "country": "USD",
     "ts": "2026-10-27T14:00:00+00:00",
     "impact": "Low",
-    "forecast": "649K",
+    "forecast": "651K",
     "previous": "684K"
    },
    {
@@ -4954,7 +4953,7 @@
     "country": "USD",
     "ts": "2026-10-27T14:00:00+00:00",
     "impact": "Low",
-    "forecast": "1",
+    "forecast": "0",
     "previous": "-2"
    },
    {
@@ -5026,7 +5025,7 @@
     "country": "EUR",
     "ts": "2026-10-28T07:00:00+00:00",
     "impact": "Low",
-    "forecast": "-30.0",
+    "forecast": "-30.1",
     "previous": "-30.6"
    },
    {
@@ -5066,7 +5065,7 @@
     "country": "USD",
     "ts": "2026-10-28T12:30:00+00:00",
     "impact": "Low",
-    "forecast": "-130.8B",
+    "forecast": "-130.4B",
     "previous": "-132.6B"
    },
    {
@@ -5074,7 +5073,7 @@
     "country": "USD",
     "ts": "2026-10-28T12:30:00+00:00",
     "impact": "Low",
-    "forecast": "0.4%",
+    "forecast": "0.5%",
     "previous": "0.7%"
    },
    {
@@ -5162,7 +5161,7 @@
     "country": "AUD",
     "ts": "2026-10-29T00:30:00+00:00",
     "impact": "Low",
-    "forecast": "1.8%",
+    "forecast": "1.3%",
     "previous": "5.7%"
    },
    {
@@ -5211,7 +5210,7 @@
     "ts": "2026-10-29T09:33:00+00:00",
     "impact": "Low",
     "forecast": "",
-    "previous": ""
+    "previous": "4.58|1.6"
    },
    {
     "title": "Advance GDP q/q",
@@ -5234,7 +5233,7 @@
     "country": "USD",
     "ts": "2026-10-29T12:30:00+00:00",
     "impact": "Medium",
-    "forecast": "3.5%",
+    "forecast": "3.3%",
     "previous": "6.2%"
    },
    {
@@ -5338,7 +5337,7 @@
     "country": "JPY",
     "ts": "2026-10-29T23:50:00+00:00",
     "impact": "Low",
-    "forecast": "1.3%",
+    "forecast": "1.2%",
     "previous": "-1.7%"
    },
    {
@@ -5346,7 +5345,7 @@
     "country": "JPY",
     "ts": "2026-10-29T23:50:00+00:00",
     "impact": "Low",
-    "forecast": "3.4%",
+    "forecast": "3.3%",
     "previous": "2.7%"
    },
    {
@@ -5394,7 +5393,7 @@
     "country": "JPY",
     "ts": "2026-10-30T05:00:00+00:00",
     "impact": "Low",
-    "forecast": "2.5%",
+    "forecast": "2.7%",
     "previous": "6.1%"
    },
    {
@@ -5406,19 +5405,11 @@
     "previous": ""
    },
    {
-    "title": "German Prelim CPI m/m",
-    "country": "EUR",
-    "ts": "2026-10-30T06:29:00+00:00",
-    "impact": "Medium",
-    "forecast": "0.1%",
-    "previous": "0.6%"
-   },
-   {
     "title": "French Consumer Spending m/m",
     "country": "EUR",
     "ts": "2026-10-30T06:30:00+00:00",
     "impact": "Low",
-    "forecast": "0.2%",
+    "forecast": "0.1%",
     "previous": "-0.5%"
    },
    {
@@ -5442,8 +5433,16 @@
     "country": "GBP",
     "ts": "2026-10-30T07:00:00+00:00",
     "impact": "Low",
-    "forecast": "-0.2%",
+    "forecast": "-0.1%",
     "previous": "-0.2%"
+   },
+   {
+    "title": "German Prelim CPI m/m",
+    "country": "EUR",
+    "ts": "2026-10-30T07:29:00+00:00",
+    "impact": "Medium",
+    "forecast": "0.1%",
+    "previous": "0.6%"
    },
    {
     "title": "French Prelim CPI m/m",
@@ -5466,7 +5465,7 @@
     "country": "CHF",
     "ts": "2026-10-30T08:00:00+00:00",
     "impact": "Low",
-    "forecast": "108.0",
+    "forecast": "108.1",
     "previous": "109.1"
    },
    {
@@ -5514,7 +5513,7 @@
     "country": "EUR",
     "ts": "2026-10-30T10:00:00+00:00",
     "impact": "Low",
-    "forecast": "0.0%",
+    "forecast": "0.1%",
     "previous": "0.7%"
    },
    {
@@ -5554,7 +5553,7 @@
     "country": "USD",
     "ts": "2026-10-30T13:45:00+00:00",
     "impact": "Low",
-    "forecast": "54.8",
+    "forecast": "55.8",
     "previous": "58.8"
    },
    {
@@ -5578,7 +5577,7 @@
     "country": "CNY",
     "ts": "2026-10-31T01:30:00+00:00",
     "impact": "Low",
-    "forecast": "50.1",
+    "forecast": "49.9",
     "previous": "50.1"
    },
    {
@@ -5586,7 +5585,7 @@
     "country": "CNY",
     "ts": "2026-10-31T01:30:00+00:00",
     "impact": "Low",
-    "forecast": "50.5",
+    "forecast": "50.0",
     "previous": "50.2"
    }
   ]
@@ -11204,12 +11203,12 @@
    "0002159567-26-000005",
    "0001628280-26-067362",
    "0001213900-26-112593",
-   "0000909832-26-000111",
    "0000909832-26-000119",
    "0001379344-26-000011",
    "0001137789-26-000293",
    "0001182471-26-000007",
    "0001137789-26-000290",
+   "0001493152-26-048603",
    "0001193125-26-432288",
    "0000909832-26-000115",
    "0001137789-26-000291",
