@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "ee4e10e2fc52f205": "2026-10-24T15:50:19.688099+00:00",
   "deb4ad4f16cdedc5": "2026-10-24T16:00:19.741145+00:00",
   "87ccab3bd4da7b41": "2026-10-24T16:05:19.740762+00:00",
   "89e81438e487d406": "2026-10-24T16:35:19.689718+00:00",
@@ -747,22 +746,11 @@
   "f5ceaab9a335ff39": "2026-10-27T15:38:43.102626+00:00",
   "908c534e462dbf27": "2026-10-27T15:43:43.112646+00:00",
   "960575cb1d3770a0": "2026-10-27T15:48:42.952993+00:00",
-  "f2b6fcc890f517f2": "2026-10-27T15:48:42.952993+00:00"
+  "f2b6fcc890f517f2": "2026-10-27T15:48:42.952993+00:00",
+  "4b7af1d4a1539ce1": "2026-10-27T15:58:43.030029+00:00",
+  "78a102de8c07387b": "2026-10-27T15:58:43.030029+00:00"
  },
  "recent": [
-  {
-   "title": "UAE's Ras Al Khaimah shuts all beaches as neighbours grapple with oil spill",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPeDMwaHJxZFNJTlFkYnB5UDY2SEdRcnRvdGRMSUNDR0I3cmhHT0xkTHQ4QjR5d241bnMtTm44UFIzdTZJYUJwcXZTcVFwN2FSVm80aTBWNmpXQVhrSTdtMnZHbWJiZTV1WFl1cGVyOHlJSmZ2d3gxZ0ZpTkpVOW0xTWFrNEFlTDczUGY1TVl0SmVKSVQ5cnN3S2NhU2dwZGZuYldJZDB3WWpaQTYzQ1RQeUdqNS1acnNqY002emRQMHV0TFU?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-24T15:50:19.688099+00:00",
-   "title_ru": "Рас-Аль-Хайма в ОАЭ закрывает все пляжи, поскольку соседи борются с разливом нефти",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "Armen Mikayelyan, Global Gold Corp: Profile and Biography",
    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1JNEQxNHJUd0w1VXBMSWJTVkpkZXRheDQ4R0pNbFhKTHZNRUh2aExGSmVBNWYwd3VuaURIdTF4a2gxbUxfT1BBMHBpX0prVlVlSmswcU5CUm1ZaUdyT3UxMTd0MzI0Sy0ybTNJdEgyZUZUZEJoZ0E?oc=5",
@@ -6488,6 +6476,18 @@
    "tags": [
     "gold"
    ]
+  },
+  {
+   "title": "Millennium Taps Prediction Markets Data in Hunt for Trading Edge",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-27/millennium-taps-prediction-markets-data-in-hunt-for-trading-edge",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T15:58:43.030029+00:00",
+   "title_ru": "Millennium Taps прогнозирует рыночные данные в поисках торговых преимуществ",
+   "lead": "Millennium Management is exploring ways to use prediction markets to inform its trading strategies, joining a growing roster of Wall Street firms dipping their toes into the space.",
+   "lead_ru": "Millennium Management изучает способы использования рынков прогнозов для обоснования своих торговых стратегий, присоединяясь к растущему списку фирм с Уолл-стрит, активно работающих в этой сфере."
   }
  ],
  "last_digest": "2026-10-26",
@@ -12900,9 +12900,8 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-27T14:58:43.003601+00:00",
+  "checked": "2026-10-27T15:58:43.030029+00:00",
   "sec_seen": [
-   "0001628280-26-067469",
    "0000947871-26-000956",
    "0000947871-26-000953",
    "0000947871-26-000951",
