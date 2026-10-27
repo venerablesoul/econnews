@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "27ccddb775425011": "2026-10-24T02:28:26.802507+00:00",
   "cd9780824a9b65c1": "2026-10-24T02:38:26.779678+00:00",
   "39b1523f9d22ec7e": "2026-10-24T02:43:26.744458+00:00",
   "e7b8657f8298fbb3": "2026-10-24T03:53:26.752022+00:00",
@@ -605,19 +604,10 @@
   "cfa4e9896537763c": "2026-10-27T02:17:36.893588+00:00",
   "7aef388f63a4ac25": "2026-10-27T02:22:36.865049+00:00",
   "9cd98e9af450969a": "2026-10-27T02:27:36.864898+00:00",
-  "73e56fe7c0128823": "2026-10-27T02:27:36.864898+00:00"
+  "73e56fe7c0128823": "2026-10-27T02:27:36.864898+00:00",
+  "bcee857f8ac4674d": "2026-10-27T02:37:36.887221+00:00"
  },
  "recent": [
-  {
-   "title": "Macroeconomic Effects of Forced Displacement in Sub-Saharan Africa",
-   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOTWI2cXFkbTlnTEpQR1FIQS1CZHoxUE1vTlNvQ1NGRUJmVmhfblRXS0JFQmpVUi14azJMenkwdVRGTHhSUWpncks5Ylk3OUVnSVZSZ1lYbkhNMDc3YmhOOFdrSzdsaGtNN2F2WDVsWVBPZnJLRjFUQ2FqSDNDN3RUVk1la2U5RzluYUl6aC1vaEJTeWdPV0lfQ2F4a21tOFJ5d1hnQ1BtRTJTdzV0cmJ5dy0tV2g0MDl5RTh5aE55YTR1N25lOHE5TlRR?oc=5",
-   "sources": [
-    "IMF"
-   ],
-   "score": 4,
-   "ts": "2026-10-24T02:28:26.802507+00:00",
-   "title_ru": "Макроэкономические последствия вынужденного перемещения в странах Африки к югу от Сахары"
-  },
   {
    "title": "Global Spillovers from U.S. Bond Supply Shocks",
    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOTUp3dDl1RGVHLURmVm1rWHZtU1ZaMjRIcHVMb3Z2amJzalEwMjBpM2hiZHhJYmJ0alE3QXB2eWw3eEI4YWI5bFNRWk9JNWJ5ckhUS1VQdHBFRGdUNXJ3aDZXY0ZjRV93anNNajBSemQ4VVN3M3g4d3F4OGZoNmVsaVZFMkI5c0xuNDhXc1F0VUVVVHdv?oc=5",
@@ -4783,6 +4773,20 @@
    "score": 3,
    "ts": "2026-10-27T02:27:36.864898+00:00",
    "title_ru": "Трамп, игнорируя опросы, прогнозирует, что экономика поможет республиканцам в промежуточных выборах"
+  },
+  {
+   "title": "China’s Industrial Profits Jump Most in Three Months on Oil, AI",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNTHpqMDdYZGVGYi1vVUE0a09KX19OVENITVZwenhadGJ2Wl9EeS1OMzZEZ3lzZXB0VjR6aWhROUxvd0Jtd2k1Mjd0NElfM0F5eGtqWkVsUUlQV083bjl0SzJfbXQ2bktwZnJiSU9zbF9yVlF5QTBad3NsYWhFX0tzd2hVZkV5SXEzOG0yVEZISUdlOVhGQnhJc2lWdkoyZ0V0eXZHZE1WdS1SV0JGVzlZZ2Y4RQ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T02:37:36.887221+00:00",
+   "title_ru": "Промышленная прибыль Китая выросла больше всего за три месяца благодаря нефти и искусственному интеллекту",
+   "tags": [
+    "oil",
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-10-26",
