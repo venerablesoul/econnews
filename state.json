@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "23d46987719eb79b": "2026-10-24T06:03:55.368268+00:00",
   "e951fa22fc6e54ce": "2026-10-24T06:58:55.373372+00:00",
   "c7ae34fd8bc24510": "2026-10-24T07:18:55.361678+00:00",
   "d5cf3c527fba997c": "2026-10-24T08:03:55.439947+00:00",
@@ -627,19 +626,10 @@
   "a48cb7ff463962dc": "2026-10-27T05:42:36.845375+00:00",
   "034f9f5db416b0bd": "2026-10-27T05:47:36.844704+00:00",
   "7ec9edb20ede2407": "2026-10-27T05:52:36.869861+00:00",
-  "1ed50f99613827a2": "2026-10-27T06:02:36.866491+00:00"
+  "1ed50f99613827a2": "2026-10-27T06:02:36.866491+00:00",
+  "6c6b718b8dcee938": "2026-10-27T06:12:36.895811+00:00"
  },
  "recent": [
-  {
-   "title": "Piero Cipollone: Interview with Milano Finanza",
-   "link": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261024~ee2ba73cf3.en.html",
-   "sources": [
-    "ECB"
-   ],
-   "score": 4,
-   "ts": "2026-10-24T06:03:55.368268+00:00",
-   "title_ru": "Пьеро Чиполлоне: Интервью Milano Finanza"
-  },
   {
    "title": "Swiss Stocks Are Becoming a Haven From AI Fears Roiling Markets",
    "link": "https://www.bloomberg.com/news/articles/2026-10-24/swiss-stocks-are-becoming-a-haven-from-ai-fears-roiling-markets",
@@ -5079,6 +5069,19 @@
    "title_ru": "Самая большая экономическая проблема Дональда Трампа выглядит странно знакомой",
    "lead": "Donald Trump heads into the US midterm elections with an issue similar to his political foe Joe Biden.",
    "lead_ru": "Дональд Трамп отправляется на промежуточные выборы в США с вопросом, похожим на его политического противника Джо Байдена."
+  },
+  {
+   "title": "The Grease Hunters of Bengaluru Want Leftover Fryer Oil to Fuel India’s Jets",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQYW5sZ1lpQ0tjX0VhMlM5UnNKVmF5alZYWldzcmRsU2xKNWhWRmxnQWZBQWJHVGhIalc1UzE1cnNBTmg3WnRxdWJHaVFxcG5rcm1RaWU5T1hONGhVNndscUpwWkI0TzNxRDJxLVN5UF9Wa3JIRVpVMmY5T2JFNlZDZnJGRFVhaXZIajJ5b2tjeEk5Q1NjVHlxQ1BVZXhoOFdqVldLMEtYUXRxTE1NazNMM2hEckY4bHlVNTF0ZVFqQmVMcWxVN3hWdDRn?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T06:12:36.895811+00:00",
+   "title_ru": "Охотники за жиром в Бангалоре хотят, чтобы остатки фритюрницы питали индийские самолеты",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-26",
@@ -5130,7 +5133,7 @@
   "2026-10-27-09"
  ],
  "calendar": {
-  "fetched": "2026-10-27T00:07:01.172160+00:00",
+  "fetched": "2026-10-27T06:07:36.864034+00:00",
   "events": [
    {
     "title": "Bank Holiday",
