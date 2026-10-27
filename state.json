@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "b5a8bf0780f7a4c8": "2026-10-24T10:19:23.569375+00:00",
-  "199e7c4d329f3e34": "2026-10-24T10:19:23.569375+00:00",
   "09b29eacb314fe99": "2026-10-24T10:29:23.597848+00:00",
   "1ea1decc178404d8": "2026-10-24T10:34:23.556560+00:00",
   "0bc5eeb12e462f1f": "2026-10-24T10:49:23.561618+00:00",
@@ -679,19 +677,6 @@
   "5d84ad6dfa51098a": "2026-10-27T10:18:09.329364+00:00"
  },
  "recent": [
-  {
-   "title": "As winter nears, heating oil emerges as hurdle for Republicans in US Senate races",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPWk5FamNJdG52SWx6b2FvaS1zcEFZZUJkbl9Kdl9DS2g2bGZadUJTcUZoMy03VWNrRlMtVFNnc2Q5clJJNVZ5eldDendydEU5b1lndTQ5TXViQW9uN2tTN185S1FkWnV3UHZxZkwtZE5zb0hZYm43ZG5sMHpIYWNGejQ3OWFNSjBjYUZfeEVoN1FvNk9zMmNDdEFrczJ1OEpadEM2U2RmdmtMMy1xUl9DWTkwVWd1ZFNIZjZ2Wg?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-24T10:19:23.569375+00:00",
-   "title_ru": "С приближением зимы мазут становится препятствием для республиканцев на выборах в Сенат США",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "Экс-глава Минфина США предупредил о риске экономических потрясений",
    "link": "https://www.rbc.ru/economics/24/10/2026/6adc525eb5c584671670e2f0",
@@ -5694,17 +5679,17 @@
   "CNBC": 0,
   "ФРС США": 0,
   "Bloomberg": 0,
-  "Reuters": 1,
+  "Reuters": 3,
   "MarketWatch": 0,
   "Банк Англии": 0,
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
   "Fed": 0,
-  "IMF": 1,
+  "IMF": 3,
   "Kommersant": 0,
   "RBC": 0,
-  "US Labor Statistics (BLS)": 1
+  "US Labor Statistics (BLS)": 3
  },
  "charts_sent": [
   "2026-10-17-21",
