@@ -736,7 +736,10 @@
   "000cfe1d26986489": "2026-10-27T14:38:42.999436+00:00",
   "3fd7ac01c35fb228": "2026-10-27T14:38:42.999436+00:00",
   "4804f59d240f2516": "2026-10-27T14:58:43.003601+00:00",
-  "5b0c3e1b9dea7df3": "2026-10-27T15:03:43.021977+00:00"
+  "5b0c3e1b9dea7df3": "2026-10-27T15:03:43.021977+00:00",
+  "4dd9d64954467ea0": "2026-10-27T15:08:43.242337+00:00",
+  "2baf08cdf117cf80": "2026-10-27T15:08:43.242337+00:00",
+  "bc0eee89f73de26b": "2026-10-27T15:08:43.242337+00:00"
  },
  "recent": [
   {
@@ -6356,6 +6359,25 @@
    "score": 4,
    "ts": "2026-10-27T15:03:43.021977+00:00",
    "title_ru": "Глобальная политическая повестка дня до 2026 года"
+  },
+  {
+   "title": "Italy to approve 2027 budget on Wednesday as talks progress with EU on deficit",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQOTVPclN4TndVZGlrc09IdmpNTGRXREk1Yl9aXzU5eldRZzVoNlJOZURSSWRlT3k5UGFhZjdlYmpORE5tdHZLV2FTcWFTTmFFX2t3R2owVTJCNnM0Z2J2WnF1T0R4YnZNUlVIS2Z5djBTRjFiSEppSkItb1RPMzRPUVdFX01uYWZjWl9NMjlwZkM1NjdoSEtfRUJyTEhYUWpySFJRLWdoZlZFVU54MnRIN3h5ZnhVUGNVR19F?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-27T15:08:43.242337+00:00",
+   "title_ru": "Италия утвердит бюджет на 2027 год в среду по мере продвижения переговоров с ЕС по дефициту"
+  },
+  {
+   "title": "How Broadcom’s stock can surge and overcome ‘the biggest dislocation in the market’",
+   "link": "https://www.marketwatch.com/story/how-broadcoms-stock-can-surge-and-overcome-the-biggest-dislocation-in-the-market-9719e2a8?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-27T15:08:43.242337+00:00"
   }
  ],
  "last_digest": "2026-10-26",
@@ -12770,13 +12792,10 @@
   },
   "checked": "2026-10-27T14:58:43.003601+00:00",
   "sec_seen": [
-   "0001123292-26-001428",
    "0001193125-26-433188",
    "0000947871-26-000949",
    "0001193125-26-433172",
    "0000947871-26-000950",
-   "0001628280-26-067460",
-   "0000947871-26-000948",
    "0002058897-26-000330"
   ],
   "errors": {
