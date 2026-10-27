@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c3d39e7016b29203": "2026-10-24T14:24:23.587293+00:00",
   "3b6bdc5f5df22bf9": "2026-10-24T14:44:23.618583+00:00",
   "d06589c2d735c223": "2026-10-24T14:54:23.575642+00:00",
   "7367cef58a08b8a0": "2026-10-24T14:54:23.575642+00:00",
@@ -732,23 +731,11 @@
   "17cc47d8dd2fc8d1": "2026-10-27T14:13:43.017913+00:00",
   "3b64beb43ba9229b": "2026-10-27T14:13:43.017913+00:00",
   "9ee8f69365ef35e3": "2026-10-27T14:18:42.979506+00:00",
-  "809497ec19b29ac6": "2026-10-27T14:18:42.979506+00:00"
+  "809497ec19b29ac6": "2026-10-27T14:18:42.979506+00:00",
+  "2bc1cf592e278a36": "2026-10-27T14:28:42.945299+00:00",
+  "ba80d70d1ae48f1e": "2026-10-27T14:28:42.945299+00:00"
  },
  "recent": [
-  {
-   "title": "Some Canadian Tariffs Exempted, Oil at Six-Month High, More",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQa1I1c3JrMEp6VmVmQjVVZ3dscktGYmhLdHVaSnB5Mi1tN2VFakdTOWVMMWxMbGhqTHo1VXVWLWM1TnV1QmRfSktkWVY3N2ZHd0F2RnYyakpkT3pWa2ltNzAxTlhXXy01LXA0MTRUUUFheGxvLTNWa1lOSV9SNzNRTkp5bzdXNTlNYzZobXFla09Zd0gtMi1wS3l2a0M4SzVVVnM4UDJiSUo?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-24T14:24:23.587293+00:00",
-   "title_ru": "Некоторые канадские тарифы освобождены, нефть на шестимесячном максимуме, больше",
-   "tags": [
-    "oil",
-    "tariffs"
-   ]
-  },
   {
    "title": "Looking for AI stocks that are still cheap? Consider these two under-the-radar picks.",
    "link": "https://www.marketwatch.com/story/looking-for-ai-stocks-that-are-still-cheap-consider-these-two-under-the-radar-picks-b4ca2b28?mod=mw_rss_topstories",
@@ -6342,6 +6329,20 @@
    "score": 3,
    "ts": "2026-10-27T14:18:42.979506+00:00",
    "title_ru": "Танзания объявила о первом открытии газа за более чем 10 лет"
+  },
+  {
+   "title": "Russia Ships Less Crude Even as Key Baltic Port’s Flows Rebound",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNdFFnWm9RNEktdmhjWVlZV3RTM0psZlZ4QVdQSjV2dk5BSWgzZDBKSGhiU1BaTjFiODE5NWt5V0JQcUhWS2p5RkZRVnJVWFVabnRhMW0wak8tWWc4eUVuaUQ2ZEhIMzJPNkVydEhHNG5wM25wSHBpdFNIZE4tbVFQV1JnYkhYazhtZjlVS3o4elZuallGLU5QZDB0eGNKbVNTSkJuQ0haZTNJU2EzcjI1ZmRB?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-27T14:28:42.945299+00:00",
+   "title_ru": "Россия отгружает меньше нефти, даже когда основные потоки Балтийского порта возвращаются",
+   "tags": [
+    "oil",
+    "Russia"
+   ]
   }
  ],
  "last_digest": "2026-10-26",
@@ -12756,19 +12757,10 @@
   },
   "checked": "2026-10-27T13:53:42.974304+00:00",
   "sec_seen": [
-   "0001267119-26-000002",
    "0002122308-26-000009",
-   "0001763378-26-000002",
-   "0001575176-26-000002",
-   "0001914572-26-000002",
-   "0001479568-26-000002",
-   "0001880645-26-000002",
    "0001193125-26-433039",
-   "0001311245-26-000002",
    "0002122308-26-000008",
-   "0001905347-26-000002",
-   "0001012804-26-000002",
-   "0002027021-26-000002",
+   "0001368766-26-000005",
    "0002122308-26-000007"
   ],
   "errors": {
