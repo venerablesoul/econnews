@@ -774,7 +774,9 @@
   "c371b89cc81ba493": "2026-10-27T20:09:44.686763+00:00",
   "f7e675f1f024f1e1": "2026-10-27T20:14:44.691865+00:00",
   "2baafbb03244b637": "2026-10-27T20:14:44.691865+00:00",
-  "67a4e8104195a23c": "2026-10-27T20:19:44.633318+00:00"
+  "67a4e8104195a23c": "2026-10-27T20:19:44.633318+00:00",
+  "ec695d78481df805": "2026-10-27T20:24:44.589452+00:00",
+  "eb7a2c21651fce7e": "2026-10-27T20:24:44.589452+00:00"
  },
  "recent": [
   {
@@ -6817,6 +6819,29 @@
    "score": 3,
    "ts": "2026-10-27T20:19:44.633318+00:00",
    "title_ru": "Анализ акций CAPP.F: прогноз, прибыль, дивиденды"
+  },
+  {
+   "title": "Racist X Post Turns Texas Oil Regulator Contest Into a Dead Heat",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQQmsxcFVXS3piLWx3VjNXNEdTeXM5X0FoSERJUnNHME5WaFk1aGpCQVZvdGlaNFBLRUZDeHdoZ0c3bl9paEpLSFY0elRDNnlwMU8tbEZsMDZkSmFiS2pLeUptQUNnc2hkNGFWUEhkZmV6emZ2TmVyQ081U3JHV0Y2czBnRkNsVnZ4dTREYzFRaXlyVHdnVmxpX1J4VTduR3NuSXM0aUJNcXhEQy1uY1hsQjZVaXhPdw?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T20:24:44.589452+00:00",
+   "title_ru": "Расистский X Post превратил конкурс техасских нефтяных регуляторов в ничью",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "Anduril and Qualcomm Plan to Build Laptop With US Supply Chain",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOMVUzaDFhNEF3eklOdGxCUWJaXzQweU0za1RsUWFvMkhIMUQ2akRCMldjM2xXdURyMWhfaHB6emFLdWhreDI3Ym1sNE5Zdk1LQS1CbXp5UWtrbENuQUI3amtIZXk3d1BWbWF4cUJBUVdNOS1LVlZrTzhpaDJmMlhDUWJLX3hsSTc3dmhNRzdscTRoQS1qbmtOVFFRTmJJamh2SE91SDlkVHd1d1RDdjNTVTBVWQ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T20:24:44.589452+00:00",
+   "title_ru": "Anduril и Qualcomm планируют производить ноутбуки с помощью цепочки поставок в США"
   }
  ],
  "last_digest": "2026-10-27",
@@ -9360,6 +9385,38 @@
    },
    {
     "src": "sec",
+    "id": "d6bfebabbd8857ec",
+    "ticker": "HON",
+    "company": "HONEYWELL INTERNATIONAL INC",
+    "who": "Vimal Kapur",
+    "role": "CEO",
+    "type": "sell",
+    "value": 1427374,
+    "shares": 6459,
+    "price": 220.99,
+    "plan": false,
+    "date": "2026-10-26",
+    "disclosed": "2026-10-27",
+    "link": "https://www.sec.gov/Archives/edgar/data/1742938/000174293826000009/0001742938-26-000009-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "96e871111f08afbc",
+    "ticker": "NFLX",
+    "company": "NETFLIX INC",
+    "who": "Bradford L Smith",
+    "role": "Director",
+    "type": "sell",
+    "value": 1151193,
+    "shares": 17980,
+    "price": 64.03,
+    "plan": true,
+    "date": "2026-10-26",
+    "disclosed": "2026-10-27",
+    "link": "https://www.sec.gov/Archives/edgar/data/1193119/000119311926000003/0001193119-26-000003-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "f4a3e1020db08fec",
     "ticker": "PLUR",
     "company": "Pluri Inc.",
@@ -9469,6 +9526,22 @@
     "date": "2026-10-23",
     "disclosed": "2026-10-27",
     "link": "https://www.sec.gov/Archives/edgar/data/1335111/000122520826008522/0001225208-26-008522-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "23a26789c374d871",
+    "ticker": "NIC",
+    "company": "NICOLET BANKSHARES INC",
+    "who": "Robert Bruce Atwell",
+    "role": "Director",
+    "type": "sell",
+    "value": 608858,
+    "shares": 3556,
+    "price": 171.22,
+    "plan": false,
+    "date": "2026-10-23",
+    "disclosed": "2026-10-27",
+    "link": "https://www.sec.gov/Archives/edgar/data/1253903/000117485026000174/0001174850-26-000174-index.htm"
    },
    {
     "src": "sec",
@@ -13149,54 +13222,6 @@
     "date": "2026-10-16",
     "disclosed": "2026-10-19",
     "link": "https://www.sec.gov/Archives/edgar/data/1872303/000187230326000013/0001872303-26-000013-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "50d48778d2b67d57",
-    "ticker": "WSE",
-    "company": "Wise Group plc",
-    "who": "Nilan Peiris",
-    "role": "Chief Product Officer",
-    "type": "sell",
-    "value": 684578,
-    "shares": 58262,
-    "price": 11.75,
-    "plan": false,
-    "date": "2026-10-16",
-    "disclosed": "2026-10-19",
-    "link": "https://www.sec.gov/Archives/edgar/data/2131390/000095014226002790/0000950142-26-002790-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "e13861a9ed35ad2c",
-    "ticker": "TALO",
-    "company": "TALOS ENERGY INC.",
-    "who": "Control Empresarial De Capitales S.a. De C.v.",
-    "role": "10% owner",
-    "type": "sell",
-    "value": 47307541,
-    "shares": 2752000,
-    "price": 17.19,
-    "plan": false,
-    "date": "2026-10-16",
-    "disclosed": "2026-10-19",
-    "link": "https://www.sec.gov/Archives/edgar/data/1724965/000114036126040135/0001140361-26-040135-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "2ddfc0fab2269fee",
-    "ticker": "NBIS",
-    "company": "Nebius Group N.V.",
-    "who": "John Wilson Iv Boynton",
-    "role": "Director",
-    "type": "sell",
-    "value": 1289586,
-    "shares": 7260,
-    "price": 177.63,
-    "plan": true,
-    "date": "2026-10-15",
-    "disclosed": "2026-10-19",
-    "link": "https://www.sec.gov/Archives/edgar/data/2096831/000151384526000132/0001513845-26-000132-index.htm"
    }
   ],
   "docs": {
@@ -13232,32 +13257,23 @@
   "checked": "2026-10-27T20:09:44.686763+00:00",
   "sec_seen": [
    "0001225208-26-008522",
-   "0000909832-26-000129",
-   "0001193125-26-434235",
    "0002127119-26-000009",
    "0001597870-26-000025",
-   "0001193125-26-434222",
-   "0001628280-26-067585",
+   "0001174850-26-000174",
    "0000950142-26-002867",
-   "0001336706-26-000081",
-   "0001193125-26-434223",
-   "0001193125-26-434228",
+   "0001193119-26-000003",
    "0001104659-26-119162",
-   "0000909832-26-000127",
-   "0001437749-26-033644",
    "0001104659-26-119159",
-   "0001193125-26-434227",
+   "0001742938-26-000009",
+   "0001713683-26-000210",
    "0001225208-26-008523",
-   "0001917389-26-000026",
    "0001594748-26-000007",
-   "0001231919-26-001501",
-   "0001193125-26-434226",
    "0000909832-26-000131",
-   "0002056954-26-000006",
-   "0001865200-26-000095",
    "0001437749-26-033647",
-   "0001193125-26-434224",
-   "0001437749-26-033649"
+   "0001140361-26-040893",
+   "0000950142-26-002868",
+   "0001437749-26-033649",
+   "0001981372-26-000021"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
