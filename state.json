@@ -766,7 +766,9 @@
   "b287608c731d6e18": "2026-10-27T19:04:40.985726+00:00",
   "2b709e1d49cd541b": "2026-10-27T19:19:40.956304+00:00",
   "7f3c8aed318b369f": "2026-10-27T19:19:40.956304+00:00",
-  "34f99aaa3740a3e9": "2026-10-27T19:24:41.023148+00:00"
+  "34f99aaa3740a3e9": "2026-10-27T19:24:41.023148+00:00",
+  "3c38e623f397bdd0": "2026-10-27T19:29:41.088136+00:00",
+  "0330889c09eaffcb": "2026-10-27T19:29:41.088136+00:00"
  },
  "recent": [
   {
@@ -6674,6 +6676,25 @@
    "title_ru": "Слияния и поглощения на среднем рынке — это «плотина», которую вот-вот прорвет: Халил",
    "lead": "Aasem Khalil, global head of investment banking client services at Goldman Sachs, joins Dani Burger on \"Bloomberg Deals.\" They discuss how mid-market companies understand that they need to grow and how mid-market companies have…",
    "lead_ru": "Аасем Халил, глобальный руководитель инвестиционно-банковского клиентского обслуживания Goldman Sachs, присоединяется к Дэни Бургер в программе «Сделки Bloomberg». Они обсуждают, как компании среднего бизнеса понимают, что им необходимо расти, и как компании среднего бизнеса…"
+  },
+  {
+   "title": "Prediction market Kalshi expands safeguards for young traders",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOa2NDSGV4RjlwNF9wLWxDLWxRLWlwVzZQb2pEZndfQnZuVmFUcVBtMGViSWZRbGR3emVqRElJdV94QS1FczBZTTFpdXFXV0QwNmhNdnRhcHdTTHd5UWU2ZXlweWx0WTRWN1ZjOTdUUW11MkNadGV0WWRZTVNxZ2w5QTFHVFBCV1hObGlUanltZVVGU0JOMGpKWmdqMlNWMTgzX2hJYUFPRld5ZGIyc0NN?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T19:29:41.088136+00:00",
+   "title_ru": "Рынок прогнозов Калши расширяет гарантии для молодых трейдеров"
+  },
+  {
+   "title": "A hidden ‘triple top’ in oil price charts suggests the rally has run out of gas",
+   "link": "https://www.marketwatch.com/story/a-hidden-triple-top-in-oil-price-charts-suggests-the-rally-has-run-out-of-gas-3743d5a1?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 2,
+   "ts": "2026-10-27T19:29:41.088136+00:00"
   }
  ],
  "last_digest": "2026-10-27",
@@ -13088,7 +13109,9 @@
   },
   "checked": "2026-10-27T19:09:42.080595+00:00",
   "sec_seen": [
-   "0001437749-26-033624"
+   "0001104659-26-119132",
+   "0001104659-26-119134",
+   "0001104659-26-119131"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
