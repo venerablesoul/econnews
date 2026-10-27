@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "b42198f5cf0a1421": "2026-10-24T15:40:19.675764+00:00",
   "ee4e10e2fc52f205": "2026-10-24T15:50:19.688099+00:00",
   "deb4ad4f16cdedc5": "2026-10-24T16:00:19.741145+00:00",
   "87ccab3bd4da7b41": "2026-10-24T16:05:19.740762+00:00",
@@ -745,21 +744,12 @@
   "7b095fc344cbe6e7": "2026-10-27T15:23:43.081279+00:00",
   "d1906d0ea1028ade": "2026-10-27T15:28:43.020978+00:00",
   "09a59aff65e18c61": "2026-10-27T15:28:43.020978+00:00",
-  "f5ceaab9a335ff39": "2026-10-27T15:38:43.102626+00:00"
+  "f5ceaab9a335ff39": "2026-10-27T15:38:43.102626+00:00",
+  "908c534e462dbf27": "2026-10-27T15:43:43.112646+00:00",
+  "960575cb1d3770a0": "2026-10-27T15:48:42.952993+00:00",
+  "f2b6fcc890f517f2": "2026-10-27T15:48:42.952993+00:00"
  },
  "recent": [
-  {
-   "title": "‘Total Meltdown’ in Riskiest Debt Unnerves Market: Credit Weekly",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-24/-total-meltdown-in-riskiest-debt-unnerves-market-credit-weekly",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-24T15:40:19.675764+00:00",
-   "title_ru": "«Полный обвал» на самом рискованном рынке долговых обязательств: Credit Weekly",
-   "lead": "It was a panicked message from a colleague that woke fund manager Ivelina Green at 5 a.m. on Thursday morning in New York: “Total meltdown.”",
-   "lead_ru": "Это было паническое сообщение от коллеги, которая разбудила управляющую фондом Ивелину Грин в 5 часов утра в четверг в Нью-Йорке: «Полный крах»."
-  },
   {
    "title": "UAE's Ras Al Khaimah shuts all beaches as neighbours grapple with oil spill",
    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPeDMwaHJxZFNJTlFkYnB5UDY2SEdRcnRvdGRMSUNDR0I3cmhHT0xkTHQ4QjR5d241bnMtTm44UFIzdTZJYUJwcXZTcVFwN2FSVm80aTBWNmpXQVhrSTdtMnZHbWJiZTV1WFl1cGVyOHlJSmZ2d3gxZ0ZpTkpVOW0xTWFrNEFlTDczUGY1TVl0SmVKSVQ5cnN3S2NhU2dwZGZuYldJZDB3WWpaQTYzQ1RQeUdqNS1acnNqY002emRQMHV0TFU?oc=5",
@@ -6470,6 +6460,34 @@
    ],
    "score": 1,
    "ts": "2026-10-27T15:38:43.102626+00:00"
+  },
+  {
+   "title": "Pork Slump Worsens as High Gas Prices Curb Road Trip Pit Stops",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-27/pork-slump-worsens-as-high-gas-prices-curb-road-trip-pit-stops",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T15:48:42.952993+00:00",
+   "title_ru": "Снижение спроса на свинину ухудшается, поскольку высокие цены на бензин ограничивают количество пит-стопов в поездках",
+   "lead": "The US pork industry, already struggling with weak demand, is facing another blow: high gasoline prices.",
+   "lead_ru": "Свиноводство США, уже борющееся со слабым спросом, сталкивается с еще одним ударом: высокими ценами на бензин.",
+   "tags": [
+    "gas"
+   ]
+  },
+  {
+   "title": "Gold smuggling funds Islamic State-linked insurgency in eastern Congo, report says",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNMnhvbmdWV1pFaFhQNzVCM0JidlBvYTVSd2ppOENPdjVxT2tYcFA2c1ZjR2FIQ0I5VGtVUmo1SHBXWGJtRFhSXzdWd0Q0bjFLU0ZhdUxzb0pGSWRINFZYWUxmWFhERV9GMHA5SXN5WDQ5WVhPTHVVNmVfU2U3RDJJTC1WYVBFRGx3ZHVHMW41SnpsR0hkVGhUYkF0UGdfV0JsSVFBYUpsMDR5ZnNRV29Lb0h6bEthakZXSHpULURjZk1VNllvRWc?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T15:48:42.952993+00:00",
+   "title_ru": "Контрабанда золота финансирует связанное с «Исламским государством» повстанческое движение на востоке Конго, говорится в докладе",
+   "tags": [
+    "gold"
+   ]
   }
  ],
  "last_digest": "2026-10-26",
@@ -12885,8 +12903,11 @@
   "checked": "2026-10-27T14:58:43.003601+00:00",
   "sec_seen": [
    "0001628280-26-067469",
+   "0000947871-26-000956",
    "0000947871-26-000953",
    "0000947871-26-000951",
+   "0000912282-26-001404",
+   "0000947871-26-000957",
    "0000947871-26-000954",
    "0000947871-26-000955",
    "0000947871-26-000952"
