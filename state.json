@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "9a5560ba7dce5032": "2026-10-24T11:14:23.633131+00:00",
   "ddb691ca224114af": "2026-10-24T11:29:23.560486+00:00",
   "9d17ba6bfea97cc5": "2026-10-24T11:34:23.578657+00:00",
   "76549b9797a07294": "2026-10-24T11:44:23.540199+00:00",
@@ -677,24 +676,12 @@
   "5158a546adaf3198": "2026-10-27T10:58:09.308573+00:00",
   "351c0f15816e43d0": "2026-10-27T11:03:09.273253+00:00",
   "f0cead1d57ca0bca": "2026-10-27T11:08:09.276998+00:00",
-  "43e5a57aaa490b41": "2026-10-27T11:13:09.326711+00:00"
+  "43e5a57aaa490b41": "2026-10-27T11:13:09.326711+00:00",
+  "c0d57585183229aa": "2026-10-27T11:18:09.282977+00:00",
+  "0f74a9aa9d7f9aa7": "2026-10-27T11:18:09.282977+00:00",
+  "22d7efabd70a945d": "2026-10-27T11:18:09.282977+00:00"
  },
  "recent": [
-  {
-   "title": "Barclays ‘House of Fixed Income’ Pins Future Growth on Equities",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-24/barclays-house-of-fixed-income-pins-future-growth-on-equities",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-24T11:14:23.633131+00:00",
-   "lead": "The house built by fixed income is facing an overhaul. Barclays Plc is showing it can do more for clients than trade bonds and arrange debt deals.",
-   "lead_ru": "Дом, построенный с фиксированным доходом, подвергается капитальному ремонту. Barclays Plc показывает, что может сделать для клиентов больше, чем торговые облигации и организация долговых сделок.",
-   "tags": [
-    "bonds",
-    "markets"
-   ]
-  },
   {
    "title": "‘Non-answers’ aren’t working. This is what investors really need from the Fed.",
    "link": "https://www.marketwatch.com/story/non-answers-arent-working-this-is-what-investors-really-need-from-the-fed-673a9dce?mod=mw_rss_topstories",
@@ -5729,6 +5716,39 @@
    "title_ru": "Фунту, возможно, придется заплатить цену за сдержанность британского бюджета",
    "lead": "The pound’s resilience faces a test from Britain’s upcoming budget if the government’s spending restraint comes at the cost of slower economic growth.",
    "lead_ru": "Устойчивость фунта подвергается испытанию со стороны предстоящего бюджета Великобритании, если ограничение расходов правительства происходит за счет замедления экономического роста."
+  },
+  {
+   "title": "Acts of God Meet Acts of AI in Private Equity’s New Debt Play",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-27/acts-of-god-meet-acts-of-ai-in-private-equity-s-new-debt-play",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T11:18:09.282977+00:00",
+   "title_ru": "Действия Бога встречаются с действиями ИИ в новой долговой игре частного капитала",
+   "lead": "Force majeure has long protected companies from acts of God. Now some borrowers want protection from acts of AI.",
+   "lead_ru": "Форс-мажорные обстоятельства уже давно защищают компании от стихийных бедствий. Теперь некоторые заемщики хотят защиты от действий ИИ."
+  },
+  {
+   "title": "RBI’s Gupta Says Emerging Markets Must Bolster Domestic Finances",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-27/rbi-s-gupta-says-emerging-markets-must-bolster-domestic-finances",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T11:18:09.282977+00:00",
+   "title_ru": "Гупта из RBI говорит, что развивающиеся рынки должны поддерживать внутренние финансы",
+   "lead": "Emerging markets, including India, need to strengthen their finances and build buffers against volatile foreign capital, Reserve Bank of India Deputy Governor Poonam Gupta said Tuesday.",
+   "lead_ru": "Развивающимся рынкам, включая Индию, необходимо укрепить свои финансы и создать буферы против волатильного иностранного капитала, заявил во вторник заместитель председателя Резервного банка Индии Пунам Гупта."
+  },
+  {
+   "title": "AI stocks haven’t played by the normal valuation rules. Now that rates are higher, they may have to, says UBS",
+   "link": "https://www.marketwatch.com/story/ai-stocks-havent-played-by-the-normal-valuation-rules-now-that-rates-are-higher-they-may-have-to-says-ubs-f8c78948?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-27T11:18:09.282977+00:00"
   }
  ],
  "last_digest": "2026-10-26",
@@ -5745,17 +5765,17 @@
   "CNBC": 0,
   "ФРС США": 0,
   "Bloomberg": 0,
-  "Reuters": 12,
+  "Reuters": 13,
   "MarketWatch": 0,
   "Банк Англии": 0,
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
   "Fed": 0,
-  "IMF": 12,
+  "IMF": 13,
   "Kommersant": 0,
   "RBC": 0,
-  "US Labor Statistics (BLS)": 12
+  "US Labor Statistics (BLS)": 13
  },
  "charts_sent": [
   "2026-10-17-21",
