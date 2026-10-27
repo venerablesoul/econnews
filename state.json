@@ -759,7 +759,9 @@
   "581f8d6e07fe269b": "2026-10-27T17:23:42.980948+00:00",
   "879a2f9e2dd3f878": "2026-10-27T17:28:43.009166+00:00",
   "1db7452a004fa418": "2026-10-27T17:44:41.181968+00:00",
-  "c3fdae2cf38eebcb": "2026-10-27T17:54:40.885096+00:00"
+  "c3fdae2cf38eebcb": "2026-10-27T17:54:40.885096+00:00",
+  "597b360868acb5b0": "2026-10-27T17:59:41.131163+00:00",
+  "477e7d5675a48398": "2026-10-27T17:59:41.131163+00:00"
  },
  "recent": [
   {
@@ -6593,6 +6595,27 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Konecta Gets Lender Forbearance to Negotiate Debt Restructuring",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-27/konecta-gets-lender-forbearance-to-negotiate-debt-restructuring",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T17:59:41.131163+00:00",
+   "title_ru": "Konecta добивается от кредиторов снисхождения для ведения переговоров о реструктуризации долга",
+   "lead": "Intermediate Capital Group-controlled Konecta has agreed some breathing room with a group of creditors as it negotiates a debt restructuring.",
+   "lead_ru": "Компания Konecta, контролируемая Intermediate Capital Group, согласовала некоторую передышку с группой кредиторов в ходе переговоров о реструктуризации долга."
+  },
+  {
+   "title": "‘CryptoDad’ on stablecoins, bitcoin’s role in a portfolio and why he does not directly own any crypto",
+   "link": "https://www.marketwatch.com/story/cryptodad-on-stablecoins-bitcoins-role-in-a-portfolio-and-why-he-does-not-directly-own-any-crypto-72472bc1?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-27T17:59:41.131163+00:00"
   }
  ],
  "last_digest": "2026-10-26",
@@ -13007,6 +13030,7 @@
   },
   "checked": "2026-10-27T17:03:43.133386+00:00",
   "sec_seen": [
+   "0001619964-26-000037",
    "0000006955-26-000097",
    "0000006955-26-000101",
    "0000006955-26-000093",
