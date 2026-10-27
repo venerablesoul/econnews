@@ -158,6 +158,7 @@ def tg(method, body=None):
 
 
 COMMANDS = [   # (command, English, Russian)
+    ("menu", "Main menu", "Главное меню"),
     ("news", "Top stories of the day", "Главные новости за сутки"),
     ("markets", "Markets now", "Рынки сейчас"),
     ("q", "Quotes: /q AAPL BTC oil", "Котировки: /q AAPL BTC нефть"),
@@ -225,9 +226,9 @@ def telegram():
                                            "company data, a watchlist, a portfolio and alerts. /lang ru — по-русски."})
     tg("setMyDescription", {"description": "Главные экономические новости и рынки: ставки ЦБ, инфляция, нефть, валюты, "
                                            "данные компаний, список, портфель и алерты.", "language_code": "ru"})
-    if pages.startswith("https://"):
-        tg("setChatMenuButton", {"menu_button": {"type": "web_app", "text": "Terminal",
-                                                 "web_app": {"url": pages + "terminal/"}}})
+    # the button next to the message field opens the command list with «Main menu» on top;
+    # the terminal lives in the main menu itself (the «🖥 Terminal» button)
+    tg("setChatMenuButton", {"menu_button": {"type": "commands"}})
     info = tg("getWebhookInfo").get("result") or {}
     if info.get("url") != url + "/tg":
         fail("The webhook was not set: " + json.dumps(info, ensure_ascii=False))
