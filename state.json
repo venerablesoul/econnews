@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "4d9d8233dcfdb17d": "2026-10-24T10:59:23.606303+00:00",
   "9a5560ba7dce5032": "2026-10-24T11:14:23.633131+00:00",
   "ddb691ca224114af": "2026-10-24T11:29:23.560486+00:00",
   "9d17ba6bfea97cc5": "2026-10-24T11:34:23.578657+00:00",
@@ -675,19 +674,10 @@
   "8ce1a1ad86acab2a": "2026-10-27T10:48:09.247293+00:00",
   "b8c4260386d77fec": "2026-10-27T10:53:09.255229+00:00",
   "5f10190e782e392a": "2026-10-27T10:53:09.255229+00:00",
-  "5158a546adaf3198": "2026-10-27T10:58:09.308573+00:00"
+  "5158a546adaf3198": "2026-10-27T10:58:09.308573+00:00",
+  "351c0f15816e43d0": "2026-10-27T11:03:09.273253+00:00"
  },
  "recent": [
-  {
-   "title": "Indonesia cuts pipeline gas exports to Singapore by about 9%",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNMVVkTFlZc0hWcDVneTJjckZnXy1kYjhtX1BYaUlZR1JwTlBJMTRzbU1jWm1yQTVqQUZ5Rl92QndOdk1wTFhoUVZUTHU5NTQ1WjFXd1YwcHJZb21JWEw1MmJVUlZRTDc2VTEzU0VyNlVIeXN2cUNOVWlKV3h3dm9Ud21RQU9ZbmdnU2lFaVU5SDMyUG9pcEI5aGF1NEo1TGZCUkxuUjQ2YjdQX0Vj?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-24T10:59:23.606303+00:00",
-   "title_ru": "Индонезия сократила экспорт трубопроводного газа в Сингапур примерно на 9%"
-  },
   {
    "title": "Barclays ‘House of Fixed Income’ Pins Future Growth on Equities",
    "link": "https://www.bloomberg.com/news/articles/2026-10-24/barclays-house-of-fixed-income-pins-future-growth-on-equities",
@@ -5700,6 +5690,22 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "AI debt trouble could help Fed’s Warsh get his way with fewer rate hikes",
+   "link": "https://www.marketwatch.com/story/ai-debt-trouble-could-help-feds-warsh-get-his-way-with-fewer-rate-hikes-b3dc4525?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 5,
+   "ts": "2026-10-27T11:03:09.273253+00:00",
+   "title_ru": "Проблемы с задолженностью ИИ могут помочь Уоршу из ФРС добиться своего с меньшим повышением ставок",
+   "lead": "AI financing has been harder and more expensive to come by as the capital-spending boom comes under more scrutiny.",
+   "lead_ru": "Финансирование ИИ стало сложнее и дороже, поскольку бум капиталовложений подвергается более тщательному анализу.",
+   "tags": [
+    "Fed",
+    "rates"
+   ]
   }
  ],
  "last_digest": "2026-10-26",
@@ -5716,17 +5722,17 @@
   "CNBC": 0,
   "ФРС США": 0,
   "Bloomberg": 0,
-  "Reuters": 9,
+  "Reuters": 10,
   "MarketWatch": 0,
   "Банк Англии": 0,
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
   "Fed": 0,
-  "IMF": 9,
+  "IMF": 10,
   "Kommersant": 0,
   "RBC": 0,
-  "US Labor Statistics (BLS)": 9
+  "US Labor Statistics (BLS)": 10
  },
  "charts_sent": [
   "2026-10-17-21",
@@ -12125,7 +12131,6 @@
    "0001562495-26-000004",
    "0001981856-26-000005",
    "0001193125-26-432346",
-   "0001193125-26-432344",
    "0000950142-26-002856",
    "0001193125-26-432345",
    "0001072613-26-000839",
@@ -12136,6 +12141,8 @@
    "0000950142-26-002859",
    "0000905148-26-004561",
    "0000909832-26-000120",
+   "0001437749-26-033560",
+   "0001437749-26-033559",
    "0001501399-26-000005",
    "0001776729-26-000001",
    "0001579561-26-000006",
