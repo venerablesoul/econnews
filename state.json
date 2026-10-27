@@ -8968,6 +8968,38 @@
    },
    {
     "src": "sec",
+    "id": "50d68c76fb6d6778",
+    "ticker": "ALLE",
+    "company": "Allegion plc",
+    "who": "Timothy P Eckersley",
+    "role": "President",
+    "type": "sell",
+    "value": 1136738,
+    "shares": 6364,
+    "price": 178.62,
+    "plan": false,
+    "date": "2026-10-26",
+    "disclosed": "2026-10-27",
+    "link": "https://www.sec.gov/Archives/edgar/data/1589039/000158903926000016/0001589039-26-000016-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "a4a4943355e586d9",
+    "ticker": "ALLE",
+    "company": "Allegion plc",
+    "who": "Tracy L Kemp",
+    "role": "SVP-Chief Info. & Digital Ofr",
+    "type": "sell",
+    "value": 799080,
+    "shares": 4469,
+    "price": 178.81,
+    "plan": false,
+    "date": "2026-10-26",
+    "disclosed": "2026-10-27",
+    "link": "https://www.sec.gov/Archives/edgar/data/1634144/000163414426000011/0001634144-26-000011-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "f4a3e1020db08fec",
     "ticker": "PLUR",
     "company": "Pluri Inc.",
@@ -12917,38 +12949,6 @@
     "date": "2026-10-15",
     "disclosed": "2026-10-19",
     "link": "https://www.sec.gov/Archives/edgar/data/2128469/000212846926000009/0002128469-26-000009-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "2aeaade737e943f5",
-    "ticker": "ROKU",
-    "company": "ROKU, INC",
-    "who": "Dan Jedda",
-    "role": "CFO",
-    "type": "sell",
-    "value": 1069880,
-    "shares": 7000,
-    "price": 152.84,
-    "plan": true,
-    "date": "2026-10-15",
-    "disclosed": "2026-10-19",
-    "link": "https://www.sec.gov/Archives/edgar/data/1834902/000183490226000026/0001834902-26-000026-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "708bed77fff05b47",
-    "ticker": "PD",
-    "company": "PagerDuty, Inc.",
-    "who": "Jennifer Tejada",
-    "role": "Chair",
-    "type": "sell",
-    "value": 986988,
-    "shares": 57500,
-    "price": 17.16,
-    "plan": true,
-    "date": "2026-10-15",
-    "disclosed": "2026-10-19",
-    "link": "https://www.sec.gov/Archives/edgar/data/1736979/000173697926000023/0001736979-26-000023-index.htm"
    }
   ],
   "docs": {
@@ -12981,8 +12981,11 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-27T15:58:43.030029+00:00",
+  "checked": "2026-10-27T17:03:43.133386+00:00",
   "sec_seen": [
+   "0001589039-26-000016",
+   "0001634144-26-000011",
+   "0000318300-26-000238",
    "0001510281-26-000378"
   ],
   "errors": {
