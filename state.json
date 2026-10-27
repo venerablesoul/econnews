@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e951fa22fc6e54ce": "2026-10-24T06:58:55.373372+00:00",
   "c7ae34fd8bc24510": "2026-10-24T07:18:55.361678+00:00",
   "d5cf3c527fba997c": "2026-10-24T08:03:55.439947+00:00",
   "fc3d2bc85935e42d": "2026-10-24T09:03:55.383267+00:00",
@@ -642,7 +641,9 @@
   "3fed3fc31860b570": "2026-10-27T06:42:36.861470+00:00",
   "b2bc7b404cf954c0": "2026-10-27T06:47:36.860083+00:00",
   "7dd3ea067e14d6aa": "2026-10-27T06:48:13.211549+00:00",
-  "d1b46a9b0f3a0d43": "2026-10-27T06:53:09.254698+00:00"
+  "d1b46a9b0f3a0d43": "2026-10-27T06:53:09.254698+00:00",
+  "4730ddb587d46283": "2026-10-27T07:03:09.308121+00:00",
+  "ed678ed563e55c28": "2026-10-27T07:03:09.308121+00:00"
  },
  "recent": [
   {
@@ -5248,6 +5249,33 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Indonesia 10-Year Yield at Four-Year High on MSCI Risk, Oil",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-27/indonesia-10-year-yield-at-four-year-high-on-msci-risk-oil",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-27T07:03:09.308121+00:00",
+   "title_ru": "Индонезия 10-летняя доходность на уровне четырехлетнего максимума по риску MSCI, нефть",
+   "lead": "Indonesia’s 10-year government bond yield climbed to a four-year high and the rupiah fell toward a record low as elevated oil prices and the MSCI Inc. threat of a stocks downgrade hurt investor sentiment.",
+   "lead_ru": "Доходность 10-летних государственных облигаций Индонезии выросла до четырехлетнего максимума, а рупия упала до рекордно низкого уровня, поскольку повышенные цены на нефть и угроза MSCI Inc. снижения рейтинга акций повредили настроениям инвесторов.",
+   "tags": [
+    "oil",
+    "bonds",
+    "markets"
+   ]
+  },
+  {
+   "title": "Ferretti cuts guidance again as uncertain environment slows yacht market",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQckd2ODZxNGZ6NVVGM09Ca0VvOWpfRGpVRkhvTjJYY2NUZ0FvTlk5MUVuWmRpc2k0LVdheUZBZUNHVkRwZ1FuR1NRbWJsWkdpdEhMemNpZTNKZlNWTm8zVU1RMGJYcGluNjByeWgwWkhENEVNZW56YVZPMXdIb040X1RvUVEyTHlnZXZ4MVl3NmNHRXNjVTNsbHQyM3pGV3E0ZDVocS0zRjJsdlA1WGxCZV9neng?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T07:03:09.308121+00:00",
+   "title_ru": "Ferretti снова сокращает руководство, поскольку неопределенная обстановка замедляет рынок яхт"
   }
  ],
  "last_digest": "2026-10-26",
