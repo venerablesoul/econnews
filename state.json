@@ -675,7 +675,9 @@
   "b8c4260386d77fec": "2026-10-27T10:53:09.255229+00:00",
   "5f10190e782e392a": "2026-10-27T10:53:09.255229+00:00",
   "5158a546adaf3198": "2026-10-27T10:58:09.308573+00:00",
-  "351c0f15816e43d0": "2026-10-27T11:03:09.273253+00:00"
+  "351c0f15816e43d0": "2026-10-27T11:03:09.273253+00:00",
+  "f0cead1d57ca0bca": "2026-10-27T11:08:09.276998+00:00",
+  "43e5a57aaa490b41": "2026-10-27T11:13:09.326711+00:00"
  },
  "recent": [
   {
@@ -5706,6 +5708,27 @@
     "Fed",
     "rates"
    ]
+  },
+  {
+   "title": "SoFi’s stock climbs as lending surge drives an earnings beat and rosy outlook",
+   "link": "https://www.marketwatch.com/story/sofis-stock-climbs-as-lending-surge-drives-an-earnings-beat-and-rosy-outlook-0c978535?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 2,
+   "ts": "2026-10-27T11:08:09.276998+00:00"
+  },
+  {
+   "title": "Pound May Have to Pay the Price for Britain’s Budget Restraint",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-27/pound-may-have-to-pay-the-price-for-britain-s-budget-restraint",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T11:13:09.326711+00:00",
+   "title_ru": "Фунту, возможно, придется заплатить цену за сдержанность британского бюджета",
+   "lead": "The pound’s resilience faces a test from Britain’s upcoming budget if the government’s spending restraint comes at the cost of slower economic growth.",
+   "lead_ru": "Устойчивость фунта подвергается испытанию со стороны предстоящего бюджета Великобритании, если ограничение расходов правительства происходит за счет замедления экономического роста."
   }
  ],
  "last_digest": "2026-10-26",
@@ -5722,17 +5745,17 @@
   "CNBC": 0,
   "ФРС США": 0,
   "Bloomberg": 0,
-  "Reuters": 10,
+  "Reuters": 12,
   "MarketWatch": 0,
   "Банк Англии": 0,
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
   "Fed": 0,
-  "IMF": 10,
+  "IMF": 12,
   "Kommersant": 0,
   "RBC": 0,
-  "US Labor Statistics (BLS)": 10
+  "US Labor Statistics (BLS)": 12
  },
  "charts_sent": [
   "2026-10-17-21",
