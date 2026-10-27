@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "06657573b8574874": "2026-10-24T18:05:19.707462+00:00",
   "ffaaab5841015924": "2026-10-24T18:35:19.708997+00:00",
   "b846f0d85940c54c": "2026-10-24T18:50:19.676752+00:00",
   "08bf1e4a242da643": "2026-10-24T19:35:19.725270+00:00",
@@ -763,19 +762,10 @@
   "597b360868acb5b0": "2026-10-27T17:59:41.131163+00:00",
   "477e7d5675a48398": "2026-10-27T17:59:41.131163+00:00",
   "9b385517a2ad1e94": "2026-10-27T18:04:41.217616+00:00",
-  "0612be3be59c08ed": "2026-10-27T18:04:41.217616+00:00"
+  "0612be3be59c08ed": "2026-10-27T18:04:41.217616+00:00",
+  "9bb17a443b8db52d": "2026-10-27T18:09:40.893446+00:00"
  },
  "recent": [
-  {
-   "title": "- IMF eLibrary",
-   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE16ZjVFS1JuV05mc1laTHFWbzVKTnR1OEVtUXBPbmQ4amhoR1R1Y0Jwbmo2VWt2VlVYMElSU1RGTzh6UVc4RTdEcEx3RlQwekdVcWhHTGhOMjJlSGtwS1hHcWxLcw?oc=5",
-   "sources": [
-    "IMF"
-   ],
-   "score": 5,
-   "ts": "2026-10-24T18:05:19.707462+00:00",
-   "title_ru": "- Электронная библиотека МВФ"
-  },
   {
    "title": "Albanian police fire tear gas as anti-government student protests turn violent",
    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOX21BMWozRzgtZFdWcVVVc3o5dHh3bUIzSzZjcTdZTnNzcFdXN2lVYVpXTmY0OHB0UWdFbjdmQ0FKV0hxOVUxeVJGNEhxTGdhQW9tZWtuTGoxTDNKZWplYjBkLWd4Q2sxdlhXdElFaVo1a0pWbm9walRONWoxRVZCU2VFTEUwMlZfNEZZeWpsVGJPMnF6MW9ZNW11WHlKRGEtVjNoRlFsMTIxT0pvQkU5UnRhT3RxTThD?oc=5",
@@ -6678,7 +6668,7 @@
   "2026-10-27-21"
  ],
  "calendar": {
-  "fetched": "2026-10-27T12:08:09.368068+00:00",
+  "fetched": "2026-10-27T18:09:40.893446+00:00",
   "events": [
    {
     "title": "Bank Holiday",
@@ -6989,7 +6979,7 @@
     "country": "USD",
     "ts": "2026-10-28T14:30:00+00:00",
     "impact": "Low",
-    "forecast": "-0.3M",
+    "forecast": "-0.1M",
     "previous": "-3.1M"
    },
    {
@@ -13044,9 +13034,9 @@
    "0001619964-26-000037",
    "0000006955-26-000097",
    "0000006955-26-000101",
-   "0000006955-26-000093",
    "0000006955-26-000095",
    "0000006955-26-000103",
+   "0001940272-26-000028",
    "0000006955-26-000099",
    "0000006955-26-000105"
   ],
