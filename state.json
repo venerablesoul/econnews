@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "ddb691ca224114af": "2026-10-24T11:29:23.560486+00:00",
   "9d17ba6bfea97cc5": "2026-10-24T11:34:23.578657+00:00",
   "76549b9797a07294": "2026-10-24T11:44:23.540199+00:00",
   "515ff6eaf7b5d4f9": "2026-10-24T12:09:23.575661+00:00",
@@ -5782,17 +5781,17 @@
   "CNBC": 0,
   "ФРС США": 0,
   "Bloomberg": 0,
-  "Reuters": 14,
+  "Reuters": 16,
   "MarketWatch": 0,
   "Банк Англии": 0,
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
   "Fed": 0,
-  "IMF": 14,
+  "IMF": 16,
   "Kommersant": 0,
   "RBC": 0,
-  "US Labor Statistics (BLS)": 14
+  "US Labor Statistics (BLS)": 16
  },
  "charts_sent": [
   "2026-10-17-21",
@@ -8147,6 +8146,22 @@
    }
   ],
   "insiders": [
+   {
+    "src": "sec",
+    "id": "742e477b33b9d3c1",
+    "ticker": "API",
+    "company": "Agora, Inc.",
+    "who": "Bin Zhao",
+    "role": "CEO",
+    "type": "buy",
+    "value": 78084,
+    "shares": 17598,
+    "price": 4.44,
+    "plan": true,
+    "date": "2026-10-26",
+    "disclosed": "2026-10-27",
+    "link": "https://www.sec.gov/Archives/edgar/data/1843236/000119312526432685/0001193125-26-432685-index.htm"
+   },
    {
     "src": "sec",
     "id": "f4a3e1020db08fec",
@@ -12130,22 +12145,6 @@
     "date": "2026-10-15",
     "disclosed": "2026-10-19",
     "link": "https://www.sec.gov/Archives/edgar/data/1736979/000173697926000023/0001736979-26-000023-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "86a650ba63cadf4c",
-    "ticker": "RCAT",
-    "company": "Red Cat Holdings, Inc.",
-    "who": "Jeffrey M Thompson",
-    "role": "CEO",
-    "type": "sell",
-    "value": 676500,
-    "shares": 150000,
-    "price": 4.51,
-    "plan": true,
-    "date": "2026-10-15",
-    "disclosed": "2026-10-19",
-    "link": "https://www.sec.gov/Archives/edgar/data/1397565/000162828026066340/0001628280-26-066340-index.htm"
    }
   ],
   "docs": {
@@ -12186,13 +12185,13 @@
    "0000909832-26-000124",
    "0001969055-26-000007",
    "0001493152-26-048607",
+   "0001193125-26-432685",
    "0000950142-26-002854",
    "0000950142-26-002858",
    "0001562495-26-000004",
    "0001981856-26-000005",
    "0001193125-26-432346",
    "0000950142-26-002856",
-   "0001193125-26-432345",
    "0001072613-26-000839",
    "0001072613-26-000840",
    "0001035422-26-000018",
