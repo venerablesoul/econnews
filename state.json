@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "5c966f9cfd30277c": "2026-10-24T04:08:26.748587+00:00",
-  "66adc73f3a49d100": "2026-10-24T04:08:26.748587+00:00",
   "996ee4c1f8d1d321": "2026-10-24T04:19:00.387165+00:00",
   "d4573db42d171ffa": "2026-10-24T04:38:55.367358+00:00",
   "23d46987719eb79b": "2026-10-24T06:03:55.368268+00:00",
@@ -610,29 +608,10 @@
   "51511603c12b50bb": "2026-10-27T03:12:36.914268+00:00",
   "d268709fca5747c9": "2026-10-27T03:37:36.889633+00:00",
   "532d954e856135ac": "2026-10-27T03:42:36.865177+00:00",
-  "82ad20da6aec1b86": "2026-10-27T03:57:36.849758+00:00"
+  "82ad20da6aec1b86": "2026-10-27T03:57:36.849758+00:00",
+  "9a23e5d700e24f41": "2026-10-27T04:17:36.870574+00:00"
  },
  "recent": [
-  {
-   "title": "The EU’s Energy Transition and Fuel Price Shocks",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNME9ZR2JueHJEZXF2YkJ2dEFHV0xGNmo5TmtqWFRzUDF0UkFsaGtXdzVXT21RZUJ1VW5wdGJ4Q0hOUmxjZF8yQUVMam9kX3RkX05kdDBpR1V0TzJTdUdGcmFVOXlmMVJpbDVoSGs1RDhPX3VYOHVNaFJZVkpGS1NWOXJvWUpROWdUSTJ2LXpPbzRsLTUyblpUTk1KU3p2YlN2eHh0Mi04YVdmWFRVY1VoYw?oc=5",
-   "sources": [
-    "IMF"
-   ],
-   "score": 4,
-   "ts": "2026-10-24T04:08:26.748587+00:00",
-   "title_ru": "Энергетический переход ЕС и шоки цен на топливо"
-  },
-  {
-   "title": "Rethinking Zombie Firms: From Volatility to Viability",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPWDFsd19rOUpIRGRKRnU4cDNtbjRsaVpXem1jd0lPbHFMVE5FdlRKRmF2NE9OR3RRYlR2VzFCMjRkejhad2tWdldpYnVyLW10SlY5VUMyX252V1RwZEg0V1ZVWE5nUllwQmI1NFhVcDI4Y0t0a3VmTkx5bi1sMk02UWNGZG5XRjFVM0NuT1UxYWozWXNmY0s0eTIzck5pLUs2aUhFS0xGWm9oTkYxbllzTE1Jc0tWaU0?oc=5",
-   "sources": [
-    "IMF"
-   ],
-   "score": 4,
-   "ts": "2026-10-24T04:08:26.748587+00:00",
-   "title_ru": "Переосмысление фирм-зомби: от волатильности к жизнеспособности"
-  },
   {
    "title": "World Economic Outlook (October 2026) - General government net lending/borrowing",
    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE42UXRvUFNzT1BvWlVmSUs0T19La0lNSG9waFRYMGpLdzRDYjBiYXYxMjd2eXFqdUNGM3owVTMzQlYtRVBuM3pnd0Z0OTlRU1k0V1pXdmNEMmZfd2dmcVdkaWZtSm14SkJUa2tB?oc=5",
@@ -4877,6 +4856,21 @@
    "lead_ru": "Индонезия неожиданно нарушила свои отношения с соседним Сингапуром после того, как в конце октября объявила, что сократит экспорт природного газа в город-государство.",
    "tags": [
     "gas"
+   ]
+  },
+  {
+   "title": "HSBC Announces $1 Billion Buyback After Profit Growth Misses",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-27/hsbc-1-billion-buyback-third-quarter-earnings-profit-growth-misses-estimates",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T04:17:36.870574+00:00",
+   "title_ru": "HSBC объявляет о выкупе $ 1 млрд после промаха роста прибыли",
+   "lead": "HSBC Holdings Plc said it would buy back shares worth $1 billion as it reported third-quarter earnings that fell short of estimates.",
+   "lead_ru": "HSBC Holdings Plc заявила, что выкупит акции на сумму $ 1 млрд, поскольку она сообщила о прибыли в третьем квартале, которая не соответствовала оценкам.",
+   "tags": [
+    "markets"
    ]
   }
  ],
