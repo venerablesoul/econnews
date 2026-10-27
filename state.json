@@ -616,7 +616,11 @@
   "e92edf741a9039e3": "2026-10-27T05:07:36.873271+00:00",
   "d26a219b7c477a5b": "2026-10-27T05:12:36.887435+00:00",
   "cb07db8d8210949f": "2026-10-27T05:12:36.887435+00:00",
-  "883d00bb49f770ae": "2026-10-27T05:27:36.875649+00:00"
+  "883d00bb49f770ae": "2026-10-27T05:27:36.875649+00:00",
+  "62acc6ea8e43d507": "2026-10-27T05:32:36.918660+00:00",
+  "fa795c44a1b63929": "2026-10-27T05:32:36.918660+00:00",
+  "3d1cf30e3aa3295c": "2026-10-27T05:32:36.918660+00:00",
+  "6d800311fc9ff836": "2026-10-27T05:32:36.918660+00:00"
  },
  "recent": [
   {
@@ -4947,6 +4951,52 @@
    "score": 3,
    "ts": "2026-10-27T05:27:36.875649+00:00",
    "title_ru": "Банк Кореи предупреждает, что экспорт чипов страны может упасть до 100 миллиардов долларов, если расходы на ИИ замедлятся"
+  },
+  {
+   "title": "Investors expect Brazilian stocks to fall after Lula re-elected",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5WcU8tSzBPT2ZkclRpNDdCWGNsVWpPMFFwVnhBTUJBd0VRUnFYemdnajdPM2tqZnNraWExc2FaZXJ5V2xCaUJVaXVLMUFIQkljVVpZMGVCMG1IRGo4Z3NDMDB5NTE5bEE?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-27T05:32:36.918660+00:00",
+   "title_ru": "Инвесторы ожидают падения бразильских акций после переизбрания Лулы",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "How rising building costs hold back Britain's growth",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5sMzVheW9IUlRiYUo4blpyZXVSdjJHcmMwYWxINWdPZzNhd1NVeU1ZNDc0ZEdISlVUSHA1SmhidndFNHhVMjI2Q00yNG84X1RoSXV5SkNWdmMwa3JvbHhBdnktZE1NWEE?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T05:32:36.918660+00:00",
+   "title_ru": "Как рост стоимости строительства сдерживает рост Великобритании"
+  },
+  {
+   "title": "US stocks end higher as Anthropic's IPO filing buoys AI stocks",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9Rc1dUclA2M1BONXVBekQtQUNPblBuWl9IYktac3RJWDdWeE9yQ2ZkMzRoejNzNFFnT2R5ZXBpYkRvQm10YU9RSTVkWWtoUU5jZWxaSUs2S0JTT29vYmRlbXJXdTVaQTQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T05:32:36.918660+00:00",
+   "title_ru": "Акции США закрылись ростом, поскольку подача заявки Anthropic на IPO поддерживает акции AI",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "Anthropic's IPO filing: mounting risks, steep losses and staggering growth",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBtU2JRZlNkRFNSRjBleEhEcWtic0dZY2I5M0ZHUE96S1l4ODktUExRUzRGbmQ1RFMwOU1pQVhpcU5YZlBINi1GVFJoQzhfdmVvSTlKMTE0U0EzckJfdFdLNm50b1ZnbFE?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T05:32:36.918660+00:00",
+   "title_ru": "Подача заявки Anthropic на IPO: растущие риски, огромные убытки и ошеломляющий рост"
   }
  ],
  "last_digest": "2026-10-26",
@@ -11359,7 +11409,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-27T04:27:36.985190+00:00",
+  "checked": "2026-10-27T05:32:36.918660+00:00",
   "sec_seen": [
    "0001422304-26-000005",
    "0001628280-26-067363",
@@ -11411,7 +11461,8 @@
    "0000909832-26-000123"
   ],
   "errors": {
-   "senate": "HTTPError: HTTP Error 403: Forbidden"
+   "senate": "HTTPError: HTTP Error 403: Forbidden",
+   "sec": "TimeoutError: The read operation timed out"
   }
  },
  "cal_actuals": {}
