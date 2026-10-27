@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "dc0f411870ad50a6": "2026-10-24T09:59:23.512211+00:00",
   "f4bfe123f53bac14": "2026-10-24T10:09:23.587716+00:00",
   "b5a8bf0780f7a4c8": "2026-10-24T10:19:23.569375+00:00",
   "199e7c4d329f3e34": "2026-10-24T10:19:23.569375+00:00",
@@ -674,22 +673,10 @@
   "0929b06118987ed6": "2026-10-27T09:48:09.257280+00:00",
   "1806dfa4cadc8a6b": "2026-10-27T09:53:09.324419+00:00",
   "4606b04e0c415d0d": "2026-10-27T09:53:09.324419+00:00",
-  "c0e21091e1b87d61": "2026-10-27T09:58:09.256702+00:00"
+  "c0e21091e1b87d61": "2026-10-27T09:58:09.256702+00:00",
+  "f799fc16289facdf": "2026-10-27T10:08:09.305870+00:00"
  },
  "recent": [
-  {
-   "title": "Andy Burnham Tests Labour Loyalty With Budget Built for Bond Market",
-   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQTjlMbGpqOHdpeFhGVjMyT3p3MWhDNThqRm9NcGI2WW93SkdBZjdfLVE2QjNMenFlNlRoTlBLU0hWMy02ZE9rZS1JbDAtSkZTYmhXUS1CLUxNUHpGcVhEb1JkUnY0WE9sWldZRm02bWRtUDNIUlRGMy02QkV1LUtlTUo5VE1xaWJMOHV5QU0xenR6eTFWdDc2QVdLZUg3dGQ5bVIzRXRhMmJDaC1zcGtBbnlnQ0JVNjVwemc?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-24T09:59:23.512211+00:00",
-   "title_ru": "Энди Бернем проверяет трудовую лояльность с помощью бюджета, созданного для рынка облигаций",
-   "tags": [
-    "bonds"
-   ]
-  },
   {
    "title": "Beauty giants target 'Ozempic face' as boom in obesity drugs opens new market",
    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQVzBscFc1bVNobHJsZmJJNHE4dmlON3Viekp4ZDd1R2QwdlZaZkZJc1QyTW9aQmhnOGxmUW14NnFWbFlkSWVDbkJiRjdzdjhLODlSMmd1T2hETGxfbXRnaFo2NFE5UG5vbVNWZ21Zd0tWTDM2NExxaVI4bU5zNTlrbHM2dmhiT1ZOVkwzWVItdHlYeTFESEFSMVRla0hPUzFueUdGVl80NS1IbHJlQWhsakRqN0lsbjF3cF9TODFrMA?oc=5",
@@ -5651,6 +5638,15 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "Customers are chasing higher-rate products, and that’s bad news for banks like HSBC",
+   "link": "https://www.marketwatch.com/story/customers-are-chasing-higher-rate-products-and-thats-bad-news-for-banks-like-hsbc-3a6ec793?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-27T10:08:09.305870+00:00"
   }
  ],
  "last_digest": "2026-10-26",
@@ -8032,6 +8028,22 @@
    }
   ],
   "insiders": [
+   {
+    "src": "sec",
+    "id": "f4a3e1020db08fec",
+    "ticker": "PLUR",
+    "company": "Pluri Inc.",
+    "who": "Alexandre Weinstein Manieu",
+    "role": "Director, 10% owner",
+    "type": "buy",
+    "value": 1250001,
+    "shares": 833334,
+    "price": 1.5,
+    "plan": false,
+    "date": "2026-10-23",
+    "disclosed": "2026-10-27",
+    "link": "https://www.sec.gov/Archives/edgar/data/1833124/000121390026112641/0001213900-26-112641-index.htm"
+   },
    {
     "src": "sec",
     "id": "ab7e20dd66db173e",
@@ -12015,22 +12027,6 @@
     "date": "2026-10-15",
     "disclosed": "2026-10-19",
     "link": "https://www.sec.gov/Archives/edgar/data/1397565/000162828026066340/0001628280-26-066340-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "3d2e33af56466848",
-    "ticker": "W",
-    "company": "Wayfair Inc.",
-    "who": "Steven Conine",
-    "role": "Director",
-    "type": "sell",
-    "value": 13016728,
-    "shares": 117000,
-    "price": 111.25,
-    "plan": true,
-    "date": "2026-10-15",
-    "disclosed": "2026-10-19",
-    "link": "https://www.sec.gov/Archives/edgar/data/1620052/000161670726000176/0001616707-26-000176-index.htm"
    }
   ],
   "docs": {
@@ -12069,50 +12065,40 @@
    "0000950142-26-002861",
    "0000950142-26-002857",
    "0000909832-26-000124",
+   "0001969055-26-000007",
    "0001493152-26-048607",
-   "0002010805-26-000007",
    "0000950142-26-002854",
    "0000950142-26-002858",
+   "0001562495-26-000004",
+   "0001981856-26-000005",
    "0001193125-26-432346",
    "0001193125-26-432344",
    "0000950142-26-002856",
    "0001193125-26-432345",
-   "0001379344-26-000011",
    "0001035422-26-000018",
    "0001104659-26-118926",
-   "0001628280-26-067365",
+   "0001193125-26-432556",
    "0001493152-26-048603",
    "0001944970-26-000031",
    "0000950142-26-002859",
    "0000905148-26-004561",
-   "0001780664-26-000045",
-   "0000909832-26-000121",
-   "0001554855-26-002194",
    "0000909832-26-000120",
-   "0001193125-26-432280",
    "0001193125-26-432339",
-   "0002159565-26-000005",
-   "0001628280-26-067363",
+   "0001501399-26-000005",
    "0001776729-26-000001",
-   "0001193125-26-432288",
+   "0001579561-26-000006",
    "0001193125-26-432335",
-   "0001137789-26-000297",
-   "0002159567-26-000005",
    "0000909832-26-000125",
-   "0001750495-26-000007",
+   "0000950103-26-016189",
+   "0000909832-26-000122",
    "0001493152-26-048621",
    "0000950142-26-002860",
-   "0000950103-26-016189",
    "0001193125-26-432338",
-   "0000909832-26-000122",
    "0000950142-26-002855",
    "0000909832-26-000123",
-   "0002050422-26-000017",
    "0001213900-26-112619",
-   "0001213900-26-112593",
-   "0001182471-26-000007",
-   "0001422304-26-000005",
-   "0001628280-26-067362"
+   "0000909832-26-000121",
+   "0001213900-26-112641"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
