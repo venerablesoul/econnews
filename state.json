@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "88ce2c9ba99c11fb": "2026-10-24T17:45:19.739733+00:00",
   "06657573b8574874": "2026-10-24T18:05:19.707462+00:00",
   "ffaaab5841015924": "2026-10-24T18:35:19.708997+00:00",
   "b846f0d85940c54c": "2026-10-24T18:50:19.676752+00:00",
@@ -759,19 +758,10 @@
   "39d500e8670147c4": "2026-10-27T17:18:43.012695+00:00",
   "581f8d6e07fe269b": "2026-10-27T17:23:42.980948+00:00",
   "879a2f9e2dd3f878": "2026-10-27T17:28:43.009166+00:00",
-  "1db7452a004fa418": "2026-10-27T17:44:41.181968+00:00"
+  "1db7452a004fa418": "2026-10-27T17:44:41.181968+00:00",
+  "c3fdae2cf38eebcb": "2026-10-27T17:54:40.885096+00:00"
  },
  "recent": [
-  {
-   "title": "Nigeria's Tinubu launches re-election campaign as economic pain tests support",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQb2pnT1VmVHRrU1I2MHl3cGFQQk51cUx2S0NhUHBydDBnQWtpbndGWm54NDl0OGhhRUVIUlJCN0hLcWNvVmROQjJ5VGYyekhPNEVTTU5oMVRiM2VQbFBmaWwwTkhSUjFUQ3N3d016YlZZdFdfaGx4WmwtVjNlZkNqOGhPNVpLRFVCRmZITU10X3hhOHJ0bU5NUUN1aU5TLW8tOFNxRnloS3ZDM2xxQU9qaWJWVmowRkJRQjV1d3Viaw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-24T17:45:19.739733+00:00",
-   "title_ru": "Тинубу в Нигерии начинает кампанию по переизбранию, поскольку экономические испытания поддерживают"
-  },
   {
    "title": "- IMF eLibrary",
    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE16ZjVFS1JuV05mc1laTHFWbzVKTnR1OEVtUXBPbmQ4amhoR1R1Y0Jwbmo2VWt2VlVYMElSU1RGTzh6UVc4RTdEcEx3RlQwekdVcWhHTGhOMjJlSGtwS1hHcWxLcw?oc=5",
@@ -6587,6 +6577,19 @@
    "score": 3,
    "ts": "2026-10-27T17:44:41.181968+00:00",
    "title_ru": "Акции Boeing упали из-за более медленного, чем ожидалось, производства 737 и более слабых прогнозов по свободному денежному потоку",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "Brazil's markets recover some ground after selloff; minister vows fiscal discipline",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOMXExT19UeVJNZFFadkVlQ3A1WXBnSnFqR1RfVEF4N3VqcmNUdUMtMF9SRS1DWUlFSEFDZnBJNzVMNUltbmVaQVg1NkJWWWJvTDdSVW1JZzhybGJiX0xGbklmSTZnUTFESmNoRXc1VGJELXRYNi1tc092eE4xYlA3QXF5VmRmdWNzdU9ROWs2dU1ZNjcycnR0LTNvNzZ4TzIwOTUyWC1BYnZVMTFDdC1wUFpRd0xPYVc2ODM3UHVR?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-27T17:54:40.885096+00:00",
+   "title_ru": "Рынки Бразилии немного восстанавливаются после распродажи; Министр обещает финансовую дисциплину",
    "tags": [
     "markets"
    ]
@@ -13004,13 +13007,13 @@
   },
   "checked": "2026-10-27T17:03:43.133386+00:00",
   "sec_seen": [
-   "0001589039-26-000016",
    "0000006955-26-000097",
+   "0000006955-26-000101",
    "0000006955-26-000093",
    "0000006955-26-000095",
-   "0000318300-26-000238",
-   "0001634144-26-000011",
-   "0000006955-26-000099"
+   "0000006955-26-000103",
+   "0000006955-26-000099",
+   "0000006955-26-000105"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
