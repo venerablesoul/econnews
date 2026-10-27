@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "fd58287d56aa19fc": "2026-10-24T16:50:19.687727+00:00",
   "8316697ea077bbc5": "2026-10-24T17:10:19.672453+00:00",
   "4134639cb2ca0247": "2026-10-24T17:25:19.687618+00:00",
   "988ebacbfd134936": "2026-10-24T17:40:19.813241+00:00",
@@ -753,7 +752,9 @@
   "c5661c1256c0b7fc": "2026-10-27T16:33:42.968558+00:00",
   "56ae75b634f3d151": "2026-10-27T16:38:42.992845+00:00",
   "136b071471fc9764": "2026-10-27T16:38:42.992845+00:00",
-  "35cc56bb713dd916": "2026-10-27T16:38:42.992845+00:00"
+  "35cc56bb713dd916": "2026-10-27T16:38:42.992845+00:00",
+  "a24d522e0b46b725": "2026-10-27T16:53:43.112342+00:00",
+  "bc59f3b91f47cf53": "2026-10-27T16:53:43.112342+00:00"
  },
  "recent": [
   {
@@ -6527,6 +6528,30 @@
    "score": 3,
    "ts": "2026-10-27T16:38:42.992845+00:00",
    "title_ru": "Эдисон и пакистанские покупатели газа сталкиваются с прекращением поставок QatarEnergy до конца года"
+  },
+  {
+   "title": "Bank of Canada Seen Hiking as Oil Creates Stubborn Inflation: Decision Guide",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNVFVFYlRPQS1CVFpwZG9ITFJ2dlZpRmlhaTFlcnU5emE0YmF2Q1h5R2FDU25vVnVNdHVGcGc4NkZrclQyNXlvdl9WaVNudGVpekp2Z2E5LXkxUzZUV0xFMXNwTjFtRUZfWWZGOWd0SF9KUjFNU2ZlVE5tcGVsdldfTGRPYkt4QU1UdW8yMnIwT3J3eHBmaEJaQm5tUFRVcUVOX0x2T05WOS1DU2YtOTVaeG8zLWpqam1PNGJ4Yzd0TWFSVG1h?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-27T16:53:43.112342+00:00",
+   "title_ru": "Банк Канады считает, что он повышает темпы роста, поскольку нефть создает устойчивую инфляцию: руководство для принятия решений",
+   "tags": [
+    "inflation",
+    "oil"
+   ]
+  },
+  {
+   "title": "Canada and the UAE to sign trade deal on Tuesday, source says",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNVlZyZUhRTFlaX1JCLVRSSFJCcXFLT2ZCNGhkVTRUcW8xelVUeWZXUlR5cHpIZEg2WDd4UnEtZjZHTUE4NmprZmxJN1hKa0lVdHRCay14czZsdldteVE4VndYbHZtUGpSenFHcElzVnlVUVVXYWRQbUUzVnVZblJSeFZrc21iUk9QYWFfd2lxQ3Vidw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T16:53:43.112342+00:00",
+   "title_ru": "Канада и ОАЭ подпишут торговое соглашение во вторник, сообщает источник"
   }
  ],
  "last_digest": "2026-10-26",
