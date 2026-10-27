@@ -603,7 +603,9 @@
   "b566aa5f01dd989a": "2026-10-27T01:02:01.163453+00:00",
   "3ef16a8b466c548b": "2026-10-27T01:17:01.284029+00:00",
   "b961884ec84f69a2": "2026-10-27T01:22:01.361193+00:00",
-  "f24962c58ebcb5c4": "2026-10-27T01:22:01.361193+00:00"
+  "f24962c58ebcb5c4": "2026-10-27T01:22:01.361193+00:00",
+  "e35f955997672fda": "2026-10-27T01:32:36.892256+00:00",
+  "94c6a4dbff015782": "2026-10-27T01:32:36.892256+00:00"
  },
  "recent": [
   {
@@ -4724,6 +4726,32 @@
    "title_ru": "Азиатские запасы фишек растут, поскольку антропная подача заявок на IPO разжигает ставки ИИ",
    "lead": "Asian semiconductor stocks jumped, as Anthropic PBC’s initial public offering filing helped renew investor enthusiasm for the artificial intelligence trade.",
    "lead_ru": "Азиатские полупроводниковые акции подскочили, поскольку первичное публичное размещение акций Anthropic PBC помогло возобновить энтузиазм инвесторов в отношении торговли искусственным интеллектом.",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "The Tanker Tycoon's WhatsApps Driving a Disputed Oil Benchmark",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPLUZtMldnbzV2dTRhWW9xQi1VdGVMZmlNRHI1VHFjaWQ0cTFJbDRfSnp3VjBFT284dHJQd0JiMjZVbXpaRFZkWVUwb1V6SzBiMFJMWXJ4cFJhTUdSUGFiQ0hQVHV4RHVNRGlQUlppMENvZzVmYkNPRm1vQ20yV0xGMVZkTDJmY3J0MDJqTU9mbW1fRVZYMTJ0Q0hhbHlfa2JQQmtseDI2RGpyenZaRkozRDB3N1lLLTVQSkZNWDNDZ0g?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T01:32:36.892256+00:00",
+   "title_ru": "WhatsApps танкерного магната влияют на спорный нефтяной эталон",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "JYP Entertainment shares rally on report of tender offer to buy up to 50% stake",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNN2YyWkNlV3FQQXNSMWxBM196dUxLVkttWEhib1hmVnhwTWhzMGpQMXNtaU1GQVRaaXlXMG5XbExlcklTR1dEc1hNRmpuT1Z5Q2tuMmxCZnJtS3lVQ2V2OVlFYVRSemdDbXNzQ0dzTlVJelV3SnZVTXE5aWNwTjRUM2t5ekhsYXJkWXRyYUd4XzRqNk1obEJKa1FHNEt4Zzk0Sy1FS29xVWJxTDZsY09Jb2NQZU9USS1zRVA4YmRR?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T01:32:36.892256+00:00",
+   "title_ru": "Акции JYP Entertainment растут после сообщения о тендерном предложении о покупке до 50% акций",
    "tags": [
     "markets"
    ]
@@ -11145,18 +11173,18 @@
    "0001628280-26-067363",
    "0001193125-26-432344",
    "0001628280-26-067365",
-   "0000912282-26-001400",
    "0001137789-26-000292",
    "0001554855-26-002194",
    "0001213900-26-112593",
    "0001493152-26-048607",
    "0001137789-26-000296",
    "0001944970-26-000031",
+   "0000950142-26-002854",
+   "0001104659-26-118926",
    "0001137789-26-000288",
    "0001193125-26-432339",
    "0001137789-26-000297",
    "0001137789-26-000294",
-   "0000902664-26-004286",
    "0002050422-26-000017",
    "0001137789-26-000293",
    "0001137789-26-000295",
@@ -11169,14 +11197,15 @@
    "0001379344-26-000011",
    "0002010805-26-000007",
    "0001780664-26-000045",
-   "0000912282-26-001401",
    "0001193125-26-432288",
    "0001182471-26-000007",
-   "0000912282-26-001398",
    "0001493152-26-048603",
+   "0000950142-26-002855",
    "0001750495-26-000007",
    "0001193125-26-432335",
    "0001193125-26-432346",
+   "0000950142-26-002856",
+   "0000950142-26-002857",
    "0002159567-26-000005",
    "0000909832-26-000121",
    "0001628280-26-067360",
@@ -11187,7 +11216,7 @@
    "0001137789-26-000289",
    "0001193125-26-432280",
    "0000909832-26-000122",
-   "0000909832-26-000119"
+   "0000909832-26-000123"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
