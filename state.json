@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "4fdd3b8de219aeef": "2026-10-23T23:53:26.775354+00:00",
-  "b49867f1d412dd27": "2026-10-23T23:53:26.775354+00:00",
-  "f51858023887e730": "2026-10-23T23:58:26.761921+00:00",
   "39ffa2a5c3ff5467": "2026-10-24T00:03:26.740984+00:00",
   "e90b82ad866c7202": "2026-10-24T00:03:26.740984+00:00",
   "317c94c0117fa41d": "2026-10-24T00:13:26.794602+00:00",
@@ -607,19 +604,11 @@
   "1771643c4f799998": "2026-10-26T23:47:01.184948+00:00",
   "a58c4fabc50934f0": "2026-10-26T23:47:01.184948+00:00",
   "53e6be532bbb463a": "2026-10-26T23:52:01.251458+00:00",
-  "0956d32bb3922d87": "2026-10-26T23:52:01.251458+00:00"
+  "0956d32bb3922d87": "2026-10-26T23:52:01.251458+00:00",
+  "6a600d39cab661fa": "2026-10-27T00:02:01.286476+00:00",
+  "29ebdec5eedb5529": "2026-10-27T00:02:01.286476+00:00"
  },
  "recent": [
-  {
-   "title": "The Global Fiscal Actions (GFA) Dataset",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOM0NYX0N2UHk4MW52SW85eE9aRmVOdjl4OE8wMGRhdXlDYXItMkVtS2VEcFBfcWM5LWpwa0M4b01KTG1VTGV5SUNSMFVVSXpEVVY2bm9lUG1TMXo4ZV93YUFJclZNUWtHYXJuV0pDVDkxTzF2N2sycjMxX2U2V2FCakdONWN1SEo5Y05BcjdJeDVOTHlLSkNLMVZJMV9XcDNETlQw?oc=5",
-   "sources": [
-    "IMF"
-   ],
-   "score": 4,
-   "ts": "2026-10-23T23:53:26.775354+00:00",
-   "title_ru": "Набор данных о глобальных фискальных действиях (GFA)"
-  },
   {
    "title": "Projections for 29-1240 - BLS Data",
    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOd0ZEN1hoRTl1c0VxWDBCMjdDZ29VeTZNWmlfVlNlTEdiWGdPd04zVVBHQndQR0h2YjI5WWhZdUdnWnVLeFBueXl5SXppUXhSRkVKQWlfclQtNnpQRlVGUU9HcDFBd3BUV0hLQk1xakVjUkdfNVhPNFBpNEZjRXRwMUZn?oc=5",
@@ -4744,6 +4733,33 @@
    "tags": [
     "China"
    ]
+  },
+  {
+   "title": "UK shop price inflation ‘highest since 2024’ as retailers struggle to limit price rises",
+   "link": "https://www.theguardian.com/business/2026/oct/27/uk-shop-price-inflation-highest-since-2024-as-retailers-struggle-to-limit-price-rises",
+   "sources": [
+    "The Guardian"
+   ],
+   "score": 4,
+   "ts": "2026-10-27T00:02:01.286476+00:00",
+   "title_ru": "Инфляция цен в магазинах Великобритании «самая высокая с 2024 года», поскольку ритейлеры изо всех сил пытаются ограничить рост цен",
+   "lead": "British Retail Consortium says ‘dam is starting to break on the huge wave of costs’ being kept from consumers Shop price inflation has risen to the highest level in two and a half years, according to the British Retail…",
+   "lead_ru": "Британский консорциум розничной торговли заявляет, что «плотина начинает прорываться из-за огромной волны издержек», сдерживаемых потребителями. Инфляция цен в магазинах выросла до самого высокого уровня за два с половиной года, по данным British Retail…",
+   "tags": [
+    "inflation"
+   ]
+  },
+  {
+   "title": "'I'm a single mum on £41,000 and limit my weekly shop to £40.' What do you want from the Budget?",
+   "link": "https://www.bbc.co.uk/news/articles/cmx235r9wr3yo?at_medium=RSS&at_campaign=rss",
+   "sources": [
+    "BBC"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T00:02:01.286476+00:00",
+   "title_ru": "«Я мать-одиночка, мой доход составляет 41 000 фунтов стерлингов, и я ограничиваю свой еженедельный магазин 40 фунтами стерлингов». Чего вы хотите от бюджета?",
+   "lead": "People earning from £380 a month to £150,000 a year tell the BBC what they want to see in this year's Budget.",
+   "lead_ru": "Люди, зарабатывающие от 380 фунтов стерлингов в месяц до 150 000 фунтов стерлингов в год, рассказывают Би-би-си, что они хотят видеть в бюджете этого года."
   }
  ],
  "last_digest": "2026-10-26",
@@ -11167,6 +11183,7 @@
    "0000902664-26-004286",
    "0001137789-26-000288",
    "0000912282-26-001400",
+   "0001944970-26-000031",
    "0002050422-26-000017",
    "0000912282-26-001396",
    "0000909832-26-000113",
@@ -11193,7 +11210,6 @@
    "0001137789-26-000293",
    "0001182471-26-000007",
    "0001137789-26-000290",
-   "0000950103-26-016181",
    "0001193125-26-432288",
    "0000909832-26-000115",
    "0001137789-26-000291",
