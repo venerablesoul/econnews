@@ -730,7 +730,9 @@
   "8ecbf643c5ac79d0": "2026-10-27T14:13:43.017913+00:00",
   "738163d32bd5f39f": "2026-10-27T14:13:43.017913+00:00",
   "17cc47d8dd2fc8d1": "2026-10-27T14:13:43.017913+00:00",
-  "3b64beb43ba9229b": "2026-10-27T14:13:43.017913+00:00"
+  "3b64beb43ba9229b": "2026-10-27T14:13:43.017913+00:00",
+  "9ee8f69365ef35e3": "2026-10-27T14:18:42.979506+00:00",
+  "809497ec19b29ac6": "2026-10-27T14:18:42.979506+00:00"
  },
  "recent": [
   {
@@ -6320,6 +6322,26 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "Coca-Cola lifts profit forecast on international soda demand, flags higher costs",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNeXVhS0lsd2Y2TWNoSkp5RFlXZ3Jxdmk3TXJOZTluVVhjTEVQekJYRlpUOWVTamdtQUJKWXg0M3NoR29yQnNWRE0yaGEtd0xqZkhTV2puTnpteE9TMFNfX3Z3am5zQkNJamhtRFlrVkFtcWNWell5empwLVdyU0hldklXc24tdkNjQXJBWlUtN3VJcktsalJZcGJ1T0Q1dw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T14:18:42.979506+00:00",
+   "title_ru": "Coca-Cola повышает прогноз прибыли на международный спрос на газировку, отмечает рост затрат"
+  },
+  {
+   "title": "Tanzania announces first gas discovery in more than 10 years",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOcmVrRkk0aDBtZnZJZ1R1SGRCYzM0YS1FazM3U3ZoWHNBVy04ZVBRTlRKcXdFWGo3emZiU085ZjgzWHZ0ZW94Tk43NGJzZzdtMW1wQ0FReE1RWWt3YXpZQTBUUWR6NjFncFJxVWt1YWNEeTJ6S1VKbmxrZ0FXd1F6Sy1WSzU5ak5pVzNnbTA1c003bGszWGhBY0FBZnozRGxXWmlYbUlkWmRHSGZma3c?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T14:18:42.979506+00:00",
+   "title_ru": "Танзания объявила о первом открытии газа за более чем 10 лет"
   }
  ],
  "last_digest": "2026-10-26",
@@ -12737,19 +12759,17 @@
    "0001267119-26-000002",
    "0002122308-26-000009",
    "0001763378-26-000002",
-   "0001435109-26-000161",
    "0001575176-26-000002",
    "0001914572-26-000002",
-   "0001830165-26-000040",
    "0001479568-26-000002",
    "0001880645-26-000002",
+   "0001193125-26-433039",
    "0001311245-26-000002",
    "0002122308-26-000008",
    "0001905347-26-000002",
    "0001012804-26-000002",
    "0002027021-26-000002",
-   "0002122308-26-000007",
-   "0001193125-26-433039"
+   "0002122308-26-000007"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
