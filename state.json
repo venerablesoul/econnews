@@ -778,7 +778,8 @@
   "68ad19a88905bc90": "2026-10-27T21:04:44.700422+00:00",
   "ded185d9e3a8981d": "2026-10-27T21:04:44.700422+00:00",
   "2f0c81c9769e4b06": "2026-10-27T21:09:44.729318+00:00",
-  "3a0df1f317093c51": "2026-10-27T21:09:44.729318+00:00"
+  "3a0df1f317093c51": "2026-10-27T21:09:44.729318+00:00",
+  "76b2dd11e7fe001c": "2026-10-27T21:14:44.696862+00:00"
  },
  "recent": [
   {
@@ -6918,6 +6919,21 @@
    "title_ru": "Инвесторы в недвижимость о возможностях коммерческого рынка",
    "lead": "Hines Co-CEO, Laura Hines-Pierce; Crow Holdings Chief Investment Officer, Michael Hyun and JLL Senior Managing Director and North Texas Broker Lead, Torrey Littlejohn discuss valuations, capital deployment and the next commercial…",
    "lead_ru": "Со-генеральный директор Hines Лаура Хайнс-Пирс; Главный инвестиционный директор Crow Holdings Майкл Хюн и старший управляющий директор JLL и руководитель брокерской компании в Северном Техасе Торри Литтлджон обсуждают оценки, размещение капитала и следующие коммерческие…"
+  },
+  {
+   "title": "Indonesia’s MSCI Downgrade Threat – What It Means for Investors: Podcast",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-27/indonesia-s-msci-downgrade-threat-what-it-means-for-investors-podcast",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 7,
+   "ts": "2026-10-27T21:14:44.696862+00:00",
+   "title_ru": "Угроза понижения рейтинга MSCI в Индонезии – что это значит для инвесторов: подкаст",
+   "lead": "MSCI’s double downgrade warning sparked Indonesia's sharpest market selloff in nearly 30 years. Now, billions in foreign capital are on the line.",
+   "lead_ru": "Предупреждение MSCI о двойном понижении рейтинга спровоцировало самую резкую распродажу на рынке Индонезии за почти 30 лет. Теперь на кону стоят миллиарды иностранного капитала.",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-27",
@@ -9330,6 +9346,22 @@
     "date": "2026-10-27",
     "disclosed": "2026-10-27",
     "link": "https://www.sec.gov/Archives/edgar/data/1790061/000179006126000006/0001790061-26-000006-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "7537610ceed81cac",
+    "ticker": "GS",
+    "company": "GOLDMAN SACHS GROUP INC",
+    "who": "David M Solomon",
+    "role": "CEO",
+    "type": "sell",
+    "value": 10928695,
+    "shares": 12000,
+    "price": 910.72,
+    "plan": false,
+    "date": "2026-10-27",
+    "disclosed": "2026-10-27",
+    "link": "https://www.sec.gov/Archives/edgar/data/1693709/000169370926000011/0001693709-26-000011-index.htm"
    },
    {
     "src": "sec",
@@ -13282,22 +13314,6 @@
     "date": "2026-10-16",
     "disclosed": "2026-10-19",
     "link": "https://www.sec.gov/Archives/edgar/data/1391935/000139193526000009/0001391935-26-000009-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "e67d43a333baf760",
-    "ticker": "API",
-    "company": "Agora, Inc.",
-    "who": "Bin Zhao",
-    "role": "CEO",
-    "type": "buy",
-    "value": 76930,
-    "shares": 17345,
-    "price": 4.44,
-    "plan": true,
-    "date": "2026-10-16",
-    "disclosed": "2026-10-19",
-    "link": "https://www.sec.gov/Archives/edgar/data/1843236/000119312526424723/0001193125-26-424723-index.htm"
    }
   ],
   "docs": {
@@ -13334,24 +13350,23 @@
   "sec_seen": [
    "0001493152-26-048733",
    "0002093489-26-000006",
+   "0000950103-26-016254",
    "0001975015-26-000061",
-   "0000904454-26-000549",
    "0000904454-26-000547",
-   "0001768695-26-000009",
-   "0001493152-26-048732",
+   "0001900188-26-000017",
+   "0001213900-26-112964",
    "0001078075-26-000146",
    "0001872111-26-000015",
    "0001792653-26-000014",
    "0001193125-26-434410",
-   "0000897069-26-001872",
    "0000012208-26-000050",
    "0001510281-26-000380",
-   "0001493152-26-048731",
+   "0001693709-26-000011",
    "0001078075-26-000147",
-   "0001314152-26-000217",
    "0001517277-26-000008",
    "0001607570-26-000008",
-   "0001314152-26-000218"
+   "0001754399-26-000005",
+   "0000904454-26-000549"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
