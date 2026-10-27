@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "89e81438e487d406": "2026-10-24T16:35:19.689718+00:00",
   "ca9364e330cb6191": "2026-10-24T16:40:19.853787+00:00",
   "fd58287d56aa19fc": "2026-10-24T16:50:19.687727+00:00",
   "8316697ea077bbc5": "2026-10-24T17:10:19.672453+00:00",
@@ -751,21 +750,13 @@
   "d99585dcd7d3948b": "2026-10-27T16:03:43.609452+00:00",
   "4c1de082b996c390": "2026-10-27T16:08:43.146504+00:00",
   "c551fbfe8491f7cd": "2026-10-27T16:13:42.982786+00:00",
-  "ac3641b63c2cc58f": "2026-10-27T16:18:42.968586+00:00"
+  "ac3641b63c2cc58f": "2026-10-27T16:18:42.968586+00:00",
+  "c5661c1256c0b7fc": "2026-10-27T16:33:42.968558+00:00",
+  "56ae75b634f3d151": "2026-10-27T16:38:42.992845+00:00",
+  "136b071471fc9764": "2026-10-27T16:38:42.992845+00:00",
+  "35cc56bb713dd916": "2026-10-27T16:38:42.992845+00:00"
  },
  "recent": [
-  {
-   "title": "French Protestors Dispersed with Gas as Tensions Rise",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-24/french-protestors-dispersed-with-gas-as-tensions-rise-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-24T16:35:19.689718+00:00",
-   "title_ru": "Французские протестующие разогнаны газом по мере роста напряженности",
-   "lead": "Student protestors in Paris, France were dispersed with gas as conflict escalates. (Source: Bloomberg)",
-   "lead_ru": "Студенческие протесты в Париже, Франция, были разогнаны газом по мере эскалации конфликта. (Источник: Блумберг)"
-  },
   {
    "title": "Embracing the Bond Market: Masters in Business with Robin Wigglesworth",
    "link": "https://www.bloomberg.com/news/videos/2026-10-24/embracing-the-bond-market-masters-in-business-with-robin-wigglesworth",
@@ -6527,6 +6518,16 @@
     "Fed",
     "inflation"
    ]
+  },
+  {
+   "title": "Edison, Pakistan gas buyers face QatarEnergy supply halt until year-end",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNZWRlZmpfTjMzTk8wb2tLV1hzbFprenNTR2JMcDVlWmFUQ3hkemhVVzd3X0loUXlGeHRENDd0Nll3cTh2eUpOSVJNVU53MThUaC1HYjJwSkFpa1BreXRxdm0teFoyZGJpaXowcXgtUmE0OTdSYXdDVzhuV0hCSlZqUjdpMHRNUjJxbDAzNDBfbDRjZjFpZUU2djNfV3RPaENwb1M2TzNUV0xIRUZFTVMtSDVhWmpFQU1ZaG0zZzhEa29Udw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T16:38:42.992845+00:00",
+   "title_ru": "Эдисон и пакистанские покупатели газа сталкиваются с прекращением поставок QatarEnergy до конца года"
   }
  ],
  "last_digest": "2026-10-26",
@@ -12941,13 +12942,8 @@
   },
   "checked": "2026-10-27T15:58:43.030029+00:00",
   "sec_seen": [
-   "0000947871-26-000956",
-   "0001510281-26-000378",
-   "0000947871-26-000953",
    "0000912282-26-001404",
-   "0000947871-26-000957",
-   "0000947871-26-000954",
-   "0000947871-26-000955"
+   "0001510281-26-000378"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
