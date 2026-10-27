@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "24c01e0e944f16f6": "2026-10-24T21:35:47.262383+00:00",
-  "47b432bae73c0bc1": "2026-10-24T21:40:47.230337+00:00",
-  "607fc20158f2bc1e": "2026-10-24T21:40:47.230337+00:00",
   "0c7580d5474c7a9e": "2026-10-24T21:50:47.248258+00:00",
   "7ab5e9422fa33a7f": "2026-10-24T22:40:47.242884+00:00",
   "b0af22f2a2d8787a": "2026-10-24T22:40:47.242884+00:00",
@@ -789,22 +786,11 @@
   "31de8cf9cf2536de": "2026-10-27T21:29:44.647398+00:00",
   "3d70faf47712ba79": "2026-10-27T21:34:44.562401+00:00",
   "d95873b76d0d2367": "2026-10-27T21:34:44.562401+00:00",
-  "9ae549c87e1b32e4": "2026-10-27T21:34:44.562401+00:00"
+  "9ae549c87e1b32e4": "2026-10-27T21:34:44.562401+00:00",
+  "c16147f998ebcd7a": "2026-10-27T21:44:44.819592+00:00",
+  "cfd287a3201e04e4": "2026-10-27T21:44:44.819592+00:00"
  },
  "recent": [
-  {
-   "title": "Takahiro Yamamoto, Taiyo Oil Co: Profile and Biography",
-   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9abGFPS05mTWxEMHNJZ0xVU0NsZ1FSVmJhWFA5NnZ0SHBwT0RFdldoZ3kwU0J5bkVFTnNXakxOcWVGNnF1aHJ5WGhRNTBOUTFPZUZmY05VUzBQQ2hBYlRjR0dHdHJEaEgyZTNINWJadTNmZ2xtejdj?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-24T21:40:47.230337+00:00",
-   "title_ru": "Такахиро Ямамото, Taiyo Oil Co: профиль и биография",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "Jude Nwaulune, Eterna Oil & Gas PLC: Profile and Biography",
    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBJeERZeWZyTnptYU9vMDhOc3FXOXFIa2prMDNGUGlEakszZWZmelRCVmpOQjJaN3ZPZE9rYjdmVVZydjBNU2M3Z0FLYXJXU19oQjNrbGx2VE9qUXJOTGF5cGhkaHVhN3BrLVlCZHBXcUpRUQ?oc=5",
@@ -7025,6 +7011,15 @@
    ],
    "score": 1,
    "ts": "2026-10-27T21:34:44.562401+00:00"
+  },
+  {
+   "title": "CoreWeave and other AI stocks rise as Anthropic restores the market’s faith in sustained spending",
+   "link": "https://www.marketwatch.com/story/coreweave-and-other-ai-stocks-rise-as-anthropic-restores-the-markets-faith-in-sustained-spending-c71d7186?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 2,
+   "ts": "2026-10-27T21:44:44.819592+00:00"
   }
  ],
  "last_digest": "2026-10-27",
@@ -9469,6 +9464,22 @@
     "date": "2026-10-27",
     "disclosed": "2026-10-27",
     "link": "https://www.sec.gov/Archives/edgar/data/1619400/000161940026000005/0001619400-26-000005-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "ea0743e17e8be304",
+    "ticker": "XYZ",
+    "company": "Block, Inc.",
+    "who": "Anthony Mathew Eisen",
+    "role": "Director",
+    "type": "sell",
+    "value": 1370340,
+    "shares": 18000,
+    "price": 76.13,
+    "plan": true,
+    "date": "2026-10-27",
+    "disclosed": "2026-10-27",
+    "link": "https://www.sec.gov/Archives/edgar/data/1933928/000162828026067667/0001628280-26-067667-index.htm"
    },
    {
     "src": "sec",
@@ -13389,22 +13400,6 @@
     "date": "2026-10-19",
     "disclosed": "2026-10-19",
     "link": "https://www.sec.gov/Archives/edgar/data/1477333/000147328926000031/0001473289-26-000031-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "e6094664ff151160",
-    "ticker": "NET",
-    "company": "Cloudflare, Inc.",
-    "who": "Carl Ledbetter",
-    "role": "Director",
-    "type": "sell",
-    "value": 1521994,
-    "shares": 5000,
-    "price": 304.4,
-    "plan": true,
-    "date": "2026-10-19",
-    "disclosed": "2026-10-19",
-    "link": "https://www.sec.gov/Archives/edgar/data/1477333/000136657426000026/0001366574-26-000026-index.htm"
    }
   ],
   "docs": {
@@ -13442,11 +13437,12 @@
    "0000904454-26-000553",
    "0001225208-26-008535",
    "0001223012-26-000005",
+   "0001628280-26-067667",
    "0001225208-26-008528",
    "0001493152-26-048755",
    "0001028284-26-000012",
-   "0001619400-26-000005",
    "0000904454-26-000555",
+   "0001859442-26-000014",
    "0001225208-26-008527",
    "0001722684-26-000084",
    "0001273861-26-000006",
