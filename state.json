@@ -679,7 +679,8 @@
   "43e5a57aaa490b41": "2026-10-27T11:13:09.326711+00:00",
   "c0d57585183229aa": "2026-10-27T11:18:09.282977+00:00",
   "0f74a9aa9d7f9aa7": "2026-10-27T11:18:09.282977+00:00",
-  "22d7efabd70a945d": "2026-10-27T11:18:09.282977+00:00"
+  "22d7efabd70a945d": "2026-10-27T11:18:09.282977+00:00",
+  "3f7b97fe86363cb0": "2026-10-27T11:23:09.327885+00:00"
  },
  "recent": [
   {
@@ -5749,6 +5750,22 @@
    ],
    "score": 1,
    "ts": "2026-10-27T11:18:09.282977+00:00"
+  },
+  {
+   "title": "Fed rate hikes are coming, but not this week: CNBC survey",
+   "link": "https://www.cnbc.com/2026/10/27/federal-reserve-rate-hike-timing-expectations.html",
+   "sources": [
+    "CNBC"
+   ],
+   "score": 5,
+   "ts": "2026-10-27T11:23:09.327885+00:00",
+   "title_ru": "Повышение ставок ФРС приближается, но не на этой неделе: опрос CNBC",
+   "lead": "The CNBC Fed Survey shows that 93% of respondent expect a pause at the Federal Reserve meeting taking place this week.",
+   "lead_ru": "Опрос ФРС CNBC показывает, что 93% респондентов ожидают паузы на заседании Федеральной резервной системы, которое состоится на этой неделе.",
+   "tags": [
+    "Fed",
+    "rates"
+   ]
   }
  ],
  "last_digest": "2026-10-26",
@@ -5765,17 +5782,17 @@
   "CNBC": 0,
   "ФРС США": 0,
   "Bloomberg": 0,
-  "Reuters": 13,
+  "Reuters": 14,
   "MarketWatch": 0,
   "Банк Англии": 0,
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
   "Fed": 0,
-  "IMF": 13,
+  "IMF": 14,
   "Kommersant": 0,
   "RBC": 0,
-  "US Labor Statistics (BLS)": 13
+  "US Labor Statistics (BLS)": 14
  },
  "charts_sent": [
   "2026-10-17-21",
