@@ -708,7 +708,11 @@
   "51a1255c651c1d05": "2026-10-27T12:33:42.901988+00:00",
   "5ad39845e4d34e98": "2026-10-27T12:33:42.901988+00:00",
   "25bf0e01e20fa47b": "2026-10-27T12:33:42.901988+00:00",
-  "eb000a533f031b86": "2026-10-27T12:33:42.901988+00:00"
+  "eb000a533f031b86": "2026-10-27T12:33:42.901988+00:00",
+  "bcc5612469af8ec9": "2026-10-27T12:38:42.902450+00:00",
+  "98756fa8f98a2037": "2026-10-27T12:43:43.036317+00:00",
+  "c847d62a8a177e47": "2026-10-27T12:43:43.036317+00:00",
+  "437c4effd004d903": "2026-10-27T12:43:43.036317+00:00"
  },
  "recent": [
   {
@@ -6076,6 +6080,45 @@
     "gas",
     "sanctions",
     "Russia"
+   ]
+  },
+  {
+   "title": "Russia's Oil Exports Hit a One-Month High Amid Baltic Rebound",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-27/russia-s-oil-exports-hit-a-one-month-high-amid-baltic-rebound",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-27T12:43:43.036317+00:00",
+   "title_ru": "Российский экспорт нефти достиг месячного максимума на фоне отскока Балтийского моря",
+   "lead": "Primorsk shipments recovered strongly last week, but it wasn’t enough to boost four-week flows",
+   "lead_ru": "Поставки в Приморск сильно восстановились на прошлой неделе, но этого оказалось недостаточно, чтобы нарастить четырехнедельные потоки",
+   "tags": [
+    "oil",
+    "Russia"
+   ]
+  },
+  {
+   "title": "Pound near 17-month high on euro a day ahead of British budget",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNbmxNV194R2tBS0VVOXpUdVNmUExKMVgyejF4V1M3ZXZxRWsxX2VaVVY2eXpoeU1CZ1JDOFpES2xMXzRObVlvS3VwZnR0TGNIeTJkYUFQWnEtczJuZTk4X3FVZ0ZFaW40REM1b0M4LW5VVEVEb2tGd2kzYmpTRDd1bzhqbzM5a0lTYlg0TXZaTnM1WWNWOHgwcXV2RFFQbmdJ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-27T12:43:43.036317+00:00",
+   "title_ru": "Фунт приближается к 17-месячному максимуму по евро на день раньше британского бюджета"
+  },
+  {
+   "title": "Euro zone extends deadline for bids to replace ECB's Schnabel",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQd1UyT2gwRzU2UWNMcWZHVTFCcXdjMmNsRU1uVVlUbXVBWk5sZldQbWoyaktzdW9xajg4dDZORFE2NjFmVklxSU5fbGV4anl6dEJzR0dHQllDa0VTWk5TT3o4U0dYOE4tM1E3RlJlTEhxQmxsd2E4bVA3NF9tNjNoeEVDR09zR2Z6ek9vMU96SDl3Qml3XzNORnZYWW91WVB4ZEVjcXBYNm9xUQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-27T12:43:43.036317+00:00",
+   "title_ru": "Еврозона продлевает срок подачи заявок на замену Шнабеля ЕЦБ",
+   "tags": [
+    "ECB"
    ]
   }
  ],
