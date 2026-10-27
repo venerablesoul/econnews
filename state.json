@@ -1,12 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "6946bd32039013b1": "2026-10-24T20:35:19.712331+00:00",
-  "6c60aef9d310b278": "2026-10-24T20:35:19.712331+00:00",
-  "e9beba98e362da41": "2026-10-24T20:35:19.712331+00:00",
-  "6598dadb35df2bed": "2026-10-24T20:35:19.712331+00:00",
-  "c16147f998ebcd7a": "2026-10-24T20:35:19.712331+00:00",
-  "e58bc47889babc84": "2026-10-24T20:35:19.712331+00:00",
   "915383bd55cd1c17": "2026-10-24T20:45:47.251364+00:00",
   "38a3f88e8f553dc8": "2026-10-24T20:45:47.251364+00:00",
   "e3c9e38b78dc74cc": "2026-10-24T20:55:47.207380+00:00",
@@ -778,19 +772,10 @@
   "eb7a2c21651fce7e": "2026-10-27T20:24:44.589452+00:00",
   "c2f66fc8290487bc": "2026-10-27T20:34:44.612786+00:00",
   "7ea592f23ae77fb6": "2026-10-27T20:34:44.612786+00:00",
-  "4fac133f17e4964f": "2026-10-27T20:34:44.612786+00:00"
+  "4fac133f17e4964f": "2026-10-27T20:34:44.612786+00:00",
+  "d7d4010037672e22": "2026-10-27T20:39:44.568481+00:00"
  },
  "recent": [
-  {
-   "title": "- Bureau of Labor Statistics (.gov)",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNS2xYV2Zyanl1R0tSZ2RYRUkzQl9WVXYwQkI1NHZYTnZDejBTbDhBSEd4b1h3Nk12QlJkdDlodUI1OFIxTk5ZOFFBRVZpQ3ZqZWFiSXY1Vjk1OXpxbFBXQ1JpLVI3b2t6TGs5VGVGT3VFQjZUVER3MXVkYkttWlk3RFJvT0VQUktMMWlaejQ0QzhIWmhhbjVtcEdSSERGTjJGOWpvOHZtdXNic1hhMXZNdkNmTUpNUQ?oc=5",
-   "sources": [
-    "US Labor Statistics (BLS)"
-   ],
-   "score": 4,
-   "ts": "2026-10-24T20:35:19.712331+00:00",
-   "title_ru": "- Бюро трудовой статистики"
-  },
   {
    "title": "American Century Emerging Markets Debt Fund;Inv (AEDVX.O) | Stock Price & Latest News",
    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5rSmxqcXF2NC1QbGhQRDhkZjM1SEVMTWM2dEhxZHhrdXR1V3R5X2FVSzIxSll0RldJQmJjNzhCczhpb0w1cFMzcmhXVER4TUNkYkZOTjhJLUZQSkpSN1d1X2ZYQWRMM25yMUViNQ?oc=5",
@@ -6866,6 +6851,23 @@
    ],
    "score": 2,
    "ts": "2026-10-27T20:34:44.612786+00:00"
+  },
+  {
+   "title": "Bullish Treasury Bets Face Reversal Risk From Hawkish Fed",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-27/bullish-treasury-bets-face-reversal-risk-from-hawkish-fed",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-27T20:39:44.568481+00:00",
+   "title_ru": "Бычьи ставки на казначейские облигации сталкиваются с риском разворота со стороны Ястребиного ФРС",
+   "lead": "Bullish bets in US Treasuries are vulnerable to a sharp reversal if the Federal Reserve takes a more aggressive stance at its upcoming monetary policy meeting.",
+   "lead_ru": "Бычьи ставки на казначейские облигации США уязвимы перед резким разворотом, если Федеральная резервная система займет более агрессивную позицию на предстоящем заседании по денежно-кредитной политике.",
+   "tags": [
+    "Fed",
+    "rates",
+    "bonds"
+   ]
   }
  ],
  "last_digest": "2026-10-27",
@@ -9726,6 +9728,22 @@
     "date": "2026-10-23",
     "disclosed": "2026-10-27",
     "link": "https://www.sec.gov/Archives/edgar/data/1889539/000119312526434287/0001193125-26-434287-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "1e851197b4d4e39e",
+    "ticker": "STC",
+    "company": "STEWART INFORMATION SERVICES CORP",
+    "who": "Deborah Jane Matz",
+    "role": "Director",
+    "type": "buy",
+    "value": 43910,
+    "shares": 1000,
+    "price": 43.91,
+    "plan": false,
+    "date": "2026-10-23",
+    "disclosed": "2026-10-27",
+    "link": "https://www.sec.gov/Archives/edgar/data/1814738/000162828026067619/0001628280-26-067619-index.htm"
    },
    {
     "src": "sec",
@@ -13230,22 +13248,6 @@
     "date": "2026-10-16",
     "disclosed": "2026-10-19",
     "link": "https://www.sec.gov/Archives/edgar/data/1923565/000114139126000118/0001141391-26-000118-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "9d6c2e54bc398442",
-    "ticker": "WS",
-    "company": "Worthington Steel, Inc.",
-    "who": "Clifford Larivey",
-    "role": "President",
-    "type": "sell",
-    "value": 784582,
-    "shares": 19470,
-    "price": 40.3,
-    "plan": true,
-    "date": "2026-10-16",
-    "disclosed": "2026-10-19",
-    "link": "https://www.sec.gov/Archives/edgar/data/2048670/000119312526425263/0001193125-26-425263-index.htm"
    }
   ],
   "docs": {
@@ -13285,18 +13287,18 @@
    "0001106578-26-000172",
    "0001225208-26-008526",
    "0001225208-26-008525",
-   "0001748614-26-000010",
    "0001493152-26-048707",
    "0001193125-26-434286",
    "0001628280-26-067616",
    "0001225208-26-008524",
    "0001493152-26-048705",
-   "0001650164-26-000206",
    "0001193125-26-434289",
+   "0001650164-26-000206",
    "0001493152-26-048706",
    "0001753926-26-002011",
    "0001104659-26-119177",
    "0001493152-26-048703",
+   "0001628280-26-067619",
    "0001193125-26-434287",
    "0001104659-26-119180",
    "0001493152-26-048709",
