@@ -758,7 +758,8 @@
   "d9d8714480d48ec6": "2026-10-27T16:58:42.942851+00:00",
   "ed49b582aaf1c773": "2026-10-27T17:13:43.000942+00:00",
   "4a7c4ddf2999f514": "2026-10-27T17:13:43.000942+00:00",
-  "39d500e8670147c4": "2026-10-27T17:18:43.012695+00:00"
+  "39d500e8670147c4": "2026-10-27T17:18:43.012695+00:00",
+  "581f8d6e07fe269b": "2026-10-27T17:23:42.980948+00:00"
  },
  "recent": [
   {
@@ -6584,6 +6585,21 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Ормуз выставил счет // Потребители переплатили за топливо полтриллиона долларов",
+   "link": "https://www.kommersant.ru/doc/9062128",
+   "sources": [
+    "Kommersant"
+   ],
+   "score": 4,
+   "ts": "2026-10-27T17:23:42.980948+00:00",
+   "title_en": "Hormuz issued a bill // Consumers overpaid for fuel by half a trillion dollars",
+   "lead": "Подорожание бензина и дизельного топлива из-за конфликта на Ближнем Востоке обошлось потребителям 169 проанализированных стран в дополнительные $468 млрд (по $60 на каждого жителя) подсчитали аналитики CREA.",
+   "lead_en": "The rise in prices for gasoline and diesel fuel due to the conflict in the Middle East cost consumers in 169 countries analyzed an additional $468 billion ($60 per inhabitant), CREA analysts calculated.",
+   "tags": [
+    "dollar"
+   ]
   }
  ],
  "last_digest": "2026-10-26",
@@ -6608,7 +6624,7 @@
   "ECB": 0,
   "Fed": 0,
   "IMF": 0,
-  "Kommersant": 1,
+  "Kommersant": 0,
   "RBC": 0,
   "US Labor Statistics (BLS)": 0
  },
