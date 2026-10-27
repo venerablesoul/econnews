@@ -779,7 +779,13 @@
   "ded185d9e3a8981d": "2026-10-27T21:04:44.700422+00:00",
   "2f0c81c9769e4b06": "2026-10-27T21:09:44.729318+00:00",
   "3a0df1f317093c51": "2026-10-27T21:09:44.729318+00:00",
-  "76b2dd11e7fe001c": "2026-10-27T21:14:44.696862+00:00"
+  "76b2dd11e7fe001c": "2026-10-27T21:14:44.696862+00:00",
+  "a8511a4cf02f60d6": "2026-10-27T21:24:44.754944+00:00",
+  "6946bd32039013b1": "2026-10-27T21:24:44.754944+00:00",
+  "915383bd55cd1c17": "2026-10-27T21:24:44.754944+00:00",
+  "0ad482a6a7e727a8": "2026-10-27T21:24:44.754944+00:00",
+  "be02e5d1f56c5d48": "2026-10-27T21:24:44.754944+00:00",
+  "9ce118ed96faf821": "2026-10-27T21:24:44.754944+00:00"
  },
  "recent": [
   {
@@ -6934,6 +6940,41 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Russia oil exports through western ports forecast to fall in November, traders say",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOQzk2XzU2VjB5VDFxaHJmSmt0Q1RpRl8wSklIakIzcmx3R18tZkQyczJ4dnozRkY0M25Gc3dVbGFiQmFHNjlYaDJHRHowMGo0RElicFJUcHlZQldpOU9ZNm5SbnN4Q25KeGFsbENWbFUySXJSSmF2NlprTDJCenJCYU1GUjl3U0pYbkROdGJqTGFnR09XQ0hTa0dvSDlpQmIzWTJhMmc4Z192VThpVzN2MXk0Uy1DN0hDXzRTemxoOGRmTkxhOXc?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-27T21:24:44.754944+00:00",
+   "title_ru": "Экспорт российской нефти через западные порты в ноябре снизится, говорят трейдеры",
+   "tags": [
+    "oil",
+    "Russia"
+   ]
+  },
+  {
+   "title": "Raizen Debt to Be Eyed by FS, Mubadala in Restructuring",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-27/raizen-debt-is-said-to-be-eyed-by-fs-mubadala-in-restructuring",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T21:24:44.754944+00:00",
+   "title_ru": "FS и Мубадала займутся реструктуризацией долга Raizen",
+   "lead": "Brazilian biofuel producer FS — Fueling Sustainability and Abu Dhabi’s sovereign wealth fund Mubadala Investment Co.",
+   "lead_ru": "Бразильский производитель биотоплива FS — Fueling Sustainability и суверенный фонд Абу-Даби Mubadala Investment Co."
+  },
+  {
+   "title": "Retail traders buy the dip on chip stocks — but Robinhood gets burned by the crypto market",
+   "link": "https://www.marketwatch.com/story/retail-traders-buy-the-dip-on-chip-stocks-but-robinhood-gets-burned-by-the-crypto-market-33cea913?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 2,
+   "ts": "2026-10-27T21:24:44.754944+00:00"
   }
  ],
  "last_digest": "2026-10-27",
@@ -9365,6 +9406,22 @@
    },
    {
     "src": "sec",
+    "id": "ab95164048c123ab",
+    "ticker": "CME",
+    "company": "CME GROUP INC.",
+    "who": "Sunil Cutinho",
+    "role": "Chief Information Officer",
+    "type": "sell",
+    "value": 1493500,
+    "shares": 5000,
+    "price": 298.7,
+    "plan": false,
+    "date": "2026-10-27",
+    "disclosed": "2026-10-27",
+    "link": "https://www.sec.gov/Archives/edgar/data/1619400/000161940026000005/0001619400-26-000005-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "742e477b33b9d3c1",
     "ticker": "API",
     "company": "Agora, Inc.",
@@ -9874,6 +9931,22 @@
     "date": "2026-10-23",
     "disclosed": "2026-10-27",
     "link": "https://www.sec.gov/Archives/edgar/data/1882913/000161071726000444/0001610717-26-000444-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "bc50a82ca78fa434",
+    "ticker": "MSM",
+    "company": "MSC INDUSTRIAL DIRECT CO INC",
+    "who": "Mitchell Jacobson",
+    "role": "Director, 10% owner",
+    "type": "buy",
+    "value": 28984170,
+    "shares": 250000,
+    "price": 115.94,
+    "plan": false,
+    "date": "2026-10-23",
+    "disclosed": "2026-10-27",
+    "link": "https://www.sec.gov/Archives/edgar/data/1008015/000095014226002870/0000950142-26-002870-index.htm"
    },
    {
     "src": "sec",
@@ -13282,38 +13355,6 @@
     "date": "2026-10-19",
     "disclosed": "2026-10-19",
     "link": "https://www.sec.gov/Archives/edgar/data/1639304/000089706926001859/0000897069-26-001859-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "e02e935959492ff3",
-    "ticker": "APLD",
-    "company": "Applied Digital Corp.",
-    "who": "Jason Gechen Zhang",
-    "role": "President",
-    "type": "buy",
-    "value": 5658000,
-    "shares": 300000,
-    "price": 18.86,
-    "plan": false,
-    "date": "2026-10-16",
-    "disclosed": "2026-10-19",
-    "link": "https://www.sec.gov/Archives/edgar/data/1900445/000190044526000006/0001900445-26-000006-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "448e248054348020",
-    "ticker": "APLD",
-    "company": "Applied Digital Corp.",
-    "who": "Wes Cummins",
-    "role": "CEO",
-    "type": "buy",
-    "value": 1006686,
-    "shares": 55803,
-    "price": 18.04,
-    "plan": false,
-    "date": "2026-10-16",
-    "disclosed": "2026-10-19",
-    "link": "https://www.sec.gov/Archives/edgar/data/1391935/000139193526000009/0001391935-26-000009-index.htm"
    }
   ],
   "docs": {
@@ -13348,25 +13389,30 @@
   },
   "checked": "2026-10-27T21:09:44.729318+00:00",
   "sec_seen": [
-   "0001493152-26-048733",
-   "0002093489-26-000006",
+   "0000904454-26-000553",
+   "0001223012-26-000005",
+   "0001292814-26-005016",
    "0000950103-26-016254",
    "0001975015-26-000061",
-   "0000904454-26-000547",
+   "0000950103-26-016256",
+   "0000950103-26-016257",
+   "0001028284-26-000012",
+   "0001619400-26-000005",
    "0001900188-26-000017",
    "0001213900-26-112964",
-   "0001078075-26-000146",
-   "0001872111-26-000015",
-   "0001792653-26-000014",
-   "0001193125-26-434410",
-   "0000012208-26-000050",
-   "0001510281-26-000380",
+   "0001722684-26-000084",
+   "0001273861-26-000006",
+   "0001760265-26-000005",
+   "0001193125-26-434468",
+   "0001128480-26-000005",
+   "0000904454-26-000551",
    "0001693709-26-000011",
-   "0001078075-26-000147",
    "0001517277-26-000008",
-   "0001607570-26-000008",
+   "0001176368-26-000006",
    "0001754399-26-000005",
-   "0000904454-26-000549"
+   "0000950103-26-016255",
+   "0001128483-26-000013",
+   "0000950142-26-002870"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
