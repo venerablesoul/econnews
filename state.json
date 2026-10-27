@@ -733,7 +733,12 @@
   "9ee8f69365ef35e3": "2026-10-27T14:18:42.979506+00:00",
   "809497ec19b29ac6": "2026-10-27T14:18:42.979506+00:00",
   "2bc1cf592e278a36": "2026-10-27T14:28:42.945299+00:00",
-  "ba80d70d1ae48f1e": "2026-10-27T14:28:42.945299+00:00"
+  "ba80d70d1ae48f1e": "2026-10-27T14:28:42.945299+00:00",
+  "8715604258485543": "2026-10-27T14:33:42.967540+00:00",
+  "fa5d12bd906a75b9": "2026-10-27T14:33:42.967540+00:00",
+  "09bb9c66f4c86a82": "2026-10-27T14:38:42.999436+00:00",
+  "000cfe1d26986489": "2026-10-27T14:38:42.999436+00:00",
+  "3fd7ac01c35fb228": "2026-10-27T14:38:42.999436+00:00"
  },
  "recent": [
   {
@@ -6343,6 +6348,16 @@
     "oil",
     "Russia"
    ]
+  },
+  {
+   "title": "JetBlue Earnings: Airline Outlook Worsens as Operating Loss Margin Drops",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPQmphVW9lVGQxcTNnaW1EazZETlhaM3RTYmtVc3FMSUpyQkRjYVlqR3kxWVhGRVQzWjlQNzhtVGJJM19VeTREa2hGNnlfSWM2aWZjRFZKUXRpWng2eWcwQlRFMUxaZUVSWWJPYmVIOXNITU9Uc2JHY0RMM1JmZVM3OWlqeGktSUF2WWswWHZPaExSUk1DTlgxWDJQZDVXMEczaVhvU0pwM1lROGc?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T14:38:42.999436+00:00",
+   "title_ru": "Прибыль JetBlue: прогноз авиакомпании ухудшается из-за снижения маржи операционных убытков"
   }
  ],
  "last_digest": "2026-10-26",
@@ -12757,11 +12772,11 @@
   },
   "checked": "2026-10-27T13:53:42.974304+00:00",
   "sec_seen": [
-   "0002122308-26-000009",
-   "0001193125-26-433039",
-   "0002122308-26-000008",
+   "0001123292-26-001428",
+   "0000947871-26-000947",
    "0001368766-26-000005",
-   "0002122308-26-000007"
+   "0001628280-26-067460",
+   "0000947871-26-000948"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
