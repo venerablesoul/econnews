@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "511709195ed9d6b5": "2026-10-24T02:13:26.757195+00:00",
-  "a395433cdc478d88": "2026-10-24T02:13:26.757195+00:00",
-  "0f574bfd887a1b8f": "2026-10-24T02:13:26.757195+00:00",
   "27ccddb775425011": "2026-10-24T02:28:26.802507+00:00",
   "cd9780824a9b65c1": "2026-10-24T02:38:26.779678+00:00",
   "39b1523f9d22ec7e": "2026-10-24T02:43:26.744458+00:00",
@@ -604,35 +601,10 @@
   "9d6af7635429725d": "2026-10-27T01:57:36.935728+00:00",
   "167d0964e22cd241": "2026-10-27T02:02:36.920031+00:00",
   "be98aed0cd629c0d": "2026-10-27T02:12:36.907197+00:00",
-  "d253a745599a2cd9": "2026-10-27T02:12:36.907197+00:00"
+  "d253a745599a2cd9": "2026-10-27T02:12:36.907197+00:00",
+  "cfa4e9896537763c": "2026-10-27T02:17:36.893588+00:00"
  },
  "recent": [
-  {
-   "title": "Understanding Over-Optimism in Tax Revenue-to-GDP Forecasts under IMF-supported Programs",
-   "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPaGptdzNkekRCc0dCN0l3UGd1M2RvV1N2T1k0REY0NEE2S0tEZXNGYnFYdmJUZ2hRZ2pWNlloMmpvRkl0LVhzTWVwVllkSFpxSnlZUmhPUG1HWm8yOVlzOHFpY0U4Q2hoT1pvUE0tU0M2N25PbTR1M3dHNUtyV1N4Z3Q4cXptUDNwb0tPNWdfS001a25UZmdHeGVSaUZqMDBOY2VJWXRYaHhMSnRTRTc4cW9mNm5vT185Tm5BVHpYRXYzbGJXR09xMzFBQXQ4Sng1Yk8ydVdGSE1zSTJHN2pObUUxTmVpRFU?oc=5",
-   "sources": [
-    "IMF"
-   ],
-   "score": 8,
-   "ts": "2026-10-24T02:13:26.757195+00:00",
-   "title_ru": "Понимание чрезмерного оптимизма в прогнозах налоговых поступлений в ВВП в рамках программ, поддерживаемых МВФ",
-   "tags": [
-    "GDP"
-   ]
-  },
-  {
-   "title": "Information Networks and Inflation Expectations: Evidence from Professional Forecasters and Conflicts",
-   "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOckhjY0tRenB5Sm5hQTlCLVl2TmtXNDY3T3I5ZllvUTJjLU9pLWMxLW55QlZNYWdQMzFYa0hBX25YQ2tRZ0hkOEFrTHA1Zlc3YlVHcWQxOXdQZ3JwUmo1TW40VjU4d0MzS3NCUmlnbG03c3ZKbExZV3NMYkM1ZzRWdWFNZ1JfdDN3R0VaOGJqUWg1c1VmOW5IZnFqMmFtWDJ5dlpVcnF3cWNUc0dUZDhwc0tYOXR0MHFFTGktTmFzXzMyc0xmTnF1SzBONFRmd3JJaUVEbzVpTmdVcHd4akRPTzhDaVJnb2lGX1E?oc=5",
-   "sources": [
-    "IMF"
-   ],
-   "score": 7,
-   "ts": "2026-10-24T02:13:26.757195+00:00",
-   "title_ru": "Информационные сети и инфляционные ожидания: данные профессиональных прогнозистов и конфликты",
-   "tags": [
-    "inflation"
-   ]
-  },
   {
    "title": "Macroeconomic Effects of Forced Displacement in Sub-Saharan Africa",
    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOTWI2cXFkbTlnTEpQR1FIQS1CZHoxUE1vTlNvQ1NGRUJmVmhfblRXS0JFQmpVUi14azJMenkwdVRGTHhSUWpncks5Ylk3OUVnSVZSZ1lYbkhNMDc3YmhOOFdrSzdsaGtNN2F2WDVsWVBPZnJLRjFUQ2FqSDNDN3RUVk1la2U5RzluYUl6aC1vaEJTeWdPV0lfQ2F4a21tOFJ5d1hnQ1BtRTJTdzV0cmJ5dy0tV2g0MDl5RTh5aE55YTR1N25lOHE5TlRR?oc=5",
@@ -4769,6 +4741,22 @@
    "score": 3,
    "ts": "2026-10-27T02:12:36.907197+00:00",
    "title_ru": "Торговый представитель США Грир сообщает ЕС, что кредит Airbus угрожает торговому перемирию в финансировании самолетов"
+  },
+  {
+   "title": "China 5-Year Yield Hits Record Low on PBOC’s Cash Injection",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-27/china-5-year-yield-hits-record-low-on-pboc-s-cash-injection",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T02:17:36.893588+00:00",
+   "title_ru": "5-летняя доходность в Китае достигла рекордно низкого уровня по вливанию наличных в НБК",
+   "lead": "China’s five-year government bond yield dropped to a record low after the central bank increased its cash injection into the banking system.",
+   "lead_ru": "Доходность пятилетних государственных облигаций Китая упала до рекордно низкого уровня после того, как центральный банк увеличил вливание денежных средств в банковскую систему.",
+   "tags": [
+    "bonds",
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-10-26",
