@@ -725,7 +725,12 @@
   "c5870025ac136acf": "2026-10-27T14:03:44.049466+00:00",
   "538fefac90146e94": "2026-10-27T14:03:44.049466+00:00",
   "4b827aea05dc05b9": "2026-10-27T14:08:44.470599+00:00",
-  "a5a2b4f59cfd817f": "2026-10-27T14:08:44.470599+00:00"
+  "a5a2b4f59cfd817f": "2026-10-27T14:08:44.470599+00:00",
+  "9998cfad776817f9": "2026-10-27T14:13:43.017913+00:00",
+  "8ecbf643c5ac79d0": "2026-10-27T14:13:43.017913+00:00",
+  "738163d32bd5f39f": "2026-10-27T14:13:43.017913+00:00",
+  "17cc47d8dd2fc8d1": "2026-10-27T14:13:43.017913+00:00",
+  "3b64beb43ba9229b": "2026-10-27T14:13:43.017913+00:00"
  },
  "recent": [
   {
@@ -6247,6 +6252,73 @@
    "title_ru": "Индийская фармацевтическая компания Cipla упустила из виду прибыль из-за слабости США, акции просели",
    "tags": [
     "markets"
+   ]
+  },
+  {
+   "title": "Stifel's Piegza Says Fed Should Raise Rates But Likely Won’t",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-27/stifel-s-piegza-says-fed-should-hike-rates-likely-won-t-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-27T14:13:43.017913+00:00",
+   "title_ru": "Пьегза Стифеля говорит, что ФРС должна повысить ставки, но, скорее всего, не будет",
+   "lead": "Stifel Chief Economist Lindsey Piegza argues that returning inflation to its longstanding 2% target would require firm conviction and more than two rate hikes. She speaks on \"Bloomberg Surveillance.\" (Source: Bloomberg)",
+   "lead_ru": "Главный экономист Stifel Линдси Пьегза утверждает, что возвращение инфляции к своей давней цели в 2% потребует твердой убежденности и более двух повышений ставок. Она говорит на \"Bloomberg Surveillance.\" (Источник: Bloomberg)",
+   "tags": [
+    "Fed",
+    "rates",
+    "inflation"
+   ]
+  },
+  {
+   "title": "Memory Stocks Lost Their Mojo and Strong Earnings Aren’t Helping",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPcUF1MUZpZW5VQU9rOE5rOTMzQVZ3REhjNFNBMHd2cXpzQlhqcUFRcG5EaHVtZk9INGVzYTZTcVQ1cjA2NjBwOWZvaTd5U2xjS1RUalA1bE1NUktzS1RBNkJuS2RXWlhLRGJxeC1wNnoydTBoLVlyNFdaVFNNc29ZU1hjN3ZYRUtkeHJLa1VTVVVzb2xrbTJ2U1JmdHFkMGJPNV9GMjZ0QmVTQ1JTbklFcVdlT1hMdw?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-27T14:13:43.017913+00:00",
+   "title_ru": "Акции Memory потеряли свой Mojo, и сильные доходы не помогают",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "US Consumer Confidence Rises for First Time in Four Months",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-27/us-consumer-confidence-increases-for-first-time-in-four-months",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T14:13:43.017913+00:00",
+   "title_ru": "Потребительское доверие в США выросло впервые за четыре месяца",
+   "lead": "US consumer confidence unexpectedly rose in October for the first time in four months as views about the job market and business conditions improved.",
+   "lead_ru": "Потребительское доверие в США неожиданно выросло в октябре впервые за четыре месяца, поскольку взгляды на рынок труда и условия ведения бизнеса улучшились."
+  },
+  {
+   "title": "US New Home Sales Fall Amid Surge in Mortgage Rates",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-27/us-new-home-sales-fall-amid-surge-in-mortgage-rates",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T14:13:43.017913+00:00",
+   "title_ru": "Продажи нового жилья в США падают на фоне роста ставок по ипотечным кредитам",
+   "lead": "Sales of new homes in the US edged lower last month as homebuilders’ efforts to trim prices and offer sales incentives failed to offset a surge in mortgage rates.",
+   "lead_ru": "Продажи новых домов в США снизились в прошлом месяце, поскольку усилия строителей по снижению цен и стимулированию продаж не смогли компенсировать рост ставок по ипотечным кредитам."
+  },
+  {
+   "title": "Yemen's Houthis say they hit Saudi Ras Tanura oil refinery with missile",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPMU9tRHdmbzQ2ZHlsQzBDVmpqUEhlTk9meXgzN1VMOWlUMnlKOU1ibFRMQ1VQNDNjTkloUG9lb054S2JXZ2YwMS1MMXM4b1pwczl2clNyTHM5RGZVdnd6bzJXTVl4bW4yZ0pGTEV2aEV4dlR2cDNkc0lvNjVMN2ZScklvRDE3S1VyS0FoaC02Z3BqTHJPeTJrekxhM0dONmN0VzdXTmE5QjNfM0pIZ1Q2SHMtSkZzbFNqSThaN2RybDFBdw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T14:13:43.017913+00:00",
+   "title_ru": "Йеменские хуситы говорят, что они поразили саудовский нефтеперерабатывающий завод Рас-Танура ракетой",
+   "tags": [
+    "oil"
    ]
   }
  ],
@@ -12663,22 +12735,21 @@
   "checked": "2026-10-27T13:53:42.974304+00:00",
   "sec_seen": [
    "0001267119-26-000002",
+   "0002122308-26-000009",
    "0001763378-26-000002",
    "0001435109-26-000161",
-   "0002122308-26-000009",
    "0001575176-26-000002",
    "0001914572-26-000002",
    "0001830165-26-000040",
    "0001479568-26-000002",
    "0001880645-26-000002",
-   "0001193125-26-433039",
    "0001311245-26-000002",
    "0002122308-26-000008",
    "0001905347-26-000002",
-   "0002040491-26-000054",
    "0001012804-26-000002",
    "0002027021-26-000002",
-   "0002122308-26-000007"
+   "0002122308-26-000007",
+   "0001193125-26-433039"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
