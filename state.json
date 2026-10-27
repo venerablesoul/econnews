@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "a8275e02227b60ee": "2026-10-24T23:30:47.247288+00:00",
-  "4853ddbd88a16546": "2026-10-24T23:30:47.247288+00:00",
   "59e15ae790642604": "2026-10-24T23:40:47.228360+00:00",
   "35aab7938f5e7aea": "2026-10-24T23:45:47.302199+00:00",
   "120391daf1be8713": "2026-10-25T00:00:47.273439+00:00",
@@ -797,7 +795,10 @@
   "bf949f818b6547dc": "2026-10-27T23:10:19.165027+00:00",
   "d3be7a472d9b1534": "2026-10-27T23:15:19.164316+00:00",
   "7ab5e9422fa33a7f": "2026-10-27T23:15:19.164316+00:00",
-  "297d9f1f80c627fc": "2026-10-27T23:15:19.164316+00:00"
+  "297d9f1f80c627fc": "2026-10-27T23:15:19.164316+00:00",
+  "792442693243bf5d": "2026-10-27T23:35:19.152622+00:00",
+  "a8275e02227b60ee": "2026-10-27T23:40:19.177666+00:00",
+  "58c290c0ef89142f": "2026-10-27T23:40:19.177666+00:00"
  },
  "recent": [
   {
@@ -7123,6 +7124,16 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Why Indonesia Is on the Brink of a Downgrade Disaster",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNT2xsbVNvcnlsRWZTNGlwWGFncmowdUxoMTE2RjZQV2szYlZMdzFDSkZEVGFBZFV4NFJsYjlJRi1Uc1JzN2syT3NPajFMWDdRSVI3Rnk1TGJ6WnA2ckZMNEdvLVA2TGctdmIxSFI5U2hTWFM3TWZjY21vdC0tY09jU3poS3NPVzlCRERBdm0yeWRSRHNmcDd1eFo3eDJoWXBJdWtxZGpzTmFsN2JpUUJTY2tEdUVLSFRJN3dTUg?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-27T23:40:19.177666+00:00",
+   "title_ru": "Почему Индонезия находится на грани катастрофы"
   }
  ],
  "last_digest": "2026-10-27",
@@ -9615,6 +9626,22 @@
     "date": "2026-10-27",
     "disclosed": "2026-10-27",
     "link": "https://www.sec.gov/Archives/edgar/data/2037157/000123191926001503/0001231919-26-001503-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "ed329c6f040bac76",
+    "ticker": "NXTC",
+    "company": "NextCure, Inc.",
+    "who": "Adar1 Capital Management, Llc et al.",
+    "role": "10% owner",
+    "type": "buy",
+    "value": 53691,
+    "shares": 10851,
+    "price": 4.95,
+    "plan": false,
+    "date": "2026-10-27",
+    "disclosed": "2026-10-27",
+    "link": "https://www.sec.gov/Archives/edgar/data/1940272/000194027226000029/0001940272-26-000029-index.htm"
    },
    {
     "src": "sec",
@@ -13487,22 +13514,6 @@
     "date": "2026-10-16",
     "disclosed": "2026-10-20",
     "link": "https://www.sec.gov/Archives/edgar/data/1837336/000183733626000048/0001837336-26-000048-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "0335d3728d57d436",
-    "ticker": "MU",
-    "company": "MICRON TECHNOLOGY INC",
-    "who": "Scott J Deboer",
-    "role": "Pres. & Chief Tech & Prod Offr",
-    "type": "sell",
-    "value": 25690216,
-    "shares": 28545,
-    "price": 900.0,
-    "plan": true,
-    "date": "2026-10-16",
-    "disclosed": "2026-10-20",
-    "link": "https://www.sec.gov/Archives/edgar/data/1568238/000156823826000003/0001568238-26-000003-index.htm"
    }
   ],
   "docs": {
@@ -13552,11 +13563,11 @@
    "0001213900-26-113020",
    "0001592970-26-000016",
    "0001193125-26-434610",
-   "0001341439-26-000125",
    "0001213900-26-113021",
    "0001140361-26-040923",
    "0001193125-26-434631",
    "0001213900-26-113017",
+   "0001940272-26-000029",
    "0001807359-26-000020",
    "0001493152-26-048762",
    "0001626259-26-000016",
