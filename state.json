@@ -757,7 +757,8 @@
   "61379ffea592732e": "2026-10-27T16:58:42.942851+00:00",
   "d9d8714480d48ec6": "2026-10-27T16:58:42.942851+00:00",
   "ed49b582aaf1c773": "2026-10-27T17:13:43.000942+00:00",
-  "4a7c4ddf2999f514": "2026-10-27T17:13:43.000942+00:00"
+  "4a7c4ddf2999f514": "2026-10-27T17:13:43.000942+00:00",
+  "39d500e8670147c4": "2026-10-27T17:18:43.012695+00:00"
  },
  "recent": [
   {
@@ -6568,6 +6569,21 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "‘Loser’ Stocks Are Appealing Amid AI Frenzy, Causeway CEO Says",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-27/-loser-stocks-are-appealing-amid-ai-frenzy-causeway-ceo-says",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T17:18:43.012695+00:00",
+   "title_ru": "Акции «неудачников» привлекательны на фоне безумия искусственного интеллекта, говорит генеральный директор Causeway",
+   "lead": "Investors should look beyond the biggest winners in the AI boom and bet on overlooked stocks, according to Causeway Capital Management Chief Executive Officer Sarah Ketterer.",
+   "lead_ru": "По мнению Сары Кеттерер, главного исполнительного директора Causeway Capital Management, инвесторам следует смотреть не только на крупнейших победителей бума искусственного интеллекта, но и делать ставку на игнорируемые акции.",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-26",
@@ -6592,7 +6608,7 @@
   "ECB": 0,
   "Fed": 0,
   "IMF": 0,
-  "Kommersant": 0,
+  "Kommersant": 1,
   "RBC": 0,
   "US Labor Statistics (BLS)": 0
  },
@@ -12984,8 +13000,7 @@
   "sec_seen": [
    "0001589039-26-000016",
    "0000318300-26-000238",
-   "0001634144-26-000011",
-   "0001510281-26-000378"
+   "0001634144-26-000011"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
