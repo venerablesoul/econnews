@@ -773,7 +773,8 @@
   "c1142ce7d5790d06": "2026-10-27T20:04:43.356827+00:00",
   "c371b89cc81ba493": "2026-10-27T20:09:44.686763+00:00",
   "f7e675f1f024f1e1": "2026-10-27T20:14:44.691865+00:00",
-  "2baafbb03244b637": "2026-10-27T20:14:44.691865+00:00"
+  "2baafbb03244b637": "2026-10-27T20:14:44.691865+00:00",
+  "67a4e8104195a23c": "2026-10-27T20:19:44.633318+00:00"
  },
  "recent": [
   {
@@ -6806,6 +6807,16 @@
    "score": 3,
    "ts": "2026-10-27T20:14:44.691865+00:00",
    "title_ru": "Индийские налоговики посетили офис производителя спиртных напитков Radico Khaitan на фоне проверки импорта виски"
+  },
+  {
+   "title": "CAPP.F Stock Analysis: Prediction, Earnings, Dividend",
+   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5FbGVRU1ZkUEV4cTJ0cmtMQ0o0Q3BKTGdxWnZSWkZqbFhUbF91TTlVbDRhM0VkVlpXNFluWDl3MWdjTVpKZG1SX3NJQng0Wk9HMUVHeExKVGpBUW9ZU09ZNGdTTGdRb0c5WFVIQm1R?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T20:19:44.633318+00:00",
+   "title_ru": "Анализ акций CAPP.F: прогноз, прибыль, дивиденды"
   }
  ],
  "last_digest": "2026-10-27",
@@ -9317,6 +9328,38 @@
    },
    {
     "src": "sec",
+    "id": "a852b3003c07f5d9",
+    "ticker": "PCTY",
+    "company": "Paylocity Holding Corp",
+    "who": "Steven I Sarowitz",
+    "role": "Director, 10% owner",
+    "type": "sell",
+    "value": 2411869,
+    "shares": 13700,
+    "price": 176.05,
+    "plan": true,
+    "date": "2026-10-26",
+    "disclosed": "2026-10-27",
+    "link": "https://www.sec.gov/Archives/edgar/data/1597870/000159787026000025/0001597870-26-000025-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "1c8f627eadf6cf32",
+    "ticker": "BSY",
+    "company": "BENTLEY SYSTEMS INC",
+    "who": "Raymond B. Bentley",
+    "role": "Director, 10% owner",
+    "type": "sell",
+    "value": 6239464,
+    "shares": 155797,
+    "price": 40.05,
+    "plan": true,
+    "date": "2026-10-26",
+    "disclosed": "2026-10-27",
+    "link": "https://www.sec.gov/Archives/edgar/data/1825229/000110465926119159/0001104659-26-119159-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "f4a3e1020db08fec",
     "ticker": "PLUR",
     "company": "Pluri Inc.",
@@ -9410,6 +9453,22 @@
     "date": "2026-10-23",
     "disclosed": "2026-10-27",
     "link": "https://www.sec.gov/Archives/edgar/data/2056954/000205695426000006/0002056954-26-000006-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "93550a34d4fa8172",
+    "ticker": "EFX",
+    "company": "EQUIFAX INC",
+    "who": "Mark W Begor",
+    "role": "CEO",
+    "type": "sell",
+    "value": 6908340,
+    "shares": 37792,
+    "price": 182.8,
+    "plan": true,
+    "date": "2026-10-23",
+    "disclosed": "2026-10-27",
+    "link": "https://www.sec.gov/Archives/edgar/data/1335111/000122520826008522/0001225208-26-008522-index.htm"
    },
    {
     "src": "sec",
@@ -13138,54 +13197,6 @@
     "date": "2026-10-15",
     "disclosed": "2026-10-19",
     "link": "https://www.sec.gov/Archives/edgar/data/2096831/000151384526000132/0001513845-26-000132-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "a104e8b2ad4a841d",
-    "ticker": "AFL",
-    "company": "AFLAC INC",
-    "who": "Japan Post Holdings Co., Ltd.",
-    "role": "10% owner",
-    "type": "sell",
-    "value": 13465866,
-    "shares": 113611,
-    "price": 118.53,
-    "plan": true,
-    "date": "2026-10-15",
-    "disclosed": "2026-10-19",
-    "link": "https://www.sec.gov/Archives/edgar/data/1783464/000110465926116752/0001104659-26-116752-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "7f89cc87be6bb25c",
-    "ticker": "CIEN",
-    "company": "CIENA CORP",
-    "who": "David M Rothenstein",
-    "role": "EVP & Chief Strategy Officer",
-    "type": "sell",
-    "value": 870157,
-    "shares": 2500,
-    "price": 348.06,
-    "plan": true,
-    "date": "2026-10-15",
-    "disclosed": "2026-10-19",
-    "link": "https://www.sec.gov/Archives/edgar/data/1444157/000144415726000028/0001444157-26-000028-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "9a8e0030ff0e0be1",
-    "ticker": "CIEN",
-    "company": "CIENA CORP",
-    "who": "Gary B Smith",
-    "role": "CEO",
-    "type": "sell",
-    "value": 1027356,
-    "shares": 2952,
-    "price": 348.02,
-    "plan": true,
-    "date": "2026-10-15",
-    "disclosed": "2026-10-19",
-    "link": "https://www.sec.gov/Archives/edgar/data/1032553/000103255326000045/0001032553-26-000045-index.htm"
    }
   ],
   "docs": {
@@ -13220,37 +13231,33 @@
   },
   "checked": "2026-10-27T20:09:44.686763+00:00",
   "sec_seen": [
+   "0001225208-26-008522",
+   "0000909832-26-000129",
    "0001193125-26-434235",
-   "0001854054-26-000005",
-   "0001854386-26-000005",
-   "0001628280-26-067585",
+   "0002127119-26-000009",
+   "0001597870-26-000025",
    "0001193125-26-434222",
+   "0001628280-26-067585",
+   "0000950142-26-002867",
    "0001336706-26-000081",
-   "0001193125-26-434228",
    "0001193125-26-434223",
-   "0001911236-26-000005",
-   "0001104659-26-119154",
-   "0001193125-26-434206",
+   "0001193125-26-434228",
+   "0001104659-26-119162",
    "0000909832-26-000127",
-   "0002011128-26-000007",
    "0001437749-26-033644",
-   "0001193125-26-434207",
+   "0001104659-26-119159",
    "0001193125-26-434227",
-   "0001193125-26-434215",
-   "0001865200-26-000093",
-   "0001193125-26-434217",
-   "0001573233-26-000005",
-   "0001853409-26-000005",
+   "0001225208-26-008523",
    "0001917389-26-000026",
+   "0001594748-26-000007",
    "0001231919-26-001501",
-   "0001671358-26-000005",
    "0001193125-26-434226",
-   "0001193125-26-434202",
+   "0000909832-26-000131",
    "0002056954-26-000006",
    "0001865200-26-000095",
+   "0001437749-26-033647",
    "0001193125-26-434224",
-   "0001193125-26-434208",
-   "0001336706-26-000080"
+   "0001437749-26-033649"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
