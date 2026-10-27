@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "d06589c2d735c223": "2026-10-24T14:54:23.575642+00:00",
-  "7367cef58a08b8a0": "2026-10-24T14:54:23.575642+00:00",
-  "de2ce1014a77d03b": "2026-10-24T14:54:23.575642+00:00",
   "e045eab72d86de7c": "2026-10-24T15:15:19.697562+00:00",
   "b42198f5cf0a1421": "2026-10-24T15:40:19.675764+00:00",
   "ee4e10e2fc52f205": "2026-10-24T15:50:19.688099+00:00",
@@ -737,19 +734,10 @@
   "fa5d12bd906a75b9": "2026-10-27T14:33:42.967540+00:00",
   "09bb9c66f4c86a82": "2026-10-27T14:38:42.999436+00:00",
   "000cfe1d26986489": "2026-10-27T14:38:42.999436+00:00",
-  "3fd7ac01c35fb228": "2026-10-27T14:38:42.999436+00:00"
+  "3fd7ac01c35fb228": "2026-10-27T14:38:42.999436+00:00",
+  "4804f59d240f2516": "2026-10-27T14:58:43.003601+00:00"
  },
  "recent": [
-  {
-   "title": "UK Economy Storms Ahead for Now, Despite Sodden Consumers",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOVTJ5MURfZ3BlR1drZGljcVFDbWRCTW9oRXFEQl9McVkzVVdUWERVbFZ0RjFzVGNHNWZYZXdGVFZZeHV3aHBONGlZVWwtRENwRi1oWEhJbUJSS1FPOUw0T2V1dDhyYXRzZEFBRE1reFpfRDhOdnczTGRjbUFsd0VVbFUyazJNMmxnc3NkWkhZaVZIWTRtMDBlX05PU0IwSmtObTM5czVHbEdJQTJqNm1B?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-24T14:54:23.575642+00:00",
-   "title_ru": "Экономика Великобритании на данный момент бурно развивается, несмотря на промокшие потребители"
-  },
   {
    "title": "‘Total Meltdown’ in Riskiest Debt Unnerves Market: Credit Weekly",
    "link": "https://www.bloomberg.com/news/articles/2026-10-24/-total-meltdown-in-riskiest-debt-unnerves-market-credit-weekly",
@@ -6348,6 +6336,15 @@
    "score": 3,
    "ts": "2026-10-27T14:38:42.999436+00:00",
    "title_ru": "Прибыль JetBlue: прогноз авиакомпании ухудшается из-за снижения маржи операционных убытков"
+  },
+  {
+   "title": "Microsoft earnings will look funky — but an elusive number is finally arriving",
+   "link": "https://www.marketwatch.com/story/microsoft-earnings-will-look-funky-but-an-elusive-number-is-finally-arriving-73236a94?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-27T14:58:43.003601+00:00"
   }
  ],
  "last_digest": "2026-10-26",
@@ -12760,11 +12757,11 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-27T13:53:42.974304+00:00",
+  "checked": "2026-10-27T14:58:43.003601+00:00",
   "sec_seen": [
    "0001123292-26-001428",
-   "0000947871-26-000947",
-   "0001368766-26-000005",
+   "0000947871-26-000949",
+   "0001193125-26-433172",
    "0001628280-26-067460",
    "0000947871-26-000948",
    "0002058897-26-000330"
