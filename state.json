@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "fc3d2bc85935e42d": "2026-10-24T09:03:55.383267+00:00",
   "13456efd79d0f9d3": "2026-10-24T09:13:55.356338+00:00",
   "6eec1ba637ef318c": "2026-10-24T09:23:55.365288+00:00",
   "7aa2bbe4ea79e0cf": "2026-10-24T09:54:23.557498+00:00",
@@ -669,18 +668,13 @@
   "52b4c48ee889733d": "2026-10-27T08:48:09.304102+00:00",
   "6aaf17c2574d467c": "2026-10-27T08:53:09.257689+00:00",
   "81c2a87ec2a4ae4c": "2026-10-27T08:53:09.257689+00:00",
-  "6ccfaf91462aec62": "2026-10-27T09:03:09.243048+00:00"
+  "6ccfaf91462aec62": "2026-10-27T09:03:09.243048+00:00",
+  "99af505cf927c8b0": "2026-10-27T09:08:09.258046+00:00",
+  "1475d73d1d7dc701": "2026-10-27T09:08:09.258046+00:00",
+  "cdf81de7e69dfeaf": "2026-10-27T09:08:09.258046+00:00",
+  "18f7f7c40b590ee9": "2026-10-27T09:08:09.258046+00:00"
  },
  "recent": [
-  {
-   "title": "JetBlue Lenders Organize After Stock, Debt Fall to Record Lows",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOeXlyVGhrNUdGbTFLYmR1TzR0WWswdk1BcGdxWDkxNndOcGRXalVtQlhHNHhRMUZyXy1sbGZ2UDZ2bXF1ZEdETDhTX0ZwMUV5NFFCLS1FaUNrZmN0clpmWVBWYWhSWmNiZFlMVkxpdnZ0RENBRHlhTk93UTZ5Tnk1V3ZoRUhybzgyMUdRa2NaTmpCaERmRjdjTXM2OFFmZ25mWkh2TEJGM1E0UDVRZ19tUUZn?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-24T09:03:55.383267+00:00"
-  },
   {
    "title": "World Economy Latest: Euro Area Business Activity Cools on Weakness in France",
    "link": "https://www.bloomberg.com/news/articles/2026-10-24/world-economy-latest-euro-area-business-activity-cools-on-weakness-in-france",
@@ -5577,6 +5571,63 @@
    "score": 6,
    "ts": "2026-10-27T09:03:09.243048+00:00",
    "title_ru": "Обзор банковского кредитования в еврозоне за октябрь 2026 года"
+  },
+  {
+   "title": "ECB Says Banks Tighten Credit Conditions, See Loan Demand Fall",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-27/ecb-says-banks-tighten-credit-conditions-see-loan-demand-fall",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-27T09:08:09.258046+00:00",
+   "title_ru": "ЕЦБ заявляет, что банки ужесточают условия кредитования, в связи с чем спрос на кредиты падает.",
+   "lead": "Euro-zone banks tightened credit conditions and reported waning demand for loans in the third quarter, supporting the European Central Bank’s caution on raising interest rates further.",
+   "lead_ru": "Банки еврозоны ужесточили условия кредитования и сообщили о снижении спроса на кредиты в третьем квартале, что подтвердило осторожность Европейского центрального банка в отношении дальнейшего повышения процентных ставок.",
+   "tags": [
+    "ECB",
+    "rates"
+   ]
+  },
+  {
+   "title": "Amundi Says ‘Worst Is Behind Us’ as Gold Flirts With $4,000",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-27/amundi-says-worst-is-behind-us-as-gold-flirts-with-4-000",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-27T09:08:09.258046+00:00",
+   "title_ru": "Амунди говорит, что «худшее позади», поскольку золото флиртует с $ 4000",
+   "lead": "Amundi SA, Europe’s largest asset manager, expects a recovery in the gold price to around $4,500 an ounce following a selloff that dragged the metal to a three-month low.",
+   "lead_ru": "Крупнейшая в Европе компания по управлению активами Amundi SA ожидает восстановления цены на золото до уровня около 4500 долларов за унцию после распродажи, в результате которой металл опустился до трехмесячного минимума.",
+   "tags": [
+    "gold",
+    "markets"
+   ]
+  },
+  {
+   "title": "Chinese Stocks’ Final-Hour Slide Shows Reliance on National Team",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-27/chinese-stocks-final-hour-slide-shows-reliance-on-national-team",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T09:08:09.258046+00:00",
+   "title_ru": "Слайд с китайскими акциями в последний час показывает зависимость от национальной команды",
+   "lead": "Chinese stocks extended their slide in the final hour of trading as investors disappointed by a lack of national team buying dumped shares.",
+   "lead_ru": "Китайские акции продолжили свое падение в последний час торгов, поскольку инвесторы разочарованы отсутствием национальной команды, покупающей демпинговые акции.",
+   "tags": [
+    "markets",
+    "China"
+   ]
+  },
+  {
+   "title": "Designer Betsey Johnson takes $7 million SoCal home off the market",
+   "link": "https://www.marketwatch.com/story/designer-betsey-johnson-takes-7-million-socal-home-off-the-market-1f027f0e?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-27T09:08:09.258046+00:00"
   }
  ],
  "last_digest": "2026-10-26",
@@ -12012,7 +12063,7 @@
    "0000950142-26-002859",
    "0000905148-26-004561",
    "0001780664-26-000045",
-   "0001422304-26-000005",
+   "0000909832-26-000121",
    "0001554855-26-002194",
    "0000909832-26-000120",
    "0001193125-26-432280",
@@ -12037,7 +12088,7 @@
    "0001213900-26-112619",
    "0001213900-26-112593",
    "0001182471-26-000007",
-   "0000909832-26-000121",
+   "0001422304-26-000005",
    "0001628280-26-067362"
   ],
   "errors": {
