@@ -675,7 +675,8 @@
   "c0e21091e1b87d61": "2026-10-27T09:58:09.256702+00:00",
   "f799fc16289facdf": "2026-10-27T10:08:09.305870+00:00",
   "c2714ff1b9f3304a": "2026-10-27T10:13:09.253536+00:00",
-  "c0b7703600101e2c": "2026-10-27T10:13:09.253536+00:00"
+  "c0b7703600101e2c": "2026-10-27T10:13:09.253536+00:00",
+  "5d84ad6dfa51098a": "2026-10-27T10:18:09.329364+00:00"
  },
  "recent": [
   {
@@ -5662,6 +5663,21 @@
     "Fed",
     "bonds"
    ]
+  },
+  {
+   "title": "Malaysian Palm Oil Glut Swamps Storage in Top-Producing State",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-27/malaysian-palm-oil-glut-swamps-storage-in-top-producing-state",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T10:18:09.329364+00:00",
+   "title_ru": "Избыток пальмового масла в Малайзии приводит к затоплению складов в штате с самым высоким уровнем добычи",
+   "lead": "Malaysia’s swelling palm oil inventories are straining storage capacity in the country’s top-producing state, as a bumper harvest piles pressure on the government to clear excess supplies.",
+   "lead_ru": "Растущие запасы пальмового масла в Малайзии перегружают возможности хранения в крупнейшем производящем штате страны, поскольку небывалый урожай заставляет правительство избавиться от излишних поставок.",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-26",
@@ -5678,17 +5694,17 @@
   "CNBC": 0,
   "ФРС США": 0,
   "Bloomberg": 0,
-  "Reuters": 0,
+  "Reuters": 1,
   "MarketWatch": 0,
   "Банк Англии": 0,
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
   "Fed": 0,
-  "IMF": 0,
+  "IMF": 1,
   "Kommersant": 0,
   "RBC": 0,
-  "US Labor Statistics (BLS)": 0
+  "US Labor Statistics (BLS)": 1
  },
  "charts_sent": [
   "2026-10-17-21",
@@ -12094,7 +12110,6 @@
    "0001104659-26-118926",
    "0001193125-26-432556",
    "0001493152-26-048603",
-   "0001944970-26-000031",
    "0000950142-26-002859",
    "0000905148-26-004561",
    "0000909832-26-000120",
