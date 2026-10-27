@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c046c1c2f750d1c7": "2026-10-24T12:49:23.604905+00:00",
   "52b039a2b9649dfe": "2026-10-24T12:59:23.657284+00:00",
   "6e608799c836c550": "2026-10-24T13:24:23.620704+00:00",
   "54476157e2303b49": "2026-10-24T13:39:23.584574+00:00",
@@ -712,7 +711,8 @@
   "c847d62a8a177e47": "2026-10-27T12:43:43.036317+00:00",
   "437c4effd004d903": "2026-10-27T12:43:43.036317+00:00",
   "f3d8b15cb1220a5b": "2026-10-27T12:48:43.018347+00:00",
-  "43d34b1256fceaf1": "2026-10-27T12:48:43.018347+00:00"
+  "43d34b1256fceaf1": "2026-10-27T12:48:43.018347+00:00",
+  "67de6fb5a45ef896": "2026-10-27T12:53:43.018922+00:00"
  },
  "recent": [
   {
@@ -6124,6 +6124,16 @@
     "sanctions",
     "Russia"
    ]
+  },
+  {
+   "title": "Citi, BCA downgrade Brazilian assets after Lula comeback",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQNURnSldLU1dyMGswcnFnbHd5d3pLQV80d1FXM2Q4OEtQM1o2NU04R2dnTk9kdFJQeXRWNDN4UENUT3pxZXpjX0J3X1hJWi13aDRPOVlDRkVWR3V1bW5RUkpta0pEQnBEeFZHUVdzMmItYThQQ3pxQ1pCQmJILU92enZYV000Y0xtYnNZS3pfMGtPRlFheDAtWGRHUmtJbm9rUkh5ZXFiOVBidw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-27T12:53:43.018922+00:00",
+   "title_ru": "Citi, BCA понизили рейтинг бразильских активов после возвращения Лулы"
   }
  ],
  "last_digest": "2026-10-26",
@@ -12547,7 +12557,6 @@
    "0000318300-26-000237",
    "0000950142-26-002860",
    "0001493152-26-048621",
-   "0000909832-26-000122",
    "0000950103-26-016189",
    "0001493152-26-048634",
    "0000950142-26-002858",
