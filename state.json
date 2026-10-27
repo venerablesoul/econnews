@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "08bf1e4a242da643": "2026-10-24T19:35:19.725270+00:00",
-  "a75708349bfe7aa4": "2026-10-24T19:35:19.725270+00:00",
   "f571215809dc045b": "2026-10-24T19:50:19.683227+00:00",
   "cae1c168230c38d0": "2026-10-24T19:50:19.683227+00:00",
   "82e18775de2dc28c": "2026-10-24T20:30:19.719136+00:00",
@@ -768,7 +766,10 @@
   "7f3c8aed318b369f": "2026-10-27T19:19:40.956304+00:00",
   "34f99aaa3740a3e9": "2026-10-27T19:24:41.023148+00:00",
   "3c38e623f397bdd0": "2026-10-27T19:29:41.088136+00:00",
-  "0330889c09eaffcb": "2026-10-27T19:29:41.088136+00:00"
+  "0330889c09eaffcb": "2026-10-27T19:29:41.088136+00:00",
+  "f4f2df2ccb5aad11": "2026-10-27T19:39:40.944101+00:00",
+  "963e11b4bc0cfa77": "2026-10-27T19:39:40.944101+00:00",
+  "9b0250365df09223": "2026-10-27T19:39:40.944101+00:00"
  },
  "recent": [
   {
@@ -6695,6 +6696,35 @@
    ],
    "score": 2,
    "ts": "2026-10-27T19:29:41.088136+00:00"
+  },
+  {
+   "title": "Higher tariffs on Canadian imports would be 'catastrophic,' Honda exec says",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOTldtRFI4Ni1TRHVGb3dzY1BvblpOVG0zMUNrSndrLUJBSHdnZWQtekdoSmM3cjRPN3N5UHRtQ0E2a0Z0M3NzOFRFTjliZW1XR3VoQjNIYTRMMktsaHZZVGFZdW41RUp2TnVhRFNzYS1RZmEzRERBVWhrTkRfQTF5YmxXTGRITVRfZlp3ZmtvLW5QblgyM3l1ZXhCVGd0Y1ROb0doaDN2WWI0Q25jNUlRS2xST2NlY1doVTRIdnZqUzg4UHpJZ21lS1BkdU5Xa2Q1?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-27T19:39:40.944101+00:00",
+   "title_ru": "Более высокие пошлины на канадский импорт будут «катастрофическими», говорит руководитель Honda",
+   "tags": [
+    "tariffs"
+   ]
+  },
+  {
+   "title": "FT узнала об обсуждении возвращения компаний США в нефтяной сектор России",
+   "link": "https://www.rbc.ru/business/27/10/2026/6ae0f9855751e43247107226",
+   "sources": [
+    "RBC"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T19:39:40.944101+00:00",
+   "title_en": "FT learned of discussions about the return of US companies to the Russian oil sector",
+   "lead": "Россия и США в рамках переговоров об урегулировании на Украине обсуждают возможное возвращение американских компаний в российский нефтяной сектор, сообщает Financial Times со ссылкой на источники, знакомые с вопросом.",
+   "lead_en": "Russia and the United States are discussing the possible return of American companies to the Russian oil sector as part of negotiations on a settlement in Ukraine, the Financial Times reports, citing sources familiar with the matter.",
+   "tags": [
+    "oil",
+    "Russia"
+   ]
   }
  ],
  "last_digest": "2026-10-27",
@@ -13110,8 +13140,8 @@
   "checked": "2026-10-27T19:09:42.080595+00:00",
   "sec_seen": [
    "0001104659-26-119132",
-   "0001104659-26-119134",
-   "0001104659-26-119131"
+   "0001104659-26-119131",
+   "0001104659-26-119134"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
