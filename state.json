@@ -768,7 +768,9 @@
   "f4f2df2ccb5aad11": "2026-10-27T19:39:40.944101+00:00",
   "963e11b4bc0cfa77": "2026-10-27T19:39:40.944101+00:00",
   "9b0250365df09223": "2026-10-27T19:39:40.944101+00:00",
-  "80b569dd368e358c": "2026-10-27T19:54:40.867572+00:00"
+  "80b569dd368e358c": "2026-10-27T19:54:40.867572+00:00",
+  "fbffce1618f71a4c": "2026-10-27T20:04:43.356827+00:00",
+  "c1142ce7d5790d06": "2026-10-27T20:04:43.356827+00:00"
  },
  "recent": [
   {
@@ -6740,6 +6742,30 @@
     "oil",
     "bonds"
    ]
+  },
+  {
+   "title": "Canadian dollar extends pullback from 5-week high ahead of BoC rate decision",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPWVdveVBPcllISlNEcmFPc1RfVEVyMDRRUWlCNUYzX2hCUDZzLVFHRUlvUnNWczVZU2lfVTFSUWk0cTdwUmEwb3Z0M19Hc3hKbk5kQlY2T0l4dUNwWUF6NEktNEZYdW5sM1doOUtXaVZtaVBTQXBIWklkWDlvR3dEcUJ0X2lvT0JxanlRQmF6WEtuQTFNS2t2OFFyUDJTN2xFZkVDS0JXVlFJU1d6aTBNbDYycw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-27T20:04:43.356827+00:00",
+   "title_ru": "Канадский доллар продолжает откат от 5-недельного максимума в преддверии решения Банка Канады по ставке",
+   "tags": [
+    "rates",
+    "dollar"
+   ]
+  },
+  {
+   "title": "Projections for 29-1161 - BLS Data",
+   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxONU9wRkFaSXRubkk5ZXNhcVZ0YndKTzRYYVlzdmlNYUlUaVg2Y2sxVE9jd2dFWDliMDVVUzV0Nk4wSXViZFE5RC1mLTU1R0tUZGY3SDFHTnBiUzVrUGZPZTIyaHJCU2JHek5MY2lnQlhPUTIyY0pya1dNQ09XeVB0LUJ3?oc=5",
+   "sources": [
+    "US Labor Statistics (BLS)"
+   ],
+   "score": 4,
+   "ts": "2026-10-27T20:04:43.356827+00:00",
+   "title_ru": "Прогнозы на 29-1161 год – данные BLS"
   }
  ],
  "last_digest": "2026-10-27",
@@ -9121,6 +9147,38 @@
    }
   ],
   "insiders": [
+   {
+    "src": "sec",
+    "id": "22a075a4531b4e3c",
+    "ticker": "AGNC",
+    "company": "AGNC Investment Corp.",
+    "who": "Peter J Federico",
+    "role": "CEO",
+    "type": "sell",
+    "value": 1798575,
+    "shares": 203382,
+    "price": 8.84,
+    "plan": true,
+    "date": "2026-10-27",
+    "disclosed": "2026-10-27",
+    "link": "https://www.sec.gov/Archives/edgar/data/1464523/000142368926000146/0001423689-26-000146-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "6c48ba3eed0c23fe",
+    "ticker": "AYI",
+    "company": "ACUITY INC. (DE)",
+    "who": "Barry R Goldman",
+    "role": "General Counsel",
+    "type": "sell",
+    "value": 1221624,
+    "shares": 3800,
+    "price": 321.48,
+    "plan": false,
+    "date": "2026-10-27",
+    "disclosed": "2026-10-27",
+    "link": "https://www.sec.gov/Archives/edgar/data/1790061/000179006126000006/0001790061-26-000006-index.htm"
+   },
    {
     "src": "sec",
     "id": "742e477b33b9d3c1",
@@ -13088,38 +13146,6 @@
     "date": "2026-10-15",
     "disclosed": "2026-10-19",
     "link": "https://www.sec.gov/Archives/edgar/data/1487292/000119312526425293/0001193125-26-425293-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "4e87783517b89e7b",
-    "ticker": "MCK",
-    "company": "MCKESSON CORP",
-    "who": "Francisco Fraga",
-    "role": "CTO",
-    "type": "sell",
-    "value": 797129,
-    "shares": 800,
-    "price": 995.8,
-    "plan": true,
-    "date": "2026-10-15",
-    "disclosed": "2026-10-19",
-    "link": "https://www.sec.gov/Archives/edgar/data/1990490/000092765326000255/0000927653-26-000255-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "b7cba63426b41e11",
-    "ticker": "WH",
-    "company": "WYNDHAM HOTELS & RESORTS, INC.",
-    "who": "Geoffrey A Ballotti",
-    "role": "CEO",
-    "type": "sell",
-    "value": 1421825,
-    "shares": 19295,
-    "price": 73.69,
-    "plan": true,
-    "date": "2026-10-15",
-    "disclosed": "2026-10-19",
-    "link": "https://www.sec.gov/Archives/edgar/data/1722684/000172268426000077/0001722684-26-000077-index.htm"
    }
   ],
   "docs": {
@@ -13154,9 +13180,20 @@
   },
   "checked": "2026-10-27T19:09:42.080595+00:00",
   "sec_seen": [
-   "0001437749-26-033633",
-   "0001104659-26-119132",
-   "0001104659-26-119134"
+   "0002006945-26-000009",
+   "0001902733-26-000113",
+   "0001302261-26-000012",
+   "0001193125-26-434173",
+   "0001477932-26-006465",
+   "0001790061-26-000006",
+   "0001423689-26-000146",
+   "0001193125-26-434170",
+   "0001193125-26-434181",
+   "0001865200-26-000089",
+   "0001193125-26-434184",
+   "0002148390-26-000013",
+   "0001193485-26-000004",
+   "0001193125-26-434177"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
