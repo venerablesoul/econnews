@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e045eab72d86de7c": "2026-10-24T15:15:19.697562+00:00",
   "b42198f5cf0a1421": "2026-10-24T15:40:19.675764+00:00",
   "ee4e10e2fc52f205": "2026-10-24T15:50:19.688099+00:00",
   "deb4ad4f16cdedc5": "2026-10-24T16:00:19.741145+00:00",
@@ -741,7 +740,8 @@
   "2baf08cdf117cf80": "2026-10-27T15:08:43.242337+00:00",
   "bc0eee89f73de26b": "2026-10-27T15:08:43.242337+00:00",
   "6eb98343715c12f8": "2026-10-27T15:13:44.121973+00:00",
-  "b1677487220e2e4c": "2026-10-27T15:13:44.121973+00:00"
+  "b1677487220e2e4c": "2026-10-27T15:13:44.121973+00:00",
+  "d5ec97d4a4f3253f": "2026-10-27T15:18:42.927308+00:00"
  },
  "recent": [
   {
@@ -6406,6 +6406,19 @@
     "bonds",
     "sanctions",
     "Russia"
+   ]
+  },
+  {
+   "title": "Czech central banker Seidler leaning towards November rate hike",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOc1BwcC13OF9GS1hPbmctT252NkpPU3J2bFBOTExDTmN3RnFqVWJYbjhpQ1dWTGNCaFJLUkhTNTh5NE1UaFFCZ2dBWDRiSlBjc2d3WmRwTlR5cENXX3NiTDJyZzQwTWQxbENsakd0ZmVEYjFGczItODVFVWdCcU9DQ3RQbWRHNldINjE0N1d6dXNHU1c4MjQ0ejhOanprNTJGbkt1dUtsNkplOWZwdVRtcFVib3g?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-27T15:18:42.927308+00:00",
+   "title_ru": "Глава ЦБ Чехии Зайдлер склоняется к повышению ставок в ноябре",
+   "tags": [
+    "rates"
    ]
   }
  ],
@@ -12824,8 +12837,7 @@
    "0001193125-26-433188",
    "0000947871-26-000949",
    "0001193125-26-433172",
-   "0000947871-26-000950",
-   "0002058897-26-000330"
+   "0000947871-26-000950"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
