@@ -672,7 +672,8 @@
   "f799fc16289facdf": "2026-10-27T10:08:09.305870+00:00",
   "c2714ff1b9f3304a": "2026-10-27T10:13:09.253536+00:00",
   "c0b7703600101e2c": "2026-10-27T10:13:09.253536+00:00",
-  "5d84ad6dfa51098a": "2026-10-27T10:18:09.329364+00:00"
+  "5d84ad6dfa51098a": "2026-10-27T10:18:09.329364+00:00",
+  "8ce1a1ad86acab2a": "2026-10-27T10:48:09.247293+00:00"
  },
  "recent": [
   {
@@ -5652,6 +5653,23 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "Bank of Canada Rate Hike Expected as Oil Prices at $115 Fuel Inflation Fears",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-27/bank-of-canada-rate-hike-expected-as-oil-prices-at-115-fuel-inflation-fears",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 11,
+   "ts": "2026-10-27T10:48:09.247293+00:00",
+   "title_ru": "Повышение ставки Банка Канады ожидается в связи с опасениями по поводу инфляции цен на нефть на уровне $ 115",
+   "lead": "The Bank of Canada is likely to hike interest rates for the first time in more than three years as policymakers grow increasingly concerned about the inflation risk posed by the cost of energy.",
+   "lead_ru": "Банк Канады, вероятно, повысит процентные ставки впервые за более чем три года, поскольку политики все больше обеспокоены инфляционным риском, связанным со стоимостью энергии.",
+   "tags": [
+    "rates",
+    "inflation",
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-26",
@@ -5668,17 +5686,17 @@
   "CNBC": 0,
   "ФРС США": 0,
   "Bloomberg": 0,
-  "Reuters": 6,
+  "Reuters": 7,
   "MarketWatch": 0,
   "Банк Англии": 0,
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
   "Fed": 0,
-  "IMF": 6,
+  "IMF": 7,
   "Kommersant": 0,
   "RBC": 0,
-  "US Labor Statistics (BLS)": 6
+  "US Labor Statistics (BLS)": 7
  },
  "charts_sent": [
   "2026-10-17-21",
@@ -12064,7 +12082,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-27T09:43:09.275535+00:00",
+  "checked": "2026-10-27T10:48:09.247293+00:00",
   "sec_seen": [
    "0000950103-26-016190",
    "0000950142-26-002861",
@@ -12090,7 +12108,6 @@
    "0001501399-26-000005",
    "0001776729-26-000001",
    "0001579561-26-000006",
-   "0001193125-26-432335",
    "0000909832-26-000125",
    "0000950103-26-016189",
    "0000909832-26-000122",
