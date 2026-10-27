@@ -61,6 +61,7 @@ S = {
     "test": {"en": "👋 Test: the economic news bot is online.", "ru": "👋 Тест: бот экономических новостей на связи."},
     "btn_market": {"en": "📈 Markets", "ru": "📈 Рынок онлайн"},
     "btn_terminal": {"en": "🖥 Terminal", "ru": "🖥 Терминал"},
+    "btn_menu": {"en": "☰ Main menu", "ru": "☰ Главное меню"},
     # charts.py
     "chart_title": {"en": "Markets", "ru": "Рынки"},
     "chart_sources": {"en": "Sources: Yahoo Finance, Bank of Russia, Moscow Exchange · data may be delayed",

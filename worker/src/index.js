@@ -216,6 +216,8 @@ function keyboard(env, chat, extra = true) {
       rows.push([chat.newsOn ? { text: X.t("btn_news_off"), callback_data: "news:off" }
         : { text: X.t("btn_news_on"), callback_data: "news:on" }]);
     }
+  } else {
+    rows.push([{ text: X.t("btn_menu"), callback_data: "menu" }]);
   }
   return { inline_keyboard: rows };
 }
@@ -241,6 +243,7 @@ export async function handleUpdate(update, env) {
     if (!raw) return;
     const chat = { ...raw, lang: await getLang(env, raw.id) };
     chat.newsOn = await newsOn(env, chat);
+    if (cq.data === "menu") return command("menu", [], "", chat, cq.from || {}, env);
     if (cq.data === "news:on" || cq.data === "news:off") {
       chat.newsOn = await setNews(env, chat, cq.from || {}, cq.data === "news:on");
       // swap the button on the pressed message, then confirm
@@ -315,6 +318,7 @@ async function command(cmd, args, rest, chat, from, env) {
     await send(env, chat, X.t("news_off"), keyboard(env, chat));
     return;
   }
+  if (cmd === "menu" || cmd === "меню") return void await send(env, chat, X.t("help_short"), keyboard(env, chat));
   if (cmd === "help" || cmd === "commands" || cmd === "помощь") return void await send(env, chat, X.t("help"), keyboard(env, chat));
   if (cmd === "stats" && owner) {
     const subs = await allSubs(env);

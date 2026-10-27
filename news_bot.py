@@ -657,19 +657,22 @@ class Telegram:
         return out
 
     def _markup(self, chat):
-        if not self.pages_url:
-            return None
         lang = self.lang_of(chat)
-        q = "?lang=ru" if lang == "ru" else ""
-        # web_app buttons (open the page inside Telegram) only work in private chats
-        webapp = not str(chat).startswith("-") and chat not in self.no_webapp
+        rows = []
+        if self.pages_url:
+            q = "?lang=ru" if lang == "ru" else ""
+            # web_app buttons (open the page inside Telegram) only work in private chats
+            webapp = not str(chat).startswith("-") and chat not in self.no_webapp
 
-        def mk(text, url):
-            return {"text": text, "web_app": {"url": url}} if webapp else {"text": text, "url": url}
-        row = [mk(i18n.t(lang, "btn_market"), self.pages_url + q)]
-        if TERMINAL_BUTTON:
-            row.append(mk(i18n.t(lang, "btn_terminal"), self.pages_url.rstrip("/") + "/terminal/" + q))
-        return json.dumps({"inline_keyboard": [row]})
+            def mk(text, url):
+                return {"text": text, "web_app": {"url": url}} if webapp else {"text": text, "url": url}
+            row = [mk(i18n.t(lang, "btn_market"), self.pages_url + q)]
+            if TERMINAL_BUTTON:
+                row.append(mk(i18n.t(lang, "btn_terminal"), self.pages_url.rstrip("/") + "/terminal/" + q))
+            rows.append(row)
+        # back to the bot's main menu (the bot server answers the "menu" button)
+        rows.append([{"text": i18n.t(lang, "btn_menu"), "callback_data": "menu"}])
+        return json.dumps({"inline_keyboard": rows})
 
     def _call(self, method, fields, files=None):
         url = f"{TG_API}/bot{self.token}/{method}"

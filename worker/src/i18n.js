@@ -85,7 +85,7 @@ const EN = {
   no_name: "no name",
   updated: (t) => `\n<i>updated ${t} MSK</i>`,
   // buttons
-  btn_market: "📈 Markets", btn_terminal: "🖥 Terminal", btn_in_terminal: "🖥 In the terminal",
+  btn_market: "📈 Markets", btn_terminal: "🖥 Terminal", btn_menu: "☰ Main menu", btn_in_terminal: "🖥 In the terminal",
   btn_news: "📰 News", btn_markets: "📊 Markets", btn_calendar: "📅 Calendar", btn_trades: "🏛 Trades",
   btn_news_off: "🔕 Turn news off", btn_news_on: "🔔 Turn news on",
   news_off: "🔕 News is off — the bot won't send you the mailing. Commands and buttons still work. To get the news again, press «🔔 Turn news on» or /start",
@@ -364,7 +364,7 @@ const RU = {
   stats_since: "с",
   no_name: "без имени",
   updated: (t) => `\n<i>обновлено ${t} МСК</i>`,
-  btn_market: "📈 Рынок онлайн", btn_terminal: "🖥 Терминал", btn_in_terminal: "🖥 В терминале",
+  btn_market: "📈 Рынок онлайн", btn_terminal: "🖥 Терминал", btn_menu: "☰ Главное меню", btn_in_terminal: "🖥 В терминале",
   btn_news: "📰 Новости", btn_markets: "📊 Рынки", btn_calendar: "📅 Календарь", btn_trades: "🏛 Сделки",
   btn_news_off: "🔕 Отключить новости", btn_news_on: "🔔 Включить новости",
   news_off: "🔕 Новости отключены — рассылка больше не приходит. Команды и кнопки работают как раньше. Чтобы снова получать новости, нажмите «🔔 Включить новости» или /start",

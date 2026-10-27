@@ -580,6 +580,14 @@ await test("news on/off button: subscriber and owner", async () => {
   assert.equal(r.json.owner_off, false);
 });
 
+await test("main menu button on news replies", async () => {
+  let out = await msg("/news", 777);
+  assert.ok(buttons(out).some((b) => b.callback_data === "menu"));
+  out = await cb("menu", 777);
+  assert.ok(buttons(out).some((b) => b.callback_data === "news"), "the menu has the full button set");
+  noErrors(out);
+});
+
 await test("bot (English): macro, IPO, Moscow Exchange", async () => {
   let out = await msg("/macro"); noErrors(out);
   assert.match(texts(out), /United States: GDP 2\.0 \/ 2\.1 · CPI 2\.8 \/ 2\.4/);
