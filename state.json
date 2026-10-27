@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "988ebacbfd134936": "2026-10-24T17:40:19.813241+00:00",
   "88ce2c9ba99c11fb": "2026-10-24T17:45:19.739733+00:00",
   "06657573b8574874": "2026-10-24T18:05:19.707462+00:00",
   "ffaaab5841015924": "2026-10-24T18:35:19.708997+00:00",
@@ -759,22 +758,10 @@
   "4a7c4ddf2999f514": "2026-10-27T17:13:43.000942+00:00",
   "39d500e8670147c4": "2026-10-27T17:18:43.012695+00:00",
   "581f8d6e07fe269b": "2026-10-27T17:23:42.980948+00:00",
-  "879a2f9e2dd3f878": "2026-10-27T17:28:43.009166+00:00"
+  "879a2f9e2dd3f878": "2026-10-27T17:28:43.009166+00:00",
+  "1db7452a004fa418": "2026-10-27T17:44:41.181968+00:00"
  },
  "recent": [
-  {
-   "title": "Houthis say they attacked Saudi oil sites, strikes reported on Yemen's Aden",
-   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNU1JpTkpxd3RUSFgwb29mWkRuSmg5UFd5d1RMQkZMdE5tV3F4cEN6SXFOODhTQUZTbTZucHJGVnpxMWpGZVFuSXJzZ045Q0o1Uzh5NFNvVENFX1M2dFQ0NzRGYjUtWk9TYjBWcldGNS1hY21yS2IyOXBsX29hcFg5N2ZENUlIV2oyTE1OT3hJQUFaS1pjTHV3VnZUTkRWbVFnd0JqYV9iZmVwUW4xcGNVOUdUZmgtaWpkVGdsVzJ1SXR1U1hyWG5uWg?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-24T17:40:19.813241+00:00",
-   "title_ru": "Хуситы говорят, что они атаковали саудовские нефтяные объекты, об ударах сообщили в йеменском Адене",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "Nigeria's Tinubu launches re-election campaign as economic pain tests support",
    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQb2pnT1VmVHRrU1I2MHl3cGFQQk51cUx2S0NhUHBydDBnQWtpbndGWm54NDl0OGhhRUVIUlJCN0hLcWNvVmROQjJ5VGYyekhPNEVTTU5oMVRiM2VQbFBmaWwwTkhSUjFUQ3N3d016YlZZdFdfaGx4WmwtVjNlZkNqOGhPNVpLRFVCRmZITU10X3hhOHJ0bU5NUUN1aU5TLW8tOFNxRnloS3ZDM2xxQU9qaWJWVmowRkJRQjV1d3Viaw?oc=5",
@@ -6589,6 +6576,19 @@
    "lead_en": "The rise in prices for gasoline and diesel fuel due to the conflict in the Middle East cost consumers in 169 countries analyzed an additional $468 billion ($60 per inhabitant), CREA analysts calculated.",
    "tags": [
     "dollar"
+   ]
+  },
+  {
+   "title": "Boeing shares plunge on slower-than-expected 737 production, weaker free cash flow outlook",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPNnZ1c1Q5Q2tSYnRpdnppV25UNEpNekRsVGhpbkdLVk95QjBkenF1Ni0tOFJFYThrcXlnYjhRbUJWMlo2WHlkLUIzNlJ5UUpoN1p3VUh3b1p5TlJlZHBpaENqVmY4RDZPVTFsRHhMZXJKQzhseUM1V2U4TjMySHdvNzZ1VE9MbnI4ajV1dklVemhwWFRrZmtYWF9qYUNjUTFLOVRMaGNVUG0wSDhHcEZMbXNjcWpHWGZqeUEzc3puMGZwd2FvVU93?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T17:44:41.181968+00:00",
+   "title_ru": "Акции Boeing упали из-за более медленного, чем ожидалось, производства 737 и более слабых прогнозов по свободному денежному потоку",
+   "tags": [
+    "markets"
    ]
   }
  ],
@@ -13009,7 +13009,8 @@
    "0000006955-26-000093",
    "0000006955-26-000095",
    "0000318300-26-000238",
-   "0001634144-26-000011"
+   "0001634144-26-000011",
+   "0000006955-26-000099"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
