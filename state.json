@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "8316697ea077bbc5": "2026-10-24T17:10:19.672453+00:00",
   "4134639cb2ca0247": "2026-10-24T17:25:19.687618+00:00",
   "988ebacbfd134936": "2026-10-24T17:40:19.813241+00:00",
   "88ce2c9ba99c11fb": "2026-10-24T17:45:19.739733+00:00",
@@ -756,24 +755,11 @@
   "a24d522e0b46b725": "2026-10-27T16:53:43.112342+00:00",
   "bc59f3b91f47cf53": "2026-10-27T16:53:43.112342+00:00",
   "61379ffea592732e": "2026-10-27T16:58:42.942851+00:00",
-  "d9d8714480d48ec6": "2026-10-27T16:58:42.942851+00:00"
+  "d9d8714480d48ec6": "2026-10-27T16:58:42.942851+00:00",
+  "ed49b582aaf1c773": "2026-10-27T17:13:43.000942+00:00",
+  "4a7c4ddf2999f514": "2026-10-27T17:13:43.000942+00:00"
  },
  "recent": [
-  {
-   "title": "Embracing the Bond Market: Masters in Business with Robin Wigglesworth",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-24/embracing-the-bond-market-masters-in-business-with-robin-wigglesworth",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-24T17:10:19.672453+00:00",
-   "title_ru": "Охват рынка облигаций: магистры бизнеса с Робином Уигглсвортом",
-   "lead": "Barry speaks with Robin Wigglesworth, editor of Financial Times' Alphaville blog and author of the new book 'A Fabulous Debt: The Epic Story of How Bonds Built the Modern World'.",
-   "lead_ru": "Барри беседует с Робином Уигглсвортом, редактором блога Alphaville Financial Times и автором новой книги «Невероятный долг: эпическая история о том, как облигации создали современный мир».",
-   "tags": [
-    "bonds"
-   ]
-  },
   {
    "title": "Paris Police Use Tear Gas, Water Cannon to Disperse Protesters",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQbVFScDJ1SVVuME1jTXpQV21DNkVFSHJydi1ycHJQVEUzVS1GN0hEbUVVWlRaY25Zc2lsUXg1ci1NZDNWV3RDU0Njc194X0xXVkluZndYdWNnVTFkQVFjbmlDUF8wRU9UTEJDanJhREFNZDhRVk80dW5ndXhCazFMZm15a2FHNGJEZmRubmdKM1F4dGdSX0U2NlVidEdXSlphZzB0aGJGZ2w3UVBYSl85Ym5tQ2Q3dw?oc=5",
@@ -6568,6 +6554,19 @@
    "lead_ru": "Saudi Aramco предлагала спотовые поставки нефти европейским покупателям как в этом месяце, так и в следующем, по словам человека, знакомого с этим вопросом, что является признаком того, что компания надеется компенсировать потери поставок, когда решающий экспортный...",
    "tags": [
     "oil"
+   ]
+  },
+  {
+   "title": "Google Upgrades AI World Model That Rattled Video Game Stocks",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQbUx6Z0xYcXpVWEdaSGswN0tVc3hOdmFXZmNpLWxreG5sallSc0RnbHlQcVpXWGZwRzZfZW5JM19nTkYzRVlyLWVGRktZbG4waVlPajJnVEp1aXJ2TEVMM29sbEJYTFlvY2Q4M2Nna3VLeHNTOEhiN1ZYalplUWRWN0xfbE16RlpfMjdSaFd4Ym1qU1kxWmFKNWl0djluT3VOM3JMN1lycDhPQ1N3UHFaRnln?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T17:13:43.000942+00:00",
+   "title_ru": "Google модернизирует мировую модель искусственного интеллекта, которая потрясла акции видеоигр",
+   "tags": [
+    "markets"
    ]
   }
  ],
@@ -12984,8 +12983,8 @@
   "checked": "2026-10-27T17:03:43.133386+00:00",
   "sec_seen": [
    "0001589039-26-000016",
-   "0001634144-26-000011",
    "0000318300-26-000238",
+   "0001634144-26-000011",
    "0001510281-26-000378"
   ],
   "errors": {
