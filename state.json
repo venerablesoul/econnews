@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "09b29eacb314fe99": "2026-10-24T10:29:23.597848+00:00",
-  "1ea1decc178404d8": "2026-10-24T10:34:23.556560+00:00",
   "0bc5eeb12e462f1f": "2026-10-24T10:49:23.561618+00:00",
   "4d9d8233dcfdb17d": "2026-10-24T10:59:23.606303+00:00",
   "9a5560ba7dce5032": "2026-10-24T11:14:23.633131+00:00",
@@ -677,15 +675,6 @@
   "5d84ad6dfa51098a": "2026-10-27T10:18:09.329364+00:00"
  },
  "recent": [
-  {
-   "title": "Экс-глава Минфина США предупредил о риске экономических потрясений",
-   "link": "https://www.rbc.ru/economics/24/10/2026/6adc525eb5c584671670e2f0",
-   "sources": [
-    "RBC"
-   ],
-   "score": 2,
-   "ts": "2026-10-24T10:29:23.597848+00:00"
-  },
   {
    "title": "Gulf Nation AI Ambitions Face Risks at Home and Abroad: New Economy",
    "link": "https://www.bloomberg.com/news/newsletters/2026-10-24/gulf-nation-ai-ambitions-face-risks-at-home-and-abroad-new-economy",
@@ -5679,17 +5668,17 @@
   "CNBC": 0,
   "ФРС США": 0,
   "Bloomberg": 0,
-  "Reuters": 3,
+  "Reuters": 5,
   "MarketWatch": 0,
   "Банк Англии": 0,
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
   "Fed": 0,
-  "IMF": 3,
+  "IMF": 5,
   "Kommersant": 0,
   "RBC": 0,
-  "US Labor Statistics (BLS)": 3
+  "US Labor Statistics (BLS)": 5
  },
  "charts_sent": [
   "2026-10-17-21",
@@ -12094,7 +12083,6 @@
    "0001035422-26-000018",
    "0001104659-26-118926",
    "0001193125-26-432556",
-   "0001493152-26-048603",
    "0000950142-26-002859",
    "0000905148-26-004561",
    "0000909832-26-000120",
