@@ -796,7 +796,9 @@
   "ee24bdddc63af3aa": "2026-10-27T22:09:44.654034+00:00",
   "a81542abb3aaf9b6": "2026-10-27T22:09:44.654034+00:00",
   "088c304f108d8f9d": "2026-10-27T22:14:44.579483+00:00",
-  "99cc4e823e23aef2": "2026-10-27T22:24:44.604853+00:00"
+  "99cc4e823e23aef2": "2026-10-27T22:24:44.604853+00:00",
+  "bd25db671486c157": "2026-10-27T22:34:44.583259+00:00",
+  "31eae68c2dbe5343": "2026-10-27T22:34:44.583259+00:00"
  },
  "recent": [
   {
@@ -7082,6 +7084,27 @@
    "score": 3,
    "ts": "2026-10-27T22:24:44.604853+00:00",
    "title_ru": "Бум центров обработки данных стимулирует заказы Wärtsilä, но среднесрочные цели разочаровывают голодный рынок"
+  },
+  {
+   "title": "IMF Strikes Preliminary Argentina Deal As Market Return Dims",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-27/imf-strikes-preliminary-argentina-deal-as-market-return-dims",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-27T22:34:44.583259+00:00",
+   "title_ru": "МВФ заключает предварительную сделку с Аргентиной, поскольку доходность рынка падает",
+   "lead": "The International Monetary Fund reached a staff-level agreement with Argentina on the third review of its $20 billion loan program, toning down language around the nation’s return to international capital markets.",
+   "lead_ru": "Международный валютный фонд достиг соглашения с Аргентиной о третьем пересмотре своей кредитной программы на $ 20 млрд, смягчив язык вокруг возвращения страны на международные рынки капитала."
+  },
+  {
+   "title": "Chancellor targets cost of living crisis in budget for a ‘difficult moment’",
+   "link": "https://www.theguardian.com/uk-news/2026/oct/27/john-healey-budget-help-with-cost-of-living-deferring-decisions-on-tax-and-spending",
+   "sources": [
+    "The Guardian"
+   ],
+   "score": 2,
+   "ts": "2026-10-27T22:34:44.583259+00:00"
   }
  ],
  "last_digest": "2026-10-27",
@@ -10118,6 +10141,22 @@
     "date": "2026-10-23",
     "disclosed": "2026-10-27",
     "link": "https://www.sec.gov/Archives/edgar/data/1008015/000095014226002870/0000950142-26-002870-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "cc6130a61bb21786",
+    "ticker": "AIOK",
+    "company": "AI OKTO Corp.",
+    "who": "Petros Panagiotis Panagiotidis",
+    "role": "CEO",
+    "type": "buy",
+    "value": 1059604,
+    "shares": 130000,
+    "price": 8.15,
+    "plan": false,
+    "date": "2026-10-23",
+    "disclosed": "2026-10-27",
+    "link": "https://www.sec.gov/Archives/edgar/data/2118775/000114036126040923/0001140361-26-040923-index.htm"
    },
    {
     "src": "sec",
@@ -13446,22 +13485,6 @@
     "date": "2026-10-19",
     "disclosed": "2026-10-19",
     "link": "https://www.sec.gov/Archives/edgar/data/1680378/000090266426004215/0000902664-26-004215-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "888c5b96e9e6aa4e",
-    "ticker": "CTY",
-    "company": "CITY THERAPEUTICS, INC.",
-    "who": "Robert Nelsen",
-    "role": "Director, 10% owner",
-    "type": "buy",
-    "value": 3060000,
-    "shares": 170000,
-    "price": 18.0,
-    "plan": false,
-    "date": "2026-10-19",
-    "disclosed": "2026-10-19",
-    "link": "https://www.sec.gov/Archives/edgar/data/2143850/000110465926116965/0001104659-26-116965-index.htm"
    }
   ],
   "docs": {
@@ -13500,6 +13523,7 @@
    "0001777342-26-000003",
    "0001225208-26-008535",
    "0001180017-26-000020",
+   "0001193125-26-434602",
    "0001628280-26-067667",
    "0001675457-26-000017",
    "0001592712-26-000017",
@@ -13520,6 +13544,7 @@
    "0001209181-26-000009",
    "0001707480-26-000016",
    "0001592970-26-000016",
+   "0001493152-26-048761",
    "0002157254-26-000004",
    "0001626259-26-000016",
    "0001675476-26-000014",
@@ -13530,7 +13555,9 @@
    "0000908834-26-000501",
    "0001341439-26-000121",
    "0002159752-26-000006",
+   "0001193125-26-434605",
    "0001493152-26-048754",
+   "0001140361-26-040923",
    "0001225208-26-008536",
    "0001225208-26-008538",
    "0001225208-26-008534",
