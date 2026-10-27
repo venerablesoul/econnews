@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e3c9e38b78dc74cc": "2026-10-24T20:55:47.207380+00:00",
-  "720054f2c29aea9a": "2026-10-24T20:55:47.207380+00:00",
-  "525f6162cc711330": "2026-10-24T21:00:47.319232+00:00",
   "24c01e0e944f16f6": "2026-10-24T21:35:47.262383+00:00",
   "47b432bae73c0bc1": "2026-10-24T21:40:47.230337+00:00",
   "607fc20158f2bc1e": "2026-10-24T21:40:47.230337+00:00",
@@ -776,25 +773,12 @@
   "6c60aef9d310b278": "2026-10-27T20:44:45.583234+00:00",
   "e58bc47889babc84": "2026-10-27T20:44:45.583234+00:00",
   "26d5657902248e3b": "2026-10-27T20:44:45.583234+00:00",
-  "c3e0fc8147548d9e": "2026-10-27T20:49:44.619189+00:00"
+  "c3e0fc8147548d9e": "2026-10-27T20:49:44.619189+00:00",
+  "820479e5784044e0": "2026-10-27T20:59:44.670893+00:00",
+  "68ad19a88905bc90": "2026-10-27T21:04:44.700422+00:00",
+  "ded185d9e3a8981d": "2026-10-27T21:04:44.700422+00:00"
  },
  "recent": [
-  {
-   "title": "Fed Set to Lead G7 Trio in Hawkish Rate Pause: Eco Week Ahead",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-24/fed-set-to-lead-g7-trio-in-hawkish-rate-pause-eco-week-ahead",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-24T20:55:47.207380+00:00",
-   "title_ru": "ФРС намерена возглавить тройку стран G7 в условиях приостановки процентных ставок: впереди экономическая неделя",
-   "lead": "The Federal Reserve and its peers in the euro zone and Japan will probably keep interest rates steady in the coming week, opting to bide their time before potential further hikes.",
-   "lead_ru": "Федеральная резервная система и ее коллеги в еврозоне и Японии, вероятно, сохранят процентные ставки на стабильном уровне на предстоящей неделе, решив выждать время перед возможным дальнейшим повышением.",
-   "tags": [
-    "Fed",
-    "rates"
-   ]
-  },
   {
    "title": "Takahiro Yamamoto, Taiyo Oil Co: Profile and Biography",
    "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9abGFPS05mTWxEMHNJZ0xVU0NsZ1FSVmJhWFA5NnZ0SHBwT0RFdldoZ3kwU0J5bkVFTnNXakxOcWVGNnF1aHJ5WGhRNTBOUTFPZUZmY05VUzBQQ2hBYlRjR0dHdHJEaEgyZTNINWJadTNmZ2xtejdj?oc=5",
@@ -6881,6 +6865,29 @@
    "score": 3,
    "ts": "2026-10-27T20:44:45.583234+00:00",
    "title_ru": "Финансирование с помощью ИИ стимулирует рост частного кредитования по мере роста рисков рефинансирования, говорит Moody’s"
+  },
+  {
+   "title": "IMF Reaches Staff-Level Agreement on the Third Review under Argentina’s Extended Fund Facility Arrangement",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQQ3lTUUhPc0ZqMGlZZjVSSjRVTWwyWThLUFpOQ2ZYNkxpZE90T1g2QXFJa210ODJHVTVBYTVwaW55U19IazZySDhhcnNJcGhiNEpmbnF5WkxYWlU2dnIySUY1c055Y0Fob2NEOG10SEtqQ0taSjlZZHl3UnV5ZktSSW10bW5lT1dJeG9CWmJ0X2pMekJqMDZveHlxYVRXckRleWQxT3FoM2hIMEZCYXZqX1hCS2g?oc=5",
+   "sources": [
+    "IMF"
+   ],
+   "score": 5,
+   "ts": "2026-10-27T21:04:44.700422+00:00",
+   "title_ru": "МВФ достиг соглашения на уровне персонала о третьем обзоре в рамках механизма расширенного финансирования Аргентины"
+  },
+  {
+   "title": "Trump says he will visit tanker in Texas with first oil from Venezuela deal",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQS2xReG5IbDd2VEVRZXJ1VUtaNGtlSFhpa3paSkFQVWhLWVk3NzNkendFMXNTZ3p5b3R6aTJTUzluYk1PUGlySXNEaDZPdXN2ZEx2WTF0SlRZZ1lmRmtRZnpFSVU4WGp0ZkdfY18tQlYwck9GbVBRUXR0Q2x2bVlkWDdMbVNFSVVZNnh2bXpjMm9hRjd3eThsYXRqQ0JhT05hc2hIWG93U005R2pFOXlORmZmNV9uYW02cGM4?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T21:04:44.700422+00:00",
+   "title_ru": "Трамп заявил, что посетит танкер в Техасе с первой сделкой по нефти из Венесуэлы",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-27",
@@ -9565,6 +9572,22 @@
     "date": "2026-10-26",
     "disclosed": "2026-10-27",
     "link": "https://www.sec.gov/Archives/edgar/data/1639304/000089706926001872/0000897069-26-001872-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "817e0d305968d979",
+    "ticker": "NTRS",
+    "company": "NORTHERN TRUST CORP",
+    "who": "Susan Cohen Levy",
+    "role": "General Counsel",
+    "type": "sell",
+    "value": 3517462,
+    "shares": 20906,
+    "price": 168.25,
+    "plan": false,
+    "date": "2026-10-26",
+    "disclosed": "2026-10-27",
+    "link": "https://www.sec.gov/Archives/edgar/data/1607570/000160757026000008/0001607570-26-000008-index.htm"
    },
    {
     "src": "sec",
@@ -13245,22 +13268,6 @@
     "date": "2026-10-16",
     "disclosed": "2026-10-19",
     "link": "https://www.sec.gov/Archives/edgar/data/1843236/000119312526424723/0001193125-26-424723-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "c2218d1bb8e0c398",
-    "ticker": "FUL",
-    "company": "FULLER H B CO",
-    "who": "Muhammad Shahbaz Malik",
-    "role": "Senior VP, BAS",
-    "type": "buy",
-    "value": 25000,
-    "shares": 479,
-    "price": 52.23,
-    "plan": false,
-    "date": "2026-10-16",
-    "disclosed": "2026-10-19",
-    "link": "https://www.sec.gov/Archives/edgar/data/1621150/000122520826008441/0001225208-26-008441-index.htm"
    }
   ],
   "docs": {
@@ -13295,19 +13302,25 @@
   },
   "checked": "2026-10-27T20:09:44.686763+00:00",
   "sec_seen": [
-   "0001225208-26-008526",
+   "0001493152-26-048733",
+   "0002093489-26-000006",
+   "0000904454-26-000547",
    "0001768695-26-000009",
-   "0001140361-26-040906",
-   "0001140361-26-040908",
+   "0001493152-26-048732",
+   "0001078075-26-000146",
+   "0001872111-26-000015",
    "0001314152-26-000215",
-   "0001610717-26-000444",
+   "0001193125-26-434410",
    "0000897069-26-001872",
+   "0000012208-26-000050",
    "0001314152-26-000214",
    "0001628280-26-067635",
-   "0001628280-26-067619",
+   "0001510281-26-000380",
+   "0001493152-26-048731",
+   "0001078075-26-000147",
    "0001314152-26-000216",
    "0001314152-26-000217",
-   "0001783879-26-000166",
+   "0001607570-26-000008",
    "0001193125-26-434363",
    "0001314152-26-000218",
    "0001314152-26-000213"
