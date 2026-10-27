@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e7b8657f8298fbb3": "2026-10-24T03:53:26.752022+00:00",
   "5c966f9cfd30277c": "2026-10-24T04:08:26.748587+00:00",
   "66adc73f3a49d100": "2026-10-24T04:08:26.748587+00:00",
   "996ee4c1f8d1d321": "2026-10-24T04:19:00.387165+00:00",
@@ -610,7 +609,8 @@
   "6b69939493ae074c": "2026-10-27T03:02:36.855415+00:00",
   "51511603c12b50bb": "2026-10-27T03:12:36.914268+00:00",
   "d268709fca5747c9": "2026-10-27T03:37:36.889633+00:00",
-  "532d954e856135ac": "2026-10-27T03:42:36.865177+00:00"
+  "532d954e856135ac": "2026-10-27T03:42:36.865177+00:00",
+  "82ad20da6aec1b86": "2026-10-27T03:57:36.849758+00:00"
  },
  "recent": [
   {
@@ -4862,6 +4862,21 @@
    "lead_ru": "По словам Боба Микеле из JPMorgan Asset Management, доходность рынка облигаций США может составить от 7% до 8% в течение следующих 12 месяцев.",
    "tags": [
     "bonds"
+   ]
+  },
+  {
+   "title": "Why Indonesia Is Reducing Gas Exports to Singapore",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-27/why-indonesia-is-reducing-gas-exports-to-singapore",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-27T03:57:36.849758+00:00",
+   "title_ru": "Почему Индонезия сокращает экспорт газа в Сингапур",
+   "lead": "Indonesia unexpectedly unsettled its relationship with neighboring Singapore after it announced in late October that it would reduce natural gas exports to the city-state.",
+   "lead_ru": "Индонезия неожиданно нарушила свои отношения с соседним Сингапуром после того, как в конце октября объявила, что сократит экспорт природного газа в город-государство.",
+   "tags": [
+    "gas"
    ]
   }
  ],
