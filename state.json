@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "deb4ad4f16cdedc5": "2026-10-24T16:00:19.741145+00:00",
   "87ccab3bd4da7b41": "2026-10-24T16:05:19.740762+00:00",
   "89e81438e487d406": "2026-10-24T16:35:19.689718+00:00",
   "ca9364e330cb6191": "2026-10-24T16:40:19.853787+00:00",
@@ -748,7 +747,9 @@
   "960575cb1d3770a0": "2026-10-27T15:48:42.952993+00:00",
   "f2b6fcc890f517f2": "2026-10-27T15:48:42.952993+00:00",
   "4b7af1d4a1539ce1": "2026-10-27T15:58:43.030029+00:00",
-  "78a102de8c07387b": "2026-10-27T15:58:43.030029+00:00"
+  "78a102de8c07387b": "2026-10-27T15:58:43.030029+00:00",
+  "cebdd337c4a0285e": "2026-10-27T16:03:43.609452+00:00",
+  "d99585dcd7d3948b": "2026-10-27T16:03:43.609452+00:00"
  },
  "recent": [
   {
@@ -6488,6 +6489,16 @@
    "title_ru": "Millennium Taps прогнозирует рыночные данные в поисках торговых преимуществ",
    "lead": "Millennium Management is exploring ways to use prediction markets to inform its trading strategies, joining a growing roster of Wall Street firms dipping their toes into the space.",
    "lead_ru": "Millennium Management изучает способы использования рынков прогнозов для обоснования своих торговых стратегий, присоединяясь к растущему списку фирм с Уолл-стрит, активно работающих в этой сфере."
+  },
+  {
+   "title": "Advent raises $30 billion for latest buyout, mid-market funds",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQaWZ3QnkyMzNBUW80dk5iTjZLWGpSN1pTVWVVUlp4bDY2VUV1U1dKYUdhYVp0NEJtWmJER3dDamRYZnRzeUVPM3hFQ2NTZExfYl9sVHotTDNKRTJwQ0w4RmhWZWxvV0RwQ0hhTUZBSzY1VW0ydHNJaXNHR1RJeFV3Wm1fUmIzTkFsamoxcjF2bm9ZWVJuQzJFb3dueHZBbW9jUzloeGlVVk9LMHpjU0lIdQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T16:03:43.609452+00:00",
+   "title_ru": "Advent привлекает 30 миллиардов долларов для последнего выкупа, фонды среднего бизнеса"
   }
  ],
  "last_digest": "2026-10-26",
@@ -12904,7 +12915,6 @@
   "sec_seen": [
    "0000947871-26-000956",
    "0000947871-26-000953",
-   "0000947871-26-000951",
    "0000912282-26-001404",
    "0000947871-26-000957",
    "0000947871-26-000954",
