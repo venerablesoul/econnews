@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "3b6bdc5f5df22bf9": "2026-10-24T14:44:23.618583+00:00",
   "d06589c2d735c223": "2026-10-24T14:54:23.575642+00:00",
   "7367cef58a08b8a0": "2026-10-24T14:54:23.575642+00:00",
   "de2ce1014a77d03b": "2026-10-24T14:54:23.575642+00:00",
@@ -741,15 +740,6 @@
   "3fd7ac01c35fb228": "2026-10-27T14:38:42.999436+00:00"
  },
  "recent": [
-  {
-   "title": "Looking for AI stocks that are still cheap? Consider these two under-the-radar picks.",
-   "link": "https://www.marketwatch.com/story/looking-for-ai-stocks-that-are-still-cheap-consider-these-two-under-the-radar-picks-b4ca2b28?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-24T14:44:23.618583+00:00"
-  },
   {
    "title": "UK Economy Storms Ahead for Now, Despite Sodden Consumers",
    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOVTJ5MURfZ3BlR1drZGljcVFDbWRCTW9oRXFEQl9McVkzVVdUWERVbFZ0RjFzVGNHNWZYZXdGVFZZeHV3aHBONGlZVWwtRENwRi1oWEhJbUJSS1FPOUw0T2V1dDhyYXRzZEFBRE1reFpfRDhOdnczTGRjbUFsd0VVbFUyazJNMmxnc3NkWkhZaVZIWTRtMDBlX05PU0IwSmtObTM5czVHbEdJQTJqNm1B?oc=5",
@@ -12776,7 +12766,8 @@
    "0000947871-26-000947",
    "0001368766-26-000005",
    "0001628280-26-067460",
-   "0000947871-26-000948"
+   "0000947871-26-000948",
+   "0002058897-26-000330"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
