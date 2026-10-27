@@ -674,7 +674,8 @@
   "5d84ad6dfa51098a": "2026-10-27T10:18:09.329364+00:00",
   "8ce1a1ad86acab2a": "2026-10-27T10:48:09.247293+00:00",
   "b8c4260386d77fec": "2026-10-27T10:53:09.255229+00:00",
-  "5f10190e782e392a": "2026-10-27T10:53:09.255229+00:00"
+  "5f10190e782e392a": "2026-10-27T10:53:09.255229+00:00",
+  "5158a546adaf3198": "2026-10-27T10:58:09.308573+00:00"
  },
  "recent": [
   {
@@ -5684,6 +5685,21 @@
    ],
    "score": 1,
    "ts": "2026-10-27T10:53:09.255229+00:00"
+  },
+  {
+   "title": "GM to Move Stock Listing to Tech-Focused Nasdaq, Leaving NYSE",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-27/gm-to-move-stock-listing-to-tech-focused-nasdaq-leaving-nyse",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-27T10:58:09.308573+00:00",
+   "title_ru": "GM переведет листинг акций на Nasdaq, ориентированный на технологии, и покинет NYSE",
+   "lead": "General Motors Co.",
+   "lead_ru": "General Motors",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-26",
@@ -5700,17 +5716,17 @@
   "CNBC": 0,
   "ФРС США": 0,
   "Bloomberg": 0,
-  "Reuters": 8,
+  "Reuters": 9,
   "MarketWatch": 0,
   "Банк Англии": 0,
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
   "Fed": 0,
-  "IMF": 8,
+  "IMF": 9,
   "Kommersant": 0,
   "RBC": 0,
-  "US Labor Statistics (BLS)": 8
+  "US Labor Statistics (BLS)": 9
  },
  "charts_sent": [
   "2026-10-17-21",
