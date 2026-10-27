@@ -662,7 +662,9 @@
   "51514a5e928f6b88": "2026-10-27T08:23:09.275595+00:00",
   "1900f392f00e2d60": "2026-10-27T08:28:09.241101+00:00",
   "3a75d7373b422a0e": "2026-10-27T08:28:09.241101+00:00",
-  "985224fa8646181a": "2026-10-27T08:28:09.241101+00:00"
+  "985224fa8646181a": "2026-10-27T08:28:09.241101+00:00",
+  "0f35229a60246330": "2026-10-27T08:38:09.338288+00:00",
+  "9fd46876a7d9e537": "2026-10-27T08:38:09.338288+00:00"
  },
  "recent": [
   {
@@ -5491,6 +5493,34 @@
    "lead_ru": "Европейское управление по ценным бумагам и рынкам внимательно следит за рыночной активностью на фоне волатильности на рынках суверенных облигаций и оценок акций высокотехнологичных компаний.",
    "tags": [
     "bonds"
+   ]
+  },
+  {
+   "title": "European Stocks Pulled Lower by Banks as HSBC Results Disappoint",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-27/european-stocks-pulled-lower-by-banks-as-hsbc-results-disappoint",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-27T08:38:09.338288+00:00",
+   "title_ru": "Европейские акции упали из-за разочаровывающих результатов HSBC",
+   "lead": "European stocks fell for a third day in four as disappointing earnings from benchmark heavyweight HSBC Holdings Plc dragged down the banking sector.",
+   "lead_ru": "Европейские фондовые индексы падают третий день из четырех, так как разочаровывающие отчеты тяжеловеса HSBC Holdings Plc повлекли за собой падение банковского сектора.",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "Europe shares fall as HSBC weighs, France protests keep investors wary",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOVnBYek5KdDdhMXN1SGw1TldlR19aLTR0NG91alpsSFZ1dW5mVXpraUVDQ0VVLXQ0OEZ2VDNtbUhmZG1rTGUzZVBYcHBGMW1LVlNpLTBsamdyM3dvYmkzMjQweVZKeGxBRURYYnRrN2xndUpVVnlpajFCbXhpdWJkUHlDY1QyT3BMa3VHUGJCZVFmZWRxUVRpaUZ6ZGZTaWFGREJXdm1CZjd4LTB1VjIzUQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-27T08:38:09.338288+00:00",
+   "title_ru": "Европейские акции падают на фоне негативных последствий HSBC, протесты во Франции заставляют инвесторов насторожиться",
+   "tags": [
+    "markets"
    ]
   }
  ],
@@ -11904,7 +11934,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-27T07:38:09.259744+00:00",
+  "checked": "2026-10-27T08:38:09.338288+00:00",
   "sec_seen": [
    "0000950103-26-016190",
    "0000950142-26-002861",
