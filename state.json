@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "a57203ae6ff7e6c8": "2026-10-25T12:36:42.578727+00:00",
   "3ed6cb55f6943682": "2026-10-25T12:46:42.620370+00:00",
   "e1a225428f4f1189": "2026-10-25T12:46:42.620370+00:00",
   "fdd2315ac72e7099": "2026-10-25T13:02:19.718020+00:00",
@@ -928,24 +927,11 @@
   "be068e1892d2832f": "2026-10-28T12:36:22.885613+00:00",
   "138793c82f5ee718": "2026-10-28T12:36:22.885613+00:00",
   "6f0c5cacbc7770c8": "2026-10-28T12:36:22.885613+00:00",
-  "732ff9c3b7190f2f": "2026-10-28T12:36:22.885613+00:00"
+  "732ff9c3b7190f2f": "2026-10-28T12:36:22.885613+00:00",
+  "ea9c6cafbc347513": "2026-10-28T12:41:22.936969+00:00",
+  "39d760c47e5ce509": "2026-10-28T12:41:22.936969+00:00"
  },
  "recent": [
-  {
-   "title": "What’s Happening in EM: Bond Investors Turn to Developing World",
-   "link": "https://www.bloomberg.com/news/audio/2026-10-25/what-s-happening-in-em-bond-investors-turn-to-developing-world",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-25T12:36:42.578727+00:00",
-   "title_ru": "Что происходит в развивающихся странах: инвесторы в облигации обращаются к развивающимся странам",
-   "lead": "This week, Mpho Hlakudi and Selcuk Gokoluk discuss how some of the world’s biggest asset managers increase their exposure to emerging markets despite the surge in US Treasury yields, weakening a traditional correlation in…",
-   "lead_ru": "На этой неделе Мфо Хлакуди и Сельчук Гоколук обсуждают, как некоторые из крупнейших в мире управляющих активами увеличивают свое присутствие на развивающихся рынках, несмотря на рост доходности казначейских облигаций США, ослабляя традиционную корреляцию в…",
-   "tags": [
-    "bonds"
-   ]
-  },
   {
    "title": "Emerging Debt Outruns Treasuries as Rich-World Fiscal Fears Grow",
    "link": "https://www.bloomberg.com/news/articles/2026-10-25/emerging-debt-outruns-treasuries-as-rich-world-fiscal-fears-grow",
@@ -8615,6 +8601,31 @@
    "score": 3,
    "ts": "2026-10-28T12:36:22.885613+00:00",
    "title_ru": "Индийские порты Адани зафиксировали более высокую квартальную прибыль от роста объема грузов"
+  },
+  {
+   "title": "US Trade Gap Widens to Biggest Since March 2025",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-28/us-trade-gap-widens-to-biggest-since-march-2025-on-capital-goods",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T12:41:22.936969+00:00",
+   "title_ru": "Торговый разрыв в США увеличился до самого высокого уровня с марта 2025 года",
+   "lead": "The US merchandise-trade deficit widened in September to the largest since March 2025 amid an ongoing surge in imports of capital goods.",
+   "lead_ru": "Дефицит торговли товарами в США расширился в сентябре до самого большого с марта 2025 года на фоне продолжающегося всплеска импорта капитальных товаров."
+  },
+  {
+   "title": "Indian equity benchmarks inch lower as oil climbs; Jio makes strong debut",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNWThPU2R1U2tXY2FLczdUamhQenNtdzA3dUdoMzVtTHE3ZTZEM0RfZ3hwWGg2MmdBdW5fUURJeXdBdnQwd2V6ZHJKSmZ2b0hmcmQ5Vm5tX2xyQUczVXFFZ2luM0RxUlZoUHBHLTE5TndUSTJwb0k5UkxLYk81UlV6WTBJQmg4dGo4MDlrRER1Q2JZamJHVmVOR1FDRnU1UklxTE92TEN5MGtyOVdCQzJKQUpDMXd6dw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T12:41:22.936969+00:00",
+   "title_ru": "Индийские фондовые индексы снижаются на дюйм по мере роста цен на нефть; Jio делает сильный дебют",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-27",
@@ -15028,7 +15039,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-28T11:41:22.847864+00:00",
+  "checked": "2026-10-28T12:41:22.936969+00:00",
   "sec_seen": [
    "0002082930-26-000020",
    "0000105132-26-000105",
@@ -15044,8 +15055,8 @@
    "0001932973-26-000024",
    "0001807561-26-000022",
    "0001193125-26-435149",
-   "0001505300-26-000013",
    "0001628280-26-067740",
+   "0001505300-26-000013",
    "0001193125-26-434846",
    "0001487630-26-000022",
    "0000105132-26-000103",
