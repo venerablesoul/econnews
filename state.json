@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "90e642875f228126": "2026-10-25T18:53:25.730113+00:00",
-  "b6f98e8d2a15aa6f": "2026-10-25T18:58:25.666810+00:00",
-  "89e063af50269ba6": "2026-10-25T18:58:25.666810+00:00",
   "d4e6c7a6978fa42f": "2026-10-25T19:03:25.714872+00:00",
   "78ce690271973d1a": "2026-10-25T19:13:25.710823+00:00",
   "ed7935fc9fb83f02": "2026-10-25T19:18:25.695026+00:00",
@@ -1020,19 +1017,12 @@
   "719796419bb09752": "2026-10-28T18:45:13.584830+00:00",
   "d0cdb596774d7326": "2026-10-28T18:45:13.584830+00:00",
   "40ebb603f29734ee": "2026-10-28T18:50:12.452459+00:00",
-  "40e862c5882bd69d": "2026-10-28T18:50:12.452459+00:00"
+  "40e862c5882bd69d": "2026-10-28T18:50:12.452459+00:00",
+  "90e642875f228126": "2026-10-28T19:00:12.489684+00:00",
+  "b55327c1b5fe12f6": "2026-10-28T19:00:12.489684+00:00",
+  "2bdd7c0d8ae372ca": "2026-10-28T19:00:12.489684+00:00"
  },
  "recent": [
-  {
-   "title": "iShares MSCI Emerging Markets ETF (EEM.N) | Stock Price & Latest News",
-   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1CVE15Q3c1WVhqNWpXVTBXWDZSNm85ckZzeUUwbmtRd3pyZklPNExVZkR6WC1xVlVZVVpjT3MzdzVXa1plU2pxdG5nZ01OY2R5ZDg3YUNRRGZubHp1YXpfRWRLYS1QSlZmM3c?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-25T18:58:25.666810+00:00",
-   "title_ru": "iShares MSCI Emerging Markets ETF (EEM.N) | Курс акций и последние новости"
-  },
   {
    "title": "Senegal party that controls parliament comes out against revised budget bill",
    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOQl9ZdzdPRHZXenduQW9SWTgxd3hZZnlTZTNmVDJXcWdfRFNlSjBLd001enBmTlFHSVdIY3E2VkNYR0gteDMzSU1KR1NyQU94TGQtR0tVRWo3bE55dnZuajFMcHZmSnZFdlE5YlY4VTNlbmJyWjdhUnEtenFVU1V6MUV0bDNoMzBfWlI5a3pHSHRjTHpxZHBFLUhSN2VObU5EQjFvQUpqalZZUEUySXR1ZTVldW1oSWxtZVVMSm9qZHpTc2s?oc=5",
@@ -9855,6 +9845,34 @@
    "title_ru": "Крис Райт говорит, что экспорт дизельного топлива из Персидского залива, вероятно, увеличится",
    "lead": "Energy Secretary Chris Wright said that he expects diesel prices to be 'dropped significantly' but will need increased exports out of the Arabian Gulf to manage it amid the ongoing war with Iran.",
    "lead_ru": "Министр энергетики Крис Райт заявил, что он ожидает, что цены на дизельное топливо «значительно снизятся», но ему потребуется увеличить экспорт из Персидского залива, чтобы справиться с этим в условиях продолжающейся войны с Ираном."
+  },
+  {
+   "title": "Fed's Warsh Says Monetary 'Medicine' Starting to Work",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-28/fed-s-warsh-says-monetary-medicine-starting-to-work-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-28T19:00:12.489684+00:00",
+   "title_ru": "Глава ФРС Уорш заявил, что монетарная «медицина» начинает работать",
+   "lead": "Federal Reserve Chairman Kevin Warsh says there are no firm conclusions right now about monetary policy during a news conference after the central bank's policy-setting Federal Open Market Committee decided to leave rates…",
+   "lead_ru": "Председатель Федеральной резервной системы Кевин Уорш заявил, что на данный момент нет твердых выводов относительно денежно-кредитной политики во время пресс-конференции после того, как Федеральный комитет по открытому рынку, определяющий политику центрального банка, решил оставить ставки…",
+   "tags": [
+    "Fed",
+    "rates"
+   ]
+  },
+  {
+   "title": "Five ways the Budget will affect you if you are under 25",
+   "link": "https://www.bbc.co.uk/news/articles/c60e05yn3w9zo?at_medium=RSS&at_campaign=rss",
+   "sources": [
+    "BBC"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T19:00:12.489684+00:00",
+   "title_ru": "Пять способов, которыми бюджет повлияет на вас, если вам меньше 25 лет",
+   "lead": "The chancellor announced a series of measures which will impact under-25 year-olds from housing to minimum wage.",
+   "lead_ru": "Канцлер объявила о ряде мер, которые затронут молодых людей в возрасте до 25 лет: от жилья до минимальной заработной платы."
   }
  ],
  "last_digest": "2026-10-28",
@@ -16516,7 +16534,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-28T17:55:12.391979+00:00",
+  "checked": "2026-10-28T18:55:12.451443+00:00",
   "sec_seen": [
    "0001193125-26-435894",
    "0000095029-26-000084"
