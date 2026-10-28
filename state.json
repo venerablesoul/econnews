@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c619ef7a9d8c81dc": "2026-10-25T05:31:11.525439+00:00",
   "3ddee3342475be14": "2026-10-25T05:36:11.482262+00:00",
   "d6c419ba722e9f08": "2026-10-25T05:36:11.482262+00:00",
   "e06681b03dcc19b8": "2026-10-25T06:06:11.440118+00:00",
@@ -842,19 +841,11 @@
   "b846f0d85940c54c": "2026-10-28T05:20:51.242197+00:00",
   "4ac27fc00837fda5": "2026-10-28T05:25:51.183503+00:00",
   "5bff3668c406fb61": "2026-10-28T05:25:51.183503+00:00",
-  "0b8bca520fc1a0b1": "2026-10-28T05:30:51.210012+00:00"
+  "0b8bca520fc1a0b1": "2026-10-28T05:30:51.210012+00:00",
+  "8653ab1270a613ab": "2026-10-28T05:35:51.235094+00:00",
+  "62b4e5bcdcf566ac": "2026-10-28T05:35:51.235094+00:00"
  },
  "recent": [
-  {
-   "title": "Portuguese police clear Lisbon housing protest camp, make arrests",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNUl8tRDdjZWRsQkljV3FheHEtN2dyWUtJb2dhY1JmNmhGSU5ZaVZRYnF6SDhIaDN4eVZVd19JSFRlWW9MSm1jQ1NYTEtWOU5Eb2RrVE9Ua2lZLUJCSC1Ya1BEYVFkX0tNVkh1d2RFZzZfX19ZQTEyQ0pYSEs5eEJfcXF6ODk1Y293SUMwWW5TZVhRNWZTaTlxQXdHcGNuX2ZXbjU3ckNfMXNkTDNfWTQ0Zm5INA?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-25T05:31:11.525439+00:00",
-   "title_ru": "Португальская полиция очистила лагерь жилищных протестов в Лиссабоне и произвела аресты"
-  },
   {
    "title": "Sonia Carrillo, West Bay Imports Inc: Profile and Biography",
    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE80NVFYQkpPc2J3VTNfQXRiVmFHaThNZUt2Vjh1RVZlT1A2Ty1WVjR5ZWVpUFd2ajhZSEtvLVBqYm1fS2ZUNkZTTjZYLUVkRzdfZGdVMjBISkozN2FuOVZSRUhnRlB1VWRjeDRQeDF1VUh6V28?oc=5",
@@ -7588,6 +7579,35 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "New Zealand Unexpectedly Holds Interest Rates Steady; Kiwi Falls",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQaWN4OTVCRFRvNlVxaWlhU0x5Z3Y1cGNEdmhnQkd2NXlwenROa2VuLXJkYlNNako3XzU5VFpFVGRsdHVqeHAxNGF3VXNyOGFDYVE0Q0NsVUU3V25Wd0RJa19idTAzZ0RocVF1R2xkQm9kTVotNjRjQ2daa1NpcTZYc2ZMcnJ2Z3RBZHZQZE05M0M2SVh6LTFRdFhuSEVpT3ZhcDlSeE4waER5ZjQzNkUwdkMxanc?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-28T05:35:51.235094+00:00",
+   "title_ru": "Новая Зеландия неожиданно удерживает процентные ставки на стабильном уровне; Киви падает",
+   "tags": [
+    "rates"
+   ]
+  },
+  {
+   "title": "Copper Wavers Near Two-Week High as Traders Look to Fed Meeting",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-28/copper-wavers-near-two-week-high-as-traders-look-to-fed-meeting",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-28T05:35:51.235094+00:00",
+   "title_ru": "Медные колебания вблизи двухнедельного максимума, поскольку трейдеры ожидают встречи с ФРС",
+   "lead": "Copper traded near its highest close in two weeks as traders braced for the Federal Reserve’s decision on interest rates.",
+   "lead_ru": "Медь торговалась вблизи самого высокого закрытия за две недели, поскольку трейдеры готовились к решению Федеральной резервной системы по процентным ставкам.",
+   "tags": [
+    "Fed",
+    "rates"
+   ]
   }
  ],
  "last_digest": "2026-10-27",
@@ -14004,13 +14024,13 @@
   "sec_seen": [
    "0001040470-26-000312",
    "0001213900-26-113025",
-   "0001193125-26-434840",
    "0001040470-26-000314",
+   "0001193125-26-434840",
    "0001213900-26-113031",
    "0001040470-26-000311",
    "0001877346-26-000024",
-   "0001193125-26-434846",
    "0001213900-26-113020",
+   "0001193125-26-434846",
    "0001628280-26-067695",
    "0001075736-26-000120",
    "0001654009-26-000014",
@@ -14018,9 +14038,9 @@
    "0001807561-26-000022",
    "0002082930-26-000020",
    "0001213900-26-113017",
-   "0001253170-26-000014",
-   "0001040470-26-000318",
    "0000105132-26-000103",
+   "0001040470-26-000318",
+   "0001253170-26-000014",
    "0000105132-26-000100",
    "0001628280-26-067694",
    "0001075736-26-000119",
