@@ -998,7 +998,10 @@
   "88abd189cf62effd": "2026-10-28T17:45:12.740834+00:00",
   "d95c057bd93eabaf": "2026-10-28T17:50:12.406935+00:00",
   "7b7b31b490293389": "2026-10-28T17:50:12.406935+00:00",
-  "5c8a15f79f3924cb": "2026-10-28T17:55:12.391979+00:00"
+  "5c8a15f79f3924cb": "2026-10-28T17:55:12.391979+00:00",
+  "847a7abc2726921c": "2026-10-28T18:05:12.399949+00:00",
+  "5d417ac45712b820": "2026-10-28T18:05:12.399949+00:00",
+  "af5bd423337d45eb": "2026-10-28T18:05:12.399949+00:00"
  },
  "recent": [
   {
@@ -9545,6 +9548,52 @@
    "tags": [
     "jobs"
    ]
+  },
+  {
+   "title": "Federal Reserve issues FOMC statement",
+   "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+   "sources": [
+    "Fed"
+   ],
+   "score": 8,
+   "ts": "2026-10-28T18:05:12.399949+00:00",
+   "title_ru": "Федеральная резервная система выпускает заявление FOMC",
+   "tags": [
+    "Fed"
+   ]
+  },
+  {
+   "title": "Fed Holds Rates, Says More Data Will Help Next Decision",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-28/fed-holds-rates-says-more-data-will-help-next-decision",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-28T18:05:12.399949+00:00",
+   "title_ru": "ФРС удерживает ставки, говорит, что больше данных поможет принять следующее решение",
+   "lead": "Federal Reserve officials left interest rates unchanged and reiterated their commitment to containing inflation, but without offering a clear signal they might raise rates at their next meeting in December.",
+   "lead_ru": "Представители Федеральной резервной системы оставили процентные ставки без изменений и подтвердили свою приверженность сдерживанию инфляции, но не дали четкого сигнала о том, что они могут повысить ставки на своем следующем заседании в декабре.",
+   "tags": [
+    "Fed",
+    "rates",
+    "inflation"
+   ]
+  },
+  {
+   "title": "Key Takeaways From Fed Decision to Hold Rates Steady",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-28/key-takeaways-from-fed-decision-to-hold-rates-steady",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-28T18:05:12.399949+00:00",
+   "title_ru": "Ключевые выводы из решения ФРС об удержании ставок на стабильном уровне",
+   "lead": "Here are key takeaways from the Federal Reserve’s interest-rate decision on Wednesday:",
+   "lead_ru": "Вот основные выводы из решения Федеральной резервной системы по процентной ставке в среду:",
+   "tags": [
+    "Fed",
+    "rates"
+   ]
   }
  ],
  "last_digest": "2026-10-28",
@@ -12185,6 +12234,22 @@
     "date": "2026-10-27",
     "disclosed": "2026-10-28",
     "link": "https://www.sec.gov/Archives/edgar/data/2077793/000197640826000911/0001976408-26-000911-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "304061ba2f89d214",
+    "ticker": "NYSE:FLG",
+    "company": "FLAGSTAR BANK, NATIONAL ASSOCIATION",
+    "who": "Alan L Frank",
+    "role": "Director",
+    "type": "buy",
+    "value": 101400,
+    "shares": 10000,
+    "price": 10.14,
+    "plan": false,
+    "date": "2026-10-27",
+    "disclosed": "2026-10-28",
+    "link": "https://www.sec.gov/Archives/edgar/data/1649471/000164947126000006/0001649471-26-000006-index.htm"
    },
    {
     "src": "sec",
@@ -16153,22 +16218,6 @@
     "date": "2026-10-19",
     "disclosed": "2026-10-20",
     "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000363/0001510281-26-000363-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "1fd168070f989db6",
-    "ticker": "GRND",
-    "company": "Grindr Inc.",
-    "who": "George Raymond Iii Zage",
-    "role": "Director, 10% owner",
-    "type": "sell",
-    "value": 7060300,
-    "shares": 500000,
-    "price": 14.12,
-    "plan": true,
-    "date": "2026-10-19",
-    "disclosed": "2026-10-20",
-    "link": "https://www.sec.gov/Archives/edgar/data/1833678/000183367826000007/0001833678-26-000007-index.htm"
    }
   ],
   "docs": {
@@ -16210,9 +16259,8 @@
   "sec_seen": [
    "0001628280-26-067824",
    "0000737468-26-000122",
-   "0001437749-26-033742",
    "0001193125-26-435749",
-   "0002085067-26-000010",
+   "0001649471-26-000006",
    "0002114274-26-000008",
    "0001338943-26-000007"
   ],
@@ -16220,5 +16268,7 @@
    "senate": "HTTPError: HTTP Error 403: Forbidden"
   }
  },
- "cal_actuals": {}
+ "cal_actuals": {
+  "USD|2026-10-28T18:00:00+00:00|Federal Funds Rate": "4.0%"
+ }
 }
