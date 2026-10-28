@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "41baa953c9754c92": "2026-10-25T01:35:47.339482+00:00",
-  "1847ae4b65e9119c": "2026-10-25T01:35:47.339482+00:00",
   "60b4ad74af879741": "2026-10-25T01:45:47.243632+00:00",
   "e2f4ca3e21cab0da": "2026-10-25T01:55:47.237519+00:00",
   "8de7718fc74f60ae": "2026-10-25T02:06:11.515211+00:00",
@@ -811,7 +809,10 @@
   "29350db746d7e77e": "2026-10-28T01:10:19.156105+00:00",
   "004d7279e576d793": "2026-10-28T01:15:19.137050+00:00",
   "08a05dbb115a0255": "2026-10-28T01:25:19.121580+00:00",
-  "737c7529a92e9e4a": "2026-10-28T01:25:19.121580+00:00"
+  "737c7529a92e9e4a": "2026-10-28T01:25:19.121580+00:00",
+  "c1b17f30cd378c3c": "2026-10-28T01:40:19.173671+00:00",
+  "f349e5cc2d4362a1": "2026-10-28T01:40:19.173671+00:00",
+  "e9aa8cd113d220a9": "2026-10-28T01:40:19.173671+00:00"
  },
  "recent": [
   {
@@ -7299,6 +7300,32 @@
     "rates",
     "dollar"
    ]
+  },
+  {
+   "title": "Dollar holds gains ahead of Fed policy signal, RBNZ decision",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQRE96SkVILWZEWGsxdTRORUJsWlJ4YmNlclNadUxmdGpHRlNONHllVDY5eTBiZHBsbndwSEtBeDI0STFqdDhsNUxLVVhhVmZrWFdGUVFCaDNGd25VVENDcDdmT1ZUMHFFRWN2enRXeXk1ZUNfNHp5OE8wam94MktvQlNzazVNRG1Ed2lXYTFMVjNCY2JPckJRWlIyQ2ZvVzVqOEsw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-28T01:40:19.173671+00:00",
+   "title_ru": "Доллар удерживает рост в преддверии политического сигнала ФРС и решения РБНЗ",
+   "tags": [
+    "Fed",
+    "dollar"
+   ]
+  },
+  {
+   "title": "Super-Strong Metal’s Surge Has Freeport Dusting Off Growth Plans",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-28/super-strong-metal-s-surge-has-freeport-dusting-off-growth-plans",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T01:40:19.173671+00:00",
+   "title_ru": "Всплеск сверхсильного металла заставил Freeport отказаться от планов роста",
+   "lead": "Prices of an obscure metal used in everything from nuclear energy to aerospace and semiconductors are getting so high that the world’s biggest producer is considering boosting supply.",
+   "lead_ru": "Цены на малоизвестный металл, используемый во всем, от атомной энергетики до аэрокосмической промышленности и полупроводников, становятся настолько высокими, что крупнейший в мире производитель рассматривает возможность увеличения поставок."
   }
  ],
  "last_digest": "2026-10-27",
@@ -13717,7 +13744,6 @@
    "0001075736-26-000121",
    "0000105132-26-000103",
    "0001628280-26-067696",
-   "0001213900-26-113016",
    "0002082930-26-000020",
    "0001807561-26-000022",
    "0001193125-26-434831",
@@ -13748,6 +13774,7 @@
    "0001877346-26-000024",
    "0001075736-26-000119",
    "0001193125-26-434841",
+   "0001193125-26-434846",
    "0001040470-26-000314",
    "0000105132-26-000101",
    "0001193125-26-434840",
