@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "14303ddef5dd7d96": "2026-10-25T23:33:52.575802+00:00",
-  "1f3fabb6308219ff": "2026-10-25T23:38:52.496870+00:00",
   "191a01341220ced3": "2026-10-25T23:53:52.427166+00:00",
   "8559a49272adc70f": "2026-10-25T23:53:52.427166+00:00",
   "298b2348dddec91b": "2026-10-25T23:58:52.476177+00:00",
@@ -1077,7 +1075,11 @@
   "c88f03143be4aaab": "2026-10-28T23:30:50.387527+00:00",
   "7427ecbc60544410": "2026-10-28T23:30:50.387527+00:00",
   "c3e6501ca480b347": "2026-10-28T23:30:50.387527+00:00",
-  "ecea011c8b628e71": "2026-10-28T23:30:50.387527+00:00"
+  "ecea011c8b628e71": "2026-10-28T23:30:50.387527+00:00",
+  "d82838bd055dadfb": "2026-10-28T23:35:50.527911+00:00",
+  "4cacbd9335cca5e7": "2026-10-28T23:40:50.498552+00:00",
+  "a96a31c09c473fbc": "2026-10-28T23:40:50.498552+00:00",
+  "2aa483e80da30f61": "2026-10-28T23:40:50.498552+00:00"
  },
  "recent": [
   {
@@ -10627,6 +10629,48 @@
    "score": 3,
    "ts": "2026-10-28T23:30:50.387527+00:00",
    "title_ru": "Законопроект о бюджете Португалии на 2027 год проходит первое парламентское препятствие"
+  },
+  {
+   "title": "Japan Credit Risk Jumps Most Since 2022, Pressuring Bond Market",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxONHVUbnZmWGk0c0d4Rlh6aXpPUjJnNFgwR2hpNHZEUDNqZ0pQaWZrSlpBdjJRaHVGdjhoOGI4X1dMMjk1MXRKV21FcVFNb2VJZTR2YnkyZmE2VTQ3M25MbTRzWW1wX1o0N25iWkY1eUpmdk9NUmdsNlBMSXRvRk9ySXFkOUthLXgwVExXQlVkbDBna3NoeGJ0Qzk3cjBia0hLZS1NMHVOaEVxLW5sM2dLbGhnMA?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T23:40:50.498552+00:00",
+   "title_ru": "Японский кредитный риск вырос больше всего с 2022 года, оказав давление на рынок облигаций",
+   "tags": [
+    "bonds"
+   ]
+  },
+  {
+   "title": "Wall Street ends higher as Fed holds key rate steady",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNX0JwVWVlNThXUjd5M3JOLUQtTGJtQVJDS0NiYVdxQUxDWUR0dEpHdWtIZzlMY0dpZDloZHYtYzQ1alNvejFldjFSRVJJa1hFT0lnTk9DQkJyeGVwb1lYWWliSWx6U0hSRmcwRkVWdjJhcGxpZ2F3MEQwaEhydG44UFJhRkI?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T23:40:50.498552+00:00",
+   "title_ru": "Уолл-стрит заканчивается повышением, так как ФРС удерживает ключевую ставку на",
+   "tags": [
+    "Fed",
+    "rates"
+   ]
+  },
+  {
+   "title": "FirstFT: Weil leadership tells partners firm should wind down",
+   "link": "https://www.ft.com/content/a9aec380-e9e5-4e7e-8281-906bb1aaa76e?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T23:40:50.498552+00:00",
+   "title_ru": "FirstFT: руководство Weil говорит партнерам, что фирма должна свернуть свою деятельность",
+   "lead": "Also in today’s newsletter: Google shares tumble as cash burn deepens and dozens killed in Spain high-speed train crash",
+   "lead_ru": "Также в сегодняшнем информационном бюллетене: акции Google падают, поскольку сжигание наличных денег углубляется, и десятки людей погибли в результате крушения высокоскоростного поезда в Испании",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-28",
@@ -17299,8 +17343,8 @@
    "0001104659-26-119719",
    "0001654009-26-000017",
    "0001437749-26-033821",
-   "0001493152-26-049125",
    "0001193125-26-436510",
+   "0001493152-26-049125",
    "0001022079-26-000118",
    "0001193125-26-436459",
    "0002010300-26-000035",
