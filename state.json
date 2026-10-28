@@ -1039,7 +1039,8 @@
   "5f39c9a6e1f317ba": "2026-10-28T19:50:12.485695+00:00",
   "d9f28d5b1bdce31c": "2026-10-28T19:50:12.485695+00:00",
   "456c53ee75a7b3af": "2026-10-28T19:55:12.941990+00:00",
-  "0e62e7e2631396d0": "2026-10-28T20:00:12.399548+00:00"
+  "0e62e7e2631396d0": "2026-10-28T20:00:12.399548+00:00",
+  "8bd1366f251db72a": "2026-10-28T20:05:12.349602+00:00"
  },
  "recent": [
   {
@@ -10048,6 +10049,16 @@
     "Fed",
     "rates"
    ]
+  },
+  {
+   "title": "Star Trader’s Woes Turn Up the Heat on Riskiest Debt in Europe",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQM3lqWUZheFR4SGlYQlAyT1VTN0kzVVBpTXBDbGxxMTJ3N1FxU0lucm5zaVAtdVNlZGMxTmFTak51MmZucHJJUGlSQWlmN2xFTWtjOW5WRkhyTkFGLVpJaVNSSXZPbllBMWttTzBJWlFpSDJqeERndjdLR0d4U194SmhpWmZGNWZ5N0lOaUZRaXNjVlV4NW1WNGVkQWdxb0hRd2FKaGJ6UFhIR19jaWFITG5KMzduRlNkalNES0xDLW52c1pp?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T20:05:12.349602+00:00",
+   "title_ru": "Беды звездного трейдера накаляют самый рискованный долг в Европе"
   }
  ],
  "last_digest": "2026-10-28",
@@ -12739,6 +12750,38 @@
    },
    {
     "src": "sec",
+    "id": "b56202cb767f2aab",
+    "ticker": "TRV",
+    "company": "TRAVELERS COMPANIES, INC.",
+    "who": "Mojgan M Lefebvre",
+    "role": "EVP & Chief Tech & Ops Officer",
+    "type": "sell",
+    "value": 4332284,
+    "shares": 11000,
+    "price": 393.84,
+    "plan": false,
+    "date": "2026-10-27",
+    "disclosed": "2026-10-28",
+    "link": "https://www.sec.gov/Archives/edgar/data/1753788/000008631226000192/0000086312-26-000192-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "9eaa5d583a4c50a1",
+    "ticker": "PCTY",
+    "company": "Paylocity Holding Corp",
+    "who": "Steven I Sarowitz",
+    "role": "Director, 10% owner",
+    "type": "sell",
+    "value": 1524666,
+    "shares": 8900,
+    "price": 171.31,
+    "plan": true,
+    "date": "2026-10-27",
+    "disclosed": "2026-10-28",
+    "link": "https://www.sec.gov/Archives/edgar/data/1597870/000159787026000027/0001597870-26-000027-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "3d2d067919228521",
     "ticker": "ACN",
     "company": "Accenture plc",
@@ -12800,6 +12843,22 @@
     "date": "2026-10-26",
     "disclosed": "2026-10-28",
     "link": "https://www.sec.gov/Archives/edgar/data/1639078/000119312526435894/0001193125-26-435894-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "56b9127613e48050",
+    "ticker": "HBAN",
+    "company": "HUNTINGTON BANCSHARES INC /MD/",
+    "who": "James D Iii Rollins",
+    "role": "Director",
+    "type": "buy",
+    "value": 253720,
+    "shares": 14000,
+    "price": 18.12,
+    "plan": false,
+    "date": "2026-10-26",
+    "disclosed": "2026-10-28",
+    "link": "https://www.sec.gov/Archives/edgar/data/1213483/000122520826008542/0001225208-26-008542-index.htm"
    },
    {
     "src": "sec",
@@ -16624,54 +16683,6 @@
     "date": "2026-10-19",
     "disclosed": "2026-10-20",
     "link": "https://www.sec.gov/Archives/edgar/data/2091395/000151384526000134/0001513845-26-000134-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "481f061d843e98d0",
-    "ticker": "XGN",
-    "company": "EXAGEN INC.",
-    "who": "Chernett Jorey",
-    "role": "10% owner",
-    "type": "buy",
-    "value": 104440,
-    "shares": 14000,
-    "price": 7.46,
-    "plan": false,
-    "date": "2026-10-19",
-    "disclosed": "2026-10-20",
-    "link": "https://www.sec.gov/Archives/edgar/data/2042077/000119380526001382/0001193805-26-001382-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "c2141e994064b367",
-    "ticker": "NXG",
-    "company": "NXG NextGen Infrastructure Income Fund",
-    "who": "Sunderland Todd",
-    "role": "",
-    "type": "buy",
-    "value": 46500,
-    "shares": 1000,
-    "price": 46.5,
-    "plan": false,
-    "date": "2026-10-19",
-    "disclosed": "2026-10-20",
-    "link": "https://www.sec.gov/Archives/edgar/data/1957908/000195790826000003/0001957908-26-000003-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "cb1d11848d7b4331",
-    "ticker": "ECF",
-    "company": "ELLSWORTH GROWTH & INCOME FUND LTD",
-    "who": "Saba Capital Management, L.p.",
-    "role": "10% owner",
-    "type": "buy",
-    "value": 386339,
-    "shares": 33426,
-    "price": 11.56,
-    "plan": false,
-    "date": "2026-10-19",
-    "disclosed": "2026-10-20",
-    "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000360/0001510281-26-000360-index.htm"
    }
   ],
   "docs": {
@@ -16712,10 +16723,22 @@
   "checked": "2026-10-28T19:55:12.941990+00:00",
   "sec_seen": [
    "0001437749-26-033776",
-   "0001193125-26-436043",
+   "0002048497-26-000023",
+   "0001439222-26-000124",
+   "0001178913-26-004892",
+   "0001437749-26-033782",
+   "0001225208-26-008545",
    "0001437749-26-033773",
+   "0001597870-26-000027",
    "0001493152-26-048971",
-   "0001493152-26-048958"
+   "0001079973-26-001407",
+   "0000086312-26-000192",
+   "0001225208-26-008546",
+   "0001493152-26-048958",
+   "0001225208-26-008543",
+   "0001225208-26-008544",
+   "0001225208-26-008547",
+   "0001225208-26-008542"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
