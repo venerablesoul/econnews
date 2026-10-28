@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "98e21ed6cd7fda87": "2026-10-25T15:07:19.739118+00:00",
-  "fbcd97292522ecc0": "2026-10-25T15:07:19.739118+00:00",
   "d6945f712b2cd7a2": "2026-10-25T15:12:19.767606+00:00",
   "dc0f1dd9a22ee052": "2026-10-25T16:48:30.690411+00:00",
   "831988b5aa7eb85d": "2026-10-25T16:48:30.690411+00:00",
@@ -962,26 +960,12 @@
   "afad620e500e3e4e": "2026-10-28T14:51:22.864836+00:00",
   "8d7f3964b06c4811": "2026-10-28T15:01:23.384943+00:00",
   "a7fe364b2148b51b": "2026-10-28T15:06:23.296894+00:00",
-  "5d66ee51e3b5828d": "2026-10-28T15:06:23.296894+00:00"
+  "5d66ee51e3b5828d": "2026-10-28T15:06:23.296894+00:00",
+  "3bebf4ecd67142a6": "2026-10-28T15:11:23.954140+00:00",
+  "c2bfe5ffa1b4e413": "2026-10-28T15:11:23.954140+00:00",
+  "18ed1c5e54d865e7": "2026-10-28T15:11:23.954140+00:00"
  },
  "recent": [
-  {
-   "title": "Warsh Tells Traders to Watch the Data. They Still Follow the Fed",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-25/warsh-tells-traders-to-watch-the-data-they-still-follow-the-fed",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-25T15:07:19.739118+00:00",
-   "title_ru": "Warsh советует трейдерам следить за данными. Они все еще следуют за ФРС",
-   "lead": "Early on Oct. 14, just hours before the release of a much-anticipated report on US inflation, TD Securities’ Gennadiy Goldberg recommended that clients bet against a Federal Reserve interest-rate hike later in the month.",
-   "lead_ru": "Рано утром 14 октября, всего за несколько часов до выхода долгожданного отчета об инфляции в США, Геннадий Голдберг из TD Securities рекомендовал клиентам сделать ставку против повышения процентной ставки Федеральной резервной системы в конце месяца.",
-   "tags": [
-    "Fed",
-    "rates",
-    "inflation"
-   ]
-  },
   {
    "title": "9 Days to Midterm Elections, Big Tech Earnings",
    "link": "https://www.bloomberg.com/news/videos/2026-10-25/bloomberg-this-weekend-10-25-2026-video",
@@ -9049,6 +9033,40 @@
    ],
    "score": 2,
    "ts": "2026-10-28T15:06:23.296894+00:00"
+  },
+  {
+   "title": "Bank of Canada Raises Interest Rates to 2.5%, First Hike Since 2023",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-28/bank-of-canada-raises-interest-rates-to-2-5-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 7,
+   "ts": "2026-10-28T15:11:23.954140+00:00",
+   "title_ru": "Банк Канады повышает процентные ставки до 2,5%, впервые с 2023 года",
+   "lead": "The Bank of Canada raised its benchmark overnight interest rate by 25 basis points to 2.5% on Wednesday. It's the first increase since July of 2023.",
+   "lead_ru": "Банк Канады повысил базовую процентную ставку овернайт на 25 базисных пунктов до 2,5% в среду. Это первое увеличение с июля 2023 года.",
+   "tags": [
+    "rates"
+   ]
+  },
+  {
+   "title": "Haul-o-ween: sugar and confectionery products manufacturing",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOcFdCLTgwX3JJWmFQa1NjcmotQTlxNFFmbTUyeGZWWjBlUWFKXzk0X0tQU2ttVFVGUERJS3pwcEVMUWFjU2toRHdIUHlTUV83THhaZExObGdXZ042VlFZaTdjTkJvMHFJY0pQaWZmZjMzeWR5MW9hcHBHWFZZckpXYVVvTXdnOHRSbGpJS09DMVhoYWtQZS1Sc0J4b0k?oc=5",
+   "sources": [
+    "US Labor Statistics (BLS)"
+   ],
+   "score": 5,
+   "ts": "2026-10-28T15:11:23.954140+00:00",
+   "title_ru": "Haul-o-ween: производство сахара и кондитерских изделий"
+  },
+  {
+   "title": "These software stocks could be winners as earnings season kicks into high gear",
+   "link": "https://www.marketwatch.com/story/these-software-stocks-could-be-winners-as-earnings-season-kicks-into-high-gear-8decddf7?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 2,
+   "ts": "2026-10-28T15:11:23.954140+00:00"
   }
  ],
  "last_digest": "2026-10-27",
