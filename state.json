@@ -16621,7 +16621,9 @@
    "sec": true
   },
   "checked": "2026-10-28T18:55:12.451443+00:00",
-  "sec_seen": [],
+  "sec_seen": [
+   "0001193125-26-436043"
+  ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
   }
