@@ -1003,7 +1003,9 @@
   "5d417ac45712b820": "2026-10-28T18:05:12.399949+00:00",
   "af5bd423337d45eb": "2026-10-28T18:05:12.399949+00:00",
   "da6edf02f4ba0eb1": "2026-10-28T18:10:12.392623+00:00",
-  "5cadb2cc81fbb900": "2026-10-28T18:10:12.392623+00:00"
+  "5cadb2cc81fbb900": "2026-10-28T18:10:12.392623+00:00",
+  "6cadc9241e38560e": "2026-10-28T18:15:12.391605+00:00",
+  "ba904e5ae7ee148f": "2026-10-28T18:15:12.391605+00:00"
  },
  "recent": [
   {
@@ -9621,6 +9623,36 @@
    "score": 3,
    "ts": "2026-10-28T18:10:12.392623+00:00",
    "title_ru": "Индийский регулятор рынков взвешивает внутреннюю модель ИИ для торговли ценными бумагами, говорит председатель"
+  },
+  {
+   "title": "Lionsgate in Investor Talks for Rare Film Library-Backed Bonds",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-28/lionsgate-in-investor-talks-for-rare-film-library-backed-bonds",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T18:15:12.391605+00:00",
+   "title_ru": "Lionsgate ведет переговоры с инвесторами о выпуске облигаций, обеспеченных библиотекой редких фильмов",
+   "lead": "Lionsgate Studios Corp., the filmmaker behind The Hunger Games and other titles, is looking to sell bonds backed by its catalog and talking to investors about a possible transaction.",
+   "lead_ru": "Lionsgate Studios Corp., кинематографист, стоящий за «Голодными играми» и другими фильмами, надеется продать облигации, подкрепленные его каталогом, и поговорить с инвесторами о возможной сделке.",
+   "tags": [
+    "bonds"
+   ]
+  },
+  {
+   "title": "Boeing Rout a Win For Skeptics Who Rejected Wall Street Optimism",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-28/boeing-rout-a-win-for-skeptics-who-rejected-wall-street-optimism",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T18:15:12.391605+00:00",
+   "title_ru": "Boeing одержал победу над скептиками, которые отвергли оптимизм Уолл-стрит",
+   "lead": "Boeing Co.’s disappointing outlook, which sparked the stock’s sharpest selloff since June 2020, handed a win to bearish investors who had shrugged off Wall Street’s increasingly bullish stance over the past several months.",
+   "lead_ru": "Разочаровывающий прогноз Boeing Co., который вызвал самую резкую распродажу акций с июня 2020 года, принес победу медвежьим инвесторам, которые в течение последних нескольких месяцев игнорировали все более бычью позицию Уолл-стрит.",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-28",
@@ -9672,7 +9704,7 @@
   "2026-10-28-21"
  ],
  "calendar": {
-  "fetched": "2026-10-28T12:11:22.821836+00:00",
+  "fetched": "2026-10-28T18:15:12.391605+00:00",
   "events": [
    {
     "title": "Bank Holiday",
@@ -16286,7 +16318,6 @@
   "sec_seen": [
    "0001628280-26-067824",
    "0000737468-26-000122",
-   "0001193125-26-435749",
    "0001649471-26-000006",
    "0002114274-26-000008",
    "0001338943-26-000007"
