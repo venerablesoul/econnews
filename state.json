@@ -967,7 +967,12 @@
   "d45706439af1e9cd": "2026-10-28T15:16:22.933176+00:00",
   "8fbee4de85410d08": "2026-10-28T15:21:23.981861+00:00",
   "98570657ddd17a92": "2026-10-28T15:21:23.981861+00:00",
-  "fb717efa2c61e0d3": "2026-10-28T15:21:23.981861+00:00"
+  "fb717efa2c61e0d3": "2026-10-28T15:21:23.981861+00:00",
+  "46af647bea834d1c": "2026-10-28T15:35:12.472848+00:00",
+  "b1b3ccff067b24d9": "2026-10-28T15:35:12.472848+00:00",
+  "366b13df0e7197dc": "2026-10-28T15:35:12.472848+00:00",
+  "fec81d7ac5cab9f4": "2026-10-28T15:35:12.472848+00:00",
+  "d629670e024fc3aa": "2026-10-28T15:35:12.472848+00:00"
  },
  "recent": [
   {
@@ -9116,6 +9121,41 @@
    ],
    "score": 1,
    "ts": "2026-10-28T15:21:23.981861+00:00"
+  },
+  {
+   "title": "Remit for the Monetary Policy Committee - October 2026",
+   "link": "https://www.bankofengland.co.uk/letter/2026/mpc-remit-2026",
+   "sources": [
+    "Bank of England"
+   ],
+   "score": 7,
+   "ts": "2026-10-28T15:35:12.472848+00:00",
+   "title_ru": "Полномочия Комитета по денежно-кредитной политике – октябрь 2026 г.",
+   "tags": [
+    "rates"
+   ]
+  },
+  {
+   "title": "John Healey’s First UK Budget: What It Means for Markets",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-28/the-opening-trade-uk-budget-special-10-28-2026-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-28T15:35:12.472848+00:00",
+   "title_ru": "Первый британский бюджет Джона Хили: что он значит для рынков",
+   "lead": "The Opening Trade team delivers special coverage of John Healey's first budget as UK Chancellor of the Exchequer.",
+   "lead_ru": "Команда Opening Trade специально освещает первый бюджет Джона Хили на посту министра финансов Великобритании."
+  },
+  {
+   "title": "European sovereign AI, cloud not yet ready for major banks, Temenos CEO says",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVWw1UFVIWTdPSExHTUt6TmNtM3lSY3diRE11SGR6WGtWZjNRa18yWW5zNGhrcFgyQUMzTmN0cUpwRGpURHplZ0ZjZmk2czBWTlBKTEVEN0dfVEhxRzZMcXVNWGtYV2hpR3JiZXEySjlDaWkwa2czd19laEpOelBvMGVVY1FaeUgwWGVtcUxoaXhMeDZCUVNKUUlIUEpnMmFVeC1jSU5TNVprUnRDU1RMb05yNGJtdndLMFdrQWY4Ujk?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T15:35:12.472848+00:00",
+   "title_ru": "Европейский суверенный искусственный интеллект и облако еще не готовы для крупных банков, говорит генеральный директор Temenos"
   }
  ],
  "last_digest": "2026-10-27",
@@ -15531,11 +15571,10 @@
   },
   "checked": "2026-10-28T14:46:22.887126+00:00",
   "sec_seen": [
-   "0001628280-26-067770",
-   "0001976408-26-000912",
-   "0001510281-26-000383",
-   "0001498935-26-000007",
-   "0000001750-26-000106"
+   "0001976408-26-000913",
+   "0001976408-26-000914",
+   "0000001750-26-000106",
+   "0001498935-26-000007"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
