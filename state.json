@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "4e56b1fa13d3e320": "2026-10-25T10:16:42.665350+00:00",
   "240657c6c57b5d4f": "2026-10-25T10:21:42.593644+00:00",
   "27230cc576cd9ef9": "2026-10-25T10:36:42.611077+00:00",
   "9677dc593c03f769": "2026-10-25T10:51:42.582369+00:00",
@@ -899,25 +898,11 @@
   "08fb06f1269f0558": "2026-10-28T10:16:22.813997+00:00",
   "c8596513066f7c1a": "2026-10-28T10:16:22.813997+00:00",
   "4eca1e674f9c5c64": "2026-10-28T10:16:22.813997+00:00",
-  "11a3d0760d0fe7ec": "2026-10-28T10:16:22.813997+00:00"
+  "11a3d0760d0fe7ec": "2026-10-28T10:16:22.813997+00:00",
+  "9098cafbba3de519": "2026-10-28T10:21:22.798345+00:00",
+  "23a6ae1b888948b3": "2026-10-28T10:21:22.798345+00:00"
  },
  "recent": [
-  {
-   "title": "French Bond Rout Puts Crisis at Heart of ECB Succession Endgame",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-25/french-bond-rout-puts-crisis-at-heart-of-ecb-succession-endgame",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-25T10:16:42.665350+00:00",
-   "title_ru": "Разгром французских облигаций ставит кризис в основу завершения процесса преемственности ЕЦБ",
-   "lead": "The European Central Bank’s presidency race looks increasingly likely to hinge on which candidate can best take on the bond vigilantes.",
-   "lead_ru": "Гонка за пост президента Европейского центрального банка, похоже, все больше будет зависеть от того, какой кандидат сможет лучше всего справиться с линчевателями облигаций.",
-   "tags": [
-    "ECB",
-    "bonds"
-   ]
-  },
   {
    "title": "RBA’s Hunter Says Rate ‘Not Quite Yet’ Done Fighting Inflation",
    "link": "https://www.bloomberg.com/news/articles/2026-10-25/rba-s-hunter-says-rate-not-quite-yet-done-fighting-inflation",
@@ -8310,6 +8295,29 @@
    ],
    "score": 1,
    "ts": "2026-10-28T10:16:22.813997+00:00"
+  },
+  {
+   "title": "Unilever India slips after joining peers in flagging commodity inflation",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPR2lZaWpqX2hBMm8xc0dpVXBXc1JsTUQyTUVjWWhGTXpxUlRYWEM2Ni1RT3djTkgyQ191dmZucXoxTUxqOVJSZV9udzRKTVRNUjNfUGN1eFgzVzhpeG9kR2M4NFZkTlNEcEZZS09QVk51emtFZXNDZ21lcUgtNUFLcG5vRld3UVVFZEZpRjNIYkFScVhWV3dvZXpvcXJWdw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-28T10:21:22.798345+00:00",
+   "title_ru": "Unilever India терпит неудачу после того, как присоединилась к конкурентам в борьбе с инфляцией сырьевых товаров",
+   "tags": [
+    "inflation"
+   ]
+  },
+  {
+   "title": "Nevada caught between AI job growth and job losses",
+   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQTVF1SXJGdUFXOTE0REU0QU95Zm44ckxxMzRZSXVPakNTQkFFcjVKMHUtcWdSODFzeTRST2U3SHZWRWxSUjJGUUVRdUoxLUVNWHRKUFlxUktKOUhGdGo2SjM5VVJPUk5LbXNjcW5QbGcwM3diaDV0c05OV3BQS1hwSjJB?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T10:21:22.798345+00:00",
+   "title_ru": "Невада оказалась между ростом рабочих мест в сфере ИИ и потерей рабочих мест"
   }
  ],
  "last_digest": "2026-10-27",
@@ -14725,9 +14733,9 @@
   "checked": "2026-10-28T09:40:51.419708+00:00",
   "sec_seen": [
    "0001075736-26-000120",
-   "0001040470-26-000312",
-   "0000105132-26-000105",
    "0002082930-26-000020",
+   "0000105132-26-000105",
+   "0001040470-26-000312",
    "0000105132-26-000104",
    "0001628280-26-067694",
    "0001040470-26-000316",
@@ -14740,9 +14748,9 @@
    "0000105132-26-000100",
    "0001765836-26-000020",
    "0001193125-26-434837",
-   "0001213900-26-113031",
    "0001193125-26-434839",
    "0001040470-26-000318",
+   "0001213900-26-113031",
    "0001932973-26-000024",
    "0001075736-26-000119",
    "0001807561-26-000022",
