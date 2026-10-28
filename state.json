@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "2b2186a4c3eebf8d": "2026-10-25T01:15:47.300043+00:00",
   "41baa953c9754c92": "2026-10-25T01:35:47.339482+00:00",
   "1847ae4b65e9119c": "2026-10-25T01:35:47.339482+00:00",
   "60b4ad74af879741": "2026-10-25T01:45:47.243632+00:00",
@@ -810,7 +809,9 @@
   "3cb677e09c26dcaf": "2026-10-28T00:55:19.182746+00:00",
   "268c16facd84bdfd": "2026-10-28T00:55:19.182746+00:00",
   "29350db746d7e77e": "2026-10-28T01:10:19.156105+00:00",
-  "004d7279e576d793": "2026-10-28T01:15:19.137050+00:00"
+  "004d7279e576d793": "2026-10-28T01:15:19.137050+00:00",
+  "08a05dbb115a0255": "2026-10-28T01:25:19.121580+00:00",
+  "737c7529a92e9e4a": "2026-10-28T01:25:19.121580+00:00"
  },
  "recent": [
   {
@@ -7265,6 +7266,39 @@
    "tags": [
     "Fed"
    ]
+  },
+  {
+   "title": "Fed Seen Holding Rates With Nod to December: Decision-Day Guide",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-27/fed-seen-holding-rates-with-nod-to-december-decision-day-guide",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-28T01:25:19.121580+00:00",
+   "title_ru": "ФРС видит ставки на удержание с NOD до декабря: руководство по принятию решений",
+   "lead": "The Federal Reserve is expected to hold interest rates steady on Wednesday even after inflation data for September came in hotter than expected.",
+   "lead_ru": "Ожидается, что Федеральная резервная система будет удерживать процентные ставки на стабильном уровне в среду, даже после того, как данные по инфляции за сентябрь оказались более жаркими, чем ожидалось.",
+   "tags": [
+    "Fed",
+    "rates",
+    "inflation"
+   ]
+  },
+  {
+   "title": "New Zealand Raises Rate for Third Straight Meeting on Fuel Price",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-28/new-zealand-raises-rate-for-third-straight-meeting-on-fuel-price",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T01:25:19.121580+00:00",
+   "title_ru": "Новая Зеландия повышает ставку для третьей встречи подряд по цене на топливо",
+   "lead": "New Zealand’s central bank unexpectedly maintained its key interest rate citing global uncertainty that is impacting domestic demand. The New Zealand dollar slid as much as 1.7% to 55.86 US cents immediately after the decision.",
+   "lead_ru": "Центральный банк Новой Зеландии неожиданно сохранил ключевую процентную ставку, ссылаясь на глобальную неопределенность, которая влияет на внутренний спрос. Новозеландский доллар упал на 1,7% до 55,86 цента США сразу после принятия решения.",
+   "tags": [
+    "rates",
+    "dollar"
+   ]
   }
  ],
  "last_digest": "2026-10-27",
@@ -13677,7 +13711,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-28T00:15:19.170009+00:00",
+  "checked": "2026-10-28T01:20:19.150021+00:00",
   "sec_seen": [
    "0001628280-26-067695",
    "0001075736-26-000121",
