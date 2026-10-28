@@ -1057,7 +1057,10 @@
   "a97b63b791c2207a": "2026-10-28T22:05:50.605448+00:00",
   "e337765bd98ab536": "2026-10-28T22:10:50.973334+00:00",
   "228b632f5e6a2b6b": "2026-10-28T22:10:50.973334+00:00",
-  "45676325404823f7": "2026-10-28T22:15:50.651997+00:00"
+  "45676325404823f7": "2026-10-28T22:15:50.651997+00:00",
+  "32ffca79800749b9": "2026-10-28T22:35:50.628199+00:00",
+  "d831889bdcce1597": "2026-10-28T22:35:50.628199+00:00",
+  "d9bb86022b37e4f5": "2026-10-28T22:35:50.628199+00:00"
  },
  "recent": [
   {
@@ -10383,6 +10386,41 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "Sprouts Sinks After Outlook Cut on Cyclospora, Consumer Woes",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-28/sprouts-slashes-outlook-after-cyclospora-outbreak-hit-sales",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T22:35:50.628199+00:00",
+   "title_ru": "Проростки растапливаются после того, как Outlook сократил циклоспору, проблемы потребителей",
+   "lead": "Sprouts Farmers Market Inc. shares tumbled after slashing its outlook, as the grocer’s sales suffered from the cyclospora lettuce outbreak and a gloomy consumer.",
+   "lead_ru": "Акции Sprouts Farmers Market Inc. упали после снижения прогноза, поскольку продажи бакалейщика пострадали от вспышки циклоспоры и мрачного потребителя.",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "Hundreds of Stock Funds Wiped Out in Latin America Market Collapse",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNLVBReHRhZkNvYTJwWk1sWWtacE9lck1iT0ZMX0locmUyN0NoTUtROWRJUXJkMGo5Q1BuTG1BVWZkMnd3WXY5NGl2Q1J2V3p0UW5ocm9GR2xXWlNVMTFxZzJSWHFYejBRZ0pJN05veDk2bHlQeXRFWDFWd0JMU3k1aE1MOUlWY1pYXzhxOU9IVWx5T1o5UEo3Zk42dXVDelBReS1iRHgzT1dOcHo1b25EYy1kVzJadE5TWWhn?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T22:35:50.628199+00:00",
+   "title_ru": "Сотни фондовых фондов, уничтоженных на латиноамериканском рынке, рухнули"
+  },
+  {
+   "title": "Costa Rica drops bid to join Pacific trade pact, sacks trade minister",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOd0dCNXZ0R1JCaTA4ZEVMWkFDbGJCc1RMdEtWNVdOVEltWERGUi00d2hDZjdhVnhPWFhQbFBNYkd3WnJSN0d0WF85cmRBNWFQT01vQmx6VEJfZkYwOEZLZ2x2NGdiRzFjcnRiR0dVTTBBN21hLXdGZDhrUDR6MkF1dW9YbVRnZm9zaGMzT19obkxsc0gyVHBLcjFQMk1VVVh3cDZWLXdPa2NJZVBLSm43cTM0ZktWbHM?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T22:35:50.628199+00:00",
+   "title_ru": "Коста-Рика отказалась от заявки на вступление в Тихоокеанский торговый пакт, министр торговли мешков"
   }
  ],
  "last_digest": "2026-10-28",
@@ -13343,6 +13381,22 @@
     "date": "2026-10-27",
     "disclosed": "2026-10-28",
     "link": "https://www.sec.gov/Archives/edgar/data/1497824/000008734726000126/0000087347-26-000126-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "cf28b76cdc7c3ffc",
+    "ticker": "CBRS",
+    "company": "Cerebras Systems Inc.",
+    "who": "Sean Lie",
+    "role": "CTO",
+    "type": "sell",
+    "value": 6947166,
+    "shares": 60000,
+    "price": 115.79,
+    "plan": true,
+    "date": "2026-10-27",
+    "disclosed": "2026-10-28",
+    "link": "https://www.sec.gov/Archives/edgar/data/2132472/000162828026067978/0001628280-26-067978-index.htm"
    },
    {
     "src": "sec",
@@ -16991,22 +17045,6 @@
     "date": "2026-10-20",
     "disclosed": "2026-10-21",
     "link": "https://www.sec.gov/Archives/edgar/data/1469419/000009341026000194/0000093410-26-000194-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "078d22f8b4889fa8",
-    "ticker": "VRSN",
-    "company": "VERISIGN INC/CA",
-    "who": "D James Bidzos",
-    "role": "CEO",
-    "type": "sell",
-    "value": 1010775,
-    "shares": 3300,
-    "price": 306.3,
-    "plan": true,
-    "date": "2026-10-20",
-    "disclosed": "2026-10-21",
-    "link": "https://www.sec.gov/Archives/edgar/data/1204816/000120481626000055/0001204816-26-000055-index.htm"
    }
   ],
   "docs": {
@@ -17048,11 +17086,9 @@
   "sec_seen": [
    "0001493152-26-049123",
    "0001517413-26-000322",
-   "0001510281-26-000385",
    "0000950103-26-016313",
    "0001510281-26-000386",
    "0001204816-26-000057",
-   "0001193125-26-436386",
    "0001104659-26-119719",
    "0001437749-26-033821",
    "0001493152-26-049125",
@@ -17070,13 +17106,16 @@
    "0002012383-26-003952",
    "0001610717-26-000445",
    "0001398344-26-019008",
+   "0001628280-26-067978",
    "0001193125-26-436441",
+   "0001705952-26-000016",
    "0001193125-26-436443",
    "0001193125-26-436444",
    "0000708955-26-000202",
    "0001193125-26-436415",
    "0000087347-26-000126",
-   "0001493152-26-049119"
+   "0001493152-26-049119",
+   "0000950103-26-016314"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
