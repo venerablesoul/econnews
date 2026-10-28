@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "be035fcf5fb64e0c": "2026-10-25T14:12:19.777995+00:00",
   "5500cf1a2567be7a": "2026-10-25T14:47:19.769752+00:00",
   "d51377e3ac8e366a": "2026-10-25T14:52:19.770841+00:00",
   "c720ded159db7fb6": "2026-10-25T14:57:19.755875+00:00",
@@ -953,24 +952,10 @@
   "9288766abdd5cd48": "2026-10-28T14:06:22.868540+00:00",
   "c4daf5e9827c705a": "2026-10-28T14:11:22.825103+00:00",
   "899fbc16799d5aba": "2026-10-28T14:11:22.825103+00:00",
-  "e9dbb74b405d7181": "2026-10-28T14:11:22.825103+00:00"
+  "e9dbb74b405d7181": "2026-10-28T14:11:22.825103+00:00",
+  "a19ae022610c41ef": "2026-10-28T14:16:22.857304+00:00"
  },
  "recent": [
-  {
-   "title": "Inside The Two Argentinas Under Javier Milei",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-25/inside-the-two-argentinas-under-javier-milei-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-25T14:12:19.777995+00:00",
-   "title_ru": "Внутри двух Аргентин под руководством Хавьера Милея",
-   "lead": "President Javier Milei has brought inflation down and opened Argentina to more investment, helping fuel a boom in energy and other export industries.",
-   "lead_ru": "Президент Хавьер Милей снизил инфляцию и открыл Аргентину для большего количества инвестиций, способствуя буму в энергетике и других экспортных отраслях.",
-   "tags": [
-    "inflation"
-   ]
-  },
   {
    "title": "Zero-Day Option Traders Are Betting Against Big S&P 500 Swings",
    "link": "https://www.bloomberg.com/news/articles/2026-10-25/zero-day-option-traders-are-betting-against-big-s-p-500-swings",
@@ -8914,6 +8899,18 @@
    "tags": [
     "ECB"
    ]
+  },
+  {
+   "title": "Barclays Turns to Insurers to Hedge Billions of Data Center Debt",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-28/barclays-turns-to-insurers-to-hedge-billions-of-data-center-debt",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-28T14:16:22.857304+00:00",
+   "title_ru": "Barclays обращается к страховщикам, чтобы хеджировать миллиарды долгов дата-центров",
+   "lead": "Barclays Plc is looking to buy default protection on more than $10 billion of debt to finance artificial intelligence infrastructure in a bid to create capacity for more lending as hyperscaler funding needs soar.",
+   "lead_ru": "Barclays Plc стремится купить защиту от дефолта по долгам на сумму более $ 10 млрд для финансирования инфраструктуры искусственного интеллекта в попытке создать потенциал для большего кредитования по мере роста потребностей в финансировании гипермасштабирования."
   }
  ],
  "last_digest": "2026-10-27",
@@ -15330,8 +15327,8 @@
   "checked": "2026-10-28T13:46:22.847622+00:00",
   "sec_seen": [
    "0001767612-26-000006",
-   "0001209992-26-000052",
-   "0001104659-26-119430"
+   "0001104659-26-119430",
+   "0001209992-26-000052"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
