@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c2f26e3efc273e07": "2026-10-25T13:57:19.735408+00:00",
   "d28ef54367605019": "2026-10-25T14:02:19.754081+00:00",
   "be035fcf5fb64e0c": "2026-10-25T14:12:19.777995+00:00",
   "5500cf1a2567be7a": "2026-10-25T14:47:19.769752+00:00",
@@ -948,25 +947,11 @@
   "cb14e04c6b16ff1a": "2026-10-28T13:41:22.912144+00:00",
   "437717f8aba2c369": "2026-10-28T13:46:22.847622+00:00",
   "c832c9c96b4b80ed": "2026-10-28T13:46:22.847622+00:00",
-  "a783a18b2f7f4a50": "2026-10-28T13:51:22.918483+00:00"
+  "a783a18b2f7f4a50": "2026-10-28T13:51:22.918483+00:00",
+  "21c9d96e8a1ab0c3": "2026-10-28T14:01:22.836074+00:00",
+  "995784564b93905f": "2026-10-28T14:01:22.836074+00:00"
  },
  "recent": [
-  {
-   "title": "Fed Looks Set to Pause After September Rate Hike",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-25/fed-looks-set-to-pause-after-september-rate-hike-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 8,
-   "ts": "2026-10-25T13:57:19.735408+00:00",
-   "title_ru": "ФРС, похоже, собирается сделать паузу после сентябрьского повышения ставок",
-   "lead": "On Bloomberg This Weekend, Bloomberg News Federal Reserve reporter Maria Eloisa Capurro previews the Fed’s upcoming rate decision, with policymakers widely expected to pause after September’s first rate increase since 2023…",
-   "lead_ru": "В эфире Bloomberg на этих выходных репортер Федеральной резервной системы Bloomberg News Мария Элоиза Капурро анонсирует предстоящее решение ФРС по ставке, при этом ожидается, что политики сделают паузу после первого сентябрьского повышения ставок с 2023 года…",
-   "tags": [
-    "Fed",
-    "rates"
-   ]
-  },
   {
    "title": "More than a third of S&P 500 companies are about to report earnings as market confidence cracks",
    "link": "https://www.marketwatch.com/story/more-than-a-third-of-s-p-500-companies-are-about-to-report-earnings-as-market-confidence-cracks-03b7a8f1?mod=mw_rss_topstories",
@@ -8867,6 +8852,31 @@
     "rates",
     "inflation"
    ]
+  },
+  {
+   "title": "Гурьев призвал на уровне ООН отказаться от санкций против минудобрений",
+   "link": "https://www.rbc.ru/business/28/10/2026/6ae1ece035377df3a82619b3",
+   "sources": [
+    "RBC"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T14:01:22.836074+00:00",
+   "title_en": "Guryev called for the UN to lift sanctions against fertilizers.",
+   "lead": "Глава Российской ассоциации производителей удобрений Андрей Гурьев предложил не использовать их как политический инструмент. Ущерб, наносимый санкциями, уже сейчас угрожает глобальной продовольственной безопасности",
+   "lead_en": "Andrey Guryev, head of the Russian Fertilizer Producers Association, suggested not using them as a political tool. The damage caused by sanctions is already threatening global food security.",
+   "tags": [
+    "sanctions",
+    "Russia"
+   ]
+  },
+  {
+   "title": "Electricity, insurance and eggs: see how has life in Australia got more expensive",
+   "link": "https://www.theguardian.com/business/ng-interactive/2026/oct/29/electricity-insurance-and-eggs-see-how-has-life-in-australia-got-more-expensive",
+   "sources": [
+    "The Guardian"
+   ],
+   "score": 2,
+   "ts": "2026-10-28T14:01:22.836074+00:00"
   }
  ],
  "last_digest": "2026-10-27",
@@ -15282,7 +15292,8 @@
   },
   "checked": "2026-10-28T13:46:22.847622+00:00",
   "sec_seen": [
-   "0001767612-26-000006"
+   "0001767612-26-000006",
+   "0001209992-26-000052"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
