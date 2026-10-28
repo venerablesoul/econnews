@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "d9c1d7b5668854b6": "2026-10-25T21:53:25.677813+00:00",
   "68e0a36c4fe143ca": "2026-10-25T22:13:57.734064+00:00",
   "c293588cd08c1eda": "2026-10-25T22:18:52.445586+00:00",
   "493b1bc52cef48c9": "2026-10-25T22:18:52.445586+00:00",
@@ -1056,7 +1055,8 @@
   "a8e771a092bb1b8c": "2026-10-28T21:40:50.968587+00:00",
   "6527e34015e43599": "2026-10-28T21:40:50.968587+00:00",
   "eda2422de3fa4118": "2026-10-28T21:45:50.997115+00:00",
-  "c610c3560e4ec72c": "2026-10-28T21:50:50.965528+00:00"
+  "c610c3560e4ec72c": "2026-10-28T21:50:50.965528+00:00",
+  "55eb21e875b55f2f": "2026-10-28T21:55:50.993269+00:00"
  },
  "recent": [
   {
@@ -10331,6 +10331,19 @@
    "tags": [
     "dollar"
    ]
+  },
+  {
+   "title": "Ford Raises Outlook Even as War, Inflation Exact Mounting Toll (F)",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPU29JS3RValdrUlZKXzYzNVQtQ3RqWWNKWkRIeGgtSVN3c09ndC13ZjJzN2thMEhBY2M0M3U4NFRaYWIzQ2tkTkxSV080OVBFVlA0TGZnMW5yZTZ3QUM4M0QtUFRCZ0RDcE12WnJXTF9ETExNX1pOQTNfWEJSdUZoRG5aWmpvWVlSenBMTTViZDM4dW1vRFlxWS1JQlpSMjZ0VGppUDRBQW9RM1JSdmdxa2VB?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-28T21:55:50.993269+00:00",
+   "title_ru": "Ford повышает прогноз даже в условиях войны, инфляция Точный монтажный сбор (F)",
+   "tags": [
+    "inflation"
+   ]
   }
  ],
  "last_digest": "2026-10-28",
@@ -13259,6 +13272,22 @@
     "date": "2026-10-27",
     "disclosed": "2026-10-28",
     "link": "https://www.sec.gov/Archives/edgar/data/1551047/000139834426019008/0001398344-26-019008-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "cf0b1e9ff3a9a30e",
+    "ticker": "VRSN",
+    "company": "VERISIGN INC/CA",
+    "who": "D James Bidzos",
+    "role": "CEO",
+    "type": "sell",
+    "value": 1002100,
+    "shares": 3300,
+    "price": 303.67,
+    "plan": true,
+    "date": "2026-10-27",
+    "disclosed": "2026-10-28",
+    "link": "https://www.sec.gov/Archives/edgar/data/1204816/000120481626000057/0001204816-26-000057-index.htm"
    },
    {
     "src": "sec",
@@ -16939,22 +16968,6 @@
     "date": "2026-10-20",
     "disclosed": "2026-10-21",
     "link": "https://www.sec.gov/Archives/edgar/data/1892951/000139834426018541/0001398344-26-018541-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "938328e5527cadaf",
-    "ticker": "ADI",
-    "company": "ANALOG DEVICES INC",
-    "who": "Richard C Jr Puccio",
-    "role": "CFO",
-    "type": "sell",
-    "value": 584190,
-    "shares": 1500,
-    "price": 389.46,
-    "plan": true,
-    "date": "2026-10-20",
-    "disclosed": "2026-10-21",
-    "link": "https://www.sec.gov/Archives/edgar/data/2009110/000000628126000081/0000006281-26-000081-index.htm"
    }
   ],
   "docs": {
@@ -16997,11 +17010,12 @@
    "0001517413-26-000322",
    "0001510281-26-000385",
    "0001510281-26-000386",
+   "0001204816-26-000057",
    "0001193125-26-436386",
    "0001104659-26-119719",
+   "0001437749-26-033821",
    "0001216931-26-000014",
    "0001193125-26-436418",
-   "0001193125-26-436365",
    "0001193125-26-436436",
    "0001895101-26-000021",
    "0001877170-26-000004",
