@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "78ce690271973d1a": "2026-10-25T19:13:25.710823+00:00",
   "ed7935fc9fb83f02": "2026-10-25T19:18:25.695026+00:00",
   "65d389fd7812f311": "2026-10-25T20:13:25.695426+00:00",
   "0f4d626ae49921a6": "2026-10-25T20:33:25.662879+00:00",
@@ -1024,7 +1023,11 @@
   "65f1f2d39fa981ef": "2026-10-28T19:05:12.558811+00:00",
   "b6f98e8d2a15aa6f": "2026-10-28T19:10:12.434498+00:00",
   "fdde3193a59652d6": "2026-10-28T19:10:12.434498+00:00",
-  "daefdc9c82eaffb0": "2026-10-28T19:10:12.434498+00:00"
+  "daefdc9c82eaffb0": "2026-10-28T19:10:12.434498+00:00",
+  "8e306aac0ffeff2b": "2026-10-28T19:15:12.505691+00:00",
+  "b079810c8f57eb0d": "2026-10-28T19:15:12.505691+00:00",
+  "2a110b392ce70bf8": "2026-10-28T19:15:12.505691+00:00",
+  "26bfc3481175e8f2": "2026-10-28T19:15:12.505691+00:00"
  },
  "recent": [
   {
@@ -9887,6 +9890,43 @@
    "score": 4,
    "ts": "2026-10-28T19:10:12.434498+00:00",
    "title_ru": "Вебинар по модернизации ЦПС во вторник, 10 ноября, в 15:00. восточноевропейское время"
+  },
+  {
+   "title": "UK inflation forecast to average 3.4% in 2027, OBR says",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNVU1ZLWRfOWJKSjgzSzVnU0lRT1c0ZHZ4N1RNc2RKV3RHNEhiVFlRTEYtOXduN05ISVE1VDN6NXlMSUl4QXNtZ2dPRGNoLW5xeEhjeUZjdGQ3M2EwRHpmWnlPLWltVmN0d3Q3RWU1ekZRTFUwcTlLTjRvREtPUXZPS00tOXI1RGZEYkJ6VXItVnlNVzgzQWh3UUpR?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-28T19:15:12.505691+00:00",
+   "title_ru": "Прогноз инфляции в Великобритании в 2027 году составит в среднем 3,4%, сообщает OBR",
+   "tags": [
+    "inflation"
+   ]
+  },
+  {
+   "title": "US Hits Chinese Trailers With Tariffs to Aid Domestic Producers",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMGx1YmYzOHhfSnRjeGxPb1FncjBicVUxN3R0ZlNsRFlvMnRDUThSVFVHZG5IeXNfQjAzSXZhdWNJbkpzRnJhcVllZVBkZEJFenNmVE1QNVlzbElZbmpxVzNOZWZDRTN1UkYxV29RZjExSi1XMnJMaWJwUllNLTEtOUFyR2pUZWQ1YTFlaDluMHplSVREVTdRX3pzakNnanpFWk1iSVNFbEZRNjVzQVdpZFJNU0c?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-28T19:15:12.505691+00:00",
+   "title_ru": "США вводят пошлины на китайские трейлеры, чтобы помочь отечественным производителям",
+   "tags": [
+    "China",
+    "tariffs"
+   ]
+  },
+  {
+   "title": "How a high-speed train crash unfolded in central Spain",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0zaUtUTXAxQmdJaEticHJiRTJoeVQ3MVNEN1JRRWNhdzZpa21tUWxsX1NmSE43NW1jNDJzVzdteHBOUlJGbWtqMWZmZ3FtU3VxSFVzUGlOQ3pDa2s0alVIMnlHTVBMbk5Ycm5zNg?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-28T19:15:12.505691+00:00",
+   "title_ru": "Как в центре Испании произошла авария скоростного поезда"
   }
  ],
  "last_digest": "2026-10-28",
@@ -16549,9 +16589,7 @@
    "sec": true
   },
   "checked": "2026-10-28T18:55:12.451443+00:00",
-  "sec_seen": [
-   "0001193125-26-435894"
-  ],
+  "sec_seen": [],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
   }
