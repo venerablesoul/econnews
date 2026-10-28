@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "46cf89f1a6155552": "2026-10-25T12:26:42.608229+00:00",
   "a57203ae6ff7e6c8": "2026-10-25T12:36:42.578727+00:00",
   "3ed6cb55f6943682": "2026-10-25T12:46:42.620370+00:00",
   "e1a225428f4f1189": "2026-10-25T12:46:42.620370+00:00",
@@ -922,22 +921,12 @@
   "3e077cb21e7b7e1c": "2026-10-28T12:16:22.909535+00:00",
   "866c0e6c78f4ccfb": "2026-10-28T12:16:22.909535+00:00",
   "6da7ecd956c6c3e8": "2026-10-28T12:21:22.845972+00:00",
-  "6812d692c7888328": "2026-10-28T12:26:22.828364+00:00"
+  "6812d692c7888328": "2026-10-28T12:26:22.828364+00:00",
+  "186f08bb6eb4494c": "2026-10-28T12:31:22.923020+00:00",
+  "120f8c1da2bf5f27": "2026-10-28T12:31:22.923020+00:00",
+  "a33d23d8d2828b6a": "2026-10-28T12:31:22.923020+00:00"
  },
  "recent": [
-  {
-   "title": "Saudi, Egyptian stocks sink as Yemen conflict intensifies",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOa3ZBWG5tbkZvcXJFc2xkcEs1SmhEcHAybDM1ZGN0T0ZCN3BIcTFyaF9laXlEYVA2N2ZsUmJjcmgxaS1aVW5jdFZSOFZrc2JnUWFJaFRwR25QS0pob0RTT0lONlJldzVxOFlidThrdm8zTVU4X1l4dFRPVUY5R0ZuX05aX2pibWg2VlNLUmlaVmFaWDg5bDlMQUVFWTh2bnZ3WFJ4MzA1RWVDMEtKOEE?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-25T12:26:42.608229+00:00",
-   "title_ru": "Акции Саудовской Аравии и Египта падают из-за обострения конфликта в Йемене",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "What’s Happening in EM: Bond Investors Turn to Developing World",
    "link": "https://www.bloomberg.com/news/audio/2026-10-25/what-s-happening-in-em-bond-investors-turn-to-developing-world",
@@ -8558,6 +8547,40 @@
    "score": 3,
    "ts": "2026-10-28T12:26:22.828364+00:00",
    "title_ru": "Иранцы режут предметы первой необходимости и откладывают мечты, поскольку экономика, пострадавшая от войны, кусается"
+  },
+  {
+   "title": "Market Talk: Why is the Fed waiting to hike?",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE8wUFAzYnBVa1puNlFNRkZzbW9NazRJUlZJMEJic1d4V3FrczFsbzJYb0F2eXdvZXZjM2JycjRpcTJlVHNEYmI4blhYQkxLMm8ycFVid2wxZnVQR253VG5mQV9mb1poWkJVYXJkY0JzZ3dRRXdFZUt2REtXbDN3dw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-28T12:31:22.923020+00:00",
+   "title_ru": "Разговор о рынке: почему ФРС ждет повышения курса?",
+   "tags": [
+    "Fed"
+   ]
+  },
+  {
+   "title": "South Africa Fails to Award Gas-to-Power Projects Due to Supply",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-28/south-africa-fails-to-award-gas-to-power-projects-due-to-supply",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T12:31:22.923020+00:00",
+   "title_ru": "Южная Африка не может присудить газоэнергетические проекты из-за поставок",
+   "lead": "South Africa failed to award gas-to-power projects in an initial round to procure generation from the technology, threatening to slow the pace of the nation’s transition away from coal.",
+   "lead_ru": "Южная Африка не смогла присудить газоэнергетические проекты на начальном этапе для закупки генерации из этой технологии, что угрожало замедлить темпы перехода страны от угля."
+  },
+  {
+   "title": "«Сбер» спрогнозировал рост рисков по кредитам бизнесу до конца года",
+   "link": "https://www.rbc.ru/finances/28/10/2026/6ae1cb93f84804052b7fce36",
+   "sources": [
+    "RBC"
+   ],
+   "score": 1,
+   "ts": "2026-10-28T12:31:22.923020+00:00"
   }
  ],
  "last_digest": "2026-10-27",
@@ -14981,13 +15004,11 @@
    "0001654009-26-000014",
    "0001193125-26-434840",
    "0001877346-26-000024",
-   "0000105132-26-000100",
    "0001193125-26-434837",
    "0001193125-26-434839",
    "0001193125-26-435148",
    "0001932973-26-000024",
    "0001807561-26-000022",
-   "0001075736-26-000121",
    "0001193125-26-435149",
    "0001505300-26-000013",
    "0001193125-26-434846",
