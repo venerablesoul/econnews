@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "96991facfbd089df": "2026-10-25T21:28:25.680160+00:00",
   "0c70ded9f2b6700e": "2026-10-25T21:48:25.767287+00:00",
   "f89ce3ab6be94361": "2026-10-25T21:48:25.767287+00:00",
   "d9c1d7b5668854b6": "2026-10-25T21:53:25.677813+00:00",
@@ -1048,7 +1047,10 @@
   "d62ead68c3bd433e": "2026-10-28T21:15:50.671593+00:00",
   "931882e23f2cd385": "2026-10-28T21:15:50.671593+00:00",
   "47789c0bcc5237b0": "2026-10-28T21:20:51.163935+00:00",
-  "1c9715ad4e258cff": "2026-10-28T21:25:52.228172+00:00"
+  "1c9715ad4e258cff": "2026-10-28T21:25:52.228172+00:00",
+  "1863a0d669486de3": "2026-10-28T21:30:50.624459+00:00",
+  "d388ed9cb5ce0b7c": "2026-10-28T21:30:50.624459+00:00",
+  "97213c664db5dbf6": "2026-10-28T21:30:50.624459+00:00"
  },
  "recent": [
   {
@@ -10233,6 +10235,19 @@
    "tags": [
     "Fed"
    ]
+  },
+  {
+   "title": "Fed holds rates in wait-and-see mode days before the midterms",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5JcHpRQ2p3NnhzSmR6anpKU2Ffamh1S1NjZ2ZKcENLMFdfa1VXS0NoYTNmSzRvQzdxUTFpTUNfVTNBN0RFMy1qcTVhU1F2eXFXV2duYmpDaWZ6Qk1kS0N2WVg4WFJPeUU?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T21:30:50.624459+00:00",
+   "title_ru": "ФРС держит ставки в режиме ожидания за несколько дней до промежуточных выборов",
+   "tags": [
+    "Fed"
+   ]
   }
  ],
  "last_digest": "2026-10-28",
@@ -13353,6 +13368,22 @@
     "date": "2026-10-26",
     "disclosed": "2026-10-28",
     "link": "https://www.sec.gov/Archives/edgar/data/1769490/000151741326000320/0001517413-26-000320-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "fb6b9c88f98b109f",
+    "ticker": "HXL",
+    "company": "HEXCEL CORP /DE/",
+    "who": "Neal J. Keating",
+    "role": "Director",
+    "type": "buy",
+    "value": 242010,
+    "shares": 3000,
+    "price": 80.67,
+    "plan": false,
+    "date": "2026-10-26",
+    "disclosed": "2026-10-28",
+    "link": "https://www.sec.gov/Archives/edgar/data/1319629/000119312526436418/0001193125-26-436418-index.htm"
    },
    {
     "src": "sec",
@@ -16841,22 +16872,6 @@
     "date": "2026-10-20",
     "disclosed": "2026-10-21",
     "link": "https://www.sec.gov/Archives/edgar/data/2129740/000123191926001485/0001231919-26-001485-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "7278b79d8a5cd4a8",
-    "ticker": "FBK",
-    "company": "FB Financial Corp",
-    "who": "Orrin H Ii Ingram",
-    "role": "Director",
-    "type": "buy",
-    "value": 1537788,
-    "shares": 29081,
-    "price": 52.88,
-    "plan": false,
-    "date": "2026-10-20",
-    "disclosed": "2026-10-21",
-    "link": "https://www.sec.gov/Archives/edgar/data/1649749/000119147326000008/0001191473-26-000008-index.htm"
    }
   ],
   "docs": {
@@ -16896,15 +16911,17 @@
   },
   "checked": "2026-10-28T21:00:12.519519+00:00",
   "sec_seen": [
+   "0001877170-26-000004",
+   "0001517413-26-000322",
    "0001510281-26-000385",
    "0001216931-26-000014",
    "0001517413-26-000320",
+   "0001510281-26-000386",
+   "0001193125-26-436418",
+   "0001193125-26-436415",
    "0001193125-26-436386",
    "0001193125-26-436365",
-   "0001031083-26-000004",
-   "0001031082-26-000009",
-   "0001477932-26-006494",
-   "0001551293-26-000005"
+   "0001031083-26-000004"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
