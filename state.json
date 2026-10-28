@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "d28ef54367605019": "2026-10-25T14:02:19.754081+00:00",
   "be035fcf5fb64e0c": "2026-10-25T14:12:19.777995+00:00",
   "5500cf1a2567be7a": "2026-10-25T14:47:19.769752+00:00",
   "d51377e3ac8e366a": "2026-10-25T14:52:19.770841+00:00",
@@ -949,24 +948,11 @@
   "c832c9c96b4b80ed": "2026-10-28T13:46:22.847622+00:00",
   "a783a18b2f7f4a50": "2026-10-28T13:51:22.918483+00:00",
   "21c9d96e8a1ab0c3": "2026-10-28T14:01:22.836074+00:00",
-  "995784564b93905f": "2026-10-28T14:01:22.836074+00:00"
+  "995784564b93905f": "2026-10-28T14:01:22.836074+00:00",
+  "51d3a2e361c8aec9": "2026-10-28T14:06:22.868540+00:00",
+  "9288766abdd5cd48": "2026-10-28T14:06:22.868540+00:00"
  },
  "recent": [
-  {
-   "title": "More than a third of S&P 500 companies are about to report earnings as market confidence cracks",
-   "link": "https://www.marketwatch.com/story/more-than-a-third-of-s-p-500-companies-are-about-to-report-earnings-as-market-confidence-cracks-03b7a8f1?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 3,
-   "ts": "2026-10-25T14:02:19.754081+00:00",
-   "title_ru": "Более трети компаний из индекса S&P 500 собираются отчитаться о прибылях, поскольку доверие рынка падает",
-   "lead": "“With cautious to negative market sentiment, it could be a tricky week,” one strategist says.",
-   "lead_ru": "«Учитывая осторожные и негативные настроения рынка, эта неделя может оказаться непростой», — говорит один из стратегов.",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Inside The Two Argentinas Under Javier Milei",
    "link": "https://www.bloomberg.com/news/videos/2026-10-25/inside-the-two-argentinas-under-javier-milei-video",
@@ -8877,6 +8863,29 @@
    ],
    "score": 2,
    "ts": "2026-10-28T14:01:22.836074+00:00"
+  },
+  {
+   "title": "Canada reports limited progress in trade talks with US",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxObkVGYXBiWnNCZDFyNVRMSjNnZG5xRENTUDkzbk04SVdRV3d5LVZFbkxRR2FVSGt5MnhUYkZSVWtBNzJBclcxZ3FacC1JTUpMTExLQU9USDhTTjY3aWwyTWNpSlRMUy1FLURMQkpYalZXdl9qS2RFdHQ0Tm9XaWdjU2pqSTNOQ2U5WDU1OXUyaVZYcG1LMkl6UmRJZ0M?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T14:06:22.868540+00:00",
+   "title_ru": "Канада сообщает об ограниченном прогрессе в торговых переговорах с США"
+  },
+  {
+   "title": "GSK third-quarter beat fails to impress and shares fall",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPY1FBbGtkNGhROXJGS3lSUms5VFRZSTRDZHJWblBwLUkycjY2OGJLLUVreTc4NHhGVFNLeklQZkQxMEQ5VS1DNHlBZGxtbGJJbjlJNjBsNDZkRFJPaUFqOGJKcm9Za1YzTGgtcEtGMlF5YXE3djc1OXN6RmU3bHJUZmUxSl9ua3JDdjRqVE94eUxOckVEVUswa0pGa29qRzZTZW10YkxYSGQ1REVCN3l6VlRkNkxhSnFDTVM5ODlWdjFvQVlOTE95azBOV1c2dw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T14:06:22.868540+00:00",
+   "title_ru": "Биты третьего квартала GSK не впечатляют, и акции падают",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-27",
@@ -15293,6 +15302,7 @@
   "checked": "2026-10-28T13:46:22.847622+00:00",
   "sec_seen": [
    "0001767612-26-000006",
+   "0001104659-26-119430",
    "0001209992-26-000052"
   ],
   "errors": {
