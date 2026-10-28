@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "9a6b99cc8c92ab2a": "2026-10-25T06:26:11.508784+00:00",
   "f903f03c84bfd685": "2026-10-25T06:46:11.635084+00:00",
   "da14b003ae0bda17": "2026-10-25T06:56:11.479301+00:00",
   "a82b46945df8c8cf": "2026-10-25T07:11:11.504017+00:00",
@@ -852,21 +851,12 @@
   "ae0acada2291fdfb": "2026-10-28T06:10:51.207255+00:00",
   "55af00c14cfd84c1": "2026-10-28T06:15:51.189088+00:00",
   "a53ec7ea6fd38bb6": "2026-10-28T06:25:51.156398+00:00",
-  "8d8e02cff1e5cf3b": "2026-10-28T06:25:51.156398+00:00"
+  "8d8e02cff1e5cf3b": "2026-10-28T06:25:51.156398+00:00",
+  "f6b18a6ceeb862f9": "2026-10-28T06:30:51.228478+00:00",
+  "2a9af4b53754a20b": "2026-10-28T06:30:51.228478+00:00",
+  "2ef5047aac0891d1": "2026-10-28T06:30:51.228478+00:00"
  },
  "recent": [
-  {
-   "title": "Budget 2026: No more fat to trim for 'squeezed middle'",
-   "link": "https://www.bbc.co.uk/news/articles/c6gel54940qno?at_medium=RSS&at_campaign=rss",
-   "sources": [
-    "BBC"
-   ],
-   "score": 3,
-   "ts": "2026-10-25T06:26:11.508784+00:00",
-   "title_ru": "Бюджет 2026: больше не нужно урезать жир ради «сжатой середины»",
-   "lead": "As the chancellor finalises his first Budget, how are the \"squeezed middle\" feeling about costs?",
-   "lead_ru": "Когда канцлер завершает работу над своим первым бюджетом, как «сжатая середина» относится к расходам?"
-  },
   {
    "title": "Firms 'holding back' on new jobs ahead of Budget",
    "link": "https://www.bbc.co.uk/news/articles/c62kep355q02o?at_medium=RSS&at_campaign=rss",
@@ -7740,6 +7730,16 @@
     "inflation",
     "oil"
    ]
+  },
+  {
+   "title": "Morning Bid: RBNZ throws markets a curveball",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBWQTFRLUlZZ0F6UWxpNlVzLW5BUzhHZnMyWkQ2LXdLNGFMZmJJa0lTYjNQLUplTVQ4dVY3Yjl0SmJQNXBiU1FUbnhlbElLQlJNamtfODczTTRaM1RwUE5uSzBwWVFqdFEweXEyNHJxWFA3Sl9yNy1nWHpuQU4tcEU?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T06:30:51.228478+00:00",
+   "title_ru": "Утренняя ставка: RBNZ бросает рынки в кривую"
   }
  ],
  "last_digest": "2026-10-27",
@@ -14152,17 +14152,17 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-28T05:30:51.210012+00:00",
+  "checked": "2026-10-28T06:30:51.228478+00:00",
   "sec_seen": [
    "0001040470-26-000312",
    "0001213900-26-113025",
-   "0001040470-26-000314",
    "0001193125-26-434840",
+   "0001040470-26-000314",
    "0001213900-26-113031",
    "0001040470-26-000311",
    "0001877346-26-000024",
-   "0001213900-26-113020",
    "0001193125-26-434846",
+   "0001213900-26-113020",
    "0001628280-26-067695",
    "0001075736-26-000120",
    "0001654009-26-000014",
@@ -14170,9 +14170,9 @@
    "0001807561-26-000022",
    "0002082930-26-000020",
    "0001213900-26-113017",
-   "0000105132-26-000103",
-   "0001040470-26-000318",
    "0001253170-26-000014",
+   "0001040470-26-000318",
+   "0000105132-26-000103",
    "0000105132-26-000100",
    "0001628280-26-067694",
    "0001075736-26-000119",
