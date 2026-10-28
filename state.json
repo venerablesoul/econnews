@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "6643d8abc7ff4a77": "2026-10-25T18:48:25.712051+00:00",
-  "223efdfd6db72bda": "2026-10-25T18:48:25.712051+00:00",
   "90e642875f228126": "2026-10-25T18:53:25.730113+00:00",
   "b6f98e8d2a15aa6f": "2026-10-25T18:58:25.666810+00:00",
   "89e063af50269ba6": "2026-10-25T18:58:25.666810+00:00",
@@ -1020,32 +1018,11 @@
   "c626251d52f3f199": "2026-10-28T18:45:13.584830+00:00",
   "36c53bae901d046c": "2026-10-28T18:45:13.584830+00:00",
   "719796419bb09752": "2026-10-28T18:45:13.584830+00:00",
-  "d0cdb596774d7326": "2026-10-28T18:45:13.584830+00:00"
+  "d0cdb596774d7326": "2026-10-28T18:45:13.584830+00:00",
+  "40ebb603f29734ee": "2026-10-28T18:50:12.452459+00:00",
+  "40e862c5882bd69d": "2026-10-28T18:50:12.452459+00:00"
  },
  "recent": [
-  {
-   "title": "A 50% Yield? The AI Trade Is Getting Wild After CoreWeave",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOeXh0eDlOMEdYR0VYMVlwOC1vUXFGMlJLUlhSaG5iRFlpZjNUQmtISUxWdk04SlBxanh4Sjk2TEhFb3dwRUY5S09VMDRENzlpTGcyX1hRZzdKQ0FwX1dzREhTMHppeXBQYVJZVlM5X2JaSnhZNUlBdTZpSWtJc3dfMERxV0daREJWbXdDb2Jxc2hQNS1YcUtZSHJsY1BoclY0WXg4dWNqQWdpUU9WRGc?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-25T18:48:25.712051+00:00",
-   "title_ru": "50% доходности? Сделка с ИИ становится дикой после CoreWeave",
-   "tags": [
-    "bonds"
-   ]
-  },
-  {
-   "title": "Hassett Says US-Canada Trade Talks Are ‘Very Close’ to a Deal",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNVmdYU2JKSktsSURRM0x5WDJUUXRIWlp6d2hEMEdHRHpEOEpHcnpIemdUdXp6ZDFCWFBzSGxqcU5OT3cza0xnS0ZFZGFGdGkxdU1TdWg2MnJScTVIWWtwNmw5NDN4UFN1Y3oyWkJtVXFLdXlNYjdtOWNCNE1ydVdKcTNwdDJ0aW0yWTFleTVLRVZNaVlHemg4SGswRW9tSDlSQXc4c0ZjNTNHb3dGcURF?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-25T18:48:25.712051+00:00",
-   "title_ru": "Хассетт говорит, что торговые переговоры между США и Канадой «очень близки» к сделке"
-  },
   {
    "title": "iShares MSCI Emerging Markets ETF (EEM.N) | Stock Price & Latest News",
    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1CVE15Q3c1WVhqNWpXVTBXWDZSNm85ckZzeUUwbmtRd3pyZklPNExVZkR6WC1xVlVZVVpjT3MzdzVXa1plU2pxdG5nZ01OY2R5ZDg3YUNRRGZubHp1YXpfRWRLYS1QSlZmM3c?oc=5",
@@ -9849,6 +9826,35 @@
    "tags": [
     "Fed"
    ]
+  },
+  {
+   "title": "Регулятор взял паузу // ФРС сохранила ключевую ставку",
+   "link": "https://www.kommersant.ru/doc/9063216",
+   "sources": [
+    "Kommersant"
+   ],
+   "score": 9,
+   "ts": "2026-10-28T18:50:12.452459+00:00",
+   "title_en": "The regulator took a break // the Fed kept the key rate",
+   "lead": "Федеральная резервная система (ФРС) США сохранила базовую ставку на уровне 3,75–4% годовых. Решение поддержали не все члены руководства регулятора — двое из 12 предложили поднять ключевую ставку на 0,25 процентного пункта.",
+   "lead_en": "The US Federal Reserve System (FRS) kept the base rate at 3.75–4% per annum. The decision was not supported by all members of the regulator’s management - two out of 12 proposed raising the key rate by 0.25 percentage points.",
+   "tags": [
+    "Fed",
+    "BankOfRussia",
+    "rates"
+   ]
+  },
+  {
+   "title": "Chris Wright Says Diesel Exports From Arabian Gulf Likely to Increase",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-28/diesel-from-arabian-gulf-likely-to-increase-wright-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T18:50:12.452459+00:00",
+   "title_ru": "Крис Райт говорит, что экспорт дизельного топлива из Персидского залива, вероятно, увеличится",
+   "lead": "Energy Secretary Chris Wright said that he expects diesel prices to be 'dropped significantly' but will need increased exports out of the Arabian Gulf to manage it amid the ongoing war with Iran.",
+   "lead_ru": "Министр энергетики Крис Райт заявил, что он ожидает, что цены на дизельное топливо «значительно снизятся», но ему потребуется увеличить экспорт из Персидского залива, чтобы справиться с этим в условиях продолжающейся войны с Ираном."
   }
  ],
  "last_digest": "2026-10-28",
