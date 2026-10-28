@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e9d1515acbda2578": "2026-10-25T07:16:11.517599+00:00",
   "76a3c274aa2c686e": "2026-10-25T08:11:42.573257+00:00",
   "c5c7573e5359adbf": "2026-10-25T08:11:42.573257+00:00",
   "0b1b2b704ee2bf34": "2026-10-25T08:16:42.612480+00:00",
@@ -860,24 +859,12 @@
   "7e9c3a61e3297a6a": "2026-10-28T07:15:51.206151+00:00",
   "9ed5115849214613": "2026-10-28T07:15:51.206151+00:00",
   "5012520bea842a64": "2026-10-28T07:15:51.206151+00:00",
-  "9eb59fedf5a9f48d": "2026-10-28T07:15:51.206151+00:00"
+  "9eb59fedf5a9f48d": "2026-10-28T07:15:51.206151+00:00",
+  "d2e4c5f0761cd38c": "2026-10-28T07:20:51.163292+00:00",
+  "129d97b7c4d152cd": "2026-10-28T07:20:51.163292+00:00",
+  "d512bfe3607842c4": "2026-10-28T07:20:51.163292+00:00"
  },
  "recent": [
-  {
-   "title": "Heating oil costs 'more than double' ahead of winter",
-   "link": "https://www.bbc.co.uk/news/articles/c6n8de1jgrdvo?at_medium=RSS&at_campaign=rss",
-   "sources": [
-    "BBC"
-   ],
-   "score": 3,
-   "ts": "2026-10-25T07:16:11.517599+00:00",
-   "title_ru": "Нагрев масла стоит «более чем вдвое» перед зимой",
-   "lead": "Middleton in Teesdale has no mains gas supply so many residents use expensive heating oil.",
-   "lead_ru": "В Миддлтоне в Тисдейле нет сетевого газоснабжения, поэтому многие жители используют дорогостоящее печное топливо.",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "Goldman Cuts Kospi 12-Month Target by 25% as AI Trade Unravels",
    "link": "https://www.bloomberg.com/news/articles/2026-10-25/goldman-cuts-kospi-12-month-target-by-25-as-ai-trade-unravels",
@@ -7852,6 +7839,42 @@
    "title_ru": "Генеральный директор UBS Эрмотти о доходах, экономии средств, возврате капитала",
    "lead": "UBS CEO Sergio Ermotti speaks to Bloomberg's Stephen Carroll after the lender posted third-quarter profit broadly in line with expectations, with a surge in client inflows potentially buoying the outlook for the global wealth…",
    "lead_ru": "Генеральный директор UBS Серджио Эрмотти (Sergio Ermotti) беседует со Стивеном Кэрроллом (Stephen Carroll) из Bloomberg после того, как кредитор опубликовал прибыль за третий квартал в целом в соответствии с ожиданиями, при этом всплеск притока клиентов потенциально может поддержать перспективы глобального богатства..."
+  },
+  {
+   "title": "Anthropic IPO Shutout Sends Asia’s Investors Into Proxy Bets",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-28/anthropic-ipo-shutout-sends-asia-s-investors-into-proxy-bets",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T07:20:51.163292+00:00",
+   "title_ru": "Антропное закрытие IPO отправляет азиатских инвесторов в прокси-ставки",
+   "lead": "For much of Asia, getting a piece of Anthropic’s blockbuster initial public offering may prove nearly impossible.",
+   "lead_ru": "Для большей части Азии получение части первоначального публичного предложения блокбастера Anthropic может оказаться почти невозможным."
+  },
+  {
+   "title": "AI Trade Rebounds, Jio Valuation in Focus",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-28/insight-with-haslinda-amin-10-28-2026-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T07:20:51.163292+00:00",
+   "title_ru": "Восстановление торговли ИИ, оценка JIO в фокусе",
+   "lead": "\"Insight with Haslinda Amin\" is a daily news program featuring in-depth, high-profile interviews and analysis to give viewers the complete picture on the stories that matter.",
+   "lead_ru": "«Инсайт с Хаслиндой Амин» - это ежедневная новостная программа с подробными, громкими интервью и анализом, чтобы дать зрителям полное представление о важных историях."
+  },
+  {
+   "title": "SK Hynix Profit Beat Adds Fuel to AI Rebound Trade",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-28/the-asia-trade-10-28-2026-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T07:20:51.163292+00:00",
+   "title_ru": "SK Hynix Profit Beat добавляет топлива в торговлю ИИ",
+   "lead": "\"Bloomberg: The Asia Trade\" brings you everything you need to know to get ahead as the trading day begins in Asia.",
+   "lead_ru": "«Bloomberg: The Asia Trade» дает вам все, что вам нужно знать, чтобы продвинуться вперед, поскольку торговый день начинается в Азии."
   }
  ],
  "last_digest": "2026-10-27",
@@ -14268,13 +14291,13 @@
   "sec_seen": [
    "0001040470-26-000312",
    "0001213900-26-113025",
-   "0001040470-26-000314",
    "0001193125-26-434840",
+   "0001040470-26-000314",
    "0001213900-26-113031",
    "0001040470-26-000311",
    "0001877346-26-000024",
-   "0001213900-26-113020",
    "0001193125-26-434846",
+   "0001213900-26-113020",
    "0001628280-26-067695",
    "0001075736-26-000120",
    "0001654009-26-000014",
@@ -14282,9 +14305,9 @@
    "0001807561-26-000022",
    "0002082930-26-000020",
    "0001213900-26-113017",
-   "0000105132-26-000103",
-   "0001040470-26-000318",
    "0001253170-26-000014",
+   "0001040470-26-000318",
+   "0000105132-26-000103",
    "0000105132-26-000100",
    "0001628280-26-067694",
    "0001075736-26-000119",
