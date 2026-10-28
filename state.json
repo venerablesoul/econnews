@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "3d9e566b3cb9237f": "2026-10-25T20:43:25.693799+00:00",
-  "c610c3560e4ec72c": "2026-10-25T20:48:25.688986+00:00",
-  "9a0261a88c6e2cf9": "2026-10-25T20:48:25.688986+00:00",
   "bd4f4e51392381af": "2026-10-25T21:03:25.731887+00:00",
   "d62ead68c3bd433e": "2026-10-25T21:08:25.684651+00:00",
   "ad93e424c9145904": "2026-10-25T21:13:25.665405+00:00",
@@ -1048,19 +1045,10 @@
   "ad81c66e6cf6a7e1": "2026-10-28T20:30:12.460333+00:00",
   "6abff8665caab738": "2026-10-28T20:35:12.563246+00:00",
   "21cea21900ff1df3": "2026-10-28T20:35:12.563246+00:00",
-  "2e72456ce250ecd1": "2026-10-28T20:40:13.508658+00:00"
+  "2e72456ce250ecd1": "2026-10-28T20:40:13.508658+00:00",
+  "9ea2bd65f169f9e7": "2026-10-28T20:50:12.481841+00:00"
  },
  "recent": [
-  {
-   "title": "Musk says SpaceX raised $40 billion in debt for GPUs",
-   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNUXFtN2R4aGlycUhma055anhqaWRzSVFqRHg3NDJHQXpJb1ZXZGtqZF8wSENhc2xNTjlBNmJyMWdzaWdQZmU2d0NvWDJ1VzI4RlVCUG1ERDFnWlJpUmlEdTJDZUt2ckM1bjBleS11a3ZQaDF1QjByVzNYV1Y4YV9CWEFOYWFVaHhhM1l3d29kQm55MjFUUTlZWm9mVnlnamJBUWg3NWVR?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-25T20:48:25.688986+00:00",
-   "title_ru": "Маск говорит, что SpaceX привлекла $ 40 млрд долга за графические процессоры"
-  },
   {
    "title": "UK’s Healey Ends Talks with Canada to Merge Defense Banks",
    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNRVhNMzlDdzJpanVwdUJRQlVyZ0hWM1FKUTJGc2VXbGIzM1BRdENlckdmSGNJZmZxU3ZlTHBkdG8yUnNNZlpWVkdSNU1Ha0tpUU9kX3FBN3BOMGxTSFduTzN4Q3JpbkZ2b0Q0dmNjU0JJZHlFbVl0NWNvM2lNVldKQ195NFVuQzhyUm13cjBud3R2Sy1jZldnRmxnOHhQb3YxNXhYUVpwMzRrOS0x?oc=5",
@@ -13226,6 +13214,38 @@
    },
    {
     "src": "sec",
+    "id": "907768ee6f45f4f5",
+    "ticker": "BBT",
+    "company": "Beacon Financial Corp",
+    "who": "Karyn Polito",
+    "role": "Director",
+    "type": "buy",
+    "value": 30680,
+    "shares": 1000,
+    "price": 30.68,
+    "plan": false,
+    "date": "2026-10-26",
+    "disclosed": "2026-10-28",
+    "link": "https://www.sec.gov/Archives/edgar/data/1965457/000162828026067923/0001628280-26-067923-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "366912ad66865241",
+    "ticker": "WS",
+    "company": "Worthington Steel, Inc.",
+    "who": "George John Iii Ganem",
+    "role": "CEO",
+    "type": "buy",
+    "value": 31492,
+    "shares": 800,
+    "price": 39.37,
+    "plan": false,
+    "date": "2026-10-15",
+    "disclosed": "2026-10-28",
+    "link": "https://www.sec.gov/Archives/edgar/data/2139609/000119312526436256/0001193125-26-436256-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "22a075a4531b4e3c",
     "ticker": "AGNC",
     "company": "AGNC Investment Corp.",
@@ -16807,38 +16827,6 @@
     "date": "2026-10-19",
     "disclosed": "2026-10-21",
     "link": "https://www.sec.gov/Archives/edgar/data/1597870/000159787026000017/0001597870-26-000017-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "fb77b4bf739f7c6b",
-    "ticker": "CRDO",
-    "company": "Credo Technology Group Holding Ltd",
-    "who": "William Joseph Brennan",
-    "role": "CEO",
-    "type": "sell",
-    "value": 2914306,
-    "shares": 16666,
-    "price": 174.87,
-    "plan": true,
-    "date": "2026-10-19",
-    "disclosed": "2026-10-21",
-    "link": "https://www.sec.gov/Archives/edgar/data/1896237/000162828026066716/0001628280-26-066716-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "9c2d90d34ec118b4",
-    "ticker": "GTLB",
-    "company": "Gitlab Inc.",
-    "who": "Sytse Sijbrandij",
-    "role": "Director",
-    "type": "sell",
-    "value": 6190375,
-    "shares": 116200,
-    "price": 53.27,
-    "plan": true,
-    "date": "2026-10-19",
-    "disclosed": "2026-10-21",
-    "link": "https://www.sec.gov/Archives/edgar/data/1886022/000165348226000176/0001653482-26-000176-index.htm"
    }
   ],
   "docs": {
@@ -16878,28 +16866,27 @@
   },
   "checked": "2026-10-28T19:55:12.941990+00:00",
   "sec_seen": [
-   "0000933025-26-000004",
+   "0001193125-26-436269",
    "0000933026-26-000006",
    "0001788337-26-000004",
    "0000933023-26-000004",
-   "0002128038-26-000006",
    "0001193125-26-436253",
    "0001513347-26-000008",
    "0002157325-26-000004",
+   "0001751788-26-000164",
    "0001025983-26-000004",
    "0001505841-26-000004",
+   "0001193125-26-436256",
    "0000932963-26-000009",
+   "0001193125-26-436257",
    "0001505853-26-000007",
-   "0001098901-26-000004",
    "0001505848-26-000002",
    "0001505850-26-000005",
    "0001564760-26-000010",
    "0001871757-26-000008",
    "0000933022-26-000004",
    "0001505856-26-000004",
-   "0001193125-26-436233",
-   "0000933028-26-000012",
-   "0001653340-26-000004",
+   "0001628280-26-067923",
    "0001564761-26-000008"
   ],
   "errors": {
