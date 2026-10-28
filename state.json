@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "d51377e3ac8e366a": "2026-10-25T14:52:19.770841+00:00",
-  "c720ded159db7fb6": "2026-10-25T14:57:19.755875+00:00",
-  "e01523f3e084dd0f": "2026-10-25T14:57:19.755875+00:00",
   "066d9dc65dcb109d": "2026-10-25T15:02:19.766165+00:00",
   "98e21ed6cd7fda87": "2026-10-25T15:07:19.739118+00:00",
   "fbcd97292522ecc0": "2026-10-25T15:07:19.739118+00:00",
@@ -963,19 +960,10 @@
   "d10874c5ee261b3f": "2026-10-28T14:36:22.836309+00:00",
   "c200eb5b51c4bd4e": "2026-10-28T14:36:22.836309+00:00",
   "4b6d1a0cf6344fc6": "2026-10-28T14:46:22.887126+00:00",
-  "afad620e500e3e4e": "2026-10-28T14:51:22.864836+00:00"
+  "afad620e500e3e4e": "2026-10-28T14:51:22.864836+00:00",
+  "8d7f3964b06c4811": "2026-10-28T15:01:23.384943+00:00"
  },
  "recent": [
-  {
-   "title": "Trump Says He Plans More Announcements on Economy",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQVklmX1BuWnhjOGJwclRzeU1WaTEwNUZudzZTVFpYeEtGVFJKakJENXRVdFBfYm54dkJ6azZ2NTFNMGUybG5LUERtUURqMkM2UHBVd2o0a0ZOOGlnVzRuRXhQNmZjZzFfZkM0RS1CbV9ndWRjMTlHbVNpVzc0WTAtcnNqMEYydFFlMXUxZVg5cDBiQWd3Mlc5b2lhT0M5eHZ6VzdmamlCTGFRRU5zXzN2MUFpMVkzVVZMMzBSTWpB?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-25T14:57:19.755875+00:00",
-   "title_ru": "Трамп говорит, что планирует больше объявлений об экономике"
-  },
   {
    "title": "Warsh Tells Traders to Watch the Data. They Still Follow the Fed",
    "link": "https://www.bloomberg.com/news/articles/2026-10-25/warsh-tells-traders-to-watch-the-data-they-still-follow-the-fed",
@@ -9024,6 +9012,18 @@
    "score": 5,
    "ts": "2026-10-28T14:51:22.864836+00:00",
    "title_ru": "Крушение поезда в Испании убило не менее 30 человек к югу от Мадрида"
+  },
+  {
+   "title": "The UK cuts energy bills, taxes banks and boosts defense in high-stakes budget",
+   "link": "https://www.cnbc.com/2026/10/28/uk-autumn-budget-cost-living-defense-ai.html",
+   "sources": [
+    "CNBC"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T15:01:23.384943+00:00",
+   "title_ru": "Великобритания сокращает счета за электроэнергию, облагает налогами банки и повышает оборону в бюджете с высокими ставками",
+   "lead": "The U.K. budget cuts household energy costs, raises taxes on banks and directs billions toward defense, Ukraine and artificial intelligence",
+   "lead_ru": "Бюджет Великобритании сокращает расходы домохозяйств на электроэнергию, повышает налоги на банки и направляет миллиарды на оборону, Украину и искусственный интеллект"
   }
  ],
  "last_digest": "2026-10-27",
@@ -15441,7 +15441,7 @@
   "sec_seen": [
    "0001976408-26-000911",
    "0001628280-26-067770",
-   "0001209992-26-000052",
+   "0001976408-26-000912",
    "0001104659-26-119430"
   ],
   "errors": {
