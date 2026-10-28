@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "5dbc14cfcb2e591a": "2026-10-25T11:06:42.589010+00:00",
   "e093c8a6e791a480": "2026-10-25T11:36:42.745400+00:00",
   "2667232859700e8a": "2026-10-25T11:51:42.640271+00:00",
   "d2b9cb2c7477536d": "2026-10-25T12:01:42.586679+00:00",
@@ -907,7 +906,10 @@
   "27230cc576cd9ef9": "2026-10-28T10:46:22.794167+00:00",
   "86d2b80e2e91a926": "2026-10-28T10:51:22.849500+00:00",
   "079dbbe8982ef91e": "2026-10-28T11:06:22.801793+00:00",
-  "4249aa58376ae6f5": "2026-10-28T11:06:22.801793+00:00"
+  "4249aa58376ae6f5": "2026-10-28T11:06:22.801793+00:00",
+  "81f96c10c8218294": "2026-10-28T11:11:22.799086+00:00",
+  "26277e08edcc5e47": "2026-10-28T11:11:22.799086+00:00",
+  "18ec47c83e70b891": "2026-10-28T11:11:22.799086+00:00"
  },
  "recent": [
   {
@@ -8394,6 +8396,34 @@
    "tags": [
     "Fed"
    ]
+  },
+  {
+   "title": "Namibia raises key interest rate to cushion second-round effects from high fuel prices",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPV1lSSDlQdktQX2k1RzRVVE9WYlFVdWhsYVhLSlpwOFRyc2JNbmJpRGllU2ltM2RyVjdfOGlaclh1WnBweVY4VDE4TGdiMkh2cFJCbGU1RHFub3lZc0R6bUhGYTFrU2ZQZmFxYlI4TlVFNlRxRW5qeE9raTBicEV6TTFiSTloelZMUUdiYlY4emZGQjBCV3dSYXQzVGgyaUtzOEZWeTBCZnB0OHk5YVpvNnpkdmZwa0ZfN01OTVZrdEZ5bWp4VGc?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-28T11:11:22.799086+00:00",
+   "title_ru": "Намибия повышает ключевую процентную ставку, чтобы смягчить вторичные последствия высоких цен на топливо.",
+   "tags": [
+    "rates"
+   ]
+  },
+  {
+   "title": "Pimco Would Welcome 2027 UK Fiscal Deficit of Around 3.5%",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-28/pimco-would-welcome-uk-2027-fiscal-deficit-around-3-5-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T11:11:22.799086+00:00",
+   "title_ru": "Pimco будет приветствовать бюджетный дефицит Великобритании в 2027 году в размере около 3,5%",
+   "lead": "Pimco economist Peder Beck-Friis looks ahead to UK Chancellor John Healey’s budget announcement, highlighting the Office for Budget Responsibility’s (OBR) fiscal deficit forecast for next year as the critical metric for the gilt…",
+   "lead_ru": "Экономист Pimco Педер Бек-Фрис анализирует предстоящее объявление бюджета канцлером казначейства Великобритании Джоном Хили, подчеркивая, что прогноз бюджетного дефицита Управления по бюджетной ответственности (OBR) на следующий год является критически важным показателем для государственных облигаций…",
+   "tags": [
+    "bonds"
+   ]
   }
  ],
  "last_digest": "2026-10-27",
@@ -14809,9 +14839,9 @@
   "checked": "2026-10-28T10:41:22.807015+00:00",
   "sec_seen": [
    "0001075736-26-000120",
-   "0001040470-26-000312",
-   "0000105132-26-000105",
    "0002082930-26-000020",
+   "0000105132-26-000105",
+   "0001040470-26-000312",
    "0000105132-26-000104",
    "0001369240-26-000014",
    "0001628280-26-067694",
