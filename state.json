@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c6ea679dd8debddf": "2026-10-25T03:26:11.495671+00:00",
   "43a97c4521d79466": "2026-10-25T04:06:11.511052+00:00",
   "177ee20d981065d6": "2026-10-25T04:41:11.514310+00:00",
   "c619ef7a9d8c81dc": "2026-10-25T05:31:11.525439+00:00",
@@ -821,18 +820,11 @@
   "a460f729b3c0f168": "2026-10-28T03:10:19.132384+00:00",
   "e1e01bfd8bae80c5": "2026-10-28T03:15:19.104021+00:00",
   "70a47a740b7d4a19": "2026-10-28T03:20:19.121321+00:00",
-  "ca7508941492ad65": "2026-10-28T03:25:19.095557+00:00"
+  "ca7508941492ad65": "2026-10-28T03:25:19.095557+00:00",
+  "1877f8b9b8f4df3b": "2026-10-28T03:30:19.121311+00:00",
+  "47357becc4a758fc": "2026-10-28T03:30:19.121311+00:00"
  },
  "recent": [
-  {
-   "title": "My father-in-law, 81, sold his $75,000 home to pay his daughter’s $50,000 debt. How can I keep him from becoming destitute?",
-   "link": "https://www.marketwatch.com/story/my-father-in-law-81-sold-his-75-000-home-and-paid-off-his-daughters-50-000-debt-what-happens-to-him-now-60e8fc72?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-25T03:26:11.495671+00:00"
-  },
   {
    "title": "Budget to include £1bn for social and affordable housing",
    "link": "https://www.bbc.co.uk/news/articles/cqm24j9y9zn7o?at_medium=RSS&at_campaign=rss",
@@ -7419,6 +7411,22 @@
    "score": 3,
    "ts": "2026-10-28T03:15:19.104021+00:00",
    "title_ru": "Британский Healey готовится сократить счета за газ для домохозяйств на £ 50, сообщает Telegraph"
+  },
+  {
+   "title": "Chinese Government to Speed Bond Sales to Stimulate Growth",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-28/chinese-government-to-speed-bond-sales-to-stimulate-growth",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T03:30:19.121311+00:00",
+   "title_ru": "Правительство Китая ускорит продажи облигаций для стимулирования роста",
+   "lead": "China’s central and local governments will probably raise at least a net 2.2 trillion yuan ($330 billion) in bond sales in the final two months of the year, the second-highest amount on record for the period, as the authorities…",
+   "lead_ru": "Центральные и местные органы власти Китая, вероятно, привлекут как минимум 2,2 трлн юаней ($ 330 млрд) от продажи облигаций в последние два месяца года, что является второй по величине суммой за этот период, поскольку власти...",
+   "tags": [
+    "bonds",
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-10-27",
@@ -13831,7 +13839,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-28T02:25:19.114552+00:00",
+  "checked": "2026-10-28T03:30:19.121311+00:00",
   "sec_seen": [
    "0001628280-26-067695",
    "0001075736-26-000121",
