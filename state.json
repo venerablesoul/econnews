@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "11e68e6f80ec2b6b": "2026-10-25T06:11:11.486947+00:00",
   "9a6b99cc8c92ab2a": "2026-10-25T06:26:11.508784+00:00",
   "f903f03c84bfd685": "2026-10-25T06:46:11.635084+00:00",
   "da14b003ae0bda17": "2026-10-25T06:56:11.479301+00:00",
@@ -850,22 +849,10 @@
   "63656e1dd91b440c": "2026-10-28T06:00:51.208669+00:00",
   "389e2e1b46f5640c": "2026-10-28T06:00:51.208669+00:00",
   "ffa258fa483d835c": "2026-10-28T06:10:51.207255+00:00",
-  "ae0acada2291fdfb": "2026-10-28T06:10:51.207255+00:00"
+  "ae0acada2291fdfb": "2026-10-28T06:10:51.207255+00:00",
+  "55af00c14cfd84c1": "2026-10-28T06:15:51.189088+00:00"
  },
  "recent": [
-  {
-   "title": "UAE Shuts More Beaches as It Deals with Oil Spill in Gulf",
-   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNYlo3d3ZWMXZXcGtBMXF1dU9iRUlyNE1VUHVoVXVuR1Q2T2J3Rm5Fd1JWN003U3h2d1VSaktRUlJMTmRJekN3WFd5bHg4U2JzdGthUzIwZEVRNW80cnY3ZTFEQWx5MmpKSlBBVGNYZ2FWYW91VEhBQWI5SzU5THRrMGJtUVhjdk1SOHhsaTZudEd2MTdhZzJUWVdBNFJuWmJWVS1qSGtHZXB0cDRod3JPNmdUNF9IbGFDMVBwenFBYWhtM3N4dnQtWExvdw?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-25T06:11:11.486947+00:00",
-   "title_ru": "ОАЭ закрывают все больше пляжей из-за разлива нефти в Персидском заливе",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "Budget 2026: No more fat to trim for 'squeezed middle'",
    "link": "https://www.bbc.co.uk/news/articles/c6gel54940qno?at_medium=RSS&at_campaign=rss",
@@ -7723,6 +7710,19 @@
    "tags": [
     "Fed"
    ]
+  },
+  {
+   "title": "Italy's Intesa gets ECB authorisation to take over Monte dei Paschi",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNelAzbVRKVXlpeVNyZUJPTGc2eGhQbDBBeWtaeVlZTGNNTm1Jbmx6MUtYbVFHQ3RmYXR5ZUJvWHk0ak1nOW41dTNja0wxVXF6QUhGUF84VHZrWVN1SmZYcWpMQVlXalFJTXZkSlQ3bUR0VE00cExaV0FIaVk5N2ZGMGExUW8wTDdsYndxcEs2N0g4SlF5NFctYi1kOVowelNUYjVQbTlBSTRhZGIzaDNiMWxsRHd5enM?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T06:15:51.189088+00:00",
+   "title_ru": "Итальянская Intesa получила разрешение ЕЦБ на приобретение Monte dei Paschi",
+   "tags": [
+    "ECB"
+   ]
   }
  ],
  "last_digest": "2026-10-27",
@@ -14139,13 +14139,13 @@
   "sec_seen": [
    "0001040470-26-000312",
    "0001213900-26-113025",
-   "0001193125-26-434840",
    "0001040470-26-000314",
+   "0001193125-26-434840",
    "0001213900-26-113031",
    "0001040470-26-000311",
    "0001877346-26-000024",
-   "0001193125-26-434846",
    "0001213900-26-113020",
+   "0001193125-26-434846",
    "0001628280-26-067695",
    "0001075736-26-000120",
    "0001654009-26-000014",
@@ -14153,9 +14153,9 @@
    "0001807561-26-000022",
    "0002082930-26-000020",
    "0001213900-26-113017",
-   "0001253170-26-000014",
-   "0001040470-26-000318",
    "0000105132-26-000103",
+   "0001040470-26-000318",
+   "0001253170-26-000014",
    "0000105132-26-000100",
    "0001628280-26-067694",
    "0001075736-26-000119",
