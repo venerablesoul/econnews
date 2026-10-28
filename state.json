@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "066d9dc65dcb109d": "2026-10-25T15:02:19.766165+00:00",
   "98e21ed6cd7fda87": "2026-10-25T15:07:19.739118+00:00",
   "fbcd97292522ecc0": "2026-10-25T15:07:19.739118+00:00",
   "d6945f712b2cd7a2": "2026-10-25T15:12:19.767606+00:00",
@@ -961,7 +960,9 @@
   "c200eb5b51c4bd4e": "2026-10-28T14:36:22.836309+00:00",
   "4b6d1a0cf6344fc6": "2026-10-28T14:46:22.887126+00:00",
   "afad620e500e3e4e": "2026-10-28T14:51:22.864836+00:00",
-  "8d7f3964b06c4811": "2026-10-28T15:01:23.384943+00:00"
+  "8d7f3964b06c4811": "2026-10-28T15:01:23.384943+00:00",
+  "a7fe364b2148b51b": "2026-10-28T15:06:23.296894+00:00",
+  "5d66ee51e3b5828d": "2026-10-28T15:06:23.296894+00:00"
  },
  "recent": [
   {
@@ -9024,6 +9025,30 @@
    "title_ru": "Великобритания сокращает счета за электроэнергию, облагает налогами банки и повышает оборону в бюджете с высокими ставками",
    "lead": "The U.K. budget cuts household energy costs, raises taxes on banks and directs billions toward defense, Ukraine and artificial intelligence",
    "lead_ru": "Бюджет Великобритании сокращает расходы домохозяйств на электроэнергию, повышает налоги на банки и направляет миллиарды на оборону, Украину и искусственный интеллект"
+  },
+  {
+   "title": "Income tax: Healey’s budget leaves thresholds frozen again. How much more will you pay?",
+   "link": "https://www.theguardian.com/money/ng-interactive/2026/oct/28/budget-income-tax-thresholds-frozen-take-home-pay",
+   "sources": [
+    "The Guardian"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T15:06:23.296894+00:00",
+   "title_ru": "Подоходный налог: бюджет Хили снова оставляет пороговые значения замороженными. Сколько вы заплатите?",
+   "lead": "Tax policy means freezes reduce take-home pay as earnings rise in line with inflation Income tax thresholds are set to remain frozen after John Healey’s first budget as chancellor.",
+   "lead_ru": "Налоговая политика означает замораживание снижения заработной платы на руки, поскольку доходы растут в соответствии с инфляцией. Пороги подоходного налога будут оставаться замороженными после первого бюджета Джона Хили на посту канцлера.",
+   "tags": [
+    "inflation"
+   ]
+  },
+  {
+   "title": "Heating your home with oil could cost $750 more this winter. Read this before you pay the price.",
+   "link": "https://www.marketwatch.com/story/heating-your-home-with-oil-could-cost-750-more-this-winter-read-this-before-you-pay-the-price-e39f0d52?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 2,
+   "ts": "2026-10-28T15:06:23.296894+00:00"
   }
  ],
  "last_digest": "2026-10-27",
@@ -15441,8 +15466,7 @@
   "sec_seen": [
    "0001976408-26-000911",
    "0001628280-26-067770",
-   "0001976408-26-000912",
-   "0001104659-26-119430"
+   "0001976408-26-000912"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
