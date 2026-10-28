@@ -1005,7 +1005,10 @@
   "da6edf02f4ba0eb1": "2026-10-28T18:10:12.392623+00:00",
   "5cadb2cc81fbb900": "2026-10-28T18:10:12.392623+00:00",
   "6cadc9241e38560e": "2026-10-28T18:15:12.391605+00:00",
-  "ba904e5ae7ee148f": "2026-10-28T18:15:12.391605+00:00"
+  "ba904e5ae7ee148f": "2026-10-28T18:15:12.391605+00:00",
+  "e3d3b12329d60c76": "2026-10-28T18:20:13.859813+00:00",
+  "8bb9c6eba8439029": "2026-10-28T18:20:13.859813+00:00",
+  "9b0591a898f10ac9": "2026-10-28T18:20:13.859813+00:00"
  },
  "recent": [
   {
@@ -9653,6 +9656,51 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "ФРС сохранила ставку на уровне 3,75-4% годовых",
+   "link": "https://www.kommersant.ru/doc/9063206",
+   "sources": [
+    "Kommersant"
+   ],
+   "score": 5,
+   "ts": "2026-10-28T18:20:13.859813+00:00",
+   "title_en": "The Fed kept the rate at 3.75-4% per annum",
+   "lead": "Комитет по открытым рынкам Федеральной резервной системы США сохранил процентную ставку на уровне 3,75-4% годовых, следует из пресс-релиза ведомства.",
+   "lead_en": "The US Federal Reserve Open Market Committee has kept the interest rate at 3.75-4% per annum, according to a press release from the department.",
+   "tags": [
+    "Fed",
+    "rates"
+   ]
+  },
+  {
+   "title": "Bond Traders See 90% Chance of December Hike After Fed Holds",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-28/bond-traders-see-90-chance-of-december-hike-after-fed-holds",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-28T18:20:13.859813+00:00",
+   "title_ru": "Трейдеры облигаций видят 90-процентный шанс на декабрьское повышение после удержания ФРС",
+   "lead": "US Treasuries held small losses after the Federal Reserve held interest rates steady and reinforced traders’ expectations that tightening will resume in December.",
+   "lead_ru": "Казначейские облигации США понесли небольшие убытки после того, как Федеральная резервная система удерживала процентные ставки на стабильном уровне и укрепила ожидания трейдеров о том, что ужесточение возобновится в декабре.",
+   "tags": [
+    "Fed",
+    "rates",
+    "bonds"
+   ]
+  },
+  {
+   "title": "The Budget explained in less than one minute",
+   "link": "https://www.bbc.co.uk/news/videos/crkg70lnlx9yo?at_medium=RSS&at_campaign=rss",
+   "sources": [
+    "BBC"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T18:20:13.859813+00:00",
+   "title_ru": "Бюджет объясняется менее чем за одну минуту",
+   "lead": "What the Budget means for you in under a minute",
+   "lead_ru": "Что значит для вас бюджет менее чем за минуту"
   }
  ],
  "last_digest": "2026-10-28",
