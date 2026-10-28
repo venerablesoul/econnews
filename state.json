@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "41cbee2f338cd788": "2026-10-25T23:08:52.445805+00:00",
-  "7305b4fe3b682ef3": "2026-10-25T23:08:52.445805+00:00",
   "450e9e01f225157c": "2026-10-25T23:18:52.525010+00:00",
   "9188fa6d89ea031b": "2026-10-25T23:28:52.459624+00:00",
   "14303ddef5dd7d96": "2026-10-25T23:33:52.575802+00:00",
@@ -1064,22 +1062,13 @@
   "65d5e9dad14de247": "2026-10-28T23:05:50.449112+00:00",
   "b44e5fcddd9e5ff0": "2026-10-28T23:05:50.449112+00:00",
   "bd845030e0b508e3": "2026-10-28T23:05:50.449112+00:00",
-  "0f6dc68f16a61aae": "2026-10-28T23:05:50.449112+00:00"
+  "0f6dc68f16a61aae": "2026-10-28T23:05:50.449112+00:00",
+  "620fa3163a4316b0": "2026-10-28T23:10:50.655414+00:00",
+  "d7257348c0e75b37": "2026-10-28T23:10:50.655414+00:00",
+  "e4e5c3e8a3386361": "2026-10-28T23:10:50.655414+00:00",
+  "9f6ca72964e2c801": "2026-10-28T23:10:50.655414+00:00"
  },
  "recent": [
-  {
-   "title": "COMMENTARY: Why China’s stimulus keeps missing the mark: Manishi Raychaudhuri",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOazJDSjk5eWVKMWY5eFVycmx2U3ZWUDRxRUhuVDVaNUlkcGNQN18tREhKOU1DWDE2d3puS0kwZHBGRU40NGk5YVZTZFBqVER2R2NhdEtYOGZNY19xVE02QVk1bXYtUDVWOWNmTVFzTG0yZmcxZVQyXzJNTndaOU1rTDc4NkllWmlkMldBUEdLNjJBTVN1T3RSVXJjSkE5RVlaUGlxSldVWWl3OWVYZkJvVV82MHY4bTJSZHZjWk8yQXFJeEdDam1n?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-25T23:08:52.445805+00:00",
-   "title_ru": "КОММЕНТАРИЙ: Почему стимулирование Китая продолжает не достигать цели: Маниши Райчаудхури",
-   "tags": [
-    "China"
-   ]
-  },
   {
    "title": "Algeria Votes to Send Troops to Protect Niger’s Oil Facilities",
    "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxONklNclhrcmZic2Q3Q2U2OTdrci15a183WjVkQ2ZxODZkVm9PY0d1QVdGMG1yejZoeFlYNnlkbDVvQXVIU2lkR3lTZk5pVGdpSWRUTVFLbVJwNVVJWENRMlNMVXNtQnBHTF95R19ka1FsTmpBSnp6dGRUMlk2TzVnYzJ4R1c2VWhMYWM4bG1FNGxJdW54VmViclFUcmtZVkhuVTFGVFAtSlRKdjdsbVFydldYUGpYcEdqbm5DSTlTUHpGeHR6cGZHT25YV0pKYjJNNHc?oc=5",
@@ -10490,6 +10479,19 @@
    "score": 3,
    "ts": "2026-10-28T23:05:50.449112+00:00",
    "title_ru": "КОММЕНТАРИЙ: более широкая слабость Уолл-стрит поддерживает торговлю ИИ"
+  },
+  {
+   "title": "Mozambique seeks to negotiate more debt relief after China reschedules payments",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNazVuQTJvbTA2dnBzYzFPSFhVS2w1RXA0WDBKSEY5RDhjaG9Pc215NmtsOGI2NGcxbHBoU1JabHVmaWIyWVZldDBwendRbHEyV2J5V2RZR1R5MDBTSE04b0JhX3VNaENDem5EMnc4NUtXd3U3dkttRldnVWZJR05JWGxfVUhiQ2RfSXNPS2pGUUg5bGFwelJ2R05JZWFIaDYxOTZLTC1MQ1hpQTctQUR4TWd2S0MtaWRsVTJldQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T23:10:50.655414+00:00",
+   "title_ru": "Мозамбик стремится договориться о большем облегчении бремени задолженности после того, как Китай перенесет платежи",
+   "tags": [
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-10-28",
@@ -17186,6 +17188,7 @@
    "0000708955-26-000202",
    "0001193125-26-436415",
    "0000087347-26-000126",
+   "0001093557-26-000187",
    "0001493152-26-049119",
    "0000950103-26-016314"
   ],
