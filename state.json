@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "3ed6cb55f6943682": "2026-10-25T12:46:42.620370+00:00",
-  "e1a225428f4f1189": "2026-10-25T12:46:42.620370+00:00",
   "fdd2315ac72e7099": "2026-10-25T13:02:19.718020+00:00",
   "961f4a39f174176f": "2026-10-25T13:27:19.734882+00:00",
   "2c2498da958d243d": "2026-10-25T13:37:19.723460+00:00",
@@ -933,24 +931,13 @@
   "5a3786c47622a90e": "2026-10-28T12:46:22.846885+00:00",
   "2b8fa5153d7f59c4": "2026-10-28T12:46:22.846885+00:00",
   "f6827beef3a04a0a": "2026-10-28T12:46:22.846885+00:00",
-  "51f347983e709241": "2026-10-28T12:46:22.846885+00:00"
+  "51f347983e709241": "2026-10-28T12:46:22.846885+00:00",
+  "cedf714426f7a1ef": "2026-10-28T12:51:22.893365+00:00",
+  "3beefaacbed49d76": "2026-10-28T12:51:22.893365+00:00",
+  "f6afeadcb4a849a7": "2026-10-28T12:56:22.899872+00:00",
+  "7248e41b9bcdb02d": "2026-10-28T12:56:22.899872+00:00"
  },
  "recent": [
-  {
-   "title": "Emerging Debt Outruns Treasuries as Rich-World Fiscal Fears Grow",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-25/emerging-debt-outruns-treasuries-as-rich-world-fiscal-fears-grow",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-25T12:46:42.620370+00:00",
-   "title_ru": "Долг развивающихся стран обгоняет казначейские облигации по мере роста финансовых опасений в богатых странах",
-   "lead": "Investors from JPMorgan Asset Management to Generali and Ninety One SA are loading up on emerging-market debt, defying a surge in Treasury yields that would once have sent them running for the exits.",
-   "lead_ru": "Инвесторы от JPMorgan Asset Management до Generali и Ninety One SA нагружают долги развивающихся рынков, игнорируя рост доходности казначейских облигаций, который когда-то заставил бы их бежать к выходу.",
-   "tags": [
-    "bonds"
-   ]
-  },
   {
    "title": "Worried about this stock-market selloff? Relief may be coming after the midterms — no matter who wins.",
    "link": "https://www.marketwatch.com/story/worried-about-this-stock-market-selloff-relief-may-be-coming-after-the-midterms-no-matter-who-wins-39322c07?mod=mw_rss_topstories",
@@ -8683,6 +8670,24 @@
    ],
    "score": 2,
    "ts": "2026-10-28T12:46:22.846885+00:00"
+  },
+  {
+   "title": "Vertiv earnings just sent an upbeat signal about AI ahead of Big Tech results",
+   "link": "https://www.marketwatch.com/story/vertiv-earnings-just-sent-an-upbeat-signal-about-ai-ahead-of-big-tech-results-5714a105?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-28T12:51:22.893365+00:00"
+  },
+  {
+   "title": "11 bargain-priced stocks of companies that have huge growth potential over the next two years",
+   "link": "https://www.marketwatch.com/story/11-bargain-priced-stocks-of-companies-that-have-huge-growth-potential-over-the-next-two-years-d62618e6?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 2,
+   "ts": "2026-10-28T12:56:22.899872+00:00"
   }
  ],
  "last_digest": "2026-10-27",
@@ -15120,7 +15125,6 @@
    "0001493152-26-048824",
    "0001193125-26-434831",
    "0001193125-26-434841",
-   "0000105132-26-000102",
    "0001193125-26-435151",
    "0001193125-26-435150"
   ],
