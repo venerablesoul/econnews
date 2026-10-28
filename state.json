@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "9188fa6d89ea031b": "2026-10-25T23:28:52.459624+00:00",
   "14303ddef5dd7d96": "2026-10-25T23:33:52.575802+00:00",
   "1f3fabb6308219ff": "2026-10-25T23:38:52.496870+00:00",
   "191a01341220ced3": "2026-10-25T23:53:52.427166+00:00",
@@ -1074,7 +1073,11 @@
   "bbdbc2cde7e33bab": "2026-10-28T23:25:50.457040+00:00",
   "cde8f5e09d4a5f82": "2026-10-28T23:25:50.457040+00:00",
   "f23ab1a58e82808b": "2026-10-28T23:25:50.457040+00:00",
-  "89afa8985dae2e2d": "2026-10-28T23:25:50.457040+00:00"
+  "89afa8985dae2e2d": "2026-10-28T23:25:50.457040+00:00",
+  "c88f03143be4aaab": "2026-10-28T23:30:50.387527+00:00",
+  "7427ecbc60544410": "2026-10-28T23:30:50.387527+00:00",
+  "c3e6501ca480b347": "2026-10-28T23:30:50.387527+00:00",
+  "ecea011c8b628e71": "2026-10-28T23:30:50.387527+00:00"
  },
  "recent": [
   {
@@ -10601,6 +10604,29 @@
    "score": 3,
    "ts": "2026-10-28T23:25:50.457040+00:00",
    "title_ru": "Британская FTSE 100 приглушена как GSK, убытки Unilever сдерживают прибыль банка после бюджета"
+  },
+  {
+   "title": "Fed's policy committee to weigh balance sheet issues early next year, Warsh says",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQaDZHdmRFaXBHQzZvWXZjZU8xOFRrT0Q1WGx2ekJuQ1hCTV9EbHdTOElZTERXemZwY1o0ZzRZUXR6aDNkM0tOejh1N201SmxqR29NSFE2Q0c5TlJMQ29pZGhvM0E5TVc0UjkyTFVNY1VONjl3WG5WOXJaRElkNEktODF4LXhkaF9YTW5kN01DYUFtcy1hclBQbXFSdk5aSGFJMG8yTWtLd2ZlTnY5Ylp4MmJmWldCNXVZekg5T3FwMEpmSVBCWDFV?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T23:30:50.387527+00:00",
+   "title_ru": "Комитет по политике ФРС рассмотрит вопросы баланса в начале следующего года, говорит Уорш",
+   "tags": [
+    "Fed"
+   ]
+  },
+  {
+   "title": "Portugal's 2027 budget bill passes first parliamentary hurdle",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPQVR6ZEJmaGJNYjkxbnZQQlBUMVpWM2RXSS0zaEZqdnRnM0hMaWdVajRhbGtBODNodHJIMDV0dEEtdGc5Vm9zTkxjQWs3X0Q5SVZrR0tiamdqRi1XcG42SG9ZMnBUNk04anF5RDM4Zlp5dEphZVJmNmFjaHFwNktxcGY0Z2tmdjhCX183SlJmMFotWG9VcW5jc3lSVDBsM2l1a1hsODk5b1M?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T23:30:50.387527+00:00",
+   "title_ru": "Законопроект о бюджете Португалии на 2027 год проходит первое парламентское препятствие"
   }
  ],
  "last_digest": "2026-10-28",
@@ -17271,10 +17297,11 @@
    "0001204816-26-000057",
    "0001094718-26-000011",
    "0001104659-26-119719",
+   "0001654009-26-000017",
    "0001437749-26-033821",
    "0001493152-26-049125",
+   "0001193125-26-436510",
    "0001022079-26-000118",
-   "0001216931-26-000014",
    "0001193125-26-436459",
    "0002010300-26-000035",
    "0001877346-26-000027",
@@ -17292,7 +17319,6 @@
    "0001628280-26-067978",
    "0001193125-26-436441",
    "0001705952-26-000016",
-   "0001807561-26-000026",
    "0001628280-26-067980",
    "0001505300-26-000016",
    "0001193125-26-436443",
@@ -17303,7 +17329,7 @@
    "0001093557-26-000187",
    "0001493152-26-049119",
    "0000950103-26-016314",
-   "0001654009-26-000017"
+   "0001807561-26-000026"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
