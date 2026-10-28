@@ -1056,7 +1056,8 @@
   "6527e34015e43599": "2026-10-28T21:40:50.968587+00:00",
   "eda2422de3fa4118": "2026-10-28T21:45:50.997115+00:00",
   "c610c3560e4ec72c": "2026-10-28T21:50:50.965528+00:00",
-  "55eb21e875b55f2f": "2026-10-28T21:55:50.993269+00:00"
+  "55eb21e875b55f2f": "2026-10-28T21:55:50.993269+00:00",
+  "9febcbb80c7e58cb": "2026-10-28T22:00:51.029310+00:00"
  },
  "recent": [
   {
@@ -10344,6 +10345,22 @@
    "tags": [
     "inflation"
    ]
+  },
+  {
+   "title": "Fed Officials Left Interest Rates Unchanged",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-28/bloomberg-surveillance-the-fed-decides-10-27-2026-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-28T22:00:51.029310+00:00",
+   "title_ru": "Чиновники ФРС оставили процентные ставки без изменений",
+   "lead": "Jon Ferro, Lisa Abramowicz and Tom Keene host a special edition of \"Bloomberg Surveillance\" as the Federal Open Market Committee voted 10-2 to hold its benchmark federal funds rate in a range of 3.75% to 4% and leave interest…",
+   "lead_ru": "Джон Ферро, Лиза Абрамович и Том Кин проводят специальный выпуск «Bloomberg Surveillance», поскольку Федеральный комитет по операциям на открытом рынке проголосовал 10-2, чтобы удержать свою базовую ставку по федеральным фондам в диапазоне от 3,75% до 4% и оставить проценты...",
+   "tags": [
+    "Fed",
+    "rates"
+   ]
   }
  ],
  "last_digest": "2026-10-28",
@@ -13288,6 +13305,22 @@
     "date": "2026-10-27",
     "disclosed": "2026-10-28",
     "link": "https://www.sec.gov/Archives/edgar/data/1204816/000120481626000057/0001204816-26-000057-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "933b67b5821abbfe",
+    "ticker": "SLB",
+    "company": "SLB LIMITED/NV",
+    "who": "Peuch Olivier Le",
+    "role": "CEO",
+    "type": "sell",
+    "value": 1329250,
+    "shares": 25000,
+    "price": 53.17,
+    "plan": true,
+    "date": "2026-10-27",
+    "disclosed": "2026-10-28",
+    "link": "https://www.sec.gov/Archives/edgar/data/1497824/000008734726000126/0000087347-26-000126-index.htm"
    },
    {
     "src": "sec",
@@ -16952,22 +16985,6 @@
     "date": "2026-10-20",
     "disclosed": "2026-10-21",
     "link": "https://www.sec.gov/Archives/edgar/data/1892951/000139834426018542/0001398344-26-018542-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "003c35029bc3d37a",
-    "ticker": "CLM",
-    "company": "Cornerstone Strategic Investment Fund, Inc.",
-    "who": "Joshua Bradshaw",
-    "role": "Chair",
-    "type": "buy",
-    "value": 97280,
-    "shares": 16000,
-    "price": 6.08,
-    "plan": false,
-    "date": "2026-10-20",
-    "disclosed": "2026-10-21",
-    "link": "https://www.sec.gov/Archives/edgar/data/1892951/000139834426018541/0001398344-26-018541-index.htm"
    }
   ],
   "docs": {
@@ -17005,7 +17022,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-28T21:00:12.519519+00:00",
+  "checked": "2026-10-28T22:00:51.029310+00:00",
   "sec_seen": [
    "0001517413-26-000322",
    "0001510281-26-000385",
@@ -17015,6 +17032,7 @@
    "0001104659-26-119719",
    "0001437749-26-033821",
    "0001216931-26-000014",
+   "0001193125-26-436459",
    "0001193125-26-436418",
    "0001193125-26-436436",
    "0001895101-26-000021",
@@ -17027,7 +17045,8 @@
    "0001193125-26-436443",
    "0001193125-26-436444",
    "0000708955-26-000202",
-   "0001193125-26-436415"
+   "0001193125-26-436415",
+   "0000087347-26-000126"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
