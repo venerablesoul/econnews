@@ -979,7 +979,11 @@
   "cbb1aa5e5050a6f3": "2026-10-28T15:50:12.637813+00:00",
   "545e96ec9631ef00": "2026-10-28T16:00:12.745501+00:00",
   "77a247affff7d083": "2026-10-28T16:00:12.745501+00:00",
-  "7a8a369061a98c93": "2026-10-28T16:00:12.745501+00:00"
+  "7a8a369061a98c93": "2026-10-28T16:00:12.745501+00:00",
+  "aa8468857d17e181": "2026-10-28T16:05:12.400315+00:00",
+  "f908e17e2fd32be1": "2026-10-28T16:10:12.468714+00:00",
+  "ac76c270f80b0673": "2026-10-28T16:10:12.468714+00:00",
+  "7d75ab0bf6fa2ac7": "2026-10-28T16:10:12.468714+00:00"
  },
  "recent": [
   {
@@ -9205,6 +9209,50 @@
    "title_ru": "Как прогнозы бюджета повлияют на размер налога, который вы платите?",
    "lead": "Fiscal drag is set to hit taxpayers harder than previously thought",
    "lead_ru": "Фискальное сопротивление ударит по налогоплательщикам сильнее, чем предполагалось ранее"
+  },
+  {
+   "title": "Micron’s stock rises after SK Hynix earnings. Here’s its next major test.",
+   "link": "https://www.marketwatch.com/story/microns-stock-rises-after-sk-hynix-earnings-heres-its-next-major-test-99853d0e?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-28T16:05:12.400315+00:00"
+  },
+  {
+   "title": "UK Budget Pledges £4.1 Billion in Cost-of-Living Relief",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-28/uk-budget-pledges-4-1-billion-in-cost-of-living-relief",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T16:10:12.468714+00:00",
+   "title_ru": "Бюджет Великобритании обещает £ 4,1 млрд в качестве помощи в связи с прожиточным минимумом",
+   "lead": "The UK budget promised relief for households struggling with the cost-of-living crisis, although the size of the package is much smaller than the one introduced in 2022 after the outbreak of the war in Ukraine.",
+   "lead_ru": "Бюджет Великобритании обещал облегчение для домохозяйств, борющихся с кризисом стоимости жизни, хотя размер пакета намного меньше, чем тот, который был введен в 2022 году после начала войны в Украине."
+  },
+  {
+   "title": "Pimco Offloads Billions in AI Debt Just in Time to Skirt Losses",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNVzJNMXl5WlVZbGtjeF83V1NLNjZyOUZYSU41RVFma3REVWRBcG5xYmltTXVaQXFMNUNXVXN0Si15dTF2VHdXcUJWcXpSc1dtR3N1ZTlXRWFDbEVQVDBFZS1Nd2N3ZDduLVU2WHRleFRmMVhSamVpd1p1cHVhQlVRcFF0REt4TUtwOHdHWmxzTjhhQlFzZ21rUGsyWnlUejVBelRpRHVIVm1SVDFTWUZNX1hTTVc?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T16:10:12.468714+00:00",
+   "title_ru": "Pimco разгружает миллиардные долги ИИ как раз вовремя, чтобы избежать убытков"
+  },
+  {
+   "title": "Generic drugmaker Sandoz cuts sales outlook, shares fall",
+   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNYlVPbS1tUHRtY2RwMzF4VHRxY2hEeGo2dGhPd0JVcm9vWklxOTVteDFsdVQzdmRMWTV2cG5zUC1yUHBUeGVCY3NjUXNhY19BVHhyMkI5RTJ4Yy1OcV9YWTM3VWFfZmxpSXcySUFxdndhTzF4ZEVidjZxbmlPX25xS3lGNmdXYjNzcXg2R3FhYUg1ZTlhalNsTkoxR2x1NUcybm1YM2VOejlxRnl0M1ZmdjFEN2xaMVFpNjBreUM0d19OSVZ2UnlMRHJBWnp0MF84OGlEVjhn?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T16:10:12.468714+00:00",
+   "title_ru": "Производитель дженериков Sandoz снижает прогноз продаж, акции падают",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-27",
@@ -15865,10 +15913,12 @@
   },
   "checked": "2026-10-28T15:50:12.637813+00:00",
   "sec_seen": [
+   "0000939057-26-000280",
    "0001976408-26-000913",
    "0001976408-26-000914",
-   "0000939057-26-000280",
-   "0001437749-26-033726"
+   "0001437749-26-033726",
+   "0002114034-26-000009",
+   "0002114067-26-000009"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
