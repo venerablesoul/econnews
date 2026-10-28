@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "a3a59e26a38e5634": "2026-10-25T09:51:42.598857+00:00",
   "d9b5e87586077540": "2026-10-25T09:56:42.799697+00:00",
   "08fb06f1269f0558": "2026-10-25T10:01:42.628333+00:00",
   "7eae723493ff6aef": "2026-10-25T10:01:42.628333+00:00",
@@ -893,21 +892,13 @@
   "7ec63dd27c8b0bb0": "2026-10-28T09:30:51.189178+00:00",
   "a743c437b72c36fd": "2026-10-28T09:30:51.189178+00:00",
   "6ec0c822d700036d": "2026-10-28T09:30:51.189178+00:00",
-  "ab8589c657b24051": "2026-10-28T09:35:51.168469+00:00"
+  "ab8589c657b24051": "2026-10-28T09:35:51.168469+00:00",
+  "ae95cf04c03d9767": "2026-10-28T09:50:51.261463+00:00",
+  "298890ad4be44838": "2026-10-28T09:55:51.174129+00:00",
+  "866d0621b3832a33": "2026-10-28T09:55:51.174129+00:00",
+  "c0703e3619a5ec9d": "2026-10-28T09:55:51.174129+00:00"
  },
  "recent": [
-  {
-   "title": "Israel Election 2026: War-Focused Campaign Masks Underlying Economic Schism",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-25/israel-election-2026-war-focused-campaign-masks-underlying-economic-schism",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-25T09:51:42.598857+00:00",
-   "title_ru": "Выборы в Израиле 2026 года: маски предвыборной кампании, ориентированные на войну, лежат в основе экономического раскола",
-   "lead": "Israel’s election campaign has been consumed by Iran, national security and the impact of three years of war, with Israeli Prime Minister Benjamin Netanyahu and his main challenger, Gadi Eisenkot, rarely straying from the theme.",
-   "lead_ru": "Избирательная кампания Израиля была поглощена Ираном, национальной безопасностью и последствиями трехлетней войны, при этом премьер-министр Израиля Биньямин Нетаньяху и его главный соперник Гади Айзенкот редко отклонялись от этой темы."
-  },
   {
    "title": "French Bond Rout Puts Crisis at Heart of ECB Succession Endgame",
    "link": "https://www.bloomberg.com/news/articles/2026-10-25/french-bond-rout-puts-crisis-at-heart-of-ecb-succession-endgame",
@@ -8223,6 +8214,42 @@
    "tags": [
     "bonds"
    ]
+  },
+  {
+   "title": "IMF Lauds South Africa’s Fiscal Gains, Sees Growth as Next Test",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-28/imf-lauds-south-africa-s-fiscal-gains-sees-growth-as-next-test",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-28T09:55:51.174129+00:00",
+   "title_ru": "МВФ приветствует бюджетные достижения Южной Африки и рассматривает экономический рост как следующее испытание",
+   "lead": "The International Monetary Fund said South Africa is restoring fiscal credibility despite geopolitical risks, but needs to deliver faster economic reforms to lift investment and growth.",
+   "lead_ru": "Международный валютный фонд заявил, что Южная Африка восстанавливает доверие к бюджету, несмотря на геополитические риски, но ей необходимо провести более быстрые экономические реформы для увеличения инвестиций и экономического роста."
+  },
+  {
+   "title": "Israeli Markets Slide Across Board on Election Stalemate Concern",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-28/israeli-markets-slide-across-board-on-election-stalemate-concern",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T09:55:51.174129+00:00",
+   "title_ru": "Израильские рынки резко упали из-за опасений, что выборы зашли в тупик",
+   "lead": "Israeli assets slid across the board after the country’s tight election appeared to point to a stalemate, with none of the parties having a clear path toward forming a government.",
+   "lead_ru": "Израильские активы упали по всем направлениям после того, как трудные выборы в стране, казалось, указывали на тупиковую ситуацию, поскольку ни у одной из партий не было четкого пути к формированию правительства."
+  },
+  {
+   "title": "Former Conservative chancellor unsure Budget will 'fix big problems'",
+   "link": "https://www.bbc.co.uk/news/videos/c65ynlg4rxvqo?at_medium=RSS&at_campaign=rss",
+   "sources": [
+    "BBC"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T09:55:51.174129+00:00",
+   "title_ru": "Бывший канцлер-консерватор не уверен, что бюджет «решит большие проблемы»",
+   "lead": "Sir Jeremy Hunt spoke to BBC Breakfast about his hopes and qualms ahead of John Healey's autumn Budget.",
+   "lead_ru": "Сэр Джереми Хант рассказал BBC Breakfast о своих надеждах и опасениях в преддверии осеннего бюджета Джона Хили."
   }
  ],
  "last_digest": "2026-10-27",
