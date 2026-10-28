@@ -993,7 +993,9 @@
   "7e6bf3e15b8ccd11": "2026-10-28T17:15:12.450194+00:00",
   "3ff3dcd40af43251": "2026-10-28T17:15:12.450194+00:00",
   "f530201a47974783": "2026-10-28T17:25:12.434231+00:00",
-  "f67ff95758e71cbf": "2026-10-28T17:35:12.447420+00:00"
+  "f67ff95758e71cbf": "2026-10-28T17:35:12.447420+00:00",
+  "e10f01a0c7420e77": "2026-10-28T17:40:12.444817+00:00",
+  "c8e21da44f0da3e5": "2026-10-28T17:40:12.444817+00:00"
  },
  "recent": [
   {
@@ -9454,6 +9456,27 @@
     "GDP",
     "Russia"
    ]
+  },
+  {
+   "title": "Boston Tower Owner Buys It Again at 68% Discount After Default",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-28/boston-office-tower-sells-for-546-million-discount-at-auction",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-28T17:40:12.444817+00:00",
+   "title_ru": "Владелец Boston Tower снова покупает его со скидкой 68% после дефолта",
+   "lead": "A real estate investment firm bought a Boston office tower at a foreclosure auction for one-third the price it paid in 2019, a stark illustration of how far building values have fallen in the wake of the pandemic.",
+   "lead_ru": "Инвестиционная компания в сфере недвижимости купила офисную башню в Бостоне на аукционе по выкупу заложенного имущества за треть цены, которую она заплатила в 2019 году, что является яркой иллюстрацией того, насколько сильно упала стоимость зданий после пандемии."
+  },
+  {
+   "title": "Budget winners and losers: pensioners and households gain as bankers and betting shops hit",
+   "link": "https://www.theguardian.com/uk-news/2026/oct/28/budget-winners-and-losers-pensioners-and-households-gain-as-bankers-and-betting-shops-hit",
+   "sources": [
+    "The Guardian"
+   ],
+   "score": 2,
+   "ts": "2026-10-28T17:40:12.444817+00:00"
   }
  ],
  "last_digest": "2026-10-27",
@@ -9478,7 +9501,7 @@
   "ECB": 0,
   "Fed": 0,
   "IMF": 0,
-  "Kommersant": 1,
+  "Kommersant": 0,
   "RBC": 0,
   "US Labor Statistics (BLS)": 0
  },
@@ -16117,10 +16140,8 @@
   },
   "checked": "2026-10-28T16:50:13.873625+00:00",
   "sec_seen": [
-   "0001437749-26-033738",
    "0001628280-26-067824",
    "0001437749-26-033742",
-   "0001760581-26-000075",
    "0001193125-26-435749",
    "0002085067-26-000010",
    "0002114274-26-000008",
