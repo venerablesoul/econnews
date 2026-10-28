@@ -1037,7 +1037,8 @@
   "a5075d247a28d049": "2026-10-28T19:45:12.385146+00:00",
   "7dc93a481415ef61": "2026-10-28T19:50:12.485695+00:00",
   "5f39c9a6e1f317ba": "2026-10-28T19:50:12.485695+00:00",
-  "d9f28d5b1bdce31c": "2026-10-28T19:50:12.485695+00:00"
+  "d9f28d5b1bdce31c": "2026-10-28T19:50:12.485695+00:00",
+  "456c53ee75a7b3af": "2026-10-28T19:55:12.941990+00:00"
  },
  "recent": [
   {
@@ -10020,6 +10021,16 @@
    "title_ru": "Бюджетные надежды Бернхэма на лучшее в неспокойные времена для Великобритании",
    "lead": "Andy Burnham promised to “bring back hope” when he replaced the unpopular Keir Starmer as Britain’s prime minister in July. His first budget will require a dose of luck, as well.",
    "lead_ru": "Энди Бернем пообещал «вернуть надежду», заменив непопулярного Кейра Стармера на посту премьер-министра Великобритании в июле. Его первый бюджет также потребует дозу удачи."
+  },
+  {
+   "title": "Mexico, US assess viability of trade deal before midterms",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNa05kdXI0NWFnYkZHMmRpUjlJRUR1YWRDT3haWEwtYmZyNFF6OWc2b2drMEV0LUJ1eVg5cUQxeVVkZmkxTUNRejZIZDByZG1hcFhBWUNBQklpN2h2c1dfRDVWVnI2OFFzUTRZYy05TnpXeWU2OVRidXk2LXN4WjBKb2oxV01kWnIwX2FGMDNSZ3R1LVhOQjBwVEo4RjdaMXk2Y0U1TjVmQQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T19:55:12.941990+00:00",
+   "title_ru": "Мексика и США оценивают жизнеспособность торговой сделки до среднесрочных сроков"
   }
  ],
  "last_digest": "2026-10-28",
@@ -12645,6 +12656,22 @@
    }
   ],
   "insiders": [
+   {
+    "src": "sec",
+    "id": "12695b6ef0e0bc47",
+    "ticker": "RCT",
+    "company": "RedCloud Holdings plc",
+    "who": "Nikolaus Beat Senn",
+    "role": "Director, 10% owner",
+    "type": "buy",
+    "value": 425000,
+    "shares": 1700000,
+    "price": 0.25,
+    "plan": false,
+    "date": "2026-10-28",
+    "disclosed": "2026-10-28",
+    "link": "https://www.sec.gov/Archives/edgar/data/2070908/000149315226048958/0001493152-26-048958-index.htm"
+   },
    {
     "src": "sec",
     "id": "aab4ff84a8532881",
@@ -16628,22 +16655,6 @@
     "date": "2026-10-19",
     "disclosed": "2026-10-20",
     "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000361/0001510281-26-000361-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "6e79b817052067fd",
-    "ticker": "DSM",
-    "company": "BNY MELLON STRATEGIC MUNICIPAL BOND FUND, INC.",
-    "who": "Saba Capital Management, L.p.",
-    "role": "10% owner",
-    "type": "buy",
-    "value": 1096500,
-    "shares": 207722,
-    "price": 5.28,
-    "plan": false,
-    "date": "2026-10-19",
-    "disclosed": "2026-10-20",
-    "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000362/0001510281-26-000362-index.htm"
    }
   ],
   "docs": {
@@ -16681,9 +16692,11 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-28T18:55:12.451443+00:00",
+  "checked": "2026-10-28T19:55:12.941990+00:00",
   "sec_seen": [
+   "0001437749-26-033776",
    "0001437749-26-033773",
+   "0001493152-26-048958",
    "0001193125-26-436043"
   ],
   "errors": {
