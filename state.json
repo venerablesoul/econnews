@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "450e9e01f225157c": "2026-10-25T23:18:52.525010+00:00",
   "9188fa6d89ea031b": "2026-10-25T23:28:52.459624+00:00",
   "14303ddef5dd7d96": "2026-10-25T23:33:52.575802+00:00",
   "1f3fabb6308219ff": "2026-10-25T23:38:52.496870+00:00",
@@ -1070,7 +1069,12 @@
   "41cbee2f338cd788": "2026-10-28T23:15:50.587678+00:00",
   "db4334881fea509d": "2026-10-28T23:15:50.587678+00:00",
   "d4a664c2b8800204": "2026-10-28T23:15:50.587678+00:00",
-  "34545c5d525448d3": "2026-10-28T23:15:50.587678+00:00"
+  "34545c5d525448d3": "2026-10-28T23:15:50.587678+00:00",
+  "c8831c2c1c547e11": "2026-10-28T23:20:50.587939+00:00",
+  "bbdbc2cde7e33bab": "2026-10-28T23:25:50.457040+00:00",
+  "cde8f5e09d4a5f82": "2026-10-28T23:25:50.457040+00:00",
+  "f23ab1a58e82808b": "2026-10-28T23:25:50.457040+00:00",
+  "89afa8985dae2e2d": "2026-10-28T23:25:50.457040+00:00"
  },
  "recent": [
   {
@@ -10538,6 +10542,65 @@
    "title_en": "The IDF is being put on the market // The Industrial Development Fund will be integrated with VEB.RF",
    "lead": "Фонд развития промышленности (ФРП) будет преобразован в закрытый паевой инвестиционный фонд и интегрирован с ВЭБ.РФ. Соответствующий законопроект внесен правительством в Госдуму.",
    "lead_en": "The Industrial Development Fund (IDF) will be transformed into a closed-end mutual investment fund and integrated with VEB.RF. The relevant bill was submitted by the government to the State Duma."
+  },
+  {
+   "title": "Fortinet’s stock is taking a dive after earnings. Here’s why.",
+   "link": "https://www.marketwatch.com/story/fortinets-stock-is-taking-a-dive-after-earnings-heres-why-d407896e?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-28T23:20:50.587939+00:00"
+  },
+  {
+   "title": "Why a Fed rate hike is likely coming in December",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE45YnFFaGgyTm5xZ2dyZE9mQlR4RzFIRFB6ckh0cGFjN196a1R4b1o5NlVhWWRTOWFLWUZCZnN1cHRDQ1BmZVlrYzV2QzNHSzhIblVoYUg4bWQyRUpmS3JfOE9fbjJTQktMTkVTWVpfRmJLTzFQUGoxT0JWSlpMZw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-28T23:25:50.457040+00:00",
+   "title_ru": "Почему повышение ставки ФРС, вероятно, произойдет в декабре",
+   "tags": [
+    "Fed",
+    "rates"
+   ]
+  },
+  {
+   "title": "Yuan Funding Has Deeper Drivers Than Yields, Top Economist Says",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-28/yuan-funding-has-deeper-drivers-than-yields-top-economist-says",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T23:25:50.457040+00:00",
+   "title_ru": "Финансирование в юанях имеет более глубокие драйверы, чем доходность, говорит ведущий экономист",
+   "lead": "The yuan’s path to becoming a global funding currency depends more on the nation’s supply-chain dominance rather than low borrowing costs, according to a top Chinese economist.",
+   "lead_ru": "По словам ведущего китайского экономиста, путь юаня к превращению в глобальную валюту финансирования в большей степени зависит от доминирования страны в цепочке поставок, а не от низких затрат по займам.",
+   "tags": [
+    "bonds",
+    "China"
+   ]
+  },
+  {
+   "title": "Trick or Treat, Smell My Feet, This Economy Ain’t So Sweet",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOcTV0N3BwR0lnMm5sOHlXU2lHN0JNdURrMThUcUFHX2tPcG9NX0xja1d2ODlSODBKd044Q2Y1LWdUOXd2OG5YT09mSDB6b0VsUGVPUWZ3RDFSZGRvTGVHVXFJZ2IydmVveHpGTENLdUpOb3gxOUIxTm9vQ09CRnhfMVhXcjJlSGtwcTJqQ2J2Q0FNRm1rY3dwV1JYQ21mVHlXZ2VlcTNRd1pheWl5QXQzMUdzMWJDeDJhRWdZ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T23:25:50.457040+00:00",
+   "title_ru": "Trick or Treat, Smell My Feet, This Economy Ain 't So Sweet"
+  },
+  {
+   "title": "UK's FTSE 100 muted as GSK, Unilever losses temper bank gains after budget",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQX2N5WVY0d3otMGt5LUZyMEhWamtfcnVZOWhON1NVeWhRZEVFc056UnhpYldWM25pSUFiTnE2Mm1NVldSbjRiRWFaY2FnRDd2TEo3bWhzX3BVd1BLWjhIRkx3d2E1a203a0VNLUVEQjR2b005WHRHYkhFZnRQZnhlWWxrMFdtdDEzd2Q1UGhYdzJnY2JNRXdxQmMxTDRXWWpoMVo4NEV3OWdCUQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T23:25:50.457040+00:00",
+   "title_ru": "Британская FTSE 100 приглушена как GSK, убытки Unilever сдерживают прибыль банка после бюджета"
   }
  ],
  "last_digest": "2026-10-28",
@@ -13514,6 +13577,22 @@
     "date": "2026-10-27",
     "disclosed": "2026-10-28",
     "link": "https://www.sec.gov/Archives/edgar/data/2132472/000162828026067978/0001628280-26-067978-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "e624e89b4479583b",
+    "ticker": "SYM",
+    "company": "Symbotic Inc.",
+    "who": "James Kuffner",
+    "role": "CTO",
+    "type": "sell",
+    "value": 741920,
+    "shares": 19399,
+    "price": 38.25,
+    "plan": false,
+    "date": "2026-10-27",
+    "disclosed": "2026-10-28",
+    "link": "https://www.sec.gov/Archives/edgar/data/1877346/000187734626000027/0001877346-26-000027-index.htm"
    },
    {
     "src": "sec",
@@ -17146,22 +17225,6 @@
     "date": "2026-10-20",
     "disclosed": "2026-10-21",
     "link": "https://www.sec.gov/Archives/edgar/data/1106578/000110657826000168/0001106578-26-000168-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "bc522401a53f4798",
-    "ticker": "CVX",
-    "company": "CHEVRON CORP",
-    "who": "R. Hewitt Pate",
-    "role": "General Counsel",
-    "type": "sell",
-    "value": 9766243,
-    "shares": 43100,
-    "price": 226.59,
-    "plan": true,
-    "date": "2026-10-20",
-    "disclosed": "2026-10-21",
-    "link": "https://www.sec.gov/Archives/edgar/data/1469419/000009341026000194/0000093410-26-000194-index.htm"
    }
   ],
   "docs": {
@@ -17214,6 +17277,7 @@
    "0001216931-26-000014",
    "0001193125-26-436459",
    "0002010300-26-000035",
+   "0001877346-26-000027",
    "0001193125-26-436418",
    "0000947871-26-000963",
    "0001193125-26-436436",
@@ -17228,7 +17292,9 @@
    "0001628280-26-067978",
    "0001193125-26-436441",
    "0001705952-26-000016",
+   "0001807561-26-000026",
    "0001628280-26-067980",
+   "0001505300-26-000016",
    "0001193125-26-436443",
    "0001193125-26-436444",
    "0000708955-26-000202",
@@ -17236,7 +17302,8 @@
    "0000087347-26-000126",
    "0001093557-26-000187",
    "0001493152-26-049119",
-   "0000950103-26-016314"
+   "0000950103-26-016314",
+   "0001654009-26-000017"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
