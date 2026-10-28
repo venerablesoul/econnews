@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "67b5b1643c31ab38": "2026-10-25T21:23:25.734150+00:00",
   "96991facfbd089df": "2026-10-25T21:28:25.680160+00:00",
   "0c70ded9f2b6700e": "2026-10-25T21:48:25.767287+00:00",
   "f89ce3ab6be94361": "2026-10-25T21:48:25.767287+00:00",
@@ -1047,7 +1046,9 @@
   "567fdae56d8c7481": "2026-10-28T21:05:51.112651+00:00",
   "38fe4af1056869b9": "2026-10-28T21:05:51.112651+00:00",
   "d62ead68c3bd433e": "2026-10-28T21:15:50.671593+00:00",
-  "931882e23f2cd385": "2026-10-28T21:15:50.671593+00:00"
+  "931882e23f2cd385": "2026-10-28T21:15:50.671593+00:00",
+  "47789c0bcc5237b0": "2026-10-28T21:20:51.163935+00:00",
+  "1c9715ad4e258cff": "2026-10-28T21:25:52.228172+00:00"
  },
  "recent": [
   {
@@ -10219,6 +10220,19 @@
    "tags": [
     "bonds"
    ]
+  },
+  {
+   "title": "Warsh says politics played no role in Fed holding rates steady",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5vQXk4RXhDSkJlLXhhR3BpUEl3QkVBQmk1Tjg0M2t2b0E5dHFnOWEwTjdncHRBUHJGMmd5cnlUVmdWWmUwMUtJY0FOdXhiTzdTYU5GWkFzWl9maXl4dVk2T1JndlRNRkk?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T21:25:52.228172+00:00",
+   "title_ru": "Уорш говорит, что политика не сыграла никакой роли в стабилизации ставок ФРС",
+   "tags": [
+    "Fed"
+   ]
   }
  ],
  "last_digest": "2026-10-28",
@@ -12894,6 +12908,22 @@
    },
    {
     "src": "sec",
+    "id": "8bb4324ee8f0a0e8",
+    "ticker": "R",
+    "company": "RYDER SYSTEM INC",
+    "who": "Robert E Sanchez",
+    "role": "Director",
+    "type": "sell",
+    "value": 9749470,
+    "shares": 34614,
+    "price": 281.66,
+    "plan": false,
+    "date": "2026-10-28",
+    "disclosed": "2026-10-28",
+    "link": "https://www.sec.gov/Archives/edgar/data/1216931/000121693126000014/0001216931-26-000014-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "aab4ff84a8532881",
     "ticker": "RDWR",
     "company": "RADWARE LTD",
@@ -13051,6 +13081,38 @@
     "date": "2026-10-27",
     "disclosed": "2026-10-28",
     "link": "https://www.sec.gov/Archives/edgar/data/1106578/000110657826000173/0001106578-26-000173-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "35b7a72be540c8b2",
+    "ticker": "UHALB",
+    "company": "U-Haul Holding Co /NV/",
+    "who": "Shoen Mark V",
+    "role": "10% owner",
+    "type": "sell",
+    "value": 2261008,
+    "shares": 46000,
+    "price": 49.15,
+    "plan": true,
+    "date": "2026-10-27",
+    "disclosed": "2026-10-28",
+    "link": "https://www.sec.gov/Archives/edgar/data/1134431/000119312526436386/0001193125-26-436386-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "428e7cb7f37d5994",
+    "ticker": "GF",
+    "company": "NEW GERMANY FUND INC",
+    "who": "Saba Capital Management, L.p.",
+    "role": "10% owner",
+    "type": "buy",
+    "value": 37283,
+    "shares": 3648,
+    "price": 10.22,
+    "plan": false,
+    "date": "2026-10-27",
+    "disclosed": "2026-10-28",
+    "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000385/0001510281-26-000385-index.htm"
    },
    {
     "src": "sec",
@@ -16795,54 +16857,6 @@
     "date": "2026-10-20",
     "disclosed": "2026-10-21",
     "link": "https://www.sec.gov/Archives/edgar/data/1649749/000119147326000008/0001191473-26-000008-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "8dec18be062b3dfc",
-    "ticker": "CRWD",
-    "company": "CrowdStrike Holdings, Inc.",
-    "who": "George Kurtz",
-    "role": "CEO",
-    "type": "sell",
-    "value": 4557951,
-    "shares": 20000,
-    "price": 227.9,
-    "plan": true,
-    "date": "2026-10-20",
-    "disclosed": "2026-10-21",
-    "link": "https://www.sec.gov/Archives/edgar/data/1778564/000177856426000189/0001778564-26-000189-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "c05a530a67a0ee25",
-    "ticker": "SE",
-    "company": "Sea Ltd",
-    "who": "Tianyu Hou",
-    "role": "CFO",
-    "type": "sell",
-    "value": 890328,
-    "shares": 10000,
-    "price": 89.03,
-    "plan": true,
-    "date": "2026-10-19",
-    "disclosed": "2026-10-21",
-    "link": "https://www.sec.gov/Archives/edgar/data/2113220/000119312526427145/0001193125-26-427145-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "d4657ab87af57a0b",
-    "ticker": "OWLS",
-    "company": "OBOOK HOLDINGS INC.",
-    "who": "Chun Kai Wang",
-    "role": "CEO",
-    "type": "buy",
-    "value": 52037,
-    "shares": 12192,
-    "price": 4.27,
-    "plan": false,
-    "date": "2026-10-19",
-    "disclosed": "2026-10-21",
-    "link": "https://www.sec.gov/Archives/edgar/data/2109337/000210933726000012/0002109337-26-000012-index.htm"
    }
   ],
   "docs": {
@@ -16882,18 +16896,14 @@
   },
   "checked": "2026-10-28T21:00:12.519519+00:00",
   "sec_seen": [
-   "0001193125-26-436314",
-   "0001437749-26-033807",
-   "0001193125-26-436313",
+   "0001510281-26-000385",
+   "0001216931-26-000014",
    "0001517413-26-000320",
+   "0001193125-26-436386",
    "0001193125-26-436365",
-   "0000950142-26-002875",
    "0001031083-26-000004",
-   "0001193125-26-436297",
-   "0001193125-26-436298",
-   "0001510281-26-000384",
-   "0001477932-26-006494",
    "0001031082-26-000009",
+   "0001477932-26-006494",
    "0001551293-26-000005"
   ],
   "errors": {
