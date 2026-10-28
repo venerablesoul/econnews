@@ -976,7 +976,10 @@
   "cbc26a546b3fdee4": "2026-10-28T15:40:12.728766+00:00",
   "47888857c00c45cc": "2026-10-28T15:45:12.379525+00:00",
   "4e47b6192b27c57c": "2026-10-28T15:45:12.379525+00:00",
-  "cbb1aa5e5050a6f3": "2026-10-28T15:50:12.637813+00:00"
+  "cbb1aa5e5050a6f3": "2026-10-28T15:50:12.637813+00:00",
+  "545e96ec9631ef00": "2026-10-28T16:00:12.745501+00:00",
+  "77a247affff7d083": "2026-10-28T16:00:12.745501+00:00",
+  "7a8a369061a98c93": "2026-10-28T16:00:12.745501+00:00"
  },
  "recent": [
   {
@@ -9180,6 +9183,28 @@
    "score": 4,
    "ts": "2026-10-28T15:50:12.637813+00:00",
    "title_ru": "В сентябре дефицит торгового баланса США неожиданно увеличился"
+  },
+  {
+   "title": "EQT's acquisition of Range underscores race to dominate US natgas market",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOVzBKNWthZ2NLZTF4Qmw4cm5tNGZFb2dkRmN1MmZqQ24xa1JmZTJCU1VqbjJqTjdQampGODVpX0dIWVJFOVI2VFA3eXN0ZEJweFlGLW83d1RKRVdXN2NFWWpVNTFxT05EYkJsc1VGY2drS0FhM0hXZXI5N3hFYzNxV2VNTzlEM2w0ZWJ5Z095RTJYcG5wdXJuWmhJYnphWnVHaFJiQWlzX3E3WHdDbnN1VXg1bjlaVGpq?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T16:00:12.745501+00:00",
+   "title_ru": "Приобретение EQT компании Range подчеркивает стремление к доминированию на рынке природного газа в США"
+  },
+  {
+   "title": "How will Budget forecasts affect the tax you pay?",
+   "link": "https://www.ft.com/content/2b5adffc-90e9-4355-bd07-037a2144a6a3?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T16:00:12.745501+00:00",
+   "title_ru": "Как прогнозы бюджета повлияют на размер налога, который вы платите?",
+   "lead": "Fiscal drag is set to hit taxpayers harder than previously thought",
+   "lead_ru": "Фискальное сопротивление ударит по налогоплательщикам сильнее, чем предполагалось ранее"
   }
  ],
  "last_digest": "2026-10-27",
@@ -15842,6 +15867,7 @@
   "sec_seen": [
    "0001976408-26-000913",
    "0001976408-26-000914",
+   "0000939057-26-000280",
    "0001437749-26-033726"
   ],
   "errors": {
