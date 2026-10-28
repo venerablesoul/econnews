@@ -906,7 +906,8 @@
   "0b1b2b704ee2bf34": "2026-10-28T10:31:22.804696+00:00",
   "256305c56f4fdcef": "2026-10-28T10:36:22.825875+00:00",
   "ad50facc825e0d8a": "2026-10-28T10:41:22.807015+00:00",
-  "27230cc576cd9ef9": "2026-10-28T10:46:22.794167+00:00"
+  "27230cc576cd9ef9": "2026-10-28T10:46:22.794167+00:00",
+  "86d2b80e2e91a926": "2026-10-28T10:51:22.849500+00:00"
  },
  "recent": [
   {
@@ -8378,6 +8379,22 @@
    "title_ru": "Долговая машина ИИ Уолл-стрит начинает подавляться поставками",
    "lead": "A new anxiety is gripping Wall Street as it bankrolls the vast network of data centers and chips behind the artificial intelligence boom: Early signs suggest that the credit market is approaching the limits of how much more debt…",
    "lead_ru": "Новая тревога охватывает Уолл-стрит, поскольку она финансирует обширную сеть центров обработки данных и чипов, стоящих за бумом искусственного интеллекта: ранние признаки свидетельствуют о том, что кредитный рынок приближается к пределам того, насколько больше долгов..."
+  },
+  {
+   "title": "«Сбер» повысил прогноз по инфляции и скорректировал прогноз по ВВП",
+   "link": "https://www.rbc.ru/economics/28/10/2026/6ae1c1b6fb7a6ae0e06d8781",
+   "sources": [
+    "RBC"
+   ],
+   "score": 6,
+   "ts": "2026-10-28T10:51:22.849500+00:00",
+   "title_en": "Sber raised its inflation forecast and adjusted its GDP forecast",
+   "lead": "Сбербанк ожидает, что по итогам 2026 года рост ВВП составит 0,5-1%, а инфляция достигнет 6,5-7,5%. При этом финдиректор банка Скворцов отметил замедление потребительской активности на фоне более медленного роста доходов населения",
+   "lead_en": "Sberbank expects that by the end of 2026, GDP growth will be 0.5-1%, and inflation will reach 6.5-7.5%. At the same time, the financial director of the bank Skvortsov noted a slowdown in consumer activity against the background of slower growth in household incomes",
+   "tags": [
+    "inflation",
+    "GDP"
+   ]
   }
  ],
  "last_digest": "2026-10-27",
@@ -14793,9 +14810,9 @@
   "checked": "2026-10-28T10:41:22.807015+00:00",
   "sec_seen": [
    "0001075736-26-000120",
-   "0001040470-26-000312",
-   "0000105132-26-000105",
    "0002082930-26-000020",
+   "0000105132-26-000105",
+   "0001040470-26-000312",
    "0000105132-26-000104",
    "0001369240-26-000014",
    "0001628280-26-067694",
