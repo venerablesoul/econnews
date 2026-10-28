@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "a0d56c6adcf40c95": "2026-10-25T22:38:52.460676+00:00",
-  "3c87eac76bfb315a": "2026-10-25T22:38:52.460676+00:00",
   "8b8f35348a5d1316": "2026-10-25T22:58:52.417284+00:00",
   "bd9a2141807619f8": "2026-10-25T22:58:52.417284+00:00",
   "41cbee2f338cd788": "2026-10-25T23:08:52.445805+00:00",
@@ -1060,37 +1058,12 @@
   "45676325404823f7": "2026-10-28T22:15:50.651997+00:00",
   "32ffca79800749b9": "2026-10-28T22:35:50.628199+00:00",
   "d831889bdcce1597": "2026-10-28T22:35:50.628199+00:00",
-  "d9bb86022b37e4f5": "2026-10-28T22:35:50.628199+00:00"
+  "d9bb86022b37e4f5": "2026-10-28T22:35:50.628199+00:00",
+  "f6b511159c42c63c": "2026-10-28T22:40:50.595029+00:00",
+  "72cceb367ea17761": "2026-10-28T22:40:50.595029+00:00",
+  "935573d2c6d3ba0d": "2026-10-28T22:40:50.595029+00:00"
  },
  "recent": [
-  {
-   "title": "Latest Oil Market News and Analysis for Oct. 26",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-25/latest-oil-market-news-and-analysis-for-oct-26",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-25T22:38:52.460676+00:00",
-   "title_ru": "Последние новости и аналитика нефтяного рынка за 26 октября",
-   "lead": "Oil edged lower from a six-month high, even as US President Donald Trump signaled he was prepared to resume attacks on Iran.",
-   "lead_ru": "Нефть упала с шестимесячного максимума, даже когда президент США Дональд Трамп дал понять, что готов возобновить атаки на Иран.",
-   "tags": [
-    "oil"
-   ]
-  },
-  {
-   "title": "Oil Edges Lower From Six-Month High as Traders Assess Iran Risks",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNaW5ZbFF1Z3RzeDVBb3VnYW8tWVJvR0ZLSVByR0Z4M1R1YktrbWNNVXdjaXJydERES0R2Q0lzR1BXZnBPYndtbXdtR2NRaHVFc2FvYU4tUmRCOS1xWXA3clVqeVZlSS1aVFhfYjFXbzNpQTJxRzQyYVVlUlJCbWN3LS1SR2xyV1FYYlpNaXZWQkppQUNYSF9vZENvQlMxZk9QaHVmU3dJTGhoR3pjdlpSQnd3?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-25T22:38:52.460676+00:00",
-   "title_ru": "Нефтяные края снижаются с шестимесячного максимума, поскольку трейдеры оценивают риски Ирана",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "ProShares Nasdaq-100 Autocallable Income ETF (ACQQ.OQ) | Stock Price & Latest News",
    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1OOVAwenVMcngxQklMelR6aHpHWFRLcWJHNjJFVS1aODk5WnBsV0xyRlhPVGNiaWl1V1drSm5FZ0N4YjNGT3lETlhYS0VJa2dNX0xZRmlSYjhwTUdETWF0a2IyZ1otTnE3X1QtOQ?oc=5",
@@ -10421,6 +10394,48 @@
    "score": 3,
    "ts": "2026-10-28T22:35:50.628199+00:00",
    "title_ru": "Коста-Рика отказалась от заявки на вступление в Тихоокеанский торговый пакт, министр торговли мешков"
+  },
+  {
+   "title": "Market Talk: Fed rate decision 'didn't line up' with Warsh's comments",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1JMk5waUxfRnBMOWZqNDY0TlNTOTVodUx3QURNd3ZJSnphUFl2RDJieHY1Vllod0RtZGNuUnJoUWV4RldYOUFnbGZrejd6NHFFLVVrV1J5dVVzWTlSTlZEc211TGJaQlRXRl9PanhiV0FHeThFQWFMRm5MUHIzUQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 7,
+   "ts": "2026-10-28T22:40:50.595029+00:00",
+   "title_ru": "Обсуждение на рынке: решение ФРС по ставке «не соответствовало» комментариям Уорша",
+   "tags": [
+    "Fed",
+    "rates"
+   ]
+  },
+  {
+   "title": "US Stock Futures Decline, Fed Keeps Rates Steady: Markets Wrap",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-28/stock-market-today-dow-s-p-live-updates",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-28T22:40:50.595029+00:00",
+   "title_ru": "Фьючерсы на акции США снижаются, ФРС держит ставки на стабильном уровне: рынки сворачиваются",
+   "lead": "US stock futures fell in early Asian trading as investors weighed mixed earnings from megacap technology companies and the Federal Reserve held rates steady without signaling whether a December hike is likely.",
+   "lead_ru": "Фьючерсы на акции США упали на ранних азиатских торгах, поскольку инвесторы взвешивали смешанные доходы от технологических компаний мегакапов, а Федеральная резервная система удерживала ставки на стабильном уровне, не сигнализируя о вероятности декабрьского повышения.",
+   "tags": [
+    "Fed"
+   ]
+  },
+  {
+   "title": "Banks Shelve Bond Sale for Anthropic-Tied Texas Data Center",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOTWZ1cFJjWU12d2ZBMU9WVTFvbXFMdXBwaUFMRko0VXBXYkZadEM1dDRsRi04QjR6TjE1NmhpOGY3bDBNdjlrWXUtT29uc2NTNmpVTzE4QnQ0ZkRtNURPOG1OZW5QOGFyMGJ2R196NFhxTThFZGlpSV9PdlVBRFJXdm0wdHRzSnpOTEtPR18ybFpXSGZESWNxeEhEdGotYUJNOHhXYVR3XzlDVlVabjhV?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T22:40:50.595029+00:00",
+   "title_ru": "Продажа облигаций Banks Shelve для антропного техасского дата-центра",
+   "tags": [
+    "bonds"
+   ]
   }
  ],
  "last_digest": "2026-10-28",
