@@ -957,7 +957,8 @@
   "bd7f6aabe932cc87": "2026-10-28T14:21:22.866058+00:00",
   "5c6b193a85617923": "2026-10-28T14:21:22.866058+00:00",
   "20906bf4ddf32788": "2026-10-28T14:21:22.866058+00:00",
-  "5a798fdf4f637f98": "2026-10-28T14:21:22.866058+00:00"
+  "5a798fdf4f637f98": "2026-10-28T14:21:22.866058+00:00",
+  "a6dfb69aed1c5529": "2026-10-28T14:26:22.832057+00:00"
  },
  "recent": [
   {
@@ -8963,6 +8964,18 @@
    "tags": [
     "China"
    ]
+  },
+  {
+   "title": "France’s Lescure Says Prepared to Use Any Tool to Ensure Budget",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-28/france-s-lescure-says-prepared-to-use-any-tool-to-ensure-budget",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T14:26:22.832057+00:00",
+   "title_ru": "Французский Лескюр заявил, что готов использовать любой инструмент для обеспечения бюджета",
+   "lead": "French Finance Minister Roland Lescure said the government is determined to get a deficit cutting budget enacted and will use any tools available, including untested executive orders.",
+   "lead_ru": "Министр финансов Франции Ролан Лескюр заявил, что правительство намерено добиться принятия бюджета по сокращению дефицита и будет использовать любые доступные инструменты, включая непроверенные исполнительные указы."
   }
  ],
  "last_digest": "2026-10-27",
@@ -15379,8 +15392,8 @@
   "checked": "2026-10-28T13:46:22.847622+00:00",
   "sec_seen": [
    "0001767612-26-000006",
-   "0001209992-26-000052",
-   "0001104659-26-119430"
+   "0001104659-26-119430",
+   "0001209992-26-000052"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
