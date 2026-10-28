@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "191a01341220ced3": "2026-10-25T23:53:52.427166+00:00",
-  "8559a49272adc70f": "2026-10-25T23:53:52.427166+00:00",
   "298b2348dddec91b": "2026-10-25T23:58:52.476177+00:00",
   "a27a72704eea99b3": "2026-10-25T23:58:52.476177+00:00",
   "99870d45ec7c3d18": "2026-10-25T23:58:52.476177+00:00",
@@ -1081,38 +1079,10 @@
   "a96a31c09c473fbc": "2026-10-28T23:40:50.498552+00:00",
   "2aa483e80da30f61": "2026-10-28T23:40:50.498552+00:00",
   "fd593245202d76b9": "2026-10-28T23:45:50.384596+00:00",
-  "968ca29c8e6a527c": "2026-10-28T23:45:50.384596+00:00"
+  "968ca29c8e6a527c": "2026-10-28T23:45:50.384596+00:00",
+  "f4390401ebc32b12": "2026-10-28T23:55:50.457463+00:00"
  },
  "recent": [
-  {
-   "title": "Algeria Votes to Send Troops to Protect Niger’s Oil Facilities",
-   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxONklNclhrcmZic2Q3Q2U2OTdrci15a183WjVkQ2ZxODZkVm9PY0d1QVdGMG1yejZoeFlYNnlkbDVvQXVIU2lkR3lTZk5pVGdpSWRUTVFLbVJwNVVJWENRMlNMVXNtQnBHTF95R19ka1FsTmpBSnp6dGRUMlk2TzVnYzJ4R1c2VWhMYWM4bG1FNGxJdW54VmViclFUcmtZVkhuVTFGVFAtSlRKdjdsbVFydldYUGpYcEdqbm5DSTlTUHpGeHR6cGZHT25YV0pKYjJNNHc?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-25T23:53:52.427166+00:00",
-   "title_ru": "Алжир проголосовал за отправку войск для защиты нефтяных объектов Нигера",
-   "tags": [
-    "oil"
-   ]
-  },
-  {
-   "title": "Инвестиции не лечатся // Минфин США предложил ограничить вложения в китайские биотехнологии",
-   "link": "https://www.kommersant.ru/doc/9060229",
-   "sources": [
-    "Kommersant"
-   ],
-   "score": 3,
-   "ts": "2026-10-25T23:53:52.427166+00:00",
-   "title_en": "Investments cannot be cured // The US Treasury proposed limiting investments in Chinese biotechnologies",
-   "lead": "Правила контроля американских инвестиций за рубежом планируется обновить. Как следует из опубликованного Минфином США проекта, предлагается запретить вложения в китайские биотехнологии, включая разработку лекарств.",
-   "lead_en": "Rules for monitoring American investments abroad are planned to be updated. As follows from the draft published by the US Treasury, it is proposed to ban investments in Chinese biotechnology, including the development of drugs.",
-   "tags": [
-    "China",
-    "Russia"
-   ]
-  },
   {
    "title": "Gold Steadies After Weekly Drop as Focus Shifts to Fed Meeting",
    "link": "https://www.bloomberg.com/news/articles/2026-10-25/gold-steadies-after-weekly-drop-as-focus-shifts-to-fed-meeting",
@@ -10686,6 +10656,22 @@
    "tags": [
     "Fed"
    ]
+  },
+  {
+   "title": "BOJ Set to Hold Rate as Inflation Reaches Long-Awaited Milestone",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-28/boj-set-to-hold-rate-as-inflation-reaches-long-awaited-milestone",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 8,
+   "ts": "2026-10-28T23:55:50.457463+00:00",
+   "title_ru": "БАНК ЯПОНИИ установил ставку удержания, поскольку инфляция достигает долгожданного рубежа",
+   "lead": "The Bank of Japan is widely expected to keep its benchmark interest rate unchanged on Friday while indicating that underlying inflation has finally reached its 2% target, a milestone that would strengthen the case for further…",
+   "lead_ru": "Ожидается, что Банк Японии сохранит свою базовую процентную ставку без изменений в пятницу, указывая на то, что базовая инфляция, наконец, достигла целевого показателя в 2%, что является важной вехой, которая укрепит аргументы в пользу дальнейшего...",
+   "tags": [
+    "rates",
+    "inflation"
+   ]
   }
  ],
  "last_digest": "2026-10-28",
@@ -13678,6 +13664,22 @@
     "date": "2026-10-27",
     "disclosed": "2026-10-28",
     "link": "https://www.sec.gov/Archives/edgar/data/1877346/000187734626000027/0001877346-26-000027-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "498f11cd9eab9804",
+    "ticker": "NYSE: KRC",
+    "company": "KILROY REALTY CORP",
+    "who": "A. Robert Paratte",
+    "role": "See Remarks",
+    "type": "sell",
+    "value": 625552,
+    "shares": 17163,
+    "price": 36.45,
+    "plan": false,
+    "date": "2026-10-27",
+    "disclosed": "2026-10-28",
+    "link": "https://www.sec.gov/Archives/edgar/data/1600298/000162828026067986/0001628280-26-067986-index.htm"
    },
    {
     "src": "sec",
@@ -17294,22 +17296,6 @@
     "date": "2026-10-20",
     "disclosed": "2026-10-21",
     "link": "https://www.sec.gov/Archives/edgar/data/1875168/000162828026066730/0001628280-26-066730-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "12ddd5be91b262c1",
-    "ticker": "UTHR",
-    "company": "UNITED THERAPEUTICS Corp",
-    "who": "Martine A Rothblatt",
-    "role": "CEO",
-    "type": "sell",
-    "value": 5261741,
-    "shares": 9500,
-    "price": 553.87,
-    "plan": true,
-    "date": "2026-10-20",
-    "disclosed": "2026-10-21",
-    "link": "https://www.sec.gov/Archives/edgar/data/1106578/000110657826000168/0001106578-26-000168-index.htm"
    }
   ],
   "docs": {
@@ -17369,6 +17355,7 @@
    "0001895101-26-000021",
    "0001225208-26-008548",
    "0001877170-26-000004",
+   "0001628280-26-067986",
    "0001510281-26-000387",
    "0001510281-26-000388",
    "0002012383-26-003952",
