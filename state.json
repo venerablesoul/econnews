@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "543db73309ee4256": "2026-10-25T12:11:42.613204+00:00",
-  "8b21902f03d7bf09": "2026-10-25T12:11:42.613204+00:00",
   "d4dfbbaf1eceace9": "2026-10-25T12:16:42.627115+00:00",
   "46cf89f1a6155552": "2026-10-25T12:26:42.608229+00:00",
   "a57203ae6ff7e6c8": "2026-10-25T12:36:42.578727+00:00",
@@ -921,40 +919,11 @@
   "e385915a0f3925ae": "2026-10-28T12:06:22.882656+00:00",
   "a3712703620450ad": "2026-10-28T12:06:22.882656+00:00",
   "b921388159d333ec": "2026-10-28T12:06:22.882656+00:00",
-  "0afe125342290620": "2026-10-28T12:11:22.821836+00:00"
+  "0afe125342290620": "2026-10-28T12:11:22.821836+00:00",
+  "3e077cb21e7b7e1c": "2026-10-28T12:16:22.909535+00:00",
+  "866c0e6c78f4ccfb": "2026-10-28T12:16:22.909535+00:00"
  },
  "recent": [
-  {
-   "title": "Audi to build $4bn US plant as it grapples with tariffs",
-   "link": "https://www.ft.com/content/8f034740-12a8-47fe-9010-149f87e70f8e?syn-25a6b1a6=1",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 5,
-   "ts": "2026-10-25T12:11:42.613204+00:00",
-   "title_ru": "Audi построит завод в США стоимостью 4 миллиарда долларов, поскольку борется с тарифами",
-   "lead": "Move announced at Trump rally in Georgia comes as carmaker and its parent Volkswagen seek relief from president’s levies",
-   "lead_ru": "Решение, объявленное на митинге Трампа в Джорджии, связано с тем, что автопроизводитель и его материнская компания Volkswagen требуют освобождения от президентских сборов.",
-   "tags": [
-    "markets",
-    "tariffs"
-   ]
-  },
-  {
-   "title": "Will the Fed drop any hints on rate rises?",
-   "link": "https://www.ft.com/content/181316cc-0f4c-4328-b990-ad0d43ce424c?syn-25a6b1a6=1",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 3,
-   "ts": "2026-10-25T12:11:42.613204+00:00",
-   "title_ru": "Будет ли ФРС намекать на повышение ставок?",
-   "lead": "Market Questions is the FT’s guide to the week ahead",
-   "lead_ru": "«Рыночные вопросы» — путеводитель FT на предстоящую неделю",
-   "tags": [
-    "Fed"
-   ]
-  },
   {
    "title": "FT узнала о последствиях иска против «Dow Jones судоходства» из-за Ормуза",
    "link": "https://www.rbc.ru/business/25/10/2026/6addbe45d80b3ec512b460ab",
@@ -8550,6 +8519,33 @@
    "tags": [
     "Russia"
    ]
+  },
+  {
+   "title": "The AI Fed Votes to Hold Interest Rates Steady",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQV241MEpCNTlLNk5kMkloSEc0SHl4YXo2bTFHc2YxV3RqeXVjUzI2bDV6S3V6MHZQVW1hbFU5TmMyb3RUWnV6LUtYdHdjeENfa1BhamdBNTY2dXBqX2ZIb1pRV0dEc3hnLWtkWDhXOFdZMjFJMTlKOUlCUURWY3AzS1hud3lRZHVSdzFBNTE0OHM2UUJyakNXU0lkR0FMM0RmTVo4dmpIdXk0RUNnaGpiY0dR?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-28T12:16:22.909535+00:00",
+   "title_ru": "ФРБ ИИ голосует за удержание процентных ставок на стабильном уровне",
+   "tags": [
+    "Fed",
+    "rates"
+   ]
+  },
+  {
+   "title": "AI boom creates jobs but threatens others, dividing Nevada unions",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE55aDViQTdIOEQ0WkRoSjl2RzZOSG0yVE1vY3E5NnhIb3ZXMU9nNVNNMW1XT09sbm5oZzhUUGoySFlSMXV0WkFhczl1UWRrb3dUR0ZIWGVyQUFJWDBZc1A1NzcwLUdxMFJBcDR0Rm8yOERKYW1UdmV5OG9WbkR4Zw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T12:16:22.909535+00:00",
+   "title_ru": "Бум ИИ создает рабочие места, но угрожает другим, разделяя профсоюзы Невады",
+   "tags": [
+    "jobs"
+   ]
   }
  ],
  "last_digest": "2026-10-27",
@@ -14970,10 +14966,8 @@
    "0000105132-26-000105",
    "0000105132-26-000104",
    "0001369240-26-000014",
-   "0001628280-26-067694",
    "0001104659-26-119350",
    "0001654009-26-000014",
-   "0001628280-26-067695",
    "0001193125-26-434840",
    "0002084606-26-000017",
    "0001877346-26-000024",
@@ -14997,7 +14991,6 @@
    "0001193125-26-434841",
    "0000105132-26-000102",
    "0001628280-26-067697",
-   "0001140361-26-040937",
    "0001193125-26-435151",
    "0001193125-26-435150"
   ],
