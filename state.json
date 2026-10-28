@@ -1016,7 +1016,11 @@
   "29b61fcebe05dfc5": "2026-10-28T18:35:12.378203+00:00",
   "2f7c222102417f89": "2026-10-28T18:40:12.414765+00:00",
   "a472ec7147247167": "2026-10-28T18:40:12.414765+00:00",
-  "f5adf4495e296aa9": "2026-10-28T18:40:12.414765+00:00"
+  "f5adf4495e296aa9": "2026-10-28T18:40:12.414765+00:00",
+  "c626251d52f3f199": "2026-10-28T18:45:13.584830+00:00",
+  "36c53bae901d046c": "2026-10-28T18:45:13.584830+00:00",
+  "719796419bb09752": "2026-10-28T18:45:13.584830+00:00",
+  "d0cdb596774d7326": "2026-10-28T18:45:13.584830+00:00"
  },
  "recent": [
   {
@@ -9784,6 +9788,67 @@
    "tags": [
     "jobs"
    ]
+  },
+  {
+   "title": "Federal Reserve holds rates steady despite worsening US inflation",
+   "link": "https://www.ft.com/content/516063c6-3820-4803-836a-73e24ebee0da?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 6,
+   "ts": "2026-10-28T18:45:13.584830+00:00",
+   "title_ru": "Федеральная резервная система удерживает ставки на стабильном уровне, несмотря на ухудшение инфляции в США",
+   "lead": "Central bank holds fire as policymakers wait to see ‘more information’ on price growth",
+   "lead_ru": "Центральный банк держит огонь, поскольку политики ждут, чтобы увидеть «больше информации» о росте цен",
+   "tags": [
+    "Fed",
+    "inflation"
+   ]
+  },
+  {
+   "title": "Warsh Says FOMC Meeting Schedule Will Change as of Next Fall",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-28/warsh-says-fomc-schedule-will-change-as-of-next-fall",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-28T18:45:13.584830+00:00",
+   "title_ru": "Warsh говорит, что расписание заседаний FOMC изменится со следующей осени",
+   "lead": "Federal Reserve Chairman Kevin Warsh said the central bank will phase in an adjusted meeting schedule starting next year.",
+   "lead_ru": "Председатель Федеральной резервной системы Кевин Уорш сказал, что центральный банк начнет поэтапно корректировать график заседаний, начиная со следующего года.",
+   "tags": [
+    "Fed"
+   ]
+  },
+  {
+   "title": "Fed holds rates as expected and upgrades view on economy",
+   "link": "https://www.ft.com/content/b6900d10-6b9c-4d9b-984b-14284eef2f20",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 4,
+   "ts": "2026-10-28T18:45:13.584830+00:00",
+   "title_ru": "ФРС держит ставки, как и ожидалось, и обновляет взгляд на экономику",
+   "lead": "The decision to hold rates at the October meeting was less contested than we expected",
+   "lead_ru": "Решение о сохранении ставок на октябрьском заседании было менее оспариваемым, чем мы ожидали",
+   "tags": [
+    "Fed"
+   ]
+  },
+  {
+   "title": "Fed Will Raise Rates in December, Clarida Predicts",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-28/fed-will-raise-rates-in-december-clarida-predicts-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T18:45:13.584830+00:00",
+   "title_ru": "ФРС повысит ставки в декабре, прогнозирует Кларида",
+   "lead": "Former Federal Reserve Vice Chairman Richard Clarida expects the Fed to raise rates in December and then possibly again in March. He speaks on \"Bloomberg Surveillance: The Fed Decides.\" (Source: Bloomberg)",
+   "lead_ru": "Бывший вице-председатель Федеральной резервной системы Ричард Кларида ожидает, что ФРС повысит ставки в декабре, а затем, возможно, снова в марте. Он говорит о «Наблюдении Блумберга: ФРС решает.\" (Источник: Bloomberg)",
+   "tags": [
+    "Fed"
+   ]
   }
  ],
  "last_digest": "2026-10-28",
@@ -16448,8 +16513,7 @@
   "checked": "2026-10-28T17:55:12.391979+00:00",
   "sec_seen": [
    "0001193125-26-435894",
-   "0000095029-26-000084",
-   "0001649471-26-000006"
+   "0000095029-26-000084"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
