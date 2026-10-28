@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "65d389fd7812f311": "2026-10-25T20:13:25.695426+00:00",
   "0f4d626ae49921a6": "2026-10-25T20:33:25.662879+00:00",
   "00c6b363a8914e31": "2026-10-25T20:33:25.662879+00:00",
   "6625a4ff9bb3416c": "2026-10-25T20:33:25.662879+00:00",
@@ -1041,7 +1040,11 @@
   "456c53ee75a7b3af": "2026-10-28T19:55:12.941990+00:00",
   "0e62e7e2631396d0": "2026-10-28T20:00:12.399548+00:00",
   "8bd1366f251db72a": "2026-10-28T20:05:12.349602+00:00",
-  "e306bc453d4e41ba": "2026-10-28T20:10:12.613967+00:00"
+  "e306bc453d4e41ba": "2026-10-28T20:10:12.613967+00:00",
+  "dd353ac6399344aa": "2026-10-28T20:15:12.502293+00:00",
+  "22c216981dca6d0f": "2026-10-28T20:15:12.502293+00:00",
+  "ec1761895c8703a4": "2026-10-28T20:15:12.502293+00:00",
+  "92f7ee8a89ef02bf": "2026-10-28T20:15:12.502293+00:00"
  },
  "recent": [
   {
@@ -10072,6 +10075,63 @@
    "title_ru": "Healey представляет £ 100 для оплаты счетов за электроэнергию и банковского налога в первом бюджете",
    "lead": "The chancellor targets the cost of living amid global economic turmoil but opposition parties say he has not been bold enough.",
    "lead_ru": "Канцлер нацелен на стоимость жизни в условиях глобальных экономических потрясений, но оппозиционные партии говорят, что он не был достаточно смелым."
+  },
+  {
+   "title": "Treasury Secretary Bessent talks to CNBC after Fed holds interest rates steady",
+   "link": "https://www.cnbc.com/2026/10/28/scott-bessent-interview.html",
+   "sources": [
+    "CNBC"
+   ],
+   "score": 5,
+   "ts": "2026-10-28T20:15:12.502293+00:00",
+   "title_ru": "Министр финансов Бессент беседует с CNBC после того, как ФРС удерживает процентные ставки на стабильном уровне",
+   "lead": "Treasury Secretary Scott Bessent joined CNBC for an interview on Oct. 28, 2026.",
+   "lead_ru": "Министр финансов Скотт Бессент присоединился к CNBC для интервью 28 октября 2026 года.",
+   "tags": [
+    "Fed",
+    "rates",
+    "bonds"
+   ]
+  },
+  {
+   "title": "What we now know about the UK economy in four charts",
+   "link": "https://www.bbc.co.uk/news/articles/c9x28350ly07o?at_medium=RSS&at_campaign=rss",
+   "sources": [
+    "BBC"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T20:15:12.502293+00:00",
+   "title_ru": "Что мы теперь знаем об экономике Великобритании на четырех графиках",
+   "lead": "The Office for Budget Responsibility says higher energy prices will impact everything from prices and living standards to economic growth.",
+   "lead_ru": "Управление по бюджетной ответственности говорит, что более высокие цены на энергоносители повлияют на все, от цен и уровня жизни до экономического роста."
+  },
+  {
+   "title": "The cost of money itself is on the ballot as voters struggle with pricey car loans, mortgages and credit-card debt",
+   "link": "https://www.marketwatch.com/story/the-cost-of-money-itself-is-on-the-ballot-as-voters-struggle-with-pricey-car-loans-mortgages-and-credit-card-debt-c2cd83a0?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T20:15:12.502293+00:00",
+   "title_ru": "Стоимость самих денег находится в бюллетене для голосования, поскольку избиратели борются с дорогими автокредитами, ипотекой и задолженностью по кредитным картам",
+   "lead": "Interest rates aren’t expected to decline anytime soon, as the Federal Reserve holds steady on Wednesday.",
+   "lead_ru": "Ожидается, что процентные ставки не будут снижаться в ближайшее время, поскольку Федеральная резервная система держится стабильно в среду.",
+   "tags": [
+    "Fed",
+    "rates"
+   ]
+  },
+  {
+   "title": "Budget 2026: Healey hikes taxes on banks and landlords to fund £100 handouts to 20m households",
+   "link": "https://www.theguardian.com/uk-news/2026/oct/28/budget-2026-healey-hikes-taxes-on-banks-and-landlords-to-fund-100-handouts-to-20m-households",
+   "sources": [
+    "The Guardian"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T20:15:12.502293+00:00",
+   "title_ru": "Бюджет на 2026 год: Healey повышает налоги на банки и домовладельцев, чтобы финансировать £ 100 раздаточных материалов для 20 млн домохозяйств",
+   "lead": "Few surprises as chancellor uses low-key speech blaming ‘global economic storms’ for stoking energy prices and cost of living crisis Budget 2026: key points at a glance Briefing: key questions answered by Heather Stewart and…",
+   "lead_ru": "Немного сюрпризов, поскольку канцлер использует сдержанную речь, обвиняя «глобальные экономические штормы» в разжигании цен на энергоносители и кризисе стоимости жизни Бюджет 2026: ключевые моменты с первого взгляда Брифинг: ключевые вопросы, на которые ответили Хизер Стюарт и..."
   }
  ],
  "last_digest": "2026-10-28",
@@ -12952,6 +13012,22 @@
     "date": "2026-10-26",
     "disclosed": "2026-10-28",
     "link": "https://www.sec.gov/Archives/edgar/data/1629737/000009375126000599/0000093751-26-000599-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "fa65cf69c10eabbf",
+    "ticker": "CB",
+    "company": "Chubb Ltd",
+    "who": "Timothy Alan Boroughs",
+    "role": "Executive Vice President*",
+    "type": "sell",
+    "value": 4850704,
+    "shares": 13596,
+    "price": 356.77,
+    "plan": false,
+    "date": "2026-10-26",
+    "disclosed": "2026-10-28",
+    "link": "https://www.sec.gov/Archives/edgar/data/1577594/000119312526436146/0001193125-26-436146-index.htm"
    },
    {
     "src": "sec",
@@ -16680,22 +16756,6 @@
     "date": "2026-10-20",
     "disclosed": "2026-10-20",
     "link": "https://www.sec.gov/Archives/edgar/data/1782303/000117857926000019/0001178579-26-000019-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "bdf1c8e61aa673f0",
-    "ticker": "DX",
-    "company": "DYNEX CAPITAL INC",
-    "who": "Smriti Laxman Popenoe",
-    "role": "CEO",
-    "type": "buy",
-    "value": 156560,
-    "shares": 12000,
-    "price": 13.05,
-    "plan": false,
-    "date": "2026-10-20",
-    "disclosed": "2026-10-20",
-    "link": "https://www.sec.gov/Archives/edgar/data/1501438/000082667526000121/0000826675-26-000121-index.htm"
    }
   ],
   "docs": {
@@ -16735,19 +16795,19 @@
   },
   "checked": "2026-10-28T19:55:12.941990+00:00",
   "sec_seen": [
-   "0001493152-26-048971",
    "0000086312-26-000192",
    "0001193125-26-436134",
+   "0001193125-26-436146",
    "0001225208-26-008543",
    "0001439222-26-000124",
    "0001225208-26-008545",
    "0001079973-26-001407",
    "0001231845-26-000008",
    "0000093751-26-000599",
-   "0001493152-26-048958",
    "0001178913-26-004892",
    "0001193125-26-436131",
    "0001597870-26-000027",
+   "0001870974-26-000022",
    "0000035527-26-000231",
    "0002160533-26-000008",
    "0001819880-26-000006",
