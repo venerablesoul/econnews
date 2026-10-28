@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "ed7935fc9fb83f02": "2026-10-25T19:18:25.695026+00:00",
   "65d389fd7812f311": "2026-10-25T20:13:25.695426+00:00",
   "0f4d626ae49921a6": "2026-10-25T20:33:25.662879+00:00",
   "00c6b363a8914e31": "2026-10-25T20:33:25.662879+00:00",
@@ -1027,19 +1026,11 @@
   "8e306aac0ffeff2b": "2026-10-28T19:15:12.505691+00:00",
   "b079810c8f57eb0d": "2026-10-28T19:15:12.505691+00:00",
   "2a110b392ce70bf8": "2026-10-28T19:15:12.505691+00:00",
-  "26bfc3481175e8f2": "2026-10-28T19:15:12.505691+00:00"
+  "26bfc3481175e8f2": "2026-10-28T19:15:12.505691+00:00",
+  "78ce690271973d1a": "2026-10-28T19:20:12.486187+00:00",
+  "3c83d37cd99b8a29": "2026-10-28T19:20:12.486187+00:00"
  },
  "recent": [
-  {
-   "title": "Car Crash With Alaska Democrat Peltola Delays Campaign Rallies",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQb0FDaTZ4Z0NnS2ZraExPb1N2Qi1FRUhacjVWaFlKNklSdWJsbVViUnhxU2phNlFtMllJOEY2UE1oZkRCWTNjak5QNVE3aXBrZVpicDlLejFySzRyaHdOYkltaEx0RGhrX1liNmxuUXlEdkRJcDZGbGJQSC1vd3RjaVBWUnFYWGdVZk5oMUdoRVBrVndVWDdHaTd5WDVVTHR4ejlHTnRkb2tYY3M4QVhvUUwzNA?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-25T19:18:25.695026+00:00",
-   "title_ru": "Автокатастрофа с демократом из Аляски Пелтолой откладывает предвыборные митинги"
-  },
   {
    "title": "Musk says SpaceX raised $40 billion in debt for GPUs",
    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNUXFtN2R4aGlycUhma055anhqaWRzSVFqRHg3NDJHQXpJb1ZXZGtqZF8wSENhc2xNTjlBNmJyMWdzaWdQZmU2d0NvWDJ1VzI4RlVCUG1ERDFnWlJpUmlEdTJDZUt2ckM1bjBleS11a3ZQaDF1QjByVzNYV1Y4YV9CWEFOYWFVaHhhM1l3d29kQm55MjFUUTlZWm9mVnlnamJBUWg3NWVR?oc=5",
@@ -9927,6 +9918,20 @@
    "score": 5,
    "ts": "2026-10-28T19:15:12.505691+00:00",
    "title_ru": "Как в центре Испании произошла авария скоростного поезда"
+  },
+  {
+   "title": "Unusual Oil Trades Detected on Buzzy Offshore Crypto Exchange",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNRDlPaERvUENScDlFQjlHeEdIVFFzXzRKbTdOOVlaOGQ0MDJkemNyazBUZUpucWRzTWxXWi0xRjZwMl8xM0JJOGkzcUdnOHF0SncxMFNmbzQ0YTBveUktNEhhN04zVG9Na3FvTDRvQ3UtUllDR29vckVJSkZ4MmVTVXlNRmdFMUpkaGdvRFJ3ZmhDZjlNSEN1enp2alJ0d1RWU0R6NWtmQUdQcFdmUEhR?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T19:20:12.486187+00:00",
+   "title_ru": "На шумной оффшорной криптобирже обнаружены необычные сделки с нефтью",
+   "tags": [
+    "oil",
+    "crypto"
+   ]
   }
  ],
  "last_digest": "2026-10-28",
