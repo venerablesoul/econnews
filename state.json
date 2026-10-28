@@ -986,7 +986,10 @@
   "7d75ab0bf6fa2ac7": "2026-10-28T16:10:12.468714+00:00",
   "33fb4b6530cfc26c": "2026-10-28T16:20:12.461262+00:00",
   "70060212d563e7ad": "2026-10-28T16:25:12.406256+00:00",
-  "bd307a1148eef7da": "2026-10-28T16:25:12.406256+00:00"
+  "bd307a1148eef7da": "2026-10-28T16:25:12.406256+00:00",
+  "dd4751eb7922641d": "2026-10-28T16:31:01.541307+00:00",
+  "4dee073b11f61213": "2026-10-28T16:31:01.541307+00:00",
+  "2e557ad5be528a67": "2026-10-28T16:31:01.541307+00:00"
  },
  "recent": [
   {
@@ -9285,6 +9288,49 @@
    ],
    "score": 2,
    "ts": "2026-10-28T16:25:12.406256+00:00"
+  },
+  {
+   "title": "UK Budget Does Little to Ease Pressure on BOE for Rate Hikes",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-28/uk-budget-does-little-to-ease-pressure-on-boe-for-rate-hikes",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 8,
+   "ts": "2026-10-28T16:31:01.541307+00:00",
+   "title_ru": "Бюджет Великобритании мало что делает, чтобы ослабить давление на BOE для повышения ставок",
+   "lead": "Britain’s efforts to protect millions of its households from rising energy costs this winter will have barely any effect on the overall level of inflation, the country’s fiscal watchdog said.",
+   "lead_ru": "Усилия Великобритании по защите миллионов своих домохозяйств от роста цен на энергоносители этой зимой вряд ли окажут какое-либо влияние на общий уровень инфляции, заявил финансовый регулятор страны.",
+   "tags": [
+    "rates",
+    "inflation"
+   ]
+  },
+  {
+   "title": "US crude and distillate inventories fall, gasoline stocks rise, EIA says",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPa1hhSE9qcjBnV05nbUJKNmwxbmFFUmM4MG5QdEVCaUoteHJQNVFwaXJUemg3RU5yWVMtWnh4U19tLW14Znl6dWZIUDRZdm5rcENwaUZVOEUyQlR6azA1bGRMX00ydXJ5UU1fRE14SE1nQTVxdUt5bkNDTV8tMmE0Z0JYdEtQdnBUbXhOSU9JMFpzdnltMjRjNVBFX1E3YmpIbXpPdU5OM3BvU0tkMmN2LWk3NHkzZFI4eE51eGE3Q29LekU?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-28T16:31:01.541307+00:00",
+   "title_ru": "Запасы сырой нефти и дистиллятов в США падают, запасы бензина растут, говорит EIA",
+   "tags": [
+    "oil",
+    "markets"
+   ]
+  },
+  {
+   "title": "Stellantis shares leap on bullish cost cuts, cash flow comments",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQcy04bFRZODBHbmRnMHpGWWVIcW1ab0NoLWZVeXFkdWszd0dHYWwyQVI4dFJLVVdGTy1KbHZTa0lUYi1NNGtIVWg5eWlxcktWQ0lDMDR3VFd1al83ZFB5TlBnX1ZMdGlpVmhUNGJzNmVSQWUwbEFFcXluaWlQZ0NyUUtrXzlNMHJRZ2ZuNWJFeUpfS0VQTDd1T1hicWcxTzlSR0x5bDNjWmRoTGc?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T16:31:01.541307+00:00",
+   "title_ru": "Акции Stellantis подпрыгивают на бычьем сокращении расходов, комментарии о движении денежных средств",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-27",
@@ -15946,11 +15992,12 @@
   "checked": "2026-10-28T15:50:12.637813+00:00",
   "sec_seen": [
    "0002119238-26-000010",
+   "0002114046-26-000008",
+   "0002119220-26-000008",
    "0000939057-26-000280",
    "0002119291-26-000008",
-   "0001437749-26-033726",
-   "0002114067-26-000009",
    "0002114034-26-000009",
+   "0002114067-26-000009",
    "0002114019-26-000008"
   ],
   "errors": {
