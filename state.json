@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "bc192c2eb8e3db87": "2026-10-25T17:49:01.484794+00:00",
   "84eb73c203290f7e": "2026-10-25T17:58:25.695204+00:00",
   "6643d8abc7ff4a77": "2026-10-25T18:48:25.712051+00:00",
   "223efdfd6db72bda": "2026-10-25T18:48:25.712051+00:00",
@@ -997,7 +996,9 @@
   "e10f01a0c7420e77": "2026-10-28T17:40:12.444817+00:00",
   "c8e21da44f0da3e5": "2026-10-28T17:40:12.444817+00:00",
   "2580ce54b0681fb0": "2026-10-28T17:45:12.740834+00:00",
-  "88abd189cf62effd": "2026-10-28T17:45:12.740834+00:00"
+  "88abd189cf62effd": "2026-10-28T17:45:12.740834+00:00",
+  "d95c057bd93eabaf": "2026-10-28T17:50:12.406935+00:00",
+  "7b7b31b490293389": "2026-10-28T17:50:12.406935+00:00"
  },
  "recent": [
   {
@@ -9504,6 +9505,31 @@
    ],
    "score": 1,
    "ts": "2026-10-28T17:45:12.740834+00:00"
+  },
+  {
+   "title": "Thailand Holds Key Rate, Lifts Growth Outlook on AI Exports",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOM0plOWNoX3ZHblNxakRTcUt4Nm5UakVQY0hEc2YzTDJ3XzJ2Zjc3bXJ2REdndmQ5ZlZMNjZTNkVXN0Q4dHNFLW1jRGZkZVlpWlJ4UVZ3a3I5bkY5dDR4aktzZ29Hak5oQ2NBTXdoYUpyNUFabk9sSWctM0l4cGs3eWNLQm1QVkFObXZpdXNRR2lYeHhzbG1SWU9Bdm5VNXZsWHdiemR4bWdLQi0zbk9JRTBR?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-28T17:50:12.406935+00:00",
+   "title_ru": "Таиланд удерживает ключевую ставку, повышая прогноз роста экспорта ИИ",
+   "tags": [
+    "rates"
+   ]
+  },
+  {
+   "title": "British Business Laments Healey’s Lack of Help in Budget",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-28/british-business-laments-healey-s-lack-of-help-in-budget",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T17:50:12.406935+00:00",
+   "title_ru": "Британский бизнес жалуется на отсутствие помощи Хили в бюджете",
+   "lead": "Top UK business groups gave Chancellor of the Exchequer John Healey’s first budget a thumbs-down, calling out the lack of measures to support companies.",
+   "lead_ru": "Ведущие бизнес-группы Великобритании раскритиковали первый бюджет канцлера казначейства Джона Хили, призвав к отсутствию мер по поддержке компаний."
   }
  ],
  "last_digest": "2026-10-27",
@@ -9528,7 +9554,7 @@
   "ECB": 0,
   "Fed": 0,
   "IMF": 0,
-  "Kommersant": 0,
+  "Kommersant": 1,
   "RBC": 0,
   "US Labor Statistics (BLS)": 0
  },
@@ -16168,11 +16194,11 @@
   "checked": "2026-10-28T16:50:13.873625+00:00",
   "sec_seen": [
    "0001628280-26-067824",
+   "0000737468-26-000122",
    "0001437749-26-033742",
    "0001193125-26-435749",
    "0002085067-26-000010",
-   "0002114274-26-000008",
-   "0002026271-26-000004"
+   "0002114274-26-000008"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
