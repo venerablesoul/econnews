@@ -1013,7 +1013,10 @@
   "240e3ee658b1f8d9": "2026-10-28T18:25:12.708093+00:00",
   "a1b53e8a1a0e60c8": "2026-10-28T18:30:12.409637+00:00",
   "a715d188dbb781e0": "2026-10-28T18:35:12.378203+00:00",
-  "29b61fcebe05dfc5": "2026-10-28T18:35:12.378203+00:00"
+  "29b61fcebe05dfc5": "2026-10-28T18:35:12.378203+00:00",
+  "2f7c222102417f89": "2026-10-28T18:40:12.414765+00:00",
+  "a472ec7147247167": "2026-10-28T18:40:12.414765+00:00",
+  "f5adf4495e296aa9": "2026-10-28T18:40:12.414765+00:00"
  },
  "recent": [
   {
@@ -9756,6 +9759,31 @@
    "title_ru": "Три способа, которыми бюджет влияет на вас",
    "lead": "The BBC's Esyllt Carr explains how the chancellor's spending plans impact young people.",
    "lead_ru": "Эзилт Карр из Би-би-си объясняет, как планы канцлера по расходам влияют на молодежь."
+  },
+  {
+   "title": "Here Are the Key UK Budget Measures Announced by John Healey",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-28/here-are-the-key-uk-budget-measures-announced-by-john-healey",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T18:40:12.414765+00:00",
+   "title_ru": "Вот ключевые бюджетные меры Великобритании, объявленные Джоном Хили",
+   "lead": "John Healey’s budget punted the biggest decisions facing Andy Burnham’s new UK government into the future, focusing instead on modest measures designed to help ordinary Britons and businesses weather the cost-of-living crunch..",
+   "lead_ru": "Бюджет Джона Хили отразил самые большие решения, стоящие перед новым правительством Великобритании Энди Бернхэма в будущем, сосредоточившись вместо этого на скромных мерах, призванных помочь обычным британцам и предприятиям пережить кризис стоимости жизни."
+  },
+  {
+   "title": "Apple Unveils Touch-Screen MacBook Pro, Reversing Longheld Jobs Stance",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPM1p2R3MwTFlrSjJFdWd3QlNRU3k4djhCeHc2bi1MblhMRHQwbFZidWJWS0lPWWhrblVKbDE0WFpxVDhOQ1JBVTZOVHZ2dGVPaGRFVFlDZHFJRFZqSDFLOHNSVkhKWlc1NWp1dy1ZZmFaWW1PdWNCWkZaU1h2ZnBySklWYl85NTk3TjdzTkpWdmxyUTJvN2xSTldJWHlaeW9CcjBHVTFSUUVGdDhPcWgtVVZMVDBlTTVyTTV2cg?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T18:40:12.414765+00:00",
+   "title_ru": "Apple представляет MacBook Pro с сенсорным экраном, полностью меняющий позицию давних заказчиков",
+   "tags": [
+    "jobs"
+   ]
   }
  ],
  "last_digest": "2026-10-28",
@@ -12460,6 +12488,22 @@
     "date": "2026-10-26",
     "disclosed": "2026-10-28",
     "link": "https://www.sec.gov/Archives/edgar/data/1554880/000000175026000106/0000001750-26-000106-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "2665724ec60022e0",
+    "ticker": "XBIT",
+    "company": "XBiotech Inc.",
+    "who": "John Simard",
+    "role": "Director, 10% owner",
+    "type": "buy",
+    "value": 711251,
+    "shares": 368524,
+    "price": 1.93,
+    "plan": false,
+    "date": "2026-10-26",
+    "disclosed": "2026-10-28",
+    "link": "https://www.sec.gov/Archives/edgar/data/1639078/000119312526435894/0001193125-26-435894-index.htm"
    },
    {
     "src": "sec",
@@ -16364,22 +16408,6 @@
     "date": "2026-10-19",
     "disclosed": "2026-10-20",
     "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000362/0001510281-26-000362-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "99846fd0c384f125",
-    "ticker": "JOF",
-    "company": "JAPAN SMALLER CAPITALIZATION FUND INC",
-    "who": "Saba Capital Management, L.p.",
-    "role": "10% owner",
-    "type": "buy",
-    "value": 551891,
-    "shares": 46222,
-    "price": 11.94,
-    "plan": false,
-    "date": "2026-10-19",
-    "disclosed": "2026-10-20",
-    "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000363/0001510281-26-000363-index.htm"
    }
   ],
   "docs": {
@@ -16419,9 +16447,9 @@
   },
   "checked": "2026-10-28T17:55:12.391979+00:00",
   "sec_seen": [
-   "0001649471-26-000006",
-   "0000737468-26-000122",
-   "0001338943-26-000007"
+   "0001193125-26-435894",
+   "0000095029-26-000084",
+   "0001649471-26-000006"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
