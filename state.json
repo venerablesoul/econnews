@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "240657c6c57b5d4f": "2026-10-25T10:21:42.593644+00:00",
   "27230cc576cd9ef9": "2026-10-25T10:36:42.611077+00:00",
   "9677dc593c03f769": "2026-10-25T10:51:42.582369+00:00",
   "786a0f45db1a6c9b": "2026-10-25T10:51:42.582369+00:00",
@@ -900,7 +899,11 @@
   "4eca1e674f9c5c64": "2026-10-28T10:16:22.813997+00:00",
   "11a3d0760d0fe7ec": "2026-10-28T10:16:22.813997+00:00",
   "9098cafbba3de519": "2026-10-28T10:21:22.798345+00:00",
-  "23a6ae1b888948b3": "2026-10-28T10:21:22.798345+00:00"
+  "23a6ae1b888948b3": "2026-10-28T10:21:22.798345+00:00",
+  "520b1dacbff12193": "2026-10-28T10:26:22.836006+00:00",
+  "404e71ab6bdcbf43": "2026-10-28T10:26:22.836006+00:00",
+  "6b2644f70f503d74": "2026-10-28T10:26:22.836006+00:00",
+  "c9cc426856e0270b": "2026-10-28T10:26:22.836006+00:00"
  },
  "recent": [
   {
@@ -8318,6 +8321,48 @@
    "score": 3,
    "ts": "2026-10-28T10:21:22.798345+00:00",
    "title_ru": "Невада оказалась между ростом рабочих мест в сфере ИИ и потерей рабочих мест"
+  },
+  {
+   "title": "Four reasons to start worrying about inflation — including the end of tariff refunds",
+   "link": "https://www.marketwatch.com/story/four-reasons-to-start-worrying-about-inflation-including-the-end-of-tariff-refunds-978a5cfd?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 6,
+   "ts": "2026-10-28T10:26:22.836006+00:00",
+   "title_ru": "Четыре причины начать беспокоиться по поводу инфляции, включая прекращение возврата тарифов",
+   "lead": "Dennis DeBusschere, of 22V Research, said companies that previously used tariff refunds to ease cost pressures will increasingly hand down those higher costs to consumers.",
+   "lead_ru": "Деннис ДеБушер из 22V Research заявил, что компании, которые ранее использовали возмещение тарифов для снижения ценового давления, будут все чаще перекладывать эти более высокие затраты на потребителей.",
+   "tags": [
+    "inflation",
+    "tariffs"
+   ]
+  },
+  {
+   "title": "Microsoft and Alphabet Earnings Put Focus on AI Cash Flow Drain",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNaGpuODBWVHpLV2lPSklYTm1ld1BhMHB0NHBiNFZOUGtvNGFtZ0pBalJwdW4ycEdKbXhudmV5NVhVa21mUHl0bzNCZnI2TG9saTZIdVg2V1o4b2hFVGtHd1h6RGYyNFNyWmpOR0hKYXc3cnhscm9aXzRIZ09INUdmbjJyd2FXYkV1RmdJcVZpX0JHY3pTand0V1NaSm1Wa0hPUVZJMHVHa0t2TG4zZURhRmFSRDU?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T10:26:22.836006+00:00",
+   "title_ru": "Прибыль Microsoft и Alphabet сосредоточена на утечке денежных потоков от ИИ"
+  },
+  {
+   "title": "The ECB needs a smooth transmission and a smooth transition",
+   "link": "https://www.ft.com/content/66bc5487-04aa-4699-a010-c446c536cf48?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T10:26:22.836006+00:00",
+   "title_ru": "ЕЦБ нужна плавная передача и плавный переход",
+   "lead": "Central bank at a critical juncture as it prepares leadership changes at time of strains in bond markets",
+   "lead_ru": "Центральный банк на критическом этапе, готовя смену руководства в период напряженности на рынках облигаций",
+   "tags": [
+    "ECB",
+    "bonds"
+   ]
   }
  ],
  "last_digest": "2026-10-27",
@@ -14733,9 +14778,9 @@
   "checked": "2026-10-28T09:40:51.419708+00:00",
   "sec_seen": [
    "0001075736-26-000120",
-   "0002082930-26-000020",
-   "0000105132-26-000105",
    "0001040470-26-000312",
+   "0000105132-26-000105",
+   "0002082930-26-000020",
    "0000105132-26-000104",
    "0001628280-26-067694",
    "0001040470-26-000316",
