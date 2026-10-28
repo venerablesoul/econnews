@@ -958,7 +958,8 @@
   "5c6b193a85617923": "2026-10-28T14:21:22.866058+00:00",
   "20906bf4ddf32788": "2026-10-28T14:21:22.866058+00:00",
   "5a798fdf4f637f98": "2026-10-28T14:21:22.866058+00:00",
-  "a6dfb69aed1c5529": "2026-10-28T14:26:22.832057+00:00"
+  "a6dfb69aed1c5529": "2026-10-28T14:26:22.832057+00:00",
+  "30320ae0f50668b1": "2026-10-28T14:31:22.836215+00:00"
  },
  "recent": [
   {
@@ -8976,6 +8977,16 @@
    "title_ru": "Французский Лескюр заявил, что готов использовать любой инструмент для обеспечения бюджета",
    "lead": "French Finance Minister Roland Lescure said the government is determined to get a deficit cutting budget enacted and will use any tools available, including untested executive orders.",
    "lead_ru": "Министр финансов Франции Ролан Лескюр заявил, что правительство намерено добиться принятия бюджета по сокращению дефицита и будет использовать любые доступные инструменты, включая непроверенные исполнительные указы."
+  },
+  {
+   "title": "UK Budget Lacked 'Big Picture Themes,' RBC Capital Says (Video)",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-28/uk-budget-lacked-big-picture-themes-rbc-capital-says-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T14:31:22.836215+00:00",
+   "title_ru": "В бюджете Великобритании не хватало «общих тем», говорит RBC Capital (видео)"
   }
  ],
  "last_digest": "2026-10-27",
@@ -11358,6 +11369,22 @@
    }
   ],
   "insiders": [
+   {
+    "src": "sec",
+    "id": "aab4ff84a8532881",
+    "ticker": "RDWR",
+    "company": "RADWARE LTD",
+    "who": "David Meleh Aviv",
+    "role": "CTO",
+    "type": "sell",
+    "value": 1007750,
+    "shares": 30000,
+    "price": 33.59,
+    "plan": false,
+    "date": "2026-10-27",
+    "disclosed": "2026-10-28",
+    "link": "https://www.sec.gov/Archives/edgar/data/2077793/000197640826000911/0001976408-26-000911-index.htm"
+   },
    {
     "src": "sec",
     "id": "3d2d067919228521",
@@ -15341,22 +15368,6 @@
     "date": "2026-10-19",
     "disclosed": "2026-10-20",
     "link": "https://www.sec.gov/Archives/edgar/data/1106578/000110657826000167/0001106578-26-000167-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "87ebd691ea433050",
-    "ticker": "LEO",
-    "company": "BNY MELLON STRATEGIC MUNICIPALS, INC.",
-    "who": "Saba Capital Management, L.p.",
-    "role": "10% owner",
-    "type": "buy",
-    "value": 1911638,
-    "shares": 338104,
-    "price": 5.65,
-    "plan": false,
-    "date": "2026-10-19",
-    "disclosed": "2026-10-20",
-    "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000365/0001510281-26-000365-index.htm"
    }
   ],
   "docs": {
@@ -15392,8 +15403,9 @@
   "checked": "2026-10-28T13:46:22.847622+00:00",
   "sec_seen": [
    "0001767612-26-000006",
-   "0001104659-26-119430",
-   "0001209992-26-000052"
+   "0001209992-26-000052",
+   "0001976408-26-000911",
+   "0001104659-26-119430"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
