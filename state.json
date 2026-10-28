@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "d2049ca86f0f5498": "2026-10-25T17:03:25.707043+00:00",
-  "a4c2507428d4a0f9": "2026-10-25T17:08:25.737171+00:00",
-  "0dcd5ae070c87d3a": "2026-10-25T17:08:25.737171+00:00",
-  "d342d6b9347c20b5": "2026-10-25T17:08:25.737171+00:00",
   "183b9f7c60dcc637": "2026-10-25T17:13:25.654395+00:00",
   "e32a15d29a559eac": "2026-10-25T17:33:25.677170+00:00",
   "bc192c2eb8e3db87": "2026-10-25T17:49:01.484794+00:00",
@@ -991,24 +987,12 @@
   "8ca74c7e627b6a9c": "2026-10-28T16:55:12.432780+00:00",
   "bd570558bd354da6": "2026-10-28T17:00:12.419384+00:00",
   "2dca5f0fe196d592": "2026-10-28T17:00:12.419384+00:00",
-  "beecb5f5f5b04c45": "2026-10-28T17:00:12.419384+00:00"
+  "beecb5f5f5b04c45": "2026-10-28T17:00:12.419384+00:00",
+  "e57a0cbb35a07828": "2026-10-28T17:10:12.380740+00:00",
+  "602bb98980f22270": "2026-10-28T17:10:12.380740+00:00",
+  "48cd81b7c367be69": "2026-10-28T17:10:12.380740+00:00"
  },
  "recent": [
-  {
-   "title": "We have a $300,000 mortgage with a 2.75% interest rate. I want to pay it off. My husband says I’m crazy. Who’s right?",
-   "link": "https://www.marketwatch.com/story/we-have-a-300-000-mortgage-with-a-2-75-interest-rate-i-want-to-pay-it-off-my-husband-says-im-crazy-whos-right-4ed15226?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 4,
-   "ts": "2026-10-25T17:03:25.707043+00:00",
-   "title_ru": "У нас есть ипотека на $ 300 000 с процентной ставкой 2,75%. Я хочу откупиться. Муж говорит, что я сумасшедшая. Кто прав?",
-   "lead": "“I don’t want to enter retirement owing six figures when we have the cash to clear it.”",
-   "lead_ru": "«Я не хочу выходить на пенсию из-за шестизначных чисел, когда у нас есть деньги, чтобы очистить его».",
-   "tags": [
-    "rates"
-   ]
-  },
   {
    "title": "A 50% Yield? The AI Trade Is Getting Wild After CoreWeave",
    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOeXh0eDlOMEdYR0VYMVlwOC1vUXFGMlJLUlhSaG5iRFlpZjNUQmtISUxWdk04SlBxanh4Sjk2TEhFb3dwRUY5S09VMDRENzlpTGcyX1hRZzdKQ0FwX1dzREhTMHppeXBQYVJZVlM5X2JaSnhZNUlBdTZpSWtJc3dfMERxV0daREJWbXdDb2Jxc2hQNS1YcUtZSHJsY1BoclY0WXg4dWNqQWdpUU9WRGc?oc=5",
@@ -9395,6 +9379,16 @@
    "tags": [
     "sanctions"
    ]
+  },
+  {
+   "title": "New UK finance minister unveils 'steady as you go' budget",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOWUFYSUVzczU4c3VBa1VPWWRjcThyVnY2bUFyWGs2THJESzZJNl9kcjlSaVlUeUFpemFGNnZ1YkMwSkpESXR1WG9QV3RyTXJjb3c3d0oxYVQwRkNPNWE2MXBhenJvbXdBTkhqSUtxam9SaVhBN2dxT09Ua3c4VGtSeUJMRGc0Y3hrWUwyUHd4SUQySWlVc0o1T3c3OFRpQkppbkE?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T17:10:12.380740+00:00",
+   "title_ru": "Новый министр финансов Великобритании обнародовал «стабильный бюджет на ходу»"
   }
  ],
  "last_digest": "2026-10-27",
@@ -9417,7 +9411,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 1,
+  "Fed": 0,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
@@ -16064,10 +16058,10 @@
    "0002119220-26-000008",
    "0002114041-26-000008",
    "0002119291-26-000008",
+   "0001437749-26-033742",
    "0001760581-26-000075",
-   "0002114034-26-000009",
-   "0002026271-26-000004",
-   "0002114019-26-000008"
+   "0002085067-26-000010",
+   "0002026271-26-000004"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
