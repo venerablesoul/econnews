@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "177ee20d981065d6": "2026-10-25T04:41:11.514310+00:00",
   "c619ef7a9d8c81dc": "2026-10-25T05:31:11.525439+00:00",
   "3ddee3342475be14": "2026-10-25T05:36:11.482262+00:00",
   "d6c419ba722e9f08": "2026-10-25T05:36:11.482262+00:00",
@@ -839,18 +838,6 @@
   "cbf917756609bcfe": "2026-10-28T04:35:51.194073+00:00"
  },
  "recent": [
-  {
-   "title": "Budget to include £1bn for social and affordable housing",
-   "link": "https://www.bbc.co.uk/news/articles/cqm24j9y9zn7o?at_medium=RSS&at_campaign=rss",
-   "sources": [
-    "BBC"
-   ],
-   "score": 4,
-   "ts": "2026-10-25T04:41:11.514310+00:00",
-   "title_ru": "Бюджет, включающий £ 1 млрд на социальное и доступное жилье",
-   "lead": "The move will take funding for the 10-year programme to more than £40bn.",
-   "lead_ru": "Этот шаг приведет к увеличению финансирования 10-летней программы до более чем £ 40 млрд."
-  },
   {
    "title": "Portuguese police clear Lisbon housing protest camp, make arrests",
    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNUl8tRDdjZWRsQkljV3FheHEtN2dyWUtJb2dhY1JmNmhGSU5ZaVZRYnF6SDhIaDN4eVZVd19JSFRlWW9MSm1jQ1NYTEtWOU5Eb2RrVE9Ua2lZLUJCSC1Ya1BEYVFkX0tNVkh1d2RFZzZfX19ZQTEyQ0pYSEs5eEJfcXF6ODk1Y293SUMwWW5TZVhRNWZTaTlxQXdHcGNuX2ZXbjU3ckNfMXNkTDNfWTQ0Zm5INA?oc=5",
@@ -7562,7 +7549,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 1,
+  "Fed": 0,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
