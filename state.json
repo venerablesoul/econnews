@@ -1031,7 +1031,10 @@
   "3c83d37cd99b8a29": "2026-10-28T19:20:12.486187+00:00",
   "c095dc87cbdeb458": "2026-10-28T19:25:12.704876+00:00",
   "cf376863b17c88d6": "2026-10-28T19:25:12.704876+00:00",
-  "ad172fca299980c9": "2026-10-28T19:40:12.379326+00:00"
+  "ad172fca299980c9": "2026-10-28T19:40:12.379326+00:00",
+  "ed4d39037170fd1b": "2026-10-28T19:45:12.385146+00:00",
+  "e54d11c1266556b1": "2026-10-28T19:45:12.385146+00:00",
+  "a5075d247a28d049": "2026-10-28T19:45:12.385146+00:00"
  },
  "recent": [
   {
@@ -9970,6 +9973,38 @@
    "score": 4,
    "ts": "2026-10-28T19:40:12.379326+00:00",
    "title_ru": "Италия утвердила бюджет на 2027 год с повышением налогов для банков и энергетических компаний"
+  },
+  {
+   "title": "Fed's Warsh says US economy not running too hot",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQZkEyTjdocVJTajR1TGpGWW5sbVdtZEpKZ2QzLVRCWWxQZkpyQmM5c0tBMEFkd1dtTXgyb1JJWGhSdFFfS2tWNWJLYmpvemw0ODBhYi1CSUVZLUZIc1ExU3ZLQXNkMmlXSHNTVnk1bUlKMEdCeENkSDZwRE9UVDJ1WHJNUzFlLUFWVzNJbXQ0VUt6ZC1hWkE?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-28T19:45:12.385146+00:00",
+   "title_ru": "Глава ФРС Уорш говорит, что экономика США не слишком горячая",
+   "tags": [
+    "Fed"
+   ]
+  },
+  {
+   "title": "Key measures in UK finance minister Healey's first budget",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQNG9NUFZLU0x5WHpYTXZpcTFnWnRwYm1QSHJRcWRxaS1lNXZRLWloUDNEenBnVUhwU3NQTnZ5OW14VndqbjR1YjM1T2VEUDBxeEJXWHFjS2JUM0R6YnZsNlltZTNWNUpzeXhEME1vWTY3RGNJS0cxeWV3aXBIZ2k2cm13WDhEYUxQR1pnS1gyVXZ6OXI1dnkzSU5rNE00Y1FOdml2SjhLNnJrWC1neHc?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T19:45:12.385146+00:00",
+   "title_ru": "Ключевые меры в первом бюджете министра финансов Великобритании Хили"
+  },
+  {
+   "title": "Budget briefing: the key questions answered by Heather Stewart and Pippa Crerar",
+   "link": "https://www.theguardian.com/money/2026/oct/28/budget-briefing-the-key-questions-answered-by-heather-stewart-and-pippa-crerar",
+   "sources": [
+    "The Guardian"
+   ],
+   "score": 2,
+   "ts": "2026-10-28T19:45:12.385146+00:00"
   }
  ],
  "last_digest": "2026-10-28",
@@ -16633,6 +16668,7 @@
   },
   "checked": "2026-10-28T18:55:12.451443+00:00",
   "sec_seen": [
+   "0001437749-26-033773",
    "0001193125-26-436043"
   ],
   "errors": {
