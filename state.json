@@ -988,7 +988,10 @@
   "d9a2dddf37932c47": "2026-10-28T16:45:12.400336+00:00",
   "7c96333f095ece89": "2026-10-28T16:45:12.400336+00:00",
   "dfd1c063a11c4215": "2026-10-28T16:50:13.873625+00:00",
-  "8ca74c7e627b6a9c": "2026-10-28T16:55:12.432780+00:00"
+  "8ca74c7e627b6a9c": "2026-10-28T16:55:12.432780+00:00",
+  "bd570558bd354da6": "2026-10-28T17:00:12.419384+00:00",
+  "2dca5f0fe196d592": "2026-10-28T17:00:12.419384+00:00",
+  "beecb5f5f5b04c45": "2026-10-28T17:00:12.419384+00:00"
  },
  "recent": [
   {
@@ -9366,6 +9369,32 @@
    "tags": [
     "jobs"
    ]
+  },
+  {
+   "title": "Why AI’s Billions in Spending Are Hard to Spot in GDP Data",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPNl9WM0Q3SC1NRWJUei1ENmRyS3I2bXNSS2xtNVJVSmpZOHhKUFRRZV9ad3ZpS0RMc01mQ3VYUzcwWFhkd25Tbk93Wk9hTC1LSU1tVXBYZUdNS2NNaFNtaHVRcUxxNjU1WG1ZWkI4YmlzVEtsSTg3QkZHeXVvZEo1OWlTWm1fUWdhaXdEMDFyaEVOMmZLVmgwdWNzQ0RpY1pWRGt3ZlQ3OV9mcmxSZmx0SXdGeUk3NFRoVFRtTnlIQQ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-28T17:00:12.419384+00:00",
+   "title_ru": "Почему миллиарды ИИ в расходах трудно обнаружить в данных о ВВП",
+   "tags": [
+    "GDP"
+   ]
+  },
+  {
+   "title": "US sanctions North Korean network accused of defrauding businesses",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNWUtIYXNSS25velBzRjB0ZGpaYWtLdDhVb3VVeUprZUkxeEVBWUlMdC0wc2gyUU5UR3FWOHozOWdxRThDNlVHRC1aVFBzVGJsZThtLUZWMmEza3QtU0Y4c0VxQlptYjlVbEtuV2NEQ1dzeHVNMjR0RUlCX2Rla0NhbkFFdmlxOFVQbTBfZUpEWXRjQno2Q3VEblB5Q2RDcHM?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-28T17:00:12.419384+00:00",
+   "title_ru": "США ввели санкции против северокорейской сети, обвиняемой в обмане бизнеса",
+   "tags": [
+    "sanctions"
+   ]
   }
  ],
  "last_digest": "2026-10-27",
@@ -9388,7 +9417,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 0,
+  "Fed": 1,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
@@ -10210,7 +10239,9 @@
   "GBP|2026-10-16T02:00:00+00:00|BOE Gov Bailey Speaks",
   "USD|2026-10-16T03:30:00+00:00|Fed Chairman Warsh Speaks",
   "GBP|2026-10-21T06:00:00+00:00|CPI y/y",
-  "GBP|2026-10-28T12:30:00+00:00|Annual Budget Release"
+  "GBP|2026-10-28T12:30:00+00:00|Annual Budget Release",
+  "USD|2026-10-28T18:00:00+00:00|Federal Funds Rate",
+  "USD|2026-10-28T18:00:00+00:00|FOMC Statement"
  ],
  "last_morning": "2026-10-28",
  "all_down_alerted": false,
@@ -16034,8 +16065,8 @@
    "0002114041-26-000008",
    "0002119291-26-000008",
    "0001760581-26-000075",
-   "0002114067-26-000009",
    "0002114034-26-000009",
+   "0002026271-26-000004",
    "0002114019-26-000008"
   ],
   "errors": {
