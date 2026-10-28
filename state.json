@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "120391daf1be8713": "2026-10-25T00:00:47.273439+00:00",
   "3cb677e09c26dcaf": "2026-10-25T00:05:47.254703+00:00",
   "3883d6af0bb98c73": "2026-10-25T00:25:47.250701+00:00",
   "e3681b2dd41e7d61": "2026-10-25T00:30:47.274692+00:00",
@@ -798,19 +797,10 @@
   "a8275e02227b60ee": "2026-10-27T23:40:19.177666+00:00",
   "58c290c0ef89142f": "2026-10-27T23:40:19.177666+00:00",
   "9c605bcbca1c1186": "2026-10-27T23:55:19.126030+00:00",
-  "d990324bff43d42b": "2026-10-27T23:55:19.126030+00:00"
+  "d990324bff43d42b": "2026-10-27T23:55:19.126030+00:00",
+  "b123243586b4f305": "2026-10-28T00:05:19.234371+00:00"
  },
  "recent": [
-  {
-   "title": "Braskem Discloses Details of Debt Rework Proposals to Investors",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOQTFjdjFaRjVwT2x4OTRCZi1PZ3RxaDRrUXl3MzBjSFFid3pqOXlIdGdBVmxzeGpBRjByaVA3VnlHbTI5a3ZQQ0t0aFJtZGhXVUlJNThkb21obFJiOTVvMW5ESklRTWZuV2hfV3FDLV9JOXhnVlh0THVoSEJBY05PTk1uN182OTM1cmZYdzhENEhfWld1eVd0U0hMNk1Nc3VBZEVhLTNhaHhKV2VGNmdTWFZRUlM?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-25T00:00:47.273439+00:00",
-   "title_ru": "Braskem раскрывает инвесторам подробности предложений по реструктуризации долга"
-  },
   {
    "title": "FT назвала сделку по слиянию Tesla и SpaceX ставкой «ва-банк» на ИИ",
    "link": "https://www.rbc.ru/business/25/10/2026/6add408c3137bb8105aac61e",
@@ -7134,6 +7124,19 @@
    "score": 5,
    "ts": "2026-10-27T23:40:19.177666+00:00",
    "title_ru": "Почему Индонезия находится на грани катастрофы"
+  },
+  {
+   "title": "Machado’s Return Exposes Fault Line in Venezuela’s Oil Sector",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQYWRYeUItWnZlVEcyS2NsaWE0cTNLeXJTZ3dzcTdDQjk1c3Nsd0hyVHFtTnJhcHV2NXdiV3VSVmlpREUtYXFncXBBei1MWThtNnZXUnRGM1BqakZpZktqQnhGdWcyeVlWTGFCd1B1QXE1eGxlcVRVX1VRX1Qya0Jic0ZOTFRFUkIxNHgzX0JBNzhid1NYX2ZHSkxGS1FCVW10YTBXeXZGa3VWN0NDTFFuX0p3?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T00:05:19.234371+00:00",
+   "title_ru": "Возвращение Мачадо выявило линию разлома в нефтяном секторе Венесуэлы",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-27",
@@ -10026,6 +10029,22 @@
     "date": "2026-10-26",
     "disclosed": "2026-10-27",
     "link": "https://www.sec.gov/Archives/edgar/data/2040262/000121390026113031/0001213900-26-113031-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "2682956906260772",
+    "ticker": "CRWD",
+    "company": "CrowdStrike Holdings, Inc.",
+    "who": "George Kurtz",
+    "role": "CEO",
+    "type": "sell",
+    "value": 5111835,
+    "shares": 20000,
+    "price": 255.59,
+    "plan": true,
+    "date": "2026-10-26",
+    "disclosed": "2026-10-27",
+    "link": "https://www.sec.gov/Archives/edgar/data/1778564/000177856426000193/0001778564-26-000193-index.htm"
    },
    {
     "src": "sec",
@@ -13498,22 +13517,6 @@
     "date": "2026-10-16",
     "disclosed": "2026-10-20",
     "link": "https://www.sec.gov/Archives/edgar/data/1347712/000121465926013085/0001214659-26-013085-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "8e00b7033c30e2f3",
-    "ticker": "NZF",
-    "company": "Nuveen Municipal Credit Income Fund",
-    "who": "Robert Young L",
-    "role": "",
-    "type": "sell",
-    "value": 17631183,
-    "shares": 16131,
-    "price": 1093.0,
-    "plan": false,
-    "date": "2026-10-16",
-    "disclosed": "2026-10-20",
-    "link": "https://www.sec.gov/Archives/edgar/data/1379422/000122520826008478/0001225208-26-008478-index.htm"
    }
   ],
   "docs": {
@@ -13561,6 +13564,8 @@
    "0001213900-26-113031",
    "0001213900-26-113020",
    "0001193125-26-434610",
+   "0001040470-26-000312",
+   "0001778564-26-000193",
    "0001213900-26-113021",
    "0001140361-26-040923",
    "0001193125-26-434631",
@@ -13570,7 +13575,6 @@
    "0001493152-26-048762",
    "0001765836-26-000020",
    "0001253170-26-000014",
-   "0001626259-26-000016",
    "0001626260-26-000020",
    "0001493152-26-048768",
    "0001193125-26-434605",
