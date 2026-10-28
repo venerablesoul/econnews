@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "f903f03c84bfd685": "2026-10-25T06:46:11.635084+00:00",
   "da14b003ae0bda17": "2026-10-25T06:56:11.479301+00:00",
   "a82b46945df8c8cf": "2026-10-25T07:11:11.504017+00:00",
   "e9d1515acbda2578": "2026-10-25T07:16:11.517599+00:00",
@@ -856,7 +855,9 @@
   "2a9af4b53754a20b": "2026-10-28T06:30:51.228478+00:00",
   "2ef5047aac0891d1": "2026-10-28T06:30:51.228478+00:00",
   "985fb0b0a1bf7a57": "2026-10-28T06:35:51.160088+00:00",
-  "dd4e79c2087ac972": "2026-10-28T06:45:51.185759+00:00"
+  "dd4e79c2087ac972": "2026-10-28T06:45:51.185759+00:00",
+  "85664c9689da37dd": "2026-10-28T06:50:51.159351+00:00",
+  "a676a94d45e461f4": "2026-10-28T06:50:51.159351+00:00"
  },
  "recent": [
   {
@@ -7767,6 +7768,40 @@
    "tags": [
     "China"
    ]
+  },
+  {
+   "title": "JPMorgan Private Bank’s Tang Sees More Downside Risk for Gold",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-28/jpmorgan-private-bank-s-tang-sees-more-downside-risk-for-gold",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-28T06:50:51.159351+00:00",
+   "title_ru": "Тан из JPMorgan Private Bank видит больший риск снижения цен на золото",
+   "lead": "Gold still faces downside risk after the latest sell-off as liquidity remains thin and interest rates have room to rise, Yuxuan Tang, head of rates and foreign-exchange strategy for Asia at JPMorgan Private Bank, said in an…",
+   "lead_ru": "Золото по-прежнему сталкивается с понижательным риском после последней распродажи, поскольку ликвидность остается низкой, а процентные ставки могут расти, сказал Юйсюань Тан, глава отдела ставок и валютной стратегии для Азии в JPMorgan Private Bank, в...",
+   "tags": [
+    "rates",
+    "gold",
+    "markets"
+   ]
+  },
+  {
+   "title": "China Refiners Tap African, Brazilian Oil as Freight Rates Fall",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-28/china-refiners-tap-african-brazilian-oil-as-freight-rates-fall",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-28T06:50:51.159351+00:00",
+   "title_ru": "Китайские нефтеперерабатывающие заводы производят африканскую и бразильскую нефть в связи с падением фрахтовых ставок",
+   "lead": "Chinese refiners are buying crude from West Africa and Brazil after a drop in long-haul freight rates cut costs, giving them more supply options as competition for Russian barrels intensifies.",
+   "lead_ru": "Китайские нефтеперерабатывающие заводы покупают нефть из Западной Африки и Бразилии после падения ставок на дальние перевозки, что сокращает расходы, предоставляя им больше вариантов поставок по мере усиления конкуренции за российские баррели.",
+   "tags": [
+    "oil",
+    "China",
+    "Russia"
+   ]
   }
  ],
  "last_digest": "2026-10-27",
@@ -14183,13 +14218,13 @@
   "sec_seen": [
    "0001040470-26-000312",
    "0001213900-26-113025",
-   "0001040470-26-000314",
    "0001193125-26-434840",
+   "0001040470-26-000314",
    "0001213900-26-113031",
    "0001040470-26-000311",
    "0001877346-26-000024",
-   "0001213900-26-113020",
    "0001193125-26-434846",
+   "0001213900-26-113020",
    "0001628280-26-067695",
    "0001075736-26-000120",
    "0001654009-26-000014",
@@ -14197,9 +14232,9 @@
    "0001807561-26-000022",
    "0002082930-26-000020",
    "0001213900-26-113017",
-   "0000105132-26-000103",
-   "0001040470-26-000318",
    "0001253170-26-000014",
+   "0001040470-26-000318",
+   "0000105132-26-000103",
    "0000105132-26-000100",
    "0001628280-26-067694",
    "0001075736-26-000119",
