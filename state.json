@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e06681b03dcc19b8": "2026-10-25T06:06:11.440118+00:00",
   "11e68e6f80ec2b6b": "2026-10-25T06:11:11.486947+00:00",
   "9a6b99cc8c92ab2a": "2026-10-25T06:26:11.508784+00:00",
   "f903f03c84bfd685": "2026-10-25T06:46:11.635084+00:00",
@@ -849,21 +848,11 @@
   "8d28003d5be79a07": "2026-10-28T05:50:51.234631+00:00",
   "0be2f00c34a05617": "2026-10-28T05:55:51.155001+00:00",
   "63656e1dd91b440c": "2026-10-28T06:00:51.208669+00:00",
-  "389e2e1b46f5640c": "2026-10-28T06:00:51.208669+00:00"
+  "389e2e1b46f5640c": "2026-10-28T06:00:51.208669+00:00",
+  "ffa258fa483d835c": "2026-10-28T06:10:51.207255+00:00",
+  "ae0acada2291fdfb": "2026-10-28T06:10:51.207255+00:00"
  },
  "recent": [
-  {
-   "title": "Four ways Labour could raise money in the Budget without hiking income tax",
-   "link": "https://www.bbc.co.uk/news/articles/c65yn9p55np2o?at_medium=RSS&at_campaign=rss",
-   "sources": [
-    "BBC"
-   ],
-   "score": 3,
-   "ts": "2026-10-25T06:06:11.440118+00:00",
-   "title_ru": "Четыре способа, которыми лейбористы могут собрать деньги в бюджет без повышения подоходного налога",
-   "lead": "Chancellor John Healey may need to raise money to boost his fiscal headroom - BBC Verify examines what options could be on the table.",
-   "lead_ru": "Канцлеру Джону Хили, возможно, придется собрать деньги, чтобы увеличить свой финансовый запас - BBC Verify изучает, какие варианты могут быть на столе."
-  },
   {
    "title": "UAE Shuts More Beaches as It Deals with Oil Spill in Gulf",
    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNYlo3d3ZWMXZXcGtBMXF1dU9iRUlyNE1VUHVoVXVuR1Q2T2J3Rm5Fd1JWN003U3h2d1VSaktRUlJMTmRJekN3WFd5bHg4U2JzdGthUzIwZEVRNW80cnY3ZTFEQWx5MmpKSlBBVGNYZ2FWYW91VEhBQWI5SzU5THRrMGJtUVhjdk1SOHhsaTZudEd2MTdhZzJUWVdBNFJuWmJWVS1qSGtHZXB0cDRod3JPNmdUNF9IbGFDMVBwenFBYWhtM3N4dnQtWExvdw?oc=5",
@@ -7709,6 +7698,31 @@
    ],
    "score": 2,
    "ts": "2026-10-28T06:00:51.208669+00:00"
+  },
+  {
+   "title": "Cash grants for groups helping with money and debt",
+   "link": "https://www.bbc.co.uk/news/articles/c63r5z37lrgwo?at_medium=RSS&at_campaign=rss",
+   "sources": [
+    "BBC"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T06:10:51.207255+00:00",
+   "title_ru": "Денежные гранты для групп, помогающих деньгами и долгами",
+   "lead": "Grants are offered to groups helping people with cost-of-living financial pressures.",
+   "lead_ru": "Гранты предоставляются группам, помогающим людям с финансовыми трудностями, связанными со стоимостью жизни."
+  },
+  {
+   "title": "Weakness across Asian FX before Fed decision to put mild pressure on rupee",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPUFhCVnlLQ015bV9hYzRXWk5mN3FxT1c0UWo3VnIwallLV0F2TXVJby1LLWZ2ZG52NkJZT0J5Y2JVLVVTS3YwWmk5UVNkVnlQU1ZBZFI5cEdKUC1kQXF6cTFOQ0tpRkQ1ODZQRDV5Tlpvb0V6V2ItaEtGcnhHdjRTUlRCQnFMVVo2M1RnaHpOQThaQmJWVDViNXdMd3hkdTA1UnpVSG94WWVUbEpab0hYSm10VjZqMG8?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T06:10:51.207255+00:00",
+   "title_ru": "Слабость азиатского валютного рынка перед решением ФРС оказать мягкое давление на рупию",
+   "tags": [
+    "Fed"
+   ]
   }
  ],
  "last_digest": "2026-10-27",
@@ -7760,7 +7774,7 @@
   "2026-10-28-09"
  ],
  "calendar": {
-  "fetched": "2026-10-28T00:10:19.159454+00:00",
+  "fetched": "2026-10-28T06:10:51.207255+00:00",
   "events": [
    {
     "title": "Bank Holiday",
@@ -8071,7 +8085,7 @@
     "country": "USD",
     "ts": "2026-10-28T14:30:00+00:00",
     "impact": "Low",
-    "forecast": "-0.1M",
+    "forecast": "0.1M",
     "previous": "-3.1M"
    },
    {
@@ -8183,7 +8197,7 @@
     "country": "USD",
     "ts": "2026-10-29T12:30:00+00:00",
     "impact": "Medium",
-    "forecast": "3.3%",
+    "forecast": "3.2%",
     "previous": "6.2%"
    },
    {
@@ -8247,7 +8261,7 @@
     "country": "USD",
     "ts": "2026-10-29T14:30:00+00:00",
     "impact": "Low",
-    "forecast": "",
+    "forecast": "75B",
     "previous": "77B"
    },
    {
@@ -8383,7 +8397,7 @@
     "country": "GBP",
     "ts": "2026-10-30T07:00:00+00:00",
     "impact": "Low",
-    "forecast": "-0.1%",
+    "forecast": "-0.2%",
     "previous": "-0.2%"
    },
    {
