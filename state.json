@@ -1051,7 +1051,12 @@
   "1863a0d669486de3": "2026-10-28T21:30:50.624459+00:00",
   "d388ed9cb5ce0b7c": "2026-10-28T21:30:50.624459+00:00",
   "97213c664db5dbf6": "2026-10-28T21:30:50.624459+00:00",
-  "db8316f4146e8417": "2026-10-28T21:35:50.647146+00:00"
+  "db8316f4146e8417": "2026-10-28T21:35:50.647146+00:00",
+  "96991facfbd089df": "2026-10-28T21:40:50.968587+00:00",
+  "5d7b0044c0518c38": "2026-10-28T21:40:50.968587+00:00",
+  "f4d01aeebf8c26eb": "2026-10-28T21:40:50.968587+00:00",
+  "a8e771a092bb1b8c": "2026-10-28T21:40:50.968587+00:00",
+  "6527e34015e43599": "2026-10-28T21:40:50.968587+00:00"
  },
  "recent": [
   {
@@ -10264,6 +10269,67 @@
    "tags": [
     "bonds"
    ]
+  },
+  {
+   "title": "Fed holds fire on interest rates despite intensifying inflation",
+   "link": "https://www.ft.com/content/f31fccd8-e9b6-4b01-989d-790ca6bb4d29?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 10,
+   "ts": "2026-10-28T21:40:50.968587+00:00",
+   "title_ru": "ФРС продолжает критиковать процентные ставки, несмотря на усиление инфляции",
+   "lead": "Central bank to vote on monetary policy seven times next year in shift from decades-old custom of having eight such meetings",
+   "lead_ru": "Центральный банк проголосует по денежно-кредитной политике семь раз в следующем году в отличие от многолетнего обычая проводить восемь таких заседаний",
+   "tags": [
+    "Fed",
+    "rates",
+    "inflation"
+   ]
+  },
+  {
+   "title": "Here are five key takeaways from the Fed rate decision and Warsh news conference",
+   "link": "https://www.cnbc.com/2026/10/28/fed-rate-decision-warsh-takeaways.html",
+   "sources": [
+    "CNBC"
+   ],
+   "score": 5,
+   "ts": "2026-10-28T21:40:50.968587+00:00",
+   "title_ru": "Вот пять ключевых выводов из решения ФРС по ставке и пресс-конференции Уорша.",
+   "lead": "Even though the interest-rate vote went as expected, there were a few surprises out of this week's Federal Open Market Committee meeting.",
+   "lead_ru": "Несмотря на то, что голосование по процентным ставкам прошло, как и ожидалось, заседание Федерального комитета по открытому рынку на этой неделе преподнесло несколько сюрпризов.",
+   "tags": [
+    "Fed",
+    "rates"
+   ]
+  },
+  {
+   "title": "Fed mantiene tasas sin dar muchas pistas sobre diciembre",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-28/fed-mantiene-tasas-sin-dar-muchas-pistas-sobre-diciembre-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T21:40:50.968587+00:00",
+   "title_ru": "ФРС Мантиен Ташас Син Дар Мяс Пистас в декабре",
+   "lead": "La Reserva Federal mantuvo las tasas de interés sin cambios y reafirmó su compromiso de contener la inflación, pero evitó dar señales claras sobre un posible aumento en diciembre.",
+   "lead_ru": "Федеральный резерв обязан заявить о своих интересах и подтвердить компромисс по сдерживанию инфляции, но это может привести к тому, что некоторые из них могут увеличиться в декабре.",
+   "tags": [
+    "Fed"
+   ]
+  },
+  {
+   "title": "Alphabet Shares Tank on Sales Misses Across Core Businesses",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPNl94WE51TlQ2Q2dVVTBDNlZZbzF5Mk02UjZRaEJwQnhoM1lGX0dWODk3b1RwZDB1SDVHYmYtOUQzaWJyTEc0ZXlTNmpyQU50WVhaQUpJX3dyMkVFbmgyVXJFVy1fb21TQUxEOXFIWmtzdFEyYVk5SkU3ZGF4LTdnN0EyTlo1NklicFg4TzlpSHYwRE9VYzdUUTZ4N0ZLaG9XWUs1Nm5vM3FfSktn?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T21:40:50.968587+00:00",
+   "title_ru": "Акции Alphabet говорят о провалах в продажах в основных сферах бизнеса",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-28",
@@ -12952,6 +13018,22 @@
     "date": "2026-10-28",
     "disclosed": "2026-10-28",
     "link": "https://www.sec.gov/Archives/edgar/data/1216931/000121693126000014/0001216931-26-000014-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "0c23447a5675f032",
+    "ticker": "GOLD",
+    "company": "Gold.com, Inc.",
+    "who": "Tether Global Investments Fund, S.i.c.a.f., S.a. et al.",
+    "role": "10% owner",
+    "type": "buy",
+    "value": 3927258,
+    "shares": 100000,
+    "price": 39.27,
+    "plan": false,
+    "date": "2026-10-28",
+    "disclosed": "2026-10-28",
+    "link": "https://www.sec.gov/Archives/edgar/data/2130094/000110465926119719/0001104659-26-119719-index.htm"
    },
    {
     "src": "sec",
@@ -16872,22 +16954,6 @@
     "date": "2026-10-20",
     "disclosed": "2026-10-21",
     "link": "https://www.sec.gov/Archives/edgar/data/1785783/000178578326000019/0001785783-26-000019-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "cfa330217ca96e49",
-    "ticker": "ALMR",
-    "company": "Alamar Biosciences, Inc.",
-    "who": "Qiming Corporate Gp Vi, Ltd. et al.",
-    "role": "10% owner",
-    "type": "sell",
-    "value": 5949983,
-    "shares": 217512,
-    "price": 27.35,
-    "plan": false,
-    "date": "2026-10-20",
-    "disclosed": "2026-10-21",
-    "link": "https://www.sec.gov/Archives/edgar/data/2129740/000123191926001485/0001231919-26-001485-index.htm"
    }
   ],
   "docs": {
@@ -16928,16 +16994,20 @@
   "checked": "2026-10-28T21:00:12.519519+00:00",
   "sec_seen": [
    "0001877170-26-000004",
+   "0001193125-26-436436",
+   "0001510281-26-000387",
    "0001517413-26-000322",
    "0001510281-26-000385",
    "0001216931-26-000014",
    "0001517413-26-000320",
    "0001510281-26-000386",
+   "0001193125-26-436443",
    "0001193125-26-436418",
    "0001193125-26-436415",
    "0001193125-26-436386",
    "0001193125-26-436365",
-   "0001031083-26-000004"
+   "0001104659-26-119719",
+   "0001193125-26-436441"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
