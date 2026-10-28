@@ -962,7 +962,8 @@
   "30320ae0f50668b1": "2026-10-28T14:31:22.836215+00:00",
   "e0b8b58ba63badc9": "2026-10-28T14:36:22.836309+00:00",
   "d10874c5ee261b3f": "2026-10-28T14:36:22.836309+00:00",
-  "c200eb5b51c4bd4e": "2026-10-28T14:36:22.836309+00:00"
+  "c200eb5b51c4bd4e": "2026-10-28T14:36:22.836309+00:00",
+  "4b6d1a0cf6344fc6": "2026-10-28T14:46:22.887126+00:00"
  },
  "recent": [
   {
@@ -9019,6 +9020,16 @@
    ],
    "score": 1,
    "ts": "2026-10-28T14:36:22.836309+00:00"
+  },
+  {
+   "title": "At least 64 dead in Spain's second major train crash in a year",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOUl92blFTT3BtRmEwUW1tNWNPX09pUzNYNEhrSUZreGM5bWRIdG5FaVRYal80MTR1MHBkeEdQak5sNzNwdmlwc3d6YWNPUEd1U1ItX2gxaGJSRk1LWGt4MDFhREVINXFvZWNTQWdIV3B0YXhPQWZKZ2UxUEpWTk9YbjdXX0doZEJfcC00TUlSOVhYaUNQWllyMU9QVkxOZw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-28T14:46:22.887126+00:00",
+   "title_ru": "По меньшей мере 64 человека погибли во второй крупной железнодорожной катастрофе в Испании за год"
   }
  ],
  "last_digest": "2026-10-27",
@@ -15432,9 +15443,8 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-28T13:46:22.847622+00:00",
+  "checked": "2026-10-28T14:46:22.887126+00:00",
   "sec_seen": [
-   "0001767612-26-000006",
    "0001976408-26-000911",
    "0001209992-26-000052",
    "0001104659-26-119430"
