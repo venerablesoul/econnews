@@ -984,7 +984,9 @@
   "f908e17e2fd32be1": "2026-10-28T16:10:12.468714+00:00",
   "ac76c270f80b0673": "2026-10-28T16:10:12.468714+00:00",
   "7d75ab0bf6fa2ac7": "2026-10-28T16:10:12.468714+00:00",
-  "33fb4b6530cfc26c": "2026-10-28T16:20:12.461262+00:00"
+  "33fb4b6530cfc26c": "2026-10-28T16:20:12.461262+00:00",
+  "70060212d563e7ad": "2026-10-28T16:25:12.406256+00:00",
+  "bd307a1148eef7da": "2026-10-28T16:25:12.406256+00:00"
  },
  "recent": [
   {
@@ -9264,6 +9266,25 @@
    "score": 4,
    "ts": "2026-10-28T16:20:12.461262+00:00",
    "title_ru": "Хили говорит, что Великобритания сталкивается с «глобальными экономическими штормами» в первом бюджете"
+  },
+  {
+   "title": "India Weighs $180 Billion Pension Overhaul in Boost for Markets",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQWFVTVmZqdGY3dlhWYTItWlJSeE5yWFBvdllrZjZlZWVEUVBxeG5YWlhHT2tyUnNGb3k3SmtZLThkREVuTFZidFM5WnFrY1FFMm9EQXdweG1ES0RUQlowYlNDaWw0TFdXVDdDbFdfTjlnSGxRNTVtUUtuWmxhbERQLXI4djhNWnRvLWV2dzh0UUZXNFdjcjZSQkR4MlM0Q0ExM0p1aHE5YXhGQTc2d2FyLVlXNA?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T16:25:12.406256+00:00",
+   "title_ru": "Индия взвешивает капитальный ремонт пенсии на $ 180 млрд для рынков"
+  },
+  {
+   "title": "Labour's 2026 budget in under three minutes – video",
+   "link": "https://www.theguardian.com/uk-news/video/2026/oct/28/labours-2026-budget-in-under-three-minutes-video",
+   "sources": [
+    "The Guardian"
+   ],
+   "score": 2,
+   "ts": "2026-10-28T16:25:12.406256+00:00"
   }
  ],
  "last_digest": "2026-10-27",
@@ -15924,10 +15945,12 @@
   },
   "checked": "2026-10-28T15:50:12.637813+00:00",
   "sec_seen": [
+   "0002119238-26-000010",
    "0000939057-26-000280",
+   "0002119291-26-000008",
    "0001437749-26-033726",
-   "0002114034-26-000009",
    "0002114067-26-000009",
+   "0002114034-26-000009",
    "0002114019-26-000008"
   ],
   "errors": {
