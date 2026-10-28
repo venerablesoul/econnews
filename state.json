@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "d62ead68c3bd433e": "2026-10-25T21:08:25.684651+00:00",
-  "ad93e424c9145904": "2026-10-25T21:13:25.665405+00:00",
   "67b5b1643c31ab38": "2026-10-25T21:23:25.734150+00:00",
   "96991facfbd089df": "2026-10-25T21:28:25.680160+00:00",
   "0c70ded9f2b6700e": "2026-10-25T21:48:25.767287+00:00",
@@ -1047,7 +1045,9 @@
   "2e72456ce250ecd1": "2026-10-28T20:40:13.508658+00:00",
   "9ea2bd65f169f9e7": "2026-10-28T20:50:12.481841+00:00",
   "567fdae56d8c7481": "2026-10-28T21:05:51.112651+00:00",
-  "38fe4af1056869b9": "2026-10-28T21:05:51.112651+00:00"
+  "38fe4af1056869b9": "2026-10-28T21:05:51.112651+00:00",
+  "d62ead68c3bd433e": "2026-10-28T21:15:50.671593+00:00",
+  "931882e23f2cd385": "2026-10-28T21:15:50.671593+00:00"
  },
  "recent": [
   {
@@ -10204,6 +10204,21 @@
    "score": 4,
    "ts": "2026-10-28T21:05:51.112651+00:00",
    "title_ru": "Республика Армения: Отчет о технической помощи - Диагностика политики в области климата"
+  },
+  {
+   "title": "Global Fund Managers Grow Bullish on Japanese Government Bonds",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-28/global-fund-managers-grow-bullish-on-japanese-government-bonds",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T21:15:50.671593+00:00",
+   "title_ru": "Менеджеры Глобального фонда стали более оптимистично относиться к японским государственным облигациям",
+   "lead": "Global fund managers are warming to Japan’s bond market again as signs of recovering domestic demand and a more supportive policy backdrop add to the appeal of elevated yields.",
+   "lead_ru": "Глобальные управляющие фондами снова нагревают японский рынок облигаций, поскольку признаки восстановления внутреннего спроса и более благоприятный политический фон усиливают привлекательность повышенной доходности.",
+   "tags": [
+    "bonds"
+   ]
   }
  ],
  "last_digest": "2026-10-28",
@@ -13244,6 +13259,38 @@
     "date": "2026-10-26",
     "disclosed": "2026-10-28",
     "link": "https://www.sec.gov/Archives/edgar/data/1965457/000162828026067923/0001628280-26-067923-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "23e2c66d970721fa",
+    "ticker": "CRBG",
+    "company": "Corebridge Financial, Inc.",
+    "who": "Nippon Life Insurance Co",
+    "role": "10% owner",
+    "type": "buy",
+    "value": 6390299,
+    "shares": 182826,
+    "price": 34.95,
+    "plan": true,
+    "date": "2026-10-26",
+    "disclosed": "2026-10-28",
+    "link": "https://www.sec.gov/Archives/edgar/data/1889539/000119312526436365/0001193125-26-436365-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "74236940de20a3ed",
+    "ticker": "FSLY",
+    "company": "Fastly, Inc.",
+    "who": "Artur Bergman",
+    "role": "CTO",
+    "type": "sell",
+    "value": 943620,
+    "shares": 37039,
+    "price": 25.48,
+    "plan": true,
+    "date": "2026-10-26",
+    "disclosed": "2026-10-28",
+    "link": "https://www.sec.gov/Archives/edgar/data/1769490/000151741326000320/0001517413-26-000320-index.htm"
    },
    {
     "src": "sec",
@@ -16796,38 +16843,6 @@
     "date": "2026-10-19",
     "disclosed": "2026-10-21",
     "link": "https://www.sec.gov/Archives/edgar/data/2109337/000210933726000012/0002109337-26-000012-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "babf635ed7eab1cf",
-    "ticker": "GLBE",
-    "company": "Global-E Online Ltd.",
-    "who": "Shahar Tamari",
-    "role": "COO",
-    "type": "sell",
-    "value": 988423,
-    "shares": 24999,
-    "price": 39.54,
-    "plan": true,
-    "date": "2026-10-19",
-    "disclosed": "2026-10-21",
-    "link": "https://www.sec.gov/Archives/edgar/data/1964142/000119312526427623/0001193125-26-427623-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "61144ab4975ee4b2",
-    "ticker": "GXVIX",
-    "company": "Global X Venture & Innovation Fund",
-    "who": "Global X Management Company, Inc.",
-    "role": "10% owner",
-    "type": "buy",
-    "value": 25000000,
-    "shares": 1945525,
-    "price": 12.85,
-    "plan": false,
-    "date": "2026-10-19",
-    "disclosed": "2026-10-21",
-    "link": "https://www.sec.gov/Archives/edgar/data/1997641/000121390026111339/0001213900-26-111339-index.htm"
    }
   ],
   "docs": {
@@ -16868,19 +16883,18 @@
   "checked": "2026-10-28T21:00:12.519519+00:00",
   "sec_seen": [
    "0001193125-26-436314",
-   "0002157325-26-000004",
-   "0001193125-26-436269",
-   "0001193125-26-436253",
-   "0001193125-26-436257",
    "0001437749-26-033807",
-   "0001193125-26-436256",
-   "0001193125-26-436297",
-   "0001628280-26-067923",
-   "0001193125-26-436298",
    "0001193125-26-436313",
+   "0001517413-26-000320",
+   "0001193125-26-436365",
    "0000950142-26-002875",
-   "0001751788-26-000164",
-   "0001510281-26-000384"
+   "0001031083-26-000004",
+   "0001193125-26-436297",
+   "0001193125-26-436298",
+   "0001510281-26-000384",
+   "0001477932-26-006494",
+   "0001031082-26-000009",
+   "0001551293-26-000005"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
