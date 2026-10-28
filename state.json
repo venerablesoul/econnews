@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "0f4d626ae49921a6": "2026-10-25T20:33:25.662879+00:00",
-  "00c6b363a8914e31": "2026-10-25T20:33:25.662879+00:00",
-  "6625a4ff9bb3416c": "2026-10-25T20:33:25.662879+00:00",
   "3d9e566b3cb9237f": "2026-10-25T20:43:25.693799+00:00",
   "c610c3560e4ec72c": "2026-10-25T20:48:25.688986+00:00",
   "9a0261a88c6e2cf9": "2026-10-25T20:48:25.688986+00:00",
@@ -1048,7 +1045,9 @@
   "f47e8ac794d2a4de": "2026-10-28T20:20:12.395639+00:00",
   "7062aa23d4ba536f": "2026-10-28T20:20:12.395639+00:00",
   "38d0cc2649458623": "2026-10-28T20:25:12.527245+00:00",
-  "ad81c66e6cf6a7e1": "2026-10-28T20:30:12.460333+00:00"
+  "ad81c66e6cf6a7e1": "2026-10-28T20:30:12.460333+00:00",
+  "6abff8665caab738": "2026-10-28T20:35:12.563246+00:00",
+  "21cea21900ff1df3": "2026-10-28T20:35:12.563246+00:00"
  },
  "recent": [
   {
@@ -10171,6 +10170,37 @@
     "rates",
     "inflation"
    ]
+  },
+  {
+   "title": "Bank of Canada Rate Hike Hurts Housing Market Already in Slump",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-28/bank-of-canada-rate-hike-hurts-housing-market-already-in-slump",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 9,
+   "ts": "2026-10-28T20:35:12.563246+00:00",
+   "title_ru": "Повышение ставок Банком Канады негативно сказывается на жилищном рынке, который уже переживает спад",
+   "lead": "The Bank of Canada raised its benchmark interest rate Wednesday in an effort to fight inflation. But for the nation’s housing market, the move is a heavy blow.",
+   "lead_ru": "Банк Канады повысил базовую процентную ставку в среду в попытке бороться с инфляцией. Но для национального рынка жилья этот шаг является тяжелым ударом.",
+   "tags": [
+    "rates",
+    "inflation"
+   ]
+  },
+  {
+   "title": "Restaurants sceptical over 'garlic and gherkins' plan",
+   "link": "https://www.bbc.co.uk/news/articles/cm74pvzzke91o?at_medium=RSS&at_campaign=rss",
+   "sources": [
+    "BBC"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T20:35:12.563246+00:00",
+   "title_ru": "Рестораны скептически относятся к плану «чеснок и корнишоны»",
+   "lead": "Import tariffs on more than 100 items - including garlic, gherkins and plant-based milk - are being removed.",
+   "lead_ru": "Отменяются импортные тарифы на более чем 100 наименований, включая чеснок, корнишоны и растительное молоко.",
+   "tags": [
+    "tariffs"
+   ]
   }
  ],
  "last_digest": "2026-10-28",
@@ -12942,6 +12972,54 @@
    },
    {
     "src": "sec",
+    "id": "a7b92f38b9626c08",
+    "ticker": "BNY",
+    "company": "Bank of New York Mellon Corp",
+    "who": "Robin A. Vince",
+    "role": "CEO",
+    "type": "sell",
+    "value": 7390652,
+    "shares": 50000,
+    "price": 147.81,
+    "plan": false,
+    "date": "2026-10-27",
+    "disclosed": "2026-10-28",
+    "link": "https://www.sec.gov/Archives/edgar/data/1825740/000119312526436233/0001193125-26-436233-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "7a71daf95a240fd9",
+    "ticker": "RS",
+    "company": "RELIANCE, INC.",
+    "who": "Stephen Paul Koch",
+    "role": "COO",
+    "type": "sell",
+    "value": 3590859,
+    "shares": 8334,
+    "price": 430.87,
+    "plan": false,
+    "date": "2026-10-27",
+    "disclosed": "2026-10-28",
+    "link": "https://www.sec.gov/Archives/edgar/data/1488432/000112329226001445/0001123292-26-001445-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "843b38d14912db98",
+    "ticker": "UTHR",
+    "company": "UNITED THERAPEUTICS Corp",
+    "who": "Martine A Rothblatt",
+    "role": "CEO",
+    "type": "sell",
+    "value": 5583418,
+    "shares": 9500,
+    "price": 587.73,
+    "plan": true,
+    "date": "2026-10-27",
+    "disclosed": "2026-10-28",
+    "link": "https://www.sec.gov/Archives/edgar/data/1106578/000110657826000173/0001106578-26-000173-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "3d2d067919228521",
     "ticker": "ACN",
     "company": "Accenture plc",
@@ -13115,6 +13193,22 @@
     "date": "2026-10-26",
     "disclosed": "2026-10-28",
     "link": "https://www.sec.gov/Archives/edgar/data/1705702/000162828026067906/0001628280-26-067906-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "0e1dcd16184a939e",
+    "ticker": "ABNB",
+    "company": "Airbnb, Inc.",
+    "who": "Nathan Blecharczyk",
+    "role": "Chief Strategy Officer, 10% owner",
+    "type": "sell",
+    "value": 2325621,
+    "shares": 13615,
+    "price": 170.81,
+    "plan": true,
+    "date": "2026-10-26",
+    "disclosed": "2026-10-28",
+    "link": "https://www.sec.gov/Archives/edgar/data/1834147/000119312526436212/0001193125-26-436212-index.htm"
    },
    {
     "src": "sec",
@@ -16731,70 +16825,6 @@
     "date": "2026-10-19",
     "disclosed": "2026-10-21",
     "link": "https://www.sec.gov/Archives/edgar/data/1886022/000165348226000176/0001653482-26-000176-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "812ab1f1496b551b",
-    "ticker": "CRBG",
-    "company": "Corebridge Financial, Inc.",
-    "who": "Nippon Life Insurance Co",
-    "role": "10% owner",
-    "type": "buy",
-    "value": 5591238,
-    "shares": 162024,
-    "price": 34.51,
-    "plan": true,
-    "date": "2026-10-19",
-    "disclosed": "2026-10-21",
-    "link": "https://www.sec.gov/Archives/edgar/data/1889539/000119312526427950/0001193125-26-427950-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "41c24df33a1ea9e5",
-    "ticker": "META",
-    "company": "Meta Platforms, Inc.",
-    "who": "Javier Olivan",
-    "role": "COO",
-    "type": "sell",
-    "value": 1113840,
-    "shares": 1575,
-    "price": 707.2,
-    "plan": true,
-    "date": "2026-10-19",
-    "disclosed": "2026-10-21",
-    "link": "https://www.sec.gov/Archives/edgar/data/1564475/000095010326015980/0000950103-26-015980-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "e0b7f03994438f2e",
-    "ticker": "TALO",
-    "company": "TALOS ENERGY INC.",
-    "who": "Control Empresarial De Capitales S.a. De C.v.",
-    "role": "10% owner",
-    "type": "sell",
-    "value": 38562754,
-    "shares": 2141590,
-    "price": 18.01,
-    "plan": false,
-    "date": "2026-10-19",
-    "disclosed": "2026-10-21",
-    "link": "https://www.sec.gov/Archives/edgar/data/1724965/000114036126040419/0001140361-26-040419-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "2ebab78dfa27f397",
-    "ticker": "SNOW",
-    "company": "Snowflake Inc.",
-    "who": "Frank Slootman",
-    "role": "Director",
-    "type": "sell",
-    "value": 94930176,
-    "shares": 300000,
-    "price": 316.43,
-    "plan": true,
-    "date": "2026-10-19",
-    "disclosed": "2026-10-21",
-    "link": "https://www.sec.gov/Archives/edgar/data/1640147/000140234826000020/0001402348-26-000020-index.htm"
    }
   ],
   "docs": {
@@ -16834,25 +16864,22 @@
   },
   "checked": "2026-10-28T19:55:12.941990+00:00",
   "sec_seen": [
-   "0000036966-26-000189",
-   "0001370946-26-000219",
-   "0001193125-26-436186",
-   "0001193125-26-436188",
-   "0000036966-26-000191",
-   "0001656656-26-000012",
-   "0002160550-26-000005",
-   "0001628280-26-067906",
-   "0001894801-26-000006",
-   "0002159611-26-000002",
-   "0001628280-26-067898",
-   "0001008079-26-000004",
-   "0001193125-26-436190",
-   "0001628280-26-067904",
-   "0001123292-26-001443",
-   "0001677418-26-000018",
-   "0000905148-26-004585",
-   "0001359115-26-000013",
-   "0001565687-26-000130"
+   "0000042888-26-000147",
+   "0001104659-26-119651",
+   "0001757533-26-000018",
+   "0001104659-26-119656",
+   "0001193125-26-436215",
+   "0001106578-26-000173",
+   "0001193125-26-436213",
+   "0002128038-26-000006",
+   "0001193125-26-436217",
+   "0001123292-26-001445",
+   "0001193125-26-436221",
+   "0001104659-26-119652",
+   "0001193125-26-436222",
+   "0001193125-26-436233",
+   "0001193125-26-436216",
+   "0001193125-26-436212"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
