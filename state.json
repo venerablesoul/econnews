@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "43a97c4521d79466": "2026-10-25T04:06:11.511052+00:00",
   "177ee20d981065d6": "2026-10-25T04:41:11.514310+00:00",
   "c619ef7a9d8c81dc": "2026-10-25T05:31:11.525439+00:00",
   "3ddee3342475be14": "2026-10-25T05:36:11.482262+00:00",
@@ -832,7 +831,9 @@
   "0d172434b2048453": "2026-10-28T03:55:19.104899+00:00",
   "be7eb8ca999fa6eb": "2026-10-28T04:00:19.107075+00:00",
   "fc0199a327d51a34": "2026-10-28T04:00:19.107075+00:00",
-  "4dc3fe4f3cd6227e": "2026-10-28T04:00:19.107075+00:00"
+  "4dc3fe4f3cd6227e": "2026-10-28T04:00:19.107075+00:00",
+  "8b7dcfd2e614b9e2": "2026-10-28T04:05:22.498694+00:00",
+  "801c7782fd9b08f7": "2026-10-28T04:10:20.532814+00:00"
  },
  "recent": [
   {
@@ -7503,6 +7504,28 @@
    "lead": "Suzhou Dongshan Precision Manufacturing Co.",
    "tags": [
     "markets"
+   ]
+  },
+  {
+   "title": "Объем цифровых рублей на счетах банков после запуска подскочил в 216 раз",
+   "link": "https://www.rbc.ru/finances/28/10/2026/6ae06074c90da2e791c68151",
+   "sources": [
+    "RBC"
+   ],
+   "score": 1,
+   "ts": "2026-10-28T04:05:22.498694+00:00"
+  },
+  {
+   "title": "AI worries expose dollar's hot-money problem",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQY0NWaVVKX3pobnFkV1YzZUZicHYzOEU2M0R3NHdqZTQ0emFvQl9pQzhMZGV3dzNHckp6MldEd1Q3WjZlRnpfeUdMQTc4YnRCMldzTWJscGpYRnpPQ25JZDhoQ0VzSnlDMndZZTFuNGRlb2R3LUVGU3AxS0NkX1ozbmlhbS1ia2pFRU5hQzlra1FPLVlhU1FjQS1zRHZwUnM?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T04:10:20.532814+00:00",
+   "title_ru": "ИИ опасается разоблачить проблему горячих денег доллара",
+   "tags": [
+    "dollar"
    ]
   }
  ],
