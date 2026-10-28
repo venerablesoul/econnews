@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "183b9f7c60dcc637": "2026-10-25T17:13:25.654395+00:00",
   "e32a15d29a559eac": "2026-10-25T17:33:25.677170+00:00",
   "bc192c2eb8e3db87": "2026-10-25T17:49:01.484794+00:00",
   "84eb73c203290f7e": "2026-10-25T17:58:25.695204+00:00",
@@ -990,7 +989,10 @@
   "beecb5f5f5b04c45": "2026-10-28T17:00:12.419384+00:00",
   "e57a0cbb35a07828": "2026-10-28T17:10:12.380740+00:00",
   "602bb98980f22270": "2026-10-28T17:10:12.380740+00:00",
-  "48cd81b7c367be69": "2026-10-28T17:10:12.380740+00:00"
+  "48cd81b7c367be69": "2026-10-28T17:10:12.380740+00:00",
+  "dcd57b2ee933843b": "2026-10-28T17:15:12.450194+00:00",
+  "7e6bf3e15b8ccd11": "2026-10-28T17:15:12.450194+00:00",
+  "3ff3dcd40af43251": "2026-10-28T17:15:12.450194+00:00"
  },
  "recent": [
   {
@@ -9389,6 +9391,44 @@
    "score": 3,
    "ts": "2026-10-28T17:10:12.380740+00:00",
    "title_ru": "Новый министр финансов Великобритании обнародовал «стабильный бюджет на ходу»"
+  },
+  {
+   "title": "Drone Stocks Face Deeper Drop as Midterm Blue Wave Risks Grow",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNTkJzcng3Zi1wQTBVV1V5LWZVUWdDeU1nNVNGejFKamU2Nnl5dTdTcXdZZU53WUFhUnY1T1F4NTZILXMzQkJrQVdqNmJPcERPdkUtbVlkaC1PMUIxTlQwT1ZNNkhzSjVISFNnTEsxRUc0cjNzbEthYmlPYkVJa2E1eUc2YjdMODlSX2x2NjQ5YjExdHhjeGswVzVaX2FYcHFqMy1OQ1AzXzdJTnJ6X1Rpc1Rn?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T17:15:12.450194+00:00",
+   "title_ru": "Акции дронов сталкиваются с более глубоким падением по мере роста среднесрочных рисков «синей волны»",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "Помидоры в России за неделю подорожали на 7%",
+   "link": "https://www.kommersant.ru/doc/9063154",
+   "sources": [
+    "Kommersant"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T17:15:12.450194+00:00",
+   "title_en": "Tomatoes in Russia have risen in price by 7% in a week",
+   "lead": "Потребительские цены в России с 20 по 26 октября выросли на 0,08% после 0,05% неделей ранее. Годовая инфляция зафиксирована на уровне 7,11%.",
+   "lead_en": "Consumer prices in Russia from October 20 to 26 increased by 0.08% after 0.05% a week earlier. Annual inflation is fixed at 7.11%.",
+   "tags": [
+    "inflation",
+    "Russia"
+   ]
+  },
+  {
+   "title": "Budget 2026 calculator: find out if you are better or worse off",
+   "link": "https://www.theguardian.com/uk-news/2026/oct/28/budget-2026-calculator-find-out-if-you-are-better-or-worse-off",
+   "sources": [
+    "The Guardian"
+   ],
+   "score": 2,
+   "ts": "2026-10-28T17:15:12.450194+00:00"
   }
  ],
  "last_digest": "2026-10-27",
@@ -16061,6 +16101,7 @@
    "0001437749-26-033742",
    "0001760581-26-000075",
    "0002085067-26-000010",
+   "0001193125-26-435749",
    "0002026271-26-000004"
   ],
   "errors": {
