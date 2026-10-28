@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "6dad00e132d7ed0b": "2026-10-25T03:06:11.562709+00:00",
   "bd570558bd354da6": "2026-10-25T03:16:11.572157+00:00",
   "ca7508941492ad65": "2026-10-25T03:16:11.572157+00:00",
   "c6ea679dd8debddf": "2026-10-25T03:26:11.495671+00:00",
@@ -819,7 +818,9 @@
   "3cb8132bb2179108": "2026-10-28T02:40:19.094599+00:00",
   "c762583c82c0a40d": "2026-10-28T02:40:19.094599+00:00",
   "82edbfdb4317c9a2": "2026-10-28T02:45:19.139474+00:00",
-  "2b2186a4c3eebf8d": "2026-10-28T02:50:19.098652+00:00"
+  "2b2186a4c3eebf8d": "2026-10-28T02:50:19.098652+00:00",
+  "648d9e3cb370a735": "2026-10-28T03:10:19.132384+00:00",
+  "a460f729b3c0f168": "2026-10-28T03:10:19.132384+00:00"
  },
  "recent": [
   {
@@ -7392,6 +7393,21 @@
    "title_ru": "Jio надеется пробить Индию Mega-IPO Jinx с дебютом на фондовом рынке",
    "lead": "A gray-market premium of about 22% suggests investors are betting on a strong start.",
    "lead_ru": "Премия на сером рынке в размере около 22% предполагает, что инвесторы делают ставку на сильный старт."
+  },
+  {
+   "title": "Commonwealth Bank Now Expects RBA to Hike to 4.85% in November",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-28/commonwealth-bank-now-expects-rba-to-hike-to-4-85-in-november",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T03:10:19.132384+00:00",
+   "title_ru": "Банк Содружества теперь ожидает, что РБА вырастет до 4,85% в ноябре",
+   "lead": "Commonwealth Bank of Australia now sees the Reserve Bank raising interest rates to 4.85% in November, economist Belinda Allen said in a research note on Wednesday.",
+   "lead_ru": "Банк Содружества Австралии теперь ожидает, что Резервный банк повысит процентные ставки до 4,85% в ноябре, сообщила экономист Белинда Аллен в аналитической записке в среду.",
+   "tags": [
+    "rates"
+   ]
   }
  ],
  "last_digest": "2026-10-27",
