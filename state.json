@@ -801,7 +801,12 @@
   "5757e540ed32e3eb": "2026-10-28T00:20:19.136650+00:00",
   "c4f7d03949d5a90d": "2026-10-28T00:25:19.225251+00:00",
   "583819180a5e4a63": "2026-10-28T00:30:19.172850+00:00",
-  "3883d6af0bb98c73": "2026-10-28T00:35:19.168611+00:00"
+  "3883d6af0bb98c73": "2026-10-28T00:35:19.168611+00:00",
+  "e3681b2dd41e7d61": "2026-10-28T00:40:19.190525+00:00",
+  "4521242db1cd1ab5": "2026-10-28T00:40:19.190525+00:00",
+  "dcda1cb3afd7cccc": "2026-10-28T00:40:19.190525+00:00",
+  "90b274f3203c79e9": "2026-10-28T00:40:19.190525+00:00",
+  "e4e2e989c51c92ec": "2026-10-28T00:40:19.190525+00:00"
  },
  "recent": [
   {
@@ -7178,6 +7183,69 @@
    "title_ru": "Тысячи людей собрались перед парламентом Португалии в связи с жилищным кризисом и полицейскими операциями",
    "tags": [
     "markets"
+   ]
+  },
+  {
+   "title": "Australia’s inflation rate rises to 4.3%, fuelling fears of fifth interest rate hike this year",
+   "link": "https://www.theguardian.com/australia-news/2026/oct/28/inflation-rate-australia-2026-number-data-consumer-price-index-cpi-release",
+   "sources": [
+    "The Guardian"
+   ],
+   "score": 10,
+   "ts": "2026-10-28T00:40:19.190525+00:00",
+   "title_ru": "Уровень инфляции в Австралии вырос до 4,3%, что вызвало опасения по поводу пятого повышения процентной ставки в этом году",
+   "lead": "CPI release comes ahead of Reserve Bank decision next week as the Middle East conflict intensifies the cost of living crisis Australia’s headline inflation rate has accelerated to 4.3%, with a key gauge that strips out volatile…",
+   "lead_ru": "Опубликование ИПЦ предшествует решению Резервного банка на следующей неделе, поскольку конфликт на Ближнем Востоке усиливает кризис стоимости жизни. Уровень инфляции в Австралии ускорился до 4,3%, при этом ключевой показатель, который исключает волатильность...",
+   "tags": [
+    "rates",
+    "inflation"
+   ]
+  },
+  {
+   "title": "RBA’s Bullock Says Upside Inflation Risks Are Materializing",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-28/rba-s-bullock-says-upside-inflation-risks-are-materializing",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-28T00:40:19.190525+00:00",
+   "title_ru": "Буллок из РБА говорит, что повышательные инфляционные риски материализуются",
+   "lead": "Upside risks to Australia’s inflation outlook are materializing, Reserve Bank Governor Michele Bullock told a parliamentary hearing on Wednesday, less than a week before policymakers meet to consider raising interest rates…",
+   "lead_ru": "Риски роста инфляции в Австралии материализуются, заявил глава Резервного банка Мишель Буллок на парламентских слушаниях в среду, менее чем за неделю до того, как политики встретятся, чтобы рассмотреть вопрос о повышении процентных ставок...",
+   "tags": [
+    "rates",
+    "inflation"
+   ]
+  },
+  {
+   "title": "Australian Inflation Exceeds Estimate Ahead of RBA Meeting",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-28/australian-inflation-exceeds-estimate-ahead-of-rba-meeting",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-28T00:40:19.190525+00:00",
+   "title_ru": "Инфляция в Австралии превысила прогноз в преддверии заседания РБА",
+   "lead": "Australia’s core inflation accelerated in the three months through September, strengthening the case for the Reserve Bank to raise interest rates to try to rein in price pressures.",
+   "lead_ru": "Базовая инфляция в Австралии ускорилась в течение трех месяцев по сентябрь, усилив аргументы Резервного банка в пользу повышения процентных ставок, чтобы попытаться обуздать ценовое давление.",
+   "tags": [
+    "rates",
+    "inflation"
+   ]
+  },
+  {
+   "title": "India Jewelers Hold Off Gold Buying, Betting Prices Will Drop",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-28/india-jewelers-hold-off-gold-buying-betting-prices-will-drop",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T00:40:19.190525+00:00",
+   "title_ru": "Ювелиры Индии сдерживают покупку золота, цены на ставки упадут",
+   "lead": "Indian jewelers are holding back gold purchases ahead of their busiest demand season, betting that a recent drop in prices has further to run, according to the country’s biggest precious metals refiner.",
+   "lead_ru": "По словам крупнейшего в стране аффинажера драгоценных металлов, индийские ювелиры сдерживают покупки золота в преддверии самого оживленного сезона спроса, делая ставку на то, что недавнее падение цен будет продолжаться.",
+   "tags": [
+    "gold"
    ]
   }
  ],
