@@ -1010,7 +1010,10 @@
   "8bb9c6eba8439029": "2026-10-28T18:20:13.859813+00:00",
   "9b0591a898f10ac9": "2026-10-28T18:20:13.859813+00:00",
   "5aedc0a6589d071b": "2026-10-28T18:25:12.708093+00:00",
-  "240e3ee658b1f8d9": "2026-10-28T18:25:12.708093+00:00"
+  "240e3ee658b1f8d9": "2026-10-28T18:25:12.708093+00:00",
+  "a1b53e8a1a0e60c8": "2026-10-28T18:30:12.409637+00:00",
+  "a715d188dbb781e0": "2026-10-28T18:35:12.378203+00:00",
+  "29b61fcebe05dfc5": "2026-10-28T18:35:12.378203+00:00"
  },
  "recent": [
   {
@@ -9728,6 +9731,31 @@
    "tags": [
     "Fed"
    ]
+  },
+  {
+   "title": "VIEW FOMC holds rates steady, markets mostly follow suit",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNR3M1cWh6azZyTHVTWV9qanQ0LXVsVHVNRzdLeUlSbEx3aVYta0xwa3VPODBoc1JvUEZMRVNGQ045ZkZZajVCTmhzZGdPcmFOaHhJelg0OHRIMjQyZnlXemdNbU42cWFhS3dQaExlT3RtLWpiTmxlVUMtYzZ4dHhYNGdFc1FtRlJ4SUtZQlFjWUE3N2JqNUtHdHctdUFtWWZBd1E?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-28T18:35:12.378203+00:00",
+   "title_ru": "ПРОСМОТР FOMC удерживает ставки на стабильном уровне, рынки в основном следуют этому примеру",
+   "tags": [
+    "Fed"
+   ]
+  },
+  {
+   "title": "Three ways the Budget affects you",
+   "link": "https://www.bbc.co.uk/news/videos/cjkgern1yw0lo?at_medium=RSS&at_campaign=rss",
+   "sources": [
+    "BBC"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T18:35:12.378203+00:00",
+   "title_ru": "Три способа, которыми бюджет влияет на вас",
+   "lead": "The BBC's Esyllt Carr explains how the chancellor's spending plans impact young people.",
+   "lead_ru": "Эзилт Карр из Би-би-си объясняет, как планы канцлера по расходам влияют на молодежь."
   }
  ],
  "last_digest": "2026-10-28",
@@ -16391,10 +16419,8 @@
   },
   "checked": "2026-10-28T17:55:12.391979+00:00",
   "sec_seen": [
-   "0001628280-26-067824",
-   "0000737468-26-000122",
    "0001649471-26-000006",
-   "0002114274-26-000008",
+   "0000737468-26-000122",
    "0001338943-26-000007"
   ],
   "errors": {
