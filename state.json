@@ -972,7 +972,10 @@
   "b1b3ccff067b24d9": "2026-10-28T15:35:12.472848+00:00",
   "366b13df0e7197dc": "2026-10-28T15:35:12.472848+00:00",
   "fec81d7ac5cab9f4": "2026-10-28T15:35:12.472848+00:00",
-  "d629670e024fc3aa": "2026-10-28T15:35:12.472848+00:00"
+  "d629670e024fc3aa": "2026-10-28T15:35:12.472848+00:00",
+  "cbc26a546b3fdee4": "2026-10-28T15:40:12.728766+00:00",
+  "47888857c00c45cc": "2026-10-28T15:45:12.379525+00:00",
+  "4e47b6192b27c57c": "2026-10-28T15:45:12.379525+00:00"
  },
  "recent": [
   {
@@ -9156,6 +9159,16 @@
    "score": 3,
    "ts": "2026-10-28T15:35:12.472848+00:00",
    "title_ru": "Европейский суверенный искусственный интеллект и облако еще не готовы для крупных банков, говорит генеральный директор Temenos"
+  },
+  {
+   "title": "British markets take Healey's first budget in their stride",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxORFdWWEJaRi1WZDQ2dGJoOUd0dHdEdkIyQ2gwQ1QwTWpMdVZtWVdRVGt5azVkQnQ3WHRxN0E0enNtTmZrZ0VBbWZKZkx0aGpEa3ZHV2xRVmdTd2RQYUN6ZC15ZEgzR1R1cFZuN1hzQ0c2a3dsWFctQTU2ZGlCWGR1anpPTmNZc1k2QWMxZGJmMXdlQWxBcy1Ec0phSUpCXzVkUTJGUVdjQkZPems?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-28T15:45:12.379525+00:00",
+   "title_ru": "Британские рынки спокойно восприняли первый бюджет Хили"
   }
  ],
  "last_digest": "2026-10-27",
@@ -15573,8 +15586,7 @@
   "sec_seen": [
    "0001976408-26-000913",
    "0001976408-26-000914",
-   "0000001750-26-000106",
-   "0001498935-26-000007"
+   "0001437749-26-033726"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
