@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "2c2498da958d243d": "2026-10-25T13:37:19.723460+00:00",
   "a4dafb4ffd3d8ff3": "2026-10-25T13:47:19.765856+00:00",
   "c2f26e3efc273e07": "2026-10-25T13:57:19.735408+00:00",
   "d28ef54367605019": "2026-10-25T14:02:19.754081+00:00",
@@ -945,19 +944,11 @@
   "7754a381b340b036": "2026-10-28T13:16:23.868786+00:00",
   "13f379e528d3c1f1": "2026-10-28T13:21:22.822965+00:00",
   "93480499a43bacd9": "2026-10-28T13:36:22.869689+00:00",
-  "64cd4115948d16d4": "2026-10-28T13:36:22.869689+00:00"
+  "64cd4115948d16d4": "2026-10-28T13:36:22.869689+00:00",
+  "a24e4ac0a50bf067": "2026-10-28T13:41:22.912144+00:00",
+  "cb14e04c6b16ff1a": "2026-10-28T13:41:22.912144+00:00"
  },
  "recent": [
-  {
-   "title": "AI Spending Fears Threaten to Swamp Big Tech’s Strong Earnings",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQX0l3bHQyejdhX0oxSnVaMDl0TTRTQlF2M25FUE1fZV96VVFXSUdjXzFGblEwOWdOYkM4OWFjV0VVck4yWlVfSVVxemJVUG5PRTVnZHZXMHVSeVJMSUUzNjZTM041MTlyVjd6QUF3ckVDUlVJSFVCcF8xSi1aNWdndVdhd1lSaWNQUUJZNE5VWUQtRjJJampiRlkzRWczOFZyU1dtamtXVWpFdDdxVnFNTWRGSQ?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-25T13:37:19.723460+00:00",
-   "title_ru": "Страхи по поводу расходов на ИИ угрожают подорвать высокие доходы крупных технологических компаний"
-  },
   {
    "title": "Volkswagen to build $4bn Audi SUV factory in US despite job cuts at home",
    "link": "https://www.theguardian.com/business/2026/oct/25/volkswagen-to-build-4bn-audi-suv-factory-in-us-despite-job-cuts-at-home",
@@ -8819,6 +8810,30 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "South African rand softens as oil prices rise, Fed in focus",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQSlVwZGN6eVNhNE5oUlZnWTNGU0MxUTdsSktTS1lXdmxoRGJ0VWpFTXlGYzdvZTJna0kwTnltdTc4TXJ3cWxscXFKeU1xQWJpWXA2SUF0R1N3b0c3U1ZPdjRwaGJJSS1qSnZSNVQtNzl1U1QzTmVGMndEV1dJakdjaGMtTk1BQjcxZFRvcUNQNVhSdTk1QnhKeXlyc0VNTkZkbDQ4?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 7,
+   "ts": "2026-10-28T13:41:22.912144+00:00",
+   "title_ru": "Южноафриканский рэнд смягчается по мере роста цен на нефть, ФРС в центре внимания",
+   "tags": [
+    "Fed",
+    "oil"
+   ]
+  },
+  {
+   "title": "US Trade Gap Jumps to Most Since March 2025 on Capital Goods",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMXh2bHZTX0IzNTVFOEktWTVXSW9DckVpVVZrQWc3MFhlZGtoeDh3SldKQll5NndWNmNtbXY1UmRfLVlIZUYxRHZzeU9nQTFxWTZqZE1yRGxiSlBzRGNHOUlHQjZZS0RJemx1OHRuYWpoTmZ5OVhlYnhwMHhLVnVhamJqTElmenB2WVNDVFdSNU1KLW9kaUNBNElCbWd1aGJmc1BVY0hRMEhuZWplUF9rM0wzdnBQQQ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T13:41:22.912144+00:00",
+   "title_ru": "Торговый разрыв США подскочил до максимума с марта 2025 года по капитальным товарам"
   }
  ],
  "last_digest": "2026-10-27",
