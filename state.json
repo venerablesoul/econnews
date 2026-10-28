@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "2667232859700e8a": "2026-10-25T11:51:42.640271+00:00",
   "d2b9cb2c7477536d": "2026-10-25T12:01:42.586679+00:00",
   "5ba3753803d58086": "2026-10-25T12:06:42.607655+00:00",
   "543db73309ee4256": "2026-10-25T12:11:42.613204+00:00",
@@ -917,23 +916,10 @@
   "e019139210254abb": "2026-10-28T11:36:22.816628+00:00",
   "a774e5d793a79ea2": "2026-10-28T11:46:22.892683+00:00",
   "6c2df830cd93791e": "2026-10-28T11:46:22.892683+00:00",
-  "1d96477e11564b01": "2026-10-28T11:51:22.914820+00:00"
+  "1d96477e11564b01": "2026-10-28T11:51:22.914820+00:00",
+  "8115383ef3e6acdb": "2026-10-28T11:56:22.852948+00:00"
  },
  "recent": [
-  {
-   "title": "Netanyahu rebuked for plan to use crypto to bypass economic sanctions",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOdEZIYi1YYkZXSDlUeWN0cUgzdzdudTFUNlF5bHE1eVM4Z1NZeUFxVWZrVXp3d0N1dnRRWU5iYzZSc3J5QlJiQ3c4bllDUXFJcFFFdjNGeTFPbGhxc2VRZjYzV1dLSmtKX2JqQlpfd2U4RTFmWUhoRGFtVUVtVWRSc0NBZjc0NjhUdUVLNmM2dDVBYUxLOWRob3BwWkY2bnBKSlhnSGc0aXVfTEZ5RjBsTDJ3?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-25T11:51:42.640271+00:00",
-   "title_ru": "Нетаньяху раскритиковали за план использования криптовалюты в обход экономических санкций",
-   "tags": [
-    "sanctions",
-    "crypto"
-   ]
-  },
   {
    "title": "Interest rates unlikely to reach 4.75% by next summer, say City economists",
    "link": "https://www.theguardian.com/business/2026/oct/25/interest-rates-bank-of-england-rises-summer-2027",
@@ -8496,6 +8482,21 @@
    "score": 3,
    "ts": "2026-10-28T11:51:22.914820+00:00",
    "title_ru": "Какой вклад ИИ вносит в экономику США?"
+  },
+  {
+   "title": "Saudi Oil Exports Near Wartime High as Houthis Mount Attacks",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-28/saudi-oil-exports-near-wartime-high-as-houthis-mount-attacks",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-28T11:56:22.852948+00:00",
+   "title_ru": "Экспорт саудовской нефти почти достиг уровня военного времени из-за нападений хуситов",
+   "lead": "Saudi Arabia’s oil exports are holding near wartime highs this month despite a wave of attacks on the kingdom’s energy infrastructure and an increase in reported Iranian strikes on tankers in the Strait of Hormuz, according to…",
+   "lead_ru": "По данным…",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-27",
@@ -14912,9 +14913,9 @@
   "checked": "2026-10-28T11:41:22.847864+00:00",
   "sec_seen": [
    "0001075736-26-000120",
-   "0002082930-26-000020",
-   "0000105132-26-000105",
    "0001040470-26-000312",
+   "0000105132-26-000105",
+   "0002082930-26-000020",
    "0000105132-26-000104",
    "0001369240-26-000014",
    "0001628280-26-067694",
