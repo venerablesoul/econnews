@@ -1038,7 +1038,8 @@
   "7dc93a481415ef61": "2026-10-28T19:50:12.485695+00:00",
   "5f39c9a6e1f317ba": "2026-10-28T19:50:12.485695+00:00",
   "d9f28d5b1bdce31c": "2026-10-28T19:50:12.485695+00:00",
-  "456c53ee75a7b3af": "2026-10-28T19:55:12.941990+00:00"
+  "456c53ee75a7b3af": "2026-10-28T19:55:12.941990+00:00",
+  "0e62e7e2631396d0": "2026-10-28T20:00:12.399548+00:00"
  },
  "recent": [
   {
@@ -10031,6 +10032,22 @@
    "score": 3,
    "ts": "2026-10-28T19:55:12.941990+00:00",
    "title_ru": "Мексика и США оценивают жизнеспособность торговой сделки до среднесрочных сроков"
+  },
+  {
+   "title": "Why did the Fed hold off on raising interest rates? Warsh says it’s because an ‘information rich’ period is coming.",
+   "link": "https://www.marketwatch.com/story/why-did-the-fed-hold-off-on-raising-interest-rates-warsh-says-its-because-an-information-rich-period-is-coming-098ced8d?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 4,
+   "ts": "2026-10-28T20:00:12.399548+00:00",
+   "title_ru": "Почему ФРС воздержалась от повышения процентных ставок? Уорш говорит, что это потому, что наступает период «информационного богатства».",
+   "lead": "Federal Reserve Chairman Kevin Warsh addressed why the central bank didn’t raise interest rates on Wednesday.",
+   "lead_ru": "Председатель Федеральной резервной системы Кевин Уорш рассказал, почему центральный банк не повысил процентные ставки в среду.",
+   "tags": [
+    "Fed",
+    "rates"
+   ]
   }
  ],
  "last_digest": "2026-10-28",
@@ -12671,6 +12688,22 @@
     "date": "2026-10-28",
     "disclosed": "2026-10-28",
     "link": "https://www.sec.gov/Archives/edgar/data/2070908/000149315226048958/0001493152-26-048958-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "8129a2ae8133fe62",
+    "ticker": "HYMC",
+    "company": "HYCROFT MINING HOLDING CORP",
+    "who": "Blake Rhodes",
+    "role": "Director",
+    "type": "buy",
+    "value": 50075,
+    "shares": 3000,
+    "price": 16.69,
+    "plan": false,
+    "date": "2026-10-28",
+    "disclosed": "2026-10-28",
+    "link": "https://www.sec.gov/Archives/edgar/data/1855045/000149315226048971/0001493152-26-048971-index.htm"
    },
    {
     "src": "sec",
@@ -16639,22 +16672,6 @@
     "date": "2026-10-19",
     "disclosed": "2026-10-20",
     "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000360/0001510281-26-000360-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "6953b3a4b35777ae",
-    "ticker": "GF",
-    "company": "NEW GERMANY FUND INC",
-    "who": "Saba Capital Management, L.p.",
-    "role": "10% owner",
-    "type": "buy",
-    "value": 310659,
-    "shares": 30088,
-    "price": 10.33,
-    "plan": false,
-    "date": "2026-10-19",
-    "disclosed": "2026-10-20",
-    "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000361/0001510281-26-000361-index.htm"
    }
   ],
   "docs": {
@@ -16695,9 +16712,10 @@
   "checked": "2026-10-28T19:55:12.941990+00:00",
   "sec_seen": [
    "0001437749-26-033776",
+   "0001193125-26-436043",
    "0001437749-26-033773",
-   "0001493152-26-048958",
-   "0001193125-26-436043"
+   "0001493152-26-048971",
+   "0001493152-26-048958"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
