@@ -1056,7 +1056,8 @@
   "5d7b0044c0518c38": "2026-10-28T21:40:50.968587+00:00",
   "f4d01aeebf8c26eb": "2026-10-28T21:40:50.968587+00:00",
   "a8e771a092bb1b8c": "2026-10-28T21:40:50.968587+00:00",
-  "6527e34015e43599": "2026-10-28T21:40:50.968587+00:00"
+  "6527e34015e43599": "2026-10-28T21:40:50.968587+00:00",
+  "eda2422de3fa4118": "2026-10-28T21:45:50.997115+00:00"
  },
  "recent": [
   {
@@ -10330,6 +10331,19 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Argentina's YPF swings to billion-dollar profit as shale boom gathers pace",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNdlRVdlpnbk9WZ2VUelZkVUtwekQySUw3WlhWeVgwN1NaTjFvcjBYbl9oUk0xbFI5SUhiRkNHNl93TDFmYWx5QXkyWUNIRFZhVGgtRW8zSUtqUEpLVVFfRVlNUUI5U1hJVXROSTlHemNZVTJjM3hSUHptOEwyanh5WDQwVmRRaXR3ZzczeVpPa1VWc0xmWnR2ZGhZeVBpT2NwVWF6QlI1VS1wMGhlVFRFbzh5TXlKOURfclM0?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T21:45:50.997115+00:00",
+   "title_ru": "Аргентинский YPF получил прибыль в миллиард долларов на фоне набирающего обороты сланцевого бума",
+   "tags": [
+    "dollar"
+   ]
   }
  ],
  "last_digest": "2026-10-28",
@@ -13226,6 +13240,22 @@
     "date": "2026-10-27",
     "disclosed": "2026-10-28",
     "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000385/0001510281-26-000385-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "20214e9c9d885f7d",
+    "ticker": "DSM",
+    "company": "BNY MELLON STRATEGIC MUNICIPAL BOND FUND, INC.",
+    "who": "Saba Capital Management, L.p.",
+    "role": "10% owner",
+    "type": "buy",
+    "value": 77103,
+    "shares": 13695,
+    "price": 5.63,
+    "plan": false,
+    "date": "2026-10-27",
+    "disclosed": "2026-10-28",
+    "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000388/0001510281-26-000388-index.htm"
    },
    {
     "src": "sec",
@@ -16938,22 +16968,6 @@
     "date": "2026-10-20",
     "disclosed": "2026-10-21",
     "link": "https://www.sec.gov/Archives/edgar/data/2120783/000155485526002151/0001554855-26-002151-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "e34ecc0f159b52f9",
-    "ticker": "SYNA",
-    "company": "SYNAPTICS Inc",
-    "who": "Rahul G. Patel",
-    "role": "See remarks below",
-    "type": "sell",
-    "value": 505700,
-    "shares": 4302,
-    "price": 117.55,
-    "plan": true,
-    "date": "2026-10-20",
-    "disclosed": "2026-10-21",
-    "link": "https://www.sec.gov/Archives/edgar/data/1785783/000178578326000019/0001785783-26-000019-index.htm"
    }
   ],
   "docs": {
@@ -16994,7 +17008,6 @@
   "checked": "2026-10-28T21:00:12.519519+00:00",
   "sec_seen": [
    "0001877170-26-000004",
-   "0001193125-26-436436",
    "0001510281-26-000387",
    "0001517413-26-000322",
    "0001510281-26-000385",
@@ -17007,6 +17020,10 @@
    "0001193125-26-436386",
    "0001193125-26-436365",
    "0001104659-26-119719",
+   "0001610717-26-000445",
+   "0001510281-26-000388",
+   "0001193125-26-436444",
+   "0001193125-26-436436",
    "0001193125-26-436441"
   ],
   "errors": {
