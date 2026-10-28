@@ -964,7 +964,10 @@
   "c2bfe5ffa1b4e413": "2026-10-28T15:11:23.954140+00:00",
   "18ed1c5e54d865e7": "2026-10-28T15:11:23.954140+00:00",
   "1b4a6ae2a18e905a": "2026-10-28T15:16:22.933176+00:00",
-  "d45706439af1e9cd": "2026-10-28T15:16:22.933176+00:00"
+  "d45706439af1e9cd": "2026-10-28T15:16:22.933176+00:00",
+  "8fbee4de85410d08": "2026-10-28T15:21:23.981861+00:00",
+  "98570657ddd17a92": "2026-10-28T15:21:23.981861+00:00",
+  "fb717efa2c61e0d3": "2026-10-28T15:21:23.981861+00:00"
  },
  "recent": [
   {
@@ -9082,6 +9085,37 @@
     "Fed",
     "rates"
    ]
+  },
+  {
+   "title": "UK Budget Offers Some Tax Relief Now, Plenty More Pain Later",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-28/uk-budget-offers-some-tax-relief-now-plenty-more-pain-later",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T15:21:23.981861+00:00",
+   "title_ru": "Бюджет Великобритании предлагает некоторые налоговые льготы сейчас, гораздо больше боли позже",
+   "lead": "The UK budget touted plenty of measures designed to help households and businesses struggling with the cost of living. But the country’s grim fiscal bind means any relief will be shortlived.",
+   "lead_ru": "Бюджет Великобритании рекламировал множество мер, призванных помочь домохозяйствам и предприятиям, борющимся со стоимостью жизни. Но мрачная фискальная привязка страны означает, что любое облегчение будет кратковременным."
+  },
+  {
+   "title": "European benchmark gas price touches €100 for first time since December 2022",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOZmZZVVJDOHFvUk81TDltQmFoQmlUOTZqaGNLVEJ6UEtDMnY4VUlJd0dJVTlEZWpMX2Y3NHNOWF92QVpKUjBvdG5ybWZfYlFsNHpTOVRIUlFhWmgtcDRkNFVqdmd0ejhKTU5EWWRlRUd1bTMzM05tYjR3b0RMSHdQb2ZoVGtvQ2hDa0V2blR1bHdlRHdoZF9kbVByNlJPdVd6bTFwZW5lczBfU0p3RU1LZmpJOWtMcnhVWFkxbk9salA?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T15:21:23.981861+00:00",
+   "title_ru": "Европейская эталонная цена на газ впервые с декабря 2022 года достигла € 100"
+  },
+  {
+   "title": "Как модернизация воздушных гаваней поддерживает региональную экономику",
+   "link": "https://www.rbc.ru/economics/28/10/2026/6ae1f08b7f0c486e87792c1b",
+   "sources": [
+    "RBC"
+   ],
+   "score": 1,
+   "ts": "2026-10-28T15:21:23.981861+00:00"
   }
  ],
  "last_digest": "2026-10-27",
@@ -11511,6 +11545,22 @@
     "date": "2026-10-26",
     "disclosed": "2026-10-28",
     "link": "https://www.sec.gov/Archives/edgar/data/1467373/000136924026000014/0001369240-26-000014-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "a731407de13b83dd",
+    "ticker": "AIR",
+    "company": "AAR CORP",
+    "who": "John McClain Iii Holmes",
+    "role": "CEO",
+    "type": "sell",
+    "value": 3409178,
+    "shares": 35000,
+    "price": 97.41,
+    "plan": false,
+    "date": "2026-10-26",
+    "disclosed": "2026-10-28",
+    "link": "https://www.sec.gov/Archives/edgar/data/1554880/000000175026000106/0000001750-26-000106-index.htm"
    },
    {
     "src": "sec",
@@ -15447,22 +15497,6 @@
     "date": "2026-10-19",
     "disclosed": "2026-10-20",
     "link": "https://www.sec.gov/Archives/edgar/data/1833678/000183367826000007/0001833678-26-000007-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "732e7997e36fe24d",
-    "ticker": "UTHR",
-    "company": "UNITED THERAPEUTICS Corp",
-    "who": "Martine A Rothblatt",
-    "role": "CEO",
-    "type": "sell",
-    "value": 5161576,
-    "shares": 9500,
-    "price": 543.32,
-    "plan": true,
-    "date": "2026-10-19",
-    "disclosed": "2026-10-20",
-    "link": "https://www.sec.gov/Archives/edgar/data/1106578/000110657826000167/0001106578-26-000167-index.htm"
    }
   ],
   "docs": {
@@ -15497,9 +15531,11 @@
   },
   "checked": "2026-10-28T14:46:22.887126+00:00",
   "sec_seen": [
-   "0001510281-26-000383",
    "0001628280-26-067770",
-   "0001976408-26-000912"
+   "0001976408-26-000912",
+   "0001510281-26-000383",
+   "0001498935-26-000007",
+   "0000001750-26-000106"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
