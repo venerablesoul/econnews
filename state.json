@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "d2b9cb2c7477536d": "2026-10-25T12:01:42.586679+00:00",
   "5ba3753803d58086": "2026-10-25T12:06:42.607655+00:00",
   "543db73309ee4256": "2026-10-25T12:11:42.613204+00:00",
   "8b21902f03d7bf09": "2026-10-25T12:11:42.613204+00:00",
@@ -919,24 +918,12 @@
   "1d96477e11564b01": "2026-10-28T11:51:22.914820+00:00",
   "8115383ef3e6acdb": "2026-10-28T11:56:22.852948+00:00",
   "fc948be58ca7605a": "2026-10-28T12:01:23.001357+00:00",
-  "108f1fef0c45429e": "2026-10-28T12:01:23.001357+00:00"
+  "108f1fef0c45429e": "2026-10-28T12:01:23.001357+00:00",
+  "e385915a0f3925ae": "2026-10-28T12:06:22.882656+00:00",
+  "a3712703620450ad": "2026-10-28T12:06:22.882656+00:00",
+  "b921388159d333ec": "2026-10-28T12:06:22.882656+00:00"
  },
  "recent": [
-  {
-   "title": "Interest rates unlikely to reach 4.75% by next summer, say City economists",
-   "link": "https://www.theguardian.com/business/2026/oct/25/interest-rates-bank-of-england-rises-summer-2027",
-   "sources": [
-    "The Guardian"
-   ],
-   "score": 5,
-   "ts": "2026-10-25T12:01:42.586679+00:00",
-   "title_ru": "Экономисты Сити считают, что процентные ставки вряд ли достигнут 4,75% к следующему лету",
-   "lead": "Experts say Bank of England unlikely to increase rates by full percentage point – and could lower them by end of 2027 Financial markets are wrong to predict the Bank of England will raise UK interest rates by a full percentage…",
-   "lead_ru": "Эксперты говорят, что Банк Англии вряд ли повысит ставки на полный процентный пункт – и может снизить их к концу 2027 года. Финансовые рынки ошибаются, предсказывая, что Банк Англии поднимет процентные ставки в Великобритании на полный процент…",
-   "tags": [
-    "rates"
-   ]
-  },
   {
    "title": "Why economic health no longer dictates stock-market returns",
    "link": "https://www.marketwatch.com/story/why-economic-health-no-longer-dictates-stock-market-returns-c44b88f2?mod=mw_rss_topstories",
@@ -8525,6 +8512,38 @@
     "Fed",
     "markets"
    ]
+  },
+  {
+   "title": "- IMF eLibrary",
+   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9lZlhBdTViQ0FjYnpwTnl1VnNYbl9Za1UwRlpmTW5YeF9SVXREM0xlZmJjR0xaZFg1TXpqZEpVbVJXZnJhSmN1X0pDX2R6enBnYlY5MHNFQlVzUQ?oc=5",
+   "sources": [
+    "IMF"
+   ],
+   "score": 5,
+   "ts": "2026-10-28T12:06:22.882656+00:00",
+   "title_ru": "- Электронная библиотека МВФ"
+  },
+  {
+   "title": "Inside America's Prediction Market Boom",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-28/inside-america-s-prediction-market-boom",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T12:06:22.882656+00:00",
+   "title_ru": "Бум на рынке предсказаний в Америке",
+   "lead": "Emily Chang hits the streets of New York with Tarek Mansour, who along with Luana Lopes Lara created Kalshi, the biggest prediction market in the world.",
+   "lead_ru": "Эмили Чанг выходит на улицы Нью-Йорка с Тареком Мансуром, который вместе с Луаной Лопес Ларой создал Kalshi, самый большой рынок предсказаний в мире."
+  },
+  {
+   "title": "European banks beat profit forecasts, Brazil overshadows Santander",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxORDMtcXI0VzYtZXdTT0J5dXJsc2p3R1o1ZlZmY3VDbkxHOEFhX3A2OVpvbDJDRGcxMUdKYXJNd0xlNHc4N3RWdTVIX0JRVURfMk9MWkpnS2swc1ZMck12OXJqWDBYdnZPQlNGbW9RZWdqb0ZSRFpRSkpiZThrVjJ1MEpTM1BGR1dNRklqMjFDN1NNTjFwb2ExMDk3dG45am8xT1BkTHU2YTZXOS05?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T12:06:22.882656+00:00",
+   "title_ru": "Европейские банки превзошли прогнозы по прибыли, Бразилия затмила Сантандер"
   }
  ],
  "last_digest": "2026-10-27",
@@ -14941,9 +14960,8 @@
   "checked": "2026-10-28T11:41:22.847864+00:00",
   "sec_seen": [
    "0001075736-26-000120",
-   "0002082930-26-000020",
    "0000105132-26-000105",
-   "0001040470-26-000312",
+   "0002082930-26-000020",
    "0000105132-26-000104",
    "0001369240-26-000014",
    "0001628280-26-067694",
@@ -14958,9 +14976,9 @@
    "0001193125-26-434837",
    "0001193125-26-434839",
    "0001040470-26-000318",
+   "0001193125-26-435148",
    "0001932973-26-000024",
    "0001075736-26-000119",
-   "0001193125-26-435148",
    "0001807561-26-000022",
    "0001075736-26-000121",
    "0001628280-26-067696",
