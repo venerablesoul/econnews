@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c293588cd08c1eda": "2026-10-25T22:18:52.445586+00:00",
-  "493b1bc52cef48c9": "2026-10-25T22:18:52.445586+00:00",
-  "bbaf0e8eaa68ddce": "2026-10-25T22:23:52.455083+00:00",
   "a0d56c6adcf40c95": "2026-10-25T22:38:52.460676+00:00",
   "3c87eac76bfb315a": "2026-10-25T22:38:52.460676+00:00",
   "8b8f35348a5d1316": "2026-10-25T22:58:52.417284+00:00",
@@ -1063,21 +1060,6 @@
   "45676325404823f7": "2026-10-28T22:15:50.651997+00:00"
  },
  "recent": [
-  {
-   "title": "US Equity Futures Climb as Crude Oil Price Dips: Markets Wrap",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-25/us-equity-futures-climb-as-crude-oil-price-dips-markets-wrap",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 7,
-   "ts": "2026-10-25T22:23:52.455083+00:00",
-   "title_ru": "Фьючерсы на акции в США растут по мере падения цен на сырую нефть: рыночная конъюнктура",
-   "lead": "US stock futures advanced and crude oil retreated as traders weighed the latest geopolitical developments over Iran and looked ahead to a string of central bank rate decisions this week.",
-   "lead_ru": "Фьючерсы на акции США выросли, а сырая нефть отступила, поскольку трейдеры взвесили последние геополитические события вокруг Ирана и ожидали принятия ряда решений о ставках центрального банка на этой неделе.",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "Latest Oil Market News and Analysis for Oct. 26",
    "link": "https://www.bloomberg.com/news/articles/2026-10-25/latest-oil-market-news-and-analysis-for-oct-26",
@@ -13620,6 +13602,22 @@
    },
    {
     "src": "sec",
+    "id": "c15e3bbbc0966ff2",
+    "ticker": "META",
+    "company": "Meta Platforms, Inc.",
+    "who": "Javier Olivan",
+    "role": "COO",
+    "type": "sell",
+    "value": 1008000,
+    "shares": 1575,
+    "price": 640.0,
+    "plan": true,
+    "date": "2026-10-26",
+    "disclosed": "2026-10-28",
+    "link": "https://www.sec.gov/Archives/edgar/data/1564475/000095010326016313/0000950103-26-016313-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "366912ad66865241",
     "ticker": "WS",
     "company": "Worthington Steel, Inc.",
@@ -17009,22 +17007,6 @@
     "date": "2026-10-20",
     "disclosed": "2026-10-21",
     "link": "https://www.sec.gov/Archives/edgar/data/1204816/000120481626000055/0001204816-26-000055-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "858157ce0b17c21f",
-    "ticker": "CRF",
-    "company": "CORNERSTONE TOTAL RETURN FUND INC",
-    "who": "Joshua Bradshaw",
-    "role": "Chair",
-    "type": "buy",
-    "value": 117600,
-    "shares": 20000,
-    "price": 5.88,
-    "plan": false,
-    "date": "2026-10-20",
-    "disclosed": "2026-10-21",
-    "link": "https://www.sec.gov/Archives/edgar/data/1892951/000139834426018542/0001398344-26-018542-index.htm"
    }
   ],
   "docs": {
@@ -17067,6 +17049,7 @@
    "0001493152-26-049123",
    "0001517413-26-000322",
    "0001510281-26-000385",
+   "0000950103-26-016313",
    "0001510281-26-000386",
    "0001204816-26-000057",
    "0001193125-26-436386",
