@@ -1044,7 +1044,10 @@
   "dd353ac6399344aa": "2026-10-28T20:15:12.502293+00:00",
   "22c216981dca6d0f": "2026-10-28T20:15:12.502293+00:00",
   "ec1761895c8703a4": "2026-10-28T20:15:12.502293+00:00",
-  "92f7ee8a89ef02bf": "2026-10-28T20:15:12.502293+00:00"
+  "92f7ee8a89ef02bf": "2026-10-28T20:15:12.502293+00:00",
+  "f47e8ac794d2a4de": "2026-10-28T20:20:12.395639+00:00",
+  "7062aa23d4ba536f": "2026-10-28T20:20:12.395639+00:00",
+  "38d0cc2649458623": "2026-10-28T20:25:12.527245+00:00"
  },
  "recent": [
   {
@@ -10132,6 +10135,24 @@
    "title_ru": "Бюджет на 2026 год: Healey повышает налоги на банки и домовладельцев, чтобы финансировать £ 100 раздаточных материалов для 20 млн домохозяйств",
    "lead": "Few surprises as chancellor uses low-key speech blaming ‘global economic storms’ for stoking energy prices and cost of living crisis Budget 2026: key points at a glance Briefing: key questions answered by Heather Stewart and…",
    "lead_ru": "Немного сюрпризов, поскольку канцлер использует сдержанную речь, обвиняя «глобальные экономические штормы» в разжигании цен на энергоносители и кризисе стоимости жизни Бюджет 2026: ключевые моменты с первого взгляда Брифинг: ключевые вопросы, на которые ответили Хизер Стюарт и..."
+  },
+  {
+   "title": "U.S. oil-refinery stocks are up roughly 150% this year. How long could this historic run last?",
+   "link": "https://www.marketwatch.com/story/u-s-oil-refinery-stocks-are-up-roughly-150-this-year-how-long-could-this-historic-run-last-f01c590f?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 2,
+   "ts": "2026-10-28T20:20:12.395639+00:00"
+  },
+  {
+   "title": "ServiceNow’s stock slides as earnings miss clouds a raised AI outlook",
+   "link": "https://www.marketwatch.com/story/servicenows-stock-slides-as-earnings-miss-clouds-a-raised-ai-outlook-96e48385?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-28T20:25:12.527245+00:00"
   }
  ],
  "last_digest": "2026-10-28",
@@ -12887,6 +12908,22 @@
    },
    {
     "src": "sec",
+    "id": "9d2d1fa235df8eeb",
+    "ticker": "MEDP",
+    "company": "Medpace Holdings, Inc.",
+    "who": "Susan E Burwig",
+    "role": "Exec. VP, Operations",
+    "type": "sell",
+    "value": 13540000,
+    "shares": 20000,
+    "price": 677.0,
+    "plan": false,
+    "date": "2026-10-27",
+    "disclosed": "2026-10-28",
+    "link": "https://www.sec.gov/Archives/edgar/data/1677418/000167741826000018/0001677418-26-000018-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "3d2d067919228521",
     "ticker": "ACN",
     "company": "Accenture plc",
@@ -13028,6 +13065,38 @@
     "date": "2026-10-26",
     "disclosed": "2026-10-28",
     "link": "https://www.sec.gov/Archives/edgar/data/1577594/000119312526436146/0001193125-26-436146-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "a068ffa94164e939",
+    "ticker": "CSX",
+    "company": "CSX CORP",
+    "who": "John J Zillmer",
+    "role": "Director",
+    "type": "sell",
+    "value": 999180,
+    "shares": 19500,
+    "price": 51.24,
+    "plan": false,
+    "date": "2026-10-26",
+    "disclosed": "2026-10-28",
+    "link": "https://www.sec.gov/Archives/edgar/data/1188262/000119312526436168/0001193125-26-436168-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "2905eece8e63cd31",
+    "ticker": "LBRT",
+    "company": "Liberty Energy Inc.",
+    "who": "Ken Babcock",
+    "role": "Director",
+    "type": "buy",
+    "value": 223300,
+    "shares": 14500,
+    "price": 15.4,
+    "plan": false,
+    "date": "2026-10-26",
+    "disclosed": "2026-10-28",
+    "link": "https://www.sec.gov/Archives/edgar/data/1705702/000162828026067906/0001628280-26-067906-index.htm"
    },
    {
     "src": "sec",
@@ -16708,54 +16777,6 @@
     "date": "2026-10-19",
     "disclosed": "2026-10-21",
     "link": "https://www.sec.gov/Archives/edgar/data/1640147/000140234826000020/0001402348-26-000020-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "64d91a38cf0fb485",
-    "ticker": "PETV",
-    "company": "PetVivo Holdings, Inc.",
-    "who": "A.l. Sarroff Fund, Llc",
-    "role": "10% owner",
-    "type": "buy",
-    "value": 56127,
-    "shares": 78855,
-    "price": 0.71,
-    "plan": false,
-    "date": "2026-10-16",
-    "disclosed": "2026-10-21",
-    "link": "https://www.sec.gov/Archives/edgar/data/1553209/000109991026000286/0001099910-26-000286-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "82db0e8b17e3fa8f",
-    "ticker": "VG",
-    "company": "Venture Global, Inc.",
-    "who": "Jonathan W Thayer",
-    "role": "CFO",
-    "type": "sell",
-    "value": 2819819,
-    "shares": 222222,
-    "price": 12.69,
-    "plan": true,
-    "date": "2026-10-20",
-    "disclosed": "2026-10-20",
-    "link": "https://www.sec.gov/Archives/edgar/data/2007855/000144876526000017/0001448765-26-000017-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "e88f23a70fa678b5",
-    "ticker": "BOLD",
-    "company": "Boundless Bio, Inc.",
-    "who": "Tang Kevin et al.",
-    "role": "10% owner",
-    "type": "buy",
-    "value": 349593,
-    "shares": 149474,
-    "price": 2.34,
-    "plan": false,
-    "date": "2026-10-20",
-    "disclosed": "2026-10-20",
-    "link": "https://www.sec.gov/Archives/edgar/data/1782303/000117857926000019/0001178579-26-000019-index.htm"
    }
   ],
   "docs": {
@@ -16795,29 +16816,27 @@
   },
   "checked": "2026-10-28T19:55:12.941990+00:00",
   "sec_seen": [
-   "0000086312-26-000192",
-   "0001193125-26-436134",
+   "0000036966-26-000189",
+   "0001370946-26-000219",
+   "0001193125-26-436186",
+   "0001193125-26-436188",
+   "0001656656-26-000012",
+   "0002160550-26-000005",
    "0001193125-26-436146",
-   "0001225208-26-008543",
-   "0001439222-26-000124",
-   "0001225208-26-008545",
-   "0001079973-26-001407",
-   "0001231845-26-000008",
-   "0000093751-26-000599",
-   "0001178913-26-004892",
-   "0001193125-26-436131",
-   "0001597870-26-000027",
+   "0001628280-26-067906",
+   "0001894801-26-000006",
+   "0002159611-26-000002",
+   "0001628280-26-067898",
    "0001870974-26-000022",
-   "0000035527-26-000231",
-   "0002160533-26-000008",
-   "0001819880-26-000006",
-   "0001225208-26-008544",
-   "0001225208-26-008542",
-   "0002048497-26-000023",
-   "0001628280-26-067887",
-   "0001225208-26-008546",
-   "0001225208-26-008547",
-   "0001437749-26-033782"
+   "0002053089-26-000003",
+   "0001193125-26-436190",
+   "0001628280-26-067904",
+   "0001123292-26-001443",
+   "0001677418-26-000018",
+   "0000905148-26-004585",
+   "0001193125-26-436168",
+   "0001359115-26-000013",
+   "0001565687-26-000130"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
