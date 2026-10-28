@@ -983,7 +983,8 @@
   "aa8468857d17e181": "2026-10-28T16:05:12.400315+00:00",
   "f908e17e2fd32be1": "2026-10-28T16:10:12.468714+00:00",
   "ac76c270f80b0673": "2026-10-28T16:10:12.468714+00:00",
-  "7d75ab0bf6fa2ac7": "2026-10-28T16:10:12.468714+00:00"
+  "7d75ab0bf6fa2ac7": "2026-10-28T16:10:12.468714+00:00",
+  "33fb4b6530cfc26c": "2026-10-28T16:20:12.461262+00:00"
  },
  "recent": [
   {
@@ -9253,6 +9254,16 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Healey Says UK Facing ‘Global Economic Storms’ in First Budget",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQdFdrM2JzZTRhVkZtS1VOUF9aMngzdk1Jd2V5THNyTFZEZ09JNFFSdDdhNGlWYnhuMUEzVUxoNzQ4dFdoQXdoSWZiUFFlQVpzN3hjTC02amZGOGplR1VYbTRpNzVLMGFpUXl2Z0FJV1dlX3ZNVGhXQTVQaU1CLVpISHByOUpFaEtXXzlyUnhaQjdJR0MyMHVhQS1tajdfeWh0T0wxelE1dm1RWE10VWZ6cA?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-28T16:20:12.461262+00:00",
+   "title_ru": "Хили говорит, что Великобритания сталкивается с «глобальными экономическими штормами» в первом бюджете"
   }
  ],
  "last_digest": "2026-10-27",
@@ -15914,11 +15925,10 @@
   "checked": "2026-10-28T15:50:12.637813+00:00",
   "sec_seen": [
    "0000939057-26-000280",
-   "0001976408-26-000913",
-   "0001976408-26-000914",
    "0001437749-26-033726",
    "0002114034-26-000009",
-   "0002114067-26-000009"
+   "0002114067-26-000009",
+   "0002114019-26-000008"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
