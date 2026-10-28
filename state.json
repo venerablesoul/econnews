@@ -950,7 +950,10 @@
   "21c9d96e8a1ab0c3": "2026-10-28T14:01:22.836074+00:00",
   "995784564b93905f": "2026-10-28T14:01:22.836074+00:00",
   "51d3a2e361c8aec9": "2026-10-28T14:06:22.868540+00:00",
-  "9288766abdd5cd48": "2026-10-28T14:06:22.868540+00:00"
+  "9288766abdd5cd48": "2026-10-28T14:06:22.868540+00:00",
+  "c4daf5e9827c705a": "2026-10-28T14:11:22.825103+00:00",
+  "899fbc16799d5aba": "2026-10-28T14:11:22.825103+00:00",
+  "e9dbb74b405d7181": "2026-10-28T14:11:22.825103+00:00"
  },
  "recent": [
   {
@@ -8886,6 +8889,31 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Investors Jolted by Lula Win Search for Bottom After Brazil Rout",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-28/investors-jolted-by-lula-win-search-for-bottom-after-brazil-rout",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T14:11:22.825103+00:00",
+   "title_ru": "Инвесторы, взволнованные Лулой, выигрывают поиск дна после бразильского маршрута",
+   "lead": "Investors blindsided by President Luiz Inácio Lula da Silva’s re-election are balking at buying into Brazil’s markets after bullish bets on the nation’s assets unraveled spectacularly.",
+   "lead_ru": "Инвесторы, ошеломленные переизбранием президента Луиса Инасиу Лулы да Силвы, отказываются покупать на бразильских рынках после того, как бычьи ставки на активы страны впечатляюще развалились."
+  },
+  {
+   "title": "COMMENTARY: ECB can cool rate bets, but may not want to yet",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPaG8tZ1VDYmVRZ3M3MWFadDRTYXUyQ0tOeGtFenNJU0oyZXlrRHV3VHBMYUZNOHNiaE5QcFJZRHhkbERBbThSNUZGNjJ2b1ljLWdzcUxEWHk5QkNzWmtaeXZhSkZPd2ZwSE5OcWVFTWRpN1JNUi1KdE5lLUhCTGwxbm5YcnE5SGR2QklBYzI3dGU1SzltWHhDTHFaaVk0WllDV3BESVh4ajF5dHp5?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-28T14:11:22.825103+00:00",
+   "title_ru": "КОММЕНТАРИЙ: ЕЦБ может охладить ставки, но, возможно, пока не хочет этого делать",
+   "tags": [
+    "ECB"
+   ]
   }
  ],
  "last_digest": "2026-10-27",
@@ -15302,8 +15330,8 @@
   "checked": "2026-10-28T13:46:22.847622+00:00",
   "sec_seen": [
    "0001767612-26-000006",
-   "0001104659-26-119430",
-   "0001209992-26-000052"
+   "0001209992-26-000052",
+   "0001104659-26-119430"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
