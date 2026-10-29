@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "3e34e7a03b6ab601": "2026-10-26T22:32:01.139598+00:00",
   "e82156e97596f10f": "2026-10-26T22:52:01.178691+00:00",
   "00111d8c171a3b8b": "2026-10-26T22:52:01.178691+00:00",
   "bcbfbd1e7420d795": "2026-10-26T23:02:01.230282+00:00",
@@ -1067,24 +1066,10 @@
   "a89ed290ff2739e6": "2026-10-29T22:18:37.002906+00:00",
   "eb57745865ba1c8e": "2026-10-29T22:18:37.002906+00:00",
   "59b28a2b9d41bf2d": "2026-10-29T22:23:36.841735+00:00",
-  "a9301b95a666b85e": "2026-10-29T22:28:36.893006+00:00"
+  "a9301b95a666b85e": "2026-10-29T22:28:36.893006+00:00",
+  "4b3c04b35044d568": "2026-10-29T22:33:36.873856+00:00"
  },
  "recent": [
-  {
-   "title": "Healey vows cheaper marmalade and gherkins in pre-Budget package of 'everyday fixes'",
-   "link": "https://www.bbc.co.uk/news/articles/c6d93gq1xdgno?at_medium=RSS&at_campaign=rss",
-   "sources": [
-    "BBC"
-   ],
-   "score": 4,
-   "ts": "2026-10-26T22:32:01.139598+00:00",
-   "title_ru": "Хили обещает удешевить мармелад и корнишоны в предбюджетном пакете «повседневных исправлений»",
-   "lead": "The chancellor will axe tariffs on some staples as part of plans to give households \"breathing space\".",
-   "lead_ru": "Канцлер снимет тарифы на некоторые продукты питания в рамках планов по предоставлению домохозяйствам «передышки».",
-   "tags": [
-    "tariffs"
-   ]
-  },
   {
    "title": "Memory Titans Test AI Demand While Bubble Fears Transfix Markets",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQR1NNS1ZjY0QxRUJaLXBTSkNHenBNQU8ySk1rT0FhbmItdVEyZFJhamF3OFdFb2kzZ0EtUW1ZV0g2SDM1cVI2TXdTMjJSNFJRZjM0NXZKbEs5OUFNZjgtSGN0RUpRemdKM2FVbzJxTm1rQkVGdldVdDdORFl0UWRDRzhNeURmWWlBUmpveXNOZk95TjBGa1dSYVB6VHJYUkdxVXptYjRtWVVfX1hTa01vTHhwa2c3QQ?oc=5",
@@ -11482,6 +11467,19 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Brazil interest burden climbs to 9% of GDP, highest since 2016",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNNm9QUjJVdnFTZndQcW1tSUhvelRvc1BCQWlxMHhkRVUyTGkyWlhJcEJBcmVLX29VMzhtemllek9xLVhyZW1WWnlBT0xOYmFXckpBSndSZ0tpZDhVVzF3X0FXUFdxRTJmU2xXY1ZKVV8tZnRUaU1XdjVvb1ZTM3pjMGx1elBiRnlMWXJLTElGX2pDYm5uYV9MdUFKempKSDIwUFZORXc3M0k?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-29T22:33:36.873856+00:00",
+   "title_ru": "Процентное бремя Бразилии выросло до 9% ВВП, что является самым высоким показателем с 2016 года",
+   "tags": [
+    "GDP"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -14657,6 +14655,22 @@
    },
    {
     "src": "sec",
+    "id": "ca120961a9a0fd10",
+    "ticker": "KEY",
+    "company": "KEYCORP /NEW/",
+    "who": "Andrew J Iii Paine",
+    "role": "Head of Institutional Bank",
+    "type": "sell",
+    "value": 829556,
+    "shares": 39130,
+    "price": 21.2,
+    "plan": false,
+    "date": "2026-10-28",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/1669883/000166988326000003/0001669883-26-000003-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "4149df768ae321c5",
     "ticker": "BMN",
     "company": "BlackRock 2037 Municipal Target Term Trust",
@@ -14910,6 +14924,22 @@
     "date": "2026-10-27",
     "disclosed": "2026-10-29",
     "link": "https://www.sec.gov/Archives/edgar/data/1782303/000117857926000022/0001178579-26-000022-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "1c90e142fd86b486",
+    "ticker": "AAPL",
+    "company": "Apple Inc.",
+    "who": "Jennifer Newstead",
+    "role": "SVP, GC and Government Affairs",
+    "type": "sell",
+    "value": 823721,
+    "shares": 2399,
+    "price": 343.36,
+    "plan": true,
+    "date": "2026-10-27",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/1780525/000114036126041201/0001140361-26-041201-index.htm"
    },
    {
     "src": "sec",
@@ -18094,38 +18124,6 @@
     "date": "2026-10-22",
     "disclosed": "2026-10-22",
     "link": "https://www.sec.gov/Archives/edgar/data/2012593/000119312526429071/0001193125-26-429071-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "6e577ad20e9be2f8",
-    "ticker": "DOLE",
-    "company": "Dole plc",
-    "who": "Pale Fire Capital Se et al.",
-    "role": "10% owner",
-    "type": "buy",
-    "value": 8554410,
-    "shares": 648356,
-    "price": 13.19,
-    "plan": false,
-    "date": "2026-10-22",
-    "disclosed": "2026-10-22",
-    "link": "https://www.sec.gov/Archives/edgar/data/2055254/000092189526002845/0000921895-26-002845-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "77ae1ea5a5cfd31c",
-    "ticker": "LIND",
-    "company": "LINDBLAD EXPEDITIONS HOLDINGS, INC.",
-    "who": "Sven-Olof Lindblad",
-    "role": "Director, 10% owner",
-    "type": "sell",
-    "value": 8638477,
-    "shares": 240989,
-    "price": 35.85,
-    "plan": false,
-    "date": "2026-10-22",
-    "disclosed": "2026-10-22",
-    "link": "https://www.sec.gov/Archives/edgar/data/1639304/000089706926001865/0000897069-26-001865-index.htm"
    }
   ],
   "docs": {
@@ -18172,8 +18170,8 @@
    "0001193125-26-438181",
    "0001193125-26-438479",
    "0001213900-26-113918",
-   "0001193125-26-438480",
    "0001193125-26-438427",
+   "0001193125-26-438480",
    "0000935703-26-000122",
    "0000950103-26-016447",
    "0001510281-26-000392",
@@ -18181,22 +18179,25 @@
    "0001583109-26-000004",
    "0000950103-26-016446",
    "0001130144-26-000060",
-   "0001194702-26-000013",
    "0001193125-26-438186",
+   "0001194702-26-000013",
+   "0000944075-26-000075",
    "0001368054-26-000004",
+   "0001669883-26-000003",
    "0001510281-26-000393",
    "0000950103-26-016445",
    "0001748076-26-000005",
-   "0002148161-26-000012",
+   "0001140361-26-041201",
    "0002135314-26-000014",
+   "0000897069-26-001877",
    "0001510281-26-000391",
    "0001193125-26-438273",
    "0000935703-26-000124",
    "0001193125-26-438275",
-   "0001492126-26-000013",
    "0001193125-26-438188",
    "0001040470-26-000323",
    "0001130144-26-000062",
+   "0001193125-26-438274",
    "0001178579-26-000022",
    "0000950103-26-016448",
    "0000950103-26-016444",
@@ -18205,10 +18206,11 @@
    "0002104631-26-000018",
    "0002043764-26-000008",
    "0000905874-26-000003",
+   "0000944075-26-000076",
    "0000950103-26-016449",
-   "0001193125-26-438274",
+   "0002148161-26-000012",
    "0000899140-26-001161",
-   "0000897069-26-001877"
+   "0001492126-26-000013"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
