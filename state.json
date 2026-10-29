@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "178c42b4d7f0694c": "2026-10-26T13:30:24.475710+00:00",
   "ade61155197521b6": "2026-10-26T13:35:24.200123+00:00",
   "fab0dc6032b2a105": "2026-10-26T13:35:24.200123+00:00",
   "f211fc3408503a8e": "2026-10-26T13:40:24.138117+00:00",
@@ -1035,21 +1034,11 @@
   "68afd8722dec3a81": "2026-10-29T13:25:15.720927+00:00",
   "844fe7b872b37ee3": "2026-10-29T13:25:15.720927+00:00",
   "3f6aed5d96f90e49": "2026-10-29T13:30:15.714411+00:00",
-  "8bc5d7a626ffb2b5": "2026-10-29T13:30:15.714411+00:00"
+  "8bc5d7a626ffb2b5": "2026-10-29T13:30:15.714411+00:00",
+  "e28c57ca64cf0871": "2026-10-29T13:35:15.698185+00:00",
+  "d10627dd9d0703ae": "2026-10-29T13:35:15.698185+00:00"
  },
  "recent": [
-  {
-   "title": "Anthropic unveils details of planned historic stock market debut",
-   "link": "https://www.bbc.co.uk/news/articles/cq398p1wd1evo?at_medium=RSS&at_campaign=rss",
-   "sources": [
-    "BBC"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T13:30:24.475710+00:00",
-   "title_ru": "Anthropic раскрывает подробности запланированного исторического дебюта на фондовом рынке",
-   "lead": "The company will be the first true artificial intelligence company to go public as tech firms continue to invest heavily in AI.",
-   "lead_ru": "Компания станет первой настоящей компанией в области искусственного интеллекта, которая станет публичной, поскольку технологические компании продолжают активно инвестировать в ИИ."
-  },
   {
    "title": "Anthropic's IPO: A close look at AI frontrunner's rapid growth, spiraling costs",
    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPX1UzRjJ6M0VaSXoydWlIZ2pzc2tGcUZtMjlzR1JhUE9UR0llUERrRWRJNUdTRWNNQU9IUUEycmZUVk40cEtCSjZ5TzRqZVRWT1JvMEtmQmlENklzd19LLWlDREZZakJ0MWdTOTZleEdBN1FVRFJGMGxHWnpkY2owdVFSQ0FWWHNFcWlPTUtpb1ZDRkZrY0tUMkZrdHRJMnFJZEZveXVQaG41OHFibWFyMWpfNG9jTlR0aTM1enNKT18?oc=5",
@@ -10822,6 +10811,19 @@
     "ECB",
     "rates"
    ]
+  },
+  {
+   "title": "US inflation heats up in September; consumer spending rises",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNamNwQk5mVXlad05tREVFeXVRU29iOGZLMHJLQ3dhQURxb2s2OXNfYzhjQ2tmakJEUFpJcU9FUlZrZmY1czdGVXpsYzVaY21EaVR3R2NDM3pfeEpXYVpRQmZOSXphSXdSMDlyM0plUnlvVnJCdkVhd2Q2dlhOTjUwQm42TE1uYVpsUEJEX1V0WHJ1cVZXajFSNm9zcHlGTUprQWc?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-29T13:35:15.698185+00:00",
+   "title_ru": "Инфляция в США накаляется в сентябре; потребительские расходы растут",
+   "tags": [
+    "inflation"
+   ]
   }
  ],
  "last_digest": "2026-10-28",
@@ -17491,20 +17493,14 @@
   "checked": "2026-10-29T12:41:43.408333+00:00",
   "sec_seen": [
    "0001770870-26-000012",
-   "0001493152-26-049173",
-   "0001493152-26-049164",
-   "0001493152-26-049167",
    "0001628280-26-068019",
    "0001628280-26-068025",
-   "0001493152-26-049170",
    "0001628280-26-068012",
    "0001193125-26-437062",
    "0001493152-26-049183",
    "0001213900-26-113597",
    "0001628280-26-068016",
    "0001628280-26-068031",
-   "0001493152-26-049156",
-   "0001493152-26-049161",
    "0001513845-26-000143",
    "0001493152-26-049175",
    "0001628280-26-068033",
