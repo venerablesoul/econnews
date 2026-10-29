@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "6f796792f7bfa601": "2026-10-26T23:27:01.166672+00:00",
-  "e4fd510be0e4e785": "2026-10-26T23:27:01.166672+00:00",
   "dc7e498fa993f6a0": "2026-10-26T23:32:01.308262+00:00",
   "b5284156bba2b5bf": "2026-10-26T23:32:01.308262+00:00",
   "80c70211379a9274": "2026-10-26T23:47:01.184948+00:00",
@@ -1069,29 +1067,11 @@
   "68e0a36c4fe143ca": "2026-10-29T23:18:36.897027+00:00",
   "90df598ceb2b6ffc": "2026-10-29T23:18:36.897027+00:00",
   "5abde9bd965e591d": "2026-10-29T23:23:36.874540+00:00",
-  "b8dcf0c0683c3233": "2026-10-29T23:23:36.874540+00:00"
+  "b8dcf0c0683c3233": "2026-10-29T23:23:36.874540+00:00",
+  "2c91e6a5fbac01dc": "2026-10-29T23:28:36.858438+00:00",
+  "23ac2e98b2099808": "2026-10-29T23:28:36.858438+00:00"
  },
  "recent": [
-  {
-   "title": "US consumers paying the most for fuel price spikes from Iran war, study says",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNQXI0Ml92cUxsR2hZRHB2OHJLOXIxeHA5MkFFU2JTb091Vk93VXRZdEZ1MFV6OUE4eFBubzhPcDA4M1ZSSjNBN0hzR3dwci1RQzNRcVM1eFJEY0MxTGVRNWdEVGpxWTJvRWl0aFNmWHhYYjBpeDljSjNsRUV5eDlyRGZqVEctMjYyYkZ0cEFHSTB3RWJmc1FxeFZ2VnI2NW9jZHhkV0R5TmJKWkRIZlJ2U3BQbV8?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T23:27:01.166672+00:00",
-   "title_ru": "Потребители в США больше всего платят за скачки цен на топливо из-за войны в Иране, говорится в исследовании"
-  },
-  {
-   "title": "South Korea's economy grows faster than expected in third quarter",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPclJITG5OM3lQUHFQQXI0Z0QxNTEzU2RjOXNHakE5aXZiWkJNUjVpYUtiNE1OcVNIY3dNMkxsTHQ3TlpfbnFXM2M0N3VSdDdXbEktX29CaFhLWnZMYS1fWGFpSmo4aERwRkpKTTJPNmRqMVcxTVFONFBnN04yM2FoRlBoaGRkb0YxNmJmU3JTSEJIR3I5N2I0ZndDREZsU01vOEhIa1RqRzlJQ1lhODJubEllc3d4MzQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T23:27:01.166672+00:00",
-   "title_ru": "Экономика Южной Кореи в третьем квартале растет быстрее, чем ожидалось"
-  },
   {
    "title": "Gold Steadies Above $4,000 With Fed Rate Decision in Focus",
    "link": "https://www.bloomberg.com/news/articles/2026-10-26/gold-steadies-above-4-000-with-fed-rate-decision-in-focus",
@@ -14323,6 +14303,22 @@
    },
    {
     "src": "sec",
+    "id": "5193d4773c7dca79",
+    "ticker": "SCHW",
+    "company": "SCHWAB CHARLES CORP",
+    "who": "Charles R. Schwab",
+    "role": "Chair",
+    "type": "sell",
+    "value": 18105625,
+    "shares": 203150,
+    "price": 89.12,
+    "plan": false,
+    "date": "2026-10-29",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/923738/000092373826000048/0000923738-26-000048-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "3419e6ac69fcaa22",
     "ticker": "API",
     "company": "Agora, Inc.",
@@ -18096,22 +18092,6 @@
     "date": "2026-10-22",
     "disclosed": "2026-10-22",
     "link": "https://www.sec.gov/Archives/edgar/data/1084777/000149315226048080/0001493152-26-048080-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "5a0406e44b12a13e",
-    "ticker": "ACN",
-    "company": "Accenture plc",
-    "who": "Ryoji Sekido",
-    "role": "CEO",
-    "type": "sell",
-    "value": 1430826,
-    "shares": 5844,
-    "price": 244.84,
-    "plan": false,
-    "date": "2026-10-22",
-    "disclosed": "2026-10-22",
-    "link": "https://www.sec.gov/Archives/edgar/data/2030833/000203083326000004/0002030833-26-000004-index.htm"
    }
   ],
   "docs": {
@@ -18156,9 +18136,8 @@
   "checked": "2026-10-29T23:18:36.897027+00:00",
   "sec_seen": [
    "0001193125-26-438479",
-   "0001213900-26-113918",
-   "0001193125-26-438427",
    "0001193125-26-438480",
+   "0001193125-26-438427",
    "0000950103-26-016447",
    "0001895106-26-000022",
    "0001193125-26-438200",
@@ -18174,32 +18153,33 @@
    "0001628280-26-068348",
    "0001510281-26-000393",
    "0001895111-26-000021",
-   "0000950103-26-016445",
    "0001748076-26-000005",
    "0001193125-26-438722",
+   "0002148161-26-000012",
+   "0001392941-26-000017",
    "0001140361-26-041201",
-   "0000897069-26-001877",
    "0001193125-26-438273",
-   "0000935703-26-000124",
    "0001193125-26-438275",
+   "0001492126-26-000013",
    "0000944075-26-000078",
    "0001040470-26-000323",
    "0001130144-26-000062",
-   "0001193125-26-438274",
    "0001178579-26-000022",
    "0001628280-26-068337",
    "0001193125-26-438662",
    "0000950103-26-016448",
-   "0000950103-26-016444",
+   "0001392942-26-000016",
+   "0000950142-26-002898",
    "0001891054-26-000002",
    "0002104631-26-000018",
+   "0000923738-26-000048",
    "0002043764-26-000008",
    "0000905874-26-000003",
    "0000944075-26-000076",
    "0000950103-26-016449",
-   "0002148161-26-000012",
+   "0001193125-26-438274",
    "0000899140-26-001161",
-   "0001492126-26-000013",
+   "0000897069-26-001877",
    "0000724004-26-000098"
   ],
   "errors": {
