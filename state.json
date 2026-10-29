@@ -1069,7 +1069,9 @@
   "b29057abfff297c2": "2026-10-29T21:03:37.001065+00:00",
   "284e5e9ca6e2b9b3": "2026-10-29T21:08:36.901382+00:00",
   "14d266591ca79ac5": "2026-10-29T21:13:37.144786+00:00",
-  "db71ba08d16d8fb9": "2026-10-29T21:13:37.144786+00:00"
+  "db71ba08d16d8fb9": "2026-10-29T21:13:37.144786+00:00",
+  "c8b11f96ced0f035": "2026-10-29T21:28:36.849756+00:00",
+  "b400b2d3fb8eafd1": "2026-10-29T21:28:36.849756+00:00"
  },
  "recent": [
   {
@@ -11464,6 +11466,33 @@
    "score": 4,
    "ts": "2026-10-29T21:13:37.144786+00:00",
    "title_ru": "Британский Хили избавляет рынки от драмы, но бюджет не полностью свободен от утечек"
+  },
+  {
+   "title": "US GDP looks good, inflation doesn't, and savings won't last forever",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1BOTEzTlhac0ZpSk0wVzlCYW05bTlUMGx1dWV2T1Z0UUhqXzFBVDdaTEtRaE8wS1ZmdFRua0tndU1tWkM4ZGNGYzhJSjVUV2R0WWhsTklwZjdzY1lpRUs5UXR3VWpucDQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 8,
+   "ts": "2026-10-29T21:28:36.849756+00:00",
+   "title_ru": "ВВП США выглядит хорошо, инфляция – нет, а сбережения не вечны",
+   "tags": [
+    "inflation",
+    "GDP"
+   ]
+  },
+  {
+   "title": "Breakingviews - COMMENTARY: Next ECB chief matters more for France than rates",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxONUhXNjlfaENzM2hHWUxfWjQyY0k2UTQ0ekpXOUZUZWpYMlFJN21HTjN3OTFpTHFqUnF0aGs5czRKc2xYWTJXTF9SS1VIMkJfcTZNaEtDOF9DRjhQREZiTUNKQmRmQXA5YnlfS09VQ0FiRkdSQUFSX1ZPbnJnMkVkN0lrbmxEQzhjNEYzVFFHR0t6dlR3Y1pYVllIR0xpM1ZHSHJ2S0lPUXcyUQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T21:28:36.849756+00:00",
+   "title_ru": "Последние новости - КОММЕНТАРИЙ: Следующий глава ЕЦБ важнее для Франции, чем ставки",
+   "tags": [
+    "ECB"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -14204,6 +14233,22 @@
     "date": "2026-10-29",
     "disclosed": "2026-10-29",
     "link": "https://www.sec.gov/Archives/edgar/data/1334072/000008734726000128/0000087347-26-000128-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "0bb64d73569bee28",
+    "ticker": "DINO",
+    "company": "HF Sinclair Corp",
+    "who": "Franklin Myers",
+    "role": "CEO",
+    "type": "buy",
+    "value": 1108000,
+    "shares": 10000,
+    "price": 110.8,
+    "plan": false,
+    "date": "2026-10-29",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/1915657/000119312526438100/0001193125-26-438100-index.htm"
    },
    {
     "src": "sec",
@@ -18092,22 +18137,6 @@
     "date": "2026-10-21",
     "disclosed": "2026-10-22",
     "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000372/0001510281-26-000372-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "86056a6811608797",
-    "ticker": "KMTS",
-    "company": "KESTRA MEDICAL TECHNOLOGIES, LTD.",
-    "who": "Traci S Umberger",
-    "role": "See Remarks",
-    "type": "sell",
-    "value": 2718318,
-    "shares": 100000,
-    "price": 27.18,
-    "plan": true,
-    "date": "2026-10-21",
-    "disclosed": "2026-10-22",
-    "link": "https://www.sec.gov/Archives/edgar/data/1877198/000119312526428980/0001193125-26-428980-index.htm"
    }
   ],
   "docs": {
@@ -18155,15 +18184,13 @@
    "0001193125-26-438080",
    "0001628280-26-068309",
    "0001628280-26-068306",
-   "0000087347-26-000128",
-   "0001437749-26-034009",
    "0001437749-26-034007",
-   "0001437749-26-033993",
+   "0001437749-26-034009",
+   "0000087347-26-000128",
    "0001193125-26-438051",
-   "0001049521-26-000090",
+   "0001193125-26-438100",
    "0001193125-26-438085",
    "0001193125-26-438086",
-   "0001185185-26-005072",
    "0001510281-26-000390",
    "0001628280-26-068308",
    "0001049521-26-000092",
