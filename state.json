@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c55509c82e691cac": "2026-10-26T15:46:22.717194+00:00",
-  "89c7903a2878620c": "2026-10-26T15:46:22.717194+00:00",
   "677c33702f2e9feb": "2026-10-26T15:56:22.726397+00:00",
   "3630ed0bf249e05c": "2026-10-26T15:56:22.726397+00:00",
   "d902d28ad2be77b2": "2026-10-26T15:56:22.726397+00:00",
@@ -1056,18 +1054,11 @@
   "9c714e6f5fcdded7": "2026-10-29T15:30:15.651229+00:00",
   "2f582076b74cca0a": "2026-10-29T15:40:15.681005+00:00",
   "d4e01cea426f0475": "2026-10-29T15:40:15.681005+00:00",
-  "a497d18d1ab612e8": "2026-10-29T15:45:16.705650+00:00"
+  "a497d18d1ab612e8": "2026-10-29T15:45:16.705650+00:00",
+  "0dcd5ae070c87d3a": "2026-10-29T15:55:15.661925+00:00",
+  "1e2ee9828f322bee": "2026-10-29T15:55:15.661925+00:00"
  },
  "recent": [
-  {
-   "title": "Курс украинской гривны к доллару США снизился на 34 копейки",
-   "link": "https://www.rbc.ru/rbcfreenews/6adf6baff98ac3abf29cbe03",
-   "sources": [
-    "RBC"
-   ],
-   "score": 1,
-   "ts": "2026-10-26T15:46:22.717194+00:00"
-  },
   {
    "title": "- International Monetary Fund | IMF",
    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1IZ1E1eWRwNjl5VFptTmhIYmdLN20xRzlxMDhFbENHVkFxaDAwV2RYcDloZzhDUkRQNmxIN3BXNU1faG05QVFFS3dmY0d2Z2VNcUNNY1lUNFJnb2c3X2ZOZi1ZMkFTYTVaX3pBRkxZTVRNVGEzT0pqOQ?oc=5",
@@ -11118,6 +11109,16 @@
     "rates",
     "inflation"
    ]
+  },
+  {
+   "title": "Piero Cipollone: Next-day securities settlement, tokenisation and the transformation of Europe’s financial infrastructure",
+   "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261029~e9b57c3495.en.html",
+   "sources": [
+    "ECB"
+   ],
+   "score": 4,
+   "ts": "2026-10-29T15:55:15.661925+00:00",
+   "title_ru": "Пьеро Чиполлоне: Расчеты по ценным бумагам на следующий день, токенизация и трансформация финансовой инфраструктуры Европы"
   }
  ],
  "last_digest": "2026-10-28",
@@ -17787,6 +17788,8 @@
   "checked": "2026-10-29T15:45:16.705650+00:00",
   "sec_seen": [
    "0001463254-26-000008",
+   "0001437749-26-033873",
+   "0001225208-26-008551",
    "0001364954-26-000097"
   ],
   "errors": {
