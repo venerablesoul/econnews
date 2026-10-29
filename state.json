@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c6e2cd87793b1a30": "2026-10-26T09:35:24.244114+00:00",
-  "a598a1a8273e52f9": "2026-10-26T09:35:24.244114+00:00",
-  "b394f5f216553cd5": "2026-10-26T09:35:24.244114+00:00",
   "5f42bc88d5d9f8b3": "2026-10-26T09:40:24.585771+00:00",
   "4f510a4a1f142f19": "2026-10-26T09:40:24.585771+00:00",
   "36c085a335f40594": "2026-10-26T09:45:24.205670+00:00",
@@ -1029,22 +1026,10 @@
   "abf5dbff786db7d3": "2026-10-29T09:01:43.439734+00:00",
   "97b6799f20ddd115": "2026-10-29T09:11:43.389641+00:00",
   "a977c5953f606ee7": "2026-10-29T09:31:43.378808+00:00",
-  "d30edcb80ad676b3": "2026-10-29T09:31:43.378808+00:00"
+  "d30edcb80ad676b3": "2026-10-29T09:31:43.378808+00:00",
+  "26fdecbf9a2be4ff": "2026-10-29T09:36:43.399434+00:00"
  },
  "recent": [
-  {
-   "title": "UK hostel operator Safestay exploring more property sales to boost liquidity, shares tumble",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNRVVQVnlZOGhXS1hPVjdLLXg5NEFBYUxMeF82UEQ1SUhWcWx1Ym9EZXYyMEhLRE9kUTZKZzl3emVNR3lRa1Myb0RaQm5FVjJJRlZaSlQtTmFFYUpjUW8ya3gtSTdQYlB2bFZnTWtVUk9oZVktb3A4ZFRHS0lFd0Zua01xdzNFb2hpSnRrb0RqbVE2UEtFOFlrUWxrVUxDQ1Utamwxc0ZtWml4dnpjZzNnOHY3V1FSdXNQM2RXTFJqS3dYb28?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T09:35:24.244114+00:00",
-   "title_ru": "Британский оператор хостелов Safestay рассматривает возможность увеличения продаж недвижимости для повышения ликвидности, акции падают",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "CoreWeave Rout Sends Warning Sign to Rest of the Stock Market",
    "link": "https://www.bloomberg.com/news/articles/2026-10-26/coreweave-rout-sends-warning-sign-to-rest-of-the-stock-market",
@@ -10645,6 +10630,16 @@
    "score": 5,
    "ts": "2026-10-29T09:31:43.378808+00:00",
    "title_ru": "Испанские спасатели обыскивают поезда в надежде найти выживших в смертельной катастрофе."
+  },
+  {
+   "title": "Europe’s Earnings Growth to Rival US for the First Time in Years",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNREsxTXlkaXVmSXpCZEtfTTJxUkdwRDZRYWlfc2JNRjBTRGZjWEttOUJkLU52dWdoUlVtVFpSSHIxNnd4X1lvcUMySFlJZ2VqQ0hOZDhIWUV1T0VrWXhqRVJXZ3IyWTJmQ1dmYnh4Z0JHSXFHM2RBQWp6dURLWUl2eTJWR1lmS3FCWURnUElpVUFPdlZidG9VLTB5a3JzYzFPdzRMQ1RweTJNWVUtMnVEdkVJLWxNUQ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-29T09:36:43.399434+00:00",
+   "title_ru": "Рост доходов в Европе впервые за несколько лет может составить конкуренцию США"
   }
  ],
  "last_digest": "2026-10-28",
@@ -17312,8 +17307,8 @@
    "0000933029-26-000004",
    "0001628280-26-067986",
    "0001605957-26-000005",
-   "0001577526-26-000167",
    "0002103469-26-000014",
+   "0001577526-26-000167",
    "0001193125-26-436562",
    "0001104659-26-119784",
    "0002127826-26-000007",
