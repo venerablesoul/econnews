@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "419caf214ab143c0": "2026-10-26T13:10:24.182897+00:00",
-  "ada6089820a5edae": "2026-10-26T13:10:24.182897+00:00",
   "588ec28156e9917a": "2026-10-26T13:15:24.138192+00:00",
   "f686ba32bc778cf6": "2026-10-26T13:15:24.138192+00:00",
   "8e9e4a8f3bcf51d1": "2026-10-26T13:20:24.212848+00:00",
@@ -1038,19 +1036,11 @@
   "8b606ddfe079283e": "2026-10-29T12:51:43.422192+00:00",
   "0640b62a2ed0ac22": "2026-10-29T12:56:43.504650+00:00",
   "1495b74b02462c18": "2026-10-29T13:01:44.102878+00:00",
-  "fda9b7c5534f9232": "2026-10-29T13:06:43.684864+00:00"
+  "fda9b7c5534f9232": "2026-10-29T13:06:43.684864+00:00",
+  "904be2ae7ce3d573": "2026-10-29T13:11:43.481049+00:00",
+  "4323cf955c799146": "2026-10-29T13:11:43.481049+00:00"
  },
  "recent": [
-  {
-   "title": "Anthropic opens books on AI's explosive growth and staggering costs",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQLVVZWVV6TXQtR3ZqaWZKZERKZ3J3VVpIZlNtUjVfRjdTS0tuVTlRQ0F0UzRhcW9Hd2hxR1BtNzF4UVBVYXBpTkc0Rmozb3pRekc2RVNnOVBYd19KUGZ5VE1UN29haXQ2M0w0Qk1QTm5INk5KRlhxLUR6Q3REWHR3OG9EYkpFMGJUUm5HMGFiX3pBLXhZMHV5Qkgwdlc0RTczMnhOc3Q4NFpORFE5SlRfRkVDOWdmZw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T13:10:24.182897+00:00",
-   "title_ru": "Anthropic открывает книги о взрывном росте ИИ и ошеломляющих затратах"
-  },
   {
    "title": "COMMENTARY: AI gloom revives the specter of stagflation",
    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQRm13Sm5yUE5uMDZnT2s5a2NmWEhIeUllOVdUVkpzTWZTX0pOZGxmQnNCVGNnZElxeEhncmNWT3VleWVTdVhaSGJiVElUbDhOWWdWZTNtbFJnQTdoaFdoNVFwVW5KWURmMDEtNWRKZWFSLUROUFdDcWRHTHRocm5UdmxReVd5Q2FoRHlMZ1AzdTdhYncwV2dFZk5FVHBXMUFlQnliT0hkaldQLWczQ0pXbWJER3pOVmR4VHRZNDZn?oc=5",
@@ -10822,6 +10812,28 @@
    "tags": [
     "inflation"
    ]
+  },
+  {
+   "title": "US economy grows faster than expected in report out just ahead of elections",
+   "link": "https://www.theguardian.com/business/2026/oct/29/economy-growth-third-quarter",
+   "sources": [
+    "The Guardian"
+   ],
+   "score": 4,
+   "ts": "2026-10-29T13:11:43.481049+00:00",
+   "title_ru": "Экономика США растет быстрее, чем ожидалось в отчете накануне выборов",
+   "lead": "Growth is in sharp contrast to ​households’ assessment, reflected in ‌Trump’s record-low approval ratings The US economy grew faster than expected in the third quarter as resilient consumer spending and AI -driven ⁠business…",
+   "lead_ru": "Рост резко контрастирует с оценками домохозяйств, что отражено в рекордно низких рейтингах одобрения Трампа. Экономика США в третьем квартале росла быстрее, чем ожидалось, благодаря устойчивым потребительским расходам и бизнесу, основанному на искусственном интеллекте…"
+  },
+  {
+   "title": "COMMENTARY: Biggest market impact of US midterms may be 2028 countdown",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPTHVhbkFhSWhmem1sbmFlWG95UGRMY0g0ZFp6SVNLeFZfTTY0TUpRZENvaGpKdU8zbzJhSHZPb2ZjTXBMZGdBbWNsMGJDdXVsdzFudzQ3NUNfNm9BN1NCQmY5VmFpNlNHajVhT093a1NydjVsV1lqWFppNFVyN0RTMXpLalZicTBkdU1qRUxYbjU2WW1HMURhTGFWdUItNTJkZjFuWVhHbmVsV0Z4RGRmaFdrXzBBaERZMWtGTjc0OEtVNGpXY25TSmpPN1B2ZWFs?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T13:11:43.481049+00:00",
+   "title_ru": "КОММЕНТАРИЙ: Наибольшее влияние на рынок промежуточных выборов в США может оказать обратный отсчет до 2028 года."
   }
  ],
  "last_digest": "2026-10-28",
@@ -13467,6 +13479,38 @@
     "date": "2026-10-28",
     "disclosed": "2026-10-29",
     "link": "https://www.sec.gov/Archives/edgar/data/1843236/000119312526437062/0001193125-26-437062-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "e71a81b157f4b59f",
+    "ticker": "BBT",
+    "company": "Beacon Financial Corp",
+    "who": "Mary Anne Callahan",
+    "role": "Director",
+    "type": "buy",
+    "value": 96672,
+    "shares": 3200,
+    "price": 30.21,
+    "plan": false,
+    "date": "2026-10-28",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/1993894/000162828026068056/0001628280-26-068056-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "fdc03990b1e3172c",
+    "ticker": "NBIS",
+    "company": "Nebius Group N.V.",
+    "who": "Arne Grimme",
+    "role": "Director",
+    "type": "buy",
+    "value": 57740,
+    "shares": 353,
+    "price": 163.57,
+    "plan": true,
+    "date": "2026-10-28",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/2091395/000151384526000143/0001513845-26-000143-index.htm"
    },
    {
     "src": "sec",
@@ -17419,38 +17463,6 @@
     "date": "2026-10-20",
     "disclosed": "2026-10-21",
     "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000367/0001510281-26-000367-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "c2ad473b64d20f09",
-    "ticker": "VRXA",
-    "company": "Veraxa Biotech AG - Post de-SPAC",
-    "who": "Christoph Samuel Ziegler",
-    "role": "Director",
-    "type": "buy",
-    "value": 32700,
-    "shares": 30000,
-    "price": 1.09,
-    "plan": false,
-    "date": "2026-10-20",
-    "disclosed": "2026-10-21",
-    "link": "https://www.sec.gov/Archives/edgar/data/2123272/000182912626011387/0001829126-26-011387-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "5891d75c04eb6850",
-    "ticker": "DX",
-    "company": "DYNEX CAPITAL INC",
-    "who": "Byron L Boston",
-    "role": "CEO",
-    "type": "buy",
-    "value": 99970,
-    "shares": 9180,
-    "price": 10.89,
-    "plan": false,
-    "date": "2026-10-20",
-    "disclosed": "2026-10-21",
-    "link": "https://www.sec.gov/Archives/edgar/data/1283563/000082667526000124/0000826675-26-000124-index.htm"
    }
   ],
   "docs": {
@@ -17493,11 +17505,12 @@
    "0001493152-26-049161",
    "0001628280-26-068025",
    "0001493152-26-049164",
+   "0001513845-26-000143",
    "0001193125-26-437062",
    "0001628280-26-068031",
    "0001193125-26-436886",
    "0001493152-26-049173",
-   "0001193125-26-436875",
+   "0001628280-26-068056",
    "0001193125-26-436877",
    "0001493152-26-049175",
    "0001493152-26-049183",
@@ -17506,7 +17519,6 @@
    "0001628280-26-068033",
    "0001493152-26-049170",
    "0001628280-26-068012",
-   "0001213900-26-113489",
    "0001770870-26-000012",
    "0001628280-26-068016",
    "0001493152-26-049167",
