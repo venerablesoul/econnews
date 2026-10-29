@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "ade61155197521b6": "2026-10-26T13:35:24.200123+00:00",
-  "fab0dc6032b2a105": "2026-10-26T13:35:24.200123+00:00",
   "f211fc3408503a8e": "2026-10-26T13:40:24.138117+00:00",
   "c5dc189f81375d65": "2026-10-26T13:40:24.138117+00:00",
   "1e97762ee613d41c": "2026-10-26T13:40:24.138117+00:00",
@@ -1036,19 +1034,15 @@
   "3f6aed5d96f90e49": "2026-10-29T13:30:15.714411+00:00",
   "8bc5d7a626ffb2b5": "2026-10-29T13:30:15.714411+00:00",
   "e28c57ca64cf0871": "2026-10-29T13:35:15.698185+00:00",
-  "d10627dd9d0703ae": "2026-10-29T13:35:15.698185+00:00"
+  "d10627dd9d0703ae": "2026-10-29T13:35:15.698185+00:00",
+  "2730e876721e04be": "2026-10-29T13:40:15.625628+00:00",
+  "0ec0759f67863cd6": "2026-10-29T13:40:15.625628+00:00",
+  "c3506914f9bb3944": "2026-10-29T13:40:15.625628+00:00",
+  "c38bab0acda9f2b0": "2026-10-29T13:40:15.625628+00:00",
+  "b6f4e5ce7470ab74": "2026-10-29T13:40:15.625628+00:00",
+  "208067f4e3d37246": "2026-10-29T13:40:15.625628+00:00"
  },
  "recent": [
-  {
-   "title": "Anthropic's IPO: A close look at AI frontrunner's rapid growth, spiraling costs",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPX1UzRjJ6M0VaSXoydWlIZ2pzc2tGcUZtMjlzR1JhUE9UR0llUERrRWRJNUdTRWNNQU9IUUEycmZUVk40cEtCSjZ5TzRqZVRWT1JvMEtmQmlENklzd19LLWlDREZZakJ0MWdTOTZleEdBN1FVRFJGMGxHWnpkY2owdVFSQ0FWWHNFcWlPTUtpb1ZDRkZrY0tUMkZrdHRJMnFJZEZveXVQaG41OHFibWFyMWpfNG9jTlR0aTM1enNKT18?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T13:35:24.200123+00:00",
-   "title_ru": "IPO Anthropic: пристальный взгляд на быстрый рост лидера в области искусственного интеллекта и растущие расходы"
-  },
   {
    "title": "Lula Wins Brazil Runoff; US Stocks Waver Ahead of Tech Earnings",
    "link": "https://www.bloomberg.com/news/videos/2026-10-26/bloomberg-brief-10-26-2026-video",
@@ -10824,6 +10818,67 @@
    "tags": [
     "inflation"
    ]
+  },
+  {
+   "title": "Market Talk: Why Lagarde's exit changes little for the ECB",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5FWTdDMHJtQ0k2WXo2RnhCaGhRckFOaHhWckw5dk04TkR1Zmh6RUg2NU1hc3dfQjFEVDZqVFZvTU9lWGxZTV81YTVkS3I3TzRjb1plYTNESURuNDA2TklGTGtmd1JKbXpGd1NjZ1MtdVVCQWpGNUh5eEpLZnFXdw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 7,
+   "ts": "2026-10-29T13:40:15.625628+00:00",
+   "title_ru": "Разговор на рынке: почему выход Лагард мало изменился для ЕЦБ",
+   "tags": [
+    "ECB"
+   ]
+  },
+  {
+   "title": "Business Investment, Government Spending Bolster US GDP",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-29/business-investment-government-spending-bolster-us-gdp-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-29T13:40:15.625628+00:00",
+   "title_ru": "Инвестиции в бизнес, государственные расходы укрепляют ВВП США",
+   "lead": "The US economy expanded in the third quarter at the fastest pace in a year, supercharged by feverish business investment and a resilient American consumer. Michael McKee reports on \"Bloomberg Surveillance.\" (Source: Bloomberg)",
+   "lead_ru": "Экономика США выросла в третьем квартале самыми быстрыми темпами за год, благодаря лихорадочным инвестициям в бизнес и стойкому американскому потребителю. Майкл Макки сообщает о «Bloomberg Surveillance.\" (Источник: Bloomberg)",
+   "tags": [
+    "GDP"
+   ]
+  },
+  {
+   "title": "Breakingviews - COMMENTARY: French banks have privileged perch for debt crisis",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQMXBYR1NsSmZpc0lmdTdmUnBHcklQTmp1NklpQ3h4Z01fZ3o3UGllYzZKLVNoVkE4cHVVRmpQQkVPSHFpLUJXWTB2eGQzNFhUbi05WERZWG83dkdFVTVnaGZtU3ZLaTlWXzdNMVc4TlVMRXA1Y285bmNVOHpobU05ai1wSTlEVmNKTTN4d3FhQndReGItdHpwNXNfdzBMRHp3R1pNc3ZyLWZCMlU?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-29T13:40:15.625628+00:00",
+   "title_ru": "Breakingviews - КОММЕНТАРИЙ: французские банки отдали предпочтение окуню для долгового кризиса"
+  },
+  {
+   "title": "Macro Matters: 'The ECB won't rescue a President Le Pen from her own policies'",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1jQjRPQ3BIUkFXUnhOZm40eFBrWThQTkpsSlRIMEpxUlJsMVZuTnhDZzcyWFUyS3JMOEtBS0pjc0pvMTRHLVVsVGxOZTRUbXh3dzZEMTJKLV9KNUxydG90V2FKRzUtcVRHUXhqSVBUUGlDNlpBVE50RE9DRnlWdw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T13:40:15.625628+00:00",
+   "title_ru": "Макро вопросы: «ЕЦБ не спасет президента Ле Пен от ее собственной политики»",
+   "tags": [
+    "ECB"
+   ]
+  },
+  {
+   "title": "Italy business morale rises in October but consumers more downbeat",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQTEtYemdvd3NfTnMxS3V3UFhHUXo4UzNZOUZfUDItakR6eE1IUzhWUnJocFBjYjg4NkkxMGYwcUc4MS1raWdiTVRYdFhIV1YzZGkyeVgxSXpkdEpfbWtsSFFwZmRJNHZHa2dJUW5WWUJPOVVQMmk5RTlTdFR4N2g5UXh5ejBTQnZUdklzVDJYa3VkTGtwcWttZ1pHM1ZZaEhTS3VrMW5mUQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T13:40:15.625628+00:00",
+   "title_ru": "Боевой дух итальянского бизнеса повышается в октябре, но потребители более оптимистичны"
   }
  ],
  "last_digest": "2026-10-28",
@@ -13501,6 +13556,38 @@
     "date": "2026-10-28",
     "disclosed": "2026-10-29",
     "link": "https://www.sec.gov/Archives/edgar/data/2091395/000151384526000143/0001513845-26-000143-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "cb2c144272c908e1",
+    "ticker": "RDWR",
+    "company": "RADWARE LTD",
+    "who": "Rivkah Goldriech",
+    "role": "Chief People Officer",
+    "type": "sell",
+    "value": 990029,
+    "shares": 28402,
+    "price": 34.86,
+    "plan": false,
+    "date": "2026-10-28",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/2045516/000197640826000920/0001976408-26-000920-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "2504ddc037a56db1",
+    "ticker": "ACTU",
+    "company": "ACTUATE THERAPEUTICS, INC.",
+    "who": "Daniel M Schmitt",
+    "role": "CEO",
+    "type": "buy",
+    "value": 50000,
+    "shares": 140844,
+    "price": 0.35,
+    "plan": false,
+    "date": "2026-10-28",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/1652935/000168316826008147/0001683168-26-008147-index.htm"
    },
    {
     "src": "sec",
@@ -17421,38 +17508,6 @@
     "date": "2026-10-20",
     "disclosed": "2026-10-21",
     "link": "https://www.sec.gov/Archives/edgar/data/1367846/000010898526000091/0000108985-26-000091-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "f7bf29f0cdf04cd2",
-    "ticker": "SKAS",
-    "company": "Saker Aviation Services, Inc.",
-    "who": "Eriksen Howard Timothy et al.",
-    "role": "10% owner",
-    "type": "buy",
-    "value": 70104,
-    "shares": 12700,
-    "price": 5.52,
-    "plan": false,
-    "date": "2026-10-20",
-    "disclosed": "2026-10-21",
-    "link": "https://www.sec.gov/Archives/edgar/data/1650715/000110465926117603/0001104659-26-117603-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "c04de42912e0f4a8",
-    "ticker": "GF",
-    "company": "NEW GERMANY FUND INC",
-    "who": "Saba Capital Management, L.p.",
-    "role": "10% owner",
-    "type": "buy",
-    "value": 906898,
-    "shares": 87623,
-    "price": 10.35,
-    "plan": false,
-    "date": "2026-10-20",
-    "disclosed": "2026-10-21",
-    "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000367/0001510281-26-000367-index.htm"
    }
   ],
   "docs": {
@@ -17492,19 +17547,22 @@
   },
   "checked": "2026-10-29T12:41:43.408333+00:00",
   "sec_seen": [
-   "0001770870-26-000012",
-   "0001628280-26-068019",
+   "0001513845-26-000143",
+   "0001628280-26-068016",
    "0001628280-26-068025",
+   "0001628280-26-068031",
+   "0001628280-26-068033",
+   "0001493152-26-049207",
+   "0001493152-26-049205",
+   "0001683168-26-008147",
+   "0001976408-26-000919",
    "0001628280-26-068012",
    "0001193125-26-437062",
+   "0001976408-26-000920",
    "0001493152-26-049183",
+   "0001628280-26-068056",
    "0001213900-26-113597",
-   "0001628280-26-068016",
-   "0001628280-26-068031",
-   "0001513845-26-000143",
-   "0001493152-26-049175",
-   "0001628280-26-068033",
-   "0001628280-26-068056"
+   "0001628280-26-068019"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
