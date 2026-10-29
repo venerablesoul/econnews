@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "7f456ff5de0912ed": "2026-10-26T08:59:41.484858+00:00",
   "f737e8530d3dd326": "2026-10-26T09:04:41.418404+00:00",
   "a9e74d5718425258": "2026-10-26T09:04:41.418404+00:00",
   "9048621aa4c71bff": "2026-10-26T09:05:29.491424+00:00",
@@ -1042,22 +1041,10 @@
   "da2af0fd3ac15010": "2026-10-29T08:01:43.351330+00:00",
   "28b35a6dbf290063": "2026-10-29T08:16:43.392479+00:00",
   "8cd9df68d85b01d3": "2026-10-29T08:26:43.365056+00:00",
-  "9ad1a25d903016ac": "2026-10-29T08:46:43.360671+00:00"
+  "9ad1a25d903016ac": "2026-10-29T08:46:43.360671+00:00",
+  "abf5dbff786db7d3": "2026-10-29T09:01:43.439734+00:00"
  },
  "recent": [
-  {
-   "title": "BofA Sees Oil Around $120 If Iran Resumes Strikes (Video)",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-26/bofa-sees-oil-around-120-if-iran-resumes-strikes-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T08:59:41.484858+00:00",
-   "title_ru": "BofA видит нефть в районе $ 120, если Иран возобновит забастовки (видео)",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "Survey on the Access to Finance of Enterprises: lending conditions tightened",
    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261026~bde7b6d11a.en.html",
@@ -10692,6 +10679,19 @@
    "title_ru": "Может ли бюджет канцлера Хили помочь основателям Великобритании?",
    "lead": "Bloomberg UK Senior Columnist Merryn Somerset Webb discusses Chancellor of the Exchequer John Healey's promise of a founder's allowance and government support for young entrepreneurs.",
    "lead_ru": "Старший обозреватель Bloomberg UK Меррин Сомерсет Уэбб обсуждает обещание министра финансов Джона Хили о пособии учредителя и государственной поддержке молодых предпринимателей."
+  },
+  {
+   "title": "Volkswagen Swings to Loss After Writedown, China Market Slump",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNZUE4TGRWTGpFTnZkWlVCWWZ3THY5eHdGZ042MkpoUVk0VmJwRElUNUhfSDVaZFE0Y1JKN0FtR001dlpCaWpNdU4xRnJ1WXpCMUlMUUFOazNFRWYzejlyVHZGYUQ0NlctWG9YYTJqTFhSR2cyVF9vbmpmNlk0Tm41eURQR2FZb1U1aWlMbllaS3FyYzdqVUt5Y3BsQkNtc29hRk5OQzZhZ3V0YzVsSm5xYQ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T09:01:43.439734+00:00",
+   "title_ru": "Volkswagen терпит убытки после спада на китайском рынке",
+   "tags": [
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-10-28",
@@ -17359,8 +17359,8 @@
    "0000933029-26-000004",
    "0001628280-26-067986",
    "0001605957-26-000005",
-   "0002103469-26-000014",
    "0001577526-26-000167",
+   "0002103469-26-000014",
    "0001193125-26-436562",
    "0001104659-26-119784",
    "0002127826-26-000007",
