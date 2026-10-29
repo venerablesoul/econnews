@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "dc7e498fa993f6a0": "2026-10-26T23:32:01.308262+00:00",
-  "b5284156bba2b5bf": "2026-10-26T23:32:01.308262+00:00",
   "80c70211379a9274": "2026-10-26T23:47:01.184948+00:00",
   "1771643c4f799998": "2026-10-26T23:47:01.184948+00:00",
   "a58c4fabc50934f0": "2026-10-26T23:47:01.184948+00:00",
@@ -1069,26 +1067,13 @@
   "5abde9bd965e591d": "2026-10-29T23:23:36.874540+00:00",
   "b8dcf0c0683c3233": "2026-10-29T23:23:36.874540+00:00",
   "2c91e6a5fbac01dc": "2026-10-29T23:28:36.858438+00:00",
-  "23ac2e98b2099808": "2026-10-29T23:28:36.858438+00:00"
+  "23ac2e98b2099808": "2026-10-29T23:28:36.858438+00:00",
+  "21336a8511028457": "2026-10-29T23:33:36.863693+00:00",
+  "fcdd34973402b7c8": "2026-10-29T23:33:36.863693+00:00",
+  "eb5f01543a204eb7": "2026-10-29T23:33:36.863693+00:00",
+  "9ee90e20237a0744": "2026-10-29T23:33:36.863693+00:00"
  },
  "recent": [
-  {
-   "title": "Gold Steadies Above $4,000 With Fed Rate Decision in Focus",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-26/gold-steadies-above-4-000-with-fed-rate-decision-in-focus",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 8,
-   "ts": "2026-10-26T23:32:01.308262+00:00",
-   "title_ru": "Золото стабилизируется выше $4000 на фоне решения ФРС по ставке",
-   "lead": "Gold held above $4,000 an ounce as traders prepared for a Federal Reserve decision this week that’s expected to keep interest rates steady.",
-   "lead_ru": "Золото держалось выше $4000 за унцию, поскольку трейдеры готовились к решению Федеральной резервной системы на этой неделе, которое, как ожидается, сохранит процентные ставки на стабильном уровне.",
-   "tags": [
-    "Fed",
-    "rates",
-    "gold"
-   ]
-  },
   {
    "title": "Oil Declines as Diplomacy Offers Hope of Mideast Deescalation",
    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNUE5CTldfa1F0ZnVycHMtVW01c0RqeEpESThPWmEzY1VITlZGVVd6UVlOYnZwSmxoWDBRSHBiWUFBckdEUEF0UHVjaExreEtHS2RyMkl1U3p5Ul9yU21xbU15MEF3ZUprYkx6dzlJYnBhMEZDYWpHc09QWVA4RDZuWUtrdXRvSmRhXzNnVXFiOUNUVTNMV2Zja1ZBWVI1UQ?oc=5",
@@ -11448,6 +11433,33 @@
    "score": 3,
    "ts": "2026-10-29T23:23:36.874540+00:00",
    "title_ru": "Amazon терпит крах, поскольку расходы на искусственный интеллект затмевают самый быстрый рост облачных технологий за последние пять лет"
+  },
+  {
+   "title": "Hassett Sees Fed Acting If October Inflation Data Come in High",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPd2dPVXJlcnVlZlJ1Z2tpV3p1TEVDOVNBWTJtdlc4UkxwMEhVbmV0eWFlVWc1N2hNRGpKU1NibXJGSldoUk9kQlFWV29iN1N0c3dETWVhWEpLREFQd2J3RmtxOWZ0U3Z2STc2ZEh4bGx5Y0dfY3h1Nl9sc0xidU1aQnFvYWxpVmNrS2hkWTRmYlRudmJ3NGR5b21ReHUzTm9fLVVTaW9MRVlJRlpHanZXMUVzcw?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-29T23:33:36.863693+00:00",
+   "title_ru": "Хассетт видит, что ФРС будет действовать, если октябрьские данные по инфляции окажутся высокими",
+   "tags": [
+    "Fed",
+    "inflation"
+   ]
+  },
+  {
+   "title": "US stocks slump as Alphabet revenue miss reignites AI capex jitters",
+   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE10ZU1PY0l4RS1BM1hyRVNYcXctSXp1VjRiSWh3UkJFVUFwNm1fN1RRUHFPXzJjNEhXd05XX21Pb1NEcE1vUGhKSERpVWlCYjVsXzgxc0hHNWhXMExsdXdkYlZMMDBHUXc2d0VfNjA2LWhGRnpOTERJV0RR?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T23:33:36.863693+00:00",
+   "title_ru": "Акции США падают, поскольку снижение доходов Alphabet вновь вызывает беспокойство по капвложениям в искусственный интеллект",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -18136,8 +18148,8 @@
   "checked": "2026-10-29T23:18:36.897027+00:00",
   "sec_seen": [
    "0001193125-26-438479",
-   "0001193125-26-438480",
    "0001193125-26-438427",
+   "0001193125-26-438480",
    "0000950103-26-016447",
    "0001895106-26-000022",
    "0001193125-26-438200",
@@ -18155,15 +18167,15 @@
    "0001895111-26-000021",
    "0001748076-26-000005",
    "0001193125-26-438722",
-   "0002148161-26-000012",
    "0001392941-26-000017",
    "0001140361-26-041201",
+   "0000897069-26-001877",
    "0001193125-26-438273",
    "0001193125-26-438275",
-   "0001492126-26-000013",
    "0000944075-26-000078",
    "0001040470-26-000323",
    "0001130144-26-000062",
+   "0001193125-26-438274",
    "0001178579-26-000022",
    "0001628280-26-068337",
    "0001193125-26-438662",
@@ -18177,9 +18189,9 @@
    "0000905874-26-000003",
    "0000944075-26-000076",
    "0000950103-26-016449",
-   "0001193125-26-438274",
+   "0002148161-26-000012",
    "0000899140-26-001161",
-   "0000897069-26-001877",
+   "0001492126-26-000013",
    "0000724004-26-000098"
   ],
   "errors": {
