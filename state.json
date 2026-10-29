@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "d35b3e46eba89dca": "2026-10-26T10:45:24.155827+00:00",
-  "faf08b5a85889334": "2026-10-26T10:45:24.155827+00:00",
-  "94140c0037f03a33": "2026-10-26T10:50:24.228388+00:00",
   "041d359d1687e4dd": "2026-10-26T10:55:24.424268+00:00",
   "14d17d9d866d0a4e": "2026-10-26T11:00:24.170523+00:00",
   "2ead218674e84a38": "2026-10-26T11:00:24.170523+00:00",
@@ -1022,31 +1019,10 @@
   "f5e8cee9d804c076": "2026-10-29T10:26:43.374354+00:00",
   "a992aba176501102": "2026-10-29T10:31:43.363902+00:00",
   "ab0743bfd09279fe": "2026-10-29T10:31:43.363902+00:00",
-  "7bd6431aed7fafe3": "2026-10-29T10:31:43.363902+00:00"
+  "7bd6431aed7fafe3": "2026-10-29T10:31:43.363902+00:00",
+  "c9ab15369cc8a342": "2026-10-29T10:51:43.391559+00:00"
  },
  "recent": [
-  {
-   "title": "The Kospi index is the leading indicator for the global AI trade — and Goldman just slashed its forecast by 25%",
-   "link": "https://www.marketwatch.com/story/the-kospi-index-is-the-leading-indicator-for-the-global-ai-trade-and-goldman-just-slashed-its-forecast-by-25-ccfe2690?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 2,
-   "ts": "2026-10-26T10:45:24.155827+00:00"
-  },
-  {
-   "title": "Ather Energy posts first quarterly profit, shares rise 10%",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOVnhEVHdQMmhvSjlHM0h6dzZuNWJnQi14MW1wa1Q3T1dTekdSaVpxRjVUMGhTWTBHVjF0amdGMkd2ZVNGUDFtTFhXUG54aS0xWU5VYW9nQVZMS05EV2ZQN3RaWjNwYmw4Snh1YTFJckZ2NTd0ZzE4RF9LYmhlQVBUX2xBSl91WlJCY0x0TXQ5Y090YjRKQ19BQWJ1WWYxU1A4bU5OX284WG5MUUF2YTdV?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T10:50:24.228388+00:00",
-   "title_ru": "Ather Energy сообщила о первой квартальной прибыли, акции выросли на 10%",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Middle East markets rebound as diplomacy fuels hopes of easing Iran hostilities",
    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNaDhPSnA1U2M2cUI1ajJYZy1COWI1WG1mNUx1ajhqR0ZaZWw2OHhTZGxISHFCa01lZUlNMlFpMFktREVjQ0NUTGNWbGF6V2hOSndpWm10djdnNHpwa01ObUc4ZjBHQzU3ZnNkSm5HTDBlOTFPLXJVejlvalhOOEZRY3Y2b3JzdjRJNnRBZHFyTXo2Zmo0UHBzRVFRcmJFS0NlMjdxazZFZEJoREtRcmJjZENtay1Xd1VraWdSQ1BYQ0pYSUhVWFE?oc=5",
@@ -10566,6 +10542,20 @@
    "tags": [
     "bonds"
    ]
+  },
+  {
+   "title": "ECB Live Updates: Christine Lagarde to Step Down Early, Rate Decision Ahead",
+   "link": "https://www.bloomberg.com/news/live-blog/2026-10-29/lagarde-steps-down-ecb-rate-decision-euro-live-updates",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 9,
+   "ts": "2026-10-29T10:51:43.391559+00:00",
+   "title_ru": "Новости ЕЦБ в прямом эфире: Кристин Лагард досрочно уйдет в отставку, решение по ставке будет принято впереди",
+   "tags": [
+    "ECB",
+    "rates"
+   ]
   }
  ],
  "last_digest": "2026-10-28",
@@ -17247,6 +17237,7 @@
    "0001193125-26-436875",
    "0001193125-26-436877",
    "0001671190-26-000008",
+   "0001493152-26-049175",
    "0001104659-26-119782",
    "0002131773-26-000007",
    "0001104659-26-119785",
@@ -17262,7 +17253,6 @@
    "0001609151-26-000143",
    "0001818383-26-000266",
    "0001609151-26-000142",
-   "0001781064-26-000020",
    "0001526864-26-000005",
    "0001493152-26-049167",
    "0001609151-26-000144"
