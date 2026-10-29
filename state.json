@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "ce85466c6e00df88": "2026-10-26T17:01:22.721687+00:00",
   "aaa0d6a672684ccf": "2026-10-26T17:11:22.962456+00:00",
   "63ddd9d0a691cefa": "2026-10-26T17:21:22.772605+00:00",
   "b7ef2c4e05366a49": "2026-10-26T17:26:23.787700+00:00",
@@ -1055,7 +1054,9 @@
   "8f9d6da000f982fe": "2026-10-29T16:50:15.702153+00:00",
   "d771452c18e5bcbc": "2026-10-29T16:55:15.688082+00:00",
   "952c2d13498b7221": "2026-10-29T16:55:15.688082+00:00",
-  "f1fd97f79bbe6dbd": "2026-10-29T17:00:15.768853+00:00"
+  "f1fd97f79bbe6dbd": "2026-10-29T17:00:15.768853+00:00",
+  "3c03d83689d83fbf": "2026-10-29T17:10:15.897439+00:00",
+  "988836e729aa99f2": "2026-10-29T17:10:15.897439+00:00"
  },
  "recent": [
   {
@@ -11083,6 +11084,29 @@
    "title_ru": "Алфавит, установленный для наибольшего убытка за всю историю, тянет вниз технологическую сделку",
    "lead": "Jonathan Ferro, Lisa Abramowicz and Annmarie Hordern speak daily with leaders and decision makers from Wall Street to Washington and beyond.",
    "lead_ru": "Джонатан Ферро, Лиза Абрамович и Аннмари Хордерн ежедневно общаются с лидерами и лицами, принимающими решения, от Уолл-стрит до Вашингтона и за его пределами."
+  },
+  {
+   "title": "ECB's Lagarde resigns early so she can speak freely on topics beyond monetary policy",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOdllkUEVGQXlMa0V6QjM3WE1sOWlmclZ1SXdBWWxJSkw3ZmRzdi1nN216aDFtRjhTQzhXRmZURnp0UkRXcEQ5WDRlVW1kcEk4ZVJtR2pla3RtbldMaHVlODdVMy13cFZia21zbmFhNTZnSFlLVlhJNzY0eDE2Zm1UREhfNFBiS3hVclc5aXc1eFFNbEpJbkNQVXJOWkJCTkEwXzhiUVNMZmNESWN6UHVvSEpDaWlwdURLQjdWcFZBUjBMaWM?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 9,
+   "ts": "2026-10-29T17:10:15.897439+00:00",
+   "title_ru": "Лагард досрочно уходит в отставку, чтобы она могла свободно говорить на темы, выходящие за рамки денежно-кредитной политики",
+   "tags": [
+    "ECB",
+    "rates"
+   ]
+  },
+  {
+   "title": "All the reasons Marvell investors are ’freaking out’ as Lumentum deal rumors swirl",
+   "link": "https://www.marketwatch.com/story/marvell-is-reportedly-close-to-buying-lumentum-analysts-say-they-see-logic-in-a-potential-deal-d7539c59?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-29T17:10:15.897439+00:00"
   }
  ],
  "last_digest": "2026-10-28",
@@ -17750,9 +17774,7 @@
    "sec": true
   },
   "checked": "2026-10-29T16:50:15.702153+00:00",
-  "sec_seen": [
-   "0001683168-26-008149"
-  ],
+  "sec_seen": [],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
   }
