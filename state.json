@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "cec9bffaf507da6d": "2026-10-26T13:25:24.207876+00:00",
-  "f186b5fb5d5a75a8": "2026-10-26T13:25:24.207876+00:00",
-  "3237e488c7ee7ddb": "2026-10-26T13:25:24.207876+00:00",
-  "d81da7943332b15c": "2026-10-26T13:25:24.207876+00:00",
   "178c42b4d7f0694c": "2026-10-26T13:30:24.475710+00:00",
   "ade61155197521b6": "2026-10-26T13:35:24.200123+00:00",
   "fab0dc6032b2a105": "2026-10-26T13:35:24.200123+00:00",
@@ -1037,39 +1033,11 @@
   "4323cf955c799146": "2026-10-29T13:11:43.481049+00:00",
   "8be498015a196c08": "2026-10-29T13:16:43.545939+00:00",
   "68afd8722dec3a81": "2026-10-29T13:25:15.720927+00:00",
-  "844fe7b872b37ee3": "2026-10-29T13:25:15.720927+00:00"
+  "844fe7b872b37ee3": "2026-10-29T13:25:15.720927+00:00",
+  "3f6aed5d96f90e49": "2026-10-29T13:30:15.714411+00:00",
+  "8bc5d7a626ffb2b5": "2026-10-29T13:30:15.714411+00:00"
  },
  "recent": [
-  {
-   "title": "COMMENTARY: Nice earnings forecasts you have. Shame if something happened to them",
-   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNME92MEFjQ2FZazN4di1xaHljdUF4RC14cnFHSVlVYUFsM0IwUEJaZXExc2VsbFhEOUhZT1FUaUVCVllXM1k5UVVRSlZoaEEtQzM1TFFPaHZUdExJYWRpS21xd2ZkRjM1RHZCMlhndkVsQjJfZHg1X0lHbmd2b1R1QW11RVRydnVDZlM0UjFWUGtSWWJWLVMtdVE2aGtxWVVJTzJuLWNaajFPcjJKXzJfTjY0WUtvR1Nlalk0N3g0MWotZ1c2cnBPaHNFaXhUOXQtSEJHZzRHOVl5QQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T13:25:24.207876+00:00",
-   "title_ru": "КОММЕНТАРИЙ: Хорошие у вас прогнозы по доходам. Жалко, если с ними что-то случилось"
-  },
-  {
-   "title": "Explainer: From filing to first trade: Inside the US IPO process",
-   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNaXpEaVAwQk9GeVBoOThTNVliRWZUblF3eGxzemFDbDhnd2h1THV3MEdQUEcxMEZKckVreGF2NnNKS1RXT0NTaGFtWkZSSTFraUktSzFPSk5fZEhCUmlGX0hYNU1ZQnlIUWtQUnF2REhFRDZJc0VzeUNCMjUyNGxiSjJibDgwVnUtWmFnbDdEeTRGNnA0bnVXMQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T13:25:24.207876+00:00",
-   "title_ru": "Объяснение: От подачи заявки до первой сделки: изнутри процесса IPO в США"
-  },
-  {
-   "title": "From Amazon to Google, the deep-pocketed investors in Anthropic",
-   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPdUNGUW5tbnZDMW55VkkxZXBQYkF3a1dOQmw2Unk3MGVVRWlsdWttLVRWTmNkWVpERlVPZVNpeGhPMlJCYWdWczhlQjN0SHc3czRuaVNOQVBGZlV4aGZycFE4S1hlUGRXSkROWmVNYU0waG44cHNiaDM1MjdiVjQyVV9FRmdBeW1WVmREXzl3QVFDUlRXczd3NmYwWjVIeld6RXpIVkZ3?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T13:25:24.207876+00:00",
-   "title_ru": "От Amazon до Google: богатые инвесторы Anthropic"
-  },
   {
    "title": "Anthropic unveils details of planned historic stock market debut",
    "link": "https://www.bbc.co.uk/news/articles/cq398p1wd1evo?at_medium=RSS&at_campaign=rss",
@@ -10836,6 +10804,22 @@
    "ts": "2026-10-29T13:25:15.720927+00:00",
    "title_ru": "Европейский центральный банк удерживает ключевую процентную ставку на уровне 2,5%",
    "tags": [
+    "rates"
+   ]
+  },
+  {
+   "title": "ECB Holds Rates as Lagarde Announces Early Resignation",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-29/ecb-holds-rates-as-lagarde-announces-early-resignation-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 7,
+   "ts": "2026-10-29T13:30:15.714411+00:00",
+   "title_ru": "ЕЦБ удерживает ставки, поскольку Лагард объявляет о досрочной отставке",
+   "lead": "The European Central Bank kept interest rates on hold at 2.5% as news that President Christine Lagarde will step down from her role early added to concern over energy costs and France's fiscal situation.",
+   "lead_ru": "Европейский центральный банк сохранил процентные ставки на уровне 2,5% в качестве новости о том, что президент Кристин Лагард уйдет в отставку со своей должности, что вызвало обеспокоенность по поводу затрат на энергоносители и фискальной ситуации во Франции.",
+   "tags": [
+    "ECB",
     "rates"
    ]
   }
