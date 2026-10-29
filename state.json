@@ -1058,7 +1058,10 @@
   "234fb873d6a1dce4": "2026-10-29T15:00:15.903196+00:00",
   "8358c84e4a016c10": "2026-10-29T15:05:16.800156+00:00",
   "d157be01a9026e49": "2026-10-29T15:05:16.800156+00:00",
-  "bc56f02d11283c96": "2026-10-29T15:05:16.800156+00:00"
+  "bc56f02d11283c96": "2026-10-29T15:05:16.800156+00:00",
+  "1e00c6fc540eb92c": "2026-10-29T15:10:15.780765+00:00",
+  "95f6d5517113f2ea": "2026-10-29T15:10:15.780765+00:00",
+  "7a94db72e85ec2e3": "2026-10-29T15:10:15.780765+00:00"
  },
  "recent": [
   {
@@ -11077,6 +11080,31 @@
     "Fed",
     "rates",
     "inflation"
+   ]
+  },
+  {
+   "title": "Baseball's championship series ran through Milwaukee and Tampa",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxObEhNRW1LLTd1RWsyTkgwdWFyaDNKS0FXcm05cjRjUk8wOUlfY203NkZjbXlObG41TnpJMUdUX0o1WUVjTlpKT3NOSjk0TEIwX0EzNjVRRVBqV3BjSVBtMm5ScXdmV2hiaGwwQkEzSjRpX3dOQlllcW8zT3E0VDl6bG5lM1J5OHNBUWdWcnFHbWdmbUQ3SEM0Y0hZZ1gyd2dx?oc=5",
+   "sources": [
+    "US Labor Statistics (BLS)"
+   ],
+   "score": 4,
+   "ts": "2026-10-29T15:10:15.780765+00:00",
+   "title_ru": "Серия чемпионатов по бейсболу проходила через Милуоки и Тампу."
+  },
+  {
+   "title": "Google Debt-Risk Gauge Rises as Earnings Revive AI Debt Jitters",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-29/google-debt-risk-gauge-rises-as-earnings-revive-ai-debt-jitters",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-29T15:10:15.780765+00:00",
+   "title_ru": "Показатель долгового риска Google растет, поскольку доходы оживляют долговые колебания ИИ",
+   "lead": "The cost of insuring against losses on Alphabet Inc.’s debt rose on Thursday as its shares plummeted, after disappointing results intensified fears that its massive bet on debt-funded AI spending may fail to pay off.",
+   "lead_ru": "Стоимость страхования от убытков по долгу Alphabet Inc. выросла в четверг, поскольку ее акции резко упали после того, как неутешительные результаты усилили опасения, что ее огромная ставка на финансируемые за счет долга расходы на ИИ может не окупиться.",
+   "tags": [
+    "markets"
    ]
   }
  ],
