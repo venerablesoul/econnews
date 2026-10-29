@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "5bf7f3e3ccb22610": "2026-10-26T00:23:52.462882+00:00",
   "2420d7dac20f0122": "2026-10-26T00:48:52.544062+00:00",
   "158d72bd86764f91": "2026-10-26T00:58:52.515046+00:00",
   "75c71506186f1ce8": "2026-10-26T00:58:52.515046+00:00",
@@ -1082,22 +1081,10 @@
   "93ee3da093ece84b": "2026-10-29T00:15:50.374403+00:00",
   "5310c67ec2849d82": "2026-10-29T00:15:50.374403+00:00",
   "34c734b3394ea61a": "2026-10-29T00:20:50.400288+00:00",
-  "509d8064611a71c3": "2026-10-29T00:20:50.400288+00:00"
+  "509d8064611a71c3": "2026-10-29T00:20:50.400288+00:00",
+  "42ab65c7bc015ec1": "2026-10-29T00:25:50.362594+00:00"
  },
  "recent": [
-  {
-   "title": "Oil prices down almost $1 in early trading",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQb2J2QlNheno1OW9FdmN3RTJWVHF1RXdLX0VQSGlKSkZlZEtNTnFxU3FUd1Zab1FPME1felpOVl9oM1oyNXc0T2xkdDZhc0JfUVlSTFU4Vm9aYWRrd1BhQmw1QThZRDZHbEZZR3Y5UlhNaDlWWm8tbjU2bjVtaFRVM0VMcml2OXY4TUtxNXRZU2c3c0lC?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-26T00:23:52.462882+00:00",
-   "title_ru": "Цены на нефть упали почти на $ 1 в начале торгов",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "Five economic challenges facing Brazil's re-elected President Lula",
    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPcHk0a1NUT2ZNSm9tR2JkZnJ1YUtTdHRRVk1UQ05BbXpXYmtNYy1fY2MzaklhQ09YVGRmOUdHaW4yMVhsX1RpRGRacHFrNFpOcEFsRlBJcWpMSElnNGFKaVNCZTlzSC1RMFpyc1BuY2txb0NEd3I4X3hDTUNpcVh3clpDb19YVFdiOGRsNF9LQ0xBRWVPR2dEZzd2M0UzNElWNzNHOWZPcFhwcGp1ejZ1VGluaUM3Yk0?oc=5",
@@ -10716,6 +10703,19 @@
    "score": 3,
    "ts": "2026-10-29T00:20:50.400288+00:00",
    "title_ru": "Экономическая боль превращает Небраску в неожиданное поле битвы Сената"
+  },
+  {
+   "title": "New Zealand businesses stay optimistic despite oil price volatility, survey shows",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPZFNDd01hZjRNUHJZV09LMHhITEw3V0xuMElKeWZwMTBLVUdGbzhtQWFCNGo0MDZaM2ZnY1kzang3c0F3UlJjWHRpOHBkb0QzZEZJVXhOMmRJZ01JOFFia2lTZXJwdG92dElSekMtWFdoWDkxV01saGFTT2xDNjhJNldhWmhnVEFyMHlKNDZwOHh5QnBVR1JjdlhweEdUc1h3cVdvbm1PZmkwOVk4Mk01MmJsUThsWnFidGVwaTNKNEo3dXpmUU1QWWRjV1RITEM3?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T00:25:50.362594+00:00",
+   "title_ru": "Опрос показывает, что новозеландские компании сохраняют оптимизм, несмотря на волатильность цен на нефть",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-28",
@@ -17385,25 +17385,23 @@
    "0001204816-26-000057",
    "0001094718-26-000011",
    "0001104659-26-119719",
-   "0001654009-26-000017",
-   "0001437749-26-033821",
-   "0001577526-26-000163",
    "0001193125-26-436510",
+   "0001577526-26-000163",
+   "0001437749-26-033821",
    "0001493152-26-049125",
    "0001022079-26-000118",
-   "0001577526-26-000161",
    "0001193125-26-436459",
    "0002010300-26-000035",
    "0001877346-26-000027",
    "0001577526-26-000169",
+   "0001140361-26-041076",
    "0000947871-26-000963",
-   "0001193125-26-436436",
    "0001895101-26-000021",
    "0001577526-26-000165",
    "0001225208-26-008548",
+   "0000950103-26-016314",
    "0001628280-26-067986",
    "0001577526-26-000177",
-   "0001510281-26-000387",
    "0001577526-26-000173",
    "0001510281-26-000388",
    "0002012383-26-003952",
@@ -17412,8 +17410,8 @@
    "0001577526-26-000175",
    "0001398344-26-019008",
    "0001628280-26-067978",
-   "0001193125-26-436441",
    "0001705952-26-000016",
+   "0001807561-26-000026",
    "0001628280-26-067980",
    "0001505300-26-000016",
    "0001193125-26-436443",
@@ -17423,9 +17421,9 @@
    "0000087347-26-000126",
    "0001093557-26-000187",
    "0001493152-26-049119",
-   "0000950103-26-016314",
+   "0001577526-26-000161",
    "0001493152-26-049131",
-   "0001807561-26-000026"
+   "0001654009-26-000017"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
