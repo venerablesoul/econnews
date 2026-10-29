@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "7c0f82c4ce0f384a": "2026-10-26T09:55:24.222816+00:00",
-  "f92f03499d889ee9": "2026-10-26T09:55:24.222816+00:00",
   "dfaa07e0de0d8db4": "2026-10-26T10:00:24.300711+00:00",
   "b746dbb879f38700": "2026-10-26T10:00:24.300711+00:00",
   "476bfe4b5fda7471": "2026-10-26T10:00:24.300711+00:00",
@@ -1026,28 +1024,11 @@
   "26fdecbf9a2be4ff": "2026-10-29T09:36:43.399434+00:00",
   "42f7e151308ed48e": "2026-10-29T09:51:43.407981+00:00",
   "e620b99ba81497a1": "2026-10-29T09:51:43.407981+00:00",
-  "7fecc5cb8eafea7e": "2026-10-29T09:51:43.407981+00:00"
+  "7fecc5cb8eafea7e": "2026-10-29T09:51:43.407981+00:00",
+  "73fbdc759381250a": "2026-10-29T09:56:43.357396+00:00",
+  "cc6198600efd6b67": "2026-10-29T09:56:43.357396+00:00"
  },
  "recent": [
-  {
-   "title": "India expected to extend duty-free cotton imports through December, sources say",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOelhncFAwZEx0ZWhGRDRNWkNvd2RSQzlxTGNTMGlMODVSS0U5RW02UDMxeU5YRlBtUXE4djBaSFBYa2dGeHBuZF9zM0ZIU0FGRnF1SG5jRVcxT3NpNjNoRnZ6M21jY0xDd2tmMTdHaWVJWUs0U1NvQWNkbHAtaW5vaXVmUVJHMlV4N3B4Uks2N2ptX3d5ZkRwZ25qNjRSV2ZXdG1ndS1yWVc4clZBMUZHSWdOWXZpVzFZSXRFYmdGOGM?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T09:55:24.222816+00:00",
-   "title_ru": "Индия рассчитывает продлить беспошлинный импорт хлопка до декабря, сообщают источники"
-  },
-  {
-   "title": "Сеть АЗС «Трасса» потребовали признать банкротом",
-   "link": "https://www.rbc.ru/business/26/10/2026/6adf223169b2b5b11270f28e",
-   "sources": [
-    "RBC"
-   ],
-   "score": 1,
-   "ts": "2026-10-26T09:55:24.222816+00:00"
-  },
   {
    "title": "Yuan Heng Gas Holdings Ltd (0332.HK) | Stock Price & Latest News",
    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1IaVJkQ3FNajZLbGtIOGZaekk4eW9iMFFwMW5rakl1ZXZGQUtIQ0tILWRTWG5SUV9ad2RwcmxfMFFUT1VnT0tlY0l0bVgzTlIxLUtyU09tNUczX1ZGWUxhcHY4T19KT1k2dzhEcA?oc=5",
@@ -10625,6 +10606,28 @@
    ],
    "score": 1,
    "ts": "2026-10-29T09:51:43.407981+00:00"
+  },
+  {
+   "title": "UK Mortgage Approvals Fall More Than Forecast as Loan Costs Bite",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-29/uk-mortgage-approvals-fall-more-than-forecast-as-loan-costs-bite",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-29T09:56:43.357396+00:00",
+   "title_ru": "Разрешения на ипотеку в Великобритании упали больше, чем прогнозировалось, поскольку стоимость кредита укусила",
+   "lead": "UK mortgage approvals fell more than expected in September, a sign that soaring borrowing costs are tightening their squeeze on prospective homebuyers.",
+   "lead_ru": "В сентябре одобрение ипотечных кредитов в Великобритании упало больше, чем ожидалось, что свидетельствует о том, что растущие затраты по займам ужесточают давление на потенциальных покупателей жилья."
+  },
+  {
+   "title": "Vietnam sets 65% state ownership floor for major banks, to retain control of strategic groups",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNSk0xQnpMT0V4RFZ2aWJ0VGlzeWpmMXpGT1ZQT3BReV81UkxFWEFncVNxYzd1VkZqZTJmc3BWOXdDeWNBV0ZubWdJeDRKRUpuQ2VPMFZFbXdZU2ZzajhGNUFfVS1GeURQdUpDN1NFYm1lNEtPQXhoMDQzN3RpN1h2TjNlTVNZclp4MjJsQjVIRWJaMFBHbW0wWldKUno1ZXQ5TnZ4emVTVFdyQQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T09:56:43.357396+00:00",
+   "title_ru": "Вьетнам устанавливает 65% государственную собственность для крупных банков, чтобы сохранить контроль над стратегическими группами"
   }
  ],
  "last_digest": "2026-10-28",
@@ -17292,8 +17295,8 @@
    "0000933029-26-000004",
    "0001628280-26-067986",
    "0001605957-26-000005",
-   "0001577526-26-000167",
    "0002103469-26-000014",
+   "0001577526-26-000167",
    "0001193125-26-436562",
    "0001104659-26-119784",
    "0002127826-26-000007",
