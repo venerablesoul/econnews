@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "ba41b3bfaf5855bb": "2026-10-26T14:41:22.831357+00:00",
-  "f8bded95943f8d78": "2026-10-26T14:41:22.831357+00:00",
-  "f8248943121cec82": "2026-10-26T14:41:22.831357+00:00",
   "7151d3cd349e7f3a": "2026-10-26T14:51:22.762924+00:00",
   "851f5b02e500990f": "2026-10-26T14:51:22.762924+00:00",
   "b03357ad62dc8cf2": "2026-10-26T14:51:22.762924+00:00",
@@ -1053,26 +1050,14 @@
   "c24a09ebe7c675dc": "2026-10-29T14:20:15.754833+00:00",
   "ee79cfd7680c8f7f": "2026-10-29T14:25:15.711616+00:00",
   "1e849efba4cdd783": "2026-10-29T14:25:15.711616+00:00",
-  "aa47c154155bcd45": "2026-10-29T14:25:15.711616+00:00"
+  "aa47c154155bcd45": "2026-10-29T14:25:15.711616+00:00",
+  "ed296b5d1b29b671": "2026-10-29T14:40:15.661132+00:00",
+  "10b7d1c73a6b4e7f": "2026-10-29T14:45:15.735260+00:00",
+  "69357465d56bce26": "2026-10-29T14:45:15.735260+00:00",
+  "04653cbad7e932c3": "2026-10-29T14:45:15.735260+00:00",
+  "59701f218e7e37f5": "2026-10-29T14:45:15.735260+00:00"
  },
  "recent": [
-  {
-   "title": "Claudia Sahm Makes the Case for an October Fed Rate Hike",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-26/claudia-sahm-makes-case-for-an-october-fed-rate-hike-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 8,
-   "ts": "2026-10-26T14:41:22.831357+00:00",
-   "title_ru": "Клаудия Сахм оправдывает октябрьское повышение ставки ФРС",
-   "lead": "New Century Advisors Chief Economist Claudia Sahm argues that high energy costs could spread into other consumer prices and that tariffs on Canada may rise, creating upside inflation risks that could justify a rate hike in…",
-   "lead_ru": "Главный экономист New Century Advisors Клаудия Сахм утверждает, что высокие цены на энергоносители могут распространиться на другие потребительские цены и что тарифы в Канаде могут возрасти, создавая риски роста инфляции, которые могут оправдать повышение ставок в...",
-   "tags": [
-    "Fed",
-    "rates",
-    "inflation"
-   ]
-  },
   {
    "title": "Bloomberg сообщил, что Индия стала чаще выбирать нефть не из России",
    "link": "https://www.rbc.ru/economics/26/10/2026/6adf4f8d4e8e85f125c987b3",
@@ -11020,6 +11005,19 @@
    "score": 3,
    "ts": "2026-10-29T14:25:15.711616+00:00",
    "title_ru": "Прибыль First Abu Dhabi Bank в третьем квартале выросла на 6% на фоне роста чистого процентного дохода"
+  },
+  {
+   "title": "Who Replaces Lagarde? De Cos and Knot Lead Candidates to Run ECB",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQX2R0VXB5cE4yNEhMaFpkYjNKQ0l2Z29DbkZxUGN3SlVnWk91dWNJWWRiMGJneWVkSGZFeXZPU0Vkb3djNk1tbldSb3NvY1F2SnNuSjRJUXdmTGdZU2tWSk1GdlM4OUlSWmZibjV0TjA4Y2JpcHFLUG9LbU5GR3BfM09MWWxPNk9VWW15VVJwYVg1TUtpNE1MdVNranJFVXY1SWR3MTh1UlJrMjNNRHAzQVZOX0c?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-29T14:45:15.735260+00:00",
+   "title_ru": "Кто заменит Лагард? De Cos и Knot ведут кандидатов на пост главы ЕЦБ",
+   "tags": [
+    "ECB"
+   ]
   }
  ],
  "last_digest": "2026-10-28",
@@ -17686,14 +17684,12 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-29T13:45:15.716444+00:00",
+  "checked": "2026-10-29T14:45:15.735260+00:00",
   "sec_seen": [
-   "0001104659-26-120006",
-   "0001225208-26-008549",
-   "0001017475-26-000012"
+   "0001225208-26-008549"
   ],
   "errors": {
-   "senate": "HTTPError: HTTP Error 403: Forbidden"
+   "senate": "HTTPError: HTTP Error 503: Service Unavailable"
   }
  },
  "cal_actuals": {
