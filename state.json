@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "10f00f1d4faa516f": "2026-10-26T05:29:41.366239+00:00",
-  "3bd339c1558979c1": "2026-10-26T05:34:41.430104+00:00",
-  "5210fe80699d1974": "2026-10-26T05:34:41.430104+00:00",
   "9d9316f85e7ddcd7": "2026-10-26T05:39:41.364303+00:00",
   "37c2b11f0baf5811": "2026-10-26T05:39:41.364303+00:00",
   "7fc0286602f3d932": "2026-10-26T05:49:41.392584+00:00",
@@ -1065,21 +1062,14 @@
   "27d65b9092e49ad5": "2026-10-29T05:16:19.801440+00:00",
   "badae83794fd540b": "2026-10-29T05:16:19.801440+00:00",
   "4b4b29f8a3a0a818": "2026-10-29T05:26:19.830324+00:00",
-  "3c33ba7966b2bab7": "2026-10-29T05:26:19.830324+00:00"
+  "3c33ba7966b2bab7": "2026-10-29T05:26:19.830324+00:00",
+  "6f250ae45c05415b": "2026-10-29T05:31:19.807359+00:00",
+  "d837e645efba89cf": "2026-10-29T05:36:19.792974+00:00",
+  "be3622c912749c89": "2026-10-29T05:36:19.792974+00:00",
+  "37b9d22b2b6ff5ac": "2026-10-29T05:36:19.792974+00:00",
+  "b5d864fb8d5fc6d5": "2026-10-29T05:36:19.792974+00:00"
  },
  "recent": [
-  {
-   "title": "Can Pakistan’s military government make the economy grow?",
-   "link": "https://www.ft.com/content/14242b5e-0975-4c7d-92fd-e7c04e87238a?syn-25a6b1a6=1",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T05:34:41.430104+00:00",
-   "title_ru": "Может ли военное правительство Пакистана обеспечить рост экономики?",
-   "lead": "Islamabad has stopped tailspin but faces deeper reforms to break boom-and-bust cycle and lure investment",
-   "lead_ru": "Исламабад остановил штопор, но сталкивается с более глубокими реформами, чтобы разорвать цикл бумов и спадов и привлечь инвестиции"
-  },
   {
    "title": "JPMorgan's Travis Spence on China's Active ETF Market",
    "link": "https://www.bloomberg.com/news/videos/2026-10-26/jpmorgan-s-travis-spence-on-china-s-active-etf-market-video",
@@ -10745,6 +10735,31 @@
    "score": 3,
    "ts": "2026-10-29T05:26:19.830324+00:00",
    "title_ru": "Экспорт Южной Кореи в октябре рос самыми быстрыми темпами с 1974 года"
+  },
+  {
+   "title": "It is too soon to hold a funeral for US tariffs",
+   "link": "https://www.ft.com/content/a62349a6-6d66-4191-9080-93ae631f402c?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 5,
+   "ts": "2026-10-29T05:36:19.792974+00:00",
+   "title_ru": "Еще слишком рано проводить похороны для американских тарифов",
+   "lead": "Import duties are a far bigger deal in next week’s midterms due to their association with an unpopular president",
+   "lead_ru": "Импортные пошлины - гораздо более крупная сделка на промежуточных выборах на следующей неделе из-за их связи с непопулярным президентом",
+   "tags": [
+    "tariffs"
+   ]
+  },
+  {
+   "title": "Cash is king as investors draw new battle lines in AI spending boom",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQVnRkb1hlemJ1dC1UWVotYWtHNW9rVlhfc1otUFZOTmlBUlVLbTlNSWNtUks0WEpYMnpVLXZJLWRLNldGRGRNRXB0OHpfeGJwRmRhcjgyaC1pMHVvWTA3dzAxekZ4Xy0xN3NVQU9URjhJTXVZLXFXQXpvWFo3UE5aWGhjNElxLWJtcVVsWFI5N0hBV0VrM0NCQzdlYkdNUHMwTXpkNG02bEY0QQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T05:36:19.792974+00:00",
+   "title_ru": "Денежные средства являются королем, поскольку инвесторы рисуют новые линии битвы в буме расходов на ИИ"
   }
  ],
  "last_digest": "2026-10-28",
