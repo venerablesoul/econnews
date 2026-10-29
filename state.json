@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "37772872aaa95261": "2026-10-26T00:03:52.451513+00:00",
   "33619b0e9322e2c3": "2026-10-26T00:18:52.529389+00:00",
   "5bf7f3e3ccb22610": "2026-10-26T00:23:52.462882+00:00",
   "2420d7dac20f0122": "2026-10-26T00:48:52.544062+00:00",
@@ -1082,20 +1081,6 @@
   "33538bad7f897b72": "2026-10-29T00:00:50.404348+00:00"
  },
  "recent": [
-  {
-   "title": "Trump says Canada tariff deal coming 'soon' at Michigan border rally",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQdEJMMGdRVDJoVkVSSGFSV1FvRmJMTy1LWnZhMWRzeUFjNlN4QUFKQ2tZc285cEs4akdIZ0dvZzJtSTBWU3ZwX1VGX2l3TllKVGxfNnh0Vm5rOTVtX2JpLXhwOXdJTEJURVBjYjRLS3hWSHk4bXBCT3lIWmZGMS1YTE5WQmpYVTVWcEk3YnE3WWV6anVTdElYUlV0Q3o4cnF2N0Z1NXJlazBvcG9L?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-26T00:03:52.451513+00:00",
-   "title_ru": "Трамп заявил, что тарифное соглашение с Канадой будет заключено «скоро» на митинге на границе с Мичиганом",
-   "tags": [
-    "markets",
-    "tariffs"
-   ]
-  },
   {
    "title": "Oil prices down almost $1 in early trading",
    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQb2J2QlNheno1OW9FdmN3RTJWVHF1RXdLX0VQSGlKSkZlZEtNTnFxU3FUd1Zab1FPME1felpOVl9oM1oyNXc0T2xkdDZhc0JfUVlSTFU4Vm9aYWRrd1BhQmw1QThZRDZHbEZZR3Y5UlhNaDlWWm8tbjU2bjVtaFRVM0VMcml2OXY4TUtxNXRZU2c3c0lC?oc=5",
@@ -13964,6 +13949,22 @@
    },
    {
     "src": "sec",
+    "id": "03ca2ed18d3a5c09",
+    "ticker": "INSW",
+    "company": "International Seaways, Inc.",
+    "who": "Famatown Finance Ltd et al.",
+    "role": "10% owner",
+    "type": "sell",
+    "value": 25011246,
+    "shares": 203738,
+    "price": 122.76,
+    "plan": false,
+    "date": "2026-10-14",
+    "disclosed": "2026-10-28",
+    "link": "https://www.sec.gov/Archives/edgar/data/1731638/000091957426007290/0000919574-26-007290-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "22a075a4531b4e3c",
     "ticker": "AGNC",
     "company": "AGNC Investment Corp.",
@@ -17273,22 +17274,6 @@
     "date": "2026-10-20",
     "disclosed": "2026-10-21",
     "link": "https://www.sec.gov/Archives/edgar/data/2051704/000117739426000134/0001177394-26-000134-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "92a1c8b6e3f06ffc",
-    "ticker": "IBTA",
-    "company": "Ibotta, Inc.",
-    "who": "Bryan Leach",
-    "role": "CEO, 10% owner",
-    "type": "sell",
-    "value": 3000679,
-    "shares": 63064,
-    "price": 47.58,
-    "plan": true,
-    "date": "2026-10-20",
-    "disclosed": "2026-10-21",
-    "link": "https://www.sec.gov/Archives/edgar/data/1875168/000162828026066730/0001628280-26-066730-index.htm"
    }
   ],
   "docs": {
@@ -17326,7 +17311,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-28T23:05:50.449112+00:00",
+  "checked": "2026-10-29T00:05:50.482129+00:00",
   "sec_seen": [
    "0001493152-26-049123",
    "0001517413-26-000322",
@@ -17335,9 +17320,8 @@
    "0001204816-26-000057",
    "0001094718-26-000011",
    "0001104659-26-119719",
-   "0001654009-26-000017",
-   "0001437749-26-033821",
    "0001193125-26-436510",
+   "0001437749-26-033821",
    "0001493152-26-049125",
    "0001022079-26-000118",
    "0001193125-26-436459",
@@ -17353,11 +17337,13 @@
    "0001510281-26-000387",
    "0001510281-26-000388",
    "0002012383-26-003952",
+   "0000919574-26-007290",
    "0001610717-26-000445",
    "0001398344-26-019008",
    "0001628280-26-067978",
    "0001193125-26-436441",
    "0001705952-26-000016",
+   "0001807561-26-000026",
    "0001628280-26-067980",
    "0001505300-26-000016",
    "0001193125-26-436443",
@@ -17369,7 +17355,7 @@
    "0001493152-26-049119",
    "0000950103-26-016314",
    "0001493152-26-049131",
-   "0001807561-26-000026"
+   "0001654009-26-000017"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
