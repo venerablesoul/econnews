@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "78cc49ee4323f384": "2026-10-26T15:31:22.835032+00:00",
-  "9c7771d77081f721": "2026-10-26T15:31:22.835032+00:00",
-  "0502488355bb16a0": "2026-10-26T15:31:22.835032+00:00",
   "c55509c82e691cac": "2026-10-26T15:46:22.717194+00:00",
   "89c7903a2878620c": "2026-10-26T15:46:22.717194+00:00",
   "677c33702f2e9feb": "2026-10-26T15:56:22.726397+00:00",
@@ -1056,51 +1053,11 @@
   "e3c3c21a792da5cf": "2026-10-29T15:20:15.824532+00:00",
   "22b0342965212f6a": "2026-10-29T15:25:15.676156+00:00",
   "2ff758d6ce4fd638": "2026-10-29T15:30:15.651229+00:00",
-  "9c714e6f5fcdded7": "2026-10-29T15:30:15.651229+00:00"
+  "9c714e6f5fcdded7": "2026-10-29T15:30:15.651229+00:00",
+  "2f582076b74cca0a": "2026-10-29T15:40:15.681005+00:00",
+  "d4e01cea426f0475": "2026-10-29T15:40:15.681005+00:00"
  },
  "recent": [
-  {
-   "title": "Oil stocks in US strategic petroleum reserve fall to lowest level since 1982",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOVVNMUGdfdGo5OFI2RExWUFBBTkQ3SWhMaVNCajNGUER0Si1ULTM0QnJ2UDZoMURnczVfU0N4dXVfN3VjV2Qxd2VGcW1YcUxYb2FrdG1wa3VsdDZ2YldVeExjQXZrQjRtcld4VHFrTjMxeVEzU2JGM1E2TTJTTjNTc3llMUo4SkNYanhrb2Fqb2l0TmpQaENReFpVbkJMSk9hbG5XbW1ObnFMdGZENFNZQTBzdnEwQzhFRUVacTF1UQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-26T15:31:22.835032+00:00",
-   "title_ru": "Запасы нефти в стратегических нефтяных резервах США упали до самого низкого уровня с 1982 года",
-   "tags": [
-    "oil",
-    "markets"
-   ]
-  },
-  {
-   "title": "Citadel Securities’ Shah Says AI Trade Has No ‘Margin for Error’",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-26/citadel-securities-shah-says-ai-trade-has-no-margin-for-error",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T15:31:22.835032+00:00",
-   "title_ru": "Шах Citadel Securities говорит, что у AI Trade нет «права на ошибку»",
-   "lead": "Markets have become so invested in the artificial intelligence trade that there is very little room for error if the massive spending doesn’t pay off, according to Citadel Securities.",
-   "lead_ru": "По данным Citadel Securities, рынки настолько увлеклись торговлей искусственным интеллектом, что вероятность ошибки очень мала, если огромные расходы не окупятся."
-  },
-  {
-   "title": "A Democrat Midterm Win Is Seen Heralding a Bond Rally: Markets Pulse",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-26/a-democrat-midterm-win-is-seen-heralding-a-bond-rally-markets-pulse",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T15:31:22.835032+00:00",
-   "title_ru": "Промежуточная победа демократов предвещает ралли облигаций: пульс рынков",
-   "lead": "Democrats winning control of both houses of US Congress at the Nov. 3 midterm election is the outcome that would most likely set up a bond rally, according to the latest Markets Pulse survey.",
-   "lead_ru": "Согласно последнему исследованию Markets Pulse, демократы, завоевавшие контроль над обеими палатами Конгресса США на промежуточных выборах 3 ноября, скорее всего, повлекут за собой ралли облигаций.",
-   "tags": [
-    "bonds",
-    "markets"
-   ]
-  },
   {
    "title": "Курс украинской гривны к доллару США снизился на 34 копейки",
    "link": "https://www.rbc.ru/rbcfreenews/6adf6baff98ac3abf29cbe03",
@@ -11119,6 +11076,30 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Fed’s Path to a Repo-Based Framework Faces a Familiar Roadblock",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-29/fed-s-path-to-a-repo-based-framework-faces-a-familiar-roadblock",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T15:40:15.681005+00:00",
+   "title_ru": "Путь ФРС к репо-фреймворку сталкивается со знакомым препятствием",
+   "lead": "As Federal Reserve officials ponder ways to shrink their holdings and keep markets flush with cash from lending operations, they face a challenge years in the making: Overcoming the stigma of borrowing from the central bank.",
+   "lead_ru": "По мере того, как чиновники Федеральной резервной системы размышляют о том, как сократить свои запасы и сохранить рынки на одном уровне с наличными деньгами от кредитных операций, они сталкиваются с многолетней проблемой: преодоление стигмы заимствований у центрального банка.",
+   "tags": [
+    "Fed"
+   ]
+  },
+  {
+   "title": "ЦБ сообщил о планах увеличить лимит платежей для бизнеса через СБП",
+   "link": "https://www.rbc.ru/rbcfreenews/6ae33f24dc2871f6a40c97bf",
+   "sources": [
+    "RBC"
+   ],
+   "score": 1,
+   "ts": "2026-10-29T15:40:15.681005+00:00"
   }
  ],
  "last_digest": "2026-10-28",
