@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "5c89bf39e886882a": "2026-10-26T05:24:41.381142+00:00",
   "10f00f1d4faa516f": "2026-10-26T05:29:41.366239+00:00",
   "3bd339c1558979c1": "2026-10-26T05:34:41.430104+00:00",
   "5210fe80699d1974": "2026-10-26T05:34:41.430104+00:00",
@@ -1064,7 +1063,9 @@
   "8721bbc8c74fe406": "2026-10-29T05:16:19.801440+00:00",
   "30f9e1e612cd0b83": "2026-10-29T05:16:19.801440+00:00",
   "27d65b9092e49ad5": "2026-10-29T05:16:19.801440+00:00",
-  "badae83794fd540b": "2026-10-29T05:16:19.801440+00:00"
+  "badae83794fd540b": "2026-10-29T05:16:19.801440+00:00",
+  "4b4b29f8a3a0a818": "2026-10-29T05:26:19.830324+00:00",
+  "3c33ba7966b2bab7": "2026-10-29T05:26:19.830324+00:00"
  },
  "recent": [
   {
@@ -10718,6 +10719,32 @@
    "tags": [
     "jobs"
    ]
+  },
+  {
+   "title": "ECB Set to Hold Rates to Assess France and Energy Risks",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-29/ecb-set-to-hold-rates-to-assess-france-and-energy-risks",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T05:26:19.830324+00:00",
+   "title_ru": "ЕЦБ намерен удерживать ставки для оценки Франции и энергетических рисков",
+   "lead": "The European Central Bank is set to keep borrowing costs steady as it weighs bond-market turmoil in France and a renewed advance in energy costs.",
+   "lead_ru": "Европейский центральный банк намерен поддерживать стоимость заимствований на стабильном уровне, поскольку он взвешивает потрясения на рынке облигаций во Франции и возобновление роста цен на энергоносители.",
+   "tags": [
+    "ECB",
+    "bonds"
+   ]
+  },
+  {
+   "title": "South Korea's October exports seen rising at fastest pace since 1974",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQdkRpLUlXdXdjQkhpNEQ0WEZzN3NCSjlOSURvR0xhXzBEelFRLWUtQUFIekV3dEVpOTY5N0tROC1LMlZVQjJHTkRtZEVBQmhaWVg4c0ZMejNwVk9lWGpfTWxYY1UzNGVkZ0s3WGNFV2g4bmEyVXlkeTIxaGtfWE9uNDJTdzEwa3JycTFpdU0wR2lmWWdXYjJVejg5WGhDS3VvajV2ZnlaLUloQmRmZTA0c0JOTlQ5WjZGTTd3?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T05:26:19.830324+00:00",
+   "title_ru": "Экспорт Южной Кореи в октябре рос самыми быстрыми темпами с 1974 года"
   }
  ],
  "last_digest": "2026-10-28",
@@ -17379,7 +17406,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-29T04:16:19.853021+00:00",
+  "checked": "2026-10-29T05:21:19.896157+00:00",
   "sec_seen": [
    "0001609151-26-000148",
    "0002131773-26-000007",
