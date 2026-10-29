@@ -1043,7 +1043,12 @@
   "961f4a39f174176f": "2026-10-29T14:05:15.622574+00:00",
   "e199bca473c62ef0": "2026-10-29T14:05:15.622574+00:00",
   "ae8c5d1b57700f23": "2026-10-29T14:05:15.622574+00:00",
-  "005f168df8441ce2": "2026-10-29T14:05:15.622574+00:00"
+  "005f168df8441ce2": "2026-10-29T14:05:15.622574+00:00",
+  "2ce7f405ece0343c": "2026-10-29T14:10:15.596614+00:00",
+  "773c3f1e6eb9a3ef": "2026-10-29T14:10:15.596614+00:00",
+  "ad9c179951251871": "2026-10-29T14:10:15.596614+00:00",
+  "491a91281d755d3d": "2026-10-29T14:10:15.596614+00:00",
+  "76b7e820a2792a4e": "2026-10-29T14:10:15.596614+00:00"
  },
  "recent": [
   {
@@ -10875,6 +10880,75 @@
    "tags": [
     "Fed"
    ]
+  },
+  {
+   "title": "Strong US inflation and growth will keep Fed on a tightening path",
+   "link": "https://www.ft.com/content/2afe7f73-4717-4e26-8257-317f637738b4",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 8,
+   "ts": "2026-10-29T14:10:15.596614+00:00",
+   "title_ru": "Сильная инфляция и рост в США будут удерживать ФРС на пути ужесточения",
+   "lead": "Third-quarter growth figures and September’s PCE inflation data confirm the US economy is running hot",
+   "lead_ru": "Показатели роста за третий квартал и сентябрьские данные по инфляции PCE подтверждают, что экономика США находится в жарком состоянии",
+   "tags": [
+    "Fed",
+    "inflation"
+   ]
+  },
+  {
+   "title": "Reaching 2% Inflation Will Be Challenging for the Fed, Feroli Says",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-29/reaching-2-inflation-will-be-challenging-feroli-says-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 7,
+   "ts": "2026-10-29T14:10:15.596614+00:00",
+   "title_ru": "Достижение 2% инфляции будет сложной задачей для ФРС, говорит Фероли",
+   "lead": "JPMorgan Chief US Economist Mike Feroli says it will be a challenge for the Federal Reserve to get inflation back down below its target of 2%.",
+   "lead_ru": "Главный экономист JPMorgan Майк Фероли говорит, что Федеральной резервной системе будет сложно вернуть инфляцию ниже целевого уровня в 2%.",
+   "tags": [
+    "Fed",
+    "inflation"
+   ]
+  },
+  {
+   "title": "Defense Gets Most Mentions in UK Budget Since World War Two",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-29/more-defence-since-world-war-ii-healey-s-budget-in-eight-charts",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T14:10:15.596614+00:00",
+   "title_ru": "Министерство обороны получило наибольшее количество упоминаний в бюджете Великобритании со времен Второй мировой войны",
+   "lead": "UK Chancellor of the Exchequer John Healey’s first budget contained a series of small measures to help with the cost of living, including minor savings for most households for winter energy bills, paid for by banks.",
+   "lead_ru": "Первый бюджет канцлера казначейства Великобритании Джона Хили содержал ряд небольших мер, направленных на снижение стоимости жизни, включая незначительную экономию для большинства домохозяйств на счетах за энергию в зимний период, оплачиваемых банками."
+  },
+  {
+   "title": "Pound steady after Healey's 'continuity budget'",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOdl83U3dmY1pQbXc5ZG9GbHNfR29KTnJ0WTVtQklpSEdwM3pWRFVFalk3SUIxT2xma0lZdWsyOF9GZ2FoZEhIZGNTUUtkRWN6c2lfdzJPRklQQ2lwWGJScHNQUnFnellxYy1VNWxnREZFVVFqc3U5VHRUeG1hNkdLZVl5eEVNTnJBVXMyOHlodjJZd28?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T14:10:15.596614+00:00",
+   "title_ru": "Фунт устойчив после «бюджета преемственности» Хили"
+  },
+  {
+   "title": "The two pragmatists leading the race to run the ECB",
+   "link": "https://www.ft.com/content/281690fe-ac0c-43f1-9a36-a3e6b5ee175d?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T14:10:15.596614+00:00",
+   "title_ru": "Два прагматика, возглавляющие гонку за место в ЕЦБ",
+   "lead": "Pablo Hernández de Cos and Klaas Knot are currently frontrunners to become the fifth president of Europe’s top monetary institution",
+   "lead_ru": "Пабло Эрнандес де Кос (Pablo Hernández de Cos) и Клаас Кнот (Klaas Knot) в настоящее время являются лидерами, чтобы стать пятым президентом ведущего денежно-кредитного учреждения Европы",
+   "tags": [
+    "ECB"
+   ]
   }
  ],
  "last_digest": "2026-10-28",
@@ -17543,9 +17617,8 @@
   },
   "checked": "2026-10-29T13:45:15.716444+00:00",
   "sec_seen": [
-   "0001493152-26-049205",
    "0001493152-26-049207",
-   "0001976408-26-000920",
+   "0001493152-26-049205",
    "0001683168-26-008147",
    "0001104659-26-120006",
    "0001534574-26-000018",
@@ -17553,8 +17626,8 @@
    "0001225208-26-008549",
    "0001493152-26-049211",
    "0001017475-26-000012",
-   "0001493152-26-049209",
-   "0001213900-26-113597"
+   "0001976408-26-000920",
+   "0001493152-26-049209"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
