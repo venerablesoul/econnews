@@ -1062,7 +1062,8 @@
   "5f99a6023d8697cb": "2026-10-29T17:40:15.864981+00:00",
   "8a8700139bf25462": "2026-10-29T17:40:15.864981+00:00",
   "6b36442b14bcae0f": "2026-10-29T17:50:15.674656+00:00",
-  "3be8c837b4b4381d": "2026-10-29T17:55:15.648104+00:00"
+  "3be8c837b4b4381d": "2026-10-29T17:55:15.648104+00:00",
+  "0f33882a5ca4f953": "2026-10-29T18:00:15.979362+00:00"
  },
  "recent": [
   {
@@ -11199,9 +11200,22 @@
    ],
    "score": 2,
    "ts": "2026-10-29T17:55:15.648104+00:00"
+  },
+  {
+   "title": "ECB governors see December hike likely followed by pause, sources say",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPMXJsZnJoaDBVczhVVHlHVktscUlEVzhTcGtnX25CS2F4c2FHVGpxOE02UHBudjRiRm02UmV6anhHX05mLWJSbHQ0ZmJqQV9fVDU0eVhmNXZjX0gtYXNWQzlrcXR1bHB5THJxVXVjWGM3bjN5VUdOTEJzUktnWHcyWUo2ZUIteER2MUVtb1VYaVU4NUQ1VWNDbU5aMy1URWtndFNEcmp3azNBRDNhdlZIa2FyeUlzS1UxU3V4Y0ln?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T18:00:15.979362+00:00",
+   "title_ru": "Руководители ЕЦБ считают, что декабрьское повышение, вероятно, последует паузой, говорят источники",
+   "tags": [
+    "ECB"
+   ]
   }
  ],
- "last_digest": "2026-10-28",
+ "last_digest": "2026-10-29",
  "fail_streak": {
   "РБК": 0,
   "МВФ": 0,
@@ -11228,7 +11242,6 @@
   "US Labor Statistics (BLS)": 0
  },
  "charts_sent": [
-  "2026-10-19-21",
   "2026-10-20-09",
   "2026-10-20-21",
   "2026-10-21-09",
@@ -11247,7 +11260,8 @@
   "2026-10-27-21",
   "2026-10-28-09",
   "2026-10-28-21",
-  "2026-10-29-09"
+  "2026-10-29-09",
+  "2026-10-29-21"
  ],
  "calendar": {
   "fetched": "2026-10-29T12:16:43.417394+00:00",
