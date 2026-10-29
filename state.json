@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "28931cb69f4b4344": "2026-10-26T03:13:52.448030+00:00",
   "90db28de3045b34f": "2026-10-26T03:23:52.454967+00:00",
   "4b11d3dd346fea6c": "2026-10-26T03:28:52.438135+00:00",
   "13cab3f32174f29f": "2026-10-26T03:39:45.872868+00:00",
@@ -1073,22 +1072,11 @@
   "05f06ac33d6726b7": "2026-10-29T02:31:19.869922+00:00",
   "ed17e724ce351e15": "2026-10-29T02:36:19.855016+00:00",
   "ae80984dbc2f4563": "2026-10-29T02:36:19.855016+00:00",
-  "6999642815627bcb": "2026-10-29T02:51:19.954982+00:00"
+  "6999642815627bcb": "2026-10-29T02:51:19.954982+00:00",
+  "deb591090a3e73a9": "2026-10-29T03:16:19.828417+00:00",
+  "acda9708349e300f": "2026-10-29T03:16:19.828417+00:00"
  },
  "recent": [
-  {
-   "title": "Indian rupee faces pressure from oil headwinds, lack of inflow support",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPNzNSakVvaTFJdVVXTkhsSDA3T0doSVJfVXIzaU9oNEY4RjRDNUxSbjJpZ2RuUGE4VkV4Vm9XRGdidEFUZkJyRXpsRmR6YWROSlRxajdpUDItNi12TV9HaHFhVXZxVFpGMUppdVRFckZIYnZSc0VoalRDeVpUX1BKR1lsN1NiWmFxRGliR2FidktEaHQwU2x5bzA1ejlvd0s3cFMtYmpJTWZaTm4yM1E?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T03:13:52.448030+00:00",
-   "title_ru": "Индийская рупия сталкивается с давлением нефтяных встречных ветров, отсутствием поддержки притока",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "Singapore to Store Saudi Oil in Underground Caverns From 2027",
    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOR0g5bnV0TW05eVlmWnhHLU5SMTlRd09wdEtnTEdnRzdVNFJVMG8zNjdtSWJhYUFlelc5Rkg4SmNHRW1CaTBjaDJ4d2tCVnh1ZFNQeVdZMWtjWl9MU1k0RjNJaFpnY1Z6d1ZFbjZ3Zk80OXVmeUxvR01URmRtRHY1eVlyQURlakNWa21nZ3BfdnBfS0EtelhtcnZQZllZTE1UbTNnWXFDWVBDdzR4V2xURWdR?oc=5",
@@ -10662,6 +10650,34 @@
    "tags": [
     "crypto"
    ]
+  },
+  {
+   "title": "Fed's Warsh on Why He Watches Korea's Economy Closely",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-29/fed-s-warsh-on-why-he-watches-korea-s-economy-closely-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-29T03:16:19.828417+00:00",
+   "title_ru": "Уорш из ФРС о том, почему он внимательно следит за экономикой Кореи",
+   "lead": "Federal Reserve Chairman Kevin Warsh closely monitors South Korea's economy because he views its tech exports as vital \"feedstocks\" and a leading indicator for what is coming through the global supply chain, a point he…",
+   "lead_ru": "Председатель Федеральной резервной системы Кевин Уорш внимательно следит за экономикой Южной Кореи, потому что он рассматривает ее технологический экспорт как жизненно важное «сырье» и опережающий индикатор того, что происходит через глобальную цепочку поставок, что он...",
+   "tags": [
+    "Fed"
+   ]
+  },
+  {
+   "title": "Bessent Plays Down Concerns Over AI Financing, Fed Rate Policy",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQUEVESE1Tb0FzR0xWY0NTUGVlNmFtWGhvdk9LVERpci0wY1VwMGtvMVU5T0RaOWktSkpZWWwxQnV0YkZyNU5uZC1qT0NXR1J3dDhwZ3puZXgtdkFBSzUtTHVGbHpQQ09nbjExRm9vRUQtWVphSEFOQ203OWtvd1FHck13alNJQ0ZGdjlzV09uT09icWFZd0M2TGJ6Zk50TlIxYU54cHk1ZUZ2Q0FDNTVSZm1R?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T03:16:19.828417+00:00",
+   "title_ru": "Bessent снижает опасения по поводу финансирования ИИ, политики ставок ФРС",
+   "tags": [
+    "Fed"
+   ]
   }
  ],
  "last_digest": "2026-10-28",
@@ -17323,7 +17339,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-29T02:15:50.425477+00:00",
+  "checked": "2026-10-29T03:16:19.828417+00:00",
   "sec_seen": [
    "0001609151-26-000148",
    "0002131773-26-000007",
