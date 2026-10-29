@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "9d9316f85e7ddcd7": "2026-10-26T05:39:41.364303+00:00",
-  "37c2b11f0baf5811": "2026-10-26T05:39:41.364303+00:00",
   "7fc0286602f3d932": "2026-10-26T05:49:41.392584+00:00",
   "1e3ce1d44430482b": "2026-10-26T05:49:41.392584+00:00",
   "60742bdd270945b3": "2026-10-26T05:49:41.392584+00:00",
@@ -1067,36 +1065,11 @@
   "d837e645efba89cf": "2026-10-29T05:36:19.792974+00:00",
   "be3622c912749c89": "2026-10-29T05:36:19.792974+00:00",
   "37b9d22b2b6ff5ac": "2026-10-29T05:36:19.792974+00:00",
-  "b5d864fb8d5fc6d5": "2026-10-29T05:36:19.792974+00:00"
+  "b5d864fb8d5fc6d5": "2026-10-29T05:36:19.792974+00:00",
+  "9357911b68e1a985": "2026-10-29T05:41:19.790891+00:00",
+  "abd6a428171ab4fd": "2026-10-29T05:41:19.790891+00:00"
  },
  "recent": [
-  {
-   "title": "JPMorgan's Travis Spence on China's Active ETF Market",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-26/jpmorgan-s-travis-spence-on-china-s-active-etf-market-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T05:39:41.364303+00:00",
-   "title_ru": "Трэвис Спенс из JPMorgan на активном рынке ETF в Китае",
-   "lead": "JPMorgan Asset Management Global Head of ETFs Travis Spence discusses the approval of active ETFs in mainland China. He speaks with Yvonne Man and Minmin Low on \"Bloomberg: The China Show.\" (Source: Bloomberg)",
-   "lead_ru": "JPMorgan Asset Management Глобальный руководитель ETF Трэвис Спенс обсуждает одобрение активных ETF в материковом Китае. Он разговаривает с Ивонн Ман и Минмин Лоу на \"Bloomberg: The China Show.\" (Источник: Bloomberg)",
-   "tags": [
-    "China"
-   ]
-  },
-  {
-   "title": "Markets Brace After Lula's Surprise Comeback Win In Brazil Elections",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-26/insight-with-haslinda-amin-10-6-2026-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T05:39:41.364303+00:00",
-   "title_ru": "Рынки готовятся после неожиданной победы Лулы на выборах в Бразилии",
-   "lead": "\"Insight with Haslinda Amin\" is a daily news program featuring in-depth, high-profile interviews and analysis to give viewers the complete picture on the stories that matter.",
-   "lead_ru": "«Инсайт с Хаслиндой Амин» - это ежедневная новостная программа с подробными, громкими интервью и анализом, чтобы дать зрителям полное представление о важных историях."
-  },
   {
    "title": "India's Infosys falls after cutting revenue growth forecast for fiscal 2027",
    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQWkVSX0U4bzJ0NS15dGRlUG96cGItNW5zNXZ0bF84bmRiNmJQOEdubGdlVkZUVnUzNDl1UFNvZHhZRVJZMXpzanBGRGtCQnRueTZKR3gweTdWYXlCWE4zOUZ1Q3RoUjBZaHpobVlNZHo5SXhzbTF1ZmpOODlnUWFJUER1TVp6Z1Jnc0QyemxOdEhOdzlyYndvVFNjelI2Rnpicm14U2pjSU1zM1ZFVWJOYU51NWctdnlJRnc?oc=5",
@@ -10760,6 +10733,31 @@
    "score": 3,
    "ts": "2026-10-29T05:36:19.792974+00:00",
    "title_ru": "Денежные средства являются королем, поскольку инвесторы рисуют новые линии битвы в буме расходов на ИИ"
+  },
+  {
+   "title": "Anthropic IPO: How Investors in Asia Can Get In",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-29/anthropic-ipo-how-investors-in-asia-can-get-in",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T05:41:19.790891+00:00",
+   "title_ru": "Антропное IPO: как туда могут попасть инвесторы из Азии",
+   "lead": "For much of Asia, getting a piece of Anthropic’s blockbuster IPO may prove nearly impossible. Abhishek Vishnoi looks at how investors are getting creative through proxy trades. (Source: Bloomberg)",
+   "lead_ru": "Для большей части Азии получение части блокбастера Anthropic при IPO может оказаться практически невозможным. Абхишек Вишной смотрит на то, как инвесторы проявляют творческий подход посредством сделок через прокси. (Источник: Блумберг)"
+  },
+  {
+   "title": "Rupee eyes mild relief with Asian peers buoyed by \"modestly\" dovish Fed",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPWDNJT2VhWGRQRm5IZnpXYzYtenpNODlEWm1JWnpFYzRIYjNQejcxaVJOTGxDVnA5M3pUbDB1QWU3MTg5bFhhT2NGLUtUeUZnNVlfVU5KTEtNOVI3ck1nNTcyMktQNUtZLVBRWWw4WkxUQVpDWFc0Zkp5QS1CQmpINlpyTzNOVU43S05NOVBrYmdHNjZuZ2JWb1pMdEFxZzUwYkhBV2lTdS1PLUE1NVJERGlMRkxIcmYy?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T05:41:19.790891+00:00",
+   "title_ru": "Рупия испытывает легкое облегчение, поскольку азиатские страны поддерживают «скромно» миролюбивую позицию ФРС",
+   "tags": [
+    "Fed"
+   ]
   }
  ],
  "last_digest": "2026-10-28",
