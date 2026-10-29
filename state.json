@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "d108e95f96ae4c6c": "2026-10-26T22:07:01.229022+00:00",
-  "152dc5ecb390f727": "2026-10-26T22:12:01.160665+00:00",
-  "aad2d4de3e023baa": "2026-10-26T22:12:01.160665+00:00",
   "d1759bac3a39b982": "2026-10-26T22:17:01.251396+00:00",
   "4504aecdd5674462": "2026-10-26T22:17:01.251396+00:00",
   "faae59e83b6dae30": "2026-10-26T22:17:01.251396+00:00",
@@ -1070,35 +1067,10 @@
   "c8b11f96ced0f035": "2026-10-29T21:28:36.849756+00:00",
   "b400b2d3fb8eafd1": "2026-10-29T21:28:36.849756+00:00",
   "675e83a15732d8a5": "2026-10-29T21:48:36.899331+00:00",
-  "2fcd2fd5299dbed5": "2026-10-29T22:03:36.860071+00:00"
+  "2fcd2fd5299dbed5": "2026-10-29T22:03:36.860071+00:00",
+  "4d68776c3532650f": "2026-10-29T22:13:36.881674+00:00"
  },
  "recent": [
-  {
-   "title": "Options traders are seizing control of the S&P 500",
-   "link": "https://www.marketwatch.com/story/options-traders-are-seizing-control-of-the-s-p-500-1add94ca?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-26T22:07:01.229022+00:00"
-  },
-  {
-   "title": "Asian Stocks to Gain as Anthropic Files for IPO: Markets Wrap",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-26/stock-market-today-dow-s-p-live-updates",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-26T22:12:01.160665+00:00",
-   "title_ru": "Азиатские акции вырастут в цене из-за антропных файлов для IPO: итоги рынков",
-   "lead": "Asian stocks were set to rise, tracking gains on Wall Street as Anthropic PBC’s initial public offering filing revived enthusiasm for artificial intelligence ahead of big tech earnings and the Federal Reserve’s rate decision.",
-   "lead_ru": "Азиатские акции должны были вырасти, следуя за ростом на Уолл-стрит, поскольку подача заявки на первичное публичное размещение акций Anthropic PBC возродила энтузиазм в отношении искусственного интеллекта в преддверии больших доходов от высоких технологий и решения Федеральной резервной системы по ставке.",
-   "tags": [
-    "Fed",
-    "rates",
-    "markets"
-   ]
-  },
   {
    "title": "Dividend stocks are having an excellent October as tech sector struggles",
    "link": "https://www.marketwatch.com/story/dividend-stocks-are-having-an-excellent-october-as-tech-sector-struggles-5ae40b02?mod=mw_rss_topstories",
@@ -14262,6 +14234,22 @@
    },
    {
     "src": "sec",
+    "id": "ffe4e943058d48c1",
+    "ticker": "LIND",
+    "company": "LINDBLAD EXPEDITIONS HOLDINGS, INC.",
+    "who": "Sven-Olof Lindblad",
+    "role": "Director, 10% owner",
+    "type": "sell",
+    "value": 8254292,
+    "shares": 230197,
+    "price": 35.86,
+    "plan": true,
+    "date": "2026-10-29",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/1639304/000089706926001877/0000897069-26-001877-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "3419e6ac69fcaa22",
     "ticker": "API",
     "company": "Agora, Inc.",
@@ -18099,22 +18087,6 @@
     "date": "2026-10-22",
     "disclosed": "2026-10-22",
     "link": "https://www.sec.gov/Archives/edgar/data/1933928/000162828026066941/0001628280-26-066941-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "25e19f86b400bf1e",
-    "ticker": "SNES",
-    "company": "SenesTech, Inc.",
-    "who": "Glenbrook Capital Management",
-    "role": "10% owner",
-    "type": "buy",
-    "value": 74838,
-    "shares": 103875,
-    "price": 0.72,
-    "plan": false,
-    "date": "2026-10-22",
-    "disclosed": "2026-10-22",
-    "link": "https://www.sec.gov/Archives/edgar/data/1680378/000090266426004257/0000902664-26-004257-index.htm"
    }
   ],
   "docs": {
@@ -18156,7 +18128,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-29T21:08:36.901382+00:00",
+  "checked": "2026-10-29T22:13:36.881674+00:00",
   "sec_seen": [
    "0001193125-26-438181",
    "0001213900-26-113918",
@@ -18172,6 +18144,7 @@
    "0001510281-26-000393",
    "0000950103-26-016445",
    "0002135314-26-000014",
+   "0000897069-26-001877",
    "0001510281-26-000391",
    "0001193125-26-438273",
    "0001193125-26-438100",
