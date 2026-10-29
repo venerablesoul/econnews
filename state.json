@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "75f8d5efb725d7ec": "2026-10-26T20:37:01.308493+00:00",
-  "857545c9e3b69ef5": "2026-10-26T20:37:01.308493+00:00",
   "3359c1478085ce57": "2026-10-26T21:02:01.213311+00:00",
   "26ce92e194bd06a8": "2026-10-26T21:07:01.193450+00:00",
   "576d449ec23e761a": "2026-10-26T21:07:01.193450+00:00",
@@ -1069,32 +1067,11 @@
   "4328c4886a15bdc0": "2026-10-29T20:28:36.884129+00:00",
   "d5f01f9dd738c00b": "2026-10-29T20:33:36.867577+00:00",
   "a4fdb9f4b3e7d55b": "2026-10-29T20:33:36.867577+00:00",
-  "07f32b49bde492af": "2026-10-29T20:33:36.867577+00:00"
+  "07f32b49bde492af": "2026-10-29T20:33:36.867577+00:00",
+  "5a5e01ce02688061": "2026-10-29T20:38:36.856859+00:00",
+  "1ef3aa1f69871a3b": "2026-10-29T20:38:36.856859+00:00"
  },
  "recent": [
-  {
-   "title": "Sterling drops against euro and dollar ahead of UK budget",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOTG1zRmxKejNRVlA2Mm5HTHNDb0g3T3lWVTdYLVRlQWhDamFWbDZrMXp2MmNyZnMtOS1uUDVqZ0RYX2VxWkRwTm55LTAyX0MzUVBWUGE0RVBwRW1LQi1zZ25DX0I2em5jamZRV0lkQWxIS3lyV2VodjJGTldOdzlOLTM0SWdORlBhV2JuNzd1cnFrUDRKZm9SYmNvZw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-26T20:37:01.308493+00:00",
-   "title_ru": "Фунт стерлингов падает по отношению к евро и доллару, опережая бюджет Великобритании",
-   "tags": [
-    "dollar"
-   ]
-  },
-  {
-   "title": "Budgets Can Draw the Line on Corruption",
-   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE05ZWdrWFRKbnQ1eGkyM0gtNWJUTmZHZDJTemQ5b29KeWNydUFEUG5CVUQ0LTJBSVk5NWllQVhqU2huQmJrdlNjSHNubEo0ank4RjVrdTNnMkkxUm1ac09vRU1HYS1hM0lQUWt2T2FSVQ?oc=5",
-   "sources": [
-    "IMF"
-   ],
-   "score": 4,
-   "ts": "2026-10-26T20:37:01.308493+00:00",
-   "title_ru": "Бюджеты могут подвести черту под коррупцией"
-  },
   {
    "title": "Anthropic Remains Mum on Investment Grade as It Flags More Debt",
    "link": "https://www.bloomberg.com/news/articles/2026-10-26/anthropic-remains-mum-on-investment-grade-as-it-flags-more-debt",
@@ -11462,6 +11439,29 @@
    "tags": [
     "bonds"
    ]
+  },
+  {
+   "title": "Intel Outlook Hurt by Weak Market for Personal Computer Chips",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPaURpSDFJSVlDdjY1d0wtcmQxOVpjYmowVTBSaEZCelVCWGNoVGI2VVR2UWNVcVZDVHVyUjFIMWdvQ0FfQ1dDdkpXWmdKUXRuNG9wVnlJRjNPTzFvcTB1TFV0QjdIVHhUZEZhOHFrdGJfSGNHbF9La09hYVhrempMWm5mTHZWMlJKUElqXzNYbjJKa3ZpZ0dZTE5Kb3JHb212eEtyNUQzNkltOUhnTlVNNWlR?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T20:38:36.856859+00:00",
+   "title_ru": "Прогнозы Intel пострадали из-за слабого рынка чипов для персональных компьютеров"
+  },
+  {
+   "title": "Intel shares drop 18% on Israel factory blast, PC weakness",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPbEgxampOc0U5RENJWVd0a09uQjlFSkxueGxGVzVPX2NwdElzNDN3WXdjVFpvelNULXVObnMzTTJzb0ZfeFBtN1ZOQ0FVNXRuN0ZINkF0dWZkZlR6ZlkzUE5wQWpPTWg3dGtDLURwRl9OU0ZEb1UtejNBbC1KMnVWbmJ5OHQxWTBoU1I3cFduaXAyOHFBVkFIYjhCNXR1c0EyM2xlZFZNWFM?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T20:38:36.856859+00:00",
+   "title_ru": "Акции Intel упали на 18% из-за взрыва на заводе в Израиле и слабости ПК",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -14458,6 +14458,70 @@
     "date": "2026-10-27",
     "disclosed": "2026-10-29",
     "link": "https://www.sec.gov/Archives/edgar/data/1245377/000119312526437864/0001193125-26-437864-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "a259aa3e5bc57e82",
+    "ticker": "TXN",
+    "company": "TEXAS INSTRUMENTS INC",
+    "who": "Janet F Clark",
+    "role": "Director",
+    "type": "sell",
+    "value": 1302404,
+    "shares": 4306,
+    "price": 302.46,
+    "plan": false,
+    "date": "2026-10-27",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/1216484/000009747626000176/0000097476-26-000176-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "b801806f7b814500",
+    "ticker": "HBAN",
+    "company": "HUNTINGTON BANCSHARES INC /MD/",
+    "who": "Gary Torgow",
+    "role": "Director",
+    "type": "buy",
+    "value": 199834,
+    "shares": 12700,
+    "price": 15.73,
+    "plan": false,
+    "date": "2026-10-27",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/1251487/000122520826008552/0001225208-26-008552-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "b21660528352c9b8",
+    "ticker": "TXN",
+    "company": "TEXAS INSTRUMENTS INC",
+    "who": "Pamela H Patsley",
+    "role": "Director",
+    "type": "sell",
+    "value": 1366670,
+    "shares": 4532,
+    "price": 301.56,
+    "plan": false,
+    "date": "2026-10-27",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/1182591/000009747626000174/0000097476-26-000174-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "1eb7e381ac31e188",
+    "ticker": "TXN",
+    "company": "TEXAS INSTRUMENTS INC",
+    "who": "Robert E Sanchez",
+    "role": "Director",
+    "type": "sell",
+    "value": 1832923,
+    "shares": 6065,
+    "price": 302.21,
+    "plan": false,
+    "date": "2026-10-27",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/1216931/000009747626000172/0000097476-26-000172-index.htm"
    },
    {
     "src": "sec",
@@ -18042,70 +18106,6 @@
     "date": "2026-10-20",
     "disclosed": "2026-10-22",
     "link": "https://www.sec.gov/Archives/edgar/data/2028388/000156568726000121/0001565687-26-000121-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "7056c1a0f7014b4b",
-    "ticker": "CRBG",
-    "company": "Corebridge Financial, Inc.",
-    "who": "Nippon Life Insurance Co",
-    "role": "10% owner",
-    "type": "buy",
-    "value": 6769545,
-    "shares": 193357,
-    "price": 35.01,
-    "plan": true,
-    "date": "2026-10-20",
-    "disclosed": "2026-10-22",
-    "link": "https://www.sec.gov/Archives/edgar/data/1889539/000119312526429089/0001193125-26-429089-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "4aaa725cd7528e12",
-    "ticker": "W",
-    "company": "Wayfair Inc.",
-    "who": "Fiona Tan",
-    "role": "CTO",
-    "type": "sell",
-    "value": 920000,
-    "shares": 8000,
-    "price": 115.0,
-    "plan": true,
-    "date": "2026-10-20",
-    "disclosed": "2026-10-22",
-    "link": "https://www.sec.gov/Archives/edgar/data/1867558/000161670726000183/0001616707-26-000183-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "085d665f98eb9b20",
-    "ticker": "FRMI",
-    "company": "Fermi Inc.",
-    "who": "Neugebauer Toby R et al.",
-    "role": "10% owner",
-    "type": "sell",
-    "value": 1277226,
-    "shares": 420749,
-    "price": 3.04,
-    "plan": false,
-    "date": "2026-10-20",
-    "disclosed": "2026-10-22",
-    "link": "https://www.sec.gov/Archives/edgar/data/2088794/000090514826004542/0000905148-26-004542-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "852410c47da01ce6",
-    "ticker": "BRZE",
-    "company": "Braze, Inc.",
-    "who": "Jonathan Hyman",
-    "role": "CTO",
-    "type": "sell",
-    "value": 13219450,
-    "shares": 295000,
-    "price": 44.81,
-    "plan": true,
-    "date": "2026-10-20",
-    "disclosed": "2026-10-22",
-    "link": "https://www.sec.gov/Archives/edgar/data/1888935/000188893526000028/0001888935-26-000028-index.htm"
    }
   ],
   "docs": {
@@ -18150,21 +18150,15 @@
   "checked": "2026-10-29T20:08:36.874831+00:00",
   "sec_seen": [
    "0001604682-26-000004",
-   "0001193125-26-437864",
-   "0001193125-26-437865",
-   "0001193125-26-437863",
+   "0000097476-26-000174",
+   "0001193125-26-437890",
    "0001106578-26-000174",
-   "0001104659-26-120222",
-   "0001213900-26-113840",
+   "0000097476-26-000176",
    "0001104659-26-120227",
-   "0001783879-26-000173",
    "0001493152-26-049283",
    "0001104659-26-120229",
-   "0001193125-26-437861",
-   "0001193125-26-437862",
-   "0000923120-26-000033",
-   "0002048500-26-000015",
-   "0001193125-26-437855"
+   "0001225208-26-008552",
+   "0000097476-26-000172"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
