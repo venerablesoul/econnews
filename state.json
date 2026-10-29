@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c0f481cbf906ce98": "2026-10-26T11:20:24.158305+00:00",
   "1d8153ba3c654e93": "2026-10-26T11:25:24.133288+00:00",
   "e69b42b6e86d8a4c": "2026-10-26T11:35:24.325038+00:00",
   "d4b119c86e5bf992": "2026-10-26T11:40:24.194002+00:00",
@@ -1020,22 +1019,11 @@
   "b1f98c78aa44b778": "2026-10-29T11:06:43.467076+00:00",
   "67c873d84350032c": "2026-10-29T11:11:43.418086+00:00",
   "d4cba53c23fd058e": "2026-10-29T11:11:43.418086+00:00",
-  "c9c5fe9830711f14": "2026-10-29T11:16:43.409399+00:00"
+  "c9c5fe9830711f14": "2026-10-29T11:16:43.409399+00:00",
+  "bddc832a8f5694c4": "2026-10-29T11:21:43.375950+00:00",
+  "96d762371d3177b8": "2026-10-29T11:21:43.375950+00:00"
  },
  "recent": [
-  {
-   "title": "The War Bump Is a False Victory for S&P 500 Profits",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNNURBQm1leXZNOTNYcGI4OHZER1cxUUdjRVQ3MHhZZ3dyd3lkbF8wcGtDYlV2ZkpCTmpFYVNyc0xlTHRINVVxRnpMUnpaTklxMGItSEh1blhmV2FJalR3T19PR1dfU00ydXhwclVOT25YZzNraXdBcVJiM0dnRDlSVTkzRlcxakQwWHhPZFA0RXhCajZoeG9uOHFLcEFCYmxtVE9uajhfMXQ?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T11:20:24.158305+00:00",
-   "title_ru": "Военный удар — ложная победа для прибыли S&P 500",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Poland, Germany push closer economic ties, joint competitiveness drive",
    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQaG5jal84UVN2di1FcnVvTGZoSFhDZmdNUTdWd2tUdTVuaHliakJXaXlwM0RTNnVkcDNNbDVsYmtMZS1qcnFXdndfU3VrMHN0U1hBUHM5VVBTQWdIYTNQN19YR0NnWXllS205WXQyVkkzcDRxX0RkQndqal9WUVVXN09pUnY3b0JEVUQyWUhoU1dzZURKZE00bmpDVnJibmo3Q1ZqcmZ2VnByb2JvTmRYOFFfNA?oc=5",
@@ -10564,6 +10552,31 @@
     "rates",
     "inflation"
    ]
+  },
+  {
+   "title": "De Cos and Knot Are Top ECB Candidates After Early Lagarde Exit",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-29/de-cos-and-knot-are-top-ecb-candidates-after-early-lagarde-exit",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-29T11:21:43.375950+00:00",
+   "title_ru": "Де Кос и Кнот — главные кандидаты в ЕЦБ после досрочного выхода Лагард",
+   "lead": "The race to lead the European Central Bank is entering its decisive phase after President Christine Lagarde said she’d depart early, with the Netherlands and Spain heading a field that could yet expand.",
+   "lead_ru": "Гонка за лидерство в Европейском центральном банке вступает в решающую фазу после того, как президент Кристин Лагард заявила, что уйдет досрочно, а Нидерланды и Испания возглавляют поле, которое еще может расшириться.",
+   "tags": [
+    "ECB"
+   ]
+  },
+  {
+   "title": "UK Banks’ Extra 3% Tax to Raise £1.5 Billion for Government",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxObDZOX0ZyLWlIMGZVWG1keV9pYVdWMC1URndnanI0c0ZXWDNWdktGaXY4Z2gycEw0MnByR0ZVdkJHNm5NTGZlZlZBdGdqLS10QjFkVHR0V0lwbFo5eHhRVW1tZlZRMVFCaFBaRlF6U2l5cjFEdVpjbnJXWDRaeVpPZUp3TGtQRDJUVGRhVllHUlJnT3h2N1B6bzVTcGdaZ00?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T11:21:43.375950+00:00",
+   "title_ru": "Дополнительный налог в размере 3% на британские банки поможет правительству собрать 1,5 миллиарда фунтов стерлингов"
   }
  ],
  "last_digest": "2026-10-28",
