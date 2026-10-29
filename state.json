@@ -1,19 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "f737e8530d3dd326": "2026-10-26T09:04:41.418404+00:00",
-  "a9e74d5718425258": "2026-10-26T09:04:41.418404+00:00",
-  "9048621aa4c71bff": "2026-10-26T09:05:29.491424+00:00",
-  "ef19184afb48a587": "2026-10-26T09:05:29.491424+00:00",
-  "c2c64bec82277ce7": "2026-10-26T09:05:29.491424+00:00",
-  "0defd2e200edf1e6": "2026-10-26T09:10:24.246531+00:00",
-  "877f8bc069717541": "2026-10-26T09:10:24.246531+00:00",
-  "0878229faea2739a": "2026-10-26T09:10:24.246531+00:00",
-  "8cedfd389eb5b816": "2026-10-26T09:10:24.246531+00:00",
-  "08d008a4768360da": "2026-10-26T09:10:24.246531+00:00",
-  "377d09579f8990a2": "2026-10-26T09:10:24.246531+00:00",
-  "cb80791b320ec124": "2026-10-26T09:10:24.246531+00:00",
-  "4351c062ac60c158": "2026-10-26T09:10:24.246531+00:00",
   "eb6fae4a2fca23c7": "2026-10-26T09:20:24.192289+00:00",
   "b2f83959f7823a85": "2026-10-26T09:25:24.146578+00:00",
   "92092bbd250ae3bc": "2026-10-26T09:25:24.146578+00:00",
@@ -1042,48 +1029,10 @@
   "28b35a6dbf290063": "2026-10-29T08:16:43.392479+00:00",
   "8cd9df68d85b01d3": "2026-10-29T08:26:43.365056+00:00",
   "9ad1a25d903016ac": "2026-10-29T08:46:43.360671+00:00",
-  "abf5dbff786db7d3": "2026-10-29T09:01:43.439734+00:00"
+  "abf5dbff786db7d3": "2026-10-29T09:01:43.439734+00:00",
+  "97b6799f20ddd115": "2026-10-29T09:11:43.389641+00:00"
  },
  "recent": [
-  {
-   "title": "Survey on the Access to Finance of Enterprises: lending conditions tightened",
-   "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261026~bde7b6d11a.en.html",
-   "sources": [
-    "ECB"
-   ],
-   "score": 5,
-   "ts": "2026-10-26T09:04:41.418404+00:00",
-   "title_ru": "Опрос о доступе предприятий к финансированию: ужесточение условий кредитования"
-  },
-  {
-   "title": "Support for semiconductor stocks could be as much as 15% lower than current levels, says Morgan Stanley",
-   "link": "https://www.marketwatch.com/story/support-for-semiconductor-stocks-could-be-as-much-as-15-lower-than-current-levels-says-morgan-stanley-1f387f16?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-26T09:04:41.418404+00:00"
-  },
-  {
-   "title": "UK Economy: Trending News, Latest Updates, Analysis",
-   "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9vWVRCMzhEbkM4ZnRGdFVmTm5oOXVOSS1KdzI1bjRDa19WRlNLdWNBNXp5TFc5VTdoSUJfRlAySHNfYXBMZmdzcExSOENYMk94?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T09:05:29.491424+00:00",
-   "title_ru": "Экономика Великобритании: трендовые новости, последние обновления, анализ"
-  },
-  {
-   "title": "Real Estate Markets",
-   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE8xQ1h1ZFVQOVo3U1JqdWxJSWpBYk83cVJxQVhoUEc0Q1Npc0xuWDNIYkZEdHR0dkNIM1FhallHTEhQVmRDbmtnMGt6ekpraWFXel9LUE9wbXVkUjBINFpWSzJnUQ?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T09:05:29.491424+00:00",
-   "title_ru": "Рынки недвижимости"
-  },
   {
    "title": "European Gas Hits €97 for First Time Since 2022 on Winter Risks",
    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPdnRDWXFZTXdaQS1ZZmZldjhBSlp6TGstSVBvVGNlNHNtWnFweC10TDZkczB6dzVGT2JpT3JfWkJidlBseV9NSXNSX2UyVTcxNTZJa3RFdW9pd3h1My1Ea2cyaDZRakVRUGpIMXBrRThCdC1JenJ4cFlHZkN5OVd2Yk05UlpCOTY5N21YZEJ1SEdlVWFLdFN5SUstaGVkRnVrMXM2cWI3Qm9kdFVCUTZhS2JBdw?oc=5",
@@ -10691,6 +10640,21 @@
    "title_ru": "Volkswagen терпит убытки после спада на китайском рынке",
    "tags": [
     "China"
+   ]
+  },
+  {
+   "title": "Analysis: Warsh is learning to wield the Fed's power without showing his hand",
+   "link": "https://www.cnbc.com/2026/10/29/kevin-warsh-fed-october-rate-decision-december-hike.html",
+   "sources": [
+    "CNBC"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T09:11:43.389641+00:00",
+   "title_ru": "Анализ: Уорш учится владеть властью ФРС, не показывая руки",
+   "lead": "The new chairman made clear he leans toward higher interest rates, but left himself options depending on how the data comes in.",
+   "tags": [
+    "Fed",
+    "rates"
    ]
   }
  ],
