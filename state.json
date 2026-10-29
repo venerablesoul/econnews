@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "99e519f70b17cc32": "2026-10-26T13:05:24.188124+00:00",
-  "517abfe494597f89": "2026-10-26T13:05:24.188124+00:00",
   "419caf214ab143c0": "2026-10-26T13:10:24.182897+00:00",
   "ada6089820a5edae": "2026-10-26T13:10:24.182897+00:00",
   "588ec28156e9917a": "2026-10-26T13:15:24.138192+00:00",
@@ -1039,34 +1037,10 @@
   "44a7bdecf74a5b54": "2026-10-29T12:51:43.422192+00:00",
   "8b606ddfe079283e": "2026-10-29T12:51:43.422192+00:00",
   "0640b62a2ed0ac22": "2026-10-29T12:56:43.504650+00:00",
-  "1495b74b02462c18": "2026-10-29T13:01:44.102878+00:00"
+  "1495b74b02462c18": "2026-10-29T13:01:44.102878+00:00",
+  "fda9b7c5534f9232": "2026-10-29T13:06:43.684864+00:00"
  },
  "recent": [
-  {
-   "title": "Brazil Markets Set to Dive on Lula Win, EU Plans to Hit China With More Curbs",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-26/the-opening-trade-10-26-2026-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T13:05:24.188124+00:00",
-   "title_ru": "Рынки Бразилии намерены погрузиться в Лулу Вин, ЕС планирует ударить по Китаю большим количеством бордюров",
-   "lead": "European stocks exposed to Brazil fell after President Luiz Inácio Lula da Silva came from behind to win Brazil’s runoff election, with investors dealing with the twin shock of Lula’s improbable win and Flávio Bolsonaro’s calls…",
-   "lead_ru": "Европейские акции, подверженные влиянию Бразилии, упали после того, как президент Луис Инасиу Лула да Силва победил на последних выборах в Бразилии, а инвесторы столкнулись с двойным шоком невероятной победы Лулы и звонками Флавиу Болсонару...",
-   "tags": [
-    "markets",
-    "China"
-   ]
-  },
-  {
-   "title": "Ведущие компании Бахрейна заинтересованы в экспорте московских технологий",
-   "link": "https://www.rbc.ru/rbcfreenews/6adf4f669a79474d3a9e5256",
-   "sources": [
-    "RBC"
-   ],
-   "score": 1,
-   "ts": "2026-10-26T13:05:24.188124+00:00"
-  },
   {
    "title": "Anthropic opens books on AI's explosive growth and staggering costs",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQLVVZWVV6TXQtR3ZqaWZKZERKZ3J3VVpIZlNtUjVfRjdTS0tuVTlRQ0F0UzRhcW9Hd2hxR1BtNzF4UVBVYXBpTkc0Rmozb3pRekc2RVNnOVBYd19KUGZ5VE1UN29haXQ2M0w0Qk1QTm5INk5KRlhxLUR6Q3REWHR3OG9EYkpFMGJUUm5HMGFiX3pBLXhZMHV5Qkgwdlc0RTczMnhOc3Q4NFpORFE5SlRfRkVDOWdmZw?oc=5",
@@ -10833,6 +10807,21 @@
    "tags": [
     "inflation"
    ]
+  },
+  {
+   "title": "Consumer spending flattens out after inflation surge",
+   "link": "https://www.marketwatch.com/story/consumer-spending-flattens-out-after-inflation-surge-e7761d25?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 4,
+   "ts": "2026-10-29T13:06:43.684864+00:00",
+   "title_ru": "Потребительские расходы стабилизировались после резкого роста инфляции",
+   "lead": "Consumer spending rose sharply in September, but it largely reflected households spending more on gas and transportation after an increase in energy costs.",
+   "lead_ru": "Потребительские расходы резко выросли в сентябре, но это в основном отражает увеличение расходов домохозяйств на газ и транспорт после увеличения затрат на электроэнергию.",
+   "tags": [
+    "inflation"
+   ]
   }
  ],
  "last_digest": "2026-10-28",
@@ -17501,7 +17490,6 @@
   },
   "checked": "2026-10-29T12:41:43.408333+00:00",
   "sec_seen": [
-   "0001999371-26-023803",
    "0001493152-26-049161",
    "0001628280-26-068025",
    "0001493152-26-049164",
