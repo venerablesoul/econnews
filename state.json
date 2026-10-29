@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "b7ef2c4e05366a49": "2026-10-26T17:26:23.787700+00:00",
   "1f2ba21d6e4a6585": "2026-10-26T17:51:23.853947+00:00",
   "f47b375b5bfeae06": "2026-10-26T17:51:23.853947+00:00",
   "a2afcbe69dbd060e": "2026-10-26T18:06:23.183887+00:00",
@@ -1058,7 +1057,9 @@
   "8f8e6f32db8824c3": "2026-10-29T17:15:15.787354+00:00",
   "6817c777c92886b8": "2026-10-29T17:15:15.787354+00:00",
   "882ae16296ef2d50": "2026-10-29T17:25:16.031100+00:00",
-  "e575c1fa68958396": "2026-10-29T17:25:16.031100+00:00"
+  "e575c1fa68958396": "2026-10-29T17:25:16.031100+00:00",
+  "f95ca96dd9fdea3c": "2026-10-29T17:30:15.672104+00:00",
+  "eec5d2ef31fbae93": "2026-10-29T17:30:15.672104+00:00"
  },
  "recent": [
   {
@@ -11126,6 +11127,29 @@
    "title_ru": "Кредиторы стремятся продать долг Rovensa, поскольку фирма сжигает наличные деньги",
    "lead": "Lenders to Partners Group-backed Rovensa are looking to offload the debt of the Iberian agricultural products maker as the firm burns through cash.",
    "lead_ru": "Кредиторы Rovensa, поддерживаемые Partners Group, стремятся списать долг иберийского производителя сельскохозяйственной продукции, поскольку фирма сжигает наличные деньги."
+  },
+  {
+   "title": "Crocs shares surge on raised forecast as HEYDUDE turnaround gains traction",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOeVRiUGJaR1UzcldIM3A5cElXZmNQclBSRDZQMGQ1a1E4YUJQZjJNTW55Q3ktMHZLUmg4a0FxV2VkOXdRUHVWcE1nRHhkWlVMSWpZQzVTcHh0bmp5TUNkMlkyQlRYcVFMN1ZKUTE4b3dlMWZlWW90clp0aXY0b3RxRkloWXZJeUtnZTdyTnFnaWxONFlxcVJDZ3FTUWxnVXJaajNOaUk5Wm1hMGNEYjlaZ0VTcXFYT1huVTNqd1p4dmljbjA4WHJuNA?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-29T17:30:15.672104+00:00",
+   "title_ru": "Акции Crocs растут на повышенном прогнозе, поскольку разворот HEYDUDE набирает обороты",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "Live Q&A: India’s Growing Role in the Global Arms Trade With Geopolitical Complications",
+   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPRlNrV0NnY0k1REdmcE1OajlWSGdCZ3JCMXptc1NpYTdyMTl3U2IwLXVmVHlsaGI2Y1lhdFUtSURMM3hCQ2ZhRUtucm94cXRpU0RIbWgtYmZHWWZybkJ5LWR4eXZOT2lmWG9tdmFtTTUyaTBOdXhXbjRvZHVVeXZ5Q0NmVDNsM2JRUzZId1YzckVDQXhxWGFpYzE0MUVlUnlMV3VJdk5SeUllbXA4NWpYVy1mRVF1YU0yYnQySjdqVFRrVnZCalBRY2dBQnhpSUNEZXc?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T17:30:15.672104+00:00",
+   "title_ru": "Вопросы и ответы: растущая роль Индии в мировой торговле оружием с геополитическими осложнениями"
   }
  ],
  "last_digest": "2026-10-28",
@@ -17794,8 +17818,7 @@
   },
   "checked": "2026-10-29T16:50:15.702153+00:00",
   "sec_seen": [
-   "0001874016-26-000012",
-   "0000001750-26-000108"
+   "0001874016-26-000012"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
