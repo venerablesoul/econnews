@@ -1,12 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "a362288c218b5dee": "2026-10-26T19:16:22.807972+00:00",
-  "4ffcd20e7c6f8afe": "2026-10-26T19:16:22.807972+00:00",
-  "90d22dbfc0288a61": "2026-10-26T19:21:22.919043+00:00",
-  "05bb52bd10953af8": "2026-10-26T19:21:22.919043+00:00",
-  "bd85eb5bff899be8": "2026-10-26T19:21:22.919043+00:00",
-  "1cd443e5888996d5": "2026-10-26T19:21:22.919043+00:00",
   "0dfc4992d0876b7a": "2026-10-26T19:36:22.714659+00:00",
   "327c2b700455d823": "2026-10-26T19:41:23.737367+00:00",
   "a99b22e35ba3c1ea": "2026-10-26T19:46:22.692937+00:00",
@@ -1062,35 +1056,11 @@
   "ebb6a7c1240c28d0": "2026-10-29T19:08:37.004179+00:00",
   "437b6e88edc33335": "2026-10-29T19:08:37.004179+00:00",
   "225f4c5a3937e76b": "2026-10-29T19:13:36.920289+00:00",
-  "e2ba7f82c0392ca9": "2026-10-29T19:13:36.920289+00:00"
+  "e2ba7f82c0392ca9": "2026-10-29T19:13:36.920289+00:00",
+  "4a98289176fbb7b0": "2026-10-29T19:18:36.926629+00:00",
+  "3a1a5401338e95df": "2026-10-29T19:23:36.905557+00:00"
  },
  "recent": [
-  {
-   "title": "Canadian dollar steadies after posting longest daily winning streak in four years",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNTFdmU2VIdzAyUUNGdDlZOFVtM294LUY2SWhlY3ZsRWFEeDlrZkpwN1V0dU9yY3lhMlctZ2VRWUJ1T3k3a0x5RC1nWmZxemkzMUxERklVM0s3cmw2RExqVUVMYVh5REdsWjVvT0xUZFVZVmFlVDYxQlBzX2FCU1V5aTZIbE52a3ZCUmJLZU5KVUFDMno1SC1lMWpjcU54MkZwR3FPLVlOSFdyOXAxUGdNOHVhYlVPWS0wandVN2x3Q0w?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T19:16:22.807972+00:00",
-   "title_ru": "Канадский доллар стабилизировался после публикации самой длинной ежедневной серии побед за четыре года",
-   "tags": [
-    "dollar"
-   ]
-  },
-  {
-   "title": "Dollar General overcharged shoppers, FTC and states allege in lawsuit",
-   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPTURwVDZtLUFyMFhzVm04T1ZOamQ2aHhCRUpZUXNyRUQ5NmZ5QmNDTEF3ZEJCRmkyT1BvQUtUUk1fTHVhdnplYU1oNWZqM0RsZ2VqODdGQ0xyRXhkbXFERENzaVdZd0JvbjA5VTh1MDhxa2NUbC1VN2Q1QjN0dnNGZ1FFTDVyOFdzd1FQUFZYZEloeUtPcGI1Mw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T19:21:22.919043+00:00",
-   "title_ru": "Компания Dollar General завысила цену покупателям, Федеральная торговая комиссия и штаты предъявили иск",
-   "tags": [
-    "dollar"
-   ]
-  },
   {
    "title": "Lula’s Win Isn’t as Bad as Markets Think",
    "link": "https://www.bloomberg.com/news/videos/2026-10-26/opinion-lula-s-win-isn-t-as-bad-as-markets-think-video",
@@ -11285,6 +11255,22 @@
    ],
    "score": 2,
    "ts": "2026-10-29T19:13:36.920289+00:00"
+  },
+  {
+   "title": "US interest rates held steady and economy grows - what it means for you",
+   "link": "https://www.bbc.co.uk/news/articles/cr15jxzv4w24o?at_medium=RSS&at_campaign=rss",
+   "sources": [
+    "BBC"
+   ],
+   "score": 7,
+   "ts": "2026-10-29T19:23:36.905557+00:00",
+   "title_ru": "Процентные ставки в США остаются стабильными, а экономика растет – что это значит для вас",
+   "lead": "The Federal Reserve's interest rate decisions affect everything from mortgages to car loans",
+   "lead_ru": "Решения Федеральной резервной системы по процентным ставкам влияют на все: от ипотеки до автокредитов.",
+   "tags": [
+    "Fed",
+    "rates"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -17971,7 +17957,22 @@
    "sec": true
   },
   "checked": "2026-10-29T19:03:37.057662+00:00",
-  "sec_seen": [],
+  "sec_seen": [
+   "0002049881-26-000004",
+   "0001649840-26-000006",
+   "0001654954-26-009235",
+   "0001193125-26-437652",
+   "0002005471-26-000004",
+   "0001695033-26-000006",
+   "0001767197-26-000008",
+   "0001883925-26-000008",
+   "0001388772-26-000006",
+   "0002050987-26-000004",
+   "0002066961-26-000004",
+   "0001128404-26-000008",
+   "0001388767-26-000008",
+   "0001960954-26-000006"
+  ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
   }
