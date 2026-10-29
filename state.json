@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "0150aa78aa42c405": "2026-10-26T04:49:41.378443+00:00",
-  "fa3806792c5e8b5f": "2026-10-26T04:54:41.376976+00:00",
-  "1e4ff58776b3eb2e": "2026-10-26T04:54:41.376976+00:00",
   "9abd799495a79a14": "2026-10-26T04:59:41.388981+00:00",
   "700151a70be36f4a": "2026-10-26T04:59:41.388981+00:00",
   "4aa2eb3e52ea81d3": "2026-10-26T05:04:41.395019+00:00",
@@ -1068,31 +1065,6 @@
   "a2f455c1f2baf9c8": "2026-10-29T04:36:19.798013+00:00"
  },
  "recent": [
-  {
-   "title": "Elections, central banks and earnings on the menu",
-   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNc08wOVYzT3pKR0lSY3VtZWt6TkhvTGRieHE2eVJqeTZiZnhzQUFQMFAzd1hlT3l0QS01ZlhlQVZDWWNCUkpiSFg3OEtDcGJLMzNXcnhsRWZrSW5ELTlIZFpnMnl1NkVfZnFwZnFYZGVXUTVJUVJmZ2ZuVFlXWU1oWm9ZOXRVbVZSUGhDX2xKR1Q?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-26T04:54:41.376976+00:00",
-   "title_ru": "Выборы, центральные банки и доходы в меню"
-  },
-  {
-   "title": "Australian Regulator Warns Higher Market Risks May Hit Liquidity",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-26/australian-regulator-warns-higher-market-risks-may-hit-liquidity",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T04:54:41.376976+00:00",
-   "title_ru": "Австралийский регулятор предупреждает, что более высокие рыночные риски могут повлиять на ликвидность",
-   "lead": "Australia’s regulator warned that ructions in the global bond market and elevated concerns linked to artificial intelligence are threatening to weaken financial market liquidity.",
-   "lead_ru": "Австралийский регулятор предупредил, что потрясения на мировом рынке облигаций и растущие опасения, связанные с искусственным интеллектом, угрожают ослабить ликвидность финансовых рынков.",
-   "tags": [
-    "bonds"
-   ]
-  },
   {
    "title": "Frank Elderson: Taking action for nature – investing in economic resilience and prosperity",
    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261026~d903d7ad85.en.html",
@@ -10731,7 +10703,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 1,
+  "Fed": 0,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
