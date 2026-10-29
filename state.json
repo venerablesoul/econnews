@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "8b3e62890f64a43d": "2026-10-26T15:16:22.777559+00:00",
-  "dcd223ed9d76747a": "2026-10-26T15:16:22.777559+00:00",
   "cebb0d1140627143": "2026-10-26T15:26:22.762219+00:00",
   "8ce937bf1e5fd601": "2026-10-26T15:26:22.762219+00:00",
   "4f8a465d4cdaa1f0": "2026-10-26T15:26:22.762219+00:00",
@@ -1057,22 +1055,11 @@
   "1e00c6fc540eb92c": "2026-10-29T15:10:15.780765+00:00",
   "95f6d5517113f2ea": "2026-10-29T15:10:15.780765+00:00",
   "7a94db72e85ec2e3": "2026-10-29T15:10:15.780765+00:00",
-  "835879dae75cef4c": "2026-10-29T15:15:15.766819+00:00"
+  "835879dae75cef4c": "2026-10-29T15:15:15.766819+00:00",
+  "8f5314f12f7bd551": "2026-10-29T15:20:15.824532+00:00",
+  "e3c3c21a792da5cf": "2026-10-29T15:20:15.824532+00:00"
  },
  "recent": [
-  {
-   "title": "S&P Dow Jones partners with Kalshi for index-based events contracts, use prediction data",
-   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOQzU5TzROYXlCRk1Obk1SaDNxVUJDRHd1eGFWaWpDS3FuVXRqTTVtZ3NRX0tKZko0SjZnZGV4b3FuR2hUOVlPZHc0dWszOVZzbzIzSlBYX3REblZnZlFQaGcxZ3VucmxveHhMdGVZSjlRMDFXUlpzSThKc0JxdFV6OFpzTTRHZThhdHFxQWlnOVdzTlJ2WVNwQ2V4S2JrdkgwMFloQi16M2dJbi14Y2I4eUVCM05vb0haRGliRkNQcmxPT0hka0NKNS1R?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T15:16:22.777559+00:00",
-   "title_ru": "S&P Dow Jones сотрудничает с Калши по контрактам на индексные события, использует данные прогнозов",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Petrobras CEO calls selloff after Lula win speculative, sees buying opportunity",
    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNTmdiRGEwaHZQdnQ3MHB5eERHYU1pZUtOUFhJdkg4TGN4aUt4UVYzU1FsdVdvaXFjMU9QT3NsQTZpUHpkMkNfWUx4dzZpa2dkNlBaUzZ1UDBMXzVIUjl5OUJPVkVlVjFNYUJmdW9TQ3JOSXpiMFFYQVBXSXJUMGY2QlFVVUY3ajNLc1dObW4wSU1xSHAwRWxQc3VoNDYzTFFZd2hEZ2MxRmtFOThDVkgwVlZfNmNtblAwaFNiSkVVSG9ENC1ESnNQRE1B?oc=5",
@@ -11092,6 +11079,29 @@
    "title_ru": "Шеньер повышает прогноз, поскольку перебои с поставками газа на Ближнем Востоке стимулируют спрос на СПГ в США",
    "tags": [
     "gas"
+   ]
+  },
+  {
+   "title": "India's IndiGo sees low single-digit capacity growth as airlines grapple with rising costs",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNTW9YTjRKVjI5dEZyZ1FtYTFWMDVUbnJOeEFKTnRHUU5TR2Rwc1Z5UUJtVE93eWg1S0xScERkN3U3Nk9OWWs4UW1WWjRnTVRQWTRIX2xDdk0teFY3bVJIS1lFN2JwT1FWcGhCdkI2aGV2NWhzcGdLbGJRdW83WmV2eUYwSDFINWJCOFVNV0VPWkFndEVYS1E0enFWR2VGQkdqWDE0aGY5ZGpVeWtEcFE?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T15:20:15.824532+00:00",
+   "title_ru": "Индийская IndiGo отмечает низкий рост пропускной способности, выражающийся однозначным числом, поскольку авиакомпании сталкиваются с растущими расходами"
+  },
+  {
+   "title": "Eli Lilly lifts revenue outlook as weight-loss shots offset Foundayo sales miss, shares jump",
+   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOOFBMR0czdDM3ak5TQVJZYmZ5cENsNkZQaGRSRlFocDQ4dThYVmUyTFV6Z0x5VXVyX3BRTmF3R1lta0lRVGdSN0NDWmJMZzUwRUIwTnN4RFlpLVNhQi1oZVl0WER0M3NOcnFQR0FQa3hBck0yY1Y0T0dkOS1wZm1iaUQ4YjNsZzY0NzFoU0w2cGh3bmQzekRUanFTa29GdDF6RFdYQ3lqV200Y1NiaENLQWdFUEVValozTzMwYjFWS1UyTExLV01NZkxjQm9EcWFDNUNEYWk4XzhDekxCU0R4M0pjYw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T15:20:15.824532+00:00",
+   "title_ru": "Eli Lilly повысила прогноз по выручке, поскольку усилия по снижению веса компенсировали провал продаж Foundayo, акции подскочили",
+   "tags": [
+    "markets"
    ]
   }
  ],
