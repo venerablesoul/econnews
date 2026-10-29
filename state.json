@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "7b2f3337c5e00389": "2026-10-26T08:19:41.453760+00:00",
-  "cccc77875e337510": "2026-10-26T08:24:41.667084+00:00",
   "2310ed60df129d98": "2026-10-26T08:29:41.411563+00:00",
   "465098765aec03eb": "2026-10-26T08:34:41.389824+00:00",
   "2f2832e729cecdc7": "2026-10-26T08:39:41.564245+00:00",
@@ -1051,33 +1049,10 @@
   "ec9f5ce7312f3a61": "2026-10-29T07:56:43.427949+00:00",
   "cb526e827945cad0": "2026-10-29T08:01:43.351330+00:00",
   "da2af0fd3ac15010": "2026-10-29T08:01:43.351330+00:00",
-  "28b35a6dbf290063": "2026-10-29T08:16:43.392479+00:00"
+  "28b35a6dbf290063": "2026-10-29T08:16:43.392479+00:00",
+  "8cd9df68d85b01d3": "2026-10-29T08:26:43.365056+00:00"
  },
  "recent": [
-  {
-   "title": "Salon owners urge Budget VAT cut as staffing pressures grow",
-   "link": "https://www.bbc.co.uk/news/articles/c60rlp8kkz1zo?at_medium=RSS&at_campaign=rss",
-   "sources": [
-    "BBC"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T08:19:41.453760+00:00",
-   "title_ru": "Владельцы салонов призывают сократить бюджетный НДС по мере роста кадрового давления",
-   "lead": "Marcus Perkins, who owns a hair and beauty salon in Brierley Hill, says he is scared for the future.",
-   "lead_ru": "Маркус Перкинс, владелец парикмахерской и салона красоты в Бриерли-Хилл, говорит, что боится за будущее."
-  },
-  {
-   "title": "What is the Budget and what could be in it?",
-   "link": "https://www.bbc.co.uk/news/articles/c6x2zrjl7kjno?at_medium=RSS&at_campaign=rss",
-   "sources": [
-    "BBC"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T08:24:41.667084+00:00",
-   "title_ru": "Что такое Бюджет и что в нем может быть?",
-   "lead": "Chancellor John Healey will set out his plans for UK taxes on 28 October.",
-   "lead_ru": "Канцлер Джон Хили изложит свои планы по налогам в Великобритании 28 октября."
-  },
   {
    "title": "European shares flat as investors eye earnings; energy drags",
    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPNTNqT1RkY0RsU1oyTkpOUHNVR3V3eDNUckxOSV9QeW1JelM3TjhzTjJ5NmJkcl8tMXFOOVJjVlJhMEtaSmI2RjNqV2VwbW93RWlRanFHZjJJTVg4Qi1jQmQ2ekRpZU1tZzk1Y1BEZDVYNlVzblNtV2loeFkzSHZQWFdTdUFXMjkxSHozRENYZWp3cXBzQ3ZPRTZDaGRrRGNOZzVF?oc=5",
@@ -10760,6 +10735,16 @@
     "oil",
     "Russia"
    ]
+  },
+  {
+   "title": "STMicro Forecasts Growth As Recovery in Chip Demand Continues",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOQUMtT0xpS1RuLUs1UmpNalZUeVZzZDg3LXRKZG8waDQ1al9QZTlSbkVWTkFQNlFSVUowMldCaVFkNkgwQkdMbVQ1SlRfT3hvaWc3eE1xZmptU2JMX0d6MzVVNW01NXhNR0FNTG1RZlZyZEhSeW8xRlRiNUVNamE3dGJGdGdScm95MDZpUnZFX1RMN1BMdTgzY0EyaGlrN3dzeHhyTWFUWEQwRnBrOENNWFhB?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T08:26:43.365056+00:00",
+   "title_ru": "STMicro прогнозирует рост по мере восстановления спроса на чипы"
   }
  ],
  "last_digest": "2026-10-28",
