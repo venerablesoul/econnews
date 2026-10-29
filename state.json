@@ -1069,7 +1069,8 @@
   "db71ba08d16d8fb9": "2026-10-29T21:13:37.144786+00:00",
   "c8b11f96ced0f035": "2026-10-29T21:28:36.849756+00:00",
   "b400b2d3fb8eafd1": "2026-10-29T21:28:36.849756+00:00",
-  "675e83a15732d8a5": "2026-10-29T21:48:36.899331+00:00"
+  "675e83a15732d8a5": "2026-10-29T21:48:36.899331+00:00",
+  "2fcd2fd5299dbed5": "2026-10-29T22:03:36.860071+00:00"
  },
  "recent": [
   {
@@ -11457,6 +11458,19 @@
    "tags": [
     "ECB"
    ]
+  },
+  {
+   "title": "Weak quarter for Intel sends shivers through cooling chip stocks",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNcXEzUmpkSHEwZWtxM2cwVjMwQkJXMVZqVUJrWk8xejY0TzkyZmtvN0E2Z3Q3MDJfNkRLOXRKUW5xR2QzLVM5WjQzSVp2OVBhQldOMVJKZkJ2ZC1qMm04dWFSVjExd1h2bXV2emx1dmkwTVFzT29DamloeVhPZUdwZEhuUmhvem92VG9MQzFIZU1ibDR1MWNaZ0o2ZVBOYzhodHdyQVY4T1U?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T22:03:36.860071+00:00",
+   "title_ru": "Слабый квартал для Intel вызвал дрожь в акциях охлаждающих чипов",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -14232,6 +14246,22 @@
    },
    {
     "src": "sec",
+    "id": "57c5104da1c22198",
+    "ticker": "HPQ",
+    "company": "HP INC",
+    "who": "Anneliese Olson",
+    "role": "Pres Imaging Prtng & Solutions",
+    "type": "sell",
+    "value": 618542,
+    "shares": 18997,
+    "price": 32.56,
+    "plan": false,
+    "date": "2026-10-29",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/2043764/000204376426000008/0002043764-26-000008-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "3419e6ac69fcaa22",
     "ticker": "API",
     "company": "Agora, Inc.",
@@ -14584,6 +14614,22 @@
    },
    {
     "src": "sec",
+    "id": "5cbbe07dae2367ce",
+    "ticker": "ENVA",
+    "company": "Enova International, Inc.",
+    "who": "David Fisher",
+    "role": "Chair",
+    "type": "sell",
+    "value": 4041500,
+    "shares": 23157,
+    "price": 174.53,
+    "plan": true,
+    "date": "2026-10-28",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/1529864/000119312526438273/0001193125-26-438273-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "4149df768ae321c5",
     "ticker": "BMN",
     "company": "BlackRock 2037 Municipal Target Term Trust",
@@ -14789,6 +14835,38 @@
     "date": "2026-10-27",
     "disclosed": "2026-10-29",
     "link": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526438090/0001193125-26-438090-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "ff273b8f40fba217",
+    "ticker": "ENVA",
+    "company": "Enova International, Inc.",
+    "who": "Steven E Cunningham",
+    "role": "CEO",
+    "type": "sell",
+    "value": 2632460,
+    "shares": 15305,
+    "price": 172.0,
+    "plan": false,
+    "date": "2026-10-27",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/1575452/000119312526438275/0001193125-26-438275-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "ff69f6584b5c4650",
+    "ticker": "ENVA",
+    "company": "Enova International, Inc.",
+    "who": "Kirk Chartier",
+    "role": "Chief Strategy Officer",
+    "type": "sell",
+    "value": 4798285,
+    "shares": 27977,
+    "price": 171.51,
+    "plan": false,
+    "date": "2026-10-27",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/1529864/000119312526438274/0001193125-26-438274-index.htm"
    },
    {
     "src": "sec",
@@ -18037,70 +18115,6 @@
     "date": "2026-10-22",
     "disclosed": "2026-10-22",
     "link": "https://www.sec.gov/Archives/edgar/data/1680378/000090266426004257/0000902664-26-004257-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "781069c7fe37254e",
-    "ticker": "API",
-    "company": "Agora, Inc.",
-    "who": "Bin Zhao",
-    "role": "CEO",
-    "type": "buy",
-    "value": 168305,
-    "shares": 38267,
-    "price": 4.4,
-    "plan": true,
-    "date": "2026-10-22",
-    "disclosed": "2026-10-22",
-    "link": "https://www.sec.gov/Archives/edgar/data/1843236/000119312526429245/0001193125-26-429245-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "dff8db13dd14cd3c",
-    "ticker": "AGMB",
-    "company": "AgomAb Therapeutics NV",
-    "who": "David R Epstein",
-    "role": "Director",
-    "type": "buy",
-    "value": 88800,
-    "shares": 10000,
-    "price": 8.88,
-    "plan": false,
-    "date": "2026-10-21",
-    "disclosed": "2026-10-22",
-    "link": "https://www.sec.gov/Archives/edgar/data/2020932/000144582626000015/0001445826-26-000015-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "6912ae491c754b1d",
-    "ticker": "ECF",
-    "company": "ELLSWORTH GROWTH & INCOME FUND LTD",
-    "who": "Saba Capital Management, L.p.",
-    "role": "10% owner",
-    "type": "buy",
-    "value": 30108,
-    "shares": 2600,
-    "price": 11.58,
-    "plan": false,
-    "date": "2026-10-21",
-    "disclosed": "2026-10-22",
-    "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000370/0001510281-26-000370-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "b13ee9b98fa61b35",
-    "ticker": "GF",
-    "company": "NEW GERMANY FUND INC",
-    "who": "Saba Capital Management, L.p.",
-    "role": "10% owner",
-    "type": "buy",
-    "value": 25703,
-    "shares": 2462,
-    "price": 10.44,
-    "plan": false,
-    "date": "2026-10-21",
-    "disclosed": "2026-10-22",
-    "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000371/0001510281-26-000371-index.htm"
    }
   ],
   "docs": {
@@ -18146,31 +18160,31 @@
   "sec_seen": [
    "0001193125-26-438181",
    "0001213900-26-113918",
-   "0000950103-26-016447",
    "0000935703-26-000122",
+   "0000950103-26-016447",
    "0001510281-26-000392",
    "0001193125-26-438200",
    "0001583109-26-000004",
    "0000950103-26-016446",
-   "0001193125-26-438186",
-   "0001437749-26-034009",
    "0001437749-26-034007",
+   "0001437749-26-034009",
+   "0001193125-26-438186",
    "0001510281-26-000393",
    "0000950103-26-016445",
    "0002135314-26-000014",
    "0001510281-26-000391",
+   "0001193125-26-438273",
    "0001193125-26-438100",
-   "0001193125-26-438085",
    "0000935703-26-000124",
+   "0001193125-26-438275",
    "0001193125-26-438188",
-   "0001193125-26-438086",
-   "0001510281-26-000390",
+   "0001193125-26-438274",
    "0000950103-26-016448",
-   "0001628280-26-068314",
    "0000950103-26-016444",
    "0000950103-26-016443",
    "0002104631-26-000018",
    "0001193125-26-438090",
+   "0002043764-26-000008",
    "0000950103-26-016449",
    "0002148161-26-000012",
    "0000899140-26-001161",
