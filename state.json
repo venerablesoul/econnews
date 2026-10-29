@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "a409f8ebdb3f8eb3": "2026-10-26T18:26:22.755006+00:00",
-  "a41a6130aa4bca8e": "2026-10-26T18:26:22.755006+00:00",
   "b0a83c6371d7c39e": "2026-10-26T18:31:22.735507+00:00",
   "d311eb6241a5f7e8": "2026-10-26T18:36:22.769868+00:00",
   "10f26964f6d0ed75": "2026-10-26T18:36:22.769868+00:00",
@@ -1063,7 +1061,9 @@
   "0f33882a5ca4f953": "2026-10-29T18:00:15.979362+00:00",
   "31c6dbc1e4b15658": "2026-10-29T18:05:15.668428+00:00",
   "fba196729bb9a663": "2026-10-29T18:05:15.668428+00:00",
-  "5f65c2c7d915fe9a": "2026-10-29T18:20:15.657424+00:00"
+  "5f65c2c7d915fe9a": "2026-10-29T18:20:15.657424+00:00",
+  "4a22d93052796cb7": "2026-10-29T18:25:15.787454+00:00",
+  "07402845d2b72dd5": "2026-10-29T18:30:15.828139+00:00"
  },
  "recent": [
   {
@@ -11227,6 +11227,21 @@
    "score": 3,
    "ts": "2026-10-29T18:20:15.657424+00:00",
    "title_ru": "Италия винит Германию в задержках хранения газа из-за скачка цен"
+  },
+  {
+   "title": "Exxon, Chevron Cancel Plans to Attend Abu Dhabi Oil Conference",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-29/exxon-chevron-cancel-plans-to-attend-abu-dhabi-oil-conference",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T18:30:15.828139+00:00",
+   "title_ru": "Exxon и Chevron отменили планы по участию в нефтяной конференции в Абу-Даби",
+   "lead": "ExxonMobil Holdings Corp. and Chevron Corp. canceled plans to attend the ADIPEC oil conference in Abu Dhabi next month amid heightened security concerns in the Middle East.",
+   "lead_ru": "ExxonMobil Holdings Corp. и Chevron Corp. отменили планы участия в нефтяной конференции ADIPEC в Абу-Даби в следующем месяце на фоне возросших опасений по поводу безопасности на Ближнем Востоке.",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
