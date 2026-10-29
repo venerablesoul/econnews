@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "1d8153ba3c654e93": "2026-10-26T11:25:24.133288+00:00",
   "e69b42b6e86d8a4c": "2026-10-26T11:35:24.325038+00:00",
   "d4b119c86e5bf992": "2026-10-26T11:40:24.194002+00:00",
   "04b3cf620910e36d": "2026-10-26T11:40:24.194002+00:00",
@@ -1021,19 +1020,11 @@
   "d4cba53c23fd058e": "2026-10-29T11:11:43.418086+00:00",
   "c9c5fe9830711f14": "2026-10-29T11:16:43.409399+00:00",
   "bddc832a8f5694c4": "2026-10-29T11:21:43.375950+00:00",
-  "96d762371d3177b8": "2026-10-29T11:21:43.375950+00:00"
+  "96d762371d3177b8": "2026-10-29T11:21:43.375950+00:00",
+  "eba3666cc58aced7": "2026-10-29T11:31:43.515440+00:00",
+  "793e96bd102fe634": "2026-10-29T11:31:43.515440+00:00"
  },
  "recent": [
-  {
-   "title": "Poland, Germany push closer economic ties, joint competitiveness drive",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQaG5jal84UVN2di1FcnVvTGZoSFhDZmdNUTdWd2tUdTVuaHliakJXaXlwM0RTNnVkcDNNbDVsYmtMZS1qcnFXdndfU3VrMHN0U1hBUHM5VVBTQWdIYTNQN19YR0NnWXllS205WXQyVkkzcDRxX0RkQndqal9WUVVXN09pUnY3b0JEVUQyWUhoU1dzZURKZE00bmpDVnJibmo3Q1ZqcmZ2VnByb2JvTmRYOFFfNA?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T11:25:24.133288+00:00",
-   "title_ru": "Польша и Германия укрепляют экономические связи и способствуют совместной конкурентоспособности"
-  },
   {
    "title": "Nigeria Floats Draft Economic Plan to Outlast Governments",
    "link": "https://www.bloomberg.com/news/articles/2026-10-26/nigeria-floats-draft-economic-plan-to-outlast-governments",
@@ -10577,6 +10568,30 @@
    "score": 3,
    "ts": "2026-10-29T11:21:43.375950+00:00",
    "title_ru": "Дополнительный налог в размере 3% на британские банки поможет правительству собрать 1,5 миллиарда фунтов стерлингов"
+  },
+  {
+   "title": "Fuel is now liquid gold, haulier says after theft",
+   "link": "https://www.bbc.co.uk/news/articles/ck9qzdwjp03lo?at_medium=RSS&at_campaign=rss",
+   "sources": [
+    "BBC"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T11:31:43.515440+00:00",
+   "title_ru": "Топливо теперь представляет собой жидкое золото, говорит перевозчик после кражи",
+   "lead": "The fuel was stolen from two vehicles at the weekend, the director of M Pinches & Sons Ltd said.",
+   "lead_ru": "В выходные дни топливо было украдено из двух автомобилей, сообщил директор M Pinches & Sons Ltd.",
+   "tags": [
+    "gold"
+   ]
+  },
+  {
+   "title": "You can’t rely on the S&P 500 as much as you may think",
+   "link": "https://www.marketwatch.com/story/you-cant-rely-on-the-s-p-500-as-much-as-you-may-think-a3ac0cb7?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-29T11:31:43.515440+00:00"
   }
  ],
  "last_digest": "2026-10-28",
@@ -11424,7 +11439,9 @@
   "GBP|2026-10-28T12:30:00+00:00|Annual Budget Release",
   "USD|2026-10-28T18:00:00+00:00|Federal Funds Rate",
   "USD|2026-10-28T18:00:00+00:00|FOMC Statement",
-  "USD|2026-10-28T18:30:00+00:00|FOMC Press Conference"
+  "USD|2026-10-28T18:30:00+00:00|FOMC Press Conference",
+  "USD|2026-10-29T12:30:00+00:00|Advance GDP q/q",
+  "USD|2026-10-29T12:30:00+00:00|Core PCE Price Index m/m"
  ],
  "last_morning": "2026-10-29",
  "all_down_alerted": false,
@@ -17248,7 +17265,6 @@
    "0002127826-26-000007",
    "0001104659-26-119783",
    "0001104659-26-119781",
-   "0001609151-26-000141",
    "0001193125-26-436886",
    "0001104659-26-119780",
    "0001609151-26-000148",
@@ -17266,10 +17282,8 @@
    "0001493152-26-049156",
    "0001437749-26-033849",
    "0001493152-26-049170",
-   "0001649609-26-000037",
    "0001213900-26-113489",
    "0001609151-26-000143",
-   "0001818383-26-000266",
    "0001609151-26-000142",
    "0001526864-26-000005",
    "0001493152-26-049167",
