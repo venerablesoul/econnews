@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "f1e0c8775ff01e4e": "2026-10-26T10:10:24.226348+00:00",
-  "5015b1bac01b58dd": "2026-10-26T10:10:24.226348+00:00",
-  "89fb3011b722eccb": "2026-10-26T10:10:24.226348+00:00",
-  "7332d2e2942cff1b": "2026-10-26T10:10:24.226348+00:00",
   "00f47a315de2ee7a": "2026-10-26T10:15:24.254828+00:00",
   "6dc5a8cde2980521": "2026-10-26T10:15:24.254828+00:00",
   "2a0155622ff2eb77": "2026-10-26T10:15:24.254828+00:00",
@@ -1031,62 +1027,11 @@
   "2bc4594029e70c66": "2026-10-29T10:01:43.454343+00:00",
   "67e4656193cd2b41": "2026-10-29T10:01:43.454343+00:00",
   "594b959734897415": "2026-10-29T10:06:43.406234+00:00",
-  "6ee1a755ac7431e0": "2026-10-29T10:06:43.406234+00:00"
+  "6ee1a755ac7431e0": "2026-10-29T10:06:43.406234+00:00",
+  "f4eec238c0ad0c6e": "2026-10-29T10:11:43.364040+00:00",
+  "69fe08a9117def57": "2026-10-29T10:11:43.364040+00:00"
  },
  "recent": [
-  {
-   "title": "Fed Meeting Focus Turns to Warsh Messaging With December in Mind",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-26/fed-meeting-focus-turns-to-warsh-messaging-with-december-in-mind",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-26T10:10:24.226348+00:00",
-   "title_ru": "Фокус заседания ФРС переключается на агрессивные сообщения, имея в виду декабрь",
-   "lead": "Kevin Warsh faces a familiar challenge this week if the Federal Reserve holds interest rates steady: He must reassure investors the central bank is committed to quashing inflation while explaining why officials chose not to raise…",
-   "lead_ru": "На этой неделе Кевин Уорш столкнется со знакомой проблемой, если Федеральная резервная система сохранит процентные ставки на стабильном уровне: он должен заверить инвесторов, что центральный банк стремится подавить инфляцию, и одновременно объяснить, почему чиновники решили не повышать…",
-   "tags": [
-    "Fed",
-    "rates",
-    "inflation"
-   ]
-  },
-  {
-   "title": "US stock futures edge up as oil falls heading into earnings barrage",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPVVlfUU5UYnVIOHVRRHJCaWJNQ0NtM0V5aXdZUE5QSEhGVTAxWmdXcU1KeGVEaEtYTXlEal9YNjMwblR6bGZQcm5HODd6N2xnNUppZzdXMDVTSWwtZEc3a3p3Q0M4VzRtaHo3QTd1VDJpaGNPQmw0WjFNaEMyQ2JyOVpGcmZEbktIdk45OHp4blZxdzc5UllRT2V1cnllVTVVTjVYZm1IZ0VjWDlwTnc?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-26T10:10:24.226348+00:00",
-   "title_ru": "Фьючерсы на акции США растут, поскольку нефть падает, что приводит к обвалу прибылей",
-   "tags": [
-    "oil"
-   ]
-  },
-  {
-   "title": "Oil spill off UAE widens, satellite images show, prompting more beach closures",
-   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQbHhFSkdqM0dlc3lWWVViWVlQMDNlNnRVQkxSUWttcWR5R19wV3dvclAyOGtmNVFZMEI2YVVheGVlLUlJNTB3bzZGeDlqRTEtMGZiRk5ZN0x1dWs4a2VNaElUUW1Yd0lxaFRpTjhtVDdael9uaEpHa2kxTllSWVRHSjVIMUVLQmJSNUlGZDF5S0JEOXJ0Rk5GR1lFN0thcWNqSW15RmVsMUFrOUpGeE9lMm1oNVZVNFdjaVQ2VFJielNUM29rMG1BZUd3?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T10:10:24.226348+00:00",
-   "title_ru": "Как показывают спутниковые снимки, разлив нефти у берегов ОАЭ увеличивается, что приводит к закрытию новых пляжей",
-   "tags": [
-    "oil"
-   ]
-  },
-  {
-   "title": "Why Wall Street banks want Democrats to back their capital relief",
-   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOcXYxV3hYb2RBNHlmdUhrWXU1U1M3eGh3eHpGRE5pMjF5cDUtaU5RWWRpdzM5VkdRdGZWdU02NEY4bHd3dkp5bHlxTVcxMHNPSDZ6bjJweGN1NlJaNldWdmJQSW9wU1VHUEhGMG1razlfaVNQb1h3aVlkSDhtN0M5VUdrMndQWjNac09nRUJPQTd4cXlRVUUtNWU4WF8xNDhOclNueDRZVVZ4RW93R2EtMXFGZHJDS0NBNnc?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T10:10:24.226348+00:00",
-   "title_ru": "Почему банки Уолл-стрит хотят, чтобы демократы поддержали их облегчение капитала"
-  },
   {
    "title": "Asia-focused banks face capital squeeze due to inflation, bond turbulence",
    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQQ3c0Nl9IZUxGNGlIRFlNSW0xRUIzUTkxZlZJYVhtWjI5NXlGNFVJcm1IMnNMNVFWZVV4c0toYkxQYjB5Z3VXanB2ZE5ycUxERkRObDhkYUw3RGlrbFlzMVM3OXpyRVZhLTNnMkZhMkhHRU9oeGpuOHBDUWtkNkprSkZuQWVlSWtxYllmX1NlWkdqOHVWZzlubGs0WExDR29iVl95S1paMEhzOEFob1JkQWxpeTlGcnZO?oc=5",
@@ -10679,6 +10624,29 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "ECB President Lagarde to stand down in Februrary",
+   "link": "https://www.cnbc.com/2026/10/29/lagarde-ecb-stand-down.html",
+   "sources": [
+    "CNBC"
+   ],
+   "score": 5,
+   "ts": "2026-10-29T10:11:43.364040+00:00",
+   "title_ru": "Президент ЕЦБ Лагард уйдет в отставку в феврале",
+   "tags": [
+    "ECB"
+   ]
+  },
+  {
+   "title": "Hyundai Profit Beats Estimates on North America, India Growth",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQVkhZNk1iN3lIT0Y4MXBjOGM3VVAtOFJSRERDbkJKQUQyb25IeVdzR2lsRHJITFdQNUFkSmRvVjE3T3lGYWRUYnZNYUNIelVmOThzaXFYbVNUS05Wb0F6b3JaYUk4eE5lcnVidmhtMHJ4N2J0a3pUWURELVo5elFVT1RPR0FhOU16WC1rV3B1czFQWGlGYjc2WHJwUDVaY2JDVEl4RXlHNnN4bm96T2JWNw?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T10:11:43.364040+00:00",
+   "title_ru": "Прибыль Hyundai превзошла прогнозы роста в Северной Америке и Индии"
   }
  ],
  "last_digest": "2026-10-28",
@@ -17353,6 +17321,7 @@
    "0001104659-26-119781",
    "0001609151-26-000141",
    "0001334944-26-000036",
+   "0001193125-26-436886",
    "0001104659-26-119780",
    "0001609151-26-000148",
    "0001193125-26-436875",
@@ -17362,7 +17331,6 @@
    "0001104659-26-119782",
    "0002131773-26-000007",
    "0001104659-26-119785",
-   "0002126186-26-000002",
    "0001609151-26-000146",
    "0001609151-26-000145",
    "0001493152-26-049135",
@@ -17373,8 +17341,8 @@
    "0001213900-26-113489",
    "0001609151-26-000143",
    "0001818383-26-000266",
-   "0001781064-26-000020",
    "0001609151-26-000142",
+   "0001781064-26-000020",
    "0001526864-26-000005",
    "0001609151-26-000144"
   ],
