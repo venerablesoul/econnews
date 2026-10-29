@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "26ce92e194bd06a8": "2026-10-26T21:07:01.193450+00:00",
-  "576d449ec23e761a": "2026-10-26T21:07:01.193450+00:00",
-  "4b5c6cafffe968e9": "2026-10-26T21:07:01.193450+00:00",
-  "544c56c6a90bb245": "2026-10-26T21:07:01.193450+00:00",
-  "f8b3628c9f568a2e": "2026-10-26T21:07:01.193450+00:00",
   "4a63eb32acb6f38b": "2026-10-26T21:17:01.154444+00:00",
   "e4870f6a5a803f0b": "2026-10-26T21:17:01.154444+00:00",
   "91480cc2d66f9b89": "2026-10-26T21:52:01.257657+00:00",
@@ -1073,51 +1068,10 @@
   "73eb9ea806d2f44c": "2026-10-29T20:48:36.911500+00:00",
   "4059827f609d7c5f": "2026-10-29T20:53:36.880961+00:00",
   "0a4cbf0b6382489b": "2026-10-29T20:58:36.881491+00:00",
-  "b29057abfff297c2": "2026-10-29T21:03:37.001065+00:00"
+  "b29057abfff297c2": "2026-10-29T21:03:37.001065+00:00",
+  "284e5e9ca6e2b9b3": "2026-10-29T21:08:36.901382+00:00"
  },
  "recent": [
-  {
-   "title": "В налоговый пакет доложили претензий // «Опора России» предложила свой вариант повышения налогов",
-   "link": "https://www.kommersant.ru/doc/9061160",
-   "sources": [
-    "Kommersant"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T21:07:01.193450+00:00",
-   "title_en": "Complaints were reported in the tax package// \"OPORA Russia\" offered its own option for raising taxes",
-   "lead": "Как стало известно “Ъ”, «Опора России» предложила Минфину и Госдуме смягчить налоговые новации, предложенные правительством в составе бюджетного пакета.",
-   "lead_en": "As it became known to Kommersant, OPORA Russia proposed to the Ministry of Finance and the State Duma to mitigate the tax innovations proposed by the government as part of the budget package.",
-   "tags": [
-    "Russia"
-   ]
-  },
-  {
-   "title": "Цены на газ в Европе пробили четырехлетний максимум",
-   "link": "https://www.rbc.ru/business/27/10/2026/6adf9954a948b0553b387483",
-   "sources": [
-    "RBC"
-   ],
-   "score": 2,
-   "ts": "2026-10-26T21:07:01.193450+00:00"
-  },
-  {
-   "title": "Why Lumentum’s stock led the S&P 500 higher on Monday",
-   "link": "https://www.marketwatch.com/story/why-lumentums-stock-led-the-s-p-500-higher-on-monday-0dff125b?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-26T21:07:01.193450+00:00"
-  },
-  {
-   "title": "Спрос на семейную ипотеку откатился к минимумам декабря 2022 года",
-   "link": "https://www.rbc.ru/finances/27/10/2026/6adf38fd119ddf6c1d53df74",
-   "sources": [
-    "RBC"
-   ],
-   "score": 1,
-   "ts": "2026-10-26T21:07:01.193450+00:00"
-  },
   {
    "title": "Blackstone Data-Center Operator QTS Seeks $800 Million in Private Placement Debt",
    "link": "https://www.bloomberg.com/news/articles/2026-10-26/blackstone-data-center-operator-qts-seeks-800-million-in-private-placement-debt",
@@ -14543,6 +14497,22 @@
    },
    {
     "src": "sec",
+    "id": "529a734ac4ac9d2c",
+    "ticker": "SCQCU",
+    "company": "SPACCircle Acquisition Corp.",
+    "who": "Soumen Das et al.",
+    "role": "Director, 10% owner",
+    "type": "buy",
+    "value": 2665900,
+    "shares": 266590,
+    "price": 10.0,
+    "plan": false,
+    "date": "2026-10-28",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/2158277/000118518526005072/0001185185-26-005072-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "4149df768ae321c5",
     "ticker": "BMN",
     "company": "BlackRock 2037 Municipal Target Term Trust",
@@ -14716,6 +14686,22 @@
     "date": "2026-10-27",
     "disclosed": "2026-10-29",
     "link": "https://www.sec.gov/Archives/edgar/data/1889539/000119312526437931/0001193125-26-437931-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "f1574204ede71515",
+    "ticker": "ONC",
+    "company": "BeOne Medicines Ltd.",
+    "who": "Xiaodong Wang",
+    "role": "Director",
+    "type": "sell",
+    "value": 11262131,
+    "shares": 31028,
+    "price": 362.97,
+    "plan": true,
+    "date": "2026-10-27",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/1662982/000166298226000008/0001662982-26-000008-index.htm"
    },
    {
     "src": "sec",
@@ -18124,38 +18110,6 @@
     "date": "2026-10-21",
     "disclosed": "2026-10-22",
     "link": "https://www.sec.gov/Archives/edgar/data/1718133/000171813326000005/0001718133-26-000005-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "73aa392c81f1a706",
-    "ticker": "MXF",
-    "company": "MEXICO EQUITY & INCOME FUND INC",
-    "who": "Saba Capital Management, L.p.",
-    "role": "10% owner",
-    "type": "buy",
-    "value": 327435,
-    "shares": 16035,
-    "price": 20.42,
-    "plan": false,
-    "date": "2026-10-21",
-    "disclosed": "2026-10-22",
-    "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000373/0001510281-26-000373-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "b6e88d0149be02c3",
-    "ticker": "LEO",
-    "company": "BNY MELLON STRATEGIC MUNICIPALS, INC.",
-    "who": "Saba Capital Management, L.p.",
-    "role": "10% owner",
-    "type": "buy",
-    "value": 262612,
-    "shares": 45831,
-    "price": 5.73,
-    "plan": false,
-    "date": "2026-10-21",
-    "disclosed": "2026-10-22",
-    "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000374/0001510281-26-000374-index.htm"
    }
   ],
   "docs": {
@@ -18197,19 +18151,25 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-29T20:08:36.874831+00:00",
+  "checked": "2026-10-29T21:08:36.901382+00:00",
   "sec_seen": [
-   "0001193125-26-437989",
-   "0001193125-26-437982",
-   "0000313616-26-000205",
    "0000313616-26-000204",
-   "0001423902-26-000105",
-   "0001140361-26-041180",
-   "0001829126-26-011778",
    "0000833444-26-000103",
-   "0000921895-26-002881",
+   "0001193125-26-437989",
+   "0001510281-26-000389",
+   "0001437749-26-033991",
+   "0001193125-26-438010",
+   "0001193125-26-437996",
+   "0001662982-26-000008",
+   "0001193125-26-437973",
+   "0001193125-26-437998",
+   "0001049521-26-000089",
+   "0000313616-26-000205",
+   "0001185185-26-005072",
    "0001171843-26-006977",
-   "0001193125-26-437973"
+   "0001193125-26-438003",
+   "0001193125-26-437982",
+   "0001628280-26-068302"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
