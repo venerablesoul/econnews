@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "1810499ee8a61f94": "2026-10-26T16:41:22.692534+00:00",
   "6909e8345b3cc8d7": "2026-10-26T16:51:22.756736+00:00",
   "8cddad495ca7cd8b": "2026-10-26T16:56:22.707643+00:00",
   "3fb305632adf0202": "2026-10-26T16:56:22.707643+00:00",
@@ -1055,19 +1054,11 @@
   "53e47341db83ad5b": "2026-10-29T16:05:15.703996+00:00",
   "041d359d1687e4dd": "2026-10-29T16:10:16.767386+00:00",
   "92e9eeaaeb08f21e": "2026-10-29T16:10:16.767386+00:00",
-  "1e5e3b21b41b193f": "2026-10-29T16:10:16.767386+00:00"
+  "1e5e3b21b41b193f": "2026-10-29T16:10:16.767386+00:00",
+  "61e559331480b86a": "2026-10-29T16:45:15.818984+00:00",
+  "8f9d6da000f982fe": "2026-10-29T16:50:15.702153+00:00"
  },
  "recent": [
-  {
-   "title": "Republic of Madagascar: Third and Fourth Reviews Under the Extend Credit Facility Arrangement, Request for a Waiver of Nonobservance of a Performance Criterion, Modification of Performance Criteria, Financing Assurances Review",
-   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOQVVQNkxjcXJ6NDJLY0VDVVAxMVgxQlNwaHgxR0NPalZ6WkVBWnRya3lxZ2x6eHJUb2hCNnVnaS16VDlqWjBlRnlZamhsclAzbkFYNlgxQ3hpNEo5NXVDSDhDOURSSjFtWGlwcHJQMVlIYXlZbm5ZcWM0ZlBkZTRPZi1MWFNpWUQxRWFWb3RmYW02Wk9NYlZiNHJjanAwWEd6VW9iV2FBWkl4YkN2YjRuMWdyblJ2VFV6UEJZbmhQaERRaEpQX190SF9VS2hjZWltbVhBcDFmaTN6NFhE?oc=5",
-   "sources": [
-    "IMF"
-   ],
-   "score": 4,
-   "ts": "2026-10-26T16:41:22.692534+00:00",
-   "title_ru": "Республика Мадагаскар: третий и четвертый обзоры в рамках соглашения о продлении кредитной линии, запрос на отказ в случае несоблюдения критерия эффективности, изменение критериев эффективности, проверка гарантий финансирования"
-  },
   {
    "title": "CPPIB Said to Explore Sale of Stake in Spain’s Largest Gas Grid",
    "link": "https://www.bloomberg.com/news/articles/2026-10-26/cppib-said-to-explore-sale-of-stake-in-spain-s-largest-gas-grid",
@@ -11091,6 +11082,21 @@
    "score": 3,
    "ts": "2026-10-29T16:10:16.767386+00:00",
    "title_ru": "Hershey предупреждает, что финансовое давление на потребителей может повлиять на расходы на Хэллоуин"
+  },
+  {
+   "title": "This credit card is the ‘best weapon’ to fight debt while interest rates keep climbing",
+   "link": "https://www.marketwatch.com/story/this-credit-card-is-the-best-weapon-to-fight-debt-while-interest-rates-keep-climbing-8378fcf2?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 5,
+   "ts": "2026-10-29T16:50:15.702153+00:00",
+   "title_ru": "Эта кредитная карта — «лучшее оружие» для борьбы с долгами, пока процентные ставки продолжают расти.",
+   "lead": "After September’s rate hike and another projected increase in December, borrowing costs are expected to keep climbing for Americans carrying a credit-card balance.",
+   "lead_ru": "После повышения ставок в сентябре и еще одного прогнозируемого повышения в декабре стоимость займов, как ожидается, продолжит расти для американцев, имеющих остаток на кредитной карте.",
+   "tags": [
+    "rates"
+   ]
   }
  ],
  "last_digest": "2026-10-28",
@@ -17757,7 +17763,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-29T15:45:16.705650+00:00",
+  "checked": "2026-10-29T16:50:15.702153+00:00",
   "sec_seen": [
    "0001683168-26-008149"
   ],
