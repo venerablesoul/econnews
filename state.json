@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "9fdccd93da551745": "2026-10-26T23:22:01.165221+00:00",
-  "c1fe7b246386e767": "2026-10-26T23:22:01.165221+00:00",
   "6f796792f7bfa601": "2026-10-26T23:27:01.166672+00:00",
   "e4fd510be0e4e785": "2026-10-26T23:27:01.166672+00:00",
   "dc7e498fa993f6a0": "2026-10-26T23:32:01.308262+00:00",
@@ -1069,37 +1067,11 @@
   "1cefa5f92e7867e8": "2026-10-29T22:58:37.139272+00:00",
   "247a557e602dfbbb": "2026-10-29T22:58:37.139272+00:00",
   "68e0a36c4fe143ca": "2026-10-29T23:18:36.897027+00:00",
-  "90df598ceb2b6ffc": "2026-10-29T23:18:36.897027+00:00"
+  "90df598ceb2b6ffc": "2026-10-29T23:18:36.897027+00:00",
+  "5abde9bd965e591d": "2026-10-29T23:23:36.874540+00:00",
+  "b8dcf0c0683c3233": "2026-10-29T23:23:36.874540+00:00"
  },
  "recent": [
-  {
-   "title": "South Korea’s Economy Beats Forecasts on AI-Driven Chip Boom",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-26/south-korea-s-economy-beats-forecasts-on-ai-driven-chip-boom",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T23:22:01.165221+00:00",
-   "title_ru": "Экономика Южной Кореи превзошла прогнозы по поводу бума чипов, вызванного искусственным интеллектом",
-   "lead": "South Korea’s economy grew faster than expected in the third quarter as an artificial intelligence-fueled chip boom supported exports and investment, backing the case for further interest-rate increases.",
-   "lead_ru": "Экономика Южной Кореи в третьем квартале росла быстрее, чем ожидалось, поскольку бум чипов, вызванный искусственным интеллектом, поддержал экспорт и инвестиции, что поддержало аргументы в пользу дальнейшего повышения процентных ставок."
-  },
-  {
-   "title": "В финансировании науки — без перемен // Мониторинг статистики",
-   "link": "https://www.kommersant.ru/doc/9061152",
-   "sources": [
-    "Kommersant"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T23:22:01.165221+00:00",
-   "title_en": "There are no changes in the financing of science // Monitoring statistics",
-   "lead": "Общий объем внутренних затрат на исследования и разработки в России, по оценкам Института статистических исследований и экономики знаний НИУ ВШЭ, в 2025 году составил 2,145 трлн руб., или 1% ВВП.",
-   "lead_en": "The total volume of domestic expenditures on research and development in Russia, according to estimates by the Institute of Statistical Research and Economics of Knowledge at the National Research University Higher School of Economics, in 2025 amounted to 2.145 trillion rubles, or 1% of GDP.",
-   "tags": [
-    "GDP",
-    "Russia"
-   ]
-  },
   {
    "title": "US consumers paying the most for fuel price spikes from Iran war, study says",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNQXI0Ml92cUxsR2hZRHB2OHJLOXIxeHA5MkFFU2JTb091Vk93VXRZdEZ1MFV6OUE4eFBubzhPcDA4M1ZSSjNBN0hzR3dwci1RQzNRcVM1eFJEY0MxTGVRNWdEVGpxWTJvRWl0aFNmWHhYYjBpeDljSjNsRUV5eDlyRGZqVEctMjYyYkZ0cEFHSTB3RWJmc1FxeFZ2VnI2NW9jZHhkV0R5TmJKWkRIZlJ2U3BQbV8?oc=5",
@@ -11486,6 +11458,16 @@
    "score": 3,
    "ts": "2026-10-29T22:58:37.139272+00:00",
    "title_ru": "Осведомленность о ситуации привлекает инвесторов к сбору средств с помощью Fluidstack"
+  },
+  {
+   "title": "Amazon sinks as AI spending eclipses fastest cloud growth in five years",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNQXhDSjU4RmlrZmUyT0E5dzJNbmJNaXBBdGhndktXeGUtZVItTWlpNDBZcXR5LTZDMjFOdzdXenRpTnhNd01pZXBXX0V0OTVlYkMtVlJnN2l4YS1QeENxeWlzUUN6bDZkeThpc1VBMUZDQjFYcGxrQWFrVzBVOXdueV9Tb0drZjZ4T3JYWmRXS2MwWnMwMGpoT05FU1lUVWhRbXlPZEpYUjZQbnlrQWh3SGdsTQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T23:23:36.874540+00:00",
+   "title_ru": "Amazon терпит крах, поскольку расходы на искусственный интеллект затмевают самый быстрый рост облачных технологий за последние пять лет"
   }
  ],
  "last_digest": "2026-10-29",
@@ -18175,8 +18157,8 @@
   "sec_seen": [
    "0001193125-26-438479",
    "0001213900-26-113918",
-   "0001193125-26-438480",
    "0001193125-26-438427",
+   "0001193125-26-438480",
    "0000950103-26-016447",
    "0001895106-26-000022",
    "0001193125-26-438200",
@@ -18195,15 +18177,15 @@
    "0000950103-26-016445",
    "0001748076-26-000005",
    "0001193125-26-438722",
-   "0002148161-26-000012",
    "0001140361-26-041201",
+   "0000897069-26-001877",
    "0001193125-26-438273",
    "0000935703-26-000124",
    "0001193125-26-438275",
-   "0001492126-26-000013",
    "0000944075-26-000078",
    "0001040470-26-000323",
    "0001130144-26-000062",
+   "0001193125-26-438274",
    "0001178579-26-000022",
    "0001628280-26-068337",
    "0001193125-26-438662",
@@ -18215,9 +18197,9 @@
    "0000905874-26-000003",
    "0000944075-26-000076",
    "0000950103-26-016449",
-   "0001193125-26-438274",
+   "0002148161-26-000012",
    "0000899140-26-001161",
-   "0000897069-26-001877",
+   "0001492126-26-000013",
    "0000724004-26-000098"
   ],
   "errors": {
