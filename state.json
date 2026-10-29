@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "4a63eb32acb6f38b": "2026-10-26T21:17:01.154444+00:00",
-  "e4870f6a5a803f0b": "2026-10-26T21:17:01.154444+00:00",
   "91480cc2d66f9b89": "2026-10-26T21:52:01.257657+00:00",
   "520d2dccb9258e1f": "2026-10-26T21:52:01.257657+00:00",
   "2f5c7d62240d8ebf": "2026-10-26T21:52:01.257657+00:00",
@@ -1074,18 +1072,6 @@
   "db71ba08d16d8fb9": "2026-10-29T21:13:37.144786+00:00"
  },
  "recent": [
-  {
-   "title": "Blackstone Data-Center Operator QTS Seeks $800 Million in Private Placement Debt",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-26/blackstone-data-center-operator-qts-seeks-800-million-in-private-placement-debt",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T21:17:01.154444+00:00",
-   "title_ru": "Оператор дата-центра Blackstone QTS ищет $ 800 млн в долгу частного размещения",
-   "lead": "QTS, a data-center operator backed by Blackstone Inc., is looking to raise around $800 million through a private placement of debt, as Wall Street looks to every corner of global credit to finance artificial intelligence…",
-   "lead_ru": "QTS, оператор центра обработки данных, поддерживаемый Blackstone Inc., надеется привлечь около $ 800 млн за счет частного размещения долга, поскольку Уолл-стрит смотрит на каждый уголок глобального кредита для финансирования искусственного интеллекта..."
-  },
   {
    "title": "Duke’s Mayo CEO: Our Room for Growth Is Substantial",
    "link": "https://www.bloomberg.com/news/videos/2026-10-26/duke-s-mayo-ceo-our-room-for-growth-is-substantial-video",
@@ -14205,6 +14191,22 @@
    },
    {
     "src": "sec",
+    "id": "9d2afee6182986db",
+    "ticker": "SLB",
+    "company": "SLB LIMITED/NV",
+    "who": "Howard Guild",
+    "role": "Chief Accounting Officer",
+    "type": "sell",
+    "value": 539022,
+    "shares": 10047,
+    "price": 53.65,
+    "plan": false,
+    "date": "2026-10-29",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/1334072/000008734726000128/0000087347-26-000128-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "3419e6ac69fcaa22",
     "ticker": "API",
     "company": "Agora, Inc.",
@@ -14714,6 +14716,22 @@
     "date": "2026-10-27",
     "disclosed": "2026-10-29",
     "link": "https://www.sec.gov/Archives/edgar/data/1662982/000166298226000008/0001662982-26-000008-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "bad3884ed87aa17f",
+    "ticker": "DVA",
+    "company": "DAVITA INC.",
+    "who": "Berkshire Hathaway Inc et al.",
+    "role": "10% owner",
+    "type": "sell",
+    "value": 69026033,
+    "shares": 382563,
+    "price": 180.43,
+    "plan": false,
+    "date": "2026-10-27",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526438090/0001193125-26-438090-index.htm"
    },
    {
     "src": "sec",
@@ -18090,38 +18108,6 @@
     "date": "2026-10-21",
     "disclosed": "2026-10-22",
     "link": "https://www.sec.gov/Archives/edgar/data/1877198/000119312526428980/0001193125-26-428980-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "fce0422c1c7394e3",
-    "ticker": "UTHR",
-    "company": "UNITED THERAPEUTICS Corp",
-    "who": "Martine A Rothblatt",
-    "role": "CEO",
-    "type": "sell",
-    "value": 5320681,
-    "shares": 9500,
-    "price": 560.07,
-    "plan": true,
-    "date": "2026-10-21",
-    "disclosed": "2026-10-22",
-    "link": "https://www.sec.gov/Archives/edgar/data/1106578/000110657826000169/0001106578-26-000169-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "1bde5e12c6f172d5",
-    "ticker": "XFLT",
-    "company": "XAI Floating Rate & Alternative Income Trust",
-    "who": "Spence John Yogi",
-    "role": "",
-    "type": "buy",
-    "value": 34140,
-    "shares": 2000,
-    "price": 17.07,
-    "plan": false,
-    "date": "2026-10-21",
-    "disclosed": "2026-10-22",
-    "link": "https://www.sec.gov/Archives/edgar/data/1718133/000171813326000005/0001718133-26-000005-index.htm"
    }
   ],
   "docs": {
@@ -18166,25 +18152,28 @@
   "checked": "2026-10-29T21:08:36.901382+00:00",
   "sec_seen": [
    "0001437749-26-033996",
-   "0001193125-26-437989",
-   "0001510281-26-000389",
-   "0001437749-26-033991",
+   "0001193125-26-438080",
+   "0001628280-26-068309",
+   "0001628280-26-068306",
+   "0000087347-26-000128",
+   "0001437749-26-034009",
+   "0001437749-26-034007",
    "0001437749-26-033993",
    "0001193125-26-438051",
-   "0001193125-26-438010",
-   "0001193125-26-437996",
    "0001049521-26-000090",
-   "0001662982-26-000008",
-   "0001193125-26-437998",
-   "0001049521-26-000089",
-   "0000313616-26-000205",
+   "0001193125-26-438085",
+   "0001193125-26-438086",
    "0001185185-26-005072",
+   "0001510281-26-000390",
+   "0001628280-26-068308",
    "0001049521-26-000092",
-   "0001171843-26-006977",
-   "0001193125-26-438003",
-   "0001193125-26-437982",
-   "0001628280-26-068302",
-   "0001049521-26-000091"
+   "0001437749-26-033998",
+   "0001437749-26-034002",
+   "0001628280-26-068314",
+   "0001437749-26-034001",
+   "0001193125-26-438090",
+   "0001049521-26-000091",
+   "0001437749-26-034003"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
