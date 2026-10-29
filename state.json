@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "508582e94deabc34": "2026-10-26T20:17:01.284673+00:00",
   "726d52066e1e2195": "2026-10-26T20:32:01.227464+00:00",
   "75f8d5efb725d7ec": "2026-10-26T20:37:01.308493+00:00",
   "857545c9e3b69ef5": "2026-10-26T20:37:01.308493+00:00",
@@ -1062,7 +1061,11 @@
   "dc342897fbc89667": "2026-10-29T19:53:36.878543+00:00",
   "c655d847668c5c79": "2026-10-29T20:03:36.987425+00:00",
   "552a086d8aa24963": "2026-10-29T20:08:36.874831+00:00",
-  "d29c3804044a489b": "2026-10-29T20:13:36.888253+00:00"
+  "d29c3804044a489b": "2026-10-29T20:13:36.888253+00:00",
+  "1ca0146deb800a07": "2026-10-29T20:18:36.881383+00:00",
+  "671fdf8bba6dd2e9": "2026-10-29T20:18:36.881383+00:00",
+  "31867f4b04eec168": "2026-10-29T20:18:36.881383+00:00",
+  "dc73ba541a42aeaa": "2026-10-29T20:18:36.881383+00:00"
  },
  "recent": [
   {
@@ -11351,6 +11354,61 @@
    "tags": [
     "inflation"
    ]
+  },
+  {
+   "title": "Lagarde Quits ECB Early, French Debt: Global Return",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-29/lagarde-quits-ecb-early-french-debt-global-return-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 7,
+   "ts": "2026-10-29T20:18:36.881383+00:00",
+   "title_ru": "Лагард досрочно покидает ЕЦБ, Французский долг: глобальный возврат",
+   "lead": "Bloomberg's Alice Gledhill joins Scarlet Fu on \"Bloomberg Real Yield.\" They discuss the French bond market, and the decision by ECB president Christine Lagarde to resign on February 7, before the end of her term next October.",
+   "lead_ru": "Элис Гледхилл из Bloomberg присоединяется к Скарлет Фу в программе «Реальная доходность Bloomberg». Они обсуждают французский рынок облигаций и решение президента ЕЦБ Кристин Лагард уйти в отставку 7 февраля, до окончания ее полномочий в октябре следующего года.",
+   "tags": [
+    "ECB",
+    "bonds"
+   ]
+  },
+  {
+   "title": "Canadian Telecom Selloff Lures Money Managers Buying the Dip",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOUzFYQTNvTDlveWdxbFRWTnp3RUN3aHpGdU95S1AydzZVQ3d6UnJCNkJXaVFIR3JFekJPc0dWQU1WSkFxZWVPdGdLczhDNFk4WHNUUTFMSEJ3QndRbTVrQ1JqNTF0c1AtYzg5cFNMX1NvdE91VWJBSDdZTzFON0NTYmdpcWl0OGk5MkFKdzlkMmdkTlFQcGRtZHh1TjhKX3VDNEF0STdIT0VSY3pEQlBZZktpRnVTODkzQVRQME5B?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-29T20:18:36.881383+00:00",
+   "title_ru": "Распродажа канадских телекоммуникационных компаний заманивает управляющих капиталом, покупающих падение",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "Safe Haven Demand Will Persist: Larosiliere",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-29/safe-haven-demand-will-persist-larosiliere-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T20:18:36.881383+00:00",
+   "title_ru": "Спрос на безопасные убежища сохранится: Ларосильер",
+   "lead": "Kay Herr, CIO of US GFICC at JPMorgan Asset Management, and Stephanie Larosiliere, head of fixed income business strategy at Invesco, joins Scarlet Fu on \"Bloomberg Real Yield.\" US Treasuries on Thursday rose as a selloff in…",
+   "lead_ru": "Кей Херр, ИТ-директор американского GFICC в JPMorgan Asset Management, и Стефани Ларозильер, руководитель отдела бизнес-стратегии с фиксированным доходом в Invesco, присоединяются к Скарлет Фу в программе «Bloomberg Real Yield». Казначейские облигации США в четверг выросли из-за распродажи…",
+   "tags": [
+    "bonds",
+    "markets"
+   ]
+  },
+  {
+   "title": "Europe Inc heads for second-best earnings season since 2022",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNZHN5RlpkMThjUU5Rd0FRLXJRNEtteHQ3ODBGeE5tOEFFTWhwVmY5Y0Q5N0VtbDBYWU1wLWhYSUs0NHZJazBfUmlkNURTcDlmVHI5UU1uVkRxclEzQk1uWWxXNkswRGhwTHhjczVESE5kQnhkSjkwV0RTenpnaDJsVWNoWlFadnZyeUZpUHE5eFo0TjFILVNROERib18tQXpYdWc?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T20:18:36.881383+00:00",
+   "title_ru": "Europe Inc готовится к второму лучшему сезону прибыли с 2022 года"
   }
  ],
  "last_digest": "2026-10-29",
@@ -14014,6 +14072,22 @@
    },
    {
     "src": "sec",
+    "id": "17e29ec85bdbfc47",
+    "ticker": "XYL",
+    "company": "Xylem Inc.",
+    "who": "D Christian Koch",
+    "role": "Director",
+    "type": "buy",
+    "value": 985600,
+    "shares": 11000,
+    "price": 89.6,
+    "plan": false,
+    "date": "2026-10-29",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/1524472/000152447226000150/0001524472-26-000150-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "3419e6ac69fcaa22",
     "ticker": "API",
     "company": "Agora, Inc.",
@@ -14206,6 +14280,22 @@
    },
    {
     "src": "sec",
+    "id": "7a49c62d4cfcfdc7",
+    "ticker": "TRV",
+    "company": "TRAVELERS COMPANIES, INC.",
+    "who": "Andy F Bessette",
+    "role": "EVP and Chief Admin Officer",
+    "type": "sell",
+    "value": 1197934,
+    "shares": 3000,
+    "price": 399.35,
+    "plan": false,
+    "date": "2026-10-28",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/1198918/000008631226000194/0000086312-26-000194-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "4149df768ae321c5",
     "ticker": "BMN",
     "company": "BlackRock 2037 Municipal Target Term Trust",
@@ -14251,6 +14341,38 @@
     "date": "2026-10-27",
     "disclosed": "2026-10-29",
     "link": "https://www.sec.gov/Archives/edgar/data/1238032/000123803226000010/0001238032-26-000010-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "b4947c0c2d9ab55a",
+    "ticker": "BNY",
+    "company": "Bank of New York Mellon Corp",
+    "who": "Jose Minaya",
+    "role": "Senior Executive VP",
+    "type": "sell",
+    "value": 520278,
+    "shares": 3520,
+    "price": 147.81,
+    "plan": true,
+    "date": "2026-10-27",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/1950068/000119312526437816/0001193125-26-437816-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "04b96b8e38eabc0b",
+    "ticker": "TEM",
+    "company": "Tempus AI, Inc.",
+    "who": "Eric P Lefkofsky",
+    "role": "CEO, 10% owner",
+    "type": "sell",
+    "value": 17589637,
+    "shares": 250000,
+    "price": 70.36,
+    "plan": true,
+    "date": "2026-10-27",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/1717115/000111435726000042/0001114357-26-000042-index.htm"
    },
    {
     "src": "sec",
@@ -17931,70 +18053,6 @@
     "date": "2026-10-20",
     "disclosed": "2026-10-22",
     "link": "https://www.sec.gov/Archives/edgar/data/1780525/000114036126040540/0001140361-26-040540-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "a7fbf03586593397",
-    "ticker": "ROIV",
-    "company": "Roivant Sciences Ltd.",
-    "who": "Eric Venker",
-    "role": "CEO",
-    "type": "sell",
-    "value": 7022668,
-    "shares": 200000,
-    "price": 35.11,
-    "plan": true,
-    "date": "2026-10-20",
-    "disclosed": "2026-10-22",
-    "link": "https://www.sec.gov/Archives/edgar/data/1801917/000163508826000116/0001635088-26-000116-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "479f0838d3bc497c",
-    "ticker": "ANET",
-    "company": "Arista Networks, Inc.",
-    "who": "Kenneth Duda",
-    "role": "CTO",
-    "type": "sell",
-    "value": 7839496,
-    "shares": 43333,
-    "price": 180.91,
-    "plan": true,
-    "date": "2026-10-20",
-    "disclosed": "2026-10-22",
-    "link": "https://www.sec.gov/Archives/edgar/data/1605808/000159653226000248/0001596532-26-000248-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "b29e99c57ea1de11",
-    "ticker": "IHT",
-    "company": "INNSUITES HOSPITALITY TRUST",
-    "who": "James F Wirth",
-    "role": "CEO, 10% owner",
-    "type": "sell",
-    "value": 2011316976,
-    "shares": 43111,
-    "price": 46654.38,
-    "plan": true,
-    "date": "2026-10-20",
-    "disclosed": "2026-10-22",
-    "link": "https://www.sec.gov/Archives/edgar/data/1055365/000149315226048149/0001493152-26-048149-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "48cd22936ec3e786",
-    "ticker": "LIQT",
-    "company": "LIQTECH INTERNATIONAL INC",
-    "who": "Peyton Boswell",
-    "role": "Director",
-    "type": "buy",
-    "value": 50000,
-    "shares": 50000,
-    "price": 1.0,
-    "plan": false,
-    "date": "2026-06-05",
-    "disclosed": "2026-10-22",
-    "link": "https://www.sec.gov/Archives/edgar/data/1715018/000143774926033305/0001437749-26-033305-index.htm"
    }
   ],
   "docs": {
@@ -18039,23 +18097,24 @@
   "checked": "2026-10-29T20:08:36.874831+00:00",
   "sec_seen": [
    "0001130416-26-000005",
-   "0001628280-26-068214",
    "0001837817-26-000021",
+   "0001524472-26-000150",
    "0001049521-26-000087",
-   "0001140361-26-041173",
    "0001438133-26-000136",
    "0001231919-26-001508",
+   "0001628280-26-068249",
    "0000945621-26-001330",
-   "0001193125-26-437769",
+   "0000891839-26-000472",
    "0001049521-26-000088",
    "0001628280-26-068219",
+   "0000086312-26-000194",
+   "0001493152-26-049274",
    "0002007678-26-000002",
-   "0001336706-26-000086",
    "0001628280-26-068221",
-   "0001628280-26-068212",
-   "0001910388-26-000015",
+   "0001114357-26-000042",
    "0001238032-26-000010",
-   "0001628280-26-068225"
+   "0001628280-26-068225",
+   "0001193125-26-437816"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
