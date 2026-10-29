@@ -1055,7 +1055,8 @@
   "2ff758d6ce4fd638": "2026-10-29T15:30:15.651229+00:00",
   "9c714e6f5fcdded7": "2026-10-29T15:30:15.651229+00:00",
   "2f582076b74cca0a": "2026-10-29T15:40:15.681005+00:00",
-  "d4e01cea426f0475": "2026-10-29T15:40:15.681005+00:00"
+  "d4e01cea426f0475": "2026-10-29T15:40:15.681005+00:00",
+  "a497d18d1ab612e8": "2026-10-29T15:45:16.705650+00:00"
  },
  "recent": [
   {
@@ -11100,6 +11101,23 @@
    ],
    "score": 1,
    "ts": "2026-10-29T15:40:15.681005+00:00"
+  },
+  {
+   "title": "ECB Officials Are Ready to Raise Interest Rates in December",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-29/ecb-officials-are-ready-to-raise-interest-rates-in-december",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 7,
+   "ts": "2026-10-29T15:45:16.705650+00:00",
+   "title_ru": "Чиновники ЕЦБ готовы повысить процентные ставки в декабре",
+   "lead": "European Central Bank officials are prepared to raise interest rates in December if the inflation outlook doesn’t improve, people familiar with the situation said.",
+   "lead_ru": "Представители Европейского центрального банка готовы повысить процентные ставки в декабре, если прогноз инфляции не улучшится, сообщили источники, знакомые с ситуацией.",
+   "tags": [
+    "ECB",
+    "rates",
+    "inflation"
+   ]
   }
  ],
  "last_digest": "2026-10-28",
@@ -17766,13 +17784,13 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-29T14:45:15.735260+00:00",
+  "checked": "2026-10-29T15:45:16.705650+00:00",
   "sec_seen": [
    "0001463254-26-000008",
    "0001364954-26-000097"
   ],
   "errors": {
-   "senate": "HTTPError: HTTP Error 503: Service Unavailable"
+   "senate": "HTTPError: HTTP Error 403: Forbidden"
   }
  },
  "cal_actuals": {
