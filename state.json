@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "fffe7c9b9e59b89b": "2026-10-26T15:01:22.833536+00:00",
-  "57797c10da3d3bdf": "2026-10-26T15:01:22.833536+00:00",
   "887ef2480631629f": "2026-10-26T15:11:22.727822+00:00",
   "a9f70dedcc5b9896": "2026-10-26T15:11:22.727822+00:00",
   "dff26f21e5e1bb26": "2026-10-26T15:11:22.727822+00:00",
@@ -1057,22 +1055,12 @@
   "29e25a23fab25b88": "2026-10-29T14:55:15.629002+00:00",
   "fe8062d1849909d7": "2026-10-29T14:55:15.629002+00:00",
   "3481c1b09580db88": "2026-10-29T14:55:15.629002+00:00",
-  "234fb873d6a1dce4": "2026-10-29T15:00:15.903196+00:00"
+  "234fb873d6a1dce4": "2026-10-29T15:00:15.903196+00:00",
+  "8358c84e4a016c10": "2026-10-29T15:05:16.800156+00:00",
+  "d157be01a9026e49": "2026-10-29T15:05:16.800156+00:00",
+  "bc56f02d11283c96": "2026-10-29T15:05:16.800156+00:00"
  },
  "recent": [
-  {
-   "title": "Democrats to Probe Russian Diesel, Ask Banks to Save Records",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQZmtzeERGZU1mNGpJZW03eVR6VUZWV2VKOW96eEJWRW05blQtS3lHRW8wQ084alI3U210NzRvSDk5ai1USE9sckU1TzlXMW4ycmJuZk5pWDRsbncwNmVONDZZREh5N2k5RDBHbXN4cHVWNVFoS3A0ZXg3M0FIR1NJaXVyckxFTlJQdkhvdng4RFhRVXlmcGZDbVRyNi1iMV9JVk92TEVHTHdIblRXM0tWREM3QWI?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T15:01:22.833536+00:00",
-   "title_ru": "Демократы исследуют российский дизель и просят банки сохранить записи",
-   "tags": [
-    "Russia"
-   ]
-  },
   {
    "title": "Musk's warning hits neocloud stocks as debt concerns mount",
    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQaElYSFRZcUVWRmFiRzg0SWRkSENhb0NvTGNLS1gwZnZrU015R3R6NmdiLTE4WDVCeUNkWi1LejFmRXVsUmRmRzQydEEtby1ESzFNY21ZSnhNV1ZhdU9jQ2NMMHBFZlc0anVGcjBBVEVvQU9vdl9RUVRMUmhGSzdRaFdWRmNISTg5WjlqazEwLUdJbjRtYzY3eHlTU0lZRTF4?oc=5",
@@ -11073,6 +11061,23 @@
    "title_ru": "Фейсал Ислам: 10-летний план должен заполнить пробелы в этом «микробюджете»",
    "lead": "Chancellor John Healey's plans fall short of radical action to create a promised new economic model.",
    "lead_ru": "Планы канцлера Джона Хили не соответствуют радикальным действиям по созданию обещанной новой экономической модели."
+  },
+  {
+   "title": "Fed Can’t Beat Inflation Without Market Pain, Says Dawson",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-29/fed-can-t-tighten-without-market-pain-says-dawson-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 8,
+   "ts": "2026-10-29T15:05:16.800156+00:00",
+   "title_ru": "ФРС не может победить инфляцию без рыночной боли, говорит Доусон",
+   "lead": "Federal Reserve officials left interest rates unchanged and reiterated their commitment to containing inflation without offering a clear signal they might raise rates at their next meeting in December.",
+   "lead_ru": "Представители Федеральной резервной системы оставили процентные ставки без изменений и подтвердили свою приверженность сдерживанию инфляции, не дав четкого сигнала о том, что они могут повысить ставки на своем следующем заседании в декабре.",
+   "tags": [
+    "Fed",
+    "rates",
+    "inflation"
+   ]
   }
  ],
  "last_digest": "2026-10-28",
