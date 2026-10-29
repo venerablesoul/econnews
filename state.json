@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "91480cc2d66f9b89": "2026-10-26T21:52:01.257657+00:00",
-  "520d2dccb9258e1f": "2026-10-26T21:52:01.257657+00:00",
-  "2f5c7d62240d8ebf": "2026-10-26T21:52:01.257657+00:00",
   "d108e95f96ae4c6c": "2026-10-26T22:07:01.229022+00:00",
   "152dc5ecb390f727": "2026-10-26T22:12:01.160665+00:00",
   "aad2d4de3e023baa": "2026-10-26T22:12:01.160665+00:00",
@@ -1075,40 +1072,6 @@
   "675e83a15732d8a5": "2026-10-29T21:48:36.899331+00:00"
  },
  "recent": [
-  {
-   "title": "Duke’s Mayo CEO: Our Room for Growth Is Substantial",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-26/duke-s-mayo-ceo-our-room-for-growth-is-substantial-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T21:52:01.257657+00:00",
-   "title_ru": "Генеральный директор Duke’s Mayo: Наши возможности для роста значительны",
-   "lead": "E. Yuri Hermida, CEO of Duke’s Mayo Company, discussed the company’s name change from Sauer Brands as it enters a new growth chapter.",
-   "lead_ru": "Э. Юрий Гермида, генеральный директор Duke’s Mayo Company, рассказал об изменении названия компании с Sauer Brands, поскольку она вступает в новую главу роста."
-  },
-  {
-   "title": "Pimco Scoops Up $4 Billion of Massive SpaceX AI Debt Package",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-26/pimco-scoops-up-4-billion-of-massive-spacex-ai-debt-package",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T21:52:01.257657+00:00",
-   "title_ru": "Pimco получила 4 миллиарда долларов в виде огромного долга SpaceX в области искусственного интеллекта",
-   "lead": "Pacific Investment Management Co. bought a $4 billion slice of a huge SpaceX financing deal that will help expand its artificial intelligence ambitions, according to people familiar with the matter.",
-   "lead_ru": "По словам людей, знакомых с ситуацией, компания Pacific Investment Management Co. купила долю в огромной финансовой сделке SpaceX на сумму 4 миллиарда долларов, которая поможет расширить ее амбиции в области искусственного интеллекта."
-  },
-  {
-   "title": "Boeing forecast to post small quarterly loss despite recent wins, analysts say",
-   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOZXBBcUZVbDFLMnNEeGs1NWxSYUNOTkkxUkZwQ25VX2I2SEdnZTlyYTF0MjZsQ19Oa3FNSUVaOUozQk40QXdRbkNsSVh3dWpDdUJlUC0yM1BaYklaMlFkMjg0OGZXTjlvX2xhNm1jcG14QUdrc1BOQTF6ZFc0a1lLaGxaS1ZFU2duUXZXblk2OUdPNjhiNlhnNzFRTzg3WkhpRjVqMTVfNkExTjZBTlVJV1lJRlZhQzgzTjRqaV9FVm1Pb0RhWUItejF0cGdudVdpOHln?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T21:52:01.257657+00:00",
-   "title_ru": "Аналитики говорят, что Boeing прогнозирует небольшой квартальный убыток, несмотря на недавние победы"
-  },
   {
    "title": "Options traders are seizing control of the S&P 500",
    "link": "https://www.marketwatch.com/story/options-traders-are-seizing-control-of-the-s-p-500-1add94ca?mod=mw_rss_topstories",
@@ -18183,16 +18146,15 @@
   "sec_seen": [
    "0001193125-26-438181",
    "0001213900-26-113918",
-   "0001193125-26-438080",
+   "0000950103-26-016447",
    "0000935703-26-000122",
    "0001510281-26-000392",
-   "0000950103-26-016447",
    "0001193125-26-438200",
    "0001583109-26-000004",
    "0000950103-26-016446",
    "0001193125-26-438186",
-   "0001437749-26-034007",
    "0001437749-26-034009",
+   "0001437749-26-034007",
    "0001510281-26-000393",
    "0000950103-26-016445",
    "0002135314-26-000014",
@@ -18203,13 +18165,16 @@
    "0001193125-26-438188",
    "0001193125-26-438086",
    "0001510281-26-000390",
+   "0000950103-26-016448",
    "0001628280-26-068314",
    "0000950103-26-016444",
    "0000950103-26-016443",
    "0002104631-26-000018",
    "0001193125-26-438090",
+   "0000950103-26-016449",
    "0002148161-26-000012",
-   "0000899140-26-001161"
+   "0000899140-26-001161",
+   "0001492126-26-000013"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
