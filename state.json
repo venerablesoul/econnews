@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "670cb53d69bfd981": "2026-10-26T12:30:24.316387+00:00",
   "8012e0504d99fdbd": "2026-10-26T12:35:24.169732+00:00",
   "6cb94c1e1d532f16": "2026-10-26T12:40:24.257552+00:00",
   "f54a6d757e399d9d": "2026-10-26T12:45:24.163303+00:00",
@@ -1033,19 +1032,13 @@
   "d63cc83aa58f3659": "2026-10-29T12:26:43.430130+00:00",
   "51077b4f7a7d2b6c": "2026-10-29T12:26:43.430130+00:00",
   "018c2f276621afea": "2026-10-29T12:26:43.430130+00:00",
-  "0aa907928ac712d5": "2026-10-29T12:26:43.430130+00:00"
+  "0aa907928ac712d5": "2026-10-29T12:26:43.430130+00:00",
+  "0c5cb578ed975bae": "2026-10-29T12:31:43.472806+00:00",
+  "8056b17f9aa3d675": "2026-10-29T12:31:43.472806+00:00",
+  "b7a63814065c00c8": "2026-10-29T12:31:43.472806+00:00",
+  "997acba01968ee19": "2026-10-29T12:31:43.472806+00:00"
  },
  "recent": [
-  {
-   "title": "EQT to Buy Range Resources, Creating Largest US Gas Producer",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOZ3Bic2Q4OGthS1FWQ3kzQXVqUGJUbGJrRGkxVWI2ZUZhVjRzOGVlQ2VNWGVuTEF3ejRFLUFHV1U1RXBnMkFDX2JDRUhDWlp4cnR3alZYZXlDcXFVb3JJRktsM05LUVpQTW1lNUgxdExyRHN6YjFCU0FqU2x5bGxyOHpOT05kakJfZGJWTk5xUnNncXR5b3lteVNxRmpxVUxnMGZKenJGN0U?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T12:30:24.316387+00:00",
-   "title_ru": "EQT купит Range Resources, создав крупнейшего производителя газа в США"
-  },
   {
    "title": "Trend hedge funds saw worst week since 2024 as AI stocks fell, Goldman says",
    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNaXVkNFhCYXZGZWdiZXZLTHFHMnJoN1VHWlc5QWNRSTcwRThfV2lvejJsdDdzbzE3S09XVzVneWJOVmJTSWJRRFliSVNFTzc2TEJxYlZKZ2tEVTM1dG5OR2h6MkVFUE9OM04yY1Jjd3B2VUVXSmtsTjMxQzUtd2JfZy1JbVBpYmg5bHR6Tm1PQzBrdWxkbWV1MjFfTkdlYlozSXlfaWt2X3UxUl9BV0tkN3kyNW5HeXZRREVmcEdwWQ?oc=5",
@@ -10740,6 +10733,51 @@
    ],
    "score": 1,
    "ts": "2026-10-29T12:26:43.430130+00:00"
+  },
+  {
+   "title": "India's finance ministry sees FY27 growth at 7.3%, flags inflation risks",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQbHJKOFdCa1lNa3I2Y01DOVFLMDhSR3lhVnBGTmd3cG1UZXQ5LWdudTlhOUotYVZpUlktR09YbzhfR19RUkFCTzFnUmNjY2hxeVl3ejRscWNRV2t2TkpYdGNMWVhZZ0tOYkpEQmtxNDN3d2dhU2NSNktwMFJ6bUZkVVluUmJuNW1vYnhkZjJDMWhDTThvQ0l4NjdNc0tyTDM1cllSa2llM1MwSWN4WjZ3YnQ1VQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-29T12:31:43.472806+00:00",
+   "title_ru": "Министерство финансов Индии прогнозирует рост на 7,3% в 27-м финансовом году, отмечая инфляционные риски",
+   "tags": [
+    "inflation"
+   ]
+  },
+  {
+   "title": "Taiwan central bank board members flag inflation woes, minutes show",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQYkV2cEZSS0M2QUJQUUptRFR0SmJnS3JtRDMxaXJmS2otSGRrVXFOcUI3YzhxUnRBVFB0c1UtQ2NOMTZ5alg4bFl2SzFuQXdjajYtXzJHd0VfSUM3LUg5bzVzMnlLLWJnVmZkVUlHQldiLTVmWGJZVHhpMHh1MGNBWXQtd3U2V0FleVdaOF9xZkpiRV9ieFp1V2hTaVA2Slo2emt3T0VlcXh3b0NzUTdibzRJckx1VHhlcDFXNVRR?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-29T12:31:43.472806+00:00",
+   "title_ru": "Члены правления центрального банка Тайваня отмечают проблемы с инфляцией, показывают минуты",
+   "tags": [
+    "inflation"
+   ]
+  },
+  {
+   "title": "Japan weighs government-backed bank lending scheme to spur strategic investment",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNN194TUhlUEZqdDFydDFyblVOMXl0QndETE9GMExMb3V4UmQ5c3VXVjlEVlh2dVR1MmprQ05mSGFXTDNwLWEza0M4Z2RXR1V6eTlFS2VOZWwzLVZIb2RoV1hWWFlzczF4Z1VnWldnWEl1SDFoamF5eWVMaXJZa056VTVWemo2eC1BcGxPUWRWc3JpbXVwa3pvYS1ZS2trVlNNUjhMdUo3OXEwMFY3aVAwc0JRRGtxWFl6ZDAwc1F0SWFadFlIdkE2ay1Pcw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T12:31:43.472806+00:00",
+   "title_ru": "Япония взвешивает схему банковского кредитования, поддерживаемую правительством, чтобы стимулировать стратегические инвестиции"
+  },
+  {
+   "title": "Госдума одобрила проект бюджета на следующие три года",
+   "link": "https://www.rbc.ru/economics/29/10/2026/6ae32b5df1d11a85f97f2468",
+   "sources": [
+    "RBC"
+   ],
+   "score": 1,
+   "ts": "2026-10-29T12:31:43.472806+00:00"
   }
  ],
  "last_digest": "2026-10-28",
