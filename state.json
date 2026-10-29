@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "00f47a315de2ee7a": "2026-10-26T10:15:24.254828+00:00",
-  "6dc5a8cde2980521": "2026-10-26T10:15:24.254828+00:00",
-  "2a0155622ff2eb77": "2026-10-26T10:15:24.254828+00:00",
-  "1a3eb2bd81bae787": "2026-10-26T10:15:24.254828+00:00",
-  "6a731ec4989caa98": "2026-10-26T10:15:24.254828+00:00",
   "bea96386d1037719": "2026-10-26T10:20:24.241024+00:00",
   "c74f2e472ec1c67d": "2026-10-26T10:25:24.116334+00:00",
   "a4d58eba8d893b0a": "2026-10-26T10:25:24.116334+00:00",
@@ -1029,70 +1024,11 @@
   "594b959734897415": "2026-10-29T10:06:43.406234+00:00",
   "6ee1a755ac7431e0": "2026-10-29T10:06:43.406234+00:00",
   "f4eec238c0ad0c6e": "2026-10-29T10:11:43.364040+00:00",
-  "69fe08a9117def57": "2026-10-29T10:11:43.364040+00:00"
+  "69fe08a9117def57": "2026-10-29T10:11:43.364040+00:00",
+  "0c0d5b2ef031c330": "2026-10-29T10:16:43.438503+00:00",
+  "a22bb58ee6d78573": "2026-10-29T10:16:43.438503+00:00"
  },
  "recent": [
-  {
-   "title": "Asia-focused banks face capital squeeze due to inflation, bond turbulence",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQQ3c0Nl9IZUxGNGlIRFlNSW0xRUIzUTkxZlZJYVhtWjI5NXlGNFVJcm1IMnNMNVFWZVV4c0toYkxQYjB5Z3VXanB2ZE5ycUxERkRObDhkYUw3RGlrbFlzMVM3OXpyRVZhLTNnMkZhMkhHRU9oeGpuOHBDUWtkNkprSkZuQWVlSWtxYllmX1NlWkdqOHVWZzlubGs0WExDR29iVl95S1paMEhzOEFob1JkQWxpeTlGcnZO?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-26T10:15:24.254828+00:00",
-   "title_ru": "Банки, ориентированные на Азию, сталкиваются с сокращением капитала из-за инфляции и турбулентности облигаций",
-   "tags": [
-    "inflation",
-    "bonds"
-   ]
-  },
-  {
-   "title": "Fed to hit pause on rate hikes, but maybe not for long",
-   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQMFBxcEVKT0RxYVJKYWZGOUlGd0VJTE5vN2lNTnozcm92NTV5Vzg3aVdhT2p3eGpoVlZlZ19aaGtPa0s2VzBsS2xuamdkTnU4X2dhNGRzYjlaVTFpVzdLSkg4TDRlQThPdnZOandxOE1wV0o0WDFCcDgtbEZIQmR0a3BFOWdIM1dPZGdmQQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-26T10:15:24.254828+00:00",
-   "title_ru": "ФРС возьмет паузу в повышении ставок, но, возможно, ненадолго",
-   "tags": [
-    "Fed",
-    "rates"
-   ]
-  },
-  {
-   "title": "Bank of Canada expected to hike rate on Wednesday to stem spillover of energy inflation",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPUXpOXzVmSjQ1YVpWOEdvN2ZtR2xyVmFDTTJxZzhqekRPVGRaVzl3QUV4bFFQYjZUckk0MExrRGZYbUNPd3czSV9yQVNORlFJc19rMm03T3BoNHhVNkRtTnRQckdpM0Q4MUFscWlzU1gtYVhrSUY0SjY1UlMxby00YXROUlJleDc4cXdBS2xFTkJvSHQwTGpwVkN5aVpqZ1dVM081dk9qM3dGSy05Z2kxaGU0TlctSXVMQUpBaGlVckQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-26T10:15:24.254828+00:00",
-   "title_ru": "Банк Канады, как ожидается, повысит ставку в среду, чтобы остановить распространение энергетической инфляции",
-   "tags": [
-    "inflation"
-   ]
-  },
-  {
-   "title": "Indonesia meeting Singapore gas terms despite supply cut, minister says",
-   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOTGRBUmV5aU1iVUE5Y1pEVTRYUjZjMzNOdEZpY0VvRE02Ym5JaHBBcWljM3k0UnoydFo5bE9yRWRUeFBDWklUMVR2bmxZT1Q0M01FTlFKQlhjTGhXOGxKWHdscnBKM3dKM2NLSWZxXy13OHA3Q1BxUFhzeG1CaENld256Q0U3VTZTckpwOEVCSFlpMHVMQXBSd3RuOFhZUGpqeEhaLVhkTDZXVDFpX3V5RFdsSWVteTlPeUVKenpSUnh6WVJRbUlHQnRfMTU?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T10:15:24.254828+00:00",
-   "title_ru": "Индонезия выполняет условия Сингапура по газу, несмотря на сокращение поставок, заявил министр"
-  },
-  {
-   "title": "US growth boosted by AI, but no sign of a turning point higher",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNQWJDYTAzYXBReXFpWXVtczNMSktHdnZTRzl3QktrREpMbTgzR3B2OTdqRUo4bjlBb0Y5ZDl0ZXd1TnRYY0RwMmlEMExselZFQUZtNURZQ242S1dXdnRPT2JHbmhnWGxLeVpPNFlkb0JsM0ZYRjZTOENFUVZFWVVENTk3dC1BdFlSOVNMYUsxNWNCZFdJNk0wRVF1UU9nZw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T10:15:24.254828+00:00",
-   "title_ru": "Экономический рост в США стимулируется искусственным интеллектом, но нет никаких признаков поворотного момента"
-  },
   {
    "title": "UK sanctions 15 commanders from rival Sudan factions over wartime rape",
    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPNnR6N0kxYjNWWHZIMU9aUXZZcFNHXzh4Tk9kaXdsZGJ3V2hhaEh4Mllpd0kwSkZIR1dxNjZUaXk3aU14d3FTTTZWaFJsRGxmdkd2bV9qZEJacEF3VlhkMGRVX0Y5NGE2bjBMTlZ2UFZJT01VcS1TN0JDUTAtcHp0aWwyeVR5dXg5NUNWaVVvLUxnbFdXY19qajMzSEdHRVJHQ081czhYNk1VQ1VKTzZR?oc=5",
@@ -10647,6 +10583,16 @@
    "score": 3,
    "ts": "2026-10-29T10:11:43.364040+00:00",
    "title_ru": "Прибыль Hyundai превзошла прогнозы роста в Северной Америке и Индии"
+  },
+  {
+   "title": "Equinor says North Sea gas find bigger than expected",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNb01ERXJkVGJCNDR0UEpyUmYtZ2pYSmxscXNGUEhnOVVkQ25XZ1ZwVlhHZUlLZ1FMX05OdFlPNjZBdGFFQzJGUllxU2dNUXBzdG40R0puSXdTWW1TNjJZdVBtQnNQeTlSN19VYUY2WDFBcTNLSi00UnVUSWZQQ2dZNm1KOXZKVUdFeVYzYTBINGhEOWhuMG9sNlo4Ym1CS0NJU2pyeklsOA?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T10:16:43.438503+00:00",
+   "title_ru": "Equinor говорит, что газ Северного моря больше, чем ожидалось"
   }
  ],
  "last_digest": "2026-10-28",
