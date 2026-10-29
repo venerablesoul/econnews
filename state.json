@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "6cb94c1e1d532f16": "2026-10-26T12:40:24.257552+00:00",
   "f54a6d757e399d9d": "2026-10-26T12:45:24.163303+00:00",
   "c9493fdb312d63af": "2026-10-26T12:45:24.163303+00:00",
   "33e49e1c2fe25712": "2026-10-26T12:45:24.163303+00:00",
@@ -1039,7 +1038,10 @@
   "12a082a3ce4152d7": "2026-10-29T12:36:43.488152+00:00",
   "af3f8359faee791d": "2026-10-29T12:36:43.488152+00:00",
   "973a3f77a286415c": "2026-10-29T12:36:43.488152+00:00",
-  "2579e0f10b6904ef": "2026-10-29T12:36:43.488152+00:00"
+  "2579e0f10b6904ef": "2026-10-29T12:36:43.488152+00:00",
+  "9604f28fdf82046b": "2026-10-29T12:41:43.408333+00:00",
+  "e0c847d617a310f0": "2026-10-29T12:41:43.408333+00:00",
+  "93bea1bfa4e179fa": "2026-10-29T12:41:43.408333+00:00"
  },
  "recent": [
   {
@@ -10823,6 +10825,38 @@
    "title_en": "The State Duma adopted in the first reading the draft federal budget",
    "lead": "Проект федерального бюджета на 2027-2029 годы принят в первом чтении в Госдуме. За документ проголосовали 82,7% присутствовавших на заседании депутатов, против не выступил никто.",
    "lead_en": "The draft federal budget for 2027-2029 was adopted in the first reading in the State Duma. 82.7% of the deputies present at the meeting voted for the document, no one opposed it."
+  },
+  {
+   "title": "Inflation surges, PCE shows. Fed pause on rate hikes unlikely to last long with prices still rising.",
+   "link": "https://www.marketwatch.com/story/inflation-surges-pce-shows-fed-pause-on-rate-hikes-unlikely-to-last-long-with-prices-still-rising-79128886?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 9,
+   "ts": "2026-10-29T12:41:43.408333+00:00",
+   "title_ru": "Инфляционные всплески, PCE показывает. Пауза ФРС в отношении повышения ставок вряд ли продлится долго, поскольку цены все еще растут.",
+   "tags": [
+    "Fed",
+    "rates",
+    "inflation"
+   ]
+  },
+  {
+   "title": "Third-quarter U.S. GDP increases a better-than-expected 3.4% as September inflation accelerates",
+   "link": "https://www.cnbc.com/2026/10/29/pce-inflation-report-september-2026-.html",
+   "sources": [
+    "CNBC"
+   ],
+   "score": 7,
+   "ts": "2026-10-29T12:41:43.408333+00:00",
+   "title_ru": "ВВП США в третьем квартале увеличился лучше, чем ожидалось, на 3,4%, поскольку сентябрьская инфляция ускоряется",
+   "lead": "The personal consumption expenditures price index was projected to increase 0.5% in September for an annual rate of 3.7%, according to the Dow Jones consensus.",
+   "lead_ru": "Прогнозировалось, что индекс цен расходов на личное потребление увеличится на 0,5% в сентябре с годовой ставкой 3,7%, согласно консенсусу Dow Jones.",
+   "tags": [
+    "inflation",
+    "markets",
+    "GDP"
+   ]
   }
  ],
  "last_digest": "2026-10-28",
@@ -17488,7 +17522,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-29T11:41:43.368156+00:00",
+  "checked": "2026-10-29T12:41:43.408333+00:00",
   "sec_seen": [
    "0001999371-26-023803",
    "0001493152-26-049161",
