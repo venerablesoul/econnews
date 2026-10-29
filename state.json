@@ -1083,7 +1083,8 @@
   "34c734b3394ea61a": "2026-10-29T00:20:50.400288+00:00",
   "509d8064611a71c3": "2026-10-29T00:20:50.400288+00:00",
   "42ab65c7bc015ec1": "2026-10-29T00:25:50.362594+00:00",
-  "acca4ba0d36d927f": "2026-10-29T00:30:50.383744+00:00"
+  "acca4ba0d36d927f": "2026-10-29T00:30:50.383744+00:00",
+  "cad208adc5412100": "2026-10-29T00:45:50.484062+00:00"
  },
  "recent": [
   {
@@ -10717,6 +10718,16 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "Microsoft's cloud growth, cash flow offer respite from AI spending fears",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPLTNUYVRBd0RuOWg5SUc2SzFCSTR1TGJsRndOTjNDWmtkeU1fRHZwWUxaakxsdE9sSV8tZzZDMXpXV2dDNDhhbTMyM291Z0Rua2lNSEwxaVZlTVVMbG5icUY1dllTNm9QVEk1R0NpdHdNRzVmSFA2MXZublNmaGN4NXJ5RGdMeWhiTHZmdENGX0t6UUdGaWNLS0JkbkVHWkRONXk5dkg0ZFA1T3Q0dGVR?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T00:45:50.484062+00:00",
+   "title_ru": "Рост облака Microsoft, денежный поток предлагают передышку от опасений по поводу расходов на ИИ"
   }
  ],
  "last_digest": "2026-10-28",
@@ -13997,6 +14008,22 @@
     "date": "2026-10-26",
     "disclosed": "2026-10-28",
     "link": "https://www.sec.gov/Archives/edgar/data/1564475/000095010326016313/0000950103-26-016313-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "23d236bb7d0a0fe1",
+    "ticker": "LONA",
+    "company": "LeonaBio, Inc.",
+    "who": "Portman David J.",
+    "role": "10% owner",
+    "type": "buy",
+    "value": 9919161281,
+    "shares": 3149470,
+    "price": 3149.47,
+    "plan": false,
+    "date": "2026-10-26",
+    "disclosed": "2026-10-28",
+    "link": "https://www.sec.gov/Archives/edgar/data/2126186/000212618626000002/0002126186-26-000002-index.htm"
    },
    {
     "src": "sec",
@@ -17325,22 +17352,6 @@
     "date": "2026-10-20",
     "disclosed": "2026-10-21",
     "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000369/0001510281-26-000369-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "e9d702b0a2004f95",
-    "ticker": "SNX",
-    "company": "TD SYNNEX CORP",
-    "who": "Reyna Thompson",
-    "role": "President",
-    "type": "sell",
-    "value": 604484,
-    "shares": 2433,
-    "price": 248.45,
-    "plan": true,
-    "date": "2026-10-20",
-    "disclosed": "2026-10-21",
-    "link": "https://www.sec.gov/Archives/edgar/data/2051704/000117739426000134/0001177394-26-000134-index.htm"
    }
   ],
   "docs": {
@@ -17398,6 +17409,7 @@
    "0001140361-26-041076",
    "0000947871-26-000963",
    "0001895101-26-000021",
+   "0002126186-26-000002",
    "0001577526-26-000165",
    "0001225208-26-008548",
    "0000950103-26-016314",
@@ -17415,7 +17427,6 @@
    "0001807561-26-000026",
    "0001628280-26-067980",
    "0001505300-26-000016",
-   "0001193125-26-436444",
    "0000708955-26-000202",
    "0001577526-26-000171",
    "0000087347-26-000126",
