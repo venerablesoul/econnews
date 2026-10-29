@@ -1055,7 +1055,10 @@
   "10b7d1c73a6b4e7f": "2026-10-29T14:45:15.735260+00:00",
   "69357465d56bce26": "2026-10-29T14:45:15.735260+00:00",
   "04653cbad7e932c3": "2026-10-29T14:45:15.735260+00:00",
-  "59701f218e7e37f5": "2026-10-29T14:45:15.735260+00:00"
+  "59701f218e7e37f5": "2026-10-29T14:45:15.735260+00:00",
+  "15c2bd47a029ddac": "2026-10-29T14:50:15.638019+00:00",
+  "6b463116d2d8f841": "2026-10-29T14:50:15.638019+00:00",
+  "90aafd65a53e5497": "2026-10-29T14:50:15.638019+00:00"
  },
  "recent": [
   {
@@ -11018,6 +11021,28 @@
    "tags": [
     "ECB"
    ]
+  },
+  {
+   "title": "Monte Paschi Investors Reject Banco BPM Bid in Win For Intesa",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-29/monte-paschi-investors-reject-banco-bpm-bid-in-win-for-intesa",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T14:50:15.638019+00:00",
+   "title_ru": "Инвесторы Monte Paschi отклонили ставку Banco BPM на победу Intesa",
+   "lead": "Banca Monte dei Paschi di Siena SpA’s investors rejected a €25 billion ($27.9 billion) plan to acquire Banco BPM SpA, dealing a major setback to Chief Executive Officer Luigi Lovaglio’s effort to fend off a takeover bid from…",
+   "lead_ru": "Инвесторы Banca Monte dei Paschi di Siena SpA отклонили план на € 25 млрд ($ 27,9 млрд) по приобретению Banco BPM SpA, что стало серьезной неудачей для генерального директора Луиджи Ловальо в попытке отразить предложение о поглощении от..."
+  },
+  {
+   "title": "Central banks take a breather, though more hikes are to come",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQV0g2T005bVN1RWZoZGN4MHc5dU5naW5rWjFTSFo1MWUzOGdueDRMMnI0WGt2aTJTZDJSaHlPc2tweUFHTXZUU3A2YjRLRFdtU0ZOWmxtNVFQeW1zc2R3ZFZ2TXU0SnJkVFVfWmc0aGc3ZVIxMzlaWFZSZTZYUU1teG5aVmY4Q3lyWEJwVVFzZUtCZzdRN2c?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T14:50:15.638019+00:00",
+   "title_ru": "Центральные банки делают передышку, хотя впереди еще несколько походов"
   }
  ],
  "last_digest": "2026-10-28",
@@ -17685,9 +17710,7 @@
    "sec": true
   },
   "checked": "2026-10-29T14:45:15.735260+00:00",
-  "sec_seen": [
-   "0001225208-26-008549"
-  ],
+  "sec_seen": [],
   "errors": {
    "senate": "HTTPError: HTTP Error 503: Service Unavailable"
   }
