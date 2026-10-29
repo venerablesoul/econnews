@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "7151d3cd349e7f3a": "2026-10-26T14:51:22.762924+00:00",
-  "851f5b02e500990f": "2026-10-26T14:51:22.762924+00:00",
-  "b03357ad62dc8cf2": "2026-10-26T14:51:22.762924+00:00",
-  "ae4a2996ddaf2033": "2026-10-26T14:51:22.762924+00:00",
-  "2b6fb4c8a28b8d31": "2026-10-26T14:51:22.762924+00:00",
   "dfcfa1269d27e29c": "2026-10-26T14:56:22.808348+00:00",
   "fffe7c9b9e59b89b": "2026-10-26T15:01:22.833536+00:00",
   "57797c10da3d3bdf": "2026-10-26T15:01:22.833536+00:00",
@@ -1058,7 +1053,11 @@
   "59701f218e7e37f5": "2026-10-29T14:45:15.735260+00:00",
   "15c2bd47a029ddac": "2026-10-29T14:50:15.638019+00:00",
   "6b463116d2d8f841": "2026-10-29T14:50:15.638019+00:00",
-  "90aafd65a53e5497": "2026-10-29T14:50:15.638019+00:00"
+  "90aafd65a53e5497": "2026-10-29T14:50:15.638019+00:00",
+  "497b7be4a5a8766b": "2026-10-29T14:55:15.629002+00:00",
+  "29e25a23fab25b88": "2026-10-29T14:55:15.629002+00:00",
+  "fe8062d1849909d7": "2026-10-29T14:55:15.629002+00:00",
+  "3481c1b09580db88": "2026-10-29T14:55:15.629002+00:00"
  },
  "recent": [
   {
@@ -11043,6 +11042,41 @@
    "score": 3,
    "ts": "2026-10-29T14:50:15.638019+00:00",
    "title_ru": "Центральные банки делают передышку, хотя впереди еще несколько походов"
+  },
+  {
+   "title": "US weekly jobless claims hover near 57-year lows",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOdmxqV3Z1U3hka2I5aWZZbTJGOUE0eWdUR21VSVNUX3BTWllPQ21pUVZtUnZuYVVmRnlTUUdPdUlyVjlBc1JRcFl5SFZ3Ui1LOFJxSmVrZzBYaERQbHJITjZhRy1YZ2IwUlBOdGpUX1pBaXdHY1Jya1dUT041djZPVGlTM3owbFA3eXEzenZHbTZaUUc2cUZndg?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-29T14:55:15.629002+00:00",
+   "title_ru": "Еженедельные заявки на пособие по безработице в США колеблются вблизи 57-летних миниму",
+   "tags": [
+    "jobs"
+   ]
+  },
+  {
+   "title": "Lilly Raises Sales Forecast, Widening Lead in Obesity Market",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPZTJnbHFxeWYyclE0Y2VnLUhseGNhYVVRMi1HcXA3YnotWWM3dWgzRVZGa2FDLS03TlJITGRoWUJoNVBCVHptcXpRQWxEa2xQSWVGSzZSeklYVS1kOURlMzY2b1dhN3d4UF9WWEdvQWhfMGRNdmxEaldqOW0zd3ZCM1IzaHhLRWZTT2VzSmlwUWVnNmNIMWlhMUZvQjdlOVBCa2kybkRwWTFNTXJGbzZPZWNNb0E?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-29T14:55:15.629002+00:00",
+   "title_ru": "Lilly повышает прогноз продаж, расширяя лидерство на рынке ожирения"
+  },
+  {
+   "title": "The South West reacts to Budget announcements",
+   "link": "https://www.bbc.co.uk/news/articles/cm62yle1g2wyo?at_medium=RSS&at_campaign=rss",
+   "sources": [
+    "BBC"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T14:55:15.629002+00:00",
+   "title_ru": "Юго-Запад реагирует на бюджетные объявления",
+   "lead": "Tourism and business leaders have been reacting to John Healey's first Budget as chancellor.",
+   "lead_ru": "Лидеры туризма и бизнеса отреагировали на первый бюджет Джона Хили в качестве канцлера."
   }
  ],
  "last_digest": "2026-10-28",
