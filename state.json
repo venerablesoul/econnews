@@ -1075,7 +1075,12 @@
   "a59dde20223d4765": "2026-10-29T23:53:36.865985+00:00",
   "0bd11d50fb05b0c8": "2026-10-29T23:53:36.865985+00:00",
   "3f63598960fcb1e4": "2026-10-29T23:53:36.865985+00:00",
-  "f730f5f08c6362e8": "2026-10-29T23:53:36.865985+00:00"
+  "f730f5f08c6362e8": "2026-10-29T23:53:36.865985+00:00",
+  "b21edadab74a2d22": "2026-10-29T23:58:36.878431+00:00",
+  "f78885a1b3d1d944": "2026-10-29T23:58:36.878431+00:00",
+  "5dfdfe0847fcfcd9": "2026-10-29T23:58:36.878431+00:00",
+  "89fc9350a3947365": "2026-10-29T23:58:36.878431+00:00",
+  "cf35eb5ae89459c7": "2026-10-29T23:58:36.878431+00:00"
  },
  "recent": [
   {
@@ -11481,6 +11486,71 @@
    "tags": [
     "Russia"
    ]
+  },
+  {
+   "title": "Tokyo Inflation Exceeds BOJ’s 2% Target Before Rate Decision",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-29/tokyo-inflation-exceeds-boj-s-2-target-ahead-of-rate-decision",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 9,
+   "ts": "2026-10-29T23:58:36.878431+00:00",
+   "title_ru": "Инфляция в Токио превысила целевой показатель БАНКА ЯПОНИИ в 2% до принятия решения по ставке",
+   "lead": "The pace of consumer inflation in Tokyo remained well above the Bank of Japan’s 2% target, underscoring persistent price pressures just hours before the central bank’s board is expected to hold its policy settings steady.",
+   "lead_ru": "Темпы потребительской инфляции в Токио оставались значительно выше целевого показателя Банка Японии в 2%, что подчеркивает постоянное ценовое давление всего за несколько часов до того, как ожидается, что правление центрального банка сохранит стабильные параметры своей политики.",
+   "tags": [
+    "rates",
+    "inflation"
+   ]
+  },
+  {
+   "title": "Lagarde quits ECB early to speak on issues outside monetary policy",
+   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5XQW1pRjJaSXFxdnQzMVpDeWxKWVN2bHctRXBqSFV4OWRYYnlfd3RJc21HV3ozZEZiVTZtanNYWV82cDk4aDlULUI0MENrUDg5RldSemc2blF3OE9yN0lodGR1Z3RLazNpY2llajc5ay1xdzNWcVRVOE9R?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 9,
+   "ts": "2026-10-29T23:58:36.878431+00:00",
+   "title_ru": "Лагард досрочно покидает ЕЦБ, чтобы говорить о вопросах, выходящих за рамки денежно-кредитной политики",
+   "tags": [
+    "ECB",
+    "rates"
+   ]
+  },
+  {
+   "title": "Oil Climbs on Signs US May Resume Military Strikes Against Iran",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPbV9tbXFMMlg1cjY2NzhHaWxOS1Y0ZFNYcGhWRFg4RTE1YzhrcW96UDVLdXY2QjNTVG5aajd0ODRhQWVZSFM1X3ZCUVZTbzZpVXhna3F4eF9jcm5aT0ptZkZ1bXRnYzA2TkV3RWNGYm5ta01xODdWRzU2Y1lpY2pHQ1ZCX3hkbDAxcktreEtWSWVWRWV2S2ZMS3BhWGs1QQ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T23:58:36.878431+00:00",
+   "title_ru": "Нефть растет по признакам того, что США могут возобновить военные удары по Ирану",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "Stocks will move 'sideways' through year's end, investor says",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5neVJ6MU53Q2JZMm44MWJsaVF3TFY1TWNoVUlHSzVMdTlDUkZmQnNYbGZoWmJnQWo2cTA1TlhSRVRCZ1JTdlljZ0wyMFY4NGJ1bXlXaHZZU2ljVXM5TmNocEVhWXRsOWM?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T23:58:36.878431+00:00",
+   "title_ru": "Акции будут двигаться «вбок» до конца года, говорит инвестор",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "Amazon’s bold cloud forecast isn’t enough to stave off a stock drop",
+   "link": "https://www.marketwatch.com/story/amazons-bold-cloud-forecast-isnt-enough-to-stave-off-a-stock-drop-ee23c1bb?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-29T23:58:36.878431+00:00"
   }
  ],
  "last_digest": "2026-10-29",
@@ -18169,8 +18239,8 @@
   "checked": "2026-10-29T23:18:36.897027+00:00",
   "sec_seen": [
    "0001193125-26-438479",
-   "0001193125-26-438427",
    "0001193125-26-438480",
+   "0001193125-26-438427",
    "0000950103-26-016447",
    "0001140361-26-041206",
    "0001895106-26-000022",
@@ -18190,10 +18260,10 @@
    "0001193125-26-438722",
    "0001392941-26-000017",
    "0001140361-26-041201",
-   "0000897069-26-001877",
    "0001193125-26-438273",
    "0001193125-26-438275",
    "0001780664-26-000047",
+   "0001492126-26-000013",
    "0000944075-26-000078",
    "0001040470-26-000323",
    "0001130144-26-000062",
@@ -18212,7 +18282,7 @@
    "0000950103-26-016449",
    "0001193125-26-438274",
    "0000899140-26-001161",
-   "0001492126-26-000013",
+   "0000897069-26-001877",
    "0000724004-26-000098"
   ],
   "errors": {
