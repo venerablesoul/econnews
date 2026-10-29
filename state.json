@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "887ef2480631629f": "2026-10-26T15:11:22.727822+00:00",
-  "a9f70dedcc5b9896": "2026-10-26T15:11:22.727822+00:00",
-  "dff26f21e5e1bb26": "2026-10-26T15:11:22.727822+00:00",
-  "2d777c10e4c87cff": "2026-10-26T15:11:22.727822+00:00",
-  "7dac84b8c6c3e52d": "2026-10-26T15:11:22.727822+00:00",
   "8b3e62890f64a43d": "2026-10-26T15:16:22.777559+00:00",
   "dcd223ed9d76747a": "2026-10-26T15:16:22.777559+00:00",
   "cebb0d1140627143": "2026-10-26T15:26:22.762219+00:00",
@@ -1061,31 +1056,10 @@
   "bc56f02d11283c96": "2026-10-29T15:05:16.800156+00:00",
   "1e00c6fc540eb92c": "2026-10-29T15:10:15.780765+00:00",
   "95f6d5517113f2ea": "2026-10-29T15:10:15.780765+00:00",
-  "7a94db72e85ec2e3": "2026-10-29T15:10:15.780765+00:00"
+  "7a94db72e85ec2e3": "2026-10-29T15:10:15.780765+00:00",
+  "835879dae75cef4c": "2026-10-29T15:15:15.766819+00:00"
  },
  "recent": [
-  {
-   "title": "Musk's warning hits neocloud stocks as debt concerns mount",
-   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQaElYSFRZcUVWRmFiRzg0SWRkSENhb0NvTGNLS1gwZnZrU015R3R6NmdiLTE4WDVCeUNkWi1LejFmRXVsUmRmRzQydEEtby1ESzFNY21ZSnhNV1ZhdU9jQ2NMMHBFZlc0anVGcjBBVEVvQU9vdl9RUVRMUmhGSzdRaFdWRmNISTg5WjlqazEwLUdJbjRtYzY3eHlTU0lZRTF4?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-26T15:11:22.727822+00:00",
-   "title_ru": "Предупреждение Маска ударило по акциям neocloud на фоне растущих долговых проблем",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "ЦБ рассказал банкам, как проверять «крупные суммы» россиян",
-   "link": "https://www.rbc.ru/finances/26/10/2026/6adf5eeb3578b97c92e97a73",
-   "sources": [
-    "RBC"
-   ],
-   "score": 2,
-   "ts": "2026-10-26T15:11:22.727822+00:00"
-  },
   {
    "title": "S&P Dow Jones partners with Kalshi for index-based events contracts, use prediction data",
    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOQzU5TzROYXlCRk1Obk1SaDNxVUJDRHd1eGFWaWpDS3FuVXRqTTVtZ3NRX0tKZko0SjZnZGV4b3FuR2hUOVlPZHc0dWszOVZzbzIzSlBYX3REblZnZlFQaGcxZ3VucmxveHhMdGVZSjlRMDFXUlpzSThKc0JxdFV6OFpzTTRHZThhdHFxQWlnOVdzTlJ2WVNwQ2V4S2JrdkgwMFloQi16M2dJbi14Y2I4eUVCM05vb0haRGliRkNQcmxPT0hka0NKNS1R?oc=5",
@@ -11105,6 +11079,19 @@
    "lead_ru": "Стоимость страхования от убытков по долгу Alphabet Inc. выросла в четверг, поскольку ее акции резко упали после того, как неутешительные результаты усилили опасения, что ее огромная ставка на финансируемые за счет долга расходы на ИИ может не окупиться.",
    "tags": [
     "markets"
+   ]
+  },
+  {
+   "title": "Cheniere boosts forecast as Middle East gas disruptions buoy demand for US LNG",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQVEJxaHdoZFhCWkJNNTB5N2NfM1poRUZnbXdzTG9JWktCbTZYekxxeEhHVENOTy1maFRjTjZMYVhCTzB1Sm50cEZFVzlpcGhEYmtxRXhQbU1aTlotNnRlNHVzUUpyOTR1eDl6eXl6amFoVmJYUFBmWmp6UHd0cXNTQkNtR2VuS2NKd2hBN1hnRF9HalpTWmtvdEhjVTQ1LVU?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-29T15:15:15.766819+00:00",
+   "title_ru": "Шеньер повышает прогноз, поскольку перебои с поставками газа на Ближнем Востоке стимулируют спрос на СПГ в США",
+   "tags": [
+    "gas"
    ]
   }
  ],
