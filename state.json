@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "4b11d3dd346fea6c": "2026-10-26T03:28:52.438135+00:00",
   "13cab3f32174f29f": "2026-10-26T03:39:45.872868+00:00",
   "3a3837eaea955759": "2026-10-26T03:44:41.404120+00:00",
   "70311a4245d13fd5": "2026-10-26T03:44:41.404120+00:00",
@@ -1076,24 +1075,10 @@
   "acda9708349e300f": "2026-10-29T03:16:19.828417+00:00",
   "ea23389123533c1b": "2026-10-29T03:21:19.841455+00:00",
   "c88b1300750b0d82": "2026-10-29T03:21:19.841455+00:00",
-  "471a72f4cf51bb7b": "2026-10-29T03:26:19.861582+00:00"
+  "471a72f4cf51bb7b": "2026-10-29T03:26:19.861582+00:00",
+  "00300de0a96b5058": "2026-10-29T03:31:19.831937+00:00"
  },
  "recent": [
-  {
-   "title": "Soybeans Hit 2-Month Low as Lula’s Win Lifts China Trade Outlook",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-26/soybeans-hit-2-month-low-as-lula-s-win-lifts-china-trade-outlook",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T03:28:52.438135+00:00",
-   "title_ru": "Соевые бобы достигли 2-месячного минимума, поскольку выигрыш Лулы улучшает перспективы торговли в Китае",
-   "lead": "Chicago soybean futures fell to a two-month low after Lula’s presidential win in Brazil raised expectations of closer ties with China, potentially eroding the US share of the world’s biggest soybean import market.",
-   "lead_ru": "Фьючерсы на сою в Чикаго упали до двухмесячного минимума после того, как победа Лулы на президентских выборах в Бразилии повысила ожидания более тесных связей с Китаем, что потенциально может подорвать долю США на крупнейшем в мире рынке импорта сои.",
-   "tags": [
-    "China"
-   ]
-  },
   {
    "title": "Copper Extends Drop as AI Stocks Weigh Ahead of Fed Meeting",
    "link": "https://www.bloomberg.com/news/articles/2026-10-26/copper-extends-drop-as-ai-stocks-weigh-ahead-of-fed-meeting",
@@ -10690,6 +10675,18 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Prediction Markets Avoid Australia’s Tough Line on Gambling",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-29/prediction-markets-avoid-australia-s-tough-line-on-gambling",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T03:31:19.831937+00:00",
+   "title_ru": "Рынки предсказаний избегают жесткой линии Австралии в отношении азартных игр",
+   "lead": "Australia’s corporate regulator has not received a single application from a prediction market provider to operate in the country, where such platforms would likely face gambling rather than financial regulations.",
+   "lead_ru": "Корпоративный регулятор Австралии не получил ни одной заявки от провайдера рынка прогнозов на работу в стране, где такие платформы, скорее всего, столкнутся с азартными играми, а не с финансовыми правилами."
   }
  ],
  "last_digest": "2026-10-28",
