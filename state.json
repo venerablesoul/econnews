@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "74170627eb451503": "2026-10-26T12:05:24.141530+00:00",
   "e1f9fc13c592e5b3": "2026-10-26T12:10:24.133371+00:00",
   "914da9fdcffebbb8": "2026-10-26T12:10:24.133371+00:00",
   "0113200875574a92": "2026-10-26T12:15:24.312128+00:00",
@@ -1027,24 +1026,13 @@
   "28049f23130f8f5a": "2026-10-29T12:01:43.435051+00:00",
   "28d7e22d13123788": "2026-10-29T12:01:43.435051+00:00",
   "8b85d2a09c31295a": "2026-10-29T12:01:43.435051+00:00",
-  "4adec1d3834f6e67": "2026-10-29T12:01:43.435051+00:00"
+  "4adec1d3834f6e67": "2026-10-29T12:01:43.435051+00:00",
+  "6598dadb35df2bed": "2026-10-29T12:06:43.397127+00:00",
+  "fc642084392586f9": "2026-10-29T12:06:43.397127+00:00",
+  "4cf11f7145d2adfe": "2026-10-29T12:06:43.397127+00:00",
+  "3d50a4f55e858bb0": "2026-10-29T12:06:43.397127+00:00"
  },
  "recent": [
-  {
-   "title": "Trump’s tariff salesman and election politics of trade",
-   "link": "https://www.bloomberg.com/news/newsletters/2026-10-26/trump-s-tariff-salesman-and-election-politics-of-trade",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 7,
-   "ts": "2026-10-26T12:05:24.141530+00:00",
-   "title_ru": "Продавец тарифов Трампа и предвыборная торговая политика",
-   "lead": "USTR Jamieson Greer sees the short-term pain of tariffs as overblown, touting longer-term gains",
-   "lead_ru": "Торговый представитель США Джеймисон Грир считает, что краткосрочная боль от тарифов преувеличена, и рекламирует долгосрочные выгоды.",
-   "tags": [
-    "tariffs"
-   ]
-  },
   {
    "title": "Nvidia, AMD and Broadcom could buy Meta shares as part of $35 billion stock offering",
    "link": "https://www.marketwatch.com/story/nvidia-amd-and-broadcom-could-buy-meta-shares-as-part-of-35-billion-stock-offering-d816fec2?mod=mw_rss_topstories",
@@ -10675,6 +10663,47 @@
    ],
    "score": 2,
    "ts": "2026-10-29T12:01:43.435051+00:00"
+  },
+  {
+   "title": "Investors Buy Rogers (RCI), BCE, Telus Stocks After Canada Telecom Selloff",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-29/investors-buy-rogers-rci-bce-telus-stocks-after-canada-telecom-selloff",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 8,
+   "ts": "2026-10-29T12:06:43.397127+00:00",
+   "title_ru": "Инвесторы покупают акции Rogers (RCI), Bce, Telus после распродажи Canada Telecom",
+   "lead": "Investors are bargain hunting in Canadian telecommunication stocks after rising government-bond yields and competition from SpaceX sparked steep declines in the group.",
+   "lead_ru": "Инвесторы охотятся за канадскими телекоммуникационными акциями после того, как рост доходности государственных облигаций и конкуренция со стороны SpaceX вызвали резкое снижение в группе.",
+   "tags": [
+    "bonds",
+    "markets"
+   ]
+  },
+  {
+   "title": "Sinopec's third-quarter profit jumps 57% on higher oil prices, refining margins",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOaW5ETTZNdWJMSFRsSXZfOWNfLXN0SHdQQmVRajBPVWtqWllNNlZsc3ZVZWhnVDhkczlPcHk2YWZ0dno3VXBtWi1HTEk4U0toZGFSWkZ1Q0xIRVZyeUxBNlBlUzY0dC1vMUZISW41RzkwM3FONnZkcnpvZDFEb2VBVk9Ca1Uyd1R2YUxkVm5adm80MmtUaDE2RklnSlRFNTFndXRjbWhKRlZ4bjRud09mY3FMTlJmTDhhVXY3aktUZVpQVUU?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-29T12:06:43.397127+00:00",
+   "title_ru": "Прибыль Sinopec в третьем квартале подскочила на 57% на фоне более высоких цен на нефть, что привело к увеличению маржи нефтепереработки",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "EU Must Act to Curb Power Bills as Costs Surge, Trade Body Says",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-29/eu-must-act-to-curb-power-bills-as-costs-surge-trade-body-says",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T12:06:43.397127+00:00",
+   "title_ru": "ЕС должен действовать, чтобы обуздать счета за электроэнергию, поскольку расходы растут, говорит торговый орган",
+   "lead": "Europe must do more to bring down power bills for consumers as wholesale costs soar to levels last seen during the 2022 energy crisis, Eurelectric said.",
+   "lead_ru": "Европа должна сделать больше, чтобы снизить счета за электроэнергию для потребителей, поскольку оптовые расходы взлетели до уровней, которые в последний раз наблюдались во время энергетического кризиса 2022 года, сказал Eurelectric."
   }
  ],
  "last_digest": "2026-10-28",
@@ -17354,7 +17383,6 @@
    "0001493152-26-049173",
    "0001193125-26-436875",
    "0001193125-26-436877",
-   "0001671190-26-000008",
    "0001493152-26-049175",
    "0001493152-26-049183",
    "0001104659-26-119782",
