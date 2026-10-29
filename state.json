@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "b2f83959f7823a85": "2026-10-26T09:25:24.146578+00:00",
-  "92092bbd250ae3bc": "2026-10-26T09:25:24.146578+00:00",
   "c6e2cd87793b1a30": "2026-10-26T09:35:24.244114+00:00",
   "a598a1a8273e52f9": "2026-10-26T09:35:24.244114+00:00",
   "b394f5f216553cd5": "2026-10-26T09:35:24.244114+00:00",
@@ -1029,19 +1027,11 @@
   "8cd9df68d85b01d3": "2026-10-29T08:26:43.365056+00:00",
   "9ad1a25d903016ac": "2026-10-29T08:46:43.360671+00:00",
   "abf5dbff786db7d3": "2026-10-29T09:01:43.439734+00:00",
-  "97b6799f20ddd115": "2026-10-29T09:11:43.389641+00:00"
+  "97b6799f20ddd115": "2026-10-29T09:11:43.389641+00:00",
+  "a977c5953f606ee7": "2026-10-29T09:31:43.378808+00:00",
+  "d30edcb80ad676b3": "2026-10-29T09:31:43.378808+00:00"
  },
  "recent": [
-  {
-   "title": "Singapore Shields Itself From Energy Risks as Indonesia Cuts Gas",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOQVFQQTh3Um5GaFI2WnQ0VE5rb2h5NHlsa01Pb1VyRTE1SC1WMEtxNnBfZTdvaF9uUnJJUGc5MGtqdFR1Wk1leHpaZ2VKZmF5Vm52bTE0VmoxN2ZuNFFSZ044MktWZVhteUs5Q3JpM2VRZExjQkc4UGp4bnJHVThDMENRXzQ1Zk45M0txc19GLXJoRDNBOERWal9WTnhhTTh3cGFKSlY1bFBGSFZkTG9vY0VxdW9xUQ?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T09:25:24.146578+00:00",
-   "title_ru": "Сингапур защищает себя от энергетических рисков, поскольку Индонезия сокращает газ"
-  },
   {
    "title": "UK hostel operator Safestay exploring more property sales to boost liquidity, shares tumble",
    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNRVVQVnlZOGhXS1hPVjdLLXg5NEFBYUxMeF82UEQ1SUhWcWx1Ym9EZXYyMEhLRE9kUTZKZzl3emVNR3lRa1Myb0RaQm5FVjJJRlZaSlQtTmFFYUpjUW8ya3gtSTdQYlB2bFZnTWtVUk9oZVktb3A4ZFRHS0lFd0Zua01xdzNFb2hpSnRrb0RqbVE2UEtFOFlrUWxrVUxDQ1Utamwxc0ZtWml4dnpjZzNnOHY3V1FSdXNQM2RXTFJqS3dYb28?oc=5",
@@ -10645,6 +10635,16 @@
     "Fed",
     "rates"
    ]
+  },
+  {
+   "title": "Spanish rescuers search trains in hope of finding survivors of deadly crash",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPYm9UODU2NnZwekhXd0lSNnVsalJxQmNPbllDOEJBdllTdUwyTFFwY2NIb0F5YXBfWWgzVmxLUUNIV2JnTXgyY2tZNEZGUy1pVTRxT2ozdGFJMXFSck40ZFhKNC1LRXBMQ0ZXd2NHbWg0bk1FT1IwM3oyNHVMbTZJTnB0SjBaeTFwLW1ncFVzUElyWFpVeG5BQ0E4b3g5Sk5wY1BiME5FUGVHN0ZPNWpZQ3lRWGVwUQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-29T09:31:43.378808+00:00",
+   "title_ru": "Испанские спасатели обыскивают поезда в надежде найти выживших в смертельной катастрофе."
   }
  ],
  "last_digest": "2026-10-28",
@@ -17306,7 +17306,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-29T08:31:43.343646+00:00",
+  "checked": "2026-10-29T09:31:43.378808+00:00",
   "sec_seen": [
    "0001577526-26-000173",
    "0000933029-26-000004",
