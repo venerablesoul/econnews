@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "aaa0d6a672684ccf": "2026-10-26T17:11:22.962456+00:00",
   "63ddd9d0a691cefa": "2026-10-26T17:21:22.772605+00:00",
   "b7ef2c4e05366a49": "2026-10-26T17:26:23.787700+00:00",
   "1f2ba21d6e4a6585": "2026-10-26T17:51:23.853947+00:00",
@@ -1056,24 +1055,11 @@
   "952c2d13498b7221": "2026-10-29T16:55:15.688082+00:00",
   "f1fd97f79bbe6dbd": "2026-10-29T17:00:15.768853+00:00",
   "3c03d83689d83fbf": "2026-10-29T17:10:15.897439+00:00",
-  "988836e729aa99f2": "2026-10-29T17:10:15.897439+00:00"
+  "988836e729aa99f2": "2026-10-29T17:10:15.897439+00:00",
+  "8f8e6f32db8824c3": "2026-10-29T17:15:15.787354+00:00",
+  "6817c777c92886b8": "2026-10-29T17:15:15.787354+00:00"
  },
  "recent": [
-  {
-   "title": "Эр-Рияд спрячет нефть в пещерах в Азии из-за перебоев поставок. Фото",
-   "link": "https://www.rbc.ru/economics/26/10/2026/6adf686ccde96ff2fe37d396",
-   "sources": [
-    "RBC"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T17:11:22.962456+00:00",
-   "title_en": "Riyadh will hide oil in caves in Asia due to supply disruptions. Photo",
-   "lead": "Саудовскую нефть с 2027 года будут хранить в каменных пещерах у побережья Сингапура. Хранилище способно вместить до 9 млн барр. нефти. Эр-Рияд ищет хранилища в других странах из-за атак хуситов и закрытия Ормузского пролива",
-   "lead_en": "Saudi oil will be stored in rock caves off the coast of Singapore from 2027. The storage facility can hold up to 9 million barrels. oil. Riyadh is looking for storage facilities in other countries due to Houthi attacks and the closure of the Strait of Hormuz",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "NBA Reaches Deal With Prediction Markets Kalshi and Polymarket",
    "link": "https://www.bloomberg.com/news/articles/2026-10-26/nba-reaches-deal-with-prediction-markets-kalshi-and-polymarket",
@@ -11107,6 +11093,26 @@
    ],
    "score": 1,
    "ts": "2026-10-29T17:10:15.897439+00:00"
+  },
+  {
+   "title": "Mastercard Earnings Top Estimates on Higher Consumer Spending",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQdV9wQUxQSDM2Zm5oWDlPYnFuVzVmUW54cWZTZFR6ajFJaW1aRzVka1Z1SXdib085eUhZdkZQOHh4dkFIdW1UQXlvZHdwMVM0MmZ0dGsyUHFIQW03TjdRS1lHU09vSVQzd3diZzZSTHM0UlFZUDVGYXo5VllQSmVXWjJrTWEwckFLRzVUaGR2RWpRMUlqZUE2eFVlOEJoNzlLQTlxTEZ2YWMtXzJCZjhtQkZB?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-29T17:15:15.787354+00:00",
+   "title_ru": "Лучшие оценки доходов Mastercard по более высоким потребительским расходам"
+  },
+  {
+   "title": "Bristol Myers raises 2026 revenue forecast, lowers EPS due to charge",
+   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQMUsxVWJHRFV1Rmt3WHBDRTRMc3Z5YXk5ZElTTTBEbF9xZUR3VXJyWTV5OXF0aG1kZEkzVnhuTWppTWN0ejVNdk90b3ZienYzQXNqc0xOWWFLS1hXQkswdDR3REVyWE15RXhoYmNSUWxhOVREaXdINTlXczdZSWdGamhRVGF4Z2gtYlVRY0ZVYmFhYTdfb0JKZnQzUnJBWWJlbk9wdzZTaXoyeE95UktWUl9IZ0hYV2RYcGtpTXV1d25FbUlZOWlSTjNhVzBDU1p3b2c?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T17:15:15.787354+00:00",
+   "title_ru": "Bristol Myers повышает прогноз выручки на 2026 год, снижает EPS из-за сборов"
   }
  ],
  "last_digest": "2026-10-28",
@@ -17774,7 +17780,9 @@
    "sec": true
   },
   "checked": "2026-10-29T16:50:15.702153+00:00",
-  "sec_seen": [],
+  "sec_seen": [
+   "0000001750-26-000108"
+  ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
   }
