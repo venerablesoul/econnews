@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "726d52066e1e2195": "2026-10-26T20:32:01.227464+00:00",
   "75f8d5efb725d7ec": "2026-10-26T20:37:01.308493+00:00",
   "857545c9e3b69ef5": "2026-10-26T20:37:01.308493+00:00",
   "3359c1478085ce57": "2026-10-26T21:02:01.213311+00:00",
@@ -1066,22 +1065,13 @@
   "671fdf8bba6dd2e9": "2026-10-29T20:18:36.881383+00:00",
   "31867f4b04eec168": "2026-10-29T20:18:36.881383+00:00",
   "dc73ba541a42aeaa": "2026-10-29T20:18:36.881383+00:00",
-  "0e98c96723d16ab3": "2026-10-29T20:23:37.075738+00:00"
+  "0e98c96723d16ab3": "2026-10-29T20:23:37.075738+00:00",
+  "4328c4886a15bdc0": "2026-10-29T20:28:36.884129+00:00",
+  "d5f01f9dd738c00b": "2026-10-29T20:33:36.867577+00:00",
+  "a4fdb9f4b3e7d55b": "2026-10-29T20:33:36.867577+00:00",
+  "07f32b49bde492af": "2026-10-29T20:33:36.867577+00:00"
  },
  "recent": [
-  {
-   "title": "EXCLUSIVE: US, Canada working on deal to ease steel, auto tariffs, sources say",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQU1JXYWUtZ2l1TGNtSDlwbkN6SkxUR1RxaWZjQnFpNk8yTzBuLTR5OEUxQ296SmZEd3dDS25tMjh1eW5hRGg4X1gtVUpVQi1UbWIyYXpJQmh6NGxpX011WWlEYWh0Z3FKRm55UUl6UnpKUTZmM3lhUElLNUVIb0tkWDBYVkI1LXI2aWxwT1Q2aUpSZjhOcUVxaTByX21WVlExQVE?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-26T20:32:01.227464+00:00",
-   "title_ru": "Эксклюзив: США и Канада работают над сделкой по снижению тарифов на сталь и автомобили, говорят источники",
-   "tags": [
-    "tariffs"
-   ]
-  },
   {
    "title": "Sterling drops against euro and dollar ahead of UK budget",
    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOTG1zRmxKejNRVlA2Mm5HTHNDb0g3T3lWVTdYLVRlQWhDamFWbDZrMXp2MmNyZnMtOS1uUDVqZ0RYX2VxWkRwTm55LTAyX0MzUVBWUGE0RVBwRW1LQi1zZ25DX0I2em5jamZRV0lkQWxIS3lyV2VodjJGTldOdzlOLTM0SWdORlBhV2JuNzd1cnFrUDRKZm9SYmNvZw?oc=5",
@@ -11425,6 +11415,53 @@
    "tags": [
     "jobs"
    ]
+  },
+  {
+   "title": "The stock market’s best forecasting tool says returns over the next 10 years will be dismal",
+   "link": "https://www.marketwatch.com/story/the-stock-markets-best-forecasting-tool-says-returns-over-the-next-10-years-will-be-dismal-f94fcd87?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-29T20:28:36.884129+00:00"
+  },
+  {
+   "title": "Federal Reserve Board announces approval of application by The Bank of Nova Scotia",
+   "link": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261029a.htm",
+   "sources": [
+    "Fed"
+   ],
+   "score": 5,
+   "ts": "2026-10-29T20:33:36.867577+00:00",
+   "title_ru": "Совет Федеральной резервной системы объявляет об одобрении заявки Банка Новой Шотландии",
+   "tags": [
+    "Fed"
+   ]
+  },
+  {
+   "title": "Consumer Expenditure Surveys 2025 Annual Data Release",
+   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1wYVFFUF9vU1otUXhmMU53VFZzOFRMR2JWUVpzcF80NDgtVFFlMlBDN0xKQjNkSGMwTVl2OVVBc3drTTdJMkFSSW9PSmJSZ3dDZi12bm9fMXpuN3lpaG1LZHNkcnMwZm1HbUtMU0F4OC1tTzg?oc=5",
+   "sources": [
+    "US Labor Statistics (BLS)"
+   ],
+   "score": 5,
+   "ts": "2026-10-29T20:33:36.867577+00:00",
+   "title_ru": "Ежегодный выпуск данных исследований потребительских расходов за 2025 год"
+  },
+  {
+   "title": "Issuers Come to Market When Window Opens: CreditSights' Cisar",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-29/issuers-come-to-market-when-window-opens-cisar-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T20:33:36.867577+00:00",
+   "title_ru": "Эмитенты выходят на рынок, когда открывается окно: Цисар из CreditSights",
+   "lead": "Amanda Lynam, chief credit strategist at Goldman Sachs, and Winnie Cisar, global head of credit strategy at CreditSights, joins Scarlet Fu on \"Bloomberg Real Yield.\" Microsoft drew blowout demand for its $25 billion bond offering.",
+   "lead_ru": "Аманда Линам, главный кредитный стратег Goldman Sachs, и Винни Сисар, руководитель глобальной кредитной стратегии CreditSights, присоединяются к Скарлет Фу в программе «Реальная доходность Bloomberg». Microsoft привлекла огромный спрос на размещение облигаций на сумму 25 миллиардов долларов.",
+   "tags": [
+    "bonds"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -14312,6 +14349,22 @@
    },
    {
     "src": "sec",
+    "id": "dcd5c850d412478a",
+    "ticker": "UTHR",
+    "company": "UNITED THERAPEUTICS Corp",
+    "who": "Martine A Rothblatt",
+    "role": "CEO",
+    "type": "sell",
+    "value": 5562190,
+    "shares": 9500,
+    "price": 585.49,
+    "plan": true,
+    "date": "2026-10-28",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/1106578/000110657826000174/0001106578-26-000174-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "4149df768ae321c5",
     "ticker": "BMN",
     "company": "BlackRock 2037 Municipal Target Term Trust",
@@ -14389,6 +14442,38 @@
     "date": "2026-10-27",
     "disclosed": "2026-10-29",
     "link": "https://www.sec.gov/Archives/edgar/data/1717115/000111435726000042/0001114357-26-000042-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "5ff4d38d56aa6dc8",
+    "ticker": "UPBD",
+    "company": "UPBOUND GROUP, INC.",
+    "who": "Jeffrey J Brown",
+    "role": "Director",
+    "type": "buy",
+    "value": 47016,
+    "shares": 2764,
+    "price": 17.01,
+    "plan": false,
+    "date": "2026-10-27",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/1245377/000119312526437864/0001193125-26-437864-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "56bcaa91e62824a0",
+    "ticker": "STRZ",
+    "company": "STARZ ENTERTAINMENT CORP /CN/",
+    "who": "Allen Family Capital, Llc et al.",
+    "role": "10% owner",
+    "type": "sell",
+    "value": 44914268,
+    "shares": 1803786,
+    "price": 24.9,
+    "plan": false,
+    "date": "2026-09-29",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/2107521/000149315226049283/0001493152-26-049283-index.htm"
    },
    {
     "src": "sec",
@@ -18021,54 +18106,6 @@
     "date": "2026-10-20",
     "disclosed": "2026-10-22",
     "link": "https://www.sec.gov/Archives/edgar/data/1888935/000188893526000028/0001888935-26-000028-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "1fcc805ac0844ee7",
-    "ticker": "PRCH",
-    "company": "Porch Group, Inc.",
-    "who": "Matthew Neagle",
-    "role": "COO",
-    "type": "sell",
-    "value": 562966,
-    "shares": 31250,
-    "price": 18.01,
-    "plan": true,
-    "date": "2026-10-20",
-    "disclosed": "2026-10-22",
-    "link": "https://www.sec.gov/Archives/edgar/data/1837336/000183733626000050/0001837336-26-000050-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "8be5b89d962f9ffe",
-    "ticker": "AMT",
-    "company": "AMERICAN TOWER CORP /MA/",
-    "who": "Teresa Hillary Clarke",
-    "role": "Director",
-    "type": "buy",
-    "value": 63718,
-    "shares": 338,
-    "price": 188.38,
-    "plan": false,
-    "date": "2026-10-20",
-    "disclosed": "2026-10-22",
-    "link": "https://www.sec.gov/Archives/edgar/data/1875332/000105350726000151/0001053507-26-000151-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "b8568d12f19a1aa9",
-    "ticker": "AAPL",
-    "company": "Apple Inc.",
-    "who": "Jennifer Newstead",
-    "role": "SVP, GC and Government Affairs",
-    "type": "sell",
-    "value": 814748,
-    "shares": 2399,
-    "price": 339.62,
-    "plan": true,
-    "date": "2026-10-20",
-    "disclosed": "2026-10-22",
-    "link": "https://www.sec.gov/Archives/edgar/data/1780525/000114036126040540/0001140361-26-040540-index.htm"
    }
   ],
   "docs": {
@@ -18112,21 +18149,22 @@
   },
   "checked": "2026-10-29T20:08:36.874831+00:00",
   "sec_seen": [
-   "0001130416-26-000005",
-   "0001837817-26-000021",
-   "0001524472-26-000150",
-   "0001231919-26-001508",
-   "0001628280-26-068258",
-   "0001123292-26-001449",
-   "0001628280-26-068249",
-   "0000891839-26-000472",
-   "0001049521-26-000088",
-   "0000086312-26-000194",
-   "0000944269-26-000006",
-   "0001493152-26-049274",
-   "0001114357-26-000042",
+   "0001604682-26-000004",
+   "0001193125-26-437864",
+   "0001193125-26-437865",
+   "0001193125-26-437863",
+   "0001106578-26-000174",
+   "0001104659-26-120222",
+   "0001213900-26-113840",
+   "0001104659-26-120227",
+   "0001783879-26-000173",
+   "0001493152-26-049283",
+   "0001104659-26-120229",
+   "0001193125-26-437861",
+   "0001193125-26-437862",
+   "0000923120-26-000033",
    "0002048500-26-000015",
-   "0001193125-26-437816"
+   "0001193125-26-437855"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
