@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "8e9e4a8f3bcf51d1": "2026-10-26T13:20:24.212848+00:00",
-  "695354c58af95b9e": "2026-10-26T13:20:24.212848+00:00",
   "cec9bffaf507da6d": "2026-10-26T13:25:24.207876+00:00",
   "f186b5fb5d5a75a8": "2026-10-26T13:25:24.207876+00:00",
   "3237e488c7ee7ddb": "2026-10-26T13:25:24.207876+00:00",
@@ -1037,22 +1035,11 @@
   "fda9b7c5534f9232": "2026-10-29T13:06:43.684864+00:00",
   "904be2ae7ce3d573": "2026-10-29T13:11:43.481049+00:00",
   "4323cf955c799146": "2026-10-29T13:11:43.481049+00:00",
-  "8be498015a196c08": "2026-10-29T13:16:43.545939+00:00"
+  "8be498015a196c08": "2026-10-29T13:16:43.545939+00:00",
+  "68afd8722dec3a81": "2026-10-29T13:25:15.720927+00:00",
+  "844fe7b872b37ee3": "2026-10-29T13:25:15.720927+00:00"
  },
  "recent": [
-  {
-   "title": "FTSE 100 rises as falling oil prices boost risk appetite",
-   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOa3RuN1E2czJLWGVWa0NLOTlTZzlNdVI2MzFnclRUZ3l0c0pRWS15MWdQUHJBMlBEdjI3U3ZtUzJVTU5OR0Q0MFlDS0JCdlI4c3I5dE90MjI1Tzk5MWtnYjZXNDJ4bkdnU20yMXVBeEpZc2JQai1ZQ0lydmd2U3lDVlZRblhSaWdGSGFaQ3dxWms0X3VBVWU4QjRGa2xzU3M?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-26T13:20:24.212848+00:00",
-   "title_ru": "Индекс FTSE 100 растет, поскольку падение цен на нефть повышает склонность к риску",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "COMMENTARY: Nice earnings forecasts you have. Shame if something happened to them",
    "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNME92MEFjQ2FZazN4di1xaHljdUF4RC14cnFHSVlVYUFsM0IwUEJaZXExc2VsbFhEOUhZT1FUaUVCVllXM1k5UVVRSlZoaEEtQzM1TFFPaHZUdExJYWRpS21xd2ZkRjM1RHZCMlhndkVsQjJfZHg1X0lHbmd2b1R1QW11RVRydnVDZlM0UjFWUGtSWWJWLVMtdVE2aGtxWVVJTzJuLWNaajFPcjJKXzJfTjY0WUtvR1Nlalk0N3g0MWotZ1c2cnBPaHNFaXhUOXQtSEJHZzRHOVl5QQ?oc=5",
@@ -10821,6 +10808,36 @@
    "tags": [
     "rates"
    ]
+  },
+  {
+   "title": "ECB Holds Rates as Lagarde Exit Compounds Alarm Over Oil, France",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-29/ecb-holds-rates-as-lagarde-exit-compounds-alarm-over-oil-france",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 8,
+   "ts": "2026-10-29T13:25:15.720927+00:00",
+   "title_ru": "ЕЦБ удерживает ставки, поскольку Lagarde Exit Compounds сигнализирует о нефти, Франция",
+   "lead": "The European Central Bank kept interest rates unchanged as news that President Christine Lagarde will step down early added to concern over energy costs and France.",
+   "lead_ru": "Европейский центральный банк оставил процентные ставки без изменений, поскольку новость о том, что президент Кристин Лагард уйдет в отставку раньше, добавила беспокойства по поводу затрат на энергоносители и Франции.",
+   "tags": [
+    "ECB",
+    "rates",
+    "oil"
+   ]
+  },
+  {
+   "title": "European Central Bank keeps key interest rate on hold at 2.5%",
+   "link": "https://www.cnbc.com/2026/10/29/european-central-bank-interest-rates.html",
+   "sources": [
+    "CNBC"
+   ],
+   "score": 5,
+   "ts": "2026-10-29T13:25:15.720927+00:00",
+   "title_ru": "Европейский центральный банк удерживает ключевую процентную ставку на уровне 2,5%",
+   "tags": [
+    "rates"
+   ]
   }
  ],
  "last_digest": "2026-10-28",
@@ -17489,27 +17506,25 @@
   },
   "checked": "2026-10-29T12:41:43.408333+00:00",
   "sec_seen": [
-   "0001493152-26-049161",
-   "0001628280-26-068025",
-   "0001493152-26-049164",
-   "0001513845-26-000143",
-   "0001193125-26-437062",
-   "0001628280-26-068031",
-   "0001193125-26-436886",
+   "0001770870-26-000012",
    "0001493152-26-049173",
-   "0001628280-26-068056",
-   "0001193125-26-436877",
-   "0001493152-26-049175",
-   "0001493152-26-049183",
-   "0001493152-26-049156",
-   "0001437749-26-033849",
-   "0001628280-26-068033",
+   "0001493152-26-049164",
+   "0001493152-26-049167",
+   "0001628280-26-068019",
+   "0001628280-26-068025",
    "0001493152-26-049170",
    "0001628280-26-068012",
-   "0001770870-26-000012",
+   "0001193125-26-437062",
+   "0001493152-26-049183",
+   "0001213900-26-113597",
    "0001628280-26-068016",
-   "0001493152-26-049167",
-   "0001628280-26-068019"
+   "0001628280-26-068031",
+   "0001493152-26-049156",
+   "0001493152-26-049161",
+   "0001513845-26-000143",
+   "0001493152-26-049175",
+   "0001628280-26-068033",
+   "0001628280-26-068056"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
