@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "bcbfbd1e7420d795": "2026-10-26T23:02:01.230282+00:00",
-  "f6cf58464b22f25f": "2026-10-26T23:07:01.287097+00:00",
-  "c6c2c52d68e74132": "2026-10-26T23:07:01.287097+00:00",
   "a5753e9c2974ee7b": "2026-10-26T23:12:01.243608+00:00",
   "e5e49692674858b8": "2026-10-26T23:12:01.243608+00:00",
   "b17fbe9158d9df70": "2026-10-26T23:17:01.156957+00:00",
@@ -1076,19 +1073,6 @@
   "247a557e602dfbbb": "2026-10-29T22:58:37.139272+00:00"
  },
  "recent": [
-  {
-   "title": "GDP per capita, current prices",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBYeUlrYkNZZktTVlBmMnBZa2pPeXAta2tjemVWcVhOdEJpMUgzT1Mtb1hzNXgzOGp4REkzVDQ5bEhITjg4VHJJVUZLVHlDUmx5NGdmclRHSXBIVDR5R0JYSVJOWkZhRThic1JrNw?oc=5",
-   "sources": [
-    "IMF"
-   ],
-   "score": 7,
-   "ts": "2026-10-26T23:07:01.287097+00:00",
-   "title_ru": "ВВП на душу населения в текущих ценах",
-   "tags": [
-    "GDP"
-   ]
-  },
   {
    "title": "Lula’s Win Shocked the World, Especially Markets",
    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNcVRPTElqa0hCVGJTbzRuU1BxVk9MV2s4dVhXdmFub3ZsdXBqcGpGdkU2U2RqaXRQVDJ0d2dKTnhTZ0x2Y3c1MzNfdDRVYUJDZi01VE85Wi04ZW42eGFwRm1GM0NkdmQxRE1Nck11eE1FS2p2b3VyYThUYkVQNTU5d1Jsa2JlOFh4S2htZTBlRGxsWGFNcGhETXFnc2xLVGRFMnhqQjhIQUFmZUVYQmthUHF3?oc=5",
@@ -14777,6 +14761,22 @@
    },
    {
     "src": "sec",
+    "id": "55704e8d46e17e57",
+    "ticker": "ARCC",
+    "company": "ARES CAPITAL CORP",
+    "who": "Mary Beth Henson",
+    "role": "Director",
+    "type": "buy",
+    "value": 46150,
+    "shares": 2500,
+    "price": 18.46,
+    "plan": false,
+    "date": "2026-10-28",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/1916183/000162828026068348/0001628280-26-068348-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "4149df768ae321c5",
     "ticker": "BMN",
     "company": "BlackRock 2037 Municipal Target Term Trust",
@@ -18166,22 +18166,6 @@
     "date": "2026-10-22",
     "disclosed": "2026-10-22",
     "link": "https://www.sec.gov/Archives/edgar/data/2030833/000203083326000004/0002030833-26-000004-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "11e16a9e837f0c2e",
-    "ticker": "BB",
-    "company": "BLACKBERRY Ltd",
-    "who": "John Joseph Giamatteo",
-    "role": "CEO",
-    "type": "sell",
-    "value": 2284660,
-    "shares": 250000,
-    "price": 9.14,
-    "plan": false,
-    "date": "2026-10-22",
-    "disclosed": "2026-10-22",
-    "link": "https://www.sec.gov/Archives/edgar/data/1234080/000107023526000139/0001070235-26-000139-index.htm"
    }
   ],
   "docs": {
@@ -18241,6 +18225,7 @@
    "0001368054-26-000004",
    "0000944075-26-000077",
    "0001669883-26-000003",
+   "0001628280-26-068348",
    "0001510281-26-000393",
    "0001895111-26-000021",
    "0000950103-26-016445",
@@ -18253,7 +18238,6 @@
    "0001193125-26-438275",
    "0001492126-26-000013",
    "0000944075-26-000078",
-   "0001193125-26-438188",
    "0001040470-26-000323",
    "0001130144-26-000062",
    "0001178579-26-000022",
