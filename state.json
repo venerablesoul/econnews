@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c01b6554dcc79fe1": "2026-10-26T13:45:24.292760+00:00",
-  "fcfb3b74c7b92c52": "2026-10-26T13:45:24.292760+00:00",
   "2eb54c153271dd49": "2026-10-26T14:25:24.256601+00:00",
   "f024e49411a5cdfc": "2026-10-26T14:30:24.216515+00:00",
   "a7e71e4915fe82b2": "2026-10-26T14:30:24.216515+00:00",
@@ -1035,34 +1033,14 @@
   "b6f4e5ce7470ab74": "2026-10-29T13:40:15.625628+00:00",
   "208067f4e3d37246": "2026-10-29T13:40:15.625628+00:00",
   "546d1ea894bf24e7": "2026-10-29T13:45:15.716444+00:00",
-  "d4101e294a1f2a86": "2026-10-29T13:45:15.716444+00:00"
+  "d4101e294a1f2a86": "2026-10-29T13:45:15.716444+00:00",
+  "44731a85bcc339ef": "2026-10-29T13:50:15.699412+00:00",
+  "4e43609615cd3d15": "2026-10-29T13:50:15.699412+00:00",
+  "2331038f81132541": "2026-10-29T13:50:15.699412+00:00",
+  "8b4dc6d6f4c77e6d": "2026-10-29T13:50:15.699412+00:00",
+  "9c54a10fb9afc4da": "2026-10-29T13:50:15.699412+00:00"
  },
  "recent": [
-  {
-   "title": "Saudi Aramco Nears Signing of $10 Billion Loan with Global Banks",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-26/saudi-aramco-nears-signing-of-10-billion-loan-with-global-banks",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-26T13:45:24.292760+00:00",
-   "title_ru": "Saudi Aramco близка к подписанию кредита на 10 миллиардов долларов с мировыми банками",
-   "lead": "Saudi Arabian state-backed oil company Aramco is nearing agreement with international banks on a $10 billion loan that would bolster its finances as conflicts in the Middle East threaten crude exports.",
-   "lead_ru": "Поддерживаемая государством нефтяная компания Саудовской Аравии Aramco приближается к соглашению с международными банками о кредите в 10 миллиардов долларов, который укрепит ее финансы, поскольку конфликты на Ближнем Востоке угрожают экспорту сырой нефти.",
-   "tags": [
-    "oil"
-   ]
-  },
-  {
-   "title": "Verizon Raises 2026 Forecast After Surge in Phone Customers",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNNmJCdjJ6bEpzQU5LcElvek8welEyVU1Kenc4OFdHMTgwNVFTelRXdWVRaG5ublowUlc3VE1kRGpSOF9abEdfZExiU3NHSi1PbW1qOGM3S2N2RTZ4MENxaTBsY29FalJuYkMwSXBvWjc3bDU4a2liWVpoWmgxRkExcF9Cb2tXQy1yLUJLakpSNG16bTZUYjRpZXBvQldrR0dSWl9JQWVIdzk5djFrSXk3N2gxWQ?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T13:45:24.292760+00:00",
-   "title_ru": "Verizon повысил прогноз на 2026 год после резкого роста числа телефонных клиентов"
-  },
   {
    "title": "Asia Pays Top Dollar For Canadian Oil Amid Slump in US Prices",
    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMmJEa3dfZmpEQ01INTFaRGpmLS00bVZ5NHZ0RTBucWZadGVFbWlJVUE2YmRNUm5nQ082SkZaUllQSUpzUDF4OUFnUXhuV1RJRHl4QXhYZW5jb3NrRUQzMEpFbFF4T2o0WFVkc2Y0eEoyQXFZZlVLeXNlc0h3TlJyWVUxSjhxVm05MG9xUXQtakVVMW5PcHZLNkhrWjRmeWVnUHlnQlJnMmdhNWUyU01NYjVR?oc=5",
@@ -10816,6 +10794,30 @@
    "title_ru": "Island Energy: Нет планов по удалению стоячего заряда газа",
    "lead": "The provider said any change would need support from the community, the regulator and government.",
    "lead_ru": "Поставщик сказал, что любые изменения потребуют поддержки со стороны сообщества, регулятора и правительства."
+  },
+  {
+   "title": "US Stocks Fall as Alphabet Sales Miss Revives AI Fears",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-29/us-stock-futures-fall-as-alphabet-sales-miss-revives-ai-fears",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T13:50:15.699412+00:00",
+   "title_ru": "Акции США падают, поскольку Alphabet Sales Miss возрождает страхи перед ИИ",
+   "lead": "US stocks fell at the opening bell, dragged lower by a plunge in Alphabet Inc. after disappointing results revived investor concerns that its losing ground despite massive artificial intelligence spending.",
+   "lead_ru": "Акции США упали на начальном этапе, опустившись вниз из-за падения Alphabet Inc. после того, как неутешительные результаты возродили опасения инвесторов, что они теряют свои позиции, несмотря на огромные расходы на искусственный интеллект.",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "Healey’s budget paves way for ‘brutal’ spending review next year, warns IFS",
+   "link": "https://www.theguardian.com/uk-news/2026/oct/29/john-healey-budget-brutal-spending-review-next-year-ifs",
+   "sources": [
+    "The Guardian"
+   ],
+   "score": 2,
+   "ts": "2026-10-29T13:50:15.699412+00:00"
   }
  ],
  "last_digest": "2026-10-28",
@@ -17485,22 +17487,16 @@
   "checked": "2026-10-29T13:45:15.716444+00:00",
   "sec_seen": [
    "0001493152-26-049211",
-   "0001628280-26-068019",
-   "0001628280-26-068025",
    "0001683168-26-008147",
    "0001534574-26-000018",
-   "0001628280-26-068012",
-   "0001193125-26-437062",
    "0001213900-26-113597",
-   "0001628280-26-068016",
    "0001493152-26-049207",
-   "0001628280-26-068031",
    "0001493152-26-049205",
    "0001976408-26-000919",
-   "0001976408-26-000920",
    "0001513845-26-000143",
+   "0001976408-26-000920",
    "0001493152-26-049209",
-   "0001628280-26-068033",
+   "0001017475-26-000012",
    "0001628280-26-068056"
   ],
   "errors": {
