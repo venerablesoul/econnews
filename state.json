@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "041d359d1687e4dd": "2026-10-26T10:55:24.424268+00:00",
   "14d17d9d866d0a4e": "2026-10-26T11:00:24.170523+00:00",
   "2ead218674e84a38": "2026-10-26T11:00:24.170523+00:00",
   "47b8fc01e58a00c8": "2026-10-26T11:00:24.170523+00:00",
@@ -1020,7 +1019,8 @@
   "a992aba176501102": "2026-10-29T10:31:43.363902+00:00",
   "ab0743bfd09279fe": "2026-10-29T10:31:43.363902+00:00",
   "7bd6431aed7fafe3": "2026-10-29T10:31:43.363902+00:00",
-  "c9ab15369cc8a342": "2026-10-29T10:51:43.391559+00:00"
+  "c9ab15369cc8a342": "2026-10-29T10:51:43.391559+00:00",
+  "14ad0acd12b40213": "2026-10-29T10:56:43.480199+00:00"
  },
  "recent": [
   {
@@ -10555,6 +10555,22 @@
    "tags": [
     "ECB",
     "rates"
+   ]
+  },
+  {
+   "title": "Europe’s central bank chief Christine Lagarde to step down nine months early",
+   "link": "https://www.theguardian.com/world/2026/oct/29/european-central-bank-chief-christine-lagarde-to-step-down-nine-months-early",
+   "sources": [
+    "The Guardian"
+   ],
+   "score": 6,
+   "ts": "2026-10-29T10:56:43.480199+00:00",
+   "title_ru": "Глава центрального банка Европы Кристин Лагард уйдет в отставку на девять месяцев раньше",
+   "lead": "Departure of Lagarde, seen as candidate to take over World Economic Forum, comes as eurozone struggles with weak growth and inflation Christine Lagarde, the eurozone’s top central banker, is stepping down nine months early.",
+   "lead_ru": "Уход Лагард, рассматриваемой в качестве кандидата на Всемирный экономический форум, происходит в то время, когда еврозона борется со слабым ростом, а инфляция Кристин Лагард, главный центральный банкир еврозоны, уходит в отставку на девять месяцев раньше.",
+   "tags": [
+    "ECB",
+    "inflation"
    ]
   }
  ],
