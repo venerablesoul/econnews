@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "2eb54c153271dd49": "2026-10-26T14:25:24.256601+00:00",
-  "f024e49411a5cdfc": "2026-10-26T14:30:24.216515+00:00",
-  "a7e71e4915fe82b2": "2026-10-26T14:30:24.216515+00:00",
-  "34fb680aedde6407": "2026-10-26T14:30:24.216515+00:00",
   "ba41b3bfaf5855bb": "2026-10-26T14:41:22.831357+00:00",
   "f8bded95943f8d78": "2026-10-26T14:41:22.831357+00:00",
   "f8248943121cec82": "2026-10-26T14:41:22.831357+00:00",
@@ -1060,35 +1056,6 @@
   "aa47c154155bcd45": "2026-10-29T14:25:15.711616+00:00"
  },
  "recent": [
-  {
-   "title": "Asia Pays Top Dollar For Canadian Oil Amid Slump in US Prices",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMmJEa3dfZmpEQ01INTFaRGpmLS00bVZ5NHZ0RTBucWZadGVFbWlJVUE2YmRNUm5nQ082SkZaUllQSUpzUDF4OUFnUXhuV1RJRHl4QXhYZW5jb3NrRUQzMEpFbFF4T2o0WFVkc2Y0eEoyQXFZZlVLeXNlc0h3TlJyWVUxSjhxVm05MG9xUXQtakVVMW5PcHZLNkhrWjRmeWVnUHlnQlJnMmdhNWUyU01NYjVR?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-26T14:25:24.256601+00:00",
-   "title_ru": "Азия платит самый высокий доллар за канадскую нефть на фоне падения цен в США",
-   "tags": [
-    "oil",
-    "dollar"
-   ]
-  },
-  {
-   "title": "US Natural Gas Plunges to Six-Month Low on Warm Weather Forecast",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-26/us-natural-gas-plunges-to-six-month-low-on-warm-weather-forecast",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-26T14:30:24.216515+00:00",
-   "title_ru": "Природный газ в США упал до шестимесячного минимума в связи с прогнозом теплой погоды",
-   "lead": "US natural gas futures plummeted as much as 5.4% to the lowest since April as forecasts shifted significantly warmer over the weekend, indicating lower demand for the furnace and power-plant fuel during the early weeks of the…",
-   "lead_ru": "Фьючерсы на природный газ в США упали на 5,4% до самого низкого уровня с апреля, поскольку прогнозы значительно ухудшились в выходные дни, что указывает на снижение спроса на топливо для печей и электростанций в первые недели…",
-   "tags": [
-    "gas"
-   ]
-  },
   {
    "title": "Claudia Sahm Makes the Case for an October Fed Rate Hike",
    "link": "https://www.bloomberg.com/news/videos/2026-10-26/claudia-sahm-makes-case-for-an-october-fed-rate-hike-video",
@@ -17722,11 +17689,8 @@
   "checked": "2026-10-29T13:45:15.716444+00:00",
   "sec_seen": [
    "0001104659-26-120006",
-   "0001534574-26-000018",
    "0001225208-26-008549",
-   "0001493152-26-049211",
-   "0001017475-26-000012",
-   "0001493152-26-049209"
+   "0001017475-26-000012"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
