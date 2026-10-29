@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "3359c1478085ce57": "2026-10-26T21:02:01.213311+00:00",
   "26ce92e194bd06a8": "2026-10-26T21:07:01.193450+00:00",
   "576d449ec23e761a": "2026-10-26T21:07:01.193450+00:00",
   "4b5c6cafffe968e9": "2026-10-26T21:07:01.193450+00:00",
@@ -1073,21 +1072,10 @@
   "fd4230e3e5444424": "2026-10-29T20:43:37.907617+00:00",
   "73eb9ea806d2f44c": "2026-10-29T20:48:36.911500+00:00",
   "4059827f609d7c5f": "2026-10-29T20:53:36.880961+00:00",
-  "0a4cbf0b6382489b": "2026-10-29T20:58:36.881491+00:00"
+  "0a4cbf0b6382489b": "2026-10-29T20:58:36.881491+00:00",
+  "b29057abfff297c2": "2026-10-29T21:03:37.001065+00:00"
  },
  "recent": [
-  {
-   "title": "Anthropic Remains Mum on Investment Grade as It Flags More Debt",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-26/anthropic-remains-mum-on-investment-grade-as-it-flags-more-debt",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T21:02:01.213311+00:00",
-   "title_ru": "Anthropic остается мамой на инвестиционном уровне, поскольку он отмечает больше долгов",
-   "lead": "Anthropic PBC warned it may need to seek more financing sooner than the artificial-intelligence company had anticipated while saying little about its potential path to an investment-grade credit rating in its closely watched IPO…",
-   "lead_ru": "Anthropic PBC предупредил, что, возможно, ему придется искать больше финансирования раньше, чем ожидала компания искусственного интеллекта, мало говоря о своем потенциальном пути к кредитному рейтингу инвестиционного уровня в своем тщательно отслеживаемом IPO..."
-  },
   {
    "title": "В налоговый пакет доложили претензий // «Опора России» предложила свой вариант повышения налогов",
    "link": "https://www.kommersant.ru/doc/9061160",
@@ -11509,6 +11497,21 @@
    "score": 3,
    "ts": "2026-10-29T20:58:36.881491+00:00",
    "title_ru": "Ставки по ипотеке в США снижаются вторую неделю подряд до 7,24%"
+  },
+  {
+   "title": "Why the US Economy Looks Strong but Feels Bad to Americans",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-29/why-the-us-economy-looks-strong-but-feels-bad-to-americans",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-29T21:03:37.001065+00:00",
+   "title_ru": "Почему экономика США выглядит сильной, но американцам она неприятна",
+   "lead": "The US economic expansion is in its seventh year, and there is no recession in sight.",
+   "lead_ru": "Экономический рост США продолжается уже седьмой год, и рецессии не предвидится.",
+   "tags": [
+    "GDP"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -14489,6 +14492,54 @@
     "date": "2026-10-28",
     "disclosed": "2026-10-29",
     "link": "https://www.sec.gov/Archives/edgar/data/1724965/000114036126041180/0001140361-26-041180-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "471fd2456a215c55",
+    "ticker": "DHR",
+    "company": "DANAHER CORP /DE/",
+    "who": "Christopher Bouda",
+    "role": "VP, Chief Accounting Officer",
+    "type": "sell",
+    "value": 1782157,
+    "shares": 7598,
+    "price": 234.56,
+    "plan": false,
+    "date": "2026-10-28",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/1876947/000031361626000205/0000313616-26-000205-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "0baed96ba2afca1c",
+    "ticker": "DHR",
+    "company": "DANAHER CORP /DE/",
+    "who": "Matthew McGrew",
+    "role": "Executive Vice President",
+    "type": "sell",
+    "value": 7014244,
+    "shares": 29754,
+    "price": 235.74,
+    "plan": false,
+    "date": "2026-10-28",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/1754423/000031361626000204/0000313616-26-000204-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "3c860a1230c5591a",
+    "ticker": "JCI",
+    "company": "Johnson Controls International plc",
+    "who": "Juergen Tinggren",
+    "role": "Director",
+    "type": "sell",
+    "value": 636760,
+    "shares": 4000,
+    "price": 159.19,
+    "plan": false,
+    "date": "2026-10-28",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/1600714/000083344426000103/0000833444-26-000103-index.htm"
    },
    {
     "src": "sec",
@@ -18105,54 +18156,6 @@
     "date": "2026-10-21",
     "disclosed": "2026-10-22",
     "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000374/0001510281-26-000374-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "1a6e628f9bcd1dbc",
-    "ticker": "CNXN",
-    "company": "PC CONNECTION INC",
-    "who": "Patricia Gallup et al.",
-    "role": "Chair, 10% owner",
-    "type": "sell",
-    "value": 1320030,
-    "shares": 15196,
-    "price": 86.87,
-    "plan": true,
-    "date": "2026-10-21",
-    "disclosed": "2026-10-22",
-    "link": "https://www.sec.gov/Archives/edgar/data/1930044/000193004426000010/0001930044-26-000010-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "9cf1724901b2e431",
-    "ticker": "BROS",
-    "company": "Dutch Bros Inc.",
-    "who": "Dm Individual Aggregator, Llc",
-    "role": "10% owner",
-    "type": "sell",
-    "value": 2231602,
-    "shares": 50709,
-    "price": 44.01,
-    "plan": true,
-    "date": "2026-10-20",
-    "disclosed": "2026-10-22",
-    "link": "https://www.sec.gov/Archives/edgar/data/1883096/000186658126000160/0001866581-26-000160-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "145c9d49a1936f25",
-    "ticker": "BROS",
-    "company": "Dutch Bros Inc.",
-    "who": "Dm Trust Aggregator, Llc",
-    "role": "10% owner",
-    "type": "sell",
-    "value": 4179792,
-    "shares": 94978,
-    "price": 44.01,
-    "plan": true,
-    "date": "2026-10-20",
-    "disclosed": "2026-10-22",
-    "link": "https://www.sec.gov/Archives/edgar/data/1883105/000186658126000159/0001866581-26-000159-index.htm"
    }
   ],
   "docs": {
@@ -18196,16 +18199,17 @@
   },
   "checked": "2026-10-29T20:08:36.874831+00:00",
   "sec_seen": [
-   "0001437749-26-033977",
-   "0001733614-26-000005",
-   "0001437749-26-033984",
-   "0001628280-26-068288",
+   "0001193125-26-437989",
+   "0001193125-26-437982",
+   "0000313616-26-000205",
+   "0000313616-26-000204",
    "0001423902-26-000105",
    "0001140361-26-041180",
    "0001829126-26-011778",
+   "0000833444-26-000103",
    "0000921895-26-002881",
-   "0001584145-26-000011",
-   "0001193125-26-437931"
+   "0001171843-26-006977",
+   "0001193125-26-437973"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
