@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "298b2348dddec91b": "2026-10-25T23:58:52.476177+00:00",
-  "a27a72704eea99b3": "2026-10-25T23:58:52.476177+00:00",
-  "99870d45ec7c3d18": "2026-10-25T23:58:52.476177+00:00",
-  "1e6c6dfa419ebacc": "2026-10-25T23:58:52.476177+00:00",
   "37772872aaa95261": "2026-10-26T00:03:52.451513+00:00",
   "33619b0e9322e2c3": "2026-10-26T00:18:52.529389+00:00",
   "5bf7f3e3ccb22610": "2026-10-26T00:23:52.462882+00:00",
@@ -1080,55 +1076,12 @@
   "2aa483e80da30f61": "2026-10-28T23:40:50.498552+00:00",
   "fd593245202d76b9": "2026-10-28T23:45:50.384596+00:00",
   "968ca29c8e6a527c": "2026-10-28T23:45:50.384596+00:00",
-  "f4390401ebc32b12": "2026-10-28T23:55:50.457463+00:00"
+  "f4390401ebc32b12": "2026-10-28T23:55:50.457463+00:00",
+  "556cd1858277fb80": "2026-10-29T00:00:50.404348+00:00",
+  "b390bae211f79342": "2026-10-29T00:00:50.404348+00:00",
+  "33538bad7f897b72": "2026-10-29T00:00:50.404348+00:00"
  },
  "recent": [
-  {
-   "title": "Gold Steadies After Weekly Drop as Focus Shifts to Fed Meeting",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-25/gold-steadies-after-weekly-drop-as-focus-shifts-to-fed-meeting",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-25T23:58:52.476177+00:00",
-   "title_ru": "Золото стабилизируется после недельного падения, поскольку фокус смещается на заседание ФРС",
-   "lead": "Gold steadied after its biggest weekly drop since June, with traders weighing stubbornly high energy prices ahead of the Federal Reserve’s upcoming policy meeting.",
-   "lead_ru": "Золото стабилизировалось после самого большого недельного падения с июня, поскольку трейдеры упорно взвешивают высокие цены на энергоносители в преддверии предстоящего заседания Федеральной резервной системы по политике.",
-   "tags": [
-    "Fed",
-    "gold"
-   ]
-  },
-  {
-   "title": "Goldman Says Yen Becoming Better Hedge Against AI Market Shock",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-25/goldman-says-yen-becoming-better-hedge-against-ai-market-shock",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-25T23:58:52.476177+00:00",
-   "title_ru": "Goldman говорит, что иена становится лучшей защитой от шока на рынке искусственного интеллекта",
-   "lead": "The yen is becoming a more effective hedge against an artificial intelligence-driven market shock as changes in Japan’s policy backdrop reduce the risk of the currency weakening sharply when global yields rise, according to…",
-   "lead_ru": "По данным…",
-   "tags": [
-    "bonds"
-   ]
-  },
-  {
-   "title": "Baht to Rebound on Inflows Into Nation’s Bonds, Analysts Say",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-25/baht-to-rebound-on-inflows-into-nation-s-bonds-analysts-say",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-25T23:58:52.476177+00:00",
-   "title_ru": "Аналитики говорят, что бат восстановится благодаря притоку средств в государственные облигации",
-   "lead": "Thailand’s baht may be nearing a turning point after a bruising eight months, with analysts seeing scope for a rebound as foreign money returns to the nation’s bonds and an improving current account supports the currency.",
-   "lead_ru": "Курс тайского бата, возможно, приближается к поворотному моменту после тяжелых восьми месяцев, при этом аналитики видят возможности для восстановления, поскольку иностранные деньги возвращаются в облигации страны, а улучшение текущего счета поддерживает валюту.",
-   "tags": [
-    "bonds"
-   ]
-  },
   {
    "title": "Trump says Canada tariff deal coming 'soon' at Michigan border rally",
    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQdEJMMGdRVDJoVkVSSGFSV1FvRmJMTy1LWnZhMWRzeUFjNlN4QUFKQ2tZc285cEs4akdIZ0dvZzJtSTBWU3ZwX1VGX2l3TllKVGxfNnh0Vm5rOTVtX2JpLXhwOXdJTEJURVBjYjRLS3hWSHk4bXBCT3lIWmZGMS1YTE5WQmpYVTVWcEk3YnE3WWV6anVTdElYUlV0Q3o4cnF2N0Z1NXJlazBvcG9L?oc=5",
@@ -10672,6 +10625,46 @@
     "rates",
     "inflation"
    ]
+  },
+  {
+   "title": "Gold Edges Lower After Fed Holds Rates With Limited Guidance",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-28/gold-edges-lower-after-fed-holds-rates-with-limited-guidance",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-29T00:00:50.404348+00:00",
+   "title_ru": "Золотые края снижаются после того, как ФРС удерживает ставки с ограниченным руководством",
+   "lead": "Gold dipped after the Federal Reserve kept interest rates unchanged and offered little guidance on its next move, leaving traders guessing over the prospect of a hike before year-end.",
+   "lead_ru": "Золото упало после того, как Федеральная резервная система оставила процентные ставки без изменений и практически не дала рекомендаций по своему следующему шагу, оставив трейдеров гадать о перспективе повышения до конца года.",
+   "tags": [
+    "Fed",
+    "rates",
+    "gold"
+   ]
+  },
+  {
+   "title": "Trump Delays Robotics, Machinery Tariffs in Favor of More Talks",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPbUp2SjdYSFFKSDRxY0lWTkNjV1BGSjVrams3dnc4NFRpdGpINkxVa1ZMYjBGRmpHTDRqZXV1azI1OEtiV3AyTDhobGpEcnFGWGYyU1FrT3hkSlV3U0hSMm9tZmVhbXM2MVdTcnc1a2ZCNUw0WnpIZS1EejhFakZEOUNyTTBOME5fa25UTFhjdklncGVjUFFFM3lBMWtCejZCSGxfZkxIbFNUNmtfRFBSc01zbw?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-29T00:00:50.404348+00:00",
+   "title_ru": "Трамп откладывает тарифы на робототехнику и оборудование в пользу новых переговоров",
+   "tags": [
+    "tariffs"
+   ]
+  },
+  {
+   "title": "Argentina sees EU soymeal opportunity as deforestation rules threaten Brazil trade",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOYVhTUW1FTzJQVHVEbTc4QUdaaHpqd21IM1hQRWdWMDMzYjVGVThBU3h1YzN1bVFka1BzUU9SZXg0cC15Z0kxYzM5YzhxODVrMEtqak9fTHVocjBRQjJPNE9UQThxUHV1NFpsTnpHRXJIT3AtRmZGSExmRkloUGlvTG45TDJvVFp6b3A0RFpQZFdZRGlZaFVlSnYxM04tdXRYbW5iX3B4YURFMGl0YWxVRm13SVUzWkpJREk0UlBNbEVJNlBZelNzaHNR?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T00:00:50.404348+00:00",
+   "title_ru": "Аргентина видит возможности для производства соевого шрота в ЕС, поскольку правила обезлесения угрожают торговле Бразилии"
   }
  ],
  "last_digest": "2026-10-28",
@@ -17342,8 +17335,9 @@
    "0001204816-26-000057",
    "0001094718-26-000011",
    "0001104659-26-119719",
-   "0001193125-26-436510",
+   "0001654009-26-000017",
    "0001437749-26-033821",
+   "0001193125-26-436510",
    "0001493152-26-049125",
    "0001022079-26-000118",
    "0001193125-26-436459",
@@ -17364,7 +17358,6 @@
    "0001628280-26-067978",
    "0001193125-26-436441",
    "0001705952-26-000016",
-   "0001807561-26-000026",
    "0001628280-26-067980",
    "0001505300-26-000016",
    "0001193125-26-436443",
@@ -17376,7 +17369,7 @@
    "0001493152-26-049119",
    "0000950103-26-016314",
    "0001493152-26-049131",
-   "0001654009-26-000017"
+   "0001807561-26-000026"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
