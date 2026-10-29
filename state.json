@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "669035a6446d8c44": "2026-10-26T07:54:41.392393+00:00",
-  "2cf22a5eb4bdf513": "2026-10-26T07:54:41.392393+00:00",
-  "b12bea3720a9df94": "2026-10-26T07:54:41.392393+00:00",
   "a9b874272c9889b1": "2026-10-26T08:04:41.395164+00:00",
   "bb35d3242e48fe9c": "2026-10-26T08:14:41.387855+00:00",
   "66c8619b9af7e215": "2026-10-26T08:14:41.387855+00:00",
@@ -1055,24 +1052,12 @@
   "8b31154bcbe60ae2": "2026-10-29T07:36:19.802354+00:00",
   "19edb3b4dd8f498b": "2026-10-29T07:36:19.802354+00:00",
   "c17bd6e303c09a85": "2026-10-29T07:46:19.828373+00:00",
-  "6416510833b2586d": "2026-10-29T07:51:19.785389+00:00"
+  "6416510833b2586d": "2026-10-29T07:51:19.785389+00:00",
+  "ec9f5ce7312f3a61": "2026-10-29T07:56:43.427949+00:00",
+  "cb526e827945cad0": "2026-10-29T08:01:43.351330+00:00",
+  "da2af0fd3ac15010": "2026-10-29T08:01:43.351330+00:00"
  },
  "recent": [
-  {
-   "title": "UK Budget Preview: Burnham and Healey’s Grip on Gilts and Business Tested",
-   "link": "https://www.bloomberg.com/news/newsletters/2026-10-26/uk-budget-preview-burnham-and-healey-s-grip-on-gilts-and-business-tested",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T07:54:41.392393+00:00",
-   "title_ru": "Предварительный просмотр бюджета Великобритании: контроль Бёрнхэма и Хили над Гилтсом и проверенным бизнесом",
-   "lead": "Plus, why the government wants to lean more on Treasury bills",
-   "lead_ru": "Кроме того, почему правительство хочет больше опираться на казначейские векселя",
-   "tags": [
-    "bonds"
-   ]
-  },
   {
    "title": "Odd Lots: AI Agents Are Changing the Prices of Goods (Podcast)",
    "link": "https://www.bloomberg.com/news/audio/2026-10-26/odd-lots-ai-agents-are-changing-the-prices-of-goods-podcast",
@@ -10748,6 +10733,36 @@
     "ECB",
     "bonds"
    ]
+  },
+  {
+   "title": "Росстат назвал регионы со средней зарплатой выше 100 тыс. рублей",
+   "link": "https://www.rbc.ru/finances/29/10/2026/6ae2f4406e4399aa2659bfa8",
+   "sources": [
+    "RBC"
+   ],
+   "score": 2,
+   "ts": "2026-10-29T07:56:43.427949+00:00"
+  },
+  {
+   "title": "What Wall Street Really Thanks About the AI Trade (Podcast)",
+   "link": "https://www.bloomberg.com/news/audio/2026-10-29/what-wall-street-really-thanks-about-the-ai-trade-podcast",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T08:01:43.351330+00:00",
+   "title_ru": "Что Уолл-стрит действительно благодарит за торговлю искусственным интеллектом (подкаст)",
+   "lead": "It has been a big week for the AI trade — we've seen wobbles in the market, many of them in response to headlines like the Anthropic S-1 and earnings from the hyperscalers (Oracle, Microsoft, etc.).",
+   "lead_ru": "Это была большая неделя для торговли искусственным интеллектом — мы видели колебания на рынке, многие из которых были вызваны такими заголовками, как Anthropic S-1 и прибылью от гиперскалеров (Oracle, Microsoft и т. д.)."
+  },
+  {
+   "title": "Reader Q&A: Our money and economics correspondents answer your Budget 2026 questions",
+   "link": "https://www.theguardian.com/uk-news/live/2026/oct/29/budget-2026-reader-questions-john-healey-chancellor-hilary-osborne-heather-stewart",
+   "sources": [
+    "The Guardian"
+   ],
+   "score": 2,
+   "ts": "2026-10-29T08:01:43.351330+00:00"
   }
  ],
  "last_digest": "2026-10-28",
