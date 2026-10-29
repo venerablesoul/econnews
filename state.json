@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "35719ba38f9bec21": "2026-10-26T16:06:22.747403+00:00",
   "e44751151741d909": "2026-10-26T16:11:22.719224+00:00",
   "6c80094cc8d747c6": "2026-10-26T16:16:22.775380+00:00",
   "c4bba32c0dfafff1": "2026-10-26T16:26:22.737531+00:00",
@@ -1057,24 +1056,13 @@
   "a0e5c195249534c3": "2026-10-29T16:00:15.716019+00:00",
   "cf76fed32cc3c0aa": "2026-10-29T16:00:15.716019+00:00",
   "e157ec3258cf0eb7": "2026-10-29T16:00:15.716019+00:00",
-  "845ce48aff05a608": "2026-10-29T16:00:15.716019+00:00"
+  "845ce48aff05a608": "2026-10-29T16:00:15.716019+00:00",
+  "53e47341db83ad5b": "2026-10-29T16:05:15.703996+00:00",
+  "041d359d1687e4dd": "2026-10-29T16:10:16.767386+00:00",
+  "92e9eeaaeb08f21e": "2026-10-29T16:10:16.767386+00:00",
+  "1e5e3b21b41b193f": "2026-10-29T16:10:16.767386+00:00"
  },
  "recent": [
-  {
-   "title": "Fitch Diverges From South Africa’s Treasury on Debt Outlook",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-26/fitch-diverges-from-south-africa-s-treasury-on-debt-outlook",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T16:06:22.747403+00:00",
-   "title_ru": "Fitch расходится с прогнозом казначейства Южной Африки по долгу",
-   "lead": "Fitch Ratings expects South Africa’s debt as a percentage of gross domestic product to start rising again in the year through March 2029 mainly due to weak economic growth, challenging National Treasury and Moody’s Ratings’…",
-   "lead_ru": "Fitch Ratings ожидает, что долг Южной Африки в процентах от валового внутреннего продукта снова начнет расти в течение года до марта 2029 года, в основном из-за слабого экономического роста, что бросает вызов Национальному казначейству и рейтингам Moody's...",
-   "tags": [
-    "bonds"
-   ]
-  },
   {
    "title": "Nigeria targets single-digit inflation by end-2027 to unlock cheaper borrowing, minister says",
    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNckw5dlVKZ0FDcTdxM2ZfS3R6Mzl1YTdSc0xxa2tSVVcwMzBwczdRVFFITVBjUU8yQS1KQ2ZmcFA2WUh1TEhuSjE0bWdQYU15YWFiMWpQVlBMR1JCU2hEWm9MV1p3YWpuSlc1OHloTEhJblJnYlhPZVNOZmNpLVdIT2pLb0NhT3RPZDB6em1ya1M3ZkQzRDBZTmozVlNlQTJYZEQ1SkxIR21ibVhOalV1ZVdua1dKWjVSQVh0OHF2UElKZw?oc=5",
@@ -11121,6 +11109,33 @@
    ],
    "score": 1,
    "ts": "2026-10-29T16:00:15.716019+00:00"
+  },
+  {
+   "title": "DWS Americas CEO: Europe Is a Bet on a Physical Economy",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-29/dws-americas-ceo-europe-is-a-bet-on-a-physical-economy-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-29T16:10:16.767386+00:00",
+   "title_ru": "Генеральный директор DWS Americas: Европа делает ставку на физическую экономику",
+   "lead": "DWS Americas CEO Hepsen Uzcan discusses whether investors are getting enough clarity from Kevin Warsh and other Fed members about monetary policy. Uzcan says the Fed has paused rate changes, not its fight against inflation.",
+   "lead_ru": "Генеральный директор DWS Americas Хепсен Узкан обсуждает, получают ли инвесторы достаточно ясности от Кевина Уорша и других членов ФРС в отношении денежно-кредитной политики. Uzcan говорит, что ФРС приостановила изменения ставок, а не свою борьбу с инфляцией.",
+   "tags": [
+    "Fed",
+    "rates",
+    "inflation"
+   ]
+  },
+  {
+   "title": "Hershey warns financial pressures on consumers could weigh on Halloween spending",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQa1FzbjBSNFpTSlBUTmJ0YzA3U3JZVi1zNGFiUnRVMGgxSVhUQWVzM2dLazgySkZXdEg4TV9GWndobTF6UTdHM2VxNnhGbERKWlF4UEFadmxOSk0wMnVGRm1zcFA3ajg2bWdDV0hzT1RlbXAzMjlRdzhibnVQclZKcVRXMTVRbUJRVm5vd2tqMzctbThjRlp3QlRYMk54dnBPYllyQ0RrMHlBOFBpeDVYRlJWNU9qU1hmSkQ2Ynl3MHlDQjdOYVptcDA0SW9wRnFV?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T16:10:16.767386+00:00",
+   "title_ru": "Hershey предупреждает, что финансовое давление на потребителей может повлиять на расходы на Хэллоуин"
   }
  ],
  "last_digest": "2026-10-28",
@@ -17789,7 +17804,6 @@
   },
   "checked": "2026-10-29T15:45:16.705650+00:00",
   "sec_seen": [
-   "0001463254-26-000008",
    "0001437749-26-033873",
    "0001225208-26-008551"
   ],
