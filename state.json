@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "84799d220cf4c3df": "2026-10-26T19:06:22.770709+00:00",
-  "e4ad86d907c7c077": "2026-10-26T19:06:22.770709+00:00",
   "fbe4f652c0437925": "2026-10-26T19:11:22.703689+00:00",
   "a362288c218b5dee": "2026-10-26T19:16:22.807972+00:00",
   "4ffcd20e7c6f8afe": "2026-10-26T19:16:22.807972+00:00",
@@ -1061,19 +1059,11 @@
   "c7b41a96bdef2784": "2026-10-29T18:40:15.669461+00:00",
   "627c259685f21145": "2026-10-29T18:50:15.676247+00:00",
   "aecd0b4b610bf2bf": "2026-10-29T18:50:15.676247+00:00",
-  "c858c664b687febb": "2026-10-29T19:03:37.057662+00:00"
+  "c858c664b687febb": "2026-10-29T19:03:37.057662+00:00",
+  "ebb6a7c1240c28d0": "2026-10-29T19:08:37.004179+00:00",
+  "437b6e88edc33335": "2026-10-29T19:08:37.004179+00:00"
  },
  "recent": [
-  {
-   "title": "Goldman’s Pasquariello Says Tech Rout Casts Doubt on AI Trade",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNdjVDeVpOSm9FaDB3VXAwQktxQUpnOExKZTJ2ZUQ5NGFySUJtRUFhUC00b1ZpSlFOS3R1Q1hBa3VDQnRObVE4cFFSVFQxdHVBX2xDU05oNzlVU0VBOV9LT3h0QkpNaXVHaXFfWWwyMk9ZRkYzWW5EQ3E2ZE43Rl9PX2RWSzM3aVI3Q2NYWG9ZMUV5dDZLSTI5Mm1yWHF6T2lxeWRHQVRsVy1TaHVrRktXZXZB?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T19:06:22.770709+00:00",
-   "title_ru": "Pasquariello Goldman говорит, что Tech Rout ставит под сомнение торговлю ИИ"
-  },
   {
    "title": "Единому рынку поищут цену // Сербии предстоит просчитать выгоды от вступления в ЕС",
    "link": "https://www.kommersant.ru/doc/9061156",
@@ -11255,6 +11245,33 @@
    "score": 3,
    "ts": "2026-10-29T19:03:37.057662+00:00",
    "title_ru": "Индия заявляет, что торговая сделка с США не повредит ее фермерам"
+  },
+  {
+   "title": "VIEW ECB keeps rates unchanged; euro and bond yields fall",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNRS1GTl9NNk5PZHlwa1lfREJ1SlVlb0w0YnVJVHVldVJta1ROanY3MXdQSVZ4NHVjajBINE44VV93cGFtWngtVGxjMV8zaHFPbG8weVEzUE1KUWVDZDRFeXZpckZlTk55d1ZkOVZ1dlBhbFdreWY3ZHUzQmtrc2FmajZmRVlZLWVsTEZ6YmJOaHYxbmI1?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 7,
+   "ts": "2026-10-29T19:08:37.004179+00:00",
+   "title_ru": "ОБЗОР ЕЦБ сохраняет ставки без изменений; доходность евро и облигаций падает",
+   "tags": [
+    "ECB",
+    "bonds"
+   ]
+  },
+  {
+   "title": "Here’s How Much You’re Paying for Trump’s Tariffs and Iran War",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPZDBvaXE2U0Q5QTlPTUJTZnNPUnNZakNvVlB0QWgtbURJSDhJNUZzdzZRSUs0MGN0dmpBY0tnN2NSUDV4ZkV2NkZ2X28xSTVjQ1hiTU9SUEpqQnphUUhXMktXYUhFV2EwMkQwWF8xTHV2NWZDRkw0V1J6UzdWU2NiT2tyN2wyMWYzM0R6SzUzaUVHZHNyQlhjSEFiQ3lrdUp5Wlh3SUtR?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-29T19:08:37.004179+00:00",
+   "title_ru": "Вот сколько вы платите за тарифы Трампа и войну с Ираном",
+   "tags": [
+    "tariffs"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
