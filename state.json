@@ -1071,7 +1071,8 @@
   "5a5e01ce02688061": "2026-10-29T20:38:36.856859+00:00",
   "1ef3aa1f69871a3b": "2026-10-29T20:38:36.856859+00:00",
   "fd4230e3e5444424": "2026-10-29T20:43:37.907617+00:00",
-  "73eb9ea806d2f44c": "2026-10-29T20:48:36.911500+00:00"
+  "73eb9ea806d2f44c": "2026-10-29T20:48:36.911500+00:00",
+  "4059827f609d7c5f": "2026-10-29T20:53:36.880961+00:00"
  },
  "recent": [
   {
@@ -11484,6 +11485,19 @@
    "score": 3,
    "ts": "2026-10-29T20:48:36.911500+00:00",
    "title_ru": "TSX падает, поскольку доходы майнеров разочаровывают, Alphabet тянет за собой технологии"
+  },
+  {
+   "title": "Satellites Show Saudi Persian Gulf Oil Loadings Hit Wartime High",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPZkFuZkhTbjJuZGFWUERva2Q2Y05TYVJ2WVBuSjZMbkZKZDhCVFRMaUktVFBiZmFwWWRTNFJWbTFqTXpZd2ZYdk0tTjdXNHRBRWE4S053Q3BYUm81dDY1dUxsa2N5UE9uNzNJNnJCRHVoN09SMzNwcFZvU1BITWFMZ3RnY3NPbVFJSlFyeE9wQWRFZHN5SXdfanUwT1hUWlFuR19xVl85SnNiRFpQeWg4T1RiS0pTdw?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T20:53:36.880961+00:00",
+   "title_ru": "Спутники показывают, что объемы загрузки нефти в Персидском заливе в Саудовской Аравии достигли максимума военного времени",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -14608,6 +14622,22 @@
     "date": "2026-10-27",
     "disclosed": "2026-10-29",
     "link": "https://www.sec.gov/Archives/edgar/data/1216931/000009747626000172/0000097476-26-000172-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "4bbde095e12ce4d4",
+    "ticker": "CRBG",
+    "company": "Corebridge Financial, Inc.",
+    "who": "Nippon Life Insurance Co",
+    "role": "10% owner",
+    "type": "buy",
+    "value": 6259186,
+    "shares": 178129,
+    "price": 35.14,
+    "plan": true,
+    "date": "2026-10-27",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/1889539/000119312526437931/0001193125-26-437931-index.htm"
    },
    {
     "src": "sec",
@@ -18112,22 +18142,6 @@
     "date": "2026-10-20",
     "disclosed": "2026-10-22",
     "link": "https://www.sec.gov/Archives/edgar/data/1883154/000186658126000158/0001866581-26-000158-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "33aeae808a18ae77",
-    "ticker": "STT",
-    "company": "STATE STREET CORP",
-    "who": "Hanley Ronald P O",
-    "role": "CEO",
-    "type": "sell",
-    "value": 2395588,
-    "shares": 14554,
-    "price": 164.6,
-    "plan": true,
-    "date": "2026-10-20",
-    "disclosed": "2026-10-22",
-    "link": "https://www.sec.gov/Archives/edgar/data/1180495/000009375126000594/0000093751-26-000594-index.htm"
    }
   ],
   "docs": {
@@ -18176,12 +18190,15 @@
    "0001437749-26-033967",
    "0001437749-26-033977",
    "0001733614-26-000005",
-   "0001193125-26-437890",
-   "0001013594-26-001116",
+   "0001437749-26-033984",
+   "0001628280-26-068288",
    "0000898243-26-000025",
    "0001597870-26-000029",
    "0001437749-26-033961",
+   "0001829126-26-011778",
    "0001219004-26-000004",
+   "0001584145-26-000011",
+   "0001193125-26-437931",
    "0001225208-26-008553"
   ],
   "errors": {
