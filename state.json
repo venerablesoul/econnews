@@ -1069,7 +1069,8 @@
   "a4fdb9f4b3e7d55b": "2026-10-29T20:33:36.867577+00:00",
   "07f32b49bde492af": "2026-10-29T20:33:36.867577+00:00",
   "5a5e01ce02688061": "2026-10-29T20:38:36.856859+00:00",
-  "1ef3aa1f69871a3b": "2026-10-29T20:38:36.856859+00:00"
+  "1ef3aa1f69871a3b": "2026-10-29T20:38:36.856859+00:00",
+  "fd4230e3e5444424": "2026-10-29T20:43:37.907617+00:00"
  },
  "recent": [
   {
@@ -11462,6 +11463,16 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Fiscal Monitor (October 2026) - Primary net lending/borrowing (also referred as primary balance)",
+   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE11T1dKNUJZN2E4S19WUHA1YTlOSGhmLWt3WDdjY0RNX0NEaHRuaXFSRXBDUXVPU3FLTjBCQkFxTzVfcUM3Z2JJR3ZpQTI0Q2M0elN5a3Q2aXBvODlvMEEzQkZqZHBkUHp2N0FPN3VrQWVscU0?oc=5",
+   "sources": [
+    "IMF"
+   ],
+   "score": 5,
+   "ts": "2026-10-29T20:43:37.907617+00:00",
+   "title_ru": "Фискальный монитор (октябрь 2026 г.) – Первичное чистое кредитование/заимствование (также называемое первичным балансом)"
   }
  ],
  "last_digest": "2026-10-29",
@@ -14141,6 +14152,22 @@
    },
    {
     "src": "sec",
+    "id": "404f1212aa864b93",
+    "ticker": "SAMG",
+    "company": "Silvercrest Asset Management Group Inc.",
+    "who": "Equinox Partners Investment Management Llc et al.",
+    "role": "10% owner",
+    "type": "buy",
+    "value": 348694,
+    "shares": 33398,
+    "price": 10.44,
+    "plan": false,
+    "date": "2026-10-29",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/1549966/000101359426001116/0001013594-26-001116-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "3419e6ac69fcaa22",
     "ticker": "API",
     "company": "Agora, Inc.",
@@ -14362,6 +14389,22 @@
     "date": "2026-10-28",
     "disclosed": "2026-10-29",
     "link": "https://www.sec.gov/Archives/edgar/data/1106578/000110657826000174/0001106578-26-000174-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "facf3097674e2f9f",
+    "ticker": "PNFP",
+    "company": "Pinnacle Financial Partners, Inc.",
+    "who": "David B Ingram",
+    "role": "Director",
+    "type": "buy",
+    "value": 991600,
+    "shares": 10000,
+    "price": 99.16,
+    "plan": false,
+    "date": "2026-10-28",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/2082866/000121900426000004/0001219004-26-000004-index.htm"
    },
    {
     "src": "sec",
@@ -18074,38 +18117,6 @@
     "date": "2026-10-20",
     "disclosed": "2026-10-22",
     "link": "https://www.sec.gov/Archives/edgar/data/1597870/000159787026000019/0001597870-26-000019-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "7ab8d350263c8960",
-    "ticker": "CRDO",
-    "company": "Credo Technology Group Holding Ltd",
-    "who": "Chi Fung Cheng",
-    "role": "CTO",
-    "type": "sell",
-    "value": 4747114,
-    "shares": 27500,
-    "price": 172.62,
-    "plan": true,
-    "date": "2026-10-20",
-    "disclosed": "2026-10-22",
-    "link": "https://www.sec.gov/Archives/edgar/data/1896170/000162828026066888/0001628280-26-066888-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "040cb9352292bf94",
-    "ticker": "INTA",
-    "company": "Intapp, Inc.",
-    "who": "David Benjamin Harrison",
-    "role": "President",
-    "type": "sell",
-    "value": 1823169,
-    "shares": 40284,
-    "price": 45.26,
-    "plan": true,
-    "date": "2026-10-20",
-    "disclosed": "2026-10-22",
-    "link": "https://www.sec.gov/Archives/edgar/data/2028388/000156568726000121/0001565687-26-000121-index.htm"
    }
   ],
   "docs": {
@@ -18149,16 +18160,18 @@
   },
   "checked": "2026-10-29T20:08:36.874831+00:00",
   "sec_seen": [
-   "0001604682-26-000004",
+   "0001225208-26-008554",
+   "0001225208-26-008555",
    "0000097476-26-000174",
    "0001193125-26-437890",
-   "0001106578-26-000174",
-   "0000097476-26-000176",
-   "0001104659-26-120227",
-   "0001493152-26-049283",
-   "0001104659-26-120229",
    "0001225208-26-008552",
-   "0000097476-26-000172"
+   "0001013594-26-001116",
+   "0001597870-26-000029",
+   "0001437749-26-033961",
+   "0001219004-26-000004",
+   "0000097476-26-000176",
+   "0000097476-26-000172",
+   "0001225208-26-008553"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
