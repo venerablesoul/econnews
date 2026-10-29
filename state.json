@@ -1039,7 +1039,11 @@
   "2331038f81132541": "2026-10-29T13:50:15.699412+00:00",
   "8b4dc6d6f4c77e6d": "2026-10-29T13:50:15.699412+00:00",
   "9c54a10fb9afc4da": "2026-10-29T13:50:15.699412+00:00",
-  "7fed9d5f2623fed9": "2026-10-29T14:00:15.710586+00:00"
+  "7fed9d5f2623fed9": "2026-10-29T14:00:15.710586+00:00",
+  "961f4a39f174176f": "2026-10-29T14:05:15.622574+00:00",
+  "e199bca473c62ef0": "2026-10-29T14:05:15.622574+00:00",
+  "ae8c5d1b57700f23": "2026-10-29T14:05:15.622574+00:00",
+  "005f168df8441ce2": "2026-10-29T14:05:15.622574+00:00"
  },
  "recent": [
   {
@@ -10831,6 +10835,46 @@
    "title_ru": "Протокол заседания Суда директоров, состоявшегося 17 сентября 2026 года",
    "lead": "The Bank's Court of Directors acts as a unitary board, setting the organisation's strategy and budget and taking key decisions on resourcing and appointments.",
    "lead_ru": "Суд директоров Банка выступает в качестве унитарного совета, определяющего стратегию и бюджет организации и принимающего ключевые решения по ресурсам и назначениям."
+  },
+  {
+   "title": "Christine Lagarde, Boris Vujčić: Monetary policy statement",
+   "link": "https://www.ecb.europa.eu//press/press_conference/monetary-policy-statement/2026/html/ecb.is261029~5c5ffe99e5.en.html",
+   "sources": [
+    "ECB"
+   ],
+   "score": 10,
+   "ts": "2026-10-29T14:05:15.622574+00:00",
+   "title_ru": "Кристин Лагард, Борис Вуйчич: Заявление о денежно-кредитной политике",
+   "tags": [
+    "ECB",
+    "rates"
+   ]
+  },
+  {
+   "title": "Caterpillar tops quarterly profit view, but unchanged growth target dents shares",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOS21ocmJBakxUZmFUVWdxWExLS0gtcmNiVDFGb24zbTBUa25wd1I3MVBrOVVzNm9jSFFFVktiaTRXay1yOEhsWWd5ZlBhRU9EQVNJZlhtRVVySzVoNUZqajZ0MnNLeF9sZ1N3QTY2MEZHeUlKaUJnUlR4NkQ4ODh5Nmx0MWxiYm54aWphcXhpcTNTMVl3TUw3TFpQeGltQU5iRy1sLXVvME5fQQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-29T14:05:15.622574+00:00",
+   "title_ru": "Caterpillar лидирует по квартальной прибыли, но целевой показатель роста акций Dents не изменился",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "COMMENTARY: Warsh's muddled messaging revives Fed credibility doubts",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQbFItLXdsM192U2swb09iUUdnRjhfeVh4QmNGelZPc2lsTHR3SnIyTVhlelVyMVVEanhlZlFjU1BkUWZfTVZvNmFOMHlMWGhPNXQ2OTR1OXE3STVtekZMbVNiSXowUW5ZVU1KNkQzN1lPUUZWSTZaSG03eU9uS0FXald3TWxrNWc2b3BKREdKYmstUDZINFdhVi1uQUN6NVdoa2xwWEhwdU9zZUxSTUJwamRiaUVSQTE1T2VtNklUU1UwQQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T14:05:15.622574+00:00",
+   "title_ru": "КОММЕНТАРИЙ: Запутанные сообщения Уорша возрождают сомнения в авторитете ФРС",
+   "tags": [
+    "Fed"
+   ]
   }
  ],
  "last_digest": "2026-10-28",
@@ -17499,17 +17543,16 @@
   },
   "checked": "2026-10-29T13:45:15.716444+00:00",
   "sec_seen": [
-   "0001513845-26-000143",
    "0001493152-26-049205",
    "0001493152-26-049207",
+   "0001976408-26-000920",
    "0001683168-26-008147",
    "0001104659-26-120006",
    "0001534574-26-000018",
    "0001976408-26-000919",
+   "0001225208-26-008549",
    "0001493152-26-049211",
    "0001017475-26-000012",
-   "0001976408-26-000920",
-   "0001628280-26-068056",
    "0001493152-26-049209",
    "0001213900-26-113597"
   ],
