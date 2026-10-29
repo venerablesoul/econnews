@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e245e44c04a114e7": "2026-10-26T12:00:24.206042+00:00",
   "74170627eb451503": "2026-10-26T12:05:24.141530+00:00",
   "e1f9fc13c592e5b3": "2026-10-26T12:10:24.133371+00:00",
   "914da9fdcffebbb8": "2026-10-26T12:10:24.133371+00:00",
@@ -1024,23 +1023,13 @@
   "5d2502fd6834b264": "2026-10-29T11:41:43.368156+00:00",
   "6b77cd2febfb9dcb": "2026-10-29T11:46:43.390964+00:00",
   "e1544b561902dc5a": "2026-10-29T11:46:43.390964+00:00",
-  "229d0ac0338a2ea0": "2026-10-29T11:51:43.385922+00:00"
+  "229d0ac0338a2ea0": "2026-10-29T11:51:43.385922+00:00",
+  "28049f23130f8f5a": "2026-10-29T12:01:43.435051+00:00",
+  "28d7e22d13123788": "2026-10-29T12:01:43.435051+00:00",
+  "8b85d2a09c31295a": "2026-10-29T12:01:43.435051+00:00",
+  "4adec1d3834f6e67": "2026-10-29T12:01:43.435051+00:00"
  },
  "recent": [
-  {
-   "title": "TSX futures tick higher as gold climbs, oil falls on Iran hopes",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOaS1BdGdIUmFzU0ljYWNNT0tlZ1o4T1RXZmJCTGIxVXRVOS1zbFVTYXk0LTE2N0gzcFlTMDFzTGl5VlIxRkFwSU93em5ENzZDTkd5Mk1hV3E4cS1KU1lnV0pEX3diTTJDSk5tUlVraVAyMFpsXzY0d2hxMGIxaEJYMTVjUEFBT0lNQk5oN3FZSDhfUmNodmlVQ1hDMFE1SnlaajdJ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-26T12:00:24.206042+00:00",
-   "title_ru": "Фьючерсы на TSX растут, поскольку золото растет, нефть падает на надеждах Ирана",
-   "tags": [
-    "oil",
-    "gold"
-   ]
-  },
   {
    "title": "Trump’s tariff salesman and election politics of trade",
    "link": "https://www.bloomberg.com/news/newsletters/2026-10-26/trump-s-tariff-salesman-and-election-politics-of-trade",
@@ -10637,6 +10626,55 @@
    "title_ru": "Собственный брат Прабово бьет тревогу по поводу индонезийского фондового рынка",
    "lead": "Indonesian President Prabowo Subianto’s brother stressed the importance of a trusted and transparent local share market, saying the country must “mitigate the MSCI issue” and telling business leaders at a forum Thursday to stop…",
    "lead_ru": "Брат президента Индонезии Прабово Субианто подчеркнул важность надежного и прозрачного местного рынка акций, заявив, что страна должна «смягчить проблему MSCI», и призвав лидеров бизнеса на форуме в четверг прекратить..."
+  },
+  {
+   "title": "Tech Stocks Slide After Earnings; Warsh Signals Potential Rate Hikes",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-29/bloomberg-brief-10-29-2026-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 8,
+   "ts": "2026-10-29T12:01:43.435051+00:00",
+   "title_ru": "Технологические акции падают после прибыли; Warsh сигнализирует о потенциальном повышении ставок",
+   "lead": "Nasdaq futures fall after disappointing earnings from Alphabet and Samsung revive doubts over whether billions of dollars in AI spending will deliver sufficient returns.",
+   "lead_ru": "Фьючерсы на Nasdaq падают после разочаровывающих доходов от Alphabet, и Samsung возрождает сомнения в том, что миллиарды долларов, потраченные на ИИ, принесут достаточную отдачу.",
+   "tags": [
+    "Fed",
+    "rates",
+    "dollar"
+   ]
+  },
+  {
+   "title": "Christine Lagarde: The outsider who led the ECB her way",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOS2MyZ1h3TUV5QmVNTDR5bHl3c1RQYVFEbzZXWTlwM2Y5QXV3ejhKcHp1WTdhSFlHeDMxYk5OdmVWQUt5TTF5cE84cVBjX0x0YjJwYkc5MUM3YVlTRDRURnQwaE14WE40NTNrNFdCU0dVNDcwVG85VkFDZHFqeGV4WlVXblBfbThUNU02NW9VeHlNR1dfejZ3SmV1Z3pQVGEx?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-29T12:01:43.435051+00:00",
+   "title_ru": "Кристин Лагард: аутсайдер, который вел ЕЦБ своим путем",
+   "tags": [
+    "ECB"
+   ]
+  },
+  {
+   "title": "After the Budget, Before the Bell With The Opening Trade (Video)",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-29/after-the-budget-before-the-bell-with-the-opening-trade-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-29T12:01:43.435051+00:00",
+   "title_ru": "После бюджета, перед звонком с открытием сделки (видео)"
+  },
+  {
+   "title": "It’s the strangest job market the U.S. has ever seen. The low-hire, low-fire economy turns 3 years old.",
+   "link": "https://www.marketwatch.com/story/its-the-strangest-job-market-the-u-s-has-ever-seen-the-low-hire-low-fire-economy-turns-3-years-old-ce8d0dfe?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 2,
+   "ts": "2026-10-29T12:01:43.435051+00:00"
   }
  ],
  "last_digest": "2026-10-28",
@@ -17318,8 +17356,8 @@
    "0001193125-26-436877",
    "0001671190-26-000008",
    "0001493152-26-049175",
+   "0001493152-26-049183",
    "0001104659-26-119782",
-   "0002131773-26-000007",
    "0001104659-26-119785",
    "0001535929-26-000181",
    "0001493152-26-049156",
