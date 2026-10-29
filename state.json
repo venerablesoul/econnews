@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "4a22d93052796cb7": "2026-10-26T18:16:22.698706+00:00",
-  "fa619a8b824aee62": "2026-10-26T18:16:22.698706+00:00",
   "a409f8ebdb3f8eb3": "2026-10-26T18:26:22.755006+00:00",
   "a41a6130aa4bca8e": "2026-10-26T18:26:22.755006+00:00",
   "b0a83c6371d7c39e": "2026-10-26T18:31:22.735507+00:00",
@@ -1064,18 +1062,10 @@
   "3be8c837b4b4381d": "2026-10-29T17:55:15.648104+00:00",
   "0f33882a5ca4f953": "2026-10-29T18:00:15.979362+00:00",
   "31c6dbc1e4b15658": "2026-10-29T18:05:15.668428+00:00",
-  "fba196729bb9a663": "2026-10-29T18:05:15.668428+00:00"
+  "fba196729bb9a663": "2026-10-29T18:05:15.668428+00:00",
+  "5f65c2c7d915fe9a": "2026-10-29T18:20:15.657424+00:00"
  },
  "recent": [
-  {
-   "title": "These energy stocks are poised to profit from an imminent AI power crunch",
-   "link": "https://www.marketwatch.com/story/these-energy-stocks-are-poised-to-profit-from-an-imminent-ai-power-crunch-00c1a50d?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-26T18:16:22.698706+00:00"
-  },
   {
    "title": "Analysis: Why a $2 trillion deficit and 5% Treasury yields are becoming America's biggest economic challenge",
    "link": "https://www.cnbc.com/2026/10/15/treasury-yields-deficit-national-debt-ai.html",
@@ -11227,6 +11217,16 @@
    ],
    "score": 1,
    "ts": "2026-10-29T18:05:15.668428+00:00"
+  },
+  {
+   "title": "Italy blames German gas storage delays for price spike",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQSzZlWmhfdlVvcVBSQW5kNU1SZ3QzVWd5SWx4U21YcmZBdnhzN1I1RzhmNGJWeDd3Mm12VXh0NVd3N3dfZUN5LXYyVnpMWGxSM21PaUV0R1RvMmZTMEVMbVFiaFdQYzVtd2RJdEdBc01ZT0M4RFV3X0NueldaamdtUUxRSjB6LUpRbjNickprenpfX05mcjNRTjV6S2hKSlE3ekxJQg?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T18:20:15.657424+00:00",
+   "title_ru": "Италия винит Германию в задержках хранения газа из-за скачка цен"
   }
  ],
  "last_digest": "2026-10-29",
@@ -11278,7 +11278,7 @@
   "2026-10-29-21"
  ],
  "calendar": {
-  "fetched": "2026-10-29T12:16:43.417394+00:00",
+  "fetched": "2026-10-29T18:20:15.657424+00:00",
   "events": [
    {
     "title": "Bank Holiday",
