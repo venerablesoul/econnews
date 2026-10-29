@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "2420d7dac20f0122": "2026-10-26T00:48:52.544062+00:00",
   "158d72bd86764f91": "2026-10-26T00:58:52.515046+00:00",
   "75c71506186f1ce8": "2026-10-26T00:58:52.515046+00:00",
   "95dffe34f933f3af": "2026-10-26T01:13:52.484541+00:00",
@@ -1087,16 +1086,6 @@
   "cad208adc5412100": "2026-10-29T00:45:50.484062+00:00"
  },
  "recent": [
-  {
-   "title": "Five economic challenges facing Brazil's re-elected President Lula",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPcHk0a1NUT2ZNSm9tR2JkZnJ1YUtTdHRRVk1UQ05BbXpXYmtNYy1fY2MzaklhQ09YVGRmOUdHaW4yMVhsX1RpRGRacHFrNFpOcEFsRlBJcWpMSElnNGFKaVNCZTlzSC1RMFpyc1BuY2txb0NEd3I4X3hDTUNpcVh3clpDb19YVFdiOGRsNF9LQ0xBRWVPR2dEZzd2M0UzNElWNzNHOWZPcFhwcGp1ejZ1VGluaUM3Yk0?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T00:48:52.544062+00:00",
-   "title_ru": "Пять экономических проблем, стоящих перед переизбранным президентом Бразилии Лулой"
-  },
   {
    "title": "Musk Claims SpaceX Closed $40 Billion Debt Deal for AI Chips",
    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPbVAyZmZTRzViZmxwNzRUSGd5MXpWNlRFLWlzT3RBMWx2cUhhaFhXUGRHeHRjam9LUldoZUpJNnVyTk9JcGdzVC1FTzNhQWVnWUJlV2hEZ1lFRzR6aE1TWXFiUG1tYWF1c3FjX00tX3FoMXk5bUtrNm1Sd2k3QTd1b0dYUUlhbHBJRDRabHg5VmdyLTV5TXRtZ1ZMWmJIeF9iYWh5T1dqMUZYbkF0ZlVBaWtn?oc=5",
@@ -13435,6 +13424,38 @@
    },
    {
     "src": "sec",
+    "id": "b3d045d4b1c79270",
+    "ticker": "TTMI",
+    "company": "TTM TECHNOLOGIES INC",
+    "who": "Edwin Roks",
+    "role": "CEO",
+    "type": "buy",
+    "value": 440350,
+    "shares": 5000,
+    "price": 88.07,
+    "plan": false,
+    "date": "2026-10-28",
+    "disclosed": "2026-10-28",
+    "link": "https://www.sec.gov/Archives/edgar/data/1705520/000119312526436562/0001193125-26-436562-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "5b1270d185fc2330",
+    "ticker": "TTMI",
+    "company": "TTM TECHNOLOGIES INC",
+    "who": "Wajid Ali",
+    "role": "Director",
+    "type": "buy",
+    "value": 902460,
+    "shares": 10000,
+    "price": 90.25,
+    "plan": false,
+    "date": "2026-10-28",
+    "disclosed": "2026-10-28",
+    "link": "https://www.sec.gov/Archives/edgar/data/1561100/000119312526436557/0001193125-26-436557-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "aab4ff84a8532881",
     "ticker": "RDWR",
     "company": "RADWARE LTD",
@@ -17320,38 +17341,6 @@
     "date": "2026-10-20",
     "disclosed": "2026-10-21",
     "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000368/0001510281-26-000368-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "d3f2ec59748b2162",
-    "ticker": "HUBS",
-    "company": "HUBSPOT INC",
-    "who": "Brian Halligan",
-    "role": "Director",
-    "type": "sell",
-    "value": 2036345,
-    "shares": 8500,
-    "price": 239.57,
-    "plan": true,
-    "date": "2026-10-20",
-    "disclosed": "2026-10-21",
-    "link": "https://www.sec.gov/Archives/edgar/data/1603527/000119312526427840/0001193125-26-427840-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "7762a3784ceb6963",
-    "ticker": "LEO",
-    "company": "BNY MELLON STRATEGIC MUNICIPALS, INC.",
-    "who": "Saba Capital Management, L.p.",
-    "role": "10% owner",
-    "type": "buy",
-    "value": 44181,
-    "shares": 7724,
-    "price": 5.72,
-    "plan": false,
-    "date": "2026-10-20",
-    "disclosed": "2026-10-21",
-    "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000369/0001510281-26-000369-index.htm"
    }
   ],
   "docs": {
@@ -17394,6 +17383,7 @@
    "0001493152-26-049123",
    "0001577526-26-000167",
    "0000950103-26-016313",
+   "0001193125-26-436557",
    "0001204816-26-000057",
    "0001094718-26-000011",
    "0001140361-26-041080",
@@ -17402,6 +17392,7 @@
    "0001437749-26-033821",
    "0001493152-26-049125",
    "0001022079-26-000118",
+   "0000933029-26-000004",
    "0001193125-26-436459",
    "0002010300-26-000035",
    "0001877346-26-000027",
@@ -17416,18 +17407,16 @@
    "0001628280-26-067986",
    "0001577526-26-000177",
    "0001577526-26-000173",
-   "0001510281-26-000388",
    "0002012383-26-003952",
    "0000919574-26-007290",
-   "0001610717-26-000445",
    "0001577526-26-000175",
-   "0001398344-26-019008",
    "0001628280-26-067978",
    "0001705952-26-000016",
    "0001807561-26-000026",
    "0001628280-26-067980",
    "0001505300-26-000016",
    "0000708955-26-000202",
+   "0001193125-26-436562",
    "0001577526-26-000171",
    "0000087347-26-000126",
    "0001093557-26-000187",
