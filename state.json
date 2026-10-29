@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "bf1dbf926acafe51": "2026-10-26T02:28:52.432064+00:00",
-  "ed17e724ce351e15": "2026-10-26T02:28:52.432064+00:00",
   "c01a2eedc2dc786c": "2026-10-26T02:33:52.469406+00:00",
   "ce8dded2ae934383": "2026-10-26T02:33:52.469406+00:00",
   "69cea178aa52b471": "2026-10-26T02:33:52.469406+00:00",
@@ -1078,7 +1076,8 @@
   "94214e3b05d5f0b6": "2026-10-29T02:15:50.425477+00:00",
   "417c7fdf01d2c9bd": "2026-10-29T02:15:50.425477+00:00",
   "fdf4639479d06f53": "2026-10-29T02:20:50.499006+00:00",
-  "23d990c709d8bf1f": "2026-10-29T02:25:50.414424+00:00"
+  "23d990c709d8bf1f": "2026-10-29T02:25:50.414424+00:00",
+  "05f06ac33d6726b7": "2026-10-29T02:31:19.869922+00:00"
  },
  "recent": [
   {
@@ -10703,6 +10702,21 @@
     "ruble",
     "Russia"
    ]
+  },
+  {
+   "title": "HK Dollar Peg Architect Says Narrower Band May Ease Speculation",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-29/hk-dollar-peg-architect-says-narrower-band-may-ease-speculation",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T02:31:19.869922+00:00",
+   "title_ru": "Архитектор привязки к гонконгскому доллару говорит, что более узкая полоса может облегчить спекуляцию",
+   "lead": "Narrowing the Hong Kong dollar’s trading band against the US greenback may enhance stability and reassure the public if such a move were ever implemented, according to John Greenwood, the economist dubbed the father of the city’s…",
+   "lead_ru": "Сужение торгового диапазона гонконгского доллара по отношению к доллару США может повысить стабильность и успокоить общественность, если такой шаг когда-либо будет реализован, по словам Джона Гринвуда, экономиста, которого называют отцом города...",
+   "tags": [
+    "dollar"
+   ]
   }
  ],
  "last_digest": "2026-10-28",
@@ -10725,7 +10739,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 1,
+  "Fed": 0,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
