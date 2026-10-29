@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "cebb0d1140627143": "2026-10-26T15:26:22.762219+00:00",
-  "8ce937bf1e5fd601": "2026-10-26T15:26:22.762219+00:00",
-  "4f8a465d4cdaa1f0": "2026-10-26T15:26:22.762219+00:00",
-  "8a2ce73bfb18b282": "2026-10-26T15:26:22.762219+00:00",
   "78cc49ee4323f384": "2026-10-26T15:31:22.835032+00:00",
   "9c7771d77081f721": "2026-10-26T15:31:22.835032+00:00",
   "0502488355bb16a0": "2026-10-26T15:31:22.835032+00:00",
@@ -1058,37 +1054,11 @@
   "835879dae75cef4c": "2026-10-29T15:15:15.766819+00:00",
   "8f5314f12f7bd551": "2026-10-29T15:20:15.824532+00:00",
   "e3c3c21a792da5cf": "2026-10-29T15:20:15.824532+00:00",
-  "22b0342965212f6a": "2026-10-29T15:25:15.676156+00:00"
+  "22b0342965212f6a": "2026-10-29T15:25:15.676156+00:00",
+  "2ff758d6ce4fd638": "2026-10-29T15:30:15.651229+00:00",
+  "9c714e6f5fcdded7": "2026-10-29T15:30:15.651229+00:00"
  },
  "recent": [
-  {
-   "title": "Petrobras CEO calls selloff after Lula win speculative, sees buying opportunity",
-   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNTmdiRGEwaHZQdnQ3MHB5eERHYU1pZUtOUFhJdkg4TGN4aUt4UVYzU1FsdVdvaXFjMU9QT3NsQTZpUHpkMkNfWUx4dzZpa2dkNlBaUzZ1UDBMXzVIUjl5OUJPVkVlVjFNYUJmdW9TQ3JOSXpiMFFYQVBXSXJUMGY2QlFVVUY3ajNLc1dObW4wSU1xSHAwRWxQc3VoNDYzTFFZd2hEZ2MxRmtFOThDVkgwVlZfNmNtblAwaFNiSkVVSG9ENC1ESnNQRE1B?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-26T15:26:22.762219+00:00",
-   "title_ru": "Генеральный директор Petrobras называет распродажу после победы Лулы спекулятивной и видит возможность покупки",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "Saudi Arabia’s Houthi Challenge Shifts Fears to Non-Oil Economy",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-26/saudi-arabia-s-houthi-challenge-shifts-fears-to-non-oil-economy",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-26T15:26:22.762219+00:00",
-   "title_ru": "Вызов хуситов Саудовской Аравии переносит опасения на ненефтяную экономику",
-   "lead": "Saudi Arabia’s oil industry managed to ride out concerns in the early days of the Iran war and keep exports flowing.",
-   "lead_ru": "Нефтяной промышленности Саудовской Аравии удалось преодолеть опасения в первые дни войны с Ираном и сохранить экспорт.",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "Oil stocks in US strategic petroleum reserve fall to lowest level since 1982",
    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOVVNMUGdfdGo5OFI2RExWUFBBTkQ3SWhMaVNCajNGUER0Si1ULTM0QnJ2UDZoMURnczVfU0N4dXVfN3VjV2Qxd2VGcW1YcUxYb2FrdG1wa3VsdDZ2YldVeExjQXZrQjRtcld4VHFrTjMxeVEzU2JGM1E2TTJTTjNTc3llMUo4SkNYanhrb2Fqb2l0TmpQaENReFpVbkJMSk9hbG5XbW1ObnFMdGZENFNZQTBzdnEwQzhFRUVacTF1UQ?oc=5",
@@ -11118,6 +11088,36 @@
    "lead_ru": "После мирового финансового кризиса 2009 года рынок мусорных облигаций в Европе не был таким разделенным.",
    "tags": [
     "bonds"
+   ]
+  },
+  {
+   "title": "Lagarde Quits ECB to Shed Neutrality and Enter Political Fray",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-29/lagarde-quits-ecb-to-shed-neutrality-and-enter-political-fray-mvtp2d3u",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-29T15:30:15.651229+00:00",
+   "title_ru": "Лагард покидает ЕЦБ, чтобы отказаться от нейтралитета и вступить в политическую драку",
+   "lead": "President Christine Lagarde said she quit as European Central Bank early to speak out on political matters precluded by her current role.",
+   "lead_ru": "Президент Кристин Лагард сказала, что она досрочно ушла с поста Европейского центрального банка, чтобы высказываться по политическим вопросам, которым препятствует ее нынешняя роль.",
+   "tags": [
+    "ECB"
+   ]
+  },
+  {
+   "title": "Cyfrowy Polsat Pledges to Resume Dividends, Cut Debt in Strategic Reset",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-29/cyfrowy-polsat-pledges-to-resume-dividends-cut-debt-in-strategic-reset",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T15:30:15.651229+00:00",
+   "title_ru": "Cyfrowy Polsat обещает возобновить выплату дивидендов, сократить долг в стратегической перезагрузке",
+   "lead": "Cyfrowy Polsat SA shares slumped the most on record on Thursday as the Polish company prioritized debt reduction its debt in its new strategy, pushing the prospect of renewed dividend payments into the distant future.",
+   "lead_ru": "Акции Cyfrowy Polsat SA упали больше всего за всю историю наблюдений в четверг, поскольку польская компания в своей новой стратегии определила приоритет сокращения долга, подталкивая перспективу возобновления выплат дивидендов в отдаленное будущее.",
+   "tags": [
+    "markets"
    ]
   }
  ],
