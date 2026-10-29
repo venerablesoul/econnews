@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "1dd464eac9aa269b": "2026-10-26T02:03:52.499962+00:00",
-  "7eecac282f624045": "2026-10-26T02:08:52.508446+00:00",
   "fdf4639479d06f53": "2026-10-26T02:13:52.515425+00:00",
   "4041979994ec3719": "2026-10-26T02:13:52.515425+00:00",
   "bf1dbf926acafe51": "2026-10-26T02:28:52.432064+00:00",
@@ -1075,37 +1073,12 @@
   "d9d8c5a61187e1a4": "2026-10-29T01:20:50.436839+00:00",
   "f2074e1588567e82": "2026-10-29T01:30:50.422605+00:00",
   "6b4850dff0ef32c8": "2026-10-29T01:40:50.437069+00:00",
-  "1847ae4b65e9119c": "2026-10-29T01:55:50.421115+00:00"
+  "1847ae4b65e9119c": "2026-10-29T01:55:50.421115+00:00",
+  "9b4807e570c3cdf0": "2026-10-29T02:05:50.441507+00:00",
+  "eaabe532c90c139b": "2026-10-29T02:10:50.456399+00:00",
+  "663db2dfe0315741": "2026-10-29T02:10:50.456399+00:00"
  },
  "recent": [
-  {
-   "title": "Asset Manager Australian Dollar Shorts Hit Record on Risk-Off",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-26/asset-manager-australian-dollar-shorts-hit-record-on-risk-off",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T02:03:52.499962+00:00",
-   "title_ru": "Управляющий активами Австралийские долларовые шорты побили рекорд по риску",
-   "lead": "Asset managers’ short positions on the Australian dollar surged to a record high in the week ended Oct.",
-   "lead_ru": "Короткие позиции управляющих активами по австралийскому доллару выросли до рекордно высокого уровня за неделю, закончившуюся в октябре.",
-   "tags": [
-    "dollar"
-   ]
-  },
-  {
-   "title": "Saudi Arabia to store crude oil in Singapore from second half of 2027",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQUzBNLUdzSXJyUVlmV19mTVRxempkeGpFOERuNWVHSnFqWFh2TkZqYk0yYjkwVVV1UkhPY0lzUGJHZk0tNjl6WDJtTkN5R0xQdFZNZ0NpR0Y5eVRWa1dLN0ZmX1dZWUlrTlh0YlRhZWhMbmZKRVJmTTl0anpmb1hrQ3Iwb1gzNTNzRUNybzhMdGR3VVFkd0dZa05Nc3RPOXp2QklZTGZydnYweXM?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-26T02:08:52.508446+00:00",
-   "title_ru": "Саудовская Аравия будет хранить сырую нефть в Сингапуре со второй половины 2027 года",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "Currency markets subdued ahead of pivotal central bank week",
    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQWlRGQXNlMDJDS0ZlQnJqVlI0Q3FOUUhyZmpfcUY2TDJNOTA5a0NDMEc5QWpKZ3NrQlZ0QWJSMERlU2wzQlFxcWF0OVFRVlNOSUYydEdiaU5LaTFvVDMxTk5NWTF6NVVFZEdRcW8tOHpZRnlmWDhiRnV3QlllYnVtVldqTGllWmY2RnF1MWVlMFRBT0xWbHliN3pWM3NhQnNzRV80ZHJ5T0M?oc=5",
@@ -10666,6 +10639,32 @@
    "lead_ru": "В течение 13 лет Банк Японии пытался уговорить инфляцию повыситься до 2%, стремясь избавиться от дефляционной спирали и десятилетий экономического дрейфа.",
    "tags": [
     "inflation"
+   ]
+  },
+  {
+   "title": "Lynas Expects One-Month Shutdown at Malaysian Rare-Earths Plant",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-29/lynas-expects-one-month-shutdown-at-malaysian-rare-earths-plant",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-29T02:10:50.456399+00:00",
+   "title_ru": "Lynas ожидает остановку на один месяц на малайзийском заводе по производству редкоземельных металлов",
+   "lead": "Lynas Rare Earths Ltd. said planned maintenance at its refinery in Malaysia would cut production this quarter, but expects stockpiles of the critical minerals will ensure that customer orders aren’t affected.",
+   "lead_ru": "Lynas Rare Earths Ltd. заявила, что плановое техническое обслуживание на ее нефтеперерабатывающем заводе в Малайзии сократит производство в этом квартале, но ожидает, что запасы критически важных минералов гарантируют, что это не повлияет на заказы клиентов."
+  },
+  {
+   "title": "Dollar steady after Fed hold leaves rate path murky",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNYmVmOE5mU3JyckhjNGlWelQ5QVdhNzkwU0h1Zkd4bjJ6UGszY2lYem1BRmxjWW95VDBrYzg5NXNIWFhFWmNjNmFlUHZleE01YnNOWjRWVV9LWU1SYS1lRlVoRm15U1FrNjdvbkhtVzA4UWNzREJFWjBmUS1vU1FmcEN5a2loa1VsaHRRN190UHZNRmtvTVR1a0RmUlZwTlBPTmtoVFpURGpudw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-29T02:10:50.456399+00:00",
+   "title_ru": "Доллар стабилен после того, как удержание ФРС оставляет траекторию ставки мутной",
+   "tags": [
+    "Fed",
+    "dollar"
    ]
   }
  ],
