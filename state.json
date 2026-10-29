@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c74f2e472ec1c67d": "2026-10-26T10:25:24.116334+00:00",
-  "a4d58eba8d893b0a": "2026-10-26T10:25:24.116334+00:00",
   "f3400f6b485c89dd": "2026-10-26T10:30:24.206858+00:00",
   "43763a5282922b03": "2026-10-26T10:35:24.242855+00:00",
   "a0c5f9a1832c0ba9": "2026-10-26T10:35:24.242855+00:00",
@@ -1026,37 +1024,11 @@
   "69fe08a9117def57": "2026-10-29T10:11:43.364040+00:00",
   "0c0d5b2ef031c330": "2026-10-29T10:16:43.438503+00:00",
   "a22bb58ee6d78573": "2026-10-29T10:16:43.438503+00:00",
-  "ea279e6363583c24": "2026-10-29T10:21:43.369535+00:00"
+  "ea279e6363583c24": "2026-10-29T10:21:43.369535+00:00",
+  "f644d5924e9814c0": "2026-10-29T10:26:43.374354+00:00",
+  "f5e8cee9d804c076": "2026-10-29T10:26:43.374354+00:00"
  },
  "recent": [
-  {
-   "title": "UK sanctions 15 commanders from rival Sudan factions over wartime rape",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPNnR6N0kxYjNWWHZIMU9aUXZZcFNHXzh4Tk9kaXdsZGJ3V2hhaEh4Mllpd0kwSkZIR1dxNjZUaXk3aU14d3FTTTZWaFJsRGxmdkd2bV9qZEJacEF3VlhkMGRVX0Y5NGE2bjBMTlZ2UFZJT01VcS1TN0JDUTAtcHp0aWwyeVR5dXg5NUNWaVVvLUxnbFdXY19qajMzSEdHRVJHQ081czhYNk1VQ1VKTzZR?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-26T10:25:24.116334+00:00",
-   "title_ru": "Великобритания ввела санкции в отношении 15 командиров соперничающих суданских группировок за изнасилования во время войны",
-   "tags": [
-    "sanctions"
-   ]
-  },
-  {
-   "title": "Dutch Government Plans to Cut 25,000 Jobs in AI-Led Overhaul",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-26/dutch-government-plans-to-cut-25-000-jobs-in-ai-led-overhaul",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T10:25:24.116334+00:00",
-   "title_ru": "Правительство Нидерландов планирует сократить 25 000 рабочих мест в рамках капитального ремонта под руководством искусственного интеллекта",
-   "lead": "The Dutch government aims to cut 25,000 civil servant jobs in an AI-led efficiency drive targeting annual savings of €3.5 billion ($3.9 billion).",
-   "lead_ru": "Правительство Нидерландов намерено сократить 25 000 рабочих мест среди государственных служащих в рамках программы повышения эффективности, основанной на искусственном интеллекте, с целью ежегодной экономии в размере 3,5 млрд евро (3,9 млрд долларов США).",
-   "tags": [
-    "jobs"
-   ]
-  },
   {
    "title": "Brazil Catches Investors Leaning the Wrong Way",
    "link": "https://www.bloomberg.com/news/newsletters/2026-10-26/brazil-catches-investors-leaning-the-wrong-way",
@@ -10606,6 +10578,34 @@
    "tags": [
     "ECB"
    ]
+  },
+  {
+   "title": "Costa Says EU Will Start Search for New ECB President Today",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-29/costa-says-eu-will-start-search-for-new-ecb-president-today",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-29T10:26:43.374354+00:00",
+   "title_ru": "Коста говорит, что ЕС начнет поиск нового президента ЕЦБ сегодня",
+   "lead": "European Council President Antonio Costa said the process to find a successor for European Central Bank President Christine Lagarde will kick off on Thursday.",
+   "lead_ru": "Президент Европейского совета Антонио Коста заявил, что процесс поиска преемника президента Европейского центрального банка Кристин Лагард начнется в четверг.",
+   "tags": [
+    "ECB"
+   ]
+  },
+  {
+   "title": "Renault Q3 revenue beats forecast as EV demand lifts shares",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQaXFwZ2VwSDBZVUQ0S0ljTzZkUnV5VERleGhMNHk2Y0ZkY2NzYTFnWS1SVjY3ajg4Q3lUOWNWZE5zRTBnT012MnV5X25OYzZiSE5tdUxBcVZ0WlFHWU9nT1FQWGg0N0UxelN0elFmcWxWRThVYm5PNy13ajQ3SDhCQWNiVkxnNnhLRXR6ZVB4blRuekpTR3BCS043bXY4R2Yw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-29T10:26:43.374354+00:00",
+   "title_ru": "Выручка Renault в третьем квартале превзошла прогноз, поскольку спрос на электромобили поднимает акции",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-28",
@@ -17270,6 +17270,7 @@
   "checked": "2026-10-29T09:31:43.378808+00:00",
   "sec_seen": [
    "0001999371-26-023803",
+   "0001493152-26-049161",
    "0001605957-26-000005",
    "0002103469-26-000014",
    "0001104659-26-119784",
@@ -17290,7 +17291,6 @@
    "0001104659-26-119785",
    "0001609151-26-000146",
    "0001609151-26-000145",
-   "0001493152-26-049135",
    "0001535929-26-000181",
    "0001493152-26-049156",
    "0001437749-26-033849",
