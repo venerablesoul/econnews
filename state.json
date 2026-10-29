@@ -1023,7 +1023,10 @@
   "97b6799f20ddd115": "2026-10-29T09:11:43.389641+00:00",
   "a977c5953f606ee7": "2026-10-29T09:31:43.378808+00:00",
   "d30edcb80ad676b3": "2026-10-29T09:31:43.378808+00:00",
-  "26fdecbf9a2be4ff": "2026-10-29T09:36:43.399434+00:00"
+  "26fdecbf9a2be4ff": "2026-10-29T09:36:43.399434+00:00",
+  "42f7e151308ed48e": "2026-10-29T09:51:43.407981+00:00",
+  "e620b99ba81497a1": "2026-10-29T09:51:43.407981+00:00",
+  "7fecc5cb8eafea7e": "2026-10-29T09:51:43.407981+00:00"
  },
  "recent": [
   {
@@ -10585,6 +10588,43 @@
    "score": 4,
    "ts": "2026-10-29T09:36:43.399434+00:00",
    "title_ru": "Рост доходов в Европе впервые за несколько лет может составить конкуренцию США"
+  },
+  {
+   "title": "Euro Bearish Bias Persists in Options and Charts Before ECB",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-29/euro-bearish-bias-persists-in-options-and-charts-before-ecb",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-29T09:51:43.407981+00:00",
+   "title_ru": "Медвежье смещение евро сохраняется в опционах и графиках перед ЕЦБ",
+   "lead": "The euro is trading near its weakest level since May 2025 in the run-up to the European Central Bank’s interest rate meeting later Thursday, with options and technical signals pointing to the risk of further losses.",
+   "lead_ru": "Евро торгуется вблизи своего самого слабого уровня с мая 2025 года в преддверии заседания Европейского центрального банка по процентной ставке позже в четверг, при этом опционы и технические сигналы указывают на риск дальнейших потерь.",
+   "tags": [
+    "ECB",
+    "rates"
+   ]
+  },
+  {
+   "title": "South Africa Economy 4.9% Bigger Than Thought After Rebasing",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-29/south-african-economy-4-9-bigger-than-reported-after-rebasing",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T09:51:43.407981+00:00",
+   "title_ru": "Экономика Южной Африки на 4,9% больше, чем предполагалось после восстановления",
+   "lead": "South Africa’s economy is 4.9% larger than previously estimated after the country’s statistics agency rebased the data series to update the way that it measures gross domestic product, and refined its estimates of unobserved…",
+   "lead_ru": "Экономика Южной Африки на 4,9% больше, чем предполагалось ранее, после того, как статистическое агентство страны пересмотрело ряды данных, чтобы обновить способ измерения валового внутреннего продукта, и уточнило свои оценки ненаблюдаемого..."
+  },
+  {
+   "title": "Центробанк заявил о планах раскрыть обезличенные рыночные данные",
+   "link": "https://www.rbc.ru/economics/29/10/2026/6ae308c66496c8e48808dbd2",
+   "sources": [
+    "RBC"
+   ],
+   "score": 1,
+   "ts": "2026-10-29T09:51:43.407981+00:00"
   }
  ],
  "last_digest": "2026-10-28",
@@ -17252,8 +17292,8 @@
    "0000933029-26-000004",
    "0001628280-26-067986",
    "0001605957-26-000005",
-   "0002103469-26-000014",
    "0001577526-26-000167",
+   "0002103469-26-000014",
    "0001193125-26-436562",
    "0001104659-26-119784",
    "0002127826-26-000007",
