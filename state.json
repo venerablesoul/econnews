@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "dfaa07e0de0d8db4": "2026-10-26T10:00:24.300711+00:00",
-  "b746dbb879f38700": "2026-10-26T10:00:24.300711+00:00",
-  "476bfe4b5fda7471": "2026-10-26T10:00:24.300711+00:00",
   "496be01d2415b7d4": "2026-10-26T10:05:24.233875+00:00",
   "f1e0c8775ff01e4e": "2026-10-26T10:10:24.226348+00:00",
   "5015b1bac01b58dd": "2026-10-26T10:10:24.226348+00:00",
@@ -1026,46 +1023,16 @@
   "e620b99ba81497a1": "2026-10-29T09:51:43.407981+00:00",
   "7fecc5cb8eafea7e": "2026-10-29T09:51:43.407981+00:00",
   "73fbdc759381250a": "2026-10-29T09:56:43.357396+00:00",
-  "cc6198600efd6b67": "2026-10-29T09:56:43.357396+00:00"
+  "cc6198600efd6b67": "2026-10-29T09:56:43.357396+00:00",
+  "5e25e64b9fc73196": "2026-10-29T10:01:43.454343+00:00",
+  "58f4c85a938dbd52": "2026-10-29T10:01:43.454343+00:00",
+  "046342c6ebae65d4": "2026-10-29T10:01:43.454343+00:00",
+  "9c51bda3f6a7ff41": "2026-10-29T10:01:43.454343+00:00",
+  "a1cdf8a2697a773d": "2026-10-29T10:01:43.454343+00:00",
+  "2bc4594029e70c66": "2026-10-29T10:01:43.454343+00:00",
+  "67e4656193cd2b41": "2026-10-29T10:01:43.454343+00:00"
  },
  "recent": [
-  {
-   "title": "Yuan Heng Gas Holdings Ltd (0332.HK) | Stock Price & Latest News",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1IaVJkQ3FNajZLbGtIOGZaekk4eW9iMFFwMW5rakl1ZXZGQUtIQ0tILWRTWG5SUV9ad2RwcmxfMFFUT1VnT0tlY0l0bVgzTlIxLUtyU09tNUczX1ZGWUxhcHY4T19KT1k2dzhEcA?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-26T10:00:24.300711+00:00",
-   "title_ru": "Юань Хэн Газ Холдингс Лтд (0332.HK) | Цена акций и последние новости",
-   "tags": [
-    "China"
-   ]
-  },
-  {
-   "title": "Chinese Conglomerate Huafa Seeks to Extend Some Debt Payments",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-26/chinese-conglomerate-huafa-seeks-to-extend-some-debt-payments",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T10:00:24.300711+00:00",
-   "title_ru": "Китайский конгломерат Huafa пытается продлить некоторые выплаты по долгам",
-   "lead": "Zhuhai Huafa Group Co., one of China’s largest local government-owned conglomerates, is in talks with creditors of some debts to push back payments, people familiar with the matter said.",
-   "lead_ru": "Zhuhai Huafa Group Co., один из крупнейших китайских конгломератов, принадлежащих местному правительству, ведет переговоры с кредиторами по поводу некоторых долгов с целью отсрочки платежей, сообщили люди, знакомые с ситуацией.",
-   "tags": [
-    "China"
-   ]
-  },
-  {
-   "title": "Cheesecake Factory was just the subject of unflattering headlines. It’s actually one of the hottest stocks around.",
-   "link": "https://www.marketwatch.com/story/cheesecake-factory-was-just-the-subject-of-unflattering-headlines-its-actually-one-of-the-hottest-stocks-around-8435cc63?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-26T10:00:24.300711+00:00"
-  },
   {
    "title": "Healey to shield low-income pensioners from income tax in the Budget",
    "link": "https://www.bbc.co.uk/news/articles/ck98zp7zeq65o?at_medium=RSS&at_campaign=rss",
@@ -10628,6 +10595,88 @@
    "score": 3,
    "ts": "2026-10-29T09:56:43.357396+00:00",
    "title_ru": "Вьетнам устанавливает 65% государственную собственность для крупных банков, чтобы сохранить контроль над стратегическими группами"
+  },
+  {
+   "title": "ECB President Lagarde to step down on 7 February 2027",
+   "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261029~abbb6dc64b.en.html",
+   "sources": [
+    "ECB",
+    "Bloomberg"
+   ],
+   "score": 9,
+   "ts": "2026-10-29T10:01:43.454343+00:00",
+   "title_ru": "Президент ЕЦБ Лагард уйдет в отставку 7 февраля 2027 года",
+   "lead": "President Christine Lagarde announced she’ll leave the European Central Bank in early 2027, according to people familiar with the situation.",
+   "lead_ru": "По словам людей, знакомых с ситуацией, президент Кристин Лагард объявила, что покинет Европейский центральный банк в начале 2027 года.",
+   "tags": [
+    "ECB"
+   ]
+  },
+  {
+   "title": "Hong Kong Monetary Authority leaves interest rates unchanged, tracking Fed move",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPN3J6WGNOeVpGVUFtLVBCWkItVWVEQmQwMnhTeldWYko5SnR6akxlQTJOR2ZMbnZodUhnMk8zMjRLaFpsQm5iMVFlTnJheVlnQzVhOW5WVFRYdnZHMUFxRWJBMVpUMHhubklkaFJ0dVloc3d0dTItcnJ5NEFMYlBXY1F1ZTFHV3lpN3NOSDNKQkJ6THNpbUp0MlMwRlpSQU4yNzdUMmZQOVFFSS1mVWROaUJpSjNBNXJZQS1nV2xEU1FJQmJaZ1FBenROYkM4UQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-29T10:01:43.454343+00:00",
+   "title_ru": "Денежно-кредитное управление Гонконга оставляет процентные ставки без изменений, отслеживая движение ФРС",
+   "tags": [
+    "Fed",
+    "rates"
+   ]
+  },
+  {
+   "title": "Kremlin aide says discussions underway with US to lift sanctions on Russian investment fund",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQVl9HWWNraGlYV3NRSGloLWwxUjBRN0ZDc1M4dVZKTnM4NEtDejItVlAwZFdib3VsNWE2bk1XX0Fpc2dmLVh3X3hBeFNmVkdyTk1OSW9VbUd5TFdOaWtQQkxiWnBjaXdOWHlwYklBSlZ5ekYxTEdEVEt0T1NfOGF3cExwWVVCZlM1RFhsUnpCYzBrOWNxaDJEZzloSTZQM1p4OE01UlJGT2hmM1R2VjZtS1lvUEgwTVJ3WFRfWTVFMA?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-29T10:01:43.454343+00:00",
+   "title_ru": "Помощник Кремля говорит, что с США ведутся переговоры об отмене санкций в отношении российского инвестиционного фонда",
+   "tags": [
+    "sanctions",
+    "Russia"
+   ]
+  },
+  {
+   "title": "Bank of England sets out approach to tokenised collateral in central clearing",
+   "link": "https://www.bankofengland.co.uk/news/2026/october/bank-of-england-sets-out-approach-to-tokenised-collateral-in-central-clearing",
+   "sources": [
+    "Bank of England"
+   ],
+   "score": 4,
+   "ts": "2026-10-29T10:01:43.454343+00:00",
+   "title_ru": "Банк Англии излагает подход к токенизированному обеспечению в центральном клиринге",
+   "lead": "The Bank of England has today launched a consultation supporting central counterparties (CCPs) acceptance of tokenised forms of eligible collateral.",
+   "lead_ru": "Сегодня Банк Англии начал консультации, поддерживающие принятие центральными контрагентами (CCP) токенизированных форм приемлемого обеспечения."
+  },
+  {
+   "title": "Healey's Budget Placates Gilt Markets, Santander Says (Video)",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-29/healey-s-budget-placates-gilt-markets-santander-says-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-29T10:01:43.454343+00:00",
+   "title_ru": "Бюджетные номера Healey's открывают рынки позолоты, говорит Сантандер (видео)",
+   "tags": [
+    "bonds"
+   ]
+  },
+  {
+   "title": "Petrobras' third-quarter oil and gas output rises 12% from a year earlier",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOX2dORlloRGtUV3MwM2x1cXF4LWZFRHc4RWw4eUFVcjJGYVZ3a3RBd2lzdXhUdWt0Q01IM09jRDFfcU15WW9aUHNuT2EtQndLOFppZjM2V2UwTERMWE1PbVJSTE8wcjdHOVpKWUVkLU05clhhOVBBdkdtVV8weUVsblJRLWdqRXUxLUxpR0NtZ3FoZHVoTXJmOVRuZkZmNHQ1UVFqak40cFFaR0FPMnRra0xB?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-29T10:01:43.454343+00:00",
+   "title_ru": "Добыча нефти и газа Petrobras в третьем квартале выросла на 12% по сравнению с годом ранее",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-28",
@@ -17295,8 +17344,8 @@
    "0000933029-26-000004",
    "0001628280-26-067986",
    "0001605957-26-000005",
-   "0002103469-26-000014",
    "0001577526-26-000167",
+   "0002103469-26-000014",
    "0001193125-26-436562",
    "0001104659-26-119784",
    "0002127826-26-000007",
