@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c01a2eedc2dc786c": "2026-10-26T02:33:52.469406+00:00",
-  "ce8dded2ae934383": "2026-10-26T02:33:52.469406+00:00",
-  "69cea178aa52b471": "2026-10-26T02:33:52.469406+00:00",
   "f72cbab0cca05147": "2026-10-26T02:48:52.471278+00:00",
   "4e7465fc081c543e": "2026-10-26T02:58:52.475883+00:00",
   "d062fb20e6d44266": "2026-10-26T03:03:52.529423+00:00",
@@ -1077,52 +1074,11 @@
   "417c7fdf01d2c9bd": "2026-10-29T02:15:50.425477+00:00",
   "fdf4639479d06f53": "2026-10-29T02:20:50.499006+00:00",
   "23d990c709d8bf1f": "2026-10-29T02:25:50.414424+00:00",
-  "05f06ac33d6726b7": "2026-10-29T02:31:19.869922+00:00"
+  "05f06ac33d6726b7": "2026-10-29T02:31:19.869922+00:00",
+  "ed17e724ce351e15": "2026-10-29T02:36:19.855016+00:00",
+  "ae80984dbc2f4563": "2026-10-29T02:36:19.855016+00:00"
  },
  "recent": [
-  {
-   "title": "Asia’s Busiest Earnings Week Puts AI Boom in Focus After Selloff",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOaHhUTFV6NTJwVWNQY0JUbWhWMEJGekFlSEJhYUVHeDZNWlNvMGVaQ1lQSlh1SDNRUmV5Q3Z0eEFiaW5KZEo1TFBHTTV6MUtkSEZDdXVydzZWcXZLWC0zTVdZUG1WaGc2WkJNZlB0Nnl4YUhnNkNwWHBJZlk5TnVNYy1nMmp4YkpJOEs2ZDJ5NHhyUGpXaXlpZWUzRjBCaWZXWXFNM3RGS0tlcHlhYnd6aGxWTExwUQ?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-26T02:33:52.469406+00:00",
-   "title_ru": "Самая загруженная неделя доходов в Азии ставит в центр внимания бум искусственного интеллекта после распродажи",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "Indian shares on track for muted open as oil concerns persist, Fed in focus",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOMGYzcFZiRkE2TE1hWGJhSDY1UldIcGcyQlBJSmttbjVOSmNPcUNhWG5LWjdMcEZkRzVfSnd6MGVCc3RlZmpXLUI1Sm03REFQeEtCYVRUNTNHampNX21PQXl3YlZLNkgtWVhjX2dxOGwwZVF0WUhUMHh0TDJoQ0RKUHk4dFdlMnVleVo1UnJTcUNIWkxxdnhxYnAxbVZZMU5hZ18yQ1NBdDlvLXhKRjdNWUkwcw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-26T02:33:52.469406+00:00",
-   "title_ru": "Открытие индийских акций будет приглушенным, поскольку опасения по поводу нефти сохраняются, ФРС в центре внимания",
-   "tags": [
-    "Fed",
-    "oil",
-    "markets"
-   ]
-  },
-  {
-   "title": "Investors Flee India Small-Caps as Margin Calls Come Knocking",
-   "link": "https://www.bloomberg.com/news/newsletters/2026-10-26/investors-flee-india-small-caps-as-margin-calls-come-knocking",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T02:33:52.469406+00:00",
-   "title_ru": "Инвесторы бегут из индийских компаний с малой капитализацией, когда стучатся требования по маржинальным требованиям",
-   "lead": "Smaller stocks account for a large share of positions funded through margin loans.",
-   "lead_ru": "На акции меньшего размера приходится большая доля позиций, финансируемых за счет маржинальных кредитов.",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "IEA's Birol does not expect energy markets to return to pre-war levels in 2027",
    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNV2ZfTHdlczRzUzg4VTlJa2R6czhZeEtoZW8taUE3MzFxWEh1MVh0U2FPdG5XcEs2ZVhGZ2JxT3JwSkVBUEtseTR0YktxN05ycmxmODRONkVMd3JEbUJQdDIycm5QSHRMcGZqejJDSk5kMkFtT3dMa2EwNnlTV3Q0ZTNieWFSbWJGUVBoNFVDcklUZlF6UDhsMDVqbTJvd2FlWHJqMVBTVDJnM1d5ejc1V2hpTjVxZ3NmcXBhUA?oc=5",
@@ -10716,6 +10672,21 @@
    "lead_ru": "Сужение торгового диапазона гонконгского доллара по отношению к доллару США может повысить стабильность и успокоить общественность, если такой шаг когда-либо будет реализован, по словам Джона Гринвуда, экономиста, которого называют отцом города...",
    "tags": [
     "dollar"
+   ]
+  },
+  {
+   "title": "CLSA Analyst: Samsung Shares Fell on Lack of Buybacks",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-29/clsa-analyst-samsung-shares-fell-on-lack-of-buybacks-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T02:36:19.855016+00:00",
+   "title_ru": "Аналитик CLSA: акции Samsung упали из-за отсутствия обратного выкупа",
+   "lead": "Samsung shares slid due to a lack of new announcements of share buybacks, according to CLSA Head of North Asia Semiconductors Research Sanjeev Rana. (Source: Bloomberg)",
+   "lead_ru": "Акции Samsung упали из-за отсутствия новых объявлений о выкупе акций, по словам главы CLSA North Asia Semiconductors Research Санджива Раны. (Источник: Bloomberg)",
+   "tags": [
+    "markets"
    ]
   }
  ],
