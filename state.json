@@ -1038,7 +1038,8 @@
   "4e43609615cd3d15": "2026-10-29T13:50:15.699412+00:00",
   "2331038f81132541": "2026-10-29T13:50:15.699412+00:00",
   "8b4dc6d6f4c77e6d": "2026-10-29T13:50:15.699412+00:00",
-  "9c54a10fb9afc4da": "2026-10-29T13:50:15.699412+00:00"
+  "9c54a10fb9afc4da": "2026-10-29T13:50:15.699412+00:00",
+  "7fed9d5f2623fed9": "2026-10-29T14:00:15.710586+00:00"
  },
  "recent": [
   {
@@ -10818,6 +10819,18 @@
    ],
    "score": 2,
    "ts": "2026-10-29T13:50:15.699412+00:00"
+  },
+  {
+   "title": "Minutes of the Meeting of the Court of Directors held on 17 September 2026",
+   "link": "https://www.bankofengland.co.uk/minutes/2026/september/court-minutes-17-september-2026",
+   "sources": [
+    "Bank of England"
+   ],
+   "score": 4,
+   "ts": "2026-10-29T14:00:15.710586+00:00",
+   "title_ru": "Протокол заседания Суда директоров, состоявшегося 17 сентября 2026 года",
+   "lead": "The Bank's Court of Directors acts as a unitary board, setting the organisation's strategy and budget and taking key decisions on resourcing and appointments.",
+   "lead_ru": "Суд директоров Банка выступает в качестве унитарного совета, определяющего стратегию и бюджет организации и принимающего ключевые решения по ресурсам и назначениям."
   }
  ],
  "last_digest": "2026-10-28",
@@ -13543,6 +13556,22 @@
     "date": "2026-10-28",
     "disclosed": "2026-10-29",
     "link": "https://www.sec.gov/Archives/edgar/data/1534574/000153457426000018/0001534574-26-000018-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "6a19e69b34a71fa0",
+    "ticker": "BFC",
+    "company": "Bank First Corp",
+    "who": "Todd A. Sprang",
+    "role": "Director",
+    "type": "buy",
+    "value": 59348,
+    "shares": 400,
+    "price": 148.37,
+    "plan": false,
+    "date": "2026-10-28",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/2096370/000110465926120006/0001104659-26-120006-index.htm"
    },
    {
     "src": "sec",
@@ -17431,22 +17460,6 @@
     "date": "2026-10-21",
     "disclosed": "2026-10-21",
     "link": "https://www.sec.gov/Archives/edgar/data/1780664/000178066426000043/0001780664-26-000043-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "f22238f0c1583f29",
-    "ticker": "MHH",
-    "company": "Mastech Digital, Inc.",
-    "who": "Shaw Steven A",
-    "role": "10% owner",
-    "type": "buy",
-    "value": 30026,
-    "shares": 4700,
-    "price": 6.39,
-    "plan": false,
-    "date": "2026-10-20",
-    "disclosed": "2026-10-21",
-    "link": "https://www.sec.gov/Archives/edgar/data/1437226/000119312526427279/0001193125-26-427279-index.htm"
    }
   ],
   "docs": {
@@ -17486,18 +17499,19 @@
   },
   "checked": "2026-10-29T13:45:15.716444+00:00",
   "sec_seen": [
-   "0001493152-26-049211",
-   "0001683168-26-008147",
-   "0001534574-26-000018",
-   "0001213900-26-113597",
-   "0001493152-26-049207",
-   "0001493152-26-049205",
-   "0001976408-26-000919",
    "0001513845-26-000143",
-   "0001976408-26-000920",
-   "0001493152-26-049209",
+   "0001493152-26-049205",
+   "0001493152-26-049207",
+   "0001683168-26-008147",
+   "0001104659-26-120006",
+   "0001534574-26-000018",
+   "0001976408-26-000919",
+   "0001493152-26-049211",
    "0001017475-26-000012",
-   "0001628280-26-068056"
+   "0001976408-26-000920",
+   "0001628280-26-068056",
+   "0001493152-26-049209",
+   "0001213900-26-113597"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
