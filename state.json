@@ -1050,7 +1050,11 @@
   "491a91281d755d3d": "2026-10-29T14:10:15.596614+00:00",
   "76b7e820a2792a4e": "2026-10-29T14:10:15.596614+00:00",
   "ac70fffaad839909": "2026-10-29T14:15:15.723969+00:00",
-  "8ace8bf72e1ab558": "2026-10-29T14:15:15.723969+00:00"
+  "8ace8bf72e1ab558": "2026-10-29T14:15:15.723969+00:00",
+  "f58a76f9e8790b99": "2026-10-29T14:20:15.754833+00:00",
+  "d8b6b2224c94ca6a": "2026-10-29T14:20:15.754833+00:00",
+  "1ad6555adbc8d1a9": "2026-10-29T14:20:15.754833+00:00",
+  "c24a09ebe7c675dc": "2026-10-29T14:20:15.754833+00:00"
  },
  "recent": [
   {
@@ -10963,6 +10967,59 @@
    "title_ru": "Макротрейдеры BofA избегают больших ставок после волатильного встряхивания рынка",
    "lead": "Bank of America Corp.’s macro traders are limiting risk exposure heading into year-end after upheaval in some of the world’s most popular trades.",
    "lead_ru": "Макротрейдеры Bank of America Corp. ограничивают подверженность риску в конце года после потрясений в некоторых из самых популярных в мире сделок."
+  },
+  {
+   "title": "ECB keeps rates unchanged but points to mounting inflation risk",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQWVJheVZacGhZZXFXZGZ5RU91NEt6eTlObWpmUnBvMFZKVmlVZ2xFVThBNkVrN1hxaTViSllZa0I0TzVMSW5Ub19vWk5ZcFBJZkdnX0lZNGtLZHpFVDF0N2didHE5MER6NjhpdnNyYmJGSVY4azhKTmE1V3pzY2MyOFZRTWtPUWNUS2FMT18zNGRXRlZpQkRUdFVVNDE1VEVGWUg4?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-29T14:20:15.754833+00:00",
+   "title_ru": "ЕЦБ сохраняет ставки без изменений, но указывает на растущий инфляционный риск",
+   "tags": [
+    "ECB",
+    "inflation"
+   ]
+  },
+  {
+   "title": "The Race to Replace Lagarde Begins",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-29/the-race-to-replace-lagarde-begins-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-29T14:20:15.754833+00:00",
+   "title_ru": "Начинается гонка за замену Лагард",
+   "lead": "Christine Lagarde's early exit as ECB president leaves a vacancy at the top of one of the world's most powerful central banks. Alex Morgan explains what happens now. (Source: Bloomberg)",
+   "lead_ru": "Ранний уход Кристин Лагард с поста президента ЕЦБ оставляет вакансию на вершине одного из самых мощных центральных банков мира. Алекс Морган объясняет, что происходит сейчас. (Источник: Bloomberg)",
+   "tags": [
+    "ECB"
+   ]
+  },
+  {
+   "title": "Eli Lilly Shares Surge on Raised Sales Forecast",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-29/eli-lilly-shares-surge-on-raised-sales-forecast-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-29T14:20:15.754833+00:00",
+   "title_ru": "Акции Eli Lilly выросли в связи с повышением прогноза продаж",
+   "lead": "Eli Lilly & Co. raised its full-year sales forecast as demand for its blockbuster obesity and diabetes drugs continues to surge.",
+   "lead_ru": "Eli Lilly & Co. повысила прогноз продаж на весь год, поскольку спрос на ее препараты от ожирения и диабета продолжает расти.",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "Healey accepts ‘hard decisions’ ahead as thinktank says 2020s set to be worst decade for living standards growth – UK politics live",
+   "link": "https://www.theguardian.com/politics/live/2026/oct/29/budget-john-healey-labour-uk-politics-latest-news",
+   "sources": [
+    "The Guardian"
+   ],
+   "score": 2,
+   "ts": "2026-10-29T14:20:15.754833+00:00"
   }
  ],
  "last_digest": "2026-10-28",
@@ -17631,8 +17688,8 @@
   },
   "checked": "2026-10-29T13:45:15.716444+00:00",
   "sec_seen": [
-   "0001493152-26-049205",
    "0001493152-26-049207",
+   "0001493152-26-049205",
    "0001104659-26-120006",
    "0001534574-26-000018",
    "0001225208-26-008549",
