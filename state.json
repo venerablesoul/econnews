@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "fbe4f652c0437925": "2026-10-26T19:11:22.703689+00:00",
   "a362288c218b5dee": "2026-10-26T19:16:22.807972+00:00",
   "4ffcd20e7c6f8afe": "2026-10-26T19:16:22.807972+00:00",
   "90d22dbfc0288a61": "2026-10-26T19:21:22.919043+00:00",
@@ -1061,21 +1060,11 @@
   "aecd0b4b610bf2bf": "2026-10-29T18:50:15.676247+00:00",
   "c858c664b687febb": "2026-10-29T19:03:37.057662+00:00",
   "ebb6a7c1240c28d0": "2026-10-29T19:08:37.004179+00:00",
-  "437b6e88edc33335": "2026-10-29T19:08:37.004179+00:00"
+  "437b6e88edc33335": "2026-10-29T19:08:37.004179+00:00",
+  "225f4c5a3937e76b": "2026-10-29T19:13:36.920289+00:00",
+  "e2ba7f82c0392ca9": "2026-10-29T19:13:36.920289+00:00"
  },
  "recent": [
-  {
-   "title": "Единому рынку поищут цену // Сербии предстоит просчитать выгоды от вступления в ЕС",
-   "link": "https://www.kommersant.ru/doc/9061156",
-   "sources": [
-    "Kommersant"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T19:11:22.703689+00:00",
-   "title_en": "The single market will look for a price // Serbia will have to calculate the benefits of joining the EU",
-   "lead": "Политические перемены в Сербии ставят вопрос о будущем ее экономики.",
-   "lead_en": "Political changes in Serbia raise the question of the future of its economy."
-  },
   {
    "title": "Canadian dollar steadies after posting longest daily winning streak in four years",
    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNTFdmU2VIdzAyUUNGdDlZOFVtM294LUY2SWhlY3ZsRWFEeDlrZkpwN1V0dU9yY3lhMlctZ2VRWUJ1T3k3a0x5RC1nWmZxemkzMUxERklVM0s3cmw2RExqVUVMYVh5REdsWjVvT0xUZFVZVmFlVDYxQlBzX2FCU1V5aTZIbE52a3ZCUmJLZU5KVUFDMno1SC1lMWpjcU54MkZwR3FPLVlOSFdyOXAxUGdNOHVhYlVPWS0wandVN2x3Q0w?oc=5",
@@ -11272,6 +11261,30 @@
    "tags": [
     "tariffs"
    ]
+  },
+  {
+   "title": "Alphabet’s stock just triggered a ‘death cross.’ Could the worst of the selloff be over?",
+   "link": "https://www.marketwatch.com/story/alphabets-stock-just-triggered-a-death-cross-could-the-worst-of-the-selloff-be-over-9f70d765?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T19:13:36.920289+00:00",
+   "title_ru": "Акция Alphabet только что вызвала «крест смерти». «Может ли худшее из распродаж закончиться?",
+   "lead": "A postearnings skid sent the Google parent’s shares sliding into bearish territory, but some trading signals hint at a turnaround.",
+   "lead_ru": "Скид postearnings отправил акции материнской компании Google на медвежью территорию, но некоторые торговые сигналы намекают на разворот.",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "‘The $100 level is ours for awhile’: Oil won’t be getting cheap anytime soon, no matter what happens in the Gulf",
+   "link": "https://www.marketwatch.com/story/the-100-level-is-ours-for-awhile-oil-wont-be-getting-cheap-anytime-soon-no-matter-what-happens-in-the-gulf-99d628bf?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 2,
+   "ts": "2026-10-29T19:13:36.920289+00:00"
   }
  ],
  "last_digest": "2026-10-29",
