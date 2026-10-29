@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "d260ce5c8e24a422": "2026-10-26T04:34:41.381918+00:00",
-  "fd87e48941331b2d": "2026-10-26T04:34:41.381918+00:00",
   "6b0b0f9487910618": "2026-10-26T04:39:41.382446+00:00",
   "82fa9ff4f887128f": "2026-10-26T04:39:41.382446+00:00",
   "0150aa78aa42c405": "2026-10-26T04:49:41.378443+00:00",
@@ -1067,7 +1065,9 @@
   "c70e93fb9957b530": "2026-10-29T04:16:19.853021+00:00",
   "64961ab4d8566ab1": "2026-10-29T04:16:19.853021+00:00",
   "eb4b7cc8d3be9a8b": "2026-10-29T04:31:19.868977+00:00",
-  "3a9bca43f6157a34": "2026-10-29T04:31:19.868977+00:00"
+  "3a9bca43f6157a34": "2026-10-29T04:31:19.868977+00:00",
+  "166be665e6e809e2": "2026-10-29T04:36:19.798013+00:00",
+  "a2f455c1f2baf9c8": "2026-10-29T04:36:19.798013+00:00"
  },
  "recent": [
   {
@@ -10696,6 +10696,37 @@
    "score": 3,
    "ts": "2026-10-29T04:31:19.868977+00:00",
    "title_ru": "Юта предъявляет уголовные обвинения рынку предсказаний Калши"
+  },
+  {
+   "title": "Chinese Tech Stocks Sink Even as Chipmaker Sales Surge 1,800%",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-29/chinese-tech-stocks-sink-even-as-chipmaker-sales-surge-1-800",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T04:36:19.798013+00:00",
+   "title_ru": "Акции китайских технологических компаний падают, несмотря на рост продаж производителей микросхем на 1800%",
+   "lead": "Chinese tech hardware shares tumbled as eye-popping quarterly results at some companies failed to offset persistent concerns over fundamentals and weak global AI sentiment.",
+   "lead_ru": "Акции китайских компаний по производству технологического оборудования упали, поскольку потрясающие квартальные результаты некоторых компаний не смогли компенсировать постоянные опасения по поводу фундаментальных показателей и слабых настроений в области ИИ в мире.",
+   "tags": [
+    "markets",
+    "China"
+   ]
+  },
+  {
+   "title": "Предписательский порыв // ЦБ стал чаще применять меры воздействия к аудиторам",
+   "link": "https://www.kommersant.ru/doc/9063134",
+   "sources": [
+    "Kommersant"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T04:36:19.798013+00:00",
+   "title_en": "Prescriptive impulse // The Central Bank began to apply enforcement measures to auditors more often",
+   "lead": "В этом году количество предписаний со стороны Банка России в адрес аудиторов общественно значимых организаций на финансовом рынке выросло в несколько раз.",
+   "lead_en": "This year, the number of instructions from the Bank of Russia to auditors of socially significant organizations in the financial market has increased several times.",
+   "tags": [
+    "Russia"
+   ]
   }
  ],
  "last_digest": "2026-10-28",
