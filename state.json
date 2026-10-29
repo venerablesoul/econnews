@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "ea8e3be51a10e6d6": "2026-10-26T20:12:01.164395+00:00",
   "508582e94deabc34": "2026-10-26T20:17:01.284673+00:00",
   "726d52066e1e2195": "2026-10-26T20:32:01.227464+00:00",
   "75f8d5efb725d7ec": "2026-10-26T20:37:01.308493+00:00",
@@ -1062,18 +1061,10 @@
   "09802d74195a5418": "2026-10-29T19:43:37.790901+00:00",
   "dc342897fbc89667": "2026-10-29T19:53:36.878543+00:00",
   "c655d847668c5c79": "2026-10-29T20:03:36.987425+00:00",
-  "552a086d8aa24963": "2026-10-29T20:08:36.874831+00:00"
+  "552a086d8aa24963": "2026-10-29T20:08:36.874831+00:00",
+  "d29c3804044a489b": "2026-10-29T20:13:36.888253+00:00"
  },
  "recent": [
-  {
-   "title": "Sorry investors, but there’s no such thing as an early ‘Santa Claus rally.’ Here’s when the real gains typically happen.",
-   "link": "https://www.marketwatch.com/story/sorry-investors-but-theres-no-such-thing-as-an-early-santa-claus-rally-heres-when-the-real-gains-typically-happen-7af822cd?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-26T20:12:01.164395+00:00"
-  },
   {
    "title": "EXCLUSIVE: US, Canada working on deal to ease steel, auto tariffs, sources say",
    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQU1JXYWUtZ2l1TGNtSDlwbkN6SkxUR1RxaWZjQnFpNk8yTzBuLTR5OEUxQ296SmZEd3dDS25tMjh1eW5hRGg4X1gtVUpVQi1UbWIyYXpJQmh6NGxpX011WWlEYWh0Z3FKRm55UUl6UnpKUTZmM3lhUElLNUVIb0tkWDBYVkI1LXI2aWxwT1Q2aUpSZjhOcUVxaTByX21WVlExQVE?oc=5",
@@ -11347,6 +11338,19 @@
    "tags": [
     "ECB"
    ]
+  },
+  {
+   "title": "UK inflation expectations fall in October, Citi/YouGov survey shows",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPOWRhWERQcmcydHFCRTJEbmJKeTQ5U2oxYjg4QXdrSDhqUlp2bFBMTUs5Zm9JaXMxUUZOcUVOYmZ5ZXJXaDhaUlIwMm8zT3hJV0hjQmdDMEZiQlpiRm1UYjMyazFjek55TTFjQlFGd21xVlY2NFdfV0ZKMTcxc3JuNVBNcXBYamVGamdSOEpkWDZpSUxSc3VaMWtVUGNvTnZocnZkcXhXY0pMTEU?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-29T20:13:36.888253+00:00",
+   "title_ru": "Инфляционные ожидания в Великобритании в октябре снизились, показало исследование Citi/YouGov",
+   "tags": [
+    "inflation"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -14183,6 +14187,22 @@
     "date": "2026-10-28",
     "disclosed": "2026-10-29",
     "link": "https://www.sec.gov/Archives/edgar/data/2119659/000114036126041173/0001140361-26-041173-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "ba8a6b71d31f5009",
+    "ticker": "ALMR",
+    "company": "Alamar Biosciences, Inc.",
+    "who": "Qiming Corporate Gp Vi, Ltd. et al.",
+    "role": "10% owner",
+    "type": "sell",
+    "value": 5968888,
+    "shares": 185731,
+    "price": 32.14,
+    "plan": false,
+    "date": "2026-10-28",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/2129740/000123191926001508/0001231919-26-001508-index.htm"
    },
    {
     "src": "sec",
@@ -17975,22 +17995,6 @@
     "date": "2026-06-05",
     "disclosed": "2026-10-22",
     "link": "https://www.sec.gov/Archives/edgar/data/1715018/000143774926033305/0001437749-26-033305-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "d0cd22094e57b543",
-    "ticker": "NBIS",
-    "company": "Nebius Group N.V.",
-    "who": "Arne Grimme",
-    "role": "Director",
-    "type": "buy",
-    "value": 49713,
-    "shares": 299,
-    "price": 166.26,
-    "plan": true,
-    "date": "2026-10-21",
-    "disclosed": "2026-10-21",
-    "link": "https://www.sec.gov/Archives/edgar/data/2091395/000151384526000136/0001513845-26-000136-index.htm"
    }
   ],
   "docs": {
@@ -18034,27 +18038,24 @@
   },
   "checked": "2026-10-29T20:08:36.874831+00:00",
   "sec_seen": [
+   "0001130416-26-000005",
    "0001628280-26-068214",
+   "0001837817-26-000021",
    "0001049521-26-000087",
    "0001140361-26-041173",
    "0001438133-26-000136",
-   "0001381197-26-000156",
-   "0001493152-26-049259",
+   "0001231919-26-001508",
    "0000945621-26-001330",
-   "0001608560-26-000016",
-   "0001104659-26-120186",
    "0001193125-26-437769",
+   "0001049521-26-000088",
    "0001628280-26-068219",
-   "0001104659-26-120188",
    "0002007678-26-000002",
    "0001336706-26-000086",
    "0001628280-26-068221",
    "0001628280-26-068212",
    "0001910388-26-000015",
    "0001238032-26-000010",
-   "0001628280-26-068203",
-   "0001628280-26-068225",
-   "0001049521-26-000086"
+   "0001628280-26-068225"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
