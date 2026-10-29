@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e2467166d4a805f8": "2026-10-26T12:20:24.249081+00:00",
   "670cb53d69bfd981": "2026-10-26T12:30:24.316387+00:00",
   "8012e0504d99fdbd": "2026-10-26T12:35:24.169732+00:00",
   "6cb94c1e1d532f16": "2026-10-26T12:40:24.257552+00:00",
@@ -1029,7 +1028,12 @@
   "3d50a4f55e858bb0": "2026-10-29T12:06:43.397127+00:00",
   "e1f9fc13c592e5b3": "2026-10-29T12:16:43.417394+00:00",
   "3127ec4f80c97923": "2026-10-29T12:16:43.417394+00:00",
-  "322a7be22dc4b81d": "2026-10-29T12:16:43.417394+00:00"
+  "322a7be22dc4b81d": "2026-10-29T12:16:43.417394+00:00",
+  "907e7af65c45dedc": "2026-10-29T12:26:43.430130+00:00",
+  "d63cc83aa58f3659": "2026-10-29T12:26:43.430130+00:00",
+  "51077b4f7a7d2b6c": "2026-10-29T12:26:43.430130+00:00",
+  "018c2f276621afea": "2026-10-29T12:26:43.430130+00:00",
+  "0aa907928ac712d5": "2026-10-29T12:26:43.430130+00:00"
  },
  "recent": [
   {
@@ -10692,6 +10696,50 @@
    "score": 3,
    "ts": "2026-10-29T12:16:43.417394+00:00",
    "title_ru": "Владелец NYSE планирует рынок гиперликвидных бессрочных фьючерсов в США"
+  },
+  {
+   "title": "Finland's Neste beats profit estimates on oil prices, biofuel demand",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQQVJ5TEk4MWN2ZnJEWktXbGZnblFPLTBNQmRaZEdHeDE4T1dVaGduLVJDemRDbHVVWlIzLWdPWTdXMXc4LV9RQ2U1RzNQcExBOW5BMVhQbXdzY2xrWE9DMVB1bXV2cTAySF9BdkJxQmJtZkRrS3lFNEtqZGZfeFVEVnpuTm0zT0ZZRkVuSGdkUnNOdnM3eEFEOGwzcjNKaS1sSHdXUnlMVzRyNUg1RjMwV1RuNDQzZw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-29T12:26:43.430130+00:00",
+   "title_ru": "Финский Neste превзошел прогнозы прибыли по ценам на нефть и спросу на биотопливо",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "Spain's deadly train crash adds new complication to Sanchez reelection campaign",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNamRkSG5EM2lKcnJvZDNfSG53WC0wa2g4TGNZc202Y1dQZXdnLTJ3LXE3TXFKWXUwaDJoUHRrMUluMTlrUWlNQkd0d1hveGdGLXRhUUw2LTM2YlJGYWdkRTUtU2VKZ3FKZGhwRl93bXB4N2o1QnhONWZpSUZ1T1JrUkdBSHJqRi1fQXFpUlRNX1h5aW9jcUZfU1Y4Q2o5elktSjdUaXQ5bXJvX3pzZzBwbTBPVTY5VGo5bGpXeXRCX0R1UQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-29T12:26:43.430130+00:00",
+   "title_ru": "Катастрофа поезда в Испании усложняет кампанию по переизбранию Санчеса"
+  },
+  {
+   "title": "HSBC Seeks to Hedge Data Center Debt With Credit Risk Insurance",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-29/hsbc-seeks-to-hedge-data-center-debt-with-credit-risk-insurance",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T12:26:43.430130+00:00",
+   "title_ru": "HSBC стремится хеджировать долги дата-центров с помощью страхования кредитных рисков",
+   "lead": "HSBC Holdings Plc is looking to offload credit risk on data center loans to insurers as demand for artificial intelligence-related finance continues to grow.",
+   "lead_ru": "HSBC Holdings Plc стремится снизить кредитный риск по кредитам на центры обработки данных для страховщиков, поскольку спрос на финансирование, связанное с искусственным интеллектом, продолжает расти."
+  },
+  {
+   "title": "Caterpillar’s stock heads for worst day in 7 years — and what that means for the Dow",
+   "link": "https://www.marketwatch.com/story/caterpillars-stock-heads-for-worst-day-in-7-years-and-what-that-means-for-the-dow-d67f1fb7?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-29T12:26:43.430130+00:00"
   }
  ],
  "last_digest": "2026-10-28",
@@ -17362,13 +17410,13 @@
    "0001999371-26-023803",
    "0001493152-26-049161",
    "0001628280-26-068025",
-   "0001104659-26-119784",
    "0001493152-26-049164",
+   "0001104659-26-119784",
    "0001104659-26-119783",
    "0001193125-26-437062",
+   "0001628280-26-068031",
    "0001104659-26-119781",
    "0001193125-26-436886",
-   "0001104659-26-119780",
    "0001493152-26-049173",
    "0001193125-26-436875",
    "0001193125-26-436877",
@@ -17376,9 +17424,9 @@
    "0001493152-26-049183",
    "0001104659-26-119782",
    "0001104659-26-119785",
-   "0001535929-26-000181",
    "0001493152-26-049156",
    "0001437749-26-033849",
+   "0001628280-26-068033",
    "0001493152-26-049170",
    "0001628280-26-068012",
    "0001213900-26-113489",
