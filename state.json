@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "f3400f6b485c89dd": "2026-10-26T10:30:24.206858+00:00",
   "43763a5282922b03": "2026-10-26T10:35:24.242855+00:00",
   "a0c5f9a1832c0ba9": "2026-10-26T10:35:24.242855+00:00",
   "686c3c403d643199": "2026-10-26T10:40:24.237076+00:00",
@@ -1026,7 +1025,10 @@
   "a22bb58ee6d78573": "2026-10-29T10:16:43.438503+00:00",
   "ea279e6363583c24": "2026-10-29T10:21:43.369535+00:00",
   "f644d5924e9814c0": "2026-10-29T10:26:43.374354+00:00",
-  "f5e8cee9d804c076": "2026-10-29T10:26:43.374354+00:00"
+  "f5e8cee9d804c076": "2026-10-29T10:26:43.374354+00:00",
+  "a992aba176501102": "2026-10-29T10:31:43.363902+00:00",
+  "ab0743bfd09279fe": "2026-10-29T10:31:43.363902+00:00",
+  "7bd6431aed7fafe3": "2026-10-29T10:31:43.363902+00:00"
  },
  "recent": [
   {
@@ -10606,6 +10608,34 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "ECB President Lagarde resigns effective Feb 7",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPd3FmVnJnVlFQYVZ3U0k0TFpoWDdmQWVHZ0lZU21uOVZLZUVhZ2d3djg0YzJNc2RURmxMTkVULURKZTBKcy1wMlJ5ZldxTjRQSkJ3ak55MU0yU1ItalNRYmZDbHZzWkh6UmN3OHlucWFhQWhrSkYtcjZnSnNINWhybXdLLTh3elNvY3dvenVUQnp3TmpQUExzUkpzYzkzcU0?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-29T10:31:43.363902+00:00",
+   "title_ru": "Президент ЕЦБ Лагард уходит в отставку с 7 февраля",
+   "tags": [
+    "ECB"
+   ]
+  },
+  {
+   "title": "Investors May Have Bought All the AI Bonds They Can Handle",
+   "link": "https://www.bloomberg.com/news/newsletters/2026-10-29/investors-may-have-bought-all-the-ai-bonds-they-can-handle",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-29T10:31:43.363902+00:00",
+   "title_ru": "Инвесторы, возможно, купили все облигации ИИ, с которыми они могут справиться",
+   "lead": "Credit default swaps show growing risk of data-center bonds.",
+   "lead_ru": "Свопы кредитного дефолта показывают растущий риск облигаций центра обработки данных.",
+   "tags": [
+    "bonds"
+   ]
   }
  ],
  "last_digest": "2026-10-28",
@@ -17274,6 +17304,7 @@
    "0001605957-26-000005",
    "0002103469-26-000014",
    "0001104659-26-119784",
+   "0001493152-26-049164",
    "0002127826-26-000007",
    "0001104659-26-119783",
    "0001104659-26-119781",
