@@ -1,12 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "95dffe34f933f3af": "2026-10-26T01:13:52.484541+00:00",
-  "5c8e7931e99b2428": "2026-10-26T01:13:52.484541+00:00",
-  "1cce008d61d8d8b6": "2026-10-26T01:13:52.484541+00:00",
-  "529c1e31a6422030": "2026-10-26T01:18:52.535679+00:00",
-  "980b765c611b5adb": "2026-10-26T01:18:52.535679+00:00",
-  "198f34562b7ba5c7": "2026-10-26T01:18:52.535679+00:00",
   "7e091abd55d2230f": "2026-10-26T01:33:52.485812+00:00",
   "eafb3fa2ec91a5b4": "2026-10-26T01:38:52.458341+00:00",
   "a1bdd819546c4b20": "2026-10-26T01:43:52.463402+00:00",
@@ -1084,31 +1078,10 @@
   "cad208adc5412100": "2026-10-29T00:45:50.484062+00:00",
   "d3c6c145fe16b37c": "2026-10-29T01:00:50.424329+00:00",
   "f3c0b910c10a2fd4": "2026-10-29T01:05:50.428631+00:00",
-  "46547c5ded871a27": "2026-10-29T01:10:50.567285+00:00"
+  "46547c5ded871a27": "2026-10-29T01:10:50.567285+00:00",
+  "d9d8c5a61187e1a4": "2026-10-29T01:20:50.436839+00:00"
  },
  "recent": [
-  {
-   "title": "Healey's Budget needs to sustain the stronger economy through gathering clouds",
-   "link": "https://www.bbc.co.uk/news/articles/ck87z4ng2l03o?at_medium=RSS&at_campaign=rss",
-   "sources": [
-    "BBC"
-   ],
-   "score": 4,
-   "ts": "2026-10-26T01:13:52.484541+00:00",
-   "title_ru": "Бюджет Хили должен поддерживать более сильную экономику за счет сгущения облаков",
-   "lead": "The economic is positive now but come January things could become trickier for the Labour government",
-   "lead_ru": "Экономическая ситуация сейчас позитивна, но в январе ситуация для лейбористского правительства может стать сложнее."
-  },
-  {
-   "title": "Australia's NEXTDC CEO to forgo fiscal 2027 bonuses after forecast cut, project delay",
-   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPNVlqelZrbGVQSEZ6STZ1TUpGd19BNlZDSlJJbXpTNTBvcUFQN05qY0ZwNnRsNkZMeDFTVWxTMGd2MTBGMG9sbk1pZ29uaXMxWDNNUXNhYUZXTFlUcno2QWtkZ2ZjVFMyZXFERTJlZzRmUWNfOEhHNkdwZ1pJUWtma1lKQVljQmFQbGVPSmNVMnBqSEt4Q19acDVHSmxmSG5xcFlqMU5nc1BGZE1keU93cUpDYWdTSGd2X2hxRDBmdFJTYlBVQnUwWGo3YnN0QzZL?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T01:13:52.484541+00:00",
-   "title_ru": "Генеральный директор австралийской NEXTDC откажется от бонусов в 2027 финансовом году из-за сокращения прогноза и задержки проекта"
-  },
   {
    "title": "Oil prices, Fed policy decision to steer rupee, bonds this week",
    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPelJyN3JpclF1bWk1YzFhM1prRER2SmsyZ0tLbEYyVnZxb0JhbV9sVEplUzhvbnFydkUtdURhektCU2Z1a3VNVk8xaGRBZXZSanpsYWkzMkh1RDBpQktlR25CeEZabmZLWTdfN0QwYUZWQjQ2VmVGdENPSm04Z1BwUF83am40bVlTYjVjV0REZWdUS3E3cUNLaFZCaEFoQzhBemhoRkFxa3hSUQ?oc=5",
@@ -10719,6 +10692,16 @@
    "tags": [
     "tariffs"
    ]
+  },
+  {
+   "title": "Spain’s Deadly Train Crash Rocks Sanchez’s Tough Reelection Bid",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOMC1YTEhjY3BpTUhOZ1FPcENmTEJ6S0Y2cmtKandnS2VWZ1FYVkdza043SU5qZkpJdzhKbG5ucll1ODY2RDlaaVV0ZGhCeTI3Nk1mSnVERjU0bmlfTDJhMFZWMFRsblp1SkRhRUEyY0dCUUxTNjBZMnUyVS1yVl92enc3VVhGdDY1VUFBbEtnWFNQcUhNUjFDU3g1enZfR3E2TmViTy02a0hSZnRSLXRoVzREM2c?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-29T01:20:50.436839+00:00",
+   "title_ru": "Жесткая заявка Санчеса на переизбрание после крушения поезда в Испании"
   }
  ],
  "last_digest": "2026-10-28",
@@ -17395,7 +17378,7 @@
    "0001022079-26-000118",
    "0000933029-26-000004",
    "0001577526-26-000161",
-   "0002010300-26-000035",
+   "0001818383-26-000266",
    "0001877346-26-000027",
    "0001577526-26-000169",
    "0001140361-26-041076",
