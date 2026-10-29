@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "8012e0504d99fdbd": "2026-10-26T12:35:24.169732+00:00",
   "6cb94c1e1d532f16": "2026-10-26T12:40:24.257552+00:00",
   "f54a6d757e399d9d": "2026-10-26T12:45:24.163303+00:00",
   "c9493fdb312d63af": "2026-10-26T12:45:24.163303+00:00",
@@ -1036,22 +1035,13 @@
   "0c5cb578ed975bae": "2026-10-29T12:31:43.472806+00:00",
   "8056b17f9aa3d675": "2026-10-29T12:31:43.472806+00:00",
   "b7a63814065c00c8": "2026-10-29T12:31:43.472806+00:00",
-  "997acba01968ee19": "2026-10-29T12:31:43.472806+00:00"
+  "997acba01968ee19": "2026-10-29T12:31:43.472806+00:00",
+  "12a082a3ce4152d7": "2026-10-29T12:36:43.488152+00:00",
+  "af3f8359faee791d": "2026-10-29T12:36:43.488152+00:00",
+  "973a3f77a286415c": "2026-10-29T12:36:43.488152+00:00",
+  "2579e0f10b6904ef": "2026-10-29T12:36:43.488152+00:00"
  },
  "recent": [
-  {
-   "title": "Trend hedge funds saw worst week since 2024 as AI stocks fell, Goldman says",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNaXVkNFhCYXZGZWdiZXZLTHFHMnJoN1VHWlc5QWNRSTcwRThfV2lvejJsdDdzbzE3S09XVzVneWJOVmJTSWJRRFliSVNFTzc2TEJxYlZKZ2tEVTM1dG5OR2h6MkVFUE9OM04yY1Jjd3B2VUVXSmtsTjMxQzUtd2JfZy1JbVBpYmg5bHR6Tm1PQzBrdWxkbWV1MjFfTkdlYlozSXlfaWt2X3UxUl9BV0tkN3kyNW5HeXZRREVmcEdwWQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T12:35:24.169732+00:00",
-   "title_ru": "По словам Goldman Sachs, трендовые хедж-фонды пережили худшую неделю с 2024 года, когда акции ИИ упали",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Банк России рекомендует банкам контролировать источники денежных средств при внесении клиентами крупных сумм наличных",
    "link": "https://www.cbr.ru/press/event/?id=32933",
@@ -10778,6 +10768,61 @@
    ],
    "score": 1,
    "ts": "2026-10-29T12:31:43.472806+00:00"
+  },
+  {
+   "title": "AI Trade Shows New Cracks, Healey Defends UK Budget’s Scale",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-29/the-opening-trade-10-29-2026-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-29T12:36:43.488152+00:00",
+   "title_ru": "AI Trade показывает новые трещины, Healey защищает масштаб бюджета Великобритании",
+   "lead": "A global rally in technology shares stalled after disappointing earnings from two industry heavyweights revived doubts over whether billions of dollars in artificial intelligence spending will deliver sufficient returns.",
+   "lead_ru": "Глобальное ралли акций технологических компаний застопорилось после того, как разочаровывающие доходы от двух отраслевых тяжеловесов возродили сомнения в том, что миллиарды долларов, потраченные на искусственный интеллект, принесут достаточную отдачу.",
+   "tags": [
+    "dollar",
+    "markets"
+   ]
+  },
+  {
+   "title": "U.S. economy grows at fastest pace in almost three years, third-quarter GDP shows",
+   "link": "https://www.marketwatch.com/story/u-s-economy-grows-at-fastest-pace-in-almost-three-years-third-quarter-gdp-shows-0e15b810?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 4,
+   "ts": "2026-10-29T12:36:43.488152+00:00",
+   "title_ru": "Экономика США растет самыми быстрыми темпами почти за три года, показывает ВВП в третьем квартале",
+   "lead": "AI revolution and ‘wealth effect’ fuel expansion",
+   "lead_ru": "Революция ИИ и расширение топлива «эффекта богатства»",
+   "tags": [
+    "GDP"
+   ]
+  },
+  {
+   "title": "Shell CEO Faces Test of Turning a Cash Windfall Into Durable Growth",
+   "link": "https://www.bloomberg.com/news/newsletters/2026-10-29/shell-ceo-faces-test-of-turning-a-cash-windfall-into-durable-growth",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T12:36:43.488152+00:00",
+   "title_ru": "Генеральному директору Shell предстоит испытание по превращению непредвиденных денежных поступлений в устойчивый рост",
+   "lead": "To catch US rivals, Wael Sawan needs to show he can combine spending discipline with expansion.",
+   "lead_ru": "Чтобы поймать соперников из США, Ваэль Саван должен показать, что он может сочетать дисциплину расходов с расширением."
+  },
+  {
+   "title": "Госдума приняла в первом чтении проект федерального бюджета",
+   "link": "https://www.kommersant.ru/doc/9063831",
+   "sources": [
+    "Kommersant"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T12:36:43.488152+00:00",
+   "title_en": "The State Duma adopted in the first reading the draft federal budget",
+   "lead": "Проект федерального бюджета на 2027-2029 годы принят в первом чтении в Госдуме. За документ проголосовали 82,7% присутствовавших на заседании депутатов, против не выступил никто.",
+   "lead_en": "The draft federal budget for 2027-2029 was adopted in the first reading in the State Duma. 82.7% of the deputies present at the meeting voted for the document, no one opposed it."
   }
  ],
  "last_digest": "2026-10-28",
@@ -17453,7 +17498,6 @@
    "0001104659-26-119783",
    "0001193125-26-437062",
    "0001628280-26-068031",
-   "0001104659-26-119781",
    "0001193125-26-436886",
    "0001493152-26-049173",
    "0001193125-26-436875",
