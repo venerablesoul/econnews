@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c4bba32c0dfafff1": "2026-10-26T16:26:22.737531+00:00",
   "ed1aa4feb5ddcb6f": "2026-10-26T16:36:22.767844+00:00",
   "9f30f945a45f495a": "2026-10-26T16:36:22.767844+00:00",
   "1810499ee8a61f94": "2026-10-26T16:41:22.692534+00:00",
@@ -1061,18 +1060,6 @@
   "1e5e3b21b41b193f": "2026-10-29T16:10:16.767386+00:00"
  },
  "recent": [
-  {
-   "title": "Shock Lula Win Derails $6 Billion in Equity Sales as Banks Reel",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-26/shock-lula-win-derails-6-billion-in-equity-sales-as-banks-reel",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T16:26:22.737531+00:00",
-   "title_ru": "Shock Lula Win срывает продажи акций на $ 6 млрд по мере того, как банки набирают обороты",
-   "lead": "Brazilian companies had some $6 billion in equity sales lined up for the weeks after the vote that they expected would crown conservative Flávio Bolsonaro as the next president of Latin America’s largest economy.",
-   "lead_ru": "У бразильских компаний было около $ 6 млрд в продажах акций в течение нескольких недель после голосования, которое, как они ожидали, станет короной консерватора Флавио Болсонару в качестве следующего президента крупнейшей экономики Латинской Америки."
-  },
   {
    "title": "Republic of Madagascar: Third and Fourth Reviews Under the Extend Credit Facility Arrangement, Request for a Waiver of Nonobservance of a Performance Criterion, Modification of Performance Criteria, Financing Assurances Review",
    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOQVVQNkxjcXJ6NDJLY0VDVVAxMVgxQlNwaHgxR0NPalZ6WkVBWnRya3lxZ2x6eHJUb2hCNnVnaS16VDlqWjBlRnlZamhsclAzbkFYNlgxQ3hpNEo5NXVDSDhDOURSSjFtWGlwcHJQMVlIYXlZbm5ZcWM0ZlBkZTRPZi1MWFNpWUQxRWFWb3RmYW02Wk9NYlZiNHJjanAwWEd6VW9iV2FBWkl4YkN2YjRuMWdyblJ2VFV6UEJZbmhQaERRaEpQX190SF9VS2hjZWltbVhBcDFmaTN6NFhE?oc=5",
@@ -17774,8 +17761,7 @@
   },
   "checked": "2026-10-29T15:45:16.705650+00:00",
   "sec_seen": [
-   "0001437749-26-033873",
-   "0001225208-26-008551"
+   "0001683168-26-008149"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
