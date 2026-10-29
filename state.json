@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e7ce7797b337cc16": "2026-10-26T04:04:41.375260+00:00",
-  "c92599c5551f7146": "2026-10-26T04:04:41.375260+00:00",
-  "efcda77d598f245b": "2026-10-26T04:04:41.375260+00:00",
-  "4e5942b3ca5973b2": "2026-10-26T04:04:41.375260+00:00",
   "52798fd7325a61c3": "2026-10-26T04:09:41.424617+00:00",
   "034a842cabe77f61": "2026-10-26T04:09:41.424617+00:00",
   "8358c84e4a016c10": "2026-10-26T04:14:41.445276+00:00",
@@ -1073,38 +1069,11 @@
   "00300de0a96b5058": "2026-10-29T03:31:19.831937+00:00",
   "b4ec47a37e263b54": "2026-10-29T03:56:19.845208+00:00",
   "9362a306d2fa7888": "2026-10-29T03:56:19.845208+00:00",
-  "99595a9cfa317279": "2026-10-29T04:01:19.846414+00:00"
+  "99595a9cfa317279": "2026-10-29T04:01:19.846414+00:00",
+  "66f65ee161bda958": "2026-10-29T04:06:19.865789+00:00",
+  "94020b59ae5e61bf": "2026-10-29T04:06:19.865789+00:00"
  },
  "recent": [
-  {
-   "title": "Copper Extends Drop as AI Stocks Weigh Ahead of Fed Meeting",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-26/copper-extends-drop-as-ai-stocks-weigh-ahead-of-fed-meeting",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-26T04:04:41.375260+00:00",
-   "title_ru": "Медь увеличивает падение, поскольку акции ИИ взвешиваются в преддверии заседания ФРС",
-   "lead": "Copper extended last week’s drop as artificial intelligence stocks came under further pressure, sapping risk appetite ahead of the Federal Reserve’s policy meeting.",
-   "lead_ru": "Медь продолжила падение на прошлой неделе, поскольку акции искусственного интеллекта подверглись дальнейшему давлению, что подорвало аппетит к риску в преддверии заседания Федеральной резервной системы.",
-   "tags": [
-    "Fed",
-    "markets"
-   ]
-  },
-  {
-   "title": "China's yuan climbs to fresh 4-year high ahead of key policy meetings",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNejByVmM2THNYYzJfa2VuNXZEMW9KUjBhR1hfa0dMV1RidjZLYmh6OC1QazNKejhkd3poZ2lfbGZhQ2VjdWdXVGx3N1hOR0NXWnFDQ0VlMEZlUWVFSS1wekJLZ2FHR0dUamg4TzNHaGdoY2RKNDlTdFdoR2cyVHY3MWZDX1NFT0dreEVzazhzOTFyQlFYQVdoSFprU0huUk9yc2ZLOEthOHlhUExOZHp3akZCY0MtWWhv?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T04:04:41.375260+00:00",
-   "title_ru": "Китайский юань поднялся до нового 4-летнего максимума в преддверии ключевых встреч по вопросам политики",
-   "tags": [
-    "China"
-   ]
-  },
   {
    "title": "EM Stocks Fall Before Key Earnings, Brazil in Focus as Lula Wins",
    "link": "https://www.bloomberg.com/news/articles/2026-10-26/em-stocks-fall-before-key-earnings-brazil-in-focus-as-lula-wins",
@@ -10709,6 +10678,34 @@
    "tags": [
     "bonds"
    ]
+  },
+  {
+   "title": "South Africa Readies Backup Plan for Benchmark Rate Law Delay",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-29/south-africa-readies-backup-plan-for-benchmark-rate-law-delay",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T04:06:19.865789+00:00",
+   "title_ru": "Южная Африка готовит план резервного копирования для задержки закона о контрольных ставках",
+   "lead": "The South African Reserve Bank and financial institutions are preparing a backup plan in case legislation needed for the switch to a new rand benchmark interest rate isn’t passed by the end of the year.",
+   "lead_ru": "Южноафриканский резервный банк и финансовые учреждения готовят резервный план на случай, если законодательство, необходимое для перехода на новую базовую процентную ставку RAND, не будет принято к концу года.",
+   "tags": [
+    "rates"
+   ]
+  },
+  {
+   "title": "Samsung Electronics Shares Slide After Return Plan Is Delayed",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPVVpZcEZfR1lhbUVsaGtGellucUNlR2lFeG8xVUdfdndwN1BqZEp0eHd4QzIxQjRnNnBTV2FvREQ4UkRhT0xOTTdRX0hMUVljY2hENW1jbUFGRjRDd1I3d3Q2Rm5zT005QW1iSEZsZHJMZnFnY1BYQ3VBalpzM3dtNVhBUHN2YUhzRVJVRDFMQWNUOTlxX0JCZTBLNHNNbFcwZUZmemlsSXBTeG5RaDRlVW1n?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T04:06:19.865789+00:00",
+   "title_ru": "Samsung Electronics делится слайдом после того, как план возврата отложен",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-28",
@@ -10731,7 +10728,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 0,
+  "Fed": 1,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
