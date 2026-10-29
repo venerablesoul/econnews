@@ -1061,7 +1061,8 @@
   "aca1d58d0f2ac594": "2026-10-29T19:38:36.849346+00:00",
   "09802d74195a5418": "2026-10-29T19:43:37.790901+00:00",
   "dc342897fbc89667": "2026-10-29T19:53:36.878543+00:00",
-  "c655d847668c5c79": "2026-10-29T20:03:36.987425+00:00"
+  "c655d847668c5c79": "2026-10-29T20:03:36.987425+00:00",
+  "552a086d8aa24963": "2026-10-29T20:08:36.874831+00:00"
  },
  "recent": [
   {
@@ -11331,6 +11332,21 @@
    "tags": [
     "bonds"
    ]
+  },
+  {
+   "title": "The legacy of Christine Lagarde",
+   "link": "https://www.ft.com/content/374ec1a7-8fef-47ce-9723-c1e46f1e1b07?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 5,
+   "ts": "2026-10-29T20:08:36.874831+00:00",
+   "title_ru": "Наследие Кристин Лагард",
+   "lead": "After a shaky start, the outgoing president leaves the ECB in solid shape",
+   "lead_ru": "После шаткого старта уходящий президент оставляет ЕЦБ в хорошей форме",
+   "tags": [
+    "ECB"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -14138,6 +14154,38 @@
    },
    {
     "src": "sec",
+    "id": "ec36782ec823f51e",
+    "ticker": "NPB",
+    "company": "NORTHPOINTE BANCSHARES INC",
+    "who": "Rajeev Kumar Chaudhary",
+    "role": "Director",
+    "type": "buy",
+    "value": 47398,
+    "shares": 3000,
+    "price": 15.8,
+    "plan": false,
+    "date": "2026-10-28",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/2081867/000133670626000086/0001336706-26-000086-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "e9a7d5b55a1ca4cd",
+    "ticker": "ELVR",
+    "company": "Elevra Lithium Ltd",
+    "who": "Vargas Christian Mauricio Cortes",
+    "role": "CFO",
+    "type": "buy",
+    "value": 42720,
+    "shares": 16000,
+    "price": 2.67,
+    "plan": false,
+    "date": "2026-10-28",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/2119659/000114036126041173/0001140361-26-041173-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "4149df768ae321c5",
     "ticker": "BMN",
     "company": "BlackRock 2037 Municipal Target Term Trust",
@@ -14167,6 +14215,22 @@
     "date": "2026-10-27",
     "disclosed": "2026-10-29",
     "link": "https://www.sec.gov/Archives/edgar/data/1896170/000162828026068203/0001628280-26-068203-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "d97ce70f913e0c97",
+    "ticker": "COF",
+    "company": "CAPITAL ONE FINANCIAL CORP",
+    "who": "Richard D Fairbank",
+    "role": "CEO",
+    "type": "sell",
+    "value": 18407891,
+    "shares": 90743,
+    "price": 202.86,
+    "plan": true,
+    "date": "2026-10-27",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/1238032/000123803226000010/0001238032-26-000010-index.htm"
    },
    {
     "src": "sec",
@@ -17927,54 +17991,6 @@
     "date": "2026-10-21",
     "disclosed": "2026-10-21",
     "link": "https://www.sec.gov/Archives/edgar/data/2091395/000151384526000136/0001513845-26-000136-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "54b1087084d4df1d",
-    "ticker": "PINS",
-    "company": "PINTEREST, INC.",
-    "who": "Benjamin Silbermann",
-    "role": "Director, 10% owner",
-    "type": "sell",
-    "value": 2132831,
-    "shares": 93750,
-    "price": 22.75,
-    "plan": true,
-    "date": "2026-10-21",
-    "disclosed": "2026-10-21",
-    "link": "https://www.sec.gov/Archives/edgar/data/1773914/000177391426000037/0001773914-26-000037-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "7154ca841863840b",
-    "ticker": "TENX",
-    "company": "TENAX THERAPEUTICS, INC.",
-    "who": "Adar1 Capital Management, Llc et al.",
-    "role": "10% owner",
-    "type": "buy",
-    "value": 1463426,
-    "shares": 922849,
-    "price": 1.59,
-    "plan": false,
-    "date": "2026-10-21",
-    "disclosed": "2026-10-21",
-    "link": "https://www.sec.gov/Archives/edgar/data/1940272/000194027226000027/0001940272-26-000027-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "98a959edca77e5b2",
-    "ticker": "IRON",
-    "company": "Disc Medicine, Inc.",
-    "who": "Kevin Bitterman",
-    "role": "Director",
-    "type": "sell",
-    "value": 3351274,
-    "shares": 41825,
-    "price": 80.13,
-    "plan": true,
-    "date": "2026-10-21",
-    "disclosed": "2026-10-21",
-    "link": "https://www.sec.gov/Archives/edgar/data/1816736/000159174726000009/0001591747-26-000009-index.htm"
    }
   ],
   "docs": {
@@ -18016,16 +18032,28 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-29T19:03:37.057662+00:00",
+  "checked": "2026-10-29T20:08:36.874831+00:00",
   "sec_seen": [
+   "0001628280-26-068214",
+   "0001049521-26-000087",
+   "0001140361-26-041173",
+   "0001438133-26-000136",
+   "0001381197-26-000156",
+   "0001493152-26-049259",
+   "0000945621-26-001330",
    "0001608560-26-000016",
    "0001104659-26-120186",
-   "0001493152-26-049259",
-   "0001381197-26-000156",
-   "0002117779-26-000003",
-   "0000070858-26-000543",
-   "0001628280-26-068203",
+   "0001193125-26-437769",
+   "0001628280-26-068219",
    "0001104659-26-120188",
+   "0002007678-26-000002",
+   "0001336706-26-000086",
+   "0001628280-26-068221",
+   "0001628280-26-068212",
+   "0001910388-26-000015",
+   "0001238032-26-000010",
+   "0001628280-26-068203",
+   "0001628280-26-068225",
    "0001049521-26-000086"
   ],
   "errors": {
