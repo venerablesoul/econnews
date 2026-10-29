@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "a99b22e35ba3c1ea": "2026-10-26T19:46:22.692937+00:00",
   "9fa038f7542f9e54": "2026-10-26T19:56:22.719574+00:00",
   "ea8e3be51a10e6d6": "2026-10-26T20:12:01.164395+00:00",
   "508582e94deabc34": "2026-10-26T20:17:01.284673+00:00",
@@ -1061,24 +1060,10 @@
   "aa0d6abd0ded22e1": "2026-10-29T19:28:36.880985+00:00",
   "44f0eb7f61258633": "2026-10-29T19:33:36.845877+00:00",
   "aca1d58d0f2ac594": "2026-10-29T19:38:36.849346+00:00",
-  "09802d74195a5418": "2026-10-29T19:43:37.790901+00:00"
+  "09802d74195a5418": "2026-10-29T19:43:37.790901+00:00",
+  "dc342897fbc89667": "2026-10-29T19:53:36.878543+00:00"
  },
  "recent": [
-  {
-   "title": "One-Day Wipeout Tops 60% For the Hardest-Hit Brazilian Stocks",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-26/one-day-wipeout-tops-60-for-the-hardest-hit-brazilian-stocks",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T19:46:22.692937+00:00",
-   "title_ru": "Однодневное уничтожение превысило 60% для наиболее пострадавших бразильских акций",
-   "lead": "The wipeout Monday in Brazilian markets dragged down nearly every stock in the benchmark Ibovespa index. More than half of them plunged at least 10%.",
-   "lead_ru": "Обвал в понедельник на бразильских рынках привел к падению почти всех акций базового индекса Ibovespa. Более половины из них упали как минимум на 10%.",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Markets Have 'Misunderstanding' of Warsh Fed, Says Axel Merk",
    "link": "https://www.bloomberg.com/news/videos/2026-10-26/markets-have-misunderstanding-of-warsh-fed-says-merk-video",
@@ -11330,6 +11315,23 @@
    "tags": [
     "inflation"
    ]
+  },
+  {
+   "title": "Canadian Dollar Poised for Best Month Since April After BOC Hike",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-29/canadian-dollar-poised-for-best-month-since-april-after-boc-hike",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-29T19:53:36.878543+00:00",
+   "title_ru": "Канадский доллар готов к лучшему месяцу с апреля после повышения Банка Канады",
+   "lead": "The Canadian dollar is heading for its largest monthly gain since April, supported by elevated oil prices and the Bank of Canada’s shift toward tighter monetary policy.",
+   "lead_ru": "Канадский доллар движется к своему самому большому ежемесячному росту с апреля, чему способствуют высокие цены на нефть и переход Банка Канады к ужесточению денежно-кредитной политики.",
+   "tags": [
+    "rates",
+    "oil",
+    "dollar"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -18017,15 +18019,12 @@
   },
   "checked": "2026-10-29T19:03:37.057662+00:00",
   "sec_seen": [
-   "0001649840-26-000006",
-   "0002005471-26-000004",
    "0001654954-26-009239",
-   "0001695033-26-000006",
-   "0001437749-26-033911",
-   "0002066961-26-000004"
+   "0001437749-26-033911"
   ],
   "errors": {
-   "senate": "HTTPError: HTTP Error 403: Forbidden"
+   "senate": "HTTPError: HTTP Error 403: Forbidden",
+   "sec": "TimeoutError: The read operation timed out"
   }
  },
  "cal_actuals": {
