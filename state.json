@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "588ec28156e9917a": "2026-10-26T13:15:24.138192+00:00",
-  "f686ba32bc778cf6": "2026-10-26T13:15:24.138192+00:00",
   "8e9e4a8f3bcf51d1": "2026-10-26T13:20:24.212848+00:00",
   "695354c58af95b9e": "2026-10-26T13:20:24.212848+00:00",
   "cec9bffaf507da6d": "2026-10-26T13:25:24.207876+00:00",
@@ -1038,34 +1036,10 @@
   "1495b74b02462c18": "2026-10-29T13:01:44.102878+00:00",
   "fda9b7c5534f9232": "2026-10-29T13:06:43.684864+00:00",
   "904be2ae7ce3d573": "2026-10-29T13:11:43.481049+00:00",
-  "4323cf955c799146": "2026-10-29T13:11:43.481049+00:00"
+  "4323cf955c799146": "2026-10-29T13:11:43.481049+00:00",
+  "8be498015a196c08": "2026-10-29T13:16:43.545939+00:00"
  },
  "recent": [
-  {
-   "title": "COMMENTARY: AI gloom revives the specter of stagflation",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQRm13Sm5yUE5uMDZnT2s5a2NmWEhIeUllOVdUVkpzTWZTX0pOZGxmQnNCVGNnZElxeEhncmNWT3VleWVTdVhaSGJiVElUbDhOWWdWZTNtbFJnQTdoaFdoNVFwVW5KWURmMDEtNWRKZWFSLUROUFdDcWRHTHRocm5UdmxReVd5Q2FoRHlMZ1AzdTdhYncwV2dFZk5FVHBXMUFlQnliT0hkaldQLWczQ0pXbWJER3pOVmR4VHRZNDZn?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-26T13:15:24.138192+00:00",
-   "title_ru": "КОММЕНТАРИЙ: Мрак ИИ возрождает призрак стагфляции"
-  },
-  {
-   "title": "Surging Natural Gas Price Tests Europe’s Appetite for Action",
-   "link": "https://www.bloomberg.com/news/newsletters/2026-10-26/surging-natural-gas-price-tests-europe-s-appetite-for-action",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T13:15:24.138192+00:00",
-   "title_ru": "Растущая цена на природный газ проверяет аппетит Европы к действиям",
-   "lead": "Benchmark futures are back at crisis levels, but the policy response isn’t there yet.",
-   "lead_ru": "Эталонные фьючерсы вернулись на кризисные уровни, но ответные меры политики еще не приняты.",
-   "tags": [
-    "gas"
-   ]
-  },
   {
    "title": "FTSE 100 rises as falling oil prices boost risk appetite",
    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOa3RuN1E2czJLWGVWa0NLOTlTZzlNdVI2MzFnclRUZ3l0c0pRWS15MWdQUHJBMlBEdjI3U3ZtUzJVTU5OR0Q0MFlDS0JCdlI4c3I5dE90MjI1Tzk5MWtnYjZXNDJ4bkdnU20yMXVBeEpZc2JQai1ZQ0lydmd2U3lDVlZRblhSaWdGSGFaQ3dxWms0X3VBVWU4QjRGa2xzU3M?oc=5",
@@ -10834,6 +10808,19 @@
    "score": 3,
    "ts": "2026-10-29T13:11:43.481049+00:00",
    "title_ru": "КОММЕНТАРИЙ: Наибольшее влияние на рынок промежуточных выборов в США может оказать обратный отсчет до 2028 года."
+  },
+  {
+   "title": "Monetary policy decisions",
+   "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.mp261029~9a493adf17.en.html",
+   "sources": [
+    "ECB"
+   ],
+   "score": 7,
+   "ts": "2026-10-29T13:16:43.545939+00:00",
+   "title_ru": "Решения денежно-кредитной политики",
+   "tags": [
+    "rates"
+   ]
   }
  ],
  "last_digest": "2026-10-28",
