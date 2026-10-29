@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "158d72bd86764f91": "2026-10-26T00:58:52.515046+00:00",
-  "75c71506186f1ce8": "2026-10-26T00:58:52.515046+00:00",
   "95dffe34f933f3af": "2026-10-26T01:13:52.484541+00:00",
   "5c8e7931e99b2428": "2026-10-26T01:13:52.484541+00:00",
   "1cce008d61d8d8b6": "2026-10-26T01:13:52.484541+00:00",
@@ -1083,33 +1081,11 @@
   "509d8064611a71c3": "2026-10-29T00:20:50.400288+00:00",
   "42ab65c7bc015ec1": "2026-10-29T00:25:50.362594+00:00",
   "acca4ba0d36d927f": "2026-10-29T00:30:50.383744+00:00",
-  "cad208adc5412100": "2026-10-29T00:45:50.484062+00:00"
+  "cad208adc5412100": "2026-10-29T00:45:50.484062+00:00",
+  "d3c6c145fe16b37c": "2026-10-29T01:00:50.424329+00:00",
+  "f3c0b910c10a2fd4": "2026-10-29T01:05:50.428631+00:00"
  },
  "recent": [
-  {
-   "title": "Musk Claims SpaceX Closed $40 Billion Debt Deal for AI Chips",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPbVAyZmZTRzViZmxwNzRUSGd5MXpWNlRFLWlzT3RBMWx2cUhhaFhXUGRHeHRjam9LUldoZUpJNnVyTk9JcGdzVC1FTzNhQWVnWUJlV2hEZ1lFRzR6aE1TWXFiUG1tYWF1c3FjX00tX3FoMXk5bUtrNm1Sd2k3QTd1b0dYUUlhbHBJRDRabHg5VmdyLTV5TXRtZ1ZMWmJIeF9iYWh5T1dqMUZYbkF0ZlVBaWtn?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T00:58:52.515046+00:00",
-   "title_ru": "Маск утверждает, что SpaceX закрыла долговую сделку на $ 40 млрд по ИИ-чипам"
-  },
-  {
-   "title": "Asian shares make cautious start, Brent eases from six-month high",
-   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE90MHowUDNReVJUUkkxWEZhTnAyYnZZNGNXQjJPVWt0QjgtaERfUHM4bERQd2k2NW5kMXR5dld0NHpsYnBhOENieXU1VU9saFBya202TXRjUktMa0l6OXF0OEZFUDdxR3FtSTdCLUxRVGpZNnBndExIcGVEZmtXZw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T00:58:52.515046+00:00",
-   "title_ru": "Азиатские акции осторожно стартуют, Brent ослабевает с шестимесячного максимума",
-   "tags": [
-    "oil",
-    "markets"
-   ]
-  },
   {
    "title": "Healey's Budget needs to sustain the stronger economy through gathering clouds",
    "link": "https://www.bbc.co.uk/news/articles/ck87z4ng2l03o?at_medium=RSS&at_campaign=rss",
@@ -10717,6 +10693,18 @@
    "score": 3,
    "ts": "2026-10-29T00:45:50.484062+00:00",
    "title_ru": "Рост облака Microsoft, денежный поток предлагают передышку от опасений по поводу расходов на ИИ"
+  },
+  {
+   "title": "Shapoorji Seeks to Raise Up to $200 Million to Repay Debt",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-29/shapoorji-seeks-to-raise-up-to-200-million-to-repay-debt",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T01:05:50.428631+00:00",
+   "title_ru": "Shapoorji стремится привлечь до $ 200 млн для погашения долга",
+   "lead": "Shapoorji Pallonji Group is looking to raise $150 million to $200 million, according to people familiar with the matter, as the Indian conglomerate faces mounting debt obligations.",
+   "lead_ru": "По словам людей, знакомых с этим вопросом, Shapoorji Pallonji Group надеется привлечь от 150 до 200 миллионов долларов, поскольку индийский конгломерат сталкивается с растущими долговыми обязательствами."
   }
  ],
  "last_digest": "2026-10-28",
@@ -17415,7 +17403,7 @@
    "0001807561-26-000026",
    "0001628280-26-067980",
    "0001505300-26-000016",
-   "0000708955-26-000202",
+   "0001493152-26-049135",
    "0001193125-26-436562",
    "0001577526-26-000171",
    "0000087347-26-000126",
