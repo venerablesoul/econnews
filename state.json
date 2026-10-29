@@ -1072,7 +1072,8 @@
   "1ef3aa1f69871a3b": "2026-10-29T20:38:36.856859+00:00",
   "fd4230e3e5444424": "2026-10-29T20:43:37.907617+00:00",
   "73eb9ea806d2f44c": "2026-10-29T20:48:36.911500+00:00",
-  "4059827f609d7c5f": "2026-10-29T20:53:36.880961+00:00"
+  "4059827f609d7c5f": "2026-10-29T20:53:36.880961+00:00",
+  "0a4cbf0b6382489b": "2026-10-29T20:58:36.881491+00:00"
  },
  "recent": [
   {
@@ -11498,6 +11499,16 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "US Mortgage Rates Decline for Second Straight Week, to 7.24%",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOS2RKYlUycHNUTkl4OE5FeFExMHNwNVNlM2R6NGJvTUVaR2FsMDRVejUyTEJzdzlmeTZSTEVqUXgxZ1pUN0lSWTFRM0NFNHNYWG9waEZlcFQ3VExXeFYzanJPS2M0MVNpNWFkZkplM0xYY3JKLXdXSnRlQzN5Njh6MXNEai01SzJxQTI3emdmRUhvOWFSd1dnczItbU1TM1lWdHZvMzI2T2h1akFvSGc?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T20:58:36.881491+00:00",
+   "title_ru": "Ставки по ипотеке в США снижаются вторую неделю подряд до 7,24%"
   }
  ],
  "last_digest": "2026-10-29",
@@ -14462,6 +14473,22 @@
     "date": "2026-10-28",
     "disclosed": "2026-10-29",
     "link": "https://www.sec.gov/Archives/edgar/data/2082866/000121900426000004/0001219004-26-000004-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "9c257b94a34c76e1",
+    "ticker": "TALO",
+    "company": "TALOS ENERGY INC.",
+    "who": "Control Empresarial De Capitales S.a. De C.v.",
+    "role": "10% owner",
+    "type": "sell",
+    "value": 27701560,
+    "shares": 1508586,
+    "price": 18.36,
+    "plan": false,
+    "date": "2026-10-28",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/1724965/000114036126041180/0001140361-26-041180-index.htm"
    },
    {
     "src": "sec",
@@ -18126,22 +18153,6 @@
     "date": "2026-10-20",
     "disclosed": "2026-10-22",
     "link": "https://www.sec.gov/Archives/edgar/data/1883105/000186658126000159/0001866581-26-000159-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "c8f79df2fd1704a0",
-    "ticker": "BROS",
-    "company": "Dutch Bros Inc.",
-    "who": "Travis Boersma",
-    "role": "Chair, 10% owner",
-    "type": "sell",
-    "value": 6411393,
-    "shares": 145687,
-    "price": 44.01,
-    "plan": true,
-    "date": "2026-10-20",
-    "disclosed": "2026-10-22",
-    "link": "https://www.sec.gov/Archives/edgar/data/1883154/000186658126000158/0001866581-26-000158-index.htm"
    }
   ],
   "docs": {
@@ -18185,21 +18196,16 @@
   },
   "checked": "2026-10-29T20:08:36.874831+00:00",
   "sec_seen": [
-   "0001225208-26-008554",
-   "0001225208-26-008555",
-   "0001437749-26-033967",
    "0001437749-26-033977",
    "0001733614-26-000005",
    "0001437749-26-033984",
    "0001628280-26-068288",
-   "0000898243-26-000025",
-   "0001597870-26-000029",
-   "0001437749-26-033961",
+   "0001423902-26-000105",
+   "0001140361-26-041180",
    "0001829126-26-011778",
-   "0001219004-26-000004",
+   "0000921895-26-002881",
    "0001584145-26-000011",
-   "0001193125-26-437931",
-   "0001225208-26-008553"
+   "0001193125-26-437931"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
