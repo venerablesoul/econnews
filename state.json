@@ -1057,7 +1057,8 @@
   "7a94db72e85ec2e3": "2026-10-29T15:10:15.780765+00:00",
   "835879dae75cef4c": "2026-10-29T15:15:15.766819+00:00",
   "8f5314f12f7bd551": "2026-10-29T15:20:15.824532+00:00",
-  "e3c3c21a792da5cf": "2026-10-29T15:20:15.824532+00:00"
+  "e3c3c21a792da5cf": "2026-10-29T15:20:15.824532+00:00",
+  "22b0342965212f6a": "2026-10-29T15:25:15.676156+00:00"
  },
  "recent": [
   {
@@ -11103,6 +11104,21 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Junk Market Splits as European Spreads Hit Widest Since 2009",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-29/junk-market-splits-as-european-spreads-hit-widest-since-2009",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-29T15:25:15.676156+00:00",
+   "title_ru": "Рынок мусора раскололся, поскольку европейские спреды достигли самого широкого уровня с 2009 года",
+   "lead": "Not since the global financial crisis of 2009 has the junk bond market been this divided in Europe.",
+   "lead_ru": "После мирового финансового кризиса 2009 года рынок мусорных облигаций в Европе не был таким разделенным.",
+   "tags": [
+    "bonds"
+   ]
   }
  ],
  "last_digest": "2026-10-28",
@@ -17771,7 +17787,8 @@
   },
   "checked": "2026-10-29T14:45:15.735260+00:00",
   "sec_seen": [
-   "0002116289-26-000011"
+   "0001463254-26-000008",
+   "0001364954-26-000097"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 503: Service Unavailable"
