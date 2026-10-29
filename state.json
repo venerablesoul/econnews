@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "b0a83c6371d7c39e": "2026-10-26T18:31:22.735507+00:00",
-  "d311eb6241a5f7e8": "2026-10-26T18:36:22.769868+00:00",
-  "10f26964f6d0ed75": "2026-10-26T18:36:22.769868+00:00",
-  "b349cbdad0ca91d0": "2026-10-26T18:36:22.769868+00:00",
   "3002f6038196735f": "2026-10-26T18:46:22.725493+00:00",
   "e6740adc9c56dd3f": "2026-10-26T19:01:22.737301+00:00",
   "84799d220cf4c3df": "2026-10-26T19:06:22.770709+00:00",
@@ -1063,47 +1059,10 @@
   "fba196729bb9a663": "2026-10-29T18:05:15.668428+00:00",
   "5f65c2c7d915fe9a": "2026-10-29T18:20:15.657424+00:00",
   "4a22d93052796cb7": "2026-10-29T18:25:15.787454+00:00",
-  "07402845d2b72dd5": "2026-10-29T18:30:15.828139+00:00"
+  "07402845d2b72dd5": "2026-10-29T18:30:15.828139+00:00",
+  "c7b41a96bdef2784": "2026-10-29T18:40:15.669461+00:00"
  },
  "recent": [
-  {
-   "title": "Analysis: Why a $2 trillion deficit and 5% Treasury yields are becoming America's biggest economic challenge",
-   "link": "https://www.cnbc.com/2026/10/15/treasury-yields-deficit-national-debt-ai.html",
-   "sources": [
-    "CNBC"
-   ],
-   "score": 6,
-   "ts": "2026-10-26T18:36:22.769868+00:00",
-   "title_ru": "Анализ: почему дефицит в $ 2 трлн и доходность казначейских облигаций в 5% становятся самой большой экономической проблемой Америки",
-   "lead": "Treasury yields above 5% are raising borrowing costs for households and the federal government, highlighting the challenge of financing $2 trillion deficits.",
-   "lead_ru": "Доходность казначейских облигаций выше 5% повышает стоимость заимствований для домохозяйств и федерального правительства, подчеркивая проблему финансирования дефицита в $ 2 трлн.",
-   "tags": [
-    "bonds"
-   ]
-  },
-  {
-   "title": "JetBlue Shares Tumble to New Low Ahead of High-Stakes Earnings",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOWkJuVUFvRW1tb0xXQjJvaW90dDIyMVllUVJEbVlJdVUxYTNuZlZab2hfQUdRUEljZkw4LUZ6OC1hWjNCckMyZE8xQ0J0aXd6SnhkUEhlMkh3d3VuR1RDRUpsdXFzcHNROWs0Q3hKQy1Nb195ZVBiMkNRM0g1N2xOaVdoNlFuYnNSUHVCSGw0dlBuNEJYVmsyZGV2Zmk5bDZSUFdFdjZJRmE3WFBvMllLVnpQZw?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-26T18:36:22.769868+00:00",
-   "title_ru": "Акции JetBlue упали до нового минимума в преддверии прибылей с высокими ставками",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "Algeria president to deploy army units to Niger to protect energy and economic interests",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPOTFrSWZjQ0E0MUdTd05BVGstWk9FNUhCNTZiN21BZEhIX3B1MHgzZDdrSzFsSGt2Q2xZMGEtODdIMm5qbUNwR2EzSXpuNnFJZUk4QmZZbF9NeURyVE1yRGU2Wk5icVJOdHUzNll2ZFh5VGxIQTFpbi1vOUg3VmJLUEdpN0dzMm1Dbzl0Vi1QaUhNMGIzdmZ3UUxTUmhFZkxOVXQ5MktseVZSdHczTWg2U2V5SGdyOWtTZGJPSXZCTm5JUQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T18:36:22.769868+00:00",
-   "title_ru": "Президент Алжира направит армейские подразделения в Нигер для защиты энергетических и экономических интересов"
-  },
   {
    "title": "Goldman’s Pasquariello Says Tech Rout Casts Doubt on AI Trade",
    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNdjVDeVpOSm9FaDB3VXAwQktxQUpnOExKZTJ2ZUQ5NGFySUJtRUFhUC00b1ZpSlFOS3R1Q1hBa3VDQnRObVE4cFFSVFQxdHVBX2xDU05oNzlVU0VBOV9LT3h0QkpNaXVHaXFfWWwyMk9ZRkYzWW5EQ3E2ZE43Rl9PX2RWSzM3aVI3Q2NYWG9ZMUV5dDZLSTI5Mm1yWHF6T2lxeWRHQVRsVy1TaHVrRktXZXZB?oc=5",
@@ -11242,6 +11201,19 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "EU Starting Search for New ECB President Today, Top Official Says",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxONG5mdFB1QS02VkQyZ29nSmdmWmhNaFo1RlJWeE9rUFltaS1wN1M5b2pjbHVoa284UlNCeFdvN2R3aUppeWJScGt2akJmVFZhU2xFU0s3UG05UXJva0FKeHlMUDB4c3RJV1lCbzVnVGxCMEVCX18ycFRpSG5scWViQWVtMnNjbzY2VHphcFlEcnB5TjhLZEZQNVM1ckdDQndGbEJYVXI1Vm9LTTQ1RDRr?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T18:40:15.669461+00:00",
+   "title_ru": "ЕС начинает поиск нового президента ЕЦБ сегодня, говорит высокопоставленный чиновник",
+   "tags": [
+    "ECB"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -17928,9 +17900,7 @@
    "sec": true
   },
   "checked": "2026-10-29T17:55:15.648104+00:00",
-  "sec_seen": [
-   "0001045463-26-000023"
-  ],
+  "sec_seen": [],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
   }
