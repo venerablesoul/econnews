@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "d4b119c86e5bf992": "2026-10-26T11:40:24.194002+00:00",
-  "04b3cf620910e36d": "2026-10-26T11:40:24.194002+00:00",
   "75da3691a3a589cf": "2026-10-26T11:45:24.253298+00:00",
   "c48e398364de0474": "2026-10-26T11:45:24.253298+00:00",
   "f3c8a6a3d2180949": "2026-10-26T11:50:24.143659+00:00",
@@ -1023,18 +1021,14 @@
   "eba3666cc58aced7": "2026-10-29T11:31:43.515440+00:00",
   "793e96bd102fe634": "2026-10-29T11:31:43.515440+00:00",
   "5c7566297768a3da": "2026-10-29T11:36:43.381163+00:00",
-  "5ed5c2cdbbe0c210": "2026-10-29T11:36:43.381163+00:00"
+  "5ed5c2cdbbe0c210": "2026-10-29T11:36:43.381163+00:00",
+  "d2db289417fc5eae": "2026-10-29T11:41:43.368156+00:00",
+  "1a46b6b8df07c6e7": "2026-10-29T11:41:43.368156+00:00",
+  "864e20bb036bb4f9": "2026-10-29T11:41:43.368156+00:00",
+  "d5d4bc8220bb69a2": "2026-10-29T11:41:43.368156+00:00",
+  "5d2502fd6834b264": "2026-10-29T11:41:43.368156+00:00"
  },
  "recent": [
-  {
-   "title": "The stock market’s biggest test in weeks is here",
-   "link": "https://www.marketwatch.com/story/the-stock-markets-biggest-test-in-weeks-is-here-256f5a37?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-26T11:40:24.194002+00:00"
-  },
   {
    "title": "Gulf Oil Bargains Lure India Away From Russia as Freight Soars",
    "link": "https://www.bloomberg.com/news/articles/2026-10-26/gulf-oil-bargains-lure-india-away-from-russia-as-freight-soars",
@@ -10606,6 +10600,73 @@
    "score": 3,
    "ts": "2026-10-29T11:36:43.381163+00:00",
    "title_ru": "DoorDash переносит дату прибылей вперед на фоне отчетов о сделках Instacart"
+  },
+  {
+   "title": "India Finance Ministry Says Liquidity Key to Curbing Inflation",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-29/india-finance-ministry-says-liquidity-key-to-curbing-inflation",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-29T11:41:43.368156+00:00",
+   "title_ru": "Министерство финансов Индии заявило, что ликвидность является ключом к сдерживанию инфляции",
+   "lead": "India’s Finance Ministry said the central bank’s rate hike could help contain inflation if surplus cash in the banking system is managed effectively.",
+   "lead_ru": "Министерство финансов Индии заявило, что повышение ставки центральным банком может помочь сдержать инфляцию, если эффективно управлять избыточными денежными средствами в банковской системе.",
+   "tags": [
+    "rates",
+    "inflation"
+   ]
+  },
+  {
+   "title": "Amazon’s Ailing Stock Needs Booming Cloud Growth to Revive Rally",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-29/amazon-s-ailing-stock-needs-booming-cloud-growth-to-revive-rally",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T11:41:43.368156+00:00",
+   "title_ru": "Больные акции Amazon нуждаются в быстром росте облаков, чтобы оживить ралли",
+   "lead": "Blistering cloud growth sent Amazon.com Inc. shares soaring after its last earnings report. Now with more than half those gains gone, the firm needs to deliver a repeat performance in order to reignite its faltering stock.",
+   "lead_ru": "Стремительный рост облачных сервисов привел к резкому росту акций Amazon.com Inc. после последнего отчета о доходах. Теперь, когда более половины этих прибылей ушло, фирма должна обеспечить повторную производительность, чтобы возродить свои неустойчивые акции.",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "Geely Profit Climbs as Surging Exports Help Offset China Slump",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQNXV4Ul9NNXVnX0s4clltdHRuaDBOOFZvRmdEOE1uMUJad0EwVkl4WUYtcGpkRVNhT2hkcU50YUJ5d015NkhlQTZKbmtBMDI1RHhBYS1RQ1NXazZ4RkpOckptcGQxNDIyYlg3MHl3dURpYzFXcGh1VXdJSGw3SWdKSWNtMm9YelpOYkdoVlVBWWp0MG8xSHhMTE9mSWk1M1JaSmRWZVdXTGVkNENsWGRVM2M4bw?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T11:41:43.368156+00:00",
+   "title_ru": "Прибыль Geely растет, поскольку растущий экспорт помогает компенсировать спад в Китае",
+   "tags": [
+    "China"
+   ]
+  },
+  {
+   "title": "UK lenders approve fewest mortgages since 2023 as borrowing cost rises",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOOUMyZlA3NjRuVTlsSFZWUWlld1NDanllN3lmSjlHMTNpbVg3VWNzTkZINERDbnRoM2xtN29TOGp0cjE1NzV6TnoxMnBoamhER3ZyTnJMazhtaDA1X01uRUdDcnl3THgtamxNZEU4UkY0MVFkS1JTSmNxT1B1SldGU2NLSFBTdnJOX0Y5a1czaW9mNjlnV0ZxWXlqOHozTDBZcVZlZk40ajhCVUZrTnFhM3dB?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T11:41:43.368156+00:00",
+   "title_ru": "Британские кредиторы одобрили наименьшее количество ипотечных кредитов с 2023 года, поскольку стоимость заимствований растет"
+  },
+  {
+   "title": "Lloyds shares drop on muted third quarter results as higher taxes loom",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOYlBTMnFidXphUDIycWFBZG8xQkFfdEZCR3oyRlMwY3JIRTZZOE1tX1ZpM0JCb1BnQ1Y3LUxUVWZqT3ZUazJBZVJoWnpuQkMydUFvZmVsVkR4ZnlBbVJIZHFPMzlidFpSXzB2VmNkenJubEJaTng5ME1vNVBWSUUxdnZJWHJucVUyaDBEUDB1NDZMRUtSVnZCMFNIUWdMOG5UR19hVVBIZ3RtWDhubDV6dEJLN3hBYThNWTNRTDJUR2Roem9y?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T11:41:43.368156+00:00",
+   "title_ru": "Акции Lloyds падают на фоне приглушенных результатов третьего квартала, поскольку надвигаются более высокие налоги",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-28",
@@ -17269,7 +17330,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-29T10:36:43.437579+00:00",
+  "checked": "2026-10-29T11:41:43.368156+00:00",
   "sec_seen": [
    "0001999371-26-023803",
    "0001493152-26-049161",
@@ -17297,10 +17358,9 @@
    "0001437749-26-033849",
    "0001493152-26-049170",
    "0001213900-26-113489",
-   "0001609151-26-000143",
+   "0001770870-26-000012",
    "0001526864-26-000005",
-   "0001493152-26-049167",
-   "0001609151-26-000144"
+   "0001493152-26-049167"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
