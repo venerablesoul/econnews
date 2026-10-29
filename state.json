@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e6740adc9c56dd3f": "2026-10-26T19:01:22.737301+00:00",
   "84799d220cf4c3df": "2026-10-26T19:06:22.770709+00:00",
   "e4ad86d907c7c077": "2026-10-26T19:06:22.770709+00:00",
   "fbe4f652c0437925": "2026-10-26T19:11:22.703689+00:00",
@@ -1061,7 +1060,8 @@
   "07402845d2b72dd5": "2026-10-29T18:30:15.828139+00:00",
   "c7b41a96bdef2784": "2026-10-29T18:40:15.669461+00:00",
   "627c259685f21145": "2026-10-29T18:50:15.676247+00:00",
-  "aecd0b4b610bf2bf": "2026-10-29T18:50:15.676247+00:00"
+  "aecd0b4b610bf2bf": "2026-10-29T18:50:15.676247+00:00",
+  "c858c664b687febb": "2026-10-29T19:03:37.057662+00:00"
  },
  "recent": [
   {
@@ -11245,6 +11245,16 @@
    "tags": [
     "gold"
    ]
+  },
+  {
+   "title": "India says trade deal with US will not hurt its farmers",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNcEhZNUhpdlVpMDVtUklNQVJyMktBMXR5QnhHN2d1TW54c0JOeVlFRjdmMmR2TlhuNEdjUzV4UGNvOHJVd3FPNDF6NE9Da3l4Q3dHdmlkRkxLTFotXzY0MDdWcFlBXzhRMFhtbU5MRDY0V25PSzNaUUJuZi1qU0JzWWdDdFBEUVZycmd4eUVmNlVrQzFBMDhGZVhvN2ZaVFBVeWNyb3ZB?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T19:03:37.057662+00:00",
+   "title_ru": "Индия заявляет, что торговая сделка с США не повредит ее фермерам"
   }
  ],
  "last_digest": "2026-10-29",
@@ -17930,10 +17940,8 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-29T17:55:15.648104+00:00",
-  "sec_seen": [
-   "0001031203-26-000145"
-  ],
+  "checked": "2026-10-29T19:03:37.057662+00:00",
+  "sec_seen": [],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
   }
