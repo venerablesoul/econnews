@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "ad3a44dc456b4a43": "2026-10-26T05:14:41.362286+00:00",
-  "f9d0284da1f30563": "2026-10-26T05:14:41.362286+00:00",
   "5c89bf39e886882a": "2026-10-26T05:24:41.381142+00:00",
   "10f00f1d4faa516f": "2026-10-26T05:29:41.366239+00:00",
   "3bd339c1558979c1": "2026-10-26T05:34:41.430104+00:00",
@@ -1061,32 +1059,14 @@
   "a085beb0cd9a0bfc": "2026-10-29T05:01:19.842142+00:00",
   "4d7cc955061278da": "2026-10-29T05:01:19.842142+00:00",
   "fe67f5c0aa801f0e": "2026-10-29T05:06:19.803647+00:00",
-  "12ab1b6980bca0f3": "2026-10-29T05:11:19.835237+00:00"
+  "12ab1b6980bca0f3": "2026-10-29T05:11:19.835237+00:00",
+  "cdd9919353fdd5c9": "2026-10-29T05:16:19.801440+00:00",
+  "8721bbc8c74fe406": "2026-10-29T05:16:19.801440+00:00",
+  "30f9e1e612cd0b83": "2026-10-29T05:16:19.801440+00:00",
+  "27d65b9092e49ad5": "2026-10-29T05:16:19.801440+00:00",
+  "badae83794fd540b": "2026-10-29T05:16:19.801440+00:00"
  },
  "recent": [
-  {
-   "title": "Houthis say they attacked East-West oil pumping stations; No Saudi confirmation",
-   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxORlYwOVl3Z1hlOFdacWVmeXZVNnVhejFlWDVOR0toczJ2MWNjT1FMRWZjVU0xd1hGaGtzNU9VcGdYSnR1Z2NVQjFfRVpKallEcEVuTzNweldmeEdYOE05UXFOejl1ekR1ZjlxUlhHT1NLa3J0cmZYWUxhSEs2eXNGb2xNNUJycVNWci1ZVzZUOXBSNGc0bzRJNWVTTnVlWHhXRlBrLWRTOV9HbmlJTmVfZk95N0FIQnBLQTlTa3N3eFBaVDJMWGptVU1VN3A?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T05:14:41.362286+00:00",
-   "title_ru": "Хуситы говорят, что они атаковали нефтеперекачивающие станции Восток-Запад; Нет подтверждения Саудовской Аравии",
-   "tags": [
-    "oil"
-   ]
-  },
-  {
-   "title": "Insight: Down by the River Thames, a failure to build holds back Britain's growth",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPRU9qY2pZVjVWZkxlV2tBWkZETGhrR1hOWVdMbEQ5SXp4STVWMHpISmRxVnp0Q3dFUnFFdlpwMVBOV0E1RE9DWmxQSDhITlFsQTVibGkxczFNZGJKdHMydjhlMWNzSnJLc2NmS01JUmpjVXNvQVVUX3NRdTVQb1lGU3FvcXplNGE3TXIyOXJFX3V6WE9jMExTUkRKNmFkZzNkQ2VSekFsVmc3Zw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T05:14:41.362286+00:00",
-   "title_ru": "Инсайт: Вниз по Темзе провал строительства сдерживает рост Великобритании"
-  },
   {
    "title": "Can Pakistan’s military government make the economy grow?",
    "link": "https://www.ft.com/content/14242b5e-0975-4c7d-92fd-e7c04e87238a?syn-25a6b1a6=1",
@@ -10675,6 +10655,69 @@
    ],
    "score": 2,
    "ts": "2026-10-29T05:06:19.803647+00:00"
+  },
+  {
+   "title": "Oil prices fall as peace hopes offset fears of growing Middle East conflict",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQdy1kTGwzTi1ZWVpiLUFTbF9HS0VGbXFnVWhMVzBfOUhieU95OGhLZnpZLTB3ckdrOEFMZms2UU1qYUMyY01yd3VOQmNhNGU4MmZvNE1uUzdqcXc0OWxLYlRRSk5NaU85cUdZYTd0a1d0QU93S0JfaTNMdlpVa3pMeVBUZnFtd0ZMVXhMWGhHejZOVjQtZlN2ekVsaTdWU2hCVE8xaTlpamEzXzQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-29T05:16:19.801440+00:00",
+   "title_ru": "Цены на нефть падают, поскольку надежды на мир компенсируют опасения по поводу растущего конфликта на Ближнем Востоке",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "Fed highlights economic strength but muddies outlook for Treasuries",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPbF9GR2lXNExEVWlIMldlTk5QWXQyWTVIbHlzMnM1bTRhdUFzQ2NwQm9MYXdyaG92dlB1YTlJVW1ESG5iNmtkTDhnMG9IanBqeUJmOUQ2Sm45c3pHSzEtZ3lvZUxSRmNLc184eWhReTVvbEdhQ1AwTnF6akVFUlFyd2NJRFdIOWF6OHFISDAxZWMxOHFJcXJPRlp0RFVpZzB0MF9rNTh2TQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-29T05:16:19.801440+00:00",
+   "title_ru": "ФРС подчеркивает экономическую силу, но грязные перспективы для казначейских облигаций",
+   "tags": [
+    "Fed",
+    "bonds"
+   ]
+  },
+  {
+   "title": "New Zealand central bank governor says chances of December hike are 'high'",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxObXh0UVJsVGRQT3BramlrcFMwVVd6TjF4UzdJVUo3YlFkMkR6d05felZaZVN6a1NWN2NPd21VckdBVHhPR2FTbVotdmdzSzNNM1c1bGYwOGtEckNCVU94aDE4MGtXSHRsUTFldFZla2s1SWI2OGdNbW5BUEdJd0R4S3lHOHc5ckFVNFhjTXRNSlU0NzRyWjJPMC1pdU9rLUFrdGIzNk9wZk9DaTVZaDhhQmNmaW5fY2lFVWQ4azA1QWl4dw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T05:16:19.801440+00:00",
+   "title_ru": "Управляющий Центрального банка Новой Зеландии говорит, что шансы на декабрьское повышение «высоки»"
+  },
+  {
+   "title": "FedEx margins decline as it pays more to hire truckers, shares fall",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPVDBFVlRXdkVhV1hKV1RaMllIcXBWeUdONzNLcFF2Z1dmdk12Q2RqSmJaaE1hQ0NXOWNWMTQxWkw4S1hOZnBvT0pHNVRWZkFvZm1uY05heWF5U3N5Mm9xeVlPNzhleGNIUkNwOHR4QlREV004ZDI4eEdid3VaZExQSld1cjZOZjNhX3NHa3RzcEtwLVZtaDBVREFoV1FFalI4UHZOUnpHN3JuWURxM3poeEs2UW5yek1BSFVldlF2RQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T05:16:19.801440+00:00",
+   "title_ru": "Маржа FedEx снижается, поскольку она платит больше за наем дальнобойщиков, акции падают",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "Flexible wage deals can boost competitiveness, protect jobs, study says",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPbkRoWWJ6VHJqSlhKRHByVXNEaDZ5N2NTZDVTcDh1SlY1aGxBYnMyUkYxQmhqWXBtTGNTLURGa0JGUVdjVjNrZDJMYUVkcjlBODRqWjJLclZRemNOZ1hWNkhmbS0ySm9wNThqaTJ6R2FnN0NvRFdnbVNyc3ZmbWZzalIySGpjZ0NzeFV0c0otTWo3TWJWanluM2xsWUE0ZVQzTjFpOHFBQ1d5ZXVsRmZpUzRla1BjWjl2bW5lSTRvOG5qWXBMYVlj?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T05:16:19.801440+00:00",
+   "title_ru": "Гибкие условия оплаты труда могут повысить конкурентоспособность, защитить рабочие места, говорится в исследовании",
+   "tags": [
+    "jobs"
+   ]
   }
  ],
  "last_digest": "2026-10-28",
