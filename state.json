@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "3002f6038196735f": "2026-10-26T18:46:22.725493+00:00",
   "e6740adc9c56dd3f": "2026-10-26T19:01:22.737301+00:00",
   "84799d220cf4c3df": "2026-10-26T19:06:22.770709+00:00",
   "e4ad86d907c7c077": "2026-10-26T19:06:22.770709+00:00",
@@ -1060,7 +1059,9 @@
   "5f65c2c7d915fe9a": "2026-10-29T18:20:15.657424+00:00",
   "4a22d93052796cb7": "2026-10-29T18:25:15.787454+00:00",
   "07402845d2b72dd5": "2026-10-29T18:30:15.828139+00:00",
-  "c7b41a96bdef2784": "2026-10-29T18:40:15.669461+00:00"
+  "c7b41a96bdef2784": "2026-10-29T18:40:15.669461+00:00",
+  "627c259685f21145": "2026-10-29T18:50:15.676247+00:00",
+  "aecd0b4b610bf2bf": "2026-10-29T18:50:15.676247+00:00"
  },
  "recent": [
   {
@@ -11214,6 +11215,36 @@
    "tags": [
     "ECB"
    ]
+  },
+  {
+   "title": "ЕЦБ осторожничает // Европейский центробанк не стал повышать ставку, несмотря на ускорение инфляции в еврозоне",
+   "link": "https://www.kommersant.ru/doc/9064037",
+   "sources": [
+    "Kommersant"
+   ],
+   "score": 10,
+   "ts": "2026-10-29T18:50:15.676247+00:00",
+   "title_en": "The ECB is cautious //the European Central Bank did not raise the rate, despite the acceleration of inflation in the eurozone",
+   "lead": "Европейский центральный банк (ЕЦБ) сохранил все три основные процентные ставки на прежнем уровне — после сентябрьского повышения на 0,25 процентного пункта регулятор предпочел воздержаться от дальнейшего ужесточения своей…",
+   "lead_en": "The European Central Bank (ECB) kept all three main interest rates at the same level — after the September increase of 0.25 percentage points, the regulator chose to refrain from further tightening its...",
+   "tags": [
+    "ECB",
+    "rates",
+    "inflation"
+   ]
+  },
+  {
+   "title": "LBMA members back tokenised gold but seek legal certainty and safeguards",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOWGsySVpZX2g0a0R0ZndGOUhvdWQyVzRpY1pUMC1YUHRfa3V0aG80MGRId2U1TWN6bDZJdEV2QXpnYWhJX0VVVWZtTzRNaFdWT29UWVN5OEc1eFN6LWtqZkluVU9rd1htQkZGWG14VW1VUlB5RGFhWmIyRnNJUVdOVHBUcXNKdFUxWC1oeTZGcFhrYnpULTI4VXFaUGlOcVY0XzFzVFRvV2ZFYjNDM2c?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T18:50:15.676247+00:00",
+   "title_ru": "Члены LBMA возвращают токенизированное золото, но стремятся к правовой определенности и гарантиям",
+   "tags": [
+    "gold"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -13859,6 +13890,22 @@
    }
   ],
   "insiders": [
+   {
+    "src": "sec",
+    "id": "6393e44b345ae8aa",
+    "ticker": "GPI",
+    "company": "GROUP 1 AUTOMOTIVE INC",
+    "who": "Gillian A. Hobson",
+    "role": "General Counsel",
+    "type": "sell",
+    "value": 516480,
+    "shares": 2000,
+    "price": 258.24,
+    "plan": false,
+    "date": "2026-10-29",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/1959640/000103120326000145/0001031203-26-000145-index.htm"
+   },
    {
     "src": "sec",
     "id": "3419e6ac69fcaa22",
@@ -17842,22 +17889,6 @@
     "date": "2026-10-21",
     "disclosed": "2026-10-21",
     "link": "https://www.sec.gov/Archives/edgar/data/1551047/000139834426018550/0001398344-26-018550-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "1623aeedcae1e351",
-    "ticker": "ADPT",
-    "company": "Adaptive Biotechnologies Corp",
-    "who": "Julie Rubinstein",
-    "role": "COO",
-    "type": "sell",
-    "value": 879088,
-    "shares": 35643,
-    "price": 24.66,
-    "plan": true,
-    "date": "2026-10-21",
-    "disclosed": "2026-10-21",
-    "link": "https://www.sec.gov/Archives/edgar/data/1780664/000178066426000043/0001780664-26-000043-index.htm"
    }
   ],
   "docs": {
@@ -17900,7 +17931,9 @@
    "sec": true
   },
   "checked": "2026-10-29T17:55:15.648104+00:00",
-  "sec_seen": [],
+  "sec_seen": [
+   "0001031203-26-000145"
+  ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
   }
