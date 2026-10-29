@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "6b0b0f9487910618": "2026-10-26T04:39:41.382446+00:00",
-  "82fa9ff4f887128f": "2026-10-26T04:39:41.382446+00:00",
   "0150aa78aa42c405": "2026-10-26T04:49:41.378443+00:00",
   "fa3806792c5e8b5f": "2026-10-26T04:54:41.376976+00:00",
   "1e4ff58776b3eb2e": "2026-10-26T04:54:41.376976+00:00",
@@ -1070,22 +1068,6 @@
   "a2f455c1f2baf9c8": "2026-10-29T04:36:19.798013+00:00"
  },
  "recent": [
-  {
-   "title": "China National Team ETFs Draw Most Inflows Since Trade War Rout",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-26/china-national-team-etfs-draw-most-inflows-since-trade-war-rout",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-26T04:39:41.382446+00:00",
-   "title_ru": "ETF национальной команды Китая привлекают наибольшее количество притоков со времен торговой войны",
-   "lead": "China’s state-led funds stepped into the market with the heaviest buying since the April 2025 rout, as authorities ramped up efforts to stem a market freefall.",
-   "lead_ru": "Государственные фонды Китая вышли на рынок с самыми крупными покупками с апреля 2025 года, когда власти активизировали усилия, чтобы остановить свободное падение рынка.",
-   "tags": [
-    "China",
-    "tariffs"
-   ]
-  },
   {
    "title": "Elections, central banks and earnings on the menu",
    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNc08wOVYzT3pKR0lSY3VtZWt6TkhvTGRieHE2eVJqeTZiZnhzQUFQMFAzd1hlT3l0QS01ZlhlQVZDWWNCUkpiSFg3OEtDcGJLMzNXcnhsRWZrSW5ELTlIZFpnMnl1NkVfZnFwZnFYZGVXUTVJUVJmZ2ZuVFlXWU1oWm9ZOXRVbVZSUGhDX2xKR1Q?oc=5",
@@ -10749,7 +10731,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 0,
+  "Fed": 1,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
