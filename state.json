@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "fdf4639479d06f53": "2026-10-26T02:13:52.515425+00:00",
-  "4041979994ec3719": "2026-10-26T02:13:52.515425+00:00",
   "bf1dbf926acafe51": "2026-10-26T02:28:52.432064+00:00",
   "ed17e724ce351e15": "2026-10-26T02:28:52.432064+00:00",
   "c01a2eedc2dc786c": "2026-10-26T02:33:52.469406+00:00",
@@ -1076,19 +1074,11 @@
   "1847ae4b65e9119c": "2026-10-29T01:55:50.421115+00:00",
   "9b4807e570c3cdf0": "2026-10-29T02:05:50.441507+00:00",
   "eaabe532c90c139b": "2026-10-29T02:10:50.456399+00:00",
-  "663db2dfe0315741": "2026-10-29T02:10:50.456399+00:00"
+  "663db2dfe0315741": "2026-10-29T02:10:50.456399+00:00",
+  "94214e3b05d5f0b6": "2026-10-29T02:15:50.425477+00:00",
+  "417c7fdf01d2c9bd": "2026-10-29T02:15:50.425477+00:00"
  },
  "recent": [
-  {
-   "title": "Currency markets subdued ahead of pivotal central bank week",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQWlRGQXNlMDJDS0ZlQnJqVlI0Q3FOUUhyZmpfcUY2TDJNOTA5a0NDMEc5QWpKZ3NrQlZ0QWJSMERlU2wzQlFxcWF0OVFRVlNOSUYydEdiaU5LaTFvVDMxTk5NWTF6NVVFZEdRcW8tOHpZRnlmWDhiRnV3QlllYnVtVldqTGllWmY2RnF1MWVlMFRBT0xWbHliN3pWM3NhQnNzRV80ZHJ5T0M?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-26T02:13:52.515425+00:00",
-   "title_ru": "Валютные рынки приглушились в преддверии ключевой недели центрального банка"
-  },
   {
    "title": "Asia’s Busiest Earnings Week Puts AI Boom in Focus After Selloff",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOaHhUTFV6NTJwVWNQY0JUbWhWMEJGekFlSEJhYUVHeDZNWlNvMGVaQ1lQSlh1SDNRUmV5Q3Z0eEFiaW5KZEo1TFBHTTV6MUtkSEZDdXVydzZWcXZLWC0zTVdZUG1WaGc2WkJNZlB0Nnl4YUhnNkNwWHBJZlk5TnVNYy1nMmp4YkpJOEs2ZDJ5NHhyUGpXaXlpZWUzRjBCaWZXWXFNM3RGS0tlcHlhYnd6aGxWTExwUQ?oc=5",
@@ -10666,6 +10656,35 @@
     "Fed",
     "dollar"
    ]
+  },
+  {
+   "title": "ECB to hold rates as investors focus on French bonds, Lagarde's future",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOZldaRFJxZExRTzZ2T1lfc1pYUWtpbFJwRHk0YmpCaHdkYXd4ZV9vbGpmellrN1Ztck8wallTMnphd1V6VWFLckM4bTRiX1c5VmZmSUZwdUROem02ZXlUY3NKT1poTEhFWDRQOThHcEQ5YkMzY1gxU1NoTm5mdFhVR2xWakJSYUFVSTRKS0Rva1JIR0FhOHFJck5Ic3AzNzNWQTJuMXFySnNFcDNIYXN0TWtn?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 8,
+   "ts": "2026-10-29T02:15:50.425477+00:00",
+   "title_ru": "ЕЦБ будет удерживать ставки, поскольку инвесторы сосредоточены на французских облигациях, будущем Лагард",
+   "tags": [
+    "ECB",
+    "bonds"
+   ]
+  },
+  {
+   "title": "RBNZ Governor Sees ‘High’ Chance of December Interest-Rate Hike",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-29/rbnz-governor-sees-high-chance-of-december-interest-rate-hike",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-29T02:15:50.425477+00:00",
+   "title_ru": "Губернатор РБНЗ видит «высокий» шанс на повышение процентной ставки в декабре",
+   "lead": "New Zealand’s central bank governor says there is a “high” chance of an interest rate increase when policymakers next meet in December.",
+   "lead_ru": "Управляющий Центрального банка Новой Зеландии говорит, что существует «высокая» вероятность повышения процентной ставки, когда политики встретятся в декабре.",
+   "tags": [
+    "rates"
+   ]
   }
  ],
  "last_digest": "2026-10-28",
@@ -17327,7 +17346,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-29T01:10:50.567285+00:00",
+  "checked": "2026-10-29T02:15:50.425477+00:00",
   "sec_seen": [
    "0001609151-26-000143",
    "0001577526-26-000167",
