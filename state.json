@@ -1038,7 +1038,8 @@
   "ec307002a1ce4176": "2026-10-29T12:46:43.548575+00:00",
   "44a7bdecf74a5b54": "2026-10-29T12:51:43.422192+00:00",
   "8b606ddfe079283e": "2026-10-29T12:51:43.422192+00:00",
-  "0640b62a2ed0ac22": "2026-10-29T12:56:43.504650+00:00"
+  "0640b62a2ed0ac22": "2026-10-29T12:56:43.504650+00:00",
+  "1495b74b02462c18": "2026-10-29T13:01:44.102878+00:00"
  },
  "recent": [
   {
@@ -10817,6 +10818,21 @@
    "score": 3,
    "ts": "2026-10-29T12:56:43.504650+00:00",
    "title_ru": "Экономика США растет быстрее, чем ожидалось, на 3,4%, больше всего за год"
+  },
+  {
+   "title": "Our church has a $1.5 million bequest earning 3.75% in a bank account. Is inflation eroding it?",
+   "link": "https://www.marketwatch.com/story/there-may-be-better-investment-options-my-church-received-1-5-million-from-a-parishioner-is-3-75-interest-enough-5164d790?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T13:01:44.102878+00:00",
+   "title_ru": "У нашей церкви есть завещание на сумму 1,5 миллиона долларов, приносящее 3,75% на банковском счете. Инфляция разрушает его?",
+   "lead": "“Given the size and long-term nature of this gift, we want to make sure the funds are managed prudently.”",
+   "lead_ru": "«Учитывая размер и долгосрочный характер этого подарка, мы хотим обеспечить разумное управление средствами».",
+   "tags": [
+    "inflation"
+   ]
   }
  ],
  "last_digest": "2026-10-28",
@@ -17514,6 +17530,7 @@
  },
  "cal_actuals": {
   "USD|2026-10-28T18:00:00+00:00|Federal Funds Rate": "4.0%",
-  "USD|2026-10-29T12:30:00+00:00|Core PCE Price Index m/m": "0.3%"
+  "USD|2026-10-29T12:30:00+00:00|Core PCE Price Index m/m": "0.3%",
+  "USD|2026-10-29T12:30:00+00:00|Advance GDP q/q": "3.4%"
  }
 }
