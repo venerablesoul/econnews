@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e69b42b6e86d8a4c": "2026-10-26T11:35:24.325038+00:00",
   "d4b119c86e5bf992": "2026-10-26T11:40:24.194002+00:00",
   "04b3cf620910e36d": "2026-10-26T11:40:24.194002+00:00",
   "75da3691a3a589cf": "2026-10-26T11:45:24.253298+00:00",
@@ -1022,21 +1021,11 @@
   "bddc832a8f5694c4": "2026-10-29T11:21:43.375950+00:00",
   "96d762371d3177b8": "2026-10-29T11:21:43.375950+00:00",
   "eba3666cc58aced7": "2026-10-29T11:31:43.515440+00:00",
-  "793e96bd102fe634": "2026-10-29T11:31:43.515440+00:00"
+  "793e96bd102fe634": "2026-10-29T11:31:43.515440+00:00",
+  "5c7566297768a3da": "2026-10-29T11:36:43.381163+00:00",
+  "5ed5c2cdbbe0c210": "2026-10-29T11:36:43.381163+00:00"
  },
  "recent": [
-  {
-   "title": "Nigeria Floats Draft Economic Plan to Outlast Governments",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-26/nigeria-floats-draft-economic-plan-to-outlast-governments",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T11:35:24.325038+00:00",
-   "title_ru": "Нигерия представила проект экономического плана, способного пережить правительства",
-   "lead": "Nigerian Finance Minister Taiwo Oyedele unveiled a draft economic policy framework designed to serve as a blueprint for government plans, budgets and policies, regardless of the administration in power.",
-   "lead_ru": "Министр финансов Нигерии Тайво Ойеделе представил проект рамок экономической политики, призванный служить основой для правительственных планов, бюджетов и политики, независимо от того, какая администрация находится у власти."
-  },
   {
    "title": "The stock market’s biggest test in weeks is here",
    "link": "https://www.marketwatch.com/story/the-stock-markets-biggest-test-in-weeks-is-here-256f5a37?mod=mw_rss_topstories",
@@ -10592,6 +10581,31 @@
    ],
    "score": 1,
    "ts": "2026-10-29T11:31:43.515440+00:00"
+  },
+  {
+   "title": "Europe Set to Release 42 Million Barrels of Oil, France Says",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-29/europe-set-to-release-42-million-barrels-of-oil-france-says",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T11:36:43.381163+00:00",
+   "title_ru": "Европа собирается выпустить 42 миллиона баррелей нефти, говорит Франция",
+   "lead": "Europe will release 42 million barrels of oil reserves into the market over the next three months as part of its commitment to ease prices, France’s economy minister Roland Lescure said Thursday.",
+   "lead_ru": "Европа выпустит на рынок 42 миллиона баррелей нефтяных запасов в течение следующих трех месяцев в рамках своего обязательства по снижению цен, заявил в четверг министр экономики Франции Ролан Лескюр.",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "DoorDash Moves Earnings Date Forward Amid Instacart Deal Reports",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPbU5hdHQybGNNbVRENFctclZpUUU0STIzVnA0bFdmbWJ1QTROa0RjdHVLSC0wVF83Y05LSGh0SFh1UWxFcGZIa0dMUHhLejNZcHE3NC11YVVsR0RiWE9lVk1Gbm1BOFdmczQ0U0V5Q1Jhc2VuemZEM0JIS0JvTWZsYW9TRzlvbnJLdWxzTzVBNmVhT1RzdU11cF95eXViYUN0OTdLSXJ2QU1nNGFUY3BNMGZhUW5rUQ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T11:36:43.381163+00:00",
+   "title_ru": "DoorDash переносит дату прибылей вперед на фоне отчетов о сделках Instacart"
   }
  ],
  "last_digest": "2026-10-28",
@@ -17284,7 +17298,6 @@
    "0001493152-26-049170",
    "0001213900-26-113489",
    "0001609151-26-000143",
-   "0001609151-26-000142",
    "0001526864-26-000005",
    "0001493152-26-049167",
    "0001609151-26-000144"
