@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "dfcfa1269d27e29c": "2026-10-26T14:56:22.808348+00:00",
   "fffe7c9b9e59b89b": "2026-10-26T15:01:22.833536+00:00",
   "57797c10da3d3bdf": "2026-10-26T15:01:22.833536+00:00",
   "887ef2480631629f": "2026-10-26T15:11:22.727822+00:00",
@@ -1057,25 +1056,10 @@
   "497b7be4a5a8766b": "2026-10-29T14:55:15.629002+00:00",
   "29e25a23fab25b88": "2026-10-29T14:55:15.629002+00:00",
   "fe8062d1849909d7": "2026-10-29T14:55:15.629002+00:00",
-  "3481c1b09580db88": "2026-10-29T14:55:15.629002+00:00"
+  "3481c1b09580db88": "2026-10-29T14:55:15.629002+00:00",
+  "234fb873d6a1dce4": "2026-10-29T15:00:15.903196+00:00"
  },
  "recent": [
-  {
-   "title": "Bloomberg сообщил, что Индия стала чаще выбирать нефть не из России",
-   "link": "https://www.rbc.ru/economics/26/10/2026/6adf4f8d4e8e85f125c987b3",
-   "sources": [
-    "RBC"
-   ],
-   "score": 3,
-   "ts": "2026-10-26T14:56:22.808348+00:00",
-   "title_en": "Bloomberg reported that India has become more likely to choose oil not from Russia",
-   "lead": "Индийские НПЗ все чаще выбирают нефть Персидского залива из-за скидок и дорогой доставки из России, пишет Bloomberg. Песков заявлял, что Индия, как суверенное государство, закупает энергоресурсы там, где это для нее выгодно",
-   "lead_en": "Indian refineries are increasingly choosing Persian Gulf oil because of discounts and expensive delivery from Russia, Bloomberg writes. Peskov stated that India, as a sovereign state, buys energy resources where it is beneficial for it",
-   "tags": [
-    "oil",
-    "Russia"
-   ]
-  },
   {
    "title": "Democrats to Probe Russian Diesel, Ask Banks to Save Records",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQZmtzeERGZU1mNGpJZW03eVR6VUZWV2VKOW96eEJWRW05blQtS3lHRW8wQ084alI3U210NzRvSDk5ai1USE9sckU1TzlXMW4ycmJuZk5pWDRsbncwNmVONDZZREh5N2k5RDBHbXN4cHVWNVFoS3A0ZXg3M0FIR1NJaXVyckxFTlJQdkhvdng4RFhRVXlmcGZDbVRyNi1iMV9JVk92TEVHTHdIblRXM0tWREM3QWI?oc=5",
@@ -11077,6 +11061,18 @@
    "title_ru": "Юго-Запад реагирует на бюджетные объявления",
    "lead": "Tourism and business leaders have been reacting to John Healey's first Budget as chancellor.",
    "lead_ru": "Лидеры туризма и бизнеса отреагировали на первый бюджет Джона Хили в качестве канцлера."
+  },
+  {
+   "title": "Faisal Islam: The 10-year plan will have to fill the gaps from this 'micro Budget'",
+   "link": "https://www.bbc.co.uk/news/articles/cwx283zynnv3o?at_medium=RSS&at_campaign=rss",
+   "sources": [
+    "BBC"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T15:00:15.903196+00:00",
+   "title_ru": "Фейсал Ислам: 10-летний план должен заполнить пробелы в этом «микробюджете»",
+   "lead": "Chancellor John Healey's plans fall short of radical action to create a promised new economic model.",
+   "lead_ru": "Планы канцлера Джона Хили не соответствуют радикальным действиям по созданию обещанной новой экономической модели."
   }
  ],
  "last_digest": "2026-10-28",
@@ -17744,7 +17740,9 @@
    "sec": true
   },
   "checked": "2026-10-29T14:45:15.735260+00:00",
-  "sec_seen": [],
+  "sec_seen": [
+   "0002116289-26-000011"
+  ],
   "errors": {
    "senate": "HTTPError: HTTP Error 503: Service Unavailable"
   }
