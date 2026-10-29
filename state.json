@@ -1063,7 +1063,9 @@
   "8a8700139bf25462": "2026-10-29T17:40:15.864981+00:00",
   "6b36442b14bcae0f": "2026-10-29T17:50:15.674656+00:00",
   "3be8c837b4b4381d": "2026-10-29T17:55:15.648104+00:00",
-  "0f33882a5ca4f953": "2026-10-29T18:00:15.979362+00:00"
+  "0f33882a5ca4f953": "2026-10-29T18:00:15.979362+00:00",
+  "31c6dbc1e4b15658": "2026-10-29T18:05:15.668428+00:00",
+  "fba196729bb9a663": "2026-10-29T18:05:15.668428+00:00"
  },
  "recent": [
   {
@@ -11213,6 +11215,31 @@
    "tags": [
     "ECB"
    ]
+  },
+  {
+   "title": "Agnico Eagle (AEM) Flags Diesel Risk to Gold Output Costs Next Year",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-29/agnico-eagle-aem-flags-diesel-risk-to-gold-output-costs-next-year",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T18:05:15.668428+00:00",
+   "title_ru": "Agnico Eagle (AEM) отмечает риск, связанный с дизельным топливом, для затрат на добычу золота в следующем году",
+   "lead": "Agnico Eagle Mines Ltd. warned that rising diesel prices risk raising the cost of producing gold by as much as $80 per ounce next year, signaling mounting inflationary pressures for the mining industry.",
+   "lead_ru": "Компания Agnico Eagle Mines Ltd. предупредила, что рост цен на дизельное топливо рискует поднять стоимость добычи золота на целых 80 долларов за унцию в следующем году, сигнализируя о растущем инфляционном давлении в горнодобывающей промышленности.",
+   "tags": [
+    "inflation",
+    "gold"
+   ]
+  },
+  {
+   "title": "Did the Fed make a mistake with its October rate pause? The Treasury could help save the day.",
+   "link": "https://www.marketwatch.com/story/did-the-fed-make-a-mistake-with-its-october-rate-pause-the-treasury-could-help-save-the-day-77d84993?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-29T18:05:15.668428+00:00"
   }
  ],
  "last_digest": "2026-10-29",
@@ -17899,7 +17926,9 @@
    "sec": true
   },
   "checked": "2026-10-29T17:55:15.648104+00:00",
-  "sec_seen": [],
+  "sec_seen": [
+   "0001045463-26-000023"
+  ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
   }
