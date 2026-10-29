@@ -1070,7 +1070,8 @@
   "07f32b49bde492af": "2026-10-29T20:33:36.867577+00:00",
   "5a5e01ce02688061": "2026-10-29T20:38:36.856859+00:00",
   "1ef3aa1f69871a3b": "2026-10-29T20:38:36.856859+00:00",
-  "fd4230e3e5444424": "2026-10-29T20:43:37.907617+00:00"
+  "fd4230e3e5444424": "2026-10-29T20:43:37.907617+00:00",
+  "73eb9ea806d2f44c": "2026-10-29T20:48:36.911500+00:00"
  },
  "recent": [
   {
@@ -11473,6 +11474,16 @@
    "score": 5,
    "ts": "2026-10-29T20:43:37.907617+00:00",
    "title_ru": "Фискальный монитор (октябрь 2026 г.) – Первичное чистое кредитование/заимствование (также называемое первичным балансом)"
+  },
+  {
+   "title": "TSX down as miner earnings disappoint, Alphabet drags tech",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQTmx0bHpYVWdrRDdFMTd2a3o2SXVTM252RlZBSWVsRVVPTnYxdGZvMkc4b21zTXdUbS1YcGlfejNGQnI1MnV5TEliY1QzWjhHeXB2eEprbG5vcnpxMEtHdERMU2N4b2FBbWxHdmUtLUNiUzZmYm56ZnVtTWY4YXJDcy03QWtzam1JcmV2ZEQ0dUpUanlhOU4wZUE0YnJiRWxBNmJCVmxuMk1sOWhiY09r?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T20:48:36.911500+00:00",
+   "title_ru": "TSX падает, поскольку доходы майнеров разочаровывают, Alphabet тянет за собой технологии"
   }
  ],
  "last_digest": "2026-10-29",
@@ -14165,6 +14176,38 @@
     "date": "2026-10-29",
     "disclosed": "2026-10-29",
     "link": "https://www.sec.gov/Archives/edgar/data/1549966/000101359426001116/0001013594-26-001116-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "ab8bea6eee09ab5a",
+    "ticker": "UTMD",
+    "company": "UTAH MEDICAL PRODUCTS INC",
+    "who": "Kevin L Cornwell",
+    "role": "CEO",
+    "type": "buy",
+    "value": 66750,
+    "shares": 1000,
+    "price": 66.75,
+    "plan": false,
+    "date": "2026-10-29",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/1199423/000173361426000005/0001733614-26-000005-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "802a763dcac5972d",
+    "ticker": "AEYE",
+    "company": "AUDIOEYE INC",
+    "who": "James B Hawkins",
+    "role": "Director",
+    "type": "buy",
+    "value": 37010,
+    "shares": 3000,
+    "price": 12.34,
+    "plan": false,
+    "date": "2026-10-29",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/1362190/000089824326000025/0000898243-26-000025-index.htm"
    },
    {
     "src": "sec",
@@ -18085,38 +18128,6 @@
     "date": "2026-10-20",
     "disclosed": "2026-10-22",
     "link": "https://www.sec.gov/Archives/edgar/data/1180495/000009375126000594/0000093751-26-000594-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "08fcc3162bc31772",
-    "ticker": "TRV",
-    "company": "TRAVELERS COMPANIES, INC.",
-    "who": "Michael Frederick Klein",
-    "role": "EVP & President, Personal Ins.",
-    "type": "sell",
-    "value": 2945933,
-    "shares": 7500,
-    "price": 392.79,
-    "plan": false,
-    "date": "2026-10-20",
-    "disclosed": "2026-10-22",
-    "link": "https://www.sec.gov/Archives/edgar/data/1689571/000008631226000183/0000086312-26-000183-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "b4a8d0a7e007d03d",
-    "ticker": "PCTY",
-    "company": "Paylocity Holding Corp",
-    "who": "Steven I Sarowitz",
-    "role": "Director, 10% owner",
-    "type": "sell",
-    "value": 1802346,
-    "shares": 10617,
-    "price": 169.76,
-    "plan": true,
-    "date": "2026-10-20",
-    "disclosed": "2026-10-22",
-    "link": "https://www.sec.gov/Archives/edgar/data/1597870/000159787026000019/0001597870-26-000019-index.htm"
    }
   ],
   "docs": {
@@ -18162,15 +18173,15 @@
   "sec_seen": [
    "0001225208-26-008554",
    "0001225208-26-008555",
-   "0000097476-26-000174",
+   "0001437749-26-033967",
+   "0001437749-26-033977",
+   "0001733614-26-000005",
    "0001193125-26-437890",
-   "0001225208-26-008552",
    "0001013594-26-001116",
+   "0000898243-26-000025",
    "0001597870-26-000029",
    "0001437749-26-033961",
    "0001219004-26-000004",
-   "0000097476-26-000176",
-   "0000097476-26-000172",
    "0001225208-26-008553"
   ],
   "errors": {
