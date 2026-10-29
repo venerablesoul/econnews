@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e1b279cf7de7c1b4": "2026-10-26T06:54:41.400506+00:00",
-  "1cb259a91c6db884": "2026-10-26T06:54:41.400506+00:00",
   "d97e039e22ee24fb": "2026-10-26T07:04:41.395588+00:00",
   "0c8b9f1e0de8e424": "2026-10-26T07:19:41.374583+00:00",
   "21336a8511028457": "2026-10-26T07:19:41.374583+00:00",
@@ -1055,40 +1053,12 @@
   "c6fc0a5b11c443dc": "2026-10-29T06:11:19.817704+00:00",
   "edc3aefa5ae4ff4c": "2026-10-29T06:16:19.801752+00:00",
   "300c74ade5a48bdc": "2026-10-29T06:41:19.786793+00:00",
-  "2f4d2a7d4f06118c": "2026-10-29T06:51:19.836111+00:00"
+  "2f4d2a7d4f06118c": "2026-10-29T06:51:19.836111+00:00",
+  "81a1a834601e839b": "2026-10-29T07:01:19.866655+00:00",
+  "0e0bccb0849be4d6": "2026-10-29T07:01:19.866655+00:00",
+  "5845dda3d7c83d98": "2026-10-29T07:01:19.866655+00:00"
  },
  "recent": [
-  {
-   "title": "Gold gains on softer oil prices; Fed decision in focus",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPZml1aC0yS2NrLUloeEFPZnYyeExpazhPVExTT1BLcV9HZGxEZWFzcHFUMTJFbDhUTjgyaE5EbGRja1BRX0p2UzlDSmEzUUpzTG9ZT2xKZEZMczFvb1pzU2xrdXlNT0dDUXYtQnhoLUFpT09xQmF5Q25FQXdKNGpjOERVdTB1UTk4NkhSd2k3cUNBSTJRMVVsUlpSWQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 8,
-   "ts": "2026-10-26T06:54:41.400506+00:00",
-   "title_ru": "Золото растет на более мягких ценах на нефть; решение ФРС в центре внимания",
-   "tags": [
-    "Fed",
-    "oil",
-    "gold"
-   ]
-  },
-  {
-   "title": "French Bond Rout Draws Australia Pension Into Market Others Shun",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-26/french-bond-oats-australia-pension-australian-retirement-trust-yields-ecb",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-26T06:54:41.400506+00:00",
-   "title_ru": "French Bond Rout выводит австралийскую пенсию на рынок Другие избегают",
-   "lead": "Australia’s second-biggest pension fund is buying French government bonds on the view that markets have overpriced France’s fiscal troubles and the prospect of European Central Bank interest-rate hikes.",
-   "lead_ru": "Второй по величине пенсионный фонд Австралии покупает французские государственные облигации на том основании, что рынки переоценили финансовые проблемы Франции и перспективы повышения процентных ставок Европейского центрального банка.",
-   "tags": [
-    "rates",
-    "bonds"
-   ]
-  },
   {
    "title": "Bitcoin Dips Below $80,000 as AI-Related Market Selloff Deepens",
    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNT1RlX3A3ZENOMTJhNU5CRi12a0swUnlCSmtzbnJYQnRfQ1Z5NnpBVU9GdkRSUHNEXzZwSS0xc1FGRTlId3FnTWYzY1RCSWZHbkltc1dVRWMtSWNfSXFyLUJkcTRHSUV4MndxNVdONjRkSzBfRU44X1k4YjZqTVFfaWgzWE9QMHd1VWZsS1RUUmpxWTZBcHlHMXMxX25vNzhrOXViWGxXTUlVMUtoV05HQkhUZw?oc=5",
@@ -10735,6 +10705,41 @@
    ],
    "score": 1,
    "ts": "2026-10-29T06:51:19.836111+00:00"
+  },
+  {
+   "title": "FTSE 100 Live: UK Stock Futures Edge Higher to Dodge AI Selloff",
+   "link": "https://www.bloomberg.com/news/live-blog/2026-10-29/ftse-100-live-updates-pound-gilts-shell-lloyds-wpp-ecb-rates-ai-stocks-gbp-healey-budget-what-s-moving-uk-markets-right-now-markets-today",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-29T07:01:19.866655+00:00",
+   "title_ru": "FTSE 100 Live: британские фондовые фьючерсы имеют преимущество перед Dodge AI Selloff",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "Nike deepens India push with new running shoe, seeking fresh growth engines",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOUXZKV1d3ZzZrOEwxVzRwQ2ZFTWdKajBNV1BLeHZGZWJuSWVRRjRrSWlTbVc4QU5oWWFfRWs3eDZGQVU1MGdoZkp1OEFQNEs4cUVfYW5UQkpiZTNPUDVUNzZHR3Z3OUZFT3pMdGdWTHdiRVRnWXdvYU11YkdWazF1MTJhQ3ZVUndZTG1jazUtb3pZUm1vV2VGNDRWLTM2NEd6VGJLc0hQa2RWdVMtVjdRdkdmcFFjbU5Bc3ZYQ0FlQ3BOcThTTFd4WXE4R3B0YzB1?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T07:01:19.866655+00:00",
+   "title_ru": "Nike усиливает индийский толчок с помощью новой кроссовки для бега, ища новые двигатели роста"
+  },
+  {
+   "title": "Комитет Госдумы предупредил о рисках недополучения доходов бюджета",
+   "link": "https://www.kommersant.ru/doc/9063369",
+   "sources": [
+    "Kommersant"
+   ],
+   "score": 3,
+   "ts": "2026-10-29T07:01:19.866655+00:00",
+   "title_en": "The State Duma Committee warned about the risks of under-receipt of budget revenues",
+   "lead": "Комитет Госдумы по бюджету и налогам рекомендовал принять в первом чтении проект бюджета на 2027–2029 годы. Однако в профильном комитете заявили о рисках недополучения доходов казны.",
+   "lead_en": "The State Duma Committee on Budget and Taxes recommended that the draft budget for 2027–2029 be adopted in the first reading. However, the relevant committee announced the risks of under-receipt of treasury revenues."
   }
  ],
  "last_digest": "2026-10-28",
