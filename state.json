@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "f5ceaab9a335ff39": "2026-10-27T15:38:43.102626+00:00",
-  "908c534e462dbf27": "2026-10-27T15:43:43.112646+00:00",
   "960575cb1d3770a0": "2026-10-27T15:48:42.952993+00:00",
   "f2b6fcc890f517f2": "2026-10-27T15:48:42.952993+00:00",
   "4b7af1d4a1539ce1": "2026-10-27T15:58:43.030029+00:00",
@@ -1125,18 +1123,10 @@
   "dc7e498fa993f6a0": "2026-10-30T15:30:10.464001+00:00",
   "3422eaa5baf3e7c4": "2026-10-30T15:30:10.464001+00:00",
   "52304226943c0cab": "2026-10-30T15:30:10.464001+00:00",
-  "2149d744404fa38e": "2026-10-30T15:35:10.550207+00:00"
+  "2149d744404fa38e": "2026-10-30T15:35:10.550207+00:00",
+  "252501055041ded1": "2026-10-30T15:45:10.711069+00:00"
  },
  "recent": [
-  {
-   "title": "U.S. economy is gathering steam. This is the chief reason why.",
-   "link": "https://www.marketwatch.com/story/u-s-economy-is-gathering-steam-this-is-the-chief-reason-why-9772978f?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-27T15:38:43.102626+00:00"
-  },
   {
    "title": "Pork Slump Worsens as High Gas Prices Curb Road Trip Pit Stops",
    "link": "https://www.bloomberg.com/news/articles/2026-10-27/pork-slump-worsens-as-high-gas-prices-curb-road-trip-pit-stops",
@@ -18678,17 +18668,17 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-30T14:45:10.584224+00:00",
+  "checked": "2026-10-30T15:45:10.711069+00:00",
   "sec_seen": [
    "0001493152-26-049383",
+   "0002099112-26-000006",
    "0001964493-26-000010",
    "0001225208-26-008558",
+   "0000879526-26-000108",
+   "0000879526-26-000107",
    "0001438566-26-000009",
    "0002088410-26-000010",
-   "0000726854-26-000192",
-   "0001069202-26-000099",
-   "0001437749-26-034107",
-   "0001255007-26-000002"
+   "0001437749-26-034107"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
