@@ -1124,7 +1124,8 @@
   "234d0b8c83d70f8e": "2026-10-30T15:30:10.464001+00:00",
   "dc7e498fa993f6a0": "2026-10-30T15:30:10.464001+00:00",
   "3422eaa5baf3e7c4": "2026-10-30T15:30:10.464001+00:00",
-  "52304226943c0cab": "2026-10-30T15:30:10.464001+00:00"
+  "52304226943c0cab": "2026-10-30T15:30:10.464001+00:00",
+  "2149d744404fa38e": "2026-10-30T15:35:10.550207+00:00"
  },
  "recent": [
   {
@@ -11976,6 +11977,21 @@
    ],
    "score": 2,
    "ts": "2026-10-30T15:30:10.464001+00:00"
+  },
+  {
+   "title": "What Christine Lagarde's ECB Exit Means for Europe and Markets: Live Q&A",
+   "link": "https://www.bloomberg.com/sessions/2026-11-02/live-q-amp-a-what-lagarde-s-exit-means-for-the-ecb-and-europe",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 7,
+   "ts": "2026-10-30T15:35:10.550207+00:00",
+   "title_ru": "Что означает выход Кристин Лагард из ЕЦБ для Европы и рынков: вопросы и ответы в прямом эфире",
+   "lead": "Bloomberg reporters answer your questions about Christine Lagarde’s ECB exit and who might replace her in a Live Q&A on Monday, November 2 at 2 p.m. CET.",
+   "lead_ru": "Репортеры Bloomberg ответят на ваши вопросы о выходе Кристин Лагард из ЕЦБ и о том, кто может ее заменить, в прямом эфире вопросов и ответов в понедельник, 2 ноября, в 14:00. центральноевропейское время.",
+   "tags": [
+    "ECB"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -14640,6 +14656,22 @@
     "date": "2026-10-29",
     "disclosed": "2026-10-30",
     "link": "https://www.sec.gov/Archives/edgar/data/1255007/000125500726000002/0001255007-26-000002-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "6ec6b898f5df18b7",
+    "ticker": "BHRB",
+    "company": "Burke & Herbert Financial Services Corp.",
+    "who": "Shawn Patrick McLaughlin",
+    "role": "Director",
+    "type": "buy",
+    "value": 35500,
+    "shares": 500,
+    "price": 71.0,
+    "plan": false,
+    "date": "2026-10-29",
+    "disclosed": "2026-10-30",
+    "link": "https://www.sec.gov/Archives/edgar/data/1964493/000196449326000010/0001964493-26-000010-index.htm"
    },
    {
     "src": "sec",
@@ -18608,22 +18640,6 @@
     "date": "2026-10-21",
     "disclosed": "2026-10-23",
     "link": "https://www.sec.gov/Archives/edgar/data/1848767/000119312526430509/0001193125-26-430509-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "0dbbadef20443b79",
-    "ticker": "CRBG",
-    "company": "Corebridge Financial, Inc.",
-    "who": "Nippon Life Insurance Co",
-    "role": "10% owner",
-    "type": "buy",
-    "value": 7684334,
-    "shares": 217182,
-    "price": 35.38,
-    "plan": true,
-    "date": "2026-10-21",
-    "disclosed": "2026-10-23",
-    "link": "https://www.sec.gov/Archives/edgar/data/1889539/000119312526430508/0001193125-26-430508-index.htm"
    }
   ],
   "docs": {
@@ -18664,6 +18680,10 @@
   },
   "checked": "2026-10-30T14:45:10.584224+00:00",
   "sec_seen": [
+   "0001493152-26-049383",
+   "0001964493-26-000010",
+   "0001225208-26-008558",
+   "0001438566-26-000009",
    "0002088410-26-000010",
    "0000726854-26-000192",
    "0001069202-26-000099",
