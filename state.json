@@ -1128,7 +1128,10 @@
   "09b4a840305b199a": "2026-10-30T10:14:40.352605+00:00",
   "5ad55d0cc3aed1be": "2026-10-30T10:19:40.357467+00:00",
   "409cd9e8df26879b": "2026-10-30T10:24:40.332096+00:00",
-  "b4ccdaf88867b00d": "2026-10-30T10:24:40.332096+00:00"
+  "b4ccdaf88867b00d": "2026-10-30T10:24:40.332096+00:00",
+  "dd863a7c6f9f56d7": "2026-10-30T10:29:40.286689+00:00",
+  "d012a9c97f9fc5f8": "2026-10-30T10:29:40.286689+00:00",
+  "8cc57065b339a559": "2026-10-30T10:29:40.286689+00:00"
  },
  "recent": [
   {
@@ -11963,6 +11966,53 @@
     "rates",
     "markets"
    ]
+  },
+  {
+   "title": "ECB’s Panetta Says More Rate Hikes May Be Needed to Tame Prices",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/ecb-s-panetta-says-more-rate-hikes-may-be-needed-to-tame-prices",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 8,
+   "ts": "2026-10-30T10:29:40.286689+00:00",
+   "title_ru": "Глава ЕЦБ Панетта заявил, что для сдерживания цен может потребоваться дальнейшее повышение ставок",
+   "lead": "The European Central Bank may have to deliver more increases in interest rates to contain inflation, Governing Council member Fabio Panetta said.",
+   "lead_ru": "Европейскому центральному банку, возможно, придется еще больше повысить процентные ставки, чтобы сдержать инфляцию, заявил член Управляющего совета Фабио Панетта.",
+   "tags": [
+    "ECB",
+    "rates",
+    "inflation"
+   ]
+  },
+  {
+   "title": "Chevron Exceeds Forecasts on Oil Prices, Swollen Fuel-Making Returns",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/chevron-exceeds-forecasts-on-oil-prices-swollen-fuel-making-returns",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-30T10:29:40.286689+00:00",
+   "title_ru": "Chevron превзошла прогнозы по ценам на нефть и увеличению доходов от производства топлива",
+   "lead": "Chevron Corp. surpassed analysts’ estimates as high oil prices combined with record US refining margins to lift earnings to the fourth highest in company history.",
+   "lead_ru": "Chevron Corp. превзошла оценки аналитиков, поскольку высокие цены на нефть в сочетании с рекордной рентабельностью нефтепереработки в США подняли прибыль до четвертого по величине показателя в истории компании.",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "ECB Warns of Slow SRT Approvals if Banks Don’t Keep Them Simple",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/ecb-warns-of-slow-srt-approvals-if-banks-don-t-keep-them-simple",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-30T10:29:40.286689+00:00",
+   "title_ru": "ЕЦБ предупреждает о медленном одобрении SRT, если банки не будут упрощать их",
+   "lead": "Lenders looking to offload credit risk to investors via deals backed by insurers may face a longer wait for approval as the European Central Bank steps up scrutiny of the opaque trades.",
+   "lead_ru": "Кредиторы, желающие переложить кредитный риск на инвесторов посредством сделок, поддерживаемых страховщиками, могут столкнуться с более длительным ожиданием одобрения, поскольку Европейский центральный банк усиливает контроль над непрозрачными сделками.",
+   "tags": [
+    "ECB"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -18651,10 +18701,10 @@
   },
   "checked": "2026-10-30T09:44:40.373850+00:00",
   "sec_seen": [
-   "0001778564-26-000195",
    "0001857843-26-000030",
    "0002010019-26-000035",
    "0001437749-26-034035",
+   "0002141713-26-000007",
    "0001437749-26-034034",
    "0001437749-26-034032",
    "0001437749-26-034040",
@@ -18670,6 +18720,7 @@
    "0001225208-26-008557",
    "0002066642-26-000004",
    "0001646649-26-000040",
+   "0001888543-26-000002",
    "0002054266-26-000008",
    "0001213900-26-113987",
    "0001697362-26-000020",
