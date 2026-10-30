@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c0e21091e1b87d61": "2026-10-27T09:58:09.256702+00:00",
   "f799fc16289facdf": "2026-10-27T10:08:09.305870+00:00",
   "c2714ff1b9f3304a": "2026-10-27T10:13:09.253536+00:00",
   "c0b7703600101e2c": "2026-10-27T10:13:09.253536+00:00",
@@ -1124,24 +1123,10 @@
   "7be33f3d0437e736": "2026-10-30T09:34:40.342182+00:00",
   "4cb683b8274ce260": "2026-10-30T09:44:40.373850+00:00",
   "e079f10b2f3aaded": "2026-10-30T09:54:40.213657+00:00",
-  "07c6f72994d52813": "2026-10-30T09:54:40.213657+00:00"
+  "07c6f72994d52813": "2026-10-30T09:54:40.213657+00:00",
+  "52a79dd6a2ecbdb1": "2026-10-30T09:59:40.356498+00:00"
  },
  "recent": [
-  {
-   "title": "India’s Green Aviation Push Gives Waste Cooking Oil New Life",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-27/india-s-green-aviation-push-gives-waste-cooking-oil-new-life",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-27T09:58:09.256702+00:00",
-   "title_ru": "Движение «зеленой» авиации Индии дает новую жизнь отработанному растительному маслу",
-   "lead": "India is looking to used cooking oil to help fuel its green aviation ambition and reduce reliance on imported crude.",
-   "lead_ru": "Индия стремится использовать использованное растительное масло, чтобы поддержать свои амбиции в области «зеленой» авиации и снизить зависимость от импортной нефти.",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "Customers are chasing higher-rate products, and that’s bad news for banks like HSBC",
    "link": "https://www.marketwatch.com/story/customers-are-chasing-higher-rate-products-and-thats-bad-news-for-banks-like-hsbc-3a6ec793?mod=mw_rss_topstories",
@@ -11926,6 +11911,19 @@
     "ECB",
     "inflation"
    ]
+  },
+  {
+   "title": "China's Xi, Swiss president praise trade deal that boosts access",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNVF9pNjc4bUNhTHhCaVFuSUo2ZGpJN1lUYlpQdzdnZDd5bHd6V2hzeWdSUDFVRXZDQ3p5VzUzbjE1ZVQtRTFqMkxRcGZHd1lMdGhUVU9OeEhTMXRCeDlyaGZydG1qdlZjMzBUazdLSTBoWFRMajlDT1lHbS0waVA3NFFkNl92OHk2UFZWUTNnX1hvNGUxTkdPV2VuMGJTTmcyWWdwSkxnMGktdXRCV1Vj?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T09:59:40.356498+00:00",
+   "title_ru": "Си Цзиньпин и президент Швейцарии высоко оценили торговую сделку, которая расширяет доступ",
+   "tags": [
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -18621,8 +18619,8 @@
    "0001178579-26-000022",
    "0001437749-26-034034",
    "0000944075-26-000076",
-   "0001392942-26-000016",
    "0000944075-26-000077",
+   "0001392942-26-000016",
    "0001628280-26-068337",
    "0000944075-26-000075",
    "0000944075-26-000079",
