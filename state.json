@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "8c3b2dfdc2708df1": "2026-10-27T11:58:09.276641+00:00",
   "5d89af25c4e00cfc": "2026-10-27T12:08:09.368068+00:00",
   "6b79f5c8157069fe": "2026-10-27T12:08:09.368068+00:00",
   "002775676caacada": "2026-10-27T12:08:09.368068+00:00",
@@ -1138,24 +1137,11 @@
   "41a7ea767bc6318f": "2026-10-30T11:35:10.457985+00:00",
   "21facd52d70249a6": "2026-10-30T11:40:10.488520+00:00",
   "1e8276be5e120980": "2026-10-30T11:50:10.510985+00:00",
-  "9fe28e4dd4550099": "2026-10-30T11:55:10.351868+00:00"
+  "9fe28e4dd4550099": "2026-10-30T11:55:10.351868+00:00",
+  "43608c0f279afbce": "2026-10-30T12:00:10.607716+00:00",
+  "fb1232e10a7991cd": "2026-10-30T12:00:10.607716+00:00"
  },
  "recent": [
-  {
-   "title": "Bond-Market Doubts Grow Over Gridlock as Cure for Deficit Angst",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-27/bond-market-doubts-grow-over-gridlock-as-cure-for-deficit-angst",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-27T11:58:09.276641+00:00",
-   "title_ru": "Сомнения на рынке облигаций растут из-за тупика как лекарства от страха дефицита",
-   "lead": "Bond investors are growing skeptical that the potential return of gridlock on Capitol Hill will ease their worries about the US fiscal trajectory the way it has for decades.",
-   "lead_ru": "Инвесторы в облигации все больше скептически относятся к тому, что потенциальное возвращение тупика на Капитолийском холме облегчит их опасения по поводу траектории фискальной политики США, как это было на протяжении десятилетий.",
-   "tags": [
-    "bonds"
-   ]
-  },
   {
    "title": "India Turns Kitchen Grease to Fuel in Drive to Cut Crude Imports",
    "link": "https://www.bloomberg.com/news/newsletters/2026-10-27/india-turns-kitchen-grease-to-fuel-in-drive-to-cut-crude-imports",
@@ -12056,6 +12042,36 @@
    "tags": [
     "China"
    ]
+  },
+  {
+   "title": "Tech Selloff Intensifies on Earnings; Binance Estimates $6.3B Hacked",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-30/bloomberg-brief-10-30-2026-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 9,
+   "ts": "2026-10-30T12:00:10.607716+00:00",
+   "title_ru": "Tech Selloff интенсифицирует прибыль; Binance оценивает взлом в $ 6,3 млрд",
+   "lead": "US equity futures slump after disappointing earnings from Amazon and Intel. Binance estimates $6.3 billion was stolen in a hack, the largest to hit the digital-asset industry.",
+   "lead_ru": "Фьючерсы на акции в США падают после разочаровывающих доходов от Amazon и Intel. По оценкам Binance, в результате взлома было украдено $ 6,3 млрд, что стало крупнейшим хитом в индустрии цифровых активов.",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "Italy’s Inflation Jump Is Dramatic Result of War, Giorgetti Says",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/italy-s-inflation-jump-is-dramatic-result-of-war-giorgetti-says",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-30T12:00:10.607716+00:00",
+   "title_ru": "Скачок инфляции в Италии - драматический результат войны, говорит Джорджетти",
+   "lead": "Italian Finance Minister Giancarlo Giorgetti says that he’s concerned about surging inflation, which reflects the impact of war in the Middle East.",
+   "lead_ru": "Министр финансов Италии Джанкарло Джорджетти говорит, что он обеспокоен ростом инфляции, который отражает влияние войны на Ближнем Востоке.",
+   "tags": [
+    "inflation"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -18744,8 +18760,8 @@
   },
   "checked": "2026-10-30T11:45:10.373806+00:00",
   "sec_seen": [
-   "0002010135-26-000025",
    "0002141713-26-000007",
+   "0002010135-26-000025",
    "0001628280-26-068399",
    "0000711377-26-000037",
    "0001341767-26-000008",
