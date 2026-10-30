@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c1e1f0f8679a6889": "2026-10-27T07:13:09.288241+00:00",
   "df8771a7e4718a0a": "2026-10-27T07:28:09.310923+00:00",
   "a8a403d86d6d41e9": "2026-10-27T07:28:09.310923+00:00",
   "3e8d65bed5cf6e14": "2026-10-27T07:28:09.310923+00:00",
@@ -1117,26 +1116,10 @@
   "3e4f4853ede84b8b": "2026-10-30T07:04:40.284179+00:00",
   "c950da38f32762ee": "2026-10-30T07:04:40.284179+00:00",
   "35c597381e3e3387": "2026-10-30T07:04:40.284179+00:00",
-  "f3cb3984c74a23cc": "2026-10-30T07:09:40.230913+00:00"
+  "f3cb3984c74a23cc": "2026-10-30T07:09:40.230913+00:00",
+  "3fe07aa08d0ec424": "2026-10-30T07:19:40.230484+00:00"
  },
  "recent": [
-  {
-   "title": "China Bonds Rally As Gloom Deepens Over Stocks",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-27/the-china-show-12-27-26-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-27T07:13:09.288241+00:00",
-   "title_ru": "Облигации Китая растут по мере углубления мрака над акциями",
-   "lead": "“Bloomberg: The China Show” is your definitive source for news and analysis on the world's second-biggest economy.",
-   "lead_ru": "«Bloomberg: The China Show» - ваш исчерпывающий источник новостей и аналитических материалов о второй по величине экономике мира.",
-   "tags": [
-    "bonds",
-    "markets",
-    "China"
-   ]
-  },
   {
    "title": "COMMENTARY: UK budget risks leaving investors in the dark",
    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOUUFRWGxJcEtsbjFHZVVLak1PYjdRNTloS2ZCSGxQQmlIbWFudjZKbHBNZ3JxZlZ2S25xQ0VjVjNrSV9tYkJQS1dtazJ3VVFBWFQ0elNNVkNyZ09Kek51RUV2LXdZcFZZdzNrYVhCSFU0azJHTERVN0tIZlVDdXRqVm8tQkgwaDBxUzZxRnZVSTIzZGJJeDdZOGJOQUNxUUlkX0RNaVRjR3FZa1FWUndPU1NxZnc2bW1YWExQMQ?oc=5",
@@ -11911,6 +11894,19 @@
    "title_ru": "Jio вывела Индию на вершину мирового рынка IPO с рекордным октябрем",
    "lead": "India was the world’s top market for initial public offerings in October, thanks to a record month driven by the blockbuster share sale of Jio Platforms Ltd.",
    "lead_ru": "В октябре Индия стала крупнейшим в мире рынком для первичных публичных размещений акций благодаря рекордному месяцу, обусловленному успешной продажей акций Jio Platforms Ltd."
+  },
+  {
+   "title": "Trump's tariffs fail to cut US trade deficit, IW report shows",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQQXAtelVIRmlkeEJiVmJ1VDVNTWFNOW5Yc3pQQjZFVVVmaGJaRjVzbjdWRlpKNlBKYWVXMmpOV3J4WldwRUs1U3hnalZ2d0wxRnlYbkZ3SVlnSGpfa2RWWE5LQ05GdlNnSmVSeEZsekVPSFNpZTd4QVpNTmcyc2tlRHNuWFlDMXZyUl9SN0hrejlpc3FSSXJMZkVCV296WU51bXZJ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 7,
+   "ts": "2026-10-30T07:19:40.230484+00:00",
+   "title_ru": "Тарифы Трампа не могут сократить торговый дефицит США, показывает отчет IW",
+   "tags": [
+    "tariffs"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
