@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "99af505cf927c8b0": "2026-10-27T09:08:09.258046+00:00",
-  "1475d73d1d7dc701": "2026-10-27T09:08:09.258046+00:00",
-  "cdf81de7e69dfeaf": "2026-10-27T09:08:09.258046+00:00",
-  "18f7f7c40b590ee9": "2026-10-27T09:08:09.258046+00:00",
   "02bb405c3ed16dd3": "2026-10-27T09:13:09.320740+00:00",
   "9a0e82c09ce5b4b9": "2026-10-27T09:33:09.277708+00:00",
   "0929b06118987ed6": "2026-10-27T09:48:09.257280+00:00",
@@ -1120,66 +1116,11 @@
   "b36f7ba6b40e53fd": "2026-10-30T08:59:40.298649+00:00",
   "7c570bbb5f7383f6": "2026-10-30T09:04:40.349819+00:00",
   "67f658476c3c9859": "2026-10-30T09:04:40.349819+00:00",
-  "e362e4d7ebda355d": "2026-10-30T09:04:40.349819+00:00"
+  "e362e4d7ebda355d": "2026-10-30T09:04:40.349819+00:00",
+  "6cabe4b094420ae1": "2026-10-30T09:09:40.265694+00:00",
+  "ae06af88ef216907": "2026-10-30T09:09:40.265694+00:00"
  },
  "recent": [
-  {
-   "title": "ECB Says Banks Tighten Credit Conditions, See Loan Demand Fall",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-27/ecb-says-banks-tighten-credit-conditions-see-loan-demand-fall",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-27T09:08:09.258046+00:00",
-   "title_ru": "ЕЦБ заявляет, что банки ужесточают условия кредитования, в связи с чем спрос на кредиты падает.",
-   "lead": "Euro-zone banks tightened credit conditions and reported waning demand for loans in the third quarter, supporting the European Central Bank’s caution on raising interest rates further.",
-   "lead_ru": "Банки еврозоны ужесточили условия кредитования и сообщили о снижении спроса на кредиты в третьем квартале, что подтвердило осторожность Европейского центрального банка в отношении дальнейшего повышения процентных ставок.",
-   "tags": [
-    "ECB",
-    "rates"
-   ]
-  },
-  {
-   "title": "Amundi Says ‘Worst Is Behind Us’ as Gold Flirts With $4,000",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-27/amundi-says-worst-is-behind-us-as-gold-flirts-with-4-000",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-27T09:08:09.258046+00:00",
-   "title_ru": "Амунди говорит, что «худшее позади», поскольку золото флиртует с $ 4000",
-   "lead": "Amundi SA, Europe’s largest asset manager, expects a recovery in the gold price to around $4,500 an ounce following a selloff that dragged the metal to a three-month low.",
-   "lead_ru": "Крупнейшая в Европе компания по управлению активами Amundi SA ожидает восстановления цены на золото до уровня около 4500 долларов за унцию после распродажи, в результате которой металл опустился до трехмесячного минимума.",
-   "tags": [
-    "gold",
-    "markets"
-   ]
-  },
-  {
-   "title": "Chinese Stocks’ Final-Hour Slide Shows Reliance on National Team",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-27/chinese-stocks-final-hour-slide-shows-reliance-on-national-team",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T09:08:09.258046+00:00",
-   "title_ru": "Слайд с китайскими акциями в последний час показывает зависимость от национальной команды",
-   "lead": "Chinese stocks extended their slide in the final hour of trading as investors disappointed by a lack of national team buying dumped shares.",
-   "lead_ru": "Китайские акции продолжили свое падение в последний час торгов, поскольку инвесторы разочарованы отсутствием национальной команды, покупающей демпинговые акции.",
-   "tags": [
-    "markets",
-    "China"
-   ]
-  },
-  {
-   "title": "Designer Betsey Johnson takes $7 million SoCal home off the market",
-   "link": "https://www.marketwatch.com/story/designer-betsey-johnson-takes-7-million-socal-home-off-the-market-1f027f0e?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-27T09:08:09.258046+00:00"
-  },
   {
    "title": "HSBC Shares Slide More Than 6% After Quarterly Profit Misses",
    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNNVJjeFJTTzc0V2JkWGxWckpTN0lPWVJncFQ4R25NNzQ5a0RENm5OdzBwT3V5MFF6NGk5b3g1bE9NWGRZd3dyM0FfR0NlNXd4M1l1eEtHZHh5cjF4UUJsdlFHYi1kLWNOVDVvSkk2Y3VuZWFBdWppem10RDk2b0dfUURuZjAyNGl6bFpPNVlxS1hacl9od3Q0azRiREJuRUxHcHhkbmRWN0hSN1k0UlRTc2NCUWQyUzBndFpqQ216anc2eFhSc0E?oc=5",
@@ -11860,6 +11801,34 @@
    "tags": [
     "ECB"
    ]
+  },
+  {
+   "title": "European shares ease as AI-driven tech selloff deepens",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQUk0taEd5eWdWVWtONWpOWjNLNXcxN0VJNHZKQnUtQ0VlZnJYNFQxekUwbDZhY05FSkwwdzlXSzFJX0Z1Mmc3ODgtaVJtbFVReWRBUHdWQlZKTDZKTlBKdWt2b3M1SG4tQXA1TlAtS2N0YXVITUJ6cVlnUE5Nb0hZMWlUcGFaanB4QmhSQ2xKeDVpVFRuR25UX1NuNWI?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-30T09:09:40.265694+00:00",
+   "title_ru": "Европейские акции падают на фоне углубления распродажи технологий, вызванных искусственным интеллектом",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "China’s Mega Banks Report Profit Jumps as Margins Recover",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/china-s-mega-banks-report-profit-jumps-as-margins-recover",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T09:09:40.265694+00:00",
+   "title_ru": "Крупнейшие китайские банки сообщают о скачке прибыли по мере восстановления рентабельности",
+   "lead": "China’s mega banks reported jumps in profit as interest margins are recovering from record lows.",
+   "lead_ru": "Крупнейшие китайские банки сообщили о скачке прибыли, поскольку процентная маржа восстанавливается с рекордно низкого уровня.",
+   "tags": [
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -18555,8 +18524,8 @@
    "0001178579-26-000022",
    "0001437749-26-034034",
    "0000944075-26-000076",
-   "0001392942-26-000016",
    "0000944075-26-000077",
+   "0001392942-26-000016",
    "0001628280-26-068337",
    "0000944075-26-000075",
    "0000944075-26-000079",
