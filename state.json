@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "ec695d78481df805": "2026-10-27T20:24:44.589452+00:00",
-  "eb7a2c21651fce7e": "2026-10-27T20:24:44.589452+00:00",
   "c2f66fc8290487bc": "2026-10-27T20:34:44.612786+00:00",
   "7ea592f23ae77fb6": "2026-10-27T20:34:44.612786+00:00",
   "4fac133f17e4964f": "2026-10-27T20:34:44.612786+00:00",
@@ -1139,32 +1137,10 @@
   "858bca6466436254": "2026-10-30T20:10:57.475821+00:00",
   "64b8845cd4769270": "2026-10-30T20:10:57.475821+00:00",
   "60a76ab3648869be": "2026-10-30T20:15:57.558570+00:00",
-  "58b4acbf52cfc857": "2026-10-30T20:20:57.292562+00:00"
+  "58b4acbf52cfc857": "2026-10-30T20:20:57.292562+00:00",
+  "0758348de34f9e51": "2026-10-30T20:25:57.415517+00:00"
  },
  "recent": [
-  {
-   "title": "Racist X Post Turns Texas Oil Regulator Contest Into a Dead Heat",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQQmsxcFVXS3piLWx3VjNXNEdTeXM5X0FoSERJUnNHME5WaFk1aGpCQVZvdGlaNFBLRUZDeHdoZ0c3bl9paEpLSFY0elRDNnlwMU8tbEZsMDZkSmFiS2pLeUptQUNnc2hkNGFWUEhkZmV6emZ2TmVyQ081U3JHV0Y2czBnRkNsVnZ4dTREYzFRaXlyVHdnVmxpX1J4VTduR3NuSXM0aUJNcXhEQy1uY1hsQjZVaXhPdw?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T20:24:44.589452+00:00",
-   "title_ru": "Расистский X Post превратил конкурс техасских нефтяных регуляторов в ничью",
-   "tags": [
-    "oil"
-   ]
-  },
-  {
-   "title": "Anduril and Qualcomm Plan to Build Laptop With US Supply Chain",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOMVUzaDFhNEF3eklOdGxCUWJaXzQweU0za1RsUWFvMkhIMUQ2akRCMldjM2xXdURyMWhfaHB6emFLdWhreDI3Ym1sNE5Zdk1LQS1CbXp5UWtrbENuQUI3amtIZXk3d1BWbWF4cUJBUVdNOS1LVlZrTzhpaDJmMlhDUWJLX3hsSTc3dmhNRzdscTRoQS1qbmtOVFFRTmJJamh2SE91SDlkVHd1d1RDdjNTVTBVWQ?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T20:24:44.589452+00:00",
-   "title_ru": "Anduril и Qualcomm планируют производить ноутбуки с помощью цепочки поставок в США"
-  },
   {
    "title": "OPEC+ oil producers set to keep output targets steady at Sunday meeting, sources say",
    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNMk1rLTI4Z1oza3I5SDJ2YUR0WUhiQ0RmWV9KLUpCSHMyY1FoSFgwWUFOc010MzIyWThVNEZvRFl0YzBzNHFmazA3ZEV2ZzRPX2pNWU9GSVd5Z1VnaVRGdmdSZDVEVVlGTmxuNVlsdzNSMGlBdW5UYVRpelBBXzhLOWkwd2pST0NmQjRMek82VS1ncXZTWjk5Q09reDQtQmNON3NfRF9ld1FUWG1hQW5QRFZySkdIM1VKRzVvbGZLVEE0V1hPQ2dsTkNnZw?oc=5",
@@ -12120,6 +12096,19 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Imperial Oil considering moving ahead with Aspen oil sands project earlier than planned",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNZThjVm1xcmxyZGVwTUZuQU9ZX21MVkstd1VQX2p2aEVZSWhJM0RMWlJkR0FUM1NPX2JoNHJxT3dGU3g2bXdfUFJiUDcwYVp4cGhsYjVSMTFRUmpJbFVkOTBBME5oTlhFZVhlYk9Kdkw5SHRBWmVkamtrdWM5aVhZWW96Tk93T2dMdE95MXlxWGFPa0g4MkZXLU9vUVhVQ095dmNnYUQ1a2YzTnNLNUdmZF8xVQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T20:25:57.415517+00:00",
+   "title_ru": "Imperial Oil рассматривает возможность продвижения проекта по нефтеносным пескам в Аспене раньше, чем планировалось",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-30",
@@ -15060,6 +15049,22 @@
     "date": "2026-10-29",
     "disclosed": "2026-10-30",
     "link": "https://www.sec.gov/Archives/edgar/data/1193485/000119348526000006/0001193485-26-000006-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "69aa89587a7eaa08",
+    "ticker": "LFUS",
+    "company": "LITTELFUSE INC /DE",
+    "who": "David Ruppel",
+    "role": "SVP & GM Transportation Bus.",
+    "type": "sell",
+    "value": 604023,
+    "shares": 1493,
+    "price": 404.57,
+    "plan": false,
+    "date": "2026-10-29",
+    "disclosed": "2026-10-30",
+    "link": "https://www.sec.gov/Archives/edgar/data/2055015/000205501526000019/0002055015-26-000019-index.htm"
    },
    {
     "src": "sec",
@@ -18820,22 +18825,6 @@
     "date": "2026-10-22",
     "disclosed": "2026-10-23",
     "link": "https://www.sec.gov/Archives/edgar/data/1267655/000126765526000019/0001267655-26-000019-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "cf158fa87eea44eb",
-    "ticker": "IBTA",
-    "company": "Ibotta, Inc.",
-    "who": "Luke Roy Swanson",
-    "role": "CTO",
-    "type": "sell",
-    "value": 1249176,
-    "shares": 25018,
-    "price": 49.93,
-    "plan": true,
-    "date": "2026-10-22",
-    "disclosed": "2026-10-23",
-    "link": "https://www.sec.gov/Archives/edgar/data/1873513/000162828026067065/0001628280-26-067065-index.htm"
    }
   ],
   "docs": {
@@ -18880,28 +18869,31 @@
    "0001193485-26-000006",
    "0001140361-26-041309",
    "0000076334-26-000156",
+   "0002115144-26-000014",
+   "0002115826-26-000010",
    "0001193125-26-441690",
+   "0000101382-26-000186",
    "0000076334-26-000158",
    "0001213900-26-114394",
    "0001791243-26-000012",
    "0001193125-26-441718",
-   "0001213900-26-114386",
+   "0001628280-26-068593",
+   "0002055015-26-000019",
    "0001213900-26-114393",
-   "0002050167-26-000032",
    "0001193125-26-441691",
+   "0002050167-26-000032",
    "0001225208-26-008571",
    "0001193125-26-441716",
    "0001193125-26-441694",
-   "0001213900-26-114388",
    "0001672688-26-000146",
    "0000076334-26-000154",
    "0000076334-26-000152",
-   "0001213900-26-114392",
    "0001193125-26-441717",
-   "0001924613-26-000048",
-   "0001628280-26-068581",
+   "0000036966-26-000193",
    "0001193125-26-441698",
+   "0001628280-26-068581",
    "0001225208-26-008572",
+   "0002132897-26-000008",
    "0001193125-26-441713",
    "0000076334-26-000150"
   ],
