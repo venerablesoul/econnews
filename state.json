@@ -1098,7 +1098,9 @@
   "4db47ca1150e2140": "2026-10-30T02:54:13.562842+00:00",
   "010a05b77cd54ba2": "2026-10-30T02:59:13.630085+00:00",
   "dd167cde834919f2": "2026-10-30T02:59:13.630085+00:00",
-  "afb0b63fa3a6539d": "2026-10-30T03:04:13.560704+00:00"
+  "afb0b63fa3a6539d": "2026-10-30T03:04:13.560704+00:00",
+  "0e9e09f6a635d4be": "2026-10-30T03:09:13.559262+00:00",
+  "8b67c8a953a566cc": "2026-10-30T03:09:13.559262+00:00"
  },
  "recent": [
   {
@@ -11666,6 +11668,33 @@
    "score": 3,
    "ts": "2026-10-30T03:04:13.560704+00:00",
    "title_ru": "Рост выручки от подписки на Universal Music в 3 квартале превзошел ожидания"
+  },
+  {
+   "title": "BOJ Holds Rates, Says Inflation Trend Hits Target For First Time",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/boj-holds-benchmark-rate-steady-as-expected-after-september-hike",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-30T03:09:13.559262+00:00",
+   "title_ru": "БАНК ЯПОНИИ удерживает ставки, говорит, что инфляционный тренд впервые достиг цели",
+   "lead": "The Bank of Japan left its benchmark rate untouched as expected while indicating that underlying inflation has finally reached its 2% target, opening the door to a hike in December.",
+   "lead_ru": "Банк Японии оставил свою базовую ставку нетронутой, как и ожидалось, указав, что базовая инфляция, наконец, достигла своей цели в 2%, открыв дверь для повышения в декабре.",
+   "tags": [
+    "inflation"
+   ]
+  },
+  {
+   "title": "Philippine Exports Rise at Fastest in Five Years on Weak Peso, AI Boom",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/philippine-exports-rise-at-fastest-in-five-years-on-weak-peso-ai-boom",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T03:09:13.559262+00:00",
+   "title_ru": "Филиппинский экспорт растет самыми быстрыми темпами за пять лет на фоне слабого песо и бума искусственного интеллекта",
+   "lead": "Philippine exports rose at their fastest pace in five years, bringing overseas sales to a new record on the back of global electronics demand and a weak peso.",
+   "lead_ru": "Филиппинский экспорт рос самыми быстрыми темпами за пять лет, в результате чего зарубежные продажи достигли нового рекорда на фоне глобального спроса на электронику и слабого песо."
   }
  ],
  "last_digest": "2026-10-29",
@@ -18354,8 +18383,8 @@
   "checked": "2026-10-30T02:29:13.555612+00:00",
   "sec_seen": [
    "0001437749-26-034036",
-   "0001437749-26-034038",
    "0001437749-26-034032",
+   "0001437749-26-034038",
    "0001895111-26-000021",
    "0001628280-26-068337",
    "0001437749-26-034042",
@@ -18366,8 +18395,8 @@
    "0001437749-26-034035",
    "0001140361-26-041201",
    "0001711968-26-000027",
-   "0001437749-26-034040",
    "0001040470-26-000323",
+   "0001437749-26-034040",
    "0000923738-26-000048",
    "0001193125-26-438480",
    "0000944075-26-000078",
