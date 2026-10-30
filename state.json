@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "ce42aaf0267d7c0d": "2026-10-27T11:48:09.332036+00:00",
   "2a73624bf04dfbfc": "2026-10-27T11:53:09.592507+00:00",
   "8c3b2dfdc2708df1": "2026-10-27T11:58:09.276641+00:00",
   "5d89af25c4e00cfc": "2026-10-27T12:08:09.368068+00:00",
@@ -1138,18 +1137,10 @@
   "7fd7e4bde796d1d9": "2026-10-30T11:30:10.512524+00:00",
   "a4ee039ed95438da": "2026-10-30T11:35:10.457985+00:00",
   "41a7ea767bc6318f": "2026-10-30T11:35:10.457985+00:00",
-  "21facd52d70249a6": "2026-10-30T11:40:10.488520+00:00"
+  "21facd52d70249a6": "2026-10-30T11:40:10.488520+00:00",
+  "1e8276be5e120980": "2026-10-30T11:50:10.510985+00:00"
  },
  "recent": [
-  {
-   "title": "Why reported Khamenei call for end to ‘neither war nor peace’ moved markets — a bit",
-   "link": "https://www.marketwatch.com/story/why-reported-khamenei-call-for-end-to-neither-war-nor-peace-moved-markets-a-bit-dd94b602?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-27T11:48:09.332036+00:00"
-  },
   {
    "title": "Here’s the question three tech-sector earnings reports raise about the future of AI",
    "link": "https://www.marketwatch.com/story/heres-the-question-three-tech-sector-earnings-reports-raise-about-the-future-of-ai-5676248b?mod=mw_rss_topstories",
@@ -12051,6 +12042,16 @@
    ],
    "score": 1,
    "ts": "2026-10-30T11:35:10.457985+00:00"
+  },
+  {
+   "title": "Chip designer MediaTek says AI demand growth will continue 'for sure'",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQTXIzeTN1VVNoSXB4bTY4c3NDc1ZyQldMWVE3ald2NFJEc0JkR0hYTjFxZEluX3FfU0M0Wmk1S0VzZW10NnlJY2xUcmhCd3RBOGNjZFQ1TnN3UHdsOTd6UXQwYk84dGpJbFE3Y1p1WXBPWWRPVHAycXp4Sy1ETzFnU0oxb0VhTXZIanpsV2pZSHU3WGZNQm9mYzc3Q0w1NXB5N2NXd2hyT3BERzhDYzJIckVaZDdCVWs3MVQ5cy1mUQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T11:50:10.510985+00:00",
+   "title_ru": "Разработчик чипов MediaTek говорит, что рост спроса на ИИ «наверняка» продолжится"
   }
  ],
  "last_digest": "2026-10-29",
@@ -18739,8 +18740,8 @@
   },
   "checked": "2026-10-30T11:45:10.373806+00:00",
   "sec_seen": [
-   "0002010135-26-000025",
    "0002141713-26-000007",
+   "0002010135-26-000025",
    "0001628280-26-068399",
    "0000711377-26-000037",
    "0001341767-26-000008",
