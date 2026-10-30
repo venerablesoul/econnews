@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "5158a546adaf3198": "2026-10-27T10:58:09.308573+00:00",
-  "351c0f15816e43d0": "2026-10-27T11:03:09.273253+00:00",
   "f0cead1d57ca0bca": "2026-10-27T11:08:09.276998+00:00",
   "43e5a57aaa490b41": "2026-10-27T11:13:09.326711+00:00",
   "c0d57585183229aa": "2026-10-27T11:18:09.282977+00:00",
@@ -1137,40 +1135,12 @@
   "632fec5b0f0c53ea": "2026-10-30T10:49:40.361499+00:00",
   "30a6fe6b93678630": "2026-10-30T10:49:40.361499+00:00",
   "e55c84b60db4da71": "2026-10-30T10:54:40.422070+00:00",
-  "63342d1d775e0ce9": "2026-10-30T10:54:40.422070+00:00"
+  "63342d1d775e0ce9": "2026-10-30T10:54:40.422070+00:00",
+  "a40d64394e1aa2f8": "2026-10-30T10:59:40.314027+00:00",
+  "816b77ca472dfec1": "2026-10-30T11:04:40.390015+00:00",
+  "f7c020ef3dea170b": "2026-10-30T11:04:40.390015+00:00"
  },
  "recent": [
-  {
-   "title": "GM to Move Stock Listing to Tech-Focused Nasdaq, Leaving NYSE",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-27/gm-to-move-stock-listing-to-tech-focused-nasdaq-leaving-nyse",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T10:58:09.308573+00:00",
-   "title_ru": "GM переведет листинг акций на Nasdaq, ориентированный на технологии, и покинет NYSE",
-   "lead": "General Motors Co.",
-   "lead_ru": "General Motors",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "AI debt trouble could help Fed’s Warsh get his way with fewer rate hikes",
-   "link": "https://www.marketwatch.com/story/ai-debt-trouble-could-help-feds-warsh-get-his-way-with-fewer-rate-hikes-b3dc4525?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 5,
-   "ts": "2026-10-27T11:03:09.273253+00:00",
-   "title_ru": "Проблемы с задолженностью ИИ могут помочь Уоршу из ФРС добиться своего с меньшим повышением ставок",
-   "lead": "AI financing has been harder and more expensive to come by as the capital-spending boom comes under more scrutiny.",
-   "lead_ru": "Финансирование ИИ стало сложнее и дороже, поскольку бум капиталовложений подвергается более тщательному анализу.",
-   "tags": [
-    "Fed",
-    "rates"
-   ]
-  },
   {
    "title": "SoFi’s stock climbs as lending surge drives an earnings beat and rosy outlook",
    "link": "https://www.marketwatch.com/story/sofis-stock-climbs-as-lending-surge-drives-an-earnings-beat-and-rosy-outlook-0c978535?mod=mw_rss_topstories",
@@ -12094,6 +12064,33 @@
    "score": 3,
    "ts": "2026-10-30T10:54:40.422070+00:00",
    "title_ru": "Как Jio изменила экономику мобильного Интернета в Индии: по одному дешевому байту за раз"
+  },
+  {
+   "title": "Lagarde’s Long Goodbye to ECB Is Finally Ending",
+   "link": "https://www.bloomberg.com/news/newsletters/2026-10-30/lagarde-s-long-goodbye-to-ecb-is-finally-ending",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-30T11:04:40.390015+00:00",
+   "title_ru": "Долгое прощание Лагард с ЕЦБ наконец-то заканчивается",
+   "lead": "The Frenchwoman will now exit as president in February, leaving a mixed legacy.",
+   "lead_ru": "Француженка уйдет с поста президента в феврале, оставив неоднозначное наследие.",
+   "tags": [
+    "ECB"
+   ]
+  },
+  {
+   "title": "Euro Set For Worst Month Versus Pound Since 2022 on French Woes",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/euro-set-for-worst-month-versus-pound-since-2022-on-french-woes",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T11:04:40.390015+00:00",
+   "title_ru": "Евро настроен на худший месяц по сравнению с фунтом с 2022 года из-за проблем во Франции",
+   "lead": "The euro is set for its weakest month in more than four years compared to the pound as concern about France’s outlook weighs on the common currency.",
+   "lead_ru": "Для евро ожидается самый слабый месяц за более чем четыре года по сравнению с фунтом, поскольку обеспокоенность по поводу перспектив Франции оказывает давление на единую валюту."
   }
  ],
  "last_digest": "2026-10-29",
@@ -18785,29 +18782,33 @@
    "0001857843-26-000030",
    "0002010019-26-000035",
    "0000711377-26-000037",
-   "0001437749-26-034035",
    "0002141713-26-000007",
+   "0001628280-26-068407",
    "0001812730-26-000008",
+   "0001628280-26-068418",
+   "0001628280-26-068424",
    "0000711377-26-000035",
-   "0001437749-26-034040",
-   "0001437749-26-034042",
+   "0001628280-26-068405",
    "0002010135-26-000025",
    "0000711377-26-000038",
+   "0001628280-26-068399",
    "0001711968-26-000027",
-   "0001437749-26-034044",
+   "0001628280-26-068401",
+   "0001628280-26-068403",
    "0001646382-26-000026",
-   "0001437749-26-034036",
-   "0001193125-26-439152",
-   "0001437749-26-034038",
+   "0001628280-26-068412",
    "0001493152-26-049321",
-   "0001225208-26-008557",
    "0000711377-26-000036",
    "0002066642-26-000004",
    "0001646649-26-000040",
    "0001888543-26-000002",
+   "0001628280-26-068397",
    "0002054266-26-000008",
+   "0001628280-26-068420",
    "0001213900-26-113987",
+   "0001628280-26-068409",
    "0001697362-26-000020",
+   "0001628280-26-068416",
    "0001341767-26-000008"
   ],
   "errors": {
