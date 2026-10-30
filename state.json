@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "4730ddb587d46283": "2026-10-27T07:03:09.308121+00:00",
-  "ed678ed563e55c28": "2026-10-27T07:03:09.308121+00:00",
   "c1e1f0f8679a6889": "2026-10-27T07:13:09.288241+00:00",
   "df8771a7e4718a0a": "2026-10-27T07:28:09.310923+00:00",
   "a8a403d86d6d41e9": "2026-10-27T07:28:09.310923+00:00",
@@ -1115,36 +1113,12 @@
   "a9034a36ab174d21": "2026-10-30T06:49:40.241591+00:00",
   "f318776fbe1fdf1f": "2026-10-30T06:49:40.241591+00:00",
   "58912d6e86a8e33c": "2026-10-30T06:49:40.241591+00:00",
-  "22ac85b028a1c6a7": "2026-10-30T06:54:40.239326+00:00"
+  "22ac85b028a1c6a7": "2026-10-30T06:54:40.239326+00:00",
+  "3e4f4853ede84b8b": "2026-10-30T07:04:40.284179+00:00",
+  "c950da38f32762ee": "2026-10-30T07:04:40.284179+00:00",
+  "35c597381e3e3387": "2026-10-30T07:04:40.284179+00:00"
  },
  "recent": [
-  {
-   "title": "Indonesia 10-Year Yield at Four-Year High on MSCI Risk, Oil",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-27/indonesia-10-year-yield-at-four-year-high-on-msci-risk-oil",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-27T07:03:09.308121+00:00",
-   "title_ru": "Индонезия 10-летняя доходность на уровне четырехлетнего максимума по риску MSCI, нефть",
-   "lead": "Indonesia’s 10-year government bond yield climbed to a four-year high and the rupiah fell toward a record low as elevated oil prices and the MSCI Inc. threat of a stocks downgrade hurt investor sentiment.",
-   "lead_ru": "Доходность 10-летних государственных облигаций Индонезии выросла до четырехлетнего максимума, а рупия упала до рекордно низкого уровня, поскольку повышенные цены на нефть и угроза MSCI Inc. снижения рейтинга акций повредили настроениям инвесторов.",
-   "tags": [
-    "oil",
-    "bonds",
-    "markets"
-   ]
-  },
-  {
-   "title": "Ferretti cuts guidance again as uncertain environment slows yacht market",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQckd2ODZxNGZ6NVVGM09Ca0VvOWpfRGpVRkhvTjJYY2NUZ0FvTlk5MUVuWmRpc2k0LVdheUZBZUNHVkRwZ1FuR1NRbWJsWkdpdEhMemNpZTNKZlNWTm8zVU1RMGJYcGluNjByeWgwWkhENEVNZW56YVZPMXdIb040X1RvUVEyTHlnZXZ4MVl3NmNHRXNjVTNsbHQyM3pGV3E0ZDVocS0zRjJsdlA1WGxCZV9neng?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T07:03:09.308121+00:00",
-   "title_ru": "Ferretti снова сокращает руководство, поскольку неопределенная обстановка замедляет рынок яхт"
-  },
   {
    "title": "China Bonds Rally As Gloom Deepens Over Stocks",
    "link": "https://www.bloomberg.com/news/videos/2026-10-27/the-china-show-12-27-26-video",
@@ -11890,6 +11864,40 @@
    "tags": [
     "China"
    ]
+  },
+  {
+   "title": "FTSE 100 Live: UK Stocks Set to Outperform as Tech Sells Off",
+   "link": "https://www.bloomberg.com/news/live-blog/2026-10-30/ftse-100-live-updates-bp-natwest-astrazeneca-pound-bonds-gilts-euro-gdp-budget-news-what-s-moving-uk-markets-right-now-markets-today",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T07:04:40.284179+00:00",
+   "title_ru": "FTSE 100 в реальном времени: акции Великобритании будут расти лучше рынка на фоне распродажи технологий",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "French economy contracts 0.1 per cent in third quarter",
+   "link": "https://www.ft.com/content/6f879bc5-be07-4a66-afea-bcbe73723a9f?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T07:04:40.284179+00:00",
+   "title_ru": "Экономика Франции сократилась на 0,1% в третьем квартале",
+   "lead": "Eurozone’s second-largest economy is grappling with high energy prices and a surge in borrowing costs",
+   "lead_ru": "Вторая по величине экономика еврозоны борется с высокими ценами на энергоносители и ростом стоимости заимствований."
+  },
+  {
+   "title": "ВТБ завершил 15-летнюю санацию БМ-банка",
+   "link": "https://www.rbc.ru/finances/30/10/2026/6ae34ca46a59b56c1f42da20",
+   "sources": [
+    "RBC"
+   ],
+   "score": 1,
+   "ts": "2026-10-30T07:04:40.284179+00:00"
   }
  ],
  "last_digest": "2026-10-29",
