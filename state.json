@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "f799fc16289facdf": "2026-10-27T10:08:09.305870+00:00",
-  "c2714ff1b9f3304a": "2026-10-27T10:13:09.253536+00:00",
-  "c0b7703600101e2c": "2026-10-27T10:13:09.253536+00:00",
   "5d84ad6dfa51098a": "2026-10-27T10:18:09.329364+00:00",
   "8ce1a1ad86acab2a": "2026-10-27T10:48:09.247293+00:00",
   "b8c4260386d77fec": "2026-10-27T10:53:09.255229+00:00",
@@ -1126,42 +1123,12 @@
   "07c6f72994d52813": "2026-10-30T09:54:40.213657+00:00",
   "52a79dd6a2ecbdb1": "2026-10-30T09:59:40.356498+00:00",
   "ab4117d9f0bd0720": "2026-10-30T10:04:40.356431+00:00",
-  "95f4e7e3effd317e": "2026-10-30T10:04:40.356431+00:00"
+  "95f4e7e3effd317e": "2026-10-30T10:04:40.356431+00:00",
+  "56040798c90eba9d": "2026-10-30T10:14:40.352605+00:00",
+  "f08582e7736f69bd": "2026-10-30T10:14:40.352605+00:00",
+  "09b4a840305b199a": "2026-10-30T10:14:40.352605+00:00"
  },
  "recent": [
-  {
-   "title": "Customers are chasing higher-rate products, and that’s bad news for banks like HSBC",
-   "link": "https://www.marketwatch.com/story/customers-are-chasing-higher-rate-products-and-thats-bad-news-for-banks-like-hsbc-3a6ec793?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-27T10:08:09.305870+00:00"
-  },
-  {
-   "title": "Cold Blasts to Pose Early Test for European and Asia Gas Markets",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNaEQzTFVQZkY0dEJ0RXd6NEYxVmNFUWFWQllXOWpnWmRIRjdmZ21yckxNejhlZ1hUQXcxdC03WkdlNGRtUUxFLWc3T3p2Q2FwTXNBOU5fZmVGQnh0aWRZQi1xSHlmLVZqMWNRQmd2ZXVHWHNqT3BFbXFIOEV5WGVXMWVReHZMNG5UUWg4cUxSQ21NLWhSS0luS1BITWJmWkFRUVN5clNINE8xaTBOWHQ4cVRUMldZQQ?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-27T10:13:09.253536+00:00",
-   "title_ru": "Холодные взрывы станут ранним испытанием для газовых рынков Европы и Азии"
-  },
-  {
-   "title": "Bond investors are thinking less about the Fed and more about AI, deficits",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOTVZDTFViUjF0VS1rM2FQX1ZjYmpIQncyQi1pMldoZ1N2U2JXUjIydVFJUGN1dXV4STlvYlVEM3FPSEZaSEt3Rnkxc0R5c3JrOEg2b0g2d2pUemFMbXpKNjZ6M1NabkwxcmJrbE5sdWtnU2pDd3R0X3ZkakhTNTZraUU0ejJKdDVRR0NheWhzcXBLUnU2dGxGUXFURnJZaExIM1hTRW9LWE5KbkNJN2RZ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-27T10:13:09.253536+00:00",
-   "title_ru": "Инвесторы в облигации меньше думают о ФРС и больше об искусственном интеллекте и дефиците",
-   "tags": [
-    "Fed",
-    "bonds"
-   ]
-  },
   {
    "title": "Malaysian Palm Oil Glut Swamps Storage in Top-Producing State",
    "link": "https://www.bloomberg.com/news/articles/2026-10-27/malaysian-palm-oil-glut-swamps-storage-in-top-producing-state",
@@ -11958,6 +11925,41 @@
     "inflation",
     "jobs"
    ]
+  },
+  {
+   "title": "Euro zone economy slows to 0.4% growth in Q3 as crisis-hit France contracts",
+   "link": "https://www.cnbc.com/2026/10/30/euro-zone-gdp-france.html",
+   "sources": [
+    "CNBC"
+   ],
+   "score": 4,
+   "ts": "2026-10-30T10:14:40.352605+00:00",
+   "title_ru": "Рост экономики еврозоны замедлился до 0,4% в третьем квартале из-за спада во Франции, пострадавшей от кризиса"
+  },
+  {
+   "title": "Signs of a Tech Slowdown Are the Last Thing This Market Needs",
+   "link": "https://www.bloomberg.com/news/newsletters/2026-10-30/signs-of-a-tech-slowdown-are-the-last-thing-this-market-needs",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T10:14:40.352605+00:00",
+   "title_ru": "Признаки технологического спада — последнее, что нужно этому рынку",
+   "lead": "Earnings point to a pocket of weakness that’s pulling the Nasdaq lower.",
+   "lead_ru": "Доходы указывают на слабость, которая тянет Nasdaq вниз.",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "Seven governor races to watch as voters weigh Trump, economy",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOQzM4bGYwQlZMVEp3Z2JGajkwOVdlN1IzeFk0Qmk1eTRQdHpZX1UtR0dKRmItMEJMVHVIMGF4bWlLTGg3VDNDSFBCZkRBdXhpZVBCQUpOMHNoMW1IUWJaczRtUW5sS2MxZF9nekVpR25BOTI1U3FTRVdHVVZPemhXcGgydXRQS3N6bDhhVVJXb2pMQ3E5NVNoZ3huUEdrTHM?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T10:14:40.352605+00:00",
+   "title_ru": "Семь губернаторов соревнуются, чтобы посмотреть, как избиратели взвешивают Трампа и экономику"
   }
  ],
  "last_digest": "2026-10-29",
@@ -18651,42 +18653,21 @@
    "0002010019-26-000035",
    "0001437749-26-034035",
    "0001437749-26-034034",
-   "0000944075-26-000076",
-   "0001392942-26-000016",
-   "0000944075-26-000077",
-   "0001628280-26-068337",
-   "0000944075-26-000075",
-   "0000944075-26-000079",
    "0001437749-26-034032",
-   "0001895106-26-000022",
-   "0001895111-26-000021",
    "0001437749-26-034040",
    "0001437749-26-034042",
-   "0001628280-26-068348",
    "0002010135-26-000025",
    "0001711968-26-000027",
-   "0001628280-26-068356",
-   "0000944075-26-000078",
-   "0001780664-26-000047",
    "0001437749-26-034044",
    "0001646382-26-000026",
-   "0001140361-26-041206",
-   "0000923738-26-000048",
    "0001437749-26-034036",
    "0001193125-26-439152",
    "0001437749-26-034027",
-   "0001140361-26-041201",
    "0001437749-26-034038",
-   "0001193125-26-438722",
    "0001493152-26-049321",
-   "0000724004-26-000098",
-   "0001669883-26-000003",
-   "0000950142-26-002898",
    "0001225208-26-008557",
    "0001646649-26-000040",
-   "0001392941-26-000017",
    "0001213900-26-113987",
-   "0001193125-26-438662",
    "0001697362-26-000020",
    "0001437749-26-034030"
   ],
