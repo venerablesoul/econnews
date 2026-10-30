@@ -1116,7 +1116,11 @@
   "3fc9ac2ad7425037": "2026-10-30T14:15:10.542265+00:00",
   "52c3e408752d84d7": "2026-10-30T14:20:10.587544+00:00",
   "8dc18539e31407c3": "2026-10-30T14:35:10.525582+00:00",
-  "103db3e5db2912e0": "2026-10-30T14:40:10.611929+00:00"
+  "103db3e5db2912e0": "2026-10-30T14:40:10.611929+00:00",
+  "6a3e5a36a1738410": "2026-10-30T14:50:10.599317+00:00",
+  "e755f7eb31307238": "2026-10-30T14:50:10.599317+00:00",
+  "ff9719cdef9505b7": "2026-10-30T14:50:10.599317+00:00",
+  "e637a9207b1cc695": "2026-10-30T14:50:10.599317+00:00"
  },
  "recent": [
   {
@@ -11930,6 +11934,53 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "AI Debt Drives Wedge Between Corporate Bonds and Credit Hedges",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/ai-debt-drives-wedge-between-corporate-bonds-and-credit-hedges",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-30T14:50:10.599317+00:00",
+   "title_ru": "Долг ИИ вбивает клин между корпоративными облигациями и кредитным хеджированием",
+   "lead": "Some of the most popular ways to hedge credit are breaking down just as concerns mount over the flood of artificial intelligence-linked debt.",
+   "lead_ru": "Некоторые из наиболее популярных способов хеджирования кредитов терпят неудачу, поскольку растет обеспокоенность по поводу потока долгов, связанных с искусственным интеллектом.",
+   "tags": [
+    "bonds"
+   ]
+  },
+  {
+   "title": "Investors pull money from US equity funds ahead of earnings reports from AI hyperscalers",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQX25peXVfYi03bjRDTnNWNkRoMGRvR2pSaUZnYlE0dkE1UjVraU4tUjVNbzd6OGU0bXo1Q3pheW45ZElCaWVoU2FlbjNUc0t1Mm8wWXdhVDNlcEZHQTZ5d1BqX2Vtd2RsSGtFcHo3dnNrZExsTWxFem9fREc2MmtaZUN2SGdLVjlxekJBZ3BXX2pWVkhBM3BOSHpJU0ZvUzlqaUFMZlNXTUR6RXJpMGFRLU5MRFVvNzVHRTZWMw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-30T14:50:10.599317+00:00",
+   "title_ru": "Инвесторы забирают деньги из фондов акций США в преддверии отчетов о прибылях от гиперскейлеров ИИ"
+  },
+  {
+   "title": "Trump’s Venezuela Strategy Needs More Than Oil Deals",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNdDh3aVV6bkVnUFpWN3dvclA1emIxOTZlbU9OcFJSVnJQWXRkSUFsVjRucXRKWDFSTzhGbWR0aFlRMmtPYXFJYVdrNENTdDE3TDJuZm85ckJzOTI2WFdkZnJjS3FvSi1OWGk0bkJYVnp4cmtkaXYzN1A5S1hUNGROX1B3RGg4OGx5M0JMaFNJXzhFQmJzM2g2TEZIUzNGZE5iZTZ4WFlUbHRlZw?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T14:50:10.599317+00:00",
+   "title_ru": "Стратегия Трампа в Венесуэле требует большего, чем просто нефтяные сделки",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "Reddit shares on track for largest ever one-day drop — and analysts say the bad news hasn’t ended",
+   "link": "https://www.marketwatch.com/story/reddit-shares-on-track-for-largest-ever-one-day-drop-and-analysts-say-the-bad-news-hasnt-ended-25d46284?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-30T14:50:10.599317+00:00"
   }
  ],
  "last_digest": "2026-10-29",
@@ -18616,10 +18667,9 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-30T13:45:10.578588+00:00",
+  "checked": "2026-10-30T14:45:10.584224+00:00",
   "sec_seen": [
    "0001437749-26-034093",
-   "0001437749-26-034087",
    "0001437749-26-034095",
    "0001437749-26-034091",
    "0001437749-26-034097"
