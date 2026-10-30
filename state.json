@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "9b385517a2ad1e94": "2026-10-27T18:04:41.217616+00:00",
-  "0612be3be59c08ed": "2026-10-27T18:04:41.217616+00:00",
-  "9bb17a443b8db52d": "2026-10-27T18:09:40.893446+00:00",
   "92765ebf721365f2": "2026-10-27T18:19:40.895694+00:00",
   "b287608c731d6e18": "2026-10-27T19:04:40.985726+00:00",
   "2b709e1d49cd541b": "2026-10-27T19:19:40.956304+00:00",
@@ -1138,15 +1135,6 @@
   "82297753eb7124b3": "2026-10-30T17:55:57.411989+00:00"
  },
  "recent": [
-  {
-   "title": "The big reason Boeing’s stock is falling so hard after earnings",
-   "link": "https://www.marketwatch.com/story/the-big-reason-boeings-stock-is-falling-so-hard-after-earnings-d31b400d?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-27T18:04:41.217616+00:00"
-  },
   {
    "title": "Budget 2026: six charts that reveal the economic realities facing the chancellor",
    "link": "https://www.theguardian.com/uk-news/2026/oct/27/budget-2026-six-charts-underpin-chancellor-decisions-john-healey",
@@ -18801,10 +18789,9 @@
   "sec_seen": [
    "0001736209-26-000011",
    "0002093300-26-000004",
-   "0001785595-26-000018",
    "0002116974-26-000005",
-   "0001956982-26-000007",
-   "0001801785-26-000008"
+   "0001801785-26-000008",
+   "0001628280-26-068526"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
