@@ -1,13 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "a8511a4cf02f60d6": "2026-10-27T21:24:44.754944+00:00",
-  "6946bd32039013b1": "2026-10-27T21:24:44.754944+00:00",
-  "915383bd55cd1c17": "2026-10-27T21:24:44.754944+00:00",
-  "0ad482a6a7e727a8": "2026-10-27T21:24:44.754944+00:00",
-  "be02e5d1f56c5d48": "2026-10-27T21:24:44.754944+00:00",
-  "9ce118ed96faf821": "2026-10-27T21:24:44.754944+00:00",
-  "31de8cf9cf2536de": "2026-10-27T21:29:44.647398+00:00",
   "3d70faf47712ba79": "2026-10-27T21:34:44.562401+00:00",
   "d95873b76d0d2367": "2026-10-27T21:34:44.562401+00:00",
   "9ae549c87e1b32e4": "2026-10-27T21:34:44.562401+00:00",
@@ -1133,57 +1126,10 @@
   "e9beba98e362da41": "2026-10-30T21:00:57.435260+00:00",
   "0ac234b29229d2d0": "2026-10-30T21:05:57.563199+00:00",
   "1bf87ea48f59e51d": "2026-10-30T21:05:57.563199+00:00",
-  "1458fdc846e58964": "2026-10-30T21:10:57.415002+00:00"
+  "1458fdc846e58964": "2026-10-30T21:10:57.415002+00:00",
+  "915383bd55cd1c17": "2026-10-30T21:30:57.363173+00:00"
  },
  "recent": [
-  {
-   "title": "Russia oil exports through western ports forecast to fall in November, traders say",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOQzk2XzU2VjB5VDFxaHJmSmt0Q1RpRl8wSklIakIzcmx3R18tZkQyczJ4dnozRkY0M25Gc3dVbGFiQmFHNjlYaDJHRHowMGo0RElicFJUcHlZQldpOU9ZNm5SbnN4Q25KeGFsbENWbFUySXJSSmF2NlprTDJCenJCYU1GUjl3U0pYbkROdGJqTGFnR09XQ0hTa0dvSDlpQmIzWTJhMmc4Z192VThpVzN2MXk0Uy1DN0hDXzRTemxoOGRmTkxhOXc?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-27T21:24:44.754944+00:00",
-   "title_ru": "Экспорт российской нефти через западные порты в ноябре снизится, говорят трейдеры",
-   "tags": [
-    "oil",
-    "Russia"
-   ]
-  },
-  {
-   "title": "Raizen Debt to Be Eyed by FS, Mubadala in Restructuring",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-27/raizen-debt-is-said-to-be-eyed-by-fs-mubadala-in-restructuring",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T21:24:44.754944+00:00",
-   "title_ru": "FS и Мубадала займутся реструктуризацией долга Raizen",
-   "lead": "Brazilian biofuel producer FS — Fueling Sustainability and Abu Dhabi’s sovereign wealth fund Mubadala Investment Co.",
-   "lead_ru": "Бразильский производитель биотоплива FS — Fueling Sustainability и суверенный фонд Абу-Даби Mubadala Investment Co."
-  },
-  {
-   "title": "Retail traders buy the dip on chip stocks — but Robinhood gets burned by the crypto market",
-   "link": "https://www.marketwatch.com/story/retail-traders-buy-the-dip-on-chip-stocks-but-robinhood-gets-burned-by-the-crypto-market-33cea913?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 2,
-   "ts": "2026-10-27T21:24:44.754944+00:00"
-  },
-  {
-   "title": "Bank of Canada Decision: Markets Prepare for Higher Interest Rates",
-   "link": "https://www.bloomberg.com/news/newsletters/2026-10-27/bank-of-canada-decision-markets-prepare-for-higher-interest-rates",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-27T21:29:44.647398+00:00",
-   "title_ru": "Решение Банка Канады: рынки готовятся к повышению процентных ставок",
-   "tags": [
-    "rates"
-   ]
-  },
   {
    "title": "Barclays Sees FX Volatility Staying Elevated as Dollar Rises",
    "link": "https://www.bloomberg.com/news/articles/2026-10-27/barclays-sees-fx-volatility-staying-elevated-as-dollar-rises",
@@ -15112,6 +15058,22 @@
    },
    {
     "src": "sec",
+    "id": "30bf26ac6688c724",
+    "ticker": "ECAT",
+    "company": "BlackRock ESG Capital Allocation Term Trust",
+    "who": "Saba Capital Management, L.p.",
+    "role": "10% owner",
+    "type": "sell",
+    "value": 587345,
+    "shares": 42966,
+    "price": 13.67,
+    "plan": false,
+    "date": "2026-10-29",
+    "disclosed": "2026-10-30",
+    "link": "https://www.sec.gov/Archives/edgar/data/1864843/000151028126000394/0001510281-26-000394-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "ecb8621ae4ff68a2",
     "ticker": "ESQ",
     "company": "Esquire Financial Holdings, Inc.",
@@ -15253,6 +15215,22 @@
     "date": "2026-10-28",
     "disclosed": "2026-10-30",
     "link": "https://www.sec.gov/Archives/edgar/data/1676320/000009774526000182/0000097745-26-000182-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "3c597de18390fa40",
+    "ticker": "RVI",
+    "company": "Robinhood Ventures Fund I",
+    "who": "Robinhood Markets, Inc.",
+    "role": "10% owner",
+    "type": "sell",
+    "value": 3079382,
+    "shares": 124319,
+    "price": 24.77,
+    "plan": false,
+    "date": "2026-10-28",
+    "disclosed": "2026-10-30",
+    "link": "https://www.sec.gov/Archives/edgar/data/2085091/000095010326016560/0000950103-26-016560-index.htm"
    },
    {
     "src": "sec",
@@ -18757,38 +18735,6 @@
     "date": "2026-10-22",
     "disclosed": "2026-10-23",
     "link": "https://www.sec.gov/Archives/edgar/data/2090083/000119312526429389/0001193125-26-429389-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "4d695bf6ea534da7",
-    "ticker": "BZUN",
-    "company": "Baozun Inc.",
-    "who": "Wenbin Qiu",
-    "role": "CEO",
-    "type": "buy",
-    "value": 39900,
-    "shares": 11400,
-    "price": 3.5,
-    "plan": false,
-    "date": "2026-10-22",
-    "disclosed": "2026-10-23",
-    "link": "https://www.sec.gov/Archives/edgar/data/1975717/000110465926118281/0001104659-26-118281-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "11f4feace469f458",
-    "ticker": "CLF",
-    "company": "CLEVELAND-CLIFFS INC.",
-    "who": "Edilson Camara",
-    "role": "Director",
-    "type": "buy",
-    "value": 99826,
-    "shares": 7400,
-    "price": 13.49,
-    "plan": false,
-    "date": "2026-10-22",
-    "disclosed": "2026-10-23",
-    "link": "https://www.sec.gov/Archives/edgar/data/2093073/000076406526000117/0000764065-26-000117-index.htm"
    }
   ],
   "docs": {
@@ -18830,25 +18776,27 @@
   },
   "checked": "2026-10-30T21:00:57.435260+00:00",
   "sec_seen": [
-   "0001683168-26-008205",
+   "0000950103-26-016560",
    "0001213900-26-114492",
    "0001584979-26-000006",
    "0001506307-26-000134",
-   "0001493152-26-049461",
+   "0001140361-26-041333",
    "0001104659-26-120734",
-   "0001437749-26-034240",
-   "0001791917-26-000006",
+   "0001493152-26-049461",
    "0001213900-26-114488",
    "0001628280-26-068624",
+   "0001292814-26-005078",
+   "0001493152-26-049477",
    "0001213900-26-114490",
-   "0001733123-26-000010",
+   "0001736979-26-000025",
    "0001213900-26-114493",
    "0001213900-26-114494",
+   "0000897069-26-001881",
    "0001585521-26-000157",
    "0002111492-26-000008",
+   "0001510281-26-000394",
    "0001213900-26-114489",
-   "0001480603-26-000004",
-   "0001213900-26-114487"
+   "0001480603-26-000004"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
