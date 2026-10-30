@@ -1129,7 +1129,9 @@
   "b41674ee58e4a2d1": "2026-10-30T13:20:10.541945+00:00",
   "bdf9accb07eeefb1": "2026-10-30T13:20:10.541945+00:00",
   "8f8e9c0f2700236a": "2026-10-30T13:20:10.541945+00:00",
-  "a4aa8467ddd00c3e": "2026-10-30T13:25:10.688995+00:00"
+  "a4aa8467ddd00c3e": "2026-10-30T13:25:10.688995+00:00",
+  "b1e458e053c33558": "2026-10-30T13:30:10.388228+00:00",
+  "373dc41c1345f620": "2026-10-30T13:30:10.388228+00:00"
  },
  "recent": [
   {
@@ -12028,6 +12030,35 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Oil Is a Tough Trade for Now, Says Sarah Hunt",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-30/oil-is-a-tough-trade-for-now-says-sarah-hunt-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-30T13:30:10.388228+00:00",
+   "title_ru": "Нефть сейчас — сложная сделка, говорит Сара Хант",
+   "lead": "Sarah Hunt of Alpine Woods Capital Investment talks about selloff in tech stocks and earnings from oil giants Exxon and Chevron.",
+   "lead_ru": "Сара Хант из Alpine Woods Capital Investment рассказывает о распродаже акций технологических компаний и доходах нефтяных гигантов Exxon и Chevron.",
+   "tags": [
+    "oil",
+    "markets"
+   ]
+  },
+  {
+   "title": "New economic data challenges Fed chief's not-too-hot perspective",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNNV9seWt5MjlGeDJNRkdKLWxjUHQyb2R4QmUtM0ZvOU5hUExsYmpuVkhyZ2RnSGtPajEzZEFFRUluX0xHdTlaQ1NKc0JKcXhQTXB6NGJ4VXJ5NVhNWkZzTTU2WFplQl9zWUFtT3hmWG9FQXhyYVBWN1V4MEhoaGVEd2pfQWRDakQxcExBc3VjQmNNSzhEUDZjMEMwQnpVV1NTMEhZb0Q2LWF1SUZi?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-30T13:30:10.388228+00:00",
+   "title_ru": "Новые экономические данные бросают вызов не слишком радужным перспективам главы ФРС",
+   "tags": [
+    "Fed"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -18716,23 +18747,19 @@
   },
   "checked": "2026-10-30T12:45:10.499097+00:00",
   "sec_seen": [
-   "0000902664-26-004313",
-   "0001193125-26-440015",
-   "0001628280-26-068424",
-   "0001628280-26-068405",
-   "0001628280-26-068409",
+   "0001628280-26-068420",
    "0001493152-26-049356",
    "0001168534-26-000011",
+   "0000902664-26-004313",
    "0001628280-26-068412",
-   "0001829340-26-000014",
-   "0002084269-26-000003",
-   "0001628280-26-068403",
-   "0001628280-26-068420",
-   "0001628280-26-068416",
-   "0001493152-26-049370",
-   "0001411587-26-000002",
    "0001628280-26-068418",
-   "0001628280-26-068407"
+   "0001628280-26-068416",
+   "0001193125-26-440015",
+   "0001829340-26-000014",
+   "0001493152-26-049370",
+   "0002084269-26-000003",
+   "0001628280-26-068424",
+   "0001411587-26-000002"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
