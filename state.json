@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "df8771a7e4718a0a": "2026-10-27T07:28:09.310923+00:00",
-  "a8a403d86d6d41e9": "2026-10-27T07:28:09.310923+00:00",
-  "3e8d65bed5cf6e14": "2026-10-27T07:28:09.310923+00:00",
   "a40d64394e1aa2f8": "2026-10-27T07:33:09.239177+00:00",
   "beeb61653611b20a": "2026-10-27T07:33:09.239177+00:00",
   "ccfb4ad285261a02": "2026-10-27T07:33:09.239177+00:00",
@@ -1120,43 +1117,10 @@
   "3fe07aa08d0ec424": "2026-10-30T07:19:40.230484+00:00",
   "0ae05c65d70e2947": "2026-10-30T07:24:40.225378+00:00",
   "9da5d36257b3e643": "2026-10-30T07:24:40.225378+00:00",
-  "b00a6aa99d6faf9f": "2026-10-30T07:24:40.225378+00:00"
+  "b00a6aa99d6faf9f": "2026-10-30T07:24:40.225378+00:00",
+  "165308cbc7e7bb81": "2026-10-30T07:29:40.231583+00:00"
  },
  "recent": [
-  {
-   "title": "COMMENTARY: UK budget risks leaving investors in the dark",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOUUFRWGxJcEtsbjFHZVVLak1PYjdRNTloS2ZCSGxQQmlIbWFudjZKbHBNZ3JxZlZ2S25xQ0VjVjNrSV9tYkJQS1dtazJ3VVFBWFQ0elNNVkNyZ09Kek51RUV2LXdZcFZZdzNrYVhCSFU0azJHTERVN0tIZlVDdXRqVm8tQkgwaDBxUzZxRnZVSTIzZGJJeDdZOGJOQUNxUUlkX0RNaVRjR3FZa1FWUndPU1NxZnc2bW1YWExQMQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-27T07:28:09.310923+00:00",
-   "title_ru": "КОММЕНТАРИЙ: бюджет Великобритании рискует оставить инвесторов в неведении"
-  },
-  {
-   "title": "UK’s Renewed Appeal Runs Into a Tough Budget Test: Taking Stock",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-27/uk-s-renewed-appeal-runs-into-a-tough-budget-test-taking-stock",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T07:28:09.310923+00:00",
-   "title_ru": "Возобновленный призыв Великобритании проходит жесткий бюджетный тест: подведение итогов",
-   "lead": "This week’s UK budget looms as a major test for the country’s stocks, just as the market gains renewed appeal among global investors.",
-   "lead_ru": "Бюджет Великобритании на этой неделе вырисовывается как серьезное испытание для акций страны, так же как рынок вновь набирает популярность среди глобальных инвесторов.",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "Whoosh переведет офис на четырехдневку и снизит зарплаты на зиму",
-   "link": "https://www.rbc.ru/rbcfreenews/6ae04bc0bb7d08eee59c8f1e",
-   "sources": [
-    "RBC"
-   ],
-   "score": 1,
-   "ts": "2026-10-27T07:28:09.310923+00:00"
-  },
   {
    "title": "HSBC Earnings: Profit Jump and $1 Billion Buyback Fall Short of Investors Hopes",
    "link": "https://www.bloomberg.com/news/newsletters/2026-10-27/hsbc-earnings-profit-jump-and-1-billion-buyback-fall-short-of-investors-hopes",
@@ -11934,6 +11898,21 @@
    ],
    "score": 2,
    "ts": "2026-10-30T07:24:40.225378+00:00"
+  },
+  {
+   "title": "Rupee to benefit from dollar retreat, plunging US yields; oil surge tempers impact",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQX0wyQUhET0IxcG5GWUFTZnU3dGdfR3FaNW1LXzFzdGw0UTU0ejdMNDE0R2hMWUVpR3RYVHN6bU5ZMXRvTlQwTW5tZVo2dlBGZVByOC1BMGxHZzUwTmN0R0Rka3R3RXQ2Mm9nanlJcjFJTS1FaVRiVFNMV0U0S3lLWU1HU3QwSkw3QzZ0dGpOX2E2Q0wyQXlaNmQtelhiQW9vMXotZkI2Zlh5NG9Rc0VCVlU2MkNfX1kyY1JzUQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-30T07:29:40.231583+00:00",
+   "title_ru": "Рупия выиграет от отступления доллара, что приведет к падению доходности в США; влияние нефтяного всплеска",
+   "tags": [
+    "oil",
+    "dollar",
+    "bonds"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -18629,8 +18608,8 @@
    "0001178579-26-000022",
    "0001437749-26-034034",
    "0000944075-26-000076",
-   "0001392942-26-000016",
    "0000944075-26-000077",
+   "0001392942-26-000016",
    "0001628280-26-068337",
    "0000944075-26-000075",
    "0000944075-26-000079",
