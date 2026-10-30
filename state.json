@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "6a600d39cab661fa": "2026-10-27T00:02:01.286476+00:00",
-  "29ebdec5eedb5529": "2026-10-27T00:02:01.286476+00:00",
   "c3fa8b8ff72574ab": "2026-10-27T00:12:01.233543+00:00",
   "cc720705182e28ef": "2026-10-27T00:17:01.256883+00:00",
   "b566aa5f01dd989a": "2026-10-27T01:02:01.163453+00:00",
@@ -1080,36 +1078,11 @@
   "f78885a1b3d1d944": "2026-10-29T23:58:36.878431+00:00",
   "5dfdfe0847fcfcd9": "2026-10-29T23:58:36.878431+00:00",
   "89fc9350a3947365": "2026-10-29T23:58:36.878431+00:00",
-  "cf35eb5ae89459c7": "2026-10-29T23:58:36.878431+00:00"
+  "cf35eb5ae89459c7": "2026-10-29T23:58:36.878431+00:00",
+  "72430710fb36c2a8": "2026-10-30T00:03:36.885117+00:00",
+  "1e6d2ae4710aa44c": "2026-10-30T00:08:36.859628+00:00"
  },
  "recent": [
-  {
-   "title": "UK shop price inflation ‘highest since 2024’ as retailers struggle to limit price rises",
-   "link": "https://www.theguardian.com/business/2026/oct/27/uk-shop-price-inflation-highest-since-2024-as-retailers-struggle-to-limit-price-rises",
-   "sources": [
-    "The Guardian"
-   ],
-   "score": 4,
-   "ts": "2026-10-27T00:02:01.286476+00:00",
-   "title_ru": "Инфляция цен в магазинах Великобритании «самая высокая с 2024 года», поскольку ритейлеры изо всех сил пытаются ограничить рост цен",
-   "lead": "British Retail Consortium says ‘dam is starting to break on the huge wave of costs’ being kept from consumers Shop price inflation has risen to the highest level in two and a half years, according to the British Retail…",
-   "lead_ru": "Британский консорциум розничной торговли заявляет, что «плотина начинает прорываться из-за огромной волны издержек», сдерживаемых потребителями. Инфляция цен в магазинах выросла до самого высокого уровня за два с половиной года, по данным British Retail…",
-   "tags": [
-    "inflation"
-   ]
-  },
-  {
-   "title": "'I'm a single mum on £41,000 and limit my weekly shop to £40.' What do you want from the Budget?",
-   "link": "https://www.bbc.co.uk/news/articles/cmx235r9wr3yo?at_medium=RSS&at_campaign=rss",
-   "sources": [
-    "BBC"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T00:02:01.286476+00:00",
-   "title_ru": "«Я мать-одиночка, мой доход составляет 41 000 фунтов стерлингов, и я ограничиваю свой еженедельный магазин 40 фунтами стерлингов». Чего вы хотите от бюджета?",
-   "lead": "People earning from £380 a month to £150,000 a year tell the BBC what they want to see in this year's Budget.",
-   "lead_ru": "Люди, зарабатывающие от 380 фунтов стерлингов в месяц до 150 000 фунтов стерлингов в год, рассказывают Би-би-си, что они хотят видеть в бюджете этого года."
-  },
   {
    "title": "US CFTC, NBA agree to cooperate over basketball and prediction markets",
    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNRUpwWFJGWXloMTBrUXEydE5jejMtVUVRMXFiZXBud2hwQjROU0U5cUk4NjVTbHhMcFU2Y3A5YjV3ME1SZGVTbno4TnpqSmUzUXFhakhmb00zZWg5NS15VWxNZG5EMlp6YU5kZ210SnVLVjRVODRxYmtmcHNwb2RwdnFrNXNzVHVmMjdjN2lZTUFzV1VDUXl1YlU4aUdRSFpxTFlMdUt2ZG5JQQ?oc=5",
@@ -11551,6 +11524,18 @@
    ],
    "score": 1,
    "ts": "2026-10-29T23:58:36.878431+00:00"
+  },
+  {
+   "title": "Topix Overhaul Kicks Off: Three Things Investors Need to Know",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-29/topix-overhaul-kicks-off-three-things-investors-need-to-know",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T00:08:36.859628+00:00",
+   "title_ru": "Начало капитального ремонта Topix: три вещи, которые нужно знать инвесторам",
+   "lead": "Japan Exchange Group Inc.’s first large-scale reshuffle of the Topix Index goes into effect Friday, part of the biggest overhaul in the benchmark’s history that may shrink the number of constituents by more than one-third.",
+   "lead_ru": "Первая крупномасштабная перестановка индекса Topix от Japan Exchange Group Inc. вступает в силу в пятницу, что является частью крупнейшего пересмотра в истории бенчмарка, который может сократить количество составляющих более чем на треть."
   }
  ],
  "last_digest": "2026-10-29",
@@ -14835,6 +14820,22 @@
     "date": "2026-10-28",
     "disclosed": "2026-10-29",
     "link": "https://www.sec.gov/Archives/edgar/data/1916183/000162828026068348/0001628280-26-068348-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "453c3a536b0a3a1f",
+    "ticker": "CRWD",
+    "company": "CrowdStrike Holdings, Inc.",
+    "who": "George Kurtz",
+    "role": "CEO",
+    "type": "sell",
+    "value": 5336111,
+    "shares": 20000,
+    "price": 266.81,
+    "plan": true,
+    "date": "2026-10-28",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/1778564/000177856426000195/0001778564-26-000195-index.htm"
    },
    {
     "src": "sec",
@@ -18179,28 +18180,9 @@
     "date": "2026-10-21",
     "disclosed": "2026-10-23",
     "link": "https://www.sec.gov/Archives/edgar/data/1646649/000164664926000035/0001646649-26-000035-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "da43a7d5e5f0187a",
-    "ticker": "LHAI",
-    "company": "Linkhome Holdings Inc.",
-    "who": "Us Innovation Foundation",
-    "role": "10% owner",
-    "type": "sell",
-    "value": 1599775,
-    "shares": 3020000,
-    "price": 0.53,
-    "plan": false,
-    "date": "2026-10-19",
-    "disclosed": "2026-10-23",
-    "link": "https://www.sec.gov/Archives/edgar/data/2158407/000121390026112127/0001213900-26-112127-index.htm"
    }
   ],
   "docs": {
-   "20035622": "2026-10-12",
-   "20035635": "2026-10-12",
-   "20035585": "2026-10-12",
    "20035588": "2026-10-13",
    "20035487": "2026-10-14",
    "20035648": "2026-10-14",
@@ -18241,11 +18223,9 @@
    "0001193125-26-438479",
    "0001193125-26-438480",
    "0001193125-26-438427",
-   "0000950103-26-016447",
    "0001140361-26-041206",
    "0001895106-26-000022",
    "0001628280-26-068356",
-   "0001193125-26-438200",
    "0000944075-26-000079",
    "0001130144-26-000060",
    "0001194702-26-000013",
@@ -18254,17 +18234,21 @@
    "0000944075-26-000077",
    "0001669883-26-000003",
    "0001628280-26-068348",
-   "0001510281-26-000393",
+   "0001437749-26-034036",
    "0001895111-26-000021",
    "0001748076-26-000005",
    "0001193125-26-438722",
    "0001392941-26-000017",
    "0001140361-26-041201",
+   "0001437749-26-034027",
+   "0001437749-26-034034",
    "0001193125-26-438273",
+   "0001778564-26-000195",
    "0001193125-26-438275",
    "0001780664-26-000047",
    "0001492126-26-000013",
    "0000944075-26-000078",
+   "0001437749-26-034030",
    "0001040470-26-000323",
    "0001130144-26-000062",
    "0001178579-26-000022",
@@ -18272,16 +18256,18 @@
    "0001193125-26-438662",
    "0000950103-26-016448",
    "0001392942-26-000016",
+   "0001437749-26-034032",
    "0000950142-26-002898",
    "0001891054-26-000002",
-   "0002104631-26-000018",
    "0000923738-26-000048",
    "0002043764-26-000008",
+   "0001437749-26-034035",
    "0000905874-26-000003",
    "0000944075-26-000076",
+   "0001437749-26-034040",
    "0000950103-26-016449",
+   "0001437749-26-034038",
    "0001193125-26-438274",
-   "0000899140-26-001161",
    "0000897069-26-001877",
    "0000724004-26-000098"
   ],
