@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "6aaf17c2574d467c": "2026-10-27T08:53:09.257689+00:00",
-  "81c2a87ec2a4ae4c": "2026-10-27T08:53:09.257689+00:00",
   "6ccfaf91462aec62": "2026-10-27T09:03:09.243048+00:00",
   "99af505cf927c8b0": "2026-10-27T09:08:09.258046+00:00",
   "1475d73d1d7dc701": "2026-10-27T09:08:09.258046+00:00",
@@ -1117,24 +1115,12 @@
   "0e621910e6540751": "2026-10-30T08:29:40.188359+00:00",
   "1900f392f00e2d60": "2026-10-30T08:34:40.230270+00:00",
   "833b17bee41e4ac2": "2026-10-30T08:34:40.230270+00:00",
-  "a271bafb2b1f8e23": "2026-10-30T08:39:40.239136+00:00"
+  "a271bafb2b1f8e23": "2026-10-30T08:39:40.239136+00:00",
+  "0c70ded9f2b6700e": "2026-10-30T08:59:40.298649+00:00",
+  "2d9a9feb978dcb90": "2026-10-30T08:59:40.298649+00:00",
+  "b36f7ba6b40e53fd": "2026-10-30T08:59:40.298649+00:00"
  },
  "recent": [
-  {
-   "title": "Indian shares muted as oil stays near 6-month high, Fed rate decision in focus",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPcms4SkRwSDBJVER3QkV1VmoyX1pvTUlrcjRpSk4xSmNLNFZYNjh3Vi1LMGNfUnZPYnVscDdQZl9Xa0d4SHhKM1lDLXItNWh0aWMxNThJeVpMOEsxWXYwNUVXSWMtVWZRZjRRQlFUYk9tRUZxRUR1MWo0QUdPVE9TdzFnWDk0Qzd3NDZfYml4cGdSenVORGpfUTB6RTMyRV9BRmowWERaeWdsSFVLUU0zdFl3?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 8,
-   "ts": "2026-10-27T08:53:09.257689+00:00",
-   "title_ru": "Индийские акции приглушились, поскольку нефть остается вблизи 6-месячного максимума, решение по ставке ФРС в центре внимания",
-   "tags": [
-    "Fed",
-    "rates",
-    "oil"
-   ]
-  },
   {
    "title": "October 2026 euro area bank lending survey",
    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261027~506ef03145.en.html",
@@ -11844,6 +11830,31 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "UK Wins Back Bond Investors With Dose of Fiscal Restraint",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/uk-wins-back-bond-investors-with-dose-of-fiscal-restraint",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T08:59:40.298649+00:00",
+   "title_ru": "Великобритания возвращает инвесторов в облигации дозой бюджетных ограничений",
+   "lead": "The rehabilitation of the UK bond market took another step forward as Prime Minister Andy Burnham’s debut budget reassured investors this week, sending yields to a five-week low.",
+   "lead_ru": "Восстановление рынка облигаций Великобритании сделало еще один шаг вперед, поскольку дебютный бюджет премьер-министра Энди Бернхэма на этой неделе успокоил инвесторов, отправив доходность до пятинедельного минимума.",
+   "tags": [
+    "bonds"
+   ]
+  },
+  {
+   "title": "Anthropic’s $100 Billion Mission Is the Whole Market Now",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxORzJ4dTF2TEtfTV9RYm1DWjUxQmRCLWpNenJJQTBFTERpdl9veUF6ZEpHR0s4NmNmdjRaai1tOXh0a05vQWs1SHZDdHlxclFGNVJIZHdqSkM5T3dXMzJKMXpoRHRKRWhFRGluRDZ1ZXoyamkyX01wdUJGU1U3UV90LXJ5R0tCZEduSXR1Y1dlbHowVjJLX1V6eGtNT3dDcHpUVGdqZl85MDhmTHRVbEFFRW5Rb0pHbTVCZlpZ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T08:59:40.298649+00:00",
+   "title_ru": "Миссия Anthropic стоимостью 100 миллиардов долларов теперь охватывает весь рынок"
   }
  ],
  "last_digest": "2026-10-29",
