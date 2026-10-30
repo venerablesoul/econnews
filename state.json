@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "89055277427fc195": "2026-10-27T12:18:42.892543+00:00",
-  "0cc82704fe51d000": "2026-10-27T12:18:42.892543+00:00",
-  "83468a86b2652ff3": "2026-10-27T12:18:42.892543+00:00",
-  "07203f589a75e41a": "2026-10-27T12:23:42.942253+00:00",
   "51a1255c651c1d05": "2026-10-27T12:33:42.901988+00:00",
   "5ad39845e4d34e98": "2026-10-27T12:33:42.901988+00:00",
   "25bf0e01e20fa47b": "2026-10-27T12:33:42.901988+00:00",
@@ -1122,52 +1118,10 @@
   "fb1232e10a7991cd": "2026-10-30T12:00:10.607716+00:00",
   "6c61c312ee3ccbbf": "2026-10-30T12:05:10.463149+00:00",
   "8a516f581745cc9b": "2026-10-30T12:10:10.535394+00:00",
-  "fe9884346c9dbe13": "2026-10-30T12:15:10.519024+00:00"
+  "fe9884346c9dbe13": "2026-10-30T12:15:10.519024+00:00",
+  "221e7a2180b9eaee": "2026-10-30T12:25:10.461981+00:00"
  },
  "recent": [
-  {
-   "title": "Euro zone lending holds up even as banks tighten access",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOSTVRX3RFXzBXNURmRTI5VjlMOGVEM3VZaW5sM3RKeGtvcXNONWVzMjBiWG1NdldLdmpMalVyTjNOUmlkWnhXZEprVE9zRnIwUkRSbHo3bTRXb3B6WHQ1WDJwLU9QYWVjcVJmWHZIUjJ1dnZpeDdfQWttZVo1QnZ4djhDakE3dHBsLUhKZTlDOWpaTUNvMDVuX1pFMU1xd2JubGh3YlM1a2huQQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-27T12:18:42.892543+00:00",
-   "title_ru": "Кредитование еврозоны сохраняется, даже несмотря на то, что банки ужесточают доступ"
-  },
-  {
-   "title": "US stock futures muted as oil holds near April highs ahead of Fed decision",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNR21qQWZsLUZqbWRjR2YtQ3FGakpEWWVjSUVFNjVDSi01MnRiWmV3Z2pPQUsyVGhJR3UxQ1o4RjRVa2tCLXNXbnJjNE9fbE5KVzlKTEZtNHpZb3lPR0hXcFFSVGVydlpnR3RQdVM5bDE3aVI3aVowN0NqY3NHb3VDN3hlaXpLTmxkeFc3NE13dUNqYUtIMHNxRFR5M3VYZmpKUDRzVE5WLUdwRHJCeEpQM1pKaw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-27T12:18:42.892543+00:00",
-   "title_ru": "Фьючерсы на акции США снизились, поскольку нефть держится вблизи апрельских максимумов в преддверии решения ФРС",
-   "tags": [
-    "Fed",
-    "oil"
-   ]
-  },
-  {
-   "title": "PayPal raises 2026 profit forecast as turnaround gains traction",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPWWw1WXExaHRRdW0xNk5WUENBWXRnNUg3ajZvVElQYnZPR0c3dHRPUkw0X2hMcFlpWVRfSF94OXU1YjZXMDdMOW5vWEVWUDVIbDNHNmJyYS1CRHBxVzQ4TWJadnNCRXJfN3Q0X2JjdElYRDRWbjlQSDdRMmxfYkZMZnUxemUyeVBNRTg5REZPQnh0TnNiTl90Y2dmdmltVmNUUmVCRkkyUUw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T12:18:42.892543+00:00",
-   "title_ru": "PayPal повышает прогноз прибыли на 2026 год по мере того, как реструктуризация набирает обороты"
-  },
-  {
-   "title": "Global alarm over AI: World Bank President Banga speaks to CNBC",
-   "link": "https://www.cnbc.com/2026/10/27/world-bank-president-ajay-banga.html",
-   "sources": [
-    "CNBC"
-   ],
-   "score": 2,
-   "ts": "2026-10-27T12:23:42.942253+00:00"
-  },
   {
    "title": "Путин объяснил, как можно стабилизировать ситуацию на мировом рынке газа",
    "link": "https://www.rbc.ru/rbcfreenews/6ae0964e13c1eb13d6b9a0b8",
@@ -11981,7 +11935,7 @@
   "2026-10-30-09"
  ],
  "calendar": {
-  "fetched": "2026-10-30T06:24:40.196426+00:00",
+  "fetched": "2026-10-30T12:25:10.461981+00:00",
   "events": [
    {
     "title": "Bank Holiday",
@@ -12568,14 +12522,6 @@
     "previous": "6.1%"
    },
    {
-    "title": "BOJ Press Conference",
-    "country": "JPY",
-    "ts": "2026-10-30T05:30:00+00:00",
-    "impact": "High",
-    "forecast": "",
-    "previous": ""
-   },
-   {
     "title": "French Consumer Spending m/m",
     "country": "EUR",
     "ts": "2026-10-30T06:30:00+00:00",
@@ -12590,6 +12536,14 @@
     "impact": "Low",
     "forecast": "0.1%",
     "previous": "0.2%"
+   },
+   {
+    "title": "BOJ Press Conference",
+    "country": "JPY",
+    "ts": "2026-10-30T06:30:00+00:00",
+    "impact": "High",
+    "forecast": "",
+    "previous": ""
    },
    {
     "title": "German Import Prices m/m",
