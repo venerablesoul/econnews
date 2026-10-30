@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "a40d64394e1aa2f8": "2026-10-27T07:33:09.239177+00:00",
-  "beeb61653611b20a": "2026-10-27T07:33:09.239177+00:00",
-  "ccfb4ad285261a02": "2026-10-27T07:33:09.239177+00:00",
-  "bb8b442ebc622117": "2026-10-27T07:33:09.239177+00:00",
   "57aaa8f55449f157": "2026-10-27T07:43:09.280588+00:00",
   "0dc2830752113b29": "2026-10-27T07:43:09.280588+00:00",
   "b72c025ea7b050dd": "2026-10-27T07:43:09.280588+00:00",
@@ -1118,47 +1114,10 @@
   "0ae05c65d70e2947": "2026-10-30T07:24:40.225378+00:00",
   "9da5d36257b3e643": "2026-10-30T07:24:40.225378+00:00",
   "b00a6aa99d6faf9f": "2026-10-30T07:24:40.225378+00:00",
-  "165308cbc7e7bb81": "2026-10-30T07:29:40.231583+00:00"
+  "165308cbc7e7bb81": "2026-10-30T07:29:40.231583+00:00",
+  "e4239707bd87c056": "2026-10-30T07:34:40.288000+00:00"
  },
  "recent": [
-  {
-   "title": "HSBC Earnings: Profit Jump and $1 Billion Buyback Fall Short of Investors Hopes",
-   "link": "https://www.bloomberg.com/news/newsletters/2026-10-27/hsbc-earnings-profit-jump-and-1-billion-buyback-fall-short-of-investors-hopes",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-27T07:33:09.239177+00:00",
-   "title_ru": "Прибыль HSBC: скачок прибыли и обратный выкуп на $ 1 млрд не оправдали надежд инвесторов"
-  },
-  {
-   "title": "French Banks to Face Investor Scrutiny Over Risks from Turmoil",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-27/french-banks-to-face-investor-scrutiny-over-risks-from-turmoil",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T07:33:09.239177+00:00",
-   "title_ru": "Французские банки столкнутся с пристальным вниманием инвесторов к рискам, связанным с потрясениями",
-   "lead": "French lenders will face heightened scrutiny over turmoil in the country when they present third-quarter earnings this week, with investors focused on their sovereign bond holdings and risks from a potential slowdown in the…",
-   "lead_ru": "Французские кредиторы столкнутся с повышенным вниманием к суматохе в стране, когда они представят доходы за третий квартал на этой неделе, а инвесторы сосредоточатся на своих суверенных облигациях и рисках от потенциального замедления темпов роста...",
-   "tags": [
-    "bonds"
-   ]
-  },
-  {
-   "title": "China Property Woes Bring Strains to Huafa’s $62 Billion of Debt",
-   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQWUtaYzRXdEltRFIzY3RFd1J6aTF4cXRYV1hkeDhieXJOVzU5RUFXRkEyX2xZQk9KcUtyRG9NOTd6ZTFXUTB4WGNjeUh4YzhkOEF5c253UV9iU3RWREpObUtYUms4NGIxNHB4VFBzRXg1Zmx3QUxuMS1WOGpDRDVBbnlKaTFKSGdrMDFxTDhyU3gyenVPdnpWaXNVLVplVkhLUkZsVWFSWEFjTUgwU2tmS3BXRHNjeUUwZTZRWDdVOGV0T0pwWWl4dw?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T07:33:09.239177+00:00",
-   "title_ru": "Проблемы с недвижимостью в Китае создают напряженность для долга Huafa в $ 62 млрд",
-   "tags": [
-    "China"
-   ]
-  },
   {
    "title": "No pressure from US to cut Russian oil imports, Indian oil minister says",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNV2RTRUViV01oOW1kdndvVWFsbGFMYzJNRWE1ZjloY19FMGRmUVozY3lQOG5Tck9PbDM4WGJnV0dLSG5CeEtvd3ZXd2NVR0UwbHdnT1FDbTFXczhDVkYwbVpXSVh1T21reUgxNHdXNVFpTkF3cFJiSkRkSlVlUDRrTW9TSzR0WnpmVF9tR24yWnlNUmtuQTNEdUdUc05Xcnd3NjB6OERDQmJ2dHpWRGk5VVRTUmE2QQ?oc=5",
@@ -11913,6 +11872,18 @@
     "dollar",
     "bonds"
    ]
+  },
+  {
+   "title": "UK House Prices Stagnant as Mortgage Costs Bite, Nationwide Says",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/uk-house-prices-stagnant-as-mortgage-costs-bite-nationwide-says",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T07:34:40.288000+00:00",
+   "title_ru": "Цены на жилье в Великобритании стагнируют из-за укуса ипотеки, говорят в стране",
+   "lead": "UK house prices failed to grow in October, according to one of the country’s largest mortgage lenders, as surging mortgage costs took their toll on prospective buyers.",
+   "lead_ru": "По словам одного из крупнейших ипотечных кредиторов страны, в октябре цены на жилье в Великобритании не выросли, поскольку растущие расходы на ипотеку сказались на потенциальных покупателях."
   }
  ],
  "last_digest": "2026-10-29",
@@ -18599,7 +18570,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-30T06:34:40.260538+00:00",
+  "checked": "2026-10-30T07:34:40.288000+00:00",
   "sec_seen": [
    "0001778564-26-000195",
    "0001857843-26-000030",
@@ -18608,8 +18579,8 @@
    "0001178579-26-000022",
    "0001437749-26-034034",
    "0000944075-26-000076",
-   "0000944075-26-000077",
    "0001392942-26-000016",
+   "0000944075-26-000077",
    "0001628280-26-068337",
    "0000944075-26-000075",
    "0000944075-26-000079",
