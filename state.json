@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "0929b06118987ed6": "2026-10-27T09:48:09.257280+00:00",
-  "1806dfa4cadc8a6b": "2026-10-27T09:53:09.324419+00:00",
-  "4606b04e0c415d0d": "2026-10-27T09:53:09.324419+00:00",
   "c0e21091e1b87d61": "2026-10-27T09:58:09.256702+00:00",
   "f799fc16289facdf": "2026-10-27T10:08:09.305870+00:00",
   "c2714ff1b9f3304a": "2026-10-27T10:13:09.253536+00:00",
@@ -1125,24 +1122,11 @@
   "9b0a39112206ab5a": "2026-10-30T09:34:40.342182+00:00",
   "39143439268db7ab": "2026-10-30T09:34:40.342182+00:00",
   "7be33f3d0437e736": "2026-10-30T09:34:40.342182+00:00",
-  "4cb683b8274ce260": "2026-10-30T09:44:40.373850+00:00"
+  "4cb683b8274ce260": "2026-10-30T09:44:40.373850+00:00",
+  "e079f10b2f3aaded": "2026-10-30T09:54:40.213657+00:00",
+  "07c6f72994d52813": "2026-10-30T09:54:40.213657+00:00"
  },
  "recent": [
-  {
-   "title": "Bond Market Gives Initial Nod to Serbia’s Untested Ballot Winner",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-27/bond-market-gives-initial-nod-to-serbia-s-untested-ballot-winner",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T09:53:09.324419+00:00",
-   "title_ru": "Рынок облигаций отдает первоначальный дань уважения непроверенному победителю голосования в Сербии",
-   "lead": "Fixed-income investors are giving the benefit of the doubt to an opaque protest force which won power in Serbia on a pledge to root out corruption and strengthen democratic standards.",
-   "lead_ru": "Инвесторы с фиксированным доходом ставят под сомнение непрозрачную протестную силу, которая завоевала власть в Сербии, пообещав искоренить коррупцию и укрепить демократические стандарты.",
-   "tags": [
-    "bonds"
-   ]
-  },
   {
    "title": "India’s Green Aviation Push Gives Waste Cooking Oil New Life",
    "link": "https://www.bloomberg.com/news/videos/2026-10-27/india-s-green-aviation-push-gives-waste-cooking-oil-new-life",
@@ -11925,6 +11909,22 @@
    "title_ru": "Фьючерсы на Nasdaq падают, поскольку результаты Amazon и Intel усугубляют проблемы с расходами на ИИ",
    "tags": [
     "markets"
+   ]
+  },
+  {
+   "title": "ECB to Act Decisively If Needed to Tame Inflation, Nagel Says",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/ecb-to-act-decisively-if-needed-to-tame-inflation-nagel-says",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-30T09:54:40.213657+00:00",
+   "title_ru": "ЕЦБ будет действовать решительно, если потребуется обуздать инфляцию, говорит Нагель",
+   "lead": "The European Central Bank will take decisive action if needed to bring inflation back to target, Governing Council member Joachim Nagel said.",
+   "lead_ru": "Европейский центральный банк при необходимости предпримет решительные действия, чтобы вернуть инфляцию к целевому уровню, заявил член Управляющего совета Йоахим Нагель.",
+   "tags": [
+    "ECB",
+    "inflation"
    ]
   }
  ],
