@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "92765ebf721365f2": "2026-10-27T18:19:40.895694+00:00",
   "b287608c731d6e18": "2026-10-27T19:04:40.985726+00:00",
   "2b709e1d49cd541b": "2026-10-27T19:19:40.956304+00:00",
   "7f3c8aed318b369f": "2026-10-27T19:19:40.956304+00:00",
@@ -1136,21 +1135,6 @@
   "5766ffdcb4e3eeac": "2026-10-30T18:15:57.387490+00:00"
  },
  "recent": [
-  {
-   "title": "Budget 2026: six charts that reveal the economic realities facing the chancellor",
-   "link": "https://www.theguardian.com/uk-news/2026/oct/27/budget-2026-six-charts-underpin-chancellor-decisions-john-healey",
-   "sources": [
-    "The Guardian"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T18:19:40.895694+00:00",
-   "title_ru": "Бюджет-2026: шесть диаграмм, раскрывающих экономические реалии, стоящие перед канцлером",
-   "lead": "From tackling the youth jobs crisis to repairing Brexit’s economic damage, John Healey has his work cut out for him John Healey will deliver his first budget on Wednesday as UK households and businesses come under pressure from…",
-   "lead_ru": "Джон Хили представит свой первый бюджет в среду, поскольку британские домохозяйства и предприятия находятся под давлением со стороны…",
-   "tags": [
-    "jobs"
-   ]
-  },
   {
    "title": "NYSE moves to bring all-or-nothing options to stocks and company earnings",
    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOOGhCS0RLa1ctTWJndGN2ZmVuX09pTTV0LXQxcnF1T2ZLUGZUTndKS19vYTZ2NFExT09tODNiX1pYZnlHUGxrZU9OQ2ItMXFUbVhORnVid3BhQjFScFk5S2VsWWNxYl8xVDg1RlBLaHdHM1loRm9zemRwVUtLamNhSkhVTTlyalQ3aERaS0RwUXZkZTVUSTBjVnRmaGh5WVk0SmJ4VlhlY3Y4QTM3RVpPNUhYOEMtdUE?oc=5",
@@ -12164,7 +12148,7 @@
   "2026-10-30-21"
  ],
  "calendar": {
-  "fetched": "2026-10-30T12:25:10.461981+00:00",
+  "fetched": "2026-10-30T18:25:57.454892+00:00",
   "events": [
    {
     "title": "Bank Holiday",
@@ -12922,6 +12906,14 @@
     "title": "FOMC Member Musalem Speaks",
     "country": "USD",
     "ts": "2026-10-30T16:30:00+00:00",
+    "impact": "Low",
+    "forecast": "",
+    "previous": ""
+   },
+   {
+    "title": "FOMC Member Logan Speaks",
+    "country": "USD",
+    "ts": "2026-10-30T17:30:00+00:00",
     "impact": "Low",
     "forecast": "",
     "previous": ""
@@ -14809,6 +14801,22 @@
     "date": "2026-10-29",
     "disclosed": "2026-10-30",
     "link": "https://www.sec.gov/Archives/edgar/data/2116974/000211697426000005/0002116974-26-000005-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "1cfd06de520f76c6",
+    "ticker": "FFIN",
+    "company": "FIRST FINANCIAL BANKSHARES INC",
+    "who": "Michael B. Denny",
+    "role": "Director",
+    "type": "buy",
+    "value": 99816,
+    "shares": 3245,
+    "price": 30.76,
+    "plan": false,
+    "date": "2026-10-29",
+    "disclosed": "2026-10-30",
+    "link": "https://www.sec.gov/Archives/edgar/data/1774246/000119312526441381/0001193125-26-441381-index.htm"
    },
    {
     "src": "sec",
@@ -18745,22 +18753,6 @@
     "date": "2026-10-21",
     "disclosed": "2026-10-23",
     "link": "https://www.sec.gov/Archives/edgar/data/1397350/000008631226000190/0000086312-26-000190-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "b92e8ff12616951a",
-    "ticker": "RENT",
-    "company": "Rent the Runway, Inc.",
-    "who": "Capital Management Lp Nexus et al.",
-    "role": "Director, 10% owner",
-    "type": "buy",
-    "value": 2246873,
-    "shares": 632922,
-    "price": 3.55,
-    "plan": false,
-    "date": "2026-10-21",
-    "disclosed": "2026-10-23",
-    "link": "https://www.sec.gov/Archives/edgar/data/2093669/000101297526000981/0001012975-26-000981-index.htm"
    }
   ],
   "docs": {
@@ -18802,9 +18794,10 @@
   "checked": "2026-10-30T17:50:57.788325+00:00",
   "sec_seen": [
    "0001736209-26-000011",
+   "0001193125-26-441381",
    "0002093300-26-000004",
-   "0002116974-26-000005",
-   "0001801785-26-000008",
+   "0001437749-26-034158",
+   "0000780571-26-000235",
    "0001628280-26-068526"
   ],
   "errors": {
