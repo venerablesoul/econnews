@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "3fed3fc31860b570": "2026-10-27T06:42:36.861470+00:00",
   "b2bc7b404cf954c0": "2026-10-27T06:47:36.860083+00:00",
   "7dd3ea067e14d6aa": "2026-10-27T06:48:13.211549+00:00",
   "d1b46a9b0f3a0d43": "2026-10-27T06:53:09.254698+00:00",
@@ -1111,22 +1110,12 @@
   "2f7b33f120d03be0": "2026-10-30T06:04:40.247700+00:00",
   "ef8f97356160e4e6": "2026-10-30T06:09:40.224746+00:00",
   "55d8ec8e0bb5cd35": "2026-10-30T06:39:40.261517+00:00",
-  "be0ae030c17e3612": "2026-10-30T06:39:40.261517+00:00"
+  "be0ae030c17e3612": "2026-10-30T06:39:40.261517+00:00",
+  "f52f7e257d1c2f8c": "2026-10-30T06:44:40.174003+00:00",
+  "05a7f6441af8f319": "2026-10-30T06:44:40.174003+00:00",
+  "47c9f771a089ea14": "2026-10-30T06:44:40.174003+00:00"
  },
  "recent": [
-  {
-   "title": "COMMENTARY: Canada takes a page from the Saudi oil playbook",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPLVdYZEhQeFB6N3hoajA4RFZvLURrQWJNV0t5Sm5sMWxtVGN4VTRRRmpSSnpOOFNOUF90ZGdqX19MSk9RdWJzN0FiaU1tVlZEeE12UTAxajROdVZOeUFCT1VVNUtSZHJHTV9jd1o3d0VTMXBQcHpmTGpqdi1BenBvbVVnT09UOUZ1c2RvYXlSdlRSVzFiM3g0Y3MtV0EtR2dPTlVtbVdCNUY?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T06:42:36.861470+00:00",
-   "title_ru": "КОММЕНТАРИЙ: Канада берет страницу из нефтяного сценария Саудовской Аравии",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "HSBC quarterly profit jumps but shares slide after flat revenue for wealth business",
    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQcVZVOUw4UjhITVVsZ1psYmQ4Tkwta1lJSGl1OVRkemlLQzJZZWNRXzBEV1NDU0FNR3VyWGh5eE1SR1QyOUlKcWJpSHdRdDltYmxzc0NUX3dEZktFWVY2eUhWcDl4Y2JLUDhtdTJwbUFIckNnUjhiTDR3ZGVBS2VmZXFrenQ5SW1QOTFNUUVhaEdOck9fNml1R05HRkJiOVppV2cxWWxjX21wM2hr?oc=5",
@@ -11848,6 +11837,53 @@
    "tags": [
     "gold"
    ]
+  },
+  {
+   "title": "Lagarde’s early departure triggers race to solve three-way ECB puzzle",
+   "link": "https://www.ft.com/content/9c46421e-d23c-4674-80ad-4cf63897d22e?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 6,
+   "ts": "2026-10-30T06:44:40.174003+00:00",
+   "title_ru": "Ранний уход Лагард запускает гонку по решению трехсторонней головоломки ECB",
+   "lead": "Also in this newsletter: the cyber threat from North Korea",
+   "lead_ru": "Также в этом информационном бюллетене: киберугроза со стороны Северной Кореи",
+   "tags": [
+    "ECB"
+   ]
+  },
+  {
+   "title": "Bank of Japan says 2% inflation goal reached after decades of deflation",
+   "link": "https://www.ft.com/content/874acd68-948c-44e6-be8d-a509d6d133fa?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 6,
+   "ts": "2026-10-30T06:44:40.174003+00:00",
+   "title_ru": "Банк Японии говорит, что цель инфляции в 2% достигнута после десятилетий дефляции",
+   "lead": "Japanese central bank holds interest rates as expectations mount for December increase",
+   "lead_ru": "Центральный банк Японии удерживает процентные ставки по мере роста ожиданий в декабре",
+   "tags": [
+    "rates",
+    "inflation"
+   ]
+  },
+  {
+   "title": "Central Asia’s Fastest Growing Economy Plans Yuan Bond in 2027",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/central-asia-s-fastest-growing-economy-plans-yuan-bond-in-2027",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-30T06:44:40.174003+00:00",
+   "title_ru": "Самая быстрорастущая экономика Центральной Азии планирует выпуск облигаций в юанях в 2027 году",
+   "lead": "Kyrgyzstan plans to debut a yuan-denominated bond next year as Central Asia’s fastest growing economy continues to expand its banking system and build on its status as a regional transport hub on the former Silk Road.",
+   "lead_ru": "Кыргызстан планирует выпустить облигации в юанях в следующем году, поскольку самая быстрорастущая экономика Центральной Азии продолжает расширять свою банковскую систему и укреплять свой статус регионального транспортного узла на бывшем Шелковом пути.",
+   "tags": [
+    "bonds",
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -18543,8 +18579,8 @@
    "0001178579-26-000022",
    "0001437749-26-034034",
    "0000944075-26-000076",
-   "0000944075-26-000077",
    "0001392942-26-000016",
+   "0000944075-26-000077",
    "0001628280-26-068337",
    "0000944075-26-000075",
    "0000944075-26-000079",
