@@ -1134,7 +1134,9 @@
   "82297753eb7124b3": "2026-10-30T17:55:57.411989+00:00",
   "5766ffdcb4e3eeac": "2026-10-30T18:15:57.387490+00:00",
   "afa1a9b94de69d30": "2026-10-30T18:30:57.623229+00:00",
-  "de6dcdb9275a03f7": "2026-10-30T18:30:57.623229+00:00"
+  "de6dcdb9275a03f7": "2026-10-30T18:30:57.623229+00:00",
+  "cfc725c4d274fc07": "2026-10-30T18:35:57.402164+00:00",
+  "8429338684854a06": "2026-10-30T18:35:57.402164+00:00"
  },
  "recent": [
   {
@@ -12114,6 +12116,36 @@
    "tags": [
     "bonds"
    ]
+  },
+  {
+   "title": "Colombia Pauses Interest Rate Rises as Economy Starts to Weaken",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/colombia-pauses-interest-rate-rises-as-economy-starts-to-weaken",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 7,
+   "ts": "2026-10-30T18:35:57.402164+00:00",
+   "title_ru": "Колумбия приостанавливает повышение процентных ставок, поскольку экономика начинает ослабевать",
+   "lead": "Colombia halted interest rate increases as signs of an economic slowdown offset fears over accelerating inflation.",
+   "lead_ru": "Колумбия приостановила повышение процентных ставок, поскольку признаки экономического спада компенсировали опасения по поводу ускорения инфляции.",
+   "tags": [
+    "rates",
+    "inflation"
+   ]
+  },
+  {
+   "title": "Fed needs at least two more rate hikes, Logan says",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPN0l1dXR6NGI2OV9OZGVkZHRFdzNqcVBnSGRFamxWZlNaZTNsQmdIbXRHVXc5VE9FZzcyWUI4YU5hai1VZlVtY2ZsQTh0VDgxYmtJT1V3X0NvUEZvRjBDT2VaQUdaeDdIWkZ5MlhraUdTVHJYSlM3RFVzU3lVNjctTzU2eFMzNk5kbDBIWlR2RWJ0NkQ2Znc?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-30T18:35:57.402164+00:00",
+   "title_ru": "ФРС нужно как минимум еще два повышения ставок, говорит Логан",
+   "tags": [
+    "Fed",
+    "rates"
+   ]
   }
  ],
  "last_digest": "2026-10-30",
@@ -14773,6 +14805,22 @@
   "insiders": [
    {
     "src": "sec",
+    "id": "dee9659a410d4d01",
+    "ticker": "OCFC",
+    "company": "OCEANFIRST FINANCIAL CORP",
+    "who": "Patrick Sean Barrett",
+    "role": "CFO",
+    "type": "buy",
+    "value": 89500,
+    "shares": 5000,
+    "price": 17.9,
+    "plan": false,
+    "date": "2026-10-30",
+    "disclosed": "2026-10-30",
+    "link": "https://www.sec.gov/Archives/edgar/data/1591893/000159189326000006/0001591893-26-000006-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "cd1ac31895a412b7",
     "ticker": "WRLD",
     "company": "WORLD ACCEPTANCE CORP",
@@ -14834,6 +14882,22 @@
     "date": "2026-10-29",
     "disclosed": "2026-10-30",
     "link": "https://www.sec.gov/Archives/edgar/data/1774246/000119312526441381/0001193125-26-441381-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "bfb336192df332ff",
+    "ticker": "PKBK",
+    "company": "PARKE BANCORP, INC.",
+    "who": "Vito S Pantilione",
+    "role": "CEO",
+    "type": "buy",
+    "value": 42718,
+    "shares": 1300,
+    "price": 32.86,
+    "plan": false,
+    "date": "2026-10-29",
+    "disclosed": "2026-10-30",
+    "link": "https://www.sec.gov/Archives/edgar/data/1323979/000143774926034164/0001437749-26-034164-index.htm"
    },
    {
     "src": "sec",
@@ -18738,38 +18802,6 @@
     "date": "2026-10-21",
     "disclosed": "2026-10-23",
     "link": "https://www.sec.gov/Archives/edgar/data/1597870/000159787026000021/0001597870-26-000021-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "2db987daaa2ea7a5",
-    "ticker": "RENT",
-    "company": "Rent the Runway, Inc.",
-    "who": "Capital Partners, Llc Story3 et al.",
-    "role": "Director, 10% owner",
-    "type": "buy",
-    "value": 2246873,
-    "shares": 632922,
-    "price": 3.55,
-    "plan": false,
-    "date": "2026-10-21",
-    "disclosed": "2026-10-23",
-    "link": "https://www.sec.gov/Archives/edgar/data/2093762/000101297526000982/0001012975-26-000982-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "d04b6734a481f19c",
-    "ticker": "TRV",
-    "company": "TRAVELERS COMPANIES, INC.",
-    "who": "Alan D Schnitzer",
-    "role": "CEO",
-    "type": "sell",
-    "value": 35273172,
-    "shares": 88900,
-    "price": 396.77,
-    "plan": false,
-    "date": "2026-10-21",
-    "disclosed": "2026-10-23",
-    "link": "https://www.sec.gov/Archives/edgar/data/1397350/000008631226000190/0000086312-26-000190-index.htm"
    }
   ],
   "docs": {
@@ -18810,14 +18842,14 @@
   },
   "checked": "2026-10-30T17:50:57.788325+00:00",
   "sec_seen": [
-   "0001736209-26-000011",
-   "0002093300-26-000004",
+   "0001193125-26-441381",
    "0001104659-26-120602",
    "0001437749-26-034162",
-   "0001628280-26-068526",
+   "0001591893-26-000006",
    "0001437749-26-034158",
    "0000780571-26-000235",
-   "0001193125-26-441381"
+   "0001437749-26-034164",
+   "0001628280-26-068526"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
