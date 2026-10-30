@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "960575cb1d3770a0": "2026-10-27T15:48:42.952993+00:00",
-  "f2b6fcc890f517f2": "2026-10-27T15:48:42.952993+00:00",
   "4b7af1d4a1539ce1": "2026-10-27T15:58:43.030029+00:00",
   "78a102de8c07387b": "2026-10-27T15:58:43.030029+00:00",
   "cebdd337c4a0285e": "2026-10-27T16:03:43.609452+00:00",
@@ -1124,37 +1122,11 @@
   "3422eaa5baf3e7c4": "2026-10-30T15:30:10.464001+00:00",
   "52304226943c0cab": "2026-10-30T15:30:10.464001+00:00",
   "2149d744404fa38e": "2026-10-30T15:35:10.550207+00:00",
-  "252501055041ded1": "2026-10-30T15:45:10.711069+00:00"
+  "252501055041ded1": "2026-10-30T15:45:10.711069+00:00",
+  "908c534e462dbf27": "2026-10-30T15:55:10.542544+00:00",
+  "ed2ceefe5d3c5eb8": "2026-10-30T15:55:10.542544+00:00"
  },
  "recent": [
-  {
-   "title": "Pork Slump Worsens as High Gas Prices Curb Road Trip Pit Stops",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-27/pork-slump-worsens-as-high-gas-prices-curb-road-trip-pit-stops",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T15:48:42.952993+00:00",
-   "title_ru": "Снижение спроса на свинину ухудшается, поскольку высокие цены на бензин ограничивают количество пит-стопов в поездках",
-   "lead": "The US pork industry, already struggling with weak demand, is facing another blow: high gasoline prices.",
-   "lead_ru": "Свиноводство США, уже борющееся со слабым спросом, сталкивается с еще одним ударом: высокими ценами на бензин.",
-   "tags": [
-    "gas"
-   ]
-  },
-  {
-   "title": "Gold smuggling funds Islamic State-linked insurgency in eastern Congo, report says",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNMnhvbmdWV1pFaFhQNzVCM0JidlBvYTVSd2ppOENPdjVxT2tYcFA2c1ZjR2FIQ0I5VGtVUmo1SHBXWGJtRFhSXzdWd0Q0bjFLU0ZhdUxzb0pGSWRINFZYWUxmWFhERV9GMHA5SXN5WDQ5WVhPTHVVNmVfU2U3RDJJTC1WYVBFRGx3ZHVHMW41SnpsR0hkVGhUYkF0UGdfV0JsSVFBYUpsMDR5ZnNRV29Lb0h6bEthakZXSHpULURjZk1VNllvRWc?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T15:48:42.952993+00:00",
-   "title_ru": "Контрабанда золота финансирует связанное с «Исламским государством» повстанческое движение на востоке Конго, говорится в докладе",
-   "tags": [
-    "gold"
-   ]
-  },
   {
    "title": "Millennium Taps Prediction Markets Data in Hunt for Trading Edge",
    "link": "https://www.bloomberg.com/news/articles/2026-10-27/millennium-taps-prediction-markets-data-in-hunt-for-trading-edge",
@@ -11982,6 +11954,16 @@
    "tags": [
     "ECB"
    ]
+  },
+  {
+   "title": "Slower wage growth curbs US labor costs in third quarter",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQeEVXWHp4aVktd2NvQ0Z2QUtIbmtYLXZIZFhBVkwzY3E3NkQzaFpjNjFjMEpjbHdTaXlSaUE2b1BNN3FFSEJrWFhBTTRMU2tpWndlWjZXQ1l0M3JkWjZKQ3Q3UllZRmVjSTNNSTFUWTlxQUw4elhGRTNVNW9VMWRxMEVOQkUwX2Rsdmd5TGd4bFd1VUk?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T15:55:10.542544+00:00",
+   "title_ru": "Замедление роста заработной платы сдерживает затраты на рабочую силу в США в третьем квартале"
   }
  ],
  "last_digest": "2026-10-29",
@@ -18673,12 +18655,11 @@
    "0001493152-26-049383",
    "0002099112-26-000006",
    "0001964493-26-000010",
-   "0001225208-26-008558",
    "0000879526-26-000108",
+   "0001225208-26-008558",
    "0000879526-26-000107",
    "0001438566-26-000009",
-   "0002088410-26-000010",
-   "0001437749-26-034107"
+   "0002088410-26-000010"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
