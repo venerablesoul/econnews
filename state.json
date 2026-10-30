@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "8ce1a1ad86acab2a": "2026-10-27T10:48:09.247293+00:00",
   "b8c4260386d77fec": "2026-10-27T10:53:09.255229+00:00",
   "5f10190e782e392a": "2026-10-27T10:53:09.255229+00:00",
   "5158a546adaf3198": "2026-10-27T10:58:09.308573+00:00",
@@ -1135,26 +1134,12 @@
   "f48cb9fa0ed75666": "2026-10-30T10:34:40.417327+00:00",
   "86e446e4b0692f8a": "2026-10-30T10:39:40.343998+00:00",
   "e19fddc724b13425": "2026-10-30T10:44:40.383079+00:00",
-  "270e757683fcd0b2": "2026-10-30T10:44:40.383079+00:00"
+  "270e757683fcd0b2": "2026-10-30T10:44:40.383079+00:00",
+  "1e329fc55a8a180e": "2026-10-30T10:49:40.361499+00:00",
+  "632fec5b0f0c53ea": "2026-10-30T10:49:40.361499+00:00",
+  "30a6fe6b93678630": "2026-10-30T10:49:40.361499+00:00"
  },
  "recent": [
-  {
-   "title": "Bank of Canada Rate Hike Expected as Oil Prices at $115 Fuel Inflation Fears",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-27/bank-of-canada-rate-hike-expected-as-oil-prices-at-115-fuel-inflation-fears",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 11,
-   "ts": "2026-10-27T10:48:09.247293+00:00",
-   "title_ru": "Повышение ставки Банка Канады ожидается в связи с опасениями по поводу инфляции цен на нефть на уровне $ 115",
-   "lead": "The Bank of Canada is likely to hike interest rates for the first time in more than three years as policymakers grow increasingly concerned about the inflation risk posed by the cost of energy.",
-   "lead_ru": "Банк Канады, вероятно, повысит процентные ставки впервые за более чем три года, поскольку политики все больше обеспокоены инфляционным риском, связанным со стоимостью энергии.",
-   "tags": [
-    "rates",
-    "inflation",
-    "oil"
-   ]
-  },
   {
    "title": "Inflation and interest rates tracker: see how your country compares",
    "link": "https://www.ft.com/content/088d3368-bb8b-4ff3-9df7-a7680d4d81b2?syn-25a6b1a6=1",
@@ -12067,6 +12052,53 @@
    "score": 3,
    "ts": "2026-10-30T10:44:40.383079+00:00",
    "title_ru": "Германия отвергает «необоснованные» претензии в ссоре с Италией из-за хранения газа"
+  },
+  {
+   "title": "Strong Earnings Mask Growing Struggle With Inflation, Oil Prices",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/strong-earnings-mask-growing-struggle-with-inflation-oil-prices",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 10,
+   "ts": "2026-10-30T10:49:40.361499+00:00",
+   "title_ru": "Сильные доходы маскируют растущую борьбу с инфляцией и ценами на нефть",
+   "lead": "At first glance, the third-quarter earnings season is going great.",
+   "lead_ru": "На первый взгляд, сезон отчетности за третий квартал проходит отлично.",
+   "tags": [
+    "inflation",
+    "oil"
+   ]
+  },
+  {
+   "title": "Colombia Faces Close Rate Call as Economy Slows: Decision Guide",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/colombia-faces-close-rate-call-as-economy-slows-decision-guide",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-30T10:49:40.361499+00:00",
+   "title_ru": "Колумбии грозит близкая ставка по мере замедления экономики: руководство по принятию решений",
+   "lead": "Colombia’s central bank faces a tough decision on interest rates as stubborn inflation supports another hike while weak economic data argue for a pause.",
+   "lead_ru": "Центральный банк Колумбии сталкивается с трудным решением по процентным ставкам, поскольку устойчивая инфляция поддерживает новое повышение, а слабые экономические данные требуют паузы.",
+   "tags": [
+    "rates",
+    "inflation"
+   ]
+  },
+  {
+   "title": "Exxon Increases Stake in Mozambique Gas Project Via Eni Swap",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/exxon-increases-stake-in-mozambique-gas-project-via-eni-swap",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T10:49:40.361499+00:00",
+   "title_ru": "Exxon увеличивает долю в газовом проекте Мозамбика через обмен Eni",
+   "lead": "ExxonMobil Holdings Corp. increased its stake in the planned Rovuma liquefied natural gas project in Mozambique after a swap with Eni SpA.",
+   "lead_ru": "ExxonMobil Holdings Corp. увеличила свою долю в планируемом проекте по производству сжиженного природного газа Rovuma в Мозамбике после обмена с Eni SpA.",
+   "tags": [
+    "gas"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -18760,12 +18792,12 @@
    "0000711377-26-000037",
    "0001437749-26-034035",
    "0002141713-26-000007",
-   "0001437749-26-034034",
    "0001812730-26-000008",
    "0000711377-26-000035",
    "0001437749-26-034040",
    "0001437749-26-034042",
    "0002010135-26-000025",
+   "0000711377-26-000038",
    "0001711968-26-000027",
    "0001437749-26-034044",
    "0001646382-26-000026",
