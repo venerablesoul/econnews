@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "f4f2df2ccb5aad11": "2026-10-27T19:39:40.944101+00:00",
-  "963e11b4bc0cfa77": "2026-10-27T19:39:40.944101+00:00",
-  "9b0250365df09223": "2026-10-27T19:39:40.944101+00:00",
   "80b569dd368e358c": "2026-10-27T19:54:40.867572+00:00",
   "fbffce1618f71a4c": "2026-10-27T20:04:43.356827+00:00",
   "c1142ce7d5790d06": "2026-10-27T20:04:43.356827+00:00",
@@ -1140,38 +1137,10 @@
   "55b140b7b592b4c2": "2026-10-30T19:05:57.757394+00:00",
   "75f4fda082ce649e": "2026-10-30T19:15:57.449787+00:00",
   "55c927a9c2721998": "2026-10-30T19:25:57.448317+00:00",
-  "8d0386ce6a869e3b": "2026-10-30T19:35:57.362130+00:00"
+  "8d0386ce6a869e3b": "2026-10-30T19:35:57.362130+00:00",
+  "9bd14b503fcad369": "2026-10-30T19:45:57.448462+00:00"
  },
  "recent": [
-  {
-   "title": "Higher tariffs on Canadian imports would be 'catastrophic,' Honda exec says",
-   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOTldtRFI4Ni1TRHVGb3dzY1BvblpOVG0zMUNrSndrLUJBSHdnZWQtekdoSmM3cjRPN3N5UHRtQ0E2a0Z0M3NzOFRFTjliZW1XR3VoQjNIYTRMMktsaHZZVGFZdW41RUp2TnVhRFNzYS1RZmEzRERBVWhrTkRfQTF5YmxXTGRITVRfZlp3ZmtvLW5QblgyM3l1ZXhCVGd0Y1ROb0doaDN2WWI0Q25jNUlRS2xST2NlY1doVTRIdnZqUzg4UHpJZ21lS1BkdU5Xa2Q1?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-27T19:39:40.944101+00:00",
-   "title_ru": "Более высокие пошлины на канадский импорт будут «катастрофическими», говорит руководитель Honda",
-   "tags": [
-    "tariffs"
-   ]
-  },
-  {
-   "title": "FT узнала об обсуждении возвращения компаний США в нефтяной сектор России",
-   "link": "https://www.rbc.ru/business/27/10/2026/6ae0f9855751e43247107226",
-   "sources": [
-    "RBC"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T19:39:40.944101+00:00",
-   "title_en": "FT learned of discussions about the return of US companies to the Russian oil sector",
-   "lead": "Россия и США в рамках переговоров об урегулировании на Украине обсуждают возможное возвращение американских компаний в российский нефтяной сектор, сообщает Financial Times со ссылкой на источники, знакомые с вопросом.",
-   "lead_en": "Russia and the United States are discussing the possible return of American companies to the Russian oil sector as part of negotiations on a settlement in Ukraine, the Financial Times reports, citing sources familiar with the matter.",
-   "tags": [
-    "oil",
-    "Russia"
-   ]
-  },
   {
    "title": "PDVSA Bonds Deemed Valid in US Ruling Amid Battle for Citgo",
    "link": "https://www.bloomberg.com/news/articles/2026-10-27/pdvsa-bonds-deemed-valid-in-us-ruling-amid-battle-for-citgo",
@@ -12165,6 +12134,22 @@
    "tags": [
     "inflation"
    ]
+  },
+  {
+   "title": "The Fed held interest rates steady, but these officials see more hikes coming soon",
+   "link": "https://www.marketwatch.com/story/the-fed-held-interest-rates-steady-but-these-officials-see-more-hikes-coming-soon-2098bbd8?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 4,
+   "ts": "2026-10-30T19:45:57.448462+00:00",
+   "title_ru": "ФРС сохранила процентные ставки на стабильном уровне, но эти чиновники ожидают дальнейшего повышения в ближайшее время",
+   "lead": "Dallas Fed’s Lorie Logan sees “at least” 50 basis points in additional hikes.",
+   "lead_ru": "Лори Логан из ФРБ Далласа прогнозирует дополнительное повышение ставки «как минимум» на 50 базисных пунктов.",
+   "tags": [
+    "Fed",
+    "rates"
+   ]
   }
  ],
  "last_digest": "2026-10-30",
@@ -18922,13 +18907,9 @@
   },
   "checked": "2026-10-30T18:55:57.351368+00:00",
   "sec_seen": [
-   "0001184041-26-000006",
-   "0001628280-26-068545",
-   "0000073309-26-000133",
-   "0000711377-26-000042",
+   "0001697316-26-000014",
    "0001654954-26-009303",
-   "0001801785-26-000010",
-   "0001225208-26-008569",
+   "0001031203-26-000149",
    "0000711377-26-000043"
   ],
   "errors": {
