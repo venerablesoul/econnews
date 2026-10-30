@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "b9b3c4cfd3fc1fdf": "2026-10-27T13:43:42.948103+00:00",
-  "a4c3ca4fc5d73bd4": "2026-10-27T13:48:42.934406+00:00",
-  "1b62d48b41c4486f": "2026-10-27T13:48:42.934406+00:00",
-  "d770920134c064d8": "2026-10-27T13:48:42.934406+00:00",
-  "f0c81800b70d2727": "2026-10-27T13:48:42.934406+00:00",
   "3f56b058b59a39c1": "2026-10-27T13:53:42.974304+00:00",
   "01c348c1e88f69c7": "2026-10-27T13:53:42.974304+00:00",
   "c475bbb726e7beac": "2026-10-27T13:58:42.981947+00:00",
@@ -1131,49 +1126,10 @@
   "b1e458e053c33558": "2026-10-30T13:30:10.388228+00:00",
   "373dc41c1345f620": "2026-10-30T13:30:10.388228+00:00",
   "9f348fa448a355c2": "2026-10-30T13:35:10.536075+00:00",
-  "31f0a36af2a82e13": "2026-10-30T13:35:10.536075+00:00"
+  "31f0a36af2a82e13": "2026-10-30T13:35:10.536075+00:00",
+  "853707dc5c9c6fee": "2026-10-30T13:45:10.578588+00:00"
  },
  "recent": [
-  {
-   "title": "Kaplan on Raising Equity for Tech, Fed Decision",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-27/kaplan-on-raising-equity-for-tech-fed-decision-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T13:43:42.948103+00:00",
-   "title_ru": "Каплан о привлечении капитала для технологий, решение ФРС",
-   "lead": "Goldman Sachs Vice Chair and former Dallas Federal Reserve President Rob Kaplan talks about the bank's massive recent tech deals for financing, the Anthropic IPO, how artificial intelligence is impacting the job market and why…",
-   "lead_ru": "Вице-председатель Goldman Sachs и бывший президент Федеральной резервной системы Далласа Роб Каплан рассказывает о масштабных недавних технологических сделках банка по финансированию, антропном IPO, о том, как искусственный интеллект влияет на рынок труда и почему...",
-   "tags": [
-    "Fed"
-   ]
-  },
-  {
-   "title": "Oxfam: cверхбогатые получают двойную выгоду от климатического кризиса",
-   "link": "https://www.kommersant.ru/doc/9061928",
-   "sources": [
-    "Kommersant"
-   ],
-   "score": 5,
-   "ts": "2026-10-27T13:48:42.934406+00:00",
-   "title_en": "Oxfam: The super-rich are doubly benefiting from the climate crisis",
-   "lead": "Согласно новому докладу британского объединения благотворительных организаций Oxfam, сверхбогатые люди все больше зарабатывают на последствиях климатического кризиса.",
-   "lead_en": "According to a new report by the British charity Oxfam, the super-rich are increasingly making money from the effects of the climate crisis."
-  },
-  {
-   "title": "Healthcare Stocks Become Anti-AI Bet as Investors Turn Defensive",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQbF9lbndTOUYyb0hNX2VpWmxqUFlUTVUyc0VuUkR3SlF3WVBiX2YtcC1hRHlQRGcxODU1Q195Z2F6XzNpZ1VhT2VvTFdwNmVjazh6LWVyMjhZMmg2ZGFMaHN3RmlzbV9FUTZUMUFsY3BfMUFtTWpRaHNEM0V0U1ppYzF3UTVnQ09sLTQtdmVKcFNDcU1ENlpBaVpWeDlZZUZ3bnpjLTJzZUxRWTkwalBHRjI4MGxwUQ?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-27T13:48:42.934406+00:00",
-   "title_ru": "Акции здравоохранения становятся ставкой против ИИ, поскольку инвесторы начинают защищаться",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "High inflation to persist globally into next year, Reuters poll shows",
    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQSGlkNFRUdUxnaVVWLTVGV2pJeEdyQzVIUTBoak15M0dBVjMzcGZrV0NjMnVISDZud2U2RGdDcXc3NUZpSU5QNGtSS0xpc2F3QkR0Y05OOE00czlTSUV6ZUQ1V1Vrdk9BT2x6Qzk1a1IycThjeEJ0bk5MT3FjN0FxTEpvdFV1aEZ6MkRfTkJpbVU5eEZVdlhOVzdxVkJENXpjazlRVk0yZlROcTByLVluVXp0MA?oc=5",
@@ -18736,12 +18692,9 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-30T12:45:10.499097+00:00",
+  "checked": "2026-10-30T13:45:10.578588+00:00",
   "sec_seen": [
-   "0001493152-26-049356",
-   "0000902664-26-004313",
-   "0001193125-26-440015",
-   "0001493152-26-049370"
+   "0001193125-26-440015"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
