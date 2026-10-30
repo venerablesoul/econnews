@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "a48cb7ff463962dc": "2026-10-27T05:42:36.845375+00:00",
   "034f9f5db416b0bd": "2026-10-27T05:47:36.844704+00:00",
   "7ec9edb20ede2407": "2026-10-27T05:52:36.869861+00:00",
   "1ed50f99613827a2": "2026-10-27T06:02:36.866491+00:00",
@@ -1117,19 +1116,11 @@
   "c9d0c89212f5c7f5": "2026-10-30T05:34:13.604250+00:00",
   "6b30108cd8df2218": "2026-10-30T05:34:13.604250+00:00",
   "06fe5200083e6e17": "2026-10-30T05:34:13.604250+00:00",
-  "50d96a0891f4bc10": "2026-10-30T05:39:13.578652+00:00"
+  "50d96a0891f4bc10": "2026-10-30T05:39:13.578652+00:00",
+  "186752b3e19ce230": "2026-10-30T05:44:13.608753+00:00",
+  "87935142bc5262c2": "2026-10-30T05:44:13.608753+00:00"
  },
  "recent": [
-  {
-   "title": "PODCAST: The silver lining in Europe’s dark economic clouds",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNLWZ3Y1haZXZRODZVcHZLWktZejdLRVJEeW5ydDlGVVJrSTJCUjVYMWxYZFVqc1hCLVRCSlk5RDN1M0s2N3VYZ0pvZXh4VG5MbS1CMUxTSkdQeHk4NDBJTkR2bXZ4RUwyWXhfR3ZWdllWLWJWZXBZUzZId0NQMHBId21SVEJZa3FJX0hMSVg3OGJjZm5kekhSUzV0WHZCMW8wQWc?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T05:42:36.845375+00:00",
-   "title_ru": "ПОДКАСТ: Положительная сторона темных экономических облаков Европы"
-  },
   {
    "title": "EU seeks to widen market access to counter trade restrictions, Germany's Merz says",
    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQSkZSOUw3U0tLdEdHZUF4ckFzWXBYOTVzSThCRFU4a1B5dWFXSG9jLTNZanJGOXo1Q0ktS3FFeUpJMEpUMkhPOVl0RTVPalVrYlZOS0hGM09ISWxyMmZuVUE0dmp6RTEzZHA1N3BiUHRYbUw4eUw5WTdOZm9ZdWo3ZjBoQ1B4WlVqbVdMYW85TkFSSFY2SFI4MHA1OS1ZX0t6Z191MGEwRUkwOHRxQmtlYQ?oc=5",
@@ -11865,6 +11856,29 @@
     "rates",
     "ruble"
    ]
+  },
+  {
+   "title": "How ‘Shrugflation’ Explains the US Economy in 2026",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQTHhYczdYaFZBVnN5Rk4zbk5nenBPenlfYzZmbk1vTW9XSF9FYjROSDcxM09RdjltMWVtV0l3c1otYnR3ekhWMkJCeDNJTWJPb3RySjFpWEN1UV9xOVFEaVlLSndDQWZIa2FFOFVmZmtOZ2lkZWJMX0RUVnBoazlCTnN1NHVXZlRRODJ3aGZka0szZVhSaFVFQmtTc0h6aXlJQzdWRTFHdUl3RFZlUXJUVm9FNA?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T05:44:13.608753+00:00",
+   "title_ru": "Как «Shrugflation» объясняет экономику США в 2026 году"
+  },
+  {
+   "title": "Japan's Nikkei slumps 3% as tech stocks tumble on AI worries",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNQU9uNjhpN1dHMHNxdDR0SlBWa1VGV0Q5MkxrVWxKYWk0YWhtd2ZBZFM4dkYwaFNocVBfYmR2czM3VU9aUlV5SVMwRGtOWUJicTV4VFlZODRZRC1IMUw2aFZyYzcxUWpjWFNJbWY0YWFyaHJaRloxM1BWTlZzc1NzRkoyUm45aVNBM1hNODNWbkY4ZmpreWVmMXc4b2FGbkc5NzdWQkwwaWVCYm8?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T05:44:13.608753+00:00",
+   "title_ru": "Японский Nikkei упал на 3%, поскольку акции технологических компаний упали на опасениях по поводу ИИ",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -18554,8 +18568,8 @@
   "checked": "2026-10-30T05:34:13.604250+00:00",
   "sec_seen": [
    "0001437749-26-034036",
-   "0001437749-26-034032",
    "0001437749-26-034038",
+   "0001437749-26-034032",
    "0001895111-26-000021",
    "0001628280-26-068337",
    "0001437749-26-034042",
@@ -18566,8 +18580,8 @@
    "0001437749-26-034035",
    "0001140361-26-041201",
    "0001711968-26-000027",
-   "0001040470-26-000323",
    "0001437749-26-034040",
+   "0001040470-26-000323",
    "0000923738-26-000048",
    "0001193125-26-438480",
    "0000944075-26-000078",
