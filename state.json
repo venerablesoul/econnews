@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "cfa4e9896537763c": "2026-10-27T02:17:36.893588+00:00",
   "7aef388f63a4ac25": "2026-10-27T02:22:36.865049+00:00",
   "9cd98e9af450969a": "2026-10-27T02:27:36.864898+00:00",
   "73e56fe7c0128823": "2026-10-27T02:27:36.864898+00:00",
@@ -1092,25 +1091,13 @@
   "e2533c2072d3b27d": "2026-10-30T01:49:13.700984+00:00",
   "776571482bbae9ec": "2026-10-30T01:49:13.700984+00:00",
   "a27d45c34fde8667": "2026-10-30T01:59:13.682191+00:00",
-  "c82d90400c8fce36": "2026-10-30T02:14:13.634667+00:00"
+  "c82d90400c8fce36": "2026-10-30T02:14:13.634667+00:00",
+  "bbe63d13d663883d": "2026-10-30T02:19:13.659141+00:00",
+  "0049e89f0247c3f9": "2026-10-30T02:19:13.659141+00:00",
+  "6743f6a29d4ca192": "2026-10-30T02:19:13.659141+00:00",
+  "3b82b799380f7bdb": "2026-10-30T02:19:13.659141+00:00"
  },
  "recent": [
-  {
-   "title": "China 5-Year Yield Hits Record Low on PBOC’s Cash Injection",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-27/china-5-year-yield-hits-record-low-on-pboc-s-cash-injection",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T02:17:36.893588+00:00",
-   "title_ru": "5-летняя доходность в Китае достигла рекордно низкого уровня по вливанию наличных в НБК",
-   "lead": "China’s five-year government bond yield dropped to a record low after the central bank increased its cash injection into the banking system.",
-   "lead_ru": "Доходность пятилетних государственных облигаций Китая упала до рекордно низкого уровня после того, как центральный банк увеличил вливание денежных средств в банковскую систему.",
-   "tags": [
-    "bonds",
-    "China"
-   ]
-  },
   {
    "title": "Yen slips ahead of central bank bonanza, dollar firms on tech rebound",
    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPVDhUYWVaR1lyeGFScDAxOG1INFBuME5XaHhvOFNZTnhjUXFCTHVGX2k1cEJzSUMwUmpQblFZWE1WU2Z6Q0dnZTRmc2lCSEE1RklYN3VZdWV3aVRLblJ4aTFudW1aUkxUVWZXWUl6Ql8zQkVEaDBJakY4SnhyUmRwb1BQcHpKSHlOWG5DeDN3QVFIb1MyMU5mcDlESEdQS1BwdHhpaThFZjZDMDIweVVYX1VQX1VEdVdh?oc=5",
@@ -11638,6 +11625,39 @@
     "bonds",
     "markets"
    ]
+  },
+  {
+   "title": "Chinese Investors Seek Shelter in Long-Bond ETFs as Stocks Sink",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/chinese-investors-seek-shelter-in-long-bond-etfs-as-stocks-sink",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-30T02:19:13.659141+00:00",
+   "title_ru": "Китайские инвесторы ищут убежище в ETF с длинными облигациями, поскольку акции падают",
+   "lead": "Chinese investors are piling into exchange-traded funds tracking longer-dated government bonds, seeking shelter in a rallying debt market while local stocks keep sliding.",
+   "lead_ru": "Китайские инвесторы вкладывают средства в биржевые фонды, отслеживающие государственные облигации с более длительной датой, в поисках убежища на растущем долговом рынке, в то время как местные акции продолжают падать.",
+   "tags": [
+    "bonds",
+    "markets",
+    "China"
+   ]
+  },
+  {
+   "title": "China’s Oil Majors Get More Firepower for Energy Security Push",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/china-s-oil-majors-get-more-firepower-for-energy-security-push",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T02:19:13.659141+00:00",
+   "title_ru": "Крупнейшие нефтяные компании Китая получают больше огневой мощи для обеспечения энергетической безопасности",
+   "lead": "Improved profits at China’s state-owned oil majors are likely to help them deliver on Beijing’s demands for energy security.",
+   "lead_ru": "Повышение прибыли государственных нефтяных компаний Китая, вероятно, поможет им выполнить требования Пекина в отношении энергетической безопасности.",
+   "tags": [
+    "oil",
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -18326,8 +18346,8 @@
   "checked": "2026-10-30T01:24:13.654956+00:00",
   "sec_seen": [
    "0001437749-26-034036",
-   "0001437749-26-034038",
    "0001437749-26-034032",
+   "0001437749-26-034038",
    "0001895111-26-000021",
    "0001628280-26-068337",
    "0001437749-26-034042",
@@ -18338,8 +18358,8 @@
    "0001437749-26-034035",
    "0001140361-26-041201",
    "0001711968-26-000027",
-   "0001437749-26-034040",
    "0001040470-26-000323",
+   "0001437749-26-034040",
    "0000923738-26-000048",
    "0001193125-26-438480",
    "0000944075-26-000078",
