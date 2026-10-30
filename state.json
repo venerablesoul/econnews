@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "bad2cbe66c27d9a7": "2026-10-27T13:18:42.962805+00:00",
   "8e43d83759c86303": "2026-10-27T13:33:42.977434+00:00",
   "30a95cf37a254652": "2026-10-27T13:33:42.977434+00:00",
   "b9b3c4cfd3fc1fdf": "2026-10-27T13:43:42.948103+00:00",
@@ -1126,22 +1125,12 @@
   "60bbe3449c73988c": "2026-10-30T13:10:10.543091+00:00",
   "ef8cb05843f2ffbc": "2026-10-30T13:10:10.543091+00:00",
   "e043b55e0631a938": "2026-10-30T13:10:10.543091+00:00",
-  "a3f92894061ab1d4": "2026-10-30T13:15:10.552871+00:00"
+  "a3f92894061ab1d4": "2026-10-30T13:15:10.552871+00:00",
+  "b41674ee58e4a2d1": "2026-10-30T13:20:10.541945+00:00",
+  "bdf9accb07eeefb1": "2026-10-30T13:20:10.541945+00:00",
+  "8f8e9c0f2700236a": "2026-10-30T13:20:10.541945+00:00"
  },
  "recent": [
-  {
-   "title": "Mapping the Market: Oil may be in for a slide",
-   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFAzREVRR01MNnJBRXNPSk1udk5yNnU5VjZjTGowVW94NGZsdVd5YW00REE1Q013QWpGTWtQT184cWJJNlNScWduTWVGdmFHc3Q5MlVFVU5yWloyNjhvc1UzV0toeThrUWhvN21wdWpLVDdlQ1E0ZmtzMQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-27T13:18:42.962805+00:00",
-   "title_ru": "Картирование рынка: нефть может упасть",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "A bigger-than-expected win for Democrats in the midterms could deliver ‘short-lived weakness’ for stocks, strategists say",
    "link": "https://www.marketwatch.com/story/this-surprise-election-result-could-deliver-short-lived-weakness-for-stocks-strategists-say-2278a22e?mod=mw_rss_topstories",
@@ -11994,6 +11983,37 @@
    "tags": [
     "inflation"
    ]
+  },
+  {
+   "title": "Mapping the Market: More losses in store for Netflix shares?",
+   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBDQUFvWGxDeWxxUjAtdTFlb2NDVkJheGMyRkNHZzdkTTlMQ0NldnIyMERZWWV0U01KUVZrOG5UN3E0RkZrZFp6S2lvbWZjdE4tN0kydWpKUGRMMmR5dGFEVXloVWhFV2NlUHBsb0M1M2traEhKZ3hmMUhycEo?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-30T13:20:10.541945+00:00",
+   "title_ru": "Составление карты рынка: акции Netflix ждут новые потери?",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "AMD’s stock slides after Intel earnings reveal two big issues",
+   "link": "https://www.marketwatch.com/story/amds-stock-slides-after-intel-earnings-reveal-two-big-issues-d3afed91?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-30T13:20:10.541945+00:00"
+  },
+  {
+   "title": "Bitcoin slides after crypto’s nightmare scenario: a historic $6.3 billion heist",
+   "link": "https://www.marketwatch.com/story/heres-when-binance-plans-to-reopen-after-whats-believed-to-be-the-largest-ever-6-3-billion-hack-d3cb8154?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-30T13:20:10.541945+00:00"
   }
  ],
  "last_digest": "2026-10-29",
@@ -18684,9 +18704,9 @@
   "sec_seen": [
    "0001628280-26-068399",
    "0000902664-26-004313",
+   "0001193125-26-440015",
    "0001628280-26-068424",
    "0001628280-26-068405",
-   "0000711377-26-000038",
    "0001628280-26-068409",
    "0001493152-26-049356",
    "0001168534-26-000011",
