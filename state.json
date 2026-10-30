@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "d1b46a9b0f3a0d43": "2026-10-27T06:53:09.254698+00:00",
   "4730ddb587d46283": "2026-10-27T07:03:09.308121+00:00",
   "ed678ed563e55c28": "2026-10-27T07:03:09.308121+00:00",
   "c1e1f0f8679a6889": "2026-10-27T07:13:09.288241+00:00",
@@ -1115,22 +1114,10 @@
   "8a9cef8c8fa92f53": "2026-10-30T06:49:40.241591+00:00",
   "a9034a36ab174d21": "2026-10-30T06:49:40.241591+00:00",
   "f318776fbe1fdf1f": "2026-10-30T06:49:40.241591+00:00",
-  "58912d6e86a8e33c": "2026-10-30T06:49:40.241591+00:00"
+  "58912d6e86a8e33c": "2026-10-30T06:49:40.241591+00:00",
+  "22ac85b028a1c6a7": "2026-10-30T06:54:40.239326+00:00"
  },
  "recent": [
-  {
-   "title": "FTSE 100 Live: UK Stocks Set to Fall as HSBC Profit Falls Short",
-   "link": "https://www.bloomberg.com/news/live-blog/2026-10-27/ftse-100-live-updates-hsbc-anthropic-ai-stocks-pound-gilts-bond-healey-budget-what-s-moving-uk-markets-right-now-markets-today",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T06:53:09.254698+00:00",
-   "title_ru": "FTSE 100 Live: акции Великобритании упадут в связи с падением прибыли HSBC",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Indonesia 10-Year Yield at Four-Year High on MSCI Risk, Oil",
    "link": "https://www.bloomberg.com/news/articles/2026-10-27/indonesia-10-year-yield-at-four-year-high-on-msci-risk-oil",
@@ -11888,6 +11875,21 @@
    "score": 3,
    "ts": "2026-10-30T06:49:40.241591+00:00",
    "title_ru": "Утренняя ставка: последний сюрприз центрального банка"
+  },
+  {
+   "title": "AI Boom Shows Cracks After US, China Earnings",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-30/the-china-show-10-30-2026-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T06:54:40.239326+00:00",
+   "title_ru": "Бум ИИ показывает трещины после доходов в США и Китае",
+   "lead": "“Bloomberg: The China Show” is your definitive source for news and analysis on the world's second-biggest economy.",
+   "lead_ru": "«Bloomberg: The China Show» - ваш исчерпывающий источник новостей и аналитических материалов о второй по величине экономике мира.",
+   "tags": [
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -18583,8 +18585,8 @@
    "0001178579-26-000022",
    "0001437749-26-034034",
    "0000944075-26-000076",
-   "0000944075-26-000077",
    "0001392942-26-000016",
+   "0000944075-26-000077",
    "0001628280-26-068337",
    "0000944075-26-000075",
    "0000944075-26-000079",
