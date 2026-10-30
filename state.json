@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "9a23e5d700e24f41": "2026-10-27T04:17:36.870574+00:00",
   "be447b37d21bb860": "2026-10-27T04:32:36.853968+00:00",
   "1d126bd9c8583623": "2026-10-27T04:47:36.833651+00:00",
   "5f679e6f9e0f32d5": "2026-10-27T04:57:36.884406+00:00",
@@ -1112,24 +1111,10 @@
   "0133458a047b45a1": "2026-10-30T03:49:13.560318+00:00",
   "673de4f4c614159c": "2026-10-30T03:49:13.560318+00:00",
   "8091d742a101bd03": "2026-10-30T03:54:13.615918+00:00",
-  "5d3d3e8f2d521bfe": "2026-10-30T04:14:13.544613+00:00"
+  "5d3d3e8f2d521bfe": "2026-10-30T04:14:13.544613+00:00",
+  "9f5e02b9079bbb49": "2026-10-30T04:19:13.579378+00:00"
  },
  "recent": [
-  {
-   "title": "HSBC Announces $1 Billion Buyback After Profit Growth Misses",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-27/hsbc-1-billion-buyback-third-quarter-earnings-profit-growth-misses-estimates",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T04:17:36.870574+00:00",
-   "title_ru": "HSBC объявляет о выкупе $ 1 млрд после промаха роста прибыли",
-   "lead": "HSBC Holdings Plc said it would buy back shares worth $1 billion as it reported third-quarter earnings that fell short of estimates.",
-   "lead_ru": "HSBC Holdings Plc заявила, что выкупит акции на сумму $ 1 млрд, поскольку она сообщила о прибыли в третьем квартале, которая не соответствовала оценкам.",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Bond market is a buy right now, JP Morgan Asset Management's fixed income head says",
    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPc3VRRFNCaDlHTDliTGZNZ0RPWldLbXpjeWljeVducGNXVTd4VVBoRy1VaVVNX0RlLUM2UFpJQW5wUlMyMmxLZHhiSXkwZXlXU25NekNoMmx3b0hlVjF1RDNSck9GU3VHaFdCYU13OV8xaVVmRWJFbWpsX211VkkwLXBISG9XVG9UdVlCdXVQSlp0OEdpbVc2aENGdXFoQkp4R1dLU0gyc1ZGcGNCeXJabkF6bWpFZkloaU1tZXhheHB6dmVC?oc=5",
@@ -11845,6 +11830,21 @@
    "tags": [
     "inflation"
    ]
+  },
+  {
+   "title": "African Export-Import Bank Mulls First Offshore Yuan Loan",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/african-export-import-bank-mulls-first-offshore-yuan-loan",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T04:19:13.579378+00:00",
+   "title_ru": "Африканский экспортно-импортный банк обдумывает первый оффшорный кредит в юанях",
+   "lead": "African Export-Import Bank is planning a $1 billion syndicated loan that could include an offshore yuan tranche, according to people familiar with the matter, in what would be its first foray into the offshore renminbi market…",
+   "lead_ru": "По словам людей, знакомых с этим вопросом, Африканский экспортно-импортный банк планирует синдицированный кредит в размере $ 1 млрд, который может включать в себя оффшорный транш в юанях, что станет его первым выходом на оффшорный рынок юаня...",
+   "tags": [
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -18533,8 +18533,8 @@
   "checked": "2026-10-30T03:29:13.580134+00:00",
   "sec_seen": [
    "0001437749-26-034036",
-   "0001437749-26-034038",
    "0001437749-26-034032",
+   "0001437749-26-034038",
    "0001895111-26-000021",
    "0001628280-26-068337",
    "0001437749-26-034042",
@@ -18545,8 +18545,8 @@
    "0001437749-26-034035",
    "0001140361-26-041201",
    "0001711968-26-000027",
-   "0001437749-26-034040",
    "0001040470-26-000323",
+   "0001437749-26-034040",
    "0000923738-26-000048",
    "0001193125-26-438480",
    "0000944075-26-000078",
