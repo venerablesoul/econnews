@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c3e0fc8147548d9e": "2026-10-27T20:49:44.619189+00:00",
   "820479e5784044e0": "2026-10-27T20:59:44.670893+00:00",
   "68ad19a88905bc90": "2026-10-27T21:04:44.700422+00:00",
   "ded185d9e3a8981d": "2026-10-27T21:04:44.700422+00:00",
@@ -1134,7 +1133,9 @@
   "1562c3fd3b9b4716": "2026-10-30T20:30:57.450014+00:00",
   "09a284330c8d1dfb": "2026-10-30T20:30:57.450014+00:00",
   "29e41cd02c30864e": "2026-10-30T20:30:57.450014+00:00",
-  "b70d639884423d98": "2026-10-30T20:35:57.547977+00:00"
+  "b70d639884423d98": "2026-10-30T20:35:57.547977+00:00",
+  "6c60aef9d310b278": "2026-10-30T20:50:57.485988+00:00",
+  "694429867ab4fb5c": "2026-10-30T20:50:57.485988+00:00"
  },
  "recent": [
   {
@@ -12093,6 +12094,31 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "- Bureau of Labor Statistics (.gov)",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPZGJuZExpNXp6V1ROWnQ3d3o5VHhMM1VfaVdFSE1hOHJyOFFXZW1mdXZRSk4xQTZQbG15ZWt0clU1YTIxZnhPWUdPT21yXzBpRVMtOW1TdV9VUXQyOFltR19FS1BJZjlHUTNxa2pIa2EyTjVFM0Y5Z0loLXJMY2xGRGtCa0U0eHdOM3QzN3hPYVdNVXdzS0dqNThfODhybzJpODZKbjlGOHVSa3FrcG1vTVVtbEQwdw?oc=5",
+   "sources": [
+    "US Labor Statistics (BLS)"
+   ],
+   "score": 4,
+   "ts": "2026-10-30T20:50:57.485988+00:00",
+   "title_ru": "- Бюро трудовой статистики"
+  },
+  {
+   "title": "Hedge Funds Boost Natural Gas Short Positions to Most on Record",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/hedge-funds-boost-natural-gas-short-positions-to-most-on-record",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T20:50:57.485988+00:00",
+   "title_ru": "Хедж-фонды увеличивают короткие позиции по природному газу до рекордного уровня",
+   "lead": "Hedge funds this week amassed the largest-ever short position on US natural gas on expectations that an unusually warm winter will slash demand for the furnace and power-plant fuel.",
+   "lead_ru": "Хедж-фонды на этой неделе накопили самую большую в истории короткую позицию по природному газу в США, ожидая, что необычно теплая зима сократит спрос на топливо для печей и электростанций.",
+   "tags": [
+    "gas"
+   ]
   }
  ],
  "last_digest": "2026-10-30",
@@ -18850,19 +18876,15 @@
   },
   "checked": "2026-10-30T19:55:57.438817+00:00",
   "sec_seen": [
-   "0001437749-26-034225",
-   "0001764013-26-000117",
-   "0001561550-26-000326",
-   "0001437749-26-034228",
    "0002083595-26-000012",
+   "0001053507-26-000159",
    "0000097745-26-000182",
-   "0001674236-26-000026",
+   "0001764013-26-000117",
    "0001437749-26-034229",
-   "0001593156-26-000010",
-   "0000939057-26-000283",
-   "0001628280-26-068598",
+   "0000097745-26-000183",
    "0001048911-26-000133",
-   "0001437749-26-034224",
+   "0001437749-26-034228",
+   "0001674236-26-000026",
    "0001640081-26-000007"
   ],
   "errors": {
