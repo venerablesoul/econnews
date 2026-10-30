@@ -13065,6 +13065,66 @@
   "congress": [
    {
     "src": "house",
+    "who": "David J. Taylor",
+    "where": "House, OH-02",
+    "owner": "",
+    "ticker": "LRCX",
+    "asset": "Lam Research Corporation - Common Stock",
+    "type": "buy",
+    "amin": 1001,
+    "amax": 15000,
+    "date": "2026-10-15",
+    "disclosed": "2026-10-29",
+    "link": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035727.pdf",
+    "id": "b937acd034b12de1"
+   },
+   {
+    "src": "house",
+    "who": "David J. Taylor",
+    "where": "House, OH-02",
+    "owner": "",
+    "ticker": "MPC",
+    "asset": "Marathon Petroleum Corporation Common Stock",
+    "type": "sell",
+    "amin": 1001,
+    "amax": 15000,
+    "date": "2026-10-15",
+    "disclosed": "2026-10-29",
+    "link": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035727.pdf",
+    "id": "6cadaf3393f2c098"
+   },
+   {
+    "src": "house",
+    "who": "David J. Taylor",
+    "where": "House, OH-02",
+    "owner": "",
+    "ticker": "PLD",
+    "asset": "Prologis, Inc. Common Stock",
+    "type": "buy",
+    "amin": 1001,
+    "amax": 15000,
+    "date": "2026-10-15",
+    "disclosed": "2026-10-29",
+    "link": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035727.pdf",
+    "id": "2a197f8876bd5d24"
+   },
+   {
+    "src": "house",
+    "who": "David J. Taylor",
+    "where": "House, OH-02",
+    "owner": "",
+    "ticker": "V",
+    "asset": "Visa Inc.",
+    "type": "sell",
+    "amin": 1001,
+    "amax": 15000,
+    "date": "2026-10-15",
+    "disclosed": "2026-10-29",
+    "link": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035727.pdf",
+    "id": "8c40af0b9a1ad7ca"
+   },
+   {
+    "src": "house",
     "who": "Kevin Hern",
     "where": "House, OK-01",
     "owner": "",
@@ -14945,6 +15005,22 @@
     "date": "2026-10-29",
     "disclosed": "2026-10-30",
     "link": "https://www.sec.gov/Archives/edgar/data/1323979/000143774926034164/0001437749-26-034164-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "12d87d3c914db519",
+    "ticker": "NUE",
+    "company": "NUCOR CORP",
+    "who": "Noah C Hanners",
+    "role": "Executive Vice President",
+    "type": "sell",
+    "value": 1427406,
+    "shares": 5190,
+    "price": 275.03,
+    "plan": false,
+    "date": "2026-10-29",
+    "disclosed": "2026-10-30",
+    "link": "https://www.sec.gov/Archives/edgar/data/1960914/000007330926000133/0000073309-26-000133-index.htm"
    },
    {
     "src": "sec",
@@ -18833,22 +18909,6 @@
     "date": "2026-10-21",
     "disclosed": "2026-10-23",
     "link": "https://www.sec.gov/Archives/edgar/data/1912570/000110465926118466/0001104659-26-118466-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "c84350659d2b4957",
-    "ticker": "INNV",
-    "company": "InnovAge Holding Corp.",
-    "who": "Ignite Aggregator Lp et al.",
-    "role": "10% owner",
-    "type": "sell",
-    "value": 13875000,
-    "shares": 1500000,
-    "price": 9.25,
-    "plan": false,
-    "date": "2026-10-21",
-    "disclosed": "2026-10-23",
-    "link": "https://www.sec.gov/Archives/edgar/data/1848852/000119312526430420/0001193125-26-430420-index.htm"
    }
   ],
   "docs": {
@@ -18879,7 +18939,8 @@
    "9116389": "2026-10-27",
    "9116390": "2026-10-27",
    "9116391": "2026-10-27",
-   "20035710": "2026-10-28"
+   "20035710": "2026-10-28",
+   "20035727": "2026-10-29"
   },
   "queue": [],
   "ready": {
@@ -18887,15 +18948,26 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-30T17:50:57.788325+00:00",
+  "checked": "2026-10-30T18:55:57.351368+00:00",
   "sec_seen": [
-   "0000711377-26-000041",
+   "0001184041-26-000006",
+   "0000073309-26-000133",
    "0001771309-26-000005",
-   "0002106640-26-000014",
-   "0001437749-26-034162",
+   "0001225208-26-008562",
+   "0001225208-26-008568",
    "0001614143-26-000006",
-   "0001591893-26-000006",
-   "0001437749-26-034164"
+   "0001225208-26-008561",
+   "0001225208-26-008567",
+   "0001225208-26-008566",
+   "0001225208-26-008565",
+   "0001225208-26-008560",
+   "0001801785-26-000010",
+   "0001225208-26-008569",
+   "0001225208-26-008564",
+   "0001225208-26-008563",
+   "0000711377-26-000041",
+   "0001225208-26-008559",
+   "0002106640-26-000014"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
