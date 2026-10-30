@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "67de6fb5a45ef896": "2026-10-27T12:53:43.018922+00:00",
   "82ab5bbebbecf866": "2026-10-27T13:03:43.001384+00:00",
   "268abdf81ba4186b": "2026-10-27T13:08:42.959876+00:00",
   "bad2cbe66c27d9a7": "2026-10-27T13:18:42.962805+00:00",
@@ -1123,19 +1122,11 @@
   "928226907b5963dd": "2026-10-30T12:45:10.499097+00:00",
   "ef2aa5015ac37fa3": "2026-10-30T12:45:10.499097+00:00",
   "2b70ae64cc4d02e3": "2026-10-30T12:45:10.499097+00:00",
-  "6cec15d7f7a5897c": "2026-10-30T12:50:10.564719+00:00"
+  "6cec15d7f7a5897c": "2026-10-30T12:50:10.564719+00:00",
+  "a90e187ab8b9199d": "2026-10-30T13:00:10.541996+00:00",
+  "1e1709a75112567a": "2026-10-30T13:00:10.541996+00:00"
  },
  "recent": [
-  {
-   "title": "Citi, BCA downgrade Brazilian assets after Lula comeback",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQNURnSldLU1dyMGswcnFnbHd5d3pLQV80d1FXM2Q4OEtQM1o2NU04R2dnTk9kdFJQeXRWNDN4UENUT3pxZXpjX0J3X1hJWi13aDRPOVlDRkVWR3V1bW5RUkpta0pEQnBEeFZHUVdzMmItYThQQ3pxQ1pCQmJILU92enZYV000Y0xtYnNZS3pfMGtPRlFheDAtWGRHUmtJbm9rUkh5ZXFiOVBidw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-27T12:53:43.018922+00:00",
-   "title_ru": "Citi, BCA понизили рейтинг бразильских активов после возвращения Лулы"
-  },
   {
    "title": "JetBlue shares rally as airline seeks to calm financial concerns",
    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPTHg0SWkxcXB1dHhiU1pUdGdjaVhwVnlvNVpPZ0dTVjNyRDBXM3VRNGJ0c3dhZWpGMnd4OVBJVUM0dlBGdjBuWlkybGdkUU1TUEt5Uk02SUs5RnZ6T28yT3h1SlQzSmtGNGozNXp5VjR1Sk0yVmtpdmxjMlhpYmE3RV9vUHVEd05sVDNteTl0Zmdqb2pfbHlXSW9wYnBrOGxHZ0NabkNR?oc=5",
@@ -11964,6 +11955,31 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Indian Stocks Top Performers in Asia as Anti-AI Appeal Grows",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/indian-stocks-top-performers-in-asia-as-anti-ai-appeal-grows",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-30T13:00:10.541996+00:00",
+   "title_ru": "Индийские акции лидируют в Азии по мере роста интереса к ИИ",
+   "lead": "Indian stocks closed higher Friday, with the benchmark gauge posting its best month since July as local shares emerged as a haven from the global tech selloff.",
+   "lead_ru": "Индийские акции закрылись выше в пятницу, при этом эталонный показатель показал свой лучший месяц с июля, поскольку местные акции стали убежищем от глобальной распродажи технологий.",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "Puma sales, slashed inventory convince investors as Anta partnership advances",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNOVNLVUxFX2I2STl5QzVYWnBGUGJ5dS1ZODZYa0hqSmVrMmtnUXRPN09lbGVjdGpfRkktODhWWnRiTXZYaC1vdndzUGVxcnJuU3puX0RIdEZiMXhpbXgtTjJsZEhLSVFZQml2Wm5ObHdlc2pHdEtSbjBhVjZUdVdXaHJNeFJSRnFwcUcycDFmMUZaMk5xOFdKb0dDTjRrakFvai1kNnVkSjhBV25qa2lKYWItY3RiRmN5LW5iallESVNHc0pyLXo4?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T13:00:10.541996+00:00",
+   "title_ru": "Продажи PUMA, сокращенные запасы убеждают инвесторов по мере развития партнерства ANTA"
   }
  ],
  "last_digest": "2026-10-29",
@@ -18654,6 +18670,7 @@
   "sec_seen": [
    "0002141713-26-000007",
    "0001628280-26-068399",
+   "0000902664-26-004313",
    "0000711377-26-000037",
    "0001341767-26-000008",
    "0001628280-26-068424",
