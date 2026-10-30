@@ -1132,7 +1132,9 @@
   "416d4a5c586eccae": "2026-10-30T17:45:57.460286+00:00",
   "6cc762211783e8cd": "2026-10-30T17:45:57.460286+00:00",
   "82297753eb7124b3": "2026-10-30T17:55:57.411989+00:00",
-  "5766ffdcb4e3eeac": "2026-10-30T18:15:57.387490+00:00"
+  "5766ffdcb4e3eeac": "2026-10-30T18:15:57.387490+00:00",
+  "afa1a9b94de69d30": "2026-10-30T18:30:57.623229+00:00",
+  "de6dcdb9275a03f7": "2026-10-30T18:30:57.623229+00:00"
  },
  "recent": [
   {
@@ -12097,6 +12099,21 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "Arini Gets Bids on Junk Debt From Pimco, Oaktree as Losses Mount",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/arini-gets-bids-on-junk-debt-from-pimco-oaktree-as-losses-mount",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T18:30:57.623229+00:00",
+   "title_ru": "Арини получает предложения по мусорному долгу от Pimco и Oaktree, поскольку убытки растут",
+   "lead": "Arini Capital Management, which has been beset with losses this month, has gotten bids on some of its high-yield debt holdings from asset managers including Pacific Investment Management Co.",
+   "lead_ru": "Arini Capital Management, которая в этом месяце понесла убытки, получила заявки на некоторые из своих высокодоходных долговых активов от управляющих активами, включая Pacific Investment Management Co.",
+   "tags": [
+    "bonds"
+   ]
   }
  ],
  "last_digest": "2026-10-30",
@@ -18794,11 +18811,13 @@
   "checked": "2026-10-30T17:50:57.788325+00:00",
   "sec_seen": [
    "0001736209-26-000011",
-   "0001193125-26-441381",
    "0002093300-26-000004",
+   "0001104659-26-120602",
+   "0001437749-26-034162",
+   "0001628280-26-068526",
    "0001437749-26-034158",
    "0000780571-26-000235",
-   "0001628280-26-068526"
+   "0001193125-26-441381"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
