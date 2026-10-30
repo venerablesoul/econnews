@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "9ee8f69365ef35e3": "2026-10-27T14:18:42.979506+00:00",
-  "809497ec19b29ac6": "2026-10-27T14:18:42.979506+00:00",
   "2bc1cf592e278a36": "2026-10-27T14:28:42.945299+00:00",
   "ba80d70d1ae48f1e": "2026-10-27T14:28:42.945299+00:00",
   "8715604258485543": "2026-10-27T14:33:42.967540+00:00",
@@ -1122,29 +1120,10 @@
   "b8c4260386d77fec": "2026-10-30T14:10:10.650026+00:00",
   "d10ae9c4a0733eb1": "2026-10-30T14:10:10.650026+00:00",
   "30c4fb2f4245d26f": "2026-10-30T14:15:10.542265+00:00",
-  "3fc9ac2ad7425037": "2026-10-30T14:15:10.542265+00:00"
+  "3fc9ac2ad7425037": "2026-10-30T14:15:10.542265+00:00",
+  "52c3e408752d84d7": "2026-10-30T14:20:10.587544+00:00"
  },
  "recent": [
-  {
-   "title": "Coca-Cola lifts profit forecast on international soda demand, flags higher costs",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNeXVhS0lsd2Y2TWNoSkp5RFlXZ3Jxdmk3TXJOZTluVVhjTEVQekJYRlpUOWVTamdtQUJKWXg0M3NoR29yQnNWRE0yaGEtd0xqZkhTV2puTnpteE9TMFNfX3Z3am5zQkNJamhtRFlrVkFtcWNWell5empwLVdyU0hldklXc24tdkNjQXJBWlUtN3VJcktsalJZcGJ1T0Q1dw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T14:18:42.979506+00:00",
-   "title_ru": "Coca-Cola повышает прогноз прибыли на международный спрос на газировку, отмечает рост затрат"
-  },
-  {
-   "title": "Tanzania announces first gas discovery in more than 10 years",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOcmVrRkk0aDBtZnZJZ1R1SGRCYzM0YS1FazM3U3ZoWHNBVy04ZVBRTlRKcXdFWGo3emZiU085ZjgzWHZ0ZW94Tk43NGJzZzdtMW1wQ0FReE1RWWt3YXpZQTBUUWR6NjFncFJxVWt1YWNEeTJ6S1VKbmxrZ0FXd1F6Sy1WSzU5ak5pVzNnbTA1c003bGszWGhBY0FBZnozRGxXWmlYbUlkWmRHSGZma3c?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T14:18:42.979506+00:00",
-   "title_ru": "Танзания объявила о первом открытии газа за более чем 10 лет"
-  },
   {
    "title": "Russia Ships Less Crude Even as Key Baltic Port’s Flows Rebound",
    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNdFFnWm9RNEktdmhjWVlZV3RTM0psZlZ4QVdQSjV2dk5BSWgzZDBKSGhiU1BaTjFiODE5NWt5V0JQcUhWS2p5RkZRVnJVWFVabnRhMW0wak8tWWc4eUVuaUQ2ZEhIMzJPNkVydEhHNG5wM25wSHBpdFNIZE4tbVFQV1JnYkhYazhtZjlVS3o4elZuallGLU5QZDB0eGNKbVNTSkJuQ0haZTNJU2EzcjI1ZmRB?oc=5",
@@ -11944,6 +11923,20 @@
    "title_ru": "Затраты технологических компаний на защиту долга растут из-за опасений по поводу прибыли",
    "lead": "Costs to protect the debt of numerous US technology heavyweights against default hit fresh record highs Friday, with disappointing quarterly reports from Intel Corp. and Amazon.com Inc.",
    "lead_ru": "Затраты на защиту долга многочисленных технологических тяжеловесов США от дефолта достигли нового рекордного максимума в пятницу на фоне разочаровывающих квартальных отчетов Intel Corp. и Amazon.com Inc."
+  },
+  {
+   "title": "Milei’s Voters Abandon Buenos Aires to Hunt for Jobs in Oil Country",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQU3U5RTBjZVZqd0p0MElwanU3QzA5Z0I4N3pRczBDOHRaWFNqZmlYRmtPR3NDVkpiME54ek85LUY2Slg1bUlDbzdGcmNjYkRNT20xZThDbzhFWmpKZF9zSWFidEJiX3lJYm1HVFlqY0w5Z19mdEpPSlBCSFphUU1Ya3BMM1NTZWZyQl96UDlIcjlLZko1dGFIeDRZWmRnYVpiSFIySjFyNXFXWU1kUUQ3QkIyNA?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-30T14:20:10.587544+00:00",
+   "title_ru": "Избиратели Милеи покинули Буэнос-Айрес в поисках работы в нефтяной стране",
+   "tags": [
+    "oil",
+    "jobs"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
