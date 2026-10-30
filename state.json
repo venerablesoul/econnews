@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "bcee857f8ac4674d": "2026-10-27T02:37:36.887221+00:00",
   "8b1201849235a36d": "2026-10-27T02:42:36.867899+00:00",
   "a62b4dd224524bf0": "2026-10-27T02:47:36.861962+00:00",
   "017affb6c777f80b": "2026-10-27T02:52:36.861179+00:00",
@@ -1097,23 +1096,10 @@
   "18eecaa2591efb77": "2026-10-30T02:29:13.555612+00:00",
   "8ba3317350897417": "2026-10-30T02:29:13.555612+00:00",
   "c7c2a3b1dedcdb95": "2026-10-30T02:29:13.555612+00:00",
-  "8615f0a97d0a8cd8": "2026-10-30T02:34:13.605403+00:00"
+  "8615f0a97d0a8cd8": "2026-10-30T02:34:13.605403+00:00",
+  "b7017de8a0083101": "2026-10-30T02:39:13.643465+00:00"
  },
  "recent": [
-  {
-   "title": "China’s Industrial Profits Jump Most in Three Months on Oil, AI",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNTHpqMDdYZGVGYi1vVUE0a09KX19OVENITVZwenhadGJ2Wl9EeS1OMzZEZ3lzZXB0VjR6aWhROUxvd0Jtd2k1Mjd0NElfM0F5eGtqWkVsUUlQV083bjl0SzJfbXQ2bktwZnJiSU9zbF9yVlF5QTBad3NsYWhFX0tzd2hVZkV5SXEzOG0yVEZISUdlOVhGQnhJc2lWdkoyZ0V0eXZHZE1WdS1SV0JGVzlZZ2Y4RQ?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T02:37:36.887221+00:00",
-   "title_ru": "Промышленная прибыль Китая выросла больше всего за три месяца благодаря нефти и искусственному интеллекту",
-   "tags": [
-    "oil",
-    "China"
-   ]
-  },
   {
    "title": "Emerging markets still strong despite Brazil's slump, strategist says",
    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBZal93dWJ0MTlocDhqQVh3NU1nTkxBUl9yZVhMMTlMcGZNSW9NT3dFY19nellMWGxZNVBfVUFnd3FTMHBWRFpCUjFjenRHSzBvVnQ2bU85NjlFc0VZYS1pc1U5dkZaaG8?oc=5",
@@ -11682,6 +11668,19 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Brazil's Petrobras makes third oil discovery in block off Amapa state",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOSE0ydV9qSC02Q1dUUU5hQm1DSExua2JkeWFRN0dfemViNGhNWjQzY2VuOXFRZjZuRFdjUldYOFJBZkhLX29DeUV0VWFneXhWRG1jMXA3RGJZTGpaN2tWUEZMQmRHT05FcUVMRHp4SWx5Nnl4SFZhWmNFbDFOQWNOQ2xlYjIwbHgwd3FKX1lwSjB3N2s3UU10ZlV0NjMtS0plTGJJVWJkWEJwcGRPbElJWE1WSUtJRUdj?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T02:39:13.643465+00:00",
+   "title_ru": "Бразильская Petrobras делает третье открытие нефти в районе штата Амапа",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -18370,8 +18369,8 @@
   "checked": "2026-10-30T02:29:13.555612+00:00",
   "sec_seen": [
    "0001437749-26-034036",
-   "0001437749-26-034038",
    "0001437749-26-034032",
+   "0001437749-26-034038",
    "0001895111-26-000021",
    "0001628280-26-068337",
    "0001437749-26-034042",
@@ -18382,8 +18381,8 @@
    "0001437749-26-034035",
    "0001140361-26-041201",
    "0001711968-26-000027",
-   "0001437749-26-034040",
    "0001040470-26-000323",
+   "0001437749-26-034040",
    "0000923738-26-000048",
    "0001193125-26-438480",
    "0000944075-26-000078",
