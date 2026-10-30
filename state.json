@@ -1119,7 +1119,9 @@
   "6c61c312ee3ccbbf": "2026-10-30T12:05:10.463149+00:00",
   "8a516f581745cc9b": "2026-10-30T12:10:10.535394+00:00",
   "fe9884346c9dbe13": "2026-10-30T12:15:10.519024+00:00",
-  "221e7a2180b9eaee": "2026-10-30T12:25:10.461981+00:00"
+  "221e7a2180b9eaee": "2026-10-30T12:25:10.461981+00:00",
+  "eb6126e725314f87": "2026-10-30T12:30:10.399223+00:00",
+  "bc143710274c8f93": "2026-10-30T12:30:10.399223+00:00"
  },
  "recent": [
   {
@@ -11884,6 +11886,25 @@
    "tags": [
     "gas"
    ]
+  },
+  {
+   "title": "Euro zone growth beats projections but headwinds mount",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPQ0VVWXZnOW1zb3FvZGREcFJZNnlqZVVTTHpleHhyZEVyNkhCSmtnRTV4bEh6WWZ2eHdyN0ZKNkMwTEpsVERSOFBzNnVLaWNhMTJUQ2QzMzBGUTNhN2l3Uk9mUXRteXY5Y1dFclAtR2QyYWtTV3lPTERQVDlLVlFwY0tZV1ZtTDVOX05HU1QtRnUzTWM?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-30T12:30:10.399223+00:00",
+   "title_ru": "Рост еврозоны бьет прогнозы, но усиливается встречный ветер"
+  },
+  {
+   "title": "This one chart tells you everything you need to know about Exxon, Chevron and BP’s forecasting-beating earnings",
+   "link": "https://www.marketwatch.com/story/this-one-chart-tells-you-everything-you-need-to-know-about-exxon-chevron-and-bps-forecasting-beating-earnings-24babdfc?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-30T12:30:10.399223+00:00"
   }
  ],
  "last_digest": "2026-10-29",
@@ -18572,8 +18593,8 @@
   },
   "checked": "2026-10-30T11:45:10.373806+00:00",
   "sec_seen": [
-   "0002010135-26-000025",
    "0002141713-26-000007",
+   "0002010135-26-000025",
    "0001628280-26-068399",
    "0000711377-26-000037",
    "0001341767-26-000008",
