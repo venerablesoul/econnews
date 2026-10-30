@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "98756fa8f98a2037": "2026-10-27T12:43:43.036317+00:00",
-  "c847d62a8a177e47": "2026-10-27T12:43:43.036317+00:00",
-  "437c4effd004d903": "2026-10-27T12:43:43.036317+00:00",
   "f3d8b15cb1220a5b": "2026-10-27T12:48:43.018347+00:00",
   "43d34b1256fceaf1": "2026-10-27T12:48:43.018347+00:00",
   "67de6fb5a45ef896": "2026-10-27T12:53:43.018922+00:00",
@@ -1124,48 +1121,12 @@
   "51178286e76607e1": "2026-10-30T12:40:10.533250+00:00",
   "2b2ffcee0a520537": "2026-10-30T12:40:10.533250+00:00",
   "8e3f2f0867f6de29": "2026-10-30T12:40:10.533250+00:00",
-  "e613c8251895b464": "2026-10-30T12:40:10.533250+00:00"
+  "e613c8251895b464": "2026-10-30T12:40:10.533250+00:00",
+  "928226907b5963dd": "2026-10-30T12:45:10.499097+00:00",
+  "ef2aa5015ac37fa3": "2026-10-30T12:45:10.499097+00:00",
+  "2b70ae64cc4d02e3": "2026-10-30T12:45:10.499097+00:00"
  },
  "recent": [
-  {
-   "title": "Russia's Oil Exports Hit a One-Month High Amid Baltic Rebound",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-27/russia-s-oil-exports-hit-a-one-month-high-amid-baltic-rebound",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-27T12:43:43.036317+00:00",
-   "title_ru": "Российский экспорт нефти достиг месячного максимума на фоне отскока Балтийского моря",
-   "lead": "Primorsk shipments recovered strongly last week, but it wasn’t enough to boost four-week flows",
-   "lead_ru": "Поставки в Приморск сильно восстановились на прошлой неделе, но этого оказалось недостаточно, чтобы нарастить четырехнедельные потоки",
-   "tags": [
-    "oil",
-    "Russia"
-   ]
-  },
-  {
-   "title": "Pound near 17-month high on euro a day ahead of British budget",
-   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNbmxNV194R2tBS0VVOXpUdVNmUExKMVgyejF4V1M3ZXZxRWsxX2VaVVY2eXpoeU1CZ1JDOFpES2xMXzRObVlvS3VwZnR0TGNIeTJkYUFQWnEtczJuZTk4X3FVZ0ZFaW40REM1b0M4LW5VVEVEb2tGd2kzYmpTRDd1bzhqbzM5a0lTYlg0TXZaTnM1WWNWOHgwcXV2RFFQbmdJ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-27T12:43:43.036317+00:00",
-   "title_ru": "Фунт приближается к 17-месячному максимуму по евро на день раньше британского бюджета"
-  },
-  {
-   "title": "Euro zone extends deadline for bids to replace ECB's Schnabel",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQd1UyT2gwRzU2UWNMcWZHVTFCcXdjMmNsRU1uVVlUbXVBWk5sZldQbWoyaktzdW9xajg4dDZORFE2NjFmVklxSU5fbGV4anl6dEJzR0dHQllDa0VTWk5TT3o4U0dYOE4tM1E3RlJlTEhxQmxsd2E4bVA3NF9tNjNoeEVDR09zR2Z6ek9vMU96SDl3Qml3XzNORnZYWW91WVB4ZEVjcXBYNm9xUQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-27T12:43:43.036317+00:00",
-   "title_ru": "Еврозона продлевает срок подачи заявок на замену Шнабеля ЕЦБ",
-   "tags": [
-    "ECB"
-   ]
-  },
   {
    "title": "French consumer confidence hits a 2013 low in October amid protests",
    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNUU5lTjItazhkMENWeGlZWkl5SEdxZzdjYlE2V3g1S0FnMHpXeGVnWFBWaXJBcWRtR1E4VXFGQk5Zd29iVkRXd2hLYU1reWJ2LXRpY3pMd3BLWUtyeGl1RV9jNEJyMnpiZThPV3NyUV9tVjRDSDBRNDM1ODJtRF9iR1NnNTItbGh2WldydnpUdXUtc3g4TUV1MktudXVrc0VwTS1TQW5uZXZSRmc?oc=5",
@@ -11981,6 +11942,43 @@
    "tags": [
     "ECB"
    ]
+  },
+  {
+   "title": "Canada Economy Tracks 1.3% Third Quarter Annualized Growth",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/canada-economy-tracks-1-3-third-quarter-annualized-growth",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-30T12:45:10.499097+00:00",
+   "title_ru": "Экономика Канады демонстрирует рост в годовом исчислении на 1,3% в третьем квартале",
+   "lead": "The Canadian economy is tracking 1.3% annualized growth between July and September, slowing down from a robust second quarter and coming in weaker than the Bank of Canada forecasted.",
+   "lead_ru": "Канадская экономика отслеживает рост на 1,3% в годовом исчислении в период с июля по сентябрь, замедляясь со второго квартала и становясь слабее, чем прогнозировал Банк Канады."
+  },
+  {
+   "title": "Canada's economic growth stalls again in August, September likely a decline",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNNWh2UG80VGRucFJSRy0yaFkwVGdzY1o2aThCVk9xM19ySVJVLTZCNl9ZN2ptQmkzanV4ZHBMTG01cXo5akliQlJSUzZkREtkSG9PcWhndnJGTEpjSk5TYU92bFJ0SWZjdWlGUmdPbUxsUXRaaXVvQ2dta1poalU0UUxkaGhFcDZiWGdxb09KOWFPbWtDX3pLQlduWFBqWDZuY2VMbGVuc2g0QndHR21QOGxfYjdfc3FvdXRN?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-30T12:45:10.499097+00:00",
+   "title_ru": "Экономический рост Канады снова замедлился в августе, в сентябре, вероятно, произойдет снижение"
+  },
+  {
+   "title": "Better than expected Eurozone growth supports ECB’s tightening path",
+   "link": "https://www.ft.com/content/6dc54eed-2904-487d-8656-85ac25111933",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 4,
+   "ts": "2026-10-30T12:45:10.499097+00:00",
+   "title_ru": "Рост еврозоны лучше, чем ожидалось, поддерживает путь ужесточения ЕЦБ",
+   "lead": "Third-quarter growth data shows currency bloc outperformed on the whole but figures for France come in weaker than expected",
+   "lead_ru": "Данные по росту за третий квартал показывают, что валютный блок превзошел в целом, но показатели по Франции оказались слабее, чем ожидалось",
+   "tags": [
+    "ECB"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -18667,21 +18665,17 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-30T11:45:10.373806+00:00",
+  "checked": "2026-10-30T12:45:10.499097+00:00",
   "sec_seen": [
    "0002141713-26-000007",
-   "0002010135-26-000025",
    "0001628280-26-068399",
    "0000711377-26-000037",
    "0001341767-26-000008",
    "0001628280-26-068424",
    "0000711377-26-000035",
-   "0001857843-26-000030",
    "0001628280-26-068405",
    "0001628280-26-068409",
    "0000711377-26-000038",
-   "0002010019-26-000035",
-   "0001697362-26-000020",
    "0002066642-26-000004",
    "0002054266-26-000008",
    "0001493152-26-049356",
@@ -18699,7 +18693,6 @@
    "0001628280-26-068416",
    "0001628280-26-068401",
    "0001628280-26-068397",
-   "0001711968-26-000027",
    "0001411587-26-000002",
    "0001628280-26-068418",
    "0001628280-26-068407"
