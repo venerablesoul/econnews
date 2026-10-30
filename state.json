@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "9998cfad776817f9": "2026-10-27T14:13:43.017913+00:00",
-  "8ecbf643c5ac79d0": "2026-10-27T14:13:43.017913+00:00",
-  "738163d32bd5f39f": "2026-10-27T14:13:43.017913+00:00",
-  "17cc47d8dd2fc8d1": "2026-10-27T14:13:43.017913+00:00",
-  "3b64beb43ba9229b": "2026-10-27T14:13:43.017913+00:00",
   "9ee8f69365ef35e3": "2026-10-27T14:18:42.979506+00:00",
   "809497ec19b29ac6": "2026-10-27T14:18:42.979506+00:00",
   "2bc1cf592e278a36": "2026-10-27T14:28:42.945299+00:00",
@@ -1125,76 +1120,11 @@
   "67477839eafcdc85": "2026-10-30T14:05:10.526165+00:00",
   "7d3c74297493ea91": "2026-10-30T14:10:10.650026+00:00",
   "b8c4260386d77fec": "2026-10-30T14:10:10.650026+00:00",
-  "d10ae9c4a0733eb1": "2026-10-30T14:10:10.650026+00:00"
+  "d10ae9c4a0733eb1": "2026-10-30T14:10:10.650026+00:00",
+  "30c4fb2f4245d26f": "2026-10-30T14:15:10.542265+00:00",
+  "3fc9ac2ad7425037": "2026-10-30T14:15:10.542265+00:00"
  },
  "recent": [
-  {
-   "title": "Stifel's Piegza Says Fed Should Raise Rates But Likely Won’t",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-27/stifel-s-piegza-says-fed-should-hike-rates-likely-won-t-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-27T14:13:43.017913+00:00",
-   "title_ru": "Пьегза Стифеля говорит, что ФРС должна повысить ставки, но, скорее всего, не будет",
-   "lead": "Stifel Chief Economist Lindsey Piegza argues that returning inflation to its longstanding 2% target would require firm conviction and more than two rate hikes. She speaks on \"Bloomberg Surveillance.\" (Source: Bloomberg)",
-   "lead_ru": "Главный экономист Stifel Линдси Пьегза утверждает, что возвращение инфляции к своей давней цели в 2% потребует твердой убежденности и более двух повышений ставок. Она говорит на \"Bloomberg Surveillance.\" (Источник: Bloomberg)",
-   "tags": [
-    "Fed",
-    "rates",
-    "inflation"
-   ]
-  },
-  {
-   "title": "Memory Stocks Lost Their Mojo and Strong Earnings Aren’t Helping",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPcUF1MUZpZW5VQU9rOE5rOTMzQVZ3REhjNFNBMHd2cXpzQlhqcUFRcG5EaHVtZk9INGVzYTZTcVQ1cjA2NjBwOWZvaTd5U2xjS1RUalA1bE1NUktzS1RBNkJuS2RXWlhLRGJxeC1wNnoydTBoLVlyNFdaVFNNc29ZU1hjN3ZYRUtkeHJLa1VTVVVzb2xrbTJ2U1JmdHFkMGJPNV9GMjZ0QmVTQ1JTbklFcVdlT1hMdw?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-27T14:13:43.017913+00:00",
-   "title_ru": "Акции Memory потеряли свой Mojo, и сильные доходы не помогают",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "US Consumer Confidence Rises for First Time in Four Months",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-27/us-consumer-confidence-increases-for-first-time-in-four-months",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T14:13:43.017913+00:00",
-   "title_ru": "Потребительское доверие в США выросло впервые за четыре месяца",
-   "lead": "US consumer confidence unexpectedly rose in October for the first time in four months as views about the job market and business conditions improved.",
-   "lead_ru": "Потребительское доверие в США неожиданно выросло в октябре впервые за четыре месяца, поскольку взгляды на рынок труда и условия ведения бизнеса улучшились."
-  },
-  {
-   "title": "US New Home Sales Fall Amid Surge in Mortgage Rates",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-27/us-new-home-sales-fall-amid-surge-in-mortgage-rates",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T14:13:43.017913+00:00",
-   "title_ru": "Продажи нового жилья в США падают на фоне роста ставок по ипотечным кредитам",
-   "lead": "Sales of new homes in the US edged lower last month as homebuilders’ efforts to trim prices and offer sales incentives failed to offset a surge in mortgage rates.",
-   "lead_ru": "Продажи новых домов в США снизились в прошлом месяце, поскольку усилия строителей по снижению цен и стимулированию продаж не смогли компенсировать рост ставок по ипотечным кредитам."
-  },
-  {
-   "title": "Yemen's Houthis say they hit Saudi Ras Tanura oil refinery with missile",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPMU9tRHdmbzQ2ZHlsQzBDVmpqUEhlTk9meXgzN1VMOWlUMnlKOU1ibFRMQ1VQNDNjTkloUG9lb054S2JXZ2YwMS1MMXM4b1pwczl2clNyTHM5RGZVdnd6bzJXTVl4bW4yZ0pGTEV2aEV4dlR2cDNkc0lvNjVMN2ZScklvRDE3S1VyS0FoaC02Z3BqTHJPeTJrekxhM0dONmN0VzdXTmE5QjNfM0pIZ1Q2SHMtSkZzbFNqSThaN2RybDFBdw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T14:13:43.017913+00:00",
-   "title_ru": "Йеменские хуситы говорят, что они поразили саудовский нефтеперерабатывающий завод Рас-Танура ракетой",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "Coca-Cola lifts profit forecast on international soda demand, flags higher costs",
    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNeXVhS0lsd2Y2TWNoSkp5RFlXZ3Jxdmk3TXJOZTluVVhjTEVQekJYRlpUOWVTamdtQUJKWXg0M3NoR29yQnNWRE0yaGEtd0xqZkhTV2puTnpteE9TMFNfX3Z3am5zQkNJamhtRFlrVkFtcWNWell5empwLVdyU0hldklXc24tdkNjQXJBWlUtN3VJcktsalJZcGJ1T0Q1dw?oc=5",
@@ -11985,6 +11915,35 @@
    "tags": [
     "jobs"
    ]
+  },
+  {
+   "title": "Fed’s Barkin Indicates Backing for ‘Gradual’ Rate Increases",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/fed-s-barkin-indicates-backing-for-gradual-rate-increases",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-30T14:15:10.542265+00:00",
+   "title_ru": "Председатель ФРС Баркин заявляет о поддержке «постепенного» повышения ставок",
+   "lead": "Federal Reserve Bank of Richmond President Tom Barkin argued that gradual interest rate hikes make sense at a time when inflation remains high amid low unemployment and solid economic demand.",
+   "lead_ru": "Президент Федерального резервного банка Ричмонда Том Баркин заявил, что постепенное повышение процентных ставок имеет смысл в то время, когда инфляция остается высокой на фоне низкой безработицы и устойчивого экономического спроса.",
+   "tags": [
+    "Fed",
+    "rates",
+    "inflation"
+   ]
+  },
+  {
+   "title": "Tech Firms’ Debt-Protection Costs are Surging on Profit Concerns",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/tech-firms-debt-protection-costs-are-surging-on-profit-concerns",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-30T14:15:10.542265+00:00",
+   "title_ru": "Затраты технологических компаний на защиту долга растут из-за опасений по поводу прибыли",
+   "lead": "Costs to protect the debt of numerous US technology heavyweights against default hit fresh record highs Friday, with disappointing quarterly reports from Intel Corp. and Amazon.com Inc.",
+   "lead_ru": "Затраты на защиту долга многочисленных технологических тяжеловесов США от дефолта достигли нового рекордного максимума в пятницу на фоне разочаровывающих квартальных отчетов Intel Corp. и Amazon.com Inc."
   }
  ],
  "last_digest": "2026-10-29",
