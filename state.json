@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "3c38e623f397bdd0": "2026-10-27T19:29:41.088136+00:00",
-  "0330889c09eaffcb": "2026-10-27T19:29:41.088136+00:00",
   "f4f2df2ccb5aad11": "2026-10-27T19:39:40.944101+00:00",
   "963e11b4bc0cfa77": "2026-10-27T19:39:40.944101+00:00",
   "9b0250365df09223": "2026-10-27T19:39:40.944101+00:00",
@@ -1141,28 +1139,10 @@
   "c1a2bfd83a3e967a": "2026-10-30T18:50:57.295323+00:00",
   "55b140b7b592b4c2": "2026-10-30T19:05:57.757394+00:00",
   "75f4fda082ce649e": "2026-10-30T19:15:57.449787+00:00",
-  "55c927a9c2721998": "2026-10-30T19:25:57.448317+00:00"
+  "55c927a9c2721998": "2026-10-30T19:25:57.448317+00:00",
+  "8d0386ce6a869e3b": "2026-10-30T19:35:57.362130+00:00"
  },
  "recent": [
-  {
-   "title": "Prediction market Kalshi expands safeguards for young traders",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOa2NDSGV4RjlwNF9wLWxDLWxRLWlwVzZQb2pEZndfQnZuVmFUcVBtMGViSWZRbGR3emVqRElJdV94QS1FczBZTTFpdXFXV0QwNmhNdnRhcHdTTHd5UWU2ZXlweWx0WTRWN1ZjOTdUUW11MkNadGV0WWRZTVNxZ2w5QTFHVFBCV1hObGlUanltZVVGU0JOMGpKWmdqMlNWMTgzX2hJYUFPRld5ZGIyc0NN?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T19:29:41.088136+00:00",
-   "title_ru": "Рынок прогнозов Калши расширяет гарантии для молодых трейдеров"
-  },
-  {
-   "title": "A hidden ‘triple top’ in oil price charts suggests the rally has run out of gas",
-   "link": "https://www.marketwatch.com/story/a-hidden-triple-top-in-oil-price-charts-suggests-the-rally-has-run-out-of-gas-3743d5a1?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 2,
-   "ts": "2026-10-27T19:29:41.088136+00:00"
-  },
   {
    "title": "Higher tariffs on Canadian imports would be 'catastrophic,' Honda exec says",
    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOTldtRFI4Ni1TRHVGb3dzY1BvblpOVG0zMUNrSndrLUJBSHdnZWQtekdoSmM3cjRPN3N5UHRtQ0E2a0Z0M3NzOFRFTjliZW1XR3VoQjNIYTRMMktsaHZZVGFZdW41RUp2TnVhRFNzYS1RZmEzRERBVWhrTkRfQTF5YmxXTGRITVRfZlp3ZmtvLW5QblgyM3l1ZXhCVGd0Y1ROb0doaDN2WWI0Q25jNUlRS2xST2NlY1doVTRIdnZqUzg4UHpJZ21lS1BkdU5Xa2Q1?oc=5",
@@ -12172,6 +12152,19 @@
     "oil",
     "Russia"
    ]
+  },
+  {
+   "title": "Inflation dips in key German states in October, pointing to national fall",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQWTdVamplZlpGMFdHNko3OUNfRzVPWjhhNVVoXzUyb0xEZUdvZlJidVR3akRlZGVKUURfYmo4dHYxcW1vbS1KMGk5OTAyMXRtNFU3SzBuOHQwVDVRSzZvRjNYOWo3STJ4T0wzU0lpWXpVRlUtNXFId3B0V3ZtYnI2ZGFyLUl3a1RmTVc4VUdrM1pQeFU1ZlpsdG5jODlmLTM4RHJ6X1JoMTk1N0Vk?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-30T19:35:57.362130+00:00",
+   "title_ru": "Инфляция в ключевых землях Германии в октябре снизилась, что указывает на национальный спад",
+   "tags": [
+    "inflation"
+   ]
   }
  ],
  "last_digest": "2026-10-30",
@@ -18932,21 +18925,11 @@
    "0001184041-26-000006",
    "0001628280-26-068545",
    "0000073309-26-000133",
-   "0001771309-26-000005",
-   "0001225208-26-008562",
-   "0001225208-26-008568",
    "0000711377-26-000042",
-   "0001614143-26-000006",
-   "0001225208-26-008561",
-   "0001225208-26-008567",
-   "0001225208-26-008566",
-   "0001225208-26-008565",
-   "0001225208-26-008560",
+   "0001654954-26-009303",
    "0001801785-26-000010",
    "0001225208-26-008569",
-   "0001225208-26-008564",
-   "0001225208-26-008563",
-   "0001225208-26-008559"
+   "0000711377-26-000043"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
