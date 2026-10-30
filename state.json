@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "1ed50f99613827a2": "2026-10-27T06:02:36.866491+00:00",
   "6c6b718b8dcee938": "2026-10-27T06:12:36.895811+00:00",
   "e27ca67d24966e60": "2026-10-27T06:17:36.999394+00:00",
   "69c74331a9e1f78b": "2026-10-27T06:17:36.999394+00:00",
@@ -1118,21 +1117,12 @@
   "186752b3e19ce230": "2026-10-30T05:44:13.608753+00:00",
   "87935142bc5262c2": "2026-10-30T05:44:13.608753+00:00",
   "8f2f6982c614544d": "2026-10-30T05:54:13.560498+00:00",
-  "cefda2f5c2162c2d": "2026-10-30T05:59:40.223011+00:00"
+  "cefda2f5c2162c2d": "2026-10-30T05:59:40.223011+00:00",
+  "07358ca85386fb5b": "2026-10-30T06:04:40.247700+00:00",
+  "2ca9960c96c35004": "2026-10-30T06:04:40.247700+00:00",
+  "2f7b33f120d03be0": "2026-10-30T06:04:40.247700+00:00"
  },
  "recent": [
-  {
-   "title": "Donald Trump's biggest economic problem looks strangely familiar",
-   "link": "https://www.bbc.co.uk/news/articles/cwvg0ddz1z77o?at_medium=RSS&at_campaign=rss",
-   "sources": [
-    "BBC"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T06:02:36.866491+00:00",
-   "title_ru": "Самая большая экономическая проблема Дональда Трампа выглядит странно знакомой",
-   "lead": "Donald Trump heads into the US midterm elections with an issue similar to his political foe Joe Biden.",
-   "lead_ru": "Дональд Трамп отправляется на промежуточные выборы в США с вопросом, похожим на его политического противника Джо Байдена."
-  },
   {
    "title": "The Grease Hunters of Bengaluru Want Leftover Fryer Oil to Fuel India’s Jets",
    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQYW5sZ1lpQ0tjX0VhMlM5UnNKVmF5alZYWldzcmRsU2xKNWhWRmxnQWZBQWJHVGhIalc1UzE1cnNBTmg3WnRxdWJHaVFxcG5rcm1RaWU5T1hONGhVNndscUpwWkI0TzNxRDJxLVN5UF9Wa3JIRVpVMmY5T2JFNlZDZnJGRFVhaXZIajJ5b2tjeEk5Q1NjVHlxQ1BVZXhoOFdqVldLMEtYUXRxTE1NazNMM2hEckY4bHlVNTF0ZVFqQmVMcWxVN3hWdDRn?oc=5",
@@ -11897,6 +11887,49 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Taxes and high oil prices are set to spur more UK energy deals",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPajZvWmx1cVNMeHVPeHhIXzlVUnhwX3R6WTVnODhySnZvR2Y1QzZ4Y3FBaEUtS0hTenZHbmZWd2Fla0hXc3RpcG00SGtHckdtejJJT19nRFYzYVNrb2dtZ0FSR2lqSlRtZURQNHFqWU92Smh2SGdHMmcxeDduUnlXM19PdmtPekxtemJsbGZUYUNNUGUwdUxhQ2VZWjd4eGl4UGR5NTlDUUhLajQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-30T06:04:40.247700+00:00",
+   "title_ru": "Налоги и высокие цены на нефть будут стимулировать больше энергетических сделок в Великобритании",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "Indian shares inch higher on IT rally, earnings-led rebound; oil caps gains",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOMFp6N3FNV2FiY1Y2UFlWQ21yeTgyVlRKcTV6UEMzQTRiUFlTM0lJaWtYSzFpWHMydzQxSWZCeDZLV2hSUzZlNUwyRTNDY2llYnEydkp4WG95cUxzaW1Ed0ZRdUZGbUtjeW1CVWpIeERKR2xERGVWcjdVcTBHQTZiTzNyaHJsMlhpU3hSWnlESUZBc2ZIT3dUUWwwRGpVYk1fVVU2MEx2V1RfNk54NVBRVVFPWEtkcDQ2TUw4TFgwNUc?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-30T06:04:40.247700+00:00",
+   "title_ru": "Индийские акции выросли на 1 см на ИТ-ралли, отскок на основе прибыли; рост нефтяных лимитов",
+   "tags": [
+    "oil",
+    "markets"
+   ]
+  },
+  {
+   "title": "ECB’s Moulin Sees Policy as Measured With Most Prices Stable",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/ecb-s-moulin-sees-policy-as-measured-with-most-prices-stable",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-30T06:04:40.247700+00:00",
+   "title_ru": "Мулен считает, что политика ЕЦБ измеряется стабильностью большинства цен",
+   "lead": "The European Central Bank is responding in a measured way to inflation as most prices are stable and pressures are largely imported rather than driven by domestic factors, Governing Council member Emmanuel Moulin said.",
+   "lead_ru": "Европейский центральный банк умеренно реагирует на инфляцию, поскольку большинство цен стабильны, а давление в значительной степени импортируется, а не обусловлено внутренними факторами, сказал член Совета управляющих Эммануэль Мулен.",
+   "tags": [
+    "ECB",
+    "inflation"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -11926,7 +11959,6 @@
   "US Labor Statistics (BLS)": 0
  },
  "charts_sent": [
-  "2026-10-20-09",
   "2026-10-20-21",
   "2026-10-21-09",
   "2026-10-21-21",
@@ -11945,7 +11977,8 @@
   "2026-10-28-09",
   "2026-10-28-21",
   "2026-10-29-09",
-  "2026-10-29-21"
+  "2026-10-29-21",
+  "2026-10-30-09"
  ],
  "calendar": {
   "fetched": "2026-10-30T00:23:36.848351+00:00",
@@ -12755,7 +12788,7 @@
   "JPY|2026-10-30T02:31:00+00:00|BOJ Outlook Report",
   "JPY|2026-10-30T05:30:00+00:00|BOJ Press Conference"
  ],
- "last_morning": "2026-10-29",
+ "last_morning": "2026-10-30",
  "all_down_alerted": false,
  "trades": {
   "congress": [
@@ -18592,8 +18625,8 @@
    "0001178579-26-000022",
    "0001437749-26-034034",
    "0000944075-26-000076",
-   "0000944075-26-000077",
    "0001392942-26-000016",
+   "0000944075-26-000077",
    "0001628280-26-068337",
    "0000944075-26-000075",
    "0000944075-26-000079",
