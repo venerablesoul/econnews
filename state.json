@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c5635bedb641a42f": "2026-10-27T06:22:36.893129+00:00",
-  "f15d9a260b5cb4fc": "2026-10-27T06:22:36.893129+00:00",
-  "18d1c5815459bcf1": "2026-10-27T06:22:36.893129+00:00",
-  "8caa8bca4f47a127": "2026-10-27T06:22:36.893129+00:00",
-  "ec8bcdad5f52321c": "2026-10-27T06:22:36.893129+00:00",
   "9ec9fcc21ef49b60": "2026-10-27T06:32:36.903361+00:00",
   "0164e642265173bf": "2026-10-27T06:32:36.903361+00:00",
   "d6e7426a7dbe5795": "2026-10-27T06:37:36.845937+00:00",
@@ -1121,44 +1116,6 @@
   "ef8f97356160e4e6": "2026-10-30T06:09:40.224746+00:00"
  },
  "recent": [
-  {
-   "title": "BOJ’s Price Trend Indicator Jumps to Above 3%, Backing Hike Case",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-27/boj-s-price-trend-indicator-jumps-to-above-3-backing-hike-case",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-27T06:22:36.893129+00:00",
-   "title_ru": "Индикатор ценового тренда БАНКА ЯПОНИИ подскочил выше 3%, поддерживая походный сценарий",
-   "lead": "The Bank of Japan’s gauge of underlying inflation surged to the highest in three years, well above the bank’s 2% target, backing the case for authorities to continue raising interest rates.",
-   "lead_ru": "Индекс базовой инфляции Банка Японии вырос до самого высокого уровня за последние три года, значительно превысив целевой показатель банка в 2%, что подтверждает необходимость продолжения властями повышения процентных ставок.",
-   "tags": [
-    "rates",
-    "inflation"
-   ]
-  },
-  {
-   "title": "UK budget: Markets on watch for new finance minister's plans",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPTEp6MlpsSWVwcGlKWklQMml1c09YQURUdzNmallBSE9uemVQLXZyeDZRTjFIRHJJbldoV1RjRTB2dkE2N091eHVVdXdGeWpxdm82czMtVEZ5eXdGTWR0MHlsNjgzeWd0c3NlNDZISGxnX2MtTHZkLWFFTkxzemlhS21tcUZFaWhaNkFmaGliZ3lGbUNpTk9GOThqWW1BMFlESmVBWmF5QmJoVGhJLTdrVnhSVnpQZw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-27T06:22:36.893129+00:00",
-   "title_ru": "Бюджет Великобритании: рынки следят за планами нового министра финансов"
-  },
-  {
-   "title": "Will the Budget pass Burnham's Makerfield test?",
-   "link": "https://www.bbc.co.uk/news/articles/cqzjx1e9ylv1o?at_medium=RSS&at_campaign=rss",
-   "sources": [
-    "BBC"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T06:22:36.893129+00:00",
-   "title_ru": "Пройдет ли Budget тест Burnham's Makerfield?",
-   "lead": "People in the prime minister's constituency say rising costs are squeezing household finances.",
-   "lead_ru": "Люди в округе премьер-министра говорят, что растущие расходы сжимают финансы домохозяйств."
-  },
   {
    "title": "Anthropic IPO Reignites AI Trade in Asia",
    "link": "https://www.bloomberg.com/news/videos/2026-10-27/insight-with-haslinda-amin-10-27-2026-video",
@@ -11957,7 +11914,7 @@
   "2026-10-30-09"
  ],
  "calendar": {
-  "fetched": "2026-10-30T00:23:36.848351+00:00",
+  "fetched": "2026-10-30T06:24:40.196426+00:00",
   "events": [
    {
     "title": "Bank Holiday",
@@ -12512,9 +12469,17 @@
     "previous": "0.6%"
    },
    {
+    "title": "BOJ Outlook Report",
+    "country": "JPY",
+    "ts": "2026-10-30T03:02:00+00:00",
+    "impact": "High",
+    "forecast": "",
+    "previous": ""
+   },
+   {
     "title": "BOJ Policy Rate",
     "country": "JPY",
-    "ts": "2026-10-30T02:30:00+00:00",
+    "ts": "2026-10-30T03:02:00+00:00",
     "impact": "High",
     "forecast": "<1.25%",
     "previous": "<1.25%"
@@ -12522,15 +12487,7 @@
    {
     "title": "Monetary Policy Statement",
     "country": "JPY",
-    "ts": "2026-10-30T02:30:00+00:00",
-    "impact": "High",
-    "forecast": "",
-    "previous": ""
-   },
-   {
-    "title": "BOJ Outlook Report",
-    "country": "JPY",
-    "ts": "2026-10-30T02:31:00+00:00",
+    "ts": "2026-10-30T03:02:00+00:00",
     "impact": "High",
     "forecast": "",
     "previous": ""
