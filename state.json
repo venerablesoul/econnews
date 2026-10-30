@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e35f955997672fda": "2026-10-27T01:32:36.892256+00:00",
-  "94c6a4dbff015782": "2026-10-27T01:32:36.892256+00:00",
   "9d6af7635429725d": "2026-10-27T01:57:36.935728+00:00",
   "167d0964e22cd241": "2026-10-27T02:02:36.920031+00:00",
   "be98aed0cd629c0d": "2026-10-27T02:12:36.907197+00:00",
@@ -1094,32 +1092,6 @@
   "c76b6060c3ee830d": "2026-10-30T01:29:13.626264+00:00"
  },
  "recent": [
-  {
-   "title": "The Tanker Tycoon's WhatsApps Driving a Disputed Oil Benchmark",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPLUZtMldnbzV2dTRhWW9xQi1VdGVMZmlNRHI1VHFjaWQ0cTFJbDRfSnp3VjBFT284dHJQd0JiMjZVbXpaRFZkWVUwb1V6SzBiMFJMWXJ4cFJhTUdSUGFiQ0hQVHV4RHVNRGlQUlppMENvZzVmYkNPRm1vQ20yV0xGMVZkTDJmY3J0MDJqTU9mbW1fRVZYMTJ0Q0hhbHlfa2JQQmtseDI2RGpyenZaRkozRDB3N1lLLTVQSkZNWDNDZ0g?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T01:32:36.892256+00:00",
-   "title_ru": "WhatsApps танкерного магната влияют на спорный нефтяной эталон",
-   "tags": [
-    "oil"
-   ]
-  },
-  {
-   "title": "JYP Entertainment shares rally on report of tender offer to buy up to 50% stake",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNN2YyWkNlV3FQQXNSMWxBM196dUxLVkttWEhib1hmVnhwTWhzMGpQMXNtaU1GQVRaaXlXMG5XbExlcklTR1dEc1hNRmpuT1Z5Q2tuMmxCZnJtS3lVQ2V2OVlFYVRSemdDbXNzQ0dzTlVJelV3SnZVTXE5aWNwTjRUM2t5ekhsYXJkWXRyYUd4XzRqNk1obEJKa1FHNEt4Zzk0Sy1FS29xVWJxTDZsY09Jb2NQZU9USS1zRVA4YmRR?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T01:32:36.892256+00:00",
-   "title_ru": "Акции JYP Entertainment растут после сообщения о тендерном предложении о покупке до 50% акций",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Asian stocks surge as Anthropic IPO lifts sentiment ahead of earnings, central banks",
    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQdEdzTDdxbEtNX1l6VDJMdF9NTGpUNEJPYy1jaUo2SkllaGhJZnZvNzZOOTd5MkZHV3p5T2ZhcjlkcWduOXp5elFKREQ0bFBib0pXUzNKdGI2QmE3eWZxRlktZXhSZG0tQzQ4U1dXNWxOZktiZVZvc1pNUERsYUFLVUJYSQ?oc=5",
@@ -12538,7 +12510,10 @@
   "USD|2026-10-29T12:30:00+00:00|Core PCE Price Index m/m",
   "EUR|2026-10-29T13:15:00+00:00|Main Refinancing Rate",
   "EUR|2026-10-29T13:15:00+00:00|Monetary Policy Statement",
-  "EUR|2026-10-29T13:45:00+00:00|ECB Press Conference"
+  "EUR|2026-10-29T13:45:00+00:00|ECB Press Conference",
+  "JPY|2026-10-30T02:30:00+00:00|BOJ Policy Rate",
+  "JPY|2026-10-30T02:30:00+00:00|Monetary Policy Statement",
+  "JPY|2026-10-30T02:31:00+00:00|BOJ Outlook Report"
  ],
  "last_morning": "2026-10-29",
  "all_down_alerted": false,
@@ -18371,8 +18346,8 @@
   "checked": "2026-10-30T01:24:13.654956+00:00",
   "sec_seen": [
    "0001437749-26-034036",
-   "0001437749-26-034032",
    "0001437749-26-034038",
+   "0001437749-26-034032",
    "0001895111-26-000021",
    "0001628280-26-068337",
    "0001437749-26-034042",
@@ -18383,8 +18358,8 @@
    "0001437749-26-034035",
    "0001130144-26-000062",
    "0001140361-26-041201",
-   "0001040470-26-000323",
    "0001437749-26-034040",
+   "0001040470-26-000323",
    "0000923738-26-000048",
    "0001193125-26-438480",
    "0000944075-26-000078",
