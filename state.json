@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "1900f392f00e2d60": "2026-10-27T08:28:09.241101+00:00",
-  "3a75d7373b422a0e": "2026-10-27T08:28:09.241101+00:00",
-  "985224fa8646181a": "2026-10-27T08:28:09.241101+00:00",
   "0f35229a60246330": "2026-10-27T08:38:09.338288+00:00",
   "9fd46876a7d9e537": "2026-10-27T08:38:09.338288+00:00",
   "58bca226290047f8": "2026-10-27T08:48:09.304102+00:00",
@@ -1119,24 +1116,11 @@
   "86a2534e4818ab36": "2026-10-30T08:19:40.243391+00:00",
   "39ce4f6193d1dc6e": "2026-10-30T08:24:40.252012+00:00",
   "638b298cc5894ac3": "2026-10-30T08:24:40.252012+00:00",
-  "6c2884ed088b344d": "2026-10-30T08:24:40.252012+00:00"
+  "6c2884ed088b344d": "2026-10-30T08:24:40.252012+00:00",
+  "b9c2e85e1ef7774c": "2026-10-30T08:29:40.188359+00:00",
+  "0e621910e6540751": "2026-10-30T08:29:40.188359+00:00"
  },
  "recent": [
-  {
-   "title": "ESMA Chair on EU Market Volatility, Supervision",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-27/esma-chair-on-eu-market-volatility-supervision-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T08:28:09.241101+00:00",
-   "title_ru": "Председатель ESMA по вопросам волатильности рынка ЕС и надзора",
-   "lead": "The European Securities and Markets Authority is closely monitoring market activity amid volatility in sovereign bond markets and high tech-stock valuations.",
-   "lead_ru": "Европейское управление по ценным бумагам и рынкам внимательно следит за рыночной активностью на фоне волатильности на рынках суверенных облигаций и оценок акций высокотехнологичных компаний.",
-   "tags": [
-    "bonds"
-   ]
-  },
   {
    "title": "European Stocks Pulled Lower by Banks as HSBC Results Disappoint",
    "link": "https://www.bloomberg.com/news/articles/2026-10-27/european-stocks-pulled-lower-by-banks-as-hsbc-results-disappoint",
@@ -11874,6 +11858,16 @@
    "score": 3,
    "ts": "2026-10-30T08:24:40.252012+00:00",
    "title_ru": "Великобритания потребует экономических выгод от заключения крупных иностранных оборонных контрактов"
+  },
+  {
+   "title": "UK house price growth slows to lowest since January 2024",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOQ2paMTA2Z1FBSUtvUHBOSXNKS19ubks3VjFPbGVJNm9FZUZnNmw0QTMzRi02QTRmOG5rWTV3ZkNmVmxPU3A3TkNGZXB3aXpvZ0tVdGVHeWViLS1MXzQwcGpvOEM5ZDJ3ZGFWSzEwNE1nWUJtZ05QWUJKZXJZbGF3Rzlpd1hfVXhyaW9QSnFfX1lPM1VWcWVMNElYNFJOWkU?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T08:29:40.188359+00:00",
+   "title_ru": "Рост цен на жилье в Великобритании замедлился до самого низкого уровня с января 2024 года"
   }
  ],
  "last_digest": "2026-10-29",
@@ -18569,8 +18563,8 @@
    "0001178579-26-000022",
    "0001437749-26-034034",
    "0000944075-26-000076",
-   "0001392942-26-000016",
    "0000944075-26-000077",
+   "0001392942-26-000016",
    "0001628280-26-068337",
    "0000944075-26-000075",
    "0000944075-26-000079",
