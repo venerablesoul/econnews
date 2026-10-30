@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "034f9f5db416b0bd": "2026-10-27T05:47:36.844704+00:00",
-  "7ec9edb20ede2407": "2026-10-27T05:52:36.869861+00:00",
   "1ed50f99613827a2": "2026-10-27T06:02:36.866491+00:00",
   "6c6b718b8dcee938": "2026-10-27T06:12:36.895811+00:00",
   "e27ca67d24966e60": "2026-10-27T06:17:36.999394+00:00",
@@ -1118,19 +1116,10 @@
   "06fe5200083e6e17": "2026-10-30T05:34:13.604250+00:00",
   "50d96a0891f4bc10": "2026-10-30T05:39:13.578652+00:00",
   "186752b3e19ce230": "2026-10-30T05:44:13.608753+00:00",
-  "87935142bc5262c2": "2026-10-30T05:44:13.608753+00:00"
+  "87935142bc5262c2": "2026-10-30T05:44:13.608753+00:00",
+  "8f2f6982c614544d": "2026-10-30T05:54:13.560498+00:00"
  },
  "recent": [
-  {
-   "title": "EU seeks to widen market access to counter trade restrictions, Germany's Merz says",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQSkZSOUw3U0tLdEdHZUF4ckFzWXBYOTVzSThCRFU4a1B5dWFXSG9jLTNZanJGOXo1Q0ktS3FFeUpJMEpUMkhPOVl0RTVPalVrYlZOS0hGM09ISWxyMmZuVUE0dmp6RTEzZHA1N3BiUHRYbUw4eUw5WTdOZm9ZdWo3ZjBoQ1B4WlVqbVdMYW85TkFSSFY2SFI4MHA1OS1ZX0t6Z191MGEwRUkwOHRxQmtlYQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-27T05:52:36.869861+00:00",
-   "title_ru": "ЕС стремится расширить доступ к рынку, чтобы противостоять торговым ограничениям, говорит Мерц из Германии"
-  },
   {
    "title": "Donald Trump's biggest economic problem looks strangely familiar",
    "link": "https://www.bbc.co.uk/news/articles/cwvg0ddz1z77o?at_medium=RSS&at_campaign=rss",
@@ -11878,6 +11867,19 @@
    "title_ru": "Японский Nikkei упал на 3%, поскольку акции технологических компаний упали на опасениях по поводу ИИ",
    "tags": [
     "markets"
+   ]
+  },
+  {
+   "title": "US promises tariff relief in talks with Audi on Georgia plant, sources say",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOd3Nla2xMeVNaMDYyMkZHQ0pvNzM3b1BqdEJIS3pLN0NKZm1VbjlhUnJVdm43RzYyTHhJWnR0dFdkaXR4amRNNjhJU29ibEpWanZjcEdzT3h6MzVqa3dYRXp1c3pEamVaOVRNNXRiZ0p6RGg1aS1lek1VaFdZYTN0VFhWakhhZEdBX0tqUU1BUWdhX0pqU21fcUVyMWlDTUppN1lkMFVsTjN6YnhMb29UU25LS29SbUVjVmpMSzFSTENuR3M3UkRmRHJCcnY2QQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-30T05:54:13.560498+00:00",
+   "title_ru": "США обещают снижение тарифов на переговорах с Audi о заводе в Грузии, говорят источники",
+   "tags": [
+    "tariffs"
    ]
   }
  ],
