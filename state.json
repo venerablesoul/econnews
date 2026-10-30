@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "82ab5bbebbecf866": "2026-10-27T13:03:43.001384+00:00",
-  "268abdf81ba4186b": "2026-10-27T13:08:42.959876+00:00",
   "bad2cbe66c27d9a7": "2026-10-27T13:18:42.962805+00:00",
   "8e43d83759c86303": "2026-10-27T13:33:42.977434+00:00",
   "30a95cf37a254652": "2026-10-27T13:33:42.977434+00:00",
@@ -1124,34 +1122,12 @@
   "2b70ae64cc4d02e3": "2026-10-30T12:45:10.499097+00:00",
   "6cec15d7f7a5897c": "2026-10-30T12:50:10.564719+00:00",
   "a90e187ab8b9199d": "2026-10-30T13:00:10.541996+00:00",
-  "1e1709a75112567a": "2026-10-30T13:00:10.541996+00:00"
+  "1e1709a75112567a": "2026-10-30T13:00:10.541996+00:00",
+  "60bbe3449c73988c": "2026-10-30T13:10:10.543091+00:00",
+  "ef8cb05843f2ffbc": "2026-10-30T13:10:10.543091+00:00",
+  "e043b55e0631a938": "2026-10-30T13:10:10.543091+00:00"
  },
  "recent": [
-  {
-   "title": "JetBlue shares rally as airline seeks to calm financial concerns",
-   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPTHg0SWkxcXB1dHhiU1pUdGdjaVhwVnlvNVpPZ0dTVjNyRDBXM3VRNGJ0c3dhZWpGMnd4OVBJVUM0dlBGdjBuWlkybGdkUU1TUEt5Uk02SUs5RnZ6T28yT3h1SlQzSmtGNGozNXp5VjR1Sk0yVmtpdmxjMlhpYmE3RV9vUHVEd05sVDNteTl0Zmdqb2pfbHlXSW9wYnBrOGxHZ0NabkNR?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T13:03:43.001384+00:00",
-   "title_ru": "Акции JetBlue растут, поскольку авиакомпания стремится успокоить финансовые проблемы",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "Anthropic IPO Filing Calms Nerves With Signs of Healthy Growth",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-27/anthropic-ipo-filing-calms-nerves-with-signs-of-healthy-growth",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T13:08:42.959876+00:00",
-   "title_ru": "Антропная подача заявок на IPO успокаивает нервы с признаками здорового роста",
-   "lead": "Anthropic PBC set itself a challenge by opening its books to prospective IPO investors right after a punishing week for the artificial intelligence trade. When Wall Street took a close look, it generally liked what it saw.",
-   "lead_ru": "Anthropic PBC поставил перед собой сложную задачу, открыв свои книги для потенциальных инвесторов в IPO сразу после тяжелой недели для торговли искусственным интеллектом. Когда Уолл-стрит внимательно посмотрела, ей в целом понравилось то, что она увидела."
-  },
   {
    "title": "Mapping the Market: Oil may be in for a slide",
    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFAzREVRR01MNnJBRXNPSk1udk5yNnU5VjZjTGowVW94NGZsdVd5YW00REE1Q013QWpGTWtQT184cWJJNlNScWduTWVGdmFHc3Q5MlVFVU5yWloyNjhvc1UzV0toeThrUWhvN21wdWpLVDdlQ1E0ZmtzMQ?oc=5",
@@ -11980,6 +11956,28 @@
    "score": 3,
    "ts": "2026-10-30T13:00:10.541996+00:00",
    "title_ru": "Продажи PUMA, сокращенные запасы убеждают инвесторов по мере развития партнерства ANTA"
+  },
+  {
+   "title": "Japan’s Omron Targets India for Manufacturing, Exports Push",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOV2xtWGh3QUxLcERjQlBzNXpkazI2MlZjeE5meFpWdUE3SFA2dE5kSzJ6Qk9Bb2h3Vmd5NXU3RGhnLTZHTkFPRkI3OWdUc29uamx0RDRUQTl3d2cxdVVjU19KbWFIdjVZVmlodS1aNUFITWx1MU5UbV8taEkzcFNibno4OXc1T0ZkR2pWUXp3MWkwLVJ2M095Q2E2SXJJOTFFdW0zNUlOZ3NERUVXN1E?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-30T13:10:10.543091+00:00",
+   "title_ru": "Японская компания Omron нацелилась на Индию в сфере производства и экспорта"
+  },
+  {
+   "title": "Wall Street Turns Ruthless as Earnings Misses Fuel Deep Selloffs",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/wall-street-turns-ruthless-as-earnings-misses-fuel-deep-selloffs",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T13:10:10.543091+00:00",
+   "title_ru": "Уолл-стрит становится безжалостной, поскольку нехватка прибыли приводит к глубоким распродажам",
+   "lead": "Equity investors are meting out some of the harshest punishments ever for companies that miss expectations, just as strategists sound the alarm that earnings growth has likely peaked.",
+   "lead_ru": "Инвесторы в акции подвергают одни из самых суровых наказаний когда-либо компаниям, которые не оправдывают ожиданий, в то время как стратеги бьют тревогу о том, что рост прибыли, вероятно, достиг пика."
   }
  ],
  "last_digest": "2026-10-29",
@@ -18668,31 +18666,24 @@
   },
   "checked": "2026-10-30T12:45:10.499097+00:00",
   "sec_seen": [
-   "0002141713-26-000007",
    "0001628280-26-068399",
    "0000902664-26-004313",
    "0000711377-26-000037",
-   "0001341767-26-000008",
    "0001628280-26-068424",
-   "0000711377-26-000035",
    "0001628280-26-068405",
    "0001628280-26-068409",
    "0000711377-26-000038",
-   "0002066642-26-000004",
-   "0002054266-26-000008",
    "0001493152-26-049356",
-   "0001812730-26-000008",
    "0001168534-26-000011",
    "0001628280-26-068412",
    "0001829340-26-000014",
    "0002084269-26-000003",
    "0001628280-26-068403",
    "0001628280-26-068420",
-   "0000711377-26-000036",
-   "0001888543-26-000002",
    "0001628280-26-068416",
    "0001628280-26-068401",
    "0001628280-26-068397",
+   "0001493152-26-049370",
    "0001411587-26-000002",
    "0001628280-26-068418",
    "0001628280-26-068407"
