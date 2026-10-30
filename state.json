@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c0d57585183229aa": "2026-10-27T11:18:09.282977+00:00",
-  "0f74a9aa9d7f9aa7": "2026-10-27T11:18:09.282977+00:00",
-  "22d7efabd70a945d": "2026-10-27T11:18:09.282977+00:00",
   "3f7b97fe86363cb0": "2026-10-27T11:23:09.327885+00:00",
   "770d60ba0a365467": "2026-10-27T11:38:09.269883+00:00",
   "5666067f6af91284": "2026-10-27T11:38:09.269883+00:00",
@@ -1139,42 +1136,10 @@
   "f7c020ef3dea170b": "2026-10-30T11:04:40.390015+00:00",
   "a5b77a69f6e63586": "2026-10-30T11:09:40.367576+00:00",
   "2c45ee29dd17b271": "2026-10-30T11:14:40.412416+00:00",
-  "634ed43f793359ce": "2026-10-30T11:14:40.412416+00:00"
+  "634ed43f793359ce": "2026-10-30T11:14:40.412416+00:00",
+  "b8e4c6f87b753f45": "2026-10-30T11:19:40.290257+00:00"
  },
  "recent": [
-  {
-   "title": "Acts of God Meet Acts of AI in Private Equity’s New Debt Play",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-27/acts-of-god-meet-acts-of-ai-in-private-equity-s-new-debt-play",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T11:18:09.282977+00:00",
-   "title_ru": "Действия Бога встречаются с действиями ИИ в новой долговой игре частного капитала",
-   "lead": "Force majeure has long protected companies from acts of God. Now some borrowers want protection from acts of AI.",
-   "lead_ru": "Форс-мажорные обстоятельства уже давно защищают компании от стихийных бедствий. Теперь некоторые заемщики хотят защиты от действий ИИ."
-  },
-  {
-   "title": "RBI’s Gupta Says Emerging Markets Must Bolster Domestic Finances",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-27/rbi-s-gupta-says-emerging-markets-must-bolster-domestic-finances",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T11:18:09.282977+00:00",
-   "title_ru": "Гупта из RBI говорит, что развивающиеся рынки должны поддерживать внутренние финансы",
-   "lead": "Emerging markets, including India, need to strengthen their finances and build buffers against volatile foreign capital, Reserve Bank of India Deputy Governor Poonam Gupta said Tuesday.",
-   "lead_ru": "Развивающимся рынкам, включая Индию, необходимо укрепить свои финансы и создать буферы против волатильного иностранного капитала, заявил во вторник заместитель председателя Резервного банка Индии Пунам Гупта."
-  },
-  {
-   "title": "AI stocks haven’t played by the normal valuation rules. Now that rates are higher, they may have to, says UBS",
-   "link": "https://www.marketwatch.com/story/ai-stocks-havent-played-by-the-normal-valuation-rules-now-that-rates-are-higher-they-may-have-to-says-ubs-f8c78948?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-27T11:18:09.282977+00:00"
-  },
   {
    "title": "Fed rate hikes are coming, but not this week: CNBC survey",
    "link": "https://www.cnbc.com/2026/10/27/federal-reserve-rate-hike-timing-expectations.html",
@@ -12095,6 +12060,21 @@
    "lead_ru": "Если ИИ приведет к тому, что работники потеряют работу, домохозяйства столкнутся с кредитным стрессом",
    "tags": [
     "jobs"
+   ]
+  },
+  {
+   "title": "UK Debt Chief Sees Volatility Driving Demand for Short Gilts",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/uk-debt-chief-sees-volatility-driving-demand-for-short-gilts",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T11:19:40.290257+00:00",
+   "title_ru": "Глава долгового ведомства Великобритании считает, что волатильность стимулирует спрос на короткие облигации",
+   "lead": "The UK Debt Management Office is pulling back further from long-dated gilts to meet investor demand for shorter tenors that are less exposed to swings in the bond market, Chief Executive Jessica Pulay said.",
+   "lead_ru": "Управление по управлению долгом Великобритании продолжает отказываться от долгосрочных облигаций, чтобы удовлетворить спрос инвесторов на более короткие сроки, которые менее подвержены колебаниям на рынке облигаций, заявила генеральный директор Джессика Пулей.",
+   "tags": [
+    "bonds"
    ]
   }
  ],
