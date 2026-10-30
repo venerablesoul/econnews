@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "80b569dd368e358c": "2026-10-27T19:54:40.867572+00:00",
   "fbffce1618f71a4c": "2026-10-27T20:04:43.356827+00:00",
   "c1142ce7d5790d06": "2026-10-27T20:04:43.356827+00:00",
   "c371b89cc81ba493": "2026-10-27T20:09:44.686763+00:00",
@@ -1140,25 +1139,10 @@
   "8d0386ce6a869e3b": "2026-10-30T19:35:57.362130+00:00",
   "9bd14b503fcad369": "2026-10-30T19:45:57.448462+00:00",
   "83583db568662751": "2026-10-30T19:50:57.310337+00:00",
-  "4efb54a302f00cce": "2026-10-30T19:50:57.310337+00:00"
+  "4efb54a302f00cce": "2026-10-30T19:50:57.310337+00:00",
+  "28866d135f8224d9": "2026-10-30T19:55:57.438817+00:00"
  },
  "recent": [
-  {
-   "title": "PDVSA Bonds Deemed Valid in US Ruling Amid Battle for Citgo",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-27/pdvsa-bonds-deemed-valid-in-us-ruling-amid-battle-for-citgo",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T19:54:40.867572+00:00",
-   "title_ru": "Облигации PDVSA признаны действительными в решении США на фоне битвы за Citgo",
-   "lead": "A US appeals court upheld the validity of a series of bonds issued by Venezuela’s state oil company, clearing the way for holders to seek payment from the sale of Citgo Petroleum Corp.’s parent.",
-   "lead_ru": "Апелляционный суд США подтвердил действительность серии облигаций, выпущенных государственной нефтяной компанией Венесуэлы, что открыло держателям возможность требовать выплаты от продажи материнской компании Citgo Petroleum Corp.",
-   "tags": [
-    "oil",
-    "bonds"
-   ]
-  },
   {
    "title": "Canadian dollar extends pullback from 5-week high ahead of BoC rate decision",
    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPWVdveVBPcllISlNEcmFPc1RfVEVyMDRRUWlCNUYzX2hCUDZzLVFHRUlvUnNWczVZU2lfVTFSUWk0cTdwUmEwb3Z0M19Hc3hKbk5kQlY2T0l4dUNwWUF6NEktNEZYdW5sM1doOUtXaVZtaVBTQXBIWklkWDlvR3dEcUJ0X2lvT0JxanlRQmF6WEtuQTFNS2t2OFFyUDJTN2xFZkVDS0JXVlFJU1d6aTBNbDYycw?oc=5",
@@ -12180,6 +12164,21 @@
    "tags": [
     "dollar"
    ]
+  },
+  {
+   "title": "Stock Volatility Surges as Plunge Has Investors Seeking Cover",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/stock-volatility-surges-as-plunge-has-investors-seeking-cover",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T19:55:57.438817+00:00",
+   "title_ru": "Волатильность акций растет, поскольку падение заставляет инвесторов искать укрытие",
+   "lead": "US options volatility spiked Friday as technology stocks were battered by disappointing earnings.",
+   "lead_ru": "В пятницу волатильность опционов в США резко возросла, поскольку акции технологических компаний пострадали от разочаровывающих прибылей.",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-30",
@@ -18935,11 +18934,11 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-30T18:55:57.351368+00:00",
+  "checked": "2026-10-30T19:55:57.438817+00:00",
   "sec_seen": [
    "0001031203-26-000149",
-   "0001654954-26-009303",
    "0001697316-26-000014",
+   "0001654954-26-009303",
    "0000711377-26-000043"
   ],
   "errors": {
