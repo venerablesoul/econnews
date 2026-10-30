@@ -1130,7 +1130,9 @@
   "8b1d98adb1735f50": "2026-10-30T16:15:10.696021+00:00",
   "4b7af1d4a1539ce1": "2026-10-30T16:20:10.562684+00:00",
   "b75c11e31a8eea14": "2026-10-30T16:20:10.562684+00:00",
-  "227f0aa26d35eb2b": "2026-10-30T16:25:10.634920+00:00"
+  "227f0aa26d35eb2b": "2026-10-30T16:25:10.634920+00:00",
+  "866c344ffc423e5e": "2026-10-30T16:30:10.596732+00:00",
+  "7fad813740d1383c": "2026-10-30T16:30:10.596732+00:00"
  },
  "recent": [
   {
@@ -12006,6 +12008,31 @@
    ],
    "score": 1,
    "ts": "2026-10-30T16:25:10.634920+00:00"
+  },
+  {
+   "title": "Housing, Food Costs Make Up Half of Americans’ Spending, Most in 15 Years",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/housing-food-costs-make-up-half-of-americans-spending-most-in-15-years",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T16:30:10.596732+00:00",
+   "title_ru": "Затраты на жилье и еду составляют половину расходов американцев, больше всего за 15 лет",
+   "lead": "Housing and food made up nearly half of US households’ spending in 2025, the most in 15 years amid rising rents, homeowner costs and beef prices.",
+   "lead_ru": "Жилье и продукты питания составили почти половину расходов домохозяйств США в 2025 году, что является максимальным показателем за 15 лет на фоне роста арендной платы, расходов домовладельцев и цен на говядину."
+  },
+  {
+   "title": "NatWest shares slide on weaker than expected interest income outlook",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQNXRxOFJPTFlPdjNMOWdtMzZTTmJEZDJZVi14aTJqc19HTUpaVjc2YzdBb0JLQVAwajZEWFkwbWtra3MxNWlvNGhzdFNBVm44RC1kbW9YYXdRZnoyVlVoZ2ZrVm1pdkloSFRtTWI0bDVNcml4SHVhS0tOVEtCYVRRbk9Qd1UwcXpQLTlXSm9Ub0ZRN093ZXJXbTB4YlhHY1Z4UkxjcE1QUlpSMWNlejJFZFV3?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T16:30:10.596732+00:00",
+   "title_ru": "Акции NatWest падают из-за более слабых, чем ожидалось, прогнозов по процентным доходам",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -18694,6 +18721,7 @@
   },
   "checked": "2026-10-30T15:45:10.711069+00:00",
   "sec_seen": [
+   "0002099104-26-000004",
    "0002099428-26-000005",
    "0001193125-26-440960",
    "0002099111-26-000004"
