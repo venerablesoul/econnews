@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "39d500e8670147c4": "2026-10-27T17:18:43.012695+00:00",
   "581f8d6e07fe269b": "2026-10-27T17:23:42.980948+00:00",
   "879a2f9e2dd3f878": "2026-10-27T17:28:43.009166+00:00",
   "1db7452a004fa418": "2026-10-27T17:44:41.181968+00:00",
@@ -1133,24 +1132,10 @@
   "f128be813c118189": "2026-10-30T17:00:59.597506+00:00",
   "53785dd961581b4a": "2026-10-30T17:05:57.537882+00:00",
   "fb5309b4254af486": "2026-10-30T17:10:57.551050+00:00",
-  "1b1accd6d9e9729e": "2026-10-30T17:15:57.527913+00:00"
+  "1b1accd6d9e9729e": "2026-10-30T17:15:57.527913+00:00",
+  "6219eb7ceac1e324": "2026-10-30T17:20:57.522990+00:00"
  },
  "recent": [
-  {
-   "title": "‘Loser’ Stocks Are Appealing Amid AI Frenzy, Causeway CEO Says",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-27/-loser-stocks-are-appealing-amid-ai-frenzy-causeway-ceo-says",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T17:18:43.012695+00:00",
-   "title_ru": "Акции «неудачников» привлекательны на фоне безумия искусственного интеллекта, говорит генеральный директор Causeway",
-   "lead": "Investors should look beyond the biggest winners in the AI boom and bet on overlooked stocks, according to Causeway Capital Management Chief Executive Officer Sarah Ketterer.",
-   "lead_ru": "По мнению Сары Кеттерер, главного исполнительного директора Causeway Capital Management, инвесторам следует смотреть не только на крупнейших победителей бума искусственного интеллекта, но и делать ставку на игнорируемые акции.",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Ормуз выставил счет // Потребители переплатили за топливо полтриллиона долларов",
    "link": "https://www.kommersant.ru/doc/9062128",
@@ -12090,6 +12075,21 @@
    ],
    "score": 1,
    "ts": "2026-10-30T17:15:57.527913+00:00"
+  },
+  {
+   "title": "Bessemer Trust CEO: Constructive on Markets",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-30/bessemer-trust-ceo-constructive-on-markets-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T17:20:57.522990+00:00",
+   "title_ru": "Генеральный директор Bessemer Trust: Конструктивность на рынках",
+   "lead": "Disappointing earnings from Intel and Amazon add to a brutal week for the AI trade, fueling a flight into Treasuries. Bessemer Trust CEO Holly MacDonald breaks down where the firm sees pockets of opportunity in this market.",
+   "lead_ru": "Разочаровывающие доходы от Intel и Amazon добавляют жестокой недели для торговли ИИ, подпитывая бегство в казначейские облигации. Генеральный директор Bessemer Trust Холли Макдональд рассказывает о том, где фирма видит карманы возможностей на этом рынке.",
+   "tags": [
+    "bonds"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -18780,8 +18780,11 @@
   "sec_seen": [
    "0001213900-26-114242",
    "0001193125-26-441076",
+   "0001785595-26-000018",
+   "0001830165-26-000042",
    "0002097107-26-000005",
    "0001045957-26-000012",
+   "0001956982-26-000007",
    "0001193125-26-441077"
   ],
   "errors": {
