@@ -1092,7 +1092,9 @@
   "4115be16a549a8ee": "2026-10-30T00:28:36.937656+00:00",
   "a8ce55892436498f": "2026-10-30T00:34:13.589662+00:00",
   "374a163ffe94c770": "2026-10-30T00:44:13.642202+00:00",
-  "b4d6303194a7c0b6": "2026-10-30T00:44:13.642202+00:00"
+  "b4d6303194a7c0b6": "2026-10-30T00:44:13.642202+00:00",
+  "a23f59bdb57e7e77": "2026-10-30T00:49:13.620187+00:00",
+  "c8e1491574775b52": "2026-10-30T00:54:13.698972+00:00"
  },
  "recent": [
   {
@@ -11676,6 +11678,16 @@
     "dollar",
     "crypto"
    ]
+  },
+  {
+   "title": "Amazon Spending Soars Amid Slowing Growth of Online Business",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNZVVjYXpCMDllTnNYR3c2aHZCNDc5ck5QSHh2VEUxMUo1RVNKYVlNemFiTWFzQjZST0FlSnFCZUxlMl9xWkhOLUFPYjBwdzlGdnBhNUdnWnpOMmUzMVhHSVQ2X2N6dzdPNjYzTlV0U0RTb0hOT3J5cFFuUTk5b1Uzamh6aGhBWmtuY2JEdkFDNkN5cWZYY0EyRUZ1YU9FQTd1VkUxcl9qTXZvdFVJQnVYQTR4WQ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T00:54:13.698972+00:00",
+   "title_ru": "Расходы Amazon растут на фоне замедления роста онлайн-бизнеса"
   }
  ],
  "last_digest": "2026-10-29",
@@ -15283,6 +15295,22 @@
    },
    {
     "src": "sec",
+    "id": "52fd7fb3c27c1c2f",
+    "ticker": "LRN",
+    "company": "Stride, Inc.",
+    "who": "Dylan G. Haggart et al.",
+    "role": "Director",
+    "type": "buy",
+    "value": 62188,
+    "shares": 792,
+    "price": 78.52,
+    "plan": false,
+    "date": "2026-10-27",
+    "disclosed": "2026-10-29",
+    "link": "https://www.sec.gov/Archives/edgar/data/2162829/000121390026113987/0001213900-26-113987-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "56bcaa91e62824a0",
     "ticker": "STRZ",
     "company": "STARZ ENTERTAINMENT CORP /CN/",
@@ -18304,22 +18332,6 @@
     "date": "2026-10-21",
     "disclosed": "2026-10-23",
     "link": "https://www.sec.gov/Archives/edgar/data/1821737/000182173726000017/0001821737-26-000017-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "0b02092e3c6c3f51",
-    "ticker": "ZM",
-    "company": "Zoom Communications, Inc.",
-    "who": "Michelle Chang",
-    "role": "CFO",
-    "type": "sell",
-    "value": 1035215,
-    "shares": 10156,
-    "price": 101.93,
-    "plan": true,
-    "date": "2026-10-21",
-    "disclosed": "2026-10-23",
-    "link": "https://www.sec.gov/Archives/edgar/data/2040959/000158552126000153/0001585521-26-000153-index.htm"
    }
   ],
   "docs": {
@@ -18398,14 +18410,13 @@
    "0001437749-26-034027",
    "0001669883-26-000003",
    "0000944075-26-000076",
+   "0001213900-26-113987",
    "0001368054-26-000004",
    "0000944075-26-000077",
    "0002043764-26-000008",
    "0001140361-26-041206",
    "0001895106-26-000022",
    "0001628280-26-068348",
-   "0001193125-26-438274",
-   "0001193125-26-438275",
    "0001193125-26-438722",
    "0001193125-26-438662",
    "0001628280-26-068356",
