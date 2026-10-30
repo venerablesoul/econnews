@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "5f679e6f9e0f32d5": "2026-10-27T04:57:36.884406+00:00",
   "469bbdce85059546": "2026-10-27T05:07:36.873271+00:00",
   "fbba70f4962268e6": "2026-10-27T05:07:36.873271+00:00",
   "e92edf741a9039e3": "2026-10-27T05:07:36.873271+00:00",
@@ -1117,24 +1116,11 @@
   "798b6d9d686731ab": "2026-10-30T04:39:13.555629+00:00",
   "254b7e538b09e5c4": "2026-10-30T04:39:13.555629+00:00",
   "1de393a75ca532e1": "2026-10-30T04:44:13.546358+00:00",
-  "43734d615085349d": "2026-10-30T04:44:13.546358+00:00"
+  "43734d615085349d": "2026-10-30T04:44:13.546358+00:00",
+  "8f9f7853e4c962e9": "2026-10-30T05:04:13.575489+00:00",
+  "f748a760673b1994": "2026-10-30T05:04:13.575489+00:00"
  },
  "recent": [
-  {
-   "title": "Jio Shares Indicated 22% Higher in India Gray-Market Trading",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-27/jio-shares-mukesh-ambani-india-gray-market-trading",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-27T04:57:36.884406+00:00",
-   "title_ru": "Акции Jio выросли на 22% на торгах на сером рынке Индии",
-   "lead": "For investors lucky enough to land shares in Jio Platforms Ltd.’s $3.1 billion India-record initial public offering, trading on the unofficial market is fueling hopes of a big debut pop.",
-   "lead_ru": "Для инвесторов, которым посчастливилось получить акции Jio Platforms Ltd. в ходе первичного публичного размещения акций Jio Platforms Ltd., рекордного для Индии, стоимостью 3,1 миллиарда долларов, торговля на неофициальном рынке вселяет надежды на большой дебютный успех.",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Asia Stocks Rally as Anthropic IPO Boosts Chip Shares",
    "link": "https://www.bloomberg.com/news/videos/2026-10-27/the-asia-trade-10-27-2026-video",
@@ -11881,6 +11867,27 @@
    ],
    "score": 1,
    "ts": "2026-10-30T04:44:13.546358+00:00"
+  },
+  {
+   "title": "Britain Tests the Limits With Plan to Tax Its Way Out of Debt",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/britain-tests-the-limits-with-plan-to-tax-its-way-out-of-debt",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T05:04:13.575489+00:00",
+   "title_ru": "Британия тестирует лимиты с планом обложения налогом своего выхода из долгов",
+   "lead": "Britain was singled out for praise by the International Monetary Fund this month for the boldest deficit-reduction plan of any Group of Seven nation.",
+   "lead_ru": "В этом месяце Международный валютный фонд выделил Великобританию для похвалы за самый смелый план сокращения дефицита среди всех стран Большой семерки."
+  },
+  {
+   "title": "ЦБ оценил влияние роста рублевых расчетов на валютный курс",
+   "link": "https://www.rbc.ru/rbcfreenews/6adf72864f25d2264d28f787",
+   "sources": [
+    "RBC"
+   ],
+   "score": 1,
+   "ts": "2026-10-30T05:04:13.575489+00:00"
   }
  ],
  "last_digest": "2026-10-29",
