@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "99cc4e823e23aef2": "2026-10-27T22:24:44.604853+00:00",
   "bd25db671486c157": "2026-10-27T22:34:44.583259+00:00",
   "31eae68c2dbe5343": "2026-10-27T22:34:44.583259+00:00",
   "acb47cf9d4b3c541": "2026-10-27T22:44:44.618478+00:00",
@@ -1126,19 +1125,11 @@
   "e8c5f2c549ac9ff3": "2026-10-30T22:05:57.534426+00:00",
   "96519c7ac8be7aec": "2026-10-30T22:05:57.534426+00:00",
   "9886ece9a2193717": "2026-10-30T22:16:27.176228+00:00",
-  "282952cbd46cf265": "2026-10-30T22:16:27.176228+00:00"
+  "282952cbd46cf265": "2026-10-30T22:16:27.176228+00:00",
+  "944a0b5dcb766e35": "2026-10-30T22:26:27.302056+00:00",
+  "c5433dfa043a0a65": "2026-10-30T22:26:27.302056+00:00"
  },
  "recent": [
-  {
-   "title": "Data centre boom drives Wärtsilä orders, but mid-term goals disappoint hungry market",
-   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNMlRmVkt5dC0zZl81YzFndVNNNzVhUkhKb2t1bktFODU5MXZHeURCTjhDcG0yRlZZZnNmTEw5MWthVHJzQjRoN0lsdTRzWkJFUGVDQkJnbWFEc1puWEJFd3lCNGdYbmZLVU90XzJfMHY2RVVIa29BRDMxSm5rWmJ0TllLUmh0VmFyaDJDUXFWcjhDaDR6Q0xNVDQ4YlNGU0c2c3RrT0pSdDFiTTVLVGpDalExU3pKRmszMEZDbll1Ti1xejhHNHNJdA?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T22:24:44.604853+00:00",
-   "title_ru": "Бум центров обработки данных стимулирует заказы Wärtsilä, но среднесрочные цели разочаровывают голодный рынок"
-  },
   {
    "title": "IMF Strikes Preliminary Argentina Deal As Market Return Dims",
    "link": "https://www.bloomberg.com/news/articles/2026-10-27/imf-strikes-preliminary-argentina-deal-as-market-return-dims",
@@ -11992,6 +11983,25 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "Fitch revises France's outlook to 'negative' on worsening debt dynamics",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPTVVEcXlWOXB3Y19RLXRjRGdaVEJieWlmdWE3akFJTDN2ZER3MUpmR180c2dqcV9iRUZBdVhlWThRR0E5LU1RUUNVaXFxY0lZM2VUWWhNN2pHNlFPM0RuMzdaMXNMSFc2M0NkaWVqOTR5Qy1ZVkYtMnhKUEdrOV9XcWg0UENLT2NHdEtsR2F1eFdKaTlrYjZIZ2pIWE5BYnVheWR3UUNscTJkM2FOdkFBNQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T22:26:27.302056+00:00",
+   "title_ru": "Fitch пересматривает прогноз по Франции на «негативный» из-за ухудшения динамики долга"
+  },
+  {
+   "title": "This cybersecurity stock will be the next to join the S&P 500",
+   "link": "https://www.marketwatch.com/story/this-cybersecurity-stock-will-be-the-next-to-join-the-s-p-500-dc976803?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-30T22:26:27.302056+00:00"
   }
  ],
  "last_digest": "2026-10-30",
@@ -15124,6 +15134,22 @@
     "date": "2026-10-29",
     "disclosed": "2026-10-30",
     "link": "https://www.sec.gov/Archives/edgar/data/2091395/000151384526000145/0001513845-26-000145-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "0750be80d7a4b210",
+    "ticker": "WDC",
+    "company": "WESTERN DIGITAL CORP",
+    "who": "Martin I Cole",
+    "role": "Director",
+    "type": "sell",
+    "value": 1581881,
+    "shares": 4000,
+    "price": 395.47,
+    "plan": true,
+    "date": "2026-10-29",
+    "disclosed": "2026-10-30",
+    "link": "https://www.sec.gov/Archives/edgar/data/1302874/000126682426000219/0001266824-26-000219-index.htm"
    },
    {
     "src": "sec",
@@ -18692,22 +18718,6 @@
     "date": "2026-10-22",
     "disclosed": "2026-10-26",
     "link": "https://www.sec.gov/Archives/edgar/data/1889539/000119312526432280/0001193125-26-432280-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "c152a25d2051b1fb",
-    "ticker": "OIG",
-    "company": "Orion180 Insurance Group Inc.",
-    "who": "Darling Craig et al.",
-    "role": "10% owner",
-    "type": "buy",
-    "value": 115797,
-    "shares": 10990,
-    "price": 10.54,
-    "plan": false,
-    "date": "2026-10-06",
-    "disclosed": "2026-10-26",
-    "link": "https://www.sec.gov/Archives/edgar/data/2160794/000149315226048577/0001493152-26-048577-index.htm"
    }
   ],
   "docs": {
@@ -18751,7 +18761,7 @@
   "sec_seen": [
    "0001193125-26-441956",
    "0001513845-26-000145",
-   "0000897069-26-001881",
+   "0001841752-26-000030",
    "0001882630-26-000002",
    "0002006935-26-000008",
    "0001272466-26-000002",
@@ -18761,33 +18771,39 @@
    "0001510281-26-000395",
    "0001510281-26-000396",
    "0001910507-26-000004",
-   "0001292814-26-005078",
    "0001631325-26-000004",
    "0001193125-26-441994",
    "0001193125-26-441962",
    "0000351569-26-000159",
+   "0001193125-26-442033",
    "0001821204-26-000006",
    "0001193125-26-441984",
+   "0001284489-26-000044",
    "0001882102-26-000012",
+   "0001193125-26-442029",
    "0001193125-26-441980",
+   "0001193125-26-442010",
    "0002117509-26-000006",
    "0001193125-26-441988",
    "0001954327-26-000053",
-   "0000950103-26-016560",
    "0001510281-26-000394",
    "0001193125-26-441978",
    "0001193125-26-441996",
    "0000815097-26-000109",
    "0002109682-26-000006",
    "0000087347-26-000130",
+   "0001266824-26-000219",
    "0001769628-26-000452",
    "0001493152-26-049477",
+   "0001193125-26-442023",
    "0001193125-26-441963",
+   "0000904454-26-000568",
+   "0001130144-26-000064",
    "0001676558-26-000022",
    "0001916515-26-000004",
-   "0001140361-26-041333",
    "0001591430-26-000004",
    "0001890925-26-000027",
+   "0001193125-26-442013",
    "0002157254-26-000006",
    "0001628280-26-068632"
   ],
