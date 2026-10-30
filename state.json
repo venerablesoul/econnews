@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "cebdd337c4a0285e": "2026-10-27T16:03:43.609452+00:00",
-  "d99585dcd7d3948b": "2026-10-27T16:03:43.609452+00:00",
-  "4c1de082b996c390": "2026-10-27T16:08:43.146504+00:00",
   "c551fbfe8491f7cd": "2026-10-27T16:13:42.982786+00:00",
   "ac3641b63c2cc58f": "2026-10-27T16:18:42.968586+00:00",
   "c5661c1256c0b7fc": "2026-10-27T16:33:42.968558+00:00",
@@ -1123,32 +1120,11 @@
   "252501055041ded1": "2026-10-30T15:45:10.711069+00:00",
   "908c534e462dbf27": "2026-10-30T15:55:10.542544+00:00",
   "ed2ceefe5d3c5eb8": "2026-10-30T15:55:10.542544+00:00",
-  "ff7d9b873fd8c56f": "2026-10-30T16:00:10.549282+00:00"
+  "ff7d9b873fd8c56f": "2026-10-30T16:00:10.549282+00:00",
+  "9677e08b0c308333": "2026-10-30T16:05:10.608230+00:00",
+  "7afb2188fd0eb16d": "2026-10-30T16:05:10.608230+00:00"
  },
  "recent": [
-  {
-   "title": "Advent raises $30 billion for latest buyout, mid-market funds",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQaWZ3QnkyMzNBUW80dk5iTjZLWGpSN1pTVWVVUlp4bDY2VUV1U1dKYUdhYVp0NEJtWmJER3dDamRYZnRzeUVPM3hFQ2NTZExfYl9sVHotTDNKRTJwQ0w4RmhWZWxvV0RwQ0hhTUZBSzY1VW0ydHNJaXNHR1RJeFV3Wm1fUmIzTkFsamoxcjF2bm9ZWVJuQzJFb3dueHZBbW9jUzloeGlVVk9LMHpjU0lIdQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T16:03:43.609452+00:00",
-   "title_ru": "Advent привлекает 30 миллиардов долларов для последнего выкупа, фонды среднего бизнеса"
-  },
-  {
-   "title": "Putin says curbing Russian gas raises consumer costs, hints at US cooperation",
-   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNN3FkS3FJOGNLTkQtZWJUSWFnVkw1dERsMUdRUFRLVThOQy1DNm5LVldVTzZ6Nld2elBfR3BGUk15eXlRbDZLYUszbnlkZUZ1QVJXeFlMTjVpMkYwLUZFclBZVzFPTlIxRXhxVTNxSHJjaXUxSUFJSDFQUldWdWVFNFEyQQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-27T16:08:43.146504+00:00",
-   "title_ru": "Путин говорит, что ограничение российского газа повышает потребительские расходы, намекая на сотрудничество с США",
-   "tags": [
-    "Russia"
-   ]
-  },
   {
    "title": "Big Tech earnings to test AI boom amid market turmoil",
    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNRXF6SzRzQjFlSVJ4Wjk2OEdySTRrS0F3eWlZcXQtRDdXN3hYZ1Z1YmVqbUJzbURWRW9zZHBEcmd3QWNxRGp4QWZuX0VfT1dQNVBJNDNMaXVYSDFHY3NTb2ZvNlJfdjZuUmluNERuS3FIeF92cV9uWVFyQ29zU29ybEFHRU92SDR3ODZvWXpvQU5NZ3dfZGFQcy1iQVhudw?oc=5",
@@ -11964,6 +11940,15 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Пьянов оценил сроки достижения акциями ВТБ цены допэмиссии",
+   "link": "https://www.rbc.ru/finances/30/10/2026/6ae4b3729a794779f247dae8",
+   "sources": [
+    "RBC"
+   ],
+   "score": 1,
+   "ts": "2026-10-30T16:05:10.608230+00:00"
   }
  ],
  "last_digest": "2026-10-29",
@@ -18652,10 +18637,8 @@
   },
   "checked": "2026-10-30T15:45:10.711069+00:00",
   "sec_seen": [
-   "0002099112-26-000006",
-   "0000879526-26-000108",
-   "0001225208-26-008558",
-   "0000879526-26-000107"
+   "0002099428-26-000005",
+   "0002099112-26-000006"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
