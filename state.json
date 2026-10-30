@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "a62b4dd224524bf0": "2026-10-27T02:47:36.861962+00:00",
-  "017affb6c777f80b": "2026-10-27T02:52:36.861179+00:00",
   "6b69939493ae074c": "2026-10-27T03:02:36.855415+00:00",
   "51511603c12b50bb": "2026-10-27T03:12:36.914268+00:00",
   "d268709fca5747c9": "2026-10-27T03:37:36.889633+00:00",
@@ -1097,39 +1095,10 @@
   "c7c2a3b1dedcdb95": "2026-10-30T02:29:13.555612+00:00",
   "8615f0a97d0a8cd8": "2026-10-30T02:34:13.605403+00:00",
   "b7017de8a0083101": "2026-10-30T02:39:13.643465+00:00",
-  "1f0a1cc73f3ebb39": "2026-10-30T02:44:13.564063+00:00"
+  "1f0a1cc73f3ebb39": "2026-10-30T02:44:13.564063+00:00",
+  "4db47ca1150e2140": "2026-10-30T02:54:13.562842+00:00"
  },
  "recent": [
-  {
-   "title": "BlackRock's Rieder on Global Bonds, AI",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-27/blackrock-s-rieder-on-global-bonds-ai-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T02:47:36.861962+00:00",
-   "title_ru": "Ридер из BlackRock о глобальных облигациях, ИИ",
-   "lead": "Rick Rieder, CIO for Global Fixed Income at BlackRock, discusses his outlook for global rates and bonds, as well as the outlook for the fundraising on AI, as companies look to raise capital for infrastructure build-out.",
-   "lead_ru": "Рик Ридер, ИТ-директор по глобальному фиксированному доходу в BlackRock, обсуждает свой прогноз по глобальным ставкам и облигациям, а также перспективы сбора средств на ИИ, поскольку компании стремятся привлечь капитал для строительства инфраструктуры.",
-   "tags": [
-    "bonds"
-   ]
-  },
-  {
-   "title": "Japan Life Insurers Swap Into Higher-Yield Bonds to Lift Returns",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-27/japan-life-insurers-swap-into-higher-yield-bonds-to-lift-returns",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T02:52:36.861179+00:00",
-   "title_ru": "Японские страховщики жизни обмениваются на высокодоходные облигации для повышения доходности",
-   "lead": "Japan’s life insurers are swapping out of lower-yielding bonds into higher-yielding debt as elevated yields create opportunities to boost portfolio returns.",
-   "lead_ru": "Японские страховщики жизни обменивают низкодоходные облигации на высокодоходные долговые обязательства, поскольку повышенная доходность создает возможности для повышения доходности портфеля.",
-   "tags": [
-    "bonds"
-   ]
-  },
   {
    "title": "Ex-BOJ chief Kuroda backs more rate hikes, his former deputy urges caution",
    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxORGd3OVRlcl82RE5aMnZNb3FSZzVVZUxxN1oxVmFIOFJZZGdJb0toUDBmWXJEbGZuWWtJOFF6X3hJeFRQT0k2VlFnTk5kWFpod0kwRS1VMjRpb21qYlV1NzZTd2padUZzWVlJal9xb01kRnRNLVYwWGo1aUhRYThpYV9hclNDUWo1VElHNGotWTk2a3VGdER5b0p4d0N6RkVtVGRfUXF0MzU4YndydEkxLXZfZnlLNVJwODM2ZWEwVE5ic2dk?oc=5",
@@ -11681,6 +11650,23 @@
    "score": 5,
    "ts": "2026-10-30T02:44:13.564063+00:00",
    "title_ru": "Потребительские расходы - 2025"
+  },
+  {
+   "title": "Zhuhai Huafa Put on Negative Watch by Fitch on Refinancing Risk",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/zhuhai-huafa-put-on-negative-watch-by-fitch-on-refinancing-risk",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T02:54:13.562842+00:00",
+   "title_ru": "Zhuhai Huafa перешла на негативное наблюдение Fitch по риску рефинансирования",
+   "lead": "Fitch Ratings said it has placed Zhuhai Huafa Group Co. on negative watch on heightened refinancing risks, days after a selloff in the Chinese company’s offshore bonds.",
+   "lead_ru": "Fitch Ratings сообщило, что оно поставило Zhuhai Huafa Group Co. на отрицательный след по повышенным рискам рефинансирования через несколько дней после распродажи оффшорных облигаций китайской компании.",
+   "tags": [
+    "bonds",
+    "markets",
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
