@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "d5ec97d4a4f3253f": "2026-10-27T15:18:42.927308+00:00",
-  "7b095fc344cbe6e7": "2026-10-27T15:23:43.081279+00:00",
   "d1906d0ea1028ade": "2026-10-27T15:28:43.020978+00:00",
   "09a59aff65e18c61": "2026-10-27T15:28:43.020978+00:00",
   "f5ceaab9a335ff39": "2026-10-27T15:38:43.102626+00:00",
@@ -1120,32 +1118,12 @@
   "6e9eb0087c6c1a57": "2026-10-30T15:05:10.592421+00:00",
   "31505ecdd28b1641": "2026-10-30T15:10:10.809030+00:00",
   "5fd6bd38458a51cc": "2026-10-30T15:10:10.809030+00:00",
-  "03add1b131295ee3": "2026-10-30T15:15:10.563816+00:00"
+  "03add1b131295ee3": "2026-10-30T15:15:10.563816+00:00",
+  "4d98f8c122008385": "2026-10-30T15:20:10.468319+00:00",
+  "f217fcd45020e3e6": "2026-10-30T15:20:10.468319+00:00",
+  "f75d51bfcc897155": "2026-10-30T15:25:10.641753+00:00"
  },
  "recent": [
-  {
-   "title": "Czech central banker Seidler leaning towards November rate hike",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOc1BwcC13OF9GS1hPbmctT252NkpPU3J2bFBOTExDTmN3RnFqVWJYbjhpQ1dWTGNCaFJLUkhTNTh5NE1UaFFCZ2dBWDRiSlBjc2d3WmRwTlR5cENXX3NiTDJyZzQwTWQxbENsakd0ZmVEYjFGczItODVFVWdCcU9DQ3RQbWRHNldINjE0N1d6dXNHU1c4MjQ0ejhOanprNTJGbkt1dUtsNkplOWZwdVRtcFVib3g?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-27T15:18:42.927308+00:00",
-   "title_ru": "Глава ЦБ Чехии Зайдлер склоняется к повышению ставок в ноябре",
-   "tags": [
-    "rates"
-   ]
-  },
-  {
-   "title": "Inside ETFs: Has Brazil crashed the emerging markets party?",
-   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBGUmE3SnV3UWNmVTVzLUhScHhWeHpuX0FjMThfb3VaTTJabVNYd2JqUGl1eWN4RG1maU9oLXBvS0ZpeC0yeGVTN2YwWTJHTERObUpoem04bzhxRFQtR1hhZG1FVTNRUG9rZ2Ria185YzUySkctZUt4U01B?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T15:23:43.081279+00:00",
-   "title_ru": "Внутри ETF: Бразилия развалила партию развивающихся рынков?"
-  },
   {
    "title": "Median weekly earnings by educational attainment, third quarter 2026",
    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOM1VwY0dNNXdxZ01uQkRyMXVkRTFrVVRKMWVLY0lrUmFDbDNuRVlpdGxJNU5oQmE5R3RYXzNfUWxzWE1jcXUtWkVRZmxyc3dnMGZWS2gwWmpvT3dKbFVzdjRCQ2JmMFViWjJES0NrWk9UZ1NWZEFBaHJIeGkyX2N1QVRUbnJaRmQwV19pU2RIYlNxanJPd2U4N0tTVWZ4TVBMbjhPN19vZlg?oc=5",
@@ -11982,6 +11960,21 @@
    "title_ru": "Генеральный директор Starbucks сосредоточен на плане роста и основах",
    "lead": "Starbucks Corp. Chief Executive Officer Brian Niccol expects earnings growth to continue and he says the turnaround plan is ahead of schedule. He says becoming a multi-brand company is a possibility.",
    "lead_ru": "Генеральный директор Starbucks Corp. Брайан Никкол ожидает, что рост прибыли продолжится, и говорит, что план оздоровления опережает график. Он говорит, что стать мультибрендовой компанией вполне возможно."
+  },
+  {
+   "title": "Who Could Replace Christine Lagarde as ECB President?",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-30/who-could-replace-christine-lagarde-as-ecb-president-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-30T15:25:10.641753+00:00",
+   "title_ru": "Кто может заменить Кристин Лагард на посту президента ЕЦБ?",
+   "lead": "Who could replace Christine Lagarde as president of the European Central Bank? Jana Randow explains who's in the running. (Source: Bloomberg)",
+   "lead_ru": "Кто мог бы заменить Кристин Лагард на посту президента Европейского центрального банка? Яна Рэндоу объясняет, кто баллотируется. (Источник: Блумберг)",
+   "tags": [
+    "ECB"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -14646,6 +14639,22 @@
     "date": "2026-10-29",
     "disclosed": "2026-10-30",
     "link": "https://www.sec.gov/Archives/edgar/data/1255007/000125500726000002/0001255007-26-000002-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "ecb8621ae4ff68a2",
+    "ticker": "ESQ",
+    "company": "Esquire Financial Holdings, Inc.",
+    "who": "Ari P Kornhaber",
+    "role": "EVP and Head of Corp Dev",
+    "type": "sell",
+    "value": 2563037,
+    "shares": 20000,
+    "price": 128.15,
+    "plan": false,
+    "date": "2026-10-28",
+    "disclosed": "2026-10-30",
+    "link": "https://www.sec.gov/Archives/edgar/data/1709859/000143774926034107/0001437749-26-034107-index.htm"
    },
    {
     "src": "sec",
@@ -18614,22 +18623,6 @@
     "date": "2026-10-21",
     "disclosed": "2026-10-23",
     "link": "https://www.sec.gov/Archives/edgar/data/1889539/000119312526430508/0001193125-26-430508-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "35e5357bf5fa5466",
-    "ticker": "IBTA",
-    "company": "Ibotta, Inc.",
-    "who": "Bryan Leach",
-    "role": "CEO, 10% owner",
-    "type": "sell",
-    "value": 2465878,
-    "shares": 49899,
-    "price": 49.42,
-    "plan": true,
-    "date": "2026-10-21",
-    "disclosed": "2026-10-23",
-    "link": "https://www.sec.gov/Archives/edgar/data/1875168/000162828026067077/0001628280-26-067077-index.htm"
    }
   ],
   "docs": {
@@ -18671,6 +18664,8 @@
   "checked": "2026-10-30T14:45:10.584224+00:00",
   "sec_seen": [
    "0000726854-26-000192",
+   "0001069202-26-000099",
+   "0001437749-26-034107",
    "0001255007-26-000002"
   ],
   "errors": {
