@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "b2bc7b404cf954c0": "2026-10-27T06:47:36.860083+00:00",
-  "7dd3ea067e14d6aa": "2026-10-27T06:48:13.211549+00:00",
   "d1b46a9b0f3a0d43": "2026-10-27T06:53:09.254698+00:00",
   "4730ddb587d46283": "2026-10-27T07:03:09.308121+00:00",
   "ed678ed563e55c28": "2026-10-27T07:03:09.308121+00:00",
@@ -1113,32 +1111,13 @@
   "be0ae030c17e3612": "2026-10-30T06:39:40.261517+00:00",
   "f52f7e257d1c2f8c": "2026-10-30T06:44:40.174003+00:00",
   "05a7f6441af8f319": "2026-10-30T06:44:40.174003+00:00",
-  "47c9f771a089ea14": "2026-10-30T06:44:40.174003+00:00"
+  "47c9f771a089ea14": "2026-10-30T06:44:40.174003+00:00",
+  "8a9cef8c8fa92f53": "2026-10-30T06:49:40.241591+00:00",
+  "a9034a36ab174d21": "2026-10-30T06:49:40.241591+00:00",
+  "f318776fbe1fdf1f": "2026-10-30T06:49:40.241591+00:00",
+  "58912d6e86a8e33c": "2026-10-30T06:49:40.241591+00:00"
  },
  "recent": [
-  {
-   "title": "HSBC quarterly profit jumps but shares slide after flat revenue for wealth business",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQcVZVOUw4UjhITVVsZ1psYmQ4Tkwta1lJSGl1OVRkemlLQzJZZWNRXzBEV1NDU0FNR3VyWGh5eE1SR1QyOUlKcWJpSHdRdDltYmxzc0NUX3dEZktFWVY2eUhWcDl4Y2JLUDhtdTJwbUFIckNnUjhiTDR3ZGVBS2VmZXFrenQ5SW1QOTFNUUVhaEdOck9fNml1R05HRkJiOVppV2cxWWxjX21wM2hr?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T06:47:36.860083+00:00",
-   "title_ru": "Квартальная прибыль HSBC подскакивает, но акции падают после стабильного дохода для бизнеса, связанного с благосостоянием",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "Carney says US is ‘coming closer to our position’ in trade talks",
-   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5hdjVCYW1OdnZlMXh5MC1pT3c0SjZnMGN0Q1N1U0VMWmJYRnF5a2t0Y05JYzJIaWZZM3ViUHlLVHJSNFdJVWlHdDBTUGF1cHpudGFmaDB1OFBsYlpObWVmeW9jb3NIX1E?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T06:48:13.211549+00:00",
-   "title_ru": "Карни говорит, что США «приближаются к нашей позиции» в торговых переговорах"
-  },
   {
    "title": "FTSE 100 Live: UK Stocks Set to Fall as HSBC Profit Falls Short",
    "link": "https://www.bloomberg.com/news/live-blog/2026-10-27/ftse-100-live-updates-hsbc-anthropic-ai-stocks-pound-gilts-bond-healey-budget-what-s-moving-uk-markets-right-now-markets-today",
@@ -11884,6 +11863,31 @@
     "bonds",
     "China"
    ]
+  },
+  {
+   "title": "Euro-Area Leaders to Meet Nov. 26-27 to Discuss ECB Top Job",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-29/euro-area-leaders-to-meet-nov-26-27-to-discuss-ecb-top-job",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-30T06:49:40.241591+00:00",
+   "title_ru": "Лидеры еврозоны встретятся 26-27 ноября, чтобы обсудить главную работу ЕЦБ",
+   "lead": "Euro-area leaders will meet in Brussels Nov.",
+   "lead_ru": "Лидеры еврозоны встретятся в Брюсселе в ноябре",
+   "tags": [
+    "ECB"
+   ]
+  },
+  {
+   "title": "Morning Bid: One last central bank surprise",
+   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPVnh1c0RRbEdjWjNFbmduTzhBOVl2ZmpkUzFjaFZZajVLdjdDN1kyek0yTW5pY092QmRNbmVWNFdrazNZR0dnZE5HR05sT1RBVkRxTEZkV3UzYXB1YXJaMi1VYS1oR1NJc2czSGd5VHVLaE5abmxHLVdzcWgwZE5lMjlxQQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T06:49:40.241591+00:00",
+   "title_ru": "Утренняя ставка: последний сюрприз центрального банка"
   }
  ],
  "last_digest": "2026-10-29",
@@ -18579,8 +18583,8 @@
    "0001178579-26-000022",
    "0001437749-26-034034",
    "0000944075-26-000076",
-   "0001392942-26-000016",
    "0000944075-26-000077",
+   "0001392942-26-000016",
    "0001628280-26-068337",
    "0000944075-26-000075",
    "0000944075-26-000079",
