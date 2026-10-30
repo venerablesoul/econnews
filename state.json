@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "51a1255c651c1d05": "2026-10-27T12:33:42.901988+00:00",
-  "5ad39845e4d34e98": "2026-10-27T12:33:42.901988+00:00",
-  "25bf0e01e20fa47b": "2026-10-27T12:33:42.901988+00:00",
-  "eb000a533f031b86": "2026-10-27T12:33:42.901988+00:00",
   "bcc5612469af8ec9": "2026-10-27T12:38:42.902450+00:00",
   "98756fa8f98a2037": "2026-10-27T12:43:43.036317+00:00",
   "c847d62a8a177e47": "2026-10-27T12:43:43.036317+00:00",
@@ -1121,26 +1117,11 @@
   "fe9884346c9dbe13": "2026-10-30T12:15:10.519024+00:00",
   "221e7a2180b9eaee": "2026-10-30T12:25:10.461981+00:00",
   "eb6126e725314f87": "2026-10-30T12:30:10.399223+00:00",
-  "bc143710274c8f93": "2026-10-30T12:30:10.399223+00:00"
+  "bc143710274c8f93": "2026-10-30T12:30:10.399223+00:00",
+  "68e431b161dbab32": "2026-10-30T12:35:10.555318+00:00",
+  "23873157ced92387": "2026-10-30T12:35:10.555318+00:00"
  },
  "recent": [
-  {
-   "title": "Путин объяснил, как можно стабилизировать ситуацию на мировом рынке газа",
-   "link": "https://www.rbc.ru/rbcfreenews/6ae0964e13c1eb13d6b9a0b8",
-   "sources": [
-    "RBC"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T12:33:42.901988+00:00",
-   "title_en": "Putin explained how the situation on the global gas market can be stabilized",
-   "lead": "Президент России Владимир Путин призвал задуматься о прекращении конфликтов и снятии санкций ради стабилизации мирового газового рынка на саммите Форума стран — экспортеров газа (ФСЭГ).",
-   "lead_en": "Russian President Vladimir Putin called for thinking about ending conflicts and lifting sanctions in order to stabilize the global gas market at the summit of the Gas Exporting Countries Forum (GECF).",
-   "tags": [
-    "gas",
-    "sanctions",
-    "Russia"
-   ]
-  },
   {
    "title": "Russia's Oil Exports Hit a One-Month High Amid Baltic Rebound",
    "link": "https://www.bloomberg.com/news/articles/2026-10-27/russia-s-oil-exports-hit-a-one-month-high-amid-baltic-rebound",
@@ -11905,6 +11886,29 @@
    ],
    "score": 1,
    "ts": "2026-10-30T12:30:10.399223+00:00"
+  },
+  {
+   "title": "Employment Cost Index News Release",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9LbE81dW9LaUc3Unp0RTBDWDN4R3VqbTJOMDRQYzZLMk00M1I3X2JOM3FmT1daNFhYWUlVeXRLN0FucGs2Sm1mYnJVemt1UlVvUlBucjhhWi1FRTc1TVVTWkF6TXE1QnZXY2c?oc=5",
+   "sources": [
+    "US Labor Statistics (BLS)"
+   ],
+   "score": 4,
+   "ts": "2026-10-30T12:35:10.555318+00:00",
+   "title_ru": "Пресс-релиз по индексу затрат на трудоустройство"
+  },
+  {
+   "title": "Exxon and Chevron Beat Estimates as Oil Refining Profits Soar",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPSThtNVFEM3B0RE52Ujl2M1B0ajNVOURZS1k4RGNWUnVKamNiZU1hUU5nUXRjc2RoRVZ0eUZidl9aX1RyYkpHck81ZktvbnRKdHYwOUF5ZXFVcFBCUWE3WWpkSWh2RDQtWHdZZ3RFR0c4SVBQYk0tSWlFWWw3ODhyT3pQcXZxUWRGV195OHJPUUh5ZEc1ZTd2ZWtjWTBrM0c0dERfS2RITDVwT2g3dFc2QTFiX3laZTVfaXVhWW1aeGwxM1h0Y3c?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T12:35:10.555318+00:00",
+   "title_ru": "Оценки Exxon и Chevron Beat по мере роста прибыли от нефтепереработки",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -18593,8 +18597,8 @@
   },
   "checked": "2026-10-30T11:45:10.373806+00:00",
   "sec_seen": [
-   "0002141713-26-000007",
    "0002010135-26-000025",
+   "0002141713-26-000007",
    "0001628280-26-068399",
    "0000711377-26-000037",
    "0001341767-26-000008",
