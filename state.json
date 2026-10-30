@@ -1140,7 +1140,9 @@
   "b50e5fee6766b224": "2026-10-30T18:45:57.475504+00:00",
   "534f2dfb598ec378": "2026-10-30T18:45:57.475504+00:00",
   "1d562beda2f6777f": "2026-10-30T18:45:57.475504+00:00",
-  "843dfa413e767b55": "2026-10-30T18:45:57.475504+00:00"
+  "843dfa413e767b55": "2026-10-30T18:45:57.475504+00:00",
+  "7e360b567b81fe1d": "2026-10-30T18:50:57.295323+00:00",
+  "c1a2bfd83a3e967a": "2026-10-30T18:50:57.295323+00:00"
  },
  "recent": [
   {
@@ -12176,6 +12178,21 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "People Don't Know Their Retirement Number: Conrath",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-30/people-don-t-know-their-retirement-number-conrath-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T18:50:57.295323+00:00",
+   "title_ru": "Люди не знают свой пенсионный номер: Конрат",
+   "lead": "Michael Conrath, chief retirement strategist at JPMorgan Asset Management, joins Scarlet Fu and Tom Keene on \"Bloomberg Money.\" They discuss how inflation is causing Americans to rethink their retirement saving goals.",
+   "lead_ru": "Майкл Конрат, главный пенсионный стратег JPMorgan Asset Management, присоединяется к Скарлет Фу и Тому Кину в программе «Bloomberg Money». Они обсуждают, как инфляция заставляет американцев переосмысливать свои цели пенсионных накоплений.",
+   "tags": [
+    "inflation"
+   ]
   }
  ],
  "last_digest": "2026-10-30",
@@ -14960,6 +14977,38 @@
     "date": "2026-10-28",
     "disclosed": "2026-10-30",
     "link": "https://www.sec.gov/Archives/edgar/data/1766850/000121390026114242/0001213900-26-114242-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "8ec94910a1325f7e",
+    "ticker": "PEO",
+    "company": "ADAMS NATURAL RESOURCES FUND, INC.",
+    "who": "Jane Musser Nelson",
+    "role": "Director",
+    "type": "buy",
+    "value": 30229,
+    "shares": 1010,
+    "price": 29.93,
+    "plan": false,
+    "date": "2026-10-28",
+    "disclosed": "2026-10-30",
+    "link": "https://www.sec.gov/Archives/edgar/data/1771309/000177130926000005/0001771309-26-000005-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "96d78a8b65236d33",
+    "ticker": "BFH",
+    "company": "BREAD FINANCIAL HOLDINGS, INC.",
+    "who": "John J. Fawcett",
+    "role": "Director",
+    "type": "buy",
+    "value": 123490,
+    "shares": 5000,
+    "price": 24.7,
+    "plan": false,
+    "date": "2026-10-28",
+    "disclosed": "2026-10-30",
+    "link": "https://www.sec.gov/Archives/edgar/data/1614143/000161414326000006/0001614143-26-000006-index.htm"
    },
    {
     "src": "sec",
@@ -18800,38 +18849,6 @@
     "date": "2026-10-21",
     "disclosed": "2026-10-23",
     "link": "https://www.sec.gov/Archives/edgar/data/1848852/000119312526430420/0001193125-26-430420-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "4d53bc511587ca31",
-    "ticker": "INNV",
-    "company": "InnovAge Holding Corp.",
-    "who": "Tco Group Holdings, L.p.",
-    "role": "10% owner",
-    "type": "sell",
-    "value": 13875000,
-    "shares": 1500000,
-    "price": 9.25,
-    "plan": false,
-    "date": "2026-10-21",
-    "disclosed": "2026-10-23",
-    "link": "https://www.sec.gov/Archives/edgar/data/1844765/000119312526430414/0001193125-26-430414-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "86b55f631928a0fb",
-    "ticker": "PCTY",
-    "company": "Paylocity Holding Corp",
-    "who": "Steven I Sarowitz",
-    "role": "Director, 10% owner",
-    "type": "sell",
-    "value": 978108,
-    "shares": 5744,
-    "price": 170.28,
-    "plan": true,
-    "date": "2026-10-21",
-    "disclosed": "2026-10-23",
-    "link": "https://www.sec.gov/Archives/edgar/data/1597870/000159787026000021/0001597870-26-000021-index.htm"
    }
   ],
   "docs": {
@@ -18872,9 +18889,11 @@
   },
   "checked": "2026-10-30T17:50:57.788325+00:00",
   "sec_seen": [
-   "0001104659-26-120602",
-   "0001437749-26-034162",
+   "0000711377-26-000041",
+   "0001771309-26-000005",
    "0002106640-26-000014",
+   "0001437749-26-034162",
+   "0001614143-26-000006",
    "0001591893-26-000006",
    "0001437749-26-034164"
   ],
