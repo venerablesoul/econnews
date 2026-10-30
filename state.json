@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "d26a219b7c477a5b": "2026-10-27T05:12:36.887435+00:00",
-  "cb07db8d8210949f": "2026-10-27T05:12:36.887435+00:00",
   "883d00bb49f770ae": "2026-10-27T05:27:36.875649+00:00",
   "62acc6ea8e43d507": "2026-10-27T05:32:36.918660+00:00",
   "fa795c44a1b63929": "2026-10-27T05:32:36.918660+00:00",
@@ -1116,19 +1114,11 @@
   "43734d615085349d": "2026-10-30T04:44:13.546358+00:00",
   "8f9f7853e4c962e9": "2026-10-30T05:04:13.575489+00:00",
   "f748a760673b1994": "2026-10-30T05:04:13.575489+00:00",
-  "f5d8481468f9bfcc": "2026-10-30T05:09:13.568414+00:00"
+  "f5d8481468f9bfcc": "2026-10-30T05:09:13.568414+00:00",
+  "0e98fb4b5f50f0f4": "2026-10-30T05:19:13.620204+00:00",
+  "9296c2212bf1f97f": "2026-10-30T05:19:13.620204+00:00"
  },
  "recent": [
-  {
-   "title": "Indonesia Is Reducing Its Gas Supplies to Singapore. Is This a Worry?",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPejJtcFBaN0wtcjgzdEJ1SUVuU1R6cnZha2h6UmdqWkdSRWJHRF9nZnRjbG5OS1BMbzdMUFpWZEc0bVZjbW04TFZkZ2VtY2ZWWlFRcXdEZnJnN2RpWHFKTE0tQlNwUjJTaEM5aWc0ZmdLcXVxRkhqdzUxcDFCekczTExGTmZzblpLVjN0QUhPNTk4OHFPcUxxM0JFM1YwVHltRkQ4?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T05:12:36.887435+00:00",
-   "title_ru": "Индонезия сокращает поставки газа в Сингапур. Это беспокойство?"
-  },
   {
    "title": "Bank of Korea warns country's chip exports could fall by up to $100 billion if AI spending slows",
    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNZ0MzWm5aTnVXVkhBQ2lxYVFWOGlTWmQtUXZnbEZrZ01aVS1oZVQ3ci0ySkNubUtybEJRTkRvbmRjaUJJRThaSHZPTjlteUYweS1PUE90VGJTeDF3M0ZsNmJNejBRdkctOXFXQ2NDODVBd29VUHZiMlRWaVF5YWxrTDlES2lUZ1dmajMySTdCQnVLMVdWUDBheGdzbERMWnp0NG9FSFN1TWNUa1hOSy1ucEZKNGs1T0V0U1daYkxJNC15N0FsQTdj?oc=5",
@@ -11862,6 +11852,31 @@
    "tags": [
     "rates"
    ]
+  },
+  {
+   "title": "BOJ Holds Rate as Underlying Inflation Hits Target",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-30/boj-holds-rate-as-underlying-inflation-hits-target-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-30T05:19:13.620204+00:00",
+   "title_ru": "БАНК ЯПОНИИ удерживает ставку в качестве базового целевого показателя инфляции",
+   "lead": "The Bank of Japan kept its benchmark rate at 1.25%, while signaling that underlying inflation has reached its 2% target for the first time, taking more than a decade to achieve. (Source: Bloomberg)",
+   "lead_ru": "Банк Японии сохранил базовую ставку на уровне 1,25%, сигнализируя о том, что базовая инфляция впервые достигла целевого уровня 2%, на достижение которого ушло более десяти лет. (Источник: Bloomberg)",
+   "tags": [
+    "inflation"
+   ]
+  },
+  {
+   "title": "EU pressure on Antigua's 'golden passport' trade threatens budget cushion",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNd3plTzhtd25ZUzByT2JrbURPakpYYkExbDczaDhsSXRJY290T2pUVFZHQjE5THhLNlkybW5pN3M3ODdGMjBNUFJRVG1qYnlFU0ZZTWx1aFRVZ2otTktsSXVVYWJINzVFOHhhY3VDR0k2SXhwZFVSX3ZxNmRuM0UtaER0TVRqSE9Uc2U5c1lOaDBnMGNIV1A2ZnlRSXgzb3NYZngtOWRCN0FtN0lyWmF5RV9vQjZXR3lFdHc?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-30T05:19:13.620204+00:00",
+   "title_ru": "Давление ЕС на торговлю «золотым паспортом» Антигуа угрожает бюджетной подушке"
   }
  ],
  "last_digest": "2026-10-29",
@@ -11884,7 +11899,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 1,
+  "Fed": 0,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
