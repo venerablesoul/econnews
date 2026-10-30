@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "a0e267aec54fbb2e": "2026-10-27T22:59:44.577722+00:00",
-  "b2a816bb3f49dcd7": "2026-10-27T23:04:44.710315+00:00",
   "bf949f818b6547dc": "2026-10-27T23:10:19.165027+00:00",
   "d3be7a472d9b1534": "2026-10-27T23:15:19.164316+00:00",
   "7ab5e9422fa33a7f": "2026-10-27T23:15:19.164316+00:00",
@@ -1124,21 +1122,10 @@
   "282952cbd46cf265": "2026-10-30T22:16:27.176228+00:00",
   "944a0b5dcb766e35": "2026-10-30T22:26:27.302056+00:00",
   "c5433dfa043a0a65": "2026-10-30T22:26:27.302056+00:00",
-  "ac5b6aeb49767dfe": "2026-10-30T22:36:27.293071+00:00"
+  "ac5b6aeb49767dfe": "2026-10-30T22:36:27.293071+00:00",
+  "339daea2ee894310": "2026-10-30T23:01:27.197465+00:00"
  },
  "recent": [
-  {
-   "title": "Plaid demands more cash, but how could the Budget affect Wales?",
-   "link": "https://www.bbc.co.uk/news/articles/cr1ex97l1n7yo?at_medium=RSS&at_campaign=rss",
-   "sources": [
-    "BBC"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T23:04:44.710315+00:00",
-   "title_ru": "Plaid требует больше денег, но как бюджет может повлиять на Уэльс?",
-   "lead": "A main concern among shoppers at a Welsh market was having enough money for energy bills through the winter.",
-   "lead_ru": "Основная проблема покупателей на валлийском рынке заключалась в том, что зимой у них хватало денег на счета за электроэнергию."
-  },
   {
    "title": "Crusoe CEO Defends Rival CoreWeave, Calls Selloff ‘Overblown’",
    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNd3QxaWNLZHNUU1JMb3FJM2R0MWRlRG9zVHdNaTFWSFBfSFdYSkUzMDFMRzB2QlMySGphZk9zSDdmamYzLUYzMFZmdDdsRDhNa0lSRnhDcEFVMTl2MXQwbTBtVFlFT2NqbmhfWVU1b2RKTDBlSXdyMTZ0SkdJYnVmZUhLQTF4V0d5ZzNGNUhrSkhSVnZXUE10VFlvVjl3VEg5SzJka1A0V0NDOEl0SVE?oc=5",
@@ -11966,6 +11953,15 @@
    "score": 4,
    "ts": "2026-10-30T22:36:27.293071+00:00",
    "title_ru": "Динамика занятости в сфере бизнеса в Монтане — первый квартал 2026 г."
+  },
+  {
+   "title": "How will the US midterms affect Australian markets?",
+   "link": "https://www.theguardian.com/australia-news/2026/oct/31/how-will-the-us-midterms-affect-australian-markets",
+   "sources": [
+    "The Guardian"
+   ],
+   "score": 2,
+   "ts": "2026-10-30T23:01:27.197465+00:00"
   }
  ],
  "last_digest": "2026-10-30",
@@ -15162,6 +15158,54 @@
     "date": "2026-10-29",
     "disclosed": "2026-10-30",
     "link": "https://www.sec.gov/Archives/edgar/data/1302874/000126682426000219/0001266824-26-000219-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "d3f70c79a81256e2",
+    "ticker": "PACS",
+    "company": "PACS Group, Inc.",
+    "who": "Mark Hancock",
+    "role": "Director, 10% owner",
+    "type": "sell",
+    "value": 666221,
+    "shares": 13304,
+    "price": 50.08,
+    "plan": true,
+    "date": "2026-10-29",
+    "disclosed": "2026-10-30",
+    "link": "https://www.sec.gov/Archives/edgar/data/2014361/000201436126000040/0002014361-26-000040-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "a5ec3c8e278232b6",
+    "ticker": "PACS",
+    "company": "PACS Group, Inc.",
+    "who": "Michelle Renee Lewis",
+    "role": "Chief Accounting Officer",
+    "type": "sell",
+    "value": 592648,
+    "shares": 11828,
+    "price": 50.11,
+    "plan": true,
+    "date": "2026-10-29",
+    "disclosed": "2026-10-30",
+    "link": "https://www.sec.gov/Archives/edgar/data/2014293/000201429326000012/0002014293-26-000012-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "a200aac418383bb5",
+    "ticker": "CAKE",
+    "company": "CHEESECAKE FACTORY INC",
+    "who": "Matthew Eliot Clark",
+    "role": "CFO",
+    "type": "sell",
+    "value": 2700394,
+    "shares": 23832,
+    "price": 113.31,
+    "plan": false,
+    "date": "2026-10-29",
+    "disclosed": "2026-10-30",
+    "link": "https://www.sec.gov/Archives/edgar/data/1451763/000145176326000014/0001451763-26-000014-index.htm"
    },
    {
     "src": "sec",
@@ -18634,54 +18678,6 @@
     "date": "2026-10-23",
     "disclosed": "2026-10-26",
     "link": "https://www.sec.gov/Archives/edgar/data/2159232/000121390026112593/0001213900-26-112593-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "9f99dc130e31fde9",
-    "ticker": "RVII",
-    "company": "Robinhood Ventures Fund II",
-    "who": "Meredith Whitney",
-    "role": "Director",
-    "type": "buy",
-    "value": 26625,
-    "shares": 1500,
-    "price": 17.75,
-    "plan": false,
-    "date": "2026-10-23",
-    "disclosed": "2026-10-26",
-    "link": "https://www.sec.gov/Archives/edgar/data/2131040/000095010326016189/0000950103-26-016189-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "ec5f1f7b4b190a11",
-    "ticker": "CART",
-    "company": "Maplebear Inc.",
-    "who": "Morgan Fong",
-    "role": "General Counsel",
-    "type": "sell",
-    "value": 937934,
-    "shares": 18390,
-    "price": 51.0,
-    "plan": true,
-    "date": "2026-10-22",
-    "disclosed": "2026-10-26",
-    "link": "https://www.sec.gov/Archives/edgar/data/1990106/000199010626000026/0001990106-26-000026-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "89653378cfb9978e",
-    "ticker": "DELL",
-    "company": "Dell Technologies Inc.",
-    "who": "Lynn Vojvodich Radakovich",
-    "role": "Director",
-    "type": "sell",
-    "value": 930120,
-    "shares": 2022,
-    "price": 460.0,
-    "plan": true,
-    "date": "2026-10-22",
-    "disclosed": "2026-10-26",
-    "link": "https://www.sec.gov/Archives/edgar/data/1662205/000166220526000021/0001662205-26-000021-index.htm"
    }
   ],
   "docs": {
@@ -18721,19 +18717,16 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-30T22:00:57.473497+00:00",
+  "checked": "2026-10-30T23:01:27.197465+00:00",
   "sec_seen": [
-   "0001513845-26-000145",
    "0001841752-26-000030",
    "0002006416-26-000021",
-   "0001882630-26-000002",
    "0002006935-26-000008",
    "0001272466-26-000002",
    "0001193125-26-441991",
-   "0001193125-26-441964",
    "0001740393-26-000008",
    "0001371285-26-000207",
-   "0001910507-26-000004",
+   "0001193532-26-000012",
    "0001193125-26-442085",
    "0001866581-26-000171",
    "0001631325-26-000004",
@@ -18742,25 +18735,26 @@
    "0001866581-26-000173",
    "0002025289-26-000007",
    "0001193125-26-442033",
-   "0000351569-26-000159",
+   "0002025268-26-000008",
    "0001821204-26-000006",
    "0001193125-26-441984",
    "0001284489-26-000044",
    "0001193125-26-442045",
    "0001409970-26-000204",
+   "0001305512-26-000014",
    "0001193125-26-442029",
    "0001193125-26-441980",
    "0001193125-26-442010",
-   "0002117509-26-000006",
    "0001193125-26-441988",
    "0001635088-26-000120",
+   "0001451763-26-000014",
    "0001193125-26-441978",
    "0000904454-26-000570",
    "0000887343-26-000185",
    "0001193125-26-442076",
    "0001193125-26-441996",
    "0001193125-26-442013",
-   "0000087347-26-000130",
+   "0002014386-26-000026",
    "0001266824-26-000219",
    "0000904454-26-000572",
    "0001193125-26-442023",
@@ -18772,7 +18766,9 @@
    "0001676558-26-000022",
    "0002088549-26-000017",
    "0000904454-26-000576",
-   "0001866581-26-000172"
+   "0002014361-26-000040",
+   "0001866581-26-000172",
+   "0002014293-26-000012"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
