@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "0f35229a60246330": "2026-10-27T08:38:09.338288+00:00",
-  "9fd46876a7d9e537": "2026-10-27T08:38:09.338288+00:00",
   "58bca226290047f8": "2026-10-27T08:48:09.304102+00:00",
   "52b4c48ee889733d": "2026-10-27T08:48:09.304102+00:00",
   "6aaf17c2574d467c": "2026-10-27T08:53:09.257689+00:00",
@@ -1120,37 +1118,10 @@
   "b9c2e85e1ef7774c": "2026-10-30T08:29:40.188359+00:00",
   "0e621910e6540751": "2026-10-30T08:29:40.188359+00:00",
   "1900f392f00e2d60": "2026-10-30T08:34:40.230270+00:00",
-  "833b17bee41e4ac2": "2026-10-30T08:34:40.230270+00:00"
+  "833b17bee41e4ac2": "2026-10-30T08:34:40.230270+00:00",
+  "a271bafb2b1f8e23": "2026-10-30T08:39:40.239136+00:00"
  },
  "recent": [
-  {
-   "title": "European Stocks Pulled Lower by Banks as HSBC Results Disappoint",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-27/european-stocks-pulled-lower-by-banks-as-hsbc-results-disappoint",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-27T08:38:09.338288+00:00",
-   "title_ru": "Европейские акции упали из-за разочаровывающих результатов HSBC",
-   "lead": "European stocks fell for a third day in four as disappointing earnings from benchmark heavyweight HSBC Holdings Plc dragged down the banking sector.",
-   "lead_ru": "Европейские фондовые индексы падают третий день из четырех, так как разочаровывающие отчеты тяжеловеса HSBC Holdings Plc повлекли за собой падение банковского сектора.",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "Europe shares fall as HSBC weighs, France protests keep investors wary",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOVnBYek5KdDdhMXN1SGw1TldlR19aLTR0NG91alpsSFZ1dW5mVXpraUVDQ0VVLXQ0OEZ2VDNtbUhmZG1rTGUzZVBYcHBGMW1LVlNpLTBsamdyM3dvYmkzMjQweVZKeGxBRURYYnRrN2xndUpVVnlpajFCbXhpdWJkUHlDY1QyT3BMa3VHUGJCZVFmZWRxUVRpaUZ6ZGZTaWFGREJXdm1CZjd4LTB1VjIzUQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-27T08:38:09.338288+00:00",
-   "title_ru": "Европейские акции падают на фоне негативных последствий HSBC, протесты во Франции заставляют инвесторов насторожиться",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Saudi Arabia Contains Fire Near Ras Tanura Oil Hub After Attack",
    "link": "https://www.bloomberg.com/news/articles/2026-10-27/saudi-arabia-contains-fire-near-ras-tanura-oil-hub-after-attack",
@@ -11885,6 +11856,21 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Kia Shares Plunge as Cost Surge Linked to Iran War Hits Profit",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/kia-shares-plunge-as-cost-surge-linked-to-iran-war-hits-profit",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T08:39:40.239136+00:00",
+   "title_ru": "Акции Kia упали, поскольку рост затрат, связанный с войной в Иране, ударил по прибыли",
+   "lead": "Kia Corp. shares fell to their lowest level in more than a year after the company warned that its earnings are being eroded by mounting costs linked to the war in the Middle East.",
+   "lead_ru": "Акции Kia Corp. упали до самого низкого уровня более чем за год после того, как компания предупредила, что ее доходы снижаются из-за растущих расходов, связанных с войной на Ближнем Востоке.",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -18571,7 +18557,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-30T07:34:40.288000+00:00",
+  "checked": "2026-10-30T08:39:40.239136+00:00",
   "sec_seen": [
    "0001778564-26-000195",
    "0001857843-26-000030",
@@ -18580,8 +18566,8 @@
    "0001178579-26-000022",
    "0001437749-26-034034",
    "0000944075-26-000076",
-   "0001392942-26-000016",
    "0000944075-26-000077",
+   "0001392942-26-000016",
    "0001628280-26-068337",
    "0000944075-26-000075",
    "0000944075-26-000079",
