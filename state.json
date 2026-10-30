@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "68ad19a88905bc90": "2026-10-27T21:04:44.700422+00:00",
-  "ded185d9e3a8981d": "2026-10-27T21:04:44.700422+00:00",
   "2f0c81c9769e4b06": "2026-10-27T21:09:44.729318+00:00",
   "3a0df1f317093c51": "2026-10-27T21:09:44.729318+00:00",
   "76b2dd11e7fe001c": "2026-10-27T21:14:44.696862+00:00",
@@ -1135,32 +1133,11 @@
   "b70d639884423d98": "2026-10-30T20:35:57.547977+00:00",
   "6c60aef9d310b278": "2026-10-30T20:50:57.485988+00:00",
   "694429867ab4fb5c": "2026-10-30T20:50:57.485988+00:00",
-  "e9beba98e362da41": "2026-10-30T21:00:57.435260+00:00"
+  "e9beba98e362da41": "2026-10-30T21:00:57.435260+00:00",
+  "0ac234b29229d2d0": "2026-10-30T21:05:57.563199+00:00",
+  "1bf87ea48f59e51d": "2026-10-30T21:05:57.563199+00:00"
  },
  "recent": [
-  {
-   "title": "IMF Reaches Staff-Level Agreement on the Third Review under Argentina’s Extended Fund Facility Arrangement",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQQ3lTUUhPc0ZqMGlZZjVSSjRVTWwyWThLUFpOQ2ZYNkxpZE90T1g2QXFJa210ODJHVTVBYTVwaW55U19IazZySDhhcnNJcGhiNEpmbnF5WkxYWlU2dnIySUY1c055Y0Fob2NEOG10SEtqQ0taSjlZZHl3UnV5ZktSSW10bW5lT1dJeG9CWmJ0X2pMekJqMDZveHlxYVRXckRleWQxT3FoM2hIMEZCYXZqX1hCS2g?oc=5",
-   "sources": [
-    "IMF"
-   ],
-   "score": 5,
-   "ts": "2026-10-27T21:04:44.700422+00:00",
-   "title_ru": "МВФ достиг соглашения на уровне персонала о третьем обзоре в рамках механизма расширенного финансирования Аргентины"
-  },
-  {
-   "title": "Trump says he will visit tanker in Texas with first oil from Venezuela deal",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQS2xReG5IbDd2VEVRZXJ1VUtaNGtlSFhpa3paSkFQVWhLWVk3NzNkendFMXNTZ3p5b3R6aTJTUzluYk1PUGlySXNEaDZPdXN2ZEx2WTF0SlRZZ1lmRmtRZnpFSVU4WGp0ZkdfY18tQlYwck9GbVBRUXR0Q2x2bVlkWDdMbVNFSVVZNnh2bXpjMm9hRjd3eThsYXRqQ0JhT05hc2hIWG93U005R2pFOXlORmZmNV9uYW02cGM4?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T21:04:44.700422+00:00",
-   "title_ru": "Трамп заявил, что посетит танкер в Техасе с первой сделкой по нефти из Венесуэлы",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "Chile Keeps Rates at 4.5% as Growth Fades and Inflation Picks Up",
    "link": "https://www.bloomberg.com/news/articles/2026-10-27/chile-keeps-rates-at-4-5-as-growth-fades-and-inflation-picks-up",
@@ -12119,6 +12096,16 @@
    "tags": [
     "gas"
    ]
+  },
+  {
+   "title": "Ukraine: Technical Assistance Report-Assessment of Energy Subsidy Fiscal Cost and Reform Options",
+   "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOUzdoRlpXVUhGSHJMaW5mZW9NM2NIQTFuVnFWSUhkZTVTN1RwQ0JqYkRCcUxMTWpwckpiNGpFaEhlRFM3b2ppMnN4a2dkcnRYd1JXQzR0ZzNyR3dnT1JZUW9aVXNqSEJ5Wk93N0R3ZV9ZR0dTbkw0OE1vWGlsYU9rM01yV0dTelBaNGhSRjIyLTlOMlRaR2Q4Mnk2RHl5aEpsYXJLeks1eVcyT1VIWjlzUU5aWTFMTmVaTTFuYTRvekpwWjY2YnpaOExOTl92TXpWbkZTZjVzczViNlg2YzRGZnloNWFQWkhrWUc4SVd2ZU10RUVQSU93NnFPTXZFRXJaaS1VeTBUT0w?oc=5",
+   "sources": [
+    "IMF"
+   ],
+   "score": 4,
+   "ts": "2026-10-30T21:05:57.563199+00:00",
+   "title_ru": "Украина: Отчет о технической помощи - Оценка фискальных затрат на энергетические субсидии и варианты реформ"
   }
  ],
  "last_digest": "2026-10-30",
@@ -18876,7 +18863,6 @@
   },
   "checked": "2026-10-30T21:00:57.435260+00:00",
   "sec_seen": [
-   "0002083595-26-000012",
    "0001053507-26-000159",
    "0000097745-26-000182",
    "0001437749-26-034229",
@@ -18885,7 +18871,9 @@
    "0000097745-26-000183",
    "0001048911-26-000133",
    "0001437749-26-034228",
-   "0001628280-26-068607"
+   "0001437749-26-034240",
+   "0001628280-26-068607",
+   "0001791917-26-000006"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
