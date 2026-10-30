@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "a8275e02227b60ee": "2026-10-27T23:40:19.177666+00:00",
-  "58c290c0ef89142f": "2026-10-27T23:40:19.177666+00:00",
   "9c605bcbca1c1186": "2026-10-27T23:55:19.126030+00:00",
   "d990324bff43d42b": "2026-10-27T23:55:19.126030+00:00",
   "b123243586b4f305": "2026-10-28T00:05:19.234371+00:00",
@@ -1122,19 +1120,10 @@
   "cfdb374a00c90a1b": "2026-10-30T23:11:27.215507+00:00",
   "d3be7a472d9b1534": "2026-10-30T23:21:27.195119+00:00",
   "7ab5e9422fa33a7f": "2026-10-30T23:21:27.195119+00:00",
-  "9209fcf70e556eb7": "2026-10-30T23:21:27.195119+00:00"
+  "9209fcf70e556eb7": "2026-10-30T23:21:27.195119+00:00",
+  "371d486f4c7fa6f3": "2026-10-30T23:41:27.152008+00:00"
  },
  "recent": [
-  {
-   "title": "Why Indonesia Is on the Brink of a Downgrade Disaster",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNT2xsbVNvcnlsRWZTNGlwWGFncmowdUxoMTE2RjZQV2szYlZMdzFDSkZEVGFBZFV4NFJsYjlJRi1Uc1JzN2syT3NPajFMWDdRSVI3Rnk1TGJ6WnA2ckZMNEdvLVA2TGctdmIxSFI5U2hTWFM3TWZjY21vdC0tY09jU3poS3NPVzlCRERBdm0yeWRSRHNmcDd1eFo3eDJoWXBJdWtxZGpzTmFsN2JpUUJTY2tEdUVLSFRJN3dTUg?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-27T23:40:19.177666+00:00",
-   "title_ru": "Почему Индонезия находится на грани катастрофы"
-  },
   {
    "title": "Machado’s Return Exposes Fault Line in Venezuela’s Oil Sector",
    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQYWRYeUItWnZlVEcyS2NsaWE0cTNLeXJTZ3dzcTdDQjk1c3Nsd0hyVHFtTnJhcHV2NXdiV3VSVmlpREUtYXFncXBBei1MWThtNnZXUnRGM1BqakZpZktqQnhGdWcyeVlWTGFCd1B1QXE1eGxlcVRVX1VRX1Qya0Jic0ZOTFRFUkIxNHgzX0JBNzhid1NYX2ZHSkxGS1FCVW10YTBXeXZGa3VWN0NDTFFuX0p3?oc=5",
@@ -11971,6 +11960,19 @@
    ],
    "score": 1,
    "ts": "2026-10-30T23:21:27.195119+00:00"
+  },
+  {
+   "title": "North Korea says sanctions don't work to deny its status as nuclear weapons state",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPbVo5aGdRLXQ0a3ltRnJzMUVTRjBjNUJKNW5fWGxtTmh2NEVMZ0ZUUTRqSktEeXotdkNNWk9TS2ExREYtQWZmdFVZUV9MWUZVaGNIaVk0RXJtdXk0LXN5V29CNmY3ME54ZkRueXh5YzB4OXVEakVOYUVBSlFzaVUtV3hBLVZ0WnNHSmwwcGd4ZHJmVzFwR2VPMndoZGxObmtQRVJxM3dEZmdobnlWOGpCYjEwNFRrTERnUFd5S2NEcVhITjFxSndtaw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-30T23:41:27.152008+00:00",
+   "title_ru": "Северная Корея заявляет, что санкции не помогают лишить ее статуса ядерной державы",
+   "tags": [
+    "sanctions"
+   ]
   }
  ],
  "last_digest": "2026-10-30",
@@ -18740,6 +18742,7 @@
    "0001193125-26-442033",
    "0002025268-26-000008",
    "0000091440-26-000174",
+   "0001866581-26-000172",
    "0001193125-26-442119",
    "0001284489-26-000044",
    "0001409970-26-000204",
@@ -18755,7 +18758,6 @@
    "0000887343-26-000185",
    "0001193125-26-442076",
    "0001280486-26-000010",
-   "0001193125-26-442013",
    "0002014386-26-000026",
    "0000904454-26-000572",
    "0001266824-26-000219",
@@ -18772,7 +18774,7 @@
    "0000904454-26-000576",
    "0002014361-26-000040",
    "0001223260-26-000011",
-   "0001866581-26-000172",
+   "0001193125-26-442013",
    "0002014293-26-000012"
   ],
   "errors": {
