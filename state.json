@@ -1138,7 +1138,10 @@
   "64b8845cd4769270": "2026-10-30T20:10:57.475821+00:00",
   "60a76ab3648869be": "2026-10-30T20:15:57.558570+00:00",
   "58b4acbf52cfc857": "2026-10-30T20:20:57.292562+00:00",
-  "0758348de34f9e51": "2026-10-30T20:25:57.415517+00:00"
+  "0758348de34f9e51": "2026-10-30T20:25:57.415517+00:00",
+  "1562c3fd3b9b4716": "2026-10-30T20:30:57.450014+00:00",
+  "09a284330c8d1dfb": "2026-10-30T20:30:57.450014+00:00",
+  "29e41cd02c30864e": "2026-10-30T20:30:57.450014+00:00"
  },
  "recent": [
   {
@@ -12109,6 +12112,51 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "Intel Plunges 29% on Weak Outlook as Tech Selloff Deepens | Closing Bell",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-30/intel-plunges-on-weak-outlook-closing-bell-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-30T20:30:57.450014+00:00",
+   "title_ru": "Intel падает на 29% на слабых перспективах, поскольку технологическая распродажа углубляется | Closing Bell",
+   "lead": "Comprehensive cross-platform coverage of the U.S. market close on Bloomberg Television, Bloomberg Radio, and YouTube with Romaine Bostick, Kristine Aquino, Jess Menton and Tim Stenovec. (Source: Bloomberg)",
+   "lead_ru": "Комплексное кроссплатформенное освещение рынка США закрывается на Bloomberg Television, Bloomberg Radio и YouTube с Ромейн Бостик, Кристин Акино, Джесс Ментон и Тимом Стеновеком. (Источник: Bloomberg)",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "The selloff in tech stocks is shifting into overdrive",
+   "link": "https://www.marketwatch.com/story/the-selloff-in-tech-stocks-is-shifting-into-overdrive-afb50975?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 4,
+   "ts": "2026-10-30T20:30:57.450014+00:00",
+   "title_ru": "Распродажа акций технологических компаний переходит в овердрайв",
+   "lead": "Technology stocks had been priced for perfection. They are now getting hammered.",
+   "lead_ru": "Технологические запасы были оценены по совершенству. Теперь их забивают.",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "TSX Has Worst Day Since June, Joining North American Retreat",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/tsx-has-worst-day-since-june-joining-north-american-retreat",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T20:30:57.450014+00:00",
+   "title_ru": "TSX переживает худший день с июня, присоединяясь к североамериканскому ретриту",
+   "lead": "Canadian stocks fell the most since June as a selloff in technology and materials stocks hammered the benchmark index.",
+   "lead_ru": "Канадские акции упали больше всего с июня, так как распродажа запасов технологий и материалов забила эталонный индекс.",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-30",
@@ -15065,6 +15113,38 @@
     "date": "2026-10-29",
     "disclosed": "2026-10-30",
     "link": "https://www.sec.gov/Archives/edgar/data/2055015/000205501526000019/0002055015-26-000019-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "1cb62a35f57dc774",
+    "ticker": "UTHR",
+    "company": "UNITED THERAPEUTICS Corp",
+    "who": "Martine A Rothblatt",
+    "role": "CEO",
+    "type": "sell",
+    "value": 5650415,
+    "shares": 9500,
+    "price": 594.78,
+    "plan": true,
+    "date": "2026-10-29",
+    "disclosed": "2026-10-30",
+    "link": "https://www.sec.gov/Archives/edgar/data/1106578/000110657826000175/0001106578-26-000175-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "9444d596e99047d9",
+    "ticker": "TXN",
+    "company": "TEXAS INSTRUMENTS INC",
+    "who": "Ronald Kirk",
+    "role": "Director",
+    "type": "sell",
+    "value": 1882515,
+    "shares": 6065,
+    "price": 310.39,
+    "plan": false,
+    "date": "2026-10-29",
+    "disclosed": "2026-10-30",
+    "link": "https://www.sec.gov/Archives/edgar/data/1186342/000009747626000178/0000097476-26-000178-index.htm"
    },
    {
     "src": "sec",
@@ -18793,38 +18873,6 @@
     "date": "2026-10-22",
     "disclosed": "2026-10-23",
     "link": "https://www.sec.gov/Archives/edgar/data/1689378/000008631226000189/0000086312-26-000189-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "d4a87f01b3d53b46",
-    "ticker": "SNX",
-    "company": "TD SYNNEX CORP",
-    "who": "Alim Dhanji",
-    "role": "Chief Human Resources Officer",
-    "type": "sell",
-    "value": 909794,
-    "shares": 3775,
-    "price": 241.01,
-    "plan": false,
-    "date": "2026-10-22",
-    "disclosed": "2026-10-23",
-    "link": "https://www.sec.gov/Archives/edgar/data/2051665/000117739426000138/0001177394-26-000138-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "3fa2a1f6d49d69b9",
-    "ticker": "WTFC",
-    "company": "WINTRUST FINANCIAL CORP",
-    "who": "Richard B Murphy",
-    "role": "Chair",
-    "type": "sell",
-    "value": 1060838,
-    "shares": 7136,
-    "price": 148.66,
-    "plan": false,
-    "date": "2026-10-22",
-    "disclosed": "2026-10-23",
-    "link": "https://www.sec.gov/Archives/edgar/data/1267655/000126765526000019/0001267655-26-000019-index.htm"
    }
   ],
   "docs": {
@@ -18867,35 +18915,28 @@
   "checked": "2026-10-30T19:55:57.438817+00:00",
   "sec_seen": [
    "0001193485-26-000006",
-   "0001140361-26-041309",
    "0000076334-26-000156",
-   "0002115144-26-000014",
    "0002115826-26-000010",
-   "0001193125-26-441690",
+   "0002115144-26-000014",
+   "0001193125-26-441748",
    "0000101382-26-000186",
    "0000076334-26-000158",
-   "0001213900-26-114394",
-   "0001791243-26-000012",
    "0001193125-26-441718",
    "0001628280-26-068593",
    "0002055015-26-000019",
-   "0001213900-26-114393",
-   "0001193125-26-441691",
-   "0002050167-26-000032",
-   "0001225208-26-008571",
+   "0001437749-26-034220",
    "0001193125-26-441716",
-   "0001193125-26-441694",
    "0001672688-26-000146",
-   "0000076334-26-000154",
-   "0000076334-26-000152",
+   "0001106578-26-000175",
    "0001193125-26-441717",
    "0000036966-26-000193",
+   "0001193125-26-441749",
    "0001193125-26-441698",
    "0001628280-26-068581",
+   "0000097476-26-000178",
    "0001225208-26-008572",
    "0002132897-26-000008",
-   "0001193125-26-441713",
-   "0000076334-26-000150"
+   "0001193125-26-441713"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
