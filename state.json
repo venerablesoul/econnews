@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "9ec9fcc21ef49b60": "2026-10-27T06:32:36.903361+00:00",
-  "0164e642265173bf": "2026-10-27T06:32:36.903361+00:00",
-  "d6e7426a7dbe5795": "2026-10-27T06:37:36.845937+00:00",
-  "47a50fcfdf762014": "2026-10-27T06:37:36.845937+00:00",
   "3fed3fc31860b570": "2026-10-27T06:42:36.861470+00:00",
   "b2bc7b404cf954c0": "2026-10-27T06:47:36.860083+00:00",
   "7dd3ea067e14d6aa": "2026-10-27T06:48:13.211549+00:00",
@@ -1113,49 +1109,11 @@
   "07358ca85386fb5b": "2026-10-30T06:04:40.247700+00:00",
   "2ca9960c96c35004": "2026-10-30T06:04:40.247700+00:00",
   "2f7b33f120d03be0": "2026-10-30T06:04:40.247700+00:00",
-  "ef8f97356160e4e6": "2026-10-30T06:09:40.224746+00:00"
+  "ef8f97356160e4e6": "2026-10-30T06:09:40.224746+00:00",
+  "55d8ec8e0bb5cd35": "2026-10-30T06:39:40.261517+00:00",
+  "be0ae030c17e3612": "2026-10-30T06:39:40.261517+00:00"
  },
  "recent": [
-  {
-   "title": "Anthropic IPO Reignites AI Trade in Asia",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-27/insight-with-haslinda-amin-10-27-2026-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T06:32:36.903361+00:00",
-   "title_ru": "Антропное IPO оживляет торговлю искусственным интеллектом в Азии",
-   "lead": "\"Insight with Haslinda Amin\" is a daily news program featuring in-depth, high-profile interviews and analysis to give viewers the complete picture on the stories that matter.",
-   "lead_ru": "«Инсайт с Хаслиндой Амин» - это ежедневная новостная программа с подробными, громкими интервью и анализом, чтобы дать зрителям полное представление о важных историях."
-  },
-  {
-   "title": "Oil Shock, AI Boom Deepen Divide in Emerging Asian Currencies",
-   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNcVhFOG5DUXMyc0Vsd2R1Z1M0Z2RNRHRxYjZTdTJXSmlzU1RLSTlJWV9vTC1fTVFXaE1DVzcyVFhHMDR2eEdLQ2k2cFduMU5DWXdocVJiUG9mRWdLWFYzdmxRM0VSa0dxSXNhX3RCd0x6Y3VVZzFBRTJsWUtVdFdDZzNLQWlsZDQ3X3cySVVMdXoweUpLZFJiMDF5SjBBcXN1Q0NDeXMzUnVyUXBZUGpWVFZWT2dkZVFJS1FZNjFwc2dxUnZp?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T06:32:36.903361+00:00",
-   "title_ru": "Нефтяной шок, бум ИИ углубляют раскол в развивающихся азиатских валютах",
-   "tags": [
-    "oil"
-   ]
-  },
-  {
-   "title": "Gold eases on firmer dollar ahead of Fed decision",
-   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQQWIyeWVhRnVBaHZfV05HanpZVFJzZDZiaC1MTEFVX0JEbWc5RVhRV3htMnJFMDNCVjBPWTJISkhha3ZWc3otaXBCTGloREJidmlqOWtXMTQ4Zks2aTA5czBzNC1OdGNuVXlqLVZ4TTk3M1VUSEZvdVdCLXV3bHJsZXBHSktGcXR0dk1wS2VYdWYxTm9ueGc?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-27T06:37:36.845937+00:00",
-   "title_ru": "Золото ослабевает на более твердом долларе в преддверии решения ФРС",
-   "tags": [
-    "Fed",
-    "gold",
-    "dollar"
-   ]
-  },
   {
    "title": "COMMENTARY: Canada takes a page from the Saudi oil playbook",
    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPLVdYZEhQeFB6N3hoajA4RFZvLURrQWJNV0t5Sm5sMWxtVGN4VTRRRmpSSnpOOFNOUF90ZGdqX19MSk9RdWJzN0FiaU1tVlZEeE12UTAxajROdVZOeUFCT1VVNUtSZHJHTV9jd1o3d0VTMXBQcHpmTGpqdi1BenBvbVVnT09UOUZ1c2RvYXlSdlRSVzFiM3g0Y3MtV0EtR2dPTlVtbVdCNUY?oc=5",
@@ -11863,6 +11821,33 @@
    "tags": [
     "bonds"
    ]
+  },
+  {
+   "title": "French Economy Unexpectedly Shrinks as Headwinds Gain Strength",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/french-economy-unexpectedly-shrinks-as-headwinds-gain-strength",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T06:39:40.261517+00:00",
+   "title_ru": "Французская экономика неожиданно сокращается по мере усиления встречных ветров",
+   "lead": "France unexpectedly contracted in the third quarter, putting the economy on a weak footing as it faces headwinds from surging borrowing costs, violent protests and political and budgetary uncertainty.",
+   "lead_ru": "Франция неожиданно сократилась в третьем квартале, поставив экономику в слабое положение, поскольку она сталкивается с препятствиями из-за роста стоимости заимствований, насильственных протестов и политической и бюджетной неопределенности."
+  },
+  {
+   "title": "SNB Reports Nine-Month Profit on Foreign Currencies and Gold",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/snb-reports-nine-month-profit-on-foreign-currencies-and-gold",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T06:39:40.261517+00:00",
+   "title_ru": "SNB сообщает о девятимесячной прибыли по иностранным валютам и золоту",
+   "lead": "The Swiss National Bank reported a solid nine-month profit thanks to its foreign-currency portfolio and gold holdings.",
+   "lead_ru": "Швейцарский национальный банк отчитался о солидной девятимесячной прибыли благодаря своему валютному портфелю и золотым запасам.",
+   "tags": [
+    "gold"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -18549,7 +18534,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-30T05:34:13.604250+00:00",
+  "checked": "2026-10-30T06:34:40.260538+00:00",
   "sec_seen": [
    "0001778564-26-000195",
    "0001857843-26-000030",
