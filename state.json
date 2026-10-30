@@ -1136,7 +1136,11 @@
   "afa1a9b94de69d30": "2026-10-30T18:30:57.623229+00:00",
   "de6dcdb9275a03f7": "2026-10-30T18:30:57.623229+00:00",
   "cfc725c4d274fc07": "2026-10-30T18:35:57.402164+00:00",
-  "8429338684854a06": "2026-10-30T18:35:57.402164+00:00"
+  "8429338684854a06": "2026-10-30T18:35:57.402164+00:00",
+  "b50e5fee6766b224": "2026-10-30T18:45:57.475504+00:00",
+  "534f2dfb598ec378": "2026-10-30T18:45:57.475504+00:00",
+  "1d562beda2f6777f": "2026-10-30T18:45:57.475504+00:00",
+  "843dfa413e767b55": "2026-10-30T18:45:57.475504+00:00"
  },
  "recent": [
   {
@@ -12146,6 +12150,32 @@
     "Fed",
     "rates"
    ]
+  },
+  {
+   "title": "German inflation slows more than expected in October",
+   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPYlNSUkFvel9FT3U0d0NSRFhuQTM0dGhEdzI4bEFIRUIzdms5YXJCTEV3a1BXWElPZnVfNGd2b2l3TDBoRDZrWHY0Vy0wS1hCUUJqQ3p2MzlzUnJfTVpWYWxabl8xYjVZUFM1MDFsWFhHNTZZTENGSTdqMURfOUJEQQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-30T18:45:57.475504+00:00",
+   "title_ru": "Инфляция в Германии в октябре замедлилась сильнее, чем ожидалось",
+   "tags": [
+    "inflation"
+   ]
+  },
+  {
+   "title": "Reddit shares plunge as Google's AI search squeezes traffic",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNQks1Z3lNdGwyQnFsQ3NQTU1jWTMwNGRGV002QW5RaDhIOGRIRG9xZmFWTUpsYnpYWVhvbUE1N0ZRTXNlOVRJMjdIVE5nOU5tWEhWRGNORVZPUWxNZ2otUF9zUEQ1QkRlWjNNRm1keF95MFlJOUo3bXBmRTZJQ3ppdWxmOVlQbENUVXE3dXUwcTItTUNQTTJEQmJCdGJXeXNwckE?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T18:45:57.475504+00:00",
+   "title_ru": "Акции Reddit падают, поскольку поиск Google с помощью искусственного интеллекта сжимает трафик",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-30",
@@ -18842,14 +18872,11 @@
   },
   "checked": "2026-10-30T17:50:57.788325+00:00",
   "sec_seen": [
-   "0001193125-26-441381",
    "0001104659-26-120602",
    "0001437749-26-034162",
+   "0002106640-26-000014",
    "0001591893-26-000006",
-   "0001437749-26-034158",
-   "0000780571-26-000235",
-   "0001437749-26-034164",
-   "0001628280-26-068526"
+   "0001437749-26-034164"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
