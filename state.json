@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "ed49b582aaf1c773": "2026-10-27T17:13:43.000942+00:00",
-  "4a7c4ddf2999f514": "2026-10-27T17:13:43.000942+00:00",
   "39d500e8670147c4": "2026-10-27T17:18:43.012695+00:00",
   "581f8d6e07fe269b": "2026-10-27T17:23:42.980948+00:00",
   "879a2f9e2dd3f878": "2026-10-27T17:28:43.009166+00:00",
@@ -1133,22 +1131,11 @@
   "e643e217dc71b1ef": "2026-10-30T16:55:57.537580+00:00",
   "0d00d32f8c4c4695": "2026-10-30T16:55:57.537580+00:00",
   "f128be813c118189": "2026-10-30T17:00:59.597506+00:00",
-  "53785dd961581b4a": "2026-10-30T17:05:57.537882+00:00"
+  "53785dd961581b4a": "2026-10-30T17:05:57.537882+00:00",
+  "fb5309b4254af486": "2026-10-30T17:10:57.551050+00:00",
+  "1b1accd6d9e9729e": "2026-10-30T17:15:57.527913+00:00"
  },
  "recent": [
-  {
-   "title": "Google Upgrades AI World Model That Rattled Video Game Stocks",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQbUx6Z0xYcXpVWEdaSGswN0tVc3hOdmFXZmNpLWxreG5sallSc0RnbHlQcVpXWGZwRzZfZW5JM19nTkYzRVlyLWVGRktZbG4waVlPajJnVEp1aXJ2TEVMM29sbEJYTFlvY2Q4M2Nna3VLeHNTOEhiN1ZYalplUWRWN0xfbE16RlpfMjdSaFd4Ym1qU1kxWmFKNWl0djluT3VOM3JMN1lycDhPQ1N3UHFaRnln?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T17:13:43.000942+00:00",
-   "title_ru": "Google модернизирует мировую модель искусственного интеллекта, которая потрясла акции видеоигр",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "‘Loser’ Stocks Are Appealing Amid AI Frenzy, Causeway CEO Says",
    "link": "https://www.bloomberg.com/news/articles/2026-10-27/-loser-stocks-are-appealing-amid-ai-frenzy-causeway-ceo-says",
@@ -12094,6 +12081,15 @@
     "rates",
     "inflation"
    ]
+  },
+  {
+   "title": "The big winners of the tech wreck are biopharma stocks",
+   "link": "https://www.marketwatch.com/story/the-big-winners-of-the-tech-wreck-are-biopharma-stocks-2ac4d175?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-30T17:15:57.527913+00:00"
   }
  ],
  "last_digest": "2026-10-29",
@@ -18784,8 +18780,8 @@
   "sec_seen": [
    "0001213900-26-114242",
    "0001193125-26-441076",
-   "0002099107-26-000004",
    "0002097107-26-000005",
+   "0001045957-26-000012",
    "0001193125-26-441077"
   ],
   "errors": {
