@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "4804f59d240f2516": "2026-10-27T14:58:43.003601+00:00",
-  "5b0c3e1b9dea7df3": "2026-10-27T15:03:43.021977+00:00",
   "4dd9d64954467ea0": "2026-10-27T15:08:43.242337+00:00",
   "2baf08cdf117cf80": "2026-10-27T15:08:43.242337+00:00",
   "bc0eee89f73de26b": "2026-10-27T15:08:43.242337+00:00",
@@ -1121,28 +1119,12 @@
   "e755f7eb31307238": "2026-10-30T14:50:10.599317+00:00",
   "ff9719cdef9505b7": "2026-10-30T14:50:10.599317+00:00",
   "e637a9207b1cc695": "2026-10-30T14:50:10.599317+00:00",
-  "1634c7b4a767843a": "2026-10-30T14:55:10.486282+00:00"
+  "1634c7b4a767843a": "2026-10-30T14:55:10.486282+00:00",
+  "8715604258485543": "2026-10-30T15:00:10.644392+00:00",
+  "a664ad024dba66cc": "2026-10-30T15:05:10.592421+00:00",
+  "6e9eb0087c6c1a57": "2026-10-30T15:05:10.592421+00:00"
  },
  "recent": [
-  {
-   "title": "Microsoft earnings will look funky — but an elusive number is finally arriving",
-   "link": "https://www.marketwatch.com/story/microsoft-earnings-will-look-funky-but-an-elusive-number-is-finally-arriving-73236a94?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-27T14:58:43.003601+00:00"
-  },
-  {
-   "title": "Global Policy Agenda 2026",
-   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQU2JIb1M1WExsWkU4NnpYWlZUMkllb3BBOWRHdGppN21jTUdaN1JwMVFxOFlURTU3QlctbmZGd0NsS1ljNk9zUE5ka1RPckN5VXQ4elRWdkY1am5NUXI4NVhZd2NYQmZXUzBBZnptT1l3U3M3eFUzaTFFVUJWcUhXdTZabEVCZlJiU21aWlRYS3J2azMzN1FsLQ?oc=5",
-   "sources": [
-    "IMF"
-   ],
-   "score": 4,
-   "ts": "2026-10-27T15:03:43.021977+00:00",
-   "title_ru": "Глобальная политическая повестка дня до 2026 года"
-  },
   {
    "title": "Italy to approve 2027 budget on Wednesday as talks progress with EU on deficit",
    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQOTVPclN4TndVZGlrc09IdmpNTGRXREk1Yl9aXzU5eldRZzVoNlJOZURSSWRlT3k5UGFhZjdlYmpORE5tdHZLV2FTcWFTTmFFX2t3R2owVTJCNnM0Z2J2WnF1T0R4YnZNUlVIS2Z5djBTRjFiSEppSkItb1RPMzRPUVdFX01uYWZjWl9NMjlwZkM1NjdoSEtfRUJyTEhYUWpySFJRLWdoZlZFVU54MnRIN3h5ZnhVUGNVR19F?oc=5",
@@ -11997,6 +11979,35 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
+   "link": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc261030~e40f864093.en.html",
+   "sources": [
+    "ECB"
+   ],
+   "score": 8,
+   "ts": "2026-10-30T15:05:10.592421+00:00",
+   "title_ru": "Решения, принятые Советом управляющих ЕЦБ (в дополнение к решениям, устанавливающим процентные ставки)",
+   "tags": [
+    "ECB",
+    "rates"
+   ]
+  },
+  {
+   "title": "US Aluminum Group Urges North America to Align on Tariffs",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/us-aluminum-group-urges-north-america-to-align-on-tariffs",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-30T15:05:10.592421+00:00",
+   "title_ru": "Американская алюминиевая группа призывает Северную Америку согласовать тарифы",
+   "lead": "The US aluminum industry’s main trade group is pushing for Canada and Mexico to match Washington’s tariffs on imports of the metal from outside North America, while declining to take a position on whether President Donald Trump’s…",
+   "lead_ru": "Основная торговая группа алюминиевой промышленности США настаивает на том, чтобы Канада и Мексика соответствовали тарифам Вашингтона на импорт металла из-за пределов Северной Америки, одновременно отказываясь занять позицию по поводу того, будет ли президент Дональд Трамп…",
+   "tags": [
+    "tariffs"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -18684,9 +18695,7 @@
    "sec": true
   },
   "checked": "2026-10-30T14:45:10.584224+00:00",
-  "sec_seen": [
-   "0001437749-26-034097"
-  ],
+  "sec_seen": [],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
   }
