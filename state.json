@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "57aaa8f55449f157": "2026-10-27T07:43:09.280588+00:00",
-  "0dc2830752113b29": "2026-10-27T07:43:09.280588+00:00",
-  "b72c025ea7b050dd": "2026-10-27T07:43:09.280588+00:00",
   "886ea968423d5c2e": "2026-10-27T07:48:09.227613+00:00",
   "1be9426e22fa8f7a": "2026-10-27T07:48:09.227613+00:00",
   "f1369d189835111a": "2026-10-27T07:53:09.223649+00:00",
@@ -1115,52 +1112,13 @@
   "9da5d36257b3e643": "2026-10-30T07:24:40.225378+00:00",
   "b00a6aa99d6faf9f": "2026-10-30T07:24:40.225378+00:00",
   "165308cbc7e7bb81": "2026-10-30T07:29:40.231583+00:00",
-  "e4239707bd87c056": "2026-10-30T07:34:40.288000+00:00"
+  "e4239707bd87c056": "2026-10-30T07:34:40.288000+00:00",
+  "f849db3be60f20f3": "2026-10-30T07:39:40.244984+00:00",
+  "13bf803942331dfd": "2026-10-30T07:44:40.223011+00:00",
+  "6588d35a127ba5c4": "2026-10-30T07:44:40.223011+00:00",
+  "f7b46e49efedf2b0": "2026-10-30T07:44:40.223011+00:00"
  },
  "recent": [
-  {
-   "title": "No pressure from US to cut Russian oil imports, Indian oil minister says",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNV2RTRUViV01oOW1kdndvVWFsbGFMYzJNRWE1ZjloY19FMGRmUVozY3lQOG5Tck9PbDM4WGJnV0dLSG5CeEtvd3ZXd2NVR0UwbHdnT1FDbTFXczhDVkYwbVpXSVh1T21reUgxNHdXNVFpTkF3cFJiSkRkSlVlUDRrTW9TSzR0WnpmVF9tR24yWnlNUmtuQTNEdUdUc05Xcnd3NjB6OERDQmJ2dHpWRGk5VVRTUmE2QQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-27T07:43:09.280588+00:00",
-   "title_ru": "Нет давления со стороны США, чтобы сократить импорт российской нефти, говорит министр нефти Индии",
-   "tags": [
-    "oil",
-    "Russia"
-   ]
-  },
-  {
-   "title": "Trump to Ease Oil Well Methane Curbs in Bid to Lower Costs",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPQnVmbkNqSGNzVVFwMy13VWhLYzlQUUFUMTFvaklKZGM3NmVZcjQtR3c3a0tNYkYwOTNGUUltdllHWEVwWFNkeGJySzRaZndZdDVYSGZqQk9HTTh4TFdzY0pYc3FoMlJXMWxTSWJRYy1HNThLaGp2Q0ZkOFluNkFNT3VURjFsb24xdS0tQXdzUGZHdUJTaFVKQzhaelZzb25UcXNOd0tNTURJNHpkWkE?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T07:43:09.280588+00:00",
-   "title_ru": "Трамп ослабит ограничения по метану в нефтяных скважинах в заявке на снижение затрат",
-   "tags": [
-    "oil"
-   ]
-  },
-  {
-   "title": "Министр нефти Индии объяснил снижение закупок российского сырья",
-   "link": "https://www.rbc.ru/economics/27/10/2026/6ae04fd664184d9cc1cd7483",
-   "sources": [
-    "RBC"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T07:43:09.280588+00:00",
-   "title_en": "The Minister of Oil of India explained the decrease in purchases of Russian raw materials",
-   "lead": "Индия сокращает закупки российской нефти на фоне роста поставок с Ближнего Востока и конкуренции с Китаем. Министр нефти страны Хардип Сингх Пури заявил, что не ощущает давления США с требованием отказаться от российского сырья",
-   "lead_en": "India reduces purchases of Russian oil amid growing supplies from the Middle East and competition with China. The country's Oil Minister Hardeep Singh Puri said that he did not feel pressure from the United States to abandon Russian raw materials",
-   "tags": [
-    "oil",
-    "Russia"
-   ]
-  },
   {
    "title": "Chinese Households Are Buying Gold’s Dip as Prices Test $4,000",
    "link": "https://www.bloomberg.com/news/articles/2026-10-27/chinese-households-are-buying-gold-s-dip-as-prices-test-4-000",
@@ -11884,6 +11842,18 @@
    "title_ru": "Цены на жилье в Великобритании стагнируют из-за укуса ипотеки, говорят в стране",
    "lead": "UK house prices failed to grow in October, according to one of the country’s largest mortgage lenders, as surging mortgage costs took their toll on prospective buyers.",
    "lead_ru": "По словам одного из крупнейших ипотечных кредиторов страны, в октябре цены на жилье в Великобритании не выросли, поскольку растущие расходы на ипотеку сказались на потенциальных покупателях."
+  },
+  {
+   "title": "BP Earnings: Profits Jump as Refining Margins Surge",
+   "link": "https://www.bloomberg.com/news/newsletters/2026-10-30/bp-earnings-profits-jump-as-refining-margins-surge",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T07:44:40.223011+00:00",
+   "title_ru": "Прибыль BP: рост прибыли по мере роста маржи нефтепереработки",
+   "lead": "Plus, hiding from AI tech worries in the FTSE 100",
+   "lead_ru": "Кроме того, прячась от забот ИИ-технологов в FTSE 100"
   }
  ],
  "last_digest": "2026-10-29",
