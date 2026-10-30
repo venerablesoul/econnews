@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "ea6d4e73d9368a92": "2026-10-27T08:08:09.211057+00:00",
   "51514a5e928f6b88": "2026-10-27T08:23:09.275595+00:00",
   "1900f392f00e2d60": "2026-10-27T08:28:09.241101+00:00",
   "3a75d7373b422a0e": "2026-10-27T08:28:09.241101+00:00",
@@ -1114,19 +1113,10 @@
   "f7b46e49efedf2b0": "2026-10-30T07:44:40.223011+00:00",
   "226936b6366774d4": "2026-10-30T07:54:40.409191+00:00",
   "f1f01c908311eefd": "2026-10-30T07:59:40.272832+00:00",
-  "e54ae92082c70718": "2026-10-30T07:59:40.272832+00:00"
+  "e54ae92082c70718": "2026-10-30T07:59:40.272832+00:00",
+  "10abcf17d5a3c337": "2026-10-30T08:09:40.226317+00:00"
  },
  "recent": [
-  {
-   "title": "Reckitt lowers annual guidance on manufacturing struggles in North America",
-   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNUlpxalF5M05PTFFSUFNmVkRrTFYtU1plTzBuSVc5Tk1UaWVJeUhHWVpNSDdmekwxNmhpalhqeDVMaVlnZ3VRREEyZXBOYWNCaTFuYURjUUtxd3EzdmFsajE3YS1mZWFpemR1SXpaTGpCaGtkYWlMSkhPR3dwekJJdUhGMnRwNTF2clBHY0hHQzRvSXdId1BWajlGTF92ZmxDakJTSjdHUW14YlpUdWRTTjRZcUdHdGRaVkMyMHZ5NFlHSEZtUk44MzBJZXdsVU5oMUhSeHRWaVI?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T08:08:09.211057+00:00",
-   "title_ru": "Reckitt снижает годовой прогноз по проблемам производственной борьбы в Северной Америке"
-  },
   {
    "title": "ESMA Chair on EU Market Volatility, Supervision",
    "link": "https://www.bloomberg.com/news/videos/2026-10-27/esma-chair-on-eu-market-volatility-supervision-video",
@@ -11792,6 +11782,16 @@
    "score": 4,
    "ts": "2026-10-30T07:54:40.409191+00:00",
    "title_ru": "Французская экономика неожиданно сократилась, поскольку экспорт упал в третьем квартале"
+  },
+  {
+   "title": "Panasonic's battery unit posts higher Q2 operating profit, lifts forecast",
+   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNdW9XT0VnVkJhTExzZk12WFd4RW5KeTVhUFItbVJXN1NkLURVUkU4Nl9WaXB6al9tVU4yQjYwN1plMjMwQ2lKcUVnbU5SNWVaQTZyUlA5TDJjOEpLRjY4bEVoa1l3ZkdfVUxIdWhLdXZvRXN3QWdsQzJkM1RIOEhha2JPNkttM0V6M2dqa0ktLVhHOHVzXzlxeVNVcTVGNUZpeEx4SEx2LXRyTUthTktYTFlHU0xPeHR2ZG5XdFdUMHhLSFBkcjdKT2gyc2Jlbk5YcW5j?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T08:09:40.226317+00:00",
+   "title_ru": "Аккумуляторный блок Panasonic показал более высокую операционную прибыль во втором квартале, прогноз лифтов"
   }
  ],
  "last_digest": "2026-10-29",
@@ -18487,8 +18487,8 @@
    "0001178579-26-000022",
    "0001437749-26-034034",
    "0000944075-26-000076",
-   "0001392942-26-000016",
    "0000944075-26-000077",
+   "0001392942-26-000016",
    "0001628280-26-068337",
    "0000944075-26-000075",
    "0000944075-26-000079",
