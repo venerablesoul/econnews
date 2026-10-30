@@ -1129,7 +1129,9 @@
   "227f0aa26d35eb2b": "2026-10-30T16:25:10.634920+00:00",
   "866c344ffc423e5e": "2026-10-30T16:30:10.596732+00:00",
   "7fad813740d1383c": "2026-10-30T16:30:10.596732+00:00",
-  "8b5e516421b42113": "2026-10-30T16:40:10.516206+00:00"
+  "8b5e516421b42113": "2026-10-30T16:40:10.516206+00:00",
+  "8a2db18ef7bd84aa": "2026-10-30T16:45:10.652319+00:00",
+  "248674ed9e16a0ee": "2026-10-30T16:45:10.652319+00:00"
  },
  "recent": [
   {
@@ -12036,6 +12038,31 @@
     "oil",
     "Russia"
    ]
+  },
+  {
+   "title": "Gilead-Backed Aspen Neuroscience Shares Decline 2% After US IPO",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/gilead-backed-aspen-neuroscience-shares-decline-2-after-us-ipo",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T16:45:10.652319+00:00",
+   "title_ru": "Акции Aspen Neuroscience, поддерживаемые Gilead, упали на 2% после IPO в США",
+   "lead": "Aspen Neuroscience Inc., a clinical-stage developer of cell therapies, fell 2% after raising about $140.6 million in a US initial public offering.",
+   "lead_ru": "Акции Aspen Neuroscience Inc., разработчика клеточной терапии на клинической стадии, упали на 2% после привлечения около $140,6 млн в ходе первичного публичного размещения акций в США.",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "Mexico's economy slows less than expected in third quarter",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOTVhhYVdMQ2RwaEJOMmVJUnhTTXZLZzdNVzl2cTlueWRodkpoTm9aYU5qZnBIanVOV0xMN1JhVHl0OXFWbTZ1WkNVYkt5QWZYTjlwdHJhZUhCOGZjVkJJNmpiVmpWMnVhSWw5aHQxR1Q3T0FXQVRkbExfbDF3QUpGTXJaRS0tT0h4ODJIOHhJUWpzc3M0M3BveEhCdVp1ZU9ndjFIY1hDZDc?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T16:45:10.652319+00:00",
+   "title_ru": "Экономика Мексики в третьем квартале замедлилась меньше, чем ожидалось"
   }
  ],
  "last_digest": "2026-10-29",
@@ -18724,10 +18751,10 @@
   },
   "checked": "2026-10-30T15:45:10.711069+00:00",
   "sec_seen": [
-   "0002099104-26-000004",
+   "0002099111-26-000004",
    "0001193125-26-440960",
    "0002099107-26-000004",
-   "0002099111-26-000004"
+   "0002099104-26-000004"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
