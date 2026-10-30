@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c3fa8b8ff72574ab": "2026-10-27T00:12:01.233543+00:00",
   "cc720705182e28ef": "2026-10-27T00:17:01.256883+00:00",
   "b566aa5f01dd989a": "2026-10-27T01:02:01.163453+00:00",
   "3ef16a8b466c548b": "2026-10-27T01:17:01.284029+00:00",
@@ -1080,19 +1079,15 @@
   "89fc9350a3947365": "2026-10-29T23:58:36.878431+00:00",
   "cf35eb5ae89459c7": "2026-10-29T23:58:36.878431+00:00",
   "72430710fb36c2a8": "2026-10-30T00:03:36.885117+00:00",
-  "1e6d2ae4710aa44c": "2026-10-30T00:08:36.859628+00:00"
+  "1e6d2ae4710aa44c": "2026-10-30T00:08:36.859628+00:00",
+  "33a85f46fdb628af": "2026-10-30T00:13:36.869668+00:00",
+  "551f6685b0845981": "2026-10-30T00:13:36.869668+00:00",
+  "647941d6e9889a0c": "2026-10-30T00:13:36.869668+00:00",
+  "9c5aa598aa67f4a0": "2026-10-30T00:13:36.869668+00:00",
+  "88da18175bf8216a": "2026-10-30T00:13:36.869668+00:00",
+  "b7a486fefc108d6a": "2026-10-30T00:13:36.869668+00:00"
  },
  "recent": [
-  {
-   "title": "US CFTC, NBA agree to cooperate over basketball and prediction markets",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNRUpwWFJGWXloMTBrUXEydE5jejMtVUVRMXFiZXBud2hwQjROU0U5cUk4NjVTbHhMcFU2Y3A5YjV3ME1SZGVTbno4TnpqSmUzUXFhakhmb00zZWg5NS15VWxNZG5EMlp6YU5kZ210SnVLVjRVODRxYmtmcHNwb2RwdnFrNXNzVHVmMjdjN2lZTUFzV1VDUXl1YlU4aUdRSFpxTFlMdUt2ZG5JQQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T00:12:01.233543+00:00",
-   "title_ru": "CFTC США и НБА договорились сотрудничать на рынках баскетбола и прогнозов"
-  },
   {
    "title": "Asian Chip Stocks Rise as Anthropic IPO Filing Rekindles AI Bets",
    "link": "https://www.bloomberg.com/news/articles/2026-10-27/asian-chip-stocks-rise-as-anthropic-ipo-filing-rekindles-ai-bets",
@@ -11536,6 +11531,64 @@
    "title_ru": "Начало капитального ремонта Topix: три вещи, которые нужно знать инвесторам",
    "lead": "Japan Exchange Group Inc.’s first large-scale reshuffle of the Topix Index goes into effect Friday, part of the biggest overhaul in the benchmark’s history that may shrink the number of constituents by more than one-third.",
    "lead_ru": "Первая крупномасштабная перестановка индекса Topix от Japan Exchange Group Inc. вступает в силу в пятницу, что является частью крупнейшего пересмотра в истории бенчмарка, который может сократить количество составляющих более чем на треть."
+  },
+  {
+   "title": "Lagarde Exits ECB After Big Wins, Some Errors and a Long Goodbye",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/lagarde-exits-ecb-after-big-wins-some-errors-and-a-long-goodbye",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 7,
+   "ts": "2026-10-30T00:13:36.869668+00:00",
+   "title_ru": "Лагард покидает ЕЦБ после больших побед, некоторых ошибок и долгого прощания",
+   "lead": "Christine Lagarde will leave the European Central Bank with one victory notched up over inflation, camaraderie restored among policymakers and the euro on track to join the digital age.",
+   "lead_ru": "Кристин Лагард покинет Европейский центральный банк с одной победой над инфляцией, духом товарищества, восстановленным среди политиков, и евро на пути к вступлению в цифровую эпоху.",
+   "tags": [
+    "ECB",
+    "inflation"
+   ]
+  },
+  {
+   "title": "Hong Kong Stocks Lose a Key Backer as Chinese Investors Head for Exit",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/hk-stocks-lose-a-key-backer-as-chinese-investors-head-for-exit",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-30T00:13:36.869668+00:00",
+   "title_ru": "Акции Гонконга теряют ключевого спонсора, поскольку китайские инвесторы направляются к выходу",
+   "lead": "Chinese investors are pulling back from Hong Kong’s stocks at the fastest pace in more than five years, threatening to deepen a selloff.",
+   "lead_ru": "Китайские инвесторы отступают от акций Гонконга самыми быстрыми темпами за последние пять лет, угрожая углубить распродажу.",
+   "tags": [
+    "markets",
+    "China"
+   ]
+  },
+  {
+   "title": "Philippine Bonds Are Most Exposed in Emerging Asia to Fed Hikes",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/philippine-bonds-are-most-exposed-in-emerging-asia-to-fed-hikes",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-30T00:13:36.869668+00:00",
+   "title_ru": "Филиппинские облигации наиболее подвержены росту ФРС в развивающихся странах Азии",
+   "lead": "Philippine bonds are the most vulnerable in emerging Asia to a hawkish Federal Reserve, according to an analysis by Bloomberg.",
+   "lead_ru": "Согласно анализу Bloomberg, филиппинские облигации являются наиболее уязвимыми в развивающейся Азии перед ястребиной Федеральной резервной системой.",
+   "tags": [
+    "Fed",
+    "bonds"
+   ]
+  },
+  {
+   "title": "Japan's beleaguered shoppers are a worry for convenience stores and the economy",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOeEJPMnU5OTFTd1lMaUxjS2txSjQzUG41TEZRTTlFRVppeWlRUy1nYkMwYnhaVWVJX24zb0QtbC0td1Fjc3F4VExjVVhkYW84aGlKVGlLdG5FbTllVEtMWVo5MG5iSVBUemE2c1B4QUZCSjJpNlZ2SXNaLVBfa1c5T3pMU3l0dVM1eTYyU3hIRDAxeEYtakRRS2ZPbnNDLUl3NlgtdXZ3ZEhCeG53OWtqU3dsMkRlU1dIcjgw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T00:13:36.869668+00:00",
+   "title_ru": "Осажденные покупатели Японии беспокоятся о магазинах и экономике"
   }
  ],
  "last_digest": "2026-10-29",
@@ -18221,8 +18274,8 @@
   "checked": "2026-10-29T23:18:36.897027+00:00",
   "sec_seen": [
    "0001193125-26-438479",
-   "0001193125-26-438480",
    "0001193125-26-438427",
+   "0001193125-26-438480",
    "0001140361-26-041206",
    "0001895106-26-000022",
    "0001628280-26-068356",
@@ -18242,11 +18295,11 @@
    "0001140361-26-041201",
    "0001437749-26-034027",
    "0001437749-26-034034",
+   "0000897069-26-001877",
    "0001193125-26-438273",
    "0001778564-26-000195",
    "0001193125-26-438275",
    "0001780664-26-000047",
-   "0001492126-26-000013",
    "0000944075-26-000078",
    "0001437749-26-034030",
    "0001040470-26-000323",
@@ -18254,12 +18307,13 @@
    "0001178579-26-000022",
    "0001628280-26-068337",
    "0001193125-26-438662",
-   "0000950103-26-016448",
+   "0001437749-26-034044",
    "0001392942-26-000016",
    "0001437749-26-034032",
    "0000950142-26-002898",
    "0001891054-26-000002",
    "0000923738-26-000048",
+   "0001437749-26-034042",
    "0002043764-26-000008",
    "0001437749-26-034035",
    "0000905874-26-000003",
@@ -18268,7 +18322,6 @@
    "0000950103-26-016449",
    "0001437749-26-034038",
    "0001193125-26-438274",
-   "0000897069-26-001877",
    "0000724004-26-000098"
   ],
   "errors": {
