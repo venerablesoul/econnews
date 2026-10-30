@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "2f0c81c9769e4b06": "2026-10-27T21:09:44.729318+00:00",
-  "3a0df1f317093c51": "2026-10-27T21:09:44.729318+00:00",
   "76b2dd11e7fe001c": "2026-10-27T21:14:44.696862+00:00",
   "a8511a4cf02f60d6": "2026-10-27T21:24:44.754944+00:00",
   "6946bd32039013b1": "2026-10-27T21:24:44.754944+00:00",
@@ -1135,37 +1133,10 @@
   "694429867ab4fb5c": "2026-10-30T20:50:57.485988+00:00",
   "e9beba98e362da41": "2026-10-30T21:00:57.435260+00:00",
   "0ac234b29229d2d0": "2026-10-30T21:05:57.563199+00:00",
-  "1bf87ea48f59e51d": "2026-10-30T21:05:57.563199+00:00"
+  "1bf87ea48f59e51d": "2026-10-30T21:05:57.563199+00:00",
+  "1458fdc846e58964": "2026-10-30T21:10:57.415002+00:00"
  },
  "recent": [
-  {
-   "title": "Chile Keeps Rates at 4.5% as Growth Fades and Inflation Picks Up",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-27/chile-keeps-rates-at-4-5-as-growth-fades-and-inflation-picks-up",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 7,
-   "ts": "2026-10-27T21:09:44.729318+00:00",
-   "title_ru": "Чили сохраняет ставку на уровне 4,5%, поскольку экономический рост замедляется, а инфляция ускоряется",
-   "lead": "Chile’s central bank held its benchmark interest rate unchanged Tuesday as policymakers face rising inflation expectations and a deepening economic downturn.",
-   "lead_ru": "Центральный банк Чили во вторник сохранил базовую процентную ставку без изменений, поскольку политики сталкиваются с растущими инфляционными ожиданиями и углубляющимся экономическим спадом.",
-   "tags": [
-    "rates",
-    "inflation"
-   ]
-  },
-  {
-   "title": "Real Estate Investors on Commercial Market Opportunities",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-27/real-estate-investors-on-commercial-market-opportunities-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-27T21:09:44.729318+00:00",
-   "title_ru": "Инвесторы в недвижимость о возможностях коммерческого рынка",
-   "lead": "Hines Co-CEO, Laura Hines-Pierce; Crow Holdings Chief Investment Officer, Michael Hyun and JLL Senior Managing Director and North Texas Broker Lead, Torrey Littlejohn discuss valuations, capital deployment and the next commercial…",
-   "lead_ru": "Со-генеральный директор Hines Лаура Хайнс-Пирс; Главный инвестиционный директор Crow Holdings Майкл Хюн и старший управляющий директор JLL и руководитель брокерской компании в Северном Техасе Торри Литтлджон обсуждают оценки, размещение капитала и следующие коммерческие…"
-  },
   {
    "title": "Indonesia’s MSCI Downgrade Threat – What It Means for Investors: Podcast",
    "link": "https://www.bloomberg.com/news/articles/2026-10-27/indonesia-s-msci-downgrade-threat-what-it-means-for-investors-podcast",
@@ -12106,6 +12077,18 @@
    "score": 4,
    "ts": "2026-10-30T21:05:57.563199+00:00",
    "title_ru": "Украина: Отчет о технической помощи - Оценка фискальных затрат на энергетические субсидии и варианты реформ"
+  },
+  {
+   "title": "Wall Street Boom to Cut New York State Budget Deficit in Half",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/wall-street-boom-to-cut-new-york-state-budget-deficit-in-half",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-30T21:10:57.415002+00:00",
+   "title_ru": "Бум на Уолл-стрит сократит дефицит бюджета штата Нью-Йорк вдвое",
+   "lead": "New York projected the budget deficit will narrow by $3.5 billion next year as the state expects a boom in trading and borrowing to deliver record profits to Wall Street and stronger bonus payments to boost revenue.",
+   "lead_ru": "Нью-Йорк прогнозирует, что дефицит бюджета сократится на $ 3,5 млрд в следующем году, поскольку штат ожидает, что бум в торговле и заимствованиях принесет рекордную прибыль Уолл-стрит и усилит бонусные выплаты для увеличения доходов."
   }
  ],
  "last_digest": "2026-10-30",
@@ -18863,17 +18846,22 @@
   },
   "checked": "2026-10-30T21:00:57.435260+00:00",
   "sec_seen": [
-   "0001053507-26-000159",
-   "0000097745-26-000182",
-   "0001437749-26-034229",
-   "0001733123-26-000010",
    "0001683168-26-008205",
-   "0000097745-26-000183",
-   "0001048911-26-000133",
-   "0001437749-26-034228",
+   "0001213900-26-114492",
+   "0001506307-26-000134",
+   "0001493152-26-049461",
    "0001437749-26-034240",
-   "0001628280-26-068607",
-   "0001791917-26-000006"
+   "0001791917-26-000006",
+   "0001213900-26-114488",
+   "0001213900-26-114490",
+   "0001733123-26-000010",
+   "0001213900-26-114493",
+   "0001213900-26-114494",
+   "0001585521-26-000157",
+   "0001213900-26-114489",
+   "0001480603-26-000004",
+   "0001213900-26-114487",
+   "0001628280-26-068607"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
