@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "3f7b97fe86363cb0": "2026-10-27T11:23:09.327885+00:00",
   "770d60ba0a365467": "2026-10-27T11:38:09.269883+00:00",
   "5666067f6af91284": "2026-10-27T11:38:09.269883+00:00",
   "350761632b287a21": "2026-10-27T11:38:09.269883+00:00",
@@ -1139,25 +1138,10 @@
   "634ed43f793359ce": "2026-10-30T11:14:40.412416+00:00",
   "b8e4c6f87b753f45": "2026-10-30T11:19:40.290257+00:00",
   "a362288c218b5dee": "2026-10-30T11:20:10.886531+00:00",
-  "a966542e38ed6167": "2026-10-30T11:20:10.886531+00:00"
+  "a966542e38ed6167": "2026-10-30T11:20:10.886531+00:00",
+  "6a8c2c3f722cbee9": "2026-10-30T11:25:10.517696+00:00"
  },
  "recent": [
-  {
-   "title": "Fed rate hikes are coming, but not this week: CNBC survey",
-   "link": "https://www.cnbc.com/2026/10/27/federal-reserve-rate-hike-timing-expectations.html",
-   "sources": [
-    "CNBC"
-   ],
-   "score": 5,
-   "ts": "2026-10-27T11:23:09.327885+00:00",
-   "title_ru": "Повышение ставок ФРС приближается, но не на этой неделе: опрос CNBC",
-   "lead": "The CNBC Fed Survey shows that 93% of respondent expect a pause at the Federal Reserve meeting taking place this week.",
-   "lead_ru": "Опрос ФРС CNBC показывает, что 93% респондентов ожидают паузы на заседании Федеральной резервной системы, которое состоится на этой неделе.",
-   "tags": [
-    "Fed",
-    "rates"
-   ]
-  },
   {
    "title": "Chile Seen Holding Key Rate as Markets Mull Odds of Hawkish Tilt",
    "link": "https://www.bloomberg.com/news/articles/2026-10-27/chile-seen-holding-key-rate-as-markets-mull-odds-of-hawkish-tilt",
@@ -12098,6 +12082,19 @@
    "score": 4,
    "ts": "2026-10-30T11:20:10.886531+00:00",
    "title_ru": "Цифровые деньги и платежи: переход к новой парадигме"
+  },
+  {
+   "title": "CXMT turns third-quarter net profit of 54.4 billion yuan",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPNzBWcFZ0YVExMFpoc3A4QkhtX1oxQkREcnl0M3ZaOGFieU91OXpxN1p6T2RtOTJHazcxNjBXOHc5dlNOTzBuRFZnQzZleHNuUk54TmRBYTdIZ1ZnU0NFaEpPME94bklrRFR5dFBhczR5UnZhVFVMbmFZckZlZk9nQWw1NllweW9kbXBma1lHc0F1TW5SUFZIcGdabWw5ekVhMjhLbmxqbEZNbzQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T11:25:10.517696+00:00",
+   "title_ru": "Чистая прибыль CXMT в третьем квартале составила 54,4 млрд юаней",
+   "tags": [
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -18786,8 +18783,8 @@
   },
   "checked": "2026-10-30T10:44:40.383079+00:00",
   "sec_seen": [
-   "0002141713-26-000007",
    "0002010135-26-000025",
+   "0002141713-26-000007",
    "0001628280-26-068399",
    "0001213900-26-113987",
    "0000711377-26-000037",
@@ -18797,14 +18794,15 @@
    "0001493152-26-049321",
    "0001857843-26-000030",
    "0001628280-26-068405",
-   "0000711377-26-000038",
    "0001628280-26-068409",
+   "0000711377-26-000038",
    "0002010019-26-000035",
    "0001697362-26-000020",
    "0002066642-26-000004",
    "0002054266-26-000008",
    "0001812730-26-000008",
    "0001628280-26-068412",
+   "0002084269-26-000003",
    "0001628280-26-068403",
    "0001628280-26-068420",
    "0000711377-26-000036",
