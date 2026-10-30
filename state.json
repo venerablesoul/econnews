@@ -1132,7 +1132,10 @@
   "dd863a7c6f9f56d7": "2026-10-30T10:29:40.286689+00:00",
   "d012a9c97f9fc5f8": "2026-10-30T10:29:40.286689+00:00",
   "8cc57065b339a559": "2026-10-30T10:29:40.286689+00:00",
-  "f48cb9fa0ed75666": "2026-10-30T10:34:40.417327+00:00"
+  "f48cb9fa0ed75666": "2026-10-30T10:34:40.417327+00:00",
+  "86e446e4b0692f8a": "2026-10-30T10:39:40.343998+00:00",
+  "e19fddc724b13425": "2026-10-30T10:44:40.383079+00:00",
+  "270e757683fcd0b2": "2026-10-30T10:44:40.383079+00:00"
  },
  "recent": [
   {
@@ -12029,6 +12032,41 @@
    "tags": [
     "inflation"
    ]
+  },
+  {
+   "title": "Here’s the math on Amazon CEO’s claim to be on path to two trillion-dollar revenue businesses",
+   "link": "https://www.marketwatch.com/story/heres-the-math-on-amazon-ceos-claim-to-be-on-path-to-two-trillion-dollar-revenue-businesses-34d648e8?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-30T10:39:40.343998+00:00"
+  },
+  {
+   "title": "Exxon Reaps Record Oil-Refining Profits on War-Driven Gasoline, Diesel Spikes",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/exxon-reaps-record-oil-refining-profits-on-war-driven-gasoline-diesel-spikes",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T10:44:40.383079+00:00",
+   "title_ru": "Exxon получает рекордную прибыль от нефтепереработки за счет военного бензина и резкого роста дизельного топлива",
+   "lead": "ExxonMobil Holdings Corp. surpassed profit expectations on the strength of surging gasoline and diesel prices that pushed refining results to an all-time high as conflicts in the Persian Gulf and Russia upended energy markets.",
+   "lead_ru": "ExxonMobil Holdings Corp. превзошла ожидания прибыли благодаря росту цен на бензин и дизельное топливо, который поднял результаты нефтепереработки до рекордно высокого уровня, поскольку конфликты в Персидском заливе и России перевернули энергетические рынки.",
+   "tags": [
+    "oil",
+    "Russia"
+   ]
+  },
+  {
+   "title": "Germany rejects 'unfounded' claims in spat with Italy over gas storage",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPUTJpYWJ1TVZJdDF4M2NxamRjWDJsMzhiTjZmVjhNdHBzS2xEMmpWQ1JSNGJfU1RLdWhqc1RHWUg5NzlyeUs5ZjY2NGJLRFNMNGMtY09zUGJxdlNJcFdqWExhNWJfRm9JQU1TTjRIYldOUDhEeUx2SkV3QkhCVlI1c1R4ZEFmR0x3SEt6ZS1ieHNqa3l4NVQ1SHRyNXFlMWFsMVhza2F1ZU5LWGU0OXBCWGpJZ1RKakpM?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T10:44:40.383079+00:00",
+   "title_ru": "Германия отвергает «необоснованные» претензии в ссоре с Италией из-за хранения газа"
   }
  ],
  "last_digest": "2026-10-29",
@@ -18715,15 +18753,16 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-30T09:44:40.373850+00:00",
+  "checked": "2026-10-30T10:44:40.383079+00:00",
   "sec_seen": [
    "0001857843-26-000030",
    "0002010019-26-000035",
+   "0000711377-26-000037",
    "0001437749-26-034035",
    "0002141713-26-000007",
    "0001437749-26-034034",
    "0001812730-26-000008",
-   "0001437749-26-034032",
+   "0000711377-26-000035",
    "0001437749-26-034040",
    "0001437749-26-034042",
    "0002010135-26-000025",
@@ -18735,6 +18774,7 @@
    "0001437749-26-034038",
    "0001493152-26-049321",
    "0001225208-26-008557",
+   "0000711377-26-000036",
    "0002066642-26-000004",
    "0001646649-26-000040",
    "0001888543-26-000002",
