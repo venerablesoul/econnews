@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "fbffce1618f71a4c": "2026-10-27T20:04:43.356827+00:00",
-  "c1142ce7d5790d06": "2026-10-27T20:04:43.356827+00:00",
-  "c371b89cc81ba493": "2026-10-27T20:09:44.686763+00:00",
   "f7e675f1f024f1e1": "2026-10-27T20:14:44.691865+00:00",
   "2baafbb03244b637": "2026-10-27T20:14:44.691865+00:00",
   "67a4e8104195a23c": "2026-10-27T20:19:44.633318+00:00",
@@ -1141,45 +1138,11 @@
   "83583db568662751": "2026-10-30T19:50:57.310337+00:00",
   "4efb54a302f00cce": "2026-10-30T19:50:57.310337+00:00",
   "28866d135f8224d9": "2026-10-30T19:55:57.438817+00:00",
-  "cb406d6f85899ddc": "2026-10-30T20:00:57.620520+00:00"
+  "cb406d6f85899ddc": "2026-10-30T20:00:57.620520+00:00",
+  "858bca6466436254": "2026-10-30T20:10:57.475821+00:00",
+  "64b8845cd4769270": "2026-10-30T20:10:57.475821+00:00"
  },
  "recent": [
-  {
-   "title": "Canadian dollar extends pullback from 5-week high ahead of BoC rate decision",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPWVdveVBPcllISlNEcmFPc1RfVEVyMDRRUWlCNUYzX2hCUDZzLVFHRUlvUnNWczVZU2lfVTFSUWk0cTdwUmEwb3Z0M19Hc3hKbk5kQlY2T0l4dUNwWUF6NEktNEZYdW5sM1doOUtXaVZtaVBTQXBIWklkWDlvR3dEcUJ0X2lvT0JxanlRQmF6WEtuQTFNS2t2OFFyUDJTN2xFZkVDS0JXVlFJU1d6aTBNbDYycw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-27T20:04:43.356827+00:00",
-   "title_ru": "Канадский доллар продолжает откат от 5-недельного максимума в преддверии решения Банка Канады по ставке",
-   "tags": [
-    "rates",
-    "dollar"
-   ]
-  },
-  {
-   "title": "Projections for 29-1161 - BLS Data",
-   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxONU9wRkFaSXRubkk5ZXNhcVZ0YndKTzRYYVlzdmlNYUlUaVg2Y2sxVE9jd2dFWDliMDVVUzV0Nk4wSXViZFE5RC1mLTU1R0tUZGY3SDFHTnBiUzVrUGZPZTIyaHJCU2JHek5MY2lnQlhPUTIyY0pya1dNQ09XeVB0LUJ3?oc=5",
-   "sources": [
-    "US Labor Statistics (BLS)"
-   ],
-   "score": 4,
-   "ts": "2026-10-27T20:04:43.356827+00:00",
-   "title_ru": "Прогнозы на 29-1161 год – данные BLS"
-  },
-  {
-   "title": "Banks Ease Loan Approvals to Weather Australia Property Slump",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-27/banks-ease-loan-approvals-to-weather-australia-property-slump",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T20:09:44.686763+00:00",
-   "title_ru": "Банки упростили выдачу кредитов, чтобы пережить спад недвижимости в Австралии",
-   "lead": "Australian banks are loosening mortgage requirements and giving away tokens for phone bills and travel as they compete for a dwindling pool of customers during the fastest housing slump in a generation.",
-   "lead_ru": "Австралийские банки ослабляют требования к ипотечным кредитам и раздают жетоны для оплаты телефонных счетов и поездок, поскольку они конкурируют за сокращающийся круг клиентов во время самого быстрого спада на рынке жилья за последнее поколение."
-  },
   {
    "title": "Banks Eye $21 Billion of Bonds For Broadcom Chip-Financing Deal",
    "link": "https://www.bloomberg.com/news/articles/2026-10-27/banks-eye-21-billion-of-bonds-for-broadcom-chip-financing-deal",
@@ -12180,6 +12143,19 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "FedEx Freight shares surge as analysts back growth targets after quarterly beat",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxONlNGYnNkZ19CeDl0Sk83bmU5U1g3X3dJUC02U2RZY29Nb3F0NWFES2tPRE5LTTRselJZRDMtUFp0Z3NGd0RLYXFhM3ZveFJpYm9vY3dFYUJzanZ6dGxESWNPLV9Qdlh1Z0ZNaGRONW1CLUhSZjhNTDhQTXlyejNHM2Q5bjB2SEZCTXlCUlJFZHg3eXg3OEhFRFB3UGJPaVdRWjNsTG5RTjJWTE9xRkp2WUt2RlF5dWdLYXM3UFdn?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-30T20:10:57.475821+00:00",
+   "title_ru": "Акции FedEx Freight растут, поскольку аналитики поддерживают цели роста после квартального достижения",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-30",
@@ -15008,6 +14984,70 @@
     "date": "2026-10-29",
     "disclosed": "2026-10-30",
     "link": "https://www.sec.gov/Archives/edgar/data/1960914/000007330926000133/0000073309-26-000133-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "12f915dc3980b261",
+    "ticker": "BROS",
+    "company": "Dutch Bros Inc.",
+    "who": "Dm Individual Aggregator, Llc",
+    "role": "10% owner",
+    "type": "sell",
+    "value": 6252790,
+    "shares": 142023,
+    "price": 44.03,
+    "plan": true,
+    "date": "2026-10-29",
+    "disclosed": "2026-10-30",
+    "link": "https://www.sec.gov/Archives/edgar/data/1883096/000186658126000167/0001866581-26-000167-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "58b2612ed5520748",
+    "ticker": "BROS",
+    "company": "Dutch Bros Inc.",
+    "who": "Dm Trust Aggregator, Llc",
+    "role": "10% owner",
+    "type": "sell",
+    "value": 11711076,
+    "shares": 266000,
+    "price": 44.03,
+    "plan": true,
+    "date": "2026-10-29",
+    "disclosed": "2026-10-30",
+    "link": "https://www.sec.gov/Archives/edgar/data/1883105/000186658126000166/0001866581-26-000166-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "50d43d23531ac1c1",
+    "ticker": "BROS",
+    "company": "Dutch Bros Inc.",
+    "who": "Travis Boersma",
+    "role": "Chair, 10% owner",
+    "type": "sell",
+    "value": 17963865,
+    "shares": 408023,
+    "price": 44.03,
+    "plan": true,
+    "date": "2026-10-29",
+    "disclosed": "2026-10-30",
+    "link": "https://www.sec.gov/Archives/edgar/data/1883154/000186658126000164/0001866581-26-000164-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "edf2c9e499a39613",
+    "ticker": "MHO",
+    "company": "M/I HOMES, INC.",
+    "who": "Phillip G Creek",
+    "role": "CFO",
+    "type": "sell",
+    "value": 2525599,
+    "shares": 20000,
+    "price": 126.28,
+    "plan": false,
+    "date": "2026-10-29",
+    "disclosed": "2026-10-30",
+    "link": "https://www.sec.gov/Archives/edgar/data/1204733/000120473326000017/0001204733-26-000017-index.htm"
    },
    {
     "src": "sec",
@@ -18832,70 +18872,6 @@
     "date": "2026-10-22",
     "disclosed": "2026-10-23",
     "link": "https://www.sec.gov/Archives/edgar/data/1833511/000183351126000042/0001833511-26-000042-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "6d906f57c5e14703",
-    "ticker": "CRWD",
-    "company": "CrowdStrike Holdings, Inc.",
-    "who": "George Kurtz",
-    "role": "CEO",
-    "type": "sell",
-    "value": 4761854,
-    "shares": 20000,
-    "price": 238.09,
-    "plan": true,
-    "date": "2026-10-22",
-    "disclosed": "2026-10-23",
-    "link": "https://www.sec.gov/Archives/edgar/data/1778564/000177856426000191/0001778564-26-000191-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "90db8e8051c36de3",
-    "ticker": "[NONE]",
-    "company": "VISTA CREDIT STRATEGIC LENDING CORP.",
-    "who": "Gregory T Galligan",
-    "role": "CEO",
-    "type": "buy",
-    "value": 100000,
-    "shares": 5144,
-    "price": 19.44,
-    "plan": false,
-    "date": "2026-10-21",
-    "disclosed": "2026-10-23",
-    "link": "https://www.sec.gov/Archives/edgar/data/1973908/000119312526429845/0001193125-26-429845-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "74f2669b20f2e012",
-    "ticker": "CRAFX",
-    "company": "Cascade Real Assets Fund",
-    "who": "Matthew Eugene Worley",
-    "role": "Director",
-    "type": "buy",
-    "value": 431249,
-    "shares": 41910,
-    "price": 10.29,
-    "plan": false,
-    "date": "2026-10-21",
-    "disclosed": "2026-10-23",
-    "link": "https://www.sec.gov/Archives/edgar/data/2114459/000121390026111971/0001213900-26-111971-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "094f58ea6ecc8f37",
-    "ticker": "PEP",
-    "company": "PEPSICO INC",
-    "who": "Ramon Laguarta",
-    "role": "CEO",
-    "type": "sell",
-    "value": 4053891,
-    "shares": 30000,
-    "price": 135.13,
-    "plan": false,
-    "date": "2026-10-21",
-    "disclosed": "2026-10-23",
-    "link": "https://www.sec.gov/Archives/edgar/data/1630253/000163025326000007/0001630253-26-000007-index.htm"
    }
   ],
   "docs": {
@@ -18937,11 +18913,31 @@
   },
   "checked": "2026-10-30T19:55:57.438817+00:00",
   "sec_seen": [
-   "0001654954-26-009303",
-   "0001697316-26-000014",
-   "0001031203-26-000149",
+   "0001855325-26-000035",
+   "0001104659-26-120647",
+   "0001193125-26-441628",
    "0001104659-26-120643",
-   "0000711377-26-000043"
+   "0000076334-26-000147",
+   "0001204733-26-000017",
+   "0001213900-26-114386",
+   "0001104659-26-120657",
+   "0001866581-26-000166",
+   "0001213900-26-114388",
+   "0001104659-26-120654",
+   "0001213900-26-114392",
+   "0001628280-26-068567",
+   "0001924613-26-000048",
+   "0001628280-26-068569",
+   "0000035527-26-000235",
+   "0000749251-26-000303",
+   "0000076334-26-000145",
+   "0001104659-26-120652",
+   "0001188266-26-000006",
+   "0000076334-26-000148",
+   "0001866581-26-000167",
+   "0001628280-26-068566",
+   "0001104659-26-120656",
+   "0001866581-26-000164"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
