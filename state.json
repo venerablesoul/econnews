@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c2f66fc8290487bc": "2026-10-27T20:34:44.612786+00:00",
-  "7ea592f23ae77fb6": "2026-10-27T20:34:44.612786+00:00",
-  "4fac133f17e4964f": "2026-10-27T20:34:44.612786+00:00",
   "d7d4010037672e22": "2026-10-27T20:39:44.568481+00:00",
   "e9beba98e362da41": "2026-10-27T20:44:45.583234+00:00",
   "6c60aef9d310b278": "2026-10-27T20:44:45.583234+00:00",
@@ -1141,44 +1138,10 @@
   "0758348de34f9e51": "2026-10-30T20:25:57.415517+00:00",
   "1562c3fd3b9b4716": "2026-10-30T20:30:57.450014+00:00",
   "09a284330c8d1dfb": "2026-10-30T20:30:57.450014+00:00",
-  "29e41cd02c30864e": "2026-10-30T20:30:57.450014+00:00"
+  "29e41cd02c30864e": "2026-10-30T20:30:57.450014+00:00",
+  "b70d639884423d98": "2026-10-30T20:35:57.547977+00:00"
  },
  "recent": [
-  {
-   "title": "OPEC+ oil producers set to keep output targets steady at Sunday meeting, sources say",
-   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNMk1rLTI4Z1oza3I5SDJ2YUR0WUhiQ0RmWV9KLUpCSHMyY1FoSFgwWUFOc010MzIyWThVNEZvRFl0YzBzNHFmazA3ZEV2ZzRPX2pNWU9GSVd5Z1VnaVRGdmdSZDVEVVlGTmxuNVlsdzNSMGlBdW5UYVRpelBBXzhLOWkwd2pST0NmQjRMek82VS1ncXZTWjk5Q09reDQtQmNON3NfRF9ld1FUWG1hQW5QRFZySkdIM1VKRzVvbGZLVEE0V1hPQ2dsTkNnZw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 9,
-   "ts": "2026-10-27T20:34:44.612786+00:00",
-   "title_ru": "Источники сообщают, что производители нефти ОПЕК+ планируют сохранить неизменными целевые показатели добычи на воскресной встрече",
-   "tags": [
-    "oil"
-   ]
-  },
-  {
-   "title": "Can AI Replace Government Jobs? The World Is Watching the Dutch",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQeGVhdWpXUGQ1UlhybjFLX0dqQjlXZF9LYTU3ejdnRWdZd1pqQUtiT0ZTb1A4bmFZVzYyeUpfVk9Gc1pyTy11UkwzRHJvQ1lBb2RCRmxYaHp5OFhrOFF6SHg0NGw5bEUwVG9aYjF1cW4yMlpWUkxRUlk4V2t5clltdmFZc3NNdzI0Q2hVX0x5akJJU2RYaTFfZVp6TXhCekx1VUlGUExCMUFfYVFTajRMcWR5aWczVjItVU5pNU1NbF8?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T20:34:44.612786+00:00",
-   "title_ru": "Может ли ИИ заменить государственные должности? Мир наблюдает за голландцами",
-   "tags": [
-    "jobs"
-   ]
-  },
-  {
-   "title": "What gold and platinum are telling us about the stock market’s direction",
-   "link": "https://www.marketwatch.com/story/what-gold-and-platinum-are-telling-us-about-the-stock-markets-direction-81405633?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 2,
-   "ts": "2026-10-27T20:34:44.612786+00:00"
-  },
   {
    "title": "Bullish Treasury Bets Face Reversal Risk From Hawkish Fed",
    "link": "https://www.bloomberg.com/news/articles/2026-10-27/bullish-treasury-bets-face-reversal-risk-from-hawkish-fed",
@@ -12157,6 +12120,21 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "AI Dip-Buyers Gored as Selling Spasm Caps Third Week of Losses",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/ai-dip-buyers-gored-as-selling-spasm-caps-third-week-of-losses",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T20:35:57.547977+00:00",
+   "title_ru": "ИИ Dip-покупатели, которые продают спазм, закрывают третью неделю убытков",
+   "lead": "The deep selloff in technology stocks delivered a painful reckoning to those who remained all-in on the AI trade as the companies at the center of it tumbled, one after another, and investors rushed back to the defensive stocks…",
+   "lead_ru": "Глубокая распродажа акций технологических компаний привела к болезненным последствиям для тех, кто остался олл-ин в торговле искусственным интеллектом, поскольку компании, находящиеся в ее центре, упали, одна за другой, и инвесторы бросились обратно к защитным акциям...",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-30",
@@ -15148,6 +15126,22 @@
    },
    {
     "src": "sec",
+    "id": "71daf3efc9fd032c",
+    "ticker": "HLT",
+    "company": "Hilton Worldwide Holdings Inc.",
+    "who": "Kevin J Jacobs",
+    "role": "See Remarks",
+    "type": "sell",
+    "value": 53802435,
+    "shares": 151050,
+    "price": 356.19,
+    "plan": false,
+    "date": "2026-10-29",
+    "disclosed": "2026-10-30",
+    "link": "https://www.sec.gov/Archives/edgar/data/1593156/000159315626000010/0001593156-26-000010-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "ecb8621ae4ff68a2",
     "ticker": "ESQ",
     "company": "Esquire Financial Holdings, Inc.",
@@ -15257,6 +15251,22 @@
     "date": "2026-10-28",
     "disclosed": "2026-10-30",
     "link": "https://www.sec.gov/Archives/edgar/data/2007208/000122520826008572/0001225208-26-008572-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "9ad47410c570ba68",
+    "ticker": "DDOG",
+    "company": "Datadog, Inc.",
+    "who": "Alexis Le-Quoc",
+    "role": "CTO",
+    "type": "sell",
+    "value": 12055042,
+    "shares": 43224,
+    "price": 278.9,
+    "plan": true,
+    "date": "2026-10-28",
+    "disclosed": "2026-10-30",
+    "link": "https://www.sec.gov/Archives/edgar/data/1783984/000156155026000326/0001561550-26-000326-index.htm"
    },
    {
     "src": "sec",
@@ -18841,38 +18851,6 @@
     "date": "2026-10-22",
     "disclosed": "2026-10-23",
     "link": "https://www.sec.gov/Archives/edgar/data/1865043/000008631226000187/0000086312-26-000187-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "2000937076389d92",
-    "ticker": "TRV",
-    "company": "TRAVELERS COMPANIES, INC.",
-    "who": "Jeffrey P. Klenk",
-    "role": "EVP & Pres., Bond & Spec. Ins.",
-    "type": "sell",
-    "value": 3656619,
-    "shares": 9016,
-    "price": 405.57,
-    "plan": false,
-    "date": "2026-10-22",
-    "disclosed": "2026-10-23",
-    "link": "https://www.sec.gov/Archives/edgar/data/1879574/000008631226000186/0000086312-26-000186-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "fb7652ebd426cc25",
-    "ticker": "TRV",
-    "company": "TRAVELERS COMPANIES, INC.",
-    "who": "Gregory C Toczydlowski",
-    "role": "EVP & President, Business Ins.",
-    "type": "sell",
-    "value": 14043788,
-    "shares": 34771,
-    "price": 403.89,
-    "plan": false,
-    "date": "2026-10-22",
-    "disclosed": "2026-10-23",
-    "link": "https://www.sec.gov/Archives/edgar/data/1689378/000008631226000189/0000086312-26-000189-index.htm"
    }
   ],
   "docs": {
@@ -18914,29 +18892,25 @@
   },
   "checked": "2026-10-30T19:55:57.438817+00:00",
   "sec_seen": [
-   "0001193485-26-000006",
-   "0000076334-26-000156",
-   "0002115826-26-000010",
+   "0001437749-26-034225",
+   "0001561550-26-000326",
    "0002115144-26-000014",
    "0001193125-26-441748",
-   "0000101382-26-000186",
-   "0000076334-26-000158",
-   "0001193125-26-441718",
+   "0001697820-26-000009",
+   "0001437749-26-034222",
+   "0001437749-26-034223",
    "0001628280-26-068593",
-   "0002055015-26-000019",
+   "0001437749-26-034221",
    "0001437749-26-034220",
-   "0001193125-26-441716",
-   "0001672688-26-000146",
    "0001106578-26-000175",
-   "0001193125-26-441717",
    "0000036966-26-000193",
    "0001193125-26-441749",
-   "0001193125-26-441698",
-   "0001628280-26-068581",
    "0000097476-26-000178",
-   "0001225208-26-008572",
-   "0002132897-26-000008",
-   "0001193125-26-441713"
+   "0001593156-26-000010",
+   "0000939057-26-000283",
+   "0001628280-26-068598",
+   "0001437749-26-034224",
+   "0001640081-26-000007"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
