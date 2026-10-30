@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "469bbdce85059546": "2026-10-27T05:07:36.873271+00:00",
-  "fbba70f4962268e6": "2026-10-27T05:07:36.873271+00:00",
-  "e92edf741a9039e3": "2026-10-27T05:07:36.873271+00:00",
   "d26a219b7c477a5b": "2026-10-27T05:12:36.887435+00:00",
   "cb07db8d8210949f": "2026-10-27T05:12:36.887435+00:00",
   "883d00bb49f770ae": "2026-10-27T05:27:36.875649+00:00",
@@ -1118,46 +1115,10 @@
   "1de393a75ca532e1": "2026-10-30T04:44:13.546358+00:00",
   "43734d615085349d": "2026-10-30T04:44:13.546358+00:00",
   "8f9f7853e4c962e9": "2026-10-30T05:04:13.575489+00:00",
-  "f748a760673b1994": "2026-10-30T05:04:13.575489+00:00"
+  "f748a760673b1994": "2026-10-30T05:04:13.575489+00:00",
+  "f5d8481468f9bfcc": "2026-10-30T05:09:13.568414+00:00"
  },
  "recent": [
-  {
-   "title": "Asia Stocks Rally as Anthropic IPO Boosts Chip Shares",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-27/the-asia-trade-10-27-2026-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-27T05:07:36.873271+00:00",
-   "title_ru": "Азиатские акции растут, поскольку антропное IPO увеличивает акции чипов",
-   "lead": "\"Bloomberg: The Asia Trade\" brings you everything you need to know to get ahead as the trading day begins in Asia.",
-   "lead_ru": "«Bloomberg: The Asia Trade» предлагает вам все, что вам нужно знать, чтобы двигаться вперед, когда в Азии начинается торговый день.",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "Taiwan central bank sees strong tech demand driving exports into 2027",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOX0tXRFhXZDRFQUlCYmE1dG9LaG9pcUZSMElqMEd4TXFFX3VmV2xFSFpBMVVnT0tOTDUtWUJ5OHVSUUlUQm5SQ3lIb3JzTmpyNHRlNXRLQ0dhU0E2RzR3Q2ZEZGw0VlRVeHI3Q2FxX1YxbjJMUFB1dzQxbG1jU3hBdEFmcnBYalZmVDFKLXNnODRNdjNJUlp2b2JhZGZieklsb3pnTmxrX0JDbV9nYi1SUi1aMGFoMVRuazZqaUluQUpxUQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-27T05:07:36.873271+00:00",
-   "title_ru": "Центральный банк Тайваня ожидает, что высокий спрос на технологии будет стимулировать экспорт в 2027 году"
-  },
-  {
-   "title": "Pandora Bets on Vietnam With New $150 Million Factory",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-27/pandora-bets-on-vietnam-with-new-150-million-factory",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T05:07:36.873271+00:00",
-   "title_ru": "Pandora делает ставку на Вьетнам, открывая новую фабрику стоимостью 150 миллионов долларов",
-   "lead": "Pandora has opened a new $150 million factory in Vietnam, its first production base outside Thailand.",
-   "lead_ru": "Pandora открыла новую фабрику стоимостью 150 миллионов долларов во Вьетнаме, свою первую производственную базу за пределами Таиланда."
-  },
   {
    "title": "Indonesia Is Reducing Its Gas Supplies to Singapore. Is This a Worry?",
    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPejJtcFBaN0wtcjgzdEJ1SUVuU1R6cnZha2h6UmdqWkdSRWJHRF9nZnRjbG5OS1BMbzdMUFpWZEc0bVZjbW04TFZkZ2VtY2ZWWlFRcXdEZnJnN2RpWHFKTE0tQlNwUjJTaEM5aWc0ZmdLcXVxRkhqdzUxcDFCekczTExGTmZzblpLVjN0QUhPNTk4OHFPcUxxM0JFM1YwVHltRkQ4?oc=5",
@@ -11888,6 +11849,19 @@
    ],
    "score": 1,
    "ts": "2026-10-30T05:04:13.575489+00:00"
+  },
+  {
+   "title": "BOJ keeps interest rates steady, signals further rate hikes",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPckM0NUFNY0hHSVN5Y3Z2OWR6Zk9yLTVIdEtxX1JIMkR2Sjd2c2VCY01BT3QzOWQ5WmF5QmNyTC03X1VsV2V1SVZRbk9mc2lxZG9FNnBaVm1fSWVpeFdJRUxnTXJTbFdxZnFNUEtBMjRxc2FpTFJVdk0yTkxmSFM2a3Njek9JcExYRldGRFVXSEpTY1hRam1CMVBpZ3Vrc1h1MGQ2UXdScnR4dUNlUzBOamEzcw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 9,
+   "ts": "2026-10-30T05:09:13.568414+00:00",
+   "title_ru": "БАНК ЯПОНИИ сохраняет процентные ставки на стабильном уровне, сигнализируя о дальнейшем повышении ставок",
+   "tags": [
+    "rates"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -11910,7 +11884,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 0,
+  "Fed": 1,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
@@ -18577,8 +18551,8 @@
   "checked": "2026-10-30T04:29:13.717097+00:00",
   "sec_seen": [
    "0001437749-26-034036",
-   "0001437749-26-034038",
    "0001437749-26-034032",
+   "0001437749-26-034038",
    "0001895111-26-000021",
    "0001628280-26-068337",
    "0001437749-26-034042",
@@ -18589,8 +18563,8 @@
    "0001437749-26-034035",
    "0001140361-26-041201",
    "0001711968-26-000027",
-   "0001437749-26-034040",
    "0001040470-26-000323",
+   "0001437749-26-034040",
    "0000923738-26-000048",
    "0001193125-26-438480",
    "0000944075-26-000078",
