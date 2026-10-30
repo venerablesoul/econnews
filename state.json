@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "b8c4260386d77fec": "2026-10-27T10:53:09.255229+00:00",
-  "5f10190e782e392a": "2026-10-27T10:53:09.255229+00:00",
   "5158a546adaf3198": "2026-10-27T10:58:09.308573+00:00",
   "351c0f15816e43d0": "2026-10-27T11:03:09.273253+00:00",
   "f0cead1d57ca0bca": "2026-10-27T11:08:09.276998+00:00",
@@ -1137,34 +1135,11 @@
   "270e757683fcd0b2": "2026-10-30T10:44:40.383079+00:00",
   "1e329fc55a8a180e": "2026-10-30T10:49:40.361499+00:00",
   "632fec5b0f0c53ea": "2026-10-30T10:49:40.361499+00:00",
-  "30a6fe6b93678630": "2026-10-30T10:49:40.361499+00:00"
+  "30a6fe6b93678630": "2026-10-30T10:49:40.361499+00:00",
+  "e55c84b60db4da71": "2026-10-30T10:54:40.422070+00:00",
+  "63342d1d775e0ce9": "2026-10-30T10:54:40.422070+00:00"
  },
  "recent": [
-  {
-   "title": "Inflation and interest rates tracker: see how your country compares",
-   "link": "https://www.ft.com/content/088d3368-bb8b-4ff3-9df7-a7680d4d81b2?syn-25a6b1a6=1",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 8,
-   "ts": "2026-10-27T10:53:09.255229+00:00",
-   "title_ru": "Отслеживание инфляции и процентных ставок: сравнение вашей страны",
-   "lead": "Explore the latest data through interactive charts",
-   "lead_ru": "Изучайте последние данные с помощью интерактивных диаграмм",
-   "tags": [
-    "rates",
-    "inflation"
-   ]
-  },
-  {
-   "title": "На российском рынке появится новый бренд автомобилей",
-   "link": "https://www.rbc.ru/business/27/10/2026/6ae080d913c1eb13d6b9a0a8",
-   "sources": [
-    "RBC"
-   ],
-   "score": 1,
-   "ts": "2026-10-27T10:53:09.255229+00:00"
-  },
   {
    "title": "GM to Move Stock Listing to Tech-Focused Nasdaq, Leaving NYSE",
    "link": "https://www.bloomberg.com/news/articles/2026-10-27/gm-to-move-stock-listing-to-tech-focused-nasdaq-leaving-nyse",
@@ -12099,6 +12074,26 @@
    "tags": [
     "gas"
    ]
+  },
+  {
+   "title": "Italy's economy flat in third quarter, misses forecast",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPck1ray1MNmdNLWFVVHlkWTNPNGJrS1VuU1hFUEpJakhZdlUwNXhlUVpJOWd4aTFxcFhhMm1MV29BSzZ6N0pIbEVKTjJiTVVSWVRqbzFReDBzTFJJaVZqNjRkU2FFS0lWLWdqdDltS05FTkJqQUhORUpDYjNOVjNHVjZ0QWZaS01SbERIc0t2NF9XaUdET0N5S3RB?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-30T10:54:40.422070+00:00",
+   "title_ru": "Экономика Италии в третьем квартале не стабилизировалась, что не соответствует прогнозу"
+  },
+  {
+   "title": "How Jio Transformed India's Mobile Internet Economy, One Cheap Byte at a Time",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNUTFDN1A4X2hpSmdScm9EdHE3bTVybHhmRG8wR2hzaU9OSVk0TldWZERsLUFGaDRfVGlENTJNbktfWktUOUpNZWtpVVNTc0hqRzMzekljelBlR2YxVGZsQ1MxYnQ4ZXVrTFJqMzR3VEdjc2dMQjM3SHp6SWtRVWYyeHJjSGlud01LYmIwcFhTRDV2ejd3VzJPSHdyVG1kTUtSdUlSV2RiUmNMZ214WTBsRkljWmZFRGJaa3VnVHRESDVGYktqVnc?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T10:54:40.422070+00:00",
+   "title_ru": "Как Jio изменила экономику мобильного Интернета в Индии: по одному дешевому байту за раз"
   }
  ],
  "last_digest": "2026-10-29",
