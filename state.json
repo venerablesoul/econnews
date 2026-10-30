@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "51514a5e928f6b88": "2026-10-27T08:23:09.275595+00:00",
   "1900f392f00e2d60": "2026-10-27T08:28:09.241101+00:00",
   "3a75d7373b422a0e": "2026-10-27T08:28:09.241101+00:00",
   "985224fa8646181a": "2026-10-27T08:28:09.241101+00:00",
@@ -1117,7 +1116,10 @@
   "10abcf17d5a3c337": "2026-10-30T08:09:40.226317+00:00",
   "30137c2ead197573": "2026-10-30T08:14:40.201320+00:00",
   "feeb02f0131ef378": "2026-10-30T08:14:40.201320+00:00",
-  "86a2534e4818ab36": "2026-10-30T08:19:40.243391+00:00"
+  "86a2534e4818ab36": "2026-10-30T08:19:40.243391+00:00",
+  "39ce4f6193d1dc6e": "2026-10-30T08:24:40.252012+00:00",
+  "638b298cc5894ac3": "2026-10-30T08:24:40.252012+00:00",
+  "6c2884ed088b344d": "2026-10-30T08:24:40.252012+00:00"
  },
  "recent": [
   {
@@ -11840,6 +11842,38 @@
     "rates",
     "inflation"
    ]
+  },
+  {
+   "title": "AI Darling Taiwan’s Blowout Growth Extends Run Unseen Since 1987",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/taiwan-posts-longest-run-of-double-digit-gdp-growth-since-1987",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T08:24:40.252012+00:00",
+   "title_ru": "AI Darling: стремительный рост Тайваня увеличился, невиданный с 1987 года",
+   "lead": "Taiwan reported its fourth straight quarter of double-digit economic growth, the longest such stretch in nearly 39 years, as the AI boom increasingly spills over into stronger domestic demand.",
+   "lead_ru": "Тайвань сообщил о четвертом квартале подряд экономического роста, выражающегося двузначными числами, что является самым продолжительным периодом такого роста почти за 39 лет, поскольку бум искусственного интеллекта все больше перерастает в более сильный внутренний спрос."
+  },
+  {
+   "title": "BOJ Governor Ueda's comments at news conference",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQdFhMRmxxVnl3am92bzBsNnFUQUloLWFpZ1g1QWZKTXVfX3dwVVFJVlprOWRXX1RuRkhRWTNDVXZfRzNsLWFyQ0w2RkRUS1BOWWIxa183ZEYwSEhoYTFiWVR4YXNLcWJFZ3BLT1VZN0VpdGhwWnYwVEptTHRMRmctakJEdlZhSlhCOHBVcDBVRFVyOVVzZTdKVThsMkc?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T08:24:40.252012+00:00",
+   "title_ru": "Комментарии председателя Банка Японии Уэды на пресс-конференции"
+  },
+  {
+   "title": "UK to require economic benefits from award of major foreign defence contracts",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPS3NQSWlwX2xYeXhsV2hnTThDLUYwazRQZkNsWWFrcGcwSk1leTFnbFBQNFU4MUd6SEExclA1Q3ZrSkRiUjRIeklBRkdFZ3RnVnlTNVZmVFEwNG4tMUxUTThNdEtDUTBvS0pCWGhTMGZkWkV3cld5R0VGQ2NIdVFSU29YZTluLTlfSUg1cXRuemY1MWpweUwzd2JNYTBBbGowSUJfczBDQXVKX1ltYTkxSEt2MHFBamVFZHBmQklNVnAwQ1kzaEQ4dw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T08:24:40.252012+00:00",
+   "title_ru": "Великобритания потребует экономических выгод от заключения крупных иностранных оборонных контрактов"
   }
  ],
  "last_digest": "2026-10-29",
@@ -18535,8 +18569,8 @@
    "0001178579-26-000022",
    "0001437749-26-034034",
    "0000944075-26-000076",
-   "0000944075-26-000077",
    "0001392942-26-000016",
+   "0000944075-26-000077",
    "0001628280-26-068337",
    "0000944075-26-000075",
    "0000944075-26-000079",
