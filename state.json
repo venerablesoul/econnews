@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "2a73624bf04dfbfc": "2026-10-27T11:53:09.592507+00:00",
   "8c3b2dfdc2708df1": "2026-10-27T11:58:09.276641+00:00",
   "5d89af25c4e00cfc": "2026-10-27T12:08:09.368068+00:00",
   "6b79f5c8157069fe": "2026-10-27T12:08:09.368068+00:00",
@@ -1138,18 +1137,10 @@
   "a4ee039ed95438da": "2026-10-30T11:35:10.457985+00:00",
   "41a7ea767bc6318f": "2026-10-30T11:35:10.457985+00:00",
   "21facd52d70249a6": "2026-10-30T11:40:10.488520+00:00",
-  "1e8276be5e120980": "2026-10-30T11:50:10.510985+00:00"
+  "1e8276be5e120980": "2026-10-30T11:50:10.510985+00:00",
+  "9fe28e4dd4550099": "2026-10-30T11:55:10.351868+00:00"
  },
  "recent": [
-  {
-   "title": "Here’s the question three tech-sector earnings reports raise about the future of AI",
-   "link": "https://www.marketwatch.com/story/heres-the-question-three-tech-sector-earnings-reports-raise-about-the-future-of-ai-5676248b?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-27T11:53:09.592507+00:00"
-  },
   {
    "title": "Bond-Market Doubts Grow Over Gridlock as Cure for Deficit Angst",
    "link": "https://www.bloomberg.com/news/articles/2026-10-27/bond-market-doubts-grow-over-gridlock-as-cure-for-deficit-angst",
@@ -12052,6 +12043,19 @@
    "score": 3,
    "ts": "2026-10-30T11:50:10.510985+00:00",
    "title_ru": "Разработчик чипов MediaTek говорит, что рост спроса на ИИ «наверняка» продолжится"
+  },
+  {
+   "title": "China's big banks post fastest quarterly profit growth in years as margins stabilise",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNQmM5c1NXZVJPM3d6cFNjMy0zdFVkNkhkUnF2SC1WTEtPcVBqWktreW85aElYd1dBQUJsNkhXbS1hSnNFWFdydDBUV044aDBSWnBZMGRYNWt1eWJOZ0dRbWxvTldxdnBENWtIdnBPVzI0aU5FeF9hSVNIS3hKT3lFbVBUNVQxc1hKcGJJcngtc1VCSHV4Ml9TQ002MmlvbzFGY0JfYzlQdnhNVGs4bTZV?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-30T11:55:10.351868+00:00",
+   "title_ru": "Крупные банки Китая сообщают о самом быстром за последние годы росте квартальной прибыли на фоне стабилизации рентабельности",
+   "tags": [
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -18740,8 +18744,8 @@
   },
   "checked": "2026-10-30T11:45:10.373806+00:00",
   "sec_seen": [
-   "0002141713-26-000007",
    "0002010135-26-000025",
+   "0002141713-26-000007",
    "0001628280-26-068399",
    "0000711377-26-000037",
    "0001341767-26-000008",
