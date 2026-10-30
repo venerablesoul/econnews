@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "bcc5612469af8ec9": "2026-10-27T12:38:42.902450+00:00",
   "98756fa8f98a2037": "2026-10-27T12:43:43.036317+00:00",
   "c847d62a8a177e47": "2026-10-27T12:43:43.036317+00:00",
   "437c4effd004d903": "2026-10-27T12:43:43.036317+00:00",
@@ -1119,7 +1118,13 @@
   "eb6126e725314f87": "2026-10-30T12:30:10.399223+00:00",
   "bc143710274c8f93": "2026-10-30T12:30:10.399223+00:00",
   "68e431b161dbab32": "2026-10-30T12:35:10.555318+00:00",
-  "23873157ced92387": "2026-10-30T12:35:10.555318+00:00"
+  "23873157ced92387": "2026-10-30T12:35:10.555318+00:00",
+  "5ad39845e4d34e98": "2026-10-30T12:40:10.533250+00:00",
+  "0f5eefc8e8c04610": "2026-10-30T12:40:10.533250+00:00",
+  "51178286e76607e1": "2026-10-30T12:40:10.533250+00:00",
+  "2b2ffcee0a520537": "2026-10-30T12:40:10.533250+00:00",
+  "8e3f2f0867f6de29": "2026-10-30T12:40:10.533250+00:00",
+  "e613c8251895b464": "2026-10-30T12:40:10.533250+00:00"
  },
  "recent": [
   {
@@ -11909,6 +11914,73 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "US Employment Cost Growth Holds Steady, Stays Below Inflation",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/us-employment-cost-growth-holds-steady-stays-below-inflation",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-30T12:40:10.533250+00:00",
+   "title_ru": "Рост затрат на занятость в США держится стабильно, остается ниже инфляции",
+   "lead": "US labor cost growth held steady in the third quarter, suggesting that a subdued job market is not contributing to broader inflationary pressures.",
+   "lead_ru": "Рост стоимости рабочей силы в США в третьем квартале оставался стабильным, что свидетельствует о том, что приглушенный рынок труда не способствует более широкому инфляционному давлению.",
+   "tags": [
+    "inflation"
+   ]
+  },
+  {
+   "title": "Mexico Economic Growth Jumps to Fastest Pace in Three Years",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/mexico-economic-growth-jumps-to-fastest-pace-in-three-years",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-30T12:40:10.533250+00:00",
+   "title_ru": "Экономический рост Мексики ускорился до самых быстрых темпов за три года",
+   "lead": "Mexico’s economic growth accelerated in the third quarter, powered by public and private investments as well as robust exports.",
+   "lead_ru": "В третьем квартале экономический рост Мексики ускорился благодаря государственным и частным инвестициям, а также устойчивому экспорту."
+  },
+  {
+   "title": "Tech Rout Deepens as Earnings Stoke AI Fears",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-30/the-opening-trade-10-30-2026-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-30T12:40:10.533250+00:00",
+   "title_ru": "Tech Rout углубляется, поскольку доходы подогревают страхи ИИ",
+   "lead": "Tech stocks and US equity futures fell as another batch of disappointing earnings intensified the selloff in the sector, as investors increasingly question the payoff from massive artificial intelligence spending.",
+   "lead_ru": "Технологические акции и фьючерсы на акции в США упали, поскольку еще одна партия разочаровывающих доходов усилила распродажу в этом секторе, поскольку инвесторы все чаще ставят под сомнение выгоду от массовых расходов на искусственный интеллект.",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "Indian retail investors tap $234 million in margin funding to trade Jio Platforms on debut day",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQVjNXRDBZN1hFaE5TMER3c1pFQ3lhY0cteF9rUjhOUHRnTDRFRHVQT1JtMVBPR1VYbVBEZVZXaDVERi1DSHBMLUFqVmhwMG1ZQzExcnFkNW92bldFVDRNMl9oZkJzdHNwak5kN0ZKQzdrUWFTQi1LUlJqd2ZlMGhXanFOb1V2M19UbzRzd005eDFSVTdkZlhtV2NXMnBDcTZ3Yk0zVGpIdEdURGpTZFlRTWVRejhERWZnLUtoWENGUDdaZndxSGI4?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-30T12:40:10.533250+00:00",
+   "title_ru": "Индийские розничные инвесторы привлекли $ 234 млн маржинального финансирования для торговли платформами Jio в день дебюта"
+  },
+  {
+   "title": "ECB Has Requested EU Leaders Start Search for Lane Successor",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/ecb-has-requested-eu-leaders-start-search-for-lane-successor",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T12:40:10.533250+00:00",
+   "title_ru": "ЕЦБ попросил лидеров ЕС начать поиск преемника полосы",
+   "lead": "The European Central Bank asked the region’s leaders to start choosing a successor to Chief Economist Philip Lane, opening the race for yet another vacancy on its Executive Board.",
+   "lead_ru": "Европейский центральный банк попросил лидеров региона начать выбирать преемника главного экономиста Филиппа Лейна, открыв гонку за еще одну вакансию в своем Исполнительном совете.",
+   "tags": [
+    "ECB"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -18597,8 +18669,8 @@
   },
   "checked": "2026-10-30T11:45:10.373806+00:00",
   "sec_seen": [
-   "0002010135-26-000025",
    "0002141713-26-000007",
+   "0002010135-26-000025",
    "0001628280-26-068399",
    "0000711377-26-000037",
    "0001341767-26-000008",
