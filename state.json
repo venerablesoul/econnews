@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c3fdae2cf38eebcb": "2026-10-27T17:54:40.885096+00:00",
   "597b360868acb5b0": "2026-10-27T17:59:41.131163+00:00",
   "477e7d5675a48398": "2026-10-27T17:59:41.131163+00:00",
   "9b385517a2ad1e94": "2026-10-27T18:04:41.217616+00:00",
@@ -1137,22 +1136,10 @@
   "fd35a26dd9755638": "2026-10-30T17:35:57.462126+00:00",
   "271223aa6852fbb2": "2026-10-30T17:35:57.462126+00:00",
   "416d4a5c586eccae": "2026-10-30T17:45:57.460286+00:00",
-  "6cc762211783e8cd": "2026-10-30T17:45:57.460286+00:00"
+  "6cc762211783e8cd": "2026-10-30T17:45:57.460286+00:00",
+  "82297753eb7124b3": "2026-10-30T17:55:57.411989+00:00"
  },
  "recent": [
-  {
-   "title": "Brazil's markets recover some ground after selloff; minister vows fiscal discipline",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOMXExT19UeVJNZFFadkVlQ3A1WXBnSnFqR1RfVEF4N3VqcmNUdUMtMF9SRS1DWUlFSEFDZnBJNzVMNUltbmVaQVg1NkJWWWJvTDdSVW1JZzhybGJiX0xGbklmSTZnUTFESmNoRXc1VGJELXRYNi1tc092eE4xYlA3QXF5VmRmdWNzdU9ROWs2dU1ZNjcycnR0LTNvNzZ4TzIwOTUyWC1BYnZVMTFDdC1wUFpRd0xPYVc2ODM3UHVR?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-27T17:54:40.885096+00:00",
-   "title_ru": "Рынки Бразилии немного восстанавливаются после распродажи; Министр обещает финансовую дисциплину",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Konecta Gets Lender Forbearance to Negotiate Debt Restructuring",
    "link": "https://www.bloomberg.com/news/articles/2026-10-27/konecta-gets-lender-forbearance-to-negotiate-debt-restructuring",
@@ -18833,12 +18820,11 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-30T16:45:57.827215+00:00",
+  "checked": "2026-10-30T17:50:57.788325+00:00",
   "sec_seen": [
    "0001801785-26-000008",
    "0001785595-26-000018",
    "0002116974-26-000005",
-   "0001045957-26-000012",
    "0001956982-26-000007",
    "0001830165-26-000042"
   ],
