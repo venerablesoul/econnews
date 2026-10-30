@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "be98aed0cd629c0d": "2026-10-27T02:12:36.907197+00:00",
-  "d253a745599a2cd9": "2026-10-27T02:12:36.907197+00:00",
   "cfa4e9896537763c": "2026-10-27T02:17:36.893588+00:00",
   "7aef388f63a4ac25": "2026-10-27T02:22:36.865049+00:00",
   "9cd98e9af450969a": "2026-10-27T02:27:36.864898+00:00",
@@ -1093,31 +1091,10 @@
   "b4f25a2429153ded": "2026-10-30T01:49:13.700984+00:00",
   "e2533c2072d3b27d": "2026-10-30T01:49:13.700984+00:00",
   "776571482bbae9ec": "2026-10-30T01:49:13.700984+00:00",
-  "a27d45c34fde8667": "2026-10-30T01:59:13.682191+00:00"
+  "a27d45c34fde8667": "2026-10-30T01:59:13.682191+00:00",
+  "c82d90400c8fce36": "2026-10-30T02:14:13.634667+00:00"
  },
  "recent": [
-  {
-   "title": "Yen’s Role in Latin American Carry Trade Withstands Brazil Rout",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-27/yen-s-role-in-latin-american-carry-trade-withstands-brazil-rout",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-27T02:12:36.907197+00:00",
-   "title_ru": "Роль иены в латиноамериканском кэрри-трейд противостоит разгрому Бразилии",
-   "lead": "The yen’s funding role for the carry trade in Latin America is alive and well.",
-   "lead_ru": "Роль иены в финансировании керри-трейд в Латинской Америке жива и процветает."
-  },
-  {
-   "title": "USTR Greer tells EU that loan to Airbus threatens trade truce on aircraft financing",
-   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNRWRKSlpLR3l4cENjelFuU0tPXzRLc21PTTZ4QUpCNHBnZDZ0MW85NFVpYnlvLXhiaFQ3SnZ3aDhEZXRfOXg3LURobjdQWHAtSGNKalZMcVNhWGRCeDRpYzVYb1BTOXZydlFJVVFqbXRaWDlsbUozS0lSc1BsUDdhaWRuV3dpUDFFT3VXRjg4cklMT3NvOEs4T1hOX0lvUC1Yek5kcXd0TmhIaUItS3RVRFUxejN1amZIMmJmcHE3M0k5VGVGOGs3LU5GTWk3R0ZCNzBURk41dw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T02:12:36.907197+00:00",
-   "title_ru": "Торговый представитель США Грир сообщает ЕС, что кредит Airbus угрожает торговому перемирию в финансировании самолетов"
-  },
   {
    "title": "China 5-Year Yield Hits Record Low on PBOC’s Cash Injection",
    "link": "https://www.bloomberg.com/news/articles/2026-10-27/china-5-year-yield-hits-record-low-on-pboc-s-cash-injection",
@@ -11646,6 +11623,21 @@
    "score": 3,
    "ts": "2026-10-30T01:49:13.700984+00:00",
    "title_ru": "Растущие фрахтовые ставки увеличивают долг Shell на 5,4 миллиарда долларов и снижают прибыль Total"
+  },
+  {
+   "title": "Yen steady before BOJ, AI jitters drive Treasury rally, weigh on dollar",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNMHRlb2xFdjF1SUl3NUktRkR1WEpsOVktNG9kRlhNQWhVZm0wMGdPdlYzYUpxQVdTV3FnVkF4ekhmOUYyX3R1d1JQTmlGRGdrYVB6LTlWNTA4YXIzb1lOMDF0QW4zb25aaVNkRE5RaWlEQUZteXZMWnVmcGVTU19yVFlBY1FZZFIyWHRaYUhZbERiOHZvdXFhNUtIakZ5UmFjVy1vVzVjZmwzX0NKTHNXWWZFZ2M1bGlIVXNuZ3hn?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-10-30T02:14:13.634667+00:00",
+   "title_ru": "Иена устойчива перед БАНКОМ ЯПОНИИ, дрожь ИИ стимулирует ралли казначейских облигаций, давит на доллар",
+   "tags": [
+    "dollar",
+    "bonds",
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -18334,8 +18326,8 @@
   "checked": "2026-10-30T01:24:13.654956+00:00",
   "sec_seen": [
    "0001437749-26-034036",
-   "0001437749-26-034032",
    "0001437749-26-034038",
+   "0001437749-26-034032",
    "0001895111-26-000021",
    "0001628280-26-068337",
    "0001437749-26-034042",
@@ -18346,8 +18338,8 @@
    "0001437749-26-034035",
    "0001140361-26-041201",
    "0001711968-26-000027",
-   "0001040470-26-000323",
    "0001437749-26-034040",
+   "0001040470-26-000323",
    "0000923738-26-000048",
    "0001193125-26-438480",
    "0000944075-26-000078",
