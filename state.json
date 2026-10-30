@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "9a0e82c09ce5b4b9": "2026-10-27T09:33:09.277708+00:00",
   "0929b06118987ed6": "2026-10-27T09:48:09.257280+00:00",
   "1806dfa4cadc8a6b": "2026-10-27T09:53:09.324419+00:00",
   "4606b04e0c415d0d": "2026-10-27T09:53:09.324419+00:00",
@@ -1122,22 +1121,12 @@
   "6d53d8c101bc7841": "2026-10-30T09:19:40.358258+00:00",
   "294c01955febc0da": "2026-10-30T09:24:40.229412+00:00",
   "ad10370eca86c52e": "2026-10-30T09:24:40.229412+00:00",
-  "c89e25b96003c851": "2026-10-30T09:24:40.229412+00:00"
+  "c89e25b96003c851": "2026-10-30T09:24:40.229412+00:00",
+  "9b0a39112206ab5a": "2026-10-30T09:34:40.342182+00:00",
+  "39143439268db7ab": "2026-10-30T09:34:40.342182+00:00",
+  "7be33f3d0437e736": "2026-10-30T09:34:40.342182+00:00"
  },
  "recent": [
-  {
-   "title": "HSBC Shares Slide More Than 6% After Quarterly Profit Misses",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNNVJjeFJTTzc0V2JkWGxWckpTN0lPWVJncFQ4R25NNzQ5a0RENm5OdzBwT3V5MFF6NGk5b3g1bE9NWGRZd3dyM0FfR0NlNXd4M1l1eEtHZHh5cjF4UUJsdlFHYi1kLWNOVDVvSkk2Y3VuZWFBdWppem10RDk2b0dfUURuZjAyNGl6bFpPNVlxS1hacl9od3Q0azRiREJuRUxHcHhkbmRWN0hSN1k0UlRTc2NCUWQyUzBndFpqQ216anc2eFhSc0E?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T09:33:09.277708+00:00",
-   "title_ru": "Акции HSBC упали более чем на 6% после промахов в квартальной прибыли",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Bond Market Gives Initial Nod to Serbia’s Untested Ballot Winner",
    "link": "https://www.bloomberg.com/news/articles/2026-10-27/bond-market-gives-initial-nod-to-serbia-s-untested-ballot-winner",
@@ -11885,6 +11874,44 @@
    ],
    "score": 1,
    "ts": "2026-10-30T09:24:40.229412+00:00"
+  },
+  {
+   "title": "PBOC Reveals Overnight Rate at 1.25% Before Policy Anchor Shift",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/pboc-reveals-overnight-rate-at-1-25-before-policy-anchor-shift",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T09:34:40.342182+00:00",
+   "title_ru": "НБК объявил ставку овернайт на уровне 1,25% до изменения якоря политики",
+   "lead": "China’s central bank announced the rate on its overnight reverse repurchase agreements is lower than its current seven-day benchmark, after unveiling plans to adopt it as the main policy lever.",
+   "lead_ru": "Центральный банк Китая объявил, что ставка по однодневным соглашениям обратного РЕПО ниже текущего семидневного ориентира, после того как обнародовала планы использовать ее в качестве основного рычага политики.",
+   "tags": [
+    "China"
+   ]
+  },
+  {
+   "title": "VIEW Analysts react to BOJ decision to keep rates steady",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNSnRoUnFPTXd3aThEbHFYOXpiS2RwcUhURmhyc2RVMWtxdENYOGg0cjVYWllUS012TnI2Rmxxd3d2dEx4QURuVW9ZWUhFdzVuOHNvWlpYOV9Rd0xCNHRfNTNuMVFZeVQwOUZ1ZHVlTkFnMUllanAwRkQzLXMyaE9qMzY1Vmp4Vy1GU0NTYVpLbkQ5eG5PVXlSYUh0T0l2YjJ3RVVIX0hzUmM?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T09:34:40.342182+00:00",
+   "title_ru": "VIEW Аналитики реагируют на решение Банка Японии сохранить ставки на стабильном уровне"
+  },
+  {
+   "title": "China's central bank to conduct overnight reserve repos every working day from November 2, rate at 1.25%",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPeVdpV3d2UGwyVHFBR2lNS1JNaUxINlpjVXppYjNiSVc2QUtoa3RISFhVcUZFeEppWHlBTmJoRko2dEpJSjNwb2NfVDJMMVp5bGp5VUtBb1ZnYjZ2NXRKUjlwRi0wSmNYblh1TU5iNE5odmtRN09uZ1Ryemx1dzJQYmpsRVpXRS1yQUl5MzRWZVMzSXJvNW03UHBodmZHbm9tMXhwZFFiVXE2ZEpJTi05TVJpWHItRF9zbG9MRmVpSFhtVFVvc3V2TnBFOWExeXVq?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T09:34:40.342182+00:00",
+   "title_ru": "Центральный банк Китая будет проводить РЕПО с резервами овернайт каждый рабочий день со 2 ноября по ставке 1,25%.",
+   "tags": [
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
