@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "bd25db671486c157": "2026-10-27T22:34:44.583259+00:00",
-  "31eae68c2dbe5343": "2026-10-27T22:34:44.583259+00:00",
   "acb47cf9d4b3c541": "2026-10-27T22:44:44.618478+00:00",
   "b4516aafbf8bd25d": "2026-10-27T22:49:44.632363+00:00",
   "a0e267aec54fbb2e": "2026-10-27T22:59:44.577722+00:00",
@@ -1127,30 +1125,10 @@
   "9886ece9a2193717": "2026-10-30T22:16:27.176228+00:00",
   "282952cbd46cf265": "2026-10-30T22:16:27.176228+00:00",
   "944a0b5dcb766e35": "2026-10-30T22:26:27.302056+00:00",
-  "c5433dfa043a0a65": "2026-10-30T22:26:27.302056+00:00"
+  "c5433dfa043a0a65": "2026-10-30T22:26:27.302056+00:00",
+  "ac5b6aeb49767dfe": "2026-10-30T22:36:27.293071+00:00"
  },
  "recent": [
-  {
-   "title": "IMF Strikes Preliminary Argentina Deal As Market Return Dims",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-27/imf-strikes-preliminary-argentina-deal-as-market-return-dims",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-27T22:34:44.583259+00:00",
-   "title_ru": "МВФ заключает предварительную сделку с Аргентиной, поскольку доходность рынка падает",
-   "lead": "The International Monetary Fund reached a staff-level agreement with Argentina on the third review of its $20 billion loan program, toning down language around the nation’s return to international capital markets.",
-   "lead_ru": "Международный валютный фонд достиг соглашения с Аргентиной о третьем пересмотре своей кредитной программы на $ 20 млрд, смягчив язык вокруг возвращения страны на международные рынки капитала."
-  },
-  {
-   "title": "Chancellor targets cost of living crisis in budget for a ‘difficult moment’",
-   "link": "https://www.theguardian.com/uk-news/2026/oct/27/john-healey-budget-help-with-cost-of-living-deferring-decisions-on-tax-and-spending",
-   "sources": [
-    "The Guardian"
-   ],
-   "score": 2,
-   "ts": "2026-10-27T22:34:44.583259+00:00"
-  },
   {
    "title": "Healey to Unveil Budget to Buy Breathing Room for UK and Labour",
    "link": "https://www.bloomberg.com/news/articles/2026-10-27/healey-to-unveil-budget-to-buy-breathing-room-for-uk-and-labour",
@@ -12002,6 +11980,16 @@
    ],
    "score": 1,
    "ts": "2026-10-30T22:26:27.302056+00:00"
+  },
+  {
+   "title": "Business Employment Dynamics in Montana — First Quarter 2026",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPUTRoZDNTNFdIOWtZenI2dWd3RFJoQ1ZxdWpLckk2bERndG5haFQtb3ptcE1iU1JFVFJ6cW1Ud2N1Vk8xWFN2MTBIN3NLbTZIamZZNTdseDJ5dTZidm5yblRkWEo3NnRHeTlhVWRveWgxcTk2THl2ZjV3VC00RFFMNWQ1RlJnblFRVE5xUVAxWndfMmxQUmRqZUNUenJYd2dFalR3NjZEN2xoUHRuWVE?oc=5",
+   "sources": [
+    "US Labor Statistics (BLS)"
+   ],
+   "score": 4,
+   "ts": "2026-10-30T22:36:27.293071+00:00",
+   "title_ru": "Динамика занятости в сфере бизнеса в Монтане — первый квартал 2026 г."
   }
  ],
  "last_digest": "2026-10-30",
@@ -15342,6 +15330,22 @@
     "date": "2026-10-28",
     "disclosed": "2026-10-30",
     "link": "https://www.sec.gov/Archives/edgar/data/1889539/000119312526441956/0001193125-26-441956-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "476ebad4f792a4c2",
+    "ticker": "ROIV",
+    "company": "Roivant Sciences Ltd.",
+    "who": "Eric Venker",
+    "role": "CEO",
+    "type": "sell",
+    "value": 7318000,
+    "shares": 200000,
+    "price": 36.59,
+    "plan": true,
+    "date": "2026-10-28",
+    "disclosed": "2026-10-30",
+    "link": "https://www.sec.gov/Archives/edgar/data/1801917/000163508826000120/0001635088-26-000120-index.htm"
    },
    {
     "src": "sec",
@@ -18702,22 +18706,6 @@
     "date": "2026-10-22",
     "disclosed": "2026-10-26",
     "link": "https://www.sec.gov/Archives/edgar/data/1585724/000146452126000156/0001464521-26-000156-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "236cc038119396bf",
-    "ticker": "CRBG",
-    "company": "Corebridge Financial, Inc.",
-    "who": "Nippon Life Insurance Co",
-    "role": "10% owner",
-    "type": "buy",
-    "value": 8662933,
-    "shares": 246440,
-    "price": 35.15,
-    "plan": true,
-    "date": "2026-10-22",
-    "disclosed": "2026-10-26",
-    "link": "https://www.sec.gov/Archives/edgar/data/1889539/000119312526432280/0001193125-26-432280-index.htm"
    }
   ],
   "docs": {
@@ -18773,12 +18761,15 @@
    "0001910507-26-000004",
    "0001631325-26-000004",
    "0001193125-26-441994",
+   "0001193125-26-442057",
    "0001193125-26-441962",
    "0000351569-26-000159",
    "0001193125-26-442033",
    "0001821204-26-000006",
    "0001193125-26-441984",
    "0001284489-26-000044",
+   "0001193125-26-442045",
+   "0001409970-26-000204",
    "0001882102-26-000012",
    "0001193125-26-442029",
    "0001193125-26-441980",
@@ -18786,15 +18777,15 @@
    "0002117509-26-000006",
    "0001193125-26-441988",
    "0001954327-26-000053",
-   "0001510281-26-000394",
+   "0001635088-26-000120",
    "0001193125-26-441978",
+   "0000904454-26-000570",
    "0001193125-26-441996",
    "0000815097-26-000109",
    "0002109682-26-000006",
    "0000087347-26-000130",
    "0001266824-26-000219",
    "0001769628-26-000452",
-   "0001493152-26-049477",
    "0001193125-26-442023",
    "0001193125-26-441963",
    "0000904454-26-000568",
@@ -18802,7 +18793,6 @@
    "0001676558-26-000022",
    "0001916515-26-000004",
    "0001591430-26-000004",
-   "0001890925-26-000027",
    "0001193125-26-442013",
    "0002157254-26-000006",
    "0001628280-26-068632"
