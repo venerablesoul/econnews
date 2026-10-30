@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "61379ffea592732e": "2026-10-27T16:58:42.942851+00:00",
-  "d9d8714480d48ec6": "2026-10-27T16:58:42.942851+00:00",
   "ed49b582aaf1c773": "2026-10-27T17:13:43.000942+00:00",
   "4a7c4ddf2999f514": "2026-10-27T17:13:43.000942+00:00",
   "39d500e8670147c4": "2026-10-27T17:18:43.012695+00:00",
@@ -1133,24 +1131,10 @@
   "f1b2b484bded5cb5": "2026-10-30T16:50:57.528357+00:00",
   "b2701fbc5b53df38": "2026-10-30T16:50:57.528357+00:00",
   "e643e217dc71b1ef": "2026-10-30T16:55:57.537580+00:00",
-  "0d00d32f8c4c4695": "2026-10-30T16:55:57.537580+00:00"
+  "0d00d32f8c4c4695": "2026-10-30T16:55:57.537580+00:00",
+  "f128be813c118189": "2026-10-30T17:00:59.597506+00:00"
  },
  "recent": [
-  {
-   "title": "Saudi Aramco Offers Europe More Spot Oil as Supplies Ramp Up",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-27/saudi-aramco-offers-europe-more-spot-oil-as-supplies-ramp-up",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T16:58:42.942851+00:00",
-   "title_ru": "Saudi Aramco предлагает Европе больше спотовой нефти по мере увеличения поставок",
-   "lead": "Saudi Aramco has been offering spot oil cargoes to European buyers for both this month and the next, according to a person familiar with the matter, a sign the company is looking to make up for supplies lost when a crucial export…",
-   "lead_ru": "Saudi Aramco предлагала спотовые поставки нефти европейским покупателям как в этом месяце, так и в следующем, по словам человека, знакомого с этим вопросом, что является признаком того, что компания надеется компенсировать потери поставок, когда решающий экспортный...",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "Google Upgrades AI World Model That Rattled Video Game Stocks",
    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQbUx6Z0xYcXpVWEdaSGswN0tVc3hOdmFXZmNpLWxreG5sallSc0RnbHlQcVpXWGZwRzZfZW5JM19nTkYzRVlyLWVGRktZbG4waVlPajJnVEp1aXJ2TEVMM29sbEJYTFlvY2Q4M2Nna3VLeHNTOEhiN1ZYalplUWRWN0xfbE16RlpfMjdSaFd4Ym1qU1kxWmFKNWl0djluT3VOM3JMN1lycDhPQ1N3UHFaRnln?oc=5",
@@ -12079,6 +12063,19 @@
    "score": 3,
    "ts": "2026-10-30T16:55:57.537580+00:00",
    "title_ru": "Джио из Амбани сообщает о росте первой прибыли примерно на 14% с момента дебюта блокбастера"
+  },
+  {
+   "title": "Fed's Barkin says US central bank's direction 'straightforward,' the question is pace, SiriusXM reports",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNeUlVMFZxeTRfY0dKczFKaFBkU1pEbWZqMTBlcFQ0OTRqcXRzUkFIWk5QcW9VTXgyV0ltVS1rck9lUktWODNDNTRYcUNhUEYtSGZKb1cyRzJ4STczazRDemJkblFEck11VC1iXzBqTkplTW1WS1YzYVZlNXhyQjlMUHh4a0FQNm5pVG05S2NEMHVmNFc3Yko5SlA0SlZjWlNaRUNYMlNwMFdoNjB1a3VwUGFLSmhrT1FwZ3BTbDd5UGE?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-30T17:00:59.597506+00:00",
+   "title_ru": "Глава ФРС Баркин говорит, что направление центрального банка США «прямое», вопрос в темпах, сообщает SiriusXM",
+   "tags": [
+    "Fed"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -14775,6 +14772,22 @@
     "date": "2026-10-28",
     "disclosed": "2026-10-30",
     "link": "https://www.sec.gov/Archives/edgar/data/1709859/000143774926034107/0001437749-26-034107-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "1d4c9b9b43b644d4",
+    "ticker": "MED",
+    "company": "MEDIFAST INC",
+    "who": "Parsa Kiai",
+    "role": "Director",
+    "type": "buy",
+    "value": 68027,
+    "shares": 5557,
+    "price": 12.24,
+    "plan": false,
+    "date": "2026-10-28",
+    "disclosed": "2026-10-30",
+    "link": "https://www.sec.gov/Archives/edgar/data/1766850/000121390026114242/0001213900-26-114242-index.htm"
    },
    {
     "src": "sec",
@@ -18711,22 +18724,6 @@
     "date": "2026-10-21",
     "disclosed": "2026-10-23",
     "link": "https://www.sec.gov/Archives/edgar/data/2094454/000101297526000980/0001012975-26-000980-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "b7771c170ec38c88",
-    "ticker": "INNV",
-    "company": "InnovAge Holding Corp.",
-    "who": "Welsh, Carson, Anderson & Stowe Xii, L.p. et al.",
-    "role": "10% owner",
-    "type": "sell",
-    "value": 13875000,
-    "shares": 1500000,
-    "price": 9.25,
-    "plan": false,
-    "date": "2026-10-21",
-    "disclosed": "2026-10-23",
-    "link": "https://www.sec.gov/Archives/edgar/data/1848767/000119312526430509/0001193125-26-430509-index.htm"
    }
   ],
   "docs": {
@@ -18767,11 +18764,11 @@
   },
   "checked": "2026-10-30T16:45:57.827215+00:00",
   "sec_seen": [
-   "0002099111-26-000004",
+   "0001213900-26-114242",
    "0001193125-26-441076",
    "0002099107-26-000004",
+   "0002097107-26-000005",
    "0002099104-26-000004",
-   "0001193125-26-440960",
    "0001193125-26-441077"
   ],
   "errors": {
