@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c475bbb726e7beac": "2026-10-27T13:58:42.981947+00:00",
-  "f644e08fa94cd24c": "2026-10-27T13:58:42.981947+00:00",
   "c5870025ac136acf": "2026-10-27T14:03:44.049466+00:00",
   "538fefac90146e94": "2026-10-27T14:03:44.049466+00:00",
   "4b827aea05dc05b9": "2026-10-27T14:08:44.470599+00:00",
@@ -1126,19 +1124,10 @@
   "9f348fa448a355c2": "2026-10-30T13:35:10.536075+00:00",
   "31f0a36af2a82e13": "2026-10-30T13:35:10.536075+00:00",
   "853707dc5c9c6fee": "2026-10-30T13:45:10.578588+00:00",
-  "a76c7966872c1888": "2026-10-30T13:55:10.556962+00:00"
+  "a76c7966872c1888": "2026-10-30T13:55:10.556962+00:00",
+  "ed955d44c117a77d": "2026-10-30T14:00:10.623346+00:00"
  },
  "recent": [
-  {
-   "title": "Indian media groups decry Modi’s privacy law in court, say newsrooms face shutdown risk",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPamZ6a0RNdDZHNVJ5M2xGeG5TR0x3VHNpSXBmaW95aTdjVS1nZDJRenJaNlZCUWltMUpzRnMwdlF4YTdPY0haaFJlSTI4bjNVRWdIR2ZWR19rWDQweElGYl94T1MyX3g4R3doWmxVYjRJX2JObDRWMVRqdFdNMzdKWl9pS1RRTEZISGhMY29FaF9FSVg1QVBKazlPRU1QWGtZcjBVV19uZ3NPVGZwel9mMGV1dzU?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-27T13:58:42.981947+00:00",
-   "title_ru": "Индийские медиа-группы осуждают закон о неприкосновенности частной жизни Моди в суде, говорят, что редакции сталкиваются с риском закрытия"
-  },
   {
    "title": "POLL Strong dollar, high yields drag on gold outlook, but central-bank demand lends support",
    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNY2N0dGg4Q1VsMUJXaTJYb1J4cjJiQjRGYS16djR0Nnh5VGVsQmFRZXctU0w3UUpfclljaFp4ZW5DVFZTLVYzTUlSWDY5Q0JsQ0JLYjF5aFJoVDBpOGhrWnkxdEZKdUtpQzNPc1kxRGdGRkdTZENtM25LLUNYNTdlMjNnMHdUcU52VVlFTkNXRUJKMDFhWEhFalptcGZvQ0FZeUl1UHF5T3Z2UmpWOUR6ekJmMnlHblRWQU1MUzFUaXZiUzA?oc=5",
@@ -11992,6 +11981,18 @@
    "score": 5,
    "ts": "2026-10-30T13:55:10.556962+00:00",
    "title_ru": "Испанский министр отказался уйти в отставку из-за второй крупной железнодорожной катастрофы за его время"
+  },
+  {
+   "title": "London’s Stock Market Among Those Feeling Left Out of UK Budget",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/london-s-stock-market-among-those-feeling-left-out-of-uk-budget",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-30T14:00:10.623346+00:00",
+   "title_ru": "Лондонский фондовый рынок среди тех, кто чувствует себя обделенным британским бюджетом",
+   "lead": "The UK budget failed to deliver measures needed to revitalize London’s three-century-old bourse, market participants said, despite its reassuring praise for the country’s capital markets.",
+   "lead_ru": "Бюджет Великобритании не смог принять меры, необходимые для оживления трехвековой лондонской биржи, заявили участники рынка, несмотря на обнадеживающие похвалы рынкам капитала страны."
   }
  ],
  "last_digest": "2026-10-29",
@@ -18679,9 +18680,7 @@
    "sec": true
   },
   "checked": "2026-10-30T13:45:10.578588+00:00",
-  "sec_seen": [
-   "0001193125-26-440015"
-  ],
+  "sec_seen": [],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
   }
