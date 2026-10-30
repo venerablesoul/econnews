@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "8715604258485543": "2026-10-27T14:33:42.967540+00:00",
-  "fa5d12bd906a75b9": "2026-10-27T14:33:42.967540+00:00",
-  "09bb9c66f4c86a82": "2026-10-27T14:38:42.999436+00:00",
-  "000cfe1d26986489": "2026-10-27T14:38:42.999436+00:00",
-  "3fd7ac01c35fb228": "2026-10-27T14:38:42.999436+00:00",
   "4804f59d240f2516": "2026-10-27T14:58:43.003601+00:00",
   "5b0c3e1b9dea7df3": "2026-10-27T15:03:43.021977+00:00",
   "4dd9d64954467ea0": "2026-10-27T15:08:43.242337+00:00",
@@ -1119,19 +1114,11 @@
   "d10ae9c4a0733eb1": "2026-10-30T14:10:10.650026+00:00",
   "30c4fb2f4245d26f": "2026-10-30T14:15:10.542265+00:00",
   "3fc9ac2ad7425037": "2026-10-30T14:15:10.542265+00:00",
-  "52c3e408752d84d7": "2026-10-30T14:20:10.587544+00:00"
+  "52c3e408752d84d7": "2026-10-30T14:20:10.587544+00:00",
+  "8dc18539e31407c3": "2026-10-30T14:35:10.525582+00:00",
+  "103db3e5db2912e0": "2026-10-30T14:40:10.611929+00:00"
  },
  "recent": [
-  {
-   "title": "JetBlue Earnings: Airline Outlook Worsens as Operating Loss Margin Drops",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPQmphVW9lVGQxcTNnaW1EazZETlhaM3RTYmtVc3FMSUpyQkRjYVlqR3kxWVhGRVQzWjlQNzhtVGJJM19VeTREa2hGNnlfSWM2aWZjRFZKUXRpWng2eWcwQlRFMUxaZUVSWWJPYmVIOXNITU9Uc2JHY0RMM1JmZVM3OWlqeGktSUF2WWswWHZPaExSUk1DTlgxWDJQZDVXMEczaVhvU0pwM1lROGc?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T14:38:42.999436+00:00",
-   "title_ru": "Прибыль JetBlue: прогноз авиакомпании ухудшается из-за снижения маржи операционных убытков"
-  },
   {
    "title": "Microsoft earnings will look funky — but an elusive number is finally arriving",
    "link": "https://www.marketwatch.com/story/microsoft-earnings-will-look-funky-but-an-elusive-number-is-finally-arriving-73236a94?mod=mw_rss_topstories",
@@ -11921,6 +11908,28 @@
     "oil",
     "jobs"
    ]
+  },
+  {
+   "title": "This strategist correctly recommended shorting Big Tech debt last year. Now he says the yields make it attractive.",
+   "link": "https://www.marketwatch.com/story/this-strategist-correctly-recommended-shorting-big-tech-debt-last-year-now-he-says-the-yields-make-it-attractive-3ec2e0fe?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-30T14:35:10.525582+00:00"
+  },
+  {
+   "title": "Tech Stocks Poised to Drop After Amazon Adds to AI Spending Fear",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPVmVXMS1Yb1Y4NDJ3ZEdDWG9qQ2F0R2hqOVFrZFd1SDFqTGdTektuQ1g1MXZJam9kYXdWTDdKdVRRYW9HRVNkc2hkeHFwSmpael85akszamRfZk1rd3hqWWEzVVp1Z3VQdVpfN3lBR1owcXh6d3Q1OFNTU242c2htaW1IbTJUOWNuTmV5UHNhdkFheENfeGt2RlpscHhubXh2WTVnNmhsYXdhN1lQZ2t3RWo1WkVVQQ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T14:40:10.611929+00:00",
+   "title_ru": "Акции технологических компаний могут упасть после того, как Amazon усилил страх перед расходами на ИИ",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -18609,10 +18618,11 @@
   },
   "checked": "2026-10-30T13:45:10.578588+00:00",
   "sec_seen": [
-   "0001437749-26-034091",
    "0001437749-26-034093",
    "0001437749-26-034087",
-   "0001437749-26-034095"
+   "0001437749-26-034095",
+   "0001437749-26-034091",
+   "0001437749-26-034097"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
