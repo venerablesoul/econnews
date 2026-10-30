@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "3d70faf47712ba79": "2026-10-27T21:34:44.562401+00:00",
-  "d95873b76d0d2367": "2026-10-27T21:34:44.562401+00:00",
-  "9ae549c87e1b32e4": "2026-10-27T21:34:44.562401+00:00",
   "c16147f998ebcd7a": "2026-10-27T21:44:44.819592+00:00",
   "cfd287a3201e04e4": "2026-10-27T21:44:44.819592+00:00",
   "24c01e0e944f16f6": "2026-10-27T21:49:44.561546+00:00",
@@ -1127,42 +1124,11 @@
   "0ac234b29229d2d0": "2026-10-30T21:05:57.563199+00:00",
   "1bf87ea48f59e51d": "2026-10-30T21:05:57.563199+00:00",
   "1458fdc846e58964": "2026-10-30T21:10:57.415002+00:00",
-  "915383bd55cd1c17": "2026-10-30T21:30:57.363173+00:00"
+  "915383bd55cd1c17": "2026-10-30T21:30:57.363173+00:00",
+  "0d5909b14aa36cb7": "2026-10-30T21:35:57.414451+00:00",
+  "7dfec90d8fc4410b": "2026-10-30T21:35:57.414451+00:00"
  },
  "recent": [
-  {
-   "title": "Barclays Sees FX Volatility Staying Elevated as Dollar Rises",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-27/barclays-sees-fx-volatility-staying-elevated-as-dollar-rises",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T21:34:44.562401+00:00",
-   "title_ru": "Barclays считает, что волатильность валютного курса остается высокой на фоне роста доллара",
-   "lead": "Barclays Plc strategists expect volatility in Group-of-10 currencies to rise and remain elevated as the dollar strengthens and interest-rate swings increase.",
-   "lead_ru": "Стратеги Barclays Plc ожидают, что волатильность валют «Большой десятки» будет расти и оставаться высокой по мере укрепления доллара и увеличения колебаний процентных ставок.",
-   "tags": [
-    "dollar"
-   ]
-  },
-  {
-   "title": "As Trump touts energy companies’ fortunes, U.S. consumers face the most expensive year for gas prices ever",
-   "link": "https://www.marketwatch.com/story/as-trump-touts-energy-companies-fortunes-u-s-consumers-face-the-most-expensive-year-for-gas-prices-ever-c467268c?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 2,
-   "ts": "2026-10-27T21:34:44.562401+00:00"
-  },
-  {
-   "title": "The rest of the market is leaving Big Tech behind after a historic comeback",
-   "link": "https://www.marketwatch.com/story/the-rest-of-the-market-is-leaving-big-tech-behind-after-a-historic-comeback-324e9fb2?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-27T21:34:44.562401+00:00"
-  },
   {
    "title": "CoreWeave and other AI stocks rise as Anthropic restores the market’s faith in sustained spending",
    "link": "https://www.marketwatch.com/story/coreweave-and-other-ai-stocks-rise-as-anthropic-restores-the-markets-faith-in-sustained-spending-c71d7186?mod=mw_rss_topstories",
@@ -12019,6 +11985,15 @@
    "title_ru": "Бум на Уолл-стрит сократит дефицит бюджета штата Нью-Йорк вдвое",
    "lead": "New York projected the budget deficit will narrow by $3.5 billion next year as the state expects a boom in trading and borrowing to deliver record profits to Wall Street and stronger bonus payments to boost revenue.",
    "lead_ru": "Нью-Йорк прогнозирует, что дефицит бюджета сократится на $ 3,5 млрд в следующем году, поскольку штат ожидает, что бум в торговле и заимствованиях принесет рекордную прибыль Уолл-стрит и усилит бонусные выплаты для увеличения доходов."
+  },
+  {
+   "title": "Why gold plunged to its lowest price in a year despite renewed Iran jitters",
+   "link": "https://www.marketwatch.com/story/why-gold-plunged-to-its-lowest-price-in-a-year-despite-renewed-iran-jitters-365be0e2?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-30T21:35:57.414451+00:00"
   }
  ],
  "last_digest": "2026-10-30",
@@ -15071,6 +15046,22 @@
     "date": "2026-10-29",
     "disclosed": "2026-10-30",
     "link": "https://www.sec.gov/Archives/edgar/data/1864843/000151028126000394/0001510281-26-000394-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "61b4f0c97abc3f9c",
+    "ticker": "PRCH",
+    "company": "Porch Group, Inc.",
+    "who": "Shawn Tabak",
+    "role": "CFO",
+    "type": "sell",
+    "value": 630738,
+    "shares": 30000,
+    "price": 21.02,
+    "plan": true,
+    "date": "2026-10-29",
+    "disclosed": "2026-10-30",
+    "link": "https://www.sec.gov/Archives/edgar/data/1954327/000195432726000053/0001954327-26-000053-index.htm"
    },
    {
     "src": "sec",
@@ -18719,22 +18710,6 @@
     "date": "2026-10-23",
     "disclosed": "2026-10-23",
     "link": "https://www.sec.gov/Archives/edgar/data/1851564/000185156426000045/0001851564-26-000045-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "7587fb69b5816e0f",
-    "ticker": "BETA",
-    "company": "BETA Technologies, Inc.",
-    "who": "Kyle Clark",
-    "role": "SEE REMARKS",
-    "type": "sell",
-    "value": 559205,
-    "shares": 30000,
-    "price": 18.64,
-    "plan": true,
-    "date": "2026-10-22",
-    "disclosed": "2026-10-23",
-    "link": "https://www.sec.gov/Archives/edgar/data/2090083/000119312526429389/0001193125-26-429389-index.htm"
    }
   ],
   "docs": {
@@ -18778,25 +18753,26 @@
   "sec_seen": [
    "0000950103-26-016560",
    "0001213900-26-114492",
+   "0001916515-26-000004",
    "0001584979-26-000006",
+   "0001954327-26-000053",
    "0001506307-26-000134",
    "0001140361-26-041333",
    "0001104659-26-120734",
+   "0001769628-26-000452",
    "0001493152-26-049461",
-   "0001213900-26-114488",
    "0001628280-26-068624",
    "0001292814-26-005078",
    "0001493152-26-049477",
    "0001213900-26-114490",
+   "0001628280-26-068632",
    "0001736979-26-000025",
    "0001213900-26-114493",
    "0001213900-26-114494",
    "0000897069-26-001881",
-   "0001585521-26-000157",
+   "0001890925-26-000027",
    "0002111492-26-000008",
-   "0001510281-26-000394",
-   "0001213900-26-114489",
-   "0001480603-26-000004"
+   "0001510281-26-000394"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
