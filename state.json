@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "76b2dd11e7fe001c": "2026-10-27T21:14:44.696862+00:00",
   "a8511a4cf02f60d6": "2026-10-27T21:24:44.754944+00:00",
   "6946bd32039013b1": "2026-10-27T21:24:44.754944+00:00",
   "915383bd55cd1c17": "2026-10-27T21:24:44.754944+00:00",
@@ -1137,21 +1136,6 @@
   "1458fdc846e58964": "2026-10-30T21:10:57.415002+00:00"
  },
  "recent": [
-  {
-   "title": "Indonesia’s MSCI Downgrade Threat – What It Means for Investors: Podcast",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-27/indonesia-s-msci-downgrade-threat-what-it-means-for-investors-podcast",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 7,
-   "ts": "2026-10-27T21:14:44.696862+00:00",
-   "title_ru": "Угроза понижения рейтинга MSCI в Индонезии – что это значит для инвесторов: подкаст",
-   "lead": "MSCI’s double downgrade warning sparked Indonesia's sharpest market selloff in nearly 30 years. Now, billions in foreign capital are on the line.",
-   "lead_ru": "Предупреждение MSCI о двойном понижении рейтинга спровоцировало самую резкую распродажу на рынке Индонезии за почти 30 лет. Теперь на кону стоят миллиарды иностранного капитала.",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Russia oil exports through western ports forecast to fall in November, traders say",
    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOQzk2XzU2VjB5VDFxaHJmSmt0Q1RpRl8wSklIakIzcmx3R18tZkQyczJ4dnozRkY0M25Gc3dVbGFiQmFHNjlYaDJHRHowMGo0RElicFJUcHlZQldpOU9ZNm5SbnN4Q25KeGFsbENWbFUySXJSSmF2NlprTDJCenJCYU1GUjl3U0pYbkROdGJqTGFnR09XQ0hTa0dvSDlpQmIzWTJhMmc4Z192VThpVzN2MXk0Uy1DN0hDXzRTemxoOGRmTkxhOXc?oc=5",
@@ -18848,20 +18832,23 @@
   "sec_seen": [
    "0001683168-26-008205",
    "0001213900-26-114492",
+   "0001584979-26-000006",
    "0001506307-26-000134",
    "0001493152-26-049461",
+   "0001104659-26-120734",
    "0001437749-26-034240",
    "0001791917-26-000006",
    "0001213900-26-114488",
+   "0001628280-26-068624",
    "0001213900-26-114490",
    "0001733123-26-000010",
    "0001213900-26-114493",
    "0001213900-26-114494",
    "0001585521-26-000157",
+   "0002111492-26-000008",
    "0001213900-26-114489",
    "0001480603-26-000004",
-   "0001213900-26-114487",
-   "0001628280-26-068607"
+   "0001213900-26-114487"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
