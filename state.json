@@ -1140,7 +1140,8 @@
   "9bd14b503fcad369": "2026-10-30T19:45:57.448462+00:00",
   "83583db568662751": "2026-10-30T19:50:57.310337+00:00",
   "4efb54a302f00cce": "2026-10-30T19:50:57.310337+00:00",
-  "28866d135f8224d9": "2026-10-30T19:55:57.438817+00:00"
+  "28866d135f8224d9": "2026-10-30T19:55:57.438817+00:00",
+  "cb406d6f85899ddc": "2026-10-30T20:00:57.620520+00:00"
  },
  "recent": [
   {
@@ -15074,6 +15075,22 @@
    },
    {
     "src": "sec",
+    "id": "bdf59de6422d3f85",
+    "ticker": "WRLD",
+    "company": "WORLD ACCEPTANCE CORP",
+    "who": "Prescott General Partners Llc",
+    "role": "10% owner",
+    "type": "sell",
+    "value": 15000065,
+    "shares": 88324,
+    "price": 169.83,
+    "plan": false,
+    "date": "2026-10-28",
+    "disclosed": "2026-10-30",
+    "link": "https://www.sec.gov/Archives/edgar/data/1538653/000110465926120643/0001104659-26-120643-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "6393e44b345ae8aa",
     "ticker": "GPI",
     "company": "GROUP 1 AUTOMOTIVE INC",
@@ -18879,22 +18896,6 @@
     "date": "2026-10-21",
     "disclosed": "2026-10-23",
     "link": "https://www.sec.gov/Archives/edgar/data/1630253/000163025326000007/0001630253-26-000007-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "824c3768c8423650",
-    "ticker": "PVLA",
-    "company": "PALVELLA THERAPEUTICS, INC.",
-    "who": "Kathleen Goin",
-    "role": "COO",
-    "type": "sell",
-    "value": 537307,
-    "shares": 4313,
-    "price": 124.58,
-    "plan": true,
-    "date": "2026-10-21",
-    "disclosed": "2026-10-23",
-    "link": "https://www.sec.gov/Archives/edgar/data/1912570/000110465926118466/0001104659-26-118466-index.htm"
    }
   ],
   "docs": {
@@ -18936,9 +18937,10 @@
   },
   "checked": "2026-10-30T19:55:57.438817+00:00",
   "sec_seen": [
-   "0001031203-26-000149",
-   "0001697316-26-000014",
    "0001654954-26-009303",
+   "0001697316-26-000014",
+   "0001031203-26-000149",
+   "0001104659-26-120643",
    "0000711377-26-000043"
   ],
   "errors": {
