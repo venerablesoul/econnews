@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "b287608c731d6e18": "2026-10-27T19:04:40.985726+00:00",
   "2b709e1d49cd541b": "2026-10-27T19:19:40.956304+00:00",
   "7f3c8aed318b369f": "2026-10-27T19:19:40.956304+00:00",
   "34f99aaa3740a3e9": "2026-10-27T19:24:41.023148+00:00",
@@ -1142,22 +1141,10 @@
   "1d562beda2f6777f": "2026-10-30T18:45:57.475504+00:00",
   "843dfa413e767b55": "2026-10-30T18:45:57.475504+00:00",
   "7e360b567b81fe1d": "2026-10-30T18:50:57.295323+00:00",
-  "c1a2bfd83a3e967a": "2026-10-30T18:50:57.295323+00:00"
+  "c1a2bfd83a3e967a": "2026-10-30T18:50:57.295323+00:00",
+  "55b140b7b592b4c2": "2026-10-30T19:05:57.757394+00:00"
  },
  "recent": [
-  {
-   "title": "NYSE moves to bring all-or-nothing options to stocks and company earnings",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOOGhCS0RLa1ctTWJndGN2ZmVuX09pTTV0LXQxcnF1T2ZLUGZUTndKS19vYTZ2NFExT09tODNiX1pYZnlHUGxrZU9OQ2ItMXFUbVhORnVid3BhQjFScFk5S2VsWWNxYl8xVDg1RlBLaHdHM1loRm9zemRwVUtLamNhSkhVTTlyalQ3aERaS0RwUXZkZTVUSTBjVnRmaGh5WVk0SmJ4VlhlY3Y4QTM3RVpPNUhYOEMtdUE?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-27T19:04:40.985726+00:00",
-   "title_ru": "NYSE планирует добавить опционы «все или ничего» на акции и доходы компаний",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "BI's Larry Tabb on Changes in Global Market Structure",
    "link": "https://www.bloomberg.com/news/videos/2026-10-27/bi-s-larry-tabb-on-changes-in-global-market-structure-video",
@@ -12193,6 +12180,21 @@
    "tags": [
     "inflation"
    ]
+  },
+  {
+   "title": "Nasdaq 100 (NDX, NDQ, QQQ) Hits Third Correction of 2026 on Unwinding Tech Bets",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/nasdaq-100-ndx-ndq-qqq-hits-third-correction-of-2026-on-unwinding-tech-bets",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T19:05:57.757394+00:00",
+   "title_ru": "Nasdaq 100 (NDX, NDQ, QQQ) достиг третьей коррекции в 2026 году из-за отмены ставок на технологии",
+   "lead": "Investors dumped big tech stocks following a slew of disappointing earnings, putting the Nasdaq 100 Index on course to enter its third technical correction of the year.",
+   "lead_ru": "Инвесторы сбросили акции крупных технологических компаний после множества разочаровывающих отчетов, что поставило индекс Nasdaq 100 на путь третьей технической коррекции за год.",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-30",
@@ -18951,23 +18953,23 @@
   "checked": "2026-10-30T18:55:57.351368+00:00",
   "sec_seen": [
    "0001184041-26-000006",
-   "0000073309-26-000133",
-   "0001771309-26-000005",
-   "0001225208-26-008562",
-   "0001225208-26-008568",
-   "0001614143-26-000006",
-   "0001225208-26-008561",
-   "0001225208-26-008567",
-   "0001225208-26-008566",
-   "0001225208-26-008565",
-   "0001225208-26-008560",
-   "0001801785-26-000010",
-   "0001225208-26-008569",
    "0001225208-26-008564",
    "0001225208-26-008563",
    "0000711377-26-000041",
+   "0000073309-26-000133",
+   "0001225208-26-008568",
    "0001225208-26-008559",
-   "0002106640-26-000014"
+   "0001771309-26-000005",
+   "0001225208-26-008561",
+   "0001225208-26-008567",
+   "0002106640-26-000014",
+   "0001614143-26-000006",
+   "0001225208-26-008566",
+   "0001225208-26-008565",
+   "0001225208-26-008562",
+   "0001225208-26-008560",
+   "0001801785-26-000010",
+   "0001225208-26-008569"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
