@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "581f8d6e07fe269b": "2026-10-27T17:23:42.980948+00:00",
   "879a2f9e2dd3f878": "2026-10-27T17:28:43.009166+00:00",
   "1db7452a004fa418": "2026-10-27T17:44:41.181968+00:00",
   "c3fdae2cf38eebcb": "2026-10-27T17:54:40.885096+00:00",
@@ -1133,24 +1132,10 @@
   "53785dd961581b4a": "2026-10-30T17:05:57.537882+00:00",
   "fb5309b4254af486": "2026-10-30T17:10:57.551050+00:00",
   "1b1accd6d9e9729e": "2026-10-30T17:15:57.527913+00:00",
-  "6219eb7ceac1e324": "2026-10-30T17:20:57.522990+00:00"
+  "6219eb7ceac1e324": "2026-10-30T17:20:57.522990+00:00",
+  "5db41524081c86e6": "2026-10-30T17:25:57.587205+00:00"
  },
  "recent": [
-  {
-   "title": "Ормуз выставил счет // Потребители переплатили за топливо полтриллиона долларов",
-   "link": "https://www.kommersant.ru/doc/9062128",
-   "sources": [
-    "Kommersant"
-   ],
-   "score": 4,
-   "ts": "2026-10-27T17:23:42.980948+00:00",
-   "title_en": "Hormuz issued a bill // Consumers overpaid for fuel by half a trillion dollars",
-   "lead": "Подорожание бензина и дизельного топлива из-за конфликта на Ближнем Востоке обошлось потребителям 169 проанализированных стран в дополнительные $468 млрд (по $60 на каждого жителя) подсчитали аналитики CREA.",
-   "lead_en": "The rise in prices for gasoline and diesel fuel due to the conflict in the Middle East cost consumers in 169 countries analyzed an additional $468 billion ($60 per inhabitant), CREA analysts calculated.",
-   "tags": [
-    "dollar"
-   ]
-  },
   {
    "title": "Boeing shares plunge on slower-than-expected 737 production, weaker free cash flow outlook",
    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPNnZ1c1Q5Q2tSYnRpdnppV25UNEpNekRsVGhpbkdLVk95QjBkenF1Ni0tOFJFYThrcXlnYjhRbUJWMlo2WHlkLUIzNlJ5UUpoN1p3VUh3b1p5TlJlZHBpaENqVmY4RDZPVTFsRHhMZXJKQzhseUM1V2U4TjMySHdvNzZ1VE9MbnI4ajV1dklVemhwWFRrZmtYWF9qYUNjUTFLOVRMaGNVUG0wSDhHcEZMbXNjcWpHWGZqeUEzc3puMGZwd2FvVU93?oc=5",
@@ -12090,6 +12075,19 @@
    "tags": [
     "bonds"
    ]
+  },
+  {
+   "title": "COMMENTARY: Big Oil's spending caution speaks louder than its profits",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQNEpvcHduNHFiT3VhT2lnSkhCN2dMTkEyd00tWUw5OXZheGhWRW0zdEFhVmxkcl9tV1JkSDV5MEZxWG5DUEVsQW5MVTB4RFQtUVpoeUlfM09BWGtkWmRjLWlpQml1alR3UjlmZHY0anVwOHJ4UGxHcTF2cmVTRFFqRjAtRnVlcTUxX3hMZVVlYTRlemVPVkxibEdQSGZ5Q1ZWTkp4aDR1NnJ4aUxDRVNDSUxSS1V3eW5HRThnQmphQTA5ZnM?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T17:25:57.587205+00:00",
+   "title_ru": "КОММЕНТАРИЙ: Осторожность в расходах Большой Нефти говорит громче, чем ее прибыль",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -18781,10 +18779,10 @@
    "0001213900-26-114242",
    "0001193125-26-441076",
    "0001785595-26-000018",
-   "0001830165-26-000042",
    "0002097107-26-000005",
    "0001045957-26-000012",
    "0001956982-26-000007",
+   "0001830165-26-000042",
    "0001193125-26-441077"
   ],
   "errors": {
