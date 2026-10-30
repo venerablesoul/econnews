@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "43e5a57aaa490b41": "2026-10-27T11:13:09.326711+00:00",
   "c0d57585183229aa": "2026-10-27T11:18:09.282977+00:00",
   "0f74a9aa9d7f9aa7": "2026-10-27T11:18:09.282977+00:00",
   "22d7efabd70a945d": "2026-10-27T11:18:09.282977+00:00",
@@ -1138,21 +1137,11 @@
   "a40d64394e1aa2f8": "2026-10-30T10:59:40.314027+00:00",
   "816b77ca472dfec1": "2026-10-30T11:04:40.390015+00:00",
   "f7c020ef3dea170b": "2026-10-30T11:04:40.390015+00:00",
-  "a5b77a69f6e63586": "2026-10-30T11:09:40.367576+00:00"
+  "a5b77a69f6e63586": "2026-10-30T11:09:40.367576+00:00",
+  "2c45ee29dd17b271": "2026-10-30T11:14:40.412416+00:00",
+  "634ed43f793359ce": "2026-10-30T11:14:40.412416+00:00"
  },
  "recent": [
-  {
-   "title": "Pound May Have to Pay the Price for Britain’s Budget Restraint",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-27/pound-may-have-to-pay-the-price-for-britain-s-budget-restraint",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T11:13:09.326711+00:00",
-   "title_ru": "Фунту, возможно, придется заплатить цену за сдержанность британского бюджета",
-   "lead": "The pound’s resilience faces a test from Britain’s upcoming budget if the government’s spending restraint comes at the cost of slower economic growth.",
-   "lead_ru": "Устойчивость фунта подвергается испытанию со стороны предстоящего бюджета Великобритании, если ограничение расходов правительства происходит за счет замедления экономического роста."
-  },
   {
    "title": "Acts of God Meet Acts of AI in Private Equity’s New Debt Play",
    "link": "https://www.bloomberg.com/news/articles/2026-10-27/acts-of-god-meet-acts-of-ai-in-private-equity-s-new-debt-play",
@@ -12092,6 +12081,21 @@
    "score": 4,
    "ts": "2026-10-30T11:09:40.367576+00:00",
    "title_ru": "Индекс готовности к искусственному интеллекту (AIPI) - Индекс готовности к искусственному интеллекту"
+  },
+  {
+   "title": "AI could hit consumers’ ability to manage their debt. Here’s the trade.",
+   "link": "https://www.marketwatch.com/story/ai-could-hit-consumers-ability-to-manage-their-debt-heres-the-trade-43d1787e?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T11:14:40.412416+00:00",
+   "title_ru": "ИИ может повлиять на способность потребителей управлять своим долгом. Вот торговля.",
+   "lead": "If AI causes workers to lose their jobs then households face credit stress",
+   "lead_ru": "Если ИИ приведет к тому, что работники потеряют работу, домохозяйства столкнутся с кредитным стрессом",
+   "tags": [
+    "jobs"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
