@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "2bc1cf592e278a36": "2026-10-27T14:28:42.945299+00:00",
-  "ba80d70d1ae48f1e": "2026-10-27T14:28:42.945299+00:00",
   "8715604258485543": "2026-10-27T14:33:42.967540+00:00",
   "fa5d12bd906a75b9": "2026-10-27T14:33:42.967540+00:00",
   "09bb9c66f4c86a82": "2026-10-27T14:38:42.999436+00:00",
@@ -1124,20 +1122,6 @@
   "52c3e408752d84d7": "2026-10-30T14:20:10.587544+00:00"
  },
  "recent": [
-  {
-   "title": "Russia Ships Less Crude Even as Key Baltic Port’s Flows Rebound",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNdFFnWm9RNEktdmhjWVlZV3RTM0psZlZ4QVdQSjV2dk5BSWgzZDBKSGhiU1BaTjFiODE5NWt5V0JQcUhWS2p5RkZRVnJVWFVabnRhMW0wak8tWWc4eUVuaUQ2ZEhIMzJPNkVydEhHNG5wM25wSHBpdFNIZE4tbVFQV1JnYkhYazhtZjlVS3o4elZuallGLU5QZDB0eGNKbVNTSkJuQ0haZTNJU2EzcjI1ZmRB?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-27T14:28:42.945299+00:00",
-   "title_ru": "Россия отгружает меньше нефти, даже когда основные потоки Балтийского порта возвращаются",
-   "tags": [
-    "oil",
-    "Russia"
-   ]
-  },
   {
    "title": "JetBlue Earnings: Airline Outlook Worsens as Operating Loss Margin Drops",
    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPQmphVW9lVGQxcTNnaW1EazZETlhaM3RTYmtVc3FMSUpyQkRjYVlqR3kxWVhGRVQzWjlQNzhtVGJJM19VeTREa2hGNnlfSWM2aWZjRFZKUXRpWng2eWcwQlRFMUxaZUVSWWJPYmVIOXNITU9Uc2JHY0RMM1JmZVM3OWlqeGktSUF2WWswWHZPaExSUk1DTlgxWDJQZDVXMEczaVhvU0pwM1lROGc?oc=5",
@@ -18624,7 +18608,12 @@
    "sec": true
   },
   "checked": "2026-10-30T13:45:10.578588+00:00",
-  "sec_seen": [],
+  "sec_seen": [
+   "0001437749-26-034091",
+   "0001437749-26-034093",
+   "0001437749-26-034087",
+   "0001437749-26-034095"
+  ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
   }
