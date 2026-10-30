@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "6eb98343715c12f8": "2026-10-27T15:13:44.121973+00:00",
-  "b1677487220e2e4c": "2026-10-27T15:13:44.121973+00:00",
   "d5ec97d4a4f3253f": "2026-10-27T15:18:42.927308+00:00",
   "7b095fc344cbe6e7": "2026-10-27T15:23:43.081279+00:00",
   "d1906d0ea1028ade": "2026-10-27T15:28:43.020978+00:00",
@@ -1121,36 +1119,10 @@
   "a664ad024dba66cc": "2026-10-30T15:05:10.592421+00:00",
   "6e9eb0087c6c1a57": "2026-10-30T15:05:10.592421+00:00",
   "31505ecdd28b1641": "2026-10-30T15:10:10.809030+00:00",
-  "5fd6bd38458a51cc": "2026-10-30T15:10:10.809030+00:00"
+  "5fd6bd38458a51cc": "2026-10-30T15:10:10.809030+00:00",
+  "03add1b131295ee3": "2026-10-30T15:15:10.563816+00:00"
  },
  "recent": [
-  {
-   "title": "Britain issues costliest 5-year debt since 2008 before budget",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOLW1OUWtCMm9pOWNzYWNEdXRNODl2WE9rTWE5ZlRwM003ci1yLWhTRkhNZzFtU0Z0Y1REdDd2bURaX1dVYlEwN0x3T2pvLXNRS2lFRTVYR0NtVlA4bklNVnhPckl6Z09tNkxBY0Q2dXhNcDE5RWZUd1lUZnE4Qm9BeE04cE5oMkY1ejNDU29BekppNDdzcVppa2NrejhQVTIxSUdUUkRRUHh6dw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-27T15:13:44.121973+00:00",
-   "title_ru": "Британия выпустила самый дорогой пятилетний долг с 2008 года перед бюджетом"
-  },
-  {
-   "title": "Улюкаев оценил, вернется ли международный бизнес при отмене санкций",
-   "link": "https://www.rbc.ru/business/27/10/2026/6ae05b886060172ca811d3bb",
-   "sources": [
-    "RBC"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T15:13:44.121973+00:00",
-   "title_en": "Ulyukaev assessed whether international business will return if sanctions are lifted",
-   "lead": "Бывший министр финансов России считает, что для бизнеса важны гарантии безопасности, но в целом компании при принятии решений о возвращении будут ориентироваться на риски и доходность",
-   "lead_en": "The former Russian Finance Minister believes that security guarantees are important for business, but in general, companies will focus on risks and profitability when making decisions about returning",
-   "tags": [
-    "bonds",
-    "sanctions",
-    "Russia"
-   ]
-  },
   {
    "title": "Czech central banker Seidler leaning towards November rate hike",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOc1BwcC13OF9GS1hPbmctT252NkpPU3J2bFBOTExDTmN3RnFqVWJYbjhpQ1dWTGNCaFJLUkhTNTh5NE1UaFFCZ2dBWDRiSlBjc2d3WmRwTlR5cENXX3NiTDJyZzQwTWQxbENsakd0ZmVEYjFGczItODVFVWdCcU9DQ3RQbWRHNldINjE0N1d6dXNHU1c4MjQ0ejhOanprNTJGbkt1dUtsNkplOWZwdVRtcFVib3g?oc=5",
@@ -11998,6 +11970,18 @@
    "score": 4,
    "ts": "2026-10-30T15:10:10.809030+00:00",
    "title_ru": "Outlast: показатели выживаемости государственных учреждений с 2000 по 2026 год"
+  },
+  {
+   "title": "Starbucks CEO Is Focused on Growth Plan, Fundamentals",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-30/starbucks-ceo-is-focused-on-growth-plan-fundamentals-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T15:15:10.563816+00:00",
+   "title_ru": "Генеральный директор Starbucks сосредоточен на плане роста и основах",
+   "lead": "Starbucks Corp. Chief Executive Officer Brian Niccol expects earnings growth to continue and he says the turnaround plan is ahead of schedule. He says becoming a multi-brand company is a possibility.",
+   "lead_ru": "Генеральный директор Starbucks Corp. Брайан Никкол ожидает, что рост прибыли продолжится, и говорит, что план оздоровления опережает график. Он говорит, что стать мультибрендовой компанией вполне возможно."
   }
  ],
  "last_digest": "2026-10-29",
@@ -14647,6 +14631,22 @@
    }
   ],
   "insiders": [
+   {
+    "src": "sec",
+    "id": "cd1ac31895a412b7",
+    "ticker": "WRLD",
+    "company": "WORLD ACCEPTANCE CORP",
+    "who": "Ken R Jr Bramlett",
+    "role": "Director",
+    "type": "sell",
+    "value": 671875,
+    "shares": 3797,
+    "price": 176.95,
+    "plan": false,
+    "date": "2026-10-29",
+    "disclosed": "2026-10-30",
+    "link": "https://www.sec.gov/Archives/edgar/data/1255007/000125500726000002/0001255007-26-000002-index.htm"
+   },
    {
     "src": "sec",
     "id": "6393e44b345ae8aa",
@@ -18630,22 +18630,6 @@
     "date": "2026-10-21",
     "disclosed": "2026-10-23",
     "link": "https://www.sec.gov/Archives/edgar/data/1875168/000162828026067077/0001628280-26-067077-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "0e38b7ee8c9c5780",
-    "ticker": "HOOD",
-    "company": "Robinhood Markets, Inc.",
-    "who": "Baiju Bhatt",
-    "role": "Director",
-    "type": "sell",
-    "value": 5162452,
-    "shares": 50912,
-    "price": 101.4,
-    "plan": true,
-    "date": "2026-10-21",
-    "disclosed": "2026-10-23",
-    "link": "https://www.sec.gov/Archives/edgar/data/1870914/000187091426000029/0001870914-26-000029-index.htm"
    }
   ],
   "docs": {
@@ -18685,7 +18669,10 @@
    "sec": true
   },
   "checked": "2026-10-30T14:45:10.584224+00:00",
-  "sec_seen": [],
+  "sec_seen": [
+   "0000726854-26-000192",
+   "0001255007-26-000002"
+  ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
   }
