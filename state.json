@@ -1138,7 +1138,9 @@
   "75f4fda082ce649e": "2026-10-30T19:15:57.449787+00:00",
   "55c927a9c2721998": "2026-10-30T19:25:57.448317+00:00",
   "8d0386ce6a869e3b": "2026-10-30T19:35:57.362130+00:00",
-  "9bd14b503fcad369": "2026-10-30T19:45:57.448462+00:00"
+  "9bd14b503fcad369": "2026-10-30T19:45:57.448462+00:00",
+  "83583db568662751": "2026-10-30T19:50:57.310337+00:00",
+  "4efb54a302f00cce": "2026-10-30T19:50:57.310337+00:00"
  },
  "recent": [
   {
@@ -12150,6 +12152,34 @@
     "Fed",
     "rates"
    ]
+  },
+  {
+   "title": "Canadian dollar extends monthly gain as higher oil prices raise inflation risk",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOX1pUUGVTZUNPbllLVm9EbGdSbkxsUUpYZUo4bXFvYjRnaDlMNnJiYzNsZkRERnJjc0JhWGt2WTYtY2JzeEZxY1MwdEVTbXJEaFhlSERnaUhabXVCTWpSaE9PSkRwdVVMT0NkWE96ZDdLNV9TbU5KVGlqQ0JrRWNXWXAzUl85WHVuMEFQb2JiWnE3aHp0aDhPdkwzeDZleGg1d2VKc3h2d1h6LTEyckdoMURhaU4zSV82TE1YVw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 10,
+   "ts": "2026-10-30T19:50:57.310337+00:00",
+   "title_ru": "Канадский доллар продолжает расти ежемесячно, поскольку более высокие цены на нефть повышают риск инфляции",
+   "tags": [
+    "inflation",
+    "oil",
+    "dollar"
+   ]
+  },
+  {
+   "title": "Pound stands tall as dollar, euro wilt",
+   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOdjkwT0Q2STZxeU5kb3pvNWpQdTFuMVowY0ptVzR4ODhJOWlEdWZKYUxrbU5sSHlOaTFRSEpZbTE0cmJGT3pub21UaE50NWdVOXFSd2g3Rlloem41bFJEY1p1dDJybENzRzRyVm55a1BBa0tDbi1Mdm5pRVY2TURqblJTYkpSZw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-30T19:50:57.310337+00:00",
+   "title_ru": "Фунт растет, как доллар, евро слабеет",
+   "tags": [
+    "dollar"
+   ]
   }
  ],
  "last_digest": "2026-10-30",
@@ -18907,9 +18937,9 @@
   },
   "checked": "2026-10-30T18:55:57.351368+00:00",
   "sec_seen": [
-   "0001697316-26-000014",
-   "0001654954-26-009303",
    "0001031203-26-000149",
+   "0001654954-26-009303",
+   "0001697316-26-000014",
    "0000711377-26-000043"
   ],
   "errors": {
