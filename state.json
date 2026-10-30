@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "f3d8b15cb1220a5b": "2026-10-27T12:48:43.018347+00:00",
-  "43d34b1256fceaf1": "2026-10-27T12:48:43.018347+00:00",
   "67de6fb5a45ef896": "2026-10-27T12:53:43.018922+00:00",
   "82ab5bbebbecf866": "2026-10-27T13:03:43.001384+00:00",
   "268abdf81ba4186b": "2026-10-27T13:08:42.959876+00:00",
@@ -1124,36 +1122,10 @@
   "e613c8251895b464": "2026-10-30T12:40:10.533250+00:00",
   "928226907b5963dd": "2026-10-30T12:45:10.499097+00:00",
   "ef2aa5015ac37fa3": "2026-10-30T12:45:10.499097+00:00",
-  "2b70ae64cc4d02e3": "2026-10-30T12:45:10.499097+00:00"
+  "2b70ae64cc4d02e3": "2026-10-30T12:45:10.499097+00:00",
+  "6cec15d7f7a5897c": "2026-10-30T12:50:10.564719+00:00"
  },
  "recent": [
-  {
-   "title": "French consumer confidence hits a 2013 low in October amid protests",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNUU5lTjItazhkMENWeGlZWkl5SEdxZzdjYlE2V3g1S0FnMHpXeGVnWFBWaXJBcWRtR1E4VXFGQk5Zd29iVkRXd2hLYU1reWJ2LXRpY3pMd3BLWUtyeGl1RV9jNEJyMnpiZThPV3NyUV9tVjRDSDBRNDM1ODJtRF9iR1NnNTItbGh2WldydnpUdXUtc3g4TUV1MktudXVrc0VwTS1TQW5uZXZSRmc?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T12:48:43.018347+00:00",
-   "title_ru": "Французское потребительское доверие в октябре достигло минимума 2013 года на фоне протестов"
-  },
-  {
-   "title": "Путин назвал условия для стабилизации мирового газового рынка",
-   "link": "https://www.rbc.ru/rbcfreenews/6ae097753c0647b172c10352",
-   "sources": [
-    "RBC"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T12:48:43.018347+00:00",
-   "title_en": "Putin called the conditions for stabilizing the global gas market",
-   "lead": "Президент России Владимир Путин заявил о необходимости прекращения продолжающихся конфликтов и снятия санкций для стабилизации мирового газового рынка.",
-   "lead_en": "Russian President Vladimir Putin stated the need to end ongoing conflicts and lift sanctions to stabilize the global gas market.",
-   "tags": [
-    "gas",
-    "sanctions",
-    "Russia"
-   ]
-  },
   {
    "title": "Citi, BCA downgrade Brazilian assets after Lula comeback",
    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQNURnSldLU1dyMGswcnFnbHd5d3pLQV80d1FXM2Q4OEtQM1o2NU04R2dnTk9kdFJQeXRWNDN4UENUT3pxZXpjX0J3X1hJWi13aDRPOVlDRkVWR3V1bW5RUkpta0pEQnBEeFZHUVdzMmItYThQQ3pxQ1pCQmJILU92enZYV000Y0xtYnNZS3pfMGtPRlFheDAtWGRHUmtJbm9rUkh5ZXFiOVBidw?oc=5",
@@ -11979,6 +11951,19 @@
    "tags": [
     "ECB"
    ]
+  },
+  {
+   "title": "UAE shares decline on weak earnings and regional tensions",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQNVAxeVFhNDJWMV80WVNnYXBENEpxeElXU0JvWFdVeExYc0pCXzJCTVUzc1V1NWhZT0szQ1FBODRkN18zdGRzYl9mMzRXR0EyWEoxMGJSUVgwaUFlcnowVUMxbmJxMllERzhYUmg0OHlibXM4OVRZeGN1RVRydFNWc0ZodnZnRVRMc3JkY3d0cG84emNPNUdsSlIwNEVwWFhDd0F5eGNPUQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-10-30T12:50:10.564719+00:00",
+   "title_ru": "Доли ОАЭ снижаются на фоне слабых доходов и региональной напряженности",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -18687,9 +18672,7 @@
    "0001628280-26-068403",
    "0001628280-26-068420",
    "0000711377-26-000036",
-   "0001646649-26-000040",
    "0001888543-26-000002",
-   "0001646382-26-000026",
    "0001628280-26-068416",
    "0001628280-26-068401",
    "0001628280-26-068397",
