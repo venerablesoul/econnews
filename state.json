@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "1db7452a004fa418": "2026-10-27T17:44:41.181968+00:00",
   "c3fdae2cf38eebcb": "2026-10-27T17:54:40.885096+00:00",
   "597b360868acb5b0": "2026-10-27T17:59:41.131163+00:00",
   "477e7d5675a48398": "2026-10-27T17:59:41.131163+00:00",
@@ -1136,22 +1135,11 @@
   "8502f06905da9743": "2026-10-30T17:30:57.413191+00:00",
   "006348404d2b5446": "2026-10-30T17:30:57.413191+00:00",
   "fd35a26dd9755638": "2026-10-30T17:35:57.462126+00:00",
-  "271223aa6852fbb2": "2026-10-30T17:35:57.462126+00:00"
+  "271223aa6852fbb2": "2026-10-30T17:35:57.462126+00:00",
+  "416d4a5c586eccae": "2026-10-30T17:45:57.460286+00:00",
+  "6cc762211783e8cd": "2026-10-30T17:45:57.460286+00:00"
  },
  "recent": [
-  {
-   "title": "Boeing shares plunge on slower-than-expected 737 production, weaker free cash flow outlook",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPNnZ1c1Q5Q2tSYnRpdnppV25UNEpNekRsVGhpbkdLVk95QjBkenF1Ni0tOFJFYThrcXlnYjhRbUJWMlo2WHlkLUIzNlJ5UUpoN1p3VUh3b1p5TlJlZHBpaENqVmY4RDZPVTFsRHhMZXJKQzhseUM1V2U4TjMySHdvNzZ1VE9MbnI4ajV1dklVemhwWFRrZmtYWF9qYUNjUTFLOVRMaGNVUG0wSDhHcEZMbXNjcWpHWGZqeUEzc3puMGZwd2FvVU93?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T17:44:41.181968+00:00",
-   "title_ru": "Акции Boeing упали из-за более медленного, чем ожидалось, производства 737 и более слабых прогнозов по свободному денежному потоку",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Brazil's markets recover some ground after selloff; minister vows fiscal discipline",
    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOMXExT19UeVJNZFFadkVlQ3A1WXBnSnFqR1RfVEF4N3VqcmNUdUMtMF9SRS1DWUlFSEFDZnBJNzVMNUltbmVaQVg1NkJWWWJvTDdSVW1JZzhybGJiX0xGbklmSTZnUTFESmNoRXc1VGJELXRYNi1tc092eE4xYlA3QXF5VmRmdWNzdU9ROWs2dU1ZNjcycnR0LTNvNzZ4TzIwOTUyWC1BYnZVMTFDdC1wUFpRd0xPYVc2ODM3UHVR?oc=5",
@@ -12128,6 +12116,37 @@
    ],
    "score": 1,
    "ts": "2026-10-30T17:35:57.462126+00:00"
+  },
+  {
+   "title": "Fed’s Logan Sees Two More Hikes, But Says Pace Can Be Gradual",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/fed-s-logan-sees-two-more-hikes-but-says-pace-can-be-gradual",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-30T17:45:57.460286+00:00",
+   "title_ru": "Логан из ФРС видит еще два повышения, но говорит, что темп может быть постепенным",
+   "lead": "Federal Reserve Bank of Dallas President Lorie Logan said she continues to see the need for at least two more quarter-percentage-point interest-rate hikes, but that the US central bank can move gradually to help households…",
+   "lead_ru": "Президент Федерального резервного банка Далласа Лори Логан заявила, что продолжает видеть необходимость как минимум еще двух повышений процентных ставок на четверть процентного пункта, но что центральный банк США может постепенно двигаться, чтобы помочь домохозяйствам...",
+   "tags": [
+    "Fed",
+    "rates"
+   ]
+  },
+  {
+   "title": "American workers are finding their take-home pay isn’t keeping up with inflation, with their wallets ‘stretched thinner and thinner’",
+   "link": "https://www.marketwatch.com/story/american-workers-are-finding-their-take-home-pay-isnt-keeping-up-with-inflation-with-their-wallets-stretching-thinner-and-thinner-6a1af690?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T17:45:57.460286+00:00",
+   "title_ru": "Американские рабочие обнаруживают, что их заработная плата не поспевает за инфляцией, а их кошельки «растягиваются все тоньше и тоньше»",
+   "lead": "Worker compensation grows slower than inflation for second straight quarter",
+   "lead_ru": "Компенсация работникам растет медленнее, чем инфляция, второй квартал подряд",
+   "tags": [
+    "inflation"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -14808,6 +14827,22 @@
     "date": "2026-10-29",
     "disclosed": "2026-10-30",
     "link": "https://www.sec.gov/Archives/edgar/data/1964493/000196449326000010/0001964493-26-000010-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "0738928aa8823bc0",
+    "ticker": "VTMX",
+    "company": "Vesta Real Estate Corporation, S.A.B. de C.V.",
+    "who": "Carranza Lorenzo Dominique Berho",
+    "role": "CEO",
+    "type": "sell",
+    "value": 1277500,
+    "shares": 350000,
+    "price": 3.65,
+    "plan": false,
+    "date": "2026-10-29",
+    "disclosed": "2026-10-30",
+    "link": "https://www.sec.gov/Archives/edgar/data/2116974/000211697426000005/0002116974-26-000005-index.htm"
    },
    {
     "src": "sec",
@@ -18760,22 +18795,6 @@
     "date": "2026-10-21",
     "disclosed": "2026-10-23",
     "link": "https://www.sec.gov/Archives/edgar/data/2093669/000101297526000981/0001012975-26-000981-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "c44887fd05f9b4d2",
-    "ticker": "RENT",
-    "company": "Rent the Runway, Inc.",
-    "who": "Chs Us Investments Llc et al.",
-    "role": "10% owner",
-    "type": "buy",
-    "value": 1626770,
-    "shares": 458245,
-    "price": 3.55,
-    "plan": false,
-    "date": "2026-10-21",
-    "disclosed": "2026-10-23",
-    "link": "https://www.sec.gov/Archives/edgar/data/2094454/000101297526000980/0001012975-26-000980-index.htm"
    }
   ],
   "docs": {
@@ -18818,7 +18837,7 @@
   "sec_seen": [
    "0001801785-26-000008",
    "0001785595-26-000018",
-   "0002097107-26-000005",
+   "0002116974-26-000005",
    "0001045957-26-000012",
    "0001956982-26-000007",
    "0001830165-26-000042"
