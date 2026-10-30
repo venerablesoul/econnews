@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "5d84ad6dfa51098a": "2026-10-27T10:18:09.329364+00:00",
   "8ce1a1ad86acab2a": "2026-10-27T10:48:09.247293+00:00",
   "b8c4260386d77fec": "2026-10-27T10:53:09.255229+00:00",
   "5f10190e782e392a": "2026-10-27T10:53:09.255229+00:00",
@@ -1126,24 +1125,12 @@
   "95f4e7e3effd317e": "2026-10-30T10:04:40.356431+00:00",
   "56040798c90eba9d": "2026-10-30T10:14:40.352605+00:00",
   "f08582e7736f69bd": "2026-10-30T10:14:40.352605+00:00",
-  "09b4a840305b199a": "2026-10-30T10:14:40.352605+00:00"
+  "09b4a840305b199a": "2026-10-30T10:14:40.352605+00:00",
+  "5ad55d0cc3aed1be": "2026-10-30T10:19:40.357467+00:00",
+  "409cd9e8df26879b": "2026-10-30T10:24:40.332096+00:00",
+  "b4ccdaf88867b00d": "2026-10-30T10:24:40.332096+00:00"
  },
  "recent": [
-  {
-   "title": "Malaysian Palm Oil Glut Swamps Storage in Top-Producing State",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-27/malaysian-palm-oil-glut-swamps-storage-in-top-producing-state",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T10:18:09.329364+00:00",
-   "title_ru": "Избыток пальмового масла в Малайзии приводит к затоплению складов в штате с самым высоким уровнем добычи",
-   "lead": "Malaysia’s swelling palm oil inventories are straining storage capacity in the country’s top-producing state, as a bumper harvest piles pressure on the government to clear excess supplies.",
-   "lead_ru": "Растущие запасы пальмового масла в Малайзии перегружают возможности хранения в крупнейшем производящем штате страны, поскольку небывалый урожай заставляет правительство избавиться от излишних поставок.",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "Bank of Canada Rate Hike Expected as Oil Prices at $115 Fuel Inflation Fears",
    "link": "https://www.bloomberg.com/news/articles/2026-10-27/bank-of-canada-rate-hike-expected-as-oil-prices-at-115-fuel-inflation-fears",
@@ -11960,6 +11947,22 @@
    "score": 3,
    "ts": "2026-10-30T10:14:40.352605+00:00",
    "title_ru": "Семь губернаторов соревнуются, чтобы посмотреть, как избиратели взвешивают Трампа и экономику"
+  },
+  {
+   "title": "Short Sellers Target UK Water Stocks as Political Risk Rises",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-30/short-sellers-target-uk-water-stocks-as-political-risk-rises",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-30T10:24:40.332096+00:00",
+   "title_ru": "Короткие продавцы нацеливаются на запасы воды в Великобритании на фоне роста политических рисков",
+   "lead": "Traders are building up short positions in UK water stocks as the threat of nationalization and higher interest rates are seen to weigh on the sector.",
+   "lead_ru": "Трейдеры наращивают короткие позиции в акциях водного сектора Великобритании, поскольку угроза национализации и более высокие процентные ставки, как считается, оказывают давление на сектор.",
+   "tags": [
+    "rates",
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -18662,14 +18665,16 @@
    "0001646382-26-000026",
    "0001437749-26-034036",
    "0001193125-26-439152",
-   "0001437749-26-034027",
    "0001437749-26-034038",
    "0001493152-26-049321",
    "0001225208-26-008557",
+   "0002066642-26-000004",
    "0001646649-26-000040",
+   "0002054266-26-000008",
    "0001213900-26-113987",
    "0001697362-26-000020",
-   "0001437749-26-034030"
+   "0001437749-26-034030",
+   "0001341767-26-000008"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
