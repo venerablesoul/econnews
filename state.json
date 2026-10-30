@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "62acc6ea8e43d507": "2026-10-27T05:32:36.918660+00:00",
-  "fa795c44a1b63929": "2026-10-27T05:32:36.918660+00:00",
-  "3d1cf30e3aa3295c": "2026-10-27T05:32:36.918660+00:00",
-  "6d800311fc9ff836": "2026-10-27T05:32:36.918660+00:00",
   "fb53c71e7e78dc84": "2026-10-27T05:37:36.849426+00:00",
   "16af0e7474b27b73": "2026-10-27T05:37:36.849426+00:00",
   "fdc12daf2eb13b2e": "2026-10-27T05:37:36.849426+00:00",
@@ -1118,55 +1114,14 @@
   "9296c2212bf1f97f": "2026-10-30T05:19:13.620204+00:00",
   "9e62c5c63f9fd0ad": "2026-10-30T05:24:13.561336+00:00",
   "d91b25463d2a048d": "2026-10-30T05:29:13.604082+00:00",
-  "f073971f422922ef": "2026-10-30T05:29:13.604082+00:00"
+  "f073971f422922ef": "2026-10-30T05:29:13.604082+00:00",
+  "61d95bbdc27bf05e": "2026-10-30T05:34:13.604250+00:00",
+  "7b0decd923991952": "2026-10-30T05:34:13.604250+00:00",
+  "c9d0c89212f5c7f5": "2026-10-30T05:34:13.604250+00:00",
+  "6b30108cd8df2218": "2026-10-30T05:34:13.604250+00:00",
+  "06fe5200083e6e17": "2026-10-30T05:34:13.604250+00:00"
  },
  "recent": [
-  {
-   "title": "Investors expect Brazilian stocks to fall after Lula re-elected",
-   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5WcU8tSzBPT2ZkclRpNDdCWGNsVWpPMFFwVnhBTUJBd0VRUnFYemdnajdPM2tqZnNraWExc2FaZXJ5V2xCaUJVaXVLMUFIQkljVVpZMGVCMG1IRGo4Z3NDMDB5NTE5bEE?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-27T05:32:36.918660+00:00",
-   "title_ru": "Инвесторы ожидают падения бразильских акций после переизбрания Лулы",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "How rising building costs hold back Britain's growth",
-   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5sMzVheW9IUlRiYUo4blpyZXVSdjJHcmMwYWxINWdPZzNhd1NVeU1ZNDc0ZEdISlVUSHA1SmhidndFNHhVMjI2Q00yNG84X1RoSXV5SkNWdmMwa3JvbHhBdnktZE1NWEE?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T05:32:36.918660+00:00",
-   "title_ru": "Как рост стоимости строительства сдерживает рост Великобритании"
-  },
-  {
-   "title": "US stocks end higher as Anthropic's IPO filing buoys AI stocks",
-   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9Rc1dUclA2M1BONXVBekQtQUNPblBuWl9IYktac3RJWDdWeE9yQ2ZkMzRoejNzNFFnT2R5ZXBpYkRvQm10YU9RSTVkWWtoUU5jZWxaSUs2S0JTT29vYmRlbXJXdTVaQTQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T05:32:36.918660+00:00",
-   "title_ru": "Акции США закрылись ростом, поскольку подача заявки Anthropic на IPO поддерживает акции AI",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "Anthropic's IPO filing: mounting risks, steep losses and staggering growth",
-   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBtU2JRZlNkRFNSRjBleEhEcWtic0dZY2I5M0ZHUE96S1l4ODktUExRUzRGbmQ1RFMwOU1pQVhpcU5YZlBINi1GVFJoQzhfdmVvSTlKMTE0U0EzckJfdFdLNm50b1ZnbFE?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T05:32:36.918660+00:00",
-   "title_ru": "Подача заявки Anthropic на IPO: растущие риски, огромные убытки и ошеломляющий рост"
-  },
   {
    "title": "UK’s tariffs on Chinese diggers challenged by Caterpillar",
    "link": "https://www.ft.com/content/71e415ce-87e9-4c29-bce2-b7f3803ac6b9?syn-25a6b1a6=1",
@@ -11869,6 +11824,76 @@
    "score": 4,
    "ts": "2026-10-30T05:19:13.620204+00:00",
    "title_ru": "Давление ЕС на торговлю «золотым паспортом» Антигуа угрожает бюджетной подушке"
+  },
+  {
+   "title": "Egypt's central bank makes first rate hike since March 2024",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQaWs3LWxWaXNJdzQ2aGROTlV4a1JtdjBpX21DZmxsYWQ0MF82eWk4b0VxeUVoamFGb3Y4SVBCQlY5ZTltM2t5ajYwYUJ0WlJpeDEtSkY2VFFUN3ZvQ2U1MEQyeWRfMHluY2NMNHlmaTFhWVN5cE1xYWFaazdPeDB0M1ptTEFQNTYxbG9hXzg4dG5lWDVINEJwWWFmbVdEcjdqcTVXOXl0UTVRR1U?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-10-30T05:34:13.604250+00:00",
+   "title_ru": "Центральный банк Египта впервые с марта 2024 года повысил ставку",
+   "tags": [
+    "rates"
+   ]
+  },
+  {
+   "title": "Christine Lagarde: the unlikely central banker who steered Europe through multiple crises",
+   "link": "https://www.ft.com/content/423419b6-a39e-4870-adf5-c59cf9cec8c8?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 5,
+   "ts": "2026-10-30T05:34:13.604250+00:00",
+   "title_ru": "Кристин Лагард: маловероятный центральный банкир, который провел Европу через многочисленные кризисы",
+   "lead": "The ECB president will depart before her eight-year term expires in October 2027",
+   "lead_ru": "Президент ЕЦБ уйдет в отставку до истечения восьмилетнего срока в октябре 2027 года",
+   "tags": [
+    "ECB"
+   ]
+  },
+  {
+   "title": "Jio Keeps Ambani Magic Alive as Investors Await Earnings",
+   "link": "https://www.bloomberg.com/news/videos/2026-10-30/jio-keeps-ambani-magic-alive-as-investors-await-earnings-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-30T05:34:13.604250+00:00",
+   "title_ru": "Jio поддерживает магию Амбани, пока инвесторы ждут прибыли",
+   "lead": "Jio Platforms’ strong post-listing performance may continue in the coming weeks, supported by limited competition in India’s telecom market. Investors now look for cues from the company's second-quarter earnings on Friday.",
+   "lead_ru": "Высокая производительность Jio Platforms после листинга может продолжиться в ближайшие недели, чему способствует ограниченная конкуренция на телекоммуникационном рынке Индии. Инвесторы теперь ищут подсказки от прибыли компании за второй квартал в пятницу."
+  },
+  {
+   "title": "FirstFT: The high-stakes AI mega-project behind Nscale’s $35bn IPO",
+   "link": "https://www.ft.com/content/1e319b52-f31f-4dde-90b7-e01e2f199817?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T05:34:13.604250+00:00",
+   "title_ru": "FirstFT: мегапроект с высокими ставками на ИИ, стоящий за IPO Nscale на $ 35 млрд",
+   "lead": "Also in today’s newsletter: tech sell-off and $6.3bn Binance hack",
+   "lead_ru": "Также в сегодняшнем информационном бюллетене: распродажа технологий и взлом Binance на $ 6,3 млрд",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "Why Trump’s tech dreams are quietly crumbling",
+   "link": "https://www.ft.com/content/9cc8d4ce-22ec-45d7-8b74-71a1dfe9abcc?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T05:34:13.604250+00:00",
+   "title_ru": "Почему технологические мечты Трампа тихо рушатся",
+   "lead": "Tariffs, immigration restrictions and skilled labour shortages make it hard for the US to boost production",
+   "lead_ru": "Тарифы, иммиграционные ограничения и нехватка квалифицированной рабочей силы затрудняют для США увеличение производства",
+   "tags": [
+    "tariffs"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -18555,11 +18580,11 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-30T04:29:13.717097+00:00",
+  "checked": "2026-10-30T05:34:13.604250+00:00",
   "sec_seen": [
    "0001437749-26-034036",
-   "0001437749-26-034032",
    "0001437749-26-034038",
+   "0001437749-26-034032",
    "0001895111-26-000021",
    "0001628280-26-068337",
    "0001437749-26-034042",
@@ -18570,8 +18595,8 @@
    "0001437749-26-034035",
    "0001140361-26-041201",
    "0001711968-26-000027",
-   "0001040470-26-000323",
    "0001437749-26-034040",
+   "0001040470-26-000323",
    "0000923738-26-000048",
    "0001193125-26-438480",
    "0000944075-26-000078",
