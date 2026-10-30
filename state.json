@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "d7d4010037672e22": "2026-10-27T20:39:44.568481+00:00",
-  "e9beba98e362da41": "2026-10-27T20:44:45.583234+00:00",
-  "6c60aef9d310b278": "2026-10-27T20:44:45.583234+00:00",
-  "e58bc47889babc84": "2026-10-27T20:44:45.583234+00:00",
-  "26d5657902248e3b": "2026-10-27T20:44:45.583234+00:00",
   "c3e0fc8147548d9e": "2026-10-27T20:49:44.619189+00:00",
   "820479e5784044e0": "2026-10-27T20:59:44.670893+00:00",
   "68ad19a88905bc90": "2026-10-27T21:04:44.700422+00:00",
@@ -1142,43 +1137,6 @@
   "b70d639884423d98": "2026-10-30T20:35:57.547977+00:00"
  },
  "recent": [
-  {
-   "title": "Bullish Treasury Bets Face Reversal Risk From Hawkish Fed",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-27/bullish-treasury-bets-face-reversal-risk-from-hawkish-fed",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-27T20:39:44.568481+00:00",
-   "title_ru": "Бычьи ставки на казначейские облигации сталкиваются с риском разворота со стороны Ястребиного ФРС",
-   "lead": "Bullish bets in US Treasuries are vulnerable to a sharp reversal if the Federal Reserve takes a more aggressive stance at its upcoming monetary policy meeting.",
-   "lead_ru": "Бычьи ставки на казначейские облигации США уязвимы перед резким разворотом, если Федеральная резервная система займет более агрессивную позицию на предстоящем заседании по денежно-кредитной политике.",
-   "tags": [
-    "Fed",
-    "rates",
-    "bonds"
-   ]
-  },
-  {
-   "title": "- Bureau of Labor Statistics (.gov)",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQZG1GMmRMdzJjS3ZVVVJ5S0llSkdGOGRpQU1OTlRGRUg0MkFqbVREandDelRiS0g4cEtkdUlsa2NJU2g3d2FXSFpQN0pTbExyVkotSW1lNnd3M2JqM2p5TEFMX0ZfVWp2WmFNY0JRLWsyc0tBWEVOeWtWMGlLRVJ4dDhEVUpoemotSlBJTnZWRmY5emFuZzZrcE12a2U?oc=5",
-   "sources": [
-    "US Labor Statistics (BLS)"
-   ],
-   "score": 4,
-   "ts": "2026-10-27T20:44:45.583234+00:00",
-   "title_ru": "- Бюро статистики труда (.gov)"
-  },
-  {
-   "title": "AI financing driving private credit growth as refinancing risks rise, Moody’s says",
-   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPMlFHLTNZbVhfQjRZSmFmT1N5S2s2UTNsUkIzRnF0eFNXbG1GTTlURnZsU2ZDUGJMNVhGX2tPVzBrdkpSR1Y2VHBxZlFfMUdHcnJoTWNjNVlLMFBkNzRja1RaVVRaWFBSaUU5ak1LN3lxUDBqRE45UVRBVm9USHk0SzZ3WG1pc0tXRDgwVU1JenB2cmFDN2pyb3d1U0tZQmlqNjA2UzltdmZFaHFLNWZxV0pITWlVV1U5enM5SGtNWjJfdEhQQVljbG9lcnFLZw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T20:44:45.583234+00:00",
-   "title_ru": "Финансирование с помощью ИИ стимулирует рост частного кредитования по мере роста рисков рефинансирования, говорит Moody’s"
-  },
   {
    "title": "IMF Reaches Staff-Level Agreement on the Third Review under Argentina’s Extended Fund Facility Arrangement",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQQ3lTUUhPc0ZqMGlZZjVSSjRVTWwyWThLUFpOQ2ZYNkxpZE90T1g2QXFJa210ODJHVTVBYTVwaW55U19IazZySDhhcnNJcGhiNEpmbnF5WkxYWlU2dnIySUY1c055Y0Fob2NEOG10SEtqQ0taSjlZZHl3UnV5ZktSSW10bW5lT1dJeG9CWmJ0X2pMekJqMDZveHlxYVRXckRleWQxT3FoM2hIMEZCYXZqX1hCS2g?oc=5",
@@ -14870,6 +14828,22 @@
    },
    {
     "src": "sec",
+    "id": "02ce8f3c9c376a98",
+    "ticker": "FDX",
+    "company": "FEDEX CORP",
+    "who": "Tracy B Brightman",
+    "role": "EVP - Chief People Officer",
+    "type": "sell",
+    "value": 8427275,
+    "shares": 26611,
+    "price": 316.68,
+    "plan": false,
+    "date": "2026-10-30",
+    "disclosed": "2026-10-30",
+    "link": "https://www.sec.gov/Archives/edgar/data/1981585/000104891126000133/0001048911-26-000133-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "cd1ac31895a412b7",
     "ticker": "WRLD",
     "company": "WORLD ACCEPTANCE CORP",
@@ -15267,6 +15241,22 @@
     "date": "2026-10-28",
     "disclosed": "2026-10-30",
     "link": "https://www.sec.gov/Archives/edgar/data/1783984/000156155026000326/0001561550-26-000326-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "fd2b99c69a969a3f",
+    "ticker": "TMO",
+    "company": "THERMO FISHER SCIENTIFIC INC.",
+    "who": "Lisa P. Britt",
+    "role": "Sr. VP and Chief HR Officer",
+    "type": "sell",
+    "value": 1999960,
+    "shares": 2831,
+    "price": 706.45,
+    "plan": false,
+    "date": "2026-10-28",
+    "disclosed": "2026-10-30",
+    "link": "https://www.sec.gov/Archives/edgar/data/1676320/000009774526000182/0000097745-26-000182-index.htm"
    },
    {
     "src": "sec",
@@ -18819,38 +18809,6 @@
     "date": "2026-10-22",
     "disclosed": "2026-10-23",
     "link": "https://www.sec.gov/Archives/edgar/data/1595040/000088563926000186/0000885639-26-000186-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "aa0e395095c49c07",
-    "ticker": "MXF",
-    "company": "MEXICO EQUITY & INCOME FUND INC",
-    "who": "Saba Capital Management, L.p.",
-    "role": "10% owner",
-    "type": "buy",
-    "value": 40280,
-    "shares": 2000,
-    "price": 20.14,
-    "plan": false,
-    "date": "2026-10-22",
-    "disclosed": "2026-10-23",
-    "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000376/0001510281-26-000376-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "2877c36e30d12b4f",
-    "ticker": "TRV",
-    "company": "TRAVELERS COMPANIES, INC.",
-    "who": "David Donnay Rowland",
-    "role": "EVP & Co-Chief Invest. Officer",
-    "type": "sell",
-    "value": 2028103,
-    "shares": 5000,
-    "price": 405.62,
-    "plan": false,
-    "date": "2026-10-22",
-    "disclosed": "2026-10-23",
-    "link": "https://www.sec.gov/Archives/edgar/data/1865043/000008631226000187/0000086312-26-000187-index.htm"
    }
   ],
   "docs": {
@@ -18893,22 +18851,17 @@
   "checked": "2026-10-30T19:55:57.438817+00:00",
   "sec_seen": [
    "0001437749-26-034225",
+   "0001764013-26-000117",
    "0001561550-26-000326",
-   "0002115144-26-000014",
-   "0001193125-26-441748",
-   "0001697820-26-000009",
-   "0001437749-26-034222",
-   "0001437749-26-034223",
-   "0001628280-26-068593",
-   "0001437749-26-034221",
-   "0001437749-26-034220",
-   "0001106578-26-000175",
-   "0000036966-26-000193",
-   "0001193125-26-441749",
-   "0000097476-26-000178",
+   "0001437749-26-034228",
+   "0002083595-26-000012",
+   "0000097745-26-000182",
+   "0001674236-26-000026",
+   "0001437749-26-034229",
    "0001593156-26-000010",
    "0000939057-26-000283",
    "0001628280-26-068598",
+   "0001048911-26-000133",
    "0001437749-26-034224",
    "0001640081-26-000007"
   ],
