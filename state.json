@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "51511603c12b50bb": "2026-10-27T03:12:36.914268+00:00",
   "d268709fca5747c9": "2026-10-27T03:37:36.889633+00:00",
   "532d954e856135ac": "2026-10-27T03:42:36.865177+00:00",
   "82ad20da6aec1b86": "2026-10-27T03:57:36.849758+00:00",
@@ -1100,19 +1099,11 @@
   "dd167cde834919f2": "2026-10-30T02:59:13.630085+00:00",
   "afb0b63fa3a6539d": "2026-10-30T03:04:13.560704+00:00",
   "0e9e09f6a635d4be": "2026-10-30T03:09:13.559262+00:00",
-  "8b67c8a953a566cc": "2026-10-30T03:09:13.559262+00:00"
+  "8b67c8a953a566cc": "2026-10-30T03:09:13.559262+00:00",
+  "6b6651ca33c47f46": "2026-10-30T03:14:13.680765+00:00",
+  "a132b232f3d2b2e6": "2026-10-30T03:14:13.680765+00:00"
  },
  "recent": [
-  {
-   "title": "BlackRock’s Rieder Spent All Weekend Doing Deals in AI Debt Rush",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNYVJoVHlSX2EzYWtGbG44ZzhWSTdjUnc5ZWxpWmFmdzdGTzNQTVhZS3VwQjF6QWdpeGhRZDlySng4UERmbEhxbXBpM1BYdFhuVEJndmtGS1MtZnIxMkVILVBENDZDY1FBaEY4NmlLMmxHTmlaOXltR0FaMG1nODRod1JYNVhxRE9VeVFJZ0lMa0xYU2ptbVNiTVcxeFpla212aXhNUkVLUmxlTEVvRW15NGpxUkNYQQ?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-27T03:12:36.914268+00:00",
-   "title_ru": "Ридер из BlackRock провел все выходные, заключая сделки в долговой лихорадке ИИ"
-  },
   {
    "title": "Samsung Life Prices Record Dollar Bond as Investors Defy Turmoil",
    "link": "https://www.bloomberg.com/news/articles/2026-10-27/samsung-life-insurance-south-korea-coupon-note-debt-dollar-bond-sale",
@@ -11695,6 +11686,29 @@
    "title_ru": "Филиппинский экспорт растет самыми быстрыми темпами за пять лет на фоне слабого песо и бума искусственного интеллекта",
    "lead": "Philippine exports rose at their fastest pace in five years, bringing overseas sales to a new record on the back of global electronics demand and a weak peso.",
    "lead_ru": "Филиппинский экспорт рос самыми быстрыми темпами за пять лет, в результате чего зарубежные продажи достигли нового рекорда на фоне глобального спроса на электронику и слабого песо."
+  },
+  {
+   "title": "Big Tech’s $750 Billion AI Bet Collides With Slowing Core Growth",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOVkwxOE5CWnFlYlZmb25XSjRDMDhHbkJBUnpVb1pkV2N6QkR5cmk5RVFEeVV3Z3NBcS1LV0RBMWNmNE5nNmNzdWM5YUFYM29ScjBvVk1FT0E2M2ZBT1JhXzJyUXNOYUY0aHdrcGJ2TEZYX2lxcWctUTBXN1cxUjhWNzJzZ0JIS25ILWFpekdnS210M1ZOX19MQlg3UGpVcUdYclJXa0RuWXVzRldGQXhva2pOSjc?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T03:14:13.680765+00:00",
+   "title_ru": "Ставка ИИ Big Tech на 750 миллиардов $ сталкивается с замедлением роста ядра"
+  },
+  {
+   "title": "Oil rises on supply concerns as Houthis attack Saudi Arabia",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWE5IUkRJTVJvTFE5SUdOdFFCM2tVN1lKcDI3ci01cjlleVVuXzB1SjI0MDhuWkhwakZFSzl3SGNUZk9uUUYwdHNfMGJOUXExaW1RdmRRVy1Cd0tHb3RqblJCQWczeXdORDVKbVMxMGFrbnVMM3FCY2h5Xzl6T0ZoeTBtbGdnbW9jdWF6VEtqNi14ZnlFaVVpb0xZcHlGTDhtM0ZmY2RYZ2Q?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-30T03:14:13.680765+00:00",
+   "title_ru": "Нефть растет из-за проблем с поставками, поскольку хуситы атакуют Саудовскую Аравию",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-29",
@@ -18383,8 +18397,8 @@
   "checked": "2026-10-30T02:29:13.555612+00:00",
   "sec_seen": [
    "0001437749-26-034036",
-   "0001437749-26-034032",
    "0001437749-26-034038",
+   "0001437749-26-034032",
    "0001895111-26-000021",
    "0001628280-26-068337",
    "0001437749-26-034042",
@@ -18395,8 +18409,8 @@
    "0001437749-26-034035",
    "0001140361-26-041201",
    "0001711968-26-000027",
-   "0001040470-26-000323",
    "0001437749-26-034040",
+   "0001040470-26-000323",
    "0000923738-26-000048",
    "0001193125-26-438480",
    "0000944075-26-000078",
