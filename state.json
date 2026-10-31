@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "847a7abc2726921c": "2026-10-28T18:05:12.399949+00:00",
-  "5d417ac45712b820": "2026-10-28T18:05:12.399949+00:00",
-  "af5bd423337d45eb": "2026-10-28T18:05:12.399949+00:00",
-  "da6edf02f4ba0eb1": "2026-10-28T18:10:12.392623+00:00",
-  "5cadb2cc81fbb900": "2026-10-28T18:10:12.392623+00:00",
   "6cadc9241e38560e": "2026-10-28T18:15:12.391605+00:00",
   "ba904e5ae7ee148f": "2026-10-28T18:15:12.391605+00:00",
   "e3d3b12329d60c76": "2026-10-28T18:20:13.859813+00:00",
@@ -954,77 +949,6 @@
   "5dbc14cfcb2e591a": "2026-10-31T17:53:19.842574+00:00"
  },
  "recent": [
-  {
-   "title": "Federal Reserve issues FOMC statement",
-   "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
-   "sources": [
-    "Fed"
-   ],
-   "score": 8,
-   "ts": "2026-10-28T18:05:12.399949+00:00",
-   "title_ru": "Федеральная резервная система выпускает заявление FOMC",
-   "tags": [
-    "Fed"
-   ]
-  },
-  {
-   "title": "Fed Holds Rates, Says More Data Will Help Next Decision",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-28/fed-holds-rates-says-more-data-will-help-next-decision",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-28T18:05:12.399949+00:00",
-   "title_ru": "ФРС удерживает ставки, говорит, что больше данных поможет принять следующее решение",
-   "lead": "Federal Reserve officials left interest rates unchanged and reiterated their commitment to containing inflation, but without offering a clear signal they might raise rates at their next meeting in December.",
-   "lead_ru": "Представители Федеральной резервной системы оставили процентные ставки без изменений и подтвердили свою приверженность сдерживанию инфляции, но не дали четкого сигнала о том, что они могут повысить ставки на своем следующем заседании в декабре.",
-   "tags": [
-    "Fed",
-    "rates",
-    "inflation"
-   ]
-  },
-  {
-   "title": "Key Takeaways From Fed Decision to Hold Rates Steady",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-28/key-takeaways-from-fed-decision-to-hold-rates-steady",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-28T18:05:12.399949+00:00",
-   "title_ru": "Ключевые выводы из решения ФРС об удержании ставок на стабильном уровне",
-   "lead": "Here are key takeaways from the Federal Reserve’s interest-rate decision on Wednesday:",
-   "lead_ru": "Вот основные выводы из решения Федеральной резервной системы по процентной ставке в среду:",
-   "tags": [
-    "Fed",
-    "rates"
-   ]
-  },
-  {
-   "title": "Star Hedge Fund Trader Lemssouguer’s Woes at Arini Roil European Junk Bonds",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-28/star-hedge-fund-trader-lemssouguer-s-woes-at-arini-roil-european-junk-bonds",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T18:10:12.392623+00:00",
-   "title_ru": "Проблемы трейдера хедж-фонда Star Lemssouguer с европейскими бросовыми облигациями Arini Roil",
-   "lead": "For as long as Hamza Lemssouguer has traded high-yield debt, he’s been on the offensive, placing bets at a scale few in the cutthroat market dare to match.",
-   "lead_ru": "Пока Хамза Лемссугер торгует высокодоходными долгами, он находится в наступлении, делая ставки в масштабе, который немногие на беспощадном рынке осмеливаются сравнивать.",
-   "tags": [
-    "bonds"
-   ]
-  },
-  {
-   "title": "India markets regulator weighs domestic AI model for securities trading, chairman says",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQeXZ5eDY4d1U2WWVRVDFIbHJhc1ROWjVzVHZqSGZLZlg0RjJ4NTNCVTAyVHJBSFkwbXE1OHlqV2dhR2QtTTZULTF5SmFZd00waDhjTTFENTZldjhWYTE2ai1XNXpSeWJGdG5SQUdJdGFITk1aZWZabUcyUU1lUE5iNzQwcE1QMl81c1lqZ3czaWlUWkhaU3d2THBUbExjTmxxZlFvRkwyYldZX1N2eTdwUFVEQ0RCeDJKY3hIb082d0s5Zw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T18:10:12.392623+00:00",
-   "title_ru": "Индийский регулятор рынков взвешивает внутреннюю модель ИИ для торговли ценными бумагами, говорит председатель"
-  },
   {
    "title": "Lionsgate in Investor Talks for Rare Film Library-Backed Bonds",
    "link": "https://www.bloomberg.com/news/articles/2026-10-28/lionsgate-in-investor-talks-for-rare-film-library-backed-bonds",
