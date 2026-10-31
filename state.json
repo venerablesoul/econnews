@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "21c9d96e8a1ab0c3": "2026-10-28T14:01:22.836074+00:00",
-  "995784564b93905f": "2026-10-28T14:01:22.836074+00:00",
-  "51d3a2e361c8aec9": "2026-10-28T14:06:22.868540+00:00",
-  "9288766abdd5cd48": "2026-10-28T14:06:22.868540+00:00",
   "c4daf5e9827c705a": "2026-10-28T14:11:22.825103+00:00",
   "899fbc16799d5aba": "2026-10-28T14:11:22.825103+00:00",
   "e9dbb74b405d7181": "2026-10-28T14:11:22.825103+00:00",
@@ -1008,57 +1004,10 @@
   "3a82d2925901cd7a": "2026-10-31T13:07:46.123212+00:00",
   "48de6eff642c5a5b": "2026-10-31T13:17:46.086068+00:00",
   "d210b851b9ddb92c": "2026-10-31T13:27:46.153612+00:00",
-  "dff0e58445858b5c": "2026-10-31T13:57:46.144946+00:00"
+  "dff0e58445858b5c": "2026-10-31T13:57:46.144946+00:00",
+  "9630baa10b83a2ea": "2026-10-31T14:07:46.137040+00:00"
  },
  "recent": [
-  {
-   "title": "Гурьев призвал на уровне ООН отказаться от санкций против минудобрений",
-   "link": "https://www.rbc.ru/business/28/10/2026/6ae1ece035377df3a82619b3",
-   "sources": [
-    "RBC"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T14:01:22.836074+00:00",
-   "title_en": "Guryev called for the UN to lift sanctions against fertilizers.",
-   "lead": "Глава Российской ассоциации производителей удобрений Андрей Гурьев предложил не использовать их как политический инструмент. Ущерб, наносимый санкциями, уже сейчас угрожает глобальной продовольственной безопасности",
-   "lead_en": "Andrey Guryev, head of the Russian Fertilizer Producers Association, suggested not using them as a political tool. The damage caused by sanctions is already threatening global food security.",
-   "tags": [
-    "sanctions",
-    "Russia"
-   ]
-  },
-  {
-   "title": "Electricity, insurance and eggs: see how has life in Australia got more expensive",
-   "link": "https://www.theguardian.com/business/ng-interactive/2026/oct/29/electricity-insurance-and-eggs-see-how-has-life-in-australia-got-more-expensive",
-   "sources": [
-    "The Guardian"
-   ],
-   "score": 2,
-   "ts": "2026-10-28T14:01:22.836074+00:00"
-  },
-  {
-   "title": "Canada reports limited progress in trade talks with US",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxObkVGYXBiWnNCZDFyNVRMSjNnZG5xRENTUDkzbk04SVdRV3d5LVZFbkxRR2FVSGt5MnhUYkZSVWtBNzJBclcxZ3FacC1JTUpMTExLQU9USDhTTjY3aWwyTWNpSlRMUy1FLURMQkpYalZXdl9qS2RFdHQ0Tm9XaWdjU2pqSTNOQ2U5WDU1OXUyaVZYcG1LMkl6UmRJZ0M?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T14:06:22.868540+00:00",
-   "title_ru": "Канада сообщает об ограниченном прогрессе в торговых переговорах с США"
-  },
-  {
-   "title": "GSK third-quarter beat fails to impress and shares fall",
-   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPY1FBbGtkNGhROXJGS3lSUms5VFRZSTRDZHJWblBwLUkycjY2OGJLLUVreTc4NHhGVFNLeklQZkQxMEQ5VS1DNHlBZGxtbGJJbjlJNjBsNDZkRFJPaUFqOGJKcm9Za1YzTGgtcEtGMlF5YXE3djc1OXN6RmU3bHJUZmUxSl9ua3JDdjRqVE94eUxOckVEVUswa0pGa29qRzZTZW10YkxYSGQ1REVCN3l6VlRkNkxhSnFDTVM5ODlWdjFvQVlOTE95azBOV1c2dw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T14:06:22.868540+00:00",
-   "title_ru": "Биты третьего квартала GSK не впечатляют, и акции падают",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Investors Jolted by Lula Win Search for Bottom After Brazil Rout",
    "link": "https://www.bloomberg.com/news/articles/2026-10-28/investors-jolted-by-lula-win-search-for-bottom-after-brazil-rout",
@@ -10265,6 +10214,15 @@
    "title_ru": "Энтузиазм в области искусственного интеллекта падает, а доходы от технологий только усугубляют ситуацию",
    "lead": "The last two weeks were supposed to bring some clarity to a stock market wobbling on a series of risks, particularly doubts about heavy spending on artificial intelligence, as a series of technology giants reported their earnings.",
    "lead_ru": "Последние две недели должны были внести некоторую ясность в фондовый рынок, колеблющийся из-за ряда рисков, в частности, сомнений по поводу больших расходов на искусственный интеллект, поскольку ряд технологических гигантов отчитались о своих доходах."
+  },
+  {
+   "title": "Your stock portfolio increasingly hinges on the bond market — and the midterm elections",
+   "link": "https://www.marketwatch.com/story/your-stock-portfolio-increasingly-hinges-on-the-bond-market-and-the-midterm-elections-dc1abadb?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-31T14:07:46.137040+00:00"
   }
  ],
  "last_digest": "2026-10-30",
