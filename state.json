@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "2129df0d17606138": "2026-10-28T00:50:19.266341+00:00",
   "3cb677e09c26dcaf": "2026-10-28T00:55:19.182746+00:00",
   "268c16facd84bdfd": "2026-10-28T00:55:19.182746+00:00",
   "29350db746d7e77e": "2026-10-28T01:10:19.156105+00:00",
@@ -1111,22 +1110,11 @@
   "792442693243bf5d": "2026-10-30T23:51:27.214934+00:00",
   "8245925ad414dec8": "2026-10-31T00:16:27.194471+00:00",
   "e58bc47889babc84": "2026-10-31T00:31:27.163891+00:00",
-  "18e2c954e78a69e3": "2026-10-31T00:36:27.144314+00:00"
+  "18e2c954e78a69e3": "2026-10-31T00:36:27.144314+00:00",
+  "e3681b2dd41e7d61": "2026-10-31T00:51:27.149244+00:00",
+  "d6fad56165f2cbf9": "2026-10-31T00:51:27.149244+00:00"
  },
  "recent": [
-  {
-   "title": "China AI Hardware Firms Face Earnings Test After Stock Selloff",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQc2w4c1lNNG9TSi1yQU1wU0tyLTNWNTdJMXF5Nzhkci1NTmQ0V2tfOXRlcS1mLUNucnFPeFRGY2w5UW1qQUctWVdpZjBDYkczSWgzWU9LVGpKcHFma3hKTnotR3NpNWxZU1ZhLWg1NUNLZWVBMklibUVGSnVQSElzbVRJWFVoQWZYT3hXNkVlZzk5ZUdybjJkTFF0M3dPXy1MQmotdFJMOW9KUGRkcjF0eFQwUQ?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-28T00:50:19.266341+00:00",
-   "tags": [
-    "markets",
-    "China"
-   ]
-  },
   {
    "title": "Robert Kaplan: Fed Can Wait Before Hiking Rates",
    "link": "https://www.bloomberg.com/news/videos/2026-10-28/robert-kaplan-fed-can-wait-before-hiking-rates-video",
@@ -11852,6 +11840,19 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "ECB’s Lane Says AI Significant Contributor to Euro-Area Growth",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQakliSzBjckotSjlQNHpxZi1VQmFNLW9YZlNOa1Rkb1JqQ1NIWWs4Zm9CVmlpWFdxZzhENkFaeHQwWUpLajNRcHJlSTgwcHhKZk1aMElnSHZIbUxyblVHeW1WT0VfbzVDY3UzVXZjV09TUjB2a0lfaE92aXhNYm1PVFNhUFRRSDk1LVJDQmwxbHMySzZXNmlYQUduLWpIbThkbG5Xc0pHa1cydWNCbUlkcVF5SQ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-10-31T00:51:27.149244+00:00",
+   "title_ru": "Глава ЕЦБ Лейн заявил, что искусственный интеллект вносит значительный вклад в рост еврозоны",
+   "tags": [
+    "ECB"
+   ]
   }
  ],
  "last_digest": "2026-10-30",
@@ -18625,10 +18626,10 @@
    "0001628280-26-068641",
    "0000091440-26-000174",
    "0002025268-26-000008",
+   "0001493152-26-049492",
    "0001193125-26-442119",
    "0001409970-26-000204",
    "0001899977-26-000010",
-   "0001193125-26-442045",
    "0001305512-26-000014",
    "0001477932-26-006563",
    "0001451763-26-000014",
