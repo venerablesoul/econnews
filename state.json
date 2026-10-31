@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "3bebf4ecd67142a6": "2026-10-28T15:11:23.954140+00:00",
-  "c2bfe5ffa1b4e413": "2026-10-28T15:11:23.954140+00:00",
-  "18ed1c5e54d865e7": "2026-10-28T15:11:23.954140+00:00",
-  "1b4a6ae2a18e905a": "2026-10-28T15:16:22.933176+00:00",
-  "d45706439af1e9cd": "2026-10-28T15:16:22.933176+00:00",
   "8fbee4de85410d08": "2026-10-28T15:21:23.981861+00:00",
   "98570657ddd17a92": "2026-10-28T15:21:23.981861+00:00",
   "fb717efa2c61e0d3": "2026-10-28T15:21:23.981861+00:00",
@@ -989,57 +984,10 @@
   "dff0e58445858b5c": "2026-10-31T13:57:46.144946+00:00",
   "9630baa10b83a2ea": "2026-10-31T14:07:46.137040+00:00",
   "b6f61a47e1bbde91": "2026-10-31T14:22:46.112084+00:00",
-  "17bd51636a56b9e3": "2026-10-31T14:27:46.114655+00:00"
+  "17bd51636a56b9e3": "2026-10-31T14:27:46.114655+00:00",
+  "5a1cc7209ff33229": "2026-10-31T15:18:19.771871+00:00"
  },
  "recent": [
-  {
-   "title": "Bank of Canada Raises Interest Rates to 2.5%, First Hike Since 2023",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-28/bank-of-canada-raises-interest-rates-to-2-5-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 7,
-   "ts": "2026-10-28T15:11:23.954140+00:00",
-   "title_ru": "Банк Канады повышает процентные ставки до 2,5%, впервые с 2023 года",
-   "lead": "The Bank of Canada raised its benchmark overnight interest rate by 25 basis points to 2.5% on Wednesday. It's the first increase since July of 2023.",
-   "lead_ru": "Банк Канады повысил базовую процентную ставку овернайт на 25 базисных пунктов до 2,5% в среду. Это первое увеличение с июля 2023 года.",
-   "tags": [
-    "rates"
-   ]
-  },
-  {
-   "title": "Haul-o-ween: sugar and confectionery products manufacturing",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOcFdCLTgwX3JJWmFQa1NjcmotQTlxNFFmbTUyeGZWWjBlUWFKXzk0X0tQU2ttVFVGUERJS3pwcEVMUWFjU2toRHdIUHlTUV83THhaZExObGdXZ042VlFZaTdjTkJvMHFJY0pQaWZmZjMzeWR5MW9hcHBHWFZZckpXYVVvTXdnOHRSbGpJS09DMVhoYWtQZS1Sc0J4b0k?oc=5",
-   "sources": [
-    "US Labor Statistics (BLS)"
-   ],
-   "score": 5,
-   "ts": "2026-10-28T15:11:23.954140+00:00",
-   "title_ru": "Haul-o-ween: производство сахара и кондитерских изделий"
-  },
-  {
-   "title": "These software stocks could be winners as earnings season kicks into high gear",
-   "link": "https://www.marketwatch.com/story/these-software-stocks-could-be-winners-as-earnings-season-kicks-into-high-gear-8decddf7?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 2,
-   "ts": "2026-10-28T15:11:23.954140+00:00"
-  },
-  {
-   "title": "Fed Meeting Today: Rate Decision, Warsh Speech, Live News & Analysis",
-   "link": "https://www.bloomberg.com/news/live-blog/2026-10-28/fed-rate-decision-and-warsh-briefing-live-updates",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-28T15:16:22.933176+00:00",
-   "title_ru": "Сегодняшнее заседание ФРС: решение о ставке, речь Уорша, новости и анализ в прямом эфире",
-   "tags": [
-    "Fed",
-    "rates"
-   ]
-  },
   {
    "title": "UK Budget Offers Some Tax Relief Now, Plenty More Pain Later",
    "link": "https://www.bloomberg.com/news/articles/2026-10-28/uk-budget-offers-some-tax-relief-now-plenty-more-pain-later",
@@ -10030,6 +9978,21 @@
    "tags": [
     "bonds",
     "markets"
+   ]
+  },
+  {
+   "title": "US Midterm Candidates Tap Rare Bipartisan Issue: Credit Card Rates",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-31/us-midterm-candidates-tap-rare-bipartisan-issue-credit-card-rates",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-31T15:18:19.771871+00:00",
+   "title_ru": "Кандидаты на средний срок в США касаются редкой двухпартийной проблемы: цены на кредитные карты",
+   "lead": "With control of Congress hanging on a number of razor-thin races, both Democrats and Republicans are seizing on voters’ frustrations with rising credit card debt to win over inflation-weary Americans.",
+   "lead_ru": "С контролем над Конгрессом, висящим на ряде тонких гонок, как демократы, так и республиканцы используют разочарование избирателей ростом задолженности по кредитным картам, чтобы победить уставших от инфляции американцев.",
+   "tags": [
+    "inflation"
    ]
   }
  ],
