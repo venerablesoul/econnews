@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "3cb677e09c26dcaf": "2026-10-28T00:55:19.182746+00:00",
-  "268c16facd84bdfd": "2026-10-28T00:55:19.182746+00:00",
   "29350db746d7e77e": "2026-10-28T01:10:19.156105+00:00",
   "004d7279e576d793": "2026-10-28T01:15:19.137050+00:00",
   "08a05dbb115a0255": "2026-10-28T01:25:19.121580+00:00",
@@ -1112,24 +1110,10 @@
   "e58bc47889babc84": "2026-10-31T00:31:27.163891+00:00",
   "18e2c954e78a69e3": "2026-10-31T00:36:27.144314+00:00",
   "e3681b2dd41e7d61": "2026-10-31T00:51:27.149244+00:00",
-  "d6fad56165f2cbf9": "2026-10-31T00:51:27.149244+00:00"
+  "d6fad56165f2cbf9": "2026-10-31T00:51:27.149244+00:00",
+  "5b60d59790088c37": "2026-10-31T00:56:27.127616+00:00"
  },
  "recent": [
-  {
-   "title": "Robert Kaplan: Fed Can Wait Before Hiking Rates",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-28/robert-kaplan-fed-can-wait-before-hiking-rates-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T00:55:19.182746+00:00",
-   "title_ru": "Роберт Каплан: ФРС может подождать с походными ставками",
-   "lead": "Goldman Sachs Vice Chairman and former Dallas Fed chief Robert Kaplan says the central bank can afford to hold off on raising rates by one meeting while continuing to assess economic indicators. (Source: Bloomberg)",
-   "lead_ru": "Вице-председатель Goldman Sachs и бывший глава ФРБ Далласа Роберт Каплан говорит, что центральный банк может позволить себе задержать повышение ставок на одном заседании, продолжая оценивать экономические показатели. (Источник: Bloomberg)",
-   "tags": [
-    "Fed"
-   ]
-  },
   {
    "title": "Fed Seen Holding Rates With Nod to December: Decision-Day Guide",
    "link": "https://www.bloomberg.com/news/articles/2026-10-27/fed-seen-holding-rates-with-nod-to-december-decision-day-guide",
@@ -11853,6 +11837,16 @@
    "tags": [
     "ECB"
    ]
+  },
+  {
+   "title": "Nowcasting Economic Activity in Afghanistan",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQQ3ZvOThtdW8wOFE0SE5IaldSbHFxTjhISl9VNnJzVkRHVWh2bWI3c3dORDVKckc3QXhqa0JhbUlLbDNvS2FVOVE2blUwYkI4eFJLZTRrRWlmT1RlTXh0U2JBc1pZd2RnMGMzQmx3R2tEZVBrN0p3WERDYXpDbllqdWZJOHRqM1ZCUEZDTjR0MHVxLVpTaDVCcmJ1UVM1Sko3dTNIV3JDc2pRbGs?oc=5",
+   "sources": [
+    "IMF"
+   ],
+   "score": 5,
+   "ts": "2026-10-31T00:56:27.127616+00:00",
+   "title_ru": "Прогнозирование текущей экономической активности в Афганистане"
   }
  ],
  "last_digest": "2026-10-30",
@@ -18610,25 +18604,26 @@
   "checked": "2026-10-31T00:06:27.241679+00:00",
   "sec_seen": [
    "0001823923-26-000015",
+   "0001493152-26-049498",
    "0001104659-26-120789",
    "0002006416-26-000021",
+   "0001493152-26-049494",
    "0001213900-26-114588",
    "0001740393-26-000008",
    "0001823940-26-000012",
    "0001628280-26-068637",
    "0001193125-26-442196",
    "0001193532-26-000012",
+   "0001493152-26-049496",
    "0001193125-26-442085",
    "0001866581-26-000171",
    "0001866581-26-000173",
-   "0001193125-26-442057",
    "0002025289-26-000007",
    "0001628280-26-068641",
    "0000091440-26-000174",
    "0002025268-26-000008",
    "0001493152-26-049492",
    "0001193125-26-442119",
-   "0001409970-26-000204",
    "0001899977-26-000010",
    "0001305512-26-000014",
    "0001477932-26-006563",
@@ -18637,7 +18632,6 @@
    "0001193125-26-442116",
    "0001009759-26-000011",
    "0000887343-26-000185",
-   "0001193125-26-442076",
    "0001280486-26-000010",
    "0002014386-26-000026",
    "0000904454-26-000572",
