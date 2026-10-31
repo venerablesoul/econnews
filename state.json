@@ -1,13 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "186f08bb6eb4494c": "2026-10-28T12:31:22.923020+00:00",
-  "120f8c1da2bf5f27": "2026-10-28T12:31:22.923020+00:00",
-  "a33d23d8d2828b6a": "2026-10-28T12:31:22.923020+00:00",
-  "be068e1892d2832f": "2026-10-28T12:36:22.885613+00:00",
-  "138793c82f5ee718": "2026-10-28T12:36:22.885613+00:00",
-  "6f0c5cacbc7770c8": "2026-10-28T12:36:22.885613+00:00",
-  "732ff9c3b7190f2f": "2026-10-28T12:36:22.885613+00:00",
   "ea9c6cafbc347513": "2026-10-28T12:41:22.936969+00:00",
   "39d760c47e5ce509": "2026-10-28T12:41:22.936969+00:00",
   "5a3786c47622a90e": "2026-10-28T12:46:22.846885+00:00",
@@ -1037,70 +1030,6 @@
   "7a0775e1548d2649": "2026-10-31T12:27:46.087596+00:00"
  },
  "recent": [
-  {
-   "title": "Market Talk: Why is the Fed waiting to hike?",
-   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE8wUFAzYnBVa1puNlFNRkZzbW9NazRJUlZJMEJic1d4V3FrczFsbzJYb0F2eXdvZXZjM2JycjRpcTJlVHNEYmI4blhYQkxLMm8ycFVid2wxZnVQR253VG5mQV9mb1poWkJVYXJkY0JzZ3dRRXdFZUt2REtXbDN3dw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-28T12:31:22.923020+00:00",
-   "title_ru": "Разговор о рынке: почему ФРС ждет повышения курса?",
-   "tags": [
-    "Fed"
-   ]
-  },
-  {
-   "title": "South Africa Fails to Award Gas-to-Power Projects Due to Supply",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-28/south-africa-fails-to-award-gas-to-power-projects-due-to-supply",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T12:31:22.923020+00:00",
-   "title_ru": "Южная Африка не может присудить газоэнергетические проекты из-за поставок",
-   "lead": "South Africa failed to award gas-to-power projects in an initial round to procure generation from the technology, threatening to slow the pace of the nation’s transition away from coal.",
-   "lead_ru": "Южная Африка не смогла присудить газоэнергетические проекты на начальном этапе для закупки генерации из этой технологии, что угрожало замедлить темпы перехода страны от угля."
-  },
-  {
-   "title": "«Сбер» спрогнозировал рост рисков по кредитам бизнесу до конца года",
-   "link": "https://www.rbc.ru/finances/28/10/2026/6ae1cb93f84804052b7fce36",
-   "sources": [
-    "RBC"
-   ],
-   "score": 1,
-   "ts": "2026-10-28T12:31:22.923020+00:00"
-  },
-  {
-   "title": "India's Bajaj Auto gains as export strength, EV growth drive earnings beat",
-   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOaFk5UHExSDZmMWtzMER3WWx2TEZxZHpkNXo1VmRFcm9TWDZsNk96T2tEd2ZjcXdvTjRYOXI3Tmw5anQxSW9WbkEydllLdEROVVNlYkZ3RUl2LXBlNUtja3I0UXNpSTBXVDJ4Z215QVB3eFF3SlNicEVia3diRUpkaEVVMWFVaWc4WS0xdE1IaDdZWG1FTUFLWA?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-28T12:36:22.885613+00:00",
-   "title_ru": "Индийский Bajaj Auto растет как экспортная сила, рост электромобилей стимулирует прибыль"
-  },
-  {
-   "title": "Brazil Exposed the Deficiencies of Prediction Markets",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOc2Y5ejFhZnhCR3Zzb084dGpxU1QtdXlUTk55MlVDQXlaMFd1YWdKWThxLUR1M19CakhIV2VFSUwyVkFod1kxREtsYUNqck5OalJyOG5VajRJWWNjcUJoTHZ5MmdhaTFNOVJpZFRobXBLeS1ZeVN1Y3FYVXYyd2pyUXdXZXB4bGpTdFp1ellTa1V4ZlB3R2hXUjQxdGlSNmRsU0NaVFU1SThiRWhmU0tQOWt3?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T12:36:22.885613+00:00",
-   "title_ru": "Бразилия выявила недостатки рынков предсказаний"
-  },
-  {
-   "title": "India's Adani Ports logs higher quarterly profit on cargo volume growth",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPOWVCOU56RjlxYW5XakszRTByZmtld3p1TDBHaEdLOVFqZE5sbXlwbFNLUXYxYlFURXJNYkdSWUJHeVNuMkNUMzRyV3FwYkdDREh2SXdRdlZPZTFmYXdyV0dULTR2TzYtQjg0UWJESXl4Z2FqaXpLNGFPbHlOVW1SUDJCLVlDT0l4TzQ1M2RJaS1mZ0RjUXBzZlZxNzRFaFBPTzlfR19jcmF3WGNFa1ZSMVhGdWhOQQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T12:36:22.885613+00:00",
-   "title_ru": "Индийские порты Адани зафиксировали более высокую квартальную прибыль от роста объема грузов"
-  },
   {
    "title": "US Trade Gap Widens to Biggest Since March 2025",
    "link": "https://www.bloomberg.com/news/articles/2026-10-28/us-trade-gap-widens-to-biggest-since-march-2025-on-capital-goods",
@@ -17339,7 +17268,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-31T11:27:46.136377+00:00",
+  "checked": "2026-10-31T12:32:46.113135+00:00",
   "sec_seen": [
    "0001493152-26-049496",
    "0001231919-26-001519",
