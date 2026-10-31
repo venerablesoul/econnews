@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "8bd1366f251db72a": "2026-10-28T20:05:12.349602+00:00",
   "e306bc453d4e41ba": "2026-10-28T20:10:12.613967+00:00",
   "dd353ac6399344aa": "2026-10-28T20:15:12.502293+00:00",
   "22c216981dca6d0f": "2026-10-28T20:15:12.502293+00:00",
@@ -908,19 +907,10 @@
   "cb922cbc1818d39c": "2026-10-31T19:13:19.800358+00:00",
   "f85e5867175910b9": "2026-10-31T19:13:19.800358+00:00",
   "479b6da054754ac9": "2026-10-31T19:33:19.903489+00:00",
-  "78ce690271973d1a": "2026-10-31T20:03:52.103356+00:00"
+  "78ce690271973d1a": "2026-10-31T20:03:52.103356+00:00",
+  "bb2e88199bc32777": "2026-10-31T20:08:52.058989+00:00"
  },
  "recent": [
-  {
-   "title": "Star Trader’s Woes Turn Up the Heat on Riskiest Debt in Europe",
-   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQM3lqWUZheFR4SGlYQlAyT1VTN0kzVVBpTXBDbGxxMTJ3N1FxU0lucm5zaVAtdVNlZGMxTmFTak51MmZucHJJUGlSQWlmN2xFTWtjOW5WRkhyTkFGLVpJaVNSSXZPbllBMWttTzBJWlFpSDJqeERndjdLR0d4U194SmhpWmZGNWZ5N0lOaUZRaXNjVlV4NW1WNGVkQWdxb0hRd2FKaGJ6UFhIR19jaWFITG5KMzduRlNkalNES0xDLW52c1pp?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T20:05:12.349602+00:00",
-   "title_ru": "Беды звездного трейдера накаляют самый рискованный долг в Европе"
-  },
   {
    "title": "Healey unveils £100 for energy bills and bank tax in first Budget",
    "link": "https://www.bbc.co.uk/news/articles/cqpvgxz3y49go?at_medium=RSS&at_campaign=rss",
@@ -9082,6 +9072,22 @@
    "score": 3,
    "ts": "2026-10-31T19:33:19.903489+00:00",
    "title_ru": "Bloomberg в эти выходные: Реакция рынков; Среднесрочный прогноз"
+  },
+  {
+   "title": "US Jobs Pickup May Keep Fed on Track to Hike Rates Again",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-31/us-jobs-pickup-may-keep-fed-on-track-to-hike-rates-again",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-31T20:08:52.058989+00:00",
+   "title_ru": "Рост числа рабочих мест в США может привести к тому, что ФРС снова начнет повышать ставки",
+   "lead": "Jobs week lies ahead for the US, which means a heavy slate of data ahead of the capstone monthly employment report from the Bureau of Labor Statistics on Friday.",
+   "lead_ru": "Впереди у США неделя рабочих мест, а это означает, что в преддверии ежемесячного отчета о занятости от Бюро статистики труда в пятницу будет много данных.",
+   "tags": [
+    "Fed",
+    "jobs"
+   ]
   }
  ],
  "last_digest": "2026-10-31",
