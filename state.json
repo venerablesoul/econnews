@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "7e9c3a61e3297a6a": "2026-10-28T07:15:51.206151+00:00",
-  "9ed5115849214613": "2026-10-28T07:15:51.206151+00:00",
-  "5012520bea842a64": "2026-10-28T07:15:51.206151+00:00",
-  "9eb59fedf5a9f48d": "2026-10-28T07:15:51.206151+00:00",
   "d2e4c5f0761cd38c": "2026-10-28T07:20:51.163292+00:00",
   "129d97b7c4d152cd": "2026-10-28T07:20:51.163292+00:00",
   "d512bfe3607842c4": "2026-10-28T07:20:51.163292+00:00",
@@ -1087,61 +1083,11 @@
   "cceefac1d6be112d": "2026-10-31T06:27:16.110388+00:00",
   "649b18a63c9ada96": "2026-10-31T06:42:16.073749+00:00",
   "b80bbd5c554e54c6": "2026-10-31T06:42:16.073749+00:00",
-  "bd9ca5e80ba19468": "2026-10-31T06:52:16.032936+00:00"
+  "bd9ca5e80ba19468": "2026-10-31T06:52:16.032936+00:00",
+  "6946bd32039013b1": "2026-10-31T07:17:16.041930+00:00",
+  "1af7577753a65f94": "2026-10-31T07:17:16.041930+00:00"
  },
  "recent": [
-  {
-   "title": "Thailand Holds Key Rate as High Energy Costs Weigh on Economy",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-28/thailand-holds-key-rate-as-high-energy-costs-weigh-on-economy",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-28T07:15:51.206151+00:00",
-   "title_ru": "Таиланд удерживает ключевую ставку, поскольку высокие затраты на электроэнергию влияют на экономику",
-   "lead": "Thailand’s central bank held its benchmark interest rate for a fourth straight meeting to support the fragile recovery even as higher energy costs fuel inflation.",
-   "lead_ru": "Центральный банк Таиланда провел свою базовую процентную ставку четвертое заседание подряд, чтобы поддержать хрупкое восстановление, даже несмотря на то, что более высокие затраты на энергоносители подпитывают инфляцию.",
-   "tags": [
-    "rates",
-    "inflation"
-   ]
-  },
-  {
-   "title": "Healey to Scrap UK’s Standing Charges on Gas Bills",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-28/healey-to-scrap-uk-s-standing-charges-on-gas-bills",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T07:15:51.206151+00:00",
-   "title_ru": "Healey откажется от постоянных сборов Великобритании по счетам за газ",
-   "lead": "Standing charges on gas bills will be scrapped for millions of British households as soon as next year, Chancellor of the Exchequer John Healey will announce today.",
-   "lead_ru": "Постоянные расходы на счета за газ будут отменены для миллионов британских домохозяйств уже в следующем году, объявит сегодня канцлер казначейства Джон Хили."
-  },
-  {
-   "title": "RBNZ Governor Says Further Rate Increases Highly Likely",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-28/rbnz-governor-says-further-rate-increases-highly-likely-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T07:15:51.206151+00:00",
-   "title_ru": "Губернатор РБНЗ говорит, что дальнейший рост ставок весьма вероятен",
-   "lead": "Reserve Bank of New Zealand Governor Anna Breman says further OCR increases are highly likely at coming meetings after policymakers voted 4-3 to leave rates unchanged.",
-   "lead_ru": "Управляющий Резервного банка Новой Зеландии Анна Бреман говорит, что дальнейшее повышение OCR весьма вероятно на предстоящих заседаниях после того, как политики проголосовали 4-3 за то, чтобы оставить ставки без изменений."
-  },
-  {
-   "title": "UBS CEO Ermotti on Earnings, Cost Savings, Capital Return",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-28/ubs-ceo-ermotti-on-earnings-cost-savings-us-and-asia-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T07:15:51.206151+00:00",
-   "title_ru": "Генеральный директор UBS Эрмотти о доходах, экономии средств, возврате капитала",
-   "lead": "UBS CEO Sergio Ermotti speaks to Bloomberg's Stephen Carroll after the lender posted third-quarter profit broadly in line with expectations, with a surge in client inflows potentially buoying the outlook for the global wealth…",
-   "lead_ru": "Генеральный директор UBS Серджио Эрмотти (Sergio Ermotti) беседует со Стивеном Кэрроллом (Stephen Carroll) из Bloomberg после того, как кредитор опубликовал прибыль за третий квартал в целом в соответствии с ожиданиями, при этом всплеск притока клиентов потенциально может поддержать перспективы глобального богатства..."
-  },
   {
    "title": "Anthropic IPO Shutout Sends Asia’s Investors Into Proxy Bets",
    "link": "https://www.bloomberg.com/news/articles/2026-10-28/anthropic-ipo-shutout-sends-asia-s-investors-into-proxy-bets",
@@ -11333,6 +11279,18 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "India Saw 496 Million Escape Poverty Since 2011, World Bank Says",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-31/india-496-million-escape-poverty-since-2011-world-bank",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-31T07:17:16.041930+00:00",
+   "title_ru": "По данным Всемирного банка, с 2011 года Индия избавилась от бедности на 496 миллионов человек",
+   "lead": "India saw about 496 million people lifted out of poverty between 2011 and 2023 in one of the world’s fastest declines in this metric, the World Bank said, although the gains remain uneven.",
+   "lead_ru": "По данным Всемирного банка, в Индии в период с 2011 по 2023 год около 496 миллионов человек вырвались из нищеты в результате одного из самых быстрых в мире сокращений по этому показателю, хотя успехи остаются неравномерными."
   }
  ],
  "last_digest": "2026-10-30",
