@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "4286a986b06049a4": "2026-10-28T13:06:23.023630+00:00",
-  "940c04f3a7123072": "2026-10-28T13:11:22.850412+00:00",
-  "5d3ee7613a4e8707": "2026-10-28T13:11:22.850412+00:00",
   "732dd1989824ced9": "2026-10-28T13:16:23.868786+00:00",
   "0f92ecfc3b9c8697": "2026-10-28T13:16:23.868786+00:00",
   "97f10fa2c345c770": "2026-10-28T13:16:23.868786+00:00",
@@ -1019,48 +1016,11 @@
   "7a0775e1548d2649": "2026-10-31T12:27:46.087596+00:00",
   "3902977cae6fccc1": "2026-10-31T13:02:46.130503+00:00",
   "5bd765e30916f5d0": "2026-10-31T13:02:46.130503+00:00",
-  "948deeaac8ddd06d": "2026-10-31T13:02:46.130503+00:00"
+  "948deeaac8ddd06d": "2026-10-31T13:02:46.130503+00:00",
+  "6745c5b219a4b186": "2026-10-31T13:07:46.123212+00:00",
+  "3a82d2925901cd7a": "2026-10-31T13:07:46.123212+00:00"
  },
  "recent": [
-  {
-   "title": "Bank of Canada Rate Decision Today: Live News & Analysis, Macklem Speech",
-   "link": "https://www.bloomberg.com/news/live-blog/2026-10-28/bank-of-canada-rate-decision-live-updates",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-28T13:06:23.023630+00:00",
-   "title_ru": "Сегодняшнее решение Банка Канады по ставке: прямые новости и анализ, речь Маклема",
-   "tags": [
-    "rates"
-   ]
-  },
-  {
-   "title": "STOXX 600 inches lower as investors sift through earnings, higher oil prices",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNcXE1bGx1U0l2OThtWFF4WlFvUVJVWkoydE5FWkpXeHRpVVkyRUJfNHBIbDdzQm9BLWV6UjhiX0NPNFkxSGpNMTNhcHprSWZPX1duOW44emJjVTVYMGNDMkE0dVJReHBieVZtenBSMjZISHFZb2hZMmt3ekJiMXlmTTV2cjVtbVpoZXhfVVVXeWpDcnVlUU95d21SYjNKSGE4eUZqZU03MUc3dEYyYXU3MEJwaGJZOTdR?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 8,
-   "ts": "2026-10-28T13:11:22.850412+00:00",
-   "title_ru": "STOXX на 600 дюймов ниже, поскольку инвесторы анализируют прибыль и рост цен на нефть",
-   "tags": [
-    "oil"
-   ]
-  },
-  {
-   "title": "US bans imports from three Chinese genomics companies, citing forced labor",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQN1h6RWZLcXNVQjdLOTlHekdERnBUZjdrNWRLblZHVDMxSlM1WjQwOEV6WlNGdWc4VU1fTGYtQW5qYkdRaU9CendtWlB6amhfaGljZmxnaHZ2RUhoSWxzem5VV191RkR0cGtvTDVMWkpxeXhWcHZZdS1jcm5lMmdCcXJNQTlmOHRmbXkzZXBENDNrUDZtZUM3d09oWXVEdHQ1bXBaVnl2TDFpRlJmVUFsNjYzUngxbnc?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T13:11:22.850412+00:00",
-   "title_ru": "США запретили импорт трех китайских геномных компаний, ссылаясь на принудительный труд",
-   "tags": [
-    "China"
-   ]
-  },
   {
    "title": "Papua New Guinea: Public Investment Management Assessment (PIMA); Oct 2026",
    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOOVUxVGZtYmlhdjZQYW45RVJWMjVVME5HSkpRbHU2bzBZaVZtY28wRl9nWGdQYzlzVWM5aEM3eDBUQlpSX3p5akpZX1FLcW9tWGxienBvVjNuOXNxSWc4SWpkaTMyMjhmNXFCeUFvSmUydDRtbjZMVlNzbEp2N0EzbncyVEZpaGZHTGgwQlZ0RWo?oc=5",
@@ -10435,6 +10395,15 @@
    ],
    "score": 1,
    "ts": "2026-10-31T13:02:46.130503+00:00"
+  },
+  {
+   "title": "Аргентинский банк Galicia закрыл счета части российских клиентов",
+   "link": "https://www.rbc.ru/finances/31/10/2026/6ae5df251cbe5894eaedf3d2",
+   "sources": [
+    "RBC"
+   ],
+   "score": 1,
+   "ts": "2026-10-31T13:07:46.123212+00:00"
   }
  ],
  "last_digest": "2026-10-30",
