@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c8831c2c1c547e11": "2026-10-28T23:20:50.587939+00:00",
-  "bbdbc2cde7e33bab": "2026-10-28T23:25:50.457040+00:00",
-  "cde8f5e09d4a5f82": "2026-10-28T23:25:50.457040+00:00",
-  "f23ab1a58e82808b": "2026-10-28T23:25:50.457040+00:00",
-  "89afa8985dae2e2d": "2026-10-28T23:25:50.457040+00:00",
   "c88f03143be4aaab": "2026-10-28T23:30:50.387527+00:00",
   "7427ecbc60544410": "2026-10-28T23:30:50.387527+00:00",
   "c3e6501ca480b347": "2026-10-28T23:30:50.387527+00:00",
@@ -872,65 +867,6 @@
   "eef06f0896a253a4": "2026-10-31T22:58:52.091343+00:00"
  },
  "recent": [
-  {
-   "title": "Fortinet’s stock is taking a dive after earnings. Here’s why.",
-   "link": "https://www.marketwatch.com/story/fortinets-stock-is-taking-a-dive-after-earnings-heres-why-d407896e?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-28T23:20:50.587939+00:00"
-  },
-  {
-   "title": "Why a Fed rate hike is likely coming in December",
-   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE45YnFFaGgyTm5xZ2dyZE9mQlR4RzFIRFB6ckh0cGFjN196a1R4b1o5NlVhWWRTOWFLWUZCZnN1cHRDQ1BmZVlrYzV2QzNHSzhIblVoYUg4bWQyRUpmS3JfOE9fbjJTQktMTkVTWVpfRmJLTzFQUGoxT0JWSlpMZw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-28T23:25:50.457040+00:00",
-   "title_ru": "Почему повышение ставки ФРС, вероятно, произойдет в декабре",
-   "tags": [
-    "Fed",
-    "rates"
-   ]
-  },
-  {
-   "title": "Yuan Funding Has Deeper Drivers Than Yields, Top Economist Says",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-28/yuan-funding-has-deeper-drivers-than-yields-top-economist-says",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T23:25:50.457040+00:00",
-   "title_ru": "Финансирование в юанях имеет более глубокие драйверы, чем доходность, говорит ведущий экономист",
-   "lead": "The yuan’s path to becoming a global funding currency depends more on the nation’s supply-chain dominance rather than low borrowing costs, according to a top Chinese economist.",
-   "lead_ru": "По словам ведущего китайского экономиста, путь юаня к превращению в глобальную валюту финансирования в большей степени зависит от доминирования страны в цепочке поставок, а не от низких затрат по займам.",
-   "tags": [
-    "bonds",
-    "China"
-   ]
-  },
-  {
-   "title": "Trick or Treat, Smell My Feet, This Economy Ain’t So Sweet",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOcTV0N3BwR0lnMm5sOHlXU2lHN0JNdURrMThUcUFHX2tPcG9NX0xja1d2ODlSODBKd044Q2Y1LWdUOXd2OG5YT09mSDB6b0VsUGVPUWZ3RDFSZGRvTGVHVXFJZ2IydmVveHpGTENLdUpOb3gxOUIxTm9vQ09CRnhfMVhXcjJlSGtwcTJqQ2J2Q0FNRm1rY3dwV1JYQ21mVHlXZ2VlcTNRd1pheWl5QXQzMUdzMWJDeDJhRWdZ?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T23:25:50.457040+00:00",
-   "title_ru": "Trick or Treat, Smell My Feet, This Economy Ain 't So Sweet"
-  },
-  {
-   "title": "UK's FTSE 100 muted as GSK, Unilever losses temper bank gains after budget",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQX2N5WVY0d3otMGt5LUZyMEhWamtfcnVZOWhON1NVeWhRZEVFc056UnhpYldWM25pSUFiTnE2Mm1NVldSbjRiRWFaY2FnRDd2TEo3bWhzX3BVd1BLWjhIRkx3d2E1a203a0VNLUVEQjR2b005WHRHYkhFZnRQZnhlWWxrMFdtdDEzd2Q1UGhYdzJnY2JNRXdxQmMxTDRXWWpoMVo4NEV3OWdCUQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T23:25:50.457040+00:00",
-   "title_ru": "Британская FTSE 100 приглушена как GSK, убытки Unilever сдерживают прибыль банка после бюджета"
-  },
   {
    "title": "Fed's policy committee to weigh balance sheet issues early next year, Warsh says",
    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQaDZHdmRFaXBHQzZvWXZjZU8xOFRrT0Q1WGx2ekJuQ1hCTV9EbHdTOElZTERXemZwY1o0ZzRZUXR6aDNkM0tOejh1N201SmxqR29NSFE2Q0c5TlJMQ29pZGhvM0E5TVc0UjkyTFVNY1VONjl3WG5WOXJaRElkNEktODF4LXhkaF9YTW5kN01DYUFtcy1hclBQbXFSdk5aSGFJMG8yTWtLd2ZlTnY5Ylp4MmJmWldCNXVZekg5T3FwMEpmSVBCWDFV?oc=5",
