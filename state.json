@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "bd570558bd354da6": "2026-10-28T17:00:12.419384+00:00",
-  "2dca5f0fe196d592": "2026-10-28T17:00:12.419384+00:00",
-  "beecb5f5f5b04c45": "2026-10-28T17:00:12.419384+00:00",
   "e57a0cbb35a07828": "2026-10-28T17:10:12.380740+00:00",
   "602bb98980f22270": "2026-10-28T17:10:12.380740+00:00",
   "48cd81b7c367be69": "2026-10-28T17:10:12.380740+00:00",
@@ -965,35 +962,10 @@
   "1d7c8ffdc62ae334": "2026-10-31T16:23:19.839517+00:00",
   "a8f92577333a93be": "2026-10-31T16:53:19.940199+00:00",
   "2f1f11b5c3f1f14a": "2026-10-31T16:58:19.816077+00:00",
-  "fd31862b1f5bc830": "2026-10-31T16:58:19.816077+00:00"
+  "fd31862b1f5bc830": "2026-10-31T16:58:19.816077+00:00",
+  "0b761f69ca2adee3": "2026-10-31T17:08:19.942585+00:00"
  },
  "recent": [
-  {
-   "title": "Why AI’s Billions in Spending Are Hard to Spot in GDP Data",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPNl9WM0Q3SC1NRWJUei1ENmRyS3I2bXNSS2xtNVJVSmpZOHhKUFRRZV9ad3ZpS0RMc01mQ3VYUzcwWFhkd25Tbk93Wk9hTC1LSU1tVXBYZUdNS2NNaFNtaHVRcUxxNjU1WG1ZWkI4YmlzVEtsSTg3QkZHeXVvZEo1OWlTWm1fUWdhaXdEMDFyaEVOMmZLVmgwdWNzQ0RpY1pWRGt3ZlQ3OV9mcmxSZmx0SXdGeUk3NFRoVFRtTnlIQQ?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-28T17:00:12.419384+00:00",
-   "title_ru": "Почему миллиарды ИИ в расходах трудно обнаружить в данных о ВВП",
-   "tags": [
-    "GDP"
-   ]
-  },
-  {
-   "title": "US sanctions North Korean network accused of defrauding businesses",
-   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNWUtIYXNSS25velBzRjB0ZGpaYWtLdDhVb3VVeUprZUkxeEVBWUlMdC0wc2gyUU5UR3FWOHozOWdxRThDNlVHRC1aVFBzVGJsZThtLUZWMmEza3QtU0Y4c0VxQlptYjlVbEtuV2NEQ1dzeHVNMjR0RUlCX2Rla0NhbkFFdmlxOFVQbTBfZUpEWXRjQno2Q3VEblB5Q2RDcHM?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-28T17:00:12.419384+00:00",
-   "title_ru": "США ввели санкции против северокорейской сети, обвиняемой в обмане бизнеса",
-   "tags": [
-    "sanctions"
-   ]
-  },
   {
    "title": "New UK finance minister unveils 'steady as you go' budget",
    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOWUFYSUVzczU4c3VBa1VPWWRjcThyVnY2bUFyWGs2THJESzZJNl9kcjlSaVlUeUFpemFGNnZ1YkMwSkpESXR1WG9QV3RyTXJjb3c3d0oxYVQwRkNPNWE2MXBhenJvbXdBTkhqSUtxam9SaVhBN2dxT09Ua3c4VGtSeUJMRGc0Y3hrWUwyUHd4SUQySWlVc0o1T3c3OFRpQkppbkE?oc=5",
@@ -9783,6 +9755,18 @@
    "tags": [
     "jobs"
    ]
+  },
+  {
+   "title": "Fitch ухудшило прогноз по дефолтному рейтингу Франции",
+   "link": "https://www.rbc.ru/rbcfreenews/6ae6161292b809aef4d94d2d",
+   "sources": [
+    "RBC"
+   ],
+   "score": 3,
+   "ts": "2026-10-31T17:08:19.942585+00:00",
+   "title_en": "Fitch downgrades outlook on France's default rating",
+   "lead": "Агентство Fitch понизило прогноз по долгосрочному рейтингу дефолта эмитента (РДЭ) Франции со «стабильного» на «негативный», однако сохранило кредитный рейтинг страны на уровне A+, сообщила пресс-служба американского агентства.",
+   "lead_en": "Fitch has downgraded the outlook on France's long-term issuer default rating (IDR) from stable to negative, but has maintained the country's credit rating at A+, the press service of the American agency reported."
   }
  ],
  "last_digest": "2026-10-30",
