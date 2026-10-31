@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "256305c56f4fdcef": "2026-10-28T10:36:22.825875+00:00",
   "ad50facc825e0d8a": "2026-10-28T10:41:22.807015+00:00",
   "27230cc576cd9ef9": "2026-10-28T10:46:22.794167+00:00",
   "86d2b80e2e91a926": "2026-10-28T10:51:22.849500+00:00",
@@ -1053,7 +1052,9 @@
   "4b730b7d94279fc8": "2026-10-31T10:22:46.085186+00:00",
   "b566aa5f01dd989a": "2026-10-31T10:32:46.092245+00:00",
   "c6e2cd87793b1a30": "2026-10-31T10:32:46.092245+00:00",
-  "688712f3b6711284": "2026-10-31T10:32:46.092245+00:00"
+  "688712f3b6711284": "2026-10-31T10:32:46.092245+00:00",
+  "37f68971bac1a7b6": "2026-10-31T10:37:46.114562+00:00",
+  "50b628340f11037c": "2026-10-31T10:37:46.114562+00:00"
  },
  "recent": [
   {
@@ -10815,6 +10816,28 @@
    "title_ru": "Банк Англии может повысить порог высокорискованной ипотеки, сообщает FT",
    "lead": "The Bank of England is considering easing restrictions on higher-risk mortgage loans in a move that could support the UK housing market, the Financial Times reported.",
    "lead_ru": "Банк Англии рассматривает возможность смягчения ограничений на ипотечные кредиты с повышенным риском, что может поддержать рынок жилья Великобритании, сообщает Financial Times."
+  },
+  {
+   "title": "Shipping Strikes In Hormuz Leave Both Sides With Economic Pain",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-31/shipping-strikes-in-hormuz-leave-both-sides-with-economic-pain",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-31T10:37:46.114562+00:00",
+   "title_ru": "Забастовки судоходников в Ормузе причиняют обеим сторонам экономическую боль",
+   "lead": "As US President Donald Trump threatens renewed attacks against Iran, Tehran’s intermittent strikes on commercial vessels have left the two sides locked in a painful economic standoff.",
+   "lead_ru": "Поскольку президент США Дональд Трамп угрожает новыми нападениями на Иран, периодические удары Тегерана по коммерческим судам привели к тому, что обе стороны оказались в болезненном экономическом противостоянии."
+  },
+  {
+   "title": "Indonesia’s Gas Cut Shows Why Singapore Can’t Rely on Pipelines Alone",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPenNNWlJsOGxKblkwM0dJZ0JwRE9OSlExWVpvdWYyZGZoVkhpWWdTeW1XcjFvdzZHU0IzSzFwQ2trTWpuOS1aZzJ0MC1fVS1nRW96UUhoem82ZEpRV0ZONy1KTXZFZC1TbkNQbVZkamRIcXVUVVppaWtNVUVlZ1BTSmRNaXVVQXZhVV9TaXA0QmRuTUFyWjZiT2cwRWNRLS1pR0djQzEtRUV5d3FrV0RLYkllblI5QQ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-31T10:37:46.114562+00:00",
+   "title_ru": "Отказ от газа в Индонезии показывает, почему Сингапур не может полагаться только на трубопроводы"
   }
  ],
  "last_digest": "2026-10-30",
@@ -17578,11 +17601,11 @@
    "0001193125-26-442229",
    "0001009759-26-000011",
    "0001193125-26-442230",
-   "0002014361-26-000040",
-   "0001628280-26-068639",
-   "0001498270-26-000012",
    "0001213900-26-114607",
    "0001193125-26-442142",
+   "0001498270-26-000012",
+   "0002014361-26-000040",
+   "0001628280-26-068639",
    "0001213900-26-114605",
    "0001280486-26-000010",
    "0001193125-26-442201",
