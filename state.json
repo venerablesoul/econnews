@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "30320ae0f50668b1": "2026-10-28T14:31:22.836215+00:00",
-  "e0b8b58ba63badc9": "2026-10-28T14:36:22.836309+00:00",
-  "d10874c5ee261b3f": "2026-10-28T14:36:22.836309+00:00",
-  "c200eb5b51c4bd4e": "2026-10-28T14:36:22.836309+00:00",
   "4b6d1a0cf6344fc6": "2026-10-28T14:46:22.887126+00:00",
   "afad620e500e3e4e": "2026-10-28T14:51:22.864836+00:00",
   "8d7f3964b06c4811": "2026-10-28T15:01:23.384943+00:00",
@@ -1001,45 +997,6 @@
   "17bd51636a56b9e3": "2026-10-31T14:27:46.114655+00:00"
  },
  "recent": [
-  {
-   "title": "UK Budget Lacked 'Big Picture Themes,' RBC Capital Says (Video)",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-28/uk-budget-lacked-big-picture-themes-rbc-capital-says-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T14:31:22.836215+00:00",
-   "title_ru": "В бюджете Великобритании не хватало «общих тем», говорит RBC Capital (видео)"
-  },
-  {
-   "title": "World Bank sees commodity prices up 23% in 2026 due to Middle East war, other shocks",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPMTJhV1NKSG4wRUJLZHpFdGRjTmdWM2VxWGhRQVFCa0Q2NGhKMHVEMEYtQU5jVTRpTnA5VWRXQWlRQ01rUE9MVF9FbEtLd1IxcTA2MGVvYTNfUFpnaGVwWEttRkJoUjYyLTFqZ2lrUUdJdTVqNEhqdFgyV0ZzR3JjOXFKZ0VHUUFXYzVsRnIwZGRZVG5UNHh3anhMZzRoanVUUjRySEpINGlpeXY2VC1YOFJxblVGRklIZi1ERXJB?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T14:36:22.836309+00:00",
-   "title_ru": "Всемирный банк прогнозирует рост цен на сырьевые товары на 23% в 2026 году из-за войны на Ближнем Востоке и других потрясений"
-  },
-  {
-   "title": "UK's Healey increases taxes on gambling companies in budget",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNcFZ1dEozSlU0TGxraFNQYjRTOWxYanF0azFlZVJtRTg5dERnUFhMdXl6VHRQR3Zzd21MNXZja25fMG44b0hNa2k4SDFVWGxOYzlXeGZkM21QdG9PVTM0b3ZDRGwxZk51UllxX3Y4blI2dEsyMDZwV2d1ZUlfYnowYUV3SXZ4RzdlSW1TX3ZFcG45WjhXN1puMktIcFpwQQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T14:36:22.836309+00:00",
-   "title_ru": "Британский Healey увеличивает налоги на игорные компании в бюджете"
-  },
-  {
-   "title": "Сбер назвал свою базовую версию по ставке ЦБ в этом году",
-   "link": "https://www.rbc.ru/economics/28/10/2026/6ae2050b670fe4d38850ad32",
-   "sources": [
-    "RBC"
-   ],
-   "score": 1,
-   "ts": "2026-10-28T14:36:22.836309+00:00"
-  },
   {
    "title": "At least 64 dead in Spain's second major train crash in a year",
    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOUl92blFTT3BtRmEwUW1tNWNPX09pUzNYNEhrSUZreGM5bWRIdG5FaVRYal80MTR1MHBkeEdQak5sNzNwdmlwc3d6YWNPUEd1U1ItX2gxaGJSRk1LWGt4MDFhREVINXFvZWNTQWdIV3B0YXhPQWZKZ2UxUEpWTk9YbjdXX0doZEJfcC00TUlSOVhYaUNQWllyMU9QVkxOZw?oc=5",
@@ -10157,7 +10114,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 0,
+  "Fed": 1,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
@@ -16889,7 +16846,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-31T13:37:46.111810+00:00",
+  "checked": "2026-10-31T14:38:19.786035+00:00",
   "sec_seen": [
    "0001498270-26-000012",
    "0001193125-26-442201",
