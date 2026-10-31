@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e1459f0ee94878ea": "2026-10-28T07:45:51.175069+00:00",
-  "8ca4353f701af207": "2026-10-28T07:45:51.175069+00:00",
   "93df800e2e2b24ff": "2026-10-28T07:50:51.182430+00:00",
   "6a9ca9cf0a4cac3a": "2026-10-28T08:10:51.186329+00:00",
   "a205d3f34bf22a5c": "2026-10-28T08:10:51.186329+00:00",
@@ -1082,34 +1080,12 @@
   "bd9ca5e80ba19468": "2026-10-31T06:52:16.032936+00:00",
   "6946bd32039013b1": "2026-10-31T07:17:16.041930+00:00",
   "1af7577753a65f94": "2026-10-31T07:17:16.041930+00:00",
-  "3884d51049ba0edc": "2026-10-31T07:27:16.117164+00:00"
+  "3884d51049ba0edc": "2026-10-31T07:27:16.117164+00:00",
+  "22768e4a3aa12c7f": "2026-10-31T07:42:16.038018+00:00",
+  "d51bb4b450b2723f": "2026-10-31T07:47:16.106849+00:00",
+  "858ab16beca9ad70": "2026-10-31T07:47:16.106849+00:00"
  },
  "recent": [
-  {
-   "title": "Thai central bank keeps interest rate unchanged, as expected",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNeDJxN25kZTJfQm51X1lULVAzclQ0WHNMd1RFblduVGU4U0VRU182RHB5T2lLSW03amJjczRORHpXRjRJOWhVcGtUUnpBaXY1VWEtUjBGWFM5WmIxdU1oWmM4ZEpvY0NscmJYdDZHQzdtczZmbGZncU4ydkJpM0s3dVVtMFJaT1lMRmJaaFQ2Zk9JZkx4TmdWVzA2UVNpNzc2N0lqXw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-28T07:45:51.175069+00:00",
-   "title_ru": "Центральный банк Таиланда, как и ожидалось, сохранил процентную ставку без изменений",
-   "tags": [
-    "rates"
-   ]
-  },
-  {
-   "title": "UK Budget Day: Here's What to Expect From Healey",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-28/uk-budget-day-here-s-what-to-expect-from-healey-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T07:45:51.175069+00:00",
-   "title_ru": "Бюджетный день в Великобритании: чего ожидать от Healey",
-   "lead": "UK Chancellor of the Exchequer John Healey's budget plans, due to be outlined in the House of Commons at 12:30 p.m.",
-   "lead_ru": "Бюджетные планы канцлера казначейства Великобритании Джона Хили должны быть изложены в Палате общин в 12:30."
-  },
   {
    "title": "UK Budget Tests Bond Markets as Fed, ECB and Oil Risks Loom",
    "link": "https://www.bloomberg.com/news/newsletters/2026-10-28/uk-budget-tests-bond-markets-as-fed-ecb-and-oil-risks-loom",
@@ -11253,6 +11229,18 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Why politicians chasing economic growth is a lie | Radical Thinking with Aditya Chakrabortty",
+   "link": "https://www.theguardian.com/politics/commentisfree/audio/2026/oct/31/why-politicians-chasing-economic-growth-is-a-lie-radical-thinking-with-aditya-chakrabortty",
+   "sources": [
+    "The Guardian"
+   ],
+   "score": 3,
+   "ts": "2026-10-31T07:47:16.106849+00:00",
+   "title_ru": "Почему политики, гоняющиеся за экономическим ростом, — это ложь | Радикальное мышление с Адитьей Чакраборти",
+   "lead": "What if someone told you the truth about the economy? For years, governments have tried spending more, spending less, cutting red tape, Brexit, levelling up – and still failed to increase growth per person in the UK.",
+   "lead_ru": "Что, если кто-то скажет вам правду об экономике? В течение многих лет правительства пытались тратить больше, тратить меньше, сокращать бюрократическую волокиту, Брексит, выравнивать уровень – и все еще не смогли увеличить рост на душу населения в Великобритании."
   }
  ],
  "last_digest": "2026-10-30",
