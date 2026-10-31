@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "31558c42222bb8be": "2026-10-28T13:01:22.876662+00:00",
   "4286a986b06049a4": "2026-10-28T13:06:23.023630+00:00",
   "940c04f3a7123072": "2026-10-28T13:11:22.850412+00:00",
   "5d3ee7613a4e8707": "2026-10-28T13:11:22.850412+00:00",
@@ -1017,19 +1016,12 @@
   "ca7508941492ad65": "2026-10-31T11:32:46.107977+00:00",
   "b88345da7c47ff03": "2026-10-31T12:07:46.118777+00:00",
   "e385915a0f3925ae": "2026-10-31T12:12:46.179377+00:00",
-  "7a0775e1548d2649": "2026-10-31T12:27:46.087596+00:00"
+  "7a0775e1548d2649": "2026-10-31T12:27:46.087596+00:00",
+  "3902977cae6fccc1": "2026-10-31T13:02:46.130503+00:00",
+  "5bd765e30916f5d0": "2026-10-31T13:02:46.130503+00:00",
+  "948deeaac8ddd06d": "2026-10-31T13:02:46.130503+00:00"
  },
  "recent": [
-  {
-   "title": "UK economic growth downgraded to 1% in 2027, Healey says in first budget",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNRDBMWWg3Z1JPS1hKTmpRTkJBZTFETG5EYm1VREdCeXpSRG5ORjNTbTMzWGZpcGxkT0Vid05KbEYzeGU5d2o0WTZJc3ZiMGdLV3hzLW1XQ0hYc0FBSWxpbDZtZTRZWm5iNF9WT0szeEpXTkpIRC1QTFV5QWIxUHdnclZsTzhuQU1jU1RWLUxEM2RnT1hDdU1QbmlvM0Y3VUcwLV9IaUNYRGt3UQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-28T13:01:22.876662+00:00",
-   "title_ru": "Экономический рост в Великобритании снизился до 1% в 2027 году, говорится в первом бюджете Хили"
-  },
   {
    "title": "Bank of Canada Rate Decision Today: Live News & Analysis, Macklem Speech",
    "link": "https://www.bloomberg.com/news/live-blog/2026-10-28/bank-of-canada-rate-decision-live-updates",
@@ -10408,6 +10400,41 @@
    "tags": [
     "Russia"
    ]
+  },
+  {
+   "title": "Senegal Lawmakers Reject Budget Again, Putting IMF Deal at Risk",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-31/senegal-lawmakers-reject-budget-again-putting-imf-deal-at-risk",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-31T13:02:46.130503+00:00",
+   "title_ru": "Законодатели Сенегала снова отклонили бюджет, поставив под угрозу сделку с МВФ",
+   "lead": "Senegalese lawmakers have again rejected the government’s revised 2026 finance law, prolonging a standoff that threatens to delay approval of a crucial International Monetary Fund program.",
+   "lead_ru": "Сенегальские законодатели снова отклонили пересмотренный правительственный закон о финансах от 2026 года, продлевая противостояние, которое грозит задержать утверждение важнейшей программы Международного валютного фонда."
+  },
+  {
+   "title": "China Finds More Gold, Nickel and Rhenium Reserves, Xinhua Says",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQR2ZMQ2RVSkhkRC1hUmp1SFNfUFNzQUFmTzRMc0pqTmluellpQS1kZ2hHMnkybm5rQThQUWRjV0FhYVdXT1cyM3JhRzdrdmZRa0RsRkxEcWNUMUQ0LVNKajc5OTA2d3hJYzR6NVI4Z2ZrZEdsenNPSWV0aXVTNG5QZHNPT1Z4TGk5THZUOHJjYTVsU2x1Z0YwZUMtNWZGUnhmSWNtTDN6anM3WFI0cjJLRnRsejhJdGFQd19v?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-31T13:02:46.130503+00:00",
+   "title_ru": "Китай обнаружил новые запасы золота, никеля и рения, сообщает Синьхуа",
+   "tags": [
+    "gold",
+    "China"
+   ]
+  },
+  {
+   "title": "The stock market’s front-runners stumbled in October. Here’s where the smart money is moving now.",
+   "link": "https://www.marketwatch.com/story/the-stock-markets-front-runners-stumbled-in-october-heres-where-the-smart-money-is-moving-now-f901472a?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-31T13:02:46.130503+00:00"
   }
  ],
  "last_digest": "2026-10-30",
@@ -17171,11 +17198,11 @@
    "0001193125-26-442229",
    "0001009759-26-000011",
    "0001193125-26-442230",
-   "0001213900-26-114607",
-   "0001193125-26-442142",
-   "0001498270-26-000012",
    "0002014361-26-000040",
    "0001628280-26-068639",
+   "0001498270-26-000012",
+   "0001213900-26-114607",
+   "0001193125-26-442142",
    "0001213900-26-114605",
    "0001280486-26-000010",
    "0001193125-26-442201",
