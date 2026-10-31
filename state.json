@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "92fb70be97289ab8": "2026-10-28T01:55:19.117051+00:00",
-  "60b4ad74af879741": "2026-10-28T02:00:19.133136+00:00",
-  "e94bf9b4631923d3": "2026-10-28T02:00:19.133136+00:00",
   "e2f4ca3e21cab0da": "2026-10-28T02:05:19.188400+00:00",
   "97a8ceedcf319db7": "2026-10-28T02:05:19.188400+00:00",
   "48ac2c00bbd61698": "2026-10-28T02:20:19.143287+00:00",
@@ -1108,25 +1105,10 @@
   "3cb677e09c26dcaf": "2026-10-31T01:01:27.272004+00:00",
   "fa249637e444bf71": "2026-10-31T01:11:27.140564+00:00",
   "29350db746d7e77e": "2026-10-31T01:16:27.142175+00:00",
-  "828c0d5b1764b371": "2026-10-31T01:16:27.142175+00:00"
+  "828c0d5b1764b371": "2026-10-31T01:16:27.142175+00:00",
+  "5efd2fb165882a85": "2026-10-31T02:01:27.245153+00:00"
  },
  "recent": [
-  {
-   "title": "New Zealand Dollar Slides Most Versus Aussie Since 2017 on RBNZ",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-28/new-zealand-dollar-slides-most-versus-aussie-since-2017-on-rbnz",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-28T02:00:19.133136+00:00",
-   "title_ru": "Новозеландский доллар упал по сравнению с австралийским с 2017 года на RBNZ",
-   "lead": "The New Zealand dollar tumbled after the central bank unexpectedly kept its policy rate on hold, defying economists’ forecasts for an interest-rate hike.",
-   "lead_ru": "Новозеландский доллар упал после того, как центральный банк неожиданно приостановил свою учетную ставку, бросив вызов прогнозам экономистов о повышении процентных ставок.",
-   "tags": [
-    "rates",
-    "dollar"
-   ]
-  },
   {
    "title": "First Venezuelan oil from US-NABEP deal arrives in Texas, to be sold to Exxon, Citgo",
    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOajN2UFlXd0wwM25Bd0ZIVVRPcEZQQkQydTRBQXBuT0RuYnBFRnFqbF9rYTZxdFhqWnBYYk10M0U3RGhXd1lReE5ndTk2VEd1SUI4SEUzLWx6YWRHOTBZaXdyOTFDMm9Cc1JjQ1ZPRHF2empCUy1wUmxaX2NnckhZeFFMOExJVnNHODU5YThsUWZ2RVRUX2xobXk4UUlLSDFvNFB6ZjhIVWZMRF9KYjhqcmVQUFhYUTlSLWdYaw?oc=5",
@@ -11795,6 +11777,21 @@
    "score": 3,
    "ts": "2026-10-31T01:11:27.140564+00:00",
    "title_ru": "CI Global Longevity Economic ETF (LONG.TO) | Цена акций и последние новости"
+  },
+  {
+   "title": "China Factory Activity Drops Back Into Decline as Growth Wobbles",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-31/china-factory-activity-manufacturing-purchasing-managers-index-services",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-31T02:01:27.245153+00:00",
+   "title_ru": "Производственная активность в Китае возвращается к спаду из-за колебаний роста",
+   "lead": "China’s factory activity shrank in October, underscoring the challenges facing policymakers as they seek to sustain an economic recovery to ensure this year’s growth target is met.",
+   "lead_ru": "Производственная активность Китая сократилась в октябре, что подчеркивает проблемы, с которыми сталкиваются политики, стремящиеся поддержать восстановление экономики, чтобы обеспечить достижение целевого показателя роста в этом году.",
+   "tags": [
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-10-30",
