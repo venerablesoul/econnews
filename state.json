@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e337765bd98ab536": "2026-10-28T22:10:50.973334+00:00",
-  "228b632f5e6a2b6b": "2026-10-28T22:10:50.973334+00:00",
-  "45676325404823f7": "2026-10-28T22:15:50.651997+00:00",
   "32ffca79800749b9": "2026-10-28T22:35:50.628199+00:00",
   "d831889bdcce1597": "2026-10-28T22:35:50.628199+00:00",
   "d9bb86022b37e4f5": "2026-10-28T22:35:50.628199+00:00",
@@ -883,33 +880,11 @@
   "59ebd5208369cdb1": "2026-10-31T21:03:52.078926+00:00",
   "f84e1e24c52c106f": "2026-10-31T21:18:52.061698+00:00",
   "96991facfbd089df": "2026-10-31T21:48:52.066030+00:00",
-  "c610c3560e4ec72c": "2026-10-31T21:58:52.138663+00:00"
+  "c610c3560e4ec72c": "2026-10-31T21:58:52.138663+00:00",
+  "81f96c10c8218294": "2026-10-31T22:13:52.069746+00:00",
+  "08fb06f1269f0558": "2026-10-31T22:18:52.088522+00:00"
  },
  "recent": [
-  {
-   "title": "Lumentum’s stock pops as investors cheer a possible sale to Marvell",
-   "link": "https://www.marketwatch.com/story/lumentums-stock-pops-as-investors-cheer-a-possible-sale-to-marvell-07c1d0e8?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-28T22:10:50.973334+00:00"
-  },
-  {
-   "title": "Oil Declines as Traders Parse Signs of Fresh Diplomacy on Iran",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-28/oil-declines-as-traders-parse-signs-of-fresh-diplomacy-on-iran",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T22:15:50.651997+00:00",
-   "title_ru": "Нефть падает, поскольку трейдеры анализируют признаки свежей дипломатии по Ирану",
-   "lead": "Oil dropped as traders weighed fresh diplomatic efforts in the Middle East to avert a potential restart of US military strikes on Iran.",
-   "lead_ru": "Нефть упала, поскольку трейдеры взвесили новые дипломатические усилия на Ближнем Востоке, чтобы предотвратить потенциальное возобновление военных ударов США по Ирану.",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "Sprouts Sinks After Outlook Cut on Cyclospora, Consumer Woes",
    "link": "https://www.bloomberg.com/news/articles/2026-10-28/sprouts-slashes-outlook-after-cyclospora-outbreak-hit-sales",
