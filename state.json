@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "801c7782fd9b08f7": "2026-10-28T04:10:20.532814+00:00",
   "7804fa144aca860f": "2026-10-28T04:25:21.396720+00:00",
   "b9abd76d4b1020ab": "2026-10-28T04:30:19.150619+00:00",
   "cbf917756609bcfe": "2026-10-28T04:35:51.194073+00:00",
@@ -1099,22 +1098,12 @@
   "bd85eb5bff899be8": "2026-10-31T03:47:16.042665+00:00",
   "22b8761cbc7a3131": "2026-10-31T03:52:16.097574+00:00",
   "41baa953c9754c92": "2026-10-31T04:02:16.082066+00:00",
-  "0387735e805dc666": "2026-10-31T04:07:16.165415+00:00"
+  "0387735e805dc666": "2026-10-31T04:07:16.165415+00:00",
+  "05bb52bd10953af8": "2026-10-31T04:12:16.085959+00:00",
+  "2fa47c5a6f26c6ab": "2026-10-31T04:17:16.077707+00:00",
+  "2ba07d769909afb8": "2026-10-31T04:17:16.077707+00:00"
  },
  "recent": [
-  {
-   "title": "AI worries expose dollar's hot-money problem",
-   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQY0NWaVVKX3pobnFkV1YzZUZicHYzOEU2M0R3NHdqZTQ0emFvQl9pQzhMZGV3dzNHckp6MldEd1Q3WjZlRnpfeUdMQTc4YnRCMldzTWJscGpYRnpPQ25JZDhoQ0VzSnlDMndZZTFuNGRlb2R3LUVGU3AxS0NkX1ozbmlhbS1ia2pFRU5hQzlra1FPLVlhU1FjQS1zRHZwUnM?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T04:10:20.532814+00:00",
-   "title_ru": "ИИ опасается разоблачить проблему горячих денег доллара",
-   "tags": [
-    "dollar"
-   ]
-  },
   {
    "title": "Walmart's margins in Mexico tighten as costs outpace sales growth",
    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNelRta1BhMGJfdV9yaTFKLXQwQU4yR3ZvZVZ6ZGEwRXRvSGIwMFZQY1ZvVy03LWVqYzdkalh1Uk5zaV9DWlVoT3ZhVEZfbWlCTGhWZXU2bG1ILXN2ZlBHVXZ1TWFZbUtBbEZrV09GWlprdE5OMERUT0JQUzNZY0FOVjJSUDRqSXZIcy1odVFJbGxOclZzTkJNYjJmWGJjNVlsV2c1ME5RMkhPTnB3Z2c?oc=5",
@@ -11640,6 +11629,16 @@
    "title_ru": "Более быстрые продажи ETF БАНКА ЯПОНИИ могут помочь плану расходов Такаити",
    "lead": "The Bank of Japan’s decision to accelerate sales of exchange-traded funds could boost its payments to the government, potentially helping Prime Minister Sanae Takaichi finance her costly policy agenda.",
    "lead_ru": "Решение Банка Японии ускорить продажи биржевых фондов может увеличить платежи правительству, потенциально помогая премьер-министру Санаэ Такаити финансировать ее дорогостоящую политическую повестку дня."
+  },
+  {
+   "title": "EXCLUSIVE: Trump appointee Bill Pulte’s housing agency obstructed watchdog, report says",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPV0pVcUdQV3Rvd2p3bXRua0ZVQmJGZzdPdWdaUGFHN1hwN1N3Z3poRjIzREpwNXRGVDJ3ZjJsTURGS0hTcFdwejFqVk8xRkhBY3F0dlhkdV9QWm1jVGFhV1IwakFkcERUbHByd3RWakZWU2tkSTJQZG9mOXlEcWI2bG53a0tOdUhCWmQ5R0pGMUw0Z01JMF9CS2ZZb1dLNU8tcmIydk81bHVCS0R3Rlhtc1YtY1B0RVkzSkJUR05yMXpJWTk2emc?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-31T04:17:16.077707+00:00",
+   "title_ru": "Эксклюзив: назначенное Трампом жилищное агентство Билла Пулте препятствовало сторожевому псу, говорится в отчете"
   }
  ],
  "last_digest": "2026-10-30",
@@ -18394,7 +18393,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-31T03:11:27.215533+00:00",
+  "checked": "2026-10-31T04:12:16.085959+00:00",
   "sec_seen": [
    "0002014361-26-000040",
    "0001213900-26-114588",
