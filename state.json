@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "545e96ec9631ef00": "2026-10-28T16:00:12.745501+00:00",
-  "77a247affff7d083": "2026-10-28T16:00:12.745501+00:00",
-  "7a8a369061a98c93": "2026-10-28T16:00:12.745501+00:00",
   "aa8468857d17e181": "2026-10-28T16:05:12.400315+00:00",
   "f908e17e2fd32be1": "2026-10-28T16:10:12.468714+00:00",
   "ac76c270f80b0673": "2026-10-28T16:10:12.468714+00:00",
@@ -976,31 +973,12 @@
   "5a1cc7209ff33229": "2026-10-31T15:18:19.771871+00:00",
   "46af647bea834d1c": "2026-10-31T15:43:19.830025+00:00",
   "b32451a9c8e74cb1": "2026-10-31T15:53:19.821643+00:00",
-  "c55de5cb3fbe8318": "2026-10-31T15:53:19.821643+00:00"
+  "c55de5cb3fbe8318": "2026-10-31T15:53:19.821643+00:00",
+  "09a59aff65e18c61": "2026-10-31T16:03:19.822803+00:00",
+  "6bd9d31a8b72a909": "2026-10-31T16:03:19.822803+00:00",
+  "89ef9b5bcfc87889": "2026-10-31T16:03:19.822803+00:00"
  },
  "recent": [
-  {
-   "title": "EQT's acquisition of Range underscores race to dominate US natgas market",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOVzBKNWthZ2NLZTF4Qmw4cm5tNGZFb2dkRmN1MmZqQ24xa1JmZTJCU1VqbjJqTjdQampGODVpX0dIWVJFOVI2VFA3eXN0ZEJweFlGLW83d1RKRVdXN2NFWWpVNTFxT05EYkJsc1VGY2drS0FhM0hXZXI5N3hFYzNxV2VNTzlEM2w0ZWJ5Z095RTJYcG5wdXJuWmhJYnphWnVHaFJiQWlzX3E3WHdDbnN1VXg1bjlaVGpq?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T16:00:12.745501+00:00",
-   "title_ru": "Приобретение EQT компании Range подчеркивает стремление к доминированию на рынке природного газа в США"
-  },
-  {
-   "title": "How will Budget forecasts affect the tax you pay?",
-   "link": "https://www.ft.com/content/2b5adffc-90e9-4355-bd07-037a2144a6a3?syn-25a6b1a6=1",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T16:00:12.745501+00:00",
-   "title_ru": "Как прогнозы бюджета повлияют на размер налога, который вы платите?",
-   "lead": "Fiscal drag is set to hit taxpayers harder than previously thought",
-   "lead_ru": "Фискальное сопротивление ударит по налогоплательщикам сильнее, чем предполагалось ранее"
-  },
   {
    "title": "Micron’s stock rises after SK Hynix earnings. Here’s its next major test.",
    "link": "https://www.marketwatch.com/story/microns-stock-rises-after-sk-hynix-earnings-heres-its-next-major-test-99853d0e?mod=mw_rss_topstories",
@@ -9912,6 +9890,33 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "Want guaranteed income in retirement without an annuity? Try laddering I bonds.",
+   "link": "https://www.marketwatch.com/story/how-to-use-i-bonds-to-create-guaranteed-inflation-proof-income-in-retirement-50753fea?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 2,
+   "ts": "2026-10-31T16:03:19.822803+00:00"
+  },
+  {
+   "title": "Britain’s housing crisis won’t be fixed without a new tax landscape",
+   "link": "https://www.theguardian.com/business/2026/oct/31/housing-crisis-fix-britain-tax-landscape",
+   "sources": [
+    "The Guardian"
+   ],
+   "score": 2,
+   "ts": "2026-10-31T16:03:19.822803+00:00"
+  },
+  {
+   "title": "We’re in our 70s. Should we pay off our 2.5% mortgage — or put the money in a high-yield savings account?",
+   "link": "https://www.marketwatch.com/story/we-are-in-our-70s-should-we-pay-off-our-2-5-mortgage-or-build-up-our-savings-5a35e9c1?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-10-31T16:03:19.822803+00:00"
   }
  ],
  "last_digest": "2026-10-30",
