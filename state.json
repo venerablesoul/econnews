@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "6812d692c7888328": "2026-10-28T12:26:22.828364+00:00",
   "186f08bb6eb4494c": "2026-10-28T12:31:22.923020+00:00",
   "120f8c1da2bf5f27": "2026-10-28T12:31:22.923020+00:00",
   "a33d23d8d2828b6a": "2026-10-28T12:31:22.923020+00:00",
@@ -1034,19 +1033,10 @@
   "35a5f28f6d069d1d": "2026-10-31T11:17:46.103418+00:00",
   "ca7508941492ad65": "2026-10-31T11:32:46.107977+00:00",
   "b88345da7c47ff03": "2026-10-31T12:07:46.118777+00:00",
-  "e385915a0f3925ae": "2026-10-31T12:12:46.179377+00:00"
+  "e385915a0f3925ae": "2026-10-31T12:12:46.179377+00:00",
+  "7a0775e1548d2649": "2026-10-31T12:27:46.087596+00:00"
  },
  "recent": [
-  {
-   "title": "Iranians cut essentials and put dreams on hold as war-hit economy bites",
-   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQVjd4SVdyN0hZcml3UmdlZW1qOW11WFNjUVJxTjhiNHF1N2tCanBqd1ctbzNtOFhOQURONzhNZFRyckdnVVloZ05VNFVaTm9EbFpUUm16MmFrNlFNSC16N1lMb1h4cUdCS29DalBFcEptZkpVLWVUbFhpQ2lwdkV1SS1RYU9ReDU1czFNNHB0dlFTM1BOWnhudzd1VUViVWg3WWViWnlaWnVlZm9uTDN0LXlEVF9VNDVUcnc?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T12:26:22.828364+00:00",
-   "title_ru": "Иранцы режут предметы первой необходимости и откладывают мечты, поскольку экономика, пострадавшая от войны, кусается"
-  },
   {
    "title": "Market Talk: Why is the Fed waiting to hike?",
    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE8wUFAzYnBVa1puNlFNRkZzbW9NazRJUlZJMEJic1d4V3FrczFsbzJYb0F2eXdvZXZjM2JycjRpcTJlVHNEYmI4blhYQkxLMm8ycFVid2wxZnVQR253VG5mQV9mb1poWkJVYXJkY0JzZ3dRRXdFZUt2REtXbDN3dw?oc=5",
@@ -10580,6 +10570,21 @@
    "score": 5,
    "ts": "2026-10-31T12:12:46.179377+00:00",
    "title_ru": "- Электронная библиотека МВФ"
+  },
+  {
+   "title": "Russia Extends Ban on Most Diesel Exports Through January",
+   "link": "https://www.bloomberg.com/news/articles/2026-10-31/russia-extends-ban-on-most-diesel-exports-through-january",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-31T12:27:46.087596+00:00",
+   "title_ru": "Россия продлила запрет на большую часть экспорта дизельного топлива до января",
+   "lead": "Russia’s government has extended a general ban on diesel exports by producers until the end of January while still allowing some volumes to flow to the global market.",
+   "lead_ru": "Правительство России продлило общий запрет на экспорт дизельного топлива производителями до конца января, все еще позволяя некоторым объемам поступать на мировой рынок.",
+   "tags": [
+    "Russia"
+   ]
   }
  ],
  "last_digest": "2026-10-30",
@@ -10631,7 +10636,7 @@
   "2026-10-31-09"
  ],
  "calendar": {
-  "fetched": "2026-10-31T06:27:16.110388+00:00",
+  "fetched": "2026-10-31T12:27:46.087596+00:00",
   "events": [
    {
     "title": "Bank Holiday",
@@ -17343,11 +17348,11 @@
    "0001193125-26-442229",
    "0001009759-26-000011",
    "0001193125-26-442230",
-   "0002014361-26-000040",
-   "0001628280-26-068639",
-   "0001498270-26-000012",
    "0001213900-26-114607",
    "0001193125-26-442142",
+   "0001498270-26-000012",
+   "0002014361-26-000040",
+   "0001628280-26-068639",
    "0001213900-26-114605",
    "0001280486-26-000010",
    "0001193125-26-442201",
