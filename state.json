@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "6cadc9241e38560e": "2026-10-28T18:15:12.391605+00:00",
-  "ba904e5ae7ee148f": "2026-10-28T18:15:12.391605+00:00",
-  "e3d3b12329d60c76": "2026-10-28T18:20:13.859813+00:00",
-  "8bb9c6eba8439029": "2026-10-28T18:20:13.859813+00:00",
-  "9b0591a898f10ac9": "2026-10-28T18:20:13.859813+00:00",
   "5aedc0a6589d071b": "2026-10-28T18:25:12.708093+00:00",
   "240e3ee658b1f8d9": "2026-10-28T18:25:12.708093+00:00",
   "a1b53e8a1a0e60c8": "2026-10-28T18:30:12.409637+00:00",
@@ -949,81 +944,6 @@
   "5dbc14cfcb2e591a": "2026-10-31T17:53:19.842574+00:00"
  },
  "recent": [
-  {
-   "title": "Lionsgate in Investor Talks for Rare Film Library-Backed Bonds",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-28/lionsgate-in-investor-talks-for-rare-film-library-backed-bonds",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T18:15:12.391605+00:00",
-   "title_ru": "Lionsgate ведет переговоры с инвесторами о выпуске облигаций, обеспеченных библиотекой редких фильмов",
-   "lead": "Lionsgate Studios Corp., the filmmaker behind The Hunger Games and other titles, is looking to sell bonds backed by its catalog and talking to investors about a possible transaction.",
-   "lead_ru": "Lionsgate Studios Corp., кинематографист, стоящий за «Голодными играми» и другими фильмами, надеется продать облигации, подкрепленные его каталогом, и поговорить с инвесторами о возможной сделке.",
-   "tags": [
-    "bonds"
-   ]
-  },
-  {
-   "title": "Boeing Rout a Win For Skeptics Who Rejected Wall Street Optimism",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-28/boeing-rout-a-win-for-skeptics-who-rejected-wall-street-optimism",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T18:15:12.391605+00:00",
-   "title_ru": "Boeing одержал победу над скептиками, которые отвергли оптимизм Уолл-стрит",
-   "lead": "Boeing Co.’s disappointing outlook, which sparked the stock’s sharpest selloff since June 2020, handed a win to bearish investors who had shrugged off Wall Street’s increasingly bullish stance over the past several months.",
-   "lead_ru": "Разочаровывающий прогноз Boeing Co., который вызвал самую резкую распродажу акций с июня 2020 года, принес победу медвежьим инвесторам, которые в течение последних нескольких месяцев игнорировали все более бычью позицию Уолл-стрит.",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "ФРС сохранила ставку на уровне 3,75-4% годовых",
-   "link": "https://www.kommersant.ru/doc/9063206",
-   "sources": [
-    "Kommersant"
-   ],
-   "score": 5,
-   "ts": "2026-10-28T18:20:13.859813+00:00",
-   "title_en": "The Fed kept the rate at 3.75-4% per annum",
-   "lead": "Комитет по открытым рынкам Федеральной резервной системы США сохранил процентную ставку на уровне 3,75-4% годовых, следует из пресс-релиза ведомства.",
-   "lead_en": "The US Federal Reserve Open Market Committee has kept the interest rate at 3.75-4% per annum, according to a press release from the department.",
-   "tags": [
-    "Fed",
-    "rates"
-   ]
-  },
-  {
-   "title": "Bond Traders See 90% Chance of December Hike After Fed Holds",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-28/bond-traders-see-90-chance-of-december-hike-after-fed-holds",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-28T18:20:13.859813+00:00",
-   "title_ru": "Трейдеры облигаций видят 90-процентный шанс на декабрьское повышение после удержания ФРС",
-   "lead": "US Treasuries held small losses after the Federal Reserve held interest rates steady and reinforced traders’ expectations that tightening will resume in December.",
-   "lead_ru": "Казначейские облигации США понесли небольшие убытки после того, как Федеральная резервная система удерживала процентные ставки на стабильном уровне и укрепила ожидания трейдеров о том, что ужесточение возобновится в декабре.",
-   "tags": [
-    "Fed",
-    "rates",
-    "bonds"
-   ]
-  },
-  {
-   "title": "The Budget explained in less than one minute",
-   "link": "https://www.bbc.co.uk/news/videos/crkg70lnlx9yo?at_medium=RSS&at_campaign=rss",
-   "sources": [
-    "BBC"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T18:20:13.859813+00:00",
-   "title_ru": "Бюджет объясняется менее чем за одну минуту",
-   "lead": "What the Budget means for you in under a minute",
-   "lead_ru": "Что значит для вас бюджет менее чем за минуту"
-  },
   {
    "title": "White House Study Sees Higher Growth, Wages From Permitting Bill",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQWnFISDhSNlFONDdDcGYxeGowYVN6bFh0MEJoN1dsUzNpOGN6ZTZJekRUNzlYLXB6Rlk0QXJFeTZ5Nnl3ZGdMcGl1ZGJJVmg2UmwtQVpKRk1PcU9rUDdlcGxrb2hGOF9hOU44YV82XzdSVG5vb2pVdXZqVFVYYWdzQm04UDhFTFRVbkxRZmpNQzF2c2JvNnVacnVWQmI3SzBHa2tpODRibkdQVjFlNE9mMS1vTnA?oc=5",
