@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "29350db746d7e77e": "2026-10-28T01:10:19.156105+00:00",
   "004d7279e576d793": "2026-10-28T01:15:19.137050+00:00",
   "08a05dbb115a0255": "2026-10-28T01:25:19.121580+00:00",
   "737c7529a92e9e4a": "2026-10-28T01:25:19.121580+00:00",
@@ -1112,7 +1111,8 @@
   "e3681b2dd41e7d61": "2026-10-31T00:51:27.149244+00:00",
   "d6fad56165f2cbf9": "2026-10-31T00:51:27.149244+00:00",
   "5b60d59790088c37": "2026-10-31T00:56:27.127616+00:00",
-  "3cb677e09c26dcaf": "2026-10-31T01:01:27.272004+00:00"
+  "3cb677e09c26dcaf": "2026-10-31T01:01:27.272004+00:00",
+  "fa249637e444bf71": "2026-10-31T01:11:27.140564+00:00"
  },
  "recent": [
   {
@@ -11848,6 +11848,16 @@
    "score": 5,
    "ts": "2026-10-31T00:56:27.127616+00:00",
    "title_ru": "Прогнозирование текущей экономической активности в Афганистане"
+  },
+  {
+   "title": "CI Global Longevity Economy ETF (LONG.TO) | Stock Price & Latest News",
+   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9RM1lTOTBGRks4Wm54Ynh1bU5oV3NYbHFRMmRQUUU4bGFqWDdUbjBJMnJtNEZ1aW9CZXdqVEZSSXN6U2ZyMVU5NUJZeW9VeXB2LWxUVkYxWDNMTkZoYnpFQTFBakZmb2FkS1prcmRB?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-31T01:11:27.140564+00:00",
+   "title_ru": "CI Global Longevity Economic ETF (LONG.TO) | Цена акций и последние новости"
   }
  ],
  "last_digest": "2026-10-30",
@@ -14692,6 +14702,22 @@
     "date": "2026-10-30",
     "disclosed": "2026-10-30",
     "link": "https://www.sec.gov/Archives/edgar/data/2037157/000123191926001519/0001231919-26-001519-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "4ae20e52e40c01dd",
+    "ticker": "SNES",
+    "company": "SenesTech, Inc.",
+    "who": "Glenbrook Capital Management",
+    "role": "10% owner",
+    "type": "buy",
+    "value": 29056,
+    "shares": 30000,
+    "price": 0.97,
+    "plan": false,
+    "date": "2026-10-30",
+    "disclosed": "2026-10-30",
+    "link": "https://www.sec.gov/Archives/edgar/data/1680378/000173112226001386/0001731122-26-001386-index.htm"
    },
    {
     "src": "sec",
@@ -18548,22 +18574,6 @@
     "date": "2026-10-23",
     "disclosed": "2026-10-26",
     "link": "https://www.sec.gov/Archives/edgar/data/1815639/000162828026067362/0001628280-26-067362-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "bedf6a8678f96bc1",
-    "ticker": "STC",
-    "company": "STEWART INFORMATION SERVICES CORP",
-    "who": "C Allen Jr Bradley",
-    "role": "Director",
-    "type": "buy",
-    "value": 94600,
-    "shares": 2000,
-    "price": 47.3,
-    "plan": false,
-    "date": "2026-10-23",
-    "disclosed": "2026-10-26",
-    "link": "https://www.sec.gov/Archives/edgar/data/1341775/000162828026067360/0001628280-26-067360-index.htm"
    }
   ],
   "docs": {
@@ -18602,7 +18612,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-31T00:06:27.241679+00:00",
+  "checked": "2026-10-31T01:11:27.140564+00:00",
   "sec_seen": [
    "0001823923-26-000015",
    "0001213900-26-114606",
@@ -18638,12 +18648,12 @@
    "0001193125-26-442229",
    "0002014386-26-000026",
    "0001213900-26-114605",
+   "0001731122-26-001386",
    "0001213900-26-114609",
    "0001824159-26-000015",
    "0001498270-26-000012",
    "0001231919-26-001519",
    "0001193125-26-442142",
-   "0002088549-26-000017",
    "0001213900-26-114611",
    "0002014361-26-000040",
    "0001223260-26-000011",
