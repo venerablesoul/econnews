@@ -1,15 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "a5e873d26fa7808a": "2026-10-28T09:15:51.215373+00:00",
-  "cd466187efd80c68": "2026-10-28T09:15:51.215373+00:00",
-  "e79c73a7167863b2": "2026-10-28T09:15:51.215373+00:00",
-  "3663a2fd08e3e668": "2026-10-28T09:15:51.215373+00:00",
-  "e7a7bbf33a2fcd3c": "2026-10-28T09:20:51.170473+00:00",
-  "1bb42af75ad700c7": "2026-10-28T09:20:51.170473+00:00",
-  "ac716d5f6b7f3e8d": "2026-10-28T09:20:51.170473+00:00",
-  "98c527cb33786493": "2026-10-28T09:20:51.170473+00:00",
-  "89ef9b5bcfc87889": "2026-10-28T09:20:51.170473+00:00",
   "eed23395d9587741": "2026-10-28T09:30:51.189178+00:00",
   "5f9b8b855525565b": "2026-10-28T09:30:51.189178+00:00",
   "7ec63dd27c8b0bb0": "2026-10-28T09:30:51.189178+00:00",
@@ -1077,112 +1068,10 @@
   "96fcfebc3bbd1e8e": "2026-10-31T08:52:16.072104+00:00",
   "1a62f23f4d91d961": "2026-10-31T09:02:46.481177+00:00",
   "c55509c82e691cac": "2026-10-31T09:12:46.152668+00:00",
-  "bf5cd36e24891077": "2026-10-31T09:12:46.152668+00:00"
+  "bf5cd36e24891077": "2026-10-31T09:12:46.152668+00:00",
+  "0dfc4992d0876b7a": "2026-10-31T09:17:46.077269+00:00"
  },
  "recent": [
-  {
-   "title": "COMMENTARY: Natural gas is losing its grip across key power markets",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPNlVuNTFqX1F2UmRxa3N2ZHhEbmREYUVfY0hsRjEwbmNxSmQtVVpZc1BhbGhVQmtpeVY3ekdiNlNxWlQtTmFEdm9QZS1TcWtUZldtQlQ1VE5ZM1RaRl9hTGFtTUc2LUtNSkE1QmwxbUk2TmowaXJBVTZWbHFKVkN2YWxSc0w4N1dzaXQyWENGeUhKRzJKNkl2SE9PcmU0d0pkaTN1dmJrWUc2REpwdnNncnZKbEpBZXp4ZVUyVnRNM2xlQQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-28T09:15:51.215373+00:00",
-   "title_ru": "Клика теряет свою хватку и изо всех сил пытается выжить. Обсудите, как вы справитесь с этой ситуацией, когда она возникнет.",
-   "tags": [
-    "gas"
-   ]
-  },
-  {
-   "title": "Sprake: Fed Now Concerned About High Energy Prices (Video)",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-28/sprake-fed-now-concerned-about-high-energy-prices-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T09:15:51.215373+00:00",
-   "title_ru": "60. Бразилия обеспокоена растущей неустойчивостью цен на продовольствие и источники энергии.",
-   "tags": [
-    "Fed"
-   ]
-  },
-  {
-   "title": "Baker Hughes rounds out oilfield services earnings with lower quarterly profit",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPWTlMQThaWmdUc29OLTlLVTZwaHBDQnZ4Z0tGZUhGYWIyLVFsRUNOa1FONjlUTW9qcGFFZkhEVV9rdDBRMXdPTTlPYmlaalhTRlotb3hyZW5WY3FTZTJwUHpKSGZXWDBfNTkwM3ZfdFp2UHBscUZ2Vktkb1Z1bF9rcU8xelZBZW44bkZMMmpucEpiNlpDeFg3VHVmd3ZRTDNKOFAyWmtZdE50ZUYwYmRGWGNROXlCRUlfSVJVN1dSN0o?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T09:15:51.215373+00:00",
-   "title_ru": "Baker Hughes завершает прибыль от нефтесервисных услуг с более низкой квартальной прибылью"
-  },
-  {
-   "title": "Поволжская компания обратится в суд для признания «Балтики» банкротом",
-   "link": "https://www.rbc.ru/business/28/10/2026/6ae1b4b6180efc817562b9d6",
-   "sources": [
-    "RBC"
-   ],
-   "score": 1,
-   "ts": "2026-10-28T09:15:51.215373+00:00"
-  },
-  {
-   "title": "Indonesia to form special body to accelerate oil and gas investment, minister says",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQM3Bsek40dWMwV3ZlcFVCd3FEazlFWGxRVkJLX2w4UVhwSEFOMldWc0trUy1kV2pVX0R2b1dYOWl1aENERldJUF92c29Za3FnVE5rbl9zRDhOMGEzMXg0aGhsc2x1XzlSOHBHbWZEQlJPT3owNHFXTUJtdFNjRUlGUU9rc3hNRndYNFNIWEZlQW1ZLS1uemRLOXJROHhoSGw0QkR6ck5qYmZjeXVOVUxFSmRWc0EwendCQ29VU09UeGo?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-28T09:20:51.170473+00:00",
-   "title_ru": "Индонезия сформирует специальный орган для ускорения инвестиций в нефть и газ, заявил министр",
-   "tags": [
-    "oil"
-   ]
-  },
-  {
-   "title": "Merz invites Japan to back trade alliance as China asks Germany to be 'rational'",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPOTJSV296X1JIblZreVlzNk5SRzZqYkhwSXpaX3cyT1RuX3NUeGtlQUo1YkFxRy1KMkJXNS1iRFhHRVkzSzBuT2FUanRGMlNnWmEtc3Jmb3A1NDV6aWI5V1NhMXVvYm5jcGl5aXVUWTE4SG1veHRQWXQyWnJlTTFXVDFFNVlNOFZ6RUkyekVzQzVQZWpwNGhxck5Ra0FYVTI1MUw3QUJvNmlwNVAtSEI1QjhrZTA4VGpD?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T09:20:51.170473+00:00",
-   "title_ru": "Мерц предлагает Японии поддержать торговый альянс, в то время как Китай просит Германию быть «рациональной»",
-   "tags": [
-    "China"
-   ]
-  },
-  {
-   "title": "UK's Healey says he will help households by scrapping fixed gas charges",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNUU5FNkRLTTZZZnVoR0pVbjlMdXd0b056eUFxaUV2cGpaNjFTM3lsMmg5RW8xSlZiLWZJX1NzSTJJWkpybXhtcloxa0VzUUNxSDBJVk9neHhWZk5jbTNmbVVicXV1d0lkMjh5UlVJX2tBSHBQaUY3WkxlSHgtQUdnV3ltcEs5SDhnQU5RemE0RDJCaFA3b3RFdXZiSlZZSko2dkhneUtLSTI2WmRiSmZIdXdSZzFIQl9wWl9Zd19MVQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T09:20:51.170473+00:00",
-   "title_ru": "Британский Healey говорит, что поможет домохозяйствам, отменив фиксированные сборы за газ"
-  },
-  {
-   "title": "Philippines in talks with several countries, including Saudi Arabia, for oil storage",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQMWM1YlAzX25ySkZ2NmFQUzBWQnNPLTVzYlVOLVdsMHlFcEN0QWJ5a05xQXMyRF9VR05iNmc4MnNzVW5zd2tYWW5YUEJxR0xKN1NpTmxOYjdyemFiT1JfaUc0R29kQ3plNHJOZ2hnNTE0X1E3MmNDNDM5NmVqQXpVbnJBNTNOaU1LaHA3aW5fV0JmUzd5RDQyQWF1a3hVTG4tQVFUaTlzelhMT0lfcEZKU1VpSVZlejJjUEpGLTh2bm94b3FwNWc?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T09:20:51.170473+00:00",
-   "title_ru": "Филиппины ведут переговоры с несколькими странами, включая Саудовскую Аравию, о хранении нефти",
-   "tags": [
-    "oil"
-   ]
-  },
-  {
-   "title": "We are in our 70s. Should we pay off our 2.5% mortgage or build up our savings?",
-   "link": "https://www.marketwatch.com/story/we-are-in-our-70s-should-we-pay-off-our-2-5-mortgage-or-build-up-our-savings-5a35e9c1?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-28T09:20:51.170473+00:00"
-  },
   {
    "title": "Germany set for record trade deficit with Asia-Pacific in 2026, report says",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNTTdlT0t1VVBXRElsZDdIX1BRQnlMaVM0emdXanFrVVJlQ0FHdUNqVU1NSHd4cTNUd2FyQ1M5VHJUdy1ORDBocmhTa0V6enRRQi1CQ05PYy1VSUZzRlgyLTFWcktjc0NCd3FrczUwcnBHcHFrQ2NObGdHOS1SSnhmRDhPOXlCYlRmQnJzdVRGLTV3Qy1OTXJ2SmF4U3dLdUpsazdhY0dQX0xzVjl4QmU1YlFiS0Y4dw?oc=5",
@@ -17906,7 +17795,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-31T08:22:16.133740+00:00",
+  "checked": "2026-10-31T09:22:46.148945+00:00",
   "sec_seen": [
    "0001493152-26-049496",
    "0001231919-26-001519",
