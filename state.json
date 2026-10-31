@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "dd4e79c2087ac972": "2026-10-28T06:45:51.185759+00:00",
-  "85664c9689da37dd": "2026-10-28T06:50:51.159351+00:00",
-  "a676a94d45e461f4": "2026-10-28T06:50:51.159351+00:00",
   "5b64bfc680673f2d": "2026-10-28T06:55:51.156879+00:00",
   "7e9c3a61e3297a6a": "2026-10-28T07:15:51.206151+00:00",
   "9ed5115849214613": "2026-10-28T07:15:51.206151+00:00",
@@ -1090,56 +1087,10 @@
   "3ddee3342475be14": "2026-10-31T06:22:16.044097+00:00",
   "cceefac1d6be112d": "2026-10-31T06:27:16.110388+00:00",
   "649b18a63c9ada96": "2026-10-31T06:42:16.073749+00:00",
-  "b80bbd5c554e54c6": "2026-10-31T06:42:16.073749+00:00"
+  "b80bbd5c554e54c6": "2026-10-31T06:42:16.073749+00:00",
+  "bd9ca5e80ba19468": "2026-10-31T06:52:16.032936+00:00"
  },
  "recent": [
-  {
-   "title": "China Greenlights Formal Operation of Southern Power Market",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQckYwLWVjeUUyVGZpVlFPRG91WmgzZHljdHRob1ExMjZzYlpwQlAxZ1B2NWpuRFNrRFlwa0xQMjhYOVAzN1phTFRMRUo4b0NMQUE5djI1RE5nM2lfSzYyUnM1Ti1ZZnJsMTlTUmg2MXV4WW5XZ3lBc3hkRS1pZWVuY0tZcGtTT2xhRnZCVllKR2lmeFB0bjY2bEhqWTBRZ2UtMGk1UzZoVGdYazU1d21V?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T06:45:51.185759+00:00",
-   "title_ru": "Китай освещает официальное функционирование Южного энергетического рынка",
-   "tags": [
-    "China"
-   ]
-  },
-  {
-   "title": "JPMorgan Private Bank’s Tang Sees More Downside Risk for Gold",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-28/jpmorgan-private-bank-s-tang-sees-more-downside-risk-for-gold",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-28T06:50:51.159351+00:00",
-   "title_ru": "Тан из JPMorgan Private Bank видит больший риск снижения цен на золото",
-   "lead": "Gold still faces downside risk after the latest sell-off as liquidity remains thin and interest rates have room to rise, Yuxuan Tang, head of rates and foreign-exchange strategy for Asia at JPMorgan Private Bank, said in an…",
-   "lead_ru": "Золото по-прежнему сталкивается с понижательным риском после последней распродажи, поскольку ликвидность остается низкой, а процентные ставки могут расти, сказал Юйсюань Тан, глава отдела ставок и валютной стратегии для Азии в JPMorgan Private Bank, в...",
-   "tags": [
-    "rates",
-    "gold",
-    "markets"
-   ]
-  },
-  {
-   "title": "China Refiners Tap African, Brazilian Oil as Freight Rates Fall",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-28/china-refiners-tap-african-brazilian-oil-as-freight-rates-fall",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-28T06:50:51.159351+00:00",
-   "title_ru": "Китайские нефтеперерабатывающие заводы производят африканскую и бразильскую нефть в связи с падением фрахтовых ставок",
-   "lead": "Chinese refiners are buying crude from West Africa and Brazil after a drop in long-haul freight rates cut costs, giving them more supply options as competition for Russian barrels intensifies.",
-   "lead_ru": "Китайские нефтеперерабатывающие заводы покупают нефть из Западной Африки и Бразилии после падения ставок на дальние перевозки, что сокращает расходы, предоставляя им больше вариантов поставок по мере усиления конкуренции за российские баррели.",
-   "tags": [
-    "oil",
-    "China",
-    "Russia"
-   ]
-  },
   {
    "title": "Dark Fleet Tankers Move From Venezuela to Lucrative Hormuz Trade",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQT2xUbGZHNlpJSm1xTjJvM1NGN3BuaGFweUdPNllhelR3R0hpYjdZeFZpc016VDN0RDhsYTN3OG80LVg4UzJIYUNNX2JaVFVUaVVpeWdHVjRTWlh5Si1fUEg5RHVyaGJ6MzZDLTNBT3NKbUMtS3lyYm9rc29sUzFfVWVQWjY3eWVfYjlZRHVRaTdLMDB0bk9kZ2JibEE4MVBBX0RYS05xQWxCVVBMdkNnVm84T3pMZw?oc=5",
@@ -11379,6 +11330,19 @@
    "title_ru": "Темпы роста реального ВВП",
    "tags": [
     "GDP"
+   ]
+  },
+  {
+   "title": "Tech Stocks Plunge as Wall Street Enters ‘Show Me’ Phase",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQRnJ5U0htbzlQVFk1UDl3eEw5WUdXU3VZR0Z1UFBINjViWkxCaVo5MWpjUEg5bTJNblBlZE9OTkZSRjUtNE5EYWRJN0N2aG80Q25na254eGJhQk9mZ3VOY0NWWHhBZGNGQXVuYkM1Mmt0YndtN0hTTXlUZDJhN1k3TTNZZW4zMzhwS0U1MExTZ3pjRzJ1NVY4ZUVxM0RiR1k2V29KUWtESWNlcGdUam9SWVpTdU4zU1lVLXVHRWNFaTY2UVk?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-10-31T06:52:16.032936+00:00",
+   "title_ru": "Технологические акции падают, поскольку Уолл-стрит вступает в фазу «Покажи мне»",
+   "tags": [
+    "markets"
    ]
   }
  ],
