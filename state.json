@@ -1,12 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "96991facfbd089df": "2026-10-28T21:40:50.968587+00:00",
-  "5d7b0044c0518c38": "2026-10-28T21:40:50.968587+00:00",
-  "f4d01aeebf8c26eb": "2026-10-28T21:40:50.968587+00:00",
-  "a8e771a092bb1b8c": "2026-10-28T21:40:50.968587+00:00",
-  "6527e34015e43599": "2026-10-28T21:40:50.968587+00:00",
-  "eda2422de3fa4118": "2026-10-28T21:45:50.997115+00:00",
   "c610c3560e4ec72c": "2026-10-28T21:50:50.965528+00:00",
   "55eb21e875b55f2f": "2026-10-28T21:55:50.993269+00:00",
   "9febcbb80c7e58cb": "2026-10-28T22:00:51.029310+00:00",
@@ -891,83 +885,10 @@
   "b2f9382dedcec13e": "2026-10-31T20:43:52.080895+00:00",
   "d6d67c40c91ebc7a": "2026-10-31T20:43:52.080895+00:00",
   "59ebd5208369cdb1": "2026-10-31T21:03:52.078926+00:00",
-  "f84e1e24c52c106f": "2026-10-31T21:18:52.061698+00:00"
+  "f84e1e24c52c106f": "2026-10-31T21:18:52.061698+00:00",
+  "96991facfbd089df": "2026-10-31T21:48:52.066030+00:00"
  },
  "recent": [
-  {
-   "title": "Fed holds fire on interest rates despite intensifying inflation",
-   "link": "https://www.ft.com/content/f31fccd8-e9b6-4b01-989d-790ca6bb4d29?syn-25a6b1a6=1",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 10,
-   "ts": "2026-10-28T21:40:50.968587+00:00",
-   "title_ru": "ФРС продолжает критиковать процентные ставки, несмотря на усиление инфляции",
-   "lead": "Central bank to vote on monetary policy seven times next year in shift from decades-old custom of having eight such meetings",
-   "lead_ru": "Центральный банк проголосует по денежно-кредитной политике семь раз в следующем году в отличие от многолетнего обычая проводить восемь таких заседаний",
-   "tags": [
-    "Fed",
-    "rates",
-    "inflation"
-   ]
-  },
-  {
-   "title": "Here are five key takeaways from the Fed rate decision and Warsh news conference",
-   "link": "https://www.cnbc.com/2026/10/28/fed-rate-decision-warsh-takeaways.html",
-   "sources": [
-    "CNBC"
-   ],
-   "score": 5,
-   "ts": "2026-10-28T21:40:50.968587+00:00",
-   "title_ru": "Вот пять ключевых выводов из решения ФРС по ставке и пресс-конференции Уорша.",
-   "lead": "Even though the interest-rate vote went as expected, there were a few surprises out of this week's Federal Open Market Committee meeting.",
-   "lead_ru": "Несмотря на то, что голосование по процентным ставкам прошло, как и ожидалось, заседание Федерального комитета по открытому рынку на этой неделе преподнесло несколько сюрпризов.",
-   "tags": [
-    "Fed",
-    "rates"
-   ]
-  },
-  {
-   "title": "Fed mantiene tasas sin dar muchas pistas sobre diciembre",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-28/fed-mantiene-tasas-sin-dar-muchas-pistas-sobre-diciembre-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T21:40:50.968587+00:00",
-   "title_ru": "ФРС Мантиен Ташас Син Дар Мяс Пистас в декабре",
-   "lead": "La Reserva Federal mantuvo las tasas de interés sin cambios y reafirmó su compromiso de contener la inflación, pero evitó dar señales claras sobre un posible aumento en diciembre.",
-   "lead_ru": "Федеральный резерв обязан заявить о своих интересах и подтвердить компромисс по сдерживанию инфляции, но это может привести к тому, что некоторые из них могут увеличиться в декабре.",
-   "tags": [
-    "Fed"
-   ]
-  },
-  {
-   "title": "Alphabet Shares Tank on Sales Misses Across Core Businesses",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPNl94WE51TlQ2Q2dVVTBDNlZZbzF5Mk02UjZRaEJwQnhoM1lGX0dWODk3b1RwZDB1SDVHYmYtOUQzaWJyTEc0ZXlTNmpyQU50WVhaQUpJX3dyMkVFbmgyVXJFVy1fb21TQUxEOXFIWmtzdFEyYVk5SkU3ZGF4LTdnN0EyTlo1NklicFg4TzlpSHYwRE9VYzdUUTZ4N0ZLaG9XWUs1Nm5vM3FfSktn?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T21:40:50.968587+00:00",
-   "title_ru": "Акции Alphabet говорят о провалах в продажах в основных сферах бизнеса",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "Argentina's YPF swings to billion-dollar profit as shale boom gathers pace",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNdlRVdlpnbk9WZ2VUelZkVUtwekQySUw3WlhWeVgwN1NaTjFvcjBYbl9oUk0xbFI5SUhiRkNHNl93TDFmYWx5QXkyWUNIRFZhVGgtRW8zSUtqUEpLVVFfRVlNUUI5U1hJVXROSTlHemNZVTJjM3hSUHptOEwyanh5WDQwVmRRaXR3ZzczeVpPa1VWc0xmWnR2ZGhZeVBpT2NwVWF6QlI1VS1wMGhlVFRFbzh5TXlKOURfclM0?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T21:45:50.997115+00:00",
-   "title_ru": "Аргентинский YPF получил прибыль в миллиард долларов на фоне набирающего обороты сланцевого бума",
-   "tags": [
-    "dollar"
-   ]
-  },
   {
    "title": "Ford Raises Outlook Even as War, Inflation Exact Mounting Toll (F)",
    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPU29JS3RValdrUlZKXzYzNVQtQ3RqWWNKWkRIeGgtSVN3c09ndC13ZjJzN2thMEhBY2M0M3U4NFRaYWIzQ2tkTkxSV080OVBFVlA0TGZnMW5yZTZ3QUM4M0QtUFRCZ0RDcE12WnJXTF9ETExNX1pOQTNfWEJSdUZoRG5aWmpvWVlSenBMTTViZDM4dW1vRFlxWS1JQlpSMjZ0VGppUDRBQW9RM1JSdmdxa2VB?oc=5",
