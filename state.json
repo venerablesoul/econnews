@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "b6f98e8d2a15aa6f": "2026-10-28T19:10:12.434498+00:00",
-  "fdde3193a59652d6": "2026-10-28T19:10:12.434498+00:00",
-  "daefdc9c82eaffb0": "2026-10-28T19:10:12.434498+00:00",
   "8e306aac0ffeff2b": "2026-10-28T19:15:12.505691+00:00",
   "b079810c8f57eb0d": "2026-10-28T19:15:12.505691+00:00",
   "2a110b392ce70bf8": "2026-10-28T19:15:12.505691+00:00",
@@ -923,29 +920,12 @@
   "54925c40bda4b0fd": "2026-10-31T17:18:19.873456+00:00",
   "052afb3bbca68856": "2026-10-31T17:28:19.794160+00:00",
   "5dbc14cfcb2e591a": "2026-10-31T17:53:19.842574+00:00",
-  "b74b87f05b29722a": "2026-10-31T18:48:19.909698+00:00"
+  "b74b87f05b29722a": "2026-10-31T18:48:19.909698+00:00",
+  "d9b5e87586077540": "2026-10-31T19:13:19.800358+00:00",
+  "cb922cbc1818d39c": "2026-10-31T19:13:19.800358+00:00",
+  "f85e5867175910b9": "2026-10-31T19:13:19.800358+00:00"
  },
  "recent": [
-  {
-   "title": "Spanish town rallies to help victims of deadly train crash",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQX1RzSENFdFlxMW4zN01sT0dPb3NWN3ZNWGtDenlHM250TVdENnB4MjhDTTF3VDRjdWdDdmVROXFTRzk5MGMyNXpTUFV1RkRIdDVJXzNvWEJzM1c4U0VwQ3F0Qkp5X01rV1RpRDBMY1o4Tl9iRTBqeDdTcmRiUHRiVnN1LS1kTVhscklwMFB4eThqc082MXlZbVV4TU9mc0xwb0E?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-28T19:10:12.434498+00:00",
-   "title_ru": "Испанский город митингует, чтобы помочь жертвам смертельной железнодорожной катастрофы"
-  },
-  {
-   "title": "CPS modernization webinar on Tuesday, November 10 at 3:00 p.m. ET",
-   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNdGFDUmxHNVNKcFdscHA1TmZGZjBpZjdsS1l5U19DRy1jYjVWMUQ5RjhnNmgzM2o1bHdma2FnLXJDU29xMHY5SlBRUjEyZ1c5UmJWRDJuc09JTzlCWTNiRS1mN0daQ0lvMmZvVVZZbVhpd3VpYXZRVWFjV1ZSbS14V3JMUmFuQkE?oc=5",
-   "sources": [
-    "US Labor Statistics (BLS)"
-   ],
-   "score": 4,
-   "ts": "2026-10-28T19:10:12.434498+00:00",
-   "title_ru": "Вебинар по модернизации ЦПС во вторник, 10 ноября, в 15:00. восточноевропейское время"
-  },
   {
    "title": "UK inflation forecast to average 3.4% in 2027, OBR says",
    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNVU1ZLWRfOWJKSjgzSzVnU0lRT1c0ZHZ4N1RNc2RKV3RHNEhiVFlRTEYtOXduN05ISVE1VDN6NXlMSUl4QXNtZ2dPRGNoLW5xeEhjeUZjdGQ3M2EwRHpmWnlPLWltVmN0d3Q3RWU1ekZRTFUwcTlLTjRvREtPUXZPS00tOXI1RGZEYkJ6VXItVnlNVzgzQWh3UUpR?oc=5",
@@ -9250,6 +9230,19 @@
    "score": 4,
    "ts": "2026-10-31T18:48:19.909698+00:00",
    "title_ru": "Сенегальские законодатели отвергли пересмотренный бюджетный ключ для нового соглашения с МВФ"
+  },
+  {
+   "title": "OPEC+ agrees in principle to keep oil output targets steady in December, sources say",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOTk80ZVBzRVczc0hyRHU0RkJiTWx5ZDUwdnBHb0FWSmJyQWJzWHRYR0hZd0MzTW1INnFtSWRISVVRb1RncDltYW16eTYxRU9NcWJzanRqMmp4LWFXUVNTV2tzT3JCM0doS01hWDdGeUhNdHZ3WTdYXy14Q0luZTRmOWdQNlp2ZThtYlQ0cWhNSVk0c0ZkOUFyMExMUWRHMXRKamU2ZHRLa2pPMG9heUhzN2YwTnpCZw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 9,
+   "ts": "2026-10-31T19:13:19.800358+00:00",
+   "title_ru": "ОПЕК+ в принципе согласна сохранить целевые показатели добычи нефти в декабре, говорят источники",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-31",
