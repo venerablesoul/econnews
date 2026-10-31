@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "4b6d1a0cf6344fc6": "2026-10-28T14:46:22.887126+00:00",
   "afad620e500e3e4e": "2026-10-28T14:51:22.864836+00:00",
   "8d7f3964b06c4811": "2026-10-28T15:01:23.384943+00:00",
   "a7fe364b2148b51b": "2026-10-28T15:06:23.296894+00:00",
@@ -997,16 +996,6 @@
   "17bd51636a56b9e3": "2026-10-31T14:27:46.114655+00:00"
  },
  "recent": [
-  {
-   "title": "At least 64 dead in Spain's second major train crash in a year",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOUl92blFTT3BtRmEwUW1tNWNPX09pUzNYNEhrSUZreGM5bWRIdG5FaVRYal80MTR1MHBkeEdQak5sNzNwdmlwc3d6YWNPUEd1U1ItX2gxaGJSRk1LWGt4MDFhREVINXFvZWNTQWdIV3B0YXhPQWZKZ2UxUEpWTk9YbjdXX0doZEJfcC00TUlSOVhYaUNQWllyMU9QVkxOZw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-28T14:46:22.887126+00:00",
-   "title_ru": "По меньшей мере 64 человека погибли во второй крупной железнодорожной катастрофе в Испании за год"
-  },
   {
    "title": "Spanish Train Crash Kills at Least 30 People South of Madrid",
    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQSEtjZWVQYmJQbGE4NHdrQzFCNlNDTWxITFBBSWJWMnpuUkZhdHhVcWNoNW9Vd3U2NmhjRk9QRUpnTzktMWtJT2pHX1ZCaWdKd1M4Z2pWM1A0dXA4enNUZ2c4MGtYTENHQW5vUTVoSjVvX09hSnF0Y0hWMVd0cDNyQWRKR0NyeUN2Y1hUTXc4YzdrLVpxNkx6bER3?oc=5",
@@ -10114,7 +10103,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 1,
+  "Fed": 0,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
