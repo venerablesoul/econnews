@@ -1,12 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "ea9c6cafbc347513": "2026-10-28T12:41:22.936969+00:00",
-  "39d760c47e5ce509": "2026-10-28T12:41:22.936969+00:00",
-  "5a3786c47622a90e": "2026-10-28T12:46:22.846885+00:00",
-  "2b8fa5153d7f59c4": "2026-10-28T12:46:22.846885+00:00",
-  "f6827beef3a04a0a": "2026-10-28T12:46:22.846885+00:00",
-  "51f347983e709241": "2026-10-28T12:46:22.846885+00:00",
   "cedf714426f7a1ef": "2026-10-28T12:51:22.893365+00:00",
   "3beefaacbed49d76": "2026-10-28T12:51:22.893365+00:00",
   "f6afeadcb4a849a7": "2026-10-28T12:56:22.899872+00:00",
@@ -1030,84 +1024,6 @@
   "7a0775e1548d2649": "2026-10-31T12:27:46.087596+00:00"
  },
  "recent": [
-  {
-   "title": "US Trade Gap Widens to Biggest Since March 2025",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-28/us-trade-gap-widens-to-biggest-since-march-2025-on-capital-goods",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T12:41:22.936969+00:00",
-   "title_ru": "Торговый разрыв в США увеличился до самого высокого уровня с марта 2025 года",
-   "lead": "The US merchandise-trade deficit widened in September to the largest since March 2025 amid an ongoing surge in imports of capital goods.",
-   "lead_ru": "Дефицит торговли товарами в США расширился в сентябре до самого большого с марта 2025 года на фоне продолжающегося всплеска импорта капитальных товаров."
-  },
-  {
-   "title": "Indian equity benchmarks inch lower as oil climbs; Jio makes strong debut",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNWThPU2R1U2tXY2FLczdUamhQenNtdzA3dUdoMzVtTHE3ZTZEM0RfZ3hwWGg2MmdBdW5fUURJeXdBdnQwd2V6ZHJKSmZ2b0hmcmQ5Vm5tX2xyQUczVXFFZ2luM0RxUlZoUHBHLTE5TndUSTJwb0k5UkxLYk81UlV6WTBJQmg4dGo4MDlrRER1Q2JZamJHVmVOR1FDRnU1UklxTE92TEN5MGtyOVdCQzJKQUpDMXd6dw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T12:41:22.936969+00:00",
-   "title_ru": "Индийские фондовые индексы снижаются на дюйм по мере роста цен на нефть; Jio делает сильный дебют",
-   "tags": [
-    "oil"
-   ]
-  },
-  {
-   "title": "Indian stocks could see November rebound; oil, AI trade pose risks",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOcVN4U1J2anUxVmFraWd2aGNPNFJ0ajVTNk5GOVVUQ1MxbmtqUmtsd195X1lQWWhwRlNUcS1WcnJlRFEyUTN4b2JUWFZnSTd2WDFFS1NSWV9PeFlOTU9YUmJtb2ZIbHBVdE0tNUI1TUtOT2RSOHpsdHJLdFFwYmszQW5YcDdSLWdoWVRCSEJwYUZ3MU8xdHVGYjlpTHZDUEVyV2JLN2NKVFZBRG8ydU5wR3B3?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-28T12:46:22.846885+00:00",
-   "title_ru": "Индийские акции могут отскочить в ноябре; торговля нефтью и искусственным интеллектом представляет риски",
-   "tags": [
-    "oil",
-    "markets"
-   ]
-  },
-  {
-   "title": "Nasdaq futures gain as SK Hynix lifts chips ahead of Fed decision, earnings",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPQVNrQUVwN1c3SjBCODU1TXUwRy1hQ2lIQUxFZkJ3dGhXa0NZalhVTFFoeTU4MlB3VDRwWE1QRktITG5FZnd1eUVDTjRUankwRGgzRkRKTGdwZDVDbWUyTWVKNlRKVld5RVdaTllzZkVhdXUzNkZUOU5RWWNOQVJTY2xuaDJZZXlybC05LXRmTmpPb2RvVlliLWxBUXZVRldXU3kyY2pWb1ZmZlFNUU1KMmN4aV9wMk9Lai01YXcza0JqdDQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-28T12:46:22.846885+00:00",
-   "title_ru": "Фьючерсы на Nasdaq растут, поскольку SK Hynix поднимает фишки в преддверии решения ФРС, прибыль",
-   "tags": [
-    "Fed",
-    "markets"
-   ]
-  },
-  {
-   "title": "Former Fed President Harker Says Policy Is Not Restrictive",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-28/former-fed-president-harker-policy-is-not-restrictive-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-28T12:46:22.846885+00:00",
-   "title_ru": "Бывший президент ФРС Харкер говорит, что политика не является ограничительной",
-   "lead": "Former Philadelphia Federal Reserve President Patrick Harker expects the Fed to hold steady on interest rates Wednesday, saying, “I don’t think that’s the correct decision in my mind, but that’s what you’re gonna get.” Harker…",
-   "lead_ru": "Бывший президент Федеральной резервной системы Филадельфии Патрик Харкер ожидает, что ФРС будет придерживаться стабильных процентных ставок в среду, сказав: «Я не думаю, что это правильное решение, но это то, что вы получите». Харкер...",
-   "tags": [
-    "Fed",
-    "rates"
-   ]
-  },
-  {
-   "title": "Budget 2026: key points at a glance",
-   "link": "https://www.theguardian.com/uk-news/2026/oct/28/budget-2026-key-points-john-healey",
-   "sources": [
-    "The Guardian"
-   ],
-   "score": 2,
-   "ts": "2026-10-28T12:46:22.846885+00:00"
-  },
   {
    "title": "Vertiv earnings just sent an upbeat signal about AI ahead of Big Tech results",
    "link": "https://www.marketwatch.com/story/vertiv-earnings-just-sent-an-upbeat-signal-about-ai-ahead-of-big-tech-results-5714a105?mod=mw_rss_topstories",
