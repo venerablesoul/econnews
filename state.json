@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "ad50facc825e0d8a": "2026-10-28T10:41:22.807015+00:00",
-  "27230cc576cd9ef9": "2026-10-28T10:46:22.794167+00:00",
   "86d2b80e2e91a926": "2026-10-28T10:51:22.849500+00:00",
   "079dbbe8982ef91e": "2026-10-28T11:06:22.801793+00:00",
   "4249aa58376ae6f5": "2026-10-28T11:06:22.801793+00:00",
@@ -1054,21 +1052,10 @@
   "c6e2cd87793b1a30": "2026-10-31T10:32:46.092245+00:00",
   "688712f3b6711284": "2026-10-31T10:32:46.092245+00:00",
   "37f68971bac1a7b6": "2026-10-31T10:37:46.114562+00:00",
-  "50b628340f11037c": "2026-10-31T10:37:46.114562+00:00"
+  "50b628340f11037c": "2026-10-31T10:37:46.114562+00:00",
+  "3bcbf7cec41bca92": "2026-10-31T10:47:46.130438+00:00"
  },
  "recent": [
-  {
-   "title": "Wall Street’s AI Debt Machine Is Starting to Choke on Supply",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-28/wall-street-s-ai-debt-machine-is-starting-to-choke-on-supply",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T10:41:22.807015+00:00",
-   "title_ru": "Долговая машина ИИ Уолл-стрит начинает подавляться поставками",
-   "lead": "A new anxiety is gripping Wall Street as it bankrolls the vast network of data centers and chips behind the artificial intelligence boom: Early signs suggest that the credit market is approaching the limits of how much more debt…",
-   "lead_ru": "Новая тревога охватывает Уолл-стрит, поскольку она финансирует обширную сеть центров обработки данных и чипов, стоящих за бумом искусственного интеллекта: ранние признаки свидетельствуют о том, что кредитный рынок приближается к пределам того, насколько больше долгов..."
-  },
   {
    "title": "«Сбер» повысил прогноз по инфляции и скорректировал прогноз по ВВП",
    "link": "https://www.rbc.ru/economics/28/10/2026/6ae1c1b6fb7a6ae0e06d8781",
@@ -10838,6 +10825,18 @@
    "score": 3,
    "ts": "2026-10-31T10:37:46.114562+00:00",
    "title_ru": "Отказ от газа в Индонезии показывает, почему Сингапур не может полагаться только на трубопроводы"
+  },
+  {
+   "title": "Japan Is the Giant Asian Market Where Trading Has Doubled: New Economy",
+   "link": "https://www.bloomberg.com/news/newsletters/2026-10-31/japan-is-the-giant-asian-market-where-trading-has-doubled-new-economy",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-10-31T10:47:46.130438+00:00",
+   "title_ru": "Япония — гигантский азиатский рынок, объем торговли на котором увеличился вдвое: новая экономика",
+   "lead": "It’s now possible for foreign firms to play leading roles in restructuring key parts of Japan’s business architecture.",
+   "lead_ru": "Теперь иностранные фирмы могут играть ведущую роль в реструктуризации ключевых частей бизнес-архитектуры Японии."
   }
  ],
  "last_digest": "2026-10-30",
