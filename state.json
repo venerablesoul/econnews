@@ -1,13 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "d9b5e87586077540": "2026-10-28T10:16:22.813997+00:00",
-  "08fb06f1269f0558": "2026-10-28T10:16:22.813997+00:00",
-  "c8596513066f7c1a": "2026-10-28T10:16:22.813997+00:00",
-  "4eca1e674f9c5c64": "2026-10-28T10:16:22.813997+00:00",
-  "11a3d0760d0fe7ec": "2026-10-28T10:16:22.813997+00:00",
-  "9098cafbba3de519": "2026-10-28T10:21:22.798345+00:00",
-  "23a6ae1b888948b3": "2026-10-28T10:21:22.798345+00:00",
   "520b1dacbff12193": "2026-10-28T10:26:22.836006+00:00",
   "404e71ab6bdcbf43": "2026-10-28T10:26:22.836006+00:00",
   "6b2644f70f503d74": "2026-10-28T10:26:22.836006+00:00",
@@ -1061,64 +1054,10 @@
   "984e65abd01d5bc9": "2026-10-31T09:27:46.125405+00:00",
   "1f1ca2ac56509c4e": "2026-10-31T09:27:46.125405+00:00",
   "155c9940f298ad8e": "2026-10-31T09:32:46.102076+00:00",
-  "3883d6af0bb98c73": "2026-10-31T10:02:46.117509+00:00"
+  "3883d6af0bb98c73": "2026-10-31T10:02:46.117509+00:00",
+  "4b730b7d94279fc8": "2026-10-31T10:22:46.085186+00:00"
  },
  "recent": [
-  {
-   "title": "Fed officials not aligned on weight of financial conditions",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOZDVJc3BaeUw5dnlFa2JrcmJQcFBnclc2alpNZTdST3BGSThJOFkyYmFUNGdTVFlWc2xheVdoZ0JJTzlISEVUQjdqVVZTQThuYTUxWXU3UGUyOVpjQm9CdTZHdXNNSUVfdlJ0TldocXJWQkdxVUhOX3JxNFV4dGZhM3Jsa0pTeWRvM3owdUgtZ2lJcTYwZjQzOEFQWjdhSlc0Rmt2UFVCRGlvQQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T10:16:22.813997+00:00",
-   "title_ru": "Чиновники ФРС не пришли к единому мнению по поводу финансовых условий",
-   "tags": [
-    "Fed"
-   ]
-  },
-  {
-   "title": "Basis trade retreat spurs shift into new rate bets",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNTkJfdHhiZnZ1VTVVUHU2V00wZGdQQng0a0tjVjgzTHBEejROZ1dlS3REb1ZycXo5ZjJQOVdkX050cERCZWsyNVRzTFJEZ3NaU2Q2UzdZc29ST3VjQTdnYm1CNkl0VGN1NVI1Qkl1QjBxY0tRYm9wZmYzLU5nUmtxNENxakN5VzlyaUZSN3hWbEd6OFlGR0QzakJHY3JUaDc0X2xLZGEyQnkyZw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T10:16:22.813997+00:00",
-   "title_ru": "Отказ от базовой торговли стимулирует переход к новым ставкам"
-  },
-  {
-   "title": "Bill Ackman owns only a handful of stocks. Here is his rule for picking a winner.",
-   "link": "https://www.marketwatch.com/story/bill-ackman-owns-only-a-handful-of-stocks-here-is-his-rule-for-picking-a-winner-82a0ee98?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-28T10:16:22.813997+00:00"
-  },
-  {
-   "title": "Unilever India slips after joining peers in flagging commodity inflation",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPR2lZaWpqX2hBMm8xc0dpVXBXc1JsTUQyTUVjWWhGTXpxUlRYWEM2Ni1RT3djTkgyQ191dmZucXoxTUxqOVJSZV9udzRKTVRNUjNfUGN1eFgzVzhpeG9kR2M4NFZkTlNEcEZZS09QVk51emtFZXNDZ21lcUgtNUFLcG5vRld3UVVFZEZpRjNIYkFScVhWV3dvZXpvcXJWdw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-28T10:21:22.798345+00:00",
-   "title_ru": "Unilever India терпит неудачу после того, как присоединилась к конкурентам в борьбе с инфляцией сырьевых товаров",
-   "tags": [
-    "inflation"
-   ]
-  },
-  {
-   "title": "Nevada caught between AI job growth and job losses",
-   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQTVF1SXJGdUFXOTE0REU0QU95Zm44ckxxMzRZSXVPakNTQkFFcjVKMHUtcWdSODFzeTRST2U3SHZWRWxSUjJGUUVRdUoxLUVNWHRKUFlxUktKOUhGdGo2SjM5VVJPUk5LbXNjcW5QbGcwM3diaDV0c05OV3BQS1hwSjJB?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T10:21:22.798345+00:00",
-   "title_ru": "Невада оказалась между ростом рабочих мест в сфере ИИ и потерей рабочих мест"
-  },
   {
    "title": "Four reasons to start worrying about inflation — including the end of tariff refunds",
    "link": "https://www.marketwatch.com/story/four-reasons-to-start-worrying-about-inflation-including-the-end-of-tariff-refunds-978a5cfd?mod=mw_rss_topstories",
