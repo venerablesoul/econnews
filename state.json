@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "520b1dacbff12193": "2026-10-28T10:26:22.836006+00:00",
-  "404e71ab6bdcbf43": "2026-10-28T10:26:22.836006+00:00",
-  "6b2644f70f503d74": "2026-10-28T10:26:22.836006+00:00",
-  "c9cc426856e0270b": "2026-10-28T10:26:22.836006+00:00",
-  "0b1b2b704ee2bf34": "2026-10-28T10:31:22.804696+00:00",
   "256305c56f4fdcef": "2026-10-28T10:36:22.825875+00:00",
   "ad50facc825e0d8a": "2026-10-28T10:41:22.807015+00:00",
   "27230cc576cd9ef9": "2026-10-28T10:46:22.794167+00:00",
@@ -1055,51 +1050,12 @@
   "1f1ca2ac56509c4e": "2026-10-31T09:27:46.125405+00:00",
   "155c9940f298ad8e": "2026-10-31T09:32:46.102076+00:00",
   "3883d6af0bb98c73": "2026-10-31T10:02:46.117509+00:00",
-  "4b730b7d94279fc8": "2026-10-31T10:22:46.085186+00:00"
+  "4b730b7d94279fc8": "2026-10-31T10:22:46.085186+00:00",
+  "b566aa5f01dd989a": "2026-10-31T10:32:46.092245+00:00",
+  "c6e2cd87793b1a30": "2026-10-31T10:32:46.092245+00:00",
+  "688712f3b6711284": "2026-10-31T10:32:46.092245+00:00"
  },
  "recent": [
-  {
-   "title": "Four reasons to start worrying about inflation — including the end of tariff refunds",
-   "link": "https://www.marketwatch.com/story/four-reasons-to-start-worrying-about-inflation-including-the-end-of-tariff-refunds-978a5cfd?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 6,
-   "ts": "2026-10-28T10:26:22.836006+00:00",
-   "title_ru": "Четыре причины начать беспокоиться по поводу инфляции, включая прекращение возврата тарифов",
-   "lead": "Dennis DeBusschere, of 22V Research, said companies that previously used tariff refunds to ease cost pressures will increasingly hand down those higher costs to consumers.",
-   "lead_ru": "Деннис ДеБушер из 22V Research заявил, что компании, которые ранее использовали возмещение тарифов для снижения ценового давления, будут все чаще перекладывать эти более высокие затраты на потребителей.",
-   "tags": [
-    "inflation",
-    "tariffs"
-   ]
-  },
-  {
-   "title": "Microsoft and Alphabet Earnings Put Focus on AI Cash Flow Drain",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNaGpuODBWVHpLV2lPSklYTm1ld1BhMHB0NHBiNFZOUGtvNGFtZ0pBalJwdW4ycEdKbXhudmV5NVhVa21mUHl0bzNCZnI2TG9saTZIdVg2V1o4b2hFVGtHd1h6RGYyNFNyWmpOR0hKYXc3cnhscm9aXzRIZ09INUdmbjJyd2FXYkV1RmdJcVZpX0JHY3pTand0V1NaSm1Wa0hPUVZJMHVHa0t2TG4zZURhRmFSRDU?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T10:26:22.836006+00:00",
-   "title_ru": "Прибыль Microsoft и Alphabet сосредоточена на утечке денежных потоков от ИИ"
-  },
-  {
-   "title": "The ECB needs a smooth transmission and a smooth transition",
-   "link": "https://www.ft.com/content/66bc5487-04aa-4699-a010-c446c536cf48?syn-25a6b1a6=1",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T10:26:22.836006+00:00",
-   "title_ru": "ЕЦБ нужна плавная передача и плавный переход",
-   "lead": "Central bank at a critical juncture as it prepares leadership changes at time of strains in bond markets",
-   "lead_ru": "Центральный банк на критическом этапе, готовя смену руководства в период напряженности на рынках облигаций",
-   "tags": [
-    "ECB",
-    "bonds"
-   ]
-  },
   {
    "title": "Wall Street’s AI Debt Machine Is Starting to Choke on Supply",
    "link": "https://www.bloomberg.com/news/articles/2026-10-28/wall-street-s-ai-debt-machine-is-starting-to-choke-on-supply",
@@ -17613,7 +17569,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-31T09:22:46.148945+00:00",
+  "checked": "2026-10-31T10:27:46.122161+00:00",
   "sec_seen": [
    "0001493152-26-049496",
    "0001231919-26-001519",
