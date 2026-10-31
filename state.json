@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "38d0cc2649458623": "2026-10-28T20:25:12.527245+00:00",
-  "ad81c66e6cf6a7e1": "2026-10-28T20:30:12.460333+00:00",
   "6abff8665caab738": "2026-10-28T20:35:12.563246+00:00",
   "21cea21900ff1df3": "2026-10-28T20:35:12.563246+00:00",
   "2e72456ce250ecd1": "2026-10-28T20:40:13.508658+00:00",
@@ -906,32 +904,6 @@
   "9ee36d7b89598c96": "2026-10-31T20:23:52.148940+00:00"
  },
  "recent": [
-  {
-   "title": "ServiceNow’s stock slides as earnings miss clouds a raised AI outlook",
-   "link": "https://www.marketwatch.com/story/servicenows-stock-slides-as-earnings-miss-clouds-a-raised-ai-outlook-96e48385?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-28T20:25:12.527245+00:00"
-  },
-  {
-   "title": "The Fed Will Deliver Price Stability, Warsh Says",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-28/the-fed-will-deliver-price-stability-warsh-says-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-28T20:30:12.460333+00:00",
-   "title_ru": "ФРС обеспечит стабильность цен, говорит Уорш",
-   "lead": "Federal Reserve Chairman Kevin Warsh holds a press conference after officials kept interest rates unchanged. He says inflation is still too high and policy makers will \"deliver price stability.\" (Source: Bloomberg)",
-   "lead_ru": "Председатель Федеральной резервной системы Кевин Уорш проводит пресс-конференцию после того, как чиновники оставили процентные ставки без изменений. Он говорит, что инфляция все еще слишком высока, и политики «обеспечат стабильность цен». \"(Источник: Bloomberg)",
-   "tags": [
-    "Fed",
-    "rates",
-    "inflation"
-   ]
-  },
   {
    "title": "Bank of Canada Rate Hike Hurts Housing Market Already in Slump",
    "link": "https://www.bloomberg.com/news/articles/2026-10-28/bank-of-canada-rate-hike-hurts-housing-market-already-in-slump",
@@ -9037,7 +9009,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 0,
+  "Fed": 1,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
