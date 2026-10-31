@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "ffa258fa483d835c": "2026-10-28T06:10:51.207255+00:00",
-  "ae0acada2291fdfb": "2026-10-28T06:10:51.207255+00:00",
   "55af00c14cfd84c1": "2026-10-28T06:15:51.189088+00:00",
   "a53ec7ea6fd38bb6": "2026-10-28T06:25:51.156398+00:00",
   "8d8e02cff1e5cf3b": "2026-10-28T06:25:51.156398+00:00",
@@ -1090,34 +1088,12 @@
   "23b936abfe86ffd4": "2026-10-31T05:27:16.029718+00:00",
   "4853ddbd88a16546": "2026-10-31T05:42:16.072660+00:00",
   "02bb405c3ed16dd3": "2026-10-31T05:52:16.047435+00:00",
-  "20fcf0994aba9bcb": "2026-10-31T05:57:16.064073+00:00"
+  "20fcf0994aba9bcb": "2026-10-31T05:57:16.064073+00:00",
+  "33619b0e9322e2c3": "2026-10-31T06:07:16.063415+00:00",
+  "5c38386e5f79f4a6": "2026-10-31T06:12:16.092287+00:00",
+  "b2bcf695fc696b6f": "2026-10-31T06:12:16.092287+00:00"
  },
  "recent": [
-  {
-   "title": "Cash grants for groups helping with money and debt",
-   "link": "https://www.bbc.co.uk/news/articles/c63r5z37lrgwo?at_medium=RSS&at_campaign=rss",
-   "sources": [
-    "BBC"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T06:10:51.207255+00:00",
-   "title_ru": "Денежные гранты для групп, помогающих деньгами и долгами",
-   "lead": "Grants are offered to groups helping people with cost-of-living financial pressures.",
-   "lead_ru": "Гранты предоставляются группам, помогающим людям с финансовыми трудностями, связанными со стоимостью жизни."
-  },
-  {
-   "title": "Weakness across Asian FX before Fed decision to put mild pressure on rupee",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPUFhCVnlLQ015bV9hYzRXWk5mN3FxT1c0UWo3VnIwallLV0F2TXVJby1LLWZ2ZG52NkJZT0J5Y2JVLVVTS3YwWmk5UVNkVnlQU1ZBZFI5cEdKUC1kQXF6cTFOQ0tpRkQ1ODZQRDV5Tlpvb0V6V2ItaEtGcnhHdjRTUlRCQnFMVVo2M1RnaHpOQThaQmJWVDViNXdMd3hkdTA1UnpVSG94WWVUbEpab0hYSm10VjZqMG8?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T06:10:51.207255+00:00",
-   "title_ru": "Слабость азиатского валютного рынка перед решением ФРС оказать мягкое давление на рупию",
-   "tags": [
-    "Fed"
-   ]
-  },
   {
    "title": "Italy's Intesa gets ECB authorisation to take over Monte dei Paschi",
    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNelAzbVRKVXlpeVNyZUJPTGc2eGhQbDBBeWtaeVlZTGNNTm1Jbmx6MUtYbVFHQ3RmYXR5ZUJvWHk0ak1nOW41dTNja0wxVXF6QUhGUF84VHZrWVN1SmZYcWpMQVlXalFJTXZkSlQ3bUR0VE00cExaV0FIaVk5N2ZGMGExUW8wTDdsYndxcEs2N0g4SlF5NFctYi1kOVowelNUYjVQbTlBSTRhZGIzaDNiMWxsRHd5enM?oc=5",
@@ -11442,6 +11418,19 @@
    "title_ru": "Чан из Гонконга говорит, что рост в 2026 году может быть самым сильным за пять лет - RTHK",
    "lead": "Hong Kong’s economic growth remained robust in the third quarter, paving the way for what may be the strongest annual expansion in five years, Radio Television Hong Kong cited Financial Secretary Paul Chan as saying.",
    "lead_ru": "Экономический рост Гонконга оставался устойчивым в третьем квартале, проложив путь к тому, что может стать самым сильным годовым ростом за пять лет, сообщило Radio Television Hong Kong со ссылкой на финансового секретаря Пола Чана."
+  },
+  {
+   "title": "Real GDP growth",
+   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQVEFGa0ZkTjE2S2ljLVhZM3V1bDUtVFdPNWJ2OEYzeXFPc01odWNYNkcwemdsUUdPTl9sU3g5VGFBRUVPTU9pWkttVS1wdVZKcnRhYmlBakxQcXpCZ2xZamxrNk4yb3Z3b2hiRGR6MWFOdFpjQkxDZDlDcVZLTXN5Xw?oc=5",
+   "sources": [
+    "IMF"
+   ],
+   "score": 8,
+   "ts": "2026-10-31T06:12:16.092287+00:00",
+   "title_ru": "Темпы роста реального ВВП",
+   "tags": [
+    "GDP"
+   ]
   }
  ],
  "last_digest": "2026-10-30",
