@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c1b17f30cd378c3c": "2026-10-28T01:40:19.173671+00:00",
-  "f349e5cc2d4362a1": "2026-10-28T01:40:19.173671+00:00",
-  "e9aa8cd113d220a9": "2026-10-28T01:40:19.173671+00:00",
   "92fb70be97289ab8": "2026-10-28T01:55:19.117051+00:00",
   "60b4ad74af879741": "2026-10-28T02:00:19.133136+00:00",
   "e94bf9b4631923d3": "2026-10-28T02:00:19.133136+00:00",
@@ -1114,32 +1111,6 @@
   "828c0d5b1764b371": "2026-10-31T01:16:27.142175+00:00"
  },
  "recent": [
-  {
-   "title": "Dollar holds gains ahead of Fed policy signal, RBNZ decision",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQRE96SkVILWZEWGsxdTRORUJsWlJ4YmNlclNadUxmdGpHRlNONHllVDY5eTBiZHBsbndwSEtBeDI0STFqdDhsNUxLVVhhVmZrWFdGUVFCaDNGd25VVENDcDdmT1ZUMHFFRWN2enRXeXk1ZUNfNHp5OE8wam94MktvQlNzazVNRG1Ed2lXYTFMVjNCY2JPckJRWlIyQ2ZvVzVqOEsw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-28T01:40:19.173671+00:00",
-   "title_ru": "Доллар удерживает рост в преддверии политического сигнала ФРС и решения РБНЗ",
-   "tags": [
-    "Fed",
-    "dollar"
-   ]
-  },
-  {
-   "title": "Super-Strong Metal’s Surge Has Freeport Dusting Off Growth Plans",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-28/super-strong-metal-s-surge-has-freeport-dusting-off-growth-plans",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T01:40:19.173671+00:00",
-   "title_ru": "Всплеск сверхсильного металла заставил Freeport отказаться от планов роста",
-   "lead": "Prices of an obscure metal used in everything from nuclear energy to aerospace and semiconductors are getting so high that the world’s biggest producer is considering boosting supply.",
-   "lead_ru": "Цены на малоизвестный металл, используемый во всем, от атомной энергетики до аэрокосмической промышленности и полупроводников, становятся настолько высокими, что крупнейший в мире производитель рассматривает возможность увеличения поставок."
-  },
   {
    "title": "New Zealand Dollar Slides Most Versus Aussie Since 2017 on RBNZ",
    "link": "https://www.bloomberg.com/news/articles/2026-10-28/new-zealand-dollar-slides-most-versus-aussie-since-2017-on-rbnz",
@@ -14687,6 +14658,22 @@
    },
    {
     "src": "sec",
+    "id": "e8749157b51cbad7",
+    "ticker": "NTRA",
+    "company": "Natera, Inc.",
+    "who": "Michael Burkes Brophy",
+    "role": "CFO",
+    "type": "sell",
+    "value": 1313470,
+    "shares": 3084,
+    "price": 425.9,
+    "plan": true,
+    "date": "2026-10-30",
+    "disclosed": "2026-10-30",
+    "link": "https://www.sec.gov/Archives/edgar/data/1697362/000169736226000021/0001697362-26-000021-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "cd1ac31895a412b7",
     "ticker": "WRLD",
     "company": "WORLD ACCEPTANCE CORP",
@@ -18524,22 +18511,6 @@
     "date": "2026-10-23",
     "disclosed": "2026-10-26",
     "link": "https://www.sec.gov/Archives/edgar/data/2014386/000201438626000024/0002014386-26-000024-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "4aceea8986ce5973",
-    "ticker": "STC",
-    "company": "STEWART INFORMATION SERVICES CORP",
-    "who": "William S. Jr. Corey",
-    "role": "Director",
-    "type": "buy",
-    "value": 93640,
-    "shares": 2000,
-    "price": 46.82,
-    "plan": false,
-    "date": "2026-10-23",
-    "disclosed": "2026-10-26",
-    "link": "https://www.sec.gov/Archives/edgar/data/1815639/000162828026067362/0001628280-26-067362-index.htm"
    }
   ],
   "docs": {
@@ -18588,7 +18559,7 @@
    "0001493152-26-049494",
    "0001193125-26-442228",
    "0001213900-26-114588",
-   "0001740393-26-000008",
+   "0001213900-26-114607",
    "0001823940-26-000012",
    "0001628280-26-068637",
    "0001193125-26-442196",
@@ -18603,7 +18574,6 @@
    "0001213900-26-114608",
    "0001193125-26-442119",
    "0001899977-26-000010",
-   "0001305512-26-000014",
    "0001477932-26-006563",
    "0001451763-26-000014",
    "0001628280-26-068639",
@@ -18621,10 +18591,11 @@
    "0001231919-26-001519",
    "0001193125-26-442142",
    "0001213900-26-114611",
+   "0001214659-26-013568",
    "0002014361-26-000040",
    "0001223260-26-000011",
    "0002014293-26-000012",
-   "0001213900-26-114607",
+   "0001697362-26-000021",
    "0001193125-26-442201"
   ],
   "errors": {
