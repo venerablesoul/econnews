@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "8ca74c7e627b6a9c": "2026-10-28T16:55:12.432780+00:00",
   "bd570558bd354da6": "2026-10-28T17:00:12.419384+00:00",
   "2dca5f0fe196d592": "2026-10-28T17:00:12.419384+00:00",
   "beecb5f5f5b04c45": "2026-10-28T17:00:12.419384+00:00",
@@ -964,22 +963,11 @@
   "6bd9d31a8b72a909": "2026-10-31T16:03:19.822803+00:00",
   "89ef9b5bcfc87889": "2026-10-31T16:03:19.822803+00:00",
   "1d7c8ffdc62ae334": "2026-10-31T16:23:19.839517+00:00",
-  "a8f92577333a93be": "2026-10-31T16:53:19.940199+00:00"
+  "a8f92577333a93be": "2026-10-31T16:53:19.940199+00:00",
+  "2f1f11b5c3f1f14a": "2026-10-31T16:58:19.816077+00:00",
+  "fd31862b1f5bc830": "2026-10-31T16:58:19.816077+00:00"
  },
  "recent": [
-  {
-   "title": "Amazon cuts more jobs, in devices unit, after flurry of product rollouts",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOSVoyUXFMZHNCb0FHRDhzSkdTOXA3c3NBWTdPZEpNc1h0RV9DSG02YWh3QXI4Y3J4TGpJczQ5TUpPRkhuVllUQ3VqcEM4VUZpdUlfRjctcE5LLTNqZlVFcGFvcnhOckZrUEhkQjRvYVJvTFFSZUdvcHFQTGZqb0RLTmhzdUtaczVBR3laYTZXclZUeml4R0l0aFYybmZmVGtNT3hQT1Flc0w5cm00UHl5TDFhT0NEaDZuaW9BbG1CWjU?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-28T16:55:12.432780+00:00",
-   "title_ru": "Amazon сокращает больше рабочих мест в подразделении устройств после шквала развертывания продуктов",
-   "tags": [
-    "jobs"
-   ]
-  },
   {
    "title": "Why AI’s Billions in Spending Are Hard to Spot in GDP Data",
    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPNl9WM0Q3SC1NRWJUei1ENmRyS3I2bXNSS2xtNVJVSmpZOHhKUFRRZV9ad3ZpS0RMc01mQ3VYUzcwWFhkd25Tbk93Wk9hTC1LSU1tVXBYZUdNS2NNaFNtaHVRcUxxNjU1WG1ZWkI4YmlzVEtsSTg3QkZHeXVvZEo1OWlTWm1fUWdhaXdEMDFyaEVOMmZLVmgwdWNzQ0RpY1pWRGt3ZlQ3OV9mcmxSZmx0SXdGeUk3NFRoVFRtTnlIQQ?oc=5",
@@ -9768,6 +9756,32 @@
    "lead_ru": "Новости не прекращаются, когда рынки закрываются. Ведущие Дэвид Гура, Лиза Матео и Натан Хагер привносят ясность, контекст и немного юмора в главные заголовки выходных в прямом эфире из Нью-Йорка.",
    "tags": [
     "markets"
+   ]
+  },
+  {
+   "title": "Inflation, Inequality and Debt: The Charts Scaring Wall Street",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQdjMtTWNWTkFUaDVlR1lyQ3V0M0diRTZJS09PX3JDaFZxb0lBcDBrN3FlMGhwMkpoUkVES3BTWURoTURjWVpwQ2JhVDV0SG01Y3NCTzJBbnJabDY2c19JUmFtSEFwbGRZemNKOWNvTnJaVU1sd2pILXE5WGNFYTZBLXhfUkwzQ0c1bk1XUWtRc1EtdlViaGxfU2tpY1F3UjJfdEl4aHo3OFZVZEhqOGVSSQ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-10-31T16:58:19.816077+00:00",
+   "title_ru": "Инфляция, неравенство и долг: графики, пугающие Уолл-стрит",
+   "tags": [
+    "inflation"
+   ]
+  },
+  {
+   "title": "Virgin Media O2 to cut thousands of jobs, Sky News reports",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPWmlNQWgwSTZIalBGUlJ2X3FoeEVab2lwZUxPRFNDMDZEbXNjQWNCYWJ4LW8tYTFQQ3I1VmEwYzRnME9ESVpVaXNjQmZ4c0NJajk2cVp6MnI4enZlblJaWk9PSnVfYUNkUXhTTkRUX0NneWtRa0RfekRzOFpoSjQzQVpTVC14Wk51Vm42VU9Wck1RcXJ1aDB5VGVsekxQNmJwUkxCZlBBeVpTWWhhLVBj?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-10-31T16:58:19.816077+00:00",
+   "title_ru": "Virgin Media O2 сократит тысячи рабочих мест, сообщает Sky News",
+   "tags": [
+    "jobs"
    ]
   }
  ],
