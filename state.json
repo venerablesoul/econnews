@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "eb4b7cc8d3be9a8b": "2026-10-29T04:31:19.868977+00:00",
-  "3a9bca43f6157a34": "2026-10-29T04:31:19.868977+00:00",
-  "166be665e6e809e2": "2026-10-29T04:36:19.798013+00:00",
-  "a2f455c1f2baf9c8": "2026-10-29T04:36:19.798013+00:00",
   "a085beb0cd9a0bfc": "2026-10-29T05:01:19.842142+00:00",
   "4d7cc955061278da": "2026-10-29T05:01:19.842142+00:00",
   "fe67f5c0aa801f0e": "2026-10-29T05:06:19.803647+00:00",
@@ -825,62 +821,6 @@
   "261a727cc27c43d0": "2026-11-01T04:19:20.956066+00:00"
  },
  "recent": [
-  {
-   "title": "Indian shares steady after US Fed holds key rates unchanged; elevated oil weighs",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPNHNOY0FUMC13dm8yaFFmRldOSzhIUkZnZGxNT1RidTVlSEN2dUZOODk0QmQ4dGY0cjBObExKUHRsTjFTbTV5dDdIcS1MN1IzRHB5R1d3c0RlR1pqMHJGLW14b1NFMXVjLUI4MnMyY2RJa2U3dTk1Mll4TGNlMGlTeF9GYUxZMVZXVUZCTFd5bVZtUGc0WmZqV1M3NEYtTkY5YmJPMFFUam0yLTN4NjZlUHJxS0ZaTHRhQ045UjR1UQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-29T04:31:19.868977+00:00",
-   "title_ru": "Индийские акции стабильны после того, как ФРС США удерживает ключевые ставки без изменений; повышенный вес нефти",
-   "tags": [
-    "Fed",
-    "oil",
-    "markets"
-   ]
-  },
-  {
-   "title": "Utah Files Criminal Charges Against Prediction Market Kalshi",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQMlk2VWcyUmJyV3NuSmYwR0pxX1VmUVBYMVktWEJ0Vk40QVdzQnBwMzVQMjd5OGRFZ1JVc3ZyTGhtc2NpR2w4TXZNTndGazNjSkpnZHRYUFdFRWIxb01YSnFDQ1JBZXNsM2dXNzBjLVcwbVFuejFGU1VsZUZyenozWm1kY2gxQ0ZWbVNDb0I1WlhRdEVOSV9ESW9pTWFfWmRDQzVmeFRZaGVzUlhTNEI3Xw?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-29T04:31:19.868977+00:00",
-   "title_ru": "Юта предъявляет уголовные обвинения рынку предсказаний Калши"
-  },
-  {
-   "title": "Chinese Tech Stocks Sink Even as Chipmaker Sales Surge 1,800%",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-29/chinese-tech-stocks-sink-even-as-chipmaker-sales-surge-1-800",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-29T04:36:19.798013+00:00",
-   "title_ru": "Акции китайских технологических компаний падают, несмотря на рост продаж производителей микросхем на 1800%",
-   "lead": "Chinese tech hardware shares tumbled as eye-popping quarterly results at some companies failed to offset persistent concerns over fundamentals and weak global AI sentiment.",
-   "lead_ru": "Акции китайских компаний по производству технологического оборудования упали, поскольку потрясающие квартальные результаты некоторых компаний не смогли компенсировать постоянные опасения по поводу фундаментальных показателей и слабых настроений в области ИИ в мире.",
-   "tags": [
-    "markets",
-    "China"
-   ]
-  },
-  {
-   "title": "Предписательский порыв // ЦБ стал чаще применять меры воздействия к аудиторам",
-   "link": "https://www.kommersant.ru/doc/9063134",
-   "sources": [
-    "Kommersant"
-   ],
-   "score": 3,
-   "ts": "2026-10-29T04:36:19.798013+00:00",
-   "title_en": "Prescriptive impulse // The Central Bank began to apply enforcement measures to auditors more often",
-   "lead": "В этом году количество предписаний со стороны Банка России в адрес аудиторов общественно значимых организаций на финансовом рынке выросло в несколько раз.",
-   "lead_en": "This year, the number of instructions from the Bank of Russia to auditors of socially significant organizations in the financial market has increased several times.",
-   "tags": [
-    "Russia"
-   ]
-  },
   {
    "title": "Will the budget deliver ‘growth in every postcode’?",
    "link": "https://www.theguardian.com/uk-news/2026/oct/29/will-the-budget-deliver-growth-in-every-postcode",
