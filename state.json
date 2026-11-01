@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "2c91e6a5fbac01dc": "2026-10-29T23:28:36.858438+00:00",
-  "23ac2e98b2099808": "2026-10-29T23:28:36.858438+00:00",
   "21336a8511028457": "2026-10-29T23:33:36.863693+00:00",
   "fcdd34973402b7c8": "2026-10-29T23:33:36.863693+00:00",
   "eb5f01543a204eb7": "2026-10-29T23:33:36.863693+00:00",
@@ -612,7 +610,9 @@
   "c475bbb726e7beac": "2026-11-01T23:16:37.727873+00:00",
   "20975db4fcf7f60a": "2026-11-01T23:16:37.727873+00:00",
   "71031e6c0e3514ab": "2026-11-01T23:16:37.727873+00:00",
-  "d90e18955b32113b": "2026-11-01T23:21:37.684120+00:00"
+  "d90e18955b32113b": "2026-11-01T23:21:37.684120+00:00",
+  "f48211aac8d91d64": "2026-11-01T23:31:37.726123+00:00",
+  "04c5964947d13a8e": "2026-11-01T23:31:37.726123+00:00"
  },
  "recent": [
   {
@@ -5496,6 +5496,16 @@
    "tags": [
     "inflation"
    ]
+  },
+  {
+   "title": "COMMENTARY: India's booming growth has an earnings problem",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQU3ZYY3ZYdTVpNEJOdnk4a2xCTmVRM2xlempwRWFSNm14Y0JpRWx0WjExUTM4eHFpU3BDOTdiNFdwelp0Z2RXNHdRT19mOVBpem5sNGs3SVhJeEljajNERHhRSHVLNVJRcWRCS1pxQVQ0RjBGS3BYZ09IWEo1R29EUGowcHpNU0FjN1JabHRqZU9NNXdtVW1ocXdzYnI4NGRLbVJpSzlRYTJSUnZMSC1GM2NKLUFSNUNPU2ItSklLNU9pWmE0T29Rc0dDazhlbFhw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-11-01T23:31:37.726123+00:00",
+   "title_ru": "КОММЕНТАРИЙ: Бурный экономический рост Индии имеет проблему с доходами"
   }
  ],
  "last_digest": "2026-11-01",
