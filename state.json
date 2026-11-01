@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "68afd8722dec3a81": "2026-10-29T13:25:15.720927+00:00",
-  "844fe7b872b37ee3": "2026-10-29T13:25:15.720927+00:00",
-  "3f6aed5d96f90e49": "2026-10-29T13:30:15.714411+00:00",
-  "8bc5d7a626ffb2b5": "2026-10-29T13:30:15.714411+00:00",
   "e28c57ca64cf0871": "2026-10-29T13:35:15.698185+00:00",
   "d10627dd9d0703ae": "2026-10-29T13:35:15.698185+00:00",
   "2730e876721e04be": "2026-10-29T13:40:15.625628+00:00",
@@ -720,55 +716,11 @@
   "68244d884d28b341": "2026-11-01T13:10:20.146674+00:00",
   "30e9c66dc4dbac83": "2026-11-01T13:10:20.146674+00:00",
   "12c47449ccdfa0ff": "2026-11-01T13:10:20.146674+00:00",
-  "0268a03ec479e240": "2026-11-01T13:20:20.168682+00:00"
+  "0268a03ec479e240": "2026-11-01T13:20:20.168682+00:00",
+  "1221c0cbdb137d1e": "2026-11-01T13:25:20.182614+00:00",
+  "1554c5578027502f": "2026-11-01T13:30:20.225141+00:00"
  },
  "recent": [
-  {
-   "title": "ECB Holds Rates as Lagarde Exit Compounds Alarm Over Oil, France",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-29/ecb-holds-rates-as-lagarde-exit-compounds-alarm-over-oil-france",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 8,
-   "ts": "2026-10-29T13:25:15.720927+00:00",
-   "title_ru": "ЕЦБ удерживает ставки, поскольку Lagarde Exit Compounds сигнализирует о нефти, Франция",
-   "lead": "The European Central Bank kept interest rates unchanged as news that President Christine Lagarde will step down early added to concern over energy costs and France.",
-   "lead_ru": "Европейский центральный банк оставил процентные ставки без изменений, поскольку новость о том, что президент Кристин Лагард уйдет в отставку раньше, добавила беспокойства по поводу затрат на энергоносители и Франции.",
-   "tags": [
-    "ECB",
-    "rates",
-    "oil"
-   ]
-  },
-  {
-   "title": "European Central Bank keeps key interest rate on hold at 2.5%",
-   "link": "https://www.cnbc.com/2026/10/29/european-central-bank-interest-rates.html",
-   "sources": [
-    "CNBC"
-   ],
-   "score": 5,
-   "ts": "2026-10-29T13:25:15.720927+00:00",
-   "title_ru": "Европейский центральный банк удерживает ключевую процентную ставку на уровне 2,5%",
-   "tags": [
-    "rates"
-   ]
-  },
-  {
-   "title": "ECB Holds Rates as Lagarde Announces Early Resignation",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-29/ecb-holds-rates-as-lagarde-announces-early-resignation-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 7,
-   "ts": "2026-10-29T13:30:15.714411+00:00",
-   "title_ru": "ЕЦБ удерживает ставки, поскольку Лагард объявляет о досрочной отставке",
-   "lead": "The European Central Bank kept interest rates on hold at 2.5% as news that President Christine Lagarde will step down from her role early added to concern over energy costs and France's fiscal situation.",
-   "lead_ru": "Европейский центральный банк сохранил процентные ставки на уровне 2,5% в качестве новости о том, что президент Кристин Лагард уйдет в отставку со своей должности, что вызвало обеспокоенность по поводу затрат на энергоносители и фискальной ситуации во Франции.",
-   "tags": [
-    "ECB",
-    "rates"
-   ]
-  },
   {
    "title": "US inflation heats up in September; consumer spending rises",
    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNamNwQk5mVXlad05tREVFeXVRU29iOGZLMHJLQ3dhQURxb2s2OXNfYzhjQ2tmakJEUFpJcU9FUlZrZmY1czdGVXpsYzVaY21EaVR3R2NDM3pfeEpXYVpRQmZOSXphSXdSMDlyM0plUnlvVnJCdkVhd2Q2dlhOTjUwQm42TE1uYVpsUEJEX1V0WHJ1cVZXajFSNm9zcHlGTUprQWc?oc=5",
@@ -6758,6 +6710,18 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "Brooks Steps Up Global Push as Running Boom Builds",
+   "link": "https://www.bloomberg.com/news/videos/2026-11-01/brooks-steps-up-global-push-as-running-boom-builds-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-01T13:30:20.225141+00:00",
+   "title_ru": "Brooks наращивает глобальный толчок по мере нарастания бегового бума",
+   "lead": "Brooks Running CEO Dan Sheridan tells Bloomberg This Weekend that a global running boom and consumers’ continued focus on health and wellness are helping drive growth, with the company expanding in markets including Europe and…",
+   "lead_ru": "Генеральный директор Brooks Running Дэн Шеридан рассказал Bloomberg в эти выходные, что глобальный беговой бум и постоянное внимание потребителей к здоровью и благополучию помогают стимулировать рост, а компания расширяется на рынках, включая Европу и..."
   }
  ],
  "last_digest": "2026-10-31",
@@ -13650,19 +13614,20 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-11-01T12:25:20.395649+00:00",
+  "checked": "2026-11-01T13:30:20.225141+00:00",
   "sec_seen": [
    "0001213900-26-114605",
    "0001824159-26-000015",
    "0001193125-26-442142",
+   "0001697362-26-000021",
    "0001823923-26-000015",
    "0001213900-26-114611",
    "0001213900-26-114604",
    "0001823940-26-000012",
-   "0001214659-26-013568",
    "0000091440-26-000174",
-   "0001628280-26-068637",
+   "0001214659-26-013568",
    "0001193125-26-442201",
+   "0001628280-26-068637",
    "0001493152-26-049492",
    "0001213900-26-114608",
    "0001213900-26-114610",
@@ -13671,7 +13636,6 @@
    "0001231919-26-001519",
    "0001193125-26-442229",
    "0001104659-26-120789",
-   "0002014361-26-000040",
    "0001213900-26-114609",
    "0001477932-26-006563",
    "0001280486-26-000010",
@@ -13695,12 +13659,13 @@
    "0001193125-26-442116",
    "0001628280-26-068639",
    "0001213900-26-114606",
-   "0001697362-26-000021",
+   "0002014361-26-000040",
    "0001213900-26-114603",
    "0001899977-26-000010"
   ],
   "errors": {
-   "senate": "HTTPError: HTTP Error 403: Forbidden"
+   "senate": "HTTPError: HTTP Error 403: Forbidden",
+   "sec": "TimeoutError: The read operation timed out"
   }
  },
  "cal_actuals": {
