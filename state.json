@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "2fcd2fd5299dbed5": "2026-10-29T22:03:36.860071+00:00",
   "4d68776c3532650f": "2026-10-29T22:13:36.881674+00:00",
   "a89ed290ff2739e6": "2026-10-29T22:18:37.002906+00:00",
   "eb57745865ba1c8e": "2026-10-29T22:18:37.002906+00:00",
@@ -619,22 +618,12 @@
   "6c7583faf6101288": "2026-11-01T21:16:06.426502+00:00",
   "fda013a0a8a5b6b1": "2026-11-01T21:46:06.436775+00:00",
   "fb37bdbca6061e61": "2026-11-01T21:46:06.436775+00:00",
-  "3b060bd60f2cd60b": "2026-11-01T21:51:06.405213+00:00"
+  "3b060bd60f2cd60b": "2026-11-01T21:51:06.405213+00:00",
+  "db40dd4969f58f6a": "2026-11-01T22:06:06.458642+00:00",
+  "8812148875af5e04": "2026-11-01T22:06:06.458642+00:00",
+  "08ea93288acc0858": "2026-11-01T22:06:06.458642+00:00"
  },
  "recent": [
-  {
-   "title": "Weak quarter for Intel sends shivers through cooling chip stocks",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNcXEzUmpkSHEwZWtxM2cwVjMwQkJXMVZqVUJrWk8xejY0TzkyZmtvN0E2Z3Q3MDJfNkRLOXRKUW5xR2QzLVM5WjQzSVp2OVBhQldOMVJKZkJ2ZC1qMm04dWFSVjExd1h2bXV2emx1dmkwTVFzT29DamloeVhPZUdwZEhuUmhvem92VG9MQzFIZU1ibDR1MWNaZ0o2ZVBOYzhodHdyQVY4T1U?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-29T22:03:36.860071+00:00",
-   "title_ru": "Слабый квартал для Intel вызвал дрожь в акциях охлаждающих чипов",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Fed Is Facing Same Issues Greenspan Did in 2001: Kelton",
    "link": "https://www.bloomberg.com/news/videos/2026-10-29/fed-is-facing-same-issues-greenspan-did-in-2001-kelton-video",
@@ -5557,6 +5546,49 @@
    "score": 3,
    "ts": "2026-11-01T21:51:06.405213+00:00",
    "title_ru": "Трамп заявил, что у США и Канады есть «концепция» новой торговой сделки"
+  },
+  {
+   "title": "Лекарства берут в оборот // Наказание за вывод на рынок дженериков в нарушение патента предложено ужесточить",
+   "link": "https://www.kommersant.ru/doc/9078609",
+   "sources": [
+    "Kommersant"
+   ],
+   "score": 4,
+   "ts": "2026-11-01T22:06:06.458642+00:00",
+   "title_en": "Medicines are put into circulation // The punishment for bringing generics to the market in violation of the patent is proposed to be tightened",
+   "lead": "Минэкономики предложило ввести оборотные штрафы за незаконный вывод на российский рынок лекарств-дженериков до истечения срока действия патента на оригинальный препарат.",
+   "lead_en": "The Ministry of Economy proposed to introduce negotiable fines for the illegal introduction of generic drugs to the Russian market before the expiration of the patent for the original drug.",
+   "tags": [
+    "Russia"
+   ]
+  },
+  {
+   "title": "Indonesia’s MSCI Crisis Driven By Wash Trades and 5,000% Rallies",
+   "link": "https://www.bloomberg.com/news/features/2026-11-01/indonesia-s-msci-crisis-driven-by-wash-trades-and-5-000-rallies",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-01T22:06:06.458642+00:00",
+   "title_ru": "Кризис MSCI в Индонезии, вызванный мокрыми сделками и ралли на 5000%",
+   "lead": "Stock trading schemes that helped enrich Indonesia’s tycoons have put the country on the verge of a costly MSCI downgrade.",
+   "lead_ru": "Схемы торговли акциями, которые помогли обогатить магнатов Индонезии, поставили страну на грань дорогостоящего снижения MSCI."
+  },
+  {
+   "title": "СПОТ по льготной ставке // Освобождение импорта из Белоруссии от авансового платежа продлено до середины 2027 года",
+   "link": "https://www.kommersant.ru/doc/9078552",
+   "sources": [
+    "Kommersant"
+   ],
+   "score": 3,
+   "ts": "2026-11-01T22:06:06.458642+00:00",
+   "title_en": "PHRS at a preferential rate // Exemption of imports from Belarus from advance payment extended until mid-2027",
+   "lead": "За два дня до истечения действия отсрочки по уплате обеспечительного платежа в рамках СПОТ при импорте товаров из Белоруссии российское правительство продлило ее еще на восемь месяцев.",
+   "lead_en": "Two days before the expiration of the deferral of payment of the security payment under the spot when importing goods from Belarus, the Russian government extended it for another eight months.",
+   "tags": [
+    "rates",
+    "Russia"
+   ]
   }
  ],
  "last_digest": "2026-11-01",
