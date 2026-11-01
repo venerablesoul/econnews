@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "4d68776c3532650f": "2026-10-29T22:13:36.881674+00:00",
   "a89ed290ff2739e6": "2026-10-29T22:18:37.002906+00:00",
   "eb57745865ba1c8e": "2026-10-29T22:18:37.002906+00:00",
   "59b28a2b9d41bf2d": "2026-10-29T22:23:36.841735+00:00",
@@ -621,7 +620,9 @@
   "3b060bd60f2cd60b": "2026-11-01T21:51:06.405213+00:00",
   "db40dd4969f58f6a": "2026-11-01T22:06:06.458642+00:00",
   "8812148875af5e04": "2026-11-01T22:06:06.458642+00:00",
-  "08ea93288acc0858": "2026-11-01T22:06:06.458642+00:00"
+  "08ea93288acc0858": "2026-11-01T22:06:06.458642+00:00",
+  "60b4ad74af879741": "2026-11-01T22:16:06.448194+00:00",
+  "f5909d527971d75b": "2026-11-01T22:16:06.448194+00:00"
  },
  "recent": [
   {
@@ -5588,6 +5589,19 @@
    "tags": [
     "rates",
     "Russia"
+   ]
+  },
+  {
+   "title": "Australia’s Reserve Bank Tipped to Hike Rates Again As Inflation Remains Stubborn",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOZXZsQmVORmd5amNvQWJsUFBvc2VDakUtbjV0YTN0bUlSXzExTEhpeXhtajV2dVZhQ1lGRnlYNkxHSFM2bUZleE5kd0hqS296YWhGSU1mVDhSbi1sUWdXdmhYYzNEam04cUJRQUU4RU1oa2hhRHc1MVRZX2pWMGVSZ082MDhOUVhEaV9DZHBrZlBfbU9Ia0M5VzdGNktJRzVhY3h5OXFEXzU0TndRVkFnR3V0YXlqSDk2cTlURmdMS0w3YmxQ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-11-01T22:16:06.448194+00:00",
+   "title_ru": "Резервный банк Австралии снова поднял ставки, поскольку инфляция остается упрямой",
+   "tags": [
+    "inflation"
    ]
   }
  ],
