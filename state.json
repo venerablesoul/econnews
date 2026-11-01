@@ -795,7 +795,9 @@
   "261a727cc27c43d0": "2026-11-01T04:19:20.956066+00:00",
   "7193fc40858ae74f": "2026-11-01T05:14:20.911422+00:00",
   "12ab1b6980bca0f3": "2026-11-01T05:24:20.953990+00:00",
-  "700b87f47282f3de": "2026-11-01T05:24:20.953990+00:00"
+  "700b87f47282f3de": "2026-11-01T05:24:20.953990+00:00",
+  "1156e947a38582fe": "2026-11-01T06:49:54.317607+00:00",
+  "81bf4ca3dab7e5cd": "2026-11-01T06:49:54.317607+00:00"
  },
  "recent": [
   {
@@ -7713,6 +7715,26 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Turkey appoints Muhsin Atci as head of Capital Markets Board",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPRjJySnp1VDM0WVFnNzlCRDRka3pLQk9BZGRyTkhCdmEzdVFFc1pmR0lRUFhOYnF1cmV6SUFITjVKZkgzd283bVcyeFZnVFVfUVByUlREUnFOOVVPY0R6QUtuWDUyTnRWS0VDOWJuNXRZbDVPeTFTM3FLMkdsLW85NTJHOGZzczlid2d2N0VkcEFKYzZENjBaLU9EZk91Wk1rX2x6SUJ1N0tQckRU?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-01T06:49:54.317607+00:00",
+   "title_ru": "Турция назначила Мухсина Атчи главой Совета по рынкам капитала"
+  },
+  {
+   "title": "Bajaj Housing Finance Ltd (BAJO.NS) | Stock Price & Latest News",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5neG5UNmM2aHFHQzRWVGdMdUtMcGQxem9STUk4SUNfS3k4S1BCQnhfWHpsd2dsN3FpSTZYSnRWUVhPakhSLVg1djMydUs1aFZObjVKNU80cjY2TzBqZ21DMVptUm1wTzkzR1R6QVJPZw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-01T06:49:54.317607+00:00",
+   "title_ru": "Bajaj Housing Finance Ltd (BAJO.NS) | Курс акций и последние новости"
   }
  ],
  "last_digest": "2026-10-31",
@@ -14624,8 +14646,8 @@
    "0001231919-26-001519",
    "0002025268-26-000008",
    "0001213900-26-114606",
-   "0001213900-26-114608",
    "0001193125-26-442142",
+   "0001213900-26-114608",
    "0001280486-26-000010",
    "0001493152-26-049496",
    "0001193532-26-000012",
@@ -14642,17 +14664,17 @@
    "0001628280-26-068639",
    "0001628280-26-068637",
    "0001451763-26-000014",
-   "0002014386-26-000026",
    "0001823940-26-000012",
    "0001193125-26-442228",
    "0001193125-26-442229",
    "0001193125-26-442201",
    "0001193125-26-442196",
    "0001213900-26-114605",
+   "0001493152-26-049492",
    "0001193125-26-442119",
    "0001214659-26-013568",
    "0001731122-26-001386",
-   "0001493152-26-049492"
+   "0002014386-26-000026"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
