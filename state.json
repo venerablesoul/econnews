@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "ea279e6363583c24": "2026-10-29T10:21:43.369535+00:00",
-  "f644d5924e9814c0": "2026-10-29T10:26:43.374354+00:00",
-  "f5e8cee9d804c076": "2026-10-29T10:26:43.374354+00:00",
   "a992aba176501102": "2026-10-29T10:31:43.363902+00:00",
   "ab0743bfd09279fe": "2026-10-29T10:31:43.363902+00:00",
   "7bd6431aed7fafe3": "2026-10-29T10:31:43.363902+00:00",
@@ -765,50 +762,11 @@
   "ae4fd6febb52d22b": "2026-11-01T09:19:54.301979+00:00",
   "96dbdff06d7c4fdc": "2026-11-01T09:29:54.335487+00:00",
   "6dd3d1bbfe7fc1fa": "2026-11-01T09:34:54.331335+00:00",
-  "b0d3d974b2393d70": "2026-11-01T09:54:54.308510+00:00"
+  "b0d3d974b2393d70": "2026-11-01T09:54:54.308510+00:00",
+  "1470a84baced7693": "2026-11-01T10:29:54.323226+00:00",
+  "11254015cdd4fac5": "2026-11-01T10:29:54.323226+00:00"
  },
  "recent": [
-  {
-   "title": "Lagarde to Step Down as ECB President on Feb. 7 (Video)",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-29/lagarde-to-step-down-as-ecb-president-on-feb-7-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-29T10:21:43.369535+00:00",
-   "title_ru": "Лагард уйдет в отставку с поста президента ЕЦБ 7 февраля (видео)",
-   "tags": [
-    "ECB"
-   ]
-  },
-  {
-   "title": "Costa Says EU Will Start Search for New ECB President Today",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-29/costa-says-eu-will-start-search-for-new-ecb-president-today",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-29T10:26:43.374354+00:00",
-   "title_ru": "Коста говорит, что ЕС начнет поиск нового президента ЕЦБ сегодня",
-   "lead": "European Council President Antonio Costa said the process to find a successor for European Central Bank President Christine Lagarde will kick off on Thursday.",
-   "lead_ru": "Президент Европейского совета Антонио Коста заявил, что процесс поиска преемника президента Европейского центрального банка Кристин Лагард начнется в четверг.",
-   "tags": [
-    "ECB"
-   ]
-  },
-  {
-   "title": "Renault Q3 revenue beats forecast as EV demand lifts shares",
-   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQaXFwZ2VwSDBZVUQ0S0ljTzZkUnV5VERleGhMNHk2Y0ZkY2NzYTFnWS1SVjY3ajg4Q3lUOWNWZE5zRTBnT012MnV5X25OYzZiSE5tdUxBcVZ0WlFHWU9nT1FQWGg0N0UxelN0elFmcWxWRThVYm5PNy13ajQ3SDhCQWNiVkxnNnhLRXR6ZVB4blRuekpTR3BCS043bXY4R2Yw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-29T10:26:43.374354+00:00",
-   "title_ru": "Выручка Renault в третьем квартале превзошла прогноз, поскольку спрос на электромобили поднимает акции",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "ECB President Lagarde resigns effective Feb 7",
    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPd3FmVnJnVlFQYVZ3U0k0TFpoWDdmQWVHZ0lZU21uOVZLZUVhZ2d3djg0YzJNc2RURmxMTkVULURKZTBKcy1wMlJ5ZldxTjRQSkJ3ak55MU0yU1ItalNRYmZDbHZzWkh6UmN3OHlucWFhQWhrSkYtcjZnSnNINWhybXdLLTh3elNvY3dvenVUQnp3TmpQUExzUkpzYzkzcU0?oc=5",
@@ -7340,6 +7298,21 @@
    ],
    "score": 2,
    "ts": "2026-11-01T09:54:54.308510+00:00"
+  },
+  {
+   "title": "China to Convene Meeting on Supporting Stock Market, Reports Say",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-01/china-to-convene-meeting-on-supporting-stock-market-reports-say",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-01T10:29:54.323226+00:00",
+   "title_ru": "Китай созовет совещание по поддержке фондового рынка, сообщают СМИ",
+   "lead": "China’s central bank and its securities regulator will hold a meeting on Monday to discuss the use of tools designed to support the country’s capital market, according to local media.",
+   "lead_ru": "Центральный банк Китая и его регулятор ценных бумаг проведут встречу в понедельник, чтобы обсудить использование инструментов, предназначенных для поддержки рынка капитала страны, сообщают местные СМИ.",
+   "tags": [
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-10-31",
