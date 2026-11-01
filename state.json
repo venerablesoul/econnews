@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "a59dde20223d4765": "2026-10-29T23:53:36.865985+00:00",
-  "0bd11d50fb05b0c8": "2026-10-29T23:53:36.865985+00:00",
-  "3f63598960fcb1e4": "2026-10-29T23:53:36.865985+00:00",
-  "f730f5f08c6362e8": "2026-10-29T23:53:36.865985+00:00",
   "b21edadab74a2d22": "2026-10-29T23:58:36.878431+00:00",
   "f78885a1b3d1d944": "2026-10-29T23:58:36.878431+00:00",
   "5dfdfe0847fcfcd9": "2026-10-29T23:58:36.878431+00:00",
@@ -607,36 +603,10 @@
   "edc3aefa5ae4ff4c": "2026-11-01T23:51:37.762555+00:00",
   "80388c93e5c1be2d": "2026-11-01T23:51:37.762555+00:00",
   "45305fa6765dc1bc": "2026-11-01T23:51:37.762555+00:00",
-  "c2c64bec82277ce7": "2026-11-01T23:51:37.762555+00:00"
+  "c2c64bec82277ce7": "2026-11-01T23:51:37.762555+00:00",
+  "09d32552129f6409": "2026-11-01T23:56:37.690849+00:00"
  },
  "recent": [
-  {
-   "title": "Новые налоги поддержаны концептуально // Госдума в первом чтении поддержала инициативы правительства по наполнению бюджета",
-   "link": "https://www.kommersant.ru/doc/9064096",
-   "sources": [
-    "Kommersant"
-   ],
-   "score": 3,
-   "ts": "2026-10-29T23:53:36.865985+00:00",
-   "title_en": "New taxes supported conceptually // The State Duma in the first reading supported the government's initiatives to fill the budget",
-   "lead": "Два налоговых законопроекта, вошедших в бюджетный пакет правительства, 29 октября прошли первое чтение в Госдуме.",
-   "lead_en": "Two tax bills included in the government's budget package passed the first reading in the State Duma on October 29."
-  },
-  {
-   "title": "Договоры меняют характер // Мониторинг рынка труда",
-   "link": "https://www.kommersant.ru/doc/9064091",
-   "sources": [
-    "Kommersant"
-   ],
-   "score": 3,
-   "ts": "2026-10-29T23:53:36.865985+00:00",
-   "title_en": "Contracts change the nature //Labour market monitoring",
-   "lead": "Российские компании стали реже нанимать сотрудников по договорам гражданско-правового характера (ГПХ), следует из данных Росстата.",
-   "lead_en": "Russian companies have become less likely to hire employees under civil law contracts (CLC), it follows from the data of Rosstat.",
-   "tags": [
-    "Russia"
-   ]
-  },
   {
    "title": "Tokyo Inflation Exceeds BOJ’s 2% Target Before Rate Decision",
    "link": "https://www.bloomberg.com/news/articles/2026-10-29/tokyo-inflation-exceeds-boj-s-2-target-ahead-of-rate-decision",
@@ -5471,6 +5441,20 @@
    "score": 3,
    "ts": "2026-11-01T23:51:37.762555+00:00",
    "title_ru": "Рынки недвижимости"
+  },
+  {
+   "title": "Bitcoin Treasury Corp (BTCFF.PK) | Stock Price & Latest News",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1oVWJ1bDZOQ3BudEFEZ1hXTjVyOGJFc3ZkX3NtUDRvYkRHM2xqX3FlRFl5NmwxT2lsTHpRbE9jSjhZa2REZmJwZlFBR3ZSRGxHUDlYenVCM0plNG11NkJRZ05MdXhVYWVfNEE?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-01T23:56:37.690849+00:00",
+   "title_ru": "Bitcoin Treasury Corp (BTCFF.PK) | Цена акций и последние новости",
+   "tags": [
+    "bonds",
+    "crypto"
+   ]
   }
  ],
  "last_digest": "2026-11-01",
@@ -5491,7 +5475,7 @@
   "MarketWatch": 0,
   "Банк Англии": 0,
   "Bank of England": 0,
-  "Bank of Russia": 1,
+  "Bank of Russia": 0,
   "ECB": 0,
   "Fed": 0,
   "IMF": 0,
