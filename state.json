@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "1ca0146deb800a07": "2026-10-29T20:18:36.881383+00:00",
-  "671fdf8bba6dd2e9": "2026-10-29T20:18:36.881383+00:00",
-  "31867f4b04eec168": "2026-10-29T20:18:36.881383+00:00",
-  "dc73ba541a42aeaa": "2026-10-29T20:18:36.881383+00:00",
-  "0e98c96723d16ab3": "2026-10-29T20:23:37.075738+00:00",
   "4328c4886a15bdc0": "2026-10-29T20:28:36.884129+00:00",
   "d5f01f9dd738c00b": "2026-10-29T20:33:36.867577+00:00",
   "a4fdb9f4b3e7d55b": "2026-10-29T20:33:36.867577+00:00",
@@ -632,79 +627,12 @@
   "5713194ee95efd43": "2026-11-01T19:06:06.369238+00:00",
   "b8d1d810ccc1212e": "2026-11-01T19:41:06.371767+00:00",
   "e1a8d2893437a7d0": "2026-11-01T19:56:06.417429+00:00",
-  "96b4415c14b037de": "2026-11-01T20:06:06.394652+00:00"
+  "96b4415c14b037de": "2026-11-01T20:06:06.394652+00:00",
+  "e1f9fc13c592e5b3": "2026-11-01T20:21:06.397639+00:00",
+  "ffc1b87fbde6349b": "2026-11-01T20:26:06.391540+00:00",
+  "7c4f6da857610289": "2026-11-01T20:26:06.391540+00:00"
  },
  "recent": [
-  {
-   "title": "Lagarde Quits ECB Early, French Debt: Global Return",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-29/lagarde-quits-ecb-early-french-debt-global-return-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 7,
-   "ts": "2026-10-29T20:18:36.881383+00:00",
-   "title_ru": "Лагард досрочно покидает ЕЦБ, Французский долг: глобальный возврат",
-   "lead": "Bloomberg's Alice Gledhill joins Scarlet Fu on \"Bloomberg Real Yield.\" They discuss the French bond market, and the decision by ECB president Christine Lagarde to resign on February 7, before the end of her term next October.",
-   "lead_ru": "Элис Гледхилл из Bloomberg присоединяется к Скарлет Фу в программе «Реальная доходность Bloomberg». Они обсуждают французский рынок облигаций и решение президента ЕЦБ Кристин Лагард уйти в отставку 7 февраля, до окончания ее полномочий в октябре следующего года.",
-   "tags": [
-    "ECB",
-    "bonds"
-   ]
-  },
-  {
-   "title": "Canadian Telecom Selloff Lures Money Managers Buying the Dip",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOUzFYQTNvTDlveWdxbFRWTnp3RUN3aHpGdU95S1AydzZVQ3d6UnJCNkJXaVFIR3JFekJPc0dWQU1WSkFxZWVPdGdLczhDNFk4WHNUUTFMSEJ3QndRbTVrQ1JqNTF0c1AtYzg5cFNMX1NvdE91VWJBSDdZTzFON0NTYmdpcWl0OGk5MkFKdzlkMmdkTlFQcGRtZHh1TjhKX3VDNEF0STdIT0VSY3pEQlBZZktpRnVTODkzQVRQME5B?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-29T20:18:36.881383+00:00",
-   "title_ru": "Распродажа канадских телекоммуникационных компаний заманивает управляющих капиталом, покупающих падение",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "Safe Haven Demand Will Persist: Larosiliere",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-29/safe-haven-demand-will-persist-larosiliere-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-29T20:18:36.881383+00:00",
-   "title_ru": "Спрос на безопасные убежища сохранится: Ларосильер",
-   "lead": "Kay Herr, CIO of US GFICC at JPMorgan Asset Management, and Stephanie Larosiliere, head of fixed income business strategy at Invesco, joins Scarlet Fu on \"Bloomberg Real Yield.\" US Treasuries on Thursday rose as a selloff in…",
-   "lead_ru": "Кей Херр, ИТ-директор американского GFICC в JPMorgan Asset Management, и Стефани Ларозильер, руководитель отдела бизнес-стратегии с фиксированным доходом в Invesco, присоединяются к Скарлет Фу в программе «Bloomberg Real Yield». Казначейские облигации США в четверг выросли из-за распродажи…",
-   "tags": [
-    "bonds",
-    "markets"
-   ]
-  },
-  {
-   "title": "Europe Inc heads for second-best earnings season since 2022",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNZHN5RlpkMThjUU5Rd0FRLXJRNEtteHQ3ODBGeE5tOEFFTWhwVmY5Y0Q5N0VtbDBYWU1wLWhYSUs0NHZJazBfUmlkNURTcDlmVHI5UU1uVkRxclEzQk1uWWxXNkswRGhwTHhjczVESE5kQnhkSjkwV0RTenpnaDJsVWNoWlFadnZyeUZpUHE5eFo0TjFILVNROERib18tQXpYdWc?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-29T20:18:36.881383+00:00",
-   "title_ru": "Europe Inc готовится к второму лучшему сезону прибыли с 2022 года"
-  },
-  {
-   "title": "US Economy Grows Most in a Year on Strong Spending, Investment",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-29/us-economy-grows-most-in-a-year-on-spending-investment-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-29T20:23:37.075738+00:00",
-   "title_ru": "Экономика США выросла больше всего за год благодаря высоким расходам и инвестициям",
-   "lead": "Kevin Gordon, Schwab head of Macro Research & Investing, said that the public's negative perception of the economy that is driven by fears about AI and the labor market are an 'interesting divergence' from the picture the…",
-   "lead_ru": "Кевин Гордон, глава подразделения макроисследований и инвестиций компании Schwab, заявил, что негативное восприятие экономики обществом, вызванное опасениями по поводу ИИ и рынка труда, является «интересным отличием» от картины, сложившейся…",
-   "tags": [
-    "jobs"
-   ]
-  },
   {
    "title": "The stock market’s best forecasting tool says returns over the next 10 years will be dismal",
    "link": "https://www.marketwatch.com/story/the-stock-markets-best-forecasting-tool-says-returns-over-the-next-10-years-will-be-dismal-f94fcd87?mod=mw_rss_topstories",
@@ -5751,6 +5679,22 @@
    "title_ru": "Индийские потребители вернулись, а ее акции — нет",
    "tags": [
     "markets"
+   ]
+  },
+  {
+   "title": "Australia Set for Fifth Rate Hike as Inflation Fight Intensifies",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-01/australia-set-for-fifth-rate-hike-as-inflation-fight-intensifies",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 9,
+   "ts": "2026-11-01T20:26:06.391540+00:00",
+   "title_ru": "Австралия настроена на повышение пятой ставки по мере усиления борьбы с инфляцией",
+   "lead": "Australia’s central bank is poised to raise interest rates for a fifth time this year on Tuesday, intensifying efforts to gain control over inflation that’s among the strongest in the developed world.",
+   "lead_ru": "Центральный банк Австралии готов повысить процентные ставки в пятый раз в этом году во вторник, активизировав усилия по установлению контроля над инфляцией, которая является одной из самых сильных в развитом мире.",
+   "tags": [
+    "rates",
+    "inflation"
    ]
   }
  ],
