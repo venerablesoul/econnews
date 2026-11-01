@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "12ab1b6980bca0f3": "2026-10-29T05:11:19.835237+00:00",
   "cdd9919353fdd5c9": "2026-10-29T05:16:19.801440+00:00",
   "8721bbc8c74fe406": "2026-10-29T05:16:19.801440+00:00",
   "30f9e1e612cd0b83": "2026-10-29T05:16:19.801440+00:00",
@@ -815,7 +814,8 @@
   "515ff6eaf7b5d4f9": "2026-11-01T02:49:20.916497+00:00",
   "bc6de2973c2c5205": "2026-11-01T02:49:20.916497+00:00",
   "4b78ada58aaf973c": "2026-11-01T03:04:20.899049+00:00",
-  "261a727cc27c43d0": "2026-11-01T04:19:20.956066+00:00"
+  "261a727cc27c43d0": "2026-11-01T04:19:20.956066+00:00",
+  "7193fc40858ae74f": "2026-11-01T05:14:20.911422+00:00"
  },
  "recent": [
   {
@@ -7899,6 +7899,16 @@
    "tags": [
     "rates"
    ]
+  },
+  {
+   "title": "Germany must do more to boost gas reserves as storage levels hit record low, lobby group says",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNTzBFS0hhWUtOcVhOMDVsX25TV3R4eENLbjdCMUpDRDByYTBHWjU3MmtycmM2blh4Y1Y3V2t6SUhIODJidldfcjNOdG0zVHRNdVFWdXZKWVhJeWdFWE9LaDA1MnJlbk1vaC1qLUpuZWU0WERCckY3Nk4tLUhHcnNFZ1pJdzJYRTFxWFl4cjRTNG53QmxkSDAxUUd2NjdnRUhOTDBhbUx5eUppU3Q4Vmh0aFExRlVRTUJzUGl1aWgySFZtRjlnb1E?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-01T05:14:20.911422+00:00",
+   "title_ru": "Германия должна сделать больше для увеличения запасов газа, поскольку уровни хранения достигли рекордно низкого уровня, говорит лоббистская группа"
   }
  ],
  "last_digest": "2026-10-31",
@@ -14647,14 +14657,14 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-11-01T04:09:20.990113+00:00",
+  "checked": "2026-11-01T05:14:20.911422+00:00",
   "sec_seen": [
    "0001451763-26-000014",
    "0001193125-26-442119",
    "0001280486-26-000010",
    "0001193125-26-442116",
-   "0001193125-26-442229",
    "0001493152-26-049494",
+   "0001193125-26-442229",
    "0001213900-26-114609",
    "0001193532-26-000012",
    "0001193125-26-442230",
