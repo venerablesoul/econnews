@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "234fb873d6a1dce4": "2026-10-29T15:00:15.903196+00:00",
-  "8358c84e4a016c10": "2026-10-29T15:05:16.800156+00:00",
-  "d157be01a9026e49": "2026-10-29T15:05:16.800156+00:00",
-  "bc56f02d11283c96": "2026-10-29T15:05:16.800156+00:00",
   "1e00c6fc540eb92c": "2026-10-29T15:10:15.780765+00:00",
   "95f6d5517113f2ea": "2026-10-29T15:10:15.780765+00:00",
   "7a94db72e85ec2e3": "2026-10-29T15:10:15.780765+00:00",
@@ -680,38 +676,10 @@
   "812ebc9ee491ac52": "2026-11-01T14:10:20.165474+00:00",
   "c62ddd0c31b32bfe": "2026-11-01T14:20:20.171873+00:00",
   "8742e1368dcb2327": "2026-11-01T14:35:20.454346+00:00",
-  "fe812f370982aad6": "2026-11-01T14:45:20.208038+00:00"
+  "fe812f370982aad6": "2026-11-01T14:45:20.208038+00:00",
+  "e61a0bde3c8dcc4e": "2026-11-01T15:05:20.196459+00:00"
  },
  "recent": [
-  {
-   "title": "Faisal Islam: The 10-year plan will have to fill the gaps from this 'micro Budget'",
-   "link": "https://www.bbc.co.uk/news/articles/cwx283zynnv3o?at_medium=RSS&at_campaign=rss",
-   "sources": [
-    "BBC"
-   ],
-   "score": 3,
-   "ts": "2026-10-29T15:00:15.903196+00:00",
-   "title_ru": "Фейсал Ислам: 10-летний план должен заполнить пробелы в этом «микробюджете»",
-   "lead": "Chancellor John Healey's plans fall short of radical action to create a promised new economic model.",
-   "lead_ru": "Планы канцлера Джона Хили не соответствуют радикальным действиям по созданию обещанной новой экономической модели."
-  },
-  {
-   "title": "Fed Can’t Beat Inflation Without Market Pain, Says Dawson",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-29/fed-can-t-tighten-without-market-pain-says-dawson-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 8,
-   "ts": "2026-10-29T15:05:16.800156+00:00",
-   "title_ru": "ФРС не может победить инфляцию без рыночной боли, говорит Доусон",
-   "lead": "Federal Reserve officials left interest rates unchanged and reiterated their commitment to containing inflation without offering a clear signal they might raise rates at their next meeting in December.",
-   "lead_ru": "Представители Федеральной резервной системы оставили процентные ставки без изменений и подтвердили свою приверженность сдерживанию инфляции, не дав четкого сигнала о том, что они могут повысить ставки на своем следующем заседании в декабре.",
-   "tags": [
-    "Fed",
-    "rates",
-    "inflation"
-   ]
-  },
   {
    "title": "Baseball's championship series ran through Milwaukee and Tampa",
    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxObEhNRW1LLTd1RWsyTkgwdWFyaDNKS0FXcm05cjRjUk8wOUlfY203NkZjbXlObG41TnpJMUdUX0o1WUVjTlpKT3NOSjk0TEIwX0EzNjVRRVBqV3BjSVBtMm5ScXdmV2hiaGwwQkEzSjRpX3dOQlllcW8zT3E0VDl6bG5lM1J5OHNBUWdWcnFHbWdmbUQ3SEM0Y0hZZ1gyd2dx?oc=5",
@@ -6377,6 +6345,15 @@
    "score": 3,
    "ts": "2026-11-01T14:45:20.208038+00:00",
    "title_ru": "Катар растет, противодействуя падению рынка Персидского залива из-за опасений войны с Ираном"
+  },
+  {
+   "title": "Apple’s new earnings era begins at a critical time for Big Tech",
+   "link": "https://www.marketwatch.com/story/apples-new-earnings-era-begins-at-a-critical-time-for-big-tech-2236a44e?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-11-01T15:05:20.196459+00:00"
   }
  ],
  "last_digest": "2026-10-31",
@@ -13277,8 +13254,8 @@
    "0001823923-26-000015",
    "0001213900-26-114611",
    "0001213900-26-114604",
-   "0001823940-26-000012",
    "0001214659-26-013568",
+   "0001823940-26-000012",
    "0000091440-26-000174",
    "0001628280-26-068637",
    "0001193125-26-442201",
