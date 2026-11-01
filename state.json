@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c858c664b687febb": "2026-10-29T19:03:37.057662+00:00",
   "ebb6a7c1240c28d0": "2026-10-29T19:08:37.004179+00:00",
   "437b6e88edc33335": "2026-10-29T19:08:37.004179+00:00",
   "225f4c5a3937e76b": "2026-10-29T19:13:36.920289+00:00",
@@ -644,19 +643,10 @@
   "dd60a5a8fd494621": "2026-11-01T18:01:06.448975+00:00",
   "fab5184a6e4efc9e": "2026-11-01T18:16:06.405698+00:00",
   "624389dfa8e47a05": "2026-11-01T18:36:06.414952+00:00",
-  "961f4a39f174176f": "2026-11-01T18:46:06.493382+00:00"
+  "961f4a39f174176f": "2026-11-01T18:46:06.493382+00:00",
+  "5713194ee95efd43": "2026-11-01T19:06:06.369238+00:00"
  },
  "recent": [
-  {
-   "title": "India says trade deal with US will not hurt its farmers",
-   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNcEhZNUhpdlVpMDVtUklNQVJyMktBMXR5QnhHN2d1TW54c0JOeVlFRjdmMmR2TlhuNEdjUzV4UGNvOHJVd3FPNDF6NE9Da3l4Q3dHdmlkRkxLTFotXzY0MDdWcFlBXzhRMFhtbU5MRDY0V25PSzNaUUJuZi1qU0JzWWdDdFBEUVZycmd4eUVmNlVrQzFBMDhGZVhvN2ZaVFBVeWNyb3ZB?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-29T19:03:37.057662+00:00",
-   "title_ru": "Индия заявляет, что торговая сделка с США не повредит ее фермерам"
-  },
   {
    "title": "VIEW ECB keeps rates unchanged; euro and bond yields fall",
    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNRS1GTl9NNk5PZHlwa1lfREJ1SlVlb0w0YnVJVHVldVJta1ROanY3MXdQSVZ4NHVjajBINE44VV93cGFtWngtVGxjMV8zaHFPbG8weVEzUE1KUWVDZDRFeXZpckZlTk55d1ZkOVZ1dlBhbFdreWY3ZHUzQmtrc2FmajZmRVlZLWVsTEZ6YmJOaHYxbmI1?oc=5",
@@ -5920,6 +5910,21 @@
    "title_ru": "Настоящая проблема «Бесконечного круиза» заключалась не в нефти",
    "tags": [
     "oil"
+   ]
+  },
+  {
+   "title": "Trump faces the voters",
+   "link": "https://www.ft.com/content/ce8496a4-d728-49a1-afbe-f1c9eefe53a9?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 4,
+   "ts": "2026-11-01T19:06:06.369238+00:00",
+   "title_ru": "Трамп сталкивается с избирателями",
+   "lead": "US midterm elections, Bank of England interest rate decision, John Ternus hosts first earnings call as Apple chief",
+   "lead_ru": "Промежуточные выборы в США, решение Банка Англии по процентной ставке, Джон Тернус принимает первый звонок о доходах в качестве главы Apple",
+   "tags": [
+    "rates"
    ]
   }
  ],
