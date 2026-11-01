@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "a497d18d1ab612e8": "2026-10-29T15:45:16.705650+00:00",
   "0dcd5ae070c87d3a": "2026-10-29T15:55:15.661925+00:00",
   "1e2ee9828f322bee": "2026-10-29T15:55:15.661925+00:00",
   "36fd5b59f5829a13": "2026-10-29T16:00:15.716019+00:00",
@@ -668,26 +667,10 @@
   "fe812f370982aad6": "2026-11-01T14:45:20.208038+00:00",
   "e61a0bde3c8dcc4e": "2026-11-01T15:05:20.196459+00:00",
   "fa2a6b05ae017c8c": "2026-11-01T15:40:20.185287+00:00",
-  "a0f1f4bf05101a0f": "2026-11-01T15:40:20.185287+00:00"
+  "a0f1f4bf05101a0f": "2026-11-01T15:40:20.185287+00:00",
+  "7945bc3901446e3d": "2026-11-01T15:45:20.186635+00:00"
  },
  "recent": [
-  {
-   "title": "ECB Officials Are Ready to Raise Interest Rates in December",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-29/ecb-officials-are-ready-to-raise-interest-rates-in-december",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 7,
-   "ts": "2026-10-29T15:45:16.705650+00:00",
-   "title_ru": "Чиновники ЕЦБ готовы повысить процентные ставки в декабре",
-   "lead": "European Central Bank officials are prepared to raise interest rates in December if the inflation outlook doesn’t improve, people familiar with the situation said.",
-   "lead_ru": "Представители Европейского центрального банка готовы повысить процентные ставки в декабре, если прогноз инфляции не улучшится, сообщили источники, знакомые с ситуацией.",
-   "tags": [
-    "ECB",
-    "rates",
-    "inflation"
-   ]
-  },
   {
    "title": "Piero Cipollone: Next-day securities settlement, tokenisation and the transformation of Europe’s financial infrastructure",
    "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261029~e9b57c3495.en.html",
@@ -6228,6 +6211,18 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "Trump Struggles to Sell Voters on the Economy",
+   "link": "https://www.bloomberg.com/news/videos/2026-11-01/trump-struggles-to-sell-voters-on-the-economy-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-01T15:45:20.186635+00:00",
+   "title_ru": "Трамп изо всех сил пытается продать избирателей в экономике",
+   "lead": "Bloomberg News Senior Executive Editor Wes Kosova tells Bloomberg This Weekend that President Donald Trump is struggling to convince voters the economy is strong as higher fuel prices and affordability concerns weigh on his…",
+   "lead_ru": "Старший исполнительный редактор Bloomberg News Уэс Косова рассказал агентству Bloomberg в эти выходные, что президент Дональд Трамп изо всех сил пытается убедить избирателей в том, что экономика сильна, поскольку более высокие цены на топливо и проблемы с доступностью давят на его..."
   }
  ],
  "last_digest": "2026-10-31",
@@ -13125,15 +13120,14 @@
    "0001213900-26-114605",
    "0001824159-26-000015",
    "0001193125-26-442142",
-   "0001697362-26-000021",
    "0001823923-26-000015",
    "0001213900-26-114611",
    "0001213900-26-114604",
    "0001823940-26-000012",
-   "0001214659-26-013568",
    "0000091440-26-000174",
-   "0001193125-26-442201",
+   "0001214659-26-013568",
    "0001628280-26-068637",
+   "0001193125-26-442201",
    "0001493152-26-049492",
    "0001213900-26-114608",
    "0001213900-26-114610",
@@ -13142,6 +13136,7 @@
    "0001231919-26-001519",
    "0001193125-26-442229",
    "0001104659-26-120789",
+   "0002014361-26-000040",
    "0001213900-26-114609",
    "0001477932-26-006563",
    "0001280486-26-000010",
@@ -13165,7 +13160,7 @@
    "0001193125-26-442116",
    "0001628280-26-068639",
    "0001213900-26-114606",
-   "0002014361-26-000040",
+   "0001697362-26-000021",
    "0001213900-26-114603",
    "0001899977-26-000010"
   ],
