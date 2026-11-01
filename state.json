@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "cb526e827945cad0": "2026-10-29T08:01:43.351330+00:00",
-  "da2af0fd3ac15010": "2026-10-29T08:01:43.351330+00:00",
   "28b35a6dbf290063": "2026-10-29T08:16:43.392479+00:00",
   "8cd9df68d85b01d3": "2026-10-29T08:26:43.365056+00:00",
   "9ad1a25d903016ac": "2026-10-29T08:46:43.360671+00:00",
@@ -783,30 +781,12 @@
   "1156e947a38582fe": "2026-11-01T06:49:54.317607+00:00",
   "81bf4ca3dab7e5cd": "2026-11-01T06:49:54.317607+00:00",
   "ce731280cca31fe6": "2026-11-01T06:59:54.331911+00:00",
-  "493bbaee09fd6d7f": "2026-11-01T07:39:54.309611+00:00"
+  "493bbaee09fd6d7f": "2026-11-01T07:39:54.309611+00:00",
+  "02551eb4154c31f5": "2026-11-01T08:04:54.342355+00:00",
+  "257393ed8225e042": "2026-11-01T08:04:54.342355+00:00",
+  "6080fd044b372932": "2026-11-01T08:04:54.342355+00:00"
  },
  "recent": [
-  {
-   "title": "What Wall Street Really Thanks About the AI Trade (Podcast)",
-   "link": "https://www.bloomberg.com/news/audio/2026-10-29/what-wall-street-really-thanks-about-the-ai-trade-podcast",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-29T08:01:43.351330+00:00",
-   "title_ru": "Что Уолл-стрит действительно благодарит за торговлю искусственным интеллектом (подкаст)",
-   "lead": "It has been a big week for the AI trade — we've seen wobbles in the market, many of them in response to headlines like the Anthropic S-1 and earnings from the hyperscalers (Oracle, Microsoft, etc.).",
-   "lead_ru": "Это была большая неделя для торговли искусственным интеллектом — мы видели колебания на рынке, многие из которых были вызваны такими заголовками, как Anthropic S-1 и прибылью от гиперскалеров (Oracle, Microsoft и т. д.)."
-  },
-  {
-   "title": "Reader Q&A: Our money and economics correspondents answer your Budget 2026 questions",
-   "link": "https://www.theguardian.com/uk-news/live/2026/oct/29/budget-2026-reader-questions-john-healey-chancellor-hilary-osborne-heather-stewart",
-   "sources": [
-    "The Guardian"
-   ],
-   "score": 2,
-   "ts": "2026-10-29T08:01:43.351330+00:00"
-  },
   {
    "title": "Shell Announces $5 Billion Buyback as Oil Refining Booms",
    "link": "https://www.bloomberg.com/news/articles/2026-10-29/shell-reports-second-highest-profit-ever-as-refining-hits-record",
@@ -7592,6 +7572,28 @@
    "tags": [
     "crypto"
    ]
+  },
+  {
+   "title": "Saudi Economy Shrank at Slower Pace Before Houthi War Escalation",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-01/saudi-economy-shrank-at-slower-pace-before-houthi-war-escalation",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-01T08:04:54.342355+00:00",
+   "title_ru": "Экономика Саудовской Аравии сократилась более медленными темпами перед эскалацией войны с хуситами",
+   "lead": "Saudi Arabia’s economy contracted again, albeit at a slower pace, putting the kingdom on track for one of its worst economic performances in years even before a recent escalation in the kingdom’s conflict with the Houthis.",
+   "lead_ru": "Экономика Саудовской Аравии снова сократилась, хотя и более медленными темпами, поставив королевство на путь одного из худших экономических показателей за последние годы, еще до недавней эскалации конфликта королевства с хуситами."
+  },
+  {
+   "title": "D-Market Elektronik Hizmetler ve Ticaret A.S. (8WZy.D) | Stock Price & Latest News",
+   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5OXzJtTGVJSnB6RkFwMFU1VjZoUXg2ZGdNOXJTOU5jZXpmT1ZvWGV2M21vbFRFMlNLSlB0ZHJJZVM1a0dERVd3cHp1dHA5RkIwLXZzUjhLV1ZjVW1Pa3RmNThSa01oMFdyMjY5NC1n?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-01T08:04:54.342355+00:00",
+   "title_ru": "D-Market Elektronik Hizmetler ve Ticaret A.S. (8WZy.D) | Курс акций и последние новости"
   }
  ],
  "last_digest": "2026-10-31",
@@ -14503,8 +14505,8 @@
    "0001231919-26-001519",
    "0002025268-26-000008",
    "0001213900-26-114606",
-   "0001193125-26-442142",
    "0001213900-26-114608",
+   "0001193125-26-442142",
    "0001280486-26-000010",
    "0001493152-26-049496",
    "0001193532-26-000012",
@@ -14521,17 +14523,17 @@
    "0001628280-26-068639",
    "0001628280-26-068637",
    "0001451763-26-000014",
+   "0002014386-26-000026",
    "0001823940-26-000012",
    "0001193125-26-442228",
    "0001193125-26-442229",
    "0001193125-26-442201",
    "0001193125-26-442196",
    "0001213900-26-114605",
-   "0001493152-26-049492",
    "0001193125-26-442119",
    "0001214659-26-013568",
    "0001731122-26-001386",
-   "0002014386-26-000026"
+   "0001493152-26-049492"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
