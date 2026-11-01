@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "dc342897fbc89667": "2026-10-29T19:53:36.878543+00:00",
   "c655d847668c5c79": "2026-10-29T20:03:36.987425+00:00",
   "552a086d8aa24963": "2026-10-29T20:08:36.874831+00:00",
   "d29c3804044a489b": "2026-10-29T20:13:36.888253+00:00",
@@ -634,26 +633,10 @@
   "624389dfa8e47a05": "2026-11-01T18:36:06.414952+00:00",
   "961f4a39f174176f": "2026-11-01T18:46:06.493382+00:00",
   "5713194ee95efd43": "2026-11-01T19:06:06.369238+00:00",
-  "b8d1d810ccc1212e": "2026-11-01T19:41:06.371767+00:00"
+  "b8d1d810ccc1212e": "2026-11-01T19:41:06.371767+00:00",
+  "e1a8d2893437a7d0": "2026-11-01T19:56:06.417429+00:00"
  },
  "recent": [
-  {
-   "title": "Canadian Dollar Poised for Best Month Since April After BOC Hike",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-29/canadian-dollar-poised-for-best-month-since-april-after-boc-hike",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-29T19:53:36.878543+00:00",
-   "title_ru": "Канадский доллар готов к лучшему месяцу с апреля после повышения Банка Канады",
-   "lead": "The Canadian dollar is heading for its largest monthly gain since April, supported by elevated oil prices and the Bank of Canada’s shift toward tighter monetary policy.",
-   "lead_ru": "Канадский доллар движется к своему самому большому ежемесячному росту с апреля, чему способствуют высокие цены на нефть и переход Банка Канады к ужесточению денежно-кредитной политики.",
-   "tags": [
-    "rates",
-    "oil",
-    "dollar"
-   ]
-  },
   {
    "title": "Microsoft to raise up to $25 billion in bond market as investors get pickier about AI debt binge",
    "link": "https://www.marketwatch.com/story/microsoft-to-raise-up-to-25-billion-in-bond-market-as-investors-get-pickier-about-ai-debt-binge-7c6ae777?mod=mw_rss_topstories",
@@ -5791,6 +5774,16 @@
    "score": 3,
    "ts": "2026-11-01T19:41:06.371767+00:00",
    "title_ru": "Канада и США разработают торговый план на ближайшие недели, говорит Карни"
+  },
+  {
+   "title": "Canada PM Carney said he had a good conversation with Trump on trade",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOU2ZUM3VWU2twNlU5YnJfamYzWWJtaDV3bm5WTFZMNHpWWVdwSk1BY1REWjl2cEsweU5UQ3ZjbkZkWVlkNFZKZFRDb0tNUFJ0bXVBczAwdWNsV19uMFNCUnNWRHZ0T1NNQ1ZoV2lvY0piVFgzY1lJWnN4bWE0eU16cllQUW9WSGJKSUJQY3FGeDhqN2JJdmJnZkt1MjdXc1hscE1zdGxqQ1NIeFJsUVRvLUxjTlA?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-01T19:56:06.417429+00:00",
+   "title_ru": "Премьер Канады Карни заявил, что у него был хороший разговор с Трампом по вопросам торговли"
   }
  ],
  "last_digest": "2026-11-01",
@@ -5813,7 +5806,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 1,
+  "Fed": 0,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
