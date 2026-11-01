@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "1495b74b02462c18": "2026-10-29T13:01:44.102878+00:00",
-  "fda9b7c5534f9232": "2026-10-29T13:06:43.684864+00:00",
   "904be2ae7ce3d573": "2026-10-29T13:11:43.481049+00:00",
   "4323cf955c799146": "2026-10-29T13:11:43.481049+00:00",
   "8be498015a196c08": "2026-10-29T13:16:43.545939+00:00",
@@ -719,39 +717,14 @@
   "7bf79c5d111792a9": "2026-11-01T12:40:20.221178+00:00",
   "405c4fd9a812eabc": "2026-11-01T13:00:20.177846+00:00",
   "9007f4601641de5d": "2026-11-01T13:00:20.177846+00:00",
-  "6badc3abdae71500": "2026-11-01T13:00:20.177846+00:00"
+  "6badc3abdae71500": "2026-11-01T13:00:20.177846+00:00",
+  "57ad9e9e34d7c099": "2026-11-01T13:05:20.206942+00:00",
+  "6598dadb35df2bed": "2026-11-01T13:10:20.146674+00:00",
+  "68244d884d28b341": "2026-11-01T13:10:20.146674+00:00",
+  "30e9c66dc4dbac83": "2026-11-01T13:10:20.146674+00:00",
+  "12c47449ccdfa0ff": "2026-11-01T13:10:20.146674+00:00"
  },
  "recent": [
-  {
-   "title": "Our church has a $1.5 million bequest earning 3.75% in a bank account. Is inflation eroding it?",
-   "link": "https://www.marketwatch.com/story/there-may-be-better-investment-options-my-church-received-1-5-million-from-a-parishioner-is-3-75-interest-enough-5164d790?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 3,
-   "ts": "2026-10-29T13:01:44.102878+00:00",
-   "title_ru": "У нашей церкви есть завещание на сумму 1,5 миллиона долларов, приносящее 3,75% на банковском счете. Инфляция разрушает его?",
-   "lead": "“Given the size and long-term nature of this gift, we want to make sure the funds are managed prudently.”",
-   "lead_ru": "«Учитывая размер и долгосрочный характер этого подарка, мы хотим обеспечить разумное управление средствами».",
-   "tags": [
-    "inflation"
-   ]
-  },
-  {
-   "title": "Consumer spending flattens out after inflation surge",
-   "link": "https://www.marketwatch.com/story/consumer-spending-flattens-out-after-inflation-surge-e7761d25?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 4,
-   "ts": "2026-10-29T13:06:43.684864+00:00",
-   "title_ru": "Потребительские расходы стабилизировались после резкого роста инфляции",
-   "lead": "Consumer spending rose sharply in September, but it largely reflected households spending more on gas and transportation after an increase in energy costs.",
-   "lead_ru": "Потребительские расходы резко выросли в сентябре, но это в основном отражает увеличение расходов домохозяйств на газ и транспорт после увеличения затрат на электроэнергию.",
-   "tags": [
-    "inflation"
-   ]
-  },
   {
    "title": "US economy grows faster than expected in report out just ahead of elections",
    "link": "https://www.theguardian.com/business/2026/oct/29/economy-growth-third-quarter",
@@ -6768,6 +6741,45 @@
    "tags": [
     "gold"
    ]
+  },
+  {
+   "title": "Who really wins under Trump’s economy? Coastal liberal elites who hate him.",
+   "link": "https://www.marketwatch.com/story/who-really-wins-under-trumps-economy-coastal-liberal-elites-who-hate-him-d74c63cb?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-11-01T13:05:20.206942+00:00"
+  },
+  {
+   "title": "Australia’s Home Prices Fall Further Ahead of Expected Rate Hike",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-01/australia-s-home-prices-fall-further-ahead-of-expected-rate-hike",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-11-01T13:10:20.146674+00:00",
+   "title_ru": "Цены на жилье в Австралии падают в преддверии ожидаемого повышения ставок",
+   "lead": "Australia’s home prices tumbled for a seventh straight month and are on track for the biggest fall in 40 years, a private gauge showed, as the Reserve Bank is expected to increase borrowing costs again this week.",
+   "lead_ru": "Цены на жилье в Австралии падают седьмой месяц подряд и находятся на пути к самому большому падению за 40 лет, показал частный индикатор, поскольку ожидается, что Резервный банк снова увеличит стоимость заимствований на этой неделе.",
+   "tags": [
+    "rates"
+   ]
+  },
+  {
+   "title": "The $40 Trillion Problem Washington Won’t Talk About",
+   "link": "https://www.bloomberg.com/news/videos/2026-11-01/the-40-trillion-problem-washington-won-t-talk-about-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-01T13:10:20.146674+00:00",
+   "title_ru": "Проблема в $ 40 триллионов, о которой Вашингтон не будет говорить",
+   "lead": "America’s national debt has climbed past $40 trillion and persistent deficits are putting upward pressure on long-term interest rates.",
+   "lead_ru": "Государственный долг Америки превысил $ 40 трлн, а постоянный дефицит оказывает повышательное давление на долгосрочные процентные ставки.",
+   "tags": [
+    "rates"
+   ]
   }
  ],
  "last_digest": "2026-10-31",
@@ -6790,7 +6802,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 1,
+  "Fed": 0,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
@@ -13668,9 +13680,9 @@
    "0001823923-26-000015",
    "0001213900-26-114611",
    "0001213900-26-114604",
-   "0001214659-26-013568",
    "0001823940-26-000012",
    "0000091440-26-000174",
+   "0001214659-26-013568",
    "0001628280-26-068637",
    "0001193125-26-442201",
    "0001493152-26-049492",
