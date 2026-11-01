@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c7b41a96bdef2784": "2026-10-29T18:40:15.669461+00:00",
   "627c259685f21145": "2026-10-29T18:50:15.676247+00:00",
   "aecd0b4b610bf2bf": "2026-10-29T18:50:15.676247+00:00",
   "c858c664b687febb": "2026-10-29T19:03:37.057662+00:00",
@@ -646,22 +645,10 @@
   "499bd982b621cd95": "2026-11-01T17:35:20.183633+00:00",
   "dd60a5a8fd494621": "2026-11-01T18:01:06.448975+00:00",
   "fab5184a6e4efc9e": "2026-11-01T18:16:06.405698+00:00",
-  "624389dfa8e47a05": "2026-11-01T18:36:06.414952+00:00"
+  "624389dfa8e47a05": "2026-11-01T18:36:06.414952+00:00",
+  "961f4a39f174176f": "2026-11-01T18:46:06.493382+00:00"
  },
  "recent": [
-  {
-   "title": "EU Starting Search for New ECB President Today, Top Official Says",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxONG5mdFB1QS02VkQyZ29nSmdmWmhNaFo1RlJWeE9rUFltaS1wN1M5b2pjbHVoa284UlNCeFdvN2R3aUppeWJScGt2akJmVFZhU2xFU0s3UG05UXJva0FKeHlMUDB4c3RJV1lCbzVnVGxCMEVCX18ycFRpSG5scWViQWVtMnNjbzY2VHphcFlEcnB5TjhLZEZQNVM1ckdDQndGbEJYVXI1Vm9LTTQ1RDRr?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-29T18:40:15.669461+00:00",
-   "title_ru": "ЕС начинает поиск нового президента ЕЦБ сегодня, говорит высокопоставленный чиновник",
-   "tags": [
-    "ECB"
-   ]
-  },
   {
    "title": "ЕЦБ осторожничает // Европейский центробанк не стал повышать ставку, несмотря на ускорение инфляции в еврозоне",
    "link": "https://www.kommersant.ru/doc/9064037",
@@ -5988,7 +5975,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 0,
+  "Fed": 1,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
@@ -12858,7 +12845,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-11-01T17:36:06.707697+00:00",
+  "checked": "2026-11-01T18:41:06.392167+00:00",
   "sec_seen": [
    "0001193532-26-000012",
    "0000091440-26-000174",
