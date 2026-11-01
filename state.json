@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "1f2e3dc02e14be65": "2026-10-29T22:43:36.849332+00:00",
-  "b20a095ce78bf965": "2026-10-29T22:48:36.846992+00:00",
-  "691dd18b0f5c9646": "2026-10-29T22:48:36.846992+00:00",
   "71d4fca08cb11dfd": "2026-10-29T22:53:36.854501+00:00",
   "8eb193603721fc58": "2026-10-29T22:58:37.139272+00:00",
   "1cefa5f92e7867e8": "2026-10-29T22:58:37.139272+00:00",
@@ -617,21 +614,10 @@
   "08ea93288acc0858": "2026-11-01T22:06:06.458642+00:00",
   "60b4ad74af879741": "2026-11-01T22:16:06.448194+00:00",
   "f5909d527971d75b": "2026-11-01T22:16:06.448194+00:00",
-  "e35feb2f39b22579": "2026-11-01T22:41:06.404028+00:00"
+  "e35feb2f39b22579": "2026-11-01T22:41:06.404028+00:00",
+  "416598292f490c5f": "2026-11-01T22:51:06.454090+00:00"
  },
  "recent": [
-  {
-   "title": "Vale Iron Ore Output Trails Forecast on Serra Norte Challenges",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-29/vale-iron-ore-output-trails-forecasts-despite-mine-ramp-ups",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-29T22:48:36.846992+00:00",
-   "title_ru": "Прогноз добычи железной руды на месторождениях Серра-Норте",
-   "lead": "Vale SA’s iron ore production fell short of estimates in the third quarter as the world’s largest producer of the steelmaking ingredient faced challenges at a mine in northern Brazil.",
-   "lead_ru": "Производство железной руды Vale SA не соответствовало оценкам в третьем квартале, поскольку крупнейший в мире производитель сталеплавильного ингредиента столкнулся с проблемами на шахте на севере Бразилии."
-  },
   {
    "title": "Kioxia Faces Test to Impress With Earnings After 60% Stock Slump",
    "link": "https://www.bloomberg.com/news/articles/2026-10-29/kioxia-faces-test-to-impress-with-earnings-after-60-stock-slump",
@@ -5518,6 +5504,19 @@
    "score": 3,
    "ts": "2026-11-01T22:41:06.404028+00:00",
    "title_ru": "Подержанные автомобили повысили потребительские цены в августе"
+  },
+  {
+   "title": "Australian home prices fall for seventh month, looming rate hike adds to pain",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOZlhfTzVXYV94MVY5bUVVVzdKMlBFSGY3WFRDSFk5WWNqVWVSeTJFbThxeDNBcDJzMHRvOUlBRDNPWGRGV1Q2RWM1WlB3WUpENHNwR201MENBTGVZWURrNlU2RVFtOTBpMFZJV0hEdngzaTBJbDN3ZXd0cUh3Q2tlTjVHb2hvdV9EUG5neTdzUGVscDZSTkN0aWFjelNnWVlldmVxbEVxaVhyQWVqakNiNUpSWGlraENzMVVNc0dzVjJ0UQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-11-01T22:51:06.454090+00:00",
+   "title_ru": "Цены на жилье в Австралии падают седьмой месяц, надвигающееся повышение ставок усиливает боль",
+   "tags": [
+    "rates"
+   ]
   }
  ],
  "last_digest": "2026-11-01",
@@ -12410,7 +12409,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-11-01T21:46:06.436775+00:00",
+  "checked": "2026-11-01T22:46:06.583186+00:00",
   "sec_seen": [
    "0001193532-26-000012",
    "0000091440-26-000174",
