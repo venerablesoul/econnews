@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "0640b62a2ed0ac22": "2026-10-29T12:56:43.504650+00:00",
   "1495b74b02462c18": "2026-10-29T13:01:44.102878+00:00",
   "fda9b7c5534f9232": "2026-10-29T13:06:43.684864+00:00",
   "904be2ae7ce3d573": "2026-10-29T13:11:43.481049+00:00",
@@ -717,19 +716,12 @@
   "325bf9aefa6f6354": "2026-11-01T12:04:54.308071+00:00",
   "48cc93e6809d486e": "2026-11-01T12:15:20.147614+00:00",
   "907e7af65c45dedc": "2026-11-01T12:40:20.221178+00:00",
-  "7bf79c5d111792a9": "2026-11-01T12:40:20.221178+00:00"
+  "7bf79c5d111792a9": "2026-11-01T12:40:20.221178+00:00",
+  "405c4fd9a812eabc": "2026-11-01T13:00:20.177846+00:00",
+  "9007f4601641de5d": "2026-11-01T13:00:20.177846+00:00",
+  "6badc3abdae71500": "2026-11-01T13:00:20.177846+00:00"
  },
  "recent": [
-  {
-   "title": "US Economy Grows a Faster-Than-Expected 3.4%, Most in a Year",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOUFh4bnBMRG5WMnJ2SGxxY1ZReEdVN2k5RGRFUmZqZUN4U3NTMVRNUXlaY0ZfV3VoT3hTQ0VyRkxQZk5KaUFfUUJPVDNtNWtKWDQzSC16WE1kVllma2NpQWNqRDdTUE5FaTZfVXl6b09UUko2T2h5a0QxdTZIb3VtM2pkMDFKOHNvU2FqekdtOGNQSXd2RHJ3VEhPQno5a1BMdlNiVlNqSEV2WktBNWc?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-29T12:56:43.504650+00:00",
-   "title_ru": "Экономика США растет быстрее, чем ожидалось, на 3,4%, больше всего за год"
-  },
   {
    "title": "Our church has a $1.5 million bequest earning 3.75% in a bank account. Is inflation eroding it?",
    "link": "https://www.marketwatch.com/story/there-may-be-better-investment-options-my-church-received-1-5-million-from-a-parishioner-is-3-75-interest-enough-5164d790?mod=mw_rss_topstories",
@@ -6736,6 +6728,46 @@
    ],
    "score": 2,
    "ts": "2026-11-01T12:40:20.221178+00:00"
+  },
+  {
+   "title": "Will US jobs growth remain subdued?",
+   "link": "https://www.ft.com/content/b62877b9-4260-4b4a-9f0f-a5dee7571b7c?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 4,
+   "ts": "2026-11-01T13:00:20.177846+00:00",
+   "title_ru": "Будет ли рост рабочих мест в США оставаться приглушенным?",
+   "lead": "Market Questions is the FT’s guide to the week ahead",
+   "lead_ru": "Вопросы рынка - это руководство FT по предстоящей неделе",
+   "tags": [
+    "jobs"
+   ]
+  },
+  {
+   "title": "Banks Start Reviewing Loan Terms for Clients in El Niño’s Path",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNYjJDWWl2QUtHMTBBZWZsNTFHZmtQb2NSTjVrWWlmMGVwY2taMHNJLXVGVVhDcmVIUzZBZnR6OFVLcVZpOGk2am5wbWdjaE9FZlgta0habGh5dWhZbkRhYlZHazd6VVg2OXlKd19feXhPOVR4WEpEQXlraW00UEl6Z2FvRXpsTkdmUC1IQzFXeFZEV25CcXViZnFjTWdPZ3R4X1lUcExlYXlqTWE4dEtLRGgzYw?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-01T13:00:20.177846+00:00",
+   "title_ru": "Банки начинают пересматривать условия кредитования для клиентов, находящихся на пути Эль-Ниньо"
+  },
+  {
+   "title": "US critical minerals push delivers a gold rush — for Washington lobbyists",
+   "link": "https://www.ft.com/content/e89a420d-3a93-402f-ab0d-461476cf23ce?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 3,
+   "ts": "2026-11-01T13:00:20.177846+00:00",
+   "title_ru": "Критические минералы США проталкивают золотую лихорадку — для вашингтонских лоббистов",
+   "lead": "Billions in government backing have produced a flurry of deals but little increase in domestic production",
+   "lead_ru": "Миллиардная государственная поддержка привела к шквалу сделок, но незначительному увеличению внутреннего производства",
+   "tags": [
+    "gold"
+   ]
   }
  ],
  "last_digest": "2026-10-31",
@@ -6758,7 +6790,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 0,
+  "Fed": 1,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
@@ -13633,15 +13665,14 @@
    "0001213900-26-114605",
    "0001824159-26-000015",
    "0001193125-26-442142",
-   "0001697362-26-000021",
    "0001823923-26-000015",
    "0001213900-26-114611",
    "0001213900-26-114604",
+   "0001214659-26-013568",
    "0001823940-26-000012",
    "0000091440-26-000174",
-   "0001214659-26-013568",
-   "0001193125-26-442201",
    "0001628280-26-068637",
+   "0001193125-26-442201",
    "0001493152-26-049492",
    "0001213900-26-114608",
    "0001213900-26-114610",
@@ -13650,6 +13681,7 @@
    "0001231919-26-001519",
    "0001193125-26-442229",
    "0001104659-26-120789",
+   "0002014361-26-000040",
    "0001213900-26-114609",
    "0001477932-26-006563",
    "0001280486-26-000010",
@@ -13673,7 +13705,7 @@
    "0001193125-26-442116",
    "0001628280-26-068639",
    "0001213900-26-114606",
-   "0002014361-26-000040",
+   "0001697362-26-000021",
    "0001213900-26-114603",
    "0001899977-26-000010"
   ],
