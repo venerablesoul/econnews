@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c9ab15369cc8a342": "2026-10-29T10:51:43.391559+00:00",
   "14ad0acd12b40213": "2026-10-29T10:56:43.480199+00:00",
   "f4ad31fb84e7cead": "2026-10-29T11:01:43.372531+00:00",
   "2aea8b5230d55945": "2026-10-29T11:01:43.372531+00:00",
@@ -763,23 +762,10 @@
   "1470a84baced7693": "2026-11-01T10:29:54.323226+00:00",
   "11254015cdd4fac5": "2026-11-01T10:29:54.323226+00:00",
   "1847ae4b65e9119c": "2026-11-01T10:44:54.276019+00:00",
-  "127ff6eaf7f9e01a": "2026-11-01T10:44:54.276019+00:00"
+  "127ff6eaf7f9e01a": "2026-11-01T10:44:54.276019+00:00",
+  "5374497eae1f404b": "2026-11-01T10:54:54.355199+00:00"
  },
  "recent": [
-  {
-   "title": "ECB Live Updates: Christine Lagarde to Step Down Early, Rate Decision Ahead",
-   "link": "https://www.bloomberg.com/news/live-blog/2026-10-29/lagarde-steps-down-ecb-rate-decision-euro-live-updates",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 9,
-   "ts": "2026-10-29T10:51:43.391559+00:00",
-   "title_ru": "Новости ЕЦБ в прямом эфире: Кристин Лагард досрочно уйдет в отставку, решение по ставке будет принято впереди",
-   "tags": [
-    "ECB",
-    "rates"
-   ]
-  },
   {
    "title": "Europe’s central bank chief Christine Lagarde to step down nine months early",
    "link": "https://www.theguardian.com/world/2026/oct/29/european-central-bank-chief-christine-lagarde-to-step-down-nine-months-early",
@@ -7294,6 +7280,18 @@
    "score": 3,
    "ts": "2026-11-01T10:44:54.276019+00:00",
    "title_ru": "IFO: Германия движется к росту в 4 квартале, но..."
+  },
+  {
+   "title": "Serbia’s Banks Urged to Scrutinize Money Flows Amid Power Shift",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-01/serbia-s-banks-urged-to-scrutinize-money-flows-amid-power-shift",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-01T10:54:54.355199+00:00",
+   "title_ru": "Банки Сербии призвали тщательно изучить денежные потоки в условиях смены власти",
+   "lead": "Serbia’s student-led movement that’s poised to take power after last month’s election, is urging banks to step up scrutiny of capital flows from the country during the transition period to a new government.",
+   "lead_ru": "Студенческое движение Сербии, которое готово прийти к власти после выборов в прошлом месяце, призывает банки усилить контроль за потоками капитала из страны в течение переходного периода к новому правительству."
   }
  ],
  "last_digest": "2026-10-31",
