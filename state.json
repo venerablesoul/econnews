@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "627c259685f21145": "2026-10-29T18:50:15.676247+00:00",
-  "aecd0b4b610bf2bf": "2026-10-29T18:50:15.676247+00:00",
   "c858c664b687febb": "2026-10-29T19:03:37.057662+00:00",
   "ebb6a7c1240c28d0": "2026-10-29T19:08:37.004179+00:00",
   "437b6e88edc33335": "2026-10-29T19:08:37.004179+00:00",
@@ -649,36 +647,6 @@
   "961f4a39f174176f": "2026-11-01T18:46:06.493382+00:00"
  },
  "recent": [
-  {
-   "title": "ЕЦБ осторожничает // Европейский центробанк не стал повышать ставку, несмотря на ускорение инфляции в еврозоне",
-   "link": "https://www.kommersant.ru/doc/9064037",
-   "sources": [
-    "Kommersant"
-   ],
-   "score": 10,
-   "ts": "2026-10-29T18:50:15.676247+00:00",
-   "title_en": "The ECB is cautious //the European Central Bank did not raise the rate, despite the acceleration of inflation in the eurozone",
-   "lead": "Европейский центральный банк (ЕЦБ) сохранил все три основные процентные ставки на прежнем уровне — после сентябрьского повышения на 0,25 процентного пункта регулятор предпочел воздержаться от дальнейшего ужесточения своей…",
-   "lead_en": "The European Central Bank (ECB) kept all three main interest rates at the same level — after the September increase of 0.25 percentage points, the regulator chose to refrain from further tightening its...",
-   "tags": [
-    "ECB",
-    "rates",
-    "inflation"
-   ]
-  },
-  {
-   "title": "LBMA members back tokenised gold but seek legal certainty and safeguards",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOWGsySVpZX2g0a0R0ZndGOUhvdWQyVzRpY1pUMC1YUHRfa3V0aG80MGRId2U1TWN6bDZJdEV2QXpnYWhJX0VVVWZtTzRNaFdWT29UWVN5OEc1eFN6LWtqZkluVU9rd1htQkZGWG14VW1VUlB5RGFhWmIyRnNJUVdOVHBUcXNKdFUxWC1oeTZGcFhrYnpULTI4VXFaUGlOcVY0XzFzVFRvV2ZFYjNDM2c?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-29T18:50:15.676247+00:00",
-   "title_ru": "Члены LBMA возвращают токенизированное золото, но стремятся к правовой определенности и гарантиям",
-   "tags": [
-    "gold"
-   ]
-  },
   {
    "title": "India says trade deal with US will not hurt its farmers",
    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNcEhZNUhpdlVpMDVtUklNQVJyMktBMXR5QnhHN2d1TW54c0JOeVlFRjdmMmR2TlhuNEdjUzV4UGNvOHJVd3FPNDF6NE9Da3l4Q3dHdmlkRkxLTFotXzY0MDdWcFlBXzhRMFhtbU5MRDY0V25PSzNaUUJuZi1qU0JzWWdDdFBEUVZycmd4eUVmNlVrQzFBMDhGZVhvN2ZaVFBVeWNyb3ZB?oc=5",
@@ -5975,7 +5943,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 1,
+  "Fed": 0,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
