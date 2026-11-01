@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "09802d74195a5418": "2026-10-29T19:43:37.790901+00:00",
   "dc342897fbc89667": "2026-10-29T19:53:36.878543+00:00",
   "c655d847668c5c79": "2026-10-29T20:03:36.987425+00:00",
   "552a086d8aa24963": "2026-10-29T20:08:36.874831+00:00",
@@ -638,19 +637,6 @@
   "b8d1d810ccc1212e": "2026-11-01T19:41:06.371767+00:00"
  },
  "recent": [
-  {
-   "title": "Voters’ Inflation Frustrations Take Shine Off Strong Economic Growth",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxORnNQRGNLcHl5eEpMNU0yang2cF9VTFE4TEgxbGpXWEFjWnVyeVVadEtMVXU0dFpCMllXSFh4ek94WnJoaU5fd2Vvd0hBTWJWV081WGZUbm9ZVk5PX0IzU2hjbC1qYmtONHZtQ3V6a3NDekZPNDlET2dDYlJuS0x1VWxPTTNZX0ctNHlrNm1naWZoRWc4VGJCcUNHb0J2QmlWa1QwazRGaEtHdE1YSjB1RDhZeTRoYUVl?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 7,
-   "ts": "2026-10-29T19:43:37.790901+00:00",
-   "title_ru": "Недовольство избирателей инфляцией ослабляет сильный экономический рост",
-   "tags": [
-    "inflation"
-   ]
-  },
   {
    "title": "Canadian Dollar Poised for Best Month Since April After BOC Hike",
    "link": "https://www.bloomberg.com/news/articles/2026-10-29/canadian-dollar-poised-for-best-month-since-april-after-boc-hike",
@@ -5827,7 +5813,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 0,
+  "Fed": 1,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
@@ -12697,7 +12683,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-11-01T18:41:06.392167+00:00",
+  "checked": "2026-11-01T19:46:06.354665+00:00",
   "sec_seen": [
    "0001193532-26-000012",
    "0000091440-26-000174",
