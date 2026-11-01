@@ -1,13 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "12a082a3ce4152d7": "2026-10-29T12:36:43.488152+00:00",
-  "af3f8359faee791d": "2026-10-29T12:36:43.488152+00:00",
-  "973a3f77a286415c": "2026-10-29T12:36:43.488152+00:00",
-  "2579e0f10b6904ef": "2026-10-29T12:36:43.488152+00:00",
-  "9604f28fdf82046b": "2026-10-29T12:41:43.408333+00:00",
-  "e0c847d617a310f0": "2026-10-29T12:41:43.408333+00:00",
-  "93bea1bfa4e179fa": "2026-10-29T12:41:43.408333+00:00",
   "e91732b9fb688e90": "2026-10-29T12:46:43.548575+00:00",
   "f2e0be8e79f3b8ef": "2026-10-29T12:46:43.548575+00:00",
   "a2677e38d4c634cb": "2026-10-29T12:46:43.548575+00:00",
@@ -729,96 +722,11 @@
   "29f64bdbc05d7a4a": "2026-11-01T11:39:54.271924+00:00",
   "08416f7545e7a4b1": "2026-11-01T11:49:54.308909+00:00",
   "325bf9aefa6f6354": "2026-11-01T12:04:54.308071+00:00",
-  "48cc93e6809d486e": "2026-11-01T12:15:20.147614+00:00"
+  "48cc93e6809d486e": "2026-11-01T12:15:20.147614+00:00",
+  "907e7af65c45dedc": "2026-11-01T12:40:20.221178+00:00",
+  "7bf79c5d111792a9": "2026-11-01T12:40:20.221178+00:00"
  },
  "recent": [
-  {
-   "title": "AI Trade Shows New Cracks, Healey Defends UK Budget’s Scale",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-29/the-opening-trade-10-29-2026-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-29T12:36:43.488152+00:00",
-   "title_ru": "AI Trade показывает новые трещины, Healey защищает масштаб бюджета Великобритании",
-   "lead": "A global rally in technology shares stalled after disappointing earnings from two industry heavyweights revived doubts over whether billions of dollars in artificial intelligence spending will deliver sufficient returns.",
-   "lead_ru": "Глобальное ралли акций технологических компаний застопорилось после того, как разочаровывающие доходы от двух отраслевых тяжеловесов возродили сомнения в том, что миллиарды долларов, потраченные на искусственный интеллект, принесут достаточную отдачу.",
-   "tags": [
-    "dollar",
-    "markets"
-   ]
-  },
-  {
-   "title": "U.S. economy grows at fastest pace in almost three years, third-quarter GDP shows",
-   "link": "https://www.marketwatch.com/story/u-s-economy-grows-at-fastest-pace-in-almost-three-years-third-quarter-gdp-shows-0e15b810?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 4,
-   "ts": "2026-10-29T12:36:43.488152+00:00",
-   "title_ru": "Экономика США растет самыми быстрыми темпами почти за три года, показывает ВВП в третьем квартале",
-   "lead": "AI revolution and ‘wealth effect’ fuel expansion",
-   "lead_ru": "Революция ИИ и расширение топлива «эффекта богатства»",
-   "tags": [
-    "GDP"
-   ]
-  },
-  {
-   "title": "Shell CEO Faces Test of Turning a Cash Windfall Into Durable Growth",
-   "link": "https://www.bloomberg.com/news/newsletters/2026-10-29/shell-ceo-faces-test-of-turning-a-cash-windfall-into-durable-growth",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-29T12:36:43.488152+00:00",
-   "title_ru": "Генеральному директору Shell предстоит испытание по превращению непредвиденных денежных поступлений в устойчивый рост",
-   "lead": "To catch US rivals, Wael Sawan needs to show he can combine spending discipline with expansion.",
-   "lead_ru": "Чтобы поймать соперников из США, Ваэль Саван должен показать, что он может сочетать дисциплину расходов с расширением."
-  },
-  {
-   "title": "Госдума приняла в первом чтении проект федерального бюджета",
-   "link": "https://www.kommersant.ru/doc/9063831",
-   "sources": [
-    "Kommersant"
-   ],
-   "score": 3,
-   "ts": "2026-10-29T12:36:43.488152+00:00",
-   "title_en": "The State Duma adopted in the first reading the draft federal budget",
-   "lead": "Проект федерального бюджета на 2027-2029 годы принят в первом чтении в Госдуме. За документ проголосовали 82,7% присутствовавших на заседании депутатов, против не выступил никто.",
-   "lead_en": "The draft federal budget for 2027-2029 was adopted in the first reading in the State Duma. 82.7% of the deputies present at the meeting voted for the document, no one opposed it."
-  },
-  {
-   "title": "Inflation surges, PCE shows. Fed pause on rate hikes unlikely to last long with prices still rising.",
-   "link": "https://www.marketwatch.com/story/inflation-surges-pce-shows-fed-pause-on-rate-hikes-unlikely-to-last-long-with-prices-still-rising-79128886?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 9,
-   "ts": "2026-10-29T12:41:43.408333+00:00",
-   "title_ru": "Инфляционные всплески, PCE показывает. Пауза ФРС в отношении повышения ставок вряд ли продлится долго, поскольку цены все еще растут.",
-   "tags": [
-    "Fed",
-    "rates",
-    "inflation"
-   ]
-  },
-  {
-   "title": "Third-quarter U.S. GDP increases a better-than-expected 3.4% as September inflation accelerates",
-   "link": "https://www.cnbc.com/2026/10/29/pce-inflation-report-september-2026-.html",
-   "sources": [
-    "CNBC"
-   ],
-   "score": 7,
-   "ts": "2026-10-29T12:41:43.408333+00:00",
-   "title_ru": "ВВП США в третьем квартале увеличился лучше, чем ожидалось, на 3,4%, поскольку сентябрьская инфляция ускоряется",
-   "lead": "The personal consumption expenditures price index was projected to increase 0.5% in September for an annual rate of 3.7%, according to the Dow Jones consensus.",
-   "lead_ru": "Прогнозировалось, что индекс цен расходов на личное потребление увеличится на 0,5% в сентябре с годовой ставкой 3,7%, согласно консенсусу Dow Jones.",
-   "tags": [
-    "inflation",
-    "markets",
-    "GDP"
-   ]
-  },
   {
    "title": "В ЦБ назвали меры для преодоления «кризиса доверия» на финрынке",
    "link": "https://www.rbc.ru/finances/29/10/2026/6ae3121a491c573610b4f13d",
@@ -6890,6 +6798,15 @@
    "score": 3,
    "ts": "2026-11-01T12:15:20.147614+00:00",
    "title_ru": "Ставки на рынке прогнозов идут от двери к двери, охотясь за среднесрочным краем"
+  },
+  {
+   "title": "The measure slipped into UK budget that could protect spending on children, youth and rough sleeping | Heather Stewart",
+   "link": "https://www.theguardian.com/business/2026/nov/01/pdel-preventative-departmental-expenditure-limit-",
+   "sources": [
+    "The Guardian"
+   ],
+   "score": 2,
+   "ts": "2026-11-01T12:40:20.221178+00:00"
   }
  ],
  "last_digest": "2026-10-31",
@@ -13791,8 +13708,8 @@
    "0001823923-26-000015",
    "0001213900-26-114611",
    "0001213900-26-114604",
-   "0001823940-26-000012",
    "0001214659-26-013568",
+   "0001823940-26-000012",
    "0000091440-26-000174",
    "0001193125-26-442201",
    "0001628280-26-068637",
