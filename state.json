@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "28049f23130f8f5a": "2026-10-29T12:01:43.435051+00:00",
-  "28d7e22d13123788": "2026-10-29T12:01:43.435051+00:00",
-  "8b85d2a09c31295a": "2026-10-29T12:01:43.435051+00:00",
-  "4adec1d3834f6e67": "2026-10-29T12:01:43.435051+00:00",
   "6598dadb35df2bed": "2026-10-29T12:06:43.397127+00:00",
   "fc642084392586f9": "2026-10-29T12:06:43.397127+00:00",
   "4cf11f7145d2adfe": "2026-10-29T12:06:43.397127+00:00",
@@ -747,58 +743,10 @@
   "8b5ae8e5fc5dda11": "2026-11-01T11:19:54.306023+00:00",
   "776f3a9132e5e983": "2026-11-01T11:29:54.332659+00:00",
   "29f64bdbc05d7a4a": "2026-11-01T11:39:54.271924+00:00",
-  "08416f7545e7a4b1": "2026-11-01T11:49:54.308909+00:00"
+  "08416f7545e7a4b1": "2026-11-01T11:49:54.308909+00:00",
+  "325bf9aefa6f6354": "2026-11-01T12:04:54.308071+00:00"
  },
  "recent": [
-  {
-   "title": "Tech Stocks Slide After Earnings; Warsh Signals Potential Rate Hikes",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-29/bloomberg-brief-10-29-2026-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 8,
-   "ts": "2026-10-29T12:01:43.435051+00:00",
-   "title_ru": "Технологические акции падают после прибыли; Warsh сигнализирует о потенциальном повышении ставок",
-   "lead": "Nasdaq futures fall after disappointing earnings from Alphabet and Samsung revive doubts over whether billions of dollars in AI spending will deliver sufficient returns.",
-   "lead_ru": "Фьючерсы на Nasdaq падают после разочаровывающих доходов от Alphabet, и Samsung возрождает сомнения в том, что миллиарды долларов, потраченные на ИИ, принесут достаточную отдачу.",
-   "tags": [
-    "Fed",
-    "rates",
-    "dollar"
-   ]
-  },
-  {
-   "title": "Christine Lagarde: The outsider who led the ECB her way",
-   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOS2MyZ1h3TUV5QmVNTDR5bHl3c1RQYVFEbzZXWTlwM2Y5QXV3ejhKcHp1WTdhSFlHeDMxYk5OdmVWQUt5TTF5cE84cVBjX0x0YjJwYkc5MUM3YVlTRDRURnQwaE14WE40NTNrNFdCU0dVNDcwVG85VkFDZHFqeGV4WlVXblBfbThUNU02NW9VeHlNR1dfejZ3SmV1Z3pQVGEx?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-29T12:01:43.435051+00:00",
-   "title_ru": "Кристин Лагард: аутсайдер, который вел ЕЦБ своим путем",
-   "tags": [
-    "ECB"
-   ]
-  },
-  {
-   "title": "After the Budget, Before the Bell With The Opening Trade (Video)",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-29/after-the-budget-before-the-bell-with-the-opening-trade-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-29T12:01:43.435051+00:00",
-   "title_ru": "После бюджета, перед звонком с открытием сделки (видео)"
-  },
-  {
-   "title": "It’s the strangest job market the U.S. has ever seen. The low-hire, low-fire economy turns 3 years old.",
-   "link": "https://www.marketwatch.com/story/its-the-strangest-job-market-the-u-s-has-ever-seen-the-low-hire-low-fire-economy-turns-3-years-old-ce8d0dfe?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 2,
-   "ts": "2026-10-29T12:01:43.435051+00:00"
-  },
   {
    "title": "Investors Buy Rogers (RCI), BCE, Telus Stocks After Canada Telecom Selloff",
    "link": "https://www.bloomberg.com/news/articles/2026-10-29/investors-buy-rogers-rci-bce-telus-stocks-after-canada-telecom-selloff",
@@ -7082,6 +7030,22 @@
    "title_ru": "BYD Китая продлевает полосу роста продаж на фоне сильного экспорта",
    "tags": [
     "China"
+   ]
+  },
+  {
+   "title": "The US-China trade war seems to have subsided – but the sense of calm is misleading",
+   "link": "https://www.theguardian.com/world/2026/nov/01/us-china-trade-war-trump-xi",
+   "sources": [
+    "The Guardian"
+   ],
+   "score": 7,
+   "ts": "2026-11-01T12:04:54.308071+00:00",
+   "title_ru": "Торговая война между США и Китаем, похоже, утихла, но чувство спокойствия вводит в заблуждение",
+   "lead": "A truce has cooled the trade conflict, but neither country has done anything to limit the outbreak of new hostilities Donald Trump ’s trade wars have largely fallen off the headlines.",
+   "lead_ru": "Перемирие охладило торговый конфликт, но ни одна из стран ничего не сделала, чтобы ограничить вспышку новых военных действий Торговые войны Дональда Трампа в значительной степени выпали из заголовков газет.",
+   "tags": [
+    "China",
+    "tariffs"
    ]
   }
  ],
@@ -14025,7 +13989,8 @@
    "0002014386-26-000026"
   ],
   "errors": {
-   "senate": "HTTPError: HTTP Error 403: Forbidden"
+   "senate": "HTTPError: HTTP Error 403: Forbidden",
+   "sec": "TimeoutError: The read operation timed out"
   }
  },
  "cal_actuals": {
