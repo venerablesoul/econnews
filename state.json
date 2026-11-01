@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "58e49e17fe4405de": "2026-10-29T22:38:36.919447+00:00",
   "1f2e3dc02e14be65": "2026-10-29T22:43:36.849332+00:00",
   "b20a095ce78bf965": "2026-10-29T22:48:36.846992+00:00",
   "691dd18b0f5c9646": "2026-10-29T22:48:36.846992+00:00",
@@ -617,24 +616,10 @@
   "8812148875af5e04": "2026-11-01T22:06:06.458642+00:00",
   "08ea93288acc0858": "2026-11-01T22:06:06.458642+00:00",
   "60b4ad74af879741": "2026-11-01T22:16:06.448194+00:00",
-  "f5909d527971d75b": "2026-11-01T22:16:06.448194+00:00"
+  "f5909d527971d75b": "2026-11-01T22:16:06.448194+00:00",
+  "e35feb2f39b22579": "2026-11-01T22:41:06.404028+00:00"
  },
  "recent": [
-  {
-   "title": "Colombia Unveils Fiscal Plan With Sweeping Spending Cuts",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-29/colombia-unveils-fiscal-plan-with-sweeping-spending-cuts",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-29T22:38:36.919447+00:00",
-   "title_ru": "Колумбия обнародовала бюджетный план с радикальным сокращением расходов",
-   "lead": "The Colombian government presented a long-awaited package of spending cuts and other measures aimed at reducing the budget deficit by more than 2% of GDP next year.",
-   "lead_ru": "Колумбийское правительство представило долгожданный пакет сокращений расходов и других мер, направленных на сокращение бюджетного дефицита более чем на 2% ВВП в следующем году.",
-   "tags": [
-    "GDP"
-   ]
-  },
   {
    "title": "Vale Iron Ore Output Trails Forecast on Serra Norte Challenges",
    "link": "https://www.bloomberg.com/news/articles/2026-10-29/vale-iron-ore-output-trails-forecasts-despite-mine-ramp-ups",
@@ -5523,6 +5508,16 @@
    "tags": [
     "inflation"
    ]
+  },
+  {
+   "title": "Used cars drive consumer prices up in August",
+   "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBybm9MNFp6OUp3bkl6eUw2QW5NVEhqT3BYRGhUa254X19UR3VzYWp5WXhJRWdIQllRaXE4VHBtVjJjcmFTeG1PakF2TTlhbVZheV8wNEZnWUR6OTBo?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-01T22:41:06.404028+00:00",
+   "title_ru": "Подержанные автомобили повысили потребительские цены в августе"
   }
  ],
  "last_digest": "2026-11-01",
