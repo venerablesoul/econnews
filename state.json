@@ -1,15 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "5e25e64b9fc73196": "2026-10-29T10:01:43.454343+00:00",
-  "58f4c85a938dbd52": "2026-10-29T10:01:43.454343+00:00",
-  "046342c6ebae65d4": "2026-10-29T10:01:43.454343+00:00",
-  "9c51bda3f6a7ff41": "2026-10-29T10:01:43.454343+00:00",
-  "a1cdf8a2697a773d": "2026-10-29T10:01:43.454343+00:00",
-  "2bc4594029e70c66": "2026-10-29T10:01:43.454343+00:00",
-  "67e4656193cd2b41": "2026-10-29T10:01:43.454343+00:00",
-  "594b959734897415": "2026-10-29T10:06:43.406234+00:00",
-  "6ee1a755ac7431e0": "2026-10-29T10:06:43.406234+00:00",
   "f4eec238c0ad0c6e": "2026-10-29T10:11:43.364040+00:00",
   "69fe08a9117def57": "2026-10-29T10:11:43.364040+00:00",
   "0c0d5b2ef031c330": "2026-10-29T10:16:43.438503+00:00",
@@ -781,101 +772,6 @@
   "b0d3d974b2393d70": "2026-11-01T09:54:54.308510+00:00"
  },
  "recent": [
-  {
-   "title": "ECB President Lagarde to step down on 7 February 2027",
-   "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261029~abbb6dc64b.en.html",
-   "sources": [
-    "ECB",
-    "Bloomberg"
-   ],
-   "score": 9,
-   "ts": "2026-10-29T10:01:43.454343+00:00",
-   "title_ru": "Президент ЕЦБ Лагард уйдет в отставку 7 февраля 2027 года",
-   "lead": "President Christine Lagarde announced she’ll leave the European Central Bank in early 2027, according to people familiar with the situation.",
-   "lead_ru": "По словам людей, знакомых с ситуацией, президент Кристин Лагард объявила, что покинет Европейский центральный банк в начале 2027 года.",
-   "tags": [
-    "ECB"
-   ]
-  },
-  {
-   "title": "Hong Kong Monetary Authority leaves interest rates unchanged, tracking Fed move",
-   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPN3J6WGNOeVpGVUFtLVBCWkItVWVEQmQwMnhTeldWYko5SnR6akxlQTJOR2ZMbnZodUhnMk8zMjRLaFpsQm5iMVFlTnJheVlnQzVhOW5WVFRYdnZHMUFxRWJBMVpUMHhubklkaFJ0dVloc3d0dTItcnJ5NEFMYlBXY1F1ZTFHV3lpN3NOSDNKQkJ6THNpbUp0MlMwRlpSQU4yNzdUMmZQOVFFSS1mVWROaUJpSjNBNXJZQS1nV2xEU1FJQmJaZ1FBenROYkM4UQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-29T10:01:43.454343+00:00",
-   "title_ru": "Денежно-кредитное управление Гонконга оставляет процентные ставки без изменений, отслеживая движение ФРС",
-   "tags": [
-    "Fed",
-    "rates"
-   ]
-  },
-  {
-   "title": "Kremlin aide says discussions underway with US to lift sanctions on Russian investment fund",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQVl9HWWNraGlYV3NRSGloLWwxUjBRN0ZDc1M4dVZKTnM4NEtDejItVlAwZFdib3VsNWE2bk1XX0Fpc2dmLVh3X3hBeFNmVkdyTk1OSW9VbUd5TFdOaWtQQkxiWnBjaXdOWHlwYklBSlZ5ekYxTEdEVEt0T1NfOGF3cExwWVVCZlM1RFhsUnpCYzBrOWNxaDJEZzloSTZQM1p4OE01UlJGT2hmM1R2VjZtS1lvUEgwTVJ3WFRfWTVFMA?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-29T10:01:43.454343+00:00",
-   "title_ru": "Помощник Кремля говорит, что с США ведутся переговоры об отмене санкций в отношении российского инвестиционного фонда",
-   "tags": [
-    "sanctions",
-    "Russia"
-   ]
-  },
-  {
-   "title": "Bank of England sets out approach to tokenised collateral in central clearing",
-   "link": "https://www.bankofengland.co.uk/news/2026/october/bank-of-england-sets-out-approach-to-tokenised-collateral-in-central-clearing",
-   "sources": [
-    "Bank of England"
-   ],
-   "score": 4,
-   "ts": "2026-10-29T10:01:43.454343+00:00",
-   "title_ru": "Банк Англии излагает подход к токенизированному обеспечению в центральном клиринге",
-   "lead": "The Bank of England has today launched a consultation supporting central counterparties (CCPs) acceptance of tokenised forms of eligible collateral.",
-   "lead_ru": "Сегодня Банк Англии начал консультации, поддерживающие принятие центральными контрагентами (CCP) токенизированных форм приемлемого обеспечения."
-  },
-  {
-   "title": "Healey's Budget Placates Gilt Markets, Santander Says (Video)",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-29/healey-s-budget-placates-gilt-markets-santander-says-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-29T10:01:43.454343+00:00",
-   "title_ru": "Бюджетные номера Healey's открывают рынки позолоты, говорит Сантандер (видео)",
-   "tags": [
-    "bonds"
-   ]
-  },
-  {
-   "title": "Petrobras' third-quarter oil and gas output rises 12% from a year earlier",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOX2dORlloRGtUV3MwM2x1cXF4LWZFRHc4RWw4eUFVcjJGYVZ3a3RBd2lzdXhUdWt0Q01IM09jRDFfcU15WW9aUHNuT2EtQndLOFppZjM2V2UwTERMWE1PbVJSTE8wcjdHOVpKWUVkLU05clhhOVBBdkdtVV8weUVsblJRLWdqRXUxLUxpR0NtZ3FoZHVoTXJmOVRuZkZmNHQ1UVFqak40cFFaR0FPMnRra0xB?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-29T10:01:43.454343+00:00",
-   "title_ru": "Добыча нефти и газа Petrobras в третьем квартале выросла на 12% по сравнению с годом ранее",
-   "tags": [
-    "oil"
-   ]
-  },
-  {
-   "title": "Nasdaq futures slide as mixed Big Tech results test AI trade",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxObTRZdktaNHNaUkc2SG45TFV3V3hKRlMwdWdFTEhyUVFSRnBodWFIM0gxSHh5NWZDVkp3WnJOX3RTZGFtUDVIN3ZPQnB6NlNOQ01OOXhTRnNhNjkyajZ2ejhEZkRBS1IxMkxjVWJmY3FYa3lqcHUxajVqRXpWdS1UWjdxZFZYTW8tUjBtN2NZTGlLSWFiRlpjTDNKaVlVbHRiLVRCcA?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-29T10:06:43.406234+00:00",
-   "title_ru": "Фьючерсы на Nasdaq падают, поскольку смешанные результаты Big Tech тестируют торговлю ИИ",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "ECB President Lagarde to stand down in Februrary",
    "link": "https://www.cnbc.com/2026/10/29/lagarde-ecb-stand-down.html",
