@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "2f4d2a7d4f06118c": "2026-10-29T06:51:19.836111+00:00",
   "81a1a834601e839b": "2026-10-29T07:01:19.866655+00:00",
   "0e0bccb0849be4d6": "2026-10-29T07:01:19.866655+00:00",
   "5845dda3d7c83d98": "2026-10-29T07:01:19.866655+00:00",
@@ -797,18 +796,10 @@
   "12ab1b6980bca0f3": "2026-11-01T05:24:20.953990+00:00",
   "700b87f47282f3de": "2026-11-01T05:24:20.953990+00:00",
   "1156e947a38582fe": "2026-11-01T06:49:54.317607+00:00",
-  "81bf4ca3dab7e5cd": "2026-11-01T06:49:54.317607+00:00"
+  "81bf4ca3dab7e5cd": "2026-11-01T06:49:54.317607+00:00",
+  "ce731280cca31fe6": "2026-11-01T06:59:54.331911+00:00"
  },
  "recent": [
-  {
-   "title": "Росстат назвал единственный регион с доходами выше ₽250 тыс. на человека",
-   "link": "https://www.rbc.ru/rbcfreenews/6ae2eb22b11d2a34d8ec6e9c",
-   "sources": [
-    "RBC"
-   ],
-   "score": 1,
-   "ts": "2026-10-29T06:51:19.836111+00:00"
-  },
   {
    "title": "FTSE 100 Live: UK Stock Futures Edge Higher to Dodge AI Selloff",
    "link": "https://www.bloomberg.com/news/live-blog/2026-10-29/ftse-100-live-updates-pound-gilts-shell-lloyds-wpp-ecb-rates-ai-stocks-gbp-healey-budget-what-s-moving-uk-markets-right-now-markets-today",
@@ -7735,6 +7726,21 @@
    "score": 3,
    "ts": "2026-11-01T06:49:54.317607+00:00",
    "title_ru": "Bajaj Housing Finance Ltd (BAJO.NS) | Курс акций и последние новости"
+  },
+  {
+   "title": "China’s ‘Upgraded’ Peru Trade Deal Takes Effect, Widening Ties",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-01/china-s-upgraded-peru-trade-deal-takes-effect-widening-ties",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-01T06:59:54.331911+00:00",
+   "title_ru": "«Обновленная» торговая сделка Китая с Перу вступает в силу, расширяя связи",
+   "lead": "China’s upgraded free-trade agreement with Peru took effect Sunday, expanding rules covering areas including e-commerce, global supply chains, competition policy and the environment, according to the Ministry of Commerce in…",
+   "lead_ru": "По данным Министерства торговли Перу, обновленное соглашение о свободной торговле Китая с Перу вступило в силу в воскресенье, расширив правила, охватывающие такие области, как электронная торговля, глобальные цепочки поставок, политика в области конкуренции и окружающая среда.",
+   "tags": [
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-10-31",
