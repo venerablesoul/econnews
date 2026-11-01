@@ -1,12 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "ac70fffaad839909": "2026-10-29T14:15:15.723969+00:00",
-  "8ace8bf72e1ab558": "2026-10-29T14:15:15.723969+00:00",
-  "f58a76f9e8790b99": "2026-10-29T14:20:15.754833+00:00",
-  "d8b6b2224c94ca6a": "2026-10-29T14:20:15.754833+00:00",
-  "1ad6555adbc8d1a9": "2026-10-29T14:20:15.754833+00:00",
-  "c24a09ebe7c675dc": "2026-10-29T14:20:15.754833+00:00",
   "ee79cfd7680c8f7f": "2026-10-29T14:25:15.711616+00:00",
   "1e849efba4cdd783": "2026-10-29T14:25:15.711616+00:00",
   "aa47c154155bcd45": "2026-10-29T14:25:15.711616+00:00",
@@ -698,74 +692,10 @@
   "55b68aa3c0b6da07": "2026-11-01T13:40:20.191033+00:00",
   "efec07435e4dd782": "2026-11-01T13:45:20.222171+00:00",
   "0e7ad0d07e5fefd8": "2026-11-01T14:05:20.189025+00:00",
-  "812ebc9ee491ac52": "2026-11-01T14:10:20.165474+00:00"
+  "812ebc9ee491ac52": "2026-11-01T14:10:20.165474+00:00",
+  "c62ddd0c31b32bfe": "2026-11-01T14:20:20.171873+00:00"
  },
  "recent": [
-  {
-   "title": "BofA Macro Traders Avoid Big Bets After Volatile Market Shakeout",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-29/bofa-macro-traders-avoid-big-bets-after-volatile-market-shakeout",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-29T14:15:15.723969+00:00",
-   "title_ru": "Макротрейдеры BofA избегают больших ставок после волатильного встряхивания рынка",
-   "lead": "Bank of America Corp.’s macro traders are limiting risk exposure heading into year-end after upheaval in some of the world’s most popular trades.",
-   "lead_ru": "Макротрейдеры Bank of America Corp. ограничивают подверженность риску в конце года после потрясений в некоторых из самых популярных в мире сделок."
-  },
-  {
-   "title": "ECB keeps rates unchanged but points to mounting inflation risk",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQWVJheVZacGhZZXFXZGZ5RU91NEt6eTlObWpmUnBvMFZKVmlVZ2xFVThBNkVrN1hxaTViSllZa0I0TzVMSW5Ub19vWk5ZcFBJZkdnX0lZNGtLZHpFVDF0N2didHE5MER6NjhpdnNyYmJGSVY4azhKTmE1V3pzY2MyOFZRTWtPUWNUS2FMT18zNGRXRlZpQkRUdFVVNDE1VEVGWUg4?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-29T14:20:15.754833+00:00",
-   "title_ru": "ЕЦБ сохраняет ставки без изменений, но указывает на растущий инфляционный риск",
-   "tags": [
-    "ECB",
-    "inflation"
-   ]
-  },
-  {
-   "title": "The Race to Replace Lagarde Begins",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-29/the-race-to-replace-lagarde-begins-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-29T14:20:15.754833+00:00",
-   "title_ru": "Начинается гонка за замену Лагард",
-   "lead": "Christine Lagarde's early exit as ECB president leaves a vacancy at the top of one of the world's most powerful central banks. Alex Morgan explains what happens now. (Source: Bloomberg)",
-   "lead_ru": "Ранний уход Кристин Лагард с поста президента ЕЦБ оставляет вакансию на вершине одного из самых мощных центральных банков мира. Алекс Морган объясняет, что происходит сейчас. (Источник: Bloomberg)",
-   "tags": [
-    "ECB"
-   ]
-  },
-  {
-   "title": "Eli Lilly Shares Surge on Raised Sales Forecast",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-29/eli-lilly-shares-surge-on-raised-sales-forecast-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-29T14:20:15.754833+00:00",
-   "title_ru": "Акции Eli Lilly выросли в связи с повышением прогноза продаж",
-   "lead": "Eli Lilly & Co. raised its full-year sales forecast as demand for its blockbuster obesity and diabetes drugs continues to surge.",
-   "lead_ru": "Eli Lilly & Co. повысила прогноз продаж на весь год, поскольку спрос на ее препараты от ожирения и диабета продолжает расти.",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "Healey accepts ‘hard decisions’ ahead as thinktank says 2020s set to be worst decade for living standards growth – UK politics live",
-   "link": "https://www.theguardian.com/politics/live/2026/oct/29/budget-john-healey-labour-uk-politics-latest-news",
-   "sources": [
-    "The Guardian"
-   ],
-   "score": 2,
-   "ts": "2026-10-29T14:20:15.754833+00:00"
-  },
   {
    "title": "Kalshi raises $1 billion at $40 billion valuation as it expands beyond prediction markets",
    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNbzd3N0FYcjQ3ZFIzYjhnUWZ4V2tPT0QyUDQ5T0hCai1WM3JXRG1GWjNXUlczOEoxRmVyTmdicmNSSlVMWENEdUNjcFhFMkpFQUw4dW9Ed2V0c01EeWZ3cnhGSnhuQldid3pjVTVmOGVEV0Z5ZWZ1VWZncDhTUG9ROEdIMDNiYnRBaWJwSjBIUWN4TmFrTHpyalRYQ183T3lJWGRUTl94d0cxM1FuejJHZFM3R1piRllmbVE?oc=5",
@@ -6527,6 +6457,16 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "Trump Banks on Rallies to Turn Out MAGA Faithful One More Time",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPZVFfMG13M19BeWJMNllla2xhRzc3Z0RZNWZZcnp1TWZoeVpTcHhjX1daSFdHWFdESVA5M3pPLS13azhUSkRBWVBqUmkxdkJoWWYwc3YwdnNIU1E4TWVUc1JleXJDUGZtOTU3UVc0eTFZQjRwOG8wMGc5SzMzTWxQd3l1SDVUVkg0MWk1NHhZQnlJS0pDbzhkOUM2VFBVVGVPNjYwdUsyVUdyRHMxU3Q3NXJDdw?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-01T14:20:20.171873+00:00",
+   "title_ru": "Трамп Банки на митингах, чтобы превратить MAGA Faithful еще один раз"
   }
  ],
  "last_digest": "2026-10-31",
@@ -6549,7 +6489,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 0,
+  "Fed": 1,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
@@ -13428,8 +13368,8 @@
    "0001823923-26-000015",
    "0001213900-26-114611",
    "0001213900-26-114604",
-   "0001823940-26-000012",
    "0001214659-26-013568",
+   "0001823940-26-000012",
    "0000091440-26-000174",
    "0001193125-26-442201",
    "0001628280-26-068637",
