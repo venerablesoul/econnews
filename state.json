@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "0a4cbf0b6382489b": "2026-10-29T20:58:36.881491+00:00",
-  "b29057abfff297c2": "2026-10-29T21:03:37.001065+00:00",
-  "284e5e9ca6e2b9b3": "2026-10-29T21:08:36.901382+00:00",
   "14d266591ca79ac5": "2026-10-29T21:13:37.144786+00:00",
   "db71ba08d16d8fb9": "2026-10-29T21:13:37.144786+00:00",
   "c8b11f96ced0f035": "2026-10-29T21:28:36.849756+00:00",
@@ -622,34 +619,10 @@
   "e1f9fc13c592e5b3": "2026-11-01T20:21:06.397639+00:00",
   "ffc1b87fbde6349b": "2026-11-01T20:26:06.391540+00:00",
   "7c4f6da857610289": "2026-11-01T20:26:06.391540+00:00",
-  "d62ead68c3bd433e": "2026-11-01T20:56:06.373540+00:00"
+  "d62ead68c3bd433e": "2026-11-01T20:56:06.373540+00:00",
+  "e8353828e60e44a8": "2026-11-01T21:11:06.446830+00:00"
  },
  "recent": [
-  {
-   "title": "US Mortgage Rates Decline for Second Straight Week, to 7.24%",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOS2RKYlUycHNUTkl4OE5FeFExMHNwNVNlM2R6NGJvTUVaR2FsMDRVejUyTEJzdzlmeTZSTEVqUXgxZ1pUN0lSWTFRM0NFNHNYWG9waEZlcFQ3VExXeFYzanJPS2M0MVNpNWFkZkplM0xYY3JKLXdXSnRlQzN5Njh6MXNEai01SzJxQTI3emdmRUhvOWFSd1dnczItbU1TM1lWdHZvMzI2T2h1akFvSGc?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-29T20:58:36.881491+00:00",
-   "title_ru": "Ставки по ипотеке в США снижаются вторую неделю подряд до 7,24%"
-  },
-  {
-   "title": "Why the US Economy Looks Strong but Feels Bad to Americans",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-29/why-the-us-economy-looks-strong-but-feels-bad-to-americans",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-29T21:03:37.001065+00:00",
-   "title_ru": "Почему экономика США выглядит сильной, но американцам она неприятна",
-   "lead": "The US economic expansion is in its seventh year, and there is no recession in sight.",
-   "lead_ru": "Экономический рост США продолжается уже седьмой год, и рецессии не предвидится.",
-   "tags": [
-    "GDP"
-   ]
-  },
   {
    "title": "UK's Healey spares markets drama, but budget not entirely leak-free",
    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQVEpTamNabmdsMnlSWlF4ZGxJZkZqYXBOM3BZOXNDc0hpYmRGQWJkUDBWVHktYVlVUnZCaC1zdDJhbFNRdnA1aHJTdVdVWkh3MlJQRngzQ2JJczQ3YXdpTlI1aF9BRWljTFRRdjJlTDdlZHN5Y3lvaFBXb2F3MDVsUlhNNWFoTW11bXFReEFRS0diYkE4UEJUbEtUajBNcFI2MTlTMzFxUzNxUQ?oc=5",
@@ -5585,6 +5558,18 @@
     "rates",
     "inflation"
    ]
+  },
+  {
+   "title": "Westpac Profit Misses Estimates, CEO Says Economy Uncertain",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-01/westpac-profit-misses-estimates-ceo-says-economy-uncertain",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-01T21:11:06.446830+00:00",
+   "title_ru": "Прибыль Westpac пропускает оценки, генеральный директор говорит, что экономика неопределенная",
+   "lead": "Westpac Banking Corp.’s profit missed expectations as Chief Executive Officer Anthony Miller said Australia’s economic outlook remains uncertain.",
+   "lead_ru": "Прибыль Westpac Banking Corp. не оправдала ожиданий, поскольку главный исполнительный директор Энтони Миллер заявил, что экономические перспективы Австралии остаются неопределенными."
   }
  ],
  "last_digest": "2026-11-01",
@@ -12527,8 +12512,7 @@
    "0001193125-26-442196"
   ],
   "errors": {
-   "senate": "HTTPError: HTTP Error 403: Forbidden",
-   "sec": "TimeoutError: The read operation timed out"
+   "senate": "HTTPError: HTTP Error 403: Forbidden"
   }
  },
  "cal_actuals": {
