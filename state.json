@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "6598dadb35df2bed": "2026-10-29T12:06:43.397127+00:00",
-  "fc642084392586f9": "2026-10-29T12:06:43.397127+00:00",
-  "4cf11f7145d2adfe": "2026-10-29T12:06:43.397127+00:00",
-  "3d50a4f55e858bb0": "2026-10-29T12:06:43.397127+00:00",
   "e1f9fc13c592e5b3": "2026-10-29T12:16:43.417394+00:00",
   "3127ec4f80c97923": "2026-10-29T12:16:43.417394+00:00",
   "322a7be22dc4b81d": "2026-10-29T12:16:43.417394+00:00",
@@ -747,47 +743,6 @@
   "325bf9aefa6f6354": "2026-11-01T12:04:54.308071+00:00"
  },
  "recent": [
-  {
-   "title": "Investors Buy Rogers (RCI), BCE, Telus Stocks After Canada Telecom Selloff",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-29/investors-buy-rogers-rci-bce-telus-stocks-after-canada-telecom-selloff",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 8,
-   "ts": "2026-10-29T12:06:43.397127+00:00",
-   "title_ru": "Инвесторы покупают акции Rogers (RCI), Bce, Telus после распродажи Canada Telecom",
-   "lead": "Investors are bargain hunting in Canadian telecommunication stocks after rising government-bond yields and competition from SpaceX sparked steep declines in the group.",
-   "lead_ru": "Инвесторы охотятся за канадскими телекоммуникационными акциями после того, как рост доходности государственных облигаций и конкуренция со стороны SpaceX вызвали резкое снижение в группе.",
-   "tags": [
-    "bonds",
-    "markets"
-   ]
-  },
-  {
-   "title": "Sinopec's third-quarter profit jumps 57% on higher oil prices, refining margins",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOaW5ETTZNdWJMSFRsSXZfOWNfLXN0SHdQQmVRajBPVWtqWllNNlZsc3ZVZWhnVDhkczlPcHk2YWZ0dno3VXBtWi1HTEk4U0toZGFSWkZ1Q0xIRVZyeUxBNlBlUzY0dC1vMUZISW41RzkwM3FONnZkcnpvZDFEb2VBVk9Ca1Uyd1R2YUxkVm5adm80MmtUaDE2RklnSlRFNTFndXRjbWhKRlZ4bjRud09mY3FMTlJmTDhhVXY3aktUZVpQVUU?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-29T12:06:43.397127+00:00",
-   "title_ru": "Прибыль Sinopec в третьем квартале подскочила на 57% на фоне более высоких цен на нефть, что привело к увеличению маржи нефтепереработки",
-   "tags": [
-    "oil"
-   ]
-  },
-  {
-   "title": "EU Must Act to Curb Power Bills as Costs Surge, Trade Body Says",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-29/eu-must-act-to-curb-power-bills-as-costs-surge-trade-body-says",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-29T12:06:43.397127+00:00",
-   "title_ru": "ЕС должен действовать, чтобы обуздать счета за электроэнергию, поскольку расходы растут, говорит торговый орган",
-   "lead": "Europe must do more to bring down power bills for consumers as wholesale costs soar to levels last seen during the 2022 energy crisis, Eurelectric said.",
-   "lead_ru": "Европа должна сделать больше, чтобы снизить счета за электроэнергию для потребителей, поскольку оптовые расходы взлетели до уровней, которые в последний раз наблюдались во время энергетического кризиса 2022 года, сказал Eurelectric."
-  },
   {
    "title": "Bolivia Economic Reforms Lift Markets as Pain Tests Public Support",
    "link": "https://www.bloomberg.com/news/features/2026-10-29/bolivia-economic-reforms-lift-markets-as-pain-tests-public-support",
@@ -13958,8 +13913,8 @@
    "0001231919-26-001519",
    "0002025268-26-000008",
    "0001213900-26-114606",
-   "0001193125-26-442142",
    "0001213900-26-114608",
+   "0001193125-26-442142",
    "0001280486-26-000010",
    "0001493152-26-049496",
    "0001193532-26-000012",
@@ -13976,21 +13931,20 @@
    "0001628280-26-068639",
    "0001628280-26-068637",
    "0001451763-26-000014",
+   "0002014386-26-000026",
    "0001823940-26-000012",
    "0001193125-26-442228",
    "0001193125-26-442229",
    "0001193125-26-442201",
    "0001193125-26-442196",
    "0001213900-26-114605",
-   "0001493152-26-049492",
    "0001193125-26-442119",
    "0001214659-26-013568",
    "0001731122-26-001386",
-   "0002014386-26-000026"
+   "0001493152-26-049492"
   ],
   "errors": {
-   "senate": "HTTPError: HTTP Error 403: Forbidden",
-   "sec": "TimeoutError: The read operation timed out"
+   "senate": "HTTPError: HTTP Error 403: Forbidden"
   }
  },
  "cal_actuals": {
