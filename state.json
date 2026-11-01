@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "556cd1858277fb80": "2026-10-29T00:00:50.404348+00:00",
-  "b390bae211f79342": "2026-10-29T00:00:50.404348+00:00",
-  "33538bad7f897b72": "2026-10-29T00:00:50.404348+00:00",
   "f3bcc7569b550438": "2026-10-29T00:10:50.473258+00:00",
   "93ee3da093ece84b": "2026-10-29T00:15:50.374403+00:00",
   "5310c67ec2849d82": "2026-10-29T00:15:50.374403+00:00",
@@ -856,46 +853,6 @@
   "eef06f0896a253a4": "2026-10-31T22:58:52.091343+00:00"
  },
  "recent": [
-  {
-   "title": "Gold Edges Lower After Fed Holds Rates With Limited Guidance",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-28/gold-edges-lower-after-fed-holds-rates-with-limited-guidance",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-29T00:00:50.404348+00:00",
-   "title_ru": "Золотые края снижаются после того, как ФРС удерживает ставки с ограниченным руководством",
-   "lead": "Gold dipped after the Federal Reserve kept interest rates unchanged and offered little guidance on its next move, leaving traders guessing over the prospect of a hike before year-end.",
-   "lead_ru": "Золото упало после того, как Федеральная резервная система оставила процентные ставки без изменений и практически не дала рекомендаций по своему следующему шагу, оставив трейдеров гадать о перспективе повышения до конца года.",
-   "tags": [
-    "Fed",
-    "rates",
-    "gold"
-   ]
-  },
-  {
-   "title": "Trump Delays Robotics, Machinery Tariffs in Favor of More Talks",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPbUp2SjdYSFFKSDRxY0lWTkNjV1BGSjVrams3dnc4NFRpdGpINkxVa1ZMYjBGRmpHTDRqZXV1azI1OEtiV3AyTDhobGpEcnFGWGYyU1FrT3hkSlV3U0hSMm9tZmVhbXM2MVdTcnc1a2ZCNUw0WnpIZS1EejhFakZEOUNyTTBOME5fa25UTFhjdklncGVjUFFFM3lBMWtCejZCSGxfZkxIbFNUNmtfRFBSc01zbw?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-29T00:00:50.404348+00:00",
-   "title_ru": "Трамп откладывает тарифы на робототехнику и оборудование в пользу новых переговоров",
-   "tags": [
-    "tariffs"
-   ]
-  },
-  {
-   "title": "Argentina sees EU soymeal opportunity as deforestation rules threaten Brazil trade",
-   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOYVhTUW1FTzJQVHVEbTc4QUdaaHpqd21IM1hQRWdWMDMzYjVGVThBU3h1YzN1bVFka1BzUU9SZXg0cC15Z0kxYzM5YzhxODVrMEtqak9fTHVocjBRQjJPNE9UQThxUHV1NFpsTnpHRXJIT3AtRmZGSExmRkloUGlvTG45TDJvVFp6b3A0RFpQZFdZRGlZaFVlSnYxM04tdXRYbW5iX3B4YURFMGl0YWxVRm13SVUzWkpJREk0UlBNbEVJNlBZelNzaHNR?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-29T00:00:50.404348+00:00",
-   "title_ru": "Аргентина видит возможности для производства соевого шрота в ЕС, поскольку правила обезлесения угрожают торговле Бразилии"
-  },
   {
    "title": "Kalemli-Ozcan: Today's Inflation Lacks 2021's Force",
    "link": "https://www.bloomberg.com/news/videos/2026-10-29/kalemli-ozcan-today-s-inflation-lacks-2021-s-force-video",
@@ -15104,12 +15061,6 @@
    }
   ],
   "docs": {
-   "20035487": "2026-10-14",
-   "20035648": "2026-10-14",
-   "20035627": "2026-10-14",
-   "20035652": "2026-10-14",
-   "20035651": "2026-10-14",
-   "9116378": "2026-10-14",
    "20035637": "2026-10-15",
    "20035660": "2026-10-15",
    "20035490": "2026-10-16",
@@ -15139,7 +15090,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-10-31T23:03:52.060425+00:00",
+  "checked": "2026-11-01T00:03:52.101542+00:00",
   "sec_seen": [
    "0001213900-26-114610",
    "0001213900-26-114588",
