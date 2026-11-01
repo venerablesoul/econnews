@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "73eb9ea806d2f44c": "2026-10-29T20:48:36.911500+00:00",
-  "4059827f609d7c5f": "2026-10-29T20:53:36.880961+00:00",
   "0a4cbf0b6382489b": "2026-10-29T20:58:36.881491+00:00",
   "b29057abfff297c2": "2026-10-29T21:03:37.001065+00:00",
   "284e5e9ca6e2b9b3": "2026-10-29T21:08:36.901382+00:00",
@@ -623,32 +621,10 @@
   "96b4415c14b037de": "2026-11-01T20:06:06.394652+00:00",
   "e1f9fc13c592e5b3": "2026-11-01T20:21:06.397639+00:00",
   "ffc1b87fbde6349b": "2026-11-01T20:26:06.391540+00:00",
-  "7c4f6da857610289": "2026-11-01T20:26:06.391540+00:00"
+  "7c4f6da857610289": "2026-11-01T20:26:06.391540+00:00",
+  "d62ead68c3bd433e": "2026-11-01T20:56:06.373540+00:00"
  },
  "recent": [
-  {
-   "title": "TSX down as miner earnings disappoint, Alphabet drags tech",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQTmx0bHpYVWdrRDdFMTd2a3o2SXVTM252RlZBSWVsRVVPTnYxdGZvMkc4b21zTXdUbS1YcGlfejNGQnI1MnV5TEliY1QzWjhHeXB2eEprbG5vcnpxMEtHdERMU2N4b2FBbWxHdmUtLUNiUzZmYm56ZnVtTWY4YXJDcy03QWtzam1JcmV2ZEQ0dUpUanlhOU4wZUE0YnJiRWxBNmJCVmxuMk1sOWhiY09r?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-29T20:48:36.911500+00:00",
-   "title_ru": "TSX падает, поскольку доходы майнеров разочаровывают, Alphabet тянет за собой технологии"
-  },
-  {
-   "title": "Satellites Show Saudi Persian Gulf Oil Loadings Hit Wartime High",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPZkFuZkhTbjJuZGFWUERva2Q2Y05TYVJ2WVBuSjZMbkZKZDhCVFRMaUktVFBiZmFwWWRTNFJWbTFqTXpZd2ZYdk0tTjdXNHRBRWE4S053Q3BYUm81dDY1dUxsa2N5UE9uNzNJNnJCRHVoN09SMzNwcFZvU1BITWFMZ3RnY3NPbVFJSlFyeE9wQWRFZHN5SXdfanUwT1hUWlFuR19xVl85SnNiRFpQeWg4T1RiS0pTdw?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-29T20:53:36.880961+00:00",
-   "title_ru": "Спутники показывают, что объемы загрузки нефти в Персидском заливе в Саудовской Аравии достигли максимума военного времени",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "US Mortgage Rates Decline for Second Straight Week, to 7.24%",
    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOS2RKYlUycHNUTkl4OE5FeFExMHNwNVNlM2R6NGJvTUVaR2FsMDRVejUyTEJzdzlmeTZSTEVqUXgxZ1pUN0lSWTFRM0NFNHNYWG9waEZlcFQ3VExXeFYzanJPS2M0MVNpNWFkZkplM0xYY3JKLXdXSnRlQzN5Njh6MXNEai01SzJxQTI3emdmRUhvOWFSd1dnczItbU1TM1lWdHZvMzI2T2h1akFvSGc?oc=5",
@@ -12551,7 +12527,8 @@
    "0001193125-26-442196"
   ],
   "errors": {
-   "senate": "HTTPError: HTTP Error 403: Forbidden"
+   "senate": "HTTPError: HTTP Error 403: Forbidden",
+   "sec": "TimeoutError: The read operation timed out"
   }
  },
  "cal_actuals": {
