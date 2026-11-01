@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "2f582076b74cca0a": "2026-10-29T15:40:15.681005+00:00",
-  "d4e01cea426f0475": "2026-10-29T15:40:15.681005+00:00",
   "a497d18d1ab612e8": "2026-10-29T15:45:16.705650+00:00",
   "0dcd5ae070c87d3a": "2026-10-29T15:55:15.661925+00:00",
   "1e2ee9828f322bee": "2026-10-29T15:55:15.661925+00:00",
@@ -668,33 +666,11 @@
   "c62ddd0c31b32bfe": "2026-11-01T14:20:20.171873+00:00",
   "8742e1368dcb2327": "2026-11-01T14:35:20.454346+00:00",
   "fe812f370982aad6": "2026-11-01T14:45:20.208038+00:00",
-  "e61a0bde3c8dcc4e": "2026-11-01T15:05:20.196459+00:00"
+  "e61a0bde3c8dcc4e": "2026-11-01T15:05:20.196459+00:00",
+  "fa2a6b05ae017c8c": "2026-11-01T15:40:20.185287+00:00",
+  "a0f1f4bf05101a0f": "2026-11-01T15:40:20.185287+00:00"
  },
  "recent": [
-  {
-   "title": "Fed’s Path to a Repo-Based Framework Faces a Familiar Roadblock",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-29/fed-s-path-to-a-repo-based-framework-faces-a-familiar-roadblock",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-29T15:40:15.681005+00:00",
-   "title_ru": "Путь ФРС к репо-фреймворку сталкивается со знакомым препятствием",
-   "lead": "As Federal Reserve officials ponder ways to shrink their holdings and keep markets flush with cash from lending operations, they face a challenge years in the making: Overcoming the stigma of borrowing from the central bank.",
-   "lead_ru": "По мере того, как чиновники Федеральной резервной системы размышляют о том, как сократить свои запасы и сохранить рынки на одном уровне с наличными деньгами от кредитных операций, они сталкиваются с многолетней проблемой: преодоление стигмы заимствований у центрального банка.",
-   "tags": [
-    "Fed"
-   ]
-  },
-  {
-   "title": "ЦБ сообщил о планах увеличить лимит платежей для бизнеса через СБП",
-   "link": "https://www.rbc.ru/rbcfreenews/6ae33f24dc2871f6a40c97bf",
-   "sources": [
-    "RBC"
-   ],
-   "score": 1,
-   "ts": "2026-10-29T15:40:15.681005+00:00"
-  },
   {
    "title": "ECB Officials Are Ready to Raise Interest Rates in December",
    "link": "https://www.bloomberg.com/news/articles/2026-10-29/ecb-officials-are-ready-to-raise-interest-rates-in-december",
@@ -6239,6 +6215,19 @@
    ],
    "score": 1,
    "ts": "2026-11-01T15:05:20.196459+00:00"
+  },
+  {
+   "title": "Trump: 'No Hurry' to End Iran War, OPEC+ Holds Oil Output Steady",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNYTdtd1gtUHh5VTlnYnVHb25DV3VSRkRoYVZoNUNZMGx6eTZMV0ZaSFUzQzRnbzRnTDQxY0VMWnNaNnZ4XzlyMHhlZy1LcnZSTHJva0FVN1pHZzdET3RkLTVTcjRfY1ExU0kwWDFqNjRoWEFjV1prRG1ZaFEzdXNkT2ZMQzlTOXVVY0ZWZU85amRBdUJwTTE2ckhtc2RGd2FxQnZXY1h3?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 9,
+   "ts": "2026-11-01T15:40:20.185287+00:00",
+   "title_ru": "Трамп: «Не торопитесь» с окончанием войны с Ираном, ОПЕК+ сохраняет добычу нефти на стабильном уровне",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-10-31",
@@ -13136,14 +13125,15 @@
    "0001213900-26-114605",
    "0001824159-26-000015",
    "0001193125-26-442142",
+   "0001697362-26-000021",
    "0001823923-26-000015",
    "0001213900-26-114611",
    "0001213900-26-114604",
-   "0001214659-26-013568",
    "0001823940-26-000012",
+   "0001214659-26-013568",
    "0000091440-26-000174",
-   "0001628280-26-068637",
    "0001193125-26-442201",
+   "0001628280-26-068637",
    "0001493152-26-049492",
    "0001213900-26-114608",
    "0001213900-26-114610",
@@ -13152,7 +13142,6 @@
    "0001231919-26-001519",
    "0001193125-26-442229",
    "0001104659-26-120789",
-   "0002014361-26-000040",
    "0001213900-26-114609",
    "0001477932-26-006563",
    "0001280486-26-000010",
@@ -13176,7 +13165,7 @@
    "0001193125-26-442116",
    "0001628280-26-068639",
    "0001213900-26-114606",
-   "0001697362-26-000021",
+   "0002014361-26-000040",
    "0001213900-26-114603",
    "0001899977-26-000010"
   ],
