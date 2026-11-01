@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "904be2ae7ce3d573": "2026-10-29T13:11:43.481049+00:00",
-  "4323cf955c799146": "2026-10-29T13:11:43.481049+00:00",
-  "8be498015a196c08": "2026-10-29T13:16:43.545939+00:00",
   "68afd8722dec3a81": "2026-10-29T13:25:15.720927+00:00",
   "844fe7b872b37ee3": "2026-10-29T13:25:15.720927+00:00",
   "3f6aed5d96f90e49": "2026-10-29T13:30:15.714411+00:00",
@@ -722,44 +719,10 @@
   "6598dadb35df2bed": "2026-11-01T13:10:20.146674+00:00",
   "68244d884d28b341": "2026-11-01T13:10:20.146674+00:00",
   "30e9c66dc4dbac83": "2026-11-01T13:10:20.146674+00:00",
-  "12c47449ccdfa0ff": "2026-11-01T13:10:20.146674+00:00"
+  "12c47449ccdfa0ff": "2026-11-01T13:10:20.146674+00:00",
+  "0268a03ec479e240": "2026-11-01T13:20:20.168682+00:00"
  },
  "recent": [
-  {
-   "title": "US economy grows faster than expected in report out just ahead of elections",
-   "link": "https://www.theguardian.com/business/2026/oct/29/economy-growth-third-quarter",
-   "sources": [
-    "The Guardian"
-   ],
-   "score": 4,
-   "ts": "2026-10-29T13:11:43.481049+00:00",
-   "title_ru": "Экономика США растет быстрее, чем ожидалось в отчете накануне выборов",
-   "lead": "Growth is in sharp contrast to ​households’ assessment, reflected in ‌Trump’s record-low approval ratings The US economy grew faster than expected in the third quarter as resilient consumer spending and AI -driven ⁠business…",
-   "lead_ru": "Рост резко контрастирует с оценками домохозяйств, что отражено в рекордно низких рейтингах одобрения Трампа. Экономика США в третьем квартале росла быстрее, чем ожидалось, благодаря устойчивым потребительским расходам и бизнесу, основанному на искусственном интеллекте…"
-  },
-  {
-   "title": "COMMENTARY: Biggest market impact of US midterms may be 2028 countdown",
-   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPTHVhbkFhSWhmem1sbmFlWG95UGRMY0g0ZFp6SVNLeFZfTTY0TUpRZENvaGpKdU8zbzJhSHZPb2ZjTXBMZGdBbWNsMGJDdXVsdzFudzQ3NUNfNm9BN1NCQmY5VmFpNlNHajVhT093a1NydjVsV1lqWFppNFVyN0RTMXpLalZicTBkdU1qRUxYbjU2WW1HMURhTGFWdUItNTJkZjFuWVhHbmVsV0Z4RGRmaFdrXzBBaERZMWtGTjc0OEtVNGpXY25TSmpPN1B2ZWFs?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-29T13:11:43.481049+00:00",
-   "title_ru": "КОММЕНТАРИЙ: Наибольшее влияние на рынок промежуточных выборов в США может оказать обратный отсчет до 2028 года."
-  },
-  {
-   "title": "Monetary policy decisions",
-   "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.mp261029~9a493adf17.en.html",
-   "sources": [
-    "ECB"
-   ],
-   "score": 7,
-   "ts": "2026-10-29T13:16:43.545939+00:00",
-   "title_ru": "Решения денежно-кредитной политики",
-   "tags": [
-    "rates"
-   ]
-  },
   {
    "title": "ECB Holds Rates as Lagarde Exit Compounds Alarm Over Oil, France",
    "link": "https://www.bloomberg.com/news/articles/2026-10-29/ecb-holds-rates-as-lagarde-exit-compounds-alarm-over-oil-france",
@@ -6779,6 +6742,21 @@
    "lead_ru": "Государственный долг Америки превысил $ 40 трлн, а постоянный дефицит оказывает повышательное давление на долгосрочные процентные ставки.",
    "tags": [
     "rates"
+   ]
+  },
+  {
+   "title": "OPEC+ Leaves Oil Output Targets Unchanged for December",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-01/opec-leaves-oil-output-targets-unchanged-for-december",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 9,
+   "ts": "2026-11-01T13:20:20.168682+00:00",
+   "title_ru": "ОПЕК+ оставила цели по добыче нефти без изменений на декабрь",
+   "lead": "Seven members of the OPEC+ group of oil producers agreed to keep output quotas unchanged in December, after unwinding the last of their voluntary cuts in September.",
+   "lead_ru": "Семь членов группы производителей нефти ОПЕК+ согласились сохранить квоты на добычу без изменений в декабре после отмены последнего из добровольных сокращений в сентябре.",
+   "tags": [
+    "oil"
    ]
   }
  ],
@@ -13681,8 +13659,8 @@
    "0001213900-26-114611",
    "0001213900-26-114604",
    "0001823940-26-000012",
-   "0000091440-26-000174",
    "0001214659-26-013568",
+   "0000091440-26-000174",
    "0001628280-26-068637",
    "0001193125-26-442201",
    "0001493152-26-049492",
