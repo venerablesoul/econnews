@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "b0f97d4e974578b5": "2026-10-29T04:11:19.898096+00:00",
-  "c70e93fb9957b530": "2026-10-29T04:16:19.853021+00:00",
-  "64961ab4d8566ab1": "2026-10-29T04:16:19.853021+00:00",
   "eb4b7cc8d3be9a8b": "2026-10-29T04:31:19.868977+00:00",
   "3a9bca43f6157a34": "2026-10-29T04:31:19.868977+00:00",
   "166be665e6e809e2": "2026-10-29T04:36:19.798013+00:00",
@@ -824,35 +821,10 @@
   "bd570558bd354da6": "2026-11-01T02:49:20.916497+00:00",
   "515ff6eaf7b5d4f9": "2026-11-01T02:49:20.916497+00:00",
   "bc6de2973c2c5205": "2026-11-01T02:49:20.916497+00:00",
-  "4b78ada58aaf973c": "2026-11-01T03:04:20.899049+00:00"
+  "4b78ada58aaf973c": "2026-11-01T03:04:20.899049+00:00",
+  "261a727cc27c43d0": "2026-11-01T04:19:20.956066+00:00"
  },
  "recent": [
-  {
-   "title": "AI-related investment, consumers likely boosted US economic growth in third quarter",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOcTdDV05PNFZrWUFsRC1XQ1AtOFkzN0dObHNpSk12QVFfaHZFdFhESXpZaWVIOHRYYlphejgzanJWV2pjRWJ2MXBtUXhRR0ZZN0FCRVVPUUVzUnZWeUxsaDUxdXBVaUpEZWlwUDYwNjVJbEtZcWQyYW9HX0dINFZWY2tOQ294Qk9sMUQ2WHM0MDVLVHFvbXJTeG9Lc1ljamJhZk5yUEFuTGluNlFvTmh2eldOb21RRkR3SjBoYWlhNFB2Zw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-29T04:16:19.853021+00:00",
-   "title_ru": "Инвестиции, связанные с ИИ, потребители, вероятно, ускорили экономический рост в США в третьем квартале"
-  },
-  {
-   "title": "Henderson Land: HK Home Market Resilient to High Rates",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-29/henderson-land-hk-home-market-resilient-to-high-rates-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-29T04:16:19.853021+00:00",
-   "title_ru": "Хендерсон Лэнд: Домашний рынок Гонконга устойчив к высоким ставкам",
-   "lead": "Andrew Fung, CFO at Henderson Land, discusses the impact of higher interest rates on Hong Kong's property market. He also says rental yields are supporting the housing market in the financial hub.",
-   "lead_ru": "Эндрю Фанг, финансовый директор Henderson Land, обсуждает влияние более высоких процентных ставок на рынок недвижимости Гонконга. Он также говорит, что доходность от аренды поддерживает рынок жилья в финансовом центре.",
-   "tags": [
-    "rates",
-    "bonds"
-   ]
-  },
   {
    "title": "Indian shares steady after US Fed holds key rates unchanged; elevated oil weighs",
    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPNHNOY0FUMC13dm8yaFFmRldOSzhIUkZnZGxNT1RidTVlSEN2dUZOODk0QmQ4dGY0cjBObExKUHRsTjFTbTV5dDdIcS1MN1IzRHB5R1d3c0RlR1pqMHJGLW14b1NFMXVjLUI4MnMyY2RJa2U3dTk1Mll4TGNlMGlTeF9GYUxZMVZXVUZCTFd5bVZtUGc0WmZqV1M3NEYtTkY5YmJPMFFUam0yLTN4NjZlUHJxS0ZaTHRhQ045UjR1UQ?oc=5",
@@ -7996,6 +7968,21 @@
    "title_ru": "Экспорт Южной Кореи продлевает устойчивый рост по мере продолжения чип-бума",
    "lead": "South Korea’s exports maintained strong growth in October, with an artificial intelligence-driven boom continuing to power the trade-reliant economy.",
    "lead_ru": "Экспорт Южной Кореи поддерживал сильный рост в октябре, при этом бум, основанный на искусственном интеллекте, продолжал подпитывать экономику, зависящую от торговли."
+  },
+  {
+   "title": "Australia Home Auction Clearance Rate Falls to Six-Year Low",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-01/australia-home-auction-clearance-rate-falls-to-six-year-low",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-01T04:19:20.956066+00:00",
+   "title_ru": "Процент распродаж на аукционах в Австралии упал до шестилетнего минимума",
+   "lead": "Australia’s auction clearance rate fell to a six-year low as a public holiday in Melbourne and the threat of higher interest rates weighed on the nation’s residential real estate market.",
+   "lead_ru": "В Австралии ставка аукционных сборов упала до шестилетнего минимума в качестве государственного праздника в Мельбурне, и угроза более высоких процентных ставок давила на рынок жилой недвижимости страны.",
+   "tags": [
+    "rates"
+   ]
   }
  ],
  "last_digest": "2026-10-31",
