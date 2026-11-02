@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "3e4f4853ede84b8b": "2026-10-30T07:04:40.284179+00:00",
-  "c950da38f32762ee": "2026-10-30T07:04:40.284179+00:00",
-  "35c597381e3e3387": "2026-10-30T07:04:40.284179+00:00",
-  "f3cb3984c74a23cc": "2026-10-30T07:09:40.230913+00:00",
   "3fe07aa08d0ec424": "2026-10-30T07:19:40.230484+00:00",
   "0ae05c65d70e2947": "2026-10-30T07:24:40.225378+00:00",
   "9da5d36257b3e643": "2026-10-30T07:24:40.225378+00:00",
@@ -605,55 +601,11 @@
   "349c9bdc69f0409b": "2026-11-02T06:57:31.220446+00:00",
   "fd6f08a60aafa334": "2026-11-02T06:57:31.220446+00:00",
   "394a927bc50cfa53": "2026-11-02T07:02:31.241670+00:00",
-  "04914a1c3387ff17": "2026-11-02T07:02:31.241670+00:00"
+  "04914a1c3387ff17": "2026-11-02T07:02:31.241670+00:00",
+  "e6de4236ad80b7d0": "2026-11-02T07:12:31.238929+00:00",
+  "7409ede02a8c42d7": "2026-11-02T07:12:31.238929+00:00"
  },
  "recent": [
-  {
-   "title": "FTSE 100 Live: UK Stocks Set to Outperform as Tech Sells Off",
-   "link": "https://www.bloomberg.com/news/live-blog/2026-10-30/ftse-100-live-updates-bp-natwest-astrazeneca-pound-bonds-gilts-euro-gdp-budget-news-what-s-moving-uk-markets-right-now-markets-today",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T07:04:40.284179+00:00",
-   "title_ru": "FTSE 100 в реальном времени: акции Великобритании будут расти лучше рынка на фоне распродажи технологий",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "French economy contracts 0.1 per cent in third quarter",
-   "link": "https://www.ft.com/content/6f879bc5-be07-4a66-afea-bcbe73723a9f?syn-25a6b1a6=1",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T07:04:40.284179+00:00",
-   "title_ru": "Экономика Франции сократилась на 0,1% в третьем квартале",
-   "lead": "Eurozone’s second-largest economy is grappling with high energy prices and a surge in borrowing costs",
-   "lead_ru": "Вторая по величине экономика еврозоны борется с высокими ценами на энергоносители и ростом стоимости заимствований."
-  },
-  {
-   "title": "ВТБ завершил 15-летнюю санацию БМ-банка",
-   "link": "https://www.rbc.ru/finances/30/10/2026/6ae34ca46a59b56c1f42da20",
-   "sources": [
-    "RBC"
-   ],
-   "score": 1,
-   "ts": "2026-10-30T07:04:40.284179+00:00"
-  },
-  {
-   "title": "Jio Boosts India to Top of Global IPO Market With Record October",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/jio-boosts-india-to-top-of-global-ipo-market-with-record-october",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T07:09:40.230913+00:00",
-   "title_ru": "Jio вывела Индию на вершину мирового рынка IPO с рекордным октябрем",
-   "lead": "India was the world’s top market for initial public offerings in October, thanks to a record month driven by the blockbuster share sale of Jio Platforms Ltd.",
-   "lead_ru": "В октябре Индия стала крупнейшим в мире рынком для первичных публичных размещений акций благодаря рекордному месяцу, обусловленному успешной продажей акций Jio Platforms Ltd."
-  },
   {
    "title": "Trump's tariffs fail to cut US trade deficit, IW report shows",
    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQQXAtelVIRmlkeEJiVmJ1VDVNTWFNOW5Yc3pQQjZFVVVmaGJaRjVzbjdWRlpKNlBKYWVXMmpOV3J4WldwRUs1U3hnalZ2d0wxRnlYbkZ3SVlnSGpfa2RWWE5LQ05GdlNnSmVSeEZsekVPSFNpZTd4QVpNTmcyc2tlRHNuWFlDMXZyUl9SN0hrejlpc3FSSXJMZkVCV296WU51bXZJ?oc=5",
@@ -5354,6 +5306,21 @@
    "title_ru": "Немецкие фирмы Mahle и Schott заявили о поиске банков для IPO в Индии",
    "lead": "Two German companies, Mahle GmbH and Schott Pharma AG, are exploring initial public offerings of their Indian businesses that could raise as much as $400 million each, according to people familiar with the matter, as…",
    "lead_ru": "По словам людей, знакомых с этим вопросом, две немецкие компании, Mahle GmbH и Schott Pharma AG, изучают возможность первичного публичного размещения своих индийских предприятий, которые могут привлечь до $ 400 млн каждая."
+  },
+  {
+   "title": "UAE Oil Boss Calls for More Stockpiles, Refining Closer to Users",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/uae-oil-boss-calls-for-more-stockpiles-refining-closer-to-users",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T07:12:31.238929+00:00",
+   "title_ru": "Нефтяной босс ОАЭ призывает увеличить запасы, перерабатывая все ближе к потребителям",
+   "lead": "The world needs greater capacity to store oil and produce fuels closer to consumers to tackle the impact of the severe disruption to the Strait of Hormuz, according to the head of the biggest energy company in the United Arab…",
+   "lead_ru": "Мир нуждается в большем потенциале для хранения нефти и производства топлива ближе к потребителям, чтобы справиться с последствиями серьезного разрушения Ормузского пролива, по словам главы крупнейшей энергетической компании в Объединенной Арабской Республике...",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-11-01",
@@ -12236,7 +12203,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-11-02T06:07:31.211256+00:00",
+  "checked": "2026-11-02T07:07:31.249024+00:00",
   "sec_seen": [
    "0001223260-26-000011",
    "0001193125-26-442116",
