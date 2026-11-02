@@ -1,12 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "b21edadab74a2d22": "2026-10-29T23:58:36.878431+00:00",
-  "f78885a1b3d1d944": "2026-10-29T23:58:36.878431+00:00",
-  "5dfdfe0847fcfcd9": "2026-10-29T23:58:36.878431+00:00",
-  "89fc9350a3947365": "2026-10-29T23:58:36.878431+00:00",
-  "cf35eb5ae89459c7": "2026-10-29T23:58:36.878431+00:00",
-  "72430710fb36c2a8": "2026-10-30T00:03:36.885117+00:00",
   "1e6d2ae4710aa44c": "2026-10-30T00:08:36.859628+00:00",
   "33a85f46fdb628af": "2026-10-30T00:13:36.869668+00:00",
   "551f6685b0845981": "2026-10-30T00:13:36.869668+00:00",
@@ -604,74 +598,11 @@
   "80388c93e5c1be2d": "2026-11-01T23:51:37.762555+00:00",
   "45305fa6765dc1bc": "2026-11-01T23:51:37.762555+00:00",
   "c2c64bec82277ce7": "2026-11-01T23:51:37.762555+00:00",
-  "09d32552129f6409": "2026-11-01T23:56:37.690849+00:00"
+  "09d32552129f6409": "2026-11-01T23:56:37.690849+00:00",
+  "b4ec47a37e263b54": "2026-11-02T00:01:37.717445+00:00",
+  "49276b010946e0de": "2026-11-02T00:06:37.729847+00:00"
  },
  "recent": [
-  {
-   "title": "Tokyo Inflation Exceeds BOJ’s 2% Target Before Rate Decision",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-29/tokyo-inflation-exceeds-boj-s-2-target-ahead-of-rate-decision",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 9,
-   "ts": "2026-10-29T23:58:36.878431+00:00",
-   "title_ru": "Инфляция в Токио превысила целевой показатель БАНКА ЯПОНИИ в 2% до принятия решения по ставке",
-   "lead": "The pace of consumer inflation in Tokyo remained well above the Bank of Japan’s 2% target, underscoring persistent price pressures just hours before the central bank’s board is expected to hold its policy settings steady.",
-   "lead_ru": "Темпы потребительской инфляции в Токио оставались значительно выше целевого показателя Банка Японии в 2%, что подчеркивает постоянное ценовое давление всего за несколько часов до того, как ожидается, что правление центрального банка сохранит стабильные параметры своей политики.",
-   "tags": [
-    "rates",
-    "inflation"
-   ]
-  },
-  {
-   "title": "Lagarde quits ECB early to speak on issues outside monetary policy",
-   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5XQW1pRjJaSXFxdnQzMVpDeWxKWVN2bHctRXBqSFV4OWRYYnlfd3RJc21HV3ozZEZiVTZtanNYWV82cDk4aDlULUI0MENrUDg5RldSemc2blF3OE9yN0lodGR1Z3RLazNpY2llajc5ay1xdzNWcVRVOE9R?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 9,
-   "ts": "2026-10-29T23:58:36.878431+00:00",
-   "title_ru": "Лагард досрочно покидает ЕЦБ, чтобы говорить о вопросах, выходящих за рамки денежно-кредитной политики",
-   "tags": [
-    "ECB",
-    "rates"
-   ]
-  },
-  {
-   "title": "Oil Climbs on Signs US May Resume Military Strikes Against Iran",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPbV9tbXFMMlg1cjY2NzhHaWxOS1Y0ZFNYcGhWRFg4RTE1YzhrcW96UDVLdXY2QjNTVG5aajd0ODRhQWVZSFM1X3ZCUVZTbzZpVXhna3F4eF9jcm5aT0ptZkZ1bXRnYzA2TkV3RWNGYm5ta01xODdWRzU2Y1lpY2pHQ1ZCX3hkbDAxcktreEtWSWVWRWV2S2ZMS3BhWGs1QQ?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-29T23:58:36.878431+00:00",
-   "title_ru": "Нефть растет по признакам того, что США могут возобновить военные удары по Ирану",
-   "tags": [
-    "oil"
-   ]
-  },
-  {
-   "title": "Stocks will move 'sideways' through year's end, investor says",
-   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5neVJ6MU53Q2JZMm44MWJsaVF3TFY1TWNoVUlHSzVMdTlDUkZmQnNYbGZoWmJnQWo2cTA1TlhSRVRCZ1JTdlljZ0wyMFY4NGJ1bXlXaHZZU2ljVXM5TmNocEVhWXRsOWM?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-29T23:58:36.878431+00:00",
-   "title_ru": "Акции будут двигаться «вбок» до конца года, говорит инвестор",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "Amazon’s bold cloud forecast isn’t enough to stave off a stock drop",
-   "link": "https://www.marketwatch.com/story/amazons-bold-cloud-forecast-isnt-enough-to-stave-off-a-stock-drop-ee23c1bb?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-29T23:58:36.878431+00:00"
-  },
   {
    "title": "Topix Overhaul Kicks Off: Three Things Investors Need to Know",
    "link": "https://www.bloomberg.com/news/articles/2026-10-29/topix-overhaul-kicks-off-three-things-investors-need-to-know",
@@ -5455,6 +5386,16 @@
     "bonds",
     "crypto"
    ]
+  },
+  {
+   "title": "The Music Industry’s $20 Billion Public Market Problem",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQMHlHNzZZbmtHMUNVOU5ERjEzZzNfb0JzN2I2NXN6dXl6U2ZSVW5Da0twb0xCRU9nc2Qya2UteVkyQm5nMWxMaFQ5OHlqclhyLVJ1S1JOR3hCNWJFYzJJa21PaGc1cnlJd3VyeVJ2Vy1jdzhOc0dpWFZYblVES181dXJyVTZieDBnMFQ3clgwdGVkNWhDdTdqb1hWUk10clhTbTEwRkRnMk40UHc?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T00:06:37.729847+00:00",
+   "title_ru": "Проблема публичного рынка музыкальной индустрии стоимостью 20 миллиардов долларов"
   }
  ],
  "last_digest": "2026-11-01",
@@ -5506,7 +5447,7 @@
   "2026-11-01-21"
  ],
  "calendar": {
-  "fetched": "2026-11-01T18:31:06.404452+00:00",
+  "fetched": "2026-11-02T00:01:37.717445+00:00",
   "events": [
    {
     "title": "Daylight Saving Time Shift",
@@ -5673,7 +5614,7 @@
     "country": "USD",
     "ts": "2026-11-02T15:00:00+00:00",
     "impact": "Medium",
-    "forecast": "54.7",
+    "forecast": "54.5",
     "previous": "54.5"
    },
    {
@@ -5681,7 +5622,7 @@
     "country": "USD",
     "ts": "2026-11-02T15:00:00+00:00",
     "impact": "Low",
-    "forecast": "0.3%",
+    "forecast": "0.4%",
     "previous": "0.9%"
    },
    {
@@ -12318,8 +12259,6 @@
    }
   ],
   "docs": {
-   "20035637": "2026-10-15",
-   "20035660": "2026-10-15",
    "20035490": "2026-10-16",
    "20035551": "2026-10-19",
    "20035671": "2026-10-19",
