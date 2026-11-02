@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "f92ccf6d2ee40ad0": "2026-10-30T22:00:57.473497+00:00",
   "2bc1cf592e278a36": "2026-10-30T22:05:57.534426+00:00",
   "c32d011f86039561": "2026-10-30T22:05:57.534426+00:00",
   "e8c5f2c549ac9ff3": "2026-10-30T22:05:57.534426+00:00",
@@ -582,22 +581,13 @@
   "cb430857d5850dc5": "2026-11-02T22:00:44.451514+00:00",
   "47fea221fcca9969": "2026-11-02T22:00:44.451514+00:00",
   "d350690bbc3e0b93": "2026-11-02T22:00:44.451514+00:00",
-  "2e6279590d813ab4": "2026-11-02T22:00:44.451514+00:00"
+  "2e6279590d813ab4": "2026-11-02T22:00:44.451514+00:00",
+  "24c01e0e944f16f6": "2026-11-02T22:05:44.581013+00:00",
+  "6c60aef9d310b278": "2026-11-02T22:05:44.581013+00:00",
+  "e9beba98e362da41": "2026-11-02T22:05:44.581013+00:00",
+  "6ed5df6e553f4783": "2026-11-02T22:05:44.581013+00:00"
  },
  "recent": [
-  {
-   "title": "GDP based on PPP, share of world",
-   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5jb1FuQmhTU0dJbnQwN2YtOTg3UndWVjJ3Nm5kLUtCNzVob0ZPOFR6V1I2b1A1UTRUcFJOYUlleERZVGNwVC00UkRXbldDZXk3UGNMTHdKcDBPX2VGRkw2S2tfSQ?oc=5",
-   "sources": [
-    "IMF"
-   ],
-   "score": 7,
-   "ts": "2026-10-30T22:00:57.473497+00:00",
-   "title_ru": "ВВП по ППС, доля в мировом",
-   "tags": [
-    "GDP"
-   ]
-  },
   {
    "title": "France Gets Budget Warning as Fitch Turns Negative on Rating",
    "link": "https://www.bloomberg.com/news/articles/2026-10-30/france-gets-budget-warning-as-fitch-turns-negative-on-rating",
@@ -5068,6 +5058,28 @@
    ],
    "score": 1,
    "ts": "2026-11-02T22:00:44.451514+00:00"
+  },
+  {
+   "title": "- Bureau of Labor Statistics (.gov)",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNZFJmQVgwSjdKb2p6c2VTOHJURGIyMTREZHZzdXBLcm1PS0Y2RVlxQkFkblpqYlVSc0Uwbm92d3JrR2dtSkN1TmcwOGtXMzFTLTloUzh0YmdKa0RFQktkSlJHZl9sOEFheTE0U1hsZ0MzRWFQRnlFQ2Z6OU95OGlpU1BneUk4Wkg3eU9FaGVCWGhCOG1ia3QydUNlbFY?oc=5",
+   "sources": [
+    "US Labor Statistics (BLS)"
+   ],
+   "score": 4,
+   "ts": "2026-11-02T22:05:44.581013+00:00",
+   "title_ru": "- Бюро трудовой статистики"
+  },
+  {
+   "title": "Leaked File Put Lenders in Bind Before Acrisure’s Earnings Win",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/leaked-file-put-lenders-in-bind-before-acrisure-s-earnings-win",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T22:05:44.581013+00:00",
+   "title_ru": "Утечка файла ставит кредиторов в зависимость, прежде чем прибыль Acrisure выиграет",
+   "lead": "Insurance brokerage and fintech Acrisure reported third-quarter earnings that showed an improvement in broker retention, after a period in which it inadvertently gave creditors access to an internal spreadsheet then demanded they…",
+   "lead_ru": "Страховая брокерская компания и финтех-компания Acrisure сообщили о доходах за третий квартал, которые показали улучшение удержания брокеров после периода, в течение которого они непреднамеренно предоставили кредиторам доступ к внутренней электронной таблице, а затем потребовали от них..."
   }
  ],
  "last_digest": "2026-11-02",
@@ -8221,6 +8233,22 @@
    },
    {
     "src": "sec",
+    "id": "6ce70ad464b83115",
+    "ticker": "GRX",
+    "company": "Gabelli Healthcare & WellnessRx Trust",
+    "who": "Saba Capital Management, L.p.",
+    "role": "10% owner",
+    "type": "buy",
+    "value": 103285,
+    "shares": 10196,
+    "price": 10.13,
+    "plan": false,
+    "date": "2026-10-30",
+    "disclosed": "2026-11-02",
+    "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000398/0001510281-26-000398-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "bec5561767c62788",
     "ticker": "CLH",
     "company": "CLEAN HARBORS INC",
@@ -8298,6 +8326,38 @@
     "date": "2026-10-29",
     "disclosed": "2026-11-02",
     "link": "https://www.sec.gov/Archives/edgar/data/1162125/000119312526443849/0001193125-26-443849-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "a8a2c036ae60e10a",
+    "ticker": "BLCO",
+    "company": "Bausch & Lomb Corp",
+    "who": "Frederick Munsch",
+    "role": "SVP, Controller and CAO",
+    "type": "sell",
+    "value": 2294067,
+    "shares": 112015,
+    "price": 20.48,
+    "plan": false,
+    "date": "2026-10-29",
+    "disclosed": "2026-11-02",
+    "link": "https://www.sec.gov/Archives/edgar/data/1864367/000186074226000115/0001860742-26-000115-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "f58355ab9f26747c",
+    "ticker": "CUBI",
+    "company": "Customers Bancorp, Inc.",
+    "who": "Jay S Sidhu",
+    "role": "Chair",
+    "type": "sell",
+    "value": 4370195,
+    "shares": 50000,
+    "price": 87.4,
+    "plan": false,
+    "date": "2026-10-29",
+    "disclosed": "2026-11-02",
+    "link": "https://www.sec.gov/Archives/edgar/data/1488813/000122237126000011/0001222371-26-000011-index.htm"
    },
    {
     "src": "sec",
@@ -11962,54 +12022,6 @@
     "date": "2026-10-23",
     "disclosed": "2026-10-26",
     "link": "https://www.sec.gov/Archives/edgar/data/2082930/000208293026000018/0002082930-26-000018-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "a138c81e261917c0",
-    "ticker": "CART",
-    "company": "Maplebear Inc.",
-    "who": "Emily Reuter",
-    "role": "CFO",
-    "type": "sell",
-    "value": 2750000,
-    "shares": 50000,
-    "price": 55.0,
-    "plan": true,
-    "date": "2026-10-23",
-    "disclosed": "2026-10-26",
-    "link": "https://www.sec.gov/Archives/edgar/data/2022050/000202205026000011/0002022050-26-000011-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "cb2c2c48cae24c5b",
-    "ticker": "BPRE",
-    "company": "Bluerock Private Real Estate Fund",
-    "who": "Ramin Kamfar",
-    "role": "Director",
-    "type": "buy",
-    "value": 2126091,
-    "shares": 170320,
-    "price": 12.48,
-    "plan": false,
-    "date": "2026-10-23",
-    "disclosed": "2026-10-26",
-    "link": "https://www.sec.gov/Archives/edgar/data/1551047/000139834426018736/0001398344-26-018736-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "61d764b0df6a309c",
-    "ticker": "PG",
-    "company": "PROCTER & GAMBLE Co",
-    "who": "Paul Gama",
-    "role": "CEO",
-    "type": "sell",
-    "value": 698460,
-    "shares": 4331,
-    "price": 161.27,
-    "plan": false,
-    "date": "2026-10-23",
-    "disclosed": "2026-10-26",
-    "link": "https://www.sec.gov/Archives/edgar/data/2110932/000008042426000260/0000080424-26-000260-index.htm"
    }
   ],
   "docs": {
@@ -12046,40 +12058,36 @@
   },
   "checked": "2026-11-02T22:00:44.451514+00:00",
   "sec_seen": [
-   "0001476267-26-000002",
-   "0001104659-26-121431",
-   "0000882184-26-000136",
    "0000921895-26-002903",
+   "0000313616-26-000216",
    "0000944148-26-000125",
    "0001193125-26-443849",
-   "0001104659-26-121435",
    "0001104659-26-121449",
+   "0000313616-26-000218",
    "0000882184-26-000140",
-   "0001104659-26-121439",
-   "0001104659-26-121429",
-   "0002043317-26-000018",
+   "0002160291-26-000009",
    "0000882184-26-000138",
    "0000882184-26-000137",
-   "0001193125-26-443820",
+   "0002097259-26-000003",
+   "0000313616-26-000215",
+   "0001510281-26-000398",
+   "0000313616-26-000219",
+   "0001222371-26-000011",
    "0001543777-26-000006",
-   "0001626337-26-000013",
-   "0001628280-26-068938",
-   "0001437749-26-034464",
-   "0001207703-26-000002",
-   "0000944148-26-000122",
+   "0000313616-26-000217",
+   "0001914490-26-000002",
+   "0000882184-26-000142",
    "0000944148-26-000124",
-   "0001104659-26-121433",
-   "0002060650-26-000012",
+   "0000882184-26-000141",
    "0000882184-26-000139",
    "0001104659-26-121443",
-   "0000944148-26-000123",
-   "0000882184-26-000135",
+   "0001860742-26-000115",
+   "0000882184-26-000143",
+   "0000313616-26-000214",
    "0001746640-26-000010",
-   "0001492475-26-000002",
+   "0000313616-26-000213",
    "0001104659-26-121451",
-   "0001104659-26-121454",
-   "0001104659-26-121434",
-   "0002042647-26-000016"
+   "0001104659-26-121454"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
