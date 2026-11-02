@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "a664ad024dba66cc": "2026-10-30T15:05:10.592421+00:00",
-  "6e9eb0087c6c1a57": "2026-10-30T15:05:10.592421+00:00",
   "31505ecdd28b1641": "2026-10-30T15:10:10.809030+00:00",
   "5fd6bd38458a51cc": "2026-10-30T15:10:10.809030+00:00",
   "03add1b131295ee3": "2026-10-30T15:15:10.563816+00:00",
@@ -591,38 +589,11 @@
   "795643c6239da581": "2026-11-02T14:33:12.740249+00:00",
   "ca736d7c9fbe6697": "2026-11-02T14:33:12.740249+00:00",
   "30bd5049b6102eb1": "2026-11-02T14:48:12.792407+00:00",
-  "c7b70809c55ddff8": "2026-11-02T14:53:12.733452+00:00"
+  "c7b70809c55ddff8": "2026-11-02T14:53:12.733452+00:00",
+  "a88c1bafcc9235b1": "2026-11-02T15:08:12.762597+00:00",
+  "0543bfd8b9897165": "2026-11-02T15:08:12.762597+00:00"
  },
  "recent": [
-  {
-   "title": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
-   "link": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc261030~e40f864093.en.html",
-   "sources": [
-    "ECB"
-   ],
-   "score": 8,
-   "ts": "2026-10-30T15:05:10.592421+00:00",
-   "title_ru": "Решения, принятые Советом управляющих ЕЦБ (в дополнение к решениям, устанавливающим процентные ставки)",
-   "tags": [
-    "ECB",
-    "rates"
-   ]
-  },
-  {
-   "title": "US Aluminum Group Urges North America to Align on Tariffs",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/us-aluminum-group-urges-north-america-to-align-on-tariffs",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-30T15:05:10.592421+00:00",
-   "title_ru": "Американская алюминиевая группа призывает Северную Америку согласовать тарифы",
-   "lead": "The US aluminum industry’s main trade group is pushing for Canada and Mexico to match Washington’s tariffs on imports of the metal from outside North America, while declining to take a position on whether President Donald Trump’s…",
-   "lead_ru": "Основная торговая группа алюминиевой промышленности США настаивает на том, чтобы Канада и Мексика соответствовали тарифам Вашингтона на импорт металла из-за пределов Северной Америки, одновременно отказываясь занять позицию по поводу того, будет ли президент Дональд Трамп…",
-   "tags": [
-    "tariffs"
-   ]
-  },
   {
    "title": "Outlast: State establishment survival rates from 2000 to 2026",
    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNU0hxNmFZUldJUnpfaDRJbk5idzI5amNZUEc4clpLS21KUnp0bVJiRlM3Ylk4NjJmN1VzbjU5eFB4UHFYeHhOQnlXM3R5QmV3c2VpaGRybF9YNjRzV3dEekNkM0szaTc3V3c4cFN0VGtINE1RX1dpUVlhT3E2QnhQT3hfdDU2c29QcUlPVkN4cm1ObkxMcXgzSWhVSWpGdDg?oc=5",
@@ -5144,6 +5115,26 @@
    "tags": [
     "bonds"
    ]
+  },
+  {
+   "title": "TotalEnergies CEO sees no gas shortage in Europe this winter",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQd2M2U1Z4ejdLX3c0WjZSMXFIbF9IbVpnX3c2cFVlMzdfa0lENEwtRzJJMHdzUVhmbnljMHhMVEZZUDZtelNSREpMZldfc092S1dFMUdzVzJjNTFxX09YaV9OalplOXZ4US13RGs5a29sUU5qMHlTclUwdGxQbFNYVlBZaUx2cGpocjdXOUwwMnlpWWMweDFPdGZ6MHVlS0J4TUItU21fUQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T15:08:12.762597+00:00",
+   "title_ru": "Генеральный директор TotalEnergies не видит дефицита газа в Европе этой зимой"
+  },
+  {
+   "title": "Oracle taps investors for $20 billion to finance AI expansion",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9OVGUyeXVqQlVYMEx3TEhEVHY5ekZLX3paamdqNUF1ek80VE9RZVhuSFl2d3dsVkF6T2JyVFdJdF8xR1FuWU5EdU9OWG03SmRoLUloaEFCc3pGLXFxN0FyOUNnVkM3T3prb1NMYXBOanNGT2RMYjNxcTZsdUEwbGs?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T15:08:12.762597+00:00",
+   "title_ru": "Oracle привлекает инвесторов на $ 20 млрд для финансирования расширения ИИ"
   }
  ],
  "last_digest": "2026-11-01",
@@ -12041,6 +12032,7 @@
    "0001444838-26-000078",
    "0001444838-26-000081",
    "0001444838-26-000079",
+   "0001388767-26-000010",
    "0001444838-26-000076"
   ],
   "errors": {
