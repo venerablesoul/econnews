@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e55c84b60db4da71": "2026-10-30T10:54:40.422070+00:00",
-  "63342d1d775e0ce9": "2026-10-30T10:54:40.422070+00:00",
-  "a40d64394e1aa2f8": "2026-10-30T10:59:40.314027+00:00",
   "816b77ca472dfec1": "2026-10-30T11:04:40.390015+00:00",
   "f7c020ef3dea170b": "2026-10-30T11:04:40.390015+00:00",
   "a5b77a69f6e63586": "2026-10-30T11:09:40.367576+00:00",
@@ -611,29 +608,11 @@
   "a3089f85878a41a2": "2026-11-02T10:38:12.574704+00:00",
   "d5d47d48138800d7": "2026-11-02T10:43:12.562393+00:00",
   "183544ad06c36fd2": "2026-11-02T10:48:12.591682+00:00",
-  "ddcfae13214a9b87": "2026-11-02T10:53:12.595606+00:00"
+  "ddcfae13214a9b87": "2026-11-02T10:53:12.595606+00:00",
+  "356518f1a5cfc5d9": "2026-11-02T10:58:12.563616+00:00",
+  "3a158e8d11035a59": "2026-11-02T11:03:12.597277+00:00"
  },
  "recent": [
-  {
-   "title": "Italy's economy flat in third quarter, misses forecast",
-   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPck1ray1MNmdNLWFVVHlkWTNPNGJrS1VuU1hFUEpJakhZdlUwNXhlUVpJOWd4aTFxcFhhMm1MV29BSzZ6N0pIbEVKTjJiTVVSWVRqbzFReDBzTFJJaVZqNjRkU2FFS0lWLWdqdDltS05FTkJqQUhORUpDYjNOVjNHVjZ0QWZaS01SbERIc0t2NF9XaUdET0N5S3RB?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-30T10:54:40.422070+00:00",
-   "title_ru": "Экономика Италии в третьем квартале не стабилизировалась, что не соответствует прогнозу"
-  },
-  {
-   "title": "How Jio Transformed India's Mobile Internet Economy, One Cheap Byte at a Time",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNUTFDN1A4X2hpSmdScm9EdHE3bTVybHhmRG8wR2hzaU9OSVk0TldWZERsLUFGaDRfVGlENTJNbktfWktUOUpNZWtpVVNTc0hqRzMzekljelBlR2YxVGZsQ1MxYnQ4ZXVrTFJqMzR3VEdjc2dMQjM3SHp6SWtRVWYyeHJjSGlud01LYmIwcFhTRDV2ejd3VzJPSHdyVG1kTUtSdUlSV2RiUmNMZ214WTBsRkljWmZFRGJaa3VnVHRESDVGYktqVnc?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T10:54:40.422070+00:00",
-   "title_ru": "Как Jio изменила экономику мобильного Интернета в Индии: по одному дешевому байту за раз"
-  },
   {
    "title": "Lagarde’s Long Goodbye to ECB Is Finally Ending",
    "link": "https://www.bloomberg.com/news/newsletters/2026-10-30/lagarde-s-long-goodbye-to-ecb-is-finally-ending",
@@ -5331,6 +5310,21 @@
    "score": 3,
    "ts": "2026-11-02T10:53:12.595606+00:00",
    "title_ru": "Согласно индексу PMI, производственная активность в Германии в октябре стабильно растет."
+  },
+  {
+   "title": "Stock Bulls Are Betting on a Bounce After the Midterms",
+   "link": "https://www.bloomberg.com/news/newsletters/2026-11-02/stock-bulls-are-betting-on-a-bounce-after-the-midterms",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T11:03:12.597277+00:00",
+   "title_ru": "Биржевые быки делают ставки на отскок после промежуточных выборов",
+   "lead": "Any post-vote selloff is likely to be short-lived, Morgan Stanley’s Wilson says.",
+   "lead_ru": "Любая распродажа после голосования, скорее всего, будет кратковременной, считает Уилсон из Morgan Stanley.",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-11-01",
