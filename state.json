@@ -594,7 +594,11 @@
   "2144b17e2996bbf2": "2026-11-02T06:07:31.211256+00:00",
   "7b5f8140a5136658": "2026-11-02T06:12:31.259247+00:00",
   "b2ba4c7e95723a67": "2026-11-02T06:12:31.259247+00:00",
-  "0308d036d37abfa6": "2026-11-02T06:12:31.259247+00:00"
+  "0308d036d37abfa6": "2026-11-02T06:12:31.259247+00:00",
+  "33a85f46fdb628af": "2026-11-02T06:17:31.213784+00:00",
+  "4be1e707f4a03c1a": "2026-11-02T06:17:31.213784+00:00",
+  "cb1bdd2595f6edf8": "2026-11-02T06:17:31.213784+00:00",
+  "7b1a076b2c8deb29": "2026-11-02T06:17:31.213784+00:00"
  },
  "recent": [
   {
@@ -5284,6 +5288,18 @@
    ],
    "score": 2,
    "ts": "2026-11-02T06:12:31.259247+00:00"
+  },
+  {
+   "title": "Euronext Joins Industry Push to Integrate Nordic Capital Markets",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/euronext-joins-industry-push-to-integrate-nordic-capital-markets",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T06:17:31.213784+00:00",
+   "title_ru": "Euronext присоединяется к отраслевым усилиям по интеграции скандинавских рынков капитала",
+   "lead": "Stock exchange operator Euronext NV has joined the Nordic Compass alliance, a consortium of three dozen of Northern Europe’s largest companies advocating for closer regional ties.",
+   "lead_ru": "Оператор фондовой биржи Euronext NV присоединился к альянсу Nordic Compass, консорциуму из трех десятков крупнейших компаний Северной Европы, выступающих за более тесные региональные связи."
   }
  ],
  "last_digest": "2026-11-01",
@@ -12216,7 +12232,8 @@
    "0001213900-26-114588"
   ],
   "errors": {
-   "senate": "HTTPError: HTTP Error 403: Forbidden"
+   "senate": "HTTPError: HTTP Error 403: Forbidden",
+   "sec": "TimeoutError: The read operation timed out"
   }
  },
  "cal_actuals": {
