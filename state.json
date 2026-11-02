@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "339daea2ee894310": "2026-10-30T23:01:27.197465+00:00",
   "cfdb374a00c90a1b": "2026-10-30T23:11:27.215507+00:00",
   "d3be7a472d9b1534": "2026-10-30T23:21:27.195119+00:00",
   "7ab5e9422fa33a7f": "2026-10-30T23:21:27.195119+00:00",
@@ -590,18 +589,10 @@
   "eee853ddba22b5ab": "2026-11-02T22:35:44.649749+00:00",
   "453326b850eb702f": "2026-11-02T22:40:44.294849+00:00",
   "bf1dfcc9f50e54ea": "2026-11-02T22:45:44.334503+00:00",
-  "fa39e54281c01c97": "2026-11-02T22:50:44.435859+00:00"
+  "fa39e54281c01c97": "2026-11-02T22:50:44.435859+00:00",
+  "864c333ad956b685": "2026-11-02T23:05:44.318807+00:00"
  },
  "recent": [
-  {
-   "title": "How will the US midterms affect Australian markets?",
-   "link": "https://www.theguardian.com/australia-news/2026/oct/31/how-will-the-us-midterms-affect-australian-markets",
-   "sources": [
-    "The Guardian"
-   ],
-   "score": 2,
-   "ts": "2026-10-30T23:01:27.197465+00:00"
-  },
   {
    "title": "PODCAST: Crypto hack, Tech stocks dip, remembering Patrick Stewart (Updated)",
    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQN29PcDBDVjJ5S3VMc2V2YVVmWmhWMGJfSU5PbjdIRUF4bk54V2RNUk5DZ3NYdTlsOXBwRk0yM0w5OW5uRDJ0SWZNSDMxZlFVOEZ0Q05LSDFvdmQ5VnhoWDNxVDZ2M1BHUkZ3ejFyWWs5ei1vWUZldVdFMDFHY3ItTUEyX012SGhDMmx0ejBnVnNTS0c2TngxRGZSbDdVNF9qdld5b2pWWUxfZlh4SXdhZzFB?oc=5",
@@ -5092,6 +5083,19 @@
    "tags": [
     "China"
    ]
+  },
+  {
+   "title": "COMMENTARY: Trading Day: Oil slump no cure for AI angst",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOaGhtd2c2bVBFVW45RHo5ckdOeU54R1RvWW9DSENRV0pBUzkxNmJrd2VUSzByRG9qMG50a0ROVDhIeWdqd2hHSFpPU29OY0VzTmJWWkVVR3FEVU1zMk8tQkZnTkhHbmpwQk0tazV3bE1rVVFFM0RrWnhlQ1FocDVCZkxyUnhFQVZmLUxGSi1MNjIySFBDZ01mVEwteTBSUXFnbFVYNFRB?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T23:05:44.318807+00:00",
+   "title_ru": "КОММЕНТАРИЙ: Торговый день: спад нефти не лечит тревогу ИИ",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-11-02",
@@ -8082,6 +8086,22 @@
     "date": "2026-11-02",
     "disclosed": "2026-11-02",
     "link": "https://www.sec.gov/Archives/edgar/data/1762583/000090765426000112/0000907654-26-000112-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "bca9ac40ba398e70",
+    "ticker": "AXS",
+    "company": "AXIS CAPITAL HOLDINGS LTD",
+    "who": "Henry B Smith",
+    "role": "Director",
+    "type": "sell",
+    "value": 519392,
+    "shares": 4893,
+    "price": 106.15,
+    "plan": false,
+    "date": "2026-11-02",
+    "disclosed": "2026-11-02",
+    "link": "https://www.sec.gov/Archives/edgar/data/1285737/000128573726000004/0001285737-26-000004-index.htm"
    },
    {
     "src": "sec",
@@ -12018,22 +12038,6 @@
     "date": "2026-10-23",
     "disclosed": "2026-10-27",
     "link": "https://www.sec.gov/Archives/edgar/data/2084606/000208460626000017/0002084606-26-000017-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "6db8d351b3db7563",
-    "ticker": "DAIO",
-    "company": "DATA I/O CORP",
-    "who": "Red Oak Partners, Llc et al.",
-    "role": "10% owner",
-    "type": "buy",
-    "value": 999996,
-    "shares": 373133,
-    "price": 2.68,
-    "plan": false,
-    "date": "2026-10-20",
-    "disclosed": "2026-10-27",
-    "link": "https://www.sec.gov/Archives/edgar/data/1605605/000132553326000012/0001325533-26-000012-index.htm"
    }
   ],
   "docs": {
@@ -12074,13 +12078,15 @@
    "0001573461-26-000006",
    "0001338176-26-000040",
    "0001715287-26-000002",
+   "0001285737-26-000004",
    "0000875045-26-000098",
    "0001193125-26-443951",
-   "0001628280-26-069011",
    "0001902872-26-000003",
+   "0001628280-26-069011",
    "0001674959-26-000002",
    "0001193125-26-443936",
    "0001510281-26-000400",
+   "0001784996-26-000107",
    "0001674335-26-000135",
    "0001548623-26-000005",
    "0002017287-26-000006",
@@ -12097,6 +12103,7 @@
    "0001361555-26-000002",
    "0001915495-26-000003",
    "0001628280-26-069009",
+   "0001928980-26-000005",
    "0001783108-26-000036",
    "0001510281-26-000402",
    "0001628280-26-069008",
