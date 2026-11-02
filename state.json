@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "1e8276be5e120980": "2026-10-30T11:50:10.510985+00:00",
   "9fe28e4dd4550099": "2026-10-30T11:55:10.351868+00:00",
   "43608c0f279afbce": "2026-10-30T12:00:10.607716+00:00",
   "fb1232e10a7991cd": "2026-10-30T12:00:10.607716+00:00",
@@ -611,19 +610,10 @@
   "57d556667abcff71": "2026-11-02T11:43:12.572199+00:00",
   "518be9474eb6193e": "2026-11-02T11:43:12.572199+00:00",
   "35f826948c0e0ab1": "2026-11-02T11:48:12.558819+00:00",
-  "f674e50aaee4076c": "2026-11-02T11:48:12.558819+00:00"
+  "f674e50aaee4076c": "2026-11-02T11:48:12.558819+00:00",
+  "07cf2ed29db489c9": "2026-11-02T11:53:12.574193+00:00"
  },
  "recent": [
-  {
-   "title": "Chip designer MediaTek says AI demand growth will continue 'for sure'",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQTXIzeTN1VVNoSXB4bTY4c3NDc1ZyQldMWVE3ald2NFJEc0JkR0hYTjFxZEluX3FfU0M0Wmk1S0VzZW10NnlJY2xUcmhCd3RBOGNjZFQ1TnN3UHdsOTd6UXQwYk84dGpJbFE3Y1p1WXBPWWRPVHAycXp4Sy1ETzFnU0oxb0VhTXZIanpsV2pZSHU3WGZNQm9mYzc3Q0w1NXB5N2NXd2hyT3BERzhDYzJIckVaZDdCVWs3MVQ5cy1mUQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T11:50:10.510985+00:00",
-   "title_ru": "Разработчик чипов MediaTek говорит, что рост спроса на ИИ «наверняка» продолжится"
-  },
   {
    "title": "China's big banks post fastest quarterly profit growth in years as margins stabilise",
    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNQmM5c1NXZVJPM3d6cFNjMy0zdFVkNkhkUnF2SC1WTEtPcVBqWktreW85aElYd1dBQUJsNkhXbS1hSnNFWFdydDBUV044aDBSWnBZMGRYNWt1eWJOZ0dRbWxvTldxdnBENWtIdnBPVzI0aU5FeF9hSVNIS3hKT3lFbVBUNVQxc1hKcGJJcngtc1VCSHV4Ml9TQ002MmlvbzFGY0JfYzlQdnhNVGs4bTZV?oc=5",
@@ -5359,6 +5349,16 @@
    "tags": [
     "gold"
    ]
+  },
+  {
+   "title": "Manufacturing solid but strain of energy costs, supply disruptions starts to show",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPUDh4RFRpdTE0UWJNVUlwNXRHZlVkT1diR1I2UGtrNk9uZGg2S2g2Rk53ZTBNRnhmbTItS2psV2hwQ0JqM3hvdnFvZ21ESmxkNXhJd2VsTGdGTmpRUEZoR05xYWlNQk9qckpfQWd4U3BTWDRqb29KTTZfRWlyVkpUVlpHZFA3bVFFOHRRcVZVc1NhalpZc3FTVUo1MmxzMUtrZEt5NkV2X2ZJWnFjM2ttYU91SzI4RkFCTjJXOWRKZUhib0VnTUNr?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T11:53:12.574193+00:00",
+   "title_ru": "Производство устойчиво, но затраты на электроэнергию растут, начинают проявляться перебои в поставках"
   }
  ],
  "last_digest": "2026-11-01",
@@ -12245,6 +12245,7 @@
   "sec_seen": [
    "0001213900-26-114608",
    "0001213900-26-114611",
+   "0001513845-26-000147",
    "0001213900-26-114604",
    "0001193125-26-442230",
    "0001213900-26-114606",
@@ -12259,7 +12260,6 @@
    "0001731122-26-001386",
    "0001213900-26-114607",
    "0001193125-26-442229",
-   "0001493152-26-049496",
    "0001193125-26-442575",
    "0001213900-26-114603",
    "0001214659-26-013568",
