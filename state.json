@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "ac5b6aeb49767dfe": "2026-10-30T22:36:27.293071+00:00",
   "339daea2ee894310": "2026-10-30T23:01:27.197465+00:00",
   "cfdb374a00c90a1b": "2026-10-30T23:11:27.215507+00:00",
   "d3be7a472d9b1534": "2026-10-30T23:21:27.195119+00:00",
@@ -588,19 +587,10 @@
   "1f796da847fb7428": "2026-11-02T22:30:44.376403+00:00",
   "4b7af1d4a1539ce1": "2026-11-02T22:35:44.649749+00:00",
   "4d67d46f24799935": "2026-11-02T22:35:44.649749+00:00",
-  "eee853ddba22b5ab": "2026-11-02T22:35:44.649749+00:00"
+  "eee853ddba22b5ab": "2026-11-02T22:35:44.649749+00:00",
+  "453326b850eb702f": "2026-11-02T22:40:44.294849+00:00"
  },
  "recent": [
-  {
-   "title": "Business Employment Dynamics in Montana — First Quarter 2026",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPUTRoZDNTNFdIOWtZenI2dWd3RFJoQ1ZxdWpLckk2bERndG5haFQtb3ptcE1iU1JFVFJ6cW1Ud2N1Vk8xWFN2MTBIN3NLbTZIamZZNTdseDJ5dTZidm5yblRkWEo3NnRHeTlhVWRveWgxcTk2THl2ZjV3VC00RFFMNWQ1RlJnblFRVE5xUVAxWndfMmxQUmRqZUNUenJYd2dFalR3NjZEN2xoUHRuWVE?oc=5",
-   "sources": [
-    "US Labor Statistics (BLS)"
-   ],
-   "score": 4,
-   "ts": "2026-10-30T22:36:27.293071+00:00",
-   "title_ru": "Динамика занятости в сфере бизнеса в Монтане — первый квартал 2026 г."
-  },
   {
    "title": "How will the US midterms affect Australian markets?",
    "link": "https://www.theguardian.com/australia-news/2026/oct/31/how-will-the-us-midterms-affect-australian-markets",
@@ -5085,6 +5075,21 @@
     "oil",
     "markets"
    ]
+  },
+  {
+   "title": "Европа опасается «зомби-предприятий» // Перепроизводство в КНР пугает партнеров по торговле, но не Пекин",
+   "link": "https://www.kommersant.ru/doc/9079398",
+   "sources": [
+    "Kommersant"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T22:40:44.294849+00:00",
+   "title_en": "Europe is afraid of \"zombie enterprises\" // Overproduction in China scares trading partners, but not Beijing",
+   "lead": "В Европе вновь говорят о том, что наплыв китайских товаров может привести к сокращению местного производства — такое предупреждение содержит опубликованный 2 ноября доклад одного из комитетов парламента Великобритании.",
+   "lead_en": "In Europe, they again say that the influx of Chinese goods can lead to a reduction in local production — such a warning is contained in a report published on November 2 by a committee of the British Parliament.",
+   "tags": [
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-11-02",
@@ -8267,6 +8272,22 @@
     "date": "2026-10-30",
     "disclosed": "2026-11-02",
     "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000398/0001510281-26-000398-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "76254e5bc216342c",
+    "ticker": "MXF",
+    "company": "MEXICO EQUITY & INCOME FUND INC",
+    "who": "Saba Capital Management, L.p.",
+    "role": "10% owner",
+    "type": "buy",
+    "value": 787183,
+    "shares": 39044,
+    "price": 20.16,
+    "plan": false,
+    "date": "2026-10-30",
+    "disclosed": "2026-11-02",
+    "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000400/0001510281-26-000400-index.htm"
    },
    {
     "src": "sec",
@@ -12011,22 +12032,6 @@
     "date": "2026-10-26",
     "disclosed": "2026-10-26",
     "link": "https://www.sec.gov/Archives/edgar/data/1595855/000149315226048591/0001493152-26-048591-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "420041ec632da7c2",
-    "ticker": "KRRO",
-    "company": "Korro Bio, Inc.",
-    "who": "Lynx1 Capital Management Lp et al.",
-    "role": "10% owner",
-    "type": "buy",
-    "value": 884752,
-    "shares": 79809,
-    "price": 11.09,
-    "plan": false,
-    "date": "2026-10-26",
-    "disclosed": "2026-10-26",
-    "link": "https://www.sec.gov/Archives/edgar/data/1910456/000090266426004286/0000902664-26-004286-index.htm"
    }
   ],
   "docs": {
@@ -12065,22 +12070,32 @@
   "sec_seen": [
    "0001466026-26-000104",
    "0001040470-26-000325",
-   "0001193125-26-443915",
+   "0001698291-26-000006",
+   "0001715287-26-000002",
+   "0001573461-26-000006",
    "0001078543-26-000003",
+   "0001193125-26-443915",
+   "0000875045-26-000098",
+   "0001902872-26-000003",
+   "0001674959-26-000002",
    "0001193125-26-443898",
-   "0001628280-26-068969",
-   "0001058090-26-000106",
-   "0001510281-26-000399",
+   "0001193125-26-443936",
+   "0001510281-26-000400",
+   "0001548623-26-000005",
+   "0002017287-26-000006",
    "0001193125-26-443902",
-   "0001628280-26-068972",
+   "0001056313-26-000002",
+   "0001680184-26-000002",
    "0001628280-26-068978",
    "0001697225-26-000002",
-   "0001628280-26-068968",
    "0001361555-26-000002",
    "0001754765-26-000008",
-   "0001628280-26-068967",
-   "0000944148-26-000126",
-   "0001853089-26-000012"
+   "0001915495-26-000003",
+   "0001853089-26-000012",
+   "0001548622-26-000003",
+   "0001199872-26-000006",
+   "0001493848-26-000006",
+   "0002031312-26-000002"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
