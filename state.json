@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "1634c7b4a767843a": "2026-10-30T14:55:10.486282+00:00",
-  "8715604258485543": "2026-10-30T15:00:10.644392+00:00",
   "a664ad024dba66cc": "2026-10-30T15:05:10.592421+00:00",
   "6e9eb0087c6c1a57": "2026-10-30T15:05:10.592421+00:00",
   "31505ecdd28b1641": "2026-10-30T15:10:10.809030+00:00",
@@ -596,21 +594,6 @@
   "c7b70809c55ddff8": "2026-11-02T14:53:12.733452+00:00"
  },
  "recent": [
-  {
-   "title": "US tech stocks see sharp falls over AI cost concerns",
-   "link": "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo?at_medium=RSS&at_campaign=rss",
-   "sources": [
-    "BBC"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T14:55:10.486282+00:00",
-   "title_ru": "Акции технологических компаний США резко упали из-за опасений по поводу стоимости ИИ",
-   "lead": "Shares in Intel have continued to fall while the tech-heavy Nasdaq opens at its lowest level in more than two months.",
-   "lead_ru": "Акции Intel продолжают падать, в то время как высокотехнологичный Nasdaq открылся на самом низком уровне за более чем два месяца.",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
    "link": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc261030~e40f864093.en.html",
@@ -12045,10 +12028,20 @@
   },
   "checked": "2026-11-02T14:28:12.752088+00:00",
   "sec_seen": [
-   "0001493152-26-049576",
+   "0001444838-26-000083",
+   "0001444838-26-000084",
    "0001444838-26-000073",
    "0001444838-26-000072",
-   "0000020430-26-000047"
+   "0001444838-26-000080",
+   "0001444838-26-000077",
+   "0001444838-26-000085",
+   "0001444838-26-000075",
+   "0001444838-26-000074",
+   "0001444838-26-000082",
+   "0001444838-26-000078",
+   "0001444838-26-000081",
+   "0001444838-26-000079",
+   "0001444838-26-000076"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
