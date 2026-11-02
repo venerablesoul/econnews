@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "5ad55d0cc3aed1be": "2026-10-30T10:19:40.357467+00:00",
   "409cd9e8df26879b": "2026-10-30T10:24:40.332096+00:00",
   "b4ccdaf88867b00d": "2026-10-30T10:24:40.332096+00:00",
   "dd863a7c6f9f56d7": "2026-10-30T10:29:40.286689+00:00",
@@ -613,7 +612,9 @@
   "e9b7dfa93e3eab42": "2026-11-02T10:08:12.592747+00:00",
   "5649ddcfcbf52ad8": "2026-11-02T10:13:12.565123+00:00",
   "da9c8d35f0e72231": "2026-11-02T10:13:12.565123+00:00",
-  "15a997c27f3ffcd3": "2026-11-02T10:18:12.586398+00:00"
+  "15a997c27f3ffcd3": "2026-11-02T10:18:12.586398+00:00",
+  "a081e98d7a8f1d92": "2026-11-02T10:23:12.555266+00:00",
+  "eb2ff11a896430c7": "2026-11-02T10:23:12.555266+00:00"
  },
  "recent": [
   {
@@ -5381,6 +5382,28 @@
    "score": 3,
    "ts": "2026-11-02T10:18:12.586398+00:00",
    "title_ru": "TotalEnergies купит 30% акций двух малайзийских шельфовых газовых месторождений"
+  },
+  {
+   "title": "UK October manufacturing PMI shows fastest output growth in two years",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPaWkwc1NLeGxObjJOTENlcEVEcDJncGhJUl9BYi0tQWRrVFJzTlpTYWtpVFY5amtlZEk1blZSVGhKYWlkYndlX3l3cVJZbi0tTmdaQXJOdm9MY2RiNzh4TldXbW1Jc0NrVXdaTXhFYmVZWU5TNjRINHl6eC1PWlRVWmcxWVloem9mWGloTGRhLUtOVFZ3b3p0cE9VYU5JTVF3MUpleG5yWEJwN2VfTC1seA?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-11-02T10:23:12.555266+00:00",
+   "title_ru": "Производственный PMI Великобритании в октябре демонстрирует самый быстрый рост производства за два года"
+  },
+  {
+   "title": "UBS’s Fowler Says Market Is Underpricing the Length of AI Cycle",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/ubs-s-fowler-says-market-is-underpricing-the-length-of-ai-cycle",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T10:23:12.555266+00:00",
+   "title_ru": "Фаулер из UBS говорит, что рынок недооценивает длину цикла ИИ",
+   "lead": "Hyperscaler valuations look attractive after the recent AI unwind as the market prices in a shorter AI cycle than is likely to play out, according to Gerry Fowler, chief European equity strategist and head of derivatives at UBS…",
+   "lead_ru": "Оценки гиперскейлеров выглядят привлекательно после недавнего раскручивания ИИ, поскольку рыночные цены в более коротком цикле ИИ, чем это может произойти, по словам Джерри Фаулера, главного европейского стратега по акциям и главы деривативов в UBS..."
   }
  ],
  "last_digest": "2026-11-01",
