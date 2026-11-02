@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "221e7a2180b9eaee": "2026-10-30T12:25:10.461981+00:00",
-  "eb6126e725314f87": "2026-10-30T12:30:10.399223+00:00",
-  "bc143710274c8f93": "2026-10-30T12:30:10.399223+00:00",
   "68e431b161dbab32": "2026-10-30T12:35:10.555318+00:00",
   "23873157ced92387": "2026-10-30T12:35:10.555318+00:00",
   "5ad39845e4d34e98": "2026-10-30T12:40:10.533250+00:00",
@@ -614,28 +611,12 @@
   "482da95692261448": "2026-11-02T12:08:12.622102+00:00",
   "24d40e19126c32b1": "2026-11-02T12:13:12.620832+00:00",
   "5014622a7aa6a5af": "2026-11-02T12:13:12.620832+00:00",
-  "a4762b582e8ad5ca": "2026-11-02T12:13:12.620832+00:00"
+  "a4762b582e8ad5ca": "2026-11-02T12:13:12.620832+00:00",
+  "a40d64394e1aa2f8": "2026-11-02T12:33:12.622881+00:00",
+  "f0273bf516adf51a": "2026-11-02T12:33:12.622881+00:00",
+  "bf4bc3809a32acd2": "2026-11-02T12:33:12.622881+00:00"
  },
  "recent": [
-  {
-   "title": "Euro zone growth beats projections but headwinds mount",
-   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPQ0VVWXZnOW1zb3FvZGREcFJZNnlqZVVTTHpleHhyZEVyNkhCSmtnRTV4bEh6WWZ2eHdyN0ZKNkMwTEpsVERSOFBzNnVLaWNhMTJUQ2QzMzBGUTNhN2l3Uk9mUXRteXY5Y1dFclAtR2QyYWtTV3lPTERQVDlLVlFwY0tZV1ZtTDVOX05HU1QtRnUzTWM?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-30T12:30:10.399223+00:00",
-   "title_ru": "Рост еврозоны бьет прогнозы, но усиливается встречный ветер"
-  },
-  {
-   "title": "This one chart tells you everything you need to know about Exxon, Chevron and BP’s forecasting-beating earnings",
-   "link": "https://www.marketwatch.com/story/this-one-chart-tells-you-everything-you-need-to-know-about-exxon-chevron-and-bps-forecasting-beating-earnings-24babdfc?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-30T12:30:10.399223+00:00"
-  },
   {
    "title": "Employment Cost Index News Release",
    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9LbE81dW9LaUc3Unp0RTBDWDN4R3VqbTJOMDRQYzZLMk00M1I3X2JOM3FmT1daNFhYWUlVeXRLN0FucGs2Sm1mYnJVemt1UlVvUlBucjhhWi1FRTc1TVVTWkF6TXE1QnZXY2c?oc=5",
@@ -5380,6 +5361,36 @@
    ],
    "score": 1,
    "ts": "2026-11-02T12:13:12.620832+00:00"
+  },
+  {
+   "title": "ECB’s Makhlouf Says France Needs to Fix Public Finances",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/ecb-s-makhlouf-says-france-needs-to-fix-public-finances",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T12:33:12.622881+00:00",
+   "title_ru": "Глава ЕЦБ Махлуф заявил, что Франции необходимо привести в порядок государственные финансы",
+   "lead": "France’s politicians need to “get on and fix” the problems facing their economy, Irish central-bank Governor Gabriel Makhlouf said, ruling out immediate intervention by the European Central Bank to shore up the country’s debt.",
+   "lead_ru": "Французским политикам необходимо «приступить к решению» проблем, стоящих перед их экономикой, заявил управляющий центральным банком Ирландии Габриэль Махлуф, исключив немедленное вмешательство Европейского центрального банка для поддержки долга страны.",
+   "tags": [
+    "ECB"
+   ]
+  },
+  {
+   "title": "Marriott Beats as US Demand Helps Boost Outlook; Shares Rise",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/marriott-beats-as-us-demand-helps-boost-outlook-shares-rise",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T12:33:12.622881+00:00",
+   "title_ru": "Marriott бьет, поскольку спрос в США помогает улучшить перспективы; Акции растут",
+   "lead": "Marriott International Inc. reported third-quarter earnings that beat expectations, as bookings surged across the company’s US hotels.",
+   "lead_ru": "Marriott International Inc. сообщила о прибыли в третьем квартале, которая превзошла ожидания, поскольку количество заказов в отелях компании в США резко возросло.",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-11-01",
@@ -12267,7 +12278,6 @@
    "0001213900-26-114608",
    "0001213900-26-114611",
    "0001513845-26-000147",
-   "0001213900-26-114604",
    "0001193125-26-442230",
    "0001213900-26-114606",
    "0001213900-26-114610",
@@ -12277,6 +12287,7 @@
    "0001193125-26-442514",
    "0001193125-26-442557",
    "0001213900-26-114609",
+   "0001213900-26-114660",
    "0001731122-26-001386",
    "0001213900-26-114607",
    "0001193125-26-442229",
