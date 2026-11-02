@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e4239707bd87c056": "2026-10-30T07:34:40.288000+00:00",
   "f849db3be60f20f3": "2026-10-30T07:39:40.244984+00:00",
   "13bf803942331dfd": "2026-10-30T07:44:40.223011+00:00",
   "6588d35a127ba5c4": "2026-10-30T07:44:40.223011+00:00",
@@ -608,21 +607,12 @@
   "0ba4f7a24d23b48a": "2026-11-02T07:32:31.244598+00:00",
   "cb20ae4584a20959": "2026-11-02T07:32:31.244598+00:00",
   "7e258f75da35e5c4": "2026-11-02T07:32:31.244598+00:00",
-  "1799c248bf164584": "2026-11-02T07:32:31.244598+00:00"
+  "1799c248bf164584": "2026-11-02T07:32:31.244598+00:00",
+  "1f7cb61955973ef1": "2026-11-02T07:37:31.222958+00:00",
+  "766e1043bdb930cd": "2026-11-02T07:37:31.222958+00:00",
+  "6414492adbec6ce5": "2026-11-02T07:37:31.222958+00:00"
  },
  "recent": [
-  {
-   "title": "UK House Prices Stagnant as Mortgage Costs Bite, Nationwide Says",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/uk-house-prices-stagnant-as-mortgage-costs-bite-nationwide-says",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T07:34:40.288000+00:00",
-   "title_ru": "Цены на жилье в Великобритании стагнируют из-за укуса ипотеки, говорят в стране",
-   "lead": "UK house prices failed to grow in October, according to one of the country’s largest mortgage lenders, as surging mortgage costs took their toll on prospective buyers.",
-   "lead_ru": "По словам одного из крупнейших ипотечных кредиторов страны, в октябре цены на жилье в Великобритании не выросли, поскольку растущие расходы на ипотеку сказались на потенциальных покупателях."
-  },
   {
    "title": "BP Earnings: Profits Jump as Refining Margins Surge",
    "link": "https://www.bloomberg.com/news/newsletters/2026-10-30/bp-earnings-profits-jump-as-refining-margins-surge",
@@ -5386,6 +5376,46 @@
    ],
    "score": 1,
    "ts": "2026-11-02T07:32:31.244598+00:00"
+  },
+  {
+   "title": "China’s soaring chemical exports threaten new trade war front",
+   "link": "https://www.ft.com/content/2962ad57-cee1-4a63-82ba-17acfc09d812?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 7,
+   "ts": "2026-11-02T07:37:31.222958+00:00",
+   "title_ru": "Растущий экспорт химикатов из Китая угрожает новому фронту торговой войны",
+   "lead": "Output has almost doubled in some key ingredients in five years, putting pressure on foreign rivals",
+   "lead_ru": "Производительность почти удвоилась по некоторым ключевым ингредиентам за пять лет, оказывая давление на иностранных конкурентов",
+   "tags": [
+    "China",
+    "tariffs"
+   ]
+  },
+  {
+   "title": "BOJ Signals Low Hopes for Consumer Spending as Population Falls",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/boj-signals-low-hopes-for-consumer-spending-as-population-falls",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-11-02T07:37:31.222958+00:00",
+   "title_ru": "БАНК ЯПОНИИ сигнализирует о низких надеждах на потребительские расходы в связи с сокращением населения",
+   "lead": "The Bank of Japan signaled that the shrinking of Japan’s population means that it’s increasingly difficult to achieve robust growth in overall consumer spending, suggesting that weak aggregate consumption by itself might not…",
+   "lead_ru": "Банк Японии дал понять, что сокращение населения Японии означает, что все труднее добиться устойчивого роста общих потребительских расходов, предполагая, что слабое совокупное потребление само по себе не может..."
+  },
+  {
+   "title": "Turkish Market Clearinghouse CEO Resigns as Fund Probe Widens",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/turkish-market-clearinghouse-ceo-resigns-as-fund-probe-widens",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T07:37:31.222958+00:00",
+   "title_ru": "Генеральный директор клиринговой палаты турецкого рынка уходит в отставку с расширением расследования деятельности фонда",
+   "lead": "Yunus Arinci, the chief executive officer of Turkey’s settlement and custody bank Takasbank, resigned after being questioned by prosecutors as part of an investigation into the country’s fund crisis, according to people familiar…",
+   "lead_ru": "По словам людей, знакомых с ситуацией, Юнус Аринчи, главный исполнительный директор турецкого расчетного и депозитарного банка Takasbank, подал в отставку после допроса прокурорами в рамках расследования финансового кризиса в стране."
   }
  ],
  "last_digest": "2026-11-01",
@@ -12284,8 +12314,10 @@
    "0001193532-26-000012",
    "0001697362-26-000021",
    "0001628280-26-068639",
+   "0001451763-26-000014",
    "0001493152-26-049498",
    "0001280486-26-000010",
+   "0001193125-26-442229",
    "0001213900-26-114605",
    "0002014293-26-000012",
    "0001824159-26-000015",
@@ -12295,7 +12327,6 @@
    "0001628280-26-068641",
    "0001213900-26-114608",
    "0001477932-26-006563",
-   "0000091440-26-000174",
    "0001628280-26-068637",
    "0001213900-26-114604",
    "0001493152-26-049496",
@@ -12306,15 +12337,14 @@
    "0001193125-26-442142",
    "0001193125-26-442230",
    "0001213900-26-114609",
-   "0001214659-26-013568",
    "0002025268-26-000008",
    "0002014386-26-000026",
    "0002014361-26-000040",
    "0001231919-26-001519",
    "0001213900-26-114611",
    "0001498270-26-000012",
-   "0001193125-26-442229",
-   "0001451763-26-000014",
+   "0000091440-26-000174",
+   "0001214659-26-013568",
    "0001213900-26-114588"
   ],
   "errors": {
