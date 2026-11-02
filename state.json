@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "a23f59bdb57e7e77": "2026-10-30T00:49:13.620187+00:00",
   "c8e1491574775b52": "2026-10-30T00:54:13.698972+00:00",
   "c76b6060c3ee830d": "2026-10-30T01:29:13.626264+00:00",
   "962b7bf8aab1a526": "2026-10-30T01:44:13.633740+00:00",
@@ -595,7 +594,9 @@
   "127d16d19b982a75": "2026-11-02T00:36:37.747880+00:00",
   "9b48f56cdfab6ef4": "2026-11-02T00:36:37.747880+00:00",
   "9cad5430c64dbcd4": "2026-11-02T00:46:37.680469+00:00",
-  "d1e58c025708a8cd": "2026-11-02T00:46:37.680469+00:00"
+  "d1e58c025708a8cd": "2026-11-02T00:46:37.680469+00:00",
+  "e0390dd6fd2179df": "2026-11-02T00:51:37.726000+00:00",
+  "5f72a0f285194b95": "2026-11-02T00:51:37.726000+00:00"
  },
  "recent": [
   {
@@ -5322,6 +5323,29 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "Asia shares bend under AI stress; Apple earnings loom",
+   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPbXpaWVRrQUkzYThuc1E5TnFCUXBTSTV2bHNaR1FhUmdEYnhjSHVneFdpbGhjeENwWlE2WVE1c3FCUV9qeGZzRGNoNFEzdERMblBDb005a2NBV3B2YzdfNF95dGtrVmxiNlJrNFU3UC1BTnZHcVh4a3hna25vdEFkSEtMUQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-11-02T00:51:37.726000+00:00",
+   "title_ru": "Азиатские акции сгибаются под стрессом ИИ; доходы Apple вырисовываются",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "South Korea factory activity growth slows to 8-month low, PMI shows",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQd0piN0pmbXlKU2xFeFFUY2dRYU1weXZyUXBfeUd2YVJxQWNXbTZMR2NvUFdpelVCX014emQ0cklBZFdobGgtWnlXVXZSdDc4bUxpWDFzQ0w2NVZwRERVbllGaVBSZDd1cEZra0c2ZllRbzdOVFRtRDdrckNVNkpaeDlmbjdsTmtoTmd0NWgwUDlxSVZPOWtjMFpVMEZ1RlYxRXRjLWFWWkg3UGphRXl1a1FYZ2sxTTZGWXc?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-11-02T00:51:37.726000+00:00",
+   "title_ru": "Рост производственной активности в Южной Корее замедлился до 8-месячного минимума, показывает PMI"
   }
  ],
  "last_digest": "2026-11-01",
@@ -5342,7 +5366,7 @@
   "MarketWatch": 0,
   "Банк Англии": 0,
   "Bank of England": 0,
-  "Bank of Russia": 0,
+  "Bank of Russia": 1,
   "ECB": 0,
   "Fed": 0,
   "IMF": 0,
@@ -12212,7 +12236,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-11-01T23:46:37.683367+00:00",
+  "checked": "2026-11-02T00:51:37.726000+00:00",
   "sec_seen": [
    "0001193125-26-442196",
    "0001193125-26-442116",
