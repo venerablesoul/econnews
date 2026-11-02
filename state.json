@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "bbe63d13d663883d": "2026-10-30T02:19:13.659141+00:00",
-  "0049e89f0247c3f9": "2026-10-30T02:19:13.659141+00:00",
-  "6743f6a29d4ca192": "2026-10-30T02:19:13.659141+00:00",
-  "3b82b799380f7bdb": "2026-10-30T02:19:13.659141+00:00",
-  "763ee05c7be24b24": "2026-10-30T02:24:13.649501+00:00",
   "18eecaa2591efb77": "2026-10-30T02:29:13.555612+00:00",
   "8ba3317350897417": "2026-10-30T02:29:13.555612+00:00",
   "c7c2a3b1dedcdb95": "2026-10-30T02:29:13.555612+00:00",
@@ -603,42 +598,11 @@
   "2e1562a8eaa409d1": "2026-11-02T01:51:37.677771+00:00",
   "10aa19d8496c8853": "2026-11-02T01:56:37.683488+00:00",
   "0a9627e10909cafd": "2026-11-02T02:01:37.735036+00:00",
-  "38bb6b27ca214688": "2026-11-02T02:06:37.787213+00:00"
+  "38bb6b27ca214688": "2026-11-02T02:06:37.787213+00:00",
+  "ad36f2a91d3d4e4a": "2026-11-02T02:21:37.693709+00:00",
+  "bbe63d13d663883d": "2026-11-02T02:26:37.740654+00:00"
  },
  "recent": [
-  {
-   "title": "Chinese Investors Seek Shelter in Long-Bond ETFs as Stocks Sink",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/chinese-investors-seek-shelter-in-long-bond-etfs-as-stocks-sink",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-30T02:19:13.659141+00:00",
-   "title_ru": "Китайские инвесторы ищут убежище в ETF с длинными облигациями, поскольку акции падают",
-   "lead": "Chinese investors are piling into exchange-traded funds tracking longer-dated government bonds, seeking shelter in a rallying debt market while local stocks keep sliding.",
-   "lead_ru": "Китайские инвесторы вкладывают средства в биржевые фонды, отслеживающие государственные облигации с более длительной датой, в поисках убежища на растущем долговом рынке, в то время как местные акции продолжают падать.",
-   "tags": [
-    "bonds",
-    "markets",
-    "China"
-   ]
-  },
-  {
-   "title": "China’s Oil Majors Get More Firepower for Energy Security Push",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/china-s-oil-majors-get-more-firepower-for-energy-security-push",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T02:19:13.659141+00:00",
-   "title_ru": "Крупнейшие нефтяные компании Китая получают больше огневой мощи для обеспечения энергетической безопасности",
-   "lead": "Improved profits at China’s state-owned oil majors are likely to help them deliver on Beijing’s demands for energy security.",
-   "lead_ru": "Повышение прибыли государственных нефтяных компаний Китая, вероятно, поможет им выполнить требования Пекина в отношении энергетической безопасности.",
-   "tags": [
-    "oil",
-    "China"
-   ]
-  },
   {
    "title": "ANZ Raises Oil Price Forecast as Market Tightens on Iran War",
    "link": "https://www.bloomberg.com/news/articles/2026-10-30/anz-raises-oil-price-forecast-as-market-tightens-on-iran-war",
@@ -5507,7 +5471,7 @@
   "MarketWatch": 0,
   "Банк Англии": 0,
   "Bank of England": 0,
-  "Bank of Russia": 2,
+  "Bank of Russia": 0,
   "ECB": 0,
   "Fed": 0,
   "IMF": 0,
