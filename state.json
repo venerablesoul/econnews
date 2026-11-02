@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "670ab0cc6dff09f6": "2026-10-30T03:24:13.588784+00:00",
-  "b8a7e252cc4c8cfd": "2026-10-30T03:24:13.588784+00:00",
   "b72ed55e969e15c9": "2026-10-30T03:29:13.580134+00:00",
   "432e9de52322e0a0": "2026-10-30T03:34:13.635740+00:00",
   "dc63ee44f2de3265": "2026-10-30T03:49:13.560318+00:00",
@@ -597,34 +595,10 @@
   "c72e24ae69bc4aa9": "2026-11-02T03:11:37.718924+00:00",
   "53798a4ab5245c68": "2026-11-02T03:11:37.718924+00:00",
   "5b72f8de29c30690": "2026-11-02T03:11:37.718924+00:00",
-  "b6aa1fe1aa987231": "2026-11-02T03:16:37.698860+00:00"
+  "b6aa1fe1aa987231": "2026-11-02T03:16:37.698860+00:00",
+  "8cac8238b58ca487": "2026-11-02T03:26:37.714968+00:00"
  },
  "recent": [
-  {
-   "title": "Yen Holds Gains Against Dollar After BOJ Keeps Rates Steady",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/yen-holds-gains-against-dollar-after-boj-keeps-rates-steady",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-30T03:24:13.588784+00:00",
-   "title_ru": "Йена удерживает рост по отношению к доллару после того, как БАНК ЯПОНИИ удерживает ставки на стабильном уровне",
-   "lead": "The yen held gains against the dollar after the Bank of Japan kept interest rates unchanged as expected and indicated that the price trend reaches 2% for the first time.",
-   "lead_ru": "Йена удерживала рост по отношению к доллару после того, как Банк Японии оставил процентные ставки без изменений, как и ожидалось, и указал, что ценовой тренд впервые достигает 2%.",
-   "tags": [
-    "rates",
-    "dollar"
-   ]
-  },
-  {
-   "title": "Reuters увидел угрозу для бюджетов карибских стран из-за требования ЕС",
-   "link": "https://www.rbc.ru/finances/30/10/2026/6ae40ae518ec3d299e9f5672",
-   "sources": [
-    "RBC"
-   ],
-   "score": 2,
-   "ts": "2026-10-30T03:24:13.588784+00:00"
-  },
   {
    "title": "NEWSLETTER: Dispatch from Motor City: fears swirl over tariffs and China",
    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOOTVRVkhYTVhTNTBLbHlOWVRDUS1YUXRwcWRUUmdweEVlX242TmxIamJHekk4cjNTZWpxNzJwWVlDRUh4Mmp2eUZfV3ozTGhZaDJBaWRJSlVLNlNhb3dETGNZVUtPbEktZVdDVGRfc1NKRWtvU3JoVXFVVldjUkdLUmVXb25lRmFxVmlVN0p1cEVGTExEOEJtQWZZa216TlFZX1RnTTEwNmtETXlGVjBybDJUNy1GMTA?oc=5",
@@ -5401,6 +5375,16 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "Singapore’s STTGDC Eyes $2.4 Billion Loan, Adds to AI Debt Binge",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQVVY1czhoc0dTOFRMVzFBY1JuMDZ2VGtkMjdiRmk1RUpudVhaZ3ZXOTRwa1pvRWRmWTJyM21HQWxvZnNpRVMzbTdHcjRsMGp5M1lCeDQ0MlRsY3UzWTdkd3MwQWdobjF1ZEU5VW1BZXA0RnJLZHpVMTliTFhEODRXazI3X2duMV9rTnRxdWNDRndvMEpfNXdXdy1NdERyOW9XRjdOb0RNRGxBVE1yMF8tT2pfYw?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T03:26:37.714968+00:00",
+   "title_ru": "Сингапурский STTGDC планирует получить кредит на сумму 2,4 миллиарда долларов, что увеличит долговой разгул ИИ"
   }
  ],
  "last_digest": "2026-11-01",
@@ -5421,7 +5405,7 @@
   "MarketWatch": 0,
   "Банк Англии": 0,
   "Bank of England": 0,
-  "Bank of Russia": 0,
+  "Bank of Russia": 1,
   "ECB": 0,
   "Fed": 0,
   "IMF": 0,
