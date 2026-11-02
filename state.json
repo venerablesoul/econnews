@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "858bca6466436254": "2026-10-30T20:10:57.475821+00:00",
-  "64b8845cd4769270": "2026-10-30T20:10:57.475821+00:00",
   "60a76ab3648869be": "2026-10-30T20:15:57.558570+00:00",
   "58b4acbf52cfc857": "2026-10-30T20:20:57.292562+00:00",
   "0758348de34f9e51": "2026-10-30T20:25:57.415517+00:00",
@@ -587,22 +585,10 @@
   "e91bb3380283a137": "2026-11-02T19:24:12.610726+00:00",
   "ff7bc5fc1cd3f673": "2026-11-02T19:34:12.727806+00:00",
   "dc8bc3657dcdc271": "2026-11-02T19:44:12.642831+00:00",
-  "cca935faf02ef498": "2026-11-02T20:09:12.787977+00:00"
+  "cca935faf02ef498": "2026-11-02T20:09:12.787977+00:00",
+  "46a7357bb58ce575": "2026-11-02T20:14:13.014984+00:00"
  },
  "recent": [
-  {
-   "title": "FedEx Freight shares surge as analysts back growth targets after quarterly beat",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxONlNGYnNkZ19CeDl0Sk83bmU5U1g3X3dJUC02U2RZY29Nb3F0NWFES2tPRE5LTTRselJZRDMtUFp0Z3NGd0RLYXFhM3ZveFJpYm9vY3dFYUJzanZ6dGxESWNPLV9Qdlh1Z0ZNaGRONW1CLUhSZjhNTDhQTXlyejNHM2Q5bjB2SEZCTXlCUlJFZHg3eXg3OEhFRFB3UGJPaVdRWjNsTG5RTjJWTE9xRkp2WUt2RlF5dWdLYXM3UFdn?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-30T20:10:57.475821+00:00",
-   "title_ru": "Акции FedEx Freight растут, поскольку аналитики поддерживают цели роста после квартального достижения",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Imperial Oil considering moving ahead with Aspen oil sands project earlier than planned",
    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNZThjVm1xcmxyZGVwTUZuQU9ZX21MVkstd1VQX2p2aEVZSWhJM0RMWlJkR0FUM1NPX2JoNHJxT3dGU3g2bXdfUFJiUDcwYVp4cGhsYjVSMTFRUmpJbFVkOTBBME5oTlhFZVhlYk9Kdkw5SHRBWmVkamtrdWM5aVhZWW96Tk93T2dMdE95MXlxWGFPa0g4MkZXLU9vUVhVQ095dmNnYUQ1a2YzTnNLNUdmZF8xVQ?oc=5",
@@ -5072,6 +5058,21 @@
    "title_ru": "Стерлинг дрейфует по мере того, как решение о ставке BoE становится в центре внимания",
    "tags": [
     "rates"
+   ]
+  },
+  {
+   "title": "Big majority of US voters disapprove of Trump’s handling of inflation: FT poll",
+   "link": "https://www.ft.com/content/5ed63d08-66f3-4ad3-9ec7-2ec8b590fc85?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 5,
+   "ts": "2026-11-02T20:14:13.014984+00:00",
+   "title_ru": "Подавляющее большинство избирателей США не одобряют действия Трампа в отношении инфляции: опрос FT",
+   "lead": "On the eve of the midterm elections, Americans say they want politicians who can better handle the economy",
+   "lead_ru": "Накануне промежуточных выборов американцы говорят, что им нужны политики, которые лучше справятся с экономикой",
+   "tags": [
+    "inflation"
    ]
   }
  ],
@@ -11961,8 +11962,11 @@
    "0001368185-26-000006",
    "0001705978-26-000007",
    "0001897970-26-000012",
+   "0002010300-26-000037",
    "0001454944-26-000008",
-   "0002144594-26-000005"
+   "0001628280-26-068819",
+   "0002144594-26-000005",
+   "0002058079-26-000013"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
