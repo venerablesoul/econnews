@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "2c45ee29dd17b271": "2026-10-30T11:14:40.412416+00:00",
-  "634ed43f793359ce": "2026-10-30T11:14:40.412416+00:00",
   "b8e4c6f87b753f45": "2026-10-30T11:19:40.290257+00:00",
   "a362288c218b5dee": "2026-10-30T11:20:10.886531+00:00",
   "a966542e38ed6167": "2026-10-30T11:20:10.886531+00:00",
@@ -611,24 +609,11 @@
   "2ddb0433277f6120": "2026-11-02T11:08:12.604017+00:00",
   "2dba4e5bb0489faa": "2026-11-02T11:13:12.648164+00:00",
   "b31946f715f21535": "2026-11-02T11:13:12.648164+00:00",
-  "ec3d91af77399c93": "2026-11-02T11:13:12.648164+00:00"
+  "ec3d91af77399c93": "2026-11-02T11:13:12.648164+00:00",
+  "3750ff3b0674f609": "2026-11-02T11:18:12.596898+00:00",
+  "4ad95245a24be4d3": "2026-11-02T11:18:12.596898+00:00"
  },
  "recent": [
-  {
-   "title": "AI could hit consumers’ ability to manage their debt. Here’s the trade.",
-   "link": "https://www.marketwatch.com/story/ai-could-hit-consumers-ability-to-manage-their-debt-heres-the-trade-43d1787e?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T11:14:40.412416+00:00",
-   "title_ru": "ИИ может повлиять на способность потребителей управлять своим долгом. Вот торговля.",
-   "lead": "If AI causes workers to lose their jobs then households face credit stress",
-   "lead_ru": "Если ИИ приведет к тому, что работники потеряют работу, домохозяйства столкнутся с кредитным стрессом",
-   "tags": [
-    "jobs"
-   ]
-  },
   {
    "title": "UK Debt Chief Sees Volatility Driving Demand for Short Gilts",
    "link": "https://www.bloomberg.com/news/articles/2026-10-30/uk-debt-chief-sees-volatility-driving-demand-for-short-gilts",
@@ -5342,6 +5327,31 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "How oil prices could average $130 per barrel next year, according to Goldman Sachs",
+   "link": "https://www.marketwatch.com/story/how-oil-prices-could-average-130-per-barrel-next-year-according-to-goldman-sachs-235ce32b?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 5,
+   "ts": "2026-11-02T11:18:12.596898+00:00",
+   "title_ru": "По мнению Goldman Sachs, цены на нефть в следующем году могут составить $130 за баррель",
+   "lead": "Analysts at the investment bank said Brent crude could reach $140 a barrel next year if tensions worsen in the Middle East.",
+   "lead_ru": "Аналитики инвестиционного банка считают, что цена нефти Brent может достичь $140 за баррель в следующем году, если напряженность на Ближнем Востоке ухудшится.",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "US voters in a sour economic mood heading into midterm elections",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNUGRVbTNjVkVkWHA5anlUV0l1YUhUUjM2Zy1DOGg0T2l2V0Zqajl2TzVpUW5Wc2s1ZkF6eTRNSmNNMWZCUEZqM0ZjUHNKQ0NkZkNGdlY3U2xHcWhBTUdzcXBnd2p2Z0VjUWFiQ3JRYkdvbTR2NUdnZUlnZHU4ZjY0OTIxa0NSbGhXWE1Yc1A5VmZHQVQ3aEJzcHhHNFVqVTNFa3RKazBydW9TbnBEUlo0aEM4THZmQQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T11:18:12.596898+00:00",
+   "title_ru": "Американские избиратели в плохом экономическом настроении в преддверии промежуточных выборов"
   }
  ],
  "last_digest": "2026-11-01",
@@ -5362,7 +5372,7 @@
   "MarketWatch": 0,
   "Банк Англии": 0,
   "Bank of England": 0,
-  "Bank of Russia": 0,
+  "Bank of Russia": 1,
   "ECB": 0,
   "Fed": 0,
   "IMF": 0,
@@ -8195,6 +8205,22 @@
    }
   ],
   "insiders": [
+   {
+    "src": "sec",
+    "id": "5e3c2dbfef2ed1af",
+    "ticker": "API",
+    "company": "Agora, Inc.",
+    "who": "Bin Zhao",
+    "role": "CEO",
+    "type": "buy",
+    "value": 81722,
+    "shares": 18524,
+    "price": 4.41,
+    "plan": true,
+    "date": "2026-10-30",
+    "disclosed": "2026-11-02",
+    "link": "https://www.sec.gov/Archives/edgar/data/1843236/000119312526442557/0001193125-26-442557-index.htm"
+   },
    {
     "src": "sec",
     "id": "dee9659a410d4d01",
@@ -12178,22 +12204,6 @@
     "date": "2026-10-23",
     "disclosed": "2026-10-26",
     "link": "https://www.sec.gov/Archives/edgar/data/1625756/000119312526432218/0001193125-26-432218-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "ed856ad858620fc0",
-    "ticker": "PACS",
-    "company": "PACS Group, Inc.",
-    "who": "Jason Hulse Murray",
-    "role": "CEO, 10% owner",
-    "type": "sell",
-    "value": 4000387,
-    "shares": 82613,
-    "price": 48.42,
-    "plan": true,
-    "date": "2026-10-23",
-    "disclosed": "2026-10-26",
-    "link": "https://www.sec.gov/Archives/edgar/data/2014386/000201438626000024/0002014386-26-000024-index.htm"
    }
   ],
   "docs": {
@@ -12238,9 +12248,11 @@
    "0001009759-26-000011",
    "0001628280-26-068639",
    "0001493152-26-049492",
+   "0001193125-26-442547",
    "0001193125-26-442196",
    "0001213900-26-114605",
    "0001193125-26-442514",
+   "0001193125-26-442557",
    "0001493152-26-049498",
    "0001213900-26-114609",
    "0001731122-26-001386",
@@ -12250,7 +12262,6 @@
    "0001628280-26-068641",
    "0001493152-26-049496",
    "0001213900-26-114603",
-   "0001628280-26-068637",
    "0001214659-26-013568",
    "0001193125-26-442228",
    "0001697362-26-000021",
