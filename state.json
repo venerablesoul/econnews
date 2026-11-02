@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "9bd14b503fcad369": "2026-10-30T19:45:57.448462+00:00",
-  "83583db568662751": "2026-10-30T19:50:57.310337+00:00",
-  "4efb54a302f00cce": "2026-10-30T19:50:57.310337+00:00",
   "28866d135f8224d9": "2026-10-30T19:55:57.438817+00:00",
   "cb406d6f85899ddc": "2026-10-30T20:00:57.620520+00:00",
   "858bca6466436254": "2026-10-30T20:10:57.475821+00:00",
@@ -594,50 +591,6 @@
   "dc8bc3657dcdc271": "2026-11-02T19:44:12.642831+00:00"
  },
  "recent": [
-  {
-   "title": "The Fed held interest rates steady, but these officials see more hikes coming soon",
-   "link": "https://www.marketwatch.com/story/the-fed-held-interest-rates-steady-but-these-officials-see-more-hikes-coming-soon-2098bbd8?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 4,
-   "ts": "2026-10-30T19:45:57.448462+00:00",
-   "title_ru": "ФРС сохранила процентные ставки на стабильном уровне, но эти чиновники ожидают дальнейшего повышения в ближайшее время",
-   "lead": "Dallas Fed’s Lorie Logan sees “at least” 50 basis points in additional hikes.",
-   "lead_ru": "Лори Логан из ФРБ Далласа прогнозирует дополнительное повышение ставки «как минимум» на 50 базисных пунктов.",
-   "tags": [
-    "Fed",
-    "rates"
-   ]
-  },
-  {
-   "title": "Canadian dollar extends monthly gain as higher oil prices raise inflation risk",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOX1pUUGVTZUNPbllLVm9EbGdSbkxsUUpYZUo4bXFvYjRnaDlMNnJiYzNsZkRERnJjc0JhWGt2WTYtY2JzeEZxY1MwdEVTbXJEaFhlSERnaUhabXVCTWpSaE9PSkRwdVVMT0NkWE96ZDdLNV9TbU5KVGlqQ0JrRWNXWXAzUl85WHVuMEFQb2JiWnE3aHp0aDhPdkwzeDZleGg1d2VKc3h2d1h6LTEyckdoMURhaU4zSV82TE1YVw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 10,
-   "ts": "2026-10-30T19:50:57.310337+00:00",
-   "title_ru": "Канадский доллар продолжает расти ежемесячно, поскольку более высокие цены на нефть повышают риск инфляции",
-   "tags": [
-    "inflation",
-    "oil",
-    "dollar"
-   ]
-  },
-  {
-   "title": "Pound stands tall as dollar, euro wilt",
-   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOdjkwT0Q2STZxeU5kb3pvNWpQdTFuMVowY0ptVzR4ODhJOWlEdWZKYUxrbU5sSHlOaTFRSEpZbTE0cmJGT3pub21UaE50NWdVOXFSd2g3Rlloem41bFJEY1p1dDJybENzRzRyVm55a1BBa0tDbi1Mdm5pRVY2TURqblJTYkpSZw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-30T19:50:57.310337+00:00",
-   "title_ru": "Фунт растет, как доллар, евро слабеет",
-   "tags": [
-    "dollar"
-   ]
-  },
   {
    "title": "Stock Volatility Surges as Plunge Has Investors Seeking Cover",
    "link": "https://www.bloomberg.com/news/articles/2026-10-30/stock-volatility-surges-as-plunge-has-investors-seeking-cover",
@@ -8154,6 +8107,22 @@
    },
    {
     "src": "sec",
+    "id": "444740bc23cab288",
+    "ticker": "ISRG",
+    "company": "INTUITIVE SURGICAL INC",
+    "who": "Fredrik Widman",
+    "role": "VP Corporate Controller",
+    "type": "sell",
+    "value": 2375628,
+    "shares": 5448,
+    "price": 436.06,
+    "plan": true,
+    "date": "2026-10-30",
+    "disclosed": "2026-11-02",
+    "link": "https://www.sec.gov/Archives/edgar/data/1897970/000189797026000012/0001897970-26-000012-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "bec5561767c62788",
     "ticker": "CLH",
     "company": "CLEAN HARBORS INC",
@@ -8183,6 +8152,22 @@
     "date": "2026-10-29",
     "disclosed": "2026-11-02",
     "link": "https://www.sec.gov/Archives/edgar/data/2070264/000072199426000081/0000721994-26-000081-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "108daacfffc40d13",
+    "ticker": "BY",
+    "company": "BYLINE BANCORP, INC.",
+    "who": "Brogan Ptacin",
+    "role": "HEAD OF COMMERCIAL BANKING",
+    "type": "sell",
+    "value": 626619,
+    "shares": 16100,
+    "price": 38.92,
+    "plan": false,
+    "date": "2026-10-29",
+    "disclosed": "2026-11-02",
+    "link": "https://www.sec.gov/Archives/edgar/data/1702750/000136818526000006/0001368185-26-000006-index.htm"
    },
    {
     "src": "sec",
@@ -11943,38 +11928,6 @@
     "date": "2026-10-23",
     "disclosed": "2026-10-26",
     "link": "https://www.sec.gov/Archives/edgar/data/1280628/000128062826000016/0001280628-26-000016-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "8e527359a9e05d98",
-    "ticker": "ISRG",
-    "company": "INTUITIVE SURGICAL INC",
-    "who": "Fredrik Widman",
-    "role": "VP Corporate Controller",
-    "type": "sell",
-    "value": 1834124,
-    "shares": 4047,
-    "price": 453.21,
-    "plan": true,
-    "date": "2026-10-23",
-    "disclosed": "2026-10-26",
-    "link": "https://www.sec.gov/Archives/edgar/data/1897970/000189797026000010/0001897970-26-000010-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "b96bc0187cc1b00f",
-    "ticker": "ISRG",
-    "company": "INTUITIVE SURGICAL INC",
-    "who": "Craig H Barratt",
-    "role": "Director",
-    "type": "sell",
-    "value": 510370,
-    "shares": 1150,
-    "price": 443.8,
-    "plan": true,
-    "date": "2026-10-23",
-    "disclosed": "2026-10-26",
-    "link": "https://www.sec.gov/Archives/edgar/data/1277620/000127762026000009/0001277620-26-000009-index.htm"
    }
   ],
   "docs": {
@@ -12005,13 +11958,16 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-11-02T18:44:12.704510+00:00",
+  "checked": "2026-11-02T19:49:12.633005+00:00",
   "sec_seen": [
    "0001628280-26-068794",
    "0001186276-26-000014",
    "0001628280-26-068796",
-   "0001628280-26-068793",
-   "0001628280-26-068792"
+   "0001368185-26-000006",
+   "0001705978-26-000007",
+   "0001897970-26-000012",
+   "0001454944-26-000008",
+   "0002144594-26-000005"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
