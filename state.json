@@ -603,7 +603,9 @@
   "44baeb21aa697f89": "2026-11-02T06:52:31.229111+00:00",
   "4587515c5cfcd84a": "2026-11-02T06:52:31.229111+00:00",
   "349c9bdc69f0409b": "2026-11-02T06:57:31.220446+00:00",
-  "fd6f08a60aafa334": "2026-11-02T06:57:31.220446+00:00"
+  "fd6f08a60aafa334": "2026-11-02T06:57:31.220446+00:00",
+  "394a927bc50cfa53": "2026-11-02T07:02:31.241670+00:00",
+  "04914a1c3387ff17": "2026-11-02T07:02:31.241670+00:00"
  },
  "recent": [
   {
@@ -5327,6 +5329,31 @@
    "score": 3,
    "ts": "2026-11-02T06:57:31.220446+00:00",
    "title_ru": "Южноафриканский рэнд в целом стабилен перед производственным опросом, данные о продажах автомобилей"
+  },
+  {
+   "title": "FTSE 100 Live: UK Stocks Set to Lag Europe in Tech Rebound",
+   "link": "https://www.bloomberg.com/news/live-blog/2026-11-02/ftse-100-live-updates-pound-gilts-pmi-data-trump-iran-oil-prices-ryanair-what-s-moving-uk-markets-right-now-markets-today",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T07:02:31.241670+00:00",
+   "title_ru": "FTSE 100 Live: запасы Великобритании отстают от Европы в технологическом отскоке",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "German Firms Mahle, Schott Said to Seek Banks for India IPOs",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/german-firms-mahle-schott-said-to-seek-banks-for-india-ipos",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T07:02:31.241670+00:00",
+   "title_ru": "Немецкие фирмы Mahle и Schott заявили о поиске банков для IPO в Индии",
+   "lead": "Two German companies, Mahle GmbH and Schott Pharma AG, are exploring initial public offerings of their Indian businesses that could raise as much as $400 million each, according to people familiar with the matter, as…",
+   "lead_ru": "По словам людей, знакомых с этим вопросом, две немецкие компании, Mahle GmbH и Schott Pharma AG, изучают возможность первичного публичного размещения своих индийских предприятий, которые могут привлечь до $ 400 млн каждая."
   }
  ],
  "last_digest": "2026-11-01",
@@ -12225,10 +12252,8 @@
    "0001193532-26-000012",
    "0001697362-26-000021",
    "0001628280-26-068639",
-   "0001451763-26-000014",
    "0001493152-26-049498",
    "0001280486-26-000010",
-   "0001193125-26-442229",
    "0001213900-26-114605",
    "0002014293-26-000012",
    "0001824159-26-000015",
@@ -12238,6 +12263,7 @@
    "0001628280-26-068641",
    "0001213900-26-114608",
    "0001477932-26-006563",
+   "0000091440-26-000174",
    "0001628280-26-068637",
    "0001213900-26-114604",
    "0001493152-26-049496",
@@ -12248,19 +12274,19 @@
    "0001193125-26-442142",
    "0001193125-26-442230",
    "0001213900-26-114609",
+   "0001214659-26-013568",
    "0002025268-26-000008",
    "0002014386-26-000026",
    "0002014361-26-000040",
    "0001231919-26-001519",
    "0001213900-26-114611",
    "0001498270-26-000012",
-   "0000091440-26-000174",
-   "0001214659-26-013568",
+   "0001193125-26-442229",
+   "0001451763-26-000014",
    "0001213900-26-114588"
   ],
   "errors": {
-   "senate": "HTTPError: HTTP Error 403: Forbidden",
-   "sec": "TimeoutError: The read operation timed out"
+   "senate": "HTTPError: HTTP Error 403: Forbidden"
   }
  },
  "cal_actuals": {
