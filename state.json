@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "b9c2e85e1ef7774c": "2026-10-30T08:29:40.188359+00:00",
-  "0e621910e6540751": "2026-10-30T08:29:40.188359+00:00",
   "1900f392f00e2d60": "2026-10-30T08:34:40.230270+00:00",
   "833b17bee41e4ac2": "2026-10-30T08:34:40.230270+00:00",
   "a271bafb2b1f8e23": "2026-10-30T08:39:40.239136+00:00",
@@ -605,19 +603,10 @@
   "41cbee2f338cd788": "2026-11-02T08:27:31.232189+00:00",
   "a23eabe9352aa9ce": "2026-11-02T08:27:31.232189+00:00",
   "e3af0b9bb1ca5da8": "2026-11-02T08:27:31.232189+00:00",
-  "56b68014a90eab83": "2026-11-02T08:27:31.232189+00:00"
+  "56b68014a90eab83": "2026-11-02T08:27:31.232189+00:00",
+  "85505a1769e2ef5d": "2026-11-02T08:32:31.261190+00:00"
  },
  "recent": [
-  {
-   "title": "UK house price growth slows to lowest since January 2024",
-   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOQ2paMTA2Z1FBSUtvUHBOSXNKS19ubks3VjFPbGVJNm9FZUZnNmw0QTMzRi02QTRmOG5rWTV3ZkNmVmxPU3A3TkNGZXB3aXpvZ0tVdGVHeWViLS1MXzQwcGpvOEM5ZDJ3ZGFWSzEwNE1nWUJtZ05QWUJKZXJZbGF3Rzlpd1hfVXhyaW9QSnFfX1lPM1VWcWVMNElYNFJOWkU?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T08:29:40.188359+00:00",
-   "title_ru": "Рост цен на жилье в Великобритании замедлился до самого низкого уровня с января 2024 года"
-  },
   {
    "title": "Bleak Friday Looms for Stocks: Market Analysis",
    "link": "https://www.bloomberg.com/news/videos/2026-10-30/bleak-friday-looms-for-stocks-3-minutes-mliv-video",
@@ -5356,6 +5345,21 @@
    "title_ru": "Медленная покупка Китаем сельскохозяйственной продукции США проверяет торговое обязательство на $ 17 млрд",
    "tags": [
     "China"
+   ]
+  },
+  {
+   "title": "This Bounce in Stocks Appears Premature: Market Analysis",
+   "link": "https://www.bloomberg.com/news/videos/2026-11-02/this-bounce-in-stocks-appears-premature-3-minutes-mliv-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-11-02T08:32:31.261190+00:00",
+   "title_ru": "Этот отскок в акциях кажется преждевременным: анализ рынка",
+   "lead": "Anna Edwards, Guy Johnson, Tom Mackenzie and Mark Cudmore break down today's key themes for analysts and investors on \"Bloomberg: The Opening Trade.\" (Source: Bloomberg)",
+   "lead_ru": "Анна Эдвардс, Гай Джонсон, Том Маккензи и Марк Кадмор делятся сегодняшними ключевыми темами для аналитиков и инвесторов в «Bloomberg: The Opening Trade.\" (Источник: Bloomberg)",
+   "tags": [
+    "markets"
    ]
   }
  ],
@@ -12255,10 +12259,8 @@
    "0001193532-26-000012",
    "0001697362-26-000021",
    "0001628280-26-068639",
-   "0001451763-26-000014",
    "0001493152-26-049498",
    "0001280486-26-000010",
-   "0001193125-26-442229",
    "0001213900-26-114605",
    "0002014293-26-000012",
    "0001824159-26-000015",
@@ -12268,6 +12270,7 @@
    "0001628280-26-068641",
    "0001213900-26-114608",
    "0001477932-26-006563",
+   "0000091440-26-000174",
    "0001628280-26-068637",
    "0001213900-26-114604",
    "0001493152-26-049496",
@@ -12278,14 +12281,15 @@
    "0001193125-26-442142",
    "0001193125-26-442230",
    "0001213900-26-114609",
+   "0001214659-26-013568",
    "0002025268-26-000008",
    "0002014386-26-000026",
    "0002014361-26-000040",
    "0001231919-26-001519",
    "0001213900-26-114611",
    "0001498270-26-000012",
-   "0000091440-26-000174",
-   "0001214659-26-013568",
+   "0001193125-26-442229",
+   "0001451763-26-000014",
    "0001213900-26-114588"
   ],
   "errors": {
