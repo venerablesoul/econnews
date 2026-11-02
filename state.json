@@ -606,7 +606,8 @@
   "d573a6157b7690e7": "2026-11-02T12:38:12.691095+00:00",
   "d98a82944221cf16": "2026-11-02T12:38:12.691095+00:00",
   "3bde77e832b5f919": "2026-11-02T12:38:12.691095+00:00",
-  "e78d318710bcad05": "2026-11-02T12:48:12.632386+00:00"
+  "e78d318710bcad05": "2026-11-02T12:48:12.632386+00:00",
+  "ef4b254a8592245e": "2026-11-02T12:58:12.586324+00:00"
  },
  "recent": [
   {
@@ -5280,6 +5281,22 @@
    "score": 3,
    "ts": "2026-11-02T12:38:12.691095+00:00",
    "title_ru": "Capital.com получил одобрение на получение лицензии на рынки капитала Сингапура"
+  },
+  {
+   "title": "Oracle Is Offering $10 Billion of High-Grade Dollar Bonds",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/oracle-is-offering-10-billion-of-high-grade-dollar-bonds",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-11-02T12:58:12.586324+00:00",
+   "title_ru": "Oracle предлагает долларовые облигации высокого качества на сумму $10 млрд.",
+   "lead": "Oracle Corp.",
+   "lead_ru": "Корпорация Оракл.",
+   "tags": [
+    "dollar",
+    "bonds"
+   ]
   }
  ],
  "last_digest": "2026-11-01",
@@ -8164,6 +8181,22 @@
     "date": "2026-10-30",
     "disclosed": "2026-11-02",
     "link": "https://www.sec.gov/Archives/edgar/data/1828098/000121390026114637/0001213900-26-114637-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "98df421d5e5daae6",
+    "ticker": "LSTR",
+    "company": "LANDSTAR SYSTEM INC",
+    "who": "Frank A Lonegro",
+    "role": "CEO",
+    "type": "buy",
+    "value": 714619,
+    "shares": 5000,
+    "price": 142.92,
+    "plan": false,
+    "date": "2026-10-30",
+    "disclosed": "2026-11-02",
+    "link": "https://www.sec.gov/Archives/edgar/data/1653042/000085381626000069/0000853816-26-000069-index.htm"
    },
    {
     "src": "sec",
@@ -12116,22 +12149,6 @@
     "date": "2026-10-23",
     "disclosed": "2026-10-26",
     "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000377/0001510281-26-000377-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "13f5aced5176499e",
-    "ticker": "THRM",
-    "company": "Gentherm Inc",
-    "who": "William T. Presley",
-    "role": "CEO",
-    "type": "buy",
-    "value": 130000,
-    "shares": 5000,
-    "price": 26.0,
-    "plan": false,
-    "date": "2026-10-23",
-    "disclosed": "2026-10-26",
-    "link": "https://www.sec.gov/Archives/edgar/data/1824971/000119312526432207/0001193125-26-432207-index.htm"
    }
   ],
   "docs": {
@@ -12170,13 +12187,13 @@
    "0001193125-26-442230",
    "0001213900-26-114610",
    "0001213900-26-114630",
+   "0000853816-26-000069",
    "0001193125-26-442547",
    "0001193125-26-442514",
    "0001193125-26-442557",
    "0001213900-26-114609",
    "0001213900-26-114660",
    "0001731122-26-001386",
-   "0001213900-26-114607",
    "0001193125-26-442229",
    "0001193125-26-442575",
    "0001214659-26-013568",
