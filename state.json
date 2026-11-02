@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "9fe28e4dd4550099": "2026-10-30T11:55:10.351868+00:00",
-  "43608c0f279afbce": "2026-10-30T12:00:10.607716+00:00",
-  "fb1232e10a7991cd": "2026-10-30T12:00:10.607716+00:00",
   "6c61c312ee3ccbbf": "2026-10-30T12:05:10.463149+00:00",
   "8a516f581745cc9b": "2026-10-30T12:10:10.535394+00:00",
   "fe9884346c9dbe13": "2026-10-30T12:15:10.519024+00:00",
@@ -611,52 +608,13 @@
   "518be9474eb6193e": "2026-11-02T11:43:12.572199+00:00",
   "35f826948c0e0ab1": "2026-11-02T11:48:12.558819+00:00",
   "f674e50aaee4076c": "2026-11-02T11:48:12.558819+00:00",
-  "07cf2ed29db489c9": "2026-11-02T11:53:12.574193+00:00"
+  "07cf2ed29db489c9": "2026-11-02T11:53:12.574193+00:00",
+  "6dcf07e78abe27b3": "2026-11-02T12:03:12.608461+00:00",
+  "5258225d3d6fe4a7": "2026-11-02T12:03:12.608461+00:00",
+  "b85a7eb4f262ab22": "2026-11-02T12:03:12.608461+00:00",
+  "d8305f133a42c73c": "2026-11-02T12:03:12.608461+00:00"
  },
  "recent": [
-  {
-   "title": "China's big banks post fastest quarterly profit growth in years as margins stabilise",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNQmM5c1NXZVJPM3d6cFNjMy0zdFVkNkhkUnF2SC1WTEtPcVBqWktreW85aElYd1dBQUJsNkhXbS1hSnNFWFdydDBUV044aDBSWnBZMGRYNWt1eWJOZ0dRbWxvTldxdnBENWtIdnBPVzI0aU5FeF9hSVNIS3hKT3lFbVBUNVQxc1hKcGJJcngtc1VCSHV4Ml9TQ002MmlvbzFGY0JfYzlQdnhNVGs4bTZV?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-30T11:55:10.351868+00:00",
-   "title_ru": "Крупные банки Китая сообщают о самом быстром за последние годы росте квартальной прибыли на фоне стабилизации рентабельности",
-   "tags": [
-    "China"
-   ]
-  },
-  {
-   "title": "Tech Selloff Intensifies on Earnings; Binance Estimates $6.3B Hacked",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-30/bloomberg-brief-10-30-2026-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 9,
-   "ts": "2026-10-30T12:00:10.607716+00:00",
-   "title_ru": "Tech Selloff интенсифицирует прибыль; Binance оценивает взлом в $ 6,3 млрд",
-   "lead": "US equity futures slump after disappointing earnings from Amazon and Intel. Binance estimates $6.3 billion was stolen in a hack, the largest to hit the digital-asset industry.",
-   "lead_ru": "Фьючерсы на акции в США падают после разочаровывающих доходов от Amazon и Intel. По оценкам Binance, в результате взлома было украдено $ 6,3 млрд, что стало крупнейшим хитом в индустрии цифровых активов.",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "Italy’s Inflation Jump Is Dramatic Result of War, Giorgetti Says",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/italy-s-inflation-jump-is-dramatic-result-of-war-giorgetti-says",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-30T12:00:10.607716+00:00",
-   "title_ru": "Скачок инфляции в Италии - драматический результат войны, говорит Джорджетти",
-   "lead": "Italian Finance Minister Giancarlo Giorgetti says that he’s concerned about surging inflation, which reflects the impact of war in the Middle East.",
-   "lead_ru": "Министр финансов Италии Джанкарло Джорджетти говорит, что он обеспокоен ростом инфляции, который отражает влияние войны на Ближнем Востоке.",
-   "tags": [
-    "inflation"
-   ]
-  },
   {
    "title": "Inside Mexico City’s Housing Theft Crisis",
    "link": "https://www.bloomberg.com/news/videos/2026-10-30/inside-mexico-city-s-housing-theft-crisis",
@@ -5359,6 +5317,58 @@
    "score": 3,
    "ts": "2026-11-02T11:53:12.574193+00:00",
    "title_ru": "Производство устойчиво, но затраты на электроэнергию растут, начинают проявляться перебои в поставках"
+  },
+  {
+   "title": "ECB’s Kazimir Says Markets May Underestimate What’s Needed",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/ecb-s-kazimir-says-markets-may-underestimate-what-s-needed",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-11-02T12:03:12.608461+00:00",
+   "title_ru": "Казимир из ЕЦБ говорит, что рынки могут недооценивать то, что необходимо",
+   "lead": "Investors may not be pricing enough tightening by the European Central Bank, with the energy shock showing no sign of fading and inflation picking up again, according to Governing Council member Peter Kazimir.",
+   "lead_ru": "По мнению члена Управляющего совета Питера Казимира, инвесторы, возможно, не оценят достаточное ужесточение политики Европейского центрального банка, поскольку энергетический шок не имеет признаков затухания, а инфляция снова набирает обороты.",
+   "tags": [
+    "ECB",
+    "inflation"
+   ]
+  },
+  {
+   "title": "Food, Housing Share of Americans’ Expenses Rise to 15-Year High",
+   "link": "https://www.bloomberg.com/news/newsletters/2026-11-02/food-housing-share-of-americans-expenses-rise-to-15-year-high",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T12:03:12.608461+00:00",
+   "title_ru": "Доля расходов американцев на еду и жилье в расходах американцев выросла до 15-летнего максимума",
+   "lead": "Last year, US families on average spent $1,988 more on housing and groceries combined than in 2024.",
+   "lead_ru": "В прошлом году американские семьи в среднем потратили на жилье и продукты на $1988 больше, чем в 2024 году."
+  },
+  {
+   "title": "Trump’s economic populism and the midterm elections",
+   "link": "https://www.bloomberg.com/news/newsletters/2026-11-02/trump-s-economic-populism-and-the-midterm-elections",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T12:03:12.608461+00:00",
+   "title_ru": "Экономический популизм Трампа и промежуточные выборы",
+   "lead": "US lawmakers aren’t the only ones on the ballot Tuesday. So is Trump’s economic populism",
+   "lead_ru": "Американские законодатели не единственные, кто участвует в голосовании во вторник. Как и экономический популизм Трампа"
+  },
+  {
+   "title": "UK’s BII Targets £2.25 Billion for Africa’s Riskiest Markets",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/uk-s-bii-targets-2-25-billion-for-africa-s-riskiest-markets",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T12:03:12.608461+00:00",
+   "title_ru": "BII Великобритании планирует выделить 2,25 миллиарда фунтов стерлингов на самые рискованные рынки Африки",
+   "lead": "British International Investment plans to deploy about £2.25 billion ($3 billion) in some of Africa’s riskiest markets over the next five years, stepping into economies that are largely beyond the reach of the world’s biggest…",
+   "lead_ru": "British International Investment планирует в течение следующих пяти лет разместить около 2,25 миллиарда фунтов стерлингов (3 миллиарда долларов США) на некоторых из самых рискованных рынков Африки, вступая в экономику, которая в значительной степени находится за пределами досягаемости крупнейших в мире…"
   }
  ],
  "last_digest": "2026-11-01",
@@ -5410,7 +5420,7 @@
   "2026-11-02-09"
  ],
  "calendar": {
-  "fetched": "2026-11-02T06:02:31.243972+00:00",
+  "fetched": "2026-11-02T12:03:12.608461+00:00",
   "events": [
    {
     "title": "Daylight Saving Time Shift",
@@ -5479,7 +5489,7 @@
    {
     "title": "Retail Sales y/y",
     "country": "CHF",
-    "ts": "2026-11-02T07:30:00+00:00",
+    "ts": "2026-11-02T07:33:00+00:00",
     "impact": "Low",
     "forecast": "3.0%",
     "previous": "3.2%"
