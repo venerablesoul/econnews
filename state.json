@@ -597,7 +597,9 @@
   "e0390dd6fd2179df": "2026-11-02T00:51:37.726000+00:00",
   "5f72a0f285194b95": "2026-11-02T00:51:37.726000+00:00",
   "8c5ced6e89d3fa95": "2026-11-02T01:06:37.715981+00:00",
-  "5af5c36db7f04727": "2026-11-02T01:06:37.715981+00:00"
+  "5af5c36db7f04727": "2026-11-02T01:06:37.715981+00:00",
+  "8424febb5cc9d688": "2026-11-02T01:11:37.723962+00:00",
+  "4d60b73363989d69": "2026-11-02T01:11:37.723962+00:00"
  },
  "recent": [
   {
@@ -5361,6 +5363,28 @@
     "dollar",
     "crypto"
    ]
+  },
+  {
+   "title": "Tesla, Samsung oppose new US tariffs on Vietnam as probe deadline nears",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOTUJxSGZ6aEZSWjV4VHFHeVBzTXMxVDFKcEg5OG1sbEdjTkliSDZSS2NvYmlRbUxfQks0eUVUbjJRSktzZVFqWnZTWlplTHM5YjVnUkNESHd4ZmgyRk5ib2lHdlNKYlZlQ3VqUHdvcHZvMjAzYXE2NDZLbnFnel9CZ1FoSHI5Nk1zY3NiTy1tSjhrZ1hZdVRnNVB3eHBfVUticXc1ejZ2cWlhUjR6ajRhTGRsVWVDVV9I?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-11-02T01:11:37.723962+00:00",
+   "title_ru": "Tesla и Samsung выступают против новых тарифов США на Вьетнам, поскольку приближается крайний срок расследования",
+   "tags": [
+    "tariffs"
+   ]
+  },
+  {
+   "title": "Россияне назвали «зарплату мечты»",
+   "link": "https://www.rbc.ru/finances/02/11/2026/6ae6acf25213636976153062",
+   "sources": [
+    "RBC"
+   ],
+   "score": 1,
+   "ts": "2026-11-02T01:11:37.723962+00:00"
   }
  ],
  "last_digest": "2026-11-01",
@@ -5381,7 +5405,7 @@
   "MarketWatch": 0,
   "Банк Англии": 0,
   "Bank of England": 0,
-  "Bank of Russia": 0,
+  "Bank of Russia": 1,
   "ECB": 0,
   "Fed": 0,
   "IMF": 0,
