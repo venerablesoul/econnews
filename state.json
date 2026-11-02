@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "f128be813c118189": "2026-10-30T17:00:59.597506+00:00",
-  "53785dd961581b4a": "2026-10-30T17:05:57.537882+00:00",
   "fb5309b4254af486": "2026-10-30T17:10:57.551050+00:00",
   "1b1accd6d9e9729e": "2026-10-30T17:15:57.527913+00:00",
   "6219eb7ceac1e324": "2026-10-30T17:20:57.522990+00:00",
@@ -580,39 +578,10 @@
   "65b2498246619917": "2026-11-02T16:44:12.655426+00:00",
   "62945b9fe70aabbf": "2026-11-02T16:49:12.721640+00:00",
   "557c6a5a8630c762": "2026-11-02T16:54:12.699095+00:00",
-  "9f8ea0b6fbedfa1c": "2026-11-02T16:59:12.614530+00:00"
+  "9f8ea0b6fbedfa1c": "2026-11-02T16:59:12.614530+00:00",
+  "c68c26db9efa4bec": "2026-11-02T17:09:12.654527+00:00"
  },
  "recent": [
-  {
-   "title": "Fed's Barkin says US central bank's direction 'straightforward,' the question is pace, SiriusXM reports",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNeUlVMFZxeTRfY0dKczFKaFBkU1pEbWZqMTBlcFQ0OTRqcXRzUkFIWk5QcW9VTXgyV0ltVS1rck9lUktWODNDNTRYcUNhUEYtSGZKb1cyRzJ4STczazRDemJkblFEck11VC1iXzBqTkplTW1WS1YzYVZlNXhyQjlMUHh4a0FQNm5pVG05S2NEMHVmNFc3Yko5SlA0SlZjWlNaRUNYMlNwMFdoNjB1a3VwUGFLSmhrT1FwZ3BTbDd5UGE?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-30T17:00:59.597506+00:00",
-   "title_ru": "Глава ФРС Баркин говорит, что направление центрального банка США «прямое», вопрос в темпах, сообщает SiriusXM",
-   "tags": [
-    "Fed"
-   ]
-  },
-  {
-   "title": "Fed’s Musalem Says More Rate Hikes Needed Soon to Tame Inflation",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/fed-s-musalem-says-more-rate-hikes-needed-soon-to-tame-inflation",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 9,
-   "ts": "2026-10-30T17:05:57.537882+00:00",
-   "title_ru": "Мусалем из ФРС говорит, что в ближайшее время необходимо повысить ставки, чтобы обуздать инфляцию",
-   "lead": "Federal Reserve Bank of St. Louis President Alberto Musalem said additional interest-rate increases are needed to bring inflation to the central bank’s target.",
-   "lead_ru": "Президент Федерального резервного банка Сент-Луиса Альберто Мусалем заявил, что для приближения инфляции к цели центрального банка необходимо дополнительное повышение процентных ставок.",
-   "tags": [
-    "Fed",
-    "rates",
-    "inflation"
-   ]
-  },
   {
    "title": "The big winners of the tech wreck are biopharma stocks",
    "link": "https://www.marketwatch.com/story/the-big-winners-of-the-tech-wreck-are-biopharma-stocks-2ac4d175?mod=mw_rss_topstories",
@@ -5038,6 +5007,16 @@
     "bonds",
     "markets"
    ]
+  },
+  {
+   "title": "US to suspend South Africa, Rwanda from duty-free trade access",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTXBRdlBrbE5GVUt6UUhpRWFyUUNFTlBtSTAtdXgyaDA1OFl6ajZTQWg1SGlTakZXRXFNc0x4V1QtMHdmc1Vpb0ZWUGxlai1xR2xJTDd5YnVfZXBuY3ZyU1JDQk5tWU5PMEUwZlV2NGpGamg3SEZ0clF1NzA2R25McW52dzk0aGxLUkVnXzFwNlRpYlY3SlR2ckJnNHZPOUx6ZHNzNg?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T17:09:12.654527+00:00",
+   "title_ru": "США приостановят доступ ЮАР и Руанды к беспошлинной торговле"
   }
  ],
  "last_digest": "2026-11-01",
@@ -11922,6 +11901,7 @@
   },
   "checked": "2026-11-02T16:34:12.706772+00:00",
   "sec_seen": [
+   "0001628280-26-068728",
    "0001628280-26-068723",
    "0000105634-26-000140",
    "0000950157-26-001151",
@@ -11930,6 +11910,7 @@
    "0001408329-26-000004",
    "0001978586-26-000009",
    "0000105634-26-000136",
+   "0001932848-26-000023",
    "0000105634-26-000134",
    "0001193125-26-443094",
    "0001193125-26-443078"
