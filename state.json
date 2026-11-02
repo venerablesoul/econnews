@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "1b1accd6d9e9729e": "2026-10-30T17:15:57.527913+00:00",
   "6219eb7ceac1e324": "2026-10-30T17:20:57.522990+00:00",
   "5db41524081c86e6": "2026-10-30T17:25:57.587205+00:00",
   "8502f06905da9743": "2026-10-30T17:30:57.413191+00:00",
@@ -579,18 +578,12 @@
   "557c6a5a8630c762": "2026-11-02T16:54:12.699095+00:00",
   "9f8ea0b6fbedfa1c": "2026-11-02T16:59:12.614530+00:00",
   "c68c26db9efa4bec": "2026-11-02T17:09:12.654527+00:00",
-  "04a4752d0d5381c1": "2026-11-02T17:14:12.650730+00:00"
+  "04a4752d0d5381c1": "2026-11-02T17:14:12.650730+00:00",
+  "e2533c2072d3b27d": "2026-11-02T17:19:12.741950+00:00",
+  "53fa13bb592a01b0": "2026-11-02T17:19:12.741950+00:00",
+  "a4c2a3d9375a3676": "2026-11-02T17:19:12.741950+00:00"
  },
  "recent": [
-  {
-   "title": "The big winners of the tech wreck are biopharma stocks",
-   "link": "https://www.marketwatch.com/story/the-big-winners-of-the-tech-wreck-are-biopharma-stocks-2ac4d175?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-30T17:15:57.527913+00:00"
-  },
   {
    "title": "Bessemer Trust CEO: Constructive on Markets",
    "link": "https://www.bloomberg.com/news/videos/2026-10-30/bessemer-trust-ceo-constructive-on-markets-video",
@@ -5029,6 +5022,16 @@
    "title_ru": "ЮАР и Руанда теряют доступ к преференциальному торговому соглашению США",
    "lead": "South Africa and Rwanda have lost their eligibility to the African Growth and Opportunity Act, a preferential US trade agreement that Pretoria had lobbied hard to retain.",
    "lead_ru": "Южная Африка и Руанда утратили право на участие в Законе о росте и возможностях Африки, преференциальном торговом соглашении с США, сохранение которого Претория упорно лоббировала."
+  },
+  {
+   "title": "Marriott lifts annual room revenue growth forecast on resilient travel demand",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNTGxOdWtmZFRkOWRncVNxdmFMOEh6V2c4SzB1dTFRam9FMmhwVlJ6VVJfYXl4NENtck02MGFFb2hsdkpBZXNfTm1yM0FNVHB3eUJPZm8xRkZlZEE3R3V3RDdZWVpfa2wxUUpWSDdjQldicjJTdkN5Y1RQLTE2ZWJzOTMzSXNBSjVMaWFZTWEtQlZOMl95S0xzZ2czXzg?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-11-02T17:19:12.741950+00:00",
+   "title_ru": "Marriott повышает годовой прогноз роста доходов от номеров из-за устойчивого спроса на поездки"
   }
  ],
  "last_digest": "2026-11-01",
@@ -11914,17 +11917,18 @@
   "checked": "2026-11-02T16:34:12.706772+00:00",
   "sec_seen": [
    "0001628280-26-068728",
-   "0001193125-26-443078",
+   "0001628280-26-068734",
    "0001628280-26-068723",
    "0000105634-26-000140",
    "0000950157-26-001151",
+   "0001932848-26-000023",
    "0000105634-26-000138",
    "0001408329-26-000004",
-   "0000105634-26-000136",
-   "0001932848-26-000023",
    "0001464277-26-000005",
+   "0000105634-26-000136",
    "0000105634-26-000134",
-   "0001193125-26-443094"
+   "0001193125-26-443094",
+   "0001193125-26-443078"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
