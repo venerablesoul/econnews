@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "b72ed55e969e15c9": "2026-10-30T03:29:13.580134+00:00",
   "432e9de52322e0a0": "2026-10-30T03:34:13.635740+00:00",
   "dc63ee44f2de3265": "2026-10-30T03:49:13.560318+00:00",
   "72c4b01ab25b89d3": "2026-10-30T03:49:13.560318+00:00",
@@ -596,7 +595,8 @@
   "53798a4ab5245c68": "2026-11-02T03:11:37.718924+00:00",
   "5b72f8de29c30690": "2026-11-02T03:11:37.718924+00:00",
   "b6aa1fe1aa987231": "2026-11-02T03:16:37.698860+00:00",
-  "8cac8238b58ca487": "2026-11-02T03:26:37.714968+00:00"
+  "8cac8238b58ca487": "2026-11-02T03:26:37.714968+00:00",
+  "5a60e8c66de6b118": "2026-11-02T03:31:37.711180+00:00"
  },
  "recent": [
   {
@@ -5385,6 +5385,22 @@
    "score": 3,
    "ts": "2026-11-02T03:26:37.714968+00:00",
    "title_ru": "Сингапурский STTGDC планирует получить кредит на сумму 2,4 миллиарда долларов, что увеличит долговой разгул ИИ"
+  },
+  {
+   "title": "Weak China PMIs Spark Fresh Stimulus Bets",
+   "link": "https://www.bloomberg.com/news/videos/2026-11-02/weak-china-pmis-spark-fresh-stimulus-bets-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 7,
+   "ts": "2026-11-02T03:31:37.711180+00:00",
+   "title_ru": "Слабые индексы деловой активности в Китае стимулируют новые стимулы",
+   "lead": "Bloomberg's Minmin Low breaks down why developments in China’s official manufacturing gauge are fueling expectations for another PBOC interest rate cut. (Source: Bloomberg)",
+   "lead_ru": "Минимальный минимум Bloomberg объясняет, почему развитие событий в официальном производственном показателе Китая усиливает ожидания очередного снижения процентной ставки НБК. (Источник: Блумберг)",
+   "tags": [
+    "rates",
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-11-01",
@@ -5405,7 +5421,7 @@
   "MarketWatch": 0,
   "Банк Англии": 0,
   "Bank of England": 0,
-  "Bank of Russia": 1,
+  "Bank of Russia": 0,
   "ECB": 0,
   "Fed": 0,
   "IMF": 0,
