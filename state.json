@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "b1e458e053c33558": "2026-10-30T13:30:10.388228+00:00",
-  "373dc41c1345f620": "2026-10-30T13:30:10.388228+00:00",
-  "9f348fa448a355c2": "2026-10-30T13:35:10.536075+00:00",
-  "31f0a36af2a82e13": "2026-10-30T13:35:10.536075+00:00",
   "853707dc5c9c6fee": "2026-10-30T13:45:10.578588+00:00",
   "a76c7966872c1888": "2026-10-30T13:55:10.556962+00:00",
   "ed955d44c117a77d": "2026-10-30T14:00:10.623346+00:00",
@@ -604,35 +600,6 @@
   "159863cd32c0c4de": "2026-11-02T13:28:12.666481+00:00"
  },
  "recent": [
-  {
-   "title": "Oil Is a Tough Trade for Now, Says Sarah Hunt",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-30/oil-is-a-tough-trade-for-now-says-sarah-hunt-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-30T13:30:10.388228+00:00",
-   "title_ru": "Нефть сейчас — сложная сделка, говорит Сара Хант",
-   "lead": "Sarah Hunt of Alpine Woods Capital Investment talks about selloff in tech stocks and earnings from oil giants Exxon and Chevron.",
-   "lead_ru": "Сара Хант из Alpine Woods Capital Investment рассказывает о распродаже акций технологических компаний и доходах нефтяных гигантов Exxon и Chevron.",
-   "tags": [
-    "oil",
-    "markets"
-   ]
-  },
-  {
-   "title": "New economic data challenges Fed chief's not-too-hot perspective",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNNV9seWt5MjlGeDJNRkdKLWxjUHQyb2R4QmUtM0ZvOU5hUExsYmpuVkhyZ2RnSGtPajEzZEFFRUluX0xHdTlaQ1NKc0JKcXhQTXB6NGJ4VXJ5NVhNWkZzTTU2WFplQl9zWUFtT3hmWG9FQXhyYVBWN1V4MEhoaGVEd2pfQWRDakQxcExBc3VjQmNNSzhEUDZjMEMwQnpVV1NTMEhZb0Q2LWF1SUZi?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-30T13:30:10.388228+00:00",
-   "title_ru": "Новые экономические данные бросают вызов не слишком радужным перспективам главы ФРС",
-   "tags": [
-    "Fed"
-   ]
-  },
   {
    "title": "Spanish minister refuses to resign over second major train crash on his watch",
    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQRV9TX2dvSzg4YWNtOXhJMDAxa2xObng5REx4dXlXNm0yTVZZQ3oycjlxLU05dnBTTFB3SXhuZVlNTUxBT3l1QXdDbTh5MndYNUpUc3pnZ3VZNDcxUm1CMXNkSWF3Tlota2x4eUVJcXBTVWtYWHdFMV83Uk1UR0pmLXA2b3kySEsxWURMOVlhSnZna3gxcGxZSXR3c00yMjJ2VW0tX0VyVGZSQTAySUowZlhLejByY2pvcjJSa2RxdFBHQQ?oc=5",
@@ -12120,12 +12087,12 @@
    "0001213900-26-114637",
    "0001213900-26-114630",
    "0001513845-26-000147",
-   "0001731122-26-001386",
    "0001213900-26-114680",
    "0000853816-26-000069",
+   "0001193125-26-442547",
    "0001978589-26-000007",
    "0001193125-26-442575",
-   "0001193125-26-442547"
+   "0001493152-26-049571"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
