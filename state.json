@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "6a3e5a36a1738410": "2026-10-30T14:50:10.599317+00:00",
-  "e755f7eb31307238": "2026-10-30T14:50:10.599317+00:00",
-  "ff9719cdef9505b7": "2026-10-30T14:50:10.599317+00:00",
-  "e637a9207b1cc695": "2026-10-30T14:50:10.599317+00:00",
   "1634c7b4a767843a": "2026-10-30T14:55:10.486282+00:00",
   "8715604258485543": "2026-10-30T15:00:10.644392+00:00",
   "a664ad024dba66cc": "2026-10-30T15:05:10.592421+00:00",
@@ -595,56 +591,11 @@
   "6182f3fa9968533b": "2026-11-02T14:23:12.622006+00:00",
   "8b606ddfe079283e": "2026-11-02T14:28:12.752088+00:00",
   "795643c6239da581": "2026-11-02T14:33:12.740249+00:00",
-  "ca736d7c9fbe6697": "2026-11-02T14:33:12.740249+00:00"
+  "ca736d7c9fbe6697": "2026-11-02T14:33:12.740249+00:00",
+  "30bd5049b6102eb1": "2026-11-02T14:48:12.792407+00:00",
+  "c7b70809c55ddff8": "2026-11-02T14:53:12.733452+00:00"
  },
  "recent": [
-  {
-   "title": "AI Debt Drives Wedge Between Corporate Bonds and Credit Hedges",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/ai-debt-drives-wedge-between-corporate-bonds-and-credit-hedges",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-30T14:50:10.599317+00:00",
-   "title_ru": "Долг ИИ вбивает клин между корпоративными облигациями и кредитным хеджированием",
-   "lead": "Some of the most popular ways to hedge credit are breaking down just as concerns mount over the flood of artificial intelligence-linked debt.",
-   "lead_ru": "Некоторые из наиболее популярных способов хеджирования кредитов терпят неудачу, поскольку растет обеспокоенность по поводу потока долгов, связанных с искусственным интеллектом.",
-   "tags": [
-    "bonds"
-   ]
-  },
-  {
-   "title": "Investors pull money from US equity funds ahead of earnings reports from AI hyperscalers",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQX25peXVfYi03bjRDTnNWNkRoMGRvR2pSaUZnYlE0dkE1UjVraU4tUjVNbzd6OGU0bXo1Q3pheW45ZElCaWVoU2FlbjNUc0t1Mm8wWXdhVDNlcEZHQTZ5d1BqX2Vtd2RsSGtFcHo3dnNrZExsTWxFem9fREc2MmtaZUN2SGdLVjlxekJBZ3BXX2pWVkhBM3BOSHpJU0ZvUzlqaUFMZlNXTUR6RXJpMGFRLU5MRFVvNzVHRTZWMw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-30T14:50:10.599317+00:00",
-   "title_ru": "Инвесторы забирают деньги из фондов акций США в преддверии отчетов о прибылях от гиперскейлеров ИИ"
-  },
-  {
-   "title": "Trump’s Venezuela Strategy Needs More Than Oil Deals",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNdDh3aVV6bkVnUFpWN3dvclA1emIxOTZlbU9OcFJSVnJQWXRkSUFsVjRucXRKWDFSTzhGbWR0aFlRMmtPYXFJYVdrNENTdDE3TDJuZm85ckJzOTI2WFdkZnJjS3FvSi1OWGk0bkJYVnp4cmtkaXYzN1A5S1hUNGROX1B3RGg4OGx5M0JMaFNJXzhFQmJzM2g2TEZIUzNGZE5iZTZ4WFlUbHRlZw?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T14:50:10.599317+00:00",
-   "title_ru": "Стратегия Трампа в Венесуэле требует большего, чем просто нефтяные сделки",
-   "tags": [
-    "oil"
-   ]
-  },
-  {
-   "title": "Reddit shares on track for largest ever one-day drop — and analysts say the bad news hasn’t ended",
-   "link": "https://www.marketwatch.com/story/reddit-shares-on-track-for-largest-ever-one-day-drop-and-analysts-say-the-bad-news-hasnt-ended-25d46284?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-30T14:50:10.599317+00:00"
-  },
   {
    "title": "US tech stocks see sharp falls over AI cost concerns",
    "link": "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo?at_medium=RSS&at_campaign=rss",
@@ -5196,6 +5147,19 @@
    "lead_ru": "По мнению стратегов JPMorgan Chase & Co., греческие акции пострадают от оттока, поскольку повышение MSCI Inc. статуса страны до развитого рынка вынуждает трейдеров развивающихся рынков продавать акции.",
    "tags": [
     "markets"
+   ]
+  },
+  {
+   "title": "Alphabet kicks off €6 billion bond sale, tests appetite for tech debt",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOSm5nTThDOUxTZDlERFZrWjg0WllEVktOcXZOWGdDQWtvX3VIQXhaWGc5amxQMHdacndmRng1R3pnSko1ZnV5OExhbVVRVGh5c2RtYUw0dmNfODU1NklnbXp1dkx3ZHlpSTAtY01WOGY5SkpFTnRGaXo4OEZ0cVUweTl2bk1hTFFqbC1hM1I1MUVraXdhWVRoTWJkZjJGVDlmSmZEaEs4em0tVkhSUjdRMjlMaU5EQ2M?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T14:53:12.733452+00:00",
+   "title_ru": "Alphabet начинает продажу облигаций на 6 миллиардов евро, проверяя аппетит к технологическим долгам",
+   "tags": [
+    "bonds"
    ]
   }
  ],
@@ -12082,10 +12046,9 @@
   "checked": "2026-11-02T14:28:12.752088+00:00",
   "sec_seen": [
    "0001493152-26-049576",
-   "0001550860-26-000003",
-   "0001493152-26-049574",
-   "0000020430-26-000047",
-   "0000921895-26-002891"
+   "0001444838-26-000073",
+   "0001444838-26-000072",
+   "0000020430-26-000047"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
