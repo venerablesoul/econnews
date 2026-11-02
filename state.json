@@ -589,7 +589,9 @@
   "546c19d9e0079540": "2026-11-02T18:59:12.689297+00:00",
   "7e42553a321c8de9": "2026-11-02T19:09:12.777473+00:00",
   "0c8b9f1e0de8e424": "2026-11-02T19:19:12.599819+00:00",
-  "95a7b98b48ab55f9": "2026-11-02T19:19:12.599819+00:00"
+  "95a7b98b48ab55f9": "2026-11-02T19:19:12.599819+00:00",
+  "89fd21ff30e7fa00": "2026-11-02T19:24:12.610726+00:00",
+  "e91bb3380283a137": "2026-11-02T19:24:12.610726+00:00"
  },
  "recent": [
   {
@@ -5089,6 +5091,33 @@
    "score": 4,
    "ts": "2026-11-02T19:19:12.599819+00:00",
    "title_ru": "Резкий рост грузоперевозок привел к снижению экспорта венесуэльской нефти до восьмимесячного минимума",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "ETF Canadian Market 'Home Biased': Linda Ma",
+   "link": "https://www.bloomberg.com/news/videos/2026-11-02/etf-canadian-market-home-biased-linda-ma-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T19:24:12.610726+00:00",
+   "title_ru": "Канадский рынок ETF «пристрастен к дому»: Линда Ма",
+   "lead": "Linda Ma, director, ETFs & financial products research at National Bank of Canada Capital Markets, joins Scarlet Fu and Eric Balchunas on \"Bloomberg ETF IQ.\" (Source: Bloomberg)",
+   "lead_ru": "Линда Ма, директор по исследованиям ETF и финансовых продуктов Национального банка Канады по рынкам капитала, присоединяется к Скарлет Фу и Эрику Балчунасу в программе «Bloomberg ETF IQ». (Источник: Блумберг)"
+  },
+  {
+   "title": "Carney’s Push to Fast-Track Oil Pipeline Faces Mounting Indigenous Lawsuits",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/carney-s-push-to-fast-track-oil-pipeline-faces-mounting-indigenous-lawsuits",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T19:24:12.610726+00:00",
+   "title_ru": "Попытки Карни ускорить строительство нефтепровода грозят судебными исками со стороны коренных народов",
+   "lead": "Prime Minister Mark Carney faces a wave of court challenges to his decision to fast-track a pipeline project under a legal mechanism his government devised to speed up construction of major infrastructure.",
+   "lead_ru": "Премьер-министру Марку Карни грозит волна судебных оспариваний его решения ускорить строительство трубопровода в соответствии с правовым механизмом, разработанным его правительством для ускорения строительства основной инфраструктуры.",
    "tags": [
     "oil"
    ]
@@ -11977,10 +12006,10 @@
   "checked": "2026-11-02T18:44:12.704510+00:00",
   "sec_seen": [
    "0001628280-26-068788",
-   "0001582473-26-000011",
    "0001628280-26-068787",
    "0000721994-26-000081",
-   "0001628280-26-068783"
+   "0001628280-26-068783",
+   "0001251824-26-000011"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
