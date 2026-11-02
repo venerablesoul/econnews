@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "5766ffdcb4e3eeac": "2026-10-30T18:15:57.387490+00:00",
   "afa1a9b94de69d30": "2026-10-30T18:30:57.623229+00:00",
   "de6dcdb9275a03f7": "2026-10-30T18:30:57.623229+00:00",
   "cfc725c4d274fc07": "2026-10-30T18:35:57.402164+00:00",
@@ -587,22 +586,12 @@
   "40a3d34d96c772dc": "2026-11-02T17:54:12.701648+00:00",
   "0d5c759c50ed4545": "2026-11-02T17:54:12.701648+00:00",
   "5c4b1fcd944d18fc": "2026-11-02T17:54:12.701648+00:00",
-  "4c8385c156581625": "2026-11-02T18:09:13.303850+00:00"
+  "4c8385c156581625": "2026-11-02T18:09:13.303850+00:00",
+  "6e810c1316d3238f": "2026-11-02T18:19:12.629931+00:00",
+  "7c03349bd26f23b5": "2026-11-02T18:19:12.629931+00:00",
+  "07f3e6c3f4a10d47": "2026-11-02T18:19:12.629931+00:00"
  },
  "recent": [
-  {
-   "title": "Pemex Posts $573 Million Loss Even as Oil Prices Have Surged",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQcGZySzhfRGtvR1pwVHc4dnkzRUJPNVNMLUtfNml1bGxlMDBmWW1XaUFndjJxRVVEenlpa2JmMWJuaE80MDJhZkh0REhCUE5SVU1sYklqN1RnQlpCZVBTRWp4OWMzcjVMczZJS0lacl9aSXZKUlpObjd0ZndpMnc4R2EyTXJ6WVFzTUFtRHIzVnhnY2pXaVZFYUtoWlI5cGptb0RjMGszM09xYTBjUzNJ?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-30T18:15:57.387490+00:00",
-   "title_ru": "Pemex сообщила об убытке в $573 млн даже на фоне роста цен на нефть",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "Arini Gets Bids on Junk Debt From Pimco, Oaktree as Losses Mount",
    "link": "https://www.bloomberg.com/news/articles/2026-10-30/arini-gets-bids-on-junk-debt-from-pimco-oaktree-as-losses-mount",
@@ -5075,6 +5064,46 @@
    "score": 3,
    "ts": "2026-11-02T18:09:13.303850+00:00",
    "title_ru": "Binance усиливает стимулы для маркет-мейкеров после взлома рекорда"
+  },
+  {
+   "title": "El Niño Could Raise US Inflation, Boost Jobs in 2027: Fed Study",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/el-nino-could-raise-us-inflation-boost-jobs-in-2027-fed-study",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 7,
+   "ts": "2026-11-02T18:19:12.629931+00:00",
+   "title_ru": "Эль-Ниньо может поднять инфляцию в США и увеличить число рабочих мест в 2027 году: исследование ФРС",
+   "lead": "A powerful warming of Pacific waters this year — a cyclical phenomenon known as El Niño — could push US prices higher and boost employment next year, according to a new economic letter from the Federal Reserve Bank of San…",
+   "lead_ru": "Мощное потепление тихоокеанских вод в этом году — циклическое явление, известное как Эль-Ниньо — может подтолкнуть цены в США выше и повысить занятость в следующем году, согласно новому экономическому письму Федерального резервного банка Сан-Франциско.",
+   "tags": [
+    "Fed",
+    "inflation",
+    "jobs"
+   ]
+  },
+  {
+   "title": "El Nino poses 'meaningful risk' of higher inflation in 2027, SF Fed paper says",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPejhFalhZVDhQYVJiOEVjTHlzNm43MG9qTVJaQUtxS0ZZNHFkNmc4aVFaeHVGZnlBLWZLZXpIWDNJZ0RNYWloZHBybU1OeEdaS1NwVERvQkZIaW02VTNWZmk1ang1WkQ1N3B0aTZMUzVJRjNRNnhXSmV3YXlTaTZtYTVXbGg2V1g1UXVvZkFFY2V0SlNkcEwyQzI4Q0JtQVVFazVZcWdsOVdsaVBwUUJXT1NRazg1N0E?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-11-02T18:19:12.629931+00:00",
+   "title_ru": "Эль-Ниньо представляет собой «значимый риск» более высокой инфляции в 2027 году, говорится в документе SF Fed",
+   "tags": [
+    "Fed",
+    "inflation"
+   ]
+  },
+  {
+   "title": "The bond-market rally is defying the typical investing playbook. Here’s why.",
+   "link": "https://www.marketwatch.com/story/the-bond-market-rally-is-defying-the-typical-investing-playbook-heres-why-17a14342?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 2,
+   "ts": "2026-11-02T18:19:12.629931+00:00"
   }
  ],
  "last_digest": "2026-11-02",
@@ -11960,7 +11989,6 @@
   "checked": "2026-11-02T17:39:12.644048+00:00",
   "sec_seen": [
    "0001801785-26-000013",
-   "0001555392-26-000004",
    "0001965462-26-000002",
    "0001437749-26-034329",
    "0001628280-26-068746"
