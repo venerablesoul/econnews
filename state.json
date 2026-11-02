@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "9886ece9a2193717": "2026-10-30T22:16:27.176228+00:00",
-  "282952cbd46cf265": "2026-10-30T22:16:27.176228+00:00",
   "944a0b5dcb766e35": "2026-10-30T22:26:27.302056+00:00",
   "c5433dfa043a0a65": "2026-10-30T22:26:27.302056+00:00",
   "ac5b6aeb49767dfe": "2026-10-30T22:36:27.293071+00:00",
@@ -584,35 +582,10 @@
   "6ed5df6e553f4783": "2026-11-02T22:05:44.581013+00:00",
   "414b9eb646074084": "2026-11-02T22:10:45.427914+00:00",
   "915383bd55cd1c17": "2026-11-02T22:15:44.332599+00:00",
-  "2bc1cf592e278a36": "2026-11-02T22:15:44.332599+00:00"
+  "2bc1cf592e278a36": "2026-11-02T22:15:44.332599+00:00",
+  "236355f3828fdbea": "2026-11-02T22:20:44.299173+00:00"
  },
  "recent": [
-  {
-   "title": "Binance does not need to sell SpaceX shares to cover losses, co-founder says",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQVmZsWWgydERjZml4UkdNTHZsZlpSSFJWN2pxaTNtZldxcHVIOFhiNHh1d1NhdUpSMjJqWnVZTmtkSjRhQmUtcmltd1VhNElMWm40SWo2OVJraEU0eXFYeklzVmdLdEpFWFRidU9rVWtXRDZJQnJFaldsUVJfN2JxYWNDbkJvVXFTUTY4ZHZrc2I5Zi1oSk9HcnZTLTM3aHdDa0VlRVZtMlJMTFZpQUNDUHVwenBNZGFUdDhvRHFGRFFyRm5sM0h3?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T22:16:27.176228+00:00",
-   "title_ru": "Binance не нужно продавать акции SpaceX, чтобы покрыть убытки, говорит соучредитель",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "UAE says oil leak from tanker has been stopped, pollution eases",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOdk1hbFdualdkZ1gyNF9Ob1VLeE1sLVZyd0hNQ3JwUnFHZXZaWmNPNjd5Rm8wODdVMTdOUXdDMm9JNW5IdVFaeEZrUG0tNzU0SDRtMExfWjBpOEFlY2V1U0R2RFNxdS1pdFZLNGJhS1NhODlBWkhPaFJWWVBpaTk3eW5KOXZvODhPc25ZNlh6T0dOQzBFLUd5aWVlSlJIc1lJTGF3WmhrVnA3VzBGV0hYNg?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T22:16:27.176228+00:00",
-   "title_ru": "В ОАЭ заявили, что утечка нефти из танкера остановлена, загрязнение уменьшилось",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "Fitch revises France's outlook to 'negative' on worsening debt dynamics",
    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPTVVEcXlWOXB3Y19RLXRjRGdaVEJieWlmdWE3akFJTDN2ZER3MUpmR180c2dqcV9iRUZBdVhlWThRR0E5LU1RUUNVaXFxY0lZM2VUWWhNN2pHNlFPM0RuMzdaMXNMSFc2M0NkaWVqOTR5Qy1ZVkYtMnhKUEdrOV9XcWg0UENLT2NHdEtsR2F1eFdKaTlrYjZIZ2pIWE5BYnVheWR3UUNscTJkM2FOdkFBNQ?oc=5",
@@ -5076,6 +5049,16 @@
    ],
    "score": 1,
    "ts": "2026-11-02T22:10:45.427914+00:00"
+  },
+  {
+   "title": "New Zealand's central bank registers Revolut as country's 27th bank",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNNFVUcGdGUUZUSDZURDZEVmp5Z1FUeWhTV1ZDX0h2cExZTGJLNVZEWmhxcXlpX3ZndEx1Sm5EMjJpVF9xZ25vZFB4RmJvR2lhRnRTckFaYWR6UW9kWFpFUE9TRUQxcllzbk1vZm56ZEM0WjJudm9QSmJuMFQyUEpPeGlHYWo3NlhWRVdPN21vUzZWZGtOSVlYRURUazdod3pvOEh5ZHo1Z0NCREdoSEs3eXlWQUkxT2hr?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T22:20:44.299173+00:00",
+   "title_ru": "Центральный банк Новой Зеландии зарегистрировал Revolut в качестве 27-го банка страны"
   }
  ],
  "last_digest": "2026-11-02",
@@ -8037,6 +8020,22 @@
    },
    {
     "src": "sec",
+    "id": "d8a7dccb67b4b2f5",
+    "ticker": "FCPT",
+    "company": "Four Corners Property Trust, Inc.",
+    "who": "William H Lenehan",
+    "role": "CEO",
+    "type": "buy",
+    "value": 226072,
+    "shares": 10000,
+    "price": 22.61,
+    "plan": false,
+    "date": "2026-11-02",
+    "disclosed": "2026-11-02",
+    "link": "https://www.sec.gov/Archives/edgar/data/1650132/000119312526443902/0001193125-26-443902-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "5e3c2dbfef2ed1af",
     "ticker": "API",
     "company": "Agora, Inc.",
@@ -8354,6 +8353,22 @@
     "date": "2026-10-29",
     "disclosed": "2026-11-02",
     "link": "https://www.sec.gov/Archives/edgar/data/1488813/000122237126000011/0001222371-26-000011-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "b1e31570ec774677",
+    "ticker": "SIBN",
+    "company": "SI-BONE, Inc.",
+    "who": "Michael A. Pisetsky",
+    "role": "General Counsel",
+    "type": "sell",
+    "value": 655745,
+    "shares": 29665,
+    "price": 22.11,
+    "plan": true,
+    "date": "2026-10-29",
+    "disclosed": "2026-11-02",
+    "link": "https://www.sec.gov/Archives/edgar/data/1754765/000175476526000008/0001754765-26-000008-index.htm"
    },
    {
     "src": "sec",
@@ -11986,38 +12001,6 @@
     "date": "2026-10-26",
     "disclosed": "2026-10-26",
     "link": "https://www.sec.gov/Archives/edgar/data/1780664/000178066426000045/0001780664-26-000045-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "29ec327518d63c65",
-    "ticker": "GPI",
-    "company": "GROUP 1 AUTOMOTIVE INC",
-    "who": "Conifer Management, L.l.c.",
-    "role": "10% owner",
-    "type": "buy",
-    "value": 24232209,
-    "shares": 100000,
-    "price": 242.32,
-    "plan": false,
-    "date": "2026-10-26",
-    "disclosed": "2026-10-26",
-    "link": "https://www.sec.gov/Archives/edgar/data/1773994/000090514826004561/0000905148-26-004561-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "c5b797c693505c23",
-    "ticker": "CART",
-    "company": "Maplebear Inc.",
-    "who": "Chris Rogers",
-    "role": "CEO",
-    "type": "sell",
-    "value": 1324226,
-    "shares": 24060,
-    "price": 55.04,
-    "plan": true,
-    "date": "2026-10-23",
-    "disclosed": "2026-10-26",
-    "link": "https://www.sec.gov/Archives/edgar/data/2082930/000208293026000018/0002082930-26-000018-index.htm"
    }
   ],
   "docs": {
@@ -12054,26 +12037,26 @@
   },
   "checked": "2026-11-02T22:00:44.451514+00:00",
   "sec_seen": [
-   "0001994593-26-000005",
-   "0002160291-26-000009",
+   "0001466026-26-000104",
+   "0001193125-26-443898",
    "0001628280-26-068969",
    "0001628280-26-068965",
    "0001058090-26-000106",
    "0001536588-26-000044",
    "0001628280-26-068955",
+   "0001510281-26-000399",
+   "0001193125-26-443902",
    "0001628280-26-068972",
    "0001544522-26-000164",
-   "0001914490-26-000002",
    "0001628280-26-068968",
+   "0001754765-26-000008",
    "0001628280-26-068967",
-   "0000882184-26-000144",
-   "0001628280-26-068964",
    "0001628280-26-068957",
+   "0001628280-26-068964",
    "0000944148-26-000126",
-   "0001860742-26-000115",
+   "0001853089-26-000012",
    "0001628280-26-068959",
-   "0001628280-26-068962",
-   "0001225208-26-008588"
+   "0001628280-26-068962"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
