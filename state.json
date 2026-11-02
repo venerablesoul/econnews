@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "4115be16a549a8ee": "2026-10-30T00:28:36.937656+00:00",
-  "a8ce55892436498f": "2026-10-30T00:34:13.589662+00:00",
   "374a163ffe94c770": "2026-10-30T00:44:13.642202+00:00",
   "b4d6303194a7c0b6": "2026-10-30T00:44:13.642202+00:00",
   "a23f59bdb57e7e77": "2026-10-30T00:49:13.620187+00:00",
@@ -594,24 +592,12 @@
   "aeeba09ea6683dfe": "2026-11-02T00:16:37.702364+00:00",
   "9f4eeb7ebf72517a": "2026-11-02T00:16:37.702364+00:00",
   "3e559f9480586c91": "2026-11-02T00:16:37.702364+00:00",
-  "a5352dcb6d3251bf": "2026-11-02T00:21:37.725092+00:00"
+  "a5352dcb6d3251bf": "2026-11-02T00:21:37.725092+00:00",
+  "4a22d93052796cb7": "2026-11-02T00:31:37.689001+00:00",
+  "127d16d19b982a75": "2026-11-02T00:36:37.747880+00:00",
+  "9b48f56cdfab6ef4": "2026-11-02T00:36:37.747880+00:00"
  },
  "recent": [
-  {
-   "title": "Big Tech’s Deepening AI Funding Concerns Sink Asian Chip Stocks",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/big-tech-s-deepening-ai-funding-concerns-sink-asian-chip-stocks",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T00:28:36.937656+00:00",
-   "title_ru": "Углубляющиеся опасения Big Tech по поводу финансирования ИИ поглощают запасы азиатских чипов",
-   "lead": "A crucial earnings season for the fate of the artificial intelligence trade is falling flat, fueling stock losses in global chipmakers as worries mount over soaring costs and the durability of demand.",
-   "lead_ru": "Решающий сезон доходов для судьбы торговли искусственным интеллектом падает, подпитывая потери акций мировых производителей чипов, поскольку опасения растут из-за растущих затрат и долговечности спроса.",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Dollar’s Rate-Fueled Rally Set to Ride Out US Midterm Gridlock",
    "link": "https://www.bloomberg.com/news/articles/2026-10-30/dollar-s-rate-fueled-rally-set-to-ride-out-us-midterm-gridlock",
@@ -5328,6 +5314,21 @@
    "tags": [
     "inflation",
     "bonds"
+   ]
+  },
+  {
+   "title": "Japanese Stocks Fall on Tech Selloff, Kioxia’s Profit Outlook",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/japanese-stocks-fall-on-tech-selloff-kioxia-s-profit-outlook",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-11-02T00:36:37.747880+00:00",
+   "title_ru": "Японские акции падают на Tech Selloff, прогноз по прибыли Kioxia",
+   "lead": "Japanese stocks fell, with technology shares taking a hit from a steep selloff in their US peers, while chipmaker Kioxia Holdings Corp. was set to drop after a disappointing profit outlook.",
+   "lead_ru": "Японские акции упали, а акции технологических компаний пострадали от резкой распродажи своих американских коллег, в то время как производитель чипов Kioxia Holdings Corp. должен был упасть после неутешительного прогноза прибыли.",
+   "tags": [
+    "markets"
    ]
   }
  ],
