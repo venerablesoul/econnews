@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "798b6d9d686731ab": "2026-10-30T04:39:13.555629+00:00",
-  "254b7e538b09e5c4": "2026-10-30T04:39:13.555629+00:00",
-  "1de393a75ca532e1": "2026-10-30T04:44:13.546358+00:00",
-  "43734d615085349d": "2026-10-30T04:44:13.546358+00:00",
   "8f9f7853e4c962e9": "2026-10-30T05:04:13.575489+00:00",
   "f748a760673b1994": "2026-10-30T05:04:13.575489+00:00",
   "f5d8481468f9bfcc": "2026-10-30T05:09:13.568414+00:00",
@@ -597,38 +593,11 @@
   "f93c85b7b0daf9b3": "2026-11-02T04:16:37.676541+00:00",
   "230b993e1184fc20": "2026-11-02T04:21:37.815156+00:00",
   "d5c2050e8556a3a2": "2026-11-02T04:21:37.815156+00:00",
-  "2bcaa726ce4451bd": "2026-11-02T04:26:37.749562+00:00"
+  "2bcaa726ce4451bd": "2026-11-02T04:26:37.749562+00:00",
+  "fb51959a9b76b119": "2026-11-02T04:47:31.218915+00:00",
+  "e2aca183187722f0": "2026-11-02T04:47:31.218915+00:00"
  },
  "recent": [
-  {
-   "title": "Germany's Merz says EU to shape better offer as global trade order comes under pressure",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOcHhrNEFqcXpYaHZVOTlsdVQ0RjJub1lOaHhYZWhzMW40eElFTlAtSkZFbS1RTVRHdmVHRnN0Qkc0dVc1djdLSEU4Y1hzVXZ6VXB5QzEtYUtuNmo1Y1lmaVlhb1ZsOW1pVlNkQ2RRTFM5bFI3Skx2Y0xpUXgwbkNxVGFxMEg5Y0pPMGs5WndndmxDaTY3Y2RPRUdUZHB3QnoxNGxGUUgyVmx0N3ZhTDNEVUtNOHVRb1VjUUZrdG5lWTh3dWFQUmNJ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T04:39:13.555629+00:00",
-   "title_ru": "Немецкий Мерц говорит, что ЕС должен сформировать лучшее предложение, поскольку мировой торговый порядок находится под давлением"
-  },
-  {
-   "title": "BOJ keeps rates steady, declares victory in hitting price target",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQU2NkbUJhYUg5ekRVRnhPRTNXcTRRekd0RU92a1RJcWhMSDNNZUVMcEJueEl6UWlaaTBYd1VrVmlPVlJrNkNHRXZZRkhDM1NtTFM1Z1E1QUF0b2VZR1N0QTFfYi1XNkNDZDB0b3lLN3hYeUZuWWszcURrbVBNcWlzYmNTeGRTazEzNUtJNnFZR1M3UTdTRExvMi1vWVZ5dw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T04:44:13.546358+00:00",
-   "title_ru": "БАНК ЯПОНИИ удерживает ставки на стабильном уровне, объявляет о победе в достижении ценовой цели"
-  },
-  {
-   "title": "Курсы Bitcoin и Ethereum упали после взлома Binance",
-   "link": "https://www.rbc.ru/finances/30/10/2026/6ae41cff70bd6299c9715c4b",
-   "sources": [
-    "RBC"
-   ],
-   "score": 1,
-   "ts": "2026-10-30T04:44:13.546358+00:00"
-  },
   {
    "title": "Britain Tests the Limits With Plan to Tax Its Way Out of Debt",
    "link": "https://www.bloomberg.com/news/articles/2026-10-30/britain-tests-the-limits-with-plan-to-tax-its-way-out-of-debt",
@@ -5332,6 +5301,32 @@
    "tags": [
     "inflation"
    ]
+  },
+  {
+   "title": "Copper Recovers as Easing Tech Rout, Lower Oil Calm Growth Fears",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/copper-recovers-as-easing-tech-rout-lower-oil-calm-growth-fears",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-11-02T04:47:31.218915+00:00",
+   "title_ru": "Медь восстанавливается, поскольку ослабление технологического маршрута, снижение уровня нефти успокаивают опасения роста",
+   "lead": "Copper rebounded from its lowest close in a week as a rout in technology stocks subsided and oil prices pulled back, easing fears around global growth.",
+   "lead_ru": "Медь отскочила от самого низкого закрытия за неделю, так как спад в запасах технологий ослабел, а цены на нефть отступили, ослабив опасения по поводу глобального роста.",
+   "tags": [
+    "oil",
+    "markets"
+   ]
+  },
+  {
+   "title": "Hong Kong Plans Rules for Insurers’ Hot New Growth Market",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPZXBiLWtkSWkzdURTQ1I2bk5tNHZaVkZjM0tSTXQyNTlBTmNic2dub3RlZ1cwREtTc3RXanZwaU5BdW1lM2NlcWU5SkZ1U0tlQ2VVS1ViWFpCYlZmMHpiT0stMDhxXzdrbHVfT3Jyd1J0OExSakVoaGU4R3BUVjdNRWwxOE5zNXZEblRZLXluU0RXbEgzYmszbmZ5cVlQUmVuQzgtOHBBMGlkN1U?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-11-02T04:47:31.218915+00:00",
+   "title_ru": "Гонконг планирует правила для быстрорастущего рынка страховщиков"
   }
  ],
  "last_digest": "2026-11-01",
