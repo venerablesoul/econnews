@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "294c01955febc0da": "2026-10-30T09:24:40.229412+00:00",
-  "ad10370eca86c52e": "2026-10-30T09:24:40.229412+00:00",
-  "c89e25b96003c851": "2026-10-30T09:24:40.229412+00:00",
   "9b0a39112206ab5a": "2026-10-30T09:34:40.342182+00:00",
   "39143439268db7ab": "2026-10-30T09:34:40.342182+00:00",
   "7be33f3d0437e736": "2026-10-30T09:34:40.342182+00:00",
@@ -613,38 +610,10 @@
   "7e419f6ebbe4f1de": "2026-11-02T09:17:31.252398+00:00",
   "5a7d3d57c1edeed5": "2026-11-02T09:17:31.252398+00:00",
   "66a81e651ae0acec": "2026-11-02T09:22:31.275441+00:00",
-  "aaafd4dd0cbbc71f": "2026-11-02T09:22:31.275441+00:00"
+  "aaafd4dd0cbbc71f": "2026-11-02T09:22:31.275441+00:00",
+  "d757b37be5107116": "2026-11-02T09:32:31.241702+00:00"
  },
  "recent": [
-  {
-   "title": "German economy grows by 0.2% in Q3, preliminary data shows",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOT2VyTFJQdHM3YjBFYUJJbDA4Y0JfSFZUTm5XNDloeUJCeUlRcU4wdEtvNXJISGtKc0h3MHFCajg5YTEtYUh6NkJ0eWxmdTRJOEtfRnh5OUFBUUpGNWdQV1FUY2NRN2tMbllZVUFDZWhqVG9SUjR3X2xnOXdDQkJiQUdxWGVkWEN6ZVNsdUprZnBmWlpOT0JSa0w4LTlzSHdfX3U0?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T09:24:40.229412+00:00",
-   "title_ru": "Экономика Германии в третьем квартале выросла на 0,2%, свидетельствуют предварительные данные"
-  },
-  {
-   "title": "Colombia central bank seen hiking rates on Friday, though hold not ruled out",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNdFp1alp6VnhrcGhGS1hFZXFkV3BZSXdSUW5aZzFadXZvR0Q0UUYzSHY4Sk1LSE1lQWJPWGVTTFFMd001NlpubTFCMlQ0d3QzTmowdUdfZE02b1ZPLVRJX3ROX1daMWtHbC10Q1pBQkNkRUJJNmJrTGlHcURyMWhzbURsWFhSS0NDeEphbDhuLTlNYThyNGIxYW91YzhqZk44ZERiaXItbDR0UGJmU1ZubzU1ZW05YUtRNzVDN1d3ZE0?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T09:24:40.229412+00:00",
-   "title_ru": "Центральный банк Колумбии заявил о повышении ставок в пятницу, но не исключает возможности его приостановки"
-  },
-  {
-   "title": "В Минфине не обсуждают льготы для «Яндекса» по примеру Wildberries и Ozon",
-   "link": "https://www.rbc.ru/rbcfreenews/6ae45ded266146f5b7326b54",
-   "sources": [
-    "RBC"
-   ],
-   "score": 1,
-   "ts": "2026-10-30T09:24:40.229412+00:00"
-  },
   {
    "title": "PBOC Reveals Overnight Rate at 1.25% Before Policy Anchor Shift",
    "link": "https://www.bloomberg.com/news/articles/2026-10-30/pboc-reveals-overnight-rate-at-1-25-before-policy-anchor-shift",
@@ -5404,6 +5373,19 @@
    "score": 3,
    "ts": "2026-11-02T09:22:31.275441+00:00",
    "title_ru": "Индекс деловой активности в южноафриканском производственном секторе улучшился второй месяц подряд в октябре, показывают данные PMI."
+  },
+  {
+   "title": "Deutsche Bank upgrades US tech, says selloff has gone too far",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQb2ZNT2NYWHNiSmctYV9fcEw0SUNJbFhvUHVWTlB2cGJud0tiLVduamJyNlFUbE9FZzJQbWpYSDlxT0NjdElIclI0QmJ2MlBDTGl6NGFHY2tOdi1OV1BxRFhaTGNPZENUSC1SM25jdGpaTi1YN1hPYWxIcmQ0RzhFRFl1VVVTbmNBMTM5ajl4ZFRNT29aTXR3QWcwbHAzbEdrTUxsek9nUUQ4NFE4RVhLX09kMzY1cHc?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-11-02T09:32:31.241702+00:00",
+   "title_ru": "Это зашло слишком далёко",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-11-01",
