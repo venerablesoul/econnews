@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "dd863a7c6f9f56d7": "2026-10-30T10:29:40.286689+00:00",
-  "d012a9c97f9fc5f8": "2026-10-30T10:29:40.286689+00:00",
-  "8cc57065b339a559": "2026-10-30T10:29:40.286689+00:00",
   "f48cb9fa0ed75666": "2026-10-30T10:34:40.417327+00:00",
   "86e446e4b0692f8a": "2026-10-30T10:39:40.343998+00:00",
   "e19fddc724b13425": "2026-10-30T10:44:40.383079+00:00",
@@ -614,56 +611,10 @@
   "a081e98d7a8f1d92": "2026-11-02T10:23:12.555266+00:00",
   "eb2ff11a896430c7": "2026-11-02T10:23:12.555266+00:00",
   "5ad55d0cc3aed1be": "2026-11-02T10:28:12.638849+00:00",
-  "fda9d543fe71ba40": "2026-11-02T10:28:12.638849+00:00"
+  "fda9d543fe71ba40": "2026-11-02T10:28:12.638849+00:00",
+  "05402fd6c3f1a17a": "2026-11-02T10:33:12.612357+00:00"
  },
  "recent": [
-  {
-   "title": "ECB’s Panetta Says More Rate Hikes May Be Needed to Tame Prices",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/ecb-s-panetta-says-more-rate-hikes-may-be-needed-to-tame-prices",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 8,
-   "ts": "2026-10-30T10:29:40.286689+00:00",
-   "title_ru": "Глава ЕЦБ Панетта заявил, что для сдерживания цен может потребоваться дальнейшее повышение ставок",
-   "lead": "The European Central Bank may have to deliver more increases in interest rates to contain inflation, Governing Council member Fabio Panetta said.",
-   "lead_ru": "Европейскому центральному банку, возможно, придется еще больше повысить процентные ставки, чтобы сдержать инфляцию, заявил член Управляющего совета Фабио Панетта.",
-   "tags": [
-    "ECB",
-    "rates",
-    "inflation"
-   ]
-  },
-  {
-   "title": "Chevron Exceeds Forecasts on Oil Prices, Swollen Fuel-Making Returns",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/chevron-exceeds-forecasts-on-oil-prices-swollen-fuel-making-returns",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-30T10:29:40.286689+00:00",
-   "title_ru": "Chevron превзошла прогнозы по ценам на нефть и увеличению доходов от производства топлива",
-   "lead": "Chevron Corp. surpassed analysts’ estimates as high oil prices combined with record US refining margins to lift earnings to the fourth highest in company history.",
-   "lead_ru": "Chevron Corp. превзошла оценки аналитиков, поскольку высокие цены на нефть в сочетании с рекордной рентабельностью нефтепереработки в США подняли прибыль до четвертого по величине показателя в истории компании.",
-   "tags": [
-    "oil"
-   ]
-  },
-  {
-   "title": "ECB Warns of Slow SRT Approvals if Banks Don’t Keep Them Simple",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/ecb-warns-of-slow-srt-approvals-if-banks-don-t-keep-them-simple",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-30T10:29:40.286689+00:00",
-   "title_ru": "ЕЦБ предупреждает о медленном одобрении SRT, если банки не будут упрощать их",
-   "lead": "Lenders looking to offload credit risk to investors via deals backed by insurers may face a longer wait for approval as the European Central Bank steps up scrutiny of the opaque trades.",
-   "lead_ru": "Кредиторы, желающие переложить кредитный риск на инвесторов посредством сделок, поддерживаемых страховщиками, могут столкнуться с более длительным ожиданием одобрения, поскольку Европейский центральный банк усиливает контроль над непрозрачными сделками.",
-   "tags": [
-    "ECB"
-   ]
-  },
   {
    "title": "World’s Second Worst Performing Currency Fans Ugandan Inflation",
    "link": "https://www.bloomberg.com/news/articles/2026-10-30/world-s-second-worst-performing-currency-fans-ugandan-inflation",
@@ -5398,6 +5349,21 @@
    "score": 4,
    "ts": "2026-11-02T10:28:12.638849+00:00",
    "title_ru": "Рынки Персидского залива неоднозначны, поскольку инвесторы следят за переговорами"
+  },
+  {
+   "title": "Inflation Talk Returns to Earnings Calls in Echo of 2022 Shock",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/inflation-talk-returns-to-earnings-calls-in-echo-of-2022-shock",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-11-02T10:33:12.612357+00:00",
+   "title_ru": "Inflation Talk возвращается к звонкам о доходах в эхо шока 2022 года",
+   "lead": "Inflation is top of mind for Corporate America this earnings season, with mentions on earnings calls on track for their biggest jump since the 2022 price shock.",
+   "lead_ru": "Инфляция является главной проблемой для корпоративной Америки в этом сезоне доходов, и упоминания о доходах приближаются к своему самому большому скачку со времен ценового шока 2022 года.",
+   "tags": [
+    "inflation"
+   ]
   }
  ],
  "last_digest": "2026-11-01",
