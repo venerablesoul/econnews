@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "ef8f97356160e4e6": "2026-10-30T06:09:40.224746+00:00",
   "55d8ec8e0bb5cd35": "2026-10-30T06:39:40.261517+00:00",
   "be0ae030c17e3612": "2026-10-30T06:39:40.261517+00:00",
   "f52f7e257d1c2f8c": "2026-10-30T06:44:40.174003+00:00",
@@ -592,24 +591,12 @@
   "89fb893139e61dcc": "2026-11-02T05:42:31.238853+00:00",
   "61dc579c04a0fc9e": "2026-11-02T05:52:31.225426+00:00",
   "66bc14af290f8417": "2026-11-02T05:57:31.225393+00:00",
-  "2144b17e2996bbf2": "2026-11-02T06:07:31.211256+00:00"
+  "2144b17e2996bbf2": "2026-11-02T06:07:31.211256+00:00",
+  "7b5f8140a5136658": "2026-11-02T06:12:31.259247+00:00",
+  "b2ba4c7e95723a67": "2026-11-02T06:12:31.259247+00:00",
+  "0308d036d37abfa6": "2026-11-02T06:12:31.259247+00:00"
  },
  "recent": [
-  {
-   "title": "Yields Too High to Ignore Lure Investors Back to Long-Dated Debt",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/yields-too-high-to-ignore-lure-investors-back-to-long-dated-debt",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-30T06:09:40.224746+00:00",
-   "title_ru": "Доходность слишком высока, чтобы игнорировать соблазн инвесторов вернуться к долгосрочному долгу",
-   "lead": "Long-dated government bonds spent much of the year punishing anyone brave enough to own them. Now yields are high enough that investors are coming back.",
-   "lead_ru": "Долгосрочные государственные облигации проводили большую часть года, наказывая любого, кто был достаточно храбр, чтобы владеть ими. Теперь доходность достаточно высока, чтобы инвесторы вернулись.",
-   "tags": [
-    "bonds"
-   ]
-  },
   {
    "title": "French Economy Unexpectedly Shrinks as Headwinds Gain Strength",
    "link": "https://www.bloomberg.com/news/articles/2026-10-30/french-economy-unexpectedly-shrinks-as-headwinds-gain-strength",
@@ -5263,6 +5250,40 @@
    "tags": [
     "China"
    ]
+  },
+  {
+   "title": "Primavera's Hu Discusses China Markets, AI Bubble",
+   "link": "https://www.bloomberg.com/news/videos/2026-11-02/primavera-s-hu-discusses-china-markets-ai-bubble-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T06:12:31.259247+00:00",
+   "title_ru": "Ху из Primavera обсуждает рынки Китая, пузырь ИИ",
+   "lead": "Fred Hu, Founder, Chairman and CEO at Primavera Capital, says Chinese policymakers should focus on strengthening the economy’s fundamentals to give investors the confidence to deploy long-term capital.",
+   "lead_ru": "Фред Ху, основатель, председатель и главный исполнительный директор Primavera Capital, говорит, что китайские политики должны сосредоточиться на укреплении основ экономики, чтобы дать инвесторам уверенность в развертывании долгосрочного капитала.",
+   "tags": [
+    "China"
+   ]
+  },
+  {
+   "title": "As Europe's right advances, Germany's AfD rethinks its anti-euro roots",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPc2xLaXNFaGMzRzY1MFpOV01sWml1NWpDTTJQN0NEcDhEcUdOSEUzaWliRzIyeG9JR0RwakZ2UFlPR05sWjRyZXR0dFFud0xMdkpMM3pEbHFVaWRiZmhpczMtQW9TNGZrT09JZzZUNVUtalRGS0ZjR0JHTGduNlhLUC1JSzhUTHVDc2dmUDd2emtRUmVreXVLNjRGczA3QzdtVTUyTWVlU3F0QQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T06:12:31.259247+00:00",
+   "title_ru": "По мере продвижения правых в Европе, АдГ Германии переосмысливает свои антиевропейские корни"
+  },
+  {
+   "title": "South Korea targets 'world's highest performance' sovereign AI model in record new budget",
+   "link": "https://www.cnbc.com/2026/11/02/south-korea-ai-spending-budget.html",
+   "sources": [
+    "CNBC"
+   ],
+   "score": 2,
+   "ts": "2026-11-02T06:12:31.259247+00:00"
   }
  ],
  "last_digest": "2026-11-01",
@@ -12161,10 +12182,8 @@
    "0001193532-26-000012",
    "0001697362-26-000021",
    "0001628280-26-068639",
-   "0001451763-26-000014",
    "0001493152-26-049498",
    "0001280486-26-000010",
-   "0001193125-26-442229",
    "0001213900-26-114605",
    "0002014293-26-000012",
    "0001824159-26-000015",
@@ -12174,6 +12193,7 @@
    "0001628280-26-068641",
    "0001213900-26-114608",
    "0001477932-26-006563",
+   "0000091440-26-000174",
    "0001628280-26-068637",
    "0001213900-26-114604",
    "0001493152-26-049496",
@@ -12184,14 +12204,15 @@
    "0001193125-26-442142",
    "0001193125-26-442230",
    "0001213900-26-114609",
+   "0001214659-26-013568",
    "0002025268-26-000008",
    "0002014386-26-000026",
    "0002014361-26-000040",
    "0001231919-26-001519",
    "0001213900-26-114611",
    "0001498270-26-000012",
-   "0000091440-26-000174",
-   "0001214659-26-013568",
+   "0001193125-26-442229",
+   "0001451763-26-000014",
    "0001213900-26-114588"
   ],
   "errors": {
