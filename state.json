@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "f52f7e257d1c2f8c": "2026-10-30T06:44:40.174003+00:00",
-  "05a7f6441af8f319": "2026-10-30T06:44:40.174003+00:00",
-  "47c9f771a089ea14": "2026-10-30T06:44:40.174003+00:00",
   "8a9cef8c8fa92f53": "2026-10-30T06:49:40.241591+00:00",
   "a9034a36ab174d21": "2026-10-30T06:49:40.241591+00:00",
   "f318776fbe1fdf1f": "2026-10-30T06:49:40.241591+00:00",
@@ -604,56 +601,11 @@
   "d4ea1ec600714fc5": "2026-11-02T06:32:31.212543+00:00",
   "b66025111a538e3f": "2026-11-02T06:32:31.212543+00:00",
   "6c28a8fd965e7eab": "2026-11-02T06:37:31.237388+00:00",
-  "51e6da53cde4816b": "2026-11-02T06:42:31.210515+00:00"
+  "51e6da53cde4816b": "2026-11-02T06:42:31.210515+00:00",
+  "b00c293bad90ba30": "2026-11-02T06:47:31.236695+00:00",
+  "0aa8c9ebbe80fa84": "2026-11-02T06:47:31.236695+00:00"
  },
  "recent": [
-  {
-   "title": "Lagarde’s early departure triggers race to solve three-way ECB puzzle",
-   "link": "https://www.ft.com/content/9c46421e-d23c-4674-80ad-4cf63897d22e?syn-25a6b1a6=1",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 6,
-   "ts": "2026-10-30T06:44:40.174003+00:00",
-   "title_ru": "Ранний уход Лагард запускает гонку по решению трехсторонней головоломки ECB",
-   "lead": "Also in this newsletter: the cyber threat from North Korea",
-   "lead_ru": "Также в этом информационном бюллетене: киберугроза со стороны Северной Кореи",
-   "tags": [
-    "ECB"
-   ]
-  },
-  {
-   "title": "Bank of Japan says 2% inflation goal reached after decades of deflation",
-   "link": "https://www.ft.com/content/874acd68-948c-44e6-be8d-a509d6d133fa?syn-25a6b1a6=1",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 6,
-   "ts": "2026-10-30T06:44:40.174003+00:00",
-   "title_ru": "Банк Японии говорит, что цель инфляции в 2% достигнута после десятилетий дефляции",
-   "lead": "Japanese central bank holds interest rates as expectations mount for December increase",
-   "lead_ru": "Центральный банк Японии удерживает процентные ставки по мере роста ожиданий в декабре",
-   "tags": [
-    "rates",
-    "inflation"
-   ]
-  },
-  {
-   "title": "Central Asia’s Fastest Growing Economy Plans Yuan Bond in 2027",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/central-asia-s-fastest-growing-economy-plans-yuan-bond-in-2027",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-30T06:44:40.174003+00:00",
-   "title_ru": "Самая быстрорастущая экономика Центральной Азии планирует выпуск облигаций в юанях в 2027 году",
-   "lead": "Kyrgyzstan plans to debut a yuan-denominated bond next year as Central Asia’s fastest growing economy continues to expand its banking system and build on its status as a regional transport hub on the former Silk Road.",
-   "lead_ru": "Кыргызстан планирует выпустить облигации в юанях в следующем году, поскольку самая быстрорастущая экономика Центральной Азии продолжает расширять свою банковскую систему и укреплять свой статус регионального транспортного узла на бывшем Шелковом пути.",
-   "tags": [
-    "bonds",
-    "China"
-   ]
-  },
   {
    "title": "Euro-Area Leaders to Meet Nov. 26-27 to Discuss ECB Top Job",
    "link": "https://www.bloomberg.com/news/articles/2026-10-29/euro-area-leaders-to-meet-nov-26-27-to-discuss-ecb-top-job",
@@ -5367,6 +5319,16 @@
    "score": 4,
    "ts": "2026-11-02T06:42:31.210515+00:00",
    "title_ru": "ЭКСКЛЮЗИВ: Регулятор индийского рынка поддерживает отмену налога на долгосрочный прирост капитала для иностранных инвесторов, сообщают источники"
+  },
+  {
+   "title": "Projections for 29-1211 - BLS Data",
+   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPblA2VExsWWpFejBIRHVrWHhDUXAzQ2tfcnNfR09VeXl3Q0E5T3NCd1RuVHhpZzFyZ2tGSkRwUW9uQmdwTmh5dmRncDBNQ1M4UXVFa3EyTHl0X2UyQ1RZMWpZNWw4QXRhNlF0Q2pJRElVNHZ2WUZRWFlRWm83VmpnWnJ3?oc=5",
+   "sources": [
+    "US Labor Statistics (BLS)"
+   ],
+   "score": 4,
+   "ts": "2026-11-02T06:47:31.236695+00:00",
+   "title_ru": "Прогнозы на 29-1211 г. – данные BLS"
   }
  ],
  "last_digest": "2026-11-01",
@@ -12265,10 +12227,8 @@
    "0001193532-26-000012",
    "0001697362-26-000021",
    "0001628280-26-068639",
-   "0001451763-26-000014",
    "0001493152-26-049498",
    "0001280486-26-000010",
-   "0001193125-26-442229",
    "0001213900-26-114605",
    "0002014293-26-000012",
    "0001824159-26-000015",
@@ -12278,6 +12238,7 @@
    "0001628280-26-068641",
    "0001213900-26-114608",
    "0001477932-26-006563",
+   "0000091440-26-000174",
    "0001628280-26-068637",
    "0001213900-26-114604",
    "0001493152-26-049496",
@@ -12288,14 +12249,15 @@
    "0001193125-26-442142",
    "0001193125-26-442230",
    "0001213900-26-114609",
+   "0001214659-26-013568",
    "0002025268-26-000008",
    "0002014386-26-000026",
    "0002014361-26-000040",
    "0001231919-26-001519",
    "0001213900-26-114611",
    "0001498270-26-000012",
-   "0000091440-26-000174",
-   "0001214659-26-013568",
+   "0001193125-26-442229",
+   "0001451763-26-000014",
    "0001213900-26-114588"
   ],
   "errors": {
