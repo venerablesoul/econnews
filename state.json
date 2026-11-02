@@ -595,7 +595,9 @@
   "07e68b8c54a5e779": "2026-11-02T03:56:37.713359+00:00",
   "e1a05f1b16c792b2": "2026-11-02T04:01:37.695908+00:00",
   "127afa13e16b9649": "2026-11-02T04:01:37.695908+00:00",
-  "a3ffccd9ea79c083": "2026-11-02T04:01:37.695908+00:00"
+  "a3ffccd9ea79c083": "2026-11-02T04:01:37.695908+00:00",
+  "80f4ad3e87921d36": "2026-11-02T04:06:37.749934+00:00",
+  "91cc56fde79b166d": "2026-11-02T04:06:37.749934+00:00"
  },
  "recent": [
   {
@@ -5313,6 +5315,37 @@
    "title_ru": "Валютный курс развивающихся рынков падает, поскольку трейдеры ждут прогресса в отношении Ирана, данные США",
    "lead": "Emerging-market currencies fell as investors weighed lingering Middle East tensions and awaited US economic data later this week.",
    "lead_ru": "Валюты развивающихся рынков упали, поскольку инвесторы взвешивали сохраняющуюся напряженность на Ближнем Востоке и ожидали экономических данных США позднее на этой неделе."
+  },
+  {
+   "title": "Reliance Industries Surges Most in Nine Months on Earnings Beat",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/reliance-industries-surges-most-in-nine-months-on-earnings-beat",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T04:06:37.749934+00:00",
+   "title_ru": "Reliance Industries выросла больше всего за девять месяцев на фоне роста прибыли",
+   "lead": "Shares of Reliance Industries Ltd. rallied the most in nine months after earnings from India’s most valuable company beat analyst estimates, driven by a strong performance in its oil-to-chemicals business.",
+   "lead_ru": "Акции Reliance Industries Ltd. выросли больше всего за девять месяцев после того, как прибыль самой дорогой компании Индии превзошла оценки аналитиков, что было обусловлено высокими показателями ее нефтехимического бизнеса.",
+   "tags": [
+    "oil",
+    "markets"
+   ]
+  },
+  {
+   "title": "Sungrow Shares Jump on Bullish Outlook for Battery Storage",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/sungrow-shares-jump-on-bullish-outlook-for-battery-storage",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T04:06:37.749934+00:00",
+   "title_ru": "Акции Sungrow подскочили на фоне бычьего прогноза по аккумуляторным батареям",
+   "lead": "Shares in Sungrow Power Supply Co. soared after the company said income dropped but that battery storage demand was set to soar.",
+   "lead_ru": "Акции Sungrow Power Supply Co. взлетели после того, как компания заявила, что доходы упали, но спрос на аккумуляторные батареи будет расти.",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-11-01",
@@ -5333,7 +5366,7 @@
   "MarketWatch": 0,
   "Банк Англии": 0,
   "Bank of England": 0,
-  "Bank of Russia": 0,
+  "Bank of Russia": 1,
   "ECB": 0,
   "Fed": 0,
   "IMF": 0,
