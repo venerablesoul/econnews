@@ -584,7 +584,10 @@
   "672f211c7242f5f3": "2026-11-02T17:39:12.644048+00:00",
   "620b0f93a10bfd14": "2026-11-02T17:39:12.644048+00:00",
   "7c40988d806c8632": "2026-11-02T17:44:12.716748+00:00",
-  "4d92b8f41c6b7916": "2026-11-02T17:49:12.723272+00:00"
+  "4d92b8f41c6b7916": "2026-11-02T17:49:12.723272+00:00",
+  "40a3d34d96c772dc": "2026-11-02T17:54:12.701648+00:00",
+  "0d5c759c50ed4545": "2026-11-02T17:54:12.701648+00:00",
+  "5c4b1fcd944d18fc": "2026-11-02T17:54:12.701648+00:00"
  },
  "recent": [
   {
@@ -5031,6 +5034,36 @@
    "title_ru": "Индекс FTSE 100 снизился, так как акции компаний энергетики и здравоохранения ограничивают более широкий рост",
    "tags": [
     "markets"
+   ]
+  },
+  {
+   "title": "Treasury Yields Extend Past Month’s Slide as Oil Prices Tumble",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/treasury-yields-extend-past-month-s-slide-as-oil-prices-tumble",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 11,
+   "ts": "2026-11-02T17:54:12.701648+00:00",
+   "title_ru": "Доходность казначейских облигаций продолжает снижаться в прошлом месяце на фоне падения цен на нефть",
+   "lead": "Treasuries rose, building on their biggest monthly advance in more than two years, as tumbling oil prices eased concern about inflation pressure leading to additional Federal Reserve interest-rate hikes.",
+   "lead_ru": "Казначейские облигации выросли, опираясь на самый большой ежемесячный рост за более чем два года, поскольку падение цен на нефть ослабило опасения по поводу инфляционного давления, что привело к дополнительным повышениям процентных ставок Федеральной резервной системы.",
+   "tags": [
+    "Fed",
+    "rates",
+    "inflation"
+   ]
+  },
+  {
+   "title": "Freed from OPEC quotas, UAE says oil exports have risen as it hosts industry event",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQcnd0cjROV01YdUV5VG9tVnV6NVpybjJpa1E1TnFOV3g2V2xhMmpmcGJQdXctakdyMVVmZk9hbTZvYnZ6aDJ2RDhoSU12Z2NoYlBRekRWNmlrSWdlblpJa0tKelN5VjFVVUhDWV85enFsam91QXFRWVdUUzNEYmZSTDhaWVBRUFE2MTBVRFY5XzhvR2NDZXVXeXZROVoxdkJQcm91cnZqQUJEWmJLNkJ6R0UwLWJvYU5MQ21sNXZpeEN3S3c?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 7,
+   "ts": "2026-11-02T17:54:12.701648+00:00",
+   "title_ru": "Освобожденные от квот ОПЕК ОАЭ заявляют, что экспорт нефти увеличился благодаря проведению отраслевого мероприятия",
+   "tags": [
+    "oil"
    ]
   }
  ],
@@ -11920,7 +11953,6 @@
    "0001628280-26-068728",
    "0001464277-26-000005",
    "0001555392-26-000004",
-   "0001932848-26-000023",
    "0001437749-26-034329",
    "0001628280-26-068746"
   ],
