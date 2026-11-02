@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "6c61c312ee3ccbbf": "2026-10-30T12:05:10.463149+00:00",
-  "8a516f581745cc9b": "2026-10-30T12:10:10.535394+00:00",
   "fe9884346c9dbe13": "2026-10-30T12:15:10.519024+00:00",
   "221e7a2180b9eaee": "2026-10-30T12:25:10.461981+00:00",
   "eb6126e725314f87": "2026-10-30T12:30:10.399223+00:00",
@@ -612,21 +610,14 @@
   "6dcf07e78abe27b3": "2026-11-02T12:03:12.608461+00:00",
   "5258225d3d6fe4a7": "2026-11-02T12:03:12.608461+00:00",
   "b85a7eb4f262ab22": "2026-11-02T12:03:12.608461+00:00",
-  "d8305f133a42c73c": "2026-11-02T12:03:12.608461+00:00"
+  "d8305f133a42c73c": "2026-11-02T12:03:12.608461+00:00",
+  "e7e1748e67c8a920": "2026-11-02T12:08:12.622102+00:00",
+  "482da95692261448": "2026-11-02T12:08:12.622102+00:00",
+  "24d40e19126c32b1": "2026-11-02T12:13:12.620832+00:00",
+  "5014622a7aa6a5af": "2026-11-02T12:13:12.620832+00:00",
+  "a4762b582e8ad5ca": "2026-11-02T12:13:12.620832+00:00"
  },
  "recent": [
-  {
-   "title": "Inside Mexico City’s Housing Theft Crisis",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-30/inside-mexico-city-s-housing-theft-crisis",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T12:05:10.463149+00:00",
-   "title_ru": "Кризис, связанный с кражей жилья в Мехико",
-   "lead": "In Mexico City, housing theft happens on average 11 times a day, often when homeowners are on vacation or have died, leaving properties vacant.",
-   "lead_ru": "В Мехико кража жилья происходит в среднем 11 раз в день, часто когда домовладельцы находятся в отпуске или умерли, в результате чего недвижимость пустует."
-  },
   {
    "title": "US Natural Gas Drillers Scale Up as Demand Grows",
    "link": "https://www.bloomberg.com/news/newsletters/2026-10-30/us-natural-gas-drillers-scale-up-as-demand-grows",
@@ -5369,6 +5360,42 @@
    "title_ru": "BII Великобритании планирует выделить 2,25 миллиарда фунтов стерлингов на самые рискованные рынки Африки",
    "lead": "British International Investment plans to deploy about £2.25 billion ($3 billion) in some of Africa’s riskiest markets over the next five years, stepping into economies that are largely beyond the reach of the world’s biggest…",
    "lead_ru": "British International Investment планирует в течение следующих пяти лет разместить около 2,25 миллиарда фунтов стерлингов (3 миллиарда долларов США) на некоторых из самых рискованных рынков Африки, вступая в экономику, которая в значительной степени находится за пределами досягаемости крупнейших в мире…"
+  },
+  {
+   "title": "Oil Prices Retreat, Apple Results on Deck",
+   "link": "https://www.bloomberg.com/news/videos/2026-11-02/the-opening-trade-11-02-2026-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-11-02T12:13:12.620832+00:00",
+   "title_ru": "Цены на нефть снижаются, результаты Apple на слуху",
+   "lead": "A report that says President Donald Trump wants to give diplomacy with Iran more time helped ease pressure on oil prices, with Brent falling more than 3% to below $110 a barrel.",
+   "lead_ru": "Отчет, в котором говорится, что президент Дональд Трамп хочет дать дипломатии с Ираном больше времени, помог ослабить давление на цены на нефть, когда нефть марки Brent упала более чем на 3% до уровня ниже $ 110 за баррель.",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "Chile’s Economic Activity Posts First Monthly Rise Since June",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/chile-s-economic-activity-posts-first-monthly-rise-since-june",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T12:13:12.620832+00:00",
+   "title_ru": "Экономическая активность в Чили продемонстрировала первый ежемесячный рост с июня",
+   "lead": "Chile’s economic activity posted its first monthly advance since June, offering limited relief as headwinds including severe weather and weak mining output cloud the near-term outlook.",
+   "lead_ru": "Экономическая активность Чили продемонстрировала свой первый ежемесячный рост с июня, предложив ограниченное облегчение в качестве встречного ветра, включая суровые погодные условия и слабую добычу полезных ископаемых, омрачающие краткосрочные перспективы."
+  },
+  {
+   "title": "Tech stocks enter November after a brutal October: Is it time to buy the dip?",
+   "link": "https://www.marketwatch.com/story/tech-stocks-enter-november-after-a-brutal-october-is-it-time-to-buy-the-dip-09d8aff8?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-11-02T12:13:12.620832+00:00"
   }
  ],
  "last_digest": "2026-11-01",
@@ -12265,7 +12292,6 @@
    "0001213900-26-114605",
    "0001193125-26-442514",
    "0001193125-26-442557",
-   "0001493152-26-049498",
    "0001213900-26-114609",
    "0001731122-26-001386",
    "0001213900-26-114607",
