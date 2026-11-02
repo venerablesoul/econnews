@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "5db41524081c86e6": "2026-10-30T17:25:57.587205+00:00",
   "8502f06905da9743": "2026-10-30T17:30:57.413191+00:00",
   "006348404d2b5446": "2026-10-30T17:30:57.413191+00:00",
   "fd35a26dd9755638": "2026-10-30T17:35:57.462126+00:00",
@@ -583,22 +582,11 @@
   "a4c2a3d9375a3676": "2026-11-02T17:19:12.741950+00:00",
   "be99a58bc3662e79": "2026-11-02T17:24:12.724036+00:00",
   "a27d45c34fde8667": "2026-11-02T17:24:12.724036+00:00",
-  "16aa85ff0b89d9da": "2026-11-02T17:24:12.724036+00:00"
+  "16aa85ff0b89d9da": "2026-11-02T17:24:12.724036+00:00",
+  "77d4f9c6508ff1e8": "2026-11-02T17:29:12.653752+00:00",
+  "b8d9ef555bd24120": "2026-11-02T17:29:12.653752+00:00"
  },
  "recent": [
-  {
-   "title": "COMMENTARY: Big Oil's spending caution speaks louder than its profits",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQNEpvcHduNHFiT3VhT2lnSkhCN2dMTkEyd00tWUw5OXZheGhWRW0zdEFhVmxkcl9tV1JkSDV5MEZxWG5DUEVsQW5MVTB4RFQtUVpoeUlfM09BWGtkWmRjLWlpQml1alR3UjlmZHY0anVwOHJ4UGxHcTF2cmVTRFFqRjAtRnVlcTUxX3hMZVVlYTRlemVPVkxibEdQSGZ5Q1ZWTkp4aDR1NnJ4aUxDRVNDSUxSS1V3eW5HRThnQmphQTA5ZnM?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T17:25:57.587205+00:00",
-   "title_ru": "КОММЕНТАРИЙ: Осторожность в расходах Большой Нефти говорит громче, чем ее прибыль",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "South Africa’s Godongwana Says GDP Lift Creates Fiscal Headroom",
    "link": "https://www.bloomberg.com/news/articles/2026-10-30/south-africa-s-godongwana-says-gdp-lift-creates-fiscal-headroom",
@@ -5034,6 +5022,16 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "The Real Signal From Last Week",
+   "link": "https://www.bloomberg.com/news/newsletters/2026-11-02/the-real-signal-from-last-week",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T17:29:12.653752+00:00",
+   "title_ru": "Настоящий сигнал прошлой недели"
   }
  ],
  "last_digest": "2026-11-01",
@@ -11929,7 +11927,6 @@
    "0001464277-26-000005",
    "0000105634-26-000136",
    "0001555392-26-000004",
-   "0000105634-26-000134",
    "0001193125-26-443094"
   ],
   "errors": {
