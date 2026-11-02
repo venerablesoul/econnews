@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "10abcf17d5a3c337": "2026-10-30T08:09:40.226317+00:00",
   "30137c2ead197573": "2026-10-30T08:14:40.201320+00:00",
   "feeb02f0131ef378": "2026-10-30T08:14:40.201320+00:00",
   "86a2534e4818ab36": "2026-10-30T08:19:40.243391+00:00",
@@ -605,19 +604,11 @@
   "766e1043bdb930cd": "2026-11-02T07:37:31.222958+00:00",
   "6414492adbec6ce5": "2026-11-02T07:37:31.222958+00:00",
   "9dd8ac28474bfd4a": "2026-11-02T07:42:31.252878+00:00",
-  "fb717efa2c61e0d3": "2026-11-02T07:42:31.252878+00:00"
+  "fb717efa2c61e0d3": "2026-11-02T07:42:31.252878+00:00",
+  "dc63ee44f2de3265": "2026-11-02T08:07:31.279131+00:00",
+  "a4db85d54ac58840": "2026-11-02T08:12:31.238654+00:00"
  },
  "recent": [
-  {
-   "title": "Panasonic's battery unit posts higher Q2 operating profit, lifts forecast",
-   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNdW9XT0VnVkJhTExzZk12WFd4RW5KeTVhUFItbVJXN1NkLURVUkU4Nl9WaXB6al9tVU4yQjYwN1plMjMwQ2lKcUVnbU5SNWVaQTZyUlA5TDJjOEpLRjY4bEVoa1l3ZkdfVUxIdWhLdXZvRXN3QWdsQzJkM1RIOEhha2JPNkttM0V6M2dqa0ktLVhHOHVzXzlxeVNVcTVGNUZpeEx4SEx2LXRyTUthTktYTFlHU0xPeHR2ZG5XdFdUMHhLSFBkcjdKT2gyc2Jlbk5YcW5j?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T08:09:40.226317+00:00",
-   "title_ru": "Аккумуляторный блок Panasonic показал более высокую операционную прибыль во втором квартале, прогноз лифтов"
-  },
   {
    "title": "Earnings give European auto stocks respite as China reshapes the industry",
    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNYmpZUjQ4ejFRakhjWHpiVjJDSDZuTXhEWFJMUmFCdnlqdmEwY0lOUzg4Y0gwZjNDY1k0MVdtVEUteVVVX2Q5c0NMSHZSZ0hMSVZvOFY0QTE0NVhhT0pJaDE5b3RIY2JQX3QyUDZZV29uVG4zRzJ0cXZXbWVHVUxNcU8teGNUMU5kVFUwYnZCdmNtNEx0bmFVRXBVa050bmdkd1NuTy1iX01RTzMyMTZ2dmw3TVFIXzRJUXNmczdHQ3dudlNNU01NZVFfMjM?oc=5",
@@ -5408,6 +5399,19 @@
    ],
    "score": 1,
    "ts": "2026-11-02T07:42:31.252878+00:00"
+  },
+  {
+   "title": "Bitcoin’s Resilience After Binance Hack Masks Market Jitters",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxON015ekNBYXdIZHd2dExpZHUxWW9VcTAyWDFjREtEWWRHcG5STzV5MVdkdjRqdVIyT01jak9Cek1vVE1Rb2w2QW4ydzRYak51X1J5anRfaEh3enVhVGUyZFR4emgySTBhUFJsWG84TGdlVlptanlwckdmbk9aR2cyYjlsRHBQYVRFdG1ENEFUdG1YQ3daZkxJRDB0WnNTQmpfa0ZXWlRQNTlnSGI4dmtCOA?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-11-02T08:12:31.238654+00:00",
+   "title_ru": "Устойчивость биткоина после взлома Binance взламывает маски рынка",
+   "tags": [
+    "crypto"
+   ]
   }
  ],
  "last_digest": "2026-11-01",
@@ -12290,7 +12294,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-11-02T07:07:31.249024+00:00",
+  "checked": "2026-11-02T08:07:31.279131+00:00",
   "sec_seen": [
    "0001223260-26-000011",
    "0001193125-26-442116",
