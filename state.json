@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e19fddc724b13425": "2026-10-30T10:44:40.383079+00:00",
-  "270e757683fcd0b2": "2026-10-30T10:44:40.383079+00:00",
   "1e329fc55a8a180e": "2026-10-30T10:49:40.361499+00:00",
   "632fec5b0f0c53ea": "2026-10-30T10:49:40.361499+00:00",
   "30a6fe6b93678630": "2026-10-30T10:49:40.361499+00:00",
@@ -614,35 +612,10 @@
   "8a5cf12e86d82cce": "2026-11-02T10:38:12.574704+00:00",
   "e0d85af97dfe6376": "2026-11-02T10:38:12.574704+00:00",
   "a3089f85878a41a2": "2026-11-02T10:38:12.574704+00:00",
-  "d5d47d48138800d7": "2026-11-02T10:43:12.562393+00:00"
+  "d5d47d48138800d7": "2026-11-02T10:43:12.562393+00:00",
+  "183544ad06c36fd2": "2026-11-02T10:48:12.591682+00:00"
  },
  "recent": [
-  {
-   "title": "Exxon Reaps Record Oil-Refining Profits on War-Driven Gasoline, Diesel Spikes",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/exxon-reaps-record-oil-refining-profits-on-war-driven-gasoline-diesel-spikes",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T10:44:40.383079+00:00",
-   "title_ru": "Exxon получает рекордную прибыль от нефтепереработки за счет военного бензина и резкого роста дизельного топлива",
-   "lead": "ExxonMobil Holdings Corp. surpassed profit expectations on the strength of surging gasoline and diesel prices that pushed refining results to an all-time high as conflicts in the Persian Gulf and Russia upended energy markets.",
-   "lead_ru": "ExxonMobil Holdings Corp. превзошла ожидания прибыли благодаря росту цен на бензин и дизельное топливо, который поднял результаты нефтепереработки до рекордно высокого уровня, поскольку конфликты в Персидском заливе и России перевернули энергетические рынки.",
-   "tags": [
-    "oil",
-    "Russia"
-   ]
-  },
-  {
-   "title": "Germany rejects 'unfounded' claims in spat with Italy over gas storage",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPUTJpYWJ1TVZJdDF4M2NxamRjWDJsMzhiTjZmVjhNdHBzS2xEMmpWQ1JSNGJfU1RLdWhqc1RHWUg5NzlyeUs5ZjY2NGJLRFNMNGMtY09zUGJxdlNJcFdqWExhNWJfRm9JQU1TTjRIYldOUDhEeUx2SkV3QkhCVlI1c1R4ZEFmR0x3SEt6ZS1ieHNqa3l4NVQ1SHRyNXFlMWFsMVhza2F1ZU5LWGU0OXBCWGpJZ1RKakpM?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T10:44:40.383079+00:00",
-   "title_ru": "Германия отвергает «необоснованные» претензии в ссоре с Италией из-за хранения газа"
-  },
   {
    "title": "Strong Earnings Mask Growing Struggle With Inflation, Oil Prices",
    "link": "https://www.bloomberg.com/news/articles/2026-10-30/strong-earnings-mask-growing-struggle-with-inflation-oil-prices",
@@ -5383,6 +5356,19 @@
     "inflation",
     "oil",
     "bonds"
+   ]
+  },
+  {
+   "title": "Currie Sees Permanent 'Regime Shift' in Oil Market (Video)",
+   "link": "https://www.bloomberg.com/news/videos/2026-11-02/currie-sees-permanent-regime-shift-in-oil-market-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-11-02T10:48:12.591682+00:00",
+   "title_ru": "Карри видит постоянный «сдвиг режима» на нефтяном рынке (видео)",
+   "tags": [
+    "oil"
    ]
   }
  ],
