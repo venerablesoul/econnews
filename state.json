@@ -1,18 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "6c60aef9d310b278": "2026-10-30T20:50:57.485988+00:00",
-  "694429867ab4fb5c": "2026-10-30T20:50:57.485988+00:00",
-  "e9beba98e362da41": "2026-10-30T21:00:57.435260+00:00",
-  "0ac234b29229d2d0": "2026-10-30T21:05:57.563199+00:00",
-  "1bf87ea48f59e51d": "2026-10-30T21:05:57.563199+00:00",
-  "1458fdc846e58964": "2026-10-30T21:10:57.415002+00:00",
-  "915383bd55cd1c17": "2026-10-30T21:30:57.363173+00:00",
-  "0d5909b14aa36cb7": "2026-10-30T21:35:57.414451+00:00",
-  "7dfec90d8fc4410b": "2026-10-30T21:35:57.414451+00:00",
-  "9b689421c976fbc6": "2026-10-30T21:45:57.340971+00:00",
-  "c16147f998ebcd7a": "2026-10-30T21:50:57.368034+00:00",
-  "24c01e0e944f16f6": "2026-10-30T21:55:57.408825+00:00",
   "f92ccf6d2ee40ad0": "2026-10-30T22:00:57.473497+00:00",
   "2bc1cf592e278a36": "2026-10-30T22:05:57.534426+00:00",
   "c32d011f86039561": "2026-10-30T22:05:57.534426+00:00",
@@ -581,65 +569,22 @@
   "cca935faf02ef498": "2026-11-02T20:09:12.787977+00:00",
   "46a7357bb58ce575": "2026-11-02T20:14:13.014984+00:00",
   "8ad8643929ec4b02": "2026-11-02T20:34:12.830115+00:00",
-  "731ae6de59326bf1": "2026-11-02T20:39:13.827707+00:00"
+  "731ae6de59326bf1": "2026-11-02T20:39:13.827707+00:00",
+  "a409f8ebdb3f8eb3": "2026-11-02T22:00:44.451514+00:00",
+  "4e1e4f46bb88d01c": "2026-11-02T22:00:44.451514+00:00",
+  "e1524b5607fa76ee": "2026-11-02T22:00:44.451514+00:00",
+  "f7baa56a8da32922": "2026-11-02T22:00:44.451514+00:00",
+  "5f2167d13499370f": "2026-11-02T22:00:44.451514+00:00",
+  "4169bdc6a3e37e46": "2026-11-02T22:00:44.451514+00:00",
+  "8b005ff3ce01402f": "2026-11-02T22:00:44.451514+00:00",
+  "b6dbdc2a65422000": "2026-11-02T22:00:44.451514+00:00",
+  "28d23ba9c8cf7848": "2026-11-02T22:00:44.451514+00:00",
+  "cb430857d5850dc5": "2026-11-02T22:00:44.451514+00:00",
+  "47fea221fcca9969": "2026-11-02T22:00:44.451514+00:00",
+  "d350690bbc3e0b93": "2026-11-02T22:00:44.451514+00:00",
+  "2e6279590d813ab4": "2026-11-02T22:00:44.451514+00:00"
  },
  "recent": [
-  {
-   "title": "- Bureau of Labor Statistics (.gov)",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPZGJuZExpNXp6V1ROWnQ3d3o5VHhMM1VfaVdFSE1hOHJyOFFXZW1mdXZRSk4xQTZQbG15ZWt0clU1YTIxZnhPWUdPT21yXzBpRVMtOW1TdV9VUXQyOFltR19FS1BJZjlHUTNxa2pIa2EyTjVFM0Y5Z0loLXJMY2xGRGtCa0U0eHdOM3QzN3hPYVdNVXdzS0dqNThfODhybzJpODZKbjlGOHVSa3FrcG1vTVVtbEQwdw?oc=5",
-   "sources": [
-    "US Labor Statistics (BLS)"
-   ],
-   "score": 4,
-   "ts": "2026-10-30T20:50:57.485988+00:00",
-   "title_ru": "- Бюро трудовой статистики"
-  },
-  {
-   "title": "Hedge Funds Boost Natural Gas Short Positions to Most on Record",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/hedge-funds-boost-natural-gas-short-positions-to-most-on-record",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T20:50:57.485988+00:00",
-   "title_ru": "Хедж-фонды увеличивают короткие позиции по природному газу до рекордного уровня",
-   "lead": "Hedge funds this week amassed the largest-ever short position on US natural gas on expectations that an unusually warm winter will slash demand for the furnace and power-plant fuel.",
-   "lead_ru": "Хедж-фонды на этой неделе накопили самую большую в истории короткую позицию по природному газу в США, ожидая, что необычно теплая зима сократит спрос на топливо для печей и электростанций.",
-   "tags": [
-    "gas"
-   ]
-  },
-  {
-   "title": "Ukraine: Technical Assistance Report-Assessment of Energy Subsidy Fiscal Cost and Reform Options",
-   "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOUzdoRlpXVUhGSHJMaW5mZW9NM2NIQTFuVnFWSUhkZTVTN1RwQ0JqYkRCcUxMTWpwckpiNGpFaEhlRFM3b2ppMnN4a2dkcnRYd1JXQzR0ZzNyR3dnT1JZUW9aVXNqSEJ5Wk93N0R3ZV9ZR0dTbkw0OE1vWGlsYU9rM01yV0dTelBaNGhSRjIyLTlOMlRaR2Q4Mnk2RHl5aEpsYXJLeks1eVcyT1VIWjlzUU5aWTFMTmVaTTFuYTRvekpwWjY2YnpaOExOTl92TXpWbkZTZjVzczViNlg2YzRGZnloNWFQWkhrWUc4SVd2ZU10RUVQSU93NnFPTXZFRXJaaS1VeTBUT0w?oc=5",
-   "sources": [
-    "IMF"
-   ],
-   "score": 4,
-   "ts": "2026-10-30T21:05:57.563199+00:00",
-   "title_ru": "Украина: Отчет о технической помощи - Оценка фискальных затрат на энергетические субсидии и варианты реформ"
-  },
-  {
-   "title": "Wall Street Boom to Cut New York State Budget Deficit in Half",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/wall-street-boom-to-cut-new-york-state-budget-deficit-in-half",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-30T21:10:57.415002+00:00",
-   "title_ru": "Бум на Уолл-стрит сократит дефицит бюджета штата Нью-Йорк вдвое",
-   "lead": "New York projected the budget deficit will narrow by $3.5 billion next year as the state expects a boom in trading and borrowing to deliver record profits to Wall Street and stronger bonus payments to boost revenue.",
-   "lead_ru": "Нью-Йорк прогнозирует, что дефицит бюджета сократится на $ 3,5 млрд в следующем году, поскольку штат ожидает, что бум в торговле и заимствованиях принесет рекордную прибыль Уолл-стрит и усилит бонусные выплаты для увеличения доходов."
-  },
-  {
-   "title": "Why gold plunged to its lowest price in a year despite renewed Iran jitters",
-   "link": "https://www.marketwatch.com/story/why-gold-plunged-to-its-lowest-price-in-a-year-despite-renewed-iran-jitters-365be0e2?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-30T21:35:57.414451+00:00"
-  },
   {
    "title": "GDP based on PPP, share of world",
    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5jb1FuQmhTU0dJbnQwN2YtOTg3UndWVjJ3Nm5kLUtCNzVob0ZPOFR6V1I2b1A1UTRUcFJOYUlleERZVGNwVC00UkRXbldDZXk3UGNMTHdKcDBPX2VGRkw2S2tfSQ?oc=5",
@@ -5005,6 +4950,124 @@
    ],
    "score": 1,
    "ts": "2026-11-02T20:34:12.830115+00:00"
+  },
+  {
+   "title": "US Inflation: Millions of Data Points Show Some Price Pressures Easing",
+   "link": "https://www.bloomberg.com/graphics/2026-inflation-price-index/",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-11-02T22:00:44.451514+00:00",
+   "title_ru": "Инфляция в США: миллионы данных показывают некоторое ослабление ценового давления",
+   "lead": "The Bloomberg Price Project offers an independent read on inflation: The headline is high, but the details reveal some price pressures easing.",
+   "lead_ru": "Ценовой проект Bloomberg предлагает независимый взгляд на инфляцию: заголовки громкие, но детали показывают некоторое ослабление ценового давления.",
+   "tags": [
+    "inflation"
+   ]
+  },
+  {
+   "title": "Learjet May Have Broken Up Before Fatal Florida Crash, NTSB Says",
+   "link": "https://www.bloomberg.com/news/videos/2026-11-02/learjet-may-have-broken-up-before-fatal-florida-crash-ntsb-says",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-11-02T22:00:44.451514+00:00",
+   "title_ru": "По данным NTSB, самолет Learjet мог распасться еще до катастрофы во Флориде",
+   "lead": "US air safety investigators said there are early indications the Learjet 60 that crashed in Palm Beach, Florida, on Sunday had broken up before impacting the ground, killing all nine people on board and injuring at least one…",
+   "lead_ru": "Американские следователи по вопросам воздушной безопасности заявили, что есть первые признаки того, что самолет Learjet 60, разбившийся в воскресенье в Палм-Бич, штат Флорида, разбился, прежде чем удариться о землю, в результате чего погибли все девять человек на борту и был ранен как минимум один..."
+  },
+  {
+   "title": "TSX gains as crude slide lifts sentiment",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQZmk5ay1rLUx4aURIYmtJVlFHeWl1VXBhelo0Xzk2U0t3VEhZbDFidEp3aVEwTnp1YVBmMGw0UktRaDdkdGQ0RWltWUhldzFIOXZXb3BRVHZQNUhTcnBwWHJaX25veW5MM1dqQzNOMjhYUmRsYXNHVllpeFNiOW1ERGk2aEpNbHFVTFJhOWxPTVNOZXdtdnhDbm1qRUhmMmc?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-11-02T22:00:44.451514+00:00",
+   "title_ru": "TSX растет, поскольку падение цен на нефть улучшает настроения",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "Aggregate Returns, Local Costs, the Externality Gap in Public Investment Appraisal",
+   "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5BbGNqR2hXU2g0bVhfOGEzMFVSRkllOEFPZ0xrNGZ3UnhtdnNOell0SVREZDV1ZG1CUlN5MGcxSlNxQl93eE0tcFlZdkpUUkNYWWJmWDBHMWJqOER0cUJEeXRnemRoZHZXcG9na0hiRi1KQ0dOTVIzWU0yQQ?oc=5",
+   "sources": [
+    "IMF"
+   ],
+   "score": 4,
+   "ts": "2026-11-02T22:00:44.451514+00:00",
+   "title_ru": "Совокупная доходность, местные издержки, разрыв внешних эффектов в оценке государственных инвестиций"
+  },
+  {
+   "title": "ETF Anthropic Exposure, Political Funds, BOJ Unwinds ETFs",
+   "link": "https://www.bloomberg.com/news/videos/2026-11-02/etf-iq-10-2-2026-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T22:00:44.451514+00:00",
+   "title_ru": "Антропическое воздействие ETF, политические фонды, Банк Японии раскручивает ETF",
+   "lead": "\"Bloomberg ETF IQ\" focuses on the opportunities, risks and current trends tied to the trillions of dollars in the global exchange traded funds industry.",
+   "lead_ru": "«Bloomberg ETF IQ» фокусируется на возможностях, рисках и текущих тенденциях, связанных с триллионами долларов в мировой индустрии биржевых фондов.",
+   "tags": [
+    "dollar"
+   ]
+  },
+  {
+   "title": "Bangladesh’s LNG Crunch Is a Warning for Emerging Markets",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOYzROT2RRWWdyRF9qekNsaU1VX1hDaGVCMDA5R1lzLWxHVFNyZHZ4dGJ3ZEdITGg0ckFXZjlMQXd2MnJSTmxOaFlabzdVSTQ5T01FaGtrbEJoRGdmcFVvMjJXQk5IS1drTkZncWhKRnA5ODdLY0xYUlZMRTN6QlJHT0p1NGJPSDdLZGVtZnlJeVMwdGhvcDJER2dYTFBtQVlvVkpWRHpUZTZrZzJ4Zkl1R2NCNThCX2M?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T22:00:44.451514+00:00",
+   "title_ru": "Крах СПГ в Бангладеш является предупреждением для развивающихся рынков",
+   "tags": [
+    "gas"
+   ]
+  },
+  {
+   "title": "Business loan demand softened last quarter, Fed survey shows",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNMzNnZWFhS1d5NHc2VEl6ZXZ2RWRnd0o4ZnQ5OWZQLTV4UzBRdVlFVk85dFRrUDNfVmVXb3NDdzNqTTliZzJVandYUEpRcHZuUDdObFhSVTFDWnNCOWYydTUxME5hNElLQzJoVUlCQUYxdUc2TlpEeHlzLTM3clcwOElaM3hBX3lybnNFMWUzYWpsN3FOS2ktc1puVEd1dFRDcWpVWmlFaw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T22:00:44.451514+00:00",
+   "title_ru": "Спрос на бизнес-кредиты в прошлом квартале снизился, показывает опрос ФРС",
+   "tags": [
+    "Fed"
+   ]
+  },
+  {
+   "title": "Wall Street’s most hated stocks are faring far better than its favorites",
+   "link": "https://www.marketwatch.com/story/wall-streets-most-hated-stocks-are-faring-far-better-than-its-favorites-4c1d6c68?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-11-02T22:00:44.451514+00:00"
+  },
+  {
+   "title": "The stock market has gone nowhere for the past 5 months. It’s now looking like a bargain.",
+   "link": "https://www.marketwatch.com/story/the-stock-market-has-gone-nowhere-for-the-past-5-months-its-now-looking-like-a-bargain-150914c2?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-11-02T22:00:44.451514+00:00"
+  },
+  {
+   "title": "Palantir earnings reveal a major AI turning point",
+   "link": "https://www.marketwatch.com/story/palantir-earnings-reveal-a-major-ai-turning-point-db766110?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-11-02T22:00:44.451514+00:00"
   }
  ],
  "last_digest": "2026-11-02",
@@ -6011,6 +6074,96 @@
  "all_down_alerted": false,
  "trades": {
   "congress": [
+   {
+    "src": "house",
+    "who": "John J Mr McGuire III",
+    "where": "House, VA-05",
+    "owner": "SP",
+    "ticker": "MU",
+    "asset": "Micron Technology, Inc. - Common Stock",
+    "type": "buy",
+    "amin": 1001,
+    "amax": 15000,
+    "date": "2026-10-01",
+    "disclosed": "2026-11-01",
+    "link": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035484.pdf",
+    "id": "c510ae9eb03cd0a0"
+   },
+   {
+    "src": "house",
+    "who": "John J Mr McGuire III",
+    "where": "House, VA-05",
+    "owner": "SP",
+    "ticker": "MU",
+    "asset": "Micron Technology, Inc. - Common Stock",
+    "type": "buy",
+    "amin": 1001,
+    "amax": 15000,
+    "date": "2026-09-24",
+    "disclosed": "2026-11-01",
+    "link": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035484.pdf",
+    "id": "4e77ea7b556bfe27"
+   },
+   {
+    "src": "house",
+    "who": "Thomas H. Kean Jr",
+    "where": "House, NJ-07",
+    "owner": "",
+    "ticker": "ESAB",
+    "asset": "ESAB Corporation Common Stock",
+    "type": "buy",
+    "amin": 1001,
+    "amax": 15000,
+    "date": "2026-09-29",
+    "disclosed": "2026-10-30",
+    "link": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035591.pdf",
+    "id": "daf95301704ce4b2"
+   },
+   {
+    "src": "house",
+    "who": "Carol Devine Miller",
+    "where": "House, WV-01",
+    "owner": "SP",
+    "ticker": "HONA",
+    "asset": "Honeywell Aerospace Inc. - Common",
+    "type": "sell",
+    "amin": 710,
+    "amax": 710,
+    "date": "2026-09-29",
+    "disclosed": "2026-10-30",
+    "link": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035734.pdf",
+    "id": "8e166ff5b77fa494"
+   },
+   {
+    "src": "house",
+    "who": "Thomas H. Kean Jr",
+    "where": "House, NJ-07",
+    "owner": "",
+    "ticker": "MDLZ",
+    "asset": "Mondelez International, Inc. - Class A Common Stock",
+    "type": "sell_part",
+    "amin": 1001,
+    "amax": 15000,
+    "date": "2026-09-23",
+    "disclosed": "2026-10-30",
+    "link": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035591.pdf",
+    "id": "ca01300e648d9bc5"
+   },
+   {
+    "src": "house",
+    "who": "Thomas H. Kean Jr",
+    "where": "House, NJ-07",
+    "owner": "",
+    "ticker": "TXN",
+    "asset": "Texas Instruments Incorporated - Common Stock",
+    "type": "buy",
+    "amin": 1001,
+    "amax": 15000,
+    "date": "2026-09-17",
+    "disclosed": "2026-10-30",
+    "link": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035591.pdf",
+    "id": "618452f595666eea"
+   },
    {
     "src": "house",
     "who": "David J. Taylor",
@@ -7860,6 +8013,22 @@
   "insiders": [
    {
     "src": "sec",
+    "id": "9a7aac4b033eb896",
+    "ticker": "ENPH",
+    "company": "Enphase Energy, Inc.",
+    "who": "Badrinarayanan Kothandaraman",
+    "role": "CEO",
+    "type": "buy",
+    "value": 267514,
+    "shares": 10000,
+    "price": 26.75,
+    "plan": false,
+    "date": "2026-11-02",
+    "disclosed": "2026-11-02",
+    "link": "https://www.sec.gov/Archives/edgar/data/1543777/000154377726000006/0001543777-26-000006-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "5e3c2dbfef2ed1af",
     "ticker": "API",
     "company": "Agora, Inc.",
@@ -8113,6 +8282,22 @@
     "date": "2026-10-29",
     "disclosed": "2026-11-02",
     "link": "https://www.sec.gov/Archives/edgar/data/1812083/000007330926000137/0000073309-26-000137-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "24ff9f51bbf36bf1",
+    "ticker": "CB",
+    "company": "Chubb Ltd",
+    "who": "Evan G Greenberg",
+    "role": "CEO",
+    "type": "sell",
+    "value": 5000322,
+    "shares": 13889,
+    "price": 360.02,
+    "plan": false,
+    "date": "2026-10-29",
+    "disclosed": "2026-11-02",
+    "link": "https://www.sec.gov/Archives/edgar/data/1162125/000119312526443849/0001193125-26-443849-index.htm"
    },
    {
     "src": "sec",
@@ -11825,38 +12010,6 @@
     "date": "2026-10-23",
     "disclosed": "2026-10-26",
     "link": "https://www.sec.gov/Archives/edgar/data/2110932/000008042426000260/0000080424-26-000260-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "ebce5a825bee4787",
-    "ticker": "PG",
-    "company": "PROCTER & GAMBLE Co",
-    "who": "Balaji Purushothaman",
-    "role": "Chief Human Resources Officer",
-    "type": "sell",
-    "value": 671929,
-    "shares": 4181,
-    "price": 160.71,
-    "plan": false,
-    "date": "2026-10-23",
-    "disclosed": "2026-10-26",
-    "link": "https://www.sec.gov/Archives/edgar/data/1957262/000008042426000261/0000080424-26-000261-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "b63e55386f48ae7b",
-    "ticker": "LRCX",
-    "company": "LAM RESEARCH CORP",
-    "who": "Timothy Archer",
-    "role": "CEO",
-    "type": "sell",
-    "value": 7128428,
-    "shares": 31400,
-    "price": 227.02,
-    "plan": true,
-    "date": "2026-10-23",
-    "disclosed": "2026-10-26",
-    "link": "https://www.sec.gov/Archives/edgar/data/1343600/000134360026000015/0001343600-26-000015-index.htm"
    }
   ],
   "docs": {
@@ -11879,7 +12032,11 @@
    "9116390": "2026-10-27",
    "9116391": "2026-10-27",
    "20035710": "2026-10-28",
-   "20035727": "2026-10-29"
+   "20035727": "2026-10-29",
+   "20035591": "2026-10-30",
+   "20035734": "2026-10-30",
+   "20035743": "2026-11-01",
+   "20035484": "2026-11-01"
   },
   "queue": [],
   "ready": {
@@ -11887,24 +12044,42 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-11-02T19:49:12.633005+00:00",
+  "checked": "2026-11-02T22:00:44.451514+00:00",
   "sec_seen": [
-   "0001628280-26-068817",
-   "0002058080-26-000013",
-   "0001745627-26-000003",
-   "0001628280-26-068824",
-   "0001628280-26-068826",
-   "0001705978-26-000015",
-   "0001532918-26-000005",
-   "0002010300-26-000037",
-   "0002006590-26-000005",
-   "0001657302-26-000002",
-   "0002084757-26-000005",
-   "0001628280-26-068821",
-   "0001628280-26-068819",
-   "0001186284-26-000013",
-   "0000073309-26-000137",
-   "0002058079-26-000013"
+   "0001476267-26-000002",
+   "0001104659-26-121431",
+   "0000882184-26-000136",
+   "0000921895-26-002903",
+   "0000944148-26-000125",
+   "0001193125-26-443849",
+   "0001104659-26-121435",
+   "0001104659-26-121449",
+   "0000882184-26-000140",
+   "0001104659-26-121439",
+   "0001104659-26-121429",
+   "0002043317-26-000018",
+   "0000882184-26-000138",
+   "0000882184-26-000137",
+   "0001193125-26-443820",
+   "0001543777-26-000006",
+   "0001626337-26-000013",
+   "0001628280-26-068938",
+   "0001437749-26-034464",
+   "0001207703-26-000002",
+   "0000944148-26-000122",
+   "0000944148-26-000124",
+   "0001104659-26-121433",
+   "0002060650-26-000012",
+   "0000882184-26-000139",
+   "0001104659-26-121443",
+   "0000944148-26-000123",
+   "0000882184-26-000135",
+   "0001746640-26-000010",
+   "0001492475-26-000002",
+   "0001104659-26-121451",
+   "0001104659-26-121454",
+   "0001104659-26-121434",
+   "0002042647-26-000016"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
