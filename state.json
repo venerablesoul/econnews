@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "55c927a9c2721998": "2026-10-30T19:25:57.448317+00:00",
   "8d0386ce6a869e3b": "2026-10-30T19:35:57.362130+00:00",
   "9bd14b503fcad369": "2026-10-30T19:45:57.448462+00:00",
   "83583db568662751": "2026-10-30T19:50:57.310337+00:00",
@@ -591,23 +590,10 @@
   "0c8b9f1e0de8e424": "2026-11-02T19:19:12.599819+00:00",
   "95a7b98b48ab55f9": "2026-11-02T19:19:12.599819+00:00",
   "89fd21ff30e7fa00": "2026-11-02T19:24:12.610726+00:00",
-  "e91bb3380283a137": "2026-11-02T19:24:12.610726+00:00"
+  "e91bb3380283a137": "2026-11-02T19:24:12.610726+00:00",
+  "ff7bc5fc1cd3f673": "2026-11-02T19:34:12.727806+00:00"
  },
  "recent": [
-  {
-   "title": "Freight rates for Russian oil stay at record highs amid tanker shortage, Black Sea risks, sources say",
-   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPb3FtR2JUVEZGLVVwY0FJd0FSLWZHRnVFQzFENHNlbzczYkhZUy1RSExsdGotNF90S01qMlNqR3Jua2NRZ0dtZ1dnYkUzRDlCZ0h6UnZZMGVJVmU4dEU4RTdZWWR1R3pGUjhlVEVEU0lyc2d3SURKZ3lVdzQ3M1M4aFRrc2pVVUJ5ZlVIZmd0WVBvRnNQbVRqN2dJSXg2NGNSeDA2cGtmT2dGcUhTS2tyOHd5RWNuVTdFeG80UkpGX2ZyS19wUjZNRWtGMnU?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T19:25:57.448317+00:00",
-   "title_ru": "Фрахтовые ставки на российскую нефть остаются на рекордно высоком уровне на фоне нехватки танкеров и рисков на Черном море, говорят источники",
-   "tags": [
-    "oil",
-    "Russia"
-   ]
-  },
   {
    "title": "Inflation dips in key German states in October, pointing to national fall",
    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQWTdVamplZlpGMFdHNko3OUNfRzVPWjhhNVVoXzUyb0xEZUdvZlJidVR3akRlZGVKUURfYmo4dHYxcW1vbS1KMGk5OTAyMXRtNFU3SzBuOHQwVDVRSzZvRjNYOWo3STJ4T0wzU0lpWXpVRlUtNXFId3B0V3ZtYnI2ZGFyLUl3a1RmTVc4VUdrM1pQeFU1ZlpsdG5jODlmLTM4RHJ6X1JoMTk1N0Vk?oc=5",
@@ -5120,6 +5106,22 @@
    "lead_ru": "Премьер-министру Марку Карни грозит волна судебных оспариваний его решения ускорить строительство трубопровода в соответствии с правовым механизмом, разработанным его правительством для ускорения строительства основной инфраструктуры.",
    "tags": [
     "oil"
+   ]
+  },
+  {
+   "title": "How soon gas prices could go down now that oil is tumbling",
+   "link": "https://www.marketwatch.com/story/how-soon-gas-prices-could-go-down-now-that-oil-is-tumbling-a1140dc2?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T19:34:12.727806+00:00",
+   "title_ru": "Как скоро цены на газ могут упасть сейчас, когда нефть падает",
+   "lead": "Retail gas prices dropped to $4.12 a gallon on Monday, as U.S. oil prices fell below $100 a barrel.",
+   "lead_ru": "Розничные цены на бензин упали до $4,12 за галлон в понедельник, поскольку цены на нефть в США упали ниже $100 за баррель.",
+   "tags": [
+    "oil",
+    "gas"
    ]
   }
  ],
@@ -12005,11 +12007,10 @@
   },
   "checked": "2026-11-02T18:44:12.704510+00:00",
   "sec_seen": [
-   "0001628280-26-068788",
-   "0001628280-26-068787",
-   "0000721994-26-000081",
-   "0001628280-26-068783",
-   "0001251824-26-000011"
+   "0001628280-26-068794",
+   "0001628280-26-068793",
+   "0001251824-26-000011",
+   "0001628280-26-068792"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
