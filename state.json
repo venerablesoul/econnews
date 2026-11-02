@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "0ae05c65d70e2947": "2026-10-30T07:24:40.225378+00:00",
-  "9da5d36257b3e643": "2026-10-30T07:24:40.225378+00:00",
-  "b00a6aa99d6faf9f": "2026-10-30T07:24:40.225378+00:00",
   "165308cbc7e7bb81": "2026-10-30T07:29:40.231583+00:00",
   "e4239707bd87c056": "2026-10-30T07:34:40.288000+00:00",
   "f849db3be60f20f3": "2026-10-30T07:39:40.244984+00:00",
@@ -604,33 +601,13 @@
   "e6de4236ad80b7d0": "2026-11-02T07:12:31.238929+00:00",
   "7409ede02a8c42d7": "2026-11-02T07:12:31.238929+00:00",
   "1f651da76bbd7efb": "2026-11-02T07:22:31.258948+00:00",
-  "282f1a76e82e3071": "2026-11-02T07:22:31.258948+00:00"
+  "282f1a76e82e3071": "2026-11-02T07:22:31.258948+00:00",
+  "9c22998a5063ce22": "2026-11-02T07:27:31.298691+00:00",
+  "1dd13bdd36c6ce53": "2026-11-02T07:27:31.298691+00:00",
+  "c987de4af383331c": "2026-11-02T07:27:31.298691+00:00",
+  "0350d846b1426869": "2026-11-02T07:27:31.298691+00:00"
  },
  "recent": [
-  {
-   "title": "BP Profit Hits 18-Year High as Oil Refining Margins Surge",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/bp-profit-surges-as-refining-windfall-aids-o-neill-turnaround",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T07:24:40.225378+00:00",
-   "title_ru": "Прибыль BP достигла 18-летнего максимума, поскольку маржа нефтепереработки выросла",
-   "lead": "BP Plc said profit surged to the highest in 18 years as soaring refining margins boosted earnings, giving Chief Executive Officer Meg O’Neill a powerful tailwind as she seeks to turn around the beleaguered British energy major.",
-   "lead_ru": "BP Plc заявила, что прибыль выросла до самого высокого уровня за 18 лет, поскольку растущая маржа нефтепереработки увеличила прибыль, предоставив генеральному директору Мэг О 'Нил мощный попутный ветер, поскольку она стремится обойти осажденного британского энергетического гиганта.",
-   "tags": [
-    "oil"
-   ]
-  },
-  {
-   "title": "UK house price growth fizzling out; crypto industry rocked by $6.3bn Binance hack – business live",
-   "link": "https://www.theguardian.com/business/live/2026/oct/30/uk-house-price-growth-crypto-industry-6bn-binance-hack-eurozone-france-gdp-latest-news-updates",
-   "sources": [
-    "The Guardian"
-   ],
-   "score": 2,
-   "ts": "2026-10-30T07:24:40.225378+00:00"
-  },
   {
    "title": "Rupee to benefit from dollar retreat, plunging US yields; oil surge tempers impact",
    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQX0wyQUhET0IxcG5GWUFTZnU3dGdfR3FaNW1LXzFzdGw0UTU0ejdMNDE0R2hMWUVpR3RYVHN6bU5ZMXRvTlQwTW5tZVo2dlBGZVByOC1BMGxHZzUwTmN0R0Rka3R3RXQ2Mm9nanlJcjFJTS1FaVRiVFNMV0U0S3lLWU1HU3QwSkw3QzZ0dGpOX2E2Q0wyQXlaNmQtelhiQW9vMXotZkI2Zlh5NG9Rc0VCVlU2MkNfX1kyY1JzUQ?oc=5",
@@ -5335,6 +5312,42 @@
    "tags": [
     "China"
    ]
+  },
+  {
+   "title": "Кабмин запретил вывоз некоторых видов нефтехимической промышленности",
+   "link": "https://www.rbc.ru/economics/02/11/2026/6ae82cfc8cdf37cb9f0d889d",
+   "sources": [
+    "RBC"
+   ],
+   "score": 4,
+   "ts": "2026-11-02T07:27:31.298691+00:00",
+   "title_en": "The Cabinet of Ministers banned the export of certain types of petrochemical industry",
+   "lead": "Правительство России на три месяца запретило вывоз отдельных видов нефтехимической продукции за пределы Евразийского экономического союза (ЕАЭС), сообщает пресс-служба кабмина.",
+   "lead_en": "The Russian government banned the export of certain types of petrochemical products outside the Eurasian Economic Union (EAEU) for three months, the press service of the Cabinet of Ministers reports.",
+   "tags": [
+    "oil",
+    "Russia"
+   ]
+  },
+  {
+   "title": "Hong Kong Chip IPOs Tap Intertwined Investors, Boss’s Networks",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNVkpCb2RZUUUwbmJzdElFaG5Lem54VEJ2Q0FPVGROLXZnSlFHUXp1bmp5QU1KckxyeWJ2TGJ6bjJqSVRjMFdmT21mM3hGcGFpSk9JV281Qno0TFBJU0NOWTJhOUozaWxORGVxOHRVWHBFT0Z4WEZxbWhIckZURU9EUXEtOXZKMk5zbTh5cHZ2QUZianhxME9KVTFUZ1ozeVZHWkExTWRrT29wVjFMcFJva3Rn?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T07:27:31.298691+00:00",
+   "title_ru": "IPO Hong Kong Chip Tap Intertwined Investors, Boss's Networks"
+  },
+  {
+   "title": "Watch Inside Indonesia’s Wash-Trade Scheme",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNcldxTTdldGtnMHhGSmhIX0RwZXJ1T3pGaHpFMU9fS2h2UXVtZm1lVzlUU1ZVcUF1WXA5bTlsOGxFOGd4Z1FpakxXUHlIZ2hPMlZwcWpZWHNlV19lcGdDaUVGVWxFaDZucVBEcklicmpLOWhCZVhWSUpLM2tINHFvMHpNSGZEZVZEZWpMdmtqVEdlWjNSZFE?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T07:27:31.298691+00:00",
+   "title_ru": "Смотрите «Внутри индонезийской схемы торговли стиркой»"
   }
  ],
  "last_digest": "2026-11-01",
@@ -12233,8 +12246,10 @@
    "0001193532-26-000012",
    "0001697362-26-000021",
    "0001628280-26-068639",
+   "0001451763-26-000014",
    "0001493152-26-049498",
    "0001280486-26-000010",
+   "0001193125-26-442229",
    "0001213900-26-114605",
    "0002014293-26-000012",
    "0001824159-26-000015",
@@ -12244,7 +12259,6 @@
    "0001628280-26-068641",
    "0001213900-26-114608",
    "0001477932-26-006563",
-   "0000091440-26-000174",
    "0001628280-26-068637",
    "0001213900-26-114604",
    "0001493152-26-049496",
@@ -12255,15 +12269,14 @@
    "0001193125-26-442142",
    "0001193125-26-442230",
    "0001213900-26-114609",
-   "0001214659-26-013568",
    "0002025268-26-000008",
    "0002014386-26-000026",
    "0002014361-26-000040",
    "0001231919-26-001519",
    "0001213900-26-114611",
    "0001498270-26-000012",
-   "0001193125-26-442229",
-   "0001451763-26-000014",
+   "0000091440-26-000174",
+   "0001214659-26-013568",
    "0001213900-26-114588"
   ],
   "errors": {
