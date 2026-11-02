@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "3fe07aa08d0ec424": "2026-10-30T07:19:40.230484+00:00",
   "0ae05c65d70e2947": "2026-10-30T07:24:40.225378+00:00",
   "9da5d36257b3e643": "2026-10-30T07:24:40.225378+00:00",
   "b00a6aa99d6faf9f": "2026-10-30T07:24:40.225378+00:00",
@@ -603,22 +602,11 @@
   "394a927bc50cfa53": "2026-11-02T07:02:31.241670+00:00",
   "04914a1c3387ff17": "2026-11-02T07:02:31.241670+00:00",
   "e6de4236ad80b7d0": "2026-11-02T07:12:31.238929+00:00",
-  "7409ede02a8c42d7": "2026-11-02T07:12:31.238929+00:00"
+  "7409ede02a8c42d7": "2026-11-02T07:12:31.238929+00:00",
+  "1f651da76bbd7efb": "2026-11-02T07:22:31.258948+00:00",
+  "282f1a76e82e3071": "2026-11-02T07:22:31.258948+00:00"
  },
  "recent": [
-  {
-   "title": "Trump's tariffs fail to cut US trade deficit, IW report shows",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQQXAtelVIRmlkeEJiVmJ1VDVNTWFNOW5Yc3pQQjZFVVVmaGJaRjVzbjdWRlpKNlBKYWVXMmpOV3J4WldwRUs1U3hnalZ2d0wxRnlYbkZ3SVlnSGpfa2RWWE5LQ05GdlNnSmVSeEZsekVPSFNpZTd4QVpNTmcyc2tlRHNuWFlDMXZyUl9SN0hrejlpc3FSSXJMZkVCV296WU51bXZJ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 7,
-   "ts": "2026-10-30T07:19:40.230484+00:00",
-   "title_ru": "Тарифы Трампа не могут сократить торговый дефицит США, показывает отчет IW",
-   "tags": [
-    "tariffs"
-   ]
-  },
   {
    "title": "BP Profit Hits 18-Year High as Oil Refining Margins Surge",
    "link": "https://www.bloomberg.com/news/articles/2026-10-30/bp-profit-surges-as-refining-windfall-aids-o-neill-turnaround",
@@ -5320,6 +5308,32 @@
    "lead_ru": "Мир нуждается в большем потенциале для хранения нефти и производства топлива ближе к потребителям, чтобы справиться с последствиями серьезного разрушения Ормузского пролива, по словам главы крупнейшей энергетической компании в Объединенной Арабской Республике...",
    "tags": [
     "oil"
+   ]
+  },
+  {
+   "title": "India's auto stocks rise as strong October sales signal resilient festive demand",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQSk1WX2FrREhQbTBpSzZBem9GeGlqdmlTOFlZYV9pemNvMGdOYl9qWlFwXzE3cUhkOC1FZkRjY0k1MzYwcG9JSnM5VFg4WmZEVGxYWVNpczFoN3dubG1sOWQtaVkzYVdibzAyN1BZR1dXVDZwTk40WTlxcmFrSkZmbXcweTA2b3ZvNVUtLVlzZFhrREswSW9wWWN5azRLQWhhMVdSYzV5ZzVwZmp6T1NtemplWjA0SmJWM1VjQlltY2ctUQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T07:22:31.258948+00:00",
+   "title_ru": "Автомобильные акции Индии растут, поскольку сильные продажи в октябре сигнализируют об устойчивом праздничном спросе",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "At 'China's Hollywood', visitors become stars as consumers spend more on experiences",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPaFBDT2ZyV3JPVmlaUFhIYVgyN0NGUmpUV3pkWTFscXc2Q0Yza1pnQ0l2NlNpWmxXOE1vdUdBR0RYNDJLSVdvZ3FQYk1CdEtLVTZhQjVrOXNybnE3ZS1NT2hyeUlkbEtFYkdZcnRRT2xYYXp4OFJZSC1PSlRkYVgtYzZueGRpS0NPQVdvVEhZaV9DUy1vaFJBWXc4T1RJZGNsalQyVFpqQzRzRGhRM3B5eExGWXdmVlZjWlE2RXJqN3NWQ295VUQwMmJ3?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T07:22:31.258948+00:00",
+   "title_ru": "В «Голливуде Китая» посетители становятся звездами, поскольку потребители тратят больше на впечатления",
+   "tags": [
+    "China"
    ]
   }
  ],
