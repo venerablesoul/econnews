@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "b7017de8a0083101": "2026-10-30T02:39:13.643465+00:00",
-  "1f0a1cc73f3ebb39": "2026-10-30T02:44:13.564063+00:00",
   "4db47ca1150e2140": "2026-10-30T02:54:13.562842+00:00",
   "010a05b77cd54ba2": "2026-10-30T02:59:13.630085+00:00",
   "dd167cde834919f2": "2026-10-30T02:59:13.630085+00:00",
@@ -598,32 +596,10 @@
   "ad36f2a91d3d4e4a": "2026-11-02T02:21:37.693709+00:00",
   "bbe63d13d663883d": "2026-11-02T02:26:37.740654+00:00",
   "80fd35a2964e1d88": "2026-11-02T02:36:37.702999+00:00",
-  "9862ce988bffadbd": "2026-11-02T02:36:37.702999+00:00"
+  "9862ce988bffadbd": "2026-11-02T02:36:37.702999+00:00",
+  "48e5275db062db0a": "2026-11-02T02:46:37.679448+00:00"
  },
  "recent": [
-  {
-   "title": "Brazil's Petrobras makes third oil discovery in block off Amapa state",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOSE0ydV9qSC02Q1dUUU5hQm1DSExua2JkeWFRN0dfemViNGhNWjQzY2VuOXFRZjZuRFdjUldYOFJBZkhLX29DeUV0VWFneXhWRG1jMXA3RGJZTGpaN2tWUEZMQmRHT05FcUVMRHp4SWx5Nnl4SFZhWmNFbDFOQWNOQ2xlYjIwbHgwd3FKX1lwSjB3N2s3UU10ZlV0NjMtS0plTGJJVWJkWEJwcGRPbElJWE1WSUtJRUdj?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T02:39:13.643465+00:00",
-   "title_ru": "Бразильская Petrobras делает третье открытие нефти в районе штата Амапа",
-   "tags": [
-    "oil"
-   ]
-  },
-  {
-   "title": "Consumer Expenditures - 2025",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE82b0pkRVRLeFYxRDFoc2JmSXFWdnJndkVrZEV4OC1IcXRYQzd2UGxvRDlOTkZLWWxRbHJIdURNQVRfbUw0MjZLbHlxWnE2bGw0dkpZU2hRSGd2Vm95eGJUUFQ4Sk02OUQ0V0VqcQ?oc=5",
-   "sources": [
-    "US Labor Statistics (BLS)"
-   ],
-   "score": 5,
-   "ts": "2026-10-30T02:44:13.564063+00:00",
-   "title_ru": "Потребительские расходы - 2025"
-  },
   {
    "title": "Zhuhai Huafa Put on Negative Watch by Fitch on Refinancing Risk",
    "link": "https://www.bloomberg.com/news/articles/2026-10-30/zhuhai-huafa-put-on-negative-watch-by-fitch-on-refinancing-risk",
@@ -5432,6 +5408,16 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "South Korea’s Lee vows to make bold AI investment in record budget push",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNbll4VGlsal9aSG5UR3h5ZjZobjJGSHV4UVJXZDNrSEV4M3lTQXRnaWRaemVBZjRzMk4wVU5lTG1tMDFQLTdweklqemdlQkhoS3JBOWZFVHFxbG1yMXltcnl0LThzNm15R1Q3ZS1temp1TWJqOXBCM1J6UjhSRHBsNGQ0VnVLelFERjJZeW5oM3U3eGVpSWxSUUFrU0VHcUVvSXBsRDF5NTdReGVWaXZYQlJkbTUtSUp6Tkhj?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T02:46:37.679448+00:00",
+   "title_ru": "Ли из Южной Кореи обещает сделать смелые инвестиции в искусственный интеллект для рекордного увеличения бюджета"
   }
  ],
  "last_digest": "2026-11-01",
