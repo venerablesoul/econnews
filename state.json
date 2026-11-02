@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "409cd9e8df26879b": "2026-10-30T10:24:40.332096+00:00",
-  "b4ccdaf88867b00d": "2026-10-30T10:24:40.332096+00:00",
   "dd863a7c6f9f56d7": "2026-10-30T10:29:40.286689+00:00",
   "d012a9c97f9fc5f8": "2026-10-30T10:29:40.286689+00:00",
   "8cc57065b339a559": "2026-10-30T10:29:40.286689+00:00",
@@ -614,25 +612,11 @@
   "da9c8d35f0e72231": "2026-11-02T10:13:12.565123+00:00",
   "15a997c27f3ffcd3": "2026-11-02T10:18:12.586398+00:00",
   "a081e98d7a8f1d92": "2026-11-02T10:23:12.555266+00:00",
-  "eb2ff11a896430c7": "2026-11-02T10:23:12.555266+00:00"
+  "eb2ff11a896430c7": "2026-11-02T10:23:12.555266+00:00",
+  "5ad55d0cc3aed1be": "2026-11-02T10:28:12.638849+00:00",
+  "fda9d543fe71ba40": "2026-11-02T10:28:12.638849+00:00"
  },
  "recent": [
-  {
-   "title": "Short Sellers Target UK Water Stocks as Political Risk Rises",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/short-sellers-target-uk-water-stocks-as-political-risk-rises",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-30T10:24:40.332096+00:00",
-   "title_ru": "Короткие продавцы нацеливаются на запасы воды в Великобритании на фоне роста политических рисков",
-   "lead": "Traders are building up short positions in UK water stocks as the threat of nationalization and higher interest rates are seen to weigh on the sector.",
-   "lead_ru": "Трейдеры наращивают короткие позиции в акциях водного сектора Великобритании, поскольку угроза национализации и более высокие процентные ставки, как считается, оказывают давление на сектор.",
-   "tags": [
-    "rates",
-    "markets"
-   ]
-  },
   {
    "title": "ECB’s Panetta Says More Rate Hikes May Be Needed to Tame Prices",
    "link": "https://www.bloomberg.com/news/articles/2026-10-30/ecb-s-panetta-says-more-rate-hikes-may-be-needed-to-tame-prices",
@@ -5404,6 +5388,16 @@
    "title_ru": "Фаулер из UBS говорит, что рынок недооценивает длину цикла ИИ",
    "lead": "Hyperscaler valuations look attractive after the recent AI unwind as the market prices in a shorter AI cycle than is likely to play out, according to Gerry Fowler, chief European equity strategist and head of derivatives at UBS…",
    "lead_ru": "Оценки гиперскейлеров выглядят привлекательно после недавнего раскручивания ИИ, поскольку рыночные цены в более коротком цикле ИИ, чем это может произойти, по словам Джерри Фаулера, главного европейского стратега по акциям и главы деривативов в UBS..."
+  },
+  {
+   "title": "Gulf markets mixed as investors monitor Iran-Qatar talks",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNVHA5dWpnM3hRc0Z6WDhxZ0xZaWpnVzVmajJnMTAtMWJhYi14My1FME1uU1dvbHF2cUc3T2U4eFZ0MWNkOWxCZEJlS1J2WTBlUGZyUXg1b1FNUms5VkZDYU9EdWxOYWVNNTh0WHZGU1BuTWF4Z01wMFRHeDBpblJJQnVjLU02TjhkMmg1eGZqeWlNb2pnak92UUJCWnVZY0NWWkM4RFNVdTNBOUk?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-11-02T10:28:12.638849+00:00",
+   "title_ru": "Рынки Персидского залива неоднозначны, поскольку инвесторы следят за переговорами"
   }
  ],
  "last_digest": "2026-11-01",
