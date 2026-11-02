@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "8a9cef8c8fa92f53": "2026-10-30T06:49:40.241591+00:00",
-  "a9034a36ab174d21": "2026-10-30T06:49:40.241591+00:00",
-  "f318776fbe1fdf1f": "2026-10-30T06:49:40.241591+00:00",
-  "58912d6e86a8e33c": "2026-10-30T06:49:40.241591+00:00",
   "22ac85b028a1c6a7": "2026-10-30T06:54:40.239326+00:00",
   "3e4f4853ede84b8b": "2026-10-30T07:04:40.284179+00:00",
   "c950da38f32762ee": "2026-10-30T07:04:40.284179+00:00",
@@ -603,34 +599,12 @@
   "6c28a8fd965e7eab": "2026-11-02T06:37:31.237388+00:00",
   "51e6da53cde4816b": "2026-11-02T06:42:31.210515+00:00",
   "b00c293bad90ba30": "2026-11-02T06:47:31.236695+00:00",
-  "0aa8c9ebbe80fa84": "2026-11-02T06:47:31.236695+00:00"
+  "0aa8c9ebbe80fa84": "2026-11-02T06:47:31.236695+00:00",
+  "df0afeed0ce2e8e9": "2026-11-02T06:52:31.229111+00:00",
+  "44baeb21aa697f89": "2026-11-02T06:52:31.229111+00:00",
+  "4587515c5cfcd84a": "2026-11-02T06:52:31.229111+00:00"
  },
  "recent": [
-  {
-   "title": "Euro-Area Leaders to Meet Nov. 26-27 to Discuss ECB Top Job",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-29/euro-area-leaders-to-meet-nov-26-27-to-discuss-ecb-top-job",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-30T06:49:40.241591+00:00",
-   "title_ru": "Лидеры еврозоны встретятся 26-27 ноября, чтобы обсудить главную работу ЕЦБ",
-   "lead": "Euro-area leaders will meet in Brussels Nov.",
-   "lead_ru": "Лидеры еврозоны встретятся в Брюсселе в ноябре",
-   "tags": [
-    "ECB"
-   ]
-  },
-  {
-   "title": "Morning Bid: One last central bank surprise",
-   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPVnh1c0RRbEdjWjNFbmduTzhBOVl2ZmpkUzFjaFZZajVLdjdDN1kyek0yTW5pY092QmRNbmVWNFdrazNZR0dnZE5HR05sT1RBVkRxTEZkV3UzYXB1YXJaMi1VYS1oR1NJc2czSGd5VHVLaE5abmxHLVdzcWgwZE5lMjlxQQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T06:49:40.241591+00:00",
-   "title_ru": "Утренняя ставка: последний сюрприз центрального банка"
-  },
   {
    "title": "AI Boom Shows Cracks After US, China Earnings",
    "link": "https://www.bloomberg.com/news/videos/2026-10-30/the-china-show-10-30-2026-video",
@@ -5329,6 +5303,19 @@
    "score": 4,
    "ts": "2026-11-02T06:47:31.236695+00:00",
    "title_ru": "Прогнозы на 29-1211 г. – данные BLS"
+  },
+  {
+   "title": "Rupee nudges higher as oil prices slide, NDF points outpace onshore premiums",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPeC1WaUFNMi1wWEN5WFRyenJJLUxoa0lkUGdFM1dOU3VkVUYyak9ZdWRVV3N0b1NPX0xFTjZ0NVRlNWpadXdGMVltUmxMcm1zcVdQdjQwMV9ialVNaGliVmhXOS1zTm5kNUp0VXlqTUpaVVRqUUhuX2xaRVpQWlFXbFlMS2EwNTJqYUZ3elRFLXUzcmtpaXhFMHlFTjBVaHJSMFVULUhrQVJlYWpaUnljMTVwSjA?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-11-02T06:52:31.229111+00:00",
+   "title_ru": "Рупия растет на фоне падения цен на нефть, баллы NDF опережают внутренние премии",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-11-01",
@@ -5351,7 +5338,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 0,
+  "Fed": 1,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
@@ -12227,8 +12214,10 @@
    "0001193532-26-000012",
    "0001697362-26-000021",
    "0001628280-26-068639",
+   "0001451763-26-000014",
    "0001493152-26-049498",
    "0001280486-26-000010",
+   "0001193125-26-442229",
    "0001213900-26-114605",
    "0002014293-26-000012",
    "0001824159-26-000015",
@@ -12238,7 +12227,6 @@
    "0001628280-26-068641",
    "0001213900-26-114608",
    "0001477932-26-006563",
-   "0000091440-26-000174",
    "0001628280-26-068637",
    "0001213900-26-114604",
    "0001493152-26-049496",
@@ -12249,15 +12237,14 @@
    "0001193125-26-442142",
    "0001193125-26-442230",
    "0001213900-26-114609",
-   "0001214659-26-013568",
    "0002025268-26-000008",
    "0002014386-26-000026",
    "0002014361-26-000040",
    "0001231919-26-001519",
    "0001213900-26-114611",
    "0001498270-26-000012",
-   "0001193125-26-442229",
-   "0001451763-26-000014",
+   "0000091440-26-000174",
+   "0001214659-26-013568",
    "0001213900-26-114588"
   ],
   "errors": {
