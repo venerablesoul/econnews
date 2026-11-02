@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "52c3e408752d84d7": "2026-10-30T14:20:10.587544+00:00",
   "8dc18539e31407c3": "2026-10-30T14:35:10.525582+00:00",
   "103db3e5db2912e0": "2026-10-30T14:40:10.611929+00:00",
   "6a3e5a36a1738410": "2026-10-30T14:50:10.599317+00:00",
@@ -593,23 +592,11 @@
   "b53f74f9a7ba1744": "2026-11-02T13:58:12.710341+00:00",
   "5de4b8f29af3ab1b": "2026-11-02T14:08:12.763539+00:00",
   "b2a4873da0ffe745": "2026-11-02T14:08:12.763539+00:00",
-  "e42800cd7edf0c86": "2026-11-02T14:18:12.675947+00:00"
+  "e42800cd7edf0c86": "2026-11-02T14:18:12.675947+00:00",
+  "0ed7b2cc523ecc8e": "2026-11-02T14:23:12.622006+00:00",
+  "6182f3fa9968533b": "2026-11-02T14:23:12.622006+00:00"
  },
  "recent": [
-  {
-   "title": "Milei’s Voters Abandon Buenos Aires to Hunt for Jobs in Oil Country",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQU3U5RTBjZVZqd0p0MElwanU3QzA5Z0I4N3pRczBDOHRaWFNqZmlYRmtPR3NDVkpiME54ek85LUY2Slg1bUlDbzdGcmNjYkRNT20xZThDbzhFWmpKZF9zSWFidEJiX3lJYm1HVFlqY0w5Z19mdEpPSlBCSFphUU1Ya3BMM1NTZWZyQl96UDlIcjlLZko1dGFIeDRZWmRnYVpiSFIySjFyNXFXWU1kUUQ3QkIyNA?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-30T14:20:10.587544+00:00",
-   "title_ru": "Избиратели Милеи покинули Буэнос-Айрес в поисках работы в нефтяной стране",
-   "tags": [
-    "oil",
-    "jobs"
-   ]
-  },
   {
    "title": "This strategist correctly recommended shorting Big Tech debt last year. Now he says the yields make it attractive.",
    "link": "https://www.marketwatch.com/story/this-strategist-correctly-recommended-shorting-big-tech-debt-last-year-now-he-says-the-yields-make-it-attractive-3ec2e0fe?mod=mw_rss_topstories",
@@ -5179,6 +5166,20 @@
    "title_ru": "Как запрет на бензиновые автомобили в Эфиопии спровоцировал бум электромобилей",
    "lead": "Ethiopia became the first country to ban imports of gasoline-powered cars in 2024. Today, its EV share outpaces the global average, but the road ahead is uncertain. Can Ethiopia’s bet on EVs pay off? (Source: Bloomberg)",
    "lead_ru": "Эфиопия стала первой страной, запретившей импорт автомобилей с бензиновым двигателем в 2024 году. Сегодня ее доля электромобилей превышает средний мировой показатель, но дальнейший путь остается неопределенным. Оправдается ли ставка Эфиопии на электромобили? (Источник: Блумберг)"
+  },
+  {
+   "title": "COMMENTARY: Brutal AI selloff stirs recession fears",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPWE8zaUFuYVVHZHM4aDVEdEN1TzVfbjVQa0xXWG1UNXpHcTlja19HTUtZbDUyTno2bXVwWDBvUm43eUVNbmZVblhrX1dTS2FGSTNLaU1zcDhSWWczS2dGUks5NFFYYTljcW43REtWYWZSRnBzV2ZFeTFNdmlzMno2WXFiTWY0RDBwTmtBdFRZWWMta1NUSktYdnVfTUF1c2NqTkhfaUJfNTVwaXI1QUhPV01SZnZxbzZW?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 8,
+   "ts": "2026-11-02T14:23:12.622006+00:00",
+   "title_ru": "КОММЕНТАРИЙ: Жестокая распродажа ИИ вызывает опасения о рецессии",
+   "tags": [
+    "markets",
+    "GDP"
+   ]
   }
  ],
  "last_digest": "2026-11-01",
@@ -12066,7 +12067,6 @@
    "0001965457-26-000007",
    "0001550860-26-000003",
    "0001493152-26-049576",
-   "0001213900-26-114660",
    "0001213900-26-114696",
    "0001213900-26-114680",
    "0000853816-26-000069",
