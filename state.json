@@ -613,7 +613,9 @@
   "35623b1a3f3eb711": "2026-11-02T09:58:12.605600+00:00",
   "9c9704b16df9aab7": "2026-11-02T10:08:12.592747+00:00",
   "f9fc9fd7de4aadcb": "2026-11-02T10:08:12.592747+00:00",
-  "e9b7dfa93e3eab42": "2026-11-02T10:08:12.592747+00:00"
+  "e9b7dfa93e3eab42": "2026-11-02T10:08:12.592747+00:00",
+  "5649ddcfcbf52ad8": "2026-11-02T10:13:12.565123+00:00",
+  "da9c8d35f0e72231": "2026-11-02T10:13:12.565123+00:00"
  },
  "recent": [
   {
@@ -5383,6 +5385,29 @@
    "score": 3,
    "ts": "2026-11-02T10:08:12.592747+00:00",
    "title_ru": "В Бельгии назревает кризис на фоне провала бюджетных переговоров."
+  },
+  {
+   "title": "October dive for AI-related shares tests broader US stock market's resilience",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPSVlEWkkyN3lYZG41WXJvcl9pNWlKYW5VNjdmb1lHYkNGVHpmT1BHLWVDUFQydFNra3JIeVlfVFh5ZzhoTzRfMVdwZ2didmtGZ0hGZDN6ZmtTbUk5b2lIb3JfZ2poRld3R1BCM28zLUlHUnlZcHJQMXp3S01PTGNBSmxRN1pYMThUZXQtbHBHaU5CWnhTMFF6VTFidG05QzdQTnVJYmJiZl9YQTFxX3ZhWExjN0NZOUpTWjFTaUh5WUFSem9MdW1Z?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-11-02T10:13:12.565123+00:00",
+   "title_ru": "Октябрьское погружение для акций, связанных с ИИ, проверяет более широкую устойчивость фондового рынка США",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "Investors gaming out Congress control for spending, AI outlook",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPSndxQlZKTnRLd3BYVTNReUZRU1Z5dDlrdGpidzBlWVhITzgzTkJrXzJlNlhHZHZvQS1JV0E3YUZmT3gzNy1KbWVGVGs4NjR0bVFDanJ4RjYybjU2Rm9DS2tNR0w3SVNpb0puX2NwUjctM1U2cm1EYmZRUWRXd08tY1dfT1BGYmF0TG5UREVHTUVfM0s5MGhHZE1EVVhVUlRCbk5tZmExZU8zUi05bm9B?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T10:13:12.565123+00:00",
+   "title_ru": "Инвесторы оценивают влияние контроля Конгресса на расходы и перспективы развития искусственного интеллекта."
   }
  ],
  "last_digest": "2026-11-01",
@@ -12265,7 +12290,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-11-02T09:12:31.288675+00:00",
+  "checked": "2026-11-02T10:13:12.565123+00:00",
   "sec_seen": [
    "0002014361-26-000040",
    "0001213900-26-114608",
