@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "944a0b5dcb766e35": "2026-10-30T22:26:27.302056+00:00",
-  "c5433dfa043a0a65": "2026-10-30T22:26:27.302056+00:00",
   "ac5b6aeb49767dfe": "2026-10-30T22:36:27.293071+00:00",
   "339daea2ee894310": "2026-10-30T23:01:27.197465+00:00",
   "cfdb374a00c90a1b": "2026-10-30T23:11:27.215507+00:00",
@@ -586,28 +584,10 @@
   "236355f3828fdbea": "2026-11-02T22:20:44.299173+00:00",
   "4a63eb32acb6f38b": "2026-11-02T22:25:44.452800+00:00",
   "a5b5d6e96d10e71d": "2026-11-02T22:25:44.452800+00:00",
-  "0ff4b1229e6ff9c9": "2026-11-02T22:25:44.452800+00:00"
+  "0ff4b1229e6ff9c9": "2026-11-02T22:25:44.452800+00:00",
+  "1f796da847fb7428": "2026-11-02T22:30:44.376403+00:00"
  },
  "recent": [
-  {
-   "title": "Fitch revises France's outlook to 'negative' on worsening debt dynamics",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPTVVEcXlWOXB3Y19RLXRjRGdaVEJieWlmdWE3akFJTDN2ZER3MUpmR180c2dqcV9iRUZBdVhlWThRR0E5LU1RUUNVaXFxY0lZM2VUWWhNN2pHNlFPM0RuMzdaMXNMSFc2M0NkaWVqOTR5Qy1ZVkYtMnhKUEdrOV9XcWg0UENLT2NHdEtsR2F1eFdKaTlrYjZIZ2pIWE5BYnVheWR3UUNscTJkM2FOdkFBNQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T22:26:27.302056+00:00",
-   "title_ru": "Fitch пересматривает прогноз по Франции на «негативный» из-за ухудшения динамики долга"
-  },
-  {
-   "title": "This cybersecurity stock will be the next to join the S&P 500",
-   "link": "https://www.marketwatch.com/story/this-cybersecurity-stock-will-be-the-next-to-join-the-s-p-500-dc976803?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-30T22:26:27.302056+00:00"
-  },
   {
    "title": "Business Employment Dynamics in Montana — First Quarter 2026",
    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPUTRoZDNTNFdIOWtZenI2dWd3RFJoQ1ZxdWpLckk2bERndG5haFQtb3ptcE1iU1JFVFJ6cW1Ud2N1Vk8xWFN2MTBIN3NLbTZIamZZNTdseDJ5dTZidm5yblRkWEo3NnRHeTlhVWRveWgxcTk2THl2ZjV3VC00RFFMNWQ1RlJnblFRVE5xUVAxWndfMmxQUmRqZUNUenJYd2dFalR3NjZEN2xoUHRuWVE?oc=5",
@@ -5072,6 +5052,20 @@
    "score": 3,
    "ts": "2026-11-02T22:25:44.452800+00:00",
    "title_ru": "Рост антропных доходов замедляется, риски вычислительного финансирования растут в преддверии IPO"
+  },
+  {
+   "title": "Fed may be falling behind on inflation fight, market expert says",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1OY0lVdEZfRGFhMUwyTmxMQjF2Wi1YQ0VGQ040QXFUN1AtSk0xOEZJaHJlY1RIRV94Vi02bGVmUnFmVGdfX21pM3R6OGNJTV9SWjVYRFVoRmlyWVJqZ29qVkkydW1OUXJMazY4bmRRLUllYXZQTkd4UGJEbHQ0Zw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 7,
+   "ts": "2026-11-02T22:30:44.376403+00:00",
+   "title_ru": "ФРС может отставать в борьбе с инфляцией, считает эксперт рынка",
+   "tags": [
+    "Fed",
+    "inflation"
+   ]
   }
  ],
  "last_digest": "2026-11-02",
@@ -12053,23 +12047,21 @@
    "0001466026-26-000104",
    "0001040470-26-000325",
    "0001078543-26-000003",
+   "0001193125-26-443915",
    "0001193125-26-443898",
-   "0001628280-26-068965",
    "0001628280-26-068969",
+   "0001628280-26-068965",
    "0001058090-26-000106",
-   "0001536588-26-000044",
    "0001510281-26-000399",
    "0001193125-26-443902",
    "0001628280-26-068972",
+   "0001628280-26-068978",
    "0001628280-26-068968",
+   "0001361555-26-000002",
    "0001754765-26-000008",
    "0001628280-26-068967",
-   "0001628280-26-068964",
-   "0001628280-26-068957",
    "0000944148-26-000126",
-   "0001853089-26-000012",
-   "0001628280-26-068959",
-   "0001628280-26-068962"
+   "0001853089-26-000012"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
