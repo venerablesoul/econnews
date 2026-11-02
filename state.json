@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "afa1a9b94de69d30": "2026-10-30T18:30:57.623229+00:00",
-  "de6dcdb9275a03f7": "2026-10-30T18:30:57.623229+00:00",
-  "cfc725c4d274fc07": "2026-10-30T18:35:57.402164+00:00",
-  "8429338684854a06": "2026-10-30T18:35:57.402164+00:00",
   "b50e5fee6766b224": "2026-10-30T18:45:57.475504+00:00",
   "534f2dfb598ec378": "2026-10-30T18:45:57.475504+00:00",
   "1d562beda2f6777f": "2026-10-30T18:45:57.475504+00:00",
@@ -591,54 +587,12 @@
   "7c03349bd26f23b5": "2026-11-02T18:19:12.629931+00:00",
   "07f3e6c3f4a10d47": "2026-11-02T18:19:12.629931+00:00",
   "280fe45d954fca14": "2026-11-02T18:29:12.693591+00:00",
-  "16142a733a0a86e4": "2026-11-02T18:29:12.693591+00:00"
+  "16142a733a0a86e4": "2026-11-02T18:29:12.693591+00:00",
+  "379331dd32189f24": "2026-11-02T18:39:12.607661+00:00",
+  "f900bc79d184c3c9": "2026-11-02T18:39:12.607661+00:00",
+  "07ba40550b5a5c79": "2026-11-02T18:39:12.607661+00:00"
  },
  "recent": [
-  {
-   "title": "Arini Gets Bids on Junk Debt From Pimco, Oaktree as Losses Mount",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/arini-gets-bids-on-junk-debt-from-pimco-oaktree-as-losses-mount",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T18:30:57.623229+00:00",
-   "title_ru": "Арини получает предложения по мусорному долгу от Pimco и Oaktree, поскольку убытки растут",
-   "lead": "Arini Capital Management, which has been beset with losses this month, has gotten bids on some of its high-yield debt holdings from asset managers including Pacific Investment Management Co.",
-   "lead_ru": "Arini Capital Management, которая в этом месяце понесла убытки, получила заявки на некоторые из своих высокодоходных долговых активов от управляющих активами, включая Pacific Investment Management Co.",
-   "tags": [
-    "bonds"
-   ]
-  },
-  {
-   "title": "Colombia Pauses Interest Rate Rises as Economy Starts to Weaken",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/colombia-pauses-interest-rate-rises-as-economy-starts-to-weaken",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 7,
-   "ts": "2026-10-30T18:35:57.402164+00:00",
-   "title_ru": "Колумбия приостанавливает повышение процентных ставок, поскольку экономика начинает ослабевать",
-   "lead": "Colombia halted interest rate increases as signs of an economic slowdown offset fears over accelerating inflation.",
-   "lead_ru": "Колумбия приостановила повышение процентных ставок, поскольку признаки экономического спада компенсировали опасения по поводу ускорения инфляции.",
-   "tags": [
-    "rates",
-    "inflation"
-   ]
-  },
-  {
-   "title": "Fed needs at least two more rate hikes, Logan says",
-   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPN0l1dXR6NGI2OV9OZGVkZHRFdzNqcVBnSGRFamxWZlNaZTNsQmdIbXRHVXc5VE9FZzcyWUI4YU5hai1VZlVtY2ZsQTh0VDgxYmtJT1V3X0NvUEZvRjBDT2VaQUdaeDdIWkZ5MlhraUdTVHJYSlM3RFVzU3lVNjctTzU2eFMzNk5kbDBIWlR2RWJ0NkQ2Znc?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-30T18:35:57.402164+00:00",
-   "title_ru": "ФРС нужно как минимум еще два повышения ставок, говорит Логан",
-   "tags": [
-    "Fed",
-    "rates"
-   ]
-  },
   {
    "title": "German inflation slows more than expected in October",
    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPYlNSUkFvel9FT3U0d0NSRFhuQTM0dGhEdzI4bEFIRUIzdms5YXJCTEV3a1BXWElPZnVfNGd2b2l3TDBoRDZrWHY0Vy0wS1hCUUJqQ3p2MzlzUnJfTVpWYWxabl8xYjVZUFM1MDFsWFhHNTZZTENGSTdqMURfOUJEQQ?oc=5",
@@ -5130,6 +5084,43 @@
    "score": 3,
    "ts": "2026-11-02T18:29:12.693591+00:00",
    "title_ru": "Что означает потеря торговых преимуществ США для Южной Африки и Руанды?"
+  },
+  {
+   "title": "Anthropic IPO Explained: S-1 Filing, Nasdaq Listing and Key Risks",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/anthropic-ipo-explained-s-1-filing-nasdaq-listing-and-key-risks",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T18:39:12.607661+00:00",
+   "title_ru": "Объяснение антропного IPO: ПОДАЧА S-1, листинг Nasdaq и ключевые риски",
+   "lead": "In late 2020, a group of senior OpenAI employees unhappy with what they saw as the company’s failure to adequately prioritize AI ethics and safety left the firm to form Anthropic PBC.",
+   "lead_ru": "В конце 2020 года группа старших сотрудников OpenAI, недовольных тем, что, по их мнению, компания не уделяет должного внимания этике и безопасности ИИ, покинула фирму, чтобы сформировать Anthropic PBC.",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "Vista, Elliott’s Cloud Software to Refinance $2 Billion of Debt",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/vista-elliott-s-cloud-software-to-refinance-2-billion-of-debt",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T18:39:12.607661+00:00",
+   "title_ru": "Vista, облачное программное обеспечение Elliott для рефинансирования долга на $ 2 млрд",
+   "lead": "Private equity-backed Cloud Software Group, which owns brands including Citrix and Tibco, kicked off a transaction on Monday to address its upcoming debt maturities.",
+   "lead_ru": "Cloud Software Group, которая владеет такими брендами, как Citrix и Tibco, начала сделку в понедельник, чтобы решить проблему предстоящих сроков погашения долга."
+  },
+  {
+   "title": "Canadian factory PMI shows sector contracting for first time in 2026",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWHhsWlZpSkJudmhFd1lEZU1Jdll1Z0VoX2RCYVlLcE10RTlYTkIxRm5PNTJ3YTA1STNja1hQeXIzN3lBb1FuSW9GZE90dnE1N1ptX1VSR01VRkNTUXY5c2JsYTlWNGp2MGJFb0ZqZDZhN1pTcmF3Y0JUV1RBbWhtdm9VV1pUSlRYd2pFazkzbUlTRGdrYUV3Zzg2QU5SQVk1YXFKb3V3MnotaGc1aFNHRGRR?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T18:39:12.607661+00:00",
+   "title_ru": "Канадская фабрика PMI впервые показала сокращение сектора в 2026 году"
   }
  ],
  "last_digest": "2026-11-02",
@@ -12015,10 +12006,11 @@
   "checked": "2026-11-02T17:39:12.644048+00:00",
   "sec_seen": [
    "0001801785-26-000013",
+   "0002118015-26-000005",
    "0002107660-26-000008",
    "0001868963-26-000013",
-   "0001965462-26-000002",
-   "0001628280-26-068746"
+   "0002117143-26-000004",
+   "0001965462-26-000002"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
