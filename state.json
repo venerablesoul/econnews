@@ -602,7 +602,8 @@
   "caedd5e6f1e3aa51": "2026-11-02T01:41:37.691931+00:00",
   "f750ae28250df8c3": "2026-11-02T01:46:37.747676+00:00",
   "cbfcc6c9af042e1b": "2026-11-02T01:46:37.747676+00:00",
-  "2e1562a8eaa409d1": "2026-11-02T01:51:37.677771+00:00"
+  "2e1562a8eaa409d1": "2026-11-02T01:51:37.677771+00:00",
+  "10aa19d8496c8853": "2026-11-02T01:56:37.683488+00:00"
  },
  "recent": [
   {
@@ -5458,6 +5459,19 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "China factory growth slows in October as export orders ease, private PMI shows",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQT3hYd093Mlc3ZWdMZkdpTE13RXFjUTNHbU1VaV9DU25MamJmd2dTYVZEakladUp6OFZWZUtNdlNlb29KTmRBZS1VZm1GV1JBT1Z2UGhMT1pLVi13SmNOZkQ4M3k3cl84S2daZGtrcEE3UXJZOXZ3ZEoxRGRXQmFyV0hhUzF0ZE9DODduOWZKY0VpemEwYWsxeTRlTm1VR19kWGhvc2NLUUVfbHUxTFNKdFZrVWVfa3hlTG5vT3JhZkRyMnJx?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-11-02T01:56:37.683488+00:00",
+   "title_ru": "Рост производства в Китае замедляется в октябре, поскольку экспортные заказы ослабевают, показывает частный PMI",
+   "tags": [
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-11-01",
@@ -5478,7 +5492,7 @@
   "MarketWatch": 0,
   "Банк Англии": 0,
   "Bank of England": 0,
-  "Bank of Russia": 0,
+  "Bank of Russia": 1,
   "ECB": 0,
   "Fed": 0,
   "IMF": 0,
@@ -12348,7 +12362,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-11-02T00:51:37.726000+00:00",
+  "checked": "2026-11-02T01:56:37.683488+00:00",
   "sec_seen": [
    "0001193125-26-442196",
    "0001193125-26-442116",
