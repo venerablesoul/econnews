@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e643e217dc71b1ef": "2026-10-30T16:55:57.537580+00:00",
-  "0d00d32f8c4c4695": "2026-10-30T16:55:57.537580+00:00",
   "f128be813c118189": "2026-10-30T17:00:59.597506+00:00",
   "53785dd961581b4a": "2026-10-30T17:05:57.537882+00:00",
   "fb5309b4254af486": "2026-10-30T17:10:57.551050+00:00",
@@ -581,32 +579,10 @@
   "4087ccaf9484853f": "2026-11-02T16:29:12.617927+00:00",
   "65b2498246619917": "2026-11-02T16:44:12.655426+00:00",
   "62945b9fe70aabbf": "2026-11-02T16:49:12.721640+00:00",
-  "557c6a5a8630c762": "2026-11-02T16:54:12.699095+00:00"
+  "557c6a5a8630c762": "2026-11-02T16:54:12.699095+00:00",
+  "9f8ea0b6fbedfa1c": "2026-11-02T16:59:12.614530+00:00"
  },
  "recent": [
-  {
-   "title": "Public Finances in Modern History - Real long term government bond yield, percent",
-   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1XZWt1ZmhvQkRVNEdZbTk5cVZrbWJRZzRSN1M2WG1BTTUxU0xNaHRDVWl6bUh6ZlZxV291WUJ5a3Z2R3pXa0VwQTJuaDZhb2Jsa045Rjk0U1dvd0E2eHhoVVNpOA?oc=5",
-   "sources": [
-    "IMF"
-   ],
-   "score": 4,
-   "ts": "2026-10-30T16:55:57.537580+00:00",
-   "title_ru": "Государственные финансы в современной истории - Реальная доходность по долгосрочным государственным облигациям, в процентах",
-   "tags": [
-    "bonds"
-   ]
-  },
-  {
-   "title": "Ambani's Jio posts about 14% profit rise in first earnings since blockbuster debut",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPc2RJZzlhbDJyYjh5N01HbHFhNUFLbWU3czVrSjVkZ2ZLR05HRGNUVDNLX2ZCcF8wbkotRzdXTGprYjN6VVU0ZVNwVnF0U3BPUkJZTjNac0wwWEx3SGd5MERFYXA4elBUeDcxUE9VR1RFbW92X0N6aUFRSXZEQlhrYTdqLTlJVWpSNGJiVmlCcU5tN0s0cWRRaW9lUXlJXzA5QzY3OWNYdDdzVDdpQXo3ZldDNHZPZWs?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T16:55:57.537580+00:00",
-   "title_ru": "Джио из Амбани сообщает о росте первой прибыли примерно на 14% с момента дебюта блокбастера"
-  },
   {
    "title": "Fed's Barkin says US central bank's direction 'straightforward,' the question is pace, SiriusXM reports",
    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNeUlVMFZxeTRfY0dKczFKaFBkU1pEbWZqMTBlcFQ0OTRqcXRzUkFIWk5QcW9VTXgyV0ltVS1rck9lUktWODNDNTRYcUNhUEYtSGZKb1cyRzJ4STczazRDemJkblFEck11VC1iXzBqTkplTW1WS1YzYVZlNXhyQjlMUHh4a0FQNm5pVG05S2NEMHVmNFc3Yko5SlA0SlZjWlNaRUNYMlNwMFdoNjB1a3VwUGFLSmhrT1FwZ3BTbDd5UGE?oc=5",
@@ -5044,6 +5020,22 @@
    "lead": "One analyst notes “a meaningful gap between price and fundamentals” in some corners of the chip sector.",
    "lead_ru": "Один аналитик отмечает «значительный разрыв между ценой и фундаментальными показателями» в некоторых уголках сектора чипов.",
    "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "6 dividend stocks for investors who want to cut their exposure to the S&P 500",
+   "link": "https://www.marketwatch.com/story/6-dividend-stocks-for-investors-who-want-to-cut-their-exposure-to-the-s-p-500-52519928?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T16:59:12.614530+00:00",
+   "title_ru": "6 дивидендных акций для инвесторов, которые хотят снизить свою подверженность индексу S&P 500",
+   "lead": "Novartis, Mitsubishi and Canadian Natural are examples of companies in developed markets outside the U.S. that pass screens for high dividend yields and low volatility for prices and earnings.",
+   "lead_ru": "Novartis, Mitsubishi и Canadian Natural являются примерами компаний на развитых рынках за пределами США, которые проходят проверку на высокую дивидендную доходность и низкую волатильность цен и прибыли.",
+   "tags": [
+    "bonds",
     "markets"
    ]
   }
@@ -11930,15 +11922,16 @@
   },
   "checked": "2026-11-02T16:34:12.706772+00:00",
   "sec_seen": [
-   "0001419536-26-000173",
+   "0001628280-26-068723",
+   "0000105634-26-000140",
    "0000950157-26-001151",
    "0001193125-26-443052",
-   "0000105634-26-000140",
    "0000105634-26-000138",
    "0001408329-26-000004",
    "0001978586-26-000009",
    "0000105634-26-000136",
    "0000105634-26-000134",
+   "0001193125-26-443094",
    "0001193125-26-443078"
   ],
   "errors": {
