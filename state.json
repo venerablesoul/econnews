@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "7c570bbb5f7383f6": "2026-10-30T09:04:40.349819+00:00",
-  "67f658476c3c9859": "2026-10-30T09:04:40.349819+00:00",
-  "e362e4d7ebda355d": "2026-10-30T09:04:40.349819+00:00",
-  "6cabe4b094420ae1": "2026-10-30T09:09:40.265694+00:00",
-  "ae06af88ef216907": "2026-10-30T09:09:40.265694+00:00",
   "4d87ff2b4dcdbea0": "2026-10-30T09:19:40.358258+00:00",
   "6d53d8c101bc7841": "2026-10-30T09:19:40.358258+00:00",
   "294c01955febc0da": "2026-10-30T09:24:40.229412+00:00",
@@ -612,50 +607,12 @@
   "b24a98a5f57beaf3": "2026-11-02T09:02:31.277542+00:00",
   "ab4c32c288110538": "2026-11-02T09:02:31.277542+00:00",
   "b5eda1516cbbcce3": "2026-11-02T09:02:31.277542+00:00",
-  "5128277e51055a02": "2026-11-02T09:02:31.277542+00:00"
+  "5128277e51055a02": "2026-11-02T09:02:31.277542+00:00",
+  "1900f392f00e2d60": "2026-11-02T09:12:31.288675+00:00",
+  "ac1b2e056ec8871e": "2026-11-02T09:12:31.288675+00:00",
+  "bc225244767aee5e": "2026-11-02T09:12:31.288675+00:00"
  },
  "recent": [
-  {
-   "title": "Results of the ECB Survey of Professional Forecasters for the fourth quarter of 2026",
-   "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261030~e92c3c838c.en.html",
-   "sources": [
-    "ECB"
-   ],
-   "score": 5,
-   "ts": "2026-10-30T09:04:40.349819+00:00",
-   "title_ru": "Результаты опроса профессиональных прогнозистов ЕЦБ за четвертый квартал 2026 года",
-   "tags": [
-    "ECB"
-   ]
-  },
-  {
-   "title": "European shares ease as AI-driven tech selloff deepens",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQUk0taEd5eWdWVWtONWpOWjNLNXcxN0VJNHZKQnUtQ0VlZnJYNFQxekUwbDZhY05FSkwwdzlXSzFJX0Z1Mmc3ODgtaVJtbFVReWRBUHdWQlZKTDZKTlBKdWt2b3M1SG4tQXA1TlAtS2N0YXVITUJ6cVlnUE5Nb0hZMWlUcGFaanB4QmhSQ2xKeDVpVFRuR25UX1NuNWI?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-30T09:09:40.265694+00:00",
-   "title_ru": "Европейские акции падают на фоне углубления распродажи технологий, вызванных искусственным интеллектом",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "China’s Mega Banks Report Profit Jumps as Margins Recover",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/china-s-mega-banks-report-profit-jumps-as-margins-recover",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T09:09:40.265694+00:00",
-   "title_ru": "Крупнейшие китайские банки сообщают о скачке прибыли по мере восстановления рентабельности",
-   "lead": "China’s mega banks reported jumps in profit as interest margins are recovering from record lows.",
-   "lead_ru": "Крупнейшие китайские банки сообщили о скачке прибыли, поскольку процентная маржа восстанавливается с рекордно низкого уровня.",
-   "tags": [
-    "China"
-   ]
-  },
   {
    "title": "China trade accord with Swiss bucks wider trend towards protectionism",
    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQNkQ4YmJ3dHdaYVYzcXlkcUQ1V19QMU9mQ2tFd1RuQ1NEckN3ZTIxSFMzSkJxQzQ1UjdXTDVjRzlwdHNpUE13dUJKS19hQ0hndHlTdThtOEpLU1g5NXcxWnphT0RMME5TVDZLa2MySGZGMGdPVDF2QWdGVmpsN05fRk9jRmJZOFBsakdiT2I1X1lVYkpSUTFROHU0RFZGdnRvOXdYRlc4VnZRTzIyWG4xUU50SzRVRl8zaEZJS2lUaS1EZw?oc=5",
@@ -5393,6 +5350,25 @@
    "ts": "2026-11-02T09:02:31.277542+00:00",
    "title_ru": "Нечетные лоты: рынок структурированных нот процветает (подкаст)",
    "lead": "The structured products business in the US has gotten very large recently — on track to hit $300 billion in sales this year. That they are all the rage means a once opaque financial product is getting a lot more attention."
+  },
+  {
+   "title": "French manufacturing back in contraction in October, PMI shows",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPWDB0aVhpMlpnRm5oaTZkN2llajVvTmxxNkVXRUxUTFR3eEtYUzhLS1c2ZXQyczJRaE9NWmlhM1FHdm5KXzlrRkM2SUcyZkpqQU82cE5wRTAtU0F0akt6c29vSGZjWlpkSmdfRzFoWXptRzBKcUlrQmZBTjFnaUJKUjJyN3JUR3BrdzlCUjF1U2hmWWx6b0FqRFZJX3lVZGxJOFBFZjRGQQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-11-02T09:12:31.288675+00:00",
+   "title_ru": "Надеюсь вернуться в октябре"
+  },
+  {
+   "title": "Минэк предложил штрафы до 200% за нарушение патентов на лекарства",
+   "link": "https://www.rbc.ru/business/02/11/2026/6ae8497c5bdaf3ae581068de",
+   "sources": [
+    "RBC"
+   ],
+   "score": 1,
+   "ts": "2026-11-02T09:12:31.288675+00:00"
   }
  ],
  "last_digest": "2026-11-01",
@@ -5417,7 +5393,7 @@
   "ECB": 0,
   "Fed": 0,
   "IMF": 0,
-  "Kommersant": 0,
+  "Kommersant": 1,
   "RBC": 0,
   "US Labor Statistics (BLS)": 0
  },
@@ -12275,7 +12251,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-11-02T08:07:31.279131+00:00",
+  "checked": "2026-11-02T09:12:31.288675+00:00",
   "sec_seen": [
    "0001223260-26-000011",
    "0001193125-26-442116",
