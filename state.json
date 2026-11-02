@@ -1,13 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "1e6d2ae4710aa44c": "2026-10-30T00:08:36.859628+00:00",
-  "33a85f46fdb628af": "2026-10-30T00:13:36.869668+00:00",
-  "551f6685b0845981": "2026-10-30T00:13:36.869668+00:00",
-  "647941d6e9889a0c": "2026-10-30T00:13:36.869668+00:00",
-  "9c5aa598aa67f4a0": "2026-10-30T00:13:36.869668+00:00",
-  "88da18175bf8216a": "2026-10-30T00:13:36.869668+00:00",
-  "b7a486fefc108d6a": "2026-10-30T00:13:36.869668+00:00",
   "22af5f46d655363b": "2026-10-30T00:18:36.854540+00:00",
   "9c22998a5063ce22": "2026-10-30T00:23:36.848351+00:00",
   "ed20ef9d31f042c4": "2026-10-30T00:23:36.848351+00:00",
@@ -600,79 +593,13 @@
   "c2c64bec82277ce7": "2026-11-01T23:51:37.762555+00:00",
   "09d32552129f6409": "2026-11-01T23:56:37.690849+00:00",
   "b4ec47a37e263b54": "2026-11-02T00:01:37.717445+00:00",
-  "49276b010946e0de": "2026-11-02T00:06:37.729847+00:00"
+  "49276b010946e0de": "2026-11-02T00:06:37.729847+00:00",
+  "04af19fc997511f3": "2026-11-02T00:16:37.702364+00:00",
+  "aeeba09ea6683dfe": "2026-11-02T00:16:37.702364+00:00",
+  "9f4eeb7ebf72517a": "2026-11-02T00:16:37.702364+00:00",
+  "3e559f9480586c91": "2026-11-02T00:16:37.702364+00:00"
  },
  "recent": [
-  {
-   "title": "Topix Overhaul Kicks Off: Three Things Investors Need to Know",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-29/topix-overhaul-kicks-off-three-things-investors-need-to-know",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T00:08:36.859628+00:00",
-   "title_ru": "Начало капитального ремонта Topix: три вещи, которые нужно знать инвесторам",
-   "lead": "Japan Exchange Group Inc.’s first large-scale reshuffle of the Topix Index goes into effect Friday, part of the biggest overhaul in the benchmark’s history that may shrink the number of constituents by more than one-third.",
-   "lead_ru": "Первая крупномасштабная перестановка индекса Topix от Japan Exchange Group Inc. вступает в силу в пятницу, что является частью крупнейшего пересмотра в истории бенчмарка, который может сократить количество составляющих более чем на треть."
-  },
-  {
-   "title": "Lagarde Exits ECB After Big Wins, Some Errors and a Long Goodbye",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/lagarde-exits-ecb-after-big-wins-some-errors-and-a-long-goodbye",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 7,
-   "ts": "2026-10-30T00:13:36.869668+00:00",
-   "title_ru": "Лагард покидает ЕЦБ после больших побед, некоторых ошибок и долгого прощания",
-   "lead": "Christine Lagarde will leave the European Central Bank with one victory notched up over inflation, camaraderie restored among policymakers and the euro on track to join the digital age.",
-   "lead_ru": "Кристин Лагард покинет Европейский центральный банк с одной победой над инфляцией, духом товарищества, восстановленным среди политиков, и евро на пути к вступлению в цифровую эпоху.",
-   "tags": [
-    "ECB",
-    "inflation"
-   ]
-  },
-  {
-   "title": "Hong Kong Stocks Lose a Key Backer as Chinese Investors Head for Exit",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/hk-stocks-lose-a-key-backer-as-chinese-investors-head-for-exit",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-30T00:13:36.869668+00:00",
-   "title_ru": "Акции Гонконга теряют ключевого спонсора, поскольку китайские инвесторы направляются к выходу",
-   "lead": "Chinese investors are pulling back from Hong Kong’s stocks at the fastest pace in more than five years, threatening to deepen a selloff.",
-   "lead_ru": "Китайские инвесторы отступают от акций Гонконга самыми быстрыми темпами за последние пять лет, угрожая углубить распродажу.",
-   "tags": [
-    "markets",
-    "China"
-   ]
-  },
-  {
-   "title": "Philippine Bonds Are Most Exposed in Emerging Asia to Fed Hikes",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/philippine-bonds-are-most-exposed-in-emerging-asia-to-fed-hikes",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-30T00:13:36.869668+00:00",
-   "title_ru": "Филиппинские облигации наиболее подвержены росту ФРС в развивающихся странах Азии",
-   "lead": "Philippine bonds are the most vulnerable in emerging Asia to a hawkish Federal Reserve, according to an analysis by Bloomberg.",
-   "lead_ru": "Согласно анализу Bloomberg, филиппинские облигации являются наиболее уязвимыми в развивающейся Азии перед ястребиной Федеральной резервной системой.",
-   "tags": [
-    "Fed",
-    "bonds"
-   ]
-  },
-  {
-   "title": "Japan's beleaguered shoppers are a worry for convenience stores and the economy",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOeEJPMnU5OTFTd1lMaUxjS2txSjQzUG41TEZRTTlFRVppeWlRUy1nYkMwYnhaVWVJX24zb0QtbC0td1Fjc3F4VExjVVhkYW84aGlKVGlLdG5FbTllVEtMWVo5MG5iSVBUemE2c1B4QUZCSjJpNlZ2SXNaLVBfa1c5T3pMU3l0dVM1eTYyU3hIRDAxeEYtakRRS2ZPbnNDLUl3NlgtdXZ3ZEhCeG53OWtqU3dsMkRlU1dIcjgw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T00:13:36.869668+00:00",
-   "title_ru": "Осажденные покупатели Японии беспокоятся о магазинах и экономике"
-  },
   {
    "title": "A Starbucks turnaround is brewing — but perhaps not quickly enough for investors",
    "link": "https://www.marketwatch.com/story/a-starbucks-turnaround-is-brewing-but-perhaps-not-quickly-enough-3b5f57ac?mod=mw_rss_topstories",
@@ -5396,6 +5323,49 @@
    "score": 3,
    "ts": "2026-11-02T00:06:37.729847+00:00",
    "title_ru": "Проблема публичного рынка музыкальной индустрии стоимостью 20 миллиардов долларов"
+  },
+  {
+   "title": "Nine people dead in Learjet crash in south Florida, officials say",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQTXAwdVdXLUJnR3JHYmUzeFlIQjFKeVB4RmR3QWVoS1F5bVFJaXpaN0JFS05hTFV2THZCUlgtY1JMS2lmWHMxdWNxMWRQRldTZThyZUdJSmJrMVhpRWQ2dTcwSFQ2by1SbXBma1JqckV3U3FtTE9ZZ0ZFN0ZzUHItXy14WTlGY3hwVEU5T0k4TEVZbXZCQ2ZaeExtWGpJV2xYRUFHZFE4cldUMVB0VDlWYU1vLXU0T0xnZzZMb1lB?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-11-02T00:16:37.702364+00:00",
+   "title_ru": "В результате крушения самолета Learjet на юге Флориды погибли девять человек, сообщили официальные лица"
+  },
+  {
+   "title": "Gold Climbs Back From One-Year Low as Dip Buyers Arrest Slide",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/gold-climbs-back-from-one-year-low-as-dip-buyers-arrest-slide",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-11-02T00:16:37.702364+00:00",
+   "title_ru": "Золото поднялось с годового минимума на фоне снижения арестов покупателей",
+   "lead": "Gold rose, as lower oil prices offered some respite from inflationary pressures and dip buyers were drawn by the metal’s slide Friday to the lowest in a year.",
+   "lead_ru": "Золото выросло, поскольку более низкие цены на нефть дали некоторую передышку от инфляционного давления, а покупателей, падающих на падение, привлекло в пятницу падение цен на металл до самого низкого уровня за год.",
+   "tags": [
+    "inflation",
+    "oil",
+    "gold"
+   ]
+  },
+  {
+   "title": "Philippine Bonds Can Beat Asia If War Risks Ebb, Says Brandywine",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-01/philippine-bonds-can-beat-asia-if-war-risks-ebb-says-brandywine",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-11-02T00:16:37.702364+00:00",
+   "title_ru": "Филиппинские облигации могут победить Азию, если война рискует пойти на убыль, говорит Брендивайн",
+   "lead": "Philippine bonds may become one of Asia’s best performers once inflation pressures ease and risks from the Iran war recede, according to Brandywine Global Investment Management.",
+   "lead_ru": "По данным Brandywine Global Investment Management, филиппинские облигации могут стать одними из лучших в Азии, когда инфляционное давление ослабнет и риски, связанные с войной в Иране, уменьшатся.",
+   "tags": [
+    "inflation",
+    "bonds"
+   ]
   }
  ],
  "last_digest": "2026-11-01",
