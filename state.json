@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "86e446e4b0692f8a": "2026-10-30T10:39:40.343998+00:00",
   "e19fddc724b13425": "2026-10-30T10:44:40.383079+00:00",
   "270e757683fcd0b2": "2026-10-30T10:44:40.383079+00:00",
   "1e329fc55a8a180e": "2026-10-30T10:49:40.361499+00:00",
@@ -614,18 +613,10 @@
   "05402fd6c3f1a17a": "2026-11-02T10:33:12.612357+00:00",
   "8a5cf12e86d82cce": "2026-11-02T10:38:12.574704+00:00",
   "e0d85af97dfe6376": "2026-11-02T10:38:12.574704+00:00",
-  "a3089f85878a41a2": "2026-11-02T10:38:12.574704+00:00"
+  "a3089f85878a41a2": "2026-11-02T10:38:12.574704+00:00",
+  "d5d47d48138800d7": "2026-11-02T10:43:12.562393+00:00"
  },
  "recent": [
-  {
-   "title": "Here’s the math on Amazon CEO’s claim to be on path to two trillion-dollar revenue businesses",
-   "link": "https://www.marketwatch.com/story/heres-the-math-on-amazon-ceos-claim-to-be-on-path-to-two-trillion-dollar-revenue-businesses-34d648e8?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-30T10:39:40.343998+00:00"
-  },
   {
    "title": "Exxon Reaps Record Oil-Refining Profits on War-Driven Gasoline, Diesel Spikes",
    "link": "https://www.bloomberg.com/news/articles/2026-10-30/exxon-reaps-record-oil-refining-profits-on-war-driven-gasoline-diesel-spikes",
@@ -5376,6 +5367,23 @@
    ],
    "score": 2,
    "ts": "2026-11-02T10:38:12.574704+00:00"
+  },
+  {
+   "title": "Indian Bonds Rally as Oil Falls, Higher Yields Attract Buyers",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/indian-bonds-rally-as-oil-falls-higher-yields-attract-buyers",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 7,
+   "ts": "2026-11-02T10:43:12.562393+00:00",
+   "title_ru": "Индийские облигации растут на фоне падения цен на нефть и роста доходности, привлекающего покупателей.",
+   "lead": "Indian bonds gained the most in six months on Monday as crude oil prices extended losses, easing inflation concerns for the fuel-importing nation.",
+   "lead_ru": "В понедельник индийские облигации выросли больше всего за шесть месяцев, поскольку цены на сырую нефть увеличили убытки, ослабив опасения по поводу инфляции для страны-импортера топлива.",
+   "tags": [
+    "inflation",
+    "oil",
+    "bonds"
+   ]
   }
  ],
  "last_digest": "2026-11-01",
