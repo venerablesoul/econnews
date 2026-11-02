@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "a27d45c34fde8667": "2026-10-30T01:59:13.682191+00:00",
   "c82d90400c8fce36": "2026-10-30T02:14:13.634667+00:00",
   "bbe63d13d663883d": "2026-10-30T02:19:13.659141+00:00",
   "0049e89f0247c3f9": "2026-10-30T02:19:13.659141+00:00",
@@ -603,7 +602,8 @@
   "f750ae28250df8c3": "2026-11-02T01:46:37.747676+00:00",
   "cbfcc6c9af042e1b": "2026-11-02T01:46:37.747676+00:00",
   "2e1562a8eaa409d1": "2026-11-02T01:51:37.677771+00:00",
-  "10aa19d8496c8853": "2026-11-02T01:56:37.683488+00:00"
+  "10aa19d8496c8853": "2026-11-02T01:56:37.683488+00:00",
+  "0a9627e10909cafd": "2026-11-02T02:01:37.735036+00:00"
  },
  "recent": [
   {
@@ -5472,6 +5472,21 @@
    "tags": [
     "China"
    ]
+  },
+  {
+   "title": "China Factory Activity Expands But Ends Streak of Faster Growth",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/china-factory-activity-expands-but-ends-streak-of-faster-growth",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T02:01:37.735036+00:00",
+   "title_ru": "Активность китайских фабрик расширяется, но прекращается полоса более быстрого роста",
+   "lead": "China’s factory activity expanded last month while growing at a slower pace for the first time since July, a private survey showed, in further evidence of the resilience of the country’s export-oriented firms.",
+   "lead_ru": "Производственная деятельность Китая в прошлом месяце расширилась, хотя впервые с июля она росла более медленными темпами, как показало частное исследование, что является еще одним свидетельством устойчивости экспортно-ориентированных компаний страны.",
+   "tags": [
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-11-01",
@@ -5492,7 +5507,7 @@
   "MarketWatch": 0,
   "Банк Англии": 0,
   "Bank of England": 0,
-  "Bank of Russia": 1,
+  "Bank of Russia": 0,
   "ECB": 0,
   "Fed": 0,
   "IMF": 0,
