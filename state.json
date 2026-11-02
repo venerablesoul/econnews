@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "8f2f6982c614544d": "2026-10-30T05:54:13.560498+00:00",
   "cefda2f5c2162c2d": "2026-10-30T05:59:40.223011+00:00",
   "07358ca85386fb5b": "2026-10-30T06:04:40.247700+00:00",
   "2ca9960c96c35004": "2026-10-30T06:04:40.247700+00:00",
@@ -595,22 +594,10 @@
   "cb5f0b024c6365d9": "2026-11-02T05:32:31.230800+00:00",
   "a8fb005ee0b73dde": "2026-11-02T05:42:31.238853+00:00",
   "89fb893139e61dcc": "2026-11-02T05:42:31.238853+00:00",
-  "61dc579c04a0fc9e": "2026-11-02T05:52:31.225426+00:00"
+  "61dc579c04a0fc9e": "2026-11-02T05:52:31.225426+00:00",
+  "66bc14af290f8417": "2026-11-02T05:57:31.225393+00:00"
  },
  "recent": [
-  {
-   "title": "US promises tariff relief in talks with Audi on Georgia plant, sources say",
-   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOd3Nla2xMeVNaMDYyMkZHQ0pvNzM3b1BqdEJIS3pLN0NKZm1VbjlhUnJVdm43RzYyTHhJWnR0dFdkaXR4amRNNjhJU29ibEpWanZjcEdzT3h6MzVqa3dYRXp1c3pEamVaOVRNNXRiZ0p6RGg1aS1lek1VaFdZYTN0VFhWakhhZEdBX0tqUU1BUWdhX0pqU21fcUVyMWlDTUppN1lkMFVsTjN6YnhMb29UU25LS29SbUVjVmpMSzFSTENuR3M3UkRmRHJCcnY2QQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-30T05:54:13.560498+00:00",
-   "title_ru": "США обещают снижение тарифов на переговорах с Audi о заводе в Грузии, говорят источники",
-   "tags": [
-    "tariffs"
-   ]
-  },
   {
    "title": "Japanese Stocks Signal Confidence Over Faster BOJ ETF Sales",
    "link": "https://www.bloomberg.com/news/articles/2026-10-30/japanese-stocks-signal-confidence-over-faster-boj-etf-sales",
@@ -5314,6 +5301,16 @@
    "score": 3,
    "ts": "2026-11-02T05:52:31.225426+00:00",
    "title_ru": "Джозеф К. Локхарт, Lockhart Furniture Manufacturing Inc: профиль и биография"
+  },
+  {
+   "title": "Westpac flags deepest housing downturn in nearly two decades, impairment charges double",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQV1B2amVrelNnTnZYVUUxdll3eFZBNEJXdmZ2aDctSFo4cjhyRmxTbDVweFdQR0NmUzI2ai1tUklYa1djc3A0YmIyYjRZTEMxWXJiaHV6WVZ3ajlDZ0FVNWxiX1hGOGxxRlRjaW5wZG9OZzNGYmQzN1RoZnF1WVQ2aEV3NS1ua3FZUE5UdDNWSWNBMGJSR0l2c1NZLWlDQURVdlQ5THdHMVdxSGVuZmc?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T05:57:31.225393+00:00",
+   "title_ru": "Westpac отмечает самый глубокий спад в жилищном секторе почти за два десятилетия, сборы за обесценение удвоились"
   }
  ],
  "last_digest": "2026-11-01",
@@ -12220,8 +12217,10 @@
    "0001193532-26-000012",
    "0001697362-26-000021",
    "0001628280-26-068639",
+   "0001451763-26-000014",
    "0001493152-26-049498",
    "0001280486-26-000010",
+   "0001193125-26-442229",
    "0001213900-26-114605",
    "0002014293-26-000012",
    "0001824159-26-000015",
@@ -12231,7 +12230,6 @@
    "0001628280-26-068641",
    "0001213900-26-114608",
    "0001477932-26-006563",
-   "0000091440-26-000174",
    "0001628280-26-068637",
    "0001213900-26-114604",
    "0001493152-26-049496",
@@ -12242,15 +12240,14 @@
    "0001193125-26-442142",
    "0001193125-26-442230",
    "0001213900-26-114609",
-   "0001214659-26-013568",
    "0002025268-26-000008",
    "0002014386-26-000026",
    "0002014361-26-000040",
    "0001231919-26-001519",
    "0001213900-26-114611",
    "0001498270-26-000012",
-   "0001193125-26-442229",
-   "0001451763-26-000014",
+   "0000091440-26-000174",
+   "0001214659-26-013568",
    "0001213900-26-114588"
   ],
   "errors": {
