@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "4d87ff2b4dcdbea0": "2026-10-30T09:19:40.358258+00:00",
-  "6d53d8c101bc7841": "2026-10-30T09:19:40.358258+00:00",
   "294c01955febc0da": "2026-10-30T09:24:40.229412+00:00",
   "ad10370eca86c52e": "2026-10-30T09:24:40.229412+00:00",
   "c89e25b96003c851": "2026-10-30T09:24:40.229412+00:00",
@@ -613,32 +611,11 @@
   "bc225244767aee5e": "2026-11-02T09:12:31.288675+00:00",
   "88411c0e95f711dc": "2026-11-02T09:17:31.252398+00:00",
   "7e419f6ebbe4f1de": "2026-11-02T09:17:31.252398+00:00",
-  "5a7d3d57c1edeed5": "2026-11-02T09:17:31.252398+00:00"
+  "5a7d3d57c1edeed5": "2026-11-02T09:17:31.252398+00:00",
+  "66a81e651ae0acec": "2026-11-02T09:22:31.275441+00:00",
+  "aaafd4dd0cbbc71f": "2026-11-02T09:22:31.275441+00:00"
  },
  "recent": [
-  {
-   "title": "China trade accord with Swiss bucks wider trend towards protectionism",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQNkQ4YmJ3dHdaYVYzcXlkcUQ1V19QMU9mQ2tFd1RuQ1NEckN3ZTIxSFMzSkJxQzQ1UjdXTDVjRzlwdHNpUE13dUJKS19hQ0hndHlTdThtOEpLU1g5NXcxWnphT0RMME5TVDZLa2MySGZGMGdPVDF2QWdGVmpsN05fRk9jRmJZOFBsakdiT2I1X1lVYkpSUTFROHU0RFZGdnRvOXdYRlc4VnZRTzIyWG4xUU50SzRVRl8zaEZJS2lUaS1EZw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T09:19:40.358258+00:00",
-   "title_ru": "Торговое соглашение Китая со швейцарскими долларами расширяет тенденцию к протекционизму",
-   "tags": [
-    "China"
-   ]
-  },
-  {
-   "title": "Midterms meet earnings",
-   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxORzJ5RF9XWncxal9sWkV5MS05ek4tS3psYmd1NFh5dkF3V1BxaXdlN0FFZzBabllhX2FnNVVjOWhTTllpbkRKeGNsNGFlYUE4SWw1RDd2QjdlZTZ0Wk9VM2laNUhpdGRnbUp5My1CRUlhOEU1VzM5Z3JkMExTVDgtQ0h3?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T09:19:40.358258+00:00",
-   "title_ru": "Промежуточные результаты соответствуют доходам"
-  },
   {
    "title": "German economy grows by 0.2% in Q3, preliminary data shows",
    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOT2VyTFJQdHM3YjBFYUJJbDA4Y0JfSFZUTm5XNDloeUJCeUlRcU4wdEtvNXJISGtKc0h3MHFCajg5YTEtYUh6NkJ0eWxmdTRJOEtfRnh5OUFBUUpGNWdQV1FUY2NRN2tMbllZVUFDZWhqVG9SUjR3X2xnOXdDQkJiQUdxWGVkWEN6ZVNsdUprZnBmWlpOT0JSa0w4LTlzSHdfX3U0?oc=5",
@@ -5404,6 +5381,29 @@
    ],
    "score": 1,
    "ts": "2026-11-02T09:17:31.252398+00:00"
+  },
+  {
+   "title": "China's central bank taps liquidity tool to fund share purchases",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPbUowSGs1Q0hadWZXNFhieVFtSERoVm1uZHBNaDZYeVFoS2FXaVIxMVhnckRuMVY0NkJPQTNXZFdNeUtJQ2hYREZGZDM3UnhzcUE5bkJSMXhDTXpYRUltclJka2pJZS0yNGY0TGg2dDBkbTh3MnhQTjZxM0pKaWViT21HNmE0ajlHS0xGLVdkZmxMOHhzUndVU1Z4YXVPZElpZkJuQTRZSlZPcV9zRmJfQnRVWjRadw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T09:22:31.275441+00:00",
+   "title_ru": "Центральный банк Китая использует инструмент обеспечения ликвидности для финансирования покупки акций.",
+   "tags": [
+    "China"
+   ]
+  },
+  {
+   "title": "South African factory sentiment improves for second month in October, PMI shows",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQdkNra1lpaUJBOWlIVW9jQk1GOV9FRi14VWxKbGRPdjdXcUJkLXo1V0VHbU13Nnp2MXNSWVJpY09QUzNSSWx2UlV5Z2laTWRad1VxYTdQR2owcVJCaWJJeTRzT2dMbmhFSkpzNW1yZTlkc0xibHNFTVBHQlQzRlRpSVktLXlaU0FpUGx6RmJkcWhZX25MZ19zNzgyempGa0JxUTNwMW04WHQ4bWlPY1BUOUNZY1dmUzd6ZEJ2WQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T09:22:31.275441+00:00",
+   "title_ru": "Индекс деловой активности в южноафриканском производственном секторе улучшился второй месяц подряд в октябре, показывают данные PMI."
   }
  ],
  "last_digest": "2026-11-01",
@@ -12302,10 +12302,8 @@
    "0001193532-26-000012",
    "0001697362-26-000021",
    "0001628280-26-068639",
-   "0001451763-26-000014",
    "0001493152-26-049498",
    "0001280486-26-000010",
-   "0001193125-26-442229",
    "0001213900-26-114605",
    "0002014293-26-000012",
    "0001824159-26-000015",
@@ -12315,6 +12313,7 @@
    "0001628280-26-068641",
    "0001213900-26-114608",
    "0001477932-26-006563",
+   "0000091440-26-000174",
    "0001628280-26-068637",
    "0001213900-26-114604",
    "0001493152-26-049496",
@@ -12325,14 +12324,15 @@
    "0001193125-26-442142",
    "0001193125-26-442230",
    "0001213900-26-114609",
+   "0001214659-26-013568",
    "0002025268-26-000008",
    "0002014386-26-000026",
    "0002014361-26-000040",
    "0001231919-26-001519",
    "0001213900-26-114611",
    "0001498270-26-000012",
-   "0000091440-26-000174",
-   "0001214659-26-013568",
+   "0001193125-26-442229",
+   "0001451763-26-000014",
    "0001213900-26-114588"
   ],
   "errors": {
