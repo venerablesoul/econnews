@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "f48cb9fa0ed75666": "2026-10-30T10:34:40.417327+00:00",
   "86e446e4b0692f8a": "2026-10-30T10:39:40.343998+00:00",
   "e19fddc724b13425": "2026-10-30T10:44:40.383079+00:00",
   "270e757683fcd0b2": "2026-10-30T10:44:40.383079+00:00",
@@ -612,24 +611,12 @@
   "eb2ff11a896430c7": "2026-11-02T10:23:12.555266+00:00",
   "5ad55d0cc3aed1be": "2026-11-02T10:28:12.638849+00:00",
   "fda9d543fe71ba40": "2026-11-02T10:28:12.638849+00:00",
-  "05402fd6c3f1a17a": "2026-11-02T10:33:12.612357+00:00"
+  "05402fd6c3f1a17a": "2026-11-02T10:33:12.612357+00:00",
+  "8a5cf12e86d82cce": "2026-11-02T10:38:12.574704+00:00",
+  "e0d85af97dfe6376": "2026-11-02T10:38:12.574704+00:00",
+  "a3089f85878a41a2": "2026-11-02T10:38:12.574704+00:00"
  },
  "recent": [
-  {
-   "title": "World’s Second Worst Performing Currency Fans Ugandan Inflation",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/world-s-second-worst-performing-currency-fans-ugandan-inflation",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-30T10:34:40.417327+00:00",
-   "title_ru": "Вторая худшая в мире валюта по показателям инфляции в Уганде",
-   "lead": "Uganda’s inflation surged to its highest level in three years as a slump in the shilling — the world’s second-worst-performing currency over the past three months — drove up import costs.",
-   "lead_ru": "Инфляция в Уганде выросла до самого высокого уровня за три года, поскольку падение шиллинга — второй по величине валюты в мире за последние три месяца — привело к увеличению затрат на импорт.",
-   "tags": [
-    "inflation"
-   ]
-  },
   {
    "title": "Here’s the math on Amazon CEO’s claim to be on path to two trillion-dollar revenue businesses",
    "link": "https://www.marketwatch.com/story/heres-the-math-on-amazon-ceos-claim-to-be-on-path-to-two-trillion-dollar-revenue-businesses-34d648e8?mod=mw_rss_topstories",
@@ -5364,6 +5351,31 @@
    "tags": [
     "inflation"
    ]
+  },
+  {
+   "title": "Pakistan Inflation Cools as Energy Risks Cloud Outlook",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/pakistan-inflation-cools-as-energy-risks-cloud-outlook",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-11-02T10:38:12.574704+00:00",
+   "title_ru": "Инфляция в Пакистане охлаждается, поскольку прогноз по энергетическим рискам в облаке",
+   "lead": "Pakistan inflation eased last month, offering some relief to policymakers after the central bank raised interest rates to contain price pressures.",
+   "lead_ru": "В прошлом месяце в Пакистане снизилась инфляция, что несколько успокоило политиков после того, как центральный банк повысил процентные ставки для сдерживания ценового давления.",
+   "tags": [
+    "rates",
+    "inflation"
+   ]
+  },
+  {
+   "title": "The latest market wobble sees Citi giving up on this big tech trade",
+   "link": "https://www.marketwatch.com/story/the-latest-market-wobble-sees-citi-giving-up-on-this-big-tech-trade-181b0dea?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 2,
+   "ts": "2026-11-02T10:38:12.574704+00:00"
   }
  ],
  "last_digest": "2026-11-01",
