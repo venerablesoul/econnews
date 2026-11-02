@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "b50e5fee6766b224": "2026-10-30T18:45:57.475504+00:00",
-  "534f2dfb598ec378": "2026-10-30T18:45:57.475504+00:00",
-  "1d562beda2f6777f": "2026-10-30T18:45:57.475504+00:00",
-  "843dfa413e767b55": "2026-10-30T18:45:57.475504+00:00",
   "7e360b567b81fe1d": "2026-10-30T18:50:57.295323+00:00",
   "c1a2bfd83a3e967a": "2026-10-30T18:50:57.295323+00:00",
   "55b140b7b592b4c2": "2026-10-30T19:05:57.757394+00:00",
@@ -593,32 +589,6 @@
   "07ba40550b5a5c79": "2026-11-02T18:39:12.607661+00:00"
  },
  "recent": [
-  {
-   "title": "German inflation slows more than expected in October",
-   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPYlNSUkFvel9FT3U0d0NSRFhuQTM0dGhEdzI4bEFIRUIzdms5YXJCTEV3a1BXWElPZnVfNGd2b2l3TDBoRDZrWHY0Vy0wS1hCUUJqQ3p2MzlzUnJfTVpWYWxabl8xYjVZUFM1MDFsWFhHNTZZTENGSTdqMURfOUJEQQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-30T18:45:57.475504+00:00",
-   "title_ru": "Инфляция в Германии в октябре замедлилась сильнее, чем ожидалось",
-   "tags": [
-    "inflation"
-   ]
-  },
-  {
-   "title": "Reddit shares plunge as Google's AI search squeezes traffic",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNQks1Z3lNdGwyQnFsQ3NQTU1jWTMwNGRGV002QW5RaDhIOGRIRG9xZmFWTUpsYnpYWVhvbUE1N0ZRTXNlOVRJMjdIVE5nOU5tWEhWRGNORVZPUWxNZ2otUF9zUEQ1QkRlWjNNRm1keF95MFlJOUo3bXBmRTZJQ3ppdWxmOVlQbENUVXE3dXUwcTItTUNQTTJEQmJCdGJXeXNwckE?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T18:45:57.475504+00:00",
-   "title_ru": "Акции Reddit падают, поскольку поиск Google с помощью искусственного интеллекта сжимает трафик",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "People Don't Know Their Retirement Number: Conrath",
    "link": "https://www.bloomberg.com/news/videos/2026-10-30/people-don-t-know-their-retirement-number-conrath-video",
@@ -12003,9 +11973,8 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-11-02T17:39:12.644048+00:00",
+  "checked": "2026-11-02T18:44:12.704510+00:00",
   "sec_seen": [
-   "0001801785-26-000013",
    "0002118015-26-000005",
    "0002107660-26-000008",
    "0001868963-26-000013",
