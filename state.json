@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c82d90400c8fce36": "2026-10-30T02:14:13.634667+00:00",
   "bbe63d13d663883d": "2026-10-30T02:19:13.659141+00:00",
   "0049e89f0247c3f9": "2026-10-30T02:19:13.659141+00:00",
   "6743f6a29d4ca192": "2026-10-30T02:19:13.659141+00:00",
@@ -607,21 +606,6 @@
   "38bb6b27ca214688": "2026-11-02T02:06:37.787213+00:00"
  },
  "recent": [
-  {
-   "title": "Yen steady before BOJ, AI jitters drive Treasury rally, weigh on dollar",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNMHRlb2xFdjF1SUl3NUktRkR1WEpsOVktNG9kRlhNQWhVZm0wMGdPdlYzYUpxQVdTV3FnVkF4ekhmOUYyX3R1d1JQTmlGRGdrYVB6LTlWNTA4YXIzb1lOMDF0QW4zb25aaVNkRE5RaWlEQUZteXZMWnVmcGVTU19yVFlBY1FZZFIyWHRaYUhZbERiOHZvdXFhNUtIakZ5UmFjVy1vVzVjZmwzX0NKTHNXWWZFZ2M1bGlIVXNuZ3hn?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-30T02:14:13.634667+00:00",
-   "title_ru": "Иена устойчива перед БАНКОМ ЯПОНИИ, дрожь ИИ стимулирует ралли казначейских облигаций, давит на доллар",
-   "tags": [
-    "dollar",
-    "bonds",
-    "markets"
-   ]
-  },
   {
    "title": "Chinese Investors Seek Shelter in Long-Bond ETFs as Stocks Sink",
    "link": "https://www.bloomberg.com/news/articles/2026-10-30/chinese-investors-seek-shelter-in-long-bond-etfs-as-stocks-sink",
@@ -5523,7 +5507,7 @@
   "MarketWatch": 0,
   "Банк Англии": 0,
   "Bank of England": 0,
-  "Bank of Russia": 0,
+  "Bank of Russia": 2,
   "ECB": 0,
   "Fed": 0,
   "IMF": 0,
