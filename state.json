@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "03add1b131295ee3": "2026-10-30T15:15:10.563816+00:00",
   "4d98f8c122008385": "2026-10-30T15:20:10.468319+00:00",
   "f217fcd45020e3e6": "2026-10-30T15:20:10.468319+00:00",
   "f75d51bfcc897155": "2026-10-30T15:25:10.641753+00:00",
@@ -592,21 +591,11 @@
   "0543bfd8b9897165": "2026-11-02T15:08:12.762597+00:00",
   "1e00c6fc540eb92c": "2026-11-02T15:13:13.246115+00:00",
   "38aa7d559dbe33fd": "2026-11-02T15:13:13.246115+00:00",
-  "30af3d3436340adb": "2026-11-02T15:13:13.246115+00:00"
+  "30af3d3436340adb": "2026-11-02T15:13:13.246115+00:00",
+  "ebc341738447b932": "2026-11-02T15:18:12.676015+00:00",
+  "8f15924ac0652b75": "2026-11-02T15:18:12.676015+00:00"
  },
  "recent": [
-  {
-   "title": "Starbucks CEO Is Focused on Growth Plan, Fundamentals",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-30/starbucks-ceo-is-focused-on-growth-plan-fundamentals-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T15:15:10.563816+00:00",
-   "title_ru": "Генеральный директор Starbucks сосредоточен на плане роста и основах",
-   "lead": "Starbucks Corp. Chief Executive Officer Brian Niccol expects earnings growth to continue and he says the turnaround plan is ahead of schedule. He says becoming a multi-brand company is a possibility.",
-   "lead_ru": "Генеральный директор Starbucks Corp. Брайан Никкол ожидает, что рост прибыли продолжится, и говорит, что план оздоровления опережает график. Он говорит, что стать мультибрендовой компанией вполне возможно."
-  },
   {
    "title": "Who Could Replace Christine Lagarde as ECB President?",
    "link": "https://www.bloomberg.com/news/videos/2026-10-30/who-could-replace-christine-lagarde-as-ecb-president-video",
@@ -5151,6 +5140,33 @@
    "score": 3,
    "ts": "2026-11-02T15:13:13.246115+00:00",
    "title_ru": "Производство в США растет в октябре; цены на вводимые ресурсы остаются высокими"
+  },
+  {
+   "title": "US Manufacturing Activity Accelerates as Production Picks Up",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/us-factory-activity-picks-up-production-grows-most-since-2021",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T15:18:12.676015+00:00",
+   "title_ru": "Производственная активность в США ускоряется по мере роста производства",
+   "lead": "US manufacturing activity picked up in October, supported by the strongest production growth in nearly five years.",
+   "lead_ru": "Производственная активность в США выросла в октябре, чему способствовал самый сильный рост производства почти за пять лет."
+  },
+  {
+   "title": "US Natural Gas Rises on Lower Appalachian Output, Cooler Weather",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/us-natural-gas-rises-on-lower-appalachian-output-cooler-weather",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T15:18:12.676015+00:00",
+   "title_ru": "Природный газ в США растет на нижнем уровне добычи в Аппалачах, более холодная погода",
+   "lead": "US natural gas futures increased as production dropped over the weekend, led by declines in the shale fields of Appalachia. The dip in supply signals producers may be curtailing output because of low prices.",
+   "lead_ru": "Фьючерсы на природный газ в США увеличились, поскольку добыча упала в выходные дни, во главе со снижением добычи на сланцевых месторождениях Аппалачи. Падение производителей сигналов предложения может привести к сокращению производства из-за низких цен.",
+   "tags": [
+    "gas"
+   ]
   }
  ],
  "last_digest": "2026-11-01",
