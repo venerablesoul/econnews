@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "252501055041ded1": "2026-10-30T15:45:10.711069+00:00",
   "908c534e462dbf27": "2026-10-30T15:55:10.542544+00:00",
   "ed2ceefe5d3c5eb8": "2026-10-30T15:55:10.542544+00:00",
   "ff7d9b873fd8c56f": "2026-10-30T16:00:10.549282+00:00",
@@ -591,7 +590,9 @@
   "fcdd34973402b7c8": "2026-11-02T15:39:12.945428+00:00",
   "a23f59bdb57e7e77": "2026-11-02T15:39:12.945428+00:00",
   "4e2fa7305fb86302": "2026-11-02T15:39:12.945428+00:00",
-  "5abde9bd965e591d": "2026-11-02T15:39:12.945428+00:00"
+  "5abde9bd965e591d": "2026-11-02T15:39:12.945428+00:00",
+  "e4a423667f4633c9": "2026-11-02T15:49:12.617816+00:00",
+  "a51518a474e7cf8c": "2026-11-02T15:49:12.617816+00:00"
  },
  "recent": [
   {
@@ -5110,6 +5111,34 @@
    "tags": [
     "gas"
    ]
+  },
+  {
+   "title": "Lagarde Wants to Kick Off New Career Phase, ECB’s Moulin Says",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/lagarde-wants-to-kick-off-new-career-phase-ecb-s-moulin-says",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-11-02T15:49:12.617816+00:00",
+   "title_ru": "Лагард хочет начать новый этап карьеры, говорит Мулен из ЕЦБ",
+   "lead": "European Central Bank President Christine Lagarde resigned in order to start a new chapter in her career, according to the Bank of France chief.",
+   "lead_ru": "По словам главы Банка Франции, президент Европейского центрального банка Кристин Лагард подала в отставку, чтобы начать новую главу в своей карьере.",
+   "tags": [
+    "ECB"
+   ]
+  },
+  {
+   "title": "Russia Looks to Delay Defense Ministry Pay Amid Budget Gap",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQaHVjNFJQR3REMDlNV2hGVTNJSFpJay1kdEFtNndRZU1LVzRNS3QtQVBRVDJ2dE5OSkFxc3pRWUFuY1gtWDNJNEhQRTJ3SXhsLXdKbjBzYVdJVXg3WVk0OEtxWGVva2R0QnVQTkQ5UFJnOV9mRW5iUlNfSDV2cU5DcDVDc2R5RDFETXpXNU56bjFKcEhieVpHdDlrbHl2anlKWU41Yi1oN3pYbTdob3c?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T15:49:12.617816+00:00",
+   "title_ru": "Россия рассчитывает задержать выплаты Минобороны на фоне бюджетного разрыва",
+   "tags": [
+    "Russia"
+   ]
   }
  ],
  "last_digest": "2026-11-01",
@@ -5132,7 +5161,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 0,
+  "Fed": 1,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
@@ -11994,17 +12023,10 @@
   },
   "checked": "2026-11-02T15:29:12.646087+00:00",
   "sec_seen": [
-   "0001444838-26-000081",
-   "0001444838-26-000085",
-   "0001444838-26-000083",
-   "0001444838-26-000084",
    "0001708055-26-000089",
-   "0001444838-26-000079",
    "0001388767-26-000010",
-   "0001444838-26-000082",
    "0000890541-26-000014",
-   "0001976408-26-000924",
-   "0001444838-26-000080"
+   "0001976408-26-000924"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
