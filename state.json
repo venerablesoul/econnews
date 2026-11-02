@@ -589,7 +589,9 @@
   "4c8385c156581625": "2026-11-02T18:09:13.303850+00:00",
   "6e810c1316d3238f": "2026-11-02T18:19:12.629931+00:00",
   "7c03349bd26f23b5": "2026-11-02T18:19:12.629931+00:00",
-  "07f3e6c3f4a10d47": "2026-11-02T18:19:12.629931+00:00"
+  "07f3e6c3f4a10d47": "2026-11-02T18:19:12.629931+00:00",
+  "280fe45d954fca14": "2026-11-02T18:29:12.693591+00:00",
+  "16142a733a0a86e4": "2026-11-02T18:29:12.693591+00:00"
  },
  "recent": [
   {
@@ -5104,6 +5106,30 @@
    ],
    "score": 2,
    "ts": "2026-11-02T18:19:12.629931+00:00"
+  },
+  {
+   "title": "China Signals Much More Stocks Support Coming After October Swoon",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQSjlPTVJvaVhNc2Q1R0tiYUs4SEs1VTV2RGVnN2M0ZkVVRkpBZW04OTZDWENISjNRbkM0N01BMHQxREdOdnNZWElMRUVQM1dKeGdKZ2F6WmFjS214cHNBWThwU29xUEdjSDhodUxFd2h4QzRjdkxEV01uSlFSRlVvRUlKc3IwbmN6ZnVXcHBySDFwMnlPWWZIcHBHbGtOZWxVU3FpWmJ2TmJDclN4UVRMUWhRemVnbGg4YzVz?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T18:29:12.693591+00:00",
+   "title_ru": "Китай сигнализирует о значительном увеличении поддержки акций после октябрьского спада",
+   "tags": [
+    "markets",
+    "China"
+   ]
+  },
+  {
+   "title": "What does the loss of US trade benefits mean for South Africa and Rwanda?",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOUXlhUlNYNXNGZ0pMN3RWOFZaSG4xdGlfeEZ3R2RncW9nYkpmT1d6OE1RT3QxWG1Scm9oeDluQ01xZEloVThmLVcyb0ZpNHVtVVNUbENPVVRfRzhIOG1PWkdQNE9CUjNEQzlnUTdBQlFJSmc3WFkxSU5kMTRybW9DZ2c3cjBnLURRM1lVbFJWd3prVmpBUVM2UUQxSC1lOWlYUlZBSHRON2xlQQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T18:29:12.693591+00:00",
+   "title_ru": "Что означает потеря торговых преимуществ США для Южной Африки и Руанды?"
   }
  ],
  "last_digest": "2026-11-02",
@@ -11989,8 +12015,9 @@
   "checked": "2026-11-02T17:39:12.644048+00:00",
   "sec_seen": [
    "0001801785-26-000013",
+   "0002107660-26-000008",
+   "0001868963-26-000013",
    "0001965462-26-000002",
-   "0001437749-26-034329",
    "0001628280-26-068746"
   ],
   "errors": {
