@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "1900f392f00e2d60": "2026-10-30T08:34:40.230270+00:00",
-  "833b17bee41e4ac2": "2026-10-30T08:34:40.230270+00:00",
-  "a271bafb2b1f8e23": "2026-10-30T08:39:40.239136+00:00",
   "0c70ded9f2b6700e": "2026-10-30T08:59:40.298649+00:00",
   "2d9a9feb978dcb90": "2026-10-30T08:59:40.298649+00:00",
   "b36f7ba6b40e53fd": "2026-10-30T08:59:40.298649+00:00",
@@ -604,39 +601,11 @@
   "a23eabe9352aa9ce": "2026-11-02T08:27:31.232189+00:00",
   "e3af0b9bb1ca5da8": "2026-11-02T08:27:31.232189+00:00",
   "56b68014a90eab83": "2026-11-02T08:27:31.232189+00:00",
-  "85505a1769e2ef5d": "2026-11-02T08:32:31.261190+00:00"
+  "85505a1769e2ef5d": "2026-11-02T08:32:31.261190+00:00",
+  "9b4807e570c3cdf0": "2026-11-02T08:37:31.244700+00:00",
+  "6769b22683e18f76": "2026-11-02T08:42:31.283464+00:00"
  },
  "recent": [
-  {
-   "title": "Bleak Friday Looms for Stocks: Market Analysis",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-30/bleak-friday-looms-for-stocks-3-minutes-mliv-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-30T08:34:40.230270+00:00",
-   "title_ru": "Для акций надвигается мрачная пятница: анализ рынка",
-   "lead": "Tom Mackenzie, Guy Johnson and Mark Cudmore break down today's key themes for analysts and investors on \"Bloomberg: The Opening Trade.\" (Source: Bloomberg)",
-   "lead_ru": "Том Маккензи, Гай Джонсон и Марк Кадмор раскрывают ключевые темы сегодняшнего дня для аналитиков и инвесторов в программе «Bloomberg: The Opening Trade». (Источник: Блумберг)",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "Kia Shares Plunge as Cost Surge Linked to Iran War Hits Profit",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/kia-shares-plunge-as-cost-surge-linked-to-iran-war-hits-profit",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T08:39:40.239136+00:00",
-   "title_ru": "Акции Kia упали, поскольку рост затрат, связанный с войной в Иране, ударил по прибыли",
-   "lead": "Kia Corp. shares fell to their lowest level in more than a year after the company warned that its earnings are being eroded by mounting costs linked to the war in the Middle East.",
-   "lead_ru": "Акции Kia Corp. упали до самого низкого уровня более чем за год после того, как компания предупредила, что ее доходы снижаются из-за растущих расходов, связанных с войной на Ближнем Востоке.",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "UK Wins Back Bond Investors With Dose of Fiscal Restraint",
    "link": "https://www.bloomberg.com/news/articles/2026-10-30/uk-wins-back-bond-investors-with-dose-of-fiscal-restraint",
@@ -5360,6 +5329,19 @@
    "lead_ru": "Анна Эдвардс, Гай Джонсон, Том Маккензи и Марк Кадмор делятся сегодняшними ключевыми темами для аналитиков и инвесторов в «Bloomberg: The Opening Trade.\" (Источник: Bloomberg)",
    "tags": [
     "markets"
+   ]
+  },
+  {
+   "title": "Water, jobs and crime among key issues for South African voters",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQT21QVEZCUHZXTXJPS2lxYXRBZm5ZNjRWcER3Z1FDV1Q5UXNMdjN6d2xmc0h0NlhUMXMwQ3pyaWNodTl3ZGhnbmJUZGZ2S2JSOWRMYTg5Z2ZneThZWGNlbFRsYUs0U2dwdmVHdG5jTkVPM1lXeHRuaU5vdDRUbU1uZzM2MGw3cHk0c2hTZjk3NkNIcm9vb0ZrbVFOTG1GNmZJUU5kY0ln?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T08:42:31.283464+00:00",
+   "title_ru": "Вода, рабочие места и преступность среди ключевых вопросов для южноафриканских избирателей",
+   "tags": [
+    "jobs"
    ]
   }
  ],
