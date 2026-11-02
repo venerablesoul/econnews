@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "afb0b63fa3a6539d": "2026-10-30T03:04:13.560704+00:00",
   "0e9e09f6a635d4be": "2026-10-30T03:09:13.559262+00:00",
   "8b67c8a953a566cc": "2026-10-30T03:09:13.559262+00:00",
   "6b6651ca33c47f46": "2026-10-30T03:14:13.680765+00:00",
@@ -597,19 +596,10 @@
   "48e5275db062db0a": "2026-11-02T02:46:37.679448+00:00",
   "45bf80c506d4e9bf": "2026-11-02T02:51:37.682154+00:00",
   "955d2050d5e54e42": "2026-11-02T02:56:37.718197+00:00",
-  "f665ed1f01267b63": "2026-11-02T03:01:37.697095+00:00"
+  "f665ed1f01267b63": "2026-11-02T03:01:37.697095+00:00",
+  "fceef8867d6330b5": "2026-11-02T03:06:37.740464+00:00"
  },
  "recent": [
-  {
-   "title": "Universal Music Q3 subscription revenue growth tops expectations",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPdkVyYUVDRmkwOS1OR2ZOY2t1c3dJenQ4clZGS09fdXQ5c0dRVmxwR01wRHR3QmU1ei10Q2x6OERLUHJGRm40VHppRHY3NkxlWm5IcTBtcnBRM3phNF83YXZwUzJmS1lIQlRWU2V6OXBCWXBra3YxaFdlYUJ4RG5wRS0xVnc1Yk8yLTdJZF8xbWdQX0VDY2NDYjdUejk2WDl5QmZhVmc0aWlfVjBGejhBSGhxdE9xYlBpbWFiUElGd2Y?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T03:04:13.560704+00:00",
-   "title_ru": "Рост выручки от подписки на Universal Music в 3 квартале превзошел ожидания"
-  },
   {
    "title": "BOJ Holds Rates, Says Inflation Trend Hits Target For First Time",
    "link": "https://www.bloomberg.com/news/articles/2026-10-30/boj-holds-benchmark-rate-steady-as-expected-after-september-hike",
@@ -5416,6 +5406,22 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "US Pushes for Russia to Resume Gas Sales to Europe, WSJ Reports",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/us-pushes-for-russia-to-resume-gas-sales-to-europe-wsj-reports",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T03:06:37.740464+00:00",
+   "title_ru": "США настаивают на том, чтобы Россия возобновила продажи газа в Европу, сообщает WSJ",
+   "lead": "US officials are promoting a plan for Russia to resume sales of natural gas to Europe via pipelines running through Ukraine, the Wall Street Journal reported.",
+   "lead_ru": "Официальные лица США продвигают план возобновления Россией продаж природного газа в Европу по трубопроводам, проходящим через Украину, сообщает Wall Street Journal.",
+   "tags": [
+    "gas",
+    "Russia"
+   ]
   }
  ],
  "last_digest": "2026-11-01",
@@ -5436,7 +5442,7 @@
   "MarketWatch": 0,
   "Банк Англии": 0,
   "Bank of England": 0,
-  "Bank of Russia": 0,
+  "Bank of Russia": 1,
   "ECB": 0,
   "Fed": 0,
   "IMF": 0,
