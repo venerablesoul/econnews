@@ -1,12 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "61d95bbdc27bf05e": "2026-10-30T05:34:13.604250+00:00",
-  "7b0decd923991952": "2026-10-30T05:34:13.604250+00:00",
-  "c9d0c89212f5c7f5": "2026-10-30T05:34:13.604250+00:00",
-  "6b30108cd8df2218": "2026-10-30T05:34:13.604250+00:00",
-  "06fe5200083e6e17": "2026-10-30T05:34:13.604250+00:00",
-  "50d96a0891f4bc10": "2026-10-30T05:39:13.578652+00:00",
   "186752b3e19ce230": "2026-10-30T05:44:13.608753+00:00",
   "87935142bc5262c2": "2026-10-30T05:44:13.608753+00:00",
   "8f2f6982c614544d": "2026-10-30T05:54:13.560498+00:00",
@@ -600,95 +594,11 @@
   "89e562b91dbfb162": "2026-11-02T05:27:31.226677+00:00",
   "a8ce55892436498f": "2026-11-02T05:32:31.230800+00:00",
   "67984aea27702249": "2026-11-02T05:32:31.230800+00:00",
-  "cb5f0b024c6365d9": "2026-11-02T05:32:31.230800+00:00"
+  "cb5f0b024c6365d9": "2026-11-02T05:32:31.230800+00:00",
+  "a8fb005ee0b73dde": "2026-11-02T05:42:31.238853+00:00",
+  "89fb893139e61dcc": "2026-11-02T05:42:31.238853+00:00"
  },
  "recent": [
-  {
-   "title": "Egypt's central bank makes first rate hike since March 2024",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQaWs3LWxWaXNJdzQ2aGROTlV4a1JtdjBpX21DZmxsYWQ0MF82eWk4b0VxeUVoamFGb3Y4SVBCQlY5ZTltM2t5ajYwYUJ0WlJpeDEtSkY2VFFUN3ZvQ2U1MEQyeWRfMHluY2NMNHlmaTFhWVN5cE1xYWFaazdPeDB0M1ptTEFQNTYxbG9hXzg4dG5lWDVINEJwWWFmbVdEcjdqcTVXOXl0UTVRR1U?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-30T05:34:13.604250+00:00",
-   "title_ru": "Центральный банк Египта впервые с марта 2024 года повысил ставку",
-   "tags": [
-    "rates"
-   ]
-  },
-  {
-   "title": "Christine Lagarde: the unlikely central banker who steered Europe through multiple crises",
-   "link": "https://www.ft.com/content/423419b6-a39e-4870-adf5-c59cf9cec8c8?syn-25a6b1a6=1",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 5,
-   "ts": "2026-10-30T05:34:13.604250+00:00",
-   "title_ru": "Кристин Лагард: маловероятный центральный банкир, который провел Европу через многочисленные кризисы",
-   "lead": "The ECB president will depart before her eight-year term expires in October 2027",
-   "lead_ru": "Президент ЕЦБ уйдет в отставку до истечения восьмилетнего срока в октябре 2027 года",
-   "tags": [
-    "ECB"
-   ]
-  },
-  {
-   "title": "Jio Keeps Ambani Magic Alive as Investors Await Earnings",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-30/jio-keeps-ambani-magic-alive-as-investors-await-earnings-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-30T05:34:13.604250+00:00",
-   "title_ru": "Jio поддерживает магию Амбани, пока инвесторы ждут прибыли",
-   "lead": "Jio Platforms’ strong post-listing performance may continue in the coming weeks, supported by limited competition in India’s telecom market. Investors now look for cues from the company's second-quarter earnings on Friday.",
-   "lead_ru": "Высокая производительность Jio Platforms после листинга может продолжиться в ближайшие недели, чему способствует ограниченная конкуренция на телекоммуникационном рынке Индии. Инвесторы теперь ищут подсказки от прибыли компании за второй квартал в пятницу."
-  },
-  {
-   "title": "FirstFT: The high-stakes AI mega-project behind Nscale’s $35bn IPO",
-   "link": "https://www.ft.com/content/1e319b52-f31f-4dde-90b7-e01e2f199817?syn-25a6b1a6=1",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T05:34:13.604250+00:00",
-   "title_ru": "FirstFT: мегапроект с высокими ставками на ИИ, стоящий за IPO Nscale на $ 35 млрд",
-   "lead": "Also in today’s newsletter: tech sell-off and $6.3bn Binance hack",
-   "lead_ru": "Также в сегодняшнем информационном бюллетене: распродажа технологий и взлом Binance на $ 6,3 млрд",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "Why Trump’s tech dreams are quietly crumbling",
-   "link": "https://www.ft.com/content/9cc8d4ce-22ec-45d7-8b74-71a1dfe9abcc?syn-25a6b1a6=1",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T05:34:13.604250+00:00",
-   "title_ru": "Почему технологические мечты Трампа тихо рушатся",
-   "lead": "Tariffs, immigration restrictions and skilled labour shortages make it hard for the US to boost production",
-   "lead_ru": "Тарифы, иммиграционные ограничения и нехватка квалифицированной рабочей силы затрудняют для США увеличение производства",
-   "tags": [
-    "tariffs"
-   ]
-  },
-  {
-   "title": "ВТБ повысит ставку по накопительному счету до 14,7%",
-   "link": "https://www.rbc.ru/rbcfreenews/6ae3bce734975c50e504c681",
-   "sources": [
-    "RBC"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T05:39:13.578652+00:00",
-   "title_en": "VTB will raise the rate on the savings account to 14.7%",
-   "lead": "ВТБ с 1 ноября повысит ставку по накопительному счету в рублях до 14,7% годовых, сообщила РБК пресс-служба банка.",
-   "lead_en": "From November 1, VTB will increase the rate on the savings account in rubles to 14.7% per annum, the bank's press service told RBC.",
-   "tags": [
-    "rates",
-    "ruble"
-   ]
-  },
   {
    "title": "How ‘Shrugflation’ Explains the US Economy in 2026",
    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQTHhYczdYaFZBVnN5Rk4zbk5nenBPenlfYzZmbk1vTW9XSF9FYjROSDcxM09RdjltMWVtV0l3c1otYnR3ekhWMkJCeDNJTWJPb3RySjFpWEN1UV9xOVFEaVlLSndDQWZIa2FFOFVmZmtOZ2lkZWJMX0RUVnBoazlCTnN1NHVXZlRRODJ3aGZka0szZVhSaFVFQmtTc0h6aXlJQzdWRTFHdUl3RFZlUXJUVm9FNA?oc=5",
@@ -5398,6 +5308,26 @@
    "score": 3,
    "ts": "2026-11-02T05:32:31.230800+00:00",
    "title_ru": "Goldman Sachs ожидает повышения ставки Банка Англии в феврале 2027 года"
+  },
+  {
+   "title": "Morning Bid: Markets hope for relief in Apple margins",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBrejNZSlQ0dURSRXVLTjBMcjMybUZkek44OHdDal9La2E5SWtTb21SVG80MkkxMFloTDQzTXNpU2V1dHVzek00T2E2Z2FJUDNmRGdrSXRaVnFwRFdxZWtZMWRaWklwc3FEREhEQkNWWFpWcGJIUHNTR1RzMG1GSTA?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T05:42:31.238853+00:00",
+   "title_ru": "Утренняя ставка: рынки надеются на снижение маржи Apple"
+  },
+  {
+   "title": "BOJ locks in December hike, but neutral-rate uncertainty muddies outlook",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQYTctMVc3dnVQZlY5amJ2ejRjZEpqWTl4UFZJcHhvMzJoVjRJLUV6LVduano0Q2VaUHdmY1RXNWlSUTNxRGhPUVoxZ1dqelBadS1ENmNZcmwtTTJkYm5zU1NLNDhxSWtmUHVRY0hHRjg3NUY0QzdCbmZWRlZwWEZ5WC00Q2ZpNlVKSEp0QWVyNThIVE5WN1V5c2NvTFdmWEM5NWlKNFpmVGxHbm1LQktvSXo4alFhc29Z?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T05:42:31.238853+00:00",
+   "title_ru": "БАНК ЯПОНИИ зафиксировал рост в декабре, но прогнозы по неопределенности нейтральной ставки остаются неопределенными"
   }
  ],
  "last_digest": "2026-11-01",
