@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "8f9f7853e4c962e9": "2026-10-30T05:04:13.575489+00:00",
-  "f748a760673b1994": "2026-10-30T05:04:13.575489+00:00",
   "f5d8481468f9bfcc": "2026-10-30T05:09:13.568414+00:00",
   "0e98fb4b5f50f0f4": "2026-10-30T05:19:13.620204+00:00",
   "9296c2212bf1f97f": "2026-10-30T05:19:13.620204+00:00",
@@ -596,30 +594,13 @@
   "2bcaa726ce4451bd": "2026-11-02T04:26:37.749562+00:00",
   "fb51959a9b76b119": "2026-11-02T04:47:31.218915+00:00",
   "e2aca183187722f0": "2026-11-02T04:47:31.218915+00:00",
-  "732fc46823a8c830": "2026-11-02T04:52:31.253655+00:00"
+  "732fc46823a8c830": "2026-11-02T04:52:31.253655+00:00",
+  "b4f25a2429153ded": "2026-11-02T05:07:31.265067+00:00",
+  "179d0902138966e8": "2026-11-02T05:07:31.265067+00:00",
+  "2abe4cdc166cb95b": "2026-11-02T05:07:31.265067+00:00",
+  "1999b2ed81105454": "2026-11-02T05:07:31.265067+00:00"
  },
  "recent": [
-  {
-   "title": "Britain Tests the Limits With Plan to Tax Its Way Out of Debt",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/britain-tests-the-limits-with-plan-to-tax-its-way-out-of-debt",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T05:04:13.575489+00:00",
-   "title_ru": "Британия тестирует лимиты с планом обложения налогом своего выхода из долгов",
-   "lead": "Britain was singled out for praise by the International Monetary Fund this month for the boldest deficit-reduction plan of any Group of Seven nation.",
-   "lead_ru": "В этом месяце Международный валютный фонд выделил Великобританию для похвалы за самый смелый план сокращения дефицита среди всех стран Большой семерки."
-  },
-  {
-   "title": "ЦБ оценил влияние роста рублевых расчетов на валютный курс",
-   "link": "https://www.rbc.ru/rbcfreenews/6adf72864f25d2264d28f787",
-   "sources": [
-    "RBC"
-   ],
-   "score": 1,
-   "ts": "2026-10-30T05:04:13.575489+00:00"
-  },
   {
    "title": "BOJ keeps interest rates steady, signals further rate hikes",
    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPckM0NUFNY0hHSVN5Y3Z2OWR6Zk9yLTVIdEtxX1JIMkR2Sjd2c2VCY01BT3QzOWQ5WmF5QmNyTC03X1VsV2V1SVZRbk9mc2lxZG9FNnBaVm1fSWVpeFdJRUxnTXJTbFdxZnFNUEtBMjRxc2FpTFJVdk0yTkxmSFM2a3Njek9JcExYRldGRFVXSEpTY1hRam1CMVBpZ3Vrc1h1MGQ2UXdScnR4dUNlUzBOamEzcw?oc=5",
@@ -5328,6 +5309,52 @@
    "score": 4,
    "ts": "2026-11-02T04:47:31.218915+00:00",
    "title_ru": "Гонконг планирует правила для быстрорастущего рынка страховщиков"
+  },
+  {
+   "title": "The Bank of England Ponders a New Normal for Interest Rates",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/the-bank-of-england-ponders-a-new-normal-for-interest-rates",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-11-02T05:07:31.265067+00:00",
+   "title_ru": "Банк Англии обдумывает новую норму процентных ставок",
+   "lead": "For most of this year, the Bank of England argued that interest rates were probably high enough to bear down on inflation. Now it’s not so sure.",
+   "lead_ru": "В течение большей части этого года Банк Англии утверждал, что процентные ставки, вероятно, были достаточно высокими, чтобы снизить инфляцию. Теперь это не так точно.",
+   "tags": [
+    "rates",
+    "inflation"
+   ]
+  },
+  {
+   "title": "BoE set to raise rates to 4% in fight against inflation",
+   "link": "https://www.ft.com/content/30405694-3487-4c41-b720-613bde9d2de1?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 6,
+   "ts": "2026-11-02T05:07:31.265067+00:00",
+   "title_ru": "Банк Англии намерен повысить ставки до 4% в борьбе с инфляцией",
+   "lead": "Governor Andrew Bailey has warned against rushing to judgment about risks but latest OBR figures point to tough outlook",
+   "lead_ru": "Губернатор Эндрю Бейли предостерег от поспешных суждений о рисках, но последние данные OBR указывают на жесткие перспективы",
+   "tags": [
+    "inflation"
+   ]
+  },
+  {
+   "title": "NSE Shares Win Wall Street Backing After Muted Trading Debut",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/nse-shares-win-wall-street-backing-after-muted-trading-debut",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T05:07:31.265067+00:00",
+   "title_ru": "Акции NSE получают поддержку Уолл-стрит после приглушенного торгового дебюта",
+   "lead": "The National Stock Exchange of India Ltd. is winning bullish backing from Wall Street brokers, as they expect the bourse’s dominance to gain in India’s deepening capital markets.",
+   "lead_ru": "Национальная фондовая биржа Индии получает бычью поддержку со стороны брокеров Уолл-стрит, поскольку они ожидают, что доминирование биржи на углубляющихся рынках капитала Индии увеличится.",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-11-01",
@@ -12218,7 +12245,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-11-02T04:01:37.695908+00:00",
+  "checked": "2026-11-02T05:02:31.273169+00:00",
   "sec_seen": [
    "0001223260-26-000011",
    "0001193125-26-442116",
