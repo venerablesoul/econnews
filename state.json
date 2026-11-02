@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "7e360b567b81fe1d": "2026-10-30T18:50:57.295323+00:00",
-  "c1a2bfd83a3e967a": "2026-10-30T18:50:57.295323+00:00",
   "55b140b7b592b4c2": "2026-10-30T19:05:57.757394+00:00",
   "75f4fda082ce649e": "2026-10-30T19:15:57.449787+00:00",
   "55c927a9c2721998": "2026-10-30T19:25:57.448317+00:00",
@@ -586,24 +584,13 @@
   "16142a733a0a86e4": "2026-11-02T18:29:12.693591+00:00",
   "379331dd32189f24": "2026-11-02T18:39:12.607661+00:00",
   "f900bc79d184c3c9": "2026-11-02T18:39:12.607661+00:00",
-  "07ba40550b5a5c79": "2026-11-02T18:39:12.607661+00:00"
+  "07ba40550b5a5c79": "2026-11-02T18:39:12.607661+00:00",
+  "2fb9a3ff9b2258ea": "2026-11-02T18:54:12.666758+00:00",
+  "ee88fd000173787a": "2026-11-02T18:54:12.666758+00:00",
+  "29a6fbbd0877599b": "2026-11-02T18:59:12.689297+00:00",
+  "546c19d9e0079540": "2026-11-02T18:59:12.689297+00:00"
  },
  "recent": [
-  {
-   "title": "People Don't Know Their Retirement Number: Conrath",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-30/people-don-t-know-their-retirement-number-conrath-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T18:50:57.295323+00:00",
-   "title_ru": "Люди не знают свой пенсионный номер: Конрат",
-   "lead": "Michael Conrath, chief retirement strategist at JPMorgan Asset Management, joins Scarlet Fu and Tom Keene on \"Bloomberg Money.\" They discuss how inflation is causing Americans to rethink their retirement saving goals.",
-   "lead_ru": "Майкл Конрат, главный пенсионный стратег JPMorgan Asset Management, присоединяется к Скарлет Фу и Тому Кину в программе «Bloomberg Money». Они обсуждают, как инфляция заставляет американцев переосмысливать свои цели пенсионных накоплений.",
-   "tags": [
-    "inflation"
-   ]
-  },
   {
    "title": "Nasdaq 100 (NDX, NDQ, QQQ) Hits Third Correction of 2026 on Unwinding Tech Bets",
    "link": "https://www.bloomberg.com/news/articles/2026-10-30/nasdaq-100-ndx-ndq-qqq-hits-third-correction-of-2026-on-unwinding-tech-bets",
@@ -5091,6 +5078,21 @@
    "score": 3,
    "ts": "2026-11-02T18:39:12.607661+00:00",
    "title_ru": "Канадская фабрика PMI впервые показала сокращение сектора в 2026 году"
+  },
+  {
+   "title": "Midterm Rally May Be Tricky as AI Trade Becomes ‘Show Me’ Story",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/midterm-rally-may-be-tricky-as-ai-trade-becomes-show-me-story",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T18:59:12.689297+00:00",
+   "title_ru": "Промежуточное ралли может быть сложным, поскольку торговля искусственным интеллектом становится историей «Покажи мне»",
+   "lead": "Traders expecting the US midterm elections to be a clearing event for stocks may find themselves coming up against an artificial intelligence “wall of worry” that keeps the market from moving higher, according to Wolfe Research.",
+   "lead_ru": "По данным Wolfe Research, трейдеры, ожидающие, что промежуточные выборы в США станут клиринговым событием для акций, могут столкнуться с «стеной беспокойства» искусственного интеллекта, которая удерживает рынок от роста.",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-11-02",
@@ -8103,6 +8105,22 @@
     "date": "2026-10-30",
     "disclosed": "2026-11-02",
     "link": "https://www.sec.gov/Archives/edgar/data/1555392/000155539226000004/0001555392-26-000004-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "cdbdb75a3f2d66c8",
+    "ticker": "VTMX",
+    "company": "Vesta Real Estate Corporation, S.A.B. de C.V.",
+    "who": "Carranza Lorenzo Dominique Berho",
+    "role": "CEO",
+    "type": "sell",
+    "value": 905000,
+    "shares": 250000,
+    "price": 3.62,
+    "plan": false,
+    "date": "2026-10-30",
+    "disclosed": "2026-11-02",
+    "link": "https://www.sec.gov/Archives/edgar/data/2116974/000211697426000006/0002116974-26-000006-index.htm"
    },
    {
     "src": "sec",
@@ -11927,22 +11945,6 @@
     "date": "2026-10-23",
     "disclosed": "2026-10-26",
     "link": "https://www.sec.gov/Archives/edgar/data/1746310/000008042426000263/0000080424-26-000263-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "a79c76d12b1e73d1",
-    "ticker": "HSY",
-    "company": "HERSHEY CO",
-    "who": "Hershey Trust Co Trustee In Trust For Milton Hershey School",
-    "role": "10% owner",
-    "type": "sell",
-    "value": 3449176,
-    "shares": 20000,
-    "price": 172.46,
-    "plan": true,
-    "date": "2026-10-23",
-    "disclosed": "2026-10-26",
-    "link": "https://www.sec.gov/Archives/edgar/data/938543/000095014226002851/0000950142-26-002851-index.htm"
    }
   ],
   "docs": {
@@ -11976,10 +11978,9 @@
   "checked": "2026-11-02T18:44:12.704510+00:00",
   "sec_seen": [
    "0002118015-26-000005",
-   "0002107660-26-000008",
-   "0001868963-26-000013",
    "0002117143-26-000004",
-   "0001965462-26-000002"
+   "0001628280-26-068775",
+   "0002116974-26-000006"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
