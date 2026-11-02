@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "a3f92894061ab1d4": "2026-10-30T13:15:10.552871+00:00",
   "b41674ee58e4a2d1": "2026-10-30T13:20:10.541945+00:00",
   "bdf9accb07eeefb1": "2026-10-30T13:20:10.541945+00:00",
   "8f8e9c0f2700236a": "2026-10-30T13:20:10.541945+00:00",
@@ -602,24 +601,10 @@
   "d98a82944221cf16": "2026-11-02T12:38:12.691095+00:00",
   "3bde77e832b5f919": "2026-11-02T12:38:12.691095+00:00",
   "e78d318710bcad05": "2026-11-02T12:48:12.632386+00:00",
-  "ef4b254a8592245e": "2026-11-02T12:58:12.586324+00:00"
+  "ef4b254a8592245e": "2026-11-02T12:58:12.586324+00:00",
+  "54b161e4f0b111ae": "2026-11-02T13:18:12.595494+00:00"
  },
  "recent": [
-  {
-   "title": "German Inflation Slows Sharply on Renewed Fuel-Tax Relief",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/german-inflation-slows-sharply-on-renewed-fuel-tax-relief",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-30T13:15:10.552871+00:00",
-   "title_ru": "Инфляция в Германии резко замедлилась благодаря возобновлению льгот по налогу на топливо",
-   "lead": "German inflation slowed more than expected in October after the government revived a temporary fuel-tax cut from earlier in the year.",
-   "lead_ru": "Инфляция в Германии замедлилась больше, чем ожидалось, в октябре после того, как правительство возобновило временное снижение налога на топливо, введенное ранее в этом году.",
-   "tags": [
-    "inflation"
-   ]
-  },
   {
    "title": "Mapping the Market: More losses in store for Netflix shares?",
    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBDQUFvWGxDeWxxUjAtdTFlb2NDVkJheGMyRkNHZzdkTTlMQ0NldnIyMERZWWV0U01KUVZrOG5UN3E0RkZrZFp6S2lvbWZjdE4tN0kydWpKUGRMMmR5dGFEVXloVWhFV2NlUHBsb0M1M2traEhKZ3hmMUhycEo?oc=5",
@@ -5244,6 +5229,22 @@
    "tags": [
     "dollar",
     "bonds"
+   ]
+  },
+  {
+   "title": "US Stock Futures Rise as Oil Prices Drop Easing AI-Led Selloff",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/us-stock-futures-rise-as-oil-prices-drop-easing-ai-led-selloff",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 9,
+   "ts": "2026-11-02T13:18:12.595494+00:00",
+   "title_ru": "Фьючерсы на акции США растут, поскольку цены на нефть падают, что облегчает распродажу, вызванную искусственным интеллектом",
+   "lead": "US equity futures advanced, led by technology shares, as falling oil prices offered relief after a bruising week for the artificial intelligence trade.",
+   "lead_ru": "Фьючерсы на акции США выросли во главе с акциями технологических компаний, поскольку падение цен на нефть принесло облегчение после тяжелой недели для торговли искусственным интеллектом.",
+   "tags": [
+    "oil",
+    "markets"
    ]
   }
  ],
@@ -12129,10 +12130,8 @@
   },
   "checked": "2026-11-02T12:18:12.611147+00:00",
   "sec_seen": [
-   "0001213900-26-114611",
    "0001513845-26-000147",
    "0001213900-26-114680",
-   "0001193125-26-442230",
    "0001978589-26-000007",
    "0001213900-26-114630",
    "0000853816-26-000069",
@@ -12141,7 +12140,6 @@
    "0001193125-26-442557",
    "0001213900-26-114660",
    "0001731122-26-001386",
-   "0001193125-26-442229",
    "0001193125-26-442575",
    "0001965457-26-000007",
    "0001214659-26-013568",
