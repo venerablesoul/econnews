@@ -596,7 +596,8 @@
   "54b161e4f0b111ae": "2026-11-02T13:18:12.595494+00:00",
   "1596a8c572f7eddf": "2026-11-02T13:23:12.684071+00:00",
   "7fb986d7b2d5fd69": "2026-11-02T13:28:12.666481+00:00",
-  "159863cd32c0c4de": "2026-11-02T13:28:12.666481+00:00"
+  "159863cd32c0c4de": "2026-11-02T13:28:12.666481+00:00",
+  "31b51cd18729651c": "2026-11-02T13:53:12.705449+00:00"
  },
  "recent": [
   {
@@ -5192,6 +5193,20 @@
    "score": 5,
    "ts": "2026-11-02T13:28:12.666481+00:00",
    "title_ru": "Экономический рост сам по себе не решит проблему долга США"
+  },
+  {
+   "title": "ECB flags AI valuations, bond stress and fund losses as main risks",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOWFo1RlFvWjFHY3hBbjNJMlEzZzlFX216eWVoc3JCa0toeU9OUUt6WHlmSFFxRnBQSGowUU1iQmZVZEpvblV2RkRONlNYWlJYZUc5SFdxWnlja1hSSFU2cGhIdEEtX1FMdldmTVJzWl9KNGRPN1pBekFSSmVqNE1mcVptV2cxNG91YmVpS1hqR1doM2RBZXhiU08zSjJYSnZuWUNqNmF0emFzSU5jT2lodg?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T13:53:12.705449+00:00",
+   "title_ru": "ЕЦБ отмечает оценки искусственного интеллекта, стресс облигаций и потери фондов в качестве основных рисков",
+   "tags": [
+    "ECB",
+    "bonds"
+   ]
   }
  ],
  "last_digest": "2026-11-01",
@@ -8108,6 +8123,22 @@
     "date": "2026-10-30",
     "disclosed": "2026-11-02",
     "link": "https://www.sec.gov/Archives/edgar/data/1978589/000197858926000007/0001978589-26-000007-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "0f789509cffb9895",
+    "ticker": "STIM",
+    "company": "Neuronetics, Inc.",
+    "who": "Chernett Jorey",
+    "role": "10% owner",
+    "type": "buy",
+    "value": 40860,
+    "shares": 18000,
+    "price": 2.27,
+    "plan": false,
+    "date": "2026-10-30",
+    "disclosed": "2026-11-02",
+    "link": "https://www.sec.gov/Archives/edgar/data/2042077/000092189526002891/0000921895-26-002891-index.htm"
    },
    {
     "src": "sec",
@@ -12028,22 +12059,6 @@
     "date": "2026-10-23",
     "disclosed": "2026-10-26",
     "link": "https://www.sec.gov/Archives/edgar/data/1426922/000032033526000226/0000320335-26-000226-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "6899959f3207d745",
-    "ticker": "ACOG",
-    "company": "Alpha Cognition Inc.",
-    "who": "Opaleye Management Inc.",
-    "role": "10% owner",
-    "type": "buy",
-    "value": 265820,
-    "shares": 32090,
-    "price": 8.28,
-    "plan": false,
-    "date": "2026-10-23",
-    "disclosed": "2026-10-26",
-    "link": "https://www.sec.gov/Archives/edgar/data/1655923/000149315226048562/0001493152-26-048562-index.htm"
    }
   ],
   "docs": {
@@ -12077,18 +12092,16 @@
   "checked": "2026-11-02T13:23:12.684071+00:00",
   "sec_seen": [
    "0001965457-26-000007",
-   "0001193125-26-442557",
-   "0001493152-26-049571",
+   "0001550860-26-000003",
    "0001213900-26-114637",
    "0001213900-26-114660",
-   "0001213900-26-114630",
    "0001213900-26-114696",
    "0001513845-26-000147",
    "0001213900-26-114680",
    "0000853816-26-000069",
+   "0000921895-26-002891",
    "0001978589-26-000007",
-   "0001193125-26-442575",
-   "0001193125-26-442547"
+   "0001493152-26-049571"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
