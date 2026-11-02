@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "a90e187ab8b9199d": "2026-10-30T13:00:10.541996+00:00",
-  "1e1709a75112567a": "2026-10-30T13:00:10.541996+00:00",
   "60bbe3449c73988c": "2026-10-30T13:10:10.543091+00:00",
   "ef8cb05843f2ffbc": "2026-10-30T13:10:10.543091+00:00",
   "e043b55e0631a938": "2026-10-30T13:10:10.543091+00:00",
@@ -610,31 +608,6 @@
   "ef4b254a8592245e": "2026-11-02T12:58:12.586324+00:00"
  },
  "recent": [
-  {
-   "title": "Indian Stocks Top Performers in Asia as Anti-AI Appeal Grows",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/indian-stocks-top-performers-in-asia-as-anti-ai-appeal-grows",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-30T13:00:10.541996+00:00",
-   "title_ru": "Индийские акции лидируют в Азии по мере роста интереса к ИИ",
-   "lead": "Indian stocks closed higher Friday, with the benchmark gauge posting its best month since July as local shares emerged as a haven from the global tech selloff.",
-   "lead_ru": "Индийские акции закрылись выше в пятницу, при этом эталонный показатель показал свой лучший месяц с июля, поскольку местные акции стали убежищем от глобальной распродажи технологий.",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "Puma sales, slashed inventory convince investors as Anta partnership advances",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNOVNLVUxFX2I2STl5QzVYWnBGUGJ5dS1ZODZYa0hqSmVrMmtnUXRPN09lbGVjdGpfRkktODhWWnRiTXZYaC1vdndzUGVxcnJuU3puX0RIdEZiMXhpbXgtTjJsZEhLSVFZQml2Wm5ObHdlc2pHdEtSbjBhVjZUdVdXaHJNeFJSRnFwcUcycDFmMUZaMk5xOFdKb0dDTjRrakFvai1kNnVkSjhBV25qa2lKYWItY3RiRmN5LW5iallESVNHc0pyLXo4?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T13:00:10.541996+00:00",
-   "title_ru": "Продажи PUMA, сокращенные запасы убеждают инвесторов по мере развития партнерства ANTA"
-  },
   {
    "title": "Japan’s Omron Targets India for Manufacturing, Exports Push",
    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOV2xtWGh3QUxLcERjQlBzNXpkazI2MlZjeE5meFpWdUE3SFA2dE5kSzJ6Qk9Bb2h3Vmd5NXU3RGhnLTZHTkFPRkI3OWdUc29uamx0RDRUQTl3d2cxdVVjU19KbWFIdjVZVmlodS1aNUFITWx1MU5UbV8taEkzcFNibno4OXc1T0ZkR2pWUXp3MWkwLVJ2M095Q2E2SXJJOTFFdW0zNUlOZ3NERUVXN1E?oc=5",
@@ -8200,6 +8173,22 @@
    },
    {
     "src": "sec",
+    "id": "f7c5da0337596f0f",
+    "ticker": "STNG",
+    "company": "Scorpio Tankers Inc.",
+    "who": "Filippo Lauro",
+    "role": "Vice President",
+    "type": "sell",
+    "value": 12492629,
+    "shares": 135100,
+    "price": 92.47,
+    "plan": false,
+    "date": "2026-10-30",
+    "disclosed": "2026-11-02",
+    "link": "https://www.sec.gov/Archives/edgar/data/1978589/000197858926000007/0001978589-26-000007-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "dee9659a410d4d01",
     "ticker": "OCFC",
     "company": "OCEANFIRST FINANCIAL CORP",
@@ -12133,22 +12122,6 @@
     "date": "2026-10-23",
     "disclosed": "2026-10-26",
     "link": "https://www.sec.gov/Archives/edgar/data/1865783/000143774926033535/0001437749-26-033535-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "4b224666be8a2131",
-    "ticker": "LEO",
-    "company": "BNY MELLON STRATEGIC MUNICIPALS, INC.",
-    "who": "Saba Capital Management, L.p.",
-    "role": "10% owner",
-    "type": "buy",
-    "value": 369200,
-    "shares": 65000,
-    "price": 5.68,
-    "plan": false,
-    "date": "2026-10-23",
-    "disclosed": "2026-10-26",
-    "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000377/0001510281-26-000377-index.htm"
    }
   ],
   "docs": {
@@ -12181,17 +12154,16 @@
   },
   "checked": "2026-11-02T12:18:12.611147+00:00",
   "sec_seen": [
-   "0001213900-26-114608",
    "0001213900-26-114611",
    "0001513845-26-000147",
+   "0001213900-26-114680",
    "0001193125-26-442230",
-   "0001213900-26-114610",
+   "0001978589-26-000007",
    "0001213900-26-114630",
    "0000853816-26-000069",
    "0001193125-26-442547",
    "0001193125-26-442514",
    "0001193125-26-442557",
-   "0001213900-26-114609",
    "0001213900-26-114660",
    "0001731122-26-001386",
    "0001193125-26-442229",
