@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "374a163ffe94c770": "2026-10-30T00:44:13.642202+00:00",
-  "b4d6303194a7c0b6": "2026-10-30T00:44:13.642202+00:00",
   "a23f59bdb57e7e77": "2026-10-30T00:49:13.620187+00:00",
   "c8e1491574775b52": "2026-10-30T00:54:13.698972+00:00",
   "c76b6060c3ee830d": "2026-10-30T01:29:13.626264+00:00",
@@ -595,40 +593,11 @@
   "a5352dcb6d3251bf": "2026-11-02T00:21:37.725092+00:00",
   "4a22d93052796cb7": "2026-11-02T00:31:37.689001+00:00",
   "127d16d19b982a75": "2026-11-02T00:36:37.747880+00:00",
-  "9b48f56cdfab6ef4": "2026-11-02T00:36:37.747880+00:00"
+  "9b48f56cdfab6ef4": "2026-11-02T00:36:37.747880+00:00",
+  "9cad5430c64dbcd4": "2026-11-02T00:46:37.680469+00:00",
+  "d1e58c025708a8cd": "2026-11-02T00:46:37.680469+00:00"
  },
  "recent": [
-  {
-   "title": "Dollar’s Rate-Fueled Rally Set to Ride Out US Midterm Gridlock",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/dollar-s-rate-fueled-rally-set-to-ride-out-us-midterm-gridlock",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-30T00:44:13.642202+00:00",
-   "title_ru": "Ралли доллара, подпитываемое курсом, готово преодолеть промежуточный гридлок США",
-   "lead": "The dollar’s rally may have enough momentum to shrug off the US midterm election, with high interest rates and a surge in AI-related spending drawing capital even if the vote delivers political gridlock.",
-   "lead_ru": "Ралли доллара может иметь достаточный импульс, чтобы отмахнуться от промежуточных выборов в США, с высокими процентными ставками и всплеском связанных с ИИ расходов, привлекающих капитал, даже если голосование приведет к политическому тупику.",
-   "tags": [
-    "rates",
-    "dollar",
-    "markets"
-   ]
-  },
-  {
-   "title": "Suspected Billion-Dollar Binance Hack Sends Fear Through Crypto",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPNW1MdGRoUFFwNW96WUJ5SHUzUUdhT1NVeXVZN2dBc0hQeGxzNkNvSTNiMG4xQTFHTTVCdVEwaTdJSmNDaUtXaU5KRWI2VmdSRUNybkNzeHdvbXVaZWZnZ01EbEdzdTZpemNiY0E0dDdTLTNGa3dCNXpqU1JEVXZFOHJGekRMY3hOMUFwRVBGckNZdTd2WUREakdBY1EtRV90SXM5aC1sRFdvMzJGT29wOQ?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T00:44:13.642202+00:00",
-   "title_ru": "Подозреваемый миллиардный взлом Binance отправляет страх через криптовалюту",
-   "tags": [
-    "dollar",
-    "crypto"
-   ]
-  },
   {
    "title": "Amazon Spending Soars Amid Slowing Growth of Online Business",
    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNZVVjYXpCMDllTnNYR3c2aHZCNDc5ck5QSHh2VEUxMUo1RVNKYVlNemFiTWFzQjZST0FlSnFCZUxlMl9xWkhOLUFPYjBwdzlGdnBhNUdnWnpOMmUzMVhHSVQ2X2N6dzdPNjYzTlV0U0RTb0hOT3J5cFFuUTk5b1Uzamh6aGhBWmtuY2JEdkFDNkN5cWZYY0EyRUZ1YU9FQTd1VkUxcl9qTXZvdFVJQnVYQTR4WQ?oc=5",
@@ -5329,6 +5298,29 @@
    "lead_ru": "Японские акции упали, а акции технологических компаний пострадали от резкой распродажи своих американских коллег, в то время как производитель чипов Kioxia Holdings Corp. должен был упасть после неутешительного прогноза прибыли.",
    "tags": [
     "markets"
+   ]
+  },
+  {
+   "title": "Japan's October factory growth slows as costs pick up, PMI shows",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPNHpkYmhCcHc0RVJPMzNVSElLRzl3MkJ0UWRaMjZXR3BUMGJZeTNKNDRTa29WanJuYkctNkVVN1RYOUxvZk9NQVIxM3I3aDlzUFI4Y3c3V3d1d2xGaS1pQy1VNWMtem8tSmV4MTczeFoya0h1a0FXM3JzYVR4YzBURkRPMVUzeGk0RjhJNG1HMmJYS3RaSTNsOVd2dWJXM3M0Y3hZNkZGRmJObTYwaVBiZEh5elI?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-11-02T00:46:37.680469+00:00",
+   "title_ru": "Октябрьский рост фабрик в Японии замедляется по мере роста затрат, показывает PMI"
+  },
+  {
+   "title": "Oil slips more than 1% as talks continue on ending Iran war",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPeHdxcnVlWmx5T1pjbDZQS19XeXlYTW1xZmNONnJQWHk4YU1EQTRzZFZQVEJxYjd6WEJTN2pfZC10ZGlzXzVURVdHZkg1RjZGY2tjN0ZVRjNRc0p4UmQ1c2F6MUt4eEpHSml6Z3Q4WHpqV094aEo0dTlVbk00OGFBazlmdGhsWGdtckFHQjlBTVU5Q0FRR3hxUnVmcVpPeGZsTHBlWmhTdw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T00:46:37.680469+00:00",
+   "title_ru": "Нефть просела более чем на 1%, поскольку переговоры о прекращении войны с Ираном продолжаются",
+   "tags": [
+    "oil"
    ]
   }
  ],
