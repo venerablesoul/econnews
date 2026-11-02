@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "22ac85b028a1c6a7": "2026-10-30T06:54:40.239326+00:00",
   "3e4f4853ede84b8b": "2026-10-30T07:04:40.284179+00:00",
   "c950da38f32762ee": "2026-10-30T07:04:40.284179+00:00",
   "35c597381e3e3387": "2026-10-30T07:04:40.284179+00:00",
@@ -602,24 +601,11 @@
   "0aa8c9ebbe80fa84": "2026-11-02T06:47:31.236695+00:00",
   "df0afeed0ce2e8e9": "2026-11-02T06:52:31.229111+00:00",
   "44baeb21aa697f89": "2026-11-02T06:52:31.229111+00:00",
-  "4587515c5cfcd84a": "2026-11-02T06:52:31.229111+00:00"
+  "4587515c5cfcd84a": "2026-11-02T06:52:31.229111+00:00",
+  "349c9bdc69f0409b": "2026-11-02T06:57:31.220446+00:00",
+  "fd6f08a60aafa334": "2026-11-02T06:57:31.220446+00:00"
  },
  "recent": [
-  {
-   "title": "AI Boom Shows Cracks After US, China Earnings",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-30/the-china-show-10-30-2026-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T06:54:40.239326+00:00",
-   "title_ru": "Бум ИИ показывает трещины после доходов в США и Китае",
-   "lead": "“Bloomberg: The China Show” is your definitive source for news and analysis on the world's second-biggest economy.",
-   "lead_ru": "«Bloomberg: The China Show» - ваш исчерпывающий источник новостей и аналитических материалов о второй по величине экономике мира.",
-   "tags": [
-    "China"
-   ]
-  },
   {
    "title": "FTSE 100 Live: UK Stocks Set to Outperform as Tech Sells Off",
    "link": "https://www.bloomberg.com/news/live-blog/2026-10-30/ftse-100-live-updates-bp-natwest-astrazeneca-pound-bonds-gilts-euro-gdp-budget-news-what-s-moving-uk-markets-right-now-markets-today",
@@ -5316,6 +5302,31 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "‘Sharper, longer slowdown’ predicted for economy as fifth interest rate hike looms",
+   "link": "https://www.theguardian.com/australia-news/2026/nov/02/australia-economy-fifth-interest-rate-hike-looms",
+   "sources": [
+    "The Guardian"
+   ],
+   "score": 9,
+   "ts": "2026-11-02T06:57:31.220446+00:00",
+   "title_ru": "«Более резкое и продолжительное замедление» прогнозируется для экономики по мере приближения пятого повышения процентной ставки",
+   "lead": "Australia’s central bank expected to hit mortgage holders again on Tuesday, as war in Middle East combines with collapsing house prices Australia’s economy is set for a “sharper, longer slowdown”, major bank economists say, as…",
+   "lead_ru": "Ожидается, что центральный банк Австралии снова ударит по держателям ипотечных кредитов во вторник, поскольку война на Ближнем Востоке сочетается с падением цен на жилье. Экономика Австралии настроена на «более резкое и длительное замедление», говорят крупные банковские экономисты, поскольку...",
+   "tags": [
+    "rates"
+   ]
+  },
+  {
+   "title": "South African rand broadly steady before manufacturing survey, car sales data",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQaEs0bnFzR0JRLVpRbzlWQTlPVzNIUjBMSlJRWllLazk3Q0tMLWFfUUdZZTA0T3pwQmFwcS1keGdMVTI1STc2RHhvSEtOclRkTTY5V2lRWG5YbTNycVJDQkxFV0lGVmZXX1MzU2NJdXRMRzMwNFc0ZFlFTWQ1SW1QYWFCdzhGbHMteHBBcG5DNUZ3c2U2bjBjQjc3My1MZ2F5R0hkX0ZVSEtCZjd1bHJpU19lYjBlczRJS0hHQ3BPWWNSVXc?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T06:57:31.220446+00:00",
+   "title_ru": "Южноафриканский рэнд в целом стабилен перед производственным опросом, данные о продажах автомобилей"
   }
  ],
  "last_digest": "2026-11-01",
@@ -5338,7 +5349,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 1,
+  "Fed": 0,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
@@ -12248,7 +12259,8 @@
    "0001213900-26-114588"
   ],
   "errors": {
-   "senate": "HTTPError: HTTP Error 403: Forbidden"
+   "senate": "HTTPError: HTTP Error 403: Forbidden",
+   "sec": "TimeoutError: The read operation timed out"
   }
  },
  "cal_actuals": {
