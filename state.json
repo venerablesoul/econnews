@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "cfdb374a00c90a1b": "2026-10-30T23:11:27.215507+00:00",
   "d3be7a472d9b1534": "2026-10-30T23:21:27.195119+00:00",
   "7ab5e9422fa33a7f": "2026-10-30T23:21:27.195119+00:00",
   "9209fcf70e556eb7": "2026-10-30T23:21:27.195119+00:00",
@@ -590,23 +589,12 @@
   "453326b850eb702f": "2026-11-02T22:40:44.294849+00:00",
   "bf1dfcc9f50e54ea": "2026-11-02T22:45:44.334503+00:00",
   "fa39e54281c01c97": "2026-11-02T22:50:44.435859+00:00",
-  "864c333ad956b685": "2026-11-02T23:05:44.318807+00:00"
+  "864c333ad956b685": "2026-11-02T23:05:44.318807+00:00",
+  "908c534e462dbf27": "2026-11-02T23:10:44.509374+00:00",
+  "0304e16f7335ea3a": "2026-11-02T23:10:44.509374+00:00",
+  "4357dbd4bf16709b": "2026-11-02T23:15:44.473553+00:00"
  },
  "recent": [
-  {
-   "title": "PODCAST: Crypto hack, Tech stocks dip, remembering Patrick Stewart (Updated)",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQN29PcDBDVjJ5S3VMc2V2YVVmWmhWMGJfSU5PbjdIRUF4bk54V2RNUk5DZ3NYdTlsOXBwRk0yM0w5OW5uRDJ0SWZNSDMxZlFVOEZ0Q05LSDFvdmQ5VnhoWDNxVDZ2M1BHUkZ3ejFyWWs5ei1vWUZldVdFMDFHY3ItTUEyX012SGhDMmx0ejBnVnNTS0c2TngxRGZSbDdVNF9qdld5b2pWWUxfZlh4SXdhZzFB?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T23:11:27.215507+00:00",
-   "title_ru": "ПОДКАСТ: Взлом криптовалюты, падение технологических акций, воспоминания о Патрике Стюарте (обновлено)",
-   "tags": [
-    "markets",
-    "crypto"
-   ]
-  },
   {
    "title": "Has the tech bubble burst? Why the Nasdaq’s rough ride looks eerily like 2000.",
    "link": "https://www.marketwatch.com/story/has-the-tech-bubble-burst-why-the-nasdaqs-rough-ride-looks-eerily-like-2000-5bcefcb2?mod=mw_rss_topstories",
@@ -5096,6 +5084,21 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "South Korea Inflation Holds Firm, Bolstering Case for More Hikes",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/south-korea-inflation-holds-firm-bolstering-case-for-more-hikes",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-11-02T23:15:44.473553+00:00",
+   "title_ru": "Инфляция в Южной Корее сохраняется, что дает основания для дальнейшего повышения",
+   "lead": "South Korea’s inflation remained elevated in October, underscoring price pressures as the central bank weighs further interest-rate increases following a pause last month.",
+   "lead_ru": "Инфляция в Южной Корее оставалась высокой в ​​октябре, подчеркивая ценовое давление, поскольку центральный банк взвешивает дальнейшее повышение процентных ставок после паузы в прошлом месяце.",
+   "tags": [
+    "inflation"
+   ]
   }
  ],
  "last_digest": "2026-11-02",
@@ -8102,6 +8105,22 @@
     "date": "2026-11-02",
     "disclosed": "2026-11-02",
     "link": "https://www.sec.gov/Archives/edgar/data/1285737/000128573726000004/0001285737-26-000004-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "2f32c5a47ba63154",
+    "ticker": "ETSY",
+    "company": "ETSY INC",
+    "who": "Josh Silverman",
+    "role": "Director",
+    "type": "sell",
+    "value": 3928865,
+    "shares": 42689,
+    "price": 92.03,
+    "plan": false,
+    "date": "2026-11-02",
+    "disclosed": "2026-11-02",
+    "link": "https://www.sec.gov/Archives/edgar/data/1525358/000152535826000035/0001525358-26-000035-index.htm"
    },
    {
     "src": "sec",
@@ -12022,22 +12041,6 @@
     "date": "2026-10-23",
     "disclosed": "2026-10-27",
     "link": "https://www.sec.gov/Archives/edgar/data/1724965/000114036126040937/0001140361-26-040937-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "315898ae664971d0",
-    "ticker": "PDI",
-    "company": "PIMCO Dynamic Income Fund",
-    "who": "Sonya Morris",
-    "role": "Director",
-    "type": "buy",
-    "value": 81624,
-    "shares": 5700,
-    "price": 14.32,
-    "plan": false,
-    "date": "2026-10-23",
-    "disclosed": "2026-10-27",
-    "link": "https://www.sec.gov/Archives/edgar/data/2084606/000208460626000017/0002084606-26-000017-index.htm"
    }
   ],
   "docs": {
@@ -12084,10 +12087,12 @@
    "0001902872-26-000003",
    "0001628280-26-069011",
    "0001674959-26-000002",
+   "0001525358-26-000035",
    "0001193125-26-443936",
    "0001510281-26-000400",
    "0001784996-26-000107",
    "0001674335-26-000135",
+   "0001321154-26-000012",
    "0001548623-26-000005",
    "0002017287-26-000006",
    "0001628280-26-069012",
@@ -12097,10 +12102,8 @@
    "0001510281-26-000401",
    "0001501227-26-000006",
    "0001193125-26-443948",
-   "0001697225-26-000002",
    "0001437749-26-034481",
    "0001104659-26-121503",
-   "0001361555-26-000002",
    "0001915495-26-000003",
    "0001628280-26-069009",
    "0001928980-26-000005",
@@ -12112,6 +12115,7 @@
    "0001231919-26-001526",
    "0001199872-26-000006",
    "0000907654-26-000112",
+   "0002094859-26-000003",
    "0001193125-26-443949",
    "0001193125-26-443960",
    "0001493848-26-000006",
