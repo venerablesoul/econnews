@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "8d0386ce6a869e3b": "2026-10-30T19:35:57.362130+00:00",
   "9bd14b503fcad369": "2026-10-30T19:45:57.448462+00:00",
   "83583db568662751": "2026-10-30T19:50:57.310337+00:00",
   "4efb54a302f00cce": "2026-10-30T19:50:57.310337+00:00",
@@ -591,22 +590,10 @@
   "95a7b98b48ab55f9": "2026-11-02T19:19:12.599819+00:00",
   "89fd21ff30e7fa00": "2026-11-02T19:24:12.610726+00:00",
   "e91bb3380283a137": "2026-11-02T19:24:12.610726+00:00",
-  "ff7bc5fc1cd3f673": "2026-11-02T19:34:12.727806+00:00"
+  "ff7bc5fc1cd3f673": "2026-11-02T19:34:12.727806+00:00",
+  "dc8bc3657dcdc271": "2026-11-02T19:44:12.642831+00:00"
  },
  "recent": [
-  {
-   "title": "Inflation dips in key German states in October, pointing to national fall",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQWTdVamplZlpGMFdHNko3OUNfRzVPWjhhNVVoXzUyb0xEZUdvZlJidVR3akRlZGVKUURfYmo4dHYxcW1vbS1KMGk5OTAyMXRtNFU3SzBuOHQwVDVRSzZvRjNYOWo3STJ4T0wzU0lpWXpVRlUtNXFId3B0V3ZtYnI2ZGFyLUl3a1RmTVc4VUdrM1pQeFU1ZlpsdG5jODlmLTM4RHJ6X1JoMTk1N0Vk?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-30T19:35:57.362130+00:00",
-   "title_ru": "Инфляция в ключевых землях Германии в октябре снизилась, что указывает на национальный спад",
-   "tags": [
-    "inflation"
-   ]
-  },
   {
    "title": "The Fed held interest rates steady, but these officials see more hikes coming soon",
    "link": "https://www.marketwatch.com/story/the-fed-held-interest-rates-steady-but-these-officials-see-more-hikes-coming-soon-2098bbd8?mod=mw_rss_topstories",
@@ -5121,6 +5108,19 @@
    "lead_ru": "Розничные цены на бензин упали до $4,12 за галлон в понедельник, поскольку цены на нефть в США упали ниже $100 за баррель.",
    "tags": [
     "oil",
+    "gas"
+   ]
+  },
+  {
+   "title": "US LNG exports hit second-highest monthly level on record as Europe demand surges",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPOEtIOHVRX2dmSXNuUGY1ME9GMmNHcFpYWlVXTm1wVXNkS0did0hIZV9Odm5xa0gxUndvemJXcDNabU9XQ01fWlhvQ2dHOEZnYjIxLVlDaGV0NU5fVWFBYVRQTmY4N0NOaUlJeEVDWkhEb3QwdkJHUzBDWGgtYVBQNmpiNC1RWmdfdzVlQnoyQ2FIaVVRNUFTU0xINEV4MDFfbC1URFg5eUh2ZTBLd0lvMnhXQ3N1RHVMX1hpUzFOLXFXZmVINnc?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T19:44:12.642831+00:00",
+   "title_ru": "Экспорт СПГ из США достиг второго по величине месячного уровня за всю историю на фоне роста спроса в Европе",
+   "tags": [
     "gas"
    ]
   }
@@ -12008,8 +12008,9 @@
   "checked": "2026-11-02T18:44:12.704510+00:00",
   "sec_seen": [
    "0001628280-26-068794",
+   "0001186276-26-000014",
+   "0001628280-26-068796",
    "0001628280-26-068793",
-   "0001251824-26-000011",
    "0001628280-26-068792"
   ],
   "errors": {
