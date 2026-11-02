@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "a76c7966872c1888": "2026-10-30T13:55:10.556962+00:00",
   "ed955d44c117a77d": "2026-10-30T14:00:10.623346+00:00",
   "67477839eafcdc85": "2026-10-30T14:05:10.526165+00:00",
   "7d3c74297493ea91": "2026-10-30T14:10:10.650026+00:00",
@@ -597,19 +596,10 @@
   "1596a8c572f7eddf": "2026-11-02T13:23:12.684071+00:00",
   "7fb986d7b2d5fd69": "2026-11-02T13:28:12.666481+00:00",
   "159863cd32c0c4de": "2026-11-02T13:28:12.666481+00:00",
-  "31b51cd18729651c": "2026-11-02T13:53:12.705449+00:00"
+  "31b51cd18729651c": "2026-11-02T13:53:12.705449+00:00",
+  "b53f74f9a7ba1744": "2026-11-02T13:58:12.710341+00:00"
  },
  "recent": [
-  {
-   "title": "Spanish minister refuses to resign over second major train crash on his watch",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQRV9TX2dvSzg4YWNtOXhJMDAxa2xObng5REx4dXlXNm0yTVZZQ3oycjlxLU05dnBTTFB3SXhuZVlNTUxBT3l1QXdDbTh5MndYNUpUc3pnZ3VZNDcxUm1CMXNkSWF3Tlota2x4eUVJcXBTVWtYWHdFMV83Uk1UR0pmLXA2b3kySEsxWURMOVlhSnZna3gxcGxZSXR3c00yMjJ2VW0tX0VyVGZSQTAySUowZlhLejByY2pvcjJSa2RxdFBHQQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-30T13:55:10.556962+00:00",
-   "title_ru": "Испанский министр отказался уйти в отставку из-за второй крупной железнодорожной катастрофы за его время"
-  },
   {
    "title": "London’s Stock Market Among Those Feeling Left Out of UK Budget",
    "link": "https://www.bloomberg.com/news/articles/2026-10-30/london-s-stock-market-among-those-feeling-left-out-of-uk-budget",
@@ -5206,6 +5196,22 @@
    "tags": [
     "ECB",
     "bonds"
+   ]
+  },
+  {
+   "title": "A Fundamental Problem With the Economy",
+   "link": "https://www.bloomberg.com/news/videos/2026-11-02/opinion-a-fundamental-problem-with-the-economy-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-11-02T13:58:12.710341+00:00",
+   "title_ru": "Фундаментальная проблема экономики",
+   "lead": "The US economy isn’t in crisis, but US consumers seem to be, despite stable growth, low unemployment, a relatively low rate of inflation and robust retail spending, Bloomberg Opinion columnist Kathryn Anne Edwards says.",
+   "lead_ru": "Экономика США не находится в кризисе, но американские потребители, похоже, находятся в нем, несмотря на стабильный рост, низкий уровень безработицы, относительно низкий уровень инфляции и высокие розничные расходы, говорит обозреватель Bloomberg Opinion Кэтрин Энн Эдвардс.",
+   "tags": [
+    "inflation",
+    "jobs"
    ]
   }
  ],
@@ -12093,7 +12099,6 @@
   "sec_seen": [
    "0001965457-26-000007",
    "0001550860-26-000003",
-   "0001213900-26-114637",
    "0001213900-26-114660",
    "0001213900-26-114696",
    "0001513845-26-000147",
@@ -12101,6 +12106,7 @@
    "0000853816-26-000069",
    "0000921895-26-002891",
    "0001978589-26-000007",
+   "0001493152-26-049574",
    "0001493152-26-049571"
   ],
   "errors": {
