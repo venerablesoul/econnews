@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "6219eb7ceac1e324": "2026-10-30T17:20:57.522990+00:00",
   "5db41524081c86e6": "2026-10-30T17:25:57.587205+00:00",
   "8502f06905da9743": "2026-10-30T17:30:57.413191+00:00",
   "006348404d2b5446": "2026-10-30T17:30:57.413191+00:00",
@@ -581,24 +580,12 @@
   "04a4752d0d5381c1": "2026-11-02T17:14:12.650730+00:00",
   "e2533c2072d3b27d": "2026-11-02T17:19:12.741950+00:00",
   "53fa13bb592a01b0": "2026-11-02T17:19:12.741950+00:00",
-  "a4c2a3d9375a3676": "2026-11-02T17:19:12.741950+00:00"
+  "a4c2a3d9375a3676": "2026-11-02T17:19:12.741950+00:00",
+  "be99a58bc3662e79": "2026-11-02T17:24:12.724036+00:00",
+  "a27d45c34fde8667": "2026-11-02T17:24:12.724036+00:00",
+  "16aa85ff0b89d9da": "2026-11-02T17:24:12.724036+00:00"
  },
  "recent": [
-  {
-   "title": "Bessemer Trust CEO: Constructive on Markets",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-30/bessemer-trust-ceo-constructive-on-markets-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T17:20:57.522990+00:00",
-   "title_ru": "Генеральный директор Bessemer Trust: Конструктивность на рынках",
-   "lead": "Disappointing earnings from Intel and Amazon add to a brutal week for the AI trade, fueling a flight into Treasuries. Bessemer Trust CEO Holly MacDonald breaks down where the firm sees pockets of opportunity in this market.",
-   "lead_ru": "Разочаровывающие доходы от Intel и Amazon добавляют жестокой недели для торговли ИИ, подпитывая бегство в казначейские облигации. Генеральный директор Bessemer Trust Холли Макдональд рассказывает о том, где фирма видит карманы возможностей на этом рынке.",
-   "tags": [
-    "bonds"
-   ]
-  },
   {
    "title": "COMMENTARY: Big Oil's spending caution speaks louder than its profits",
    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQNEpvcHduNHFiT3VhT2lnSkhCN2dMTkEyd00tWUw5OXZheGhWRW0zdEFhVmxkcl9tV1JkSDV5MEZxWG5DUEVsQW5MVTB4RFQtUVpoeUlfM09BWGtkWmRjLWlpQml1alR3UjlmZHY0anVwOHJ4UGxHcTF2cmVTRFFqRjAtRnVlcTUxX3hMZVVlYTRlemVPVkxibEdQSGZ5Q1ZWTkp4aDR1NnJ4aUxDRVNDSUxSS1V3eW5HRThnQmphQTA5ZnM?oc=5",
@@ -5032,6 +5019,21 @@
    "score": 4,
    "ts": "2026-11-02T17:19:12.741950+00:00",
    "title_ru": "Marriott повышает годовой прогноз роста доходов от номеров из-за устойчивого спроса на поездки"
+  },
+  {
+   "title": "Tech Sell-Off Marks 'Crisis of Confidence,' Says Jordan Jackson",
+   "link": "https://www.bloomberg.com/news/videos/2026-11-02/tech-sell-off-a-crisis-of-confidence-says-jackson-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-11-02T17:24:12.724036+00:00",
+   "title_ru": "Распродажа технологий знаменует собой «кризис доверия», говорит Джордан Джексон",
+   "lead": "Disappointing US megacap earnings accelerated a rotation out of AI-related tech last week, triggering a sharp selloff as investors shifted toward smaller-cap and more defensive areas.",
+   "lead_ru": "Разочаровывающие доходы компаний с большой капитализацией в США на прошлой неделе ускорили уход из технологий, связанных с искусственным интеллектом, что спровоцировало резкую распродажу, поскольку инвесторы переключились в сторону более защитных областей с меньшей капитализацией.",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-11-01",
@@ -8028,6 +8030,22 @@
     "date": "2026-10-30",
     "disclosed": "2026-11-02",
     "link": "https://www.sec.gov/Archives/edgar/data/1408329/000140832926000004/0001408329-26-000004-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "e943c9160689a4cd",
+    "ticker": "ATEC",
+    "company": "Alphatec Holdings, Inc.",
+    "who": "David M Demski",
+    "role": "Director",
+    "type": "buy",
+    "value": 408600,
+    "shares": 60000,
+    "price": 6.81,
+    "plan": true,
+    "date": "2026-10-30",
+    "disclosed": "2026-11-02",
+    "link": "https://www.sec.gov/Archives/edgar/data/1555392/000155539226000004/0001555392-26-000004-index.htm"
    },
    {
     "src": "sec",
@@ -11868,22 +11886,6 @@
     "date": "2026-10-23",
     "disclosed": "2026-10-26",
     "link": "https://www.sec.gov/Archives/edgar/data/938543/000095014226002851/0000950142-26-002851-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "750eee810fedf376",
-    "ticker": "MRSH",
-    "company": "MARSH & MCLENNAN COMPANIES, INC.",
-    "who": "Dean Michael Klisura",
-    "role": "CEO",
-    "type": "sell",
-    "value": 838800,
-    "shares": 4194,
-    "price": 200.0,
-    "plan": true,
-    "date": "2026-10-23",
-    "disclosed": "2026-10-26",
-    "link": "https://www.sec.gov/Archives/edgar/data/1901304/000006270926000264/0000062709-26-000264-index.htm"
    }
   ],
   "docs": {
@@ -11916,8 +11918,8 @@
   },
   "checked": "2026-11-02T16:34:12.706772+00:00",
   "sec_seen": [
-   "0001628280-26-068728",
    "0001628280-26-068734",
+   "0001628280-26-068728",
    "0001628280-26-068723",
    "0000105634-26-000140",
    "0000950157-26-001151",
@@ -11926,9 +11928,9 @@
    "0001408329-26-000004",
    "0001464277-26-000005",
    "0000105634-26-000136",
+   "0001555392-26-000004",
    "0000105634-26-000134",
-   "0001193125-26-443094",
-   "0001193125-26-443078"
+   "0001193125-26-443094"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
