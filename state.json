@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "0e9e09f6a635d4be": "2026-10-30T03:09:13.559262+00:00",
-  "8b67c8a953a566cc": "2026-10-30T03:09:13.559262+00:00",
   "6b6651ca33c47f46": "2026-10-30T03:14:13.680765+00:00",
   "a132b232f3d2b2e6": "2026-10-30T03:14:13.680765+00:00",
   "670ab0cc6dff09f6": "2026-10-30T03:24:13.588784+00:00",
@@ -597,36 +595,12 @@
   "45bf80c506d4e9bf": "2026-11-02T02:51:37.682154+00:00",
   "955d2050d5e54e42": "2026-11-02T02:56:37.718197+00:00",
   "f665ed1f01267b63": "2026-11-02T03:01:37.697095+00:00",
-  "fceef8867d6330b5": "2026-11-02T03:06:37.740464+00:00"
+  "fceef8867d6330b5": "2026-11-02T03:06:37.740464+00:00",
+  "c72e24ae69bc4aa9": "2026-11-02T03:11:37.718924+00:00",
+  "53798a4ab5245c68": "2026-11-02T03:11:37.718924+00:00",
+  "5b72f8de29c30690": "2026-11-02T03:11:37.718924+00:00"
  },
  "recent": [
-  {
-   "title": "BOJ Holds Rates, Says Inflation Trend Hits Target For First Time",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/boj-holds-benchmark-rate-steady-as-expected-after-september-hike",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-30T03:09:13.559262+00:00",
-   "title_ru": "БАНК ЯПОНИИ удерживает ставки, говорит, что инфляционный тренд впервые достиг цели",
-   "lead": "The Bank of Japan left its benchmark rate untouched as expected while indicating that underlying inflation has finally reached its 2% target, opening the door to a hike in December.",
-   "lead_ru": "Банк Японии оставил свою базовую ставку нетронутой, как и ожидалось, указав, что базовая инфляция, наконец, достигла своей цели в 2%, открыв дверь для повышения в декабре.",
-   "tags": [
-    "inflation"
-   ]
-  },
-  {
-   "title": "Philippine Exports Rise at Fastest in Five Years on Weak Peso, AI Boom",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/philippine-exports-rise-at-fastest-in-five-years-on-weak-peso-ai-boom",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T03:09:13.559262+00:00",
-   "title_ru": "Филиппинский экспорт растет самыми быстрыми темпами за пять лет на фоне слабого песо и бума искусственного интеллекта",
-   "lead": "Philippine exports rose at their fastest pace in five years, bringing overseas sales to a new record on the back of global electronics demand and a weak peso.",
-   "lead_ru": "Филиппинский экспорт рос самыми быстрыми темпами за пять лет, в результате чего зарубежные продажи достигли нового рекорда на фоне глобального спроса на электронику и слабого песо."
-  },
   {
    "title": "Big Tech’s $750 Billion AI Bet Collides With Slowing Core Growth",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOVkwxOE5CWnFlYlZmb25XSjRDMDhHbkJBUnpVb1pkV2N6QkR5cmk5RVFEeVV3Z3NBcS1LV0RBMWNmNE5nNmNzdWM5YUFYM29ScjBvVk1FT0E2M2ZBT1JhXzJyUXNOYUY0aHdrcGJ2TEZYX2lxcWctUTBXN1cxUjhWNzJzZ0JIS25ILWFpekdnS210M1ZOX19MQlg3UGpVcUdYclJXa0RuWXVzRldGQXhva2pOSjc?oc=5",
@@ -5422,6 +5396,35 @@
     "gas",
     "Russia"
    ]
+  },
+  {
+   "title": "China’s 5,000-Ton Digging Machines Are a Trade War Risk to India",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOOTd2YzlxNEVRbFZDZU95azllUlVZQ1pSZmpEODdKSl9DS2I3bWhsbWtjcjE5WjRlVG03VnBDY3lyN3hESVluM2RRaXdaX216Q2dzcEVpR0o3UWVZVlFIUFQxRE5qRTdaeHZ3Z0xydEkwX0FBdXRCZFJMaXVwdEdUaERNOXQ5VWNReXJSbGdHQkh6WEU3ZWNCOHl6bHJaV2kzN0c1SEs2Y1IwdEFyaFd6cWpEeVlYdw?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-11-02T03:11:37.718924+00:00",
+   "title_ru": "Китайские 5000-тонные землеройные машины представляют угрозу торговой войны для Индии",
+   "tags": [
+    "China",
+    "tariffs"
+   ]
+  },
+  {
+   "title": "Goldman Hikes Oil-Price Forecasts on ‘Substantial’ Supply Risks",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/goldman-hikes-oil-price-forecasts-on-substantial-supply-risks",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T03:11:37.718924+00:00",
+   "title_ru": "Goldman повысил прогноз цен на нефть из-за «существенных» рисков поставок",
+   "lead": "Goldman Sachs Group Inc. raised oil-price forecasts for the year-end and 2027 on elevated risks to supplies, joining other banks in hiking their outlooks after months of war in the Middle East.",
+   "lead_ru": "Goldman Sachs Group Inc. повысила прогнозы цен на нефть на конец года и 2027 год из-за повышенных рисков поставок, присоединившись к другим банкам в повышении своих прогнозов после нескольких месяцев войны на Ближнем Востоке.",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-11-01",
@@ -5442,7 +5445,7 @@
   "MarketWatch": 0,
   "Банк Англии": 0,
   "Bank of England": 0,
-  "Bank of Russia": 1,
+  "Bank of Russia": 0,
   "ECB": 0,
   "Fed": 0,
   "IMF": 0,
