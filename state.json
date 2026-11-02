@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "ff7d9b873fd8c56f": "2026-10-30T16:00:10.549282+00:00",
   "9677e08b0c308333": "2026-10-30T16:05:10.608230+00:00",
   "7afb2188fd0eb16d": "2026-10-30T16:05:10.608230+00:00",
   "63452fa41d99e3f9": "2026-10-30T16:15:10.696021+00:00",
@@ -591,22 +590,10 @@
   "5abde9bd965e591d": "2026-11-02T15:39:12.945428+00:00",
   "e4a423667f4633c9": "2026-11-02T15:49:12.617816+00:00",
   "a51518a474e7cf8c": "2026-11-02T15:49:12.617816+00:00",
-  "4a0944fbeb8f6f74": "2026-11-02T15:59:12.678994+00:00"
+  "4a0944fbeb8f6f74": "2026-11-02T15:59:12.678994+00:00",
+  "ff46ca41421d5640": "2026-11-02T16:04:12.674310+00:00"
  },
  "recent": [
-  {
-   "title": "Nasdaq faces $2 trillion wipeout in October as AI spending fears deepen",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPNkNDLXpLZ1A0VklROTJVenpDRlZBWE10ZE1qWWk4ZFVqalgzWWJFdThSd2ZKeUhDanVRQjRhVVVZZGlGZzY1UWYzLXRSZTNHNDNPTkZZRUFJazAzYmV6NzF3QUJtNjhkWHY5OHZNZWVsSFdyY0NScGJadnE3T0dPTWtBUXZOaDJPYWJuX1NOVXkwbGlQSW9MdjlXTlNQTzdLZEdzTHFsQ2gzaEcwTkNHZTNCNF9hMG9lazFHRXItSzg?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T16:00:10.549282+00:00",
-   "title_ru": "В октябре Nasdaq грозит банкротство на 2 триллиона долларов из-за растущих опасений по поводу расходов на ИИ",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Пьянов оценил сроки достижения акциями ВТБ цены допэмиссии",
    "link": "https://www.rbc.ru/finances/30/10/2026/6ae4b3729a794779f247dae8",
@@ -5138,6 +5125,21 @@
    "score": 3,
    "ts": "2026-11-02T15:59:12.678994+00:00",
    "title_ru": "Знаменитости, поддерживающие рынки прогнозов, уже не имеют достаточно денег?"
+  },
+  {
+   "title": "Booming U.S. manufacturers can’t keep up with demand — and high inflation isn’t helping",
+   "link": "https://www.marketwatch.com/story/booming-u-s-manufacturers-cant-keep-up-with-demand-and-high-inflation-isnt-helping-128a3902?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T16:04:12.674310+00:00",
+   "title_ru": "Быстро растущие производители США не могут идти в ногу со спросом — и высокая инфляция не помогает",
+   "lead": "U.S. manufacturers in October pumped out the most goods — plastics, computers, electrical equipment and so forth — in five years as a growing economy and a revolution in artificial intelligence stoked demand.",
+   "lead_ru": "Американские производители в октябре выкачали больше всего товаров — пластмасс, компьютеров, электрооборудования и так далее — за пять лет, поскольку растущая экономика и революция в области искусственного интеллекта подогрели спрос.",
+   "tags": [
+    "inflation"
+   ]
   }
  ],
  "last_digest": "2026-11-01",
