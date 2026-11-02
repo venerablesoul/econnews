@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "b41674ee58e4a2d1": "2026-10-30T13:20:10.541945+00:00",
-  "bdf9accb07eeefb1": "2026-10-30T13:20:10.541945+00:00",
-  "8f8e9c0f2700236a": "2026-10-30T13:20:10.541945+00:00",
   "a4aa8467ddd00c3e": "2026-10-30T13:25:10.688995+00:00",
   "b1e458e053c33558": "2026-10-30T13:30:10.388228+00:00",
   "373dc41c1345f620": "2026-10-30T13:30:10.388228+00:00",
@@ -602,40 +599,10 @@
   "3bde77e832b5f919": "2026-11-02T12:38:12.691095+00:00",
   "e78d318710bcad05": "2026-11-02T12:48:12.632386+00:00",
   "ef4b254a8592245e": "2026-11-02T12:58:12.586324+00:00",
-  "54b161e4f0b111ae": "2026-11-02T13:18:12.595494+00:00"
+  "54b161e4f0b111ae": "2026-11-02T13:18:12.595494+00:00",
+  "1596a8c572f7eddf": "2026-11-02T13:23:12.684071+00:00"
  },
  "recent": [
-  {
-   "title": "Mapping the Market: More losses in store for Netflix shares?",
-   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBDQUFvWGxDeWxxUjAtdTFlb2NDVkJheGMyRkNHZzdkTTlMQ0NldnIyMERZWWV0U01KUVZrOG5UN3E0RkZrZFp6S2lvbWZjdE4tN0kydWpKUGRMMmR5dGFEVXloVWhFV2NlUHBsb0M1M2traEhKZ3hmMUhycEo?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-30T13:20:10.541945+00:00",
-   "title_ru": "Составление карты рынка: акции Netflix ждут новые потери?",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "AMD’s stock slides after Intel earnings reveal two big issues",
-   "link": "https://www.marketwatch.com/story/amds-stock-slides-after-intel-earnings-reveal-two-big-issues-d3afed91?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-30T13:20:10.541945+00:00"
-  },
-  {
-   "title": "Bitcoin slides after crypto’s nightmare scenario: a historic $6.3 billion heist",
-   "link": "https://www.marketwatch.com/story/heres-when-binance-plans-to-reopen-after-whats-believed-to-be-the-largest-ever-6-3-billion-hack-d3cb8154?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-30T13:20:10.541945+00:00"
-  },
   {
    "title": "Europe Gas Resumes Rally Above €100 as Trump Weighs Iran Options",
    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPRVl6aGhxQ2pYakNJbTJ6MUVMekdWdmkyUHhPYWltaTlGR1VHMEc4NXI1ajlobXFkZzBXU0x3VTVMdVd5VmRkV1I3TU4tWC1lUE9JN3dBNWRTUlp5RWRRSF85UWZRT1FNcVZHcDE2Y2FsUTBTX1VGVkFaR1p2Y0pFUFZwQmZRYzNCZGdOZk9iOVRWQ2otT1I5RVFfSEc2STZGel9GZEdORDJ4bk1SSm9iaXctTQ?oc=5",
@@ -5245,6 +5212,21 @@
    "tags": [
     "oil",
     "markets"
+   ]
+  },
+  {
+   "title": "China to Boost Use of Stock Support Tools to Stabilize Market",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/china-to-boost-use-of-stock-support-tools-to-stabilize-market",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T13:23:12.684071+00:00",
+   "title_ru": "Китай активизирует использование инструментов поддержки акций для стабилизации рынка",
+   "lead": "China will encourage financial institutions to make fuller use of two stock-support tools and optimize their terms, as authorities step up efforts to bolster market stability and confidence.",
+   "lead_ru": "Китай будет поощрять финансовые учреждения более полно использовать два инструмента поддержки акций и оптимизировать их условия, поскольку власти активизируют усилия по укреплению стабильности и доверия рынка.",
+   "tags": [
+    "China"
    ]
   }
  ],
@@ -12128,24 +12110,24 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-11-02T12:18:12.611147+00:00",
+  "checked": "2026-11-02T13:23:12.684071+00:00",
   "sec_seen": [
-   "0001513845-26-000147",
-   "0001213900-26-114680",
-   "0001978589-26-000007",
-   "0001213900-26-114630",
-   "0000853816-26-000069",
-   "0001193125-26-442547",
+   "0001965457-26-000007",
    "0001193125-26-442514",
    "0001193125-26-442557",
-   "0001213900-26-114660",
-   "0001731122-26-001386",
-   "0001193125-26-442575",
-   "0001965457-26-000007",
    "0001214659-26-013568",
    "0001697362-26-000021",
+   "0001213900-26-114660",
    "0001193125-26-442511",
-   "0001213900-26-114637"
+   "0001213900-26-114637",
+   "0001213900-26-114630",
+   "0001513845-26-000147",
+   "0001731122-26-001386",
+   "0001213900-26-114680",
+   "0000853816-26-000069",
+   "0001978589-26-000007",
+   "0001193125-26-442575",
+   "0001193125-26-442547"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
