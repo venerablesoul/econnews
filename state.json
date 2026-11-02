@@ -1,12 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "be8b44959de28353": "2026-10-30T15:30:10.464001+00:00",
-  "234d0b8c83d70f8e": "2026-10-30T15:30:10.464001+00:00",
-  "dc7e498fa993f6a0": "2026-10-30T15:30:10.464001+00:00",
-  "3422eaa5baf3e7c4": "2026-10-30T15:30:10.464001+00:00",
-  "52304226943c0cab": "2026-10-30T15:30:10.464001+00:00",
-  "2149d744404fa38e": "2026-10-30T15:35:10.550207+00:00",
   "252501055041ded1": "2026-10-30T15:45:10.711069+00:00",
   "908c534e462dbf27": "2026-10-30T15:55:10.542544+00:00",
   "ed2ceefe5d3c5eb8": "2026-10-30T15:55:10.542544+00:00",
@@ -591,49 +585,15 @@
   "30af3d3436340adb": "2026-11-02T15:13:13.246115+00:00",
   "ebc341738447b932": "2026-11-02T15:18:12.676015+00:00",
   "8f15924ac0652b75": "2026-11-02T15:18:12.676015+00:00",
-  "8715604258485543": "2026-11-02T15:19:13.233417+00:00"
+  "8715604258485543": "2026-11-02T15:19:13.233417+00:00",
+  "234d0b8c83d70f8e": "2026-11-02T15:39:12.945428+00:00",
+  "dc7e498fa993f6a0": "2026-11-02T15:39:12.945428+00:00",
+  "fcdd34973402b7c8": "2026-11-02T15:39:12.945428+00:00",
+  "a23f59bdb57e7e77": "2026-11-02T15:39:12.945428+00:00",
+  "4e2fa7305fb86302": "2026-11-02T15:39:12.945428+00:00",
+  "5abde9bd965e591d": "2026-11-02T15:39:12.945428+00:00"
  },
  "recent": [
-  {
-   "title": "One Fed Policy Can’t Fix a Two-Speed Economy, Says Janasiewicz",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-30/why-one-fed-policy-can-t-fix-a-two-speed-economy-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-30T15:30:10.464001+00:00",
-   "title_ru": "Одна политика ФРС не может исправить двухскоростную экономику, говорит Янасевич",
-   "lead": "Jack Janasiewicz, Lead Investment Strategist at Natixis, says the U.S. economy is operating with two different neutral interest rates: one for rate-sensitive sectors and another for AI investment.",
-   "lead_ru": "Джек Янасиевич, ведущий инвестиционный стратег Natixis, говорит, что экономика США работает с двумя разными нейтральными процентными ставками: одна для чувствительных к ставкам секторов, а другая для инвестиций в ИИ.",
-   "tags": [
-    "Fed",
-    "rates"
-   ]
-  },
-  {
-   "title": "In a wild October for markets, these stocks were the biggest winners and losers",
-   "link": "https://www.marketwatch.com/story/in-a-wild-october-for-markets-these-stocks-were-the-biggest-winners-and-losers-3736f043?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 2,
-   "ts": "2026-10-30T15:30:10.464001+00:00"
-  },
-  {
-   "title": "What Christine Lagarde's ECB Exit Means for Europe and Markets: Live Q&A",
-   "link": "https://www.bloomberg.com/sessions/2026-11-02/live-q-amp-a-what-lagarde-s-exit-means-for-the-ecb-and-europe",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 7,
-   "ts": "2026-10-30T15:35:10.550207+00:00",
-   "title_ru": "Что означает выход Кристин Лагард из ЕЦБ для Европы и рынков: вопросы и ответы в прямом эфире",
-   "lead": "Bloomberg reporters answer your questions about Christine Lagarde’s ECB exit and who might replace her in a Live Q&A on Monday, November 2 at 2 p.m. CET.",
-   "lead_ru": "Репортеры Bloomberg ответят на ваши вопросы о выходе Кристин Лагард из ЕЦБ и о том, кто может ее заменить, в прямом эфире вопросов и ответов в понедельник, 2 ноября, в 14:00. центральноевропейское время.",
-   "tags": [
-    "ECB"
-   ]
-  },
   {
    "title": "Slower wage growth curbs US labor costs in third quarter",
    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQeEVXWHp4aVktd2NvQ0Z2QUtIbmtYLXZIZFhBVkwzY3E3NkQzaFpjNjFjMEpjbHdTaXlSaUE2b1BNN3FFSEJrWFhBTTRMU2tpWndlWjZXQ1l0M3JkWjZKQ3Q3UllZRmVjSTNNSTFUWTlxQUw4elhGRTNVNW9VMWRxMEVOQkUwX2Rsdmd5TGd4bFd1VUk?oc=5",
@@ -8101,6 +8061,22 @@
    },
    {
     "src": "sec",
+    "id": "7b5f1a017874e9c5",
+    "ticker": "RBBN",
+    "company": "Ribbon Communications Inc.",
+    "who": "Bruce William McClelland",
+    "role": "CEO",
+    "type": "buy",
+    "value": 96240,
+    "shares": 60000,
+    "price": 1.6,
+    "plan": false,
+    "date": "2026-10-30",
+    "disclosed": "2026-11-02",
+    "link": "https://www.sec.gov/Archives/edgar/data/1708055/000170805526000089/0001708055-26-000089-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "bec5561767c62788",
     "ticker": "CLH",
     "company": "CLEAN HARBORS INC",
@@ -11986,22 +11962,6 @@
     "date": "2026-10-23",
     "disclosed": "2026-10-26",
     "link": "https://www.sec.gov/Archives/edgar/data/1559053/000104546326000022/0001045463-26-000022-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "4fdd7322f661f3c9",
-    "ticker": "UTHR",
-    "company": "UNITED THERAPEUTICS Corp",
-    "who": "Martine A Rothblatt",
-    "role": "CEO",
-    "type": "sell",
-    "value": 5536235,
-    "shares": 9500,
-    "price": 582.76,
-    "plan": true,
-    "date": "2026-10-23",
-    "disclosed": "2026-10-26",
-    "link": "https://www.sec.gov/Archives/edgar/data/1106578/000110657826000171/0001106578-26-000171-index.htm"
    }
   ],
   "docs": {
@@ -12034,19 +11994,15 @@
   },
   "checked": "2026-11-02T15:29:12.646087+00:00",
   "sec_seen": [
-   "0001444838-26-000085",
    "0001444838-26-000081",
+   "0001444838-26-000085",
    "0001444838-26-000083",
    "0001444838-26-000084",
-   "0001444838-26-000077",
-   "0000890541-26-000014",
-   "0001444838-26-000078",
-   "0001444838-26-000075",
-   "0001444838-26-000074",
+   "0001708055-26-000089",
    "0001444838-26-000079",
-   "0001444838-26-000076",
    "0001388767-26-000010",
    "0001444838-26-000082",
+   "0000890541-26-000014",
    "0001976408-26-000924",
    "0001444838-26-000080"
   ],
