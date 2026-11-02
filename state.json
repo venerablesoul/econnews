@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "c76b6060c3ee830d": "2026-10-30T01:29:13.626264+00:00",
   "962b7bf8aab1a526": "2026-10-30T01:44:13.633740+00:00",
   "be99a58bc3662e79": "2026-10-30T01:49:13.700984+00:00",
   "b4f25a2429153ded": "2026-10-30T01:49:13.700984+00:00",
@@ -603,25 +602,10 @@
   "13571b80a32f68c8": "2026-11-02T01:16:37.691037+00:00",
   "15d3e786993e6f49": "2026-11-02T01:16:37.691037+00:00",
   "1e75bed8205a60ed": "2026-11-02T01:26:37.726567+00:00",
-  "ec2f559ab733ee86": "2026-11-02T01:26:37.726567+00:00"
+  "ec2f559ab733ee86": "2026-11-02T01:26:37.726567+00:00",
+  "783cf59c86d31d0b": "2026-11-02T01:36:37.720555+00:00"
  },
  "recent": [
-  {
-   "title": "Treasuries Extend Rally With Global Peers on Tech Stock Selloff",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/treasuries-extend-rally-with-global-peers-on-tech-stock-selloff",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-30T01:29:13.626264+00:00",
-   "title_ru": "Казначейские облигации продолжают ралли вместе с мировыми аналогами из-за распродажи акций технологических компаний",
-   "lead": "A rally in Treasuries gathered pace in Asia on Friday as a selloff in US tech stocks drove investors to the safety of US government debt.",
-   "lead_ru": "Ралли казначейских облигаций в Азии набрало обороты в пятницу, поскольку распродажа акций технологических компаний США заставила инвесторов переключиться на безопасность государственного долга США.",
-   "tags": [
-    "bonds",
-    "markets"
-   ]
-  },
   {
    "title": "Soaring freight rates add $5.4 billion to Shell's debt, squeeze Total's margins",
    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOR2I3dVdSSEg0N09XNHprZ0x1RTVnTVhoS0V3emtGVDNPZ1dqOUhnMGlwa2NfVkJuTWZhenVYVVR4UTNYN2llelREQWk3SDJHdFJYeC1XNk1hY0dzdWRNWXJVRHN1SUNvWEpiQnBON09QUXl6U2E0ZnhBTlNJQWdXREM3LTRSY1pwdXEzR0tGVV80ZFRmTm1aU1d2LUZ4MG82RG84ck9fb3VOb2c5aVBwb3hPaGF3U1lVQjg4UmYzaEo?oc=5",
@@ -5442,6 +5426,21 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Минфин готовит автоперевод пенсионных накоплений в долгосрочные сбережения",
+   "link": "https://www.kommersant.ru/doc/9078669",
+   "sources": [
+    "Kommersant"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T01:36:37.720555+00:00",
+   "title_en": "The Ministry of Finance is preparing an automatic transfer of pension savings to long-term savings",
+   "lead": "Российский Минфин разрабатывает законопроект об автоматическом переводе накопительной пенсии россиян в Программу долгосрочных сбережений (ПДС).",
+   "lead_en": "The Russian Ministry of Finance is developing a bill on the automatic transfer of the funded pension of Russians to the Long-Term Savings Program (LTSP).",
+   "tags": [
+    "Russia"
+   ]
   }
  ],
  "last_digest": "2026-11-01",
@@ -5462,7 +5461,7 @@
   "MarketWatch": 0,
   "Банк Англии": 0,
   "Bank of England": 0,
-  "Bank of Russia": 0,
+  "Bank of Russia": 1,
   "ECB": 0,
   "Fed": 0,
   "IMF": 0,
