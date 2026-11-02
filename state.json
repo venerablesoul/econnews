@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "cefda2f5c2162c2d": "2026-10-30T05:59:40.223011+00:00",
   "07358ca85386fb5b": "2026-10-30T06:04:40.247700+00:00",
   "2ca9960c96c35004": "2026-10-30T06:04:40.247700+00:00",
   "2f7b33f120d03be0": "2026-10-30T06:04:40.247700+00:00",
@@ -598,21 +597,6 @@
   "66bc14af290f8417": "2026-11-02T05:57:31.225393+00:00"
  },
  "recent": [
-  {
-   "title": "Japanese Stocks Signal Confidence Over Faster BOJ ETF Sales",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/japanese-stocks-signal-confidence-over-faster-boj-etf-sales",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-30T05:59:40.223011+00:00",
-   "title_ru": "Японские акции сигнализируют об уверенности в более быстрых продажах ETF BOJ",
-   "lead": "Japanese equities shrugged off the Bank of Japan’s surprise move to accelerate selling of its massive holdings of exchange-traded funds, as investors showed confidence in the market’s ability to absorb the extra supply.",
-   "lead_ru": "Японские акции отмахнулись от неожиданного шага Банка Японии по ускорению продажи своих массивных авуаров биржевых фондов, поскольку инвесторы продемонстрировали уверенность в способности рынка поглотить дополнительное предложение.",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Taxes and high oil prices are set to spur more UK energy deals",
    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPajZvWmx1cVNMeHVPeHhIXzlVUnhwX3R6WTVnODhySnZvR2Y1QzZ4Y3FBaEUtS0hTenZHbmZWd2Fla0hXc3RpcG00SGtHckdtejJJT19nRFYzYVNrb2dtZ0FSR2lqSlRtZURQNHFqWU92Smh2SGdHMmcxeDduUnlXM19PdmtPekxtemJsbGZUYUNNUGUwdUxhQ2VZWjd4eGl4UGR5NTlDUUhLajQ?oc=5",
@@ -5340,7 +5324,6 @@
   "US Labor Statistics (BLS)": 0
  },
  "charts_sent": [
-  "2026-10-23-09",
   "2026-10-23-21",
   "2026-10-24-09",
   "2026-10-24-21",
@@ -5359,10 +5342,11 @@
   "2026-10-31-09",
   "2026-10-31-21",
   "2026-11-01-09",
-  "2026-11-01-21"
+  "2026-11-01-21",
+  "2026-11-02-09"
  ],
  "calendar": {
-  "fetched": "2026-11-02T00:01:37.717445+00:00",
+  "fetched": "2026-11-02T06:02:31.243972+00:00",
   "events": [
    {
     "title": "Daylight Saving Time Shift",
@@ -5403,14 +5387,6 @@
     "impact": "Low",
     "forecast": "53.3",
     "previous": "53.3"
-   },
-   {
-    "title": "ANZ Job Advertisements m/m",
-    "country": "AUD",
-    "ts": "2026-11-02T00:45:00+00:00",
-    "impact": "Low",
-    "forecast": "",
-    "previous": "2.2%"
    },
    {
     "title": "RatingDog Manufacturing PMI",
@@ -6321,7 +6297,7 @@
   "JPY|2026-10-30T02:31:00+00:00|BOJ Outlook Report",
   "JPY|2026-10-30T05:30:00+00:00|BOJ Press Conference"
  ],
- "last_morning": "2026-11-01",
+ "last_morning": "2026-11-02",
  "all_down_alerted": false,
  "trades": {
   "congress": [
@@ -12217,10 +12193,8 @@
    "0001193532-26-000012",
    "0001697362-26-000021",
    "0001628280-26-068639",
-   "0001451763-26-000014",
    "0001493152-26-049498",
    "0001280486-26-000010",
-   "0001193125-26-442229",
    "0001213900-26-114605",
    "0002014293-26-000012",
    "0001824159-26-000015",
@@ -12230,6 +12204,7 @@
    "0001628280-26-068641",
    "0001213900-26-114608",
    "0001477932-26-006563",
+   "0000091440-26-000174",
    "0001628280-26-068637",
    "0001213900-26-114604",
    "0001493152-26-049496",
@@ -12240,14 +12215,15 @@
    "0001193125-26-442142",
    "0001193125-26-442230",
    "0001213900-26-114609",
+   "0001214659-26-013568",
    "0002025268-26-000008",
    "0002014386-26-000026",
    "0002014361-26-000040",
    "0001231919-26-001519",
    "0001213900-26-114611",
    "0001498270-26-000012",
-   "0000091440-26-000174",
-   "0001214659-26-013568",
+   "0001193125-26-442229",
+   "0001451763-26-000014",
    "0001213900-26-114588"
   ],
   "errors": {
