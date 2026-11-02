@@ -610,7 +610,10 @@
   "5128277e51055a02": "2026-11-02T09:02:31.277542+00:00",
   "1900f392f00e2d60": "2026-11-02T09:12:31.288675+00:00",
   "ac1b2e056ec8871e": "2026-11-02T09:12:31.288675+00:00",
-  "bc225244767aee5e": "2026-11-02T09:12:31.288675+00:00"
+  "bc225244767aee5e": "2026-11-02T09:12:31.288675+00:00",
+  "88411c0e95f711dc": "2026-11-02T09:17:31.252398+00:00",
+  "7e419f6ebbe4f1de": "2026-11-02T09:17:31.252398+00:00",
+  "5a7d3d57c1edeed5": "2026-11-02T09:17:31.252398+00:00"
  },
  "recent": [
   {
@@ -5369,6 +5372,38 @@
    ],
    "score": 1,
    "ts": "2026-11-02T09:12:31.288675+00:00"
+  },
+  {
+   "title": "Euro zone factory growth eases in October but remains solid, PMI shows",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQdHhCRWw3M2tFaFpfWGNsSFUzWU91b0hpd2lib0xJM3VRQkU0ZWpRLXVvNUIwM2pwSWhldHN5amtqRkRLRzN6c3BWMEdIem9NM0xGTlBmeFlOQU9IcWpQNzJZeHppemJNMVRNLW9IdXpjRlZmZGk1dTNvakR2YTJnRDZZOXAwdDEyX2F6MWlqUXBfTDQ4NWxEWFdqbXVYQUo3aEE3SFZpN2F4RzZMM1hIRw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-11-02T09:17:31.252398+00:00",
+   "title_ru": "Рост промышленного производства в еврозоне в октябре замедлился, но остается стабильным, показывают данные индекса PMI."
+  },
+  {
+   "title": "ECB will have to raise rates again, extent uncertain, Kazimir says",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPS2pyMldQRTZ2My10Vk1rWk5od2o0WVJuTUNnM0NqdllSVGswSXpfVWRzc3lidGlsSlhtTy15ZlIwUEZZaFBEY09kcTUyTUZab2FMYk83Y09MTUdwenVNbjhweVBIWmdqdWdva094T2VFRF91VEk0MnQ0Uzc3dmRKR2k4b2RFUTYzZ3dvdy05aHdrUWVsMExwSFJIdkhDc1ppRlhEVnlMSVlrdw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T09:17:31.252398+00:00",
+   "title_ru": "Казимир говорит, что ЕЦБ придется снова повысить процентные ставки, масштабы повышения пока неясны.",
+   "tags": [
+    "ECB"
+   ]
+  },
+  {
+   "title": "The election will be good news, regardless of outcome, says Morgan Stanley’s chief stock-market strategist",
+   "link": "https://www.marketwatch.com/story/the-election-will-be-good-news-regardless-of-outcome-says-morgan-stanleys-chief-stock-market-strategist-ffa320ed?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-11-02T09:17:31.252398+00:00"
   }
  ],
  "last_digest": "2026-11-01",
@@ -5393,7 +5428,7 @@
   "ECB": 0,
   "Fed": 0,
   "IMF": 0,
-  "Kommersant": 1,
+  "Kommersant": 0,
   "RBC": 0,
   "US Labor Statistics (BLS)": 0
  },
@@ -12267,8 +12302,10 @@
    "0001193532-26-000012",
    "0001697362-26-000021",
    "0001628280-26-068639",
+   "0001451763-26-000014",
    "0001493152-26-049498",
    "0001280486-26-000010",
+   "0001193125-26-442229",
    "0001213900-26-114605",
    "0002014293-26-000012",
    "0001824159-26-000015",
@@ -12278,7 +12315,6 @@
    "0001628280-26-068641",
    "0001213900-26-114608",
    "0001477932-26-006563",
-   "0000091440-26-000174",
    "0001628280-26-068637",
    "0001213900-26-114604",
    "0001493152-26-049496",
@@ -12289,15 +12325,14 @@
    "0001193125-26-442142",
    "0001193125-26-442230",
    "0001213900-26-114609",
-   "0001214659-26-013568",
    "0002025268-26-000008",
    "0002014386-26-000026",
    "0002014361-26-000040",
    "0001231919-26-001519",
    "0001213900-26-114611",
    "0001498270-26-000012",
-   "0001193125-26-442229",
-   "0001451763-26-000014",
+   "0000091440-26-000174",
+   "0001214659-26-013568",
    "0001213900-26-114588"
   ],
   "errors": {
