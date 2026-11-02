@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "a4ee039ed95438da": "2026-10-30T11:35:10.457985+00:00",
-  "41a7ea767bc6318f": "2026-10-30T11:35:10.457985+00:00",
   "21facd52d70249a6": "2026-10-30T11:40:10.488520+00:00",
   "1e8276be5e120980": "2026-10-30T11:50:10.510985+00:00",
   "9fe28e4dd4550099": "2026-10-30T11:55:10.351868+00:00",
@@ -609,28 +607,10 @@
   "4ad95245a24be4d3": "2026-11-02T11:18:12.596898+00:00",
   "727314112eddfe7f": "2026-11-02T11:23:12.605604+00:00",
   "17ffe865a84db10e": "2026-11-02T11:28:12.571512+00:00",
-  "1b73cf77237fa043": "2026-11-02T11:33:12.592183+00:00"
+  "1b73cf77237fa043": "2026-11-02T11:33:12.592183+00:00",
+  "525ca7d8386c73c0": "2026-11-02T11:38:12.576630+00:00"
  },
  "recent": [
-  {
-   "title": "WRAPUP Exxon, Chevron earnings propelled by war-driven refining surge",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxON2JIcGhXLURlX1ZHUDVac0IwV1BuN1puU1ljMVFoMUJPNWtZQ2FFdEVMY1ZoZ3pENFUtZEpXZ0ZRU2ZLTFVobHd2XzRiaUxuRFRESXVYNm9zNUUxLWliR1A0RHpTUlNjSUxOazBFSzFvUS1HVWVJX1VGeU41WkxDSjlLTHlQX0dEd1NqUzNna0dkMEZBYmZEd1JZaHhuVElEZFBLZFR0YVQ4V3BxVkhLbGxOMzlRWjU1RmZzRA?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T11:35:10.457985+00:00",
-   "title_ru": "РЕЗУЛЬТАТЫ Прибыль Exxon и Chevron выросла благодаря всплеску нефтепереработки, вызванному войной"
-  },
-  {
-   "title": "Amazon’s and Intel’s stocks are set to plunge. But Wall Street’s October winners may surprise you.",
-   "link": "https://www.marketwatch.com/story/amazons-and-intels-stocks-are-set-to-plunge-but-wall-streets-october-winners-may-surprise-you-4d74e4d4?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-30T11:35:10.457985+00:00"
-  },
   {
    "title": "Chip designer MediaTek says AI demand growth will continue 'for sure'",
    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQTXIzeTN1VVNoSXB4bTY4c3NDc1ZyQldMWVE3ald2NFJEc0JkR0hYTjFxZEluX3FfU0M0Wmk1S0VzZW10NnlJY2xUcmhCd3RBOGNjZFQ1TnN3UHdsOTd6UXQwYk84dGpJbFE3Y1p1WXBPWWRPVHAycXp4Sy1ETzFnU0oxb0VhTXZIanpsV2pZSHU3WGZNQm9mYzc3Q0w1NXB5N2NXd2hyT3BERzhDYzJIckVaZDdCVWs3MVQ5cy1mUQ?oc=5",
@@ -5321,6 +5301,21 @@
    "score": 3,
    "ts": "2026-11-02T11:33:12.592183+00:00",
    "title_ru": "BP получает 6 миллиардов долларов для погашения долга после закрытия сделки с Castrol"
+  },
+  {
+   "title": "BOE to Raise Rates for First Time Since 2023, Survey Shows",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/boe-to-raise-rates-for-first-time-since-2023-survey-shows",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-11-02T11:38:12.576630+00:00",
+   "title_ru": "Банк Англии повысит ставки впервые с 2023 года, показывает опрос",
+   "lead": "The Bank of England is expected to deliver its first rate hike in over three years on Thursday, according to a Bloomberg survey of 35 economists conducted at the end of last week.",
+   "lead_ru": "Ожидается, что Банк Англии в четверг проведет первое за более чем три года повышение ставок, согласно опросу Bloomberg, в котором приняли участие 35 экономистов, проведенному в конце прошлой недели.",
+   "tags": [
+    "rates"
+   ]
   }
  ],
  "last_digest": "2026-11-01",
