@@ -599,7 +599,9 @@
   "8c5ced6e89d3fa95": "2026-11-02T01:06:37.715981+00:00",
   "5af5c36db7f04727": "2026-11-02T01:06:37.715981+00:00",
   "8424febb5cc9d688": "2026-11-02T01:11:37.723962+00:00",
-  "4d60b73363989d69": "2026-11-02T01:11:37.723962+00:00"
+  "4d60b73363989d69": "2026-11-02T01:11:37.723962+00:00",
+  "13571b80a32f68c8": "2026-11-02T01:16:37.691037+00:00",
+  "15d3e786993e6f49": "2026-11-02T01:16:37.691037+00:00"
  },
  "recent": [
   {
@@ -5385,6 +5387,33 @@
    ],
    "score": 1,
    "ts": "2026-11-02T01:11:37.723962+00:00"
+  },
+  {
+   "title": "Foreigners Make Record Withdrawal From Taiwan Stocks on AI Rout",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/foreigners-make-record-withdrawal-from-taiwan-stocks-on-ai-rout",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-11-02T01:16:37.691037+00:00",
+   "title_ru": "Иностранцы делают рекордный вывод из тайваньских акций на AI Rout",
+   "lead": "Foreign outflows from Taiwanese stocks hit a record in October as a global selloff in artificial intelligence play pushed the island’s benchmark closer to a technical correction.",
+   "lead_ru": "Иностранный отток из тайваньских акций достиг рекордного уровня в октябре, поскольку глобальная распродажа в игре с искусственным интеллектом подтолкнула эталон острова ближе к технической коррекции.",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "Japan’s Katayama Says Ready to Take Steps for Stable FX Market",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/japan-s-katayama-says-ready-to-take-steps-for-stable-fx-market",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T01:16:37.691037+00:00",
+   "title_ru": "Японская Katayama говорит, что готова предпринять шаги для стабильного валютного рынка",
+   "lead": "Japanese authorities are prepared to respond if currency market movements become disorderly, acting in accordance with a standing pact with her US counterpart, Finance Minister Satsuki Katayama said, one day before the US holds…",
+   "lead_ru": "Японские власти готовы отреагировать, если движения на валютном рынке станут беспорядочными, действуя в соответствии с постоянным пактом со своим американским коллегой, сказал министр финансов Сацуки Катаяма, за день до того, как США..."
   }
  ],
  "last_digest": "2026-11-01",
@@ -5405,7 +5434,7 @@
   "MarketWatch": 0,
   "Банк Англии": 0,
   "Bank of England": 0,
-  "Bank of Russia": 1,
+  "Bank of Russia": 0,
   "ECB": 0,
   "Fed": 0,
   "IMF": 0,
