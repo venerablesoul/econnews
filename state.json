@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "31505ecdd28b1641": "2026-10-30T15:10:10.809030+00:00",
-  "5fd6bd38458a51cc": "2026-10-30T15:10:10.809030+00:00",
   "03add1b131295ee3": "2026-10-30T15:15:10.563816+00:00",
   "4d98f8c122008385": "2026-10-30T15:20:10.468319+00:00",
   "f217fcd45020e3e6": "2026-10-30T15:20:10.468319+00:00",
@@ -591,19 +589,12 @@
   "30bd5049b6102eb1": "2026-11-02T14:48:12.792407+00:00",
   "c7b70809c55ddff8": "2026-11-02T14:53:12.733452+00:00",
   "a88c1bafcc9235b1": "2026-11-02T15:08:12.762597+00:00",
-  "0543bfd8b9897165": "2026-11-02T15:08:12.762597+00:00"
+  "0543bfd8b9897165": "2026-11-02T15:08:12.762597+00:00",
+  "1e00c6fc540eb92c": "2026-11-02T15:13:13.246115+00:00",
+  "38aa7d559dbe33fd": "2026-11-02T15:13:13.246115+00:00",
+  "30af3d3436340adb": "2026-11-02T15:13:13.246115+00:00"
  },
  "recent": [
-  {
-   "title": "Outlast: State establishment survival rates from 2000 to 2026",
-   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNU0hxNmFZUldJUnpfaDRJbk5idzI5amNZUEc4clpLS21KUnp0bVJiRlM3Ylk4NjJmN1VzbjU5eFB4UHFYeHhOQnlXM3R5QmV3c2VpaGRybF9YNjRzV3dEekNkM0szaTc3V3c4cFN0VGtINE1RX1dpUVlhT3E2QnhQT3hfdDU2c29QcUlPVkN4cm1ObkxMcXgzSWhVSWpGdDg?oc=5",
-   "sources": [
-    "US Labor Statistics (BLS)"
-   ],
-   "score": 4,
-   "ts": "2026-10-30T15:10:10.809030+00:00",
-   "title_ru": "Outlast: показатели выживаемости государственных учреждений с 2000 по 2026 год"
-  },
   {
    "title": "Starbucks CEO Is Focused on Growth Plan, Fundamentals",
    "link": "https://www.bloomberg.com/news/videos/2026-10-30/starbucks-ceo-is-focused-on-growth-plan-fundamentals-video",
@@ -5135,6 +5126,31 @@
    "score": 3,
    "ts": "2026-11-02T15:08:12.762597+00:00",
    "title_ru": "Oracle привлекает инвесторов на $ 20 млрд для финансирования расширения ИИ"
+  },
+  {
+   "title": "Gold Investors Rocked by Wipeout, Seek Firmer Footing After Vote",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/gold-investors-rocked-by-wipeout-seek-firmer-footing-after-vote",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-11-02T15:13:13.246115+00:00",
+   "title_ru": "Золотые инвесторы, потрясенные Wipeout, ищут более прочную основу после голосования",
+   "lead": "As gold heads toward its worst annual loss in more than a decade, investors are gauging the odds a political shift in the US will restore the precious metal’s haven allure.",
+   "lead_ru": "Поскольку золото приближается к своему худшему годовому убытку за более чем десятилетие, инвесторы оценивают вероятность того, что политический сдвиг в США восстановит привлекательность драгоценного металла.",
+   "tags": [
+    "gold"
+   ]
+  },
+  {
+   "title": "US manufacturing picks up in October; input prices stay high",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOTW9UelFScXJVVVZ4RWVvek1GNndJeFA2Mk5ETVY0b1FwTFMtS0lnNkJFWkRkanQ3Sk5VVVlkaHRaZjVqM1gwcjVKamJSZTR5R2NTeFNIc0ZsZ0ZYSEQ4bXdxdXNzTVFhR0dVc1IyLWpadUpIOVcwT0tmWXB3XzJNaE92alNLUEo3cFNyZl95ampSWkl1N18xM082cTRNbTRoNno4?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T15:13:13.246115+00:00",
+   "title_ru": "Производство в США растет в октябре; цены на вводимые ресурсы остаются высокими"
   }
  ],
  "last_digest": "2026-11-01",
