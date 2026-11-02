@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "1e329fc55a8a180e": "2026-10-30T10:49:40.361499+00:00",
-  "632fec5b0f0c53ea": "2026-10-30T10:49:40.361499+00:00",
-  "30a6fe6b93678630": "2026-10-30T10:49:40.361499+00:00",
   "e55c84b60db4da71": "2026-10-30T10:54:40.422070+00:00",
   "63342d1d775e0ce9": "2026-10-30T10:54:40.422070+00:00",
   "a40d64394e1aa2f8": "2026-10-30T10:59:40.314027+00:00",
@@ -613,56 +610,10 @@
   "e0d85af97dfe6376": "2026-11-02T10:38:12.574704+00:00",
   "a3089f85878a41a2": "2026-11-02T10:38:12.574704+00:00",
   "d5d47d48138800d7": "2026-11-02T10:43:12.562393+00:00",
-  "183544ad06c36fd2": "2026-11-02T10:48:12.591682+00:00"
+  "183544ad06c36fd2": "2026-11-02T10:48:12.591682+00:00",
+  "ddcfae13214a9b87": "2026-11-02T10:53:12.595606+00:00"
  },
  "recent": [
-  {
-   "title": "Strong Earnings Mask Growing Struggle With Inflation, Oil Prices",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/strong-earnings-mask-growing-struggle-with-inflation-oil-prices",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 10,
-   "ts": "2026-10-30T10:49:40.361499+00:00",
-   "title_ru": "Сильные доходы маскируют растущую борьбу с инфляцией и ценами на нефть",
-   "lead": "At first glance, the third-quarter earnings season is going great.",
-   "lead_ru": "На первый взгляд, сезон отчетности за третий квартал проходит отлично.",
-   "tags": [
-    "inflation",
-    "oil"
-   ]
-  },
-  {
-   "title": "Colombia Faces Close Rate Call as Economy Slows: Decision Guide",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/colombia-faces-close-rate-call-as-economy-slows-decision-guide",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-30T10:49:40.361499+00:00",
-   "title_ru": "Колумбии грозит близкая ставка по мере замедления экономики: руководство по принятию решений",
-   "lead": "Colombia’s central bank faces a tough decision on interest rates as stubborn inflation supports another hike while weak economic data argue for a pause.",
-   "lead_ru": "Центральный банк Колумбии сталкивается с трудным решением по процентным ставкам, поскольку устойчивая инфляция поддерживает новое повышение, а слабые экономические данные требуют паузы.",
-   "tags": [
-    "rates",
-    "inflation"
-   ]
-  },
-  {
-   "title": "Exxon Increases Stake in Mozambique Gas Project Via Eni Swap",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/exxon-increases-stake-in-mozambique-gas-project-via-eni-swap",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T10:49:40.361499+00:00",
-   "title_ru": "Exxon увеличивает долю в газовом проекте Мозамбика через обмен Eni",
-   "lead": "ExxonMobil Holdings Corp. increased its stake in the planned Rovuma liquefied natural gas project in Mozambique after a swap with Eni SpA.",
-   "lead_ru": "ExxonMobil Holdings Corp. увеличила свою долю в планируемом проекте по производству сжиженного природного газа Rovuma в Мозамбике после обмена с Eni SpA.",
-   "tags": [
-    "gas"
-   ]
-  },
   {
    "title": "Italy's economy flat in third quarter, misses forecast",
    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPck1ray1MNmdNLWFVVHlkWTNPNGJrS1VuU1hFUEpJakhZdlUwNXhlUVpJOWd4aTFxcFhhMm1MV29BSzZ6N0pIbEVKTjJiTVVSWVRqbzFReDBzTFJJaVZqNjRkU2FFS0lWLWdqdDltS05FTkJqQUhORUpDYjNOVjNHVjZ0QWZaS01SbERIc0t2NF9XaUdET0N5S3RB?oc=5",
@@ -5370,6 +5321,16 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "German factory activity expands steadily in October, PMI shows",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNdEx5dGVZN1NKSWRwYlJzOVhxMDJrVWJ4TG9VNHpyeXpRRkxWWk96N29YckJuVjQzcTliSEFTRUo4aXR6amRIWTVxS3BLeXJ1Qi1FTngwdFdYTFJ6WGszXzdKSzFlUGQxRjgtbWZyOGd0ZWdtNERtX3RMMGVBZDJWYXB0ZFNYclJ1NWNJQW1RdW5jd1Q2cFFMdTVuVlhFRVlYUUpEZ0t3?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T10:53:12.595606+00:00",
+   "title_ru": "Согласно индексу PMI, производственная активность в Германии в октябре стабильно растет."
   }
  ],
  "last_digest": "2026-11-01",
