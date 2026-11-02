@@ -1,11 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "b8e4c6f87b753f45": "2026-10-30T11:19:40.290257+00:00",
-  "a362288c218b5dee": "2026-10-30T11:20:10.886531+00:00",
-  "a966542e38ed6167": "2026-10-30T11:20:10.886531+00:00",
-  "6a8c2c3f722cbee9": "2026-10-30T11:25:10.517696+00:00",
-  "7fd7e4bde796d1d9": "2026-10-30T11:30:10.512524+00:00",
   "a4ee039ed95438da": "2026-10-30T11:35:10.457985+00:00",
   "41a7ea767bc6318f": "2026-10-30T11:35:10.457985+00:00",
   "21facd52d70249a6": "2026-10-30T11:40:10.488520+00:00",
@@ -611,57 +606,12 @@
   "b31946f715f21535": "2026-11-02T11:13:12.648164+00:00",
   "ec3d91af77399c93": "2026-11-02T11:13:12.648164+00:00",
   "3750ff3b0674f609": "2026-11-02T11:18:12.596898+00:00",
-  "4ad95245a24be4d3": "2026-11-02T11:18:12.596898+00:00"
+  "4ad95245a24be4d3": "2026-11-02T11:18:12.596898+00:00",
+  "727314112eddfe7f": "2026-11-02T11:23:12.605604+00:00",
+  "17ffe865a84db10e": "2026-11-02T11:28:12.571512+00:00",
+  "1b73cf77237fa043": "2026-11-02T11:33:12.592183+00:00"
  },
  "recent": [
-  {
-   "title": "UK Debt Chief Sees Volatility Driving Demand for Short Gilts",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/uk-debt-chief-sees-volatility-driving-demand-for-short-gilts",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T11:19:40.290257+00:00",
-   "title_ru": "Глава долгового ведомства Великобритании считает, что волатильность стимулирует спрос на короткие облигации",
-   "lead": "The UK Debt Management Office is pulling back further from long-dated gilts to meet investor demand for shorter tenors that are less exposed to swings in the bond market, Chief Executive Jessica Pulay said.",
-   "lead_ru": "Управление по управлению долгом Великобритании продолжает отказываться от долгосрочных облигаций, чтобы удовлетворить спрос инвесторов на более короткие сроки, которые менее подвержены колебаниям на рынке облигаций, заявила генеральный директор Джессика Пулей.",
-   "tags": [
-    "bonds"
-   ]
-  },
-  {
-   "title": "- International Monetary Fund | IMF",
-   "link": "https://news.google.com/rss/articles/CBMiNEFVX3lxTE5mZDc5ODQxVWpwSF85dzZ4NS1VR05iSVZUU2txQUJQZ2d6d2IzUExaaFhqY2M?oc=5",
-   "sources": [
-    "IMF"
-   ],
-   "score": 5,
-   "ts": "2026-10-30T11:20:10.886531+00:00",
-   "title_ru": "- Международный валютный фонд | МВФ"
-  },
-  {
-   "title": "Digital Money and Payments: Transitioning Toward a New Paradigm",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPWHV4SWtRRHh3dDlZcVRCWHZxMFNtcDQzR1ZfWURKamttVF83UDVrbFVDX2hIV3FfZnZKT3VWOW01Z0RwYjlja3lSeHRNMUNNbUM0S09BS19DVE1sWjJHdUM2UmF5aEJjU3RjMTlER1NkOWtyei1YTDhWQUtwTC1lYnpKWlV2WUpHZUtRQnI3WXFGUXFJ?oc=5",
-   "sources": [
-    "IMF"
-   ],
-   "score": 4,
-   "ts": "2026-10-30T11:20:10.886531+00:00",
-   "title_ru": "Цифровые деньги и платежи: переход к новой парадигме"
-  },
-  {
-   "title": "CXMT turns third-quarter net profit of 54.4 billion yuan",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPNzBWcFZ0YVExMFpoc3A4QkhtX1oxQkREcnl0M3ZaOGFieU91OXpxN1p6T2RtOTJHazcxNjBXOHc5dlNOTzBuRFZnQzZleHNuUk54TmRBYTdIZ1ZnU0NFaEpPME94bklrRFR5dFBhczR5UnZhVFVMbmFZckZlZk9nQWw1NllweW9kbXBma1lHc0F1TW5SUFZIcGdabWw5ekVhMjhLbmxqbEZNbzQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T11:25:10.517696+00:00",
-   "title_ru": "Чистая прибыль CXMT в третьем квартале составила 54,4 млрд юаней",
-   "tags": [
-    "China"
-   ]
-  },
   {
    "title": "WRAPUP Exxon, Chevron earnings propelled by war-driven refining surge",
    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxON2JIcGhXLURlX1ZHUDVac0IwV1BuN1puU1ljMVFoMUJPNWtZQ2FFdEVMY1ZoZ3pENFUtZEpXZ0ZRU2ZLTFVobHd2XzRiaUxuRFRESXVYNm9zNUUxLWliR1A0RHpTUlNjSUxOazBFSzFvUS1HVWVJX1VGeU41WkxDSjlLTHlQX0dEd1NqUzNna0dkMEZBYmZEd1JZaHhuVElEZFBLZFR0YVQ4V3BxVkhLbGxOMzlRWjU1RmZzRA?oc=5",
@@ -5352,6 +5302,25 @@
    "score": 3,
    "ts": "2026-11-02T11:18:12.596898+00:00",
    "title_ru": "Американские избиратели в плохом экономическом настроении в преддверии промежуточных выборов"
+  },
+  {
+   "title": "В Сербии задержали владельца популярного у российских релокантов банка",
+   "link": "https://www.rbc.ru/finances/02/11/2026/6ae871c85bdaf3ae5810695d",
+   "sources": [
+    "RBC"
+   ],
+   "score": 1,
+   "ts": "2026-11-02T11:28:12.571512+00:00"
+  },
+  {
+   "title": "BP Gets $6 Billion to Pay Down Debt as Castrol Deal Closes",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQNnA1TFBXZ1FWTlJ1YVlubDk2TGs0Z2labF9kajRqN1RwYkNRM2Vwbm53SUpiZEdTbnYzVXVsYTExTENubGJmOHE3dXFDRmhaYk5SRWJfWmQ3aHBmSTliRmJRakhvZUpRZzBVdkFZM0pXSThOalhIcnVVRzMwZlRQS19najVYcG1Ld2l5MGhYN0cxc0JTRGRORF9ZeFNlWGpjSlB2TUQ5UXBEMzJD?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T11:33:12.592183+00:00",
+   "title_ru": "BP получает 6 миллиардов долларов для погашения долга после закрытия сделки с Castrol"
   }
  ],
  "last_digest": "2026-11-01",
@@ -5372,7 +5341,7 @@
   "MarketWatch": 0,
   "Банк Англии": 0,
   "Bank of England": 0,
-  "Bank of Russia": 1,
+  "Bank of Russia": 0,
   "ECB": 0,
   "Fed": 0,
   "IMF": 0,
@@ -12246,10 +12215,9 @@
    "0001213900-26-114588",
    "0001213900-26-114610",
    "0001009759-26-000011",
-   "0001628280-26-068639",
+   "0001213900-26-114630",
    "0001493152-26-049492",
    "0001193125-26-442547",
-   "0001193125-26-442196",
    "0001213900-26-114605",
    "0001193125-26-442514",
    "0001193125-26-442557",
@@ -12259,8 +12227,8 @@
    "0001899977-26-000010",
    "0001213900-26-114607",
    "0001193125-26-442229",
-   "0001628280-26-068641",
    "0001493152-26-049496",
+   "0001193125-26-442575",
    "0001213900-26-114603",
    "0001214659-26-013568",
    "0001193125-26-442228",
