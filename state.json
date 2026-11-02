@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "07358ca85386fb5b": "2026-10-30T06:04:40.247700+00:00",
-  "2ca9960c96c35004": "2026-10-30T06:04:40.247700+00:00",
-  "2f7b33f120d03be0": "2026-10-30T06:04:40.247700+00:00",
   "ef8f97356160e4e6": "2026-10-30T06:09:40.224746+00:00",
   "55d8ec8e0bb5cd35": "2026-10-30T06:39:40.261517+00:00",
   "be0ae030c17e3612": "2026-10-30T06:39:40.261517+00:00",
@@ -594,52 +591,10 @@
   "a8fb005ee0b73dde": "2026-11-02T05:42:31.238853+00:00",
   "89fb893139e61dcc": "2026-11-02T05:42:31.238853+00:00",
   "61dc579c04a0fc9e": "2026-11-02T05:52:31.225426+00:00",
-  "66bc14af290f8417": "2026-11-02T05:57:31.225393+00:00"
+  "66bc14af290f8417": "2026-11-02T05:57:31.225393+00:00",
+  "2144b17e2996bbf2": "2026-11-02T06:07:31.211256+00:00"
  },
  "recent": [
-  {
-   "title": "Taxes and high oil prices are set to spur more UK energy deals",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPajZvWmx1cVNMeHVPeHhIXzlVUnhwX3R6WTVnODhySnZvR2Y1QzZ4Y3FBaEUtS0hTenZHbmZWd2Fla0hXc3RpcG00SGtHckdtejJJT19nRFYzYVNrb2dtZ0FSR2lqSlRtZURQNHFqWU92Smh2SGdHMmcxeDduUnlXM19PdmtPekxtemJsbGZUYUNNUGUwdUxhQ2VZWjd4eGl4UGR5NTlDUUhLajQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 6,
-   "ts": "2026-10-30T06:04:40.247700+00:00",
-   "title_ru": "Налоги и высокие цены на нефть будут стимулировать больше энергетических сделок в Великобритании",
-   "tags": [
-    "oil"
-   ]
-  },
-  {
-   "title": "Indian shares inch higher on IT rally, earnings-led rebound; oil caps gains",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOMFp6N3FNV2FiY1Y2UFlWQ21yeTgyVlRKcTV6UEMzQTRiUFlTM0lJaWtYSzFpWHMydzQxSWZCeDZLV2hSUzZlNUwyRTNDY2llYnEydkp4WG95cUxzaW1Ed0ZRdUZGbUtjeW1CVWpIeERKR2xERGVWcjdVcTBHQTZiTzNyaHJsMlhpU3hSWnlESUZBc2ZIT3dUUWwwRGpVYk1fVVU2MEx2V1RfNk54NVBRVVFPWEtkcDQ2TUw4TFgwNUc?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-30T06:04:40.247700+00:00",
-   "title_ru": "Индийские акции выросли на 1 см на ИТ-ралли, отскок на основе прибыли; рост нефтяных лимитов",
-   "tags": [
-    "oil",
-    "markets"
-   ]
-  },
-  {
-   "title": "ECB’s Moulin Sees Policy as Measured With Most Prices Stable",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/ecb-s-moulin-sees-policy-as-measured-with-most-prices-stable",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-30T06:04:40.247700+00:00",
-   "title_ru": "Мулен считает, что политика ЕЦБ измеряется стабильностью большинства цен",
-   "lead": "The European Central Bank is responding in a measured way to inflation as most prices are stable and pressures are largely imported rather than driven by domestic factors, Governing Council member Emmanuel Moulin said.",
-   "lead_ru": "Европейский центральный банк умеренно реагирует на инфляцию, поскольку большинство цен стабильны, а давление в значительной степени импортируется, а не обусловлено внутренними факторами, сказал член Совета управляющих Эммануэль Мулен.",
-   "tags": [
-    "ECB",
-    "inflation"
-   ]
-  },
   {
    "title": "Yields Too High to Ignore Lure Investors Back to Long-Dated Debt",
    "link": "https://www.bloomberg.com/news/articles/2026-10-30/yields-too-high-to-ignore-lure-investors-back-to-long-dated-debt",
@@ -5295,6 +5250,19 @@
    "score": 3,
    "ts": "2026-11-02T05:57:31.225393+00:00",
    "title_ru": "Westpac отмечает самый глубокий спад в жилищном секторе почти за два десятилетия, сборы за обесценение удвоились"
+  },
+  {
+   "title": "Oman proposes preferential trade, investment deal with China",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOaldCWTJJZTNHNW8xTDdVZkxtWkdkazhTeWRnVWxsbFNKRU13RlhzdndMQ21JVC1KMzBXalQzZllxT2J3SkVGdmQtVXBVRGJ6Y2tEbFRiT29IWEVjZ0ZrUnlIcnVfTk9WTllKdWdnWkJFRXJwYjNsWmV6dm1rTXlZQnV4OHRaZ1V2WEpWNklNWGQ2WDd5a1hQT3QxQjllX2VO?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T06:07:31.211256+00:00",
+   "title_ru": "Оман предлагает преференциальную торговлю и инвестиционную сделку с Китаем",
+   "tags": [
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-11-01",
@@ -12177,7 +12145,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-11-02T05:02:31.273169+00:00",
+  "checked": "2026-11-02T06:07:31.211256+00:00",
   "sec_seen": [
    "0001223260-26-000011",
    "0001193125-26-442116",
@@ -12193,8 +12161,10 @@
    "0001193532-26-000012",
    "0001697362-26-000021",
    "0001628280-26-068639",
+   "0001451763-26-000014",
    "0001493152-26-049498",
    "0001280486-26-000010",
+   "0001193125-26-442229",
    "0001213900-26-114605",
    "0002014293-26-000012",
    "0001824159-26-000015",
@@ -12204,7 +12174,6 @@
    "0001628280-26-068641",
    "0001213900-26-114608",
    "0001477932-26-006563",
-   "0000091440-26-000174",
    "0001628280-26-068637",
    "0001213900-26-114604",
    "0001493152-26-049496",
@@ -12215,15 +12184,14 @@
    "0001193125-26-442142",
    "0001193125-26-442230",
    "0001213900-26-114609",
-   "0001214659-26-013568",
    "0002025268-26-000008",
    "0002014386-26-000026",
    "0002014361-26-000040",
    "0001231919-26-001519",
    "0001213900-26-114611",
    "0001498270-26-000012",
-   "0001193125-26-442229",
-   "0001451763-26-000014",
+   "0000091440-26-000174",
+   "0001214659-26-013568",
    "0001213900-26-114588"
   ],
   "errors": {
