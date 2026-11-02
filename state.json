@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "371d486f4c7fa6f3": "2026-10-30T23:41:27.152008+00:00",
   "a8275e02227b60ee": "2026-10-30T23:46:27.198912+00:00",
   "792442693243bf5d": "2026-10-30T23:51:27.214934+00:00",
   "8245925ad414dec8": "2026-10-31T00:16:27.194471+00:00",
@@ -595,22 +594,10 @@
   "d3be7a472d9b1534": "2026-11-02T23:30:44.379290+00:00",
   "7ab5e9422fa33a7f": "2026-11-02T23:30:44.379290+00:00",
   "b73a2da71654f25b": "2026-11-02T23:30:44.379290+00:00",
-  "22d6ede5cc12319e": "2026-11-02T23:40:44.480851+00:00"
+  "22d6ede5cc12319e": "2026-11-02T23:40:44.480851+00:00",
+  "49f709a9859c781e": "2026-11-02T23:45:44.335921+00:00"
  },
  "recent": [
-  {
-   "title": "North Korea says sanctions don't work to deny its status as nuclear weapons state",
-   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPbVo5aGdRLXQ0a3ltRnJzMUVTRjBjNUJKNW5fWGxtTmh2NEVMZ0ZUUTRqSktEeXotdkNNWk9TS2ExREYtQWZmdFVZUV9MWUZVaGNIaVk0RXJtdXk0LXN5V29CNmY3ME54ZkRueXh5YzB4OXVEakVOYUVBSlFzaVUtV3hBLVZ0WnNHSmwwcGd4ZHJmVzFwR2VPMndoZGxObmtQRVJxM3dEZmdobnlWOGpCYjEwNFRrTERnUFd5S2NEcVhITjFxSndtaw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 5,
-   "ts": "2026-10-30T23:41:27.152008+00:00",
-   "title_ru": "Северная Корея заявляет, что санкции не помогают лишить ее статуса ядерной державы",
-   "tags": [
-    "sanctions"
-   ]
-  },
   {
    "title": "Trump touted a record Venezuela oil deal. Now reality is setting in",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQbnlBZkREN3B0WDN3R1dLeFNJTFJHQ0M4SlZDaTh6ZTRfMmhDSXdwal9PY1NpTXZZU2UyUXdldXZCanREd1RTRlozSUQwSVVGcUFpcUxZNDQ2YURHNmlobFNRR2JueEg0YjZzekN0VkFLU1RrLW1RQlJCNmtNaUltcjRQWjNwV1docFVaNkRNYjNDcmk1cFY2V0F2UWthYjV2dmVDazlFRkZGZl9wUGZWeGs5VUg?oc=5",
@@ -5103,6 +5090,20 @@
    "score": 3,
    "ts": "2026-11-02T23:30:44.379290+00:00",
    "title_ru": "Автопроизводители поддерживают отмену в США правил экономии топлива"
+  },
+  {
+   "title": "South Korea October headline inflation moderates ahead of expected rate hike",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPSFk2a29WR0k2QjdaaDd5LTNsR0gxYlhRdVZrY09GcmxWTG1ZMlFGTEVPVDgxclZpUDNrZk16Zl9mMnpFUEZTZnk0ekIzYTAwRTEtZUxDaGU0UElSQzJ5SC1xdy04aWliVTBDVWw5NTdSMDhlYldyU0xkeVpRUEMzTzdUS19jN3otUUVjdmsyRkIwRjJRZFF4YTJ6TkpEQWFxajFlSmpXYk1GLUNfZVE0b0V0YTA0b3ZSZlVZUFdEMnlqMjlSVlE0?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 8,
+   "ts": "2026-11-02T23:45:44.335921+00:00",
+   "title_ru": "В Южной Корее октябрьская инфляция снизилась в преддверии ожидаемого повышения ставок",
+   "tags": [
+    "rates",
+    "inflation"
+   ]
   }
  ],
  "last_digest": "2026-11-02",
@@ -12085,11 +12086,9 @@
    "0001338176-26-000040",
    "0001285737-26-000004",
    "0001193125-26-443951",
-   "0000875045-26-000098",
+   "0001902872-26-000003",
    "0001628280-26-069011",
    "0001525358-26-000035",
-   "0001902872-26-000003",
-   "0001674959-26-000002",
    "0001193125-26-443936",
    "0001784996-26-000107",
    "0001674335-26-000135",
@@ -12104,6 +12103,7 @@
    "0001501227-26-000006",
    "0001836156-26-000008",
    "0000935703-26-000125",
+   "0001889614-26-000002",
    "0001193125-26-443948",
    "0001437749-26-034481",
    "0001104659-26-121503",
@@ -12113,12 +12113,13 @@
    "0001783108-26-000036",
    "0001510281-26-000402",
    "0001061983-26-000107",
+   "0001888118-26-000002",
    "0001628280-26-069008",
    "0001193125-26-443950",
    "0002033834-26-000023",
    "0001231919-26-001526",
-   "0001199872-26-000006",
    "0000907654-26-000112",
+   "0001199872-26-000006",
    "0002094859-26-000003",
    "0001193125-26-443949",
    "0001193125-26-443960",
