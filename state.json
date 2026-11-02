@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "55b140b7b592b4c2": "2026-10-30T19:05:57.757394+00:00",
   "75f4fda082ce649e": "2026-10-30T19:15:57.449787+00:00",
   "55c927a9c2721998": "2026-10-30T19:25:57.448317+00:00",
   "8d0386ce6a869e3b": "2026-10-30T19:35:57.362130+00:00",
@@ -588,24 +587,10 @@
   "2fb9a3ff9b2258ea": "2026-11-02T18:54:12.666758+00:00",
   "ee88fd000173787a": "2026-11-02T18:54:12.666758+00:00",
   "29a6fbbd0877599b": "2026-11-02T18:59:12.689297+00:00",
-  "546c19d9e0079540": "2026-11-02T18:59:12.689297+00:00"
+  "546c19d9e0079540": "2026-11-02T18:59:12.689297+00:00",
+  "7e42553a321c8de9": "2026-11-02T19:09:12.777473+00:00"
  },
  "recent": [
-  {
-   "title": "Nasdaq 100 (NDX, NDQ, QQQ) Hits Third Correction of 2026 on Unwinding Tech Bets",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/nasdaq-100-ndx-ndq-qqq-hits-third-correction-of-2026-on-unwinding-tech-bets",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T19:05:57.757394+00:00",
-   "title_ru": "Nasdaq 100 (NDX, NDQ, QQQ) достиг третьей коррекции в 2026 году из-за отмены ставок на технологии",
-   "lead": "Investors dumped big tech stocks following a slew of disappointing earnings, putting the Nasdaq 100 Index on course to enter its third technical correction of the year.",
-   "lead_ru": "Инвесторы сбросили акции крупных технологических компаний после множества разочаровывающих отчетов, что поставило индекс Nasdaq 100 на путь третьей технической коррекции за год.",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Freight rates for Russian oil stay at record highs amid tanker shortage, Black Sea risks, sources say",
    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPb3FtR2JUVEZGLVVwY0FJd0FSLWZHRnVFQzFENHNlbzczYkhZUy1RSExsdGotNF90S01qMlNqR3Jua2NRZ0dtZ1dnYkUzRDlCZ0h6UnZZMGVJVmU4dEU4RTdZWWR1R3pGUjhlVEVEU0lyc2d3SURKZ3lVdzQ3M1M4aFRrc2pVVUJ5ZlVIZmd0WVBvRnNQbVRqN2dJSXg2NGNSeDA2cGtmT2dGcUhTS2tyOHd5RWNuVTdFeG80UkpGX2ZyS19wUjZNRWtGMnU?oc=5",
@@ -11977,10 +11962,9 @@
   },
   "checked": "2026-11-02T18:44:12.704510+00:00",
   "sec_seen": [
-   "0002118015-26-000005",
-   "0002117143-26-000004",
+   "0002116974-26-000006",
    "0001628280-26-068775",
-   "0002116974-26-000006"
+   "0001582473-26-000011"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
