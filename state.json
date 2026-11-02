@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "0c70ded9f2b6700e": "2026-10-30T08:59:40.298649+00:00",
-  "2d9a9feb978dcb90": "2026-10-30T08:59:40.298649+00:00",
-  "b36f7ba6b40e53fd": "2026-10-30T08:59:40.298649+00:00",
   "7c570bbb5f7383f6": "2026-10-30T09:04:40.349819+00:00",
   "67f658476c3c9859": "2026-10-30T09:04:40.349819+00:00",
   "e362e4d7ebda355d": "2026-10-30T09:04:40.349819+00:00",
@@ -608,34 +605,16 @@
   "cb48761c0c9ae892": "2026-11-02T08:47:31.224114+00:00",
   "68e0a36c4fe143ca": "2026-11-02T08:52:31.247091+00:00",
   "3aa2e6741b8bbcf8": "2026-11-02T08:52:31.247091+00:00",
-  "1084569ab944c751": "2026-11-02T08:52:31.247091+00:00"
+  "1084569ab944c751": "2026-11-02T08:52:31.247091+00:00",
+  "d82838bd055dadfb": "2026-11-02T08:57:31.265086+00:00",
+  "4c4b9d25397b29af": "2026-11-02T09:02:31.277542+00:00",
+  "1938a1786fd97eb7": "2026-11-02T09:02:31.277542+00:00",
+  "b24a98a5f57beaf3": "2026-11-02T09:02:31.277542+00:00",
+  "ab4c32c288110538": "2026-11-02T09:02:31.277542+00:00",
+  "b5eda1516cbbcce3": "2026-11-02T09:02:31.277542+00:00",
+  "5128277e51055a02": "2026-11-02T09:02:31.277542+00:00"
  },
  "recent": [
-  {
-   "title": "UK Wins Back Bond Investors With Dose of Fiscal Restraint",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/uk-wins-back-bond-investors-with-dose-of-fiscal-restraint",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T08:59:40.298649+00:00",
-   "title_ru": "Великобритания возвращает инвесторов в облигации дозой бюджетных ограничений",
-   "lead": "The rehabilitation of the UK bond market took another step forward as Prime Minister Andy Burnham’s debut budget reassured investors this week, sending yields to a five-week low.",
-   "lead_ru": "Восстановление рынка облигаций Великобритании сделало еще один шаг вперед, поскольку дебютный бюджет премьер-министра Энди Бернхэма на этой неделе успокоил инвесторов, отправив доходность до пятинедельного минимума.",
-   "tags": [
-    "bonds"
-   ]
-  },
-  {
-   "title": "Anthropic’s $100 Billion Mission Is the Whole Market Now",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxORzJ4dTF2TEtfTV9RYm1DWjUxQmRCLWpNenJJQTBFTERpdl9veUF6ZEpHR0s4NmNmdjRaai1tOXh0a05vQWs1SHZDdHlxclFGNVJIZHdqSkM5T3dXMzJKMXpoRHRKRWhFRGluRDZ1ZXoyamkyX01wdUJGU1U3UV90LXJ5R0tCZEduSXR1Y1dlbHowVjJLX1V6eGtNT3dDcHpUVGdqZl85MDhmTHRVbEFFRW5Rb0pHbTVCZlpZ?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T08:59:40.298649+00:00",
-   "title_ru": "Миссия Anthropic стоимостью 100 миллиардов долларов теперь охватывает весь рынок"
-  },
   {
    "title": "Results of the ECB Survey of Professional Forecasters for the fourth quarter of 2026",
    "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261030~e92c3c838c.en.html",
@@ -5381,6 +5360,39 @@
    "score": 3,
    "ts": "2026-11-02T08:52:31.247091+00:00",
    "title_ru": "Розничные продажи в Германии неожиданно упали в сентябре"
+  },
+  {
+   "title": "Boris Vujčić: Integrated, open and resilient: Europe’s strengths in a fragmenting world",
+   "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp.261102~70003226e9.en.html",
+   "sources": [
+    "ECB"
+   ],
+   "score": 4,
+   "ts": "2026-11-02T09:02:31.277542+00:00",
+   "title_ru": "Борис Вуйчич: Интегрированность, открытость и устойчивость: сильные стороны Европы в раздробленном мире"
+  },
+  {
+   "title": "What Are Structured Notes And Why the Market for Them Is Booming",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/what-are-structured-notes-and-why-the-market-for-them-is-booming",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T09:02:31.277542+00:00",
+   "title_ru": "Рынок товаров для ухода за растительностью на лице в настоящее время составляет 5 миллиардов долларов, и этот бизнес процветает.",
+   "lead": "A conversation with Nomura's Alex Micalizzi.",
+   "lead_ru": "Начать разговор с %S"
+  },
+  {
+   "title": "Odd Lots: The Structured Notes Market Is Booming (Podcast)",
+   "link": "https://www.bloomberg.com/news/audio/2026-11-02/odd-lots-the-structured-notes-market-is-booming-podcast",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T09:02:31.277542+00:00",
+   "title_ru": "Нечетные лоты: рынок структурированных нот процветает (подкаст)",
+   "lead": "The structured products business in the US has gotten very large recently — on track to hit $300 billion in sales this year. That they are all the rage means a once opaque financial product is getting a lot more attention."
   }
  ],
  "last_digest": "2026-11-01",
