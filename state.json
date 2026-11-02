@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "ed955d44c117a77d": "2026-10-30T14:00:10.623346+00:00",
-  "67477839eafcdc85": "2026-10-30T14:05:10.526165+00:00",
   "7d3c74297493ea91": "2026-10-30T14:10:10.650026+00:00",
   "b8c4260386d77fec": "2026-10-30T14:10:10.650026+00:00",
   "d10ae9c4a0733eb1": "2026-10-30T14:10:10.650026+00:00",
@@ -597,21 +595,11 @@
   "7fb986d7b2d5fd69": "2026-11-02T13:28:12.666481+00:00",
   "159863cd32c0c4de": "2026-11-02T13:28:12.666481+00:00",
   "31b51cd18729651c": "2026-11-02T13:53:12.705449+00:00",
-  "b53f74f9a7ba1744": "2026-11-02T13:58:12.710341+00:00"
+  "b53f74f9a7ba1744": "2026-11-02T13:58:12.710341+00:00",
+  "5de4b8f29af3ab1b": "2026-11-02T14:08:12.763539+00:00",
+  "b2a4873da0ffe745": "2026-11-02T14:08:12.763539+00:00"
  },
  "recent": [
-  {
-   "title": "London’s Stock Market Among Those Feeling Left Out of UK Budget",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/london-s-stock-market-among-those-feeling-left-out-of-uk-budget",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-30T14:00:10.623346+00:00",
-   "title_ru": "Лондонский фондовый рынок среди тех, кто чувствует себя обделенным британским бюджетом",
-   "lead": "The UK budget failed to deliver measures needed to revitalize London’s three-century-old bourse, market participants said, despite its reassuring praise for the country’s capital markets.",
-   "lead_ru": "Бюджет Великобритании не смог принять меры, необходимые для оживления трехвековой лондонской биржи, заявили участники рынка, несмотря на обнадеживающие похвалы рынкам капитала страны."
-  },
   {
    "title": "Inflation and interest rates tracker: see how your country compares",
    "link": "https://www.ft.com/content/088d3368-bb8b-4ff3-9df7-a7680d4d81b2?syn-25a6b1a6=1",
@@ -5213,6 +5201,34 @@
     "inflation",
     "jobs"
    ]
+  },
+  {
+   "title": "Путин утвердил состав наблюдательного совета РФПИ // Путин назначил Набиуллину, Новака, Орешкина и Решетникова в набсовет РФПИ",
+   "link": "https://www.kommersant.ru/doc/9079202",
+   "sources": [
+    "Kommersant"
+   ],
+   "score": 5,
+   "ts": "2026-11-02T14:08:12.763539+00:00",
+   "title_en": "Putin approved the composition of the RDIF supervisory board // Putin appointed Nabiullina, Novak, Oreshkin and Reshetnikov to the RDIF supervisory board",
+   "lead": "Президент России Владимир Путин подписал указ, утверждающий состав наблюдательного совета АО «Управляющая компания Российского фонда прямых инвестиций». Документ опубликован на портале правовой информации.",
+   "lead_en": "Russian President Vladimir Putin signed a decree approving the composition of the supervisory board of JSC Management Company of the Russian Direct Investment Fund. The document was published on the legal information portal.",
+   "tags": [
+    "BankOfRussia",
+    "Russia"
+   ]
+  },
+  {
+   "title": "Минэкономики предложило штрафовать за «ранний вывод» дженериков",
+   "link": "https://www.kommersant.ru/doc/9079205",
+   "sources": [
+    "Kommersant"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T14:08:12.763539+00:00",
+   "title_en": "The Ministry of Economy proposed to fine for the “early withdrawal” of generics",
+   "lead": "Минэкономразвития предлагает ужесточить наказание за продажу лекарств-дженериков (аналогов запатентованных препаратов) раньше, чем закончится срок патента на оригинальное вещество.",
+   "lead_en": "The Ministry of Economic Development proposes to tighten penalties for the sale of generic drugs (analogues of patented drugs) before the patent for the original substance expires."
   }
  ],
  "last_digest": "2026-11-01",
@@ -12099,11 +12115,13 @@
   "sec_seen": [
    "0001965457-26-000007",
    "0001550860-26-000003",
+   "0001493152-26-049576",
    "0001213900-26-114660",
    "0001213900-26-114696",
    "0001513845-26-000147",
    "0001213900-26-114680",
    "0000853816-26-000069",
+   "0000020430-26-000047",
    "0000921895-26-002891",
    "0001978589-26-000007",
    "0001493152-26-049574",
