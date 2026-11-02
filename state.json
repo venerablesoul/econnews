@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "18eecaa2591efb77": "2026-10-30T02:29:13.555612+00:00",
-  "8ba3317350897417": "2026-10-30T02:29:13.555612+00:00",
-  "c7c2a3b1dedcdb95": "2026-10-30T02:29:13.555612+00:00",
-  "8615f0a97d0a8cd8": "2026-10-30T02:34:13.605403+00:00",
   "b7017de8a0083101": "2026-10-30T02:39:13.643465+00:00",
   "1f0a1cc73f3ebb39": "2026-10-30T02:44:13.564063+00:00",
   "4db47ca1150e2140": "2026-10-30T02:54:13.562842+00:00",
@@ -600,54 +596,11 @@
   "0a9627e10909cafd": "2026-11-02T02:01:37.735036+00:00",
   "38bb6b27ca214688": "2026-11-02T02:06:37.787213+00:00",
   "ad36f2a91d3d4e4a": "2026-11-02T02:21:37.693709+00:00",
-  "bbe63d13d663883d": "2026-11-02T02:26:37.740654+00:00"
+  "bbe63d13d663883d": "2026-11-02T02:26:37.740654+00:00",
+  "80fd35a2964e1d88": "2026-11-02T02:36:37.702999+00:00",
+  "9862ce988bffadbd": "2026-11-02T02:36:37.702999+00:00"
  },
  "recent": [
-  {
-   "title": "ANZ Raises Oil Price Forecast as Market Tightens on Iran War",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/anz-raises-oil-price-forecast-as-market-tightens-on-iran-war",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-30T02:29:13.555612+00:00",
-   "title_ru": "ANZ повышает прогноз цен на нефть, поскольку рынок ужесточает войну с Ираном",
-   "lead": "Oil-market balances are now more fragile than at the start of the Middle East conflict, and any flareup after the US midterm elections will push prices higher, according to ANZ Group Holdings Ltd.",
-   "lead_ru": "Балансы на нефтяном рынке сейчас более хрупкие, чем в начале ближневосточного конфликта, и любая вспышка после промежуточных выборов в США подтолкнет цены выше, согласно ANZ Group Holdings Ltd.",
-   "tags": [
-    "oil"
-   ]
-  },
-  {
-   "title": "Japan’s Top Insurers Revive Lending as Rates Boost Returns",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/japan-s-top-insurers-revive-lending-as-rates-boost-returns",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-30T02:29:13.555612+00:00",
-   "title_ru": "Ведущие страховщики Японии возобновляют кредитование, поскольку ставки повышают доходность",
-   "lead": "Japan’s biggest life insurers are stepping up lending, with a focus on overseas projects including data centers, as higher interest rates make loans more attractive and surging investment in artificial intelligence and power…",
-   "lead_ru": "Крупнейшие страховщики жизни Японии наращивают кредитование, уделяя особое внимание зарубежным проектам, включая центры обработки данных, поскольку более высокие процентные ставки делают кредиты более привлекательными, а растущие инвестиции в искусственный интеллект и энергетику...",
-   "tags": [
-    "rates"
-   ]
-  },
-  {
-   "title": "India’s Small Investors Dump Stocks, Chase New Listings",
-   "link": "https://www.bloomberg.com/news/newsletters/2026-10-30/india-s-small-investors-dump-stocks-chase-new-listings",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-30T02:34:13.605403+00:00",
-   "title_ru": "Мелкие инвесторы Индии сбрасывают акции, гонятся за новыми листингами",
-   "lead": "Individuals and proprietary traders sold more than 70 billion rupees of shares this month through Oct. 26.",
-   "lead_ru": "Физические лица и частные трейдеры продали более 70 миллиардов рупий акций в этом месяце до 26 октября.",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Brazil's Petrobras makes third oil discovery in block off Amapa state",
    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOSE0ydV9qSC02Q1dUUU5hQm1DSExua2JkeWFRN0dfemViNGhNWjQzY2VuOXFRZjZuRFdjUldYOFJBZkhLX29DeUV0VWFneXhWRG1jMXA3RGJZTGpaN2tWUEZMQmRHT05FcUVMRHp4SWx5Nnl4SFZhWmNFbDFOQWNOQ2xlYjIwbHgwd3FKX1lwSjB3N2s3UU10ZlV0NjMtS0plTGJJVWJkWEJwcGRPbElJWE1WSUtJRUdj?oc=5",
@@ -5450,6 +5403,34 @@
    "lead_ru": "Ожидается, что Резервный банк Австралии объявит о пятом повышении в этом году, увеличив стоимость ежемесячных выплат по ипотеке. Следите за нашим блогом новостей Австралии в прямом эфире, чтобы быть в курсе последних обновлений. Получайте наши последние новости по электронной почте, в бесплатном приложении или ежедневных новостях…",
    "tags": [
     "rates"
+   ]
+  },
+  {
+   "title": "Global AI Selloff, Small-Cap Pain Push Investors Toward India Large Caps",
+   "link": "https://www.bloomberg.com/news/newsletters/2026-11-02/global-ai-selloff-small-cap-pain-push-investors-toward-india-large-caps",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-11-02T02:36:37.702999+00:00",
+   "title_ru": "Глобальная распродажа ИИ, боль компаний с малой капитализацией подталкивают инвесторов к индийским компаниям с большой капитализацией",
+   "lead": "Software services exporters claim all five top spots in the large-cap index in October.",
+   "lead_ru": "Экспортеры программных услуг занимают все пять верхних мест в индексе компаний с большой капитализацией в октябре.",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "India Large Caps Gain Favor Amid Global AI Selloff, Small-Cap Slump",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNSURxZDYtaFZrWVZzYmtkc1J3UVZITGR3NEluUWtzbEJPZzFfeGMtMEhoUlpucGVsUjJmUGdvdnhHS3hOUW43RnZVSkNnSUYzZ3JVUkY4NEVGYlVsYVVLakFoZldPa3M0a2xVRUp6dlQyenJoWl9FMTZEOV9sSkdFSnRFSUtVQUcyRnNLcTJsR0xKY3BJQjhXRGhjX2ozb0FYTjJReWhkTEJPS25sU05oZVZlZXVOU2wtSEExRHV4ZUVFRU0?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-11-02T02:36:37.702999+00:00",
+   "title_ru": "Индийские компании с крупной капитализацией получают преимущество на фоне глобальной распродажи ИИ и спада компаний с малой капитализацией",
+   "tags": [
+    "markets"
    ]
   }
  ],
