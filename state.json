@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "52a79dd6a2ecbdb1": "2026-10-30T09:59:40.356498+00:00",
-  "ab4117d9f0bd0720": "2026-10-30T10:04:40.356431+00:00",
-  "95f4e7e3effd317e": "2026-10-30T10:04:40.356431+00:00",
   "56040798c90eba9d": "2026-10-30T10:14:40.352605+00:00",
   "f08582e7736f69bd": "2026-10-30T10:14:40.352605+00:00",
   "09b4a840305b199a": "2026-10-30T10:14:40.352605+00:00",
@@ -613,54 +610,12 @@
   "dd511b2136be6c6b": "2026-11-02T09:52:31.264034+00:00",
   "b3e74642bb6aa1f5": "2026-11-02T09:52:31.264034+00:00",
   "2933fd02233ad445": "2026-11-02T09:58:12.605600+00:00",
-  "35623b1a3f3eb711": "2026-11-02T09:58:12.605600+00:00"
+  "35623b1a3f3eb711": "2026-11-02T09:58:12.605600+00:00",
+  "9c9704b16df9aab7": "2026-11-02T10:08:12.592747+00:00",
+  "f9fc9fd7de4aadcb": "2026-11-02T10:08:12.592747+00:00",
+  "e9b7dfa93e3eab42": "2026-11-02T10:08:12.592747+00:00"
  },
  "recent": [
-  {
-   "title": "China's Xi, Swiss president praise trade deal that boosts access",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNVF9pNjc4bUNhTHhCaVFuSUo2ZGpJN1lUYlpQdzdnZDd5bHd6V2hzeWdSUDFVRXZDQ3p5VzUzbjE1ZVQtRTFqMkxRcGZHd1lMdGhUVU9OeEhTMXRCeDlyaGZydG1qdlZjMzBUazdLSTBoWFRMajlDT1lHbS0waVA3NFFkNl92OHk2UFZWUTNnX1hvNGUxTkdPV2VuMGJTTmcyWWdwSkxnMGktdXRCV1Vj?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T09:59:40.356498+00:00",
-   "title_ru": "Си Цзиньпин и президент Швейцарии высоко оценили торговую сделку, которая расширяет доступ",
-   "tags": [
-    "China"
-   ]
-  },
-  {
-   "title": "Trump vowed to reduce prices, but his policies have fueled US inflation | Steven Greenhouse",
-   "link": "https://www.theguardian.com/commentisfree/2026/oct/30/trump-tariffs-inflation-election-promise",
-   "sources": [
-    "The Guardian"
-   ],
-   "score": 6,
-   "ts": "2026-10-30T10:04:40.356431+00:00",
-   "title_ru": "Трамп пообещал снизить цены, но его политика усилила инфляцию в США | Стивен Гринхаус",
-   "lead": "‘Even though economists warned that tariffs would be inflationary, Trump has enthusiastically embraced them’ Donald Trump successfully campaigned for his second term two years ago promising to reduce prices on day one , but ever…",
-   "lead_ru": "«Несмотря на то, что экономисты предупреждали, что пошлины будут инфляционными, Трамп с энтузиазмом их поддержал» Дональд Трамп успешно провел кампанию на свой второй срок два года назад, обещая снизить цены в первый же день, но когда-либо",
-   "tags": [
-    "inflation",
-    "tariffs"
-   ]
-  },
-  {
-   "title": "BOE Agents See Little Sign of Energy Shock Feeding Into Pay",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/boe-agents-see-little-sign-of-energy-shock-feeding-into-pay",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-30T10:04:40.356431+00:00",
-   "title_ru": "Агенты Банка Англии не видят признаков энергетического шока, влияющего на заработную плату",
-   "lead": "UK businesses do not expect to hand staff bigger pay rises despite the uptick in inflation, a sign that a subdued labor market is helping to contain price pressures.",
-   "lead_ru": "Британские предприятия не ожидают увеличения заработной платы сотрудников, несмотря на рост инфляции, что является признаком того, что сдержанный рынок труда помогает сдерживать ценовое давление.",
-   "tags": [
-    "inflation",
-    "jobs"
-   ]
-  },
   {
    "title": "Euro zone economy slows to 0.4% growth in Q3 as crisis-hit France contracts",
    "link": "https://www.cnbc.com/2026/10/30/euro-zone-gdp-france.html",
@@ -5405,6 +5360,29 @@
    "score": 3,
    "ts": "2026-11-02T09:58:12.605600+00:00",
    "title_ru": "Почему индийское расследование импорта шотландского виски из Британии бряцает ликеро-водочными компаниями?"
+  },
+  {
+   "title": "Argentina's austerity-hit economy reels towards recession, testing Milei ahead of 2027 vote",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNNFVsdDIwMFVTSnVyR2Y4ZHh3bkRBdHJqSVowbHRnX2JxaFdIcGVVS0RPTTAxYy1VNWlQVGgwYmNqV2JFYTNvSm1KdmV4U0RsUi1wMnBGenV6c2xDNlc0THJLMzVTdno1ZVlkVDZmOXhIVUphSjNSOEI1QnRqOTBLc2ViUDNFOVdVVFRhUEpwOEhHZVZzUjV5TDExU2Vmc0g3Z0lTVU1JTUszRWZtZFJvdDhOQ3Z2blQ0TjRvMFczWUdpSjBsblE?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-11-02T10:08:12.592747+00:00",
+   "title_ru": "Экономика Аргентины, пострадавшая от мер жесткой экономии, движется к рецессии, что станет испытанием для Милеи в преддверии выборов 2027 года.",
+   "tags": [
+    "GDP"
+   ]
+  },
+  {
+   "title": "Belgian government crisis looms as budget talks collapse",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOQUZUbTBNWUxjNlVBUmJteWJkMzFnVkdkaWlYUFlwaW1PclNVYkhrdDBTT21JR0s5cGE4SnAxUC1Icko4alJaMWNiWDB2azMwV2NyTEVfeHh4eC1xZ2s3dl9sREk2aVhxWjJJU1pkUVV6UU4yNmVkRkwxdkV4UmU4djRDclYwRDNzXzZ3cTA1dmFXb2swRGs0Z3NzQlJocGpGVmtpUEpqWmhpQ2ZGRzk1N19ybmE?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T10:08:12.592747+00:00",
+   "title_ru": "В Бельгии назревает кризис на фоне провала бюджетных переговоров."
   }
  ],
  "last_digest": "2026-11-01",
