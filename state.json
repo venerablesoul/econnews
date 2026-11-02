@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "21facd52d70249a6": "2026-10-30T11:40:10.488520+00:00",
   "1e8276be5e120980": "2026-10-30T11:50:10.510985+00:00",
   "9fe28e4dd4550099": "2026-10-30T11:55:10.351868+00:00",
   "43608c0f279afbce": "2026-10-30T12:00:10.607716+00:00",
@@ -608,7 +607,9 @@
   "727314112eddfe7f": "2026-11-02T11:23:12.605604+00:00",
   "17ffe865a84db10e": "2026-11-02T11:28:12.571512+00:00",
   "1b73cf77237fa043": "2026-11-02T11:33:12.592183+00:00",
-  "525ca7d8386c73c0": "2026-11-02T11:38:12.576630+00:00"
+  "525ca7d8386c73c0": "2026-11-02T11:38:12.576630+00:00",
+  "57d556667abcff71": "2026-11-02T11:43:12.572199+00:00",
+  "518be9474eb6193e": "2026-11-02T11:43:12.572199+00:00"
  },
  "recent": [
   {
@@ -5316,6 +5317,31 @@
    "tags": [
     "rates"
    ]
+  },
+  {
+   "title": "India’s Sitharaman Aims to Keep Up Spending to Sustain Growth",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/india-s-sitharaman-aims-to-keep-up-spending-to-sustain-growth",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T11:43:12.572199+00:00",
+   "title_ru": "Индийский Ситхараман намерен сохранить расходы для поддержания экономического роста",
+   "lead": "India will keep up its spending on roads and bridges to ports to sustain economic growth while maintaining fiscal prudence, Finance Minister Nirmala Sitharaman said, as she begins preparations for the next federal budget.",
+   "lead_ru": "Индия сохранит расходы на дороги и мосты, ведущие к портам, чтобы поддержать экономический рост, сохраняя при этом финансовую осмотрительность, заявила министр финансов Нирмала Ситхараман, приступая к подготовке следующего федерального бюджета."
+  },
+  {
+   "title": "Wall Street futures rise as AI stocks catch their breath; midterms in focus",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPbnVDQzd0LTF3Vi1BMnJDLWpGaHNIMlJVTDNnVmplMzZnVjRxRTZUUTRsQkVvZ21EN3lXMzA4ZDJnOTQwc01ld2tqT1pGZVN6VmpuVWpzLVVMUU1qcDdnRFdEQUZoM0l6Ym9NYnhfWDctWkZnSC1fLUk0RGxtUmd3WU9zLXdhcTdGTkJvcUxaazZKZEliVjl3bVBfZldDajJMOXZtVkx0NVI4YWlwMkVFbXpMR0ZGQW9wOWxEcTM3QThSdk1fb2c?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T11:43:12.572199+00:00",
+   "title_ru": "Фьючерсы на Уолл-стрит растут, поскольку акции ИИ восстанавливаются; промежуточные экзамены в центре внимания",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-11-01",
@@ -8184,6 +8210,22 @@
     "date": "2026-10-30",
     "disclosed": "2026-11-02",
     "link": "https://www.sec.gov/Archives/edgar/data/1843236/000119312526442557/0001193125-26-442557-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "feaaf6463231e301",
+    "ticker": "STKH",
+    "company": "Steakholder Foods Ltd.",
+    "who": "Arik Kaufman",
+    "role": "CEO",
+    "type": "buy",
+    "value": 38167,
+    "shares": 96826,
+    "price": 0.39,
+    "plan": false,
+    "date": "2026-10-30",
+    "disclosed": "2026-11-02",
+    "link": "https://www.sec.gov/Archives/edgar/data/1828098/000121390026114637/0001213900-26-114637-index.htm"
    },
    {
     "src": "sec",
@@ -12152,22 +12194,6 @@
     "date": "2026-10-23",
     "disclosed": "2026-10-26",
     "link": "https://www.sec.gov/Archives/edgar/data/1824971/000119312526432207/0001193125-26-432207-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "1ee59bf8fba2e5df",
-    "ticker": "THRM",
-    "company": "Gentherm Inc",
-    "who": "Paul Anthony Mascarenas",
-    "role": "Director",
-    "type": "buy",
-    "value": 532600,
-    "shares": 20000,
-    "price": 26.63,
-    "plan": false,
-    "date": "2026-10-23",
-    "disclosed": "2026-10-26",
-    "link": "https://www.sec.gov/Archives/edgar/data/1625756/000119312526432218/0001193125-26-432218-index.htm"
    }
   ],
   "docs": {
@@ -12206,10 +12232,8 @@
    "0001213900-26-114604",
    "0001193125-26-442230",
    "0001213900-26-114606",
-   "0001193125-26-442201",
    "0001213900-26-114588",
    "0001213900-26-114610",
-   "0001009759-26-000011",
    "0001213900-26-114630",
    "0001493152-26-049492",
    "0001193125-26-442547",
@@ -12219,7 +12243,6 @@
    "0001493152-26-049498",
    "0001213900-26-114609",
    "0001731122-26-001386",
-   "0001899977-26-000010",
    "0001213900-26-114607",
    "0001193125-26-442229",
    "0001493152-26-049496",
@@ -12228,7 +12251,8 @@
    "0001214659-26-013568",
    "0001193125-26-442228",
    "0001697362-26-000021",
-   "0001193125-26-442511"
+   "0001193125-26-442511",
+   "0001213900-26-114637"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
