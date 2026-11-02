@@ -1,16 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "5ad39845e4d34e98": "2026-10-30T12:40:10.533250+00:00",
-  "0f5eefc8e8c04610": "2026-10-30T12:40:10.533250+00:00",
-  "51178286e76607e1": "2026-10-30T12:40:10.533250+00:00",
-  "2b2ffcee0a520537": "2026-10-30T12:40:10.533250+00:00",
-  "8e3f2f0867f6de29": "2026-10-30T12:40:10.533250+00:00",
-  "e613c8251895b464": "2026-10-30T12:40:10.533250+00:00",
-  "928226907b5963dd": "2026-10-30T12:45:10.499097+00:00",
-  "ef2aa5015ac37fa3": "2026-10-30T12:45:10.499097+00:00",
-  "2b70ae64cc4d02e3": "2026-10-30T12:45:10.499097+00:00",
-  "6cec15d7f7a5897c": "2026-10-30T12:50:10.564719+00:00",
   "a90e187ab8b9199d": "2026-10-30T13:00:10.541996+00:00",
   "1e1709a75112567a": "2026-10-30T13:00:10.541996+00:00",
   "60bbe3449c73988c": "2026-10-30T13:10:10.543091+00:00",
@@ -615,126 +605,10 @@
   "bf4bc3809a32acd2": "2026-11-02T12:33:12.622881+00:00",
   "d573a6157b7690e7": "2026-11-02T12:38:12.691095+00:00",
   "d98a82944221cf16": "2026-11-02T12:38:12.691095+00:00",
-  "3bde77e832b5f919": "2026-11-02T12:38:12.691095+00:00"
+  "3bde77e832b5f919": "2026-11-02T12:38:12.691095+00:00",
+  "e78d318710bcad05": "2026-11-02T12:48:12.632386+00:00"
  },
  "recent": [
-  {
-   "title": "US Employment Cost Growth Holds Steady, Stays Below Inflation",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/us-employment-cost-growth-holds-steady-stays-below-inflation",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-30T12:40:10.533250+00:00",
-   "title_ru": "Рост затрат на занятость в США держится стабильно, остается ниже инфляции",
-   "lead": "US labor cost growth held steady in the third quarter, suggesting that a subdued job market is not contributing to broader inflationary pressures.",
-   "lead_ru": "Рост стоимости рабочей силы в США в третьем квартале оставался стабильным, что свидетельствует о том, что приглушенный рынок труда не способствует более широкому инфляционному давлению.",
-   "tags": [
-    "inflation"
-   ]
-  },
-  {
-   "title": "Mexico Economic Growth Jumps to Fastest Pace in Three Years",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/mexico-economic-growth-jumps-to-fastest-pace-in-three-years",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-30T12:40:10.533250+00:00",
-   "title_ru": "Экономический рост Мексики ускорился до самых быстрых темпов за три года",
-   "lead": "Mexico’s economic growth accelerated in the third quarter, powered by public and private investments as well as robust exports.",
-   "lead_ru": "В третьем квартале экономический рост Мексики ускорился благодаря государственным и частным инвестициям, а также устойчивому экспорту."
-  },
-  {
-   "title": "Tech Rout Deepens as Earnings Stoke AI Fears",
-   "link": "https://www.bloomberg.com/news/videos/2026-10-30/the-opening-trade-10-30-2026-video",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-30T12:40:10.533250+00:00",
-   "title_ru": "Tech Rout углубляется, поскольку доходы подогревают страхи ИИ",
-   "lead": "Tech stocks and US equity futures fell as another batch of disappointing earnings intensified the selloff in the sector, as investors increasingly question the payoff from massive artificial intelligence spending.",
-   "lead_ru": "Технологические акции и фьючерсы на акции в США упали, поскольку еще одна партия разочаровывающих доходов усилила распродажу в этом секторе, поскольку инвесторы все чаще ставят под сомнение выгоду от массовых расходов на искусственный интеллект.",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "Indian retail investors tap $234 million in margin funding to trade Jio Platforms on debut day",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQVjNXRDBZN1hFaE5TMER3c1pFQ3lhY0cteF9rUjhOUHRnTDRFRHVQT1JtMVBPR1VYbVBEZVZXaDVERi1DSHBMLUFqVmhwMG1ZQzExcnFkNW92bldFVDRNMl9oZkJzdHNwak5kN0ZKQzdrUWFTQi1LUlJqd2ZlMGhXanFOb1V2M19UbzRzd005eDFSVTdkZlhtV2NXMnBDcTZ3Yk0zVGpIdEdURGpTZFlRTWVRejhERWZnLUtoWENGUDdaZndxSGI4?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-30T12:40:10.533250+00:00",
-   "title_ru": "Индийские розничные инвесторы привлекли $ 234 млн маржинального финансирования для торговли платформами Jio в день дебюта"
-  },
-  {
-   "title": "ECB Has Requested EU Leaders Start Search for Lane Successor",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/ecb-has-requested-eu-leaders-start-search-for-lane-successor",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T12:40:10.533250+00:00",
-   "title_ru": "ЕЦБ попросил лидеров ЕС начать поиск преемника полосы",
-   "lead": "The European Central Bank asked the region’s leaders to start choosing a successor to Chief Economist Philip Lane, opening the race for yet another vacancy on its Executive Board.",
-   "lead_ru": "Европейский центральный банк попросил лидеров региона начать выбирать преемника главного экономиста Филиппа Лейна, открыв гонку за еще одну вакансию в своем Исполнительном совете.",
-   "tags": [
-    "ECB"
-   ]
-  },
-  {
-   "title": "Canada Economy Tracks 1.3% Third Quarter Annualized Growth",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/canada-economy-tracks-1-3-third-quarter-annualized-growth",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-30T12:45:10.499097+00:00",
-   "title_ru": "Экономика Канады демонстрирует рост в годовом исчислении на 1,3% в третьем квартале",
-   "lead": "The Canadian economy is tracking 1.3% annualized growth between July and September, slowing down from a robust second quarter and coming in weaker than the Bank of Canada forecasted.",
-   "lead_ru": "Канадская экономика отслеживает рост на 1,3% в годовом исчислении в период с июля по сентябрь, замедляясь со второго квартала и становясь слабее, чем прогнозировал Банк Канады."
-  },
-  {
-   "title": "Canada's economic growth stalls again in August, September likely a decline",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNNWh2UG80VGRucFJSRy0yaFkwVGdzY1o2aThCVk9xM19ySVJVLTZCNl9ZN2ptQmkzanV4ZHBMTG01cXo5akliQlJSUzZkREtkSG9PcWhndnJGTEpjSk5TYU92bFJ0SWZjdWlGUmdPbUxsUXRaaXVvQ2dta1poalU0UUxkaGhFcDZiWGdxb09KOWFPbWtDX3pLQlduWFBqWDZuY2VMbGVuc2g0QndHR21QOGxfYjdfc3FvdXRN?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-30T12:45:10.499097+00:00",
-   "title_ru": "Экономический рост Канады снова замедлился в августе, в сентябре, вероятно, произойдет снижение"
-  },
-  {
-   "title": "Better than expected Eurozone growth supports ECB’s tightening path",
-   "link": "https://www.ft.com/content/6dc54eed-2904-487d-8656-85ac25111933",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 4,
-   "ts": "2026-10-30T12:45:10.499097+00:00",
-   "title_ru": "Рост еврозоны лучше, чем ожидалось, поддерживает путь ужесточения ЕЦБ",
-   "lead": "Third-quarter growth data shows currency bloc outperformed on the whole but figures for France come in weaker than expected",
-   "lead_ru": "Данные по росту за третий квартал показывают, что валютный блок превзошел в целом, но показатели по Франции оказались слабее, чем ожидалось",
-   "tags": [
-    "ECB"
-   ]
-  },
-  {
-   "title": "UAE shares decline on weak earnings and regional tensions",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQNVAxeVFhNDJWMV80WVNnYXBENEpxeElXU0JvWFdVeExYc0pCXzJCTVUzc1V1NWhZT0szQ1FBODRkN18zdGRzYl9mMzRXR0EyWEoxMGJSUVgwaUFlcnowVUMxbmJxMllERzhYUmg0OHlibXM4OVRZeGN1RVRydFNWc0ZodnZnRVRMc3JkY3d0cG84emNPNUdsSlIwNEVwWFhDd0F5eGNPUQ?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-30T12:50:10.564719+00:00",
-   "title_ru": "Доли ОАЭ снижаются на фоне слабых доходов и региональной напряженности",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Indian Stocks Top Performers in Asia as Anti-AI Appeal Grows",
    "link": "https://www.bloomberg.com/news/articles/2026-10-30/indian-stocks-top-performers-in-asia-as-anti-ai-appeal-grows",
@@ -12294,11 +12168,9 @@
    "0001213900-26-114611",
    "0001513845-26-000147",
    "0001193125-26-442230",
-   "0001213900-26-114606",
    "0001213900-26-114610",
    "0001213900-26-114630",
    "0001193125-26-442547",
-   "0001213900-26-114605",
    "0001193125-26-442514",
    "0001193125-26-442557",
    "0001213900-26-114609",
@@ -12314,8 +12186,7 @@
    "0001213900-26-114637"
   ],
   "errors": {
-   "senate": "HTTPError: HTTP Error 403: Forbidden",
-   "sec": "TimeoutError: The read operation timed out"
+   "senate": "HTTPError: HTTP Error 403: Forbidden"
   }
  },
  "cal_actuals": {
