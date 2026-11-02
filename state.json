@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "f5d8481468f9bfcc": "2026-10-30T05:09:13.568414+00:00",
   "0e98fb4b5f50f0f4": "2026-10-30T05:19:13.620204+00:00",
   "9296c2212bf1f97f": "2026-10-30T05:19:13.620204+00:00",
   "9e62c5c63f9fd0ad": "2026-10-30T05:24:13.561336+00:00",
@@ -598,22 +597,12 @@
   "b4f25a2429153ded": "2026-11-02T05:07:31.265067+00:00",
   "179d0902138966e8": "2026-11-02T05:07:31.265067+00:00",
   "2abe4cdc166cb95b": "2026-11-02T05:07:31.265067+00:00",
-  "1999b2ed81105454": "2026-11-02T05:07:31.265067+00:00"
+  "1999b2ed81105454": "2026-11-02T05:07:31.265067+00:00",
+  "c16ef873e52990b4": "2026-11-02T05:12:31.200492+00:00",
+  "de7d0b4050df1f78": "2026-11-02T05:12:31.200492+00:00",
+  "b417533e1fcdb2c8": "2026-11-02T05:12:31.200492+00:00"
  },
  "recent": [
-  {
-   "title": "BOJ keeps interest rates steady, signals further rate hikes",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPckM0NUFNY0hHSVN5Y3Z2OWR6Zk9yLTVIdEtxX1JIMkR2Sjd2c2VCY01BT3QzOWQ5WmF5QmNyTC03X1VsV2V1SVZRbk9mc2lxZG9FNnBaVm1fSWVpeFdJRUxnTXJTbFdxZnFNUEtBMjRxc2FpTFJVdk0yTkxmSFM2a3Njek9JcExYRldGRFVXSEpTY1hRam1CMVBpZ3Vrc1h1MGQ2UXdScnR4dUNlUzBOamEzcw?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 9,
-   "ts": "2026-10-30T05:09:13.568414+00:00",
-   "title_ru": "БАНК ЯПОНИИ сохраняет процентные ставки на стабильном уровне, сигнализируя о дальнейшем повышении ставок",
-   "tags": [
-    "rates"
-   ]
-  },
   {
    "title": "BOJ Holds Rate as Underlying Inflation Hits Target",
    "link": "https://www.bloomberg.com/news/videos/2026-10-30/boj-holds-rate-as-underlying-inflation-hits-target-video",
@@ -5355,6 +5344,49 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Gold rises on softer oil; Markets parse Fed signals",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNOXFkdElkaE5fVGZ6eUVZUFZnZjNuaUFoM2pPZ1ZJeEY4bmN0Wm9zSTRwLWpHcjNjLWRLRklsOV95a21mWjZWckhUam5qTVZVUzVDdWEwQXVOVWlpaHpCMktPLU41TGNkZjI3MFM1azNvSEtUai1pUGFpNi1mZFhISlB3TXFUSWtseGlhYmRISUpuWXdlVU5mLTJPRQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 6,
+   "ts": "2026-11-02T05:12:31.200492+00:00",
+   "title_ru": "Золото растет на более мягкой нефти; Рынки анализируют сигналы ФРС",
+   "tags": [
+    "Fed",
+    "oil",
+    "gold"
+   ]
+  },
+  {
+   "title": "Taiwan Said to Ease Exporter FX Rule After Record Stocks Exodus",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/taiwan-said-to-ease-exporter-fx-rule-after-record-stocks-exodus",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T05:12:31.200492+00:00",
+   "title_ru": "Тайвань заявил об упрощении валютного правила для экспортеров после рекордного исхода акций",
+   "lead": "Taiwan’s central bank is said to have eased restrictions on exporters selling US dollars to support the local currency after record foreign stock outflows helped make it Asia’s worst performer last month.",
+   "lead_ru": "Говорят, что Центральный банк Тайваня ослабил ограничения для экспортеров, продающих доллары США для поддержки местной валюты после того, как рекордный отток иностранных акций помог сделать его худшим в Азии в прошлом месяце.",
+   "tags": [
+    "dollar",
+    "markets"
+   ]
+  },
+  {
+   "title": "South Africa’s Low-Key Municipal Polls Pose Risks for Investors",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/south-africa-s-low-key-municipal-polls-pose-risks-for-investors",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T05:12:31.200492+00:00",
+   "title_ru": "Муниципальные опросы с низким рейтингом в Южной Африке представляют риски для инвесторов",
+   "lead": "South Africa’s nationwide municipal elections on Wednesday hold few fears for investors, if market indicators are anything to go by.",
+   "lead_ru": "Общенациональные муниципальные выборы в Южной Африке в среду вызывают у инвесторов мало опасений, если говорить о рыночных индикаторах."
   }
  ],
  "last_digest": "2026-11-01",
@@ -12261,10 +12293,8 @@
    "0001193532-26-000012",
    "0001697362-26-000021",
    "0001628280-26-068639",
-   "0001451763-26-000014",
    "0001493152-26-049498",
    "0001280486-26-000010",
-   "0001193125-26-442229",
    "0001213900-26-114605",
    "0002014293-26-000012",
    "0001824159-26-000015",
@@ -12274,6 +12304,7 @@
    "0001628280-26-068641",
    "0001213900-26-114608",
    "0001477932-26-006563",
+   "0000091440-26-000174",
    "0001628280-26-068637",
    "0001213900-26-114604",
    "0001493152-26-049496",
@@ -12284,14 +12315,15 @@
    "0001193125-26-442142",
    "0001193125-26-442230",
    "0001213900-26-114609",
+   "0001214659-26-013568",
    "0002025268-26-000008",
    "0002014386-26-000026",
    "0002014361-26-000040",
    "0001231919-26-001519",
    "0001213900-26-114611",
    "0001498270-26-000012",
-   "0000091440-26-000174",
-   "0001214659-26-013568",
+   "0001193125-26-442229",
+   "0001451763-26-000014",
    "0001213900-26-114588"
   ],
   "errors": {
