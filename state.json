@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "908c534e462dbf27": "2026-10-30T15:55:10.542544+00:00",
-  "ed2ceefe5d3c5eb8": "2026-10-30T15:55:10.542544+00:00",
   "ff7d9b873fd8c56f": "2026-10-30T16:00:10.549282+00:00",
   "9677e08b0c308333": "2026-10-30T16:05:10.608230+00:00",
   "7afb2188fd0eb16d": "2026-10-30T16:05:10.608230+00:00",
@@ -592,19 +590,10 @@
   "4e2fa7305fb86302": "2026-11-02T15:39:12.945428+00:00",
   "5abde9bd965e591d": "2026-11-02T15:39:12.945428+00:00",
   "e4a423667f4633c9": "2026-11-02T15:49:12.617816+00:00",
-  "a51518a474e7cf8c": "2026-11-02T15:49:12.617816+00:00"
+  "a51518a474e7cf8c": "2026-11-02T15:49:12.617816+00:00",
+  "4a0944fbeb8f6f74": "2026-11-02T15:59:12.678994+00:00"
  },
  "recent": [
-  {
-   "title": "Slower wage growth curbs US labor costs in third quarter",
-   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQeEVXWHp4aVktd2NvQ0Z2QUtIbmtYLXZIZFhBVkwzY3E3NkQzaFpjNjFjMEpjbHdTaXlSaUE2b1BNN3FFSEJrWFhBTTRMU2tpWndlWjZXQ1l0M3JkWjZKQ3Q3UllZRmVjSTNNSTFUWTlxQUw4elhGRTNVNW9VMWRxMEVOQkUwX2Rsdmd5TGd4bFd1VUk?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T15:55:10.542544+00:00",
-   "title_ru": "Замедление роста заработной платы сдерживает затраты на рабочую силу в США в третьем квартале"
-  },
   {
    "title": "Nasdaq faces $2 trillion wipeout in October as AI spending fears deepen",
    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPNkNDLXpLZ1A0VklROTJVenpDRlZBWE10ZE1qWWk4ZFVqalgzWWJFdThSd2ZKeUhDanVRQjRhVVVZZGlGZzY1UWYzLXRSZTNHNDNPTkZZRUFJazAzYmV6NzF3QUJtNjhkWHY5OHZNZWVsSFdyY0NScGJadnE3T0dPTWtBUXZOaDJPYWJuX1NOVXkwbGlQSW9MdjlXTlNQTzdLZEdzTHFsQ2gzaEcwTkNHZTNCNF9hMG9lazFHRXItSzg?oc=5",
@@ -5139,6 +5128,16 @@
    "tags": [
     "Russia"
    ]
+  },
+  {
+   "title": "Do Celebrities Endorsing Prediction Markets Not Have Enough Money Already?",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPRGRiSHQyNHZ2dWtROEdNQzdoNllXSHdrWXZycVNqVjR3Z19jbGI3Z0Uza3l0RFdwMi0tdEIzUGJGemtqaUZ0RWgtM1F0dmZZTlFRVU1CRjE0SkRWUWZHVUM4T0cwMlRzRF9ocS1NOGJLV0hwTEFJQi1RRm5fWlp6T3VGLWo5VjhHb2t4Z2JzWGlRaWlCTHBzQXpGMXc1cnNfTURiZUtJdlNicG94c3ZCQjRRb0o1Y1VCOUY0?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T15:59:12.678994+00:00",
+   "title_ru": "Знаменитости, поддерживающие рынки прогнозов, уже не имеют достаточно денег?"
   }
  ],
  "last_digest": "2026-11-01",
@@ -5161,7 +5160,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 1,
+  "Fed": 0,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
@@ -12023,10 +12022,12 @@
   },
   "checked": "2026-11-02T15:29:12.646087+00:00",
   "sec_seen": [
+   "0000313927-26-000340",
    "0001708055-26-000089",
-   "0001388767-26-000010",
    "0000890541-26-000014",
-   "0001976408-26-000924"
+   "0000313927-26-000336",
+   "0001976408-26-000924",
+   "0000313927-26-000338"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
