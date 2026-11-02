@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "962b7bf8aab1a526": "2026-10-30T01:44:13.633740+00:00",
   "be99a58bc3662e79": "2026-10-30T01:49:13.700984+00:00",
   "b4f25a2429153ded": "2026-10-30T01:49:13.700984+00:00",
   "e2533c2072d3b27d": "2026-10-30T01:49:13.700984+00:00",
@@ -603,7 +602,10 @@
   "15d3e786993e6f49": "2026-11-02T01:16:37.691037+00:00",
   "1e75bed8205a60ed": "2026-11-02T01:26:37.726567+00:00",
   "ec2f559ab733ee86": "2026-11-02T01:26:37.726567+00:00",
-  "783cf59c86d31d0b": "2026-11-02T01:36:37.720555+00:00"
+  "783cf59c86d31d0b": "2026-11-02T01:36:37.720555+00:00",
+  "caedd5e6f1e3aa51": "2026-11-02T01:41:37.691931+00:00",
+  "f750ae28250df8c3": "2026-11-02T01:46:37.747676+00:00",
+  "cbfcc6c9af042e1b": "2026-11-02T01:46:37.747676+00:00"
  },
  "recent": [
   {
@@ -5441,6 +5443,21 @@
    "tags": [
     "Russia"
    ]
+  },
+  {
+   "title": "PBOC Conducts Overnight Reverse Repo as Policy Anchor Shifts",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/pboc-conducts-overnight-reverse-repo-as-policy-anchor-shifts",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T01:46:37.747676+00:00",
+   "title_ru": "PBOC проводит ночное обратное репо по мере сдвига якоря политики",
+   "lead": "China’s central bank launched daily overnight reverse repurchase operations on Monday, kicking off a revamped liquidity framework that establishes the short-term tool as its primary policy anchor.",
+   "lead_ru": "Центральный банк Китая запустил ежедневные операции обратного выкупа овернайт в понедельник, запустив обновленную систему ликвидности, которая устанавливает краткосрочный инструмент в качестве основного якоря политики.",
+   "tags": [
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-11-01",
@@ -5461,7 +5478,7 @@
   "MarketWatch": 0,
   "Банк Англии": 0,
   "Bank of England": 0,
-  "Bank of Russia": 1,
+  "Bank of Russia": 0,
   "ECB": 0,
   "Fed": 0,
   "IMF": 0,
