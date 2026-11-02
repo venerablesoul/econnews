@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "60bbe3449c73988c": "2026-10-30T13:10:10.543091+00:00",
-  "ef8cb05843f2ffbc": "2026-10-30T13:10:10.543091+00:00",
-  "e043b55e0631a938": "2026-10-30T13:10:10.543091+00:00",
   "a3f92894061ab1d4": "2026-10-30T13:15:10.552871+00:00",
   "b41674ee58e4a2d1": "2026-10-30T13:20:10.541945+00:00",
   "bdf9accb07eeefb1": "2026-10-30T13:20:10.541945+00:00",
@@ -608,28 +605,6 @@
   "ef4b254a8592245e": "2026-11-02T12:58:12.586324+00:00"
  },
  "recent": [
-  {
-   "title": "Japan’s Omron Targets India for Manufacturing, Exports Push",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOV2xtWGh3QUxLcERjQlBzNXpkazI2MlZjeE5meFpWdUE3SFA2dE5kSzJ6Qk9Bb2h3Vmd5NXU3RGhnLTZHTkFPRkI3OWdUc29uamx0RDRUQTl3d2cxdVVjU19KbWFIdjVZVmlodS1aNUFITWx1MU5UbV8taEkzcFNibno4OXc1T0ZkR2pWUXp3MWkwLVJ2M095Q2E2SXJJOTFFdW0zNUlOZ3NERUVXN1E?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-30T13:10:10.543091+00:00",
-   "title_ru": "Японская компания Omron нацелилась на Индию в сфере производства и экспорта"
-  },
-  {
-   "title": "Wall Street Turns Ruthless as Earnings Misses Fuel Deep Selloffs",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/wall-street-turns-ruthless-as-earnings-misses-fuel-deep-selloffs",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T13:10:10.543091+00:00",
-   "title_ru": "Уолл-стрит становится безжалостной, поскольку нехватка прибыли приводит к глубоким распродажам",
-   "lead": "Equity investors are meting out some of the harshest punishments ever for companies that miss expectations, just as strategists sound the alarm that earnings growth has likely peaked.",
-   "lead_ru": "Инвесторы в акции подвергают одни из самых суровых наказаний когда-либо компаниям, которые не оправдывают ожиданий, в то время как стратеги бьют тревогу о том, что рост прибыли, вероятно, достиг пика."
-  },
   {
    "title": "German Inflation Slows Sharply on Renewed Fuel-Tax Relief",
    "link": "https://www.bloomberg.com/news/articles/2026-10-30/german-inflation-slows-sharply-on-renewed-fuel-tax-relief",
@@ -8189,6 +8164,22 @@
    },
    {
     "src": "sec",
+    "id": "bec5561767c62788",
+    "ticker": "CLH",
+    "company": "CLEAN HARBORS INC",
+    "who": "Karyn Polito",
+    "role": "Director",
+    "type": "buy",
+    "value": 39354,
+    "shares": 125,
+    "price": 314.83,
+    "plan": false,
+    "date": "2026-10-29",
+    "disclosed": "2026-11-02",
+    "link": "https://www.sec.gov/Archives/edgar/data/1965457/000196545726000007/0001965457-26-000007-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "dee9659a410d4d01",
     "ticker": "OCFC",
     "company": "OCEANFIRST FINANCIAL CORP",
@@ -12106,22 +12097,6 @@
     "date": "2026-10-23",
     "disclosed": "2026-10-26",
     "link": "https://www.sec.gov/Archives/edgar/data/1655923/000149315226048562/0001493152-26-048562-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "f54a79ae5e3132ab",
-    "ticker": "AVPT",
-    "company": "AvePoint, Inc.",
-    "who": "Brian Michael Brown",
-    "role": "General Counsel",
-    "type": "sell",
-    "value": 574700,
-    "shares": 35000,
-    "price": 16.42,
-    "plan": true,
-    "date": "2026-10-23",
-    "disclosed": "2026-10-26",
-    "link": "https://www.sec.gov/Archives/edgar/data/1865783/000143774926033535/0001437749-26-033535-index.htm"
    }
   ],
   "docs": {
@@ -12168,8 +12143,8 @@
    "0001731122-26-001386",
    "0001193125-26-442229",
    "0001193125-26-442575",
+   "0001965457-26-000007",
    "0001214659-26-013568",
-   "0001193125-26-442228",
    "0001697362-26-000021",
    "0001193125-26-442511",
    "0001213900-26-114637"
