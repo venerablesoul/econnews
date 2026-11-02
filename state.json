@@ -595,7 +595,9 @@
   "9cad5430c64dbcd4": "2026-11-02T00:46:37.680469+00:00",
   "d1e58c025708a8cd": "2026-11-02T00:46:37.680469+00:00",
   "e0390dd6fd2179df": "2026-11-02T00:51:37.726000+00:00",
-  "5f72a0f285194b95": "2026-11-02T00:51:37.726000+00:00"
+  "5f72a0f285194b95": "2026-11-02T00:51:37.726000+00:00",
+  "8c5ced6e89d3fa95": "2026-11-02T01:06:37.715981+00:00",
+  "5af5c36db7f04727": "2026-11-02T01:06:37.715981+00:00"
  },
  "recent": [
   {
@@ -5335,6 +5337,30 @@
    "score": 4,
    "ts": "2026-11-02T00:51:37.726000+00:00",
    "title_ru": "Рост производственной активности в Южной Корее замедлился до 8-месячного минимума, показывает PMI"
+  },
+  {
+   "title": "IMF Staff completes the 2026 Article IV Consultation and reaches Staff-Level Agreement with Honduras on the Sixth Review of the Extended Credit Facility and Extended Fund",
+   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPX0Rka2RZUkZmNmxWQ19hQmNYdkpOTEFDVGNEdWxSSGVtRHpQc0ZFU0hFV1Y2aUcyemVYNUxBNlRtSlJZSms2MENDb2pURVBKTTh0YVllS0w3cm5NLVlrbzJRVzl4ZU9BRjBxM29GLTJfeEVfdmE0aXRWY3liNXZvRXpPRC12VHBDT2NwVlZaMUtsYjdWSU1OdG1jV3N1MGpiSGdUbm5HX3Z2WHdOSnRuWjRKZW1JbGoxRlhXWVJYTi16V0lzd1VOM1NIZjNOX2c?oc=5",
+   "sources": [
+    "IMF"
+   ],
+   "score": 5,
+   "ts": "2026-11-02T01:06:37.715981+00:00",
+   "title_ru": "Сотрудники МВФ завершают консультации по Статье IV 2026 года и достигают Соглашения на уровне персонала с Гондурасом о шестом пересмотре Расширенного кредитного механизма и Расширенного фонда"
+  },
+  {
+   "title": "Dollar rangebound ahead of US midterms; bitcoin reels from crypto heist",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPb2NfWVhRd1dsZXVELVl6emxWenVBSzdWTFVpcjlPaUtVNmgwbklnaHctbWF2VjdTTTJxQ3c4NzZZSGpSTG1QaThQQUZHY1RmeENqcTZNend0eDBla0dFNThjejRfM2dTdm1JYW9vd0duUnZFVUNWQUhETi1RVmZxNWxBZ2gzZEdBWTdGNnVqMmxVeUlKVUZPX0ttc3pnLUUxOGpoa1hpdVZNWWZrVkx6c3FoTkluMDRB?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-11-02T01:06:37.715981+00:00",
+   "title_ru": "Диапазон доллара опережает промежуточные выборы в США; биткоин отбивается от криптографического ограбления",
+   "tags": [
+    "dollar",
+    "crypto"
+   ]
   }
  ],
  "last_digest": "2026-11-01",
@@ -5355,7 +5381,7 @@
   "MarketWatch": 0,
   "Банк Англии": 0,
   "Bank of England": 0,
-  "Bank of Russia": 1,
+  "Bank of Russia": 0,
   "ECB": 0,
   "Fed": 0,
   "IMF": 0,
