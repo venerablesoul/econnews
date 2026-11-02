@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "416d4a5c586eccae": "2026-10-30T17:45:57.460286+00:00",
-  "6cc762211783e8cd": "2026-10-30T17:45:57.460286+00:00",
   "82297753eb7124b3": "2026-10-30T17:55:57.411989+00:00",
   "5766ffdcb4e3eeac": "2026-10-30T18:15:57.387490+00:00",
   "afa1a9b94de69d30": "2026-10-30T18:30:57.623229+00:00",
@@ -585,40 +583,10 @@
   "51d654605c9f3604": "2026-11-02T17:39:12.644048+00:00",
   "672f211c7242f5f3": "2026-11-02T17:39:12.644048+00:00",
   "620b0f93a10bfd14": "2026-11-02T17:39:12.644048+00:00",
-  "7c40988d806c8632": "2026-11-02T17:44:12.716748+00:00"
+  "7c40988d806c8632": "2026-11-02T17:44:12.716748+00:00",
+  "4d92b8f41c6b7916": "2026-11-02T17:49:12.723272+00:00"
  },
  "recent": [
-  {
-   "title": "Fed’s Logan Sees Two More Hikes, But Says Pace Can Be Gradual",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/fed-s-logan-sees-two-more-hikes-but-says-pace-can-be-gradual",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-30T17:45:57.460286+00:00",
-   "title_ru": "Логан из ФРС видит еще два повышения, но говорит, что темп может быть постепенным",
-   "lead": "Federal Reserve Bank of Dallas President Lorie Logan said she continues to see the need for at least two more quarter-percentage-point interest-rate hikes, but that the US central bank can move gradually to help households…",
-   "lead_ru": "Президент Федерального резервного банка Далласа Лори Логан заявила, что продолжает видеть необходимость как минимум еще двух повышений процентных ставок на четверть процентного пункта, но что центральный банк США может постепенно двигаться, чтобы помочь домохозяйствам...",
-   "tags": [
-    "Fed",
-    "rates"
-   ]
-  },
-  {
-   "title": "American workers are finding their take-home pay isn’t keeping up with inflation, with their wallets ‘stretched thinner and thinner’",
-   "link": "https://www.marketwatch.com/story/american-workers-are-finding-their-take-home-pay-isnt-keeping-up-with-inflation-with-their-wallets-stretching-thinner-and-thinner-6a1af690?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T17:45:57.460286+00:00",
-   "title_ru": "Американские рабочие обнаруживают, что их заработная плата не поспевает за инфляцией, а их кошельки «растягиваются все тоньше и тоньше»",
-   "lead": "Worker compensation grows slower than inflation for second straight quarter",
-   "lead_ru": "Компенсация работникам растет медленнее, чем инфляция, второй квартал подряд",
-   "tags": [
-    "inflation"
-   ]
-  },
   {
    "title": "Pemex Posts $573 Million Loss Even as Oil Prices Have Surged",
    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQcGZySzhfRGtvR1pwVHc4dnkzRUJPNVNMLUtfNml1bGxlMDBmWW1XaUFndjJxRVVEenlpa2JmMWJuaE80MDJhZkh0REhCUE5SVU1sYklqN1RnQlpCZVBTRWp4OWMzcjVMczZJS0lacl9aSXZKUlpObjd0ZndpMnc4R2EyTXJ6WVFzTUFtRHIzVnhnY2pXaVZFYUtoWlI5cGptb0RjMGszM09xYTBjUzNJ?oc=5",
@@ -5050,6 +5018,19 @@
    "lead_en": "In the third quarter, as follows from the monitoring results of the Russian Union of Industrialists and Entrepreneurs, enterprises most often complained about a drop in demand for products, a lack of working capital and failure to fulfill...",
    "tags": [
     "Russia"
+   ]
+  },
+  {
+   "title": "FTSE 100 subdued as energy, healthcare stocks limit broader gains",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPalhUUG9VTkRaNkpZM1BUTlpIYVM0WmJMU3UxZHpaSm5KRUhDdmNNTUVNbEJncFYyS1RqUVZmd2RaMUh3eUVINWt6Wm9WeGgzZmFoR2U1TzlnZ3dkUFVkdjJIclFHaEc2X2NWYnlLRnZGREs3RDg0WWdZbEJWc3d1RERMZHZESnhDb05HQXVlMjRCbnNxNVM4TFpvdzVPQ1hDMVlXVGpNMmx0Q0gzbXVFZGl3UERXYjllcmx5MUEyeGVHUQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T17:49:12.723272+00:00",
+   "title_ru": "Индекс FTSE 100 снизился, так как акции компаний энергетики и здравоохранения ограничивают более широкий рост",
+   "tags": [
+    "markets"
    ]
   }
  ],
@@ -11935,15 +11916,13 @@
   },
   "checked": "2026-11-02T17:39:12.644048+00:00",
   "sec_seen": [
-   "0001628280-26-068746",
    "0001628280-26-068734",
    "0001628280-26-068728",
    "0001464277-26-000005",
-   "0001628280-26-068723",
    "0001555392-26-000004",
    "0001932848-26-000023",
    "0001437749-26-034329",
-   "0001193125-26-443094"
+   "0001628280-26-068746"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
