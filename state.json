@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "68e431b161dbab32": "2026-10-30T12:35:10.555318+00:00",
-  "23873157ced92387": "2026-10-30T12:35:10.555318+00:00",
   "5ad39845e4d34e98": "2026-10-30T12:40:10.533250+00:00",
   "0f5eefc8e8c04610": "2026-10-30T12:40:10.533250+00:00",
   "51178286e76607e1": "2026-10-30T12:40:10.533250+00:00",
@@ -614,32 +612,12 @@
   "a4762b582e8ad5ca": "2026-11-02T12:13:12.620832+00:00",
   "a40d64394e1aa2f8": "2026-11-02T12:33:12.622881+00:00",
   "f0273bf516adf51a": "2026-11-02T12:33:12.622881+00:00",
-  "bf4bc3809a32acd2": "2026-11-02T12:33:12.622881+00:00"
+  "bf4bc3809a32acd2": "2026-11-02T12:33:12.622881+00:00",
+  "d573a6157b7690e7": "2026-11-02T12:38:12.691095+00:00",
+  "d98a82944221cf16": "2026-11-02T12:38:12.691095+00:00",
+  "3bde77e832b5f919": "2026-11-02T12:38:12.691095+00:00"
  },
  "recent": [
-  {
-   "title": "Employment Cost Index News Release",
-   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9LbE81dW9LaUc3Unp0RTBDWDN4R3VqbTJOMDRQYzZLMk00M1I3X2JOM3FmT1daNFhYWUlVeXRLN0FucGs2Sm1mYnJVemt1UlVvUlBucjhhWi1FRTc1TVVTWkF6TXE1QnZXY2c?oc=5",
-   "sources": [
-    "US Labor Statistics (BLS)"
-   ],
-   "score": 4,
-   "ts": "2026-10-30T12:35:10.555318+00:00",
-   "title_ru": "Пресс-релиз по индексу затрат на трудоустройство"
-  },
-  {
-   "title": "Exxon and Chevron Beat Estimates as Oil Refining Profits Soar",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPSThtNVFEM3B0RE52Ujl2M1B0ajNVOURZS1k4RGNWUnVKamNiZU1hUU5nUXRjc2RoRVZ0eUZidl9aX1RyYkpHck81ZktvbnRKdHYwOUF5ZXFVcFBCUWE3WWpkSWh2RDQtWHdZZ3RFR0c4SVBQYk0tSWlFWWw3ODhyT3pQcXZxUWRGV195OHJPUUh5ZEc1ZTd2ZWtjWTBrM0c0dERfS2RITDVwT2g3dFc2QTFiX3laZTVfaXVhWW1aeGwxM1h0Y3c?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T12:35:10.555318+00:00",
-   "title_ru": "Оценки Exxon и Chevron Beat по мере роста прибыли от нефтепереработки",
-   "tags": [
-    "oil"
-   ]
-  },
   {
    "title": "US Employment Cost Growth Holds Steady, Stays Below Inflation",
    "link": "https://www.bloomberg.com/news/articles/2026-10-30/us-employment-cost-growth-holds-steady-stays-below-inflation",
@@ -5391,6 +5369,43 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Fed May Need 4 or 5 Rate Hikes in Total , Economist Dutta Says",
+   "link": "https://www.bloomberg.com/news/videos/2026-11-02/fed-may-need-total-of-4-or-5-rate-hikes-economist-dutta-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 7,
+   "ts": "2026-11-02T12:38:12.691095+00:00",
+   "title_ru": "В общей сложности ФРС может потребоваться 4 или 5 повышений ставок, говорит экономист Датта",
+   "lead": "Neil Dutta, head of US economic research at Renaissance Macro Research, expects a change to the Federal Reserve’s inflation expectations in early 2027 and sees the need for a total of 4 or 5 interest-rate hikes from the central…",
+   "lead_ru": "Нил Датта, руководитель отдела экономических исследований США в Renaissance Macro Research, ожидает изменения инфляционных ожиданий Федеральной резервной системы в начале 2027 года и видит необходимость в общей сложности 4 или 5 повышений процентных ставок центральным…",
+   "tags": [
+    "Fed",
+    "rates",
+    "inflation"
+   ]
+  },
+  {
+   "title": "India's IndiGo may fast-track some overseas growth as westward flights disrupted",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQdTBxbDhJNUFYeFBuX01mZmdPNDFCYjBmQ3NIUG80ckZWZEZtOEtqWlcweU5JV3p5TXNIUWZnYVVpVWJTa1pPVlRfamNNcTJ6aXFGcEhSUnpYRGl2VF82YkRzRnlJVHM3NnhWSEwwZG1YNzdud1UyanNHYlpodzdGNkp2Z1VBLXV5TnVEUGl3MHA2TDYwVU5xZUhvTXBNUGk3VWFleXlLNGttaGxCQUdfcldybEdDWS1sSi1maVpBNzdRUQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T12:38:12.691095+00:00",
+   "title_ru": "Индийская IndiGo может ускорить рост за рубежом, поскольку рейсы на запад отменены"
+  },
+  {
+   "title": "Capital.com receives approval for Singapore capital markets licence",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQcmlvU05BSTA0aXhPcXJWUHBkQ3pma1FvZGhXVUpYckFfZ242WG9Pc25qMVB6aEotcDZxMGVkb0lLZWlwZzJMeGxGUXd0ZTF6QVRLalRMS0EyQVBmT0dhSHhVXzFSaWhHYm9raXd5SDEwNV94eG9TZ1IwSU9lZWgzV01FZnZpMGk0dnFXZndQZlFvM1JYbVdHZ0VRMmtlT1ZpamV6MjBpRW5EdS1wX25jNnRmaF80VUU5?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-02T12:38:12.691095+00:00",
+   "title_ru": "Capital.com получил одобрение на получение лицензии на рынки капитала Сингапура"
   }
  ],
  "last_digest": "2026-11-01",
@@ -12299,7 +12314,8 @@
    "0001213900-26-114637"
   ],
   "errors": {
-   "senate": "HTTPError: HTTP Error 403: Forbidden"
+   "senate": "HTTPError: HTTP Error 403: Forbidden",
+   "sec": "TimeoutError: The read operation timed out"
   }
  },
  "cal_actuals": {
