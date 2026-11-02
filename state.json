@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "816b77ca472dfec1": "2026-10-30T11:04:40.390015+00:00",
-  "f7c020ef3dea170b": "2026-10-30T11:04:40.390015+00:00",
   "a5b77a69f6e63586": "2026-10-30T11:09:40.367576+00:00",
   "2c45ee29dd17b271": "2026-10-30T11:14:40.412416+00:00",
   "634ed43f793359ce": "2026-10-30T11:14:40.412416+00:00",
@@ -610,36 +608,10 @@
   "183544ad06c36fd2": "2026-11-02T10:48:12.591682+00:00",
   "ddcfae13214a9b87": "2026-11-02T10:53:12.595606+00:00",
   "356518f1a5cfc5d9": "2026-11-02T10:58:12.563616+00:00",
-  "3a158e8d11035a59": "2026-11-02T11:03:12.597277+00:00"
+  "3a158e8d11035a59": "2026-11-02T11:03:12.597277+00:00",
+  "2ddb0433277f6120": "2026-11-02T11:08:12.604017+00:00"
  },
  "recent": [
-  {
-   "title": "Lagarde’s Long Goodbye to ECB Is Finally Ending",
-   "link": "https://www.bloomberg.com/news/newsletters/2026-10-30/lagarde-s-long-goodbye-to-ecb-is-finally-ending",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-30T11:04:40.390015+00:00",
-   "title_ru": "Долгое прощание Лагард с ЕЦБ наконец-то заканчивается",
-   "lead": "The Frenchwoman will now exit as president in February, leaving a mixed legacy.",
-   "lead_ru": "Француженка уйдет с поста президента в феврале, оставив неоднозначное наследие.",
-   "tags": [
-    "ECB"
-   ]
-  },
-  {
-   "title": "Euro Set For Worst Month Versus Pound Since 2022 on French Woes",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-30/euro-set-for-worst-month-versus-pound-since-2022-on-french-woes",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-30T11:04:40.390015+00:00",
-   "title_ru": "Евро настроен на худший месяц по сравнению с фунтом с 2022 года из-за проблем во Франции",
-   "lead": "The euro is set for its weakest month in more than four years compared to the pound as concern about France’s outlook weighs on the common currency.",
-   "lead_ru": "Для евро ожидается самый слабый месяц за более чем четыре года по сравнению с фунтом, поскольку обеспокоенность по поводу перспектив Франции оказывает давление на единую валюту."
-  },
   {
    "title": "AI Preparedness Index (AIPI) - AI Preparedness Index",
    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9BTmNOUFRwcUtrLXhVQ2ctZjBhcVlGaHdtUFNNbUFDRzJVUGs0NjdwZkRhcWVvZTF4RURTTUg4bHlSb0U2aS1Ra1lhQlZfVjBkdDlBLUg3N1lfbXhCN0NQc2Ztc04?oc=5",
@@ -5325,6 +5297,23 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Chile Bond Investors Turn to Inflation-Linked Notes as Oil Soars",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-02/chile-bond-investors-turn-to-inflation-linked-notes-as-oil-soars",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 8,
+   "ts": "2026-11-02T11:08:12.604017+00:00",
+   "title_ru": "Инвесторы в чилийские облигации обращаются к привязанным к инфляции облигациям, поскольку нефть взлетает",
+   "lead": "Chilean fixed income investors are flocking to index-linked notes as the war in Iran drags on into its nine month, pushing oil prices to levels not seen since April and stoking inflation expectations.",
+   "lead_ru": "Чилийские инвесторы с фиксированным доходом стекаются к индексированным облигациям, поскольку война в Иране затягивается на девять месяцев, подталкивая цены на нефть к уровням, не наблюдавшимся с апреля, и разжигая инфляционные ожидания.",
+   "tags": [
+    "inflation",
+    "oil",
+    "bonds"
+   ]
   }
  ],
  "last_digest": "2026-11-01",
@@ -5345,7 +5334,7 @@
   "MarketWatch": 0,
   "Банк Англии": 0,
   "Bank of England": 0,
-  "Bank of Russia": 0,
+  "Bank of Russia": 1,
   "ECB": 0,
   "Fed": 0,
   "IMF": 0,
@@ -12209,52 +12198,36 @@
   },
   "checked": "2026-11-02T10:13:12.565123+00:00",
   "sec_seen": [
-   "0002014361-26-000040",
    "0001213900-26-114608",
    "0001493152-26-049494",
-   "0001231919-26-001519",
    "0001213900-26-114611",
    "0001213900-26-114604",
    "0001193125-26-442230",
    "0001213900-26-114606",
-   "0001477932-26-006563",
    "0001193125-26-442201",
-   "0001451763-26-000014",
-   "0001823940-26-000012",
    "0001213900-26-114610",
    "0001213900-26-114588",
    "0001823923-26-000015",
    "0001009759-26-000011",
    "0001628280-26-068639",
-   "0001193125-26-442119",
    "0001493152-26-049492",
    "0001193125-26-442196",
    "0001213900-26-114605",
-   "0001193125-26-442142",
+   "0001193125-26-442514",
    "0001493152-26-049498",
    "0001213900-26-114609",
-   "0000091440-26-000174",
-   "0001193532-26-000012",
-   "0002014293-26-000012",
    "0001731122-26-001386",
    "0001899977-26-000010",
    "0001213900-26-114607",
-   "0002014386-26-000026",
    "0001193125-26-442229",
    "0001628280-26-068641",
-   "0001280486-26-000010",
    "0001493152-26-049496",
    "0001213900-26-114603",
-   "0001104659-26-120789",
    "0001628280-26-068637",
-   "0001193125-26-442116",
    "0001193125-26-442228",
    "0001214659-26-013568",
-   "0002025268-26-000008",
    "0001697362-26-000021",
-   "0001824159-26-000015",
-   "0001498270-26-000012",
-   "0001223260-26-000011"
+   "0001193125-26-442511"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
