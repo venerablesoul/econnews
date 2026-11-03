@@ -293,6 +293,9 @@ const EN = {
   rem_head: "☀️ <b>Your watchlist today</b>\n",
   rem_earn: (s, n, when, eps) => `📊 <b>${s}</b> ${n} reports ${when}${eps}`,
   rem_today: "today", rem_tomorrow: "tomorrow",
+  bot_down: (m) => `⚠️ <b>The news bot has gone quiet</b>: no updates for ${m} min.\n`
+    + "Check GitHub → Actions → Economic news (or the server it runs on).",
+  bot_back: (m) => `✅ <b>The news bot is back</b> after ${m} min without updates.`,
 };
 
 const RU = {
@@ -566,6 +569,9 @@ const RU = {
   rem_head: "☀️ <b>Ваш список сегодня</b>\n",
   rem_earn: (s, n, when, eps) => `📊 <b>${s}</b> ${n} отчитывается ${when}${eps}`,
   rem_today: "сегодня", rem_tomorrow: "завтра",
+  bot_down: (m) => `⚠️ <b>Бот новостей молчит</b>: нет обновлений ${m} мин.\n`
+    + "Проверьте GitHub → Actions → Economic news (или сервер, где он запущен).",
+  bot_back: (m) => `✅ <b>Бот новостей снова работает</b> после ${m} мин без обновлений.`,
 };
 
 const TEXTS = { en: EN, ru: RU };

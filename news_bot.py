@@ -1325,20 +1325,42 @@ def load_dotenv(path):
         pass
 
 
-# what the bot writes: only it changes these files, so on a clash its own versions win
+# what the bot writes: only it changes these files
 DATA_PATHS = ("state.json", "docs/data.json", "docs/stocks.json", "docs/rates.json", "docs/fin", "docs/co", "docs/opt",
               "docs/options.json", "docs/macro.json", "docs/moex.json", "docs/ipo.json", "docs/wpe.json",
               "docs/auctions.json")
+# The data does not go into main: the whole site (docs/ — its code from main plus the data) and state.json are
+# pushed as ONE commit that replaces the data branch each time. main keeps only code, and the data branch never
+# grows a history. GitHub Pages serves the site from that branch (Settings → Pages → gh-pages, folder /docs).
+DATA_BRANCH = "gh-pages"
+SITE_PATHS = ("docs", "state.json")
+_published = {}   # branch -> the last tree pushed by this process (to skip pushes when nothing changed)
+
+
+def _copy_data(src_root, dst_root):
+    import shutil
+    for f in DATA_PATHS:
+        src, dst = os.path.join(src_root, f), os.path.join(dst_root, f)
+        if os.path.isdir(src):
+            shutil.copytree(src, dst, dirs_exist_ok=True)
+        elif os.path.isfile(src):
+            os.makedirs(os.path.dirname(dst) or ".", exist_ok=True)
+            shutil.copy2(src, dst)
 
 
 def git_sync(stage, repo):
-    """Server mode: pull changes from GitHub before a run, push state.json and the page data after it."""
+    """Server mode.
+    pull — new code from GitHub (main); on a fresh checkout also the bot's latest data from the data branch.
+           The bot's own data files are never touched by the pull.
+    push — the site and state.json as one commit, force-pushed to the data branch (no commits to main)."""
     import shutil
     import subprocess
     import tempfile
 
-    def git(*a):
-        return subprocess.run(["git", "-C", repo, *a], capture_output=True, text=True, timeout=120)
+    branch = os.environ.get("DATA_BRANCH", "").strip() or DATA_BRANCH
+
+    def git(*a, env=None, stdin=None):
+        return subprocess.run(["git", "-C", repo, *a], capture_output=True, text=True, timeout=120, env=env, input=stdin)
 
     def heal():
         # a rebase that stopped half-way leaves HEAD detached and blocks every later pull and push
@@ -1346,45 +1368,74 @@ def git_sync(stage, repo):
             print("  ! git: aborting a stuck rebase")
             git("rebase", "--abort")
 
-    def commit():
-        for f in DATA_PATHS:
-            if os.path.exists(os.path.join(repo, f)):
-                git("add", f)
-        if git("diff", "--cached", "--quiet").returncode == 0:
-            return False
-        git("-c", "user.name=news-bot", "-c", "user.email=news-bot@users.noreply.github.com", "commit", "-q", "-m", "news update")
-        return True
-
     heal()
-    if stage == "pull":
-        r = git("pull", "--rebase", "--autostash", "-q")
-        if r.returncode:
-            print("  ! git pull:", (r.stderr or r.stdout).strip()[:300])
-            heal()
-        return
-    if not commit() and git("status", "-sb").stdout.find("ahead") < 0:
-        return  # nothing to push
-    for _ in range(3):
-        r = git("push", "-q")
-        if r.returncode == 0:
-            return
-        # GitHub moved on: take its latest state and put the bot's current data files on top (no rebase to get stuck in)
-        tmp = tempfile.mkdtemp()
-        try:
+    tmp = tempfile.mkdtemp()
+    try:
+        if stage == "pull":
+            _copy_data(repo, tmp)   # the bot's data is safe here whatever the pull does
             for f in DATA_PATHS:
-                src = os.path.join(repo, f)
-                if os.path.isdir(src):
-                    shutil.copytree(src, os.path.join(tmp, f))
-                elif os.path.exists(src):
-                    os.makedirs(os.path.dirname(os.path.join(tmp, f)), exist_ok=True)
-                    shutil.copy2(src, os.path.join(tmp, f))
-            git("fetch", "-q", "origin")
-            git("reset", "-q", "--hard", "@{upstream}")
-            shutil.copytree(tmp, repo, dirs_exist_ok=True)
-        finally:
-            shutil.rmtree(tmp, ignore_errors=True)
-        commit()
-    print("  ! git push failed:", (r.stderr or r.stdout).strip()[:300])
+                git("checkout", "-q", "HEAD", "--", f)   # data still tracked in main: back to HEAD, so no clash
+            r = git("pull", "--rebase", "--autostash", "-q")
+            if r.returncode:
+                print("  ! git pull:", (r.stderr or r.stdout).strip()[:300])
+                heal()
+                # e.g. old data commits of the bot that clash with main: take GitHub's main (the data is in tmp)
+                if git("fetch", "-q", "origin").returncode == 0:
+                    git("reset", "-q", "--hard", "@{upstream}")
+            _copy_data(tmp, repo)
+            # a fresh checkout (GitHub Actions) has no state.json, or only the old copy committed to main:
+            # then the bot's latest data comes from the data branch. A bot that already runs here keeps its own.
+            state = os.path.join(repo, "state.json")
+            fresh = not os.path.exists(state) or (
+                git("ls-files", "--error-unmatch", "state.json").returncode == 0
+                and git("diff", "--quiet", "HEAD", "--", "state.json").returncode == 0)
+            if fresh:
+                _pull_data(git, repo, branch, os.path.join(tmp, "index"))
+            return
+
+        # push: a temporary index, so main's own index and working tree stay as they are
+        paths = [p for p in SITE_PATHS if os.path.exists(os.path.join(repo, p))]
+        if not paths:
+            return
+        env = {**os.environ, "GIT_INDEX_FILE": os.path.join(tmp, "index")}
+        r = git("add", "-f", "-A", "--", *paths, env=env)
+        tree = git("write-tree", env=env).stdout.strip() if r.returncode == 0 else ""
+        if not tree:
+            print("  ! git: could not pack the site:", (r.stderr or r.stdout).strip()[:300])
+            return
+        if _published.get(branch) == tree:
+            return  # nothing changed since the last push
+        commit = git("-c", "user.name=news-bot", "-c", "user.email=news-bot@users.noreply.github.com",
+                     "commit-tree", tree, "-m", "site data").stdout.strip()
+        for _ in range(3):
+            r = git("push", "-f", "-q", "origin", f"{commit}:refs/heads/{branch}")
+            if r.returncode == 0:
+                _published[branch] = tree
+                return
+            time.sleep(3)
+        print("  ! git push failed:", (r.stderr or r.stdout).strip()[:300])
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+
+
+def _pull_data(git, repo, branch, index):
+    """The bot's data from the data branch into the working folder (only DATA_PATHS; the code stays main's)."""
+    ref = "refs/remotes/origin/" + branch
+    if git("fetch", "-q", "origin", f"+refs/heads/{branch}:{ref}").returncode:
+        print(f"  (no {branch} branch on GitHub yet: the data stays as it is)")
+        return False
+    names = [n for n in git("ls-tree", "-r", "-z", "--name-only", ref, "--", *DATA_PATHS).stdout.split("\0") if n]
+    if not names:
+        return False
+    env = {**os.environ, "GIT_INDEX_FILE": index}
+    if git("read-tree", ref, env=env).returncode:
+        return False
+    r = git("checkout-index", "-f", "-z", "--stdin", env=env, stdin="\0".join(names))
+    if r.returncode:
+        print("  ! git: could not restore the data:", (r.stderr or r.stdout).strip()[:300])
+        return False
+    print(f"  data restored from {branch}: {len(names)} files")
+    return True
 
 
 def code_hash(repo):

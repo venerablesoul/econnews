@@ -52,6 +52,10 @@ jobs:
         with:
           node-version: "22"
 
+      - name: Test the server before deploying it
+        if: env.SKIP != '1'
+        run: node tests/worker.test.mjs
+
       - name: Prepare Cloudflare (account, subscribers storage, workers.dev)
         if: env.SKIP != '1'
         run: |

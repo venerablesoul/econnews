@@ -9,7 +9,7 @@ on:
   workflow_dispatch:          # the "Run workflow" button for a manual start
 
 permissions:
-  contents: write             # to save state.json and the page data
+  contents: write             # to save state.json and the page data to the gh-pages branch (main gets no data commits)
 
 concurrency:
   group: econ-news
@@ -26,10 +26,10 @@ jobs:
         with:
           python-version: "3.12"
           cache: pip
-          cache-dependency-path: .github/workflows/news.yml
+          cache-dependency-path: requirements.txt
 
       - name: Install chart and PDF libraries
-        run: pip install matplotlib==3.11.2 pdfplumber==0.11.10
+        run: pip install -r requirements.txt
 
       - name: Collect and send news
         env:
@@ -64,7 +64,8 @@ jobs:
           export PAGES_URL="${{ vars.PAGES_URL }}"
           [ -n "$PAGES_URL" ] || export PAGES_URL="https://${GITHUB_REPOSITORY_OWNER,,}.github.io/${GITHUB_REPOSITORY#*/}/"
           # loop: a check every 5 min, exit after 5.5 h (the next run is already queued);
-          # the site updates at most every 10 minutes, fresh news go to the bot server at once
+          # the site (the gh-pages branch, one commit replaced each time) updates at most every 10 minutes,
+          # fresh news go to the bot server at once
           LOOP_HOURS=5.5 python news_bot.py --loop 5 --git-sync
 
       - name: Save state

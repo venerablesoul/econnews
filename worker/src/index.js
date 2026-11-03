@@ -20,14 +20,16 @@
 //   /api/perf       — returns over 1D…5Y for up to 40 instruments: ?s=SPY,QQQ,GOLD (TRAY, FPC)
 //   /api/ping       — a tiny answer: the terminal picks the server address that works on the viewer's network
 //                     (*.workers.dev is blocked by some Russian providers; deploy/hosting/api is a relay for them)
-//   cron            — every 2 minutes checks alerts and sends messages
+//   cron            — every 2 minutes checks alerts and sends messages; tells the owner when the news bot
+//                     has stopped sending updates (BOT_STALE_MINUTES, 60 by default) and when it is back
 //
 // Secrets (set automatically from the GitHub secrets):
 //   TELEGRAM_BOT_TOKEN, OWNER_ID, FINNHUB_API_KEY, EODHD_API_KEY (optional, paid), TERMINAL_PASSWORD (optional)
 // Variable: PAGES_URL — the bot's site (data.json, stocks.json, rates.json, fin/ live there).
 // KV storage: SUBS — subscribers, languages, personal data, alerts, the live feed.
 import {
-  arrow, cached, cors, esc, hex, hmac, hookKey, isOwnerChat, json, pagesUrl, send, siteData, syncKey, tg,
+  LOGIN_MAX, TG_INIT_TTL,
+  arrow, cached, cors, esc, hex, hmac, hookKey, isOwnerChat, json, pagesUrl, safeEqual, send, sha256hex, siteData, syncKey, tg,
 } from "./lib.js";
 import { COMPANY_PARTS, getCompany, getCorr, getHistory, getIpos, getQuotes, mktName, parseSymbol, worldQuotes } from "./market.js";
 import { isNewCallback, newCallback, newCommand, watchReminders } from "./botcmd.js";
@@ -101,15 +103,47 @@ export default {
       .catch((e) => console.log("alerts error", e && e.stack || e)));
     ctx.waitUntil(watchReminders(env).then((r) => r.skipped || console.log("reminders", JSON.stringify(r)))
       .catch((e) => console.log("reminders error", e && e.stack || e)));
+    ctx.waitUntil(watchBot(env).then((r) => (r.down || r.back) && console.log("news bot", JSON.stringify(r)))
+      .catch((e) => console.log("watchdog error", e && e.stack || e)));
   },
 };
+
+// ---------------------------------------------------------------------------
+// Watchdog: the news bot pushes /sync/live on every run (~5 min). If nothing came for BOT_STALE_MINUTES
+// (60 by default: GitHub sometimes starts the next loop late), the owner gets one message, and another
+// when the bot is back. KV is written only on these two changes, so a normal check costs no writes.
+// ---------------------------------------------------------------------------
+const BOT_DOWN = "bot_down";
+
+export async function watchBot(env, now = Date.now()) {
+  if (!env.SUBS || !env.OWNER_ID) return { skipped: true };
+  const raw = await env.SUBS.get("live");
+  let updated = NaN;
+  try { updated = Date.parse(JSON.parse(raw || "null").updated); } catch { /* not a feed yet */ }
+  if (!updated) return { skipped: true };
+  const mins = Math.max(0, Math.round((now - updated) / 60000));
+  const stale = mins > (Number(env.BOT_STALE_MINUTES) || 60);
+  const downSince = await env.SUBS.get(BOT_DOWN);   // the last update before the outage
+  if (stale === (downSince !== null)) return { ok: !stale, mins };
+  const owner = String(env.OWNER_ID).trim();
+  const lang = await getLang(env, owner);
+  if (stale) {
+    await env.SUBS.put(BOT_DOWN, String(updated));   // first: one message per outage, even if sending fails
+    await send(env, owner, t(lang, "bot_down", mins));
+    return { down: true, mins };
+  }
+  await env.SUBS.delete(BOT_DOWN);
+  const gap = Math.max(0, Math.round((updated - (Number(downSince) || updated)) / 60000));
+  await send(env, owner, t(lang, "bot_back", gap));
+  return { back: true, gap };
+}
 
 // ---------------------------------------------------------------------------
 // Subscribers (KV key "u:<chat_id>", metadata {n: name, t: date, l: language})
 // ---------------------------------------------------------------------------
 async function authorized(req, env) {
   const h = req.headers.get("Authorization") || "";
-  return h === "Bearer " + await syncKey(env);
+  return safeEqual(h, "Bearer " + await syncKey(env));
 }
 
 async function allSubs(env) {
@@ -225,7 +259,7 @@ function keyboard(env, chat, extra = true) {
 const langButtons = { inline_keyboard: [[{ text: "🇬🇧 English", callback_data: "lang:en" }, { text: "🇷🇺 Русский", callback_data: "lang:ru" }]] };
 
 async function webhook(req, env, ctx) {
-  if (req.headers.get("X-Telegram-Bot-Api-Secret-Token") !== await hookKey(env)) {
+  if (!(await safeEqual(req.headers.get("X-Telegram-Bot-Api-Secret-Token") || "", await hookKey(env)))) {
     return new Response("forbidden", { status: 403 });
   }
   const update = await req.json().catch(() => null);
@@ -461,14 +495,69 @@ async function telegramUser(initData, env) {
   p.delete("hash");
   const check = [...p.entries()].map(([k, v]) => k + "=" + v).sort().join("\n");
   const secret = await hmac("WebAppData", env.TELEGRAM_BOT_TOKEN);
-  if (hex(await hmac(secret, check)) !== hash) return null;
-  if (Date.now() / 1000 - Number(p.get("auth_date") || 0) > 30 * 86400) return null;
+  if (!(await safeEqual(hex(await hmac(secret, check)), hash))) return null;
+  if (Date.now() / 1000 - Number(p.get("auth_date") || 0) > TG_INIT_TTL) return null;
   try { return JSON.parse(p.get("user") || "null"); } catch { return null; }
+}
+
+// The owner's terminal password: after LOGIN_MAX DIFFERENT wrong passwords from one address within LOGIN_WINDOW,
+// that address cannot sign in with a password for LOGIN_LOCK (Telegram sign-in still works).
+// The same wrong password again does not count: a terminal tab that still keeps an old password after it was
+// changed asks every 30 seconds, and must not lock its owner out. Guessing needs new passwords, so it is counted.
+// The lock is a KV record, so every copy of the server sees it; it costs one KV write per lock.
+// Note: viewers behind the PHP relay (deploy/hosting) share the relay's address.
+// (LOGIN_MAX and TG_INIT_TTL live in lib.js: this main module may export only handlers and functions.)
+const LOGIN_WINDOW = 15 * 60 * 1000;
+const LOGIN_LOCK = 30 * 60;   // seconds
+const misses = new Map();     // address -> { at, seen: Set of hashes } — wrong passwords seen by this copy of the server
+const locks = new Map();      // address -> { until, checked } — KV lock records, re-read once a minute
+
+function clientIp(req) {
+  return req.headers.get("CF-Connecting-IP") || "unknown";
+}
+
+function remember(map, key, value) {
+  if (map.size > 2000) map.clear();   // bounded memory: an attack from many addresses cannot grow it
+  map.set(key, value);
+}
+
+async function lockedOut(env, ip) {
+  const now = Date.now();
+  const l = locks.get(ip);
+  if (l && now - l.checked < 60000) return l.until > now;
+  const v = env.SUBS ? await env.SUBS.get("lock:" + ip) : null;
+  const until = v ? Number(v) || now + LOGIN_LOCK * 1000 : 0;
+  remember(locks, ip, { until, checked: now });
+  return until > now;
+}
+
+async function ownerPassword(req, env, pass) {
+  if (!env.TERMINAL_PASSWORD || !env.OWNER_ID) return false;
+  const ip = clientIp(req);
+  if (await lockedOut(env, ip)) return false;
+  if (await safeEqual(pass, env.TERMINAL_PASSWORD)) {
+    misses.delete(ip);
+    return true;
+  }
+  const now = Date.now();
+  const m = misses.get(ip);
+  const cur = m && now - m.at < LOGIN_WINDOW ? m : { at: now, seen: new Set() };
+  cur.seen.add(await sha256hex(pass));   // only a hash is kept, never the guess itself
+  if (cur.seen.size < LOGIN_MAX) {
+    remember(misses, ip, cur);
+    return false;
+  }
+  misses.delete(ip);
+  const until = now + LOGIN_LOCK * 1000;
+  remember(locks, ip, { until, checked: now });
+  console.log("owner password: too many wrong guesses, locked", ip);
+  if (env.SUBS) await env.SUBS.put("lock:" + ip, String(until), { expirationTtl: LOGIN_LOCK });
+  return false;
 }
 
 async function whoIs(req, env) {
   const pass = req.headers.get("X-Owner-Key");
-  if (pass && env.TERMINAL_PASSWORD && pass === env.TERMINAL_PASSWORD && env.OWNER_ID) {
+  if (pass && await ownerPassword(req, env, pass)) {
     return { id: String(env.OWNER_ID).trim(), owner: true, name: "owner" };
   }
   const init = req.headers.get("X-Tg-Init");

@@ -1,11 +1,14 @@
-"""Checks the live data the news bot published on GitHub (the main branch).
+"""Checks the live data the news bot published on GitHub (the gh-pages branch, see git_sync in news_bot.py).
 Run: python3 tests/check_live.py  → "LIVE DATA OK" when everything is in place."""
 import json
+import os
 import subprocess
 import sys
 from datetime import datetime, timedelta, timezone
 
-ROOT = __file__.rsplit("/tests/", 1)[0]
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BRANCH = os.environ.get("DATA_BRANCH", "gh-pages")
+REF = "origin/" + BRANCH
 
 
 def git(*a):
@@ -13,13 +16,13 @@ def git(*a):
 
 
 def show(path):
-    r = git("show", "origin/main:" + path)
+    r = git("show", REF + ":" + path)
     if r.returncode:
         raise FileNotFoundError(path)
     return json.loads(r.stdout)
 
 
-git("fetch", "-q", "origin", "main")
+git("fetch", "-q", "origin", f"+refs/heads/{BRANCH}:refs/remotes/{REF}")
 now = datetime.now(timezone.utc)
 problems = []
 
@@ -72,7 +75,7 @@ try:
 except FileNotFoundError:
     problems.append("no docs/rates.json")
 
-ls = git("ls-tree", "--name-only", "origin/main", "docs/fin/").stdout.split()
+ls = git("ls-tree", "--name-only", REF, "docs/fin/").stdout.split()
 print(f"docs/fin: financials files {len(ls)}")
 if len(ls) < 4:
     problems.append("fewer than 4 financials files")
@@ -84,8 +87,8 @@ else:
         problems.append(f"{ls[0]} has no revenue")
 
 # deep company data, option snapshots, IMF forecasts and the Moscow Exchange (company.py, options.py, macro.py, moex.py)
-co = git("ls-tree", "--name-only", "origin/main", "docs/co/").stdout.split()
-op = git("ls-tree", "--name-only", "origin/main", "docs/opt/").stdout.split()
+co = git("ls-tree", "--name-only", REF, "docs/co/").stdout.split()
+op = git("ls-tree", "--name-only", REF, "docs/opt/").stdout.split()
 print(f"docs/co: company files {len(co)} · docs/opt: option snapshots {len(op)}")
 if len(co) < 4:
     problems.append("fewer than 4 company files (docs/co)")

@@ -32,6 +32,22 @@ export async function hmac(key, msg) {
   return new Uint8Array(await crypto.subtle.sign("HMAC", k, enc.encode(msg)));
 }
 
+// Sign-in limits (used in index.js)
+export const TG_INIT_TTL = 86400;   // seconds: Telegram's initData is fresh on every terminal start, a day is plenty
+export const LOGIN_MAX = 10;        // different wrong owner passwords from one address before it is locked out
+
+// Compares two secrets without leaking through timing how many first characters matched:
+// both sides are hashed with a random key first, so the comparison is over unrelated digests.
+// (the key is made on first use: Workers do not allow random numbers while the module loads)
+let cmpKey = null;
+export async function safeEqual(a, b) {
+  if (!cmpKey) cmpKey = crypto.getRandomValues(new Uint8Array(32));
+  const [x, y] = await Promise.all([hmac(cmpKey, String(a)), hmac(cmpKey, String(b))]);
+  let diff = 0;
+  for (let i = 0; i < x.length; i++) diff |= x[i] ^ y[i];
+  return diff === 0;
+}
+
 // Keys are derived from the bot token, so they need no separate secrets.
 // The same formulas are in news_bot.py and worker/deploy.py.
 export const syncKey = (env) => sha256hex("econnews-sync:" + env.TELEGRAM_BOT_TOKEN);

@@ -6,7 +6,7 @@ In continuous mode on your own machine the bot checks the feeds every 5 minutes 
 ## Step 0. Turn off the GitHub schedule
 Otherwise the news arrives twice.
 GitHub → **Actions** tab → **Economic news** → **⋯** → **Disable workflow**.
-The Markets page and the terminal keep working: GitHub Pages serves them, and the bot pushes fresh data there itself.
+The Markets page and the terminal keep working: GitHub Pages serves them from the gh-pages branch, and the bot pushes fresh data there itself (the token below needs Contents: Read and write for that).
 
 ## Option A. A server (VPS) — runs around the clock
 The cheapest Linux server is enough (1 core, 512 MB–1 GB of memory, Ubuntu).
@@ -15,10 +15,10 @@ The cheapest Linux server is enough (1 core, 512 MB–1 GB of memory, Ubuntu).
 2. **On the server:**
    ```bash
    sudo apt update && sudo apt install -y git python3 python3-pip
-   sudo pip3 install matplotlib pdfplumber --break-system-packages   # charts and trade reports
    sudo useradd -m bot && sudo -iu bot
    git clone https://TOKEN@github.com/venerablesoul/econnews.git
    cd econnews
+   pip3 install --user -r requirements.txt --break-system-packages   # charts and trade reports
    cp .env.example .env && nano .env      # fill in the bot token, chat id, FRED key
    python3 news_bot.py --test             # a test message should arrive
    exit
@@ -36,7 +36,7 @@ Works while the computer is on.
    cd econnews
    copy .env.example .env
    notepad .env
-   pip install matplotlib pdfplumber
+   pip install -r requirements.txt
    ```
 3. Run `deploy\start_windows.bat`. To start it with Windows: Win+R → `shell:startup` → put a shortcut to this file there.
 

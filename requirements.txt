@@ -1,0 +1,3 @@
+# The bot itself needs only the Python standard library; these two are optional extras.
+matplotlib==3.11.2    # the chart picture (CHART_HOURS)
+pdfplumber==0.11.10   # reading US House trade reports (TRADES)

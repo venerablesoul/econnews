@@ -9,11 +9,12 @@ const env = { TELEGRAM_BOT_TOKEN: TOKEN, OWNER_ID: OWNER, FINNHUB_API_KEY: "FHKE
 const ctx = { waits: [], waitUntil(p) { this.waits.push(p); } };
 
 const worker = (await import("../worker/src/index.js")).default;
-const { handleUpdate, newsText, marketsText } = await import("../worker/src/index.js");
+const { handleUpdate, newsText, marketsText, watchBot } = await import("../worker/src/index.js");
+const { LOGIN_MAX, TG_INIT_TTL } = await import("../worker/src/lib.js");
 const { parseSymbol } = await import("../worker/src/market.js");
 const { parseAlert, cleanPort } = await import("../worker/src/user.js");
 const { clearMemo, fmt, money, pct } = await import("../worker/src/lib.js");
-const { t, newsField, sectorName, tradeLabel } = await import("../worker/src/i18n.js");
+const { t, newsField, sectorName, tradeLabel, setLang } = await import("../worker/src/i18n.js");
 
 let passed = 0;
 async function test(name, fn) {
@@ -487,6 +488,74 @@ await test("/api/me: sign-in with the Telegram signature", async () => {
   assert.deepEqual(r.json.w, ["TSLA"]);
   r = await api("/api/me", { "X-Tg-Init": init.replace(/hash=[^&]+/, "hash=00") });
   assert.equal(r.json.ok, false);
+});
+
+function signedInit(id, ageSeconds) {
+  const fields = { auth_date: String(Math.floor(Date.now() / 1000) - ageSeconds), query_id: "q" + id, user: JSON.stringify({ id, first_name: "U" }) };
+  const check = Object.keys(fields).sort().map((k) => k + "=" + fields[k]).join("\n");
+  const secret = crypto.createHmac("sha256", "WebAppData").update(TOKEN).digest();
+  return new URLSearchParams({ ...fields, hash: crypto.createHmac("sha256", secret).update(check).digest("hex") }).toString();
+}
+
+await test("/api/me: a Telegram signature is accepted for a day only", async () => {
+  let r = await api("/api/me", { "X-Tg-Init": signedInit(5151, 3600) });
+  assert.equal(r.json.id, "5151");
+  r = await api("/api/me", { "X-Tg-Init": signedInit(5151, TG_INIT_TTL + 60) });
+  assert.equal(r.json.ok, false, "an old signature is refused");
+});
+
+await test("/api/me: an old password kept by a terminal tab does not lock the owner out", async () => {
+  // the password was changed; a forgotten tab keeps asking with the old one every 30 seconds
+  for (let i = 0; i < LOGIN_MAX * 3; i++) {
+    assert.equal((await api("/api/me", { "X-Owner-Key": "old-password", "CF-Connecting-IP": "192.0.2.5" })).json.ok, false);
+  }
+  assert.equal(await env.SUBS.get("lock:192.0.2.5"), null, "the same wrong password again is not a new guess");
+  assert.equal((await api("/api/me", { "X-Owner-Key": "pw", "CF-Connecting-IP": "192.0.2.5" })).json.id, OWNER,
+    "the new password works from the same address");
+});
+
+await test("/api/me: the owner password is locked after too many wrong guesses from one address", async () => {
+  const from = (ip, pass) => api("/api/me", { "X-Owner-Key": pass, "CF-Connecting-IP": ip });
+  const puts = env.SUBS.puts;
+  for (let i = 0; i < LOGIN_MAX - 1; i++) assert.equal((await from("203.0.113.7", "guess" + i)).json.ok, false);
+  assert.equal(env.SUBS.puts, puts, "wrong guesses below the limit cost no KV writes");
+  assert.equal((await from("203.0.113.7", "pw")).json.ok, true, "the right password still works below the limit");
+  for (let i = 0; i < LOGIN_MAX; i++) await from("203.0.113.7", "guess" + i);
+  assert.ok(await env.SUBS.get("lock:203.0.113.7"), "the lock is stored for every copy of the server");
+  assert.equal((await from("203.0.113.7", "pw")).json.ok, false, "locked: even the right password is refused");
+  assert.equal((await from("198.51.100.1", "pw")).json.id, OWNER, "other addresses are not affected");
+  assert.equal((await api("/api/me", { "X-Tg-Init": signedInit(Number(OWNER), 60), "CF-Connecting-IP": "203.0.113.7" })).json.id, OWNER,
+    "the Telegram sign-in still works from the locked address");
+});
+
+await test("watchdog: the owner hears when the news bot goes quiet and when it is back", async () => {
+  const e = { ...env, SUBS: new KV() };
+  await setLang(e, OWNER, "en");   // the language memo is shared with the earlier tests
+  const live = (minsAgo) => e.SUBS.put("live", JSON.stringify({ updated: new Date(Date.now() - minsAgo * 60000).toISOString(), news: [], market: [] }));
+  assert.deepEqual(await watchBot(e), { skipped: true }, "no feed yet — nothing to say");
+  await live(5);
+  let start = sent.length, puts = e.SUBS.puts;
+  assert.equal((await watchBot(e)).ok, true);
+  assert.equal(sent.length, start); assert.equal(e.SUBS.puts, puts, "a normal check sends and writes nothing");
+  await live(90);
+  assert.equal((await watchBot(e)).down, true);
+  let got = sent.slice(start);
+  assert.equal(got.length, 1);
+  assert.equal(String(got[0].chat_id), OWNER);
+  assert.match(got[0].text, /gone quiet.*90 min/s);
+  start = sent.length; puts = e.SUBS.puts;
+  await watchBot(e);
+  assert.equal(sent.length, start, "one message per outage");
+  assert.equal(e.SUBS.puts, puts);
+  await live(0);
+  assert.equal((await watchBot(e)).back, true);
+  assert.match(sent[sent.length - 1].text, /is back<\/b> after 90 min/);
+  assert.equal(await e.SUBS.get("bot_down"), null);
+  await setLang(e, OWNER, "ru");
+  await live(120);
+  await watchBot(e);
+  assert.match(sent[sent.length - 1].text, /Бот новостей молчит<\/b>: нет обновлений 120 мин/, "in the owner's language");
+  assert.equal((await watchBot({ ...e, BOT_STALE_MINUTES: "180" })).back, true, "the limit can be raised");
 });
 
 await test("live feed: accepted with the key and served", async () => {

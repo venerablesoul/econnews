@@ -856,65 +856,137 @@ class TreasuryAuctions(unittest.TestCase):
 
 
 class GitSync(unittest.TestCase):
-    """The bot's push to GitHub survives a race with other commits and a rebase that got stuck."""
+    """The bot's data goes to the gh-pages branch as one replaced commit; main gets no data commits."""
 
-    def git(self, cwd, *a):
+    def git(self, cwd, *a, ok=True):
         import subprocess
         r = subprocess.run(["git", "-C", cwd, "-c", "user.name=t", "-c", "user.email=t@t", *a], capture_output=True, text=True)
-        self.assertEqual(r.returncode, 0, r.stderr)
+        if ok:
+            self.assertEqual(r.returncode, 0, r.stderr)
         return r.stdout.strip()
 
-    def test_race_and_stuck_rebase(self):
+    @staticmethod
+    def write(root, name, text):
+        p = os.path.join(root, name)
+        os.makedirs(os.path.dirname(p), exist_ok=True)
+        with open(p, "w") as f:
+            f.write(text)
+
+    @staticmethod
+    def read(root, name):
+        with open(os.path.join(root, name)) as f:
+            return f.read()
+
+    def setUp(self):
         import news_bot
-        with tempfile.TemporaryDirectory() as d:
-            remote, bot, dev = (os.path.join(d, x) for x in ("remote.git", "bot", "dev"))
-            self.git(d, "init", "-q", "--bare", "-b", "main", remote)
-            self.git(d, "clone", "-q", remote, dev)
-            os.makedirs(os.path.join(dev, "docs"))
-            for name, text in (("code.py", "v1"), ("state.json", "{}"), ("docs/data.json", "{}")):
-                with open(os.path.join(dev, name), "w") as f:
-                    f.write(text)
-            self.git(dev, "add", "-A"); self.git(dev, "commit", "-qm", "init"); self.git(dev, "push", "-q", "origin", "main")
-            self.git(d, "clone", "-q", remote, bot)
+        news_bot._published.clear()
+        self._tmp = tempfile.TemporaryDirectory()
+        d = self.d = self._tmp.name
+        self.remote, self.bot, self.dev = (os.path.join(d, x) for x in ("remote.git", "bot", "dev"))
+        self.git(d, "init", "-q", "--bare", "-b", "main", self.remote)
+        self.git(d, "clone", "-q", self.remote, self.dev)
+        # as main is today: code, the site's code and the bot's data, all tracked
+        for name, text in (("code.py", "v1"), ("state.json", "{}"), ("docs/index.html", "site"), ("docs/data.json", "{}")):
+            self.write(self.dev, name, text)
+        self.git(self.dev, "add", "-A"); self.git(self.dev, "commit", "-qm", "init"); self.git(self.dev, "push", "-q", "origin", "main")
+        self.git(d, "clone", "-q", self.remote, self.bot)
 
-            # the bot writes data while a developer pushes code and (to force a clash) touches the same data file
-            with open(os.path.join(bot, "docs", "data.json"), "w") as f:
-                f.write('{"bot": 1}')
-            os.makedirs(os.path.join(bot, "docs", "co"))
-            with open(os.path.join(bot, "docs", "co", "AAPL.json"), "w") as f:
-                f.write("{}")
-            with open(os.path.join(dev, "code.py"), "w") as f:
-                f.write("v2")
-            with open(os.path.join(dev, "docs", "data.json"), "w") as f:
-                f.write('{"dev": 1}')
-            self.git(dev, "commit", "-qam", "code"); self.git(dev, "push", "-q", "origin", "main")
-            news_bot.git_sync("push", bot)
-            self.git(dev, "pull", "-q")
-            with open(os.path.join(dev, "code.py")) as f:
-                self.assertEqual(f.read(), "v2", "the developer's code is kept")
-            with open(os.path.join(dev, "docs", "data.json")) as f:
-                self.assertEqual(f.read(), '{"bot": 1}', "the bot's data wins")
-            self.assertTrue(os.path.exists(os.path.join(dev, "docs", "co", "AAPL.json")))
+    def tearDown(self):
+        self._tmp.cleanup()
 
-            # a rebase stuck half-way (HEAD detached) is aborted and the push still goes through
-            with open(os.path.join(dev, "code.py"), "w") as f:
-                f.write("v3")
-            self.git(dev, "commit", "-qam", "code 3"); self.git(dev, "push", "-q", "origin", "main")
-            with open(os.path.join(bot, "state.json"), "w") as f:
-                f.write('{"x": 1}')
-            self.git(bot, "commit", "-qam", "local")
-            self.git(bot, "fetch", "-q")
-            import subprocess
-            subprocess.run(["git", "-C", bot, "-c", "user.name=t", "-c", "user.email=t@t", "rebase", "-q", "-i", "--exec", "false", "origin/main"],
-                           capture_output=True, env={**os.environ, "GIT_SEQUENCE_EDITOR": "true"})
-            self.assertTrue(os.path.isdir(os.path.join(bot, ".git", "rebase-merge")), "the test set up a stuck rebase")
-            news_bot.git_sync("pull", bot)
-            news_bot.git_sync("push", bot)
-            self.git(dev, "pull", "-q")
-            with open(os.path.join(dev, "state.json")) as f:
-                self.assertEqual(f.read(), '{"x": 1}')
-            with open(os.path.join(dev, "code.py")) as f:
-                self.assertEqual(f.read(), "v3")
+    def remote_files(self, ref):
+        return self.git(self.remote, "ls-tree", "-r", "--name-only", ref).splitlines()
+
+    def test_publish_to_data_branch(self):
+        import news_bot
+        main_before = self.git(self.remote, "rev-parse", "main")
+        self.write(self.bot, "state.json", '{"s": 1}')
+        self.write(self.bot, "docs/data.json", '{"bot": 1}')
+        self.write(self.bot, "docs/co/AAPL.json", "{}")
+        news_bot.git_sync("push", self.bot)
+        self.assertEqual(self.git(self.remote, "rev-parse", "main"), main_before, "no commits to main")
+        self.assertEqual(sorted(self.remote_files("gh-pages")),
+                         ["docs/co/AAPL.json", "docs/data.json", "docs/index.html", "state.json"])
+        self.assertEqual(self.git(self.remote, "show", "gh-pages:docs/data.json"), '{"bot": 1}')
+        first = self.git(self.remote, "rev-parse", "gh-pages")
+        news_bot.git_sync("push", self.bot)
+        self.assertEqual(self.git(self.remote, "rev-parse", "gh-pages"), first, "nothing changed — no push")
+        self.write(self.bot, "docs/data.json", '{"bot": 2}')
+        news_bot.git_sync("push", self.bot)
+        self.assertEqual(self.git(self.remote, "show", "gh-pages:docs/data.json"), '{"bot": 2}')
+        self.assertEqual(self.git(self.remote, "rev-list", "--count", "gh-pages"), "1", "the data branch has no history")
+        self.assertEqual(self.git(self.bot, "status", "--porcelain", "--", "code.py"), "", "the bot's own checkout is untouched")
+
+    def test_pull_keeps_data_and_fresh_checkout_restores_it(self):
+        import news_bot
+        self.write(self.bot, "state.json", '{"s": 1}')
+        self.write(self.bot, "docs/co/AAPL.json", '{"a": 1}')
+        news_bot.git_sync("push", self.bot)
+        # the developer pushes code; the running bot picks it up and keeps its newer data
+        self.write(self.dev, "code.py", "v2"); self.git(self.dev, "commit", "-qam", "code"); self.git(self.dev, "push", "-q")
+        self.write(self.bot, "state.json", '{"s": 2}')
+        news_bot.git_sync("pull", self.bot)
+        self.assertEqual(self.read(self.bot, "code.py"), "v2")
+        self.assertEqual(self.read(self.bot, "state.json"), '{"s": 2}', "a running bot keeps its own data")
+        # a fresh checkout (GitHub Actions) has main's old state.json: the data comes from gh-pages
+        fresh = os.path.join(self.d, "fresh")
+        self.git(self.d, "clone", "-q", self.remote, fresh)
+        self.assertEqual(self.read(fresh, "state.json"), "{}")
+        news_bot.git_sync("pull", fresh)
+        self.assertEqual(self.read(fresh, "state.json"), '{"s": 1}')
+        self.assertEqual(self.read(fresh, "docs/co/AAPL.json"), '{"a": 1}')
+        self.assertEqual(self.read(fresh, "docs/index.html"), "site", "the site's code stays main's")
+
+    def test_no_data_branch_yet(self):
+        import news_bot
+        news_bot.git_sync("pull", self.bot)
+        self.assertEqual(self.read(self.bot, "state.json"), "{}")
+        self.assertEqual(self.git(self.bot, "status", "--porcelain"), "")
+
+    def test_data_leaves_main(self):
+        """Step 2: main stops tracking the data. The running bot keeps its files, a fresh checkout gets them."""
+        import news_bot
+        self.write(self.bot, "state.json", '{"s": 1}')
+        self.write(self.bot, "docs/data.json", '{"bot": 1}')
+        news_bot.git_sync("push", self.bot)
+        self.write(self.dev, ".gitignore", "state.json\ndocs/data.json\n")
+        self.git(self.dev, "rm", "-q", "--cached", "state.json", "docs/data.json")
+        self.git(self.dev, "add", ".gitignore"); self.git(self.dev, "commit", "-qm", "data leaves main"); self.git(self.dev, "push", "-q")
+        self.write(self.bot, "state.json", '{"s": 2}')
+        news_bot.git_sync("pull", self.bot)
+        self.assertTrue(os.path.exists(os.path.join(self.bot, ".gitignore")), "the bot has the new main")
+        self.assertEqual(self.read(self.bot, "state.json"), '{"s": 2}')
+        self.assertEqual(self.read(self.bot, "docs/data.json"), '{"bot": 1}')
+        self.assertEqual(self.git(self.bot, "status", "--porcelain"), "", "the data is ignored now")
+        news_bot.git_sync("push", self.bot)
+        self.assertEqual(self.git(self.remote, "show", "gh-pages:state.json"), '{"s": 2}')
+        self.assertNotIn("state.json", self.remote_files("main"))
+        fresh = os.path.join(self.d, "fresh")
+        self.git(self.d, "clone", "-q", self.remote, fresh)
+        self.assertFalse(os.path.exists(os.path.join(fresh, "state.json")))
+        news_bot.git_sync("pull", fresh)
+        self.assertEqual(self.read(fresh, "state.json"), '{"s": 2}')
+        self.assertEqual(self.read(fresh, "docs/data.json"), '{"bot": 1}')
+
+    def test_old_data_commit_and_stuck_rebase(self):
+        """A data commit left by the old version clashes with main: the pull still gets the code, the data is kept."""
+        import subprocess
+        import news_bot
+        self.write(self.bot, "state.json", '{"old": 1}'); self.git(self.bot, "commit", "-qam", "news update")
+        self.write(self.dev, ".gitignore", "state.json\n")
+        self.write(self.dev, "code.py", "v3")
+        self.git(self.dev, "rm", "-q", "--cached", "state.json")
+        self.git(self.dev, "add", "-A"); self.git(self.dev, "commit", "-qm", "code 3"); self.git(self.dev, "push", "-q")
+        self.git(self.bot, "fetch", "-q")
+        subprocess.run(["git", "-C", self.bot, "-c", "user.name=t", "-c", "user.email=t@t", "rebase", "-q", "-i", "--exec", "false",
+                        "origin/main"], capture_output=True, env={**os.environ, "GIT_SEQUENCE_EDITOR": "true"})
+        self.assertTrue(os.path.isdir(os.path.join(self.bot, ".git", "rebase-merge")), "the test set up a stuck rebase")
+        news_bot.git_sync("pull", self.bot)
+        self.assertFalse(os.path.isdir(os.path.join(self.bot, ".git", "rebase-merge")))
+        self.assertEqual(self.read(self.bot, "code.py"), "v3")
+        self.assertEqual(self.read(self.bot, "state.json"), '{"old": 1}')
+        news_bot.git_sync("push", self.bot)
+        self.assertEqual(self.git(self.remote, "show", "gh-pages:state.json"), '{"old": 1}')
 
 
 class IpoCalendar(unittest.TestCase):
