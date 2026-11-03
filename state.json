@@ -723,7 +723,8 @@
   "684aeb2ee3d22e81": "2026-11-03T14:21:50.303531+00:00",
   "8fcac17a7beda497": "2026-11-03T14:21:50.303531+00:00",
   "9738c7c1ac3645bc": "2026-11-03T14:26:50.751723+00:00",
-  "f3243e4df327464a": "2026-11-03T14:46:50.176089+00:00"
+  "f3243e4df327464a": "2026-11-03T14:46:50.176089+00:00",
+  "23aaaefef3683923": "2026-11-03T14:56:50.390739+00:00"
  },
  "recent": [
   {
@@ -6630,6 +6631,16 @@
    "score": 5,
    "ts": "2026-11-03T14:46:50.176089+00:00",
    "title_ru": "МВФ подписал соглашение об учреждении с Испанией"
+  },
+  {
+   "title": "Pfizer Raises 2026 Forecast, Extending Pharma Windfall",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOcV9OVjFDcjl0TUFsVmhYb0RWaUZfOXp1dC1nZHVsclFBZllkX0FSNFJxMy14Ukh4QVdtR2NhRm9nOEpyWmN5ODBjazl6VXBvLXVHbGptOGNxNXFQcDFGOWNaQmxURHlfb3BvcGE2Uk9XMnlLWEdnMUt1bmlLRkZDc0hxQllQMVhoWmhtaWQ5UDdZNW5QNG1HSnIydFpOVmhNWkc3eEdKMzRQSUtY?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T14:56:50.390739+00:00",
+   "title_ru": "Pfizer повышает прогноз на 2026 год, увеличивая непредвиденные расходы на фармацевтику"
   }
  ],
  "last_digest": "2026-11-02",
@@ -13609,17 +13620,15 @@
   "checked": "2026-11-03T14:36:50.416320+00:00",
   "sec_seen": [
    "0001940653-26-000005",
-   "0000072331-26-000072",
    "0001563411-26-000202",
+   "0002050987-26-000006",
    "0001211005-26-000002",
-   "0001454309-26-000009",
    "0001219555-26-000008",
    "0001708055-26-000091",
-   "0000072331-26-000074",
    "0001193125-26-444528",
-   "0000072331-26-000076",
    "0001629963-26-000007",
-   "0001403373-26-000009"
+   "0001403373-26-000009",
+   "0002079092-26-000008"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
