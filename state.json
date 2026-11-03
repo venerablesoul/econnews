@@ -744,7 +744,9 @@
   "e82297e05958f8f6": "2026-11-03T16:41:50.220150+00:00",
   "6748b8e923dbd43d": "2026-11-03T16:41:50.220150+00:00",
   "466194d74983de96": "2026-11-03T16:46:50.247118+00:00",
-  "de6af99731740552": "2026-11-03T16:46:50.247118+00:00"
+  "de6af99731740552": "2026-11-03T16:46:50.247118+00:00",
+  "ec02ea4f0fabec18": "2026-11-03T16:51:50.445223+00:00",
+  "2a644dc8de2f0ef4": "2026-11-03T16:51:50.445223+00:00"
  },
  "recent": [
   {
@@ -6842,6 +6844,16 @@
    "title_ru": "Одобрение льгот по процентам по ипотеке",
    "lead": "Homeowners can get tax relief of £3,500 on the money spent on the interstate of a mortgage.",
    "lead_ru": "Домовладельцы могут получить налоговые льготы в размере 3500 фунтов стерлингов на деньги, потраченные на межштатную ипотеку."
+  },
+  {
+   "title": "Spanish police clear remaining housing protesters from Madrid encampment",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNZ1dSYVZZVVRVRmRHNUpoa3ZEbF9VeVNiUVhpN2VLUVcwalpzWlg2MEMwa3BzOWdnaHBvYm9WM1J6eGVtY21ZbnhSSUttSDZWNmNGM2tvQWVPQlpsWFN1X243M1ZCOVVOMlhLVVhhcnpiODlUNktyQzZlYldMYlp1cXJrWjJBTTZVdlR4WXJJWkR3bHVjVFFlME9BeGFzVXRtazZUZHBISWNYU0dIQ2c?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T16:51:50.445223+00:00",
+   "title_ru": "Испанская полиция вычистила остатки жилья протестующих из лагеря в Мадриде"
   }
  ],
  "last_digest": "2026-11-02",
@@ -13823,14 +13835,11 @@
    "0002080126-26-000039",
    "0001976408-26-000930",
    "0001649667-26-000009",
-   "0001437749-26-034573",
    "0001437749-26-034575",
    "0001628280-26-069223",
    "0001628280-26-069214",
-   "0001437749-26-034572",
    "0001104659-26-121809",
-   "0001193125-26-444718",
-   "0001437749-26-034574"
+   "0001193125-26-444718"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
