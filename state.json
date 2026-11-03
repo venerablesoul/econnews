@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "3884d51049ba0edc": "2026-10-31T07:27:16.117164+00:00",
   "22768e4a3aa12c7f": "2026-10-31T07:42:16.038018+00:00",
   "d51bb4b450b2723f": "2026-10-31T07:47:16.106849+00:00",
   "858ab16beca9ad70": "2026-10-31T07:47:16.106849+00:00",
@@ -652,22 +651,12 @@
   "025ed773ea75bd0f": "2026-11-03T07:21:49.894025+00:00",
   "5437583e2550a2d5": "2026-11-03T07:26:49.946876+00:00",
   "dbdfaf32c8c9d59b": "2026-11-03T07:26:49.946876+00:00",
-  "df8608bf96146c27": "2026-11-03T07:26:49.946876+00:00"
+  "df8608bf96146c27": "2026-11-03T07:26:49.946876+00:00",
+  "3ef735cf50c59c02": "2026-11-03T07:31:49.965437+00:00",
+  "4ba8bc2f256caa6c": "2026-11-03T07:36:49.875754+00:00",
+  "aee5c856a8901314": "2026-11-03T07:36:49.875754+00:00"
  },
  "recent": [
-  {
-   "title": "SpaceX's Shotwell says 2 million shares to be gifted to children's Trump Accounts",
-   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOdm4xdlhWdTFlTWNCdDB0YUNWNDBpNW5LblpoMm1VWmpkUUZEelJBTTJiS2dLSVhFYi1jeG9kR29WZE5RUVVvcTc2eUxlYVBwYUJTS25lUEhvellnZmwwSzhqWDhfRmwxUVJFSmxfdVZCcG0za3lfTWJFQ3B0Zk5aQ1BTNkNON01XSjBsREpCTFZPYkJHU1Rfd1c3T0lmS3ZpQnJqanE5UENpaUVLMUd3ZHZjU0tRU0hfRjlsRTJnb2N6d3RvcUtJdXdDQXM?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-31T07:27:16.117164+00:00",
-   "title_ru": "Shotwell SpaceX говорит, что 2 миллиона акций будут подарены детским учетным записям Trump",
-   "tags": [
-    "markets"
-   ]
-  },
   {
    "title": "Why politicians chasing economic growth is a lie | Radical Thinking with Aditya Chakrabortty",
    "link": "https://www.theguardian.com/politics/commentisfree/audio/2026/oct/31/why-politicians-chasing-economic-growth-is-a-lie-radical-thinking-with-aditya-chakrabortty",
@@ -5834,6 +5823,18 @@
    "tags": [
     "rates"
    ]
+  },
+  {
+   "title": "BOE Interest-Rate Path Divides Traders and Economists Ahead of Expected Hike",
+   "link": "https://www.bloomberg.com/news/newsletters/2026-11-03/boe-interest-rate-path-divides-traders-and-economists-ahead-of-expected-hike",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T07:36:49.875754+00:00",
+   "title_ru": "Процентная ставка BOE разделяет трейдеров и экономистов в преддверии ожидаемого повышения",
+   "lead": "Plus, Primark parent AB Foods reports results",
+   "lead_ru": "Кроме того, Primark parent AB Foods сообщает о результатах"
   }
  ],
  "last_digest": "2026-11-02",
