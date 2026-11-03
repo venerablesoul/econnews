@@ -663,7 +663,10 @@
   "1e5191de846dacd0": "2026-11-03T08:21:49.929060+00:00",
   "cef571cae902ab5d": "2026-11-03T08:26:49.932771+00:00",
   "4f641e211e19a50b": "2026-11-03T08:31:49.923015+00:00",
-  "6b0b0f9487910618": "2026-11-03T08:36:49.966319+00:00"
+  "6b0b0f9487910618": "2026-11-03T08:36:49.966319+00:00",
+  "76a3c274aa2c686e": "2026-11-03T08:46:49.981410+00:00",
+  "fd59337ec63ef0b1": "2026-11-03T08:46:49.981410+00:00",
+  "2d5b44158b1e086d": "2026-11-03T08:46:49.981410+00:00"
  },
  "recent": [
   {
@@ -5979,6 +5982,30 @@
    "tags": [
     "ECB"
    ]
+  },
+  {
+   "title": "Hong Kong Economic Growth Unexpectedly Quickens as Exports Surge",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-03/hong-kong-gdp-q3-economic-growth-exports-surge-electronics-ai",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-11-03T08:46:49.981410+00:00",
+   "title_ru": "Экономический рост Гонконга неожиданно ускоряется по мере роста экспорта",
+   "lead": "Hong Kong’s economy unexpectedly grew at a faster rate for last quarter, fueled by a surge in exports and improved investment.",
+   "lead_ru": "Экономика Гонконга неожиданно выросла более быстрыми темпами в прошлом квартале, чему способствовал всплеск экспорта и улучшение инвестиций."
+  },
+  {
+   "title": "SBI’s Strong Loan Growth Drives Second-Quarter Profit Beat",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-03/sbi-s-strong-loan-growth-drives-second-quarter-profit-beat",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T08:46:49.981410+00:00",
+   "title_ru": "Сильный рост кредитования SBI привел к сокращению прибыли во втором квартале",
+   "lead": "State Bank of India reported better-than-expected profit in the fiscal second quarter, as the country’s biggest lender by assets saw strong credit growth.",
+   "lead_ru": "Государственный банк Индии сообщил о более высокой, чем ожидалось, прибыли во втором финансовом квартале, поскольку крупнейший кредитор страны по активам продемонстрировал сильный рост кредитования."
   }
  ],
  "last_digest": "2026-11-02",
@@ -12972,8 +12999,8 @@
    "0001914879-26-000006",
    "0001193125-26-444128",
    "0001193125-26-444141",
-   "0001600301-26-000010",
    "0001888118-26-000002",
+   "0001600301-26-000010",
    "0001104659-26-121594",
    "0001493152-26-049664",
    "0001079973-26-001421",
