@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "d51bb4b450b2723f": "2026-10-31T07:47:16.106849+00:00",
-  "858ab16beca9ad70": "2026-10-31T07:47:16.106849+00:00",
   "265693843adfac6e": "2026-10-31T08:02:16.085866+00:00",
   "2fcc95968d1b173d": "2026-10-31T08:07:16.032599+00:00",
   "a4c2507428d4a0f9": "2026-10-31T08:12:16.026609+00:00",
@@ -657,21 +655,10 @@
   "b80bbd5c554e54c6": "2026-11-03T07:41:49.944991+00:00",
   "bd85eb5bff899be8": "2026-11-03T07:41:49.944991+00:00",
   "232ca299314b3a93": "2026-11-03T07:41:49.944991+00:00",
-  "bb7004471035e139": "2026-11-03T07:46:49.898752+00:00"
+  "bb7004471035e139": "2026-11-03T07:46:49.898752+00:00",
+  "8c94af30570c5f2a": "2026-11-03T07:51:49.900773+00:00"
  },
  "recent": [
-  {
-   "title": "Why politicians chasing economic growth is a lie | Radical Thinking with Aditya Chakrabortty",
-   "link": "https://www.theguardian.com/politics/commentisfree/audio/2026/oct/31/why-politicians-chasing-economic-growth-is-a-lie-radical-thinking-with-aditya-chakrabortty",
-   "sources": [
-    "The Guardian"
-   ],
-   "score": 3,
-   "ts": "2026-10-31T07:47:16.106849+00:00",
-   "title_ru": "Почему политики, гоняющиеся за экономическим ростом, — это ложь | Радикальное мышление с Адитьей Чакраборти",
-   "lead": "What if someone told you the truth about the economy? For years, governments have tried spending more, spending less, cutting red tape, Brexit, levelling up – and still failed to increase growth per person in the UK.",
-   "lead_ru": "Что, если кто-то скажет вам правду об экономике? В течение многих лет правительства пытались тратить больше, тратить меньше, сокращать бюрократическую волокиту, Брексит, выравнивать уровень – и все еще не смогли увеличить рост на душу населения в Великобритании."
-  },
   {
    "title": "World Economic Outlook (October 2026) - GDP, current prices",
    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5fZUpHWHg2QW9LU05DZU9xdk1EbDNYV0lVWUVSQTFwdEdzb3UyMHIwejFoWHpqUGY5dV9xbVRjcTBGTE9TVTZvOEN6WlJ0Q0x2czhVSEZHdUt5VG5KSzB4UWg0RV8?oc=5",
@@ -5866,6 +5853,19 @@
    "title_ru": "Регулятор Китая призывает банки приостановить IPO, сообщает FT",
    "tags": [
     "China"
+   ]
+  },
+  {
+   "title": "WGC lowers outlook for gold investment demand growth as bar buying slows",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNbXNhd2d5cnZVajh5dGZkbnVvc3daNEtvT3NWekFmajVxZ0FfWFRlUGVFb0Z3UWsyWFpVYmN4YmNNdXFkM3gtV0FxcFNjUGtHYVFrNFBoUV9JZl83REU3SmlRTU54bXVSS2NubW1nOEJCVXpyVjdCcnNTUmRmNV9YX05UMDVSTG5zaFA2XzRIMDFZU1kyUVlxVzBfeG9MQjhWdUU5ZEI4bkRUbjEwS3QwTXVGNA?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-11-03T07:51:49.900773+00:00",
+   "title_ru": "WGC снижает прогноз роста инвестиционного спроса на золото, поскольку покупки слитков замедляются",
+   "tags": [
+    "gold"
    ]
   }
  ],
@@ -12860,8 +12860,8 @@
    "0001914879-26-000006",
    "0001193125-26-444128",
    "0001193125-26-444141",
-   "0001888118-26-000002",
    "0001600301-26-000010",
+   "0001888118-26-000002",
    "0001104659-26-121594",
    "0001493152-26-049664",
    "0001079973-26-001421",
