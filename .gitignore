@@ -5,3 +5,18 @@ state.json.tmp
 worker/.secrets.json
 worker/node_modules/
 worker/.wrangler/
+
+# The bot's data lives in the gh-pages branch, not in main (DATA_PATHS in news_bot.py)
+/state.json
+/docs/data.json
+/docs/stocks.json
+/docs/rates.json
+/docs/fin/
+/docs/co/
+/docs/opt/
+/docs/options.json
+/docs/macro.json
+/docs/moex.json
+/docs/ipo.json
+/docs/wpe.json
+/docs/auctions.json
