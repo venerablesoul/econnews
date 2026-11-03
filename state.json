@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "419caf214ab143c0": "2026-10-31T03:42:16.099588+00:00",
-  "f211fc3408503a8e": "2026-10-31T03:47:16.042665+00:00",
-  "d2505f6805c9ff22": "2026-10-31T03:47:16.042665+00:00",
-  "bd85eb5bff899be8": "2026-10-31T03:47:16.042665+00:00",
   "22b8761cbc7a3131": "2026-10-31T03:52:16.097574+00:00",
   "41baa953c9754c92": "2026-10-31T04:02:16.082066+00:00",
   "0387735e805dc666": "2026-10-31T04:07:16.165415+00:00",
@@ -618,7 +614,10 @@
   "192cbecab2ee6e64": "2026-11-03T03:36:49.912578+00:00",
   "8eb35e1eabf13a54": "2026-11-03T03:36:49.912578+00:00",
   "6cb94c1e1d532f16": "2026-11-03T03:41:50.005124+00:00",
-  "67652ec061768bab": "2026-11-03T03:41:50.005124+00:00"
+  "67652ec061768bab": "2026-11-03T03:41:50.005124+00:00",
+  "8358c84e4a016c10": "2026-11-03T03:51:50.095608+00:00",
+  "419caf214ab143c0": "2026-11-03T03:51:50.095608+00:00",
+  "287756b316d7860e": "2026-11-03T03:51:50.095608+00:00"
  },
  "recent": [
   {
@@ -5403,6 +5402,19 @@
    "lead_ru": "Решение Резервного банка Австралии соответствовало ожиданиям экономистов, опрошенных Reuters, и ознаменовало пятое повышение ставок в этом году.",
    "tags": [
     "inflation"
+   ]
+  },
+  {
+   "title": "Canadian dollar steadies as investors weigh officials' trade comments",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQNDZQTWVVcXhNdUlFWmhIVnB4eVRmMl9JUGFWd1hWVGloelNxbHlkdXJFWjlLU2VsdjZ3NzhQZkRmQzV4dVhpOUstV3Y2bTNuYXRfX2FuaVN2bWpVTnRxZlBtT29BYUNhanBiR2drR3lKd0laZzlKd3FBbUNuZGpmMjZMS25Lc3dLYm1aa0dRcF9WcEdkV0I1bHBXX29Bb3d4dlR5Y2ozT0ZQS0MxNnBtNmRSTQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-11-03T03:51:50.095608+00:00",
+   "title_ru": "Канадский доллар стабилизируется, поскольку инвесторы взвешивают комментарии чиновников по торговле",
+   "tags": [
+    "dollar"
    ]
   }
  ],
