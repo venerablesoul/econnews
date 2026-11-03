@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "6745c5b219a4b186": "2026-10-31T13:07:46.123212+00:00",
-  "3a82d2925901cd7a": "2026-10-31T13:07:46.123212+00:00",
   "48de6eff642c5a5b": "2026-10-31T13:17:46.086068+00:00",
   "d210b851b9ddb92c": "2026-10-31T13:27:46.153612+00:00",
   "dff0e58445858b5c": "2026-10-31T13:57:46.144946+00:00",
@@ -710,18 +708,11 @@
   "926243ff8d1a7338": "2026-11-03T13:01:50.221002+00:00",
   "19ec69e2a1da2eba": "2026-11-03T13:01:50.221002+00:00",
   "ea52f97d683aaae8": "2026-11-03T13:06:50.289737+00:00",
-  "0330b2da79f449bd": "2026-11-03T13:06:50.289737+00:00"
+  "0330b2da79f449bd": "2026-11-03T13:06:50.289737+00:00",
+  "de1b83ed4611aef2": "2026-11-03T13:16:51.713375+00:00",
+  "deaea9228426b281": "2026-11-03T13:16:51.713375+00:00"
  },
  "recent": [
-  {
-   "title": "Аргентинский банк Galicia закрыл счета части российских клиентов",
-   "link": "https://www.rbc.ru/finances/31/10/2026/6ae5df251cbe5894eaedf3d2",
-   "sources": [
-    "RBC"
-   ],
-   "score": 1,
-   "ts": "2026-10-31T13:07:46.123212+00:00"
-  },
   {
    "title": "India extends duty-free cotton imports by two months to ease domestic prices",
    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNcGp4QkhGWTFwQ0VrM1N5a253YjFPRWhaaE1EV0o2YlVkYnVhdjV6bWJaNFFiSmNMYUtPU1pVdGlvTzdjMTkxQ1lKQnZWWTh2Vjl2V1JXX3dOaTJfUURoWkR0Q3JheldpVVBjbFBVdGplWkdrdW9qUFRac1FRZ0phNTU0cWptaFROR1kzQnRJOUg3ekJlMTZQUkVVWDRxZk90NHlWMFVtbF9IckVjS1N3NGpVaVhwNnVNSWo4YjBR?oc=5",
@@ -6476,6 +6467,16 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "Sterling steady as traders await BoE, nervously watch midterms",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNTFIwMDZEbEZUUkxKX1pCSkdHSHRtSFRsOTc2NldkMnhENU0wcG9EbmlRdFhMQlZZdlUwbGRIR3Z3OVZwUVg4VnlSeE0zeU1sU2RXWTA0X3lOTEpLWEhma0x3SnR2SUhOb2ZQZjFCSEEzMHpmVEhFS0JZWHVKSG9HdWhjSnplNE4yd3ljN1hEa3JBaEJDbl9zT3p4cjBfWjZCd2tKVnV3?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T13:16:51.713375+00:00",
+   "title_ru": "Фунт стерлингов стабилен, поскольку трейдеры ждут BoE, нервно наблюдают за промежуточными периодами"
   }
  ],
  "last_digest": "2026-11-02",
@@ -9419,6 +9420,22 @@
    }
   ],
   "insiders": [
+   {
+    "src": "sec",
+    "id": "aa5557be5155fb74",
+    "ticker": "TSM",
+    "company": "TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD",
+    "who": "Lipen Yuan",
+    "role": "VP",
+    "type": "buy",
+    "value": 71490,
+    "shares": 1000,
+    "price": 71.49,
+    "plan": false,
+    "date": "2026-11-01",
+    "disclosed": "2026-11-03",
+    "link": "https://www.sec.gov/Archives/edgar/data/2114024/000104617926000732/0001046179-26-000732-index.htm"
+   },
    {
     "src": "sec",
     "id": "9a7aac4b033eb896",
@@ -13402,22 +13419,6 @@
     "date": "2026-10-23",
     "disclosed": "2026-10-27",
     "link": "https://www.sec.gov/Archives/edgar/data/1781714/000119312526434194/0001193125-26-434194-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "ba4554a3fb11fd7b",
-    "ticker": "TIPT",
-    "company": "TIPTREE INC.",
-    "who": "Michael Gene Barnes",
-    "role": "CEO, 10% owner",
-    "type": "buy",
-    "value": 502303,
-    "shares": 30930,
-    "price": 16.24,
-    "plan": true,
-    "date": "2026-10-23",
-    "disclosed": "2026-10-27",
-    "link": "https://www.sec.gov/Archives/edgar/data/1498811/000149881126000002/0001498811-26-000002-index.htm"
    }
   ],
   "docs": {
@@ -13455,28 +13456,29 @@
   "sec_seen": [
    "0001104659-26-121593",
    "0002157538-26-000004",
+   "0001104659-26-121672",
    "0001318349-26-000022",
    "0001600301-26-000010",
    "0001778564-26-000198",
    "0001683168-26-008247",
+   "0001046179-26-000732",
    "0001213900-26-115107",
    "0001210033-26-000012",
    "0001548006-26-000012",
    "0001193125-26-444126",
    "0001225208-26-008590",
-   "0001817217-26-000014",
-   "0001692514-26-000005",
-   "0000950157-26-001158",
+   "0001909068-26-000026",
+   "0002000358-26-000027",
    "0000812011-26-000165",
    "0001193125-26-444147",
-   "0001817160-26-000023",
+   "0001104659-26-121667",
    "0001757376-26-000012",
    "0001531352-26-000014",
    "0001079973-26-001421",
    "0001778564-26-000199",
+   "0001493152-26-049705",
    "0001104659-26-121594",
    "0001193125-26-444141",
-   "0001817199-26-000034",
    "0001193125-26-444128",
    "0001104659-26-121591"
   ],
