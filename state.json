@@ -1,10 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "6cb94c1e1d532f16": "2026-10-31T03:36:27.136827+00:00",
-  "3d9e566b3cb9237f": "2026-10-31T03:36:27.136827+00:00",
-  "35aab7938f5e7aea": "2026-10-31T03:36:27.136827+00:00",
-  "5c89bf39e886882a": "2026-10-31T03:36:27.136827+00:00",
   "419caf214ab143c0": "2026-10-31T03:42:16.099588+00:00",
   "f211fc3408503a8e": "2026-10-31T03:47:16.042665+00:00",
   "d2505f6805c9ff22": "2026-10-31T03:47:16.042665+00:00",
@@ -614,7 +610,13 @@
   "fed1590a24b29e45": "2026-11-03T03:15:44.425323+00:00",
   "8545a7c0f35e6cbe": "2026-11-03T03:15:44.425323+00:00",
   "b5889fe237910149": "2026-11-03T03:25:44.451945+00:00",
-  "19b7992fc9f9ba11": "2026-11-03T03:31:50.010545+00:00"
+  "19b7992fc9f9ba11": "2026-11-03T03:31:50.010545+00:00",
+  "1cab292e4320e2c7": "2026-11-03T03:36:49.912578+00:00",
+  "408e3ba4222cf0a4": "2026-11-03T03:36:49.912578+00:00",
+  "47b432bae73c0bc1": "2026-11-03T03:36:49.912578+00:00",
+  "4a75b3034a9fd3df": "2026-11-03T03:36:49.912578+00:00",
+  "192cbecab2ee6e64": "2026-11-03T03:36:49.912578+00:00",
+  "8eb35e1eabf13a54": "2026-11-03T03:36:49.912578+00:00"
  },
  "recent": [
   {
@@ -5338,6 +5340,52 @@
    "lead_ru": "Резервный банк Австралии повышает официальную ставку наличных до 4,85%, доведя ее до самого высокого уровня с 2008 года Получите нашу ежедневную политическую электронную почту , бесплатное приложение или ежедневный подкаст новостей Резервный банк поднял ставки в пятый раз за этот...",
    "tags": [
     "rates"
+   ]
+  },
+  {
+   "title": "Huafa’s $62 Billion Debt Strain Shakes China’s Credit Market",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-03/huafa-s-62-billion-debt-strain-shakes-china-s-credit-market",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-11-03T03:36:49.912578+00:00",
+   "title_ru": "Долг Huafa в 62 миллиарда долларов потрясает кредитный рынок Китая",
+   "lead": "China’s credit market just suffered its worst selloff in two years as a major conglomerate’s plunge into distress tests the assumption that government ties can protect state-owned firms from financial peril.",
+   "lead_ru": "Кредитный рынок Китая только что пережил худшую за два года распродажу, поскольку падение крупного конгломерата в бедственное положение проверяет предположение о том, что правительственные связи могут защитить государственные компании от финансовой опасности.",
+   "tags": [
+    "markets",
+    "China"
+   ]
+  },
+  {
+   "title": "Australia Raises Key Rate to 18-Year High in Split Decision",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-03/australia-raises-key-rate-to-18-year-high-in-split-decision",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-11-03T03:36:49.912578+00:00",
+   "title_ru": "Австралия повысила ключевую ставку до 18-летнего максимума раздельным решением",
+   "lead": "Australia’s central bank raised its key interest rate to an 18-year high on Tuesday, extending the developed world’s most aggressive tightening cycle as policymakers struggle to bring inflation back to target.",
+   "lead_ru": "Центральный банк Австралии во вторник поднял ключевую процентную ставку до 18-летнего максимума, продлив самый агрессивный цикл ужесточения политики в развитом мире, поскольку политики изо всех сил пытаются вернуть инфляцию к целевому уровню.",
+   "tags": [
+    "rates",
+    "inflation"
+   ]
+  },
+  {
+   "title": "Rupee to benefit from oil plunge while facing technical resistance, dollar strength",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQYTNHWGhQX0hSaU8yb2V3QkJCWlJMWG4tZm1oSXE5LXM4ZjJYYnZGWFAyWXRETmpGaEJlSThpR3BlbzVnZ0tXTnpxdGRfcHA4R0JuVXhlM2o0N01tendKb0Q5TWtMUUJfWThGRFgyYmZNMjhwUXRsdFU2aVE5bmNMS09mbm9HeFQxVXhWMnR1dUlNcXJ5Z3VWLUFLNFlLNFJMbTk4NlZjNVIwRDAtd19ZNzBiMDE0QjBIbnZwTE1FRQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-11-03T03:36:49.912578+00:00",
+   "title_ru": "Рупия выиграет от падения нефти, столкнувшись с техническим сопротивлением и укреплением доллара",
+   "tags": [
+    "oil",
+    "dollar"
    ]
   }
  ],
@@ -12332,9 +12380,9 @@
    "0001914879-26-000006",
    "0001193125-26-444128",
    "0001193125-26-444141",
+   "0001888118-26-000002",
    "0001600301-26-000010",
    "0001104659-26-121594",
-   "0001888118-26-000002",
    "0001493152-26-049664",
    "0001079973-26-001421",
    "0001104659-26-121593",
