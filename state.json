@@ -728,7 +728,10 @@
   "172cc2d739493c90": "2026-11-03T15:01:50.279011+00:00",
   "e0f1db761d007811": "2026-11-03T15:06:50.452935+00:00",
   "cb47ee875a8563c1": "2026-11-03T15:11:50.322348+00:00",
-  "f2dc4c709fe9fac0": "2026-11-03T15:11:50.322348+00:00"
+  "f2dc4c709fe9fac0": "2026-11-03T15:11:50.322348+00:00",
+  "1f0f9d18931b4722": "2026-11-03T15:16:50.226299+00:00",
+  "da2f9d53c3ec4cee": "2026-11-03T15:16:50.226299+00:00",
+  "e88f4c8ec2dc6868": "2026-11-03T15:16:50.226299+00:00"
  },
  "recent": [
   {
@@ -6675,6 +6678,31 @@
    "score": 3,
    "ts": "2026-11-03T15:11:50.322348+00:00",
    "title_ru": "Переизбранный президент Ганы обещает рост экономики"
+  },
+  {
+   "title": "Bank of France Likely to Cut 2026 Growth Forecast, Moulin Says",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-03/bank-of-france-likely-to-cut-2026-growth-forecast-moulin-says",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-11-03T15:16:50.226299+00:00",
+   "title_ru": "Банк Франции, вероятно, сократит прогноз роста на 2026 год, говорит Мулен",
+   "lead": "The Bank of France will probably have to revise down its 2026 economic-growth forecast after activity unexpectedly shrank in the third quarter, Governor Emmanuel Moulin said.",
+   "lead_ru": "Банку Франции, вероятно, придется пересмотреть свой прогноз экономического роста на 2026 год после того, как активность неожиданно сократилась в третьем квартале, сказал управляющий Эммануэль Мулен."
+  },
+  {
+   "title": "Syria says it foiled Hezbollah plot to attack Homs oil refinery",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQa0hXS05BXzBXMWN6UkowWERwWUVYaUhnMzFIYUtvTC14WDJfUjIyWXpfVnV1UGRLT0pqYTVyaXNJSTZ5djYtZ0xpWmtmWG1LODZqUWRBOUNQbjlvLVFxVjF3RGprQmNmdmJLdDdSY2UtTncwUjRVcnR2RXZ2enZzTDQ5QklpOUU4Y0c2MVVmaVdTOW16amNkcVg1WGhEVWFNMkk3dU5wemF2ZVBGZEdDcWU3c3c?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T15:16:50.226299+00:00",
+   "title_ru": "Сирия заявляет, что сорвала заговор Хезболлы с целью нападения на нефтеперерабатывающий завод в Хомсе",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-11-02",
@@ -13653,10 +13681,11 @@
   },
   "checked": "2026-11-03T14:36:50.416320+00:00",
   "sec_seen": [
-   "0002079092-26-000008",
+   "0000920148-26-000224",
+   "0002050987-26-000006",
+   "0000920148-26-000223",
    "0001193125-26-444560",
-   "0001193125-26-444528",
-   "0002050987-26-000006"
+   "0002079092-26-000008"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
