@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "09a59aff65e18c61": "2026-10-31T16:03:19.822803+00:00",
-  "6bd9d31a8b72a909": "2026-10-31T16:03:19.822803+00:00",
-  "89ef9b5bcfc87889": "2026-10-31T16:03:19.822803+00:00",
   "1d7c8ffdc62ae334": "2026-10-31T16:23:19.839517+00:00",
   "a8f92577333a93be": "2026-10-31T16:53:19.940199+00:00",
   "2f1f11b5c3f1f14a": "2026-10-31T16:58:19.816077+00:00",
@@ -737,36 +734,10 @@
   "46af647bea834d1c": "2026-11-03T15:51:50.192083+00:00",
   "6e61d9359478a165": "2026-11-03T15:51:50.192083+00:00",
   "10744c906586da08": "2026-11-03T15:51:50.192083+00:00",
-  "7c32c15739c3caef": "2026-11-03T15:56:50.444389+00:00"
+  "7c32c15739c3caef": "2026-11-03T15:56:50.444389+00:00",
+  "1a0b076f141048a7": "2026-11-03T16:06:50.495742+00:00"
  },
  "recent": [
-  {
-   "title": "Want guaranteed income in retirement without an annuity? Try laddering I bonds.",
-   "link": "https://www.marketwatch.com/story/how-to-use-i-bonds-to-create-guaranteed-inflation-proof-income-in-retirement-50753fea?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 2,
-   "ts": "2026-10-31T16:03:19.822803+00:00"
-  },
-  {
-   "title": "Britain’s housing crisis won’t be fixed without a new tax landscape",
-   "link": "https://www.theguardian.com/business/2026/oct/31/housing-crisis-fix-britain-tax-landscape",
-   "sources": [
-    "The Guardian"
-   ],
-   "score": 2,
-   "ts": "2026-10-31T16:03:19.822803+00:00"
-  },
-  {
-   "title": "We’re in our 70s. Should we pay off our 2.5% mortgage — or put the money in a high-yield savings account?",
-   "link": "https://www.marketwatch.com/story/we-are-in-our-70s-should-we-pay-off-our-2-5-mortgage-or-build-up-our-savings-5a35e9c1?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-31T16:03:19.822803+00:00"
-  },
   {
    "title": "- IMF eLibrary",
    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5CUk5Cek5NWDZIQVA0OTZoLXpxN3FDYkpWNzlRVHNpZUhTdWNHWER5WFFicW8xNDRWQnQ4MGxVdzl5Q0otZ3YyMzBEcDA2aVA5SnVFMG1uRFBmTmJnWGZicHMzZw?oc=5",
@@ -6760,6 +6731,19 @@
    "tags": [
     "rates"
    ]
+  },
+  {
+   "title": "Brazil's Lula not weighing proposal to slash interest rates, minister says",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNcWo0MGtRNFVLaHhob0s1OXhOQ3hGY1A4MGk2NHhlN1FUaTBQeVVOeUJyenFWV1ZJZ3N3bWNJVm5CTUJNSl9JTUh1NlBua29HQ3RWQW83YjE4M3NCMlFvZ1pId0wtcEE2cXR2UThwQU5ZM2E4TXlTNE5vQ1kyT1U2OFllQ1RqdHJqOEN6NlBYemtHd1FPMDB5dGFLTEE0VG5QX1JoV0YwbWxMSVZhREJleHR2NS04T08zTzFwSg?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-11-03T16:06:50.495742+00:00",
+   "title_ru": "Бразильский Лула не взвешивает предложение о снижении процентных ставок, говорит министр",
+   "tags": [
+    "rates"
+   ]
   }
  ],
  "last_digest": "2026-11-02",
@@ -9847,6 +9831,22 @@
     "date": "2026-10-30",
     "disclosed": "2026-11-03",
     "link": "https://www.sec.gov/Archives/edgar/data/1882672/000008042426000267/0000080424-26-000267-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "2311925141bee8c1",
+    "ticker": "TYL",
+    "company": "TYLER TECHNOLOGIES INC",
+    "who": "H Lynn Jr Moore",
+    "role": "CEO",
+    "type": "sell",
+    "value": 3931689,
+    "shares": 10000,
+    "price": 393.17,
+    "plan": false,
+    "date": "2026-10-30",
+    "disclosed": "2026-11-03",
+    "link": "https://www.sec.gov/Archives/edgar/data/1250902/000213003526000006/0002130035-26-000006-index.htm"
    },
    {
     "src": "sec",
@@ -13687,22 +13687,6 @@
     "date": "2026-10-26",
     "disclosed": "2026-10-27",
     "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000382/0001510281-26-000382-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "3208a71592cf3042",
-    "ticker": "VRSN",
-    "company": "VERISIGN INC/CA",
-    "who": "Danny R McPherson",
-    "role": "EVP - Technology & CSO",
-    "type": "sell",
-    "value": 989482,
-    "shares": 3256,
-    "price": 303.89,
-    "plan": false,
-    "date": "2026-10-26",
-    "disclosed": "2026-10-27",
-    "link": "https://www.sec.gov/Archives/edgar/data/1940987/000194098726000022/0001940987-26-000022-index.htm"
    }
   ],
   "docs": {
@@ -13739,8 +13723,10 @@
   "checked": "2026-11-03T15:41:50.337900+00:00",
   "sec_seen": [
    "0001976408-26-000928",
+   "0002130035-26-000006",
    "0001703388-26-000028",
-   "0001225208-26-008599"
+   "0001654954-26-009444",
+   "0001976408-26-000929"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
