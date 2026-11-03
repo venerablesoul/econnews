@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "5c38386e5f79f4a6": "2026-10-31T06:12:16.092287+00:00",
-  "b2bcf695fc696b6f": "2026-10-31T06:12:16.092287+00:00",
   "80e72ddb77969232": "2026-10-31T06:17:16.057551+00:00",
   "ae4a2996ddaf2033": "2026-10-31T06:17:16.057551+00:00",
   "3ddee3342475be14": "2026-10-31T06:22:16.044097+00:00",
@@ -634,22 +632,12 @@
   "770ca953d1420ab4": "2026-11-03T06:06:49.936872+00:00",
   "88f7fc8919c2422e": "2026-11-03T06:06:49.936872+00:00",
   "c16147f998ebcd7a": "2026-11-03T06:11:49.930497+00:00",
-  "be1ef3fb2bbfaf0d": "2026-11-03T06:11:49.930497+00:00"
+  "be1ef3fb2bbfaf0d": "2026-11-03T06:11:49.930497+00:00",
+  "33619b0e9322e2c3": "2026-11-03T06:16:49.939410+00:00",
+  "90516a96447fd45e": "2026-11-03T06:16:49.939410+00:00",
+  "1935f1b28f12a302": "2026-11-03T06:16:49.939410+00:00"
  },
  "recent": [
-  {
-   "title": "Real GDP growth",
-   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQVEFGa0ZkTjE2S2ljLVhZM3V1bDUtVFdPNWJ2OEYzeXFPc01odWNYNkcwemdsUUdPTl9sU3g5VGFBRUVPTU9pWkttVS1wdVZKcnRhYmlBakxQcXpCZ2xZamxrNk4yb3Z3b2hiRGR6MWFOdFpjQkxDZDlDcVZLTXN5Xw?oc=5",
-   "sources": [
-    "IMF"
-   ],
-   "score": 8,
-   "ts": "2026-10-31T06:12:16.092287+00:00",
-   "title_ru": "Темпы роста реального ВВП",
-   "tags": [
-    "GDP"
-   ]
-  },
   {
    "title": "Tech Stocks Plunge as Wall Street Enters ‘Show Me’ Phase",
    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQRnJ5U0htbzlQVFk1UDl3eEw5WUdXU3VZR0Z1UFBINjViWkxCaVo5MWpjUEg5bTJNblBlZE9OTkZSRjUtNE5EYWRJN0N2aG80Q25na254eGJhQk9mZ3VOY0NWWHhBZGNGQXVuYkM1Mmt0YndtN0hTTXlUZDJhN1k3TTNZZW4zMzhwS0U1MExTZ3pjRzJ1NVY4ZUVxM0RiR1k2V29KUWtESWNlcGdUam9SWVpTdU4zU1lVLXVHRWNFaTY2UVk?oc=5",
@@ -5657,6 +5645,30 @@
     "oil",
     "gold"
    ]
+  },
+  {
+   "title": "India’s Tax Hike Drives Illegal Gold Imports to Three-Year High",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-03/india-tax-hike-drives-illegal-gold-imports-to-three-year-high",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-11-03T06:16:49.939410+00:00",
+   "title_ru": "Повышение налогов в Индии привело к росту нелегального импорта золота до трехлетнего максимума",
+   "lead": "India’s illegal gold imports surged to the highest since 2023 in the third quarter as a government duty hike spurred use of unofficial channels, according to a report from the World Gold Council.",
+   "lead_ru": "Согласно отчету Всемирного совета по золоту, нелегальный импорт золота в Индию вырос до самого высокого уровня с 2023 года в третьем квартале, поскольку повышение государственной пошлины стимулировало использование неофициальных каналов.",
+   "tags": [
+    "gold"
+   ]
+  },
+  {
+   "title": "Крупнейший банк Венгрии не смог продать российскую «дочку»",
+   "link": "https://www.rbc.ru/business/03/11/2026/6ae97af53783f8c91dc64163",
+   "sources": [
+    "RBC"
+   ],
+   "score": 1,
+   "ts": "2026-11-03T06:16:49.939410+00:00"
   }
  ],
  "last_digest": "2026-11-02",
@@ -12650,8 +12662,8 @@
    "0001914879-26-000006",
    "0001193125-26-444128",
    "0001193125-26-444141",
-   "0001600301-26-000010",
    "0001888118-26-000002",
+   "0001600301-26-000010",
    "0001104659-26-121594",
    "0001493152-26-049664",
    "0001079973-26-001421",
