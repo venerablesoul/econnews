@@ -630,7 +630,10 @@
   "46767ed17fff8b39": "2026-11-03T05:41:49.925654+00:00",
   "676926b59c3a402a": "2026-11-03T05:46:49.973433+00:00",
   "5ff716cf356b88c7": "2026-11-03T05:46:49.973433+00:00",
-  "02bb405c3ed16dd3": "2026-11-03T06:01:49.918223+00:00"
+  "02bb405c3ed16dd3": "2026-11-03T06:01:49.918223+00:00",
+  "c3d9c03e0e5122cb": "2026-11-03T06:06:49.936872+00:00",
+  "770ca953d1420ab4": "2026-11-03T06:06:49.936872+00:00",
+  "88f7fc8919c2422e": "2026-11-03T06:06:49.936872+00:00"
  },
  "recent": [
   {
@@ -5598,6 +5601,44 @@
    "tags": [
     "jobs"
    ]
+  },
+  {
+   "title": "Saudi Aramco Profit Rises 9%",
+   "link": "https://www.bloomberg.com/news/videos/2026-11-03/saudi-aramco-profit-rises-9-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T06:06:49.936872+00:00",
+   "title_ru": "Прибыль Saudi Aramco выросла на 9%",
+   "lead": "Saudi Aramco posted a 9% increase in third-quarter profit following a jump in earnings from its refineries and as the Iran war drove oil prices higher.",
+   "lead_ru": "Saudi Aramco сообщила об увеличении прибыли в третьем квартале на 9% после скачка доходов от своих нефтеперерабатывающих заводов и из-за того, что война в Иране привела к росту цен на нефть.",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "Big ticket tech deals needed to keep pace with AI growth boom, financial leaders say",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNQ2xHcnFKSzZIWm80UDJnQWMzYkctWHVoZk1GTTVDbHMxRTFJd0xNaldGNFNMMG1KelBpSUYzU1EwOU83Zk90YnFnSGtDQ2FXVlMtcUl6TFV2LUZCeTByOUFGZGN0UktWWjh4MHNndTdnTnBod1oySTY3OUFmRnNpSkFuQlNUZnV0SUFibVl5VGYxQjkzUlNWMTJZaUY5OFJBY0R2VDZjS1FObEhXX3VsM2NBTUY0WkVaOWlLbmkxVkRXc2hjeEg4Sw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T06:06:49.936872+00:00",
+   "title_ru": "Крупные технологические сделки, необходимые для того, чтобы идти в ногу с бумом роста ИИ, говорят финансовые лидеры"
+  },
+  {
+   "title": "COMMENTARY: China's steady thermal coal imports mask supply shifts amid El Nino",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOUVEtZjN3a1VlNmVtZEZwSm5PZHNsbEdBa0cwazNkUEUyc0FPaVNlSnY2ejNqX0FrS0VGWjBkN3FFMDN1TkozOUVfdGhEOW1TR0ZJeVducU5nYnQwU094VDFjWGVtYWFOQkx4WUlqS0J4ZmFOQV9NVHZhWUVHQnFmc0Vvc0VGSkVpU3FvNlBSUTFmVUQwRk84VHlaTTNRS2JPR0R3V1BaU1dtNnVZeEhVWi1FUXl1UlhTTFhmeWZoY01MQk54N3ZTT1RVNUN1SWZh?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T06:06:49.936872+00:00",
+   "title_ru": "КОММЕНТАРИЙ: устойчивый импорт энергетического угля в Китае вызывает сдвиги в поставках на фоне Эль-Ниньо",
+   "tags": [
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-11-02",
@@ -5649,7 +5690,7 @@
   "2026-11-03-09"
  ],
  "calendar": {
-  "fetched": "2026-11-03T00:05:44.489351+00:00",
+  "fetched": "2026-11-03T06:06:49.936872+00:00",
   "events": [
    {
     "title": "Daylight Saving Time Shift",
@@ -12591,8 +12632,8 @@
    "0001914879-26-000006",
    "0001193125-26-444128",
    "0001193125-26-444141",
-   "0001600301-26-000010",
    "0001888118-26-000002",
+   "0001600301-26-000010",
    "0001104659-26-121594",
    "0001493152-26-049664",
    "0001079973-26-001421",
