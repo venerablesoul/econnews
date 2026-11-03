@@ -725,7 +725,8 @@
   "9738c7c1ac3645bc": "2026-11-03T14:26:50.751723+00:00",
   "f3243e4df327464a": "2026-11-03T14:46:50.176089+00:00",
   "23aaaefef3683923": "2026-11-03T14:56:50.390739+00:00",
-  "172cc2d739493c90": "2026-11-03T15:01:50.279011+00:00"
+  "172cc2d739493c90": "2026-11-03T15:01:50.279011+00:00",
+  "e0f1db761d007811": "2026-11-03T15:06:50.452935+00:00"
  },
  "recent": [
   {
@@ -6652,6 +6653,16 @@
    "score": 4,
    "ts": "2026-11-03T15:01:50.279011+00:00",
    "title_ru": "Индия упрощает правила форекс-отчетности для экспорта и импорта услуг малой стоимости"
+  },
+  {
+   "title": "Job Openings and Labor Turnover Survey News Release",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBhZXFBcHpfYnJDek9rVFRNUENiM1VHUHVqVFZKYnVBNUk2NVV5aDVsT1NGRXRKSE9Jc1RiRHNrMW00RzZsQzZ5T1gtOGxRenhtUlFKaFBFNUZDeEpaaVVzLTZIcThNQXZGTjd5bA?oc=5",
+   "sources": [
+    "US Labor Statistics (BLS)"
+   ],
+   "score": 4,
+   "ts": "2026-11-03T15:06:50.452935+00:00",
+   "title_ru": "Открытие вакансий и опрос о текучести кадров Пресс-релиз"
   }
  ],
  "last_digest": "2026-11-02",
@@ -13630,9 +13641,9 @@
   },
   "checked": "2026-11-03T14:36:50.416320+00:00",
   "sec_seen": [
-   "0001563411-26-000202",
    "0002050987-26-000006",
    "0001193125-26-444528",
+   "0001193125-26-444560",
    "0002079092-26-000008"
   ],
   "errors": {
