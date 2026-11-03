@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e58bc47889babc84": "2026-10-31T00:31:27.163891+00:00",
-  "18e2c954e78a69e3": "2026-10-31T00:36:27.144314+00:00",
   "e3681b2dd41e7d61": "2026-10-31T00:51:27.149244+00:00",
   "d6fad56165f2cbf9": "2026-10-31T00:51:27.149244+00:00",
   "5b60d59790088c37": "2026-10-31T00:56:27.127616+00:00",
@@ -603,7 +601,10 @@
   "23eecc68c21daf80": "2026-11-03T00:15:44.391042+00:00",
   "f09fbbf907547711": "2026-11-03T00:25:44.275255+00:00",
   "8926c9a64357a9b4": "2026-11-03T00:30:44.430924+00:00",
-  "710bb009f544ad36": "2026-11-03T00:30:44.430924+00:00"
+  "710bb009f544ad36": "2026-11-03T00:30:44.430924+00:00",
+  "e58bc47889babc84": "2026-11-03T00:40:44.557461+00:00",
+  "58c64f68331d647e": "2026-11-03T00:40:44.557461+00:00",
+  "76792b1d4efd8e18": "2026-11-03T00:40:44.557461+00:00"
  },
  "recent": [
   {
@@ -5158,6 +5159,32 @@
    "score": 3,
    "ts": "2026-11-03T00:30:44.430924+00:00",
    "title_ru": "IDEXX повышает прогноз, диагностика ставок может компенсировать слабые посещения ветеринара"
+  },
+  {
+   "title": "Oil Holds Biggest Drop Since July on Optimism Over US-Iran Talks",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQSFZWUTlkVU5VNU9qWWNlcUExXzljcjQtMExWNFk0ODFRelc3c04taGpBWVNLaXNOYWVETS15WEFYYnRjd3l2ZUZMSUFsS1ZPTjRmM1VYUGZ6cDZFVkswWEltbGZMbmVzR25xSllpSHpvaVdGY2JQdUFDUnBnT05TbVdLQzJwWllRcGhuRnZLdUMwU0l5aWkzdlVrbmk?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T00:40:44.557461+00:00",
+   "title_ru": "Нефть удерживает самое большое падение с июля на фоне оптимизма по поводу переговоров между США и Ираном",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "Apple forecasts rising costs, lower services; shares slip",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNTGFsc2NMYXRUbERoRkphY2hPVWNDM0ZRRmw3OHZzNnlfN0h1aEowUG9uaHZraTJPNlcyVFVYZGVjYmx2Ui01d09OTm9YejM3UGF1aUJKcHVUSUxxb0ZGNTktQmVuRVF0X0pKYTF2clJ6YnJpVmNmUEZESHc4ZWRqMkt1d0VyMEV2RVZlUkYtUE9EcW03ZXB5RzFmQk01endLRWtzNFpnVGd4el90TFUxLWhxaXRxYUsyT1lmbjIySjQ2NXcxdVE?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T00:40:44.557461+00:00",
+   "title_ru": "Apple прогнозирует рост затрат и снижение уровня услуг; падение акций",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-11-02",
@@ -8759,6 +8786,22 @@
    },
    {
     "src": "sec",
+    "id": "beba26839ce6c2b6",
+    "ticker": "AER",
+    "company": "AerCap Holdings N.V.",
+    "who": "Vincent Drouillard",
+    "role": "General Counsel",
+    "type": "sell",
+    "value": 1581400,
+    "shares": 10000,
+    "price": 158.14,
+    "plan": false,
+    "date": "2026-10-29",
+    "disclosed": "2026-11-02",
+    "link": "https://www.sec.gov/Archives/edgar/data/2120929/000095015726001158/0000950157-26-001158-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "dee9659a410d4d01",
     "ticker": "OCFC",
     "company": "OCEANFIRST FINANCIAL CORP",
@@ -12084,22 +12127,6 @@
     "date": "2026-10-23",
     "disclosed": "2026-10-27",
     "link": "https://www.sec.gov/Archives/edgar/data/1253903/000117485026000174/0001174850-26-000174-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "5d829034a355cb2c",
-    "ticker": "NMCO",
-    "company": "Nuveen Municipal Credit Opportunities Fund",
-    "who": "Robert Young L",
-    "role": "",
-    "type": "buy",
-    "value": 248883,
-    "shares": 28575,
-    "price": 8.71,
-    "plan": false,
-    "date": "2026-10-23",
-    "disclosed": "2026-10-27",
-    "link": "https://www.sec.gov/Archives/edgar/data/1774342/000122520826008526/0001225208-26-008526-index.htm"
    }
   ],
   "docs": {
@@ -12137,12 +12164,14 @@
   "sec_seen": [
    "0001338176-26-000040",
    "0000087347-26-000132",
+   "0001493152-26-049664",
    "0001193125-26-444030",
    "0001285737-26-000004",
    "0000050863-26-000194",
    "0001193125-26-443951",
    "0001628280-26-069011",
    "0001525358-26-000035",
+   "0000950157-26-001158",
    "0001784996-26-000107",
    "0001674335-26-000135",
    "0001321154-26-000012",
@@ -12158,14 +12187,12 @@
    "0001889614-26-000002",
    "0001193125-26-443948",
    "0001104659-26-121503",
-   "0001628280-26-069009",
    "0001928980-26-000005",
    "0001783108-26-000036",
    "0001510281-26-000402",
    "0001061983-26-000107",
    "0001693906-26-000016",
    "0001274737-26-000058",
-   "0001628280-26-069008",
    "0001193125-26-443950",
    "0002033834-26-000023",
    "0001638643-26-000038",
