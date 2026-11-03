@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "d210b851b9ddb92c": "2026-10-31T13:27:46.153612+00:00",
   "dff0e58445858b5c": "2026-10-31T13:57:46.144946+00:00",
   "9630baa10b83a2ea": "2026-10-31T14:07:46.137040+00:00",
   "b6f61a47e1bbde91": "2026-10-31T14:22:46.112084+00:00",
@@ -710,21 +709,13 @@
   "0330b2da79f449bd": "2026-11-03T13:06:50.289737+00:00",
   "de1b83ed4611aef2": "2026-11-03T13:16:51.713375+00:00",
   "deaea9228426b281": "2026-11-03T13:16:51.713375+00:00",
-  "cf3c3fdc3f85218d": "2026-11-03T13:26:50.213656+00:00"
+  "cf3c3fdc3f85218d": "2026-11-03T13:26:50.213656+00:00",
+  "ea6a5da28f95815b": "2026-11-03T13:31:50.248423+00:00",
+  "d6784ffd6db418df": "2026-11-03T13:36:50.155191+00:00",
+  "f7caddb430106dad": "2026-11-03T13:36:50.155191+00:00",
+  "41bd4a65eed30649": "2026-11-03T13:36:50.155191+00:00"
  },
  "recent": [
-  {
-   "title": "AI Enthusiasm Is Collapsing and Tech Earnings Just Made It Worse",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-31/ai-enthusiasm-is-collapsing-and-tech-earnings-just-made-it-worse",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-31T13:27:46.153612+00:00",
-   "title_ru": "Энтузиазм в области искусственного интеллекта падает, а доходы от технологий только усугубляют ситуацию",
-   "lead": "The last two weeks were supposed to bring some clarity to a stock market wobbling on a series of risks, particularly doubts about heavy spending on artificial intelligence, as a series of technology giants reported their earnings.",
-   "lead_ru": "Последние две недели должны были внести некоторую ясность в фондовый рынок, колеблющийся из-за ряда рисков, в частности, сомнений по поводу больших расходов на искусственный интеллект, поскольку ряд технологических гигантов отчитались о своих доходах."
-  },
   {
    "title": "Your stock portfolio increasingly hinges on the bond market — and the midterm elections",
    "link": "https://www.marketwatch.com/story/your-stock-portfolio-increasingly-hinges-on-the-bond-market-and-the-midterm-elections-dc1abadb?mod=mw_rss_topstories",
@@ -6482,6 +6473,53 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "It’s finally Election Day — and prediction markets may show ‘too much confidence in a good night for Democrats’",
+   "link": "https://www.marketwatch.com/story/its-finally-election-day-and-prediction-markets-may-show-too-much-confidence-in-a-good-night-for-democrats-3c6742df?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-11-03T13:31:50.248423+00:00"
+  },
+  {
+   "title": "Saudi Budget Deficit More Than Doubles as War Strains Finances",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-03/saudi-budget-deficit-more-than-doubles-as-war-strains-finances",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-11-03T13:36:50.155191+00:00",
+   "title_ru": "Дефицит бюджета Саудовской Аравии более чем удваивается, поскольку война напрягает финансы",
+   "lead": "Saudi Arabia’s quarterly fiscal deficit more than doubled as the kingdom faces the financial toll of the US-Iran war that began more than eight months ago.",
+   "lead_ru": "Квартальный бюджетный дефицит Саудовской Аравии более чем удвоился, поскольку королевство сталкивается с финансовыми потерями в результате американо-иранской войны, которая началась более восьми месяцев назад."
+  },
+  {
+   "title": "Weaker dollar views stick running into US midterms, but strategists brace for resilience: Reuters poll",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPdTBpTVB0clpHYmlFakphMlpEQVN4QVl1ZjlTODdpc0UzYWt6dW9EZmxCbG9VMkVmTlpJanBubE9MaDMwNVZKX3Y0RUxhejVaSi1SQy1faEdFby0wc3JOR192MkQ5LXNRbkxhNDRqcnptSVRZTTRwVTVnbjVCRkg0c3ZKTkY0NlNiUU1Hbno0Q2ZxMDBJU2wxSjRqQnhUTm15NkZJbU14NjU0WWljeVdLOEUtS2VFMm8wYXlwSmtKZEJEUQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T13:36:50.155191+00:00",
+   "title_ru": "Ослабление долларовых прогнозов накладывается на промежуточные выборы в США, но стратеги готовятся к устойчивости: опрос Reuters",
+   "tags": [
+    "dollar"
+   ]
+  },
+  {
+   "title": "Apple shares slide as higher memory costs fuel margin concerns",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOOWtrTGxXbDgwckNQWG4zLXc1eV9LUTdPZW1zbnlWYmdobHdXMm15MXNDNU8wdUVHLThfLWRxeHo3TnM4YnNvdEJmeHpEeVE2ekh2SWhKekx3RkJwNUhHWEh2OV8wRmdkWThzcHBKYTk4RGRLYXdaSTRfWFNCNnJaNWs1X3NHQmtuS004T3N3SGpXVWtmeVZkR0hUWTRoelhZS3AxSnNCdk9zWF9Da01LdmVLQVViaHRtdWx6dg?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T13:36:50.155191+00:00",
+   "title_ru": "Apple делится снижением, поскольку более высокая стоимость памяти вызывает опасения по поводу маржинальности топлива",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-11-02",
@@ -9425,6 +9463,22 @@
    }
   ],
   "insiders": [
+   {
+    "src": "sec",
+    "id": "7614aad7a2ca0937",
+    "ticker": "PMN",
+    "company": "ProMIS Neurosciences Inc.",
+    "who": "Neil Cashman",
+    "role": "Chief Scientific Officer",
+    "type": "buy",
+    "value": 38600,
+    "shares": 10000,
+    "price": 3.86,
+    "plan": false,
+    "date": "2026-11-02",
+    "disclosed": "2026-11-03",
+    "link": "https://www.sec.gov/Archives/edgar/data/1927064/000137433926000009/0001374339-26-000009-index.htm"
+   },
    {
     "src": "sec",
     "id": "aa5557be5155fb74",
@@ -13408,22 +13462,6 @@
     "date": "2026-10-23",
     "disclosed": "2026-10-27",
     "link": "https://www.sec.gov/Archives/edgar/data/1699418/000119312526434200/0001193125-26-434200-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "66e8616b70c955e5",
-    "ticker": "NDAQ",
-    "company": "NASDAQ, INC.",
-    "who": "Cohen Tal",
-    "role": "Pres. Market Platforms",
-    "type": "sell",
-    "value": 1073703,
-    "shares": 10390,
-    "price": 103.34,
-    "plan": false,
-    "date": "2026-10-23",
-    "disclosed": "2026-10-27",
-    "link": "https://www.sec.gov/Archives/edgar/data/1781714/000119312526434194/0001193125-26-434194-index.htm"
    }
   ],
   "docs": {
@@ -13457,18 +13495,16 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-11-03T12:31:50.211882+00:00",
+  "checked": "2026-11-03T13:31:50.248423+00:00",
   "sec_seen": [
    "0001104659-26-121593",
    "0002157538-26-000004",
    "0001104659-26-121672",
    "0001318349-26-000022",
-   "0001600301-26-000010",
-   "0001778564-26-000198",
-   "0001683168-26-008247",
+   "0001065088-26-000214",
    "0001046179-26-000732",
    "0001213900-26-115107",
-   "0001210033-26-000012",
+   "0001374339-26-000010",
    "0001548006-26-000012",
    "0001193125-26-444126",
    "0001225208-26-008590",
@@ -13477,13 +13513,11 @@
    "0000812011-26-000165",
    "0001193125-26-444147",
    "0001104659-26-121667",
-   "0001757376-26-000012",
-   "0001531352-26-000014",
-   "0001079973-26-001421",
-   "0001778564-26-000199",
    "0001493152-26-049705",
+   "0001079973-26-001421",
    "0001104659-26-121594",
    "0001193125-26-444141",
+   "0001374339-26-000009",
    "0001193125-26-444128",
    "0001104659-26-121591"
   ],
