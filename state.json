@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "4853ddbd88a16546": "2026-10-31T05:42:16.072660+00:00",
   "02bb405c3ed16dd3": "2026-10-31T05:52:16.047435+00:00",
   "20fcf0994aba9bcb": "2026-10-31T05:57:16.064073+00:00",
   "33619b0e9322e2c3": "2026-10-31T06:07:16.063415+00:00",
@@ -630,7 +629,9 @@
   "23b936abfe86ffd4": "2026-11-03T05:36:49.900607+00:00",
   "344eded14fb2badd": "2026-11-03T05:41:49.925654+00:00",
   "4bebade5f7b079f2": "2026-11-03T05:41:49.925654+00:00",
-  "46767ed17fff8b39": "2026-11-03T05:41:49.925654+00:00"
+  "46767ed17fff8b39": "2026-11-03T05:41:49.925654+00:00",
+  "676926b59c3a402a": "2026-11-03T05:46:49.973433+00:00",
+  "5ff716cf356b88c7": "2026-11-03T05:46:49.973433+00:00"
  },
  "recent": [
   {
@@ -5569,6 +5570,34 @@
    "tags": [
     "rates",
     "inflation"
+   ]
+  },
+  {
+   "title": "Barito Renewables Denies Inflating Volume, Price of Shares",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-03/barito-renewables-denies-inflating-volume-price-of-shares",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T05:46:49.973433+00:00",
+   "title_ru": "Barito Renewables отрицает раздувание объема и цены акций",
+   "lead": "PT Barito Renewables Energy, one of Indonesia’s biggest companies by value, denied taking steps to inflate the volume and price of its shares to gain entry into MSCI Inc. indexes.",
+   "lead_ru": "PT Barito Renewables Energy, одна из крупнейших компаний Индонезии по стоимости, отрицает, что предпринимает шаги по завышению объема и цены своих акций, чтобы получить доступ к индексам MSCI Inc.",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "UK jobs fall by most in over four years",
+   "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5sSmx0ZVdscjlydVV0cGhSZzdCNnk5VlVsX2dmeXJhaGZYaUtrVUU5QzVkSnhGZzV1cTR0NnZjT3hmU0o2ZmdaaHVuM09YczU3NzNtODgwNGhBNWlZ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T05:46:49.973433+00:00",
+   "title_ru": "Количество рабочих мест в Великобритании сократилось больше всего за четыре года",
+   "tags": [
+    "jobs"
    ]
   }
  ],
@@ -12563,8 +12592,8 @@
    "0001914879-26-000006",
    "0001193125-26-444128",
    "0001193125-26-444141",
-   "0001600301-26-000010",
    "0001888118-26-000002",
+   "0001600301-26-000010",
    "0001104659-26-121594",
    "0001493152-26-049664",
    "0001079973-26-001421",
