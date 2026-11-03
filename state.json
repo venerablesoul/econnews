@@ -611,7 +611,12 @@
   "22bf081feb0217e2": "2026-11-03T02:30:44.325402+00:00",
   "201204487d471e1b": "2026-11-03T02:50:44.381239+00:00",
   "52bb786cd38007df": "2026-11-03T03:05:44.369751+00:00",
-  "fa378e69c80d4271": "2026-11-03T03:05:44.369751+00:00"
+  "fa378e69c80d4271": "2026-11-03T03:05:44.369751+00:00",
+  "2b2186a4c3eebf8d": "2026-11-03T03:10:44.279703+00:00",
+  "545e96ec9631ef00": "2026-11-03T03:10:44.279703+00:00",
+  "d0b2e8fa45fbbbd5": "2026-11-03T03:15:44.425323+00:00",
+  "fed1590a24b29e45": "2026-11-03T03:15:44.425323+00:00",
+  "8545a7c0f35e6cbe": "2026-11-03T03:15:44.425323+00:00"
  },
  "recent": [
   {
@@ -5267,6 +5272,46 @@
    "lead_ru": "Медь и олово упали вместе с другими промышленными металлами, поскольку возобновившаяся распродажа технологических запасов в Азии ослабила перспективы спроса на материалы, используемые в центрах обработки данных и для пайки печатных плат.",
    "tags": [
     "markets"
+   ]
+  },
+  {
+   "title": "Asian stocks retreat ahead of US midterms, oil steadies",
+   "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFAxcWNjUUxuZ2lvM29QWUdBcWpkZGdCaUpLSkJRT3pXbzNUcTh6ajFTN0d1NmpHTlN6d2p0TlNfRElGZV9ZTnR2SHdabGNxQ3FqUkMtN2N1LXppRmlxNGRlTHozQ0YxY3BqNnNNRGtaYUppX1ZyMjJVdkhiYw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-11-03T03:15:44.425323+00:00",
+   "title_ru": "Азиатские акции отступают в преддверии промежуточных выборов в США, нефтяные стейди",
+   "tags": [
+    "oil",
+    "markets"
+   ]
+  },
+  {
+   "title": "China to raise FX RRR to slow pace of yuan gains",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPWDB4ZFZKQmtlWTg4RlI1Tng1by1TNV9FMlZCSkFERGc1VmlndWxsUG5kNWFvemN0YXg2VmRneGNvTVh2YU9GdXRlTjJVRXZ3eE82UlZBS1Y5YWJOOUVMQk05elJZRVR6cDBnd3U2eGxHNUZtNFJsR3hqb294LWpHMDh5VmtZUnlPZTZjWFRhMDM3d19ya1pHbW54ZzZZay1uTmkxZlV2NFliV0s2blFSSU9qSTZYTnJi?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T03:15:44.425323+00:00",
+   "title_ru": "Китай повысит валютный RRR, чтобы замедлить темпы роста юаня",
+   "tags": [
+    "China"
+   ]
+  },
+  {
+   "title": "China market regulator to encourage Hong Kong listings",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQdE9zWkRxWXFhRnY5SWt1azNmalNNRGIzd0o2aGV3eHNpUWR1bF9MWldRWDFrQjdhdUlCMVJzTnB1T2FKVU54SzdGd2l5a1NRRGNIQjlQMDFYLXlzRmN0dnBaeGd3UVZJSElxMXQtQldIU3JpcHZwN09oTTk3TlJLWVZvcGxfUEJYbzQzVVNyU0htXy01RElfSWpzVWdoQklRcExuRWZfUVN2dw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T03:15:44.425323+00:00",
+   "title_ru": "Регулятор рынка Китая поощряет листинги в Гонконге",
+   "tags": [
+    "China"
    ]
   }
  ],
@@ -12243,7 +12288,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-11-03T02:10:44.411816+00:00",
+  "checked": "2026-11-03T03:15:44.425323+00:00",
   "sec_seen": [
    "0001778564-26-000199",
    "0000087347-26-000132",
