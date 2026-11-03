@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "3902977cae6fccc1": "2026-10-31T13:02:46.130503+00:00",
-  "5bd765e30916f5d0": "2026-10-31T13:02:46.130503+00:00",
-  "948deeaac8ddd06d": "2026-10-31T13:02:46.130503+00:00",
   "6745c5b219a4b186": "2026-10-31T13:07:46.123212+00:00",
   "3a82d2925901cd7a": "2026-10-31T13:07:46.123212+00:00",
   "48de6eff642c5a5b": "2026-10-31T13:17:46.086068+00:00",
@@ -711,44 +708,11 @@
   "c734d5872cc9e948": "2026-11-03T13:01:50.221002+00:00",
   "010ddbf46d532bed": "2026-11-03T13:01:50.221002+00:00",
   "926243ff8d1a7338": "2026-11-03T13:01:50.221002+00:00",
-  "19ec69e2a1da2eba": "2026-11-03T13:01:50.221002+00:00"
+  "19ec69e2a1da2eba": "2026-11-03T13:01:50.221002+00:00",
+  "ea52f97d683aaae8": "2026-11-03T13:06:50.289737+00:00",
+  "0330b2da79f449bd": "2026-11-03T13:06:50.289737+00:00"
  },
  "recent": [
-  {
-   "title": "Senegal Lawmakers Reject Budget Again, Putting IMF Deal at Risk",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-31/senegal-lawmakers-reject-budget-again-putting-imf-deal-at-risk",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-31T13:02:46.130503+00:00",
-   "title_ru": "Законодатели Сенегала снова отклонили бюджет, поставив под угрозу сделку с МВФ",
-   "lead": "Senegalese lawmakers have again rejected the government’s revised 2026 finance law, prolonging a standoff that threatens to delay approval of a crucial International Monetary Fund program.",
-   "lead_ru": "Сенегальские законодатели снова отклонили пересмотренный правительственный закон о финансах от 2026 года, продлевая противостояние, которое грозит задержать утверждение важнейшей программы Международного валютного фонда."
-  },
-  {
-   "title": "China Finds More Gold, Nickel and Rhenium Reserves, Xinhua Says",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQR2ZMQ2RVSkhkRC1hUmp1SFNfUFNzQUFmTzRMc0pqTmluellpQS1kZ2hHMnkybm5rQThQUWRjV0FhYVdXT1cyM3JhRzdrdmZRa0RsRkxEcWNUMUQ0LVNKajc5OTA2d3hJYzR6NVI4Z2ZrZEdsenNPSWV0aXVTNG5QZHNPT1Z4TGk5THZUOHJjYTVsU2x1Z0YwZUMtNWZGUnhmSWNtTDN6anM3WFI0cjJLRnRsejhJdGFQd19v?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-31T13:02:46.130503+00:00",
-   "title_ru": "Китай обнаружил новые запасы золота, никеля и рения, сообщает Синьхуа",
-   "tags": [
-    "gold",
-    "China"
-   ]
-  },
-  {
-   "title": "The stock market’s front-runners stumbled in October. Here’s where the smart money is moving now.",
-   "link": "https://www.marketwatch.com/story/the-stock-markets-front-runners-stumbled-in-october-heres-where-the-smart-money-is-moving-now-f901472a?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-31T13:02:46.130503+00:00"
-  },
   {
    "title": "Аргентинский банк Galicia закрыл счета части российских клиентов",
    "link": "https://www.rbc.ru/finances/31/10/2026/6ae5df251cbe5894eaedf3d2",
@@ -6497,6 +6461,21 @@
    ],
    "score": 1,
    "ts": "2026-11-03T13:01:50.221002+00:00"
+  },
+  {
+   "title": "Oil to Remain at $100 Per Barrel Through 2027, Oil Analyst Sankey Warns",
+   "link": "https://www.bloomberg.com/news/videos/2026-11-03/oil-to-remain-at-100-per-barrel-through-2027-sankey-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-11-03T13:06:50.289737+00:00",
+   "title_ru": "Нефть останется на уровне $ 100 за баррель до 2027 года, предупреждает нефтяной аналитик Сэнки",
+   "lead": "Paul Sankey, president at Sankey Research, explains the factors that will keep crude above $100 per barrel for the year ahead and how that could impact diesel prices.",
+   "lead_ru": "Пол Сэнки, президент Sankey Research, объясняет факторы, которые будут удерживать нефть выше $ 100 за баррель в течение года, и как это может повлиять на цены на дизельное топливо.",
+   "tags": [
+    "oil"
+   ]
   }
  ],
  "last_digest": "2026-11-02",
