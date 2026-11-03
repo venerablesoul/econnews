@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "5a1cc7209ff33229": "2026-10-31T15:18:19.771871+00:00",
   "46af647bea834d1c": "2026-10-31T15:43:19.830025+00:00",
   "b32451a9c8e74cb1": "2026-10-31T15:53:19.821643+00:00",
   "c55de5cb3fbe8318": "2026-10-31T15:53:19.821643+00:00",
@@ -731,24 +730,10 @@
   "f2dc4c709fe9fac0": "2026-11-03T15:11:50.322348+00:00",
   "1f0f9d18931b4722": "2026-11-03T15:16:50.226299+00:00",
   "da2f9d53c3ec4cee": "2026-11-03T15:16:50.226299+00:00",
-  "e88f4c8ec2dc6868": "2026-11-03T15:16:50.226299+00:00"
+  "e88f4c8ec2dc6868": "2026-11-03T15:16:50.226299+00:00",
+  "1227a1aa40035195": "2026-11-03T15:21:50.421883+00:00"
  },
  "recent": [
-  {
-   "title": "US Midterm Candidates Tap Rare Bipartisan Issue: Credit Card Rates",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-31/us-midterm-candidates-tap-rare-bipartisan-issue-credit-card-rates",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-31T15:18:19.771871+00:00",
-   "title_ru": "Кандидаты на средний срок в США касаются редкой двухпартийной проблемы: цены на кредитные карты",
-   "lead": "With control of Congress hanging on a number of razor-thin races, both Democrats and Republicans are seizing on voters’ frustrations with rising credit card debt to win over inflation-weary Americans.",
-   "lead_ru": "С контролем над Конгрессом, висящим на ряде тонких гонок, как демократы, так и республиканцы используют разочарование избирателей ростом задолженности по кредитным картам, чтобы победить уставших от инфляции американцев.",
-   "tags": [
-    "inflation"
-   ]
-  },
   {
    "title": "Big Oil Is Grappling With How to Spend Its Windfall Profits",
    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNajRVMmtMVGd5M2Rob3dVeG5uZDVYRXFYRlpKOFZoSjBqaTJFYjg2UkJvOW9aUkRfYk1vZWpVNnhwN0tXRGlCYm1UVC1DR1YyUEhfNnRCdDgwNzZtcVZRR0RDUnN0RkJTRnhmdW1za1Y0d0xzazFuMGRUUUhRcjVhRE5nMHJUWWNsMHh4Q2RhdnFjdWh4THpyeHFFMXlfd3dZUnRYMUlNd3NxMlR2eVM4?oc=5",
@@ -6723,7 +6708,7 @@
   "MarketWatch": 0,
   "Банк Англии": 0,
   "Bank of England": 0,
-  "Bank of Russia": 0,
+  "Bank of Russia": 1,
   "ECB": 0,
   "Fed": 0,
   "IMF": 0,
@@ -13682,10 +13667,10 @@
   "checked": "2026-11-03T14:36:50.416320+00:00",
   "sec_seen": [
    "0000920148-26-000224",
-   "0002050987-26-000006",
+   "0001794684-26-000018",
    "0000920148-26-000223",
-   "0001193125-26-444560",
-   "0002079092-26-000008"
+   "0000920148-26-000225",
+   "0001193125-26-444560"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
