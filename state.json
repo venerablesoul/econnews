@@ -645,7 +645,10 @@
   "3d9e566b3cb9237f": "2026-11-03T07:06:49.907565+00:00",
   "f211fc3408503a8e": "2026-11-03T07:06:49.907565+00:00",
   "9296807ee1385339": "2026-11-03T07:06:49.907565+00:00",
-  "ba7b92f4e0f999b2": "2026-11-03T07:06:49.907565+00:00"
+  "ba7b92f4e0f999b2": "2026-11-03T07:06:49.907565+00:00",
+  "b671665737509a9e": "2026-11-03T07:11:49.925887+00:00",
+  "480438ec48db1c10": "2026-11-03T07:11:49.925887+00:00",
+  "65d4ec567ee0040f": "2026-11-03T07:11:49.925887+00:00"
  },
  "recent": [
   {
@@ -5743,6 +5746,36 @@
    "score": 4,
    "ts": "2026-11-03T07:06:49.907565+00:00",
    "title_ru": "Создание условий для устойчивой диверсификации в Алжире"
+  },
+  {
+   "title": "Turkey Inflation Quickens Unexpectedly, Clouding Rate Path",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-03/turkey-inflation-quickens-unexpectedly-clouding-rate-path",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-11-03T07:11:49.925887+00:00",
+   "title_ru": "Инфляция в Турции неожиданно ускорилась, скорость затуманивания",
+   "lead": "Turkish inflation accelerated slightly in October, raising questions about the timing and size of a second straight interest-rate cut.",
+   "lead_ru": "Инфляция в Турции немного ускорилась в октябре, что вызвало вопросы о сроках и размере второго последовательного снижения процентной ставки.",
+   "tags": [
+    "rates",
+    "inflation"
+   ]
+  },
+  {
+   "title": "Oil refinery in Russia's Yaroslavl hit as Russia downs 856 Ukrainian drones overnight",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxONEx1RGU5aFF3aVBjYktROTVsR3VTTXRoa2JWdER4STVoVXEtNGJZUkwtVlNyamFMREpmNlB1UFVCSXg4QnBDVGp2UENiRHRRZUVzY2RxbWdVQ0RyOGwwZzI0WlNuNEo4dGE0RFRoanFqUkZyd2NzOVM2d3BUTUVxcmluNElLN2NJUm5zRjlWc0pEc2NBX1VCLTVROC1idUpRSVpPR1lYeFFfSTVoS1N2TkRqUk9vNmV3YXJsanJ1X2FleXU5S1E?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T07:11:49.925887+00:00",
+   "title_ru": "Нефтеперерабатывающий завод в Ярославле пострадал от того, что Россия за ночь сбила 856 украинских беспилотников",
+   "tags": [
+    "oil",
+    "Russia"
+   ]
   }
  ],
  "last_digest": "2026-11-02",
@@ -12736,8 +12769,8 @@
    "0001914879-26-000006",
    "0001193125-26-444128",
    "0001193125-26-444141",
-   "0001888118-26-000002",
    "0001600301-26-000010",
+   "0001888118-26-000002",
    "0001104659-26-121594",
    "0001493152-26-049664",
    "0001079973-26-001421",
