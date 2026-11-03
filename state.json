@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "7a0775e1548d2649": "2026-10-31T12:27:46.087596+00:00",
   "3902977cae6fccc1": "2026-10-31T13:02:46.130503+00:00",
   "5bd765e30916f5d0": "2026-10-31T13:02:46.130503+00:00",
   "948deeaac8ddd06d": "2026-10-31T13:02:46.130503+00:00",
@@ -701,24 +700,11 @@
   "e4747e3e78443de9": "2026-11-03T12:11:50.322161+00:00",
   "ad9606c1771f98c2": "2026-11-03T12:16:50.122470+00:00",
   "dd6d36094de0168b": "2026-11-03T12:16:50.122470+00:00",
-  "9b5f968110f238d8": "2026-11-03T12:16:50.122470+00:00"
+  "9b5f968110f238d8": "2026-11-03T12:16:50.122470+00:00",
+  "f66dc19512de7918": "2026-11-03T12:31:50.211882+00:00",
+  "7248e41b9bcdb02d": "2026-11-03T12:31:50.211882+00:00"
  },
  "recent": [
-  {
-   "title": "Russia Extends Ban on Most Diesel Exports Through January",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-31/russia-extends-ban-on-most-diesel-exports-through-january",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-31T12:27:46.087596+00:00",
-   "title_ru": "Россия продлила запрет на большую часть экспорта дизельного топлива до января",
-   "lead": "Russia’s government has extended a general ban on diesel exports by producers until the end of January while still allowing some volumes to flow to the global market.",
-   "lead_ru": "Правительство России продлило общий запрет на экспорт дизельного топлива производителями до конца января, все еще позволяя некоторым объемам поступать на мировой рынок.",
-   "tags": [
-    "Russia"
-   ]
-  },
   {
    "title": "Senegal Lawmakers Reject Budget Again, Putting IMF Deal at Risk",
    "link": "https://www.bloomberg.com/news/articles/2026-10-31/senegal-lawmakers-reject-budget-again-putting-imf-deal-at-risk",
@@ -6373,6 +6359,25 @@
    ],
    "score": 1,
    "ts": "2026-11-03T12:16:50.122470+00:00"
+  },
+  {
+   "title": "ADNOC Gas CEO says long-term gas demand to grow, calls for more diversified energy",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNWTJ4SVlvR1FDRHladzFyLVMwMk4wS1JQWDdIbkVDWVZnSG1CczlneGU5QkYxVzlfZjZScXBGakpad00tUW9YYXFhajdsSVZtVkhrSTlwUGh5NzUxd21wenAtMVUxZnZ1SjJNY3I2WVQ5Xy11OENiNFdudURhY3Nwd2FRdm5IY1lQU0F4dEE3UGl1bXhmX3A2UWdvbERyNXgwaFMwdlNIWXdEVHBXbFNOVVp0QlozMHdTVU40Y2RxTTVyN1NI?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T12:31:50.211882+00:00",
+   "title_ru": "Генеральный директор ADNOC Gas говорит, что долгосрочный спрос на газ будет расти, что требует более диверсификации энергетики"
+  },
+  {
+   "title": "11 bargain-priced stocks of companies that have huge growth potential over the next two years",
+   "link": "https://www.marketwatch.com/story/11-bargain-priced-stocks-of-companies-that-have-huge-growth-potential-over-the-next-two-years-d62618e6?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 2,
+   "ts": "2026-11-03T12:31:50.211882+00:00"
   }
  ],
  "last_digest": "2026-11-02",
@@ -13348,7 +13353,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-11-03T11:26:50.468234+00:00",
+  "checked": "2026-11-03T12:31:50.211882+00:00",
   "sec_seen": [
    "0001104659-26-121593",
    "0002157538-26-000004",
