@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "ca7508941492ad65": "2026-10-31T11:32:46.107977+00:00",
   "b88345da7c47ff03": "2026-10-31T12:07:46.118777+00:00",
   "e385915a0f3925ae": "2026-10-31T12:12:46.179377+00:00",
   "7a0775e1548d2649": "2026-10-31T12:27:46.087596+00:00",
@@ -685,7 +684,15 @@
   "4f8c296a20e250d1": "2026-11-03T11:26:50.468234+00:00",
   "2dcca4ce3daba3d4": "2026-11-03T11:26:50.468234+00:00",
   "e8cab99d09289591": "2026-11-03T11:26:50.468234+00:00",
-  "a70ea8012d77caac": "2026-11-03T11:26:50.468234+00:00"
+  "a70ea8012d77caac": "2026-11-03T11:26:50.468234+00:00",
+  "c6e2cd87793b1a30": "2026-11-03T11:31:50.193918+00:00",
+  "c55509c82e691cac": "2026-11-03T11:31:50.193918+00:00",
+  "984e65abd01d5bc9": "2026-11-03T11:31:50.193918+00:00",
+  "4cc0c688cdc75122": "2026-11-03T11:31:50.193918+00:00",
+  "5e2f6981cc8d0990": "2026-11-03T11:36:50.078206+00:00",
+  "1f1ca2ac56509c4e": "2026-11-03T11:36:50.078206+00:00",
+  "3d78ca38861d0178": "2026-11-03T11:36:50.078206+00:00",
+  "20c57eacd703d2b2": "2026-11-03T11:36:50.078206+00:00"
  },
  "recent": [
   {
@@ -6244,6 +6251,26 @@
    ],
    "score": 1,
    "ts": "2026-11-03T11:26:50.468234+00:00"
+  },
+  {
+   "title": "Germany lags EU neighbours with gas storage refill as winter starts",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPdzdrUmxPR2VjcWJoNUlPWDJ2emg0TTkzenMxNWJweG04OHFhd3hZbC1wajlHUlBFS2RLWDVkZE85V1pwQkZPOUR2MjZHX2hiQ3NZMEs3eHhkSkdsRjNJZktodmwtdGFuOWtXbEdmZ2JEY3duX1lHQzF6eVJjaDNZZ2xQdlAtem9sclE4ek5hUFZ2Q084Y0dqRzkwOFRmc2o1dlBDRHVVbktHeVVqVVpPN1NxZVg5cTg?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T11:36:50.078206+00:00",
+   "title_ru": "Германия отстает от соседей по ЕС в пополнении запасов газа с началом зимы"
+  },
+  {
+   "title": "BOJ seeks to make ammunition last longer as options dwindle",
+   "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1BTzUzTW9mMWxpOWtkZ0tDVnVvNE1kZE53X1FGamlrOUpsb1MtSDlSTUE3TndRT3pwS2tLZ0kzLWgzZUw5emhyZm4xazMwSjl4OVNQM25kVjdRbzM4?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T11:36:50.078206+00:00",
+   "title_ru": "Банк Японии стремится продлить срок службы боеприпасов, поскольку возможности выбора сокращаются"
   }
  ],
  "last_digest": "2026-11-02",
@@ -6268,7 +6295,7 @@
   "ECB": 0,
   "Fed": 0,
   "IMF": 0,
-  "Kommersant": 0,
+  "Kommersant": 1,
   "RBC": 0,
   "US Labor Statistics (BLS)": 0
  },
@@ -13230,9 +13257,9 @@
    "0001213900-26-115107",
    "0001210033-26-000012",
    "0001548006-26-000012",
+   "0001193125-26-444126",
    "0001225208-26-008590",
    "0001817217-26-000014",
-   "0001193125-26-444126",
    "0001692514-26-000005",
    "0000950157-26-001158",
    "0000812011-26-000165",
