@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "17bd51636a56b9e3": "2026-10-31T14:27:46.114655+00:00",
   "5a1cc7209ff33229": "2026-10-31T15:18:19.771871+00:00",
   "46af647bea834d1c": "2026-10-31T15:43:19.830025+00:00",
   "b32451a9c8e74cb1": "2026-10-31T15:53:19.821643+00:00",
@@ -726,22 +725,6 @@
   "9738c7c1ac3645bc": "2026-11-03T14:26:50.751723+00:00"
  },
  "recent": [
-  {
-   "title": "Investors trim growth bets over fears of US economy’s AI exposure",
-   "link": "https://www.ft.com/content/56b0d5fa-829c-47b1-b07b-b4be18f60151?syn-25a6b1a6=1",
-   "sources": [
-    "Financial Times"
-   ],
-   "score": 6,
-   "ts": "2026-10-31T14:27:46.114655+00:00",
-   "title_ru": "Инвесторы снижают ставки на рост из-за опасений воздействия искусственного интеллекта на экономику США",
-   "lead": "Return to bonds after long sell-off comes as concern rises about over-reliance on tech spending",
-   "lead_ru": "Возвращение к облигациям после длительной распродажи происходит на фоне растущей обеспокоенности по поводу чрезмерной зависимости от расходов на технологии.",
-   "tags": [
-    "bonds",
-    "markets"
-   ]
-  },
   {
    "title": "US Midterm Candidates Tap Rare Bipartisan Issue: Credit Card Rates",
    "link": "https://www.bloomberg.com/news/articles/2026-10-31/us-midterm-candidates-tap-rare-bipartisan-issue-credit-card-rates",
@@ -9614,6 +9597,22 @@
    },
    {
     "src": "sec",
+    "id": "500dc8345b3ffcee",
+    "ticker": "CSTM",
+    "company": "CONSTELLIUM SE",
+    "who": "Jean-Christophe Deslarzes",
+    "role": "Director",
+    "type": "buy",
+    "value": 42138,
+    "shares": 1800,
+    "price": 23.41,
+    "plan": false,
+    "date": "2026-11-02",
+    "disclosed": "2026-11-03",
+    "link": "https://www.sec.gov/Archives/edgar/data/2092745/000156341126000202/0001563411-26-000202-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "aa5557be5155fb74",
     "ticker": "TSM",
     "company": "TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD",
@@ -13563,22 +13562,6 @@
     "date": "2026-10-26",
     "disclosed": "2026-10-27",
     "link": "https://www.sec.gov/Archives/edgar/data/2040262/000121390026113031/0001213900-26-113031-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "2682956906260772",
-    "ticker": "CRWD",
-    "company": "CrowdStrike Holdings, Inc.",
-    "who": "George Kurtz",
-    "role": "CEO",
-    "type": "sell",
-    "value": 5111835,
-    "shares": 20000,
-    "price": 255.59,
-    "plan": true,
-    "date": "2026-10-26",
-    "disclosed": "2026-10-27",
-    "link": "https://www.sec.gov/Archives/edgar/data/1778564/000177856426000193/0001778564-26-000193-index.htm"
    }
   ],
   "docs": {
@@ -13612,28 +13595,26 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-11-03T13:31:50.248423+00:00",
+  "checked": "2026-11-03T14:36:50.416320+00:00",
   "sec_seen": [
    "0001940653-26-000005",
+   "0001563411-26-000202",
    "0001463928-26-000002",
    "0001708055-26-000091",
    "0000072331-26-000074",
    "0000072331-26-000076",
-   "0002140162-26-000008",
    "0001193125-26-444483",
-   "0001647660-26-000019",
-   "0001065088-26-000214",
    "0000072331-26-000072",
    "0000072331-26-000068",
    "0001211005-26-000002",
    "0001454309-26-000009",
    "0001193125-26-444482",
-   "0001065088-26-000219",
    "0001193125-26-444481",
-   "0001065088-26-000216",
+   "0001629963-26-000007",
+   "0001219555-26-000008",
    "0001493152-26-049721",
-   "0001225208-26-008592",
-   "0001065088-26-000221"
+   "0001403373-26-000009",
+   "0001225208-26-008592"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
