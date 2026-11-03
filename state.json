@@ -595,7 +595,11 @@
   "22d6ede5cc12319e": "2026-11-02T23:40:44.480851+00:00",
   "49f709a9859c781e": "2026-11-02T23:45:44.335921+00:00",
   "a8275e02227b60ee": "2026-11-02T23:55:44.421261+00:00",
-  "6b7dff80a863a152": "2026-11-02T23:55:44.421261+00:00"
+  "6b7dff80a863a152": "2026-11-02T23:55:44.421261+00:00",
+  "792442693243bf5d": "2026-11-03T00:00:44.368179+00:00",
+  "78525365a8e69f6b": "2026-11-03T00:00:44.368179+00:00",
+  "dbc474b9f501e32a": "2026-11-03T00:00:44.368179+00:00",
+  "1c098f8cfa7f9482": "2026-11-03T00:05:44.489351+00:00"
  },
  "recent": [
   {
@@ -5117,6 +5121,15 @@
    "tags": [
     "Fed"
    ]
+  },
+  {
+   "title": "Nasdaq-100 tumbles into its third correction this year as AI worries mount",
+   "link": "https://www.marketwatch.com/story/nasdaq-100-tumbles-into-its-third-correction-this-year-as-ai-worries-mount-abee4c0d?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-11-03T00:05:44.489351+00:00"
   }
  ],
  "last_digest": "2026-11-02",
@@ -5168,7 +5181,7 @@
   "2026-11-02-21"
  ],
  "calendar": {
-  "fetched": "2026-11-02T18:04:13.228943+00:00",
+  "fetched": "2026-11-03T00:05:44.489351+00:00",
   "events": [
    {
     "title": "Daylight Saving Time Shift",
@@ -5349,7 +5362,7 @@
    {
     "title": "Loan Officer Survey",
     "country": "USD",
-    "ts": "2026-11-02T19:03:00+00:00",
+    "ts": "2026-11-02T19:00:00+00:00",
     "impact": "Low",
     "forecast": "",
     "previous": ""
@@ -5431,7 +5444,7 @@
     "country": "USD",
     "ts": "2026-11-03T15:00:00+00:00",
     "impact": "Medium",
-    "forecast": "7.11M",
+    "forecast": "7.15M",
     "previous": "7.08M"
    },
    {
@@ -5455,7 +5468,7 @@
     "country": "USD",
     "ts": "2026-11-03T15:15:00+00:00",
     "impact": "Low",
-    "forecast": "15.9M",
+    "forecast": "15.8M",
     "previous": "16.0M"
    },
    {
@@ -5551,7 +5564,7 @@
     "country": "CNY",
     "ts": "2026-11-04T01:45:00+00:00",
     "impact": "Low",
-    "forecast": "51.5",
+    "forecast": "51.7",
     "previous": "51.6"
    },
    {
@@ -5559,7 +5572,7 @@
     "country": "EUR",
     "ts": "2026-11-04T08:00:00+00:00",
     "impact": "Low",
-    "forecast": "25.3K",
+    "forecast": "18.7K",
     "previous": "23.6K"
    },
    {
@@ -5567,7 +5580,7 @@
     "country": "EUR",
     "ts": "2026-11-04T08:15:00+00:00",
     "impact": "Low",
-    "forecast": "57.5",
+    "forecast": "57.6",
     "previous": "58.3"
    },
    {
@@ -5575,7 +5588,7 @@
     "country": "EUR",
     "ts": "2026-11-04T08:45:00+00:00",
     "impact": "Low",
-    "forecast": "51.0",
+    "forecast": "51.4",
     "previous": "51.7"
    },
    {
@@ -5631,7 +5644,7 @@
     "country": "USD",
     "ts": "2026-11-04T13:15:00+00:00",
     "impact": "Low",
-    "forecast": "68K",
+    "forecast": "67K",
     "previous": "90K"
    },
    {
@@ -5639,7 +5652,7 @@
     "country": "CAD",
     "ts": "2026-11-04T13:30:00+00:00",
     "impact": "Low",
-    "forecast": "3.8B",
+    "forecast": "4.8B",
     "previous": "4.2B"
    },
    {
@@ -5663,7 +5676,7 @@
     "country": "USD",
     "ts": "2026-11-04T15:00:00+00:00",
     "impact": "Medium",
-    "forecast": "54.9",
+    "forecast": "54.8",
     "previous": "54.9"
    },
    {
@@ -5687,7 +5700,7 @@
     "country": "AUD",
     "ts": "2026-11-05T00:30:00+00:00",
     "impact": "Low",
-    "forecast": "0.96B",
+    "forecast": "0.94B",
     "previous": "0.50B"
    },
    {
@@ -5711,7 +5724,7 @@
     "country": "EUR",
     "ts": "2026-11-05T07:00:00+00:00",
     "impact": "Low",
-    "forecast": "4.9%",
+    "forecast": "4.6%",
     "previous": "-10.6%"
    },
    {
@@ -5719,7 +5732,7 @@
     "country": "EUR",
     "ts": "2026-11-05T07:45:00+00:00",
     "impact": "Low",
-    "forecast": "0.4%",
+    "forecast": "0.3%",
     "previous": "-0.3%"
    },
    {
@@ -5735,7 +5748,7 @@
     "country": "EUR",
     "ts": "2026-11-05T09:00:00+00:00",
     "impact": "Low",
-    "forecast": "0.1%",
+    "forecast": "0.0%",
     "previous": "0.3%"
    },
    {
@@ -5743,7 +5756,7 @@
     "country": "GBP",
     "ts": "2026-11-05T09:30:00+00:00",
     "impact": "Low",
-    "forecast": "46.5",
+    "forecast": "46.4",
     "previous": "46.1"
    },
    {
@@ -5751,7 +5764,7 @@
     "country": "EUR",
     "ts": "2026-11-05T10:00:00+00:00",
     "impact": "Low",
-    "forecast": "2.6%",
+    "forecast": "2.5%",
     "previous": "1.9%"
    },
    {
@@ -5919,7 +5932,7 @@
     "country": "EUR",
     "ts": "2026-11-06T07:00:00+00:00",
     "impact": "Low",
-    "forecast": "-0.2%",
+    "forecast": "0.0%",
     "previous": "2.0%"
    },
    {
@@ -5991,7 +6004,7 @@
     "country": "CAD",
     "ts": "2026-11-06T13:30:00+00:00",
     "impact": "High",
-    "forecast": "14.5K",
+    "forecast": "14.6K",
     "previous": "-68.3K"
    },
    {
@@ -6015,7 +6028,7 @@
     "country": "USD",
     "ts": "2026-11-06T13:30:00+00:00",
     "impact": "High",
-    "forecast": "63K",
+    "forecast": "65K",
     "previous": "29K"
    },
    {
@@ -6047,7 +6060,7 @@
     "country": "USD",
     "ts": "2026-11-06T15:00:00+00:00",
     "impact": "Medium",
-    "forecast": "47.8",
+    "forecast": "48.1",
     "previous": "46.3"
    },
    {
@@ -6079,7 +6092,7 @@
     "country": "USD",
     "ts": "2026-11-06T20:00:00+00:00",
     "impact": "Low",
-    "forecast": "12.0B",
+    "forecast": "13.4B",
     "previous": "8.3B"
    },
    {
@@ -8158,6 +8171,22 @@
    },
    {
     "src": "sec",
+    "id": "345715f2f7cbf354",
+    "ticker": "SLB",
+    "company": "SLB LIMITED/NV",
+    "who": "Peuch Olivier Le",
+    "role": "CEO",
+    "type": "sell",
+    "value": 1322500,
+    "shares": 25000,
+    "price": 52.9,
+    "plan": true,
+    "date": "2026-11-02",
+    "disclosed": "2026-11-02",
+    "link": "https://www.sec.gov/Archives/edgar/data/1497824/000008734726000132/0000087347-26-000132-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "5e3c2dbfef2ed1af",
     "ticker": "API",
     "company": "Agora, Inc.",
@@ -8427,6 +8456,38 @@
     "date": "2026-10-30",
     "disclosed": "2026-11-02",
     "link": "https://www.sec.gov/Archives/edgar/data/2033834/000203383426000023/0002033834-26-000023-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "058fcc98db0b797a",
+    "ticker": "FTV",
+    "company": "Fortive Corp",
+    "who": "Christopher M. Mulhall",
+    "role": "VP - Chief Accounting Officer",
+    "type": "sell",
+    "value": 1708247,
+    "shares": 26055,
+    "price": 65.56,
+    "plan": false,
+    "date": "2026-10-30",
+    "disclosed": "2026-11-02",
+    "link": "https://www.sec.gov/Archives/edgar/data/1791884/000179188426000011/0001791884-26-000011-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "6963c75491239ae5",
+    "ticker": "FTV",
+    "company": "Fortive Corp",
+    "who": "Peter C Underwood",
+    "role": "General Counsel",
+    "type": "sell",
+    "value": 3129353,
+    "shares": 48442,
+    "price": 64.6,
+    "plan": false,
+    "date": "2026-10-30",
+    "disclosed": "2026-11-02",
+    "link": "https://www.sec.gov/Archives/edgar/data/1659166/000150237026000017/0001502370-26-000017-index.htm"
    },
    {
     "src": "sec",
@@ -12011,58 +12072,9 @@
     "date": "2026-10-23",
     "disclosed": "2026-10-27",
     "link": "https://www.sec.gov/Archives/edgar/data/1379422/000122520826008524/0001225208-26-008524-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "9bf1a9a2da49c259",
-    "ticker": "CRBG",
-    "company": "Corebridge Financial, Inc.",
-    "who": "Nippon Life Insurance Co",
-    "role": "10% owner",
-    "type": "buy",
-    "value": 20230673,
-    "shares": 595609,
-    "price": 33.97,
-    "plan": true,
-    "date": "2026-10-23",
-    "disclosed": "2026-10-27",
-    "link": "https://www.sec.gov/Archives/edgar/data/1889539/000119312526434287/0001193125-26-434287-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "1e851197b4d4e39e",
-    "ticker": "STC",
-    "company": "STEWART INFORMATION SERVICES CORP",
-    "who": "Deborah Jane Matz",
-    "role": "Director",
-    "type": "buy",
-    "value": 43910,
-    "shares": 1000,
-    "price": 43.91,
-    "plan": false,
-    "date": "2026-10-23",
-    "disclosed": "2026-10-27",
-    "link": "https://www.sec.gov/Archives/edgar/data/1814738/000162828026067619/0001628280-26-067619-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "7166ec7d67c58431",
-    "ticker": "AMPL",
-    "company": "Amplitude, Inc.",
-    "who": "Spenser Skates",
-    "role": "CEO, 10% owner",
-    "type": "sell",
-    "value": 1876958,
-    "shares": 107136,
-    "price": 17.52,
-    "plan": true,
-    "date": "2026-10-23",
-    "disclosed": "2026-10-27",
-    "link": "https://www.sec.gov/Archives/edgar/data/1882913/000161071726000444/0001610717-26-000444-index.htm"
    }
   ],
   "docs": {
-   "20035490": "2026-10-16",
    "20035551": "2026-10-19",
    "20035671": "2026-10-19",
    "20035687": "2026-10-20",
@@ -12093,10 +12105,10 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-11-02T23:00:44.486116+00:00",
+  "checked": "2026-11-03T00:05:44.489351+00:00",
   "sec_seen": [
-   "0001698291-26-000006",
    "0001338176-26-000040",
+   "0000087347-26-000132",
    "0001193125-26-444030",
    "0001285737-26-000004",
    "0000050863-26-000194",
@@ -12111,8 +12123,8 @@
    "0002017287-26-000006",
    "0001677297-26-000008",
    "0001628280-26-069012",
-   "0001056313-26-000002",
    "0001628280-26-069019",
+   "0001213900-26-115071",
    "0001510281-26-000401",
    "0001501227-26-000006",
    "0001836156-26-000008",
@@ -12126,6 +12138,7 @@
    "0001783108-26-000036",
    "0001510281-26-000402",
    "0001061983-26-000107",
+   "0001274737-26-000058",
    "0001888118-26-000002",
    "0001628280-26-069008",
    "0001193125-26-443950",
@@ -12135,8 +12148,9 @@
    "0002094859-26-000003",
    "0001193125-26-443949",
    "0001193125-26-443960",
+   "0001791884-26-000011",
+   "0001502370-26-000017",
    "0002020161-26-000015",
-   "0002031312-26-000002",
    "0001193125-26-443969",
    "0001104659-26-121544",
    "0001104659-26-121502",
