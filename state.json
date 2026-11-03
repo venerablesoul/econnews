@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "46af647bea834d1c": "2026-10-31T15:43:19.830025+00:00",
   "b32451a9c8e74cb1": "2026-10-31T15:53:19.821643+00:00",
   "c55de5cb3fbe8318": "2026-10-31T15:53:19.821643+00:00",
   "09a59aff65e18c61": "2026-10-31T16:03:19.822803+00:00",
@@ -734,7 +733,9 @@
   "1227a1aa40035195": "2026-11-03T15:21:50.421883+00:00",
   "d5af898b2b092635": "2026-11-03T15:31:51.392322+00:00",
   "8798c43d6454e958": "2026-11-03T15:36:50.400709+00:00",
-  "c433d489922bb6b4": "2026-11-03T15:41:50.337900+00:00"
+  "c433d489922bb6b4": "2026-11-03T15:41:50.337900+00:00",
+  "75c627db5f4396c9": "2026-11-03T15:46:50.723291+00:00",
+  "76e19ab6267a4f14": "2026-11-03T15:46:50.723291+00:00"
  },
  "recent": [
   {
@@ -6706,6 +6707,32 @@
    "tags": [
     "markets",
     "jobs"
+   ]
+  },
+  {
+   "title": "Venezuela’s Oil Rush Brings Private Jets and Soaring Rents to Frontier Town",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNVEhiRmFJbWU5OTdFeFlwWnZ4OE4tMHVkRjV0TmhFT2d5TkNBT2tXamhKNjJoWVRoVHUzdzZlTkYwLUNqVjNVeUVDbnJZM1BHcm9OcmVPcldXMEVsZkpBQmxUd29mUGp5ZmhsSjlSaEVTMkJPdC1VdHliZFI3bDcyTDBWbWpFMm8zYTJvUGlaZlI2MS01ckxGU2R4MFpGRkRNb1UxWHRiQUNUUWM3dlN2SDF2SU1Sb1BpS1hTRA?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T15:46:50.723291+00:00",
+   "title_ru": "Нефтяная лихорадка Венесуэлы приносит частные самолеты и растущую арендную плату в пограничный город",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "Thomson Reuters revenue rises, shares fall on investment costs",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOWnVHclJoU0xGWExjOEtCUTlJU1c4VkJXaUQwYmo0dGg4LVhTd3B6a19vUGFFMUNIbktfYlQ1a2t2V2FiT3FNaUt4ZUh6ZDhBZmhEZFZqckVnbUZlamtiWGdsSTBPSEtGaU90WVViYkhaR3VfS1hMOERsYzgzVGJVZ1ZpdHdrY094c0VZZzBXRnJvVVBadm9MM1QtdE5NZw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T15:46:50.723291+00:00",
+   "title_ru": "Выручка Thomson Reuters растет, акции падают на инвестиционные затраты",
+   "tags": [
+    "markets"
    ]
   }
  ],
@@ -13693,7 +13720,8 @@
    "0000080424-26-000268"
   ],
   "errors": {
-   "senate": "HTTPError: HTTP Error 403: Forbidden"
+   "senate": "HTTPError: HTTP Error 403: Forbidden",
+   "sec": "TimeoutError: The read operation timed out"
   }
  },
  "cal_actuals": {
