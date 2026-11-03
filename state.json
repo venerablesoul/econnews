@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "9630baa10b83a2ea": "2026-10-31T14:07:46.137040+00:00",
   "b6f61a47e1bbde91": "2026-10-31T14:22:46.112084+00:00",
   "17bd51636a56b9e3": "2026-10-31T14:27:46.114655+00:00",
   "5a1cc7209ff33229": "2026-10-31T15:18:19.771871+00:00",
@@ -719,18 +718,11 @@
   "f26b3c432e70934c": "2026-11-03T13:46:50.242413+00:00",
   "5c60faa315b82aef": "2026-11-03T13:56:50.244520+00:00",
   "c5f898c06bd5c8b1": "2026-11-03T14:06:50.427301+00:00",
-  "1a48872481ae8a43": "2026-11-03T14:06:50.427301+00:00"
+  "1a48872481ae8a43": "2026-11-03T14:06:50.427301+00:00",
+  "2beeca29ac044a66": "2026-11-03T14:11:50.434345+00:00",
+  "518fbec0ed9e7613": "2026-11-03T14:11:50.434345+00:00"
  },
  "recent": [
-  {
-   "title": "Your stock portfolio increasingly hinges on the bond market — and the midterm elections",
-   "link": "https://www.marketwatch.com/story/your-stock-portfolio-increasingly-hinges-on-the-bond-market-and-the-midterm-elections-dc1abadb?mod=mw_rss_topstories",
-   "sources": [
-    "MarketWatch"
-   ],
-   "score": 1,
-   "ts": "2026-10-31T14:07:46.137040+00:00"
-  },
   {
    "title": "Investors trim growth bets over fears of US economy’s AI exposure",
    "link": "https://www.ft.com/content/56b0d5fa-829c-47b1-b07b-b4be18f60151?syn-25a6b1a6=1",
@@ -6584,6 +6576,15 @@
    "score": 3,
    "ts": "2026-11-03T14:06:50.427301+00:00",
    "title_ru": "Южная Африка готовится к потере рабочих мест, поскольку торговые льготы США заканчиваются"
+  },
+  {
+   "title": "This indicator has triggered just 5 times since 2000 — and it warns of a trap for stocks",
+   "link": "https://www.marketwatch.com/story/this-indicator-has-triggered-just-5-times-since-2000-and-it-warns-of-a-trap-for-stocks-a1cbd579?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 2,
+   "ts": "2026-11-03T14:11:50.434345+00:00"
   }
  ],
  "last_digest": "2026-11-02",
@@ -7584,7 +7585,8 @@
   "JPY|2026-10-30T02:30:00+00:00|BOJ Policy Rate",
   "JPY|2026-10-30T02:30:00+00:00|Monetary Policy Statement",
   "JPY|2026-10-30T02:31:00+00:00|BOJ Outlook Report",
-  "JPY|2026-10-30T05:30:00+00:00|BOJ Press Conference"
+  "JPY|2026-10-30T05:30:00+00:00|BOJ Press Conference",
+  "USD|2026-11-03T15:16:00+00:00|Congressional Elections"
  ],
  "last_morning": "2026-11-03",
  "all_down_alerted": false,
@@ -13566,14 +13568,13 @@
    "0001193125-26-444483",
    "0001647660-26-000019",
    "0001065088-26-000214",
-   "0001046179-26-000732",
+   "0000072331-26-000068",
    "0001374339-26-000010",
    "0001193125-26-444482",
    "0001065088-26-000219",
    "0001909068-26-000026",
    "0001193125-26-444481",
    "0002000358-26-000027",
-   "0001193125-26-444147",
    "0001065088-26-000216",
    "0001104659-26-121667",
    "0001493152-26-049721",
