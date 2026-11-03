@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "80e72ddb77969232": "2026-10-31T06:17:16.057551+00:00",
-  "ae4a2996ddaf2033": "2026-10-31T06:17:16.057551+00:00",
   "3ddee3342475be14": "2026-10-31T06:22:16.044097+00:00",
   "cceefac1d6be112d": "2026-10-31T06:27:16.110388+00:00",
   "649b18a63c9ada96": "2026-10-31T06:42:16.073749+00:00",
@@ -635,7 +633,9 @@
   "be1ef3fb2bbfaf0d": "2026-11-03T06:11:49.930497+00:00",
   "33619b0e9322e2c3": "2026-11-03T06:16:49.939410+00:00",
   "90516a96447fd45e": "2026-11-03T06:16:49.939410+00:00",
-  "1935f1b28f12a302": "2026-11-03T06:16:49.939410+00:00"
+  "1935f1b28f12a302": "2026-11-03T06:16:49.939410+00:00",
+  "8b9936ad02d5b26b": "2026-11-03T06:21:49.952263+00:00",
+  "c7f1c89c6286e914": "2026-11-03T06:21:49.952263+00:00"
  },
  "recent": [
   {
@@ -5669,6 +5669,32 @@
    ],
    "score": 1,
    "ts": "2026-11-03T06:16:49.939410+00:00"
+  },
+  {
+   "title": "AI-related debt binge may pressure European bond markets",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOblQ0XzlqZzJsa2FDYW5uSVdhTUluMGpBaEY0NV9hSXNZWUMtMGtBX202UnhyWWR3NmJ5VGtMLUtJOGllZjRfVGZVU05aZFBDQldVT29SOTg0a3owVVkwa000ZnktWmlwaUdWRFg4QzhYNXFCVm1oaGlFRXlzQnJtcjN4T01VN0Y5cmhKdVJoOG1FVWg3WXFIbjI0d3Vhd1Fhanhn?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-11-03T06:21:49.952263+00:00",
+   "title_ru": "Долговое пьянство, связанное с ИИ, может оказать давление на европейские рынки облига",
+   "tags": [
+    "bonds"
+   ]
+  },
+  {
+   "title": "India's 2026 gold demand seen falling to six-year low on price rise",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOaUE0SkF5VEdGaDktM2p1UmtpczI2QnFrSGFYU2VrNl9FSkFBZWxDb05oU0dYWDN4SXpIYUxyVzc4Si1iNG9QcGJLTXhzUHlKMTljSFhTSHdCMG5FZkx3WU5SN2R3bUFscjV1YzNYdk80YU5taEQtUUEyam04RVlvOExYWk51YVhZRnUxb3J2bjlsQ0VCeTJmbXpMMGYtLUxGckVqM0tZNjB1ZFI3?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T06:21:49.952263+00:00",
+   "title_ru": "Спрос на золото в Индии в 2026 году упал до шестилетнего минимума на фоне роста цен",
+   "tags": [
+    "gold"
+   ]
   }
  ],
  "last_digest": "2026-11-02",
@@ -12644,7 +12670,7 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-11-03T05:21:49.914379+00:00",
+  "checked": "2026-11-03T06:21:49.952263+00:00",
   "sec_seen": [
    "0001531352-26-000014",
    "0002157538-26-000004",
@@ -12662,8 +12688,8 @@
    "0001914879-26-000006",
    "0001193125-26-444128",
    "0001193125-26-444141",
-   "0001888118-26-000002",
    "0001600301-26-000010",
+   "0001888118-26-000002",
    "0001104659-26-121594",
    "0001493152-26-049664",
    "0001079973-26-001421",
