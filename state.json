@@ -1,8 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "b2f9382dedcec13e": "2026-10-31T20:43:52.080895+00:00",
-  "d6d67c40c91ebc7a": "2026-10-31T20:43:52.080895+00:00",
   "59ebd5208369cdb1": "2026-10-31T21:03:52.078926+00:00",
   "f84e1e24c52c106f": "2026-10-31T21:18:52.061698+00:00",
   "96991facfbd089df": "2026-10-31T21:48:52.066030+00:00",
@@ -772,7 +770,9 @@
   "f27add23b83a3913": "2026-11-03T20:02:28.707792+00:00",
   "78ce690271973d1a": "2026-11-03T20:17:29.017645+00:00",
   "335b14cce800d50d": "2026-11-03T20:22:32.817905+00:00",
-  "b5809710b006f168": "2026-11-03T20:37:26.896845+00:00"
+  "b5809710b006f168": "2026-11-03T20:37:26.896845+00:00",
+  "0f2de9cf45096e6e": "2026-11-03T20:47:25.049159+00:00",
+  "3ff5a9bf54b87067": "2026-11-03T20:52:27.654308+00:00"
  },
  "recent": [
   {
@@ -7125,6 +7125,20 @@
    "score": 5,
    "ts": "2026-11-03T20:37:26.896845+00:00",
    "title_ru": "Великобритания сделает пожизненный пенсионный доход дефолтом для частных пенсий"
+  },
+  {
+   "title": "Canadian dollar pulls back from six-week high ahead of key jobs data",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNVVAzLVR0Q0RIUXNCM3c5OG9UWl8yeFIzeldSWkpDVUlaY1ZjMDNnVE1LaEcxYm9mY2tCR01FRlNQQ3I2NmNXOEJ3M01Jd0Ruc1FvYmxkWmdIYll0eHMza1g0d1hPb0Y1SVRzWjM5UDdmdll1MWxDTTBZS2xzNkxpclhnVUJuQjNvcDRaU1lqNGFwR3hZTnFSbm8wUWJtbUM1LXVxWVRBZ3I?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-11-03T20:52:27.654308+00:00",
+   "title_ru": "Канадский доллар откатился от шестинедельного максимума в преддверии ключевых данных по занятости",
+   "tags": [
+    "dollar",
+    "jobs"
+   ]
   }
  ],
  "last_digest": "2026-11-03",
@@ -7147,7 +7161,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 0,
+  "Fed": 2,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
@@ -14103,9 +14117,12 @@
   },
   "checked": "2026-11-03T20:37:26.896845+00:00",
   "sec_seen": [
-   "0001666215-26-000009",
+   "0001674621-26-000010",
+   "0000310354-26-000114",
+   "0002075704-26-000041",
    "0002132641-26-000004",
-   "0002075704-26-000041"
+   "0001331748-26-000014",
+   "0002080157-26-000018"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
