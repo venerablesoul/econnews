@@ -738,7 +738,11 @@
   "5a84e61424f86d00": "2026-11-03T16:11:50.295258+00:00",
   "bb5b4a0ee7a1fd60": "2026-11-03T16:11:50.295258+00:00",
   "b46ba0d7854d0268": "2026-11-03T16:21:50.592033+00:00",
-  "41baa953c9754c92": "2026-11-03T16:31:50.577791+00:00"
+  "41baa953c9754c92": "2026-11-03T16:31:50.577791+00:00",
+  "fcc06ba90c50d0cd": "2026-11-03T16:36:50.177653+00:00",
+  "acf65fbffbe6d942": "2026-11-03T16:41:50.220150+00:00",
+  "e82297e05958f8f6": "2026-11-03T16:41:50.220150+00:00",
+  "6748b8e923dbd43d": "2026-11-03T16:41:50.220150+00:00"
  },
  "recent": [
   {
@@ -6759,6 +6763,54 @@
    "title_ru": "Уровень сахара снизился до пятинедельного минимума, поскольку рынок с высоким индийским производством подталкивает",
    "lead": "Sugar slid after data showed Indian production is running well ahead of last season, deepening a slump that has futures down more than 13% from last month’s peak.",
    "lead_ru": "Сахар упал после того, как данные показали, что индийское производство значительно опережает прошлый сезон, усугубляя спад, который привел к падению фьючерсов более чем на 13% по сравнению с пиком прошлого месяца."
+  },
+  {
+   "title": "Последствия атак на холодильники в Европе",
+   "link": "https://www.rbc.ru/photoslider/6ae9fd83130db983efe702cf",
+   "sources": [
+    "RBC"
+   ],
+   "score": 1,
+   "ts": "2026-11-03T16:36:50.177653+00:00"
+  },
+  {
+   "title": "Brazil economists raise inflation, rate forecasts after Lula reelection",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQd2NpZHp3a2RSSFFqLTZzUHFPeU55RlVKdGxieUpFWkFkdGdvLXVrOHRydmhYeDFTREpIVDVDLTF2OTBOSGI4R3ZrZEpGVTdtc1Q2U0hBSTd6Z0drcHZmVkhONEFNalV6MTJaTzRYMWFORGNZV1ZQcFRkZ0MtS1dSTENuRF9MVTBHR2QwQXJ5RGFPblptUXNlNzk4V2FFRVJyb1AxcFpQZlBMbzF4TTdhNmZqNnJuM2lfUW1Jb09R?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-11-03T16:41:50.220150+00:00",
+   "title_ru": "Бразильские экономисты повышают инфляцию и прогнозируют ставки после переизбрания Лулы",
+   "tags": [
+    "inflation"
+   ]
+  },
+  {
+   "title": "Goldman’s Molavi Says 60% of S&P 500 Is in Bear Market Territory",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNVkV4SUJWeVJCeUlkeEd3a1JwbFN5ZFowaEFSNmlvMDd0dENoYV83U0VWQVdZckRuTncxSHQ1Yjg5REZkRjlOWEpUb25RT2JUdXN1ZmtmMUJEWmVDdXZxV0NRQ0RELVowRWQxbzBvMVlPRG5yWE9TTDJvWGYyMjZWeF9adUZ3RVBNRmNqWm9HV3BCUzVPS0NOQkxmZzBlaG9XdW1iT3UzVjMyUHlRNldHbGdNdWM?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-11-03T16:41:50.220150+00:00",
+   "title_ru": "Молави из Goldman говорит, что 60% акций S&P 500 находятся на территории медвежьего рынка",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "China’s BYD Doubles Market Share in Brazil With New Plant Eyed",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPZkYzLU5GQjVUdDZvVkE0RzhGd1JJeXk5M2FWQ2RwZHc2Ml9TcldySDc3ME5kU2hfNWlhcjRGSzh0bFV5cHhmSFF2NEdDSTZVcTduYXlqRlZFMTFKN3k5TnhRdnhqZjZBTDlDTTRmd0Fac1RKV25KRHZQZ3JadFlfWllSSWw1Wm11Nk5VTXlEWktHREs5d3lGcGd2R1ZMNUVqSmJINm1oWlBicWpUemhuYWVuRQ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T16:41:50.220150+00:00",
+   "title_ru": "Доля китайского BYD на рынке Бразилии удвоилась благодаря появлению нового завода",
+   "tags": [
+    "China"
+   ]
   }
  ],
  "last_digest": "2026-11-02",
@@ -13737,10 +13789,12 @@
   },
   "checked": "2026-11-03T15:41:50.337900+00:00",
   "sec_seen": [
+   "0002080126-26-000039",
+   "0001976408-26-000930",
    "0001437749-26-034573",
    "0001437749-26-034571",
    "0001437749-26-034575",
-   "0001137774-26-000216",
+   "0001628280-26-069223",
    "0001628280-26-069214",
    "0001437749-26-034572",
    "0001437749-26-034574"
