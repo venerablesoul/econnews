@@ -731,7 +731,9 @@
   "1f0f9d18931b4722": "2026-11-03T15:16:50.226299+00:00",
   "da2f9d53c3ec4cee": "2026-11-03T15:16:50.226299+00:00",
   "e88f4c8ec2dc6868": "2026-11-03T15:16:50.226299+00:00",
-  "1227a1aa40035195": "2026-11-03T15:21:50.421883+00:00"
+  "1227a1aa40035195": "2026-11-03T15:21:50.421883+00:00",
+  "d5af898b2b092635": "2026-11-03T15:31:51.392322+00:00",
+  "8798c43d6454e958": "2026-11-03T15:36:50.400709+00:00"
  },
  "recent": [
   {
@@ -6708,7 +6710,7 @@
   "MarketWatch": 0,
   "Банк Англии": 0,
   "Bank of England": 0,
-  "Bank of Russia": 1,
+  "Bank of Russia": 0,
   "ECB": 0,
   "Fed": 0,
   "IMF": 0,
@@ -9727,6 +9729,38 @@
     "date": "2026-10-30",
     "disclosed": "2026-11-03",
     "link": "https://www.sec.gov/Archives/edgar/data/1711988/000119312526444482/0001193125-26-444482-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "c3e965f4e7cac43f",
+    "ticker": "PG",
+    "company": "PROCTER & GAMBLE Co",
+    "who": "Moses Victor Javier Aguilar",
+    "role": "Chf Rsch, Dev & Innov Officer",
+    "type": "sell",
+    "value": 3093336,
+    "shares": 18812,
+    "price": 164.43,
+    "plan": false,
+    "date": "2026-10-30",
+    "disclosed": "2026-11-03",
+    "link": "https://www.sec.gov/Archives/edgar/data/1825382/000008042426000268/0000080424-26-000268-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "12c430d4e65e7cd3",
+    "ticker": "PG",
+    "company": "PROCTER & GAMBLE Co",
+    "who": "Sundar G. Raman",
+    "role": "CEO",
+    "type": "sell",
+    "value": 6311745,
+    "shares": 38253,
+    "price": 165.0,
+    "plan": false,
+    "date": "2026-10-30",
+    "disclosed": "2026-11-03",
+    "link": "https://www.sec.gov/Archives/edgar/data/1882672/000008042426000267/0000080424-26-000267-index.htm"
    },
    {
     "src": "sec",
@@ -13599,38 +13633,6 @@
     "date": "2026-10-26",
     "disclosed": "2026-10-27",
     "link": "https://www.sec.gov/Archives/edgar/data/1538637/000089914026001154/0000899140-26-001154-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "c8188e87259df05f",
-    "ticker": "SRRK",
-    "company": "Scholar Rock Holding Corp",
-    "who": "Srinivas Akkaraju",
-    "role": "Director",
-    "type": "buy",
-    "value": 11999922,
-    "shares": 289470,
-    "price": 41.45,
-    "plan": false,
-    "date": "2026-10-26",
-    "disclosed": "2026-10-27",
-    "link": "https://www.sec.gov/Archives/edgar/data/1727196/000125317026000014/0001253170-26-000014-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "6dfde54b00b19e3c",
-    "ticker": "LRN",
-    "company": "Stride, Inc.",
-    "who": "Dylan G. Haggart et al.",
-    "role": "Director",
-    "type": "buy",
-    "value": 12178122,
-    "shares": 154196,
-    "price": 78.98,
-    "plan": false,
-    "date": "2026-10-26",
-    "disclosed": "2026-10-27",
-    "link": "https://www.sec.gov/Archives/edgar/data/2040262/000121390026113031/0001213900-26-113031-index.htm"
    }
   ],
   "docs": {
@@ -13666,11 +13668,14 @@
   },
   "checked": "2026-11-03T14:36:50.416320+00:00",
   "sec_seen": [
+   "0000080424-26-000267",
+   "0000080424-26-000269",
    "0000920148-26-000224",
    "0001794684-26-000018",
    "0000920148-26-000223",
    "0000920148-26-000225",
-   "0001193125-26-444560"
+   "0001225208-26-008599",
+   "0000080424-26-000268"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
