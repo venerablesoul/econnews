@@ -772,7 +772,9 @@
   "335b14cce800d50d": "2026-11-03T20:22:32.817905+00:00",
   "b5809710b006f168": "2026-11-03T20:37:26.896845+00:00",
   "0f2de9cf45096e6e": "2026-11-03T20:47:25.049159+00:00",
-  "3ff5a9bf54b87067": "2026-11-03T20:52:27.654308+00:00"
+  "3ff5a9bf54b87067": "2026-11-03T20:52:27.654308+00:00",
+  "2444230648239dfa": "2026-11-03T21:02:20.061031+00:00",
+  "4568996083398090": "2026-11-03T21:02:20.061031+00:00"
  },
  "recent": [
   {
@@ -7139,6 +7141,21 @@
     "dollar",
     "jobs"
    ]
+  },
+  {
+   "title": "The Big AI Stock Selloff Is Happening at a Bad Time",
+   "link": "https://www.bloomberg.com/news/newsletters/2026-11-03/the-big-ai-stock-selloff-is-happening-at-a-bad-time",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-11-03T21:02:20.061031+00:00",
+   "title_ru": "Большая распродажа акций ИИ происходит в неудачное время",
+   "lead": "Leaning on equity just as share prices fall.",
+   "lead_ru": "Опираясь на акции, когда цены на акции падают.",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-11-03",
@@ -7161,7 +7178,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 2,
+  "Fed": 0,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
@@ -10178,6 +10195,38 @@
     "date": "2026-11-02",
     "disclosed": "2026-11-03",
     "link": "https://www.sec.gov/Archives/edgar/data/1523568/000110465926121809/0001104659-26-121809-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "f3c16a14b910ed11",
+    "ticker": "APH",
+    "company": "AMPHENOL CORP /DE/",
+    "who": "Richard Adam Norwitt",
+    "role": "CEO",
+    "type": "sell",
+    "value": 65945990,
+    "shares": 799576,
+    "price": 82.48,
+    "plan": false,
+    "date": "2026-11-02",
+    "disclosed": "2026-11-03",
+    "link": "https://www.sec.gov/Archives/edgar/data/1276461/000110465926121973/0001104659-26-121973-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "bbbe8825e9d1d2b3",
+    "ticker": "MTG",
+    "company": "MGIC INVESTMENT CORP",
+    "who": "Salvatore A Miosi",
+    "role": "COO",
+    "type": "sell",
+    "value": 855000,
+    "shares": 30000,
+    "price": 28.5,
+    "plan": true,
+    "date": "2026-11-02",
+    "disclosed": "2026-11-03",
+    "link": "https://www.sec.gov/Archives/edgar/data/1687897/000168789726000019/0001687897-26-000019-index.htm"
    },
    {
     "src": "sec",
@@ -14050,38 +14099,6 @@
     "date": "2026-10-26",
     "disclosed": "2026-10-27",
     "link": "https://www.sec.gov/Archives/edgar/data/1793548/000110465926119177/0001104659-26-119177-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "908cda64a35afc55",
-    "ticker": "LIND",
-    "company": "LINDBLAD EXPEDITIONS HOLDINGS, INC.",
-    "who": "Sven-Olof Lindblad",
-    "role": "Director, 10% owner",
-    "type": "sell",
-    "value": 4025703,
-    "shares": 116129,
-    "price": 34.67,
-    "plan": true,
-    "date": "2026-10-26",
-    "disclosed": "2026-10-27",
-    "link": "https://www.sec.gov/Archives/edgar/data/1639304/000089706926001872/0000897069-26-001872-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "817e0d305968d979",
-    "ticker": "NTRS",
-    "company": "NORTHERN TRUST CORP",
-    "who": "Susan Cohen Levy",
-    "role": "General Counsel",
-    "type": "sell",
-    "value": 3517462,
-    "shares": 20906,
-    "price": 168.25,
-    "plan": false,
-    "date": "2026-10-26",
-    "disclosed": "2026-10-27",
-    "link": "https://www.sec.gov/Archives/edgar/data/1607570/000160757026000008/0001607570-26-000008-index.htm"
    }
   ],
   "docs": {
@@ -14117,12 +14134,27 @@
   },
   "checked": "2026-11-03T20:37:26.896845+00:00",
   "sec_seen": [
-   "0001674621-26-000010",
+   "0001687897-26-000019",
    "0000310354-26-000114",
-   "0002075704-26-000041",
-   "0002132641-26-000004",
+   "0001213900-26-115534",
+   "0001381197-26-000158",
+   "0002040340-26-000006",
+   "0001193125-26-445291",
+   "0001192050-26-000006",
+   "0002080157-26-000018",
+   "0001193882-26-000007",
+   "0001628280-26-069446",
+   "0001104659-26-121972",
+   "0001810172-26-000002",
+   "0001196652-26-000005",
+   "0001094629-26-000005",
+   "0001104659-26-121973",
+   "0001193125-26-445293",
+   "0002142367-26-000006",
+   "0001222746-26-000004",
    "0001331748-26-000014",
-   "0002080157-26-000018"
+   "0001193125-26-445288",
+   "0001354116-26-000003"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
