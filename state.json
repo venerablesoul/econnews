@@ -735,7 +735,10 @@
   "8798c43d6454e958": "2026-11-03T15:36:50.400709+00:00",
   "c433d489922bb6b4": "2026-11-03T15:41:50.337900+00:00",
   "75c627db5f4396c9": "2026-11-03T15:46:50.723291+00:00",
-  "76e19ab6267a4f14": "2026-11-03T15:46:50.723291+00:00"
+  "76e19ab6267a4f14": "2026-11-03T15:46:50.723291+00:00",
+  "46af647bea834d1c": "2026-11-03T15:51:50.192083+00:00",
+  "6e61d9359478a165": "2026-11-03T15:51:50.192083+00:00",
+  "10744c906586da08": "2026-11-03T15:51:50.192083+00:00"
  },
  "recent": [
   {
@@ -6734,6 +6737,28 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Ahead of Midterms, Oil Markets Were Voting for War",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQdFRmTDVIR1hxVExVTzlxeFhrVThDMmZVX2h6MEhPUlBVeDB6YmZiRW5oSk84enE2aHJ3Xy1MUFBndzRFUHphLXpvQm94dzZ5Sjc4VklIOE1pMXZLZFp3czFpYnJWb0hHeGJTV0NPZ2JGcWNJX3NOMjJqM1hGMFRqclk0X1E0QUk1NTZVS2xqb3dJWnhFdEgzRzM0NFBqdzE5WjJpVm5nbXNaZw?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 4,
+   "ts": "2026-11-03T15:51:50.192083+00:00",
+   "title_ru": "В преддверии промежуточных выборов нефтяные рынки голосовали за войну",
+   "tags": [
+    "oil"
+   ]
+  },
+  {
+   "title": "The Texas governor’s race might be a make-or-break contest for a wobbling AI trade",
+   "link": "https://www.marketwatch.com/story/the-texas-governors-race-might-be-a-make-or-break-contest-for-a-wobbling-ai-trade-7764aa29?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-11-03T15:51:50.192083+00:00"
   }
  ],
  "last_digest": "2026-11-02",
@@ -13714,14 +13739,12 @@
   "sec_seen": [
    "0000080424-26-000267",
    "0000080424-26-000269",
-   "0001794684-26-000018",
-   "0000920148-26-000225",
+   "0001703388-26-000028",
    "0001225208-26-008599",
    "0000080424-26-000268"
   ],
   "errors": {
-   "senate": "HTTPError: HTTP Error 403: Forbidden",
-   "sec": "TimeoutError: The read operation timed out"
+   "senate": "HTTPError: HTTP Error 403: Forbidden"
   }
  },
  "cal_actuals": {
