@@ -714,7 +714,10 @@
   "d6784ffd6db418df": "2026-11-03T13:36:50.155191+00:00",
   "f7caddb430106dad": "2026-11-03T13:36:50.155191+00:00",
   "41bd4a65eed30649": "2026-11-03T13:36:50.155191+00:00",
-  "2d7019f056348ec7": "2026-11-03T13:41:50.307282+00:00"
+  "2d7019f056348ec7": "2026-11-03T13:41:50.307282+00:00",
+  "8acd5e42adbd23d3": "2026-11-03T13:46:50.242413+00:00",
+  "bf03302dc0dc1997": "2026-11-03T13:46:50.242413+00:00",
+  "f26b3c432e70934c": "2026-11-03T13:46:50.242413+00:00"
  },
  "recent": [
   {
@@ -6531,6 +6534,28 @@
    "score": 5,
    "ts": "2026-11-03T13:41:50.307282+00:00",
    "title_ru": "Страховщики не извлекли уроков из финансового кризиса"
+  },
+  {
+   "title": "Argentina’s US IPO Revival Stalls as Market Rout Chills Debuts",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-03/argentina-s-us-ipo-revival-stalls-as-market-rout-chills-debuts",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T13:46:50.242413+00:00",
+   "title_ru": "Возрождение IPO в Аргентине заканчивается, когда дебютирует озноб рынка",
+   "lead": "Two Argentine energy companies have put plans for US initial public offerings this year on hold, dealing a blow to hopes of reviving the country’s long-dormant market for New York stock listings as a rout in local assets and…",
+   "lead_ru": "Две аргентинские энергетические компании приостановили планы по первичному публичному размещению акций в США в этом году, нанеся удар по надеждам на возрождение давно дремлющего в стране рынка нью-йоркских акций в качестве разворота в местных активах и..."
+  },
+  {
+   "title": "Investors ready for possible shake-up in Congress as Election Day arrives",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPXzBTeXRWM3ktaW9LQUFHVVg5V2JZMWZ3OG5LaWUtNGpVMmN2bnQ4RTJmaWVVaGctdnJZTkFZeWdjbG9JUUE4NFdFalFyQ2tZRFotZERxRkJQcHVtS1lwUGhVc0xJZnVqYnF4ZllqcDJFUkJxcEd2QTF0RGFERW1oSkFENEV0V3VQMEFabVkwOHcwTV9lVWNRZ3JmbDVDOUQ5aGYwWTJUb0o5RGpK?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T13:46:50.242413+00:00",
+   "title_ru": "Инвесторы готовы к возможной встряске в Конгрессе в день выборов"
   }
  ],
  "last_digest": "2026-11-02",
@@ -9489,6 +9514,22 @@
     "date": "2026-11-02",
     "disclosed": "2026-11-03",
     "link": "https://www.sec.gov/Archives/edgar/data/1927064/000137433926000009/0001374339-26-000009-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "1c8ca10404fa7d63",
+    "ticker": "STRZ",
+    "company": "STARZ ENTERTAINMENT CORP /CN/",
+    "who": "Jeffrey Hirsch",
+    "role": "CEO",
+    "type": "buy",
+    "value": 110650,
+    "shares": 5000,
+    "price": 22.13,
+    "plan": false,
+    "date": "2026-11-02",
+    "disclosed": "2026-11-03",
+    "link": "https://www.sec.gov/Archives/edgar/data/1647660/000164766026000019/0001647660-26-000019-index.htm"
    },
    {
     "src": "sec",
@@ -13457,22 +13498,6 @@
     "date": "2026-10-23",
     "disclosed": "2026-10-27",
     "link": "https://www.sec.gov/Archives/edgar/data/1833124/000121390026112641/0001213900-26-112641-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "5e8dbc6017a2ed2f",
-    "ticker": "ROP",
-    "company": "ROPER TECHNOLOGIES INC",
-    "who": "Jason Conley",
-    "role": "CFO",
-    "type": "sell",
-    "value": 5226354,
-    "shares": 12000,
-    "price": 435.53,
-    "plan": false,
-    "date": "2026-10-23",
-    "disclosed": "2026-10-27",
-    "link": "https://www.sec.gov/Archives/edgar/data/1699418/000119312526434200/0001193125-26-434200-index.htm"
    }
   ],
   "docs": {
@@ -13508,33 +13533,30 @@
   },
   "checked": "2026-11-03T13:31:50.248423+00:00",
   "sec_seen": [
-   "0001104659-26-121593",
-   "0002157538-26-000004",
-   "0001104659-26-121672",
-   "0001318349-26-000022",
+   "0002140162-26-000008",
+   "0001647660-26-000019",
    "0001065088-26-000214",
    "0001046179-26-000732",
-   "0001213900-26-115107",
    "0001374339-26-000010",
-   "0001548006-26-000012",
+   "0001065088-26-000219",
    "0001193125-26-444126",
    "0001225208-26-008590",
    "0001909068-26-000026",
    "0002000358-26-000027",
    "0000812011-26-000165",
    "0001193125-26-444147",
+   "0001065088-26-000216",
    "0001104659-26-121667",
    "0001493152-26-049705",
    "0001079973-26-001421",
-   "0001104659-26-121594",
+   "0001193125-26-444128",
    "0001193125-26-444141",
    "0001374339-26-000009",
-   "0001193125-26-444128",
-   "0001104659-26-121591"
+   "0001104659-26-121672",
+   "0001065088-26-000221"
   ],
   "errors": {
-   "senate": "HTTPError: HTTP Error 403: Forbidden",
-   "sec": "TimeoutError: The read operation timed out"
+   "senate": "HTTPError: HTTP Error 403: Forbidden"
   }
  },
  "cal_actuals": {
