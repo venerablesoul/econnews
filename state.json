@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e385915a0f3925ae": "2026-10-31T12:12:46.179377+00:00",
   "7a0775e1548d2649": "2026-10-31T12:27:46.087596+00:00",
   "3902977cae6fccc1": "2026-10-31T13:02:46.130503+00:00",
   "5bd765e30916f5d0": "2026-10-31T13:02:46.130503+00:00",
@@ -699,19 +698,12 @@
   "3b55d2c439282a09": "2026-11-03T11:56:50.114668+00:00",
   "1f681aff103c5bea": "2026-11-03T12:01:50.172086+00:00",
   "a1699180244d4a56": "2026-11-03T12:01:50.172086+00:00",
-  "e4747e3e78443de9": "2026-11-03T12:11:50.322161+00:00"
+  "e4747e3e78443de9": "2026-11-03T12:11:50.322161+00:00",
+  "ad9606c1771f98c2": "2026-11-03T12:16:50.122470+00:00",
+  "dd6d36094de0168b": "2026-11-03T12:16:50.122470+00:00",
+  "9b5f968110f238d8": "2026-11-03T12:16:50.122470+00:00"
  },
  "recent": [
-  {
-   "title": "- IMF eLibrary",
-   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9lZlhBdTViQ0FjYnpwTnl1VnNYbl9Za1UwRlpmTW5YeF9SVXREM0xlZmJjR0xaZFg1TXpqZEpVbVJXZnJhSmN1X0pDX2R6enBnYlY5MHNFQlVzUQ?oc=5",
-   "sources": [
-    "IMF"
-   ],
-   "score": 5,
-   "ts": "2026-10-31T12:12:46.179377+00:00",
-   "title_ru": "- Электронная библиотека МВФ"
-  },
   {
    "title": "Russia Extends Ban on Most Diesel Exports Through January",
    "link": "https://www.bloomberg.com/news/articles/2026-10-31/russia-extends-ban-on-most-diesel-exports-through-january",
@@ -6346,6 +6338,41 @@
    ],
    "score": 1,
    "ts": "2026-11-03T12:11:50.322161+00:00"
+  },
+  {
+   "title": "US Election Day Kicks Off: Stocks Slip, Oil Rebounds",
+   "link": "https://www.bloomberg.com/news/videos/2026-11-03/the-opening-trade-11-03-2026-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-11-03T12:16:50.122470+00:00",
+   "title_ru": "День выборов в США начинается: акции падают, нефть восстанавливается",
+   "lead": "US stock futures fell as oil prices rebounded on worries that America and Iran remain far apart on a peace deal, adding to subdued risk sentiment before voting starts in the midterm elections. S&P 500 contracts slipped 0.2%.",
+   "lead_ru": "Фьючерсы на акции США упали, поскольку цены на нефть выросли на опасениях, что Америка и Иран остаются далеко друг от друга в мирном соглашении, что усилило сдержанные настроения перед началом голосования на промежуточных выборах. Контракты на S&P 500 подешевели на 0,2%.",
+   "tags": [
+    "oil",
+    "markets"
+   ]
+  },
+  {
+   "title": "Market Talk: Bank of England 'will be one and done'",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQRllQUUtyRmduek90Ti05QUI5cUdXSzZDbzZOT095LXhQZDY4SUJ6SnZPX1pKQ3hFYkpxT1NDbV9xNGphbl9jUC1pTUI3TVJzTFN0NnJmeFFHazBhcXkyekNDRkl3MTVVT1lyZ2oxeHh0a3lXSjd0VGFhOWlGNFAyMzlOTFI?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T12:16:50.122470+00:00",
+   "title_ru": "Обсуждение рынка: Банк Англии «будет един и готов»"
+  },
+  {
+   "title": "The stock market loves gridlock. But midterm elections won’t resolve two big money fights.",
+   "link": "https://www.marketwatch.com/story/the-stock-market-loves-gridlock-but-midterm-elections-wont-resolve-two-big-money-fights-97ed4f64?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-11-03T12:16:50.122470+00:00"
   }
  ],
  "last_digest": "2026-11-02",
