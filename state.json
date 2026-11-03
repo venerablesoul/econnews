@@ -616,7 +616,8 @@
   "545e96ec9631ef00": "2026-11-03T03:10:44.279703+00:00",
   "d0b2e8fa45fbbbd5": "2026-11-03T03:15:44.425323+00:00",
   "fed1590a24b29e45": "2026-11-03T03:15:44.425323+00:00",
-  "8545a7c0f35e6cbe": "2026-11-03T03:15:44.425323+00:00"
+  "8545a7c0f35e6cbe": "2026-11-03T03:15:44.425323+00:00",
+  "b5889fe237910149": "2026-11-03T03:25:44.451945+00:00"
  },
  "recent": [
   {
@@ -5312,6 +5313,19 @@
    "title_ru": "Регулятор рынка Китая поощряет листинги в Гонконге",
    "tags": [
     "China"
+   ]
+  },
+  {
+   "title": "RBA Expected to Raise Interest Rates: Live Updates, Analysis",
+   "link": "https://www.bloomberg.com/news/live-blog/2026-11-03/reserve-bank-of-australia-rate-decision",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-11-03T03:25:44.451945+00:00",
+   "title_ru": "Ожидается, что РБА повысит процентные ставки: оперативные обновления, анализ",
+   "tags": [
+    "rates"
    ]
   }
  ],
@@ -12335,7 +12349,8 @@
    "0001104659-26-121591"
   ],
   "errors": {
-   "senate": "HTTPError: HTTP Error 403: Forbidden"
+   "senate": "HTTPError: HTTP Error 403: Forbidden",
+   "sec": "TimeoutError: The read operation timed out"
   }
  },
  "cal_actuals": {
