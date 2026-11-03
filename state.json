@@ -771,7 +771,8 @@
   "a7ba74736fab2972": "2026-11-03T20:02:28.707792+00:00",
   "f27add23b83a3913": "2026-11-03T20:02:28.707792+00:00",
   "78ce690271973d1a": "2026-11-03T20:17:29.017645+00:00",
-  "335b14cce800d50d": "2026-11-03T20:22:32.817905+00:00"
+  "335b14cce800d50d": "2026-11-03T20:22:32.817905+00:00",
+  "b5809710b006f168": "2026-11-03T20:37:26.896845+00:00"
  },
  "recent": [
   {
@@ -7114,6 +7115,16 @@
    "tags": [
     "oil"
    ]
+  },
+  {
+   "title": "Britain to make lifetime retirement income the default for private pensions",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNZWxwSUpNQ2NIcVc0Yy1WaTFDLThSUU12TmlFNVdRLXVFWXBhMDhqNy1oQUlaOUlqR05FZkNTcDB1ZWgxRUZSUTRkYVMzdmdac2EwbEFTZnBRdzdhcWJTejB6OE1CcEdja3Bjd1Y4dU9sZ0FqVV9MUy10YUZNMHN0MHZ4eFJEamVpOWJRbnRKS0RtUFBnYjNvVVpsOUNoUEdhVlRvYlhmdkxJMnZNNnc?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 5,
+   "ts": "2026-11-03T20:37:26.896845+00:00",
+   "title_ru": "Великобритания сделает пожизненный пенсионный доход дефолтом для частных пенсий"
   }
  ],
  "last_digest": "2026-11-03",
@@ -14090,9 +14101,11 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-11-03T19:32:33.688140+00:00",
+  "checked": "2026-11-03T20:37:26.896845+00:00",
   "sec_seen": [
-   "0001666215-26-000009"
+   "0001666215-26-000009",
+   "0002132641-26-000004",
+   "0002075704-26-000041"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
