@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "b74b87f05b29722a": "2026-10-31T18:48:19.909698+00:00",
   "d9b5e87586077540": "2026-10-31T19:13:19.800358+00:00",
   "cb922cbc1818d39c": "2026-10-31T19:13:19.800358+00:00",
   "f85e5867175910b9": "2026-10-31T19:13:19.800358+00:00",
@@ -765,19 +764,10 @@
   "e8ddb26830aff4f5": "2026-11-03T18:37:28.047841+00:00",
   "1d1dcdadc4a44ffd": "2026-11-03T18:37:28.047841+00:00",
   "27230cc576cd9ef9": "2026-11-03T18:42:20.185149+00:00",
-  "c8cbf3f9e415f921": "2026-11-03T18:42:20.185149+00:00"
+  "c8cbf3f9e415f921": "2026-11-03T18:42:20.185149+00:00",
+  "e97a7a49b2807980": "2026-11-03T18:52:29.737606+00:00"
  },
  "recent": [
-  {
-   "title": "Senegalese lawmakers reject revised budget key for new IMF deal",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPd1FSMVFOQjN4T2NRTlhRS2xlNEhzck9QNXhuNU9SZW5WVUNaMlBwaC1BTVMxSjVJVEk5dmZrdVlsbk1nb1FOUlFnZHgyOE9QTEJEUW0xdjk2cnlOdjh3aGZDVHRuQjNOSXhKSE13MWgwTWtieGdVMXliOW1DYnlXeC1FOHVxVmEyd0NUWDFSYTN2ZFVuVFd2dWJSTmx2TXNDbjBubFBBQ25VSVY4?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 4,
-   "ts": "2026-10-31T18:48:19.909698+00:00",
-   "title_ru": "Сенегальские законодатели отвергли пересмотренный бюджетный ключ для нового соглашения с МВФ"
-  },
   {
    "title": "OPEC+ agrees in principle to keep oil output targets steady in December, sources say",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOTk80ZVBzRVczc0hyRHU0RkJiTWx5ZDUwdnBHb0FWSmJyQWJzWHRYR0hZd0MzTW1INnFtSWRISVVRb1RncDltYW16eTYxRU9NcWJzanRqMmp4LWFXUVNTV2tzT3JCM0doS01hWDdGeUhNdHZ3WTdYXy14Q0luZTRmOWdQNlp2ZThtYlQ0cWhNSVk0c0ZkOUFyMExMUWRHMXRKamU2ZHRLa2pPMG9heUhzN2YwTnpCZw?oc=5",
@@ -7070,6 +7060,16 @@
    ],
    "score": 1,
    "ts": "2026-11-03T18:42:20.185149+00:00"
+  },
+  {
+   "title": "Keurig Dr Pepper flags slower fourth-quarter coffee profits as shoppers trade down",
+   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOYk5TNXY0NVhvQVVhRjBIbFROd3dxM0d4OTlndEY5aDduZ3dVeG9LSW5NMlpOZDM1d0IwQW05ZThLNm9lYUo5UEtkeHhqcEo0NFAyc0lRT0dlZi1wdVRqc2VQMG52cVp6MWFmektaMnpZTTdUczJWdmF5ejNQZVVVczdfSUlZUElDeS1jUEo1dkJNZDc5QXhFQ2ZiVTdRZHNmM3NaYngxWWNWSWRLWnJtcXJ0YjZ0ZnFRR010bk5VR1JyUm42VWFFclF6SG0?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T18:52:29.737606+00:00",
+   "title_ru": "Keurig Dr Pepper отмечает снижение прибыли от кофе в четвертом квартале, поскольку покупатели падают"
   }
  ],
  "last_digest": "2026-11-03",
@@ -14048,12 +14048,8 @@
   },
   "checked": "2026-11-03T18:32:30.690133+00:00",
   "sec_seen": [
-   "0001628280-26-069303",
-   "0001628280-26-069302",
    "0000014707-26-000166",
-   "0000014707-26-000164",
-   "0001675872-26-000001",
-   "0001628280-26-069301"
+   "0001675872-26-000001"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
