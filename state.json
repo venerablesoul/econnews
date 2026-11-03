@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "48de6eff642c5a5b": "2026-10-31T13:17:46.086068+00:00",
   "d210b851b9ddb92c": "2026-10-31T13:27:46.153612+00:00",
   "dff0e58445858b5c": "2026-10-31T13:57:46.144946+00:00",
   "9630baa10b83a2ea": "2026-10-31T14:07:46.137040+00:00",
@@ -710,19 +709,10 @@
   "ea52f97d683aaae8": "2026-11-03T13:06:50.289737+00:00",
   "0330b2da79f449bd": "2026-11-03T13:06:50.289737+00:00",
   "de1b83ed4611aef2": "2026-11-03T13:16:51.713375+00:00",
-  "deaea9228426b281": "2026-11-03T13:16:51.713375+00:00"
+  "deaea9228426b281": "2026-11-03T13:16:51.713375+00:00",
+  "cf3c3fdc3f85218d": "2026-11-03T13:26:50.213656+00:00"
  },
  "recent": [
-  {
-   "title": "India extends duty-free cotton imports by two months to ease domestic prices",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNcGp4QkhGWTFwQ0VrM1N5a253YjFPRWhaaE1EV0o2YlVkYnVhdjV6bWJaNFFiSmNMYUtPU1pVdGlvTzdjMTkxQ1lKQnZWWTh2Vjl2V1JXX3dOaTJfUURoWkR0Q3JheldpVVBjbFBVdGplWkdrdW9qUFRac1FRZ0phNTU0cWptaFROR1kzQnRJOUg3ekJlMTZQUkVVWDRxZk90NHlWMFVtbF9IckVjS1N3NGpVaVhwNnVNSWo4YjBR?oc=5",
-   "sources": [
-    "Reuters"
-   ],
-   "score": 3,
-   "ts": "2026-10-31T13:17:46.086068+00:00",
-   "title_ru": "Индия продлевает беспошлинный импорт хлопка на два месяца, чтобы снизить внутренние цены"
-  },
   {
    "title": "AI Enthusiasm Is Collapsing and Tech Earnings Just Made It Worse",
    "link": "https://www.bloomberg.com/news/articles/2026-10-31/ai-enthusiasm-is-collapsing-and-tech-earnings-just-made-it-worse",
@@ -6477,6 +6467,21 @@
    "score": 3,
    "ts": "2026-11-03T13:16:51.713375+00:00",
    "title_ru": "Фунт стерлингов стабилен, поскольку трейдеры ждут BoE, нервно наблюдают за промежуточными периодами"
+  },
+  {
+   "title": "US Stocks Waver as Election, AI Bubble Risks Weigh on Outlook",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-03/us-stocks-waver-as-election-ai-bubble-risks-weigh-on-outlook",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T13:26:50.213656+00:00",
+   "title_ru": "Колебание акций США в преддверии выборов, риски пузыря ИИ взвешивают перспективы",
+   "lead": "US stock futures were little changed as Americans headed to the polls on Election Day, with control of both chambers of Congress at stake and investors weighing mounting risks to the artificial intelligence trade.",
+   "lead_ru": "Фьючерсы на акции США мало изменились, поскольку американцы отправились на выборы в день выборов, при этом на карту поставлен контроль над обеими палатами Конгресса, а инвесторы взвешивают растущие риски для торговли искусственным интеллектом.",
+   "tags": [
+    "markets"
+   ]
   }
  ],
  "last_digest": "2026-11-02",
