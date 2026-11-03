@@ -742,7 +742,9 @@
   "fcc06ba90c50d0cd": "2026-11-03T16:36:50.177653+00:00",
   "acf65fbffbe6d942": "2026-11-03T16:41:50.220150+00:00",
   "e82297e05958f8f6": "2026-11-03T16:41:50.220150+00:00",
-  "6748b8e923dbd43d": "2026-11-03T16:41:50.220150+00:00"
+  "6748b8e923dbd43d": "2026-11-03T16:41:50.220150+00:00",
+  "466194d74983de96": "2026-11-03T16:46:50.247118+00:00",
+  "de6af99731740552": "2026-11-03T16:46:50.247118+00:00"
  },
  "recent": [
   {
@@ -6811,6 +6813,35 @@
    "tags": [
     "China"
    ]
+  },
+  {
+   "title": "Treasuries Fall Amid Oil Price Swings, Strong Job Openings Data",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-03/treasuries-fall-amid-oil-price-swings-strong-job-openings-data",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-11-03T16:46:50.247118+00:00",
+   "title_ru": "Казначейские облигации падают на фоне колебаний цен на нефть и хороших данных по вакансиям",
+   "lead": "Treasuries fell after a gauge of US job openings exceeded economist estimates, an indication of labor market strength with the potential to give the Federal Reserve leeway to raise interest rates to curb inflation.",
+   "lead_ru": "Казначейские облигации упали после того, как число вакансий в США превысило оценки экономистов, что указывает на силу рынка труда и потенциально дает Федеральной резервной системе свободу действий в повышении процентных ставок для сдерживания инфляции.",
+   "tags": [
+    "Fed",
+    "rates",
+    "inflation"
+   ]
+  },
+  {
+   "title": "Keeping mortgage interest relief approved",
+   "link": "https://www.bbc.co.uk/news/articles/c6vgj0ljx01jo?at_medium=RSS&at_campaign=rss",
+   "sources": [
+    "BBC"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T16:46:50.247118+00:00",
+   "title_ru": "Одобрение льгот по процентам по ипотеке",
+   "lead": "Homeowners can get tax relief of £3,500 on the money spent on the interstate of a mortgage.",
+   "lead_ru": "Домовладельцы могут получить налоговые льготы в размере 3500 фунтов стерлингов на деньги, потраченные на межштатную ипотеку."
   }
  ],
  "last_digest": "2026-11-02",
@@ -9818,6 +9849,38 @@
     "date": "2026-11-02",
     "disclosed": "2026-11-03",
     "link": "https://www.sec.gov/Archives/edgar/data/2057319/000197640826000928/0001976408-26-000928-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "c449af6905f2af5a",
+    "ticker": "VICR",
+    "company": "VICOR CORP",
+    "who": "Philip D Davies",
+    "role": "Corp. VP-Global Sales & Mktg.",
+    "type": "sell",
+    "value": 563165,
+    "shares": 3073,
+    "price": 183.26,
+    "plan": true,
+    "date": "2026-11-02",
+    "disclosed": "2026-11-03",
+    "link": "https://www.sec.gov/Archives/edgar/data/1512868/000119312526444718/0001193125-26-444718-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "6672f291c63bc61a",
+    "ticker": "CAT",
+    "company": "CATERPILLAR INC",
+    "who": "James C Jr Fish",
+    "role": "Director",
+    "type": "buy",
+    "value": 620390,
+    "shares": 1000,
+    "price": 620.39,
+    "plan": false,
+    "date": "2026-11-02",
+    "disclosed": "2026-11-03",
+    "link": "https://www.sec.gov/Archives/edgar/data/1523568/000110465926121809/0001104659-26-121809-index.htm"
    },
    {
     "src": "sec",
@@ -13722,38 +13785,6 @@
     "date": "2026-10-26",
     "disclosed": "2026-10-27",
     "link": "https://www.sec.gov/Archives/edgar/data/1607570/000160757026000008/0001607570-26-000008-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "e60469a512e43c8f",
-    "ticker": "DSM",
-    "company": "BNY MELLON STRATEGIC MUNICIPAL BOND FUND, INC.",
-    "who": "Saba Capital Management, L.p.",
-    "role": "10% owner",
-    "type": "buy",
-    "value": 111326,
-    "shares": 20616,
-    "price": 5.4,
-    "plan": false,
-    "date": "2026-10-26",
-    "disclosed": "2026-10-27",
-    "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000381/0001510281-26-000381-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "7b07fd284ec71103",
-    "ticker": "LEO",
-    "company": "BNY MELLON STRATEGIC MUNICIPALS, INC.",
-    "who": "Saba Capital Management, L.p.",
-    "role": "10% owner",
-    "type": "buy",
-    "value": 72478,
-    "shares": 12583,
-    "price": 5.76,
-    "plan": false,
-    "date": "2026-10-26",
-    "disclosed": "2026-10-27",
-    "link": "https://www.sec.gov/Archives/edgar/data/1510281/000151028126000382/0001510281-26-000382-index.htm"
    }
   ],
   "docs": {
@@ -13787,16 +13818,18 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-11-03T15:41:50.337900+00:00",
+  "checked": "2026-11-03T16:46:50.247118+00:00",
   "sec_seen": [
    "0002080126-26-000039",
    "0001976408-26-000930",
+   "0001649667-26-000009",
    "0001437749-26-034573",
-   "0001437749-26-034571",
    "0001437749-26-034575",
    "0001628280-26-069223",
    "0001628280-26-069214",
    "0001437749-26-034572",
+   "0001104659-26-121809",
+   "0001193125-26-444718",
    "0001437749-26-034574"
   ],
   "errors": {
