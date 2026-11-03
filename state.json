@@ -1,9 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "e3681b2dd41e7d61": "2026-10-31T00:51:27.149244+00:00",
-  "d6fad56165f2cbf9": "2026-10-31T00:51:27.149244+00:00",
-  "5b60d59790088c37": "2026-10-31T00:56:27.127616+00:00",
   "3cb677e09c26dcaf": "2026-10-31T01:01:27.272004+00:00",
   "fa249637e444bf71": "2026-10-31T01:11:27.140564+00:00",
   "29350db746d7e77e": "2026-10-31T01:16:27.142175+00:00",
@@ -609,29 +606,6 @@
   "368aba14abbe9bb0": "2026-11-03T00:45:44.361319+00:00"
  },
  "recent": [
-  {
-   "title": "ECB’s Lane Says AI Significant Contributor to Euro-Area Growth",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQakliSzBjckotSjlQNHpxZi1VQmFNLW9YZlNOa1Rkb1JqQ1NIWWs4Zm9CVmlpWFdxZzhENkFaeHQwWUpLajNRcHJlSTgwcHhKZk1aMElnSHZIbUxyblVHeW1WT0VfbzVDY3UzVXZjV09TUjB2a0lfaE92aXhNYm1PVFNhUFRRSDk1LVJDQmwxbHMySzZXNmlYQUduLWpIbThkbG5Xc0pHa1cydWNCbUlkcVF5SQ?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 5,
-   "ts": "2026-10-31T00:51:27.149244+00:00",
-   "title_ru": "Глава ЕЦБ Лейн заявил, что искусственный интеллект вносит значительный вклад в рост еврозоны",
-   "tags": [
-    "ECB"
-   ]
-  },
-  {
-   "title": "Nowcasting Economic Activity in Afghanistan",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQQ3ZvOThtdW8wOFE0SE5IaldSbHFxTjhISl9VNnJzVkRHVWh2bWI3c3dORDVKckc3QXhqa0JhbUlLbDNvS2FVOVE2blUwYkI4eFJLZTRrRWlmT1RlTXh0U2JBc1pZd2RnMGMzQmx3R2tEZVBrN0p3WERDYXpDbllqdWZJOHRqM1ZCUEZDTjR0MHVxLVpTaDVCcmJ1UVM1Sko3dTNIV3JDc2pRbGs?oc=5",
-   "sources": [
-    "IMF"
-   ],
-   "score": 5,
-   "ts": "2026-10-31T00:56:27.127616+00:00",
-   "title_ru": "Прогнозирование текущей экономической активности в Афганистане"
-  },
   {
    "title": "CI Global Longevity Economy ETF (LONG.TO) | Stock Price & Latest News",
    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9RM1lTOTBGRks4Wm54Ynh1bU5oV3NYbHFRMmRQUUU4bGFqWDdUbjBJMnJtNEZ1aW9CZXdqVEZSSXN6U2ZyMVU5NUJZeW9VeXB2LWxUVkYxWDNMTkZoYnpFQTFBakZmb2FkS1prcmRB?oc=5",
@@ -5209,7 +5183,7 @@
   "Bank of England": 0,
   "Bank of Russia": 0,
   "ECB": 0,
-  "Fed": 0,
+  "Fed": 1,
   "IMF": 0,
   "Kommersant": 0,
   "RBC": 0,
@@ -8276,6 +8250,22 @@
    },
    {
     "src": "sec",
+    "id": "77b90fa72d39f208",
+    "ticker": "CME",
+    "company": "CME GROUP INC.",
+    "who": "Julie Winkler",
+    "role": "Sr MD Chief Commercial Officer",
+    "type": "sell",
+    "value": 3075607,
+    "shares": 10079,
+    "price": 305.15,
+    "plan": false,
+    "date": "2026-11-02",
+    "disclosed": "2026-11-02",
+    "link": "https://www.sec.gov/Archives/edgar/data/1692514/000169251426000005/0001692514-26-000005-index.htm"
+   },
+   {
+    "src": "sec",
     "id": "5e3c2dbfef2ed1af",
     "ticker": "API",
     "company": "Agora, Inc.",
@@ -8577,6 +8567,22 @@
     "date": "2026-10-30",
     "disclosed": "2026-11-02",
     "link": "https://www.sec.gov/Archives/edgar/data/1659166/000150237026000017/0001502370-26-000017-index.htm"
+   },
+   {
+    "src": "sec",
+    "id": "cace2d5dfc6e1128",
+    "ticker": "CRWD",
+    "company": "CrowdStrike Holdings, Inc.",
+    "who": "George Kurtz",
+    "role": "CEO",
+    "type": "sell",
+    "value": 5051030,
+    "shares": 19800,
+    "price": 255.1,
+    "plan": true,
+    "date": "2026-10-30",
+    "disclosed": "2026-11-02",
+    "link": "https://www.sec.gov/Archives/edgar/data/1778564/000177856426000198/0001778564-26-000198-index.htm"
    },
    {
     "src": "sec",
@@ -12097,38 +12103,6 @@
     "date": "2026-10-23",
     "disclosed": "2026-10-27",
     "link": "https://www.sec.gov/Archives/edgar/data/2056954/000205695426000006/0002056954-26-000006-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "93550a34d4fa8172",
-    "ticker": "EFX",
-    "company": "EQUIFAX INC",
-    "who": "Mark W Begor",
-    "role": "CEO",
-    "type": "sell",
-    "value": 6908340,
-    "shares": 37792,
-    "price": 182.8,
-    "plan": true,
-    "date": "2026-10-23",
-    "disclosed": "2026-10-27",
-    "link": "https://www.sec.gov/Archives/edgar/data/1335111/000122520826008522/0001225208-26-008522-index.htm"
-   },
-   {
-    "src": "sec",
-    "id": "23a26789c374d871",
-    "ticker": "NIC",
-    "company": "NICOLET BANKSHARES INC",
-    "who": "Robert Bruce Atwell",
-    "role": "Director",
-    "type": "sell",
-    "value": 608858,
-    "shares": 3556,
-    "price": 171.22,
-    "plan": false,
-    "date": "2026-10-23",
-    "disclosed": "2026-10-27",
-    "link": "https://www.sec.gov/Archives/edgar/data/1253903/000117485026000174/0001174850-26-000174-index.htm"
    }
   ],
   "docs": {
@@ -12164,6 +12138,7 @@
   },
   "checked": "2026-11-03T00:05:44.489351+00:00",
   "sec_seen": [
+   "0001778564-26-000199",
    "0001338176-26-000040",
    "0000087347-26-000132",
    "0001493152-26-049664",
@@ -12180,6 +12155,7 @@
    "0001321154-26-000012",
    "0001478669-26-000019",
    "0001677297-26-000008",
+   "0001692514-26-000005",
    "0001628280-26-069012",
    "0001628280-26-069019",
    "0001213900-26-115071",
@@ -12188,22 +12164,20 @@
    "0001836156-26-000008",
    "0000935703-26-000125",
    "0001889614-26-000002",
-   "0001193125-26-443948",
    "0001104659-26-121503",
    "0001928980-26-000005",
    "0001783108-26-000036",
    "0001510281-26-000402",
    "0001061983-26-000107",
    "0001693906-26-000016",
+   "0001778564-26-000198",
    "0001817160-26-000023",
    "0001274737-26-000058",
-   "0001193125-26-443950",
    "0002033834-26-000023",
    "0001638643-26-000038",
    "0000907654-26-000112",
    "0001914879-26-000006",
    "0002094859-26-000003",
-   "0001193125-26-443949",
    "0001193125-26-443960",
    "0001791884-26-000011",
    "0001193125-26-443969",
