@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "1d7c8ffdc62ae334": "2026-10-31T16:23:19.839517+00:00",
   "a8f92577333a93be": "2026-10-31T16:53:19.940199+00:00",
   "2f1f11b5c3f1f14a": "2026-10-31T16:58:19.816077+00:00",
   "fd31862b1f5bc830": "2026-10-31T16:58:19.816077+00:00",
@@ -738,19 +737,10 @@
   "1a0b076f141048a7": "2026-11-03T16:06:50.495742+00:00",
   "5a84e61424f86d00": "2026-11-03T16:11:50.295258+00:00",
   "bb5b4a0ee7a1fd60": "2026-11-03T16:11:50.295258+00:00",
-  "b46ba0d7854d0268": "2026-11-03T16:21:50.592033+00:00"
+  "b46ba0d7854d0268": "2026-11-03T16:21:50.592033+00:00",
+  "41baa953c9754c92": "2026-11-03T16:31:50.577791+00:00"
  },
  "recent": [
-  {
-   "title": "- IMF eLibrary",
-   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5CUk5Cek5NWDZIQVA0OTZoLXpxN3FDYkpWNzlRVHNpZUhTdWNHWER5WFFicW8xNDRWQnQ4MGxVdzl5Q0otZ3YyMzBEcDA2aVA5SnVFMG1uRFBmTmJnWGZicHMzZw?oc=5",
-   "sources": [
-    "IMF"
-   ],
-   "score": 5,
-   "ts": "2026-10-31T16:23:19.839517+00:00",
-   "title_ru": "- Электронная библиотека МВФ"
-  },
   {
    "title": "Final Countdown to Midterm Elections, Tech Stocks Tank",
    "link": "https://www.bloomberg.com/news/videos/2026-10-31/bloomberg-this-weekend-10-31-2026-video",
@@ -13747,8 +13737,13 @@
   },
   "checked": "2026-11-03T15:41:50.337900+00:00",
   "sec_seen": [
-   "0002161049-26-000001",
-   "0001137774-26-000216"
+   "0001437749-26-034573",
+   "0001437749-26-034571",
+   "0001437749-26-034575",
+   "0001137774-26-000216",
+   "0001628280-26-069214",
+   "0001437749-26-034572",
+   "0001437749-26-034574"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
