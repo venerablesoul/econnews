@@ -713,7 +713,8 @@
   "ea6a5da28f95815b": "2026-11-03T13:31:50.248423+00:00",
   "d6784ffd6db418df": "2026-11-03T13:36:50.155191+00:00",
   "f7caddb430106dad": "2026-11-03T13:36:50.155191+00:00",
-  "41bd4a65eed30649": "2026-11-03T13:36:50.155191+00:00"
+  "41bd4a65eed30649": "2026-11-03T13:36:50.155191+00:00",
+  "2d7019f056348ec7": "2026-11-03T13:41:50.307282+00:00"
  },
  "recent": [
   {
@@ -6520,6 +6521,16 @@
    "tags": [
     "markets"
    ]
+  },
+  {
+   "title": "Insurers Didn’t Learn From the Financial Crisis",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPZmpLd3lkZlhYdXlwUEpYS1VtX29UcEpHa0JzVXNsLWhVSkdadUtlSG1PNHlKekItakx5VTVyMER0aDRJUVJwbEsxZDk1clFKYi02ZVg4X3R6Mkl5VG9NRXgyLTJWdHdpMzctaFc2UTg4S3lIZkRvUnFYZDNxVHZ4cjZVb0E4QmFuWDFIMkhZLUgtc2dWaXgxQnhqd0c2WWw1bUtJ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-11-03T13:41:50.307282+00:00",
+   "title_ru": "Страховщики не извлекли уроков из финансового кризиса"
   }
  ],
  "last_digest": "2026-11-02",
@@ -13522,7 +13533,8 @@
    "0001104659-26-121591"
   ],
   "errors": {
-   "senate": "HTTPError: HTTP Error 403: Forbidden"
+   "senate": "HTTPError: HTTP Error 403: Forbidden",
+   "sec": "TimeoutError: The read operation timed out"
   }
  },
  "cal_actuals": {
