@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "22768e4a3aa12c7f": "2026-10-31T07:42:16.038018+00:00",
   "d51bb4b450b2723f": "2026-10-31T07:47:16.106849+00:00",
   "858ab16beca9ad70": "2026-10-31T07:47:16.106849+00:00",
   "265693843adfac6e": "2026-10-31T08:02:16.085866+00:00",
@@ -657,7 +656,8 @@
   "aee5c856a8901314": "2026-11-03T07:36:49.875754+00:00",
   "b80bbd5c554e54c6": "2026-11-03T07:41:49.944991+00:00",
   "bd85eb5bff899be8": "2026-11-03T07:41:49.944991+00:00",
-  "232ca299314b3a93": "2026-11-03T07:41:49.944991+00:00"
+  "232ca299314b3a93": "2026-11-03T07:41:49.944991+00:00",
+  "bb7004471035e139": "2026-11-03T07:46:49.898752+00:00"
  },
  "recent": [
   {
@@ -5853,6 +5853,19 @@
    "tags": [
     "inflation",
     "oil"
+   ]
+  },
+  {
+   "title": "China regulator tells banks to pause IPOs, FT reports",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPRjN6YlQ3VTFGbEdFbkIwWDc1NzBsaDg3RlUycGtxVE9kNEplZUVNZ3VJbDQyUEFZVGdWcnVZaUdPOFJqTk0tNmhKVi1yVTFGeDE3X1ZHZ3lfNWpDTU1aczAyeEZhSmktNi1WcFZ2WEMyaXZiSTluMFRuQ0FWMi1yMS1RTDM4VHZCRmVEY3BkbC1jN3ctcklXZjJVQnVtQQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T07:46:49.898752+00:00",
+   "title_ru": "Регулятор Китая призывает банки приостановить IPO, сообщает FT",
+   "tags": [
+    "China"
    ]
   }
  ],
@@ -12847,8 +12860,8 @@
    "0001914879-26-000006",
    "0001193125-26-444128",
    "0001193125-26-444141",
-   "0001600301-26-000010",
    "0001888118-26-000002",
+   "0001600301-26-000010",
    "0001104659-26-121594",
    "0001493152-26-049664",
    "0001079973-26-001421",
