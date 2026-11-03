@@ -692,7 +692,11 @@
   "5e2f6981cc8d0990": "2026-11-03T11:36:50.078206+00:00",
   "1f1ca2ac56509c4e": "2026-11-03T11:36:50.078206+00:00",
   "3d78ca38861d0178": "2026-11-03T11:36:50.078206+00:00",
-  "20c57eacd703d2b2": "2026-11-03T11:36:50.078206+00:00"
+  "20c57eacd703d2b2": "2026-11-03T11:36:50.078206+00:00",
+  "ca7508941492ad65": "2026-11-03T11:41:50.138381+00:00",
+  "168024c10e1cbae1": "2026-11-03T11:41:50.138381+00:00",
+  "099e1045fcfa592f": "2026-11-03T11:46:50.256627+00:00",
+  "08b4f13d8eae4e7c": "2026-11-03T11:46:50.256627+00:00"
  },
  "recent": [
   {
@@ -6271,6 +6275,31 @@
    "score": 3,
    "ts": "2026-11-03T11:36:50.078206+00:00",
    "title_ru": "Банк Японии стремится продлить срок службы боеприпасов, поскольку возможности выбора сокращаются"
+  },
+  {
+   "title": "JPM’s Michele Tells US Treasury ‘Get Rid of the 20-Year’",
+   "link": "https://www.bloomberg.com/news/videos/2026-11-03/jpm-s-michele-tells-us-treasury-get-rid-of-the-20-year-video",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T11:46:50.256627+00:00",
+   "title_ru": "Мишель из JPM посоветовал Министерству финансов США «избавиться от 20-летних облигаций»",
+   "lead": "Bob Michele, global head of fixed income at JPMorgan Asset Management, offers guidance to the US Treasury ahead of the November 2026 quarterly refunding announcement.",
+   "lead_ru": "Боб Мишель, глобальный руководитель отдела фиксированной доходности в JPMorgan Asset Management, дает рекомендации Казначейству США в преддверии объявления о ежеквартальном возмещении в ноябре 2026 года.",
+   "tags": [
+    "bonds"
+   ]
+  },
+  {
+   "title": "Prediction markets face US midterms test as election bets soar",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOb2hIb2RkVE5NOGtSTm13ODFQYkxHZ2FhVEFlNGdidjFJVVpmTy1UekFuX29Xd2xEMTdRNjNzbEFaTzNNcFNqRURrbl9XVXZjdkpsUFgycVJaWXo1SUFJSFFiSGpSUHQ1U1gzTl9IWWhPS3RSd1hsNF9zV2xXYy1ZclBPMk4xd0tJV1dxZms0MWJGU3djMDNEbWFyNUtkZTduX3c2OTgwTWNRSVdGLWRoT3Jn?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T11:46:50.256627+00:00",
+   "title_ru": "Рынки прогнозов сталкиваются с испытанием на промежуточных выборах в США, поскольку ставки на выборы растут"
   }
  ],
  "last_digest": "2026-11-02",
@@ -6295,7 +6324,7 @@
   "ECB": 0,
   "Fed": 0,
   "IMF": 0,
-  "Kommersant": 1,
+  "Kommersant": 0,
   "RBC": 0,
   "US Labor Statistics (BLS)": 0
  },
