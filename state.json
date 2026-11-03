@@ -770,7 +770,8 @@
   "e487a5449f6c8636": "2026-11-03T19:17:31.076598+00:00",
   "21336a8511028457": "2026-11-03T19:22:30.796454+00:00",
   "d9b5e87586077540": "2026-11-03T19:27:20.751943+00:00",
-  "9471ce5531b13765": "2026-11-03T19:37:32.626651+00:00"
+  "9471ce5531b13765": "2026-11-03T19:37:32.626651+00:00",
+  "42da7e79f6fd9d92": "2026-11-03T19:42:30.984104+00:00"
  },
  "recent": [
   {
@@ -7105,6 +7106,16 @@
     "Fed",
     "rates"
    ]
+  },
+  {
+   "title": "Apollo Says It Will Play Defense in Lending for AI Buildout",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNc3BJZ0pjVFhDV1NscUhTeE1yY0g0TlFjdUdSSk1hUWR3eExXYzdtc0Z4YXZsTmFUMTRnSGxpRzVIYldJMG9kU2k0UDBnTHJ1ZXJaWDE4SXg5T1VwLUhCcjZ0U2hJX1VTamlBOG9qUHczaUxPMFNkdmdLdlJjdUZ4OEJHT1hYdnRpRXZoVkx1YmN0SFlOd3BaRy1KU1ozbHZDNHRHYVNwZmczM1hIR2xR?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T19:42:30.984104+00:00",
+   "title_ru": "Apollo заявляет, что будет защищаться в кредитовании развития искусственного интеллекта"
   }
  ],
  "last_digest": "2026-11-03",
@@ -14083,9 +14094,7 @@
   },
   "checked": "2026-11-03T19:32:33.688140+00:00",
   "sec_seen": [
-   "0001104659-26-121891",
-   "0001924898-26-000009",
-   "0000070858-26-000555"
+   "0001104659-26-121891"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
