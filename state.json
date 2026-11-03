@@ -1,24 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "1a62f23f4d91d961": "2026-10-31T09:02:46.481177+00:00",
-  "c55509c82e691cac": "2026-10-31T09:12:46.152668+00:00",
-  "bf5cd36e24891077": "2026-10-31T09:12:46.152668+00:00",
-  "0dfc4992d0876b7a": "2026-10-31T09:17:46.077269+00:00",
-  "984e65abd01d5bc9": "2026-10-31T09:27:46.125405+00:00",
-  "1f1ca2ac56509c4e": "2026-10-31T09:27:46.125405+00:00",
-  "155c9940f298ad8e": "2026-10-31T09:32:46.102076+00:00",
-  "3883d6af0bb98c73": "2026-10-31T10:02:46.117509+00:00",
-  "4b730b7d94279fc8": "2026-10-31T10:22:46.085186+00:00",
-  "b566aa5f01dd989a": "2026-10-31T10:32:46.092245+00:00",
-  "c6e2cd87793b1a30": "2026-10-31T10:32:46.092245+00:00",
-  "688712f3b6711284": "2026-10-31T10:32:46.092245+00:00",
-  "37f68971bac1a7b6": "2026-10-31T10:37:46.114562+00:00",
-  "50b628340f11037c": "2026-10-31T10:37:46.114562+00:00",
-  "3bcbf7cec41bca92": "2026-10-31T10:47:46.130438+00:00",
-  "27230cc576cd9ef9": "2026-10-31T10:57:46.131318+00:00",
-  "0b1b2b704ee2bf34": "2026-10-31T11:17:46.103418+00:00",
-  "35a5f28f6d069d1d": "2026-10-31T11:17:46.103418+00:00",
   "ca7508941492ad65": "2026-10-31T11:32:46.107977+00:00",
   "b88345da7c47ff03": "2026-10-31T12:07:46.118777+00:00",
   "e385915a0f3925ae": "2026-10-31T12:12:46.179377+00:00",
@@ -667,93 +649,45 @@
   "fd59337ec63ef0b1": "2026-11-03T08:46:49.981410+00:00",
   "2d5b44158b1e086d": "2026-11-03T08:46:49.981410+00:00",
   "dde6c3a886bc4a54": "2026-11-03T08:51:49.936375+00:00",
-  "d1b89c82b7e594d5": "2026-11-03T08:56:49.952657+00:00"
+  "d1b89c82b7e594d5": "2026-11-03T08:56:49.952657+00:00",
+  "96fcfebc3bbd1e8e": "2026-11-03T11:26:50.468234+00:00",
+  "70a47a740b7d4a19": "2026-11-03T11:26:50.468234+00:00",
+  "6946bd32039013b1": "2026-11-03T11:26:50.468234+00:00",
+  "dc4ea58902139711": "2026-11-03T11:26:50.468234+00:00",
+  "fa647b10030b4f34": "2026-11-03T11:26:50.468234+00:00",
+  "b00235a1cc7ce5bf": "2026-11-03T11:26:50.468234+00:00",
+  "82edbfdb4317c9a2": "2026-11-03T11:26:50.468234+00:00",
+  "7d06956d367afbc9": "2026-11-03T11:26:50.468234+00:00",
+  "060e7e4031c7e471": "2026-11-03T11:26:50.468234+00:00",
+  "dc5292dabd52ff7f": "2026-11-03T11:26:50.468234+00:00",
+  "a6c865425855bb3b": "2026-11-03T11:26:50.468234+00:00",
+  "1d8e9ad8f9a920df": "2026-11-03T11:26:50.468234+00:00",
+  "bece9f4b8f030147": "2026-11-03T11:26:50.468234+00:00",
+  "b12ce0cca21be2fb": "2026-11-03T11:26:50.468234+00:00",
+  "1369d0ba88cc414b": "2026-11-03T11:26:50.468234+00:00",
+  "a6d0b53575395ecc": "2026-11-03T11:26:50.468234+00:00",
+  "9eac758327f8a78c": "2026-11-03T11:26:50.468234+00:00",
+  "37f5f4f0473d8658": "2026-11-03T11:26:50.468234+00:00",
+  "f7f77cd06621910f": "2026-11-03T11:26:50.468234+00:00",
+  "4c120c3a9c02da4a": "2026-11-03T11:26:50.468234+00:00",
+  "cf39c185f90f0fb4": "2026-11-03T11:26:50.468234+00:00",
+  "530a5dd41c4f23f2": "2026-11-03T11:26:50.468234+00:00",
+  "e3726f84f7d589f9": "2026-11-03T11:26:50.468234+00:00",
+  "4c6f96ce93a33347": "2026-11-03T11:26:50.468234+00:00",
+  "fe58275a00309ae9": "2026-11-03T11:26:50.468234+00:00",
+  "b0e24e57e768374c": "2026-11-03T11:26:50.468234+00:00",
+  "cdbd66f1625c62b5": "2026-11-03T11:26:50.468234+00:00",
+  "eb06739ed5e9c469": "2026-11-03T11:26:50.468234+00:00",
+  "720d1c506e316125": "2026-11-03T11:26:50.468234+00:00",
+  "8675e81c01cf5629": "2026-11-03T11:26:50.468234+00:00",
+  "3f207f778bdabf69": "2026-11-03T11:26:50.468234+00:00",
+  "9f2b059ca004863a": "2026-11-03T11:26:50.468234+00:00",
+  "4f8c296a20e250d1": "2026-11-03T11:26:50.468234+00:00",
+  "2dcca4ce3daba3d4": "2026-11-03T11:26:50.468234+00:00",
+  "e8cab99d09289591": "2026-11-03T11:26:50.468234+00:00",
+  "a70ea8012d77caac": "2026-11-03T11:26:50.468234+00:00"
  },
  "recent": [
-  {
-   "title": "Opay Shares Fail to Trade After Raising $304 Million in US IPO",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOckpvUHNoSGV0ZF9kZjVGR0FjSlk3QnVvdURnX0ZoeVF6ZlpqeUFwV2pranJMSHpJR1prODhnWXdMR3FaNEwtT1VWNWs4SExacGl6SS1IX1d0b0UyTmc2ZjhvbHpmVUNVSjVhSnE4YUU3UlREUDdBLWpEU1FmV2JqOHNkNVhKMFk2dXFaTXB0UzRkaTNDaVpqRUVzWkhycldMclZ5UHBnM0RVV0JjLU1vcnh3?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-31T09:02:46.481177+00:00",
-   "title_ru": "Акции Opay не торгуются после привлечения $304 млн в ходе IPO в США",
-   "tags": [
-    "markets"
-   ]
-  },
-  {
-   "title": "Charting the Global Economy: Central Banks Hold Rates Steady",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-31/charting-the-global-economy-central-banks-hold-rates-steady",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 6,
-   "ts": "2026-10-31T09:12:46.152668+00:00",
-   "title_ru": "График мировой экономики: центральные банки поддерживают стабильные ставки",
-   "lead": "Central banks around the world kept interest rates unchanged this week as officials in the US and Europe assessed the risk of inflation stemming from high energy prices.",
-   "lead_ru": "Центральные банки по всему миру сохранили процентные ставки без изменений на этой неделе, поскольку официальные лица в США и Европе оценили риск инфляции, вызванной высокими ценами на энергоносители.",
-   "tags": [
-    "rates",
-    "inflation"
-   ]
-  },
-  {
-   "title": "Bank of England May Raise High-Risk Mortgage Threshold, FT Says",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-31/bank-of-england-may-raise-high-risk-mortgage-threshold-ft-says",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-31T09:32:46.102076+00:00",
-   "title_ru": "Банк Англии может повысить порог высокорискованной ипотеки, сообщает FT",
-   "lead": "The Bank of England is considering easing restrictions on higher-risk mortgage loans in a move that could support the UK housing market, the Financial Times reported.",
-   "lead_ru": "Банк Англии рассматривает возможность смягчения ограничений на ипотечные кредиты с повышенным риском, что может поддержать рынок жилья Великобритании, сообщает Financial Times."
-  },
-  {
-   "title": "Shipping Strikes In Hormuz Leave Both Sides With Economic Pain",
-   "link": "https://www.bloomberg.com/news/articles/2026-10-31/shipping-strikes-in-hormuz-leave-both-sides-with-economic-pain",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-31T10:37:46.114562+00:00",
-   "title_ru": "Забастовки судоходников в Ормузе причиняют обеим сторонам экономическую боль",
-   "lead": "As US President Donald Trump threatens renewed attacks against Iran, Tehran’s intermittent strikes on commercial vessels have left the two sides locked in a painful economic standoff.",
-   "lead_ru": "Поскольку президент США Дональд Трамп угрожает новыми нападениями на Иран, периодические удары Тегерана по коммерческим судам привели к тому, что обе стороны оказались в болезненном экономическом противостоянии."
-  },
-  {
-   "title": "Indonesia’s Gas Cut Shows Why Singapore Can’t Rely on Pipelines Alone",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPenNNWlJsOGxKblkwM0dJZ0JwRE9OSlExWVpvdWYyZGZoVkhpWWdTeW1XcjFvdzZHU0IzSzFwQ2trTWpuOS1aZzJ0MC1fVS1nRW96UUhoem82ZEpRV0ZONy1KTXZFZC1TbkNQbVZkamRIcXVUVVppaWtNVUVlZ1BTSmRNaXVVQXZhVV9TaXA0QmRuTUFyWjZiT2cwRWNRLS1pR0djQzEtRUV5d3FrV0RLYkllblI5QQ?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-31T10:37:46.114562+00:00",
-   "title_ru": "Отказ от газа в Индонезии показывает, почему Сингапур не может полагаться только на трубопроводы"
-  },
-  {
-   "title": "Japan Is the Giant Asian Market Where Trading Has Doubled: New Economy",
-   "link": "https://www.bloomberg.com/news/newsletters/2026-10-31/japan-is-the-giant-asian-market-where-trading-has-doubled-new-economy",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 4,
-   "ts": "2026-10-31T10:47:46.130438+00:00",
-   "title_ru": "Япония — гигантский азиатский рынок, объем торговли на котором увеличился вдвое: новая экономика",
-   "lead": "It’s now possible for foreign firms to play leading roles in restructuring key parts of Japan’s business architecture.",
-   "lead_ru": "Теперь иностранные фирмы могут играть ведущую роль в реструктуризации ключевых частей бизнес-архитектуры Японии."
-  },
-  {
-   "title": "Правительство продлило запрет на экспорт дизеля производителями",
-   "link": "https://www.rbc.ru/rbcfreenews/6ae5cd2787a8dbd418dd4fee",
-   "sources": [
-    "RBC"
-   ],
-   "score": 1,
-   "ts": "2026-10-31T11:17:46.103418+00:00"
-  },
   {
    "title": "- IMF eLibrary",
    "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9lZlhBdTViQ0FjYnpwTnl1VnNYbl9Za1UwRlpmTW5YeF9SVXREM0xlZmJjR0xaZFg1TXpqZEpVbVJXZnJhSmN1X0pDX2R6enBnYlY5MHNFQlVzUQ?oc=5",
@@ -6020,6 +5954,296 @@
    "tags": [
     "GDP"
    ]
+  },
+  {
+   "title": "ECB Remarks Point to Sub-2% Inflation By End of 2027, BE Finds",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-03/ecb-remarks-point-to-sub-2-inflation-by-end-of-2027-be-finds",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-11-03T11:26:50.468234+00:00",
+   "title_ru": "Замечания ЕЦБ указывают на то, что к концу 2027 года инфляция составит менее 2%, считает BE",
+   "lead": "European Central Bank officials’ remarks suggest they assume euro-area inflation will drop “materially below” 2% in a year’s time, according to Bloomberg Economics.",
+   "lead_ru": "По данным Bloomberg Economics, заявления представителей Европейского центрального банка предполагают, что они предполагают, что инфляция в еврозоне упадет «существенно ниже» 2% в течение года.",
+   "tags": [
+    "ECB",
+    "inflation"
+   ]
+  },
+  {
+   "title": "Regulators explore credit union reforms to support growth, innovation and better outcomes for members",
+   "link": "https://www.bankofengland.co.uk/news/2026/november/regulators-explore-credit-union-reforms-to-support-growth-innovation-and-better-outcomes-for-members",
+   "sources": [
+    "Bank of England"
+   ],
+   "score": 5,
+   "ts": "2026-11-03T11:26:50.468234+00:00",
+   "title_ru": "Регулирующие органы изучают реформы кредитных союзов для поддержки роста, инноваций и улучшения результатов для членов",
+   "lead": "Credit unions could benefit from several ideas put forward today by the Prudential Regulation Authority and Financial Conduct Authority aimed at helping the sector grow, innovate and meet the changing needs of their members.",
+   "lead_ru": "Кредитные союзы могли бы извлечь выгоду из нескольких идей, выдвинутых сегодня Управлением пруденциального регулирования и Управлением финансового надзора, направленных на то, чтобы помочь сектору расти, внедрять инновации и удовлетворять меняющиеся потребности своих членов."
+  },
+  {
+   "title": "China Steps in to Boost Stocks, Cool Off Yuan",
+   "link": "https://www.bloomberg.com/news/newsletters/2026-11-03/china-steps-in-to-boost-stocks-cool-off-yuan",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 5,
+   "ts": "2026-11-03T11:26:50.468234+00:00",
+   "title_ru": "Китай вмешается, чтобы увеличить запасы и охладить юань",
+   "tags": [
+    "markets",
+    "China"
+   ]
+  },
+  {
+   "title": "ECB's Machado warns against softer capital requirements for banks",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPNVpEYmYtQk1fWWVVVmJScWFzSTZXbXNTOHJVcENhN1hsM3E0TGp4QU4xOHJjNlF2b3ZLNlN1YXptQWFkaWJfSWN2OVRIZlk1Y0dYZV9yd2haaVc1OUdKdlp5bExIYzhOSlQ3UklIb2lRSG1rUWRRdUJhOVdERzlEM2VJSlA4c2JDQXh3TWwtSFdvQTlQQmhjRGtTTUlqMkZZbUtwcUtXQVkyd1JkVjhKZ1RPTQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 4,
+   "ts": "2026-11-03T11:26:50.468234+00:00",
+   "title_ru": "Глава ЕЦБ Мачадо предостерегает от более мягких требований к капиталу для банков",
+   "tags": [
+    "ECB"
+   ]
+  },
+  {
+   "title": "Brussels sets tight deadline for ECB president nominations",
+   "link": "https://www.ft.com/content/c5c430f5-e9b7-434b-851a-565cc43ccb94?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 4,
+   "ts": "2026-11-03T11:26:50.468234+00:00",
+   "title_ru": "Брюссель установил жесткие сроки выдвижения кандидатур на пост президента ЕЦБ",
+   "lead": "Eurozone leaders need to submit nominees to succeed Christine Lagarde by Friday as contest for top central banking job heats up",
+   "lead_ru": "Лидеры еврозоны должны представить кандидатов на смену Кристин Лагард к пятнице, поскольку борьба за высшую должность в центральном банке накаляется",
+   "tags": [
+    "ECB"
+   ]
+  },
+  {
+   "title": "Sweden Is Set for First Rate Increase Since 2023: Decision Guide",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-03/sweden-is-set-for-first-rate-increase-since-2023-decision-guide",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T11:26:50.468234+00:00",
+   "title_ru": "Швеция готова к первому темпу роста с 2023 года: руководство для принятия решений",
+   "lead": "Sweden’s Riksbank is poised to raise borrowing costs this week, joining the global tightening push to guard against inflation.",
+   "lead_ru": "Шведский Риксбанк готов повысить стоимость заимствований на этой неделе, присоединившись к глобальному ужесточению политики в целях защиты от инфляции.",
+   "tags": [
+    "inflation"
+   ]
+  },
+  {
+   "title": "Europe’s Junk Market Sees Another Loan Pulled as Iqony Axes Deal",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-03/europe-s-junk-market-sees-another-loan-pulled-as-iqony-axes-deal",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T11:26:50.468234+00:00",
+   "title_ru": "Европейский рынок мусора видит еще один кредит, полученный в результате сделки с Iqony Axes",
+   "lead": "Banks marketing a €550 million ($616 million) loan refinancing for European energy infrastructure and services company Iqony have pulled the deal after failing to garner enough investor interest amid wider market turmoil.",
+   "lead_ru": "Банки, предлагающие рефинансирование кредита на сумму 550 миллионов евро (616 миллионов долларов США) для европейской компании Iqony, занимающейся энергетической инфраструктурой и услугами, отказались от сделки после того, как не смогли привлечь достаточный интерес инвесторов на фоне более широких потрясений на рынке."
+  },
+  {
+   "title": "London's Oxford Street Has a Message for the UK Economy",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOZjBhS3p6MXYtNkcxN3VFZHluWlIzdWVxR1dtbXkzWEdNY19JWEFrMGJhWDFhRi1oSG8ybndXaFcwQW9sX2RDc2hHRS1mQVg1ZDJFQ1VZb1FqcjVVSFBrV1M2ZTNkU2hUZ1Z6eFNhcWU0azlfazhIbnZUbjlQVVBxbUtpR3E3UGpGVVlEdEpxNWQ3bk1kSVFNSUtkemMta1hiZ182LXZ2b3VxSVdVNWc?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T11:26:50.468234+00:00",
+   "title_ru": "Лондонская Оксфорд-стрит несет послание для экономики Великобритании"
+  },
+  {
+   "title": "Oman Seeks to Turn Wartime Windfall Into Lasting Economic Gains",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNNUUxOGtSdlktOHZjVWJVbDVCVzlrTjVfSl9pWUo4X0FWdWQxWUZPMjYwMmRKQlBwbXI2Y21UTEV3LWJXNXQ0VzZxVlA4RFlrSm1VMS1PY1R6aU5fYkFHTHZsaFNnVF94cFcwUmFGajBPS3JnNU1Ld29iV3ZIYkJuYlA1MnZIX3N1VVpmMVNGYmYtWldKVW5MM2thNlJCV1RjYlljcW9BNmJCb3BGVkVkZVF4eUQ?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T11:26:50.468234+00:00",
+   "title_ru": "Оман стремится превратить непредвиденные доходы военного времени в долгосрочные экономические выгоды"
+  },
+  {
+   "title": "The Dollar Is Reasserting Itself as the King of Global Finance",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQM2J1Zl8yM2ZTZ1BnRGZ4NWxBdktDVjBPLWV0SGFKTk13NGkwblFtaXE5YnJKWEYtbW1NdGxMZGV3LXBJajI1REJpZnBCLWdibkNBOW96UTUzYkFrbXpSQkJGOHlUcHU0UElsLTBmd1RQeGdHNGFRN3pnMDFvcHV4VElXZ2V4QUZjWlpXTE92UTV6VkNxSnpvRmttMlZIZVFfSW8tVTVTazFaNGowZVBJNHFab2w?oc=5",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T11:26:50.468234+00:00",
+   "title_ru": "Доллар вновь заявляет о себе как о короле мировых финансов",
+   "tags": [
+    "dollar"
+   ]
+  },
+  {
+   "title": "'Quiet quitting' could be hitting the economy - here's why",
+   "link": "https://www.bbc.co.uk/news/articles/cw23d5z87drpo?at_medium=RSS&at_campaign=rss",
+   "sources": [
+    "BBC"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T11:26:50.468234+00:00",
+   "title_ru": "«Тихий уход» может нанести удар по экономике – вот почему",
+   "lead": "Britons have become less engaged with the jobs they do and are less willing to put in extra effort, a report has found.",
+   "lead_ru": "Согласно отчету, британцы стали менее вовлечены в свою работу и менее готовы прилагать дополнительные усилия.",
+   "tags": [
+    "jobs"
+   ]
+  },
+  {
+   "title": "Europe stocks slip on AI concerns, escalating Iran tensions",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOd0JOZWpKV2J4djQwSkJiWGc4cGVCX1VsN1gwZEJuZFJ4UjRDYXpQanhhRnVPMUJaTGh3NEZqcmxqanFpdXpJdm5SMzhtWmxxZUswaXBZSjBmd3dHWS1ZdVVTbDJ1UG82LVZwQnQ1UUlCMllJWTZFWDFVN29Ca0ZmWnZBZUVvN3NjRF9Ia1VrMFBobXZMY0lDZkRzM3AxcWwxOF9j?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T11:26:50.468234+00:00",
+   "title_ru": "Европейские акции падают из-за опасений по поводу искусственного интеллекта, что усиливает напряженность в Иране",
+   "tags": [
+    "markets"
+   ]
+  },
+  {
+   "title": "Virgin Media O2 to cut thousands of jobs, halt UK fibre expansion",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxORy1HUnY4OUxuN2VpSXdha2o2ekVzRERqNlFnekl1VFpDcEt6YXlwdUdYMFlYX1NjS19menNKOUhJN2xIRElIQm8wTVpnUFhQdE9qSFFOWHhsZXBSd1NwQ1VBQzI4ODF5TjFIZ0JyUTZxV3hxc2tuUzdvNVNVT3dET01Dc3FuZ01QZnFsTEY5Z004VzAyWnJmYVhQeWc0OVNiNFN4ZDkxQU1lYjJfN1E?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T11:26:50.468234+00:00",
+   "title_ru": "Virgin Media O2 сократит тысячи рабочих мест и остановит расширение оптоволоконной сети в Великобритании",
+   "tags": [
+    "jobs"
+   ]
+  },
+  {
+   "title": "TotalEnergies signs five-year LNG supply deal with ADNOC Gas",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQeUU5cElGQ09ralplSnBSZndCTTRVMVFib3B0Mm1mS1BuNmYxOXNQSlRBTmVHMzl3c3hCWFM3SXRtamFaTG5NTk9FcFI5aHlnbEx5UVNqOXM4VUY1NmRlYTJGNWNlblVsNnBOcEtWOVBiSDFSdEhweGw3VWVFUV9oTVg1MHlwbE91dWx6TGtEZzVfNy1VVVZDVUI1OEplQTZmMlp0ODVoRGs3ZGNkN3dtOVp3?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T11:26:50.468234+00:00",
+   "title_ru": "TotalEnergies подписывает пятилетний контракт на поставку СПГ с ADNOC Gas",
+   "tags": [
+    "gas"
+   ]
+  },
+  {
+   "title": "Schaeffler to cut 3,460 jobs, shut five European plants as auto slump bites",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNeFAtaXBQd0FKN01ZQUFGZFd3YjlPMnNEbDJjazNwZTFQTnplVlJkNzRzNm10WU1XWl91eTVaQVlzVG43R0tfcTZtQkFuSEdqejlZSDc3Y294M2NIZXNmY3puTnpYdmFVdWp3MmNDT3E4TGUzdzVUa2doSTFpU1Q3NnBTYjVzWTl2QVFQakotTFJWVWhUakNpaVpMY1lMV0dLUk56N1JWeS1SalM2V25fN0JOTy0zWkx4OE1NWVhFQmR5UGtFd3g4Uw?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T11:26:50.468234+00:00",
+   "title_ru": "Schaeffler сократит 3460 рабочих мест и закроет пять европейских заводов из-за спада в автомобильной отрасли",
+   "tags": [
+    "jobs"
+   ]
+  },
+  {
+   "title": "India's top gas importer sets eyes on US LNG under long-term deal with Qatar",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPcDR6Y3AtYlRDaXB3UGZqWHd4b194NTg5UEhMYS1NYjVUQVktaHBoMW9ENmVFSVRUMmpSR184dC15TkZQRGdFODY5SHU3VkxxdHRDNmRQWkxheUYxMW9abjZGQ2pWbGpBNlpZTGtJTjd6emVHVFlwV1pabzlEa182RjhmamNibVU2OEd1V25YNE1NajhFOTdCSzIzWjhPRXhwZ0Z5OWdfZ2lFa3dYTTcyckFvWnBNTFlWZ3lqcTBuOFVyUQ?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T11:26:50.468234+00:00",
+   "title_ru": "Крупнейший импортер газа Индии присматривается к американскому СПГ в рамках долгосрочной сделки с Катаром",
+   "tags": [
+    "gas"
+   ]
+  },
+  {
+   "title": "Germany awards $13 billion gas plant contracts to utilities including LEAG, RWE",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNWnZZTVdYRmNCUVJqUjJ1anJaaHJoaXpLdTFidjhXRlpuNGV3bWprWThFNVBuVjBWRklxcTBsSExkMVFJUkZfcm5LUy1ncnB1NElHM2I3Uk9tMGRZQU9hQWZ1MjBGaUlXT2xYb2ZOZGs5a284MXhUdlpRcnV1akhPYmY4aUVfZWN6eDhyS18yblkwZnk3OFVUeUNLbDRyZUZiTU8ySXF3WldGSGVma2phS1hqR21sRnFBS051Zg?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T11:26:50.468234+00:00",
+   "title_ru": "Германия заключила контракты на строительство газовых заводов на сумму 13 миллиардов долларов с коммунальными предприятиями, включая LEAG и RWE"
+  },
+  {
+   "title": "Brazil’s post-election market shock clouds path to cheaper credit​",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQSjFMUTg0NHVWTzhUVmtsM0RXS0FZcFoxZlRPci1kSXo5RkNaaVF2UXZOTUVzSHJKdE5nZlEtSlNBVHlnc09tR0stX0hmV2VUQ05QRUc1WmhYakNnblRMaFNGM2VxZVd5dlQ0SktwXzktdzlKNXprdnJJWjVXY0R0cEVtSkY4dXpza0lPWnhOVGI5MVRUWHFxNUREU1BYSnZKcXc5d09hVkZGVnJRUHdqS3ln?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T11:26:50.468234+00:00",
+   "title_ru": "Шок на рынке Бразилии после выборов омрачает путь к более дешевым кредитам​"
+  },
+  {
+   "title": "German car parts giant Schaeffler axes 3,500 jobs",
+   "link": "https://www.ft.com/content/25ce0d50-e7b6-4b14-93bb-ee5da6f747c0?syn-25a6b1a6=1",
+   "sources": [
+    "Financial Times"
+   ],
+   "score": 3,
+   "ts": "2026-11-03T11:26:50.468234+00:00",
+   "title_ru": "Немецкий гигант автозапчастей Schaeffler сокращает 3500 рабочих мест",
+   "lead": "Automotive supplier to close four sites in Germany as crisis engulfing country’s flagship industry deepens",
+   "lead_ru": "Поставщик автомобильной продукции закроет четыре завода в Германии, поскольку кризис, охвативший флагманскую отрасль страны, углубляется",
+   "tags": [
+    "jobs"
+   ]
+  },
+  {
+   "title": "Oil has had a massive run, but a prominent bull sees a turning point on midterm eve",
+   "link": "https://www.marketwatch.com/story/oil-has-had-a-massive-run-but-a-prominent-bull-sees-a-turning-point-on-midterm-eve-be2c5fa7?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 2,
+   "ts": "2026-11-03T11:26:50.468234+00:00"
+  },
+  {
+   "title": "This signal from the corporate bond market has historically preceded big drawdowns for the S&P 500",
+   "link": "https://www.marketwatch.com/story/this-signal-from-the-corporate-bond-market-has-historically-preceded-big-drawdowns-for-the-s-p-500-8c1a3d25?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 2,
+   "ts": "2026-11-03T11:26:50.468234+00:00"
+  },
+  {
+   "title": "‘In the trenches’: Wisconsin’s struggling small businesses could turn a Trump ally’s district blue",
+   "link": "https://www.theguardian.com/us-news/2026/nov/03/small-business-economy-wisconsin-house-race",
+   "sources": [
+    "The Guardian"
+   ],
+   "score": 2,
+   "ts": "2026-11-03T11:26:50.468234+00:00"
+  },
+  {
+   "title": "Thousands of Disney job cuts may be coming. Investors are asking what comes next.",
+   "link": "https://www.marketwatch.com/story/thousands-of-disney-job-cuts-may-be-coming-investors-are-asking-what-comes-next-19cc0662?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-11-03T11:26:50.468234+00:00"
+  },
+  {
+   "title": "What analysts are saying as Apple’s stock falls after earnings report",
+   "link": "https://www.marketwatch.com/story/what-analysts-are-saying-as-apples-stock-falls-after-earnings-report-f0afa357?mod=mw_rss_topstories",
+   "sources": [
+    "MarketWatch"
+   ],
+   "score": 1,
+   "ts": "2026-11-03T11:26:50.468234+00:00"
   }
  ],
  "last_digest": "2026-11-02",
@@ -12995,51 +13219,34 @@
    "senate": true,
    "sec": true
   },
-  "checked": "2026-11-03T08:31:49.923015+00:00",
+  "checked": "2026-11-03T11:26:50.468234+00:00",
   "sec_seen": [
-   "0001531352-26-000014",
-   "0002157538-26-000004",
-   "0001817199-26-000034",
-   "0001889614-26-000002",
-   "0001693906-26-000016",
-   "0001225208-26-008590",
-   "0001817217-26-000014",
-   "0000087347-26-000132",
-   "0001638643-26-000038",
-   "0002020161-26-000015",
-   "0001104659-26-121591",
-   "0001836156-26-000008",
-   "0000050863-26-000194",
-   "0001914879-26-000006",
-   "0001193125-26-444128",
-   "0001193125-26-444141",
-   "0001888118-26-000002",
-   "0001600301-26-000010",
-   "0001104659-26-121594",
-   "0001493152-26-049664",
-   "0001079973-26-001421",
    "0001104659-26-121593",
-   "0001791884-26-000011",
-   "0001548006-26-000012",
-   "0000950157-26-001158",
+   "0002157538-26-000004",
+   "0001318349-26-000022",
+   "0001600301-26-000010",
+   "0001778564-26-000198",
    "0001683168-26-008247",
-   "0001692514-26-000005",
-   "0000935703-26-000125",
-   "0001502370-26-000017",
    "0001213900-26-115107",
    "0001210033-26-000012",
-   "0001193125-26-444147",
-   "0001104659-26-121544",
-   "0001757376-26-000012",
-   "0001778564-26-000199",
-   "0000812011-26-000165",
-   "0001817160-26-000023",
-   "0001213900-26-115071",
-   "0001778564-26-000198",
-   "0001318349-26-000022",
-   "0001193125-26-444030",
+   "0001548006-26-000012",
+   "0001225208-26-008590",
+   "0001817217-26-000014",
    "0001193125-26-444126",
-   "0001274737-26-000058"
+   "0001692514-26-000005",
+   "0000950157-26-001158",
+   "0000812011-26-000165",
+   "0001193125-26-444147",
+   "0001817160-26-000023",
+   "0001757376-26-000012",
+   "0001531352-26-000014",
+   "0001079973-26-001421",
+   "0001778564-26-000199",
+   "0001104659-26-121594",
+   "0001193125-26-444141",
+   "0001817199-26-000034",
+   "0001193125-26-444128",
+   "0001104659-26-121591"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
