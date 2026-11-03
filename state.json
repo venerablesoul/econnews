@@ -1,7 +1,6 @@
 {
  "initialized": true,
  "seen": {
-  "479b6da054754ac9": "2026-10-31T19:33:19.903489+00:00",
   "78ce690271973d1a": "2026-10-31T20:03:52.103356+00:00",
   "bb2e88199bc32777": "2026-10-31T20:08:52.058989+00:00",
   "8de7718fc74f60ae": "2026-10-31T20:18:52.116910+00:00",
@@ -770,19 +769,10 @@
   "7193150d566eeff4": "2026-11-03T19:12:31.674627+00:00",
   "e487a5449f6c8636": "2026-11-03T19:17:31.076598+00:00",
   "21336a8511028457": "2026-11-03T19:22:30.796454+00:00",
-  "d9b5e87586077540": "2026-11-03T19:27:20.751943+00:00"
+  "d9b5e87586077540": "2026-11-03T19:27:20.751943+00:00",
+  "9471ce5531b13765": "2026-11-03T19:37:32.626651+00:00"
  },
  "recent": [
-  {
-   "title": "Bloomberg This Weekend: Markets React; Midterm Outlook",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNTE55REZSQzZiVzNLODg4WlRmOGptUkhTeldSa0xucUI1M0Nqd2xTUEVSTlRVWkphM2dPRDJheldXRlNVOUhMZE9JX2RGOF95TWNncTVWS0lvRFBmdUxTeWlwdTRpWDhFRkFJbmR3dGljdUU3cm8xVVgybEljcER1UzZpcGFHZzVPRmRYQjdSYmJOeDhHYWdNTEw0V0hoUkxwUmpaUldWajF6X0pP?oc=5",
-   "sources": [
-    "Bloomberg"
-   ],
-   "score": 3,
-   "ts": "2026-10-31T19:33:19.903489+00:00",
-   "title_ru": "Bloomberg в эти выходные: Реакция рынков; Среднесрочный прогноз"
-  },
   {
    "title": "US Jobs Pickup May Keep Fed on Track to Hike Rates Again",
    "link": "https://www.bloomberg.com/news/articles/2026-10-31/us-jobs-pickup-may-keep-fed-on-track-to-hike-rates-again",
@@ -7100,6 +7090,20 @@
    "tags": [
     "rates",
     "inflation"
+   ]
+  },
+  {
+   "title": "Fed's Powell nods to \"gradual\" rate hikes",
+   "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5fX0hVU1J6YXkzWkJsS0lxRmxyWlVVVUVpR1Q1TGhRd3dRbmtvQVNzYXQ2UlAxbFl4T1k2c0MzVlZZMEx3dW92N0ZobUFBa0RPam94VkpzSm5jMmNY?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 9,
+   "ts": "2026-11-03T19:37:32.626651+00:00",
+   "title_ru": "Глава ФРС Пауэлл кивает на «постепенное» повышение ставок",
+   "tags": [
+    "Fed",
+    "rates"
    ]
   }
  ],
@@ -14079,10 +14083,9 @@
   },
   "checked": "2026-11-03T19:32:33.688140+00:00",
   "sec_seen": [
-   "0000070858-26-000555",
    "0001104659-26-121891",
    "0001924898-26-000009",
-   "0001874002-26-000002"
+   "0000070858-26-000555"
   ],
   "errors": {
    "senate": "HTTPError: HTTP Error 403: Forbidden"
