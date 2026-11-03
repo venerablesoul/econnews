@@ -627,7 +627,10 @@
   "2db6fc4b02b67001": "2026-11-03T05:16:49.923289+00:00",
   "69152cad0db7bc98": "2026-11-03T05:16:49.923289+00:00",
   "ef36649061da852c": "2026-11-03T05:16:49.923289+00:00",
-  "23b936abfe86ffd4": "2026-11-03T05:36:49.900607+00:00"
+  "23b936abfe86ffd4": "2026-11-03T05:36:49.900607+00:00",
+  "344eded14fb2badd": "2026-11-03T05:41:49.925654+00:00",
+  "4bebade5f7b079f2": "2026-11-03T05:41:49.925654+00:00",
+  "46767ed17fff8b39": "2026-11-03T05:41:49.925654+00:00"
  },
  "recent": [
   {
@@ -5537,6 +5540,36 @@
    "score": 3,
    "ts": "2026-11-03T05:16:49.923289+00:00",
    "title_ru": "Мировые рынки уже были хрупкими. Большие ставки на ИИ могут сломать их"
+  },
+  {
+   "title": "Fed will not raise rates on inflation fears alone",
+   "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE05NHZFS3RDMThNekhkZTNvaHg2b0Fud09rUDRZWkxjcVU0ekt1SDloOUppNF85bVlUZVZURlBsNENmdm9aYVFpc1N4OElxbVE4OU5yUXdqNElnNkFz?oc=5",
+   "sources": [
+    "Reuters"
+   ],
+   "score": 7,
+   "ts": "2026-11-03T05:41:49.925654+00:00",
+   "title_ru": "ФРС не будет повышать ставки только на инфляционных опасениях",
+   "tags": [
+    "Fed",
+    "inflation"
+   ]
+  },
+  {
+   "title": "Markets and Economists Are Divided Beyond a BOE Hike This Week",
+   "link": "https://www.bloomberg.com/news/articles/2026-11-03/markets-and-economists-are-divided-beyond-a-boe-hike-this-week",
+   "sources": [
+    "Bloomberg"
+   ],
+   "score": 6,
+   "ts": "2026-11-03T05:41:49.925654+00:00",
+   "title_ru": "Рынки и экономисты разделились после повышения BOE на этой неделе",
+   "lead": "With UK inflation heading toward 4% and no end to the Iran war in sight, a Bank of England interest-rate hike on Thursday is seen as all but a done deal.",
+   "lead_ru": "Поскольку инфляция в Великобритании приближается к 4% и конца войне с Ираном не предвидится, повышение процентной ставки Банком Англии в четверг рассматривается как все, кроме готовой сделки.",
+   "tags": [
+    "rates",
+    "inflation"
+   ]
   }
  ],
  "last_digest": "2026-11-02",
@@ -12530,8 +12563,8 @@
    "0001914879-26-000006",
    "0001193125-26-444128",
    "0001193125-26-444141",
-   "0001888118-26-000002",
    "0001600301-26-000010",
+   "0001888118-26-000002",
    "0001104659-26-121594",
    "0001493152-26-049664",
    "0001079973-26-001421",
