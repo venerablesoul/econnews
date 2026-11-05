@@ -1,11 +1,12 @@
 # Faster news: the bot on a server or your own computer
 
-On GitHub Actions the bot runs in ~5.5-hour loops restarted by a schedule, and GitHub sometimes starts them late.
-In continuous mode on your own machine the bot checks the feeds every 5 minutes (or more often) without gaps.
+On GitHub Actions the bot runs in ~5.5-hour sessions, each queueing the next one, so it already works around the clock.
+Your own machine is an alternative: there the bot checks the feeds every 5 minutes (or more often) as one long process.
 
-## Step 0. Turn off the GitHub schedule
+## Step 0. Turn off the GitHub sessions
 Otherwise the news arrives twice.
-GitHub → **Actions** tab → **Economic news** → **⋯** → **Disable workflow**.
+GitHub → **Actions** tab → **Economic news** → **⋯** → **Disable workflow**. The running session stops within ~30 minutes,
+and the «Keep the news bot running» workflow leaves a workflow disabled by hand alone.
 The Markets page and the terminal keep working: GitHub Pages serves them from the gh-pages branch, and the bot pushes fresh data there itself (the token below needs Contents: Read and write for that).
 
 ## Option A. A server (VPS) — runs around the clock
@@ -41,4 +42,4 @@ Works while the computer is on.
 3. Run `deploy\start_windows.bat`. To start it with Windows: Win+R → `shell:startup` → put a shortcut to this file there.
 
 ## Moving everything back to GitHub Actions
-Stop the bot on the server (`sudo systemctl disable --now econnews`) and enable the workflow again: Actions → Economic news → **Enable workflow**.
+Stop the bot on the server (`sudo systemctl disable --now econnews`) and enable the workflow again: Actions → Economic news → **Enable workflow**, then **Run workflow** once.

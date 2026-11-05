@@ -542,7 +542,8 @@ await test("watchdog: the owner hears when the news bot goes quiet and when it i
   let got = sent.slice(start);
   assert.equal(got.length, 1);
   assert.equal(String(got[0].chat_id), OWNER);
-  assert.match(got[0].text, /gone quiet.*90 min/s);
+  assert.match(got[0].text, /gone quiet.*90 min.*did not restart by itself/s);
+  assert.match(got[0].text, /GitHub → Actions → Economic news \(or the server it runs on\)/, "no repository known: plain words");
   start = sent.length; puts = e.SUBS.puts;
   await watchBot(e);
   assert.equal(sent.length, start, "one message per outage");
@@ -556,6 +557,21 @@ await test("watchdog: the owner hears when the news bot goes quiet and when it i
   await watchBot(e);
   assert.match(sent[sent.length - 1].text, /Бот новостей молчит<\/b>: нет обновлений 120 мин/, "in the owner's language");
   assert.equal((await watchBot({ ...e, BOT_STALE_MINUTES: "180" })).back, true, "the limit can be raised");
+  // a link to the workflow: from GITHUB_REPO (set at deploy) or from a github.io site address
+  await setLang(e, OWNER, "en");
+  await live(75);
+  await watchBot({ ...e, GITHUB_REPO: "someone/econnews" });
+  assert.match(sent[sent.length - 1].text, /<a href="https:\/\/github\.com\/someone\/econnews\/actions\/workflows\/news\.yml">/);
+  await live(0);
+  await watchBot(e);
+  await live(75);
+  await watchBot({ ...e, PAGES_URL: "https://venerablesoul.github.io/econnews/" });
+  assert.match(sent[sent.length - 1].text, /github\.com\/venerablesoul\/econnews\/actions\/workflows\/news\.yml/);
+  await live(0);
+  await watchBot(e);
+  await live(75);
+  await watchBot({ ...e, GITHUB_REPO: "bad repo <x>" });
+  assert.ok(!/<a href/.test(sent[sent.length - 1].text), "an odd value is not put into a link");
 });
 
 await test("live feed: accepted with the key and served", async () => {

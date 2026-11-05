@@ -61,6 +61,17 @@ export function pagesUrl(env) {
   return (env.PAGES_URL || "").replace(/\/*$/, "/");
 }
 
+// The news bot's workflow page on GitHub (for the owner's alert): from GITHUB_REPO (set at deploy)
+// or from a github.io site address; "" when neither is known (a custom domain without GITHUB_REPO).
+export function newsWorkflowUrl(env) {
+  let repo = String(env.GITHUB_REPO || "").trim();
+  if (!/^[\w.-]+\/[\w.-]+$/.test(repo)) {
+    const m = /^https:\/\/([\w-]+)\.github\.io\/([\w.-]+)\/?/i.exec(String(env.PAGES_URL || ""));
+    repo = m ? m[1] + "/" + m[2] : "";
+  }
+  return repo ? `https://github.com/${repo}/actions/workflows/news.yml` : "";
+}
+
 export function msk(iso, opts, lang = "ru") {
   return new Date(iso).toLocaleString(lang === "ru" ? "ru-RU" : "en-GB", { timeZone: "Europe/Moscow", ...opts });
 }

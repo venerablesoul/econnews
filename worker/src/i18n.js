@@ -293,8 +293,10 @@ const EN = {
   rem_head: "☀️ <b>Your watchlist today</b>\n",
   rem_earn: (s, n, when, eps) => `📊 <b>${s}</b> ${n} reports ${when}${eps}`,
   rem_today: "today", rem_tomorrow: "tomorrow",
-  bot_down: (m) => `⚠️ <b>The news bot has gone quiet</b>: no updates for ${m} min.\n`
-    + "Check GitHub → Actions → Economic news (or the server it runs on).",
+  bot_down: (m, url) => `⚠️ <b>The news bot has gone quiet</b>: no updates for ${m} min, and it did not restart by itself.\n`
+    + "It normally gets over GitHub delays and crashes on its own, so this needs a look: the workflow may be disabled, "
+    + "or GitHub Actions may be down (githubstatus.com).\n"
+    + (url ? `<a href="${url}">GitHub → Actions → Economic news</a>` : "GitHub → Actions → Economic news (or the server it runs on)"),
   bot_back: (m) => `✅ <b>The news bot is back</b> after ${m} min without updates.`,
 };
 
@@ -569,8 +571,10 @@ const RU = {
   rem_head: "☀️ <b>Ваш список сегодня</b>\n",
   rem_earn: (s, n, when, eps) => `📊 <b>${s}</b> ${n} отчитывается ${when}${eps}`,
   rem_today: "сегодня", rem_tomorrow: "завтра",
-  bot_down: (m) => `⚠️ <b>Бот новостей молчит</b>: нет обновлений ${m} мин.\n`
-    + "Проверьте GitHub → Actions → Economic news (или сервер, где он запущен).",
+  bot_down: (m, url) => `⚠️ <b>Бот новостей молчит</b>: нет обновлений ${m} мин, и сам он не перезапустился.\n`
+    + "Обычно он сам справляется с задержками GitHub и сбоями, так что нужно взглянуть: возможно, workflow выключен "
+    + "или у GitHub Actions сбой (githubstatus.com).\n"
+    + (url ? `<a href="${url}">GitHub → Actions → Economic news</a>` : "GitHub → Actions → Economic news (или сервер, где он запущен)"),
   bot_back: (m) => `✅ <b>Бот новостей снова работает</b> после ${m} мин без обновлений.`,
 };
 

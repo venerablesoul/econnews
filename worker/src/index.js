@@ -29,7 +29,8 @@
 // KV storage: SUBS — subscribers, languages, personal data, alerts, the live feed.
 import {
   LOGIN_MAX, TG_INIT_TTL,
-  arrow, cached, cors, esc, hex, hmac, hookKey, isOwnerChat, json, pagesUrl, safeEqual, send, sha256hex, siteData, syncKey, tg,
+  arrow, cached, cors, esc, hex, hmac, hookKey, isOwnerChat, json, newsWorkflowUrl, pagesUrl, safeEqual, send, sha256hex,
+  siteData, syncKey, tg,
 } from "./lib.js";
 import { COMPANY_PARTS, getCompany, getCorr, getHistory, getIpos, getQuotes, mktName, parseSymbol, worldQuotes } from "./market.js";
 import { isNewCallback, newCallback, newCommand, watchReminders } from "./botcmd.js";
@@ -109,9 +110,10 @@ export default {
 };
 
 // ---------------------------------------------------------------------------
-// Watchdog: the news bot pushes /sync/live on every run (~5 min). If nothing came for BOT_STALE_MINUTES
-// (60 by default: GitHub sometimes starts the next loop late), the owner gets one message, and another
-// when the bot is back. KV is written only on these two changes, so a normal check costs no writes.
+// Watchdog: the news bot pushes /sync/live on every run (~5 min). It restarts itself (each GitHub Actions session
+// queues the next one, keepalive.yml restarts a broken chain), so silence for BOT_STALE_MINUTES (60 by default)
+// means it could not: the owner gets one message with a link to the workflow, and another when the bot is back.
+// KV is written only on these two changes, so a normal check costs no writes.
 // ---------------------------------------------------------------------------
 const BOT_DOWN = "bot_down";
 
@@ -129,7 +131,7 @@ export async function watchBot(env, now = Date.now()) {
   const lang = await getLang(env, owner);
   if (stale) {
     await env.SUBS.put(BOT_DOWN, String(updated));   // first: one message per outage, even if sending fails
-    await send(env, owner, t(lang, "bot_down", mins));
+    await send(env, owner, t(lang, "bot_down", mins, newsWorkflowUrl(env)));
     return { down: true, mins };
   }
   await env.SUBS.delete(BOT_DOWN);
