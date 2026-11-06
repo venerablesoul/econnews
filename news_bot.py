@@ -46,6 +46,11 @@ Running by hand:
   python news_bot.py --loop 5    run continuously, checking every 5 minutes
   python news_bot.py --loop 5 --git-sync   the same + push the data to GitHub (for the terminal)
   LOOP_HOURS=5.5 python news_bot.py --loop 10 --git-sync   a loop that stops by itself after 5.5 h
+  python news_bot.py --selfcheck  offline check that this code works (no network, nothing sent); exit code 0 = fine
+
+Keeping itself alive (see loop()): new code from GitHub is taken only if it passes the self-check, a hung run is
+restarted, one failing part of a run does not stop the others, and the owner hears only about what the bot cannot fix
+by itself. On GitHub Actions each ~5.5-hour session queues the next one (relay.py, news.yml, keepalive.yml).
 
 Variables can go into a .env file next to the bot (see .env.example).
 """
@@ -57,6 +62,7 @@ import json
 import os
 import re
 import sys
+import threading
 import time
 import urllib.error
 import urllib.parse
@@ -75,7 +81,24 @@ UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like 
 MAX_AGE_HOURS = 12          # older stories are not sent
 MAX_PER_MESSAGE_BATCH = 25  # at most this many stories per run
 KEEP_DAYS = 3               # how long history is kept in state.json
-DOWN_AFTER = 6              # this many failed runs in a row (~3 h) = the source is "down"
+DOWN_AFTER_HOURS = 3        # a source that fails this long in a row is "down" (the owner hears once, and when it is back)
+LOOP_MINUTES = 0.0          # minutes between runs in --loop mode (0 = single runs from a schedule, ~30 min apart)
+
+
+def down_after():
+    """Failed runs in a row that make a source "down": ~DOWN_AFTER_HOURS whatever the interval between runs
+    (it used to be a fixed 6 runs, which in the 5-minute loop meant 30 minutes, not the 3 hours the message says)."""
+    every = LOOP_MINUTES if LOOP_MINUTES > 0 else 30.0
+    return max(2, int(round(DOWN_AFTER_HOURS * 60 / every)))
+
+
+def all_down_after():
+    """Runs in a row with no source answering before the owner hears (~15 minutes: a short network blip passes)."""
+    every = LOOP_MINUTES if LOOP_MINUTES > 0 else 30.0
+    return max(1, int(round(15 / every)))
+
+
+CODE_SHA = ""               # the git commit this process runs (set by loop(); recorded in state.json as "code_ok")
 
 # ----------------------------------------------------------------------------
 # Keywords. English ones match whole words, Russian ones match the word stem.
@@ -393,9 +416,13 @@ def collect(now: datetime):
             continue
         ok_names.add(src["name"])
         for it in items:
-            if it["published"] and it["published"] < cutoff:
+            try:
+                if it["published"] and it["published"] < cutoff:
+                    continue
+                ev = evaluate(src, it)
+            except Exception as e:   # one odd story must not stop every run until it ages out
+                print(f"  ! {src['name']}: skipped a story ({type(e).__name__}: {e})"[:200])
                 continue
-            ev = evaluate(src, it)
             if ev:
                 candidates.append(ev)
     # a source counts as "down" only if none of its feeds answered
@@ -435,13 +462,21 @@ def load_state(path):
     try:
         with open(path, encoding="utf-8") as f:
             st = json.load(f)
-    except (FileNotFoundError, json.JSONDecodeError):
+    except (FileNotFoundError, json.JSONDecodeError, UnicodeDecodeError):
         st = {}
-    st.setdefault("initialized", False)
-    st.setdefault("seen", {})
-    st.setdefault("recent", [])
-    st.setdefault("last_digest", "")
-    st.setdefault("fail_streak", {})
+    if not isinstance(st, dict):
+        st = {}
+    # a damaged field would otherwise break every run: it starts over instead
+    for key, kind, default in (("initialized", bool, False), ("seen", dict, {}), ("recent", list, []),
+                               ("last_digest", str, ""), ("fail_streak", dict, {})):
+        if not isinstance(st.get(key), kind):
+            if key in st:
+                print(f"  ! state.json: «{key}» was damaged — starting it over")
+            st[key] = default
+    st["recent"] = [r for r in st["recent"] if isinstance(r, dict) and isinstance(r.get("ts"), str)
+                    and isinstance(r.get("title"), str) and isinstance(r.get("sources"), list)
+                    and isinstance(r.get("score"), (int, float)) and isinstance(r.get("link"), str)]
+    st["seen"] = {k: v for k, v in st["seen"].items() if isinstance(v, str)}
     return st
 
 
@@ -605,20 +640,54 @@ def sectioned(items, lang=i18n.DEFAULT):
 
 def split_messages(header, blocks, limit=3900):
     msgs, cur = [], header
-    for b in blocks:
-        if len(cur) + len(b) + 2 > limit:
-            msgs.append(cur)
-            cur = b
-        else:
-            cur += "\n\n" + b
+    for block in blocks:
+        for b in _fit(block, limit):
+            if len(cur) + len(b) + 2 > limit:
+                msgs.append(cur)
+                cur = b
+            else:
+                cur += "\n\n" + b
     msgs.append(cur)
     return msgs
+
+
+def _fit(block, limit):
+    """A block longer than one message (a long calendar, say) is cut at line ends: Telegram refuses a message over
+    4096 characters, and such a refusal would come back on every run."""
+    if len(block) <= limit:
+        return [block]
+    out, cur = [], ""
+    for line in block.split("\n"):
+        while len(line) > limit:   # not expected: every line here is one story or one event
+            if cur:
+                out.append(cur)
+                cur = ""
+            out.append(line[:limit])
+            line = line[limit:]
+        if cur and len(cur) + 1 + len(line) > limit:
+            out.append(cur)
+            cur = line
+        else:
+            cur = cur + "\n" + line if cur else line
+    if cur:
+        out.append(cur)
+    return [x for x in out if x]
 
 
 class TelegramError(RuntimeError):
     def __init__(self, code, body):
         super().__init__(f"Telegram returned {code}: {body[:300]}")
         self.code, self.body = code, body
+
+
+def _retry_later(e):
+    """True for a failure that may pass by itself (network, Telegram busy or down) — worth repeating on the next run.
+    False for one that would repeat forever: Telegram refusing the message itself (400…) or a bug in the bot."""
+    if isinstance(e, TelegramError):
+        return e.code == 429 or e.code >= 500
+    if isinstance(e, (urllib.error.URLError, TimeoutError, ConnectionError)):
+        return True
+    return isinstance(e, RuntimeError) and "unreachable" in str(e)
 
 
 def per_lang(fn):
@@ -1031,15 +1100,19 @@ def run(dry=False):
     quotes = fetch_quotes()
     mline = per_lang(lambda lang: strip_line(quotes, lang) if (quotes and show_market) else "")
     went_down, came_back = [], []
+    limit = down_after()
     for name in sorted({s["name"] for s in SOURCES}):
         prev = st["fail_streak"].get(name, 0)
+        prev = prev if isinstance(prev, int) else 0
         cur = prev + 1 if name in errors else 0
         st["fail_streak"][name] = cur
-        if cur == DOWN_AFTER:
+        if cur == limit:
             went_down.append(name)
-        elif prev >= DOWN_AFTER and cur == 0:
+        elif prev >= limit and cur == 0:
             came_back.append(name)
+    # every source failing at once is the runner's network, not the sources: the owner hears only if it lasts
     all_down = len(errors) == len({s["name"] for s in SOURCES})
+    st["all_down_streak"] = (int(st.get("all_down_streak") or 0) + 1) if all_down else 0
 
     # drop what we have already seen and what looks like something already sent
     recent_toks = [norm_tokens(r["title"]) for r in st["recent"]]
@@ -1088,24 +1161,60 @@ def run(dry=False):
         m = mline(lang)
         return f"\n<i>📊 {html.escape(m)}</i>" if m else ""
 
+    # Every part below stands on its own: when one fails (a message Telegram refuses, a bug in one feature), the rest
+    # still goes out and the state is still saved. Otherwise the same failure came back on every run, and whatever
+    # had already gone out was sent again each time. A part that failed for a moment (Telegram unreachable) and
+    # sent nothing is tried again on the next run; one that cannot work (a bug) is reported to the owner once a day.
+    trouble = []
+    today = now_msk.strftime("%Y-%m-%d")
+
+    def failed(part, e, before):
+        """Logs a failed part. True = it is done anyway (something went out, or repeating cannot help)."""
+        trouble.append(part)
+        print(f"  ! {part}: {type(e).__name__}: {e}"[:300])
+        if _retry_later(e):
+            return tg.sent > before
+        notes = st.get("notices")
+        if not isinstance(notes, dict):
+            notes = st["notices"] = {}
+        if notes.get("part:" + part) != today:   # the owner hears about a broken part once a day
+            try:
+                tg.send(lambda lang: i18n.t(lang, "part_failed", part=html.escape(i18n.part(part, lang)),
+                                            err=html.escape(f"{type(e).__name__}: {e}"[:300])),
+                        silent=True, owner_only=True)
+                notes["part:" + part] = today
+            except Exception as e2:
+                print(f"  ! could not tell the owner: {type(e2).__name__}: {e2}"[:200])
+        return True
+
     if not st["initialized"]:
+        before = tg.sent
+        try:
+            top = to_send[:7]
+            n_src = len({s["name"] for s in SOURCES})
+            tg.send_multi(lambda lang: split_messages(
+                i18n.t(lang, "started", n=n_src) + market_html(lang),
+                sectioned(top, lang) if top else [i18n.t(lang, "nothing_yet")]), owner_only=True)
+        except Exception as e:
+            failed("start message", e, before)
         st["initialized"] = True
-        st["last_digest"] = now_msk.strftime("%Y-%m-%d")  # the evening digest starts tomorrow
-        st["last_morning"] = now_msk.strftime("%Y-%m-%d")
-        top = to_send[:7]
-        n_src = len({s["name"] for s in SOURCES})
-        tg.send_multi(lambda lang: split_messages(
-            i18n.t(lang, "started", n=n_src) + market_html(lang),
-            sectioned(top, lang) if top else [i18n.t(lang, "nothing_yet")]), owner_only=True)
+        st["last_digest"] = today                          # the evening digest starts tomorrow
+        st["last_morning"] = today
     elif to_send:
-        extra = len(to_send) - MAX_PER_MESSAGE_BATCH
-        batch = to_send[:MAX_PER_MESSAGE_BATCH]
-        n_high = sum(level_of(s["score"]) == "high" for s in batch)
-        # important news make a sound even at night
-        tg.send_multi(lambda lang: split_messages(
-            i18n.t(lang, "batch_head", stamp=stamp) + market_html(lang),
-            sectioned(batch, lang) + ([i18n.t(lang, "more_on_page", n=extra)] if extra > 0 else [])),
-            silent=silent and n_high == 0)
+        before = tg.sent
+        try:
+            extra = len(to_send) - MAX_PER_MESSAGE_BATCH
+            batch = to_send[:MAX_PER_MESSAGE_BATCH]
+            n_high = sum(level_of(s["score"]) == "high" for s in batch)
+            # important news make a sound even at night
+            tg.send_multi(lambda lang: split_messages(
+                i18n.t(lang, "batch_head", stamp=stamp) + market_html(lang),
+                sectioned(batch, lang) + ([i18n.t(lang, "more_on_page", n=extra)] if extra > 0 else [])),
+                silent=silent and n_high == 0)
+        except Exception as e:
+            if tg.sent == before and _retry_later(e):
+                raise   # nothing went out and Telegram may answer in a minute: the run is repeated, the news stay new
+            failed("news", e, before)
 
     # calendar: the week's key events (cached in state.json)
     events = []
@@ -1119,132 +1228,168 @@ def run(dry=False):
 
     # reminders REMIND_MINUTES before an event
     if events and remind_min > 0:
-        import econ_calendar as cal
-        reminded = st.setdefault("cal_reminded", [])
-        soon = [e for e in cal.events_between(events, now, now + timedelta(minutes=remind_min))
-                if cal.event_id(e) not in reminded]
-        if soon:
-            mins = {cal.event_id(e): max(1, int((datetime.fromisoformat(e["ts"]) - now).total_seconds() // 60)) for e in soon}
-            tg.send(lambda lang: i18n.t(lang, "soon_head") + "\n" + "\n".join(
-                i18n.t(lang, "in_min", m=mins[cal.event_id(e)]) + cal.fmt_event(e, lang, translate) for e in soon), silent=silent)
-            reminded += [cal.event_id(e) for e in soon]
-        st["cal_reminded"] = reminded[-200:]
+        before = tg.sent
+        try:
+            import econ_calendar as cal
+            reminded = st.setdefault("cal_reminded", [])
+            soon = [e for e in cal.events_between(events, now, now + timedelta(minutes=remind_min))
+                    if cal.event_id(e) not in reminded]
+            if soon:
+                mins = {cal.event_id(e): max(1, int((datetime.fromisoformat(e["ts"]) - now).total_seconds() // 60)) for e in soon}
+                try:
+                    tg.send(lambda lang: i18n.t(lang, "soon_head") + "\n" + "\n".join(
+                        i18n.t(lang, "in_min", m=mins[cal.event_id(e)]) + cal.fmt_event(e, lang, translate) for e in soon), silent=silent)
+                    reminded += [cal.event_id(e) for e in soon]
+                except Exception as e:
+                    if failed("reminders", e, before):
+                        reminded += [cal.event_id(x) for x in soon]
+            st["cal_reminded"] = reminded[-200:]
+        except Exception as e:
+            failed("reminders", e, before)
 
     # actual numbers for released US data (from FRED, needs the free key FRED_API_KEY)
     fred_key = os.environ.get("FRED_API_KEY", "").strip()
     if events and fred_key:
-        import econ_calendar as cal
-        actuals = st.setdefault("cal_actuals", {})
-        due = [e for e in cal.events_between(events, now - timedelta(hours=36), now - timedelta(minutes=1))
-               if cal.fred_spec(e) and cal.event_id(e) not in actuals]
-        released = []
-        for e in due[:8]:
-            try:
-                a = cal.fetch_actual(e, fred_key)
-            except Exception as ex:
-                print(f"  ! FRED {e['title']}: {type(ex).__name__}: {ex}"[:200])
-                continue
-            if not a:
-                continue  # not published yet — check next run
-            actuals[cal.event_id(e)] = a
-            released.append((e, a))
-        if released:
-            tg.send(lambda lang: i18n.t(lang, "released_head") + "\n" + "\n".join(
-                cal.fmt_released(e, a, lang, translate) for e, a in released), silent=silent)
-        if len(actuals) > 300:
-            st["cal_actuals"] = dict(list(actuals.items())[-300:])
+        before = tg.sent
+        try:
+            import econ_calendar as cal
+            actuals = st.setdefault("cal_actuals", {})
+            due = [e for e in cal.events_between(events, now - timedelta(hours=36), now - timedelta(minutes=1))
+                   if cal.fred_spec(e) and cal.event_id(e) not in actuals]
+            released = []
+            for e in due[:8]:
+                try:
+                    a = cal.fetch_actual(e, fred_key)
+                except Exception as ex:
+                    print(f"  ! FRED {e['title']}: {type(ex).__name__}: {ex}"[:200])
+                    continue
+                if not a:
+                    continue  # not published yet — check next run
+                actuals[cal.event_id(e)] = a
+                released.append((e, a))
+            if released:
+                tg.send(lambda lang: i18n.t(lang, "released_head") + "\n" + "\n".join(
+                    cal.fmt_released(e, a, lang, translate) for e, a in released), silent=silent)
+            if len(actuals) > 300:
+                st["cal_actuals"] = dict(list(actuals.items())[-300:])
+        except Exception as e:
+            failed("released data", e, before)
 
     # morning digest: overnight highlights + today's events
-    today = now_msk.strftime("%Y-%m-%d")
     st.setdefault("last_morning", "")
     if morning_hour >= 0 and morning_hour <= now_msk.hour < 14 and st["last_morning"] != today:
-        st["last_morning"] = today
-        since = (now - timedelta(hours=12)).isoformat()
-        night = [r for r in st["recent"] if r["ts"] >= since and level_of(r["score"]) != "low"]
-        night.sort(key=lambda r: -r["score"])
-        top = night[:7]
-        translate_items(top)
-        todays = []
-        if events:
-            import econ_calendar as cal
-            day_start = now_msk.replace(hour=0, minute=0, second=0, microsecond=0).astimezone(timezone.utc)
-            todays = cal.events_between(events, max(now, day_start), day_start + timedelta(days=1))
-
-        def morning(lang):
-            blocks = [f"{k}. " + fmt_item(r, icon=True, lead=k <= 3, lang=lang) for k, r in enumerate(top, 1)] \
-                or [i18n.t(lang, "quiet_night")]
-            if todays:
+        before = tg.sent
+        try:
+            since = (now - timedelta(hours=12)).isoformat()
+            night = [r for r in st["recent"] if r["ts"] >= since and level_of(r["score"]) != "low"]
+            night.sort(key=lambda r: -r["score"])
+            top = night[:7]
+            translate_items(top)
+            todays = []
+            if events:
                 import econ_calendar as cal
-                blocks.append(i18n.t(lang, "today_cal") + "\n" + "\n".join(cal.fmt_event(e, lang, translate) for e in todays))
-            return split_messages(i18n.t(lang, "morning_head") + market_html(lang), blocks)
-        tg.send_multi(morning)
+                day_start = now_msk.replace(hour=0, minute=0, second=0, microsecond=0).astimezone(timezone.utc)
+                todays = cal.events_between(events, max(now, day_start), day_start + timedelta(days=1))
+
+            def morning(lang):
+                blocks = [f"{k}. " + fmt_item(r, icon=True, lead=k <= 3, lang=lang) for k, r in enumerate(top, 1)] \
+                    or [i18n.t(lang, "quiet_night")]
+                if todays:
+                    import econ_calendar as cal
+                    blocks.append(i18n.t(lang, "today_cal") + "\n" + "\n".join(cal.fmt_event(e, lang, translate) for e in todays))
+                return split_messages(i18n.t(lang, "morning_head") + market_html(lang), blocks)
+            tg.send_multi(morning)
+            st["last_morning"] = today
+        except Exception as e:
+            if failed("morning digest", e, before):
+                st["last_morning"] = today
 
     # alerts about broken sources (service messages — owner only)
     if alerts_on and st["initialized"]:
         lines = []
         if all_down:
-            if not st.get("all_down_alerted"):
+            if st["all_down_streak"] >= all_down_after() and not st.get("all_down_alerted"):
                 lines.append(("all_down", {}))
-                st["all_down_alerted"] = True
         else:
-            st["all_down_alerted"] = False
             if went_down:
-                lines.append(("went_down", {"h": DOWN_AFTER // 2, "names": html.escape(", ".join(went_down))}))
+                lines.append(("went_down", {"h": DOWN_AFTER_HOURS, "names": html.escape(", ".join(went_down))}))
             if came_back:
                 lines.append(("came_back", {"names": html.escape(", ".join(came_back))}))
         if lines:
-            tg.send(lambda lang: "\n".join(i18n.t(lang, k, **kw) for k, kw in lines), silent=True, owner_only=True)
+            before = tg.sent
+            try:
+                tg.send(lambda lang: "\n".join(i18n.t(lang, k, **kw) for k, kw in lines), silent=True, owner_only=True)
+                done = True
+            except Exception as e:
+                done = failed("source alerts", e, before)
+            if done and all_down:
+                st["all_down_alerted"] = True
+        if not all_down:
+            st["all_down_alerted"] = False
 
     # trades of US politicians and company insiders (official disclosures, no keys)
     n_trades = 0
     if _env_on("TRADES", "yes"):
+        before = tg.sent
         try:
             import trades
             new_trades = trades.update(st, now)
+            n_trades = sum(len(v) for v in new_trades.values())
             if any(new_trades.values()):
                 tg.send_multi(lambda lang: trades.messages(new_trades, lang=lang), silent=silent, button=False)
-            n_trades = sum(len(v) for v in new_trades.values())
         except Exception as e:
-            print(f"  ! trades: {type(e).__name__}: {e}")
+            failed("trades", e, before)
 
     # picture with market charts (by default at 9 and 21 MSK)
     chart_key = now_msk.strftime("%Y-%m-%d-%H")
     st.setdefault("charts_sent", [])
     if quotes and now_msk.hour in chart_hours and chart_key not in st["charts_sent"]:
-        title_key = "chart_morning" if now_msk.hour < 14 else "chart_evening"
-        tg.send_photo(per_lang(lambda lang: render_chart(quotes, now, lang)),
-                      lambda lang: f"📊 <b>{i18n.t(lang, title_key)}</b>\n{html.escape(mline(lang) or strip_line(quotes, lang))}",
-                      silent=silent)
-        st["charts_sent"] = (st["charts_sent"] + [chart_key])[-20:]
+        before = tg.sent
+        try:
+            title_key = "chart_morning" if now_msk.hour < 14 else "chart_evening"
+            tg.send_photo(per_lang(lambda lang: render_chart(quotes, now, lang)),
+                          lambda lang: f"📊 <b>{i18n.t(lang, title_key)}</b>\n{html.escape(mline(lang) or strip_line(quotes, lang))}",
+                          silent=silent)
+            done = True
+        except Exception as e:
+            done = failed("chart", e, before)
+        if done:
+            st["charts_sent"] = (st["charts_sent"] + [chart_key])[-20:]
 
     # evening digest
-    today = now_msk.strftime("%Y-%m-%d")
     if digest_hour >= 0 and now_msk.hour >= digest_hour and st["last_digest"] != today:
-        st["last_digest"] = today
-        day_ago = (now - timedelta(hours=24)).isoformat()
-        day = [r for r in st["recent"] if r["ts"] >= day_ago and level_of(r["score"]) != "low"]
-        day.sort(key=lambda r: -r["score"])
-        top = day[:10]
-        translate_items(top)   # the translation is also kept in state.json
-        nxt = []
-        if events:
-            import econ_calendar as cal
-            tomorrow = (now_msk + timedelta(days=1)).replace(hour=0, minute=0, second=0, microsecond=0).astimezone(timezone.utc)
-            nxt = cal.events_between(events, tomorrow, tomorrow + timedelta(days=1))
-        dead = sorted(n for n, k in st["fail_streak"].items() if k >= DOWN_AFTER)
-
-        def digest(lang):
-            header = i18n.t(lang, "digest_head", day=now_msk.day, month=i18n.month(lang, now_msk.month), n=len(day), k=len(top))
-            blocks = [f"{k}. " + fmt_item(r, icon=True, lead=k <= 3, lang=lang) for k, r in enumerate(top, 1)] \
-                or [i18n.t(lang, "digest_empty")]
-            if nxt:
+        before = tg.sent
+        try:
+            day_ago = (now - timedelta(hours=24)).isoformat()
+            day = [r for r in st["recent"] if r["ts"] >= day_ago and level_of(r["score"]) != "low"]
+            day.sort(key=lambda r: -r["score"])
+            top = day[:10]
+            translate_items(top)   # the translation is also kept in state.json
+            nxt = []
+            if events:
                 import econ_calendar as cal
-                blocks.append(i18n.t(lang, "tomorrow_cal") + "\n" + "\n".join(cal.fmt_event(e, lang, translate) for e in nxt))
-            if dead:
-                blocks.append(i18n.t(lang, "dead", names=html.escape(", ".join(dead))))
-            return split_messages(header, blocks)
-        tg.send_multi(digest, silent=True)
+                tomorrow = (now_msk + timedelta(days=1)).replace(hour=0, minute=0, second=0, microsecond=0).astimezone(timezone.utc)
+                nxt = cal.events_between(events, tomorrow, tomorrow + timedelta(days=1))
+            dead = sorted(n for n, k in st["fail_streak"].items() if isinstance(k, int) and k >= down_after())
 
+            def digest(lang):
+                header = i18n.t(lang, "digest_head", day=now_msk.day, month=i18n.month(lang, now_msk.month), n=len(day), k=len(top))
+                blocks = [f"{k}. " + fmt_item(r, icon=True, lead=k <= 3, lang=lang) for k, r in enumerate(top, 1)] \
+                    or [i18n.t(lang, "digest_empty")]
+                if nxt:
+                    import econ_calendar as cal
+                    blocks.append(i18n.t(lang, "tomorrow_cal") + "\n" + "\n".join(cal.fmt_event(e, lang, translate) for e in nxt))
+                if dead:
+                    blocks.append(i18n.t(lang, "dead", names=html.escape(", ".join(dead))))
+                return split_messages(header, blocks)
+            tg.send_multi(digest, silent=True)
+            st["last_digest"] = today
+        except Exception as e:
+            if failed("evening digest", e, before):
+                st["last_digest"] = today
+
+    if CODE_SHA:
+        st["code_ok"] = {"sha": CODE_SHA, "at": now.isoformat()}   # the last code that got through a run (see news.yml)
     write_page_data(st, quotes, now)
     save_state(state_path, st, now)
     extras = update_extras(now, dry)
@@ -1255,7 +1400,7 @@ def run(dry=False):
     print(f"[{stamp} MSK] candidates: {len(candidates)}, new stories: {len(stories)}, "
           f"sent: {len(to_send[:MAX_PER_MESSAGE_BATCH])}, recipients: {len(tg.recipients())}, "
           f"quotes: {len(quotes)}, trades: {n_trades}, {extras}"
-          f"source errors: {len(errors)}")
+          f"source errors: {len(errors)}" + (f", failed parts: {', '.join(trouble)}" if trouble else ""))
     for name, err in sorted(errors.items()):
         print(f"  ! {name}: {err}")
     return tg.sent
@@ -1348,10 +1493,12 @@ def _copy_data(src_root, dst_root):
             shutil.copy2(src, dst)
 
 
-def git_sync(stage, repo):
+def git_sync(stage, repo, code=True, skip=()):
     """Server mode.
     pull — new code from GitHub (main); on a fresh checkout also the bot's latest data from the data branch.
            The bot's own data files are never touched by the pull.
+           code=False: the data part only (a session that runs the last version that worked, see news.yml);
+           skip: commits known not to start — while main is at one of them, the code stays as it is.
     push — the site and state.json as one commit, force-pushed to the data branch (no commits to main)."""
     import shutil
     import subprocess
@@ -1372,17 +1519,21 @@ def git_sync(stage, repo):
     tmp = tempfile.mkdtemp()
     try:
         if stage == "pull":
-            _copy_data(repo, tmp)   # the bot's data is safe here whatever the pull does
-            for f in DATA_PATHS:
-                git("checkout", "-q", "HEAD", "--", f)   # data still tracked in main: back to HEAD, so no clash
-            r = git("pull", "--rebase", "--autostash", "-q")
-            if r.returncode:
-                print("  ! git pull:", (r.stderr or r.stdout).strip()[:300])
-                heal()
-                # e.g. old data commits of the bot that clash with main: take GitHub's main (the data is in tmp)
-                if git("fetch", "-q", "origin").returncode == 0:
-                    git("reset", "-q", "--hard", "@{upstream}")
-            _copy_data(tmp, repo)
+            if code and skip and git("fetch", "-q").returncode == 0:
+                up = git("rev-parse", "-q", "--verify", "@{upstream}").stdout.strip()
+                code = up not in skip
+            if code:
+                _copy_data(repo, tmp)   # the bot's data is safe here whatever the pull does
+                for f in DATA_PATHS:
+                    git("checkout", "-q", "HEAD", "--", f)   # data still tracked in main: back to HEAD, so no clash
+                r = git("pull", "--rebase", "--autostash", "-q")
+                if r.returncode:
+                    print("  ! git pull:", (r.stderr or r.stdout).strip()[:300])
+                    heal()
+                    # e.g. old data commits of the bot that clash with main: take GitHub's main (the data is in tmp)
+                    if git("fetch", "-q", "origin").returncode == 0:
+                        git("reset", "-q", "--hard", "@{upstream}")
+                _copy_data(tmp, repo)
             # a fresh checkout (GitHub Actions) has no state.json, or only the old copy committed to main:
             # then the bot's latest data comes from the data branch. A bot that already runs here keeps its own.
             state = os.path.join(repo, "state.json")
@@ -1394,9 +1545,12 @@ def git_sync(stage, repo):
             return
 
         # push: a temporary index, so main's own index and working tree stay as they are
-        paths = [p for p in SITE_PATHS if os.path.exists(os.path.join(repo, p))]
-        if not paths:
+        if not os.path.exists(os.path.join(repo, "state.json")):
+            # the data was never restored here (a session that ended before its first run, or was cancelled while
+            # setting up): pushing now would replace the data branch with the bare site and lose the bot's memory
+            print(f"  (no state.json here — nothing to save, {branch} stays as it is)")
             return
+        paths = [p for p in SITE_PATHS if os.path.exists(os.path.join(repo, p))]
         env = {**os.environ, "GIT_INDEX_FILE": os.path.join(tmp, "index")}
         r = git("add", "-f", "-A", "--", *paths, env=env)
         tree = git("write-tree", env=env).stdout.strip() if r.returncode == 0 else ""
@@ -1448,36 +1602,323 @@ def code_hash(repo):
     return h.hexdigest()
 
 
-def reload_self(deadline):
-    """Restarts the process with the new code. The loop deadline (for GitHub Actions) is kept."""
+def restart(deadline, why):
+    """Starts this process over with the code now on disk. The loop deadline (GitHub Actions) is kept."""
     if deadline:
         os.environ["LOOP_DEADLINE"] = str(deadline)
-    print("The bot code changed on GitHub — restarting with the new version.", flush=True)
-    os.execv(sys.executable, [sys.executable] + sys.argv)
+    print(why, flush=True)
+    sys.stderr.flush()
+    if os.name == "nt":
+        # on Windows exec starts a separate process and this one ends: deploy/start_windows.bat would then start
+        # a second bot. Ending here lets the .bat start exactly one new copy.
+        os._exit(75)
+    try:
+        os.execv(sys.executable, [sys.executable] + sys.argv)
+    except OSError as e:   # cannot start over in place: end the process (systemd, the .bat or the next session restart it)
+        print(f"  ! could not restart: {e}", flush=True)
+        os._exit(75)
+
+
+def reload_self(deadline):
+    """Restarts the process with the new code. The loop deadline (for GitHub Actions) is kept."""
+    restart(deadline, "The bot code changed on GitHub — restarting with the new version.")
+
+
+# ----------------------------------------------------------------------------
+# Keeping itself alive: safe code updates, a hang watchdog, the owner hears only what the bot cannot fix
+# ----------------------------------------------------------------------------
+HANG_MINUTES = float(os.environ.get("HANG_MINUTES", "30") or 30)   # one run normally takes 1–3 minutes
+FAIL_ALERT_MINUTES = 30     # runs failing this long in a row (and at least 3 of them) — the owner hears, once
+RELAY_EVERY = 30 * 60       # how often a GitHub Actions session checks that the next session is queued
+
+
+def _git(repo, *a, timeout=120):
+    import subprocess
+    try:
+        return subprocess.run(["git", "-C", repo, *a], capture_output=True, text=True, timeout=timeout)
+    except (OSError, subprocess.SubprocessError) as e:
+        return subprocess.CompletedProcess(a, 1, "", str(e))
+
+
+def git_head(repo):
+    r = _git(repo, "rev-parse", "HEAD")
+    return r.stdout.strip() if r.returncode == 0 else ""
+
+
+def _relay():
+    try:
+        import relay
+        return relay
+    except Exception as e:   # the relay is a helper: the bot runs without it
+        print(f"  ! relay.py: {type(e).__name__}: {e}"[:200])
+        return None
+
+
+def _last_line(text):
+    lines = [x.strip() for x in (text or "").splitlines() if x.strip()]
+    failed = [x for x in lines if x.startswith("SELF-CHECK FAILED")]
+    return (failed or lines or ["no details"])[-1].replace("SELF-CHECK FAILED:", "").strip()
+
+
+def selfcheck_in(repo, timeout=300):
+    """The self-check of the code now in `repo`, in a separate process. (ok, the end of its output)."""
+    import subprocess
+    try:
+        r = subprocess.run([sys.executable, os.path.join(repo, "news_bot.py"), "--selfcheck"], cwd=repo,
+                           capture_output=True, text=True, timeout=timeout)
+        return r.returncode == 0, (r.stdout + r.stderr).strip()[-1500:]
+    except subprocess.TimeoutExpired:
+        return False, f"SELF-CHECK FAILED: it did not finish in {timeout} s"
+    except OSError as e:
+        return False, f"SELF-CHECK FAILED: {type(e).__name__}: {e}"
+
+
+def rollback(repo, sha):
+    """The code back to commit `sha`; the bot's data files stay as they are."""
+    import shutil
+    import tempfile
+    tmp = tempfile.mkdtemp()
+    try:
+        _copy_data(repo, tmp)
+        ok = _git(repo, "reset", "-q", "--hard", sha).returncode == 0
+        _copy_data(tmp, repo)
+        return ok
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+
+
+def _state_path():
+    return os.environ.get("STATE_FILE", os.path.join(os.path.dirname(os.path.abspath(__file__)), "state.json"))
+
+
+def notice_once(key, value):
+    """True the first time `value` comes for `key`. Kept in state.json, so the next session remembers it too
+    (call it only after the first git_sync pull: before it a fresh checkout has no state.json yet)."""
+    path = _state_path()
+    try:
+        st = load_state(path)
+        notes = st.setdefault("notices", {})
+        if not isinstance(notes, dict):
+            notes = st["notices"] = {}
+        if notes.get(key) == value:
+            return False
+        notes[key] = value
+        save_state(path, st, datetime.now(timezone.utc))
+    except OSError as e:
+        print(f"  ! state.json: {e}")
+    return True
+
+
+def notify_owner(text):
+    """A service message to the owner only, in their language (quiet at night). True if it went out."""
+    token = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
+    chat = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
+    if not token or not chat:
+        return False
+    langs = (_SUBS_CACHE or fetch_subscribers(token))[1]
+    tg = Telegram(token, chat, langs=langs)
+    quiet = in_quiet_hours(datetime.now(MSK), os.environ.get("QUIET_HOURS", "0-8"))
+    try:
+        tg.send(text, silent=quiet, owner_only=True)
+    except Exception as e:
+        print(f"  ! could not tell the owner: {type(e).__name__}: {e}"[:200])
+    return tg.sent > 0
+
+
+def report_bad_code(sha, report):
+    """The owner hears once per broken commit."""
+    if not sha or not notice_once("bad_code", sha):
+        return
+    err = _last_line(report)[:300]
+    notify_owner(lambda lang: i18n.t(lang, "code_rejected", sha=sha[:7], err=html.escape(err)))
+
+
+def update_code(repo, start_hash, deadline, bad, pinned=False, auto_reload=True):
+    """New code from GitHub. The bot restarts with it only if it passes the self-check; code that does not is put back
+    to the version that runs, remembered (not tried again until main moves on) and reported to the owner once."""
+    if pinned:
+        git_sync("pull", repo, code=False)   # this session runs the last version that worked (news.yml): data only
+        return
+    before = git_head(repo)
+    git_sync("pull", repo, skip=bad)
+    if not auto_reload or code_hash(repo) == start_hash:
+        return
+    after = git_head(repo)
+    ok, report = selfcheck_in(repo)
+    if ok:
+        reload_self(deadline)
+        return
+    print(f"  ! the new code ({after[:7]}) fails its self-check — staying on {before[:7]}\n{report}")
+    if before and after and before != after:
+        rollback(repo, before)
+    if after:
+        bad.add(after)
+        os.environ["BOT_BAD_CODE"] = ",".join(sorted(bad))   # kept if this process restarts
+        report_bad_code(after, report)
+
+
+class Watchdog:
+    """Restarts the bot when one run hangs (a download that never ends, say). A run normally takes 1–3 minutes."""
+
+    def __init__(self, limit, on_stuck):
+        self.limit, self.on_stuck, self.since = limit, on_stuck, None
+        threading.Thread(target=self._watch, name="watchdog", daemon=True).start()
+
+    def begin(self):
+        self.since = time.monotonic()
+
+    def end(self):
+        self.since = None
+
+    def _watch(self):
+        while True:
+            time.sleep(max(0.05, min(30.0, self.limit / 4)))
+            since = self.since
+            if since is not None and time.monotonic() - since > self.limit:
+                self.since = None
+                try:
+                    self.on_stuck()
+                except BaseException as e:   # never let the watchdog thread die
+                    print(f"  ! watchdog: {type(e).__name__}: {e}", flush=True)
+
+
+def selfcheck():
+    """Offline check that this copy of the bot works: every module compiles and imports, and two whole runs go through
+    on made-up news — no network, nothing is sent. Runs before new code replaces the running one (update_code) and
+    at the start of every GitHub Actions session (news.yml). Returns the problems found ([] = fine)."""
+    import importlib
+    import tempfile
+    from unittest import mock
+
+    here = os.path.dirname(os.path.abspath(__file__))
+    names = sorted(n[:-3] for n in os.listdir(here) if n.endswith(".py"))
+    problems = []
+    for name in names:
+        path = os.path.join(here, name + ".py")
+        try:
+            with open(path, encoding="utf-8") as f:
+                compile(f.read(), path, "exec")
+        except Exception as e:
+            problems.append(f"{name}.py: {type(e).__name__}: {e}")
+    if problems:
+        return problems
+
+    def no_network(*a, **k):
+        raise OSError("self-check: no network")
+
+    with mock.patch("urllib.request.urlopen", no_network), mock.patch("urllib.request.OpenerDirector.open", no_network):
+        for name in names:
+            try:
+                importlib.import_module(name)
+            except Exception as e:
+                problems.append(f"import {name}: {type(e).__name__}: {e}")
+        if problems:
+            return problems
+        nb = importlib.import_module("news_bot")   # the module, not this script (__main__)
+        now = datetime.now(timezone.utc)
+
+        def story(i, title, score, tags, source="Reuters"):
+            return {"id": f"selfcheck{i}", "title": title, "lead": "", "tags": tags, "link": f"https://example.invalid/{i}",
+                    "source": source, "sources": [source], "score": score, "ts": now.isoformat()}
+
+        batches = [[story(1, "Fed holds rates steady as inflation cools", 9, ["Fed", "rates"])],
+                   [story(2, "Oil jumps after OPEC cuts output sharply", 8, ["oil"]),
+                    story(3, "ЦБ сохранил ключевую ставку на уровне 16%", 9, ["BankOfRussia"], source="Bank of Russia")]]
+        sent = []
+
+        def fake_call(self, method, fields, files=None):
+            sent.append((str(fields.get("chat_id")), fields.get("text") or ""))
+            return {"message_id": len(sent)}
+
+        def fake_translate(text, lang="ru"):
+            return None if nb.orig_lang(text) == lang else f"[{lang}] {text}"
+
+        with tempfile.TemporaryDirectory() as d:
+            os.makedirs(os.path.join(d, "docs"))
+            env = {"TELEGRAM_BOT_TOKEN": "1:SELFCHECK", "TELEGRAM_CHAT_ID": "100", "PAGES_URL": "https://example.invalid/",
+                   "STATE_FILE": os.path.join(d, "state.json"), "PAGE_DATA": os.path.join(d, "docs", "data.json"),
+                   "DIGEST_HOUR": "0", "MORNING_HOUR": "-1", "CALENDAR": "no", "TRADES": "no", "ANTHROPIC_API_KEY": "",
+                   "FRED_API_KEY": "", "QUIET_HOURS": "0-0", "MARKET": "no"}
+            try:
+                with mock.patch.dict(os.environ, env), \
+                        mock.patch.object(nb, "collect", side_effect=lambda now: (batches.pop(0), {})), \
+                        mock.patch.object(nb, "fetch_subscribers", return_value=(["200", "300"], {"300": "ru"})), \
+                        mock.patch.object(nb, "translate", side_effect=fake_translate), \
+                        mock.patch.object(nb, "update_extras", return_value=""), \
+                        mock.patch.object(nb, "push_live"), mock.patch.object(nb, "remove_subscribers"), \
+                        mock.patch.object(nb.Telegram, "_call", fake_call):
+                    nb.run()
+                    nb.run()
+                with open(env["STATE_FILE"], encoding="utf-8") as f:
+                    st = json.load(f)
+                with open(env["PAGE_DATA"], encoding="utf-8") as f:
+                    data = json.load(f)
+                chats = {c for c, _ in sent}
+                ru = " ".join(t for c, t in sent if c == "300")
+                if not st.get("initialized") or len(st.get("seen") or {}) < 3:
+                    problems.append("offline run: state.json was not saved properly")
+                if len(data.get("news") or []) != 3:
+                    problems.append(f"offline run: data.json has {len(data.get('news') or [])} stories instead of 3")
+                if not {"100", "200", "300"} <= chats:
+                    problems.append(f"offline run: messages reached {sorted(chats)} instead of the owner and both readers")
+                if not re.search(r"[а-яё]", ru, re.I):
+                    problems.append("offline run: the Russian reader got no Russian text")
+            except Exception as e:
+                import traceback
+                problems.append(f"offline run: {type(e).__name__}: {e}")
+                traceback.print_exc()
+    return problems
 
 
 def loop(minutes, sync, max_hours=0.0):
     """Loop: a run every `minutes` minutes. A failed run does not stop the bot.
     max_hours > 0 — stop after that many hours (for GitHub Actions, where a job lives up to 6 h).
-    With --git-sync the bot picks up new code itself: after git pull it restarts if any *.py changed."""
+    With --git-sync the bot picks up new code itself: after git pull it restarts if any *.py changed —
+    but only with code that passes the self-check; otherwise it stays on the version that works.
+    On GitHub Actions (relay.py) each session also queues the next one and stops when the workflow is disabled."""
+    global LOOP_MINUTES, CODE_SHA
+    LOOP_MINUTES = float(minutes)
     repo = os.path.dirname(os.path.abspath(__file__))
     try:
         deadline = float(os.environ["LOOP_DEADLINE"])
     except (KeyError, ValueError):
         deadline = time.time() + max_hours * 3600 if max_hours > 0 else None
     auto_reload = os.environ.get("AUTO_RELOAD", "yes").strip().lower() not in ("0", "no", "off", "false")
+    pinned = os.environ.get("BOT_PINNED", "").strip()          # news.yml: main fails its self-check, this is the last good
+    main_bad = os.environ.get("BOT_MAIN_BAD", "").strip()
+    bad = {x for x in os.environ.get("BOT_BAD_CODE", "").split(",") if x} | ({main_bad} if main_bad else set())
     start_hash = code_hash(repo)
+    if sync:
+        CODE_SHA = git_head(repo)
+    rl = _relay() if sync else None
+    on_actions = bool(rl and rl.enabled())
+    if on_actions and rl.stopped():
+        print("The workflow is disabled (Actions → Economic news → Enable workflow turns the bot back on) — not starting.")
+        return
     print(f"The bot runs continuously: a check every {minutes:g} min"
           + (", GitHub sync on" if sync else "") + ". Stop: Ctrl+C.")
+    if pinned:
+        print(f"main ({main_bad[:7]}) fails its self-check — running the last version that worked ({pinned[:7]}).")
+    dog = Watchdog(HANG_MINUTES * 60, lambda: restart(
+        deadline, f"  ! a run has been stuck for {HANG_MINUTES:g} min — starting the bot over"))
     last_push = 0.0
     push_every = float(os.environ.get("PUSH_MINUTES", "10")) * 60
+    fails, fail_since, alerted, reported_main = 0, None, False, False
+    relay_at = None
     while True:
         started = time.time()
+        dog.begin()
         try:
             if sync:
-                git_sync("pull", repo)
-                if auto_reload and code_hash(repo) != start_hash:
-                    reload_self(deadline)
+                update_code(repo, start_hash, deadline, bad, pinned=bool(pinned), auto_reload=auto_reload)
+                if pinned and not reported_main:
+                    reported_main = True
+                    try:
+                        with open(os.environ.get("BOT_MAIN_REPORT", ""), encoding="utf-8") as f:
+                            report = f.read()
+                    except OSError:
+                        report = ""
+                    report_bad_code(main_bad, report)
             sent = run()
             # the site (GitHub Pages) rebuilds on every push — so not more than every ~10 minutes,
             # but at once if something went to Telegram (so a crash cannot make it send the same again)
@@ -1488,7 +1929,30 @@ def loop(minutes, sync, max_hours=0.0):
             print(e)
             return
         except Exception as e:
-            print(f"  ! the run failed: {type(e).__name__}: {e}")
+            fails += 1
+            fail_since = fail_since or started
+            err = f"{type(e).__name__}: {e}"
+            print(f"  ! the run failed: {err}")
+            mins = int((time.time() - fail_since) / 60)
+            if not alerted and fails >= 3 and mins >= FAIL_ALERT_MINUTES:
+                alerted = notify_owner(lambda lang: i18n.t(lang, "bot_failing", n=fails, m=mins, err=html.escape(err[:300])))
+        else:
+            if alerted:
+                mins = int((time.time() - fail_since) / 60)
+                notify_owner(lambda lang: i18n.t(lang, "bot_recovered", m=mins))
+            fails, fail_since, alerted = 0, None, False
+            if on_actions:
+                rl.mark_healthy()
+                if relay_at is None or time.time() - relay_at >= RELAY_EVERY:
+                    first, relay_at = relay_at is None, time.time()
+                    if rl.stopped():
+                        print("The workflow was disabled — this session ends here (Enable workflow turns the bot back on).")
+                        return
+                    print("  next session:", rl.queue_next())
+                    if first:
+                        print("  workflows kept on:", rl.keep_enabled(rl.news_workflow(), rl.KEEPALIVE))
+        finally:
+            dog.end()
         pause = max(30.0, minutes * 60 - (time.time() - started))
         if deadline and time.time() + pause > deadline:
             print("Time is up, exiting.")
@@ -1499,6 +1963,12 @@ def loop(minutes, sync, max_hours=0.0):
 def main():
     load_dotenv(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env"))
     args = sys.argv[1:]
+    if "--selfcheck" in args:
+        problems = selfcheck()
+        for p in problems[1:]:
+            print("  " + p)
+        print(f"SELF-CHECK FAILED: {problems[0]}" if problems else "SELF-CHECK OK")
+        sys.exit(1 if problems else 0)
     if "--test" in args:
         token = os.environ.get("TELEGRAM_BOT_TOKEN", "")
         tg = Telegram(token, os.environ.get("TELEGRAM_CHAT_ID", ""), pages_url=os.environ.get("PAGES_URL", ""),

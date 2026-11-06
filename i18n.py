@@ -48,8 +48,25 @@ S = {
     "quiet_night": {"en": "No significant news overnight.", "ru": "Ночью значимых новостей не было."},
     "today_cal": {"en": "📅 <b>Today's calendar (MSK)</b>", "ru": "📅 <b>Сегодня в календаре (МСК)</b>"},
     "tomorrow_cal": {"en": "📅 <b>Tomorrow's calendar (MSK)</b>", "ru": "📅 <b>Завтра в календаре (МСК)</b>"},
-    "all_down": {"en": "⚠️ No source responded. Probably a network problem on GitHub — I'll retry next run.",
-                 "ru": "⚠️ Ни один источник не ответил. Возможно, проблемы с сетью у GitHub — проверю в следующий раз."},
+    "all_down": {"en": "⚠️ No source has answered for ~15 min. Probably a network problem on GitHub's side — "
+                       "the bot keeps trying by itself.",
+                 "ru": "⚠️ Ни один источник не отвечает уже ~15 мин. Скорее всего, проблемы с сетью у GitHub — "
+                       "бот продолжает пробовать сам."},
+    # the bot's own health (owner only; sent only when it cannot fix things by itself)
+    "part_failed": {"en": "⚠️ <b>Part of the bot is broken</b>: {part} — {err}\n"
+                          "Everything else works. This needs a fix in the code; if it is still broken tomorrow, I'll say so again.",
+                    "ru": "⚠️ <b>Сломалась часть бота</b>: {part} — {err}\n"
+                          "Остальное работает. Нужна правка в коде; если завтра не починится — напомню."},
+    "bot_failing": {"en": "⚠️ <b>The news bot keeps failing</b> ({n} runs in a row, ~{m} min): {err}\n"
+                          "It keeps retrying by itself. If this does not clear up, the code or a key needs a fix.",
+                    "ru": "⚠️ <b>Бот новостей не может отработать</b> ({n} раз подряд, ~{m} мин): {err}\n"
+                          "Он продолжает пробовать сам. Если это не пройдёт — нужна правка кода или ключа."},
+    "bot_recovered": {"en": "✅ <b>The news bot works again</b> after ~{m} min of failures.",
+                      "ru": "✅ <b>Бот новостей снова работает</b> после ~{m} мин сбоев."},
+    "code_rejected": {"en": "⚠️ <b>New code on GitHub does not start</b> ({sha}): {err}\n"
+                            "The bot keeps running the previous version and will pick up the next fixed commit by itself.",
+                      "ru": "⚠️ <b>Новый код на GitHub не запускается</b> ({sha}): {err}\n"
+                            "Бот работает на предыдущей версии и сам подхватит следующий исправленный коммит."},
     "went_down": {"en": "⚠️ Not responding for ~{h} h: {names}", "ru": "⚠️ Не отвечают уже ~{h} ч: {names}"},
     "came_back": {"en": "✅ Back online: {names}", "ru": "✅ Снова работают: {names}"},
     "dead": {"en": "⚠️ <i>Not responding for several hours: {names}</i>", "ru": "⚠️ <i>Не отвечают несколько часов: {names}</i>"},
@@ -107,6 +124,17 @@ SOURCES_RU = {"Fed": "ФРС США", "US Labor Statistics (BLS)": "Статис
               "Bank of England": "Банк Англии", "IMF": "МВФ", "Bank of Russia": "ЦБ РФ",
               "Kommersant": "Коммерсантъ", "RBC": "РБК"}
 SOURCES_FROM_RU = {v: k for k, v in SOURCES_RU.items()}
+
+
+# parts of a run (for the owner's notice when one of them is broken)
+PARTS_RU = {"start message": "стартовое сообщение", "news": "новости", "reminders": "напоминания",
+            "released data": "вышедшие данные", "morning digest": "утренний дайджест",
+            "source alerts": "уведомления об источниках", "trades": "сделки", "chart": "картинка с графиками",
+            "evening digest": "вечерний дайджест"}
+
+
+def part(name, lang):
+    return PARTS_RU.get(name, name) if norm_lang(lang) == "ru" else name
 
 
 def norm_lang(lang):

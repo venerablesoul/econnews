@@ -1,19 +1,24 @@
 name: Economic news
 
+# The bot lives in GitHub Actions sessions of ~5.5 hours (a job may run 6 hours at most). Each session queues the
+# next one itself right after its first good check (relay.py), so the next session starts the moment this one ends —
+# also when this one dies unexpectedly. GitHub's schedule is not used for that: on this repository a "*/30" schedule
+# fired only every 4–8 hours, and the bot was silent for up to 2.5 hours between sessions.
+# keepalive.yml restarts the chain if it ever breaks.
+#
+# To stop the bot: Actions → Economic news → ⋯ → Disable workflow. The running session notices within ~30 minutes
+# and ends; nothing starts the bot again until the workflow is enabled (then press "Run workflow" once).
+
 on:
-  schedule:
-    # GitHub often skips scheduled runs (sometimes 1–2 times in half a day),
-    # so each run works ~5.5 h and checks the news every 5 minutes itself.
-    # The schedule only restarts it when it has finished.
-    - cron: "*/30 * * * *"
-  workflow_dispatch:          # the "Run workflow" button for a manual start
+  workflow_dispatch:          # the "Run workflow" button; every session also starts the next one this way
 
 permissions:
   contents: write             # to save state.json and the page data to the gh-pages branch (main gets no data commits)
+  actions: write              # to queue the next session and keep the workflows enabled (relay.py)
 
 concurrency:
   group: econ-news
-  cancel-in-progress: false
+  cancel-in-progress: false   # one session runs, the next one waits for it
 
 jobs:
   news:
@@ -23,13 +28,43 @@ jobs:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262  # v4.4.0
 
       - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065  # v5.6.0
+        continue-on-error: true   # if it fails, the runner's own Python 3 runs the bot (standard library only)
         with:
           python-version: "3.12"
           cache: pip
           cache-dependency-path: requirements.txt
 
       - name: Install chart and PDF libraries
-        run: pip install -r requirements.txt
+        continue-on-error: true   # optional extras: without them only the chart picture and House reports are skipped
+        run: python3 -m pip install -r requirements.txt
+
+      - name: Check the code
+        # main normally passes. If it does not (a broken commit), this session runs the last version that worked
+        # (state.json → code_ok on gh-pages) and the owner is told once. This step never fails the job.
+        run: |
+          report="$RUNNER_TEMP/selfcheck.txt"
+          if timeout 300 python3 news_bot.py --selfcheck >"$report" 2>&1; then
+            tail -n 1 "$report"
+            exit 0
+          fi
+          cat "$report"
+          bad=$(git rev-parse HEAD)
+          good=""
+          if git fetch -q --depth=1 origin gh-pages; then
+            good=$(git show FETCH_HEAD:state.json | python3 -c 'import json, sys; print((json.load(sys.stdin).get("code_ok") or {}).get("sha") or "")') || good=""
+          fi
+          if [ -z "$good" ] || [ "$good" = "$bad" ]; then
+            echo "::warning::main ($bad) fails its self-check and no earlier working version is known — running it anyway"
+            exit 0
+          fi
+          if git fetch -q --depth=1 origin "$good" && git -c advice.detachedHead=false checkout -q "$good" \
+              && timeout 300 python3 news_bot.py --selfcheck >/dev/null 2>&1; then
+            { echo "BOT_PINNED=$good"; echo "BOT_MAIN_BAD=$bad"; echo "BOT_MAIN_REPORT=$report"; } >> "$GITHUB_ENV"
+            echo "::warning::main ($bad) fails its self-check — this session runs the last version that worked ($good)"
+          else
+            git checkout -q -f "${GITHUB_REF_NAME:-main}" || git checkout -q -f "$bad" || true
+            echo "::warning::the last version that worked ($good) cannot be used either — running main ($bad)"
+          fi
 
       - name: Collect and send news
         env:
@@ -39,6 +74,8 @@ jobs:
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}   # optional: "Name your@email" for the SEC site
           FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }} # free key: company ratios and the earnings calendar (EQS)
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}   # optional: AI notes on key stories
+          GITHUB_TOKEN: ${{ github.token }}               # relay.py: queue the next session (this job's own token)
+          RELAY_REF: ${{ github.event.repository.default_branch }}
           COMPANIES: "yes"        # US companies, financials, yield curves and rates for the terminal
           MIN_LEVEL: medium       # high = only the most important
           DIGEST_HOUR: "21"       # the day in review at 21:00 MSK; -1 = off
@@ -53,7 +90,7 @@ jobs:
           CALENDAR: "yes"         # calendar of key events + reminders
           CAL_COUNTRIES: "USD,EUR,CNY,GBP,JPY"  # whose events to show
           REMIND_MINUTES: "60"    # how many minutes before to remind; 0 = never
-          ALERTS: "yes"           # report at once when a source stops responding
+          ALERTS: "yes"           # tell the owner when a source has been down for ~3 h (and when it is back)
           TERMINAL_BUTTON: "yes"  # the «🖥 Terminal» button under messages
           TRADES: "yes"           # trades of US politicians and company insiders
           CONGRESS_MIN: "15000"   # send politicians' trades from $15K (smaller ones — terminal only)
@@ -63,12 +100,21 @@ jobs:
           # the Markets page address: GitHub Pages or your own domain (repository variable PAGES_URL)
           export PAGES_URL="${{ vars.PAGES_URL }}"
           [ -n "$PAGES_URL" ] || export PAGES_URL="https://${GITHUB_REPOSITORY_OWNER,,}.github.io/${GITHUB_REPOSITORY#*/}/"
-          # loop: a check every 5 min, exit after 5.5 h (the next run is already queued);
+          # loop: a check every 5 min, exit after 5.5 h (the next session is already queued);
           # the site (the gh-pages branch, one commit replaced each time) updates at most every 10 minutes,
           # fresh news go to the bot server at once
-          LOOP_HOURS=5.5 python news_bot.py --loop 5 --git-sync
+          LOOP_HOURS=5.5 python3 news_bot.py --loop 5 --git-sync
 
       - name: Save state
         if: always()
         # the same save as inside the loop: survives a race with other commits and a stuck rebase
-        run: python -c "import news_bot; news_bot.git_sync('push', '.')"
+        run: python3 -c "import news_bot; news_bot.git_sync('push', '.')"
+
+      - name: Make sure the next session is queued
+        if: ${{ !cancelled() }}
+        # normally the bot did it at its first good check; this is the backup. A session that never got through
+        # a check does not queue another one, so broken code cannot restart itself in a loop.
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          RELAY_REF: ${{ github.event.repository.default_branch }}
+        run: python3 relay.py next --if-healthy

@@ -367,6 +367,7 @@ class AutoReload(unittest.TestCase):
         hashes = iter(["old", "new"])
         with mock.patch.object(news_bot, "code_hash", side_effect=lambda repo: next(hashes)), \
                 mock.patch.object(news_bot, "git_sync"), \
+                mock.patch.object(news_bot, "selfcheck_in", return_value=(True, "SELF-CHECK OK")), \
                 mock.patch.object(news_bot, "run") as run, \
                 mock.patch.object(news_bot.os, "execv", side_effect=SystemExit("reloaded")) as ex, \
                 mock.patch.dict(os.environ, {"LOOP_DEADLINE": "123456.5"}):
