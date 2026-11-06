@@ -221,16 +221,20 @@ async function yahooSpark(symbols) {
   const errors = [];
   const parts = [];
   for (let i = 0; i < symbols.length; i += 20) parts.push(symbols.slice(i, i + 20).map(encodeURIComponent).join(","));
-  // the parts at the same time (one after another they took up to 4 × 6 s when Yahoo was slow)
+  // the parts at the same time, and for each both Yahoo hosts at once — the first that answers wins
+  // (one after another they took up to 4 × 6 s when Yahoo was slow or refused one of them)
   await Promise.all(parts.map(async (part) => {
-    let got = null;
-    for (const url of ["https://query1.finance.yahoo.com/v7/finance/spark?range=1d&interval=1d&symbols=",
-      "https://query2.finance.yahoo.com/v8/finance/spark?range=1d&interval=1d&symbols="]) {
-      try {
-        got = sparkRows(await getJSON(url + part, { timeout: 5000 }));
-        if (Object.keys(got).length) break;
-      } catch (e) { errors.push(String(e.message || e)); }
-    }
+    const asks = ["https://query1.finance.yahoo.com/v7/finance/spark?range=1d&interval=1d&symbols=",
+      "https://query2.finance.yahoo.com/v8/finance/spark?range=1d&interval=1d&symbols="].map((url) =>
+      getJSON(url + part, { timeout: 5000 }).then((d) => {
+        const got = sparkRows(d);
+        if (!Object.keys(got).length) throw new Error("Yahoo: no data");
+        return got;
+      }));
+    const got = await Promise.any(asks).catch((e) => {
+      for (const x of (e && e.errors) || [e]) errors.push(String((x && x.message) || x));
+      return null;
+    });
     Object.assign(out, got || {});
   }));
   if (!Object.keys(out).length) throw new Error("Yahoo: " + (errors[0] || "no data"));
