@@ -1,8 +1,14 @@
 # A relay for networks that block *.workers.dev
 
-Several Russian providers reset every connection to `*.workers.dev` (checked 23.10.2026: even a tiny `/api/ping`
-fails with ERR_CONNECTION_RESET). The bot itself is not affected — Telegram reaches the server from abroad — but the
-terminal opened from Russia cannot get quotes, company cards, search, charts or the personal lists.
+Russian providers throttle Cloudflare: a connection stops after ~16 KB (checked 06.11.2026 from a Moscow network:
+port 443 hung for 15–25 s while fresh connections on 8443/2053/2083/2087/2096 answered in 0.7 s; on 23.10.2026 some
+connections were reset outright). The terminal already copes with this by itself — it spreads its requests over these
+ports and repeats a stalled one on another (`wjson` in `docs/terminal/index.html`), and everything on the screen comes
+from the bot's data on GitHub Pages first, which is not throttled.
+
+The relay below is for the worse case: a provider that blocks every port of `*.workers.dev`. The bot itself is not
+affected — Telegram reaches the server from abroad — but then the terminal opened from Russia shows only the bot's
+data from the site: no live quotes, company cards beyond the ~100 largest, search, charts or the personal lists.
 
 The fix is a one-file relay on any ordinary PHP hosting (terminalbloom.com is on Namecheap hosting). The browser asks
 `https://terminalbloom.com/api/...`, the hosting asks the bot server and returns the answer. No keys are stored there.

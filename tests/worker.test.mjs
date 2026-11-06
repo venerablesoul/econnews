@@ -13,7 +13,7 @@ const { handleUpdate, newsText, marketsText, watchBot } = await import("../worke
 const { LOGIN_MAX, TG_INIT_TTL } = await import("../worker/src/lib.js");
 const { parseSymbol } = await import("../worker/src/market.js");
 const { parseAlert, cleanPort } = await import("../worker/src/user.js");
-const { clearMemo, fmt, money, pct } = await import("../worker/src/lib.js");
+const { clearMemo, fmt, money, pct, cached, swr, within, memo, PENDING_MAX } = await import("../worker/src/lib.js");
 const { t, newsField, sectorName, tradeLabel, setLang } = await import("../worker/src/i18n.js");
 
 let passed = 0;
@@ -144,6 +144,101 @@ await test("/api/quotes: free world quotes (Yahoo) for everyone, no paid key nee
     assert.equal(f.json.ok, true, "a Yahoo failure does not break the answer");
     assert.ok(f.json.errors.some((e) => /Yahoo/.test(e)));
   } finally { flags.failSpark = false; }
+});
+
+await test("/api/quotes: answers within ~1.5 s when a source hangs; the rest comes in the next answer", async () => {
+  const realNow = Date.now;
+  flags.hang = ["finance.yahoo.com"];
+  try {
+    let t0 = realNow();
+    let r = await api("/api/quotes");
+    let ms = realNow() - t0;
+    assert.ok(ms < 2500, "the answer did not wait for the hanging source: " + ms + " ms");
+    assert.equal(r.json.ok, true);
+    assert.ok(r.json.stocks.AAPL, "US stocks are there");
+    assert.deepEqual(r.json.wait, ["world"], "the terminal is told what is still loading");
+    // the source is back: once the stuck load is over its time limit (or fails), a fresh one is made
+    flags.hang = [];
+    clearMemo();
+    r = await api("/api/quotes");
+    assert.equal(r.json.world["S&P"].value, 7730);
+    assert.equal(r.json.wait, undefined);
+    // later the source hangs again: the last good values are served at once and refreshed in the background
+    flags.hang = ["finance.yahoo.com"];
+    const waits = ctx.waits.length;
+    Date.now = () => realNow() + 60e3;
+    t0 = realNow();
+    r = await api("/api/quotes");
+    ms = realNow() - t0;
+    assert.ok(ms < 1200, "stale values do not wait: " + ms + " ms");
+    assert.equal(r.json.world["S&P"].value, 7730, "the last good value");
+    assert.ok(ctx.waits.length > waits, "the refresh goes on after the answer (ctx.waitUntil)");
+    // too old (over 15 min): not served any more, the answer says it is loading
+    Date.now = () => realNow() + 20 * 60e3;
+    r = await api("/api/quotes");
+    assert.ok((r.json.wait || []).includes("world"));
+    assert.equal(r.json.world["S&P"], undefined, "a 20-minute-old value is not served");
+  } finally {
+    flags.hang = [];
+    Date.now = realNow;
+  }
+});
+
+await test("/api/quotes: an old value kept because its source fails is reported, not shown as fresh", async () => {
+  flags.hang = ["finance.yahoo.com"];
+  try {
+    memo.world = { at: Date.now() - 5 * 60e3, value: { "S&P": { value: 7700, change: 0.1 } }, err: "Yahoo: HTTP 429" };
+    const r = await api("/api/quotes?only=world");
+    assert.equal(r.json.world["S&P"].value, 7700, "still served (stale-while-revalidate)");
+    assert.ok(r.json.errors.some((e) => /^world: 5 min old — Yahoo: HTTP 429$/.test(e)), JSON.stringify(r.json.errors));
+  } finally { flags.hang = []; }
+});
+
+await test("cache: a load stuck for over PENDING_MAX is started again; a failed one keeps the last value", async () => {
+  const realNow = Date.now;
+  try {
+    let n = 0;
+    const never = () => { n++; return new Promise(() => {}); };
+    cached("k", 10, never);
+    cached("k", 10, never);
+    await new Promise((r) => setTimeout(r, 0));
+    assert.equal(n, 1, "one load for everyone while it runs");
+    Date.now = () => realNow() + PENDING_MAX + 1000;
+    const p = cached("k", 10, async () => { n++; return 42; });
+    assert.equal(await p, 42, "a lost load does not block later requests");
+    assert.equal(n, 2);
+    Date.now = () => realNow() + PENDING_MAX + 60e3;
+    await assert.rejects(cached("k", 10, async () => { throw new Error("down"); }));
+    assert.equal(memo.k.value, 42, "the last good value is kept after a failed refresh");
+    assert.equal(await swr("k", 10, async () => { throw new Error("down"); }, { maxAge: 3600 }), 42, "swr serves it");
+    assert.equal(await within(new Promise(() => {}), 50, "late"), "late");
+    assert.equal(await within(Promise.resolve("now"), 50, "late"), "now");
+  } finally { Date.now = realNow; }
+});
+
+await test("/api/live?since=: only the stories found after the viewer's data, without the market block", async () => {
+  const key = crypto.createHash("sha256").update("econnews-sync:" + TOKEN).digest("hex");
+  const news = [
+    { title: "Newest", ts: "2099-01-01T00:10:00.123456+00:00", level: "high", sources: ["X"] },
+    { title: "New", ts: "2099-01-01T00:05:00+00:00", level: "high", sources: ["X"] },
+    { title: "Old", ts: "2099-01-01T00:00:00+00:00", level: "high", sources: ["X"] },
+  ];
+  const market = Array.from({ length: 40 }, (_, i) => ({ id: "M" + i, value: i, spark: Array(60).fill(i) }));
+  await api("/sync/live", { Authorization: "Bearer " + key, "Content-Type": "application/json" }, "POST", { updated: "2099-01-01T00:10:00+00:00", news, market });
+  clearMemo();
+  const full = await api("/api/live");
+  assert.equal(full.json.news.length, 3);
+  assert.equal(full.json.market.length, 40);
+  const r = await api("/api/live?since=" + encodeURIComponent("2099-01-01T00:00:00.5+00:00"));
+  assert.deepEqual(r.json.news.map((n) => n.title), ["Newest", "New"]);
+  assert.equal(r.json.market, undefined, "no market block: the terminal has it from the site and /api/quotes");
+  assert.equal(r.json.updated, "2099-01-01T00:10:00+00:00");
+  assert.ok(JSON.stringify(r.json).length < JSON.stringify(full.json).length / 5, "a small answer");
+  const none = await api("/api/live?since=2099-01-01T00:10:00.5Z");
+  assert.deepEqual(none.json.news, []);
+  const bad = await api("/api/live?since=garbage");
+  assert.equal(bad.json.news.length, 3, "an unreadable time gives the whole feed");
+  await env.SUBS.delete("live");   // the bot tests below read the site's data, not this feed
 });
 
 await test("/api/company: all parts; headlines translated only when asked", async () => {

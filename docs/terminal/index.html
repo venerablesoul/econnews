@@ -811,17 +811,105 @@ function loadCached(){
   if (c) Object.keys(c).forEach(function(k){ if (!C[k] && c[k] && c[k].price) C[k] = {price:c[k].price, change:c[k].change, high:c[k].high, low:c[k].low, open:c[k].open} });
 }
 
-/* ---------- quotes from the bot server (API keys stay on the server) ---------- */
+/* ---------- the bot server (API keys stay on the server) ----------
+ Russian providers throttle Cloudflare, where the bot server runs (since June 2025, *.workers.dev too): a connection
+ stops after ~16 KB and every later request on it hangs, while a fresh connection works. The browser keeps one
+ connection per address and port, and Cloudflare answers the same server on several HTTPS ports. So every request
+ goes to one of these "lanes" with a short time limit; a lane that is slow gets a twin request on another lane
+ (whichever answers first wins), a stalled lane rests and is checked again in the background. The screen never
+ waits for the server: it shows the browser's last copy and the bot's data from the site, live quotes come on top. */
+var CF_PORTS = ['', ':8443', ':2053', ':2083', ':2087', ':2096'];
+function lanesOf(base){ return /^https:\/\/[a-z0-9.-]+\.workers\.dev$/i.test(base || '') ? CF_PORTS.map(function(p){ return base + p }) : (base ? [base] : []) }
+var LANES = {}, curLane = '';
+function lane(o){ return LANES[o] || (LANES[o] = {bad: 0, fails: 0, probe: false}) }
+function laneFor(base, tried){
+  var all = lanesOf(base), now = Date.now();
+  if (curLane && all.indexOf(curLane) >= 0 && tried.indexOf(curLane) < 0 && lane(curLane).bad <= now) return curLane;
+  var free = all.filter(function(o){ return tried.indexOf(o) < 0 && lane(o).bad <= now });
+  if (!free.length) free = all.filter(function(o){ return tried.indexOf(o) < 0 }).sort(function(a, b){ return lane(a).bad - lane(b).bad }).slice(0, 1);
+  return free.length ? free[Math.floor(Math.random() * free.length)] : null;
+}
+function laneOk(o){ var l = lane(o); l.bad = 0; l.fails = 0; if (curLane !== o) { curLane = o; store('api_lane', o) } }
+function laneBad(o){
+  var l = lane(o);
+  l.fails++; l.bad = Date.now() + Math.min(30000 * Math.pow(2, l.fails - 1), 600000);
+  if (curLane === o) curLane = '';
+  if (l.probe) return;
+  // in a while a tiny request on this lane: either it answers (back in use at once) or the browser drops the dead
+  // connection (its own check after ~10 s of silence) and the lane starts fresh next time
+  l.probe = true;
+  setTimeout(function(){
+    tfetch(o + '/api/ping', {cache:'no-store'}, 15000).then(function(r){ if (r.ok) laneOk(o) }).catch(function(){})
+      .then(function(){ l.probe = false });
+  }, 12000);
+}
+// GET/POST to the bot server; resolves with the parsed JSON. o: {headers, method, body, timeout (ms, one try),
+// hedge (ms before a twin request on another lane; GET only), tries (lanes at most), base}
+function wjson(path, o){
+  o = o || {};
+  var base = o.base || API;
+  if (!base) return Promise.reject(new Error(TX('srv_not_set_e')));
+  var get = !o.method || o.method === 'GET';
+  var tries = get ? (o.tries || 3) : 1, per = o.timeout || 6000, hedge = get ? (o.hedge == null ? 1500 : o.hedge) : 0;
+  var tried = [], live = [], done = false, lastErr = null;
+  return new Promise(function(resolve, reject){
+    function finish(){ if (!done && !live.length && (tried.length >= tries || !laneFor(base, tried))) { done = true; reject(lastErr || new Error('no answer')) } }
+    function attempt(){
+      if (done || tried.length >= tries) return finish();
+      var origin = laneFor(base, tried);
+      if (!origin) return finish();
+      tried.push(origin);
+      var me = {o: origin, ac: window.AbortController ? new AbortController() : null, end: false, at: Date.now()};
+      live.push(me);
+      var stop = function(){ me.end = true; clearTimeout(me.t); clearTimeout(me.h); var i = live.indexOf(me); if (i >= 0) live.splice(i, 1) };
+      var fail = function(e){
+        if (me.end) return;
+        stop(); lastErr = e && e.name === 'AbortError' ? new Error(TX('srv_slow')) : e;
+        laneBad(origin);
+        if (!done) { if (tried.length < tries && laneFor(base, tried)) attempt(); else finish() }
+      };
+      me.t = setTimeout(function(){ fail(new Error(TX('srv_slow'))); if (me.ac) me.ac.abort() }, per);
+      if (hedge) me.h = setTimeout(function(){ if (!me.end && !done) attempt() }, hedge);
+      var init = {cache: 'no-store', headers: o.headers || {}};
+      if (me.ac) init.signal = me.ac.signal;
+      if (!get) { init.method = o.method; init.body = o.body }
+      // the body is read inside the time limit too: a connection may stall in the middle of an answer
+      fetch(origin + path, init).then(function(r){ return r.text().then(function(t){ return {r: r, t: t} }) }).then(function(x){
+        if (me.end) return;
+        stop(); laneOk(origin);
+        if (done) return;
+        done = true;
+        // the slower twins are not needed; the ones that started before this lane answered are likely stalled
+        live.slice().forEach(function(l){ if (l.at < me.at) laneBad(l.o); l.end = true; clearTimeout(l.t); clearTimeout(l.h); try { l.ac && l.ac.abort() } catch(e){} });
+        live.length = 0;
+        if (!x.r.ok) return reject(new Error('HTTP ' + x.r.status));
+        try { resolve(JSON.parse(x.t)) } catch(e){ reject(new Error('HTTP ' + x.r.status + ': not JSON')) }
+      }, fail);
+    }
+    attempt();
+  });
+}
+
 var API_LIST = [], pickP = null, pickAt = 0;
-var API = '', apiTier = '', apiPaid = false, apiErr = false, apiTimer = null, apiRefresh = 30;
+var API = '', apiTier = '', apiPaid = false, apiErr = false, apiTimer = null, apiRefresh = 30, apiFails = 0, apiOkAt = 0, apiWaits = 0;
 function ownerPass(){ return (store('owner_pass') || '').trim() }
-function tgInit(){ try { return (window.Telegram && Telegram.WebApp && Telegram.WebApp.initData) || '' } catch(e){ return '' } }
+// Telegram puts the signed sign-in data into the address (#tgWebAppData=…): read at once, without waiting for telegram.org
+var TG_HASH = (function(){
+  try {
+    var h = new URLSearchParams(location.hash.slice(1)).get('tgWebAppData');
+    if (h) return h;
+    var s = JSON.parse(sessionStorage.getItem('__telegram__initParams') || 'null');
+    return (s && s.tgWebAppData) || '';
+  } catch(e){ return '' }
+})();
+function tgInit(){ try { var d = window.Telegram && Telegram.WebApp && Telegram.WebApp.initData; if (d) return d } catch(e){} return TG_HASH }
 var cfgP = null;
 function loadConfig(){
   // the server address is remembered: quotes are requested at once, without waiting for config.json
   if (cfgP) return cfgP;
   var known = store('api_url') || '';
   if (known) API = known;
+  curLane = store('api_lane') || '';
   try { API_LIST = JSON.parse(store('api_list') || '[]') } catch(e){ API_LIST = [] }
   var net = tfetch('../config.json?t=' + Date.now(), {cache:'no-store'}, 15000).then(function(r){ return r.ok ? r.json() : null })
     .then(function(c){
@@ -833,11 +921,12 @@ function loadConfig(){
       if (list.indexOf(API) < 0) { API = list[0]; store('api_url', API) }
       return pickApi();
     }).catch(function(){});
-  cfgP = Promise.all([known ? null : net, window.TG_READY]).then(function(){});
+  // inside Telegram the sign-in data is needed first; it is usually in the address already (no wait for telegram.org)
+  cfgP = Promise.all([known ? null : net, window.IN_TG && !TG_HASH ? window.TG_READY : null]).then(function(){});
   return cfgP;
 }
-// Several addresses of the same server: *.workers.dev is blocked by some providers (Russia), the relay on our own
-// domain is not. Every address is asked a tiny /api/ping at once; the first that answers is used and remembered.
+// Several addresses of the same server (api_alt in config.json: e.g. a relay on a hosting that the provider does not
+// throttle). Every address is asked a tiny /api/ping at once; the first that answers is used and remembered.
 function pickApi(force){
   if (API_LIST.length < 2) return Promise.resolve(API);
   if (pickP) return pickP;
@@ -847,23 +936,28 @@ function pickApi(force){
   pickP = new Promise(function(done){
     var left = API_LIST.length, won = false;
     API_LIST.forEach(function(base){
-      tfetch(base + '/api/ping', {cache:'no-store'}, 7000).then(function(r){ if (!r.ok) throw new Error(r.status); return r.json() })
+      wjson('/api/ping', {base: base, timeout: 7000, hedge: 1500, tries: 2})
         .then(function(d){ if (!d || d.ok !== true) throw new Error('bad'); if (!won) { won = true; done(base) } })
         .catch(function(){ if (--left === 0 && !won) done(null) });
     });
   }).then(function(base){
     pickP = null;
     if (base && base !== API) { API = base; store('api_url', base) }
-    if (API !== before) (window.TG_READY || Promise.resolve()).then(apiLoop);
+    if (API !== before) apiLoop();
     return API;
   });
   return pickP;
 }
-function apiFetch(pass){
+function authHeaders(pass){
   var h = {}, init = tgInit(), p = pass != null ? pass : ownerPass();
   if (init) h['X-Tg-Init'] = init;   // the Telegram signature: how the server recognises the person
   if (p) h['X-Owner-Key'] = p;
-  return tfetch(API + '/api/quotes', {headers:h, cache:'no-store'}, 12000).then(function(r){ if (!r.ok) throw new Error('HTTP ' + r.status); return r.json() });
+  return h;
+}
+function apiFetch(pass){
+  // the server answers within ~1.5 s (worker/src/index.js, QUOTES_WAIT); no answer by then means a stalled lane:
+  // a twin request on another one (the first answer is wanted fast — sooner)
+  return wjson('/api/quotes', {headers: authHeaders(pass), timeout: 6000, hedge: apiOkAt ? 2500 : 1200});
 }
 function applyQuotes(d){
   var n = 0, fresh = false;
@@ -890,20 +984,41 @@ function applyQuotes(d){
   if (n) { if (fresh) renderMarket(); else patchMarket() }
   return n;
 }
+var apiBusy = false, apiAgain = false, apiGen = 0;
 function apiLoop(){
   clearTimeout(apiTimer);
   if (!API) { apiTier = ''; updStatus(); return }
   if (document.hidden) { apiTimer = setTimeout(apiLoop, 5000); return }
+  // one request at a time (a tab coming back to the screen calls this too); asked meanwhile — once more right after
+  if (apiBusy) { apiAgain = true; return }
+  apiBusy = true;
+  updStatus();           // "LIVE …" while the first answer is on its way (not the "FREE" of the page's HTML)
+  var next = apiRefresh, gen = apiGen;
   apiFetch().then(function(d){
+    if (gen !== apiGen) return;   // signed in or out meanwhile: the answer was for the other identity
+    if (d && d.ok === false) throw new Error(d.error || 'server error');
     var wasOwner = apiTier === 'owner';
-    apiErr = false; apiTier = d.tier || 'free'; apiPaid = !!d.paid; apiRefresh = d.refresh || 30;
+    apiErr = false; apiFails = 0; apiOkAt = Date.now();
+    apiTier = d.tier || 'free'; apiPaid = !!d.paid; apiRefresh = d.refresh || 30; next = apiRefresh;
     if (wasOwner && apiTier !== 'owner') Object.keys(Q).forEach(function(k){ if (Q[k].src === 'eod') Q[k].src = 'free' });
-    applyQuotes(d); cachePut('quotes', {stocks:d.stocks, fx:d.fx, world:d.world});
+    applyQuotes(d);
+    // a part may be missing while the server is still loading it: the browser's copy keeps the last known one
+    var c = cacheGet('quotes') || {}, has = function(o){ return o && Object.keys(o).length };
+    cachePut('quotes', {stocks: has(d.stocks) ? d.stocks : c.stocks, fx: has(d.fx) ? d.fx : c.fx, world: has(d.world) ? d.world : c.world});
+    // ...and then it is asked again in a few seconds instead of the usual interval (a couple of times at most)
+    if (d.wait && d.wait.length && apiWaits < 3) { apiWaits++; next = 3 } else apiWaits = 0;
     $('st-data').title = d.errors && d.errors.length ? TX('srv_errors') + d.errors.join('; ') : TX('srv_quotes');
   }).catch(function(e){
-    apiErr = true; $('st-data').title = TX('srv_unavail') + e.message;
+    if (gen !== apiGen) return;
+    apiFails++; apiErr = true;
+    $('st-data').title = TX('srv_unavail') + e.message + '\n' + TX('srv_hint');
+    next = Math.min(30, 3 * Math.pow(2, apiFails - 1));   // 3, 6, 12, 24, 30 s: the data on screen stays meanwhile
     pickApi();   // perhaps another address of the server works on this network
-  }).then(function(){ updStatus(); apiTimer = setTimeout(apiLoop, (apiErr ? 60 : apiRefresh) * 1000) });
+  }).then(function(){
+    apiBusy = false;
+    if (apiAgain || gen !== apiGen) { apiAgain = false; next = 0 }
+    updStatus(); apiTimer = setTimeout(apiLoop, next * 1000);
+  });
 }
 function patchMarket(){
   // update only the cells, so scrolling stays and changes flash
@@ -930,7 +1045,9 @@ function updLabel(){
 function updStatus(){
   var p = $('st-data');
   if (!API) { p.textContent = 'FREE'; p.className = 'pill'; return }
-  if (apiErr) { p.textContent = TX('srv_x'); p.className = 'pill'; return }
+  // a single slow answer is not an outage: quotes that came within the last ~1.5 min still count as live
+  var fresh = apiOkAt && Date.now() - apiOkAt < Math.max(90, apiRefresh * 3) * 1000;
+  if (apiErr && !fresh && (apiOkAt || apiFails >= 3)) { p.textContent = TX('srv_x'); p.className = 'pill'; return }
   p.textContent = apiPaid ? '● PRO' : apiTier ? '● LIVE' : 'LIVE …';
   p.className = 'pill' + (apiPaid ? ' pro' : apiTier ? ' live' : '');
 }
@@ -1354,6 +1471,7 @@ $('k-login').onclick = function(){
   apiFetch(p).then(function(d){
     if (d.tier !== 'owner') { m.style.color = 'var(--down)'; m.textContent = TX('wrong_pass'); return }
     store('owner_pass', p); $('k-pass').value = ''; apiTier = 'owner'; apiPaid = !!d.paid; apiErr = false; apiRefresh = d.refresh || apiRefresh;
+    apiGen++; apiFails = 0; apiOkAt = Date.now();   // an answer still on its way was for the viewer before signing in
     applyQuotes(d); updStatus(); $('k-tier').textContent = tierText();
     m.style.color = 'var(--up)'; m.textContent = TX('signed_in');
     apiLoop();
@@ -1363,7 +1481,7 @@ $('k-logout').onclick = function(){
   store('owner_pass', null); $('k-msg').style.color = 'var(--muted)';
   $('k-msg').textContent = TX(tgInit() ? 'pass_removed' : 'logged_out');
   Object.keys(Q).forEach(function(k){ if (Q[k].src === 'eod') Q[k].src = 'free' });
-  loadData(); apiLoop();
+  apiGen++; loadData(); apiLoop();
 };
 
 /* ======================= install as an app ======================= */
@@ -1426,7 +1544,7 @@ window.TERM = {
   openOverlay: openOverlay, curChart: function(){ return curChart },
   api: function(){ return API }, loadConfig: loadConfig, pickApi: pickApi,
   newsTopic: function(pred, label, query){ show('p-news'); newsPred = pred; newsPredLabel = label; $('nq').value = query || ''; newsQuery = query || ''; setNewsFilter(pred ? 'pred' : 'all') },
-  authHeaders: function(){ var h = {}, init = tgInit(), p = ownerPass(); if (init) h['X-Tg-Init'] = init; if (p) h['X-Owner-Key'] = p; return h },
+  authHeaders: function(){ return authHeaders() }, wjson: wjson,
   hasIdentity: function(){ return !!(tgInit() || ownerPass()) },
   apiTier: function(){ return apiTier }, dmy: dmy, I: I, TX: TX
 };

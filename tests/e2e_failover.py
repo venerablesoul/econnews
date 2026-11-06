@@ -50,7 +50,8 @@ def main():
     api = f"http://127.0.0.1:{wport}"
     rproc, rport = start_relay(api)
     relay = f"http://127.0.0.1:{rport}"
-    fx = {n: urllib.request.urlopen(f"{api}/__fx/{n}").read() for n in ("data.json", "stocks.json", "rates.json")}
+    # the site files the company card falls back to (the bot keeps them on gh-pages, not in main)
+    fx = {n: urllib.request.urlopen(f"{api}/__fx/{n}").read() for n in ("data.json", "stocks.json", "rates.json", "co/AAPL.json", "opt/AAPL.json")}
     check = E.check
     try:
         # --- the relay on its own ---

@@ -3,7 +3,7 @@
 //   World:        Yahoo Finance (no key) — indices, currencies, commodities, yields
 //   History:      Yahoo Finance; crypto — Binance / Yahoo / Coinbase; Russia — Moscow Exchange (ISS)
 //   Financials:   docs/fin/<TICKER>.json, built by the news bot from SEC filings (~100 largest companies)
-import { cached, dm, getJSON, pageJSON, siteData } from "./lib.js";
+import { cached, dm, getJSON, pageJSON, siteData, swr } from "./lib.js";
 
 const FH = "https://finnhub.io/api/v1";
 const BINANCE = "https://data-api.binance.vision/api/v3";
@@ -219,18 +219,20 @@ function sparkRows(d) {
 async function yahooSpark(symbols) {
   const out = {};
   const errors = [];
-  for (let i = 0; i < symbols.length; i += 20) {
-    const part = symbols.slice(i, i + 20).map(encodeURIComponent).join(",");
+  const parts = [];
+  for (let i = 0; i < symbols.length; i += 20) parts.push(symbols.slice(i, i + 20).map(encodeURIComponent).join(","));
+  // the parts at the same time (one after another they took up to 4 × 6 s when Yahoo was slow)
+  await Promise.all(parts.map(async (part) => {
     let got = null;
     for (const url of ["https://query1.finance.yahoo.com/v7/finance/spark?range=1d&interval=1d&symbols=",
       "https://query2.finance.yahoo.com/v8/finance/spark?range=1d&interval=1d&symbols="]) {
       try {
-        got = sparkRows(await getJSON(url + part, { timeout: 6000 }));
+        got = sparkRows(await getJSON(url + part, { timeout: 5000 }));
         if (Object.keys(got).length) break;
       } catch (e) { errors.push(String(e.message || e)); }
     }
     Object.assign(out, got || {});
-  }
+  }));
   if (!Object.keys(out).length) throw new Error("Yahoo: " + (errors[0] || "no data"));
   return out;
 }
@@ -243,9 +245,10 @@ async function imoexLive() {
   return v ? { value: v, change: r[c.indexOf("LASTCHANGEPRC")] } : null;
 }
 
-// { id: {value, change} } for the terminal; refreshed at most every `ttl` seconds for all viewers together
-export async function worldQuotes(ttl = 30) {
-  return cached("world", ttl, async () => {
+// { id: {value, change} } for the terminal; refreshed at most every `ttl` seconds for all viewers together.
+// opts ({ctx, maxAge}) — the terminal's quotes: an older value is served at once while a fresh one loads (swr).
+export async function worldQuotes(ttl = 30, opts) {
+  const load = async () => {
     const sym = {};
     for (const id of WORLD) sym[MKT[id][0]] = id;
     const [y, imoex] = await Promise.all([yahooSpark(Object.keys(sym)), imoexLive().catch(() => null)]);
@@ -256,7 +259,8 @@ export async function worldQuotes(ttl = 30) {
     }
     if (imoex) out.IMOEX = imoex;
     return out;
-  });
+  };
+  return opts ? swr("world", ttl, load, opts) : cached("world", ttl, load);
 }
 
 // ---------------------------------------------------------------------------

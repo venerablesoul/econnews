@@ -212,6 +212,13 @@ export function installMocks() {
   globalThis.fetch = async (url, init) => {
   url = String(url);
   calls.push(url);
+  // a source that never answers (flags.hang: host fragments) — only the request's own time limit ends it
+  if ((flags.hang || []).some((h) => url.includes(h))) {
+    return new Promise((_, reject) => {
+      const s = init && init.signal;
+      if (s) s.addEventListener("abort", () => reject(Object.assign(new Error("aborted"), { name: "AbortError" })));
+    });
+  }
   const body = route(url, init);
   const status = body && body.__status ? body.__status : 200;
   return new Response(JSON.stringify(body), { status, headers: { "content-type": "application/json" } });

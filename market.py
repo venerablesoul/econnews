@@ -67,6 +67,14 @@ INSTRUMENTS += [
     {**_T, "name": "Пшеница", "en": "Wheat", "short": "Пшеница", "sym": "ZW=F", "digits": 0},
 ]
 
+# US stocks and ETFs of the terminal's US panel. The terminal gets them live from the bot server, but that server is on
+# Cloudflare, which Russian providers throttle: with these in data.json (GitHub Pages) the panel fills at once anyway.
+# ids = the terminal's tickers (docs/terminal/index.html, STOCKS).
+_US = [("SPY", "S&P 500 ETF"), ("QQQ", "Nasdaq 100 ETF"), ("DIA", "Dow Jones ETF"), ("IWM", "Russell 2000 ETF"),
+       ("AAPL", "Apple"), ("MSFT", "Microsoft"), ("NVDA", "Nvidia"), ("AMZN", "Amazon"), ("GOOGL", "Alphabet"),
+       ("META", "Meta"), ("TSLA", "Tesla")]
+INSTRUMENTS += [{**_T, "name": n, "en": n, "short": s, "sym": s, "digits": 2, "prefix": "$"} for s, n in _US]
+
 # адреса вынесены, чтобы их можно было подменить в тестах
 YAHOO_URL = "https://query1.finance.yahoo.com/v8/finance/chart/{sym}?range=5d&interval=30m"
 MOEX_URL = "https://iss.moex.com/iss/engines/stock/markets/index/securities/{sym}/candles.json?interval=60&from={frm}&iss.meta=off"

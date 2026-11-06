@@ -49,19 +49,16 @@ function api(path, opts){
   var key = path, c = apiCache[key];
   if (!opts.method && opts.ttl && c && Date.now() - c.at < opts.ttl * 1000) return Promise.resolve(c.v);
   var h = T.authHeaders();
-  var init = {headers: h, cache: 'no-store'};
-  if (opts.method) { init.method = opts.method; h['Content-Type'] = 'application/json'; init.body = JSON.stringify(opts.body || {}) }
-  // a time limit: on a slow or throttled connection the panel shows an error instead of "loading" forever
-  var timer = null;
-  if (window.AbortController) { var ac = new AbortController(); init.signal = ac.signal; timer = setTimeout(function(){ ac.abort() }, (opts.timeout || 30) * 1000) }
-  return fetch(base + path, init).then(function(r){ clearTimeout(timer); if (!r.ok) throw new Error('HTTP ' + r.status); return r.json() }, function(e){
-    clearTimeout(timer);
-    // the address did not answer at all (blocked or down): if another address of the server works, repeat there once
-    if (!opts.retried && T.pickApi) return T.pickApi(true).then(function(b){
-      if (b && b !== base) return api(path, Object.assign({}, opts, {retried: true}));
-      throw e && e.name === 'AbortError' ? new Error(TX('srv_slow')) : e;
-    });
-    throw e && e.name === 'AbortError' ? new Error(TX('srv_slow')) : e;
+  // time limits for one try (T.wjson): a stalled connection on a throttled network is left for another one
+  // (a twin request after a few seconds); a change (POST) is sent once and waited for longer
+  // (a company card or a long history may take the server several seconds: the twin comes only after 8 s)
+  var o = {headers: h, timeout: (opts.timeout || 15) * 1000, hedge: 8000};
+  if (opts.method) { o.method = opts.method; h['Content-Type'] = 'application/json'; o.body = JSON.stringify(opts.body || {}); o.timeout = (opts.timeout || 30) * 1000 }
+  var go = function(){ return T.wjson(path, o) };
+  return go().catch(function(e){
+    // no lane of this address answered (blocked or down): if another address of the server works, repeat there once
+    if (opts.method || !T.pickApi) throw e;
+    return T.pickApi(true).then(function(b){ if (b && b !== base) return go(); throw e });
   }).then(function(d){
     if (d && d.ok === false && d.error && !opts.allowError) throw new Error(d.error);
     if (!opts.method && opts.ttl) apiCache[key] = {at: Date.now(), v: d};
@@ -1780,9 +1777,19 @@ function mergeLive(d){
 window.onData = function(d){ return mergeLive(d) };
 function pollLive(){
   if (!T.api() || document.hidden) return;
-  fetch(T.api() + '/api/live', {cache: 'no-store'}).then(function(r){ return r.json() }).then(function(l){
+  // only the stories that are newer than the data on screen (the whole feed is ~80 KB and never gets through a
+  // throttled connection — it would stall the quotes too); the stories already received are kept and merged
+  // (older stories than ~20 min are on the site already, also when the screen still shows the browser's old copy)
+  var d0 = T.data(), since = (live && live.updated) || (d0 && d0.updated) || '', floor = Date.now() - 20 * 60e3;
+  if (!(Date.parse(since) > floor)) since = new Date(floor).toISOString();
+  T.wjson('/api/live?since=' + encodeURIComponent(since), {timeout: 8000, hedge: 3000}).then(function(l){
     if (!l || !l.ok || !l.news) return;
     var fresh = !live || l.updated !== live.updated;
+    if (l.part && live && live.news) {
+      var seen = {}, all = [];
+      l.news.concat(live.news).forEach(function(n){ var k = (n.link || '') + '|' + n.title; if (!seen[k]) { seen[k] = 1; all.push(n) } });
+      l = Object.assign({}, l, {news: all.slice(0, 80)});
+    }
     live = l;
     var d = T.data();
     if (fresh && d && (l.updated || '') > (d.updated || '')) {
