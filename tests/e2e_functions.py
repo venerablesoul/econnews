@@ -205,7 +205,11 @@ def run():
         page.wait_for_function("[...document.querySelectorAll('#mon-body tbody tr')].find(r => r.textContent.includes('MOEX')).textContent.includes('Unity Day')", timeout=10000)
         cdr = page.inner_text("#mon-body")
         moex = page.evaluate("[...document.querySelectorAll('#mon-body tbody tr')].find(r => r.textContent.includes('MOEX')).querySelector('td.hol').textContent")
-        check("CDR: the nearest holidays come first", moex.index("Unity Day") < moex.index("Christmas"), moex)
+        # the nearest first: dates in order (which holiday is nearer depends on today's date)
+        import re as _re
+        from datetime import datetime as _dt
+        days = [_dt.strptime(x, "%d %b %Y") for x in _re.findall(r"\d{1,2} [A-Z][a-z]{2} \d{4}", moex)]
+        check("CDR: the nearest holidays come first", len(days) >= 2 and days == sorted(days), moex)
         lse = page.evaluate("MON.ruleHolidays('LSE', 2026).map(h => h.date).join(',')")
         check("CDR: London bank holidays 2026 (Boxing Day on a Saturday moves to Monday)",
               lse == "2026-01-01,2026-04-03,2026-04-06,2026-05-04,2026-05-25,2026-08-31,2026-12-25,2026-12-28", lse)

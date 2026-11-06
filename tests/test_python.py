@@ -23,6 +23,36 @@ def fx(name):
         return f.read()
 
 
+class UsQuotesOnTheSite(unittest.TestCase):
+    """The terminal's US panel fills from data.json (GitHub Pages) at once; the bot server only adds live updates."""
+
+    def test_us_panel_tickers_are_in_the_bot_data(self):
+        import re
+        import market
+        with open(os.path.join(os.path.dirname(HERE), "docs", "terminal", "index.html"), encoding="utf-8") as f:
+            html = f.read()
+        group = re.search(r"\{code:'US', ids:\[([^\]]+)\]\}", html).group(1)
+        panel = re.findall(r"'([A-Z]+)'", group)
+        self.assertEqual(len(panel), 11)
+        by = {i["short"]: i for i in market.INSTRUMENTS}
+        for s in panel:
+            self.assertIn(s, by, s)
+            self.assertEqual(by[s]["sym"], s)
+            self.assertTrue(by[s].get("terminal"), "terminal only: not on the Markets page, not in the picture")
+            self.assertFalse(by[s].get("chart", True))
+
+    def test_to_json_marks_them_terminal_only(self):
+        import market
+        inst = next(i for i in market.INSTRUMENTS if i["short"] == "SPY")
+        t0 = datetime(2026, 11, 5, 14, 30, tzinfo=timezone.utc)
+        q = {**inst, "price": 738.03, "change": 0.69, "period": "5 дней",
+             "series": [(t0, 733.0), (t0 + timedelta(days=1), 738.03)]}
+        item = market.to_json([q])[0]
+        self.assertEqual((item["id"], item["value"], item["digits"], item["prefix"]), ("SPY", 738.03, 2, "$"))
+        self.assertTrue(item["terminal"])
+        self.assertEqual(item["price"], "$738,03")
+
+
 class TickerTagging(unittest.TestCase):
     def test_english_and_russian_names(self):
         self.assertEqual(stocks.tickers_in("Apple beats estimates as iPhone sales jump"), ["AAPL"])

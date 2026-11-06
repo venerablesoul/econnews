@@ -405,7 +405,7 @@ function holidays(cc, code){
     var url = 'https://date.nager.at/api/v3/PublicHolidays/' + yy + '/' + cc;
     return fetch(url).then(function(r){ if (!r.ok) throw new Error('HTTP ' + r.status); return r.json() }).catch(function(e){
       if (!T.api()) throw e;
-      return fetch(T.api() + '/api/geo?u=' + encodeURIComponent(url)).then(function(r){ return r.json() });
+      return T.wjson('/api/geo?u=' + encodeURIComponent(url), {timeout: 15000, hedge: 5000});
     });
   };
   holCache[cc] = Promise.all([get(y), get(y + 1).catch(function(){ return [] })]).then(function(a){

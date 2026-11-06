@@ -85,14 +85,60 @@ export function isOwnerChat(env, id) {
 // ---------------------------------------------------------------------------
 export const memo = {};
 
-export async function cached(key, ttl, load) {
+// A load that has not finished in this time is treated as lost and started again. It may belong to a request whose
+// viewer went away: the runtime then cancels it, it never finishes, and every later request would wait for it.
+export const PENDING_MAX = 20000;
+
+// `ctx` (optional): the request's context — the load keeps running after the answer (ctx.waitUntil).
+export async function cached(key, ttl, load, ctx) {
   const m = memo[key];
   if (m && "value" in m && Date.now() - m.at < ttl * 1000) return m.value;
-  if (m && m.pending) return m.pending;
-  const pending = load().then((value) => { memo[key] = { at: Date.now(), value }; return value; })
-    .catch((e) => { if (memo[key] && memo[key].pending === pending) delete memo[key]; throw e; });
-  memo[key] = { ...(m || {}), pending };
+  return reload(key, load, ctx);
+}
+
+// Stale-while-revalidate: a value younger than `ttl` seconds is returned as is; an older one (up to `maxAge` seconds)
+// is returned at once while a fresh one loads in the background; with no usable value the caller waits for the load.
+export async function swr(key, ttl, load, { ctx, maxAge = 600 } = {}) {
+  const m = memo[key];
+  const age = m && "value" in m ? Date.now() - m.at : Infinity;
+  if (age < ttl * 1000) return m.value;
+  const p = reload(key, load, ctx);
+  if (age < maxAge * 1000) {
+    p.catch(() => {});
+    return m.value;
+  }
+  return p;
+}
+
+function reload(key, load, ctx) {
+  const m = memo[key];
+  if (m && m.pending && Date.now() - m.started < PENDING_MAX) return m.pending;
+  const pending = Promise.resolve().then(load).then((value) => {
+    const cur = memo[key];
+    // a newer load may have replaced this one (see PENDING_MAX): keep it running, take the value
+    memo[key] = cur && cur.pending && cur.pending !== pending ? { ...cur, at: Date.now(), value } : { at: Date.now(), value };
+    return value;
+  }, (e) => {
+    const cur = memo[key];
+    if (cur && cur.pending === pending) {
+      // the last good value stays: swr() keeps serving it while the source is down (err says why it is old)
+      if ("value" in cur) memo[key] = { at: cur.at, value: cur.value, err: String(e && e.message || e) };
+      else delete memo[key];
+    }
+    throw e;
+  });
+  memo[key] = { ...(m || {}), pending, started: Date.now() };
+  if (ctx && typeof ctx.waitUntil === "function") ctx.waitUntil(pending.catch(() => {}));
   return pending;
+}
+
+// Waits for `p` at most `ms` milliseconds; after that resolves with `fallback` (p keeps running).
+export function within(p, ms, fallback) {
+  let timer;
+  return Promise.race([
+    Promise.resolve(p).finally(() => clearTimeout(timer)),
+    new Promise((resolve) => { timer = setTimeout(() => resolve(fallback), ms); }),
+  ]);
 }
 
 export function clearMemo() {

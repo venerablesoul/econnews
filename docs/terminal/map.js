@@ -35,7 +35,8 @@ function getJSON(url, ms){
 function viaServer(url){
   var b = T.api();
   if (!b) return Promise.reject(new Error(TX('srv_not_set_e')));
-  return getJSON(b + '/api/geo?u=' + encodeURIComponent(url), 25000).then(function(d){ if (d && d.ok === false && d.error) throw new Error(d.error); return d });
+  // T.wjson: the server's lanes with short tries (throttled networks, see index.html)
+  return T.wjson('/api/geo?u=' + encodeURIComponent(url), {timeout: 20000, hedge: 6000}).then(function(d){ if (d && d.ok === false && d.error) throw new Error(d.error); return d });
 }
 function live(url, direct){
   if (direct) return getJSON(url).catch(function(e){ return T.api() ? viaServer(url) : Promise.reject(e) });

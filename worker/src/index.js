@@ -30,7 +30,7 @@
 import {
   LOGIN_MAX, TG_INIT_TTL,
   arrow, cached, cors, esc, hex, hmac, hookKey, isOwnerChat, json, newsWorkflowUrl, pagesUrl, safeEqual, send, sha256hex,
-  siteData, syncKey, tg,
+  memo, siteData, swr, syncKey, tg, within,
 } from "./lib.js";
 import { COMPANY_PARTS, getCompany, getCorr, getHistory, getIpos, getQuotes, mktName, parseSymbol, worldQuotes } from "./market.js";
 import { isNewCallback, newCallback, newCommand, watchReminders } from "./botcmd.js";
@@ -61,6 +61,12 @@ const FH_FX = {
 
 const FREE_TTL = 30;   // seconds: how often the free quotes refresh (shared by everyone)
 const OWNER_TTL = 15;  // seconds: the owner's paid quotes
+// /api/quotes answers quickly: a slow answer stalls the viewer's connection on throttled networks (see the terminal).
+// A part that is not ready in QUOTES_WAIT ms is left for the next answer (its load goes on in the background), and
+// meanwhile the last good value (up to QUOTES_MAX_AGE seconds old) is served.
+const QUOTES_WAIT = 1500;
+const QUOTES_MAX_AGE = 900;
+const UPSTREAM_TIMEOUT = 6000;   // ms: no upstream source may hold an answer longer
 
 export default {
   async fetch(req, env, ctx) {
@@ -75,13 +81,13 @@ export default {
     try {
       if (req.method === "OPTIONS") return cors(new Response(null, { status: 204 }));
       if (url.pathname === "/tg" && req.method === "POST") return await webhook(req, env, ctx);
-      if (url.pathname === "/api/quotes") return cors(await quotesApi(req, env, url.searchParams.get("only") || ""));
+      if (url.pathname === "/api/quotes") return cors(await quotesApi(req, env, url.searchParams.get("only") || "", ctx));
       if (url.pathname === "/api/quote") return cors(await quoteApi(env, url));
       if (url.pathname === "/api/company") return cors(await companyApi(env, url));
       if (url.pathname === "/api/ipo") return cors(await ipoApi(env));
       if (url.pathname === "/api/history") return cors(await historyApi(env, url));
       if (url.pathname === "/api/corr") return cors(await corrApi(env, url));
-      if (url.pathname === "/api/live") return cors(await liveApi(env));
+      if (url.pathname === "/api/live") return cors(await liveApi(env, url.searchParams.get("since")));
       if (url.pathname === "/api/geo") return cors(await geoProxy(url.searchParams.get("u")));
       if (url.pathname === "/api/perf") return cors(json(await getPerf(env, (url.searchParams.get("s") || "").split(",")), 200, { "Cache-Control": "public, max-age=300" }));
       if (url.pathname === "/api/me") {
@@ -224,9 +230,17 @@ async function syncLive(req, env) {
   return json({ ok: true, news: data.news.length });
 }
 
-async function liveApi(env) {
+// The whole feed is ~80 KB. ?since=<the viewer's data time> returns only the stories found after it (usually a few,
+// a couple of KB): on networks that cut connections after ~16 KB (Russia) the whole feed never arrives and stalls
+// every other request on the same connection.
+async function liveApi(env, since) {
   const raw = await cached("live-api", 20, () => env.SUBS.get("live"));
   const d = raw ? JSON.parse(raw) : { updated: null, news: [], market: [] };
+  const from = since ? Date.parse(since) : NaN;
+  if (!isNaN(from)) {
+    const news = (d.news || []).filter((n) => Date.parse(n.ts) > from).slice(0, 30);
+    return json({ ok: true, updated: d.updated, news, part: true }, 200, { "Cache-Control": "public, max-age=20" });
+  }
   return json({ ok: true, ...d }, 200, { "Cache-Control": "public, max-age=20" });
 }
 
@@ -608,13 +622,17 @@ async function historyApi(env, url) {
 // ---------------------------------------------------------------------------
 // Live quotes for the terminal's market screen
 // ---------------------------------------------------------------------------
+function deadline(ms = UPSTREAM_TIMEOUT) {
+  return typeof AbortSignal !== "undefined" && AbortSignal.timeout ? AbortSignal.timeout(ms) : undefined;
+}
+
 async function finnhub(env) {
   const out = {};
   let err = "";
   await Promise.all(STOCKS.map(async (s) => {
     try {
       const r = await fetch(`https://finnhub.io/api/v1/quote?symbol=${s}&token=${encodeURIComponent(env.FINNHUB_API_KEY)}`,
-        { cf: { cacheTtl: FREE_TTL - 5, cacheEverything: true } });
+        { cf: { cacheTtl: FREE_TTL - 5, cacheEverything: true }, signal: deadline() });
       if (!r.ok) throw new Error("Finnhub HTTP " + r.status);
       const x = await r.json();
       if (x && x.c) out[s] = { value: x.c, change: x.dp, base: x.pc };
@@ -629,7 +647,10 @@ async function finnhub(env) {
 let fxLast = {};
 
 async function finnhubFx(env) {
-  const resp = await fetch("https://ws.finnhub.io/?token=" + encodeURIComponent(env.FINNHUB_API_KEY), { headers: { Upgrade: "websocket" } });
+  // the connection itself may hang: a time limit, so the load is never stuck (the last prices stay meanwhile)
+  const resp = await within(fetch("https://ws.finnhub.io/?token=" + encodeURIComponent(env.FINNHUB_API_KEY), { headers: { Upgrade: "websocket" } }),
+    UPSTREAM_TIMEOUT, null);
+  if (!resp) throw new Error("Finnhub stream: no answer");
   const ws = resp.webSocket;
   if (!ws) throw new Error("Finnhub stream: HTTP " + resp.status);
   ws.accept();
@@ -664,7 +685,7 @@ async function finnhubFx(env) {
 async function eodhd(env) {
   const ids = Object.keys(EOD), codes = ids.map((i) => EOD[i]);
   const url = `https://eodhd.com/api/real-time/${codes[0]}?s=${codes.slice(1).join(",")}&api_token=${encodeURIComponent(env.EODHD_API_KEY)}&fmt=json`;
-  const r = await fetch(url);
+  const r = await fetch(url, { signal: deadline() });
   if (!r.ok) throw new Error("EODHD HTTP " + r.status);
   let arr = await r.json();
   if (!Array.isArray(arr)) arr = [arr];
@@ -679,25 +700,36 @@ async function eodhd(env) {
   return out;
 }
 
-async function quotesApi(req, env, only) {
+async function quotesApi(req, env, only, ctx) {
   const w = await whoIs(req, env);
   const owner = !!(w && w.owner);
   const paid = owner && !!env.EODHD_API_KEY;
   const res = { ok: true, tier: owner ? "owner" : "free", paid, refresh: paid ? OWNER_TTL : FREE_TTL,
     ts: new Date().toISOString(), stocks: {}, fx: {}, world: {}, errors: [] };
+  const opts = { ctx, maxAge: QUOTES_MAX_AGE };
+  const wait = [];   // parts still loading: the terminal asks again in a few seconds instead of the usual interval
+  const part = (name, load, put) => within(load.then(put, (e) => { res.errors.push(String(e && e.message || e)); })
+    .then(() => true), QUOTES_WAIT, false).then((done) => { if (!done) wait.push(name); });
   const jobs = [];
   if (env.FINNHUB_API_KEY) {
-    if (only !== "fx" && only !== "world") jobs.push(cached("fh", paid ? OWNER_TTL : FREE_TTL, () => finnhub(env))
-      .then((q) => { res.stocks = q; }).catch((e) => res.errors.push(String(e.message || e))));
-    if (only !== "stocks" && only !== "world") jobs.push(cached("fx", FREE_TTL, () => finnhubFx(env))
-      .then((q) => { res.fx = q; }).catch((e) => res.errors.push(String(e.message || e))));
+    if (only !== "fx" && only !== "world") {
+      jobs.push(part("stocks", swr("fh", paid ? OWNER_TTL : FREE_TTL, () => finnhub(env), opts), (q) => { res.stocks = q; }));
+    }
+    if (only !== "stocks" && only !== "world") jobs.push(part("fx", swr("fx", FREE_TTL, () => finnhubFx(env), opts), (q) => { res.fx = q; }));
   } else res.errors.push("no Finnhub key");
   if (only !== "stocks" && only !== "fx") {
     // world indices, commodities and yields: free Yahoo data for everyone; the paid feed on top for the owner if set
-    const free = worldQuotes(FREE_TTL).catch((e) => { res.errors.push(String(e.message || e)); return {}; });
-    const eod = paid ? cached("eod", OWNER_TTL, () => eodhd(env)).catch((e) => { res.errors.push(String(e.message || e)); return {}; }) : Promise.resolve({});
-    jobs.push(Promise.all([free, eod]).then(([a, b]) => { res.world = { ...a, ...b }; }));
+    jobs.push(part("world", worldQuotes(FREE_TTL, opts), (a) => { res.world = { ...a, ...res.world }; }));
+    if (paid) jobs.push(part("eod", swr("eod", OWNER_TTL, () => eodhd(env), opts), (b) => { res.world = { ...res.world, ...b }; }));
   }
   await Promise.all(jobs);
+  if (wait.length) res.wait = wait;
+  // an old value served because its source keeps failing: say so (the terminal shows the errors in its status)
+  for (const [name, key] of [["stocks", "fh"], ["fx", "fx"], ["world", "world"], ["eod", "eod"]]) {
+    const m = memo[key];
+    if (m && m.err && "value" in m && Date.now() - m.at > 60e3) {
+      res.errors.push(`${name}: ${Math.round((Date.now() - m.at) / 60e3)} min old — ${m.err}`);
+    }
+  }
   return json(res, 200, { "Cache-Control": "no-store" });
 }
