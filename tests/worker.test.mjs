@@ -184,6 +184,31 @@ await test("/api/quotes: answers within ~1.5 s when a source hangs; the rest com
   }
 });
 
+await test("/api/quotes: a compact answer; Yahoo's second host is used at once when the first hangs", async () => {
+  flags.hang = ["query1.finance.yahoo.com"];
+  try {
+    const t0 = Date.now();
+    const r = await api("/api/quotes");
+    assert.ok(Date.now() - t0 < 2500, "no waiting for the hanging host");
+    assert.equal(r.json.world["S&P"].value, 7730, "from query2 (v8)");
+    assert.equal(r.json.wait, undefined);
+    for (const group of ["stocks", "fx", "world"]) {
+      for (const [id, x] of Object.entries(r.json[group])) {
+        assert.deepEqual(Object.keys(x).filter((k) => !["value", "change", "base"].includes(k)), [], group + " " + id);
+        if (x.change != null) assert.ok(Math.abs(x.change * 1000 - Math.round(x.change * 1000)) < 1e-6, "change to 0.001%: " + x.change);
+        assert.ok(String(x.value).replace(/[^0-9]/g, "").replace(/^0+/, "").length <= 7, "7 significant digits: " + x.value);
+      }
+    }
+    assert.equal(r.json.stocks.AAPL.value, 342.96);
+    assert.equal(r.json.stocks.AAPL.base, 341.27);
+  } finally { flags.hang = []; }
+  const { trimQuotes } = await import("../worker/src/index.js");
+  const src = { A: { value: 1.114523456, change: -0.6869023208243785, t: 1, base: 1.12 }, B: { value: null }, C: { value: 24649.7834, change: null } };
+  assert.deepEqual(trimQuotes(src), { A: { value: 1.114523, change: -0.687 }, C: { value: 24649.78 } });
+  assert.deepEqual(trimQuotes(src, true).A, { value: 1.114523, change: -0.687, base: 1.12 });
+  assert.equal(src.A.t, 1, "the cached object is not changed");
+});
+
 await test("/api/quotes: an old value kept because its source fails is reported, not shown as fresh", async () => {
   flags.hang = ["finance.yahoo.com"];
   try {

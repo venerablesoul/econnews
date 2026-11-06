@@ -700,6 +700,20 @@ async function eodhd(env) {
   return out;
 }
 
+// {id: {value, change[, base]}} with 7 significant digits and the change to 0.001% (new objects: the cache stays intact)
+export function trimQuotes(map, withBase = false) {
+  const sig = (v) => Number(Number(v).toPrecision(7));
+  const out = {};
+  for (const [k, x] of Object.entries(map || {})) {
+    if (!x || x.value == null || isNaN(x.value)) continue;
+    const y = { value: sig(x.value) };
+    if (x.change != null && !isNaN(x.change)) y.change = Math.round(x.change * 1000) / 1000;
+    if (withBase && x.base != null && !isNaN(x.base)) y.base = sig(x.base);
+    out[k] = y;
+  }
+  return out;
+}
+
 async function quotesApi(req, env, only, ctx) {
   const w = await whoIs(req, env);
   const owner = !!(w && w.owner);
@@ -724,6 +738,10 @@ async function quotesApi(req, env, only, ctx) {
   }
   await Promise.all(jobs);
   if (wait.length) res.wait = wait;
+  // a small answer: on throttled networks a connection carries only ~16 KB, so every byte counts
+  res.stocks = trimQuotes(res.stocks, true);
+  res.fx = trimQuotes(res.fx);
+  res.world = trimQuotes(res.world);
   // an old value served because its source keeps failing: say so (the terminal shows the errors in its status)
   for (const [name, key] of [["stocks", "fh"], ["fx", "fx"], ["world", "world"], ["eod", "eod"]]) {
     const m = memo[key];
