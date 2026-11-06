@@ -955,9 +955,9 @@ function authHeaders(pass){
   return h;
 }
 function apiFetch(pass){
-  // the server answers within ~1.5 s (worker/src/index.js, QUOTES_WAIT); no answer by then means a stalled lane:
-  // a twin request on another one (the first answer is wanted fast — sooner)
-  return wjson('/api/quotes', {headers: authHeaders(pass), timeout: 6000, hedge: apiOkAt ? 2500 : 1200});
+  // the server answers within ~1.5 s (worker/src/index.js, QUOTES_WAIT) plus the way there; no answer by then means
+  // a stalled lane: a twin request on another one (for the first answer a little sooner)
+  return wjson('/api/quotes', {headers: authHeaders(pass), timeout: 6000, hedge: apiOkAt ? 2500 : 2000});
 }
 function applyQuotes(d){
   var n = 0, fresh = false;

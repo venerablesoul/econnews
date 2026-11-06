@@ -8,6 +8,16 @@
 var T = window.TERM;
 if (!T) return;
 var $ = T.$, el = T.el, fmt = T.fmt, pct = T.pct, cls = T.cls, store = T.store, I = T.I, TX = T.TX;
+// a page from before T.wjson (its index.html still in the browser's cache for a few minutes after an update):
+// plain requests to the main address, so this file still works with it
+if (!T.wjson) T.wjson = function(path, o){
+  o = o || {};
+  var init = {cache: 'no-store', headers: o.headers || {}}, ac = window.AbortController ? new AbortController() : null, t = null;
+  if (o.method) { init.method = o.method; init.body = o.body }
+  if (ac) { init.signal = ac.signal; t = setTimeout(function(){ ac.abort() }, o.timeout || 15000) }
+  return fetch(T.api() + path, init).then(function(r){ clearTimeout(t); if (!r.ok) throw new Error('HTTP ' + r.status); return r.json() },
+    function(e){ clearTimeout(t); throw e && e.name === 'AbortError' ? new Error(TX('srv_slow')) : e });
+};
 
 /* ======================= utilities ======================= */
 function clear(n){ while (n && n.firstChild) n.removeChild(n.firstChild); return n }
