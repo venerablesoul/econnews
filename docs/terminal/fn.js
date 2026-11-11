@@ -387,14 +387,14 @@ function desMain(box, d){
   head.appendChild(el('span', 'tk', d.s)); head.appendChild(el('span', 'nm', p.name || ''));
   if (q.px != null) { head.appendChild(el('span', 'px', (d.kind === 'moex' ? '' : '$') + price(q.px) + (d.kind === 'moex' ? ' ₽' : ''))); head.appendChild(el('span', cls(q.ch), pct(q.ch) + TX('today_ch'))) }
   var meta = el('div', 'meta', [p.ind, p.exch && String(p.exch).replace(/ - .*$/, ''), p.country, p.ipo ? 'IPO ' + dmy(p.ipo) : '', p.isin ? 'ISIN ' + p.isin : '', p.type].filter(Boolean).join(' · '));
-  if (p.web) { var a = el('a', null, ' ' + p.web.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '')); a.href = p.web; a.target = '_blank'; a.rel = 'noopener'; meta.appendChild(document.createTextNode(' · ')); meta.appendChild(a) }
+  if (/^https?:\/\//i.test(p.web || '')) { var a = el('a', null, ' ' + p.web.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '')); a.href = p.web; a.target = '_blank'; a.rel = 'noopener'; meta.appendChild(document.createTextNode(' · ')); meta.appendChild(a) }
   head.appendChild(meta); box.appendChild(head);
   var co = d.co || {}, cp = co.profile || {}, wk = (co.wiki || {})[I.ru ? 'ru' : 'en'];
   var about = (wk && wk.x) || cp.summary;
   if (about) {
     var ab = el('div', 'about', about.length > 700 ? about.slice(0, 700).replace(/\s+\S*$/, '') + '…' : about);
     var src = el('span', 'src', '— ');
-    if (wk && wk.url) { var wa = el('a', null, TX('wiki_src')); wa.href = wk.url; wa.target = '_blank'; wa.rel = 'noopener'; src.appendChild(wa) } else src.appendChild(document.createTextNode(TX('about_src')));
+    if (wk && /^https?:\/\//i.test(wk.url || '')) { var wa = el('a', null, TX('wiki_src')); wa.href = wk.url; wa.target = '_blank'; wa.rel = 'noopener'; src.appendChild(wa) } else src.appendChild(document.createTextNode(TX('about_src')));
     ab.appendChild(src); box.appendChild(ab);
   }
   if (d.kind === 'moex') {

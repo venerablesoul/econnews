@@ -407,6 +407,19 @@ class AutoReload(unittest.TestCase):
             self.assertEqual(os.environ["LOOP_DEADLINE"], "123456.5")
 
 
+class FeedLinks(unittest.TestCase):
+    def test_only_web_links_leave_the_feed(self):
+        import news_bot
+        rss = b"""<?xml version="1.0"?><rss><channel>
+<item><title>Good</title><link> https://example.com/a </link></item>
+<item><title>Script</title><link>javascript:alert(1)</link></item>
+<item><title>Data</title><guid>data:text/html,x</guid></item>
+<item><title>Atom</title><link href="HTTP://example.com/b"/></item>
+</channel></rss>"""
+        links = {i["title"]: i["link"] for i in news_bot.parse_feed(rss)}
+        self.assertEqual(links, {"Good": "https://example.com/a", "Script": "", "Data": "", "Atom": "HTTP://example.com/b"})
+
+
 class NewsBotIntegration(unittest.TestCase):
     def test_page_news_item_has_tickers(self):
         import news_bot
