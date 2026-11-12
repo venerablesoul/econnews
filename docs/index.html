@@ -67,13 +67,17 @@
   footer{color:var(--faint);font-size:12px;text-align:center;margin-top:22px}
   .lang{border:1px solid var(--line);background:var(--card);color:var(--muted);font:600 12px/1 inherit;padding:6px 9px;border-radius:999px;cursor:pointer;margin-left:8px}
   .lang:hover{color:var(--text)}
+  select.lang{appearance:none;-webkit-appearance:none;padding-right:22px;background:var(--card) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='5'%3E%3Cpath d='M0 0l4 5 4-5z' fill='%238b95a7'/%3E%3C/svg%3E") no-repeat right 9px center}
+  /* Arabic sentences run right to left; Arabic letters join, so no letter spacing */
+  html:lang(ar) :is(.news li, .lead, .orig, .empty, footer, .note){unicode-bidi:plaintext}
+  html:lang(ar) *{letter-spacing:0!important}
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
     <h1 id="h1">Markets</h1>
-    <div class="upd"><span class="dot"></span><span id="upd">loading…</span><button class="lang" id="lang">RU</button></div>
+    <div class="upd"><span class="dot"></span><span id="upd">loading…</span><select class="lang" id="lang" aria-label="Language"><option value="en">EN</option><option value="ru">RU</option><option value="zh">中文</option><option value="ar">العربية</option></select></div>
   </header>
 
   <div class="tape" id="tape"></div>
@@ -112,27 +116,38 @@
 
 <script>
 (function(){
-  var I = window.L10N, RU = I.ru;
-  // texts of this page: [English, Russian]
+  var I = window.L10N, RU = I.ru, LI = {en: 0, ru: 1, zh: 2, ar: 3}[I.lang] || 0;
+  // texts of this page: [English, Russian, Chinese, Arabic]
   var P = {
-    h1: ['Markets', 'Рынок онлайн'], loading: ['loading…', 'загрузка…'], charts: ['Charts', 'Графики'], news: ['News', 'Новости'], cal: ['Calendar', 'Календарь'],
-    all_markets: ['All markets', 'Все рынки'],
+    h1: ['Markets', 'Рынок онлайн', '市场', 'الأسواق'], loading: ['loading…', 'загрузка…', '加载中…', 'جارٍ التحميل…'],
+    charts: ['Charts', 'Графики', '图表', 'الرسوم البيانية'], news: ['News', 'Новости', '新闻', 'الأخبار'], cal: ['Calendar', 'Календарь', '日历', 'الأجندة'],
+    all_markets: ['All markets', 'Все рынки', '全部市场', 'كل الأسواق'],
     bonds_note: ['Bonds are shown by price: when the price rises, the yield falls. US yields themselves are in the tiles at the top.',
-      'Облигации показаны ценой: когда цена растёт, доходность падает. Сами доходности США — в плитках вверху.'],
-    crypto_map: ['Crypto · heat map', 'Криптовалюты · тепловая карта'], all: ['All', 'Все'], top: ['🔴 Top only', '🔴 Только главное'],
-    news_loading: ['Loading news…', 'Загрузка новостей…'], calendar: ['Economic calendar', 'Экономический календарь'],
-    footer: ['Live charts — TradingView · tiles and news — the bot, updated every ~5 minutes', 'Живые графики — TradingView · плитки и новости — бот, обновление каждые ~5 минут'],
-    t_idx: ['Indices', 'Индексы'], t_cmd: ['Commodities', 'Сырьё'], t_fx: ['Currencies', 'Валюты'], t_bonds: ['Bonds', 'Облигации'], t_crypto: ['Crypto', 'Крипто'],
-    just_now: ['just now', 'только что'], today: ['Today', 'Сегодня'], yesterday: ['Yesterday', 'Вчера'],
-    no_news: ['No news to show yet', 'Пока нет новостей для показа'], not_ready: ["the bot's data is not ready yet", 'данные бота пока не готовы'],
-    first_run: ["News appears after the bot's first run", 'Новости появятся после первого запуска бота'], chart_for: [' · chart for ', ' · график за ']
+      'Облигации показаны ценой: когда цена растёт, доходность падает. Сами доходности США — в плитках вверху.',
+      '债券按价格显示：价格上涨时，收益率下降。美国国债收益率本身见顶部的卡片。',
+      'تُعرض السندات بالسعر: حين يرتفع السعر ينخفض العائد. أما عوائد السندات الأمريكية نفسها ففي البطاقات أعلى الصفحة.'],
+    crypto_map: ['Crypto · heat map', 'Криптовалюты · тепловая карта', '加密货币 · 热力图', 'العملات المشفرة · خريطة حرارية'],
+    all: ['All', 'Все', '全部', 'الكل'], top: ['🔴 Top only', '🔴 Только главное', '🔴 仅要闻', '🔴 الأهم فقط'],
+    news_loading: ['Loading news…', 'Загрузка новостей…', '正在加载新闻…', 'جارٍ تحميل الأخبار…'],
+    calendar: ['Economic calendar', 'Экономический календарь', '经济日历', 'الأجندة الاقتصادية'],
+    footer: ['Live charts — TradingView · tiles and news — the bot, updated every ~5 minutes', 'Живые графики — TradingView · плитки и новости — бот, обновление каждые ~5 минут',
+      '实时图表：TradingView · 卡片和新闻：机器人，约每 5 分钟更新', 'الرسوم المباشرة: TradingView · البطاقات والأخبار: البوت، تحديث كل 5 دقائق تقريبًا'],
+    t_idx: ['Indices', 'Индексы', '指数', 'المؤشرات'], t_cmd: ['Commodities', 'Сырьё', '大宗商品', 'السلع'], t_fx: ['Currencies', 'Валюты', '外汇', 'العملات'],
+    t_bonds: ['Bonds', 'Облигации', '债券', 'السندات'], t_crypto: ['Crypto', 'Крипто', '加密货币', 'العملات المشفرة'],
+    just_now: ['just now', 'только что', '刚刚', 'الآن'], today: ['Today', 'Сегодня', '今天', 'اليوم'], yesterday: ['Yesterday', 'Вчера', '昨天', 'أمس'],
+    no_news: ['No news to show yet', 'Пока нет новостей для показа', '暂无可显示的新闻', 'لا أخبار للعرض بعد'],
+    not_ready: ["the bot's data is not ready yet", 'данные бота пока не готовы', '机器人数据尚未就绪', 'بيانات البوت ليست جاهزة بعد'],
+    first_run: ["News appears after the bot's first run", 'Новости появятся после первого запуска бота', '新闻将在机器人首次运行后显示', 'تظهر الأخبار بعد أول تشغيل للبوت'],
+    chart_for: [' · chart for ', ' · график за ', ' · 图表期间：', ' · الرسم البياني خلال '],
+    days: [' days', ' дн.', ' 天', ' يوم'], bot: ['bot: ', 'бот: ', '机器人：', 'البوت: '],
+    min_ago: [' min ago', ' мин назад', ' 分钟前', ' دقيقة مضت'], h_ago: [' h ago', ' ч назад', ' 小时前', ' ساعة مضت'], d_ago: [' d ago', ' дн назад', ' 天前', ' يوم مضى']
   };
-  function T(k){ return P[k][RU ? 1 : 0] }
+  function T(k){ return P[k][LI] || P[k][0] }
   document.querySelectorAll('[data-k]').forEach(function(e){ e.textContent = T(e.dataset.k) });
   document.getElementById('h1').textContent = T('h1'); document.title = T('h1'); document.documentElement.lang = I.lang;
   document.getElementById('upd').textContent = T('loading');
-  var lb = document.getElementById('lang'); lb.textContent = RU ? 'EN' : 'RU'; lb.title = RU ? 'Switch to English' : 'Русский язык';
-  lb.onclick = function(){ I.setLang(RU ? 'en' : 'ru') };
+  var lb = document.getElementById('lang'); lb.value = I.lang;
+  lb.onchange = function(){ I.setLang(lb.value) };
 
   // ---------- Telegram Mini App ----------
   var tg = window.Telegram && window.Telegram.WebApp;
@@ -152,14 +167,15 @@
     s.innerHTML = JSON.stringify(Object.assign({colorTheme:'dark', isTransparent:true, locale:I.tv}, cfg));
     host.firstChild.appendChild(s);
   }
-  function n(en, ru){ return RU ? ru : en }
+  // a name in the reader's language: n(English, Russian, Chinese, Arabic)
+  function n(en, ru, zh, ar){ return [en, ru, zh, ar][LI] || en }
   var SYM = [
-    ['S&P 500','FOREXCOM:SPXUSD'], ['Nasdaq 100','FOREXCOM:NSXUSD'], [n('Brent crude', 'Нефть Brent'),'TVC:UKOIL'],
-    [n('Gold', 'Золото'),'TVC:GOLD'], ['EUR/USD','FX:EURUSD'], ['USD/RUB','FX_IDC:USDRUB'],
-    [n('US Dollar Index', 'Индекс доллара'),'TVC:DXY'], [n('Bitcoin', 'Биткоин'),'BITSTAMP:BTCUSD']
+    ['S&P 500','FOREXCOM:SPXUSD'], ['Nasdaq 100','FOREXCOM:NSXUSD'], [n('Brent crude', 'Нефть Brent', '布伦特原油', 'خام برنت'),'TVC:UKOIL'],
+    [n('Gold', 'Золото', '黄金', 'الذهب'),'TVC:GOLD'], ['EUR/USD','FX:EURUSD'], ['USD/RUB','FX_IDC:USDRUB'],
+    [n('US Dollar Index', 'Индекс доллара', '美元指数', 'مؤشر الدولار'),'TVC:DXY'], [n('Bitcoin', 'Биткоин', '比特币', 'بيتكوين'),'BITSTAMP:BTCUSD']
   ];
   var CRYPTO = [
-    ['BTC',n('Bitcoin', 'Биткоин')], ['ETH','Ethereum'], ['SOL','Solana'], ['BNB','BNB'], ['XRP','XRP'], ['TON','Toncoin'],
+    ['BTC',n('Bitcoin', 'Биткоин', '比特币', 'بيتكوين')], ['ETH','Ethereum'], ['SOL','Solana'], ['BNB','BNB'], ['XRP','XRP'], ['TON','Toncoin'],
     ['DOGE','Dogecoin'], ['ADA','Cardano'], ['TRX','TRON'], ['AVAX','Avalanche'], ['LINK','Chainlink'],
     ['DOT','Polkadot'], ['LTC','Litecoin'], ['SUI','Sui']
   ];
@@ -179,13 +195,13 @@
       belowLineFillColorFalling:'rgba(239,83,80,0.12)', gridLineColor:'rgba(35,43,55,0)', scaleFontColor:'#8b95a7',
       tabs:[
         {title:T('t_idx'), symbols:[{s:'FOREXCOM:SPXUSD',d:'S&P 500'},{s:'FOREXCOM:NSXUSD',d:'Nasdaq 100'},{s:'FOREXCOM:DJI',d:'Dow Jones'},{s:'INDEX:DEU40',d:'DAX'},{s:'INDEX:NKY',d:'Nikkei 225'},{s:'TVC:HSI',d:'Hang Seng'}]},
-        {title:T('t_cmd'), symbols:[{s:'TVC:UKOIL',d:n('Brent crude','Нефть Brent')},{s:'TVC:USOIL',d:n('WTI crude','Нефть WTI')},{s:'TVC:GOLD',d:n('Gold','Золото')},
-          {s:'TVC:SILVER',d:n('Silver','Серебро')},{s:'OANDA:NATGASUSD',d:n('Natural gas','Природный газ')},{s:'OANDA:XCUUSD',d:n('Copper','Медь')},
-          {s:'OANDA:XPTUSD',d:n('Platinum','Платина')},{s:'OANDA:WHEATUSD',d:n('Wheat','Пшеница')}]},
-        {title:T('t_fx'), symbols:[{s:'FX:EURUSD',d:'EUR/USD'},{s:'FX:USDJPY',d:'USD/JPY'},{s:'FX:GBPUSD',d:'GBP/USD'},{s:'FX_IDC:USDCNY',d:'USD/CNY'},{s:'FX_IDC:USDRUB',d:'USD/RUB'},{s:'TVC:DXY',d:n('US Dollar Index','Индекс доллара')}]},
-        {title:T('t_bonds'), symbols:[{s:'OANDA:USB02YUSD',d:n('US 2Y (price)','США 2 года (цена)')},{s:'OANDA:USB10YUSD',d:n('US 10Y (price)','США 10 лет (цена)')},
-          {s:'OANDA:USB30YUSD',d:n('US 30Y (price)','США 30 лет (цена)')},{s:'OANDA:DE10YBEUR',d:n('Germany 10Y (price)','Германия 10 лет (цена)')},
-          {s:'OANDA:UK10YBGBP',d:n('UK 10Y (price)','Великобритания 10 лет (цена)')},{s:'NASDAQ:TLT',d:n('Long US Treasury ETF','ETF длинных облигаций США')}]},
+        {title:T('t_cmd'), symbols:[{s:'TVC:UKOIL',d:n('Brent crude','Нефть Brent','布伦特原油','خام برنت')},{s:'TVC:USOIL',d:n('WTI crude','Нефть WTI','WTI原油','خام غرب تكساس')},{s:'TVC:GOLD',d:n('Gold','Золото','黄金','الذهب')},
+          {s:'TVC:SILVER',d:n('Silver','Серебро','白银','الفضة')},{s:'OANDA:NATGASUSD',d:n('Natural gas','Природный газ','天然气','الغاز الطبيعي')},{s:'OANDA:XCUUSD',d:n('Copper','Медь','铜','النحاس')},
+          {s:'OANDA:XPTUSD',d:n('Platinum','Платина','铂金','البلاتين')},{s:'OANDA:WHEATUSD',d:n('Wheat','Пшеница','小麦','القمح')}]},
+        {title:T('t_fx'), symbols:[{s:'FX:EURUSD',d:'EUR/USD'},{s:'FX:USDJPY',d:'USD/JPY'},{s:'FX:GBPUSD',d:'GBP/USD'},{s:'FX_IDC:USDCNY',d:'USD/CNY'},{s:'FX_IDC:USDRUB',d:'USD/RUB'},{s:'TVC:DXY',d:n('US Dollar Index','Индекс доллара','美元指数','مؤشر الدولار')}]},
+        {title:T('t_bonds'), symbols:[{s:'OANDA:USB02YUSD',d:n('US 2Y (price)','США 2 года (цена)','美国2年期（价格）','أمريكا سنتان (السعر)')},{s:'OANDA:USB10YUSD',d:n('US 10Y (price)','США 10 лет (цена)','美国10年期（价格）','أمريكا 10 سنوات (السعر)')},
+          {s:'OANDA:USB30YUSD',d:n('US 30Y (price)','США 30 лет (цена)','美国30年期（价格）','أمريكا 30 سنة (السعر)')},{s:'OANDA:DE10YBEUR',d:n('Germany 10Y (price)','Германия 10 лет (цена)','德国10年期（价格）','ألمانيا 10 سنوات (السعر)')},
+          {s:'OANDA:UK10YBGBP',d:n('UK 10Y (price)','Великобритания 10 лет (цена)','英国10年期（价格）','بريطانيا 10 سنوات (السعر)')},{s:'NASDAQ:TLT',d:n('Long US Treasury ETF','ETF длинных облигаций США','美国长期国债ETF','صندوق سندات الخزانة الأمريكية الطويلة')}]},
         {title:T('t_crypto'), symbols:CRYPTO.map(function(c){return {s:'BINANCE:'+c[0]+'USDT', d:c[1]}})}
       ]
     });
@@ -218,10 +234,10 @@
   function ago(iso){
     var m = Math.round((Date.now() - new Date(iso).getTime()) / 60000);
     if (m < 1) return T('just_now');
-    if (m < 60) return m + (RU ? ' мин назад' : ' min ago');
+    if (m < 60) return m + T('min_ago');
     var h = Math.round(m / 60);
-    if (h < 24) return h + (RU ? ' ч назад' : ' h ago');
-    return Math.round(h / 24) + (RU ? ' дн назад' : ' d ago');
+    if (h < 24) return h + T('h_ago');
+    return Math.round(h / 24) + T('d_ago');
   }
   function hhmm(iso){ return new Date(iso).toLocaleTimeString(I.date,{hour:'2-digit',minute:'2-digit',timeZone:'Europe/Moscow'}) + ' ' + I.tz }
   function dayLabel(iso){
@@ -263,7 +279,7 @@
       var cls = q.change == null || Math.abs(q.change) < 0.005 ? 'flat' : (q.change > 0 ? 'up' : 'down');
       var name = I.mktName(q.id, RU ? q.name : q.name_en || q.name);
       var t = el('div', 'tile');
-      t.title = name + T('chart_for') + (q.days ? q.days + (RU ? ' дн.' : ' days') : q.period);
+      t.title = name + T('chart_for') + (q.days ? q.days + T('days') : q.period);
       t.appendChild(el('div', 'n', name));
       var row = el('div', 'row');
       row.appendChild(el('div', 'p', priceText(q)));
@@ -308,7 +324,7 @@
     var a = e.target.closest('a');
     if (a && a.href && tg && tg.openLink){ e.preventDefault(); tg.openLink(a.href) }
   });
-  var bot = RU ? 'бот: ' : 'bot: ';
+  var bot = T('bot');
   function load(){
     fetch('data.json?t=' + Date.now(), {cache:'no-store'}).then(function(r){ return r.json() }).then(function(d){
       data = d; renderTiles(); renderNews();

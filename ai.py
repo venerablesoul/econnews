@@ -2,7 +2,7 @@
 Optional (paid, off by default): short AI notes on important news (Claude).
 
 Enabled only when the ANTHROPIC_API_KEY secret is set. For each important story the model writes one
-sentence in English and one in Russian — what happened and why it matters for markets — and names
+sentence — what happened and why it matters for markets — in English, Russian, Chinese and Arabic, and names
 assets the story may move, with a direction (up/down). Without the key nothing happens.
 """
 from __future__ import annotations
@@ -20,6 +20,8 @@ For each story return an object:
   "i": story number,
   "sum": one short English sentence (up to 160 characters): what happened and why it matters for markets,
   "sum_ru": the same sentence in Russian,
+  "sum_zh": the same sentence in simplified Chinese,
+  "sum_ar": the same sentence in Arabic,
   "assets": up to 3 assets the story may noticeably move: [{"a": "asset name", "d": "up" or "down"}].
      Names: US stock tickers (AAPL), indices (S&P 500, Nasdaq, MOEX), "Brent", "gold", "USD", "EUR", "RUB",
      "UST 10Y", "bitcoin". If the effect is unclear, an empty list.
@@ -34,7 +36,7 @@ def enabled():
 
 
 def _call(prompt, key, model, timeout=40):
-    body = json.dumps({"model": model, "max_tokens": 1500, "temperature": 0,
+    body = json.dumps({"model": model, "max_tokens": 3000, "temperature": 0,
                        "messages": [{"role": "user", "content": prompt}]}).encode()
     req = urllib.request.Request(API_URL, data=body, headers={
         "x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json"})
@@ -63,12 +65,13 @@ def parse_answer(text, n):
             continue
         s = str(x.get("sum") or "").strip()[:220]
         s_ru = str(x.get("sum_ru") or "").strip()[:220]
+        more = {k: str(x.get(k) or "").strip()[:220] for k in ("sum_zh", "sum_ar")}
         assets = []
         for a in x.get("assets") or []:
             if isinstance(a, dict) and a.get("a") and a.get("d") in ("up", "down"):
                 assets.append({"a": str(a["a"])[:24], "d": a["d"]})
         if s or s_ru:
-            out[i] = {"sum": s or s_ru, "sum_ru": s_ru or s, "assets": assets[:3]}
+            out[i] = {"sum": s or s_ru, "sum_ru": s_ru or s, **{k: v for k, v in more.items() if v}, "assets": assets[:3]}
     return out
 
 

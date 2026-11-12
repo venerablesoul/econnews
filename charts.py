@@ -19,6 +19,32 @@ DOWN = "#ef5350"
 FLAT = "#9aa4b5"
 
 
+# Chinese names of the instruments on the picture (by their "short" key)
+NAMES_ZH = {"S&P": "标普500指数", "Nasdaq": "纳斯达克指数", "Brent": "布伦特原油", "Золото": "黄金", "EUR/USD": "欧元/美元",
+            "UST10": "美国10年期国债收益率", "BTC": "比特币", "IMOEX": "莫斯科交易所指数",
+            "USD/RUB": "美元/卢布（俄央行）", "CNY/RUB": "人民币/卢布（俄央行）"}
+CJK_FONTS = ("Noto Sans CJK SC", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", "PingFang SC",
+             "WenQuanYi Zen Hei", "WenQuanYi Micro Hei", "SimHei", "Noto Sans CJK JP")
+
+
+def cjk_font():
+    """A font with Chinese characters installed on this machine, or None."""
+    try:
+        from matplotlib import font_manager
+        have = {f.name for f in font_manager.fontManager.ttflist}
+    except Exception:
+        return None
+    return next((f for f in CJK_FONTS if f in have), None)
+
+
+def picture_lang(lang):
+    """The language the picture is drawn in. matplotlib cannot join Arabic letters, and Chinese needs a CJK font:
+    without one the picture stays English (the caption under it is still in the reader's language)."""
+    if lang == "ar" or (lang == "zh" and not cjk_font()):
+        return "en"
+    return lang if lang in ("en", "ru", "zh") else "en"
+
+
 def render_market_png(quotes, now=None, lang="en") -> bytes:
     import matplotlib
     matplotlib.use("Agg")
@@ -28,6 +54,8 @@ def render_market_png(quotes, now=None, lang="en") -> bytes:
     import i18n
     from market import fmt_change, fmt_price
 
+    lang = picture_lang(lang)
+
     now = (now or datetime.now(timezone.utc)).astimezone(MSK)
     quotes = [q for q in quotes if q.get("chart", True)]
     n = len(quotes)
@@ -36,14 +64,18 @@ def render_market_png(quotes, now=None, lang="en") -> bytes:
     W, card_h, head_h, pad = 10.8, 2.35, 1.25, 0.28
     H = head_h + rows * card_h + 0.35
 
-    plt.rcParams["font.family"] = ["DejaVu Sans"]
+    plt.rcParams["font.family"] = [cjk_font(), "DejaVu Sans"] if lang == "zh" else ["DejaVu Sans"]
     fig = plt.figure(figsize=(W, H), dpi=110, facecolor=BG)
 
     # заголовок
     fig.text(pad / W, 1 - 0.50 / H, i18n.t(lang, "chart_title"), color=TEXT, fontsize=26, fontweight="bold", va="center")
-    date = (f"{now.day} {i18n.month(lang, now.month)} {now.year}" if lang == "ru"
-            else f"{i18n.month(lang, now.month)} {now.day}, {now.year}")
-    fig.text(pad / W, 1 - 0.95 / H, f"{date}, {now:%H:%M} {i18n.t(lang, 'tz')}", color=MUTED, fontsize=13, va="center")
+    if lang == "zh":
+        stamp = f"{now.year}年{i18n.month(lang, now.month)}{now.day}日 {now:%H:%M}（{i18n.t(lang, 'tz')}）"
+    else:
+        date = (f"{now.day} {i18n.month(lang, now.month)} {now.year}" if lang == "ru"
+                else f"{i18n.month(lang, now.month)} {now.day}, {now.year}")
+        stamp = f"{date}, {now:%H:%M} {i18n.t(lang, 'tz')}"
+    fig.text(pad / W, 1 - 0.95 / H, stamp, color=MUTED, fontsize=13, va="center")
     cw = (W - pad * (cols + 1)) / cols
     ax_bg = fig.add_axes([0, 0, 1, 1], facecolor="none")
     ax_bg.set_axis_off()
@@ -59,7 +91,11 @@ def render_market_png(quotes, now=None, lang="en") -> bytes:
         chg = q.get("change")
         color = FLAT if chg is None or abs(chg) < 0.005 else (UP if chg > 0 else DOWN)
 
-        ax_bg.text(x0 + 0.22, y0 + ch - 0.30, (q["name"] if lang == "ru" else q.get("en") or q["name"]), color=MUTED, fontsize=11.5, va="center")
+        if lang == "ru":
+            name = q["name"]
+        else:
+            name = (NAMES_ZH.get(q.get("short")) if lang == "zh" else None) or q.get("en") or q["name"]
+        ax_bg.text(x0 + 0.22, y0 + ch - 0.30, name, color=MUTED, fontsize=11.5, va="center")
         ax_bg.text(x0 + 0.22, y0 + ch - 0.78, fmt_price(q, lang), color=TEXT, fontsize=21, fontweight="bold", va="center")
         if chg is not None:
             ax_bg.text(x0 + cw - 0.22, y0 + ch - 0.78, fmt_change(q, lang), color=color, fontsize=15,

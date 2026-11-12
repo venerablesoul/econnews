@@ -72,8 +72,12 @@ export function newsWorkflowUrl(env) {
   return repo ? `https://github.com/${repo}/actions/workflows/news.yml` : "";
 }
 
+// date/time locales: Russian, British English, simplified Chinese, Arabic with Latin digits (as numbers elsewhere);
+// all on the 24-hour clock
+export const LOCALE = { ru: "ru-RU", en: "en-GB", zh: "zh-CN-u-hc-h23", ar: "ar-u-nu-latn-hc-h23" };
+
 export function msk(iso, opts, lang = "ru") {
-  return new Date(iso).toLocaleString(lang === "ru" ? "ru-RU" : "en-GB", { timeZone: "Europe/Moscow", ...opts });
+  return new Date(iso).toLocaleString(LOCALE[lang] || LOCALE.en, { timeZone: "Europe/Moscow", ...opts });
 }
 
 export function isOwnerChat(env, id) {
@@ -182,6 +186,12 @@ export function fmt(v, d = 2, lang = "en") {
   return (neg ? "−" : "") + grouped + (b ? (ru ? "," : ".") + b : "");
 }
 
+// padding for monospaced tables (<code>): Chinese characters take two columns
+const WIDE = /[\u1100-\u115f\u2e80-\u303e\u3041-\u33ff\u3400-\u4dbf\u4e00-\u9fff\ua000-\ua4cf\uac00-\ud7a3\uf900-\ufaff\ufe30-\ufe4f\uff00-\uff60\uffe0-\uffe6]/g;
+export const textWidth = (s) => String(s).length + (String(s).match(WIDE) || []).length;
+export const padEndW = (s, w) => String(s) + " ".repeat(Math.max(0, w - textWidth(s)));
+export const padStartW = (s, w) => " ".repeat(Math.max(0, w - textWidth(s))) + String(s);
+
 export function digitsFor(p) {
   const a = Math.abs(p || 0);
   return a >= 1000 ? 0 : a >= 10 ? 2 : a >= 1 ? 3 : a >= 0.01 ? 4 : 6;
@@ -201,28 +211,41 @@ export function arrow(c) {
   return c == null ? "⚪" : c > 0.005 ? "🟢" : c < -0.005 ? "🔴" : "⚪";
 }
 
-// money in dollars (or another currency sign): $5.01T / $5,01 трлн
+// money in dollars (or another currency sign): $5.01T / $5,01 трлн / $5.01万亿 / $5.01 تريليون
+const UNITS = {
+  en: [[1e12, "T"], [1e9, "B"], [1e6, "M"]],
+  ru: [[1e12, " трлн"], [1e9, " млрд"], [1e6, " млн"]],
+  zh: [[1e12, "万亿"], [1e8, "亿"], [1e4, "万"]],
+  ar: [[1e12, " تريليون"], [1e9, " مليار"], [1e6, " مليون"]],
+};
 export function money(v, cur = "$", lang = "en") {
   if (v == null || isNaN(v)) return "—";
   const a = Math.abs(v), sign = v < 0 ? "−" : "";
-  const ru = lang === "ru";
-  if (a >= 1e12) return sign + cur + fmt(a / 1e12, 2, lang) + (ru ? " трлн" : "T");
-  if (a >= 1e9) return sign + cur + fmt(a / 1e9, a >= 1e11 ? 0 : 1, lang) + (ru ? " млрд" : "B");
-  if (a >= 1e6) return sign + cur + fmt(a / 1e6, a >= 1e8 ? 0 : 1, lang) + (ru ? " млн" : "M");
+  for (const [size, word] of UNITS[lang] || UNITS.en) {
+    if (a < size) continue;
+    const x = a / size;
+    return sign + cur + fmt(x, size === 1e12 ? 2 : x >= 100 ? 0 : 1, lang) + word;
+  }
   return sign + cur + fmt(a, a >= 1e4 ? 0 : 2, lang);
 }
 
-// dates "YYYY-MM-DD…": English "30 Jun 2025" / "30 Jun", Russian "30.06.2025" / "30.06"
+// dates "YYYY-MM-DD…": English "30 Jun 2025" / "30 Jun", Russian "30.06.2025" / "30.06",
+// Chinese "2025年6月30日" / "6月30日", Arabic "30 يونيو 2025" / "30 يونيو"
 const MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+const MON_AR = ["يناير", "فبراير", "مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"];
 
 export function dmy(d, lang = "ru") {
   if (!d || d.length < 10) return "—";
-  return lang === "ru" ? d.slice(8, 10) + "." + d.slice(5, 7) + "." + d.slice(0, 4) : +d.slice(8, 10) + " " + MON[+d.slice(5, 7) - 1] + " " + d.slice(0, 4);
+  if (lang === "zh") return d.slice(0, 4) + "年" + dm(d, lang);
+  return lang === "ru" ? d.slice(8, 10) + "." + d.slice(5, 7) + "." + d.slice(0, 4) : dm(d, lang) + " " + d.slice(0, 4);
 }
 
 export function dm(d, lang = "ru") {
   if (!d || d.length < 10) return "?";
-  return lang === "ru" ? d.slice(8, 10) + "." + d.slice(5, 7) : +d.slice(8, 10) + " " + MON[+d.slice(5, 7) - 1];
+  const day = +d.slice(8, 10), m = +d.slice(5, 7);
+  if (lang === "ru") return d.slice(8, 10) + "." + d.slice(5, 7);
+  if (lang === "zh") return m + "月" + day + "日";
+  return day + " " + (lang === "ar" ? MON_AR : MON)[m - 1];
 }
 
 // ---------------------------------------------------------------------------

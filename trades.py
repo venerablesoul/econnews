@@ -599,13 +599,22 @@ import i18n  # noqa: E402
 _EN_RU = [("House", "Палата"), ("Senate", "Сенат"), (" (option)", " (опцион)"), (" et al.", " и др."),
           ("General Counsel", "главный юрист"), ("President", "президент"), ("Chair", "председатель совета директоров"),
           ("Officer", "топ-менеджер"), ("Director", "член совета директоров"), ("10% owner", "акционер 10%+")]
+# the same labels in Chinese and Arabic (same order as _EN_RU)
+_XL = {"zh": ["众议院", "参议院", "（期权）", "等", "总法律顾问", "总裁", "董事长", "高管", "董事", "持股10%以上股东"],
+       "ar": ["مجلس النواب", "مجلس الشيوخ", " (خيار)", " وآخرون", "المستشار القانوني العام", "الرئيس",
+              "رئيس مجلس الإدارة", "مسؤول تنفيذي", "عضو مجلس الإدارة", "مالك 10%+"]}
 
 
 def loc(text, lang):
     """Shows a stored English label (House, Senate, roles…) in the reader's language."""
     text = text or ""
-    for en, ru in _EN_RU:
-        text = text.replace(en, ru) if lang == "ru" else text.replace(ru, en)
+    lang = i18n.norm_lang(lang)
+    for k, (en, ru) in enumerate(_EN_RU):
+        text = text.replace(ru, en)          # older records may be Russian
+        if lang == "ru":
+            text = text.replace(en, ru)
+        elif lang in _XL:
+            text = text.replace(en, _XL[lang][k])
     return text
 
 
@@ -615,13 +624,11 @@ def _num(x, lang):
 
 
 def fmt_usd(v, lang="en"):
-    ru = lang == "ru"
-    if v >= 1e9:
-        return f"${_num(v / 1e9, lang)}" + (" млрд" if ru else "B")
-    if v >= 1e6:
-        return f"${_num(v / 1e6, lang)}" + (" млн" if ru else "M")
-    if v >= 1e3:
-        return f"${round(v / 1e3)}" + (" тыс." if ru else "K")
+    """$1.2B / $1,2 млрд / $12亿 / $1.2 مليار; below the smallest unit — whole dollars."""
+    for size, word in i18n.units(lang):
+        if v >= size:
+            x = v / size
+            return f"${round(x)}{word}" if size in (1e3, 1e4) or x >= 100 else f"${_num(x, lang)}{word}"
     return f"${round(v)}"
 
 
@@ -632,8 +639,8 @@ def fmt_range(amin, amax, lang="en"):
         return i18n.t(lang, "trd_over", v=fmt_usd(amin - 1, lang))
     if amax == amin:
         return fmt_usd(amin, lang)
-    ru = lang == "ru"
-    unit, word = (1e6, " млн" if ru else "M") if amax >= 1e6 else (1e3, " тыс." if ru else "K")
+    # both ends in the unit that suits the upper one: $1–5M, $15–50K, $1.5–5万, $100–500万
+    unit, word = next(((s, w) for s, w in i18n.units(lang) if amax >= s and s <= 1e6), (1, ""))
     return f"${_num(round(amin / unit, 1), lang)}–{_num(round(amax / unit, 1), lang)}{word}"
 
 

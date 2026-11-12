@@ -286,6 +286,28 @@ def au_curve(today):
     return curve_from_rows(rows[-60:], ["2Y", "3Y", "5Y", "10Y"])
 
 
+# Chinese and Arabic names of the curves and central banks (by the English name): name_zh / name_ar in rates.json
+NAMES_XL = {
+    "United States": ("美国", "الولايات المتحدة"), "Germany": ("德国", "ألمانيا"), "Euro area (AAA)": ("欧元区（AAA）", "منطقة اليورو (AAA)"),
+    "United Kingdom": ("英国", "المملكة المتحدة"), "Japan": ("日本", "اليابان"), "Russia (OFZ)": ("俄罗斯（OFZ）", "روسيا (OFZ)"),
+    "Canada": ("加拿大", "كندا"), "Australia": ("澳大利亚", "أستراليا"),
+    "Federal Reserve": ("美联储", "الاحتياطي الفيدرالي"), "ECB": ("欧洲央行", "البنك المركزي الأوروبي"),
+    "Bank of England": ("英国央行", "بنك إنجلترا"), "Bank of Japan": ("日本央行", "بنك اليابان"),
+    "People's Bank of China": ("中国人民银行", "بنك الشعب الصيني"), "Swiss National Bank": ("瑞士央行", "البنك الوطني السويسري"),
+    "Bank of Canada": ("加拿大央行", "بنك كندا"), "Reserve Bank of Australia": ("澳大利亚储备银行", "بنك الاحتياطي الأسترالي"),
+    "Reserve Bank of India": ("印度储备银行", "بنك الاحتياطي الهندي"), "Central Bank of Brazil": ("巴西央行", "البنك المركزي البرازيلي"),
+    "Central Bank of Türkiye": ("土耳其央行", "البنك المركزي التركي"), "Bank of Korea": ("韩国央行", "بنك كوريا"),
+    "Bank of Mexico": ("墨西哥央行", "بنك المكسيك"), "South African Reserve Bank": ("南非储备银行", "بنك الاحتياطي الجنوب أفريقي"),
+    "Bank of Russia": ("俄罗斯央行", "البنك المركزي الروسي"),
+}
+
+
+def names_xl(name):
+    """{"name_zh": …, "name_ar": …} for an English name (empty if there is no translation)."""
+    zh, ar = NAMES_XL.get(name, (None, None))
+    return {"name_zh": zh, "name_ar": ar} if zh else {}
+
+
 # code, (English name, Russian name), flag, loader, fallback (code, names, loader)
 CURVES = [
     ("US", ("United States", "США"), "🇺🇸", us_curve, None),
@@ -373,7 +395,8 @@ def cb_rates(today):
         x = data.get(c)
         if not x:
             continue
-        out.append({"c": c, "name": name, "name_ru": name_ru, "flag": flag, **{k: v for k, v in x.items() if v is not None}})
+        out.append({"c": c, "name": name, "name_ru": name_ru, **names_xl(name), "flag": flag,
+                    **{k: v for k, v in x.items() if v is not None}})
     return out
 
 
@@ -598,7 +621,7 @@ def build(now=None, path=RATES_FILE, max_age_h=2.0, force=False):
                 code2, names, fn2 = fallback
                 c = fn2(today)
             if c:
-                data["curves"][code] = {"name": names[0], "name_ru": names[1], "flag": flag, **c}
+                data["curves"][code] = {"name": names[0], "name_ru": names[1], **names_xl(names[0]), "flag": flag, **c}
         except Exception as e:
             print(f"  ! curve {names[0]}: {type(e).__name__}: {e}"[:200])
             if fallback:
@@ -606,7 +629,7 @@ def build(now=None, path=RATES_FILE, max_age_h=2.0, force=False):
                     code2, names2, fn2 = fallback
                     c = fn2(today)
                     if c:
-                        data["curves"][code] = {"name": names2[0], "name_ru": names2[1], "flag": flag, **c}
+                        data["curves"][code] = {"name": names2[0], "name_ru": names2[1], **names_xl(names2[0]), "flag": flag, **c}
                 except Exception as e2:
                     print(f"  ! curve {fallback[1][0]}: {type(e2).__name__}: {e2}"[:200])
     try:
