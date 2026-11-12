@@ -35,7 +35,9 @@ export const dataJson = {
   ],
   news: [
     // the current format: original headline + translation, English tags and sources, AI summary in both languages
+    // (Chinese and Arabic translations without an AI note in those languages: the summary is shown instead)
     { title: "Fed holds rates", lang: "en", title_ru: "ФРС сохранила ставку", lead: "The Fed kept rates on hold.", lead_ru: "ФРС сохранила ставку.",
+      title_zh: "美联储维持利率不变", lead_zh: "美联储将利率维持不变。", title_ar: "الفيدرالي يثبت أسعار الفائدة", lead_ar: "أبقى الفيدرالي أسعار الفائدة دون تغيير.",
       tags: ["Fed", "rates"], sources: ["Reuters"], link: "https://x/1", level: "high", ts: iso(now - 3600e3),
       ai: { sum: "Rates stay high for longer", sum_ru: "Ставки останутся высокими дольше", assets: [] } },
     // the older format (Russian title + English original) must still work
@@ -128,7 +130,9 @@ export function route(url, init) {
     if (p.includes("histoday")) return { Data: { Data: closes.map((c, i) => ({ time: 1700000000 + i * 86400, open: c, high: c + 1, low: c - 1, close: c, volumeto: 5 })) } };
   }
   if (u.host === "translate.googleapis.com") {
-    const q = u.searchParams.get("q");
+    const q = u.searchParams.get("q"), tl = u.searchParams.get("tl");
+    if (tl === "zh-CN") return [[[q.replace("Apple beats estimates", "苹果业绩超出预期").replace("iPhone sales jump", "iPhone 销量大增"), q]]];
+    if (tl === "ar") return [[[q.replace("Apple beats estimates", "أبل تتجاوز التوقعات").replace("iPhone sales jump", "قفزة في مبيعات آيفون"), q]]];
     return [[[q.replace("Apple beats estimates", "Apple превзошла прогнозы").replace("iPhone sales jump", "Продажи iPhone выросли"), q]]];
   }
   if (u.host === "data-api.binance.vision") {

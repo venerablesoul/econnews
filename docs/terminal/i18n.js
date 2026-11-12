@@ -1,17 +1,28 @@
-/* Terminal language: English by default, Russian with the EN/RU button (or ?lang=ru, which the bot's buttons add).
-   The choice is remembered in this browser. Data stays language-neutral; this file holds every interface text
-   in both languages and the names of instruments, sectors, tags and sources. */
+/* Terminal language: English by default; Russian, Chinese or Arabic with the language button (or ?lang=ru|zh|ar,
+   which the bot's buttons add). The choice is remembered in this browser. Data stays language-neutral; this file holds
+   every interface text in English and Russian and the names of instruments, sectors, tags and sources. The Chinese and
+   Arabic texts are in i18n.xl.js, which is loaded right after this file only for those two languages. */
 (function(){
 'use strict';
-var KEY = 'lang';
+var KEY = 'lang', LANGS = ['en', 'ru', 'zh', 'ar'];
 function pick(){
   var q = null;
   try { q = new URLSearchParams(location.search).get('lang') } catch(e){}
-  if (q === 'ru' || q === 'en') { try { localStorage.setItem(KEY, q) } catch(e){} return q }
-  try { var s = localStorage.getItem(KEY); if (s === 'ru' || s === 'en') return s } catch(e){}
+  if (LANGS.indexOf(q) >= 0) { try { localStorage.setItem(KEY, q) } catch(e){} return q }
+  try { var s = localStorage.getItem(KEY); if (LANGS.indexOf(s) >= 0) return s } catch(e){}
   return 'en';
 }
 var lang = pick(), RU = lang === 'ru';
+// Chinese and Arabic: index in the [zh, ar] pairs of i18n.xl.js (-1 for English and Russian)
+var XI = lang === 'zh' ? 0 : lang === 'ar' ? 1 : -1;
+if (XI >= 0) {
+  // a parser-blocking script right after this one (the page and the Markets page both load i18n.js synchronously)
+  var me = document.currentScript, src = me && me.src ? me.src.replace(/i18n\.js(\?.*)?$/, 'i18n.xl.js$1') : 'i18n.xl.js';
+  try { document.write('<script src="' + src + '"><\/script>') } catch(e){}
+}
+function XL(){ return XI >= 0 && window.L10N_XL || null }
+// the [zh, ar] value of a name map in i18n.xl.js (null when there is none)
+function xl(map, id){ var x = XL(), m = x && x[map], v = m && m[id]; return v ? v[XI] : null }
 
 // key: [English, Russian]; a value may be a function of arguments
 var D = {
@@ -24,7 +35,7 @@ var D = {
   st_crypto_t: ['Crypto: live exchange stream', 'Крипта: поток с биржи'],
   install: ['⤓ INSTALL', '⤓ УСТАНОВИТЬ'], install_t: ['Install as an app', 'Установить как приложение'],
   settings_t: ['Settings', 'Настройки'],
-  lang_btn: ['RU', 'EN'], lang_btn_t: ['Русский язык', 'Switch to English'],
+  lang_btn_t: ['Interface language', 'Язык интерфейса'],
   p_mkt: ['WORLD MARKETS', 'МИРОВЫЕ РЫНКИ'], p_chart: ['CHART', 'ГРАФИК'], chart_mode_t: ['Switch the chart source', 'Переключить источник графика'],
   p_crypto: ['CRYPTOCURRENCIES', 'КРИПТОВАЛЮТЫ'], g_cap: ['Market cap', 'Капитализация'], g_btcd: ['BTC dominance', 'Доминация BTC'],
   g_fng: ['Fear / greed', 'Страх / жадность'],
@@ -363,7 +374,7 @@ var D = {
     : ['Country', 'GDP ' + y, 'GDP ' + (y + 1), 'CPI ' + y, 'CPI ' + (y + 1), 'Unempl. ' + y, 'Budget ' + y, 'Gov. debt ' + y, 'Cur. acct ' + y] },
   ecst_note: ['Real GDP growth and average inflation, %; budget balance, government debt and current account, % of GDP. Years after the current one are IMF forecasts. Click a country for its history.',
     'Рост реального ВВП и средняя инфляция, %; сальдо бюджета, госдолг и текущий счёт — % ВВП. Годы после текущего — прогноз МВФ. Нажмите на страну — её динамика.'],
-  ecst_back: ['← ALL COUNTRIES', '← ВСЕ СТРАНЫ'], ecst_ind: ['Indicator', 'Показатель'], fcst: ['forecast', 'прогноз'],
+  ecst_back: ['← ALL COUNTRIES', '← ВСЕ СТРАНЫ'], ecst_ind: ['Indicator', 'Показатель'], fcst_w: ['forecast', 'прогноз'],
   fxc_title: ['CROSS RATES', 'КРОСС-КУРСЫ'], fxc_wait: ['Currency quotes are still loading.', 'Курсы валют ещё загружаются.'],
   fxc_note: ['One unit of the row currency in the column currency; below — the change today. From the terminal quotes (Yahoo, Bank of Russia for the ruble).',
     'Одна единица валюты строки в валюте столбца; ниже — изменение за день. По котировкам терминала (Yahoo, для рубля — ЦБ РФ).'],
@@ -690,7 +701,7 @@ var HELP = [
   ['SCREEN', 'ЭКРАН'],
   ['LAYOUT 4, LAYOUT 6', '4 or 6 panels on screen (LAYOUT 1 — the usual layout)', '4 или 6 панелей на экране (LAYOUT 1 — обычная раскладка)'],
   ['▾ in a panel title', 'put any function into this panel', 'поставить в эту панель любую функцию'],
-  ['LANG RU, LANG EN', 'interface language', 'язык интерфейса'],
+  ['LANG RU, LANG EN', 'interface language (LANG ZH — 中文, LANG AR — العربية)', 'язык интерфейса (LANG ZH — 中文, LANG AR — العربية)'],
   ['SET', 'settings and owner sign-in', 'настройки и вход владельца'],
   ['HELP', 'this help', 'эта справка']
 ];
@@ -730,10 +741,13 @@ var TRADE_RU = [['House', 'Палата'], ['Senate', 'Сенат'], [' (option)
 var FNG_RU = {'Extreme Fear': 'сильный страх', 'Fear': 'страх', 'Neutral': 'нейтрально', 'Greed': 'жадность', 'Extreme Greed': 'сильная жадность'};
 function inv(m){ var o = {}; Object.keys(m).forEach(function(k){ o[m[k]] = k }); return o }
 var SECTOR_EN = inv(SECTOR_RU), TAG_EN = inv(TAG_RU), SOURCE_EN = inv(SOURCE_RU);
-function mapName(ru, en){ return function(x){ return RU ? ru[x] || x : en[x] || x } }
+// a name stored in English (or Russian in older data) in the reader's language; map: the name map of i18n.xl.js
+function mapName(ru, en, map){ return function(x){ if (RU) return ru[x] || x; var k = en[x] || x; return xl(map, k) || k } }
 
 function t(key){
-  var v = D[key];
+  var x = XL(), v = x && x.D[key];
+  if (v !== undefined && v !== null) return typeof v === 'function' ? v.apply(null, [].slice.call(arguments, 1)) : v[XI];
+  v = D[key];
   if (v == null) return key;
   if (typeof v === 'function') return v.apply(null, [].slice.call(arguments, 1));
   return v[RU ? 1 : 0];
@@ -743,24 +757,36 @@ function t(key){
 function isOld(n){ return n && n.original !== undefined && n.lang === undefined }
 function newsTitle(n){
   if (isOld(n)) return RU || !n.original ? n.title : n.original;
-  return (RU ? n.title_ru : n.title_en) || n.title || '';
+  return n['title_' + lang] || n.title || '';
 }
 function newsLead(n){
   if (isOld(n)) return RU ? n.lead || '' : '';
-  return (RU ? n.lead_ru : n.lead_en) || n.lead || '';
+  return n['lead_' + lang] || n.lead || '';
 }
 function aiSum(n){
   var ai = n && n.ai; if (!ai) return '';
   if (ai.sum_ru === undefined) return RU ? ai.sum || '' : '';
+  if (XI >= 0) return ai['sum_' + lang] || '';   // none yet — the story's summary is shown instead
   return RU ? ai.sum_ru || ai.sum || '' : ai.sum || ai.sum_ru || '';
 }
 function tradeLabel(s){
   s = String(s || '');
-  TRADE_RU.forEach(function(p){ s = RU ? s.split(p[0]).join(p[1]) : s.split(p[1]).join(p[0]) });
+  var x = XL();
+  TRADE_RU.forEach(function(p, i){
+    s = s.split(p[1]).join(p[0]);              // older records may be Russian
+    if (RU) s = s.split(p[0]).join(p[1]);
+    else if (x) s = s.split(p[0]).join(x.TRADE[i][XI]);
+  });
   return s;
 }
+// a data name in the reader's language: o.name_zh / o.name_ru / o.name (the field names can be changed)
+function dn(o, en, ru){
+  if (!o) return '';
+  en = en || 'name'; ru = ru || en + '_ru';
+  return (lang === 'en' ? null : o[en + '_' + lang] || (RU ? o[ru] : null)) || o[en] || '';
+}
 function setLang(l){
-  l = l === 'ru' ? 'ru' : 'en';
+  l = LANGS.indexOf(l) >= 0 ? l : 'en';
   try { localStorage.setItem(KEY, l) } catch(e){}
   try { var u = new URL(location.href); u.searchParams.set('lang', l); location.replace(u.toString()) } catch(e){ location.reload() }
 }
@@ -776,29 +802,101 @@ function apply(root){
   });
   document.documentElement.lang = lang;
   document.title = t('title');
-  var h = document.getElementById('help-t');
+  var h = document.getElementById('help-t'), x = XL();
   if (h && !h.firstChild) HELP.forEach(function(r){
-    var tr = document.createElement('tr'), a = document.createElement('td');
-    a.textContent = r[0];
-    if (r.length === 2) { a.colSpan = 2; a.style.color = 'var(--amber)'; a.style.paddingTop = '8px'; a.textContent = RU ? r[1] : r[0]; tr.appendChild(a) }
-    else { var b = document.createElement('td'); b.textContent = RU ? r[2] : r[1]; tr.appendChild(a); tr.appendChild(b) }
+    var tr = document.createElement('tr'), a = document.createElement('td'), z = x && x.HELP[r[0]];
+    a.textContent = (x && x.HELP_CMD[r[0]] ? x.HELP_CMD[r[0]][XI] : r[0]);
+    if (r.length === 2) { a.colSpan = 2; a.style.color = 'var(--amber)'; a.style.paddingTop = '8px'; a.textContent = z ? z[XI] : RU ? r[1] : r[0]; tr.appendChild(a) }
+    else { var b = document.createElement('td'); b.textContent = z ? z[XI] : RU ? r[2] : r[1]; tr.appendChild(a); tr.appendChild(b) }
     h.appendChild(tr);
   });
 }
 
+// the languages for the picker: code, name in that language, short label on the button
+var LANG_LIST = [['en', 'English', 'EN'], ['ru', 'Русский', 'RU'], ['zh', '中文', '中'], ['ar', 'العربية', 'ع']];
+var LOC = {en: ['en-US', 'en-GB', 'en', 'MSK'], ru: ['ru-RU', 'ru-RU', 'ru', 'МСК'],
+  // Chinese and Arabic numbers keep Latin digits and the 1,234.56 form, as their financial press does
+  zh: ['en-US', 'zh-CN-u-hc-h23', 'zh_CN', '莫斯科时间'], ar: ['en-US', 'ar-u-nu-latn-hc-h23', 'ar_AE', 'بتوقيت موسكو']}[lang];
+
+// country names in Chinese and Arabic: from the browser by the ISO code (two- or three-letter), else `fallback`
+var REGION_CODE = {UK: 'GB', XM: 'EZ'}, regionNames = null;
+function country(code, fallback){
+  if (XI < 0 || !code) return fallback || code || '';
+  var x = XL(), c = String(code).toUpperCase(), g = x && x.GROUP[c];
+  if (g) return g[XI];
+  c = REGION_CODE[c] || c;
+  if (c.length === 3 && x && x.ISO3[c]) c = x.ISO3[c];
+  if (!/^[A-Z]{2}$/.test(c)) return fallback || code;
+  try {
+    regionNames = regionNames || new Intl.DisplayNames([lang], {type: 'region'});
+    var n = regionNames.of(c);
+    if (n && n !== c) return n;
+  } catch(e){}
+  return fallback || code;
+}
+
+// big numbers: the units of each language, from the largest; rank — the English unit it stands for (4 T, 3 B, 2 M, 1 K):
+// Chinese counts in 万亿 (10^12), 亿 (10^8) and 万 (10^4)
+var UNITS = {en: [[1e12, 'T', 4], [1e9, 'B', 3], [1e6, 'M', 2], [1e3, 'K', 1]],
+  ru: [[1e12, ' трлн', 4], [1e9, ' млрд', 3], [1e6, ' млн', 2], [1e3, ' тыс.', 1]],
+  zh: [[1e12, '万亿', 4], [1e8, '亿', 3], [1e4, '万', 2]],
+  ar: [[1e12, ' تريليون', 4], [1e9, ' مليار', 3], [1e6, ' مليون', 2], [1e3, ' ألف', 1]]}[lang];
+// {x: v in the unit, s: the unit's name, size, rank} for the largest unit not above v (ranks from min to max), or null
+function scale(v, min, max){
+  var a = Math.abs(v || 0);
+  for (var i = 0; i < UNITS.length; i++) {
+    var u = UNITS[i];
+    if (u[2] > (max || 4) || u[2] < (min || 1)) continue;
+    if (a >= u[0]) return {x: v / u[0], s: u[1], size: u[0], rank: u[2]};
+  }
+  return null;
+}
+// dates "YYYY-MM-DD…": 30 Jun / 30.06 / 6月30日 / 30 يونيو, with the year: 30 Jun 2025 / 30.06.2025 / 2025年6月30日 / 30 يونيو 2025
+var MON_EN = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+var MON_AR = ['يناير', 'فبراير', 'مارس', 'أبريل', 'مايو', 'يونيو', 'يوليو', 'أغسطس', 'سبتمبر', 'أكتوبر', 'نوفمبر', 'ديسمبر'];
+// an Arabic date is a right-to-left piece inside left-to-right lines: isolated (FSI…PDI), its numbers keep their places
+function iso_(s){ return lang === 'ar' ? '\u2068' + s + '\u2069' : s }
+function dm(d){
+  if (!d || d.length < 10) return '—';
+  var day = +d.slice(8, 10), m = +d.slice(5, 7);
+  if (RU) return d.slice(8, 10) + '.' + d.slice(5, 7);
+  if (lang === 'zh') return m + '月' + day + '日';
+  return iso_(day + ' ' + (lang === 'ar' ? MON_AR : MON_EN)[m - 1]);
+}
+function dmy(d){
+  if (!d || d.length < 10) return '—';
+  if (lang === 'zh') return d.slice(0, 4) + '年' + dm(d);
+  if (lang === 'ar') return iso_(+d.slice(8, 10) + ' ' + MON_AR[+d.slice(5, 7) - 1] + ' ' + d.slice(0, 4));
+  return dm(d) + (RU ? '.' : ' ') + d.slice(0, 4);
+}
+// a month with a short year: Jun '25 / 30.06.25 / 25年6月 / يونيو 25
+function my(d){
+  if (!d || d.length < 10) return '—';
+  if (RU) return d.slice(8, 10) + '.' + d.slice(5, 7) + '.' + d.slice(2, 4);
+  if (lang === 'zh') return d.slice(2, 4) + '年' + (+d.slice(5, 7)) + '月';
+  return iso_((lang === 'ar' ? MON_AR : MON_EN)[+d.slice(5, 7) - 1] + (lang === 'ar' ? ' ' : " '") + d.slice(2, 4));
+}
+
 window.L10N = {
-  lang: lang, ru: RU, t: t, apply: apply, setLang: setLang,
-  num: RU ? 'ru-RU' : 'en-US',     // numbers: 1,234.56 / 1 234,56
-  date: RU ? 'ru-RU' : 'en-GB',    // dates and 24-hour times
-  tv: RU ? 'ru' : 'en',            // TradingView widget
-  tz: RU ? 'МСК' : 'MSK',
-  mktName: function(id, fallback){ return (RU ? MKT_RU[id] : MKT_EN[id]) || (RU ? fallback : MKT_EN[id]) || fallback || id },
-  unit: function(id){ return UNIT[RU ? 1 : 0][id] || '' },
-  region: function(id){ return REGION[RU ? 1 : 0][id] || '' },
-  clock: function(i){ return CLOCKS[i][RU ? 1 : 0] },
-  sector: mapName(SECTOR_RU, SECTOR_EN), tag: mapName(TAG_RU, TAG_EN), source: mapName(SOURCE_RU, SOURCE_EN),
+  lang: lang, ru: RU, xl: XI >= 0, scale: scale, dm: dm, dmy: dmy, my: my, rtl: lang === 'ar', langs: LANG_LIST, t: t, apply: apply, setLang: setLang,
+  num: LOC[0],     // numbers: 1,234.56 / 1 234,56
+  date: LOC[1],    // dates and 24-hour times
+  tv: LOC[2],      // TradingView widget
+  tz: LOC[3],
+  // a link to the bot's pages in this language: "?lang=zh" ("" for English)
+  q: lang === 'en' ? '' : 'lang=' + lang,
+  mktName: function(id, fallback){ return (RU ? MKT_RU[id] : xl('MKT', id) || MKT_EN[id]) || (RU ? fallback : MKT_EN[id]) || fallback || id },
+  unit: function(id){ return XI >= 0 ? xl('UNIT', id) || UNIT[0][id] || '' : UNIT[RU ? 1 : 0][id] || '' },
+  region: function(id){ return XI >= 0 ? xl('REGION', id) || REGION[0][id] || '' : REGION[RU ? 1 : 0][id] || '' },
+  clock: function(i){ var x = XL(); return x ? x.CLOCKS[i][XI] : CLOCKS[i][RU ? 1 : 0] },
+  sector: mapName(SECTOR_RU, SECTOR_EN, 'SECTOR'), tag: mapName(TAG_RU, TAG_EN, 'TAG'), source: mapName(SOURCE_RU, SOURCE_EN, 'SOURCE'),
   tagKey: function(x){ return TAG_EN[x] || x },   // filter by the stored (English) tag whatever language the data had
-  fng: function(x){ return RU ? FNG_RU[x] || x : x },
+  fng: function(x){ return RU ? FNG_RU[x] || x : xl('FNG', x) || x },
+  dn: dn, country: country,
+  // an IMF indicator's name (macro.json "ind": {en, ru})
+  ind: function(k, x){ return RU ? x.ru : xl('MACRO_IND', k) || x.en },
+  // an instrument's name in Chinese or Arabic (null when there is none)
+  mktXl: function(id){ return xl('MKT', id) },
   newsTitle: newsTitle, newsLead: newsLead, aiSum: aiSum, tradeLabel: tradeLabel
 };
 })();

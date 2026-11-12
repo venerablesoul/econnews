@@ -1,7 +1,7 @@
 // Bot commands: companies, quotes, charts, watchlist, portfolio, alerts, screener, market map, rates.
-// Every reply is built in the chat's language: chat.lang is set by index.js ("en" by default, "ru" after /lang ru).
-import { arrow, esc, pageJSON, pagesUrl, send, tg } from "./lib.js";
-import { L, getLang, sectorName } from "./i18n.js";
+// Every reply is built in the chat's language: chat.lang is set by index.js ("en" by default; ru, zh or ar after /lang).
+import { LOCALE, arrow, esc, padEndW, padStartW, pageJSON, pagesUrl, send, textWidth, tg } from "./lib.js";
+import { L, getLang, macroXl, mktXl, sectorName, t } from "./i18n.js";
 import { chartImage, getCompany, getHistory, getIpos, getQuotes, normRange, parseSymbol } from "./market.js";
 import {
   MAX_WATCH, addAlert, alertText, deleteAlert, getUser, parseAlert, portfolioView, saveUser, userAlerts,
@@ -12,10 +12,13 @@ export function terminalBtn(env, chat, cmd, text) {
   const base = pagesUrl(env);
   if (!base.startsWith("https://")) return null;
   const X = L(chat.lang);
-  const url = base + "terminal/?cmd=" + encodeURIComponent(cmd) + (X.ru ? "&lang=ru" : "");
+  const url = base + "terminal/?cmd=" + encodeURIComponent(cmd) + (X.q ? "&" + X.q : "");
   text = text || X.t("btn_in_terminal");
   return chat.type === "private" ? { text, web_app: { url } } : { text, url };
 }
+
+// cut a cell to w columns of a monospaced table (Chinese characters take two)
+const cut = (s, w) => { s = String(s); while (s.length > 1 && textWidth(s) > w) s = s.slice(0, -1); return s; };
 
 function kb(rows) {
   const r = rows.map((row) => row.filter(Boolean)).filter((row) => row.length);
@@ -32,7 +35,7 @@ function rec(anr, X) {
   return { n, buy: r.sb + r.b, hold: r.h, sell: r.s + r.ss, score, word: X.t("rec")[i], period: r.period };
 }
 
-const qName = (x, X) => (X.ru && x.name_ru) || x.name;
+const qName = (x, X) => (X.ru && x.name_ru) || (!X.ru && mktXl(x.key, X.lang)) || x.name;
 
 // ---------------------------------------------------------------------------
 // Quotes
@@ -157,9 +160,10 @@ export async function cmdAnr(env, chat, args) {
   const bar = (n) => "█".repeat(Math.round(n / r.n * 20));
   const x = c.anr[0];
   const names = X.t("anr_rows");
+  const w = Math.max(...names.map((nm) => textWidth(nm)));
   const vals = [x.sb, x.b, x.h, x.s, x.ss];
   let out = X.t("anr_head", esc(c.s), esc(x.period.slice(0, 7)), r.word, X.fmt(r.score, 1), r.n) +
-    "<code>" + names.map((nm, i) => `${nm} ${String(vals[i]).padStart(3)} ${bar(vals[i])}`).join("\n") + "</code>";
+    "<code>" + names.map((nm, i) => `${padEndW(nm, w)} ${String(vals[i]).padStart(3)} ${bar(vals[i])}`).join("\n") + "</code>";
   if (c.anr.length > 1) {
     const old = c.anr[c.anr.length - 1], on = old.sb + old.b + old.h + old.s + old.ss;
     if (on) out += "\n\n" + X.t("anr_old", old.period.slice(0, 7), old.sb + old.b, old.h, old.s + old.ss);
@@ -176,7 +180,7 @@ export async function cmdCn(env, chat, args) {
   if (!items.length) return send(env, chat, X.t("cn_none", esc(c.s)));
   const out = items.map((n) => `▪️ <b>${esc(n.h)}</b>\n<i>${esc(n.src)} · ${X.date(n.t * 1000, { day: "2-digit", month: "short", hour: "2-digit", minute: "2-digit" })}</i>` +
     (/^https?:\/\//.test(n.url || "") ? ` · <a href="${esc(n.url)}">${X.t("read")}</a>` : ""));
-  const untranslated = X.ru && items.every((n) => n.h === n.en);
+  const untranslated = X.lang !== "en" && items.every((n) => n.h === n.en);
   return send(env, chat, X.t("cn_head", esc(c.s)) + (untranslated ? X.t("cn_untranslated") : "") + "\n\n" + out.join("\n\n"),
     kb([[terminalBtn(env, chat, c.s + " CN", X.t("btn_terminal_fn", "CN"))]]));
 }
@@ -318,8 +322,8 @@ export async function cmdRv(env, chat, args) {
   const rv = c.rv;
   if (!rv || !rv.in_list || rv.rows.length < 2) return send(env, chat, X.t("rv_none", esc(c.s)));
   const cell = (v, d, w) => (v == null ? "—" : X.fmt(v, d)).padStart(w);
-  const line = (r, name) => (name || r.s).padEnd(7).slice(0, 7) + cell(r.pe, 1, 6) + cell(r.ps, 1, 6) + cell(r.revg, 0, 6) + cell(r.nm, 0, 6) + cell(r.r52, 0, 6);
-  const head = X.t("rv_cols").map((h, i) => (i ? h.padStart(6) : h.padEnd(7))).join("");
+  const line = (r, name) => padEndW(cut(name || r.s, 7), 7) + cell(r.pe, 1, 6) + cell(r.ps, 1, 6) + cell(r.revg, 0, 6) + cell(r.nm, 0, 6) + cell(r.r52, 0, 6);
+  const head = X.t("rv_cols").map((h, i) => (i ? padStartW(h, 6) : padEndW(h, 7))).join("");
   const table = [head, ...rv.rows.map((r) => line(r)), line(rv.median, X.t("rv_median"))].join("\n");
   return send(env, chat, X.t("rv_head", esc(c.s), X.t(rv.src === "peers" ? "rv_src_peers" : "rv_src_sector")) + "<code>" + esc(table) + "</code>", fnBtn(env, chat, c.s, "RV"));
 }
@@ -349,19 +353,20 @@ export async function cmdMacro(env, chat, args) {
   const X = L(chat.lang);
   const d = await pageJSON(env, "macro.json", 3600).catch(() => null);
   if (!d || !(d.rows || []).length) return send(env, chat, X.t("macro_none"));
-  const name = (r) => (X.ru ? r.ru : r.en);
+  const name = (r) => (X.ru ? r.ru : macroXl(r.c, X.lang) || r.en);
   const y = new Date().getUTCFullYear();
   const iy = d.years.indexOf(y), iy2 = d.years.indexOf(y + 1);
   const v = (r, ind, i) => { const x = ((r.v || {})[ind] || [])[i]; return x == null ? "—" : X.fmt(x, 1); };
   const q = args.join(" ").trim().toUpperCase();
   if (q) {
     const code = MACRO_ALIAS[q] || q;
-    const r = d.rows.find((x) => x.c === code || x.en.toUpperCase() === q || x.ru.toUpperCase() === q || x.en.toUpperCase().startsWith(q) || x.ru.toUpperCase().startsWith(q));
+    const xl = (x) => macroXl(x.c, "zh") === q || macroXl(x.c, "ar") === q;   // "/macro 中国", "/macro الصين"
+    const r = d.rows.find((x) => x.c === code || x.en.toUpperCase() === q || x.ru.toUpperCase() === q || xl(x) || x.en.toUpperCase().startsWith(q) || x.ru.toUpperCase().startsWith(q));
     if (r) {
       const yrs = d.years.slice(-5);
       const head = "<code>" + "".padEnd(17) + yrs.map((x) => String(x).padStart(7)).join("") + "\n";
       const lines = Object.keys(d.ind).filter((k) => r.v[k]).map((k) => {
-        const lab = (X.t("macro_ind")[k] || d.ind[k].en).padEnd(17);
+        const lab = padEndW(X.t("macro_ind")[k] || d.ind[k].en, 17);
         return lab + yrs.map((yy) => { const x = r.v[k][d.years.indexOf(yy)]; return (x == null ? "—" : k === "NGDPD" ? X.fmt(x, 0) : X.fmt(x, 1)).padStart(7); }).join("");
       });
       return send(env, chat, X.t("macro_one", esc(name(r))) + head + esc(lines.join("\n")) + "</code>", kb([[terminalBtn(env, chat, "ECST " + r.c, X.t("btn_terminal_fn", "ECST"))]]));
@@ -458,13 +463,15 @@ export async function cmdChart(env, chat, args) {
   const n = h.c.length;
   const ch = (h.c[n - 1] / h.c[0] - 1) * 100;
   const ranges = X.t("ranges");
-  const name = (X.ru && h.name_ru) || h.name;
+  const name = (X.ru && h.name_ru) || (!X.ru && mktXl(h.key || h.s, X.lang)) || h.name;
   const caption = X.t("chart_cap", esc(h.s), esc(name && name !== h.s ? name : ""), ranges[range], X.pct(ch), X.price(h.c[n - 1]),
     X.price(Math.min(...h.l.filter((x) => x != null))), X.price(Math.max(...h.h.filter((x) => x != null))));
   const buttons = kb([["1d", "1m", "6m", "1y", "5y"].map((r) => ({ text: r === range ? "• " + r + " •" : r, callback_data: "chart:" + h.s + ":" + r })),
     [terminalBtn(env, chat, h.s + " GP", X.t("btn_open_terminal"))]]);
   try {
-    const url = await chartImage(h, `${h.s} · ${ranges[range]} · ${X.pct(ch)}`, X.lang);
+    // the picture is drawn by QuickChart, whose fonts may lack Chinese and Arabic: it stays English for them
+    const pic = X.lang === "ru" ? "ru" : "en";
+    const url = await chartImage(h, `${h.s} · ${t(pic, "ranges")[range]} · ${L(pic).pct(ch)}`, pic);
     const r = await tg(env, "sendPhoto", { chat_id: chat.id, photo: url, caption, parse_mode: "HTML", reply_markup: buttons });
     if (r.ok) return r;
   } catch (e) { /* no picture — send as text */ }
@@ -642,7 +649,7 @@ export async function cmdEarnings(env, chat) {
   let last = "", out = X.t("earn_head");
   for (const e of ev.slice(0, 40)) {
     if (e.d !== last) {
-      const day = new Date(e.d + "T12:00:00Z").toLocaleDateString(X.ru ? "ru-RU" : "en-GB", { weekday: "long", day: "numeric", month: "long", timeZone: "UTC" });
+      const day = new Date(e.d + "T12:00:00Z").toLocaleDateString(LOCALE[X.lang] || LOCALE.en, { weekday: "long", day: "numeric", month: "long", timeZone: "UTC" });
       out += `\n\n<b>${esc(day)}</b>`;
       last = e.d;
     }
@@ -659,7 +666,7 @@ function curvePoint(c, lbl) {
   return i < 0 ? null : { y: c.y[i], w: c.w ? c.w[i] : null };
 }
 
-const localName = (x, X) => (X.ru ? x.name_ru || x.name : x.name);
+const localName = (x, X) => (X.lang === "en" ? x.name : x["name_" + X.lang] || x.name);
 
 export async function cmdRates(env, chat) {
   const X = L(chat.lang);

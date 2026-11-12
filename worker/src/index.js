@@ -34,7 +34,7 @@ import {
 } from "./lib.js";
 import { COMPANY_PARTS, getCompany, getCorr, getHistory, getIpos, getQuotes, mktName, parseSymbol, worldQuotes } from "./market.js";
 import { isNewCallback, newCallback, newCommand, watchReminders } from "./botcmd.js";
-import { L, aiSum, getLang, newsField, norm, setLang, sourceName, t, tagName, tradeLabel, TRADE_TYPE } from "./i18n.js";
+import { L, aiSum, getLang, langButtons, langFromWord, newsField, norm, setLang, sourceName, t, tagName, tradeLabel, TRADE_TYPE } from "./i18n.js";
 import { checkAlerts, meApi } from "./user.js";
 import { geoProxy, getPerf } from "./extra.js";
 
@@ -250,7 +250,7 @@ async function liveApi(env, since) {
 function keyboard(env, chat, extra = true) {
   const X = L(chat.lang);
   const base = pagesUrl(env);
-  const q = X.ru ? "?lang=ru" : "";
+  const q = X.q ? "?" + X.q : "";
   const rows = [];
   if (base.startsWith("https://")) {
     // web_app buttons work only in private chats
@@ -262,17 +262,14 @@ function keyboard(env, chat, extra = true) {
     rows.push([{ text: X.t("btn_calendar"), callback_data: "calendar" }, { text: X.t("btn_trades"), callback_data: "trades" }]);
     rows.push([{ text: X.t("btn_watch"), callback_data: "watch" }, { text: X.t("btn_port"), callback_data: "port" }]);
     rows.push([{ text: X.t("btn_map"), callback_data: "map" }, { text: X.t("btn_eqs"), callback_data: "eqs" }]);
-    if (chat.newsOn !== undefined) {
-      rows.push([chat.newsOn ? { text: X.t("btn_news_off"), callback_data: "news:off" }
-        : { text: X.t("btn_news_on"), callback_data: "news:on" }]);
-    }
+    const news = chat.newsOn === undefined ? null : chat.newsOn ? { text: X.t("btn_news_off"), callback_data: "news:off" }
+      : { text: X.t("btn_news_on"), callback_data: "news:on" };
+    rows.push(news ? [news, { text: X.t("btn_lang"), callback_data: "lang" }] : [{ text: X.t("btn_lang"), callback_data: "lang" }]);
   } else {
     rows.push([{ text: X.t("btn_menu"), callback_data: "menu" }]);
   }
   return { inline_keyboard: rows };
 }
-
-const langButtons = { inline_keyboard: [[{ text: "🇬🇧 English", callback_data: "lang:en" }, { text: "🇷🇺 Русский", callback_data: "lang:ru" }]] };
 
 async function webhook(req, env, ctx) {
   if (!(await safeEqual(req.headers.get("X-Telegram-Bot-Api-Secret-Token") || "", await hookKey(env)))) {
@@ -304,7 +301,8 @@ export async function handleUpdate(update, env) {
       await send(env, chat, t(chat.lang, chat.newsOn ? "news_on" : "news_off"));
       return;
     }
-    if (/^lang:(en|ru)$/.test(cq.data || "")) return command("lang", [cq.data.slice(5)], cq.data.slice(5), chat, cq.from || {}, env);
+    if (cq.data === "lang") return command("lang", [], "", chat, cq.from || {}, env);
+    if (/^lang:(en|ru|zh|ar)$/.test(cq.data || "")) return command("lang", [cq.data.slice(5)], cq.data.slice(5), chat, cq.from || {}, env);
     if (OLD_CALLBACKS.includes(cq.data)) return command(cq.data, [], "", chat, cq.from || {}, env);
     if (isNewCallback(cq.data)) {
       try { await newCallback(cq.data, chat, env); } catch (e) { await send(env, chat, esc(t(chat.lang, "failed_short", e.message || e))); }
@@ -346,19 +344,20 @@ async function command(cmd, args, rest, chat, from, env) {
     const fresh = await subscribe(env, chat, from);
     if (owner) await env.SUBS.delete(OWNER_OFF);
     chat.newsOn = true;
-    const ruHint = !X.ru && /^(ru|uk|be|kk)/i.test(from.language_code || "");
-    const hello = [...X.t("hello", { fresh, owner, ruHint }), X.t("help_short")]
+    // an English chat whose Telegram app speaks Russian, Chinese or Arabic gets a hint how to switch
+    const lc = String(from.language_code || "");
+    const en = X.lang === "en";
+    const hints = { ruHint: en && /^(ru|uk|be|kk)/i.test(lc), zhHint: en && /^zh/i.test(lc), arHint: en && /^ar/i.test(lc) };
+    const hello = [...X.t("hello", { fresh, owner, ...hints }), X.t("help_short")]
       .filter((x, i, a) => x !== "" || a[i - 1] !== "").join("\n");
     await send(env, chat, hello, keyboard(env, chat));
     await command("news", [], "", chat, from, env);
     return;
   }
-  if (cmd === "lang" || cmd === "language" || cmd === "язык") {
-    const want = String(args[0] || "").toLowerCase();
-    if (!["en", "ru", "english", "russian", "рус", "русский", "англ"].includes(want)) {
-      return void await send(env, chat, X.t("lang_usage"), langButtons);
-    }
-    const lang = await setLang(env, chat.id, /^(ru|рус|russian)/.test(want) ? "ru" : "en");
+  if (cmd === "lang" || cmd === "language" || cmd === "язык" || cmd === "语言" || cmd === "اللغة") {
+    const want = langFromWord(args[0]);
+    if (!want) return void await send(env, chat, X.t("lang_usage"), langButtons);
+    const lang = await setLang(env, chat.id, want);
     const c2 = { ...chat, lang };
     await send(env, c2, t(lang, "lang_set") + "\n\n" + t(lang, "help_short"), keyboard(env, c2));
     return;
@@ -432,7 +431,9 @@ export function newsText(data, lang = "en") {
 
 const MARKET_ROWS = ["S&P", "Nasdaq", "DAX", "NKY", "IMOEX", "Brent", "Золото", "EUR/USD", "USD/RUB", "CNY/RUB", "UST10", "BTC"];
 const ROW_NAME = { en: { "USD/RUB": "USD/RUB (CBR)", "CNY/RUB": "CNY/RUB (CBR)", BTC: "Bitcoin" },
-  ru: { "USD/RUB": "USD/RUB (ЦБ)", "CNY/RUB": "CNY/RUB (ЦБ)", BTC: "Биткоин", IMOEX: "Мосбиржа" } };
+  ru: { "USD/RUB": "USD/RUB (ЦБ)", "CNY/RUB": "CNY/RUB (ЦБ)", BTC: "Биткоин", IMOEX: "Мосбиржа" },
+  zh: { "USD/RUB": "美元/卢布（俄央行）", "CNY/RUB": "人民币/卢布（俄央行）" },
+  ar: { "USD/RUB": "الدولار/الروبل (المركزي الروسي)", "CNY/RUB": "اليوان/الروبل (المركزي الروسي)" } };
 
 export function marketsText(data, lang = "en") {
   const X = L(lang);
@@ -462,7 +463,7 @@ export function calendarText(data, lang = "en") {
     if (day !== last) { out += `\n\n<b>${esc(day)}</b>`; last = day; }
     const extra = [e.actual ? `${X.t("actual")} <b>${esc(e.actual)}</b>` : "", e.forecast ? `${X.t("fcst")} ${esc(e.forecast)}` : "",
       e.previous ? `${X.t("prev")} ${esc(e.previous)}` : ""].filter(Boolean).join(", ");
-    const title = X.ru ? e.title_ru || e.title : e.title;
+    const title = X.lang === "en" ? e.title : e["title_" + X.lang] || e.title;
     out += `\n${e.impact === "High" ? "🔴" : "🟡"} ${X.date(e.ts, { hour: "2-digit", minute: "2-digit" })} ${e.flag || ""} ${esc(title)}`
       + (extra ? ` <i>(${extra})</i>` : "");
     if (out.length > 3800) break;
@@ -476,7 +477,8 @@ function usd(v, X) {
 }
 
 function usdRange(a, b, X) {
-  const no = { en: "amount not stated", ru: "сумма не указана" }, over = { en: "over ", ru: "более " };
+  const no = { en: "amount not stated", ru: "сумма не указана", zh: "未注明金额", ar: "المبلغ غير مذكور" };
+  const over = { en: "over ", ru: "более ", zh: "超过 ", ar: "أكثر من " };
   if (!a) return no[X.lang];
   if (b == null) return over[X.lang] + usd(a - 1, X);
   if (a === b) return usd(a, X);
@@ -487,7 +489,7 @@ export function tradesText(data, lang = "en") {
   const X = L(lang);
   const tr = data.trades || {};
   const icon = (x) => x === "buy" ? "🟢" : x === "exchange" ? "⚪" : "🔴";
-  const type = (x) => TRADE_TYPE[X.lang][x] || (X.ru ? "сделка" : "trade");
+  const type = (x) => TRADE_TYPE[X.lang][x] || { en: "trade", ru: "сделка", zh: "交易", ar: "صفقة" }[X.lang];
   const c = (tr.congress || []).slice(0, 6).map((x) =>
     `${icon(x.type)} <b>${esc(x.ticker)}</b> ${type(x.type)} · ${usdRange(x.amin, x.amax, X)}\n` +
     `<i>${esc(x.who)} (${esc(tradeLabel(x.where, X.lang))}) · ${X.t("trd_traded", X.dm(x.date), X.dm(x.disclosed))}</i>`);

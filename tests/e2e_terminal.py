@@ -2,7 +2,7 @@
 End-to-end test of the terminal in a real browser (Chromium via Playwright).
 
 Starts locally: the site (docs/) and the bot server (the real worker/src code with faked external services,
-tests/fake_server.mjs). Checks every function on a desktop and a phone, in English (default) and Russian,
+tests/fake_server.mjs). Checks every function on a desktop and a phone, in English (default), Russian, Chinese and Arabic,
 the Markets page, and that the browser console has no errors.
 Run: python3 tests/e2e_terminal.py   (screenshots go to the E2E_SHOTS folder, if set)
 """
@@ -80,7 +80,8 @@ def run():
     # live feed: the bot pushed a fresh story that is not on the site yet
     key = hashlib.sha256(b"econnews-sync:123:TEST").hexdigest()
     body = json.dumps({"updated": "2099-01-01T00:00:00+00:00", "news": [{"title": "Fresh story from the server", "lang": "en",
-                                                                         "title_ru": "Свежая новость с сервера", "ts": "2099-01-01T00:00:00+00:00",
+                                                                         "title_ru": "Свежая новость с сервера", "title_zh": "来自服务器的最新消息",
+                                                                         "title_ar": "خبر جديد من الخادم", "ts": "2099-01-01T00:00:00+00:00",
                                                                          "level": "high", "sources": ["Live"], "link": "https://x/live"}], "market": []}).encode()
     urllib.request.urlopen(urllib.request.Request(f"{api}/sync/live", data=body, method="POST",
                                                   headers={"Authorization": "Bearer " + key, "Content-Type": "application/json"})).read()
@@ -127,9 +128,17 @@ def run():
         page.wait_for_selector("#mkt table")
         vis = visible_panels(page)
         check("default layout: 5 panels", sorted(vis) == sorted(["p-mkt", "p-chart", "p-crypto", "p-news", "p-eco"]), vis)
-        check("English by default: panel titles and the RU button",
+        check("English by default: panel titles and the language button",
               page.inner_text("#p-mkt .ph").startswith("WEI") and "WORLD MARKETS" in page.inner_text("#p-mkt .ph")
-              and page.inner_text("#b-lang") == "RU" and page.evaluate("document.documentElement.lang") == "en")
+              and page.inner_text("#b-lang") == "EN ▾" and page.evaluate("document.documentElement.lang") == "en"
+              and page.evaluate("window.L10N_XL === undefined"), page.inner_text("#b-lang"))
+        page.click("#b-lang")
+        check("the language menu: four languages, English marked", page.is_visible("#lang-menu")
+              and page.eval_on_selector_all("#lang-menu button", "bs => bs.map(b => b.lang).join()") == "en,ru,zh,ar"
+              and page.get_attribute("#lang-menu button.on", "lang") == "en")
+        shot(page, "00_lang_menu")
+        page.keyboard.press("Escape")
+        check("the language menu closes with Escape", not page.is_visible("#lang-menu"))
         page.wait_for_function("document.querySelector('#mkt').textContent.includes('Gold')", timeout=8000)
         mkt = page.inner_text("#mkt")
         check("markets: English names and number format", "Gold" in mkt and "Brent crude" in mkt and "7,730" in mkt and "INDICES" in mkt, mkt[-600:])
@@ -424,7 +433,7 @@ def run():
         watch(r)
         r.goto(base + "?lang=ru")
         r.wait_for_selector("#mkt table")
-        check("RU: interface in Russian", "МИРОВЫЕ РЫНКИ" in r.inner_text("#p-mkt .ph") and r.inner_text("#b-lang") == "EN"
+        check("RU: interface in Russian", "МИРОВЫЕ РЫНКИ" in r.inner_text("#p-mkt .ph") and r.inner_text("#b-lang") == "RU ▾"
               and "Золото" in r.inner_text("#mkt") and "ИНДЕКСЫ" in r.inner_text("#mkt") and ",00%" in r.inner_text("#mkt"), r.inner_text("#mkt")[:200])
         r.wait_for_function("document.querySelector('#news').textContent.includes('Свежая новость с сервера')", timeout=8000)
         rn = r.inner_text("#news")
@@ -458,9 +467,10 @@ def run():
         check("RU: sectors in Russian", "XOM" in r.inner_text("#eqs-body tbody"))
         shot(r, "16_ru")
         r.click("#b-lang")
-        r.wait_for_function("(document.querySelector('#b-lang') || {}).textContent === 'RU' && !!document.querySelector('#mkt table')", timeout=8000)
+        r.click("#lang-menu button[lang=en]")
+        r.wait_for_function("(document.querySelector('#b-lang') || {}).textContent === 'EN ▾' && !!document.querySelector('#mkt table')", timeout=8000)
         r.wait_for_selector("#mkt table")
-        check("the EN/RU button switches back to English and is remembered", "WORLD MARKETS" in r.inner_text("#p-mkt .ph")
+        check("the language menu switches back to English and is remembered", "WORLD MARKETS" in r.inner_text("#p-mkt .ph")
               and r.evaluate("localStorage.getItem('lang')") == "en")
 
         # the Markets page in both languages
@@ -469,13 +479,73 @@ def run():
         mp.goto(f"http://127.0.0.1:{sport}/")
         mp.wait_for_selector("#tiles .tile .n")
         check("Markets page: English", "Gold" in mp.inner_text("#tiles") and mp.inner_text("#h1") == "Markets", mp.inner_text("#tiles")[:200])
-        mp.click("#lang")
+        mp.select_option("#lang", "ru")
         mp.wait_for_function("(document.querySelector('#h1') || {}).textContent === 'Рынок онлайн'", timeout=8000)
         mp.wait_for_selector("#tiles .tile .n")
         check("Markets page: Russian after the toggle", "Золото" in mp.inner_text("#tiles"))
         mp.click("button[data-tab=news]")
         check("Markets page: Russian news", "ФРС сохранила ставку" in mp.inner_text("#news"))
         rctx.close()
+
+        # Chinese and Arabic: ?lang=zh / ?lang=ar (the bot's buttons add them), i18n.xl.js is loaded only for them
+        for lang, want in (("zh", {"panel": "全球市场", "mkt": ["黄金", "布伦特原油", "指数"], "news": ["来自服务器的最新消息", "美联储维持利率不变", "美联储将利率维持不变", "#美联储"],
+                                   "des": ["$5.01万亿", "分析师", "下次财报"], "cn": "苹果业绩超出预期", "ee": ["本季度", "业绩意外"], "ecst": ["实际 GDP 增长", "俄罗斯"],
+                                   "sector": "能源", "eco": "日历 · 莫斯科时间", "help": "全球股票指数", "btn": "中 ▾"}),
+                           ("ar", {"panel": "الأسواق العالمية", "mkt": ["الذهب", "خام برنت", "المؤشرات"], "news": ["خبر جديد من الخادم", "الفيدرالي يثبت أسعار الفائدة", "أبقى الفيدرالي", "#الفيدرالي"],
+                                   "des": ["$5.01 تريليون", "المحللون", "النتائج التالية"], "cn": "أبل تتجاوز التوقعات", "ee": ["الربع الحالي", "المفاجآت"], "ecst": ["نمو الناتج الحقيقي", "روسيا"],
+                                   "sector": "الطاقة", "eco": "الأجندة · بتوقيت موسكو", "help": "مؤشرات الأسهم العالمية", "btn": "ع ▾"})):
+            xctx = browser.new_context(viewport={"width": 1440, "height": 900})
+            setup(xctx)
+            x = xctx.new_page()
+            watch(x)
+            x.goto(base + "?lang=" + lang)
+            x.wait_for_selector("#mkt table")
+            check(f"{lang}: interface, html lang and the dictionary", want["panel"] in x.inner_text("#p-mkt .ph") and x.inner_text("#b-lang") == want["btn"]
+                  and x.evaluate("document.documentElement.lang") == lang and x.evaluate("Object.keys(window.L10N_XL.D).length") > 900
+                  and want["eco"] in x.inner_text("#p-eco .ph"), x.inner_text("#p-mkt .ph"))
+            x.wait_for_function(f"document.querySelector('#mkt').textContent.includes({json.dumps(want['mkt'][0])})", timeout=8000)
+            xm = x.inner_text("#mkt")
+            check(f"{lang}: instrument names and Latin digits", all(w in xm for w in want["mkt"]) and "7,730" in xm, xm[:300])
+            x.wait_for_function(f"document.querySelector('#news').textContent.includes({json.dumps(want['news'][0])})", timeout=8000)
+            xn = x.inner_text("#news")
+            check(f"{lang}: news translated, the summary in place of a missing AI note, tags", all(w in xn for w in want["news"]), xn[:400])
+            shot(x, f"20_{lang}_main")
+            cmd(x, "AAPL DES")
+            x.wait_for_function("document.querySelector('#des-body').textContent.includes('Apple Inc')", timeout=8000)
+            xb = x.inner_text("#des-body")
+            check(f"{lang}: DES (big numbers in the language's units)", all(w in xb for w in want["des"]), xb[:400])
+            shot(x, f"21_{lang}_des")
+            x.click("#des-tabs button[data-t=CN]")
+            x.wait_for_function(f"document.querySelector('#des-body').textContent.includes({json.dumps(want['cn'])})", timeout=8000)
+            check(f"{lang}: CN translated by the server", True)
+            x.click("#des-tabs button[data-t=EE]")
+            check(f"{lang}: EE", all(w in x.inner_text("#des-body") for w in want["ee"]), x.inner_text("#des-body")[:300])
+            cmd(x, "ECST RU")
+            x.wait_for_function(f"document.querySelector('#ana-body').textContent.includes({json.dumps(want['ecst'][0])})", timeout=8000)
+            check(f"{lang}: ECST: the IMF indicators and the country from the browser", want["ecst"][1] in x.inner_text("#ana-body"), x.inner_text("#ana-body")[:300])
+            cmd(x, "EQS")
+            x.wait_for_selector("#eqs-body tbody tr")
+            x.select_option("#eqs-body select", want["sector"])
+            x.wait_for_function("document.querySelectorAll('#eqs-body tbody tr').length === 1")
+            check(f"{lang}: sectors", "XOM" in x.inner_text("#eqs-body tbody"))
+            cmd(x, "HELP")
+            x.wait_for_selector("#help-t tr")
+            check(f"{lang}: the help table", want["help"] in x.inner_text("#help-t"))
+            shot(x, f"22_{lang}_help")
+            x.keyboard.press("Escape")
+            if lang == "ar":
+                check("ar: Arabic letters are not spread apart", x.evaluate("getComputedStyle(document.querySelector('#p-mkt .ph')).letterSpacing") in ("0px", "normal"))
+                check("ar: news lines take their direction from the text", x.evaluate("getComputedStyle(document.querySelector('#news li')).unicodeBidi") == "plaintext")
+            overflow = x.evaluate("document.documentElement.scrollWidth - window.innerWidth")
+            check(f"{lang}: no horizontal scroll", overflow <= 0, overflow)
+            mp2 = xctx.new_page()
+            watch(mp2)
+            mp2.goto(f"http://127.0.0.1:{sport}/")
+            mp2.wait_for_selector("#tiles .tile .n")
+            check(f"{lang}: the Markets page in the same language", mp2.input_value("#lang") == lang and mp2.inner_text("#h1") == {"zh": "市场", "ar": "الأسواق"}[lang]
+                  and want["mkt"][0] in mp2.inner_text("#tiles"), mp2.inner_text("#tiles")[:200])
+            shot(mp2, f"23_{lang}_markets")
+            xctx.close()
 
         # phone
         mctx = browser.new_context(viewport={"width": 390, "height": 844}, is_mobile=True, has_touch=True, accept_downloads=True)

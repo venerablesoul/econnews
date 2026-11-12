@@ -1,9 +1,24 @@
-// English / Russian for the bot. English is the default; /lang ru switches a chat to Russian.
-// The choice is stored in KV ("l:<chat id>") and in the subscriber's metadata, so the news bot
-// (news_bot.py) also sends each person their language.
+// The bot's languages: English (the default), Russian, Chinese (simplified) and Arabic. /lang (buttons) or
+// /lang ru|zh|ar|en switches a chat. The choice is stored in KV ("l:<chat id>") and in the subscriber's metadata,
+// so the news bot (news_bot.py) also sends each person their language. Chinese and Arabic texts: i18n_xl.js.
 import { dm, dmy, fmt, money, msk, pct, price } from "./lib.js";
+import { AR, MKT_XL, MACRO_XL, SECTOR_XL, SOURCE_XL, TAG_XL, TRADE_LABEL_XL, TRADE_OWNER_XL, TRADE_TYPE_XL, ZH } from "./i18n_xl.js";
 
-export const LANGS = ["en", "ru"];
+export const LANGS = ["en", "ru", "zh", "ar"];
+// the language picker: /lang without arguments and the «🌐» button
+export const LANG_NAMES = { en: "🇬🇧 English", ru: "🇷🇺 Русский", zh: "🇨🇳 中文", ar: "🇸🇦 العربية" };
+export const langButtons = { inline_keyboard: [
+  [{ text: LANG_NAMES.en, callback_data: "lang:en" }, { text: LANG_NAMES.ru, callback_data: "lang:ru" }],
+  [{ text: LANG_NAMES.zh, callback_data: "lang:zh" }, { text: LANG_NAMES.ar, callback_data: "lang:ar" }]] };
+// "/lang <word>" → a language code (or null)
+export function langFromWord(w) {
+  w = String(w || "").trim().toLowerCase();
+  if (/^(en|eng|english|англ)/.test(w)) return "en";
+  if (/^(ru|rus|russian|рус)/.test(w)) return "ru";
+  if (/^(zh|cn|chinese|中文|汉语|китай)/.test(w)) return "zh";
+  if (/^(ar|arabic|عرب|العربية|араб)/.test(w)) return "ar";
+  return null;
+}
 export const DEFAULT_LANG = "en";
 
 export function norm(lang) {
@@ -45,7 +60,8 @@ const EN = {
     "/rates — yield curves · /cb — central bank rates",
     "/wirp — Fed rate expectations",
     "",
-    "/lang ru — по-русски · /stop — unsubscribe",
+    "/lang ru — по-русски · /lang zh — 中文 · /lang ar — العربية",
+    "/lang — language · /stop — unsubscribe",
   ].join("\n"),
   help_short: [
     "/news — latest key news",
@@ -55,7 +71,8 @@ const EN = {
     "/q AAPL BTC — quotes · /des AAPL — company",
     "/watch · /port · /alert — watchlist, portfolio, alerts",
     "/help — all commands",
-    "/lang ru — по-русски · /stop — unsubscribe",
+    "/lang ru — по-русски · /lang zh — 中文 · /lang ar — العربية",
+    "/lang — language · /stop — unsubscribe",
   ].join("\n"),
   hello: (a) => [
     "👋 <b>Economic news</b>",
@@ -69,12 +86,14 @@ const EN = {
     a.fresh ? "✅ You are subscribed." : "✅ You are already subscribed.",
     a.owner ? "👑 You are the owner of this bot." : "",
     a.ruHint ? "🇷🇺 Русский язык: /lang ru" : "",
+    a.zhHint ? "🇨🇳 中文：/lang zh" : "",
+    a.arHint ? "🇸🇦 العربية: /lang ar" : "",
     "",
   ],
   stop_owner: "You have unsubscribed from the server's mailing. You are the owner, though: the main mailing always reaches you. To turn it off: GitHub → Actions → Economic news → Disable workflow.",
   stop: "You have unsubscribed. To get the news again — /start",
-  lang_set: "✅ Language: English. Русский — /lang ru",
-  lang_usage: "Choose a language: /lang en — English, /lang ru — русский",
+  lang_set: "✅ Language: English. Русский — /lang ru · 中文 — /lang zh · العربية — /lang ar",
+  lang_usage: "🌐 Choose a language:",
   plain_text: "I send economic news on my own. Commands:\n",
   unknown: "I don't know that command. Here is what I can do:\n\n",
   no_data: "Couldn't get fresh data, try again in a minute.",
@@ -87,7 +106,7 @@ const EN = {
   // buttons
   btn_market: "📈 Markets", btn_terminal: "🖥 Terminal", btn_menu: "☰ Main menu", btn_in_terminal: "🖥 In the terminal",
   btn_news: "📰 News", btn_markets: "📊 Markets", btn_calendar: "📅 Calendar", btn_trades: "🏛 Trades",
-  btn_news_off: "🔕 Turn news off", btn_news_on: "🔔 Turn news on",
+  btn_news_off: "🔕 Turn news off", btn_news_on: "🔔 Turn news on", btn_lang: "🌐 Language",
   news_off: "🔕 News is off — the bot won't send you the mailing. Commands and buttons still work. To get the news again, press «🔔 Turn news on» or /start",
   news_on: "🔔 News is on — you'll get the mailing again.",
   btn_watch: "⭐ My watchlist", btn_port: "💼 Portfolio", btn_map: "🗺 Market map", btn_eqs: "🔎 Screener",
@@ -331,7 +350,8 @@ const RU = {
     "/rates — кривые доходности · /cb — ставки центробанков",
     "/wirp — ожидания по ставке ФРС",
     "",
-    "/lang en — in English · /stop — отписаться",
+    "/lang en — in English · /lang zh — 中文 · /lang ar — العربية",
+    "/lang — язык · /stop — отписаться",
   ].join("\n"),
   help_short: [
     "/news — последние важные новости",
@@ -341,7 +361,7 @@ const RU = {
     "/q AAPL BTC — котировки · /des AAPL — компания",
     "/watch · /port · /alert — список, портфель, алерты",
     "/help — все команды",
-    "/lang en — in English · /stop — отписаться",
+    "/lang en — in English · /lang — язык · /stop — отписаться",
   ].join("\n"),
   hello: (a) => [
     "👋 <b>Экономические новости</b>",
@@ -358,8 +378,8 @@ const RU = {
   ],
   stop_owner: "Вы отписались от рассылки сервера. Но вы владелец: основная рассылка приходит вам всегда. Выключить её можно в GitHub → Actions → Economic news → Disable workflow.",
   stop: "Вы отписались. Чтобы снова получать новости — /start",
-  lang_set: "✅ Язык: русский. English — /lang en",
-  lang_usage: "Выберите язык: /lang ru — русский, /lang en — English",
+  lang_set: "✅ Язык: русский. English — /lang en · 中文 — /lang zh · العربية — /lang ar",
+  lang_usage: "🌐 Выберите язык:",
   plain_text: "Я присылаю экономические новости сам. Команды:\n",
   unknown: "Не знаю такой команды. Вот что я умею:\n\n",
   no_data: "Не удалось получить свежие данные, попробуйте через минуту.",
@@ -371,7 +391,7 @@ const RU = {
   updated: (t) => `\n<i>обновлено ${t} МСК</i>`,
   btn_market: "📈 Рынок онлайн", btn_terminal: "🖥 Терминал", btn_menu: "☰ Главное меню", btn_in_terminal: "🖥 В терминале",
   btn_news: "📰 Новости", btn_markets: "📊 Рынки", btn_calendar: "📅 Календарь", btn_trades: "🏛 Сделки",
-  btn_news_off: "🔕 Отключить новости", btn_news_on: "🔔 Включить новости",
+  btn_news_off: "🔕 Отключить новости", btn_news_on: "🔔 Включить новости", btn_lang: "🌐 Язык",
   news_off: "🔕 Новости отключены — рассылка больше не приходит. Команды и кнопки работают как раньше. Чтобы снова получать новости, нажмите «🔔 Включить новости» или /start",
   news_on: "🔔 Новости включены — рассылка снова будет приходить.",
   btn_watch: "⭐ Мой список", btn_port: "💼 Портфель", btn_map: "🗺 Карта рынка", btn_eqs: "🔎 Скринер",
@@ -578,7 +598,8 @@ const RU = {
   bot_back: (m) => `✅ <b>Бот новостей снова работает</b> после ${m} мин без обновлений.`,
 };
 
-const TEXTS = { en: EN, ru: RU };
+const TEXTS = { en: EN, ru: RU, zh: ZH, ar: AR };
+export const TEXT_KEYS = Object.keys(EN);   // for the tests: every language must have them all
 
 export function t(lang, key, ...args) {
   const v = TEXTS[norm(lang)][key] ?? EN[key];
@@ -605,15 +626,32 @@ export const TRADE_TYPE = { en: { buy: "buy", sell: "sale", sell_part: "partial 
 export const TRADE_OWNER = { en: { SP: "spouse", JT: "joint", DC: "child", Spouse: "spouse", Joint: "joint", Child: "child", "Dependent Child": "child" },
   ru: { SP: "супруг(а)", JT: "совместно", DC: "ребёнок", Spouse: "супруг(а)", Joint: "совместно", Child: "ребёнок", "Dependent Child": "ребёнок" } };
 
-const pick = (ru, en) => (name, lang) => (norm(lang) === "ru" ? ru[name] || name : en[name] || name);
-export const sectorName = pick(SECTOR_RU, SECTOR_EN);
-export const tagName = pick(TAG_RU, TAG_EN);
-export const sourceName = pick(SOURCE_RU, SOURCE_EN);
+TRADE_TYPE.zh = TRADE_TYPE_XL.zh; TRADE_TYPE.ar = TRADE_TYPE_XL.ar;
+TRADE_OWNER.zh = TRADE_OWNER_XL.zh; TRADE_OWNER.ar = TRADE_OWNER_XL.ar;
+
+// a name stored in English (or, in older data, in Russian) shown in the reader's language
+const pick = (ru, en, xl) => (name, lang) => {
+  lang = norm(lang);
+  if (lang === "ru") return ru[name] || name;
+  const key = en[name] || name;   // the English key, whatever language the data had
+  return (xl[lang] || {})[key] || key;
+};
+export const sectorName = pick(SECTOR_RU, SECTOR_EN, SECTOR_XL);
+export const tagName = pick(TAG_RU, TAG_EN, TAG_XL);
+export const sourceName = pick(SOURCE_RU, SOURCE_EN, SOURCE_XL);
 export function tradeLabel(text, lang) {
+  lang = norm(lang);
   let s = String(text || "");
-  for (const [en, ru] of TRADE_EN_RU) s = norm(lang) === "ru" ? s.split(en).join(ru) : s.split(ru).join(en);
+  TRADE_EN_RU.forEach(([en, ru], i) => {
+    s = s.split(ru).join(en);                       // older records may be Russian
+    if (lang === "ru") s = s.split(en).join(ru);
+    else if (TRADE_LABEL_XL[lang]) s = s.split(en).join(TRADE_LABEL_XL[lang][i]);
+  });
   return s;
 }
+// market instruments (MKT ids) and IMF countries in Chinese and Arabic; null — no name in that language
+export const mktXl = (id, lang) => (MKT_XL[norm(lang)] || {})[id] || null;
+export const macroXl = (code, lang) => (MACRO_XL[norm(lang)] || {})[code] || null;
 
 // News stories: original headline plus a translation into the other language.
 // Older data.json had "title" in Russian and the English original in "original".
@@ -630,8 +668,10 @@ export function newsField(n, field, lang) {
 export function aiSum(n, lang) {
   const ai = n && n.ai;
   if (!ai) return "";
-  const ru = norm(lang) === "ru";
+  lang = norm(lang);
+  const ru = lang === "ru";
   if (ai.sum_ru === undefined) return ru ? ai.sum || "" : "";
+  if (lang === "zh" || lang === "ar") return ai["sum_" + lang] || "";   // none yet — the story's summary is shown instead
   return ru ? ai.sum_ru || ai.sum || "" : ai.sum || ai.sum_ru || "";
 }
 
@@ -674,5 +714,7 @@ export function L(lang) {
     dmy: (d) => dmy(d, lang),
     dm: (d) => dm(d, lang),
     ru: lang === "ru",
+    // "?lang=xx" for links to the site and the terminal ("" for English)
+    q: lang === DEFAULT_LANG ? "" : "lang=" + lang,
   };
 }

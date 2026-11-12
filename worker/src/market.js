@@ -4,6 +4,7 @@
 //   History:      Yahoo Finance; crypto — Binance / Yahoo / Coinbase; Russia — Moscow Exchange (ISS)
 //   Financials:   docs/fin/<TICKER>.json, built by the news bot from SEC filings (~100 largest companies)
 import { cached, dm, getJSON, pageJSON, siteData, swr } from "./lib.js";
+import { MKT_XL } from "./i18n_xl.js";
 
 const FH = "https://finnhub.io/api/v1";
 const BINANCE = "https://data-api.binance.vision/api/v3";
@@ -32,7 +33,7 @@ export const MKT = {
   "UST3M": ["^IRX", "UST 3M", "UST 3M"], "UST5": ["^FVX", "UST 5Y", "UST 5Y"], "UST10": ["^TNX", "UST 10Y", "UST 10Y"],
   "UST30": ["^TYX", "UST 30Y", "UST 30Y"],
 };
-export const mktName = (id, lang) => (MKT[id] ? MKT[id][lang === "ru" ? 2 : 1] : id);
+export const mktName = (id, lang) => ((MKT_XL[lang] || {})[id]) || (MKT[id] ? MKT[id][lang === "ru" ? 2 : 1] : id);
 const MKT_ALIAS = {
   SPX: "S&P", SP500: "S&P", "S&P500": "S&P", "S&P": "S&P", NDX: "Nasdaq", NASDAQ: "Nasdaq", DOW: "DJI", DJI: "DJI",
   RUSSELL: "RTY", RTY: "RTY", VIX: "VIX", STOXX: "SX5E", SX5E: "SX5E", DAX: "DAX", FTSE: "UKX", UKX: "UKX", CAC: "CAC",
@@ -486,17 +487,21 @@ export async function getIpos(env) {
 
 export const translateState = { errors: [] };
 
-async function translateOne(line) {
-  return cached("tr:" + line, 86400, async () => {
+// the translators' codes for our languages
+const TR_LANG = { ru: "ru", zh: "zh-CN", ar: "ar" };
+
+async function translateOne(line, lang = "ru") {
+  const tl = TR_LANG[lang] || "ru";
+  return cached("tr:" + (tl === "ru" ? "" : tl + ":") + line, 86400, async () => {
     let err;
     try {
-      const d = await getJSON("https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=ru&dt=t&q=" + encodeURIComponent(line),
+      const d = await getJSON("https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=" + tl + "&dt=t&q=" + encodeURIComponent(line),
         { ttl: 86400, timeout: 5000 });
       const text = (d[0] || []).map((seg) => seg[0] || "").join("").trim();
       if (text) return text;
     } catch (e) { err = "Google " + (e.status || e.message); }
     try {
-      const d = await getJSON("https://api.mymemory.translated.net/get?langpair=en|ru&q=" + encodeURIComponent(line.slice(0, 480)), { ttl: 86400, timeout: 5000 });
+      const d = await getJSON("https://api.mymemory.translated.net/get?langpair=en|" + tl + "&q=" + encodeURIComponent(line.slice(0, 480)), { ttl: 86400, timeout: 5000 });
       const text = ((d && d.responseData && d.responseData.translatedText) || "").trim();
       if (text && !/MYMEMORY WARNING/i.test(text) && String(d.responseStatus) === "200") return text.replace(/&#39;/g, "'").replace(/&quot;/g, '"').replace(/&amp;/g, "&");
       err = (err ? err + ", " : "") + "MyMemory " + (d && d.responseStatus);
@@ -505,8 +510,8 @@ async function translateOne(line) {
   });
 }
 
-async function translateLines(lines) {
-  return Promise.all(lines.map((l) => translateOne(l.replace(/\s+/g, " ").trim()).catch((e) => {
+async function translateLines(lines, lang = "ru") {
+  return Promise.all(lines.map((l) => translateOne(l.replace(/\s+/g, " ").trim(), lang).catch((e) => {
     if (translateState.errors.length < 3) translateState.errors.push(String(e.message || e));
     return l;
   })));
@@ -588,11 +593,11 @@ export async function getCompany(env, raw, parts = COMPANY_PARTS, lang = "en") {
     safe("news", fh(env, `/company-news?symbol=${s}&from=${weekAgo}&to=${today}`, 900).then(async (x) => {
       const items = (x || []).filter((n) => n.headline).sort((a, b) => b.datetime - a.datetime).slice(0, 12);
       res.cn = items.map((n) => ({ t: n.datetime, h: n.headline, en: n.headline, src: n.source, url: n.url }));
-      if (lang === "ru" && items.length) {
+      if (TR_LANG[lang] && items.length) {
         translateState.errors = [];
-        const ru = await translateLines(items.map((n) => n.headline));
-        res.cn.forEach((n, i) => { n.h = ru[i] || n.en; });
-        if (ru.every((x, i) => x === items[i].headline)) res.errors.push("translation: " + (translateState.errors[0] || "unavailable"));
+        const tr = await translateLines(items.map((n) => n.headline), lang);
+        res.cn.forEach((n, i) => { n.h = tr[i] || n.en; });
+        if (tr.every((x, i) => x === items[i].headline)) res.errors.push("translation: " + (translateState.errors[0] || "unavailable"));
       }
     }));
   }
