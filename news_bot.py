@@ -224,6 +224,12 @@ def _text(el) -> str:
     return "".join(el.itertext()).strip()
 
 
+def _web_link(s: str) -> str:
+    """Only ordinary web links (http/https) leave the feed: anything else (javascript:, data:, ...) is dropped."""
+    s = (s or "").strip()
+    return s if re.match(r"https?://", s, re.I) else ""
+
+
 def _clean(s: str) -> str:
     s = re.sub(r"<[^>]+>", " ", s or "")
     s = html.unescape(s)
@@ -290,7 +296,7 @@ def parse_feed(raw: bytes):
         if title:
             items.append({
                 "title": _clean(title),
-                "link": link.strip(),
+                "link": _web_link(link),
                 "summary": _clean(summary)[:500],
                 "published": _parse_date(date),
                 "categories": [c.strip() for c in cats if c],

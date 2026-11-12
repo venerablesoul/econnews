@@ -285,7 +285,7 @@
       var li = el('li', n.level);
       var title = I.newsTitle(n), lead = I.newsLead(n), sum = I.aiSum(n);
       var a = el('a', null, title);
-      if (n.link){ a.href = n.link; a.target = '_blank'; a.rel = 'noopener' }
+      if (/^https?:\/\//i.test(n.link || '')){ a.href = n.link; a.target = '_blank'; a.rel = 'noopener' }
       li.appendChild(a);
       // the original headline under the translation (when the reader's language is not the original one)
       var orig = n.original !== undefined && n.lang === undefined ? (RU ? n.original : '') : (n.title !== title ? n.title : '');
