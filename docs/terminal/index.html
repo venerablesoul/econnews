@@ -490,7 +490,11 @@ nav.tabs{display:none}
 .gx-tbl{overflow:auto;flex:none;max-height:58vh}
 .gx-tbl .tbl td{white-space:nowrap}
 .tbl.mx td{font-size:12px}
-.fl-cv{flex:1;min-height:380px}
+.fl-cv{flex:1;min-height:380px;cursor:grab;touch-action:pan-y;border-radius:6px;overflow:hidden}
+.fl-cv.grabbing{cursor:grabbing}
+.zctl{position:absolute;top:6px;right:6px;z-index:2;display:flex;flex-direction:column;gap:3px;padding:3px;border-radius:9px;background:rgba(14,17,22,.86);border:1px solid var(--line2);cursor:default}
+.zctl .chipbtn.zb{min-width:26px;height:24px;padding:0 6px;font-weight:600;line-height:1}
+.zhint{font-weight:500;color:var(--muted)}
 .sp-wrap{cursor:default}
 .fbar{display:flex;gap:2px;padding:0 10px 6px;overflow-x:auto;scrollbar-width:none}
 .fbar::-webkit-scrollbar{display:none}

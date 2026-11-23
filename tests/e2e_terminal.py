@@ -576,16 +576,63 @@ def run():
         check("HEAT: the order book is kept in sync (snapshot + diffs, never crossed)", mkt_["n"] > 900 and mkt_["bb"] < mkt_["ba"] and mkt_["tr"] > 100, mkt_)
         check("HEAT: the heatmap draws", fdrawn() > 50000)
         shot(f, "23_heat")
+        # zoom: the wheel narrows the price window, Shift+wheel widens the seconds, a double-click puts it back
+        def hz():
+            return f.evaluate("JSON.stringify(FLOWX.state.z.HEAT)")
+        cvb = f.locator("#flow-body .fl-cv").bounding_box()
+        f.mouse.move(cvb["x"] + cvb["width"] / 2, cvb["y"] + cvb["height"] / 2)
+        z0 = f.evaluate("FLOWX.state.z.HEAT.p")
+        for _ in range(3):
+            f.mouse.wheel(0, -120); f.wait_for_timeout(60)
+        z1 = f.evaluate("FLOWX.state.z.HEAT.p")
+        check("HEAT: the wheel zooms into the price", z1 > z0 * 1.5, (z0, z1))
+        check("HEAT: zoomed in, the heatmap still draws", fdrawn() > 50000)
+        f.keyboard.down("Shift"); f.mouse.wheel(0, -120); f.keyboard.up("Shift"); f.wait_for_timeout(60)
+        check("HEAT: Shift+wheel stretches the time", f.evaluate("FLOWX.state.z.HEAT.t") > 1, hz())
+        f.click("#flow-body .chipbtn.zb:has-text('−')")
+        check("HEAT: the − button zooms out", f.evaluate("FLOWX.state.z.HEAT.p") < z1, hz())
+        f.mouse.dblclick(cvb["x"] + cvb["width"] / 2, cvb["y"] + cvb["height"] / 2)
+        check("HEAT: a double-click resets the zoom", f.evaluate("FLOWX.state.z.HEAT.p === 1 && FLOWX.state.z.HEAT.t === 1"), hz())
+        # cells on whole pixels: the picture has no half-covered rows between price levels (sharp, not smeared)
+        sharp = f.evaluate("""(function(){
+          for (var i = 0; i < 4; i++) FLOWX.state.z.HEAT.p *= 1.25;
+          var w = document.querySelector('#flow-body .fl-cv'); w.__paint();
+          var c = w.querySelector('canvas'), g = c.getContext('2d'), x = Math.floor((c.width - 160 * (window.devicePixelRatio || 1)) - 4);
+          var d = g.getImageData(x, 0, 1, c.height).data, rows = 0, edges = 0;
+          for (var y = 1; y < c.height; y++) { var a = (y - 1) * 4, b = y * 4; if (d[a] !== d[b] || d[a + 1] !== d[b + 1] || d[a + 2] !== d[b + 2]) edges++; rows++ }
+          return {edges: edges, rows: rows};
+        })()""")
+        check("HEAT: zoomed in, price cells are several pixels tall (not a smear of 1-pixel rows)", 0 < sharp["edges"] < sharp["rows"] / 3, sharp)
+        shot(f, "23b_heat_zoom")
+        f.evaluate("FLOWX.state.z.HEAT.p = 1")
         f.fill("#cmd", "BOOK BTC"); f.press("#cmd", "Enter"); f.wait_for_timeout(800)
         check("BOOK: the ladder and the tape draw", fdrawn() > 20000 and "DOM & TAPE" in f.inner_text("#p-flow .ph"))
         f.fill("#cmd", "FOOT BTC"); f.press("#cmd", "Enter"); f.wait_for_timeout(800)
         check("FOOT: footprint candles draw", fdrawn() > 20000)
         shot(f, "24_foot")
+        f.click("#flow-body .chipbtn.zb:has-text('＋')"); f.click("#flow-body .chipbtn.zb:has-text('＋')")
+        check("FOOT: ＋ shows finer price levels", f.evaluate("FLOWX.state.z.FOOT.p") == 4 and fdrawn() > 20000, f.evaluate("JSON.stringify(FLOWX.state.z.FOOT)"))
+        shot(f, "24b_foot_zoom")
+        f.click("#flow-body .chipbtn.zb:has-text('⟲')")
+        check("FOOT: ⟲ resets", f.evaluate("FLOWX.state.z.FOOT.p") == 2)
         f.fill("#cmd", "CVD BTC"); f.press("#cmd", "Enter")
         f.wait_for_function("FLOWX.market() && FLOWX.market().kl && FLOWX.market().kl.bars.length >= 400", timeout=8000)
         f.wait_for_timeout(600)
         check("CVD: price, cumulative delta and bar delta draw", fdrawn() > 20000)
         shot(f, "25_cvd")
+        cvb = f.locator("#flow-body .fl-cv").bounding_box()
+        f.mouse.move(cvb["x"] + cvb["width"] / 2, cvb["y"] + cvb["height"] / 3)
+        n0 = f.evaluate("FLOWX.state.z.CVD.n")
+        f.mouse.wheel(0, -120); f.mouse.wheel(0, -120); f.wait_for_timeout(60)
+        n1 = f.evaluate("FLOWX.state.z.CVD.n")
+        check("CVD: the wheel shows fewer, wider bars", 15 <= n1 < n0, (n0, n1))
+        f.mouse.down(); f.mouse.move(cvb["x"] + cvb["width"] / 2 + 200, cvb["y"] + cvb["height"] / 3, steps=5); f.mouse.up()
+        off = f.evaluate("FLOWX.state.z.CVD.off")
+        check("CVD: dragging scrolls back in time", off > 10, off)
+        check("CVD: scrolled back, it still draws", fdrawn() > 20000)
+        shot(f, "25b_cvd_zoom")
+        f.mouse.dblclick(cvb["x"] + cvb["width"] / 2, cvb["y"] + cvb["height"] / 3)
+        check("CVD: a double-click goes back to now", f.evaluate("FLOWX.state.z.CVD.off") == 0)
         # Binance refuses the bars: asked again after a pause, not four times a second (it limits how often one asks)
         kl_calls = []
 

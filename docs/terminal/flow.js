@@ -17,6 +17,11 @@ var HOSTS = [{rest: 'https://api.binance.com', ws: 'wss://stream.binance.com:944
 var COINS = ['BTC', 'ETH', 'SOL', 'BNB', 'XRP', 'DOGE'];
 var fl = {tab: 'HEAT', coin: store('flow_coin') || 'BTC', tf: store('flow_tf') || '1m', ftf: '1m', host: +(store('flow_host') || 0) % HOSTS.length};
 if (!/^[A-Z0-9]{2,10}$/.test(fl.coin)) fl.coin = 'BTC';
+// zoom and scroll of each picture. HEAT: p — price zoom, t — time zoom, off — seconds scrolled back, po — price moved;
+// FOOT: p — price detail (an index in FOOT_MULT), w — column width, off — bars scrolled back; CVD: n — bars on screen, off
+var FOOT_MULT = [20, 10, 5, 2, 1];
+function zdef(){ return {HEAT: {p: 1, t: 1, off: 0, po: 0}, FOOT: {p: 2, w: 1, off: 0}, CVD: {n: 0, off: 0}} }
+fl.z = zdef();
 F.tabs($('flow-tabs'), 't', function(t){ fl.tab = t; render() });
 
 function css(name, fb){ try { var v = getComputedStyle(document.documentElement).getPropertyValue(name).trim(); return v || fb } catch(e){ return fb } }
@@ -26,6 +31,10 @@ function alpha(hex, a){ var m = /^#?([0-9a-f]{6})$/i.exec(String(hex).trim()); i
 var HEAT = [[16, 20, 28], [28, 52, 96], [36, 110, 140], [70, 170, 140], [220, 200, 110], [250, 230, 170]];
 function heat(t){ t = Math.max(0, Math.min(1, t)) * (HEAT.length - 1); var i = Math.min(HEAT.length - 2, Math.floor(t)), f = t - i, a = HEAT[i], b = HEAT[i + 1]; return 'rgb(' + Math.round(a[0] + (b[0] - a[0]) * f) + ',' + Math.round(a[1] + (b[1] - a[1]) * f) + ',' + Math.round(a[2] + (b[2] - a[2]) * f) + ')' }
 function dg(p){ return p >= 1000 ? 1 : p >= 10 ? 2 : p >= 1 ? 3 : 5 }
+// a round step for axis labels: 1, 2 or 5 × a power of ten
+// a caption over a chart: on a dark backing, so lines and bars do not run through the letters
+function label(g, text, x, y, K){ var w = g.measureText(text).width; g.fillStyle = 'rgba(14,17,22,.82)'; g.fillRect(x - 3, y - 8, w + 6, 16); g.fillStyle = K.muted; g.fillText(text, x, y) }
+function niceStep(x){ var e = Math.pow(10, Math.floor(Math.log10(x))), f = x / e; return (f >= 5 ? 5 : f >= 2 ? 2 : 1) * e }
 function qty(v){ return v >= 1000 ? fmt(v, 0) : v >= 10 ? fmt(v, 1) : v >= 1 ? fmt(v, 2) : fmt(v, 3) }
 function usdShort(v){ return v >= 1e6 ? '$' + fmt(v / 1e6, 2) + 'M' : v >= 1e3 ? '$' + fmt(v / 1e3, 1) + 'K' : '$' + fmt(v, 0) }
 function hms(ms){ return new Date(ms).toLocaleTimeString(I.date, {hour: '2-digit', minute: '2-digit', second: '2-digit', timeZone: T.MSK}) }
@@ -40,12 +49,15 @@ function tipShow(lines, e){
   t.style.left = x + 'px'; t.style.top = y + 'px';
 }
 function untip(){ $('tm-tip').style.display = 'none' }
+// a coordinate on the screen's own pixels (also when the browser zooms 125 % or 150 %), so edges stay sharp
+var PXR = 1;
+function px(v){ return Math.round(v * PXR) / PXR }
 function canvasIn(wrap){
   var W = wrap.clientWidth, H = wrap.clientHeight; if (!W || !H) return null;
   var cv = wrap.querySelector('canvas'), dpr = window.devicePixelRatio || 1;
   if (!cv) { cv = el('canvas'); wrap.appendChild(cv) }
   if (cv.width !== Math.round(W * dpr) || cv.height !== Math.round(H * dpr)) { cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr) }
-  var g = cv.getContext('2d'); g.setTransform(dpr, 0, 0, dpr, 0, 0); g.clearRect(0, 0, W, H);
+  var g = cv.getContext('2d'); g.setTransform(dpr, 0, 0, dpr, 0, 0); g.clearRect(0, 0, W, H); PXR = dpr;
   g.font = '11px ' + getComputedStyle(document.body).fontFamily; g.textBaseline = 'middle';
   return {cv: cv, g: g, W: W, H: H};
 }
@@ -161,7 +173,7 @@ function addFoot(m, t){
   var span = fl.ftf === '5m' ? 300e3 : 60e3, k = Math.floor(t.t / span) * span;
   if (!m.step) m.step = stepFor(t.p);
   var b = m.foot[k] || (m.foot[k] = {t: k, lv: {}, o: t.p, h: t.p, l: t.p, c: t.p, buy: 0, sell: 0});
-  var lvl = Math.floor(t.p / (m.step * 5)), c = b.lv[lvl] || (b.lv[lvl] = [0, 0]);   // the level's number: price = lvl × 5 steps
+  var lvl = Math.floor(t.p / m.step), c = b.lv[lvl] || (b.lv[lvl] = [0, 0]);   // the level's number: price = lvl × one step (grouped when drawn)
   if (t.sell) { c[0] += t.q; b.sell += t.q } else { c[1] += t.q; b.buy += t.q }
   b.h = Math.max(b.h, t.p); b.l = Math.min(b.l, t.p); b.c = t.p;
   var keys = Object.keys(m.foot); if (keys.length > 90) keys.sort(function(a, b2){ return a - b2 }).slice(0, keys.length - 90).forEach(function(x){ delete m.foot[x] });
@@ -187,7 +199,7 @@ function sample(m){
   var now = Date.now(); if (now - m.lastCol < 1000 || !m.synced) return;
   m.lastCol = now;
   var bb = bestBid(m), ba = bestAsk(m); if (!isFinite(bb) || !isFinite(ba)) return;
-  var mid = (bb + ba) / 2, step = m.step || (m.step = stepFor(mid)), band = mid * 0.006, col = {t: now, bb: bb, ba: ba, mid: mid, q: {}};
+  var mid = (bb + ba) / 2, step = m.hstep || (m.hstep = (m.step || (m.step = stepFor(mid))) / 2), band = mid * 0.006, col = {t: now, bb: bb, ba: ba, mid: mid, q: {}};
   var add = function(p, q){ if (Math.abs(p - mid) > band) return; var k = Math.round(p / step); col.q[k] = (col.q[k] || 0) + q };
   m.bids.forEach(function(q, p){ add(p, q) }); m.asks.forEach(function(q, p){ add(p, q) });
   m.cols.push(col); if (m.cols.length > 900) m.cols.shift();
@@ -227,15 +239,78 @@ function render(){
       f.appendChild(b);
     });
   }
+  var wrap = el('div', 'cv fl-cv');
+  if (fl.tab !== 'BOOK') {
+    // the zoom buttons stand on the price axis (top right), so they cover no data and the toolbar keeps one line
+    var zc = el('div', 'zctl z-' + fl.tab); wrap.appendChild(zc);
+    [['−', -1, 'zoom_out_t'], ['＋', 1, 'zoom_in_t'], ['⟲', 0, 'zoom_reset_t']].forEach(function(z){
+      var b = el('button', 'chipbtn zb', z[0]); b.type = 'button'; b.title = TX(z[2]) + ' — ' + TX('fl_zoom_hint_' + (fl.tab === 'CVD' ? 'CVD' : 'XY'));
+      b.onclick = function(){ if (z[1]) zoomBy(z[1], false); else fl.z[fl.tab] = zdef()[fl.tab]; repaint() };
+      zc.appendChild(b);
+    });
+  }
   box.appendChild(f);
-  var wrap = el('div', 'cv fl-cv'); box.appendChild(wrap);
+  box.appendChild(wrap);
   wrap.__paint = function(){ ({HEAT: paintHeat, BOOK: paintBook, FOOT: paintFoot, CVD: paintCvd}[fl.tab] || paintHeat)(wrap) };
-  box.appendChild(el('div', 'note', TX('fl_note_' + fl.tab)));
+  var repaint = function(){ try { wrap.__paint() } catch(e){ console.error(e) } };
+  if (fl.tab !== 'BOOK') zoomable(wrap, repaint);
+  var note = el('div', 'note', TX('fl_note_' + fl.tab));
+  if (fl.tab !== 'BOOK') { note.appendChild(el('br')); note.appendChild(el('b', 'zhint', '🔍 ' + TX('fl_zoom_hint_' + (fl.tab === 'CVD' ? 'CVD' : 'XY')))) }
+  box.appendChild(note);
   start();
   if (fl.tab === 'CVD' && M && !M.kl && M.opened) klines(M).catch(function(e){ status(TX('fl_fail', e.message || e), true) });
   if (M && M.synced) loop();
 }
-function setCoin(c){ fl.coin = c; store('flow_coin', c); stop(); render() }
+function setCoin(c){ fl.coin = c; store('flow_coin', c); fl.z = zdef(); stop(); render() }
+// zoom in (+1) or out (−1). Wheel: price detail in HEAT and FOOT, time in CVD; with Shift: time in HEAT and FOOT
+function zoomBy(dir, shift){
+  var z = fl.z[fl.tab], k = dir > 0 ? 1.25 : 0.8;
+  if (fl.tab === 'HEAT') { if (shift) z.t = Math.max(0.5, Math.min(7, z.t * k)); else z.p *= k }
+  else if (fl.tab === 'FOOT') { if (shift) z.w = Math.max(0.6, Math.min(2.2, z.w * k)); else z.p = Math.max(0, Math.min(FOOT_MULT.length - 1, z.p + dir)) }
+  else if (fl.tab === 'CVD') z.n = (z.n || 160) / k;
+}
+// the mouse on a picture: the wheel zooms, dragging scrolls back in time (and moves the price in HEAT), a double-click resets
+function zoomable(wrap, repaint){
+  var wheelAt = 0;
+  wrap.addEventListener('wheel', function(e){
+    e.preventDefault();
+    if (fl.tab === 'FOOT' && !e.shiftKey && Date.now() - wheelAt < 180) return;   // one detail step per notch, not per pixel
+    wheelAt = Date.now(); zoomBy(e.deltaY < 0 ? 1 : -1, e.shiftKey); untip(); repaint();
+  }, {passive: false});
+  wrap.addEventListener('dblclick', function(e){ if (e.target.closest('.zctl')) return; fl.z[fl.tab] = zdef()[fl.tab]; repaint() });
+  // one finger or the mouse scrolls; two fingers pinch: apart — closer in, together — further out
+  // (a sideways pinch is time in HEAT and FOOT, an up-and-down one is price)
+  var pts = {}, drag = null, pinch = null;
+  function two(){ var k = Object.keys(pts); return k.length === 2 ? [pts[k[0]], pts[k[1]]] : null }
+  wrap.addEventListener('pointerdown', function(e){
+    if ((e.pointerType === 'mouse' && e.button !== 0) || e.target.closest('.zctl')) return;
+    pts[e.pointerId] = {x: e.clientX, y: e.clientY};
+    try { wrap.setPointerCapture(e.pointerId) } catch(err){}
+    var p2 = two();
+    if (p2) { drag = null; pinch = {d: Math.hypot(p2[0].x - p2[1].x, p2[0].y - p2[1].y), side: Math.abs(p2[0].x - p2[1].x) > Math.abs(p2[0].y - p2[1].y)}; return }
+    var z = fl.z[fl.tab], H = wrap.clientHeight, W = wrap.clientWidth, m = M;
+    // how many seconds or bars one pixel is, and how much price
+    drag = {x0: e.clientX, y0: e.clientY, off0: z.off, po0: z.po || 0,
+      perX: fl.tab === 'HEAT' ? 1 / Math.max(1, Math.round(2 * z.t)) : fl.tab === 'FOOT' ? 1 / Math.round(96 * z.w) : (z.n || 160) / Math.max(1, W - 72),
+      perY: fl.tab === 'HEAT' && m && m.cols.length ? 2 * m.cols[m.cols.length - 1].mid * 0.0035 / z.p / H : 0};
+    wrap.classList.add('grabbing');
+  });
+  wrap.addEventListener('pointermove', function(e){
+    if (!pts[e.pointerId]) return;
+    pts[e.pointerId] = {x: e.clientX, y: e.clientY};
+    var z = fl.z[fl.tab], p2 = two();
+    if (p2 && pinch) {
+      var d = Math.hypot(p2[0].x - p2[1].x, p2[0].y - p2[1].y);
+      if (d > pinch.d * 1.18 || d < pinch.d / 1.18) { zoomBy(d > pinch.d ? 1 : -1, pinch.side); pinch.d = d; untip(); repaint() }
+      return;
+    }
+    if (!drag) return;
+    z.off = drag.off0 + (e.clientX - drag.x0) * drag.perX; if (drag.perY) z.po = drag.po0 + (e.clientY - drag.y0) * drag.perY;
+    untip(); repaint();
+  });
+  function up(e){ delete pts[e.pointerId]; if (!two()) pinch = null; drag = null; wrap.classList.remove('grabbing') }
+  wrap.addEventListener('pointerup', up); wrap.addEventListener('pointercancel', up);
+}
 F.RENDER['p-flow'] = function(){ if (!$('flow-body').querySelector('.fl-cv')) render(); else if (!M) start() };
 document.addEventListener('visibilitychange', function(){ if (!document.hidden && F.visible('p-flow') && !M) render() });
 
@@ -246,48 +321,65 @@ function paintHeat(wrap){
   var c = canvasIn(wrap); if (!c) return;
   var g = c.g, W = c.W, H = c.H, K = C(), m = M;
   if (!m || !m.cols.length) return waiting(wrap, g, W, H);
-  var R = 70, PR = 90, cols = m.cols, last = cols[cols.length - 1], step = m.step;
-  var plotW = W - R - PR, cw = 2, cap = Math.floor(plotW / cw), view = cols.slice(-cap), n = view.length;
+  var R = 70, PR = 90, cols = m.cols, cur = cols[cols.length - 1], step = m.hstep || m.step, z = fl.z.HEAT, plotW = W - R - PR;
+  // a column per second; while there are few seconds the columns are wider, so the picture fills the panel at once
+  var cw = Math.max(Math.max(1, Math.round(2 * z.t)), Math.min(48, Math.floor(plotW / Math.max(1, cols.length)))), cap = Math.floor(plotW / cw);
+  z.off = Math.max(0, Math.min(Math.round(z.off), cols.length - Math.min(cap, cols.length)));
+  var view = cols.slice(Math.max(0, cols.length - cap - z.off), cols.length - z.off), n = view.length, last = view[n - 1];
   var X0 = plotW - n * cw;   // the newest second at the right edge; the left fills up as time goes
-  var mid = last.mid, band = mid * 0.0035, lo = mid - band, hi = mid + band;
-  var Y = function(p){ return (hi - p) / (hi - lo) * H }, rowH = Math.max(1, step / (hi - lo) * H);
+  var zmax = (cur.mid * 0.0035) / (12 * step);   // at most ~12 price cells on the screen's height
+  z.p = Math.max(0.6, Math.min(Math.max(1, zmax), z.p));
+  var mid = cur.mid + z.po, band = cur.mid * 0.0035 / z.p, lo = mid - band, hi = mid + band;
+  var Y = function(p){ return (hi - p) / (hi - lo) * H };
+  // several price steps in one cell when a step is under 2 pixels; cells start and end on whole pixels (no blur)
+  var rawH = step / (hi - lo) * H, bin = Math.max(1, Math.ceil(2 / rawH)), bstep = step * bin, rowH = Math.max(1, bstep / (hi - lo) * H);
+  var YP = function(p){ return px(Y(p)) }, blo = Math.floor(lo / bstep) - 1, bhi = Math.ceil(hi / bstep) + 1;
+  // a cell b holds the levels b×bin … b×bin+bin−1 (each level is centred on its price); kept on the column, so a frame only groups new seconds
+  var aggs = view.map(function(col){
+    if (col.gb !== bin) { var o = {}; for (var k in col.q) { var b = Math.floor((+k + 0.5) / bin); o[b] = (o[b] || 0) + col.q[k] } col.gb = bin; col.go = o }
+    return col.go;
+  });
+  var cellTop = function(b){ return YP(((+b + 1) * bin - 0.5) * step) }, cellBot = function(b){ return YP((b * bin - 0.5) * step) };
   // the brightness scale: the 97th percentile of what is on screen
-  var vals = []; view.forEach(function(col){ for (var k in col.q) { var p = k * step; if (p >= lo && p <= hi) vals.push(col.q[k]) } });
+  var vals = []; aggs.forEach(function(o){ for (var b in o) if (b >= blo && b <= bhi) vals.push(o[b]) });
   vals.sort(function(a, b){ return a - b }); var top = vals[Math.floor(vals.length * 0.97)] || 1;
   g.fillStyle = 'rgb(16,20,28)'; g.fillRect(0, 0, plotW, H);
-  view.forEach(function(col, i){
-    var x = X0 + i * cw;
-    for (var k in col.q) { var p = k * step; if (p < lo || p > hi) continue; g.fillStyle = heat(Math.sqrt(col.q[k] / top)); g.fillRect(x, Y(p) - rowH / 2, cw + 0.6, rowH + 0.6) }
+  aggs.forEach(function(o, i){
+    var x1 = px(X0 + i * cw), x2 = px(X0 + (i + 1) * cw);
+    for (var b in o) { if (b < blo || b > bhi) continue; var y1 = cellTop(b), y2 = cellBot(+b); g.fillStyle = heat(Math.sqrt(o[b] / top)); g.fillRect(x1, y1, x2 - x1, Math.max(1 / PXR, y2 - y1)) }
   });
   // best bid and ask
   ['bb', 'ba'].forEach(function(key){
-    g.beginPath(); view.forEach(function(col, i){ var y = Y(col[key]); i ? g.lineTo(X0 + (i + 1) * cw, y) : g.moveTo(X0, y) });
-    g.strokeStyle = key === 'bb' ? K.up : K.down; g.lineWidth = 1.2; g.stroke(); g.lineWidth = 1;
+    // a step line: the price held for the whole second, then the jump — as the book really moves
+    g.beginPath(); view.forEach(function(col, i){ var y = px(Y(col[key])) + 0.5; if (i) g.lineTo(X0 + i * cw, y); else g.moveTo(X0, y); g.lineTo(X0 + (i + 1) * cw, y) });
+    g.strokeStyle = key === 'bb' ? K.up : K.down; g.lineWidth = 1.5; g.lineJoin = 'miter'; g.stroke(); g.lineWidth = 1;
   });
   // trades in the window
-  var t0 = view[0].t, t1 = last.t, mx = 0, tr = m.trades.filter(function(t){ return t.t >= t0 - 1000 && t.p >= lo && t.p <= hi });
+  var t0 = view[0].t, t1 = last.t, mx = 0, tr = m.trades.filter(function(t){ return t.t >= t0 - 1000 && t.t <= t1 + 1000 && t.p >= lo && t.p <= hi });
   tr.forEach(function(t){ if (t.q > mx) mx = t.q });
   tr.forEach(function(t){
     var x = plotW - (t1 - t.t) / 1000 * cw - cw / 2, r = Math.max(1.3, Math.sqrt(t.q / (mx || 1)) * 11);
-    if (x < X0) return;
+    if (x < X0 || x > plotW) return;
     g.beginPath(); g.arc(x, Y(t.p), r, 0, 6.283); g.fillStyle = t.sell ? alpha(K.down, isBig(m, t) ? 0.85 : 0.45) : alpha(K.up, isBig(m, t) ? 0.85 : 0.45); g.fill();
   });
   // the current book on the right
   var depthW = PR - 6, bx = plotW + 4, qmax = 0, rows = {};
-  var addRow = function(p, q, side){ if (p < lo || p > hi) return; var k = Math.round(p / (step * 2)); rows[k] = rows[k] || [0, 0]; rows[k][side] += q; qmax = Math.max(qmax, rows[k][side]) };
+  var rstep = Math.max(bstep, (m.step || step) * Math.max(1, Math.round(2 / z.p))), rh = Math.max(1, Math.round(rstep / (hi - lo) * H) - 1);
+  var addRow = function(p, q, side){ if (p < lo || p > hi) return; var k = Math.round(p / rstep); rows[k] = rows[k] || [0, 0]; rows[k][side] += q; qmax = Math.max(qmax, rows[k][side]) };
   m.bids.forEach(function(q, p){ addRow(p, q, 0) }); m.asks.forEach(function(q, p){ addRow(p, q, 1) });
-  for (var k in rows) { var y = Y(k * step * 2), bh = Math.max(1, rowH * 2 - 1); if (rows[k][0]) { g.fillStyle = alpha(K.up, 0.6); g.fillRect(bx, y - bh / 2, rows[k][0] / qmax * depthW, bh) } if (rows[k][1]) { g.fillStyle = alpha(K.down, 0.6); g.fillRect(bx, y - bh / 2, rows[k][1] / qmax * depthW, bh) } }
+  for (var k in rows) { var bh = rh, y = px(Y(k * rstep) - bh / 2) + bh / 2; if (rows[k][0]) { g.fillStyle = alpha(K.up, 0.6); g.fillRect(bx, y - bh / 2, rows[k][0] / qmax * depthW, bh) } if (rows[k][1]) { g.fillStyle = alpha(K.down, 0.6); g.fillRect(bx, y - bh / 2, rows[k][1] / qmax * depthW, bh) } }
   // the price axis
   g.fillStyle = K.faint;
-  var dd = dg(mid), tickStep = (hi - lo) / 8;
-  for (var j = 0; j <= 8; j++) { var p = lo + tickStep * j; g.fillText(fmt(p, dd), W - R + 6, Y(p)) }
-  g.fillStyle = K.text; g.fillRect(W - R + 2, Y(mid) - 8, R - 4, 16); g.fillStyle = K.bg; g.fillText(fmt(mid, dd), W - R + 6, Y(mid));
-  g.fillStyle = K.muted; g.fillText(hms(t0) + ' → ' + hms(t1), 6, H - 8);
+  var dd = dg(mid), tickStep = niceStep((hi - lo) / 8);
+  for (var p = Math.ceil(lo / tickStep) * tickStep; p <= hi; p += tickStep) { g.fillText(fmt(p, tickStep < 1 ? dd : Math.max(0, dd - 1)), W - R + 6, Y(p)); g.fillStyle = alpha(K.text, 0.04); g.fillRect(0, YP(p), plotW, 1); g.fillStyle = K.faint }
+  var py = Math.max(8, Math.min(H - 8, Y(cur.mid)));
+  g.fillStyle = K.text; g.fillRect(W - R + 2, py - 8, R - 4, 16); g.fillStyle = K.bg; g.fillText(fmt(cur.mid, dd), W - R + 6, py);
+  label(g, hms(t0) + ' → ' + hms(t1) + (z.off ? '  ⟲' : ''), 6, H - 10, K);
   c.cv.onmousemove = function(e){
     var r = c.cv.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top;
     if (x > plotW) return untip();
-    var i = Math.max(0, Math.min(view.length - 1, Math.floor((x - X0) / cw))), col = view[i], p = hi - y / H * (hi - lo), k = Math.round(p / step);
-    tipShow([[hms(col.t)], [TX('fl_price') + ' ' + fmt(k * step, dd)], [TX('fl_resting') + ' ' + qty(col.q[k] || 0) + ' ' + m.coin]], e);
+    var i = Math.max(0, Math.min(view.length - 1, Math.floor((x - X0) / cw))), col = view[i], p = hi - y / H * (hi - lo), b = Math.floor((p / step + 0.5) / bin);
+    tipShow([[hms(col.t)], [TX('fl_price') + ' ' + fmt(b * bin * step, dd) + (bin > 1 ? '–' + fmt(((b + 1) * bin - 1) * step, dd) : '')], [TX('fl_resting') + ' ' + qty(aggs[i][b] || 0) + ' ' + m.coin]], e);
   };
   c.cv.onmouseleave = untip;
 }
@@ -339,35 +431,47 @@ function paintFoot(wrap){
   var g = c.g, W = c.W, H = c.H, K = C(), m = M;
   var keys = m ? Object.keys(m.foot).map(Number).sort(function(a, b){ return a - b }) : [];
   if (!keys.length) return waiting(wrap, g, W, H);
-  var R = 66, B = 34, colW = 96, n = Math.max(1, Math.min(keys.length, Math.floor((W - R) / colW))), bars = keys.slice(-n).map(function(k){ return m.foot[k] });
-  var lo = Infinity, hi = -Infinity, lstep = (m.step || stepFor(bars[0].c)) * 5;
+  var z = fl.z.FOOT, R = 66, B = 34, colW = Math.round(96 * z.w), cap = Math.max(1, Math.floor((W - R) / colW));
+  z.off = Math.max(0, Math.min(Math.round(z.off), keys.length - Math.min(cap, keys.length)));
+  var sel = keys.slice(Math.max(0, keys.length - cap - z.off), keys.length - z.off), n = sel.length;
+  // each bar keeps every price step; here they are grouped by the zoom (20, 10, 5, 2 or 1 steps per row)
+  var mult = FOOT_MULT[z.p], bars = sel.map(function(k){
+    var b = m.foot[k], lv = {};
+    Object.keys(b.lv).forEach(function(x){ var gi = Math.floor(+x / mult), c = lv[gi] || (lv[gi] = [0, 0]); c[0] += b.lv[x][0]; c[1] += b.lv[x][1] });
+    return {t: b.t, o: b.o, h: b.h, l: b.l, c: b.c, buy: b.buy, sell: b.sell, lv: lv};
+  });
+  var lo = Infinity, hi = -Infinity, lstep = (m.step || stepFor(bars[0].c)) * mult;
   bars.forEach(function(b){ lo = Math.min(lo, b.l); hi = Math.max(hi, b.h) });
   lo = Math.floor(lo / lstep) * lstep - lstep; hi = Math.ceil(hi / lstep) * lstep + lstep;
   var nl = Math.round((hi - lo) / lstep), rowH = (H - B - 6) / nl, Y = function(p){ return 4 + (hi - p) / (hi - lo) * (H - B - 6) }, dd = dg(bars[0].c);
-  var showNums = rowH >= 11;
+  var YP = function(p){ return px(Y(p)) }, showNums = rowH >= 11 && colW >= 70;
+  g.font = (rowH >= 15 ? '11px ' : '10px ') + g.font.replace(/^\S+\s+/, '');
   bars.forEach(function(b, i){
     var x = i * colW, vmax = 0, poc = null;
     Object.keys(b.lv).forEach(function(k){ var v = b.lv[k][0] + b.lv[k][1]; if (v > vmax) { vmax = v; poc = +k } });
     Object.keys(b.lv).forEach(function(k){
-      var li = +k, p = li * lstep, s = b.lv[k][0], a = b.lv[k][1], y = Y(p + lstep), h = Math.max(1, rowH - 1);
+      var li = +k, p = li * lstep, s = b.lv[k][0], a = b.lv[k][1], y = YP(p + lstep), h = Math.max(1 / PXR, YP(p) - y - (rowH >= 4 ? 1 : 0));
       var below = b.lv[li - 1];
       var tot = s + a, dlt = tot ? (a - s) / tot : 0;
       g.fillStyle = dlt >= 0 ? alpha(K.up, 0.12 + 0.5 * Math.abs(dlt) * Math.min(1, tot / vmax * 2)) : alpha(K.down, 0.12 + 0.5 * Math.abs(dlt) * Math.min(1, tot / vmax * 2));
-      g.fillRect(x + 4, y, colW - 8, h);
+      g.fillRect(x + 6, y, colW - 10, h);
       // a diagonal imbalance: buying at this price ≥ 3× selling one level lower (and the other way)
       var sb = below ? below[0] : 0;
-      if (a >= 3 * Math.max(sb, 1e-9) && a > vmax * 0.05) { g.strokeStyle = K.up; g.strokeRect(x + colW / 2, y + 0.5, colW / 2 - 5, h - 1) }
-      if (li === poc) { g.strokeStyle = K.warm; g.strokeRect(x + 4.5, y + 0.5, colW - 9, h - 1) }
+      if (h >= 3 && a >= 3 * Math.max(sb, 1e-9) && a > vmax * 0.05) { g.strokeStyle = K.up; g.strokeRect(Math.round(x + colW / 2) + 0.5, y + 0.5, Math.round(colW / 2) - 5, h - 1) }
+      if (li === poc) { g.strokeStyle = K.warm; g.strokeRect(x + 6.5, y + 0.5, colW - 11, Math.max(1, h - 1)) }
       if (showNums) { g.fillStyle = K.down; g.textAlign = 'right'; g.fillText(qty(s), x + colW / 2 - 4, y + h / 2); g.fillStyle = K.up; g.textAlign = 'left'; g.fillText(qty(a), x + colW / 2 + 4, y + h / 2) }
     });
     // the candle body as a thin line on the left edge
-    var up = b.c >= b.o; g.strokeStyle = up ? K.up : K.down; g.beginPath(); g.moveTo(x + 2, Y(b.h)); g.lineTo(x + 2, Y(b.l)); g.stroke();
-    g.lineWidth = 3; g.beginPath(); g.moveTo(x + 2, Y(b.o)); g.lineTo(x + 2, Y(b.c)); g.stroke(); g.lineWidth = 1;
+    var up = b.c >= b.o; g.fillStyle = up ? K.up : K.down; g.fillRect(x + 2, YP(b.h), 1, Math.max(1, YP(b.l) - YP(b.h)));
+    var by = YP(Math.max(b.o, b.c)); g.fillRect(x + 1, by, 3, Math.max(1, YP(Math.min(b.o, b.c)) - by));
+    if (i) { g.fillStyle = alpha(K.text, 0.05); g.fillRect(x, 0, 1, H - B) }
     // delta and time under the candle
     var dlt = b.buy - b.sell; g.textAlign = 'center'; g.fillStyle = dlt >= 0 ? K.up : K.down; g.fillText('Δ ' + (dlt >= 0 ? '+' : '−') + qty(Math.abs(dlt)), x + colW / 2, H - B + 10);
     g.fillStyle = K.faint; g.fillText(hm(b.t), x + colW / 2, H - B + 24); g.textAlign = 'left';
   });
-  g.fillStyle = K.faint; for (var j = 0; j <= nl; j += Math.max(1, Math.ceil(nl / 14))) g.fillText(fmt(lo + j * lstep, dd), W - R + 6, Y(lo + j * lstep));
+  g.fillStyle = K.faint; for (var j = 0; j <= nl; j += Math.max(1, Math.ceil(nl / 14))) g.fillText(fmt(lo + j * lstep, lstep < 1 ? dd : Math.max(0, dd - 1)), W - R + 6, Y(lo + j * lstep));
+  var lb = bars[n - 1], lyy = YP(lb.c); g.fillStyle = lb.c >= lb.o ? K.up : K.down; g.fillRect(W - R + 2, lyy - 8, R - 4, 16); g.fillStyle = K.bg; g.fillText(fmt(lb.c, dd), W - R + 6, lyy);
+  label(g, TX('fl_row') + ' ' + fmt(lstep, lstep < 1 ? dd : 0) + (z.off ? ' ⟲' : ''), W - R + 4, H - 12, K);
   c.cv.onmousemove = function(e){
     var r = c.cv.getBoundingClientRect(), i = Math.floor((e.clientX - r.left) / colW), p = hi - (e.clientY - r.top - 4) / (H - B - 6) * (hi - lo);
     var b = bars[i]; if (!b) return untip();
@@ -387,30 +491,43 @@ function paintCvd(wrap){
     klines(m).catch(function(e){ m.klFailAt = Date.now(); status(TX('fl_fail', e.message || e), true) }).then(function(){ m.klLoading = false });
   }
   if (!m || !m.kl || !m.kl.bars.length) return waiting(wrap, g, W, H);
-  var R = 66, L = 6, bars = m.kl.bars, n = Math.min(bars.length, Math.floor((W - L - R) / 3)), v = bars.slice(-n);
-  var h1 = H * 0.55, h2 = H * 0.27, h3 = H - h1 - h2 - 18, bw = (W - L - R) / n, X = function(i){ return L + (i + 0.5) * bw };
+  var z = fl.z.CVD, R = 66, L = 6, bars = m.kl.bars, fit = Math.min(bars.length, Math.floor((W - L - R) / 3));
+  if (!z.n) z.n = Math.min(bars.length, 160);   // about two and a half hours of 1-minute bars: candles you can read
+  z.n = Math.max(15, Math.min(fit, Math.round(z.n)));
+  z.off = Math.max(0, Math.min(Math.round(z.off), bars.length - z.n));
+  var v = bars.slice(bars.length - z.n - z.off, bars.length - z.off), n = v.length;
+  var h1 = H * 0.55, h2 = H * 0.27, h3 = H - h1 - h2 - 18, bw = (W - L - R) / n, X = function(i){ return Math.round(L + (i + 0.5) * bw) + 0.5 };
   var lo = Infinity, hi = -Infinity; v.forEach(function(b){ lo = Math.min(lo, b.l); hi = Math.max(hi, b.h) });
   var pad = (hi - lo) * 0.05; lo -= pad; hi += pad;
   var Y = function(p){ return 6 + (hi - p) / (hi - lo) * (h1 - 12) }, dd = dg(v[v.length - 1].c);
-  for (var j = 0; j <= 4; j++) { var p = lo + (hi - lo) * j / 4; g.strokeStyle = alpha(K.text, 0.05); g.beginPath(); g.moveTo(L, Y(p)); g.lineTo(W - R, Y(p)); g.stroke(); g.fillStyle = K.faint; g.fillText(fmt(p, dd), W - R + 6, Y(p)) }
-  v.forEach(function(b, i){ var up = b.c >= b.o, x = X(i); g.strokeStyle = up ? K.up : K.down; g.fillStyle = g.strokeStyle; g.beginPath(); g.moveTo(x, Y(b.h)); g.lineTo(x, Y(b.l)); g.stroke(); var y1 = Y(Math.max(b.o, b.c)), y2 = Y(Math.min(b.o, b.c)); g.fillRect(x - Math.max(0.5, bw * 0.35), y1, Math.max(1, bw * 0.7), Math.max(1, y2 - y1)) });
+  var gs = niceStep((hi - lo) / 5);
+  for (var p = Math.ceil(lo / gs) * gs; p <= hi; p += gs) { var gy = Math.round(Y(p)) + 0.5; if (gy > h1 - 8) continue; g.strokeStyle = alpha(K.text, 0.05); g.beginPath(); g.moveTo(L, gy); g.lineTo(W - R, gy); g.stroke(); g.fillStyle = K.faint; g.fillText(fmt(p, gs < 1 ? dd : Math.max(0, dd - 1)), W - R + 6, gy) }
+  // the last price on the axis
+  var lc = v[n - 1].c, ly = Math.round(Y(lc)) + 0.5, lup = lc >= v[n - 1].o;
+  g.setLineDash([2, 3]); g.strokeStyle = alpha(lup ? K.up : K.down, 0.6); g.beginPath(); g.moveTo(L, ly); g.lineTo(W - R, ly); g.stroke(); g.setLineDash([]);
+  g.fillStyle = lup ? K.up : K.down; g.fillRect(W - R + 2, ly - 8, R - 4, 16); g.fillStyle = K.bg; g.fillText(fmt(lc, dd), W - R + 6, ly);
+  v.forEach(function(b, i){ var up = b.c >= b.o, x = X(i); g.strokeStyle = up ? K.up : K.down; g.fillStyle = g.strokeStyle; g.beginPath(); g.moveTo(x, Y(b.h)); g.lineTo(x, Y(b.l)); g.stroke(); var y1 = Y(Math.max(b.o, b.c)), y2 = Y(Math.min(b.o, b.c)); var bwp = Math.max(1, 2 * Math.floor(bw * 0.35) + 1), yt = Math.round(y1); g.fillRect(x - 0.5 - (bwp - 1) / 2, yt, bwp, Math.max(1, Math.round(y2) - yt)) });
   // big trades since the panel opened (and the backfilled minutes)
   var t0 = v[0].t, span = TF[m.kl.tf];
   m.big.forEach(function(t){ var i = (t.t - t0) / span; if (i < 0 || i > n) return; var r = Math.max(2.5, Math.min(12, Math.sqrt(t.q * t.p / 50000) * 2)); g.beginPath(); g.arc(X(Math.floor(i)), Y(t.p), r, 0, 6.283); g.strokeStyle = t.sell ? K.down : K.up; g.lineWidth = 1.5; g.stroke(); g.lineWidth = 1 });
+  g.strokeStyle = alpha(K.text, 0.08); g.beginPath(); g.moveTo(L, Math.round(h1) + 0.5); g.lineTo(W - R, Math.round(h1) + 0.5); g.moveTo(L, Math.round(h1 + h2) + 0.5); g.lineTo(W - R, Math.round(h1 + h2) + 0.5); g.stroke();
   // CVD
   var cum = 0, cv = v.map(function(b){ cum += b.d; return cum }), clo = Math.min.apply(null, cv.concat([0])), chi = Math.max.apply(null, cv.concat([0])), csp = (chi - clo) || 1;
   var Y2 = function(x){ return h1 + 6 + (chi - x) / csp * (h2 - 12) };
   g.strokeStyle = alpha(K.text, 0.12); g.beginPath(); g.moveTo(L, Y2(0)); g.lineTo(W - R, Y2(0)); g.stroke();
-  g.beginPath(); cv.forEach(function(x, i){ i ? g.lineTo(X(i), Y2(x)) : g.moveTo(X(i), Y2(x)) }); g.strokeStyle = K.acc; g.lineWidth = 1.6; g.stroke(); g.lineWidth = 1;
-  g.fillStyle = K.muted; g.fillText('CVD ' + (cum >= 0 ? '+' : '−') + qty(Math.abs(cum)) + ' ' + m.coin, L + 4, h1 + 12);
+  g.beginPath(); cv.forEach(function(x, i){ i ? g.lineTo(X(i), Y2(x)) : g.moveTo(X(i), Y2(x)) });
+  g.lineTo(X(n - 1), Y2(0)); g.lineTo(X(0), Y2(0)); g.closePath(); g.fillStyle = alpha(K.acc, 0.10); g.fill();
+  g.beginPath(); cv.forEach(function(x, i){ i ? g.lineTo(X(i), Y2(x)) : g.moveTo(X(i), Y2(x)) }); g.strokeStyle = K.acc; g.lineWidth = 1.6; g.lineJoin = 'round'; g.stroke(); g.lineWidth = 1;
+  label(g, 'CVD ' + (cum >= 0 ? '+' : '−') + qty(Math.abs(cum)) + ' ' + m.coin, L + 4, h1 + 12, K);
   g.fillStyle = K.faint; g.fillText(qty(chi), W - R + 6, Y2(chi)); g.fillText(qty(clo), W - R + 6, Y2(clo));
   // bar delta
   var dmax = Math.max.apply(null, v.map(function(b){ return Math.abs(b.d) })) || 1, y0 = h1 + h2 + 4 + h3 / 2;
-  v.forEach(function(b, i){ var hh = b.d / dmax * (h3 / 2 - 2); g.fillStyle = b.d >= 0 ? alpha(K.up, 0.7) : alpha(K.down, 0.7); g.fillRect(X(i) - Math.max(0.5, bw * 0.35), Math.min(y0, y0 - hh), Math.max(1, bw * 0.7), Math.abs(hh)) });
-  g.fillStyle = K.muted; g.fillText(TX('fl_bar_delta'), L + 4, h1 + h2 + 10);
+  y0 = Math.round(y0);
+  v.forEach(function(b, i){ var hh = Math.round(b.d / dmax * (h3 / 2 - 2)), bwp = Math.max(1, 2 * Math.floor(bw * 0.35) + 1); g.fillStyle = b.d >= 0 ? alpha(K.up, 0.75) : alpha(K.down, 0.75); g.fillRect(X(i) - 0.5 - (bwp - 1) / 2, Math.min(y0, y0 - hh), bwp, Math.max(1, Math.abs(hh))) });
+  label(g, TX('fl_bar_delta'), L + 4, h1 + h2 + 10, K);
   g.fillStyle = K.faint; g.textAlign = 'center';
   var every = Math.max(1, Math.floor(n / Math.max(2, Math.floor((W - L - R) / 80))));
-  for (var i = 0; i < n; i += every) g.fillText(hm(v[i].t), X(i), H - 6);
+  for (var i = 0; i < n; i += every) if (X(i) > 18 && X(i) < W - R - 14) g.fillText(hm(v[i].t), X(i), H - 6);
   g.textAlign = 'left';
   c.cv.onmousemove = function(e){
     var r = c.cv.getBoundingClientRect(), i = Math.max(0, Math.min(n - 1, Math.floor((e.clientX - r.left - L) / bw))), b = v[i];
