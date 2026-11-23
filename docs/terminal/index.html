@@ -114,7 +114,7 @@ html:lang(ar) .sec small b{margin:0 0 0 8px}
 @media (prefers-reduced-motion:reduce){.tape-inner{animation:none;padding-left:10px}}
 
 /* ---------- сетка ---------- */
-main{flex:1;min-height:0;display:grid;gap:6px;padding:6px;background:var(--bg);
+main{flex:1;min-height:0;display:grid;gap:6px;padding:6px;background:var(--bg);position:relative;
   grid-template-columns:minmax(330px,26%) 1fr minmax(320px,25%);
   grid-template-rows:62% 38%}
 .panel{background:var(--panel);display:flex;flex-direction:column;min-height:0;min-width:0;border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
@@ -245,6 +245,29 @@ td.sp svg{display:block}
 .lay button{padding:2px 8px;color:var(--faint);border-radius:6px;font-size:12px}
 .lay button:hover{color:var(--text)}
 .lay button.on{color:var(--text);background:var(--sel)}
+.lay .act{margin-left:2px}
+/* windows: ✕ in a title, closed windows, borders to drag, titles to drag */
+.ph .pclose{margin-left:6px;background:none;border:0;color:var(--faint);font-size:11px;line-height:1;padding:2px 4px;border-radius:4px;cursor:pointer}
+.ph:not(:has(.sub, .swap, .mode)) .pclose{margin-left:auto}
+.ph .pclose:hover{color:var(--text);background:var(--raise)}
+.slot-empty{border:1px dashed var(--line2);border-radius:var(--r);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;
+  color:var(--faint);min-height:0;min-width:0;padding:12px;text-align:center}
+.slot-empty .h{font-size:12px;letter-spacing:.04em}
+.slot-empty .add{background:var(--sel);color:var(--accent);border:1px solid var(--accent-dim);border-radius:8px;padding:7px 14px;font-weight:600}
+.slot-empty .add:hover{background:rgba(110,168,255,.22)}
+.slot-empty .hint{font-size:11px;max-width:260px}
+.slot-empty .reset{background:none;border:0;color:var(--muted);text-decoration:underline;font-size:11px}
+.gutter{position:absolute;z-index:20;touch-action:none;border-radius:3px}
+.gutter.v{width:10px;margin-left:-5px;cursor:col-resize}
+.gutter.h{height:10px;margin-top:-5px;cursor:row-resize}
+.gutter:hover,.gutter.drag{background:rgba(110,168,255,.35)}
+body.resizing-v,body.resizing-v *{cursor:col-resize!important;user-select:none}
+body.resizing-h,body.resizing-h *{cursor:row-resize!important;user-select:none}
+@media (min-width:761px){ .panel .ph{cursor:grab} .panel .ph :is(button,input,select,a){cursor:pointer} }
+body.moving,body.moving *{cursor:grabbing!important;user-select:none}
+.panel.dragging{opacity:.5}
+.panel.drop,.slot-empty.drop{outline:2px solid var(--accent);outline-offset:-2px}
+@media (max-width:760px){ .ph .pclose,.gutter,.slot-empty,.lay .act{display:none} }
 @media (max-width:1100px){ .lay{display:none} }
 
 /* вкладки внутри панели */
@@ -490,7 +513,7 @@ nav.tabs{display:none}
       <input id="cmd" data-i18n-ph="cmd_ph" placeholder="command: WEI, FX, CRYPTO, N, ECO, TRD, GOLD, BTC, HELP…" spellcheck="false" autocapitalize="characters" enterkeyhint="go">
       <button class="go" type="submit">GO</button>
     </form>
-    <div class="lay" id="lay" data-i18n-title="lay_t" title="Layout: how many panels on screen"><button data-l="1" class="on">▦ 5</button><button data-l="4">▦ 4</button><button data-l="6">▦ 6</button></div>
+    <div class="lay" id="lay" data-i18n-title="lay_t" title="Layout: how many panels on screen"><button data-l="1" class="on">▦ 5</button><button data-l="4">▦ 4</button><button data-l="6">▦ 6</button><button data-act="close" class="act" data-i18n-title="close_all_t" title="Close all panels">✕</button><button data-act="reset" class="act" data-i18n-title="lay_reset_t" title="Default layout and sizes">⟲</button></div>
     <div class="clocks" id="clocks"></div>
     <div class="status">
       <span class="pill" id="st-data" data-i18n-title="st_data_t" title="Source of world market data">FREE</span>

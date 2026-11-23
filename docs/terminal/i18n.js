@@ -172,7 +172,13 @@ var D = {
   no_api: function(what){ return (what || (RU ? 'Эта функция' : 'This function')) + (RU ? ' работает через сервер бота, а он ещё не настроен (docs/config.json).' : " works through the bot server, which isn't set up yet (docs/config.json).") },
   load_fail: ["Couldn't load: ", 'Не удалось загрузить: '], srv_not_set_e: ['the bot server is not set up', 'сервер бота не настроен'],
   no_clip: ['no clipboard access', 'нет доступа к буферу обмена'],
-  pick_t: ['Show another function in this panel', 'Поставить в эту панель другую функцию'], pick_head: ['Show in this panel:', 'Показать в этой панели:'],
+  pick_t: ['Show another function in this panel', 'Поставить в эту панель другую функцию'],
+  close_t: ['Close this panel', 'Закрыть окно'], close_all_t: ['Close all panels', 'Закрыть все окна'],
+  lay_reset_t: ['Default layout and sizes', 'Стандартная раскладка и размеры'],
+  empty_slot: ['EMPTY PANEL', 'ПУСТОЕ ОКНО'], add_fn: ['＋ Add a function', '＋ Добавить функцию'],
+  empty_hint: ['or type a command above — it opens here', 'или наберите команду в строке сверху — она откроется здесь'],
+  reset_link: ['⟲ Default layout', '⟲ Стандартная раскладка'],
+  gutter_t: ['Drag to resize · double-click: the layout\'s own sizes', 'Тяните, чтобы изменить размер · двойной щелчок — как было'], pick_head: ['Show in this panel:', 'Показать в этой панели:'],
   loading_x: function(s){ return (RU ? 'Загружаю ' : 'Loading ') + s },
   // panels and functions
   fn_mkt: ['World markets', 'Мировые рынки'], fn_chart: ['Chart', 'График'], fn_crypto: ['Cryptocurrencies', 'Криптовалюты'], fn_news: ['News', 'Новости'],
@@ -825,6 +831,8 @@ var HELP = [
   ['SCREEN', 'ЭКРАН'],
   ['LAYOUT 4, LAYOUT 6', '4 or 6 panels on screen (LAYOUT 1 — the usual layout)', '4 или 6 панелей на экране (LAYOUT 1 — обычная раскладка)'],
   ['▾ in a panel title', 'put any function into this panel', 'поставить в эту панель любую функцию'],
+  ['✕, ⟲', 'close the panel (✕ in its title); ✕ at the top closes all, ⟲ brings the default layout back', 'закрыть окно (✕ в его заголовке); ✕ сверху закрывает все, ⟲ возвращает стандартную раскладку'],
+  ['⇔, ✥', 'drag the border between panels to resize them; drag a title onto another panel to swap them', 'тяните границу между окнами, чтобы изменить размер; перетащите заголовок на другое окно, чтобы поменять их местами'],
   ['LANG RU, LANG EN', 'interface language (LANG ZH — 中文, LANG AR — العربية)', 'язык интерфейса (LANG ZH — 中文, LANG AR — العربية)'],
   ['SET', 'settings and owner sign-in', 'настройки и вход владельца'],
   ['HELP', 'this help', 'эта справка']

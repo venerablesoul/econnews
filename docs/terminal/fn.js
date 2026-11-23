@@ -178,19 +178,51 @@ var LAYOUTS = {
               'p-tech':'b','p-mon':'b','p-map':'b','p-gex':'b','p-flow':'b'}}
 };
 var RENDER = {};   // pid → function to call when the panel appears on screen
+// every function: [code, name, panel, command]; the command opens the panel on that function
+var FN_ALL = [
+  ['WEI', TX('fn_mkt'), 'p-mkt'], ['GP', TX('fn_chart'), 'p-chart'], ['CRYPTO', TX('fn_crypto'), 'p-crypto'], ['N', TX('fn_news'), 'p-news'],
+  ['ECO', TX('fn_eco'), 'p-eco'], ['TRD', TX('m_trd'), 'p-trd'], ['DES', TX('m_des'), 'p-des'], ['HP', TX('m_hp'), 'p-hp'],
+  ['COMP', TX('m_comp'), 'p-hp', 'COMP'], ['EQS', TX('m_eqs'), 'p-eqs'], ['IMAP', TX('m_imap'), 'p-imap', 'IMAP'], ['IMAP RU', TX('m_imap_ru'), 'p-imap', 'IMAP RU'],
+  ['ECST', TX('m_ecst'), 'p-ana', 'ECST'], ['FXC', TX('m_fxc'), 'p-ana', 'FXC'], ['CORR', TX('m_corr'), 'p-ana', 'CORR'], ['OMON', TX('m_opt'), 'p-ana', 'OMON'],
+  ['IPO', TX('m_ipo'), 'p-ana', 'IPO'], ['GC', TX('m_gc'), 'p-gc'],
+  ['CB', TX('m_cb'), 'p-gc', 'CB'], ['WIRP', TX('m_wirp'), 'p-gc', 'WIRP'], ['W', TX('m_w'), 'p-my', 'W'],
+  ['PORT', TX('m_port'), 'p-my', 'PORT'], ['PAPR', TX('m_papr'), 'p-my', 'PAPR'], ['ALRT', TX('m_alrt'), 'p-my', 'ALRT'],
+  ['TECH', TX('m_tech'), 'p-tech', 'TECH'], ['VAP', TX('m_vap'), 'p-tech', 'VAP'], ['TRA', TX('m_tra'), 'p-tech', 'TRA'], ['TRAY', TX('m_tray'), 'p-tech', 'TRAY'],
+  ['MOV', TX('m_mov'), 'p-mon', 'MOV'], ['MOST', TX('m_most'), 'p-mon', 'MOST'], ['MEMB', TX('m_memb'), 'p-mon', 'MEMB'], ['WPE', TX('m_wpe'), 'p-mon', 'WPE'],
+  ['BI', TX('m_bi'), 'p-mon', 'BI'], ['FPC', TX('m_fpc'), 'p-mon', 'FPC'], ['CDR', TX('m_cdr'), 'p-mon', 'CDR'],
+  ['WB', TX('m_wb'), 'p-gc', 'WB'], ['BTMM', TX('m_btmm'), 'p-gc', 'BTMM'], ['MMR', TX('m_mmr'), 'p-gc', 'MMR'], ['SRCH', TX('m_srch'), 'p-gc', 'SRCH'],
+  ['MAP', TX('m_map'), 'p-map', 'MAP'], ['STORM', TX('m_storm'), 'p-map', 'STORM'], ['SHIP', TX('m_ship'), 'p-map', 'SHIP'],
+  ['WETR', TX('m_wetr'), 'p-map', 'WETR'], ['MAP ECO', TX('m_mapeco'), 'p-map', 'MAP ECO'],
+  ['GEX', TX('m_gex'), 'p-gex', 'GEX'], ['LVL', TX('m_lvl'), 'p-gex', 'LVL'], ['VOLS', TX('m_vols'), 'p-gex', 'VOLS'], ['GRK', TX('m_grk'), 'p-gex', 'GRK'],
+  ['GEXH', TX('m_gexh'), 'p-gex', 'GEXH'], ['OBH', TX('m_obh'), 'p-flow', 'OBH'], ['BOOK', TX('m_book'), 'p-flow', 'BOOK'], ['FOOT', TX('m_foot'), 'p-flow', 'FOOT'],
+  ['CVD', TX('m_cvd'), 'p-flow', 'CVD'], ['SPLC', TX('m_splc'), 'p-map', 'SPLC'], ['TANKERS', TX('m_tankers'), 'p-map', 'TANKERS'],
+  ['HELP', TX('m_help'), null, 'HELP']
+];
 var Layout = (function(){
-  var st = {mode: '1', assign: {}};
+  // assign: the panel in each slot of each layout (null — a closed window); size: the sizes the user dragged
+  var st = {mode: '1', assign: {}, size: {}};
   try { var saved = JSON.parse(store('layout2') || 'null'); if (saved && saved.assign) st = saved } catch(e){}
+  if (!st.size || typeof st.size !== 'object') st.size = {};
   if (!LAYOUTS[st.mode] || st.mode === 't') st.mode = '1';
-  var activeSlot = null;
+  var activeSlot = null, gut = [];
   function mode(){ return window.matchMedia('(max-width:1100px)').matches ? 't' : st.mode }
   function assign(m){
     var L = LAYOUTS[m], a = st.assign[m];
-    if (!a || a.length !== L.slots.length || a.some(function(p){ return !$(p) })) a = st.assign[m] = L.def.slice();
+    if (!a || a.length !== L.slots.length || a.some(function(p){ return p && !$(p) })) a = st.assign[m] = L.def.slice();
     return a;
   }
   function save(){ store('layout2', JSON.stringify(st)) }
+  // the layout's areas as rows of slot names: '"a b c" "a d e"' → [['a','b','c'], ['a','d','e']]
+  function grid(L){ return L.areas.match(/"[^"]*"/g).map(function(r){ return r.slice(1, -1).trim().split(/\s+/) }) }
+  function sizes(m){
+    var s = st.size[m], g = grid(LAYOUTS[m]);
+    return s && s.cols && s.rows && s.cols.length === g[0].length && s.rows.length === g.length ? s : null;
+  }
+  function fr(x){ return 'minmax(0,' + Math.max(1, Math.round(x)) + 'fr)' }
   function apply(){
+    var main = $('main');
+    clearGutters();
+    [].slice.call(main.querySelectorAll('.slot-empty')).forEach(function(n){ n.remove() });
     if (T.isMobile()) {
       // on a phone — one panel: keep the focused one, otherwise markets
       var shown = [].slice.call(document.querySelectorAll('.panel.show'));
@@ -199,20 +231,96 @@ var Layout = (function(){
       document.querySelectorAll('#tabs button[data-p]').forEach(function(b){ b.classList.toggle('on', b.dataset.p === keep.id) });
       return;
     }
-    var m = mode(), L = LAYOUTS[m], a = assign(m), main = $('main');
-    main.style.gridTemplateColumns = L.cols; main.style.gridTemplateRows = L.rows; main.style.gridTemplateAreas = L.areas;
+    var m = mode(), L = LAYOUTS[m], a = assign(m), sz = sizes(m);
+    main.style.gridTemplateColumns = sz ? sz.cols.map(fr).join(' ') : L.cols;
+    main.style.gridTemplateRows = sz ? sz.rows.map(fr).join(' ') : L.rows;
+    main.style.gridTemplateAreas = L.areas;
     PANELS.forEach(function(p){
       var node = $(p.id), i = a.indexOf(p.id);
       if (!node) return;
       if (i >= 0) { node.style.gridArea = L.slots[i]; node.classList.remove('off'); node.classList.add('show'); node.dataset.slot = L.slots[i] }
       else { node.classList.add('off'); node.style.gridArea = ''; delete node.dataset.slot }
     });
-    document.querySelectorAll('#lay button').forEach(function(b){ b.classList.toggle('on', b.dataset.l === st.mode) });
-    a.forEach(function(pid){ if (RENDER[pid]) try { RENDER[pid]() } catch(e){ console.error(e) } });
+    var allEmpty = a.every(function(p){ return !p });
+    L.slots.forEach(function(s, i){ if (!a[i]) main.appendChild(emptySlot(s, allEmpty)) });
+    document.querySelectorAll('#lay button[data-l]').forEach(function(b){ b.classList.toggle('on', b.dataset.l === st.mode) });
+    a.forEach(function(pid){ if (pid && RENDER[pid]) try { RENDER[pid]() } catch(e){ console.error(e) } });
+    drawGutters();
     // canvases and charts size themselves on 'resize'; this one comes from here, so it must not lay out again
     // (it did: the layout re-applied itself ~5 times a second and redrew every canvas each time)
-    clearTimeout(apply._t); apply._t = setTimeout(function(){ Layout._internal = true; try { window.dispatchEvent(new Event('resize')) } finally { Layout._internal = false } }, 60);
+    clearTimeout(apply._t); apply._t = setTimeout(sizeChanged, 60);
   }
+  function sizeChanged(){ Layout._internal = true; try { window.dispatchEvent(new Event('resize')) } finally { Layout._internal = false } }
+
+  // a closed window: an empty cell that offers a function (a command typed now also opens here)
+  function emptySlot(s, allEmpty){
+    var d = el('div', 'slot-empty'); d.style.gridArea = s; d.dataset.slot = s;
+    d.appendChild(el('div', 'h', TX('empty_slot')));
+    var b = el('button', 'add', TX('add_fn')); b.type = 'button';
+    b.onclick = function(e){ e.stopPropagation(); pickFn(b, s) };
+    d.appendChild(b);
+    d.appendChild(el('div', 'hint', TX('empty_hint')));
+    if (allEmpty) { var r = el('button', 'reset', TX('reset_link')); r.type = 'button'; r.onclick = function(){ reset() }; d.appendChild(r) }
+    d.addEventListener('mousedown', function(){ activeSlot = s });
+    return d;
+  }
+
+  // borders between panels: drag to resize, double-click for the layout's own sizes
+  function clearGutters(){ gut.forEach(function(g){ g.remove() }); gut = [] }
+  function drawGutters(){
+    clearGutters();
+    if (T.isMobile()) return;
+    var main = $('main'), cs = getComputedStyle(main), g = grid(LAYOUTS[mode()]);
+    var cw = cs.gridTemplateColumns.split(' ').map(parseFloat), rh = cs.gridTemplateRows.split(' ').map(parseFloat);
+    if (cw.length !== g[0].length || rh.length !== g.length || cw.some(isNaN) || rh.some(isNaN)) return;
+    var gx = parseFloat(cs.columnGap) || 0, gy = parseFloat(cs.rowGap) || 0, px = parseFloat(cs.paddingLeft) || 0, py = parseFloat(cs.paddingTop) || 0;
+    var x0 = [], y0 = [], acc = px;
+    cw.forEach(function(w){ x0.push(acc); acc += w + gx });
+    acc = py; rh.forEach(function(h){ y0.push(acc); acc += h + gy });
+    // a border runs only where two different panels meet (in "a b c" / "a d e" there is none across a)
+    function segments(n, differs){ var out = [], from = -1; for (var j = 0; j <= n; j++) { if (j < n && differs(j)) { if (from < 0) from = j } else if (from >= 0) { out.push([from, j - 1]); from = -1 } } return out }
+    for (var k = 0; k < cw.length - 1; k++) segments(g.length, function(j){ return g[j][k] !== g[j][k + 1] }).forEach(function(sg){
+      add('v', k, x0[k + 1] - gx / 2, y0[sg[0]], y0[sg[1]] + rh[sg[1]] - y0[sg[0]]);
+    });
+    for (var r = 0; r < rh.length - 1; r++) segments(g[0].length, function(j){ return g[r][j] !== g[r + 1][j] }).forEach(function(sg){
+      add('h', r, y0[r + 1] - gy / 2, x0[sg[0]], x0[sg[1]] + cw[sg[1]] - x0[sg[0]]);
+    });
+    function add(kind, k, at, from, len){
+      var d = el('div', 'gutter ' + kind); d.title = TX('gutter_t'); d.dataset.k = k;
+      if (kind === 'v') { d.style.left = at + 'px'; d.style.top = from + 'px'; d.style.height = len + 'px' }
+      else { d.style.top = at + 'px'; d.style.left = from + 'px'; d.style.width = len + 'px' }
+      d.addEventListener('pointerdown', function(e){ startResize(e, d, kind, k) });
+      d.addEventListener('dblclick', function(){ delete st.size[mode()]; save(); apply() });
+      main.appendChild(d); gut.push(d);
+    }
+  }
+  function startResize(e, d, kind, k){
+    if (e.button !== 0) return;
+    e.preventDefault();
+    var main = $('main'), cs = getComputedStyle(main);
+    var cols = cs.gridTemplateColumns.split(' ').map(parseFloat), rows = cs.gridTemplateRows.split(' ').map(parseFloat);
+    var v = kind === 'v', start = (v ? cols : rows).slice(), pos0 = v ? e.clientX : e.clientY, MIN = v ? 160 : 90, now = start, t = 0, moved = false;
+    d.classList.add('drag'); document.body.classList.add(v ? 'resizing-v' : 'resizing-h');
+    try { d.setPointerCapture(e.pointerId) } catch(err){}
+    function move(ev){
+      if (!moved && Math.abs((v ? ev.clientX : ev.clientY) - pos0) < 3) return;
+      moved = true;
+      var pair = start[k] + start[k + 1], x = Math.max(MIN, Math.min(pair - MIN, start[k] + (v ? ev.clientX : ev.clientY) - pos0));
+      now = start.slice(); now[k] = x; now[k + 1] = pair - x;
+      main.style[v ? 'gridTemplateColumns' : 'gridTemplateRows'] = now.map(fr).join(' ');
+      if (!t) t = setTimeout(function(){ t = 0; sizeChanged() }, 120);   // charts follow while dragging
+    }
+    function up(){
+      d.removeEventListener('pointermove', move); d.removeEventListener('pointerup', up); d.removeEventListener('pointercancel', up);
+      document.body.classList.remove('resizing-v', 'resizing-h');
+      d.classList.remove('drag');
+      if (!moved) return;   // a click (or the first half of a double-click): the border stays where it is
+      st.size[mode()] = {cols: v ? now : cols, rows: v ? rows : now};
+      save(); drawGutters(); sizeChanged();
+    }
+    d.addEventListener('pointermove', move); d.addEventListener('pointerup', up); d.addEventListener('pointercancel', up);
+  }
+
   function focus(pid){
     var p = $(pid); if (!p) return;
     p.classList.add('focus'); setTimeout(function(){ p.classList.remove('focus') }, 1200);
@@ -222,20 +330,45 @@ var Layout = (function(){
     if (T.isMobile()) return;
     var m = mode(), L = LAYOUTS[m], a = assign(m);
     if (a.indexOf(pid) >= 0 && !slot) { focus(pid); if (RENDER[pid]) RENDER[pid](); return }
-    var target = slot || L.pref[pid] || activeSlot || L.slots[1];
+    // a closed window is filled first: the panel's usual place if it is empty, then the one clicked last, then any
+    var empty = L.slots.filter(function(s, i){ return !a[i] });
+    var target = slot || (empty.length ? [L.pref[pid], activeSlot].filter(function(s){ return empty.indexOf(s) >= 0 })[0] || empty[0]
+      : L.pref[pid] || activeSlot || L.slots[1]);
     var ti = L.slots.indexOf(target); if (ti < 0) ti = 1;
     var cur = a.indexOf(pid);
-    if (cur >= 0) a[cur] = a[ti];   // the panel is already on screen — swap places
+    if (cur >= 0) a[cur] = a[ti];   // the panel is already on screen — swap places (or leave its old window empty)
     a[ti] = pid;
     save(); apply(); focus(pid);
     if (pid === 'p-chart' && !$('ownc')) T.openChart(T.curChart(), null, true);
   }
+  function close(pid){
+    var a = assign(mode()), i = a.indexOf(pid);
+    if (i < 0) return;
+    a[i] = null; save(); apply();
+  }
+  function closeAll(){ var a = assign(mode()); for (var i = 0; i < a.length; i++) a[i] = null; save(); apply() }
+  function reset(){ var m = mode(); st.assign[m] = LAYOUTS[m].def.slice(); delete st.size[m]; save(); apply() }
+  function swap(s1, s2){
+    var m = mode(), L = LAYOUTS[m], a = assign(m), i = L.slots.indexOf(s1), j = L.slots.indexOf(s2);
+    if (i < 0 || j < 0 || i === j) return;
+    var x = a[i]; a[i] = a[j]; a[j] = x; save(); apply();
+    if (a[j]) focus(a[j]);
+  }
   function setMode(m){ if (!LAYOUTS[m] || m === 't') return; st.mode = m; save(); apply() }
   function slotOf(pid){ var p = $(pid); return p && p.dataset.slot }
   return {apply: apply, place: place, setMode: setMode, focus: focus, slotOf: slotOf, mode: function(){ return st.mode },
-    setActive: function(s){ activeSlot = s }};
+    setActive: function(s){ activeSlot = s }, close: close, closeAll: closeAll, reset: reset, swap: swap, drawGutters: drawGutters};
 })();
 window.Layout = Layout;
+
+// a menu of every function; the chosen one opens in this window (slot)
+function pickFn(anchor, slot){
+  var items = FN_ALL.filter(function(f){ return f[2] }).map(function(f){ return {code: f[0], name: f[1], pid: f[2], cmd: f[3]} });
+  openMenu(anchor, items, function(it){
+    if (slot) Layout.place(it.pid, slot);
+    if (it.cmd) T.runCommand(it.cmd); else T.show(it.pid);
+  }, TX('pick_head'));
+}
 
 // the ▾ button in every panel title: put any function here
 function openMenu(anchor, items, onPick, head){
@@ -249,7 +382,7 @@ function openMenu(anchor, items, onPick, head){
   document.body.appendChild(m);
   var r = anchor.getBoundingClientRect();
   m.style.left = Math.max(4, Math.min(r.left, window.innerWidth - m.offsetWidth - 4)) + 'px';
-  m.style.top = Math.min(r.bottom + 2, window.innerHeight - m.offsetHeight - 4) + 'px';
+  m.style.top = Math.max(4, Math.min(r.bottom + 2, window.innerHeight - m.offsetHeight - 4)) + 'px';
   setTimeout(function(){ document.addEventListener('click', closeMenu, {once: true}) }, 0);
 }
 function closeMenu(){ var m = $('fnmenu'); if (m) m.remove() }
@@ -258,16 +391,46 @@ document.querySelectorAll('.panel').forEach(function(p){
   var b = el('button', 'pick', '▾'); b.title = TX('pick_t');
   var code = ph.querySelector('.code');
   if (code && code.nextSibling) ph.insertBefore(b, code.nextSibling); else ph.appendChild(b);
-  b.onclick = function(e){
-    e.stopPropagation();
-    openMenu(b, PANELS.filter(function(x){ return x.id !== p.id }), function(it){ Layout.place(it.id, p.dataset.slot) }, TX('pick_head'));
-  };
+  b.onclick = function(e){ e.stopPropagation(); pickFn(b, p.dataset.slot) };
+  // ✕ — close this window (desktop)
+  var x = el('button', 'pclose', '✕'); x.type = 'button'; x.title = TX('close_t');
+  x.onclick = function(e){ e.stopPropagation(); Layout.close(p.id) };
+  ph.appendChild(x);
   p.addEventListener('mousedown', function(){ if (p.dataset.slot) Layout.setActive(p.dataset.slot) });
+  // drag the title onto another window to swap the two (desktop)
+  ph.addEventListener('pointerdown', function(e){
+    if (T.isMobile() || e.button !== 0 || !p.dataset.slot || e.target.closest('button, input, select, a, textarea, label')) return;
+    var x0 = e.clientX, y0 = e.clientY, dragging = false, over = null;
+    function target(ev){
+      var n = document.elementFromPoint(ev.clientX, ev.clientY);
+      n = n && n.closest('.panel[data-slot], .slot-empty');
+      return n && n !== p ? n : null;
+    }
+    function move(ev){
+      if (!dragging && Math.abs(ev.clientX - x0) + Math.abs(ev.clientY - y0) < 8) return;
+      if (!dragging) { dragging = true; p.classList.add('dragging'); document.body.classList.add('moving') }
+      var t = target(ev);
+      if (t !== over) { if (over) over.classList.remove('drop'); over = t; if (over) over.classList.add('drop') }
+    }
+    function up(){
+      document.removeEventListener('pointermove', move); document.removeEventListener('pointerup', up);
+      if (!dragging) return;
+      p.classList.remove('dragging'); document.body.classList.remove('moving');
+      if (over) { over.classList.remove('drop'); Layout.swap(p.dataset.slot, over.dataset.slot) }
+    }
+    document.addEventListener('pointermove', move); document.addEventListener('pointerup', up);
+  });
 });
 var phStyle = document.createElement('style');
 phStyle.textContent = '@media (max-width:760px){ .ph .pick{display:none} }';
 document.head.appendChild(phStyle);
-document.querySelectorAll('#lay button').forEach(function(b){ b.onclick = function(){ Layout.setMode(b.dataset.l) } });
+document.querySelectorAll('#lay button').forEach(function(b){
+  b.onclick = function(){
+    if (b.dataset.l) Layout.setMode(b.dataset.l);
+    else if (b.dataset.act === 'close') Layout.closeAll();
+    else if (b.dataset.act === 'reset') Layout.reset();
+  };
+});
 // the "⇄" buttons in the calendar and trades switch the function in the same panel
 document.querySelectorAll('.ph .swap').forEach(function(b){
   b.onclick = function(e){ e.stopPropagation(); var p = b.closest('.panel'); if (!T.isMobile() && p.dataset.slot) Layout.place(b.dataset.to, p.dataset.slot); else T.show(b.dataset.to) };
@@ -286,25 +449,7 @@ window.addEventListener('resize', function(){
 // the mobile menu of all functions
 (function(){
   var list = $('fnlist');
-  var FN = [
-    ['WEI', TX('fn_mkt'), 'p-mkt'], ['GP', TX('fn_chart'), 'p-chart'], ['CRYPTO', TX('fn_crypto'), 'p-crypto'], ['N', TX('fn_news'), 'p-news'],
-    ['ECO', TX('fn_eco'), 'p-eco'], ['TRD', TX('m_trd'), 'p-trd'], ['DES', TX('m_des'), 'p-des'], ['HP', TX('m_hp'), 'p-hp'],
-    ['COMP', TX('m_comp'), 'p-hp', 'COMP'], ['EQS', TX('m_eqs'), 'p-eqs'], ['IMAP', TX('m_imap'), 'p-imap', 'IMAP'], ['IMAP RU', TX('m_imap_ru'), 'p-imap', 'IMAP RU'],
-    ['ECST', TX('m_ecst'), 'p-ana', 'ECST'], ['FXC', TX('m_fxc'), 'p-ana', 'FXC'], ['CORR', TX('m_corr'), 'p-ana', 'CORR'], ['OMON', TX('m_opt'), 'p-ana', 'OMON'],
-    ['IPO', TX('m_ipo'), 'p-ana', 'IPO'], ['GC', TX('m_gc'), 'p-gc'],
-    ['CB', TX('m_cb'), 'p-gc', 'CB'], ['WIRP', TX('m_wirp'), 'p-gc', 'WIRP'], ['W', TX('m_w'), 'p-my', 'W'],
-    ['PORT', TX('m_port'), 'p-my', 'PORT'], ['PAPR', TX('m_papr'), 'p-my', 'PAPR'], ['ALRT', TX('m_alrt'), 'p-my', 'ALRT'],
-    ['TECH', TX('m_tech'), 'p-tech', 'TECH'], ['VAP', TX('m_vap'), 'p-tech', 'VAP'], ['TRA', TX('m_tra'), 'p-tech', 'TRA'], ['TRAY', TX('m_tray'), 'p-tech', 'TRAY'],
-    ['MOV', TX('m_mov'), 'p-mon', 'MOV'], ['MOST', TX('m_most'), 'p-mon', 'MOST'], ['MEMB', TX('m_memb'), 'p-mon', 'MEMB'], ['WPE', TX('m_wpe'), 'p-mon', 'WPE'],
-    ['BI', TX('m_bi'), 'p-mon', 'BI'], ['FPC', TX('m_fpc'), 'p-mon', 'FPC'], ['CDR', TX('m_cdr'), 'p-mon', 'CDR'],
-    ['WB', TX('m_wb'), 'p-gc', 'WB'], ['BTMM', TX('m_btmm'), 'p-gc', 'BTMM'], ['MMR', TX('m_mmr'), 'p-gc', 'MMR'], ['SRCH', TX('m_srch'), 'p-gc', 'SRCH'],
-    ['MAP', TX('m_map'), 'p-map', 'MAP'], ['STORM', TX('m_storm'), 'p-map', 'STORM'], ['SHIP', TX('m_ship'), 'p-map', 'SHIP'],
-    ['WETR', TX('m_wetr'), 'p-map', 'WETR'], ['MAP ECO', TX('m_mapeco'), 'p-map', 'MAP ECO'],
-    ['GEX', TX('m_gex'), 'p-gex', 'GEX'], ['LVL', TX('m_lvl'), 'p-gex', 'LVL'], ['VOLS', TX('m_vols'), 'p-gex', 'VOLS'], ['GRK', TX('m_grk'), 'p-gex', 'GRK'],
-    ['GEXH', TX('m_gexh'), 'p-gex', 'GEXH'], ['OBH', TX('m_obh'), 'p-flow', 'OBH'], ['BOOK', TX('m_book'), 'p-flow', 'BOOK'], ['FOOT', TX('m_foot'), 'p-flow', 'FOOT'],
-    ['CVD', TX('m_cvd'), 'p-flow', 'CVD'], ['SPLC', TX('m_splc'), 'p-map', 'SPLC'], ['TANKERS', TX('m_tankers'), 'p-map', 'TANKERS'],
-    ['HELP', TX('m_help'), null, 'HELP']
-  ];
+  var FN = FN_ALL;
   FN.forEach(function(f){
     var b = el('button'); b.appendChild(el('b', null, f[0])); b.appendChild(el('span', null, f[1]));
     b.onclick = function(){ $('ov-fn').classList.remove('on'); if (f[3]) T.runCommand(f[3]); else T.show(f[2]) };
