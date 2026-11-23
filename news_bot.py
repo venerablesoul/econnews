@@ -25,6 +25,7 @@ Environment variables:
   DIGEST_HOUR          hour of the evening digest, MSK (21), -1 = off
   QUIET_HOURS          silent hours, MSK, e.g. 0-8 (default 0-8)
   MORNING_HOUR         hour of the morning digest, MSK (9), -1 = off
+  BRIEF_HOUR           hour of the pre-market brief with option levels, MSK (16), weekdays; -1 = off
   SUMMARIES            yes/no — a 1–2 sentence summary under the headline
   TAGS                 yes/no — tags #oil #Fed ...
   TRANSLATE            yes/no — translate headlines into the other language (Google, then MyMemory)
@@ -1310,6 +1311,22 @@ def run(dry=False):
             if failed("morning digest", e, before):
                 st["last_morning"] = today
 
+    # pre-market brief: the option levels before the US open (brief.py, data from gex.py), weekdays
+    st.setdefault("last_brief", "")
+    brief_hour = int(os.environ.get("BRIEF_HOUR", "16"))
+    if brief_hour >= 0 and now_msk.weekday() < 5 and brief_hour <= now_msk.hour < brief_hour + 3 and st["last_brief"] != today:
+        before = tg.sent
+        try:
+            import brief
+            import ai
+            make = brief.build(now, quotes, ai_note=ai.brief_note if ai.enabled() else None)
+            if make:
+                tg.send(make, silent=silent)
+            st["last_brief"] = today   # nothing fresh today (a holiday, the data stopped) — not tried again until tomorrow
+        except Exception as e:
+            if failed("pre-market brief", e, before):
+                st["last_brief"] = today
+
     # alerts about broken sources (service messages — owner only)
     if alerts_on and st["initialized"]:
         lines = []
@@ -1413,7 +1430,7 @@ def run(dry=False):
 
 
 def update_extras(now, dry=False):
-    """Terminal data that does not depend on news: US companies (stocks.json, co/, opt/), rates, macro, MOEX."""
+    """Terminal data that does not depend on news: US companies (stocks.json, co/, opt/, gex/), crypto options, rates, macro, MOEX."""
     parts = []
     if dry or not _env_on("COMPANIES", "yes"):
         return ""
@@ -1431,8 +1448,9 @@ def update_extras(now, dry=False):
             parts.append(f"curves: {len(r.get('curves') or {})}")
     except Exception as e:
         print(f"  ! rates (rates.py): {type(e).__name__}: {e}"[:200])
-    for mod, label in (("company", "company files"), ("options", "option chains"), ("macro", "macro"), ("moex", "MOEX"),
-                       ("ipo", "IPO"), ("wpe", "world valuations"), ("auctions", "Treasury auctions")):
+    for mod, label in (("company", "company files"), ("options", "option chains"), ("deribit", "crypto options"),
+                       ("ais", "tankers (AIS)"), ("macro", "macro"), ("moex", "MOEX"), ("ipo", "IPO"),
+                       ("wpe", "world valuations"), ("auctions", "Treasury auctions")):
         try:
             n = __import__(mod).build(now)
             if n:
@@ -1479,7 +1497,7 @@ def load_dotenv(path):
 # what the bot writes: only it changes these files
 DATA_PATHS = ("state.json", "docs/data.json", "docs/stocks.json", "docs/rates.json", "docs/fin", "docs/co", "docs/opt",
               "docs/options.json", "docs/macro.json", "docs/moex.json", "docs/ipo.json", "docs/wpe.json",
-              "docs/auctions.json")
+              "docs/auctions.json", "docs/gex", "docs/ships.json")
 # The data does not go into main: the whole site (docs/ — its code from main plus the data) and state.json are
 # pushed as ONE commit that replaces the data branch each time. main keeps only code, and the data branch never
 # grows a history. GitHub Pages serves the site from that branch (Settings → Pages → gh-pages, folder /docs).
@@ -1843,7 +1861,7 @@ def selfcheck():
             os.makedirs(os.path.join(d, "docs"))
             env = {"TELEGRAM_BOT_TOKEN": "1:SELFCHECK", "TELEGRAM_CHAT_ID": "100", "PAGES_URL": "https://example.invalid/",
                    "STATE_FILE": os.path.join(d, "state.json"), "PAGE_DATA": os.path.join(d, "docs", "data.json"),
-                   "DIGEST_HOUR": "0", "MORNING_HOUR": "-1", "CALENDAR": "no", "TRADES": "no", "ANTHROPIC_API_KEY": "",
+                   "DIGEST_HOUR": "0", "MORNING_HOUR": "-1", "BRIEF_HOUR": "-1", "CALENDAR": "no", "TRADES": "no", "ANTHROPIC_API_KEY": "",
                    "FRED_API_KEY": "", "QUIET_HOURS": "0-0", "MARKET": "no"}
             try:
                 with mock.patch.dict(os.environ, env), \

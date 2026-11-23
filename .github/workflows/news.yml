@@ -87,6 +87,8 @@ jobs:
           SUMMARIES: "yes"        # a 1–2 sentence summary under the headline
           TAGS: "yes"             # tags #oil #Fed #ruble ...
           MORNING_HOUR: "9"       # morning digest "overnight highlights" (MSK hour); -1 = off
+          BRIEF_HOUR: "16"        # option levels before the US open (MSK hour, weekdays); -1 = off
+          AISSTREAM_API_KEY: ${{ secrets.AISSTREAM_API_KEY }}   # optional free key (aisstream.io): tankers at the chokepoints
           CALENDAR: "yes"         # calendar of key events + reminders
           CAL_COUNTRIES: "USD,EUR,CNY,GBP,JPY"  # whose events to show
           REMIND_MINUTES: "60"    # how many minutes before to remind; 0 = never

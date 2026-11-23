@@ -1,9 +1,13 @@
 """Тесты разборщиков данных для терминала: python3 -m unittest discover -s tests -v"""
 import json
+import math
 import os
 import sys
 import tempfile
+import time
 import unittest
+import urllib.error
+import urllib.parse
 from datetime import date, datetime, timedelta, timezone
 from unittest import mock
 
@@ -463,7 +467,7 @@ class NewsBotRunBothLanguages(unittest.TestCase):
             os.makedirs(os.path.join(d, "docs"))
             env = {"TELEGRAM_BOT_TOKEN": "1:T", "TELEGRAM_CHAT_ID": "100", "PAGES_URL": "https://p.test/",
                    "STATE_FILE": os.path.join(d, "state.json"), "PAGE_DATA": os.path.join(d, "docs", "data.json"),
-                   "DIGEST_HOUR": "0", "MORNING_HOUR": "-1", "CALENDAR": "no", "TRADES": "no", "ANTHROPIC_API_KEY": "",
+                   "DIGEST_HOUR": "0", "MORNING_HOUR": "-1", "BRIEF_HOUR": "-1", "CALENDAR": "no", "TRADES": "no", "ANTHROPIC_API_KEY": "",
                    "FRED_API_KEY": "", "QUIET_HOURS": "0-0"}
             with mock.patch.dict(os.environ, env), \
                     mock.patch.object(news_bot, "collect", side_effect=lambda now: (batches.pop(0), {})), \
@@ -671,17 +675,347 @@ class OptionChains(unittest.TestCase):
 
             now = datetime(2026, 10, 15, 15, tzinfo=timezone.utc)   # Thursday, market open
             with open(os.path.join(d, "SPY.json"), "w") as f:
-                json.dump({"updated": "2026-10-15T14:30:00+00:00"}, f)   # fresh
+                json.dump({"updated": "2026-10-15T14:50:00+00:00"}, f)   # fresh (10 min)
             with open(os.path.join(d, "AAPL.json"), "w") as f:
                 json.dump({"updated": "2026-10-15T13:00:00+00:00"}, f)   # 2 h old core ticker: due
             with open(os.path.join(d, "KO.json"), "w") as f:
                 json.dump({"updated": "2026-10-15T08:00:00+00:00"}, f)   # 7 h old other ticker: not due
+            with open(os.path.join(d, "QQQ.json"), "w") as f:
+                json.dump({"updated": "2026-10-15T14:30:00+00:00"}, f)   # fast ticker 30 min old: due (every 15 min)
             summ = os.path.join(d, "options.json")
-            n = options.build(now, sleep=0, tickers=["SPY", "AAPL", "KO", "BAD"], out_dir=d, summary_path=summ, fetcher=fetcher)
-            self.assertEqual((n, sorted(got)), (1, ["AAPL", "BAD"]))
+            gdir = os.path.join(d, "gex")
+            n = options.build(now, sleep=0, tickers=["SPY", "QQQ", "AAPL", "KO", "BAD"], out_dir=d, summary_path=summ,
+                              fetcher=fetcher, gex_dir=gdir)
+            self.assertEqual((n, sorted(got)), (2, ["AAPL", "BAD", "QQQ"]))
             rows = options.load(summ)["rows"]
-            self.assertEqual(rows[0]["s"], "AAPL")
-            self.assertEqual(rows[0]["n"], "Apple")
+            self.assertEqual({r["s"]: r["n"] for r in rows}["AAPL"], "Apple")
+            # the core tickers also get dealer positioning and its history
+            g = options.load(os.path.join(gdir, "AAPL.json"))
+            self.assertEqual((g["s"], g["n"], g["px"]), ("AAPL", "Apple", 100.0))
+            self.assertIn("zero", g["levels"])
+            self.assertTrue(os.path.exists(os.path.join(gdir, "hist", "QQQ.json")))
+            self.assertFalse(os.path.exists(os.path.join(gdir, "KO.json")))   # not a core ticker
+
+
+def yahoo_answer(px=100.0, exps=(1792108800, 1795132800), first_only=False, date_ts=None):
+    """A tiny Yahoo v7 options answer: price 100, strikes 90/100/110 for each expiry asked for."""
+    def c(sym, k, cp, oi, iv, bid, ask):
+        return {"contractSymbol": f"XYZ{sym}{cp}{int(k * 1000):08d}", "strike": k, "openInterest": oi, "volume": 5,
+                "impliedVolatility": iv, "bid": bid, "ask": ask, "lastPrice": (bid + ask) / 2}
+    blocks = []
+    for t in ([date_ts] if date_ts else exps[:1]):
+        ymd = datetime.fromtimestamp(t, timezone.utc).strftime("%y%m%d")
+        blocks.append({"expirationDate": t,
+                       "calls": [c(ymd, 90, "C", 100, 0.32, 10.5, 11), c(ymd, 100, "C", 300, 0.30, 2.0, 2.2), c(ymd, 110, "C", 800, 0.28, 0.3, 0.4)],
+                       "puts": [c(ymd, 90, "P", 500, 0.36, 0.4, 0.5), c(ymd, 100, "P", 300, 0.34, 1.8, 2.0), c(ymd, 110, "P", 10, 0.00001, 10, 10.6)]})
+    return {"quote": {"regularMarketPrice": px, "regularMarketChangePercent": 1.5, "regularMarketTime": 1792076400},
+            "expirationDates": list(exps), "options": blocks}
+
+
+class DealerPositioning(unittest.TestCase):
+    def test_black_scholes(self):
+        import gex
+        g = gex.greeks(100, 100, 1.0, 0.2, 0.05)
+        self.assertAlmostEqual(g["dc"], 0.6368, places=4)
+        self.assertAlmostEqual(g["dp"], -0.3632, places=4)
+        self.assertAlmostEqual(g["g"], 0.018762, places=5)
+        self.assertAlmostEqual(g["v"], 0.37524, places=4)            # per volatility point
+        self.assertAlmostEqual(g["tc"] * 365, -6.4140, places=3)     # per year, the textbook value
+        self.assertAlmostEqual(g["tp"] * 365, -1.6579, places=3)
+        self.assertIsNone(gex.greeks(100, 100, 0, 0.2))
+        self.assertIsNone(gex.greeks(100, 100, 1, None))
+        # vanna and charm against finite differences of delta
+        h = 1e-4
+        up, dn = gex.greeks(100, 110, 0.5, 0.25 + h, 0.03), gex.greeks(100, 110, 0.5, 0.25 - h, 0.03)
+        self.assertAlmostEqual(gex.greeks(100, 110, 0.5, 0.25, 0.03)["vanna"], (up["dc"] - dn["dc"]) / (2 * h) / 100, places=6)
+        later, now_ = gex.greeks(100, 110, 0.5 - 1 / 365, 0.25, 0.03), gex.greeks(100, 110, 0.5, 0.25, 0.03)
+        self.assertAlmostEqual(now_["charm"], later["dc"] - now_["dc"], places=4)
+
+    def chain(self, now, S=100.0):
+        import gex
+        T1, T2 = 7 / 365, 35 / 365
+        out = []
+        for exp, T in (("2026-10-22", T1), ("2026-11-19", T2)):
+            for k, coi, poi in ((90, 100, 3000), (95, 200, 6000), (100, 1500, 1500), (105, 4000, 300), (110, 1000, 50)):
+                iv = 0.25 + abs(k - S) / 400
+                out.append(gex.option(exp, "C", k, T, oi=coi, iv=iv, bid=1, ask=1.2))
+                out.append(gex.option(exp, "P", k, T, oi=poi, iv=iv, bid=1, ask=1.2))
+        return out
+
+    def test_levels_and_flip(self):
+        import gex
+        now = datetime(2026, 10, 15, 15, tzinfo=timezone.utc)
+        s = gex.analyze(self.chain(now), 100.0, now, size=100, band=0.2)
+        lv = s["levels"]
+        self.assertEqual((lv["cwall"], lv["pwall"]), (105, 95))           # the biggest call and put gamma
+        self.assertTrue(95 < lv["zero"] < 105)                              # puts below, calls above: the flip is between
+        y = dict(zip(s["prof"]["x"], s["prof"]["y"]))
+        self.assertLess(min(y.items(), key=lambda p: p[0])[1], 0)           # far below the flip: negative gamma
+        self.assertGreater(max(y.items(), key=lambda p: p[0])[1], 0)        # far above: positive
+        i = s["k"].index(105)
+        self.assertGreater(s["gc"][i], 0)
+        self.assertLess(s["gp"][s["k"].index(95)], s["gp"][s["k"].index(90)])
+        # net GEX at a strike equals calls + puts, and the front-expiry part is about the nearer expiry only
+        self.assertAlmostEqual(s["tot"]["gex"], sum(s["gc"]) + sum(s["gp"]), delta=abs(s["tot"]["gex"]) * 1e-3)
+        self.assertEqual(s["levels"]["pain_d"], "2026-10-22")
+        self.assertEqual(s["tot"]["pcr_oi"], round(10850 / 6800, 2))
+        self.assertEqual(s["surf"]["d"], ["2026-10-22", "2026-11-19"])
+        self.assertEqual(len(s["grk"]["k"]), 3)                              # strikes within 8% of the price
+        self.assertAlmostEqual(s["em"]["iv30"], 0.25, places=3)
+        self.assertAlmostEqual(s["em"]["d1"], 100 * 0.25 / math.sqrt(252), places=2)
+
+    def test_history_keeps_sessions(self):
+        import gex
+        with tempfile.TemporaryDirectory() as d:
+            base = datetime(2026, 10, 12, 15, tzinfo=timezone.utc)   # Monday
+            for day in range(7):
+                for h in (0, 1):
+                    now = base + timedelta(days=day, hours=h)
+                    s = gex.analyze(self.chain(now), 100.0 + day, now, band=0.2)
+                    gex.write("XYZ", s, now, "test", out_dir=d, intra_days=3)
+            h = gex.load(os.path.join(d, "hist", "XYZ.json"))
+            self.assertEqual(sorted({x["day"] for x in h["intra"]}), ["2026-10-16", "2026-10-17", "2026-10-18"])
+            self.assertEqual(len(h["days"]), 7)
+            self.assertEqual(h["days"][-1]["px"], 106.0)          # the last snapshot of a day stands for the day
+            self.assertEqual(gex.load(os.path.join(d, "XYZ.json"))["src"], "test")
+        self.assertEqual(gex.session_day(datetime(2026, 7, 1, 2, tzinfo=timezone.utc), "equity"), "2026-06-30")   # 22:00 in New York
+        self.assertEqual(gex.session_day(datetime(2026, 12, 1, 4, 30, tzinfo=timezone.utc), "equity"), "2026-11-30")
+        self.assertEqual(gex.session_day(datetime(2026, 12, 1, 4, 30, tzinfo=timezone.utc), "crypto"), "2026-12-01")
+
+    def test_cboe_chain_and_expired(self):
+        import gex
+        now = datetime(2026, 10, 16, 22, tzinfo=timezone.utc)   # after the close of the 16 Oct expiry
+        chain, S = gex.from_cboe(cboe_payload(), now)
+        self.assertEqual(S, 100.0)
+        self.assertEqual({o["exp"] for o in chain}, {"2026-11-20"})
+
+    def test_deribit_live_sample(self):
+        import deribit, gex
+        fx = os.path.join(HERE, "fixtures", "live")
+        book = json.load(open(os.path.join(fx, "deribit_btc_book.json")))["result"]
+        S = json.load(open(os.path.join(fx, "deribit_btc_index.json")))["result"]["index_price"]
+        now = datetime(2026, 11, 23, 13, 26, tzinfo=timezone.utc)
+        self.assertEqual(deribit.parse_name("BTC-27NOV26-60000-C"), ("2026-11-27", "C", 60000.0))
+        self.assertEqual(deribit.parse_name("BTC-4DEC26-120000-P"), ("2026-12-04", "P", 120000.0))
+        self.assertIsNone(deribit.parse_name("BTC-PERPETUAL"))
+        chain = deribit.chain_from(book, now)
+        self.assertGreater(len(chain), 300)
+        self.assertTrue(all(0 < o["iv"] < 3 for o in chain if o["iv"]))
+        s = gex.analyze(chain, S, now, size=1.0, kind="crypto", band=0.25, prof_band=0.2)
+        self.assertTrue(40000 < s["levels"]["cwall"] < 90000)
+        self.assertTrue(0.2 < s["em"]["iv30"] < 1.5)
+        self.assertEqual(s["kind"], "crypto")
+
+    def test_deribit_build(self):
+        import deribit
+        fx = os.path.join(HERE, "fixtures", "live")
+        calls = []
+
+        def fetcher(path, params):
+            calls.append((path, params.get("currency") or params.get("index_name")))
+            if path == "get_book_summary_by_currency":
+                if params["currency"] == "ETH":
+                    raise OSError("timeout")
+                return json.load(open(os.path.join(fx, "deribit_btc_book.json")))["result"]
+            if path == "get_index_price":
+                return json.load(open(os.path.join(fx, "deribit_btc_index.json")))["result"]
+            return json.load(open(os.path.join(fx, "deribit_dvol.json")))["result"]
+        now = datetime(2026, 11, 23, 13, 26, tzinfo=timezone.utc)
+        with tempfile.TemporaryDirectory() as d:
+            self.assertEqual(deribit.build(now, out_dir=d, fetcher=fetcher, sleep=0), 1)   # ETH failed, BTC written
+            btc = json.load(open(os.path.join(d, "BTC.json")))
+            self.assertEqual((btc["src"], btc["kind"]), ("deribit", "crypto"))
+            self.assertTrue(30 < btc["dvol"] < 120)
+            self.assertTrue(btc["dvol_hist"])
+            calls.clear()
+            self.assertEqual(deribit.build(now + timedelta(minutes=5), out_dir=d, fetcher=fetcher, sleep=0), 0)
+            self.assertNotIn(("get_book_summary_by_currency", "BTC"), calls)            # fresh: not asked again
+
+    def test_yahoo_fallback(self):
+        import options
+
+        class FakeSession:
+            crumb = "c"
+            def __init__(self):
+                self.urls = []
+            def yahoo_login(self):
+                self.crumb = "c"
+            def json(self, url):
+                self.urls.append(url)
+                q = urllib.parse.parse_qs(urllib.parse.urlparse(url).query)
+                return {"optionChain": {"result": [yahoo_answer(date_ts=int(q["date"][0]) if "date" in q else None)]}}
+        now = datetime(2026, 10, 15, 15, tzinfo=timezone.utc)
+        fs = FakeSession()
+        p = options.yahoo_chain("SPX", now, session=fs, sleep=0)
+        self.assertIn("/%5ESPX?", fs.urls[0])                              # the index's own code at Yahoo
+        self.assertEqual(len(fs.urls), 2)                                    # the first answer + one more expiry
+        self.assertEqual(p["src"], "yahoo")
+        s = options.summarize(p, now.date())
+        self.assertEqual([e["d"] for e in s["exp"]], ["2026-10-16", "2026-11-20"])
+        row = s["chains"][0]["rows"][1]
+        self.assertEqual(row[0], 100.0)
+        self.assertTrue(0.4 < row[5] < 0.6)                                  # the call delta comes from Black-Scholes
+        self.assertEqual(options.pick_expiries([1792108800, 1795132800, 1700000000], now), [1792108800, 1795132800])
+        self.assertTrue(options.third_friday(date(2026, 11, 20)))
+        self.assertFalse(options.third_friday(date(2026, 11, 13)))
+        # Cboe refuses → Yahoo, and Cboe is left alone for a while
+        calls = []
+
+        def cboe(sym):
+            calls.append(sym)
+            raise urllib.error.HTTPError("u", 403, "Forbidden", {}, None)
+        with mock.patch.object(options, "fetch_cboe", cboe), mock.patch.object(options, "yahoo_chain", lambda s, n, f: {"src": "yahoo", "s": s}), \
+                mock.patch.object(options, "_cboe_off_until", None):
+            self.assertEqual(options.fetch("SPY", now)["src"], "yahoo")
+            self.assertEqual(options.fetch("QQQ", now + timedelta(hours=1))["s"], "QQQ")
+            self.assertEqual(calls, ["SPY"])
+            options.fetch("IWM", now + timedelta(hours=7))
+            self.assertEqual(calls, ["SPY", "IWM"])
+
+
+class PreMarketBrief(unittest.TestCase):
+    def test_message_in_both_languages(self):
+        import brief
+        now = datetime(2026, 11, 23, 13, 0, tzinfo=timezone.utc)   # 16:00 MSK
+        with tempfile.TemporaryDirectory() as d:
+            def snap(sym, px, gex, upd):
+                with open(os.path.join(d, sym + ".json"), "w") as f:
+                    json.dump({"s": sym, "updated": upd.isoformat(), "px": px, "tot": {"gex": gex},
+                               "levels": {"zero": px * 0.99, "cwall": px * 1.01, "pwall": px * 0.98},
+                               "em": {"d1": px * 0.01, "d1_pct": 1.0, "iv30": 0.16}}, f)
+            snap("SPY", 676.0, 2.5e9, now - timedelta(hours=3))        # no SPX file: the ETF stands in
+            snap("NDX", 24000.0, -1.2e9, now - timedelta(hours=90))    # stale: left out
+            snap("BTC", 61211.0, -3.0e7, now - timedelta(minutes=10))
+            notes = []
+            make = brief.build(now, [{"short": "VIX", "value": 17.25}], gex_dir=d,
+                               ai_note=lambda facts: notes.append(facts) or {"en": "Calm <today>.", "ru": "Спокойно."})
+            en, ru = make("en"), make("ru")
+        self.assertIn("Option levels before the US open", en)
+        self.assertIn("<b>S&amp;P 500</b> 676", en)
+        self.assertIn("GEX +$2.5B — positive gamma", en)
+        self.assertIn("GEX −$30.0M — negative gamma", en)
+        self.assertNotIn("Nasdaq", en)
+        self.assertIn("VIX 17.25", en)
+        self.assertIn("Calm &lt;today&gt;.", en)                       # the AI text is escaped
+        self.assertNotIn("as of", en.split("Bitcoin")[0])                 # 3 hours old: no date
+        with tempfile.TemporaryDirectory() as d2:                          # Monday: Friday's US levels count, dated
+            with open(os.path.join(d2, "SPX.json"), "w") as f:
+                json.dump({"s": "SPX", "kind": "equity", "updated": (now - timedelta(hours=64)).isoformat(), "px": 6700.0,
+                           "tot": {"gex": 1e9}, "levels": {}, "em": {}}, f)
+            mon = brief.build(now, [], gex_dir=d2)("en")
+        self.assertIn("(as of 21 Nov)", mon)
+        self.assertIn("Опционные уровни перед открытием США", ru)
+        self.assertIn("61 211", ru)                                # Russian number format
+        self.assertIn("положительная гамма", ru)
+        self.assertIn("S&P 500: price 676.0", notes[0])
+        with tempfile.TemporaryDirectory() as d:
+            self.assertIsNone(brief.build(now, [], gex_dir=d))         # nothing fresh: no message
+
+    def test_ai_note_parsing(self):
+        import ai
+        with mock.patch.dict(os.environ, {"ANTHROPIC_API_KEY": "k"}):
+            out = ai.brief_note("facts", call=lambda prompt, key, model: 'Sure: {"en": "Support at 6,700.", "ru": "Поддержка 6 700."}')
+            self.assertEqual(out, {"en": "Support at 6,700.", "ru": "Поддержка 6 700."})
+            self.assertIsNone(ai.brief_note("facts", call=lambda *a: "no json"))
+        with mock.patch.dict(os.environ, {"ANTHROPIC_API_KEY": ""}):
+            self.assertIsNone(ai.brief_note("facts"))
+
+
+class TankersAis(unittest.TestCase):
+    """The WebSocket client against a local server, the messages and the file (no network)."""
+
+    def serve(self, frames, got):
+        import socket as so
+        import threading
+        srv = so.socket()
+        srv.bind(("127.0.0.1", 0))
+        srv.listen(1)
+
+        def run():
+            c, _ = srv.accept()
+            req = b""
+            while b"\r\n\r\n" not in req:
+                req += c.recv(4096)
+            key = [l.split(b":", 1)[1].strip() for l in req.split(b"\r\n") if l.lower().startswith(b"sec-websocket-key")][0]
+            import base64 as b64, hashlib as hl
+            acc = b64.b64encode(hl.sha1(key + b"258EAFA5-E914-47DA-95CA-C5AB0DC85B11").digest())
+            c.sendall(b"HTTP/1.1 101 Switching Protocols\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: " + acc + b"\r\n\r\n")
+            # the client's first frame: the subscription (masked)
+            h = c.recv(2)
+            n = h[1] & 0x7F
+            if n == 126:
+                n = int.from_bytes(c.recv(2), "big")
+            mask = c.recv(4)
+            data = b""
+            while len(data) < n:
+                data += c.recv(n - len(data))
+            got.append(((h[1] & 0x80) != 0, bytes(b ^ mask[i % 4] for i, b in enumerate(data)).decode()))
+            for fr in frames:
+                c.sendall(fr)
+            time.sleep(0.3)
+            try:
+                got.append(("after", c.recv(64)))   # the pong (or the close)
+            except OSError:
+                pass
+            c.close()
+            srv.close()
+        th = threading.Thread(target=run, daemon=True)
+        th.start()
+        self.server_thread = th
+        return srv.getsockname()[1]
+
+    @staticmethod
+    def frame(payload, op=1, fin=True):
+        b = payload.encode() if isinstance(payload, str) else payload
+        n = len(b)
+        head = bytes([(0x80 if fin else 0) | op]) + (bytes([n]) if n < 126 else bytes([126]) + n.to_bytes(2, "big"))
+        return head + b
+
+    def test_client_and_messages(self):
+        import ais
+        pos = {"MessageType": "PositionReport", "MetaData": {"MMSI": 538001234, "ShipName": "  OCEAN  STAR  "},
+               "Message": {"PositionReport": {"Latitude": 26.5, "Longitude": 56.3, "Sog": 12.4, "Cog": 301.2, "NavigationalStatus": 0}}}
+        static = {"MessageType": "ShipStaticData", "MetaData": {"MMSI": 538001234, "ShipName": "OCEAN STAR"},
+                  "Message": {"ShipStaticData": {"Type": 80, "Destination": "FUJAIRAH@@@", "MaximumStaticDraught": 14.2}}}
+        bad = {"MessageType": "PositionReport", "MetaData": {"MMSI": 12}, "Message": {"PositionReport": {"Latitude": 1, "Longitude": 1}}}
+        txt = json.dumps(pos)
+        frames = [self.frame(txt[:20], fin=False), self.frame(txt[20:], op=0),        # a message in two fragments
+                  self.frame(b"\x01\x02", op=9),                                         # a ping: the client answers
+                  self.frame(json.dumps(static).encode(), op=2),                        # a binary frame
+                  self.frame(json.dumps(bad)), self.frame(b"", op=8)]
+        got = []
+        port = self.serve(frames, got)
+        now = datetime(2026, 11, 23, 13, tzinfo=timezone.utc)
+        ships, n = ais.listen("SECRET", seconds=5, url=f"ws://127.0.0.1:{port}/v0/stream", now=now)
+        self.server_thread.join(3)
+        masked, sub = got[0]
+        self.assertTrue(masked)                                      # client frames are masked
+        self.assertEqual(json.loads(sub)["APIKey"], "SECRET")
+        self.assertEqual(len(json.loads(sub)["BoundingBoxes"]), len(ais.AREAS))
+        self.assertEqual(n, 2)
+        rec = ships["538001234"]
+        self.assertEqual((rec["name"], rec["type"], rec["dest"], rec["area"], rec["sog"], rec["cog"]), ("OCEAN STAR", 80, "FUJAIRAH", "hormuz", 12.4, 301))
+        self.assertTrue(got[1][1].startswith(b"\x8a"))               # the pong, opcode 10
+        out = ais.merge({"types": {"538009999": 84}, "ships": [{"mmsi": 538009999, "lat": 1.2, "lon": 103.8, "t": "2026-11-23T00:00:00+00:00", "area": "malacca"}]}, ships, now)
+        self.assertEqual([s["mmsi"] for s in out["ships"]], [538001234])   # the other one is older than 12 h
+        self.assertEqual({a["id"]: a["tankers"] for a in out["areas"]}["hormuz"], 1)
+        self.assertEqual(out["types"]["538001234"], 80)
+
+    def test_build_needs_the_key_and_keeps_it_secret(self):
+        import ais
+        calls = []
+        with tempfile.TemporaryDirectory() as d:
+            path = os.path.join(d, "ships.json")
+            with mock.patch.dict(os.environ, {"AISSTREAM_API_KEY": ""}):
+                self.assertEqual(ais.build(path=path, listen_fn=lambda k, now=None: calls.append(k)), 0)
+            self.assertEqual(calls, [])
+            now = datetime(2026, 11, 23, 13, tzinfo=timezone.utc)
+            with mock.patch.dict(os.environ, {"AISSTREAM_API_KEY": "TOPSECRET"}):
+                n = ais.build(now, path=path, listen_fn=lambda k, now=None: (calls.append(k), ({}, 7))[1])
+                self.assertEqual((n, calls), (7, ["TOPSECRET"]))
+                self.assertEqual(ais.build(now + timedelta(minutes=10), path=path, listen_fn=lambda k, now=None: calls.append(k)), 0)   # fresh
+            with open(path) as f:
+                self.assertNotIn("TOPSECRET", f.read())
 
 
 class MacroAndMoex(unittest.TestCase):
