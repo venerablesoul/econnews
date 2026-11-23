@@ -497,9 +497,9 @@ def save_state(path, st, now):
 
 
 # ----------------------------------------------------------------------------
-# Translation (free, no keys): English stories get a Russian version, Russian stories
-# an English one. Google Translate first, MyMemory as a fallback; if both fail the story
-# simply stays in its original language.
+# Translation (free, no keys): every story gets a version in each of the bot's other languages
+# (English stories in Russian, Chinese and Arabic; Russian ones in English, Chinese and Arabic).
+# Google Translate first, MyMemory as a fallback; if both fail the story simply stays in its original language.
 # ----------------------------------------------------------------------------
 GT_URL = "https://translate.googleapis.com/translate_a/single"
 MM_URL = "https://api.mymemory.translated.net/get"
@@ -514,8 +514,12 @@ def _env_on(name, default):
 TRANSLATE_ON = os.environ.get("TRANSLATE", "yes").strip().lower() not in ("off", "none", "no", "0", "false")
 
 
+# the translators' codes for our languages (Chinese — simplified)
+ENGINE_LANG = {"zh": "zh-CN"}
+
+
 def _google(text, src, lang):
-    q = urllib.parse.urlencode({"client": "gtx", "sl": src, "tl": lang, "dt": "t", "q": text})
+    q = urllib.parse.urlencode({"client": "gtx", "sl": src, "tl": ENGINE_LANG.get(lang, lang), "dt": "t", "q": text})
     req = urllib.request.Request(f"{GT_URL}?{q}", headers={"User-Agent": UA})
     with urllib.request.urlopen(req, timeout=10) as r:
         data = json.loads(r.read().decode("utf-8"))
@@ -524,7 +528,7 @@ def _google(text, src, lang):
 
 
 def _mymemory(text, src, lang):
-    q = urllib.parse.urlencode({"q": text[:480], "langpair": f"{src}|{lang}"})
+    q = urllib.parse.urlencode({"q": text[:480], "langpair": f"{src}|{ENGINE_LANG.get(lang, lang)}"})
     req = urllib.request.Request(f"{MM_URL}?{q}", headers={"User-Agent": UA})
     with urllib.request.urlopen(req, timeout=10) as r:
         data = json.loads(r.read().decode("utf-8"))
@@ -539,8 +543,8 @@ def orig_lang(text):
 
 
 def translate(text, lang="ru"):
-    """Translation into lang ('ru' or 'en'); None if the text is already in that language or translation failed."""
-    if not text or not TRANSLATE_ON or lang not in ("ru", "en"):
+    """Translation into lang (en, ru, zh, ar); None if the text is already in that language or translation failed."""
+    if not text or not TRANSLATE_ON or lang not in i18n.LANGS:
         return None
     src = orig_lang(text)
     if src == lang:
@@ -561,20 +565,27 @@ def translate(text, lang="ru"):
     return result
 
 
+# the fields a translated story keeps (title_ru, lead_zh, …): in state.json and in docs/data.json
+TR_FIELDS = tuple(f"{f}_{lang}" for f in ("title", "lead") for lang in i18n.LANGS)
+
+
 def translate_items(items):
-    """Adds title_<lang>/lead_<lang> in the other language to stories that lack them (4 threads)."""
+    """Adds title_<lang>/lead_<lang> in every other language to stories that lack them (6 threads)."""
     if not TRANSLATE_ON:
         return
     jobs = []
     for it in items:
-        target = "en" if orig_lang(it["title"]) == "ru" else "ru"
-        if not it.get("title_" + target):
-            jobs.append((it, "title", "title_" + target, target))
-        if SUMMARIES and it.get("lead") and not it.get("lead_" + target):
-            jobs.append((it, "lead", "lead_" + target, target))
+        src = orig_lang(it["title"])
+        for target in i18n.LANGS:
+            if target == src:
+                continue
+            if not it.get("title_" + target):
+                jobs.append((it, "title", "title_" + target, target))
+            if SUMMARIES and it.get("lead") and not it.get("lead_" + target):
+                jobs.append((it, "lead", "lead_" + target, target))
     if not jobs:
         return
-    with ThreadPoolExecutor(max_workers=4) as ex:
+    with ThreadPoolExecutor(max_workers=6) as ex:
         for (it, src, dst, target), tr in zip(jobs, ex.map(lambda j: translate(j[0][j[1]], j[3]), jobs)):
             if tr:
                 it[dst] = tr
@@ -600,10 +611,13 @@ TERMINAL_BUTTON = _env_on("TERMINAL_BUTTON", "yes")  # "Terminal" button under m
 
 
 def ai_sum(it, lang):
-    """The AI one-liner in the reader's language. Older notes had only a Russian "sum" (no "sum_ru")."""
+    """The AI one-liner in the reader's language ("" if there is none in it — then the summary is shown).
+    Older notes had only a Russian "sum" (no "sum_ru"); notes before Chinese and Arabic had no sum_zh/sum_ar."""
     ai = it.get("ai") or {}
     if "sum_ru" not in ai:
         return ai.get("sum", "") if lang == "ru" else ""
+    if lang in ("zh", "ar"):
+        return ai.get("sum_" + lang) or ""
     return ai.get("sum_ru" if lang == "ru" else "sum") or ""
 
 
@@ -735,7 +749,7 @@ class Telegram:
         lang = self.lang_of(chat)
         rows = []
         if self.pages_url:
-            q = "?lang=ru" if lang == "ru" else ""
+            q = "" if lang == i18n.DEFAULT else "?lang=" + lang
             # web_app buttons (open the page inside Telegram) only work in private chats
             webapp = not str(chat).startswith("-") and chat not in self.no_webapp
 
@@ -1003,6 +1017,10 @@ def page_calendar(st, now):
             if e["impact"] not in ("High", "Medium") or not (lo <= e["ts"] <= hi):
                 continue
             item = {**e, "title_ru": cal.ru_name(e), "flag": cal.FLAGS.get(e["country"], "")}
+            for lang in ("zh", "ar"):      # common events have names in these languages too (the rest stay English)
+                name = cal.known_name(e, lang)
+                if name:
+                    item["title_" + lang] = name
             act = (st.get("cal_actuals") or {}).get(cal.event_id(e))
             if act:
                 item["actual"] = act
@@ -1019,7 +1037,7 @@ def page_news_item(r):
             "tags": [i18n.TAGS_FROM_RU.get(t, t) for t in r.get("tags", [])],
             "sources": [i18n.SOURCES_FROM_RU.get(x, x) for x in r["sources"]],
             "link": r["link"], "level": level_of(r["score"]), "ts": r["ts"]}
-    for k in ("title_ru", "title_en", "lead_ru", "lead_en"):
+    for k in TR_FIELDS:
         if r.get(k):
             item[k] = r[k]
     try:
@@ -1153,8 +1171,8 @@ def run(dry=False):
             st["seen"][i] = now.isoformat()
         rec = {"title": s["title"], "link": s["link"], "sources": s["sources"],
                "score": s["score"], "ts": now.isoformat()}
-        keep = (("title_ru", "title_en", "lead", "lead_ru", "lead_en", "tags", "ai")
-                if level_of(s["score"]) != "low" else ("title_ru", "title_en"))
+        titles = tuple(k for k in TR_FIELDS if k.startswith("title_"))
+        keep = ((*TR_FIELDS, "lead", "tags", "ai") if level_of(s["score"]) != "low" else titles)
         for k in keep:
             if s.get(k):
                 rec[k] = s[k]

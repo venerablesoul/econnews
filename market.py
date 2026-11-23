@@ -183,10 +183,17 @@ def fmt_change(q, lang="ru"):
     return s.replace(".", ",") if lang == "ru" else s
 
 
+# short names in the market line for Chinese and Arabic readers (the rest are tickers everyone knows)
+SHORT_XL = {"Золото": {"zh": "黄金", "ar": "الذهب"}, "Brent": {"zh": "布伦特", "ar": "برنت"}}
+
+
 def strip_line(quotes, keys=("S&P", "Brent", "Золото", "USD/RUB", "IMOEX", "BTC"), lang="ru"):
     """Short market line for message headers (short names in the reader's language)."""
     by = {q["short"]: q for q in quotes}
-    label = (lambda q: q.get("short_en") or q["short"]) if lang != "ru" else (lambda q: q["short"])
+    if lang == "ru":
+        label = lambda q: q["short"]  # noqa: E731
+    else:
+        label = lambda q: (SHORT_XL.get(q["short"]) or {}).get(lang) or q.get("short_en") or q["short"]  # noqa: E731
     parts = [f"{label(by[k])} {fmt_price(by[k], lang)} {fmt_change(by[k], lang)}".strip() for k in keys if k in by]
     return " · ".join(parts)
 

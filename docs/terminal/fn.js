@@ -26,16 +26,15 @@ function money(v, cur){
   cur = cur == null ? '$' : cur;
   if (v == null || isNaN(v)) return '—';
   var a = Math.abs(v), s = v < 0 ? '−' : '';
-  if (a >= 1e12) return s + cur + fmt(a / 1e12, 2) + (I.ru ? ' трлн' : 'T');
-  if (a >= 1e9) return s + cur + fmt(a / 1e9, a >= 1e11 ? 0 : 1) + (I.ru ? ' млрд' : 'B');
-  if (a >= 1e6) return s + cur + fmt(a / 1e6, a >= 1e8 ? 0 : 1) + (I.ru ? ' млн' : 'M');
+  var u = I.scale(a, 2);   // $5.01T, $250B, $1.2M (Chinese: $5.01万亿, $2,500亿, $120万)
+  if (u) return s + cur + fmt(u.x, u.rank === 4 ? 2 : u.x >= 100 ? 0 : 1) + u.s;
   return s + cur + fmt(a, a >= 1e4 ? 0 : 2);
 }
 function dg(p){ var a = Math.abs(p || 0); return a >= 1000 ? 0 : a >= 10 ? 2 : a >= 1 ? 3 : a >= 0.01 ? 4 : 6 }
 function price(v){ return v == null ? '—' : fmt(v, dg(v)) }
 var MON = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-function dmy(d){ return d && d.length >= 10 ? (I.ru ? d.slice(8, 10) + '.' + d.slice(5, 7) + '.' + d.slice(0, 4) : +d.slice(8, 10) + ' ' + MON[+d.slice(5, 7) - 1] + ' ' + d.slice(0, 4)) : '—' }
-function dmShort(d){ return d && d.length >= 10 ? (I.ru ? d.slice(8, 10) + '.' + d.slice(5, 7) + '.' + d.slice(2, 4) : MON[+d.slice(5, 7) - 1] + " '" + d.slice(2, 4)) : '—' }
+function dmy(d){ return I.dmy(d) }
+function dmShort(d){ return I.my(d) }
 function num(v, d){ return v == null || isNaN(v) ? '—' : fmt(v, d == null ? 2 : d) }
 function upSym(s){ return String(s || '').trim().toUpperCase().replace(/\s+(US\s+)?EQUITY$/, '').replace(/\s+US$/, '') }
 var ETF = {SPY: 1, QQQ: 1, DIA: 1, IWM: 1, VOO: 1, VTI: 1, GLD: 1, TLT: 1};
@@ -102,7 +101,7 @@ function td(text, cl){ return el('td', cl || null, text) }
 // column headers from a list of names; `left` lists the indexes aligned left
 function cols(names, left){ return names.map(function(t, i){ return {t: t, l: (left || []).indexOf(i) >= 0} }) }
 // curve and central bank names: "name" is English, "name_ru" Russian (older data had only a Russian "name")
-function locName(x){ return I.ru ? x.name_ru || x.name : x.name }
+function locName(x){ return I.dn(x) }
 function chg(c, d){ return el('td', 'num ' + cls(c), pct(c, d)) }
 // simple moving average: null until n points are available
 function sma(v, n){
@@ -322,7 +321,7 @@ function loadDes(){
   if (!T.api()) return noApi(box, TX('co_card'));
   loading(box, TX('loading_x', sym));
   des.loadingSym = sym;
-  api('/api/company?s=' + encodeURIComponent(sym) + (I.ru ? '&lang=ru' : ''), {ttl: 120}).then(function(d){
+  api('/api/company?s=' + encodeURIComponent(sym) + (I.q ? '&' + I.q : ''), {ttl: 120}).then(function(d){
     if (des.sym !== sym) return;
     des.data = d; des.sym = (d.s || sym); renderDes();
   }).catch(function(e){
@@ -533,7 +532,7 @@ function desOmon(box, d){
   var ch = o.chains || [];
   if (omon.i >= ch.length) omon.i = 0;
   var pt = el('div', 'ptabs');
-  ch.forEach(function(c, i){ var b = el('button', i === omon.i ? 'on' : null, I.ru ? c.d.slice(8, 10) + '.' + c.d.slice(5, 7) : +c.d.slice(8, 10) + ' ' + MON[+c.d.slice(5, 7) - 1]); b.onclick = function(){ omon.i = i; renderDes() }; pt.appendChild(b) });
+  ch.forEach(function(c, i){ var b = el('button', i === omon.i ? 'on' : null, I.dm(c.d)); b.onclick = function(){ omon.i = i; renderDes() }; pt.appendChild(b) });
   pt.appendChild(el('span', 'sp')); box.appendChild(pt);
   var c = ch[omon.i];
   if (c) {
@@ -714,23 +713,25 @@ function desAnr(box, d){
   });
   box.appendChild(tb.t);
 }
-// Russian readers: headlines are translated right in the browser (translators often block Cloudflare servers)
-var trCache = {};
+// Russian, Chinese and Arabic readers: headlines the server could not translate are translated right in the browser
+// (translators often block Cloudflare servers)
+var trCache = {}, TR_LANG = {ru: 'ru', zh: 'zh-CN', ar: 'ar'}[I.lang];
 try { trCache = JSON.parse(sessionStorage.getItem('tr_cache') || '{}') || {} } catch(e){}
 function translateHere(text){
-  if (trCache[text]) return Promise.resolve(trCache[text]);
-  return fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=ru&dt=t&q=' + encodeURIComponent(text))
+  var key = I.lang + ':' + text;
+  if (trCache[key]) return Promise.resolve(trCache[key]);
+  return fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=' + TR_LANG + '&dt=t&q=' + encodeURIComponent(text))
     .then(function(r){ if (!r.ok) throw new Error(r.status); return r.json() })
     .then(function(j){
       var t = (j[0] || []).map(function(x){ return x[0] || '' }).join('').trim();
-      if (t) { trCache[text] = t; try { sessionStorage.setItem('tr_cache', JSON.stringify(trCache)) } catch(e){} }
+      if (t) { trCache[key] = t; try { sessionStorage.setItem('tr_cache', JSON.stringify(trCache)) } catch(e){} }
       return t || text;
     });
 }
 function desCn(box, d){
   var items = d.cn || [];
   if (!items.length) { box.appendChild(el('div', 'empty', TX('cn_none'))); return }
-  var raw = I.ru ? items.filter(function(n){ return n.en && n.h === n.en && !n._tr }) : [];
+  var raw = TR_LANG ? items.filter(function(n){ return n.en && n.h === n.en && !n._tr }) : [];
   if (raw.length) {
     var sym = d.s;
     Promise.all(raw.map(function(n){ return translateHere(n.en).then(function(t){ n.h = t; n._tr = 1 }, function(){ n._tr = 1 }) })).then(function(){
@@ -743,7 +744,7 @@ function desCn(box, d){
     li.appendChild(el('span', 't', new Date(n.t * 1000).toLocaleString(I.date, {day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit', timeZone: T.MSK})));
     var a = el('a', null, n.h); if (/^https?:\/\//.test(n.url || '')) { a.href = n.url; a.target = '_blank'; a.rel = 'noopener' }
     li.appendChild(a);
-    if (I.ru && n.en && n.en !== n.h) li.appendChild(el('div', 'lead', n.en));
+    if (TR_LANG && n.en && n.en !== n.h) li.appendChild(el('div', 'lead', n.en));
     li.appendChild(el('div', 'meta', n.src || ''));
     ul.appendChild(li);
   });
@@ -822,7 +823,7 @@ function renderHP(){
 function isIntra(r){ return r === '1d' || r === '5d' }
 function mskTime(t, withDay){
   var x = new Date((t + 3 * 3600) * 1000).toISOString();
-  return (withDay ? (I.ru ? x.slice(8, 10) + '.' + x.slice(5, 7) : +x.slice(8, 10) + ' ' + MON[+x.slice(5, 7) - 1]) + ' ' : '') + x.slice(11, 16);
+  return (withDay ? I.dm(x) + ' ' : '') + x.slice(11, 16);
 }
 function drawHP(box, h){
   clear(box);
@@ -830,7 +831,7 @@ function drawHP(box, h){
   var n = h.c.length, first = h.c[0], last = h.c[n - 1];
   var lows = h.l.filter(function(x){ return x != null }), highs = h.h.filter(function(x){ return x != null });
   var vol = h.v.filter(function(x){ return x }), avgv = vol.length ? vol.reduce(function(a, b){ return a + b }, 0) / vol.length : null;
-  $('hp-sub').textContent = ((I.ru && h.name_ru) || h.name || '') + ' · ' + (h.src || '');
+  $('hp-sub').textContent = ((I.ru && h.name_ru) || (I.xl && I.mktXl(h.key || h.s)) || h.name || '') + ' · ' + (h.src || '');
   var st = el('div', 'stat');
   [[TX('over_range', RANGES[h.range || hp.range]), pct((last / first - 1) * 100), cls(last - first)], [TX('hp_now'), price(last)], [TX('hp_min'), price(Math.min.apply(null, lows))],
    [TX('hp_max'), price(Math.max.apply(null, highs))], [TX('hp_vol'), avgv ? fmt(avgv, 0) : '—'], [TX('hp_pts'), String(n)]].forEach(function(x){
@@ -916,7 +917,7 @@ function paintLines(box, series, opts){
   var w = box.clientWidth, h = box.clientHeight; if (!w || !h) return;
   var dpr = window.devicePixelRatio || 1; cv.width = w * dpr; cv.height = h * dpr;
   var g = cv.getContext('2d'); g.scale(dpr, dpr);
-  if (!series.length) { g.fillStyle = '#5a5a5a'; g.font = '12px monospace'; g.fillText(TX('no_data_c'), 12, 20); return }
+  if (!series.length) { g.fillStyle = '#5a5a5a'; g.font = '12px ' + getComputedStyle(document.body).fontFamily; g.fillText(TX('no_data_c'), 12, 20); return }
   var pts = series.map(function(s){ var b = s.v[0]; return s.v.map(function(v, i){ return [s.t[i], opts.pct ? (v / b - 1) * 100 : v] }) });
   var t0 = Infinity, t1 = -Infinity, lo = Infinity, hi = -Infinity;
   pts.forEach(function(p){ p.forEach(function(x){ if (x[1] == null || isNaN(x[1])) return; t0 = Math.min(t0, x[0]); t1 = Math.max(t1, x[0]); lo = Math.min(lo, x[1]); hi = Math.max(hi, x[1]) }) });
@@ -925,7 +926,7 @@ function paintLines(box, series, opts){
   if (opts.hi != null) hi = opts.hi;
   var L = 8, R = 64, Tp = 8, B = opts.noDates ? 6 : 20, W = w - L - R, H = h - Tp - B;
   var X = function(t){ return L + (t - t0) / ((t1 - t0) || 1) * W }, Y = function(v){ return Tp + (hi - v) / (hi - lo) * H };
-  g.font = '11px monospace'; g.textBaseline = 'middle';
+  g.font = '11px ' + getComputedStyle(document.body).fontFamily; g.textBaseline = 'middle';
   (opts.levels || [0, 1, 2, 3, 4].map(function(k){ return lo + (hi - lo) * k / 4 })).forEach(function(v){
     var y = Y(v);
     g.strokeStyle = opts.levels ? 'rgba(255,255,255,0.18)' : 'rgba(255,255,255,0.06)'; g.beginPath(); g.moveTo(L, y); g.lineTo(L + W, y); g.stroke();
@@ -1336,9 +1337,9 @@ function drawEcst(box){
     clear(box);
     var rows = d.rows || [], years = d.years || [], y = new Date().getUTCFullYear(), iy = years.indexOf(y);
     $('ana-sub').textContent = TX('updated_at', T.hm(d.updated));
-    var nm = function(r){ return I.ru ? r.ru : r.en };
+    var nm = function(r){ return I.ru ? r.ru : I.country(r.c, r.en) };
     var q = ana.country, code = ECST_ALIAS[q] || q;
-    var one = q && rows.find(function(r){ return r.c === code || r.en.toUpperCase() === q || r.ru.toUpperCase() === q || r.en.toUpperCase().indexOf(q) === 0 || r.ru.toUpperCase().indexOf(q) === 0 });
+    var one = q && rows.find(function(r){ return r.c === code || r.en.toUpperCase() === q || r.ru.toUpperCase() === q || (I.xl && nm(r) === q) || r.en.toUpperCase().indexOf(q) === 0 || r.ru.toUpperCase().indexOf(q) === 0 });
     if (one) {
       var back = el('div', 'ptabs'), bb = el('button', null, TX('ecst_back')); bb.onclick = function(){ ana.country = ''; drawEcst(box) }; back.appendChild(bb);
       back.appendChild(el('span', 'sp')); box.appendChild(back);
@@ -1346,12 +1347,12 @@ function drawEcst(box){
       var tb = table([{t: TX('ecst_ind'), l: true}].concat(years.map(function(x){ return {t: String(x) + (x > y ? '*' : '')} })));
       Object.keys(d.ind || {}).forEach(function(k){
         var v = (one.v || {})[k]; if (!v) return;
-        var tr = el('tr'); tr.appendChild(td((I.ru ? d.ind[k].ru : d.ind[k].en), 'l'));
+        var tr = el('tr'); tr.appendChild(td(I.ind(k, d.ind[k]), 'l'));
         v.forEach(function(x, i){ tr.appendChild(td(x == null ? '—' : fmt(x, k === 'NGDPD' ? 0 : 1), 'num' + (years[i] > y ? ' flat' : ''))) });
         tb.body.appendChild(tr);
       });
       box.appendChild(tb.t);
-      box.appendChild(el('div', 'note', '* ' + TX('fcst')));
+      box.appendChild(el('div', 'note', '* ' + TX('fcst_w')));
       return;
     }
     // a country outside the main list: this year's values from the IMF map data (MAP ECO)
@@ -1361,7 +1362,7 @@ function drawEcst(box){
       back2.appendChild(el('span', 'sp')); box.appendChild(back2);
       h4(box, (window.MAPS && window.MAPS.countryName ? window.MAPS.countryName(code) : code) + ' · ' + (mp.year || y));
       var t2 = table([{t: TX('ecst_ind'), l: true}, {t: String(mp.year || y)}]);
-      Object.keys(d.ind || {}).forEach(function(k){ var x = mp[k] && mp[k][code]; if (x == null) return; var tr = el('tr'); tr.appendChild(td(I.ru ? d.ind[k].ru : d.ind[k].en, 'l')); tr.appendChild(td(fmt(x, 1), 'num')); t2.body.appendChild(tr) });
+      Object.keys(d.ind || {}).forEach(function(k){ var x = mp[k] && mp[k][code]; if (x == null) return; var tr = el('tr'); tr.appendChild(td(I.ind(k, d.ind[k]), 'l')); tr.appendChild(td(fmt(x, 1), 'num')); t2.body.appendChild(tr) });
       box.appendChild(t2.t);
       box.appendChild(el('div', 'note', TX('ecst_map_note')));
       return;
@@ -1548,7 +1549,7 @@ var My = (function(){
   }
   function sync(){
     if (!T.api() || !T.hasIdentity()) { st.server = false; return Promise.resolve() }
-    return api('/api/me' + (I.ru ? '?lang=ru' : ''), {allowError: true}).then(function(d){
+    return api('/api/me' + (I.q ? '?' + I.q : ''), {allowError: true}).then(function(d){
       if (!d.ok) { st.server = false; return }
       st.server = true;
       st.alerts = d.alerts || [];
@@ -1634,7 +1635,7 @@ var My = (function(){
     var tb = table(cols(TX('w_cols'), [1]));
     st.w.forEach(function(s){
       var x = q(s) || {}, tr = el('tr', 'row'); tr.dataset.s = s;
-      var nm = (I.ru && x.name_ru) || x.name;
+      var nm = (I.ru && x.name_ru) || (I.xl && I.mktXl(x.key)) || x.name;
       tr.appendChild(td(s, 'l tkc')); tr.appendChild(td(nm && nm !== s ? nm : '', 'l'));
       var p = td(x.px != null ? price(x.px) + (x.cur === '₽' ? ' ₽' : '') : '—', 'num'); p.dataset.k = 'p'; tr.appendChild(p);
       var c = chg(x.ch); c.dataset.k = 'c'; tr.appendChild(c);
@@ -1712,7 +1713,7 @@ var My = (function(){
       return;
     }
     var fm = form(TX('alrt_ph'), TX('set_btn'), function(v){
-      api('/api/me' + (I.ru ? '?lang=ru' : ''), {method: 'POST', body: {op: 'alert_add', text: v}, allowError: true}).then(function(d){
+      api('/api/me' + (I.q ? '?' + I.q : ''), {method: 'POST', body: {op: 'alert_add', text: v}, allowError: true}).then(function(d){
         if (!d.ok) { st.msg = d.error; return render() }
         st.alerts = d.alerts; st.noDraft = true; render();
       }).catch(function(e){ st.msg = e.message; render() });

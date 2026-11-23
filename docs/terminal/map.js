@@ -389,7 +389,8 @@ function arcgisAll(url, max){
   };
   return page(0);
 }
-function countryName(iso){ var c = world && world.c[iso]; return c ? (I.ru ? c.ru : c.en) : iso || '' }
+function cName(c){ return I.ru ? c.ru : I.country(c.iso, c.en) }
+function countryName(iso){ var c = world && world.c[iso]; return c ? cName(c) : iso || '' }
 
 /* ---------- ports: IMF PortWatch (with their traffic), Natural Earth if it does not answer ---------- */
 // the ports database once for both layers that use it (seaports, oil terminals)
@@ -881,7 +882,7 @@ function hover(e){
   var changed = (h && h.p) !== (M.hover && M.hover.p) || (c && c.iso) !== M.hoverIso;
   M.hover = h; M.hoverIso = c && c.iso;
   if (h) showTip(e, h.p.t, h.p.s);
-  else if (c) showTip(e, I.ru ? c.ru : c.en, [ecoName(M.eco) + ': ' + (eco.vals[c.iso] != null ? fmt(eco.vals[c.iso], ecoFmt()) + '%' : TX('gm_nodata'))]);
+  else if (c) showTip(e, cName(c), [ecoName(M.eco) + ': ' + (eco.vals[c.iso] != null ? fmt(eco.vals[c.iso], ecoFmt()) + '%' : TX('gm_nodata'))]);
   else hideTip();
   wrap.style.cursor = h && h.p.act ? 'pointer' : '';
   if (changed) redraw();
@@ -892,7 +893,7 @@ function click(e){
   if (h) { if (h.p.act) h.p.act(); else pinInfo(h.p); return }
   if (M.tab === 'ECO') {
     var c = countryAt(px, py);
-    if (c) pinInfo({t: I.ru ? c.ru : c.en, s: [ecoName(M.eco) + ': ' + (eco.vals[c.iso] != null ? fmt(eco.vals[c.iso], ecoFmt()) + '%' : TX('gm_nodata'))],
+    if (c) pinInfo({t: cName(c), s: [ecoName(M.eco) + ': ' + (eco.vals[c.iso] != null ? fmt(eco.vals[c.iso], ecoFmt()) + '%' : TX('gm_nodata'))],
       act2: [TX('gm_open_ecst'), function(){ T.runCommand('ECST ' + c.iso) }]});
   } else if (e.pointerType !== 'mouse') hideTip();
 }
@@ -1094,9 +1095,9 @@ function sideEco(){
   ks.sort(function(a, b){ return eco.vals[b] - eco.vals[a] }).forEach(function(iso){
     var c = world && world.c[iso]; if (!c) return;
     var b = el('button', 'gm-row gm-ch'), i = el('i'); i.style.background = ecoColor(iso) || '#333'; b.appendChild(i);
-    b.appendChild(el('span', 'nm', I.ru ? c.ru : c.en));
+    b.appendChild(el('span', 'nm', cName(c)));
     b.appendChild(el('span', 'num', fmt(eco.vals[iso], ecoFmt()) + '%'));
-    b.onclick = function(){ flyTo(c.lx, c.ly, 3); pinInfo({t: I.ru ? c.ru : c.en, s: [ecoName(M.eco) + ': ' + fmt(eco.vals[iso], ecoFmt()) + '%'], act2: [TX('gm_open_ecst'), function(){ T.runCommand('ECST ' + iso) }]}) };
+    b.onclick = function(){ flyTo(c.lx, c.ly, 3); pinInfo({t: cName(c), s: [ecoName(M.eco) + ': ' + fmt(eco.vals[iso], ecoFmt()) + '%'], act2: [TX('gm_open_ecst'), function(){ T.runCommand('ECST ' + iso) }]}) };
     side.appendChild(b);
   });
   optRows();

@@ -524,6 +524,171 @@ class NewsBotRunBothLanguages(unittest.TestCase):
         self.assertEqual(news_bot.ai_sum(new, "ru"), "Новая заметка")
 
 
+class ChineseAndArabic(unittest.TestCase):
+    """The bot's Chinese and Arabic readers: every text, the mailing, data.json, the calendar, trades, the picture."""
+
+    def test_every_text_in_four_languages_with_the_same_placeholders(self):
+        import re
+        import i18n
+        self.assertEqual(i18n.LANGS, ("en", "ru", "zh", "ar"))
+        ph = re.compile(r"\{\w+\}")
+        tags = re.compile(r"</?[a-z]+>")
+        for key, entry in i18n.S.items():
+            for lang in i18n.LANGS:
+                self.assertIn(lang, entry, f"{key}: no {lang}")
+                self.assertEqual(sorted(ph.findall(entry[lang])), sorted(ph.findall(entry["en"])), f"{key}: placeholders in {lang}")
+                self.assertEqual(tags.findall(entry[lang]), tags.findall(entry["en"]), f"{key}: markup in {lang}")
+        self.assertRegex(i18n.t("zh", "batch_head", stamp="13.11 09:00"), "经济")
+        self.assertRegex(i18n.t("ar", "batch_head", stamp="13.11 09:00"), "الاقتصاد")
+        self.assertEqual(i18n.norm_lang("zh-hans"), "zh")
+        self.assertEqual(len(i18n.MONTHS["zh"]), 12)
+        self.assertEqual(len(i18n.MONTHS["ar"]), 12)
+        for lang in ("zh", "ar"):
+            for k in i18n.TAGS_RU:
+                self.assertNotRegex(i18n.tag(k, lang), r"\s", "a hashtag has no spaces")
+            self.assertNotEqual(i18n.tag("ФРС", lang), "ФРС", "older Russian tags are shown in the reader's language")
+            self.assertNotEqual(i18n.source("Bank of Russia", lang), "Bank of Russia")
+            self.assertNotEqual(i18n.part("news", lang), "news")
+            self.assertNotEqual(i18n.trade_type("buy", lang), "buy")
+            self.assertNotEqual(i18n.trade_owner("SP", lang), "")
+        self.assertEqual(i18n.t("xx", "read"), "read →", "an unknown language falls back to English")
+
+    def test_mailing_and_data_in_chinese_and_arabic(self):
+        import news_bot
+        now = datetime.now(timezone.utc)
+
+        def story(i, title, score, tags, source="Reuters"):    # the shape collect() gives (as in the test above)
+            return {"id": f"id{i}", "title": title, "lead": f"Lead {i}", "tags": tags, "link": f"https://x/{i}", "source": source,
+                    "sources": [source], "score": score, "ts": now.isoformat()}
+        batches = [[story(1, "Fed holds rates steady as inflation cools", 9, ["Fed", "rates"])],
+                   [story(2, "Oil jumps after OPEC cuts output sharply", 8, ["oil"]),
+                    story(3, "ЦБ сохранил ключевую ставку на уровне 16%", 9, ["BankOfRussia"], source="Bank of Russia")]]
+        sent = []
+
+        def fake_call(self, method, fields, files=None):
+            sent.append((str(fields.get("chat_id")), method, fields))
+            return {"message_id": len(sent)}
+
+        def fake_translate(text, lang="ru"):
+            return None if news_bot.orig_lang(text) == lang else f"[{lang}] {text}"
+
+        with tempfile.TemporaryDirectory() as d:
+            os.makedirs(os.path.join(d, "docs"))
+            env = {"TELEGRAM_BOT_TOKEN": "1:T", "TELEGRAM_CHAT_ID": "100", "PAGES_URL": "https://p.test/",
+                   "STATE_FILE": os.path.join(d, "state.json"), "PAGE_DATA": os.path.join(d, "docs", "data.json"),
+                   "DIGEST_HOUR": "0", "MORNING_HOUR": "-1", "CALENDAR": "no", "TRADES": "no", "ANTHROPIC_API_KEY": "",
+                   "FRED_API_KEY": "", "QUIET_HOURS": "0-0"}
+            with mock.patch.dict(os.environ, env), \
+                    mock.patch.object(news_bot, "collect", side_effect=lambda now: (batches.pop(0), {})), \
+                    mock.patch.object(news_bot, "fetch_quotes", return_value=[]), \
+                    mock.patch.object(news_bot, "fetch_subscribers", return_value=(["400", "500"], {"400": "zh", "500": "ar"})), \
+                    mock.patch.object(news_bot, "translate", side_effect=fake_translate), \
+                    mock.patch.object(news_bot, "update_extras", return_value=""), \
+                    mock.patch.object(news_bot, "push_live"), \
+                    mock.patch.object(news_bot.Telegram, "_call", fake_call):
+                news_bot.run()
+                with open(env["STATE_FILE"], encoding="utf-8") as f:
+                    st = json.load(f)
+                st["last_digest"] = ""               # let the evening digest go out on the next run
+                with open(env["STATE_FILE"], "w", encoding="utf-8") as f:
+                    json.dump(st, f)
+                sent.clear()
+                news_bot.run()
+            with open(env["PAGE_DATA"], encoding="utf-8") as f:
+                data = json.load(f)
+            with open(env["STATE_FILE"], encoding="utf-8") as f:
+                st = json.load(f)
+        by = {}
+        for chat, method, f in sent:
+            by.setdefault(chat, []).append(f["text"])
+        zh, ar = "\n".join(by["400"]), "\n".join(by["500"])
+        self.assertIn("经济 ·", zh)
+        self.assertIn("[zh] Oil jumps after OPEC", zh)
+        self.assertIn("[zh] ЦБ сохранил ключевую ставку", zh)       # a Russian story translated for Chinese readers
+        self.assertIn("[zh] Lead 2", zh)                              # the summary too
+        self.assertIn("#石油", zh)
+        self.assertIn("俄罗斯央行", zh)
+        self.assertIn("阅读 →", zh)
+        self.assertIn("الاقتصاد ·", ar)
+        self.assertIn("[ar] Oil jumps after OPEC", ar)
+        self.assertIn("#النفط", ar)
+        self.assertIn("البنك المركزي الروسي", ar)
+        self.assertIn("أبرز أخبار", ar)                               # the evening digest
+        for chat, lang in (("400", "zh"), ("500", "ar")):
+            buttons = [json.loads(f["reply_markup"]) for c, _, f in sent if c == chat and f.get("reply_markup")]
+            self.assertTrue(buttons and buttons[0]["inline_keyboard"][0][0]["web_app"]["url"].endswith("?lang=" + lang))
+        n = {x["title"]: x for x in data["news"]}
+        oil, cbr = n["Oil jumps after OPEC cuts output sharply"], n["ЦБ сохранил ключевую ставку на уровне 16%"]
+        for lang in ("ru", "zh", "ar"):
+            self.assertEqual(oil["title_" + lang], f"[{lang}] Oil jumps after OPEC cuts output sharply")
+        for lang in ("en", "zh", "ar"):
+            self.assertTrue(cbr["title_" + lang].startswith(f"[{lang}] "))
+        self.assertNotIn("title_ru", cbr, "no translation into the story's own language")
+        kept = [r for r in st["recent"] if r["title"].startswith("Oil")][0]
+        self.assertEqual(kept["lead_zh"], "[zh] Lead 2", "translations are kept in state.json")
+
+    def test_calendar_names_and_labels(self):
+        import econ_calendar as cal
+        cpi = {"title": "Core CPI m/m", "country": "USD", "ts": "2026-11-13T13:30:00+00:00", "impact": "High",
+               "forecast": "0.3%", "previous": "0.2%"}
+        self.assertEqual(cal.known_name(cpi, "zh"), "核心CPI月率")
+        self.assertEqual(cal.known_name(cpi, "ar"), "مؤشر أسعار المستهلكين الأساسي (شهري)")
+        self.assertEqual(cal.ru_name(cpi), "Базовая инфляция (CPI), м/м")
+        fed = dict(cpi, title="Fed Chair Powell Speaks")
+        self.assertEqual(cal.known_name(fed, "zh"), "美联储主席Powell讲话")
+        self.assertEqual(cal.known_name(fed, "ar"), "كلمة رئيس الاحتياطي الفيدرالي (Powell)")
+        other = dict(cpi, title="Building Permits")
+        self.assertIsNone(cal.known_name(other, "zh"))
+        self.assertEqual(cal.event_name(other, "zh", lambda t, lang: f"[{lang}] {t}"), "[zh] Building Permits")
+        self.assertEqual(cal.event_name(other, "ar"), "Building Permits", "no translator — the English name")
+        self.assertIn("预期 0.3%", cal.fmt_event(cpi, "zh"))
+        self.assertIn("السابق 0.2%", cal.fmt_event(cpi, "ar"))
+        self.assertEqual(cal.verdict("0.4%", "0.3%", "zh"), "高于预期")
+        self.assertEqual(cal.verdict("0.3%", "0.3%", "ar"), "كما كان متوقعًا")
+        self.assertEqual(len({len(row) for row in cal.NAMES}), 1, "every common name has all four languages")
+
+    def test_trade_amounts_and_labels(self):
+        import trades
+        self.assertEqual(trades.fmt_usd(1.25e9, "en"), "$1.2B")
+        self.assertEqual(trades.fmt_usd(1.25e9, "ru"), "$1,2 млрд")
+        self.assertEqual(trades.fmt_usd(1.25e9, "zh"), "$12.5亿")
+        self.assertEqual(trades.fmt_usd(2.5e6, "zh"), "$250万")
+        self.assertEqual(trades.fmt_usd(25000, "zh"), "$2万")
+        self.assertEqual(trades.fmt_usd(2.5e6, "ar"), "$2.5 مليون")
+        self.assertEqual(trades.fmt_usd(500, "ar"), "$500")
+        self.assertEqual(trades.fmt_range(1001, 15000, "en"), "$1–15K")
+        self.assertEqual(trades.fmt_range(1000001, 5000000, "zh"), "$100–500万")
+        self.assertEqual(trades.fmt_range(1000001, 5000000, "ar"), "$1–5 مليون")
+        self.assertEqual(trades.loc("House, CA12", "zh"), "众议院, CA12")
+        self.assertEqual(trades.loc("Сенат", "ar"), "مجلس الشيوخ", "older Russian labels too")
+        msgs = trades.messages({"congress": [{"ticker": "NVDA", "type": "buy", "amin": 1001, "amax": 15000, "who": "Jane Doe",
+                                               "where": "House", "owner": "SP", "date": "2026-10-01", "disclosed": "2026-10-20",
+                                               "link": "https://x/r"}]}, lang="zh")
+        self.assertIn("美国政界人士交易", msgs[0])
+        self.assertIn("买入", msgs[0])
+        self.assertIn("配偶", msgs[0])
+
+    def test_the_picture_and_the_ai_note(self):
+        import charts
+        import news_bot
+        self.assertEqual(charts.picture_lang("ar"), "en", "matplotlib cannot join Arabic letters")
+        self.assertEqual(charts.picture_lang("ru"), "ru")
+        with mock.patch.object(charts, "cjk_font", return_value=None):
+            self.assertEqual(charts.picture_lang("zh"), "en", "no Chinese font — an English picture")
+        with mock.patch.object(charts, "cjk_font", return_value="Noto Sans CJK SC"):
+            self.assertEqual(charts.picture_lang("zh"), "zh")
+        res = ai.parse_answer('[{"i": 1, "sum": "Rates stay high", "sum_ru": "Ставки высокие", "sum_zh": "利率维持高位", '
+                              '"sum_ar": "الفائدة تبقى مرتفعة", "assets": []}]', 1)
+        self.assertEqual((res[1]["sum_zh"], res[1]["sum_ar"]), ("利率维持高位", "الفائدة تبقى مرتفعة"))
+        self.assertEqual(news_bot.ai_sum({"ai": res[1]}, "zh"), "利率维持高位")
+        old = {"ai": {"sum": "Rates stay high", "sum_ru": "Ставки высокие"}}
+        self.assertEqual(news_bot.ai_sum(old, "ar"), "", "no Arabic note yet — the summary is shown instead")
+
+    def test_rates_names(self):
+        self.assertEqual(rates.names_xl("Federal Reserve"), {"name_zh": "美联储", "name_ar": "الاحتياطي الفيدرالي"})
+        self.assertEqual(rates.names_xl("Atlantis"), {})
+
+
 class CompanyData(unittest.TestCase):
     """company.py: Yahoo quoteSummary, dividend events, Nasdaq short interest -> docs/co/<T>.json"""
 
