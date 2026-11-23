@@ -297,9 +297,14 @@ def build(now=None, limit=5, sleep=1.0, tickers=None, out_dir=OPT_DIR, summary_p
         age_h = (0.25 if t in FAST else 1) if (hot and t in CORE) else 20
         upd = load(os.path.join(out_dir, t + ".json")).get("updated", "")
         if upd < (now - timedelta(hours=age_h)).isoformat():
-            due.append((upd, t))
+            # the indexes and big ETFs first, then the big stocks, then the rest; in each, the stalest (or never
+            # fetched) first. Before, a fresh start went alphabetically and SPY waited about two hours behind AAPL…
+            due.append((0 if t in FAST else 1 if t in CORE else 2, upd, t))
+    due.sort()
+    # the five FAST ones never wait for the limit: the terminal's GEX / LVL / GEXH and the brief need them every 15 min
+    order = [x for x in due if x[0] == 0] + [x for x in due if x[0] > 0][:limit]
     done = 0
-    for _, t in sorted(due)[:limit]:
+    for _, _, t in order:
         try:
             payload = fetcher(t) if fetcher else fetch(t, now, fast=t in FAST)
             snap = summarize(payload, now.date())

@@ -860,6 +860,12 @@ class OptionChains(unittest.TestCase):
             self.assertIn("zero", g["levels"])
             self.assertTrue(os.path.exists(os.path.join(gdir, "hist", "QQQ.json")))
             self.assertFalse(os.path.exists(os.path.join(gdir, "KO.json")))   # not a core ticker
+        # a fresh start: the FAST ones (indexes, big ETFs) all at once, then the big stocks, then the rest
+        got.clear()
+        with tempfile.TemporaryDirectory() as d:
+            options.build(now, limit=1, sleep=0, tickers=["AAPL", "KO", "SPX", "SPY", "QQQ", "MSFT"], out_dir=d,
+                          summary_path=os.path.join(d, "options.json"), fetcher=fetcher, gex_dir=os.path.join(d, "gex"))
+            self.assertEqual(got, ["QQQ", "SPX", "SPY", "AAPL"])
 
 
 def yahoo_answer(px=100.0, exps=(1792108800, 1795132800), first_only=False, date_ts=None):
