@@ -15,17 +15,31 @@ export const GEO_HOSTS = {
   "markets.newyorkfed.org": 1800, "data-api.ecb.europa.eu": 1800, "www.nhc.noaa.gov": 600, "meri.digitraffic.fi": 60,
 };
 
+const GEO_MAX_BYTES = 12 * 1024 * 1024;   // the biggest layer (PortWatch pages, GDACS) is far smaller
+
 export async function geoProxy(raw) {
   let u;
   try { u = new URL(String(raw || "")); } catch (e) { throw new Error("bad address"); }
   const ttl = GEO_HOSTS[u.hostname];
   if (u.protocol !== "https:" || !ttl) throw new Error("this source is not allowed: " + u.hostname);
   const text = await cached("geo:" + u.href, ttl, async () => {
-    const init = { headers: { "User-Agent": UA, Accept: "application/json,*/*" }, cf: { cacheTtl: ttl, cacheEverything: true } };
+    const init = { headers: { "User-Agent": UA, Accept: "application/json,*/*" }, cf: { cacheTtl: ttl, cacheEverything: true }, redirect: "manual" };
     if (typeof AbortSignal !== "undefined" && AbortSignal.timeout) init.signal = AbortSignal.timeout(20000);
-    const r = await fetch(u.href, init);
+    // redirects are followed only to listed sources: a listed site must not open the proxy to any other address
+    let target = u, r;
+    for (let hop = 0; ; hop++) {
+      r = await fetch(target.href, init);
+      const loc = r.status >= 300 && r.status < 400 ? r.headers.get("location") : null;
+      if (!loc) break;
+      if (hop >= 3) throw new Error(u.hostname + ": too many redirects");
+      const next = new URL(loc, target);
+      if (next.protocol !== "https:" || !GEO_HOSTS[next.hostname]) throw new Error("this source is not allowed: " + next.hostname);
+      target = next;
+    }
     if (!r.ok) throw new Error(u.hostname + ": HTTP " + r.status);
+    if (Number(r.headers.get("content-length") || 0) > GEO_MAX_BYTES) throw new Error(u.hostname + ": answer too big");
     const t = await r.text();
+    if (t.length > GEO_MAX_BYTES) throw new Error(u.hostname + ": answer too big");
     JSON.parse(t);   // only JSON passes through
     return t;
   });
