@@ -308,12 +308,12 @@ function drawVols(box, d){
   box.appendChild(f);
   if (!sf.iv || !sf.iv.length) { box.appendChild(el('div', 'empty', TX('no_data_yet'))); return }
   var top = el('div', 'cv gx-3d'); box.appendChild(top);
-  var zs = sf.iv, xl = sf.m.map(function(m){ return fmt(m * 100, 0) + '%' }), yl = sf.d.map(function(x){ return F.dmy(x).slice(0, I.ru ? 5 : 6) });
+  var zs = sf.iv, xl = sf.m.map(function(m){ return fmt(m * 100, 0) + '%' }), yl = sf.d.map(function(x){ return I.dm(x) });
   if (ox.vmode === '3d') surface(top, zs, {xl: xl, yl: yl, zfmt: ivp, xname: TX('gex_moneyness'), yname: TX('gex_expiry'), zname: 'IV'});
   else heatGrid(top, zs, {xl: xl, yl: yl, zfmt: ivp, xname: TX('gex_moneyness')});
   if (!ox.exp || sf.d.indexOf(ox.exp) < 0) ox.exp = sf.d[0];
   var f2 = el('div', 'frm');
-  sf.d.forEach(function(x){ f2.appendChild(chip(F.dmy(x).slice(0, I.ru ? 5 : 6), x === ox.exp, function(){ ox.exp = x; clear(box); symBar(box); drawVols(box, d) })) });
+  sf.d.forEach(function(x){ f2.appendChild(chip(I.dm(x), x === ox.exp, function(){ ox.exp = x; clear(box); symBar(box); drawVols(box, d) })) });
   box.appendChild(f2);
   var two = el('div', 'gx-two'); box.appendChild(two);
   var w1 = el('div', 'cv gx-small'), w2 = el('div', 'cv gx-small'); two.appendChild(w1); two.appendChild(w2);
@@ -434,9 +434,9 @@ function drawGrk(box, d){
   var M = gk[ox.grk], fm = gfmt(ox.grk);
   if (ox.gmode === '3d') {
     var wrap = el('div', 'cv gx-3d'); box.appendChild(wrap);
-    surface(wrap, M, {xl: gk.k.map(function(k){ return fmt(k, dgt(S)) }), yl: gk.d.map(function(x){ return F.dmy(x).slice(0, I.ru ? 5 : 6) }), zfmt: fm, xname: TX('gex_strike'), yname: TX('gex_expiry'), zname: TX('grk_' + ox.grk)});
+    surface(wrap, M, {xl: gk.k.map(function(k){ return fmt(k, dgt(S)) }), yl: gk.d.map(function(x){ return I.dm(x) }), zfmt: fm, xname: TX('gex_strike'), yname: TX('gex_expiry'), zname: TX('grk_' + ox.grk)});
   } else {
-    var cols = [{t: TX('gex_strike'), l: true}].concat(gk.d.map(function(x){ return {t: F.dmy(x).slice(0, I.ru ? 5 : 6)} }));
+    var cols = [{t: TX('gex_strike'), l: true}].concat(gk.d.map(function(x){ return {t: I.dm(x)} }));
     var t = F.table(cols); t.t.classList.add('mx');
     var all = []; M.forEach(function(r){ r.forEach(function(v){ if (v != null) all.push(v) }) });
     var lo = Math.min.apply(null, all), hi = Math.max.apply(null, all), amax = Math.max(Math.abs(lo), Math.abs(hi)) || 1;
@@ -463,7 +463,7 @@ function drawHist(box, d, h){
   var sess = []; intra.forEach(function(x){ if (sess.indexOf(x.day) < 0) sess.push(x.day) });
   if (!ox.day || sess.indexOf(ox.day) < 0) ox.day = sess[sess.length - 1];
   var f = el('div', 'frm');
-  sess.forEach(function(s){ f.appendChild(chip(F.dmy(s).slice(0, I.ru ? 5 : 6), s === ox.day, function(){ ox.day = s; clear(box); symBar(box); drawHist(box, d, h) })) });
+  sess.forEach(function(s){ f.appendChild(chip(I.dm(s), s === ox.day, function(){ ox.day = s; clear(box); symBar(box); drawHist(box, d, h) })) });
   box.appendChild(f);
   var pts = intra.filter(function(x){ return x.day === ox.day });
   var wrap = el('div', 'cv gx-imap'); box.appendChild(wrap);

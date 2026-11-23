@@ -1039,7 +1039,7 @@ class DealerPositioning(unittest.TestCase):
 
 
 class PreMarketBrief(unittest.TestCase):
-    def test_message_in_both_languages(self):
+    def test_message_in_every_language(self):
         import brief
         now = datetime(2026, 11, 23, 13, 0, tzinfo=timezone.utc)   # 16:00 MSK
         with tempfile.TemporaryDirectory() as d:
@@ -1054,7 +1054,7 @@ class PreMarketBrief(unittest.TestCase):
             notes = []
             make = brief.build(now, [{"short": "VIX", "value": 17.25}], gex_dir=d,
                                ai_note=lambda facts: notes.append(facts) or {"en": "Calm <today>.", "ru": "Спокойно."})
-            en, ru = make("en"), make("ru")
+            en, ru, zh, ar = make("en"), make("ru"), make("zh"), make("ar")
         self.assertIn("Option levels before the US open", en)
         self.assertIn("<b>S&amp;P 500</b> 676", en)
         self.assertIn("GEX +$2.5B — positive gamma", en)
@@ -1073,6 +1073,16 @@ class PreMarketBrief(unittest.TestCase):
         self.assertIn("61 211", ru)                                # Russian number format
         self.assertIn("положительная гамма", ru)
         self.assertIn("S&P 500: price 676.0", notes[0])
+        # Chinese and Arabic: their own texts, units and dates; the AI note falls back to English when theirs is missing
+        self.assertIn("美股开盘前的期权关键位</b> · 11月23日", zh)
+        self.assertIn("<b>标普500</b> 676", zh)
+        self.assertIn("GEX +$25.0亿 — 正伽马", zh)
+        self.assertIn("<b>比特币</b> 61,211", zh)
+        self.assertIn("Calm &lt;today&gt;.", zh)
+        self.assertIn("مستويات الخيارات قبل افتتاح السوق الأمريكية</b> · 23 نوفمبر", ar)
+        self.assertIn("GEX +$2.5 مليار — غاما موجبة", ar)
+        self.assertIn("<b>بيتكوين</b> 61,211", ar)
+        self.assertIn("GEX وLVL في المنصة", ar)
         with tempfile.TemporaryDirectory() as d:
             self.assertIsNone(brief.build(now, [], gex_dir=d))         # nothing fresh: no message
 
@@ -1080,7 +1090,10 @@ class PreMarketBrief(unittest.TestCase):
         import ai
         with mock.patch.dict(os.environ, {"ANTHROPIC_API_KEY": "k"}):
             out = ai.brief_note("facts", call=lambda prompt, key, model: 'Sure: {"en": "Support at 6,700.", "ru": "Поддержка 6 700."}')
-            self.assertEqual(out, {"en": "Support at 6,700.", "ru": "Поддержка 6 700."})
+            self.assertEqual(out, {"en": "Support at 6,700.", "ru": "Поддержка 6 700.",      # no Chinese/Arabic: English
+                                   "zh": "Support at 6,700.", "ar": "Support at 6,700."})
+            out = ai.brief_note("facts", call=lambda *a: '{"en": "Support.", "ru": "Поддержка.", "zh": "支撑。", "ar": "دعم."}')
+            self.assertEqual(out, {"en": "Support.", "ru": "Поддержка.", "zh": "支撑。", "ar": "دعم."})
             self.assertIsNone(ai.brief_note("facts", call=lambda *a: "no json"))
         with mock.patch.dict(os.environ, {"ANTHROPIC_API_KEY": ""}):
             self.assertIsNone(ai.brief_note("facts"))

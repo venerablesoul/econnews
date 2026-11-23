@@ -1021,6 +1021,8 @@ window.L10N = {
   ind: function(k, x){ return RU ? x.ru : xl('MACRO_IND', k) || x.en },
   // an instrument's name in Chinese or Arabic (null when there is none)
   mktXl: function(id){ return xl('MKT', id) },
+  // any other name map of i18n.xl.js (AREA, SPLC…): the Chinese or Arabic name, null when there is none
+  xlName: function(map, id){ return xl(map, id) },
   newsTitle: newsTitle, newsLead: newsLead, aiSum: aiSum, tradeLabel: tradeLabel
 };
 })();

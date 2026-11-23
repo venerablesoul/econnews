@@ -668,10 +668,12 @@ def run():
         # Chinese and Arabic: ?lang=zh / ?lang=ar (the bot's buttons add them), i18n.xl.js is loaded only for them
         for lang, want in (("zh", {"panel": "全球市场", "mkt": ["黄金", "布伦特原油", "指数"], "news": ["来自服务器的最新消息", "美联储维持利率不变", "美联储将利率维持不变", "#美联储"],
                                    "des": ["$5.01万亿", "分析师", "下次财报"], "cn": "苹果业绩超出预期", "ee": ["本季度", "业绩意外"], "ecst": ["实际 GDP 增长", "俄罗斯"],
-                                   "sector": "能源", "eco": "日历 · 莫斯科时间", "help": "全球股票指数", "btn": "中 ▾"}),
+                                   "sector": "能源", "eco": "日历 · 莫斯科时间", "help": "全球股票指数", "btn": "中 ▾",
+                                   "gex": ["伽马敞口", "伽马翻转点", "按行权价的伽马敞口"]}),
                            ("ar", {"panel": "الأسواق العالمية", "mkt": ["الذهب", "خام برنت", "المؤشرات"], "news": ["خبر جديد من الخادم", "الفيدرالي يثبت أسعار الفائدة", "أبقى الفيدرالي", "#الفيدرالي"],
                                    "des": ["$5.01 تريليون", "المحللون", "النتائج التالية"], "cn": "أبل تتجاوز التوقعات", "ee": ["الربع الحالي", "المفاجآت"], "ecst": ["نمو الناتج الحقيقي", "روسيا"],
-                                   "sector": "الطاقة", "eco": "الأجندة · بتوقيت موسكو", "help": "مؤشرات الأسهم العالمية", "btn": "ع ▾"})):
+                                   "sector": "الطاقة", "eco": "الأجندة · بتوقيت موسكو", "help": "مؤشرات الأسهم العالمية", "btn": "ع ▾",
+                                   "gex": ["تعرض غاما", "نقطة انقلاب غاما", "تعرض غاما حسب سعر التنفيذ"]})):
             xctx = browser.new_context(viewport={"width": 1440, "height": 900})
             setup(xctx)
             x = xctx.new_page()
@@ -709,7 +711,14 @@ def run():
             cmd(x, "HELP")
             x.wait_for_selector("#help-t tr")
             check(f"{lang}: the help table", want["help"] in x.inner_text("#help-t"))
+            check(f"{lang}: the help table has the options functions", want["gex"][2] in x.inner_text("#help-t"))
             shot(x, f"22_{lang}_help")
+            x.keyboard.press("Escape")
+            cmd(x, "GEX SPX")
+            x.wait_for_selector("#gex-body .gx-cv canvas", timeout=8000)
+            xg = x.inner_text("#gex-body")
+            check(f"{lang}: GEX in the reader's language", want["gex"][0] in x.inner_text("#p-gex .ph") and want["gex"][1] in xg, xg[:300])
+            shot(x, f"23_{lang}_gex")
             x.keyboard.press("Escape")
             if lang == "ar":
                 check("ar: Arabic letters are not spread apart", x.evaluate("getComputedStyle(document.querySelector('#p-mkt .ph')).letterSpacing") in ("0px", "normal"))

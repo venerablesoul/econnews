@@ -104,7 +104,8 @@ BRIEF_PROMPT = """You are an options-market analyst for a financial terminal. Be
 (gamma exposure, the gamma flip, call and put walls, the expected 1-day move) before the US open.
 In two short sentences (at most 300 characters in all) say what they imply for today: where support and resistance
 from options are, and whether moves are likely damped (positive gamma) or amplified (negative gamma).
-Plain facts, no advice to buy or sell. Reply with JSON ONLY: {"en": "English text", "ru": "the same in Russian"}
+Plain facts, no advice to buy or sell. Reply with JSON ONLY:
+{"en": "English text", "ru": "the same in Russian", "zh": "the same in simplified Chinese", "ar": "the same in Arabic"}
 
 Numbers:
 """
@@ -127,4 +128,9 @@ def brief_note(facts, call=None):
     if not isinstance(d, dict):
         return None
     en, ru = str(d.get("en") or "").strip()[:400], str(d.get("ru") or "").strip()[:400]
-    return {"en": en or ru, "ru": ru or en} if (en or ru) else None
+    if not (en or ru):
+        return None
+    out = {"en": en or ru, "ru": ru or en}
+    for lang in ("zh", "ar"):   # Chinese and Arabic readers get English when the model left their language out
+        out[lang] = str(d.get(lang) or "").strip()[:400] or out["en"]
+    return out

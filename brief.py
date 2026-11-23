@@ -14,31 +14,38 @@ import json
 import os
 from datetime import datetime, timedelta, timezone
 
+import i18n
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 GEX_DIR = os.path.join(HERE, "docs", "gex")
 # what the brief covers; the ETF stands in when the index file is missing
-ITEMS = (("SPX", "SPY", {"en": "S&P 500", "ru": "S&P 500"}), ("NDX", "QQQ", {"en": "Nasdaq-100", "ru": "Nasdaq-100"}),
-         ("BTC", None, {"en": "Bitcoin", "ru": "Биткоин"}))
+ITEMS = (("SPX", "SPY", {"en": "S&P 500", "ru": "S&P 500", "zh": "标普500", "ar": "S&P 500"}),
+         ("NDX", "QQQ", {"en": "Nasdaq-100", "ru": "Nasdaq-100", "zh": "纳斯达克100", "ar": "ناسداك 100"}),
+         ("BTC", None, {"en": "Bitcoin", "ru": "Биткоин", "zh": "比特币", "ar": "بيتكوين"}))
 # an older snapshot (a stopped source) is left out rather than shown as today's; US options do not trade at weekends,
 # so on Monday Friday's levels still count (with their date)
 MAX_AGE_H = {"crypto": 30, "equity": 80}
 DATED_AFTER_H = 20
 
 S = {
-    "head": {"en": "📐 <b>Option levels before the US open</b> · {d}", "ru": "📐 <b>Опционные уровни перед открытием США</b> · {d}"},
-    "pos": {"en": "positive gamma: moves tend to be damped", "ru": "положительная гамма: движения гасятся"},
-    "neg": {"en": "negative gamma: moves tend to speed up", "ru": "отрицательная гамма: движения ускоряются"},
-    "flip": {"en": "flip {v} ({d})", "ru": "смена гаммы {v} ({d})"},
-    "walls": {"en": "call wall {c} · put wall {p}", "ru": "стена коллов {c} · путов {p}"},
-    "em": {"en": "±1σ today {lo}–{hi} (±{pct}%)", "ru": "±1σ за день {lo}–{hi} (±{pct}%)"},
+    "head": {"en": "📐 <b>Option levels before the US open</b> · {d}", "ru": "📐 <b>Опционные уровни перед открытием США</b> · {d}", "zh": "📐 <b>美股开盘前的期权关键位</b> · {d}", "ar": "📐 <b>مستويات الخيارات قبل افتتاح السوق الأمريكية</b> · {d}"},
+    "pos": {"en": "positive gamma: moves tend to be damped", "ru": "положительная гамма: движения гасятся", "zh": "正伽马：波动往往被抑制", "ar": "غاما موجبة: تميل الحركات إلى الهدوء"},
+    "neg": {"en": "negative gamma: moves tend to speed up", "ru": "отрицательная гамма: движения ускоряются", "zh": "负伽马：波动往往加速", "ar": "غاما سالبة: تميل الحركات إلى التسارع"},
+    "flip": {"en": "flip {v} ({d})", "ru": "смена гаммы {v} ({d})", "zh": "伽马翻转点 {v}（{d}）", "ar": "نقطة انقلاب غاما {v} ({d})"},
+    "walls": {"en": "call wall {c} · put wall {p}", "ru": "стена коллов {c} · путов {p}", "zh": "看涨墙 {c} · 看跌墙 {p}", "ar": "جدار خيارات الشراء {c} · جدار خيارات البيع {p}"},
+    "em": {"en": "±1σ today {lo}–{hi} (±{pct}%)", "ru": "±1σ за день {lo}–{hi} (±{pct}%)", "zh": "今日 ±1σ {lo}–{hi}（±{pct}%）", "ar": "±1σ اليوم {lo}–{hi} (±{pct}%)"},
     "vix": {"en": "VIX {v}", "ru": "VIX {v}"},
     "dvol": {"en": "DVOL {v}", "ru": "DVOL {v}"},
-    "asof": {"en": "as of {d}", "ru": "на {d}"},
+    "asof": {"en": "as of {d}", "ru": "на {d}", "zh": "截至 {d}", "ar": "حتى {d}"},
     "ai": {"en": "🤖 <i>{t}</i>", "ru": "🤖 <i>{t}</i>"},
     "note": {"en": "<i>Estimated from open interest (dealers assumed long calls, short puts), not real positions; US options 15+ min delayed. "
                    "Details: GEX and LVL in the terminal.</i>",
              "ru": "<i>Оценка по открытому интересу (дилеры предположительно в длинных коллах и коротких путах), а не реальные позиции; "
-                   "опционы США — с задержкой от 15 мин. Подробнее: GEX и LVL в терминале.</i>"},
+                   "опционы США — с задержкой от 15 мин. Подробнее: GEX и LVL в терминале.</i>",
+             "zh": "<i>根据未平仓量估算（假定做市商持有看涨多头、看跌空头），并非真实仓位；美国期权延迟 15 分钟以上。"
+                   "详情：终端中的 GEX 和 LVL。</i>",
+             "ar": "<i>تقدير من العقود المفتوحة (يُفترض أن المتعاملين في مراكز شراء لخيارات الشراء ومراكز بيع لخيارات البيع)، وليست مراكز حقيقية؛ "
+                   "الخيارات الأمريكية متأخرة 15 دقيقة على الأقل. التفاصيل: GEX وLVL في المنصة.</i>"},
 }
 MONTHS = {"en": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
           "ru": ["янв", "фев", "мар", "апр", "мая", "июн", "июл", "авг", "сен", "окт", "ноя", "дек"]}
@@ -60,10 +67,19 @@ def money(v, lang):
     if v is None:
         return "—"
     a, sign = abs(v), "−" if v < 0 else "+"
-    for lim, en, ru in ((1e12, "T", " трлн"), (1e9, "B", " млрд"), (1e6, "M", " млн"), (1e3, "K", " тыс")):
+    for lim, unit in i18n.units(lang):   # $1.2B / $1,2 млрд / $12亿 / $1.2 مليار
         if a >= lim:
-            return f"{sign}${num(a / lim, lang, 1)}{ru if lang == 'ru' else en}"
+            return f"{sign}${num(a / lim, lang, 1)}{unit}"
     return f"{sign}${num(a, lang, 0)}"
+
+
+def day_month(dt, lang):
+    """23 Nov / 23 ноя / 11月23日 / 23 نوفمبر"""
+    if lang == "zh":
+        return f"{dt.month}月{dt.day}日"
+    if lang == "ar":
+        return f"{dt.day} {i18n.month('ar', dt.month)}"
+    return f"{dt.day} {MONTHS[lang if lang in MONTHS else 'en'][dt.month - 1]}"
 
 
 def pct(v, lang, nd=1):
@@ -121,8 +137,7 @@ def lines(name, d, lang, now=None):
     a = age_h(d, now) if now else None
     if a is not None and a > DATED_AFTER_H:
         u = datetime.fromisoformat(d["updated"]).astimezone(timezone(timedelta(hours=3)))
-        months = MONTHS.get(lang, MONTHS["en"])
-        head += " <i>(" + t(lang, "asof", d=f"{u.day} {months[u.month - 1]}") + ")</i>"
+        head += " <i>(" + t(lang, "asof", d=day_month(u, lang)) + ")</i>"
     if g is not None:
         head += f" · GEX {money(g, lang)} — {t(lang, 'pos' if g >= 0 else 'neg')}"
     parts = []
@@ -167,12 +182,11 @@ def build(now, quotes=None, gex_dir=None, ai_note=None):
     msk = now.astimezone(timezone(timedelta(hours=3)))
 
     def make(lang):
-        d = f"{msk.day} {MONTHS[lang if lang in MONTHS else 'en'][msk.month - 1]}"
-        blocks = [t(lang, "head", d=d)]
+        blocks = [t(lang, "head", d=day_month(msk, lang))]
         blocks += [lines(name, s, lang, now) for name, s in snaps]
         if vix:
             blocks.append(t(lang, "vix", v=num(vix, lang, 2)))
-        n = note.get(lang) if isinstance(note, dict) else None
+        n = (note.get(lang) or note.get("en")) if isinstance(note, dict) else None
         if n:
             blocks.append(t(lang, "ai", t=html.escape(n)))
         blocks.append(t(lang, "note"))

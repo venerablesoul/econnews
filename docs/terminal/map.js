@@ -537,7 +537,7 @@ function loadShips(){
 var AREA_COL = {hormuz: '#ff9f40', bab: '#ff7a5c', suez: '#f2cc60', malacca: '#56c1d6', turkish: '#a78bfa', danish: '#6ea8ff', gibraltar: '#b7e34b', panama: '#2fbf71', cape: '#e8e8a0'};
 function loadTankers(){
   return getJSON('../ships.json?t=' + Math.floor(Date.now() / 60000), 20000).catch(function(){ throw new Error(TX('gm_tankers_nokey')) }).then(function(d){
-    var names = {}; (d.areas || []).forEach(function(a){ names[a.id] = I.ru ? a.name_ru || a.name : a.name });
+    var names = {}; (d.areas || []).forEach(function(a){ names[a.id] = I.xl ? I.xlName('AREA', a.id) || a.name : I.ru ? a.name_ru || a.name : a.name });
     var pts = (d.ships || []).filter(function(v){ return typeof v.lat === 'number' && typeof v.lon === 'number' }).map(function(v){
       var moving = v.sog > 0.5 && v.nav !== 1 && v.nav !== 5;
       var s = [TX('gm_ship1_tanker') + ' · ' + (moving ? TX('gm_ship_speed', fmt(v.sog, 1)) : TX(v.nav === 1 ? 'gm_ship_anchor' : v.nav === 5 ? 'gm_ship_moored' : 'gm_ship_still'))];
@@ -584,6 +584,8 @@ function loadEia(){
 // still covers it; otherwise the same quarter a year earlier
 function eiaBase(){ var i = EIA_Q.indexOf('4Q25'); if (i < 0 || i === EIA_Q.length - 1) i = EIA_Q.length - 5; return i >= 0 ? i : null }
 // nodes: x, y in 0..1; k: c = chokepoint, s = supply, d = demand; pw — the PortWatch chokepoint's name
+// a node's name in the reader's language (Chinese and Arabic come from i18n.xl.js)
+function spName(n){ return I.xl ? I.xlName('SPLC', n.id) || n.n[0] : n.n[I.ru ? 1 : 0] }
 var SP_NODES = [
   {id: 'rusb', k: 's', x: 0.0, y: 0.05, n: ['Baltic: Russia', 'Балтика: Россия']},
   {id: 'rusbs', k: 's', x: 0.0, y: 0.2, n: ['Black Sea: Russia, Kazakhstan', 'Чёрное море: Россия, Казахстан']},
@@ -629,7 +631,7 @@ function drawSplc(){
     var cv = el('canvas'), dpr = window.devicePixelRatio || 1; cv.width = W * dpr; cv.height = H * dpr; w.appendChild(cv);
     var g2 = cv.getContext('2d'); g2.scale(dpr, dpr); g2.font = '11.5px ' + getComputedStyle(document.body).fontFamily; g2.textBaseline = 'middle';
     g2.font = '600 11.5px ' + getComputedStyle(document.body).fontFamily;
-    var srcW = Math.max.apply(null, SP_NODES.filter(function(n){ return n.k === 's' }).map(function(n){ return g2.measureText((I.ru ? n.n[1] : n.n[0]).split(': ')[0]).width }));
+    var srcW = Math.max.apply(null, SP_NODES.filter(function(n){ return n.k === 's' }).map(function(n){ return g2.measureText(spName(n).split(': ')[0]).width }));
     var padL = Math.min(W * 0.36, srcW + 24), padR = Math.min(110, W * 0.18), padY = 30, last = EIA_Q.length - 1;
     var P = function(n){ return [padL + n.x * (W - padL - padR), padY + n.y * (H - 2 * padY)] };
     // a label with a quiet background, so lines under it do not get in the way
@@ -651,7 +653,7 @@ function drawSplc(){
       g2.strokeStyle = lit(a.id, b.id) ? 'rgba(110,168,255,0.38)' : 'rgba(110,168,255,0.08)'; g2.lineWidth = wd; g2.stroke(); g2.lineWidth = 1;
     });
     SP_NODES.forEach(function(n){
-      var p = P(n), nm = I.ru ? n.n[1] : n.n[0], on = lit(n.id, null) || SP_EDGES.some(function(e){ return (e[0] === sel && e[1] === n.id) || (e[1] === sel && e[0] === n.id) });
+      var p = P(n), nm = spName(n), on = lit(n.id, null) || SP_EDGES.some(function(e){ return (e[0] === sel && e[1] === n.id) || (e[1] === sel && e[0] === n.id) });
       g2.globalAlpha = on ? 1 : 0.35;
       if (n.k === 'c') {
         var bi = eiaBase(), v = vol(n.id), prev = bi == null ? null : EIA[n.id][bi], r = 6 + Math.sqrt(v / maxV) * 16, ch = prev ? (v / prev - 1) * 100 : null;
@@ -679,7 +681,7 @@ function drawSplc(){
     var h = el('div', 'sh'); h.appendChild(el('span', null, TX('sp_side'))); h.appendChild(el('small', null, EIA_Q[EIA_Q.length - 1])); sd.appendChild(h);
     SP_NODES.filter(function(n){ return n.k === 'c' }).sort(function(a, b){ return EIA[b.id][EIA_Q.length - 1] - EIA[a.id][EIA_Q.length - 1] }).forEach(function(n){
       var v = EIA[n.id], lv = liveData[n.id], row = el('button', 'gm-row' + (sel === n.id ? ' on' : '')), dv = el('div');
-      dv.appendChild(el('b', null, I.ru ? n.n[1] : n.n[0]));
+      dv.appendChild(el('b', null, spName(n)));
       dv.appendChild(el('span', null, EIA_Q.map(function(q, i){ return q + ' ' + fmt(v[i], 1) }).slice(-4).join(' · ')));
       if (lv && lv.t7 != null) dv.appendChild(el('span', null, TX('sp_live', fmt(lv.t7, 0), lv.tch != null ? pct(lv.tch, 0) : '—')));
       row.appendChild(el('i')); row.firstChild.style.background = '#56c1d6'; row.appendChild(dv);
