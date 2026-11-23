@@ -431,6 +431,91 @@ await test("bot: /lang ru switches the chat to Russian everywhere", async () => 
   await msg("/lang ru", RU);
 });
 
+await test("Chinese and Arabic: every text exists, with the same arguments, placeholders and markup", async () => {
+  const { ZH, AR } = await import("../worker/src/i18n_xl.js");
+  const tags = (s) => (String(s).match(/<\/?[a-z]+[^>]*>/g) || []).join("");
+  // every English key: walk the English texts through t() with dummy arguments
+  const { TEXT_KEYS } = await import("../worker/src/i18n.js");
+  const keys = Object.keys(ZH);
+  assert.deepEqual(TEXT_KEYS.filter((k) => !(k in ZH)), [], "every English text has a Chinese one");
+  for (const [name, X] of [["zh", ZH], ["ar", AR]]) {
+    assert.deepEqual(Object.keys(X).sort(), keys.slice().sort(), name + " has the same keys as zh");
+    for (const k of keys) {
+      const v = X[k];
+      assert.equal(typeof v, typeof ZH[k], name + ": " + k);
+      if (typeof v === "function") {
+        assert.equal(v.length, ZH[k].length, name + ": arguments of " + k);
+        const args = ["A1", "B2", "C3", "D4", "E5", "F6", "G7", "H8"].slice(0, v.length);
+        const out = k === "hello" ? v({ fresh: true }).join("\n") : String(v(...args));
+        assert.ok(!/undefined|NaN/.test(out), name + ": " + k + " → " + out);
+        if (k !== "hello") for (const a of args) if (String(t("en", k, ...args)).includes(a)) assert.ok(out.includes(a), name + ": " + k + " loses " + a);
+        if (k !== "hello") assert.equal(tags(out), tags(t("en", k, ...args)), name + ": markup of " + k);
+      } else {
+        const en = t("en", k) || t("ru", k);   // cn_untranslated is empty in English: compare with the Russian one
+        if (typeof v === "string") assert.equal(tags(v), tags(en), name + ": markup of " + k);
+        else if (Array.isArray(v)) assert.equal(v.length, en.length, name + ": length of " + k);
+        else assert.deepEqual(Object.keys(v).sort(), Object.keys(en).sort(), name + ": keys of " + k);
+      }
+    }
+  }
+  assert.equal(t("zh", "need_symbol", "des"), "请加上股票代码，例如：/des AAPL");
+  assert.equal(t("ar", "need_symbol", "des"), "أضف رمز السهم، مثلًا: /des AAPL");
+});
+
+await test("number and date formats in Chinese and Arabic", async () => {
+  const { dm, dmy } = await import("../worker/src/lib.js");
+  assert.equal(fmt(81800.5, 0, "zh"), "81,801");
+  assert.equal(pct(6.2, 2, "ar"), "+6.20%");
+  assert.equal(money(5.0459e12, "$", "zh"), "$5.05万亿");
+  assert.equal(money(416e9, "$", "zh"), "$4,160亿");
+  assert.equal(money(2.5e6, "$", "zh"), "$250万");
+  assert.equal(money(416e9, "$", "ar"), "$416 مليار");
+  assert.equal(dm("2025-06-30", "zh"), "6月30日");
+  assert.equal(dmy("2025-06-30", "zh"), "2025年6月30日");
+  assert.equal(dmy("2025-06-30", "ar"), "30 يونيو 2025");
+  assert.equal(sectorName("Technology", "zh"), "科技");
+  assert.equal(sectorName("Технологии", "ar"), "التكنولوجيا", "older Russian data is shown in Arabic too");
+  assert.equal(tradeLabel("House, CA12", "zh"), "众议院, CA12");
+  assert.equal(tradeLabel("Палата, CA12", "ar"), "مجلس النواب, CA12");
+});
+
+await test("bot: the language buttons, and /lang zh and ar switch the chat everywhere", async () => {
+  const ZHC = 557, ARC = 558;
+  let out = await msg("/start", ZHC, "private", { language_code: "zh-hans" });
+  assert.match(texts(out), /中文：\/lang zh/, "a Chinese Telegram app gets the hint");
+  assert.ok(buttons(out).some((b) => b.callback_data === "lang" && b.text === "🌐 Language"), "the main menu has the language button");
+  out = await cb("lang", ZHC);
+  assert.deepEqual(buttons(out).map((b) => b.callback_data), ["lang:en", "lang:ru", "lang:zh", "lang:ar"]);
+  assert.deepEqual(buttons(out).map((b) => b.text), ["🇬🇧 English", "🇷🇺 Русский", "🇨🇳 中文", "🇸🇦 العربية"]);
+  out = await cb("lang:zh", ZHC);
+  assert.match(texts(out), /语言：中文/);
+  assert.ok(buttons(out).some((b) => b.web_app && /terminal\/\?lang=zh$/.test(b.web_app.url) && b.text === "🖥 终端"));
+  assert.ok(buttons(out).some((b) => b.callback_data === "lang" && b.text === "🌐 语言"));
+  assert.equal(await env.SUBS.get("l:" + ZHC), "zh");
+  assert.equal((await env.SUBS.getWithMetadata("u:" + ZHC)).metadata.l, "zh", "kept for the news bot");
+  out = await msg("/news", ZHC);
+  assert.match(texts(out), /今日要闻/); assert.match(texts(out), /美联储维持利率不变/);
+  assert.match(texts(out), /美联储将利率维持不变/, "no Chinese AI note — the summary instead");
+  assert.match(texts(out), /#美联储/);
+  out = await msg("/des AAPL", ZHC); noErrors(out);
+  assert.match(texts(out), /市值：<b>\$5\.01万亿/); assert.match(texts(out), /分析师（53）/);
+  assert.ok(buttons(out).some((b) => b.web_app && /terminal\/\?cmd=AAPL%20DES&lang=zh$/.test(b.web_app.url)));
+  out = await msg("/cn AAPL", ZHC); assert.match(texts(out), /苹果业绩超出预期/, "company news translated into Chinese");
+  out = await msg("/anr AAPL", ZHC); noErrors(out); assert.match(texts(out), /<code>强烈买入 /);
+  out = await msg("/cb", ZHC); assert.match(texts(out), /俄罗斯央行|ЦБ РФ|Bank of Russia/);
+  out = await msg("/macro China", ZHC); noErrors(out); assert.match(texts(out), /中国/);
+  out = await msg("/help", ZHC); assert.match(texts(out), /全部命令|公司与报价/);
+  out = await msg("/lang ar", ZHC); assert.match(texts(out), /اللغة: العربية/);
+  out = await msg("/lang 中文", ARC); assert.match(texts(out), /语言：中文/);
+  out = await cb("lang:ar", ARC);
+  assert.ok(buttons(out).some((b) => b.web_app && /terminal\/\?lang=ar$/.test(b.web_app.url) && b.text === "🖥 المنصة"));
+  out = await msg("/markets", ARC); assert.match(texts(out), /الأسواق/); assert.match(texts(out), /خام برنت/);
+  out = await msg("/q AAPL BTC", ARC); assert.match(texts(out), /342\.96/); assert.match(texts(out), /بيتكوين/);
+  out = await msg("/trades", ARC); noErrors(out);
+  out = await msg("/xyz", ARC); assert.match(texts(out), /لا أعرف هذا الأمر/);
+  await msg("/lang en", ZHC); await msg("/lang en", ARC);
+});
+
 await test("/subs gives each subscriber's language to the news bot", async () => {
   const k = crypto.createHash("sha256").update("econnews-sync:" + TOKEN).digest("hex");
   await env.SUBS.put("l:" + OWNER, "ru");

@@ -27,47 +27,48 @@ FLAGS = {"USD": "🇺🇸", "EUR": "🇪🇺", "GBP": "🇬🇧", "JPY": "🇯�
 COUNTRY = {"USD": "США", "EUR": "еврозона", "GBP": "Великобритания", "JPY": "Япония",
            "CNY": "Китай", "CHF": "Швейцария", "CAD": "Канада", "AUD": "Австралия", "NZD": "Н. Зеландия"}
 
-# Перевод частых названий: (регулярка, русское название). Остальное — через переводчик.
+# Common names: (regex, Russian, Chinese, Arabic). The rest goes through the translator (Russian, in messages:
+# also Chinese and Arabic) or stays in English.
 NAMES = [
-    (r"^Core CPI m/m", "Базовая инфляция (CPI), м/м"),
-    (r"^Core CPI y/y", "Базовая инфляция (CPI), г/г"),
-    (r"^CPI m/m", "Инфляция (CPI), м/м"),
-    (r"^CPI y/y", "Инфляция (CPI), г/г"),
-    (r"^CPI Flash Estimate y/y", "Инфляция, предв. оценка, г/г"),
-    (r"^Core CPI Flash Estimate y/y", "Базовая инфляция, предв. оценка, г/г"),
-    (r"^Core PCE Price Index m/m", "Базовый индекс PCE, м/м"),
-    (r"^Core PPI m/m", "Базовые цены производителей (PPI), м/м"),
-    (r"^PPI m/m", "Цены производителей (PPI), м/м"),
-    (r"^Non-Farm Employment Change", "Занятость вне с/х (NFP)"),
-    (r"^ADP Non-Farm Employment Change", "Занятость ADP"),
-    (r"^Unemployment Rate", "Уровень безработицы"),
-    (r"^Unemployment Claims", "Заявки на пособие по безработице"),
-    (r"^Average Hourly Earnings m/m", "Средняя почасовая зарплата, м/м"),
-    (r"^Federal Funds Rate", "Решение ФРС по ставке"),
-    (r"^FOMC Statement", "Заявление ФРС"),
-    (r"^FOMC Press Conference", "Пресс-конференция ФРС"),
-    (r"^FOMC Meeting Minutes", "Протокол заседания ФРС"),
-    (r"^FOMC Economic Projections", "Прогнозы ФРС"),
-    (r"^Fed Chair (\w+) Speaks", r"Выступление главы ФРС (\1)"),
-    (r"^Main Refinancing Rate", "Решение ЕЦБ по ставке"),
-    (r"^ECB Press Conference", "Пресс-конференция ЕЦБ"),
-    (r"^ECB President (\w+) Speaks", r"Выступление главы ЕЦБ (\1)"),
-    (r"^Official Bank Rate", "Решение Банка Англии по ставке"),
-    (r"^BOJ Policy Rate", "Решение Банка Японии по ставке"),
-    (r"^Advance GDP q/q", "ВВП, предв. оценка, кв/кв"),
-    (r"^Prelim GDP q/q", "ВВП, предв. оценка, кв/кв"),
-    (r"^Final GDP q/q", "ВВП, финальная оценка, кв/кв"),
-    (r"^GDP q/q", "ВВП, кв/кв"),
-    (r"^GDP m/m", "ВВП, м/м"),
-    (r"^Core Retail Sales m/m", "Базовые розничные продажи, м/м"),
-    (r"^Retail Sales m/m", "Розничные продажи, м/м"),
-    (r"^ISM Manufacturing PMI", "Деловая активность в промышленности (ISM)"),
-    (r"^ISM Services PMI", "Деловая активность в услугах (ISM)"),
-    (r"^JOLTS Job Openings", "Вакансии JOLTS"),
-    (r"^Prelim UoM Consumer Sentiment", "Потребительские настроения (Мичиган)"),
-    (r"^Prelim UoM Inflation Expectations", "Инфляционные ожидания (Мичиган)"),
-    (r"^Crude Oil Inventories", "Запасы нефти в США"),
-    (r"^Trade Balance", "Торговый баланс"),
+    (r"^Core CPI m/m", "Базовая инфляция (CPI), м/м", "核心CPI月率", "مؤشر أسعار المستهلكين الأساسي (شهري)"),
+    (r"^Core CPI y/y", "Базовая инфляция (CPI), г/г", "核心CPI年率", "مؤشر أسعار المستهلكين الأساسي (سنوي)"),
+    (r"^CPI m/m", "Инфляция (CPI), м/м", "CPI月率", "مؤشر أسعار المستهلكين (شهري)"),
+    (r"^CPI y/y", "Инфляция (CPI), г/г", "CPI年率", "مؤشر أسعار المستهلكين (سنوي)"),
+    (r"^CPI Flash Estimate y/y", "Инфляция, предв. оценка, г/г", "CPI年率初值", "مؤشر أسعار المستهلكين، قراءة أولية (سنوي)"),
+    (r"^Core CPI Flash Estimate y/y", "Базовая инфляция, предв. оценка, г/г", "核心CPI年率初值", "مؤشر أسعار المستهلكين الأساسي، قراءة أولية (سنوي)"),
+    (r"^Core PCE Price Index m/m", "Базовый индекс PCE, м/м", "核心PCE物价指数月率", "مؤشر نفقات الاستهلاك الشخصي الأساسي (شهري)"),
+    (r"^Core PPI m/m", "Базовые цены производителей (PPI), м/м", "核心PPI月率", "مؤشر أسعار المنتجين الأساسي (شهري)"),
+    (r"^PPI m/m", "Цены производителей (PPI), м/м", "PPI月率", "مؤشر أسعار المنتجين (شهري)"),
+    (r"^Non-Farm Employment Change", "Занятость вне с/х (NFP)", "非农就业人数变化", "التغير في الوظائف غير الزراعية"),
+    (r"^ADP Non-Farm Employment Change", "Занятость ADP", "ADP就业人数变化", "التغير في وظائف القطاع الخاص (ADP)"),
+    (r"^Unemployment Rate", "Уровень безработицы", "失业率", "معدل البطالة"),
+    (r"^Unemployment Claims", "Заявки на пособие по безработице", "初请失业金人数", "طلبات إعانة البطالة"),
+    (r"^Average Hourly Earnings m/m", "Средняя почасовая зарплата, м/м", "平均时薪月率", "متوسط الأجر في الساعة (شهري)"),
+    (r"^Federal Funds Rate", "Решение ФРС по ставке", "美联储利率决议", "قرار الاحتياطي الفيدرالي بشأن الفائدة"),
+    (r"^FOMC Statement", "Заявление ФРС", "美联储政策声明", "بيان الاحتياطي الفيدرالي"),
+    (r"^FOMC Press Conference", "Пресс-конференция ФРС", "美联储新闻发布会", "المؤتمر الصحفي للاحتياطي الفيدرالي"),
+    (r"^FOMC Meeting Minutes", "Протокол заседания ФРС", "美联储会议纪要", "محضر اجتماع الاحتياطي الفيدرالي"),
+    (r"^FOMC Economic Projections", "Прогнозы ФРС", "美联储经济预测", "التوقعات الاقتصادية للاحتياطي الفيدرالي"),
+    (r"^Fed Chair (\w+) Speaks", r"Выступление главы ФРС (\1)", r"美联储主席\1讲话", r"كلمة رئيس الاحتياطي الفيدرالي (\1)"),
+    (r"^Main Refinancing Rate", "Решение ЕЦБ по ставке", "欧洲央行利率决议", "قرار البنك المركزي الأوروبي بشأن الفائدة"),
+    (r"^ECB Press Conference", "Пресс-конференция ЕЦБ", "欧洲央行新闻发布会", "المؤتمر الصحفي للبنك المركزي الأوروبي"),
+    (r"^ECB President (\w+) Speaks", r"Выступление главы ЕЦБ (\1)", r"欧洲央行行长\1讲话", r"كلمة رئيس البنك المركزي الأوروبي (\1)"),
+    (r"^Official Bank Rate", "Решение Банка Англии по ставке", "英国央行利率决议", "قرار بنك إنجلترا بشأن الفائدة"),
+    (r"^BOJ Policy Rate", "Решение Банка Японии по ставке", "日本央行利率决议", "قرار بنك اليابان بشأن الفائدة"),
+    (r"^Advance GDP q/q", "ВВП, предв. оценка, кв/кв", "GDP季率初值", "الناتج المحلي الإجمالي، قراءة أولية (فصلي)"),
+    (r"^Prelim GDP q/q", "ВВП, предв. оценка, кв/кв", "GDP季率初值", "الناتج المحلي الإجمالي، قراءة أولية (فصلي)"),
+    (r"^Final GDP q/q", "ВВП, финальная оценка, кв/кв", "GDP季率终值", "الناتج المحلي الإجمالي، قراءة نهائية (فصلي)"),
+    (r"^GDP q/q", "ВВП, кв/кв", "GDP季率", "الناتج المحلي الإجمالي (فصلي)"),
+    (r"^GDP m/m", "ВВП, м/м", "GDP月率", "الناتج المحلي الإجمالي (شهري)"),
+    (r"^Core Retail Sales m/m", "Базовые розничные продажи, м/м", "核心零售销售月率", "مبيعات التجزئة الأساسية (شهري)"),
+    (r"^Retail Sales m/m", "Розничные продажи, м/м", "零售销售月率", "مبيعات التجزئة (شهري)"),
+    (r"^ISM Manufacturing PMI", "Деловая активность в промышленности (ISM)", "ISM制造业PMI", "مؤشر مديري المشتريات الصناعي (ISM)"),
+    (r"^ISM Services PMI", "Деловая активность в услугах (ISM)", "ISM服务业PMI", "مؤشر مديري المشتريات للخدمات (ISM)"),
+    (r"^JOLTS Job Openings", "Вакансии JOLTS", "JOLTS职位空缺", "الوظائف الشاغرة (JOLTS)"),
+    (r"^Prelim UoM Consumer Sentiment", "Потребительские настроения (Мичиган)", "密歇根大学消费者信心指数初值", "ثقة المستهلك لجامعة ميشيغان (أولية)"),
+    (r"^Prelim UoM Inflation Expectations", "Инфляционные ожидания (Мичиган)", "密歇根大学通胀预期初值", "توقعات التضخم لجامعة ميشيغان (أولية)"),
+    (r"^Crude Oil Inventories", "Запасы нефти в США", "美国原油库存", "مخزونات النفط الخام الأمريكية"),
+    (r"^Trade Balance", "Торговый баланс", "贸易差额", "الميزان التجاري"),
 ]
 
 
@@ -117,28 +118,56 @@ def event_id(e):
     return f"{e['country']}|{e['ts']}|{e['title']}"
 
 
-def ru_name(e, translate=None):
+_COL = {"ru": 1, "zh": 2, "ar": 3}
+
+
+def known_name(e, lang):
+    """The event's name from NAMES in that language (ru, zh, ar), or None."""
+    col = _COL.get(lang)
+    if not col:
+        return None
     t = e["title"]
-    for rx, ru in NAMES:
-        if re.search(rx, t):
-            return re.sub(rx, ru, t).strip()
+    for row in NAMES:
+        if re.search(row[0], t):
+            return re.sub(row[0], row[col], t).strip()
+    return None
+
+
+def ru_name(e, translate=None):
+    return xl_name(e, "ru", translate)
+
+
+def xl_name(e, lang, translate=None):
+    """The name in Russian, Chinese or Arabic: from NAMES, else through translate(text, lang), else the English one."""
+    name = known_name(e, lang)
+    if name:
+        return name
     if translate:
-        tr = translate(t)
+        tr = translate(e["title"], lang)
         if tr:
             return tr
-    return t
+    return e["title"]
 
 
 def event_name(e, lang="en", translate=None):
-    return ru_name(e, translate) if lang == "ru" else e["title"]
+    return xl_name(e, lang, translate) if lang in _COL else e["title"]
+
+
+# "fcst"/"prev" labels and the verdict (actual vs forecast) in every language
+_FP = {"en": ("fcst ", "prev "), "ru": ("прогноз ", "пред. "), "zh": ("预期 ", "前值 "), "ar": ("المتوقع ", "السابق ")}
+_VERDICT = {"en": ("as expected", "above forecast", "below forecast"),
+            "ru": ("как ожидали", "выше прогноза", "ниже прогноза"),
+            "zh": ("符合预期", "高于预期", "低于预期"),
+            "ar": ("كما كان متوقعًا", "أعلى من المتوقع", "أقل من المتوقع")}
 
 
 def _fp(e, lang):
+    fc, pv = _FP.get(lang, _FP["en"])
     extra = []
     if e.get("forecast"):
-        extra.append(("прогноз " if lang == "ru" else "fcst ") + _esc(e["forecast"]))
+        extra.append(fc + _esc(e["forecast"]))
     if e.get("previous"):
-        extra.append(("пред. " if lang == "ru" else "prev ") + _esc(e["previous"]))
+        extra.append(pv + _esc(e["previous"]))
     return extra
 
 
@@ -250,9 +279,7 @@ def verdict(actual, forecast, lang="en"):
     a, f = _num(actual), _num(forecast)
     if a is None or f is None:
         return ""
-    ru = lang == "ru"
+    same, above, below = _VERDICT.get(lang, _VERDICT["en"])
     if abs(a - f) < 1e-9:
-        return "как ожидали" if ru else "as expected"
-    if a > f:
-        return "выше прогноза" if ru else "above forecast"
-    return "ниже прогноза" if ru else "below forecast"
+        return same
+    return above if a > f else below

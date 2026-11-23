@@ -125,7 +125,8 @@ function drawMost(box){
     var tb = table(cols(TX('most_cols'), [0, 1]));
     rows.slice(0, 30).forEach(function(r){
       var tr = el('tr', 'row'); tr.appendChild(td(r.s, 'l tkc')); tr.appendChild(td(r.n, 'l nm')); tr.appendChild(td(price(r.px), 'num')); tr.appendChild(F.chg(r.ch));
-      tr.appendChild(td(r.vol ? fmt(r.vol / 1e6, 1) + (I.ru ? ' млн' : 'M') : '—', 'num')); tr.appendChild(td(money(r.val), 'num'));
+      var vu = r.vol ? I.scale(r.vol, 2, 2) : null;   // millions of shares (Chinese: 万)
+      tr.appendChild(td(r.vol ? (vu ? fmt(vu.x, 1) + vu.s : fmt(r.vol, 0)) : '—', 'num')); tr.appendChild(td(money(r.val), 'num'));
       tr.appendChild(td(r.h52 ? pct((r.px / r.h52 - 1) * 100, 1) : '—', 'num')); tr.appendChild(td(r.l52 ? pct((r.px / r.l52 - 1) * 100, 1) : '—', 'num'));
       tr.onclick = function(){ openRow(r.s) }; tb.body.appendChild(tr);
     });
@@ -218,7 +219,9 @@ function drawWpe(box){
     var tb = table(cols(TX('wpe_cols'), [0, 1]));
     var pes = rows.map(function(x){ return x.pe }).filter(function(v){ return v > 0 }).sort(function(a, b){ return a - b }), med = pes.length ? pes[Math.floor(pes.length / 2)] : null;
     rows.forEach(function(x){
-      var tr = el('tr', 'row'); tr.appendChild(td((x.flag || '') + ' ' + (I.ru ? x.ru || x.en : x.en), 'l')); tr.appendChild(td(x.s, 'l tkc'));
+      // Chinese and Arabic: the country from the browser, plus the index in brackets ("United States (S&P 500)")
+      var wn = I.ru ? x.ru || x.en : I.xl ? I.country(x.c, x.en) + ((/ \(.+\)$/.exec(x.en) || [''])[0]) : x.en;
+      var tr = el('tr', 'row'); tr.appendChild(td((x.flag || '') + ' ' + wn, 'l')); tr.appendChild(td(x.s, 'l tkc'));
       var pe = td(x.pe != null ? fmt(x.pe, 1) : '—', 'num'); if (x.pe != null && med) { pe.style.background = F.heat(-(x.pe / med - 1) * 2, 1); pe.style.color = '#fff' } tr.appendChild(pe);
       tr.appendChild(td(x.pb != null ? fmt(x.pb, 2) : '—', 'num')); tr.appendChild(td(x.ps != null ? fmt(x.ps, 2) : '—', 'num'));
       tr.appendChild(td(x.dy != null ? fmt(x.dy, 2) + '%' : '—', 'num')); tr.appendChild(F.chg(x.ch)); tr.appendChild(F.chg(x.rytd, 1));
@@ -486,7 +489,7 @@ F.GC_TABS.WB = function(box, d){
     var cv = curves[c];
     if (cv) { var t10 = at(cv, '10Y'); return {c: c, name: F.locName(cv), flag: cv.flag || CURVE_FLAG[c], y2: (at(cv, '2Y') || {}).y, y5: (at(cv, '5Y') || {}).y, y10: t10 && t10.y, w10: t10 && t10.w, y30: (at(cv, '30Y') || {}).y, date: cv.date} }
     var x = (d.y10 || []).filter(function(z){ return z.c === c })[0];
-    return {c: c, name: I.ru ? x.name_ru || x.name : x.name, flag: CURVE_FLAG[c] || '', y10: x.y, w10: x.prev, date: x.date, monthly: x.monthly};
+    return {c: c, name: I.dn(x), flag: CURVE_FLAG[c] || '', y10: x.y, w10: x.prev, date: x.date, monthly: x.monthly};
   }).filter(function(r){ return r.y10 != null }).sort(function(a, b){ return b.y10 - a.y10 });
   if (!rows.length) { box.appendChild(el('div', 'empty', TX('gc_wait'))); return }
   var tb = table(cols(TX('wb_cols'), [0]));
@@ -561,7 +564,7 @@ F.GC_TABS.BTMM = function(box, d){
   var cur = CUR_OF[c], ev = ((T.data() && T.data().calendar) || []).filter(function(e){ return e.country === cur && new Date(e.ts) > Date.now() - 864e5 });
   var b4 = F.h4(box, TX('btmm_eco', cur || c));
   if (!ev.length) b4.appendChild(el('div', 'note', TX('btmm_noeco')));
-  else { var t4 = table(cols(TX('btmm_eco_cols'), [0, 1])); ev.forEach(function(e){ var tr = el('tr'); tr.appendChild(td(T.dayLabel(e.ts) + ' ' + T.hm(e.ts), 'l')); tr.appendChild(td((I.ru ? e.title_ru || e.title : e.title), 'l')); tr.appendChild(td(e.actual || '—', 'num')); tr.appendChild(td(e.forecast || '—', 'num')); tr.appendChild(td(e.previous || '—', 'num')); t4.body.appendChild(tr) }); b4.appendChild(t4.t) }
+  else { var t4 = table(cols(TX('btmm_eco_cols'), [0, 1])); ev.forEach(function(e){ var tr = el('tr'); tr.appendChild(td(T.dayLabel(e.ts) + ' ' + T.hm(e.ts), 'l')); tr.appendChild(td(I.dn(e, 'title'), 'l')); tr.appendChild(td(e.actual || '—', 'num')); tr.appendChild(td(e.forecast || '—', 'num')); tr.appendChild(td(e.previous || '—', 'num')); t4.body.appendChild(tr) }); b4.appendChild(t4.t) }
 };
 F.GC_TABS.MMR = function(box, d){
   clear(box);
@@ -570,7 +573,7 @@ F.GC_TABS.MMR = function(box, d){
   if (!mm.length) { box.appendChild(el('div', 'empty', TX('mmr_wait'))); return }
   var tb = table(cols(TX('mmr_cols'), [0, 1]));
   mm.forEach(function(x){
-    var tr = el('tr'); tr.appendChild(td(x.k, 'l tkc')); tr.appendChild(td((CURVE_FLAG[x.c] || '') + ' ' + (I.ru ? x.ru || x.en : x.en), 'l'));
+    var tr = el('tr'); tr.appendChild(td(x.k, 'l tkc')); tr.appendChild(td((CURVE_FLAG[x.c] || '') + ' ' + (I.ru ? x.ru || x.en : I.country(x.c, x.en)), 'l'));
     tr.appendChild(td(num(x.v, 3) + '%', 'num')); tr.appendChild(bpTd(x.prev != null ? bp(x.v, x.prev) : null, true));
     var cb = (d.cb || []).filter(function(z){ return z.c === (CB_OF[x.c] || x.c) })[0];
     tr.appendChild(td(cb ? num(cb.rate, 2) + '%' : '—', 'num')); tr.appendChild(bpTd(cb ? bp(x.v, cb.rate) : null));
