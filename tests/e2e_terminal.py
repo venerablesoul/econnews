@@ -76,7 +76,8 @@ def run():
     static, sport = start_static()
     proc, wport = start_fake_worker()
     api = f"http://127.0.0.1:{wport}"
-    fx = {n: urllib.request.urlopen(f"{api}/__fx/{n}").read() for n in ("data.json", "stocks.json", "rates.json", "macro.json", "moex.json", "options.json")}
+    fx = {n: urllib.request.urlopen(f"{api}/__fx/{n}").read() for n in ("data.json", "stocks.json", "rates.json", "macro.json", "moex.json", "options.json",
+                                                                       "gex/SPX.json", "gex/BTC.json", "gex/hist/SPX.json", "gex/hist/BTC.json", "ships.json")}
     # live feed: the bot pushed a fresh story that is not on the site yet
     key = hashlib.sha256(b"econnews-sync:123:TEST").hexdigest()
     body = json.dumps({"updated": "2099-01-01T00:00:00+00:00", "news": [{"title": "Fresh story from the server", "lang": "en",
@@ -100,6 +101,21 @@ def run():
                     return route.fulfill(status=200, content_type="application/json", body=fx[u.path.lstrip("/")])
             return route.continue_()
         ctx.route("**/*", handle)
+
+    def setup_binance(ctx):
+        # Binance's public streams and REST, faked (tests/fake_binance.*): the order-flow functions get a live book
+        import fake_binance
+
+        def handle(route):
+            url = route.request.url
+            if "binance" in url:
+                a = fake_binance.answer(url)
+                if a is not None:
+                    return route.fulfill(status=200, content_type="application/json", body=json.dumps(a), headers={"Access-Control-Allow-Origin": "*"})
+                return route.abort()
+            return route.fallback()
+        ctx.route("**/*", handle)
+        ctx.add_init_script(path=os.path.join(HERE, "fake_binance.js"))
 
     def watch(page):
         page.on("console", lambda m: errors.append(m.text) if m.type == "error" and "Failed to load resource" not in m.text and "ERR_FAILED" not in m.text else None)
@@ -463,6 +479,123 @@ def run():
         check("the EN/RU button switches back to English and is remembered", "WORLD MARKETS" in r.inner_text("#p-mkt .ph")
               and r.evaluate("localStorage.getItem('lang')") == "en")
 
+        # options: dealer positioning, levels, volatility, greeks, history
+        def opt_body(cmd_text, sel, ms=8000):
+            r.fill("#cmd", cmd_text); r.press("#cmd", "Enter")
+            r.wait_for_function("(function(){ var b = document.querySelector('#gex-body'); return b && !b.querySelector('.loading') && b.querySelector('" + sel + "') })()", timeout=ms)
+            return r.inner_text("#gex-body")
+
+        def drawn(sel):
+            # how many pixels the canvas has drawn (an empty canvas = 0)
+            return r.evaluate("(function(){ var c = document.querySelector('" + sel + "'); if (!c) return 0; var d = c.getContext('2d').getImageData(0, 0, c.width, c.height).data, n = 0; for (var i = 3; i < d.length; i += 4) if (d[i]) n++; return n })()")
+        g = opt_body("GEX SPX", ".gx-cv canvas")
+        check("GEX: S&P 500 levels and bars", "Gamma flip: 6,682" in g and "Call wall: 6,800" in g and "Put wall: 6,750" in g and drawn("#gex-body .gx-cv canvas") > 5000, g[:300])
+        r.hover("#gex-body .gx-cv canvas", position={"x": 300, "y": 160})
+        check("GEX: the read-out of a strike", "Strike" in r.inner_text("#tm-tip") and "Net:" in r.inner_text("#tm-tip"), r.inner_text("#tm-tip"))
+        shot(r, "20_gex")
+        for m_, label in (("NET", "NET"), ("VANNA", "VANNA"), ("OPEN INTEREST", "OPEN INTEREST")):
+            r.click(f"#gex-body .chipbtn:has-text('{m_}')")
+            check(f"GEX: the {label} view draws", drawn("#gex-body .gx-cv canvas") > 3000)
+        r.click("#gex-body .chipbtn:has-text('CALLS & PUTS')")
+        lv = opt_body("LVL", "table")
+        check("LVL: levels and the expected move", "Gamma flip" in lv and "+1σ today" in lv and "Max pain" in lv and "Straddle to" in lv, lv[:400])
+        check("LVL: the GEX profile chart draws", drawn("#gex-body .gx-small canvas") > 2000)
+        r.click("#gex-body .actions button")
+        r.wait_for_function("document.querySelector('#tech-body') && document.querySelector('#tech-body .tc-cv canvas')", timeout=8000)
+        check("LVL → TECH with the option levels switched on", r.evaluate("JSON.parse(localStorage.getItem('tech_ta') || '{}').gex") == 1
+              and "OPTION LEVELS" in r.inner_text("#tech-body"))
+        v = opt_body("VOLS SPX", ".gx-3d canvas")
+        check("VOLS: the 3D surface, smile and term structure", drawn("#gex-body .gx-3d canvas") > 5000 and "IV 30 days" in v and r.locator("#gex-body .gx-two canvas").count() == 2, v[:200])
+        box = r.locator("#gex-body .gx-3d").bounding_box()
+        before = drawn("#gex-body .gx-3d canvas")
+        r.mouse.move(box["x"] + 200, box["y"] + 150); r.mouse.down(); r.mouse.move(box["x"] + 320, box["y"] + 170, steps=4); r.mouse.up()
+        check("VOLS: dragging turns the surface", drawn("#gex-body .gx-3d canvas") != before)
+        shot(r, "21_vols")
+        r.click("#gex-body .chipbtn:has-text('HEATMAP')")
+        check("VOLS: the heatmap view", drawn("#gex-body .gx-3d canvas") > 5000)
+        gk = opt_body("GRK", "table")
+        check("GRK: the greeks table", "Strike" in gk and r.locator("#gex-body table tbody tr").count() >= 10 and r.locator("#gex-body tr.me").count() == 1, gk[:200])
+        r.click("#gex-body .chipbtn:has-text('3D')")
+        check("GRK: 3D", drawn("#gex-body .gx-3d canvas") > 3000)
+        h = opt_body("GEXH", ".gx-imap canvas")
+        check("GEXH: interval map and daily history", drawn("#gex-body .gx-imap canvas") > 5000 and r.locator("#gex-body .gx-small canvas, #gex-body .gx-two canvas").count() >= 2, h[:200])
+        shot(r, "22_gexh")
+        b = opt_body("GEX BTC", ".gx-cv canvas")
+        check("GEX: bitcoin from Deribit", "Deribit" in r.inner_text("#gex-sub") and "Call wall: 65,000" in b, b[:300])
+        vb = opt_body("VOLS BTC", ".gx-3d canvas")
+        check("VOLS: bitcoin with DVOL", "DVOL" in vb and r.locator("#gex-body canvas").count() >= 4, vb[:200])
+        nb = opt_body("GEX TSLA", ".empty")
+        check("GEX: a ticker without data says so", "No option data for TSLA yet" in nb, nb[:200])
+        r.click("#b-lang")
+        r.wait_for_function("(document.querySelector('#b-lang') || {}).textContent === 'EN' && !!document.querySelector('#mkt table')", timeout=8000)
+        rg = opt_body("GEX SPX", ".gx-cv canvas")
+        check("RU: GEX in Russian", "Смена гаммы" in rg and "ГАММА-ЭКСПОЗИЦИЯ" in r.inner_text("#p-gex .ph"), rg[:200])
+        r.click("#b-lang")
+        r.wait_for_function("(document.querySelector('#b-lang') || {}).textContent === 'RU' && !!document.querySelector('#mkt table')", timeout=8000)
+
+        # order flow of crypto (a faked Binance)
+        fctx = browser.new_context(viewport={"width": 1440, "height": 900})
+        setup(fctx)
+        setup_binance(fctx)
+        f = fctx.new_page()
+        watch(f)
+        f.goto(base)
+        f.wait_for_selector("#mkt table")
+
+        def fdrawn():
+            return f.evaluate("(function(){ var c = document.querySelector('#flow-body .fl-cv canvas'); if (!c) return 0; var d = c.getContext('2d').getImageData(0, 0, c.width, c.height).data, n = 0; for (var i = 3; i < d.length; i += 4) if (d[i]) n++; return n })()")
+        f.fill("#cmd", "HEAT BTC"); f.press("#cmd", "Enter")
+        f.wait_for_function("window.FLOWX && FLOWX.market() && FLOWX.market().synced && FLOWX.market().cols.length >= 3", timeout=12000)
+        f.wait_for_timeout(600)
+        mkt_ = f.evaluate("(function(){ var m = FLOWX.market(), bb = -1e9, ba = 1e9; m.bids.forEach(function(_, p){ if (p > bb) bb = p }); m.asks.forEach(function(_, p){ if (p < ba) ba = p }); return {bb: bb, ba: ba, n: m.bids.size, tr: m.trades.length} })()")
+        check("HEAT: the order book is kept in sync (snapshot + diffs, never crossed)", mkt_["n"] > 900 and mkt_["bb"] < mkt_["ba"] and mkt_["tr"] > 100, mkt_)
+        check("HEAT: the heatmap draws", fdrawn() > 50000)
+        shot(f, "23_heat")
+        f.fill("#cmd", "BOOK BTC"); f.press("#cmd", "Enter"); f.wait_for_timeout(800)
+        check("BOOK: the ladder and the tape draw", fdrawn() > 20000 and "DOM & TAPE" in f.inner_text("#p-flow .ph"))
+        f.fill("#cmd", "FOOT BTC"); f.press("#cmd", "Enter"); f.wait_for_timeout(800)
+        check("FOOT: footprint candles draw", fdrawn() > 20000)
+        shot(f, "24_foot")
+        f.fill("#cmd", "CVD BTC"); f.press("#cmd", "Enter")
+        f.wait_for_function("FLOWX.market() && FLOWX.market().kl && FLOWX.market().kl.bars.length >= 400", timeout=8000)
+        f.wait_for_timeout(600)
+        check("CVD: price, cumulative delta and bar delta draw", fdrawn() > 20000)
+        shot(f, "25_cvd")
+        f.fill("#cmd", "HEAT"); f.press("#cmd", "Enter")
+        f.wait_for_function("!document.getElementById('p-imap').classList.contains('off')", timeout=5000)
+        check("HEAT alone still opens the market map", True)
+        f.fill("#cmd", "MOV"); f.press("#cmd", "Enter")
+        f.wait_for_function("document.getElementById('p-flow').classList.contains('off')", timeout=5000)
+        f.wait_for_function("!window.FLOWX.market()", timeout=8000)
+        check("the streams close when the order-flow panel leaves the screen", f.evaluate("!FLOWX.market()"))
+        # supply chain, tankers, practice account, the quick bar
+        f.fill("#cmd", "SPLC"); f.press("#cmd", "Enter")
+        f.wait_for_selector("#map-body .sp-wrap canvas")
+        sp = f.inner_text("#map-body")
+        check("SPLC: the oil supply chain with EIA flows", "Hormuz" in sp and "3Q26 9.1" in sp and "Cape of Good Hope" in sp, sp[:300])
+        shot(f, "26_splc")
+        f.click("#map-tabs button[data-t=SHIP]")
+        f.wait_for_selector("#map-body .gm-wrap canvas")
+        f.wait_for_function("document.querySelector('#map-body .gm-side') && document.querySelector('#map-body .gm-side').textContent.includes('Tankers at the chokepoints')", timeout=8000)
+        f.wait_for_function("window.MAPS && MAPS.M.data.tankers && MAPS.M.data.tankers.pts.length === 2", timeout=8000)
+        check("SHIP: the map comes back after SPLC, with the tankers layer", f.locator("#map-body .gm-wrap canvas").count() == 1)
+        f.fill("#cmd", "PAPR"); f.press("#cmd", "Enter")
+        f.wait_for_selector("#my-body .stat")
+        f.fill("#my-body input.t", "AAPL"); f.fill("#my-body input[data-k=paper-a]", "$3429.6")
+        f.click("#my-body button[type=submit]")
+        f.wait_for_function("document.querySelector('#my-body tbody tr') && document.querySelector('#my-body').textContent.includes('AAPL')", timeout=8000)
+        pp = f.evaluate("JSON.parse(localStorage.getItem('my_paper'))")
+        check("PAPR: a practice buy at the last price", abs(pp["pos"]["AAPL"]["q"] - 10) < 1e-6 and abs(pp["cash"] - (100000 - 3429.6)) < 0.01, pp)
+        f.fill("#my-body input.t", "AAPL"); f.fill("#my-body input[data-k=paper-a]", "50")
+        f.click("#my-body button:has-text('SELL')")
+        f.wait_for_selector("#my-body .err")
+        check("PAPR: no selling what is not held", "do not hold that many" in f.inner_text("#my-body .err"))
+        check("the quick bar lists the functions", f.locator("#fbar button").count() >= 15 and "GEX" in f.inner_text("#fbar"))
+        f.keyboard.press("Alt+6")
+        f.wait_for_function("!document.getElementById('p-gex').classList.contains('off')", timeout=5000)
+        check("Alt+6 opens GEX", True)
+        fctx.close()
+
         # the Markets page in both languages
         mp = rctx.new_page()
         watch(mp)
@@ -510,6 +643,12 @@ def run():
         shot(m, "15_mobile_gc")
         ov = m.evaluate("document.documentElement.scrollWidth - window.innerWidth")
         check("phone: no horizontal page scroll", ov <= 0, ov)
+        m.fill("#cmd", "GEX SPX"); m.press("#cmd", "Enter")
+        m.wait_for_selector("#gex-body .gx-cv canvas")
+        check("phone: GEX in one panel", visible_panels(m) == ["p-gex"], visible_panels(m))
+        shot(m, "27_mobile_gex")
+        ov3 = m.evaluate("document.documentElement.scrollWidth - window.innerWidth")
+        check("phone: GEX has no horizontal page scroll", ov3 <= 0, ov3)
         browser.close()
 
     proc.kill()

@@ -73,8 +73,8 @@ var CITIES = [
   ['Hong Kong', 'Гонконг', 22.32, 114.17], ['Seoul', 'Сеул', 37.57, 126.98], ['Tokyo', 'Токио', 35.68, 139.69], ['Singapore', 'Сингапур', 1.35, 103.82],
   ['Jakarta', 'Джакарта', -6.21, 106.85], ['Sydney', 'Сидней', -33.87, 151.21]
 ];
-var FUEL_COL = {Coal: '#8c8c8c', Gas: '#ffa028', Oil: '#ff4b4b', Nuclear: '#ffd400', Hydro: '#4fa3ff', Wind: '#56d6d6', Solar: '#f5e663',
-  Biomass: '#21c66f', Geothermal: '#ff7ab6', Waste: '#a07850', Storage: '#c77dff', Other: '#6a6a6a'};
+var FUEL_COL = {Coal: '#8b95a7', Gas: '#e0b23c', Oil: '#ef5350', Nuclear: '#f2cc60', Hydro: '#6ea8ff', Wind: '#56c1d6', Solar: '#f5e663',
+  Biomass: '#2fbf71', Geothermal: '#ff7ab6', Waste: '#a07850', Storage: '#a78bfa', Other: '#6b7585'};
 var ISO2 = {US: 'USA', DE: 'DEU', UK: 'GBR', GB: 'GBR', JP: 'JPN', RU: 'RUS', CN: 'CHN', IN: 'IND', CA: 'CAN', AU: 'AUS', CH: 'CHE', BR: 'BRA',
   KR: 'KOR', MX: 'MEX', TR: 'TUR', ZA: 'ZAF', SE: 'SWE', NO: 'NOR', NZ: 'NZL', ID: 'IDN', SA: 'SAU', PL: 'POL', CZ: 'CZE', HU: 'HUN',
   CL: 'CHL', CO: 'COL', PE: 'PER', TH: 'THA', MY: 'MYS', PH: 'PHL', IL: 'ISR', KZ: 'KAZ', AR: 'ARG', DK: 'DNK', HK: 'HKG', SG: 'SGP'};
@@ -99,19 +99,19 @@ function sequential(v, lo, hi, reverse){   // green (good) → amber → red (ba
   return t < 0.5 ? mix('#1f8f55', '#e0a030', t * 2) : mix('#e0a030', '#d93a3a', (t - 0.5) * 2);
 }
 function tempCol(t){   // °C: deep blue → white → red
-  if (t == null || isNaN(t)) return '#555';
-  var stops = [[-30, '#3a4cff'], [-10, '#4fa3ff'], [0, '#bfe3ff'], [10, '#f5f5c8'], [20, '#ffd400'], [30, '#ff7a1a'], [40, '#d92020']];
+  if (t == null || isNaN(t)) return '#4b5563';
+  var stops = [[-30, '#3a4cff'], [-10, '#6ea8ff'], [0, '#bfe3ff'], [10, '#f5f5c8'], [20, '#f2cc60'], [30, '#ff7a1a'], [40, '#d92020']];
   for (var i = 1; i < stops.length; i++) if (t <= stops[i][0]) return mix(stops[i - 1][1], stops[i][1], (t - stops[i - 1][0]) / (stops[i][0] - stops[i - 1][0]));
   return stops[stops.length - 1][1];
 }
-function alertCol(a){ a = String(a || '').toLowerCase(); return a === 'red' ? '#ff3b3b' : a === 'orange' ? '#ff9a1a' : '#21c66f' }
-function magCol(m){ return m >= 7 ? '#ff2a2a' : m >= 6 ? '#ff6a1a' : m >= 5 ? '#ffa028' : m >= 4 ? '#ffd400' : '#e8e8a0' }
+function alertCol(a){ a = String(a || '').toLowerCase(); return a === 'red' ? '#ff3b3b' : a === 'orange' ? '#ff9a1a' : '#2fbf71' }
+function magCol(m){ return m >= 7 ? '#ff2a2a' : m >= 6 ? '#ff6a1a' : m >= 5 ? '#e0b23c' : m >= 4 ? '#f2cc60' : '#e8e8a0' }
 // Saffir–Simpson from the 1-minute wind in km/h
 function stormCat(kmh){
   if (kmh == null) return '';
   return kmh >= 252 ? 'CAT 5' : kmh >= 209 ? 'CAT 4' : kmh >= 178 ? 'CAT 3' : kmh >= 154 ? 'CAT 2' : kmh >= 119 ? 'CAT 1' : kmh >= 63 ? 'TS' : 'TD';
 }
-function stormCol(kmh){ return kmh >= 178 ? '#ff2a6a' : kmh >= 119 ? '#ff7a1a' : kmh >= 63 ? '#ffd400' : '#4fd2ff' }
+function stormCol(kmh){ return kmh >= 178 ? '#ff2a6a' : kmh >= 119 ? '#ff7a1a' : kmh >= 63 ? '#f2cc60' : '#4fd2ff' }
 function when(ts){
   var d = new Date(ts); if (isNaN(d)) return '';
   return d.toLocaleString(I.date, {day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit', timeZone: T.MSK}) + ' ' + I.tz;
@@ -132,26 +132,28 @@ var LAYERS = {
   fires: {grp: 'live', color: '#ff8c1a', src: 'NASA EONET', ttl: 900, load: function(){ return loadEonet('wildfires', '#ff8c1a') }},
   volc: {grp: 'live', color: '#ff3cc8', src: 'NASA EONET', ttl: 1800, load: function(){ return loadEonet('volcanoes', '#ff3cc8') }},
   storms: {grp: 'live', color: '#4fd2ff', src: 'GDACS', ttl: 600, load: loadStorms},
-  alerts: {grp: 'live', color: '#ffd400', src: 'GDACS', ttl: 900, load: loadAlerts},
-  exch: {grp: 'mkt', color: '#ffa028', src: '', ttl: 30, load: loadExch},
-  choke: {grp: 'mkt', color: '#56d6d6', src: 'IMF PortWatch', ttl: 3600, load: loadChoke},
-  ports: {grp: 'infra', color: '#4fa3ff', src: 'IMF PortWatch', load: loadPorts},
-  plants: {grp: 'infra', color: '#c77dff', src: 'WRI GPPD', load: loadPlants},
-  refin: {grp: 'infra', color: '#ff4b4b', src: '', load: function(){ return loadInfra('refineries.json', '#ff4b4b', 'gm_refin') }},
-  lng: {grp: 'infra', color: '#21c66f', src: '', load: function(){ return loadInfra('lng.json', '#21c66f', 'gm_lng') }},
+  alerts: {grp: 'live', color: '#f2cc60', src: 'GDACS', ttl: 900, load: loadAlerts},
+  exch: {grp: 'mkt', color: '#e0b23c', src: '', ttl: 30, load: loadExch},
+  choke: {grp: 'mkt', color: '#56c1d6', src: 'IMF PortWatch', ttl: 3600, load: loadChoke},
+  ports: {grp: 'infra', color: '#6ea8ff', src: 'IMF PortWatch', load: loadPorts},
+  plants: {grp: 'infra', color: '#a78bfa', src: 'WRI GPPD', load: loadPlants},
+  refin: {grp: 'infra', color: '#ef5350', src: '', load: function(){ return loadInfra('refineries.json', '#ef5350', 'gm_refin') }},
+  lng: {grp: 'infra', color: '#2fbf71', src: '', load: function(){ return loadInfra('lng.json', '#2fbf71', 'gm_lng') }},
   gas: {grp: 'infra', color: '#b7e34b', src: '', load: loadGas},
   oilst: {grp: 'infra', color: '#ffb35c', src: '', load: loadOilStorage},
   fact: {grp: 'infra', color: '#b8c4d6', src: 'Climate TRACE', load: loadFactories},
   ships: {grp: 'mkt', color: '#ffe066', src: 'Digitraffic AIS', ttl: 180, load: loadShips},
-  wx: {grp: 'wx', color: '#ffd400', src: 'Open-Meteo', ttl: 1800, load: loadWeather}
+  tankers: {grp: 'mkt', color: '#ff9f40', src: 'aisstream.io', ttl: 600, load: loadTankers},
+  wx: {grp: 'wx', color: '#f2cc60', src: 'Open-Meteo', ttl: 1800, load: loadWeather}
 };
-var ORDER = ['plants', 'fact', 'ports', 'oilst', 'refin', 'lng', 'gas', 'ships', 'wx', 'alerts', 'fires', 'volc', 'quakes', 'choke', 'storms', 'exch'];
+var ORDER = ['plants', 'fact', 'ports', 'oilst', 'refin', 'lng', 'gas', 'ships', 'tankers', 'wx', 'alerts', 'fires', 'volc', 'quakes', 'choke', 'storms', 'exch'];
 var GROUPS = [['live', 'gm_g_live'], ['mkt', 'gm_g_mkt'], ['infra', 'gm_g_infra'], ['wx', 'gm_g_wx']];
 // which layers each tab shows: "base" always, "opt" can be ticked
 var TABS = {
   MAP: {opt: ORDER.slice(), def: ['quakes', 'storms', 'fires', 'exch', 'choke']},
   STORM: {base: ['storms'], opt: ['refin', 'lng', 'gas', 'oilst', 'ports', 'plants', 'fact', 'alerts'], def: ['refin', 'lng', 'ports']},
-  SHIP: {base: ['choke'], opt: ['ships', 'ports', 'oilst', 'refin', 'lng', 'storms'], def: ['ports', 'ships']},
+  SHIP: {base: ['choke'], opt: ['tankers', 'ships', 'ports', 'oilst', 'refin', 'lng', 'storms'], def: ['ports', 'ships', 'tankers']},
+  SPLC: {base: [], opt: [], def: []},
   WETR: {base: ['wx'], opt: ['storms', 'exch'], def: []},
   ECO: {base: [], opt: ['exch'], def: []}
 };
@@ -166,6 +168,7 @@ M.off = {plants: M.fuels, fact: {}, ships: {}};
 Object.keys(TABS).forEach(function(t){ if (!M.on[t]) { M.on[t] = {}; TABS[t].def.forEach(function(k){ M.on[t][k] = 1 }) } });
 // layers added later switch on once for those who saved their choice before
 if (store('map_on_v') !== '2') { if (M.on.SHIP.ships == null) M.on.SHIP.ships = 1; store('map_on_v', '2'); store('map_on', JSON.stringify(M.on)) }
+if (store('map_on_v2') !== '3') { if (M.on.SHIP.tankers == null) M.on.SHIP.tankers = 1; store('map_on_v2', '3'); store('map_on', JSON.stringify(M.on)) }
 function saveOn(){ store('map_on', JSON.stringify(M.on)) }
 function active(){
   var t = TABS[M.tab], out = (t.base || []).slice();
@@ -278,7 +281,7 @@ function loadStorms(){
   });
 }
 // track segments by the storm's strength then: hurricane/typhoon, tropical storm, depression
-var TRACK_COL = {HU: '#ff4b6a', TY: '#ff4b6a', STY: '#ff2a6a', TS: '#ffd400', TD: '#4fd2ff', STS: '#ffd400'};
+var TRACK_COL = {HU: '#ff4b6a', TY: '#ff4b6a', STY: '#ff2a6a', TS: '#f2cc60', TD: '#4fd2ff', STS: '#f2cc60'};
 var GD_KIND = {EQ: 'gm_k_eq', FL: 'gm_k_fl', VO: 'gm_k_vo', DR: 'gm_k_dr', WF: 'gm_k_wf', TC: 'gm_k_tc'};
 var GD_ICON = {EQ: '◎', FL: '≈', VO: '▲', DR: '☀', WF: '♨', TC: '🌀'};
 function loadAlerts(){
@@ -319,7 +322,7 @@ function loadExch(){
     var s = [nm2(e.city) + ': ' + fmt(q.value, q.digits) + ' ' + pct(q.change)];
     (e.more || []).forEach(function(id){ var x = T.Q[id]; if (x) s.push(x.name + ': ' + fmt(x.value, x.digits) + ' ' + pct(x.change)) });
     s.push(TX('gm_click_chart'));
-    return {lon: e.lon, lat: e.lat, r: 7, c: diverging(q.change, 2) || '#555', ring: true, t: q.name, s: s, lbl: (q.name || e.id) + ' ' + pct(q.change, 1),
+    return {lon: e.lon, lat: e.lat, r: 7, c: diverging(q.change, 2) || '#4b5563', ring: true, t: q.name, s: s, lbl: (q.name || e.id) + ' ' + pct(q.change, 1),
       act: function(){ T.openChart(e.id) }, k: 'exch'};
   }).filter(Boolean);
   if (!pts.length) throw new Error(TX('gm_no_quotes'));
@@ -369,7 +372,7 @@ function loadChoke(){
       var s = [TX('gm_ships_day', c.n7 != null ? fmt(c.n7, 0) : '—') + (c.ch != null ? ' · ' + pct(c.ch, 0) + ' ' + TX('gm_vs30') : ''),
         TX('gm_tankers_day', c.t7 != null ? fmt(c.t7, 0) : '—') + (c.tch != null ? ' · ' + pct(c.tch, 0) : ''),
         c.cap7 != null ? TX('gm_cargo_day', fmt(c.cap7 / 1e6, 2)) : '', c.last ? TX('gm_data_to', c.last) : ''].filter(Boolean);
-      return {lon: c.lon, lat: c.lat, r: 3.5 + Math.sqrt(c.n7 || 4) * 0.9, c: c.ch == null ? '#56d6d6' : c.ch < -15 ? '#ff4b4b' : c.ch < -5 ? '#ffa028' : '#56d6d6',
+      return {lon: c.lon, lat: c.lat, r: 3.5 + Math.sqrt(c.n7 || 4) * 0.9, c: c.ch == null ? '#56c1d6' : c.ch < -15 ? '#ef5350' : c.ch < -5 ? '#e0b23c' : '#56c1d6',
         ring: true, t: '⚓ ' + c.name, s: s, lbl: c.name, k: 'choke', cp: c, act: function(){ pinChoke(c) }};
     });
     return {pts: pts};
@@ -405,7 +408,7 @@ function loadPorts(){
       var pts = (d.features || []).map(function(f){
         var a = f.attributes || {}; if (a.lat == null || a.lon == null) return null;
         var n = a.vessel_count_total || 0;
-        return {lon: a.lon, lat: a.lat, r: 1.2, c: '#4fa3ff', t: '⚓ ' + a.portname, v: n,
+        return {lon: a.lon, lat: a.lat, r: 1.2, c: '#6ea8ff', t: '⚓ ' + a.portname, v: n,
           s: [(a.country || '') + (a.industry_top1 ? ' · ' + a.industry_top1 : ''), TX('gm_port_calls', fmt(n, 0)) + (a.vessel_count_tanker ? ' · ' + TX('gm_tankers_short') + ' ' + fmt(a.vessel_count_tanker, 0) : '')],
           lbl: a.portname, minLbl: 2.2, k: 'port'};
       }).filter(Boolean).sort(function(a, b){ return a.v - b.v });
@@ -417,7 +420,7 @@ function loadPorts(){
     }).catch(function(){
       return geo('ports.json').then(function(d){
         return {pts: d.p.map(function(p){
-          return {lon: p[0], lat: p[1], r: Math.max(1.3, 4.6 - p[2] * 0.42), c: '#4fa3ff', t: '⚓ ' + p[3], s: [TX('gm_port_rank', p[2])], lbl: p[2] <= 3 ? p[3] : null, minLbl: 2.5, k: 'port'};
+          return {lon: p[0], lat: p[1], r: Math.max(1.3, 4.6 - p[2] * 0.42), c: '#6ea8ff', t: '⚓ ' + p[3], s: [TX('gm_port_rank', p[2])], lbl: p[2] <= 3 ? p[3] : null, minLbl: 2.5, k: 'port'};
         }), src: d.src};
       });
     });
@@ -428,7 +431,7 @@ function loadPlants(){
   return geo('plants.json').then(function(d){
     var fuels = d.fuels;
     return {pts: d.p.map(function(p){
-      var f = fuels[p[3]], c = FUEL_COL[f] || '#888';
+      var f = fuels[p[3]], c = FUEL_COL[f] || '#8b95a7';
       return {lon: p[0], lat: p[1], r: Math.max(0.9, Math.min(7, Math.sqrt(p[2]) / 6.5)), c: c, glow: true, fuel: f,
         t: (p[5] || TX('gm_plant_' + f.toLowerCase())) , s: [TX('gm_fuel_' + f.toLowerCase()) + ' · ' + fmt(p[2], p[2] < 10 ? 1 : 0) + ' ' + TX('gm_mw'), countryName(p[4])], k: 'plant'};
     }), src: d.src, fuels: fuels};
@@ -529,6 +532,144 @@ function loadShips(){
     });
 }
 
+/* ---------- tankers at the oil chokepoints: aisstream.io, read by the bot (ais.py → ships.json) ---------- */
+var AREA_COL = {hormuz: '#ff9f40', bab: '#ff7a5c', suez: '#f2cc60', malacca: '#56c1d6', turkish: '#a78bfa', danish: '#6ea8ff', gibraltar: '#b7e34b', panama: '#2fbf71', cape: '#e8e8a0'};
+function loadTankers(){
+  return getJSON('../ships.json?t=' + Math.floor(Date.now() / 60000), 20000).catch(function(){ throw new Error(TX('gm_tankers_nokey')) }).then(function(d){
+    var names = {}; (d.areas || []).forEach(function(a){ names[a.id] = I.ru ? a.name_ru || a.name : a.name });
+    var pts = (d.ships || []).filter(function(v){ return typeof v.lat === 'number' && typeof v.lon === 'number' }).map(function(v){
+      var moving = v.sog > 0.5 && v.nav !== 1 && v.nav !== 5;
+      var s = [TX('gm_ship1_tanker') + ' · ' + (moving ? TX('gm_ship_speed', fmt(v.sog, 1)) : TX(v.nav === 1 ? 'gm_ship_anchor' : v.nav === 5 ? 'gm_ship_moored' : 'gm_ship_still'))];
+      if (v.area && names[v.area]) s.push('⚓ ' + names[v.area]);
+      if (v.dest) s.push(TX('gm_ship_dest', v.dest));
+      if (v.draught) s.push(TX('gm_ship_draught', fmt(v.draught, 1)));
+      if (v.t) s.push(ago(Date.parse(v.t)));
+      return {lon: v.lon, lat: v.lat, r: 2.6, c: AREA_COL[v.area] || '#ff9f40', k: 'ship', t: '🛢 ' + (v.name || 'MMSI ' + v.mmsi), s: s,
+        hd: moving ? v.cog : null, u: 'https://www.marinetraffic.com/en/ais/details/ships/mmsi:' + encodeURIComponent(v.mmsi)};
+    });
+    if (!pts.length) throw new Error(TX('gm_tankers_none'));
+    return {pts: pts, src: 'aisstream.io', updated: d.updated, areas: d.areas};
+  });
+}
+
+/* ---------- SPLC: the oil supply chain — producers, chokepoints, buyers ---------- */
+// crude oil and products through each chokepoint, million barrels a day, by quarter: EIA Short-Term Energy Outlook
+// (Global Energy Security Data, released 10 Nov 2026). Update these lines when EIA publishes the next quarter.
+var EIA_Q = ['2Q25', '3Q25', '4Q25', '1Q26', '2Q26', '3Q26'];
+var EIA = {malacca: [23.9, 23.5, 25.0, 21.4, 16.7, 19.4], hormuz: [21.1, 21.4, 21.6, 15.0, 5.1, 9.1], suez: [5.1, 5.6, 5.9, 5.7, 5.8, 7.1],
+  bab: [4.5, 4.7, 5.4, 5.6, 8.1, 6.3], danish: [4.8, 5.0, 5.0, 4.9, 4.7, 4.5], turkish: [3.7, 3.7, 3.7, 3.3, 4.1, 3.4], panama: [2.5, 2.8, 2.8, 2.9, 3.2, 3.0],
+  cape: [9.4, 9.1, 10.0, 8.3, 9.5, 8.7]};
+var EIA_SRC = 'https://www.eia.gov/outlooks/steo/report/energysecurity/article.php';
+// nodes: x, y in 0..1; k: c = chokepoint, s = supply, d = demand; pw — the PortWatch chokepoint's name
+var SP_NODES = [
+  {id: 'rusb', k: 's', x: 0.0, y: 0.05, n: ['Baltic: Russia', 'Балтика: Россия']},
+  {id: 'rusbs', k: 's', x: 0.0, y: 0.2, n: ['Black Sea: Russia, Kazakhstan', 'Чёрное море: Россия, Казахстан']},
+  {id: 'gulf', k: 's', x: 0.0, y: 0.47, n: ['Persian Gulf: Saudi Arabia, Iraq, UAE, Kuwait, Iran, Qatar', 'Персидский залив: Саудовская Аравия, Ирак, ОАЭ, Кувейт, Иран, Катар']},
+  {id: 'wafr', k: 's', x: 0.0, y: 0.74, n: ['West Africa', 'Западная Африка']},
+  {id: 'amer', k: 's', x: 0.0, y: 0.95, n: ['Americas: US, Brazil, Guyana', 'Америка: США, Бразилия, Гайана']},
+  {id: 'danish', k: 'c', x: 0.46, y: 0.05, pw: /oresund|danish|great belt/i, n: ['Danish straits', 'Датские проливы']},
+  {id: 'turkish', k: 'c', x: 0.46, y: 0.19, pw: /bosp|dardan|turk/i, n: ['Turkish straits', 'Турецкие проливы']},
+  {id: 'suez', k: 'c', x: 0.6, y: 0.32, pw: /suez/i, n: ['Suez + SUMED', 'Суэц + SUMED']},
+  {id: 'bab', k: 'c', x: 0.46, y: 0.42, pw: /bab/i, n: ['Bab el-Mandeb', 'Баб-эль-Мандеб']},
+  {id: 'hormuz', k: 'c', x: 0.3, y: 0.55, pw: /hormuz/i, n: ['Hormuz', 'Ормуз']},
+  {id: 'malacca', k: 'c', x: 0.62, y: 0.6, pw: /malacca/i, n: ['Malacca', 'Малакка']},
+  {id: 'cape', k: 'c', x: 0.46, y: 0.78, pw: /good hope/i, n: ['Cape of Good Hope', 'Мыс Доброй Надежды']},
+  {id: 'panama', k: 'c', x: 0.46, y: 0.95, pw: /panama/i, n: ['Panama Canal', 'Панамский канал']},
+  {id: 'europe', k: 'd', x: 1.0, y: 0.12, n: ['Europe', 'Европа']},
+  {id: 'india', k: 'd', x: 1.0, y: 0.44, n: ['India', 'Индия']},
+  {id: 'asia', k: 'd', x: 1.0, y: 0.66, n: ['East Asia', 'Восточная Азия']},
+  {id: 'americas', k: 'd', x: 1.0, y: 0.92, n: ['Americas', 'Америка']}
+];
+var SP_EDGES = [['gulf', 'hormuz'], ['hormuz', 'bab'], ['bab', 'suez'], ['suez', 'europe'], ['hormuz', 'india'], ['hormuz', 'malacca'], ['malacca', 'asia'], ['hormuz', 'cape'],
+  ['cape', 'europe'], ['cape', 'americas'], ['rusb', 'danish'], ['danish', 'europe'], ['danish', 'suez'], ['rusbs', 'turkish'], ['turkish', 'europe'], ['turkish', 'suez'], ['suez', 'india'],
+  ['wafr', 'cape'], ['cape', 'malacca'], ['wafr', 'europe'], ['amer', 'panama'], ['panama', 'asia'], ['amer', 'europe']];
+function splcLive(){
+  return chokeData().then(function(list){
+    var out = {};
+    SP_NODES.forEach(function(n){ if (n.pw) { var c = list.filter(function(x){ return n.pw.test(x.name || '') })[0]; if (c) out[n.id] = c } });
+    return out;
+  }).catch(function(){ return {} });
+}
+function drawSplc(){
+  box = $('map-body'); clear(box); box.classList.remove('narrow', 'side-open');
+  var w = el('div', 'gm-wrap sp-wrap'), sd = el('div', 'gm-side'); box.appendChild(w); box.appendChild(sd);
+  // the diagram needs some height: in a small panel it scrolls; on a narrow screen the list goes under it
+  var narrow = box.clientWidth < 700;
+  box.style.overflow = 'auto'; box.style.flexDirection = narrow ? 'column' : '';
+  w.style.minHeight = '520px'; w.style.flex = narrow ? 'none' : ''; if (narrow) { w.style.height = '520px'; sd.style.width = 'auto'; sd.style.borderLeft = '0' }
+  $('map-sub').textContent = 'EIA ' + EIA_Q[EIA_Q.length - 1] + ' · IMF PortWatch';
+  var liveData = {}, sel = null;
+  function paint(){
+    clear(w);
+    var W = w.clientWidth, H = w.clientHeight; if (!W || !H) return;
+    var cv = el('canvas'), dpr = window.devicePixelRatio || 1; cv.width = W * dpr; cv.height = H * dpr; w.appendChild(cv);
+    var g2 = cv.getContext('2d'); g2.scale(dpr, dpr); g2.font = '11.5px ' + getComputedStyle(document.body).fontFamily; g2.textBaseline = 'middle';
+    g2.font = '600 11.5px ' + getComputedStyle(document.body).fontFamily;
+    var srcW = Math.max.apply(null, SP_NODES.filter(function(n){ return n.k === 's' }).map(function(n){ return g2.measureText((I.ru ? n.n[1] : n.n[0]).split(': ')[0]).width }));
+    var padL = Math.min(W * 0.36, srcW + 24), padR = Math.min(110, W * 0.18), padY = 30, last = EIA_Q.length - 1;
+    var P = function(n){ return [padL + n.x * (W - padL - padR), padY + n.y * (H - 2 * padY)] };
+    // a label with a quiet background, so lines under it do not get in the way
+    var label = function(lines, x, y, align){
+      var w0 = 0; lines.forEach(function(l){ g2.font = (l[2] || '11.5px') + ' ' + getComputedStyle(document.body).fontFamily; w0 = Math.max(w0, g2.measureText(l[0]).width) });
+      var bx = align === 'right' ? x - w0 - 6 : align === 'center' ? x - w0 / 2 - 3 : x - 3, h = lines.length * 14 + 4;
+      g2.fillStyle = 'rgba(20,25,32,0.86)'; g2.fillRect(bx, y - h / 2, w0 + 6, h);
+      lines.forEach(function(l, i){ g2.font = (l[2] || '11.5px') + ' ' + getComputedStyle(document.body).fontFamily; g2.fillStyle = l[1]; g2.textAlign = align === 'right' ? 'right' : align === 'center' ? 'center' : 'left'; g2.fillText(l[0], align === 'right' ? x - 3 : x, y - h / 2 + 9 + i * 14) });
+      g2.textAlign = 'left'; g2.font = '11.5px ' + getComputedStyle(document.body).fontFamily;
+    };
+    var by = {}; SP_NODES.forEach(function(n){ by[n.id] = n });
+    var vol = function(id){ return EIA[id] ? EIA[id][last] : null };
+    var maxV = Math.max.apply(null, Object.keys(EIA).map(vol));
+    var lit = function(a, b){ return !sel || a === sel || b === sel };
+    SP_EDGES.forEach(function(e){
+      var a = by[e[0]], b = by[e[1]], pa = P(a), pb = P(b), v = vol(a.id) || vol(b.id) || 2;
+      var wd = Math.max(1, Math.sqrt(v / maxV) * 10), mx_ = (pa[0] + pb[0]) / 2;
+      g2.beginPath(); g2.moveTo(pa[0], pa[1]); g2.bezierCurveTo(mx_, pa[1], mx_, pb[1], pb[0], pb[1]);
+      g2.strokeStyle = lit(a.id, b.id) ? 'rgba(110,168,255,0.38)' : 'rgba(110,168,255,0.08)'; g2.lineWidth = wd; g2.stroke(); g2.lineWidth = 1;
+    });
+    SP_NODES.forEach(function(n){
+      var p = P(n), nm = I.ru ? n.n[1] : n.n[0], on = lit(n.id, null) || SP_EDGES.some(function(e){ return (e[0] === sel && e[1] === n.id) || (e[1] === sel && e[0] === n.id) });
+      g2.globalAlpha = on ? 1 : 0.35;
+      if (n.k === 'c') {
+        var v = vol(n.id), prev = EIA[n.id][2], r = 6 + Math.sqrt(v / maxV) * 16, ch = prev ? (v / prev - 1) * 100 : null;
+        g2.beginPath(); g2.arc(p[0], p[1], r, 0, 6.283); g2.fillStyle = ch != null && ch < -15 ? 'rgba(239,83,80,0.85)' : ch != null && ch > 15 ? 'rgba(224,178,60,0.85)' : 'rgba(86,193,214,0.85)'; g2.fill();
+        var lines = [[nm, '#e6eaf0', '600 11.5px'], [fmt(v, 1) + ' ' + TX('sp_mbd') + (ch != null ? ' · ' + pct(ch, 0) : ''), ch != null && ch < -15 ? '#ef5350' : '#8b95a7']];
+        var lv = liveData[n.id]; if (lv && lv.t7 != null) lines.push([TX('sp_live_s', fmt(lv.t7, 0), lv.tch != null ? pct(lv.tch, 0) : '—'), lv.tch != null && lv.tch < -15 ? '#ef5350' : '#5d6778', '10.5px']);
+        label(lines, p[0] + r + 6, p[1], 'left');
+      } else {
+        g2.fillStyle = n.k === 's' ? '#e0b23c' : '#2fbf71'; g2.beginPath(); g2.arc(p[0], p[1], 4, 0, 6.283); g2.fill();
+        var words = nm.split(': ');
+        var ll = [[words[0], '#e6eaf0', '600 11.5px']];
+        if (words[1]) words[1].match(/.{1,26}(,\s|$)/g).slice(0, 2).forEach(function(w2){ ll.push([w2.replace(/,\s$/, ','), '#8b95a7', '10.5px']) });
+        label(ll, n.k === 's' ? p[0] - 8 : p[0] + 8, p[1], n.k === 's' ? 'right' : 'left');
+      }
+      g2.globalAlpha = 1;
+    });
+    cv.onclick = function(e){
+      var r = cv.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top, hit = null;
+      SP_NODES.forEach(function(n){ var p = P(n); if (Math.hypot(p[0] - x, p[1] - y) < 24) hit = n.id });
+      sel = hit === sel ? null : hit; paint(); side();
+    };
+  }
+  function side(){
+    clear(sd);
+    var h = el('div', 'sh'); h.appendChild(el('span', null, TX('sp_side'))); h.appendChild(el('small', null, EIA_Q[EIA_Q.length - 1])); sd.appendChild(h);
+    SP_NODES.filter(function(n){ return n.k === 'c' }).sort(function(a, b){ return EIA[b.id][EIA_Q.length - 1] - EIA[a.id][EIA_Q.length - 1] }).forEach(function(n){
+      var v = EIA[n.id], lv = liveData[n.id], row = el('button', 'gm-row' + (sel === n.id ? ' on' : '')), dv = el('div');
+      dv.appendChild(el('b', null, I.ru ? n.n[1] : n.n[0]));
+      dv.appendChild(el('span', null, EIA_Q.map(function(q, i){ return q + ' ' + fmt(v[i], 1) }).slice(-4).join(' · ')));
+      if (lv && lv.t7 != null) dv.appendChild(el('span', null, TX('sp_live', fmt(lv.t7, 0), lv.tch != null ? pct(lv.tch, 0) : '—')));
+      row.appendChild(el('i')); row.firstChild.style.background = '#56c1d6'; row.appendChild(dv);
+      row.onclick = function(){ sel = sel === n.id ? null : n.id; paint(); side() };
+      sd.appendChild(row);
+    });
+    var nt = el('div', 'gm-note'); nt.style.padding = '8px 10px'; nt.textContent = TX('sp_note'); sd.appendChild(nt);
+    var a = el('a', null, 'EIA · Short-Term Energy Outlook'); a.href = EIA_SRC; a.target = '_blank'; a.rel = 'noopener'; a.style.cssText = 'display:block;padding:0 10px 10px;color:var(--accent);text-decoration:none;font-size:11.5px'; sd.appendChild(a);
+  }
+  w.__draw = paint; if (F.canvases().indexOf(w) < 0) F.canvases().push(w);
+  paint(); side();
+  splcLive().then(function(d){ liveData = d; if (M.tab === 'SPLC' && document.body.contains(w)) { paint(); side() } });
+}
+
 /* ---------- Open-Meteo: weather in the big cities ---------- */
 function loadWeather(){
   var url = 'https://api.open-meteo.com/v1/forecast?latitude=' + CITIES.map(function(c){ return c[2] }).join(',') +
@@ -619,7 +760,7 @@ function loadEco(){
 /* ======================= drawing ======================= */
 var box, wrap, cv, g, side, tip;
 function build(){
-  box = $('map-body'); clear(box);
+  box = $('map-body'); clear(box); box.style.overflow = ''; box.style.flexDirection = '';   // SPLC may have changed them
   wrap = el('div', 'gm-wrap'); cv = el('canvas'); wrap.appendChild(cv);
   var ctl = el('div', 'gm-ctl');
   [['+', function(){ zoomAt(M.W / 2, M.H / 2, 1.6) }, 'gm_zin'], ['−', function(){ zoomAt(M.W / 2, M.H / 2, 1 / 1.6) }, 'gm_zout'], ['⌂', home, 'gm_home'],
@@ -677,15 +818,15 @@ function draw(){
   if (!g || !M.W || !F.visible('p-map')) return;
   var W = M.W, H = M.H, S = M.S, dpr = M.dpr, ks = copies();
   g.setTransform(dpr, 0, 0, dpr, 0, 0); g.globalCompositeOperation = 'source-over'; g.globalAlpha = 1;
-  g.fillStyle = '#000'; g.fillRect(0, 0, W, H);
+  g.fillStyle = '#0b0e13'; g.fillRect(0, 0, W, H);
   if (world) {
     ks.forEach(function(k){
       g.setTransform(dpr * S, 0, 0, dpr * S, dpr * ((k - M.cx) * S + W / 2), dpr * (H / 2 - M.cy * S));
       if (M.tab === 'ECO') {
         world.list.forEach(function(c){ g.fillStyle = ecoColor(c.iso) || '#15191e'; g.fill(c.path) });
-        if (M.hoverIso && world.c[M.hoverIso]) { g.lineWidth = 2 / S; g.strokeStyle = '#ffd400'; g.stroke(world.c[M.hoverIso].path) }
-      } else { g.fillStyle = '#10161c'; g.fill(world.land) }
-      g.lineWidth = 0.6 / S; g.strokeStyle = M.tab === 'ECO' ? '#000' : '#2a3540'; g.stroke(world.land);
+        if (M.hoverIso && world.c[M.hoverIso]) { g.lineWidth = 2 / S; g.strokeStyle = '#f2cc60'; g.stroke(world.c[M.hoverIso].path) }
+      } else { g.fillStyle = '#161c24'; g.fill(world.land) }
+      g.lineWidth = 0.6 / S; g.strokeStyle = M.tab === 'ECO' ? '#0b0e13' : '#2c3542'; g.stroke(world.land);
     });
   }
   g.setTransform(dpr, 0, 0, dpr, 0, 0);
@@ -732,7 +873,7 @@ function draw(){
     g.globalAlpha = 1; g.globalCompositeOperation = 'source-over';
   });
   if (M.hover && M.hover.p) {   // highlight under the cursor
-    var hp = M.hover.p; g.strokeStyle = '#ffd400'; g.lineWidth = 2; g.beginPath(); g.arc(M.hover.x, M.hover.y, Math.max(5, hp.r * z + 3), 0, 6.2832); g.stroke();
+    var hp = M.hover.p; g.strokeStyle = '#f2cc60'; g.lineWidth = 2; g.beginPath(); g.arc(M.hover.x, M.hover.y, Math.max(5, hp.r * z + 3), 0, 6.2832); g.stroke();
   }
   // labels: the ones that do not overlap
   g.font = '11px ' + getComputedStyle(document.body).fontFamily; g.textBaseline = 'middle';
@@ -744,7 +885,7 @@ function draw(){
     if (placed.some(function(b){ return !(box_[2] < b[0] || box_[0] > b[2] || box_[3] < b[1] || box_[1] > b[3]) })) return;
     placed.push(box_);
     g.fillStyle = 'rgba(0,0,0,.65)'; g.fillRect(box_[0], box_[1], box_[2] - box_[0], 16);
-    g.fillStyle = '#e6e6e6'; g.fillText(L.t, x, y);
+    g.fillStyle = '#e6eaf0'; g.fillText(L.t, x, y);
   });
   if (M.tab === 'ECO' && world) {   // values on the biggest countries
     g.font = '10px ' + getComputedStyle(document.body).fontFamily; g.textAlign = 'center';
@@ -949,7 +1090,7 @@ function catChips(id){
   var list = C_.list(d); if (!list || !list.length) return null;
   var w = el('div', 'gm-chips');
   list.forEach(function(f){
-    var col = C_.col(f) || '#888', b = el('button', 'chipbtn' + (off[f] ? '' : ' on'), C_.name(f));
+    var col = C_.col(f) || '#8b95a7', b = el('button', 'chipbtn' + (off[f] ? '' : ' on'), C_.name(f));
     b.style.borderColor = col; if (!off[f]) { b.style.background = col; b.style.color = '#000' }
     b.onclick = function(){ if (off[f]) delete off[f]; else off[f] = 1; store(C_.key, JSON.stringify(off)); renderSide(); redraw() };
     w.appendChild(b);
@@ -1053,7 +1194,7 @@ function pinChoke(c){
     r.setAttribute('x', i * bw + 0.5); r.setAttribute('y', H - h); r.setAttribute('width', Math.max(1, bw - 1)); r.setAttribute('height', h); r.setAttribute('fill', '#2f6f74');
     var t = document.createElementNS(NS, 'title'); t.textContent = x.d + ': ' + x.n + ' / ' + TX('gm_tankers_short') + ' ' + x.tk; r.appendChild(t); svg.appendChild(r);
     var th = (x.tk || 0) / hi * (H - 12), r2 = document.createElementNS(NS, 'rect');
-    r2.setAttribute('x', i * bw + 0.5); r2.setAttribute('y', H - th); r2.setAttribute('width', Math.max(1, bw - 1)); r2.setAttribute('height', th); r2.setAttribute('fill', '#ffa028'); svg.appendChild(r2);
+    r2.setAttribute('x', i * bw + 0.5); r2.setAttribute('y', H - th); r2.setAttribute('width', Math.max(1, bw - 1)); r2.setAttribute('height', th); r2.setAttribute('fill', '#e0b23c'); svg.appendChild(r2);
   });
   var pts = M.data.choke && M.data.choke.pts.filter(function(p){ return p.cp === c })[0];
   pinInfo({t: '⚓ ' + c.name, s: (pts ? pts.s : []).concat([TX('gm_choke_chart')]), svg: svg, u: 'https://portwatch.imf.org/pages/' + encodeURIComponent(c.id)});
@@ -1061,7 +1202,7 @@ function pinChoke(c){
 function sideWetr(){
   var mode = el('div', 'gm-chips');
   ['now', 'mean', 'hdd', 'cdd'].forEach(function(k){
-    var b = el('button', 'chipbtn' + (M.wx === k ? ' on' : ''), TX('gm_wx_' + k)); b.title = TX('gm_wx_' + k + '_t');
+    var b = el('button', 'chipbtn' + (M.wx === k ? ' on' : ''), TX(k === 'now' ? 'gm_wx_c_now' : 'gm_wx_' + k)); b.title = TX('gm_wx_' + k + '_t');
     b.onclick = function(){ M.wx = k; store('map_wx', k); if (M.data.wx && M.data.wx.rows) M.data.wx = prep({pts: M.data.wx.rows.map(wxPoint), rows: M.data.wx.rows}); renderSide(); redraw() };
     mode.appendChild(b);
   });
@@ -1093,7 +1234,7 @@ function sideEco(){
   if (eco.note) side.appendChild(el('div', 'note', eco.note));
   ks.sort(function(a, b){ return eco.vals[b] - eco.vals[a] }).forEach(function(iso){
     var c = world && world.c[iso]; if (!c) return;
-    var b = el('button', 'gm-row gm-ch'), i = el('i'); i.style.background = ecoColor(iso) || '#333'; b.appendChild(i);
+    var b = el('button', 'gm-row gm-ch'), i = el('i'); i.style.background = ecoColor(iso) || '#2c3542'; b.appendChild(i);
     b.appendChild(el('span', 'nm', I.ru ? c.ru : c.en));
     b.appendChild(el('span', 'num', fmt(eco.vals[iso], ecoFmt()) + '%'));
     b.onclick = function(){ flyTo(c.lx, c.ly, 3); pinInfo({t: I.ru ? c.ru : c.en, s: [ecoName(M.eco) + ': ' + fmt(eco.vals[iso], ecoFmt()) + '%'], act2: [TX('gm_open_ecst'), function(){ T.runCommand('ECST ' + iso) }]}) };
@@ -1103,7 +1244,7 @@ function sideEco(){
 }
 
 /* ======================= open / refresh ======================= */
-var TAB_CODE = {MAP: 'MAP', STORM: 'BMAP STORM', SHIP: 'BMAP V', WETR: 'WETR', ECO: 'MAP ECO'};
+var TAB_CODE = {MAP: 'MAP', STORM: 'BMAP STORM', SHIP: 'BMAP V', WETR: 'WETR', ECO: 'MAP ECO', SPLC: 'SPLC'};
 F.tabs($('map-tabs'), 't', function(t){ setMapTab(t) });
 function setMapTab(t){
   M.tab = TABS[t] ? t : 'MAP'; M.pin = null; M.hover = null; hideTip();
@@ -1114,6 +1255,7 @@ function setMapTab(t){
 }
 function render(){
   if (!F.visible('p-map')) return;
+  if (M.tab === 'SPLC') { M.built = false; M.W = 0; return drawSplc() }   // a diagram, not the map: the map is rebuilt when we come back
   if (!M.built) build();
   loadWorld().then(function(){ redraw() }).catch(function(e){ M.att.textContent = TX('load_fail') + e.message });
   active().forEach(function(id){ ensure(id) });
@@ -1147,6 +1289,8 @@ function mapCmd(arg){
   if (/^(STORM|STORMS|ШТОРМ|ШТОРМЫ|ЦИКЛОНЫ|HURRICANE)/.test(w[0])) return openMap('STORM');
   if (/^(V|SHIP|SHIPS|VESSELS|СУДА|ФЛОТ|PORTS)$/.test(w[0])) return openMap('SHIP');
   if (/^(WETR|WEATHER|ПОГОДА|WX)$/.test(w[0])) return openMap('WETR');
+  if (/^(SPLC|SUPPLY|ЦЕПОЧКА|ПОСТАВКИ)$/.test(w[0])) return openMap('SPLC');
+  if (/^(TANKERS|ТАНКЕРЫ)$/.test(w[0])) { M.on.SHIP.tankers = 1; saveOn(); return openMap('SHIP') }
   if (/^(ECO|ECON|ECST|COUNTRIES|ЭКОНОМИКА|СТРАНЫ)$/.test(w[0])) return openMap('ECO', w.slice(1).join(' '));
   if (a && TABS.MAP.opt.some(function(id){ return id.toUpperCase() === w[0] })) { var id = w[0].toLowerCase(); M.on.MAP[id] = 1; saveOn(); return openMap('MAP') }
   openMap(a ? null : 'MAP');
@@ -1156,6 +1300,8 @@ C.STORM = function(){ openMap('STORM') }; C['ШТОРМЫ'] = C['ЦИКЛОНЫ'
 C.SHIP = function(){ openMap('SHIP') }; C.VESSELS = C.SHIP; C['СУДА'] = C.SHIP; C['СУДОХОДСТВО'] = C.SHIP;
 C.WETR = function(){ openMap('WETR') }; C.WEAT = C.WETR; C.WFOR = C.WETR; C['ПОГОДА'] = C.WETR;
 C.ECMAP = function(arg){ openMap('ECO', arg) };
+C.SPLC = function(){ openMap('SPLC') }; C.SUPPLY = C.SPLC; C['ЦЕПОЧКА'] = C['ПОСТАВКИ'] = C.SPLC;
+C.TANKERS = function(){ M.on.SHIP.tankers = 1; saveOn(); openMap('SHIP') }; C['ТАНКЕРЫ'] = C.TANKERS;
 
 // for tests and other modules
 window.MAPS = {M: M, open: openMap, layers: LAYERS, chokeData: chokeData, km: km, stormCat: stormCat,

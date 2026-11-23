@@ -157,9 +157,9 @@ try { tc.ind = JSON.parse(store('tech_ind') || 'null') } catch(e){}
 try { tc.ta = JSON.parse(store('tech_ta') || 'null') } catch(e){}
 tc.ind = tc.ind || Object.assign({}, DEF_IND); tc.ta = tc.ta || {trend: 1, sr: 1};
 function saveTc(){ store('tech_sym', tc.sym); store('tech_range', tc.range); store('tech_style', tc.style); store('tech_ind', JSON.stringify(tc.ind)); store('tech_ta', JSON.stringify(tc.ta)) }
-var IND_LIST = [['sma20', 'SMA 20', '#c77dff'], ['sma50', 'SMA 50', '#4fa3ff'], ['sma200', 'SMA 200', '#ffd400'], ['ema20', 'EMA 20', '#56d6d6'],
-  ['boll', 'BOLL 20,2', '#8c8c8c'], ['vwap', 'VWAP', '#ff7ab6'], ['vol', 'VOL', '#555'], ['rsi', 'RSI 14', '#ffa028'], ['macd', 'MACD', '#4fa3ff'], ['stoch', 'STOCH 14', '#21c66f']];
-var TA_LIST = [['trend', 'ta_trend'], ['sr', 'ta_sr'], ['fib', 'ta_fib'], ['pat', 'ta_pat']];
+var IND_LIST = [['sma20', 'SMA 20', '#a78bfa'], ['sma50', 'SMA 50', '#6ea8ff'], ['sma200', 'SMA 200', '#f2cc60'], ['ema20', 'EMA 20', '#56c1d6'],
+  ['boll', 'BOLL 20,2', '#8b95a7'], ['vwap', 'VWAP', '#ff7ab6'], ['vol', 'VOL', '#4b5563'], ['rsi', 'RSI 14', '#e0b23c'], ['macd', 'MACD', '#6ea8ff'], ['stoch', 'STOCH 14', '#2fbf71']];
+var TA_LIST = [['trend', 'ta_trend'], ['sr', 'ta_sr'], ['fib', 'ta_fib'], ['pat', 'ta_pat'], ['gex', 'ta_gex']];
 var RANGES = ['1d', '5d', '1m', '3m', '6m', 'ytd', '1y', '2y', '5y'];
 
 F.tabs($('tech-tabs'), 't', function(t){ tc.tab = t; renderTech() });
@@ -237,7 +237,17 @@ function drawTech(box, h){
   if (F.canvases().indexOf(wrap) < 0) F.canvases().push(wrap);
   paintChart(wrap, h, A);
   summary(box, h, A);
+  if (tc.ta.gex && window.OPTX) {
+    var sym = tc.sym;
+    OPTX.levels(sym).then(function(G){
+      if (sym !== tc.sym || !document.body.contains(wrap)) return;
+      if (!G) { var nt = box.querySelector('.tc-gexnote') || el('div', 'note tc-gexnote'); nt.textContent = TX('ta_gex_none', OPTX.ALL.join(', ')); box.appendChild(nt); return }
+      A.gex = G; paintChart(wrap, h, A);
+    });
+  }
 }
+// LVL → "on the chart": the symbol with the option levels switched on (exported with the rest at the end)
+function showGex(sym){ tc.ta.gex = 1; openTech('TECH', sym, {range: tc.range === '1d' ? '5d' : tc.range}) }
 function analyse(h){
   var c = h.c, o = h.o.map(function(x, i){ return x == null ? c[i] : x }), hi = h.h.map(function(x, i){ return x == null ? c[i] : x }), lo = h.l.map(function(x, i){ return x == null ? c[i] : x });
   var n = c.length, k = n > 300 ? 6 : n > 120 ? 4 : 3, pv = pivots(hi, lo, k), intraday = tc.range === '1d' || tc.range === '5d';
@@ -270,48 +280,58 @@ function paintChart(wrap, h, A){
   g.font = '11px ' + font; g.textBaseline = 'middle';
   // grid and the price axis
   var dgt = Math.abs(hi) >= 1000 ? 0 : Math.abs(hi) >= 10 ? 2 : 4;
-  for (var k = 0; k <= 5; k++) { var v = lo + (hi - lo) * k / 5, y = Y(v); g.strokeStyle = 'rgba(255,255,255,0.05)'; g.beginPath(); g.moveTo(L, y); g.lineTo(W - R, y); g.stroke(); g.fillStyle = '#5a5a5a'; g.fillText(fmt(v, dgt), W - R + 6, y) }
+  for (var k = 0; k <= 5; k++) { var v = lo + (hi - lo) * k / 5, y = Y(v); g.strokeStyle = 'rgba(255,255,255,0.05)'; g.beginPath(); g.moveTo(L, y); g.lineTo(W - R, y); g.stroke(); g.fillStyle = '#5d6778'; g.fillText(fmt(v, dgt), W - R + 6, y) }
   // time axis
   var step = Math.max(1, Math.round(n / Math.max(2, Math.floor((W - L - R) / 90)))), longSpan = (h.t[n - 1] - h.t[0]) > 300 * 86400;
-  g.fillStyle = '#5a5a5a'; g.textAlign = 'center';
+  g.fillStyle = '#5d6778'; g.textAlign = 'center';
   for (var j = step; j < n; j += step) { g.fillText(tlabel(h.t[j], A.intraday, longSpan), X(j), H - B / 2); g.strokeStyle = 'rgba(255,255,255,0.03)'; g.beginPath(); g.moveTo(X(j), TOP); g.lineTo(X(j), H - B); g.stroke() }
   g.textAlign = 'left';
   // volume at the bottom of the price pane
   if (tc.ind.vol && A.v.length) {
     var vmax = Math.max.apply(null, A.v.map(function(x){ return x || 0 })) || 1;
-    for (var vi = 0; vi < n; vi++) { var vh = (A.v[vi] || 0) / vmax * mainH * 0.2; g.fillStyle = A.c[vi] >= A.o[vi] ? 'rgba(33,198,111,0.28)' : 'rgba(255,75,75,0.28)'; g.fillRect(X(vi) - Math.max(0.5, bw * 0.35), TOP + mainH - vh, Math.max(1, bw * 0.7), vh) }
+    for (var vi = 0; vi < n; vi++) { var vh = (A.v[vi] || 0) / vmax * mainH * 0.2; g.fillStyle = A.c[vi] >= A.o[vi] ? 'rgba(47,191,113,0.28)' : 'rgba(239,83,80,0.28)'; g.fillRect(X(vi) - Math.max(0.5, bw * 0.35), TOP + mainH - vh, Math.max(1, bw * 0.7), vh) }
   }
   // Bollinger band
   if (tc.ind.boll) {
     g.beginPath(); var started = false;
     A.boll.up.forEach(function(v, i){ if (v == null) return; if (!started) { g.moveTo(X(i), Y(v)); started = true } else g.lineTo(X(i), Y(v)) });
     for (var bi = n - 1; bi >= 0; bi--) if (A.boll.lo[bi] != null) g.lineTo(X(bi), Y(A.boll.lo[bi]));
-    g.closePath(); g.fillStyle = 'rgba(140,140,140,0.08)'; g.fill();
-    line(g, A.boll.up, X, Y, '#6a6a6a', 1); line(g, A.boll.lo, X, Y, '#6a6a6a', 1); line(g, A.boll.mid, X, Y, '#6a6a6a', 1, [3, 3]);
+    g.closePath(); g.fillStyle = 'rgba(139,149,167,0.08)'; g.fill();
+    line(g, A.boll.up, X, Y, '#6b7585', 1); line(g, A.boll.lo, X, Y, '#6b7585', 1); line(g, A.boll.mid, X, Y, '#6b7585', 1, [3, 3]);
   }
   // Fibonacci
   if (tc.ta.fib) {
     A.fib.levels.forEach(function(L_){
-      var y = Y(L_.p); g.strokeStyle = 'rgba(199,125,255,0.45)'; g.setLineDash([2, 4]); g.beginPath(); g.moveTo(L, y); g.lineTo(W - R, y); g.stroke(); g.setLineDash([]);
-      g.fillStyle = '#c77dff'; g.fillText(fmt(L_.f * 100, 1) + '%  ' + fmt(L_.p, dgt), L + 4, y - 7);
+      var y = Y(L_.p); g.strokeStyle = 'rgba(167,139,250,0.45)'; g.setLineDash([2, 4]); g.beginPath(); g.moveTo(L, y); g.lineTo(W - R, y); g.stroke(); g.setLineDash([]);
+      g.fillStyle = '#a78bfa'; g.fillText(fmt(L_.f * 100, 1) + '%  ' + fmt(L_.p, dgt), L + 4, y - 7);
     });
   }
   // support and resistance
   if (tc.ta.sr) {
     A.lv.sup.concat(A.lv.res).forEach(function(s){
       var sup = A.lv.sup.indexOf(s) >= 0, y = Y(s.p);
-      g.strokeStyle = sup ? 'rgba(33,198,111,0.6)' : 'rgba(255,75,75,0.6)'; g.setLineDash([6, 4]); g.beginPath(); g.moveTo(L, y); g.lineTo(W - R, y); g.stroke(); g.setLineDash([]);
-      g.fillStyle = sup ? '#21c66f' : '#ff4b4b'; g.fillRect(W - R + 1, y - 7, R - 2, 14); g.fillStyle = '#000'; g.fillText(fmt(s.p, dgt), W - R + 5, y);
+      g.strokeStyle = sup ? 'rgba(47,191,113,0.6)' : 'rgba(239,83,80,0.6)'; g.setLineDash([6, 4]); g.beginPath(); g.moveTo(L, y); g.lineTo(W - R, y); g.stroke(); g.setLineDash([]);
+      g.fillStyle = sup ? '#2fbf71' : '#ef5350'; g.fillRect(W - R + 1, y - 7, R - 2, 14); g.fillStyle = '#000'; g.fillText(fmt(s.p, dgt), W - R + 5, y);
+    });
+  }
+  // option levels: the gamma flip, the call and put walls, ±1σ for a day (opt.js, the bot's gex files)
+  if (tc.ta.gex && A.gex) {
+    var G = A.gex, lastP = A.c[n - 1];
+    [[G.zero, TX('gex_flip'), '#d9a441', [6, 4]], [G.cwall, TX('gex_cwall'), '#3fb68b', [2, 3]], [G.pwall, TX('gex_pwall'), '#e5534b', [2, 3]],
+     [G.d1 ? lastP + G.d1 : null, '+1σ', '#8b94a3', [1, 4]], [G.d1 ? lastP - G.d1 : null, '−1σ', '#8b94a3', [1, 4]]].forEach(function(x){
+      if (x[0] == null || x[0] < lo || x[0] > hi) return;
+      var y = Y(x[0]); g.strokeStyle = x[2]; g.setLineDash(x[3]); g.beginPath(); g.moveTo(L, y); g.lineTo(W - R, y); g.stroke(); g.setLineDash([]);
+      g.fillStyle = x[2]; g.fillText(x[1] + ' ' + fmt(x[0], dgt), L + 4, y - 7);
     });
   }
   // price
   if (tc.style === 'line') {
     var up = A.c[n - 1] >= A.c[0];
-    g.beginPath(); A.c.forEach(function(v, i){ i ? g.lineTo(X(i), Y(v)) : g.moveTo(X(i), Y(v)) }); g.strokeStyle = up ? '#21c66f' : '#ff4b4b'; g.lineWidth = 1.6; g.stroke(); g.lineWidth = 1;
+    g.beginPath(); A.c.forEach(function(v, i){ i ? g.lineTo(X(i), Y(v)) : g.moveTo(X(i), Y(v)) }); g.strokeStyle = up ? '#2fbf71' : '#ef5350'; g.lineWidth = 1.6; g.stroke(); g.lineWidth = 1;
   } else {
     var cw = Math.max(1, Math.min(14, bw * 0.7));
     for (var ci = 0; ci < n; ci++) {
-      var x = X(ci), o = A.o[ci], c = A.c[ci], upb = c >= o, col = upb ? '#21c66f' : '#ff4b4b';
+      var x = X(ci), o = A.o[ci], c = A.c[ci], upb = c >= o, col = upb ? '#2fbf71' : '#ef5350';
       g.strokeStyle = col; g.fillStyle = col;
       if (tc.style === 'bar') {
         g.beginPath(); g.moveTo(x, Y(A.h[ci])); g.lineTo(x, Y(A.l[ci])); g.moveTo(x - cw / 2, Y(o)); g.lineTo(x, Y(o)); g.moveTo(x, Y(c)); g.lineTo(x + cw / 2, Y(c)); g.stroke();
@@ -326,44 +346,44 @@ function paintChart(wrap, h, A){
   // trend lines
   if (tc.ta.trend) A.tl.forEach(function(t){
     var y1 = Y(t.p1), y2 = Y(t.p1 + t.slope * (n - 1 - t.i1));
-    g.strokeStyle = t.kind === 'sup' ? '#21c66f' : '#ff4b4b'; g.lineWidth = 1.4; g.beginPath(); g.moveTo(X(t.i1), y1); g.lineTo(X(n - 1), y2); g.stroke(); g.lineWidth = 1;
+    g.strokeStyle = t.kind === 'sup' ? '#2fbf71' : '#ef5350'; g.lineWidth = 1.4; g.beginPath(); g.moveTo(X(t.i1), y1); g.lineTo(X(n - 1), y2); g.stroke(); g.lineWidth = 1;
   });
   // patterns
   if (tc.ta.pat) {
     A.cdl.forEach(function(p){
       var x = X(p.i), up = p.dir > 0, y = up ? Y(A.l[p.i]) + 10 : Y(A.h[p.i]) - 10;
-      g.fillStyle = p.dir > 0 ? '#21c66f' : p.dir < 0 ? '#ff4b4b' : '#8c8c8c'; g.textAlign = 'center';
+      g.fillStyle = p.dir > 0 ? '#2fbf71' : p.dir < 0 ? '#ef5350' : '#8b95a7'; g.textAlign = 'center';
       g.fillText(p.dir > 0 ? '▲' : p.dir < 0 ? '▼' : '◆', x, y); g.textAlign = 'left';
     });
     A.dbl.forEach(function(d){
-      g.strokeStyle = d.dir > 0 ? '#21c66f' : '#ff4b4b'; g.setLineDash([2, 2]); g.beginPath(); g.moveTo(X(d.i1), Y(d.neck)); g.lineTo(X(n - 1), Y(d.neck)); g.stroke(); g.setLineDash([]);
+      g.strokeStyle = d.dir > 0 ? '#2fbf71' : '#ef5350'; g.setLineDash([2, 2]); g.beginPath(); g.moveTo(X(d.i1), Y(d.neck)); g.lineTo(X(n - 1), Y(d.neck)); g.stroke(); g.setLineDash([]);
       g.fillStyle = g.strokeStyle; g.fillText(TX('pat_' + d.k) + ' · ' + TX('neck') + ' ' + fmt(d.neck, dgt), X(d.i2) + 6, Y(d.p) + (d.dir > 0 ? 12 : -12));
     });
   }
   // the last price
-  var last = A.c[n - 1], ly = Y(last), lcol = last >= A.o[n - 1] ? '#21c66f' : '#ff4b4b';
+  var last = A.c[n - 1], ly = Y(last), lcol = last >= A.o[n - 1] ? '#2fbf71' : '#ef5350';
   g.fillStyle = lcol; g.fillRect(W - R + 1, ly - 8, R - 2, 16); g.fillStyle = '#000'; g.fillText(fmt(last, dgt), W - R + 5, ly);
   // lower panes
   lower.forEach(function(k, pi){
     var top = TOP + mainH + pi * paneH + 4, ph = paneH - 6;
-    g.strokeStyle = '#1c1c1c'; g.beginPath(); g.moveTo(L, top - 2); g.lineTo(W - R, top - 2); g.stroke();
+    g.strokeStyle = '#222a35'; g.beginPath(); g.moveTo(L, top - 2); g.lineTo(W - R, top - 2); g.stroke();
     var vals = k === 'rsi' ? [A.rsi] : k === 'stoch' ? [A.stoch.k, A.stoch.d] : [A.macd.line, A.macd.sig];
     var plo = k === 'macd' ? Infinity : 0, phi = k === 'macd' ? -Infinity : 100;
     if (k === 'macd') A.macd.line.concat(A.macd.sig, A.macd.hist).forEach(function(v){ if (v != null) { plo = Math.min(plo, v); phi = Math.max(phi, v) } });
     if (!(phi > plo)) { plo = -1; phi = 1 }
     var PY = function(v){ return top + (phi - v) / (phi - plo) * ph };
-    if (k !== 'macd') [k === 'rsi' ? 30 : 20, k === 'rsi' ? 70 : 80].forEach(function(lv){ g.strokeStyle = 'rgba(255,255,255,0.08)'; g.setLineDash([3, 3]); g.beginPath(); g.moveTo(L, PY(lv)); g.lineTo(W - R, PY(lv)); g.stroke(); g.setLineDash([]); g.fillStyle = '#4a4a4a'; g.fillText(lv, W - R + 6, PY(lv)) });
-    else { A.macd.hist.forEach(function(v, i){ if (v == null) return; g.fillStyle = v >= 0 ? 'rgba(33,198,111,0.5)' : 'rgba(255,75,75,0.5)'; var y0 = PY(0), y1_ = PY(v); g.fillRect(X(i) - Math.max(0.5, bw * 0.3), Math.min(y0, y1_), Math.max(1, bw * 0.6), Math.abs(y1_ - y0)) }) }
-    var colsK = k === 'rsi' ? ['#ffa028'] : k === 'stoch' ? ['#21c66f', '#ff4b4b'] : ['#4fa3ff', '#ffa028'];
+    if (k !== 'macd') [k === 'rsi' ? 30 : 20, k === 'rsi' ? 70 : 80].forEach(function(lv){ g.strokeStyle = 'rgba(255,255,255,0.08)'; g.setLineDash([3, 3]); g.beginPath(); g.moveTo(L, PY(lv)); g.lineTo(W - R, PY(lv)); g.stroke(); g.setLineDash([]); g.fillStyle = '#4b5563'; g.fillText(lv, W - R + 6, PY(lv)) });
+    else { A.macd.hist.forEach(function(v, i){ if (v == null) return; g.fillStyle = v >= 0 ? 'rgba(47,191,113,0.5)' : 'rgba(239,83,80,0.5)'; var y0 = PY(0), y1_ = PY(v); g.fillRect(X(i) - Math.max(0.5, bw * 0.3), Math.min(y0, y1_), Math.max(1, bw * 0.6), Math.abs(y1_ - y0)) }) }
+    var colsK = k === 'rsi' ? ['#e0b23c'] : k === 'stoch' ? ['#2fbf71', '#ef5350'] : ['#6ea8ff', '#e0b23c'];
     vals.forEach(function(a, ai){ line(g, a, X, PY, colsK[ai], 1.2) });
     var lastV = vals[0][n - 1];
-    g.fillStyle = '#8c8c8c'; g.fillText(IND_LIST.filter(function(x){ return x[0] === k })[0][1] + (lastV != null ? '  ' + fmt(lastV, k === 'macd' ? (Math.abs(lastV) < 1 ? 3 : 2) : 1) : ''), L + 4, top + 7);
+    g.fillStyle = '#8b95a7'; g.fillText(IND_LIST.filter(function(x){ return x[0] === k })[0][1] + (lastV != null ? '  ' + fmt(lastV, k === 'macd' ? (Math.abs(lastV) < 1 ? 3 : 2) : 1) : ''), L + 4, top + 7);
   });
   // legend: name and change over the period
   var ch = (A.c[n - 1] / A.c[0] - 1) * 100;
-  g.fillStyle = '#e6e6e6'; g.fillText((h.name || tc.sym) + '  ' + fmt(last, dgt), L + 4, 9);
+  g.fillStyle = '#e6eaf0'; g.fillText((h.name || tc.sym) + '  ' + fmt(last, dgt), L + 4, 9);
   var tw = g.measureText((h.name || tc.sym) + '  ' + fmt(last, dgt) + '  ').width;
-  g.fillStyle = ch >= 0 ? '#21c66f' : '#ff4b4b'; g.fillText(pct(ch) + ' ' + tc.range.toUpperCase(), L + 4 + tw, 9);
+  g.fillStyle = ch >= 0 ? '#2fbf71' : '#ef5350'; g.fillText(pct(ch) + ' ' + tc.range.toUpperCase(), L + 4 + tw, 9);
   var lx = L + 4 + tw + g.measureText(pct(ch) + ' ' + tc.range.toUpperCase() + '   ').width;
   IND_LIST.forEach(function(x){ if (tc.ind[x[0]] && /^(sma|ema|vwap|boll)/.test(x[0])) { g.fillStyle = x[2]; g.fillText(x[1], lx, 9); lx += g.measureText(x[1] + '  ').width } });
   // crosshair
@@ -383,8 +403,8 @@ function paintCross(wrap, cv, g, dpr, h, A, i, x, y, TOP, mainH, Y, lo, hi, W, H
   var o = wrap.querySelector('.tc-x');
   if (!o) { o = el('canvas', 'tc-x'); o.width = cv.width; o.height = cv.height; o.style.pointerEvents = 'none'; wrap.appendChild(o) }
   var c = o.getContext('2d'); c.setTransform(dpr, 0, 0, dpr, 0, 0); c.clearRect(0, 0, W, H);
-  c.strokeStyle = 'rgba(255,212,0,0.35)'; c.setLineDash([3, 3]); c.beginPath(); c.moveTo(x, TOP); c.lineTo(x, H - B); c.moveTo(6, y); c.lineTo(W - R, y); c.stroke(); c.setLineDash([]);
-  if (y >= TOP && y <= TOP + mainH) { var v = hi - (y - TOP) / mainH * (hi - lo); c.fillStyle = '#ffd400'; c.fillRect(W - R + 1, y - 8, R - 2, 16); c.fillStyle = '#000'; c.font = '11px ' + getComputedStyle(document.body).fontFamily; c.textBaseline = 'middle'; c.fillText(fmt(v, dgt), W - R + 5, y) }
+  c.strokeStyle = 'rgba(224,178,60,0.35)'; c.setLineDash([3, 3]); c.beginPath(); c.moveTo(x, TOP); c.lineTo(x, H - B); c.moveTo(6, y); c.lineTo(W - R, y); c.stroke(); c.setLineDash([]);
+  if (y >= TOP && y <= TOP + mainH) { var v = hi - (y - TOP) / mainH * (hi - lo); c.fillStyle = '#f2cc60'; c.fillRect(W - R + 1, y - 8, R - 2, 16); c.fillStyle = '#000'; c.font = '11px ' + getComputedStyle(document.body).fontFamily; c.textBaseline = 'middle'; c.fillText(fmt(v, dgt), W - R + 5, y) }
   var tip = $('tm-tip'); clear(tip);
   tip.appendChild(el('b', null, tlabel(h.t[i], A.intraday, true)));
   [['O', A.o[i]], ['H', A.h[i]], ['L', A.l[i]], ['C', A.c[i]]].forEach(function(p){ tip.appendChild(el('div', null, p[0] + ' ' + fmt(p[1], dgt))) });
@@ -465,13 +485,13 @@ function drawVap(box, h){
     var vmax = poc.v, L = 70, R = 10, bh = (H - 10) / NB;
     bins.forEach(function(x, i){
       var y = H - 5 - (i + 1) * bh, w = x.v / vmax * (W - L - R), inVA = i >= a1 && i <= a2;
-      g.fillStyle = i === pi ? '#ffd400' : inVA ? 'rgba(33,198,111,0.8)' : 'rgba(33,198,111,0.35)'; g.fillRect(L, y + 1, w * (x.up / (x.v || 1)), bh - 2);
-      g.fillStyle = i === pi ? '#d9b400' : inVA ? 'rgba(255,75,75,0.65)' : 'rgba(255,75,75,0.3)'; g.fillRect(L + w * (x.up / (x.v || 1)), y + 1, w * (1 - x.up / (x.v || 1)), bh - 2);
-      if (i % Math.ceil(NB / 10) === 0) { g.fillStyle = '#5a5a5a'; g.fillText(fmt((x.lo + x.hi) / 2, dgt), 4, y + bh / 2) }
+      g.fillStyle = i === pi ? '#f2cc60' : inVA ? 'rgba(47,191,113,0.8)' : 'rgba(47,191,113,0.35)'; g.fillRect(L, y + 1, w * (x.up / (x.v || 1)), bh - 2);
+      g.fillStyle = i === pi ? '#d9b400' : inVA ? 'rgba(239,83,80,0.65)' : 'rgba(239,83,80,0.3)'; g.fillRect(L + w * (x.up / (x.v || 1)), y + 1, w * (1 - x.up / (x.v || 1)), bh - 2);
+      if (i % Math.ceil(NB / 10) === 0) { g.fillStyle = '#5d6778'; g.fillText(fmt((x.lo + x.hi) / 2, dgt), 4, y + bh / 2) }
     });
     var yv = H - 5 - (vw - lo) / (hi - lo) * (H - 10), yl = H - 5 - (last - lo) / (hi - lo) * (H - 10);
     g.strokeStyle = '#ff7ab6'; g.setLineDash([4, 3]); g.beginPath(); g.moveTo(L, yv); g.lineTo(W - R, yv); g.stroke(); g.fillStyle = '#ff7ab6'; g.fillText('VWAP', W - R - 40, yv - 8);
-    g.strokeStyle = '#e6e6e6'; g.beginPath(); g.moveTo(L, yl); g.lineTo(W - R, yl); g.stroke(); g.setLineDash([]); g.fillStyle = '#e6e6e6'; g.fillText(TX('vap_last'), W - R - 40, yl + 8);
+    g.strokeStyle = '#e6eaf0'; g.beginPath(); g.moveTo(L, yl); g.lineTo(W - R, yl); g.stroke(); g.setLineDash([]); g.fillStyle = '#e6eaf0'; g.fillText(TX('vap_last'), W - R - 40, yl + 8);
   };
   wrap.__draw = paint; if (F.canvases().indexOf(wrap) < 0) F.canvases().push(wrap); paint();
   box.appendChild(el('div', 'note', TX('vap_note')));
@@ -581,7 +601,7 @@ function drawTra(box, h){
       [TX('tra_ann'), yrs >= 0.95 ? pct((Math.pow(tr[n - 1] / c[0], 1 / yrs) - 1) * 100) : '—'], [TX('tra_from'), tlabel(t0, false, true)]].forEach(function(x){ var s = el('span', null, x[0] + ': '); s.appendChild(el('b', /%/.test(x[1]) ? cls(parseFloat(x[1].replace(',', '.'))) : null, x[1])); st.appendChild(s) });
     box.appendChild(st);
     var wrap = el('div', 'cv'); box.appendChild(wrap);
-    F.drawLines(wrap, [{name: TX('tra_total_l'), color: '#ffa028', t: h.t, v: tr}, {name: TX('tra_price_l'), color: '#4fa3ff', t: h.t, v: c}], {pct: true, intraday: false});
+    F.drawLines(wrap, [{name: TX('tra_total_l'), color: '#e0b23c', t: h.t, v: tr}, {name: TX('tra_price_l'), color: '#6ea8ff', t: h.t, v: c}], {pct: true, intraday: false});
     box.appendChild(el('div', 'note', TX(ev.length ? 'tra_note' : F.isStock(tc.sym) ? 'tra_nodiv' : 'tra_index')));
   });
 }
@@ -672,8 +692,8 @@ F.DES_TABS.GE = function(box, d){
     box.appendChild(st);
     var wrap = el('div', 'cv'); wrap.style.minHeight = '220px'; box.appendChild(wrap);
     var tt = pts.map(function(p){ return p.t });
-    F.drawLines(wrap, [{name: 'P/E', color: '#ffa028', t: tt, v: vals}, {name: TX('ge_avg'), color: '#8c8c8c', t: tt, v: vals.map(function(){ return avg })},
-      {name: '+1σ', color: '#4a4a4a', t: tt, v: vals.map(function(){ return avg + sd }), dash: [4, 4]}, {name: '−1σ', color: '#4a4a4a', t: tt, v: vals.map(function(){ return avg - sd }), dash: [4, 4]}], {legend: true});
+    F.drawLines(wrap, [{name: 'P/E', color: '#e0b23c', t: tt, v: vals}, {name: TX('ge_avg'), color: '#8b95a7', t: tt, v: vals.map(function(){ return avg })},
+      {name: '+1σ', color: '#4b5563', t: tt, v: vals.map(function(){ return avg + sd }), dash: [4, 4]}, {name: '−1σ', color: '#4b5563', t: tt, v: vals.map(function(){ return avg - sd }), dash: [4, 4]}], {legend: true});
     box.appendChild(el('div', 'note', TX('ge_note')));
   }).catch(function(e){ if (!box.contains(note)) return; note.remove(); F.errBox(box, e) });
 };
@@ -737,5 +757,5 @@ C.TRAY = function(arg){ var p = String(arg || '').trim().split(/[\s,]+/).filter(
 ['GE', 'CACS', 'CRPR'].forEach(function(k){ C[k] = function(arg){ F.openDes(arg, k) }; T.SUFFIX[k] = 1 });
 C['P/E'] = C.GE;
 
-window.TECH = {open: openTech, analyse: analyse, ind: {ema: ema, macd: macd, stoch: stoch, atr: atr, boll: boll, vwap: vwap}, returnsFrom: returnsFrom, candles: candles, fibo: fibo, state: tc};
+window.TECH = {open: openTech, showGex: showGex, analyse: analyse, ind: {ema: ema, macd: macd, stoch: stoch, atr: atr, boll: boll, vwap: vwap}, returnsFrom: returnsFrom, candles: candles, fibo: fibo, state: tc};
 })();
