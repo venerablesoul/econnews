@@ -1018,6 +1018,43 @@ await test("/api/geo: only the listed sources, JSON passed through; /api/perf: r
   assert.ok(perf.json.rows.find((x) => x.s === "ZZZZ!!").error);
 });
 
+await test("terminal service worker: every file is checked with the server, never a 10-minute-old browser copy", async () => {
+  const vm = await import("node:vm");
+  const fs = await import("node:fs");
+  const src = fs.readFileSync(new URL("../docs/terminal/sw.js", import.meta.url), "utf8");
+  const handlers = {}, fetched = [], stored = new Map(), added = [];
+  const cache = { put: async (r, res) => { stored.set(r.url, res); }, addAll: async (reqs) => { added.push(...reqs); } };
+  const sandbox = {
+    self: { addEventListener: (t, f) => { handlers[t] = f; }, registration: { scope: "https://x.github.io/econnews/terminal/" },
+            skipWaiting: () => {}, clients: { claim: () => {} } },
+    location: new URL("https://x.github.io/econnews/terminal/sw.js"),
+    caches: { open: async () => cache, keys: async () => [], delete: async () => true,
+              match: async (r) => stored.get(typeof r === "string" ? r : r.url) },
+    fetch: async (r) => { fetched.push(r); return new Response("new", { status: 200 }); },
+    // in a real service worker "./" is resolved against the worker's own address
+    Request: class extends Request { constructor(u, o) { super(typeof u === "string" ? new URL(u, "https://x.github.io/econnews/terminal/sw.js").href : u, o); } },
+    Response, URL, Promise, setTimeout, clearTimeout,
+  };
+  vm.runInNewContext(src, sandbox);
+  let waits = [];
+  await handlers.install({ waitUntil: (p) => waits.push(p) });
+  await Promise.all(waits);
+  assert.ok(added.length >= 10 && added.every((r) => r.cache === "reload"), "the shell is cached straight from the server");
+  for (const [url, mode] of [["https://x.github.io/econnews/terminal/i18n.js", "no-cors"],
+                             ["https://x.github.io/econnews/terminal/?lang=zh", "navigate"]]) {
+    fetched.length = 0;
+    let answer = null;
+    const req = { method: "GET", url, mode, headers: new Headers(), clone() { return this; } };
+    // a navigation request cannot be built in Node: a plain object with the same fields stands in for both
+    handlers.fetch({ request: mode === "navigate" ? req : new Request(url), respondWith: (p) => { answer = p; }, waitUntil: () => {} });
+    const res = await answer;
+    assert.equal(await res.text(), "new");
+    assert.equal(fetched.length, 1);
+    assert.equal(fetched[0].cache, "no-cache", url);
+    assert.equal(fetched[0].url, url);
+  }
+});
+
 await test("the root address answers", async () => {
   const r = await api("/");
   assert.equal(r.json.ok, true);
