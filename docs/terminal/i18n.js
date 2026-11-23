@@ -581,8 +581,15 @@ var D = {
   sp_live: function(n, ch){ return RU ? 'сейчас: ' + n + ' танкеров/день (' + ch + ' к 30 дням)' : 'now: ' + n + ' tankers/day (' + ch + ' vs 30 days)' },
   sp_side: ['CHOKEPOINTS · MB/D', 'ПРОЛИВЫ · МЛН БАРР./СУТ'],
   sp_live_s: function(n, ch){ return RU ? 'сейчас ' + n + ' танк./день ' + ch : 'now ' + n + ' tankers/day ' + ch },
-  sp_note: ['Crude oil and products through each chokepoint, million barrels a day by quarter (EIA). Red — at least 15% lower than in 4Q25, yellow — higher. Live: tankers a day, the last 7 days against the 30 before (IMF PortWatch, satellite AIS; a few days behind). EIA warns that Hormuz figures may be revised: AIS signals there have been unreliable since February 2026. Routes are the main ones, simplified. Click a node to follow its routes.',
-    'Нефть и нефтепродукты через каждый пролив, млн баррелей в сутки по кварталам (EIA). Красный — на 15%+ ниже, чем в 4 кв. 2025, жёлтый — выше. Онлайн: танкеров в день за последние 7 дней против 30 до них (IMF PortWatch, спутниковый AIS; отставание в несколько дней). EIA предупреждает, что цифры по Ормузу могут пересматриваться: AIS-сигналы там ненадёжны с февраля 2026. Маршруты — основные, упрощённо. Нажмите на узел, чтобы выделить его маршруты.'],
+  sp_note: function(base){
+    var q = function(x){ return RU ? x[0] + ' кв. 20' + x.slice(2) : x };
+    return RU ? 'Нефть и нефтепродукты через каждый пролив, млн баррелей в сутки по кварталам (EIA; бот обновляет цифры сам, когда EIA публикует новые). '
+      + (base ? 'Красный — на 15%+ ниже, чем в ' + q(base) + ', жёлтый — выше. ' : '')
+      + 'Онлайн: танкеров в день за последние 7 дней против 30 до них (IMF PortWatch, спутниковый AIS; отставание в несколько дней). EIA предупреждает, что цифры по Ормузу могут пересматриваться: AIS-сигналы там ненадёжны с февраля 2026. Маршруты — основные, упрощённо. Нажмите на узел, чтобы выделить его маршруты.'
+      : 'Crude oil and products through each chokepoint, million barrels a day by quarter (EIA; the bot picks up new figures when EIA publishes them). '
+      + (base ? 'Red — at least 15% lower than in ' + q(base) + ', yellow — higher. ' : '')
+      + 'Live: tankers a day, the last 7 days against the 30 before (IMF PortWatch, satellite AIS; a few days behind). EIA warns that Hormuz figures may be revised: AIS signals there have been unreliable since February 2026. Routes are the main ones, simplified. Click a node to follow its routes.';
+  },
   gm_gas_field: ['Natural gas field', 'Газовое месторождение'], gm_gas_storage: ['Underground gas storage', 'Подземное хранилище газа'],
   gm_oil_port: ['Oil port (most calls by tankers)', 'Нефтяной порт (больше всего заходов танкеров)'],
   gm_tanker_calls: function(n){ return (RU ? 'заходов танкеров (PortWatch): ' : 'tanker calls (PortWatch): ') + n },
@@ -693,6 +700,7 @@ var D = {
   gex_hist_note: ['Interval map: a circle for each strike at each snapshot — green positive, red negative gamma, size = how much. The history starts when the bot began keeping it.', 'Интервальная карта: круг на каждый страйк в каждом снимке — зелёный положительная, красный отрицательная гамма, размер — сколько. История начинается с момента, когда бот стал её вести.'],
   ta_gex: ['OPTION LEVELS', 'ОПЦ. УРОВНИ'],
   ta_gex_none: function(l){ return RU ? 'Опционные уровни есть для: ' + l : 'Option levels exist for: ' + l },
+  ta_gex_far: function(s){ return RU ? 'Опционные уровни ' + s + ' не подходят к ценам этого графика' : 'The option levels of ' + s + ' do not fit the prices of this chart' },
 
   // crypto order flow (flow.js)
   p_flow: ['ORDER FLOW', 'ПОТОК ОРДЕРОВ'], fn_flow: ['Crypto order flow: heatmap, DOM, footprint, CVD', 'Поток ордеров крипты: теплокарта, стакан, кластеры, CVD'],

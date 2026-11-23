@@ -996,10 +996,31 @@ class TankersAis(unittest.TestCase):
         rec = ships["538001234"]
         self.assertEqual((rec["name"], rec["type"], rec["dest"], rec["area"], rec["sog"], rec["cog"]), ("OCEAN STAR", 80, "FUJAIRAH", "hormuz", 12.4, 301))
         self.assertTrue(got[1][1].startswith(b"\x8a"))               # the pong, opcode 10
-        out = ais.merge({"types": {"538009999": 84}, "ships": [{"mmsi": 538009999, "lat": 1.2, "lon": 103.8, "t": "2026-11-23T00:00:00+00:00", "area": "malacca"}]}, ships, now)
+        out = ais.merge({"tk": {"2026-11-22": [538009999]}, "ships": [{"mmsi": 538009999, "lat": 1.2, "lon": 103.8, "t": "2026-11-23T00:00:00+00:00", "area": "malacca"}]}, ships, now)
         self.assertEqual([s["mmsi"] for s in out["ships"]], [538001234])   # the other one is older than 12 h
         self.assertEqual({a["id"]: a["tankers"] for a in out["areas"]}["hormuz"], 1)
-        self.assertEqual(out["types"]["538001234"], 80)
+        self.assertEqual(out["tk"], {"2026-11-23": [538001234, 538009999]})   # both are tankers seen today
+
+    def test_tankers_remembered_for_a_week_only(self):
+        import ais
+        now = datetime(2026, 11, 23, 13, tzinfo=timezone.utc)
+        t = now.isoformat()
+        new = {"111111111": {"mmsi": 111111111, "lat": 26.4, "lon": 56.2, "t": t, "area": "hormuz"},          # no type now: known tanker
+               "222222222": {"mmsi": 222222222, "lat": 26.3, "lon": 56.1, "t": t, "area": "hormuz", "type": 70},  # cargo: not kept
+               "333333333": {"mmsi": 333333333, "lat": 26.2, "lon": 56.0, "t": t, "area": "hormuz"}}            # type unknown: not shown
+        old = {"tk": {"2026-11-20": [111111111], "2026-11-14": [444444444], "2026-11-18": [555555555]}}
+        out = ais.merge(old, new, now)
+        self.assertEqual([s["mmsi"] for s in out["ships"]], [111111111])
+        self.assertEqual(out["tk"], {"2026-11-18": [555555555], "2026-11-23": [111111111]})   # 444… was last seen 9 days ago
+        self.assertEqual({a["id"]: (a["tankers"], a["seen_now"]) for a in out["areas"]}["hormuz"], (1, 3))
+        # a week of traffic stays a small file: only tankers are remembered, at most MAX_TANKER_IDS
+        many = {str(100000000 + i): {"mmsi": 100000000 + i, "type": 80 if i % 4 == 0 else 70} for i in range(40000)}
+        out = ais.merge({}, many, now)
+        self.assertEqual(sum(len(v) for v in out["tk"].values()), min(10000, ais.MAX_TANKER_IDS))
+        self.assertLess(len(json.dumps(out)), 120_000)
+        # a remembered tanker whose new static message gives another type is forgotten at once
+        out = ais.merge({"tk": {"2026-11-22": [666666666]}}, {"666666666": {"mmsi": 666666666, "type": 70}}, now)
+        self.assertEqual(out["tk"], {})
 
     def test_build_needs_the_key_and_keeps_it_secret(self):
         import ais
@@ -1016,6 +1037,113 @@ class TankersAis(unittest.TestCase):
                 self.assertEqual(ais.build(now + timedelta(minutes=10), path=path, listen_fn=lambda k, now=None: calls.append(k)), 0)   # fresh
             with open(path) as f:
                 self.assertNotIn("TOPSECRET", f.read())
+
+
+class OilChokepoints(unittest.TestCase):
+    """chokepoints.py: EIA's quarterly chokepoint table read from its page, kept, merged, never replaced by a bad page."""
+    NOW = datetime(2026, 11, 23, 13, tzinfo=timezone.utc)
+
+    def page(self):
+        with open(os.path.join(HERE, "fixtures", "eia_energysecurity.html"), encoding="utf-8") as f:
+            return f.read()
+
+    def test_reads_the_table(self):
+        import chokepoints as c
+        d = c.parse(self.page(), self.NOW)
+        self.assertEqual(d["q"], ["2Q25", "3Q25", "4Q25", "1Q26", "2Q26", "3Q26"])   # the forecast column left out
+        self.assertEqual(d["v"]["hormuz"], [21.1, 21.4, 21.6, 15.0, 5.1, 9.1])         # not the script's 99, not Table 3
+        self.assertEqual(d["v"]["danish"][-1], 4.5)                                     # "Danish Straits a" and its footnote row
+        self.assertEqual(d["v"]["turkish"][0], 3.7)
+        self.assertEqual(sorted(d["v"]), sorted(rid for rid, _ in c.ROWS))
+        self.assertEqual(d["released"], "2026-11-10")   # the label is bold on the page: "<strong>Release Date:</strong> ..."
+        self.assertEqual([c.release_date(x) for x in ("Release Date: October 6, 2026", "<b>Release Date</b>: <span>march 3, 2027</span>", "Next Release: May 5, 2027", "")],
+                         ["2026-10-06", "2027-03-03", None, None])
+        # the map's built-in figures are the same table (the fallback when the bot's file is missing)
+        with open(os.path.join(os.path.dirname(HERE), "docs", "terminal", "map.js"), encoding="utf-8") as f:
+            js = f.read()
+        self.assertIn("var EIA_Q = ['2Q25', '3Q25', '4Q25', '1Q26', '2Q26', '3Q26'];", js)
+        self.assertIn("hormuz: [21.1, 21.4, 21.6, 15.0, 5.1, 9.1]", js)
+
+    def test_two_header_rows_and_other_labels(self):
+        import chokepoints as c
+        names = ["Strait of Malacca", "Strait of Hormuz", "Suez Canal", "Bab el-Mandeb", "Danish Straits", "Turkish Straits", "Panama Canal", "Cape of Good Hope"]
+        rows = "".join(f"<tr><td>{n}</td>" + "".join(f"<td>{i + k / 10:.1f}</td>" for k in range(5)) + "</tr>" for i, n in enumerate(names, 1))
+        page = ("<table><tr><th></th><th colspan='2'>2025</th><th colspan='3'>2026</th></tr>"
+                "<tr><th></th><th>Q3</th><th>Q4</th><th>Q1</th><th>Q2</th><th>Q3</th></tr>" + rows + "</table>")
+        d = c.parse(page, self.NOW)
+        self.assertEqual(d["q"], ["3Q25", "4Q25", "1Q26", "2Q26", "3Q26"])
+        self.assertEqual(d["v"]["cape"], [8.0, 8.1, 8.2, 8.3, 8.4])
+        self.assertEqual([c.quarter(x) for x in ("2Q 2025", "Q2 2025", "2025 Q2", "2Q25", "2Q'25", "2025", "Q2", "")],
+                         ["2Q25", "2Q25", "2Q25", "2Q25", "2Q25", None, None, None])
+
+    def test_a_bad_page_changes_nothing(self):
+        import chokepoints as c
+        good = self.page()
+        bad_pages = {"missing rows": good.replace("Panama Canal", "Canal"),
+                     "cannot be flows": good.replace("<td>23.9</td>", "<td>239</td>"),
+                     "no table": "<html><body>Service unavailable</body></html>"}
+        for why, page in bad_pages.items():
+            with self.subTest(why), self.assertRaises(ValueError) as e:
+                c.parse(page, self.NOW)
+            self.assertIn(why, str(e.exception))
+        with tempfile.TemporaryDirectory() as d:
+            path = os.path.join(d, "chokepoints.json")
+            self.assertEqual(c.build(self.NOW, path=path, fetcher=lambda url: good), 6)
+            with open(path) as f:
+                first = json.load(f)
+            calls = []
+            # EIA changed its page a day later: the error is logged, the figures stay, no new try for a day
+            later = self.NOW + timedelta(hours=21)
+            with self.assertRaises(ValueError):
+                c.build(later, path=path, fetcher=lambda url: (calls.append(url), bad_pages["missing rows"])[1])
+            with open(path) as f:
+                kept = json.load(f)
+            self.assertEqual((kept["q"], kept["v"], kept["updated"]), (first["q"], first["v"], first["updated"]))
+            self.assertIn("missing rows", kept["error"])
+            self.assertEqual(c.build(later + timedelta(hours=2), path=path, fetcher=lambda url: calls.append(url)), 0)
+            self.assertEqual(len(calls), 1)
+            # the network failed: the same
+            def down(url):
+                raise OSError("timed out")
+            with self.assertRaises(OSError):
+                c.build(later + timedelta(days=1), path=path, fetcher=down)
+            with open(path) as f:
+                self.assertEqual(json.load(f)["v"], first["v"])
+
+    def test_new_quarters_and_revisions(self):
+        import chokepoints as c
+        with tempfile.TemporaryDirectory() as d:
+            path = os.path.join(d, "chokepoints.json")
+            # what was kept: 1Q25..4Q25 (1Q25 is older than EIA's table now shows)
+            old_q = ["1Q25", "2Q25", "3Q25", "4Q25"]
+            old = {"q": old_q, "v": {rid: [1.0, 2.0, 3.0, 4.0] for rid, _ in c.ROWS}, "updated": "2026-08-01T00:00:00+00:00",
+                   "checked": "2026-11-01T00:00:00+00:00"}
+            with open(path, "w") as f:
+                json.dump(old, f)
+            n = c.build(self.NOW, path=path, fetcher=lambda url: self.page())
+            with open(path) as f:
+                out = json.load(f)
+            self.assertEqual(out["q"], ["1Q25", "2Q25", "3Q25", "4Q25", "1Q26", "2Q26", "3Q26"])
+            self.assertEqual(out["v"]["hormuz"], [1.0, 21.1, 21.4, 21.6, 15.0, 5.1, 9.1])   # revised quarters replaced
+            self.assertEqual(n, 6)
+            self.assertEqual(out["updated"], self.NOW.isoformat())
+            self.assertNotIn("error", out)
+            # the same table a day later: nothing new, the file says when it was last checked
+            n = c.build(self.NOW + timedelta(days=1), path=path, fetcher=lambda url: self.page())
+            with open(path) as f:
+                again = json.load(f)
+            self.assertEqual((n, again["updated"], again["checked"]), (0, out["updated"], (self.NOW + timedelta(days=1)).isoformat()))
+            # at most KEEP_Q quarters are kept
+            many = {"q": [f"{q}Q{y:02d}" for y in range(10, 25) for q in range(1, 5)], "v": {}}
+            many["v"] = {rid: [1.0] * len(many["q"]) for rid, _ in c.ROWS}
+            merged, _ = c.merge(many, c.parse(self.page(), self.NOW))
+            self.assertEqual(len(merged["q"]), c.KEEP_Q)
+            self.assertEqual(merged["q"][-1], "3Q26")
+            # new figures on a page whose date cannot be read: no date, rather than the date of the older figures
+            newer = self.page().replace("<td>5.1</td><td>9.1</td>", "<td>5.1</td><td>9.3</td>").replace("Release Date:", "Updated:")
+            self.assertEqual(c.build(self.NOW + timedelta(days=3), path=path, fetcher=lambda url: newer), 1)
+            with open(path) as f:
+                self.assertIsNone(json.load(f)["released"])
 
 
 class MacroAndMoex(unittest.TestCase):

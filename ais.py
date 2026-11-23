@@ -31,6 +31,8 @@ EVERY_MIN = 30
 LISTEN_S = 60
 KEEP_H = 12
 MAX_SHIPS = 2000
+TYPE_DAYS = 7             # tankers are remembered for a week after they were last seen
+MAX_TANKER_IDS = 8000
 MAX_FRAME = 1 << 20   # a bigger frame is not AIS — the connection is dropped
 # [south, west, north, east]; aisstream wants [[lat, lon], [lat, lon]]
 AREAS = (
@@ -240,30 +242,60 @@ def listen(api_key, seconds=LISTEN_S, url=URL, connect=WS, now=None):
     return ships, n
 
 
+def is_tanker(t):
+    return isinstance(t, int) and not isinstance(t, bool) and 80 <= t <= 89
+
+
 def merge(old, new, now):
-    """Keeps what was known (a ship's type comes in a rare static message) and positions of the last KEEP_H hours."""
+    """Positions of the last KEEP_H hours, and which ships are tankers. A ship's type comes only in its static message
+    (every few minutes), so the tankers seen in the last week are remembered: {"tk": {day last seen: [mmsi, ...]}}.
+    Only tankers and only one week — the file stays small (the map loads it)."""
     cut = (now - timedelta(hours=KEEP_H)).isoformat()
-    by = {str(s.get("mmsi")): dict(s) for s in old.get("ships") or [] if isinstance(s, dict) and s.get("mmsi")}
-    for k, v in (old.get("types") or {}).items():
-        by.setdefault(k, {"mmsi": int(k)}).setdefault("type", v)
+    today = now.astimezone(timezone.utc).date().isoformat()
+    week = (now - timedelta(days=TYPE_DAYS)).astimezone(timezone.utc).date().isoformat()
+    known = {}   # mmsi → the day it was last seen as a tanker
+    tk = old.get("tk") if isinstance(old.get("tk"), dict) else {}
+    for day, ids in tk.items():
+        if isinstance(day, str) and day >= week and isinstance(ids, list):
+            for m in ids:
+                if isinstance(m, int) and day > known.get(str(m), ""):
+                    known[str(m)] = day
+    by = {str(s["mmsi"]): dict(s) for s in old.get("ships") or [] if isinstance(s, dict) and isinstance(s.get("mmsi"), int)}
     for k, v in new.items():
         rec = by.setdefault(k, {"mmsi": v["mmsi"]})
         rec.update({x: y for x, y in v.items() if y is not None})
-    types = {k: v["type"] for k, v in by.items() if isinstance(v.get("type"), int)}
-    tankers = [v for v in by.values() if 80 <= v.get("type", -1) <= 89 and v.get("lat") is not None and v.get("t", "") >= cut]
+
+    def tanker(k, v):
+        t = v.get("type")
+        return is_tanker(t) if isinstance(t, int) else k in known
+
+    tankers = [v for k, v in by.items() if tanker(k, v) and v.get("lat") is not None and v.get("t", "") >= cut]
     tankers.sort(key=lambda v: v.get("t", ""), reverse=True)
     counts = {}
-    for v in by.values():
-        if v.get("t", "") >= cut and v.get("area"):
-            c = counts.setdefault(v["area"], {"ships": 0, "tankers": 0})
-            c["ships"] += 1
-            c["tankers"] += 1 if 80 <= v.get("type", -1) <= 89 else 0
-    # the type cache: what we know about ships seen in the last week is enough
-    recent_cut = (now - timedelta(days=7)).isoformat()
-    keep_types = {k: t for k, t in types.items() if by[k].get("t", recent_cut) >= recent_cut}
+    for v in tankers:
+        if v.get("area"):
+            counts[v["area"]] = counts.get(v["area"], 0) + 1
+    seen = {}   # every ship in the boxes during this listening
+    for v in new.values():
+        if v.get("area") and v.get("t"):
+            seen[v["area"]] = seen.get(v["area"], 0) + 1
+    last = {}
+    for k, v in by.items():
+        if tanker(k, v):
+            day = max(known.get(k, ""), (v.get("t") or "")[:10], today if k in new else "")
+            if day >= week:
+                last[k] = day
+    for k, day in known.items():   # tankers not met this time are remembered until their week is over
+        if not isinstance(by.get(k, {}).get("type"), int):   # ... unless a new static message gave another type
+            last.setdefault(k, day)
+    keep = sorted(last.items(), key=lambda x: x[1])[-MAX_TANKER_IDS:]
+    tk_out = {}
+    for k, day in keep:
+        tk_out.setdefault(day, []).append(int(k))
     return {"updated": now.isoformat(), "src": "aisstream.io", "hours": KEEP_H,
-            "areas": [{"id": a[0], "name": a[1], "name_ru": a[2], "box": list(a[3]), **counts.get(a[0], {"ships": 0, "tankers": 0})} for a in AREAS],
-            "ships": tankers[:MAX_SHIPS], "types": dict(list(keep_types.items())[-20000:])}
+            "areas": [{"id": a[0], "name": a[1], "name_ru": a[2], "box": list(a[3]), "tankers": counts.get(a[0], 0),
+                       "seen_now": seen.get(a[0], 0)} for a in AREAS],
+            "ships": tankers[:MAX_SHIPS], "tk": {d: sorted(v) for d, v in sorted(tk_out.items())}}
 
 
 def build(now=None, path=OUT, listen_fn=listen, every_min=EVERY_MIN):

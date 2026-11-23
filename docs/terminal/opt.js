@@ -283,16 +283,19 @@ function drawLvl(box, d){
   var vix = d.s === 'SPX' && T.Q.VIX && T.Q.VIX.value, vol = vix || d.dvol;
   if (vol) { var sd = S * vol / 100 / Math.sqrt(d.kind === 'crypto' ? 365 : 252); row(TX(vix ? 'gex_vix' : 'gex_dvol', fmt(vol, 1)), S + sd, TX('gex_vix_t', '±' + px(sd, S), px(S - sd, S))) }
   var sc = el('div', 'gx-tbl'); sc.appendChild(t.t); box.appendChild(sc);
-  var a = el('div', 'actions');
-  var b = el('button', null, TX('gex_on_chart')); b.onclick = function(){ if (window.TECH && TECH.showGex) TECH.showGex(chartSym(d.s)) }; a.appendChild(b);
-  box.appendChild(a);
+  // the chart needs the same instrument: TECH has no Nasdaq-100 chart (its "Nasdaq" is the Composite)
+  if (chartSym(d.s)) {
+    var a = el('div', 'actions');
+    var b = el('button', null, TX('gex_on_chart')); b.onclick = function(){ if (window.TECH && TECH.showGex) TECH.showGex(chartSym(d.s)) }; a.appendChild(b);
+    box.appendChild(a);
+  }
   var wrap = el('div', 'cv gx-small'); box.appendChild(wrap);
   var p = d.prof || {};
   plot(wrap, {title: TX('gex_prof'), lines: [{x: p.x || [], y: p.y || [], color: K.acc, name: TX('gex_total'), tfmt: usd}], zero: true, yfmt: usd, xfmt: function(v){ return px(v, S) },
     vl: [{x: S, color: K.text, label: TX('gex_spot'), dash: [2, 3]}, {x: lv.zero, color: K.acc, label: TX('gex_flip')}]});
   note(box, TX('gex_lvl_note'));
 }
-function chartSym(s){ return {SPX: 'S&P', NDX: 'Nasdaq', BTC: 'BTC', ETH: 'ETH'}[s] || s }
+function chartSym(s){ return s === 'NDX' ? null : {SPX: 'S&P', BTC: 'BTC', ETH: 'ETH'}[s] || s }
 
 /* ======================= VOLS: the volatility surface ======================= */
 function drawVols(box, d){
@@ -519,11 +522,21 @@ function intervalMap(wrap, pts, d){
 }
 
 /* ======================= levels for other functions (TECH, the bot brief) ======================= */
-// the key levels of a chart's symbol, or null; loads once a few minutes
+// the key levels of a chart's symbol, or null; loads once a few minutes.
+// Only a chart of the very same instrument gets levels: the terminal's "Nasdaq" (and NDX, which the server charts as
+// "Nasdaq") is the Nasdaq Composite, not the Nasdaq-100, and the Russell 2000 index is not IWM's price.
+var CHART = {'S&P': 'SPX', 'SPX': 'SPX', 'SP500': 'SPX', 'BTCUSDT': 'BTC', 'BINANCE:BTCUSDT': 'BTC', 'ETHUSDT': 'ETH', 'BINANCE:ETHUSDT': 'ETH'};
+var NOT_SAME = {'NDX': 1, 'NASDAQ': 1, 'RTY': 1, 'RUSSELL': 1};
+function chartUnderlying(chartSymbol){
+  var u = F.upSym(chartSymbol);
+  if (NOT_SAME[u]) return null;
+  var s = CHART[u] || u;
+  return ALL.indexOf(s) >= 0 && s !== 'NDX' ? s : null;
+}
 var lvCache = {};
 function levelsFor(chartSymbol){
-  var s = norm(chartSymbol);
-  if (ALL.indexOf(s) < 0) return Promise.resolve(null);
+  var s = chartUnderlying(chartSymbol);
+  if (!s) return Promise.resolve(null);
   var c = lvCache[s]; if (c && Date.now() - c.at < 300e3) return Promise.resolve(c.v);
   return load(s).then(function(d){
     var lv = d.levels || {}, em = d.em || {}, out = {sym: s, px: d.px, zero: lv.zero, cwall: lv.cwall, pwall: lv.pwall, pos: lv.pos, neg: lv.neg, d1: em.d1, updated: d.updated};

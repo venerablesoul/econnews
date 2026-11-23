@@ -115,6 +115,35 @@ for name, check in (("docs/macro.json", lambda x: len(x.get("rows") or []) >= 20
     except FileNotFoundError:
         problems.append("no " + name)
 
+# option analytics (gex.py: options.py for US options, deribit.py for BTC/ETH), oil chokepoints (chokepoints.py),
+# tankers (ais.py — only with the AISSTREAM_API_KEY secret)
+for sym, hours in (("BTC", 2), ("ETH", 2), ("SPX", 80), ("NDX", 80), ("SPY", 80)):
+    try:
+        g = show(f"docs/gex/{sym}.json")
+        print(f"docs/gex/{sym}.json: updated {g.get('updated')}, source {g.get('src')}, price {g.get('px')}, "
+              f"flip {(g.get('levels') or {}).get('zero')}, strikes {len(g.get('k') or [])}")
+        if not fresh(g.get("updated", ""), hours):
+            problems.append(f"docs/gex/{sym}.json is stale")
+        if not g.get("k"):
+            problems.append(f"docs/gex/{sym}.json has no strikes")
+    except FileNotFoundError:
+        problems.append(f"no docs/gex/{sym}.json")
+try:
+    ck = show("docs/chokepoints.json")
+    print(f"chokepoints.json: EIA {(ck.get('q') or ['—'])[-1]} (released {ck.get('released')}), checked {ck.get('checked')}"
+          + (f", last error: {ck['error']}" if ck.get("error") else ""))
+    if not ck.get("q"):
+        problems.append("chokepoints.json has no EIA table (the map uses its built-in figures): " + str(ck.get("error")))
+    elif not fresh(ck.get("checked", ""), 72):
+        problems.append("the EIA chokepoint table has not been read for 3 days: " + str(ck.get("error")))
+except FileNotFoundError:
+    problems.append("no docs/chokepoints.json")
+try:
+    sh = show("docs/ships.json")
+    print(f"ships.json: updated {sh.get('updated')}, tankers {len(sh.get('ships') or [])}")
+except FileNotFoundError:
+    print("ships.json: none (no AISSTREAM_API_KEY secret — the tankers layer is off)")
+
 d = show("docs/data.json")
 news = d.get("news") or []
 tk = [n for n in news if n.get("tk")]

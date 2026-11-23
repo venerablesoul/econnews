@@ -1834,7 +1834,8 @@ var My = (function(){
     api('/api/quote?s=' + encodeURIComponent(sym)).then(function(d){
       var qs = d.quotes || {}, key = Object.keys(qs)[0], x = key ? qs[key] : null;
       if (!x || !(x.px > 0)) throw new Error(TX('pp_noquote', sym));
-      if (x.cur === '₽') throw new Error(TX('pp_usd_only'));
+      // dollars only: an index, a currency pair or a Moscow share has no dollar price to trade at
+      if (x.cur !== '$') throw new Error(TX('pp_usd_only'));
       st.quotes[key] = x;
       var usd = /^\$/.test(a) || /\$$/.test(a), n = parseFloat(a.replace(/\$/g, ''));
       if (!(n > 0)) throw new Error(TX('pp_need'));

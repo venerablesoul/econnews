@@ -504,6 +504,19 @@ def run():
         r.wait_for_function("document.querySelector('#tech-body') && document.querySelector('#tech-body .tc-cv canvas')", timeout=8000)
         check("LVL → TECH with the option levels switched on", r.evaluate("JSON.parse(localStorage.getItem('tech_ta') || '{}').gex") == 1
               and "OPTION LEVELS" in r.inner_text("#tech-body"))
+        # the faked chart history is ~250–350, the S&P levels ~6,700: levels of another price range are not drawn
+        r.wait_for_selector("#tech-body .tc-gexnote", timeout=8000)
+        check("TECH: option levels far from the chart's prices are left out", "do not fit the prices" in r.inner_text("#tech-body .tc-gexnote"),
+              r.inner_text("#tech-body .tc-gexnote"))
+        # the Nasdaq-100: TECH has no chart of it (its "Nasdaq" is the Composite) — no button, and no NDX levels there
+        ndx = json.loads(fx["gex/SPX.json"]); ndx.update({"s": "NDX", "n": "Nasdaq-100 index"})
+        fx["gex/NDX.json"] = json.dumps(ndx).encode()
+        nl = opt_body("LVL NDX", "table")
+        check("LVL NDX: no 'on the chart' button (TECH's Nasdaq is the Composite)", r.locator("#gex-body .actions button").count() == 0 and "Gamma flip" in nl, nl[:200])
+        r.fill("#cmd", "TECH Nasdaq"); r.press("#cmd", "Enter")
+        r.wait_for_function("((document.querySelector('#tech-body .tc-gexnote') || {}).textContent || '').includes('exist for')", timeout=8000)
+        check("TECH Nasdaq gets no Nasdaq-100 levels", "Option levels exist for" in r.inner_text("#tech-body .tc-gexnote")
+              and "NDX" not in r.inner_text("#tech-body .tc-gexnote"), r.inner_text("#tech-body .tc-gexnote"))
         v = opt_body("VOLS SPX", ".gx-3d canvas")
         check("VOLS: the 3D surface, smile and term structure", drawn("#gex-body .gx-3d canvas") > 5000 and "IV 30 days" in v and r.locator("#gex-body .gx-two canvas").count() == 2, v[:200])
         box = r.locator("#gex-body .gx-3d").bounding_box()
@@ -561,6 +574,17 @@ def run():
         f.wait_for_timeout(600)
         check("CVD: price, cumulative delta and bar delta draw", fdrawn() > 20000)
         shot(f, "25_cvd")
+        # Binance refuses the bars: asked again after a pause, not four times a second (it limits how often one asks)
+        kl_calls = []
+
+        def kl_fail(route):
+            kl_calls.append(route.request.url)
+            route.fulfill(status=500, content_type="application/json", body="{}", headers={"Access-Control-Allow-Origin": "*"})
+        f.route("**/api/v3/klines*", kl_fail)
+        f.click("#flow-body button:has-text('1h')")
+        f.wait_for_timeout(3000)
+        check("CVD: a failed request for the bars is not repeated four times a second", 1 <= len(kl_calls) <= 3, len(kl_calls))
+        f.unroute("**/api/v3/klines*")
         f.fill("#cmd", "HEAT"); f.press("#cmd", "Enter")
         f.wait_for_function("!document.getElementById('p-imap').classList.contains('off')", timeout=5000)
         check("HEAT alone still opens the market map", True)
@@ -573,7 +597,20 @@ def run():
         f.wait_for_selector("#map-body .sp-wrap canvas")
         sp = f.inner_text("#map-body")
         check("SPLC: the oil supply chain with EIA flows", "Hormuz" in sp and "3Q26 9.1" in sp and "Cape of Good Hope" in sp, sp[:300])
+        check("SPLC: without the bot's file, the figures built into the page", "EIA 3Q26 (10 Nov 2026)" in f.inner_text("#map-sub"), f.inner_text("#map-sub"))
         shot(f, "26_splc")
+        # the bot has read a newer EIA table (chokepoints.py): the diagram takes it
+        qs = ["1Q25", "2Q25", "3Q25", "4Q25", "1Q26", "2Q26", "3Q26", "4Q26"]
+        newer = {"q": qs, "released": "2027-01-13", "v": {k: [round(2 + i * 0.5 + j / 10, 1) for j in range(len(qs))] for i, k in enumerate(
+            ("malacca", "hormuz", "suez", "bab", "danish", "turkish", "panama", "cape"))}}
+        newer["v"]["hormuz"] = [20.9, 21.1, 21.4, 21.6, 15.0, 5.1, 9.1, 11.2]
+        fx["chokepoints.json"] = json.dumps(newer).encode()
+        f.click("#map-tabs button[data-t=SHIP]")
+        f.wait_for_selector("#map-body .gm-wrap canvas")
+        f.click("#map-tabs button[data-t=SPLC]")
+        f.wait_for_function("document.getElementById('map-sub').textContent.includes('4Q26')", timeout=8000)
+        sp = f.inner_text("#map-body")
+        check("SPLC: the figures the bot read from EIA replace the built-in ones", "4Q26 11.2" in sp and "13 Jan 2027" in f.inner_text("#map-sub"), sp[:300])
         f.click("#map-tabs button[data-t=SHIP]")
         f.wait_for_selector("#map-body .gm-wrap canvas")
         f.wait_for_function("document.querySelector('#map-body .gm-side') && document.querySelector('#map-body .gm-side').textContent.includes('Tankers at the chokepoints')", timeout=8000)
@@ -590,6 +627,12 @@ def run():
         f.click("#my-body button:has-text('SELL')")
         f.wait_for_selector("#my-body .err")
         check("PAPR: no selling what is not held", "do not hold that many" in f.inner_text("#my-body .err"))
+        # an index has no dollar price to trade at (before, only rouble prices were refused)
+        f.fill("#my-body input.t", "S&P"); f.fill("#my-body input[data-k=paper-a]", "1")
+        f.click("#my-body button[type=submit]")
+        f.wait_for_function("(document.querySelector('#my-body .err') || {}).textContent && document.querySelector('#my-body .err').textContent.includes('US dollars')", timeout=8000)
+        pp2 = f.evaluate("JSON.parse(localStorage.getItem('my_paper'))")
+        check("PAPR: an index or currency pair is not bought as if priced in dollars", list(pp2["pos"]) == ["AAPL"], pp2)
         check("the quick bar lists the functions", f.locator("#fbar button").count() >= 15 and "GEX" in f.inner_text("#fbar"))
         f.keyboard.press("Alt+6")
         f.wait_for_function("!document.getElementById('p-gex').classList.contains('off')", timeout=5000)

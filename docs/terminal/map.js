@@ -554,12 +554,34 @@ function loadTankers(){
 
 /* ---------- SPLC: the oil supply chain — producers, chokepoints, buyers ---------- */
 // crude oil and products through each chokepoint, million barrels a day, by quarter: EIA Short-Term Energy Outlook
-// (Global Energy Security Data, released 10 Nov 2026). Update these lines when EIA publishes the next quarter.
+// (Global Energy Security Data). The bot reads EIA's table every day (chokepoints.py → ../chokepoints.json) and the
+// diagram takes the figures from there; the lines below (released 10 Nov 2026) are only for when that file is missing.
 var EIA_Q = ['2Q25', '3Q25', '4Q25', '1Q26', '2Q26', '3Q26'];
 var EIA = {malacca: [23.9, 23.5, 25.0, 21.4, 16.7, 19.4], hormuz: [21.1, 21.4, 21.6, 15.0, 5.1, 9.1], suez: [5.1, 5.6, 5.9, 5.7, 5.8, 7.1],
   bab: [4.5, 4.7, 5.4, 5.6, 8.1, 6.3], danish: [4.8, 5.0, 5.0, 4.9, 4.7, 4.5], turkish: [3.7, 3.7, 3.7, 3.3, 4.1, 3.4], panama: [2.5, 2.8, 2.8, 2.9, 3.2, 3.0],
   cape: [9.4, 9.1, 10.0, 8.3, 9.5, 8.7]};
-var EIA_SRC = 'https://www.eia.gov/outlooks/steo/report/energysecurity/article.php';
+var EIA_SRC = 'https://www.eia.gov/outlooks/steo/report/energysecurity/article.php', EIA_REL = '2026-11-10';
+// the bot's copy of EIA's table: used when it is complete (every chokepoint, a number for every quarter)
+function goodEia(d){
+  if (!d || !Array.isArray(d.q) || d.q.length < 4 || !d.v) return false;
+  if (!d.q.every(function(q){ return /^[1-4]Q\d\d$/.test(q) })) return false;
+  return Object.keys(EIA).every(function(k){ var a = d.v[k]; return Array.isArray(a) && a.length === d.q.length && a.every(function(x){ return typeof x === 'number' && x >= 0 && x <= 40 }) });
+}
+var eiaLoad = null;
+function loadEia(){
+  // resolves true once, when the bot's figures replace the built-in ones
+  if (!eiaLoad) eiaLoad = getJSON('../chokepoints.json?t=' + Math.floor(Date.now() / 3600e3), 15000).then(function(d){
+    if (!goodEia(d)) return false;
+    var v = {}; Object.keys(EIA).forEach(function(k){ v[k] = d.v[k].slice() });
+    // the date goes with the figures: the bot's figures without a release date show none (not the built-in one)
+    EIA_Q = d.q.slice(); EIA = v; EIA_REL = /^\d{4}-\d\d-\d\d$/.test(d.released || '') ? d.released : null;
+    return true;
+  }).catch(function(){ eiaLoad = null; return false });   // no file yet: the built-in figures; tried again next time
+  return eiaLoad;
+}
+// what each quarter is compared with: 4Q25, the last quarter before the 2026 disruption of Hormuz, while EIA's table
+// still covers it; otherwise the same quarter a year earlier
+function eiaBase(){ var i = EIA_Q.indexOf('4Q25'); if (i < 0 || i === EIA_Q.length - 1) i = EIA_Q.length - 5; return i >= 0 ? i : null }
 // nodes: x, y in 0..1; k: c = chokepoint, s = supply, d = demand; pw — the PortWatch chokepoint's name
 var SP_NODES = [
   {id: 'rusb', k: 's', x: 0.0, y: 0.05, n: ['Baltic: Russia', 'Балтика: Россия']},
@@ -597,7 +619,8 @@ function drawSplc(){
   var narrow = box.clientWidth < 700;
   box.style.overflow = 'auto'; box.style.flexDirection = narrow ? 'column' : '';
   w.style.minHeight = '520px'; w.style.flex = narrow ? 'none' : ''; if (narrow) { w.style.height = '520px'; sd.style.width = 'auto'; sd.style.borderLeft = '0' }
-  $('map-sub').textContent = 'EIA ' + EIA_Q[EIA_Q.length - 1] + ' · IMF PortWatch';
+  var sub = function(){ $('map-sub').textContent = 'EIA ' + EIA_Q[EIA_Q.length - 1] + (EIA_REL ? ' (' + F.dmy(EIA_REL) + ')' : '') + ' · IMF PortWatch' };
+  sub();
   var liveData = {}, sel = null;
   function paint(){
     clear(w);
@@ -630,7 +653,7 @@ function drawSplc(){
       var p = P(n), nm = I.ru ? n.n[1] : n.n[0], on = lit(n.id, null) || SP_EDGES.some(function(e){ return (e[0] === sel && e[1] === n.id) || (e[1] === sel && e[0] === n.id) });
       g2.globalAlpha = on ? 1 : 0.35;
       if (n.k === 'c') {
-        var v = vol(n.id), prev = EIA[n.id][2], r = 6 + Math.sqrt(v / maxV) * 16, ch = prev ? (v / prev - 1) * 100 : null;
+        var bi = eiaBase(), v = vol(n.id), prev = bi == null ? null : EIA[n.id][bi], r = 6 + Math.sqrt(v / maxV) * 16, ch = prev ? (v / prev - 1) * 100 : null;
         g2.beginPath(); g2.arc(p[0], p[1], r, 0, 6.283); g2.fillStyle = ch != null && ch < -15 ? 'rgba(239,83,80,0.85)' : ch != null && ch > 15 ? 'rgba(224,178,60,0.85)' : 'rgba(86,193,214,0.85)'; g2.fill();
         var lines = [[nm, '#e6eaf0', '600 11.5px'], [fmt(v, 1) + ' ' + TX('sp_mbd') + (ch != null ? ' · ' + pct(ch, 0) : ''), ch != null && ch < -15 ? '#ef5350' : '#8b95a7']];
         var lv = liveData[n.id]; if (lv && lv.t7 != null) lines.push([TX('sp_live_s', fmt(lv.t7, 0), lv.tch != null ? pct(lv.tch, 0) : '—'), lv.tch != null && lv.tch < -15 ? '#ef5350' : '#5d6778', '10.5px']);
@@ -662,12 +685,14 @@ function drawSplc(){
       row.onclick = function(){ sel = sel === n.id ? null : n.id; paint(); side() };
       sd.appendChild(row);
     });
-    var nt = el('div', 'gm-note'); nt.style.padding = '8px 10px'; nt.textContent = TX('sp_note'); sd.appendChild(nt);
+    var bi = eiaBase(), nt = el('div', 'gm-note'); nt.style.padding = '8px 10px'; nt.textContent = TX('sp_note', bi == null ? null : EIA_Q[bi]); sd.appendChild(nt);
     var a = el('a', null, 'EIA · Short-Term Energy Outlook'); a.href = EIA_SRC; a.target = '_blank'; a.rel = 'noopener'; a.style.cssText = 'display:block;padding:0 10px 10px;color:var(--accent);text-decoration:none;font-size:11.5px'; sd.appendChild(a);
   }
   w.__draw = paint; if (F.canvases().indexOf(w) < 0) F.canvases().push(w);
   paint(); side();
-  splcLive().then(function(d){ liveData = d; if (M.tab === 'SPLC' && document.body.contains(w)) { paint(); side() } });
+  var here = function(){ return M.tab === 'SPLC' && document.body.contains(w) };
+  splcLive().then(function(d){ liveData = d; if (here()) { paint(); side() } });
+  loadEia().then(function(fresh){ if (fresh && here()) { sub(); paint(); side() } });
 }
 
 /* ---------- Open-Meteo: weather in the big cities ---------- */

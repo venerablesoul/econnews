@@ -1430,7 +1430,8 @@ def run(dry=False):
 
 
 def update_extras(now, dry=False):
-    """Terminal data that does not depend on news: US companies (stocks.json, co/, opt/, gex/), crypto options, rates, macro, MOEX."""
+    """Terminal data that does not depend on news: US companies (stocks.json, co/, opt/, gex/), crypto options, tankers,
+    oil chokepoints, rates, macro, MOEX."""
     parts = []
     if dry or not _env_on("COMPANIES", "yes"):
         return ""
@@ -1449,8 +1450,8 @@ def update_extras(now, dry=False):
     except Exception as e:
         print(f"  ! rates (rates.py): {type(e).__name__}: {e}"[:200])
     for mod, label in (("company", "company files"), ("options", "option chains"), ("deribit", "crypto options"),
-                       ("ais", "tankers (AIS)"), ("macro", "macro"), ("moex", "MOEX"), ("ipo", "IPO"),
-                       ("wpe", "world valuations"), ("auctions", "Treasury auctions")):
+                       ("ais", "tankers (AIS)"), ("chokepoints", "oil chokepoints (EIA)"), ("macro", "macro"), ("moex", "MOEX"),
+                       ("ipo", "IPO"), ("wpe", "world valuations"), ("auctions", "Treasury auctions")):
         try:
             n = __import__(mod).build(now)
             if n:
@@ -1497,7 +1498,7 @@ def load_dotenv(path):
 # what the bot writes: only it changes these files
 DATA_PATHS = ("state.json", "docs/data.json", "docs/stocks.json", "docs/rates.json", "docs/fin", "docs/co", "docs/opt",
               "docs/options.json", "docs/macro.json", "docs/moex.json", "docs/ipo.json", "docs/wpe.json",
-              "docs/auctions.json", "docs/gex", "docs/ships.json")
+              "docs/auctions.json", "docs/gex", "docs/ships.json", "docs/chokepoints.json")
 # The data does not go into main: the whole site (docs/ — its code from main plus the data) and state.json are
 # pushed as ONE commit that replaces the data branch each time. main keeps only code, and the data branch never
 # grows a history. GitHub Pages serves the site from that branch (Settings → Pages → gh-pages, folder /docs).

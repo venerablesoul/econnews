@@ -241,7 +241,9 @@ function drawTech(box, h){
     var sym = tc.sym;
     OPTX.levels(sym).then(function(G){
       if (sym !== tc.sym || !document.body.contains(wrap)) return;
-      if (!G) { var nt = box.querySelector('.tc-gexnote') || el('div', 'note tc-gexnote'); nt.textContent = TX('ta_gex_none', OPTX.ALL.join(', ')); box.appendChild(nt); return }
+      // a second guard against drawing another instrument's levels: the options price must be near the chart's
+      var lastP = A.c[A.c.length - 1], far = !!(G && G.px && lastP && Math.abs(G.px / lastP - 1) > 0.06);
+      if (!G || far) { var nt = box.querySelector('.tc-gexnote') || el('div', 'note tc-gexnote'); nt.textContent = far ? TX('ta_gex_far', G.sym) : TX('ta_gex_none', OPTX.ALL.filter(function(s){ return s !== 'NDX' }).join(', ')); box.appendChild(nt); return }
       A.gex = G; paintChart(wrap, h, A);
     });
   }

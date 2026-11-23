@@ -104,7 +104,8 @@ function snapshot(m){
     // 400: Binance has no such pair — say so instead of trying again forever
     if (/HTTP 400/.test(e && e.message || '')) { status(TX('fl_nopair', m.pair), true); var ws_ = m.ws; M = null; try { ws_.onclose = null; ws_.close() } catch(x){} return }
     status(TX('fl_fail', e.message || e), true);
-    nextHost(); setTimeout(function(){ if (M === m) { M = null; start() } }, 3000);
+    // the stream of this try is closed before the next one opens (it would keep downloading the book for nothing)
+    nextHost(); setTimeout(function(){ if (M === m) { var w_ = m.ws; M = null; try { w_.onclose = null; w_.close() } catch(x){} start() } }, 3000);
   });
 }
 function depth(m, x){
@@ -380,7 +381,11 @@ function paintFoot(wrap){
 function paintCvd(wrap){
   var c = canvasIn(wrap); if (!c) return;
   var g = c.g, W = c.W, H = c.H, K = C(), m = M;
-  if (m && !m.kl && m.opened && !m.klLoading) { m.klLoading = true; klines(m).catch(function(e){ status(TX('fl_fail', e.message || e), true) }).then(function(){ if (m) m.klLoading = false }) }
+  // the bars once; after a failure, again in 15 s (not four times a second: Binance limits how often one may ask)
+  if (m && !m.kl && m.opened && !m.klLoading && !(Date.now() - (m.klFailAt || 0) < 15000)) {
+    m.klLoading = true;
+    klines(m).catch(function(e){ m.klFailAt = Date.now(); status(TX('fl_fail', e.message || e), true) }).then(function(){ m.klLoading = false });
+  }
   if (!m || !m.kl || !m.kl.bars.length) return waiting(wrap, g, W, H);
   var R = 66, L = 6, bars = m.kl.bars, n = Math.min(bars.length, Math.floor((W - L - R) / 3)), v = bars.slice(-n);
   var h1 = H * 0.55, h2 = H * 0.27, h3 = H - h1 - h2 - 18, bw = (W - L - R) / n, X = function(i){ return L + (i + 0.5) * bw };

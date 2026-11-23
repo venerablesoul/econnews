@@ -8,9 +8,9 @@ import { readFileSync } from "node:fs";
 const gexFx = (n) => JSON.parse(readFileSync(new URL("./fixtures/pages/gex/" + n, import.meta.url), "utf8"));
 const now = Date.now(), iso = (ms) => new Date(ms).toISOString();
 const shipsJson = { updated: iso(now - 600e3), src: "aisstream.io", hours: 12,
-  areas: [{ id: "hormuz", name: "Strait of Hormuz", name_ru: "Ормузский пролив", box: [24.8, 54.5, 27.6, 58.2], ships: 3, tankers: 2 }],
+  areas: [{ id: "hormuz", name: "Strait of Hormuz", name_ru: "Ормузский пролив", box: [24.8, 54.5, 27.6, 58.2], tankers: 2, seen_now: 3 }],
   ships: [{ mmsi: 538001234, name: "OCEAN STAR", type: 80, lat: 26.5, lon: 56.3, sog: 12.4, cog: 301, nav: 0, area: "hormuz", dest: "FUJAIRAH", t: iso(now - 900e3) },
-          { mmsi: 538005678, name: "GULF DAWN", type: 84, lat: 26.1, lon: 55.9, sog: 0, cog: null, nav: 1, area: "hormuz", t: iso(now - 1800e3) }], types: {} };
+          { mmsi: 538005678, name: "GULF DAWN", type: 84, lat: 26.1, lon: 55.9, sog: 0, cog: null, nav: 1, area: "hormuz", t: iso(now - 1800e3) }], tk: {} };
 
 installMocks();
 const worker = (await import("../worker/src/index.js")).default;
