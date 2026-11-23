@@ -98,3 +98,39 @@ def annotate(items, limit=8, call=None):
         if k in res:
             it["ai"] = res[k]
     return len(res)
+
+
+BRIEF_PROMPT = """You are an options-market analyst for a financial terminal. Below are today's dealer-positioning estimates
+(gamma exposure, the gamma flip, call and put walls, the expected 1-day move) before the US open.
+In two short sentences (at most 300 characters in all) say what they imply for today: where support and resistance
+from options are, and whether moves are likely damped (positive gamma) or amplified (negative gamma).
+Plain facts, no advice to buy or sell. Reply with JSON ONLY:
+{"en": "English text", "ru": "the same in Russian", "zh": "the same in simplified Chinese", "ar": "the same in Arabic"}
+
+Numbers:
+"""
+
+
+def brief_note(facts, call=None):
+    """Two sentences on the option levels for the pre-market brief (brief.py), or None."""
+    key = os.environ.get("ANTHROPIC_API_KEY", "").strip()
+    if not key and call is None:
+        return None
+    model = os.environ.get("AI_MODEL", "").strip() or DEFAULT_MODEL
+    text = (call or _call)(BRIEF_PROMPT + facts, key, model)
+    m = re.search(r"\{.*\}", text or "", re.S)
+    if not m:
+        return None
+    try:
+        d = json.loads(m.group(0))
+    except ValueError:
+        return None
+    if not isinstance(d, dict):
+        return None
+    en, ru = str(d.get("en") or "").strip()[:400], str(d.get("ru") or "").strip()[:400]
+    if not (en or ru):
+        return None
+    out = {"en": en or ru, "ru": ru or en}
+    for lang in ("zh", "ar"):   # Chinese and Arabic readers get English when the model left their language out
+        out[lang] = str(d.get(lang) or "").strip()[:400] or out["en"]
+    return out

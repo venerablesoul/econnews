@@ -508,9 +508,9 @@ F.GC_TABS.WB = function(box, d){
   svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H); svg.setAttribute('class', 'gc-svg'); svg.style.maxWidth = W + 'px'; svg.style.height = 'auto';
   rows.forEach(function(r, i){
     var w = Math.max(0, r.y10) / mx * (W - 170), y = 4 + i * 22;
-    var t = document.createElementNS(NS, 'text'); t.setAttribute('x', 4); t.setAttribute('y', y + 14); t.setAttribute('fill', '#8c8c8c'); t.setAttribute('font-size', '11'); t.textContent = r.c; svg.appendChild(t);
-    var rc = document.createElementNS(NS, 'rect'); rc.setAttribute('x', 40); rc.setAttribute('y', y + 3); rc.setAttribute('width', w); rc.setAttribute('height', 14); rc.setAttribute('fill', r.c === 'US' ? '#4fa3ff' : '#ffa028'); svg.appendChild(rc);
-    var t2 = document.createElementNS(NS, 'text'); t2.setAttribute('x', 46 + w); t2.setAttribute('y', y + 14); t2.setAttribute('fill', '#e6e6e6'); t2.setAttribute('font-size', '11'); t2.textContent = num(r.y10, 2) + '%'; svg.appendChild(t2);
+    var t = document.createElementNS(NS, 'text'); t.setAttribute('x', 4); t.setAttribute('y', y + 14); t.setAttribute('fill', '#8b95a7'); t.setAttribute('font-size', '11'); t.textContent = r.c; svg.appendChild(t);
+    var rc = document.createElementNS(NS, 'rect'); rc.setAttribute('x', 40); rc.setAttribute('y', y + 3); rc.setAttribute('width', w); rc.setAttribute('height', 14); rc.setAttribute('fill', r.c === 'US' ? '#6ea8ff' : '#e0b23c'); svg.appendChild(rc);
+    var t2 = document.createElementNS(NS, 'text'); t2.setAttribute('x', 46 + w); t2.setAttribute('y', y + 14); t2.setAttribute('fill', '#e6eaf0'); t2.setAttribute('font-size', '11'); t2.textContent = num(r.y10, 2) + '%'; svg.appendChild(t2);
   });
   var blk = F.h4(box, TX('wb_bars')); blk.appendChild(svg);
   box.appendChild(el('div', 'note', TX('wb_note')));

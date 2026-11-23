@@ -628,7 +628,7 @@ class RunParts(unittest.TestCase):
         self.state = os.path.join(d, "state.json")
         self.env = {"TELEGRAM_BOT_TOKEN": "1:T", "TELEGRAM_CHAT_ID": "100", "PAGES_URL": "https://p.test/",
                     "STATE_FILE": self.state, "PAGE_DATA": os.path.join(d, "docs", "data.json"),
-                    "DIGEST_HOUR": "-1", "MORNING_HOUR": "-1", "CALENDAR": "no", "TRADES": "no", "ANTHROPIC_API_KEY": "",
+                    "DIGEST_HOUR": "-1", "MORNING_HOUR": "-1", "BRIEF_HOUR": "-1", "CALENDAR": "no", "TRADES": "no", "ANTHROPIC_API_KEY": "",
                     "FRED_API_KEY": "", "QUIET_HOURS": "0-0", "MARKET": "no"}
         self.n = 0
         self.saved = news_bot.LOOP_MINUTES

@@ -148,7 +148,7 @@ function visible(pid){
   if (T.isMobile()) return p.classList.contains('show');
   return !p.classList.contains('off');
 }
-var COLORS = ['#ffa028', '#4fa3ff', '#21c66f', '#ff4b4b', '#c77dff', '#ffd400', '#56d6d6'];
+var COLORS = ['#e0b23c', '#6ea8ff', '#2fbf71', '#ef5350', '#a78bfa', '#f2cc60', '#56c1d6'];
 
 /* ======================= layouts ======================= */
 var PANELS = [
@@ -158,23 +158,24 @@ var PANELS = [
   {id:'p-des', code:'DES', name:TX('fn_des')}, {id:'p-hp', code:'HP', name:TX('fn_hp')},
   {id:'p-eqs', code:'EQS', name:TX('fn_eqs')}, {id:'p-imap', code:'IMAP', name:TX('fn_imap')},
   {id:'p-gc', code:'GC', name:TX('fn_gc')}, {id:'p-my', code:'W', name:TX('fn_my')}, {id:'p-ana', code:'ECST', name:TX('fn_ana')},
-  {id:'p-tech', code:'TECH', name:TX('fn_tech')}, {id:'p-mon', code:'MOV', name:TX('fn_mon')}, {id:'p-map', code:'MAP', name:TX('fn_map')}
+  {id:'p-tech', code:'TECH', name:TX('fn_tech')}, {id:'p-mon', code:'MOV', name:TX('fn_mon')}, {id:'p-map', code:'MAP', name:TX('fn_map')},
+  {id:'p-gex', code:'GEX', name:TX('fn_gex')}, {id:'p-flow', code:'FLOW', name:TX('fn_flow')}
 ];
 var LAYOUTS = {
   '1': {cols:'minmax(330px,26%) 1fr minmax(320px,25%)', rows:'62% 38%', areas:'"a b c" "a d e"', slots:['a','b','c','d','e'],
         def:['p-mkt','p-chart','p-crypto','p-news','p-eco'],
         pref:{'p-des':'c','p-gc':'c','p-my':'c','p-crypto':'c','p-hp':'b','p-eqs':'b','p-imap':'b','p-ana':'b','p-chart':'b','p-news':'d','p-eco':'e','p-trd':'e','p-mkt':'a',
-              'p-tech':'b','p-mon':'b','p-map':'b'}},
+              'p-tech':'b','p-mon':'b','p-map':'b','p-gex':'b','p-flow':'b'}},
   '4': {cols:'1fr 1fr', rows:'1fr 1fr', areas:'"a b" "c d"', slots:['a','b','c','d'], def:['p-chart','p-des','p-news','p-mkt'],
         pref:{'p-chart':'a','p-hp':'a','p-imap':'a','p-ana':'a','p-eqs':'c','p-des':'b','p-gc':'b','p-my':'d','p-mkt':'d','p-news':'c','p-eco':'d','p-trd':'d','p-crypto':'d',
-              'p-tech':'a','p-mon':'c','p-map':'a'}},
+              'p-tech':'a','p-mon':'c','p-map':'a','p-gex':'a','p-flow':'c'}},
   '6': {cols:'1fr 1fr 1fr', rows:'1fr 1fr', areas:'"a b c" "d e f"', slots:['a','b','c','d','e','f'],
         def:['p-mkt','p-chart','p-des','p-news','p-eqs','p-my'],
         pref:{'p-mkt':'a','p-chart':'b','p-hp':'b','p-des':'c','p-news':'d','p-eqs':'e','p-imap':'e','p-ana':'e','p-my':'f','p-gc':'f','p-eco':'f','p-trd':'f','p-crypto':'a',
-              'p-tech':'b','p-mon':'e','p-map':'b'}},
+              'p-tech':'b','p-mon':'e','p-map':'b','p-gex':'b','p-flow':'e'}},
   't': {cols:'minmax(300px,40%) 1fr', rows:'55% 45%', areas:'"a b" "c d"', slots:['a','b','c','d'], def:['p-mkt','p-chart','p-crypto','p-news'],
         pref:{'p-mkt':'a','p-chart':'b','p-hp':'b','p-imap':'b','p-eqs':'b','p-ana':'b','p-des':'c','p-gc':'c','p-my':'c','p-crypto':'c','p-news':'d','p-eco':'d','p-trd':'d',
-              'p-tech':'b','p-mon':'b','p-map':'b'}}
+              'p-tech':'b','p-mon':'b','p-map':'b','p-gex':'b','p-flow':'b'}}
 };
 var RENDER = {};   // pid → function to call when the panel appears on screen
 var Layout = (function(){
@@ -208,7 +209,9 @@ var Layout = (function(){
     });
     document.querySelectorAll('#lay button').forEach(function(b){ b.classList.toggle('on', b.dataset.l === st.mode) });
     a.forEach(function(pid){ if (RENDER[pid]) try { RENDER[pid]() } catch(e){ console.error(e) } });
-    clearTimeout(apply._t); apply._t = setTimeout(function(){ window.dispatchEvent(new Event('resize')) }, 60);
+    // canvases and charts size themselves on 'resize'; this one comes from here, so it must not lay out again
+    // (it did: the layout re-applied itself ~5 times a second and redrew every canvas each time)
+    clearTimeout(apply._t); apply._t = setTimeout(function(){ Layout._internal = true; try { window.dispatchEvent(new Event('resize')) } finally { Layout._internal = false } }, 60);
   }
   function focus(pid){
     var p = $(pid); if (!p) return;
@@ -269,13 +272,16 @@ document.querySelectorAll('#lay button').forEach(function(b){ b.onclick = functi
 document.querySelectorAll('.ph .swap').forEach(function(b){
   b.onclick = function(e){ e.stopPropagation(); var p = b.closest('.panel'); if (!T.isMobile() && p.dataset.slot) Layout.place(b.dataset.to, p.dataset.slot); else T.show(b.dataset.to) };
 });
-var rzT = null;
-window.addEventListener('resize', function(){ clearTimeout(rzT); rzT = setTimeout(function(){
-  var was = Layout._mob; Layout._mob = T.isMobile();
-  if (was !== Layout._mob || !Layout._mob) { Layout.apply() }
-  redrawCanvases();
-  if (visible('p-imap')) renderImap();
-}, 150) });
+var rzT = null, rzReal = false;
+window.addEventListener('resize', function(){
+  if (!Layout._internal) rzReal = true;   // the window really changed (not the event the layout sends itself)
+  clearTimeout(rzT); rzT = setTimeout(function(){
+    var was = Layout._mob, real = rzReal; Layout._mob = T.isMobile(); rzReal = false;
+    if (real && (was !== Layout._mob || !Layout._mob)) { Layout.apply() }
+    redrawCanvases();
+    if (visible('p-imap')) renderImap();
+  }, 150);
+});
 
 // the mobile menu of all functions
 (function(){
@@ -287,13 +293,16 @@ window.addEventListener('resize', function(){ clearTimeout(rzT); rzT = setTimeou
     ['ECST', TX('m_ecst'), 'p-ana', 'ECST'], ['FXC', TX('m_fxc'), 'p-ana', 'FXC'], ['CORR', TX('m_corr'), 'p-ana', 'CORR'], ['OMON', TX('m_opt'), 'p-ana', 'OMON'],
     ['IPO', TX('m_ipo'), 'p-ana', 'IPO'], ['GC', TX('m_gc'), 'p-gc'],
     ['CB', TX('m_cb'), 'p-gc', 'CB'], ['WIRP', TX('m_wirp'), 'p-gc', 'WIRP'], ['W', TX('m_w'), 'p-my', 'W'],
-    ['PORT', TX('m_port'), 'p-my', 'PORT'], ['ALRT', TX('m_alrt'), 'p-my', 'ALRT'],
+    ['PORT', TX('m_port'), 'p-my', 'PORT'], ['PAPR', TX('m_papr'), 'p-my', 'PAPR'], ['ALRT', TX('m_alrt'), 'p-my', 'ALRT'],
     ['TECH', TX('m_tech'), 'p-tech', 'TECH'], ['VAP', TX('m_vap'), 'p-tech', 'VAP'], ['TRA', TX('m_tra'), 'p-tech', 'TRA'], ['TRAY', TX('m_tray'), 'p-tech', 'TRAY'],
     ['MOV', TX('m_mov'), 'p-mon', 'MOV'], ['MOST', TX('m_most'), 'p-mon', 'MOST'], ['MEMB', TX('m_memb'), 'p-mon', 'MEMB'], ['WPE', TX('m_wpe'), 'p-mon', 'WPE'],
     ['BI', TX('m_bi'), 'p-mon', 'BI'], ['FPC', TX('m_fpc'), 'p-mon', 'FPC'], ['CDR', TX('m_cdr'), 'p-mon', 'CDR'],
     ['WB', TX('m_wb'), 'p-gc', 'WB'], ['BTMM', TX('m_btmm'), 'p-gc', 'BTMM'], ['MMR', TX('m_mmr'), 'p-gc', 'MMR'], ['SRCH', TX('m_srch'), 'p-gc', 'SRCH'],
     ['MAP', TX('m_map'), 'p-map', 'MAP'], ['STORM', TX('m_storm'), 'p-map', 'STORM'], ['SHIP', TX('m_ship'), 'p-map', 'SHIP'],
     ['WETR', TX('m_wetr'), 'p-map', 'WETR'], ['MAP ECO', TX('m_mapeco'), 'p-map', 'MAP ECO'],
+    ['GEX', TX('m_gex'), 'p-gex', 'GEX'], ['LVL', TX('m_lvl'), 'p-gex', 'LVL'], ['VOLS', TX('m_vols'), 'p-gex', 'VOLS'], ['GRK', TX('m_grk'), 'p-gex', 'GRK'],
+    ['GEXH', TX('m_gexh'), 'p-gex', 'GEXH'], ['OBH', TX('m_obh'), 'p-flow', 'OBH'], ['BOOK', TX('m_book'), 'p-flow', 'BOOK'], ['FOOT', TX('m_foot'), 'p-flow', 'FOOT'],
+    ['CVD', TX('m_cvd'), 'p-flow', 'CVD'], ['SPLC', TX('m_splc'), 'p-map', 'SPLC'], ['TANKERS', TX('m_tankers'), 'p-map', 'TANKERS'],
     ['HELP', TX('m_help'), null, 'HELP']
   ];
   FN.forEach(function(f){
@@ -302,6 +311,28 @@ window.addEventListener('resize', function(){ clearTimeout(rzT); rzT = setTimeou
     list.appendChild(b);
   });
   $('b-more').onclick = function(){ T.openOverlay('ov-fn') };
+})();
+
+// the quick functions under the command line (desktop); Alt+1…9 opens the first nine
+(function(){
+  var bar = $('fbar'); if (!bar) return;
+  var FAV = [['WEI', 'fn_mkt'], ['GP', 'fn_chart'], ['N', 'fn_news'], ['ECO', 'fn_eco'], ['TECH', 'fn_tech'], ['GEX', 'm_gex'], ['LVL', 'm_lvl'], ['VOLS', 'm_vols'],
+    ['HEAT BTC', 'm_obh'], '|', ['FOOT BTC', 'm_foot'], ['CVD BTC', 'm_cvd'], ['DES', 'fn_des'], ['EQS', 'm_eqs'], ['MAP', 'm_map'], ['SPLC', 'm_splc'], ['PAPR', 'm_papr'], ['HELP', 'm_help']];
+  var n = 0;
+  FAV.forEach(function(f){
+    if (f === '|') { bar.appendChild(el('span', 'sep')); return }
+    var b = el('button', null, f[0].replace(/ BTC$/, '')); b.type = 'button'; b.title = TX(f[1]) + (n < 9 ? ' · Alt+' + (n + 1) : '');
+    if (n < 9) b.appendChild(el('i', null, String(n + 1)));
+    b.onclick = function(){ T.runCommand(f[0]) };
+    bar.appendChild(b); n++;
+  });
+  var keys = FAV.filter(function(f){ return f !== '|' }).slice(0, 9);
+  document.addEventListener('keydown', function(e){
+    if (!e.altKey || e.ctrlKey || e.metaKey) return;
+    var m = /^Digit([1-9])$/.exec(e.code || ''); if (!m) return;
+    var f = keys[+m[1] - 1]; if (!f) return;
+    e.preventDefault(); T.runCommand(f[0]);
+  });
 })();
 
 /* ======================= DES: company ======================= */
@@ -374,7 +405,7 @@ function consensus(anr){
   var sc = (r.sb * 5 + r.b * 4 + r.h * 3 + r.s * 2 + r.ss) / n;
   return {n: n, score: sc, word: TX('rec')[sc >= 4.2 ? 0 : sc >= 3.6 ? 1 : sc >= 2.8 ? 2 : sc >= 2.2 ? 3 : 4], r: r};
 }
-var ANR_COL = ['#0f7a3e', '#21c66f', '#8c8c8c', '#e07a3c', '#ff4b4b'];
+var ANR_COL = ['#0f7a3e', '#2fbf71', '#8b95a7', '#e07a3c', '#ef5350'];
 function anrBar(r, n){
   var bar = el('div', 'anr-bar');
   [r.sb, r.b, r.h, r.s, r.ss].forEach(function(v, i){ if (!v) return; var x = el('i'); x.style.width = (v / n * 100) + '%'; x.style.background = ANR_COL[i]; x.title = v; bar.appendChild(x) });
@@ -513,7 +544,7 @@ function desDvd(box, d){
     hist.forEach(function(x){ var y = x[0].slice(0, 4); years[y] = (years[y] || 0) + x[1] });
     var ys = Object.keys(years).sort().slice(-12);
     var cw = h4(box, TX('d_years'));
-    cw.appendChild(svgBars(ys.map(function(y){ return {label: "'" + y.slice(2), values: [years[y]], fmt: function(v){ return y + ': $' + num(v, 2) }} }), ['y'], ['#ffa028'], 110));
+    cw.appendChild(svgBars(ys.map(function(y){ return {label: "'" + y.slice(2), values: [years[y]], fmt: function(v){ return y + ': $' + num(v, 2) }} }), ['y'], ['#e0b23c'], 110));
     var tb = table(cols(TX('d_cols')));
     hist.slice(0, 40).forEach(function(x, i){ var tr = el('tr'), prev = hist[i + 1]; tr.appendChild(td(dmy(x[0]), 'l')); tr.appendChild(td('$' + fmt(x[1], x[1] < 1 ? 4 : 2), 'num'));
       tr.appendChild(prev ? chg((x[1] / prev[1] - 1) * 100, 1) : td('', 'num')); tb.body.appendChild(tr) });
@@ -603,7 +634,7 @@ function svgBars(rows, keys, colors, h){
   var hi = Math.max(0, Math.max.apply(null, vals)), lo = Math.min(0, Math.min.apply(null, vals)), sp = (hi - lo) || 1;
   var Y = function(v){ return 6 + (hi - v) / sp * (H - pad - 6) };
   var bw = (W - 10) / rows.length, gw = bw * 0.8 / keys.length;
-  var zero = document.createElementNS(NS, 'line'); zero.setAttribute('x1', 0); zero.setAttribute('x2', W); zero.setAttribute('y1', Y(0)); zero.setAttribute('y2', Y(0)); zero.setAttribute('stroke', '#333'); s.appendChild(zero);
+  var zero = document.createElementNS(NS, 'line'); zero.setAttribute('x1', 0); zero.setAttribute('x2', W); zero.setAttribute('y1', Y(0)); zero.setAttribute('y2', Y(0)); zero.setAttribute('stroke', '#2c3542'); s.appendChild(zero);
   rows.forEach(function(r, i){
     r.values.forEach(function(v, k){
       if (v == null) return;
@@ -615,7 +646,7 @@ function svgBars(rows, keys, colors, h){
       s.appendChild(rect);
     });
     var lb = document.createElementNS(NS, 'text'); lb.setAttribute('x', 5 + i * bw + bw / 2); lb.setAttribute('y', H - 7); lb.setAttribute('text-anchor', 'middle');
-    lb.setAttribute('fill', '#8c8c8c'); lb.setAttribute('font-size', '11'); lb.textContent = r.label; s.appendChild(lb);
+    lb.setAttribute('fill', '#8b95a7'); lb.setAttribute('font-size', '11'); lb.textContent = r.label; s.appendChild(lb);
   });
   return s;
 }
@@ -629,8 +660,8 @@ function desFa(box, d){
     var rows = (des.faMode === 'q' ? fin.quarterly : fin.annual) || [];
     box.appendChild(el('div', 'note', TX('fa_sec_note')));
     var chart = svgBars(rows.slice(0, 8).reverse().map(function(r){ return {label: des.faMode === 'q' ? dmShort(r.end) : r.end.slice(0, 4), values: [r.rev, r.ni], fmt: function(v, k){ return TX(k ? 'profit' : 'revenue_') + money(v) }} }),
-      ['rev', 'ni'], ['#4fa3ff', function(v){ return v >= 0 ? '#21c66f' : '#ff4b4b' }], 140);
-    var cw = el('div', 'blk'); var lg = el('div', 'legend'); [['#4fa3ff', TX('revenue')], ['#21c66f', TX('net_income')]].forEach(function(x){ var s = el('span'); var i = el('i'); i.style.background = x[0]; s.appendChild(i); s.appendChild(document.createTextNode(x[1])); lg.appendChild(s) });
+      ['rev', 'ni'], ['#6ea8ff', function(v){ return v >= 0 ? '#2fbf71' : '#ef5350' }], 140);
+    var cw = el('div', 'blk'); var lg = el('div', 'legend'); [['#6ea8ff', TX('revenue')], ['#2fbf71', TX('net_income')]].forEach(function(x){ var s = el('span'); var i = el('i'); i.style.background = x[0]; s.appendChild(i); s.appendChild(document.createTextNode(x[1])); lg.appendChild(s) });
     cw.appendChild(lg); cw.appendChild(chart); box.appendChild(cw);
     var tb = table(cols(TX('fa_cols')));
     rows.forEach(function(r){
@@ -665,10 +696,10 @@ function desErn(box, d){
   var e = d.ern || [];
   if (!e.length) { box.appendChild(el('div', 'empty', TX('ern_none'))); return }
   var rows = e.slice(0, 8).reverse();
-  var lg = el('div', 'legend'); [['#5a5a5a', TX('est')], ['#21c66f', TX('beat')], ['#ff4b4b', TX('miss')]].forEach(function(x){ var s = el('span'); var i = el('i'); i.style.background = x[0]; s.appendChild(i); s.appendChild(document.createTextNode(x[1])); lg.appendChild(s) });
+  var lg = el('div', 'legend'); [['#5d6778', TX('est')], ['#2fbf71', TX('beat')], ['#ef5350', TX('miss')]].forEach(function(x){ var s = el('span'); var i = el('i'); i.style.background = x[0]; s.appendChild(i); s.appendChild(document.createTextNode(x[1])); lg.appendChild(s) });
   var cw = el('div', 'blk'); cw.appendChild(el('h4', null, TX('ern_chart'))); cw.appendChild(lg);
   cw.appendChild(svgBars(rows.map(function(r){ return {label: 'Q' + r.q + "'" + String(r.y).slice(2), values: [r.est, r.act], act: r.act, est: r.est, fmt: function(v, k){ return TX(k ? 'act_' : 'est_') + num(v, 2) }} }),
-    ['est', 'act'], ['#5a5a5a', function(v, r){ return r.act >= r.est ? '#21c66f' : '#ff4b4b' }], 130));
+    ['est', 'act'], ['#5d6778', function(v, r){ return r.act >= r.est ? '#2fbf71' : '#ef5350' }], 130));
   box.appendChild(cw);
   var tb = table(cols(TX('ern_cols')));
   e.forEach(function(r){
@@ -767,7 +798,7 @@ function desHds(box, d){
       [TX('si_d'), dmy(last.d)], prev && prev.sh ? [TX('si_prior'), fmt(prev.sh, 0) + ' (' + pct((last.sh / prev.sh - 1) * 100, 1) + ')', cls(last.sh - prev.sh)] : null]);
     if ((sh.rows || []).length > 2) {
       var cw = h4(box, TX('si_chart'));
-      cw.appendChild(svgBars(sh.rows.slice(0, 16).reverse().map(function(r){ return {label: dmShort(r.d).replace(" '", ''), values: [r.sh], fmt: function(v){ return dmy(r.d) + ': ' + fmt(v, 0) }} }), ['sh'], ['#c77dff'], 100));
+      cw.appendChild(svgBars(sh.rows.slice(0, 16).reverse().map(function(r){ return {label: dmShort(r.d).replace(" '", ''), values: [r.sh], fmt: function(v){ return dmy(r.d) + ': ' + fmt(v, 0) }} }), ['sh'], ['#a78bfa'], 100));
     }
   }
   if (h || sh) h4(box, TX('h_trades'));
@@ -856,13 +887,13 @@ function drawHP(box, h){
   st.appendChild(csv); st.appendChild(cp);
   box.appendChild(st);
   var cv = el('div', 'cv'); cv.style.flex = 'none'; cv.style.height = '150px'; cv.style.minHeight = '150px'; box.appendChild(cv);
-  var lines = [{name: h.s, color: last >= first ? '#21c66f' : '#ff4b4b', t: h.t, v: h.c}];
-  if (s50[n - 1] != null) lines.push({name: 'SMA 50', color: '#ffa028', width: 1.1, t: h.t, v: s50});
-  if (lastS200 != null) lines.push({name: 'SMA 200', color: '#4fa3ff', width: 1.1, dash: [5, 4], t: h.t, v: s200});
+  var lines = [{name: h.s, color: last >= first ? '#2fbf71' : '#ef5350', t: h.t, v: h.c}];
+  if (s50[n - 1] != null) lines.push({name: 'SMA 50', color: '#e0b23c', width: 1.1, t: h.t, v: s50});
+  if (lastS200 != null) lines.push({name: 'SMA 200', color: '#6ea8ff', width: 1.1, dash: [5, 4], t: h.t, v: s200});
   drawLines(cv, lines, {pct: false, legend: true, intraday: intra});
   if (rNow != null) {
     var rc = el('div', 'cv'); rc.style.flex = 'none'; rc.style.height = '62px'; rc.style.minHeight = '62px'; box.appendChild(rc);
-    drawLines(rc, [{name: 'RSI(14)', color: '#c77dff', width: 1.2, t: h.t, v: r14}], {pct: false, lo: 0, hi: 100, levels: [30, 70], legend: true, noDates: true, intraday: intra});
+    drawLines(rc, [{name: 'RSI(14)', color: '#a78bfa', width: 1.2, t: h.t, v: r14}], {pct: false, lo: 0, hi: 100, levels: [30, 70], legend: true, noDates: true, intraday: intra});
   }
   var wrap = el('div'); wrap.style.flex = '1'; wrap.style.overflow = 'auto';
   var tb = table(cols(TX('hp_cols')));
@@ -917,7 +948,7 @@ function paintLines(box, series, opts){
   var w = box.clientWidth, h = box.clientHeight; if (!w || !h) return;
   var dpr = window.devicePixelRatio || 1; cv.width = w * dpr; cv.height = h * dpr;
   var g = cv.getContext('2d'); g.scale(dpr, dpr);
-  if (!series.length) { g.fillStyle = '#5a5a5a'; g.font = '12px ' + getComputedStyle(document.body).fontFamily; g.fillText(TX('no_data_c'), 12, 20); return }
+  if (!series.length) { g.fillStyle = '#5d6778'; g.font = '12px ' + getComputedStyle(document.body).fontFamily; g.fillText(TX('no_data_c'), 12, 20); return }
   var pts = series.map(function(s){ var b = s.v[0]; return s.v.map(function(v, i){ return [s.t[i], opts.pct ? (v / b - 1) * 100 : v] }) });
   var t0 = Infinity, t1 = -Infinity, lo = Infinity, hi = -Infinity;
   pts.forEach(function(p){ p.forEach(function(x){ if (x[1] == null || isNaN(x[1])) return; t0 = Math.min(t0, x[0]); t1 = Math.max(t1, x[0]); lo = Math.min(lo, x[1]); hi = Math.max(hi, x[1]) }) });
@@ -930,13 +961,13 @@ function paintLines(box, series, opts){
   (opts.levels || [0, 1, 2, 3, 4].map(function(k){ return lo + (hi - lo) * k / 4 })).forEach(function(v){
     var y = Y(v);
     g.strokeStyle = opts.levels ? 'rgba(255,255,255,0.18)' : 'rgba(255,255,255,0.06)'; g.beginPath(); g.moveTo(L, y); g.lineTo(L + W, y); g.stroke();
-    g.fillStyle = '#5a5a5a'; g.fillText(opts.pct ? pct(v, 1) : fmt(v, opts.levels ? 0 : dg(hi)), L + W + 6, y);
+    g.fillStyle = '#5d6778'; g.fillText(opts.pct ? pct(v, 1) : fmt(v, opts.levels ? 0 : dg(hi)), L + W + 6, y);
   });
   if (opts.pct && lo < 0 && hi > 0) { g.strokeStyle = 'rgba(255,255,255,0.25)'; g.beginPath(); g.moveTo(L, Y(0)); g.lineTo(L + W, Y(0)); g.stroke() }
   g.textBaseline = 'top';
   for (var j = 0; j <= 4 && !opts.noDates; j++) {
     var tt = t0 + (t1 - t0) * j / 4, x = X(tt);
-    g.fillStyle = '#5a5a5a'; var lb = opts.intraday ? mskTime(Math.round(tt), (t1 - t0) > 86400) : dmShort(new Date(tt * 1000).toISOString());
+    g.fillStyle = '#5d6778'; var lb = opts.intraday ? mskTime(Math.round(tt), (t1 - t0) > 86400) : dmShort(new Date(tt * 1000).toISOString());
     g.fillText(lb, Math.min(Math.max(L, x - 24), L + W - 50), Tp + H + 5);
   }
   pts.forEach(function(p, i){
@@ -1093,9 +1124,9 @@ tabs($('imap-tabs'), 'g', function(g){ imapRegion = g; renderImap() });
 function openImap(region){ if (region) { imapRegion = region; setTab($('imap-tabs'), 'g', region) } T.show('p-imap'); renderImap() }
 var IMAP_SCALE = {ch: 3, r5d: 6, rytd: 40, r52: 60};
 function heat(v, scale){
-  if (v == null || isNaN(v)) return '#2a2a2a';
+  if (v == null || isNaN(v)) return '#232b36';
   var x = Math.max(-1, Math.min(1, v / scale));
-  var a = Math.abs(x), base = [42, 42, 42], to = x >= 0 ? [20, 140, 70] : [190, 40, 40];
+  var a = Math.abs(x), base = [38, 45, 56], to = x >= 0 ? [28, 140, 88] : [184, 62, 58];
   var c = base.map(function(b, i){ return Math.round(b + (to[i] - b) * Math.sqrt(a)) });
   return 'rgb(' + c.join(',') + ')';
 }
@@ -1176,7 +1207,7 @@ RENDER['p-imap'] = function(){ setTimeout(renderImap, 30) };
 /* ======================= GC / CB / WIRP ======================= */
 var gc = {tab: 'GC', sel: ['US', 'DE', 'UK', 'JP']};
 try { var sg = JSON.parse(store('gc_sel') || 'null'); if (Array.isArray(sg) && sg.length) gc.sel = sg } catch(e){}
-var GC_COL = {US: '#4fa3ff', DE: '#ffd400', UK: '#c77dff', JP: '#ff4b4b', RU: '#21c66f', EA: '#ffd400', CA: '#ff8c5a', AU: '#56d6d6', CH: '#e0e0e0'};
+var GC_COL = {US: '#6ea8ff', DE: '#f2cc60', UK: '#a78bfa', JP: '#ef5350', RU: '#2fbf71', EA: '#f2cc60', CA: '#ff8c5a', AU: '#56c1d6', CH: '#e0e0e0'};
 var GC_TABS = {};   // GC, CB, WIRP here; mon.js adds WB, BTMM, MMR, SRCH
 tabs($('gc-tabs'), 't', function(t){ gc.tab = t; renderGc() });
 function openGc(tab){ gc.tab = tab || 'GC'; setTab($('gc-tabs'), 't', gc.tab); T.show('p-gc'); renderGc() }
@@ -1245,7 +1276,7 @@ function drawCurves(wrap, list, single){
   var L = 10, R = 52, Tp = 10, B = 22;
   var X = function(v){ return L + (Math.sqrt(v) - x0) / ((x1 - x0) || 1) * (W - L - R) }, Y = function(v){ return Tp + (hi - v) / (hi - lo) * (H - Tp - B) };
   var line = function(x1_, y1_, x2_, y2_, col){ var l = document.createElementNS(NS, 'line'); l.setAttribute('x1', x1_); l.setAttribute('y1', y1_); l.setAttribute('x2', x2_); l.setAttribute('y2', y2_); l.setAttribute('stroke', col); s.appendChild(l) };
-  var text = function(x, y, t, anchor){ var e = document.createElementNS(NS, 'text'); e.setAttribute('x', x); e.setAttribute('y', y); e.setAttribute('fill', '#6a6a6a'); e.setAttribute('font-size', '11'); if (anchor) e.setAttribute('text-anchor', anchor); e.textContent = t; s.appendChild(e) };
+  var text = function(x, y, t, anchor){ var e = document.createElementNS(NS, 'text'); e.setAttribute('x', x); e.setAttribute('y', y); e.setAttribute('fill', '#6b7585'); e.setAttribute('font-size', '11'); if (anchor) e.setAttribute('text-anchor', anchor); e.textContent = t; s.appendChild(e) };
   for (var k = 0; k <= 4; k++) { var v = lo + (hi - lo) * k / 4; line(L, Y(v), W - R, Y(v), 'rgba(255,255,255,0.06)'); text(W - R + 6, Y(v) + 4, fmt(v, 2) + '%') }
   var ticks = [[0.25, '3M'], [1, '1Y'], [2, '2Y'], [5, '5Y'], [10, '10Y'], [20, '20Y'], [30, '30Y']];
   ticks.forEach(function(t){ if (Math.sqrt(t[0]) >= x0 - 1e-9 && Math.sqrt(t[0]) <= x1 + 1e-9) text(X(t[0]), H - 6, t[1], 'middle') });
@@ -1255,7 +1286,7 @@ function drawCurves(wrap, list, single){
     p.setAttribute('stroke-width', width || 2); if (dash) p.setAttribute('stroke-dasharray', dash); s.appendChild(p);
   };
   list.forEach(function(x){
-    var col = GC_COL[x.c] || '#ffa028';
+    var col = GC_COL[x.c] || '#e0b23c';
     if (single) { if (x.cv.m) path(x.cv.x, x.cv.m, col, '1 4', 1.4); if (x.cv.w) path(x.cv.x, x.cv.w, col, '5 4', 1.4) }
     path(x.cv.x, x.cv.y, col, null, 2.2);
     x.cv.x.forEach(function(xx, i){ var c = document.createElementNS(NS, 'circle'); c.setAttribute('cx', X(xx)); c.setAttribute('cy', Y(x.cv.y[i])); c.setAttribute('r', 2.6); c.setAttribute('fill', col);
@@ -1296,7 +1327,7 @@ function drawWirp(box, d){
     tr.appendChild(td((m.d_bp > 0 ? '+' : '') + num(m.d_bp, 1) + TX('bp'), 'num ' + (m.d_bp > 0.5 ? 'up' : m.d_bp < -0.5 ? 'down' : 'flat')));
     tr.appendChild(td((m.cum_bp > 0 ? '+' : '') + num(m.cum_bp, 1) + TX('bp'), 'num ' + (m.cum_bp > 0.5 ? 'up' : m.cum_bp < -0.5 ? 'down' : 'flat')));
     var cell = el('td', 'l'), bar = el('div', 'prob');
-    var parts = [['cut50', '#a01818', pn.cut50], ['cut', '#ff4b4b', pn.cut], ['hold', '#6a6a6a', pn.hold], ['hike', '#21c66f', pn.hike], ['hike50', '#0f7a3e', pn.hike50]];
+    var parts = [['cut50', '#a01818', pn.cut50], ['cut', '#ef5350', pn.cut], ['hold', '#6b7585', pn.hold], ['hike', '#2fbf71', pn.hike], ['hike50', '#0f7a3e', pn.hike50]];
     var lbl = [];
     parts.forEach(function(p){ var v = m[p[0]]; if (!v) return; var i = el('i'); i.style.width = v + '%'; i.style.background = p[1]; i.title = p[2] + ': ' + v + '%'; bar.appendChild(i); lbl.push(p[2] + ' ' + v + '%') });
     cell.appendChild(bar); cell.appendChild(el('div', 'note', lbl.join(' · '))); cell.lastChild.style.padding = '2px 0 0';
@@ -1532,6 +1563,14 @@ RENDER['p-ana'] = function(){ if (!$('ana-body').querySelector('table, .loading'
 /* ======================= W / PORT / ALRT ======================= */
 var My = (function(){
   var st = {tab: 'W', w: [], p: [], alerts: [], server: false, synced: false, quotes: {}, timer: null, msg: ''};
+  // PAPR: a practice account with virtual dollars, kept only in this browser
+  var PAPER_START = 100000, paper = null;
+  function paperLoad(){
+    try { paper = JSON.parse(store('my_paper') || 'null') } catch(e){ paper = null }
+    if (!paper || typeof paper !== 'object' || !isFinite(paper.cash) || typeof paper.pos !== 'object' || !Array.isArray(paper.hist)) paper = {cash: PAPER_START, start: PAPER_START, pos: {}, hist: [], at: Date.now()};
+  }
+  paperLoad();
+  function paperSave(){ store('my_paper', JSON.stringify(paper)) }
   try { st.w = JSON.parse(store('my_w') || '[]') || []; st.p = JSON.parse(store('my_p') || '[]') || [] } catch(e){}
   tabs($('my-tabs'), 't', function(t){ st.tab = t; render() });
   function saveLocal(){ store('my_w', JSON.stringify(st.w)); store('my_p', JSON.stringify(st.p)) }
@@ -1565,7 +1604,7 @@ var My = (function(){
       st.synced = true; saveLocal();
     }).catch(function(){ st.server = false });
   }
-  function syms(){ var a = st.w.slice(); st.p.forEach(function(x){ if (a.indexOf(x.s) < 0) a.push(x.s) }); return a }
+  function syms(){ var a = st.w.slice(); st.p.forEach(function(x){ if (a.indexOf(x.s) < 0) a.push(x.s) }); Object.keys(paper.pos).forEach(function(s){ if (a.indexOf(s) < 0) a.push(s) }); return a }
   function loadQuotes(){
     var s = syms();
     if (!s.length || !T.api()) return Promise.resolve();
@@ -1606,7 +1645,7 @@ var My = (function(){
       if (st.msg !== st.msgShown) { st.msgShown = st.msg; st.msgAt = Date.now() }
       if (Date.now() - st.msgAt < 8000) box.appendChild(el('div', 'err', st.msg)); else st.msg = st.msgShown = '';
     }
-    ({W: renderW, PORT: renderPort, ALRT: renderAlrt})[st.tab](box);
+    ({W: renderW, PORT: renderPort, ALRT: renderAlrt, PAPR: renderPaper})[st.tab](box);
     box.querySelectorAll('input[data-k]').forEach(function(i){ if (drafts[i.dataset.k] && !i.value) i.value = drafts[i.dataset.k]; if (i.dataset.k === focused) i.focus() });
     box.scrollTop = keep;
   }
@@ -1739,7 +1778,85 @@ var My = (function(){
   }
   document.addEventListener('visibilitychange', function(){ if (!document.hidden) loop() });
   setTimeout(function(){ sync().then(loop) }, 1500);
-  return {open: open, addWatch: addWatch, render: render, sync: sync, state: st};
+  // PAPR: buy and sell at the last price with virtual money; no shorts, no fees, no leverage
+  function renderPaper(box){
+    var eq = paper.cash, rows = [];
+    Object.keys(paper.pos).forEach(function(s){
+      var x = paper.pos[s], qq = q(s) || {}, val = qq.px != null ? qq.px * x.q : x.c * x.q;
+      eq += val; rows.push({s: s, q: x.q, c: x.c, px: qq.px, ch: qq.ch, val: val, pl: qq.px != null ? (qq.px - x.c) * x.q : null});
+    });
+    var tot = eq - paper.start;
+    var stl = el('div', 'stat');
+    [[TX('pp_equity'), money(eq)], [TX('pp_cash'), money(paper.cash)], [TX('pp_pl'), (tot >= 0 ? '+' : '') + money(tot) + ' (' + pct(tot / paper.start * 100) + ')', cls(tot)],
+     [TX('pp_trades'), fmt(paper.hist.length, 0)]].forEach(function(x){ var sp = el('span', null, x[0] + ': '); sp.appendChild(el('b', x[2] || null, x[1])); stl.appendChild(sp) });
+    box.appendChild(stl);
+    var amt = el('input', 'n'); amt.placeholder = TX('pp_amt'); amt.dataset.k = 'paper-a'; amt.title = TX('pp_amt_t'); amt.style.width = '110px';
+    var sell = el('button', 'btn', TX('sell')); sell.type = 'button';
+    var fm = form(TX('ticker'), TX('buy'), function(v){ paperTrade(v, amt.value, 1) }, [amt]);
+    fm.f.appendChild(sell);
+    sell.onclick = function(){ paperTrade(fm.i.value, amt.value, -1) };
+    var rst = el('button', 'btn', TX('pp_reset')); rst.type = 'button'; rst.style.marginLeft = 'auto';
+    rst.onclick = function(){ if (!confirm(TX('pp_reset_q'))) return; paper = {cash: PAPER_START, start: PAPER_START, pos: {}, hist: [], at: Date.now()}; paperSave(); render() };
+    fm.f.appendChild(rst);
+    fm.i.value = takePrefill('PAPR');
+    box.appendChild(fm.f);
+    if (rows.length) {
+      var tb = table(cols(TX('pp_cols')));
+      rows.forEach(function(r){
+        var tr = el('tr', 'row'); tr.dataset.s = r.s;
+        tr.appendChild(td(r.s, 'l tkc')); tr.appendChild(td(fmt(r.q, r.q % 1 ? 4 : 0), 'num')); tr.appendChild(td(price(r.c), 'num'));
+        var p = td(price(r.px), 'num'); p.dataset.k = 'p'; tr.appendChild(p);
+        var c = chg(r.ch); c.dataset.k = 'c'; tr.appendChild(c);
+        tr.appendChild(td(money(r.val), 'num')); tr.appendChild(td(r.pl == null ? '—' : (r.pl >= 0 ? '+' : '') + money(r.pl), 'num ' + cls(r.pl)));
+        tr.appendChild(chg(r.px != null && r.c ? (r.px / r.c - 1) * 100 : null, 1));
+        tr.onclick = function(){ openSym(r.s) };
+        tb.body.appendChild(tr);
+      });
+      box.appendChild(tb.t);
+    } else box.appendChild(el('div', 'empty', TX('pp_empty', money(PAPER_START))));
+    if (paper.hist.length) {
+      box.appendChild(el('div', 'sec', TX('pp_hist')));
+      var th = table(cols(TX('pp_hcols')));
+      paper.hist.slice(-30).reverse().forEach(function(h){
+        var tr = el('tr');
+        tr.appendChild(td(new Date(h.t).toLocaleString(I.date, {day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit', timeZone: T.MSK}), 'l'));
+        tr.appendChild(td(TX(h.q > 0 ? 'buy' : 'sell'), 'l ' + (h.q > 0 ? 'up' : 'down'))); tr.appendChild(td(h.s, 'l tkc'));
+        tr.appendChild(td(fmt(Math.abs(h.q), Math.abs(h.q) % 1 ? 4 : 0), 'num')); tr.appendChild(td(price(h.px), 'num')); tr.appendChild(td(money(Math.abs(h.q) * h.px), 'num'));
+        th.body.appendChild(tr);
+      });
+      box.appendChild(th.t);
+    }
+    box.appendChild(el('div', 'note', TX('pp_note')));
+  }
+  function paperTrade(sym, amount, sign){
+    sym = upSym(sym); var a = String(amount || '').trim().replace(',', '.');
+    if (!sym || !a) { st.msg = TX('pp_need'); return render() }
+    if (!T.api()) { st.msg = TX('srv_not_set_e'); return render() }
+    api('/api/quote?s=' + encodeURIComponent(sym)).then(function(d){
+      var qs = d.quotes || {}, key = Object.keys(qs)[0], x = key ? qs[key] : null;
+      if (!x || !(x.px > 0)) throw new Error(TX('pp_noquote', sym));
+      // dollars only: an index, a currency pair or a Moscow share has no dollar price to trade at
+      if (x.cur !== '$') throw new Error(TX('pp_usd_only'));
+      st.quotes[key] = x;
+      var usd = /^\$/.test(a) || /\$$/.test(a), n = parseFloat(a.replace(/\$/g, ''));
+      if (!(n > 0)) throw new Error(TX('pp_need'));
+      var qty = usd ? n / x.px : n, cost = qty * x.px, have = paper.pos[key];
+      if (sign > 0) {
+        if (cost > paper.cash + 1e-6) throw new Error(TX('pp_nocash', money(paper.cash)));
+        var nq = (have ? have.q : 0) + qty;
+        paper.pos[key] = {q: nq, c: have ? (have.q * have.c + cost) / nq : x.px};
+        paper.cash -= cost;
+      } else {
+        if (!have || qty > have.q + 1e-9) throw new Error(TX('pp_noshares', have ? fmt(have.q, 4) : '0'));
+        have.q -= qty; paper.cash += cost;
+        if (have.q < 1e-9) delete paper.pos[key];
+      }
+      paper.hist.push({t: Date.now(), s: key, q: sign * qty, px: x.px});
+      if (paper.hist.length > 500) paper.hist = paper.hist.slice(-500);
+      paperSave(); st.msg = ''; st.noDraft = true; render();
+    }).catch(function(e){ st.msg = e.message || String(e); render() });
+  }
+  return {open: open, addWatch: addWatch, render: render, sync: sync, state: st, paper: function(){ return paper }};
 })();
 RENDER['p-my'] = function(){ My.render() };
 
@@ -1839,6 +1956,7 @@ C.W = function(arg){ if (arg) My.addWatch(String(arg).split(/[\s,]+/)); My.open(
 C.WATCH = C.W; C['СПИСОК'] = C.W;
 C.PORT = function(arg){ My.open('PORT', arg || '') }; C['ПОРТФЕЛЬ'] = C.PORT;
 C.ALRT = function(arg){ My.open('ALRT', arg || '') }; C.ALERT = C.ALRT; C['АЛЕРТ'] = C['АЛЕРТЫ'] = C.ALRT;
+C.PAPR = function(arg){ My.open('PAPR', arg || '') }; C.PAPER = C.PAPR; C.DEMO = C.PAPR; C['ДЕМО'] = C['ДЕМОСЧЁТ'] = C['ДЕМОСЧЕТ'] = C.PAPR;
 C.LAYOUT = function(arg){ var m = String(arg || '').trim(); if (m === '5') m = '1'; Layout.setMode(LAYOUTS[m] ? m : (Layout.mode() === '1' ? '4' : '1')) };
 C.LP = C.LAYOUT; C['РАСКЛАДКА'] = C.LAYOUT;
 C.EVTS = function(){ T.show('p-eco'); ecoTab = 'earn'; setTab($('eco-tabs'), 't', 'earn'); renderEarn() };

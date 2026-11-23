@@ -3,6 +3,14 @@
 import http from "node:http";
 import { PAGES, TOKEN, OWNER, KV, installMocks, dataJson, stocksJson, ratesJson, coAAPL, optAAPL, optionsJson, macroJson, moexJson, geoRoute } from "./mocks.mjs";
 import { wpeJson, ratesExtra, macroMap, auctionsJson } from "./geo_fixtures.mjs";
+import { readFileSync } from "node:fs";
+// option analytics written by the real gex.py (tests/make_gex_fixtures.py) and tankers as the bot would write them
+const gexFx = (n) => JSON.parse(readFileSync(new URL("./fixtures/pages/gex/" + n, import.meta.url), "utf8"));
+const now = Date.now(), iso = (ms) => new Date(ms).toISOString();
+const shipsJson = { updated: iso(now - 600e3), src: "aisstream.io", hours: 12,
+  areas: [{ id: "hormuz", name: "Strait of Hormuz", name_ru: "Ормузский пролив", box: [24.8, 54.5, 27.6, 58.2], tankers: 2, seen_now: 3 }],
+  ships: [{ mmsi: 538001234, name: "OCEAN STAR", type: 80, lat: 26.5, lon: 56.3, sog: 12.4, cog: 301, nav: 0, area: "hormuz", dest: "FUJAIRAH", t: iso(now - 900e3) },
+          { mmsi: 538005678, name: "GULF DAWN", type: 84, lat: 26.1, lon: 55.9, sog: 0, cog: null, nav: 1, area: "hormuz", t: iso(now - 1800e3) }], tk: {} };
 
 installMocks();
 const worker = (await import("../worker/src/index.js")).default;
@@ -10,7 +18,9 @@ const env = { TELEGRAM_BOT_TOKEN: TOKEN, OWNER_ID: OWNER, FINNHUB_API_KEY: "FHKE
 const ctx = { waitUntil() {} };
 const FX = { "data.json": dataJson, "stocks.json": stocksJson, "rates.json": ratesJson, "co/AAPL.json": coAAPL, "opt/AAPL.json": optAAPL,
   "options.json": optionsJson, "macro.json": { ...macroJson, map: macroMap }, "moex.json": moexJson, "wpe.json": wpeJson, "auctions.json": auctionsJson,
-  "rates.json": { ...ratesJson, ...ratesExtra } };
+  "rates.json": { ...ratesJson, ...ratesExtra },
+  "gex/SPX.json": gexFx("SPX.json"), "gex/BTC.json": gexFx("BTC.json"), "gex/hist/SPX.json": gexFx("hist/SPX.json"), "gex/hist/BTC.json": gexFx("hist/BTC.json"),
+  "ships.json": shipsJson };
 
 const port = Number(process.argv[2] || 8787);
 http.createServer(async (req, res) => {

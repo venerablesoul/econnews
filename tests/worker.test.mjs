@@ -998,10 +998,12 @@ await test("/api/geo: only the listed sources, JSON passed through; /api/perf: r
   assert.equal(ok.headers.get("Access-Control-Allow-Origin"), "*");
   const hol = await api("/api/geo?u=" + encodeURIComponent("https://date.nager.at/api/v3/PublicHolidays/2026/RU"));
   assert.ok(Array.isArray(hol.json) && hol.json.some((x) => x.date.endsWith("-11-04")), JSON.stringify(hol.json).slice(0, 200));
-  for (const bad of ["https://evil.example.com/x.json", "http://earthquake.usgs.gov/x", "file:///etc/passwd", "not a url"]) {
+  for (const bad of ["https://evil.example.com/x.json", "http://earthquake.usgs.gov/x", "file:///etc/passwd", "not a url", "https://gdacs.org/redir-evil"]) {
     const r = await api("/api/geo?u=" + encodeURIComponent(bad));
     assert.equal(r.json.ok, false, bad);
   }
+  const redir = await api("/api/geo?u=" + encodeURIComponent("https://gdacs.org/redir-ok"));
+  assert.ok(Array.isArray(redir.json.features), "a redirect to a listed source is followed");
   const { returnsFrom } = await import("../worker/src/extra.js");
   const day = 86400, t1 = Date.UTC(2026, 9, 21) / 1000, t = [], c = [];
   for (let i = 400; i >= 0; i--) { t.push(t1 - i * day); c.push(100 + (400 - i) * 0.25); }   // +0.25 a day

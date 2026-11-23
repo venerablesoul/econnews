@@ -188,6 +188,9 @@ export function route(url, init) {
 // the map and monitor sources (/api/geo and the terminal e2e tests)
 export function geoRoute(u) {
   const p = u.pathname, q = u.searchParams;
+  // redirects: to a listed source (followed) and to any other address (refused by the proxy)
+  if (u.host === "gdacs.org" && p === "/redir-ok") return { __redirect: "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.geojson" };
+  if (u.host === "gdacs.org" && p === "/redir-evil") return { __redirect: "https://evil.example.com/x.json" };
   if (u.host === "earthquake.usgs.gov") return G.usgs;
   if (u.host === "meri.digitraffic.fi") return p.endsWith("/locations") ? G.dtLocations : p.endsWith("/vessels") ? G.dtVessels : undefined;
   if (u.host === "eonet.gsfc.nasa.gov") return G.eonet;
@@ -224,6 +227,7 @@ export function installMocks() {
     });
   }
   const body = route(url, init);
+  if (body && body.__redirect) return new Response(null, { status: 302, headers: { location: body.__redirect } });
   const status = body && body.__status ? body.__status : 200;
   return new Response(JSON.stringify(body), { status, headers: { "content-type": "application/json" } });
   };
