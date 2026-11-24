@@ -419,6 +419,68 @@ class FeedLinks(unittest.TestCase):
         self.assertEqual(links, {"Good": "https://example.com/a", "Script": "", "Data": "", "Atom": "HTTP://example.com/b"})
 
 
+class TranslationRecovery(unittest.TestCase):
+    def setUp(self):
+        import news_bot
+        self.nb = news_bot
+        for d in (news_bot._tr_cache, news_bot._tr_fail, news_bot._engine_off):
+            d.clear()
+        news_bot._ai_tried.clear()
+
+    def test_a_failure_is_retried_later_not_cached_forever(self):
+        nb, calls = self.nb, []
+
+        def google(text, src, lang):
+            calls.append(lang)
+            if len(calls) == 1:
+                raise urllib.error.HTTPError("u", 429, "busy", {}, None)
+            return f"[{lang}] {text}"
+
+        google.__name__ = "_google"
+        with mock.patch.object(nb, "_google", google), mock.patch.object(nb, "_mymemory", lambda *a: None):
+            self.assertIsNone(nb.translate("Oil jumps", "ru"))
+            self.assertIn("_google", nb._engine_off)
+            self.assertIsNone(nb.translate("Oil jumps", "ru"))
+            self.assertEqual(len(calls), 1)
+            nb._engine_off.clear()
+            nb._tr_fail[("Oil jumps", "ru")] -= nb.TR_RETRY_S + 1
+            self.assertEqual(nb.translate("Oil jumps", "ru"), "[ru] Oil jumps")
+            self.assertEqual(nb.translate("Oil jumps", "ru"), "[ru] Oil jumps")
+            self.assertEqual(len(calls), 2)
+
+    def test_backfill_fills_shown_stories_newest_first(self):
+        nb = self.nb
+        now = datetime(2026, 11, 24, 17, 0, tzinfo=timezone.utc)
+        st = {"recent": [
+            {"title": "Old story", "score": 9, "ts": (now - timedelta(hours=60)).isoformat()},
+            {"title": "Quiet story", "score": 1, "ts": now.isoformat()},
+            {"title": "Saudi budget deficit", "score": 9, "lead": "Riyadh expects a gap", "ts": (now - timedelta(minutes=20)).isoformat()},
+            {"title": "ЦБ сохранил ставку", "score": 9, "title_en": "CBR holds", "ts": (now - timedelta(minutes=10)).isoformat()},
+        ]}
+        with mock.patch.object(nb, "translate", side_effect=lambda t, lang="ru": f"[{lang}] {t}"), \
+                mock.patch.object(nb, "ai_fill_titles", return_value=0):
+            n = nb.backfill_translations(st, now)
+        saudi, cbr = st["recent"][2], st["recent"][3]
+        self.assertEqual(saudi["title_ru"], "[ru] Saudi budget deficit")
+        self.assertEqual(saudi["lead_zh"], "[zh] Riyadh expects a gap")
+        self.assertNotIn("title_en", saudi)
+        self.assertEqual((cbr["title_en"], cbr["title_zh"]), ("CBR holds", "[zh] ЦБ сохранил ставку"))
+        self.assertNotIn("title_ru", st["recent"][0])
+        self.assertNotIn("title_ru", st["recent"][1])
+        self.assertEqual(n, 3 + 3 + 2)
+
+    def test_ai_fills_titles_the_free_translators_missed(self):
+        nb = self.nb
+        items = [{"title": "Hilton CMBS wipeout", "title_zh": "希尔顿"}, {"title": "Hilton CMBS wipeout", "title_zh": "希尔顿"}]
+        answer = json.dumps([{"i": 1, "en": "Hilton CMBS wipeout", "ru": "Списание CMBS Hilton", "zh": "别的", "ar": "شطب"}])
+        with mock.patch.dict(os.environ, {"ANTHROPIC_API_KEY": "test"}), \
+                mock.patch.object(ai, "_call", side_effect=lambda *a, **k: answer):
+            self.assertEqual(nb.ai_fill_titles(items), 2)
+            self.assertEqual(nb.ai_fill_titles([{"title": "Hilton CMBS wipeout"}]), 0)
+        self.assertEqual((items[0]["title_ru"], items[0]["title_zh"], items[0]["title_ar"]), ("Списание CMBS Hilton", "希尔顿", "شطب"))
+        self.assertNotIn("title_en", items[0])
+
+
 class NewsBotIntegration(unittest.TestCase):
     def test_page_news_item_has_tickers(self):
         import news_bot

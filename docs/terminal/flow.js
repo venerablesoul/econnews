@@ -182,18 +182,41 @@ function liveBar(m, t){
 }
 
 /* ---------- the heatmap columns: two a second ---------- */
-var SAMPLE_MS = 500, MAX_COLS = 1800, HBAND = 0.005;
+var SAMPLE_MS = 500, MAX_COLS = 1800, HBAND = 0.005, HBASE = 0.0015, ROW_PX = 4, CONTRAST = [0.35, 0.55, 0.7, 0.82, 0.9];
+fl.con = Math.max(0, Math.min(CONTRAST.length - 1, Math.round(+(store('flow_con') || 2)) || 0));
+function niceUp(x){
+  if (!(x > 0)) return 0;
+  var e = Math.pow(10, Math.floor(Math.log10(x))), f = Math.round(x / e * 1000) / 1000;
+  return (f <= 1 ? 1 : f <= 2 ? 2 : f <= 2.5 ? 2.5 : f <= 5 ? 5 : 10) * e;
+}
+function tickOf(m){
+  var ps = []; m.bids.forEach(function(_, p){ ps.push(p) }); ps.sort(function(a, b){ return b - a }); ps = ps.slice(0, 400);
+  var t = Infinity; for (var i = 1; i < ps.length; i++) { var d = ps[i - 1] - ps[i]; if (d > 0 && d < t) t = d }
+  return isFinite(t) ? +t.toPrecision(6) : 0;
+}
 function sample(m){
   var now = Date.now(); if (now - m.lastCol < SAMPLE_MS - 20 || !m.synced) return;
   m.lastCol = now;
   var bb = bestBid(m), ba = bestAsk(m); if (!isFinite(bb) || !isFinite(ba) || bb >= ba) return;
-  var mid = (bb + ba) / 2, hs = m.hstep || (m.hstep = (m.step || (m.step = stepFor(mid))) / 5), band = mid * HBAND;
+  var mid = (bb + ba) / 2;
+  if (!m.hstep) { m.step = m.step || stepFor(mid); m.ptick = tickOf(m); m.hstep = niceUp(Math.max(m.step / 10, m.ptick)) }
+  var hs = m.hstep, band = mid * HBAND;
   var k0 = Math.floor((mid - band) / hs), n = Math.ceil(2 * band / hs) + 2, q = new Float32Array(n);
-  var add = function(qty, p){ var k = Math.round(p / hs) - k0; if (k >= 0 && k < n) q[k] += qty };
+  var add = function(qty, p){ var k = Math.floor(p / hs + 1e-7) - k0; if (k >= 0 && k < n) q[k] += qty };
   m.bids.forEach(add); m.asks.forEach(add);
-  m.cols.push({t: now, bb: bb, ba: ba, mid: mid, k0: k0, q: q, klo: isFinite(m.lo) ? Math.ceil(m.lo / hs) : -Infinity, khi: isFinite(m.hi) ? Math.floor(m.hi / hs) : Infinity});
+  m.cols.push({t: now, bb: bb, ba: ba, mid: mid, k0: k0, q: q, klo: isFinite(m.lo) ? Math.ceil(m.lo / hs - 1e-7) : -Infinity, khi: isFinite(m.hi) ? Math.floor(m.hi / hs + 1e-7) : Infinity});
   if (m.cols.length > MAX_COLS) m.cols.splice(0, m.cols.length - MAX_COLS);
   if (now - (m.snapAt || 0) > 60e3 && (bb - m.lo < band || m.hi - ba < band)) { m.synced = false; m.buf = []; snapshot(m) }
+}
+function rowStep(hs, pxPer){
+  var b = hs;
+  for (var i = 0; i < 40; i++) {
+    var r = b / hs;
+    if (Math.abs(r - Math.round(r)) < 1e-6 && b * pxPer >= ROW_PX) return b;
+    b = niceUp(b * 1.0001 + 1e-12);
+    if (b <= hs) b = hs * 2;
+  }
+  return hs * Math.max(1, Math.ceil(ROW_PX / (hs * pxPer)));
 }
 
 /* ======================= drawing ======================= */
@@ -236,6 +259,11 @@ function render(){
       b.onclick = function(){ if (z[1]) zoomBy(z[1], false); else fl.z[fl.tab] = zdef()[fl.tab]; repaint() };
       zc.appendChild(b);
     });
+    if (fl.tab === 'HEAT') {
+      var cb = el('button', 'chipbtn zb', '◐'); cb.type = 'button'; cb.title = TX('fl_contrast_t');
+      cb.onclick = function(){ fl.con = (fl.con + 1) % CONTRAST.length; store('flow_con', String(fl.con)); if (M) M._lv = null; repaint() };
+      zc.appendChild(cb);
+    }
   }
   box.appendChild(f);
   box.appendChild(wrap);
@@ -275,7 +303,7 @@ function zoomable(wrap, repaint){
     var z = fl.z[fl.tab], H = wrap.clientHeight, W = wrap.clientWidth, m = M;
     drag = {x0: e.clientX, y0: e.clientY, off0: z.off, po0: z.po || 0,
       perX: fl.tab === 'HEAT' ? 1 / (1.5 * z.t) : fl.tab === 'FOOT' ? 1 / Math.round(96 * z.w) : (z.n || 160) / Math.max(1, W - 72),
-      perY: fl.tab === 'HEAT' && m && m.cols.length ? 2 * m.cols[m.cols.length - 1].mid * 0.0035 / z.p / H : 0};
+      perY: fl.tab === 'HEAT' && m && m.cols.length ? 2 * m.cols[m.cols.length - 1].mid * HBASE / z.p / Math.max(1, H - 18) : 0};
     wrap.classList.add('grabbing');
   });
   wrap.addEventListener('pointermove', function(e){
@@ -302,91 +330,144 @@ function waiting(wrap, g, W, H){ var K = C(); g.fillStyle = K.faint; g.fillText(
 function paintHeat(wrap){
   var c = canvasIn(wrap); if (!c) return;
   var g = c.g, W = c.W, H = c.H, K = C(), m = M;
-  if (!m || !m.cols.length) return waiting(wrap, g, W, H);
-  var R = 70, PR = 90, B = 18, cols = m.cols, cur = cols[cols.length - 1], hs = m.hstep, z = fl.z.HEAT, plotW = W - R - PR, plotH = H - B;
+  if (!m || !m.cols.length || !m.hstep) return waiting(wrap, g, W, H);
+  var R = 76, PR = 104, B = 18, cols = m.cols, cur = cols[cols.length - 1], hs = m.hstep, z = fl.z.HEAT, plotW = W - R - PR, plotH = H - B;
   var cw = 1.5 * z.t, cap = Math.max(1, Math.floor(plotW / cw));
   z.off = Math.max(0, Math.min(Math.round(z.off), cols.length - Math.min(cap, cols.length)));
   var view = cols.slice(Math.max(0, cols.length - cap - z.off), cols.length - z.off), n = view.length, last = view[n - 1];
   var X0 = plotW - n * cw;
-  z.p = Math.max(0.5, Math.min(Math.max(1, cur.mid * 0.0035 / (5 * hs)), z.p));
-  var mid = cur.mid + z.po, band = cur.mid * 0.0035 / z.p, lo = mid - band, hi = mid + band;
-  var Y = function(p){ return (hi - p) / (hi - lo) * plotH };
-  var bin = Math.max(1, Math.ceil(2 / (hs / (hi - lo) * plotH))), bstep = hs * bin, rowH = bstep / (hi - lo) * plotH;
-  var bLo = Math.floor(lo / bstep), bHi = Math.ceil(hi / bstep), nr = Math.max(1, bHi - bLo);
-  var vals = new Float32Array(n * nr), sampleV = [];
+  z.p = Math.max(HBASE / HBAND, Math.min(Math.max(1, cur.mid * HBASE / (8 * hs)), z.p));
+  var bandMax = cur.mid * HBAND * 0.98;
+  z.po = Math.max(-bandMax, Math.min(bandMax, z.po));
+  var mid = cur.mid + z.po, band = cur.mid * HBASE / z.p, lo = mid - band, hi = mid + band;
+  var pxPer = plotH / (hi - lo), Y = function(p){ return (hi - p) * pxPer };
+  var bstep = rowStep(hs, pxPer), bin = Math.max(1, Math.round(bstep / hs)), rowH = bstep * pxPer;
+  var bLo = Math.floor(lo / bstep + 1e-9), bHi = Math.ceil(hi / bstep - 1e-9), nr = Math.max(1, bHi - bLo);
+  var vals = new Float32Array(n * nr);
   for (var i = 0; i < n; i++) {
     var col = view[i], q = col.q, base = col.k0;
     for (var r = 0; r < nr; r++) {
-      var k1 = (bLo + r) * bin, k2 = k1 + bin, v = 0, known = false;
-      for (var k = k1; k < k2; k++) { if (k < col.klo || k > col.khi) continue; var ix = k - base; if (ix >= 0 && ix < q.length) { v += q[ix]; known = true } }
+      var k1 = (bLo + r) * bin, v = 0, known = false;
+      for (var k = k1; k < k1 + bin; k++) { if (k < col.klo || k > col.khi) continue; var ix = k - base; if (ix >= 0 && ix < q.length) { v += q[ix]; known = true } }
       vals[i * nr + r] = known ? v : -1;
-      if (v > 0 && (i * nr + r) % 7 === 0) sampleV.push(v);
     }
   }
-  sampleV.sort(function(a, b){ return a - b });
-  var med = sampleV[Math.floor(sampleV.length * 0.5)] || 1, top = Math.max(med * 4, sampleV[Math.floor(sampleV.length * 0.995)] || 1);
-  var lt = Math.log(1 + top / med);
+  var pos = [], stride = Math.max(1, Math.floor(vals.length / 8000));
+  for (var j = 0; j < vals.length; j += stride) if (vals[j] > 0) pos.push(vals[j]);
+  pos.sort(function(a, b){ return a - b });
+  var f0 = pos.length ? pos[Math.floor((pos.length - 1) * CONTRAST[fl.con])] : 1, t0 = pos.length ? pos[Math.floor((pos.length - 1) * 0.997)] : 1;
+  if (!(t0 > f0 * 1.5)) t0 = f0 * 1.5;
+  var lv = m._lv, key = bstep + ':' + fl.con;
+  if (lv && lv.key === key && f0 / lv.f < 3 && lv.f / f0 < 3) { lv.f += (f0 - lv.f) * 0.2; lv.t += (t0 - lv.t) * 0.2 } else lv = m._lv = {key: key, f: f0, t: t0};
+  var fl_ = lv.f, top = Math.max(lv.t, fl_ * 1.5);
+  var shade = function(v){ return v <= 0 ? 0 : v <= fl_ ? 0.12 * v / fl_ : Math.min(1, 0.12 + 0.88 * Math.pow((v - fl_) / (top - fl_), 0.55)) };
   var off = m._hc || (m._hc = document.createElement('canvas'));
-  if (off.width !== n || off.height !== nr) { off.width = Math.max(1, n); off.height = nr }
+  if (off.width !== Math.max(1, n) || off.height !== nr) { off.width = Math.max(1, n); off.height = nr }
   var og = off.getContext('2d'), img = og.createImageData(Math.max(1, n), nr), d = img.data;
   for (var i2 = 0; i2 < n; i2++) for (var r2 = 0; r2 < nr; r2++) {
     var v2 = vals[i2 * nr + r2], o = ((nr - 1 - r2) * n + i2) * 4;
-    if (v2 < 0) { d[o] = 20; d[o + 1] = 22; d[o + 2] = 27; d[o + 3] = 255; continue }
-    var t = v2 > 0 ? Math.min(1, Math.log(1 + v2 / med) / lt) : 0, li = Math.round(Math.pow(t, 1.25) * 255) * 3;
+    if (v2 < 0) { d[o] = 26; d[o + 1] = 28; d[o + 2] = 33; d[o + 3] = 255; continue }
+    var li = Math.round(shade(v2) * 255) * 3;
     d[o] = LUT[li]; d[o + 1] = LUT[li + 1]; d[o + 2] = LUT[li + 2]; d[o + 3] = 255;
   }
   og.putImageData(img, 0, 0);
-  g.fillStyle = 'rgb(13,16,22)'; g.fillRect(0, 0, plotW, plotH);
+  g.fillStyle = 'rgb(10,13,20)'; g.fillRect(0, 0, plotW, plotH);
   if (n) { g.imageSmoothingEnabled = false; g.drawImage(off, 0, 0, n, nr, X0, Y(bHi * bstep), n * cw, nr * rowH); g.imageSmoothingEnabled = true }
-  var dd = dg(mid), tickStep = niceStep((hi - lo) / 8), tdd = tickStep < 1 ? Math.max(dd, Math.ceil(-Math.log10(tickStep))) : Math.max(0, dd - 1);
-  g.fillStyle = alpha(K.text, 0.05);
+  var dd = dg(mid), tickStep = niceStep((hi - lo) / Math.max(4, Math.floor(plotH / 42)));
+  if (tickStep < bstep) tickStep = bstep;
+  var tdd = Math.max(0, Math.min(8, Math.ceil(-Math.log10(Math.min(tickStep, bstep)) - 1e-9)));
+  g.fillStyle = alpha(K.text, 0.06);
   for (var p = Math.ceil(lo / tickStep) * tickStep; p <= hi; p += tickStep) g.fillRect(0, px(Y(p)), plotW, 1);
-  ['bb', 'ba'].forEach(function(key){
-    g.beginPath(); view.forEach(function(col, i){ var y = px(Y(col[key])) + 0.5; if (i) g.lineTo(X0 + i * cw, y); else g.moveTo(X0, y); g.lineTo(X0 + (i + 1) * cw, y) });
-    g.strokeStyle = key === 'bb' ? K.up : K.down; g.lineWidth = 1.5; g.lineJoin = 'miter'; g.stroke(); g.lineWidth = 1;
+  ['bb', 'ba'].forEach(function(key2){
+    g.beginPath(); view.forEach(function(col, i){ var y = px(Y(col[key2])) + 0.5; if (i) g.lineTo(X0 + i * cw, y); else g.moveTo(X0, y); g.lineTo(X0 + (i + 1) * cw, y) });
+    g.strokeStyle = key2 === 'bb' ? K.up : K.down; g.lineWidth = 1.5; g.lineJoin = 'miter'; g.stroke(); g.lineWidth = 1;
   });
-  var t1 = last.t, tLeft = t1 - (plotW / cw) * SAMPLE_MS, mxq = 0, X = function(t){ return plotW - (t1 - t) / SAMPLE_MS * cw - cw / 2 };
+  var t1 = last.t, tLeft = t1 - (plotW / cw) * SAMPLE_MS, X = function(t){ return plotW - (t1 - t) / SAMPLE_MS * cw - cw / 2 };
   var tr = m.trades.filter(function(t){ return t.t >= tLeft && t.t <= t1 + SAMPLE_MS && t.p >= lo && t.p <= hi });
-  tr.forEach(function(t){ if (t.q > mxq) mxq = t.q });
   if (X0 > 4) {
     g.beginPath(); var started = false;
     tr.forEach(function(t){ var x = X(t.t); if (x > X0) return; if (started) g.lineTo(x, Y(t.p)); else { g.moveTo(x, Y(t.p)); started = true } });
     g.strokeStyle = alpha(K.text, 0.35); g.lineWidth = 1; g.stroke();
-    if (X0 > 150) { g.fillStyle = K.faint; g.textAlign = 'center'; g.fillText(TX('fl_heat_filling', Math.round(n * SAMPLE_MS / 1000)), X0 / 2, 16); g.textAlign = 'left' }
+    if (X0 > 150) { g.fillStyle = K.faint; g.textAlign = 'center'; g.fillText(TX('fl_heat_filling', Math.round(n * SAMPLE_MS / 1000)), X0 / 2, 34); g.textAlign = 'left' }
   }
+  var tb = Math.max(1, Math.ceil(7 / cw)), agg = {}, amax = 0;
   tr.forEach(function(t){
-    var x = X(t.t), big = isBig(m, t), r = Math.max(1.2, Math.sqrt(t.q / (mxq || 1)) * 10);
-    if (x < 0 || x > plotW) return;
-    g.beginPath(); g.arc(x, Y(t.p), r, 0, 6.283); g.fillStyle = alpha(t.sell ? K.down : K.up, big ? 0.9 : 0.5); g.fill();
-    if (big) { g.strokeStyle = 'rgba(255,255,255,.7)'; g.lineWidth = 1; g.stroke() }
+    var ci = Math.floor((t1 - t.t) / SAMPLE_MS / tb), ri = Math.floor(t.p / bstep + 1e-9), k3 = ci + ':' + ri + ':' + (t.sell ? 1 : 0);
+    var a = agg[k3] || (agg[k3] = {ci: ci, ri: ri, sell: t.sell, q: 0, big: false});
+    a.q += t.q; if (isBig(m, t)) a.big = true; if (a.q > amax) amax = a.q;
   });
-  var depthW = PR - 6, bx = plotW + 4, qmax = 0, rows = {};
-  var addRow = function(q, p, side){ if (p < lo || p > hi) return; var b = Math.floor((p / hs + 0.5) / bin); var rr = rows[b] || (rows[b] = [0, 0]); rr[side] += q; if (rr[side] > qmax) qmax = rr[side] };
-  m.bids.forEach(function(q, p){ addRow(q, p, 0) }); m.asks.forEach(function(q, p){ addRow(q, p, 1) });
-  var rh = Math.max(1, Math.round(rowH) - (rowH >= 4 ? 1 : 0));
-  for (var b in rows) { var y = px(Y((+b + 1) * bstep)); if (rows[b][0]) { g.fillStyle = alpha(K.up, 0.65); g.fillRect(bx, y, rows[b][0] / qmax * depthW, rh) } if (rows[b][1]) { g.fillStyle = alpha(K.down, 0.65); g.fillRect(bx, y, rows[b][1] / qmax * depthW, rh) } }
+  var rMax = Math.max(6, Math.min(14, rowH * 2.5));
+  Object.keys(agg).map(function(k4){ return agg[k4] }).sort(function(a, b){ return a.q - b.q }).forEach(function(a){
+    var x = plotW - (a.ci + 0.5) * tb * cw, y = Y((a.ri + 0.5) * bstep), r = Math.max(1.3, Math.sqrt(a.q / (amax || 1)) * rMax);
+    if (x < 0 || x > plotW) return;
+    g.beginPath(); g.arc(x, y, r, 0, 6.283); g.fillStyle = alpha(a.sell ? K.down : K.up, a.big ? 0.92 : r < 2.5 ? 0.4 : 0.62); g.fill();
+    if (a.big) { g.strokeStyle = 'rgba(255,255,255,.85)'; g.lineWidth = 1.2; g.stroke(); g.lineWidth = 1 }
+  });
+  var depthW = PR - 8, bx = plotW + 4, qmax = 0, rows = {};
+  var addRow = function(q2, p2, side){ if (p2 < lo || p2 > hi) return; var b2 = Math.floor(p2 / bstep + 1e-9); var rr = rows[b2] || (rows[b2] = [0, 0]); rr[side] += q2; if (rr[side] > qmax) qmax = rr[side] };
+  m.bids.forEach(function(q2, p2){ addRow(q2, p2, 0) }); m.asks.forEach(function(q2, p2){ addRow(q2, p2, 1) });
+  g.fillStyle = 'rgb(13,16,22)'; g.fillRect(plotW, 0, PR, plotH);
+  var rh = Math.max(1, rowH - (rowH >= 5 ? 1 : 0)), walls = [[], []];
+  for (var b in rows) {
+    var y2 = Y((+b + 1) * bstep);
+    for (var sd = 0; sd < 2; sd++) if (rows[b][sd]) {
+      g.fillStyle = alpha(sd ? K.down : K.up, 0.7); g.fillRect(bx, y2, Math.max(1, rows[b][sd] / qmax * depthW), rh);
+      walls[sd].push([rows[b][sd], +b]);
+    }
+  }
+  g.font = '10px ' + getComputedStyle(document.body).fontFamily;
+  walls.forEach(function(list, sd){
+    list.sort(function(a, b3){ return b3[0] - a[0] }).slice(0, 3).forEach(function(wl){
+      var y3 = Y((wl[1] + 0.5) * bstep); if (y3 < 6 || y3 > plotH - 6) return;
+      var txt = qty(wl[0]), tw = g.measureText(txt).width, x3 = Math.min(bx + wl[0] / qmax * depthW + 3, plotW + PR - tw - 3);
+      g.fillStyle = 'rgba(10,13,20,.8)'; g.fillRect(x3 - 2, y3 - 6, tw + 4, 12);
+      g.fillStyle = sd ? K.down : K.up; g.fillText(txt, x3, y3);
+      g.fillStyle = alpha(sd ? K.down : K.up, 0.55); g.fillRect(plotW - 5, px(y3) - 1, 5, 2);
+    });
+  });
+  g.font = '11px ' + getComputedStyle(document.body).fontFamily;
   g.fillStyle = K.faint;
-  for (var p2 = Math.ceil(lo / tickStep) * tickStep; p2 <= hi; p2 += tickStep) { var ty = Y(p2); if (ty > 8 && ty < plotH - 8) g.fillText(fmt(p2, tdd), W - R + 6, ty) }
+  for (var p2b = Math.ceil(lo / tickStep) * tickStep; p2b <= hi; p2b += tickStep) { var ty = Y(p2b); if (ty > 8 && ty < plotH - 8) g.fillText(fmt(p2b, tdd), W - R + 6, ty) }
   var py = Math.max(8, Math.min(plotH - 8, Y(cur.mid)));
-  g.fillStyle = K.text; g.fillRect(W - R + 2, py - 8, R - 4, 16); g.fillStyle = K.bg; g.fillText(fmt(cur.mid, dd), W - R + 6, py);
+  g.fillStyle = K.text; g.fillRect(W - R + 2, py - 8, R - 4, 16); g.fillStyle = K.bg; g.fillText(fmt(cur.mid, Math.max(dd, tdd)), W - R + 6, py);
+  var hv = fl.hov;
+  if (hv && hv.x >= X0 && hv.x <= plotW && hv.y >= 0 && hv.y <= plotH) {
+    var hr = Math.floor((hi - hv.y / pxPer) / bstep + 1e-9), hy = Y((hr + 1) * bstep);
+    g.fillStyle = 'rgba(255,255,255,.1)'; g.fillRect(0, hy, plotW + PR, Math.max(1, rowH));
+    g.fillStyle = 'rgba(255,255,255,.22)'; g.fillRect(px(hv.x), 0, 1, plotH);
+    var hp = (hr + 0.5) * bstep, hyc = Math.max(8, Math.min(plotH - 8, hy + rowH / 2));
+    g.fillStyle = K.acc; g.fillRect(W - R + 2, hyc - 8, R - 4, 16); g.fillStyle = K.bg; g.fillText(fmt(hr * bstep, tdd), W - R + 6, hyc);
+  }
   var steps = [5, 10, 15, 30, 60, 120, 300, 600], pxs = cw * 1000 / SAMPLE_MS, ts = steps.filter(function(s_){ return s_ * pxs >= 80 })[0] || 900;
-  g.fillStyle = 'rgb(13,16,22)'; g.fillRect(0, plotH, plotW, B); g.fillStyle = K.faint; g.textAlign = 'center';
+  g.fillStyle = 'rgb(13,16,22)'; g.fillRect(0, plotH, W, B); g.fillStyle = K.faint; g.textAlign = 'center';
   for (var tt = Math.floor(t1 / (ts * 1000)) * ts * 1000; tt >= tLeft; tt -= ts * 1000) {
     var xx = X(tt) + cw / 2; if (xx < 24 || xx > plotW - 24) continue;
     g.fillRect(px(xx), plotH, 1, 4); g.fillText(ts >= 60 ? hm(tt) : hms(tt), xx, plotH + 11);
   }
   g.textAlign = 'left';
+  var lgx = plotW + 4, lgy = plotH + 6, lgw = 44, la = qty(fl_), lb = qty(top) + ' ' + m.coin;
+  g.font = '10px ' + getComputedStyle(document.body).fontFamily;
+  g.fillStyle = K.faint; g.fillText(la, lgx, lgy + 4);
+  var gx = lgx + g.measureText(la).width + 4, gr = g.createLinearGradient(gx, 0, gx + lgw, 0);
+  for (var gs = 0; gs <= 6; gs++) { var gi = Math.round(shade(fl_ + (top - fl_) * Math.pow(gs / 6, 1 / 0.55)) * 255) * 3; gr.addColorStop(gs / 6, 'rgb(' + LUT[gi] + ',' + LUT[gi + 1] + ',' + LUT[gi + 2] + ')') }
+  g.fillStyle = gr; g.fillRect(gx, lgy, lgw, 8);
+  g.fillStyle = K.faint; g.fillText(lb, gx + lgw + 4, lgy + 4);
+  g.font = '11px ' + getComputedStyle(document.body).fontFamily;
+  label(g, TX('fl_row') + ' ' + fmt(bstep, Math.max(0, Math.ceil(-Math.log10(bstep) - 1e-9))) + ' · ◐ ' + (fl.con + 1) + '/' + CONTRAST.length, 6, 12, K);
   if (z.off) label(g, '⟲ ' + hms(t1), 6, plotH - 10, K);
   c.cv.onmousemove = function(e){
     var rc = c.cv.getBoundingClientRect(), x = e.clientX - rc.left, y = e.clientY - rc.top;
+    fl.hov = {x: x, y: y};
+    if (!paintHeat.raf) paintHeat.raf = requestAnimationFrame(function(){ paintHeat.raf = 0; if (wrap.__paint) try { wrap.__paint() } catch(err){} });
     if (x > plotW || y > plotH || x < X0) return untip();
-    var i = Math.max(0, Math.min(n - 1, Math.floor((x - X0) / cw))), col = view[i], rr = Math.floor((hi - y / plotH * (hi - lo)) / bstep) - bLo;
+    var i = Math.max(0, Math.min(n - 1, Math.floor((x - X0) / cw))), col = view[i], rr = Math.floor((hi - y / pxPer) / bstep + 1e-9) - bLo;
     if (rr < 0 || rr >= nr) return untip();
-    var v = vals[i * nr + rr], p0 = (bLo + rr) * bstep;
-    tipShow([[hms(col.t)], [TX('fl_price') + ' ' + fmt(p0, tdd) + (bin > 1 || bstep >= 1 ? '–' + fmt(p0 + bstep, tdd) : '')],
-      [v < 0 ? TX('fl_unknown') : TX('fl_resting') + ' ' + qty(v) + ' ' + m.coin]], e);
+    var v = vals[i * nr + rr], p0 = (bLo + rr) * bstep, pm = p0 + bstep / 2, side = pm < col.mid ? TX('fl_bids') : TX('fl_asks');
+    tipShow([[hms(col.t)], [TX('fl_price') + ' ' + fmt(p0, tdd) + ' – ' + fmt(p0 + bstep, tdd)],
+      [v < 0 ? TX('fl_unknown') : TX('fl_resting') + ' ' + qty(v) + ' ' + m.coin + ' · ' + usdShort(v * pm) + ' · ' + side],
+      [TX('fl_dist') + ' ' + (pm >= col.mid ? '+' : '') + fmt((pm / col.mid - 1) * 100, 3) + '%', 'muted']], e);
   };
-  c.cv.onmouseleave = untip;
+  c.cv.onmouseleave = function(){ fl.hov = null; untip() };
 }
 
 function paintBook(wrap){

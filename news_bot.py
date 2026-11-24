@@ -429,6 +429,13 @@ GT_URL = "https://translate.googleapis.com/translate_a/single"
 MM_URL = "https://api.mymemory.translated.net/get"
 CYRILLIC = re.compile(r"[а-яё]", re.IGNORECASE)
 _tr_cache: dict = {}
+_tr_fail: dict = {}
+_engine_off: dict = {}
+_ai_tried: set = set()
+TR_RETRY_S = 600
+ENGINE_PAUSE_S = 300
+BACKFILL_JOBS = 90
+AI_TITLES = 12
 
 
 def _env_on(name, default):
@@ -474,17 +481,91 @@ def translate(text, lang="ru"):
     key = (text, lang)
     if key in _tr_cache:
         return _tr_cache[key]
+    now = time.time()
+    if now - _tr_fail.get(key, 0) < TR_RETRY_S:
+        return None
     result = None
     for engine in (_google, _mymemory):
+        name = engine.__name__
+        if _engine_off.get(name, 0) > now:
+            continue
         try:
             result = engine(text, src, lang)
+        except urllib.error.HTTPError as e:
+            if e.code in (403, 429, 503):
+                _engine_off[name] = now + ENGINE_PAUSE_S
+            result = None
         except Exception:
             result = None
         if result and result.lower() != text.lower():
             break
         result = None
-    _tr_cache[key] = result
+    if result:
+        _tr_cache[key] = result
+        _tr_fail.pop(key, None)
+    else:
+        _tr_fail[key] = now
     return result
+
+
+def ai_fill_titles(items, limit=AI_TITLES):
+    gaps, seen = [], set()
+    for it in items:
+        src = orig_lang(it["title"])
+        if id(it) in seen or it["title"] in _ai_tried:
+            continue
+        seen.add(id(it))
+        if any(lang != src and not it.get("title_" + lang) for lang in i18n.LANGS):
+            gaps.append(it)
+    if not gaps:
+        return 0
+    try:
+        import ai
+        if not ai.enabled():
+            return 0
+        gaps = gaps[:limit]
+        _ai_tried.update(it["title"] for it in gaps)
+        got = ai.translate_titles([it["title"] for it in gaps])
+    except Exception as e:
+        print(f"  ! AI translation: {type(e).__name__}: {e}"[:200])
+        return 0
+    filled = 0
+    for k, it in enumerate(gaps, 1):
+        src = orig_lang(it["title"])
+        for lang, text in (got.get(k) or {}).items():
+            if lang != src and lang in i18n.LANGS and text and not it.get("title_" + lang) and text.lower() != it["title"].lower():
+                it["title_" + lang] = text
+                _tr_cache[(it["title"], lang)] = text
+                filled += 1
+    return filled
+
+
+def backfill_translations(st, now, limit=BACKFILL_JOBS):
+    if not TRANSLATE_ON:
+        return 0
+    since = (now - timedelta(hours=48)).isoformat()
+    shown = [r for r in reversed(st.get("recent") or []) if r.get("ts", "") >= since and level_of(r.get("score", 0)) != "low"]
+    titles, leads = [], []
+    for r in shown:
+        src = orig_lang(r["title"])
+        for target in i18n.LANGS:
+            if target == src:
+                continue
+            if not r.get("title_" + target):
+                titles.append((r, "title", target))
+            if SUMMARIES and r.get("lead") and not r.get("lead_" + target):
+                leads.append((r, "lead", target))
+    jobs = (titles + leads)[:limit]
+    filled = 0
+    if jobs:
+        with ThreadPoolExecutor(max_workers=6) as ex:
+            for (r, field, target), tr in zip(jobs, ex.map(lambda j: translate(j[0][j[1]], j[2]), jobs)):
+                if tr:
+                    r[f"{field}_{target}"] = tr
+                    filled += 1
+    if titles:
+        filled += ai_fill_titles([r for r, _, _ in titles])
+    return filled
 
 
 TR_FIELDS = tuple(f"{f}_{lang}" for f in ("title", "lead") for lang in i18n.LANGS)
@@ -1048,6 +1129,7 @@ def run(dry=False):
     to_send.sort(key=lambda s: -s["score"])
 
     translate_items(to_send[:MAX_PER_MESSAGE_BATCH])
+    ai_fill_titles(to_send[:MAX_PER_MESSAGE_BATCH])
     try:
         import ai
         if ai.enabled():
@@ -1304,6 +1386,10 @@ def run(dry=False):
 
     if CODE_SHA:
         st["code_ok"] = {"sha": CODE_SHA, "at": now.isoformat()}
+    try:
+        backfill_translations(st, now)
+    except Exception as e:
+        print(f"  ! translation backfill: {type(e).__name__}: {e}"[:200])
     write_page_data(st, quotes, now)
     save_state(state_path, st, now)
     extras = update_extras(now, dry)

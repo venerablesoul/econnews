@@ -6,6 +6,7 @@ import math
 import os
 import re
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
@@ -18,8 +19,14 @@ UA = "econnews-bot (+https://github.com/venerablesoul/econnews)"
 STAC = "https://planetarycomputer.microsoft.com/api/stac/v1/search"
 TILES = ("https://planetarycomputer.microsoft.com/api/data/v1/item/tiles/WebMercatorQuad/{z}/{x}/{y}@1x?collection=sentinel-2-l2a"
          "&item={item}&assets=visual&asset_bidx=visual%7C1%2C2%2C3&nodata=0&format=png")
+SMOOTH = "&resampling=bilinear&reproject=bilinear"
 SRC = "Contains modified Copernicus Sentinel data {years} · via Microsoft Planetary Computer"
-SIZE = 600
+RENDER_V = 2
+MAX_M_PX = 9.6
+OUT_M_PX = 4.0
+MAX_SIDE = 1800
+THUMB = 420
+MAX_TILES = 49
 EVERY_H = 12
 PER_CALL = 3
 BUDGET_S = 100
@@ -30,15 +37,16 @@ MAX_EMPTY = 0.02
 OLD_DAYS = (21, 75)
 
 SITES = (
-    ("cushing", "Cushing, Oklahoma (WTI hub)", "Кушинг, Оклахома (хаб WTI)", 35.957, -96.757, 7.0),
+    ("cushing", "Cushing, Oklahoma (WTI hub)", "Кушинг, Оклахома (хаб WTI)", 35.937, -96.742, 7.5),
     ("houston", "Houston Ship Channel", "Хьюстонский судоходный канал", 29.733, -95.190, 8.0),
     ("rotterdam", "Rotterdam: Europoort and Maasvlakte", "Роттердам: Европорт и Маасвлакте", 51.950, 4.080, 8.0),
-    ("primorsk", "Primorsk oil terminal", "Нефтяной терминал Приморск", 60.345, 28.665, 6.0),
-    ("novorossiysk", "Novorossiysk: Sheskharis", "Новороссийск: Шесхарис", 44.692, 37.808, 5.0),
-    ("rastanura", "Ras Tanura", "Рас-Танура", 26.650, 50.150, 7.0),
-    ("kharg", "Kharg Island", "Остров Харк", 29.240, 50.318, 7.0),
-    ("fujairah", "Fujairah", "Фуджейра", 25.178, 56.355, 6.0),
-    ("singapore", "Singapore: Jurong and Bukom", "Сингапур: Джуронг и Буком", 1.255, 103.725, 10.0),
+    ("primorsk", "Primorsk oil terminal", "Нефтяной терминал Приморск", 60.342, 28.716, 5.0),
+    ("novorossiysk", "Novorossiysk: Sheskharis", "Новороссийск: Шесхарис", 44.707, 37.846, 5.0),
+    ("rastanura", "Ras Tanura", "Рас-Танура", 26.648, 50.154, 5.0),
+    ("kharg", "Kharg Island", "Остров Харк", 29.226, 50.315, 5.0),
+    ("fujairah", "Fujairah", "Фуджейра", 25.193, 56.352, 6.0),
+    ("singapore", "Singapore: Jurong Island", "Сингапур: остров Джуронг", 1.268, 103.700, 7.0),
+    ("bukom", "Singapore: Pulau Bukom", "Сингапур: остров Буком", 1.232, 103.762, 4.0),
 )
 
 
@@ -57,8 +65,12 @@ def world_px(lat, lon, z):
     return (lon + 180) / 360 * n, (0.5 - math.log((1 + s) / (1 - s)) / (4 * math.pi)) * n
 
 
+def m_per_px(lat, z):
+    return 156543.03 * math.cos(math.radians(lat)) / 2 ** z
+
+
 def zoom_for(lat):
-    return max(12, min(15, math.floor(math.log2(156543.03 * math.cos(math.radians(lat)) / 10) + 0.6)))
+    return max(12, min(16, math.ceil(math.log2(156543.03 * math.cos(math.radians(lat)) / MAX_M_PX) - 1e-9)))
 
 
 def tiles_for(b, z=None):
@@ -103,22 +115,32 @@ def search(b, start, end, fetch=http, limit=8):
     return out
 
 
+_smooth = {"on": True}
+
+
 def render(item, b, fetch=http):
     from PIL import Image
     tiles, (tx0, ty0, tx1, ty1), crop, z = tiles_for(b)
-    if len(tiles) > 30:
+    if len(tiles) > MAX_TILES:
         raise ValueError("box too big")
     canvas = Image.new("RGBA", ((tx1 - tx0 + 1) * 256, (ty1 - ty0 + 1) * 256), (0, 0, 0, 0))
 
     def one(t):
-        url = TILES.format(z=z, x=t[0], y=t[1], item=urllib.parse.quote(item, safe=""))
         for attempt in range(3):
+            url = TILES.format(z=z, x=t[0], y=t[1], item=urllib.parse.quote(item, safe="")) + (SMOOTH if _smooth["on"] else "")
             try:
                 return t, fetch(url, None, 60, 2 << 20)
+            except urllib.error.HTTPError as e:
+                if e.code in (400, 422) and _smooth["on"]:
+                    _smooth["on"] = False
+                    continue
+                if attempt == 2:
+                    raise
             except Exception:
                 if attempt == 2:
                     raise
-                time.sleep(1.5 * (attempt + 1))
+            time.sleep(1.5 * (attempt + 1))
+        raise ValueError("tile not fetched")
 
     with ThreadPoolExecutor(max_workers=6) as ex:
         for t, raw in ex.map(one, tiles):
@@ -126,26 +148,66 @@ def render(item, b, fetch=http):
             canvas.paste(im, ((t[0] - tx0) * 256, (t[1] - ty0) * 256))
     pic = canvas.crop(tuple(int(round(v)) for v in crop))
     w, h = pic.size
-    return pic.resize((SIZE, max(1, round(SIZE * h / max(1, w)))), Image.LANCZOS)
+    lat = (b[1] + b[3]) / 2
+    up = max(1.0, min(2.5, m_per_px(lat, z) / OUT_M_PX))
+    k = min(up, MAX_SIDE / max(w, h))
+    size = (max(1, round(w * k)), max(1, round(h * k)))
+    return pic.resize(size, Image.LANCZOS) if size != (w, h) else pic
 
 
 def quality(pic):
     small = pic.resize((150, max(1, round(150 * pic.size[1] / pic.size[0]))))
-    px = list(small.getdata())
+    px = list(small.get_flattened_data() if hasattr(small, "get_flattened_data") else small.getdata())
     n = len(px) or 1
     empty = sum(1 for p in px if (len(p) > 3 and p[3] < 16) or max(p[:3]) < 4)
     cloud = sum(1 for p in px if (len(p) < 4 or p[3] >= 16) and min(p[:3]) > 185 and max(p[:3]) - min(p[:3]) < 28)
     return cloud / n, empty / n
 
 
-def save_jpeg(pic, path):
-    from PIL import ImageEnhance
+def enhance(pic):
+    from PIL import Image, ImageEnhance, ImageFilter, ImageOps
     rgb = pic.convert("RGB")
-    rgb = ImageEnhance.Contrast(rgb).enhance(1.08)
+    if pic.mode == "RGBA":
+        bg = Image.new("RGB", pic.size, (0, 0, 0))
+        bg.paste(rgb, mask=pic.getchannel("A"))
+        rgb = bg
+    rgb = ImageOps.autocontrast(rgb, cutoff=(0.5, 0.02), preserve_tone=True)
+    hist = rgb.convert("L").histogram()
+    land = sum(hist[40:]) or 1
+    acc, med = 0, 128
+    for v in range(40, 256):
+        acc += hist[v]
+        if acc >= land / 2:
+            med = v
+            break
+    gamma = max(0.75, min(1.6, math.log(128 / 255) / math.log(max(1, min(254, med)) / 255)))
+    if abs(gamma - 1) > 0.04:
+        y, cb, cr = rgb.convert("YCbCr").split()
+        y = y.point([round(255 * (v / 255) ** gamma) for v in range(256)])
+        rgb = Image.merge("YCbCr", (y, cb, cr)).convert("RGB")
+    rgb = ImageEnhance.Color(rgb).enhance(1.06 if gamma <= 1.1 else 1.0)
+    scale = max(1.0, max(rgb.size) / 900)
+    rgb = rgb.filter(ImageFilter.UnsharpMask(radius=round(1.0 * scale, 1), percent=70, threshold=3))
+    return rgb.filter(ImageFilter.UnsharpMask(radius=round(3.0 * scale, 1), percent=18, threshold=4))
+
+
+def save_jpeg(pic, path, thumb=None):
+    from PIL import Image
+    rgb = enhance(pic)
     os.makedirs(os.path.dirname(path), exist_ok=True)
-    tmp = path + ".tmp"
-    rgb.save(tmp, "JPEG", quality=80, optimize=True, progressive=True)
-    os.replace(tmp, path)
+    for out, im, q in ((path, rgb, 86), (thumb, None, 80)):
+        if not out:
+            continue
+        if im is None:
+            w, h = rgb.size
+            im = rgb.resize((THUMB, max(1, round(THUMB * h / max(1, w)))), Image.LANCZOS)
+        tmp = out + ".tmp"
+        im.save(tmp, "JPEG", quality=q, optimize=True, progressive=True)
+        os.replace(tmp, out)
+
+
+def thumb_of(path):
+    return path[:-4] + "_t.jpg"
 
 
 # ---------------------------------------------------------------------------
@@ -174,11 +236,56 @@ def best(passes, b, have, fetch, deadline):
     return None
 
 
+def _drop(sat_dir, sid, d):
+    for f in (d + ".jpg", d + "_t.jpg"):
+        try:
+            os.remove(os.path.join(sat_dir, sid, f))
+        except OSError:
+            pass
+
+
+def stale(rec, b):
+    return bool(rec.get("redo")) or any(isinstance(i, dict) and (i.get("v") != RENDER_V or (i.get("bb") or rec.get("bbox")) != b)
+                                        for i in rec.get("imgs") or [])
+
+
+def refresh(sid, imgs, rec, b, fetch, deadline, sat_dir):
+    out, later = [], []
+    for i in imgs:
+        framed = (i.get("bb") or rec.get("bbox")) == b
+        if i.get("v") == RENDER_V and framed:
+            out.append(i)
+            continue
+        if time.monotonic() >= deadline:
+            later.append(i)
+            continue
+        pic = None
+        if i.get("item"):
+            try:
+                pic = render(i["item"], b, fetch)
+            except Exception:
+                pic = None
+        if pic is not None:
+            cloud, empty = quality(pic)
+            if cloud <= MAX_CLOUD and empty <= MAX_EMPTY:
+                f = os.path.join(sat_dir, sid, i["d"] + ".jpg")
+                save_jpeg(pic, f, thumb_of(f))
+                out.append({k: v for k, v in i.items() if k not in ("f", "tf")} | {"cloud": round(cloud * 100, 1), "v": RENDER_V, "bb": b})
+                continue
+        _drop(sat_dir, sid, i["d"])
+    return out, later
+
+
 def update_site(site, rec, now, fetch, deadline, sat_dir):
     sid, en, ru, lat, lon, km = site
     b = bbox(lat, lon, km)
-    imgs = [i for i in rec.get("imgs") or [] if isinstance(i, dict) and os.path.isfile(os.path.join(sat_dir, sid, i.get("d", "") + ".jpg"))]
-    have = {i["d"] for i in imgs}
+    seen, imgs = set(), []
+    for i in (rec.get("imgs") or []) + (rec.get("redo") or []):
+        if isinstance(i, dict) and i.get("d") not in seen and os.path.isfile(os.path.join(sat_dir, sid, str(i.get("d", "")) + ".jpg")):
+            seen.add(i["d"])
+            imgs.append(i)
+    imgs, later = refresh(sid, imgs, rec, b, fetch, deadline, sat_dir)
+    have = {i["d"] for i in imgs} | {i["d"] for i in later}
     added = 0
     newest = max(have) if have else ""
     wanted = [((now - timedelta(days=20)).date().isoformat(), now.date().isoformat(), newest)]
@@ -191,22 +298,28 @@ def update_site(site, rec, now, fetch, deadline, sat_dir):
             continue
         p, pic, cloud = got
         d = p["dt"][:10]
-        save_jpeg(pic, os.path.join(sat_dir, sid, d + ".jpg"))
+        f = os.path.join(sat_dir, sid, d + ".jpg")
+        save_jpeg(pic, f, thumb_of(f))
         imgs.append({"d": d, "t": p["dt"][11:16], "cc": round(p["cc"], 1) if isinstance(p["cc"], (int, float)) else None,
-                     "cloud": round(cloud * 100, 1), "item": p["id"]})
+                     "cloud": round(cloud * 100, 1), "item": p["id"], "v": RENDER_V, "bb": b})
         have.add(d)
         added += 1
     imgs.sort(key=lambda i: i["d"])
     for old in imgs[:-KEEP]:
-        try:
-            os.remove(os.path.join(sat_dir, sid, old["d"] + ".jpg"))
-        except OSError:
-            pass
+        _drop(sat_dir, sid, old["d"])
     imgs = imgs[-KEEP:]
-    for i in imgs:
+    later.sort(key=lambda i: i["d"])
+    shown = imgs or later
+    for i in shown + later:
         i["f"] = f"sat/{sid}/{i['d']}.jpg"
-    return {"id": sid, "name": en, "name_ru": ru, "lat": lat, "lon": lon, "km": km, "bbox": b, "imgs": imgs,
-            "checked": now.isoformat()}, added
+        if os.path.isfile(os.path.join(sat_dir, sid, i["d"] + "_t.jpg")):
+            i["tf"] = f"sat/{sid}/{i['d']}_t.jpg"
+        else:
+            i.pop("tf", None)
+    out = {"id": sid, "name": en, "name_ru": ru, "lat": lat, "lon": lon, "km": km, "bbox": b, "imgs": shown, "checked": now.isoformat()}
+    if later:
+        out["redo"] = later
+    return out, added
 
 
 def build(now=None, path=OUT, sat_dir=DIR, fetch=http, per_call=PER_CALL, every_h=EVERY_H, budget_s=BUDGET_S):
@@ -214,7 +327,8 @@ def build(now=None, path=OUT, sat_dir=DIR, fetch=http, per_call=PER_CALL, every_
     old = load(path)
     by = {s.get("id"): s for s in old.get("sites") or [] if isinstance(s, dict)}
     cut = (now - timedelta(hours=every_h)).isoformat()
-    due = sorted((s for s in SITES if (by.get(s[0]) or {}).get("checked", "") < cut), key=lambda s: (by.get(s[0]) or {}).get("checked", ""))
+    due = sorted((s for s in SITES if (by.get(s[0]) or {}).get("checked", "") < cut or stale(by.get(s[0]) or {}, bbox(s[3], s[4], s[5]))),
+                 key=lambda s: (not stale(by.get(s[0]) or {}, bbox(s[3], s[4], s[5])), (by.get(s[0]) or {}).get("checked", "")))
     if not due:
         return 0
     deadline = time.monotonic() + budget_s
@@ -242,7 +356,7 @@ def build(now=None, path=OUT, sat_dir=DIR, fetch=http, per_call=PER_CALL, every_
         sites.append(r)
     years = sorted({i["d"][:4] for r in sites for i in r.get("imgs") or [] if i.get("d")}) or [str(now.year)]
     out = {"updated": now.isoformat() if added or not old.get("updated") else old["updated"], "checked": now.isoformat(),
-           "src": SRC.format(years=", ".join(years)), "res_m": 10, "sites": sites}
+           "src": SRC.format(years=", ".join(years)), "res_m": 10, "px_m": OUT_M_PX, "sites": sites}
     if errs:
         out["err"] = errs
     tmp = path + ".tmp"

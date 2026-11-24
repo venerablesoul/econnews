@@ -1,4 +1,4 @@
-const CACHE = 'econ-terminal-v23';
+const CACHE = 'econ-terminal-v24';
 const SHELL = ['./', './i18n.js', './i18n.xl.js', './fn.js', './tech.js', './mon.js', './map.js', './opt.js', './flow.js', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png'];
 
 const fresh = req => req.mode === 'navigate'
