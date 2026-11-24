@@ -427,6 +427,7 @@ def save_state(path, st, now):
 # ----------------------------------------------------------------------------
 GT_URL = "https://translate.googleapis.com/translate_a/single"
 MM_URL = "https://api.mymemory.translated.net/get"
+GC_URL = "https://clients5.google.com/translate_a/t"
 CYRILLIC = re.compile(r"[а-яё]", re.IGNORECASE)
 _tr_cache: dict = {}
 _tr_fail: dict = {}
@@ -436,8 +437,11 @@ _bf_tries: dict = {}
 TR_RETRY_S = 600
 ENGINE_PAUSE_S = 300
 MM_QUOTA_PAUSE_S = 3600
-BACKFILL_JOBS = 12
+BACKFILL_JOBS = 60
+BACKFILL_SINGLE = 12
+TR_SINGLE = 12
 BACKFILL_TRIES = 3
+BATCH_URL_CHARS = 4000
 HOLD_S = 600
 AI_TITLES = 12
 
@@ -461,6 +465,18 @@ def _google(text, src, lang):
     return out.strip() or None
 
 
+def _gclient(text, src, lang):
+    q = urllib.parse.urlencode({"client": "dict-chrome-ex", "sl": src, "tl": ENGINE_LANG.get(lang, lang), "q": text})
+    req = urllib.request.Request(f"{GC_URL}?{q}", headers={"User-Agent": UA})
+    with urllib.request.urlopen(req, timeout=10) as r:
+        data = json.loads(r.read().decode("utf-8"))
+    while isinstance(data, list) and data:
+        data = data[0]
+    if not isinstance(data, str):
+        return None
+    return html.unescape(data).strip() or None
+
+
 def _mymemory(text, src, lang):
     q = urllib.parse.urlencode({"q": text[:480], "langpair": f"{src}|{ENGINE_LANG.get(lang, lang)}"})
     req = urllib.request.Request(f"{MM_URL}?{q}", headers={"User-Agent": UA})
@@ -479,6 +495,83 @@ def orig_lang(text):
     return "ru" if CYRILLIC.search(text or "") else "en"
 
 
+def _one_line(text):
+    return " ".join(str(text).split())
+
+
+def _chunks(texts, max_url=BATCH_URL_CHARS):
+    out, cur, size = [], [], 0
+    for t in texts:
+        n = len(urllib.parse.quote(t)) + 3
+        if cur and size + n > max_url:
+            out.append(cur)
+            cur, size = [], 0
+        cur.append(t)
+        size += n
+    if cur:
+        out.append(cur)
+    return out
+
+
+def _lines(engine, texts, src, lang):
+    out = engine("\n".join(texts), src, lang)
+    lines = [x.strip() for x in (out or "").split("\n") if x.strip()]
+    if len(lines) == len(texts):
+        return lines
+    if len(texts) == 1:
+        return None
+    mid = len(texts) // 2
+    head, tail = _lines(engine, texts[:mid], src, lang), _lines(engine, texts[mid:], src, lang)
+    return (head or [None] * mid) + (tail or [None] * (len(texts) - mid))
+
+
+BATCH_ENGINES = ("_gclient", "_google")
+
+
+def engines_paused():
+    now = time.time()
+    return all(_engine_off.get(name, 0) > now for name in BATCH_ENGINES)
+
+
+def prefetch(texts, lang):
+    if not TRANSLATE_ON or lang not in i18n.LANGS:
+        return 0
+    now = time.time()
+    groups = {}
+    for t in dict.fromkeys(x for x in texts if x):
+        src = orig_lang(t)
+        if src == lang or (t, lang) in _tr_cache or now - _tr_fail.get((t, lang), 0) < TR_RETRY_S:
+            continue
+        groups.setdefault(src, []).append(t)
+    filled = 0
+    for src, todo in groups.items():
+        for name in BATCH_ENGINES:
+            if not todo:
+                break
+            engine = globals()[name]
+            rest = []
+            for chunk in _chunks(todo):
+                if _engine_off.get(name, 0) > time.time():
+                    rest.extend(chunk)
+                    continue
+                try:
+                    got = _lines(engine, [_one_line(t) for t in chunk], src, lang)
+                except Exception as e:
+                    _engine_off[name] = time.time() + ENGINE_PAUSE_S
+                    print(f"  ! translation {name[1:]} → {lang}: {type(e).__name__}: {e}"[:200])
+                    got = None
+                for k, t in enumerate(chunk):
+                    tr = got[k] if got else None
+                    if tr and tr.lower() != _one_line(t).lower():
+                        _tr_cache[(t, lang)] = tr
+                        _tr_fail.pop((t, lang), None)
+                        filled += 1
+                    else:
+                        rest.append(t)
+            todo = rest
+    return filled
+
+
 def translate(text, lang="ru"):
     if not text or not TRANSLATE_ON or lang not in i18n.LANGS:
         return None
@@ -492,7 +585,7 @@ def translate(text, lang="ru"):
     if now - _tr_fail.get(key, 0) < TR_RETRY_S:
         return None
     result = None
-    for engine in (_google, _mymemory):
+    for engine in (_gclient, _google, _mymemory):
         name = engine.__name__
         if _engine_off.get(name, 0) > now:
             continue
@@ -501,6 +594,9 @@ def translate(text, lang="ru"):
         except urllib.error.HTTPError as e:
             if e.code in (403, 429, 503):
                 _engine_off[name] = now + ENGINE_PAUSE_S
+            result = None
+        except (urllib.error.URLError, TimeoutError, OSError):
+            _engine_off[name] = now + ENGINE_PAUSE_S
             result = None
         except Exception:
             result = None
@@ -547,12 +643,7 @@ def ai_fill_titles(items, limit=AI_TITLES):
     return filled
 
 
-def engines_paused():
-    now = time.time()
-    return any(t > now for t in _engine_off.values())
-
-
-def backfill_translations(st, now, limit=BACKFILL_JOBS):
+def backfill_translations(st, now, limit=BACKFILL_JOBS, single=BACKFILL_SINGLE):
     if not TRANSLATE_ON or engines_paused():
         return 0
     since = (now - timedelta(hours=48)).isoformat()
@@ -573,12 +664,17 @@ def backfill_translations(st, now, limit=BACKFILL_JOBS):
                 titles.append((r, "title", target))
             if SUMMARIES and r.get("lead") and not r.get("lead_" + target) and due(r["lead"], target):
                 leads.append((r, "lead", target))
-    filled = 0
-    for r, field, target in (titles + leads)[:limit]:
-        if engines_paused():
-            break
+    jobs = (titles + leads)[:limit]
+    for target in i18n.LANGS:
+        prefetch([r[field] for r, field, t in jobs if t == target], target)
+    filled, singles = 0, 0
+    for r, field, target in jobs:
         key = (r[field], target)
-        _bf_tries[key] = _bf_tries.get(key, 0) + 1
+        if key not in _tr_cache:
+            if singles >= single or engines_paused():
+                continue
+            singles += 1
+            _bf_tries[key] = _bf_tries.get(key, 0) + 1
         tr = translate(r[field], target)
         if tr:
             r[f"{field}_{target}"] = tr
@@ -591,26 +687,37 @@ def backfill_translations(st, now, limit=BACKFILL_JOBS):
 TR_FIELDS = tuple(f"{f}_{lang}" for f in ("title", "lead") for lang in i18n.LANGS)
 
 
-def translate_items(items):
+def translate_items(items, first=()):
     if not TRANSLATE_ON:
         return
+    order = [x for x in first if x in i18n.LANGS] + [x for x in i18n.LANGS if x not in first]
     jobs = []
-    for it in items:
-        src = orig_lang(it["title"])
-        for target in i18n.LANGS:
-            if target == src:
-                continue
-            if not it.get("title_" + target):
-                jobs.append((it, "title", "title_" + target, target))
-            if SUMMARIES and it.get("lead") and not it.get("lead_" + target):
-                jobs.append((it, "lead", "lead_" + target, target))
+    for target in order:
+        for field in ("title", "lead"):
+            for it in items:
+                if orig_lang(it["title"]) == target or it.get(f"{field}_{target}"):
+                    continue
+                if field == "lead" and not (SUMMARIES and it.get("lead")):
+                    continue
+                jobs.append((it, field, f"{field}_{target}", target))
     if not jobs:
         return
-    _engine_off.clear()
+    for name in BATCH_ENGINES:
+        _engine_off.pop(name, None)
     for it, src, dst, target in jobs:
         _tr_fail.pop((it[src], target), None)
-    with ThreadPoolExecutor(max_workers=6) as ex:
-        for (it, src, dst, target), tr in zip(jobs, ex.map(lambda j: translate(j[0][j[1]], j[3]), jobs)):
+    for target in order:
+        prefetch([it[src] for it, src, dst, t in jobs if t == target], target)
+    single = []
+    for job in jobs:
+        it, src, dst, target = job
+        if (it[src], target) in _tr_cache:
+            it[dst] = _tr_cache[(it[src], target)]
+        else:
+            single.append(job)
+    single = single[:TR_SINGLE]
+    with ThreadPoolExecutor(max_workers=3) as ex:
+        for (it, src, dst, target), tr in zip(single, ex.map(lambda j: translate(j[0][j[1]], j[3]), single)):
             if tr:
                 it[dst] = tr
 
@@ -1175,7 +1282,7 @@ def run(dry=False):
     to_send.sort(key=lambda s: s["ts"], reverse=True)
     to_send.sort(key=lambda s: -s["score"])
 
-    translate_items(to_send[:MAX_PER_MESSAGE_BATCH])
+    translate_items(to_send[:MAX_PER_MESSAGE_BATCH], first=tg._langs_in_use(False))
     ai_fill_titles(to_send[:MAX_PER_MESSAGE_BATCH])
     if st["initialized"]:
         stories, to_send = hold_untranslated(st, stories, to_send, tg._langs_in_use(False), now)

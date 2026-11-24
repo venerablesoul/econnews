@@ -423,6 +423,13 @@ class TranslationRecovery(unittest.TestCase):
     def setUp(self):
         import news_bot
         self.nb = news_bot
+
+        def down(text, src, lang):
+            raise OSError("down")
+        down.__name__ = "_gclient"
+        patcher = mock.patch.object(news_bot, "_gclient", down)
+        patcher.start()
+        self.addCleanup(patcher.stop)
         for d in (news_bot._tr_cache, news_bot._tr_fail, news_bot._engine_off, news_bot._bf_tries):
             d.clear()
         news_bot._ai_tried.clear()
@@ -458,7 +465,7 @@ class TranslationRecovery(unittest.TestCase):
             {"title": "ЦБ сохранил ставку", "score": 9, "title_en": "CBR holds", "ts": (now - timedelta(minutes=10)).isoformat()},
         ]}
         with mock.patch.object(nb, "translate", side_effect=lambda t, lang="ru": f"[{lang}] {t}"), \
-                mock.patch.object(nb, "ai_fill_titles", return_value=0):
+                mock.patch.object(nb, "prefetch", return_value=0), mock.patch.object(nb, "ai_fill_titles", return_value=0):
             n = nb.backfill_translations(st, now)
         saudi, cbr = st["recent"][2], st["recent"][3]
         self.assertEqual(saudi["title_ru"], "[ru] Saudi budget deficit")
@@ -489,18 +496,20 @@ class TranslationRecovery(unittest.TestCase):
             calls.append((text, lang))
             nb._tr_fail[(text, lang)] = time.time() - nb.TR_RETRY_S - 1
             return None
-        with mock.patch.object(nb, "translate", side_effect=fail), mock.patch.object(nb, "ai_fill_titles", return_value=0):
+        with mock.patch.object(nb, "translate", side_effect=fail), mock.patch.object(nb, "prefetch", return_value=0), \
+                mock.patch.object(nb, "ai_fill_titles", return_value=0):
             for _ in range(40):
                 nb.backfill_translations(st, now)
-                self.assertLessEqual(len(calls), nb.BACKFILL_JOBS * (_ + 1))
+                self.assertLessEqual(len(calls), nb.BACKFILL_SINGLE * (_ + 1))
         self.assertEqual(len(calls), 30 * 3 * nb.BACKFILL_TRIES)
         self.assertEqual(calls[0], ("Story number 29", "ru"), "newest first")
         calls.clear()
         nb._bf_tries.clear()
-        nb._engine_off["_google"] = time.time() + 60
-        with mock.patch.object(nb, "translate", side_effect=fail), mock.patch.object(nb, "ai_fill_titles", return_value=0):
+        nb._engine_off.update({"_gclient": time.time() + 60, "_google": time.time() + 60})
+        with mock.patch.object(nb, "translate", side_effect=fail), mock.patch.object(nb, "prefetch", return_value=0), \
+                mock.patch.object(nb, "ai_fill_titles", return_value=0):
             self.assertEqual(nb.backfill_translations(st, now), 0)
-        self.assertEqual(calls, [], "no backfill while a translator is resting")
+        self.assertEqual(calls, [], "no backfill while both translators rest")
 
     def test_backfill_stops_when_a_translator_starts_refusing(self):
         nb, calls = self.nb, []
@@ -510,9 +519,10 @@ class TranslationRecovery(unittest.TestCase):
         def refuse(text, lang="ru"):
             calls.append(text)
             if len(calls) == 3:
-                nb._engine_off["_google"] = time.time() + nb.ENGINE_PAUSE_S
+                nb._engine_off.update({"_gclient": time.time() + nb.ENGINE_PAUSE_S, "_google": time.time() + nb.ENGINE_PAUSE_S})
             return None
-        with mock.patch.object(nb, "translate", side_effect=refuse), mock.patch.object(nb, "ai_fill_titles", return_value=0):
+        with mock.patch.object(nb, "translate", side_effect=refuse), mock.patch.object(nb, "prefetch", return_value=0), \
+                mock.patch.object(nb, "ai_fill_titles", return_value=0):
             nb.backfill_translations(st, now)
         self.assertEqual(len(calls), 3)
 
@@ -549,6 +559,167 @@ class TranslationRecovery(unittest.TestCase):
         self.assertGreater(nb._engine_off["_mymemory"] - time.time(), 3000)
 
 
+class TranslationBatches(unittest.TestCase):
+    def setUp(self):
+        import news_bot
+        self.nb = news_bot
+        for d in (news_bot._tr_cache, news_bot._tr_fail, news_bot._engine_off, news_bot._bf_tries):
+            d.clear()
+
+    def items(self, n=25):
+        return [{"title": f"Story {k}: Fed weighs a rate hike as oil climbs", "lead": f"Lead {k}: markets price a hike in December."}
+                for k in range(n)]
+
+    def engine(self, name, calls, mark=None, fail=None):
+        def tr(text, src, lang):
+            calls.append((lang, text.count("\n") + 1))
+            if fail:
+                raise fail
+            return "\n".join(f"{mark or '[' + lang + ']'} {x}" for x in text.split("\n"))
+        tr.__name__ = name
+        return tr
+
+    def test_whole_batch_goes_in_a_few_requests_readers_language_first(self):
+        nb, gc, gt, mm = self.nb, [], [], []
+        items = self.items()
+        with mock.patch.object(nb, "_gclient", self.engine("_gclient", gc)), mock.patch.object(nb, "_google", self.engine("_google", gt)), \
+                mock.patch.object(nb, "_mymemory", self.engine("_mymemory", mm)), mock.patch.object(nb, "SUMMARIES", True):
+            nb.translate_items(items, first=["ru"])
+        self.assertEqual((gt, mm), ([], []), "the second Google address and MyMemory are not needed")
+        self.assertLessEqual(len(gc), 3 * 2, gc)
+        self.assertEqual(gc[0][0], "ru")
+        self.assertEqual(sum(n for lang, n in gc if lang == "ru"), 50)
+        for it in items:
+            for lang in ("ru", "zh", "ar"):
+                self.assertEqual(it["title_" + lang], f"[{lang}] " + it["title"])
+                self.assertEqual(it["lead_" + lang], f"[{lang}] " + it["lead"])
+
+    def test_a_refusing_address_is_asked_once_then_the_other_one_translates(self):
+        nb, gc, gt, mm = self.nb, [], [], []
+        items = self.items()
+        busy = urllib.error.HTTPError("u", 429, "Too Many Requests", {}, None)
+        with mock.patch.object(nb, "_gclient", self.engine("_gclient", gc, fail=busy)), \
+                mock.patch.object(nb, "_google", self.engine("_google", gt, mark="<g>")), \
+                mock.patch.object(nb, "_mymemory", self.engine("_mymemory", mm)), mock.patch.object(nb, "SUMMARIES", True):
+            nb.translate_items(items, first=["ru"])
+            self.assertEqual([lang for lang, _ in gc], ["ru"], "one try, then it rests")
+            self.assertEqual(sorted({lang for lang, _ in gt}), ["ar", "ru", "zh"])
+            self.assertEqual(mm, [])
+            self.assertEqual(items[3]["title_ru"], "<g> " + items[3]["title"])
+            gc.clear()
+            nb.translate_items([{"title": "Gold hits a record"}], first=["ru"])
+            self.assertEqual([lang for lang, _ in gc], ["ru"], "a new run gives it one fresh try")
+
+    def test_merged_lines_are_split_again_never_mixed_up(self):
+        nb, calls = self.nb, []
+
+        def gc(text, src, lang):
+            calls.append(text.count("\n") + 1)
+            if text.count("\n") >= 2:
+                return f"[{lang}] " + text.replace("\n", " ")
+            return "\n".join(f"[{lang}] {x}" for x in text.split("\n"))
+        gc.__name__ = "_gclient"
+        titles = ["Oil jumps", "Gold falls", "Fed holds", "Yen slides"]
+        with mock.patch.object(nb, "_gclient", gc), mock.patch.object(nb, "_google", return_value=None):
+            nb.prefetch(titles, "ru")
+        self.assertEqual(calls, [4, 2, 2])
+        self.assertEqual({k[0]: v for k, v in nb._tr_cache.items()}, {t: f"[ru] {t}" for t in titles})
+        self.assertNotIn("_gclient", nb._engine_off, "a merged answer is not a block")
+
+    def test_a_line_that_will_not_split_is_left_for_others(self):
+        nb = self.nb
+        odd = lambda text, src, lang: "only one line" if "\n" in text else ""
+        with mock.patch.object(nb, "_gclient", odd), mock.patch.object(nb, "_google", odd):
+            nb.prefetch(["Oil jumps", "Gold falls"], "ru")
+        self.assertEqual(nb._tr_cache, {})
+
+    def test_a_headline_left_untranslated_goes_to_the_next_translator(self):
+        nb, gt = self.nb, []
+
+        def gc(text, src, lang):
+            return "\n".join("NVDA" if x == "NVDA" else f"[{lang}] {x}" for x in text.split("\n"))
+        with mock.patch.object(nb, "_gclient", gc), mock.patch.object(nb, "_google", self.engine("_google", gt, mark="<g>")):
+            nb.prefetch(["Oil jumps", "NVDA"], "ru")
+        self.assertEqual(nb._tr_cache[("Oil jumps", "ru")], "[ru] Oil jumps")
+        self.assertEqual(nb._tr_cache[("NVDA", "ru")], "<g> NVDA")
+        self.assertEqual(gt, [("ru", 1)])
+
+    def test_russian_headlines_are_translated_from_russian(self):
+        nb, seen = self.nb, []
+
+        def gc(text, src, lang):
+            seen.append((src, text))
+            return "\n".join(f"[{lang}] {x}" for x in text.split("\n"))
+        with mock.patch.object(nb, "_gclient", gc):
+            nb.prefetch(["ЦБ сохранил ставку", "Oil jumps"], "zh")
+        self.assertEqual(sorted(seen), [("en", "Oil jumps"), ("ru", "ЦБ сохранил ставку")])
+
+    def test_long_russian_batches_keep_the_address_short(self):
+        nb = self.nb
+        heads = [f"Банк России сохранил ключевую ставку, рубль укрепился к доллару и евро, новость {k}" for k in range(40)]
+        chunks = nb._chunks(heads)
+        self.assertGreater(len(chunks), 1)
+        self.assertEqual(sum(chunks, []), heads)
+        for c in chunks:
+            self.assertLessEqual(len(nb.urllib.parse.quote("\n".join(c))), nb.BATCH_URL_CHARS)
+
+    def test_gclient_request_and_answers(self):
+        nb, reqs = self.nb, []
+        answers = [b'["\\u0426\\u0435\\u043d\\u044b \\u043d\\u0430 \\u043d\\u0435\\u0444\\u0442\\u044c \\u043f\\u043e\\u0434\\u0441\\u043a\\u043e\\u0447\\u0438\\u043b\\u0438"]',
+                   b'[["\\u6cb9\\u4ef7\\u4e0a\\u6da8\\nAT&amp;T &#39;up&#39;","en"]]', b'{}', b'[]']
+
+        class R:
+            def __init__(self, body):
+                self.body = body
+
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *a):
+                return False
+
+            def read(self):
+                return self.body
+
+        def urlopen(req, timeout=None):
+            reqs.append(req.full_url)
+            return R(answers[len(reqs) - 1])
+        with mock.patch.object(nb.urllib.request, "urlopen", urlopen):
+            self.assertEqual(nb._gclient("Oil prices jump", "en", "ru"), "Цены на нефть подскочили")
+            self.assertEqual(nb._gclient("Oil up\nAT&T up", "en", "zh"), "油价上涨\nAT&T 'up'")
+            self.assertIsNone(nb._gclient("x", "en", "ru"))
+            self.assertIsNone(nb._gclient("x", "en", "ru"))
+        q = nb.urllib.parse.parse_qs(nb.urllib.parse.urlparse(reqs[1]).query)
+        self.assertTrue(reqs[1].startswith(nb.GC_URL + "?"))
+        self.assertEqual((q["client"], q["sl"], q["tl"], q["q"]), (["dict-chrome-ex"], ["en"], ["zh-CN"], ["Oil up\nAT&T up"]))
+
+    def test_mymemory_out_for_the_day_does_not_stop_backfill(self):
+        nb, calls = self.nb, []
+        now = datetime(2026, 11, 24, 22, 0, tzinfo=timezone.utc)
+        st = {"recent": [{"title": f"Story number {k}", "score": 5, "ts": now.isoformat()} for k in range(40)]}
+        nb._engine_off["_mymemory"] = time.time() + 3600
+        with mock.patch.object(nb, "_gclient", self.engine("_gclient", calls)), mock.patch.object(nb, "ai_fill_titles", return_value=0):
+            n = nb.backfill_translations(st, now)
+        self.assertEqual(n, nb.BACKFILL_JOBS)
+        self.assertLessEqual(len(calls), 3)
+        self.assertEqual(st["recent"][-1]["title_ru"], "[ru] Story number 39")
+
+    def test_a_timeout_rests_the_translator_instead_of_repeating(self):
+        nb, gc, gt, mm = self.nb, [], [], []
+
+        def mymemory(text, src, lang):
+            mm.append((text, lang))
+            return None
+        mymemory.__name__ = "_mymemory"
+        with mock.patch.object(nb, "_gclient", self.engine("_gclient", gc, fail=TimeoutError("timed out"))), \
+                mock.patch.object(nb, "_google", self.engine("_google", gt, fail=urllib.error.URLError("reset"))), \
+                mock.patch.object(nb, "_mymemory", mymemory), mock.patch.object(nb, "SUMMARIES", True):
+            nb.translate_items(self.items(), first=["ru"])
+        self.assertEqual((len(gc), len(gt)), (1, 1))
+        self.assertEqual(mm[0], (self.items()[0]["title"], "ru"), "the last resort starts with Russian headlines")
+        self.assertEqual(len(mm), nb.TR_SINGLE, "and stays small")
+
+
 class TranslationHold(unittest.TestCase):
     def setUp(self):
         import news_bot
@@ -577,6 +748,7 @@ class TranslationHold(unittest.TestCase):
                 mock.patch.object(self.nb, "fetch_quotes", return_value=[]), \
                 mock.patch.object(self.nb, "fetch_subscribers", return_value=(["300"], {"300": "ru"})), \
                 mock.patch.object(self.nb, "translate", side_effect=translate), \
+                mock.patch.object(self.nb, "prefetch", return_value=0), \
                 mock.patch.object(self.nb, "update_extras", return_value=""), \
                 mock.patch.object(self.nb, "push_live"), \
                 mock.patch.object(self.nb.Telegram, "_call", fake_call):
@@ -663,6 +835,7 @@ class NewsBotRunBothLanguages(unittest.TestCase):
                     mock.patch.object(news_bot, "fetch_quotes", return_value=[]), \
                     mock.patch.object(news_bot, "fetch_subscribers", return_value=(["200", "300"], {"300": "ru"})), \
                     mock.patch.object(news_bot, "translate", side_effect=fake_translate), \
+                    mock.patch.object(news_bot, "prefetch", return_value=0), \
                     mock.patch.object(news_bot, "update_extras", return_value=""), \
                     mock.patch.object(news_bot, "push_live"), \
                     mock.patch.object(news_bot.Telegram, "_call", fake_call):
@@ -774,6 +947,7 @@ class ChineseAndArabic(unittest.TestCase):
                     mock.patch.object(news_bot, "fetch_quotes", return_value=[]), \
                     mock.patch.object(news_bot, "fetch_subscribers", return_value=(["400", "500"], {"400": "zh", "500": "ar"})), \
                     mock.patch.object(news_bot, "translate", side_effect=fake_translate), \
+                    mock.patch.object(news_bot, "prefetch", return_value=0), \
                     mock.patch.object(news_bot, "update_extras", return_value=""), \
                     mock.patch.object(news_bot, "push_live"), \
                     mock.patch.object(news_bot.Telegram, "_call", fake_call):

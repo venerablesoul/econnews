@@ -635,6 +635,7 @@ class RunParts(unittest.TestCase):
                 mock.patch.object(news_bot, "collect", return_value=(stories, errors or {})), \
                 mock.patch.object(news_bot, "fetch_subscribers", return_value=(["200"], {})), \
                 mock.patch.object(news_bot, "translate", return_value=None), \
+                mock.patch.object(news_bot, "prefetch", return_value=0), \
                 mock.patch.object(news_bot, "update_extras", return_value=""), \
                 mock.patch.object(news_bot, "push_live"), \
                 mock.patch.object(news_bot.Telegram, "_call", fake_call):

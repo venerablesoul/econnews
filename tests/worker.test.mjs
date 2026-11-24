@@ -295,6 +295,21 @@ await test("short paths /api/history/AAPL/1m and /api/quote/AAPL,BTC", async () 
   assert.equal(q.json.quotes.BTC.px, 81800.5);
 });
 
+await test("translation: the Google address that answers goes first, the other one is a backup", async () => {
+  flags.failGtx = true;
+  try {
+    clearMemo();
+    const ru = await api("/api/company?s=AAPL&parts=cn&lang=ru");
+    assert.equal(ru.json.cn[0].h, "Apple превзошла прогнозы");
+    assert.equal(ru.json.cn[1].h, "Продажи iPhone выросли & ещё", "entities are decoded");
+    assert.deepEqual(ru.json.errors, []);
+    flags.failGtx = false; flags.failClients5 = true;
+    clearMemo();
+    const zh = await api("/api/company?s=AAPL&parts=cn&lang=zh");
+    assert.equal(zh.json.cn[0].h, "苹果业绩超出预期", "the old address still works as a backup");
+  } finally { flags.failGtx = false; flags.failClients5 = false; clearMemo(); }
+});
+
 await test("fallbacks: crypto without Binance, translation without Google", async () => {
   flags.failBinance = true; flags.failGoogle = true; flags.failYahoo = true;
   try {
