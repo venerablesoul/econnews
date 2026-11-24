@@ -103,10 +103,19 @@ def extra_fixtures():
               "imgs": [{"d": day(40), "t": "17:10", "cloud": 1.0, "f": "sat/cushing/%s.jpg" % day(40)},
                        {"d": day(3), "t": "17:10", "cloud": 2.5, "f": "sat/cushing/%s.jpg" % day(3)}]},
              {"id": "fujairah", "name": "Fujairah", "name_ru": "Фуджейра", "lat": 25.178, "lon": 56.355, "km": 6.0, "imgs": []}]
+    # the bot's copy of the overview map tiles (basemap.py): every tile is a small blue-green picture here
+    tb = _io.BytesIO()
+    tim = Image.new("RGB", (256, 256), (24, 58, 96))
+    ImageDraw.Draw(tim).ellipse([60, 60, 190, 190], fill=(70, 110, 60))
+    tim.save(tb, "JPEG", quality=70)
+    out_tiles = {"__tile__": tb.getvalue(),
+                 "base/meta.json": json.dumps({"version": 1, "layers": {"day": {"url": "x", "ext": "jpg", "max": 4, "done": True},
+                                                                          "lights": {"url": "x", "ext": "jpg", "max": 4, "done": True}}}).encode()}
     out = {"portwatch.json": json.dumps({"updated": now.isoformat(), "src": "IMF PortWatch", "choke": choke}).encode(),
            "ships_world.json": json.dumps(world).encode(),
            "sat.json": json.dumps({"updated": now.isoformat(), "src": "Contains modified Copernicus Sentinel data 2026 · via Microsoft Planetary Computer", "sites": sites}).encode(),
            "sat/cushing/%s.jpg" % day(40): jpeg((95, 85, 60)), "sat/cushing/%s.jpg" % day(3): jpeg((60, 80, 70))}
+    out.update(out_tiles)
     return out
 
 
@@ -140,6 +149,8 @@ def run():
                 if u.path.lstrip("/") in fx:
                     kind = "image/jpeg" if u.path.endswith(".jpg") else "application/json"
                     return route.fulfill(status=200, content_type=kind, body=fx[u.path.lstrip("/")])
+                if u.path.startswith("/base/") and u.path.endswith(".jpg") and "__tile__" in fx:
+                    return route.fulfill(status=200, content_type="image/jpeg", body=fx["__tile__"])
             return route.continue_()
         ctx.route("**/*", handle)
 
@@ -725,9 +736,10 @@ def run():
         f.click("#map-body .gm-base button[data-b=sat]")
         f.wait_for_function("MAPS.M.base === 'sat'", timeout=3000)
         check("MAP: back to the satellite picture", f.evaluate("localStorage.getItem('map_base')") == "sat")
-        # the tile servers do not answer here (blocked in the tests): the map falls back to drawing its own land
-        f.wait_for_function("getComputedStyle(document.querySelector('#map-body .gm-bg')).display === 'none'", timeout=8000)
-        check("MAP: without the satellite tiles the map draws its own land (no black map)", True)
+        # NASA does not answer here (blocked in the tests), but the bot's copy of the overview tiles on the site does
+        f.wait_for_function("""(function(){ var c = document.querySelector('#map-body .gm-bg'); if (!c || getComputedStyle(c).display === 'none') return false;
+          var d = c.getContext('2d').getImageData(Math.floor(c.width / 2), Math.floor(c.height / 2), 1, 1).data; return d[2] > 40 })()""", timeout=8000)
+        check("MAP: the satellite picture comes from the site's own copy of the tiles", True)
         # chokepoints from the bot's copy of PortWatch (not PortWatch's failing service)
         f.wait_for_function("window.MAPS && MAPS.M.data.choke && MAPS.M.data.choke.pts.length === 5", timeout=8000)
         side = f.inner_text("#map-body .gm-side")
