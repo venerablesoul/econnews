@@ -34,7 +34,7 @@ UA = "econnews-bot (+https://github.com/venerablesoul/econnews)"
 STAC = "https://planetarycomputer.microsoft.com/api/stac/v1/search"
 TILES = ("https://planetarycomputer.microsoft.com/api/data/v1/item/tiles/WebMercatorQuad/{z}/{x}/{y}@1x?collection=sentinel-2-l2a"
          "&item={item}&assets=visual&asset_bidx=visual%7C1%2C2%2C3&nodata=0&format=png")
-SRC = "Copernicus Sentinel-2 (ESA) · Microsoft Planetary Computer"
+SRC = "Contains modified Copernicus Sentinel data {years} · via Microsoft Planetary Computer"   # Copernicus's own wording
 # the map zoom whose pixel on the ground is closest to Sentinel-2's own 10 m (it shrinks with latitude: z14 near the
 # equator, z13 from ~45°)
 SIZE = 600           # the published picture's width, px
@@ -268,8 +268,9 @@ def build(now=None, path=OUT, sat_dir=DIR, fetch=http, per_call=PER_CALL, every_
                              "bbox": bbox(s[3], s[4], s[5]), "imgs": []}
         r.update({"name": s[1], "name_ru": s[2], "lat": s[3], "lon": s[4], "km": s[5]})   # the table here wins
         sites.append(r)
+    years = sorted({i["d"][:4] for r in sites for i in r.get("imgs") or [] if i.get("d")}) or [str(now.year)]
     out = {"updated": now.isoformat() if added or not old.get("updated") else old["updated"], "checked": now.isoformat(),
-           "src": SRC, "res_m": 10, "sites": sites}
+           "src": SRC.format(years=", ".join(years)), "res_m": 10, "sites": sites}
     if errs:
         out["err"] = errs
     tmp = path + ".tmp"

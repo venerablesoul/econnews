@@ -918,7 +918,7 @@ function satGallery(w, sites, d){
     grid.appendChild(card);
   });
   var nt = el('div', 'note sat-note'); nt.textContent = TX('sat_note'); w.appendChild(nt);
-  var src = el('div', 'note'); src.textContent = (d.src || 'Copernicus Sentinel-2') + (d.updated ? ' · ' + TX('sat_upd', satDate(d.updated.slice(0, 10))) : ''); w.appendChild(src);
+  var src = el('div', 'note'); src.textContent = (d.src || 'Contains modified Copernicus Sentinel data') + (d.updated ? ' · ' + TX('sat_upd', satDate(d.updated.slice(0, 10))) : ''); w.appendChild(src);
 }
 // one hub: "then" and "now" on top of each other, a handle to slide between them; wheel or buttons to zoom, drag to move
 function satDetail(w, s, sites, d){
@@ -994,6 +994,7 @@ function satDetail(w, s, sites, d){
   var cb = el('a', 'chipbtn', 'Copernicus Browser ↗'); cb.href = 'https://browser.dataspace.copernicus.eu/?zoom=13&lat=' + s.lat + '&lng=' + s.lon; cb.target = '_blank'; cb.rel = 'noopener'; links.appendChild(cb);
   info.appendChild(links); w.appendChild(info);
   var nt = el('div', 'note sat-note'); nt.textContent = TX(then ? 'sat_how' : 'sat_how1'); w.appendChild(nt);
+  var sn = el('div', 'note'); sn.textContent = d.src || 'Contains modified Copernicus Sentinel data'; w.appendChild(sn);   // the attribution Copernicus asks for
   var go = function(){ if (stage.clientWidth) apply(); else requestAnimationFrame(go) };
   b.onload = go; go();
   $('map-sub').textContent = 'Copernicus Sentinel-2 · ' + satName(s);
@@ -1150,8 +1151,9 @@ function clampView(){
 }
 /* ---------- the picture under the map: satellite tiles ----------
    NASA GIBS (public domain): Blue Marble with relief and sea floor (to zoom 8, ~500 m) and the Earth at night
-   (VIIRS city lights 2012); closer in, EOX Sentinel-2 cloudless (10 m, to zoom 14; CC BY-NC-SA 4.0, attribution
-   below the map). The tiles are drawn on their own canvas under the map's, so nothing from other sites is ever read
+   (VIIRS city lights 2012); closer in, EOxCloudless 2016 (Sentinel-2, 10 m, to zoom 14) — the only year EOX licenses
+   under CC BY 4.0, so it may be used commercially with the attribution below the map (2018 and later years are
+   CC BY-NC-SA: not for commercial use without EOX's paid licence). If it does not answer, Blue Marble stays. The tiles are drawn on their own canvas under the map's, so nothing from other sites is ever read
    back from the map's canvas; the service worker does not keep them (other sites' files are not cached). */
 var BASES = ['sat', 'day', 'night', 'scheme'];
 var GIBS = 'https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/';
@@ -1160,8 +1162,7 @@ var TILESRC = {
                        GIBS + 'BlueMarble_ShadedRelief_Bathymetry/default//GoogleMapsCompatible_Level8/{z}/{y}/{x}.jpeg',
                        GIBS + 'BlueMarble_NextGeneration/default//GoogleMapsCompatible_Level8/{z}/{y}/{x}.jpg']},
   lights: {max: 8, urls: [GIBS + 'VIIRS_CityLights_2012/default//GoogleMapsCompatible_Level8/{z}/{y}/{x}.jpg']},
-  close: {min: 9, max: 14, urls: ['https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2024_3857/default/g/{z}/{y}/{x}.jpg',
-                                  'https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2020_3857/default/g/{z}/{y}/{x}.jpg']}
+  close: {min: 9, max: 14, urls: ['https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless_3857/default/g/{z}/{y}/{x}.jpg']}
 };
 var TILES = new Map(), bgc = null, bg = null;
 M.base = BASES.indexOf(store('map_base')) >= 0 ? store('map_base') : 'sat';
@@ -1223,7 +1224,7 @@ function drawBase(on){
     var dz = Math.min(TILESRC.day.max, zw);
     // the darkened day picture under the city lights (the look of a night-side Earth); brighter for "day"
     drawTiles('day', dz, b === 'day' ? 1 : 0.62);
-    if (zw >= TILESRC.close.min) drawTiles('close', Math.min(TILESRC.close.max, zw), b === 'day' ? 1 : 0.7);
+    if (zw >= TILESRC.close.min && !TILESRC.close.dead) drawTiles('close', Math.min(TILESRC.close.max, zw), b === 'day' ? 1 : 0.7);
     if (b === 'sat') { bg.globalCompositeOperation = 'screen'; drawTiles('lights', Math.min(TILESRC.lights.max, zw), zw >= 10 ? 0.35 : 0.85); bg.globalCompositeOperation = 'source-over' }
   } else {
     drawTiles('lights', Math.min(TILESRC.lights.max, zw), 1);
@@ -1235,7 +1236,8 @@ function drawBase(on){
 function baseAtt(){
   if (M.tab === 'ECO' || M.base === 'scheme') return '';
   var z = M.S ? Math.ceil(Math.log2(M.S * (M.dpr || 1) / 256) - 0.15) : 0;
-  return 'NASA GIBS' + (z >= TILESRC.close.min && M.base !== 'night' ? ' · Sentinel-2 cloudless 2024 by EOX (CC BY-NC-SA 4.0)' : '');
+  return 'NASA EOSDIS GIBS' + (z >= TILESRC.close.min && M.base !== 'night' && !TILESRC.close.dead
+    ? ' · EOxCloudless 2016 https://cloudless.eox.at by EOX IT Services GmbH (Contains modified Copernicus Sentinel data 2016 & 2017), CC BY 4.0' : '');
 }
 function sx(fx){ return (fx - M.cx) * M.S + M.W / 2 }
 function sy(fy){ return (fy - M.cy) * M.S + M.H / 2 }

@@ -105,7 +105,7 @@ def extra_fixtures():
              {"id": "fujairah", "name": "Fujairah", "name_ru": "Фуджейра", "lat": 25.178, "lon": 56.355, "km": 6.0, "imgs": []}]
     out = {"portwatch.json": json.dumps({"updated": now.isoformat(), "src": "IMF PortWatch", "choke": choke}).encode(),
            "ships_world.json": json.dumps(world).encode(),
-           "sat.json": json.dumps({"updated": now.isoformat(), "src": "Copernicus Sentinel-2 (ESA)", "sites": sites}).encode(),
+           "sat.json": json.dumps({"updated": now.isoformat(), "src": "Contains modified Copernicus Sentinel data 2026 · via Microsoft Planetary Computer", "sites": sites}).encode(),
            "sat/cushing/%s.jpg" % day(40): jpeg((95, 85, 60)), "sat/cushing/%s.jpg" % day(3): jpeg((60, 80, 70))}
     return out
 
