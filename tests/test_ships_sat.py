@@ -275,13 +275,16 @@ class SatellitePictures(unittest.TestCase):
         self.assertAlmostEqual(b[3] - b[1], 7.0 / 111.32, places=3)
         tiles, rng, crop, z = sat.tiles_for(b)
         self.assertEqual(z, 14)
-        self.assertLessEqual(len(tiles), 25)
+        self.assertLessEqual(len(tiles), sat.MAX_TILES)
         w, h = (rng[2] - rng[0] + 1) * 256, (rng[3] - rng[1] + 1) * 256
         self.assertTrue(0 <= crop[0] < crop[2] <= w and 0 <= crop[1] < crop[3] <= h)
         self.assertAlmostEqual((crop[2] - crop[0]) / (crop[3] - crop[1]), 1.0, delta=0.05)
         for s in sat.SITES:
-            self.assertLessEqual(len(sat.tiles_for(sat.bbox(s[3], s[4], s[5]))[0]), 25, s[0])
-        self.assertEqual((sat.zoom_for(0), sat.zoom_for(52), sat.zoom_for(60)), (14, 13, 13))
+            t, _, _, z = sat.tiles_for(sat.bbox(s[3], s[4], s[5]))
+            self.assertLessEqual(len(t), sat.MAX_TILES, s[0])
+            self.assertLessEqual(sat.m_per_px(s[3], z), sat.MAX_M_PX, s[0])
+        self.assertEqual((sat.zoom_for(0), sat.zoom_for(52), sat.zoom_for(60)), (14, 14, 13))
+        self.assertEqual(len({s[0] for s in sat.SITES}), len(sat.SITES))
 
     def fake(self, passes, colors):
         calls = {"search": 0, "tiles": 0}
@@ -319,8 +322,17 @@ class SatellitePictures(unittest.TestCase):
             self.assertEqual([i["d"] for i in s["imgs"]], ["2026-10-10", "2026-11-17"])
             self.assertEqual(s["imgs"][1]["f"], "sat/%s/2026-11-17.jpg" % s["id"])
             from PIL import Image
-            im = Image.open(os.path.join(d, s["imgs"][1]["f"]))
-            self.assertEqual((im.format, im.size[0]), ("JPEG", sat.SIZE))
+            with Image.open(os.path.join(d, s["imgs"][1]["f"])) as im:
+                fmt_, w = im.format, im.size[0]
+            b = sat.bbox(*[x for x in sat.SITES if x[0] == s["id"]][0][3:])
+            _, _, crop, z = sat.tiles_for(b)
+            native = crop[2] - crop[0]
+            self.assertEqual(fmt_, "JPEG")
+            self.assertGreater(w, native * 1.15)
+            self.assertLessEqual(w, sat.MAX_SIDE)
+            self.assertEqual((s["imgs"][1]["v"], s["imgs"][1]["bb"]), (sat.RENDER_V, b))
+            with Image.open(os.path.join(d, s["imgs"][1]["tf"])) as th:
+                self.assertEqual(th.size[0], sat.THUMB)
             self.assertEqual(len(out["sites"]), len(sat.SITES))
             n2 = sat.build(NOW + timedelta(hours=1), path, sdir, fetch, per_call=1)
             with open(path) as f:
@@ -334,15 +346,16 @@ class SatellitePictures(unittest.TestCase):
             sid = sat.SITES[0][0]
             os.makedirs(os.path.join(sdir, sid))
             imgs = []
+            b0 = sat.bbox(*sat.SITES[0][3:])
             for day in ("2026-08-01", "2026-09-01", "2026-10-01", "2026-11-01"):
                 open(os.path.join(sdir, sid, day + ".jpg"), "wb").close()
-                imgs.append({"d": day, "f": f"sat/{sid}/{day}.jpg"})
+                imgs.append({"d": day, "f": f"sat/{sid}/{day}.jpg", "v": sat.RENDER_V, "bb": b0})
             with open(path, "w") as f:
                 json.dump({"sites": [{"id": sid, "imgs": imgs, "checked": "2026-01-01"}] +
                                     [{"id": s[0], "imgs": [], "checked": NOW.isoformat()} for s in sat.SITES[1:]]}, f)
             fetch, _ = self.fake([("S2A_NEW_20261120", "2026-11-20T10:00:00Z", 3.0)], {"S2A_NEW_20261120": (60, 70, 50)})
             self.assertEqual(sat.build(NOW, path, sdir, fetch, per_call=1), 1)
-            self.assertEqual(sorted(os.listdir(os.path.join(sdir, sid))), ["2026-09-01.jpg", "2026-10-01.jpg", "2026-11-01.jpg", "2026-11-20.jpg"])
+            self.assertEqual(sorted(os.listdir(os.path.join(sdir, sid))), ["2026-09-01.jpg", "2026-10-01.jpg", "2026-11-01.jpg", "2026-11-20.jpg", "2026-11-20_t.jpg"])
 
             def down(*a, **k):
                 raise OSError("no network")
@@ -352,6 +365,68 @@ class SatellitePictures(unittest.TestCase):
                 out = json.load(f)
             self.assertEqual(len(out["err"]), 2)
             self.assertEqual(len([s for s in out["sites"] if s["id"] == sid][0]["imgs"]), 4)
+
+    def test_old_pictures_are_redrawn_for_the_new_frame(self):
+        with tempfile.TemporaryDirectory() as d:
+            path, sdir = os.path.join(d, "sat.json"), os.path.join(d, "sat")
+            sid = sat.SITES[0][0]
+            os.makedirs(os.path.join(sdir, sid))
+            for day in ("2026-10-25", "2026-11-19"):
+                open(os.path.join(sdir, sid, day + ".jpg"), "wb").close()
+            old_box = sat.bbox(35.957, -96.757, 7.0)
+            imgs = [{"d": "2026-10-25", "f": f"sat/{sid}/2026-10-25.jpg", "item": "S2B_OLD_20261025"},
+                    {"d": "2026-11-19", "f": f"sat/{sid}/2026-11-19.jpg", "item": "S2C_GONE_20261119"}]
+            with open(path, "w") as f:
+                json.dump({"sites": [{"id": sid, "imgs": imgs, "bbox": old_box, "checked": NOW.isoformat()}] +
+                                    [{"id": s[0], "imgs": [], "bbox": sat.bbox(*s[3:]), "checked": NOW.isoformat()} for s in sat.SITES[1:]]}, f)
+            fetch, calls = self.fake([], {"S2B_OLD_20261025": (70, 85, 60), "S2C_GONE_20261119": ((70, 85, 60), 0)})
+            sat.build(NOW + timedelta(hours=1), path, sdir, fetch, per_call=1)
+            with open(path) as f:
+                out = json.load(f)
+            s = [x for x in out["sites"] if x["id"] == sid][0]
+            self.assertEqual([i["d"] for i in s["imgs"]], ["2026-10-25"])
+            self.assertEqual((s["imgs"][0]["v"], s["imgs"][0]["bb"]), (sat.RENDER_V, sat.bbox(*sat.SITES[0][3:])))
+            self.assertEqual(sorted(os.listdir(os.path.join(sdir, sid))), ["2026-10-25.jpg", "2026-10-25_t.jpg"])
+            self.assertGreater(os.path.getsize(os.path.join(sdir, sid, "2026-10-25.jpg")), 1000)
+            self.assertFalse(sat.stale(s, sat.bbox(*sat.SITES[0][3:])))
+
+    def test_out_of_time_old_pictures_wait_for_the_next_run(self):
+        with tempfile.TemporaryDirectory() as d:
+            path, sdir = os.path.join(d, "sat.json"), os.path.join(d, "sat")
+            sid = sat.SITES[0][0]
+            os.makedirs(os.path.join(sdir, sid))
+            open(os.path.join(sdir, sid, "2026-10-25.jpg"), "wb").close()
+            old_box = sat.bbox(35.957, -96.757, 7.0)
+            with open(path, "w") as f:
+                json.dump({"sites": [{"id": sid, "imgs": [{"d": "2026-10-25", "f": f"sat/{sid}/2026-10-25.jpg", "item": "S2B_OLD_20261025"}],
+                                      "bbox": old_box, "checked": NOW.isoformat()}] +
+                                    [{"id": s[0], "imgs": [], "bbox": sat.bbox(*s[3:]), "checked": NOW.isoformat()} for s in sat.SITES[1:]]}, f)
+            fetch, calls = self.fake([], {"S2B_OLD_20261025": (70, 85, 60)})
+            with open(path) as f:
+                rec = json.load(f)["sites"][0]
+            s, n = sat.update_site(sat.SITES[0], rec, NOW, fetch, sat.time.monotonic() - 1, sdir)
+            with open(path, "w") as f:
+                json.dump({"sites": [s] + [{"id": x[0], "imgs": [], "bbox": sat.bbox(*x[3:]), "checked": NOW.isoformat()} for x in sat.SITES[1:]]}, f)
+            self.assertEqual(n, 0)
+            self.assertEqual([i["d"] for i in s["imgs"]], ["2026-10-25"])
+            self.assertEqual([i["d"] for i in s["redo"]], ["2026-10-25"])
+            self.assertTrue(sat.stale(s, sat.bbox(*sat.SITES[0][3:])))
+            self.assertTrue(os.path.isfile(os.path.join(sdir, sid, "2026-10-25.jpg")))
+            sat.build(NOW + timedelta(hours=2), path, sdir, fetch, per_call=1)
+            with open(path) as f:
+                s = [x for x in json.load(f)["sites"] if x["id"] == sid][0]
+            self.assertNotIn("redo", s)
+            self.assertEqual((s["imgs"][0]["v"], s["imgs"][0]["tf"]), (sat.RENDER_V, f"sat/{sid}/2026-10-25_t.jpg"))
+
+    def test_enhance_stretches_a_hazy_picture(self):
+        from PIL import Image
+        im = Image.new("RGBA", (200, 200), (120, 125, 118, 255))
+        for x in range(0, 200, 20):
+            for y in range(200):
+                im.putpixel((x, y), (140, 145, 138, 255))
+        out = sat.enhance(im)
+        lo, hi = out.convert("L").getextrema()
+        self.assertGreater(hi - lo, 100)
 
 
 if __name__ == "__main__":

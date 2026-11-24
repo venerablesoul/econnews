@@ -585,13 +585,13 @@ var D = {
   sat_note: ['At 10 m you can see the tanks (circles 30–100 m across), new tanks being built, tankers at the jetties, fresh earthworks. How full the tanks are cannot be read at this resolution — that needs ~0.5 m commercial pictures.',
     'На 10 м видны резервуары (круги 30–100 м), строительство новых, танкеры у причалов, свежие земляные работы. Насколько заполнены резервуары, при таком разрешении не определить — для этого нужны коммерческие снимки ~0,5 м.'],
   sat_upd: function(d){ return (RU ? 'обновлено ' : 'updated ') + d },
-  sat_all: ['All hubs', 'Все хабы'], sat_km: ['km', 'км'], sat_cmp: ['Compare with:', 'Сравнить со снимком:'], sat_onmap: ['On the map', 'На карте'],
+  sat_all: ['All hubs', 'Все хабы'], sat_full_t: ['Full screen', 'Во весь экран'], sat_km: ['km', 'км'], sat_cmp: ['Compare with:', 'Сравнить со снимком:'], sat_onmap: ['On the map', 'На карте'],
   sat_then: function(d){ return (RU ? 'было · ' : 'then · ') + d }, sat_now: function(d){ return (RU ? 'стало · ' : 'now · ') + d },
   sat_meta: function(d, t, cl, km){ return (RU ? 'Снимок ' : 'Picture of ') + d + (t ? ' ' + t + ' UTC' : '') + (RU ? ' · облака над хабом ' : ' · clouds over the hub ') + cl + '% · ' + km + '×' + km + (RU ? ' км' : ' km') },
-  sat_how: ['Drag the yellow handle to compare; wheel or ＋/− to zoom, drag to move when zoomed in, double-click to reset.',
-    'Тяните жёлтую ручку, чтобы сравнить; колесо или ＋/− — приблизить, при приближении тяните, чтобы двигать, двойной клик — сброс.'],
-  sat_how1: ['Only one clear picture so far — the next pass will be added for comparison. Wheel or ＋/− to zoom, drag to move.',
-    'Пока есть только один чистый снимок — следующий пролёт добавится для сравнения. Колесо или ＋/− — приблизить, тяните, чтобы двигать.'],
+  sat_how: ['Drag the yellow handle to compare; wheel or ＋/− to zoom, drag to move when zoomed in, double-click to reset, ⛶ — full screen.',
+    'Тяните жёлтую ручку, чтобы сравнить; колесо или ＋/− — приблизить (до 8×), при приближении тяните, чтобы двигать, двойной клик — сброс, ⛶ — во весь экран.'],
+  sat_how1: ['Only one clear picture so far — the next pass will be added for comparison. Wheel or ＋/− to zoom, drag to move, ⛶ — full screen.',
+    'Пока есть только один чистый снимок — следующий пролёт добавится для сравнения. Колесо или ＋/− — приблизить, тяните, чтобы двигать, ⛶ — во весь экран.'],
   sat_click: ['click — satellite pictures', 'клик — спутниковые снимки'],
   gm_tankers_nokey: ['Tankers: no data yet — the bot needs a free aisstream.io key (secret AISSTREAM_API_KEY)', 'Танкеры: данных пока нет — боту нужен бесплатный ключ aisstream.io (секрет AISSTREAM_API_KEY)'],
   gm_tankers_none: ['Tankers: none seen in the last 12 hours', 'Танкеры: за 12 часов не замечены'],
@@ -729,7 +729,7 @@ var D = {
   fl_connecting: function(p){ return (RU ? 'подключение к Binance: ' : 'connecting to Binance: ') + p + '…' }, fl_live: ['live', 'онлайн'],
   fl_fail: function(m){ return (RU ? 'Binance не отвечает (' : 'Binance does not answer (') + m + (RU ? ') — пробую зеркало…' : ') — trying the mirror…') },
   fl_other: ['coin…', 'монета…'], fl_nopair: function(p){ return (RU ? 'На Binance нет пары ' : 'Binance has no pair ') + p }, fl_collect: ['collecting the first seconds of the book…', 'собираю первые секунды стакана…'],
-  fl_row: ['row =', 'строка ='],
+  fl_row: ['row =', 'строка ='], fl_dist: ['from the mid', 'от середины'], fl_contrast_t: ['Contrast: how much of the book stays dark', 'Контраст: какая часть стакана остаётся тёмной'],
   zoom_in_t: ['Zoom in', 'Приблизить'], zoom_out_t: ['Zoom out', 'Отдалить'], zoom_reset_t: ['Reset zoom and scroll', 'Сбросить масштаб и прокрутку'],
   fl_zoom_hint_XY: ['wheel — price · Shift+wheel — time · drag — scroll · double-click — reset', 'колесо — цена · Shift+колесо — время · тянуть — прокрутка · двойной клик — сброс'],
   fl_zoom_hint_CVD: ['wheel — zoom · drag — scroll back · double-click — reset', 'колесо — масштаб · тянуть — назад по времени · двойной клик — сброс'],
@@ -738,8 +738,8 @@ var D = {
   fl_price: ['Price', 'Цена'], fl_resting: ['Resting', 'В стакане'], fl_bids: ['BIDS', 'ПОКУПКА'], fl_asks: ['ASKS', 'ПРОДАЖА'], fl_traded5: ['traded 5 min', 'сделки 5 мин'],
   fl_spread: ['spread', 'спред'], fl_imb: ['imbalance ±0.1%', 'перевес ±0,1%'], fl_tape: ['TAPE · big trades highlighted', 'ЛЕНТА · крупные сделки подсвечены'],
   fl_sold: ['Sold at the bid', 'Продано по бидам'], fl_bought: ['Bought at the ask', 'Куплено по аскам'], fl_bar_delta: ['Bar delta', 'Дельта бара'], fl_vol: ['Volume', 'Объём'],
-  fl_note_HEAT: ['Brightness — size resting at that price, twice a second: dark is a typical level, white the biggest walls on screen. Grey — beyond the 5,000 levels Binance gives. Lines: best bid (green) and ask (red). Circles — trades sized by quantity (green bought at the ask, red sold at the bid; outlined — big). Left of the book\'s first column — the price\'s path from trades. Right — the book now.',
-    'Яркость — объём заявок на этой цене дважды в секунду: тёмное — обычный уровень, белое — самые крупные стенки на экране. Серое — за пределами 5000 уровней, что даёт Binance. Линии: лучший бид (зелёная) и аск (красная). Круги — сделки по объёму (зелёные — покупки по аску, красные — продажи по биду; с обводкой — крупные). Левее первой колонки стакана — путь цены по сделкам. Справа — стакан сейчас.'],
+  fl_note_HEAT: ['Brightness — size resting in each price row (row height in the top-left corner), twice a second. Most of the book stays dark; only levels bigger than usual on screen light up, white are the biggest walls — the scale under the right panel gives sizes in coins, ◐ changes the contrast. Grey — beyond the 5,000 levels Binance gives. Lines: best bid (green) and ask (red). Circles — trades summed by moment and price (green bought at the ask, red sold at the bid; outlined — big). Right — the book now, with the three biggest walls on each side signed. Hover for the exact price range, size in coins and dollars and distance from the mid.',
+    'Яркость — объём заявок в каждой ценовой строке (её шаг — в левом верхнем углу), дважды в секунду. Основная часть стакана тёмная: светятся только уровни крупнее обычного на экране, белое — самые крупные стенки; шкала под правой панелью показывает объём в монетах, ◐ меняет контраст. Серое — за пределами 5000 уровней, что даёт Binance. Линии: лучший бид (зелёная) и аск (красная). Круги — сделки, сложенные по моменту и цене (зелёные — покупки по аску, красные — продажи по биду; с обводкой — крупные). Справа — стакан сейчас, три крупнейшие стенки с каждой стороны подписаны. Наведите курсор — точный диапазон цены, объём в монетах и долларах и расстояние от середины.'],
   fl_note_BOOK: ['The ladder groups prices by 5 steps; yellow bars — volume traded at the price in the last 5 minutes. Imbalance — bids vs asks within 0.1% of the price. Big trade = top 0.5% by size and ≥ $50K.',
     'Стакан сгруппирован по 5 шагов цены; жёлтые полосы — объём сделок на цене за 5 минут. Перевес — биды против асков в пределах 0,1% от цены. Крупная сделка — верхние 0,5% по объёму и от $50 тыс.'],
   fl_note_FOOT: ['Each cell: sold at the bid (left, red) × bought at the ask (right, green). Yellow frame — the bar\'s point of control; green frame — buying ≥ 3× the selling one level lower (imbalance). Built from live trades plus the last few minutes.',
@@ -892,13 +892,65 @@ function t(key){
 }
 
 function isOld(n){ return n && n.original !== undefined && n.lang === undefined }
+var TR_TL = {en: 'en', ru: 'ru', zh: 'zh-CN', ar: 'ar'}[lang], TR_KEY = 'tr_news_' + lang, trMem = {}, trBusy = {}, trBad = {}, trOff = 0;
+try { trMem = JSON.parse(localStorage.getItem(TR_KEY) || '{}') || {} } catch(e){ trMem = {} }
+function trKeep(){
+  try {
+    var k = Object.keys(trMem);
+    if (k.length > 900) k.slice(0, k.length - 700).forEach(function(x){ delete trMem[x] });
+    localStorage.setItem(TR_KEY, JSON.stringify(trMem));
+  } catch(e){}
+}
+function foreign(n){ return n && !isOld(n) && (n.lang || 'en') !== lang }
+function gtx(lines){
+  return fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=' + TR_TL + '&dt=t&q=' + encodeURIComponent(lines.join('\n')))
+    .then(function(r){ if (!r.ok) { var e = new Error('HTTP ' + r.status); e.net = 1; throw e } return r.json() }, function(e){ e.net = 1; throw e })
+    .then(function(j){
+      var out = [], buf = '';
+      ((j && j[0]) || []).forEach(function(s){ if (!s) return; buf += s[0] || ''; if (/\n\s*$/.test(s[1] || '')) { out.push(buf.trim()); buf = '' } });
+      if (buf.trim()) out.push(buf.trim());
+      if (out.length !== lines.length) throw new Error('split');
+      return out;
+    });
+}
+function trChunk(src, done){
+  var flat = src.map(function(s){ return String(s).replace(/\s+/g, ' ').trim() });
+  src.forEach(function(s){ trBusy[s] = 1 });
+  var put = function(out){
+    var got = 0;
+    src.forEach(function(s, i){ delete trBusy[s]; var t = out[i]; if (t && t.toLowerCase() !== flat[i].toLowerCase()) { trMem[s] = t; got++ } else trBad[s] = Date.now() + 600000 });
+    if (got) { trKeep(); done() }
+  };
+  var fail = function(e){ var until = Date.now() + 120000; src.forEach(function(s){ delete trBusy[s]; trBad[s] = until }); if (!e || e.net) trOff = Date.now() + 90000 };
+  gtx(flat).then(put, function(e){
+    if (e && e.net) return fail(e);
+    Promise.all(flat.map(function(l){ return gtx([l]).then(function(o){ return o[0] }, function(){ return '' }) })).then(put, fail);
+  });
+}
+function fillNews(items, done){
+  if (!TR_TL || !window.fetch) return;
+  var now = Date.now(); if (trOff > now) return;
+  var want = [];
+  (items || []).forEach(function(n){
+    if (!foreign(n)) return;
+    if (!n['title_' + lang] && n.title) want.push(n.title);
+    if (!n['lead_' + lang] && n.lead && !aiSum(n)) want.push(n.lead);
+  });
+  want = want.filter(function(s, i){ return want.indexOf(s) === i && !trMem[s] && !trBusy[s] && !(trBad[s] > now) });
+  var chunk = [], size = 0;
+  want.slice(0, 160).forEach(function(s){
+    if (chunk.length && (size + s.length > 1400 || chunk.length >= 24)) { trChunk(chunk, done); chunk = []; size = 0 }
+    chunk.push(s); size += s.length + 1;
+  });
+  if (chunk.length) trChunk(chunk, done);
+}
 function newsTitle(n){
   if (isOld(n)) return RU || !n.original ? n.title : n.original;
-  return n['title_' + lang] || n.title || '';
+  return n['title_' + lang] || (foreign(n) && trMem[n.title]) || n.title || '';
 }
 function newsLead(n){
   if (isOld(n)) return RU ? n.lead || '' : '';
-  return n['lead_' + lang] || n.lead || '';
+  return n['lead_' + lang] || (foreign(n) && n.lead && trMem[n.lead]) || n.lead || '';
 }
 function aiSum(n){
   var ai = n && n.ai; if (!ai) return '';
@@ -1021,6 +1073,6 @@ window.L10N = {
   ind: function(k, x){ return RU ? x.ru : xl('MACRO_IND', k) || x.en },
   mktXl: function(id){ return xl('MKT', id) },
   xlName: function(map, id){ return xl(map, id) },
-  newsTitle: newsTitle, newsLead: newsLead, aiSum: aiSum, tradeLabel: tradeLabel
+  newsTitle: newsTitle, newsLead: newsLead, aiSum: aiSum, tradeLabel: tradeLabel, fillNews: fillNews
 };
 })();

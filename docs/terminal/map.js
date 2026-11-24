@@ -806,7 +806,7 @@ function drawSplc(){
 }
 
 /* ---------- SAT: satellite pictures of the main oil storage hubs (sat.py → ../sat.json, ../sat/<hub>/<date>.jpg) ---------- */
-var satP = null, satAt = 0, SATV = {site: null, then: null, k: 1, x: 0, y: 0, cut: 50};
+var satP = null, satAt = 0, SATV = {site: null, then: null, k: 1, x: 0, y: 0, cut: 50}, SAT_KMAX = 8;
 function satData(){
   if (!satP || Date.now() - satAt > 600000) {
     satAt = Date.now();
@@ -816,6 +816,7 @@ function satData(){
 }
 function satName(s){ return String((I.xl ? I.xlName('SAT', s.id) || s.name : I.ru ? s.name_ru || s.name : s.name) || s.id) }
 function satOk(i){ return i && /^sat\/[a-z0-9_-]{1,40}\/\d{4}-\d\d-\d\d\.jpg$/.test(String(i.f || '')) && /^\d{4}-\d\d-\d\d$/.test(String(i.d || '')) }
+function satThumb(i){ return /^sat\/[a-z0-9_-]{1,40}\/\d{4}-\d\d-\d\d_t\.jpg$/.test(String(i.tf || '')) ? i.tf : i.f }
 function satDate(d){ return F.dmy(d) }
 function openSat(id){
   if (id) { var x = String(id).toLowerCase(); SATV.site = x; SATV.then = null; SATV.k = 1; SATV.x = SATV.y = 0 }
@@ -848,7 +849,7 @@ function satGallery(w, sites, d){
     var imgs = s.imgs || [], last = imgs[imgs.length - 1], card = el('button', 'sat-card' + (last ? '' : ' none'));
     card.type = 'button';
     var pic = el('div', 'sat-pic');
-    if (last) { var im = el('img'); im.loading = 'lazy'; im.alt = satName(s); im.src = '../' + last.f; pic.appendChild(im) }
+    if (last) { var im = el('img'); im.loading = 'lazy'; im.alt = satName(s); im.src = '../' + satThumb(last); pic.appendChild(im) }
     else pic.appendChild(el('span', 'sat-wait', TX('sat_wait')));
     var cap = el('div', 'sat-cap');
     cap.appendChild(el('b', null, satName(s)));
@@ -869,7 +870,8 @@ function satDetail(w, s, sites, d){
   var sel = el('div', 'sat-sel');
   sites.forEach(function(x){ if (!(x.imgs || []).length || x.id === s.id) return; var b = el('button', 'chipbtn', satName(x).split(/[:(,]/)[0].trim()); b.onclick = function(){ SATV.site = x.id; SATV.then = null; SATV.k = 1; SATV.x = SATV.y = 0; drawSat() }; sel.appendChild(b) });
   w.appendChild(bar); w.appendChild(sel);
-  var stage = el('div', 'sat-stage'), inner = el('div', 'sat-inner');
+  w.classList.add('sat-det');
+  var full = el('div', 'sat-full'), stage = el('div', 'sat-stage'), inner = el('div', 'sat-inner');
   var a = el('img', 'sat-a'), bwrap = el('div', 'sat-b'), b = el('img');
   a.alt = b.alt = satName(s); a.draggable = b.draggable = false;
   b.src = '../' + now_.f; bwrap.appendChild(b);
@@ -881,30 +883,45 @@ function satDetail(w, s, sites, d){
   var sc = el('div', 'sat-scale'); sc.appendChild(el('i')); sc.appendChild(el('span', null, '1 ' + TX('sat_km'))); stage.appendChild(sc);
   var zc = el('div', 'zctl sat-z');
   [['−', 1 / 1.4], ['＋', 1.4], ['⟲', 0]].forEach(function(z){ var bt = el('button', 'chipbtn zb', z[0]); bt.type = 'button'; bt.onclick = function(e){ e.stopPropagation(); zoom(z[1], 0.5, 0.5) }; zc.appendChild(bt) });
+  if (full.requestFullscreen) {
+    var fs = el('button', 'chipbtn zb', '⛶'); fs.type = 'button'; fs.title = TX('sat_full_t');
+    fs.onclick = function(e){ e.stopPropagation(); if (document.fullscreenElement) document.exitFullscreen(); else full.requestFullscreen().catch(function(){}) };
+    zc.appendChild(fs);
+    full.addEventListener('fullscreenchange', function(){ requestAnimationFrame(apply) });
+  }
   stage.appendChild(zc);
-  w.appendChild(stage);
+  full.appendChild(stage); w.appendChild(full);
+  var geo = {W: 1, H: 1, side: 1, left: 0, top: 0};
+  function lim(side, span){ return side > span ? (side - span) / (2 * side) : 0 }
   function apply(){
-    SATV.k = Math.max(1, Math.min(6, SATV.k));
-    var lim = (SATV.k - 1) / (2 * SATV.k);
-    SATV.x = Math.max(-lim, Math.min(lim, SATV.x)); SATV.y = Math.max(-lim, Math.min(lim, SATV.y));
-    inner.style.transform = 'scale(' + SATV.k + ') translate(' + (SATV.x * 100) + '%,' + (SATV.y * 100) + '%)';
-    var cutIn = 50 + ((SATV.cut - 50) / SATV.k) - SATV.x * 100;
-    bwrap.style.clipPath = then ? 'inset(0 0 0 ' + Math.max(0, Math.min(100, cutIn)) + '%)' : 'none';
+    SATV.k = Math.max(1, Math.min(SAT_KMAX, SATV.k));
+    var W = stage.clientWidth || 1, H = stage.clientHeight || 1, side = Math.min(W, H) * SATV.k, lx = lim(side, W), ly = lim(side, H);
+    SATV.x = Math.max(-lx, Math.min(lx, SATV.x)); SATV.y = Math.max(-ly, Math.min(ly, SATV.y));
+    var left = W / 2 - side / 2 + SATV.x * side, top = H / 2 - side / 2 + SATV.y * side;
+    geo = {W: W, H: H, side: side, left: left, top: top};
+    inner.style.width = inner.style.height = side.toFixed(1) + 'px';
+    inner.style.left = left.toFixed(1) + 'px'; inner.style.top = top.toFixed(1) + 'px';
+    var cutIn = (W * SATV.cut / 100 - left) / side * 100;
+    bwrap.style.clipPath = then ? 'inset(0 0 0 ' + Math.max(0, Math.min(100, cutIn)).toFixed(2) + '%)' : 'none';
     handle.style.left = SATV.cut + '%';
-    var kmPx = stage.clientWidth / s.km * SATV.k; sc.firstChild.style.width = Math.round(kmPx) + 'px';
+    sc.firstChild.style.width = Math.round(side / s.km) + 'px';
   }
   function zoom(f, fx, fy){
     if (!f) { SATV.k = 1; SATV.x = SATV.y = 0; return apply() }
-    var k0 = SATV.k, k1 = Math.max(1, Math.min(6, k0 * f));
-    SATV.x += (fx - 0.5) * (1 / k1 - 1 / k0); SATV.y += (fy - 0.5) * (1 / k1 - 1 / k0); SATV.k = k1; apply();
+    var g0 = geo, px_ = fx * g0.W, py_ = fy * g0.H, u = (px_ - g0.left) / g0.side, v = (py_ - g0.top) / g0.side;
+    SATV.k = Math.max(1, Math.min(SAT_KMAX, SATV.k * f));
+    var side = Math.min(g0.W, g0.H) * SATV.k;
+    SATV.x = (px_ - u * side - g0.W / 2 + side / 2) / side; SATV.y = (py_ - v * side - g0.H / 2 + side / 2) / side;
+    apply();
   }
   stage.addEventListener('wheel', function(e){ e.preventDefault(); var r = stage.getBoundingClientRect(); zoom(e.deltaY < 0 ? 1.25 : 0.8, (e.clientX - r.left) / r.width, (e.clientY - r.top) / r.height) }, {passive: false});
-  stage.addEventListener('dblclick', function(){ zoom(0) });
+  stage.addEventListener('dblclick', function(e){ if (!e.target.closest('.zctl')) zoom(0) });
   var drag = null;
   stage.addEventListener('pointerdown', function(e){
     if (e.target.closest('.zctl')) return;
     var r = stage.getBoundingClientRect(), onHandle = then && Math.abs(e.clientX - (r.left + r.width * SATV.cut / 100)) < 18;
-    drag = {cut: onHandle || (then && SATV.k === 1), x0: e.clientX, y0: e.clientY, sx: SATV.x, sy: SATV.y, r: r};
+    var pannable = geo.side > geo.W + 0.5 || geo.side > geo.H + 0.5;
+    drag = {cut: onHandle || (then && !pannable), x0: e.clientX, y0: e.clientY, sx: SATV.x, sy: SATV.y, r: r, side: geo.side};
     try { stage.setPointerCapture(e.pointerId) } catch(err){}
     if (drag.cut) { SATV.cut = Math.max(0, Math.min(100, (e.clientX - r.left) / r.width * 100)); apply() }
     stage.classList.add(drag.cut ? 'cutting' : 'moving');
@@ -912,9 +929,14 @@ function satDetail(w, s, sites, d){
   stage.addEventListener('pointermove', function(e){
     if (!drag) return;
     if (drag.cut) SATV.cut = Math.max(0, Math.min(100, (e.clientX - drag.r.left) / drag.r.width * 100));
-    else { SATV.x = drag.sx + (e.clientX - drag.x0) / drag.r.width / SATV.k; SATV.y = drag.sy + (e.clientY - drag.y0) / drag.r.height / SATV.k }
+    else { SATV.x = drag.sx + (e.clientX - drag.x0) / drag.side; SATV.y = drag.sy + (e.clientY - drag.y0) / drag.side }
     apply();
   });
+  if (window.ResizeObserver) {
+    if (SATV.ro) SATV.ro.disconnect();
+    var ro = SATV.ro = new ResizeObserver(function(){ if (!document.body.contains(stage)) { ro.disconnect(); if (SATV.ro === ro) SATV.ro = null; return } apply() });
+    ro.observe(stage);
+  } else window.addEventListener('resize', function(){ if (document.body.contains(stage)) apply() });
   var up = function(){ drag = null; stage.classList.remove('cutting', 'moving') };
   stage.addEventListener('pointerup', up); stage.addEventListener('pointercancel', up);
   if (olds.length > 1) {

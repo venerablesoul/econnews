@@ -28,8 +28,8 @@ def enabled():
     return bool(os.environ.get("ANTHROPIC_API_KEY", "").strip())
 
 
-def _call(prompt, key, model, timeout=40):
-    body = json.dumps({"model": model, "max_tokens": 3000, "temperature": 0,
+def _call(prompt, key, model, timeout=40, max_tokens=3000):
+    body = json.dumps({"model": model, "max_tokens": max_tokens, "temperature": 0,
                        "messages": [{"role": "user", "content": prompt}]}).encode()
     req = urllib.request.Request(API_URL, data=body, headers={
         "x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json"})
@@ -124,4 +124,43 @@ def brief_note(facts, call=None):
     out = {"en": en or ru, "ru": ru or en}
     for lang in ("zh", "ar"):
         out[lang] = str(d.get(lang) or "").strip()[:400] or out["en"]
+    return out
+
+
+TR_PROMPT = """Translate these economic news headlines for a financial terminal.
+For each numbered headline return {"i": number, "en": English, "ru": Russian, "zh": simplified Chinese, "ar": Arabic}.
+Keep tickers, company names, numbers and units exact; a headline already in a language is copied as is.
+Reply with a JSON array ONLY, no explanations.
+
+Headlines:
+"""
+
+
+def translate_titles(titles, call=None):
+    key = os.environ.get("ANTHROPIC_API_KEY", "").strip()
+    if not titles or (not key and call is None):
+        return {}
+    model = os.environ.get("AI_MODEL", "").strip() or DEFAULT_MODEL
+    lines = "\n".join(f"{k}. {' '.join(str(t).split())[:300]}" for k, t in enumerate(titles, 1))
+    if call:
+        text = call(TR_PROMPT + lines, key, model)
+    else:
+        text = _call(TR_PROMPT + lines, key, model, timeout=60, max_tokens=4000)
+    m = re.search(r"\[.*\]", text or "", re.S)
+    if not m:
+        return {}
+    try:
+        arr = json.loads(m.group(0))
+    except ValueError:
+        return {}
+    out = {}
+    for x in arr if isinstance(arr, list) else []:
+        if not isinstance(x, dict):
+            continue
+        try:
+            i = int(x.get("i"))
+        except (TypeError, ValueError):
+            continue
+        if 1 <= i <= len(titles):
+            out[i] = {lang: str(x.get(lang) or "").strip()[:300] for lang in ("en", "ru", "zh", "ar") if str(x.get(lang) or "").strip()}
     return out
