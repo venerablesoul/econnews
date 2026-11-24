@@ -29,6 +29,13 @@ function C(){ return {up: css('--up', '#3fb68b'), down: css('--down', '#e5534b')
 function alpha(hex, a){ var m = /^#?([0-9a-f]{6})$/i.exec(String(hex).trim()); if (!m) return hex; var n = parseInt(m[1], 16); return 'rgba(' + (n >> 16) + ',' + ((n >> 8) & 255) + ',' + (n & 255) + ',' + a + ')' }
 // the heatmap scale: almost background → blue → teal → warm yellow
 var HEAT = [[16, 20, 28], [28, 52, 96], [36, 110, 140], [70, 170, 140], [220, 200, 110], [250, 230, 170]];
+var HEAT2 = [[11, 15, 24], [18, 34, 74], [22, 70, 140], [24, 128, 170], [70, 190, 160], [236, 210, 90], [255, 246, 214]];
+var LUT = (function(){
+  var o = new Uint8ClampedArray(256 * 3);
+  for (var i = 0; i < 256; i++) { var t = i / 255 * (HEAT2.length - 1), a = Math.min(HEAT2.length - 2, Math.floor(t)), f = t - a, A = HEAT2[a], B = HEAT2[a + 1];
+    for (var c = 0; c < 3; c++) o[i * 3 + c] = Math.round(A[c] + (B[c] - A[c]) * f) }
+  return o;
+})();
 function heat(t){ t = Math.max(0, Math.min(1, t)) * (HEAT.length - 1); var i = Math.min(HEAT.length - 2, Math.floor(t)), f = t - i, a = HEAT[i], b = HEAT[i + 1]; return 'rgb(' + Math.round(a[0] + (b[0] - a[0]) * f) + ',' + Math.round(a[1] + (b[1] - a[1]) * f) + ',' + Math.round(a[2] + (b[2] - a[2]) * f) + ')' }
 function dg(p){ return p >= 1000 ? 1 : p >= 10 ? 2 : p >= 1 ? 3 : 5 }
 // a round step for axis labels: 1, 2 or 5 × a power of ten
@@ -102,10 +109,13 @@ function visibleNow(){ return F.visible('p-flow') && !document.hidden }
 
 // Binance: buffer the stream, take a snapshot, drop what it already has, then apply in order (a gap → start again)
 function snapshot(m){
-  rest('/api/v3/depth?symbol=' + m.pair + '&limit=1000').then(function(s){
+  m.snapAt = Date.now();
+  rest('/api/v3/depth?symbol=' + m.pair + '&limit=5000').then(function(s){
     if (M !== m) return;
     m.bids.clear(); m.asks.clear();
     (s.bids || []).forEach(function(b){ m.bids.set(+b[0], +b[1]) }); (s.asks || []).forEach(function(a){ m.asks.set(+a[0], +a[1]) });
+    // the price range the snapshot covers: beyond it the book is not known (updates there would paint a false picture)
+    m.lo = (s.bids || []).length ? +s.bids[s.bids.length - 1][0] : -Infinity; m.hi = (s.asks || []).length ? +s.asks[s.asks.length - 1][0] : Infinity;
     m.lastId = s.lastUpdateId; m.synced = true;
     var buf = m.buf; m.buf = [];
     buf.forEach(function(x){ depth(m, x) });
@@ -124,8 +134,8 @@ function depth(m, x){
   if (!m.synced) { m.buf.push(x); if (m.buf.length > 2000) m.buf.shift(); return }
   if (x.u <= m.lastId) return;
   if (x.U > m.lastId + 1 && m.lastId) { m.synced = false; m.buf = [x]; return snapshot(m) }   // a gap: the book is no longer exact
-  (x.b || []).forEach(function(b){ var p = +b[0], q = +b[1]; if (q) m.bids.set(p, q); else m.bids.delete(p) });
-  (x.a || []).forEach(function(a){ var p = +a[0], q = +a[1]; if (q) m.asks.set(p, q); else m.asks.delete(p) });
+  (x.b || []).forEach(function(b){ var p = +b[0], q = +b[1]; if (p < m.lo) return; if (q) m.bids.set(p, q); else m.bids.delete(p) });
+  (x.a || []).forEach(function(a){ var p = +a[0], q = +a[1]; if (p > m.hi) return; if (q) m.asks.set(p, q); else m.asks.delete(p) });
   m.lastId = x.u;
 }
 function trade(m, x){
@@ -194,15 +204,23 @@ function liveBar(m, t){
   last.h = Math.max(last.h, t.p); last.l = Math.min(last.l, t.p); last.c = t.p; last.v += t.q; last.d += t.sell ? -t.q : t.q;
 }
 
-/* ---------- the heatmap columns: one per second ---------- */
+/* ---------- the heatmap columns: two a second ---------- */
+// Each column keeps the whole book within ±0.5% of the price, on a grid 5 times finer than the pictures' step
+// (BTC: $1), as a typed array: 15 minutes of columns are a few megabytes, and zooming in shows real detail.
+var SAMPLE_MS = 500, MAX_COLS = 1800, HBAND = 0.005;
 function sample(m){
-  var now = Date.now(); if (now - m.lastCol < 1000 || !m.synced) return;
+  var now = Date.now(); if (now - m.lastCol < SAMPLE_MS - 20 || !m.synced) return;
   m.lastCol = now;
-  var bb = bestBid(m), ba = bestAsk(m); if (!isFinite(bb) || !isFinite(ba)) return;
-  var mid = (bb + ba) / 2, step = m.hstep || (m.hstep = (m.step || (m.step = stepFor(mid))) / 2), band = mid * 0.006, col = {t: now, bb: bb, ba: ba, mid: mid, q: {}};
-  var add = function(p, q){ if (Math.abs(p - mid) > band) return; var k = Math.round(p / step); col.q[k] = (col.q[k] || 0) + q };
-  m.bids.forEach(function(q, p){ add(p, q) }); m.asks.forEach(function(q, p){ add(p, q) });
-  m.cols.push(col); if (m.cols.length > 900) m.cols.shift();
+  var bb = bestBid(m), ba = bestAsk(m); if (!isFinite(bb) || !isFinite(ba) || bb >= ba) return;
+  var mid = (bb + ba) / 2, hs = m.hstep || (m.hstep = (m.step || (m.step = stepFor(mid))) / 5), band = mid * HBAND;
+  var k0 = Math.floor((mid - band) / hs), n = Math.ceil(2 * band / hs) + 2, q = new Float32Array(n);
+  var add = function(qty, p){ var k = Math.round(p / hs) - k0; if (k >= 0 && k < n) q[k] += qty };
+  m.bids.forEach(add); m.asks.forEach(add);
+  // the known range in grid keys (outside it: no data, drawn as such)
+  m.cols.push({t: now, bb: bb, ba: ba, mid: mid, k0: k0, q: q, klo: isFinite(m.lo) ? Math.ceil(m.lo / hs) : -Infinity, khi: isFinite(m.hi) ? Math.floor(m.hi / hs) : Infinity});
+  if (m.cols.length > MAX_COLS) m.cols.splice(0, m.cols.length - MAX_COLS);
+  // the price walked towards the edge of what the snapshot covers: a new snapshot (at most once a minute)
+  if (now - (m.snapAt || 0) > 60e3 && (bb - m.lo < band || m.hi - ba < band)) { m.synced = false; m.buf = []; snapshot(m) }
 }
 
 /* ======================= drawing ======================= */
@@ -265,7 +283,7 @@ function setCoin(c){ fl.coin = c; store('flow_coin', c); fl.z = zdef(); stop(); 
 // zoom in (+1) or out (−1). Wheel: price detail in HEAT and FOOT, time in CVD; with Shift: time in HEAT and FOOT
 function zoomBy(dir, shift){
   var z = fl.z[fl.tab], k = dir > 0 ? 1.25 : 0.8;
-  if (fl.tab === 'HEAT') { if (shift) z.t = Math.max(0.5, Math.min(7, z.t * k)); else z.p *= k }
+  if (fl.tab === 'HEAT') { if (shift) z.t = Math.max(0.34, Math.min(8, z.t * k)); else z.p *= k }
   else if (fl.tab === 'FOOT') { if (shift) z.w = Math.max(0.6, Math.min(2.2, z.w * k)); else z.p = Math.max(0, Math.min(FOOT_MULT.length - 1, z.p + dir)) }
   else if (fl.tab === 'CVD') z.n = (z.n || 160) / k;
 }
@@ -291,7 +309,7 @@ function zoomable(wrap, repaint){
     var z = fl.z[fl.tab], H = wrap.clientHeight, W = wrap.clientWidth, m = M;
     // how many seconds or bars one pixel is, and how much price
     drag = {x0: e.clientX, y0: e.clientY, off0: z.off, po0: z.po || 0,
-      perX: fl.tab === 'HEAT' ? 1 / Math.max(1, Math.round(2 * z.t)) : fl.tab === 'FOOT' ? 1 / Math.round(96 * z.w) : (z.n || 160) / Math.max(1, W - 72),
+      perX: fl.tab === 'HEAT' ? 1 / (1.5 * z.t) : fl.tab === 'FOOT' ? 1 / Math.round(96 * z.w) : (z.n || 160) / Math.max(1, W - 72),
       perY: fl.tab === 'HEAT' && m && m.cols.length ? 2 * m.cols[m.cols.length - 1].mid * 0.0035 / z.p / H : 0};
     wrap.classList.add('grabbing');
   });
@@ -321,65 +339,99 @@ function paintHeat(wrap){
   var c = canvasIn(wrap); if (!c) return;
   var g = c.g, W = c.W, H = c.H, K = C(), m = M;
   if (!m || !m.cols.length) return waiting(wrap, g, W, H);
-  var R = 70, PR = 90, cols = m.cols, cur = cols[cols.length - 1], step = m.hstep || m.step, z = fl.z.HEAT, plotW = W - R - PR;
-  // a column per second; while there are few seconds the columns are wider, so the picture fills the panel at once
-  var cw = Math.max(Math.max(1, Math.round(2 * z.t)), Math.min(48, Math.floor(plotW / Math.max(1, cols.length)))), cap = Math.floor(plotW / cw);
+  var R = 70, PR = 90, B = 18, cols = m.cols, cur = cols[cols.length - 1], hs = m.hstep, z = fl.z.HEAT, plotW = W - R - PR, plotH = H - B;
+  // time: cw px per column (half a second); by default 3 px a second — five minutes across a wide panel
+  var cw = 1.5 * z.t, cap = Math.max(1, Math.floor(plotW / cw));
   z.off = Math.max(0, Math.min(Math.round(z.off), cols.length - Math.min(cap, cols.length)));
   var view = cols.slice(Math.max(0, cols.length - cap - z.off), cols.length - z.off), n = view.length, last = view[n - 1];
-  var X0 = plotW - n * cw;   // the newest second at the right edge; the left fills up as time goes
-  var zmax = (cur.mid * 0.0035) / (12 * step);   // at most ~12 price cells on the screen's height
-  z.p = Math.max(0.6, Math.min(Math.max(1, zmax), z.p));
+  var X0 = plotW - n * cw;   // the newest column at the right edge; to the left, the trades only (the book is not known)
+  // price: ±0.35% by default; zooming in stops at ~10 grid steps on the screen
+  z.p = Math.max(0.5, Math.min(Math.max(1, cur.mid * 0.0035 / (5 * hs)), z.p));
   var mid = cur.mid + z.po, band = cur.mid * 0.0035 / z.p, lo = mid - band, hi = mid + band;
-  var Y = function(p){ return (hi - p) / (hi - lo) * H };
-  // several price steps in one cell when a step is under 2 pixels; cells start and end on whole pixels (no blur)
-  var rawH = step / (hi - lo) * H, bin = Math.max(1, Math.ceil(2 / rawH)), bstep = step * bin, rowH = Math.max(1, bstep / (hi - lo) * H);
-  var YP = function(p){ return px(Y(p)) }, blo = Math.floor(lo / bstep) - 1, bhi = Math.ceil(hi / bstep) + 1;
-  // a cell b holds the levels b×bin … b×bin+bin−1 (each level is centred on its price); kept on the column, so a frame only groups new seconds
-  var aggs = view.map(function(col){
-    if (col.gb !== bin) { var o = {}; for (var k in col.q) { var b = Math.floor((+k + 0.5) / bin); o[b] = (o[b] || 0) + col.q[k] } col.gb = bin; col.go = o }
-    return col.go;
-  });
-  var cellTop = function(b){ return YP(((+b + 1) * bin - 0.5) * step) }, cellBot = function(b){ return YP((b * bin - 0.5) * step) };
-  // the brightness scale: the 97th percentile of what is on screen
-  var vals = []; aggs.forEach(function(o){ for (var b in o) if (b >= blo && b <= bhi) vals.push(o[b]) });
-  vals.sort(function(a, b){ return a - b }); var top = vals[Math.floor(vals.length * 0.97)] || 1;
-  g.fillStyle = 'rgb(16,20,28)'; g.fillRect(0, 0, plotW, H);
-  aggs.forEach(function(o, i){
-    var x1 = px(X0 + i * cw), x2 = px(X0 + (i + 1) * cw);
-    for (var b in o) { if (b < blo || b > bhi) continue; var y1 = cellTop(b), y2 = cellBot(+b); g.fillStyle = heat(Math.sqrt(o[b] / top)); g.fillRect(x1, y1, x2 - x1, Math.max(1 / PXR, y2 - y1)) }
-  });
-  // best bid and ask
+  var Y = function(p){ return (hi - p) / (hi - lo) * plotH };
+  // rows: as many grid steps per row as make a row at least 2 px tall
+  var bin = Math.max(1, Math.ceil(2 / (hs / (hi - lo) * plotH))), bstep = hs * bin, rowH = bstep / (hi - lo) * plotH;
+  var bLo = Math.floor(lo / bstep), bHi = Math.ceil(hi / bstep), nr = Math.max(1, bHi - bLo);
+  // the grid of values: one pixel per column and row (−1: outside what the book covered)
+  var vals = new Float32Array(n * nr), sampleV = [];
+  for (var i = 0; i < n; i++) {
+    var col = view[i], q = col.q, base = col.k0;
+    for (var r = 0; r < nr; r++) {
+      var k1 = (bLo + r) * bin, k2 = k1 + bin, v = 0, known = false;
+      for (var k = k1; k < k2; k++) { if (k < col.klo || k > col.khi) continue; var ix = k - base; if (ix >= 0 && ix < q.length) { v += q[ix]; known = true } }
+      vals[i * nr + r] = known ? v : -1;
+      if (v > 0 && (i * nr + r) % 7 === 0) sampleV.push(v);
+    }
+  }
+  // brightness: the typical cell (median) is dark, the 99.5th percentile is white — so the walls stand out
+  sampleV.sort(function(a, b){ return a - b });
+  var med = sampleV[Math.floor(sampleV.length * 0.5)] || 1, top = Math.max(med * 4, sampleV[Math.floor(sampleV.length * 0.995)] || 1);
+  var lt = Math.log(1 + top / med);
+  var off = m._hc || (m._hc = document.createElement('canvas'));
+  if (off.width !== n || off.height !== nr) { off.width = Math.max(1, n); off.height = nr }
+  var og = off.getContext('2d'), img = og.createImageData(Math.max(1, n), nr), d = img.data;
+  for (var i2 = 0; i2 < n; i2++) for (var r2 = 0; r2 < nr; r2++) {
+    var v2 = vals[i2 * nr + r2], o = ((nr - 1 - r2) * n + i2) * 4;
+    if (v2 < 0) { d[o] = 20; d[o + 1] = 22; d[o + 2] = 27; d[o + 3] = 255; continue }   // not known
+    var t = v2 > 0 ? Math.min(1, Math.log(1 + v2 / med) / lt) : 0, li = Math.round(Math.pow(t, 1.25) * 255) * 3;
+    d[o] = LUT[li]; d[o + 1] = LUT[li + 1]; d[o + 2] = LUT[li + 2]; d[o + 3] = 255;
+  }
+  og.putImageData(img, 0, 0);
+  g.fillStyle = 'rgb(13,16,22)'; g.fillRect(0, 0, plotW, plotH);
+  if (n) { g.imageSmoothingEnabled = false; g.drawImage(off, 0, 0, n, nr, X0, Y(bHi * bstep), n * cw, nr * rowH); g.imageSmoothingEnabled = true }
+  // the price grid
+  var dd = dg(mid), tickStep = niceStep((hi - lo) / 8), tdd = tickStep < 1 ? Math.max(dd, Math.ceil(-Math.log10(tickStep))) : Math.max(0, dd - 1);
+  g.fillStyle = alpha(K.text, 0.05);
+  for (var p = Math.ceil(lo / tickStep) * tickStep; p <= hi; p += tickStep) g.fillRect(0, px(Y(p)), plotW, 1);
+  // best bid and ask: step lines, as the book really moves
   ['bb', 'ba'].forEach(function(key){
-    // a step line: the price held for the whole second, then the jump — as the book really moves
     g.beginPath(); view.forEach(function(col, i){ var y = px(Y(col[key])) + 0.5; if (i) g.lineTo(X0 + i * cw, y); else g.moveTo(X0, y); g.lineTo(X0 + (i + 1) * cw, y) });
     g.strokeStyle = key === 'bb' ? K.up : K.down; g.lineWidth = 1.5; g.lineJoin = 'miter'; g.stroke(); g.lineWidth = 1;
   });
-  // trades in the window
-  var t0 = view[0].t, t1 = last.t, mx = 0, tr = m.trades.filter(function(t){ return t.t >= t0 - 1000 && t.t <= t1 + 1000 && t.p >= lo && t.p <= hi });
-  tr.forEach(function(t){ if (t.q > mx) mx = t.q });
+  // trades over the whole width: where the book is not known yet (left), they show the price's path
+  var t1 = last.t, tLeft = t1 - (plotW / cw) * SAMPLE_MS, mxq = 0, X = function(t){ return plotW - (t1 - t) / SAMPLE_MS * cw - cw / 2 };
+  var tr = m.trades.filter(function(t){ return t.t >= tLeft && t.t <= t1 + SAMPLE_MS && t.p >= lo && t.p <= hi });
+  tr.forEach(function(t){ if (t.q > mxq) mxq = t.q });
+  if (X0 > 4) {   // the price's path before the book's first column
+    g.beginPath(); var started = false;
+    tr.forEach(function(t){ var x = X(t.t); if (x > X0) return; if (started) g.lineTo(x, Y(t.p)); else { g.moveTo(x, Y(t.p)); started = true } });
+    g.strokeStyle = alpha(K.text, 0.35); g.lineWidth = 1; g.stroke();
+    if (X0 > 150) { g.fillStyle = K.faint; g.textAlign = 'center'; g.fillText(TX('fl_heat_filling', Math.round(n * SAMPLE_MS / 1000)), X0 / 2, 16); g.textAlign = 'left' }
+  }
   tr.forEach(function(t){
-    var x = plotW - (t1 - t.t) / 1000 * cw - cw / 2, r = Math.max(1.3, Math.sqrt(t.q / (mx || 1)) * 11);
-    if (x < X0 || x > plotW) return;
-    g.beginPath(); g.arc(x, Y(t.p), r, 0, 6.283); g.fillStyle = t.sell ? alpha(K.down, isBig(m, t) ? 0.85 : 0.45) : alpha(K.up, isBig(m, t) ? 0.85 : 0.45); g.fill();
+    var x = X(t.t), big = isBig(m, t), r = Math.max(1.2, Math.sqrt(t.q / (mxq || 1)) * 10);
+    if (x < 0 || x > plotW) return;
+    g.beginPath(); g.arc(x, Y(t.p), r, 0, 6.283); g.fillStyle = alpha(t.sell ? K.down : K.up, big ? 0.9 : 0.5); g.fill();
+    if (big) { g.strokeStyle = 'rgba(255,255,255,.7)'; g.lineWidth = 1; g.stroke() }
   });
-  // the current book on the right
+  // the current book on the right, on the same rows as the picture
   var depthW = PR - 6, bx = plotW + 4, qmax = 0, rows = {};
-  var rstep = Math.max(bstep, (m.step || step) * Math.max(1, Math.round(2 / z.p))), rh = Math.max(1, Math.round(rstep / (hi - lo) * H) - 1);
-  var addRow = function(p, q, side){ if (p < lo || p > hi) return; var k = Math.round(p / rstep); rows[k] = rows[k] || [0, 0]; rows[k][side] += q; qmax = Math.max(qmax, rows[k][side]) };
-  m.bids.forEach(function(q, p){ addRow(p, q, 0) }); m.asks.forEach(function(q, p){ addRow(p, q, 1) });
-  for (var k in rows) { var bh = rh, y = px(Y(k * rstep) - bh / 2) + bh / 2; if (rows[k][0]) { g.fillStyle = alpha(K.up, 0.6); g.fillRect(bx, y - bh / 2, rows[k][0] / qmax * depthW, bh) } if (rows[k][1]) { g.fillStyle = alpha(K.down, 0.6); g.fillRect(bx, y - bh / 2, rows[k][1] / qmax * depthW, bh) } }
+  var addRow = function(q, p, side){ if (p < lo || p > hi) return; var b = Math.floor((p / hs + 0.5) / bin); var rr = rows[b] || (rows[b] = [0, 0]); rr[side] += q; if (rr[side] > qmax) qmax = rr[side] };
+  m.bids.forEach(function(q, p){ addRow(q, p, 0) }); m.asks.forEach(function(q, p){ addRow(q, p, 1) });
+  var rh = Math.max(1, Math.round(rowH) - (rowH >= 4 ? 1 : 0));
+  for (var b in rows) { var y = px(Y((+b + 1) * bstep)); if (rows[b][0]) { g.fillStyle = alpha(K.up, 0.65); g.fillRect(bx, y, rows[b][0] / qmax * depthW, rh) } if (rows[b][1]) { g.fillStyle = alpha(K.down, 0.65); g.fillRect(bx, y, rows[b][1] / qmax * depthW, rh) } }
   // the price axis
   g.fillStyle = K.faint;
-  var dd = dg(mid), tickStep = niceStep((hi - lo) / 8);
-  for (var p = Math.ceil(lo / tickStep) * tickStep; p <= hi; p += tickStep) { g.fillText(fmt(p, tickStep < 1 ? dd : Math.max(0, dd - 1)), W - R + 6, Y(p)); g.fillStyle = alpha(K.text, 0.04); g.fillRect(0, YP(p), plotW, 1); g.fillStyle = K.faint }
-  var py = Math.max(8, Math.min(H - 8, Y(cur.mid)));
+  for (var p2 = Math.ceil(lo / tickStep) * tickStep; p2 <= hi; p2 += tickStep) { var ty = Y(p2); if (ty > 8 && ty < plotH - 8) g.fillText(fmt(p2, tdd), W - R + 6, ty) }
+  var py = Math.max(8, Math.min(plotH - 8, Y(cur.mid)));
   g.fillStyle = K.text; g.fillRect(W - R + 2, py - 8, R - 4, 16); g.fillStyle = K.bg; g.fillText(fmt(cur.mid, dd), W - R + 6, py);
-  label(g, hms(t0) + ' → ' + hms(t1) + (z.off ? '  ⟲' : ''), 6, H - 10, K);
+  // the time axis: round seconds/minutes
+  var steps = [5, 10, 15, 30, 60, 120, 300, 600], pxs = cw * 1000 / SAMPLE_MS, ts = steps.filter(function(s_){ return s_ * pxs >= 80 })[0] || 900;
+  g.fillStyle = 'rgb(13,16,22)'; g.fillRect(0, plotH, plotW, B); g.fillStyle = K.faint; g.textAlign = 'center';
+  for (var tt = Math.floor(t1 / (ts * 1000)) * ts * 1000; tt >= tLeft; tt -= ts * 1000) {
+    var xx = X(tt) + cw / 2; if (xx < 24 || xx > plotW - 24) continue;
+    g.fillRect(px(xx), plotH, 1, 4); g.fillText(ts >= 60 ? hm(tt) : hms(tt), xx, plotH + 11);
+  }
+  g.textAlign = 'left';
+  if (z.off) label(g, '⟲ ' + hms(t1), 6, plotH - 10, K);
   c.cv.onmousemove = function(e){
-    var r = c.cv.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top;
-    if (x > plotW) return untip();
-    var i = Math.max(0, Math.min(view.length - 1, Math.floor((x - X0) / cw))), col = view[i], p = hi - y / H * (hi - lo), b = Math.floor((p / step + 0.5) / bin);
-    tipShow([[hms(col.t)], [TX('fl_price') + ' ' + fmt(b * bin * step, dd) + (bin > 1 ? '–' + fmt(((b + 1) * bin - 1) * step, dd) : '')], [TX('fl_resting') + ' ' + qty(aggs[i][b] || 0) + ' ' + m.coin]], e);
+    var rc = c.cv.getBoundingClientRect(), x = e.clientX - rc.left, y = e.clientY - rc.top;
+    if (x > plotW || y > plotH || x < X0) return untip();
+    var i = Math.max(0, Math.min(n - 1, Math.floor((x - X0) / cw))), col = view[i], rr = Math.floor((hi - y / plotH * (hi - lo)) / bstep) - bLo;
+    if (rr < 0 || rr >= nr) return untip();
+    var v = vals[i * nr + rr], p0 = (bLo + rr) * bstep;
+    tipShow([[hms(col.t)], [TX('fl_price') + ' ' + fmt(p0, tdd) + (bin > 1 || bstep >= 1 ? '–' + fmt(p0 + bstep, tdd) : '')],
+      [v < 0 ? TX('fl_unknown') : TX('fl_resting') + ' ' + qty(v) + ' ' + m.coin]], e);
   };
   c.cv.onmouseleave = untip;
 }
@@ -553,5 +605,5 @@ Cm.FOOT = function(a){ open('FOOT', a) }; Cm.FOOTPRINT = Cm.FOOT; Cm['КЛАСТ
 Cm.CVD = function(a){ open('CVD', a) }; Cm.DELTA = Cm.CVD; Cm['ДЕЛЬТА'] = Cm.CVD;
 Cm.FLOW = function(a){ open(fl.tab, a) }; Cm['ПОТОК'] = Cm.FLOW;
 ['OBH', 'BOOK', 'FOOT', 'CVD', 'FLOW', 'DOM'].forEach(function(k){ T.SUFFIX[k] = 1 });
-window.FLOWX = {open: open, state: fl, stop: stop, market: function(){ return M }};
+window.FLOWX = {open: open, state: fl, stop: stop, market: function(){ return M }, sample: function(){ if (M) sample(M) }};
 })();
