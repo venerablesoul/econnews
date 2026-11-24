@@ -432,9 +432,13 @@ _tr_cache: dict = {}
 _tr_fail: dict = {}
 _engine_off: dict = {}
 _ai_tried: set = set()
+_bf_tries: dict = {}
 TR_RETRY_S = 600
 ENGINE_PAUSE_S = 300
-BACKFILL_JOBS = 90
+MM_QUOTA_PAUSE_S = 3600
+BACKFILL_JOBS = 12
+BACKFILL_TRIES = 3
+HOLD_S = 600
 AI_TITLES = 12
 
 
@@ -463,7 +467,10 @@ def _mymemory(text, src, lang):
     with urllib.request.urlopen(req, timeout=10) as r:
         data = json.loads(r.read().decode("utf-8"))
     out = (data.get("responseData") or {}).get("translatedText") or ""
-    if data.get("responseStatus") not in (200, "200") or "MYMEMORY WARNING" in out.upper():
+    if "MYMEMORY WARNING" in out.upper() or data.get("responseStatus") in (429, "429"):
+        _engine_off["_mymemory"] = time.time() + MM_QUOTA_PAUSE_S
+        return None
+    if data.get("responseStatus") not in (200, "200"):
         return None
     return html.unescape(out).strip() or None
 
@@ -540,29 +547,42 @@ def ai_fill_titles(items, limit=AI_TITLES):
     return filled
 
 
+def engines_paused():
+    now = time.time()
+    return any(t > now for t in _engine_off.values())
+
+
 def backfill_translations(st, now, limit=BACKFILL_JOBS):
-    if not TRANSLATE_ON:
+    if not TRANSLATE_ON or engines_paused():
         return 0
     since = (now - timedelta(hours=48)).isoformat()
     shown = [r for r in reversed(st.get("recent") or []) if r.get("ts", "") >= since and level_of(r.get("score", 0)) != "low"]
+    t0 = time.time()
+
+    def due(text, target):
+        key = (text, target)
+        return _bf_tries.get(key, 0) < BACKFILL_TRIES and t0 - _tr_fail.get(key, 0) >= TR_RETRY_S
+
     titles, leads = [], []
     for r in shown:
         src = orig_lang(r["title"])
         for target in i18n.LANGS:
             if target == src:
                 continue
-            if not r.get("title_" + target):
+            if not r.get("title_" + target) and due(r["title"], target):
                 titles.append((r, "title", target))
-            if SUMMARIES and r.get("lead") and not r.get("lead_" + target):
+            if SUMMARIES and r.get("lead") and not r.get("lead_" + target) and due(r["lead"], target):
                 leads.append((r, "lead", target))
-    jobs = (titles + leads)[:limit]
     filled = 0
-    if jobs:
-        with ThreadPoolExecutor(max_workers=6) as ex:
-            for (r, field, target), tr in zip(jobs, ex.map(lambda j: translate(j[0][j[1]], j[2]), jobs)):
-                if tr:
-                    r[f"{field}_{target}"] = tr
-                    filled += 1
+    for r, field, target in (titles + leads)[:limit]:
+        if engines_paused():
+            break
+        key = (r[field], target)
+        _bf_tries[key] = _bf_tries.get(key, 0) + 1
+        tr = translate(r[field], target)
+        if tr:
+            r[f"{field}_{target}"] = tr
+            filled += 1
     if titles:
         filled += ai_fill_titles([r for r, _, _ in titles])
     return filled
@@ -586,10 +606,37 @@ def translate_items(items):
                 jobs.append((it, "lead", "lead_" + target, target))
     if not jobs:
         return
+    _engine_off.clear()
+    for it, src, dst, target in jobs:
+        _tr_fail.pop((it[src], target), None)
     with ThreadPoolExecutor(max_workers=6) as ex:
         for (it, src, dst, target), tr in zip(jobs, ex.map(lambda j: translate(j[0][j[1]], j[3]), jobs)):
             if tr:
                 it[dst] = tr
+
+
+def hold_untranslated(st, stories, to_send, langs, now):
+    held = st.get("tr_hold") if isinstance(st.get("tr_hold"), dict) else {}
+    day_ago = (now - timedelta(days=1)).isoformat()
+    held = {k: v for k, v in held.items() if isinstance(v, str) and v >= day_ago}
+    waiting = []
+    if TRANSLATE_ON:
+        for s in to_send[:MAX_PER_MESSAGE_BATCH]:
+            src = orig_lang(s["title"])
+            if not any(lang != src and not s.get("title_" + lang) for lang in langs):
+                continue
+            first = min((held[i] for i in s["_ids"] if i in held), default=None)
+            if first and now - datetime.fromisoformat(first) >= timedelta(seconds=HOLD_S):
+                continue
+            for i in s["_ids"]:
+                held[i] = first or now.isoformat()
+            waiting.append(s)
+    st["tr_hold"] = held
+    if not waiting:
+        return stories, to_send
+    out = {id(s) for s in waiting}
+    print(f"  translation: {len(waiting)} stories wait for the next run")
+    return [s for s in stories if id(s) not in out], [s for s in to_send if id(s) not in out]
 
 
 def title_for(it, lang):
@@ -1130,6 +1177,8 @@ def run(dry=False):
 
     translate_items(to_send[:MAX_PER_MESSAGE_BATCH])
     ai_fill_titles(to_send[:MAX_PER_MESSAGE_BATCH])
+    if st["initialized"]:
+        stories, to_send = hold_untranslated(st, stories, to_send, tg._langs_in_use(False), now)
     try:
         import ai
         if ai.enabled():

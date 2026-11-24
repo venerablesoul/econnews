@@ -423,7 +423,7 @@ class TranslationRecovery(unittest.TestCase):
     def setUp(self):
         import news_bot
         self.nb = news_bot
-        for d in (news_bot._tr_cache, news_bot._tr_fail, news_bot._engine_off):
+        for d in (news_bot._tr_cache, news_bot._tr_fail, news_bot._engine_off, news_bot._bf_tries):
             d.clear()
         news_bot._ai_tried.clear()
 
@@ -479,6 +479,139 @@ class TranslationRecovery(unittest.TestCase):
             self.assertEqual(nb.ai_fill_titles([{"title": "Hilton CMBS wipeout"}]), 0)
         self.assertEqual((items[0]["title_ru"], items[0]["title_zh"], items[0]["title_ar"]), ("Списание CMBS Hilton", "希尔顿", "شطب"))
         self.assertNotIn("title_en", items[0])
+
+    def test_backfill_is_gentle_and_gives_up(self):
+        nb, calls = self.nb, []
+        now = datetime(2026, 11, 24, 17, 0, tzinfo=timezone.utc)
+        st = {"recent": [{"title": f"Story number {k}", "score": 5, "ts": (now - timedelta(minutes=30 - k)).isoformat()} for k in range(30)]}
+
+        def fail(text, lang="ru"):
+            calls.append((text, lang))
+            nb._tr_fail[(text, lang)] = time.time() - nb.TR_RETRY_S - 1
+            return None
+        with mock.patch.object(nb, "translate", side_effect=fail), mock.patch.object(nb, "ai_fill_titles", return_value=0):
+            for _ in range(40):
+                nb.backfill_translations(st, now)
+                self.assertLessEqual(len(calls), nb.BACKFILL_JOBS * (_ + 1))
+        self.assertEqual(len(calls), 30 * 3 * nb.BACKFILL_TRIES)
+        self.assertEqual(calls[0], ("Story number 29", "ru"), "newest first")
+        calls.clear()
+        nb._bf_tries.clear()
+        nb._engine_off["_google"] = time.time() + 60
+        with mock.patch.object(nb, "translate", side_effect=fail), mock.patch.object(nb, "ai_fill_titles", return_value=0):
+            self.assertEqual(nb.backfill_translations(st, now), 0)
+        self.assertEqual(calls, [], "no backfill while a translator is resting")
+
+    def test_backfill_stops_when_a_translator_starts_refusing(self):
+        nb, calls = self.nb, []
+        now = datetime(2026, 11, 24, 17, 0, tzinfo=timezone.utc)
+        st = {"recent": [{"title": f"Story number {k}", "score": 5, "ts": now.isoformat()} for k in range(10)]}
+
+        def refuse(text, lang="ru"):
+            calls.append(text)
+            if len(calls) == 3:
+                nb._engine_off["_google"] = time.time() + nb.ENGINE_PAUSE_S
+            return None
+        with mock.patch.object(nb, "translate", side_effect=refuse), mock.patch.object(nb, "ai_fill_titles", return_value=0):
+            nb.backfill_translations(st, now)
+        self.assertEqual(len(calls), 3)
+
+    def test_new_stories_always_get_a_fresh_try(self):
+        nb, calls = self.nb, []
+        nb._engine_off.update({"_google": time.time() + 300, "_mymemory": time.time() + 3600})
+        nb._tr_fail[("Oil jumps", "ru")] = time.time()
+
+        def google(text, src, lang):
+            calls.append(lang)
+            return f"[{lang}] {text}"
+        google.__name__ = "_google"
+        item = {"title": "Oil jumps"}
+        with mock.patch.object(nb, "_google", google), mock.patch.object(nb, "SUMMARIES", False):
+            nb.translate_items([item])
+        self.assertEqual(sorted(calls), ["ar", "ru", "zh"])
+        self.assertEqual(item["title_ru"], "[ru] Oil jumps")
+
+    def test_mymemory_out_of_quota_rests_for_an_hour(self):
+        nb = self.nb
+        body = json.dumps({"responseStatus": 200, "responseData": {"translatedText": "MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY"}}).encode()
+
+        class R:
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *a):
+                return False
+
+            def read(self):
+                return body
+        with mock.patch.object(nb.urllib.request, "urlopen", return_value=R()):
+            self.assertIsNone(nb._mymemory("Oil jumps", "en", "ru"))
+        self.assertGreater(nb._engine_off["_mymemory"] - time.time(), 3000)
+
+
+class TranslationHold(unittest.TestCase):
+    def setUp(self):
+        import news_bot
+        self.nb = news_bot
+        for d in (news_bot._tr_cache, news_bot._tr_fail, news_bot._engine_off, news_bot._bf_tries):
+            d.clear()
+        self._tmp = tempfile.TemporaryDirectory()
+        d = self._tmp.name
+        os.makedirs(os.path.join(d, "docs"))
+        self.env = {"TELEGRAM_BOT_TOKEN": "1:T", "TELEGRAM_CHAT_ID": "100", "PAGES_URL": "https://p.test/",
+                    "STATE_FILE": os.path.join(d, "state.json"), "PAGE_DATA": os.path.join(d, "docs", "data.json"),
+                    "DIGEST_HOUR": "-1", "MORNING_HOUR": "-1", "BRIEF_HOUR": "-1", "CALENDAR": "no", "TRADES": "no",
+                    "ANTHROPIC_API_KEY": "", "FRED_API_KEY": "", "QUIET_HOURS": "0-0"}
+
+    def tearDown(self):
+        self._tmp.cleanup()
+
+    def run_bot(self, stories, translate):
+        sent = []
+
+        def fake_call(tg, method, fields, files=None):
+            sent.append((str(fields.get("chat_id")), fields.get("text") or ""))
+            return {"message_id": len(sent)}
+        with mock.patch.dict(os.environ, self.env), \
+                mock.patch.object(self.nb, "collect", return_value=(stories, {})), \
+                mock.patch.object(self.nb, "fetch_quotes", return_value=[]), \
+                mock.patch.object(self.nb, "fetch_subscribers", return_value=(["300"], {"300": "ru"})), \
+                mock.patch.object(self.nb, "translate", side_effect=translate), \
+                mock.patch.object(self.nb, "update_extras", return_value=""), \
+                mock.patch.object(self.nb, "push_live"), \
+                mock.patch.object(self.nb.Telegram, "_call", fake_call):
+            self.nb.run()
+        with open(self.env["STATE_FILE"], encoding="utf-8") as f:
+            return [t for c, t in sent if c == "300"], json.load(f)
+
+    def story(self):
+        return {"id": "s1", "title": "Bank of Canada Fades Core Inflation, Switches Gauges", "lead": "", "tags": [],
+                "link": "https://x/1", "source": "Bloomberg", "sources": ["Bloomberg"], "score": 8,
+                "ts": datetime.now(timezone.utc).isoformat()}
+
+    def test_a_story_waits_for_its_translation(self):
+        self.run_bot([], lambda t, lang="ru": None)
+        tries = []
+
+        def flaky(text, lang="ru"):
+            tries.append(lang)
+            return None if len(tries) <= 3 else f"[{lang}] {text}"
+        out, st = self.run_bot([self.story()], flaky)
+        self.assertFalse(any("Bank of Canada" in t for t in out), "not sent in English")
+        self.assertNotIn("s1", st["seen"])
+        self.assertIn("s1", st["tr_hold"])
+        out, st = self.run_bot([self.story()], flaky)
+        self.assertTrue(any("[ru] Bank of Canada Fades Core Inflation" in t for t in out), out)
+        self.assertIn("s1", st["seen"])
+
+    def test_a_story_is_not_held_for_ever(self):
+        self.run_bot([], lambda t, lang="ru": None)
+        out, st = self.run_bot([self.story()], lambda t, lang="ru": None)
+        self.assertEqual(out, [])
+        with mock.patch.object(self.nb, "HOLD_S", 0):
+            out, st = self.run_bot([self.story()], lambda t, lang="ru": None)
+        self.assertTrue(any("Bank of Canada Fades Core Inflation" in t for t in out), out)
+        self.assertIn("s1", st["seen"])
 
 
 class NewsBotIntegration(unittest.TestCase):
