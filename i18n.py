@@ -1,10 +1,3 @@
-"""
-Texts for the Telegram bot and the data files: English, Russian, Chinese (simplified) and Arabic.
-
-English is the default. Each subscriber picks a language with /lang (stored by the bot server);
-the news bot builds every message once per language and sends each person their version.
-A text missing in some language falls back to English.
-"""
 from __future__ import annotations
 
 DEFAULT = "en"
@@ -76,7 +69,6 @@ S = {
                        "бот продолжает пробовать сам.",
                  "zh": "⚠️ 约 15 分钟内没有任何信息源响应。可能是 GitHub 一侧的网络问题，机器人会自动继续重试。",
                  "ar": "⚠️ لم يستجب أي مصدر منذ نحو 15 دقيقة. على الأرجح هي مشكلة في شبكة GitHub، والبوت يواصل المحاولة تلقائيًا."},
-    # the bot's own health (owner only; sent only when it cannot fix things by itself)
     "part_failed": {"en": "⚠️ <b>Part of the bot is broken</b>: {part} — {err}\n"
                           "Everything else works. This needs a fix in the code; if it is still broken tomorrow, I'll say so again.",
                     "ru": "⚠️ <b>Сломалась часть бота</b>: {part} — {err}\n"
@@ -125,7 +117,6 @@ S = {
     "btn_market": {"en": "📈 Markets", "ru": "📈 Рынок онлайн", "zh": "📈 市场", "ar": "📈 الأسواق"},
     "btn_terminal": {"en": "🖥 Terminal", "ru": "🖥 Терминал", "zh": "🖥 终端", "ar": "🖥 المنصة"},
     "btn_menu": {"en": "☰ Main menu", "ru": "☰ Главное меню", "zh": "☰ 主菜单", "ar": "☰ القائمة الرئيسية"},
-    # charts.py
     "chart_title": {"en": "Markets", "ru": "Рынки", "zh": "市场", "ar": "الأسواق"},
     "chart_sources": {"en": "Sources: Yahoo Finance, Bank of Russia, Moscow Exchange · data may be delayed",
                       "ru": "Источники: Yahoo Finance, ЦБ РФ, Мосбиржа · данные могут запаздывать",
@@ -133,7 +124,6 @@ S = {
                       "ar": "المصادر: Yahoo Finance، البنك المركزي الروسي، بورصة موسكو · قد تتأخر البيانات"},
     "period_5d": {"en": "5 days", "ru": "5 дней", "zh": "5 天", "ar": "5 أيام"},
     "period_30d": {"en": "30 days", "ru": "30 дней", "zh": "30 天", "ar": "30 يومًا"},
-    # trades.py
     "trd_congress_head": {"en": "🏛 <b>US politicians' trades</b>", "ru": "🏛 <b>Сделки политиков США</b>",
                           "zh": "🏛 <b>美国政界人士交易</b>", "ar": "🏛 <b>صفقات السياسيين الأمريكيين</b>"},
     "trd_congress_note": {"en": "<i>Members of Congress disclose trades up to 45 days late.</i>",
@@ -169,13 +159,11 @@ _CHILD = {"en": "child", "ru": "ребёнок", "zh": "子女", "ar": "الاب
 TRADE_OWNER = {"SP": _SPOUSE, "Spouse": _SPOUSE, "JT": _JOINT, "Joint": _JOINT,
                "DC": _CHILD, "Child": _CHILD, "Dependent Child": _CHILD}
 
-# news tags: stored in English, shown in the reader's language
 TAGS_RU = {"Fed": "ФРС", "ECB": "ЕЦБ", "BankOfRussia": "ЦБРФ", "rates": "ставки", "inflation": "инфляция", "oil": "нефть",
            "gas": "газ", "gold": "золото", "ruble": "рубль", "dollar": "доллар", "bonds": "облигации",
            "markets": "рынки", "China": "Китай", "tariffs": "пошлины", "sanctions": "санкции", "jobs": "занятость",
            "GDP": "ВВП", "crypto": "крипта", "Russia": "Россия"}
 TAGS_FROM_RU = {v: k for k, v in TAGS_RU.items()}
-# Telegram hashtags take letters, digits and "_" only — no spaces
 TAGS_XL = {
     "zh": {"Fed": "美联储", "ECB": "欧洲央行", "BankOfRussia": "俄罗斯央行", "rates": "利率", "inflation": "通胀",
            "oil": "石油", "gas": "天然气", "gold": "黄金", "ruble": "卢布", "dollar": "美元", "bonds": "债券",
@@ -188,7 +176,6 @@ TAGS_XL = {
            "Russia": "روسيا"},
 }
 
-# news source names: stored in English, shown in the reader's language
 SOURCES_RU = {"Fed": "ФРС США", "US Labor Statistics (BLS)": "Статистика труда США (BLS)", "ECB": "ЕЦБ",
               "Bank of England": "Банк Англии", "IMF": "МВФ", "Bank of Russia": "ЦБ РФ",
               "Kommersant": "Коммерсантъ", "RBC": "РБК"}
@@ -203,7 +190,6 @@ SOURCES_XL = {
 }
 
 
-# parts of a run (for the owner's notice when one of them is broken)
 PARTS_RU = {"start message": "стартовое сообщение", "news": "новости", "reminders": "напоминания",
             "released data": "вышедшие данные", "morning digest": "утренний дайджест",
             "source alerts": "уведомления об источниках", "trades": "сделки", "chart": "картинка с графиками",
@@ -266,7 +252,6 @@ def trade_owner(code, lang):
     return e.get(norm_lang(lang)) or e.get(DEFAULT, "")
 
 
-# big numbers: "$1.2B" in English, "$1,2 млрд" in Russian, "$12亿" in Chinese, "$1.2 مليار" in Arabic
 _UNITS = {
     "en": ((1e12, "T"), (1e9, "B"), (1e6, "M"), (1e3, "K")),
     "ru": ((1e12, " трлн"), (1e9, " млрд"), (1e6, " млн"), (1e3, " тыс.")),
@@ -276,5 +261,4 @@ _UNITS = {
 
 
 def units(lang):
-    """[(size, suffix), …] from the largest, for writing big amounts in the reader's language."""
     return _UNITS[norm_lang(lang)]

@@ -14,12 +14,10 @@
 <meta name="apple-mobile-web-app-title" content="Terminal">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<!-- the font does not hold up the first screen: until it arrives the text uses the system monospace font -->
+
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"></noscript>
 <script>
-// telegram.org is loaded only inside Telegram and without blocking the page;
-// whatever needs the Telegram signature waits for TG_READY (at most 3 s)
 (function(){
   var inTg = /tgWebApp/.test(location.hash + location.search) || !!window.TelegramWebviewProxy;
   try { inTg = inTg || !!sessionStorage.getItem('__telegram__initParams') } catch(e){}
@@ -81,17 +79,13 @@ header{flex:none;border-bottom:1px solid var(--line);background:var(--bg)}
 .icon-btn[hidden]{display:none}
 #b-install{color:#0b1220;background:var(--accent);border-color:var(--accent);font-weight:600}
 
-/* languages: Chinese and Arabic letters come from the system's fonts (JetBrains Mono has none). Arabic letters join
-   each other, so no letter spacing; its sentences run right to left inside the left-to-right layout. */
 html:lang(zh){--mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC','Noto Sans SC',sans-serif}
 html:lang(zh){--sans:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC','Noto Sans SC',"Segoe UI",Roboto,Arial,sans-serif}
 html:lang(ar){--sans:-apple-system,BlinkMacSystemFont,'Noto Sans Arabic','Segoe UI','Geeza Pro',Tahoma,Arial,sans-serif}
 html:lang(ar){--mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,'Noto Sans Arabic','Segoe UI','Geeza Pro',Tahoma,sans-serif}
 html:lang(ar) *{letter-spacing:0!important}
 html:lang(ar) :is(p,li,div,.help td,.news a,.lang-menu button){unicode-bidi:plaintext}
-/* section titles keep to the left edge like the tables under them, with the Arabic word order inside */
 html:lang(ar) :is(h3,h4){unicode-bidi:plaintext;text-align:left}
-/* the region and the unit after an instrument's name: a separate piece, so it stays after the name with its own direction */
 html:lang(ar) :is(td.nm small,.sec small){unicode-bidi:plaintext}
 html:lang(ar) .sec small b{margin:0 0 0 8px}
 .lang-wrap{position:relative;flex:none}
@@ -104,7 +98,6 @@ html:lang(ar) .sec small b{margin:0 0 0 8px}
 .lang-menu button.on::after{content:'✓';margin-left:auto;color:var(--amber)}
 @media (display-mode:standalone){ header{padding-top:env(safe-area-inset-top)} }
 
-/* бегущая строка */
 .tape{overflow:hidden;white-space:nowrap;border-top:1px solid var(--line);height:26px;position:relative;font-size:12px}
 .tape-inner{display:inline-block;padding-left:100%;animation:tape 90s linear infinite;line-height:26px}
 .tape:hover .tape-inner{animation-play-state:paused}
@@ -125,7 +118,6 @@ main{flex:1;min-height:0;display:grid;gap:6px;padding:6px;background:var(--bg);p
 .ph .sub{margin-left:auto;font-weight:400;font-size:11px;color:var(--faint);letter-spacing:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
 .pb{flex:1;overflow:auto;min-height:0}
 
-/* таблицы котировок */
 .sec{color:var(--muted);padding:10px 10px 5px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;position:sticky;top:0;background:var(--panel);z-index:1;font-size:11px;font-weight:600;letter-spacing:.06em}
 .sec small{color:var(--faint)}
 table{width:100%;border-collapse:collapse}
@@ -144,7 +136,6 @@ td.sp svg{display:block}
 @keyframes fd{from{background:rgba(239,83,80,.22)}to{background:transparent}}
 .note{color:var(--faint);padding:6px 8px;font-size:11px}
 
-/* график */
 #tv{flex:1;min-height:0;position:relative}
 #tvc,#ownc{position:absolute;inset:0}
 #ownc canvas{display:block;width:100%;height:100%}
@@ -156,7 +147,6 @@ td.sp svg{display:block}
 .chart-tabs button:hover{color:var(--text)}
 .chart-tabs button.on{color:var(--text);border-bottom-color:var(--accent)}
 
-/* крипта */
 .cg{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border-bottom:1px solid var(--line)}
 .cg div{background:var(--panel);padding:8px 10px}
 .cg small{display:block;color:var(--faint);font-size:10.5px}
@@ -164,7 +154,6 @@ td.sp svg{display:block}
 .fng{height:4px;border-radius:4px;background:linear-gradient(90deg,var(--down),#e0b23c,var(--up));position:relative;margin-top:6px}
 .fng i{position:absolute;top:-3px;width:3px;height:10px;border-radius:2px;background:var(--text)}
 
-/* новости */
 .ntools{display:flex;gap:6px;padding:7px 10px;border-bottom:1px solid var(--line);flex:none;align-items:center;overflow-x:auto;scrollbar-width:none}
 .ntools input{background:var(--bg);border:1px solid var(--line2);border-radius:7px;color:var(--text);font:inherit;padding:4px 9px;min-width:120px;flex:1;outline:0}
 .ntools input:focus{border-color:var(--accent-dim)}
@@ -184,7 +173,6 @@ td.sp svg{display:block}
 .news .meta button:hover{color:var(--accent)}
 .day{color:var(--faint);padding:10px 10px 5px;border-bottom:1px solid var(--line);font-size:11px;font-weight:600;letter-spacing:.06em;background:var(--panel)}
 
-/* календарь */
 .eco-next{padding:8px 10px;border-bottom:1px solid var(--line);color:var(--muted)}
 .eco-next b{color:var(--text);font-weight:600}
 .eco td{vertical-align:top}
@@ -196,7 +184,6 @@ td.sp svg{display:block}
 .eco .fp{color:var(--faint);font-size:11px}
 .eco .act{font-weight:700;color:var(--text)} .eco .act.up{color:var(--up)} .eco .act.down{color:var(--down)}
 
-/* сделки */
 .trd td{vertical-align:top}
 .trd td.t{color:var(--muted);width:44px}
 .trd .ev{white-space:normal}
@@ -211,7 +198,6 @@ td.sp svg{display:block}
 .ph .swap{margin-left:auto} .ph .sub + .swap{margin-left:6px}
 @media (min-width:761px){ .panel.off{display:none!important} }
 
-/* оверлеи */
 .overlay{position:fixed;inset:0;background:rgba(6,8,11,.72);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);display:none;align-items:flex-start;justify-content:center;z-index:50;padding:60px 12px 12px}
 .overlay.on{display:flex}
 .dlg{background:var(--panel);border:1px solid var(--line2);border-radius:14px;max-width:640px;width:100%;max-height:calc(100vh - 80px);overflow:auto;box-shadow:0 20px 60px rgba(0,0,0,.5)}
@@ -230,7 +216,6 @@ td.sp svg{display:block}
 .btn.solid{background:var(--accent);border-color:var(--accent);color:#0b1220;font-weight:600}
 .msg{min-height:1.3em;font-size:12px}
 
-
 /* ---------- раскладки и выбор функции в панели ---------- */
 .ph .pick{background:none;color:var(--faint);border:0;padding:0 3px;font:inherit;font-size:11px;cursor:pointer;border-radius:4px}
 .ph .pick:hover{color:var(--text);background:var(--raise)}
@@ -246,7 +231,6 @@ td.sp svg{display:block}
 .lay button:hover{color:var(--text)}
 .lay button.on{color:var(--text);background:var(--sel)}
 .lay .act{margin-left:2px}
-/* windows: ✕ in a title, closed windows, borders to drag, titles to drag */
 .ph .pclose{margin-left:6px;background:none;border:0;color:var(--faint);font-size:11px;line-height:1;padding:2px 4px;border-radius:4px;cursor:pointer}
 .ph:not(:has(.sub, .swap, .mode)) .pclose{margin-left:auto}
 .ph .pclose:hover{color:var(--text);background:var(--raise)}
@@ -281,7 +265,6 @@ body.moving,body.moving *{cursor:grabbing!important;user-select:none}
 @media (max-width:760px){ .ph .pclose,.ph .pfloat,.fresize,.gutter,.slot-empty,.lay .act{display:none} }
 @media (max-width:1100px){ .lay{display:none} }
 
-/* вкладки внутри панели */
 .ptabs{display:flex;gap:2px;flex:none;background:transparent;border-bottom:1px solid var(--line);overflow-x:auto;scrollbar-width:none;padding:0 6px}
 .ptabs button{background:none;padding:7px 9px 6px;color:var(--faint);white-space:nowrap;border-bottom:2px solid transparent;font-size:12px}
 .ptabs button:hover{color:var(--text)}
@@ -294,7 +277,6 @@ body.moving,body.moving *{cursor:grabbing!important;user-select:none}
 .loading:after{content:'…';animation:dots 1s steps(3) infinite}
 @keyframes dots{0%{content:''}33%{content:'.'}66%{content:'..'}}
 
-/* компания */
 .co-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;padding:10px 12px 8px;border-bottom:1px solid var(--line)}
 .co-head .nm{font-size:15px;color:var(--text);font-weight:700}
 .co-head .tk{color:var(--accent);font-weight:600}
@@ -322,7 +304,6 @@ body.moving,body.moving *{cursor:grabbing!important;user-select:none}
 .legend{display:flex;flex-wrap:wrap;gap:4px 12px;color:var(--muted);font-size:11px}
 .legend i{display:inline-block;width:9px;height:9px;border-radius:3px;margin-right:4px;vertical-align:-1px}
 
-/* таблицы */
 table.tbl{width:100%;border-collapse:collapse}
 .tbl th{position:sticky;top:0;background:var(--panel);color:var(--faint);font-weight:500;font-size:11.5px;text-align:right;padding:6px 10px;border-bottom:1px solid var(--line);white-space:nowrap;z-index:1}
 .tbl th:first-child,.tbl td:first-child{text-align:left}
@@ -347,7 +328,6 @@ table.tbl{width:100%;border-collapse:collapse}
 .cv canvas{position:absolute;inset:0;width:100%;height:100%}
 .cv .legend{position:absolute;left:8px;top:6px;background:rgba(14,17,22,.8);padding:2px 8px;border-radius:6px}
 
-/* тепловая карта */
 .tm{position:relative;flex:1;min-height:200px;overflow:hidden}
 .tm .tile{position:absolute;overflow:hidden;border:1px solid var(--panel);display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;color:#fff;line-height:1.15;text-align:center;font-size:11px;border-radius:3px}
 .tm .tile b{font-size:12px}
@@ -368,14 +348,12 @@ table.tbl{width:100%;border-collapse:collapse}
 .tbl.mx td small{display:block;font-size:10px;opacity:.85}
 .tm-tip{position:fixed;z-index:70;background:var(--raise);border:1px solid var(--line2);border-radius:8px;padding:7px 10px;pointer-events:none;font-size:12px;display:none;box-shadow:0 8px 24px rgba(0,0,0,.45);font-variant-numeric:tabular-nums}
 
-/* кривые */
 .gc-svg{display:block;width:100%;height:100%}
 .gc-wrap{position:relative;flex:1;min-height:170px;overflow:hidden}
 .gc-c{display:flex;gap:4px;flex-wrap:wrap;padding:7px 10px;border-bottom:1px solid var(--line)}
 .prob{display:flex;height:10px;min-width:120px}
 .prob i{display:block;height:100%}
 
-/* новости: тикеры и разбор ИИ */
 .news .tkb{color:var(--accent);border:1px solid var(--line2);border-radius:5px;padding:0 5px;margin-left:6px;font-size:11px}
 .news .tkb:hover{border-color:var(--accent-dim)}
 .news .tkb.up{color:var(--up);border-color:rgba(47,191,113,.35)} .news .tkb.down{color:var(--down);border-color:rgba(239,83,80,.35)}
@@ -383,7 +361,6 @@ table.tbl{width:100%;border-collapse:collapse}
 .news .ai i{font-style:normal;margin-left:6px}
 .pill.livefeed{color:var(--up);border-color:rgba(47,191,113,.35)}
 
-/* мобильное меню функций */
 nav.tabs button.more{flex:.7;color:var(--accent)}
 .fnlist{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:1px;background:var(--line)}
 .fnlist button{background:var(--panel);padding:10px 12px;text-align:left}
@@ -391,7 +368,6 @@ nav.tabs button.more{flex:.7;color:var(--accent)}
 .fnlist button b{color:var(--accent);display:block;font-family:var(--mono);font-size:12px}
 .fnlist button span{color:var(--muted);font-size:11.5px}
 
-/* карта (MAP, STORM, SHIP, WETR, ECO) */
 .gm{display:flex!important;flex-direction:row;overflow:hidden;position:relative}
 .gm-wrap{position:relative;flex:1;min-width:0;min-height:0;background:#0b0e13;cursor:grab;touch-action:none;overflow:hidden}
 .gm-wrap.drag{cursor:grabbing}
@@ -446,7 +422,6 @@ nav.tabs button.more{flex:.7;color:var(--accent)}
 .gm.narrow.side-open .gm-leg{display:none}
 .tm-tip b{display:block;color:var(--text);font-weight:600;margin-bottom:3px}
 
-/* технический анализ (TECH) */
 .tc-ctl{gap:4px}
 .tc-ctl .chipbtn{font-size:11px;padding:1px 6px}
 .tc-sep{width:1px;align-self:stretch;background:var(--line2);margin:0 2px}
@@ -459,7 +434,6 @@ nav.tabs button.more{flex:.7;color:var(--accent)}
 .tc-sum div b{font-weight:500;text-align:right}
 .tc-tabs2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:8px;padding:4px 0}
 
-/* мониторы (MOV, MOST…) */
 .mon-in{display:contents}
 .cdr td{white-space:normal;vertical-align:top}
 .cdr td.num{white-space:nowrap}
@@ -473,7 +447,6 @@ nav.tabs button.more{flex:.7;color:var(--accent)}
 .mbar{display:inline-block;height:8px;border-radius:2px;margin-right:6px;vertical-align:middle;opacity:.9}
 .tbl td.nm{max-width:170px}
 
-/* мобильная навигация */
 nav.tabs{display:none}
 
 @media (max-width:1100px){
@@ -495,7 +468,6 @@ nav.tabs{display:none}
   body{font-size:13.5px}
 }
 
-/* options and order flow (opt.js, flow.js) */
 .gx-cv{flex:1;min-height:360px}
 .gx-small{flex:none;height:190px;min-height:0;border-top:1px solid var(--line)}
 .gx-3d{flex:none;height:min(46vh,420px);min-height:260px;cursor:grab}
@@ -507,7 +479,6 @@ nav.tabs{display:none}
 .tbl.mx td{font-size:12px}
 .fl-cv{flex:1;min-height:380px;cursor:grab;touch-action:pan-y;border-radius:6px;overflow:hidden}
 .fl-cv.grabbing{cursor:grabbing}
-/* SAT: satellite pictures of oil storage */
 .sat-wrap{padding:12px 14px 16px;display:flex;flex-direction:column;gap:10px;min-height:0}
 .sat-lead{color:var(--muted);font-size:12.5px;line-height:1.45;max-width:880px}
 .sat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px}
@@ -764,7 +735,6 @@ nav.tabs{display:none}
 
 /* ======================= reference data ======================= */
 var I = window.L10N, TX = I.t;
-// ids from market.py (the "short" field) — internal keys; name is a fallback for an old data.json
 var NAME2ID = {'S&P 500':'S&P','Nasdaq':'Nasdaq','Нефть Brent':'Brent','Золото':'Золото','EUR/USD':'EUR/USD',
   'Доходность США 10 лет':'UST10','Биткоин':'BTC','Индекс Мосбиржи':'IMOEX','USD/RUB (ЦБ)':'USD/RUB',
   'CNY/RUB (ЦБ)':'CNY/RUB','Газ (Henry Hub)':'Газ','Медь':'Медь','Доходность США 3 мес':'UST3M',
@@ -777,11 +747,7 @@ var GROUPS = [
   {code:'GLCO', ids:['Brent','WTI','Газ','Золото','Серебро','Платина','Медь','Пшеница']},
   {code:'RATES', ids:['UST3M','UST5','UST10','UST30']}
 ];
-// units, column captions and regions are in i18n.js (I.unit, TX('gu_' + group), I.region)
 
-// TradingView symbols for charts
-// the free TradingView widget refuses exchange index feeds (SP:SPX, DJ:DJI, TVC:VIX…): CFDs that track them are shown instead;
-// null — no free TradingView chart (US yields): the built-in chart
 var TV = {'S&P':'FOREXCOM:SPXUSD','Nasdaq':'FOREXCOM:NSXUSD','DJI':'FOREXCOM:DJI','RTY':'CAPITALCOM:RTY','VIX':'CAPITALCOM:VIX','SX5E':'CAPITALCOM:EU50',
   'DAX':'XETR:DAX','UKX':'CAPITALCOM:UK100','CAC':'EURONEXT:PX1','NKY':'CAPITALCOM:J225','HSI':'CAPITALCOM:HK50','SHCOMP':'SSE:000001',
   'SENSEX':'BSE:SENSEX','IMOEX':'MOEX:IMOEX','DXY':'CAPITALCOM:DXY','EUR/USD':'FX:EURUSD','USDJPY':'FX:USDJPY',
@@ -790,7 +756,6 @@ var TV = {'S&P':'FOREXCOM:SPXUSD','Nasdaq':'FOREXCOM:NSXUSD','DJI':'FOREXCOM:DJI
   'Платина':'TVC:PLATINUM','Медь':'CAPITALCOM:COPPER','Пшеница':'CAPITALCOM:WHEAT','UST3M':null,
   'UST5':null,'UST10':null,'UST30':null};
 
-// short commands -> id or symbol
 var ALIAS = {SPX:'S&P',SP500:'S&P','S&P':'S&P',NDX:'Nasdaq',NASDAQ:'Nasdaq',DOW:'DJI',DJI:'DJI',RUSSELL:'RTY',RTY:'RTY',
   VIX:'VIX',STOXX:'SX5E',SX5E:'SX5E',DAX:'DAX',FTSE:'UKX',UKX:'UKX',CAC:'CAC',NIKKEI:'NKY',NKY:'NKY',HSI:'HSI',
   HANGSENG:'HSI',SHANGHAI:'SHCOMP',SHCOMP:'SHCOMP',SENSEX:'SENSEX',IMOEX:'IMOEX',MOEX:'IMOEX',DXY:'DXY',
@@ -800,7 +765,6 @@ var ALIAS = {SPX:'S&P',SP500:'S&P','S&P':'S&P',NDX:'Nasdaq',NASDAQ:'Nasdaq',DOW:
   SILVER:'Серебро','СЕРЕБРО':'Серебро',XAG:'Серебро',PLATINUM:'Платина',COPPER:'Медь','МЕДЬ':'Медь',WHEAT:'Пшеница',
   US3M:'UST3M',US5Y:'UST5',US10Y:'UST10',UST10:'UST10',US30Y:'UST30'};
 
-// US stocks/ETFs: quotes come from the bot server (the free Finnhub key is kept there)
 var STOCKS = [['SPY','S&P 500 ETF','AMEX:SPY'],['QQQ','Nasdaq 100 ETF','NASDAQ:QQQ'],['DIA','Dow Jones ETF','AMEX:DIA'],
   ['IWM','Russell 2000 ETF','AMEX:IWM'],['AAPL','Apple','NASDAQ:AAPL'],['MSFT','Microsoft','NASDAQ:MSFT'],['NVDA','Nvidia','NASDAQ:NVDA'],
   ['AMZN','Amazon','NASDAQ:AMZN'],['GOOGL','Alphabet','NASDAQ:GOOGL'],['META','Meta','NASDAQ:META'],['TSLA','Tesla','NASDAQ:TSLA']];
@@ -811,7 +775,6 @@ var COINS = [
   ['TRX','TRON','tron'],['AVAX','Avalanche','avalanche-2'],['LINK','Chainlink','chainlink'],['DOT','Polkadot','polkadot'],
   ['LTC','Litecoin','litecoin'],['SUI','Sui','sui'],['NEAR','NEAR','near'],['UNI','Uniswap','uniswap']
 ];
-// decimals for instruments that arrive only from the live feed (same as market.py)
 var WORLD_DIGITS = {'S&P':0,'Nasdaq':0,'DJI':0,'RTY':0,'VIX':2,'SX5E':0,'DAX':0,'UKX':0,'CAC':0,'NKY':0,'HSI':0,'SHCOMP':0,'SENSEX':0,
   'IMOEX':0,'DXY':2,'EUR/USD':4,'USDJPY':2,'GBPUSD':4,'USDCNY':4,'USDCHF':4,'Brent':2,'WTI':2,'Газ':3,'Золото':0,'Серебро':2,
   'Платина':0,'Медь':3,'Пшеница':0,'UST3M':2,'UST5':2,'UST10':2,'UST30':2};
@@ -822,13 +785,11 @@ var CHART_QUICK = ['S&P','Nasdaq','DAX','Brent','Золото','EUR/USD','UST10'
 function $(id){ return document.getElementById(id) }
 function el(tag, cls, text){ var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e }
 function store(k, v){ try { if (v === undefined) return localStorage.getItem(k); if (v === null) localStorage.removeItem(k); else localStorage.setItem(k, v) } catch(e){ return null } }
-// fetch with a time limit: a slow or throttled site no longer leaves a panel "loading" forever
 function tfetch(url, opts, ms){
   if (!window.AbortController) return fetch(url, opts);
   var ac = new AbortController(), t = setTimeout(function(){ ac.abort() }, ms || 12000);
   return fetch(url, Object.assign({}, opts || {}, {signal: ac.signal})).then(function(r){ clearTimeout(t); return r }, function(e){ clearTimeout(t); throw e });
 }
-// the last data in the browser: the terminal shows it at once on opening and refreshes it in the background
 function cacheGet(k){ try { var v = store('c_' + k); return v ? JSON.parse(v) : null } catch(e){ return null } }
 function cachePut(k, v){ try { store('c_' + k, JSON.stringify(v)) } catch(e){} }
 function fmt(v, d){ if (v == null || isNaN(v)) return '—'; return Number(v).toLocaleString(I.num, {minimumFractionDigits:d, maximumFractionDigits:d}) }
@@ -859,9 +820,9 @@ function spark(vals, c){
 function flash(node, dir){ if (!node || !dir) return; node.classList.remove('flash-up', 'flash-down'); void node.offsetWidth; node.classList.add(dir > 0 ? 'flash-up' : 'flash-down') }
 
 /* ======================= state ======================= */
-var Q = {};          // world market quotes by id
-var C = {};          // crypto by ticker
-var data = null;     // the bot's data.json
+var Q = {};
+var C = {};
+var data = null;
 var newsFilter = 'all', newsQuery = '', newsPred = null, newsPredLabel = '';
 var trdKind = 'congress', trdBuy = false, trdQuery = '';
 var curChart = 'S&P';
@@ -894,7 +855,6 @@ function ingestMarket(list){
     var old = Q[id] || {};
     Q[id] = {id:id, name:I.mktName(id, I.ru ? q.name : q.name_en || q.name), value:v, change:q.change, digits:q.digits != null ? q.digits : 2,
       spark:q.spark || old.spark, src:old.src && old.src !== 'free' && old.src !== 'cache' ? old.src : 'free', pv:old.value};
-    // the previous close — live quotes count the daily change from it
     Q[id].base = q.change != null && v ? v / (1 + q.change / 100) : old.base;
     if (old.src && old.src !== 'free' && old.src !== 'cache') { Q[id].value = old.value; Q[id].change = old.change }
   });
@@ -965,13 +925,7 @@ function loadCached(){
   if (c) Object.keys(c).forEach(function(k){ if (!C[k] && c[k] && c[k].price) C[k] = {price:c[k].price, change:c[k].change, high:c[k].high, low:c[k].low, open:c[k].open} });
 }
 
-/* ---------- the bot server (API keys stay on the server) ----------
- Russian providers throttle Cloudflare, where the bot server runs (since June 2025, *.workers.dev too): a connection
- stops after ~16 KB and every later request on it hangs, while a fresh connection works. The browser keeps one
- connection per address and port, and Cloudflare answers the same server on several HTTPS ports. So every request
- goes to one of these "lanes" with a short time limit; a lane that is slow gets a twin request on another lane
- (whichever answers first wins), a stalled lane rests and is checked again in the background. The screen never
- waits for the server: it shows the browser's last copy and the bot's data from the site, live quotes come on top. */
+/* ---------- the bot server (API keys stay on the server) ---------- */
 var CF_PORTS = ['', ':8443', ':2053', ':2083', ':2087', ':2096'];
 function lanesOf(base){ return /^https:\/\/[a-z0-9.-]+\.workers\.dev$/i.test(base || '') ? CF_PORTS.map(function(p){ return base + p }) : (base ? [base] : []) }
 var LANES = {}, curLane = '';
@@ -989,16 +943,12 @@ function laneBad(o){
   l.fails++; l.bad = Date.now() + Math.min(30000 * Math.pow(2, l.fails - 1), 600000);
   if (curLane === o) curLane = '';
   if (l.probe) return;
-  // in a while a tiny request on this lane: either it answers (back in use at once) or the browser drops the dead
-  // connection (its own check after ~10 s of silence) and the lane starts fresh next time
   l.probe = true;
   setTimeout(function(){
     tfetch(o + '/api/ping', {cache:'no-store'}, 15000).then(function(r){ if (r.ok) laneOk(o) }).catch(function(){})
       .then(function(){ l.probe = false });
   }, 12000);
 }
-// GET/POST to the bot server; resolves with the parsed JSON. o: {headers, method, body, timeout (ms, one try),
-// hedge (ms before a twin request on another lane; GET only), tries (lanes at most), base}
 function wjson(path, o){
   o = o || {};
   var base = o.base || API;
@@ -1027,13 +977,11 @@ function wjson(path, o){
       var init = {cache: 'no-store', headers: o.headers || {}};
       if (me.ac) init.signal = me.ac.signal;
       if (!get) { init.method = o.method; init.body = o.body }
-      // the body is read inside the time limit too: a connection may stall in the middle of an answer
       fetch(origin + path, init).then(function(r){ return r.text().then(function(t){ return {r: r, t: t} }) }).then(function(x){
         if (me.end) return;
         stop(); laneOk(origin);
         if (done) return;
         done = true;
-        // the slower twins are not needed; the ones that started before this lane answered are likely stalled
         live.slice().forEach(function(l){ if (l.at < me.at) laneBad(l.o); l.end = true; clearTimeout(l.t); clearTimeout(l.h); try { l.ac && l.ac.abort() } catch(e){} });
         live.length = 0;
         if (!x.r.ok) return reject(new Error('HTTP ' + x.r.status));
@@ -1047,7 +995,6 @@ function wjson(path, o){
 var API_LIST = [], pickP = null, pickAt = 0;
 var API = '', apiTier = '', apiPaid = false, apiErr = false, apiTimer = null, apiRefresh = 30, apiFails = 0, apiOkAt = 0, apiWaits = 0;
 function ownerPass(){ return (store('owner_pass') || '').trim() }
-// Telegram puts the signed sign-in data into the address (#tgWebAppData=…): read at once, without waiting for telegram.org
 var TG_HASH = (function(){
   try {
     var h = new URLSearchParams(location.hash.slice(1)).get('tgWebAppData');
@@ -1059,7 +1006,6 @@ var TG_HASH = (function(){
 function tgInit(){ try { var d = window.Telegram && Telegram.WebApp && Telegram.WebApp.initData; if (d) return d } catch(e){} return TG_HASH }
 var cfgP = null;
 function loadConfig(){
-  // the server address is remembered: quotes are requested at once, without waiting for config.json
   if (cfgP) return cfgP;
   var known = store('api_url') || '';
   if (known) API = known;
@@ -1075,12 +1021,9 @@ function loadConfig(){
       if (list.indexOf(API) < 0) { API = list[0]; store('api_url', API) }
       return pickApi();
     }).catch(function(){});
-  // inside Telegram the sign-in data is needed first; it is usually in the address already (no wait for telegram.org)
   cfgP = Promise.all([known ? null : net, window.IN_TG && !TG_HASH ? window.TG_READY : null]).then(function(){});
   return cfgP;
 }
-// Several addresses of the same server (api_alt in config.json: e.g. a relay on a hosting that the provider does not
-// throttle). Every address is asked a tiny /api/ping at once; the first that answers is used and remembered.
 function pickApi(force){
   if (API_LIST.length < 2) return Promise.resolve(API);
   if (pickP) return pickP;
@@ -1104,13 +1047,11 @@ function pickApi(force){
 }
 function authHeaders(pass){
   var h = {}, init = tgInit(), p = pass != null ? pass : ownerPass();
-  if (init) h['X-Tg-Init'] = init;   // the Telegram signature: how the server recognises the person
+  if (init) h['X-Tg-Init'] = init;
   if (p) h['X-Owner-Key'] = p;
   return h;
 }
 function apiFetch(pass){
-  // the server answers within ~1.5 s (worker/src/index.js, QUOTES_WAIT) plus the way there; no answer by then means
-  // a stalled lane: a twin request on another one (for the first answer a little sooner)
   return wjson('/api/quotes', {headers: authHeaders(pass), timeout: 6000, hedge: apiOkAt ? 2500 : 2000});
 }
 function applyQuotes(d){
@@ -1124,7 +1065,6 @@ function applyQuotes(d){
     q.src = 'live'; Q[id] = q; n++;
   });
   Object.keys(d.fx || {}).forEach(function(id){
-    // currencies and commodities: the last trade; the change is from the previous close (bot's data)
     var x = d.fx[id], q = Q[id];
     if (!q || !x.value) return;
     if (q.src === 'eod' && d.world && d.world[id]) return;
@@ -1143,31 +1083,28 @@ function apiLoop(){
   clearTimeout(apiTimer);
   if (!API) { apiTier = ''; updStatus(); return }
   if (document.hidden) { apiTimer = setTimeout(apiLoop, 5000); return }
-  // one request at a time (a tab coming back to the screen calls this too); asked meanwhile — once more right after
   if (apiBusy) { apiAgain = true; return }
   apiBusy = true;
-  updStatus();           // "LIVE …" while the first answer is on its way (not the "FREE" of the page's HTML)
+  updStatus();
   var next = apiRefresh, gen = apiGen;
   apiFetch().then(function(d){
-    if (gen !== apiGen) return;   // signed in or out meanwhile: the answer was for the other identity
+    if (gen !== apiGen) return;
     if (d && d.ok === false) throw new Error(d.error || 'server error');
     var wasOwner = apiTier === 'owner';
     apiErr = false; apiFails = 0; apiOkAt = Date.now();
     apiTier = d.tier || 'free'; apiPaid = !!d.paid; apiRefresh = d.refresh || 30; next = apiRefresh;
     if (wasOwner && apiTier !== 'owner') Object.keys(Q).forEach(function(k){ if (Q[k].src === 'eod') Q[k].src = 'free' });
     applyQuotes(d);
-    // a part may be missing while the server is still loading it: the browser's copy keeps the last known one
     var c = cacheGet('quotes') || {}, has = function(o){ return o && Object.keys(o).length };
     cachePut('quotes', {stocks: has(d.stocks) ? d.stocks : c.stocks, fx: has(d.fx) ? d.fx : c.fx, world: has(d.world) ? d.world : c.world});
-    // ...and then it is asked again in a few seconds instead of the usual interval (a couple of times at most)
     if (d.wait && d.wait.length && apiWaits < 3) { apiWaits++; next = 3 } else apiWaits = 0;
     $('st-data').title = d.errors && d.errors.length ? TX('srv_errors') + d.errors.join('; ') : TX('srv_quotes');
   }).catch(function(e){
     if (gen !== apiGen) return;
     apiFails++; apiErr = true;
     $('st-data').title = TX('srv_unavail') + e.message + '\n' + TX('srv_hint');
-    next = Math.min(30, 3 * Math.pow(2, apiFails - 1));   // 3, 6, 12, 24, 30 s: the data on screen stays meanwhile
-    pickApi();   // perhaps another address of the server works on this network
+    next = Math.min(30, 3 * Math.pow(2, apiFails - 1));
+    pickApi();
   }).then(function(){
     apiBusy = false;
     if (apiAgain || gen !== apiGen) { apiAgain = false; next = 0 }
@@ -1175,7 +1112,6 @@ function apiLoop(){
   });
 }
 function patchMarket(){
-  // update only the cells, so scrolling stays and changes flash
   document.querySelectorAll('#mkt tr.row').forEach(function(tr){
     var q = Q[tr.dataset.id]; if (!q) return;
     var isY = /^UST/.test(q.id);
@@ -1199,7 +1135,6 @@ function updLabel(){
 function updStatus(){
   var p = $('st-data');
   if (!API) { p.textContent = 'FREE'; p.className = 'pill'; return }
-  // a single slow answer is not an outage: quotes that came within the last ~1.5 min still count as live
   var fresh = apiOkAt && Date.now() - apiOkAt < Math.max(90, apiRefresh * 3) * 1000;
   if (apiErr && !fresh && (apiOkAt || apiFails >= 3)) { p.textContent = TX('srv_x'); p.className = 'pill'; return }
   p.textContent = apiPaid ? '● PRO' : apiTier ? '● LIVE' : 'LIVE …';
@@ -1282,8 +1217,6 @@ function loadGlobal(){
 $('crypto').addEventListener('click', function(e){ var tr = e.target.closest('tr.row'); if (tr) openChart('BINANCE:' + tr.dataset.sym + 'USDT', tr.dataset.sym + '/USDT') });
 
 /* ======================= chart ======================= */
-// Two sources: TradingView (the full chart) and a built-in one (bot data / Binance).
-// The built-in chart draws at once; TradingView goes on top only if it really loads.
 var tvReady = false, tvQueue = null, tvFailed = false, chartSeq = 0, ownTimer = null;
 function chartMode(){ return store('chart_mode') || 'tv' }
 function loadTV(cb){
@@ -1327,7 +1260,6 @@ function drawOwn(points, label){
   g.fillStyle = col; g.textBaseline = 'top'; g.fillText(label + '  ' + pct(ch) + TX('own_5d'), L + 4, 4);
 }
 function ownSeries(idOrSym, cb){
-  // built-in data: the bot's history (5 days) or Binance candles for crypto
   var coin = null, m = /^BINANCE:([A-Z0-9]+)USDT$/.exec(idOrSym);
   if (m) coin = m[1]; else if (idOrSym === 'BTC' || idOrSym === 'ETH') coin = idOrSym;
   if (coin) {
@@ -1349,11 +1281,9 @@ function openChart(idOrSym, label, silent){
   var mode = sym ? chartMode() : 'own';
   $('chart-sub').textContent = mode === 'own' ? TX('own_sub') : 'TradingView';
   $('tv').innerHTML = '<div id="ownc"></div><div id="tvc"></div><div class="chart-msg" id="chart-msg"></div>';
-  // 1) the built-in chart — at once
   var redraw = function(){ ownSeries(idOrSym, function(pts){ if (seq === chartSeq) drawOwn(pts, title) }) };
   redraw(); clearInterval(ownTimer); ownTimer = setInterval(function(){ if (seq === chartSeq && (chartMode() === 'own' || !$('tvc').firstChild)) redraw() }, 120000);
   if (mode === 'own') { chartNote(''); if (!silent) show('p-chart'); return }
-  // 2) TradingView on top if it loads
   if (tvFailed) chartNote(TX('tv_unavail'));
   else chartNote(TX('tv_loading'));
   loadTV(function(){
@@ -1473,14 +1403,14 @@ var TRD_OWNER = {SP:'o_spouse', JT:'o_joint', DC:'o_child', Spouse:'o_spouse', J
 function num1(x){ return fmt(Math.round(x * 10) / 10, x % 1 && x < 100 ? 1 : 0) }
 function usd(v){
   if (v == null) return '—';
-  var u = I.scale(v, 1, 3);   // $1.2B, $3.5M, $25K (Chinese: $12亿, $350万)
+  var u = I.scale(v, 1, 3);
   return u ? '$' + (u.rank === 1 || u.size === 1e4 ? Math.round(u.x) : num1(u.x)) + u.s : '$' + Math.round(v);
 }
 function usdRange(a, b){
   if (!a) return TX('no_amount');
   if (b == null) return TX('over') + usd(a - 1);
   if (a === b) return usd(a);
-  var u = I.scale(b, 1, 2) || {size: 1, s: ''};   // both ends in the unit of the upper one: $1–5M, $15–50K
+  var u = I.scale(b, 1, 2) || {size: 1, s: ''};
   return '$' + num1(a / u.size) + '–' + num1(b / u.size) + u.s;
 }
 function dmy(d){ return I.dm(d) }
@@ -1533,7 +1463,7 @@ $('ttools').addEventListener('click', function(e){
 $('tq').addEventListener('input', function(){ trdQuery = this.value; renderTrades() });
 function openTrd(kind, arg){
   show('p-trd'); $('tq').value = arg || ''; trdQuery = arg || '';
-  if (!kind && arg && data && data.trades) {   // TRD NVDA: if this section has nothing but the other has — switch
+  if (!kind && arg && data && data.trades) {
     var q = arg.toLowerCase(), has = function(k){ return (data.trades[k] || []).some(function(x){ return ((x.ticker || '') + ' ' + (x.who || '') + ' ' + (x.company || x.asset || '')).toLowerCase().indexOf(q) >= 0 }) };
     if (!has(trdKind)) kind = ['congress', 'insiders'].filter(has)[0];
   }
@@ -1543,7 +1473,7 @@ function openTrd(kind, arg){
 /* ======================= panels and commands ======================= */
 var isMobile = function(){ return window.matchMedia('(max-width:760px)').matches };
 function show(pid){
-  var tip = $('tm-tip'); if (tip) tip.style.display = 'none';   // a chart's hover card must not outlive the chart
+  var tip = $('tm-tip'); if (tip) tip.style.display = 'none';
   if (!isMobile() && window.Layout) { window.Layout.place(pid); return }
   document.querySelectorAll('.panel').forEach(function(p){ p.classList.toggle('show', p.id === pid); p.classList.toggle('focus', p.id === pid) });
   document.querySelectorAll('#tabs button').forEach(function(b){ b.classList.toggle('on', b.dataset.p === pid) });
@@ -1590,7 +1520,6 @@ function runSymbol(s){
   if (coin) return openChart('BINANCE:' + s + 'USDT', s + '/USDT');
   openChart(s.replace(/\s+/g, ''), s);
 }
-// functions typed after a ticker: "AAPL DES", "AAPL US EQUITY FA"
 var SUFFIX = {};
 function runCommand(raw){
   raw = String(raw || '').trim().replace(/\s*<?go>?$/i, ''); if (!raw) return;
@@ -1628,7 +1557,7 @@ $('k-login').onclick = function(){
   apiFetch(p).then(function(d){
     if (d.tier !== 'owner') { m.style.color = 'var(--down)'; m.textContent = TX('wrong_pass'); return }
     store('owner_pass', p); $('k-pass').value = ''; apiTier = 'owner'; apiPaid = !!d.paid; apiErr = false; apiRefresh = d.refresh || apiRefresh;
-    apiGen++; apiFails = 0; apiOkAt = Date.now();   // an answer still on its way was for the viewer before signing in
+    apiGen++; apiFails = 0; apiOkAt = Date.now();
     applyQuotes(d); updStatus(); $('k-tier').textContent = tierText();
     m.style.color = 'var(--up)'; m.textContent = TX('signed_in');
     apiLoop();
@@ -1672,7 +1601,6 @@ $('b-set').onclick = openSettings;
 
 /* ======================= start ======================= */
 I.apply();
-// the language: a menu under the header button and four buttons in the settings
 function langMenu(open){
   var m = $('lang-menu'), b = $('b-lang');
   if (open === undefined) open = m.hidden;
@@ -1705,7 +1633,7 @@ safe(function(){ loadData(); setInterval(loadData, 120000) });
 safe(function(){ setInterval(renderEco, 60000) });
 safe(function(){ binanceSnapshot().then(binanceStream).catch(startGecko) });
 safe(function(){ loadGlobal(); setInterval(loadGlobal, 300000) });
-safe(function(){ store('eodhd_key', null); store('finnhub_key', null) });   // old keys in the browser are no longer needed
+safe(function(){ store('eodhd_key', null); store('finnhub_key', null) });
 safe(function(){ loadConfig().then(apiLoop) });
 document.addEventListener('visibilitychange', function(){ if (document.hidden) cachePut('crypto', C); else if (API) apiLoop() });
 

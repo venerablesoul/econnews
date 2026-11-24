@@ -1,7 +1,3 @@
-"""The bot keeps itself running: GitHub Actions sessions queue each other (relay.py), broken code is not taken
-(self-check + rollback), one failing part does not stop a run, a hung run is restarted, the owner hears only what the
-bot cannot fix. No network: GitHub's API is a local fake with GitHub's concurrency rule, git repos are temporary.
-Run: python3 -m unittest tests.test_selfheal -v"""
 import contextlib
 import http.server
 import json
@@ -38,7 +34,6 @@ ACTIONS_ENV = ("GITHUB_ACTIONS", "GITHUB_TOKEN", "RELAY_TOKEN", "GITHUB_REPOSITO
 
 @contextlib.contextmanager
 def clean_env(**extra):
-    """No GitHub Actions variables (the test suite itself runs on GitHub Actions) plus `extra`."""
     with mock.patch.dict(os.environ):
         for k in ACTIONS_ENV:
             os.environ.pop(k, None)
@@ -47,17 +42,15 @@ def clean_env(**extra):
 
 
 # ---------------------------------------------------------------------------------------------------------------
-# A fake of GitHub's Actions API for one repository, with the rule of `concurrency` in news.yml:
-# one run in progress and one pending; a newer pending run cancels the older pending one.
 # ---------------------------------------------------------------------------------------------------------------
 class FakeGitHub:
     TOKEN = "ghs_test"
 
     def __init__(self):
         self.state = {"news.yml": "active", "keepalive.yml": "active"}
-        self.runs = []          # newest last
-        self.calls = []         # (method, path)
-        self.outage = 0         # answer everything with this HTTP status
+        self.runs = []
+        self.calls = []
+        self.outage = 0
         self.refuse_dispatch = 0
         self.next_id = 100
         self.lock = threading.Lock()
@@ -85,7 +78,7 @@ class FakeGitHub:
                         return self.answer(401, {"message": "Bad credentials"})
                     if gh.outage:
                         return self.answer(gh.outage, {"message": "outage"})
-                    parts = path.strip("/").split("/")   # repos o r actions workflows <wf> [runs|dispatches|enable]
+                    parts = path.strip("/").split("/")
                     if parts[:5] != ["repos", "o", "r", "actions", "workflows"] or len(parts) < 6:
                         return self.answer(404, {"message": "Not Found"})
                     wf, tail = parts[5], parts[6:] if len(parts) > 6 else []
@@ -149,7 +142,6 @@ class FakeGitHub:
         return [r for r in self.runs if r["status"] == "pending"]
 
     def finish(self, run, conclusion="success"):
-        """The session ended (or died): the waiting one starts at once."""
         with self.lock:
             run["status"], run["conclusion"] = "completed", conclusion
             for r in self.runs:
@@ -197,7 +189,7 @@ class Relay(GitHubCase):
 
     def test_a_waiting_run_from_someone_else_counts(self):
         cur = self.gh.start()
-        self.gh.start(event="schedule")        # e.g. the owner pressed "Run workflow"
+        self.gh.start(event="schedule")
         with self.gh.env(cur):
             self.assertEqual(relay.queue_next(), "already waiting")
         self.assertEqual(self.gh.count("POST", "/dispatches"), 0)
@@ -232,7 +224,7 @@ class Relay(GitHubCase):
             before = self.gh.count("POST", "/dispatches")
             self.assertIn("HTTP 403", relay.queue_next())
             self.assertEqual(self.gh.count("POST", "/dispatches") - before, 1, "a refusal is not repeated")
-        with self.gh.env(cur, GITHUB_API_URL="http://127.0.0.1:9"):   # nothing listens there
+        with self.gh.env(cur, GITHUB_API_URL="http://127.0.0.1:9"):
             self.assertTrue(relay.queue_next().startswith("could not queue"))
 
     def test_retries_a_dispatch_when_github_stumbles(self):
@@ -274,25 +266,21 @@ class Relay(GitHubCase):
         self.assertEqual(self.gh.count("POST", "/dispatches"), 1)
 
     def test_the_chain_of_sessions(self):
-        """A day of sessions: no gap between them, a crash after the first check is covered by the waiting session,
-        a crash before it stops the chain (no restart loop) until the keepalive starts it again, and the off switch."""
-        self.gh.start()                                            # the very first session: "Run workflow"
+        self.gh.start()
         for n in range(8):
             cur = self.gh.running()[0]
             with self.gh.env(cur):
-                self.assertEqual(relay.queue_next(), "queued")    # the bot's first good check
-                relay.keepalive()                                 # the safety net fires somewhere in between
-                self.assertEqual(relay.queue_next(), "already waiting")   # the half-hourly check
+                self.assertEqual(relay.queue_next(), "queued")
+                relay.keepalive()
+                self.assertEqual(relay.queue_next(), "already waiting")
             self.assertEqual((len(self.gh.running()), len(self.gh.pending())), (1, 1))
-            self.gh.finish(cur, "failure" if n == 3 else "success")   # session 4 dies (GitHub lost the runner)
+            self.gh.finish(cur, "failure" if n == 3 else "success")
             self.assertEqual(len(self.gh.running()), 1, f"after session {n + 1} the next one runs at once")
-        # a session that dies before its first check queues nothing
         self.gh.finish(self.gh.running()[0], "failure")
         self.assertEqual(self.gh.running(), [])
         with self.gh.env():
             self.assertIn("started a new session", relay.keepalive())
         self.assertEqual(len(self.gh.running()), 1)
-        # the owner switches the bot off
         self.gh.state["news.yml"] = "disabled_manually"
         with self.gh.env(self.gh.running()[0]):
             self.assertTrue(relay.stopped())
@@ -317,8 +305,6 @@ class Loop(GitHubCase):
         super().tearDown()
 
     def loop(self, runs, env, **patches):
-        """loop(5, sync=True) with `runs` as the results of run(): numbers, or exceptions to raise.
-        SystemExit at the end stops the loop (as a missing token does)."""
         told = []
         with env, mock.patch.object(news_bot, "run", side_effect=list(runs) + [SystemExit("stop")]) as run, \
                 mock.patch.object(news_bot, "git_sync") as sync, \
@@ -378,7 +364,7 @@ class Loop(GitHubCase):
         self.assertIn("works again", told[1])
 
     def test_short_failures_are_not_reported(self):
-        _, _, _, told = self.loop([RuntimeError("x")] * 4 + [0], clean_env())   # 4 failures but not 30 minutes
+        _, _, _, told = self.loop([RuntimeError("x")] * 4 + [0], clean_env())
         self.assertEqual(told, [])
 
     def test_a_pinned_session_reports_the_broken_main_once(self):
@@ -432,7 +418,6 @@ def git(cwd, *a, ok=True):
 
 
 class BotRepos(unittest.TestCase):
-    """remote.git (GitHub), dev (a developer's clone) with the real bot code, bot (where the bot runs)."""
 
     def setUp(self):
         self._tmp = tempfile.TemporaryDirectory()
@@ -486,13 +471,13 @@ class SafeCodeUpdates(BotRepos):
 
         with clean_env(STATE_FILE=state), mock.patch.object(news_bot, "reload_self", side_effect=Reloaded), \
                 mock.patch.object(news_bot, "notify_owner", side_effect=lambda text: told.append(text("en")) or True):
-            update()                                                    # nothing new: nothing happens
+            update()
             self.commit("sources.py", "\n# a harmless change\n")
-            with self.assertRaises(Reloaded):                           # passes the self-check: restart with it
+            with self.assertRaises(Reloaded):
                 update()
             macro = self.read(self.bot, "macro.py")
             broken = self.commit("macro.py", "\ndef oops(:\n")
-            update()                                                    # fails: rolled back, remembered, reported
+            update()
             self.assertEqual(self.read(self.bot, "macro.py"), macro, "the code that runs is back")
             self.assertNotEqual(git(self.bot, "rev-parse", "HEAD"), broken)
             self.assertEqual(bad, {broken})
@@ -502,11 +487,11 @@ class SafeCodeUpdates(BotRepos):
             self.assertIn(broken[:7], told[0])
             self.assertIn("SyntaxError", told[0])
             with mock.patch.object(news_bot, "selfcheck_in") as check:
-                update()                                                # main still broken: not even tried
+                update()
                 check.assert_not_called()
             self.assertEqual(len(told), 1, "said once")
             self.commit("macro.py", macro + "# fixed\n", append=False)
-            with self.assertRaises(Reloaded):                           # the fix comes in by itself
+            with self.assertRaises(Reloaded):
                 update()
             self.assertEqual(self.read(self.bot, "macro.py"), macro + "# fixed\n")
 
@@ -515,7 +500,7 @@ class SafeCodeUpdates(BotRepos):
         state = '{"initialized": true, "seen": {}, "recent": [], "last_digest": "", "fail_streak": {}}'
         with open(os.path.join(self.dev, "state.json"), "w") as f:
             f.write(state)
-        news_bot.git_sync("push", self.dev)                             # the data branch exists
+        news_bot.git_sync("push", self.dev)
         os.remove(os.path.join(self.dev, "state.json"))
         self.commit("sources.py", "\n# new code\n")
         head = git(self.bot, "rev-parse", "HEAD")
@@ -526,8 +511,6 @@ class SafeCodeUpdates(BotRepos):
 
 class DataBranchGuard(BotRepos):
     def test_a_session_without_its_data_does_not_wipe_the_data_branch(self):
-        """«Save state» runs at the end of every session. One that ended before its first run (switched off, cancelled
-        while setting up) has only the bare site: pushing it would replace gh-pages and lose the bot's memory."""
         news_bot._published.clear()
         os.makedirs(os.path.join(self.dev, "docs"), exist_ok=True)
         with open(os.path.join(self.dev, "state.json"), "w") as f:
@@ -550,7 +533,6 @@ class DataBranchGuard(BotRepos):
 
 @unittest.skipUnless(shutil.which("bash") and shutil.which("timeout") and HAS_YAML, "needs bash, timeout and PyYAML")
 class CheckTheCodeStep(BotRepos):
-    """The «Check the code» step of news.yml, run as GitHub runs it (bash -e) in a shallow checkout."""
 
     def script(self):
         import yaml
@@ -599,10 +581,10 @@ class CheckTheCodeStep(BotRepos):
 
     def test_broken_main_without_a_known_good_version_still_runs(self):
         bad = self.commit("macro.py", "\ndef oops(:\n")
-        r, values, head = self.run_step()                               # no gh-pages branch at all
+        r, values, head = self.run_step()
         self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
         self.assertEqual((values, head), ({}, bad))
-        self.publish_code_ok(bad)                                        # "good" is the broken one itself
+        self.publish_code_ok(bad)
         r, values, head = self.run_step()
         self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
         self.assertEqual((values, head), ({}, bad))
@@ -643,7 +625,6 @@ class RunParts(unittest.TestCase):
                 "sources": ["Reuters"], "score": score, "ts": datetime.now(timezone.utc).isoformat()}
 
     def run_bot(self, stories, deliver, errors=None, **env):
-        """One run; deliver(chat, text) -> None or raises. Returns (what was delivered, the saved state)."""
         out = []
 
         def fake_call(tg, method, fields, files=None):
@@ -662,10 +643,10 @@ class RunParts(unittest.TestCase):
             return out, json.load(f)
 
     def started(self):
-        self.run_bot([], lambda c, t: None)   # the first run only says hello to the owner
+        self.run_bot([], lambda c, t: None)
         with open(self.state, encoding="utf-8") as f:
             st = json.load(f)
-        st["last_digest"] = ""                # the first run puts the evening digest off till tomorrow: due now
+        st["last_digest"] = ""
         with open(self.state, "w", encoding="utf-8") as f:
             json.dump(st, f)
 
@@ -680,7 +661,7 @@ class RunParts(unittest.TestCase):
                 self.run_bot([story], down)
         with open(self.state, encoding="utf-8") as f:
             self.assertNotIn(story["id"], json.load(f)["seen"], "the story is still new")
-        out, st = self.run_bot([dict(story)], lambda c, t: None)       # Telegram is back
+        out, st = self.run_bot([dict(story)], lambda c, t: None)
         self.assertTrue(any("Fed holds rates" in t for c, t in out if c == "200"))
         self.assertIn(story["id"], st["seen"])
 
@@ -700,7 +681,6 @@ class RunParts(unittest.TestCase):
 
     def test_partly_delivered_news_are_not_sent_twice(self):
         self.started()
-        # distinct headlines (similar ones are merged into one story), long enough for a batch of several messages
         stories = [self.story(f"Inflation shock{i} hits economy{i} markets{i} as investors{i} weigh central{i} "
                               f"bank{i} policy{i} outlook{i}") for i in range(1, 40)]
         calls = []
@@ -827,7 +807,7 @@ class Workflows(unittest.TestCase):
         import yaml
         with open(os.path.join(ROOT, ".github", "workflows", name), encoding="utf-8") as f:
             wf = yaml.safe_load(f)
-        wf["on"] = wf.pop(True, wf.get("on"))   # YAML 1.1 reads the key `on` as true
+        wf["on"] = wf.pop(True, wf.get("on"))
         return wf
 
     def test_news_sessions_chain_themselves(self):

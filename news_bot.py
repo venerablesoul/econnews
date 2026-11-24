@@ -1,60 +1,4 @@
 #!/usr/bin/env python3
-"""
-Economic news -> Telegram (English by default, Russian for readers who chose /lang ru).
-
-Every run:
-  1. downloads the RSS feeds from sources.py,
-  2. picks economically significant stories and scores their importance,
-  3. removes duplicates (one story from several sources = one story),
-  4. sends what is new to Telegram, each reader in their language,
-  5. in the morning (9:00 MSK) — overnight highlights and today's calendar,
-     in the evening (21:00 MSK) — the day in review and tomorrow's calendar,
-  6. reminds about key data (inflation, rates, jobs) an hour before release,
-  7. reports at once when a source stops responding (and when it is back),
-  8. sends large trades of US politicians and company insiders (trades.py).
-
-Python 3.9+ standard library only. Optional: matplotlib (the chart picture)
-and pdfplumber (reading US House trade reports).
-
-Environment variables:
-  TELEGRAM_BOT_TOKEN   bot token from @BotFather                      (required)
-  TELEGRAM_CHAT_ID     your chat id — the bot owner                   (required)
-  WORKER_URL           the bot server address (normally read from docs/config.json);
-                       news go to the owner and everyone who pressed /start
-  MIN_LEVEL            high | medium (default medium) — what to send
-  DIGEST_HOUR          hour of the evening digest, MSK (21), -1 = off
-  QUIET_HOURS          silent hours, MSK, e.g. 0-8 (default 0-8)
-  MORNING_HOUR         hour of the morning digest, MSK (9), -1 = off
-  BRIEF_HOUR           hour of the pre-market brief with option levels, MSK (16), weekdays; -1 = off
-  SUMMARIES            yes/no — a 1–2 sentence summary under the headline
-  TAGS                 yes/no — tags #oil #Fed ...
-  TRANSLATE            yes/no — translate headlines into the other language (Google, then MyMemory)
-  CALENDAR             yes/no — economic calendar and reminders
-  CAL_COUNTRIES        calendar currencies/countries (USD,EUR,CNY,GBP,JPY)
-  REMIND_MINUTES       how many minutes before an event to remind (60), 0 = never
-  ALERTS               yes/no — alerts about broken sources
-  FRED_API_KEY         free FRED key — actual numbers for released US data (GitHub secret)
-  TRADES               yes/no — trades of US politicians and insiders (trades.py)
-  CONGRESS_MIN         send politicians' trades from this amount, $ (15000)
-  INSIDER_MIN_BUY      send insider buys from this amount, $ (250000)
-  INSIDER_MIN_SELL     send insider sales from this amount, $ (10000000)
-  STATE_FILE           path to the state file (state.json)
-
-Running by hand:
-  python news_bot.py             a normal run
-  python news_bot.py --dry-run   send nothing, print to the console
-  python news_bot.py --test      send a test message to Telegram
-  python news_bot.py --loop 5    run continuously, checking every 5 minutes
-  python news_bot.py --loop 5 --git-sync   the same + push the data to GitHub (for the terminal)
-  LOOP_HOURS=5.5 python news_bot.py --loop 10 --git-sync   a loop that stops by itself after 5.5 h
-  python news_bot.py --selfcheck  offline check that this code works (no network, nothing sent); exit code 0 = fine
-
-Keeping itself alive (see loop()): new code from GitHub is taken only if it passes the self-check, a hung run is
-restarted, one failing part of a run does not stop the others, and the owner hears only about what the bot cannot fix
-by itself. On GitHub Actions each ~5.5-hour session queues the next one (relay.py, news.yml, keepalive.yml).
-
-Variables can go into a .env file next to the bot (see .env.example).
-"""
 from __future__ import annotations
 
 import hashlib
@@ -77,32 +21,27 @@ import i18n
 from sources import SOURCES
 
 MSK = timezone(timedelta(hours=3))
-# a browser User-Agent: some official sites (bls.gov, imf.org) answer 403 to "bots"
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
-MAX_AGE_HOURS = 12          # older stories are not sent
-MAX_PER_MESSAGE_BATCH = 25  # at most this many stories per run
-KEEP_DAYS = 3               # how long history is kept in state.json
-DOWN_AFTER_HOURS = 3        # a source that fails this long in a row is "down" (the owner hears once, and when it is back)
-LOOP_MINUTES = 0.0          # minutes between runs in --loop mode (0 = single runs from a schedule, ~30 min apart)
+MAX_AGE_HOURS = 12
+MAX_PER_MESSAGE_BATCH = 25
+KEEP_DAYS = 3
+DOWN_AFTER_HOURS = 3
+LOOP_MINUTES = 0.0
 
 
 def down_after():
-    """Failed runs in a row that make a source "down": ~DOWN_AFTER_HOURS whatever the interval between runs
-    (it used to be a fixed 6 runs, which in the 5-minute loop meant 30 minutes, not the 3 hours the message says)."""
     every = LOOP_MINUTES if LOOP_MINUTES > 0 else 30.0
     return max(2, int(round(DOWN_AFTER_HOURS * 60 / every)))
 
 
 def all_down_after():
-    """Runs in a row with no source answering before the owner hears (~15 minutes: a short network blip passes)."""
     every = LOOP_MINUTES if LOOP_MINUTES > 0 else 30.0
     return max(1, int(round(15 / every)))
 
 
-CODE_SHA = ""               # the git commit this process runs (set by loop(); recorded in state.json as "code_ok")
+CODE_SHA = ""
 
 # ----------------------------------------------------------------------------
-# Keywords. English ones match whole words, Russian ones match the word stem.
 # ----------------------------------------------------------------------------
 HIGH_EN = [
     "rate decision", "rate cut", "rate cuts", "rate hike", "rate hikes", "interest rate", "interest rates",
@@ -147,9 +86,6 @@ KW_MED = _compile(MEDIUM_EN, False) + _compile(MEDIUM_RU, True)
 
 
 # ----------------------------------------------------------------------------
-# Tags (#oil #Fed ...), stored in English and shown in the reader's language (i18n.TAGS_RU).
-# English words match whole words ("*" at the end = prefix); Russian words match by stem.
-# Order = priority, at most 3 tags per story.
 # ----------------------------------------------------------------------------
 TAG_RULES = [
     ("Fed", ["fed", "feds", "federal reserve", "fomc", "powell", "warsh", "фрс"]),
@@ -197,7 +133,6 @@ def tags_for(*texts, limit=3):
 
 
 def score_text(title: str, summary: str):
-    """Returns (points, whether the headline has economic words)."""
     score, title_hit = 0, False
     for _, rx in KW_HIGH:
         if rx.search(title):
@@ -226,7 +161,6 @@ def _text(el) -> str:
 
 
 def _web_link(s: str) -> str:
-    """Only ordinary web links (http/https) leave the feed: anything else (javascript:, data:, ...) is dropped."""
     s = (s or "").strip()
     return s if re.match(r"https?://", s, re.I) else ""
 
@@ -266,7 +200,6 @@ def parse_feed(raw: bytes):
     try:
         root = ET.fromstring(raw)
     except ET.ParseError:
-        # a common feed defect — unescaped &
         fixed = re.sub(rb"&(?!(?:[a-zA-Z]+|#\d+|#x[0-9a-fA-F]+);)", b"&amp;", raw)
         root = ET.fromstring(fixed)
 
@@ -308,7 +241,7 @@ def parse_feed(raw: bytes):
 def load_source(src):
     try:
         return src, parse_feed(fetch(src["url"])), None
-    except Exception as e:  # network, 403, broken XML — the source is just skipped
+    except Exception as e:
         return src, [], f"{type(e).__name__}: {e}"[:200]
 
 
@@ -316,11 +249,8 @@ def load_source(src):
 # Selection, scoring, de-duplication
 # ----------------------------------------------------------------------------
 GN_SUFFIX = re.compile(r"\s+[-–—]\s+(Reuters|Bloomberg(?:\.com)?|Bloomberg News|BNN Bloomberg)\s*$", re.I)
-# every Google News story ends with " - Publication name"
 GN_ANY_SUFFIX = re.compile(r"\s+[-–—]\s+[^-–—]{2,60}$")
 
-# Not economics, even though "market", "growth" etc. appear in the headline
-# (crime stories that mention a market place, medical "growth", and so on).
 NOISE = re.compile(r"(?<![\w])(kill(?:s|ed|ing)?|gunm[ae]n|shooting|murder\w*|stabb\w*|surgery|"
                    r"dies|died|funeral|убил\w*|убит\w*|погиб\w*|стрельб\w*|операци[яюи] на)(?![\w])", re.I)
 STOP = set("the a an of to in on for and or is are as at by with from after over its it be has have will says said new".split())
@@ -352,20 +282,19 @@ def level_of(score: int) -> str:
     return "low"
 
 
-LEAD_MAX = 230  # length of the summary under the headline
+LEAD_MAX = 230
 
 
 def make_lead(title: str, summary: str, link: str) -> str:
-    """The first 1–2 sentences of the teaser, if they add something to the headline."""
     if not summary or "news.google.com" in (link or ""):
-        return ""  # Google News teasers only repeat the headline
+        return ""
     s = re.sub(r"\s*(Continue reading|Read more|Читать далее)\W*$", "", summary, flags=re.I).strip()
     s = re.sub(r"\s*The post .{0,200} appeared first on .*$", "", s).strip()
     if len(s) < 40:
         return ""
     t_toks, s_toks = norm_tokens(title), norm_tokens(s)
     if s_toks and len(s_toks - t_toks) < 4:
-        return ""  # the teaser almost repeats the headline
+        return ""
     out = ""
     for sent in re.split(r"(?<=[.!?])\s+", s):
         if len(out) + len(sent) > LEAD_MAX and out:
@@ -381,14 +310,14 @@ def evaluate(src, it):
     if "news.google.com" in (it["link"] or ""):
         title = GN_ANY_SUFFIX.sub("", title)
     if len(title.split()) < 3:
-        return None  # "Markets", "Economy" are section titles, not stories
+        return None
     if src.get("categories") and it["categories"]:
         if not any(c in src["categories"] for c in it["categories"]):
             return None
     kw, title_hit = score_text(title, it["summary"])
     kind = src["kind"]
     if kind != "official" and kw < 3 and NOISE.search(title):
-        return None  # an incident with a random "economic" word
+        return None
     if kind == "general" and not title_hit:
         return None
     if kind == "econ" and kw == 0:
@@ -427,18 +356,16 @@ def collect(now: datetime):
                 if it["published"] and it["published"] < cutoff:
                     continue
                 ev = evaluate(src, it)
-            except Exception as e:   # one odd story must not stop every run until it ages out
+            except Exception as e:
                 print(f"  ! {src['name']}: skipped a story ({type(e).__name__}: {e})"[:200])
                 continue
             if ev:
                 candidates.append(ev)
-    # a source counts as "down" only if none of its feeds answered
     errors = {k: v for k, v in errors.items() if k not in ok_names}
     return candidates, errors
 
 
 def merge_duplicates(items):
-    """Merges one story from different sources. Every extra source adds +1 to importance."""
     items = sorted(items, key=lambda x: -x["score"])
     merged = []
     for it in items:
@@ -450,7 +377,7 @@ def merge_duplicates(items):
                     m["score"] = min(m["score"] + 1, 14)
                 m.setdefault("_ids", set()).add(it["id"])
                 if not m.get("lead") and it.get("lead"):
-                    m["lead"] = it["lead"]  # take the summary from whoever has one
+                    m["lead"] = it["lead"]
                 for t in it.get("tags", []):
                     if t not in m["tags"] and len(m["tags"]) < 3:
                         m["tags"].append(t)
@@ -473,7 +400,6 @@ def load_state(path):
         st = {}
     if not isinstance(st, dict):
         st = {}
-    # a damaged field would otherwise break every run: it starts over instead
     for key, kind, default in (("initialized", bool, False), ("seen", dict, {}), ("recent", list, []),
                                ("last_digest", str, ""), ("fail_streak", dict, {})):
         if not isinstance(st.get(key), kind):
@@ -498,9 +424,6 @@ def save_state(path, st, now):
 
 
 # ----------------------------------------------------------------------------
-# Translation (free, no keys): every story gets a version in each of the bot's other languages
-# (English stories in Russian, Chinese and Arabic; Russian ones in English, Chinese and Arabic).
-# Google Translate first, MyMemory as a fallback; if both fail the story simply stays in its original language.
 # ----------------------------------------------------------------------------
 GT_URL = "https://translate.googleapis.com/translate_a/single"
 MM_URL = "https://api.mymemory.translated.net/get"
@@ -515,7 +438,6 @@ def _env_on(name, default):
 TRANSLATE_ON = os.environ.get("TRANSLATE", "yes").strip().lower() not in ("off", "none", "no", "0", "false")
 
 
-# the translators' codes for our languages (Chinese — simplified)
 ENGINE_LANG = {"zh": "zh-CN"}
 
 
@@ -544,7 +466,6 @@ def orig_lang(text):
 
 
 def translate(text, lang="ru"):
-    """Translation into lang (en, ru, zh, ar); None if the text is already in that language or translation failed."""
     if not text or not TRANSLATE_ON or lang not in i18n.LANGS:
         return None
     src = orig_lang(text)
@@ -566,12 +487,10 @@ def translate(text, lang="ru"):
     return result
 
 
-# the fields a translated story keeps (title_ru, lead_zh, …): in state.json and in docs/data.json
 TR_FIELDS = tuple(f"{f}_{lang}" for f in ("title", "lead") for lang in i18n.LANGS)
 
 
 def translate_items(items):
-    """Adds title_<lang>/lead_<lang> in every other language to stories that lack them (6 threads)."""
     if not TRANSLATE_ON:
         return
     jobs = []
@@ -606,14 +525,12 @@ def lead_for(it, lang):
 TG_API = "https://api.telegram.org"
 ICON = {"high": "🔴", "medium": "🟡", "low": "⚪"}
 SHOW_ORIGINAL = _env_on("SHOW_ORIGINAL", "no")
-SUMMARIES = _env_on("SUMMARIES", "yes")   # 1–2 sentence summary under the headline
-SHOW_TAGS = _env_on("TAGS", "yes")        # tags #oil #Fed ...
-TERMINAL_BUTTON = _env_on("TERMINAL_BUTTON", "yes")  # "Terminal" button under messages
+SUMMARIES = _env_on("SUMMARIES", "yes")
+SHOW_TAGS = _env_on("TAGS", "yes")
+TERMINAL_BUTTON = _env_on("TERMINAL_BUTTON", "yes")
 
 
 def ai_sum(it, lang):
-    """The AI one-liner in the reader's language ("" if there is none in it — then the summary is shown).
-    Older notes had only a Russian "sum" (no "sum_ru"); notes before Chinese and Arabic had no sum_zh/sum_ar."""
     ai = it.get("ai") or {}
     if "sum_ru" not in ai:
         return ai.get("sum", "") if lang == "ru" else ""
@@ -646,7 +563,6 @@ def fmt_item(it, icon=True, lead=True, lang=i18n.DEFAULT):
 
 
 def sectioned(items, lang=i18n.DEFAULT):
-    """"Top" / "Also" blocks instead of one long list."""
     high = [s for s in items if level_of(s["score"]) == "high"]
     med = [s for s in items if level_of(s["score"]) != "high"]
     blocks = []
@@ -673,13 +589,11 @@ def split_messages(header, blocks, limit=3900):
 
 
 def _fit(block, limit):
-    """A block longer than one message (a long calendar, say) is cut at line ends: Telegram refuses a message over
-    4096 characters, and such a refusal would come back on every run."""
     if len(block) <= limit:
         return [block]
     out, cur = [], ""
     for line in block.split("\n"):
-        while len(line) > limit:   # not expected: every line here is one story or one event
+        while len(line) > limit:
             if cur:
                 out.append(cur)
                 cur = ""
@@ -702,8 +616,6 @@ class TelegramError(RuntimeError):
 
 
 def _retry_later(e):
-    """True for a failure that may pass by itself (network, Telegram busy or down) — worth repeating on the next run.
-    False for one that would repeat forever: Telegram refusing the message itself (400…) or a bug in the bot."""
     if isinstance(e, TelegramError):
         return e.code == 429 or e.code >= 500
     if isinstance(e, (urllib.error.URLError, TimeoutError, ConnectionError)):
@@ -712,7 +624,6 @@ def _retry_later(e):
 
 
 def per_lang(fn):
-    """Wraps fn(lang) so it is computed once per language."""
     cache = {}
 
     def get(lang):
@@ -723,24 +634,21 @@ def per_lang(fn):
 
 
 class Telegram:
-    """Sends to the owner (TELEGRAM_CHAT_ID) and everyone who pressed /start
-    (the bot server keeps the subscriber list, see worker/). Each person gets their language (/lang)."""
 
     def __init__(self, token, chat_id, dry=False, pages_url="", subscribers=(), langs=None, owner_off=False):
         self.token, self.chat_id, self.dry = token, str(chat_id).strip(), dry
-        self.owner_off = owner_off  # the owner pressed «Turn news off» in the bot
+        self.owner_off = owner_off
         self.pages_url = pages_url
         self.subscribers = [str(x) for x in dict.fromkeys(subscribers or []) if str(x) != self.chat_id]
         self.langs = {str(k): i18n.norm_lang(v) for k, v in (langs or {}).items()}
-        self.gone = set()          # blocked the bot or deleted the chat — removed from subscribers
-        self.no_webapp = set()     # chats where web_app buttons do not work
-        self.sent = 0              # messages sent this run (so state is saved right away)
+        self.gone = set()
+        self.no_webapp = set()
+        self.sent = 0
 
     def lang_of(self, chat):
         return self.langs.get(str(chat)) or i18n.DEFAULT
 
     def recipients(self, owner_only=False):
-        # service notices (owner_only) still reach the owner; the news mailing respects «off»
         out = [self.chat_id] if self.chat_id and (owner_only or not self.owner_off) else []
         if not owner_only:
             out += [c for c in self.subscribers if c not in self.gone]
@@ -751,7 +659,6 @@ class Telegram:
         rows = []
         if self.pages_url:
             q = "" if lang == i18n.DEFAULT else "?lang=" + lang
-            # web_app buttons (open the page inside Telegram) only work in private chats
             webapp = not str(chat).startswith("-") and chat not in self.no_webapp
 
             def mk(text, url):
@@ -760,7 +667,6 @@ class Telegram:
             if TERMINAL_BUTTON:
                 row.append(mk(i18n.t(lang, "btn_terminal"), self.pages_url.rstrip("/") + "/terminal/" + q))
             rows.append(row)
-        # back to the bot's main menu (the bot server answers the "menu" button)
         rows.append([{"text": i18n.t(lang, "btn_menu"), "callback_data": "menu"}])
         return json.dumps({"inline_keyboard": rows})
 
@@ -799,17 +705,15 @@ class Telegram:
         except TelegramError as e:
             low = e.body.lower()
             if e.code == 400 and markup and ("button" in low or "web_app" in low):
-                self.no_webapp.add(chat)             # retry with plain links
+                self.no_webapp.add(chat)
                 f["reply_markup"] = self._markup(chat)
                 return self._call(method, f, files)
             if chat != self.chat_id and (e.code == 403 or (e.code == 400 and "chat not found" in low)):
-                self.gone.add(chat)                  # the user blocked the bot
+                self.gone.add(chat)
                 return None
             raise
 
     def _broadcast(self, method, make, button, owner_only):
-        """Sends to every recipient in their language. make(lang) -> (fields, files).
-        One failed chat does not stop the others; raises only if nothing was delivered."""
         targets = self.recipients(owner_only)
         delivered, last_err = 0, None
         prepared = {}
@@ -819,13 +723,12 @@ class Telegram:
                 prepared[lang] = make(lang)
             fields, files = prepared[lang]
             if fields is None:
-                continue      # nothing to send in this language (e.g. the picture failed to render)
+                continue
             try:
                 res = self._deliver(chat, method, fields, button(lang) if callable(button) else button, files)
                 if res is not None:
                     delivered += 1
                     if files and method == "sendPhoto":
-                        # upload the picture once per language, then reuse its file_id
                         photo = (res.get("photo") or [{}])[-1].get("file_id")
                         if photo:
                             prepared[lang] = (dict(fields, photo=photo), None)
@@ -833,7 +736,7 @@ class Telegram:
                 last_err = e
                 print(f"  ! Telegram, chat {chat}: {e}"[:300])
             if k and len(targets) > 20:
-                time.sleep(0.04)   # stay under ~25 messages per second
+                time.sleep(0.04)
         if delivered:
             self.sent += 1
         if targets and not delivered and last_err:
@@ -843,8 +746,6 @@ class Telegram:
         return sorted({self.lang_of(c) for c in self.recipients(owner_only)}) or [i18n.DEFAULT]
 
     def send(self, text, silent=False, button=False, owner_only=False):
-        """text: a string or a function lang -> string (None = nothing for that language).
-        button: bool or a function lang -> bool."""
         make_text = per_lang(text if callable(text) else (lambda lang: text))
         if self.dry:
             for lang in self._langs_in_use(owner_only):
@@ -867,7 +768,6 @@ class Telegram:
         self._broadcast("sendMessage", make, button, owner_only)
 
     def send_multi(self, make_msgs, silent=False, button=True, owner_only=False):
-        """make_msgs(lang) -> list of messages; the button goes under the last message of each language."""
         msgs = per_lang(make_msgs)
         langs = self._langs_in_use(owner_only)
         total = max((len(msgs(l)) for l in langs), default=0)
@@ -876,7 +776,6 @@ class Telegram:
                       button=(lambda lang, k=k: bool(button) and k == len(msgs(lang)) - 1), owner_only=owner_only)
 
     def send_photo(self, png, caption, silent=False, button=True, owner_only=False):
-        """png and caption: values or functions lang -> value (png may be None to skip that language)."""
         make_png = png if callable(png) else (lambda lang: png)
         make_cap = caption if callable(caption) else (lambda lang: caption)
         if self.dry:
@@ -896,11 +795,10 @@ class Telegram:
 
 
 # ----------------------------------------------------------------------------
-# Subscribers: the bot server (worker/) keeps the list; here we only read it
 # ----------------------------------------------------------------------------
 CONFIG_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "docs", "config.json")
-_SUBS_CACHE = None   # last list received — in case the server is down for a minute
-OWNER_OFF = False    # the owner switched the news off in the bot (from /subs)
+_SUBS_CACHE = None
+OWNER_OFF = False
 
 
 def worker_url():
@@ -915,12 +813,10 @@ def worker_url():
 
 
 def _sync_key(token):
-    # same formula as in worker/src/lib.js
     return hashlib.sha256(("econnews-sync:" + token).encode()).hexdigest()
 
 
 def fetch_subscribers(token):
-    """(subscriber ids, {chat id: language}) from the bot server."""
     global _SUBS_CACHE, OWNER_OFF
     url = worker_url()
     if not url or not token:
@@ -977,7 +873,6 @@ def in_quiet_hours(now_msk, spec):
 
 
 # ----------------------------------------------------------------------------
-# Markets: quotes, picture, data for the "Markets" page and the terminal
 # ----------------------------------------------------------------------------
 PAGE_DATA = os.path.join(os.path.dirname(os.path.abspath(__file__)), "docs", "data.json")
 
@@ -1002,13 +897,12 @@ def render_chart(quotes, now, lang=i18n.DEFAULT):
     try:
         import charts
         return charts.render_market_png(quotes, now, lang=lang)
-    except Exception as e:  # no matplotlib or something else went wrong — no picture
+    except Exception as e:
         print(f"  ! picture not rendered: {type(e).__name__}: {e}")
         return None
 
 
 def page_calendar(st, now):
-    """Calendar events 7 days ahead (and one day back) for the terminal, names in both languages."""
     events = (st.get("calendar") or {}).get("events") or []
     lo, hi = (now - timedelta(days=1)).isoformat(), (now + timedelta(days=7)).isoformat()
     out = []
@@ -1018,7 +912,7 @@ def page_calendar(st, now):
             if e["impact"] not in ("High", "Medium") or not (lo <= e["ts"] <= hi):
                 continue
             item = {**e, "title_ru": cal.ru_name(e), "flag": cal.FLAGS.get(e["country"], "")}
-            for lang in ("zh", "ar"):      # common events have names in these languages too (the rest stay English)
+            for lang in ("zh", "ar"):
                 name = cal.known_name(e, lang)
                 if name:
                     item["title_" + lang] = name
@@ -1033,7 +927,6 @@ def page_calendar(st, now):
 
 
 def page_news_item(r):
-    """A story for the terminal: original headline and its translation, summary, tags, company tickers, AI note."""
     item = {"title": r["title"], "lang": orig_lang(r["title"]), "lead": r.get("lead") or "",
             "tags": [i18n.TAGS_FROM_RU.get(t, t) for t in r.get("tags", [])],
             "sources": [i18n.SOURCES_FROM_RU.get(x, x) for x in r["sources"]],
@@ -1058,7 +951,6 @@ def page_news_item(r):
 
 
 def write_page_data(st, quotes, now):
-    """docs/data.json — read by the Markets page and the terminal."""
     path = os.environ.get("PAGE_DATA", PAGE_DATA)
     if not os.path.isdir(os.path.dirname(path)):
         return
@@ -1135,11 +1027,9 @@ def run(dry=False):
             went_down.append(name)
         elif prev >= limit and cur == 0:
             came_back.append(name)
-    # every source failing at once is the runner's network, not the sources: the owner hears only if it lasts
     all_down = len(errors) == len({s["name"] for s in SOURCES})
     st["all_down_streak"] = (int(st.get("all_down_streak") or 0) + 1) if all_down else 0
 
-    # drop what we have already seen and what looks like something already sent
     recent_toks = [norm_tokens(r["title"]) for r in st["recent"]]
     fresh = []
     for c in candidates:
@@ -1154,10 +1044,9 @@ def run(dry=False):
 
     wanted = {"high"} if min_level == "high" else {"high", "medium"}
     to_send = [s for s in stories if level_of(s["score"]) in wanted]
-    to_send.sort(key=lambda s: s["ts"], reverse=True)   # newest first...
-    to_send.sort(key=lambda s: -s["score"])              # ...but important ones on top
+    to_send.sort(key=lambda s: s["ts"], reverse=True)
+    to_send.sort(key=lambda s: -s["score"])
 
-    # translate only what is actually going out (it also lands in the terminal)
     translate_items(to_send[:MAX_PER_MESSAGE_BATCH])
     try:
         import ai
@@ -1166,7 +1055,6 @@ def run(dry=False):
     except Exception as e:
         print(f"  ! AI notes: {type(e).__name__}: {e}"[:200])
 
-    # remember everything seen (even unimportant) so it is never sent twice
     for s in stories:
         for i in s["_ids"]:
             st["seen"][i] = now.isoformat()
@@ -1186,15 +1074,10 @@ def run(dry=False):
         m = mline(lang)
         return f"\n<i>📊 {html.escape(m)}</i>" if m else ""
 
-    # Every part below stands on its own: when one fails (a message Telegram refuses, a bug in one feature), the rest
-    # still goes out and the state is still saved. Otherwise the same failure came back on every run, and whatever
-    # had already gone out was sent again each time. A part that failed for a moment (Telegram unreachable) and
-    # sent nothing is tried again on the next run; one that cannot work (a bug) is reported to the owner once a day.
     trouble = []
     today = now_msk.strftime("%Y-%m-%d")
 
     def failed(part, e, before):
-        """Logs a failed part. True = it is done anyway (something went out, or repeating cannot help)."""
         trouble.append(part)
         print(f"  ! {part}: {type(e).__name__}: {e}"[:300])
         if _retry_later(e):
@@ -1202,7 +1085,7 @@ def run(dry=False):
         notes = st.get("notices")
         if not isinstance(notes, dict):
             notes = st["notices"] = {}
-        if notes.get("part:" + part) != today:   # the owner hears about a broken part once a day
+        if notes.get("part:" + part) != today:
             try:
                 tg.send(lambda lang: i18n.t(lang, "part_failed", part=html.escape(i18n.part(part, lang)),
                                             err=html.escape(f"{type(e).__name__}: {e}"[:300])),
@@ -1223,7 +1106,7 @@ def run(dry=False):
         except Exception as e:
             failed("start message", e, before)
         st["initialized"] = True
-        st["last_digest"] = today                          # the evening digest starts tomorrow
+        st["last_digest"] = today
         st["last_morning"] = today
     elif to_send:
         before = tg.sent
@@ -1231,17 +1114,15 @@ def run(dry=False):
             extra = len(to_send) - MAX_PER_MESSAGE_BATCH
             batch = to_send[:MAX_PER_MESSAGE_BATCH]
             n_high = sum(level_of(s["score"]) == "high" for s in batch)
-            # important news make a sound even at night
             tg.send_multi(lambda lang: split_messages(
                 i18n.t(lang, "batch_head", stamp=stamp) + market_html(lang),
                 sectioned(batch, lang) + ([i18n.t(lang, "more_on_page", n=extra)] if extra > 0 else [])),
                 silent=silent and n_high == 0)
         except Exception as e:
             if tg.sent == before and _retry_later(e):
-                raise   # nothing went out and Telegram may answer in a minute: the run is repeated, the news stay new
+                raise
             failed("news", e, before)
 
-    # calendar: the week's key events (cached in state.json)
     events = []
     if use_calendar:
         try:
@@ -1251,7 +1132,6 @@ def run(dry=False):
             print(f"  ! calendar: {type(e).__name__}: {e}")
             events = []
 
-    # reminders REMIND_MINUTES before an event
     if events and remind_min > 0:
         before = tg.sent
         try:
@@ -1272,7 +1152,6 @@ def run(dry=False):
         except Exception as e:
             failed("reminders", e, before)
 
-    # actual numbers for released US data (from FRED, needs the free key FRED_API_KEY)
     fred_key = os.environ.get("FRED_API_KEY", "").strip()
     if events and fred_key:
         before = tg.sent
@@ -1289,7 +1168,7 @@ def run(dry=False):
                     print(f"  ! FRED {e['title']}: {type(ex).__name__}: {ex}"[:200])
                     continue
                 if not a:
-                    continue  # not published yet — check next run
+                    continue
                 actuals[cal.event_id(e)] = a
                 released.append((e, a))
             if released:
@@ -1300,7 +1179,6 @@ def run(dry=False):
         except Exception as e:
             failed("released data", e, before)
 
-    # morning digest: overnight highlights + today's events
     st.setdefault("last_morning", "")
     if morning_hour >= 0 and morning_hour <= now_msk.hour < 14 and st["last_morning"] != today:
         before = tg.sent
@@ -1329,7 +1207,6 @@ def run(dry=False):
             if failed("morning digest", e, before):
                 st["last_morning"] = today
 
-    # pre-market brief: the option levels before the US open (brief.py, data from gex.py), weekdays
     st.setdefault("last_brief", "")
     brief_hour = int(os.environ.get("BRIEF_HOUR", "16"))
     if brief_hour >= 0 and now_msk.weekday() < 5 and brief_hour <= now_msk.hour < brief_hour + 3 and st["last_brief"] != today:
@@ -1340,12 +1217,11 @@ def run(dry=False):
             make = brief.build(now, quotes, ai_note=ai.brief_note if ai.enabled() else None)
             if make:
                 tg.send(make, silent=silent)
-            st["last_brief"] = today   # nothing fresh today (a holiday, the data stopped) — not tried again until tomorrow
+            st["last_brief"] = today
         except Exception as e:
             if failed("pre-market brief", e, before):
                 st["last_brief"] = today
 
-    # alerts about broken sources (service messages — owner only)
     if alerts_on and st["initialized"]:
         lines = []
         if all_down:
@@ -1368,7 +1244,6 @@ def run(dry=False):
         if not all_down:
             st["all_down_alerted"] = False
 
-    # trades of US politicians and company insiders (official disclosures, no keys)
     n_trades = 0
     if _env_on("TRADES", "yes"):
         before = tg.sent
@@ -1381,7 +1256,6 @@ def run(dry=False):
         except Exception as e:
             failed("trades", e, before)
 
-    # picture with market charts (by default at 9 and 21 MSK)
     chart_key = now_msk.strftime("%Y-%m-%d-%H")
     st.setdefault("charts_sent", [])
     if quotes and now_msk.hour in chart_hours and chart_key not in st["charts_sent"]:
@@ -1397,7 +1271,6 @@ def run(dry=False):
         if done:
             st["charts_sent"] = (st["charts_sent"] + [chart_key])[-20:]
 
-    # evening digest
     if digest_hour >= 0 and now_msk.hour >= digest_hour and st["last_digest"] != today:
         before = tg.sent
         try:
@@ -1405,7 +1278,7 @@ def run(dry=False):
             day = [r for r in st["recent"] if r["ts"] >= day_ago and level_of(r["score"]) != "low"]
             day.sort(key=lambda r: -r["score"])
             top = day[:10]
-            translate_items(top)   # the translation is also kept in state.json
+            translate_items(top)
             nxt = []
             if events:
                 import econ_calendar as cal
@@ -1430,7 +1303,7 @@ def run(dry=False):
                 st["last_digest"] = today
 
     if CODE_SHA:
-        st["code_ok"] = {"sha": CODE_SHA, "at": now.isoformat()}   # the last code that got through a run (see news.yml)
+        st["code_ok"] = {"sha": CODE_SHA, "at": now.isoformat()}
     write_page_data(st, quotes, now)
     save_state(state_path, st, now)
     extras = update_extras(now, dry)
@@ -1448,8 +1321,6 @@ def run(dry=False):
 
 
 def update_extras(now, dry=False):
-    """Terminal data that does not depend on news: US companies (stocks.json, co/, opt/, gex/), crypto options, ships,
-    oil chokepoints and their traffic, satellite images of oil storage, rates, macro, MOEX."""
     parts = []
     if dry or not _env_on("COMPANIES", "yes"):
         return ""
@@ -1481,7 +1352,6 @@ def update_extras(now, dry=False):
 
 
 def push_live(token, now):
-    """Fresh news to the bot server: the terminal shows them at once, without waiting for the site to rebuild."""
     url = worker_url()
     path = os.environ.get("PAGE_DATA", PAGE_DATA)
     if not url or not token or not os.path.exists(path):
@@ -1501,7 +1371,6 @@ def push_live(token, now):
 
 
 def load_dotenv(path):
-    """Reads the .env file (KEY=value) next to the bot. Variables that are already set are kept."""
     try:
         with open(path, encoding="utf-8") as f:
             for line in f:
@@ -1514,17 +1383,13 @@ def load_dotenv(path):
         pass
 
 
-# what the bot writes: only it changes these files
 DATA_PATHS = ("state.json", "docs/data.json", "docs/stocks.json", "docs/rates.json", "docs/fin", "docs/co", "docs/opt",
               "docs/options.json", "docs/macro.json", "docs/moex.json", "docs/ipo.json", "docs/wpe.json",
               "docs/auctions.json", "docs/gex", "docs/ships.json", "docs/chokepoints.json", "docs/ships_world.json",
               "docs/ais_kinds.json", "docs/portwatch.json", "docs/pw_ports.json", "docs/sat.json", "docs/sat", "docs/base")
-# The data does not go into main: the whole site (docs/ — its code from main plus the data) and state.json are
-# pushed as ONE commit that replaces the data branch each time. main keeps only code, and the data branch never
-# grows a history. GitHub Pages serves the site from that branch (Settings → Pages → gh-pages, folder /docs).
 DATA_BRANCH = "gh-pages"
 SITE_PATHS = ("docs", "state.json")
-_published = {}   # branch -> the last tree pushed by this process (to skip pushes when nothing changed)
+_published = {}
 
 
 def _copy_data(src_root, dst_root):
@@ -1539,12 +1404,6 @@ def _copy_data(src_root, dst_root):
 
 
 def git_sync(stage, repo, code=True, skip=()):
-    """Server mode.
-    pull — new code from GitHub (main); on a fresh checkout also the bot's latest data from the data branch.
-           The bot's own data files are never touched by the pull.
-           code=False: the data part only (a session that runs the last version that worked, see news.yml);
-           skip: commits known not to start — while main is at one of them, the code stays as it is.
-    push — the site and state.json as one commit, force-pushed to the data branch (no commits to main)."""
     import shutil
     import subprocess
     import tempfile
@@ -1555,7 +1414,6 @@ def git_sync(stage, repo, code=True, skip=()):
         return subprocess.run(["git", "-C", repo, *a], capture_output=True, text=True, timeout=120, env=env, input=stdin)
 
     def heal():
-        # a rebase that stopped half-way leaves HEAD detached and blocks every later pull and push
         if any(os.path.isdir(os.path.join(repo, ".git", d)) for d in ("rebase-merge", "rebase-apply")):
             print("  ! git: aborting a stuck rebase")
             git("rebase", "--abort")
@@ -1568,19 +1426,16 @@ def git_sync(stage, repo, code=True, skip=()):
                 up = git("rev-parse", "-q", "--verify", "@{upstream}").stdout.strip()
                 code = up not in skip
             if code:
-                _copy_data(repo, tmp)   # the bot's data is safe here whatever the pull does
+                _copy_data(repo, tmp)
                 for f in DATA_PATHS:
-                    git("checkout", "-q", "HEAD", "--", f)   # data still tracked in main: back to HEAD, so no clash
+                    git("checkout", "-q", "HEAD", "--", f)
                 r = git("pull", "--rebase", "--autostash", "-q")
                 if r.returncode:
                     print("  ! git pull:", (r.stderr or r.stdout).strip()[:300])
                     heal()
-                    # e.g. old data commits of the bot that clash with main: take GitHub's main (the data is in tmp)
                     if git("fetch", "-q", "origin").returncode == 0:
                         git("reset", "-q", "--hard", "@{upstream}")
                 _copy_data(tmp, repo)
-            # a fresh checkout (GitHub Actions) has no state.json, or only the old copy committed to main:
-            # then the bot's latest data comes from the data branch. A bot that already runs here keeps its own.
             state = os.path.join(repo, "state.json")
             fresh = not os.path.exists(state) or (
                 git("ls-files", "--error-unmatch", "state.json").returncode == 0
@@ -1589,10 +1444,7 @@ def git_sync(stage, repo, code=True, skip=()):
                 _pull_data(git, repo, branch, os.path.join(tmp, "index"))
             return
 
-        # push: a temporary index, so main's own index and working tree stay as they are
         if not os.path.exists(os.path.join(repo, "state.json")):
-            # the data was never restored here (a session that ended before its first run, or was cancelled while
-            # setting up): pushing now would replace the data branch with the bare site and lose the bot's memory
             print(f"  (no state.json here — nothing to save, {branch} stays as it is)")
             return
         paths = [p for p in SITE_PATHS if os.path.exists(os.path.join(repo, p))]
@@ -1603,7 +1455,7 @@ def git_sync(stage, repo, code=True, skip=()):
             print("  ! git: could not pack the site:", (r.stderr or r.stdout).strip()[:300])
             return
         if _published.get(branch) == tree:
-            return  # nothing changed since the last push
+            return
         commit = git("-c", "user.name=news-bot", "-c", "user.email=news-bot@users.noreply.github.com",
                      "commit-tree", tree, "-m", "site data").stdout.strip()
         for _ in range(3):
@@ -1618,7 +1470,6 @@ def git_sync(stage, repo, code=True, skip=()):
 
 
 def _pull_data(git, repo, branch, index):
-    """The bot's data from the data branch into the working folder (only DATA_PATHS; the code stays main's)."""
     ref = "refs/remotes/origin/" + branch
     if git("fetch", "-q", "origin", f"+refs/heads/{branch}:{ref}").returncode:
         print(f"  (no {branch} branch on GitHub yet: the data stays as it is)")
@@ -1638,7 +1489,6 @@ def _pull_data(git, repo, branch, index):
 
 
 def code_hash(repo):
-    """Fingerprint of the bot code (*.py in the folder): if it changed after git pull, it is time to restart."""
     h = hashlib.sha1()
     for name in sorted(os.listdir(repo)):
         if name.endswith(".py"):
@@ -1648,33 +1498,28 @@ def code_hash(repo):
 
 
 def restart(deadline, why):
-    """Starts this process over with the code now on disk. The loop deadline (GitHub Actions) is kept."""
     if deadline:
         os.environ["LOOP_DEADLINE"] = str(deadline)
     print(why, flush=True)
     sys.stderr.flush()
     if os.name == "nt":
-        # on Windows exec starts a separate process and this one ends: deploy/start_windows.bat would then start
-        # a second bot. Ending here lets the .bat start exactly one new copy.
         os._exit(75)
     try:
         os.execv(sys.executable, [sys.executable] + sys.argv)
-    except OSError as e:   # cannot start over in place: end the process (systemd, the .bat or the next session restart it)
+    except OSError as e:
         print(f"  ! could not restart: {e}", flush=True)
         os._exit(75)
 
 
 def reload_self(deadline):
-    """Restarts the process with the new code. The loop deadline (for GitHub Actions) is kept."""
     restart(deadline, "The bot code changed on GitHub — restarting with the new version.")
 
 
 # ----------------------------------------------------------------------------
-# Keeping itself alive: safe code updates, a hang watchdog, the owner hears only what the bot cannot fix
 # ----------------------------------------------------------------------------
-HANG_MINUTES = float(os.environ.get("HANG_MINUTES", "30") or 30)   # one run normally takes 1–3 minutes
-FAIL_ALERT_MINUTES = 30     # runs failing this long in a row (and at least 3 of them) — the owner hears, once
-RELAY_EVERY = 30 * 60       # how often a GitHub Actions session checks that the next session is queued
+HANG_MINUTES = float(os.environ.get("HANG_MINUTES", "30") or 30)
+FAIL_ALERT_MINUTES = 30
+RELAY_EVERY = 30 * 60
 
 
 def _git(repo, *a, timeout=120):
@@ -1694,7 +1539,7 @@ def _relay():
     try:
         import relay
         return relay
-    except Exception as e:   # the relay is a helper: the bot runs without it
+    except Exception as e:
         print(f"  ! relay.py: {type(e).__name__}: {e}"[:200])
         return None
 
@@ -1706,7 +1551,6 @@ def _last_line(text):
 
 
 def selfcheck_in(repo, timeout=300):
-    """The self-check of the code now in `repo`, in a separate process. (ok, the end of its output)."""
     import subprocess
     try:
         r = subprocess.run([sys.executable, os.path.join(repo, "news_bot.py"), "--selfcheck"], cwd=repo,
@@ -1719,7 +1563,6 @@ def selfcheck_in(repo, timeout=300):
 
 
 def rollback(repo, sha):
-    """The code back to commit `sha`; the bot's data files stay as they are."""
     import shutil
     import tempfile
     tmp = tempfile.mkdtemp()
@@ -1737,8 +1580,6 @@ def _state_path():
 
 
 def notice_once(key, value):
-    """True the first time `value` comes for `key`. Kept in state.json, so the next session remembers it too
-    (call it only after the first git_sync pull: before it a fresh checkout has no state.json yet)."""
     path = _state_path()
     try:
         st = load_state(path)
@@ -1755,7 +1596,6 @@ def notice_once(key, value):
 
 
 def notify_owner(text):
-    """A service message to the owner only, in their language (quiet at night). True if it went out."""
     token = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
     chat = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
     if not token or not chat:
@@ -1771,7 +1611,6 @@ def notify_owner(text):
 
 
 def report_bad_code(sha, report):
-    """The owner hears once per broken commit."""
     if not sha or not notice_once("bad_code", sha):
         return
     err = _last_line(report)[:300]
@@ -1779,10 +1618,8 @@ def report_bad_code(sha, report):
 
 
 def update_code(repo, start_hash, deadline, bad, pinned=False, auto_reload=True):
-    """New code from GitHub. The bot restarts with it only if it passes the self-check; code that does not is put back
-    to the version that runs, remembered (not tried again until main moves on) and reported to the owner once."""
     if pinned:
-        git_sync("pull", repo, code=False)   # this session runs the last version that worked (news.yml): data only
+        git_sync("pull", repo, code=False)
         return
     before = git_head(repo)
     git_sync("pull", repo, skip=bad)
@@ -1798,12 +1635,11 @@ def update_code(repo, start_hash, deadline, bad, pinned=False, auto_reload=True)
         rollback(repo, before)
     if after:
         bad.add(after)
-        os.environ["BOT_BAD_CODE"] = ",".join(sorted(bad))   # kept if this process restarts
+        os.environ["BOT_BAD_CODE"] = ",".join(sorted(bad))
         report_bad_code(after, report)
 
 
 class Watchdog:
-    """Restarts the bot when one run hangs (a download that never ends, say). A run normally takes 1–3 minutes."""
 
     def __init__(self, limit, on_stuck):
         self.limit, self.on_stuck, self.since = limit, on_stuck, None
@@ -1823,14 +1659,11 @@ class Watchdog:
                 self.since = None
                 try:
                     self.on_stuck()
-                except BaseException as e:   # never let the watchdog thread die
+                except BaseException as e:
                     print(f"  ! watchdog: {type(e).__name__}: {e}", flush=True)
 
 
 def selfcheck():
-    """Offline check that this copy of the bot works: every module compiles and imports, and two whole runs go through
-    on made-up news — no network, nothing is sent. Runs before new code replaces the running one (update_code) and
-    at the start of every GitHub Actions session (news.yml). Returns the problems found ([] = fine)."""
     import importlib
     import tempfile
     from unittest import mock
@@ -1859,7 +1692,7 @@ def selfcheck():
                 problems.append(f"import {name}: {type(e).__name__}: {e}")
         if problems:
             return problems
-        nb = importlib.import_module("news_bot")   # the module, not this script (__main__)
+        nb = importlib.import_module("news_bot")
         now = datetime.now(timezone.utc)
 
         def story(i, title, score, tags, source="Reuters"):
@@ -1916,11 +1749,6 @@ def selfcheck():
 
 
 def loop(minutes, sync, max_hours=0.0):
-    """Loop: a run every `minutes` minutes. A failed run does not stop the bot.
-    max_hours > 0 — stop after that many hours (for GitHub Actions, where a job lives up to 6 h).
-    With --git-sync the bot picks up new code itself: after git pull it restarts if any *.py changed —
-    but only with code that passes the self-check; otherwise it stays on the version that works.
-    On GitHub Actions (relay.py) each session also queues the next one and stops when the workflow is disabled."""
     global LOOP_MINUTES, CODE_SHA
     LOOP_MINUTES = float(minutes)
     repo = os.path.dirname(os.path.abspath(__file__))
@@ -1929,7 +1757,7 @@ def loop(minutes, sync, max_hours=0.0):
     except (KeyError, ValueError):
         deadline = time.time() + max_hours * 3600 if max_hours > 0 else None
     auto_reload = os.environ.get("AUTO_RELOAD", "yes").strip().lower() not in ("0", "no", "off", "false")
-    pinned = os.environ.get("BOT_PINNED", "").strip()          # news.yml: main fails its self-check, this is the last good
+    pinned = os.environ.get("BOT_PINNED", "").strip()
     main_bad = os.environ.get("BOT_MAIN_BAD", "").strip()
     bad = {x for x in os.environ.get("BOT_BAD_CODE", "").split(",") if x} | ({main_bad} if main_bad else set())
     start_hash = code_hash(repo)
@@ -1965,8 +1793,6 @@ def loop(minutes, sync, max_hours=0.0):
                         report = ""
                     report_bad_code(main_bad, report)
             sent = run()
-            # the site (GitHub Pages) rebuilds on every push — so not more than every ~10 minutes,
-            # but at once if something went to Telegram (so a crash cannot make it send the same again)
             if sync and (sent or time.time() - last_push >= push_every - 30):
                 git_sync("push", repo)
                 last_push = time.time()

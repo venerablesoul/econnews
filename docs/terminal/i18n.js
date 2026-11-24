@@ -1,7 +1,3 @@
-/* Terminal language: English by default; Russian, Chinese or Arabic with the language button (or ?lang=ru|zh|ar,
-   which the bot's buttons add). The choice is remembered in this browser. Data stays language-neutral; this file holds
-   every interface text in English and Russian and the names of instruments, sectors, tags and sources. The Chinese and
-   Arabic texts are in i18n.xl.js, which is loaded right after this file only for those two languages. */
 (function(){
 'use strict';
 var KEY = 'lang', LANGS = ['en', 'ru', 'zh', 'ar'];
@@ -13,20 +9,15 @@ function pick(){
   return 'en';
 }
 var lang = pick(), RU = lang === 'ru';
-// Chinese and Arabic: index in the [zh, ar] pairs of i18n.xl.js (-1 for English and Russian)
 var XI = lang === 'zh' ? 0 : lang === 'ar' ? 1 : -1;
 if (XI >= 0) {
-  // a parser-blocking script right after this one (the page and the Markets page both load i18n.js synchronously)
   var me = document.currentScript, src = me && me.src ? me.src.replace(/i18n\.js(\?.*)?$/, 'i18n.xl.js$1') : 'i18n.xl.js';
   try { document.write('<script src="' + src + '"><\/script>') } catch(e){}
 }
 function XL(){ return XI >= 0 && window.L10N_XL || null }
-// the [zh, ar] value of a name map in i18n.xl.js (null when there is none)
 function xl(map, id){ var x = XL(), m = x && x[map], v = m && m[id]; return v ? v[XI] : null }
 
-// key: [English, Russian]; a value may be a function of arguments
 var D = {
-  // page
   title: ['Terminal', 'Терминал'],
   cmd_ph: ['command: WEI, FX, CRYPTO, N, ECO, TRD, GOLD, BTC, HELP…', 'команда: WEI, FX, CRYPTO, N, ECO, TRD, GOLD, BTC, HELP…'],
   cmd_ph_m: ['GOLD, BTC, N, HELP…', 'GOLD, BTC, N, HELP…'],
@@ -89,7 +80,6 @@ var D = {
   set_crypto: ['<b style="color:var(--text)">Crypto</b> comes straight from the Binance exchange in real time, no key needed. If Binance is unavailable, the terminal switches to CoinGecko (refreshed every minute).',
     '<b style="color:var(--text)">Крипта</b> идёт напрямую с биржи Binance в реальном времени, ключ не нужен. Если Binance недоступен, терминал переключится на CoinGecko (обновление раз в минуту).'],
   set_lang: ['<b style="color:var(--text)">Language.</b> ', '<b style="color:var(--text)">Язык.</b> '],
-  // markets
   g_WEI: ['INDICES', 'ИНДЕКСЫ'], g_US: ['US STOCKS · LIVE', 'АКЦИИ США · ОНЛАЙН'], g_FX: ['CURRENCIES', 'ВАЛЮТЫ'], g_GLCO: ['COMMODITIES', 'СЫРЬЁ'],
   g_RATES: ['US YIELDS', 'ДОХОДНОСТИ США'],
   gu_WEI: ['points · daily change', 'цена в пунктах · изм. за день'], gu_US: ['$ per share · daily change', 'цена в $ за акцию · изм. за день'],
@@ -109,12 +99,10 @@ var D = {
   live_every: function(s){ return (RU ? 'онлайн · ' : 'live · ') + s + (RU ? ' с' : ' s') },
   bot_data_at: function(t){ return RU ? 'данные бота · ' + t + ' МСК' : 'bot data · ' + t + ' MSK' },
   srv_x: ['SERVER ✕', 'СЕРВЕР ✕'],
-  // crypto
   c_coin: ['Coin', 'Монета'], c_price: ['Price, $', 'Цена, $'], c_24h: ['24h', '24ч'], c_range_t: ['Price position in the 24h range', 'Положение цены в диапазоне 24 ч'],
   c_live: ['Binance · real time', 'Binance · реальное время'], c_1min: ['CRYPTO 1 min', 'CRYPTO 1 мин'], c_gecko: ['CoinGecko · 1 min', 'CoinGecko · 1 мин'],
   c_gecko_note: ['Binance is unavailable — CoinGecko data, refreshed every minute.', 'Binance недоступен — данные CoinGecko, обновление раз в минуту.'],
   c_unavail: ['Crypto quotes are unavailable right now.', 'Котировки криптовалют сейчас недоступны.'],
-  // chart
   tv_unavail_sw: ['TradingView is unavailable — showing the built-in chart. ⇄ — switch', 'TradingView недоступен — показан встроенный график. ⇄ — переключить'],
   tv_unavail: ['TradingView is unavailable — showing the built-in chart', 'TradingView недоступен — показан встроенный график'],
   tv_loading: ['Loading TradingView…', 'Загружаю TradingView…'],
@@ -122,10 +110,8 @@ var D = {
   tv_slow: ['TradingView is not responding — showing the built-in chart. ⇄ — switch', 'TradingView не отвечает — показан встроенный график. ⇄ — переключить'],
   own_nodata: ['No data for the built-in chart: ', 'Нет данных для встроенного графика: '], own_5d: ['  · 5 days', '  · 5 дней'],
   own_sub: ['built-in · bot data', 'встроенный · данные бота'],
-  // news
   nothing: ['Nothing found', 'Ничего не найдено'], co_card_t: ['company card', 'карточка компании'],
   today: ['TODAY', 'СЕГОДНЯ'], yesterday: ['YESTERDAY', 'ВЧЕРА'], tomorrow: ['TOMORROW', 'ЗАВТРА'],
-  // calendar
   eco_wait: ['The calendar appears after the next bot run.', 'Календарь появится после следующего запуска бота.'],
   imp_high: ['high impact', 'важное'], imp_med: ['medium impact', 'среднее'],
   fcst: ['fcst ', 'прогноз '], prev: ['prev ', 'пред. '], actual: ['actual ', 'факт '],
@@ -135,7 +121,6 @@ var D = {
     if (m >= 60) return Math.floor(m / 60) + (RU ? ' ч ' : 'h ') + (m % 60) + (RU ? ' мин' : 'm');
     return m + (RU ? ' мин' : ' min');
   },
-  // trades
   t_buy: ['BUY', 'ПОКУПКА'], t_sell: ['SALE', 'ПРОДАЖА'], t_sell_part: ['PARTIAL SALE', 'ЧАСТ. ПРОДАЖА'], t_exchange: ['EXCHANGE', 'ОБМЕН'], t_trade: ['TRADE', 'СДЕЛКА'],
   o_spouse: ['spouse', 'супруг(а)'], o_joint: ['joint', 'совместно'], o_child: ['child', 'ребёнок'],
   no_amount: ['amount not stated', 'сумма не указана'], over: ['over ', 'более '],
@@ -149,7 +134,6 @@ var D = {
   disclosed: ['DISCLOSED ', 'РАСКРЫТО '], trade_date: ['trade date', 'дата сделки'], open_chart: ['open the chart', 'открыть график'],
   shares_at: function(n, p){ return RU ? n + ' акций по $' + p : n + ' shares at $' + p },
   plan: [' · 10b5-1 plan', ' · по плану 10b5-1'], report: ['report ↗', 'отчёт ↗'], form4: ['Form 4 ↗', 'форма 4 ↗'],
-  // settings
   tier_none: ["The bot server isn't set up yet — the terminal shows the bot's data.", 'Сервер бота ещё не настроен — терминал показывает данные бота.'],
   tier_owner: ['👑 You are signed in as the owner.', '👑 Вы вошли как владелец.'],
   tier_owner_paid: ['👑 You are signed in as the owner: the paid feed is on.', '👑 Вы вошли как владелец: платные данные включены.'],
@@ -168,7 +152,6 @@ var D = {
   inst_other: ['In Chrome or Edge: the install icon in the address bar or menu ⋮ → "Install app". On Android: menu ⋮ → "Add to Home screen".',
     'В Chrome или Edge: значок установки в адресной строке или меню ⋮ → «Установить приложение». На Android: меню ⋮ → «Добавить на гл. экран».'],
   clock_open: ['market open', 'биржа открыта'], clock_closed: ['market closed', 'биржа закрыта'],
-  // fn.js — common
   no_api: function(what){ return (what || (RU ? 'Эта функция' : 'This function')) + (RU ? ' работает через сервер бота, а он ещё не настроен (docs/config.json).' : " works through the bot server, which isn't set up yet (docs/config.json).") },
   load_fail: ["Couldn't load: ", 'Не удалось загрузить: '], srv_not_set_e: ['the bot server is not set up', 'сервер бота не настроен'],
   no_clip: ['no clipboard access', 'нет доступа к буферу обмена'],
@@ -182,7 +165,6 @@ var D = {
   reset_link: ['⟲ Default layout', '⟲ Стандартная раскладка'],
   gutter_t: ['Drag to resize · double-click: the layout\'s own sizes', 'Тяните, чтобы изменить размер · двойной щелчок — как было'], pick_head: ['Show in this panel:', 'Показать в этой панели:'],
   loading_x: function(s){ return (RU ? 'Загружаю ' : 'Loading ') + s },
-  // panels and functions
   fn_mkt: ['World markets', 'Мировые рынки'], fn_chart: ['Chart', 'График'], fn_crypto: ['Cryptocurrencies', 'Криптовалюты'], fn_news: ['News', 'Новости'],
   fn_eco: ['Calendar and earnings', 'Календарь и отчёты'], fn_trd: ["Politicians' and insiders' trades", 'Сделки политиков и инсайдеров'],
   fn_des: ['Company: DES FA ERN EE ANR HDS DVD OMON RV', 'Компания: DES FA ERN EE ANR HDS DVD OMON RV'],
@@ -195,7 +177,6 @@ var D = {
   m_eqs: ['Screener', 'Скринер'], m_imap: ['Market map', 'Карта рынка'], m_gc: ['Yield curves', 'Кривые доходности'], m_cb: ['Central bank rates', 'Ставки ЦБ'],
   m_wirp: ['Fed expectations', 'Ожидания по ФРС'], m_w: ['My watchlist', 'Мой список'], m_port: ['Portfolio', 'Портфель'], m_alrt: ['Alerts', 'Алерты'],
   m_help: ['All commands', 'Все команды'],
-  // DES
   company_x: function(s){ return (RU ? 'КОМПАНИЯ · ' : 'COMPANY · ') + s },
   co_card: ['Company card', 'Карточка компании'],
   moex_only_des: ['For Moscow Exchange shares only the DES card and the chart are available. Russian company financials are not connected yet.',
@@ -243,7 +224,6 @@ var D = {
   hds_note: ['Open-market trades by executives and directors (SEC Form 4).', 'Сделки руководства и директоров на открытом рынке (форма 4 SEC).'],
   hds_none: ['No open-market insider trades recently.', 'Сделок инсайдеров на открытом рынке за последнее время нет.'],
   hds_cols: [['Date', 'Who', 'Trade', 'Shares', 'Price', 'Value', 'Holding after'], ['Дата', 'Кто', 'Сделка', 'Акций', 'Цена', 'Сумма', 'Осталось']],
-  // HP / COMP
   ranges: [{'1d': '1 day', '5d': '5 days', '1m': '1 month', '3m': '3 months', '6m': '6 months', ytd: 'year to date', '1y': '1 year', '2y': '2 years', '5y': '5 years'},
     {'1d': '1 день', '5d': '5 дней', '1m': '1 мес.', '3m': '3 мес.', '6m': '6 мес.', ytd: 'с начала года', '1y': '1 год', '2y': '2 года', '5y': '5 лет'}],
   hp_ask: ['Type HP and a ticker: HP AAPL, HP BTC 5Y, HP SBER, HP OIL.', 'Наберите HP и тикер: HP AAPL, HP BTC 5Y, HP SBER, HP НЕФТЬ.'],
@@ -261,7 +241,6 @@ var D = {
   not_loaded: [' · failed: ', ' · не загрузилось: '],
   srv_slow: ['the server did not answer in time — try again', 'сервер не ответил вовремя — попробуйте ещё раз'],
   co_offline: ['The server is unreachable from your network — showing the copy saved on the site (price delayed up to 10 min; no peers or company news).', 'Сервер недоступен из вашей сети — показана копия с сайта (цена с задержкой до 10 минут, без конкурентов и новостей компании).'],
-  // EQS
   eqs_p: [{'': 'ALL', leaders: 'GAINERS', losers: 'LOSERS', value: 'LOW P/E', div: 'DIVIDENDS', growth: 'REVENUE GROWTH', year: 'BEST 1Y'},
     {'': 'ВСЕ', leaders: 'ЛИДЕРЫ ДНЯ', losers: 'АУТСАЙДЕРЫ', value: 'ДЕШЁВЫЕ P/E', div: 'ДИВИДЕНДЫ', growth: 'РОСТ ВЫРУЧКИ', year: 'ЛУЧШИЕ ЗА ГОД'}],
   eqs_cols: [{s: 'Ticker', n: 'Company', sec: 'Sector', px: 'Price', ch: 'Day', mcap: 'Mkt cap', pe: 'P/E', fpe: 'Fwd P/E', dy: 'Div.', revg: 'Revenue', roe: 'ROE', rytd: 'YTD', r52: '1Y', beta: 'Beta'},
@@ -279,12 +258,10 @@ var D = {
     : n + ' shares. Moscow Exchange main board (TQBR), 15-minute delay, as of ' + (t || '—') + ' MSK. Click a row for the company card.' },
   eqs_found: function(n){ return RU ? 'Найдено: ' + n + '. Нажмите на строку — карточка компании. Мультипликаторы обновляются раз в сутки (Finnhub), цены — каждые 5–10 минут (Yahoo).'
     : 'Found: ' + n + '. Click a row for the company card. Ratios refresh daily (Finnhub), prices every 5–10 minutes (Yahoo).' },
-  // IMAP
   imap_wait: ['The map appears after the next bot run (docs/stocks.json).', 'Карта появится после следующего запуска бота (docs/stocks.json).'],
   imap_sub: function(t){ return RU ? 'цены ' + t + ' МСК · размер = капитализация' : 'prices ' + t + ' MSK · size = market cap' },
   imap_mcap_wait: ['Market caps are still loading — the map appears within an hour of the bot start.', 'Капитализации компаний ещё загружаются — карта появится в течение часа после запуска бота.'],
   mcap_s: [' · mkt cap ', ' · кап. '],
-  // GC / CB / WIRP
   gc_wait: ['Curves and rates appear after the next bot run (docs/rates.json).', 'Кривые и ставки появятся после следующего запуска бота (docs/rates.json).'],
   gc_title: ['YIELD CURVES', 'КРИВЫЕ ДОХОДНОСТИ'], pick_countries: ['Choose countries.', 'Выберите страны.'],
   gc_note: function(d, m){ return RU ? 'Сплошная — сейчас (' + d + '), пунктир — неделю назад' + (m ? ', точки — месяц назад' : '') + '.' : 'Solid — now (' + d + '), dashed — a week ago' + (m ? ', dotted — a month ago' : '') + '.' },
@@ -300,7 +277,6 @@ var D = {
   w_probs: [{cut50: 'cut 0.5', cut: 'cut', hold: 'hold', hike: 'hike', hike50: 'hike 0.5'}, {cut50: 'снижение 0,5', cut: 'снижение', hold: 'без изменений', hike: 'повышение', hike50: 'повышение 0,5'}],
   wirp_note: ['The CME FedWatch method: the month average rate = 100 − futures price; the move at a meeting comes from the difference before and after the decision.',
     'Метод CME FedWatch: средняя ставка месяца = 100 − цена фьючерса; изменение на заседании выводится из разницы до и после решения.'],
-  // W / PORT / ALRT
   not_saved: ["Not saved on the server: ", 'Не сохранилось на сервере: '],
   shared: ['☁ shared with the bot', '☁ общее с ботом'], local_only: ['this browser only', 'только в этом браузере'],
   w_ph: ['+ AAPL BTC SBER OIL', '+ AAPL BTC SBER НЕФТЬ'],
@@ -329,7 +305,6 @@ var D = {
   a_chg: function(s, v){ return s + (RU ? ': изменение за день ±' : ': daily move ±') + v + '%' },
   a_px: function(s, op, v){ return s + (op === '>' ? (RU ? ' выше ' : ' above ') : (RU ? ' ниже ' : ' below ')) + v },
   del: ['delete', 'удалить'],
-  // deep company data (docs/co, docs/opt) — EE, ANR targets, HDS holders, SI, DVD, OMON, RV, CF, MGMT
   no_deep: function(s){ return RU ? 'Подробных данных по ' + s + ' пока нет: они собираются по ~100 крупнейшим компаниям США и обновляются дважды в день.'
     : 'No detailed data for ' + s + ' yet: it covers the ~100 largest US companies and is refreshed twice a day.' },
   wiki_src: ['Wikipedia', 'Википедия'], about_src: ['company profile', 'профиль компании'],
@@ -386,10 +361,8 @@ var D = {
     {'10-K': 'годовой отчёт', '10-Q': 'квартальный отчёт', '8-K': 'существенное событие', '8-K/A': 'существенное событие (испр.)', 'DEF 14A': 'материалы к собранию', 'S-3': 'регистрация бумаг',
     '424B2': 'проспект', 'SC 13G': 'акционер 5%+', 'SC 13G/A': 'акционер 5%+', 'SD': 'конфликтные минералы', '11-K': 'план для сотрудников', '3': 'инсайдер: первая позиция', '4': 'сделка инсайдера'}],
   mgmt_head: ['Management (MGMT)', 'Руководство (MGMT)'], mgmt_cols: [['Name', 'Position', 'Age', 'Pay'], ['Имя', 'Должность', 'Возраст', 'Вознаграждение']],
-  // IMAP Russia
   imap_sub_ru: function(t){ return RU ? 'Мосбиржа · ' + (t || '') + ' МСК · размер = капитализация' : 'Moscow Exchange · ' + (t || '') + ' MSK · size = market cap' },
   imap_ru_wait: ['The Moscow Exchange map appears after the next bot run (docs/moex.json).', 'Карта Мосбиржи появится после следующего запуска бота (docs/moex.json).'],
-  // ECST / FXC / CORR / OPT / IPO
   ecst_title: ['IMF WORLD ECONOMIC OUTLOOK', 'МВФ: ПЕРСПЕКТИВЫ МИРОВОЙ ЭКОНОМИКИ'],
   ecst_wait: ['IMF forecasts appear after the next bot run (docs/macro.json).', 'Прогнозы МВФ появятся после следующего запуска бота (docs/macro.json).'],
   ecst_cols: function(y){ return RU ? ['Страна', 'ВВП ' + y, 'ВВП ' + (y + 1), 'Инфл. ' + y, 'Инфл. ' + (y + 1), 'Безраб. ' + y, 'Бюджет ' + y, 'Госдолг ' + y, 'Тек. счёт ' + y]
@@ -411,9 +384,7 @@ var D = {
   ipo_title: ['IPO CALENDAR · US', 'КАЛЕНДАРЬ IPO · США'], ipo_none: ['No IPOs in the next 30 days.', 'IPO в ближайшие 30 дней нет.'],
   ipo_cols: [['Date', 'Ticker', 'Company', 'Exchange', 'Price', 'Shares', 'Value', 'Status'], ['Дата', 'Тикер', 'Компания', 'Биржа', 'Цена', 'Акций', 'Объём', 'Статус']],
   ipo_status: [{expected: 'expected', priced: 'priced', filed: 'filed', withdrawn: 'withdrawn'}, {expected: 'ожидается', priced: 'размещено', filed: 'подана заявка', withdrawn: 'отозвано'}],
-  // technicals on the HP chart
   overbought: ['overbought', 'перекупленность'], oversold: ['oversold', 'перепроданность'], vs_sma200: ['vs SMA 200', 'к SMA 200'],
-  // earnings tab
   earn_none: ['No earnings of the largest companies in the coming weeks (or the data is not loaded yet).', 'Отчётов крупнейших компаний в ближайшие недели нет (или данные ещё не загружены).'],
   earn_cols: [['Date', 'Company', 'EPS est.', 'EPS actual', 'Revenue est.'], ['Дата', 'Компания', 'EPS прогноз', 'EPS факт', 'Выручка прогноз']],
   bmo_s: ['☀ before open', '☀ до откр.'], amc_s: ['☾ after close', '☾ после закр.'],
@@ -427,7 +398,6 @@ var D = {
   m_cdr: ['Exchange hours, holidays', 'Часы бирж, праздники'], m_wb: ['World bonds', 'Облигации мира'], m_btmm: ['Country rates', 'Ставки страны'],
   m_mmr: ['Money markets', 'Денежный рынок'], m_srch: ['US Treasuries', 'Казначейские бумаги США'], m_map: ['World map with layers', 'Карта мира со слоями'],
   m_storm: ['Storms', 'Штормы'], m_ship: ['Shipping, chokepoints', 'Судоходство, проливы'], m_wetr: ['Weather', 'Погода'], m_mapeco: ['Countries on the map', 'Страны на карте'],
-  // tabs
   tech_tab: ['TECH · CHART', 'TECH · ГРАФИК'], vap_tab: ['VAP · VOLUME AT PRICE', 'VAP · ОБЪЁМ ПО ЦЕНАМ'], tsm_tab: ['TSM · BY HOUR', 'TSM · ПО ЧАСАМ'],
   qr_tab: ['QR · TIME & SALES', 'QR · ЛЕНТА СДЕЛОК'], tra_tab: ['TRA · TOTAL RETURN', 'TRA · ПОЛНАЯ ДОХОДНОСТЬ'], tray_tab: ['TRAY · RETURNS', 'TRAY · ДОХОДНОСТИ'],
   mov_tab: ['MOV · MOVERS', 'MOV · ЛИДЕРЫ'], most_tab: ['MOST · ACTIVE', 'MOST · АКТИВНЫЕ'], mrr_tab: ['MRR · RETURNS', 'MRR · ДОХОДНОСТИ'], memb_tab: ['MEMB · WEIGHTS', 'MEMB · ВЕСА'],
@@ -435,7 +405,6 @@ var D = {
   wb_tab: ['WB · WORLD BONDS', 'WB · ОБЛИГАЦИИ МИРА'], btmm_tab: ['BTMM · COUNTRY', 'BTMM · СТРАНА'], mmr_tab: ['MMR · MONEY MARKETS', 'MMR · ДЕНЕЖНЫЙ РЫНОК'], srch_tab: ['SRCH · TREASURIES', 'SRCH · ТРЕЖЕРИС'],
   map_tab: ['MAP · LAYERS', 'MAP · СЛОИ'], storm_tab: ['STORM · STORMS', 'STORM · ШТОРМЫ'], ship_tab: ['SHIP · SHIPPING', 'SHIP · СУДОХОДСТВО'], wetr_tab: ['WETR · WEATHER', 'WETR · ПОГОДА'],
   mapeco_tab: ['ECO · COUNTRIES', 'ECO · СТРАНЫ'],
-  // generic
   name: ['Name', 'Название'], company: ['Company', 'Компания'], weight: ['Weight', 'Вес'], show: ['SHOW', 'ПОКАЗАТЬ'], neck: ['neckline', 'линия шеи'],
   reg_us: ['US · ~100 LARGEST', 'США · ~100 КРУПНЕЙШИХ'], reg_ru: ['MOEX INDEX', 'ИНДЕКС МОСБИРЖИ'],
   per_1d: ['1D', '1Д'], per_1w: ['1W', '1Н'], per_mtd: ['MTD', 'С НАЧ. МЕС.'], per_1m: ['1M', '1М'], per_qtd: ['QTD', 'С НАЧ. КВ.'], per_3m: ['3M', '3М'], per_6m: ['6M', '6М'],
@@ -696,7 +665,6 @@ var D = {
   ecst_map_note: ['This year\'s estimates from the IMF World Economic Outlook (the full five-year table is kept for the largest economies).', 'Оценки на этот год из World Economic Outlook МВФ (полная таблица на пять лет — для крупнейших экономик).'],
   gm_open_ecst: ['ECST · the country\'s economy', 'ECST · экономика страны'], gm_src_curves: ['central banks and treasuries', 'центробанки и казначейства'],
 
-  // options: dealer positioning and volatility (opt.js)
   p_gex: ['OPTIONS · DEALER POSITIONING', 'ОПЦИОНЫ · ПОЗИЦИИ ДИЛЕРОВ'], fn_gex: ['Options: GEX, levels, volatility', 'Опционы: GEX, уровни, волатильность'],
   gex_tab: ['GEX · EXPOSURE', 'GEX · ЭКСПОЗИЦИЯ'], lvl_tab: ['LVL · LEVELS', 'LVL · УРОВНИ'], vols_tab: ['VOLS · SURFACE', 'VOLS · ПОВЕРХНОСТЬ'],
   grk_tab: ['GRK · GREEKS', 'GRK · ГРЕКИ'], gexh_tab: ['GEXH · HISTORY', 'GEXH · ИСТОРИЯ'],
@@ -753,7 +721,6 @@ var D = {
   ta_gex_none: function(l){ return RU ? 'Опционные уровни есть для: ' + l : 'Option levels exist for: ' + l },
   ta_gex_far: function(s){ return RU ? 'Опционные уровни ' + s + ' не подходят к ценам этого графика' : 'The option levels of ' + s + ' do not fit the prices of this chart' },
 
-  // crypto order flow (flow.js)
   p_flow: ['ORDER FLOW', 'ПОТОК ОРДЕРОВ'], fn_flow: ['Crypto order flow: heatmap, DOM, footprint, CVD', 'Поток ордеров крипты: теплокарта, стакан, кластеры, CVD'],
   heat_tab: ['HEAT · BOOK HEATMAP', 'HEAT · ТЕПЛОКАРТА СТАКАНА'], book_tab: ['BOOK · DOM & TAPE', 'BOOK · СТАКАН И ЛЕНТА'], foot_tab: ['FOOT · FOOTPRINT', 'FOOT · КЛАСТЕРЫ'], cvd_tab: ['CVD · DELTA', 'CVD · ДЕЛЬТА'],
   m_obh: ['Order book heatmap (crypto)', 'Теплокарта стакана (крипта)'], m_book: ['Order book and tape', 'Стакан и лента сделок'], m_foot: ['Footprint candles', 'Кластерный график'], m_cvd: ['Cumulative volume delta', 'Кумулятивная дельта объёма'],
@@ -781,7 +748,6 @@ var D = {
     'Дельта = куплено по аскам − продано по бидам (объём тейкеров Binance в каждом баре); CVD — её накопленная сумма. Кольца на цене — крупные сделки с открытия панели. Цена растёт, а CVD падает — рост на пассивных покупках (дивергенция).']
 };
 
-// help table: [command, English, Russian]; a row with one cell is a section title
 var HELP = [
   ['WEI', 'world stock indices', 'мировые фондовые индексы'],
   ['FX', 'currencies', 'валюты'],
@@ -880,7 +846,6 @@ var HELP = [
   ['HELP', 'this help', 'эта справка']
 ];
 
-// display names: ids are internal keys shared with the bot's data
 var MKT_EN = {'S&P': 'S&P 500', 'Nasdaq': 'Nasdaq', 'DJI': 'Dow Jones', 'RTY': 'Russell 2000', 'VIX': 'VIX', 'SX5E': 'Euro Stoxx 50', 'DAX': 'DAX',
   'UKX': 'FTSE 100', 'CAC': 'CAC 40', 'NKY': 'Nikkei 225', 'HSI': 'Hang Seng', 'SHCOMP': 'Shanghai Composite', 'SENSEX': 'Sensex (India)',
   'IMOEX': 'MOEX Russia', 'DXY': 'US Dollar Index', 'EUR/USD': 'EUR/USD', 'USDJPY': 'USD/JPY', 'GBPUSD': 'GBP/USD', 'USDCNY': 'USD/CNY',
@@ -915,7 +880,6 @@ var TRADE_RU = [['House', 'Палата'], ['Senate', 'Сенат'], [' (option)
 var FNG_RU = {'Extreme Fear': 'сильный страх', 'Fear': 'страх', 'Neutral': 'нейтрально', 'Greed': 'жадность', 'Extreme Greed': 'сильная жадность'};
 function inv(m){ var o = {}; Object.keys(m).forEach(function(k){ o[m[k]] = k }); return o }
 var SECTOR_EN = inv(SECTOR_RU), TAG_EN = inv(TAG_RU), SOURCE_EN = inv(SOURCE_RU);
-// a name stored in English (or Russian in older data) in the reader's language; map: the name map of i18n.xl.js
 function mapName(ru, en, map){ return function(x){ if (RU) return ru[x] || x; var k = en[x] || x; return xl(map, k) || k } }
 
 function t(key){
@@ -927,7 +891,6 @@ function t(key){
   return v[RU ? 1 : 0];
 }
 
-// news stories: original headline + translation; older data had a Russian title and the English "original"
 function isOld(n){ return n && n.original !== undefined && n.lang === undefined }
 function newsTitle(n){
   if (isOld(n)) return RU || !n.original ? n.title : n.original;
@@ -940,20 +903,19 @@ function newsLead(n){
 function aiSum(n){
   var ai = n && n.ai; if (!ai) return '';
   if (ai.sum_ru === undefined) return RU ? ai.sum || '' : '';
-  if (XI >= 0) return ai['sum_' + lang] || '';   // none yet — the story's summary is shown instead
+  if (XI >= 0) return ai['sum_' + lang] || '';
   return RU ? ai.sum_ru || ai.sum || '' : ai.sum || ai.sum_ru || '';
 }
 function tradeLabel(s){
   s = String(s || '');
   var x = XL();
   TRADE_RU.forEach(function(p, i){
-    s = s.split(p[1]).join(p[0]);              // older records may be Russian
+    s = s.split(p[1]).join(p[0]);
     if (RU) s = s.split(p[0]).join(p[1]);
     else if (x) s = s.split(p[0]).join(x.TRADE[i][XI]);
   });
   return s;
 }
-// a data name in the reader's language: o.name_zh / o.name_ru / o.name (the field names can be changed)
 function dn(o, en, ru){
   if (!o) return '';
   en = en || 'name'; ru = ru || en + '_ru';
@@ -965,7 +927,6 @@ function setLang(l){
   try { var u = new URL(location.href); u.searchParams.set('lang', l); location.replace(u.toString()) } catch(e){ location.reload() }
 }
 
-// static texts: data-i18n → text, data-i18n-html → HTML (our own strings only), -ph → placeholder, -title → title
 function apply(root){
   (root || document).querySelectorAll('[data-i18n],[data-i18n-html],[data-i18n-ph],[data-i18n-title]').forEach(function(e){
     var d = e.dataset;
@@ -986,13 +947,10 @@ function apply(root){
   });
 }
 
-// the languages for the picker: code, name in that language, short label on the button
 var LANG_LIST = [['en', 'English', 'EN'], ['ru', 'Русский', 'RU'], ['zh', '中文', '中'], ['ar', 'العربية', 'ع']];
 var LOC = {en: ['en-US', 'en-GB', 'en', 'MSK'], ru: ['ru-RU', 'ru-RU', 'ru', 'МСК'],
-  // Chinese and Arabic numbers keep Latin digits and the 1,234.56 form, as their financial press does
   zh: ['en-US', 'zh-CN-u-hc-h23', 'zh_CN', '莫斯科时间'], ar: ['en-US', 'ar-u-nu-latn-hc-h23', 'ar_AE', 'بتوقيت موسكو']}[lang];
 
-// country names in Chinese and Arabic: from the browser by the ISO code (two- or three-letter), else `fallback`
 var REGION_CODE = {UK: 'GB', XM: 'EZ'}, regionNames = null;
 function country(code, fallback){
   if (XI < 0 || !code) return fallback || code || '';
@@ -1009,13 +967,10 @@ function country(code, fallback){
   return fallback || code;
 }
 
-// big numbers: the units of each language, from the largest; rank — the English unit it stands for (4 T, 3 B, 2 M, 1 K):
-// Chinese counts in 万亿 (10^12), 亿 (10^8) and 万 (10^4)
 var UNITS = {en: [[1e12, 'T', 4], [1e9, 'B', 3], [1e6, 'M', 2], [1e3, 'K', 1]],
   ru: [[1e12, ' трлн', 4], [1e9, ' млрд', 3], [1e6, ' млн', 2], [1e3, ' тыс.', 1]],
   zh: [[1e12, '万亿', 4], [1e8, '亿', 3], [1e4, '万', 2]],
   ar: [[1e12, ' تريليون', 4], [1e9, ' مليار', 3], [1e6, ' مليون', 2], [1e3, ' ألف', 1]]}[lang];
-// {x: v in the unit, s: the unit's name, size, rank} for the largest unit not above v (ranks from min to max), or null
 function scale(v, min, max){
   var a = Math.abs(v || 0);
   for (var i = 0; i < UNITS.length; i++) {
@@ -1025,10 +980,8 @@ function scale(v, min, max){
   }
   return null;
 }
-// dates "YYYY-MM-DD…": 30 Jun / 30.06 / 6月30日 / 30 يونيو, with the year: 30 Jun 2025 / 30.06.2025 / 2025年6月30日 / 30 يونيو 2025
 var MON_EN = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 var MON_AR = ['يناير', 'فبراير', 'مارس', 'أبريل', 'مايو', 'يونيو', 'يوليو', 'أغسطس', 'سبتمبر', 'أكتوبر', 'نوفمبر', 'ديسمبر'];
-// an Arabic date is a right-to-left piece inside left-to-right lines: isolated (FSI…PDI), its numbers keep their places
 function iso_(s){ return lang === 'ar' ? '\u2068' + s + '\u2069' : s }
 function dm(d){
   if (!d || d.length < 10) return '—';
@@ -1043,7 +996,6 @@ function dmy(d){
   if (lang === 'ar') return iso_(+d.slice(8, 10) + ' ' + MON_AR[+d.slice(5, 7) - 1] + ' ' + d.slice(0, 4));
   return dm(d) + (RU ? '.' : ' ') + d.slice(0, 4);
 }
-// a month with a short year: Jun '25 / 30.06.25 / 25年6月 / يونيو 25
 function my(d){
   if (!d || d.length < 10) return '—';
   if (RU) return d.slice(8, 10) + '.' + d.slice(5, 7) + '.' + d.slice(2, 4);
@@ -1053,25 +1005,21 @@ function my(d){
 
 window.L10N = {
   lang: lang, ru: RU, xl: XI >= 0, scale: scale, dm: dm, dmy: dmy, my: my, rtl: lang === 'ar', langs: LANG_LIST, t: t, apply: apply, setLang: setLang,
-  num: LOC[0],     // numbers: 1,234.56 / 1 234,56
-  date: LOC[1],    // dates and 24-hour times
-  tv: LOC[2],      // TradingView widget
+  num: LOC[0],
+  date: LOC[1],
+  tv: LOC[2],
   tz: LOC[3],
-  // a link to the bot's pages in this language: "?lang=zh" ("" for English)
   q: lang === 'en' ? '' : 'lang=' + lang,
   mktName: function(id, fallback){ return (RU ? MKT_RU[id] : xl('MKT', id) || MKT_EN[id]) || (RU ? fallback : MKT_EN[id]) || fallback || id },
   unit: function(id){ return XI >= 0 ? xl('UNIT', id) || UNIT[0][id] || '' : UNIT[RU ? 1 : 0][id] || '' },
   region: function(id){ return XI >= 0 ? xl('REGION', id) || REGION[0][id] || '' : REGION[RU ? 1 : 0][id] || '' },
   clock: function(i){ var x = XL(); return x ? x.CLOCKS[i][XI] : CLOCKS[i][RU ? 1 : 0] },
   sector: mapName(SECTOR_RU, SECTOR_EN, 'SECTOR'), tag: mapName(TAG_RU, TAG_EN, 'TAG'), source: mapName(SOURCE_RU, SOURCE_EN, 'SOURCE'),
-  tagKey: function(x){ return TAG_EN[x] || x },   // filter by the stored (English) tag whatever language the data had
+  tagKey: function(x){ return TAG_EN[x] || x },
   fng: function(x){ return RU ? FNG_RU[x] || x : xl('FNG', x) || x },
   dn: dn, country: country,
-  // an IMF indicator's name (macro.json "ind": {en, ru})
   ind: function(k, x){ return RU ? x.ru : xl('MACRO_IND', k) || x.en },
-  // an instrument's name in Chinese or Arabic (null when there is none)
   mktXl: function(id){ return xl('MKT', id) },
-  // any other name map of i18n.xl.js (AREA, SPLC…): the Chinese or Arabic name, null when there is none
   xlName: function(map, id){ return xl(map, id) },
   newsTitle: newsTitle, newsLead: newsLead, aiSum: aiSum, tradeLabel: tradeLabel
 };

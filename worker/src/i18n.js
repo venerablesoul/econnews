@@ -1,16 +1,11 @@
-// The bot's languages: English (the default), Russian, Chinese (simplified) and Arabic. /lang (buttons) or
-// /lang ru|zh|ar|en switches a chat. The choice is stored in KV ("l:<chat id>") and in the subscriber's metadata,
-// so the news bot (news_bot.py) also sends each person their language. Chinese and Arabic texts: i18n_xl.js.
 import { dm, dmy, fmt, money, msk, pct, price } from "./lib.js";
 import { AR, MKT_XL, MACRO_XL, SECTOR_XL, SOURCE_XL, TAG_XL, TRADE_LABEL_XL, TRADE_OWNER_XL, TRADE_TYPE_XL, ZH } from "./i18n_xl.js";
 
 export const LANGS = ["en", "ru", "zh", "ar"];
-// the language picker: /lang without arguments and the «🌐» button
 export const LANG_NAMES = { en: "🇬🇧 English", ru: "🇷🇺 Русский", zh: "🇨🇳 中文", ar: "🇸🇦 العربية" };
 export const langButtons = { inline_keyboard: [
   [{ text: LANG_NAMES.en, callback_data: "lang:en" }, { text: LANG_NAMES.ru, callback_data: "lang:ru" }],
   [{ text: LANG_NAMES.zh, callback_data: "lang:zh" }, { text: LANG_NAMES.ar, callback_data: "lang:ar" }]] };
-// "/lang <word>" → a language code (or null)
 export function langFromWord(w) {
   w = String(w || "").trim().toLowerCase();
   if (/^(en|eng|english|англ)/.test(w)) return "en";
@@ -27,7 +22,6 @@ export function norm(lang) {
 }
 
 // ---------------------------------------------------------------------------
-// Texts. A value is a string or a function of its arguments.
 // ---------------------------------------------------------------------------
 const EN = {
   help: [
@@ -103,7 +97,6 @@ const EN = {
   stats_since: "since",
   no_name: "no name",
   updated: (t) => `\n<i>updated ${t} MSK</i>`,
-  // buttons
   btn_market: "📈 Markets", btn_terminal: "🖥 Terminal", btn_menu: "☰ Main menu", btn_in_terminal: "🖥 In the terminal",
   btn_news: "📰 News", btn_markets: "📊 Markets", btn_calendar: "📅 Calendar", btn_trades: "🏛 Trades",
   btn_news_off: "🔕 Turn news off", btn_news_on: "🔔 Turn news on", btn_lang: "🌐 Language",
@@ -117,7 +110,6 @@ const EN = {
   btn_t_watch: "🖥 Watchlist in the terminal", btn_t_port: "🖥 Portfolio in the terminal", btn_t_map: "🖥 Heat map",
   btn_t_curves: "🖥 Curves in the terminal", btn_t_eqs: "🖥 Screener in the terminal",
   nodata: "No data", earn_eps: (v) => ` · EPS est. $${v}`, a_num: (id) => `#${id}`,
-  // news / markets / calendar / trades
   news_head: "📰 <b>Top stories of the day</b>",
   news_none: "No significant news in the last 24 hours.",
   read: "read →",
@@ -132,12 +124,10 @@ const EN = {
   trd_insiders: "💼 <b>Insider trades</b>",
   trd_more: "All trades — in the terminal (TRD command).",
   trd_traded: (d, d2) => `traded ${d}, disclosed ${d2}`,
-  // quotes
   need_symbol: (cmd) => `Add a ticker, for example: /${cmd} AAPL`,
   q_usage: "Type tickers separated by spaces: /q AAPL MSFT BTC oil gold SBER",
   q_head: "📈 <b>Quotes</b> <i>(daily change)</i>",
   no_data_for: (s) => `${s}: no data`,
-  // company
   des_moex_line: (type, isin) => `${type} · Moscow Exchange · ISIN ${isin}`,
   des_price: (px, ch) => `Price: <b>${px}</b> ${ch} today`,
   des_lot: (n) => `Lot: ${n} shares`, des_issue: (n) => `Shares issued: ${n}`, des_list: (n) => `Listing level: ${n}`,
@@ -180,7 +170,6 @@ const EN = {
   chart_usage: "For example: /chart AAPL 1y · /chart BTC 3m · /chart oil 6m · /chart SBER 1y",
   ranges: { "1d": "1 day", "5d": "5 days", "1m": "1 month", "3m": "3 months", "6m": "6 months", ytd: "year to date", "1y": "1 year", "2y": "2 years", "5y": "5 years" },
   chart_cap: (s, name, range, ch, now, lo, hi) => `📈 <b>${s}</b> ${name}\n${range}: ${ch} · now ${now} · low ${lo} · high ${hi}`,
-  // watchlist / portfolio / alerts
   w_added: "Added: ", w_removed: "Removed: ", w_bad: "Didn't understand: ", w_max: (n) => `The watchlist holds up to ${n} instruments.`,
   w_empty: "⭐ Your watchlist is empty.\nAdd: /watch AAPL NVDA BTC oil SBER",
   w_head: "⭐ <b>My watchlist</b> <i>(daily change)</i>",
@@ -220,7 +209,6 @@ const EN = {
   fire_news: (kw) => `🔔 A story with the word «${kw}»`,
   me_login: "Open the terminal with the «🖥 Terminal» button in the bot chat — then the watchlist, portfolio and alerts are shared with the bot.",
   me_bad_alert: "Didn't get the alert. Examples: AAPL > 200 · BTC < 60000 · oil 5% · news Fed",
-  // screener / map / earnings / rates
   eqs_presets: { leaders: "🚀 Top gainers", losers: "📉 Top losers", value: "💰 Cheapest by P/E", div: "🏦 Dividend payers",
     growth: "📈 Fastest revenue growth", big: "🏛 Largest", year: "🏆 Best over a year", low52: "🧊 Near 52-week low" },
   eqs_choose: "🔎 <b>US stock screener</b> (~100 largest companies)\nChoose a screen:",
@@ -242,7 +230,6 @@ const EN = {
   wirp_row: (d, after, cum) => `<b>${d}</b>: expected rate ${after}% (${cum} bp vs today)`,
   wirp_probs: { hike50: "hike 0.5", hike: "hike", hold: "hold", cut: "cut", cut50: "cut 0.5" },
   wirp_note: "\n\n<i>From fed funds futures (the CME FedWatch method)</i>",
-  // deep company data (docs/co, docs/opt) and new functions
   btn_ee: "EE estimates", btn_dvd: "DVD dividends", btn_omon: "OMON options", btn_rv: "RV peers", btn_hds: "HDS holders",
   btn_cf: "CF filings", btn_mgmt: "MGMT management", btn_si: "SI short interest",
   no_deep: (s) => `No detailed data for ${s} yet: it covers the ~100 largest US companies and is refreshed twice a day.`,
@@ -599,14 +586,13 @@ const RU = {
 };
 
 const TEXTS = { en: EN, ru: RU, zh: ZH, ar: AR };
-export const TEXT_KEYS = Object.keys(EN);   // for the tests: every language must have them all
+export const TEXT_KEYS = Object.keys(EN);
 
 export function t(lang, key, ...args) {
   const v = TEXTS[norm(lang)][key] ?? EN[key];
   return typeof v === "function" ? v(...args) : v;
 }
 
-// sector, tag and source names are stored in English; Russian readers see them translated
 export const SECTOR_RU = { "Technology": "Технологии", "Communication": "Связь и медиа", "Consumer Discretionary": "Циклич. потребление",
   "Consumer Staples": "Повседн. спрос", "Health Care": "Здравоохранение", "Financials": "Финансы", "Industrials": "Промышленность",
   "Energy": "Энергетика", "Utilities": "Коммунальные", "Real Estate": "Недвижимость", "Materials": "Материалы" };
@@ -629,11 +615,10 @@ export const TRADE_OWNER = { en: { SP: "spouse", JT: "joint", DC: "child", Spous
 TRADE_TYPE.zh = TRADE_TYPE_XL.zh; TRADE_TYPE.ar = TRADE_TYPE_XL.ar;
 TRADE_OWNER.zh = TRADE_OWNER_XL.zh; TRADE_OWNER.ar = TRADE_OWNER_XL.ar;
 
-// a name stored in English (or, in older data, in Russian) shown in the reader's language
 const pick = (ru, en, xl) => (name, lang) => {
   lang = norm(lang);
   if (lang === "ru") return ru[name] || name;
-  const key = en[name] || name;   // the English key, whatever language the data had
+  const key = en[name] || name;
   return (xl[lang] || {})[key] || key;
 };
 export const sectorName = pick(SECTOR_RU, SECTOR_EN, SECTOR_XL);
@@ -643,40 +628,35 @@ export function tradeLabel(text, lang) {
   lang = norm(lang);
   let s = String(text || "");
   TRADE_EN_RU.forEach(([en, ru], i) => {
-    s = s.split(ru).join(en);                       // older records may be Russian
+    s = s.split(ru).join(en);
     if (lang === "ru") s = s.split(en).join(ru);
     else if (TRADE_LABEL_XL[lang]) s = s.split(en).join(TRADE_LABEL_XL[lang][i]);
   });
   return s;
 }
-// market instruments (MKT ids) and IMF countries in Chinese and Arabic; null — no name in that language
 export const mktXl = (id, lang) => (MKT_XL[norm(lang)] || {})[id] || null;
 export const macroXl = (code, lang) => (MACRO_XL[norm(lang)] || {})[code] || null;
 
-// News stories: original headline plus a translation into the other language.
-// Older data.json had "title" in Russian and the English original in "original".
 export function newsField(n, field, lang) {
   lang = norm(lang);
-  if (n.original !== undefined && n.lang === undefined) {   // old format
+  if (n.original !== undefined && n.lang === undefined) {
     if (field === "title") return lang === "ru" || !n.original ? n.title : n.original;
     return n[field] || "";
   }
   return n[field + "_" + lang] || n[field] || "";
 }
 
-// AI one-line summary of a story ({sum, sum_ru}); older data had only a Russian "sum"
 export function aiSum(n, lang) {
   const ai = n && n.ai;
   if (!ai) return "";
   lang = norm(lang);
   const ru = lang === "ru";
   if (ai.sum_ru === undefined) return ru ? ai.sum || "" : "";
-  if (lang === "zh" || lang === "ar") return ai["sum_" + lang] || "";   // none yet — the story's summary is shown instead
+  if (lang === "zh" || lang === "ar") return ai["sum_" + lang] || "";
   return ru ? ai.sum_ru || ai.sum || "" : ai.sum || ai.sum_ru || "";
 }
 
 // ---------------------------------------------------------------------------
-// Per-chat language: KV "l:<id>" (+ "l" in the subscriber's metadata for news_bot.py)
 // ---------------------------------------------------------------------------
 const langMemo = new Map();
 
@@ -685,7 +665,7 @@ export async function getLang(env, id) {
   const m = langMemo.get(id);
   if (m && Date.now() - m.at < 600e3) return m.v;
   let v = DEFAULT_LANG;
-  try { v = norm(env.SUBS ? await env.SUBS.get("l:" + id) : null); } catch (e) { /* default */ }
+  try { v = norm(env.SUBS ? await env.SUBS.get("l:" + id) : null); } catch (e) {  }
   langMemo.set(id, { at: Date.now(), v });
   return v;
 }
@@ -700,7 +680,6 @@ export async function setLang(env, id, lang) {
   return lang;
 }
 
-// A bundle of helpers bound to one language: L.t(key, ...), L.fmt, L.pct, L.money, L.price, L.date
 export function L(lang) {
   lang = norm(lang);
   return {
@@ -714,7 +693,6 @@ export function L(lang) {
     dmy: (d) => dmy(d, lang),
     dm: (d) => dm(d, lang),
     ru: lang === "ru",
-    // "?lang=xx" for links to the site and the terminal ("" for English)
     q: lang === DEFAULT_LANG ? "" : "lang=" + lang,
   };
 }

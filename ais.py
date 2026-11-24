@@ -1,21 +1,3 @@
-"""
-Ships from aisstream.io (a free live AIS feed) — the map's SHIP tab: "Tankers in the straits" and "Ships worldwide".
-
-Works only with a free key: register at aisstream.io, create an API key and add it as the repository secret
-AISSTREAM_API_KEY. Without the key this does nothing. Every 30 minutes the bot listens to the whole world's feed for
-~60 seconds and writes:
-  docs/ships.json        tankers at the chokepoints (Hormuz, Bab el-Mandeb, Suez, Malacca, the Turkish and Danish
-                         straits, Gibraltar, Panama, the Cape of Good Hope): the last 12 hours, a count per chokepoint;
-  docs/ships_world.json  tankers and cargo ships anywhere, seen in the last 6 hours, each with its track — where it
-                         was at the earlier listenings (every 30 minutes), so the map shows where ships are heading;
-  docs/ais_kinds.json    which ships are cargo ships (a ship says its type only every ~6 minutes; the map needs it at
-                         once), the last week. The bot's memory — the map does not load it.
-aisstream.io relies on receivers on land: ships far from the coast, or where there are few receivers, may be missing —
-the count is "seen", not "all".
-
-aisstream.io does not allow browsers (the key would be public), so the bot reads it. The key travels only inside the
-encrypted connection and is never printed or written anywhere. Standard library only (a small WebSocket client).
-"""
 from __future__ import annotations
 
 import base64
@@ -38,16 +20,15 @@ EVERY_MIN = 30
 LISTEN_S = 60
 KEEP_H = 12
 MAX_SHIPS = 2000
-TYPE_DAYS = 7             # tankers are remembered for a week after they were last seen
+TYPE_DAYS = 7
 MAX_TANKER_IDS = 8000
-MAX_FRAME = 1 << 20   # a bigger frame is not AIS — the connection is dropped
-WORLD_H = 6               # the world layer: ships seen in the last 6 hours
-MAX_WORLD = 4000          # ... at most (the most recently seen): the file stays ~400 KB, ~120 KB as the site sends it
-TRACK_PTS = 6             # earlier positions kept per ship (one per listening, every 30 minutes: ~3 hours)
-TRACK_MIN_DEG = 0.01      # a ship that moved less (~1 km) adds no track point
+MAX_FRAME = 1 << 20
+WORLD_H = 6
+MAX_WORLD = 4000
+TRACK_PTS = 6
+TRACK_MIN_DEG = 0.01
 MAX_CARGO_IDS = 30000
 WORLD_BOX = [[[-90.0, -180.0], [90.0, 180.0]]]
-# [south, west, north, east]; aisstream wants [[lat, lon], [lat, lon]]
 AREAS = (
     ("hormuz", "Strait of Hormuz", "Ормузский пролив", (24.8, 54.5, 27.6, 58.2)),
     ("bab", "Bab el-Mandeb", "Баб-эль-Мандеб", (11.4, 42.0, 14.6, 44.6)),
@@ -75,12 +56,10 @@ def area_of(lat, lon):
 
 
 def subscription(api_key):
-    # the whole world: the chokepoints are inside it, and the world layer needs everything
     return {"APIKey": api_key, "BoundingBoxes": WORLD_BOX, "FilterMessageTypes": ["PositionReport", "ShipStaticData"]}
 
 
 # ---------------------------------------------------------------------------
-# a minimal WebSocket client (RFC 6455): text/binary frames, fragments, ping → pong, close
 # ---------------------------------------------------------------------------
 class WS:
     def __init__(self, url, timeout=20):
@@ -115,7 +94,7 @@ class WS:
             chunk = self.sock.recv(65536)
             if not chunk:
                 raise ConnectionError("closed")
-            if self.pos > 1 << 20:   # what was read already is dropped now and then, not after every message
+            if self.pos > 1 << 20:
                 del self.buf[:self.pos]
                 self.pos = 0
             self.buf += chunk
@@ -138,7 +117,6 @@ class WS:
         self.sock.sendall(head + mask + bytes(b ^ mask[i % 4] for i, b in enumerate(data)))
 
     def recv(self):
-        """The next whole message (bytes), or None when the server closed."""
         parts, kind = [], None
         while True:
             b1, b2 = self._read(2)
@@ -194,7 +172,6 @@ def clean_text(s, n=40):
 
 
 def read_message(m, ships, now):
-    """Updates ships (mmsi → record) from one aisstream message (dict). Returns the mmsi or None."""
     if not isinstance(m, dict):
         return None
     meta = m.get("MetaData") or {}
@@ -230,16 +207,13 @@ def read_message(m, ships, now):
 
 
 def listen(api_key, seconds=LISTEN_S, url=URL, connect=WS, now=None):
-    """Messages for `seconds`. Returns (ships dict, how many messages)."""
     now = now or datetime.now(timezone.utc)
     ships, n = {}, 0
     ws = connect(url)
     try:
-        ws.send(json.dumps(subscription(api_key)))   # must arrive within 3 s of connecting
+        ws.send(json.dumps(subscription(api_key)))
         end = time.monotonic() + seconds
         while time.monotonic() < end:
-            # wait at most until the end: a timeout in the middle of a frame would leave the stream out of step,
-            # so a timeout simply ends the listening
             ws.sock.settimeout(max(0.5, end - time.monotonic()))
             try:
                 raw = ws.recv()
@@ -269,7 +243,6 @@ def is_cargo(t):
 
 
 def minute(iso):
-    """Minutes since 1970 (UTC) of an ISO time — the track points' compact clock."""
     try:
         return int(datetime.fromisoformat(iso).timestamp() // 60)
     except (TypeError, ValueError):
@@ -282,8 +255,6 @@ def moved(a_lat, a_lon, b_lat, b_lon):
 
 
 def add_track(rec, lat, lon, t_iso, since_min):
-    """Before a ship gets its new position: the old one goes to its track (if it is older and ~1 km away).
-    A track point is [lat, lon, minute]; only the last TRACK_PTS, none older than since_min."""
     if rec.get("lat") is None or rec.get("lon") is None or not rec.get("t") or rec["t"] >= t_iso:
         return
     if not moved(rec["lat"], rec["lon"], lat, lon):
@@ -305,13 +276,10 @@ def fresh_track(rec, since_min):
 
 
 def merge(old, new, now):
-    """Positions of the last KEEP_H hours, and which ships are tankers. A ship's type comes only in its static message
-    (every few minutes), so the tankers seen in the last week are remembered: {"tk": {day last seen: [mmsi, ...]}}.
-    Only tankers and only one week — the file stays small (the map loads it)."""
     cut = (now - timedelta(hours=KEEP_H)).isoformat()
     today = now.astimezone(timezone.utc).date().isoformat()
     week = (now - timedelta(days=TYPE_DAYS)).astimezone(timezone.utc).date().isoformat()
-    known = {}   # mmsi → the day it was last seen as a tanker
+    known = {}
     tk = old.get("tk") if isinstance(old.get("tk"), dict) else {}
     for day, ids in tk.items():
         if isinstance(day, str) and day >= week and isinstance(ids, list):
@@ -330,7 +298,6 @@ def merge(old, new, now):
         t = v.get("type")
         return is_tanker(t) if isinstance(t, int) else k in known
 
-    # the chokepoint layer: tankers inside a chokepoint's box (the feed is the whole world now; the rest are in the world layer)
     tankers = [fresh_track(v, since_min) for k, v in by.items() if tanker(k, v) and v.get("lat") is not None and v.get("t", "") >= cut
                and v.get("area")]
     tankers.sort(key=lambda v: v.get("t", ""), reverse=True)
@@ -338,7 +305,7 @@ def merge(old, new, now):
     for v in tankers:
         if v.get("area"):
             counts[v["area"]] = counts.get(v["area"], 0) + 1
-    seen = {}   # every ship in the boxes during this listening
+    seen = {}
     for v in new.values():
         if v.get("area") and v.get("t"):
             seen[v["area"]] = seen.get(v["area"], 0) + 1
@@ -348,8 +315,8 @@ def merge(old, new, now):
             day = max(known.get(k, ""), (v.get("t") or "")[:10], today if k in new else "")
             if day >= week:
                 last[k] = day
-    for k, day in known.items():   # tankers not met this time are remembered until their week is over
-        if not isinstance(by.get(k, {}).get("type"), int):   # ... unless a new static message gave another type
+    for k, day in known.items():
+        if not isinstance(by.get(k, {}).get("type"), int):
             last.setdefault(k, day)
     keep = sorted(last.items(), key=lambda x: x[1])[-MAX_TANKER_IDS:]
     tk_out = {}
@@ -361,13 +328,10 @@ def merge(old, new, now):
             "ships": tankers[:MAX_SHIPS], "tk": {d: sorted(v) for d, v in sorted(tk_out.items())}}
 
 
-# the world layer: compact rows, one per ship. "track": flat [lat, lon, minutes before "minute", ...], oldest first,
-# to 0.01° (~1 km: where a ship was half an hour ago needs no more)
 WORLD_COLS = ["mmsi", "name", "kind", "lat", "lon", "sog", "cog", "nav", "minute", "dest", "draught", "track"]
 
 
 def world_rows(d):
-    """ships_world.json → {mmsi: record}."""
     by = {}
     for r in d.get("s") or []:
         if not isinstance(r, list) or len(r) < len(WORLD_COLS) or not isinstance(r[0], int):
@@ -383,8 +347,6 @@ def world_rows(d):
 
 
 def merge_world(oldw, kinds, tankers, new, now):
-    """Tankers and cargo ships anywhere, seen in the last WORLD_H hours, with their tracks; and the memory of which
-    ships are cargo ships (a week). tankers: the mmsi (str) known to be tankers (from ships.json's memory)."""
     today = now.astimezone(timezone.utc).date().isoformat()
     week = (now - timedelta(days=TYPE_DAYS)).astimezone(timezone.utc).date().isoformat()
     cargo = {}
@@ -405,7 +367,7 @@ def merge_world(oldw, kinds, tankers, new, now):
         kind = ("t" if is_tanker(t) or (t is None and k in tankers) else "c" if is_cargo(t) or (t is None and k in cargo)
                 else (by.get(k) or {}).get("kind") if t is None else None)
         if kind is None:
-            by.pop(k, None)   # not a tanker or cargo ship (or not known yet)
+            by.pop(k, None)
             continue
         rec = by.setdefault(k, {"mmsi": v["mmsi"]})
         rec["kind"] = kind
@@ -448,7 +410,6 @@ def save(path, d):
 
 
 def build(now=None, path=OUT, listen_fn=listen, every_min=EVERY_MIN):
-    """Every 30 minutes, with the key: listens and updates docs/ships.json. Returns how many messages were read."""
     k = key()
     if not k:
         return 0
@@ -458,11 +419,10 @@ def build(now=None, path=OUT, listen_fn=listen, every_min=EVERY_MIN):
         return 0
     try:
         ships, n = listen_fn(k, now=now)
-    except Exception as e:   # whatever the feed answered, the key never goes into a log
+    except Exception as e:
         raise RuntimeError(f"{type(e).__name__}: {e}".replace(k, "***")) from None
     out = merge(old, ships, now)
     save(path, out)
-    # the world layer and the cargo memory sit next to ships.json
     here = os.path.dirname(path)
     wpath, kpath = os.path.join(here, os.path.basename(OUT_WORLD)), os.path.join(here, os.path.basename(OUT_KINDS))
     tankers = {str(m) for ids in out["tk"].values() for m in ids}

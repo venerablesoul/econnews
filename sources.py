@@ -1,35 +1,19 @@
-"""
-Список источников новостей.
-
-kind:
-  official — центробанки, статистика, МВФ: берём всё, это первоисточники
-  econ     — экономические разделы СМИ: берём, если есть экономические слова
-  general  — общие ленты: берём только при явных экономических словах в заголовке
-tier: надёжность/вес источника (0..2), добавляется к оценке важности
-categories: для лент с рубриками (РБК) — берём только эти рубрики
-
-Чтобы добавить источник, допишите строку по образцу. Чтобы убрать — закомментируйте.
-"""
-
 GN = "https://news.google.com/rss/search?hl=en-US&gl=US&ceid=US:en&q="
 
 SOURCES = [
     # ---------- Центробанки и официальная статистика ----------
     {"name": "Fed", "url": "https://www.federalreserve.gov/feeds/press_all.xml", "kind": "official", "tier": 2},
     {"name": "US Labor Statistics (BLS)", "url": "https://www.bls.gov/feed/bls_latest.rss", "kind": "official", "tier": 2},
-    # запасной канал: bls.gov часто отвечает 403 серверам GitHub
     {"name": "US Labor Statistics (BLS)", "url": GN + "site:bls.gov+when:2d", "kind": "official", "tier": 2},
     {"name": "ECB", "url": "https://www.ecb.europa.eu/rss/press.html", "kind": "official", "tier": 2},
     {"name": "Bank of England", "url": "https://www.bankofengland.co.uk/rss/news", "kind": "official", "tier": 2},
     {"name": "IMF", "url": "https://www.imf.org/en/News/rss?language=eng", "kind": "official", "tier": 2},
-    # запасной канал: imf.org блокирует запросы с серверов GitHub
     {"name": "IMF", "url": GN + "site:imf.org+when:2d", "kind": "official", "tier": 2},
     {"name": "Bank of Russia", "url": "https://www.cbr.ru/rss/eventrss", "kind": "official", "tier": 2},
 
     # ---------- Bloomberg ----------
     {"name": "Bloomberg", "url": "https://feeds.bloomberg.com/economics/news.rss", "kind": "econ", "tier": 1},
     {"name": "Bloomberg", "url": "https://feeds.bloomberg.com/markets/news.rss", "kind": "econ", "tier": 1},
-    # запасной канал, если прямые ленты Bloomberg не отвечают
     {"name": "Bloomberg", "url": GN + "site:bloomberg.com+(economy+OR+inflation+OR+Fed+OR+ECB+OR+markets+OR+oil)+when:1d", "kind": "econ", "tier": 1},
 
     # ---------- BBC ----------

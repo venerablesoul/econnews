@@ -1,13 +1,3 @@
-"""
-Bonds and rates for the terminal (GC, CB, WIRP) and the bot commands /rates /cb /wirp — all free, official sources.
-Облигации и ставки для терминала (GC, CB, WIRP) и команд бота /rates /cb /wirp.
-
-Результат — docs/rates.json. Всё из бесплатных официальных источников без ключей:
-  Кривые доходности: Минфин США (Treasury), Бундесбанк (Германия; запасной — ЕЦБ, AAA еврозоны),
-                     Банк Англии, Минфин Японии, Мосбиржа (кривая ОФЗ)
-  Ставки центробанков: BIS (Банк международных расчётов) + свежие данные ФРБ Нью-Йорка и ЦБ РФ
-  WIRP (ожидания по ставке ФРС): фьючерсы на ставку по федеральным фондам (Yahoo) + календарь заседаний ФРС
-"""
 from __future__ import annotations
 
 import calendar
@@ -38,11 +28,9 @@ EFFR_URL = "https://markets.newyorkfed.org/api/rates/unsecured/effr/last/1.json"
 FOMC_URL = "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
 CBR_URL = "https://www.cbr.ru/hd_base/KeyRate/?UniDbQuery.Posted=True&UniDbQuery.From={frm}&UniDbQuery.To={to}"
 ZQ_URL = "https://query1.finance.yahoo.com/v8/finance/chart/{sym}?range=5d&interval=1d"
-# more curves for WB: Bank of Canada (Valet API), Reserve Bank of Australia (table F2)
 BOC_URL = ("https://www.bankofcanada.ca/valet/observations/BD.CDN.2YR.DQ.YLD,BD.CDN.5YR.DQ.YLD,BD.CDN.10YR.DQ.YLD,"
            "BD.CDN.LONG.DQ.YLD/json?recent=40")
 RBA_URL = "https://www.rba.gov.au/statistics/tables/csv/f2-data.csv"
-# money-market rates (MMR): New York Fed, ECB, Bank of England, Bank of Russia, Moscow Exchange
 NYFED_URL = "https://markets.newyorkfed.org/api/rates/{kind}/{k}/last/2.json"
 ESTR_URL = "https://data-api.ecb.europa.eu/service/data/EST/B.EU000A2X2A25.WT?lastNObservations=3&format=csvdata"
 SONIA_URL = ("https://www.bankofengland.co.uk/boeapps/database/_iadb-fromshowcolumns.asp?csv.x=yes&Datefrom={frm}"
@@ -77,7 +65,6 @@ def tenor_years(t):
 
 
 def curve_from_rows(rows, labels):
-    """rows: [(date, {label: value})] по возрастанию даты → текущая кривая и кривые неделю и месяц назад."""
     rows = [(d, v) for d, v in rows if any(v.get(l) is not None for l in labels)]
     if not rows:
         return None
@@ -119,7 +106,7 @@ def parse_ust(text):
 
 def us_curve(today):
     rows = parse_ust(_get(UST_URL.format(y=today.year)).decode("utf-8", "replace"))
-    if len(rows) < 25:   # начало года: добавим прошлый год для сравнения «месяц назад»
+    if len(rows) < 25:
         rows += parse_ust(_get(UST_URL.format(y=today.year - 1)).decode("utf-8", "replace"))
     return curve_from_rows(rows, [l for _, l in UST_COLS])
 
@@ -129,7 +116,6 @@ BBK_TENORS = [("R01XX", "1Y"), ("R02XX", "2Y"), ("R03XX", "3Y"), ("R05XX", "5Y")
 
 
 def parse_bbk(text):
-    """CSV Бундесбанка: строка заголовка с кодами рядов, затем «дата;значение;флаг;…» (запятая — десятичная)."""
     lines = text.lstrip("﻿").splitlines()
     head = next((l for l in lines if "BBSIS" in l), "")
     cols = [c.strip('"') for c in head.split(";")]
@@ -247,7 +233,6 @@ def ru_curve(today):
 
 
 def parse_boc(payload):
-    """Bank of Canada Valet: {observations: [{d: date, SERIES: {v: "2.61"}}]} → rows for curve_from_rows."""
     names = {"BD.CDN.2YR.DQ.YLD": "2Y", "BD.CDN.5YR.DQ.YLD": "5Y", "BD.CDN.10YR.DQ.YLD": "10Y", "BD.CDN.LONG.DQ.YLD": "30Y"}
     rows = []
     for o in (payload or {}).get("observations") or []:
@@ -264,7 +249,6 @@ def ca_curve(today):
 
 
 def parse_rba(text):
-    """RBA table F2: a header block, a "Series ID" line, then "16-Oct-2026,3.51,3.62,3.88,4.31,1.95"."""
     rows, started = [], False
     for line in text.splitlines():
         parts = [p.strip() for p in line.split(",")]
@@ -286,7 +270,6 @@ def au_curve(today):
     return curve_from_rows(rows[-60:], ["2Y", "3Y", "5Y", "10Y"])
 
 
-# Chinese and Arabic names of the curves and central banks (by the English name): name_zh / name_ar in rates.json
 NAMES_XL = {
     "United States": ("美国", "الولايات المتحدة"), "Germany": ("德国", "ألمانيا"), "Euro area (AAA)": ("欧元区（AAA）", "منطقة اليورو (AAA)"),
     "United Kingdom": ("英国", "المملكة المتحدة"), "Japan": ("日本", "اليابان"), "Russia (OFZ)": ("俄罗斯（OFZ）", "روسيا (OFZ)"),
@@ -303,12 +286,10 @@ NAMES_XL = {
 
 
 def names_xl(name):
-    """{"name_zh": …, "name_ar": …} for an English name (empty if there is no translation)."""
     zh, ar = NAMES_XL.get(name, (None, None))
     return {"name_zh": zh, "name_ar": ar} if zh else {}
 
 
-# code, (English name, Russian name), flag, loader, fallback (code, names, loader)
 CURVES = [
     ("US", ("United States", "США"), "🇺🇸", us_curve, None),
     ("DE", ("Germany", "Германия"), "🇩🇪", de_curve, ("EA", ("Euro area (AAA)", "Еврозона (AAA)"), ea_curve)),
@@ -371,7 +352,6 @@ def parse_cbr(html_text):
 def cb_rates(today):
     codes = "+".join(c for c, _, _ in CB)
     data = parse_bis(_get(BIS_URL.format(c=codes, n=600), timeout=60).decode("utf-8", "replace"))
-    # свежие источники поверх BIS (там данные обновляются раз в неделю)
     try:
         ref = json.loads(_get(EFFR_URL))["refRates"][0]
         lo, hi = _f(ref.get("targetRateFrom")), _f(ref.get("targetRateTo"))
@@ -401,13 +381,11 @@ def cb_rates(today):
 
 
 # ---------------------------------------------------------------------------
-# WIRP: ожидания по ставке ФРС из фьючерсов на ставку по федеральным фондам
 # ---------------------------------------------------------------------------
 MONTHS_EN = {m: i for i, m in enumerate(calendar.month_name) if m}
 
 
 def parse_fomc(html_text):
-    """Даты заседаний (последний день) из календаря ФРС."""
     heads = [(m.start(), int(m.group(1))) for m in re.finditer(r"(\d{4}) FOMC Meetings", html_text)]
     out = []
     for m in re.finditer(r'fomc-meeting__month[^>]*>\s*<strong>([^<]+)</strong>.{0,300}?fomc-meeting__date[^>]*>([^<]+)<',
@@ -438,12 +416,6 @@ def zq_symbol(y, m):
 
 
 def implied_path(effr, meetings, avg):
-    """
-    Классический метод CME FedWatch.
-    effr — текущая эффективная ставка; meetings — даты заседаний (по возрастанию, будущие);
-    avg — {(год, месяц): средняя ставка месяца из фьючерса = 100 − цена}.
-    Возвращает [{date, rate_before, rate_after, d_bp, cum_bp}].
-    """
     out = []
     rate = effr
     by_month = {}
@@ -452,12 +424,12 @@ def implied_path(effr, meetings, avg):
     for d in meetings:
         ym = (d.year, d.month)
         n = calendar.monthrange(d.year, d.month)[1]
-        before_days = d.day          # решение действует со следующего дня
+        before_days = d.day
         after_days = n - d.day
         nxt = (d.year + (d.month == 12), d.month % 12 + 1)
         after = None
         if (after_days < 7 or ym not in avg) and nxt in avg and nxt not in by_month:
-            after = avg[nxt]          # заседание в конце месяца: берём следующий месяц без заседаний
+            after = avg[nxt]
         elif ym in avg and after_days > 0:
             after = (avg[ym] * n - rate * before_days) / after_days
         elif nxt in avg:
@@ -471,7 +443,6 @@ def implied_path(effr, meetings, avg):
 
 
 def probabilities(d_bp, step=25.0):
-    """Вероятности решения на заседании по ожидаемому изменению (б.п.)."""
     x = d_bp / step
     if x >= 0:
         k = int(x)
@@ -521,7 +492,6 @@ def wirp(today):
 # Денежный рынок (MMR): ставки овернайт
 # ---------------------------------------------------------------------------
 def _pair(obs):
-    """[(date, value)] → (last date, last value, previous value)."""
     obs = sorted(o for o in obs if o[1] is not None)
     if not obs:
         return None
@@ -561,7 +531,6 @@ def parse_rusfar(payload):
     return (r.get("TRADEDATE"), v, _f(r.get("LASTVALUE")) if r.get("CURRENTVALUE") else None) if v is not None else None
 
 
-# key, country, English, Russian, loader
 MM = [
     ("SOFR", "US", "Secured overnight financing rate", "Обеспеченная ставка овернайт (SOFR)",
      lambda t: parse_nyfed(json.loads(_get(NYFED_URL.format(kind="secured", k="sofr"))))),
@@ -591,7 +560,7 @@ def money_markets(today, prev=None):
                 continue
         except Exception as e:
             print(f"  ! money market {k}: {type(e).__name__}: {e}"[:200])
-        if k in old:   # keep the last known value rather than lose the row
+        if k in old:
             out.append(old[k])
     return out
 
@@ -606,7 +575,6 @@ def load_previous(path=RATES_FILE):
 
 
 def build(now=None, path=RATES_FILE, max_age_h=2.0, force=False):
-    """Обновляет docs/rates.json не чаще раза в max_age_h часов (каждая часть — отдельно)."""
     now = now or datetime.now(timezone.utc)
     prev = load_previous(path)
     if not force and prev.get("updated", "") > (now - timedelta(hours=max_age_h)).isoformat():

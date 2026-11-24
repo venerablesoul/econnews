@@ -1,5 +1,3 @@
-"""Checks the live data the news bot published on GitHub (the gh-pages branch, see git_sync in news_bot.py).
-Run: python3 tests/check_live.py  → "LIVE DATA OK" when everything is in place."""
 import json
 import os
 import subprocess
@@ -86,7 +84,6 @@ else:
     if not a or not q or q[0].get("rev") is None:
         problems.append(f"{ls[0]} has no revenue")
 
-# deep company data, option snapshots, IMF forecasts and the Moscow Exchange (company.py, options.py, macro.py, moex.py)
 co = git("ls-tree", "--name-only", REF, "docs/co/").stdout.split()
 op = git("ls-tree", "--name-only", REF, "docs/opt/").stdout.split()
 print(f"docs/co: company files {len(co)} · docs/opt: option snapshots {len(op)}")
@@ -115,8 +112,6 @@ for name, check in (("docs/macro.json", lambda x: len(x.get("rows") or []) >= 20
     except FileNotFoundError:
         problems.append("no " + name)
 
-# option analytics (gex.py: options.py for US options, deribit.py for BTC/ETH), oil chokepoints (chokepoints.py),
-# tankers (ais.py — only with the AISSTREAM_API_KEY secret)
 for sym, hours in (("BTC", 2), ("ETH", 2), ("SPX", 80), ("NDX", 80), ("SPY", 80)):
     try:
         g = show(f"docs/gex/{sym}.json")
@@ -164,7 +159,7 @@ try:
     with_img = [x["id"] for x in st_.get("sites") or [] if x.get("imgs")]
     print(f"sat.json: checked {st_.get('checked')}, hubs with pictures {len(with_img)}/{len(st_.get('sites') or [])}"
           + (f", errors: {st_['err']}" if st_.get("err") else ""))
-    if st_.get("sites") and not with_img and all(x.get("checked") for x in st_["sites"]):   # every hub tried, none has a picture
+    if st_.get("sites") and not with_img and all(x.get("checked") for x in st_["sites"]):
         problems.append("no satellite pictures after a full round: " + str(st_.get("err")))
 except FileNotFoundError:
     print("sat.json: none yet (the bot adds 3 hubs per run)")

@@ -1,16 +1,3 @@
-"""
-Deep company data for the terminal and the bot — the Bloomberg functions DES (profile, management),
-EE (estimates), ANR (price targets, rating changes), HDS (holders), SI (short interest), DVD (dividends)
-and CF (filings). Result: docs/co/<TICKER>.json for the ~100 largest US companies (stocks.UNIVERSE),
-refreshed a few companies per run so that every company is at most ~12 hours old.
-
-Free sources, no keys:
-  Yahoo Finance quoteSummary — the same data the Yahoo website shows; it needs a session cookie and a "crumb"
-      token, which we get the way a browser does (fc.yahoo.com → getcrumb)
-  Yahoo chart events        — dividend and split history
-  Nasdaq                    — short interest history (published twice a month)
-  Wikipedia                 — a short company description in English and Russian (refreshed weekly)
-"""
 from __future__ import annotations
 
 import gzip
@@ -26,7 +13,7 @@ from datetime import datetime, timedelta, timezone
 import stocks
 
 UA = stocks.UA
-RESEARCH_UA = "EconNews research bot econnews@example.com"   # Wikipedia asks for an identifying User-Agent
+RESEARCH_UA = "EconNews research bot econnews@example.com"
 HERE = os.path.dirname(os.path.abspath(__file__))
 CO_DIR = os.path.join(HERE, "docs", "co")
 
@@ -42,7 +29,6 @@ MODULES = ("assetProfile", "summaryDetail", "defaultKeyStatistics", "financialDa
            "upgradeDowngradeHistory", "institutionOwnership", "fundOwnership", "majorHoldersBreakdown",
            "insiderHolders", "calendarEvents", "earningsHistory", "secFilings", "netSharePurchaseActivity", "price")
 
-# words that show a Wikipedia page is about a company (not a fruit, a planet or a person)
 COMPANY_WORDS = ("company", "corporation", "conglomerate", "bank", "manufacturer", "retailer", "holding", "firm",
                  "insurer", "multinational", "provider", "operator", "maker", "producer", "chain", "airline",
                  "railroad", "pharmaceutical", "biotechnology", "semiconductor", "software", "restaurant",
@@ -54,7 +40,6 @@ COMPANY_WORDS = ("company", "corporation", "conglomerate", "bank", "manufacturer
 # HTTP
 # ---------------------------------------------------------------------------
 class Session:
-    """A cookie-keeping HTTP session (Yahoo needs its cookie together with the crumb)."""
 
     def __init__(self):
         self.jar = http.cookiejar.CookieJar()
@@ -75,7 +60,7 @@ class Session:
 
     def yahoo_login(self):
         try:
-            self.get("https://fc.yahoo.com", timeout=20)   # answers 404 but sets the session cookie
+            self.get("https://fc.yahoo.com", timeout=20)
         except Exception:
             pass
         crumb = self.get("https://query2.finance.yahoo.com/v1/test/getcrumb").decode("utf-8", "replace").strip()
@@ -91,7 +76,7 @@ class Session:
             try:
                 d = self.json(url)
             except urllib.error.HTTPError as e:
-                if e.code == 401 and attempt == 0:   # the crumb expired — log in again once
+                if e.code == 401 and attempt == 0:
                     self.crumb = None
                     continue
                 raise
@@ -106,7 +91,6 @@ class Session:
 # Parsing Yahoo's quoteSummary
 # ---------------------------------------------------------------------------
 def raw(x):
-    """Yahoo wraps numbers as {"raw": 1.5, "fmt": "1.50"}; empty values come as {}."""
     if isinstance(x, dict):
         return x.get("raw")
     return x
@@ -128,7 +112,6 @@ def num(x, nd=None, scale=1.0):
 
 
 def day(x):
-    """A date as YYYY-MM-DD from {"raw": epoch, "fmt": "2026-06-30"} or from an epoch number."""
     if isinstance(x, dict):
         if isinstance(x.get("fmt"), str) and re.match(r"^\d{4}-\d{2}-\d{2}$", x["fmt"]):
             return x["fmt"]
@@ -141,12 +124,10 @@ def day(x):
 
 
 def items(lst):
-    """Real list entries only (our trimmed test fixtures add {"_more": n})."""
     return [x for x in (lst or []) if isinstance(x, dict) and "_more" not in x]
 
 
 def clean(d):
-    """Drops empty values so the files stay small."""
     if isinstance(d, dict):
         out = {}
         for k, v in d.items():
@@ -254,7 +235,6 @@ def parse_next(r):
 
 
 def _fund(name):
-    """'VANGUARD INDEX FUNDS-Vanguard 500 Index Fund' -> 'Vanguard 500 Index Fund' (the trust's name is noise)."""
     head, sep, tail = (name or "").partition("-")
     return tail.strip() if sep and len(head) > 3 and len(tail.strip()) > 3 else name
 
@@ -282,7 +262,7 @@ def parse_holders(r):
 
 def parse_dividend_summary(r):
     sd, ks, ce = r.get("summaryDetail") or {}, r.get("defaultKeyStatistics") or {}, r.get("calendarEvents") or {}
-    rate = num(sd.get("dividendRate"), 4) or num(sd.get("trailingAnnualDividendRate"), 4) or None   # 0 = pays nothing
+    rate = num(sd.get("dividendRate"), 4) or num(sd.get("trailingAnnualDividendRate"), 4) or None
     return {"rate": rate, "yield": num(sd.get("dividendYield"), 3, 100.0) or None, "payout": num(sd.get("payoutRatio"), 2, 100.0) if rate else None,
             "avg5y": num(sd.get("fiveYearAvgDividendYield"), 2), "ex": day(ce.get("exDividendDate")) or day(sd.get("exDividendDate")),
             "pay": day(ce.get("dividendDate")), "last": num(ks.get("lastDividendValue"), 4), "last_d": day(ks.get("lastDividendDate")),
@@ -306,7 +286,6 @@ def parse_filings(r, limit=30):
 
 
 def parse_summary(r):
-    """Everything from one quoteSummary answer, in the shape stored in docs/co/<T>.json."""
     return {"profile": parse_profile(r), "stats": parse_stats(r), "targets": parse_targets(r), "ratings": parse_ratings(r),
             "est": parse_estimates(r), "hist": parse_history(r), "next": parse_next(r), "holders": parse_holders(r),
             "div": parse_dividend_summary(r), "short": parse_short(r), "filings": parse_filings(r)}
@@ -358,7 +337,6 @@ def wiki_pick(s, x):
 
 
 def fetch_wiki(s, name):
-    """English and Russian Wikipedia summaries of the company (best effort)."""
     q = urllib.parse.quote(f'"{name}" company' if len(name.split()) < 2 else name)
     hits = (s.json(WIKI_SEARCH_URL.format(q=q), ua=RESEARCH_UA).get("query") or {}).get("search") or []
     for h in hits[:3]:
@@ -390,7 +368,6 @@ def load(path):
 
 
 def build_one(s, t, now, prev=None):
-    """One company: returns the dict for docs/co/<t>.json (raises if Yahoo gives nothing)."""
     prev = prev or {}
     r = s.quote_summary(stocks.yahoo_sym(t))
     data = {"s": t, "updated": now.isoformat(), **parse_summary(r)}
@@ -406,7 +383,6 @@ def build_one(s, t, now, prev=None):
     except Exception as e:
         print(f"  ! short interest {t}: {type(e).__name__}: {e}"[:200])
         data["short"]["rows"] = (prev.get("short") or {}).get("rows", [])
-    # Wikipedia changes slowly: once a week
     wiki_at = prev.get("wiki_at", "")
     if prev.get("wiki") is not None and wiki_at > (now - timedelta(days=7)).isoformat():
         data["wiki"], data["wiki_at"] = prev["wiki"], wiki_at
@@ -421,7 +397,6 @@ def build_one(s, t, now, prev=None):
 
 
 def build(now=None, limit=6, max_age_h=12, sleep=1.0, tickers=None, out_dir=CO_DIR, session=None):
-    """Refreshes the `limit` oldest company files. Returns how many were written."""
     now = now or datetime.now(timezone.utc)
     tickers = tickers or [t for t, *_ in stocks.UNIVERSE]
     os.makedirs(out_dir, exist_ok=True)
@@ -442,7 +417,7 @@ def build(now=None, limit=6, max_age_h=12, sleep=1.0, tickers=None, out_dir=CO_D
         except Exception as e:
             print(f"  ! company {t}: {type(e).__name__}: {e}"[:200])
             if "401" in str(e) or "crumb" in str(e).lower():
-                break   # Yahoo refuses the session — try again next run
+                break
         time.sleep(sleep)
     return done
 

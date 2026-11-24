@@ -1,5 +1,3 @@
-// A stand-in for Binance's public streams in browser tests: an order book around 61,280 that keeps changing
-// (depth diffs with consecutive update ids, starting right after the REST snapshot's id 1000) and trades.
 (function(){
   var Real = window.WebSocket;
   var seed = 7; function rnd(){ seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646 }
@@ -16,8 +14,7 @@
     var b = [], a = [];
     for (var i = 0; i < 12; i++) { b.push([(Math.round(this.mid) - 1 - Math.floor(rnd() * 150)).toFixed(2), (rnd() < 0.15 ? 0 : rnd() * (rnd() < 0.05 ? 40 : 3)).toFixed(4)]); a.push([(Math.round(this.mid) + 1 + Math.floor(rnd() * 150)).toFixed(2), (rnd() < 0.15 ? 0 : rnd() * (rnd() < 0.05 ? 40 : 3)).toFixed(4)]) }
     b.push([(Math.round(this.mid) - 1).toFixed(2), (1 + rnd() * 2).toFixed(4)]); a.push([(Math.round(this.mid) + 1).toFixed(2), (1 + rnd() * 2).toFixed(4)]);
-    this.mid = Math.max(61230, Math.min(61330, this.mid));   // stays near the REST snapshot
-    // levels that the move has crossed are emptied, so the book never crosses
+    this.mid = Math.max(61230, Math.min(61330, this.mid));
     var m0 = Math.round(this.mid);
     for (var c = 0; c < 8; c++) { b.push([(m0 + c).toFixed(2), '0']); a.push([(m0 - c).toFixed(2), '0']) }
     this.emit(pair + '@depth@100ms', {e: 'depthUpdate', U: this.id + 1, u: this.id + 3, b: b, a: a}); this.id += 3;

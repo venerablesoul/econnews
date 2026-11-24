@@ -1,12 +1,3 @@
-"""
-Bitcoin and Ether options from Deribit (the largest crypto options exchange) for GEX, VOLS, GRK and GEXH,
-and DVOL — Deribit's 30-day implied volatility index ("the VIX of bitcoin").
-
-Public market data: no key, no account. One request gives every listed option of a coin with its open interest,
-mark implied volatility and the price of its expiry's future; the greeks are computed in gex.py.
-Deribit does not allow browsers (no CORS), so the bot reads it and the terminal gets docs/gex/BTC.json, ETH.json.
-Contract size: 1 coin, so GEX here is in dollars per 1% move like for US options.
-"""
 from __future__ import annotations
 
 import gzip
@@ -41,7 +32,6 @@ def get(path, params, timeout=30):
 
 
 def parse_name(name):
-    """BTC-27NOV26-60000-C → ('2026-11-27', 'C', 60000.0); None for anything else."""
     try:
         coin, exp, k, cp = str(name).split("-")
         day, mon, yy = int(exp[:-5]), MONTHS[exp[-5:-2]], int(exp[-2:])
@@ -53,7 +43,6 @@ def parse_name(name):
 
 
 def chain_from(summary, now):
-    """Deribit's book summary → normalized options (expiry at 08:00 UTC, implied volatility in %)."""
     out = []
     for x in summary or []:
         if not isinstance(x, dict):
@@ -75,7 +64,6 @@ def chain_from(summary, now):
 
 
 def dvol_series(rows):
-    """[[ms, open, high, low, close], ...] → [[iso hour, close], ...]"""
     out = []
     for r in rows or []:
         if isinstance(r, list) and len(r) >= 5 and isinstance(r[4], (int, float)):
@@ -84,7 +72,6 @@ def dvol_series(rows):
 
 
 def build(now=None, out_dir=None, fetcher=get, every_min=EVERY_MIN, sleep=0.5):
-    """Refreshes BTC and ETH every 15 minutes. Returns how many were written."""
     now = now or datetime.now(timezone.utc)
     out_dir = out_dir or gex.GEX_DIR
     done = 0

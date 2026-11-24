@@ -1,10 +1,7 @@
-// A local bot server for the terminal e2e tests: the real worker/src code with faked external services.
-// Run: node tests/fake_server.mjs 8787
 import http from "node:http";
 import { PAGES, TOKEN, OWNER, KV, installMocks, dataJson, stocksJson, ratesJson, coAAPL, optAAPL, optionsJson, macroJson, moexJson, geoRoute } from "./mocks.mjs";
 import { wpeJson, ratesExtra, macroMap, auctionsJson } from "./geo_fixtures.mjs";
 import { readFileSync } from "node:fs";
-// option analytics written by the real gex.py (tests/make_gex_fixtures.py) and tankers as the bot would write them
 const gexFx = (n) => JSON.parse(readFileSync(new URL("./fixtures/pages/gex/" + n, import.meta.url), "utf8"));
 const now = Date.now(), iso = (ms) => new Date(ms).toISOString();
 const shipsJson = { updated: iso(now - 600e3), src: "aisstream.io", hours: 12,
@@ -27,7 +24,7 @@ http.createServer(async (req, res) => {
   try {
     const url = "http://127.0.0.1:" + port + req.url;
     const path = new URL(url).pathname;
-    if (path === "/__geo") {   // what a map source would answer (the browser's direct requests in the e2e tests)
+    if (path === "/__geo") {
       const body = geoRoute(new URL(new URL(url).searchParams.get("u")));
       res.writeHead(body && body.__status ? body.__status : 200, { "content-type": "application/json", "Access-Control-Allow-Origin": "*" });
       return res.end(JSON.stringify(body === undefined ? { error: "no fixture" } : body));

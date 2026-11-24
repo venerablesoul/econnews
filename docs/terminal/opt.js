@@ -1,14 +1,3 @@
-/* Options analytics — dealer positioning and volatility.
-   GEX  — exposure by strike: gamma of calls (+) and puts (−), net, the front expiry only, vanna, charm, open interest
-   LVL  — key levels (gamma flip, call and put walls, the biggest + and − gamma, max pain) and the expected move:
-          ±1σ for a day and a week from the 30-day implied volatility, the at-the-money straddle; total GEX vs price
-   VOLS — the implied volatility surface in 3D (drag to turn), the smile of an expiry, the term structure; DVOL for crypto
-   GRK  — greeks by strike and expiry: delta, gamma (per 1% move), theta (per day), vega (per vol point): table or 3D
-   GEXH — history: the interval map (GEX by strike through the session) and one point a day (GEX, the flip, IV)
-   Levels can also be drawn on the TECH chart (the GEX chip there).
-   Data: docs/gex/<SYM>.json and docs/gex/hist/<SYM>.json from the bot (gex.py): US options from Cboe or Yahoo
-   (15+ minutes delayed, refreshed every 15 min for the indexes and big ETFs, hourly for the core stocks),
-   BTC and ETH options from Deribit (every 15 min). The dealer side is the usual public estimate, not real positions. */
 (function(){
 'use strict';
 var T = window.TERM, F = window.FN;
@@ -18,7 +7,6 @@ var $ = T.$, el = T.el, TX = T.TX, I = T.I, fmt = T.fmt, pct = T.pct, cls = T.cl
 var MAIN = ['SPX', 'NDX', 'SPY', 'QQQ', 'IWM', 'BTC', 'ETH'];
 var STOCKS = ['AAPL', 'MSFT', 'NVDA', 'AMZN', 'GOOGL', 'META', 'TSLA', 'AVGO', 'AMD', 'NFLX', 'JPM', 'BAC', 'XOM', 'WMT', 'COST', 'LLY', 'UNH', 'V', 'MA', 'ORCL', 'INTC', 'PLTR'];
 var ALL = MAIN.concat(STOCKS);
-// what other names of the same thing mean here
 var SYN = {'S&P': 'SPX', 'SP500': 'SPX', 'SPX500': 'SPX', 'ES': 'SPX', 'NASDAQ': 'NDX', 'NQ': 'NDX', 'NDX100': 'NDX', 'RTY': 'IWM', 'RUSSELL': 'IWM',
   'BINANCE:BTCUSDT': 'BTC', 'BTCUSDT': 'BTC', 'BTCUSD': 'BTC', 'XBT': 'BTC', 'BINANCE:ETHUSDT': 'ETH', 'ETHUSDT': 'ETH', 'ETHUSD': 'ETH', 'БИТКОИН': 'BTC', 'ЭФИР': 'ETH'};
 function norm(s){ s = F.upSym(s).replace(/^\^/, ''); return SYN[s] || s }
@@ -36,13 +24,12 @@ function alpha(hex, a){
   var m = /^#?([0-9a-f]{6})$/i.exec(String(hex).trim()); if (!m) return hex;
   var n = parseInt(m[1], 16); return 'rgba(' + (n >> 16) + ',' + ((n >> 8) & 255) + ',' + (n & 255) + ',' + a + ')';
 }
-// a calm sequential scale (deep blue → teal → sand) and a diverging one (red ↔ grey ↔ green)
 var SEQ = [[30, 41, 66], [37, 88, 120], [41, 135, 140], [96, 170, 128], [190, 190, 120], [232, 196, 120]];
 function seq(t){
   t = Math.max(0, Math.min(1, t)) * (SEQ.length - 1); var i = Math.min(SEQ.length - 2, Math.floor(t)), f = t - i, a = SEQ[i], b = SEQ[i + 1];
   return 'rgb(' + Math.round(a[0] + (b[0] - a[0]) * f) + ',' + Math.round(a[1] + (b[1] - a[1]) * f) + ',' + Math.round(a[2] + (b[2] - a[2]) * f) + ')';
 }
-function div(t){   // −1..1
+function div(t){
   t = Math.max(-1, Math.min(1, t || 0)); var g = [70, 76, 86], e = t > 0 ? [52, 160, 115] : [205, 80, 72], f = Math.abs(t);
   return 'rgb(' + Math.round(g[0] + (e[0] - g[0]) * f) + ',' + Math.round(g[1] + (e[1] - g[1]) * f) + ',' + Math.round(g[2] + (e[2] - g[2]) * f) + ')';
 }
@@ -87,7 +74,6 @@ function tip(lines, e){
 }
 function untip(){ $('tm-tip').style.display = 'none' }
 
-// a small x/y chart: lines, bars, horizontal and vertical marks, a hover read-out
 function plot(wrap, spec){
   keep(wrap, function(){
     var c = canvasIn(wrap); if (!c) return;
@@ -120,7 +106,6 @@ function plot(wrap, spec){
       s.x.forEach(function(x, i){ var v = s.y[i]; if (v == null || x == null) { on = false; return } var a = X(x), b = (s.Y || Y)(v); if (!on) { g.moveTo(a, b); on = true } else g.lineTo(a, b) });
       g.strokeStyle = s.color; g.lineWidth = s.width || 1.5; g.setLineDash(s.dash || []); g.stroke(); g.setLineDash([]); g.lineWidth = 1;
     });
-    // the legend
     var lx = L + (spec.title ? g.measureText(spec.title + '   ').width : 0);
     (spec.lines || []).concat(spec.bars || []).forEach(function(s){ if (!s.name) return; g.fillStyle = s.legend || s.color || K.muted; g.fillText(s.name, lx, 10); lx += g.measureText(s.name + '   ').width });
     c.cv.onmousemove = function(e){
@@ -224,8 +209,8 @@ function bars(wrap, d){
     var s = series(d), LBL = 62, R = 12, TOP = 8, B = 18, rowH = (H - TOP - B) / n;
     var vals = s.n ? s.n : s.a.concat(s.b), mx = Math.max.apply(null, vals.map(function(v){ return Math.abs(v || 0) })) || 1;
     var x0 = LBL + (W - LBL - R) / 2, half = (W - LBL - R) / 2 - 4;
-    var Yk = function(i){ return TOP + (n - 1 - i + 0.5) * rowH };           // strikes from the bottom (low) to the top (high)
-    var Yp = function(p){   // the y of a price between strikes
+    var Yk = function(i){ return TOP + (n - 1 - i + 0.5) * rowH };
+    var Yp = function(p){
       if (p == null) return null;
       if (p <= ks[0]) return Yk(0) + (ks[0] - p) / ((ks[1] - ks[0]) || 1) * rowH;
       for (var i = 1; i < n; i++) if (p <= ks[i]) return Yk(i - 1) - (p - ks[i - 1]) / (ks[i] - ks[i - 1]) * rowH;
@@ -244,7 +229,6 @@ function bars(wrap, d){
         g.fillStyle = alpha(K.down, 0.75); var wb = Math.abs(b) / mx * half; g.fillRect(x0 - wb, y - bh / 2, wb, bh);
       }
     }
-    // the price, the flip and the walls
     var mark = function(p, col, label, dash){ var y = Yp(p); if (y == null || y < TOP - 2 || y > H - B + 2) return; g.strokeStyle = col; g.setLineDash(dash || []); g.beginPath(); g.moveTo(LBL - 4, y); g.lineTo(W - R, y); g.stroke(); g.setLineDash([]); var tw = g.measureText(label).width; g.fillStyle = alpha(K.panel, 0.85); g.fillRect(W - R - tw - 6, y - 15, tw + 6, 14); g.fillStyle = col; g.fillText(label, W - R - tw - 3, y - 8) };
     mark(lv.zero, K.acc, TX('gex_flip') + ' ' + px(lv.zero, S), [5, 4]);
     mark(S, K.text, TX('gex_spot') + ' ' + px(S), [2, 3]);
@@ -279,11 +263,9 @@ function drawLvl(box, d){
   if (em.d1) { row(TX('gex_em_lo'), S - em.d1, TX('gex_em_t', fmt(em.d1_pct, 2), ivp(em.iv30))); row(TX('gex_em_hi'), S + em.d1, '') }
   if (em.w1) { row(TX('gex_emw_lo'), S - em.w1, ''); row(TX('gex_emw_hi'), S + em.w1, '') }
   if (em.straddle) row(TX('gex_straddle', F.dmy(em.front)), S + em.straddle, TX('gex_straddle_t', px(em.straddle, S), fmt(em.straddle_pct, 2)));
-  // the VIX gives the S&P 500 its own expected move; DVOL does the same for bitcoin and ether
   var vix = d.s === 'SPX' && T.Q.VIX && T.Q.VIX.value, vol = vix || d.dvol;
   if (vol) { var sd = S * vol / 100 / Math.sqrt(d.kind === 'crypto' ? 365 : 252); row(TX(vix ? 'gex_vix' : 'gex_dvol', fmt(vol, 1)), S + sd, TX('gex_vix_t', '±' + px(sd, S), px(S - sd, S))) }
   var sc = el('div', 'gx-tbl'); sc.appendChild(t.t); box.appendChild(sc);
-  // the chart needs the same instrument: TECH has no Nasdaq-100 chart (its "Nasdaq" is the Composite)
   if (chartSym(d.s)) {
     var a = el('div', 'actions');
     var b = el('button', null, TX('gex_on_chart')); b.onclick = function(){ if (window.TECH && TECH.showGex) TECH.showGex(chartSym(d.s)) }; a.appendChild(b);
@@ -332,7 +314,6 @@ function drawVols(box, d){
   note(box, TX('gex_vols_note'));
 }
 
-// a surface drawn as shaded quads, back to front; drag turns it
 function surface(wrap, zs, o){
   var st = wrap.__st || (wrap.__st = {yaw: -0.75, pitch: 0.55});
   keep(wrap, function(){
@@ -342,12 +323,11 @@ function surface(wrap, zs, o){
     if (!zv.length) return;
     var zlo = Math.min.apply(null, zv), zhi = Math.max.apply(null, zv), zsp = (zhi - zlo) || 1;
     var cy = Math.cos(st.yaw), sy = Math.sin(st.yaw), cp = Math.cos(st.pitch), sp = Math.sin(st.pitch);
-    var raw = function(i, j, z){   // grid i (x), j (y), z 0..1 → a unit view
+    var raw = function(i, j, z){
       var x = (i / (nx - 1) - 0.5) * 2, y = (j / Math.max(ny - 1, 1) - 0.5) * 2, h = (z - 0.5) * 1.5;
       var rx = x * cy - y * sy, ry = x * sy + y * cy;
       return [rx, -(h * cp - ry * sp) * 0.9, ry * cp + h * sp];
     };
-    // scale and centre so that the whole box (all corners, low and high) fits with room for the labels
     var bx = [], by = [];
     [0, nx - 1].forEach(function(i){ [0, ny - 1].forEach(function(j){ [0, 1].forEach(function(z){ var q = raw(i, j, z); bx.push(q[0]); by.push(q[1]) }) }) });
     var minx = Math.min.apply(null, bx), maxx = Math.max.apply(null, bx), miny = Math.min.apply(null, by), maxy = Math.max.apply(null, by);
@@ -362,7 +342,6 @@ function surface(wrap, zs, o){
       var p = [P(i, j, n[0]), P(i + 1, j, n[1]), P(i + 1, j + 1, n[2]), P(i, j + 1, n[3])];
       quads.push({p: p, d: (p[0][2] + p[1][2] + p[2][2] + p[3][2]) / 4, t: (n[0] + n[1] + n[2] + n[3]) / 4});
     }
-    // the floor grid and axes
     g.strokeStyle = alpha(K.text, 0.08);
     for (var a = 0; a < nx; a += Math.max(1, Math.floor(nx / 6))) { var f0 = P(a, 0, 0), f1 = P(a, ny - 1, 0); g.beginPath(); g.moveTo(f0[0], f0[1]); g.lineTo(f1[0], f1[1]); g.stroke() }
     for (var b = 0; b < ny; b += Math.max(1, Math.floor(ny / 6))) { var e0 = P(0, b, 0), e1 = P(nx - 1, b, 0); g.beginPath(); g.moveTo(e0[0], e0[1]); g.lineTo(e1[0], e1[1]); g.stroke() }
@@ -375,7 +354,6 @@ function surface(wrap, zs, o){
     for (var xi = 0; xi < nx; xi += Math.max(1, Math.floor(nx / 5))) { var q0 = P(xi, 0, 0); g.fillText(o.xl[xi], q0[0], q0[1] + 12) }
     for (var yi = 0; yi < ny; yi += Math.max(1, Math.floor(ny / 5))) { var q1 = P(nx - 1, yi, 0); g.fillText(o.yl[yi], q1[0] + 18, q1[1] + 4) }
     g.textAlign = 'left';
-    // the scale
     var gw = 120, gx = W - gw - 12, gy = 12;
     for (var s = 0; s < gw; s++) { g.fillStyle = seq(s / gw); g.fillRect(gx + s, gy, 1, 7) }
     g.fillStyle = K.muted; g.fillText(o.zfmt(zlo), gx, gy + 16); var hi = o.zfmt(zhi); g.fillText(hi, gx + gw - g.measureText(hi).width, gy + 16);
@@ -392,7 +370,6 @@ function surface(wrap, zs, o){
     wrap.style.touchAction = 'none';
   }
 }
-// the same numbers as a coloured table on a canvas, with a read-out
 function heatGrid(wrap, zs, o){
   keep(wrap, function(){
     var c = canvasIn(wrap); if (!c) return;
@@ -522,9 +499,6 @@ function intervalMap(wrap, pts, d){
 }
 
 /* ======================= levels for other functions (TECH, the bot brief) ======================= */
-// the key levels of a chart's symbol, or null; loads once a few minutes.
-// Only a chart of the very same instrument gets levels: the terminal's "Nasdaq" (and NDX, which the server charts as
-// "Nasdaq") is the Nasdaq Composite, not the Nasdaq-100, and the Russell 2000 index is not IWM's price.
 var CHART = {'S&P': 'SPX', 'SPX': 'SPX', 'SP500': 'SPX', 'BTCUSDT': 'BTC', 'BINANCE:BTCUSDT': 'BTC', 'ETHUSDT': 'ETH', 'BINANCE:ETHUSDT': 'ETH'};
 var NOT_SAME = {'NDX': 1, 'NASDAQ': 1, 'RTY': 1, 'RUSSELL': 1};
 function chartUnderlying(chartSymbol){

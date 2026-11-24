@@ -1,15 +1,3 @@
-"""
-Quotes for the market line, the picture with charts and the Markets page / terminal.
-(Names: "name" is Russian, "en" is English; "short"/"short_en" are used in the market line.)
-
-Котировки для строки рынка, картинки с графиками и страницы «Рынок онлайн».
-
-Бесплатные источники без ключей:
-  Yahoo Finance  — индексы США, нефть, золото, валюты, доходность, биткоин
-  ЦБ РФ          — официальные курсы доллара и юаня к рублю
-  Мосбиржа (ISS) — индекс Мосбиржи
-Если какой-то источник не ответил, этот инструмент просто пропускается.
-"""
 from __future__ import annotations
 
 import json
@@ -21,7 +9,6 @@ from datetime import datetime, timedelta, timezone
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
 MSK = timezone(timedelta(hours=3))
 
-# name — как показывать, short — коротко для строки в сообщении, digits — знаков после запятой
 INSTRUMENTS = [
     {"name": "S&P 500", "en": "S&P 500", "short": "S&P", "src": "yahoo", "sym": "^GSPC", "digits": 0},
     {"name": "Nasdaq", "en": "Nasdaq", "short": "Nasdaq", "src": "yahoo", "sym": "^IXIC", "digits": 0},
@@ -33,7 +20,6 @@ INSTRUMENTS = [
     {"name": "Индекс Мосбиржи", "en": "MOEX Russia index", "short": "IMOEX", "src": "moex", "sym": "IMOEX", "digits": 0},
     {"name": "USD/RUB (ЦБ)", "en": "USD/RUB (CBR)", "short": "USD/RUB", "short_en": "USD/RUB", "src": "cbr", "sym": "R01235", "digits": 2},
     {"name": "CNY/RUB (ЦБ)", "en": "CNY/RUB (CBR)", "short": "CNY/RUB", "src": "cbr", "sym": "R01375", "digits": 2},
-    # только на странице «Рынок онлайн» (chart: False — не попадают на картинку)
     {"name": "Газ (Henry Hub)", "en": "Natural gas (Henry Hub)", "short": "Газ", "src": "yahoo", "sym": "NG=F", "digits": 3, "prefix": "$", "chart": False},
     {"name": "Медь", "en": "Copper", "short": "Медь", "src": "yahoo", "sym": "HG=F", "digits": 3, "prefix": "$", "chart": False},
     {"name": "Доходность США 3 мес", "en": "US 3M yield", "short": "UST3M", "src": "yahoo", "sym": "^IRX", "digits": 2, "suffix": "%", "chart": False},
@@ -41,8 +27,6 @@ INSTRUMENTS = [
     {"name": "Доходность США 30 лет", "en": "US 30Y yield", "short": "UST30", "src": "yahoo", "sym": "^TYX", "digits": 2, "suffix": "%", "chart": False},
 ]
 
-# Только для терминала (docs/terminal): мировые индексы, валюты, сырьё.
-# terminal: True — не показываются на странице «Рынок онлайн» и на картинке.
 _T = {"src": "yahoo", "chart": False, "terminal": True}
 INSTRUMENTS += [
     {**_T, "name": "Dow Jones", "en": "Dow Jones", "short": "DJI", "sym": "^DJI", "digits": 0},
@@ -67,15 +51,11 @@ INSTRUMENTS += [
     {**_T, "name": "Пшеница", "en": "Wheat", "short": "Пшеница", "sym": "ZW=F", "digits": 0},
 ]
 
-# US stocks and ETFs of the terminal's US panel. The terminal gets them live from the bot server, but that server is on
-# Cloudflare, which Russian providers throttle: with these in data.json (GitHub Pages) the panel fills at once anyway.
-# ids = the terminal's tickers (docs/terminal/index.html, STOCKS).
 _US = [("SPY", "S&P 500 ETF"), ("QQQ", "Nasdaq 100 ETF"), ("DIA", "Dow Jones ETF"), ("IWM", "Russell 2000 ETF"),
        ("AAPL", "Apple"), ("MSFT", "Microsoft"), ("NVDA", "Nvidia"), ("AMZN", "Amazon"), ("GOOGL", "Alphabet"),
        ("META", "Meta"), ("TSLA", "Tesla")]
 INSTRUMENTS += [{**_T, "name": n, "en": n, "short": s, "sym": s, "digits": 2, "prefix": "$"} for s, n in _US]
 
-# адреса вынесены, чтобы их можно было подменить в тестах
 YAHOO_URL = "https://query1.finance.yahoo.com/v8/finance/chart/{sym}?range=5d&interval=30m"
 MOEX_URL = "https://iss.moex.com/iss/engines/stock/markets/index/securities/{sym}/candles.json?interval=60&from={frm}&iss.meta=off"
 CBR_URL = "https://www.cbr.ru/scripts/XML_dynamic.asp?date_req1={d1}&date_req2={d2}&VAL_NM_RQ={sym}"
@@ -88,7 +68,6 @@ def _get(url, timeout=15):
 
 
 def _day_change(series):
-    """Изменение: последняя цена против последней цены предыдущего торгового дня (по МСК)."""
     if len(series) < 2:
         return None
     last_t, last_v = series[-1]
@@ -126,7 +105,7 @@ def fetch_moex(sym):
 def fetch_cbr(sym):
     now = datetime.now(MSK)
     d1 = (now - timedelta(days=40)).strftime("%d/%m/%Y")
-    d2 = (now + timedelta(days=1)).strftime("%d/%m/%Y")  # ЦБ публикует курс на завтра заранее
+    d2 = (now + timedelta(days=1)).strftime("%d/%m/%Y")
     root = ET.fromstring(_get(CBR_URL.format(d1=d1, d2=d2, sym=sym)))
     series = []
     for rec in root.iter("Record"):
@@ -146,7 +125,6 @@ def _load(inst):
         if not series:
             return None
         if inst["src"] == "cbr":
-            # у ЦБ одно значение в день: изменение к предыдущей записи, на графике — 30 дней
             change = (series[-1][1] / series[-2][1] - 1) * 100 if len(series) >= 2 else None
             period = "30 дней"
         else:
@@ -170,7 +148,7 @@ def fmt_price(q, lang="ru"):
     d = q.get("digits", 2)
     s = f"{q['price']:,.{d}f}"
     if lang == "ru":
-        s = s.replace(",", " ").replace(".", ",")  # narrow space for thousands, comma for decimals
+        s = s.replace(",", " ").replace(".", ",")
     return f"{q.get('prefix', '')}{s}{q.get('suffix', '')}"
 
 
@@ -183,12 +161,10 @@ def fmt_change(q, lang="ru"):
     return s.replace(".", ",") if lang == "ru" else s
 
 
-# short names in the market line for Chinese and Arabic readers (the rest are tickers everyone knows)
 SHORT_XL = {"Золото": {"zh": "黄金", "ar": "الذهب"}, "Brent": {"zh": "布伦特", "ar": "برنت"}}
 
 
 def strip_line(quotes, keys=("S&P", "Brent", "Золото", "USD/RUB", "IMOEX", "BTC"), lang="ru"):
-    """Short market line for message headers (short names in the reader's language)."""
     by = {q["short"]: q for q in quotes}
     if lang == "ru":
         label = lambda q: q["short"]  # noqa: E731
@@ -199,7 +175,6 @@ def strip_line(quotes, keys=("S&P", "Brent", "Золото", "USD/RUB", "IMOEX",
 
 
 def to_json(quotes, points=60):
-    """Компактный вид для страницы: цена, изменение, упрощённая серия для спарклайна."""
     out = []
     for q in quotes:
         vals = [v for _, v in q["series"]]

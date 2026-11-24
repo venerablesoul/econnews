@@ -1,22 +1,15 @@
 name: Keep the news bot running
 
-# A safety net. Normally every news session queues the next one itself (relay.py), so the bot runs around the clock.
-# If that chain ever breaks (GitHub was down, a session crashed before its first check), this starts a session again.
-# It never starts a second copy and never touches a workflow disabled by hand. It also keeps both workflows from
-# being switched off for inactivity (GitHub does that to scheduled workflows after 60 days without commits).
-# GitHub runs schedules late and skips some — fine for a safety net.
-
 on:
   schedule:
-    - cron: "17,47 * * * *"   # off the busy :00/:30 marks
+    - cron: "17,47 * * * *"
   push:
     branches: [main]
-    # a changed news.yml applies from the next session: the session already waiting is replaced by a fresh one
     paths: [".github/workflows/news.yml", ".github/workflows/keepalive.yml"]
   workflow_dispatch:
 
 permissions:
-  actions: write              # start the news workflow, keep the workflows enabled
+  actions: write
   contents: read
 
 concurrency:

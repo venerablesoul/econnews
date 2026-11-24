@@ -1,12 +1,8 @@
-/* Chinese (simplified) and Arabic texts of the terminal. Loaded by i18n.js only for these two languages.
-   key: [Chinese, Arabic] — the same keys and shapes as the [English, Russian] pairs in i18n.js;
-   a function gets the language from ZH. A key missing here falls back to English. */
 (function(){
 'use strict';
 var ZH = (window.L10N || {}).lang === 'zh';
 
 var D = {
-  // page
   title: ['终端', 'المنصة'],
   cmd_ph: ['命令：WEI、FX、CRYPTO、N、ECO、TRD、GOLD、BTC、HELP…', 'أمر: WEI، FX، CRYPTO، N، ECO، TRD، GOLD، BTC، HELP…'],
   cmd_ph_m: ['GOLD、BTC、N、HELP…', 'GOLD، BTC، N، HELP…'],
@@ -55,7 +51,6 @@ var D = {
   set_crypto: ['<b style="color:var(--text)">加密货币</b>数据直接来自 Binance 交易所，实时更新，无需密钥。如果 Binance 无法访问，终端会切换到 CoinGecko（每分钟刷新）。',
     '<b style="color:var(--text)">العملات المشفرة</b> تأتي مباشرة من منصة Binance لحظيًا ودون مفتاح. وإن تعذّر الوصول إلى Binance تنتقل المنصة إلى CoinGecko (تحديث كل دقيقة).'],
   set_lang: ['<b style="color:var(--text)">语言。</b>', '<b style="color:var(--text)">اللغة.</b> '],
-  // markets
   g_WEI: ['指数', 'المؤشرات'], g_US: ['美股 · 实时', 'الأسهم الأمريكية · مباشر'], g_FX: ['外汇', 'العملات'], g_GLCO: ['大宗商品', 'السلع'],
   g_RATES: ['美债收益率', 'عوائد السندات الأمريكية'],
   gu_WEI: ['点数 · 日涨跌幅', 'بالنقاط · التغير اليومي'], gu_US: ['每股美元 · 日涨跌幅', 'دولار للسهم · التغير اليومي'],
@@ -75,12 +70,10 @@ var D = {
   live_every: function(s){ return ZH ? '实时 · ' + s + ' 秒' : 'مباشر · ' + s + ' ث' },
   bot_data_at: function(t){ return ZH ? '机器人数据 · 莫斯科时间 ' + t : 'بيانات البوت · ' + t + ' بتوقيت موسكو' },
   srv_x: ['服务器 ✕', 'الخادم ✕'],
-  // crypto
   c_coin: ['币种', 'العملة'], c_price: ['价格，$', 'السعر، $'], c_24h: ['24小时', '24 ساعة'], c_range_t: ['价格在 24 小时区间中的位置', 'موقع السعر ضمن نطاق 24 ساعة'],
   c_live: ['Binance · 实时', 'Binance · لحظي'], c_1min: ['CRYPTO 1 分钟', 'CRYPTO دقيقة'], c_gecko: ['CoinGecko · 1 分钟', 'CoinGecko · دقيقة'],
   c_gecko_note: ['Binance 不可用，使用 CoinGecko 数据，每分钟刷新。', 'Binance غير متاحة، والبيانات من CoinGecko تُحدَّث كل دقيقة.'],
   c_unavail: ['加密货币报价暂时不可用。', 'أسعار العملات المشفرة غير متاحة حاليًا.'],
-  // chart
   tv_unavail_sw: ['TradingView 不可用，显示内置图表。⇄ 切换', 'TradingView غير متاح، ويُعرض الرسم المدمج. ⇄ للتبديل'],
   tv_unavail: ['TradingView 不可用，显示内置图表', 'TradingView غير متاح، ويُعرض الرسم المدمج'],
   tv_loading: ['正在加载 TradingView…', 'جارٍ تحميل TradingView…'],
@@ -88,10 +81,8 @@ var D = {
   tv_slow: ['TradingView 无响应，显示内置图表。⇄ 切换', 'TradingView لا يستجيب، ويُعرض الرسم المدمج. ⇄ للتبديل'],
   own_nodata: ['内置图表无数据：', 'لا بيانات للرسم المدمج: '], own_5d: ['  · 5 天', '  · 5 أيام'],
   own_sub: ['内置 · 机器人数据', 'مدمج · بيانات البوت'],
-  // news
   nothing: ['未找到', 'لم يُعثر على شيء'], co_card_t: ['公司概况', 'بطاقة الشركة'],
   today: ['今天', 'اليوم'], yesterday: ['昨天', 'أمس'], tomorrow: ['明天', 'غدًا'],
-  // calendar
   eco_wait: ['日历将在机器人下次运行后显示。', 'تظهر الأجندة بعد التشغيل التالي للبوت.'],
   imp_high: ['高影响', 'تأثير مرتفع'], imp_med: ['中等影响', 'تأثير متوسط'],
   fcst: ['预期 ', 'المتوقع '], prev: ['前值 ', 'السابق '], actual: ['实际 ', 'الفعلي '],
@@ -102,7 +93,6 @@ var D = {
     if (m >= 60) return Math.floor(m / 60) + (ZH ? '小时' : ' س ') + (m % 60) + (ZH ? '分' : ' د');
     return m + (ZH ? ' 分钟' : ' دقيقة');
   },
-  // trades
   t_buy: ['买入', 'شراء'], t_sell: ['卖出', 'بيع'], t_sell_part: ['部分卖出', 'بيع جزئي'], t_exchange: ['置换', 'مبادلة'], t_trade: ['交易', 'صفقة'],
   o_spouse: ['配偶', 'الزوج/الزوجة'], o_joint: ['共同持有', 'ملكية مشتركة'], o_child: ['子女', 'الابن/الابنة'],
   no_amount: ['未注明金额', 'المبلغ غير مذكور'], over: ['超过 ', 'أكثر من '],
@@ -116,7 +106,6 @@ var D = {
   disclosed: ['披露 ', 'الإفصاح '], trade_date: ['交易日期', 'تاريخ الصفقة'], open_chart: ['打开图表', 'فتح الرسم البياني'],
   shares_at: function(n, p){ return ZH ? n + ' 股，每股 $' + p : n + ' سهم بسعر $' + p },
   plan: [' · 10b5-1 计划', ' · وفق خطة 10b5-1'], report: ['报告 ↗', 'التقرير ↗'], form4: ['Form 4 ↗', 'النموذج 4 ↗'],
-  // settings
   tier_none: ['机器人服务器尚未设置，终端显示机器人的数据。', 'لم يُضبط خادم البوت بعد، والمنصة تعرض بيانات البوت.'],
   tier_owner: ['👑 您已作为所有者登录。', '👑 أنت مسجّل الدخول كمالك.'],
   tier_owner_paid: ['👑 您已作为所有者登录：付费数据已开启。', '👑 أنت مسجّل الدخول كمالك: البيانات المدفوعة مفعّلة.'],
@@ -135,13 +124,11 @@ var D = {
   inst_other: ['在 Chrome 或 Edge 中：点击地址栏中的安装图标，或菜单 ⋮ →“安装应用”。在 Android 上：菜单 ⋮ →“添加到主屏幕”。',
     'في Chrome أو Edge: أيقونة التثبيت في شريط العنوان أو القائمة ⋮ ← «تثبيت التطبيق». على Android: القائمة ⋮ ← «إضافة إلى الشاشة الرئيسية».'],
   clock_open: ['开市', 'السوق مفتوحة'], clock_closed: ['休市', 'السوق مغلقة'],
-  // fn.js — common
   no_api: function(what){ return (what || (ZH ? '此功能' : 'هذه الوظيفة')) + (ZH ? '需要通过机器人服务器运行，但服务器尚未设置（docs/config.json）。' : ' تعمل عبر خادم البوت، ولم يُضبط بعد (docs/config.json).') },
   load_fail: ['无法加载：', 'تعذّر التحميل: '], srv_not_set_e: ['机器人服务器未设置', 'خادم البوت غير مضبوط'],
   no_clip: ['无法访问剪贴板', 'لا وصول إلى الحافظة'],
   pick_t: ['在此面板中显示其他功能', 'عرض وظيفة أخرى في هذه اللوحة'], pick_head: ['在此面板中显示：', 'عرض في هذه اللوحة:'],
   loading_x: function(s){ return (ZH ? '正在加载 ' : 'جارٍ تحميل ') + s },
-  // panels and functions
   fn_mkt: ['全球市场', 'الأسواق العالمية'], fn_chart: ['图表', 'الرسم البياني'], fn_crypto: ['加密货币', 'العملات المشفرة'], fn_news: ['新闻', 'الأخبار'],
   fn_eco: ['日历与财报', 'الأجندة والنتائج'], fn_trd: ['政界人士和内部人士交易', 'صفقات السياسيين والمطّلعين'],
   fn_des: ['公司：DES FA ERN EE ANR HDS DVD OMON RV', 'الشركة: DES FA ERN EE ANR HDS DVD OMON RV'],
@@ -154,7 +141,6 @@ var D = {
   m_eqs: ['筛选器', 'فرز الأسهم'], m_imap: ['市场地图', 'خريطة السوق'], m_gc: ['收益率曲线', 'منحنيات العائد'], m_cb: ['央行利率', 'فائدة البنوك المركزية'],
   m_wirp: ['美联储预期', 'توقعات الفيدرالي'], m_w: ['我的自选', 'قائمة متابعتي'], m_port: ['投资组合', 'المحفظة'], m_alrt: ['提醒', 'التنبيهات'],
   m_help: ['全部命令', 'كل الأوامر'],
-  // DES
   company_x: function(s){ return (ZH ? '公司 · ' : 'الشركة · ') + s },
   co_card: ['公司概况', 'بطاقة الشركة'],
   moex_only_des: ['莫斯科交易所股票仅提供 DES 概况和图表，暂未接入俄罗斯公司的财务数据。',
@@ -202,7 +188,6 @@ var D = {
   hds_note: ['高管和董事的公开市场交易（SEC Form 4）。', 'صفقات المديرين وأعضاء مجلس الإدارة في السوق المفتوحة (النموذج 4 لدى SEC).'],
   hds_none: ['近期没有内部人士公开市场交易。', 'لا صفقات للمطّلعين في السوق المفتوحة مؤخرًا.'],
   hds_cols: [['日期', '人员', '交易', '股数', '价格', '金额', '交易后持股'], ['التاريخ', 'من', 'الصفقة', 'الأسهم', 'السعر', 'القيمة', 'الحيازة بعدها']],
-  // HP / COMP
   ranges: [{'1d': '1 天', '5d': '5 天', '1m': '1 个月', '3m': '3 个月', '6m': '6 个月', ytd: '年初至今', '1y': '1 年', '2y': '2 年', '5y': '5 年'},
     {'1d': 'يوم', '5d': '5 أيام', '1m': 'شهر', '3m': '3 أشهر', '6m': '6 أشهر', ytd: 'منذ بداية العام', '1y': 'سنة', '2y': 'سنتان', '5y': '5 سنوات'}],
   hp_ask: ['输入 HP 和代码：HP AAPL、HP BTC 5Y、HP SBER、HP OIL。', 'اكتب HP والرمز: HP AAPL، HP BTC 5Y، HP SBER، HP OIL.'],
@@ -221,7 +206,6 @@ var D = {
   srv_slow: ['服务器未及时响应，请重试', 'لم يستجب الخادم في الوقت المناسب، حاول مجددًا'],
   co_offline: ['您的网络无法访问服务器，显示网站上保存的副本（价格最多延迟 10 分钟；无同业和公司新闻）。',
     'لا يمكن الوصول إلى الخادم من شبكتك، وتُعرض النسخة المحفوظة على الموقع (السعر متأخر حتى 10 دقائق، دون المنافسين وأخبار الشركة).'],
-  // EQS
   eqs_p: [{'': '全部', leaders: '涨幅榜', losers: '跌幅榜', value: '低市盈率', div: '派息', growth: '营收增长', year: '1年最佳'},
     {'': 'الكل', leaders: 'الأكثر ارتفاعًا', losers: 'الأكثر انخفاضًا', value: 'P/E منخفض', div: 'التوزيعات', growth: 'نمو الإيرادات', year: 'الأفضل خلال سنة'}],
   eqs_cols: [{s: '代码', n: '公司', sec: '板块', px: '价格', ch: '今日', mcap: '市值', pe: 'P/E', fpe: '预期 P/E', dy: '股息', revg: '营收', roe: 'ROE', rytd: '年初至今', r52: '1年', beta: '贝塔'},
@@ -239,12 +223,10 @@ var D = {
     : n + ' سهمًا. السوق الرئيسية لبورصة موسكو (TQBR)، بتأخير 15 دقيقة، والبيانات حتى ' + (t || '—') + ' بتوقيت موسكو. انقر على صف لفتح بطاقة الشركة.' },
   eqs_found: function(n){ return ZH ? '找到 ' + n + ' 家。点击一行可打开公司概况。估值指标每天更新（Finnhub），价格每 5–10 分钟更新（Yahoo）。'
     : 'النتائج: ' + n + '. انقر على صف لفتح بطاقة الشركة. المؤشرات تُحدَّث يوميًا (Finnhub)، والأسعار كل 5–10 دقائق (Yahoo).' },
-  // IMAP
   imap_wait: ['地图将在机器人下次运行后显示（docs/stocks.json）。', 'تظهر الخريطة بعد التشغيل التالي للبوت (docs/stocks.json).'],
   imap_sub: function(t){ return ZH ? '价格截至莫斯科时间 ' + t + ' · 面积 = 市值' : 'الأسعار ' + t + ' بتوقيت موسكو · الحجم = القيمة السوقية' },
   imap_mcap_wait: ['市值仍在加载中，地图将在机器人启动后一小时内显示。', 'ما زالت القيم السوقية قيد التحميل، وتظهر الخريطة خلال ساعة من بدء البوت.'],
   mcap_s: [' · 市值 ', ' · القيمة السوقية '],
-  // GC / CB / WIRP
   gc_wait: ['曲线和利率将在机器人下次运行后显示（docs/rates.json）。', 'تظهر المنحنيات والفائدة بعد التشغيل التالي للبوت (docs/rates.json).'],
   gc_title: ['收益率曲线', 'منحنيات العائد'], pick_countries: ['请选择国家。', 'اختر الدول.'],
   gc_note: function(d, m){ return ZH ? '实线为当前（' + d + '），虚线为一周前' + (m ? '，点线为一个月前' : '') + '。' : 'الخط المتصل: الآن (' + d + ')، والمتقطع: قبل أسبوع' + (m ? '، والمنقّط: قبل شهر' : '') + '.' },
@@ -261,7 +243,6 @@ var D = {
   w_probs: [{cut50: '降息 0.5', cut: '降息', hold: '维持不变', hike: '加息', hike50: '加息 0.5'}, {cut50: 'خفض 0.5', cut: 'خفض', hold: 'تثبيت', hike: 'رفع', hike50: 'رفع 0.5'}],
   wirp_note: ['CME FedWatch 方法：当月平均利率 = 100 − 期货价格；某次会议的利率变动由决议前后的差值推算。',
     'طريقة CME FedWatch: متوسط فائدة الشهر = 100 − سعر العقد الآجل، ويُستنتج التغير في الاجتماع من الفرق قبل القرار وبعده.'],
-  // W / PORT / ALRT
   not_saved: ['未能保存到服务器：', 'لم يُحفظ على الخادم: '],
   shared: ['☁ 与机器人共享', '☁ مشترك مع البوت'], local_only: ['仅限此浏览器', 'في هذا المتصفح فقط'],
   w_ph: ['+ AAPL BTC SBER OIL', '+ AAPL BTC SBER OIL'],
@@ -290,7 +271,6 @@ var D = {
   a_chg: function(s, v){ return s + (ZH ? '：日涨跌幅 ±' : ': تحرك يومي ±') + v + '%' },
   a_px: function(s, op, v){ return s + (op === '>' ? (ZH ? ' 高于 ' : ' أعلى من ') : (ZH ? ' 低于 ' : ' أقل من ')) + v },
   del: ['删除', 'حذف'],
-  // deep company data
   no_deep: function(s){ return ZH ? '暂无 ' + s + ' 的详细数据：仅覆盖约 100 家美国最大公司，每天更新两次。'
     : 'لا توجد بيانات تفصيلية لـ ' + s + ' بعد: تغطي نحو 100 من أكبر الشركات الأمريكية وتُحدَّث مرتين يوميًا.' },
   wiki_src: ['维基百科', 'ويكيبيديا'], about_src: ['公司简介', 'نبذة الشركة'],
@@ -347,10 +327,8 @@ var D = {
     {'10-K': 'تقرير سنوي', '10-Q': 'تقرير ربعي', '8-K': 'حدث جوهري', '8-K/A': 'حدث جوهري (معدّل)', 'DEF 14A': 'مستندات الجمعية العمومية', 'S-3': 'تسجيل أوراق مالية',
     '424B2': 'نشرة إصدار', 'SC 13G': 'مساهم 5%+', 'SC 13G/A': 'مساهم 5%+', 'SD': 'معادن النزاعات', '11-K': 'خطة الموظفين', '3': 'مطّلع: أول حيازة', '4': 'صفقة مطّلع'}],
   mgmt_head: ['管理层（MGMT）', 'الإدارة (MGMT)'], mgmt_cols: [['姓名', '职位', '年龄', '薪酬'], ['الاسم', 'المنصب', 'العمر', 'الأجر']],
-  // IMAP Russia
   imap_sub_ru: function(t){ return ZH ? '莫斯科交易所 · 莫斯科时间 ' + (t || '') + ' · 面积 = 市值' : 'بورصة موسكو · ' + (t || '') + ' بتوقيت موسكو · الحجم = القيمة السوقية' },
   imap_ru_wait: ['莫斯科交易所地图将在机器人下次运行后显示（docs/moex.json）。', 'تظهر خريطة بورصة موسكو بعد التشغيل التالي للبوت (docs/moex.json).'],
-  // ECST / FXC / CORR / OPT / IPO
   ecst_title: ['IMF《世界经济展望》', 'صندوق النقد الدولي: آفاق الاقتصاد العالمي'],
   ecst_wait: ['IMF 预测将在机器人下次运行后显示（docs/macro.json）。', 'تظهر توقعات صندوق النقد بعد التشغيل التالي للبوت (docs/macro.json).'],
   ecst_cols: function(y){ return ZH ? ['国家', 'GDP ' + y, 'GDP ' + (y + 1), '通胀 ' + y, '通胀 ' + (y + 1), '失业 ' + y, '财政 ' + y, '政府债务 ' + y, '经常账户 ' + y]
@@ -372,14 +350,11 @@ var D = {
   ipo_title: ['IPO 日历 · 美国', 'أجندة الاكتتابات · أمريكا'], ipo_none: ['未来 30 天没有 IPO。', 'لا اكتتابات خلال الأيام الثلاثين المقبلة.'],
   ipo_cols: [['日期', '代码', '公司', '交易所', '价格', '股数', '金额', '状态'], ['التاريخ', 'الرمز', 'الشركة', 'البورصة', 'السعر', 'الأسهم', 'القيمة', 'الحالة']],
   ipo_status: [{expected: '预计', priced: '已定价', filed: '已申请', withdrawn: '已撤回'}, {expected: 'متوقع', priced: 'تم التسعير', filed: 'قُدّم الطلب', withdrawn: 'سُحب'}],
-  // technicals on the HP chart
   overbought: ['超买', 'تشبع شرائي'], oversold: ['超卖', 'تشبع بيعي'], vs_sma200: ['相对 SMA 200', 'مقابل SMA 200'],
-  // earnings tab
   earn_none: ['未来几周没有大型公司的财报（或数据尚未加载）。', 'لا نتائج لأكبر الشركات في الأسابيع المقبلة (أو لم تُحمَّل البيانات بعد).'],
   earn_cols: [['日期', '公司', 'EPS 预期', 'EPS 实际', '营收预期'], ['التاريخ', 'الشركة', 'تقدير EPS', 'EPS الفعلي', 'تقدير الإيرادات']],
   bmo_s: ['☀ 开盘前', '☀ قبل الافتتاح'], amc_s: ['☾ 收盘后', '☾ بعد الإغلاق'],
   earn_wait: ['财报日历将在机器人下次运行后显示。', 'تظهر أجندة النتائج بعد التشغيل التالي للبوت.'],
-  // new panels
   fn_tech: ['技术分析', 'التحليل الفني'], fn_mon: ['市场监控', 'مراقبة السوق'], fn_map: ['世界地图', 'خريطة العالم'],
   p_tech: ['技术分析', 'التحليل الفني'], p_mon: ['市场监控', 'مراقبة السوق'], p_map: ['世界地图', 'خريطة العالم'],
   m_tech: ['带指标和技术分析的图表', 'رسم بياني بالمؤشرات والتحليل الفني'], m_vap: ['价格成交量分布', 'الحجم حسب السعر'], m_tra: ['总回报', 'العائد الإجمالي'],
@@ -388,7 +363,6 @@ var D = {
   m_cdr: ['交易所时间与假日', 'ساعات البورصات والعطل'], m_wb: ['全球债券', 'سندات العالم'], m_btmm: ['国家利率', 'فائدة الدولة'],
   m_mmr: ['货币市场', 'سوق النقد'], m_srch: ['美国国债', 'سندات الخزانة الأمريكية'], m_map: ['多图层世界地图', 'خريطة العالم بطبقات'],
   m_storm: ['风暴', 'العواصف'], m_ship: ['航运与咽喉要道', 'الشحن والمضائق'], m_wetr: ['天气', 'الطقس'], m_mapeco: ['地图上的国家', 'الدول على الخريطة'],
-  // tabs
   tech_tab: ['TECH · 图表', 'TECH · الرسم'], vap_tab: ['VAP · 价格成交量', 'VAP · الحجم حسب السعر'], tsm_tab: ['TSM · 按小时', 'TSM · بالساعة'],
   qr_tab: ['QR · 逐笔成交', 'QR · سجل الصفقات'], tra_tab: ['TRA · 总回报', 'TRA · العائد الإجمالي'], tray_tab: ['TRAY · 回报', 'TRAY · العوائد'],
   mov_tab: ['MOV · 贡献', 'MOV · المحركات'], most_tab: ['MOST · 活跃', 'MOST · النشطة'], mrr_tab: ['MRR · 回报', 'MRR · العوائد'], memb_tab: ['MEMB · 权重', 'MEMB · الأوزان'],
@@ -396,12 +370,10 @@ var D = {
   wb_tab: ['WB · 全球债券', 'WB · سندات العالم'], btmm_tab: ['BTMM · 国家', 'BTMM · الدولة'], mmr_tab: ['MMR · 货币市场', 'MMR · سوق النقد'], srch_tab: ['SRCH · 美国国债', 'SRCH · سندات الخزانة'],
   map_tab: ['MAP · 图层', 'MAP · الطبقات'], storm_tab: ['STORM · 风暴', 'STORM · العواصف'], ship_tab: ['SHIP · 航运', 'SHIP · الشحن'], wetr_tab: ['WETR · 天气', 'WETR · الطقس'],
   mapeco_tab: ['ECO · 国家', 'ECO · الدول'],
-  // generic
   name: ['名称', 'الاسم'], company: ['公司', 'الشركة'], weight: ['权重', 'الوزن'], show: ['显示', 'عرض'], neck: ['颈线', 'خط العنق'],
   reg_us: ['美国 · 约 100 家最大公司', 'أمريكا · نحو 100 أكبر شركة'], reg_ru: ['莫斯科交易所指数', 'مؤشر بورصة موسكو'],
   per_1d: ['1日', 'يوم'], per_1w: ['1周', 'أسبوع'], per_mtd: ['月初至今', 'منذ بداية الشهر'], per_1m: ['1月', 'شهر'], per_qtd: ['季初至今', 'منذ بداية الربع'], per_3m: ['3月', '3 أشهر'], per_6m: ['6月', '6 أشهر'],
   per_ytd: ['年初至今', 'منذ بداية العام'], per_1y: ['1年', 'سنة'], per_2y: ['2年*', 'سنتان*'], per_3y: ['3年*', '3 سنوات*'], per_5y: ['5年*', '5 سنوات*'], per_ann: ['* 年化平均', '* متوسط سنوي'],
-  // TECH
   tech_empty: ['技术分析：<b>TECH AAPL</b>、<b>BTC GPO</b>（美国线）、<b>GOLD TA</b>（趋势线、支撑阻力位、斐波那契、形态）、<b>IND NVDA MACD</b>、<b>VAP AAPL</b>、<b>TRAY</b>。',
     'التحليل الفني: <b>TECH AAPL</b>، <b>BTC GPO</b> (الأعمدة)، <b>GOLD TA</b> (خطوط الاتجاه، المستويات، فيبوناتشي، النماذج)، <b>IND NVDA MACD</b>، <b>VAP AAPL</b>، <b>TRAY</b>.'],
   tech_t_TECH: function(s){ return (ZH ? '技术分析 · ' : 'التحليل الفني · ') + s }, tech_t_VAP: function(s){ return (ZH ? '价格成交量分布 · ' : 'الحجم حسب السعر · ') + s },
@@ -457,7 +429,6 @@ var D = {
   cacs_none: ['未找到公司行动。', 'لم يُعثر على أحداث للشركة.'], cacs_note: ['股息、拆股、财报日期和 SEC 文件，汇总在一个日历中。', 'التوزيعات وتجزئة الأسهم ومواعيد النتائج وإفصاحات SEC في أجندة واحدة.'],
   crpr_note: ['穆迪、标普和惠誉的信用评级并非免费：这里是公司关于其评级的新闻以及评级机构的链接。', 'التصنيفات الائتمانية من Moody’s وS&P وFitch ليست مجانية: هنا أخبار الشركة عن تصنيفاتها وروابط الوكالات.'],
   crpr_none: ['最近的公司新闻中没有评级相关消息。', 'لا أخبار عن التصنيف في آخر أخبار الشركة.'],
-  // monitors
   mov_title: ['指数贡献', 'محركات المؤشر'], mov_idx: ['指数', 'المؤشر'], mov_adv: ['上涨 / 下跌', 'صاعدة / هابطة'], mov_sum: ['成分股合计', 'المكونات معًا'],
   mov_members: ['成分股', 'المكونات'], mov_up: ['向上拉动', 'تدفعه للأعلى'], mov_dn: ['向下拖累', 'تسحبه للأسفل'],
   mov_cols: [['公司', '涨跌', '权重', '指数点'], ['الشركة', 'التغير', 'الوزن', 'نقاط المؤشر']],
@@ -498,7 +469,6 @@ var D = {
   na_title: function(c){ return c + (ZH ? ' — 不可用' : ' — غير متاح') },
   na_bas: ['BAS（经纪商活动汇总）需要交易所的经纪商级数据，没有免费来源发布。', 'يتطلب BAS (ملخص نشاط الوسطاء) بيانات البورصات على مستوى الوسطاء، ولا ينشرها أي مصدر مجاني.'],
   na_pick: ['PICK（美国市政债券发行）需要 MSRB EMMA 的交易商报价，其没有免费数据源。', 'يتطلب PICK (عروض السندات البلدية الأمريكية) أسعار المتعاملين من MSRB EMMA، ولا يوفر بثًا مجانيًا للبيانات.'],
-  // rates panel
   wb_title: ['全球债券市场', 'أسواق السندات العالمية'],
   wb_cols: [['国家', '2年', '5年', '10年', '30年', '10年周变化，基点', '对美债，基点', '对德债，基点', '2s10s，基点', '日期'],
     ['الدولة', 'سنتان', '5 سنوات', '10 سنوات', '30 سنة', '10 سنوات أسبوعيًا، ن.أ.', 'مقابل UST، ن.أ.', 'مقابل Bund، ن.أ.', '2s10s، ن.أ.', 'التاريخ']],
@@ -522,10 +492,8 @@ var D = {
     'مزادات آخر 13 شهرًا تقريبًا والمعلنة، من وزارة الخزانة الأمريكية (يحدّث البوت القائمة كل بضع ساعات)؛ اكتب CUSIP أو الأجل (10-YEAR، TIPS، FRN) للتصفية.'],
   srch_coming: ['已公告', 'مُعلن'], srch_pending: ['结果即将公布', 'النتائج قريبًا'],
   srch_wait: ['拍卖列表将在机器人下次运行后显示。', 'تظهر قائمة المزادات بعد التشغيل التالي للبوت.'],
-  // news topics
   nse_mna: ['并购', 'الاندماج والاستحواذ'], nse_opn: ['开盘', 'افتتاح الأسواق'], nse_uss: ['美股', 'الأسهم الأمريكية'], nse_cns: ['加拿大', 'كندا'],
   nse_cos: ['公司', 'الشركات'], nse_bbea: ['财报、评级上调与下调', 'النتائج، رفع التصنيف وخفضه'], nse_ratc: ['信用评级', 'التصنيفات الائتمانية'],
-  // maps
   gm_title_MAP: ['世界地图 · 图层', 'خريطة العالم · الطبقات'], gm_title_STORM: ['风暴与能源设施', 'العواصف ومنشآت الطاقة'], gm_title_SHIP: ['航运：咽喉要道与港口', 'الشحن: المضائق والموانئ'],
   gm_title_WETR: ['主要城市天气', 'الطقس في المدن الكبرى'], gm_title_ECO: ['按指标显示国家', 'الدول حسب المؤشر'],
   gm_zin: ['放大', 'تكبير'], gm_zout: ['缩小', 'تصغير'], gm_home: ['全球', 'العالم كله'], gm_layers: ['图层与列表', 'الطبقات والقائمة'],
@@ -607,7 +575,6 @@ var D = {
   gm_eco_mkt_note: ['实时：终端中各市场的主要指数。', 'مباشر: المؤشر الرئيسي لكل سوق في المنصة.'],
   ecst_map_note: ['IMF《世界经济展望》的今年估计值（最大经济体保留完整的五年表格）。', 'تقديرات هذا العام من آفاق الاقتصاد العالمي لصندوق النقد (الجدول الكامل لخمس سنوات لأكبر الاقتصادات).'],
   gm_open_ecst: ['ECST · 该国经济', 'ECST · اقتصاد الدولة'], gm_src_curves: ['各国央行和财政部', 'البنوك المركزية ووزارات المالية'],
-  // practice account, quick functions, supply chain, options (GEX / LVL / VOLS / GRK / GEXH), order flow
   papr_tab: ['PAPR · 模拟账户', 'PAPR · حساب تجريبي'],
   fbar_t: ['快捷功能（Alt+1…9）', 'وظائف سريعة (Alt+1…9)'],
   m_papr: ['模拟账户（虚拟美元）', 'حساب تجريبي (دولارات افتراضية)'],
@@ -671,7 +638,6 @@ var D = {
   sp_live: function(n, ch){ return ZH ? '当前：每天 ' + n + ' 艘油轮（较 30 天 ' + ch + '）' : 'الآن: ' + n + ' ناقلة يوميًا (' + ch + ' مقارنة بـ30 يومًا)' },
   sp_side: ['咽喉要道 · 百万桶/日', 'المضائق · مليون برميل/يوم'],
   sp_live_s: function(n, ch){ return ZH ? '当前每天 ' + n + ' 艘 ' + ch : 'الآن ' + n + ' ناقلة/يوم ' + ch },
-  // base: a quarter as "2Q25"
   sp_note: function(base){
     var q = function(x){ return ZH ? '20' + x.slice(2) + '年第' + x[0] + '季度' : 'الربع ' + x[0] + ' من 20' + x.slice(2) };
     return ZH ? '经过各咽喉要道的原油和成品油，按季度计，百万桶/日（EIA；EIA 发布新数据后机器人会自动更新）。'
@@ -799,7 +765,6 @@ var D = {
     'كل خلية: بيع عند الطلب (يسار، أحمر) × شراء عند العرض (يمين، أخضر). الإطار الأصفر — نقطة التحكم في الشمعة؛ الإطار الأخضر — الشراء ≥ 3 أضعاف البيع في المستوى الأدنى (اختلال). تُبنى من الصفقات المباشرة وآخر بضع دقائق.'],
   fl_note_CVD: ['Delta = 以卖价买入 − 以买价卖出（每根 K 线的 Binance 主动成交量）；CVD 为其累计值。价格上的圆环——面板打开以来的大单。价格上涨而 CVD 下降 = 被动买盘推动的上涨（背离）。',
     'الدلتا = الشراء عند العرض − البيع عند الطلب (حجم المنفّذين على Binance لكل شمعة)؛ وCVD مجموعها التراكمي. الحلقات على السعر — الصفقات الكبيرة منذ فتح اللوحة. صعود السعر مع هبوط CVD = صعود بشراء سلبي (تباعد).'],
-  // windows: close, empty, resize
   float_t: ['将此窗口浮动在其他窗口之上（拖动标题移动，拖动角落调整大小）', 'اجعل هذه النافذة عائمة فوق الأخرى (اسحب عنوانها لتحريكها وزاويتها لتغيير حجمها)'],
   dock_t: ['放回网格', 'أعدها إلى الشبكة'], fresize_t: ['拖动以调整大小', 'اسحب لتغيير الحجم'],
   close_t: ['关闭此窗口', 'إغلاق هذه النافذة'], close_all_t: ['关闭所有窗口', 'إغلاق كل النوافذ'],
@@ -810,7 +775,6 @@ var D = {
   gutter_t: ['拖动调整大小 · 双击恢复默认', 'اسحب لتغيير الحجم · نقر مزدوج: الحجم الافتراضي']
 };
 
-// help table: command (or the English section title) → [Chinese, Arabic]
 var HELP = {
   'WEI': ['全球股票指数', 'مؤشرات الأسهم العالمية'],
   'FX': ['外汇', 'العملات'],
@@ -909,10 +873,8 @@ var HELP = {
   'PAPR AAPL': ['模拟账户：用 $100,000 虚拟资金按实时价格买卖', 'حساب تجريبي: شراء وبيع بـ$100,000 افتراضية بأسعار مباشرة'],
   'HELP': ['本帮助', 'هذه المساعدة']
 };
-// a command in the help table that needs another label in these languages
 var HELP_CMD = {'▾ in a panel title': ['面板标题中的 ▾', '▾ في عنوان اللوحة'], 'LANG RU, LANG EN': ['LANG ZH, LANG AR', 'LANG AR, LANG ZH']};
 
-// names of instruments, units, regions, clocks, sectors, tags, sources, trade labels, the fear/greed index
 var MKT = {
   'S&P': ['标普500', 'S&P 500'], 'Nasdaq': ['纳斯达克', 'ناسداك'], 'DJI': ['道琼斯', 'داو جونز'], 'RTY': ['罗素2000', 'راسل 2000'], 'VIX': ['VIX恐慌指数', 'VIX'],
   'SX5E': ['欧洲斯托克50', 'يورو ستوكس 50'], 'DAX': ['德国DAX', 'داكس'], 'UKX': ['富时100', 'فوتسي 100'], 'CAC': ['法国CAC40', 'كاك 40'], 'NKY': ['日经225', 'نيكاي 225'],
@@ -953,43 +915,35 @@ var SOURCE = {
   'ECB': ['欧洲央行', 'البنك المركزي الأوروبي'], 'Bank of England': ['英国央行', 'بنك إنجلترا'], 'IMF': ['国际货币基金组织', 'صندوق النقد الدولي'],
   'Bank of Russia': ['俄罗斯央行', 'البنك المركزي الروسي'], 'Kommersant': ['《生意人报》', 'كوميرسانت']
 };
-// the same order as TRADE_RU in i18n.js
 var TRADE = [['众议院', 'مجلس النواب'], ['参议院', 'مجلس الشيوخ'], ['（期权）', ' (خيار)'], ['等', ' وآخرون'], ['总法律顾问', 'المستشار القانوني العام'],
   ['总裁', 'الرئيس'], ['董事长', 'رئيس مجلس الإدارة'], ['高管', 'مسؤول تنفيذي'], ['董事', 'عضو مجلس الإدارة'], ['持股10%以上股东', 'مالك 10%+']];
 var FNG = {'Extreme Fear': ['极度恐惧', 'خوف شديد'], 'Fear': ['恐惧', 'خوف'], 'Neutral': ['中性', 'محايد'], 'Greed': ['贪婪', 'طمع'], 'Extreme Greed': ['极度贪婪', 'طمع شديد']};
 
-// country names come from the browser (Intl.DisplayNames) by the two-letter code; the world map and the IMF use
-// three-letter codes: ISO 3166 alpha-3 → alpha-2, "AFGAF" = AFG → AF
 var ISO3 = {};
 'AFGAF,AGOAO,AIAAI,ALAAX,ALBAL,ANDAD,AREAE,ARGAR,ARMAM,ASMAS,ATAAQ,ATFTF,ATGAG,AUSAU,AUTAT,AZEAZ,BDIBI,BELBE,BENBJ,BFABF,BGDBD,BGRBG,BHRBH,BHSBS,BIHBA,BLRBY,BLZBZ,BMUBM,BOLBO,BRABR,BRBBB,BRNBN,BTNBT,BWABW,CAFCF,CANCA,CHECH,CHLCL,CHNCN,CIVCI,CMRCM,CODCD,COGCG,COLCO,COMKM,CPVCV,CRICR,CUBCU,CUWCW,CYMKY,CYPCY,CZECZ,DEUDE,DJIDJ,DMADM,DNKDK,DOMDO,DZADZ,ECUEC,EGYEG,ERIER,ESHEH,ESPES,ESTEE,ETHET,FINFI,FJIFJ,FLKFK,FRAFR,FROFO,FSMFM,GABGA,GBRGB,GEOGE,GHAGH,GINGN,GMBGM,GNBGW,GNQGQ,GRCGR,GRDGD,GRLGL,GTMGT,GUMGU,GUYGY,HKGHK,HMDHM,HNDHN,HRVHR,HTIHT,HUNHU,IDNID,IMNIM,INDIN,IOTIO,IRLIE,IRNIR,IRQIQ,ISLIS,ISRIL,ITAIT,JAMJM,JEYJE,JORJO,JPNJP,KAZKZ,KENKE,KGZKG,KHMKH,KIRKI,KORKR,KWTKW,LAOLA,LBNLB,LBRLR,LBYLY,LCALC,LIELI,LKALK,LSOLS,LTULT,LUXLU,LVALV,MAFMF,MARMA,MDAMD,MDGMG,MEXMX,MHLMH,MKDMK,MLIML,MLTMT,MMRMM,MNEME,MNGMN,MNPMP,MOZMZ,MRTMR,MSRMS,MUSMU,MWIMW,MYSMY,NAMNA,NCLNC,NERNE,NGANG,NICNI,NIUNU,NLDNL,NORNO,NPLNP,NZLNZ,OMNOM,PAKPK,PANPA,PERPE,PHLPH,PLWPW,PNGPG,POLPL,PRIPR,PRKKP,PRTPT,PRYPY,PSEPS,PYFPF,QATQA,ROURO,RUSRU,RWARW,SAUSA,SDNSD,SENSN,SGPSG,SGSGS,SHNSH,SLBSB,SLESL,SLVSV,SMRSM,SOMSO,SPMPM,SRBRS,SSDSS,STPST,SURSR,SVKSK,SVNSI,SWESE,SWZSZ,SYCSC,SYRSY,TCATC,TCDTD,TGOTG,THATH,TJKTJ,TKMTM,TLSTL,TONTO,TTOTT,TUNTN,TURTR,TWNTW,TZATZ,UGAUG,UKRUA,URYUY,USAUS,UZBUZ,VCTVC,VENVE,VIRVI,VNMVN,VUTVU,WSMWS,YEMYE,ZAFZA,ZMBZM,ZWEZW'.split(',').forEach(function(x){ ISO3[x.slice(0, 3)] = x.slice(3) });
-// groups and places the browser does not name (or names too long for a table)
 var GROUP = {
   WEOWORLD: ['世界', 'العالم'], WORLD: ['世界', 'العالم'], ADVEC: ['发达经济体', 'الاقتصادات المتقدمة'],
   OEMDC: ['新兴与发展中经济体', 'الاقتصادات الناشئة والنامية'], EURO: ['欧元区', 'منطقة اليورو'], EA: ['欧元区', 'منطقة اليورو'],
   EU: ['欧洲', 'أوروبا'], EM: ['新兴市场', 'الأسواق الناشئة'], HK: ['香港', 'هونغ كونغ'], MO: ['澳门', 'ماكاو'],
   CYN: ['北塞浦路斯', 'شمال قبرص'], KOS: ['科索沃', 'كوسوفو'], SOL: ['索马里兰', 'أرض الصومال'], KAS: ['克什米尔', 'كشمير']
 };
-// IMF indicators (macro.json "ind")
 var MACRO_IND = {
   NGDP_RPCH: ['实际 GDP 增长', 'نمو الناتج الحقيقي'], PCPIPCH: ['通胀（平均 CPI）', 'التضخم (متوسط مؤشر الأسعار)'], LUR: ['失业率', 'معدل البطالة'],
   GGXCNL_NGDP: ['财政余额，占 GDP %', 'رصيد الميزانية، % من الناتج'], GGXWDG_NGDP: ['政府债务，占 GDP %', 'الدين الحكومي، % من الناتج'],
   BCA_NGDPD: ['经常账户，占 GDP %', 'الحساب الجاري، % من الناتج'], NGDPD: ['GDP，十亿美元', 'الناتج، مليار دولار']
 };
 
-// tanker areas at the oil chokepoints (ships.json "areas", ais.py) and the nodes of the SPLC diagram (map.js SP_NODES)
 var AREA = {
   hormuz: ['霍尔木兹海峡', 'مضيق هرمز'], bab: ['曼德海峡', 'باب المندب'], suez: ['苏伊士运河', 'قناة السويس'],
   malacca: ['马六甲海峡', 'مضيق ملقا'], turkish: ['土耳其海峡', 'المضائق التركية'], danish: ['丹麦海峡', 'المضائق الدنماركية'],
   gibraltar: ['直布罗陀海峡', 'مضيق جبل طارق'], panama: ['巴拿马运河', 'قناة بنما'], cape: ['好望角', 'رأس الرجاء الصالح']
 };
-// the oil storage hubs of the SAT pictures (sat.py SITES)
 var SAT = {
   cushing: ['库欣，俄克拉何马州（WTI 交割地）', 'كاشينغ، أوكلاهوما (مركز WTI)'], houston: ['休斯顿航道', 'قناة هيوستن الملاحية'],
   rotterdam: ['鹿特丹：欧罗港与马斯弗拉克特', 'روتردام: يوروبورت وماسفلاكته'], primorsk: ['普里莫尔斯克石油码头', 'محطة نفط بريمورسك'],
   novorossiysk: ['新罗西斯克：舍斯哈里斯', 'نوفوروسيسك: شيسخاريس'], rastanura: ['拉斯坦努拉', 'رأس تنورة'], kharg: ['哈尔克岛', 'جزيرة خرج'],
   fujairah: ['富查伊拉', 'الفجيرة'], singapore: ['新加坡：裕廊岛与毛广岛', 'سنغافورة: جورونغ وبوكوم']
 };
-// "region: countries" — the part before ": " is the short label
 var SPLC = {
   rusb: ['波罗的海: 俄罗斯', 'البلطيق: روسيا'], rusbs: ['黑海: 俄罗斯、哈萨克斯坦', 'البحر الأسود: روسيا، كازاخستان'],
   gulf: ['波斯湾: 沙特阿拉伯、伊拉克、阿联酋、科威特、伊朗、卡塔尔', 'الخليج: السعودية، العراق، الإمارات، الكويت، إيران، قطر'],

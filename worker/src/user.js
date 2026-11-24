@@ -1,6 +1,3 @@
-// Personal data: watchlist (W), portfolio (PORT) and alerts (ALRT).
-// Stored in KV: "p:<chat_id>" — watchlist and portfolio, "alerts" — all alerts (cron checks them every 2 minutes).
-// The same person sees the same data in the bot and in the terminal opened with the Telegram button.
 import { esc, send, siteData } from "./lib.js";
 import { L, getLang, newsField, sourceName, t } from "./i18n.js";
 import { getQuotes, parseSymbol } from "./market.js";
@@ -37,7 +34,7 @@ export function cleanPort(list) {
     const q = Number(x && x.q), c = Number(x && x.c);
     if (!p || !isFinite(q) || q === 0 || !isFinite(c) || c < 0) continue;
     const old = by.get(p.key);
-    if (old) {   // one position per instrument: average purchase price
+    if (old) {
       const nq = old.q + q;
       by.set(p.key, { s: p.key, q: nq, c: nq ? (old.q * old.c + q * c) / nq : 0 });
     } else by.set(p.key, { s: p.key, q, c });
@@ -46,7 +43,6 @@ export function cleanPort(list) {
   return [...by.values()].map((x) => ({ s: x.s, q: Math.round(x.q * 1e6) / 1e6, c: Math.round(x.c * 1e6) / 1e6 }));
 }
 
-// Portfolio at current prices: value, profit/loss, daily change
 export async function portfolioView(env, port) {
   const quotes = port.length ? await getQuotes(env, port.map((x) => x.s)) : {};
   let value = 0, cost = 0, day = 0;
@@ -65,7 +61,6 @@ export async function portfolioView(env, port) {
 }
 
 // ---------------------------------------------------------------------------
-// Alerts
 // ---------------------------------------------------------------------------
 export async function loadAlerts(env) {
   const raw = await env.SUBS.get("alerts");
@@ -78,7 +73,6 @@ export async function saveAlerts(env, a) {
   await env.SUBS.put("alerts", JSON.stringify(a));
 }
 
-// "AAPL > 200", "BTC below 60000", "oil above 80", "AAPL 5%", "news Fed" (Russian words work too)
 export function parseAlert(text) {
   const t = String(text || "").trim().replace(/\s+/g, " ");
   let m = /^(?:news|n|word|новост[иь]|слово)\s+(.{2,60})$/i.exec(t);
@@ -98,7 +92,7 @@ export function parseAlert(text) {
     if (!p || !isFinite(v) || v <= 0) return null;
     return { k: "chg", s: p.key, v };
   }
-  m = /^(.+?)\s+([\d\s.,]+)$/.exec(t);   // "AAPL 200": the direction is taken from the current price
+  m = /^(.+?)\s+([\d\s.,]+)$/.exec(t);
   if (m) {
     const p = parseSymbol(m[1]);
     const v = Number(m[2].replace(/\s/g, "").replace(",", "."));
@@ -144,8 +138,6 @@ export async function userAlerts(env, chatId) {
   return a.list.filter((x) => String(x.c) === String(chatId));
 }
 
-// Alert check (cron every 2 minutes). KV free tier allows 1,000 writes a day, so the alert list is written
-// only when something fired (or on the very first run), not on every check.
 const NEWS_FIELDS = ["title", "title_en", "title_ru", "original", "lead", "lead_en", "lead_ru"];
 
 function newsHaystack(n) {
@@ -168,17 +160,16 @@ export async function checkAlerts(env, now = new Date()) {
     const hit = x.k === "px" ? (x.op === ">" ? q.px >= x.v : q.px <= x.v)
       : x.k === "chg" ? q.ch != null && Math.abs(q.ch) >= x.v && x.day !== today : false;
     if (!hit) { keep.push(x); continue; }
-    const X = L(await getLang(env, x.c));   // the language is read only when there is something to send
+    const X = L(await getLang(env, x.c));
     const text = x.k === "px"
       ? X.t("fire_px", esc(x.s), x.op, X.price(x.v), X.price(q.px), X.pct(q.ch)) + X.t("fire_px_note", esc(x.s), x.op, x.v)
       : X.t("fire_chg", esc(x.s), q.ch > 0, X.pct(q.ch), X.price(q.px)) + X.t("fire_chg_note", X.fmt(x.v, x.v % 1 ? 1 : 0));
     const r = await send(env, x.c, text);
     fired++;
     changed = true;
-    if (r && r.ok === false && /blocked|not found|deactivated/i.test(r.description || "")) continue;   // the person left — drop the alert
+    if (r && r.ok === false && /blocked|not found|deactivated/i.test(r.description || "")) continue;
     if (x.k === "chg") keep.push({ ...x, day: today });
   }
-  // news: look for the word in headlines and summaries that appeared after the last saved check
   const newsAlerts = keep.filter((x) => x.k === "news");
   if (newsAlerts.length) {
     const d = await siteData(env).catch(() => null);
@@ -187,10 +178,10 @@ export async function checkAlerts(env, now = new Date()) {
     if (items.length) {
       const latest = items.reduce((m, n) => Math.max(m, Date.parse(n.ts) || 0), since);
       let hits = 0;
-      if (a.news_ts) {   // on the very first run only remember the time, so old stories are not sent
+      if (a.news_ts) {
         for (const x of newsAlerts) {
           const kw = x.kw.toLowerCase();
-          const created = Date.parse(x.t) || 0;   // a new alert does not get stories published before it was set
+          const created = Date.parse(x.t) || 0;
           const found = items.filter((n) => Date.parse(n.ts) > created && newsHaystack(n).includes(kw)).slice(0, 3);
           if (!found.length) continue;
           const X = L(await getLang(env, x.c));
@@ -204,7 +195,6 @@ export async function checkAlerts(env, now = new Date()) {
           }
         }
       }
-      // save the time only when it matters: first run, something was sent, or the saved mark is over 6 hours old
       if (!a.news_ts || hits || latest - since > 6 * 3600e3) {
         a.news_ts = new Date(latest).toISOString();
         changed = true;
@@ -219,7 +209,6 @@ export async function checkAlerts(env, now = new Date()) {
 }
 
 // ---------------------------------------------------------------------------
-// /api/me — watchlist, portfolio and alerts for the terminal (sign-in via Telegram or the owner's password)
 // ---------------------------------------------------------------------------
 export async function meApi(req, env, who, lang = "en") {
   if (!who) return { ok: false, error: t(lang, "me_login") };

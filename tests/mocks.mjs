@@ -1,10 +1,7 @@
-// Fake external services for the bot server and terminal tests: Finnhub, Yahoo, Binance, Moscow Exchange,
-// Telegram, QuickChart, translators and the site's files. No network.
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import * as G from "./geo_fixtures.mjs";
 
-// site files built by the Python scripts (company.py, options.py, macro.py, moex.py) — generated from real answers
 const page = (name) => JSON.parse(readFileSync(new URL("./fixtures/pages/" + name, import.meta.url), "utf8"));
 export const coAAPL = page("co/AAPL.json"), optAAPL = page("opt/AAPL.json"), optionsJson = page("options.json");
 export const macroJson = page("macro.json"), moexJson = page("moex.json");
@@ -12,14 +9,12 @@ export const macroJson = page("macro.json"), moexJson = page("moex.json");
 export const PAGES = "https://pages.test/econnews/";
 export const TOKEN = "123:TEST";
 export const OWNER = "111";
-export const sent = [];          // everything sent to Telegram
-export const calls = [];         // all outgoing requests
+export const sent = [];
+export const calls = [];
 export const flags = { failYahoo: false, failBinance: false, failGoogle: false, failSpark: false };
 
-// ------------------------------------------------------------------ data
 const now = Date.now();
 export const iso = (ms) => new Date(ms).toISOString();
-// docs/ipo.json as the news bot writes it from the Nasdaq calendar: recently priced and filed deals
 export const ipoJson = { updated: iso(now - 3600e3), source: "Nasdaq IPO calendar", ipo: [
   { date: iso(now - 3 * 864e5).slice(0, 10), symbol: "IAM", name: "Iambic Therapeutics, Inc.", exchange: "NASDAQ Global Select", price: "16.00",
     numberOfShares: 9375000, totalSharesValue: 150000000, status: "priced" },
@@ -34,13 +29,10 @@ export const dataJson = {
     { id: "Золото", name: "Золото", name_en: "Gold", price: "$4 012", value: 4012.4, change: 0.4, digits: 0, prefix: "$" },
   ],
   news: [
-    // the current format: original headline + translation, English tags and sources, AI summary in both languages
-    // (Chinese and Arabic translations without an AI note in those languages: the summary is shown instead)
     { title: "Fed holds rates", lang: "en", title_ru: "ФРС сохранила ставку", lead: "The Fed kept rates on hold.", lead_ru: "ФРС сохранила ставку.",
       title_zh: "美联储维持利率不变", lead_zh: "美联储将利率维持不变。", title_ar: "الفيدرالي يثبت أسعار الفائدة", lead_ar: "أبقى الفيدرالي أسعار الفائدة دون تغيير.",
       tags: ["Fed", "rates"], sources: ["Reuters"], link: "https://x/1", level: "high", ts: iso(now - 3600e3),
       ai: { sum: "Rates stay high for longer", sum_ru: "Ставки останутся высокими дольше", assets: [] } },
-    // the older format (Russian title + English original) must still work
     { title: "Акции Tesla обвалились после отзыва", original: "Tesla shares plunge after recall", lead: "", tags: [], sources: ["CNBC"],
       link: "https://x/3", level: "medium", ts: iso(now - 7200e3), tk: ["TSLA"], dir: -1,
       ai: { sum: "Отзыв машин бьёт по продажам Tesla", assets: [{ a: "TSLA", d: "down" }] } }],
@@ -185,10 +177,8 @@ export function route(url, init) {
   throw new Error("unexpected request: " + url);
 }
 
-// the map and monitor sources (/api/geo and the terminal e2e tests)
 export function geoRoute(u) {
   const p = u.pathname, q = u.searchParams;
-  // redirects: to a listed source (followed) and to any other address (refused by the proxy)
   if (u.host === "gdacs.org" && p === "/redir-ok") return { __redirect: "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.geojson" };
   if (u.host === "gdacs.org" && p === "/redir-evil") return { __redirect: "https://evil.example.com/x.json" };
   if (u.host === "earthquake.usgs.gov") return G.usgs;
@@ -219,7 +209,6 @@ export function installMocks() {
   globalThis.fetch = async (url, init) => {
   url = String(url);
   calls.push(url);
-  // a source that never answers (flags.hang: host fragments) — only the request's own time limit ends it
   if ((flags.hang || []).some((h) => url.includes(h))) {
     return new Promise((_, reject) => {
       const s = init && init.signal;

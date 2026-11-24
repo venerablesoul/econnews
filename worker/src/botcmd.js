@@ -1,5 +1,3 @@
-// Bot commands: companies, quotes, charts, watchlist, portfolio, alerts, screener, market map, rates.
-// Every reply is built in the chat's language: chat.lang is set by index.js ("en" by default; ru, zh or ar after /lang).
 import { LOCALE, arrow, esc, padEndW, padStartW, pageJSON, pagesUrl, send, textWidth, tg } from "./lib.js";
 import { L, getLang, macroXl, mktXl, sectorName, t } from "./i18n.js";
 import { chartImage, getCompany, getHistory, getIpos, getQuotes, normRange, parseSymbol } from "./market.js";
@@ -7,7 +5,6 @@ import {
   MAX_WATCH, addAlert, alertText, deleteAlert, getUser, parseAlert, portfolioView, saveUser, userAlerts,
 } from "./user.js";
 
-// a button that opens the terminal with a command (inside Telegram in private chats, as a link in groups)
 export function terminalBtn(env, chat, cmd, text) {
   const base = pagesUrl(env);
   if (!base.startsWith("https://")) return null;
@@ -17,7 +14,6 @@ export function terminalBtn(env, chat, cmd, text) {
   return chat.type === "private" ? { text, web_app: { url } } : { text, url };
 }
 
-// cut a cell to w columns of a monospaced table (Chinese characters take two)
 const cut = (s, w) => { s = String(s); while (s.length > 1 && textWidth(s) > w) s = s.slice(0, -1); return s; };
 
 function kb(rows) {
@@ -38,7 +34,6 @@ function rec(anr, X) {
 const qName = (x, X) => (X.ru && x.name_ru) || (!X.ru && mktXl(x.key, X.lang)) || x.name;
 
 // ---------------------------------------------------------------------------
-// Quotes
 // ---------------------------------------------------------------------------
 export async function cmdQuote(env, chat, args) {
   const X = L(chat.lang);
@@ -56,7 +51,6 @@ export async function cmdQuote(env, chat, args) {
 }
 
 // ---------------------------------------------------------------------------
-// Company
 // ---------------------------------------------------------------------------
 function companyButtons(env, chat, s) {
   const X = L(chat.lang);
@@ -225,7 +219,6 @@ function anrExtra(co, X) {
   return out;
 }
 
-// the deep file is only for the ~100 largest US companies: the others get a polite note
 async function deepOr(env, chat, raw, parts, need) {
   const X = L(chat.lang);
   const c = await getCompany(env, raw, parts, X.lang);
@@ -343,7 +336,6 @@ export async function cmdOmon(env, chat, args) {
 }
 
 // ---------------------------------------------------------------------------
-// World economy, IPOs, Moscow Exchange
 // ---------------------------------------------------------------------------
 const MACRO_ALIAS = { US: "USA", UK: "GBR", GB: "GBR", RU: "RUS", CN: "CHN", DE: "DEU", JP: "JPN", IN: "IND", FR: "FRA", IT: "ITA",
   CA: "CAN", BR: "BRA", KR: "KOR", AU: "AUS", ES: "ESP", MX: "MEX", ID: "IDN", TR: "TUR", SA: "SAU", CH: "CHE", ZA: "ZAF",
@@ -360,7 +352,7 @@ export async function cmdMacro(env, chat, args) {
   const q = args.join(" ").trim().toUpperCase();
   if (q) {
     const code = MACRO_ALIAS[q] || q;
-    const xl = (x) => macroXl(x.c, "zh") === q || macroXl(x.c, "ar") === q;   // "/macro 中国", "/macro الصين"
+    const xl = (x) => macroXl(x.c, "zh") === q || macroXl(x.c, "ar") === q;
     const r = d.rows.find((x) => x.c === code || x.en.toUpperCase() === q || x.ru.toUpperCase() === q || xl(x) || x.en.toUpperCase().startsWith(q) || x.ru.toUpperCase().startsWith(q));
     if (r) {
       const yrs = d.years.slice(-5);
@@ -417,13 +409,12 @@ export async function cmdMoex(env, chat) {
 }
 
 // ---------------------------------------------------------------------------
-// Morning note: companies from your watchlist that report today or tomorrow (09:00 MSK, once a day)
 // ---------------------------------------------------------------------------
 export async function watchReminders(env, now = new Date()) {
   if (!env.SUBS || now.getUTCHours() !== 6) return { skipped: true };
   const day = now.toISOString().slice(0, 10);
   if (await env.SUBS.get("daily:" + day)) return { done: true };
-  await env.SUBS.put("daily:" + day, "1", { expirationTtl: 3 * 86400 });   // first: never twice a day, even if sending fails
+  await env.SUBS.put("daily:" + day, "1", { expirationTtl: 3 * 86400 });
   const st = await pageJSON(env, "stocks.json", 300);
   const tomorrow = new Date(now.getTime() + 864e5).toISOString().slice(0, 10);
   const by = {};
@@ -433,7 +424,7 @@ export async function watchReminders(env, now = new Date()) {
   do {
     const page = await env.SUBS.list({ prefix: "p:", cursor });
     for (const k of page.keys) {
-      if (sent >= 40) return { sent, capped: true };   // shortcut: ≤ 40 messages a run (Workers' subrequest limit), page by cursor when users grow
+      if (sent >= 40) return { sent, capped: true };
       const id = k.name.slice(2);
       const raw = await env.SUBS.get(k.name);
       let w = [];
@@ -453,7 +444,6 @@ export async function watchReminders(env, now = new Date()) {
 }
 
 // ---------------------------------------------------------------------------
-// Chart picture
 // ---------------------------------------------------------------------------
 export async function cmdChart(env, chat, args) {
   const X = L(chat.lang);
@@ -469,17 +459,15 @@ export async function cmdChart(env, chat, args) {
   const buttons = kb([["1d", "1m", "6m", "1y", "5y"].map((r) => ({ text: r === range ? "• " + r + " •" : r, callback_data: "chart:" + h.s + ":" + r })),
     [terminalBtn(env, chat, h.s + " GP", X.t("btn_open_terminal"))]]);
   try {
-    // the picture is drawn by QuickChart, whose fonts may lack Chinese and Arabic: it stays English for them
     const pic = X.lang === "ru" ? "ru" : "en";
     const url = await chartImage(h, `${h.s} · ${t(pic, "ranges")[range]} · ${L(pic).pct(ch)}`, pic);
     const r = await tg(env, "sendPhoto", { chat_id: chat.id, photo: url, caption, parse_mode: "HTML", reply_markup: buttons });
     if (r.ok) return r;
-  } catch (e) { /* no picture — send as text */ }
+  } catch (e) {  }
   return send(env, chat, caption, buttons);
 }
 
 // ---------------------------------------------------------------------------
-// Watchlist
 // ---------------------------------------------------------------------------
 export async function cmdWatch(env, chat, args, remove = false) {
   const X = L(chat.lang);
@@ -511,7 +499,6 @@ async function watchView(env, chat, w) {
 }
 
 // ---------------------------------------------------------------------------
-// Portfolio
 // ---------------------------------------------------------------------------
 const num = (s) => Number(String(s == null ? "" : s).replace(",", "."));
 
@@ -557,7 +544,6 @@ export async function cmdPort(env, chat, args, mode) {
 }
 
 // ---------------------------------------------------------------------------
-// Alerts
 // ---------------------------------------------------------------------------
 export async function cmdAlert(env, chat, rest) {
   const X = L(chat.lang);
@@ -587,7 +573,6 @@ export async function cmdAlerts(env, chat) {
 }
 
 // ---------------------------------------------------------------------------
-// Whole market: screener, map, earnings
 // ---------------------------------------------------------------------------
 export const EQS_PRESETS = {
   leaders: (a) => a.filter((r) => r.ch != null).sort((x, y) => y.ch - x.ch),
@@ -659,7 +644,6 @@ export async function cmdEarnings(env, chat) {
 }
 
 // ---------------------------------------------------------------------------
-// Rates
 // ---------------------------------------------------------------------------
 function curvePoint(c, lbl) {
   const i = c.t.indexOf(lbl);
@@ -709,10 +693,8 @@ export async function cmdWirp(env, chat) {
 }
 
 // ---------------------------------------------------------------------------
-// Command and button routing
 // ---------------------------------------------------------------------------
 export function newCommand(cmd, args, rest) {
-  // returns a handler (env, chat) => Promise, or null if the command is not from this set
   switch (cmd) {
     case "q": case "quote": case "quotes": case "кот": return (env, chat) => cmdQuote(env, chat, args);
     case "des": case "d": case "company": case "компания": return (env, chat) => cmdDes(env, chat, args);
@@ -783,7 +765,6 @@ export async function newCallback(data, chat, env) {
   }
 }
 
-// callback_data must be ≤ 64 bytes: tickers are short
 export function isNewCallback(data) {
   return /^(fa|ern|anr|cn|ee|hds|dvd|si|cf|rv|omon|mgmt|chart|w\+|watch|port|adel|eqs)(:|$)/.test(data || "");
 }

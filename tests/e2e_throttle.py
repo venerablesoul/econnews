@@ -1,19 +1,4 @@
 #!/usr/bin/env python3
-"""
-The terminal on a network that throttles Cloudflare (Russian providers since June 2025: a connection stops after
-~16 KB, every later request on it hangs; a fresh connection works). The bot server is on *.workers.dev.
-
-A. The usual port (:443) hangs, the other HTTPS ports of the same server answer: quotes must come at once anyway,
-   the status never shows "SERVER ✕", the fresh story comes through the small /api/live?since= answer.
-B. Every connection stalls after two answers and starts fresh ~10 s after it stalled (what the browser does when its
-   check of a dead connection fails): live quotes keep coming every couple of seconds, no "SERVER ✕".
-C. Nothing answers at all: the screen is full at once anyway (the browser's copy and the bot's data on the site,
-   US stocks included), "SERVER ✕" only after several failed tries.
-D. Inside Telegram the sign-in data is read from the address: the first quotes request goes out at once with it,
-   without waiting up to 3 s for telegram.org.
-
-Run: python3 tests/e2e_throttle.py   (needs node and Playwright, like tests/e2e_terminal.py)
-"""
 import json
 import os
 import sys
@@ -30,13 +15,11 @@ HOST = "econnews-bot.test.workers.dev"
 API = "https://" + HOST
 X = ("SERVER ✕", "СЕРВЕР ✕")
 
-# data.json as the bot now writes it: the US panel's tickers are in it (terminal: true)
 US = [{"id": "SPY", "name": "S&P 500 ETF", "name_en": "S&P 500 ETF", "price": "$738,03", "value": 738.03, "change": 0.69,
        "digits": 2, "prefix": "$", "spark": [733, 735, 738.03], "terminal": True},
       {"id": "AAPL", "name": "Apple", "name_en": "Apple", "price": "$344,22", "value": 344.22, "change": 0.02,
        "digits": 2, "prefix": "$", "spark": [340, 342, 344.22], "terminal": True}]
 
-# records every value of the status pill from the very start
 PILL_WATCH = """
 setInterval(function(){
   var e = document.getElementById('st-data'); if (!e) return;
@@ -54,7 +37,6 @@ def main():
     data = json.loads(urllib.request.urlopen(f"{fake}/__fx/data.json").read())
     data["market"] = data["market"] + US
     fx["data.json"] = json.dumps(data).encode()
-    # a fresh story on the server that the site does not have yet
     import hashlib
     key = hashlib.sha256(b"econnews-sync:123:TEST").hexdigest()
     story = {"title": "Fresh story from the server", "lang": "en", "title_ru": "Свежая новость с сервера",
@@ -67,7 +49,6 @@ def main():
     check = E.check
 
     def forward(route, refresh=None):
-        """Answers a request to the workers.dev server from the local fake server (the real worker code)."""
         req = route.request
         u = urllib.parse.urlparse(req.url)
         target = fake + u.path + ("?" + u.query if u.query else "")
@@ -85,7 +66,6 @@ def main():
                                               "Access-Control-Allow-Headers": "X-Tg-Init, X-Owner-Key, Content-Type"}, body=out)
 
     def session(server, config=None, url_suffix="", before=None, stall_tg=False):
-        """A browser with the site on localhost and the bot server faked by `server(route, port)` (None = hang)."""
         pw = sync_playwright().start()
         browser = pw.chromium.launch()
         ctx = browser.new_context(viewport={"width": 1440, "height": 900})
@@ -101,12 +81,12 @@ def main():
                 port = u.port or 443
                 log["req"].append((time.time(), port, u.path + ("?" + u.query if u.query else ""), dict(route.request.headers, _method=route.request.method)))
                 if server(route, port) is None:
-                    log["stalled"].append((time.time(), port, u.path))   # left unanswered: the connection hangs
+                    log["stalled"].append((time.time(), port, u.path))
                     log["hung"].append(route)
                 return
             if "telegram.org" in url and stall_tg:
                 log["hung"].append(route)
-                return   # telegram.org hangs too
+                return
             if any(b in url for b in E.BLOCK):
                 return route.abort()
             if u.netloc == f"127.0.0.1:{sport}":
@@ -124,7 +104,7 @@ def main():
         return pw, browser, page, log, errors, t0
 
     def close(pw, browser, log):
-        for r in log["hung"]:   # let the hanging requests go before closing (otherwise Playwright prints noise)
+        for r in log["hung"]:
             try:
                 r.abort()
             except Exception:
@@ -138,7 +118,6 @@ def main():
     def us_rows(page):
         return page.evaluate("Array.from(document.querySelectorAll('#g-US + table tr.row')).map(function(r){ return r.dataset.id })")
 
-    # ---------------------------------------------------------------- A. :443 hangs, other ports answer
     def a_server(route, port):
         if port == 443:
             return None
@@ -170,19 +149,18 @@ def main():
     finally:
         close(pw, browser, log)
 
-    # ---------------------------------------------------------------- B. every connection stalls after 2 answers
     budget = {}
     def b_server(route, port):
         st = budget.setdefault(port, {"n": 0, "stalled_at": None})
         if st["stalled_at"] is not None:
             if time.time() - st["stalled_at"] < 10:
-                return None                       # the dead connection: everything on it hangs
-            st.update(n=0, stalled_at=None)       # the browser dropped it — a fresh connection
+                return None
+            st.update(n=0, stalled_at=None)
         if st["n"] >= 2:
             st["stalled_at"] = time.time()
             return None
         st["n"] += 1
-        forward(route, refresh=2)                 # quotes every 2 s: many connections are used up in the test
+        forward(route, refresh=2)
         return True
     pw, browser, page, log, errors, t0 = session(b_server)
     try:
@@ -210,7 +188,6 @@ def main():
     finally:
         close(pw, browser, log)
 
-    # ---------------------------------------------------------------- C. nothing answers
     pw, browser, page, log, errors, t0 = session(lambda route, port: None)
     try:
         page.wait_for_selector("#mkt table", timeout=5000)
@@ -234,7 +211,6 @@ def main():
     finally:
         close(pw, browser, log)
 
-    # ---------------------------------------------------------------- D. Telegram: no wait for telegram.org
     init = "query_id=AAE&user=%7B%22id%22%3A42%2C%22first_name%22%3A%22T%22%7D&auth_date=1700000000&hash=abc"
     pw, browser, page, log, errors, t0 = session(lambda route, port: forward(route) or True, stall_tg=True,
                                                  url_suffix="#tgWebAppData=" + urllib.parse.quote(init) + "&tgWebAppVersion=7.0")

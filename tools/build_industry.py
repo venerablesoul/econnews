@@ -1,11 +1,6 @@
-"""Builds the heavy-industry, natural-gas and oil-storage layers of the terminal map:
-  docs/geo/factories.json — steel, aluminium, cement, chemicals, pulp and paper, glass, other metals
-                            (Climate TRACE asset inventory, CC BY 4.0: location, owner, capacity, CO2e a year)
-  docs/geo/gas.json       — natural gas fields (Wikidata, CC0) and underground gas storage (Wikidata + OpenStreetMap, ODbL)
-  docs/geo/depots.json    — oil storage terminals and fuel depots (OpenStreetMap, ODbL)
-
-Run where the internet is open:  python3 tools/build_industry.py fetch OUT_DIR
-then:                             python3 tools/build_industry.py build OUT_DIR NE_COUNTRIES.geojson
+"""
+  python3 tools/build_industry.py fetch OUT_DIR
+  python3 tools/build_industry.py build OUT_DIR NE_COUNTRIES.geojson
 """
 import json
 import os
@@ -19,7 +14,6 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from build_infra import GEO, OVERPASS, UA, WIKIDATA, country_of, dedupe, load_countries  # noqa: E402
 
 CT = "https://api.climatetrace.org/v6/assets?sectors=manufacturing&limit=1000&offset={off}"
-# Climate TRACE sector → the map's category
 CATS = ["steel", "aluminium", "cement", "chemicals", "paper", "glass", "metals"]
 SECTOR_CAT = {"iron-and-steel": "steel", "aluminum": "aluminium", "cement": "cement", "chemicals": "chemicals", "other-chemicals": "chemicals",
               "petrochemical-steam-cracking": "chemicals", "pulp-and-paper": "paper", "glass": "glass", "other-metals": "metals"}
@@ -27,12 +21,10 @@ OSM_DEPOTS = '[out:json][timeout:280];nwr["industrial"~"^(oil_depot|fuel_depot|t
 OSM_GAS = ('[out:json][timeout:280];(nwr["industrial"~"gas_storage|underground_gas_storage|gas_reservoir"];'
            'nwr["name"~"[Uu]nderground [Gg]as [Ss]torage|[Gg]as [Ss]torage [Ff]acility|Erdgasspeicher|Untergrundspeicher|Untertagespeicher|Gasspeicher|ПХГ|'
            '[Пп]одземное хранилище газа|stockage de gaz|stoccaggio gas|magazyn gazu|zásobník plynu"][!"highway"];);out center tags qt;')
-# Wikidata classes: natural gas field, gas condensate field, oil and gas field (two items), underground gas storage
 WD_GAS_FIELDS = ["Q1349255", "Q12093880", "Q4291415", "Q12132769"]
 WD_GAS_STORAGE = ["Q2497639"]
 KEEP_TAGS = ("industrial", "operator", "capacity", "substance", "product", "storage", "content", "man_made", "landuse", "name:en", "name:ru", "owner")
 
-# names that mean underground storage of natural gas, and names of things that are not
 UGS_NAME = re.compile(r"(gas storage|storage field|storage dome|gas hub|erdgasspeicher|untergrundspeicher|untertagespeicher|porenspeicher|kavernenspeicher|"
                       r"gasspeicher|kaverne|упхг|пхг|подземн\w* хранилищ\w* газа|zásobník|stoccaggio|gaslager|magazyn gazu|stockage|almacenamiento|"
                       r"gasopslag|gas cavern|underground storage)", re.I)
@@ -105,10 +97,9 @@ def factories(src, countries):
         t = "" if t.lower() in ("unknown", "other metals", "other chemicals", "manufacturing", "other minerals") else t
         if t not in types:
             types.append(t)
-        # capacity only where it is in tonnes of product (Climate TRACE leaves "unitless" placeholders)
         cap = _num(cap) if cap_u and cap_u != "unitless" else None
         out.append([lon, lat, CATS.index(cat), name.strip(), iso or country_of(countries, lon, lat), (owner or "").strip(), cap, _num(emis), types.index(t)])
-    out.sort(key=lambda r: -(r[7] or 0))   # the biggest emitters first: drawn last, on top
+    out.sort(key=lambda r: -(r[7] or 0))
     return {"src": "Climate TRACE (CC BY 4.0)", "cats": CATS, "types": types, "p": out}
 
 
@@ -134,7 +125,6 @@ def gas(src, countries):
         if NOT_UGS.search(name) or not (UGS_NAME.search(name) or t.get("man_made") == "gas_cavern"):
             continue
         stor.append([round(lon, 4), round(lat, 4), 1, name, country_of(countries, lon, lat), t.get("operator") or t.get("owner") or ""])
-    # one point per site: Wikidata first, then the OpenStreetMap name that says most
     stor = dedupe(sorted(stor, key=lambda r: (len(r[3]) < 6, -len(r[3]))), 8)
     return {"src": "Wikidata (CC0), OpenStreetMap contributors (ODbL)", "p": fields + stor}
 

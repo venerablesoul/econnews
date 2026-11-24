@@ -1,8 +1,5 @@
 name: Tests
 
-# The news bot and the bot server (worker/) without network: runs on every change of the code.
-# The news bot picks up new code from main by itself, so a red run here means: fix before it bites.
-
 on:
   push:
     branches: [main]
@@ -30,7 +27,7 @@ jobs:
           cache-dependency-path: requirements.txt
 
       - name: Install the optional libraries
-        run: pip install -r requirements.txt pyyaml==6.0.3   # pyyaml: the tests read the workflows
+        run: pip install -r requirements.txt pyyaml==6.0.3
 
       - name: News bot tests
         run: python -m unittest discover -s tests -p "test_*.py"

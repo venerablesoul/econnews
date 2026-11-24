@@ -1,10 +1,3 @@
-/* Market monitors and the remaining Bloomberg functions from the lists.
-   MOV — what drives the index (S&P 500 through its ~100 largest members, the MOEX index with its real weights)
-   MOST — most active, gainers, losers, 52-week highs and lows · MRR — members ranked by return · MEMB — members and weights
-   WPE — world valuations (P/E, P/B, yield of country ETFs) · BI — sector dashboards · FPC — ETF returns ranked · CDR — exchange hours and holidays
-   Rates panel: WB — world bond markets, BTMM — a country's rates at a glance, MMR — money-market rates, SRCH — US Treasury securities
-   News: NSE topics (MNA, OPN, USS, CNS, US COS, BBEA), TOPCA, MA, RATC.
-   Aliases: WFX, ECDR, PDF, CRVF, FIT, USSW, EM, PHDC, ISSD, BQ, RELS, FUND. */
 (function(){
 'use strict';
 var T = window.TERM, F = window.FN;
@@ -25,7 +18,6 @@ function renderMon(){
   if (!F.visible('p-mon')) return;
   $('mon-code').textContent = mon.tab;
   $('mon-sub').textContent = '';
-  // each drawing gets its own container: an answer that comes late (after a switch of tab) fills a detached one
   var host = $('mon-body'); clear(host);
   var box = el('div', 'mon-in'); host.appendChild(box);
   ({MOV: drawMov, MOST: drawMost, MRR: drawMrr, MEMB: drawMemb, WPE: drawWpe, BI: drawBi, FPC: drawFpc, CDR: drawCdr, NA: drawNa}[mon.tab] || drawMov)(box);
@@ -46,7 +38,6 @@ function stat(box, pairs){
   pairs.forEach(function(x){ if (!x) return; var s = el('span', null, x[0] + ': '); s.appendChild(el('b', x[2] || null, x[1])); st.appendChild(s) });
   box.appendChild(st);
 }
-// the members of an index: US — the ~100 largest stocks (stocks.json), Russia — the MOEX index (moex.json, weights from the exchange)
 function members(){
   if (mon.reg === 'RU') return F.page('moex.json', 120).then(function(d){
     var rows = (d.rows || []).filter(function(r){ return r.w > 0 && r.px });
@@ -85,7 +76,6 @@ function drawMov(box){
       var d = el('div'); d.appendChild(el('div', 'sec', g[0]));
       var tb = table(cols(TX('mov_cols'), [0]));
       g[1].forEach(function(r){
-        // the ticker with the company's name beside it, cut to fit: four columns fit half a panel
         var tr = el('tr', 'row'), nmc = el('td', 'l'), nmw = el('div', 'mv-nm'); nmw.appendChild(el('b', 'tkc', r.s)); nmw.appendChild(el('small', null, ' ' + (r.n || ''))); nmc.appendChild(nmw); tr.appendChild(nmc);
         tr.appendChild(F.chg(r.ch)); tr.appendChild(td(fmt(r.w, 2) + '%', 'num'));
         var c = el('td', 'num ' + cls(r.ctb)), bar = el('i', 'mbar'); bar.style.width = Math.max(2, Math.round(Math.abs(r.ctb) / maxAbs * 28)) + 'px'; bar.style.background = r.ctb >= 0 ? '#1f7a45' : '#8a2a2a';
@@ -125,7 +115,7 @@ function drawMost(box){
     var tb = table(cols(TX('most_cols'), [0, 1]));
     rows.slice(0, 30).forEach(function(r){
       var tr = el('tr', 'row'); tr.appendChild(td(r.s, 'l tkc')); tr.appendChild(td(r.n, 'l nm')); tr.appendChild(td(price(r.px), 'num')); tr.appendChild(F.chg(r.ch));
-      var vu = r.vol ? I.scale(r.vol, 2, 2) : null;   // millions of shares (Chinese: 万)
+      var vu = r.vol ? I.scale(r.vol, 2, 2) : null;
       tr.appendChild(td(r.vol ? (vu ? fmt(vu.x, 1) + vu.s : fmt(r.vol, 0)) : '—', 'num')); tr.appendChild(td(money(r.val), 'num'));
       tr.appendChild(td(r.h52 ? pct((r.px / r.h52 - 1) * 100, 1) : '—', 'num')); tr.appendChild(td(r.l52 ? pct((r.px / r.l52 - 1) * 100, 1) : '—', 'num'));
       tr.onclick = function(){ openRow(r.s) }; tb.body.appendChild(tr);
@@ -209,7 +199,6 @@ function drawWpe(box){
     clear(box);
     var d = r[0], s = r[1], rows = (d && d.rows) || [];
     $('mon-sub').textContent = d && d.updated ? TX('updated_at', T.hm(d.updated)) : '';
-    // a check computed here: the ~100 largest US stocks, P/E weighted by market cap (Σcap / Σearnings)
     if (s && s.stocks) {
       var cap = 0, earn = 0, fe = 0, fcap = 0;
       s.stocks.forEach(function(x){ if (x.mcap && x.pe > 0) { cap += x.mcap; earn += x.mcap / x.pe } if (x.mcap && x.fpe > 0) { fcap += x.mcap; fe += x.mcap / x.fpe } });
@@ -219,7 +208,6 @@ function drawWpe(box){
     var tb = table(cols(TX('wpe_cols'), [0, 1]));
     var pes = rows.map(function(x){ return x.pe }).filter(function(v){ return v > 0 }).sort(function(a, b){ return a - b }), med = pes.length ? pes[Math.floor(pes.length / 2)] : null;
     rows.forEach(function(x){
-      // Chinese and Arabic: the country from the browser, plus the index in brackets ("United States (S&P 500)")
       var wn = I.ru ? x.ru || x.en : I.xl ? I.country(x.c, x.en) + ((/ \(.+\)$/.exec(x.en) || [''])[0]) : x.en;
       var tr = el('tr', 'row'); tr.appendChild(td((x.flag || '') + ' ' + wn, 'l')); tr.appendChild(td(x.s, 'l tkc'));
       var pe = td(x.pe != null ? fmt(x.pe, 1) : '—', 'num'); if (x.pe != null && med) { pe.style.background = F.heat(-(x.pe / med - 1) * 2, 1); pe.style.color = '#fff' } tr.appendChild(pe);
@@ -274,7 +262,6 @@ function drawBi(box){
 }
 
 /* ---------- FPC: ETF returns ranked ---------- */
-// ticker, group, what it holds (English, Russian)
 var FUNDS = [['SPY', 'eq', 'S&P 500', 'S&P 500'], ['QQQ', 'eq', 'Nasdaq 100', 'Nasdaq 100'], ['DIA', 'eq', 'Dow Jones', 'Dow Jones'], ['IWM', 'eq', 'Russell 2000 (small caps)', 'Russell 2000 (малые компании)'],
   ['VTI', 'eq', 'Total US market', 'Весь рынок США'], ['EFA', 'eq', 'Developed ex-US', 'Развитые рынки без США'], ['VGK', 'eq', 'Europe', 'Европа'], ['EWJ', 'eq', 'Japan', 'Япония'],
   ['EEM', 'eq', 'Emerging markets', 'Развивающиеся рынки'], ['FXI', 'eq', 'China large caps', 'Крупные компании Китая'], ['INDA', 'eq', 'India', 'Индия'], ['EWZ', 'eq', 'Brazil', 'Бразилия'],
@@ -328,7 +315,6 @@ function perfRows(syms){
 }
 
 /* ---------- CDR: exchanges — hours, open now, holidays ---------- */
-// [code, English, Russian, time zone, sessions [[open, close], …] local time, country for holidays, trading days (0 = Sunday)]
 var EXCHANGES = [
   ['NYSE', 'New York (NYSE, Nasdaq)', 'Нью-Йорк (NYSE, Nasdaq)', 'America/New_York', [['09:30', '16:00']], 'US', [1, 2, 3, 4, 5]],
   ['TSX', 'Toronto', 'Торонто', 'America/Toronto', [['09:30', '16:00']], 'CA', [1, 2, 3, 4, 5]],
@@ -356,7 +342,6 @@ function localParts(tz, d){
   return {date: g('year') + '-' + g('month') + '-' + g('day'), min: (+g('hour') % 24) * 60 + +g('minute'), wd: wd, hm: ('0' + (+g('hour') % 24)).slice(-2) + ':' + g('minute')};
 }
 function hmMin(s){ var a = s.split(':'); return +a[0] * 60 + +a[1] }
-// NYSE holidays (rule-based: the exchange closes on Good Friday, stays open on Columbus and Veterans Day)
 function nyseHolidays(y){
   var out = [], d2 = function(m, d){ return y + '-' + ('0' + m).slice(-2) + '-' + ('0' + d).slice(-2) };
   var nth = function(m, wd, n){ var d = new Date(Date.UTC(y, m - 1, 1)), c = 0; while (true) { if (d.getUTCDay() === wd && ++c === n) return d2(m, d.getUTCDate()); d.setUTCDate(d.getUTCDate() + 1) } };
@@ -367,14 +352,11 @@ function nyseHolidays(y){
   out.push([last(5, 1), 'Memorial Day']); obs(6, 19, 'Juneteenth'); obs(7, 4, 'Independence Day'); out.push([nth(9, 1, 1), 'Labor Day']); out.push([nth(11, 4, 4), 'Thanksgiving Day']); obs(12, 25, 'Christmas Day');
   return out.sort(function(x, z){ return x[0] < z[0] ? -1 : 1 });
 }
-// Easter Sunday (Anonymous Gregorian algorithm) plus `shift` days, as YYYY-MM-DD
 function easter(y, shift){
   var a = y % 19, b = Math.floor(y / 100), c = y % 100, d = Math.floor(b / 4), e = b % 4, f = Math.floor((b + 8) / 25), g = Math.floor((b - f + 1) / 3), h = (19 * a + b - d - g + 15) % 30,
     i = Math.floor(c / 4), k = c % 4, l = (32 + 2 * e + 2 * i - h - k) % 7, m = Math.floor((a + 11 * h + 22 * l) / 451), mon_ = Math.floor((h + l - 7 * m + 114) / 31), day = ((h + l - 7 * m + 114) % 31) + 1;
   return new Date(Date.UTC(y, mon_ - 1, day + (shift || 0))).toISOString().slice(0, 10);
 }
-// European exchanges keep their own calendars, not the country's public holidays (Euronext trades on Bastille Day,
-// Xetra on German regional holidays): the published closing days, by rule
 var HOL_NAMES = {ny: ["New Year's Day", 'Новый год'], ny2: ["Berchtold's Day", 'День святого Бертольда'], gf: ['Good Friday', 'Страстная пятница'], em: ['Easter Monday', 'Пасхальный понедельник'],
   may1: ['Labour Day', 'День труда'], asc: ['Ascension Day', 'Вознесение'], wm: ['Whit Monday', 'Духов понедельник'], ch1: ['Swiss National Day', 'Национальный день Швейцарии'],
   xe: ['Christmas Eve', 'Сочельник'], x1: ['Christmas Day', 'Рождество'], x2: ['Boxing Day', 'День подарков'], nye: ["New Year's Eve", 'Канун Нового года'],
@@ -384,7 +366,7 @@ function ruleHolidays(code, y){
   var wd = function(s){ return new Date(s + 'T12:00:00Z').getUTCDay() };
   var monday = function(m, last){ var d = new Date(Date.UTC(y, last ? m : m - 1, last ? 0 : 1)); while (d.getUTCDay() !== 1) d.setUTCDate(d.getUTCDate() + (last ? -1 : 1)); return d.toISOString().slice(0, 10) };
   var L = [];
-  if (code === 'LSE') {   // England and Wales bank holidays, moved to a weekday when they fall on a weekend
+  if (code === 'LSE') {
     var ny = d2(1, 1); while (wd(ny) === 0 || wd(ny) === 6) ny = new Date(Date.parse(ny) + 864e5).toISOString().slice(0, 10);
     var x1 = d2(12, 25), x2 = d2(12, 26), w = wd(x1);
     if (w === 6) { x1 = d2(12, 27); x2 = d2(12, 28) } else if (w === 0) { x1 = d2(12, 27) } else if (w === 5) { x2 = d2(12, 28) }
@@ -412,7 +394,6 @@ function holidays(cc, code){
     });
   };
   holCache[cc] = Promise.all([get(y), get(y + 1).catch(function(){ return [] })]).then(function(a){
-    // nationwide public holidays only (regional ones, Armistice Day in a few provinces, do not close the exchange), one per date
     var seen = {};
     return a[0].concat(a[1]).filter(function(h){ if (h.global === false || seen[h.date]) return false; seen[h.date] = 1; return true })
       .map(function(h){ return {date: h.date, name: I.ru && h.localName && /[а-яё]/i.test(h.localName) ? h.localName : h.name} })
@@ -460,7 +441,6 @@ function drawCdr(box){
   box.appendChild(el('div', 'note', TX('cdr_note')));
 }
 function toMsk(tz, hm){
-  // today's local session time shown in Moscow time
   var now = new Date(), p = localParts(tz, now), offs = (localParts('Europe/Moscow', now).min - p.min);
   if (localParts('Europe/Moscow', now).date !== p.date) offs += localParts('Europe/Moscow', now).date > p.date ? 1440 : -1440;
   var m = ((hmMin(hm) + offs) % 1440 + 1440) % 1440;
@@ -503,7 +483,6 @@ F.GC_TABS.WB = function(box, d){
     tb.body.appendChild(tr);
   });
   box.appendChild(tb.t);
-  // the 10-year yields as bars
   var NS = 'http://www.w3.org/2000/svg', W = 520, H = 22 * rows.length + 8, svg = document.createElementNS(NS, 'svg'), mx = Math.max.apply(null, rows.map(function(r){ return r.y10 })) || 1;
   svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H); svg.setAttribute('class', 'gc-svg'); svg.style.maxWidth = W + 'px'; svg.style.height = 'auto';
   rows.forEach(function(r, i){
@@ -516,7 +495,6 @@ F.GC_TABS.WB = function(box, d){
   box.appendChild(el('div', 'note', TX('wb_note')));
 };
 var MM_OF = {US: ['SOFR', 'EFFR', 'OBFR'], EA: ['ESTR'], DE: ['ESTR'], FR: ['ESTR'], IT: ['ESTR'], UK: ['SONIA'], RU: ['RUONIA', 'RUSFAR'], JP: ['TONA'], CH: ['SARON'], CA: ['CORRA'], AU: ['AONIA']};
-// rates.json keeps central banks under BIS codes: XM — the ECB, GB — the Bank of England
 var CB_OF = {US: 'US', DE: 'XM', FR: 'XM', IT: 'XM', EA: 'XM', UK: 'GB', GB: 'GB', JP: 'JP', RU: 'RU', CA: 'CA', AU: 'AU', CH: 'CH', CN: 'CN', IN: 'IN', BR: 'BR', TR: 'TR'};
 var CUR_OF = {US: 'USD', DE: 'EUR', FR: 'EUR', IT: 'EUR', EA: 'EUR', UK: 'GBP', JP: 'JPY', RU: 'RUB', CA: 'CAD', AU: 'AUD', CH: 'CHF', CN: 'CNY'};
 var FX_OF = {DE: 'EUR/USD', EA: 'EUR/USD', FR: 'EUR/USD', IT: 'EUR/USD', UK: 'GBPUSD', JP: 'USDJPY', RU: 'USD/RUB', CH: 'USDCHF', CN: 'USDCNY', US: 'DXY'};
@@ -529,7 +507,6 @@ F.GC_TABS.BTMM = function(box, d){
   ['US', 'EA', 'DE', 'UK', 'JP', 'RU', 'CA', 'AU', 'CH'].forEach(function(k){ var b = el('button', 'chipbtn' + (c === k ? ' on' : ''), (CURVE_FLAG[k] || '') + ' ' + k); b.onclick = function(){ gcArg = k; store('btmm_c', k); F.GC_TABS.BTMM(box, d) }; t.appendChild(b) });
   box.appendChild(t);
   var blocks = el('div', 'mon-2'); box.appendChild(blocks);
-  // policy rate
   var cb = (d.cb || []).filter(function(x){ return x.c === (CB_OF[c] || c) })[0];
   var b1 = el('div', 'blk'); b1.appendChild(el('h4', null, TX('btmm_cb')));
   if (cb) {
@@ -541,7 +518,6 @@ F.GC_TABS.BTMM = function(box, d){
     F.kv(b1, [[TX('btmm_next'), dmy(m0.date)], [TX('btmm_implied'), num(m0.after, 3) + '% (' + (m0.d_bp > 0 ? '+' : '') + num(m0.d_bp, 1) + TX('bp') + ')']]);
   }
   blocks.appendChild(b1);
-  // money markets
   var b2 = el('div', 'blk'); b2.appendChild(el('h4', null, TX('btmm_mm')));
   var mm = (d.mm || []).filter(function(x){ return (MM_OF[c] || []).indexOf(x.k) >= 0 });
   if (mm.length) F.kv(b2, mm.map(function(x){ return [x.k, num(x.v, 3) + '%', null, dmy(x.date)] }));
@@ -549,7 +525,6 @@ F.GC_TABS.BTMM = function(box, d){
   var fx = FX_OF[c] && T.Q[FX_OF[c]];
   if (fx) F.kv(b2, [[fx.name, fmt(fx.value, fx.digits) + ' ' + pct(fx.change), cls(fx.change)]]);
   blocks.appendChild(b2);
-  // the curve
   var cv = (d.curves || {})[c];
   if (cv) {
     var tb = table(cols(TX('btmm_curve_cols'), [0]));
@@ -560,7 +535,6 @@ F.GC_TABS.BTMM = function(box, d){
     tb.t.appendChild(foot);
     var b3 = F.h4(box, TX('btmm_curve', dmy(cv.date))); b3.appendChild(tb.t);
   } else box.appendChild(el('div', 'note', TX('btmm_nocurve')));
-  // the calendar for this currency
   var cur = CUR_OF[c], ev = ((T.data() && T.data().calendar) || []).filter(function(e){ return e.country === cur && new Date(e.ts) > Date.now() - 864e5 });
   var b4 = F.h4(box, TX('btmm_eco', cur || c));
   if (!ev.length) b4.appendChild(el('div', 'note', TX('btmm_noeco')));
@@ -583,8 +557,6 @@ F.GC_TABS.MMR = function(box, d){
   box.appendChild(tb.t);
   box.appendChild(el('div', 'note', TX('mmr_note')));
 };
-// US Treasury securities: auctions and their results. The Treasury's Fiscal Data API does not answer browsers,
-// so the bot keeps a copy (auctions.py → auctions.json): ~13 months back and the announced ones
 var srch = {type: 'Bill', q: ''};
 F.GC_TABS.SRCH = function(box){
   clear(box);
@@ -607,7 +579,6 @@ F.GC_TABS.SRCH = function(box){
       tr.appendChild(td(x.cusip, 'l tkc')); tr.appendChild(td(term, 'l'));
       tr.appendChild(td(dmy(x.auction_date), 'num')); tr.appendChild(td(x.issue_date ? dmy(x.issue_date) : '—', 'num')); tr.appendChild(td(x.maturity_date ? dmy(x.maturity_date) : '—', 'num'));
       var y = x.high_yield != null ? x.high_yield : x.high_investment_rate != null ? x.high_investment_rate : x.high_discnt_rate;
-      // no results yet: announced (ahead) or just held — the Treasury publishes the results in its data with a lag of days
       var nores = y == null && x.bid_to_cover_ratio == null, soon = nores && x.auction_date >= today, pend = nores && !soon && x.auction_date >= recent;
       tr.appendChild(td(y != null ? num(y, 3) + '%' : soon ? TX('srch_coming') : pend ? TX('srch_pending') : '—', 'num' + (soon || pend ? ' flat' : '')));
       tr.appendChild(td(x.int_rate != null ? num(x.int_rate, 3) + '%' : '—', 'num'));
@@ -652,9 +623,7 @@ C.NSE = function(arg){
 C.TOPCA = function(){ topic('CNS', true) };
 C.MA = function(){ topic('MNA') }; C.MNA = C.MA; C['СЛИЯНИЯ'] = C.MA;
 C.RATC = function(){ topic('RATC') }; C['РЕЙТИНГИ'] = C.RATC;
-// the topic codes typed on their own, as in the list: CNS, USS, OPN, COS (also "US COS"), BBEA
 ['CNS', 'USS', 'OPN', 'COS', 'BBEA'].forEach(function(k){ if (!C[k]) C[k] = function(){ topic(k) } });
-// "US" alone keeps opening the US stocks section; "US COS" is the companies' news topic
 var usSection = C.US;
 C.US = function(arg){ if (/^\s*COS\s*$/i.test(arg || '')) return topic('COS'); return usSection ? usSection(arg) : T.runSymbol(('US ' + (arg || '')).trim().toUpperCase()) };
 

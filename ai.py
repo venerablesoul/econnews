@@ -1,10 +1,3 @@
-"""
-Optional (paid, off by default): short AI notes on important news (Claude).
-
-Enabled only when the ANTHROPIC_API_KEY secret is set. For each important story the model writes one
-sentence — what happened and why it matters for markets — in English, Russian, Chinese and Arabic, and names
-assets the story may move, with a direction (up/down). Without the key nothing happens.
-"""
 from __future__ import annotations
 
 import json
@@ -76,7 +69,6 @@ def parse_answer(text, n):
 
 
 def annotate(items, limit=8, call=None):
-    """Adds it["ai"] to stories that have no note yet. Returns how many were annotated."""
     key = os.environ.get("ANTHROPIC_API_KEY", "").strip()
     if not key and call is None:
         return 0
@@ -112,7 +104,6 @@ Numbers:
 
 
 def brief_note(facts, call=None):
-    """Two sentences on the option levels for the pre-market brief (brief.py), or None."""
     key = os.environ.get("ANTHROPIC_API_KEY", "").strip()
     if not key and call is None:
         return None
@@ -131,6 +122,6 @@ def brief_note(facts, call=None):
     if not (en or ru):
         return None
     out = {"en": en or ru, "ru": ru or en}
-    for lang in ("zh", "ar"):   # Chinese and Arabic readers get English when the model left their language out
+    for lang in ("zh", "ar"):
         out[lang] = str(d.get(lang) or "").strip()[:400] or out["en"]
     return out

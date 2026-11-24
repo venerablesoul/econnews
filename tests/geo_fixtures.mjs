@@ -1,5 +1,3 @@
-// Answers of the map and monitor sources for the tests, in the shapes the real services return
-// (checked against live answers from GitHub's network: probe/ on the probe branch).
 const now = Date.now();
 const day = (ms) => new Date(ms).toISOString().slice(0, 10);
 
@@ -26,7 +24,6 @@ export const eonet = {
   ],
 };
 
-// GDACS: the SEARCH list gives a point per event; a current cyclone's track and cone come from its "geometry" address
 const tcProps = { eventtype: "TC", eventid: 1001234, episodeid: 12, eventname: "MELISSA-26", name: "Tropical Cyclone MELISSA-26", alertlevel: "Orange",
   country: "Jamaica", fromdate: day(now - 4 * 864e5) + "T00:00:00", todate: day(now) + "T06:00:00", iscurrent: "true", Class: "Point_Centroid",
   severitydata: { severity: 213.0, severitytext: "Category 4 hurricane (max wind speed of 213 km/h)", severityunit: "km/h" },
@@ -88,7 +85,6 @@ export function nager(cc, y) {
     { date: y + "-11-04", localName: "День народного единства", name: "Unity Day", countryCode: cc, global: true, types: ["Public"] }].filter((h) => cc === "RU" || h.name !== "Unity Day");
 }
 
-// docs/auctions.json as the bot writes it (auctions.py): two bills with results and an announced note
 export const auctionsJson = { updated: new Date(now - 3600e3).toISOString(), source: "US Treasury Fiscal Data", rows: [
   { cusip: "91282CRR4", security_type: "Note", security_term: "5-Year", auction_date: day(now + 6 * 864e5), issue_date: day(now + 9 * 864e5), maturity_date: day(now + 5 * 365 * 864e5),
     offering_amt: 26000000000, inflation_index_security: "Yes" },
@@ -100,7 +96,6 @@ export const auctionsJson = { updated: new Date(now - 3600e3).toISOString(), sou
 
 export const binanceTrades = Array.from({ length: 20 }, (_, i) => ({ id: 1000 + i, price: String(81000 + i), qty: String(0.01 * (i + 1)), quoteQty: "810", time: now - (20 - i) * 1000, isBuyerMaker: i % 3 === 0 }));
 
-// money markets and more curves, as rates.py adds them to docs/rates.json
 export const ratesExtra = {
   mm: [{ k: "SOFR", c: "US", en: "Secured overnight financing rate", ru: "Обеспеченная ставка овернайт", v: 3.92, prev: 3.9, date: day(now - 864e5) },
     { k: "EFFR", c: "US", en: "Effective federal funds rate", ru: "Эффективная ставка по федеральным фондам", v: 3.88, prev: 3.88, date: day(now - 864e5) },
@@ -115,12 +110,10 @@ export const wpeJson = {
 export const macroMap = { year: new Date().getUTCFullYear(), NGDP_RPCH: { USA: 2.0, CHN: 4.8, IND: 6.5, DEU: 0.2, RUS: 0.9, BRA: 2.4, ARG: -1.3 },
   PCPIPCH: { USA: 2.8, ARG: 41.3, TUR: 34.0, RUS: 8.4 }, LUR: { USA: 4.2, ESP: 11.1 }, GGXWDG_NGDP: { USA: 122, JPN: 235 }, BCA_NGDPD: { CHN: 2.1, USA: -3.9 }, GGXCNL_NGDP: { USA: -6.5 } };
 
-// PortWatch ports: 150 ports, Rotterdam the busiest
 export const pwPorts = { features: Array.from({ length: 150 }, (_, i) => ({ attributes: i === 0
   ? { portname: "Rotterdam", country: "Netherlands", ISO3: "NLD", lat: 51.95, lon: 4.14, vessel_count_total: 52000, vessel_count_tanker: 15000, industry_top1: "Container" }
   : { portname: "Port " + i, country: "Somewhere", ISO3: "XXX", lat: -40 + (i * 0.53) % 80, lon: -170 + (i * 7.3) % 340, vessel_count_total: 100 + i * 37, vessel_count_tanker: 10 + i, industry_top1: "Dry bulk" } })) };
 
-// Digitraffic AIS (the Baltic): positions and the vessels' static data
 export const dtLocations = { type: "FeatureCollection", dataUpdatedTime: new Date(now - 60e3).toISOString(), features: [
   { mmsi: 273100001, type: "Feature", geometry: { type: "Point", coordinates: [28.62, 60.33] }, properties: { mmsi: 273100001, sog: 11.2, cog: 250.4, navStat: 0, heading: 251, timestampExternal: now - 120e3 } },
   { mmsi: 273100002, type: "Feature", geometry: { type: "Point", coordinates: [28.4, 59.7] }, properties: { mmsi: 273100002, sog: 0.1, cog: 12, navStat: 1, heading: 511, timestampExternal: now - 600e3 } },

@@ -1,16 +1,3 @@
-"""
-Option chains for the terminal and the bot — the Bloomberg function OMON (option monitor) and the data for GEX,
-VOLS, GRK and GEXH (gex.py).
-Sources: Cboe delayed quotes (free, no key, 15-minute delay) — the same data cboe.com shows; when Cboe refuses
-(since 19 Nov 2026 it answers 403 to GitHub's servers) the chain comes from Yahoo Finance (one request per expiry,
-the greeks are then computed with Black-Scholes from Yahoo's implied volatility).
-
-Cboe gives the whole chain of a stock as one 1-15 MB file. That is too big for the bot server (it may use only
-10 ms of CPU per request) and the browser cannot load it (no CORS), so this script keeps a small snapshot per
-ticker: docs/opt/<TICKER>.json (summary per expiry + the strikes around the price for the nearest expiries)
-and docs/options.json (one line per ticker for the overview). For the indexes, the big ETFs and the core stocks it
-also writes docs/gex/<TICKER>.json (dealer positioning, levels, the volatility surface, greeks — see gex.py).
-"""
 from __future__ import annotations
 
 import gzip
@@ -32,20 +19,17 @@ CBOE_URL = "https://cdn.cboe.com/api/global/delayed_quotes/options/{sym}.json"
 
 YAHOO_URL = "https://query2.finance.yahoo.com/v7/finance/options/{sym}?crumb={crumb}{date}"
 
-# refreshed every hour while the US market is open (FAST: every 15 minutes — the interval map needs it);
-# every other company of stocks.UNIVERSE once a day
 FAST = ("SPX", "NDX", "SPY", "QQQ", "IWM")
 CORE = ("SPX", "NDX", "SPY", "QQQ", "IWM", "AAPL", "MSFT", "NVDA", "AMZN", "GOOGL", "META", "TSLA", "AVGO", "AMD", "NFLX",
         "JPM", "BAC", "XOM", "WMT", "COST", "LLY", "UNH", "V", "MA", "ORCL", "INTC", "PLTR")
 ETF_NAMES = {"SPY": "SPDR S&P 500 ETF", "QQQ": "Invesco QQQ (Nasdaq-100)", "IWM": "iShares Russell 2000 ETF",
              "SPX": "S&P 500 index", "NDX": "Nasdaq-100 index"}
-# the indexes have their own codes at each source
 CBOE_SYM = {"SPX": "_SPX", "NDX": "_NDX"}
 YAHOO_SYM = {"SPX": "^SPX", "NDX": "^NDX"}
-GEX_BAND = {"SPX": 0.06, "NDX": 0.06, "SPY": 0.06, "QQQ": 0.06, "IWM": 0.08}   # the strikes shown around the price
-R_USD = 0.04   # the interest rate in the greeks (US dollar short rate, roughly)
+GEX_BAND = {"SPX": 0.06, "NDX": 0.06, "SPY": 0.06, "QQQ": 0.06, "IWM": 0.08}
+R_USD = 0.04
 
-OCC = re.compile(r"^(.+?)(\d{6})([CP])(\d{8})$")   # AAPL261016C00250000: root, YYMMDD, call/put, strike x 1000
+OCC = re.compile(r"^(.+?)(\d{6})([CP])(\d{8})$")
 
 
 def parse_occ(code):
@@ -65,7 +49,6 @@ def _n(x, nd=2):
 
 
 def max_pain(calls, puts):
-    """The expiry price at which option holders lose the most (sum of payouts is the lowest)."""
     strikes = sorted(set(calls) | set(puts))
     best = None
     for p in strikes:
@@ -76,7 +59,6 @@ def max_pain(calls, puts):
 
 
 def summarize(payload, today, n_chain=4, width=0.15, max_rows=30):
-    """The snapshot stored in docs/opt/<T>.json from Cboe's answer."""
     d = (payload or {}).get("data") or {}
     px = _n(d.get("current_price"), 4) or _n(d.get("close"), 4)
     if not px:
@@ -134,7 +116,6 @@ def summarize(payload, today, n_chain=4, width=0.15, max_rows=30):
 
 
 def us_market_open(now):
-    """Roughly the US session (13:30-20:00 UTC in summer, 14:30-21:00 in winter) with a margin, Mon-Fri."""
     return now.weekday() < 5 and 13 <= now.hour < 21
 
 
@@ -154,7 +135,7 @@ def fetch_cboe(sym):
 # Yahoo Finance: the fallback when Cboe refuses
 # ---------------------------------------------------------------------------
 _yahoo = None
-_cboe_off_until = None   # after a refusal Cboe is left alone for a few hours (this process only)
+_cboe_off_until = None
 
 
 def yahoo_session():
@@ -175,7 +156,7 @@ def yahoo_json(sym, date_ts=None, session=None):
         try:
             d = s.json(url)
         except urllib.error.HTTPError as e:
-            if e.code == 401 and attempt == 0:   # the crumb expired — log in again once
+            if e.code == 401 and attempt == 0:
                 s.crumb = None
                 continue
             raise
@@ -191,8 +172,6 @@ def third_friday(d):
 
 
 def pick_expiries(stamps, now, fast=False):
-    """Which expiries to download from Yahoo (one request each): the nearest ones and the monthly ones up to 3 months
-    (almost all of the gamma sits there; fewer requests keep Yahoo from limiting the bot)."""
     out, near = [], 10 if fast else 6
     for t in sorted(int(x) for x in stamps if isinstance(x, (int, float))):
         d = datetime.fromtimestamp(t, timezone.utc).date()
@@ -207,7 +186,6 @@ def pick_expiries(stamps, now, fast=False):
 
 
 def yahoo_chain(sym, now=None, fast=False, session=None, sleep=0.25):
-    """The chain from Yahoo in Cboe's shape (summarize() and gex.py read both alike); delta from Black-Scholes."""
     import gex
     now = now or datetime.now(timezone.utc)
     ysym = YAHOO_SYM.get(sym) or stocks.yahoo_sym(sym)
@@ -250,7 +228,6 @@ def yahoo_chain(sym, now=None, fast=False, session=None, sleep=0.25):
 
 
 def fetch(sym, now=None, fast=False):
-    """Cboe first; Yahoo when Cboe refuses (then Cboe is skipped for 6 hours)."""
     global _cboe_off_until
     now = now or datetime.now(timezone.utc)
     if not _cboe_off_until or now >= _cboe_off_until:
@@ -272,7 +249,6 @@ def load(path):
 
 
 def write_gex(t, payload, now, gex_dir=None):
-    """Dealer positioning for the terminal (docs/gex/<T>.json); returns the snapshot or None."""
     import gex
     chain, S = gex.from_cboe(payload, now)
     if not chain or not S:
@@ -286,7 +262,6 @@ def write_gex(t, payload, now, gex_dir=None):
 
 
 def build(now=None, limit=5, sleep=1.0, tickers=None, out_dir=OPT_DIR, summary_path=SUMMARY, fetcher=None, gex_dir=None):
-    """Refreshes the stalest snapshots. Returns how many were written."""
     now = now or datetime.now(timezone.utc)
     if tickers is None:
         tickers = list(CORE) + [t for t, *_ in stocks.UNIVERSE if t not in CORE]
@@ -297,11 +272,8 @@ def build(now=None, limit=5, sleep=1.0, tickers=None, out_dir=OPT_DIR, summary_p
         age_h = (0.25 if t in FAST else 1) if (hot and t in CORE) else 20
         upd = load(os.path.join(out_dir, t + ".json")).get("updated", "")
         if upd < (now - timedelta(hours=age_h)).isoformat():
-            # the indexes and big ETFs first, then the big stocks, then the rest; in each, the stalest (or never
-            # fetched) first. Before, a fresh start went alphabetically and SPY waited about two hours behind AAPL…
             due.append((0 if t in FAST else 1 if t in CORE else 2, upd, t))
     due.sort()
-    # the five FAST ones never wait for the limit: the terminal's GEX / LVL / GEXH and the brief need them every 15 min
     order = [x for x in due if x[0] == 0] + [x for x in due if x[0] > 0][:limit]
     done = 0
     for _, _, t in order:
@@ -312,12 +284,12 @@ def build(now=None, limit=5, sleep=1.0, tickers=None, out_dir=OPT_DIR, summary_p
                 g = None
                 if t in CORE:
                     g = write_gex(t, payload, now, gex_dir)
-                elif snap.get("iv30") is None:   # not kept for GEX, but the 30-day volatility is still wanted
+                elif snap.get("iv30") is None:
                     import gex
                     chain, S = gex.from_cboe(payload, now)
                     g = gex.analyze(chain, S, now, size=100, r=R_USD) if chain and S else None
                 if g and snap.get("iv30") is None and (g.get("em") or {}).get("iv30"):
-                    snap["iv30"] = round(g["em"]["iv30"] * 100, 2)   # Yahoo gives no 30-day volatility
+                    snap["iv30"] = round(g["em"]["iv30"] * 100, 2)
             except Exception as e:
                 print(f"  ! GEX {t}: {type(e).__name__}: {e}"[:200])
             snap = {"s": t, "updated": now.isoformat(), "src": payload.get("src") or "cboe", **snap}

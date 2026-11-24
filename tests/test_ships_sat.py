@@ -1,5 +1,3 @@
-"""Тесты: PortWatch (проливы), суда по AIS с треками, спутниковые снимки хранилищ нефти. Без сети.
-python3 -m unittest tests.test_ships_sat -v"""
 import io
 import json
 import os
@@ -31,7 +29,6 @@ def daily_csv(ids, days=50, end=NOW.date() - timedelta(days=4), fmt="slash"):
             d = end - timedelta(days=i)
             ds = d.strftime("%Y/%m/%d 00:00:00+00") if fmt == "slash" else d.isoformat()
             rows.append(f"{ds},{d.year},{d.month},{d.day},{pid},\"{name}\",10,20,{n // 3},40,{n},123456.5,45000,{i}\n")
-    # a very old row: not kept
     rows.append(f"2019/01/01 00:00:00+00,2019,1,1,{ids[0][0]},\"{ids[0][1]}\",1,1,1,1,1,1,1,99999\n")
     return "".join(rows)
 
@@ -55,7 +52,7 @@ class PortWatch(unittest.TestCase):
         self.assertIsNone(portwatch.where("Nowhere Strait"))
         self.assertEqual(portwatch.day_of({"date": "2026/11/20 00:00:00+00"}), "2026-11-20")
         self.assertEqual(portwatch.day_of({"date": "2026-11-20T00:00:00Z"}), "2026-11-20")
-        self.assertEqual(portwatch.day_of({"date": "1763596800000"}), "2025-11-20")   # epoch milliseconds
+        self.assertEqual(portwatch.day_of({"date": "1763596800000"}), "2025-11-20")
         self.assertEqual(portwatch.day_of({"year": "2026", "month": "11", "day": "3"}), "2026-11-03")
         self.assertIsNone(portwatch.day_of({"date": "2026/02/30"}))
         got = portwatch.parse_daily(daily_csv([("chokepoint6", "Strait of Hormuz", 30)]), "2026-10-01")
@@ -65,7 +62,7 @@ class PortWatch(unittest.TestCase):
         self.assertNotIn("2019-01-01", days)
         self.assertEqual(days["2026-11-20"], ["2026-11-20", 30.0, 10.0, 10.0, 20.0, 123456.5, 45000.0])
         with self.assertRaises(RuntimeError):
-            portwatch.parse_daily("a,b\n1,2\n", "2026-01-01")   # not this layer
+            portwatch.parse_daily("a,b\n1,2\n", "2026-01-01")
 
     def test_hub_export_waits_for_the_file(self):
         calls = []
@@ -78,12 +75,10 @@ class PortWatch(unittest.TestCase):
                 return b'{"status":"Completed","resultUrl":"https://files.example/x.csv"}'
             return "﻿portid,n_total\nchokepoint1,5\n".encode()
         text = portwatch.hub_csv("abc", fetch, wait=lambda s: None)
-        self.assertTrue(text.startswith("portid"))   # the BOM is gone
+        self.assertTrue(text.startswith("portid"))
         self.assertIn("layers=0", calls[0])
         self.assertEqual(calls[-1], "https://files.example/x.csv")
-        # a plain CSV answer is used at once
         self.assertEqual(portwatch.hub_csv("abc", lambda u, t=0, l=0: b"portid,n_total\n", wait=lambda s: None), "portid,n_total\n")
-        # an http link is refused (both Hub hosts tried, then the error)
         with self.assertRaises(RuntimeError):
             portwatch.hub_csv("abc", lambda u, t=0, l=0: b'{"status":"Completed","resultUrl":"http://x/y.csv"}', wait=lambda s: None)
 
@@ -100,7 +95,6 @@ class PortWatch(unittest.TestCase):
             raise AssertionError(url)
 
         def fetch_json(url):
-            # the query service: Panama is not in the export
             q = dict(x.split("=", 1) for x in url.split("?", 1)[1].split("&"))
             where = portwatch.urllib.parse.unquote_plus(q["where"])
             pid = where.split("'")[1]
@@ -117,17 +111,15 @@ class PortWatch(unittest.TestCase):
             with open(path) as f:
                 d = json.load(f)
             by = {c["id"]: c for c in d["choke"]}
-            self.assertEqual(by["chokepoint6"]["lat"], 26.57)                    # the database's place
+            self.assertEqual(by["chokepoint6"]["lat"], 26.57)
             self.assertEqual(by["chokepoint6"]["top"], "Tanker")
-            self.assertEqual(len(by["chokepoint1"]["days"]), 50)                  # 50 days in the export, all within 60
-            self.assertEqual(by["chokepoint2"]["days"][0][1], 33.0)               # from the query service
+            self.assertEqual(len(by["chokepoint1"]["days"]), 50)
+            self.assertEqual(by["chokepoint2"]["days"][0][1], 33.0)
             self.assertIn("chokepoint2", queried)
-            self.assertNotIn("chokepoint1", queried)                              # fresh in the export: not asked again
+            self.assertNotIn("chokepoint1", queried)
             self.assertEqual(d["via"], "hub-csv")
             self.assertNotIn("err", d)
-            # within 6 hours: nothing is read
             self.assertEqual(portwatch.build_chokes(NOW + timedelta(hours=2), path, fetch, fetch_json), 0)
-            # everything down: the last good copy stays, the error is kept and reported
             def down(*a, **k):
                 raise OSError("Token Required")
             with self.assertRaises(RuntimeError):
@@ -152,7 +144,7 @@ class PortWatch(unittest.TestCase):
             with open(path) as f:
                 d = json.load(f)
             self.assertEqual([c["name"] for c in d["choke"]], ["Suez Canal", "Strait of Hormuz", "Dover Strait", "Kerch Strait", "Mona Passage"])
-            self.assertTrue(d["warn"])   # what failed is said
+            self.assertTrue(d["warn"])
 
     def test_ports(self):
         rows = "portname,country,ISO3,lat,lon,vessel_count_total,vessel_count_tanker,industry_top1\n" + "".join(
@@ -169,7 +161,6 @@ class PortWatch(unittest.TestCase):
                 d = json.load(f)
             self.assertEqual(d["p"][3], ["Port 3", "Country", "ABC", 3.5, 3.25, 1003, 3, "Container"])
             self.assertEqual(d["item"], "ab" * 16)
-            # an odd id from the search never goes into a URL
             with self.assertRaises(RuntimeError):
                 portwatch.build_ports(NOW + timedelta(days=4), os.path.join(tmp, "p2.json"), fetch,
                                       lambda u: {"results": [{"id": "../../x?y=1", "title": "PortWatch_ports_database"}]}, wait=lambda s: None)
@@ -199,29 +190,25 @@ class ShipsWorld(unittest.TestCase):
         t0, t1, t2 = NOW, NOW + timedelta(minutes=30), NOW + timedelta(minutes=60)
         new0 = {"111111111": ship(111111111, 26.40, 56.20, t0, type=80, name="TANK ONE"),
                 "222222222": ship(222222222, 51.90, 3.00, t0, type=71, name="BOX TWO"),
-                "333333333": ship(333333333, 40.00, 10.00, t0, type=60),          # a passenger ship: not kept
-                "444444444": ship(444444444, 10.00, 10.00, t0)}                    # no type known: not kept
+                "333333333": ship(333333333, 40.00, 10.00, t0, type=60),
+                "444444444": ship(444444444, 10.00, 10.00, t0)}
         w, k = ais.merge_world({}, {}, set(), new0, t0)
         self.assertEqual(sorted(r[0] for r in w["s"]), [111111111, 222222222])
         self.assertEqual(w["counts"], {"t": 1, "c": 1})
         self.assertEqual(k["c"], {"2026-11-24": [222222222]})
-        # 30 minutes later: both moved; the cargo ship's static message did not come again — it is remembered
         new1 = {"111111111": ship(111111111, 26.45, 56.30, t1), "222222222": ship(222222222, 51.95, 3.10, t1)}
         w, k = ais.merge_world(w, k, {"111111111"}, new1, t1)
         rows = {r[0]: dict(zip(w["cols"], r)) for r in w["s"]}
-        self.assertEqual(rows[111111111]["track"], [26.4, 56.2, 30])   # where it was 30 minutes before
+        self.assertEqual(rows[111111111]["track"], [26.4, 56.2, 30])
         self.assertEqual(rows[222222222]["kind"], "c")
-        # a ship that barely moved (< 1 km) adds no point
         new2 = {"111111111": ship(111111111, 26.452, 56.302, t2)}
         w, k = ais.merge_world(w, k, {"111111111"}, new2, t2)
         rows = {r[0]: dict(zip(w["cols"], r)) for r in w["s"]}
         self.assertEqual(len(rows[111111111]["track"]), 3)
         self.assertEqual(rows[111111111]["minute"], ais.minute(t2.isoformat()))
-        # 7 hours later: older than the world layer's 6 hours — gone; the cargo memory stays for a week
         w, k = ais.merge_world(w, k, set(), {}, t2 + timedelta(hours=7))
         self.assertEqual(w["s"], [])
         self.assertEqual(k["c"], {"2026-11-24": [222222222]})
-        # a new static message with another type: no longer cargo
         w, k = ais.merge_world(w, k, set(), {"222222222": {"mmsi": 222222222, "type": 30}}, t2 + timedelta(hours=8))
         self.assertEqual(k["c"], {})
 
@@ -232,7 +219,7 @@ class ShipsWorld(unittest.TestCase):
             ais.add_track(rec, 0.0 + i * 0.1, 179.99, t.isoformat(), 0)
             rec.update({"lat": 0.0 + i * 0.1, "t": t.isoformat()})
         self.assertEqual(len(rec["trk"]), ais.TRACK_PTS)
-        self.assertFalse(ais.moved(0, 179.999, 0, -179.999))   # 0.002° across the date line: not a move
+        self.assertFalse(ais.moved(0, 179.999, 0, -179.999))
         self.assertTrue(ais.moved(0, 179.99, 0, -179.98))
 
     def test_tankers_file_has_tracks_and_build_writes_three_files(self):
@@ -257,7 +244,6 @@ class ShipsWorld(unittest.TestCase):
                 w = json.load(f)
             self.assertEqual(sorted(r[0] for r in w["s"]), [111111111, 222222222])
             self.assertTrue(os.path.exists(os.path.join(d, "ais_kinds.json")))
-            # the world file stays small: 4000 ships with full tracks
             many = {str(200000000 + i): ship(200000000 + i, (i % 160) - 80 + 0.123, (i % 350) - 175 + 0.456, t1, type=70 + i % 20, name="SHIP %d" % i,
                                              dest="SOMEWHERE", draught=9.5) for i in range(9000)}
             w2, _ = ais.merge_world({}, {}, set(), many, t1)
@@ -276,7 +262,7 @@ def png(color, alpha=255, circles=True):
     if circles and alpha:
         d = ImageDraw.Draw(im)
         for x in range(20, 240, 60):
-            d.ellipse([x, 100, x + 30, 130], fill=(200, 200, 195, 255))   # tanks: small bright circles
+            d.ellipse([x, 100, x + 30, 130], fill=(200, 200, 195, 255))
     b = io.BytesIO()
     im.save(b, "PNG")
     return b.getvalue()
@@ -292,13 +278,12 @@ class SatellitePictures(unittest.TestCase):
         self.assertLessEqual(len(tiles), 25)
         w, h = (rng[2] - rng[0] + 1) * 256, (rng[3] - rng[1] + 1) * 256
         self.assertTrue(0 <= crop[0] < crop[2] <= w and 0 <= crop[1] < crop[3] <= h)
-        self.assertAlmostEqual((crop[2] - crop[0]) / (crop[3] - crop[1]), 1.0, delta=0.05)   # a square box is square
-        for s in sat.SITES:   # every hub fits in a few tiles
+        self.assertAlmostEqual((crop[2] - crop[0]) / (crop[3] - crop[1]), 1.0, delta=0.05)
+        for s in sat.SITES:
             self.assertLessEqual(len(sat.tiles_for(sat.bbox(s[3], s[4], s[5]))[0]), 25, s[0])
         self.assertEqual((sat.zoom_for(0), sat.zoom_for(52), sat.zoom_for(60)), (14, 13, 13))
 
     def fake(self, passes, colors):
-        """A fake network: the STAC search answers `passes`, a pass's tiles are of colors[pass id]."""
         calls = {"search": 0, "tiles": 0}
 
         def fetch(url, body=None, timeout=60, limit=0):
@@ -311,7 +296,7 @@ class SatellitePictures(unittest.TestCase):
                 return json.dumps({"features": feats}).encode()
             calls["tiles"] += 1
             item = sat.urllib.parse.parse_qs(url.split("?", 1)[1])["item"][0]
-            self.assertNotEqual(item, "S2X_EDGE_OF_TILE_ITEM")   # a pass that does not cover the hub is never drawn
+            self.assertNotEqual(item, "S2X_EDGE_OF_TILE_ITEM")
             c = colors[item]
             return png(c[0], c[1]) if isinstance(c, tuple) and len(c) == 2 else png(c)
         return fetch, calls
@@ -329,15 +314,14 @@ class SatellitePictures(unittest.TestCase):
             with open(path) as f:
                 out = json.load(f)
             first = [s for s in out["sites"] if s["imgs"]]
-            self.assertEqual(len(first), 1)                       # one hub per call here
+            self.assertEqual(len(first), 1)
             s = first[0]
-            self.assertEqual([i["d"] for i in s["imgs"]], ["2026-10-10", "2026-11-17"])   # the clear one, not the cloudy one
+            self.assertEqual([i["d"] for i in s["imgs"]], ["2026-10-10", "2026-11-17"])
             self.assertEqual(s["imgs"][1]["f"], "sat/%s/2026-11-17.jpg" % s["id"])
             from PIL import Image
             im = Image.open(os.path.join(d, s["imgs"][1]["f"]))
             self.assertEqual((im.format, im.size[0]), ("JPEG", sat.SIZE))
             self.assertEqual(len(out["sites"]), len(sat.SITES))
-            # the same hub is not checked again within 12 hours; the next call takes the next hub
             n2 = sat.build(NOW + timedelta(hours=1), path, sdir, fetch, per_call=1)
             with open(path) as f:
                 out = json.load(f)
@@ -353,7 +337,7 @@ class SatellitePictures(unittest.TestCase):
             for day in ("2026-08-01", "2026-09-01", "2026-10-01", "2026-11-01"):
                 open(os.path.join(sdir, sid, day + ".jpg"), "wb").close()
                 imgs.append({"d": day, "f": f"sat/{sid}/{day}.jpg"})
-            with open(path, "w") as f:   # the other hubs were checked just now: only this one is due
+            with open(path, "w") as f:
                 json.dump({"sites": [{"id": sid, "imgs": imgs, "checked": "2026-01-01"}] +
                                     [{"id": s[0], "imgs": [], "checked": NOW.isoformat()} for s in sat.SITES[1:]]}, f)
             fetch, _ = self.fake([("S2A_NEW_20261120", "2026-11-20T10:00:00Z", 3.0)], {"S2A_NEW_20261120": (60, 70, 50)})
@@ -363,11 +347,11 @@ class SatellitePictures(unittest.TestCase):
             def down(*a, **k):
                 raise OSError("no network")
             with self.assertRaises(RuntimeError):
-                sat.build(NOW + timedelta(days=1), path, sdir, down, per_call=2)   # two hubs tried, both failed
+                sat.build(NOW + timedelta(days=1), path, sdir, down, per_call=2)
             with open(path) as f:
                 out = json.load(f)
             self.assertEqual(len(out["err"]), 2)
-            self.assertEqual(len([s for s in out["sites"] if s["id"] == sid][0]["imgs"]), 4)   # the pictures stay
+            self.assertEqual(len([s for s in out["sites"] if s["id"] == sid][0]["imgs"]), 4)
 
 
 if __name__ == "__main__":

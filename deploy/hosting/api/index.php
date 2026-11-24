@@ -1,16 +1,7 @@
 <?php
-// Relay to the bot server for viewers whose provider blocks *.workers.dev (several Russian networks do).
-// Put this folder on any PHP hosting as public_html/api/ (both files: index.php and .htaccess),
-// so that https://YOUR-DOMAIN/api/ping answers {"ok":true,...}. Then add the domain to docs/config.json:
-//   "api_alt": ["https://YOUR-DOMAIN"]
-// The terminal itself picks the address that works on the viewer's network.
-//
-// Only /api/... is relayed, and only to the one server below: no keys are stored here,
-// the bot's secrets stay on Cloudflare. Headers that identify the viewer (Telegram sign-in,
-// the owner's password) are passed through unchanged, exactly as the browser sent them.
 
-define('UPSTREAM', rtrim(getenv('ECONNEWS_UPSTREAM') ?: 'https://econnews-bot.econnews-6dce35.workers.dev', '/'));   // the env var is for tests
-const TIMEOUT = 25;   // seconds; the terminal gives up at 30
+define('UPSTREAM', rtrim(getenv('ECONNEWS_UPSTREAM') ?: 'https://econnews-bot.econnews-6dce35.workers.dev', '/'));
+const TIMEOUT = 25;
 
 function out($status, $type, $body, $extra = []) {
     http_response_code($status);
@@ -29,7 +20,6 @@ $method = $_SERVER['REQUEST_METHOD'] ?? 'GET';
 if ($method === 'OPTIONS') out(204, null, '');
 if ($method !== 'GET' && $method !== 'POST') out(405, 'application/json', '{"ok":false,"error":"method"}');
 
-// the path as the browser asked for it: /api/company?s=NVDA (works with and without the rewrite in .htaccess)
 $uri = $_SERVER['REQUEST_URI'] ?? '/';
 $uri = preg_replace('#^/api/index\.php#', '/api', $uri);
 $path = explode('?', $uri, 2)[0];
@@ -52,7 +42,7 @@ if (function_exists('curl_init')) {
         CURLOPT_HTTPHEADER => $headers,
         CURLOPT_CONNECTTIMEOUT => 8,
         CURLOPT_TIMEOUT => TIMEOUT,
-        CURLOPT_ENCODING => '',          // accept gzip from the server, send plain to the browser
+        CURLOPT_ENCODING => '',
         CURLOPT_FOLLOWLOCATION => false,
         CURLOPT_HEADERFUNCTION => function ($c, $line) use (&$respHeaders) {
             $p = strpos($line, ':');
@@ -71,7 +61,6 @@ if (function_exists('curl_init')) {
     out($status, $type, $res, $cache);
 }
 
-// hosting without curl: PHP streams
 $ctx = stream_context_create(['http' => [
     'method' => $method, 'header' => implode("\r\n", $headers), 'content' => $body ?? '',
     'timeout' => TIMEOUT, 'ignore_errors' => true, 'follow_location' => 0,
