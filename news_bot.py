@@ -427,8 +427,7 @@ def save_state(path, st, now):
 # ----------------------------------------------------------------------------
 GT_URL = "https://translate.googleapis.com/translate_a/single"
 MM_URL = "https://api.mymemory.translated.net/get"
-MS_AUTH_URL = "https://edge.microsoft.com/translate/auth"
-MS_URL = "https://api-edge.cognitive.microsofttranslator.com/translate"
+GC_URL = "https://clients5.google.com/translate_a/t"
 CYRILLIC = re.compile(r"[а-яё]", re.IGNORECASE)
 _tr_cache: dict = {}
 _tr_fail: dict = {}
@@ -442,10 +441,7 @@ BACKFILL_JOBS = 60
 BACKFILL_SINGLE = 12
 TR_SINGLE = 12
 BACKFILL_TRIES = 3
-GT_BATCH_CHARS = 1800
-MS_BATCH_CHARS = 8000
-MS_BATCH_ITEMS = 50
-_ms_token: dict = {}
+BATCH_URL_CHARS = 4000
 HOLD_S = 600
 AI_TITLES = 12
 
@@ -469,6 +465,18 @@ def _google(text, src, lang):
     return out.strip() or None
 
 
+def _gclient(text, src, lang):
+    q = urllib.parse.urlencode({"client": "dict-chrome-ex", "sl": src, "tl": ENGINE_LANG.get(lang, lang), "q": text})
+    req = urllib.request.Request(f"{GC_URL}?{q}", headers={"User-Agent": UA})
+    with urllib.request.urlopen(req, timeout=10) as r:
+        data = json.loads(r.read().decode("utf-8"))
+    while isinstance(data, list) and data:
+        data = data[0]
+    if not isinstance(data, str):
+        return None
+    return html.unescape(data).strip() or None
+
+
 def _mymemory(text, src, lang):
     q = urllib.parse.urlencode({"q": text[:480], "langpair": f"{src}|{ENGINE_LANG.get(lang, lang)}"})
     req = urllib.request.Request(f"{MM_URL}?{q}", headers={"User-Agent": UA})
@@ -487,78 +495,42 @@ def orig_lang(text):
     return "ru" if CYRILLIC.search(text or "") else "en"
 
 
-MS_LANG = {"zh": "zh-Hans"}
-
-
 def _one_line(text):
     return " ".join(str(text).split())
 
 
-def _chunks(texts, max_chars, max_items=1000):
+def _chunks(texts, max_url=BATCH_URL_CHARS):
     out, cur, size = [], [], 0
     for t in texts:
-        if cur and (size + len(t) + 1 > max_chars or len(cur) >= max_items):
+        n = len(urllib.parse.quote(t)) + 3
+        if cur and size + n > max_url:
             out.append(cur)
             cur, size = [], 0
         cur.append(t)
-        size += len(t) + 1
+        size += n
     if cur:
         out.append(cur)
     return out
 
 
-def _google_batch(texts, src, lang):
-    out = _google("\n".join(texts), src, lang)
+def _lines(engine, texts, src, lang):
+    out = engine("\n".join(texts), src, lang)
     lines = [x.strip() for x in (out or "").split("\n") if x.strip()]
     if len(lines) == len(texts):
         return lines
     if len(texts) == 1:
         return None
     mid = len(texts) // 2
-    head, tail = _google_batch(texts[:mid], src, lang), _google_batch(texts[mid:], src, lang)
+    head, tail = _lines(engine, texts[:mid], src, lang), _lines(engine, texts[mid:], src, lang)
     return (head or [None] * mid) + (tail or [None] * (len(texts) - mid))
 
 
-def _ms_auth():
-    if _ms_token.get("exp", 0) > time.time():
-        return _ms_token["t"]
-    req = urllib.request.Request(MS_AUTH_URL, headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=10) as r:
-        tok = r.read().decode("utf-8").strip()
-    if not tok or " " in tok:
-        raise ValueError("no token")
-    _ms_token.update(t=tok, exp=time.time() + 480)
-    return tok
-
-
-def _ms_batch(texts, src, lang):
-    q = urllib.parse.urlencode({"api-version": "3.0", "from": src, "to": MS_LANG.get(lang, lang)})
-    body = json.dumps([{"Text": t} for t in texts]).encode("utf-8")
-    req = urllib.request.Request(f"{MS_URL}?{q}", data=body, headers={
-        "Authorization": "Bearer " + _ms_auth(), "Content-Type": "application/json", "User-Agent": UA})
-    try:
-        with urllib.request.urlopen(req, timeout=15) as r:
-            data = json.loads(r.read().decode("utf-8"))
-    except urllib.error.HTTPError as e:
-        if e.code == 401:
-            _ms_token.clear()
-        raise
-    if not isinstance(data, list) or len(data) != len(texts):
-        return None
-    out = []
-    for x in data:
-        tr = (x.get("translations") or [{}])[0] if isinstance(x, dict) else {}
-        out.append(str(tr.get("text") or "").strip() or None)
-    return out
-
-
-BATCH_ENGINES = (("_google", "_google_batch", GT_BATCH_CHARS, 1000),
-                 ("_ms", "_ms_batch", MS_BATCH_CHARS, MS_BATCH_ITEMS))
+BATCH_ENGINES = ("_gclient", "_google")
 
 
 def engines_paused():
     now = time.time()
-    return all(_engine_off.get(name, 0) > now for name, *_ in BATCH_ENGINES)
+    return all(_engine_off.get(name, 0) > now for name in BATCH_ENGINES)
 
 
 def prefetch(texts, lang):
@@ -573,17 +545,17 @@ def prefetch(texts, lang):
         groups.setdefault(src, []).append(t)
     filled = 0
     for src, todo in groups.items():
-        for name, fn_name, max_chars, max_items in BATCH_ENGINES:
+        for name in BATCH_ENGINES:
             if not todo:
                 break
-            fn = globals()[fn_name]
+            engine = globals()[name]
             rest = []
-            for chunk in _chunks(todo, max_chars, max_items):
+            for chunk in _chunks(todo):
                 if _engine_off.get(name, 0) > time.time():
                     rest.extend(chunk)
                     continue
                 try:
-                    got = fn([_one_line(t) for t in chunk], src, lang)
+                    got = _lines(engine, [_one_line(t) for t in chunk], src, lang)
                 except Exception as e:
                     _engine_off[name] = time.time() + ENGINE_PAUSE_S
                     print(f"  ! translation {name[1:]} → {lang}: {type(e).__name__}: {e}"[:200])
@@ -613,7 +585,7 @@ def translate(text, lang="ru"):
     if now - _tr_fail.get(key, 0) < TR_RETRY_S:
         return None
     result = None
-    for engine in (_google, _mymemory):
+    for engine in (_gclient, _google, _mymemory):
         name = engine.__name__
         if _engine_off.get(name, 0) > now:
             continue
@@ -730,7 +702,7 @@ def translate_items(items, first=()):
                 jobs.append((it, field, f"{field}_{target}", target))
     if not jobs:
         return
-    for name, *_ in BATCH_ENGINES:
+    for name in BATCH_ENGINES:
         _engine_off.pop(name, None)
     for it, src, dst, target in jobs:
         _tr_fail.pop((it[src], target), None)
