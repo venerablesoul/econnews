@@ -143,6 +143,31 @@ try:
     print(f"ships.json: updated {sh.get('updated')}, tankers {len(sh.get('ships') or [])}")
 except FileNotFoundError:
     print("ships.json: none (no AISSTREAM_API_KEY secret — the tankers layer is off)")
+try:
+    sw = show("docs/ships_world.json")
+    print(f"ships_world.json: updated {sw.get('updated')}, ships {len(sw.get('s') or [])} {sw.get('counts')}, "
+          f"with tracks {sum(1 for r in sw.get('s') or [] if r and r[-1])}")
+except FileNotFoundError:
+    print("ships_world.json: none yet (needs AISSTREAM_API_KEY; written with ships.json)")
+try:
+    pw = show("docs/portwatch.json")
+    print(f"portwatch.json: updated {pw.get('updated')} via {pw.get('via')}, chokepoints {len(pw.get('choke') or [])}"
+          + (f", error: {pw['err']}" if pw.get("err") else "") + (f", warnings: {pw['warn']}" if pw.get("warn") else ""))
+    if not pw.get("choke"):
+        problems.append("portwatch.json has no chokepoints: " + str(pw.get("err")))
+    elif not fresh(pw.get("updated", ""), 30):
+        problems.append("PortWatch has not been read for 30 hours: " + str(pw.get("err")))
+except FileNotFoundError:
+    problems.append("no docs/portwatch.json (the map falls back to PortWatch's own failing service)")
+try:
+    st_ = show("docs/sat.json")
+    with_img = [x["id"] for x in st_.get("sites") or [] if x.get("imgs")]
+    print(f"sat.json: checked {st_.get('checked')}, hubs with pictures {len(with_img)}/{len(st_.get('sites') or [])}"
+          + (f", errors: {st_['err']}" if st_.get("err") else ""))
+    if st_.get("sites") and not with_img and all(x.get("checked") for x in st_["sites"]):   # every hub tried, none has a picture
+        problems.append("no satellite pictures after a full round: " + str(st_.get("err")))
+except FileNotFoundError:
+    print("sat.json: none yet (the bot adds 3 hubs per run)")
 
 d = show("docs/data.json")
 news = d.get("news") or []

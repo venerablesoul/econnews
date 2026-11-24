@@ -261,7 +261,7 @@ def run():
 
         # ---------------- maps ----------------
         cmd(page, "MAP")
-        page.wait_for_selector("#map-body .gm-wrap canvas")
+        page.wait_for_selector("#map-body .gm-wrap canvas:not(.gm-bg)")
         page.wait_for_function("window.MAPS && window.MAPS.M.data.quakes && window.MAPS.M.data.choke && window.MAPS.M.data.storms && window.MAPS.M.data.exch", timeout=15000)
         side = page.inner_text("#map-body .gm-side")
         check("MAP: layers with counts", "Earthquakes" in side and "Shipping chokepoints" in side and "Stock markets today" in side, side[:400])
@@ -337,8 +337,9 @@ def run():
         wait_text(page, "#map-body .gm-side", "VESSELS")
         sk = page.inner_text("#map-body .gm-side")
         ships = page.evaluate("window.MAPS.M.data.ships.pts.map(p => [p.t, p.fuel, p.hd])")
+        # the arrow follows the course over ground (where the ship is going), not the heading (where its bow points)
         check("SHIP: live Baltic vessels — a stale position dropped, tankers on top, course only when moving",
-              len(ships) == 4 and ships[0][1] == "tanker" and ships[0][2] == 251 and [s for s in ships if s[0] == "🚢 VOLGA CARGO"][0][2] is None and "Tankers" in sk, [ships, sk[-300:]])
+              len(ships) == 4 and ships[0][1] == "tanker" and ships[0][2] == 250.4 and [s for s in ships if s[0] == "🚢 VOLGA CARGO"][0][2] is None and "Tankers" in sk, [ships, sk[-300:]])
         crude = page.evaluate("window.MAPS.M.data.ships.pts.filter(p => p.t === '🚢 BALTIC CRUDE')[0].s.join(' | ')")
         check("SHIP: a tanker's speed, destination and draught", "11.2 kn" in crude and "RUPRI" in crude and "14.8 m" in crude, crude)
         page.click("#map-body .gm-side .chipbtn:has-text('Gulf of Finland')")
@@ -415,7 +416,7 @@ def run():
         m.wait_for_selector("#mkt table")
         m.click("#b-more")
         m.click("#fnlist button:has-text('World map with layers')")
-        m.wait_for_selector("#map-body .gm-wrap canvas")
+        m.wait_for_selector("#map-body .gm-wrap canvas:not(.gm-bg)")
         check("phone: MAP alone on screen", visible_panels(m) == ["p-map"], visible_panels(m))
         check("phone: the list is hidden behind ☰", m.evaluate("getComputedStyle(document.querySelector('#map-body .gm-side')).display") == "none")
         m.click("#map-body .gm-ctl .gm-tbtn")

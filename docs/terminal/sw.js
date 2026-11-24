@@ -1,6 +1,6 @@
 // The terminal's service worker: needed to install it as an app and for an offline splash.
 // Quotes, news and charts are NOT cached here — they come fresh from the network (the page keeps its own last copy).
-const CACHE = 'econ-terminal-v21';
+const CACHE = 'econ-terminal-v22';
 const SHELL = ['./', './i18n.js', './i18n.xl.js', './fn.js', './tech.js', './mon.js', './map.js', './opt.js', './flow.js', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png'];
 
 // GitHub Pages lets a browser keep a file for 10 minutes without asking. Right after an update that mixed a new page

@@ -250,6 +250,17 @@ td.sp svg{display:block}
 .ph .pclose{margin-left:6px;background:none;border:0;color:var(--faint);font-size:11px;line-height:1;padding:2px 4px;border-radius:4px;cursor:pointer}
 .ph:not(:has(.sub, .swap, .mode)) .pclose{margin-left:auto}
 .ph .pclose:hover{color:var(--text);background:var(--raise)}
+.ph .pfloat{margin-left:6px;background:none;border:0;color:var(--faint);font-size:12px;line-height:1;padding:2px 4px;border-radius:4px;cursor:pointer}
+.ph:not(:has(.sub, .swap, .mode)) .pfloat{margin-left:auto}
+.ph:not(:has(.sub, .swap, .mode)) .pfloat + .pclose{margin-left:2px}
+.ph .pfloat:hover{color:var(--text);background:var(--raise)}
+.panel.floating{position:absolute;box-shadow:0 22px 60px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.06);border-color:var(--line2)}
+.panel.floating>.ph{cursor:move;background:linear-gradient(var(--raise),var(--panel))}
+.fresize{display:none;position:absolute;right:0;bottom:0;width:18px;height:18px;cursor:nwse-resize;z-index:6;touch-action:none;
+  background:linear-gradient(135deg,transparent 0 55%,var(--line2) 55% 62%,transparent 62% 70%,var(--line2) 70% 77%,transparent 77%)}
+.panel.floating .fresize{display:block}
+body.fmoving,body.fsizing{user-select:none}
+body.fmoving *{cursor:move!important}body.fsizing *{cursor:nwse-resize!important}
 .slot-empty{border:1px dashed var(--line2);border-radius:var(--r);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;
   color:var(--faint);min-height:0;min-width:0;padding:12px;text-align:center}
 .slot-empty .h{font-size:12px;letter-spacing:.04em}
@@ -267,7 +278,7 @@ body.resizing-h,body.resizing-h *{cursor:row-resize!important;user-select:none}
 body.moving,body.moving *{cursor:grabbing!important;user-select:none}
 .panel.dragging{opacity:.5}
 .panel.drop,.slot-empty.drop{outline:2px solid var(--accent);outline-offset:-2px}
-@media (max-width:760px){ .ph .pclose,.gutter,.slot-empty,.lay .act{display:none} }
+@media (max-width:760px){ .ph .pclose,.ph .pfloat,.fresize,.gutter,.slot-empty,.lay .act{display:none} }
 @media (max-width:1100px){ .lay{display:none} }
 
 /* вкладки внутри панели */
@@ -410,7 +421,11 @@ nav.tabs button.more{flex:.7;color:var(--accent)}
 .gm-ctl button{background:var(--raise);border:1px solid var(--line2);color:var(--muted);width:28px;height:26px;border-radius:7px}
 .gm-ctl button:hover{color:var(--text);border-color:var(--faint)}
 .gm-ctl .gm-tbtn{display:none}
-.gm-att{position:absolute;left:6px;bottom:3px;color:var(--faint);font-size:10px;z-index:2;pointer-events:none;max-width:75%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.gm-bg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.gm-base{position:absolute;right:44px;top:8px;display:flex;gap:4px;z-index:3;padding:3px;border-radius:9px;background:rgba(10,13,18,.78);border:1px solid var(--line2)}
+.gm-base .chipbtn{font-size:11px;padding:1px 8px}
+.gm.narrow .gm-base{top:auto;bottom:18px;right:8px}
+.gm-att{position:absolute;left:6px;bottom:3px;color:#aab3c0;text-shadow:0 1px 2px #000;font-size:10px;z-index:2;pointer-events:none;max-width:75%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .gm-leg{position:absolute;left:8px;top:8px;background:rgba(20,25,32,.92);border:1px solid var(--line2);border-radius:8px;padding:6px 9px;font-size:11px;z-index:2;color:var(--muted);max-width:min(60%,260px);pointer-events:none}
 .gm-leg div{display:flex;align-items:center;gap:5px}
 .gm-leg i{display:inline-block;width:8px;height:8px;border-radius:50%}
@@ -492,6 +507,39 @@ nav.tabs{display:none}
 .tbl.mx td{font-size:12px}
 .fl-cv{flex:1;min-height:380px;cursor:grab;touch-action:pan-y;border-radius:6px;overflow:hidden}
 .fl-cv.grabbing{cursor:grabbing}
+/* SAT: satellite pictures of oil storage */
+.sat-wrap{padding:12px 14px 16px;display:flex;flex-direction:column;gap:10px;min-height:0}
+.sat-lead{color:var(--muted);font-size:12.5px;line-height:1.45;max-width:880px}
+.sat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px}
+.sat-card{all:unset;cursor:pointer;display:block;border-radius:10px;overflow:hidden;border:1px solid var(--line2);background:var(--raise);transition:transform .12s,border-color .12s}
+.sat-card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.sat-card.none{cursor:default;opacity:.7}.sat-card.none:hover{transform:none;border-color:var(--line2)}
+.sat-pic{position:relative;aspect-ratio:1/1;background:#0b0f15}
+.sat-pic img{width:100%;height:100%;object-fit:cover;display:block}
+.sat-wait{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--faint);font-size:12px;text-align:center;padding:10px}
+.sat-cap{position:absolute;left:0;right:0;bottom:0;padding:22px 10px 8px;background:linear-gradient(transparent,rgba(5,8,12,.88));display:flex;flex-direction:column;gap:2px}
+.sat-cap b{color:#f1f3f6;font-size:12.5px;font-weight:600;text-shadow:0 1px 2px #000}
+.sat-cap span{color:#c3cad4;font-size:11px}
+.sat-empty{padding:30px 16px;color:var(--muted);text-align:center;line-height:1.5}
+.sat-bar{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.sat-title{font-size:14px;color:var(--text)}
+.sat-sel{display:flex;gap:6px;flex-wrap:wrap}
+.sat-stage{position:relative;width:min(100%,72vh);aspect-ratio:1/1;margin:0 auto;overflow:hidden;border-radius:10px;border:1px solid var(--line2);background:#0b0f15;touch-action:none;cursor:ew-resize;user-select:none}
+.sat-stage.moving{cursor:grabbing}
+.sat-inner{position:absolute;inset:0;transform-origin:50% 50%;will-change:transform}
+.sat-inner img{position:absolute;inset:0;width:100%;height:100%;object-fit:fill;display:block;pointer-events:none}
+.sat-b{position:absolute;inset:0}
+.sat-handle{position:absolute;top:0;bottom:0;width:0;border-left:2px solid #f2cc60;box-shadow:0 0 0 1px rgba(0,0,0,.5);pointer-events:none}
+.sat-handle i{position:absolute;top:50%;left:-13px;width:24px;height:24px;margin-top:-12px;border-radius:50%;background:#f2cc60;box-shadow:0 1px 4px rgba(0,0,0,.6)}
+.sat-handle i::before{content:"⇔";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#1a1d22;font-size:14px;font-weight:700}
+.sat-lbl{position:absolute;top:8px;padding:2px 8px;border-radius:6px;background:rgba(5,8,12,.78);color:#e8ecf1;font-size:11.5px;pointer-events:none}
+.sat-lbl.l{left:8px}.sat-lbl.r{right:44px}
+.sat-scale{position:absolute;left:10px;bottom:10px;display:flex;align-items:center;gap:6px;color:#e8ecf1;font-size:11px;text-shadow:0 1px 2px #000;pointer-events:none}
+.sat-scale i{display:block;height:5px;border:2px solid #e8ecf1;border-top:0;box-shadow:0 1px 2px rgba(0,0,0,.6)}
+.sat-dates{justify-content:center}.sat-dl{color:var(--faint);font-size:11.5px;margin-right:4px}
+.sat-info{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;color:var(--muted);font-size:12px}
+.sat-links{display:flex;gap:6px;flex-wrap:wrap}.sat-links a{text-decoration:none}
+.sat-note{max-width:900px;line-height:1.45}
 .zctl{position:absolute;top:6px;right:6px;z-index:2;display:flex;flex-direction:column;gap:3px;padding:3px;border-radius:9px;background:rgba(14,17,22,.86);border:1px solid var(--line2);cursor:default}
 .zctl .chipbtn.zb{min-width:26px;height:24px;padding:0 6px;font-weight:600;line-height:1}
 .zhint{font-weight:500;color:var(--muted)}
@@ -640,7 +688,7 @@ nav.tabs{display:none}
 
   <section class="panel" id="p-map">
     <div class="ph"><span class="code" id="map-code">MAP</span><span class="ttl" id="map-title" data-i18n="p_map">WORLD MAP</span><span class="sub" id="map-sub"></span></div>
-    <div class="ptabs" id="map-tabs"><button data-t="MAP" class="on" data-i18n="map_tab">MAP · LAYERS</button><button data-t="STORM" data-i18n="storm_tab">STORM · STORMS</button><button data-t="SHIP" data-i18n="ship_tab">SHIP · SHIPPING</button><button data-t="WETR" data-i18n="wetr_tab">WETR · WEATHER</button><button data-t="ECO" data-i18n="mapeco_tab">ECO · COUNTRIES</button><button data-t="SPLC" data-i18n="splc_tab">SPLC · SUPPLY CHAIN</button><span class="sp"></span></div>
+    <div class="ptabs" id="map-tabs"><button data-t="MAP" class="on" data-i18n="map_tab">MAP · LAYERS</button><button data-t="STORM" data-i18n="storm_tab">STORM · STORMS</button><button data-t="SHIP" data-i18n="ship_tab">SHIP · SHIPPING</button><button data-t="WETR" data-i18n="wetr_tab">WETR · WEATHER</button><button data-t="ECO" data-i18n="mapeco_tab">ECO · COUNTRIES</button><button data-t="SPLC" data-i18n="splc_tab">SPLC · SUPPLY CHAIN</button><button data-t="SAT" data-i18n="sat_tab">SAT · OIL FROM SPACE</button><span class="sp"></span></div>
     <div class="pb gm" id="map-body"></div>
   </section>
 

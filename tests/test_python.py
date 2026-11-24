@@ -1175,7 +1175,7 @@ class TankersAis(unittest.TestCase):
         masked, sub = got[0]
         self.assertTrue(masked)                                      # client frames are masked
         self.assertEqual(json.loads(sub)["APIKey"], "SECRET")
-        self.assertEqual(len(json.loads(sub)["BoundingBoxes"]), len(ais.AREAS))
+        self.assertEqual(json.loads(sub)["BoundingBoxes"], ais.WORLD_BOX)   # the whole world (the straits are inside)
         self.assertEqual(n, 2)
         rec = ships["538001234"]
         self.assertEqual((rec["name"], rec["type"], rec["dest"], rec["area"], rec["sog"], rec["cog"]), ("OCEAN STAR", 80, "FUJAIRAH", "hormuz", 12.4, 301))

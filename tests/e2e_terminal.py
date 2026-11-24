@@ -27,7 +27,7 @@ os.environ.setdefault("PLAYWRIGHT_BROWSERS_PATH", "/opt/pw-browsers")
 
 from playwright.sync_api import sync_playwright  # noqa: E402
 
-BLOCK = ("translate.googleapis.com", "tradingview.com", "binance", "coingecko.com", "alternative.me", "fonts.googleapis.com", "fonts.gstatic.com", "telegram.org")
+BLOCK = ("translate.googleapis.com", "tradingview.com", "binance", "coingecko.com", "alternative.me", "fonts.googleapis.com", "fonts.gstatic.com", "telegram.org", "gibs.earthdata.nasa.gov", "tiles.maps.eox.at", "planetarycomputer.microsoft.com")
 
 
 def free_port():
@@ -72,12 +72,51 @@ def check(name, cond, info=""):
     print(("  ok  " if cond else "  FAIL ") + name + ("" if cond else f"  [{info}]"))
 
 
+def extra_fixtures():
+    """The bot's newer files: PortWatch's copy, ships worldwide with tracks, satellite pictures of oil storage."""
+    import datetime as dt
+    import io as _io
+    from PIL import Image, ImageDraw
+    now = dt.datetime.now(dt.timezone.utc)
+    day = lambda i: (now.date() - dt.timedelta(days=i)).isoformat()
+    choke = []
+    for i, (name, lat, lon, n) in enumerate([("Suez Canal", 30.6, 32.3, 60), ("Strait of Hormuz", 26.6, 56.3, 30), ("Malacca Strait", 2.5, 101.4, 220),
+                                             ("Bab el-Mandeb Strait", 12.6, 43.3, 25), ("Panama Canal", 9.1, -79.7, 33)], 1):
+        days = [[day(k), n - (5 if k < 7 else 0), n // 3, 10, 20, 123456, 45000] for k in range(40, 3, -1)]
+        choke.append({"id": "chokepoint%d" % i, "name": name, "lat": lat, "lon": lon, "yr": 20000, "top": "Tanker", "days": days})
+    m = int(now.timestamp() // 60)
+    cols = ["mmsi", "name", "kind", "lat", "lon", "sog", "cog", "nav", "minute", "dest", "draught", "track"]
+    ships = [[538000001, "GULF STAR", "t", 27.0, -90.5, 12.5, 45, 0, m - 5, "HOUSTON", 14.1, [26.6, -91.0, 60, 26.8, -90.75, 30]],
+             [538000002, "BOX ONE", "c", 25.5, -88.0, 15.0, 270, 0, m - 2, "VERACRUZ", 11.0, [25.5, -87.4, 30]],
+             [538000003, "<img src=x onerror=alert(1)>", "c", 24.0, -86.0, 0.0, None, 1, m - 9, "<b>x</b>", None, []]]
+    world = {"updated": now.isoformat(), "src": "aisstream.io", "hours": 6, "counts": {"t": 1, "c": 2}, "cols": cols, "s": ships}
+
+    def jpeg(color):
+        im = Image.new("RGB", (240, 240), color)
+        d = ImageDraw.Draw(im)
+        for x in range(20, 220, 40):
+            d.ellipse([x, 100, x + 24, 124], fill=(210, 210, 205))
+        b = _io.BytesIO()
+        im.save(b, "JPEG", quality=80)
+        return b.getvalue()
+    sites = [{"id": "cushing", "name": "Cushing, Oklahoma (WTI hub)", "name_ru": "Кушинг, Оклахома (хаб WTI)", "lat": 35.957, "lon": -96.757, "km": 7.0,
+              "imgs": [{"d": day(40), "t": "17:10", "cloud": 1.0, "f": "sat/cushing/%s.jpg" % day(40)},
+                       {"d": day(3), "t": "17:10", "cloud": 2.5, "f": "sat/cushing/%s.jpg" % day(3)}]},
+             {"id": "fujairah", "name": "Fujairah", "name_ru": "Фуджейра", "lat": 25.178, "lon": 56.355, "km": 6.0, "imgs": []}]
+    out = {"portwatch.json": json.dumps({"updated": now.isoformat(), "src": "IMF PortWatch", "choke": choke}).encode(),
+           "ships_world.json": json.dumps(world).encode(),
+           "sat.json": json.dumps({"updated": now.isoformat(), "src": "Contains modified Copernicus Sentinel data 2026 · via Microsoft Planetary Computer", "sites": sites}).encode(),
+           "sat/cushing/%s.jpg" % day(40): jpeg((95, 85, 60)), "sat/cushing/%s.jpg" % day(3): jpeg((60, 80, 70))}
+    return out
+
+
 def run():
     static, sport = start_static()
     proc, wport = start_fake_worker()
     api = f"http://127.0.0.1:{wport}"
     fx = {n: urllib.request.urlopen(f"{api}/__fx/{n}").read() for n in ("data.json", "stocks.json", "rates.json", "macro.json", "moex.json", "options.json",
                                                                        "gex/SPX.json", "gex/BTC.json", "gex/hist/SPX.json", "gex/hist/BTC.json", "ships.json")}
+    fx.update(extra_fixtures())
     # live feed: the bot pushed a fresh story that is not on the site yet
     key = hashlib.sha256(b"econnews-sync:123:TEST").hexdigest()
     body = json.dumps({"updated": "2099-01-01T00:00:00+00:00", "news": [{"title": "Fresh story from the server", "lang": "en",
@@ -99,7 +138,8 @@ def run():
                 if u.path == "/config.json":
                     return route.fulfill(status=200, content_type="application/json", body=json.dumps({"api": api}))
                 if u.path.lstrip("/") in fx:
-                    return route.fulfill(status=200, content_type="application/json", body=fx[u.path.lstrip("/")])
+                    kind = "image/jpeg" if u.path.endswith(".jpg") else "application/json"
+                    return route.fulfill(status=200, content_type=kind, body=fx[u.path.lstrip("/")])
             return route.continue_()
         ctx.route("**/*", handle)
 
@@ -595,16 +635,18 @@ def run():
         check("HEAT: a double-click resets the zoom", f.evaluate("FLOWX.state.z.HEAT.p === 1 && FLOWX.state.z.HEAT.t === 1"), hz())
         # cells on whole pixels: the picture has no half-covered rows between price levels (sharp, not smeared)
         sharp = f.evaluate("""(function(){
-          for (var i = 0; i < 4; i++) FLOWX.state.z.HEAT.p *= 1.25;
+          FLOWX.state.z.HEAT.p = 12; FLOWX.state.z.HEAT.t = 8;   // zoomed in: a price step and a half-second are many pixels
           var w = document.querySelector('#flow-body .fl-cv'); w.__paint();
-          var c = w.querySelector('canvas'), g = c.getContext('2d'), x = Math.floor((c.width - 160 * (window.devicePixelRatio || 1)) - 4);
+          var dpr = window.devicePixelRatio || 1, c = w.querySelector('canvas'), g = c.getContext('2d'), x = Math.floor(c.width - (160 + 30) * dpr);
           var d = g.getImageData(x, 0, 1, c.height).data, rows = 0, edges = 0;
           for (var y = 1; y < c.height; y++) { var a = (y - 1) * 4, b = y * 4; if (d[a] !== d[b] || d[a + 1] !== d[b + 1] || d[a + 2] !== d[b + 2]) edges++; rows++ }
           return {edges: edges, rows: rows};
         })()""")
-        check("HEAT: zoomed in, price cells are several pixels tall (not a smear of 1-pixel rows)", 0 < sharp["edges"] < sharp["rows"] / 3, sharp)
+        check("HEAT: zoomed in, price cells are several pixels tall (not a smear of 1-pixel rows)", 0 < sharp["edges"] < sharp["rows"] / 4, sharp)
+        unk = f.evaluate("(function(){ var m = FLOWX.market(); return m && isFinite(m.lo) && isFinite(m.hi) && m.lo < m.hi })()")
+        check("HEAT: the book's known range comes from the 5000-level snapshot", unk)
         shot(f, "23b_heat_zoom")
-        f.evaluate("FLOWX.state.z.HEAT.p = 1")
+        f.evaluate("FLOWX.state.z.HEAT.p = 1; FLOWX.state.z.HEAT.t = 1")
         f.fill("#cmd", "BOOK BTC"); f.press("#cmd", "Enter"); f.wait_for_timeout(800)
         check("BOOK: the ladder and the tape draw", fdrawn() > 20000 and "DOM & TAPE" in f.inner_text("#p-flow .ph"))
         f.fill("#cmd", "FOOT BTC"); f.press("#cmd", "Enter"); f.wait_for_timeout(800)
@@ -665,16 +707,68 @@ def run():
         newer["v"]["hormuz"] = [20.9, 21.1, 21.4, 21.6, 15.0, 5.1, 9.1, 11.2]
         fx["chokepoints.json"] = json.dumps(newer).encode()
         f.click("#map-tabs button[data-t=SHIP]")
-        f.wait_for_selector("#map-body .gm-wrap canvas")
+        f.wait_for_selector("#map-body .gm-wrap canvas:not(.gm-bg)")
         f.click("#map-tabs button[data-t=SPLC]")
         f.wait_for_function("document.getElementById('map-sub').textContent.includes('4Q26')", timeout=8000)
         sp = f.inner_text("#map-body")
         check("SPLC: the figures the bot read from EIA replace the built-in ones", "4Q26 11.2" in sp and "13 Jan 2027" in f.inner_text("#map-sub"), sp[:300])
         f.click("#map-tabs button[data-t=SHIP]")
-        f.wait_for_selector("#map-body .gm-wrap canvas")
+        f.wait_for_selector("#map-body .gm-wrap canvas:not(.gm-bg)")
         f.wait_for_function("document.querySelector('#map-body .gm-side') && document.querySelector('#map-body .gm-side').textContent.includes('Tankers at the chokepoints')", timeout=8000)
         f.wait_for_function("window.MAPS && MAPS.M.data.tankers && MAPS.M.data.tankers.pts.length === 2", timeout=8000)
-        check("SHIP: the map comes back after SPLC, with the tankers layer", f.locator("#map-body .gm-wrap canvas").count() == 1)
+        check("SHIP: the map comes back after SPLC, with the tankers layer", f.locator("#map-body .gm-wrap canvas:not(.gm-bg)").count() == 1)
+        # the picture under the map, and its switch
+        check("MAP: the satellite picture lies under the map", f.locator("#map-body .gm-wrap canvas.gm-bg").count() == 1 and f.evaluate("MAPS.M.base") in ("sat", "day", "night", "scheme"))
+        f.click("#map-body .gm-base button[data-b=scheme]")
+        f.wait_for_function("getComputedStyle(document.querySelector('#map-body .gm-bg')).display === 'none'", timeout=3000)
+        check("MAP: the scheme switch hides the picture and is remembered", f.evaluate("getComputedStyle(document.querySelector('#map-body .gm-bg')).display") == "none" and f.evaluate("localStorage.getItem('map_base')") == "scheme")
+        f.click("#map-body .gm-base button[data-b=sat]")
+        f.wait_for_function("MAPS.M.base === 'sat'", timeout=3000)
+        check("MAP: back to the satellite picture", f.evaluate("localStorage.getItem('map_base')") == "sat")
+        # the tile servers do not answer here (blocked in the tests): the map falls back to drawing its own land
+        f.wait_for_function("getComputedStyle(document.querySelector('#map-body .gm-bg')).display === 'none'", timeout=8000)
+        check("MAP: without the satellite tiles the map draws its own land (no black map)", True)
+        # chokepoints from the bot's copy of PortWatch (not PortWatch's failing service)
+        f.wait_for_function("window.MAPS && MAPS.M.data.choke && MAPS.M.data.choke.pts.length === 5", timeout=8000)
+        side = f.inner_text("#map-body .gm-side")
+        check("SHIP: chokepoints from the bot's copy of PortWatch", "Malacca Strait" in side and "Token" not in side, side[:200])
+        # ships worldwide: arrows along the course, tracks, the line ahead; names as text only
+        f.wait_for_function("window.MAPS && MAPS.M.data.world && MAPS.M.data.world.pts.length === 3", timeout=8000)
+        wp = f.evaluate("MAPS.M.data.world.pts.map(function(p){ return {t: p.t, hd: p.hd, trk: (p.trk || []).length, pf: !!p.pf, s: p.s.join(' | ')} })")
+        check("SHIP: ships worldwide, tankers first, with their tracks", wp[0]["t"].startswith("🛢 GULF STAR") and wp[0]["trk"] == 2 and wp[0]["hd"] == 45 and wp[0]["pf"], wp[:2])
+        check("SHIP: a ship at anchor has no arrow and no line ahead", [p for p in wp if "onerror" in p["t"]][0]["hd"] is None)
+        check("SHIP: the course and the track are explained in the card", "course 45°" in wp[0]["s"] and "dashes" in wp[0]["s"], wp[0]["s"])
+        check("SHIP: the worldwide block in the side panel", "SHIPS · WORLD" in f.inner_text("#map-body .gm-side"))
+        f.evaluate("MAPS.flyTo(-89.5, 26.2, 40)")
+        f.wait_for_timeout(300)
+        shot(f, "27_ships_world")
+        injected = f.evaluate("!!document.querySelector('#map-body img[src=x], body > img[src=x]') || !!window.__xss")
+        check("SHIP: a ship's name is shown as text, never as HTML", not injected)
+        # SAT: the gallery, then one hub with "then" and "now"
+        f.fill("#cmd", "SAT"); f.press("#cmd", "Enter")
+        f.wait_for_selector("#map-body .sat-card")
+        cards = f.locator("#map-body .sat-card").count()
+        check("SAT: a card per hub (one without a picture yet)", cards == 2 and f.locator("#map-body .sat-card.none").count() == 1, cards)
+        f.wait_for_function("document.querySelector('#map-body .sat-card img') && document.querySelector('#map-body .sat-card img').naturalWidth > 0", timeout=8000)
+        shot(f, "28_sat_gallery")
+        f.click("#map-body .sat-card:not(.none)")
+        f.wait_for_selector("#map-body .sat-stage .sat-handle")
+        check("SAT: the hub opens with then and now", "then ·" in f.inner_text("#map-body .sat-stage") and "now ·" in f.inner_text("#map-body .sat-stage"))
+        st = f.locator("#map-body .sat-stage").bounding_box()
+        f.mouse.click(st["x"] + st["width"] * 0.25, st["y"] + st["height"] * 0.5)
+        clip = f.evaluate("document.querySelector('#map-body .sat-b').style.clipPath")
+        check("SAT: clicking moves the cut between the pictures", "inset(0px 0px 0px 25" in clip or "inset(0 0 0 25" in clip, clip)
+        f.click("#map-body .sat-z button:has-text('＋')")
+        tr = f.evaluate("document.querySelector('#map-body .sat-inner').style.transform")
+        check("SAT: ＋ zooms in", "scale(1.4)" in tr, tr)
+        f.mouse.dblclick(st["x"] + st["width"] * 0.6, st["y"] + st["height"] * 0.6)
+        check("SAT: a double-click resets the zoom", "scale(1)" in f.evaluate("document.querySelector('#map-body .sat-inner').style.transform"))
+        shot(f, "29_sat_hub")
+        f.click("#map-body .sat-bar button")
+        f.wait_for_selector("#map-body .sat-grid")
+        check("SAT: back to all hubs", f.locator("#map-body .sat-card").count() == 2)
+        f.click("#map-tabs button[data-t=SHIP]")
+        f.wait_for_selector("#map-body .gm-wrap canvas:not(.gm-bg)")
         f.fill("#cmd", "PAPR"); f.press("#cmd", "Enter")
         f.wait_for_selector("#my-body .stat")
         f.fill("#my-body input.t", "AAPL"); f.fill("#my-body input[data-k=paper-a]", "$3429.6")
@@ -838,6 +932,43 @@ def run():
         shot(w, "29_windows_empty")
         w.click("#lay button[data-act=reset]")
         check("windows: ⟲ brings the default layout back", sorted(visible_panels(w)) == sorted(["p-mkt", "p-chart", "p-crypto", "p-news", "p-eco"]) and w.locator(".slot-empty").count() == 0)
+        # floating: ⧉ lifts a window over the others; its title moves it, its corner sizes it; ▣ puts it back
+        news_slot = slot("p-news")
+        w.click("#p-news .ph .pfloat")
+        fl = w.evaluate("(function(){ var p = document.getElementById('p-news'), r = p.getBoundingClientRect(); return {cls: p.className, pos: getComputedStyle(p).position, x: r.left, y: r.top, w: r.width, h: r.height, slot: p.dataset.slot || null} })()")
+        check("float: ⧉ lifts the window over the grid", "floating" in fl["cls"] and fl["pos"] == "absolute" and fl["slot"] is None and w.locator(".slot-empty").count() == 1, fl)
+        t = w.locator("#p-news .ph").bounding_box()
+        w.mouse.move(t["x"] + 60, t["y"] + t["height"] / 2); w.mouse.down(); w.mouse.move(t["x"] + 160, t["y"] + 90, steps=6); w.mouse.up()
+        moved = w.eval_on_selector("#p-news", "p => { var r = p.getBoundingClientRect(); return [r.left, r.top] }")
+        mr = w.eval_on_selector("main", "m => { var r = m.getBoundingClientRect(); return [r.left, r.top, r.width, r.height] }")
+        want = [min(fl["x"] + 100, mr[0] + mr[2] - fl["w"]), min(fl["y"] + 90 - t["height"] / 2, mr[1] + mr[3] - fl["h"])]
+        check("float: dragging the title moves it (and keeps it on the page)", abs(moved[0] - want[0]) < 4 and abs(moved[1] - want[1]) < 6, (fl, moved, want))
+        inside = w.evaluate("(function(){ var p = document.getElementById('p-news').getBoundingClientRect(), m = document.querySelector('main').getBoundingClientRect(); return p.left >= m.left - 1 && p.top >= m.top - 1 && p.right <= m.right + 1 && p.bottom <= m.bottom + 1 })()")
+        check("float: the window stays wholly on the page", inside)
+        # room to size it: move it to the top left first
+        t = w.locator("#p-news .ph").bounding_box()
+        w.mouse.move(t["x"] + 60, t["y"] + t["height"] / 2); w.mouse.down(); w.mouse.move(t["x"] - 300, t["y"] - 500, steps=6); w.mouse.up()
+        c = w.locator("#p-news .fresize").bounding_box()
+        hit = w.evaluate("(function(x, y){ var n = document.elementFromPoint(x, y); return n ? n.tagName + '.' + n.className + '#' + n.id : '' })(%f, %f)" % (c["x"] + 8, c["y"] + 8))
+        w.mouse.move(c["x"] + 8, c["y"] + 8); w.mouse.down(); w.mouse.move(c["x"] + 88, c["y"] + 48, steps=6); w.mouse.up()
+        sz = w.eval_on_selector("#p-news", "p => { var r = p.getBoundingClientRect(); return [r.width, r.height] }")
+        check("float: the corner sizes it", abs(sz[0] - fl["w"] - 80) < 4 and abs(sz[1] - fl["h"] - 40) < 4, (fl, sz, c, hit))
+        # a second floating window comes to the front; a click on the first brings it back on top
+        w.click("#p-eco .ph .pfloat")
+        z1, z2 = w.evaluate("[+document.getElementById('p-news').style.zIndex, +document.getElementById('p-eco').style.zIndex]")
+        check("float: the newest window lies on top", z2 > z1, (z1, z2))
+        w.click("#p-news .ph [data-i18n]", position={"x": 5, "y": 5})
+        z1b = w.evaluate("+document.getElementById('p-news').style.zIndex")
+        check("float: a click brings a window to the front", z1b > z2, (z1b, z2))
+        shot(w, "30_floating")
+        w.reload()
+        w.wait_for_selector("#mkt table")
+        kept = w.evaluate("(function(){ var p = document.getElementById('p-news'), r = p.getBoundingClientRect(); return p.classList.contains('floating') && Math.abs(r.width - %f) < 4 })()" % sz[0])
+        check("float: floating windows survive a reload", kept)
+        w.click("#p-news .ph .pfloat")
+        check("float: ▣ puts it back into the grid", slot("p-news") == news_slot and "floating" not in w.eval_on_selector("#p-news", "p => p.className"), slot("p-news"))
+        w.click("#lay button[data-act=reset]")
+        check("float: ⟲ docks every window", w.locator(".panel.floating").count() == 0 and w.locator(".slot-empty").count() == 0)
         wctx.close()
 
         # phone

@@ -142,7 +142,16 @@ function tabs(box, attr, onPick){
     onPick(b.getAttribute('data-' + attr));
   });
 }
-function setTab(box, attr, val){ box.querySelectorAll('button[data-' + attr + ']').forEach(function(x){ x.classList.toggle('on', x.getAttribute('data-' + attr) === val) }) }
+function setTab(box, attr, val){
+  box.querySelectorAll('button[data-' + attr + ']').forEach(function(x){
+    var on = x.getAttribute('data-' + attr) === val; x.classList.toggle('on', on);
+    if (on && box.scrollWidth > box.clientWidth) { var br = box.getBoundingClientRect(), xr = x.getBoundingClientRect(); box.scrollLeft += (xr.left - br.left) - (br.width - xr.width) / 2 }
+  });
+}
+// a strip of tabs wider than its panel: the mouse wheel scrolls it sideways (the last tabs were out of reach)
+document.querySelectorAll('.ptabs').forEach(function(tb){
+  tb.addEventListener('wheel', function(e){ if (tb.scrollWidth > tb.clientWidth && Math.abs(e.deltaY) > Math.abs(e.deltaX)) { tb.scrollLeft += e.deltaY; e.preventDefault() } }, {passive: false});
+});
 function visible(pid){
   var p = $(pid); if (!p) return false;
   if (T.isMobile()) return p.classList.contains('show');
@@ -195,14 +204,21 @@ var FN_ALL = [
   ['WETR', TX('m_wetr'), 'p-map', 'WETR'], ['MAP ECO', TX('m_mapeco'), 'p-map', 'MAP ECO'],
   ['GEX', TX('m_gex'), 'p-gex', 'GEX'], ['LVL', TX('m_lvl'), 'p-gex', 'LVL'], ['VOLS', TX('m_vols'), 'p-gex', 'VOLS'], ['GRK', TX('m_grk'), 'p-gex', 'GRK'],
   ['GEXH', TX('m_gexh'), 'p-gex', 'GEXH'], ['OBH', TX('m_obh'), 'p-flow', 'OBH'], ['BOOK', TX('m_book'), 'p-flow', 'BOOK'], ['FOOT', TX('m_foot'), 'p-flow', 'FOOT'],
-  ['CVD', TX('m_cvd'), 'p-flow', 'CVD'], ['SPLC', TX('m_splc'), 'p-map', 'SPLC'], ['TANKERS', TX('m_tankers'), 'p-map', 'TANKERS'],
+  ['CVD', TX('m_cvd'), 'p-flow', 'CVD'], ['SPLC', TX('m_splc'), 'p-map', 'SPLC'], ['TANKERS', TX('m_tankers'), 'p-map', 'TANKERS'], ['SAT', TX('m_sat'), 'p-map', 'SAT'],
   ['HELP', TX('m_help'), null, 'HELP']
 ];
 var Layout = (function(){
-  // assign: the panel in each slot of each layout (null — a closed window); size: the sizes the user dragged
-  var st = {mode: '1', assign: {}, size: {}};
+  // assign: the panel in each slot of each layout (null — a closed window); size: the sizes the user dragged;
+  // float: windows taken out of the grid, lying over it — {pid: {x, y, w, h, z}} in px inside #main
+  var st = {mode: '1', assign: {}, size: {}, float: {}};
   try { var saved = JSON.parse(store('layout2') || 'null'); if (saved && saved.assign) st = saved } catch(e){}
   if (!st.size || typeof st.size !== 'object') st.size = {};
+  if (!st.float || typeof st.float !== 'object') st.float = {};
+  // only known panels and plain numbers from storage
+  Object.keys(st.float).forEach(function(pid){
+    var f = st.float[pid], ok = PANELS.some(function(p){ return p.id === pid }) && f && ['x', 'y', 'w', 'h'].every(function(k){ return typeof f[k] === 'number' && isFinite(f[k]) });
+    if (!ok || !(f.w > 0 && f.h > 0)) delete st.float[pid]; else f.z = typeof f.z === 'number' && isFinite(f.z) ? Math.min(f.z, 10000) : 30;
+  });
   if (!LAYOUTS[st.mode] || st.mode === 't') st.mode = '1';
   var activeSlot = null, gut = [];
   function mode(){ return window.matchMedia('(max-width:1100px)').matches ? 't' : st.mode }
@@ -227,24 +243,28 @@ var Layout = (function(){
       // on a phone — one panel: keep the focused one, otherwise markets
       var shown = [].slice.call(document.querySelectorAll('.panel.show'));
       var keep = shown.length === 1 ? shown[0] : (document.querySelector('.panel.focus') || $('p-mkt'));
-      document.querySelectorAll('.panel').forEach(function(p){ p.classList.remove('off'); p.style.gridArea = ''; p.classList.toggle('show', p === keep) });
+      document.querySelectorAll('.panel').forEach(function(p){ unfloatNode(p); p.classList.remove('off'); p.style.gridArea = ''; p.classList.toggle('show', p === keep) });
       document.querySelectorAll('#tabs button[data-p]').forEach(function(b){ b.classList.toggle('on', b.dataset.p === keep.id) });
       return;
     }
     var m = mode(), L = LAYOUTS[m], a = assign(m), sz = sizes(m);
+    // a floating window is not also in the grid
+    a.forEach(function(pid, i){ if (pid && st.float[pid]) a[i] = null });
     main.style.gridTemplateColumns = sz ? sz.cols.map(fr).join(' ') : L.cols;
     main.style.gridTemplateRows = sz ? sz.rows.map(fr).join(' ') : L.rows;
     main.style.gridTemplateAreas = L.areas;
     PANELS.forEach(function(p){
       var node = $(p.id), i = a.indexOf(p.id);
       if (!node) return;
+      if (st.float[p.id]) { floatNode(node, st.float[p.id]); return }
+      unfloatNode(node);
       if (i >= 0) { node.style.gridArea = L.slots[i]; node.classList.remove('off'); node.classList.add('show'); node.dataset.slot = L.slots[i] }
       else { node.classList.add('off'); node.style.gridArea = ''; delete node.dataset.slot }
     });
     var allEmpty = a.every(function(p){ return !p });
     L.slots.forEach(function(s, i){ if (!a[i]) main.appendChild(emptySlot(s, allEmpty)) });
     document.querySelectorAll('#lay button[data-l]').forEach(function(b){ b.classList.toggle('on', b.dataset.l === st.mode) });
-    a.forEach(function(pid){ if (pid && RENDER[pid]) try { RENDER[pid]() } catch(e){ console.error(e) } });
+    a.concat(Object.keys(st.float)).forEach(function(pid){ if (pid && RENDER[pid]) try { RENDER[pid]() } catch(e){ console.error(e) } });
     drawGutters();
     // canvases and charts size themselves on 'resize'; this one comes from here, so it must not lay out again
     // (it did: the layout re-applied itself ~5 times a second and redrew every canvas each time)
@@ -321,6 +341,51 @@ var Layout = (function(){
     d.addEventListener('pointermove', move); d.addEventListener('pointerup', up); d.addEventListener('pointercancel', up);
   }
 
+  /* ---------- floating windows: over the grid, moved by the title, sized by the corner ---------- */
+  var topZ = 30;
+  Object.keys(st.float).forEach(function(pid){ topZ = Math.max(topZ, st.float[pid].z || 30) });
+  // keep a window inside #main (the browser window may have become smaller)
+  function fit(f){
+    var main = $('main'), W = main.clientWidth, H = main.clientHeight;
+    f.w = Math.max(Math.min(300, W), Math.min(W, f.w)); f.h = Math.max(Math.min(200, H), Math.min(H, f.h));
+    f.x = Math.max(0, Math.min(W - f.w, f.x)); f.y = Math.max(0, Math.min(H - f.h, f.y));   // wholly inside: no window is lost off-screen
+    return f;
+  }
+  function floatNode(node, f){
+    fit(f);
+    node.classList.add('floating', 'show'); node.classList.remove('off'); node.style.gridArea = ''; delete node.dataset.slot;
+    node.style.left = f.x + 'px'; node.style.top = f.y + 'px'; node.style.width = f.w + 'px'; node.style.height = f.h + 'px'; node.style.zIndex = f.z || 30;
+    var b = node.querySelector('.ph .pfloat'); if (b) { b.textContent = '▣'; b.title = TX('dock_t') }
+  }
+  function unfloatNode(node){
+    if (!node.classList.contains('floating')) return;
+    node.classList.remove('floating'); ['left', 'top', 'width', 'height', 'zIndex'].forEach(function(k){ node.style[k] = '' });
+    var b = node.querySelector('.ph .pfloat'); if (b) { b.textContent = '⧉'; b.title = TX('float_t') }
+  }
+  function raise(pid){
+    var f = st.float[pid], node = $(pid); if (!f || !node) return;
+    if ((f.z || 0) < topZ) { f.z = ++topZ; node.style.zIndex = f.z; save() }
+  }
+  // take a window out of the grid: it keeps its size and lies a little lower and to the right of where it was
+  function float(pid){
+    if (T.isMobile()) return;
+    var node = $(pid), main = $('main'); if (!node || st.float[pid]) return;
+    var r = node.classList.contains('off') ? null : node.getBoundingClientRect(), mr = main.getBoundingClientRect();
+    var f = r ? {x: r.left - mr.left + 24, y: r.top - mr.top + 24, w: r.width, h: r.height} : {x: mr.width * 0.2, y: mr.height * 0.12, w: mr.width * 0.5, h: mr.height * 0.6};
+    f.z = ++topZ; st.float[pid] = fit(f);
+    save(); apply(); focus(pid);
+  }
+  // back into the grid: its usual window, or an empty one
+  function dock(pid, slot){
+    if (!st.float[pid]) return;
+    delete st.float[pid];
+    unfloatNode($(pid)); $(pid).classList.add('off');
+    place(pid, slot);
+  }
+  function moveFloat(pid, x, y){ var f = st.float[pid]; if (!f) return; f.x = x; f.y = y; fit(f); var n = $(pid); n.style.left = f.x + 'px'; n.style.top = f.y + 'px' }
+  function sizeFloat(pid, w, h){ var f = st.float[pid]; if (!f) return; f.w = w; f.h = h; fit(f); var n = $(pid); n.style.width = f.w + 'px'; n.style.height = f.h + 'px' }
+  function isFloat(pid){ return !!st.float[pid] }
+
   function focus(pid){
     var p = $(pid); if (!p) return;
     p.classList.add('focus'); setTimeout(function(){ p.classList.remove('focus') }, 1200);
@@ -328,6 +393,9 @@ var Layout = (function(){
   }
   function place(pid, slot){
     if (T.isMobile()) return;
+    // a floating window opened again: to the front (a window chosen for a grid cell goes back into the grid)
+    if (st.float[pid] && !slot) { raise(pid); focus(pid); if (RENDER[pid]) RENDER[pid](); return }
+    if (st.float[pid]) { delete st.float[pid]; unfloatNode($(pid)) }
     var m = mode(), L = LAYOUTS[m], a = assign(m);
     if (a.indexOf(pid) >= 0 && !slot) { focus(pid); if (RENDER[pid]) RENDER[pid](); return }
     // a closed window is filled first: the panel's usual place if it is empty, then the one clicked last, then any
@@ -342,12 +410,13 @@ var Layout = (function(){
     if (pid === 'p-chart' && !$('ownc')) T.openChart(T.curChart(), null, true);
   }
   function close(pid){
+    if (st.float[pid]) { delete st.float[pid]; var n = $(pid); unfloatNode(n); n.classList.add('off'); n.classList.remove('show'); save(); return }
     var a = assign(mode()), i = a.indexOf(pid);
     if (i < 0) return;
     a[i] = null; save(); apply();
   }
-  function closeAll(){ var a = assign(mode()); for (var i = 0; i < a.length; i++) a[i] = null; save(); apply() }
-  function reset(){ var m = mode(); st.assign[m] = LAYOUTS[m].def.slice(); delete st.size[m]; save(); apply() }
+  function closeAll(){ var a = assign(mode()); for (var i = 0; i < a.length; i++) a[i] = null; st.float = {}; save(); apply() }
+  function reset(){ var m = mode(); st.assign[m] = LAYOUTS[m].def.slice(); delete st.size[m]; st.float = {}; save(); apply() }
   function swap(s1, s2){
     var m = mode(), L = LAYOUTS[m], a = assign(m), i = L.slots.indexOf(s1), j = L.slots.indexOf(s2);
     if (i < 0 || j < 0 || i === j) return;
@@ -357,7 +426,9 @@ var Layout = (function(){
   function setMode(m){ if (!LAYOUTS[m] || m === 't') return; st.mode = m; save(); apply() }
   function slotOf(pid){ var p = $(pid); return p && p.dataset.slot }
   return {apply: apply, place: place, setMode: setMode, focus: focus, slotOf: slotOf, mode: function(){ return st.mode },
-    setActive: function(s){ activeSlot = s }, close: close, closeAll: closeAll, reset: reset, swap: swap, drawGutters: drawGutters};
+    setActive: function(s){ activeSlot = s }, close: close, closeAll: closeAll, reset: reset, swap: swap, drawGutters: drawGutters,
+    float: float, dock: dock, raise: raise, isFloat: isFloat, moveFloat: moveFloat, sizeFloat: sizeFloat, saveFloat: save, fitAll: function(){ Object.keys(st.float).forEach(function(pid){ var n = $(pid); if (n) floatNode(n, st.float[pid]) }) },
+    floatState: function(pid){ return st.float[pid] ? JSON.parse(JSON.stringify(st.float[pid])) : null }};
 })();
 window.Layout = Layout;
 
@@ -392,11 +463,38 @@ document.querySelectorAll('.panel').forEach(function(p){
   var code = ph.querySelector('.code');
   if (code && code.nextSibling) ph.insertBefore(b, code.nextSibling); else ph.appendChild(b);
   b.onclick = function(e){ e.stopPropagation(); pickFn(b, p.dataset.slot) };
+  // ⧉ — lift this window over the others (desktop); ▣ — put it back into the grid
+  var fl = el('button', 'pfloat', '⧉'); fl.type = 'button'; fl.title = TX('float_t');
+  fl.onclick = function(e){ e.stopPropagation(); if (Layout.isFloat(p.id)) Layout.dock(p.id); else Layout.float(p.id) };
+  ph.appendChild(fl);
   // ✕ — close this window (desktop)
   var x = el('button', 'pclose', '✕'); x.type = 'button'; x.title = TX('close_t');
   x.onclick = function(e){ e.stopPropagation(); Layout.close(p.id) };
   ph.appendChild(x);
+  var rz = el('div', 'fresize'); rz.title = TX('fresize_t'); p.appendChild(rz);
+  rz.addEventListener('pointerdown', function(e){
+    if (!Layout.isFloat(p.id) || e.button !== 0) return;
+    e.preventDefault(); e.stopPropagation();
+    var f = Layout.floatState(p.id), x0 = e.clientX, y0 = e.clientY, t = 0;
+    try { rz.setPointerCapture(e.pointerId) } catch(err){}
+    document.body.classList.add('fsizing');
+    function move(ev){ Layout.sizeFloat(p.id, f.w + ev.clientX - x0, f.h + ev.clientY - y0); if (!t) t = setTimeout(function(){ t = 0; window.dispatchEvent(new Event('resize')) }, 120) }
+    function up(){ rz.removeEventListener('pointermove', move); rz.removeEventListener('pointerup', up); rz.removeEventListener('pointercancel', up);
+      document.body.classList.remove('fsizing'); Layout.saveFloat(); window.dispatchEvent(new Event('resize')) }
+    rz.addEventListener('pointermove', move); rz.addEventListener('pointerup', up); rz.addEventListener('pointercancel', up);
+  });
+  p.addEventListener('pointerdown', function(){ if (Layout.isFloat(p.id)) Layout.raise(p.id) }, true);
   p.addEventListener('mousedown', function(){ if (p.dataset.slot) Layout.setActive(p.dataset.slot) });
+  // a floating window: drag its title to move it (a double-click on the title puts it back into the grid)
+  ph.addEventListener('pointerdown', function(e){
+    if (!Layout.isFloat(p.id) || e.button !== 0 || e.target.closest('button, input, select, a, textarea, label')) return;
+    var f = Layout.floatState(p.id), x0 = e.clientX, y0 = e.clientY;
+    document.body.classList.add('fmoving');
+    function move(ev){ Layout.moveFloat(p.id, f.x + ev.clientX - x0, f.y + ev.clientY - y0) }
+    function up(){ document.removeEventListener('pointermove', move); document.removeEventListener('pointerup', up); document.body.classList.remove('fmoving'); Layout.saveFloat() }
+    document.addEventListener('pointermove', move); document.addEventListener('pointerup', up);
+  });
+  ph.addEventListener('dblclick', function(e){ if (Layout.isFloat(p.id) && !e.target.closest('button, input, select, a')) Layout.dock(p.id) });
   // drag the title onto another window to swap the two (desktop)
   ph.addEventListener('pointerdown', function(e){
     if (T.isMobile() || e.button !== 0 || !p.dataset.slot || e.target.closest('button, input, select, a, textarea, label')) return;
@@ -441,6 +539,7 @@ window.addEventListener('resize', function(){
   clearTimeout(rzT); rzT = setTimeout(function(){
     var was = Layout._mob, real = rzReal; Layout._mob = T.isMobile(); rzReal = false;
     if (real && (was !== Layout._mob || !Layout._mob)) { Layout.apply() }
+    else if (!Layout._mob) Layout.fitAll();
     redrawCanvases();
     if (visible('p-imap')) renderImap();
   }, 150);
