@@ -463,11 +463,18 @@ async function translateOne(line, lang = "ru") {
   return cached("tr:" + (tl === "ru" ? "" : tl + ":") + line, 86400, async () => {
     let err;
     try {
+      let d = await getJSON("https://clients5.google.com/translate_a/t?client=dict-chrome-ex&sl=auto&tl=" + tl + "&q=" + encodeURIComponent(line),
+        { ttl: 86400, timeout: 5000 });
+      while (Array.isArray(d) && d.length) d = d[0];
+      const text = typeof d === "string" ? d.replace(/&#39;/g, "'").replace(/&quot;/g, '"').replace(/&amp;/g, "&").trim() : "";
+      if (text) return text;
+    } catch (e) { err = "Google " + (e.status || e.message); }
+    try {
       const d = await getJSON("https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=" + tl + "&dt=t&q=" + encodeURIComponent(line),
         { ttl: 86400, timeout: 5000 });
       const text = (d[0] || []).map((seg) => seg[0] || "").join("").trim();
       if (text) return text;
-    } catch (e) { err = "Google " + (e.status || e.message); }
+    } catch (e) { err = (err ? err + ", " : "") + "Google " + (e.status || e.message); }
     try {
       const d = await getJSON("https://api.mymemory.translated.net/get?langpair=en|" + tl + "&q=" + encodeURIComponent(line.slice(0, 480)), { ttl: 86400, timeout: 5000 });
       const text = ((d && d.responseData && d.responseData.translatedText) || "").trim();

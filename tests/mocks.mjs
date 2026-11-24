@@ -11,7 +11,7 @@ export const TOKEN = "123:TEST";
 export const OWNER = "111";
 export const sent = [];
 export const calls = [];
-export const flags = { failYahoo: false, failBinance: false, failGoogle: false, failSpark: false };
+export const flags = { failYahoo: false, failBinance: false, failGoogle: false, failGtx: false, failClients5: false, failSpark: false };
 
 const now = Date.now();
 export const iso = (ms) => new Date(ms).toISOString();
@@ -110,7 +110,16 @@ export function route(url, init) {
     if (p.endsWith("/insider-transactions")) return { data: [{ name: "Cook Tim", change: -2399, share: 39593, transactionDate: "2026-10-06",
       transactionCode: "S", transactionPrice: 332.01, isDerivative: false }, { name: "Grant", change: 10, transactionCode: "A", isDerivative: false }] };
   }
-  if (u.host === "translate.googleapis.com" && flags.failGoogle) return { __status: 429 };
+  if ((u.host === "translate.googleapis.com" || u.host === "clients5.google.com") && flags.failGoogle) return { __status: 429 };
+  if (u.host === "translate.googleapis.com" && flags.failGtx) return { __status: 429 };
+  if (u.host === "clients5.google.com" && flags.failClients5) return { __status: 429 };
+  if (u.host === "clients5.google.com") {
+    const q = u.searchParams.get("q"), tl = u.searchParams.get("tl");
+    if (u.searchParams.get("client") !== "dict-chrome-ex") return { __status: 400 };
+    if (tl === "zh-CN") return [[q.replace("Apple beats estimates", "苹果业绩超出预期").replace("iPhone sales jump", "iPhone 销量大增"), "en"]];
+    if (tl === "ar") return [[q.replace("Apple beats estimates", "أبل تتجاوز التوقعات").replace("iPhone sales jump", "قفزة في مبيعات آيفون"), "en"]];
+    return [[q.replace("Apple beats estimates", "Apple превзошла прогнозы").replace("iPhone sales jump", "Продажи iPhone выросли &amp; ещё"), "en"]];
+  }
   if (u.host === "api.mymemory.translated.net") {
     const q = u.searchParams.get("q");
     return { responseStatus: 200, responseData: { translatedText: q === "Apple beats estimates" ? "Apple превзошла оценки" : "перевод: " + q } };
