@@ -1,15 +1,8 @@
-/* Terminal: panel layouts and functions.
-   DES/FA/ERN/EE/ANR/CN/HDS/DVD/OMON/RV/CF — companies, ECST/FXC/CORR/OPT/IPO — economies and cross-asset, HP/COMP — history and comparison, EQS — screener, IMAP — market map,
-   GC/CB/WIRP — bonds and rates, W/PORT/ALRT — personal, the live news feed.
-   Data: the bot server (/api/…, keys only there) and the bot's files on the site (stocks.json, rates.json).
-   Texts: i18n.js (TX), English by default. */
 (function(){
 'use strict';
 var T = window.TERM;
 if (!T) return;
 var $ = T.$, el = T.el, fmt = T.fmt, pct = T.pct, cls = T.cls, store = T.store, I = T.I, TX = T.TX;
-// a page from before T.wjson (its index.html still in the browser's cache for a few minutes after an update):
-// plain requests to the main address, so this file still works with it
 if (!T.wjson) T.wjson = function(path, o){
   o = o || {};
   var init = {cache: 'no-store', headers: o.headers || {}}, ac = window.AbortController ? new AbortController() : null, t = null;
@@ -26,7 +19,7 @@ function money(v, cur){
   cur = cur == null ? '$' : cur;
   if (v == null || isNaN(v)) return '—';
   var a = Math.abs(v), s = v < 0 ? '−' : '';
-  var u = I.scale(a, 2);   // $5.01T, $250B, $1.2M (Chinese: $5.01万亿, $2,500亿, $120万)
+  var u = I.scale(a, 2);
   if (u) return s + cur + fmt(u.x, u.rank === 4 ? 2 : u.x >= 100 ? 0 : 1) + u.s;
   return s + cur + fmt(a, a >= 1e4 ? 0 : 2);
 }
@@ -58,14 +51,10 @@ function api(path, opts){
   var key = path, c = apiCache[key];
   if (!opts.method && opts.ttl && c && Date.now() - c.at < opts.ttl * 1000) return Promise.resolve(c.v);
   var h = T.authHeaders();
-  // time limits for one try (T.wjson): a stalled connection on a throttled network is left for another one
-  // (a twin request after a few seconds); a change (POST) is sent once and waited for longer
-  // (a company card or a long history may take the server several seconds: the twin comes only after 8 s)
   var o = {headers: h, timeout: (opts.timeout || 15) * 1000, hedge: 8000};
   if (opts.method) { o.method = opts.method; h['Content-Type'] = 'application/json'; o.body = JSON.stringify(opts.body || {}); o.timeout = (opts.timeout || 30) * 1000 }
   var go = function(){ return T.wjson(path, o) };
   return go().catch(function(e){
-    // no lane of this address answered (blocked or down): if another address of the server works, repeat there once
     if (opts.method || !T.pickApi) throw e;
     return T.pickApi(true).then(function(b){ if (b && b !== base) return go(); throw e });
   }).then(function(d){
@@ -98,18 +87,14 @@ function table(cols, opts){
   return {t: t, body: tb};
 }
 function td(text, cl){ return el('td', cl || null, text) }
-// column headers from a list of names; `left` lists the indexes aligned left
 function cols(names, left){ return names.map(function(t, i){ return {t: t, l: (left || []).indexOf(i) >= 0} }) }
-// curve and central bank names: "name" is English, "name_ru" Russian (older data had only a Russian "name")
 function locName(x){ return I.dn(x) }
 function chg(c, d){ return el('td', 'num ' + cls(c), pct(c, d)) }
-// simple moving average: null until n points are available
 function sma(v, n){
   var out = [], sum = 0;
   for (var i = 0; i < v.length; i++) { sum += v[i]; if (i >= n) sum -= v[i - n]; out.push(i >= n - 1 ? sum / n : null) }
   return out;
 }
-// RSI with Wilder's smoothing (the standard definition)
 function rsi(v, n){
   var out = v.map(function(){ return null }), gain = 0, loss = 0;
   if (v.length <= n) return out;
@@ -148,7 +133,6 @@ function setTab(box, attr, val){
     if (on && box.scrollWidth > box.clientWidth) { var br = box.getBoundingClientRect(), xr = x.getBoundingClientRect(); box.scrollLeft += (xr.left - br.left) - (br.width - xr.width) / 2 }
   });
 }
-// a strip of tabs wider than its panel: the mouse wheel scrolls it sideways (the last tabs were out of reach)
 document.querySelectorAll('.ptabs').forEach(function(tb){
   tb.addEventListener('wheel', function(e){ if (tb.scrollWidth > tb.clientWidth && Math.abs(e.deltaY) > Math.abs(e.deltaX)) { tb.scrollLeft += e.deltaY; e.preventDefault() } }, {passive: false});
 });
@@ -186,8 +170,7 @@ var LAYOUTS = {
         pref:{'p-mkt':'a','p-chart':'b','p-hp':'b','p-imap':'b','p-eqs':'b','p-ana':'b','p-des':'c','p-gc':'c','p-my':'c','p-crypto':'c','p-news':'d','p-eco':'d','p-trd':'d',
               'p-tech':'b','p-mon':'b','p-map':'b','p-gex':'b','p-flow':'b'}}
 };
-var RENDER = {};   // pid → function to call when the panel appears on screen
-// every function: [code, name, panel, command]; the command opens the panel on that function
+var RENDER = {};
 var FN_ALL = [
   ['WEI', TX('fn_mkt'), 'p-mkt'], ['GP', TX('fn_chart'), 'p-chart'], ['CRYPTO', TX('fn_crypto'), 'p-crypto'], ['N', TX('fn_news'), 'p-news'],
   ['ECO', TX('fn_eco'), 'p-eco'], ['TRD', TX('m_trd'), 'p-trd'], ['DES', TX('m_des'), 'p-des'], ['HP', TX('m_hp'), 'p-hp'],
@@ -208,13 +191,10 @@ var FN_ALL = [
   ['HELP', TX('m_help'), null, 'HELP']
 ];
 var Layout = (function(){
-  // assign: the panel in each slot of each layout (null — a closed window); size: the sizes the user dragged;
-  // float: windows taken out of the grid, lying over it — {pid: {x, y, w, h, z}} in px inside #main
   var st = {mode: '1', assign: {}, size: {}, float: {}};
   try { var saved = JSON.parse(store('layout2') || 'null'); if (saved && saved.assign) st = saved } catch(e){}
   if (!st.size || typeof st.size !== 'object') st.size = {};
   if (!st.float || typeof st.float !== 'object') st.float = {};
-  // only known panels and plain numbers from storage
   Object.keys(st.float).forEach(function(pid){
     var f = st.float[pid], ok = PANELS.some(function(p){ return p.id === pid }) && f && ['x', 'y', 'w', 'h'].every(function(k){ return typeof f[k] === 'number' && isFinite(f[k]) });
     if (!ok || !(f.w > 0 && f.h > 0)) delete st.float[pid]; else f.z = typeof f.z === 'number' && isFinite(f.z) ? Math.min(f.z, 10000) : 30;
@@ -228,7 +208,6 @@ var Layout = (function(){
     return a;
   }
   function save(){ store('layout2', JSON.stringify(st)) }
-  // the layout's areas as rows of slot names: '"a b c" "a d e"' → [['a','b','c'], ['a','d','e']]
   function grid(L){ return L.areas.match(/"[^"]*"/g).map(function(r){ return r.slice(1, -1).trim().split(/\s+/) }) }
   function sizes(m){
     var s = st.size[m], g = grid(LAYOUTS[m]);
@@ -240,7 +219,6 @@ var Layout = (function(){
     clearGutters();
     [].slice.call(main.querySelectorAll('.slot-empty')).forEach(function(n){ n.remove() });
     if (T.isMobile()) {
-      // on a phone — one panel: keep the focused one, otherwise markets
       var shown = [].slice.call(document.querySelectorAll('.panel.show'));
       var keep = shown.length === 1 ? shown[0] : (document.querySelector('.panel.focus') || $('p-mkt'));
       document.querySelectorAll('.panel').forEach(function(p){ unfloatNode(p); p.classList.remove('off'); p.style.gridArea = ''; p.classList.toggle('show', p === keep) });
@@ -248,7 +226,6 @@ var Layout = (function(){
       return;
     }
     var m = mode(), L = LAYOUTS[m], a = assign(m), sz = sizes(m);
-    // a floating window is not also in the grid
     a.forEach(function(pid, i){ if (pid && st.float[pid]) a[i] = null });
     main.style.gridTemplateColumns = sz ? sz.cols.map(fr).join(' ') : L.cols;
     main.style.gridTemplateRows = sz ? sz.rows.map(fr).join(' ') : L.rows;
@@ -266,13 +243,10 @@ var Layout = (function(){
     document.querySelectorAll('#lay button[data-l]').forEach(function(b){ b.classList.toggle('on', b.dataset.l === st.mode) });
     a.concat(Object.keys(st.float)).forEach(function(pid){ if (pid && RENDER[pid]) try { RENDER[pid]() } catch(e){ console.error(e) } });
     drawGutters();
-    // canvases and charts size themselves on 'resize'; this one comes from here, so it must not lay out again
-    // (it did: the layout re-applied itself ~5 times a second and redrew every canvas each time)
     clearTimeout(apply._t); apply._t = setTimeout(sizeChanged, 60);
   }
   function sizeChanged(){ Layout._internal = true; try { window.dispatchEvent(new Event('resize')) } finally { Layout._internal = false } }
 
-  // a closed window: an empty cell that offers a function (a command typed now also opens here)
   function emptySlot(s, allEmpty){
     var d = el('div', 'slot-empty'); d.style.gridArea = s; d.dataset.slot = s;
     d.appendChild(el('div', 'h', TX('empty_slot')));
@@ -285,7 +259,6 @@ var Layout = (function(){
     return d;
   }
 
-  // borders between panels: drag to resize, double-click for the layout's own sizes
   function clearGutters(){ gut.forEach(function(g){ g.remove() }); gut = [] }
   function drawGutters(){
     clearGutters();
@@ -297,7 +270,6 @@ var Layout = (function(){
     var x0 = [], y0 = [], acc = px;
     cw.forEach(function(w){ x0.push(acc); acc += w + gx });
     acc = py; rh.forEach(function(h){ y0.push(acc); acc += h + gy });
-    // a border runs only where two different panels meet (in "a b c" / "a d e" there is none across a)
     function segments(n, differs){ var out = [], from = -1; for (var j = 0; j <= n; j++) { if (j < n && differs(j)) { if (from < 0) from = j } else if (from >= 0) { out.push([from, j - 1]); from = -1 } } return out }
     for (var k = 0; k < cw.length - 1; k++) segments(g.length, function(j){ return g[j][k] !== g[j][k + 1] }).forEach(function(sg){
       add('v', k, x0[k + 1] - gx / 2, y0[sg[0]], y0[sg[1]] + rh[sg[1]] - y0[sg[0]]);
@@ -328,13 +300,13 @@ var Layout = (function(){
       var pair = start[k] + start[k + 1], x = Math.max(MIN, Math.min(pair - MIN, start[k] + (v ? ev.clientX : ev.clientY) - pos0));
       now = start.slice(); now[k] = x; now[k + 1] = pair - x;
       main.style[v ? 'gridTemplateColumns' : 'gridTemplateRows'] = now.map(fr).join(' ');
-      if (!t) t = setTimeout(function(){ t = 0; sizeChanged() }, 120);   // charts follow while dragging
+      if (!t) t = setTimeout(function(){ t = 0; sizeChanged() }, 120);
     }
     function up(){
       d.removeEventListener('pointermove', move); d.removeEventListener('pointerup', up); d.removeEventListener('pointercancel', up);
       document.body.classList.remove('resizing-v', 'resizing-h');
       d.classList.remove('drag');
-      if (!moved) return;   // a click (or the first half of a double-click): the border stays where it is
+      if (!moved) return;
       st.size[mode()] = {cols: v ? now : cols, rows: v ? rows : now};
       save(); drawGutters(); sizeChanged();
     }
@@ -344,11 +316,10 @@ var Layout = (function(){
   /* ---------- floating windows: over the grid, moved by the title, sized by the corner ---------- */
   var topZ = 30;
   Object.keys(st.float).forEach(function(pid){ topZ = Math.max(topZ, st.float[pid].z || 30) });
-  // keep a window inside #main (the browser window may have become smaller)
   function fit(f){
     var main = $('main'), W = main.clientWidth, H = main.clientHeight;
     f.w = Math.max(Math.min(300, W), Math.min(W, f.w)); f.h = Math.max(Math.min(200, H), Math.min(H, f.h));
-    f.x = Math.max(0, Math.min(W - f.w, f.x)); f.y = Math.max(0, Math.min(H - f.h, f.y));   // wholly inside: no window is lost off-screen
+    f.x = Math.max(0, Math.min(W - f.w, f.x)); f.y = Math.max(0, Math.min(H - f.h, f.y));
     return f;
   }
   function floatNode(node, f){
@@ -366,7 +337,6 @@ var Layout = (function(){
     var f = st.float[pid], node = $(pid); if (!f || !node) return;
     if ((f.z || 0) < topZ) { f.z = ++topZ; node.style.zIndex = f.z; save() }
   }
-  // take a window out of the grid: it keeps its size and lies a little lower and to the right of where it was
   function float(pid){
     if (T.isMobile()) return;
     var node = $(pid), main = $('main'); if (!node || st.float[pid]) return;
@@ -375,7 +345,6 @@ var Layout = (function(){
     f.z = ++topZ; st.float[pid] = fit(f);
     save(); apply(); focus(pid);
   }
-  // back into the grid: its usual window, or an empty one
   function dock(pid, slot){
     if (!st.float[pid]) return;
     delete st.float[pid];
@@ -393,18 +362,16 @@ var Layout = (function(){
   }
   function place(pid, slot){
     if (T.isMobile()) return;
-    // a floating window opened again: to the front (a window chosen for a grid cell goes back into the grid)
     if (st.float[pid] && !slot) { raise(pid); focus(pid); if (RENDER[pid]) RENDER[pid](); return }
     if (st.float[pid]) { delete st.float[pid]; unfloatNode($(pid)) }
     var m = mode(), L = LAYOUTS[m], a = assign(m);
     if (a.indexOf(pid) >= 0 && !slot) { focus(pid); if (RENDER[pid]) RENDER[pid](); return }
-    // a closed window is filled first: the panel's usual place if it is empty, then the one clicked last, then any
     var empty = L.slots.filter(function(s, i){ return !a[i] });
     var target = slot || (empty.length ? [L.pref[pid], activeSlot].filter(function(s){ return empty.indexOf(s) >= 0 })[0] || empty[0]
       : L.pref[pid] || activeSlot || L.slots[1]);
     var ti = L.slots.indexOf(target); if (ti < 0) ti = 1;
     var cur = a.indexOf(pid);
-    if (cur >= 0) a[cur] = a[ti];   // the panel is already on screen — swap places (or leave its old window empty)
+    if (cur >= 0) a[cur] = a[ti];
     a[ti] = pid;
     save(); apply(); focus(pid);
     if (pid === 'p-chart' && !$('ownc')) T.openChart(T.curChart(), null, true);
@@ -432,7 +399,6 @@ var Layout = (function(){
 })();
 window.Layout = Layout;
 
-// a menu of every function; the chosen one opens in this window (slot)
 function pickFn(anchor, slot){
   var items = FN_ALL.filter(function(f){ return f[2] }).map(function(f){ return {code: f[0], name: f[1], pid: f[2], cmd: f[3]} });
   openMenu(anchor, items, function(it){
@@ -441,7 +407,6 @@ function pickFn(anchor, slot){
   }, TX('pick_head'));
 }
 
-// the ▾ button in every panel title: put any function here
 function openMenu(anchor, items, onPick, head){
   closeMenu();
   var m = el('div', 'menu'); m.id = 'fnmenu';
@@ -463,11 +428,9 @@ document.querySelectorAll('.panel').forEach(function(p){
   var code = ph.querySelector('.code');
   if (code && code.nextSibling) ph.insertBefore(b, code.nextSibling); else ph.appendChild(b);
   b.onclick = function(e){ e.stopPropagation(); pickFn(b, p.dataset.slot) };
-  // ⧉ — lift this window over the others (desktop); ▣ — put it back into the grid
   var fl = el('button', 'pfloat', '⧉'); fl.type = 'button'; fl.title = TX('float_t');
   fl.onclick = function(e){ e.stopPropagation(); if (Layout.isFloat(p.id)) Layout.dock(p.id); else Layout.float(p.id) };
   ph.appendChild(fl);
-  // ✕ — close this window (desktop)
   var x = el('button', 'pclose', '✕'); x.type = 'button'; x.title = TX('close_t');
   x.onclick = function(e){ e.stopPropagation(); Layout.close(p.id) };
   ph.appendChild(x);
@@ -485,7 +448,6 @@ document.querySelectorAll('.panel').forEach(function(p){
   });
   p.addEventListener('pointerdown', function(){ if (Layout.isFloat(p.id)) Layout.raise(p.id) }, true);
   p.addEventListener('mousedown', function(){ if (p.dataset.slot) Layout.setActive(p.dataset.slot) });
-  // a floating window: drag its title to move it (a double-click on the title puts it back into the grid)
   ph.addEventListener('pointerdown', function(e){
     if (!Layout.isFloat(p.id) || e.button !== 0 || e.target.closest('button, input, select, a, textarea, label')) return;
     var f = Layout.floatState(p.id), x0 = e.clientX, y0 = e.clientY;
@@ -495,7 +457,6 @@ document.querySelectorAll('.panel').forEach(function(p){
     document.addEventListener('pointermove', move); document.addEventListener('pointerup', up);
   });
   ph.addEventListener('dblclick', function(e){ if (Layout.isFloat(p.id) && !e.target.closest('button, input, select, a')) Layout.dock(p.id) });
-  // drag the title onto another window to swap the two (desktop)
   ph.addEventListener('pointerdown', function(e){
     if (T.isMobile() || e.button !== 0 || !p.dataset.slot || e.target.closest('button, input, select, a, textarea, label')) return;
     var x0 = e.clientX, y0 = e.clientY, dragging = false, over = null;
@@ -529,13 +490,12 @@ document.querySelectorAll('#lay button').forEach(function(b){
     else if (b.dataset.act === 'reset') Layout.reset();
   };
 });
-// the "⇄" buttons in the calendar and trades switch the function in the same panel
 document.querySelectorAll('.ph .swap').forEach(function(b){
   b.onclick = function(e){ e.stopPropagation(); var p = b.closest('.panel'); if (!T.isMobile() && p.dataset.slot) Layout.place(b.dataset.to, p.dataset.slot); else T.show(b.dataset.to) };
 });
 var rzT = null, rzReal = false;
 window.addEventListener('resize', function(){
-  if (!Layout._internal) rzReal = true;   // the window really changed (not the event the layout sends itself)
+  if (!Layout._internal) rzReal = true;
   clearTimeout(rzT); rzT = setTimeout(function(){
     var was = Layout._mob, real = rzReal; Layout._mob = T.isMobile(); rzReal = false;
     if (real && (was !== Layout._mob || !Layout._mob)) { Layout.apply() }
@@ -545,7 +505,6 @@ window.addEventListener('resize', function(){
   }, 150);
 });
 
-// the mobile menu of all functions
 (function(){
   var list = $('fnlist');
   var FN = FN_ALL;
@@ -557,7 +516,6 @@ window.addEventListener('resize', function(){
   $('b-more').onclick = function(){ T.openOverlay('ov-fn') };
 })();
 
-// the quick functions under the command line (desktop); Alt+1…9 opens the first nine
 (function(){
   var bar = $('fbar'); if (!bar) return;
   var FAV = [['WEI', 'fn_mkt'], ['GP', 'fn_chart'], ['N', 'fn_news'], ['ECO', 'fn_eco'], ['TECH', 'fn_tech'], ['GEX', 'm_gex'], ['LVL', 'm_lvl'], ['VOLS', 'm_vols'],
@@ -581,7 +539,7 @@ window.addEventListener('resize', function(){
 
 /* ======================= DES: company ======================= */
 var des = {sym: '', tab: 'DES', data: null, faMode: 'q', loadingSym: ''};
-var MOEX_TABS = {};   // tabs that also work for Moscow Exchange shares (registered by other modules)
+var MOEX_TABS = {};
 function openDes(sym, tab){
   sym = upSym(sym || des.sym);
   if (tab) des.tab = tab;
@@ -601,14 +559,12 @@ function loadDes(){
     des.data = d; des.sym = (d.s || sym); renderDes();
   }).catch(function(e){
     if (des.sym !== sym) return;
-    // the server is unreachable: the ~100 largest US companies also have a daily copy on the site itself
     siteCompany(sym).then(function(d){
       if (des.sym !== sym) return;
       d.offlineWhy = e && e.message || ''; des.data = d; renderDes();
     }).catch(function(){ errBox(box, e) });
   });
 }
-// a company card from the files the news bot publishes (docs/co, docs/fin, docs/opt, stocks.json) — no server needed
 function siteCompany(sym){
   if (!/^[A-Z][A-Z0-9.\-]{0,9}$/.test(sym)) return Promise.reject(new Error('no file'));
   var opt = function(name){ return page(name, 600).catch(function(){ return null }) };
@@ -636,7 +592,6 @@ function renderDes(){
   (DES_TABS[des.tab] || desMain)(box, d);
   if (des.scrollTo) { var target = $(des.scrollTo); des.scrollTo = null; if (target) target.scrollIntoView({block: 'start'}) }
 }
-// the company tabs; tech.js adds GE, CACS and CRPR
 var DES_TABS = {DES: desMain, FA: desFa, ERN: desErn, EE: desEe, ANR: desAnr, CN: desCn, HDS: desHds, DVD: desDvd, OMON: desOmon, RV: desRv, CF: desCf};
 function kv(box, pairs){
   var g = el('div', 'kv');
@@ -726,7 +681,6 @@ function desMain(box, d){
   }
   if (d.errors && d.errors.length) box.appendChild(el('div', 'note', TX('part_fail') + d.errors.join('; ')));
 }
-// price target: the analysts' low–high range, the mean and the current price
 function targetBar(t, px){
   var r = el('div', 'r52'), lo = Math.min(t.low, px), hi = Math.max(t.high, px), w = (hi - lo) || 1;
   r.appendChild(el('div', null, TX('pt_head', t.n || '—') + ' · ' + TX('pt_mean').toLowerCase() + ' $' + num(t.mean, 2) + ' (' + pct((t.mean / px - 1) * 100, 1) + ')'));
@@ -870,7 +824,6 @@ function desCf(box, d){
   box.appendChild(tb.t);
 }
 function svgBars(rows, keys, colors, h){
-  // rows: [{label, values:[...]}] — grouped bars
   var NS = 'http://www.w3.org/2000/svg', W = 600, H = h || 130, pad = 24;
   var s = document.createElementNS(NS, 'svg'); s.setAttribute('viewBox', '0 0 ' + W + ' ' + H); s.setAttribute('class', 'gc-svg'); s.style.height = H + 'px';
   var vals = []; rows.forEach(function(r){ r.values.forEach(function(v){ if (v != null) vals.push(v) }) });
@@ -988,8 +941,6 @@ function desAnr(box, d){
   });
   box.appendChild(tb.t);
 }
-// Russian, Chinese and Arabic readers: headlines the server could not translate are translated right in the browser
-// (translators often block Cloudflare servers)
 var trCache = {}, TR_LANG = {ru: 'ru', zh: 'zh-CN', ar: 'ar'}[I.lang];
 try { trCache = JSON.parse(sessionStorage.getItem('tr_cache') || '{}') || {} } catch(e){}
 function translateHere(text){
@@ -1094,7 +1045,6 @@ function renderHP(){
     hp.data = h; drawHP(box, h);
   }).catch(function(e){ errBox(box, e) });
 }
-// intraday bars (1D, 5D): Moscow time instead of a date
 function isIntra(r){ return r === '1d' || r === '5d' }
 function mskTime(t, withDay){
   var x = new Date((t + 3 * 3600) * 1000).toISOString();
@@ -1121,7 +1071,6 @@ function drawHP(box, h){
   csv.onclick = function(){ if (!downloadText(h.s.replace(/[^A-Za-z0-9_.-]/g, '_') + '_' + (h.range || hp.range) + '.csv', csvText())) alert(TX('save_fail')) };
   var cp = el('button', 'chipbtn', TX('copy')); cp.title = TX('copy_t');
   cp.onclick = function(){ copyText(csvText().replace(/,/g, '\t')).then(function(){ cp.textContent = TX('copied') }, function(e){ cp.textContent = '✕ ' + e.message }) };
-  // technicals: moving averages and RSI(14) — the classic trend and momentum gauges
   var s50 = sma(h.c, 50), s200 = sma(h.c, 200), r14 = rsi(h.c, 14), rNow = r14[n - 1];
   var lastS200 = s200[n - 1];
   if (rNow != null) {
@@ -1178,7 +1127,6 @@ function renderComp(box){
 }
 RENDER['p-hp'] = function(){ if (hp.tab === 'COMP' ? hp.comp.length : hp.sym) { if (!$('hp-body').querySelector('.cv canvas')) renderHP() } };
 
-// lines on a canvas: over time, in % from the start (comparison) or in prices
 var canvases = [];
 function drawLines(box, series, opts){
   box.__draw = function(){ paintLines(box, series, opts) };
@@ -1242,7 +1190,6 @@ var EQS_T = TX('eqs_cols');
 var EQS_COLS = ['s', 'n', 'sec', 'px', 'ch', 'mcap', 'pe', 'fpe', 'dy', 'revg', 'roe', 'rytd', 'r52', 'beta'].map(function(k){
   return {k: k, t: EQS_T[k], sort: 1, l: k === 'n' || k === 'sec' ? 1 : 0, title: k === 'revg' ? TX('revg_t') : null};
 });
-// presets can be named in either language: EQS GAINERS, EQS ЛИДЕРЫ
 var EQS_ALIAS = {GAINERS: 'leaders', LEADERS: 'leaders', 'ЛИДЕРЫ': 'leaders', LOSERS: 'losers', 'АУТСАЙДЕРЫ': 'losers', VALUE: 'value', CHEAP: 'value',
   'ДЕШЁВЫЕ': 'value', 'ДЕШЕВЫЕ': 'value', DIV: 'div', DIVIDENDS: 'div', 'ДИВИДЕНДЫ': 'div', GROWTH: 'growth', 'РОСТ': 'growth', YEAR: 'year', 'ГОД': 'year', ALL: '', 'ВСЕ': ''};
 function openEqs(preset){
@@ -1279,7 +1226,6 @@ function eqsRegionTabs(box){
   [['US', false], ['RU', true]].forEach(function(x){ var b = el('button', eqsRu.on === x[1] ? 'on' : null, TX(x[1] ? 'eqs_ru' : 'eqs_us')); b.onclick = function(){ eqsRu.on = x[1]; renderEqs() }; t.appendChild(b) });
   t.appendChild(el('span', 'sp')); box.appendChild(t);
 }
-// EQS for the Moscow Exchange: all shares of the main board from docs/moex.json
 function drawEqsRu(box, d){
   clear(box); eqsRegionTabs(box);
   var rows = (d.rows || []).map(function(r){ return {s: r.s, n: I.ru ? r.n : r.en, sec: I.sector(r.sec || 'Other'), px: r.px, ch: r.ch, val: r.val, cap: r.cap, w: r.w} });
@@ -1396,7 +1342,6 @@ function squarify(items, x, y, w, h){
 }
 function renderImap(){
   var box = $('imap');
-  // the Moscow Exchange has only today's change: the other periods are for US stocks
   $('imap-tabs').querySelectorAll('button[data-m]').forEach(function(b){ b.style.display = imapRegion === 'RU' && b.dataset.m !== 'ch' ? 'none' : '' });
   if (imapRegion === 'RU') {
     return page('moex.json', 120).then(function(d){
@@ -1452,7 +1397,7 @@ RENDER['p-imap'] = function(){ setTimeout(renderImap, 30) };
 var gc = {tab: 'GC', sel: ['US', 'DE', 'UK', 'JP']};
 try { var sg = JSON.parse(store('gc_sel') || 'null'); if (Array.isArray(sg) && sg.length) gc.sel = sg } catch(e){}
 var GC_COL = {US: '#6ea8ff', DE: '#f2cc60', UK: '#a78bfa', JP: '#ef5350', RU: '#2fbf71', EA: '#f2cc60', CA: '#ff8c5a', AU: '#56c1d6', CH: '#e0e0e0'};
-var GC_TABS = {};   // GC, CB, WIRP here; mon.js adds WB, BTMM, MMR, SRCH
+var GC_TABS = {};
 tabs($('gc-tabs'), 't', function(t){ gc.tab = t; renderGc() });
 function openGc(tab){ gc.tab = tab || 'GC'; setTab($('gc-tabs'), 't', gc.tab); T.show('p-gc'); renderGc() }
 function renderGc(){
@@ -1480,7 +1425,6 @@ function drawGc(box, d){
   var draw = function(){ drawCurves(wrap, sel.map(function(c){ return {c: c, cv: curves[c]} }), single) };
   wrap.__draw = draw; if (canvases.indexOf(wrap) < 0) canvases.push(wrap); draw();
   if (single) box.appendChild(el('div', 'note', TX('gc_note', dmy(single.date), single.md)));
-  // table: term × country
   var labels = [];
   sel.forEach(function(c){ curves[c].t.forEach(function(t, i){ if (!labels.some(function(x){ return x[0] === t })) labels.push([t, curves[c].x[i]]) }) });
   labels.sort(function(a, b){ return a[1] - b[1] });
@@ -1630,7 +1574,6 @@ function drawEcst(box){
       box.appendChild(el('div', 'note', '* ' + TX('fcst_w')));
       return;
     }
-    // a country outside the main list: this year's values from the IMF map data (MAP ECO)
     var mp = d.map || {};
     if (q && code.length === 3 && Object.keys(d.ind || {}).some(function(k){ return mp[k] && mp[k][code] != null })) {
       var back2 = el('div', 'ptabs'), bb2 = el('button', null, TX('ecst_back')); bb2.onclick = function(){ ana.country = ''; drawEcst(box) }; back2.appendChild(bb2);
@@ -1657,7 +1600,6 @@ function drawEcst(box){
     box.appendChild(el('div', 'note', TX('ecst_note')));
   }).catch(function(){ clear(box).appendChild(el('div', 'empty', TX('ecst_wait'))) });
 }
-// USD per one unit of each currency, and its change today, from the terminal's quotes
 var FX_CUR = [['USD', null, 0], ['EUR', 'EUR/USD', 0], ['GBP', 'GBPUSD', 0], ['JPY', 'USDJPY', 1], ['CHF', 'USDCHF', 1], ['CNY', 'USDCNY', 1], ['RUB', 'USD/RUB', 1]];
 function drawFxc(box){
   $('ana-title').textContent = TX('fxc_title');
@@ -1693,7 +1635,6 @@ function pearson(a, b){
   for (var j = 0; j < n; j++) { var x = a[j] - ma, y = b[j] - mb; sab += x * y; saa += x * x; sbb += y * y }
   return saa && sbb ? sab / Math.sqrt(saa * sbb) : null;
 }
-// daily returns by calendar date (markets with different holidays are matched on common days)
 function dailyReturns(h){
   var out = {}, prev = null;
   for (var i = 0; i < h.c.length; i++) {
@@ -1725,7 +1666,7 @@ function drawCorr(box){
   if (syms.length < 2) { box.appendChild(el('div', 'empty', TX('corr_few'))); return }
   if (!T.api()) return noApi(box, TX('m_corr'));
   var note = el('div', 'loading', TX('loading_d')); box.appendChild(note);
-  var token = ana.corrToken = {};   // a newer draw (the panel can be drawn twice when it opens) wins
+  var token = ana.corrToken = {};
   var stale = function(){ return token !== ana.corrToken || ana.tab !== 'CORR' || range !== ana.corrRange || syms.join() !== ana.corr.join() };
   api('/api/corr?s=' + encodeURIComponent(syms.join(',')) + '&r=' + range, {ttl: 600, timeout: 40, allowError: true}).then(function(d){
     if (!d || !d.m) throw new Error((d && d.error) || 'old server');
@@ -1802,12 +1743,11 @@ function drawIpo(box){
     box.appendChild(tb.t);
   }).catch(function(e){ errBox(box, e) });
 }
-RENDER['p-ana'] = function(){ if (!$('ana-body').querySelector('table, .loading')) renderAna() };   // not again while it loads
+RENDER['p-ana'] = function(){ if (!$('ana-body').querySelector('table, .loading')) renderAna() };
 
 /* ======================= W / PORT / ALRT ======================= */
 var My = (function(){
   var st = {tab: 'W', w: [], p: [], alerts: [], server: false, synced: false, quotes: {}, timer: null, msg: ''};
-  // PAPR: a practice account with virtual dollars, kept only in this browser
   var PAPER_START = 100000, paper = null;
   function paperLoad(){
     try { paper = JSON.parse(store('my_paper') || 'null') } catch(e){ paper = null }
@@ -1823,7 +1763,7 @@ var My = (function(){
     saveLocal();
     if (!st.server) return;
     clearTimeout(pushT);
-    st.pending = (st.pending || 0) + 1;   // until changes reach the server, its old copy does not overwrite them
+    st.pending = (st.pending || 0) + 1;
     pushT = setTimeout(function(){
       api('/api/me', {method: 'POST', body: {w: st.w, p: st.p}}).then(function(d){ if (d.ok && st.pending === 1) { st.w = d.w; st.p = d.p; saveLocal(); render(true) } })
         .catch(function(e){ st.msg = TX('not_saved') + e.message; render() })
@@ -1839,7 +1779,6 @@ var My = (function(){
       if (st.pending) return;
       var lw = st.w.slice(), lp = st.p.slice();
       st.w = d.w || []; st.p = d.p || [];
-      // first sign-in: move over what was saved only in this browser
       if (!st.synced && (lw.some(function(s){ return st.w.indexOf(s) < 0 }) || (!st.p.length && lp.length))) {
         lw.forEach(function(s){ if (st.w.indexOf(s) < 0) st.w.push(s) });
         if (!st.p.length) st.p = lp;
@@ -1854,7 +1793,6 @@ var My = (function(){
     if (!s.length || !T.api()) return Promise.resolve();
     return api('/api/quote?s=' + encodeURIComponent(s.join(','))).then(function(d){
       var q = d.quotes || {};
-      // server keys: AAPL, BTC, MOEX:SBER, Brent — matched with what is in the list
       Object.keys(q).forEach(function(k){ st.quotes[k] = q[k] });
     }).catch(function(){});
   }
@@ -1879,12 +1817,10 @@ var My = (function(){
     $('my-code').textContent = st.tab;
     $('my-sub').textContent = TX(st.server ? 'shared' : 'local_only');
     if (quiet && box.contains(document.activeElement) && document.activeElement.tagName === 'INPUT') { patchQuotes(box); return }
-    // what the person started typing is not lost when prices refresh
     var drafts = {}, focused = document.activeElement && box.contains(document.activeElement) ? document.activeElement.dataset.k : null;
     if (!st.noDraft) box.querySelectorAll('input[data-k]').forEach(function(i){ if (i.value) drafts[i.dataset.k] = i.value });
     st.noDraft = false;
     clear(box);
-    // an error stays visible for 8 seconds even if prices refresh and the panel redraws meanwhile
     if (st.msg) {
       if (st.msg !== st.msgShown) { st.msgShown = st.msg; st.msgAt = Date.now() }
       if (Date.now() - st.msgAt < 8000) box.appendChild(el('div', 'err', st.msg)); else st.msg = st.msgShown = '';
@@ -2022,7 +1958,6 @@ var My = (function(){
   }
   document.addEventListener('visibilitychange', function(){ if (!document.hidden) loop() });
   setTimeout(function(){ sync().then(loop) }, 1500);
-  // PAPR: buy and sell at the last price with virtual money; no shorts, no fees, no leverage
   function renderPaper(box){
     var eq = paper.cash, rows = [];
     Object.keys(paper.pos).forEach(function(s){
@@ -2079,7 +2014,6 @@ var My = (function(){
     api('/api/quote?s=' + encodeURIComponent(sym)).then(function(d){
       var qs = d.quotes || {}, key = Object.keys(qs)[0], x = key ? qs[key] : null;
       if (!x || !(x.px > 0)) throw new Error(TX('pp_noquote', sym));
-      // dollars only: an index, a currency pair or a Moscow share has no dollar price to trade at
       if (x.cur !== '$') throw new Error(TX('pp_usd_only'));
       st.quotes[key] = x;
       var usd = /^\$/.test(a) || /\$$/.test(a), n = parseFloat(a.replace(/\$/g, ''));
@@ -2149,9 +2083,6 @@ function mergeLive(d){
 window.onData = function(d){ return mergeLive(d) };
 function pollLive(){
   if (!T.api() || document.hidden) return;
-  // only the stories that are newer than the data on screen (the whole feed is ~80 KB and never gets through a
-  // throttled connection — it would stall the quotes too); the stories already received are kept and merged
-  // (older stories than ~20 min are on the site already, also when the screen still shows the browser's old copy)
   var d0 = T.data(), since = (live && live.updated) || (d0 && d0.updated) || '', floor = Date.now() - 20 * 60e3;
   if (!(Date.parse(since) > floor)) since = new Date(floor).toISOString();
   T.wjson('/api/live?since=' + encodeURIComponent(since), {timeout: 8000, hedge: 3000}).then(function(l){
@@ -2208,10 +2139,8 @@ C.ERNS = C.EVTS; C['ОТЧЁТЫ'] = C['ОТЧЕТЫ'] = C.EVTS;
 C.ECO = function(){ T.show('p-eco'); ecoTab = 'macro'; setTab($('eco-tabs'), 't', 'macro'); renderEarn() };
 C.CAL = C.ECO; C['КАЛЕНДАРЬ'] = C.ECO;
 
-// a ticker typed without a function: the chart, and if the company card is on screen it switches too
 window.onSymbol = function(s){ if (isStock(s) && visible('p-des') && T.api()) { des.tab = des.tab || 'DES'; des.sym = upSym(s); des.data = null; loadDes() } };
 
-// on a phone the main script shows the panel — here we only draw its content
 window.onPanelShow = function(pid){ if (RENDER[pid]) RENDER[pid]() };
 
 /* ======================= for map.js, mon.js, tech.js ======================= */

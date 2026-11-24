@@ -1,8 +1,3 @@
-"""
-Картинка «Рынки» для Telegram: сетка карточек с ценой, изменением и графиком.
-Нужен matplotlib (на GitHub ставится автоматически). Если его нет — бот просто
-не присылает картинку, всё остальное работает.
-"""
 from __future__ import annotations
 
 import io
@@ -19,7 +14,6 @@ DOWN = "#ef5350"
 FLAT = "#9aa4b5"
 
 
-# Chinese names of the instruments on the picture (by their "short" key)
 NAMES_ZH = {"S&P": "标普500指数", "Nasdaq": "纳斯达克指数", "Brent": "布伦特原油", "Золото": "黄金", "EUR/USD": "欧元/美元",
             "UST10": "美国10年期国债收益率", "BTC": "比特币", "IMOEX": "莫斯科交易所指数",
             "USD/RUB": "美元/卢布（俄央行）", "CNY/RUB": "人民币/卢布（俄央行）"}
@@ -28,7 +22,6 @@ CJK_FONTS = ("Noto Sans CJK SC", "Noto Sans SC", "Source Han Sans SC", "Microsof
 
 
 def cjk_font():
-    """A font with Chinese characters installed on this machine, or None."""
     try:
         from matplotlib import font_manager
         have = {f.name for f in font_manager.fontManager.ttflist}
@@ -38,8 +31,6 @@ def cjk_font():
 
 
 def picture_lang(lang):
-    """The language the picture is drawn in. matplotlib cannot join Arabic letters, and Chinese needs a CJK font:
-    without one the picture stays English (the caption under it is still in the reader's language)."""
     if lang == "ar" or (lang == "zh" and not cjk_font()):
         return "en"
     return lang if lang in ("en", "ru", "zh") else "en"
@@ -67,7 +58,6 @@ def render_market_png(quotes, now=None, lang="en") -> bytes:
     plt.rcParams["font.family"] = [cjk_font(), "DejaVu Sans"] if lang == "zh" else ["DejaVu Sans"]
     fig = plt.figure(figsize=(W, H), dpi=110, facecolor=BG)
 
-    # заголовок
     fig.text(pad / W, 1 - 0.50 / H, i18n.t(lang, "chart_title"), color=TEXT, fontsize=26, fontweight="bold", va="center")
     if lang == "zh":
         stamp = f"{now.year}年{i18n.month(lang, now.month)}{now.day}日 {now:%H:%M}（{i18n.t(lang, 'tz')}）"
@@ -107,7 +97,7 @@ def render_market_png(quotes, now=None, lang="en") -> bytes:
         if len(vals) >= 2:
             ax = fig.add_axes([(x0 + 0.18) / W, (y0 + 0.14) / H, (cw - 0.36) / W, (ch - 1.25) / H],
                               facecolor="none")
-            xs = range(len(vals))  # по индексу: ночи и выходные без «ступенек»
+            xs = range(len(vals))
             lo, hi = min(vals), max(vals)
             span = (hi - lo) or abs(hi) * 0.01 or 1
             ax.plot(xs, vals, color=color, lw=2.0, solid_capstyle="round")

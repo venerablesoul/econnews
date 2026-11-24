@@ -1,14 +1,4 @@
 #!/usr/bin/env python3
-"""
-The terminal when *.workers.dev is blocked on the viewer's network (several Russian providers reset such connections).
-
-1. The main address is blocked, the PHP relay (deploy/hosting/api/index.php, run by `php -S` in front of the local
-   test server) works: quotes, the company card and the search must come through the relay.
-2. Every address is down: the company card falls back to the copy on the site (docs/co, docs/fin, stocks.json).
-3. The relay itself: only /api/... is passed, CORS headers are there, the viewer's headers reach the server.
-
-Run: python3 tests/e2e_failover.py   (needs php, node and Playwright, like tests/e2e_terminal.py)
-"""
 import json
 import os
 import shutil
@@ -50,7 +40,6 @@ def main():
     api = f"http://127.0.0.1:{wport}"
     rproc, rport = start_relay(api)
     relay = f"http://127.0.0.1:{rport}"
-    # the site files the company card falls back to (the bot keeps them on gh-pages, not in main)
     fx = {n: urllib.request.urlopen(f"{api}/__fx/{n}").read() for n in ("data.json", "stocks.json", "rates.json", "co/AAPL.json", "opt/AAPL.json")}
     check = E.check
     try:
@@ -83,7 +72,7 @@ def main():
                 def handle(route):
                     url = route.request.url
                     if url.startswith(BLOCKED) or any(b in url for b in E.BLOCK):
-                        return route.abort("connectionreset")   # what the provider does to *.workers.dev
+                        return route.abort("connectionreset")
                     u = urllib.parse.urlparse(url)
                     if u.netloc == f"127.0.0.1:{sport}":
                         if u.path == "/config.json":

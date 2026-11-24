@@ -1,21 +1,3 @@
-"""
-Dealer positioning from option chains — the terminal's GEX, VOLS, GRK and GEXH functions and the levels in the
-bot's pre-market brief.
-
-Input: a normalized chain (see `option()` below) from options.py (Cboe or Yahoo: US stocks, ETFs, the SPX and NDX
-indexes) or deribit.py (BTC and ETH options). Greeks are computed with Black-Scholes from each option's implied
-volatility, so every source is treated alike.
-
-The public convention used by most GEX services: dealers are assumed to be long the calls and short the puts that
-the public trades, so call gamma counts +, put gamma −. It is an estimate from open interest, not real positions.
-  GEX   = gamma × open interest × contract size × spot² × 1%   — $ of delta dealers trade per 1% move
-  vanna = Δdelta per 1 volatility point × OI × size × spot      — $ of delta when volatility moves 1 point
-  charm = Δdelta per day × OI × size × spot                     — $ of delta that one day of time decay adds
-
-Output: docs/gex/<SYM>.json (the snapshot the terminal draws) and docs/gex/hist/<SYM>.json (intraday snapshots of
-the last sessions for the interval map, and one line per day for the history).
-Python standard library only.
-"""
 from __future__ import annotations
 
 import json
@@ -28,9 +10,9 @@ GEX_DIR = os.path.join(HERE, "docs", "gex")
 HIST_DIR = os.path.join(GEX_DIR, "hist")
 
 SQ2PI = math.sqrt(2 * math.pi)
-MIN_T = 2 / 24 / 365          # an option that expires in less than 2 hours counts as 2 hours (gamma would explode)
-MAX_DTE = 120                 # exposures: expiries within ~4 months carry almost all of the gamma
-IV_MIN, IV_MAX = 0.01, 5.0    # implied volatility outside this range is a broken quote
+MIN_T = 2 / 24 / 365
+MAX_DTE = 120
+IV_MIN, IV_MAX = 0.01, 5.0
 
 
 def npdf(x):
@@ -42,8 +24,6 @@ def ncdf(x):
 
 
 def greeks(S, K, T, sig, r=0.0):
-    """Black-Scholes greeks without dividends. T in years, sig a fraction (0.25 = 25%).
-    Returns None for impossible inputs. Theta and charm per calendar day, vega and vanna per 1 volatility point."""
     if None in (S, K, T, sig) or not (S > 0 and K > 0 and T > 0 and sig > 0):
         return None
     sq = math.sqrt(T)
@@ -72,7 +52,6 @@ def gamma_only(S, K, T, sig, r=0.0):
 
 
 def sig(x, n=4):
-    """Rounds to n significant digits (keeps the files small)."""
     if x is None or x != x or x in (float("inf"), float("-inf")):
         return None
     if x == 0:
@@ -85,8 +64,6 @@ def r2(x):
 
 
 def option(exp, cp, k, T, oi=0, iv=None, vol=0, bid=None, ask=None, last=None, S=None):
-    """One option of a normalized chain. exp — 'YYYY-MM-DD', cp — 'C'/'P', T — years to expiry, iv — a fraction.
-    S — the price this option is priced from (Deribit: the future of its expiry); None = the chain's spot."""
     return {"exp": exp, "cp": cp, "k": float(k), "T": max(T, MIN_T), "oi": float(oi or 0), "iv": iv, "vol": vol or 0,
             "bid": bid, "ask": ask, "last": last, "S": S}
 
@@ -99,7 +76,6 @@ def mid(o):
 
 
 def interp(xs, ys, x):
-    """Linear interpolation over sorted xs; None outside the range."""
     if not xs:
         return None
     if x < xs[0] or x > xs[-1]:
@@ -112,7 +88,6 @@ def interp(xs, ys, x):
 
 
 def smile(opts, S):
-    """The volatility smile of one expiry: out-of-the-money options (puts below the price, calls above)."""
     pts = {}
     for o in opts:
         iv = o["iv"]
@@ -128,13 +103,12 @@ def atm_iv(ks, ivs, S):
     if not ks:
         return None
     v = interp(ks, ivs, S)
-    if v is None:   # the price is outside the strikes with quotes: the nearest one
+    if v is None:
         v = ivs[0] if S < ks[0] else ivs[-1]
     return v
 
 
 def iv_at_days(term, days):
-    """Implied volatility for `days` from the term structure, interpolated in total variance."""
     pts = [(t[1], t[2]) for t in term if t[2] and t[1] is not None]
     if not pts:
         return None
@@ -153,7 +127,6 @@ def iv_at_days(term, days):
 
 
 def analyze(chain, S, now, size=100.0, r=0.0, band=0.1, kind="equity", max_strikes=80, grid=61, prof_band=None):
-    """Everything the terminal shows for one underlying, from a normalized chain at spot S."""
     by_exp = {}
     for o in chain:
         if o["k"] > 0:
@@ -164,7 +137,6 @@ def analyze(chain, S, now, size=100.0, r=0.0, band=0.1, kind="equity", max_strik
     today = now.date().isoformat()
     year_days = 365 if kind == "crypto" else 252
 
-    # the smile of each expiry; options without a usable volatility borrow it from the smile
     term, smiles = [], {}
     for e in exps:
         opts = by_exp[e]
@@ -173,12 +145,11 @@ def analyze(chain, S, now, size=100.0, r=0.0, band=0.1, kind="equity", max_strik
         smiles[e] = (ks, ivs, Se)
         T = opts[0]["T"]
         a = atm_iv(ks, ivs, Se)
-        # the at-the-money straddle: the market's expected move by that expiry
         near = min({o["k"] for o in opts}, key=lambda k: abs(k - Se))
         c = next((o for o in opts if o["k"] == near and o["cp"] == "C"), None)
         p = next((o for o in opts if o["k"] == near and o["cp"] == "P"), None)
         st = (mid(c) or 0) + (mid(p) or 0) if c and p and mid(c) is not None and mid(p) is not None else None
-        if st is not None and kind == "crypto":   # Deribit prices options in coins
+        if st is not None and kind == "crypto":
             st *= Se
         term.append([e, round(T * 365, 2), sig(a, 4), sig(st, 4)])
     for e in exps:
@@ -196,7 +167,6 @@ def analyze(chain, S, now, size=100.0, r=0.0, band=0.1, kind="equity", max_strik
     use = [o for o in chain if o["T"] * 365 <= MAX_DTE and o.get("iv_used") and o["oi"] > 0]
     front = exps[0] if exps[0] >= today else next((e for e in exps if e >= today), exps[0])
 
-    # exposures by strike
     agg = {}
     tot = {"gex": 0.0, "gex_front": 0.0, "vex": 0.0, "cex": 0.0, "c_oi": 0.0, "p_oi": 0.0}
     for o in use:
@@ -228,7 +198,6 @@ def analyze(chain, S, now, size=100.0, r=0.0, band=0.1, kind="equity", max_strik
     if not agg:
         raise ValueError("no open interest")
 
-    # levels
     ks_all = sorted(agg)
     net = {k: agg[k]["gc"] + agg[k]["gp"] for k in ks_all}
     cwall = max(ks_all, key=lambda k: agg[k]["gc"])
@@ -236,16 +205,13 @@ def analyze(chain, S, now, size=100.0, r=0.0, band=0.1, kind="equity", max_strik
     pos = max(ks_all, key=lambda k: net[k])
     neg = min(ks_all, key=lambda k: net[k])
 
-    # total GEX if the price moved to x: where it crosses zero is the "gamma flip"
     pb = prof_band or max(band, 0.05)
     xs = [S * (1 - pb + 2 * pb * i / (grid - 1)) for i in range(grid)]
     ys = []
-    # strikes far from every price of the grid add almost no gamma: left out, the profile of a whole SPX chain stays fast
     near_use = [o for o in use if abs(o["k"] / S - 1) <= pb + 0.2]
     for x in xs:
         t = 0.0
         for o in near_use:
-            # Deribit options are priced from their expiry's future: move it together with the index
             So = (o.get("S") or S) * x / S
             t += (1 if o["cp"] == "C" else -1) * gamma_only(So, o["k"], o["T"], o["iv_used"], r) * o["oi"] * size * x * x * 0.01
         ys.append(t)
@@ -256,7 +222,6 @@ def analyze(chain, S, now, size=100.0, r=0.0, band=0.1, kind="equity", max_strik
             if zero is None or abs(x0 - S) < abs(zero - S):
                 zero = x0
 
-    # max pain of the front expiry
     fo = by_exp[front]
     c_oi = {}
     p_oi = {}
@@ -269,7 +234,6 @@ def analyze(chain, S, now, size=100.0, r=0.0, band=0.1, kind="equity", max_strik
         if best is None or pay < best:
             best, pain = pay, p
 
-    # expected move: 30-day implied volatility → one standard deviation for a day and a week
     iv30 = iv_at_days(term, 30)
     fr = next((t for t in term if t[0] == front), None)
     em = {"iv30": sig(iv30, 4), "front": front}
@@ -279,7 +243,6 @@ def analyze(chain, S, now, size=100.0, r=0.0, band=0.1, kind="equity", max_strik
     if fr and fr[3]:
         em.update({"straddle": fr[3], "straddle_pct": r2(fr[3] / S * 100)})
 
-    # the strikes shown: the nearest to the price within the band
     show = [k for k in ks_all if abs(k / S - 1) <= band]
     if len(show) > max_strikes:
         show = sorted(sorted(show, key=lambda k: abs(k - S))[:max_strikes])
@@ -287,7 +250,6 @@ def analyze(chain, S, now, size=100.0, r=0.0, band=0.1, kind="equity", max_strik
         show = sorted(ks_all, key=lambda k: abs(k - S))[:min(max_strikes, len(ks_all))]
         show.sort()
 
-    # the volatility surface: moneyness × expiry
     if kind == "crypto":
         mgrid = [round(0.6 + 0.05 * i, 3) for i in range(19)]
     else:
@@ -305,7 +267,6 @@ def analyze(chain, S, now, size=100.0, r=0.0, band=0.1, kind="equity", max_strik
         surf["dte"].append(round(by_exp[e][0]["T"] * 365, 2))
         surf["iv"].append(row)
 
-    # greeks: expiry × strike near the money
     g_exps = [e for e in exps if e >= today][:8]
     near_ks = set()
     for e in g_exps:
@@ -325,7 +286,7 @@ def analyze(chain, S, now, size=100.0, r=0.0, band=0.1, kind="equity", max_strik
                     iv = ivs[0] if k < ks[0] else ivs[-1]
             gg = greeks(Se, k, T, iv, r) if iv else None
             if gg:
-                gg = dict(gg, g=gg["g"] * Se * 0.01)   # gamma as the change of delta per 1% move (readable for any price)
+                gg = dict(gg, g=gg["g"] * Se * 0.01)
             for x in rows:
                 rows[x].append(sig(gg[x], 4) if gg else None)
         for x in rows:
@@ -369,10 +330,8 @@ def dump(path, obj):
 
 
 def session_day(now, kind):
-    """The trading day a snapshot belongs to: New York's date for US options, UTC for crypto."""
     if kind == "crypto":
         return now.astimezone(timezone.utc).date().isoformat()
-    # New York: UTC−5 in winter, UTC−4 in summer (second Sunday of March .. first Sunday of November)
     y = now.year
     mar = datetime(y, 3, 8, 7, tzinfo=timezone.utc)
     nov = datetime(y, 11, 1, 6, tzinfo=timezone.utc)
@@ -383,7 +342,6 @@ def session_day(now, kind):
 
 
 def write(sym, snap, now, src, extra=None, out_dir=None, hist_dir=None, intra_days=5, intra_band=0.04, keep_days=750):
-    """Saves the snapshot and adds it to the history. Returns the stored snapshot."""
     out_dir = out_dir or GEX_DIR
     hist_dir = hist_dir or os.path.join(out_dir, "hist")
     doc = {"s": sym, "updated": now.isoformat(), "src": src, **snap, **(extra or {})}
@@ -411,7 +369,6 @@ def write(sym, snap, now, src, extra=None, out_dir=None, hist_dir=None, intra_da
 
 
 def from_cboe(payload, now, close_utc_hour=21):
-    """Cboe-shaped chain (also Yahoo's, converted by options.py) → normalized options and the spot."""
     import options as opt_mod
     d = (payload or {}).get("data") or {}
     S = opt_mod._n(d.get("current_price"), 6) or opt_mod._n(d.get("close"), 6)
@@ -423,7 +380,7 @@ def from_cboe(payload, now, close_utc_hour=21):
         exp, cp, k = p
         t_exp = datetime.fromisoformat(exp).replace(hour=close_utc_hour, tzinfo=timezone.utc)
         T = (t_exp - now).total_seconds() / (365 * 86400)
-        if T <= 0:   # expired already (a chain read after the close still lists today's expiry)
+        if T <= 0:
             continue
         iv = o.get("iv")
         try:

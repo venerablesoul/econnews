@@ -1,11 +1,3 @@
-"""
-End-to-end test of the terminal in a real browser (Chromium via Playwright).
-
-Starts locally: the site (docs/) and the bot server (the real worker/src code with faked external services,
-tests/fake_server.mjs). Checks every function on a desktop and a phone, in English (default), Russian, Chinese and Arabic,
-the Markets page, and that the browser console has no errors.
-Run: python3 tests/e2e_terminal.py   (screenshots go to the E2E_SHOTS folder, if set)
-"""
 import functools
 import hashlib
 import http.server
@@ -73,7 +65,6 @@ def check(name, cond, info=""):
 
 
 def extra_fixtures():
-    """The bot's newer files: PortWatch's copy, ships worldwide with tracks, satellite pictures of oil storage."""
     import datetime as dt
     import io as _io
     from PIL import Image, ImageDraw
@@ -103,7 +94,6 @@ def extra_fixtures():
               "imgs": [{"d": day(40), "t": "17:10", "cloud": 1.0, "f": "sat/cushing/%s.jpg" % day(40)},
                        {"d": day(3), "t": "17:10", "cloud": 2.5, "f": "sat/cushing/%s.jpg" % day(3)}]},
              {"id": "fujairah", "name": "Fujairah", "name_ru": "Фуджейра", "lat": 25.178, "lon": 56.355, "km": 6.0, "imgs": []}]
-    # the bot's copy of the overview map tiles (basemap.py): every tile is a small blue-green picture here
     tb = _io.BytesIO()
     tim = Image.new("RGB", (256, 256), (24, 58, 96))
     ImageDraw.Draw(tim).ellipse([60, 60, 190, 190], fill=(70, 110, 60))
@@ -126,7 +116,6 @@ def run():
     fx = {n: urllib.request.urlopen(f"{api}/__fx/{n}").read() for n in ("data.json", "stocks.json", "rates.json", "macro.json", "moex.json", "options.json",
                                                                        "gex/SPX.json", "gex/BTC.json", "gex/hist/SPX.json", "gex/hist/BTC.json", "ships.json")}
     fx.update(extra_fixtures())
-    # live feed: the bot pushed a fresh story that is not on the site yet
     key = hashlib.sha256(b"econnews-sync:123:TEST").hexdigest()
     body = json.dumps({"updated": "2099-01-01T00:00:00+00:00", "news": [{"title": "Fresh story from the server", "lang": "en",
                                                                          "title_ru": "Свежая новость с сервера", "title_zh": "来自服务器的最新消息",
@@ -155,7 +144,6 @@ def run():
         ctx.route("**/*", handle)
 
     def setup_binance(ctx):
-        # Binance's public streams and REST, faked (tests/fake_binance.*): the order-flow functions get a live book
         import fake_binance
 
         def handle(route):
@@ -218,7 +206,6 @@ def run():
         check("news: $TSLA ticker button", page.locator("#news .tkb", has_text="TSLA").count() == 1)
         shot(page, "01_start")
 
-        # DES and the company tabs
         cmd(page, "AAPL DES")
         page.wait_for_function("document.querySelector('#des-body').textContent.includes('Apple Inc')", timeout=8000)
         body = page.inner_text("#des-body")
@@ -276,7 +263,6 @@ def run():
         check("DES: description, management (MGMT) and price target", "Management (MGMT)" in des_main and "Timothy D. Cook" in des_main
               and "American multinational technology company" in des_main and "Analyst price target" in des_main, des_main[:400])
 
-        # HP: table and CSV
         cmd(page, "HP AAPL")
         page.wait_for_function("document.querySelectorAll('#hp-body tbody tr').length >= 200", timeout=8000)
         check("HP: 250 days of history", page.locator("#hp-body tbody tr").count() == 250)
@@ -291,14 +277,12 @@ def run():
         check("HP: English stats", "Over 1 year" in page.inner_text("#hp-body .stat"), page.inner_text("#hp-body .stat"))
         shot(page, "04_hp")
 
-        # COMP
         cmd(page, "COMP AAPL MSFT")
         page.wait_for_selector("#hp-body .cv canvas")
         page.wait_for_function("document.querySelectorAll('#hp-body .cv .legend span').length === 2", timeout=8000)
         check("COMP: two instruments on one chart", page.locator("#hp-body .cv .legend span").count() == 2)
         shot(page, "05_comp")
 
-        # EQS
         cmd(page, "EQS")
         page.wait_for_selector("#eqs-body tbody tr")
         check("EQS: all companies", page.locator("#eqs-body tbody tr").count() == 3)
@@ -327,7 +311,6 @@ def run():
         page.wait_for_function("document.querySelectorAll('#eqs-body tbody tr').length === 3", timeout=8000)
         check("EQS: back to US stocks", True)
 
-        # IMAP
         cmd(page, "IMAP")
         page.wait_for_selector("#imap .tile")
         check("IMAP: company tiles and English sectors", page.locator("#imap .tile").count() == 3 and "Technology" in page.inner_text("#imap"))
@@ -336,7 +319,6 @@ def run():
         page.wait_for_function("document.querySelector('#des-title').textContent.includes('NVDA')", timeout=8000)
         check("IMAP: a tile opens DES", True)
 
-        # IMAP RU: the Moscow Exchange
         cmd(page, "IMAP RU")
         page.wait_for_function("document.querySelector('#imap').textContent.includes('SBER')", timeout=8000)
         shot(page, "07e_imap_ru")
@@ -346,7 +328,6 @@ def run():
         page.wait_for_function("document.querySelectorAll('#imap .tile').length === 3", timeout=8000)
         check("IMAP: back to US stocks", True)
 
-        # ECST / FXC / CORR / OMON overview / IPO
         cmd(page, "ECST")
         page.wait_for_function("document.querySelector('#ana-body').textContent.includes('United States')", timeout=8000)
         check("ECST: IMF forecasts by country", "GDP 2026" in page.inner_text("#ana-body") and page.locator("#ana-body tbody tr").count() >= 20)
@@ -375,7 +356,6 @@ def run():
         page.wait_for_function("document.querySelector('#ana-body').textContent.includes('CTY')", timeout=8000)
         check("IPO: calendar", "CITY THERAPEUTICS" in page.inner_text("#ana-body") and "expected" in page.inner_text("#ana-body"))
 
-        # HP intraday with technicals
         cmd(page, "HP AAPL 1D")
         page.wait_for_selector("#hp-body tbody tr")
         check("HP 1D: intraday range is accepted", "Over 1 day" in page.inner_text("#hp-body .stat") and page.locator("#hp-tabs button[data-r='1d'].on").count() == 1,
@@ -385,7 +365,6 @@ def run():
         page.wait_for_function("document.querySelector('#hp-body .stat').textContent.includes('RSI')", timeout=8000)
         check("HP: RSI and SMA 200", "RSI(14)" in page.inner_text("#hp-body .stat") and "vs SMA 200" in page.inner_text("#hp-body .stat"), page.inner_text("#hp-body .stat"))
 
-        # GC / CB / WIRP
         cmd(page, "GC")
         page.wait_for_selector("#gc-body svg path")
         check("GC: curves and table", page.locator("#gc-body svg path").count() >= 1 and "10Y" in page.inner_text("#gc-body table")
@@ -398,7 +377,6 @@ def run():
         page.wait_for_selector("#gc-body .prob i")
         check("WIRP: probabilities by meeting", "hike 50%" in page.inner_text("#gc-body"))
 
-        # W / PORT / ALRT (first without signing in — this browser only)
         cmd(page, "W AAPL BTC")
         page.wait_for_function("document.querySelectorAll('#my-body tbody tr').length === 2", timeout=8000)
         page.wait_for_function("document.querySelector('#my-body').textContent.includes('342.96')", timeout=8000)
@@ -414,7 +392,6 @@ def run():
         shot(page, "09_port")
         cmd(page, "ALRT")
         check("ALRT without sign-in: the Telegram hint", "Alerts arrive" in page.inner_text("#my-body"))
-        # owner sign-in with the password → data shared with the bot
         cmd(page, "SET")
         page.fill("#k-pass", "pw")
         page.click("#k-login")
@@ -438,7 +415,7 @@ def run():
         cmd(page, "W")
         page.wait_for_function("document.querySelectorAll('#my-body tbody tr').length >= 2", timeout=8000)
         me = {}
-        for _ in range(20):   # changes reach the server after a 0.4 s delay
+        for _ in range(20):
             me = json.loads(urllib.request.urlopen(urllib.request.Request(f"{api}/api/me", headers={"X-Owner-Key": "pw"})).read())
             if me.get("w") and me.get("p"):
                 break
@@ -446,12 +423,10 @@ def run():
         check("W/PORT: moved to the server (shared with the bot)", "AAPL" in me.get("w", []) and any(x["s"] == "AAPL" for x in me.get("p", [])), me)
         shot(page, "10_alrt")
 
-        # ECO: company earnings
         page.click("#eco-tabs button[data-t=earn]")
         page.wait_for_selector("#earn table")
         check("ECO: the earnings tab", "AAPL" in page.inner_text("#earn") and "after close" in page.inner_text("#earn"))
 
-        # layouts
         cmd(page, "LAYOUT 4")
         time.sleep(0.3)
         check("LAYOUT 4: four panels", len(visible_panels(page)) == 4, visible_panels(page))
@@ -470,18 +445,15 @@ def run():
         time.sleep(0.2)
         check("LAYOUT 1: back to five", len(visible_panels(page)) == 5)
 
-        # a ticker in a story
         cmd(page, "N")
         page.click("#news .tkb:has-text('TSLA')")
         page.wait_for_function("document.querySelector('#des-title').textContent.includes('TSLA')", timeout=8000)
         check("a ticker in the news opens the company", True)
 
-        # HELP is built from the dictionary
         cmd(page, "HELP")
         check("HELP: the command table in English", "company card" in page.inner_text("#ov-help") and page.locator("#help-t tr").count() > 30)
         page.keyboard.press("Escape")
 
-        # a link from the bot: ?cmd=
         page2 = ctx.new_page()
         watch(page2)
         page2.goto(base + "?cmd=" + urllib.request.quote("MSFT FA"))
@@ -493,7 +465,6 @@ def run():
         overflow = page.evaluate("document.documentElement.scrollWidth - window.innerWidth")
         check("desktop: no horizontal scroll", overflow <= 0, overflow)
 
-        # Russian: ?lang=ru (as the bot's buttons do for Russian readers), then the toggle back
         rctx = browser.new_context(viewport={"width": 1440, "height": 900})
         setup(rctx)
         r = rctx.new_page()
@@ -540,14 +511,12 @@ def run():
         check("the language menu switches back to English and is remembered", "WORLD MARKETS" in r.inner_text("#p-mkt .ph")
               and r.evaluate("localStorage.getItem('lang')") == "en")
 
-        # options: dealer positioning, levels, volatility, greeks, history
         def opt_body(cmd_text, sel, ms=8000):
             r.fill("#cmd", cmd_text); r.press("#cmd", "Enter")
             r.wait_for_function("(function(){ var b = document.querySelector('#gex-body'); return b && !b.querySelector('.loading') && b.querySelector('" + sel + "') })()", timeout=ms)
             return r.inner_text("#gex-body")
 
         def drawn(sel):
-            # how many pixels the canvas has drawn (an empty canvas = 0)
             return r.evaluate("(function(){ var c = document.querySelector('" + sel + "'); if (!c) return 0; var d = c.getContext('2d').getImageData(0, 0, c.width, c.height).data, n = 0; for (var i = 3; i < d.length; i += 4) if (d[i]) n++; return n })()")
         g = opt_body("GEX SPX", ".gx-cv canvas")
         check("GEX: S&P 500 levels and bars", "Gamma flip: 6,682" in g and "Call wall: 6,800" in g and "Put wall: 6,750" in g and drawn("#gex-body .gx-cv canvas") > 5000, g[:300])
@@ -565,11 +534,9 @@ def run():
         r.wait_for_function("document.querySelector('#tech-body') && document.querySelector('#tech-body .tc-cv canvas')", timeout=8000)
         check("LVL → TECH with the option levels switched on", r.evaluate("JSON.parse(localStorage.getItem('tech_ta') || '{}').gex") == 1
               and "OPTION LEVELS" in r.inner_text("#tech-body"))
-        # the faked chart history is ~250–350, the S&P levels ~6,700: levels of another price range are not drawn
         r.wait_for_selector("#tech-body .tc-gexnote", timeout=8000)
         check("TECH: option levels far from the chart's prices are left out", "do not fit the prices" in r.inner_text("#tech-body .tc-gexnote"),
               r.inner_text("#tech-body .tc-gexnote"))
-        # the Nasdaq-100: TECH has no chart of it (its "Nasdaq" is the Composite) — no button, and no NDX levels there
         ndx = json.loads(fx["gex/SPX.json"]); ndx.update({"s": "NDX", "n": "Nasdaq-100 index"})
         fx["gex/NDX.json"] = json.dumps(ndx).encode()
         nl = opt_body("LVL NDX", "table")
@@ -609,7 +576,6 @@ def run():
         r.click("#lang-menu button[lang=en]")
         r.wait_for_function("(document.querySelector('#b-lang') || {}).textContent === 'EN ▾' && !!document.querySelector('#mkt table')", timeout=8000)
 
-        # order flow of crypto (a faked Binance)
         fctx = browser.new_context(viewport={"width": 1440, "height": 900})
         setup(fctx)
         setup_binance(fctx)
@@ -627,7 +593,6 @@ def run():
         check("HEAT: the order book is kept in sync (snapshot + diffs, never crossed)", mkt_["n"] > 900 and mkt_["bb"] < mkt_["ba"] and mkt_["tr"] > 100, mkt_)
         check("HEAT: the heatmap draws", fdrawn() > 50000)
         shot(f, "23_heat")
-        # zoom: the wheel narrows the price window, Shift+wheel widens the seconds, a double-click puts it back
         def hz():
             return f.evaluate("JSON.stringify(FLOWX.state.z.HEAT)")
         cvb = f.locator("#flow-body .fl-cv").bounding_box()
@@ -644,7 +609,6 @@ def run():
         check("HEAT: the − button zooms out", f.evaluate("FLOWX.state.z.HEAT.p") < z1, hz())
         f.mouse.dblclick(cvb["x"] + cvb["width"] / 2, cvb["y"] + cvb["height"] / 2)
         check("HEAT: a double-click resets the zoom", f.evaluate("FLOWX.state.z.HEAT.p === 1 && FLOWX.state.z.HEAT.t === 1"), hz())
-        # cells on whole pixels: the picture has no half-covered rows between price levels (sharp, not smeared)
         sharp = f.evaluate("""(function(){
           FLOWX.state.z.HEAT.p = 12; FLOWX.state.z.HEAT.t = 8;   // zoomed in: a price step and a half-second are many pixels
           var w = document.querySelector('#flow-body .fl-cv'); w.__paint();
@@ -686,7 +650,6 @@ def run():
         shot(f, "25b_cvd_zoom")
         f.mouse.dblclick(cvb["x"] + cvb["width"] / 2, cvb["y"] + cvb["height"] / 3)
         check("CVD: a double-click goes back to now", f.evaluate("FLOWX.state.z.CVD.off") == 0)
-        # Binance refuses the bars: asked again after a pause, not four times a second (it limits how often one asks)
         kl_calls = []
 
         def kl_fail(route):
@@ -704,14 +667,12 @@ def run():
         f.wait_for_function("document.getElementById('p-flow').classList.contains('off')", timeout=5000)
         f.wait_for_function("!window.FLOWX.market()", timeout=8000)
         check("the streams close when the order-flow panel leaves the screen", f.evaluate("!FLOWX.market()"))
-        # supply chain, tankers, practice account, the quick bar
         f.fill("#cmd", "SPLC"); f.press("#cmd", "Enter")
         f.wait_for_selector("#map-body .sp-wrap canvas")
         sp = f.inner_text("#map-body")
         check("SPLC: the oil supply chain with EIA flows", "Hormuz" in sp and "3Q26 9.1" in sp and "Cape of Good Hope" in sp, sp[:300])
         check("SPLC: without the bot's file, the figures built into the page", "EIA 3Q26 (10 Nov 2026)" in f.inner_text("#map-sub"), f.inner_text("#map-sub"))
         shot(f, "26_splc")
-        # the bot has read a newer EIA table (chokepoints.py): the diagram takes it
         qs = ["1Q25", "2Q25", "3Q25", "4Q25", "1Q26", "2Q26", "3Q26", "4Q26"]
         newer = {"q": qs, "released": "2027-01-13", "v": {k: [round(2 + i * 0.5 + j / 10, 1) for j in range(len(qs))] for i, k in enumerate(
             ("malacca", "hormuz", "suez", "bab", "danish", "turkish", "panama", "cape"))}}
@@ -728,7 +689,6 @@ def run():
         f.wait_for_function("document.querySelector('#map-body .gm-side') && document.querySelector('#map-body .gm-side').textContent.includes('Tankers at the chokepoints')", timeout=8000)
         f.wait_for_function("window.MAPS && MAPS.M.data.tankers && MAPS.M.data.tankers.pts.length === 2", timeout=8000)
         check("SHIP: the map comes back after SPLC, with the tankers layer", f.locator("#map-body .gm-wrap canvas:not(.gm-bg)").count() == 1)
-        # the picture under the map, and its switch
         check("MAP: the satellite picture lies under the map", f.locator("#map-body .gm-wrap canvas.gm-bg").count() == 1 and f.evaluate("MAPS.M.base") in ("sat", "day", "night", "scheme"))
         f.click("#map-body .gm-base button[data-b=scheme]")
         f.wait_for_function("getComputedStyle(document.querySelector('#map-body .gm-bg')).display === 'none'", timeout=3000)
@@ -736,15 +696,12 @@ def run():
         f.click("#map-body .gm-base button[data-b=sat]")
         f.wait_for_function("MAPS.M.base === 'sat'", timeout=3000)
         check("MAP: back to the satellite picture", f.evaluate("localStorage.getItem('map_base')") == "sat")
-        # NASA does not answer here (blocked in the tests), but the bot's copy of the overview tiles on the site does
         f.wait_for_function("""(function(){ var c = document.querySelector('#map-body .gm-bg'); if (!c || getComputedStyle(c).display === 'none') return false;
           var d = c.getContext('2d').getImageData(Math.floor(c.width / 2), Math.floor(c.height / 2), 1, 1).data; return d[2] > 40 })()""", timeout=8000)
         check("MAP: the satellite picture comes from the site's own copy of the tiles", True)
-        # chokepoints from the bot's copy of PortWatch (not PortWatch's failing service)
         f.wait_for_function("window.MAPS && MAPS.M.data.choke && MAPS.M.data.choke.pts.length === 5", timeout=8000)
         side = f.inner_text("#map-body .gm-side")
         check("SHIP: chokepoints from the bot's copy of PortWatch", "Malacca Strait" in side and "Token" not in side, side[:200])
-        # ships worldwide: arrows along the course, tracks, the line ahead; names as text only
         f.wait_for_function("window.MAPS && MAPS.M.data.world && MAPS.M.data.world.pts.length === 3", timeout=8000)
         wp = f.evaluate("MAPS.M.data.world.pts.map(function(p){ return {t: p.t, hd: p.hd, trk: (p.trk || []).length, pf: !!p.pf, s: p.s.join(' | ')} })")
         check("SHIP: ships worldwide, tankers first, with their tracks", wp[0]["t"].startswith("🛢 GULF STAR") and wp[0]["trk"] == 2 and wp[0]["hd"] == 45 and wp[0]["pf"], wp[:2])
@@ -756,7 +713,6 @@ def run():
         shot(f, "27_ships_world")
         injected = f.evaluate("!!document.querySelector('#map-body img[src=x], body > img[src=x]') || !!window.__xss")
         check("SHIP: a ship's name is shown as text, never as HTML", not injected)
-        # SAT: the gallery, then one hub with "then" and "now"
         f.fill("#cmd", "SAT"); f.press("#cmd", "Enter")
         f.wait_for_selector("#map-body .sat-card")
         cards = f.locator("#map-body .sat-card").count()
@@ -792,7 +748,6 @@ def run():
         f.click("#my-body button:has-text('SELL')")
         f.wait_for_selector("#my-body .err")
         check("PAPR: no selling what is not held", "do not hold that many" in f.inner_text("#my-body .err"))
-        # an index has no dollar price to trade at (before, only rouble prices were refused)
         f.fill("#my-body input.t", "S&P"); f.fill("#my-body input[data-k=paper-a]", "1")
         f.click("#my-body button[type=submit]")
         f.wait_for_function("(document.querySelector('#my-body .err') || {}).textContent && document.querySelector('#my-body .err').textContent.includes('US dollars')", timeout=8000)
@@ -804,7 +759,6 @@ def run():
         check("Alt+6 opens GEX", True)
         fctx.close()
 
-        # the Markets page in both languages
         mp = rctx.new_page()
         watch(mp)
         mp.goto(f"http://127.0.0.1:{sport}/")
@@ -818,7 +772,6 @@ def run():
         check("Markets page: Russian news", "ФРС сохранила ставку" in mp.inner_text("#news"))
         rctx.close()
 
-        # Chinese and Arabic: ?lang=zh / ?lang=ar (the bot's buttons add them), i18n.xl.js is loaded only for them
         for lang, want in (("zh", {"panel": "全球市场", "mkt": ["黄金", "布伦特原油", "指数"], "news": ["来自服务器的最新消息", "美联储维持利率不变", "美联储将利率维持不变", "#美联储"],
                                    "des": ["$5.01万亿", "分析师", "下次财报"], "cn": "苹果业绩超出预期", "ee": ["本季度", "业绩意外"], "ecst": ["实际 GDP 增长", "俄罗斯"],
                                    "sector": "能源", "eco": "日历 · 莫斯科时间", "help": "全球股票指数", "btn": "中 ▾",
@@ -887,7 +840,6 @@ def run():
             shot(mp2, f"23_{lang}_markets")
             xctx.close()
 
-        # windows: close one or all, an empty window offers every function, drag borders to resize, drag titles to swap
         wctx = browser.new_context(viewport={"width": 1440, "height": 900})
         setup(wctx)
         w = wctx.new_page()
@@ -908,7 +860,6 @@ def run():
         w.click("#fnmenu button:has(b:text-is('TRD'))")
         w.wait_for_function("!document.querySelector('#p-trd').classList.contains('off')")
         check("windows: the chosen function opens in that window", slot("p-trd") == news_slot and w.locator(".slot-empty").count() == 0)
-        # resize: drag the first vertical border 120 px to the right
         before = w.eval_on_selector("#p-mkt", "p => p.getBoundingClientRect().width")
         g = w.locator("main > .gutter.v").first.bounding_box()
         w.mouse.move(g["x"] + g["width"] / 2, g["y"] + 40)
@@ -925,7 +876,6 @@ def run():
         w.locator("main > .gutter.v").first.dblclick()
         check("windows: double-click on a border brings the layout's own sizes back",
               abs(w.eval_on_selector("#p-mkt", "p => p.getBoundingClientRect().width") - before) < 3 and not w.evaluate("JSON.parse(localStorage.getItem('layout2')).size['1']"))
-        # move: drag the markets title onto the chart
         mkt_slot, chart_slot = slot("p-mkt"), slot("p-chart")
         t1 = w.locator("#p-mkt .ph [data-i18n=p_mkt]").bounding_box()
         t2 = w.locator("#p-chart .ph").bounding_box()
@@ -944,7 +894,6 @@ def run():
         shot(w, "29_windows_empty")
         w.click("#lay button[data-act=reset]")
         check("windows: ⟲ brings the default layout back", sorted(visible_panels(w)) == sorted(["p-mkt", "p-chart", "p-crypto", "p-news", "p-eco"]) and w.locator(".slot-empty").count() == 0)
-        # floating: ⧉ lifts a window over the others; its title moves it, its corner sizes it; ▣ puts it back
         news_slot = slot("p-news")
         w.click("#p-news .ph .pfloat")
         fl = w.evaluate("(function(){ var p = document.getElementById('p-news'), r = p.getBoundingClientRect(); return {cls: p.className, pos: getComputedStyle(p).position, x: r.left, y: r.top, w: r.width, h: r.height, slot: p.dataset.slot || null} })()")
@@ -957,7 +906,6 @@ def run():
         check("float: dragging the title moves it (and keeps it on the page)", abs(moved[0] - want[0]) < 4 and abs(moved[1] - want[1]) < 6, (fl, moved, want))
         inside = w.evaluate("(function(){ var p = document.getElementById('p-news').getBoundingClientRect(), m = document.querySelector('main').getBoundingClientRect(); return p.left >= m.left - 1 && p.top >= m.top - 1 && p.right <= m.right + 1 && p.bottom <= m.bottom + 1 })()")
         check("float: the window stays wholly on the page", inside)
-        # room to size it: move it to the top left first
         t = w.locator("#p-news .ph").bounding_box()
         w.mouse.move(t["x"] + 60, t["y"] + t["height"] / 2); w.mouse.down(); w.mouse.move(t["x"] - 300, t["y"] - 500, steps=6); w.mouse.up()
         c = w.locator("#p-news .fresize").bounding_box()
@@ -965,7 +913,6 @@ def run():
         w.mouse.move(c["x"] + 8, c["y"] + 8); w.mouse.down(); w.mouse.move(c["x"] + 88, c["y"] + 48, steps=6); w.mouse.up()
         sz = w.eval_on_selector("#p-news", "p => { var r = p.getBoundingClientRect(); return [r.width, r.height] }")
         check("float: the corner sizes it", abs(sz[0] - fl["w"] - 80) < 4 and abs(sz[1] - fl["h"] - 40) < 4, (fl, sz, c, hit))
-        # a second floating window comes to the front; a click on the first brings it back on top
         w.click("#p-eco .ph .pfloat")
         z1, z2 = w.evaluate("[+document.getElementById('p-news').style.zIndex, +document.getElementById('p-eco').style.zIndex]")
         check("float: the newest window lies on top", z2 > z1, (z1, z2))
@@ -983,7 +930,6 @@ def run():
         check("float: ⟲ docks every window", w.locator(".panel.floating").count() == 0 and w.locator(".slot-empty").count() == 0)
         wctx.close()
 
-        # phone
         mctx = browser.new_context(viewport={"width": 390, "height": 844}, is_mobile=True, has_touch=True, accept_downloads=True)
         setup(mctx)
         m = mctx.new_page()

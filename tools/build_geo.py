@@ -1,20 +1,3 @@
-"""Builds the static map layers of the terminal (docs/geo/*.json) from open datasets.
-
-Run once when a source updates (the files are committed; the terminal only reads them):
-  python3 tools/build_geo.py SRC_DIR
-SRC_DIR holds the downloaded sources:
-  ne/geojson/ne_50m_admin_0_countries.geojson   Natural Earth 1:50m countries (public domain)  github.com/nvkelso/natural-earth-vector
-  ne/geojson/ne_10m_ports.geojson               Natural Earth 1:10m ports (public domain)
-  gppd/output_database/global_power_plant_database.csv   WRI Global Power Plant Database v1.3 (CC BY 4.0)
-                                                          github.com/wri/global-power-plant-database
-  infra/*.json                                   optional: refineries, LNG terminals, mines… prepared by tools/build_infra.py
-
-Compact formats (smaller files, the browser decodes them in a few milliseconds):
-  world.json  {q, c: [[iso3, name_en, name_ru, label_lon, label_lat, [ring, ring…]]]}
-              ring = [lon0*q, lat0*q, dlon1, dlat1, dlon2, dlat2, …] (integers; deltas after the first point)
-  plants.json {fuels: [...], p: [[lon, lat, MW, fuel index, iso3, name], …]}  (name only for 30 MW and more)
-  ports.json  {p: [[lon, lat, rank, name], …]}  rank 1 = the largest ports
-"""
 import csv
 import json
 import math
@@ -23,13 +6,12 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(os.path.dirname(HERE), "docs", "geo")
-Q = 50              # coordinates in 1/50 of a degree (~2 km)
-TOL = 0.06          # simplification tolerance, degrees
-MIN_AREA = 0.04     # drop islands smaller than this (square degrees) unless they are the country's only land
+Q = 50
+TOL = 0.06
+MIN_AREA = 0.04
 
 
 def dp(points, tol):
-    """Douglas-Peucker simplification of an open polyline (iterative)."""
     if len(points) < 3:
         return points
     keep = [False] * len(points)
@@ -65,7 +47,6 @@ def simplify_ring(ring):
     ring = [(round(x, 4), round(y, 4)) for x, y in ring]
     if ring[0] != ring[-1]:
         ring.append(ring[0])
-    # split the closed ring in two halves so the endpoints are not fixed to one place
     mid = len(ring) // 2
     s = dp(ring[:mid + 1], TOL)[:-1] + dp(ring[mid:], TOL)
     return s
@@ -85,7 +66,6 @@ def encode(ring):
     return out
 
 
-# shorter everyday names where Natural Earth gives the formal one (the map's labels and the ECO list)
 SHORT = {"USA": ("United States", "США"), "CHN": ("China", "Китай"), "KOR": ("South Korea", "Южная Корея"), "PRK": ("North Korea", "КНДР"),
          "ARE": ("UAE", "ОАЭ"), "CAF": ("Central African Rep.", "ЦАР"), "COD": ("DR Congo", "ДР Конго"), "COG": ("Congo", "Конго"),
          "DOM": ("Dominican Rep.", "Доминикана"), "CYN": ("Northern Cyprus", "Северный Кипр")}
@@ -99,7 +79,7 @@ def countries(src):
         iso = p.get("ISO_A3_EH") if p.get("ISO_A3_EH") not in (None, "-99") else p.get("ADM0_A3")
         g = f["geometry"]
         polys = g["coordinates"] if g["type"] == "MultiPolygon" else [g["coordinates"]]
-        outer = [poly[0] for poly in polys]           # holes are left out: at this scale they are lakes and enclaves
+        outer = [poly[0] for poly in polys]
         big = max(outer, key=area)
         rings = []
         for r in outer:
@@ -112,8 +92,6 @@ def countries(src):
             continue
         en, ru = SHORT.get(iso) or (p.get("NAME_EN") or p["NAME"], p.get("NAME_RU") or p.get("NAME_EN") or p["NAME"])
         rows.append([iso, en, ru, round(p.get("LABEL_X") or 0, 2), round(p.get("LABEL_Y") or 0, 2), rings, area(big)])
-    # one entry per code: an overseas territory under its country's code (Australia's Indian Ocean islands) joins it,
-    # and the bigger part keeps the name and the label
     rows.sort(key=lambda r: (r[0], -r[6]))
     merged = []
     for r in rows:
@@ -146,7 +124,7 @@ def plants(src):
         if mw >= 30:
             row.append(r["name"].strip())
         out.append(row)
-    out.sort(key=lambda x: -x[2])   # big first: drawn last on top, found first on hover
+    out.sort(key=lambda x: -x[2])
     return {"src": "WRI Global Power Plant Database v1.3 (2021), CC BY 4.0", "fuels": FUELS, "p": out}
 
 

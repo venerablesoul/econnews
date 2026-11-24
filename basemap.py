@@ -1,14 +1,3 @@
-"""
-The map's satellite picture for the overview zooms, kept on the site itself.
-
-The terminal draws NASA GIBS tiles under the map: Blue Marble with relief and sea floor (day) and the Earth at night
-(city lights). Taken straight from NASA they may be slow or out of reach from some networks, so the bot copies the
-overview zooms 0–4 (341 tiles per picture, ~10 MB in all) to docs/base/<picture>/<z>/<y>/<x>.<ext> once; the terminal
-uses them first and NASA only for closer zooms. The address that works is found here (GIBS names some layers .jpg,
-some .jpeg) and written to docs/base/meta.json, so the browser asks NASA with the right one.
-
-NASA imagery is public domain. Done once (a missing tile is fetched again on a later call), at most ~400 tiles a call.
-"""
 from __future__ import annotations
 
 import json
@@ -25,7 +14,6 @@ GIBS = "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/"
 VERSION = 1
 MAXZ = 4
 PER_CALL = 400
-# each picture: the addresses to try, in order, and the file kind each gives
 PICTURES = {
     "day": [GIBS + "BlueMarble_ShadedRelief_Bathymetry/default//GoogleMapsCompatible_Level8/{z}/{y}/{x}.jpg",
             GIBS + "BlueMarble_ShadedRelief_Bathymetry/default//GoogleMapsCompatible_Level8/{z}/{y}/{x}.jpeg",
@@ -45,7 +33,6 @@ def get(url, timeout=40, limit=2 << 20):
 
 
 def kind(data):
-    """'jpg' or 'png' by the file's first bytes; None if it is not a picture (an error page)."""
     if data[:3] == b"\xff\xd8\xff":
         return "jpg"
     if data[:8] == b"\x89PNG\r\n\x1a\n":
@@ -67,7 +54,6 @@ def load(path):
 
 
 def pick(name, fetch):
-    """The first address of a picture whose world tile (0/0/0) is a real picture: (template, ext)."""
     for tpl in PICTURES[name]:
         try:
             data = fetch(tpl.format(z=0, y=0, x=0))
@@ -80,7 +66,6 @@ def pick(name, fetch):
 
 
 def build(now=None, base=DIR, fetch=get, per_call=PER_CALL, workers=8):
-    """Copies what is still missing. Returns how many tiles were saved."""
     now = now or datetime.now(timezone.utc)
     meta_path = os.path.join(base, "meta.json")
     meta = load(meta_path)

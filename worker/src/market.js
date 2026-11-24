@@ -1,8 +1,3 @@
-// Quotes, price history and company data. API keys live only here, on the server.
-//   US stocks:    Finnhub (free key) — quote, profile, ratios, analysts, earnings, company news
-//   World:        Yahoo Finance (no key) — indices, currencies, commodities, yields
-//   History:      Yahoo Finance; crypto — Binance / Yahoo / Coinbase; Russia — Moscow Exchange (ISS)
-//   Financials:   docs/fin/<TICKER>.json, built by the news bot from SEC filings (~100 largest companies)
 import { cached, dm, getJSON, pageJSON, siteData, swr } from "./lib.js";
 import { MKT_XL } from "./i18n_xl.js";
 
@@ -17,7 +12,6 @@ export const COINS = {
   LTC: "litecoin", SUI: "sui", NEAR: "near", UNI: "uniswap",
 };
 
-// instruments of the bot's data: id in data.json (kept as is for compatibility) → [Yahoo symbol, English name, Russian name]
 export const MKT = {
   "S&P": ["^GSPC", "S&P 500", "S&P 500"], "Nasdaq": ["^IXIC", "Nasdaq", "Nasdaq"], "DJI": ["^DJI", "Dow Jones", "Dow Jones"],
   "RTY": ["^RUT", "Russell 2000", "Russell 2000"], "VIX": ["^VIX", "VIX", "VIX"], "SX5E": ["^STOXX50E", "Euro Stoxx 50", "Euro Stoxx 50"],
@@ -46,13 +40,11 @@ const MKT_ALIAS = {
   "ПЛАТИНА": "Платина", COPPER: "Медь", "МЕДЬ": "Медь", WHEAT: "Пшеница", "ПШЕНИЦА": "Пшеница",
   US3M: "UST3M", UST3M: "UST3M", US5Y: "UST5", UST5: "UST5", US10Y: "UST10", UST10: "UST10", US30Y: "UST30", UST30: "UST30",
 };
-// popular Moscow Exchange shares: can be typed without the MOEX: prefix
 const MOEX_COMMON = new Set(["SBER", "SBERP", "GAZP", "LKOH", "ROSN", "NVTK", "GMKN", "YDEX", "VTBR", "TATN", "TATNP", "PLZL",
   "MGNT", "MTSS", "AFLT", "CHMF", "NLMK", "ALRS", "OZON", "IRAO", "MOEX", "PHOR", "RUAL", "SNGS", "SNGSP", "PIKK", "MAGN",
   "AFKS", "HYDR", "FEES", "RTKM", "TRNFP", "X5", "T", "SMLT", "POSI", "HEAD", "BSPB", "CBOM", "UPRO", "SVCB", "ASTR"]);
-const US_ONLY = new Set(["T"]);   // same as AT&T: T-Technologies on the Moscow Exchange only with the MOEX: prefix
+const US_ONLY = new Set(["T"]);
 
-// What the person typed: "AAPL", "aapl us equity", "NASDAQ:AAPL", "MOEX:SBER", "BTC", "oil", "нефть"
 export function parseSymbol(raw) {
   let s = String(raw || "").trim().toUpperCase().replace(/\s+/g, " ");
   if (!s) return null;
@@ -80,7 +72,6 @@ export async function fh(env, path, ttl) {
 }
 
 // ---------------------------------------------------------------------------
-// Quotes
 // ---------------------------------------------------------------------------
 async function usQuote(env, s) {
   const x = await fh(env, "/quote?symbol=" + encodeURIComponent(s), 20);
@@ -150,7 +141,6 @@ async function moexQuotes(syms) {
   return out;
 }
 
-// { input: {key, kind, name, name_ru, px, ch, cur, src} } — up to 40 instruments at a time
 export async function getQuotes(env, inputs) {
   const parsed = [];
   const seen = new Set();
@@ -192,16 +182,12 @@ export async function getQuotes(env, inputs) {
 }
 
 // ---------------------------------------------------------------------------
-// World markets for the terminal: indices, currencies, commodities, yields — Yahoo Finance, free, no key.
-// One "spark" request per 20 symbols instead of one per symbol. USD/RUB and CNY/RUB are left to the
-// Bank of Russia rates from the news bot (Yahoo's ruble quotes are unreliable); IMOEX comes from the Moscow Exchange.
 // ---------------------------------------------------------------------------
 export const WORLD = ["S&P", "Nasdaq", "DJI", "RTY", "VIX", "SX5E", "DAX", "UKX", "CAC", "NKY", "HSI", "SHCOMP", "SENSEX", "DXY",
   "EUR/USD", "USDJPY", "GBPUSD", "USDCNY", "USDCHF", "Brent", "WTI", "Газ", "Золото", "Серебро", "Платина", "Медь", "Пшеница",
   "UST3M", "UST5", "UST10", "UST30"];
 
 function sparkRows(d) {
-  // v7: {spark: {result: [{symbol, response: [{meta}]}]}} · v8: {"^GSPC": {symbol, close: [...], chartPreviousClose}}
   const out = {};
   if (d && d.spark && Array.isArray(d.spark.result)) {
     for (const r of d.spark.result) {
@@ -222,8 +208,6 @@ async function yahooSpark(symbols) {
   const errors = [];
   const parts = [];
   for (let i = 0; i < symbols.length; i += 20) parts.push(symbols.slice(i, i + 20).map(encodeURIComponent).join(","));
-  // the parts at the same time, and for each both Yahoo hosts at once — the first that answers wins
-  // (one after another they took up to 4 × 6 s when Yahoo was slow or refused one of them)
   await Promise.all(parts.map(async (part) => {
     const asks = ["https://query1.finance.yahoo.com/v7/finance/spark?range=1d&interval=1d&symbols=",
       "https://query2.finance.yahoo.com/v8/finance/spark?range=1d&interval=1d&symbols="].map((url) =>
@@ -250,8 +234,6 @@ async function imoexLive() {
   return v ? { value: v, change: r[c.indexOf("LASTCHANGEPRC")] } : null;
 }
 
-// { id: {value, change} } for the terminal; refreshed at most every `ttl` seconds for all viewers together.
-// opts ({ctx, maxAge}) — the terminal's quotes: an older value is served at once while a fresh one loads (swr).
 export async function worldQuotes(ttl = 30, opts) {
   const load = async () => {
     const sym = {};
@@ -269,10 +251,9 @@ export async function worldQuotes(ttl = 30, opts) {
 }
 
 // ---------------------------------------------------------------------------
-// Price history (daily candles)
 // ---------------------------------------------------------------------------
 const RANGES = { "1d": 1, "5d": 5, "1m": 31, "3m": 92, "6m": 183, "1y": 366, "2y": 731, "5y": 1827, "ytd": 0 };
-const INTRADAY = { "1d": true, "5d": true };   // 5-30 minute bars
+const INTRADAY = { "1d": true, "5d": true };
 
 export function normRange(r) {
   r = String(r || "1y").toLowerCase().replace("мес", "m").replace("г", "y").replace("л", "y").replace("д", "d");
@@ -312,7 +293,6 @@ async function binanceHistory(coin, range) {
     catch (e) { err = e; }
   }
   if (!k) {
-    // Binance blocks some Cloudflare servers: Yahoo (one request for any range), then Coinbase (rate-limited on shared IPs)
     try { return { ...(await yahooHistory(coin + "-USD", range)), name: coin + "/USD", src2: "yahoo" }; } catch (e) { err = new Error((err ? err.message + "; " : "") + "Yahoo: " + (e.message || e)); }
     try { return await coinbaseHistory(coin, range); } catch (e) { throw new Error(err.message + "; Coinbase: " + (e.message || e)); }
   }
@@ -321,7 +301,6 @@ async function binanceHistory(coin, range) {
   return out;
 }
 
-// Coinbase Exchange candles: [time, low, high, open, close, volume], newest first, at most 300 per request
 async function coinbaseHistory(coin, range) {
   const days = sinceDays(range);
   const gran = range === "1d" ? 300 : range === "5d" ? 3600 : 86400;
@@ -338,7 +317,7 @@ async function coinbaseHistory(coin, range) {
   if (!rows.length) throw new Error("no history for " + coin);
   const seen = new Set();
   const sorted = rows.filter((x) => !seen.has(x[0]) && seen.add(x[0])).sort((a, b) => a[0] - b[0]);
-  const weekly = days > 900;   // like Binance: weekly points for five years
+  const weekly = days > 900;
   const out = { t: [], o: [], h: [], l: [], c: [], v: [], cur: "USD", name: coin + "/USD", src2: "coinbase" };
   sorted.forEach((x, i) => {
     if (weekly && (sorted.length - 1 - i) % 7) return;
@@ -350,7 +329,6 @@ async function coinbaseHistory(coin, range) {
 async function moexHistory(s, range, isIndex) {
   const days = sinceDays(range);
   const interval = range === "1d" ? 10 : range === "5d" ? 60 : days > 900 ? 7 : 24;
-  // intraday: from a few days back (weekends), then keep the last trading day / five days
   const from = new Date(Date.now() - (INTRADAY[range] ? days * 2 + 3 : days) * 864e5).toISOString().slice(0, 10);
   const path = isIndex ? "/engines/stock/markets/index/securities/" : "/engines/stock/markets/shares/boards/TQBR/securities/";
   const out = { t: [], o: [], h: [], l: [], c: [], v: [], cur: isIndex ? "" : "RUB", name: s };
@@ -395,7 +373,6 @@ export async function getHistory(env, raw, range) {
 }
 
 // ---------------------------------------------------------------------------
-// Company (US stocks): DES, FA, ERN, ANR, CN, HDS
 // ---------------------------------------------------------------------------
 const DAY = 86400;
 
@@ -406,7 +383,6 @@ function num(x, d) {
 }
 
 function seriesRows(series, keys) {
-  // { eps: [{period, v}], ... } → [{end, eps, ...}], newest first
   const by = {};
   for (const k of keys) for (const x of (series && series[k]) || []) {
     (by[x.period] = by[x.period] || { end: x.period })[k] = num(x.v, 4);
@@ -416,19 +392,13 @@ function seriesRows(series, keys) {
 
 const FA_KEYS = ["eps", "salesPerShare", "grossMargin", "operatingMargin", "netMargin", "roe", "totalDebtToEquity", "fcfMargin"];
 
-// Headlines are translated one by one (in parallel): joined together, the translator sometimes loses line breaks.
-// Google first, MyMemory if Google blocks the server; if both fail the original stays.
-// Only the Russian bot needs this: the terminal translates in the browser.
 // ---------------------------------------------------------------------------
-// Correlations (CORR): one request for the whole matrix instead of one per instrument
 // ---------------------------------------------------------------------------
-// the trading day of a bar: Moscow time for the Moscow Exchange, UTC for the rest (Yahoo stamps bars at the session open)
 function dayOf(t, src) {
   return new Date((t + (src === "moex" ? 3 * 3600 : 0)) * 1000).toISOString().slice(0, 10);
 }
 
 export function corrPair(a, b) {
-  // returns are taken between the days both instruments traded, so weekends and holidays do not shift them
   const common = Object.keys(a).filter((d) => b[d] != null).sort();
   const xs = [], ys = [];
   for (let i = 1; i < common.length; i++) {
@@ -460,7 +430,6 @@ export async function getCorr(env, raws, range) {
 }
 
 // ---------------------------------------------------------------------------
-// IPO calendar: Finnhub (upcoming, often empty on the free key) + docs/ipo.json from the news bot (Nasdaq calendar)
 // ---------------------------------------------------------------------------
 const IPO_ORDER = { expected: 0, priced: 1, filed: 2, withdrawn: 3 };
 
@@ -487,7 +456,6 @@ export async function getIpos(env) {
 
 export const translateState = { errors: [] };
 
-// the translators' codes for our languages
 const TR_LANG = { ru: "ru", zh: "zh-CN", ar: "ar" };
 
 async function translateOne(line, lang = "ru") {
@@ -517,12 +485,8 @@ async function translateLines(lines, lang = "ru") {
   })));
 }
 
-// des fa ern anr cn hds — live (Finnhub); co — the deep file docs/co/<T>.json (profile, management, estimates,
-// price targets, rating changes, holders, short interest, dividends, filings; built by company.py);
-// dvd, cf — dividends and filings (from co, or live when the company has no file); opt — option snapshot
-// docs/opt/<T>.json (options.py) or the Cboe IV30; rv — the company against its peers (docs/stocks.json)
 export const COMPANY_PARTS = ["des", "fa", "ern", "anr", "cn", "hds", "co", "dvd", "cf", "opt", "rv"];
-const notFound = (e) => { if (!/HTTP 404/.test(String(e.message))) throw e; };   // no file for this company — fine
+const notFound = (e) => { if (!/HTTP 404/.test(String(e.message))) throw e; };
 
 export async function getCompany(env, raw, parts = COMPANY_PARTS, lang = "en") {
   const p = parseSymbol(raw);
@@ -586,7 +550,7 @@ export async function getCompany(env, raw, parts = COMPANY_PARTS, lang = "en") {
   }
   if (want.has("fa")) {
     safe("fin", pageJSON(env, "fin/" + p.s + ".json", 3600).then((x) => { res.fin = x; }).catch((e) => {
-      if (!/404/.test(String(e.message))) throw e;   // companies outside the list have no SEC file — that's fine
+      if (!/404/.test(String(e.message))) throw e;
     }));
   }
   if (want.has("cn")) {
@@ -608,7 +572,6 @@ export async function getCompany(env, raw, parts = COMPANY_PARTS, lang = "en") {
         sh: t.share, px: num(t.transactionPrice, 2) }));
     }));
   }
-  // the deep files first; a live fallback starts right after a file turns out missing (in parallel with the rest)
   const coP = want.has("co") || want.has("dvd") || want.has("cf")
     ? pageJSON(env, "co/" + p.s + ".json", 1800).catch((e) => { notFound(e); return null; }) : Promise.resolve(null);
   safe("co", coP.then((x) => { if (x) res.co = x; }));
@@ -616,7 +579,7 @@ export async function getCompany(env, raw, parts = COMPANY_PARTS, lang = "en") {
     safe("dividends", coP.then((co) => (co && co.div && co.div.hist ? null : yahooDividends(p.s).then((x) => { res.dvd = x; }))));
   }
   if (want.has("cf")) {
-    const since = new Date(Date.now() - 400 * 864e5).toISOString().slice(0, 10);   // a year of filings keeps the answer small
+    const since = new Date(Date.now() - 400 * 864e5).toISOString().slice(0, 10);
     safe("filings", coP.then((co) => (co && co.filings && co.filings.length ? null :
       fh(env, "/stock/filings?symbol=" + s + "&from=" + since, 6 * 3600).then((x) => {
         res.cf = (x || []).filter((f) => f.form && f.form !== "4").slice(0, 25)
@@ -641,7 +604,6 @@ export async function getCompany(env, raw, parts = COMPANY_PARTS, lang = "en") {
   return res;
 }
 
-// dividends and splits from Yahoo chart events (small answer: one point a month)
 async function yahooDividends(sym) {
   const d = await getJSON(YAHOO + encodeURIComponent(sym.replace(".", "-")) + "?range=15y&interval=1mo&events=div%7Csplit", { ttl: 6 * 3600 });
   const ev = ((((d && d.chart) || {}).result || [])[0] || {}).events || {};
@@ -652,7 +614,6 @@ async function yahooDividends(sym) {
   return { hist, splits };
 }
 
-// RV: the company and its peers on the same ratios (Finnhub peers that are in docs/stocks.json; else the sector)
 const RV_KEYS = ["s", "n", "sec", "px", "ch", "mcap", "pe", "fpe", "ps", "pb", "dy", "beta", "revg", "epsg", "gm", "nm", "roe", "de", "r52", "rytd"];
 export async function relativeValue(env, sym) {
   const [st, peers] = await Promise.all([pageJSON(env, "stocks.json", 300),
@@ -677,7 +638,6 @@ export async function relativeValue(env, sym) {
 }
 
 async function moexCompany(s, lang = "en") {
-  // the exchange gives descriptions in English or Russian
   const l = lang === "ru" ? "ru" : "en";
   const d = await cached("issdesc:" + l + ":" + s, 6 * 3600, () => getJSON(ISS + "/securities/" + s + ".json?iss.meta=off&iss.only=description&lang=" + l));
   const desc = {};
@@ -691,7 +651,6 @@ async function moexCompany(s, lang = "en") {
 }
 
 // ---------------------------------------------------------------------------
-// Chart picture for the bot (QuickChart — free, no key)
 // ---------------------------------------------------------------------------
 export async function chartImage(h, title, lang = "en") {
   const n = h.c.length;
@@ -699,7 +658,7 @@ export async function chartImage(h, title, lang = "en") {
   const labels = [], data = [];
   const intraday = INTRADAY[h.range];
   const label = (t) => (intraday ? new Date((t + 3 * 3600) * 1000).toISOString().slice(h.range === "1d" ? 11 : 5, 16).replace("T", " ")
-    : dm(new Date(t * 1000).toISOString(), lang));   // intraday: Moscow time
+    : dm(new Date(t * 1000).toISOString(), lang));
   for (let i = 0; i < n; i += step) {
     labels.push(label(h.t[i]));
     data.push(+h.c[i].toFixed(4));

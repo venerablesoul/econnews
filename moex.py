@@ -1,8 +1,3 @@
-"""
-Moscow Exchange shares for the terminal heat map and screener (the Bloomberg functions IMAP and EQS for Russia).
-Source: MOEX ISS (free, no key, 15-minute delay): all shares of the main board TQBR with today's prices and
-turnover, plus the weights of the MOEX Russia Index (IMOEX). Result: docs/moex.json.
-"""
 from __future__ import annotations
 
 import json
@@ -21,7 +16,6 @@ TQBR_URL = (ISS + "engines/stock/markets/shares/boards/TQBR/securities.json?iss.
             "&marketdata.columns=SECID,OPEN,LOW,HIGH,LAST,LASTTOPREVPRICE,VALTODAY,ISSUECAPITALIZATION,UPDATETIME,MARKETPRICE")
 IMOEX_URL = ISS + "statistics/engines/stock/markets/index/analytics/IMOEX.json?iss.meta=off&limit=100"
 
-# sectors use the same English names as the US companies (the bot and the terminal translate them)
 F, E, M, T, C, U, I, S, D, R, H = ("Financials", "Energy", "Materials", "Technology", "Communication", "Utilities",
                                    "Industrials", "Consumer Staples", "Consumer Discretionary", "Real Estate", "Health Care")
 SECTORS = {
@@ -53,7 +47,6 @@ def table(d, name):
 
 
 def latin(name):
-    """'Sberbank ao' -> 'Sberbank', 'Tatneft ap' -> 'Tatneft pref'."""
     name = re.sub(r"\s+ao$", "", (name or "").strip(), flags=re.I)
     return re.sub(r"\s+ap$", " pref", name, flags=re.I)
 
@@ -68,7 +61,7 @@ def parse(tqbr, imoex):
         px = m.get("LAST") or m.get("MARKETPRICE") or s.get("PREVPRICE")
         val = m.get("VALTODAY") or 0
         if not px or (val < 1e6 and sid not in weights):
-            continue   # barely traded today and not in the index: noise on a map
+            continue
         if m.get("UPDATETIME"):
             times.append(m["UPDATETIME"])
         rows.append({"s": sid, "n": s.get("SHORTNAME"), "en": latin(s.get("LATNAME")) or sid, "sec": SECTORS.get(sid),
@@ -80,7 +73,6 @@ def parse(tqbr, imoex):
 
 
 def build(now=None, path=OUT, fetcher=get, max_age_min=15):
-    """Returns the number of shares written (0 if the file is fresh or nothing changed)."""
     now = now or datetime.now(timezone.utc)
     try:
         with open(path, encoding="utf-8") as f:
@@ -91,7 +83,7 @@ def build(now=None, path=OUT, fetcher=get, max_age_min=15):
         return 0
     rows, t = parse(fetcher(TQBR_URL), fetcher(IMOEX_URL))
     if len(rows) < 20 or rows == old.get("rows"):
-        return 0   # an empty answer or a closed market: keep the file (and the git history) as it is
+        return 0
     with open(path, "w", encoding="utf-8") as f:
         json.dump({"updated": now.isoformat(), "time": t, "rows": rows}, f, ensure_ascii=False, separators=(",", ":"))
     return len(rows)

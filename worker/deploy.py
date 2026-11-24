@@ -1,14 +1,4 @@
 #!/usr/bin/env python3
-"""
-Auto-deploy helper of the bot server (run by .github/workflows/worker.yml).
-
-  python worker/deploy.py prepare   — Cloudflare account, subscriber storage (KV), the *.workers.dev address
-  python worker/deploy.py secrets   — secrets file for `wrangler secret bulk` (from the GitHub secrets)
-  python worker/deploy.py telegram  — server check, webhook and bot menu (English + Russian), report to the owner
-  python worker/deploy.py config    — docs/config.json with the server address (for the bot and the terminal)
-
-Keys are derived from the bot token with the same formulas as in worker/src/lib.js and news_bot.py.
-"""
 from __future__ import annotations
 
 import hashlib
@@ -37,7 +27,6 @@ def env(name):
 
 
 def github_env(**kv):
-    """Pass values to the next workflow steps."""
     path = env("GITHUB_ENV")
     for k, v in kv.items():
         os.environ[k] = v
@@ -60,7 +49,6 @@ def http(method, url, body=None, headers=None, timeout=30):
         except ValueError:
             return e.code, {}
     except (urllib.error.URLError, OSError, ValueError) as e:
-        # a new *.workers.dev address may take a while to appear in DNS — not an error, we retry
         print(f"  {method} {url.split('?')[0]}: {type(e).__name__}: {e}"[:200])
         return 0, {}
 
@@ -95,7 +83,6 @@ def prepare():
             print(f"The token has several accounts, using the first: {accounts[0].get('name')}. "
                   "Another one can be set with the CLOUDFLARE_ACCOUNT_ID secret.")
 
-    # subscriber storage
     status, d = cf("GET", f"/accounts/{acc}/storage/kv/namespaces?per_page=100")
     if status != 200:
         fail("No access to Workers KV (" + cf_errors(d) + "). The token needs \"Workers KV Storage: Edit\" "
@@ -108,7 +95,6 @@ def prepare():
         kv = d["result"]["id"]
         print("Created the subscriber storage", KV_TITLE)
 
-    # <name>.workers.dev address (a new account may not have one yet — create it)
     status, d = cf("GET", f"/accounts/{acc}/workers/subdomain")
     sub = ((d.get("result") or {}).get("subdomain") or "") if status == 200 else ""
     if not sub:
@@ -157,7 +143,7 @@ def tg(method, body=None):
     return d
 
 
-COMMANDS = [   # (command, English, Russian)
+COMMANDS = [
     ("menu", "Main menu", "Главное меню"),
     ("news", "Top stories of the day", "Главные новости за сутки"),
     ("markets", "Markets now", "Рынки сейчас"),
@@ -196,9 +182,8 @@ def telegram():
     url = env("WORKER_URL")
     token = env("TELEGRAM_BOT_TOKEN")
     pages = env("PAGES_URL").rstrip("/") + "/"
-    # 1) is the server up? (a new workers.dev address sometimes takes up to a minute)
     ok = False
-    for _ in range(36):   # up to ~6 minutes
+    for _ in range(36):
         status, d = http("GET", url + "/")
         if status == 200 and d.get("ok"):
             ok = True
@@ -215,7 +200,6 @@ def telegram():
              "Check the TELEGRAM_BOT_TOKEN secret." % (status, d))
     n_subs = len(d.get("ids") or [])
 
-    # 2) Telegram: webhook, command menu (English by default, Russian for Russian-language apps), menu button
     r = tg("setWebhook", {"url": url + "/tg", "secret_token": hook, "allowed_updates": ["message", "callback_query"],
                           "max_connections": 20})
     if not r.get("ok"):
@@ -226,20 +210,16 @@ def telegram():
                                            "company data, a watchlist, a portfolio and alerts. /lang ru — по-русски."})
     tg("setMyDescription", {"description": "Главные экономические новости и рынки: ставки ЦБ, инфляция, нефть, валюты, "
                                            "данные компаний, список, портфель и алерты.", "language_code": "ru"})
-    # the button next to the message field opens the command list with «Main menu» on top;
-    # the terminal lives in the main menu itself (the «🖥 Terminal» button)
     tg("setChatMenuButton", {"menu_button": {"type": "commands"}})
     info = tg("getWebhookInfo").get("result") or {}
     if info.get("url") != url + "/tg":
         fail("The webhook was not set: " + json.dumps(info, ensure_ascii=False))
 
-    # 3) quotes through the server
     status, q = http("GET", url + "/api/quotes")
     stocks = len((q or {}).get("stocks") or {})
     world = len((q or {}).get("world") or {})
     errors = (q or {}).get("errors") or []
 
-    # 4) report to the owner
     owner = env("TELEGRAM_CHAT_ID")
     mark = lambda name: "✅" if env(name) else "—"
     text = (

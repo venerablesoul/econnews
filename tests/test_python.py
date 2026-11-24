@@ -1,4 +1,3 @@
-"""Тесты разборщиков данных для терминала: python3 -m unittest discover -s tests -v"""
 import json
 import math
 import os
@@ -28,7 +27,6 @@ def fx(name):
 
 
 class UsQuotesOnTheSite(unittest.TestCase):
-    """The terminal's US panel fills from data.json (GitHub Pages) at once; the bot server only adds live updates."""
 
     def test_us_panel_tickers_are_in_the_bot_data(self):
         import re
@@ -102,7 +100,7 @@ class StocksParsing(unittest.TestCase):
 
     def test_parse_metric_real_sample(self):
         m = stocks.parse_metric(json.loads(fx("finnhub_metric.json")))
-        self.assertGreater(m["mcap"], 1_000_000)          # Apple: больше триллиона (в млн $)
+        self.assertGreater(m["mcap"], 1_000_000)
         self.assertAlmostEqual(m["pe"], 38.83, places=1)
         self.assertAlmostEqual(m["dy"], 0.505, places=2)
         self.assertIn("beta", m)
@@ -117,17 +115,16 @@ class StocksParsing(unittest.TestCase):
             {"symbol": "JPM", "date": "2026-10-28", "hour": "bmo", "epsEstimate": 5.1, "revenueEstimate": 4.5e10},
         ]}
         out = stocks.parse_earnings_calendar(payload, set(stocks.BY_TICKER))
-        self.assertEqual([x["s"] for x in out], ["JPM", "MSFT", "AAPL"])   # по дате, до открытия раньше
+        self.assertEqual([x["s"] for x in out], ["JPM", "MSFT", "AAPL"])
         self.assertEqual(out[2]["n"], "Apple")
         self.assertEqual(out[2]["rev_e"], 115327453620)
 
     def test_earnings_calendar_split_when_cut_off(self):
-        # Finnhub keeps only the last 1500 rows of a long range: JPM (early) would be lost without splitting
         def get(a, b):
             days = (date.fromisoformat(b) - date.fromisoformat(a)).days + 1
             rows = [{"symbol": "JPM", "date": "2026-10-13"}] if a <= "2026-10-13" <= b else []
             rows += [{"symbol": "AAPL", "date": "2026-11-02"}] if a <= "2026-11-02" <= b else []
-            rows += [{"symbol": "ZZZ", "date": b}] * (60 * days)   # ~60 small companies a day
+            rows += [{"symbol": "ZZZ", "date": b}] * (60 * days)
             if len(rows) > stocks.FH_CALENDAR_CAP:
                 rows = sorted(rows, key=lambda r: r["date"])[-stocks.FH_CALENDAR_CAP:]
             return {"earningsCalendar": rows}
@@ -182,17 +179,17 @@ class SecFinancials(unittest.TestCase):
         self.assertEqual(fin["name"], "Test Inc")
         a = fin["annual"][0]
         self.assertEqual(a["end"], "2025-09-30")
-        self.assertEqual(a["rev"], 400)                     # свежий показатель, а не устаревший «Revenues»
+        self.assertEqual(a["rev"], 400)
         self.assertEqual(a["fcf"], 110 - 20)
         self.assertEqual(a["cash"], 55)
         self.assertEqual(a["eps"], 6.5)
         q = {r["end"]: r for r in fin["quarterly"]}
-        self.assertEqual(q["2025-09-30"]["rev"], 400 - 120 - 90 - 95)   # 4-й квартал = год − 3 квартала
-        self.assertEqual(q["2025-03-31"]["ocf"], 20)                     # из нарастающего итога
+        self.assertEqual(q["2025-09-30"]["rev"], 400 - 120 - 90 - 95)
+        self.assertEqual(q["2025-03-31"]["ocf"], 20)
         self.assertEqual(q["2025-06-30"]["ocf"], 30)
         self.assertEqual(q["2025-09-30"]["ocf"], 30)
         self.assertEqual(q["2025-06-30"]["fcf"], 30 - 5)
-        self.assertEqual(fin["quarterly"][0]["end"], "2025-12-31")      # новые сверху
+        self.assertEqual(fin["quarterly"][0]["end"], "2025-12-31")
 
     def test_update_financials_writes_files(self):
         with tempfile.TemporaryDirectory() as d, \
@@ -233,7 +230,6 @@ class BuildStocks(unittest.TestCase):
                 self.assertEqual(rows["AAPL"]["px"], 110.0)
                 first = [r for r in data["stocks"] if r.get("mu")]
                 self.assertEqual(len(first), 5)
-                # второй запуск: цена выросла — капитализация пересчитана, мультипликаторы обновляются дальше
                 prices2 = {k: dict(v, px=v["px"] * 1.1) for k, v in prices.items()}
                 with mock.patch.object(stocks, "fetch_prices", return_value=prices2):
                     data2 = stocks.build(now, key="k", metric_limit=5, path=path)
@@ -262,7 +258,7 @@ class RatesParsing(unittest.TestCase):
         i10 = c["t"].index("10Y")
         self.assertAlmostEqual(c["y"][i10], 5.19)
         self.assertEqual(c["x"][c["t"].index("3M")], 0.25)
-        self.assertIsNotNone(c["w"])                       # неделю назад есть в выборке
+        self.assertIsNotNone(c["w"])
         self.assertEqual(c["wd"], "2026-10-07")
 
     def test_jp_real_sample(self):
@@ -336,7 +332,6 @@ class RatesParsing(unittest.TestCase):
         self.assertEqual(rates.zq_symbol(2027, 1), "ZQF27.CBT")
 
     def test_implied_path_and_probabilities(self):
-        # ставка 3,88; заседание 28 октября (конец месяца → берём ноябрь), 9 декабря (середина месяца)
         meetings = [date(2026, 10, 28), date(2026, 12, 9)]
         avg = {(2026, 10): 3.89, (2026, 11): 4.005, (2026, 12): 4.10}
         path = rates.implied_path(3.88, meetings, avg)
@@ -391,7 +386,7 @@ class AutoReload(unittest.TestCase):
             h1 = news_bot.code_hash(d)
             with open(os.path.join(d, "data.json"), "w") as f:
                 f.write("{}")
-            self.assertEqual(news_bot.code_hash(d), h1)          # данные не считаются кодом
+            self.assertEqual(news_bot.code_hash(d), h1)
             with open(os.path.join(d, "a.py"), "w") as f:
                 f.write("x = 2")
             self.assertNotEqual(news_bot.code_hash(d), h1)
@@ -440,7 +435,6 @@ class NewsBotIntegration(unittest.TestCase):
 
 
 class NewsBotRunBothLanguages(unittest.TestCase):
-    """A whole run without network: every reader gets the messages in their own language."""
 
     def test_run_sends_each_reader_their_language(self):
         import news_bot
@@ -477,11 +471,11 @@ class NewsBotRunBothLanguages(unittest.TestCase):
                     mock.patch.object(news_bot, "update_extras", return_value=""), \
                     mock.patch.object(news_bot, "push_live"), \
                     mock.patch.object(news_bot.Telegram, "_call", fake_call):
-                news_bot.run()                       # first run: the owner gets the start message
+                news_bot.run()
                 first = [s for s in sent]
                 with open(env["STATE_FILE"], encoding="utf-8") as f:
                     st = json.load(f)
-                st["last_digest"] = ""               # let the evening digest go out on the next run
+                st["last_digest"] = ""
                 with open(env["STATE_FILE"], "w", encoding="utf-8") as f:
                     json.dump(st, f)
                 sent.clear()
@@ -497,12 +491,12 @@ class NewsBotRunBothLanguages(unittest.TestCase):
         en, ru, owner = "\n".join(by["200"]), "\n".join(by["300"]), "\n".join(by["100"])
         self.assertIn("Economy ·", en)
         self.assertIn("Oil jumps after OPEC cuts output sharply", en)
-        self.assertIn("[en] ЦБ сохранил ключевую ставку", en)          # Russian story translated for English readers
+        self.assertIn("[en] ЦБ сохранил ключевую ставку", en)
         self.assertIn("#BankOfRussia", en)
         self.assertIn("Bank of Russia", en)
-        self.assertIn("Top stories of", en)                          # the digest
+        self.assertIn("Top stories of", en)
         self.assertIn("Экономика ·", ru)
-        self.assertIn("[ru] Oil jumps after OPEC", ru)                # English story translated for Russian readers
+        self.assertIn("[ru] Oil jumps after OPEC", ru)
         self.assertIn("ЦБ сохранил ключевую ставку на уровне 16%", ru)
         self.assertIn("#нефть", ru)
         self.assertIn("ЦБ РФ", ru)
@@ -510,7 +504,6 @@ class NewsBotRunBothLanguages(unittest.TestCase):
         self.assertEqual(owner, en, "the owner has no language set — English")
         buttons = [json.loads(f["reply_markup"]) for c, _, f in sent if c == "300" and f.get("reply_markup")]
         self.assertTrue(buttons and "lang=ru" in buttons[0]["inline_keyboard"][0][0]["web_app"]["url"])
-        # data.json for the terminal: original + translation, English tags and sources
         n = {x["title"]: x for x in data["news"]}
         oil = n["Oil jumps after OPEC cuts output sharply"]
         self.assertEqual((oil["lang"], oil["title_ru"], oil["tags"]), ("en", "[ru] Oil jumps after OPEC cuts output sharply", ["oil"]))
@@ -529,7 +522,6 @@ class NewsBotRunBothLanguages(unittest.TestCase):
 
 
 class ChineseAndArabic(unittest.TestCase):
-    """The bot's Chinese and Arabic readers: every text, the mailing, data.json, the calendar, trades, the picture."""
 
     def test_every_text_in_four_languages_with_the_same_placeholders(self):
         import re
@@ -561,7 +553,7 @@ class ChineseAndArabic(unittest.TestCase):
         import news_bot
         now = datetime.now(timezone.utc)
 
-        def story(i, title, score, tags, source="Reuters"):    # the shape collect() gives (as in the test above)
+        def story(i, title, score, tags, source="Reuters"):
             return {"id": f"id{i}", "title": title, "lead": f"Lead {i}", "tags": tags, "link": f"https://x/{i}", "source": source,
                     "sources": [source], "score": score, "ts": now.isoformat()}
         batches = [[story(1, "Fed holds rates steady as inflation cools", 9, ["Fed", "rates"])],
@@ -593,7 +585,7 @@ class ChineseAndArabic(unittest.TestCase):
                 news_bot.run()
                 with open(env["STATE_FILE"], encoding="utf-8") as f:
                     st = json.load(f)
-                st["last_digest"] = ""               # let the evening digest go out on the next run
+                st["last_digest"] = ""
                 with open(env["STATE_FILE"], "w", encoding="utf-8") as f:
                     json.dump(st, f)
                 sent.clear()
@@ -608,8 +600,8 @@ class ChineseAndArabic(unittest.TestCase):
         zh, ar = "\n".join(by["400"]), "\n".join(by["500"])
         self.assertIn("经济 ·", zh)
         self.assertIn("[zh] Oil jumps after OPEC", zh)
-        self.assertIn("[zh] ЦБ сохранил ключевую ставку", zh)       # a Russian story translated for Chinese readers
-        self.assertIn("[zh] Lead 2", zh)                              # the summary too
+        self.assertIn("[zh] ЦБ сохранил ключевую ставку", zh)
+        self.assertIn("[zh] Lead 2", zh)
         self.assertIn("#石油", zh)
         self.assertIn("俄罗斯央行", zh)
         self.assertIn("阅读 →", zh)
@@ -617,7 +609,7 @@ class ChineseAndArabic(unittest.TestCase):
         self.assertIn("[ar] Oil jumps after OPEC", ar)
         self.assertIn("#النفط", ar)
         self.assertIn("البنك المركزي الروسي", ar)
-        self.assertIn("أبرز أخبار", ar)                               # the evening digest
+        self.assertIn("أبرز أخبار", ar)
         for chat, lang in (("400", "zh"), ("500", "ar")):
             buttons = [json.loads(f["reply_markup"]) for c, _, f in sent if c == chat and f.get("reply_markup")]
             self.assertTrue(buttons and buttons[0]["inline_keyboard"][0][0]["web_app"]["url"].endswith("?lang=" + lang))
@@ -694,7 +686,6 @@ class ChineseAndArabic(unittest.TestCase):
 
 
 class CompanyData(unittest.TestCase):
-    """company.py: Yahoo quoteSummary, dividend events, Nasdaq short interest -> docs/co/<T>.json"""
 
     def setUp(self):
         import company
@@ -705,10 +696,10 @@ class CompanyData(unittest.TestCase):
         s = self.co.clean(self.co.parse_summary(self.aapl))
         self.assertEqual(s["profile"]["name"], "Apple Inc.")
         self.assertEqual(s["profile"]["officers"][0]["n"], "Mr. Timothy D. Cook")
-        self.assertEqual(s["stats"]["gm"], 48.65)            # 0.4865 -> percent
+        self.assertEqual(s["stats"]["gm"], 48.65)
         self.assertIsInstance(s["targets"]["n"], int)
         self.assertEqual(s["targets"]["key"], "buy")
-        self.assertEqual(s["ratings"][0]["d"], "2026-10-12")  # newest first
+        self.assertEqual(s["ratings"][0]["d"], "2026-10-12")
         self.assertEqual([e["p"] for e in s["est"]], ["0q", "+1q", "0y", "+1y"])
         self.assertEqual(s["hist"][0]["q"], "2026-06-30")
         self.assertEqual(s["next"]["date"], "2026-11-02")
@@ -772,14 +763,14 @@ class CompanyData(unittest.TestCase):
 
         now = datetime(2026, 10, 15, 12, tzinfo=timezone.utc)
         with tempfile.TemporaryDirectory() as d:
-            with open(os.path.join(d, "MSFT.json"), "w") as f:   # fresh: skipped
+            with open(os.path.join(d, "MSFT.json"), "w") as f:
                 json.dump({"s": "MSFT", "updated": "2026-10-15T08:00:00+00:00"}, f)
-            with open(os.path.join(d, "AAPL.json"), "w") as f:   # old: refreshed, short rows kept
+            with open(os.path.join(d, "AAPL.json"), "w") as f:
                 json.dump({"s": "AAPL", "updated": "2026-10-14T00:00:00+00:00", "short": {"rows": [{"d": "2026-08-29", "sh": 1}]}}, f)
             fs = FakeSession()
             n = co.build(now, limit=5, sleep=0, tickers=["MSFT", "AAPL", "BRK.B"], out_dir=d, session=fs)
             self.assertEqual(n, 1)
-            self.assertEqual(fs.calls, ["BRK-B", "AAPL"])          # never-built first, MSFT is fresh
+            self.assertEqual(fs.calls, ["BRK-B", "AAPL"])
             out = co.load(os.path.join(d, "AAPL.json"))
             self.assertEqual(out["updated"], now.isoformat())
             self.assertEqual(out["div"]["hist"][0], ["2026-08-10", 0.27])
@@ -789,7 +780,6 @@ class CompanyData(unittest.TestCase):
 
 
 def cboe_payload():
-    """A tiny Cboe chain: price 100, two expiries, strikes 90/100/110 (+ one expired, one junk code)."""
     def o(code, oi, vol, iv, bid, ask, delta):
         return {"option": code, "open_interest": oi, "volume": vol, "iv": iv, "bid": bid, "ask": ask, "delta": delta,
                 "last_trade_price": (bid + ask) / 2}
@@ -811,17 +801,16 @@ class OptionChains(unittest.TestCase):
 
     def test_max_pain(self):
         import options
-        # calls pay above their strike, puts below: the cheapest expiry price for writers here is 100
         self.assertEqual(options.max_pain({90: 100, 100: 300, 110: 800}, {90: 500, 100: 300, 110: 10}), 100)
 
     def test_snapshot(self):
         import options
         s = options.summarize(cboe_payload(), date(2026, 10, 15))
-        self.assertEqual([e["d"] for e in s["exp"]], ["2026-10-16", "2026-11-20"])   # the expired one is skipped
+        self.assertEqual([e["d"] for e in s["exp"]], ["2026-10-16", "2026-11-20"])
         e = s["exp"][0]
         self.assertEqual((e["dte"], e["atm"], e["c_vol"], e["p_vol"], e["c_oi"], e["p_oi"]), (1, 100.0, 80, 71, 1200, 810))
         self.assertEqual(e["iv"], 32.0)
-        self.assertEqual(e["move"], 4.0)            # ATM straddle: 2.1 + 1.9
+        self.assertEqual(e["move"], 4.0)
         self.assertEqual(s["pcr_vol"], round(142 / 160, 2))
         self.assertEqual(len(s["chains"][0]["rows"]), 3)
         self.assertEqual(s["chains"][0]["rows"][1][:8], [100.0, 2.0, 2.2, 2.1, 30.0, 0.5, 300, 50])
@@ -838,15 +827,15 @@ class OptionChains(unittest.TestCase):
                     raise OSError("403")
                 return cboe_payload()
 
-            now = datetime(2026, 10, 15, 15, tzinfo=timezone.utc)   # Thursday, market open
+            now = datetime(2026, 10, 15, 15, tzinfo=timezone.utc)
             with open(os.path.join(d, "SPY.json"), "w") as f:
-                json.dump({"updated": "2026-10-15T14:50:00+00:00"}, f)   # fresh (10 min)
+                json.dump({"updated": "2026-10-15T14:50:00+00:00"}, f)
             with open(os.path.join(d, "AAPL.json"), "w") as f:
-                json.dump({"updated": "2026-10-15T13:00:00+00:00"}, f)   # 2 h old core ticker: due
+                json.dump({"updated": "2026-10-15T13:00:00+00:00"}, f)
             with open(os.path.join(d, "KO.json"), "w") as f:
-                json.dump({"updated": "2026-10-15T08:00:00+00:00"}, f)   # 7 h old other ticker: not due
+                json.dump({"updated": "2026-10-15T08:00:00+00:00"}, f)
             with open(os.path.join(d, "QQQ.json"), "w") as f:
-                json.dump({"updated": "2026-10-15T14:30:00+00:00"}, f)   # fast ticker 30 min old: due (every 15 min)
+                json.dump({"updated": "2026-10-15T14:30:00+00:00"}, f)
             summ = os.path.join(d, "options.json")
             gdir = os.path.join(d, "gex")
             n = options.build(now, sleep=0, tickers=["SPY", "QQQ", "AAPL", "KO", "BAD"], out_dir=d, summary_path=summ,
@@ -854,13 +843,11 @@ class OptionChains(unittest.TestCase):
             self.assertEqual((n, sorted(got)), (2, ["AAPL", "BAD", "QQQ"]))
             rows = options.load(summ)["rows"]
             self.assertEqual({r["s"]: r["n"] for r in rows}["AAPL"], "Apple")
-            # the core tickers also get dealer positioning and its history
             g = options.load(os.path.join(gdir, "AAPL.json"))
             self.assertEqual((g["s"], g["n"], g["px"]), ("AAPL", "Apple", 100.0))
             self.assertIn("zero", g["levels"])
             self.assertTrue(os.path.exists(os.path.join(gdir, "hist", "QQQ.json")))
-            self.assertFalse(os.path.exists(os.path.join(gdir, "KO.json")))   # not a core ticker
-        # a fresh start: the FAST ones (indexes, big ETFs) all at once, then the big stocks, then the rest
+            self.assertFalse(os.path.exists(os.path.join(gdir, "KO.json")))
         got.clear()
         with tempfile.TemporaryDirectory() as d:
             options.build(now, limit=1, sleep=0, tickers=["AAPL", "KO", "SPX", "SPY", "QQQ", "MSFT"], out_dir=d,
@@ -869,7 +856,6 @@ class OptionChains(unittest.TestCase):
 
 
 def yahoo_answer(px=100.0, exps=(1792108800, 1795132800), first_only=False, date_ts=None):
-    """A tiny Yahoo v7 options answer: price 100, strikes 90/100/110 for each expiry asked for."""
     def c(sym, k, cp, oi, iv, bid, ask):
         return {"contractSymbol": f"XYZ{sym}{cp}{int(k * 1000):08d}", "strike": k, "openInterest": oi, "volume": 5,
                 "impliedVolatility": iv, "bid": bid, "ask": ask, "lastPrice": (bid + ask) / 2}
@@ -890,12 +876,11 @@ class DealerPositioning(unittest.TestCase):
         self.assertAlmostEqual(g["dc"], 0.6368, places=4)
         self.assertAlmostEqual(g["dp"], -0.3632, places=4)
         self.assertAlmostEqual(g["g"], 0.018762, places=5)
-        self.assertAlmostEqual(g["v"], 0.37524, places=4)            # per volatility point
-        self.assertAlmostEqual(g["tc"] * 365, -6.4140, places=3)     # per year, the textbook value
+        self.assertAlmostEqual(g["v"], 0.37524, places=4)
+        self.assertAlmostEqual(g["tc"] * 365, -6.4140, places=3)
         self.assertAlmostEqual(g["tp"] * 365, -1.6579, places=3)
         self.assertIsNone(gex.greeks(100, 100, 0, 0.2))
         self.assertIsNone(gex.greeks(100, 100, 1, None))
-        # vanna and charm against finite differences of delta
         h = 1e-4
         up, dn = gex.greeks(100, 110, 0.5, 0.25 + h, 0.03), gex.greeks(100, 110, 0.5, 0.25 - h, 0.03)
         self.assertAlmostEqual(gex.greeks(100, 110, 0.5, 0.25, 0.03)["vanna"], (up["dc"] - dn["dc"]) / (2 * h) / 100, places=6)
@@ -918,27 +903,26 @@ class DealerPositioning(unittest.TestCase):
         now = datetime(2026, 10, 15, 15, tzinfo=timezone.utc)
         s = gex.analyze(self.chain(now), 100.0, now, size=100, band=0.2)
         lv = s["levels"]
-        self.assertEqual((lv["cwall"], lv["pwall"]), (105, 95))           # the biggest call and put gamma
-        self.assertTrue(95 < lv["zero"] < 105)                              # puts below, calls above: the flip is between
+        self.assertEqual((lv["cwall"], lv["pwall"]), (105, 95))
+        self.assertTrue(95 < lv["zero"] < 105)
         y = dict(zip(s["prof"]["x"], s["prof"]["y"]))
-        self.assertLess(min(y.items(), key=lambda p: p[0])[1], 0)           # far below the flip: negative gamma
-        self.assertGreater(max(y.items(), key=lambda p: p[0])[1], 0)        # far above: positive
+        self.assertLess(min(y.items(), key=lambda p: p[0])[1], 0)
+        self.assertGreater(max(y.items(), key=lambda p: p[0])[1], 0)
         i = s["k"].index(105)
         self.assertGreater(s["gc"][i], 0)
         self.assertLess(s["gp"][s["k"].index(95)], s["gp"][s["k"].index(90)])
-        # net GEX at a strike equals calls + puts, and the front-expiry part is about the nearer expiry only
         self.assertAlmostEqual(s["tot"]["gex"], sum(s["gc"]) + sum(s["gp"]), delta=abs(s["tot"]["gex"]) * 1e-3)
         self.assertEqual(s["levels"]["pain_d"], "2026-10-22")
         self.assertEqual(s["tot"]["pcr_oi"], round(10850 / 6800, 2))
         self.assertEqual(s["surf"]["d"], ["2026-10-22", "2026-11-19"])
-        self.assertEqual(len(s["grk"]["k"]), 3)                              # strikes within 8% of the price
+        self.assertEqual(len(s["grk"]["k"]), 3)
         self.assertAlmostEqual(s["em"]["iv30"], 0.25, places=3)
         self.assertAlmostEqual(s["em"]["d1"], 100 * 0.25 / math.sqrt(252), places=2)
 
     def test_history_keeps_sessions(self):
         import gex
         with tempfile.TemporaryDirectory() as d:
-            base = datetime(2026, 10, 12, 15, tzinfo=timezone.utc)   # Monday
+            base = datetime(2026, 10, 12, 15, tzinfo=timezone.utc)
             for day in range(7):
                 for h in (0, 1):
                     now = base + timedelta(days=day, hours=h)
@@ -947,15 +931,15 @@ class DealerPositioning(unittest.TestCase):
             h = gex.load(os.path.join(d, "hist", "XYZ.json"))
             self.assertEqual(sorted({x["day"] for x in h["intra"]}), ["2026-10-16", "2026-10-17", "2026-10-18"])
             self.assertEqual(len(h["days"]), 7)
-            self.assertEqual(h["days"][-1]["px"], 106.0)          # the last snapshot of a day stands for the day
+            self.assertEqual(h["days"][-1]["px"], 106.0)
             self.assertEqual(gex.load(os.path.join(d, "XYZ.json"))["src"], "test")
-        self.assertEqual(gex.session_day(datetime(2026, 7, 1, 2, tzinfo=timezone.utc), "equity"), "2026-06-30")   # 22:00 in New York
+        self.assertEqual(gex.session_day(datetime(2026, 7, 1, 2, tzinfo=timezone.utc), "equity"), "2026-06-30")
         self.assertEqual(gex.session_day(datetime(2026, 12, 1, 4, 30, tzinfo=timezone.utc), "equity"), "2026-11-30")
         self.assertEqual(gex.session_day(datetime(2026, 12, 1, 4, 30, tzinfo=timezone.utc), "crypto"), "2026-12-01")
 
     def test_cboe_chain_and_expired(self):
         import gex
-        now = datetime(2026, 10, 16, 22, tzinfo=timezone.utc)   # after the close of the 16 Oct expiry
+        now = datetime(2026, 10, 16, 22, tzinfo=timezone.utc)
         chain, S = gex.from_cboe(cboe_payload(), now)
         self.assertEqual(S, 100.0)
         self.assertEqual({o["exp"] for o in chain}, {"2026-11-20"})
@@ -993,14 +977,14 @@ class DealerPositioning(unittest.TestCase):
             return json.load(open(os.path.join(fx, "deribit_dvol.json")))["result"]
         now = datetime(2026, 11, 23, 13, 26, tzinfo=timezone.utc)
         with tempfile.TemporaryDirectory() as d:
-            self.assertEqual(deribit.build(now, out_dir=d, fetcher=fetcher, sleep=0), 1)   # ETH failed, BTC written
+            self.assertEqual(deribit.build(now, out_dir=d, fetcher=fetcher, sleep=0), 1)
             btc = json.load(open(os.path.join(d, "BTC.json")))
             self.assertEqual((btc["src"], btc["kind"]), ("deribit", "crypto"))
             self.assertTrue(30 < btc["dvol"] < 120)
             self.assertTrue(btc["dvol_hist"])
             calls.clear()
             self.assertEqual(deribit.build(now + timedelta(minutes=5), out_dir=d, fetcher=fetcher, sleep=0), 0)
-            self.assertNotIn(("get_book_summary_by_currency", "BTC"), calls)            # fresh: not asked again
+            self.assertNotIn(("get_book_summary_by_currency", "BTC"), calls)
 
     def test_yahoo_fallback(self):
         import options
@@ -1018,18 +1002,17 @@ class DealerPositioning(unittest.TestCase):
         now = datetime(2026, 10, 15, 15, tzinfo=timezone.utc)
         fs = FakeSession()
         p = options.yahoo_chain("SPX", now, session=fs, sleep=0)
-        self.assertIn("/%5ESPX?", fs.urls[0])                              # the index's own code at Yahoo
-        self.assertEqual(len(fs.urls), 2)                                    # the first answer + one more expiry
+        self.assertIn("/%5ESPX?", fs.urls[0])
+        self.assertEqual(len(fs.urls), 2)
         self.assertEqual(p["src"], "yahoo")
         s = options.summarize(p, now.date())
         self.assertEqual([e["d"] for e in s["exp"]], ["2026-10-16", "2026-11-20"])
         row = s["chains"][0]["rows"][1]
         self.assertEqual(row[0], 100.0)
-        self.assertTrue(0.4 < row[5] < 0.6)                                  # the call delta comes from Black-Scholes
+        self.assertTrue(0.4 < row[5] < 0.6)
         self.assertEqual(options.pick_expiries([1792108800, 1795132800, 1700000000], now), [1792108800, 1795132800])
         self.assertTrue(options.third_friday(date(2026, 11, 20)))
         self.assertFalse(options.third_friday(date(2026, 11, 13)))
-        # Cboe refuses → Yahoo, and Cboe is left alone for a while
         calls = []
 
         def cboe(sym):
@@ -1047,15 +1030,15 @@ class DealerPositioning(unittest.TestCase):
 class PreMarketBrief(unittest.TestCase):
     def test_message_in_every_language(self):
         import brief
-        now = datetime(2026, 11, 23, 13, 0, tzinfo=timezone.utc)   # 16:00 MSK
+        now = datetime(2026, 11, 23, 13, 0, tzinfo=timezone.utc)
         with tempfile.TemporaryDirectory() as d:
             def snap(sym, px, gex, upd):
                 with open(os.path.join(d, sym + ".json"), "w") as f:
                     json.dump({"s": sym, "updated": upd.isoformat(), "px": px, "tot": {"gex": gex},
                                "levels": {"zero": px * 0.99, "cwall": px * 1.01, "pwall": px * 0.98},
                                "em": {"d1": px * 0.01, "d1_pct": 1.0, "iv30": 0.16}}, f)
-            snap("SPY", 676.0, 2.5e9, now - timedelta(hours=3))        # no SPX file: the ETF stands in
-            snap("NDX", 24000.0, -1.2e9, now - timedelta(hours=90))    # stale: left out
+            snap("SPY", 676.0, 2.5e9, now - timedelta(hours=3))
+            snap("NDX", 24000.0, -1.2e9, now - timedelta(hours=90))
             snap("BTC", 61211.0, -3.0e7, now - timedelta(minutes=10))
             notes = []
             make = brief.build(now, [{"short": "VIX", "value": 17.25}], gex_dir=d,
@@ -1067,19 +1050,18 @@ class PreMarketBrief(unittest.TestCase):
         self.assertIn("GEX −$30.0M — negative gamma", en)
         self.assertNotIn("Nasdaq", en)
         self.assertIn("VIX 17.25", en)
-        self.assertIn("Calm &lt;today&gt;.", en)                       # the AI text is escaped
-        self.assertNotIn("as of", en.split("Bitcoin")[0])                 # 3 hours old: no date
-        with tempfile.TemporaryDirectory() as d2:                          # Monday: Friday's US levels count, dated
+        self.assertIn("Calm &lt;today&gt;.", en)
+        self.assertNotIn("as of", en.split("Bitcoin")[0])
+        with tempfile.TemporaryDirectory() as d2:
             with open(os.path.join(d2, "SPX.json"), "w") as f:
                 json.dump({"s": "SPX", "kind": "equity", "updated": (now - timedelta(hours=64)).isoformat(), "px": 6700.0,
                            "tot": {"gex": 1e9}, "levels": {}, "em": {}}, f)
             mon = brief.build(now, [], gex_dir=d2)("en")
         self.assertIn("(as of 21 Nov)", mon)
         self.assertIn("Опционные уровни перед открытием США", ru)
-        self.assertIn("61 211", ru)                                # Russian number format
+        self.assertIn("61 211", ru)
         self.assertIn("положительная гамма", ru)
         self.assertIn("S&P 500: price 676.0", notes[0])
-        # Chinese and Arabic: their own texts, units and dates; the AI note falls back to English when theirs is missing
         self.assertIn("美股开盘前的期权关键位</b> · 11月23日", zh)
         self.assertIn("<b>标普500</b> 676", zh)
         self.assertIn("GEX +$25.0亿 — 正伽马", zh)
@@ -1090,13 +1072,13 @@ class PreMarketBrief(unittest.TestCase):
         self.assertIn("<b>بيتكوين</b> 61,211", ar)
         self.assertIn("GEX وLVL في المنصة", ar)
         with tempfile.TemporaryDirectory() as d:
-            self.assertIsNone(brief.build(now, [], gex_dir=d))         # nothing fresh: no message
+            self.assertIsNone(brief.build(now, [], gex_dir=d))
 
     def test_ai_note_parsing(self):
         import ai
         with mock.patch.dict(os.environ, {"ANTHROPIC_API_KEY": "k"}):
             out = ai.brief_note("facts", call=lambda prompt, key, model: 'Sure: {"en": "Support at 6,700.", "ru": "Поддержка 6 700."}')
-            self.assertEqual(out, {"en": "Support at 6,700.", "ru": "Поддержка 6 700.",      # no Chinese/Arabic: English
+            self.assertEqual(out, {"en": "Support at 6,700.", "ru": "Поддержка 6 700.",
                                    "zh": "Support at 6,700.", "ar": "Support at 6,700."})
             out = ai.brief_note("facts", call=lambda *a: '{"en": "Support.", "ru": "Поддержка.", "zh": "支撑。", "ar": "دعم."}')
             self.assertEqual(out, {"en": "Support.", "ru": "Поддержка.", "zh": "支撑。", "ar": "دعم."})
@@ -1106,7 +1088,6 @@ class PreMarketBrief(unittest.TestCase):
 
 
 class TankersAis(unittest.TestCase):
-    """The WebSocket client against a local server, the messages and the file (no network)."""
 
     def serve(self, frames, got):
         import socket as so
@@ -1124,7 +1105,6 @@ class TankersAis(unittest.TestCase):
             import base64 as b64, hashlib as hl
             acc = b64.b64encode(hl.sha1(key + b"258EAFA5-E914-47DA-95CA-C5AB0DC85B11").digest())
             c.sendall(b"HTTP/1.1 101 Switching Protocols\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: " + acc + b"\r\n\r\n")
-            # the client's first frame: the subscription (masked)
             h = c.recv(2)
             n = h[1] & 0x7F
             if n == 126:
@@ -1138,7 +1118,7 @@ class TankersAis(unittest.TestCase):
                 c.sendall(fr)
             time.sleep(0.3)
             try:
-                got.append(("after", c.recv(64)))   # the pong (or the close)
+                got.append(("after", c.recv(64)))
             except OSError:
                 pass
             c.close()
@@ -1163,9 +1143,9 @@ class TankersAis(unittest.TestCase):
                   "Message": {"ShipStaticData": {"Type": 80, "Destination": "FUJAIRAH@@@", "MaximumStaticDraught": 14.2}}}
         bad = {"MessageType": "PositionReport", "MetaData": {"MMSI": 12}, "Message": {"PositionReport": {"Latitude": 1, "Longitude": 1}}}
         txt = json.dumps(pos)
-        frames = [self.frame(txt[:20], fin=False), self.frame(txt[20:], op=0),        # a message in two fragments
-                  self.frame(b"\x01\x02", op=9),                                         # a ping: the client answers
-                  self.frame(json.dumps(static).encode(), op=2),                        # a binary frame
+        frames = [self.frame(txt[:20], fin=False), self.frame(txt[20:], op=0),
+                  self.frame(b"\x01\x02", op=9),
+                  self.frame(json.dumps(static).encode(), op=2),
                   self.frame(json.dumps(bad)), self.frame(b"", op=8)]
         got = []
         port = self.serve(frames, got)
@@ -1173,36 +1153,34 @@ class TankersAis(unittest.TestCase):
         ships, n = ais.listen("SECRET", seconds=5, url=f"ws://127.0.0.1:{port}/v0/stream", now=now)
         self.server_thread.join(3)
         masked, sub = got[0]
-        self.assertTrue(masked)                                      # client frames are masked
+        self.assertTrue(masked)
         self.assertEqual(json.loads(sub)["APIKey"], "SECRET")
-        self.assertEqual(json.loads(sub)["BoundingBoxes"], ais.WORLD_BOX)   # the whole world (the straits are inside)
+        self.assertEqual(json.loads(sub)["BoundingBoxes"], ais.WORLD_BOX)
         self.assertEqual(n, 2)
         rec = ships["538001234"]
         self.assertEqual((rec["name"], rec["type"], rec["dest"], rec["area"], rec["sog"], rec["cog"]), ("OCEAN STAR", 80, "FUJAIRAH", "hormuz", 12.4, 301))
-        self.assertTrue(got[1][1].startswith(b"\x8a"))               # the pong, opcode 10
+        self.assertTrue(got[1][1].startswith(b"\x8a"))
         out = ais.merge({"tk": {"2026-11-22": [538009999]}, "ships": [{"mmsi": 538009999, "lat": 1.2, "lon": 103.8, "t": "2026-11-23T00:00:00+00:00", "area": "malacca"}]}, ships, now)
-        self.assertEqual([s["mmsi"] for s in out["ships"]], [538001234])   # the other one is older than 12 h
+        self.assertEqual([s["mmsi"] for s in out["ships"]], [538001234])
         self.assertEqual({a["id"]: a["tankers"] for a in out["areas"]}["hormuz"], 1)
-        self.assertEqual(out["tk"], {"2026-11-23": [538001234, 538009999]})   # both are tankers seen today
+        self.assertEqual(out["tk"], {"2026-11-23": [538001234, 538009999]})
 
     def test_tankers_remembered_for_a_week_only(self):
         import ais
         now = datetime(2026, 11, 23, 13, tzinfo=timezone.utc)
         t = now.isoformat()
-        new = {"111111111": {"mmsi": 111111111, "lat": 26.4, "lon": 56.2, "t": t, "area": "hormuz"},          # no type now: known tanker
-               "222222222": {"mmsi": 222222222, "lat": 26.3, "lon": 56.1, "t": t, "area": "hormuz", "type": 70},  # cargo: not kept
-               "333333333": {"mmsi": 333333333, "lat": 26.2, "lon": 56.0, "t": t, "area": "hormuz"}}            # type unknown: not shown
+        new = {"111111111": {"mmsi": 111111111, "lat": 26.4, "lon": 56.2, "t": t, "area": "hormuz"},
+               "222222222": {"mmsi": 222222222, "lat": 26.3, "lon": 56.1, "t": t, "area": "hormuz", "type": 70},
+               "333333333": {"mmsi": 333333333, "lat": 26.2, "lon": 56.0, "t": t, "area": "hormuz"}}
         old = {"tk": {"2026-11-20": [111111111], "2026-11-14": [444444444], "2026-11-18": [555555555]}}
         out = ais.merge(old, new, now)
         self.assertEqual([s["mmsi"] for s in out["ships"]], [111111111])
-        self.assertEqual(out["tk"], {"2026-11-18": [555555555], "2026-11-23": [111111111]})   # 444… was last seen 9 days ago
+        self.assertEqual(out["tk"], {"2026-11-18": [555555555], "2026-11-23": [111111111]})
         self.assertEqual({a["id"]: (a["tankers"], a["seen_now"]) for a in out["areas"]}["hormuz"], (1, 3))
-        # a week of traffic stays a small file: only tankers are remembered, at most MAX_TANKER_IDS
         many = {str(100000000 + i): {"mmsi": 100000000 + i, "type": 80 if i % 4 == 0 else 70} for i in range(40000)}
         out = ais.merge({}, many, now)
         self.assertEqual(sum(len(v) for v in out["tk"].values()), min(10000, ais.MAX_TANKER_IDS))
         self.assertLess(len(json.dumps(out)), 120_000)
-        # a remembered tanker whose new static message gives another type is forgotten at once
         out = ais.merge({"tk": {"2026-11-22": [666666666]}}, {"666666666": {"mmsi": 666666666, "type": 70}}, now)
         self.assertEqual(out["tk"], {})
 
@@ -1218,13 +1196,12 @@ class TankersAis(unittest.TestCase):
             with mock.patch.dict(os.environ, {"AISSTREAM_API_KEY": "TOPSECRET"}):
                 n = ais.build(now, path=path, listen_fn=lambda k, now=None: (calls.append(k), ({}, 7))[1])
                 self.assertEqual((n, calls), (7, ["TOPSECRET"]))
-                self.assertEqual(ais.build(now + timedelta(minutes=10), path=path, listen_fn=lambda k, now=None: calls.append(k)), 0)   # fresh
+                self.assertEqual(ais.build(now + timedelta(minutes=10), path=path, listen_fn=lambda k, now=None: calls.append(k)), 0)
             with open(path) as f:
                 self.assertNotIn("TOPSECRET", f.read())
 
 
 class OilChokepoints(unittest.TestCase):
-    """chokepoints.py: EIA's quarterly chokepoint table read from its page, kept, merged, never replaced by a bad page."""
     NOW = datetime(2026, 11, 23, 13, tzinfo=timezone.utc)
 
     def page(self):
@@ -1234,15 +1211,14 @@ class OilChokepoints(unittest.TestCase):
     def test_reads_the_table(self):
         import chokepoints as c
         d = c.parse(self.page(), self.NOW)
-        self.assertEqual(d["q"], ["2Q25", "3Q25", "4Q25", "1Q26", "2Q26", "3Q26"])   # the forecast column left out
-        self.assertEqual(d["v"]["hormuz"], [21.1, 21.4, 21.6, 15.0, 5.1, 9.1])         # not the script's 99, not Table 3
-        self.assertEqual(d["v"]["danish"][-1], 4.5)                                     # "Danish Straits a" and its footnote row
+        self.assertEqual(d["q"], ["2Q25", "3Q25", "4Q25", "1Q26", "2Q26", "3Q26"])
+        self.assertEqual(d["v"]["hormuz"], [21.1, 21.4, 21.6, 15.0, 5.1, 9.1])
+        self.assertEqual(d["v"]["danish"][-1], 4.5)
         self.assertEqual(d["v"]["turkish"][0], 3.7)
         self.assertEqual(sorted(d["v"]), sorted(rid for rid, _ in c.ROWS))
-        self.assertEqual(d["released"], "2026-11-10")   # the label is bold on the page: "<strong>Release Date:</strong> ..."
+        self.assertEqual(d["released"], "2026-11-10")
         self.assertEqual([c.release_date(x) for x in ("Release Date: October 6, 2026", "<b>Release Date</b>: <span>march 3, 2027</span>", "Next Release: May 5, 2027", "")],
                          ["2026-10-06", "2027-03-03", None, None])
-        # the map's built-in figures are the same table (the fallback when the bot's file is missing)
         with open(os.path.join(os.path.dirname(HERE), "docs", "terminal", "map.js"), encoding="utf-8") as f:
             js = f.read()
         self.assertIn("var EIA_Q = ['2Q25', '3Q25', '4Q25', '1Q26', '2Q26', '3Q26'];", js)
@@ -1276,7 +1252,6 @@ class OilChokepoints(unittest.TestCase):
             with open(path) as f:
                 first = json.load(f)
             calls = []
-            # EIA changed its page a day later: the error is logged, the figures stay, no new try for a day
             later = self.NOW + timedelta(hours=21)
             with self.assertRaises(ValueError):
                 c.build(later, path=path, fetcher=lambda url: (calls.append(url), bad_pages["missing rows"])[1])
@@ -1286,7 +1261,6 @@ class OilChokepoints(unittest.TestCase):
             self.assertIn("missing rows", kept["error"])
             self.assertEqual(c.build(later + timedelta(hours=2), path=path, fetcher=lambda url: calls.append(url)), 0)
             self.assertEqual(len(calls), 1)
-            # the network failed: the same
             def down(url):
                 raise OSError("timed out")
             with self.assertRaises(OSError):
@@ -1298,7 +1272,6 @@ class OilChokepoints(unittest.TestCase):
         import chokepoints as c
         with tempfile.TemporaryDirectory() as d:
             path = os.path.join(d, "chokepoints.json")
-            # what was kept: 1Q25..4Q25 (1Q25 is older than EIA's table now shows)
             old_q = ["1Q25", "2Q25", "3Q25", "4Q25"]
             old = {"q": old_q, "v": {rid: [1.0, 2.0, 3.0, 4.0] for rid, _ in c.ROWS}, "updated": "2026-08-01T00:00:00+00:00",
                    "checked": "2026-11-01T00:00:00+00:00"}
@@ -1308,22 +1281,19 @@ class OilChokepoints(unittest.TestCase):
             with open(path) as f:
                 out = json.load(f)
             self.assertEqual(out["q"], ["1Q25", "2Q25", "3Q25", "4Q25", "1Q26", "2Q26", "3Q26"])
-            self.assertEqual(out["v"]["hormuz"], [1.0, 21.1, 21.4, 21.6, 15.0, 5.1, 9.1])   # revised quarters replaced
+            self.assertEqual(out["v"]["hormuz"], [1.0, 21.1, 21.4, 21.6, 15.0, 5.1, 9.1])
             self.assertEqual(n, 6)
             self.assertEqual(out["updated"], self.NOW.isoformat())
             self.assertNotIn("error", out)
-            # the same table a day later: nothing new, the file says when it was last checked
             n = c.build(self.NOW + timedelta(days=1), path=path, fetcher=lambda url: self.page())
             with open(path) as f:
                 again = json.load(f)
             self.assertEqual((n, again["updated"], again["checked"]), (0, out["updated"], (self.NOW + timedelta(days=1)).isoformat()))
-            # at most KEEP_Q quarters are kept
             many = {"q": [f"{q}Q{y:02d}" for y in range(10, 25) for q in range(1, 5)], "v": {}}
             many["v"] = {rid: [1.0] * len(many["q"]) for rid, _ in c.ROWS}
             merged, _ = c.merge(many, c.parse(self.page(), self.NOW))
             self.assertEqual(len(merged["q"]), c.KEEP_Q)
             self.assertEqual(merged["q"][-1], "3Q26")
-            # new figures on a page whose date cannot be read: no date, rather than the date of the older figures
             newer = self.page().replace("<td>5.1</td><td>9.1</td>", "<td>5.1</td><td>9.3</td>").replace("Release Date:", "Updated:")
             self.assertEqual(c.build(self.NOW + timedelta(days=3), path=path, fetcher=lambda url: newer), 1)
             with open(path) as f:
@@ -1352,12 +1322,12 @@ class MacroAndMoex(unittest.TestCase):
             with open(path, encoding="utf-8") as f:
                 out = json.load(f)
             self.assertEqual(out["years"], years)
-            self.assertNotIn("LUR", out["ind"])                      # the failed indicator is left out
+            self.assertNotIn("LUR", out["ind"])
             usa = next(r for r in out["rows"] if r["c"] == "USA")
             self.assertEqual((usa["en"], usa["ru"]), ("United States", "США"))
             self.assertEqual(usa["v"]["NGDP_RPCH"][-1], None)
             fetched.clear()
-            self.assertEqual(macro.build(now + timedelta(hours=3), path=path, fetcher=fetcher), 0)   # fresh: no requests
+            self.assertEqual(macro.build(now + timedelta(hours=3), path=path, fetcher=fetcher), 0)
             self.assertEqual(fetched, [])
 
     def test_moex_board(self):
@@ -1390,12 +1360,10 @@ class MacroAndMoex(unittest.TestCase):
             self.assertEqual((tat["en"], tat["sec"]), ("Tatneft pref", "Energy"))
             self.assertNotIn("DEAD", [r["s"] for r in out["rows"]])
             self.assertNotIn("TINY", [r["s"] for r in out["rows"]], "under 1 mln rubles of turnover and not in the index")
-            # same data 20 minutes later: nothing is rewritten
             self.assertEqual(moex.build(now + timedelta(minutes=20), path=path, fetcher=fetcher), 0)
 
 
 class MapsAndMonitorsData(unittest.TestCase):
-    """Data for the terminal's new functions: CA/AU curves, overnight rates (MMR/BTMM), world valuations (WPE), the map of forecasts."""
 
     def test_canada_and_australia_curves(self):
         boc = {"observations": [
@@ -1443,7 +1411,7 @@ class MapsAndMonitorsData(unittest.TestCase):
             out = rates.money_markets(date(2026, 10, 22), old)
         self.assertEqual([x["k"] for x in out], ["SOFR", "ESTR"])
         self.assertEqual(out[0]["v"], 4.33)
-        self.assertEqual(out[1]["date"], "2026-10-01")   # the last known value, not a lost row
+        self.assertEqual(out[1]["date"], "2026-10-01")
 
     def test_wpe_parse_and_build(self):
         import wpe
@@ -1453,12 +1421,11 @@ class MapsAndMonitorsData(unittest.TestCase):
               "price": {"regularMarketChangePercent": {"raw": -0.0042}, "regularMarketPrice": {"raw": 671.2}}}
         r = wpe.parse(qs)
         self.assertEqual(r["pe"], 27.35)
-        self.assertEqual(r["pb"], 5.0)        # stored inverted
+        self.assertEqual(r["pb"], 5.0)
         self.assertEqual(r["ps"], 3.1)
         self.assertEqual(r["dy"], 1.18)
-        self.assertEqual(r["ch"], -0.42)      # Yahoo gives fractions
+        self.assertEqual(r["ch"], -0.42)
         self.assertEqual(r["rytd"], 14.32)
-        # no trailing P/E: the holdings' one
         r2 = wpe.parse({"topHoldings": {"equityHoldings": {"priceToEarnings": {"raw": 0.05}}}})
         self.assertEqual(r2["pe"], 20.0)
         self.assertIsNone(r2["dy"])
@@ -1481,8 +1448,7 @@ class MapsAndMonitorsData(unittest.TestCase):
                 out = json.load(f)
             self.assertEqual(out["rows"][0]["s"], "SPY")
             self.assertNotIn("EWZ", [x["s"] for x in out["rows"]])
-            self.assertEqual(wpe.build(now + timedelta(hours=2), path=path, session=S(set()), sleep=0), 0)   # fresh
-            # most markets failing: yesterday's file stays
+            self.assertEqual(wpe.build(now + timedelta(hours=2), path=path, session=S(set()), sleep=0), 0)
             all_but = {m[1] for m in wpe.MARKETS[2:]}
             self.assertEqual(wpe.build(now + timedelta(days=1), path=path, session=S(all_but), sleep=0), 0)
             with open(path, encoding="utf-8") as f:
@@ -1495,7 +1461,7 @@ class MapsAndMonitorsData(unittest.TestCase):
                     "NGDPD": {"values": {"NGDPD": {"USA": {"2026": 30000}}}}}
         m = macro.world_map(payloads, 2026)
         self.assertEqual(m["year"], 2026)
-        self.assertEqual(m["NGDP_RPCH"], {"USA": 1.9, "ARG": 4.5})   # groups and other years left out
+        self.assertEqual(m["NGDP_RPCH"], {"USA": 1.9, "ARG": 4.5})
         self.assertEqual(m["PCPIPCH"], {"ARG": 41.3})
         self.assertNotIn("NGDPD", m)
 
@@ -1539,14 +1505,13 @@ class TreasuryAuctions(unittest.TestCase):
             with open(path, encoding="utf-8") as f:
                 out = json.load(f)
             self.assertEqual(out["source"], "TreasuryDirect")
-            self.assertEqual(out["rows"][0]["auction_date"], "2026-10-27")   # newest first, the announced one on top
+            self.assertEqual(out["rows"][0]["auction_date"], "2026-10-27")
             calls.clear()
             self.assertEqual(auctions.build(now + timedelta(hours=2), path=path, fetch=fetch), 0)
             self.assertEqual(calls, [])
 
 
 class GitSync(unittest.TestCase):
-    """The bot's data goes to the gh-pages branch as one replaced commit; main gets no data commits."""
 
     def git(self, cwd, *a, ok=True):
         import subprocess
@@ -1575,7 +1540,6 @@ class GitSync(unittest.TestCase):
         self.remote, self.bot, self.dev = (os.path.join(d, x) for x in ("remote.git", "bot", "dev"))
         self.git(d, "init", "-q", "--bare", "-b", "main", self.remote)
         self.git(d, "clone", "-q", self.remote, self.dev)
-        # as main is today: code, the site's code and the bot's data, all tracked
         for name, text in (("code.py", "v1"), ("state.json", "{}"), ("docs/index.html", "site"), ("docs/data.json", "{}")):
             self.write(self.dev, name, text)
         self.git(self.dev, "add", "-A"); self.git(self.dev, "commit", "-qm", "init"); self.git(self.dev, "push", "-q", "origin", "main")
@@ -1612,13 +1576,11 @@ class GitSync(unittest.TestCase):
         self.write(self.bot, "state.json", '{"s": 1}')
         self.write(self.bot, "docs/co/AAPL.json", '{"a": 1}')
         news_bot.git_sync("push", self.bot)
-        # the developer pushes code; the running bot picks it up and keeps its newer data
         self.write(self.dev, "code.py", "v2"); self.git(self.dev, "commit", "-qam", "code"); self.git(self.dev, "push", "-q")
         self.write(self.bot, "state.json", '{"s": 2}')
         news_bot.git_sync("pull", self.bot)
         self.assertEqual(self.read(self.bot, "code.py"), "v2")
         self.assertEqual(self.read(self.bot, "state.json"), '{"s": 2}', "a running bot keeps its own data")
-        # a fresh checkout (GitHub Actions) has main's old state.json: the data comes from gh-pages
         fresh = os.path.join(self.d, "fresh")
         self.git(self.d, "clone", "-q", self.remote, fresh)
         self.assertEqual(self.read(fresh, "state.json"), "{}")
@@ -1634,7 +1596,6 @@ class GitSync(unittest.TestCase):
         self.assertEqual(self.git(self.bot, "status", "--porcelain"), "")
 
     def test_data_leaves_main(self):
-        """Step 2: main stops tracking the data. The running bot keeps its files, a fresh checkout gets them."""
         import news_bot
         self.write(self.bot, "state.json", '{"s": 1}')
         self.write(self.bot, "docs/data.json", '{"bot": 1}')
@@ -1659,7 +1620,6 @@ class GitSync(unittest.TestCase):
         self.assertEqual(self.read(fresh, "docs/data.json"), '{"bot": 1}')
 
     def test_old_data_commit_and_stuck_rebase(self):
-        """A data commit left by the old version clashes with main: the pull still gets the code, the data is kept."""
         import subprocess
         import news_bot
         self.write(self.bot, "state.json", '{"old": 1}'); self.git(self.bot, "commit", "-qam", "news update")
@@ -1686,7 +1646,6 @@ class IpoCalendar(unittest.TestCase):
              "proposedSharePrice": "17.00-19.00", "sharesOffered": "9,722,222", "expectedPriceDate": "10/22/2026",
              "dollarValueOfSharesOffered": "$212,500,000"},
             {"dealID": "0", "proposedTickerSymbol": "OLDC", "companyName": "Old Co", "expectedPriceDate": "10/01/2026"}]}},
-        # the real Nasdaq row layout (October 2026)
         "priced": {"rows": [{"dealID": "1273626-119431", "proposedTickerSymbol": "IAM", "companyName": "Iambic Therapeutics, Inc.",
                              "proposedExchange": "NASDAQ Global Select", "proposedSharePrice": "16.00", "sharesOffered": "9,375,000",
                              "pricedDate": "10/15/2026", "dollarValueOfSharesOffered": "$150,000,000", "dealStatus": "Priced"},

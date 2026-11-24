@@ -1,5 +1,3 @@
-// Tests of the bot server (worker/src) without network: fetch and the KV storage are faked.
-// Run: node tests/worker.test.mjs
 import assert from "node:assert/strict";
 import crypto from "node:crypto";
 
@@ -48,7 +46,7 @@ const cb = async (data, chatId = 555) => {
 const texts = (out) => out.map((m) => m.text || m.caption || "").join("\n----\n");
 const noErrors = (out) => assert.ok(!/That didn't work|I don't know that command|Не получилось|Не знаю такой команды/.test(texts(out)), texts(out));
 const buttons = (out) => out.flatMap((m) => (m.reply_markup && m.reply_markup.inline_keyboard || []).flat());
-const RU = 556;   // a chat that switches to Russian
+const RU = 556;
 
 console.log("Bot server:");
 
@@ -157,13 +155,11 @@ await test("/api/quotes: answers within ~1.5 s when a source hangs; the rest com
     assert.equal(r.json.ok, true);
     assert.ok(r.json.stocks.AAPL, "US stocks are there");
     assert.deepEqual(r.json.wait, ["world"], "the terminal is told what is still loading");
-    // the source is back: once the stuck load is over its time limit (or fails), a fresh one is made
     flags.hang = [];
     clearMemo();
     r = await api("/api/quotes");
     assert.equal(r.json.world["S&P"].value, 7730);
     assert.equal(r.json.wait, undefined);
-    // later the source hangs again: the last good values are served at once and refreshed in the background
     flags.hang = ["finance.yahoo.com"];
     const waits = ctx.waits.length;
     Date.now = () => realNow() + 60e3;
@@ -173,7 +169,6 @@ await test("/api/quotes: answers within ~1.5 s when a source hangs; the rest com
     assert.ok(ms < 1200, "stale values do not wait: " + ms + " ms");
     assert.equal(r.json.world["S&P"].value, 7730, "the last good value");
     assert.ok(ctx.waits.length > waits, "the refresh goes on after the answer (ctx.waitUntil)");
-    // too old (over 15 min): not served any more, the answer says it is loading
     Date.now = () => realNow() + 20 * 60e3;
     r = await api("/api/quotes");
     assert.ok((r.json.wait || []).includes("world"));
@@ -263,7 +258,7 @@ await test("/api/live?since=: only the stories found after the viewer's data, wi
   assert.deepEqual(none.json.news, []);
   const bad = await api("/api/live?since=garbage");
   assert.equal(bad.json.news.length, 3, "an unreadable time gives the whole feed");
-  await env.SUBS.delete("live");   // the bot tests below read the site's data, not this feed
+  await env.SUBS.delete("live");
 });
 
 await test("/api/company: all parts; headlines translated only when asked", async () => {
@@ -434,7 +429,6 @@ await test("bot: /lang ru switches the chat to Russian everywhere", async () => 
 await test("Chinese and Arabic: every text exists, with the same arguments, placeholders and markup", async () => {
   const { ZH, AR } = await import("../worker/src/i18n_xl.js");
   const tags = (s) => (String(s).match(/<\/?[a-z]+[^>]*>/g) || []).join("");
-  // every English key: walk the English texts through t() with dummy arguments
   const { TEXT_KEYS } = await import("../worker/src/i18n.js");
   const keys = Object.keys(ZH);
   assert.deepEqual(TEXT_KEYS.filter((k) => !(k in ZH)), [], "every English text has a Chinese one");
@@ -451,7 +445,7 @@ await test("Chinese and Arabic: every text exists, with the same arguments, plac
         if (k !== "hello") for (const a of args) if (String(t("en", k, ...args)).includes(a)) assert.ok(out.includes(a), name + ": " + k + " loses " + a);
         if (k !== "hello") assert.equal(tags(out), tags(t("en", k, ...args)), name + ": markup of " + k);
       } else {
-        const en = t("en", k) || t("ru", k);   // cn_untranslated is empty in English: compare with the Russian one
+        const en = t("en", k) || t("ru", k);
         if (typeof v === "string") assert.equal(tags(v), tags(en), name + ": markup of " + k);
         else if (Array.isArray(v)) assert.equal(v.length, en.length, name + ": length of " + k);
         else assert.deepEqual(Object.keys(v).sort(), Object.keys(en).sort(), name + ": keys of " + k);
@@ -582,7 +576,6 @@ await test("bot: alerts and cron, each person in their language, few KV writes",
   await msg("/alert новости ФРС", RU);
   out = await msg("/alerts", 779);
   assert.match(texts(out), /a story with the word «Fed»/);
-  // first check: AAPL > 300 and oil (+6.2% > 5%) fire, news alerts only remember the time
   const start = sent.length;
   const ev = { waits: [], waitUntil(p) { this.waits.push(p); } };
   await worker.scheduled({ cron: "*/2 * * * *" }, env, ev);
@@ -594,13 +587,11 @@ await test("bot: alerts and cron, each person in their language, few KV writes",
   assert.ok(!a.list.some((x) => x.s === "AAPL" && x.v === 300), "a fired alert is removed");
   assert.ok(a.list.some((x) => x.s === "BTC"), "the others stay");
   assert.ok(a.news_ts);
-  // nothing new: the check does not write to KV
   const puts = env.SUBS.puts;
   const ev1 = { waits: [], waitUntil(p) { this.waits.push(p); } };
   await worker.scheduled({}, env, ev1);
   await Promise.all(ev1.waits);
   assert.equal(env.SUBS.puts, puts, "a quiet check costs no KV writes");
-  // a fresh story with the word: the English reader gets the English headline, the Russian one — Russian
   await env.SUBS.put("live", JSON.stringify({ updated: iso(Date.now() + 1000), news: [{ title: "Fed unexpectedly cuts rates", lang: "en",
     title_ru: "ФРС неожиданно снизила ставку", lead: "", sources: ["Reuters"], link: "https://x/2", level: "high", ts: iso(Date.now() + 1000) }],
     market: dataJson.market }));
@@ -617,7 +608,6 @@ await test("bot: alerts and cron, each person in their language, few KV writes",
   assert.match(ru, /Новость по слову «ФРС»/);
   assert.match(ru, /ФРС неожиданно снизила ставку/);
   assert.ok(!/Brent/.test(en), "the oil move is not sent twice in a day");
-  // delete with the button
   a = JSON.parse(await env.SUBS.get("alerts"));
   const id = a.list.find((x) => x.s === "BTC").id;
   out = await cb("adel:" + id, 779);
@@ -710,7 +700,6 @@ await test("/api/me: a Telegram signature is accepted for a day only", async () 
 });
 
 await test("/api/me: an old password kept by a terminal tab does not lock the owner out", async () => {
-  // the password was changed; a forgotten tab keeps asking with the old one every 30 seconds
   for (let i = 0; i < LOGIN_MAX * 3; i++) {
     assert.equal((await api("/api/me", { "X-Owner-Key": "old-password", "CF-Connecting-IP": "192.0.2.5" })).json.ok, false);
   }
@@ -735,7 +724,7 @@ await test("/api/me: the owner password is locked after too many wrong guesses f
 
 await test("watchdog: the owner hears when the news bot goes quiet and when it is back", async () => {
   const e = { ...env, SUBS: new KV() };
-  await setLang(e, OWNER, "en");   // the language memo is shared with the earlier tests
+  await setLang(e, OWNER, "en");
   const live = (minsAgo) => e.SUBS.put("live", JSON.stringify({ updated: new Date(Date.now() - minsAgo * 60000).toISOString(), news: [], market: [] }));
   assert.deepEqual(await watchBot(e), { skipped: true }, "no feed yet — nothing to say");
   await live(5);
@@ -762,7 +751,6 @@ await test("watchdog: the owner hears when the news bot goes quiet and when it i
   await watchBot(e);
   assert.match(sent[sent.length - 1].text, /Бот новостей молчит<\/b>: нет обновлений 120 мин/, "in the owner's language");
   assert.equal((await watchBot({ ...e, BOT_STALE_MINUTES: "180" })).back, true, "the limit can be raised");
-  // a link to the workflow: from GITHUB_REPO (set at deploy) or from a github.io site address
   await setLang(e, OWNER, "en");
   await live(75);
   await watchBot({ ...e, GITHUB_REPO: "someone/econnews" });
@@ -855,7 +843,6 @@ await test("news on/off button: subscriber and owner", async () => {
   out = await cb("news:on", 777);
   assert.notEqual(await env.SUBS.get("u:777"), null);
   assert.match(texts(out), /News is on/);
-  // the owner: the mailing always reached them, now the button switches it off
   out = await cb("news:off", Number(OWNER));
   r = await api("/subs", { Authorization: "Bearer " + crypto.createHash("sha256").update("econnews-sync:" + TOKEN).digest("hex") });
   assert.equal(r.json.owner_off, true);
@@ -911,8 +898,8 @@ await test("bot (Russian): the new functions speak Russian", async () => {
 
 await test("morning note: watchlist companies reporting today or tomorrow, once a day, in each person's language", async () => {
   const { watchReminders } = await import("../worker/src/botcmd.js");
-  const earn = stocksJson.earnings[0];   // AAPL, in two days
-  const day = new Date(Date.parse(earn.d + "T06:05:00Z") - 864e5);   // the day before, 09:05 MSK
+  const earn = stocksJson.earnings[0];
+  const day = new Date(Date.parse(earn.d + "T06:05:00Z") - 864e5);
   await env.SUBS.put("p:701", JSON.stringify({ w: ["AAPL", "BTC"], p: [] }));
   await env.SUBS.put("p:702", JSON.stringify({ w: ["XOM"], p: [] }));
   await env.SUBS.put("p:703", JSON.stringify({ w: ["AAPL"], p: [] }));
@@ -968,14 +955,13 @@ await test("/api/ipo without Finnhub and without the file; the bot's /ipo shows 
 
 await test("/api/corr: one request for the matrix; returns on common trading days", async () => {
   const { corrPair } = await import("../worker/src/market.js");
-  // a 7-day asset and a 5-day one: returns between the days both traded, so Monday is not compared with Sunday
   const a = {}, b = {};
   let pa = 100, pb = 50;
   for (let i = 0; i < 60; i++) {
     const d = new Date(Date.UTC(2026, 0, 1) + i * 864e5), day = d.toISOString().slice(0, 10), wd = d.getUTCDay();
     pa *= 1 + Math.sin(i * 1.7) * 0.02;
     a[day] = pa;
-    if (wd !== 0 && wd !== 6) b[day] = pa / 2;   // the same asset, closed at weekends
+    if (wd !== 0 && wd !== 6) b[day] = pa / 2;
   }
   const p = corrPair(a, b);
   assert.equal(p.r, 1, "identical prices on common days correlate exactly");
@@ -1006,7 +992,7 @@ await test("/api/geo: only the listed sources, JSON passed through; /api/perf: r
   assert.ok(Array.isArray(redir.json.features), "a redirect to a listed source is followed");
   const { returnsFrom } = await import("../worker/src/extra.js");
   const day = 86400, t1 = Date.UTC(2026, 9, 21) / 1000, t = [], c = [];
-  for (let i = 400; i >= 0; i--) { t.push(t1 - i * day); c.push(100 + (400 - i) * 0.25); }   // +0.25 a day
+  for (let i = 400; i >= 0; i--) { t.push(t1 - i * day); c.push(100 + (400 - i) * 0.25); }
   const r = returnsFrom({ t, c });
   assert.equal(r["1d"], Math.round((200 / 199.75 - 1) * 1e4) / 100);
   assert.ok(r["1y"] > 50 && r["1y"] < 100, "a year: " + r["1y"]);
@@ -1031,7 +1017,6 @@ await test("terminal service worker: every file is checked with the server, neve
     caches: { open: async () => cache, keys: async () => [], delete: async () => true,
               match: async (r) => stored.get(typeof r === "string" ? r : r.url) },
     fetch: async (r) => { fetched.push(r); return new Response("new", { status: 200 }); },
-    // in a real service worker "./" is resolved against the worker's own address
     Request: class extends Request { constructor(u, o) { super(typeof u === "string" ? new URL(u, "https://x.github.io/econnews/terminal/sw.js").href : u, o); } },
     Response, URL, Promise, setTimeout, clearTimeout,
   };
@@ -1045,7 +1030,6 @@ await test("terminal service worker: every file is checked with the server, neve
     fetched.length = 0;
     let answer = null;
     const req = { method: "GET", url, mode, headers: new Headers(), clone() { return this; } };
-    // a navigation request cannot be built in Node: a plain object with the same fields stands in for both
     handlers.fetch({ request: mode === "navigate" ? req : new Request(url), respondWith: (p) => { answer = p; }, waitUntil: () => {} });
     const res = await answer;
     assert.equal(await res.text(), "new");

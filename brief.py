@@ -1,12 +1,3 @@
-"""
-Pre-market brief: the option levels before the US open — one message a weekday at BRIEF_HOUR (MSK).
-
-For the S&P 500, the Nasdaq-100 and bitcoin: price, total GEX and what it means (positive gamma — moves tend to be
-damped, negative — they tend to speed up), the gamma flip, the call and put walls, the expected move for the day
-(±1σ from the 30-day implied volatility) and the VIX / DVOL. With ANTHROPIC_API_KEY set, two sentences of AI reading
-of these numbers are added (ai.py); without the key nothing is asked of anyone.
-Data: docs/gex/<SYM>.json written by options.py and deribit.py (gex.py); the bot's quotes for the VIX.
-"""
 from __future__ import annotations
 
 import html
@@ -18,12 +9,9 @@ import i18n
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 GEX_DIR = os.path.join(HERE, "docs", "gex")
-# what the brief covers; the ETF stands in when the index file is missing
 ITEMS = (("SPX", "SPY", {"en": "S&P 500", "ru": "S&P 500", "zh": "标普500", "ar": "S&P 500"}),
          ("NDX", "QQQ", {"en": "Nasdaq-100", "ru": "Nasdaq-100", "zh": "纳斯达克100", "ar": "ناسداك 100"}),
          ("BTC", None, {"en": "Bitcoin", "ru": "Биткоин", "zh": "比特币", "ar": "بيتكوين"}))
-# an older snapshot (a stopped source) is left out rather than shown as today's; US options do not trade at weekends,
-# so on Monday Friday's levels still count (with their date)
 MAX_AGE_H = {"crypto": 30, "equity": 80}
 DATED_AFTER_H = 20
 
@@ -67,14 +55,13 @@ def money(v, lang):
     if v is None:
         return "—"
     a, sign = abs(v), "−" if v < 0 else "+"
-    for lim, unit in i18n.units(lang):   # $1.2B / $1,2 млрд / $12亿 / $1.2 مليار
+    for lim, unit in i18n.units(lang):
         if a >= lim:
             return f"{sign}${num(a / lim, lang, 1)}{unit}"
     return f"{sign}${num(a, lang, 0)}"
 
 
 def day_month(dt, lang):
-    """23 Nov / 23 ноя / 11月23日 / 23 نوفمبر"""
     if lang == "zh":
         return f"{dt.month}月{dt.day}日"
     if lang == "ar":
@@ -153,7 +140,6 @@ def lines(name, d, lang, now=None):
 
 
 def facts(snaps, vix):
-    """The numbers in plain English for the AI note."""
     rows = []
     for name, d in snaps:
         lv, em, tot = d.get("levels") or {}, d.get("em") or {}, d.get("tot") or {}
@@ -167,7 +153,6 @@ def facts(snaps, vix):
 
 
 def build(now, quotes=None, gex_dir=None, ai_note=None):
-    """A function lang -> message, or None when there is nothing fresh to tell."""
     snaps = snapshots(now, gex_dir)
     if not snaps:
         return None

@@ -1,9 +1,3 @@
-"""
-IPO calendar for the terminal (IPO function) and the bot (/ipo): upcoming US listings, recently priced ones and new filings.
-Source: the Nasdaq IPO calendar (free, no key; it covers NYSE and Nasdaq listings). Finnhub's free calendar is often empty,
-so this file is what the terminal and the bot server rely on.
-Result: docs/ipo.json, refreshed every 2 hours.
-"""
 from __future__ import annotations
 
 import json
@@ -16,7 +10,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "docs", "ipo.json")
 URL = "https://api.nasdaq.com/api/ipo/calendar?date={month}"
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
-RECENT_DAYS = 45   # priced and filed deals this far back
+RECENT_DAYS = 45
 
 
 def fetch(month):
@@ -26,7 +20,6 @@ def fetch(month):
 
 
 def _date(s):
-    """'10/15/2026' -> '2026-10-15'."""
     m = re.match(r"^\s*(\d{1,2})/(\d{1,2})/(\d{4})", s or "")
     return f"{m.group(3)}-{int(m.group(1)):02d}-{int(m.group(2)):02d}" if m else None
 
@@ -43,14 +36,13 @@ def _rows(table):
     if isinstance(table, dict):
         if isinstance(table.get("rows"), list):
             return table["rows"]
-        for v in table.values():   # upcoming → upcomingTable → rows
+        for v in table.values():
             if isinstance(v, dict) and isinstance(v.get("rows"), list):
                 return v["rows"]
     return []
 
 
 def parse(payload):
-    """One month of the Nasdaq calendar -> rows in the Finnhub layout the server and the terminal already use."""
     d = (payload or {}).get("data") or {}
     out = []
     for kind, status, date_key in (("upcoming", "expected", "expectedPriceDate"), ("priced", "priced", "pricedDate"),
@@ -72,7 +64,6 @@ ORDER = {"expected": 0, "priced": 1, "filed": 2, "withdrawn": 3}
 
 
 def select(rows, today):
-    """Upcoming ones from today on (earliest first), then priced and filed in the last RECENT_DAYS (newest first)."""
     since = (datetime.fromisoformat(today) - timedelta(days=RECENT_DAYS)).date().isoformat()
     seen, keep = set(), []
     for r in rows:
@@ -87,7 +78,7 @@ def select(rows, today):
         keep.append(r)
     up = sorted((r for r in keep if r["status"] == "expected"), key=lambda r: r["date"])
     rest = sorted((r for r in keep if r["status"] != "expected"), key=lambda r: r["date"], reverse=True)
-    rest.sort(key=lambda r: ORDER[r["status"]])   # stable: priced, then filed, then withdrawn, each newest first
+    rest.sort(key=lambda r: ORDER[r["status"]])
     for r in up + rest:
         r.pop("id", None)
     return up + rest
@@ -101,7 +92,6 @@ def months(now):
 
 
 def build(now=None, path=OUT, fetcher=fetch, max_age_h=2):
-    """Returns the number of deals written (0 when the file is fresh or Nasdaq did not answer)."""
     now = now or datetime.now(timezone.utc)
     try:
         with open(path, encoding="utf-8") as f:
@@ -118,7 +108,7 @@ def build(now=None, path=OUT, fetcher=fetch, max_age_h=2):
         except Exception as e:
             print(f"  ! Nasdaq IPO {m}: {type(e).__name__}: {e}"[:200])
     if not ok:
-        return 0   # keep the old file rather than an empty one
+        return 0
     ipo = select(rows, now.date().isoformat())
     with open(path, "w", encoding="utf-8") as f:
         json.dump({"updated": now.isoformat(), "source": "Nasdaq IPO calendar", "ipo": ipo}, f, ensure_ascii=False, separators=(",", ":"))

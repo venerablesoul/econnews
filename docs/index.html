@@ -68,7 +68,6 @@
   .lang{border:1px solid var(--line);background:var(--card);color:var(--muted);font:600 12px/1 inherit;padding:6px 9px;border-radius:999px;cursor:pointer;margin-left:8px}
   .lang:hover{color:var(--text)}
   select.lang{appearance:none;-webkit-appearance:none;padding-right:22px;background:var(--card) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='5'%3E%3Cpath d='M0 0l4 5 4-5z' fill='%238b95a7'/%3E%3C/svg%3E") no-repeat right 9px center}
-  /* Arabic sentences run right to left; Arabic letters join, so no letter spacing */
   html:lang(ar) :is(.news li, .lead, .orig, .empty, footer, .note){unicode-bidi:plaintext}
   html:lang(ar) *{letter-spacing:0!important}
 </style>
@@ -117,7 +116,6 @@
 <script>
 (function(){
   var I = window.L10N, RU = I.ru, LI = {en: 0, ru: 1, zh: 2, ar: 3}[I.lang] || 0;
-  // texts of this page: [English, Russian, Chinese, Arabic]
   var P = {
     h1: ['Markets', 'Рынок онлайн', '市场', 'الأسواق'], loading: ['loading…', 'загрузка…', '加载中…', 'جارٍ التحميل…'],
     charts: ['Charts', 'Графики', '图表', 'الرسوم البيانية'], news: ['News', 'Новости', '新闻', 'الأخبار'], cal: ['Calendar', 'Календарь', '日历', 'الأجندة'],
@@ -167,7 +165,6 @@
     s.innerHTML = JSON.stringify(Object.assign({colorTheme:'dark', isTransparent:true, locale:I.tv}, cfg));
     host.firstChild.appendChild(s);
   }
-  // a name in the reader's language: n(English, Russian, Chinese, Arabic)
   function n(en, ru, zh, ar){ return [en, ru, zh, ar][LI] || en }
   var SYM = [
     ['S&P 500','FOREXCOM:SPXUSD'], ['Nasdaq 100','FOREXCOM:NSXUSD'], [n('Brent crude', 'Нефть Brent', '布伦特原油', 'خام برنت'),'TVC:UKOIL'],
@@ -265,7 +262,7 @@
     return svg;
   }
   function priceText(q){
-    if (q.value == null) return q.price;   // older data.json: a ready Russian-formatted string
+    if (q.value == null) return q.price;
     return (q.prefix || '') + fmt(q.value, q.digits != null ? q.digits : 2) + (q.suffix || '');
   }
   function changeText(c){
@@ -303,7 +300,6 @@
       var a = el('a', null, title);
       if (/^https?:\/\//i.test(n.link || '')){ a.href = n.link; a.target = '_blank'; a.rel = 'noopener' }
       li.appendChild(a);
-      // the original headline under the translation (when the reader's language is not the original one)
       var orig = n.original !== undefined && n.lang === undefined ? (RU ? n.original : '') : (n.title !== title ? n.title : '');
       if (orig) li.appendChild(el('div', 'orig', orig));
       if (sum) li.appendChild(el('div', 'lead', '💡 ' + sum));

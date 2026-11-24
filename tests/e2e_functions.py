@@ -1,11 +1,3 @@
-"""
-End-to-end test of the newer terminal functions in a real browser (Chromium via Playwright):
-technical analysis (TECH, TA, IND, GPO, VAP, TSM, QR, TRA, TRAY), company tabs (GE, CACS, CRPR), monitors (MOV, MOST, MRR, MEMB,
-WPE, BI, FPC, CDR), the rates panel (WB, BTMM, MMR, SRCH), news topics (NSE, TOPCA, MA, RATC) and the maps (MAP, STORM, SHIP, WETR, MAP ECO).
-The site and the bot server run locally (tests/fake_server.mjs); the map sources answer from tests/geo_fixtures.mjs —
-the sources with browser access straight, the others (Treasury, holidays) through the server's /api/geo.
-Run: python3 tests/e2e_functions.py   (screenshots go to the E2E_SHOTS folder, if set)
-"""
 import json
 import os
 import sys
@@ -18,11 +10,10 @@ import e2e_terminal as E  # noqa: E402
 from playwright.sync_api import sync_playwright  # noqa: E402
 
 DIRECT = ("earthquake.usgs.gov", "eonet.gsfc.nasa.gov", "www.gdacs.org", "services9.arcgis.com", "api.open-meteo.com", "meri.digitraffic.fi")
-VIA_SERVER = ("date.nager.at",)   # the test blocks them in the browser: the terminal must use /api/geo
+VIA_SERVER = ("date.nager.at",)
 TRADES = [{"id": 1000 + i, "price": str(81000 + i), "qty": str(round(0.01 * (i + 1), 2)), "quoteQty": "810", "time": 1792000000000 + i * 1000,
            "isBuyerMaker": i % 3 == 0} for i in range(20)]
 check = E.check
-# the Bloomberg functions in the two lists the owner sent (alerts, ALRT, already existed)
 CODES_CFI = """N TOP TOPCA NSE CNS USS MNA OPN COS BBEA WEI WPE ECO ECST MOV MA WFX FXC RATC BTMM USSW FIT WB CDR MMR SRCH CRVF PICK
 BI MOST FPC ECDR PDF DES MGMT CN ISSD RELS FA DVD ERN EE GE EM ANR PHDC CRPR CACS CF GIP QR BQ BAS AQR VAP TSM OMON
 RV COMP TRA GP GPO HP SI G TRAY MRR MEMB""".split()
@@ -53,7 +44,6 @@ def run():
             url = route.request.url
             u = urllib.parse.urlparse(url)
             if "/api/v3/trades" in url:
-                # binance.com closed (as from the US): the terminal turns to Binance's market-data mirror; no feed at all for ETH
                 if u.netloc == "api.binance.com" or "ETHUSDT" in url:
                     return route.abort()
                 return route.fulfill(status=200, content_type="application/json", headers={"Access-Control-Allow-Origin": "*"}, body=json.dumps(TRADES))
@@ -85,7 +75,6 @@ def run():
         page.wait_for_function("([s, t]) => { const e = document.querySelector(s); return e && e.textContent.includes(t) }", arg=[sel, text], timeout=timeout)
 
     def screen_xy(page, lon, lat):
-        """Where a point is on the map canvas (the page's own projection)."""
         return page.evaluate("""([lon, lat]) => {
           const M = window.MAPS.M, mx = (lon + 180) / 360, s = Math.sin(lat * Math.PI / 180), my = 0.5 - Math.log((1 + s) / (1 - s)) / (4 * Math.PI);
           const wrap = document.querySelector('#map-body .gm-wrap').getBoundingClientRect();
@@ -205,7 +194,6 @@ def run():
         page.wait_for_function("[...document.querySelectorAll('#mon-body tbody tr')].find(r => r.textContent.includes('MOEX')).textContent.includes('Unity Day')", timeout=10000)
         cdr = page.inner_text("#mon-body")
         moex = page.evaluate("[...document.querySelectorAll('#mon-body tbody tr')].find(r => r.textContent.includes('MOEX')).querySelector('td.hol').textContent")
-        # the nearest first: dates in order (which holiday is nearer depends on today's date)
         import re as _re
         from datetime import datetime as _dt
         days = [_dt.strptime(x, "%d %b %Y") for x in _re.findall(r"\d{1,2} [A-Z][a-z]{2} \d{4}", moex)]
@@ -262,7 +250,6 @@ def run():
         # ---------------- maps ----------------
         cmd(page, "MAP")
         page.wait_for_selector("#map-body .gm-wrap canvas:not(.gm-bg)")
-        # no tiles anywhere (NASA blocked, no copy on this site): the map draws its own land instead of a black picture
         page.wait_for_function("getComputedStyle(document.querySelector('#map-body .gm-bg')).display === 'none'", timeout=10000)
         check("MAP: without any satellite tiles the map draws its own land", True)
         page.wait_for_function("window.MAPS && window.MAPS.M.data.quakes && window.MAPS.M.data.choke && window.MAPS.M.data.storms && window.MAPS.M.data.exch", timeout=15000)
@@ -340,7 +327,6 @@ def run():
         wait_text(page, "#map-body .gm-side", "VESSELS")
         sk = page.inner_text("#map-body .gm-side")
         ships = page.evaluate("window.MAPS.M.data.ships.pts.map(p => [p.t, p.fuel, p.hd])")
-        # the arrow follows the course over ground (where the ship is going), not the heading (where its bow points)
         check("SHIP: live Baltic vessels — a stale position dropped, tankers on top, course only when moving",
               len(ships) == 4 and ships[0][1] == "tanker" and ships[0][2] == 250.4 and [s for s in ships if s[0] == "🚢 VOLGA CARGO"][0][2] is None and "Tankers" in sk, [ships, sk[-300:]])
         crude = page.evaluate("window.MAPS.M.data.ships.pts.filter(p => p.t === '🚢 BALTIC CRUDE')[0].s.join(' | ')")
@@ -406,7 +392,7 @@ def run():
             page.wait_for_timeout(250)
         page.wait_for_timeout(1500)
         check("each of them runs without a script error", len(errors) == n_err, errors[n_err:n_err + 5])
-        page.keyboard.press("Escape")   # PDF opens the settings
+        page.keyboard.press("Escape")
         cmd(page, "US COS")
         wait_text(page, "#p-news", "Companies")
         check("US COS: the companies' news topic (US alone still opens US stocks)", "Companies" in page.inner_text("#p-news"))
@@ -425,7 +411,7 @@ def run():
         m.click("#map-body .gm-ctl .gm-tbtn")
         check("phone: ☰ opens the layers", m.evaluate("getComputedStyle(document.querySelector('#map-body .gm-side')).display") != "none")
         shot(m, "f12_mobile_map")
-        m.click("#map-body .gm-ctl .gm-tbtn")   # still reachable beside the open list: closes it
+        m.click("#map-body .gm-ctl .gm-tbtn")
         check("phone: ☰ closes the layers again", m.evaluate("getComputedStyle(document.querySelector('#map-body .gm-side')).display") == "none")
         m.click("#b-more")
         m.click("#fnlist button:has-text('Chart with indicators')")

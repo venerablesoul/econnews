@@ -1,32 +1,3 @@
-// EconNews bot server on Cloudflare Workers (free plan).
-//
-// What it does:
-//   /tg             — Telegram webhook: answers /start and commands instantly, keeps the subscriber list
-//   /subs           — subscribers for the mailing (read by news_bot.py; key required), with each one's language
-//   /subs/remove    — drop subscribers who blocked the bot
-//   /sync/live      — the news bot pushes fresh stories here every 5 minutes (key required)
-//   /api/quotes     — live quotes for the terminal. API keys stay here and never reach the browser:
-//                     everyone — US stocks via the free Finnhub key, currencies/metals/oil via Finnhub's stream,
-//                     world indices, commodities and yields via Yahoo Finance (free, no key);
-//                     the owner — optionally the paid EODHD feed instead of Yahoo (only if EODHD_API_KEY is set)
-//   /api/quote      — quotes of anything: ?s=AAPL,BTC,SBER,oil
-//   /api/company    — company: ?s=AAPL&parts=des,fa,ern,anr,cn,hds,co,dvd,cf,opt,rv[&lang=ru]
-//   /api/history    — price history: ?s=AAPL&r=1y (1d 5d 1m 3m 6m ytd 1y 2y 5y)
-//   /api/ipo        — IPO calendar: upcoming, recently priced and filed (Nasdaq calendar via the news bot + Finnhub)
-//   /api/corr       — correlation matrix in one request: ?s=S%26P,GOLD,BTC&r=1y (3m 6m 1y 2y 5y)
-//   /api/live       — fresh stories and quotes from the news bot
-//   /api/me         — watchlist, portfolio and alerts (sign-in via Telegram or the owner's password)
-//   /api/geo        — map layers and calendars from sources that do not allow browsers: ?u=<address> (listed hosts only)
-//   /api/perf       — returns over 1D…5Y for up to 40 instruments: ?s=SPY,QQQ,GOLD (TRAY, FPC)
-//   /api/ping       — a tiny answer: the terminal picks the server address that works on the viewer's network
-//                     (*.workers.dev is blocked by some Russian providers; deploy/hosting/api is a relay for them)
-//   cron            — every 2 minutes checks alerts and sends messages; tells the owner when the news bot
-//                     has stopped sending updates (BOT_STALE_MINUTES, 60 by default) and when it is back
-//
-// Secrets (set automatically from the GitHub secrets):
-//   TELEGRAM_BOT_TOKEN, OWNER_ID, FINNHUB_API_KEY, EODHD_API_KEY (optional, paid), TERMINAL_PASSWORD (optional)
-// Variable: PAGES_URL — the bot's site (data.json, stocks.json, rates.json, fin/ live there).
-// KV storage: SUBS — subscribers, languages, personal data, alerts, the live feed.
 import {
   LOGIN_MAX, TG_INIT_TTL,
   arrow, cached, cors, esc, hex, hmac, hookKey, isOwnerChat, json, newsWorkflowUrl, pagesUrl, safeEqual, send, sha256hex,
@@ -38,10 +9,8 @@ import { L, aiSum, getLang, langButtons, langFromWord, newsField, norm, setLang,
 import { checkAlerts, meApi } from "./user.js";
 import { geoProxy, getPerf } from "./extra.js";
 
-// US stocks and ETFs — free Finnhub key, for everyone
 const STOCKS = ["SPY", "QQQ", "DIA", "IWM", "AAPL", "MSFT", "NVDA", "AMZN", "GOOGL", "META", "TSLA"];
 
-// world markets — paid EODHD key, owner only and only if the key is set (ids as in the terminal)
 const EOD = {
   "S&P": "GSPC.INDX", "Nasdaq": "IXIC.INDX", "DJI": "DJI.INDX", "RTY": "RUT.INDX", "VIX": "VIX.INDX",
   "SX5E": "STOXX50E.INDX", "DAX": "GDAXI.INDX", "UKX": "FTSE.INDX", "CAC": "FCHI.INDX", "NKY": "N225.INDX",
@@ -51,27 +20,21 @@ const EOD = {
   "Платина": "XPTUSD.FOREX", "UST3M": "US3M.GBOND", "UST5": "US5Y.GBOND", "UST10": "US10Y.GBOND", "UST30": "US30Y.GBOND",
 };
 
-// currencies, metals, oil and gas — Finnhub's trade stream (OANDA), free key, for everyone
-// (ids like "Золото" are internal keys shared with data.json and the terminal, not display names)
 const FH_FX = {
   "OANDA:EUR_USD": "EUR/USD", "OANDA:USD_JPY": "USDJPY", "OANDA:GBP_USD": "GBPUSD", "OANDA:USD_CHF": "USDCHF",
   "OANDA:USD_CNH": "USDCNY", "OANDA:XAU_USD": "Золото", "OANDA:XAG_USD": "Серебро", "OANDA:XPT_USD": "Платина",
   "OANDA:BCO_USD": "Brent", "OANDA:WTICO_USD": "WTI", "OANDA:NATGAS_USD": "Газ", "OANDA:XCU_USD": "Медь",
 };
 
-const FREE_TTL = 30;   // seconds: how often the free quotes refresh (shared by everyone)
-const OWNER_TTL = 15;  // seconds: the owner's paid quotes
-// /api/quotes answers quickly: a slow answer stalls the viewer's connection on throttled networks (see the terminal).
-// A part that is not ready in QUOTES_WAIT ms is left for the next answer (its load goes on in the background), and
-// meanwhile the last good value (up to QUOTES_MAX_AGE seconds old) is served.
+const FREE_TTL = 30;
+const OWNER_TTL = 15;
 const QUOTES_WAIT = 1500;
 const QUOTES_MAX_AGE = 900;
-const UPSTREAM_TIMEOUT = 6000;   // ms: no upstream source may hold an answer longer
+const UPSTREAM_TIMEOUT = 6000;
 
 export default {
   async fetch(req, env, ctx) {
     const url = new URL(req.url);
-    // short paths: /api/history/AAPL/5y, /api/quote/AAPL,BTC, /api/company/AAPL/des,fa
     const m = /^\/api\/(history|quote|company)\/([^/]+)(?:\/([^/]+))?\/?$/.exec(url.pathname);
     if (m) {
       url.searchParams.set("s", decodeURIComponent(m[2]));
@@ -100,7 +63,6 @@ export default {
       return new Response("not found", { status: 404 });
     } catch (e) {
       console.log("error", e && e.stack || e);
-      // 200 with the error text: the terminal keeps showing the bot's data, and the cause is visible in the browser
       return cors(json({ ok: false, error: String(e && e.message || e) }, 200));
     }
   },
@@ -116,10 +78,6 @@ export default {
 };
 
 // ---------------------------------------------------------------------------
-// Watchdog: the news bot pushes /sync/live on every run (~5 min). It restarts itself (each GitHub Actions session
-// queues the next one, keepalive.yml restarts a broken chain), so silence for BOT_STALE_MINUTES (60 by default)
-// means it could not: the owner gets one message with a link to the workflow, and another when the bot is back.
-// KV is written only on these two changes, so a normal check costs no writes.
 // ---------------------------------------------------------------------------
 const BOT_DOWN = "bot_down";
 
@@ -127,16 +85,16 @@ export async function watchBot(env, now = Date.now()) {
   if (!env.SUBS || !env.OWNER_ID) return { skipped: true };
   const raw = await env.SUBS.get("live");
   let updated = NaN;
-  try { updated = Date.parse(JSON.parse(raw || "null").updated); } catch { /* not a feed yet */ }
+  try { updated = Date.parse(JSON.parse(raw || "null").updated); } catch {  }
   if (!updated) return { skipped: true };
   const mins = Math.max(0, Math.round((now - updated) / 60000));
   const stale = mins > (Number(env.BOT_STALE_MINUTES) || 60);
-  const downSince = await env.SUBS.get(BOT_DOWN);   // the last update before the outage
+  const downSince = await env.SUBS.get(BOT_DOWN);
   if (stale === (downSince !== null)) return { ok: !stale, mins };
   const owner = String(env.OWNER_ID).trim();
   const lang = await getLang(env, owner);
   if (stale) {
-    await env.SUBS.put(BOT_DOWN, String(updated));   // first: one message per outage, even if sending fails
+    await env.SUBS.put(BOT_DOWN, String(updated));
     await send(env, owner, t(lang, "bot_down", mins, newsWorkflowUrl(env)));
     return { down: true, mins };
   }
@@ -147,7 +105,6 @@ export async function watchBot(env, now = Date.now()) {
 }
 
 // ---------------------------------------------------------------------------
-// Subscribers (KV key "u:<chat_id>", metadata {n: name, t: date, l: language})
 // ---------------------------------------------------------------------------
 async function authorized(req, env) {
   const h = req.headers.get("Authorization") || "";
@@ -170,12 +127,10 @@ async function subsList(req, env) {
   const subs = await allSubs(env);
   const langs = {};
   for (const s of subs) if (s.l && s.l !== "en") langs[s.id] = s.l;
-  // the owner always gets the mailing, even without subscribing — so their language is needed too
   if (env.OWNER_ID) {
     const id = String(env.OWNER_ID).trim();
     if (!langs[id]) { const l = await getLang(env, id); if (l !== "en") langs[id] = l; }
   }
-  // the owner can switch their own news off with the button / /stop
   const ownerOff = env.OWNER_ID ? (await env.SUBS.get(OWNER_OFF)) !== null : false;
   return json({ ok: true, ids: subs.map((s) => s.id), langs, owner_off: ownerOff });
 }
@@ -188,7 +143,6 @@ async function subsRemove(req, env) {
   return json({ ok: true, removed: ids.length });
 }
 
-// The owner always gets the mailing unless they switched it off (KV "owner_off")
 const OWNER_OFF = "owner_off";
 
 async function newsOn(env, chat) {
@@ -196,7 +150,6 @@ async function newsOn(env, chat) {
   return (await env.SUBS.get("u:" + chat.id)) !== null;
 }
 
-// switch the news on/off for this chat; returns the new state
 async function setNews(env, chat, from, on) {
   if (isOwnerChat(env, chat.id)) {
     if (on) await env.SUBS.delete(OWNER_OFF);
@@ -218,7 +171,6 @@ async function subscribe(env, chat, from) {
 }
 
 // ---------------------------------------------------------------------------
-// Live feed: the news bot pushes fresh stories, the terminal and the bot read them at once
 // ---------------------------------------------------------------------------
 async function syncLive(req, env) {
   if (!(await authorized(req, env))) return json({ ok: false, error: "forbidden" }, 403);
@@ -230,9 +182,6 @@ async function syncLive(req, env) {
   return json({ ok: true, news: data.news.length });
 }
 
-// The whole feed is ~80 KB. ?since=<the viewer's data time> returns only the stories found after it (usually a few,
-// a couple of KB): on networks that cut connections after ~16 KB (Russia) the whole feed never arrives and stalls
-// every other request on the same connection.
 async function liveApi(env, since) {
   const raw = await cached("live-api", 20, () => env.SUBS.get("live"));
   const d = raw ? JSON.parse(raw) : { updated: null, news: [], market: [] };
@@ -245,7 +194,6 @@ async function liveApi(env, since) {
 }
 
 // ---------------------------------------------------------------------------
-// Telegram
 // ---------------------------------------------------------------------------
 function keyboard(env, chat, extra = true) {
   const X = L(chat.lang);
@@ -253,7 +201,6 @@ function keyboard(env, chat, extra = true) {
   const q = X.q ? "?" + X.q : "";
   const rows = [];
   if (base.startsWith("https://")) {
-    // web_app buttons work only in private chats
     const btn = (text, url) => chat.type === "private" ? { text, web_app: { url } } : { text, url };
     rows.push([btn(X.t("btn_market"), base + q), btn(X.t("btn_terminal"), base + "terminal/" + q)]);
   }
@@ -293,7 +240,6 @@ export async function handleUpdate(update, env) {
     if (cq.data === "menu") return command("menu", [], "", chat, cq.from || {}, env);
     if (cq.data === "news:on" || cq.data === "news:off") {
       chat.newsOn = await setNews(env, chat, cq.from || {}, cq.data === "news:on");
-      // swap the button on the pressed message, then confirm
       if (cq.message.message_id) {
         await tg(env, "editMessageReplyMarkup", { chat_id: chat.id, message_id: cq.message.message_id,
           reply_markup: keyboard(env, chat) }).catch(() => {});
@@ -316,17 +262,15 @@ export async function handleUpdate(update, env) {
   const text = msg.text.trim();
   if (!text.startsWith("/")) {
     if (chat.type !== "private") return;
-    // in a private chat a bare ticker works: "AAPL", "BTC", "oil", "нефть"
     if (/^[A-Za-zА-Яа-яЁё&.:/\-]{1,20}$/.test(text)) {
       try {
         const p = parseSymbol(text);
-        // Latin letters only in capitals ("AAPL", not "hi"); the rest — oil, gold, BTC, SBER
         const q = p && (p.kind !== "us" || text === text.toUpperCase()) ? await getQuotes(env, [text]) : {};
         const x = Object.values(q)[0];
         if (x && x.px != null) {
           return void await newCommand(x.kind === "us" ? "des" : "q", [x.key], x.key)(env, chat);
         }
-      } catch (e) { /* not a ticker — show the hint */ }
+      } catch (e) {  }
     }
     await send(env, chat, t(chat.lang, "plain_text") + t(chat.lang, "help_short"), keyboard(env, chat));
     return;
@@ -344,7 +288,6 @@ async function command(cmd, args, rest, chat, from, env) {
     const fresh = await subscribe(env, chat, from);
     if (owner) await env.SUBS.delete(OWNER_OFF);
     chat.newsOn = true;
-    // an English chat whose Telegram app speaks Russian, Chinese or Arabic gets a hint how to switch
     const lc = String(from.language_code || "");
     const en = X.lang === "en";
     const hints = { ruHint: en && /^(ru|uk|be|kk)/i.test(lc), zhHint: en && /^zh/i.test(lc), arHint: en && /^ar/i.test(lc) };
@@ -400,7 +343,6 @@ async function command(cmd, args, rest, chat, from, env) {
 }
 
 // ---------------------------------------------------------------------------
-// Replies built from data.json that the news bot publishes
 // ---------------------------------------------------------------------------
 function updated(data, X) {
   return data.updated ? X.t("updated", X.date(data.updated, { hour: "2-digit", minute: "2-digit" })) : "";
@@ -425,7 +367,7 @@ export function newsText(data, lang = "en") {
       `${tk ? " · " + esc(tk) : ""}${tags ? " · " + esc(tags) : ""}</i>`;
     if (/^https?:\/\//.test(n.link || "")) s += ` · <a href="${esc(n.link)}">${X.t("read")}</a>`;
     return s;
-  }).filter((b) => (total += b.length + 2) < 3800);   // Telegram's limit is 4096 characters
+  }).filter((b) => (total += b.length + 2) < 3800);
   return X.t("news_head") + "\n\n" + blocks.join("\n\n") + updated(data, X);
 }
 
@@ -504,7 +446,6 @@ export function tradesText(data, lang = "en") {
 }
 
 // ---------------------------------------------------------------------------
-// Who opened the terminal: the owner (password or Telegram) or anyone from Telegram
 // ---------------------------------------------------------------------------
 async function telegramUser(initData, env) {
   const p = new URLSearchParams(initData);
@@ -518,24 +459,17 @@ async function telegramUser(initData, env) {
   try { return JSON.parse(p.get("user") || "null"); } catch { return null; }
 }
 
-// The owner's terminal password: after LOGIN_MAX DIFFERENT wrong passwords from one address within LOGIN_WINDOW,
-// that address cannot sign in with a password for LOGIN_LOCK (Telegram sign-in still works).
-// The same wrong password again does not count: a terminal tab that still keeps an old password after it was
-// changed asks every 30 seconds, and must not lock its owner out. Guessing needs new passwords, so it is counted.
-// The lock is a KV record, so every copy of the server sees it; it costs one KV write per lock.
-// Note: viewers behind the PHP relay (deploy/hosting) share the relay's address.
-// (LOGIN_MAX and TG_INIT_TTL live in lib.js: this main module may export only handlers and functions.)
 const LOGIN_WINDOW = 15 * 60 * 1000;
-const LOGIN_LOCK = 30 * 60;   // seconds
-const misses = new Map();     // address -> { at, seen: Set of hashes } — wrong passwords seen by this copy of the server
-const locks = new Map();      // address -> { until, checked } — KV lock records, re-read once a minute
+const LOGIN_LOCK = 30 * 60;
+const misses = new Map();
+const locks = new Map();
 
 function clientIp(req) {
   return req.headers.get("CF-Connecting-IP") || "unknown";
 }
 
 function remember(map, key, value) {
-  if (map.size > 2000) map.clear();   // bounded memory: an attack from many addresses cannot grow it
+  if (map.size > 2000) map.clear();
   map.set(key, value);
 }
 
@@ -560,7 +494,7 @@ async function ownerPassword(req, env, pass) {
   const now = Date.now();
   const m = misses.get(ip);
   const cur = m && now - m.at < LOGIN_WINDOW ? m : { at: now, seen: new Set() };
-  cur.seen.add(await sha256hex(pass));   // only a hash is kept, never the guess itself
+  cur.seen.add(await sha256hex(pass));
   if (cur.seen.size < LOGIN_MAX) {
     remember(misses, ip, cur);
     return false;
@@ -587,7 +521,6 @@ async function whoIs(req, env) {
 }
 
 // ---------------------------------------------------------------------------
-// APIs for the terminal
 // ---------------------------------------------------------------------------
 async function quoteApi(env, url) {
   const syms = (url.searchParams.get("s") || "").split(",").map((x) => x.trim()).filter(Boolean).slice(0, 40);
@@ -622,7 +555,6 @@ async function historyApi(env, url) {
 }
 
 // ---------------------------------------------------------------------------
-// Live quotes for the terminal's market screen
 // ---------------------------------------------------------------------------
 function deadline(ms = UPSTREAM_TIMEOUT) {
   return typeof AbortSignal !== "undefined" && AbortSignal.timeout ? AbortSignal.timeout(ms) : undefined;
@@ -644,12 +576,9 @@ async function finnhub(env) {
   return out;
 }
 
-// Finnhub gives currencies and commodities only through its WebSocket stream: connect for a couple of seconds,
-// take the latest prices and disconnect. The key stays on the server.
 let fxLast = {};
 
 async function finnhubFx(env) {
-  // the connection itself may hang: a time limit, so the load is never stuck (the last prices stay meanwhile)
   const resp = await within(fetch("https://ws.finnhub.io/?token=" + encodeURIComponent(env.FINNHUB_API_KEY), { headers: { Upgrade: "websocket" } }),
     UPSTREAM_TIMEOUT, null);
   if (!resp) throw new Error("Finnhub stream: no answer");
@@ -679,7 +608,6 @@ async function finnhubFx(env) {
     for (const s of Object.keys(FH_FX)) ws.send(JSON.stringify({ type: "subscribe", symbol: s }));
   });
   try { ws.close(1000, "done"); } catch {}
-  // instruments without trades in these seconds (night, weekend) keep their last known price
   fxLast = { ...fxLast, ...got };
   return { ...fxLast };
 }
@@ -702,7 +630,6 @@ async function eodhd(env) {
   return out;
 }
 
-// {id: {value, change[, base]}} with 7 significant digits and the change to 0.001% (new objects: the cache stays intact)
 export function trimQuotes(map, withBase = false) {
   const sig = (v) => Number(Number(v).toPrecision(7));
   const out = {};
@@ -723,7 +650,7 @@ async function quotesApi(req, env, only, ctx) {
   const res = { ok: true, tier: owner ? "owner" : "free", paid, refresh: paid ? OWNER_TTL : FREE_TTL,
     ts: new Date().toISOString(), stocks: {}, fx: {}, world: {}, errors: [] };
   const opts = { ctx, maxAge: QUOTES_MAX_AGE };
-  const wait = [];   // parts still loading: the terminal asks again in a few seconds instead of the usual interval
+  const wait = [];
   const part = (name, load, put) => within(load.then(put, (e) => { res.errors.push(String(e && e.message || e)); })
     .then(() => true), QUOTES_WAIT, false).then((done) => { if (!done) wait.push(name); });
   const jobs = [];
@@ -734,17 +661,14 @@ async function quotesApi(req, env, only, ctx) {
     if (only !== "stocks" && only !== "world") jobs.push(part("fx", swr("fx", FREE_TTL, () => finnhubFx(env), opts), (q) => { res.fx = q; }));
   } else res.errors.push("no Finnhub key");
   if (only !== "stocks" && only !== "fx") {
-    // world indices, commodities and yields: free Yahoo data for everyone; the paid feed on top for the owner if set
     jobs.push(part("world", worldQuotes(FREE_TTL, opts), (a) => { res.world = { ...a, ...res.world }; }));
     if (paid) jobs.push(part("eod", swr("eod", OWNER_TTL, () => eodhd(env), opts), (b) => { res.world = { ...res.world, ...b }; }));
   }
   await Promise.all(jobs);
   if (wait.length) res.wait = wait;
-  // a small answer: on throttled networks a connection carries only ~16 KB, so every byte counts
   res.stocks = trimQuotes(res.stocks, true);
   res.fx = trimQuotes(res.fx);
   res.world = trimQuotes(res.world);
-  // an old value served because its source keeps failing: say so (the terminal shows the errors in its status)
   for (const [name, key] of [["stocks", "fh"], ["fx", "fx"], ["world", "world"], ["eod", "eod"]]) {
     const m = memo[key];
     if (m && m.err && "value" in m && Date.now() - m.at > 60e3) {

@@ -1,9 +1,3 @@
-"""
-World economy forecasts for the terminal and the bot — the Bloomberg functions ECST / ECFC
-(economic statistics and forecasts by country). Source: IMF World Economic Outlook through the IMF DataMapper
-API (free, no key; it refuses browser-like requests, so we introduce ourselves as a research bot).
-Result: docs/macro.json, refreshed once a day (the IMF updates the forecasts twice a year).
-"""
 from __future__ import annotations
 
 import json
@@ -16,7 +10,6 @@ OUT = os.path.join(HERE, "docs", "macro.json")
 IMF_URL = "https://www.imf.org/external/datamapper/api/v1/{ind}?periods={periods}"
 RESEARCH_UA = "EconNews research bot econnews@example.com"
 
-# indicator: (English, Russian, unit)
 INDICATORS = {
     "NGDP_RPCH": ("Real GDP growth", "Рост реального ВВП", "%"),
     "PCPIPCH": ("Inflation (average CPI)", "Инфляция (средняя, ИПЦ)", "%"),
@@ -27,7 +20,6 @@ INDICATORS = {
     "NGDPD": ("GDP, USD bn", "ВВП, млрд долл.", "bn"),
 }
 
-# IMF code: (English, Russian) — the world, the groups and the 20 largest economies
 COUNTRIES = {
     "WEOWORLD": ("World", "Мир"), "ADVEC": ("Advanced economies", "Развитые страны"),
     "OEMDC": ("Emerging & developing", "Развивающиеся страны"), "EURO": ("Euro area", "Еврозона"),
@@ -49,7 +41,6 @@ def fetch(ind, periods):
 
 
 def parse(payloads, years):
-    """payloads: {indicator: IMF answer} -> rows [{c, en, ru, v: {indicator: [value per year]}}]."""
     rows = []
     for code, (en, ru) in COUNTRIES.items():
         v = {}
@@ -64,8 +55,6 @@ def parse(payloads, years):
 
 
 def world_map(payloads, year):
-    """Every country's value for the current year, by indicator — for the world map (MAP ECO).
-    IMF codes of countries are ISO 3166 alpha-3; groups (WEOWORLD, ADVEC, EURO…) are longer and left out."""
     out = {"year": year}
     for ind, d in payloads.items():
         if ind == "NGDPD":
@@ -81,7 +70,6 @@ def world_map(payloads, year):
 
 
 def build(now=None, path=OUT, fetcher=fetch, max_age_h=24):
-    """Returns the number of countries written (0 when the file is fresh or the IMF did not answer)."""
     now = now or datetime.now(timezone.utc)
     try:
         with open(path, encoding="utf-8") as f:
@@ -99,7 +87,7 @@ def build(now=None, path=OUT, fetcher=fetch, max_age_h=24):
             print(f"  ! IMF {ind}: {type(e).__name__}: {e}"[:200])
     rows = parse(payloads, years)
     if len(payloads) < len(INDICATORS) // 2 or len(rows) < 10:
-        return 0   # keep yesterday's file rather than a half-empty one
+        return 0
     data = {"updated": now.isoformat(), "source": "IMF World Economic Outlook", "years": years,
             "ind": {k: {"en": en, "ru": ru, "unit": u} for k, (en, ru, u) in INDICATORS.items() if k in payloads},
             "rows": rows, "map": world_map(payloads, now.year)}

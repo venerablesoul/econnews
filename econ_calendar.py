@@ -1,14 +1,3 @@
-"""
-Экономический календарь: важные события недели (инфляция, решения по ставкам,
-занятость, ВВП...) для напоминаний и утреннего обзора.
-
-Источник — бесплатная JSON-лента календаря Forex Factory (faireconomy.media),
-без ключей. Лента обновляется раз в несколько часов и просит не дёргать её
-слишком часто, поэтому бот кэширует её в state.json и скачивает не чаще
-раза в CACHE_HOURS.
-
-Если лента недоступна, бот просто работает без календаря.
-"""
 from __future__ import annotations
 
 import json
@@ -27,8 +16,6 @@ FLAGS = {"USD": "🇺🇸", "EUR": "🇪🇺", "GBP": "🇬🇧", "JPY": "🇯�
 COUNTRY = {"USD": "США", "EUR": "еврозона", "GBP": "Великобритания", "JPY": "Япония",
            "CNY": "Китай", "CHF": "Швейцария", "CAD": "Канада", "AUD": "Австралия", "NZD": "Н. Зеландия"}
 
-# Common names: (regex, Russian, Chinese, Arabic). The rest goes through the translator (Russian, in messages:
-# also Chinese and Arabic) or stays in English.
 NAMES = [
     (r"^Core CPI m/m", "Базовая инфляция (CPI), м/м", "核心CPI月率", "مؤشر أسعار المستهلكين الأساسي (شهري)"),
     (r"^Core CPI y/y", "Базовая инфляция (CPI), г/г", "核心CPI年率", "مؤشر أسعار المستهلكين الأساسي (سنوي)"),
@@ -94,11 +81,9 @@ def fetch_events(timeout=15):
 
 
 def get_events(st, now, countries, impacts=("High",)):
-    """События из кэша state['calendar'], при необходимости обновляет кэш."""
     cal = st.setdefault("calendar", {"fetched": "", "events": []})
     stale = not cal["fetched"] or \
         datetime.fromisoformat(cal["fetched"]) < now - timedelta(hours=CACHE_HOURS)
-    # новая неделя начинается в воскресенье — перекачиваем, если кэш с прошлой недели
     if cal["fetched"] and datetime.fromisoformat(cal["fetched"]).isocalendar()[1] != now.isocalendar()[1]:
         stale = True
     if stale:
@@ -108,7 +93,6 @@ def get_events(st, now, countries, impacts=("High",)):
         except Exception as e:
             print(f"  ! calendar unavailable: {type(e).__name__}: {e}")
             if not cal["fetched"]:
-                # не стучимся каждые 30 минут в упавшую ленту: повторим через час
                 cal["fetched"] = (now - timedelta(hours=CACHE_HOURS - 1)).isoformat()
     return [e for e in cal["events"]
             if e["impact"] in impacts and (e["country"] in countries or e["country"] == "ALL")]
@@ -122,7 +106,6 @@ _COL = {"ru": 1, "zh": 2, "ar": 3}
 
 
 def known_name(e, lang):
-    """The event's name from NAMES in that language (ru, zh, ar), or None."""
     col = _COL.get(lang)
     if not col:
         return None
@@ -138,7 +121,6 @@ def ru_name(e, translate=None):
 
 
 def xl_name(e, lang, translate=None):
-    """The name in Russian, Chinese or Arabic: from NAMES, else through translate(text, lang), else the English one."""
     name = known_name(e, lang)
     if name:
         return name
@@ -153,7 +135,6 @@ def event_name(e, lang="en", translate=None):
     return xl_name(e, lang, translate) if lang in _COL else e["title"]
 
 
-# "fcst"/"prev" labels and the verdict (actual vs forecast) in every language
 _FP = {"en": ("fcst ", "prev "), "ru": ("прогноз ", "пред. "), "zh": ("预期 ", "前值 "), "ar": ("المتوقع ", "السابق ")}
 _VERDICT = {"en": ("as expected", "above forecast", "below forecast"),
             "ru": ("как ожидали", "выше прогноза", "ниже прогноза"),
@@ -182,7 +163,6 @@ def fmt_event(e, lang="en", translate=None, with_time=True):
 
 
 def fmt_released(e, actual, lang="en", translate=None):
-    """"🇺🇸 CPI y/y: <b>3.1%</b> (fcst 3.0%, prev 2.9%) — above forecast"."""
     extra = _fp(e, lang)
     v = verdict(actual, e.get("forecast"), lang)
     return (f"{FLAGS.get(e['country'], '')} {_esc(event_name(e, lang, translate))}: <b>{_esc(actual)}</b>"
@@ -200,15 +180,9 @@ def events_between(events, start, end):
 
 
 # ---------------------------------------------------------------------------
-# Фактические значения (вышло X при прогнозе Y) для данных США — из FRED.
-# Нужен бесплатный ключ: https://fredaccount.stlouisfed.org/apikeys
-# FRED публикует цифру в течение минут–пары часов после выхода данных.
 # ---------------------------------------------------------------------------
 FRED_URL = "https://api.stlouisfed.org/fred/series/observations"
 
-# название события Forex Factory -> (серия FRED, преобразование, формат)
-#   pch — изменение к прошлому периоду в %, pc1 — к прошлому году в %, lin — как есть,
-#   chg — изменение в единицах серии. fmt: pct — «0.3%», k — «215K» (тысячи), k_raw — сотни тысяч → K
 FRED_MAP = [
     (r"^CPI m/m", "CPIAUCSL", "pch", "pct"),
     (r"^CPI y/y", "CPIAUCSL", "pc1", "pct"),
@@ -248,7 +222,6 @@ def _fmt_actual(v, fmt):
 
 
 def fetch_actual(e, key, timeout=15):
-    """Возвращает строку факта, если FRED уже опубликовал данные после события, иначе None."""
     spec = fred_spec(e)
     if not spec or not key:
         return None
@@ -260,7 +233,6 @@ def fetch_actual(e, key, timeout=15):
         obs = json.loads(r.read().decode("utf-8")).get("observations") or []
     if not obs or obs[0].get("value") in (None, "", "."):
         return None
-    # данные должны появиться в FRED в день события (по Нью-Йорку) или позже
     ev_day = (datetime.fromisoformat(e["ts"]) - timedelta(hours=5)).date().isoformat()
     if obs[0].get("realtime_start", "") < ev_day:
         return None
@@ -275,7 +247,6 @@ def _num(s):
 
 
 def verdict(actual, forecast, lang="en"):
-    """Actual vs forecast: "above forecast" / "below forecast" / "as expected"."""
     a, f = _num(actual), _num(forecast)
     if a is None or f is None:
         return ""

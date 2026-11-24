@@ -1,21 +1,14 @@
-// Extra API for the terminal's maps and monitors.
-//   /api/geo?u=<url>  — the map layers and calendars from sources that do not allow browsers (CORS):
-//                       only the listed hosts, cached at the edge; the answer is passed through as is
-//   /api/perf?s=…     — returns over 1D…5Y for up to 40 instruments in one request (TRAY, FPC):
-//                       Yahoo's spark endpoint takes 20 symbols per call, so 40 instruments cost 4 calls
-//                       (the free plan allows 50 outside calls per request)
 import { cached, getJSON } from "./lib.js";
 import { MKT, getHistory, parseSymbol } from "./market.js";
 
 const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36";
-// host → seconds to cache
 export const GEO_HOSTS = {
   "earthquake.usgs.gov": 120, "eonet.gsfc.nasa.gov": 600, "www.gdacs.org": 600, "gdacs.org": 600,
   "services9.arcgis.com": 1800, "api.open-meteo.com": 900, "date.nager.at": 86400, "www.treasurydirect.gov": 1800,
   "markets.newyorkfed.org": 1800, "data-api.ecb.europa.eu": 1800, "www.nhc.noaa.gov": 600, "meri.digitraffic.fi": 60,
 };
 
-const GEO_MAX_BYTES = 12 * 1024 * 1024;   // the biggest layer (PortWatch pages, GDACS) is far smaller
+const GEO_MAX_BYTES = 12 * 1024 * 1024;
 
 export async function geoProxy(raw) {
   let u;
@@ -25,7 +18,6 @@ export async function geoProxy(raw) {
   const text = await cached("geo:" + u.href, ttl, async () => {
     const init = { headers: { "User-Agent": UA, Accept: "application/json,*/*" }, cf: { cacheTtl: ttl, cacheEverything: true }, redirect: "manual" };
     if (typeof AbortSignal !== "undefined" && AbortSignal.timeout) init.signal = AbortSignal.timeout(20000);
-    // redirects are followed only to listed sources: a listed site must not open the proxy to any other address
     let target = u, r;
     for (let hop = 0; ; hop++) {
       r = await fetch(target.href, init);
@@ -40,14 +32,13 @@ export async function geoProxy(raw) {
     if (Number(r.headers.get("content-length") || 0) > GEO_MAX_BYTES) throw new Error(u.hostname + ": answer too big");
     const t = await r.text();
     if (t.length > GEO_MAX_BYTES) throw new Error(u.hostname + ": answer too big");
-    JSON.parse(t);   // only JSON passes through
+    JSON.parse(t);
     return t;
   });
   return new Response(text, { status: 200, headers: { "content-type": "application/json; charset=utf-8", "Cache-Control": "public, max-age=" + Math.min(ttl, 600) } });
 }
 
 // ---------------------------------------------------------------------------
-// Returns over many periods
 // ---------------------------------------------------------------------------
 const YEAR = 365.25 * 86400;
 function at(series, ts) {
@@ -55,7 +46,6 @@ function at(series, ts) {
   while (i < series.t.length - 1 && series.t[i + 1] <= ts) i++;
   return series.t[i] <= ts ? series.c[i] : null;
 }
-// daily: a year of daily closes, weekly: five years of weekly closes → {period: %}; past one year — a year on average
 export function returnsFrom(daily, weekly) {
   const out = {}, n = daily.t.length;
   if (n < 2) return out;
@@ -70,7 +60,6 @@ export function returnsFrom(daily, weekly) {
     const v = at(daily, start / 1000 - 1);
     out[k] = v ? (last / v - 1) * 100 : null;
   }
-  // the daily series starts about a year back: the year from the weekly one when the daily falls short
   if (out["1y"] == null && weekly && weekly.t && weekly.t.length) { const v = at(weekly, tl - YEAR); out["1y"] = v ? (last / v - 1) * 100 : null; }
   if (weekly && weekly.t && weekly.t.length) {
     for (const [k, yrs] of [["2y", 2], ["3y", 3], ["5y", 5]]) {
@@ -84,7 +73,6 @@ export function returnsFrom(daily, weekly) {
   return out;
 }
 
-// Yahoo spark: {symbol: {t, c}} for up to 20 symbols per call
 export function sparkSeries(d) {
   const out = {};
   if (d && d.spark && Array.isArray(d.spark.result)) {
@@ -138,7 +126,7 @@ export async function getPerf(env, raws) {
       if (x.error) return { s: x.s, error: x.error, r: null };
       try {
         let d = x.y && daily[x.y], w = x.y && weekly[x.y];
-        if (!d || d.c.length < 2) {   // Moscow Exchange and anything Yahoo's spark lacks: the usual history
+        if (!d || d.c.length < 2) {
           const [h1, h5] = await Promise.all([getHistory(env, x.s, "1y"), getHistory(env, x.s, "5y").catch(() => null)]);
           d = h1; w = h5; x.name = x.name || h1.name; x.name_ru = x.name_ru || h1.name_ru;
         }

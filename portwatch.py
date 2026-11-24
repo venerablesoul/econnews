@@ -1,23 +1,3 @@
-"""
-IMF PortWatch for the map: daily transits through the world's chokepoints (the SHIP tab's "Chokepoints" circles and
-the side list) and the ports database (seaports, oil ports). PortWatch counts ships from satellite AIS, a few days
-behind.
-
-The map used to ask PortWatch's ArcGIS query service straight from the browser. Since late October 2026 that service
-fails often: long queries answer "Cannot perform query", and the browser then showed "ArcGIS: Token Required". So the
-bot reads the data and publishes it with the site:
-
-  1. the ArcGIS Hub export of the whole layer as CSV (hub.arcgis.com, the same file as PortWatch's "Download"
-     button) — one file, no query limits;
-  2. if that fails, the query service in small pieces (one chokepoint at a time, the last ~60 days);
-  3. if a layer's item cannot be found, ArcGIS Online's search finds it by its title (in case it was republished).
-
-Chokepoint coordinates come from PortWatch's chokepoints database; if that is out of reach too, from the table below
-(the map only needs where to put the circle).
-
-Every 6 hours. A failed read changes nothing: the last good copy stays and the error is kept in "err".
-Result: docs/portwatch.json (chokepoints) and docs/pw_ports.json (ports). Standard library only.
-"""
 from __future__ import annotations
 
 import csv
@@ -35,19 +15,16 @@ OUT = os.path.join(HERE, "docs", "portwatch.json")
 OUT_PORTS = os.path.join(HERE, "docs", "pw_ports.json")
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
 EVERY_H = 6
-PORTS_EVERY_H = 72        # the ports database changes once a year or so
-DAYS = 60                 # daily rows kept: the map compares the last 7 days with the 30 before them
+PORTS_EVERY_H = 72
+DAYS = 60
 ORG = "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/"
 OWNER = "IMF-portwatch_imf_dataviz"
 HUBS = ("https://hub.arcgis.com", "https://portwatch.imf.org")
-# the layers: (service name, ArcGIS item id or None — then found by its title)
 DAILY = ("Daily_Chokepoints_Data", "3da2b9ca97684916b75c4013f95d18ab")
 CHOKES = ("PortWatch_chokepoints_database", "fa9a5800b0ee4855af8b2944ab1e07af")
 PORTS = ("PortWatch_ports_database", None)
-MAX_CSV = 120 << 20       # a bigger "CSV" is not this layer
+MAX_CSV = 120 << 20
 
-# where each chokepoint is, for when the chokepoints database cannot be read (keys: the name without
-# "strait", "canal", ... — see key())
 WHERE = {
     "suez": (30.60, 32.33), "panama": (9.12, -79.75), "bosporus": (41.12, 29.07), "bab el mandeb": (12.60, 43.33),
     "malacca": (2.50, 101.40), "hormuz": (26.55, 56.45), "good hope": (-34.80, 19.00), "gibraltar": (35.95, -5.60),
@@ -96,7 +73,6 @@ def get_json(url, timeout=60):
 
 
 def find_item(title, fetch=get_json):
-    """An item id by the layer's title (PortWatch's own items first)."""
     q = urllib.parse.quote(f'title:"{title}" AND owner:{OWNER}')
     d = fetch(f"https://www.arcgis.com/sharing/rest/search?q={q}&num=20&f=json")
     res = [r for r in d.get("results") or [] if isinstance(r, dict) and r.get("id")]
@@ -108,8 +84,6 @@ def find_item(title, fetch=get_json):
 
 
 def hub_csv(item, fetch=get, fetch_json=get_json, wait=time.sleep):
-    """The Hub's CSV export of an item's first layer (text). The Hub may answer with the file at once, or with a
-    status to wait for and then a link."""
     last = None
     for hub in HUBS:
         url = f"{hub}/api/download/v1/items/{item}/csv?redirect=false&layers=0"
@@ -135,7 +109,6 @@ def hub_csv(item, fetch=get, fetch_json=get_json, wait=time.sleep):
 
 
 def safe_link(url):
-    """A download link the Hub gave: https to a public host name only (no IP addresses, no local names)."""
     try:
         u = urllib.parse.urlparse(str(url))
     except ValueError:
@@ -154,7 +127,6 @@ def num(x):
 
 
 def day_of(row):
-    """YYYY-MM-DD from a row: its 'date' column (ISO, 'YYYY/MM/DD hh:mm:ss', or epoch ms) or year/month/day."""
     d = str(row.get("date") or row.get("Date") or "").strip()
     m = re.match(r"(\d{4})[-/](\d{1,2})[-/](\d{1,2})", d)
     try:
@@ -178,7 +150,6 @@ def day_row(a, d):
 
 
 def parse_daily(text, since):
-    """{portid: {"name": .., "days": {day: row}}} from the daily CSV, rows on or after `since` only."""
     out = {}
     rd = csv.DictReader(io.StringIO(text))
     cols = {c.strip().lower(): c for c in rd.fieldnames or []}
@@ -196,7 +167,6 @@ def parse_daily(text, since):
 
 
 def parse_base(text):
-    """{portid: {name, lat, lon, yr, top}} from the chokepoints database CSV."""
     out = {}
     for r in csv.DictReader(io.StringIO(text)):
         a = {k.strip().lower(): v for k, v in r.items() if k}
@@ -209,16 +179,15 @@ def parse_base(text):
 
 
 def query_daily(ids, since, fetch=get_json):
-    """The query service, one chokepoint at a time (short queries answer; the long ones time out there)."""
     out = {}
     y = int(since[:4])
     for pid in ids:
-        if not PID_RE.fullmatch(str(pid)):   # it goes into the query's where clause
+        if not PID_RE.fullmatch(str(pid)):
             continue
         where_ = f"portid='{pid}' AND year>={y}"
         q = urllib.parse.urlencode({"where": where_, "outFields": "*", "returnGeometry": "false", "f": "json",
                                     "orderByFields": "year DESC,month DESC,day DESC", "resultRecordCount": str(DAYS + 40)})
-        for attempt in range(3):   # the service flaps: the same query works on a second try
+        for attempt in range(3):
             try:
                 d = fetch(ORG + DAILY[0] + "/FeatureServer/0/query?" + q)
                 break
@@ -272,8 +241,6 @@ PID_RE = re.compile(r"[A-Za-z0-9_]{1,40}")
 
 
 def item_of(layer, old, fetch_json):
-    """A layer's item id: the one we know, the one found last time, or ArcGIS search (an id goes into a URL path:
-    only 32 hex digits are accepted)."""
     it = layer[1] or (old.get("items") or {}).get(layer[0]) or find_item(layer[0], fetch_json)
     if not ITEM_RE.fullmatch(str(it)):
         raise RuntimeError("ArcGIS: odd item id")
@@ -281,7 +248,6 @@ def item_of(layer, old, fetch_json):
 
 
 def assemble(daily, base, old_base):
-    """The published list: every chokepoint with a place and with days."""
     out = []
     for pid, c in daily.items():
         b = base.get(pid) or old_base.get(pid) or {}
@@ -329,7 +295,7 @@ def build_chokes(now, path=OUT, fetch=get, fetch_json=get_json, every_h=EVERY_H,
     ids = sorted(set(base) | set(old_base) | {f"chokepoint{i}" for i in range(1, 29)})
     stale = [pid for pid in ids if not (daily.get(pid) or {}).get("days")
              or max(daily[pid]["days"]) < (now - timedelta(days=10)).date().isoformat()]
-    if stale:   # the export is missing a chokepoint or is behind: those few from the query service
+    if stale:
         try:
             got = query_daily(stale, since, fetch_json)
             for pid, c in got.items():
@@ -348,7 +314,7 @@ def build_chokes(now, path=OUT, fetch=get, fetch_json=get_json, every_h=EVERY_H,
             out["warn"] = errs[:4]
         else:
             out.pop("warn", None)
-    else:   # nothing usable: the last good copy stays
+    else:
         out["err"] = "; ".join(errs)[:400] or "no chokepoints"
     save(path, out)
     if out.get("err"):
@@ -392,7 +358,7 @@ def build_ports(now, path=OUT_PORTS, fetch=get, fetch_json=get_json, every_h=POR
         out.pop("err", None)
     except Exception as e:
         out["err"] = f"{type(e).__name__}: {e}"[:200]
-        out.pop("item", None)   # found again next time (the layer may have been republished)
+        out.pop("item", None)
     save(path, out)
     if out.get("err"):
         raise RuntimeError(out["err"])

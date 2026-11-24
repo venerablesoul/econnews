@@ -1,4 +1,3 @@
-"""Тесты: копия обзорных тайлов карты на сайте (basemap.py). Без сети."""
 import json
 import os
 import sys
@@ -21,7 +20,7 @@ class Basemap(unittest.TestCase):
         def fetch(url):
             asked.append(url)
             if "Bathymetry" in url and url.endswith(".jpg"):
-                return b"<html>404 Not Found</html>"        # an error page is not a picture
+                return b"<html>404 Not Found</html>"
             if "CityLights" in url:
                 return JPG
             if url.endswith(".jpeg"):
@@ -31,14 +30,14 @@ class Basemap(unittest.TestCase):
             n1 = basemap.build(base=d, fetch=fetch, per_call=300)
             meta = json.load(open(os.path.join(d, "meta.json")))
             self.assertTrue(meta["layers"]["day"]["url"].endswith(".jpeg"))
-            self.assertFalse(meta["layers"]["day"]["done"])      # 341 tiles, 300 a call
+            self.assertFalse(meta["layers"]["day"]["done"])
             n2 = basemap.build(base=d, fetch=fetch, per_call=1000)
             meta = json.load(open(os.path.join(d, "meta.json")))
             self.assertEqual(n1 + n2, 2 * 341)
             self.assertTrue(meta["layers"]["day"]["done"] and meta["layers"]["lights"]["done"])
             self.assertTrue(os.path.isfile(os.path.join(d, "day", "4", "15", "15.jpg")))
             asked.clear()
-            self.assertEqual(basemap.build(base=d, fetch=fetch), 0)   # complete: nothing is asked
+            self.assertEqual(basemap.build(base=d, fetch=fetch), 0)
             self.assertEqual(asked, [])
 
     def test_nothing_answers(self):

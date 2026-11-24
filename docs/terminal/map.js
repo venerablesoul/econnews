@@ -1,12 +1,3 @@
-/* Maps — the terminal's version of Bloomberg MAP / BMAP: one dark world map with layers of data.
-   MAP   — your own map: tick any layers (earthquakes, fires, storms, disasters, stock markets, chokepoints, ports,
-           power plants, refineries, LNG terminals, weather)
-   STORM — BMAP STORM: tropical cyclones with their tracks and the energy assets in their way
-   SHIP  — BMAP V / SHIP: shipping through the world's chokepoints (ships a day, tankers, change) and ports
-   WETR  — weather in the big cities: now, the week ahead, heating and cooling degree days (energy demand)
-   ECO   — countries coloured by an indicator: GDP growth, inflation, unemployment, debt, policy rate, stocks today
-   Static layers: docs/geo/*.json (tools/build_geo.py). Live layers come straight from the sources (USGS, NASA EONET,
-   GDACS, IMF PortWatch, Open-Meteo); a source that does not allow browsers is fetched through the bot server (/api/geo). */
 (function(){
 'use strict';
 var T = window.TERM, F = window.FN;
@@ -19,7 +10,7 @@ function mx(lon){ return (lon + 180) / 360 }
 function my(lat){ lat = Math.max(-LAT_MAX, Math.min(LAT_MAX, lat)); var s = Math.sin(lat * D2R); return 0.5 - Math.log((1 + s) / (1 - s)) / (4 * Math.PI) }
 function ilon(x){ return x * 360 - 180 }
 function ilat(y){ return Math.atan(Math.sinh(Math.PI * (1 - 2 * y))) / D2R }
-function km(a, b){   // great-circle distance between [lon, lat] points
+function km(a, b){
   var p1 = a[1] * D2R, p2 = b[1] * D2R, dp = p2 - p1, dl = (b[0] - a[0]) * D2R;
   var h = Math.sin(dp / 2) * Math.sin(dp / 2) + Math.cos(p1) * Math.cos(p2) * Math.sin(dl / 2) * Math.sin(dl / 2);
   return 12742 * Math.asin(Math.min(1, Math.sqrt(h)));
@@ -31,11 +22,9 @@ function getJSON(url, ms){
   return fetch(url, ac ? {signal: ac.signal} : undefined).then(function(r){ clearTimeout(t); if (!r.ok) throw new Error('HTTP ' + r.status); return r.json() },
     function(e){ clearTimeout(t); throw e && e.name === 'AbortError' ? new Error(TX('srv_slow')) : e });
 }
-// sources without browser access (CORS) go through the bot server; the others straight, the server only if that fails
 function viaServer(url){
   var b = T.api();
   if (!b) return Promise.reject(new Error(TX('srv_not_set_e')));
-  // T.wjson: the server's lanes with short tries (throttled networks, see index.html)
   return T.wjson('/api/geo?u=' + encodeURIComponent(url), {timeout: 20000, hedge: 6000}).then(function(d){ if (d && d.ok === false && d.error) throw new Error(d.error); return d });
 }
 function live(url, direct){
@@ -46,7 +35,6 @@ var geoCache = {};
 function geo(name){ return geoCache[name] || (geoCache[name] = getJSON('../geo/' + name, 30000).catch(function(e){ delete geoCache[name]; throw e })) }
 
 /* ======================= reference data ======================= */
-// the stock market of each city (ids of the terminal's quotes)
 var EXCH = [
   {id: 'S&P', more: ['Nasdaq', 'DJI', 'RTY'], lon: -74.011, lat: 40.707, city: ['New York', 'Нью-Йорк']},
   {id: 'UKX', lon: -0.091, lat: 51.515, city: ['London', 'Лондон']},
@@ -58,7 +46,6 @@ var EXCH = [
   {id: 'SHCOMP', lon: 121.500, lat: 31.237, city: ['Shanghai', 'Шанхай']},
   {id: 'SENSEX', lon: 72.834, lat: 18.930, city: ['Mumbai', 'Мумбаи']}
 ];
-// big cities for the weather map: [English, Russian, lat, lon]
 var CITIES = [
   ['New York', 'Нью-Йорк', 40.71, -74.01], ['Chicago', 'Чикаго', 41.88, -87.63], ['Houston', 'Хьюстон', 29.76, -95.37], ['Los Angeles', 'Лос-Анджелес', 34.05, -118.24],
   ['Atlanta', 'Атланта', 33.75, -84.39], ['Dallas', 'Даллас', 32.78, -96.80], ['Boston', 'Бостон', 42.36, -71.06], ['Toronto', 'Торонто', 43.65, -79.38],
@@ -88,17 +75,17 @@ function mix(a, b, t){
   t = Math.max(0, Math.min(1, t));
   return 'rgb(' + pa.map(function(v, i){ return Math.round(v + (pb[i] - v) * t) }).join(',') + ')';
 }
-function diverging(v, scale){   // red (negative) — grey — green (positive)
+function diverging(v, scale){
   if (v == null || isNaN(v)) return null;
   var t = Math.max(-1, Math.min(1, v / scale));
   return t < 0 ? mix('#2a2f35', '#e0393e', -t) : mix('#2a2f35', '#1fbf68', t);
 }
-function sequential(v, lo, hi, reverse){   // green (good) → amber → red (bad), or the reverse
+function sequential(v, lo, hi, reverse){
   if (v == null || isNaN(v)) return null;
   var t = (v - lo) / ((hi - lo) || 1); if (reverse) t = 1 - t;
   return t < 0.5 ? mix('#1f8f55', '#e0a030', t * 2) : mix('#e0a030', '#d93a3a', (t - 0.5) * 2);
 }
-function tempCol(t){   // °C: deep blue → white → red
+function tempCol(t){
   if (t == null || isNaN(t)) return '#4b5563';
   var stops = [[-30, '#3a4cff'], [-10, '#6ea8ff'], [0, '#bfe3ff'], [10, '#f5f5c8'], [20, '#f2cc60'], [30, '#ff7a1a'], [40, '#d92020']];
   for (var i = 1; i < stops.length; i++) if (t <= stops[i][0]) return mix(stops[i - 1][1], stops[i][1], (t - stops[i - 1][0]) / (stops[i][0] - stops[i - 1][0]));
@@ -106,7 +93,6 @@ function tempCol(t){   // °C: deep blue → white → red
 }
 function alertCol(a){ a = String(a || '').toLowerCase(); return a === 'red' ? '#ff3b3b' : a === 'orange' ? '#ff9a1a' : '#2fbf71' }
 function magCol(m){ return m >= 7 ? '#ff2a2a' : m >= 6 ? '#ff6a1a' : m >= 5 ? '#e0b23c' : m >= 4 ? '#f2cc60' : '#e8e8a0' }
-// Saffir–Simpson from the 1-minute wind in km/h
 function stormCat(kmh){
   if (kmh == null) return '';
   return kmh >= 252 ? 'CAT 5' : kmh >= 209 ? 'CAT 4' : kmh >= 178 ? 'CAT 3' : kmh >= 154 ? 'CAT 2' : kmh >= 119 ? 'CAT 1' : kmh >= 63 ? 'TS' : 'TD';
@@ -126,7 +112,6 @@ function ago(ts){
 function nm2(a){ return a[I.ru ? 1 : 0] }
 
 /* ======================= layers ======================= */
-// a layer returns {pts: [{lon, lat, r, c, t, s: [lines], u, lbl, act, k}], lines: [{pts, c, w, dash}], polys: [{rings, c}], updated}
 var LAYERS = {
   quakes: {grp: 'live', color: '#ff5a3c', src: 'USGS', ttl: 300, load: loadQuakes},
   fires: {grp: 'live', color: '#ff8c1a', src: 'NASA EONET', ttl: 900, load: function(){ return loadEonet('wildfires', '#ff8c1a') }},
@@ -149,7 +134,6 @@ var LAYERS = {
 };
 var ORDER = ['plants', 'fact', 'ports', 'oilst', 'refin', 'lng', 'gas', 'ships', 'world', 'tankers', 'wx', 'alerts', 'fires', 'volc', 'quakes', 'choke', 'storms', 'exch'];
 var GROUPS = [['live', 'gm_g_live'], ['mkt', 'gm_g_mkt'], ['infra', 'gm_g_infra'], ['wx', 'gm_g_wx']];
-// which layers each tab shows: "base" always, "opt" can be ticked
 var TABS = {
   MAP: {opt: ORDER.slice(), def: ['quakes', 'storms', 'fires', 'exch', 'choke']},
   STORM: {base: ['storms'], opt: ['refin', 'lng', 'gas', 'oilst', 'ports', 'plants', 'fact', 'alerts'], def: ['refin', 'lng', 'ports']},
@@ -164,11 +148,9 @@ var M = {tab: 'MAP', W: 0, H: 0, S: 0, S0: 0, cx: 0.5, cy: my(22), dpr: 1, on: {
   eco: store('map_eco') || 'NGDP_RPCH', wx: store('map_wx') || 'now', fuels: {}, sideOpen: false, built: false};
 try { var sv = JSON.parse(store('map_on') || 'null'); if (sv && typeof sv === 'object') M.on = sv } catch(e){}
 try { var sf = JSON.parse(store('map_fuels') || 'null'); if (sf && typeof sf === 'object') M.fuels = sf } catch(e){}
-// the categories switched off, per layer (the power plants' fuels keep their old storage key)
 M.off = {plants: M.fuels, fact: {}, ships: {}, world: {}};
 ['fact', 'ships', 'world'].forEach(function(id){ try { var o = JSON.parse(store('map_off_' + id) || 'null'); if (o && typeof o === 'object') M.off[id] = o } catch(e){} });
 Object.keys(TABS).forEach(function(t){ if (!M.on[t]) { M.on[t] = {}; TABS[t].def.forEach(function(k){ M.on[t][k] = 1 }) } });
-// layers added later switch on once for those who saved their choice before
 if (store('map_on_v') !== '2') { if (M.on.SHIP.ships == null) M.on.SHIP.ships = 1; store('map_on_v', '2'); store('map_on', JSON.stringify(M.on)) }
 if (store('map_on_v2') !== '3') { if (M.on.SHIP.tankers == null) M.on.SHIP.tankers = 1; store('map_on_v2', '3'); store('map_on', JSON.stringify(M.on)) }
 if (store('map_on_v3') !== '4') { if (M.on.SHIP.world == null) M.on.SHIP.world = 1; store('map_on_v3', '4'); store('map_on', JSON.stringify(M.on)) }
@@ -196,7 +178,6 @@ function prep(d){
   (d.pts || []).forEach(function(p){
     p.fx = mx(p.lon); p.fy = my(p.lat);
     if (p.k !== 'ship') return;
-    // a ship's track ([lon, lat], oldest first) and where it will be in 30 minutes at its speed and course
     if (p.trk && p.trk.length) p.tf = p.trk.map(function(q){ return [mx(q[0]), my(q[1])] });
     if (p.hd != null && p.sog > 0.5) {
       var dist = p.sog * 1852 * 0.5, a = p.hd * D2R, la = p.lat + dist * Math.cos(a) / 111320, lo = p.lon + dist * Math.sin(a) / (111320 * Math.max(0.05, Math.cos(p.lat * D2R)));
@@ -265,7 +246,6 @@ function isCurrent(p){ return String(p.iscurrent).toLowerCase() === 'true' }
 function loadStorms(){
   return gdSearch('TC', 20, 'Green;Orange;Red').then(function(g){
     var pts = [], lines = [], polys = [], seen = {}, jobs = [], data = {pts: pts, lines: lines, polys: polys};
-    // tracks and cones are heavy and GDACS can be slow with them: the storms show at once, each track joins when it comes
     var addLine = function(l){ l.f = l.pts.map(function(q){ return [mx(q[0]), my(q[1])] }); lines.push(l) };
     var addPoly = function(pg){ pg.f = pg.rings.map(function(r){ return r.map(function(q){ return [mx(q[0]), my(q[1])] }) }); polys.push(pg) };
     (g.features || []).forEach(function(f){
@@ -277,7 +257,6 @@ function loadStorms(){
         (p.country ? p.country + ' · ' : '') + TX('gm_since', F.dmy(String(p.fromdate || '').slice(0, 10)))];
       pts.push({lon: geo_.coordinates[0], lat: geo_.coordinates[1], r: 6 + (kmh ? Math.min(8, kmh / 40) : 0), c: col, t: '🌀 ' + name, s: s,
         u: p.url && p.url.report, lbl: name, k: 'storm', kmh: kmh, alert: p.alertlevel, country: p.country, eid: p.eventid, ring: true});
-      // the track (segments labelled by strength), the forecast cone and the areas of 60/90/120 km/h winds
       if (p.url && p.url.geometry) jobs.push(live(p.url.geometry, true).then(function(gg){
         (gg.features || []).forEach(function(ff){
           var q = ff.properties || {}, gt = ff.geometry || {}, cl = String(q.Class || ''), lb = String(q.polygonlabel || '');
@@ -292,14 +271,12 @@ function loadStorms(){
     return Promise.race([Promise.all(jobs), new Promise(function(r){ setTimeout(r, 3000) })]).then(function(){ return data });
   });
 }
-// a tropical cyclone as it looks from orbit: a white cloud disc with spiral bands and the eye, rings of its strength
 function drawStorm(g, x, y, r, p){
   var kmh = p.kmh || 60, R = Math.max(14, Math.min(90, r * (1.6 + kmh / 120))), t = (Date.now() / 9000) % (2 * Math.PI);
   g.save();
   var gr = g.createRadialGradient(x, y, R * 0.08, x, y, R);
   gr.addColorStop(0, 'rgba(245,248,252,.92)'); gr.addColorStop(0.45, 'rgba(225,232,242,.55)'); gr.addColorStop(1, 'rgba(210,220,235,0)');
   g.globalAlpha = 1; g.fillStyle = gr; g.beginPath(); g.arc(x, y, R, 0, 6.2832); g.fill();
-  // spiral bands (counter-clockwise in the north, clockwise in the south)
   var dir = p.lat < 0 ? -1 : 1;
   g.lineCap = 'round';
   for (var arm = 0; arm < 3; arm++) {
@@ -311,21 +288,16 @@ function drawStorm(g, x, y, r, p){
     }
     g.strokeStyle = 'rgba(255,255,255,.55)'; g.lineWidth = Math.max(1.2, R * 0.07); g.stroke();
   }
-  // the eye: dark for a hurricane/typhoon, cloudy for a weaker storm
   g.fillStyle = kmh >= 119 ? 'rgba(20,30,48,.85)' : 'rgba(255,255,255,.7)'; g.beginPath(); g.arc(x, y, Math.max(2, R * 0.07), 0, 6.2832); g.fill();
-  // the rings: its colour by strength
   g.globalAlpha = 0.75; g.strokeStyle = p.c; g.lineWidth = 1.2; g.beginPath(); g.arc(x, y, R * 1.05, 0, 6.2832); g.stroke();
   g.globalAlpha = 0.35; g.beginPath(); g.arc(x, y, R * 1.45, 0, 6.2832); g.stroke();
   g.restore();
 }
-// track segments by the storm's strength then: hurricane/typhoon, tropical storm, depression
 var TRACK_COL = {HU: '#ff4b6a', TY: '#ff4b6a', STY: '#ff2a6a', TS: '#f2cc60', TD: '#4fd2ff', STS: '#f2cc60'};
 var GD_KIND = {EQ: 'gm_k_eq', FL: 'gm_k_fl', VO: 'gm_k_vo', DR: 'gm_k_dr', WF: 'gm_k_wf', TC: 'gm_k_tc'};
 var GD_ICON = {EQ: '◎', FL: '≈', VO: '▲', DR: '☀', WF: '♨', TC: '🌀'};
 function loadAlerts(){
   var types = ['EQ', 'FL', 'VO', 'DR', 'WF'];
-  // earthquakes only with an orange or red alert (green ones are many and minor); floods, volcanoes, droughts and fires at every level
-  // one request per type: GDACS returns at most 100 events per search
   var jobs = types.map(function(t){
     return gdSearch(t, t === 'EQ' ? 14 : 30, t === 'EQ' ? 'Orange;Red' : 'Green;Orange;Red').then(function(g){ return (g && g.features) || [] }, function(){ return null });
   });
@@ -339,7 +311,6 @@ function loadAlerts(){
       if (geo_.type !== 'Point' || !p.eventtype || p.eventtype === 'TC' || seen[p.eventtype + p.eventid]) return;
       if (p.Class && !/centroid/i.test(p.Class)) return;
       var lvl = String(p.alertlevel || 'Green');
-      // green earthquakes are minor; the rest while current or from the last week
       if (lvl === 'Green' && p.eventtype === 'EQ') return;
       if (!isCurrent(p) && Date.parse(p.todate || p.fromdate) < week) return;
       seen[p.eventtype + p.eventid] = 1;
@@ -368,9 +339,6 @@ function loadExch(){
 }
 
 /* ---------- IMF PortWatch: chokepoints (daily transits from satellite AIS) ---------- */
-// The bot reads PortWatch (portwatch.py → ../portwatch.json, every 6 hours): PortWatch's own query service has been
-// failing since late October 2026 ("Token Required", "Cannot perform query"). Straight from PortWatch only if that
-// file is missing.
 var PW = 'https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/';
 var chokeP = null, chokeAt = 0;
 function chokeData(){
@@ -379,7 +347,6 @@ function chokeData(){
   chokeP = getJSON('../portwatch.json?t=' + Math.floor(Date.now() / 600000), 20000).then(function(d){
     var list = (d && d.choke) || [];
     if (list.length < 5) throw new Error('portwatch.json');
-    // a day: [date, ships, tankers, container ships, dry bulk, capacity t, tanker capacity t]
     return chokeSummary(list.map(function(c){
       return {id: c.id, name: c.name, lon: c.lon, lat: c.lat, yr: c.yr, top: c.top, days: (c.days || []).map(function(x){
         return {k: +String(x[0]).replace(/-/g, ''), d: x[0], n: x[1], tk: x[2], cn: x[3], db: x[4], cap: x[5], ctk: x[6]} })};
@@ -408,7 +375,6 @@ function chokeLive(){
     return chokeSummary(Object.keys(items).map(function(k){ return items[k] }));
   });
 }
-// per chokepoint: ships and tankers a day over the last 7 days against the 30 before them
 function chokeSummary(items, updated){
   var out = items.map(function(b){
     var days = (b.days || []).slice().sort(function(x, y_){ return x.k - y_.k });
@@ -435,7 +401,6 @@ function loadChoke(){
   });
 }
 
-// an ArcGIS layer gives at most 1000–2000 rows per answer: the next pages follow while it says there is more
 function arcgisAll(url, max){
   var out = [];
   var page = function(off){
@@ -452,10 +417,8 @@ function cName(c){ return I.ru ? c.ru : I.country(c.iso, c.en) }
 function countryName(iso){ var c = world && world.c[iso]; return c ? cName(c) : iso || '' }
 
 /* ---------- ports: IMF PortWatch (with their traffic), Natural Earth if it does not answer ---------- */
-// the ports database once for both layers that use it (seaports, oil terminals)
 var portsRawP = null;
 function portsRaw(){
-  // the bot's copy first (portwatch.py → ../pw_ports.json), PortWatch itself if it is missing
   if (!portsRawP) portsRawP = getJSON('../pw_ports.json', 20000).then(function(d){
     var p = (d && d.p) || []; if (p.length < 300) throw new Error('pw_ports.json');
     return {features: p.map(function(r){ return {attributes: {portname: r[0], country: r[1], ISO3: r[2], lat: r[3], lon: r[4], vessel_count_total: r[5],
@@ -476,9 +439,8 @@ function loadPorts(){
           lbl: a.portname, minLbl: 2.2, k: 'port'};
       }).filter(Boolean).sort(function(a, b){ return a.v - b.v });
       if (pts.length < 100) throw new Error('PortWatch');
-      // the circle's area follows the port's traffic, relative to the busiest one
       var top = pts[pts.length - 1].v || 1;
-      pts.forEach(function(p, i){ p.r = 1.2 + 4.8 * Math.sqrt(Math.max(0, p.v) / top); if (i < pts.length - 25) p.lbl = null });   // names of the 25 busiest
+      pts.forEach(function(p, i){ p.r = 1.2 + 4.8 * Math.sqrt(Math.max(0, p.v) / top); if (i < pts.length - 25) p.lbl = null });
       return {pts: pts, src: 'IMF PortWatch'};
     }).catch(function(){
       return geo('ports.json').then(function(d){
@@ -503,7 +465,6 @@ function loadPlants(){
 function loadInfra(file, col, key){
   return geo(file).then(function(d){
     return {pts: (d.p || []).map(function(p){
-      // [lon, lat, name, iso3, extra text]
       return {lon: p[0], lat: p[1], r: 3.4, c: col, ring: true, t: p[2] || TX(key), s: [TX(key) + (p[3] ? ' · ' + countryName(p[3]) : ''), p[4] || ''].filter(Boolean), k: key};
     }), src: d.src};
   });
@@ -513,7 +474,6 @@ function loadInfra(file, col, key){
 function loadGas(){
   return geo('gas.json').then(function(d){
     return {pts: (d.p || []).map(function(p){
-      // [lon, lat, kind (0 field, 1 storage), name, iso3, operator]
       var st = p[2] === 1, key = st ? 'gm_gas_storage' : 'gm_gas_field';
       return {lon: p[0], lat: p[1], r: st ? 3.6 : 2.8, c: st ? '#3fd0a8' : '#b7e34b', ring: true, t: p[3], k: 'gas',
         s: [TX(key) + (p[4] ? ' · ' + countryName(p[4]) : ''), p[5] || ''].filter(Boolean)};
@@ -536,14 +496,13 @@ function loadOilStorage(){
   }).catch(function(){ return [] });
   var depots = geo('depots.json').then(function(d){
     return (d.p || []).map(function(p){
-      // [lon, lat, name, iso3, operator]
       return {lon: p[0], lat: p[1], r: 1.8, c: '#d98a3a', t: p[2] || TX('gm_depot'), k: 'depot', s: [TX('gm_depot') + (p[3] ? ' · ' + countryName(p[3]) : ''), p[4] || ''].filter(Boolean)};
     });
   }).catch(function(){ return [] });
   return Promise.all([ports, depots, satPoints()]).then(function(a){
     if (!a[0].length && !a[1].length) throw new Error(TX('load_fail'));
     var pts = a[1].concat(a[0].sort(function(x, y){ return x.v - y.v })).concat(a[2]);
-    a[0].forEach(function(p, i){ if (i > 30) p.lbl = null });   // names of the 30 busiest
+    a[0].forEach(function(p, i){ if (i > 30) p.lbl = null });
     return {pts: pts, src: (a[0].length ? 'IMF PortWatch · ' : '') + 'OpenStreetMap contributors (ODbL)'};
   });
 }
@@ -555,27 +514,24 @@ function loadFactories(){
     var cats = d.cats, types = d.types || [], top = 1;
     d.p.forEach(function(p){ if (p[7] > top) top = p[7] });
     return {pts: d.p.map(function(p){
-      // [lon, lat, category, name, iso3, owner, capacity t a year, CO2e t a year, type]
       var cat = cats[p[2]], ty = types[p[8]] || '';
       return {lon: p[0], lat: p[1], r: 1.1 + 5 * Math.sqrt((p[7] || 0) / top), c: FACT_COL[cat] || '#aaa', fuel: cat, k: 'fact', t: p[3],
         s: [TX('gm_fact_' + cat) + (ty ? ' (' + ty + ')' : '') + (p[4] ? ' · ' + countryName(p[4]) : ''), p[5] || '',
           p[6] ? TX('gm_capacity', fmt(p[6] / 1e6, p[6] < 1e6 ? 2 : 1)) : '', p[7] ? TX('gm_co2', fmt(p[7] / 1e6, p[7] < 1e6 ? 2 : 1)) : ''].filter(Boolean)};
-    }).reverse(), src: d.src, cats: cats};   // the biggest drawn last, on top
+    }).reverse(), src: d.src, cats: cats};
   });
 }
 
 /* ---------- vessels: live AIS of the Baltic Sea (Finland's Digitraffic) ---------- */
-// AIS ship type → the map's kind
 var SHIP_KINDS = ['tanker', 'cargo', 'pass', 'service', 'other'];
 var SHIP_COL = {tanker: '#ff9f40', cargo: '#5ab0ff', pass: '#d58cff', service: '#9ad06a', other: '#9a9a9a'};
 function shipKind(t){ return t >= 80 && t < 90 ? 'tanker' : t >= 70 && t < 80 ? 'cargo' : t >= 60 && t < 70 ? 'pass' : (t >= 50 && t < 60) || (t >= 31 && t <= 33) ? 'service' : 'other' }
 var DT = 'https://meri.digitraffic.fi/api/ais/v1/';
-// where each Baltic ship was at the earlier loads (every 3 minutes while the map is open): the last 2 hours, 12 points
 var TRAILS = {};
 function trail(id, lon, lat, t){
   var r = TRAILS[id] || (TRAILS[id] = {pts: [], cur: null}), cut = Date.now() - 2 * 3600e3;
   if (!r.cur) r.cur = [lon, lat, t];
-  else if (Math.abs(r.cur[0] - lon) + Math.abs(r.cur[1] - lat) > 0.002) { r.pts.push(r.cur); r.cur = [lon, lat, t] }   // moved ~200 m: the old place joins the track
+  else if (Math.abs(r.cur[0] - lon) + Math.abs(r.cur[1] - lat) > 0.002) { r.pts.push(r.cur); r.cur = [lon, lat, t] }
   r.pts = r.pts.filter(function(q){ return q[2] >= cut }).slice(-12);
   return r.pts;
 }
@@ -601,7 +557,6 @@ function loadShips(){
           u: 'https://www.marinetraffic.com/en/ais/details/ships/mmsi:' + encodeURIComponent(id)});
       }).filter(Boolean);
       if (!pts.length) throw new Error('Digitraffic');
-      // tankers and cargo ships on top
       var rank = {other: 0, service: 1, pass: 2, cargo: 3, tanker: 4};
       pts.sort(function(x, y){ return rank[y.fuel] - rank[x.fuel] });
       return {pts: pts, ships: true, src: 'Digitraffic AIS (CC BY 4.0)', updated: (a[0] || {}).dataUpdatedTime};
@@ -610,7 +565,6 @@ function loadShips(){
 
 /* ---------- ships on the map: an arrow along the course, the track behind, a dashed line 30 minutes ahead ---------- */
 function shipSize(z){ return Math.max(3, Math.min(7.5, 2.3 * z)) }
-// the track and the line ahead of one ship (all copies of the world across the date line)
 function drawShipPath(g, p, ks, hi){
   for (var j = 0; j < ks.length; j++) {
     var k = ks[j], x = sx(p.fx + k), y = sy(p.fy);
@@ -618,7 +572,7 @@ function drawShipPath(g, p, ks, hi){
       var prev = null;
       for (var i = 0; i <= p.tf.length; i++) {
         var q = i < p.tf.length ? p.tf[i] : [p.fx, p.fy], qx = sx(q[0] + k), qy = sy(q[1]);
-        if (prev && Math.abs(q[0] - prev[2]) < 0.5) {   // a segment across the date line is not drawn
+        if (prev && Math.abs(q[0] - prev[2]) < 0.5) {
           g.globalAlpha = hi ? 0.95 : 0.18 + 0.5 * i / p.tf.length; g.strokeStyle = hi ? '#f2cc60' : p.c; g.lineWidth = hi ? 2 : 1.3;
           g.beginPath(); g.moveTo(prev[0], prev[1]); g.lineTo(qx, qy); g.stroke();
         }
@@ -638,17 +592,16 @@ function drawShipPath(g, p, ks, hi){
 }
 function drawShipBody(g, p, x, y, sz){
   g.fillStyle = p.c; g.strokeStyle = 'rgba(5,8,12,.85)'; g.lineWidth = 0.9; g.globalAlpha = 0.95;
-  if (p.hd == null) {   // at anchor, moored or still: a dot
+  if (p.hd == null) {
     g.beginPath(); g.arc(x, y, sz * 0.5, 0, 6.2832); g.fill(); g.stroke(); return;
   }
   var a = p.hd * D2R, c = Math.cos(a), s_ = Math.sin(a);
-  var P_ = function(px_, py_){ return [x + px_ * c - py_ * s_, y + px_ * s_ + py_ * c] };   // a point of the arrow, turned to the course
+  var P_ = function(px_, py_){ return [x + px_ * c - py_ * s_, y + px_ * s_ + py_ * c] };
   var t = P_(0, -sz * 1.55), l = P_(-sz * 0.85, sz * 1.0), m = P_(0, sz * 0.45), r = P_(sz * 0.85, sz * 1.0);
   g.beginPath(); g.moveTo(t[0], t[1]); g.lineTo(l[0], l[1]); g.lineTo(m[0], m[1]); g.lineTo(r[0], r[1]); g.closePath(); g.fill(); g.stroke();
 }
 function drawShips(g, d, off, ks, z, W, H, labels){
   var sz = shipSize(z), zoomIn = M.S / M.S0;
-  // tracks: when zoomed in to a sea (or when there are few ships), not over the whole world
   var paths = zoomIn >= 2.4 || d.pts.length < 400;
   if (paths) d.pts.forEach(function(p){
     if (off && off[p.fuel]) return;
@@ -696,7 +649,7 @@ function loadWorldShips(){
         hd: L.moving ? v.cog : null, sog: v.sog, trk: trk, trk0: t0, lbl: name, u: 'https://www.marinetraffic.com/en/ais/details/ships/mmsi:' + encodeURIComponent(r[ix.mmsi])});
     }).filter(Boolean);
     if (!pts.length) throw new Error(TX('gm_world_none'));
-    pts.sort(function(a, b){ return (a.fuel === 'tanker' ? 0 : 1) - (b.fuel === 'tanker' ? 0 : 1) });   // tankers on top
+    pts.sort(function(a, b){ return (a.fuel === 'tanker' ? 0 : 1) - (b.fuel === 'tanker' ? 0 : 1) });
     return {pts: pts, ships: true, src: 'aisstream.io', updated: d.updated, counts: d.counts};
   });
 }
@@ -720,15 +673,11 @@ function loadTankers(){
 }
 
 /* ---------- SPLC: the oil supply chain — producers, chokepoints, buyers ---------- */
-// crude oil and products through each chokepoint, million barrels a day, by quarter: EIA Short-Term Energy Outlook
-// (Global Energy Security Data). The bot reads EIA's table every day (chokepoints.py → ../chokepoints.json) and the
-// diagram takes the figures from there; the lines below (released 10 Nov 2026) are only for when that file is missing.
 var EIA_Q = ['2Q25', '3Q25', '4Q25', '1Q26', '2Q26', '3Q26'];
 var EIA = {malacca: [23.9, 23.5, 25.0, 21.4, 16.7, 19.4], hormuz: [21.1, 21.4, 21.6, 15.0, 5.1, 9.1], suez: [5.1, 5.6, 5.9, 5.7, 5.8, 7.1],
   bab: [4.5, 4.7, 5.4, 5.6, 8.1, 6.3], danish: [4.8, 5.0, 5.0, 4.9, 4.7, 4.5], turkish: [3.7, 3.7, 3.7, 3.3, 4.1, 3.4], panama: [2.5, 2.8, 2.8, 2.9, 3.2, 3.0],
   cape: [9.4, 9.1, 10.0, 8.3, 9.5, 8.7]};
 var EIA_SRC = 'https://www.eia.gov/outlooks/steo/report/energysecurity/article.php', EIA_REL = '2026-11-10';
-// the bot's copy of EIA's table: used when it is complete (every chokepoint, a number for every quarter)
 function goodEia(d){
   if (!d || !Array.isArray(d.q) || d.q.length < 4 || !d.v) return false;
   if (!d.q.every(function(q){ return /^[1-4]Q\d\d$/.test(q) })) return false;
@@ -736,21 +685,15 @@ function goodEia(d){
 }
 var eiaLoad = null;
 function loadEia(){
-  // resolves true once, when the bot's figures replace the built-in ones
   if (!eiaLoad) eiaLoad = getJSON('../chokepoints.json?t=' + Math.floor(Date.now() / 3600e3), 15000).then(function(d){
     if (!goodEia(d)) return false;
     var v = {}; Object.keys(EIA).forEach(function(k){ v[k] = d.v[k].slice() });
-    // the date goes with the figures: the bot's figures without a release date show none (not the built-in one)
     EIA_Q = d.q.slice(); EIA = v; EIA_REL = /^\d{4}-\d\d-\d\d$/.test(d.released || '') ? d.released : null;
     return true;
-  }).catch(function(){ eiaLoad = null; return false });   // no file yet: the built-in figures; tried again next time
+  }).catch(function(){ eiaLoad = null; return false });
   return eiaLoad;
 }
-// what each quarter is compared with: 4Q25, the last quarter before the 2026 disruption of Hormuz, while EIA's table
-// still covers it; otherwise the same quarter a year earlier
 function eiaBase(){ var i = EIA_Q.indexOf('4Q25'); if (i < 0 || i === EIA_Q.length - 1) i = EIA_Q.length - 5; return i >= 0 ? i : null }
-// nodes: x, y in 0..1; k: c = chokepoint, s = supply, d = demand; pw — the PortWatch chokepoint's name
-// a node's name in the reader's language (Chinese and Arabic come from i18n.xl.js)
 function spName(n){ return I.xl ? I.xlName('SPLC', n.id) || n.n[0] : n.n[I.ru ? 1 : 0] }
 var SP_NODES = [
   {id: 'rusb', k: 's', x: 0.0, y: 0.05, n: ['Baltic: Russia', 'Балтика: Россия']},
@@ -784,7 +727,6 @@ function splcLive(){
 function drawSplc(){
   box = $('map-body'); clear(box); box.classList.remove('narrow', 'side-open');
   var w = el('div', 'gm-wrap sp-wrap'), sd = el('div', 'gm-side'); box.appendChild(w); box.appendChild(sd);
-  // the diagram needs some height: in a small panel it scrolls; on a narrow screen the list goes under it
   var narrow = box.clientWidth < 700;
   box.style.overflow = 'auto'; box.style.flexDirection = narrow ? 'column' : '';
   w.style.minHeight = '520px'; w.style.flex = narrow ? 'none' : ''; if (narrow) { w.style.height = '520px'; sd.style.width = 'auto'; sd.style.borderLeft = '0' }
@@ -800,7 +742,6 @@ function drawSplc(){
     var srcW = Math.max.apply(null, SP_NODES.filter(function(n){ return n.k === 's' }).map(function(n){ return g2.measureText(spName(n).split(': ')[0]).width }));
     var padL = Math.min(W * 0.36, srcW + 24), padR = Math.min(110, W * 0.18), padY = 30, last = EIA_Q.length - 1;
     var P = function(n){ return [padL + n.x * (W - padL - padR), padY + n.y * (H - 2 * padY)] };
-    // a label with a quiet background, so lines under it do not get in the way
     var label = function(lines, x, y, align){
       var w0 = 0; lines.forEach(function(l){ g2.font = (l[2] || '11.5px') + ' ' + getComputedStyle(document.body).fontFamily; w0 = Math.max(w0, g2.measureText(l[0]).width) });
       var bx = align === 'right' ? x - w0 - 6 : align === 'center' ? x - w0 / 2 - 3 : x - 3, h = lines.length * 14 + 4;
@@ -874,7 +815,6 @@ function satData(){
   return satP;
 }
 function satName(s){ return String((I.xl ? I.xlName('SAT', s.id) || s.name : I.ru ? s.name_ru || s.name : s.name) || s.id) }
-// sat.json is the bot's own file, but a picture's path is still checked: only sat/<hub>/<date>.jpg of this site
 function satOk(i){ return i && /^sat\/[a-z0-9_-]{1,40}\/\d{4}-\d\d-\d\d\.jpg$/.test(String(i.f || '')) && /^\d{4}-\d\d-\d\d$/.test(String(i.d || '')) }
 function satDate(d){ return F.dmy(d) }
 function openSat(id){
@@ -920,7 +860,6 @@ function satGallery(w, sites, d){
   var nt = el('div', 'note sat-note'); nt.textContent = TX('sat_note'); w.appendChild(nt);
   var src = el('div', 'note'); src.textContent = (d.src || 'Contains modified Copernicus Sentinel data') + (d.updated ? ' · ' + TX('sat_upd', satDate(d.updated.slice(0, 10))) : ''); w.appendChild(src);
 }
-// one hub: "then" and "now" on top of each other, a handle to slide between them; wheel or buttons to zoom, drag to move
 function satDetail(w, s, sites, d){
   var imgs = s.imgs, now_ = imgs[imgs.length - 1], olds = imgs.slice(0, -1);
   var then = olds.filter(function(i){ return i.d === SATV.then })[0] || olds[0] || null;
@@ -939,7 +878,6 @@ function satDetail(w, s, sites, d){
   var handle = el('div', 'sat-handle'); handle.appendChild(el('i')); if (then) stage.appendChild(handle);
   var lt = el('span', 'sat-lbl l', then ? TX('sat_then', satDate(then.d)) : ''), rt = el('span', 'sat-lbl r', TX('sat_now', satDate(now_.d)));
   if (then) stage.appendChild(lt); stage.appendChild(rt);
-  // a 1 km scale bar: the picture is s.km wide
   var sc = el('div', 'sat-scale'); sc.appendChild(el('i')); sc.appendChild(el('span', null, '1 ' + TX('sat_km'))); stage.appendChild(sc);
   var zc = el('div', 'zctl sat-z');
   [['−', 1 / 1.4], ['＋', 1.4], ['⟲', 0]].forEach(function(z){ var bt = el('button', 'chipbtn zb', z[0]); bt.type = 'button'; bt.onclick = function(e){ e.stopPropagation(); zoom(z[1], 0.5, 0.5) }; zc.appendChild(bt) });
@@ -947,10 +885,9 @@ function satDetail(w, s, sites, d){
   w.appendChild(stage);
   function apply(){
     SATV.k = Math.max(1, Math.min(6, SATV.k));
-    var lim = (SATV.k - 1) / (2 * SATV.k);   // how far the picture may move (as a share of its width) before an edge shows
+    var lim = (SATV.k - 1) / (2 * SATV.k);
     SATV.x = Math.max(-lim, Math.min(lim, SATV.x)); SATV.y = Math.max(-lim, Math.min(lim, SATV.y));
     inner.style.transform = 'scale(' + SATV.k + ') translate(' + (SATV.x * 100) + '%,' + (SATV.y * 100) + '%)';
-    // the cut is a place on the screen; the clipped picture is inside the zoomed layer — so it is converted
     var cutIn = 50 + ((SATV.cut - 50) / SATV.k) - SATV.x * 100;
     bwrap.style.clipPath = then ? 'inset(0 0 0 ' + Math.max(0, Math.min(100, cutIn)) + '%)' : 'none';
     handle.style.left = SATV.cut + '%';
@@ -959,7 +896,6 @@ function satDetail(w, s, sites, d){
   function zoom(f, fx, fy){
     if (!f) { SATV.k = 1; SATV.x = SATV.y = 0; return apply() }
     var k0 = SATV.k, k1 = Math.max(1, Math.min(6, k0 * f));
-    // the point under the cursor stays where it is
     SATV.x += (fx - 0.5) * (1 / k1 - 1 / k0); SATV.y += (fy - 0.5) * (1 / k1 - 1 / k0); SATV.k = k1; apply();
   }
   stage.addEventListener('wheel', function(e){ e.preventDefault(); var r = stage.getBoundingClientRect(); zoom(e.deltaY < 0 ? 1.25 : 0.8, (e.clientX - r.left) / r.width, (e.clientY - r.top) / r.height) }, {passive: false});
@@ -981,7 +917,6 @@ function satDetail(w, s, sites, d){
   });
   var up = function(){ drag = null; stage.classList.remove('cutting', 'moving') };
   stage.addEventListener('pointerup', up); stage.addEventListener('pointercancel', up);
-  // which older picture to compare with
   if (olds.length > 1) {
     var ch = el('div', 'gm-chips sat-dates'); ch.appendChild(el('span', 'sat-dl', TX('sat_cmp')));
     olds.slice().reverse().forEach(function(i){ var bt = el('button', 'chipbtn' + (then && i.d === then.d ? ' on' : ''), satDate(i.d)); bt.onclick = function(){ SATV.then = i.d; drawSat() }; ch.appendChild(bt) });
@@ -994,12 +929,11 @@ function satDetail(w, s, sites, d){
   var cb = el('a', 'chipbtn', 'Copernicus Browser ↗'); cb.href = 'https://browser.dataspace.copernicus.eu/?zoom=13&lat=' + s.lat + '&lng=' + s.lon; cb.target = '_blank'; cb.rel = 'noopener'; links.appendChild(cb);
   info.appendChild(links); w.appendChild(info);
   var nt = el('div', 'note sat-note'); nt.textContent = TX(then ? 'sat_how' : 'sat_how1'); w.appendChild(nt);
-  var sn = el('div', 'note'); sn.textContent = d.src || 'Contains modified Copernicus Sentinel data'; w.appendChild(sn);   // the attribution Copernicus asks for
+  var sn = el('div', 'note'); sn.textContent = d.src || 'Contains modified Copernicus Sentinel data'; w.appendChild(sn);
   var go = function(){ if (stage.clientWidth) apply(); else requestAnimationFrame(go) };
   b.onload = go; go();
   $('map-sub').textContent = 'Copernicus Sentinel-2 · ' + satName(s);
 }
-// the hubs on the map (the oil storage layer): a click opens their pictures
 function satPoints(){
   return satData().then(function(d){
     return (d.sites || []).filter(function(s){ return (s.imgs || []).filter(satOk).length && isFinite(+s.lat) && isFinite(+s.lon) }).map(function(s){
@@ -1098,9 +1032,9 @@ function loadEco(){
 }
 
 /* ======================= drawing ======================= */
-var box, wrap, cv, g, side, tip;   // (bgc, bg: the picture's canvas, see drawBase)
+var box, wrap, cv, g, side, tip;
 function build(){
-  box = $('map-body'); clear(box); box.style.overflow = ''; box.style.flexDirection = '';   // SPLC may have changed them
+  box = $('map-body'); clear(box); box.style.overflow = ''; box.style.flexDirection = '';
   wrap = el('div', 'gm-wrap'); bgc = el('canvas', 'gm-bg'); cv = el('canvas'); wrap.appendChild(bgc); wrap.appendChild(cv);
   var ctl = el('div', 'gm-ctl');
   [['+', function(){ zoomAt(M.W / 2, M.H / 2, 1.6) }, 'gm_zin'], ['−', function(){ zoomAt(M.W / 2, M.H / 2, 1 / 1.6) }, 'gm_zout'], ['⌂', home, 'gm_home'],
@@ -1108,7 +1042,6 @@ function build(){
     var x = el('button', b[0] === '☰' ? 'gm-tbtn' : null, b[0]); x.title = TX(b[2]); x.onclick = function(e){ e.stopPropagation(); b[1]() }; ctl.appendChild(x);
   });
   wrap.appendChild(ctl);
-  // the picture under the map: satellite (darkened, with city lights), day, night or the plain scheme
   var bm = el('div', 'gm-base');
   BASES.forEach(function(b){ var x = el('button', 'chipbtn' + (M.base === b ? ' on' : ''), TX('gm_base_' + b)); x.dataset.b = b; x.onclick = function(e){ e.stopPropagation(); setBase(b) }; bm.appendChild(x) });
   wrap.appendChild(bm);
@@ -1129,7 +1062,6 @@ function resize(){
   var first = !M.W;
   M.dpr = window.devicePixelRatio || 1;
   cv.width = bgc.width = Math.round(W * M.dpr); cv.height = bgc.height = Math.round(H * M.dpr);
-  // the smallest scale (and the first view): the whole world fits in the panel's width
   var S0 = W;
   if (first || !M.S) { M.S0 = S0; restoreView() } else { M.S = M.S * (S0 / M.S0); M.S0 = S0 }
   M.W = W; M.H = H;
@@ -1149,12 +1081,7 @@ function clampView(){
   var half = M.H / 2 / M.S, top = my(LAT_MAX), bot = my(-LAT_MAX);
   if (bot - top <= 2 * half) M.cy = (top + bot) / 2; else M.cy = Math.max(top + half, Math.min(bot - half, M.cy));
 }
-/* ---------- the picture under the map: satellite tiles ----------
-   NASA GIBS (public domain): Blue Marble with relief and sea floor (to zoom 8, ~500 m) and the Earth at night
-   (VIIRS city lights 2012); closer in, EOxCloudless 2016 (Sentinel-2, 10 m, to zoom 14) — the only year EOX licenses
-   under CC BY 4.0, so it may be used commercially with the attribution below the map (2018 and later years are
-   CC BY-NC-SA: not for commercial use without EOX's paid licence). If it does not answer, Blue Marble stays. The tiles are drawn on their own canvas under the map's, so nothing from other sites is ever read
-   back from the map's canvas; the service worker does not keep them (other sites' files are not cached). */
+/* ---------- the picture under the map: satellite tiles ---------- */
 var BASES = ['sat', 'day', 'night', 'scheme'];
 var GIBS = 'https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/';
 var TILESRC = {
@@ -1172,8 +1099,6 @@ function setBase(b){
   redraw();
 }
 function tileUrl(src, z, x, y, local){ var s = TILESRC[src], u = local ? s.local : s.urls[s.alt || 0]; return u.replace('{z}', z).replace('{y}', y).replace('{x}', x) }
-// the overview zooms are copied to this site by the bot (basemap.py → ../base/): they come first, NASA after them;
-// its meta.json also says which NASA address works (the browser need not find out by failing)
 var baseMetaP = null;
 function baseMeta(){
   if (!baseMetaP) baseMetaP = getJSON('../base/meta.json', 15000).then(function(m){
@@ -1188,21 +1113,18 @@ function baseMeta(){
   }).catch(function(){});
   return baseMetaP;
 }
-// one tile: an image that is loading, loaded or failed; at most ~600 kept (the oldest go first)
 function tile(src, z, x, y){
   var key = src + '/' + z + '/' + x + '/' + y, t = TILES.get(key);
-  if (t) { TILES.delete(key); TILES.set(key, t); return t }   // the newest at the end
+  if (t) { TILES.delete(key); TILES.set(key, t); return t }
   var S_ = TILESRC[src];
   t = {img: new Image(), ok: false, bad: false, local: !!(S_.local && z <= S_.localMax)};
   t.img.decoding = 'async'; t.img.referrerPolicy = 'no-referrer';
   t.img.onload = function(){ t.ok = true; redraw() };
   t.img.onerror = function(){
-    if (t.local) { t.local = false; t.img.src = tileUrl(src, z, x, y); return }   // not on this site: NASA's copy
+    if (t.local) { t.local = false; t.img.src = tileUrl(src, z, x, y); return }
     t.bad = true;
-    // the first tiles of a source fail: its next address (some servers name the format .jpeg, some layers moved)
     var s = TILESRC[src]; s.fails = (s.fails || 0) + 1;
     if (!s.good && s.fails >= 4 && (s.alt || 0) < s.urls.length - 1) { s.alt = (s.alt || 0) + 1; s.fails = 0; TILES.forEach(function(v, k){ if (k.indexOf(src + '/') === 0 && v.bad) TILES.delete(k) }); redraw() }
-    // every address failed (offline, or the service is down): the map draws its own land again
     else if (!s.good && !s.any && s.fails >= 4 && !s.dead) { s.dead = true; redraw() }
   };
   t.img.addEventListener('load', function(){ var s = TILESRC[src]; if (!t.local) s.good = true; s.any = true; s.dead = false });
@@ -1211,7 +1133,6 @@ function tile(src, z, x, y){
   if (TILES.size > 600) { var first = TILES.keys().next().value; TILES.delete(first) }
   return t;
 }
-// draws one source's tiles over the view; a tile not loaded yet is stood in for by a part of its parent
 function drawTiles(src, z, alphaV){
   var S = M.S, W = M.W, H = M.H, n = Math.pow(2, z), size = S / n;
   var y0 = Math.max(0, Math.floor((M.cy - H / 2 / S) * n)), y1 = Math.min(n - 1, Math.floor((M.cy + H / 2 / S) * n));
@@ -1221,13 +1142,10 @@ function drawTiles(src, z, alphaV){
     var wx = ((tx % n) + n) % n, px_ = Math.floor(sx(tx / n)), py_ = Math.floor(sy(ty / n)), sz = Math.ceil(size) + 1;
     var t = tile(src, z, wx, ty);
     if (t.ok) { bg.drawImage(t.img, px_, py_, sz, sz); continue }
-    // the nearest loaded ancestor tile, cut to this tile's part, until this one arrives (or when it never does:
-    // NASA out of reach — the site's own overview tiles, enlarged)
     for (var up = 1; z - up >= (TILESRC[src].min || 0) && up <= 8; up++) {
       var f = Math.pow(2, up), pt = TILES.get(src + '/' + (z - up) + '/' + Math.floor(wx / f) + '/' + Math.floor(ty / f));
       if (pt && pt.ok) { var part = 256 / f; bg.drawImage(pt.img, (wx % f) * part, (ty % f) * part, part, part, px_, py_, sz, sz); break }
     }
-    // the site's own copy of the area, asked for once, so there is always something under a closer view
     var S_ = TILESRC[src];
     if (S_.local && z > S_.localMax) { var fl_ = Math.pow(2, z - S_.localMax); tile(src, S_.localMax, Math.floor(wx / fl_), Math.floor(ty / fl_)) }
   }
@@ -1240,18 +1158,15 @@ function drawBase(on){
   bg.fillStyle = '#05070b'; bg.fillRect(0, 0, W, H);
   bgc.style.display = on ? '' : 'none';
   if (!on) return;
-  // the tile zoom: a tile pixel no bigger than a screen pixel
   var zw = Math.max(0, Math.ceil(Math.log2(M.S * M.dpr / 256) - 0.15)), b = M.base;
   if (b !== 'night') {
     var dz = Math.min(TILESRC.day.max, zw);
-    // the darkened day picture under the city lights (the look of a night-side Earth); brighter for "day"
     drawTiles('day', dz, b === 'day' ? 1 : 0.62);
     if (zw >= TILESRC.close.min && !TILESRC.close.dead) drawTiles('close', Math.min(TILESRC.close.max, zw), b === 'day' ? 1 : 0.7);
     if (b === 'sat') { bg.globalCompositeOperation = 'screen'; drawTiles('lights', Math.min(TILESRC.lights.max, zw), zw >= 10 ? 0.35 : 0.85); bg.globalCompositeOperation = 'source-over' }
   } else {
     drawTiles('lights', Math.min(TILESRC.lights.max, zw), 1);
   }
-  // a soft vignette, so the edges recede like on the globe
   var gr = bg.createRadialGradient(W / 2, H / 2, Math.min(W, H) * 0.35, W / 2, H / 2, Math.max(W, H) * 0.75);
   gr.addColorStop(0, 'rgba(0,0,0,0)'); gr.addColorStop(1, 'rgba(0,0,0,.35)'); bg.fillStyle = gr; bg.fillRect(0, 0, W, H);
 }
@@ -1263,7 +1178,7 @@ function baseAtt(){
 }
 function sx(fx){ return (fx - M.cx) * M.S + M.W / 2 }
 function sy(fy){ return (fy - M.cy) * M.S + M.H / 2 }
-function copies(){   // which horizontal copies of the world are on screen
+function copies(){
   var out = [], k0 = Math.floor(M.cx - M.W / 2 / M.S), k1 = Math.floor(M.cx + M.W / 2 / M.S);
   for (var k = k0; k <= k1; k++) out.push(k);
   return out;
@@ -1312,7 +1227,7 @@ function draw(){
     var dense = d.pts.length > 3000;
     if (dense) g.globalCompositeOperation = 'lighter';
     var fuelOff = M.off[id] || null;
-    for (var i = d.pts.length - 1; i >= 0; i--) {   // big ones first, small ones on top
+    for (var i = d.pts.length - 1; i >= 0; i--) {
       var p = d.pts[i];
       if (fuelOff && fuelOff[p.fuel]) continue;
       var y = sy(p.fy); if (y < -20 || y > H + 20) continue;
@@ -1332,11 +1247,10 @@ function draw(){
     }
     g.globalAlpha = 1; g.globalCompositeOperation = 'source-over';
   });
-  if (M.hover && M.hover.p) {   // highlight under the cursor
+  if (M.hover && M.hover.p) {
     if (M.hover.p.k === 'ship') drawShipPath(g, M.hover.p, ks, true);
     var hp = M.hover.p; g.strokeStyle = '#f2cc60'; g.lineWidth = 2; g.beginPath(); g.arc(M.hover.x, M.hover.y, Math.max(5, hp.r * z + 3), 0, 6.2832); g.stroke();
   }
-  // labels: the ones that do not overlap
   g.font = '11px ' + getComputedStyle(document.body).fontFamily; g.textBaseline = 'middle';
   var placed = [];
   labels.forEach(function(L){
@@ -1348,7 +1262,7 @@ function draw(){
     g.fillStyle = 'rgba(0,0,0,.65)'; g.fillRect(box_[0], box_[1], box_[2] - box_[0], 16);
     g.fillStyle = '#e6eaf0'; g.fillText(L.t, x, y);
   });
-  if (M.tab === 'ECO' && world) {   // values on the biggest countries
+  if (M.tab === 'ECO' && world) {
     g.font = '10px ' + getComputedStyle(document.body).fontFamily; g.textAlign = 'center';
     var ind = ECO_IND.filter(function(x){ return x.k === M.eco })[0] || ECO_IND[0];
     world.list.forEach(function(c){
@@ -1371,7 +1285,6 @@ function renderOverlay(){
   if (M.tab === 'ECO') src.push(M.eco === 'MKT' ? '' : M.eco === 'CB' ? 'BIS / central banks' : M.eco === 'Y10' ? TX('gm_src_curves') : 'IMF WEO');
   src.push('Natural Earth'); src.push(baseAtt());
   M.att.textContent = src.filter(Boolean).join(' · ');
-  // legend
   clear(M.legend);
   var L = M.legend, add = function(c, t){ var s = el('div'); var i = el('i'); i.style.background = c; s.appendChild(i); s.appendChild(document.createTextNode(t)); L.appendChild(s) };
   if (M.tab === 'ECO') {
@@ -1408,7 +1321,6 @@ function flyTo(lon, lat, z){
 }
 function bindInput(){
   var pts = {}, drag = null, pinch = null, moved = false;
-  // the buttons, legend and links over the map keep their own clicks (a captured pointer would take them away)
   var onUi = function(e){ return e.target !== cv && e.target.closest && e.target.closest('button,a,input,select,.gm-ctl,.gm-leg,.gm-att') };
   wrap.addEventListener('pointerdown', function(e){
     if (onUi(e)) return;
@@ -1462,7 +1374,7 @@ function pick(px, py){
         if (dd <= Math.max(7, rr + 3) && dd - rr < bd) { bd = dd - rr; best = {p: p, x: x, y: y} }
       }
     }
-    if (best && !dense) break;   // layers drawn on top win
+    if (best && !dense) break;
   }
   return best;
 }
@@ -1540,7 +1452,6 @@ function layerRow(id){
   };
   return b;
 }
-// the chips under a layer that has categories: a click hides or shows one
 var CATS = {
   plants: {list: function(d){ return d.fuels }, col: function(f){ return FUEL_COL[f] }, name: function(f){ return TX('gm_fuel_' + f.toLowerCase()) }, key: 'map_fuels'},
   fact: {list: function(d){ return d.cats }, col: function(f){ return FACT_COL[f] }, name: function(f){ return TX('gm_fact_' + f) }, key: 'map_off_fact'},
@@ -1590,7 +1501,6 @@ function sideStorm(){
   if (st === 'err') side.appendChild(el('div', 'err', TX('load_fail') + (M.err && M.err.storms || '')));
   var list = d ? d.pts.filter(function(p){ return p.k === 'storm' }) : [];
   if (d && !list.length) side.appendChild(el('div', 'empty', TX('gm_no_storms')));
-  // energy assets within 300 km of each storm
   var assets = ['refin', 'lng', 'gas', 'oilst', 'ports', 'plants', 'fact'].filter(function(id){ return M.data[id] && active().indexOf(id) >= 0 });
   list.sort(function(a, b){ return (b.kmh || 0) - (a.kmh || 0) }).forEach(function(s){
     var b = el('button', 'gm-row');
@@ -1628,7 +1538,6 @@ function sideShip(){
   optRows();
   side.appendChild(el('div', 'note', TX('gm_ship_note')));
 }
-// ships worldwide: tankers and cargo ships seen in the last 6 hours, under way or not, and seas to fly to
 function worldBlock(){
   if (active().indexOf('world') < 0) return;
   var d = M.data.world, st = M.status.world;
@@ -1651,7 +1560,6 @@ function worldBlock(){
   });
   side.appendChild(fly);
 }
-// live vessels: how many of each kind are under way, at anchor or moored, and where to look
 function shipBlock(){
   if (active().indexOf('ships') < 0) return;
   var d = M.data.ships, st = M.status.ships;
@@ -1741,7 +1649,7 @@ function setMapTab(t){
 }
 function render(){
   if (!F.visible('p-map')) return;
-  if (M.tab === 'SPLC') { M.built = false; M.W = 0; return drawSplc() }   // a diagram, not the map: the map is rebuilt when we come back
+  if (M.tab === 'SPLC') { M.built = false; M.W = 0; return drawSplc() }
   if (M.tab === 'SAT') { M.built = false; M.W = 0; return drawSat() }
   if (!M.built) build();
   loadWorld().then(function(){ redraw() }).catch(function(e){ M.att.textContent = TX('load_fail') + e.message });
@@ -1760,7 +1668,6 @@ function openMap(tab, arg){
   }
 }
 F.RENDER['p-map'] = function(){ render() };
-// live layers refresh while the map is on screen
 setInterval(function(){
   if (document.hidden || !F.visible('p-map')) return;
   active().forEach(function(id){ var L = LAYERS[id]; if (L.ttl && M.data[id] && Date.now() - M.at[id] > L.ttl * 1000) ensure(id, true) });
@@ -1793,7 +1700,6 @@ C.TANKERS = function(){ M.on.SHIP.tankers = 1; saveOn(); openMap('SHIP') }; C['�
 C.SAT = function(arg){ openSat(arg ? String(arg).trim().split(/\s+/)[0] : null) }; C.OILSAT = C.SAT; C['СПУТНИК'] = C['СНИМКИ'] = C['ХРАНИЛИЩА'] = C.SAT;
 C.WORLDSHIPS = function(){ M.on.SHIP.world = 1; saveOn(); openMap('SHIP') }; C['СУДАМИР'] = C.WORLDSHIPS;
 
-// for tests and other modules
 window.MAPS = {M: M, open: openMap, layers: LAYERS, chokeData: chokeData, km: km, stormCat: stormCat, flyTo: flyTo, openSat: openSat, setBase: setBase,
   countryName: function(iso){ return world ? countryName(iso) : iso }};
 })();

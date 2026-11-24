@@ -1,16 +1,3 @@
-"""
-Largest US companies for the terminal: prices, valuation ratios, financial statements, earnings calendar.
-Крупнейшие компании США для терминала: котировки, мультипликаторы, отчётность и календарь отчётов.
-
-Результат — docs/stocks.json (скринер EQS, тепловая карта IMAP, вкладка ОТЧЁТЫ, команды бота /eqs /map /earnings)
-и docs/fin/<ТИКЕР>.json (квартальная и годовая отчётность из SEC — для функции FA).
-
-Источники:
-  Yahoo Finance (без ключа)   — цены и изменение за день, пачками по 20 бумаг
-  Finnhub (бесплатный ключ)   — мультипликаторы (P/E, дивиденды, рентабельность…), календарь отчётов
-  SEC EDGAR (без ключа)       — выручка, прибыль, денежный поток из официальной отчётности (XBRL)
-Ключ Finnhub берётся из FINNHUB_API_KEY. Без него обновляются только цены.
-"""
 from __future__ import annotations
 
 import json
@@ -32,12 +19,10 @@ FH_URL = "https://finnhub.io/api/v1"
 SEC_TICKERS_URL = "https://www.sec.gov/files/company_tickers.json"
 SEC_FACTS_URL = "https://data.sec.gov/api/xbrl/companyfacts/CIK{cik:010d}.json"
 
-# sector names are stored in English; the terminal and the bot translate them for Russian readers
 TECH, COMM, DISC, STAP, HLTH, FIN, IND, ENER, UTIL, REIT, MAT = (
     "Technology", "Communication", "Consumer Discretionary", "Consumer Staples", "Health Care", "Financials",
     "Industrials", "Energy", "Utilities", "Real Estate", "Materials")
 
-# тикер, название, сектор, названия в английских заголовках, в русских
 UNIVERSE = [
     ("AAPL", "Apple", TECH, ["Apple"], ["Apple", "Эппл"]),
     ("MSFT", "Microsoft", TECH, ["Microsoft"], ["Microsoft", "Майкрософт"]),
@@ -144,7 +129,6 @@ UNIVERSE = [
     ("LIN", "Linde", MAT, ["Linde"], ["Linde"]),
 ]
 
-# Российские компании — только для привязки новостей к тикерам (котировки — с Мосбиржи в терминале)
 MOEX_ALIASES = [
     ("MOEX:SBER", ["Sberbank"], ["Сбербанк", "Сбер"]),
     ("MOEX:GAZP", ["Gazprom"], ["Газпром"]),
@@ -201,7 +185,6 @@ def _alias_rx(names, cyr):
     for n in names:
         esc = re.escape(n).replace(r"\ ", r"\s+")
         if cyr:
-            # русские падежные окончания: «Сбербанка», «Теслы», «Яндексу», «Норникеля»
             base = re.sub(r"[аяь]$", "", n) if re.search(r"[а-яё]$", n) else n
             esc = re.escape(base).replace(r"\ ", r"\s+")
             parts.append(esc + r"(?:а|я|у|ю|е|ы|и|ь|ой|ей|ом|ем|ам|ям|ах|ях|ами|ями|ов|ев)?")
@@ -238,7 +221,6 @@ DOWN_WORDS = re.compile(r"\b(plunge[sd]?|slump(s|ed)?|tumble[sd]?|sink(s)?|sank|
 
 
 def tickers_in(*texts, limit=3):
-    """Тикеры компаний, упомянутых в заголовке/выжимке (английских и русских)."""
     text = " ".join(t for t in texts if t)
     if not text:
         return []
@@ -258,7 +240,6 @@ def tickers_in(*texts, limit=3):
 
 
 def direction(*texts):
-    """Грубая оценка влияния новости на упомянутую компанию: 1 — позитив, -1 — негатив, 0 — неясно."""
     text = " ".join(t for t in texts if t)
     up, down = len(UP_WORDS.findall(text)), len(DOWN_WORDS.findall(text))
     return 1 if up > down else -1 if down > up else 0
@@ -343,7 +324,7 @@ def parse_earnings_calendar(payload, tickers):
     return out
 
 
-FH_CALENDAR_CAP = 1500   # Finnhub returns at most this many rows and drops the EARLIEST dates
+FH_CALENDAR_CAP = 1500
 
 
 def fetch_earnings(key, today, get=None):
@@ -351,7 +332,7 @@ def fetch_earnings(key, today, get=None):
 
     def rows(a, b):
         r = (get(a.isoformat(), b.isoformat()) or {}).get("earningsCalendar") or []
-        if len(r) >= FH_CALENDAR_CAP and a < b:   # cut off: halve the range (peak season has ~500 reports a week)
+        if len(r) >= FH_CALENDAR_CAP and a < b:
             mid = a + (b - a) // 2
             return rows(a, mid) + rows(mid + timedelta(days=1), b)
         return r
@@ -378,7 +359,7 @@ BALANCE = {
     "eq": ["StockholdersEquity", "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"],
     "assets": ["Assets"],
 }
-CASHFLOW = ("ocf", "capex")   # в отчётах накопительным итогом с начала года
+CASHFLOW = ("ocf", "capex")
 
 
 def _days(a, b):
@@ -394,7 +375,6 @@ def _pick_units(concept):
 
 
 def _latest_concept(gaap, names):
-    """Из нескольких вариантов показателя берём тот, где данные свежее."""
     best, best_end = None, ""
     for n in names:
         c = gaap.get(n)
@@ -408,7 +388,6 @@ def _latest_concept(gaap, names):
 
 
 def _dedupe(facts):
-    """Один факт на период (start, end): последняя по дате подачи редакция."""
     by = {}
     for f in facts:
         if f.get("val") is None or not f.get("end"):
@@ -420,7 +399,6 @@ def _dedupe(facts):
 
 
 def _flows(facts, cumulative=False):
-    """Годовые значения и значения за квартал (3 мес.) из фактов с периодом start..end."""
     by = _dedupe(facts)
     annual, quarter, groups = {}, {}, {}
     for (start, end), f in by.items():
@@ -434,7 +412,6 @@ def _flows(facts, cumulative=False):
         if cumulative:
             groups.setdefault(start, []).append((end, f["val"], d))
     if cumulative:
-        # денежный поток: квартал = нарастающий итог минус предыдущий нарастающий итог того же года
         for lst in groups.values():
             lst.sort()
             prev = None
@@ -442,7 +419,6 @@ def _flows(facts, cumulative=False):
                 if prev is not None and end not in quarter and 80 <= d - prev[2] <= 100:
                     quarter[end] = v - prev[1]
                 prev = (end, v, d)
-    # четвёртый квартал = год минус три квартала
     for end, total in annual.items():
         if end in quarter:
             continue
@@ -464,7 +440,6 @@ def _instants(facts):
 
 
 def financials_from_facts(facts, years=5, quarters=8):
-    """Компактная отчётность для FA из companyfacts SEC."""
     gaap = ((facts or {}).get("facts") or {}).get("us-gaap") or {}
     ann, qtr = {}, {}
     for key, names in CONCEPTS.items():
@@ -508,14 +483,12 @@ def cik_for(t, sec_headers):
 
 
 def sec_headers():
-    # SEC rejects contacts at users.noreply.github.com (checked from GitHub runners) — use a plain one
     from trades import SEC_UA_DEFAULT
     ua = os.environ.get("SEC_USER_AGENT", "").strip() or SEC_UA_DEFAULT
     return {"User-Agent": ua, "Accept-Encoding": "identity"}
 
 
 def update_financials(tickers, now, limit=4, max_age_days=7):
-    """Обновить отчётность нескольких компаний (самых давно обновлённых) — понемногу каждый запуск."""
     os.makedirs(FIN_DIR, exist_ok=True)
     ages = []
     for t in tickers:
@@ -541,7 +514,7 @@ def update_financials(tickers, now, limit=4, max_age_days=7):
             with open(os.path.join(FIN_DIR, t + ".json"), "w", encoding="utf-8") as f:
                 json.dump(fin, f, ensure_ascii=False, separators=(",", ":"))
             done += 1
-            time.sleep(0.2)   # SEC просит не больше 10 запросов в секунду
+            time.sleep(0.2)
         except Exception as e:
             print(f"  ! financials {t}: {type(e).__name__}: {e}"[:200])
     return done
@@ -576,7 +549,6 @@ def sectors_summary(rows):
 
 
 def build(now=None, key=None, metric_limit=12, metric_max_age_h=20, fin_limit=4, sleep=1.1, path=STOCKS_FILE):
-    """Обновляет docs/stocks.json. Возвращает словарь с данными (или None, если ничего не получилось)."""
     now = now or datetime.now(timezone.utc)
     key = key if key is not None else os.environ.get("FINNHUB_API_KEY", "").strip()
     prev = load_previous(path)
@@ -596,7 +568,6 @@ def build(now=None, key=None, metric_limit=12, metric_max_age_h=20, fin_limit=4,
             r["pt"] = now.isoformat()
         rows.append(r)
 
-    # мультипликаторы — понемногу, самые старые первыми (лимит Finnhub: 60 запросов в минуту)
     n_metrics = 0
     if key:
         cutoff = (now - timedelta(hours=metric_max_age_h)).isoformat()
@@ -609,7 +580,6 @@ def build(now=None, key=None, metric_limit=12, metric_max_age_h=20, fin_limit=4,
                     by[t].update(m)
                     by[t]["mu"] = now.isoformat()
                     if m.get("mcap") and by[t].get("px"):
-                        # капитализация взята при этой цене — дальше двигаем её вместе с ценой
                         by[t]["mcap0"], by[t]["mpx"] = m["mcap"], by[t]["px"]
                     n_metrics += 1
             except Exception as e:
@@ -618,7 +588,6 @@ def build(now=None, key=None, metric_limit=12, metric_max_age_h=20, fin_limit=4,
                     break
             time.sleep(sleep)
 
-    # капитализация (млн $) двигается вместе с ценой
     for r in rows:
         if r.get("mcap0") and r.get("px") and r.get("mpx"):
             r["mcap"] = round(r["mcap0"] * r["px"] / r["mpx"], 1)

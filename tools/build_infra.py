@@ -1,13 +1,3 @@
-"""Builds the refinery and LNG terminal layers of the terminal map (docs/geo/refineries.json, docs/geo/lng.json).
-
-Sources (free, open):
-  OpenStreetMap through the Overpass API — © OpenStreetMap contributors, ODbL 1.0
-  Wikidata (SPARQL) — CC0
-Run where the internet is open:  python3 tools/build_infra.py fetch OUT_DIR   (downloads into OUT_DIR)
-then:                             python3 tools/build_infra.py build OUT_DIR NE_COUNTRIES.geojson
-The country of each point comes from the Natural Earth borders (point in polygon).
-Format: {src, p: [[lon, lat, name, iso3, operator], …]}
-"""
 import json
 import math
 import os
@@ -111,7 +101,6 @@ def country_of(countries, lon, lat):
     for iso, bb, poly in countries:
         if bb[0] <= lon <= bb[2] and bb[1] <= lat <= bb[3] and inside(poly[0], lon, lat) and not any(inside(h, lon, lat) for h in poly[1:]):
             return iso
-    # on the coast just outside the simplified border: the nearest country within ~25 km
     for iso, bb, poly in countries:
         if bb[0] - 0.3 <= lon <= bb[2] + 0.3 and bb[1] - 0.3 <= lat <= bb[3] + 0.3:
             d = min(math.hypot(q[0] - lon, q[1] - lat) for q in poly[0])
@@ -130,10 +119,8 @@ def km(a, b):
 NOT_OIL = re.compile(r"sugar|azúcar|azucar|sucre|zucker|сахар|salt|\bsal\b|olive|olivo|vegetable|edible|palm|soy|cooking|gold|silver|copper|zinc|nickel|"
                      r"alumin|metal|lithium|cobalt|ethanol|biodiesel|bio-?fuel|renewable|glucose|starch|water|agua|potash|phosphat|fertili|glass|"
                      r"oil mill|\bmill\b|tłuszcz|\bfat\b|grain|粮|油脂|食用|food|flour|cereal|cocoa|coffee|tea\b|rice|oleo|olea|huile|aceite|margarin", re.I)
-# a product list of an oil refinery (OpenStreetMap "product" tag)
 OIL_PRODUCT = re.compile(r"(^|;)\s*(petroleum|gasoline|petrol|diesel|kerosene|fuel_oil|heating_oil|crude_oil|crude|lpg|naphtha|bitumen|asphalt|"
                          r"jet_fuel|lubricants?|lubricating_oils|oil_products|fuel)\s*(;|$)", re.I)
-# the word "refinery" in the languages of the map, or an oil company name
 OIL_NAME = re.compile(r"refin|raffin|rafin|rafiner|НПЗ|нефтеперераб|нафтоперероб|炼油|煉油|石化|製油|정유|petro|oil|crude|pertamina|"
                       r"aramco|sinopec|cnpc|reliance|lukoil|rosneft|gazprom|exxon|esso|shell|chevron|valero|marathon|phillips|total|repsol|eni\b|"
                       r"\bbp\b|motor oil|hellenic|orlen|mol\b|omv|ina\b|nis\b|tüpraş|tupras|sasol|petrobras|pemex|pdvsa|ecopetrol|ypf|ancap|"
@@ -143,7 +130,6 @@ OIL_NAME = re.compile(r"refin|raffin|rafin|rafiner|НПЗ|нефтеперера
                       r"citgo|hf sinclair|par pacific|calumet|delek|cvr|pbf|motiva|lyondell|chalmette|deer park|wynnewood", re.I)
 
 
-# city gas and filling stations that run on LNG — not terminals
 SMALL_LNG = re.compile(r"^LNG$|综合站|储配站|加气|气化站|加注|filling|tankstelle|tankstation|truck|bunker|refuel|\bstation\b|станция|АГЗС|tienda|\bshop\b", re.I)
 
 
@@ -163,11 +149,10 @@ def build(src, ne_path):
         p = os.path.join(src, name)
         return json.load(open(p, encoding="utf-8")) if os.path.exists(p) else None
 
-    # refineries: Wikidata first (curated names), then OpenStreetMap
     ref = []
     for name in ("out_wd_oil_refinery.json", "out_wd_refinery.json"):
         d = load(name)
-        generic = name == "out_wd_refinery.json"   # "refinery" includes sugar and metal refineries: only oil names
+        generic = name == "out_wd_refinery.json"
         for x in (d or {}).get("items", {}).values():
             if not x[2] or re.match(r"^Q\d+$", x[2]) or NOT_OIL.search(x[2]) or (generic and not OIL_NAME.search(x[2] + " " + x[4])):
                 continue
@@ -185,7 +170,6 @@ def build(src, ne_path):
                 continue
             ref.append([round(x[0], 4), round(x[1], 4), x[2], "", t.get("operator", "")])
     ref = dedupe(ref, 4)
-    # LNG terminals and plants (small Iberian satellite regasification units "UAG …" left out)
     lng = []
     for name in ("out_wd_regasification_terminal.json", "out_wd_liquefied_natural_gas_terminal.json", "out_wd_lng.json"):
         d = load(name)
@@ -201,7 +185,7 @@ def build(src, ne_path):
             lng.append([round(x[0], 4), round(x[1], 4), x[2], "", t.get("operator", "")])
     lng = dedupe(lng, 3)
     for rows in (ref, lng):
-        for r in rows:   # the country by the border, not Wikidata's "country" (it can be a historical one)
+        for r in rows:
             r[3] = country_of(countries, r[0], r[1]) or r[3]
         rows.sort(key=lambda r: (r[3], r[2]))
     os.makedirs(GEO, exist_ok=True)

@@ -1,12 +1,3 @@
-/* Order flow of crypto markets, live from Binance's public streams (no key; the browser connects directly).
-   HEAT — the order book over time (a heatmap of resting bids and asks), with every trade as a bubble
-   BOOK — the order book ladder (DOM) and the tape; big trades stand out
-   FOOT — footprint candles: volume sold at the bid × bought at the ask at each price, delta, imbalances, POC
-   CVD  — cumulative volume delta (buyers minus sellers) under the price, from 1-minute to 1-hour bars, and big trades
-   Streams: <pair>@depth@100ms (kept in order with a REST snapshot, Binance's documented way), <pair>@aggTrade;
-   history: /api/v3/klines (taker buy volume gives the delta of every past bar) and /api/v3/aggTrades.
-   If binance.com does not answer (some countries), Binance's market-data mirror binance.vision is used.
-   Nothing is sent anywhere: it is read-only public data, and the streams close when the panel is not on screen. */
 (function(){
 'use strict';
 var T = window.TERM, F = window.FN;
@@ -17,8 +8,6 @@ var HOSTS = [{rest: 'https://api.binance.com', ws: 'wss://stream.binance.com:944
 var COINS = ['BTC', 'ETH', 'SOL', 'BNB', 'XRP', 'DOGE'];
 var fl = {tab: 'HEAT', coin: store('flow_coin') || 'BTC', tf: store('flow_tf') || '1m', ftf: '1m', host: +(store('flow_host') || 0) % HOSTS.length};
 if (!/^[A-Z0-9]{2,10}$/.test(fl.coin)) fl.coin = 'BTC';
-// zoom and scroll of each picture. HEAT: p — price zoom, t — time zoom, off — seconds scrolled back, po — price moved;
-// FOOT: p — price detail (an index in FOOT_MULT), w — column width, off — bars scrolled back; CVD: n — bars on screen, off
 var FOOT_MULT = [20, 10, 5, 2, 1];
 function zdef(){ return {HEAT: {p: 1, t: 1, off: 0, po: 0}, FOOT: {p: 2, w: 1, off: 0}, CVD: {n: 0, off: 0}} }
 fl.z = zdef();
@@ -27,7 +16,6 @@ F.tabs($('flow-tabs'), 't', function(t){ fl.tab = t; render() });
 function css(name, fb){ try { var v = getComputedStyle(document.documentElement).getPropertyValue(name).trim(); return v || fb } catch(e){ return fb } }
 function C(){ return {up: css('--up', '#3fb68b'), down: css('--down', '#e5534b'), acc: css('--accent', '#d9a441'), warm: css('--warm', '#e0b23c'), text: css('--text', '#e6e9ef'), muted: css('--muted', '#8b94a3'), faint: css('--faint', '#5c6573'), bg: css('--bg', '#0e1116'), panel: css('--panel', '#12161d')} }
 function alpha(hex, a){ var m = /^#?([0-9a-f]{6})$/i.exec(String(hex).trim()); if (!m) return hex; var n = parseInt(m[1], 16); return 'rgba(' + (n >> 16) + ',' + ((n >> 8) & 255) + ',' + (n & 255) + ',' + a + ')' }
-// the heatmap scale: almost background → blue → teal → warm yellow
 var HEAT = [[16, 20, 28], [28, 52, 96], [36, 110, 140], [70, 170, 140], [220, 200, 110], [250, 230, 170]];
 var HEAT2 = [[11, 15, 24], [18, 34, 74], [22, 70, 140], [24, 128, 170], [70, 190, 160], [236, 210, 90], [255, 246, 214]];
 var LUT = (function(){
@@ -38,8 +26,6 @@ var LUT = (function(){
 })();
 function heat(t){ t = Math.max(0, Math.min(1, t)) * (HEAT.length - 1); var i = Math.min(HEAT.length - 2, Math.floor(t)), f = t - i, a = HEAT[i], b = HEAT[i + 1]; return 'rgb(' + Math.round(a[0] + (b[0] - a[0]) * f) + ',' + Math.round(a[1] + (b[1] - a[1]) * f) + ',' + Math.round(a[2] + (b[2] - a[2]) * f) + ')' }
 function dg(p){ return p >= 1000 ? 1 : p >= 10 ? 2 : p >= 1 ? 3 : 5 }
-// a round step for axis labels: 1, 2 or 5 × a power of ten
-// a caption over a chart: on a dark backing, so lines and bars do not run through the letters
 function label(g, text, x, y, K){ var w = g.measureText(text).width; g.fillStyle = 'rgba(14,17,22,.82)'; g.fillRect(x - 3, y - 8, w + 6, 16); g.fillStyle = K.muted; g.fillText(text, x, y) }
 function niceStep(x){ var e = Math.pow(10, Math.floor(Math.log10(x))), f = x / e; return (f >= 5 ? 5 : f >= 2 ? 2 : 1) * e }
 function qty(v){ return v >= 1000 ? fmt(v, 0) : v >= 10 ? fmt(v, 1) : v >= 1 ? fmt(v, 2) : fmt(v, 3) }
@@ -56,7 +42,6 @@ function tipShow(lines, e){
   t.style.left = x + 'px'; t.style.top = y + 'px';
 }
 function untip(){ $('tm-tip').style.display = 'none' }
-// a coordinate on the screen's own pixels (also when the browser zooms 125 % or 150 %), so edges stay sharp
 var PXR = 1;
 function px(v){ return Math.round(v * PXR) / PXR }
 function canvasIn(wrap){
@@ -70,7 +55,7 @@ function canvasIn(wrap){
 }
 
 /* ======================= the live market (one pair at a time) ======================= */
-var M = null;   // {coin, pair, ws, book:{bids:Map, asks:Map}, lastId, buf, synced, trades:[], cols:[], ...}
+var M = null;
 function rest(path){
   var h = HOSTS[fl.host];
   var ac = window.AbortController ? new AbortController() : null, t = ac ? setTimeout(function(){ ac.abort() }, 9000) : null;
@@ -107,14 +92,12 @@ function start(){
 function stop(){ if (M && M.ws) { var w = M.ws; M = null; try { w.onclose = null; w.close() } catch(e){} } else M = null; clearInterval(loop.raf); loop.raf = 0 }
 function visibleNow(){ return F.visible('p-flow') && !document.hidden }
 
-// Binance: buffer the stream, take a snapshot, drop what it already has, then apply in order (a gap → start again)
 function snapshot(m){
   m.snapAt = Date.now();
   rest('/api/v3/depth?symbol=' + m.pair + '&limit=5000').then(function(s){
     if (M !== m) return;
     m.bids.clear(); m.asks.clear();
     (s.bids || []).forEach(function(b){ m.bids.set(+b[0], +b[1]) }); (s.asks || []).forEach(function(a){ m.asks.set(+a[0], +a[1]) });
-    // the price range the snapshot covers: beyond it the book is not known (updates there would paint a false picture)
     m.lo = (s.bids || []).length ? +s.bids[s.bids.length - 1][0] : -Infinity; m.hi = (s.asks || []).length ? +s.asks[s.asks.length - 1][0] : Infinity;
     m.lastId = s.lastUpdateId; m.synced = true;
     var buf = m.buf; m.buf = [];
@@ -123,23 +106,21 @@ function snapshot(m){
     loop();
   }).catch(function(e){
     if (M !== m) return;
-    // 400: Binance has no such pair — say so instead of trying again forever
     if (/HTTP 400/.test(e && e.message || '')) { status(TX('fl_nopair', m.pair), true); var ws_ = m.ws; M = null; try { ws_.onclose = null; ws_.close() } catch(x){} return }
     status(TX('fl_fail', e.message || e), true);
-    // the stream of this try is closed before the next one opens (it would keep downloading the book for nothing)
     nextHost(); setTimeout(function(){ if (M === m) { var w_ = m.ws; M = null; try { w_.onclose = null; w_.close() } catch(x){} start() } }, 3000);
   });
 }
 function depth(m, x){
   if (!m.synced) { m.buf.push(x); if (m.buf.length > 2000) m.buf.shift(); return }
   if (x.u <= m.lastId) return;
-  if (x.U > m.lastId + 1 && m.lastId) { m.synced = false; m.buf = [x]; return snapshot(m) }   // a gap: the book is no longer exact
+  if (x.U > m.lastId + 1 && m.lastId) { m.synced = false; m.buf = [x]; return snapshot(m) }
   (x.b || []).forEach(function(b){ var p = +b[0], q = +b[1]; if (p < m.lo) return; if (q) m.bids.set(p, q); else m.bids.delete(p) });
   (x.a || []).forEach(function(a){ var p = +a[0], q = +a[1]; if (p > m.hi) return; if (q) m.asks.set(p, q); else m.asks.delete(p) });
   m.lastId = x.u;
 }
 function trade(m, x){
-  var t = {t: x.T, p: +x.p, q: +x.q, sell: !!x.m};   // m = the buyer was the maker → the aggressor sold
+  var t = {t: x.T, p: +x.p, q: +x.q, sell: !!x.m};
   m.trades.push(t); if (m.trades.length > 6000) m.trades.splice(0, 1000);
   m.sizes.push(t.q); if (m.sizes.length > 3000) m.sizes.splice(0, 500);
   if (isBig(m, t)) { m.big.push(t); if (m.big.length > 200) m.big.shift() }
@@ -148,19 +129,16 @@ function trade(m, x){
 }
 function bestBid(m){ var b = -Infinity; m.bids.forEach(function(_, p){ if (p > b) b = p }); return b }
 function bestAsk(m){ var a = Infinity; m.asks.forEach(function(_, p){ if (p < a) a = p }); return a }
-// a trade is big if it is in the top 0.5% of recent sizes and worth at least $50K
 function bigLimit(m){
   var now = Date.now();
-  if (m.bigQ && now - m.bigAt < 2000) return m.bigQ;   // recounted at most every 2 s
+  if (m.bigQ && now - m.bigAt < 2000) return m.bigQ;
   var s = m.sizes.slice().sort(function(a, b){ return a - b }); m.bigQ = s.length ? s[Math.floor(s.length * 0.995)] : Infinity; m.bigAt = now; return m.bigQ;
 }
 function isBig(m, t){ return t.q >= bigLimit(m) && t.q * t.p >= 50000 }
-// the price step of the pictures: about 0.01% of the price, rounded to 1/2/5
 function stepFor(p){ var raw = p * 0.0001, e = Math.pow(10, Math.floor(Math.log10(raw))), f = raw / e; return (f >= 5 ? 5 : f >= 2 ? 2 : 1) * e }
 
 /* ---------- history: the last few minutes of trades and the bars ---------- */
 function backfill(m){
-  // up to ~8000 recent trades (BTC: a few minutes), newest page first
   var pages = 0, got = [];
   (function more(endId){
     rest('/api/v3/aggTrades?symbol=' + m.pair + '&limit=1000' + (endId != null ? '&fromId=' + Math.max(0, endId - 1000) : '')).then(function(a){
@@ -183,7 +161,7 @@ function addFoot(m, t){
   var span = fl.ftf === '5m' ? 300e3 : 60e3, k = Math.floor(t.t / span) * span;
   if (!m.step) m.step = stepFor(t.p);
   var b = m.foot[k] || (m.foot[k] = {t: k, lv: {}, o: t.p, h: t.p, l: t.p, c: t.p, buy: 0, sell: 0});
-  var lvl = Math.floor(t.p / m.step), c = b.lv[lvl] || (b.lv[lvl] = [0, 0]);   // the level's number: price = lvl × one step (grouped when drawn)
+  var lvl = Math.floor(t.p / m.step), c = b.lv[lvl] || (b.lv[lvl] = [0, 0]);
   if (t.sell) { c[0] += t.q; b.sell += t.q } else { c[1] += t.q; b.buy += t.q }
   b.h = Math.max(b.h, t.p); b.l = Math.min(b.l, t.p); b.c = t.p;
   var keys = Object.keys(m.foot); if (keys.length > 90) keys.sort(function(a, b2){ return a - b2 }).slice(0, keys.length - 90).forEach(function(x){ delete m.foot[x] });
@@ -193,7 +171,6 @@ function klines(m){
   var tf = fl.tf;
   return rest('/api/v3/klines?symbol=' + m.pair + '&interval=' + tf + '&limit=500').then(function(a){
     if (M !== m) return;
-    // [open time, o, h, l, c, volume, close time, quote vol, trades, taker buy base, taker buy quote, -]
     m.kl = {tf: tf, bars: a.map(function(r){ var v = +r[5], tb = +r[9]; return {t: r[0], o: +r[1], h: +r[2], l: +r[3], c: +r[4], v: v, d: 2 * tb - v} })};
   });
 }
@@ -205,8 +182,6 @@ function liveBar(m, t){
 }
 
 /* ---------- the heatmap columns: two a second ---------- */
-// Each column keeps the whole book within ±0.5% of the price, on a grid 5 times finer than the pictures' step
-// (BTC: $1), as a typed array: 15 minutes of columns are a few megabytes, and zooming in shows real detail.
 var SAMPLE_MS = 500, MAX_COLS = 1800, HBAND = 0.005;
 function sample(m){
   var now = Date.now(); if (now - m.lastCol < SAMPLE_MS - 20 || !m.synced) return;
@@ -216,16 +191,12 @@ function sample(m){
   var k0 = Math.floor((mid - band) / hs), n = Math.ceil(2 * band / hs) + 2, q = new Float32Array(n);
   var add = function(qty, p){ var k = Math.round(p / hs) - k0; if (k >= 0 && k < n) q[k] += qty };
   m.bids.forEach(add); m.asks.forEach(add);
-  // the known range in grid keys (outside it: no data, drawn as such)
   m.cols.push({t: now, bb: bb, ba: ba, mid: mid, k0: k0, q: q, klo: isFinite(m.lo) ? Math.ceil(m.lo / hs) : -Infinity, khi: isFinite(m.hi) ? Math.floor(m.hi / hs) : Infinity});
   if (m.cols.length > MAX_COLS) m.cols.splice(0, m.cols.length - MAX_COLS);
-  // the price walked towards the edge of what the snapshot covers: a new snapshot (at most once a minute)
   if (now - (m.snapAt || 0) > 60e3 && (bb - m.lo < band || m.hi - ba < band)) { m.synced = false; m.buf = []; snapshot(m) }
 }
 
 /* ======================= drawing ======================= */
-// four pictures a second; a timer rather than animation frames, so the book keeps its seconds even when the
-// browser skips frames (the heatmap needs one column every second)
 function loop(){
   if (loop.raf) return;
   loop.raf = setInterval(function(){
@@ -259,7 +230,6 @@ function render(){
   }
   var wrap = el('div', 'cv fl-cv');
   if (fl.tab !== 'BOOK') {
-    // the zoom buttons stand on the price axis (top right), so they cover no data and the toolbar keeps one line
     var zc = el('div', 'zctl z-' + fl.tab); wrap.appendChild(zc);
     [['−', -1, 'zoom_out_t'], ['＋', 1, 'zoom_in_t'], ['⟲', 0, 'zoom_reset_t']].forEach(function(z){
       var b = el('button', 'chipbtn zb', z[0]); b.type = 'button'; b.title = TX(z[2]) + ' — ' + TX('fl_zoom_hint_' + (fl.tab === 'CVD' ? 'CVD' : 'XY'));
@@ -280,24 +250,20 @@ function render(){
   if (M && M.synced) loop();
 }
 function setCoin(c){ fl.coin = c; store('flow_coin', c); fl.z = zdef(); stop(); render() }
-// zoom in (+1) or out (−1). Wheel: price detail in HEAT and FOOT, time in CVD; with Shift: time in HEAT and FOOT
 function zoomBy(dir, shift){
   var z = fl.z[fl.tab], k = dir > 0 ? 1.25 : 0.8;
   if (fl.tab === 'HEAT') { if (shift) z.t = Math.max(0.34, Math.min(8, z.t * k)); else z.p *= k }
   else if (fl.tab === 'FOOT') { if (shift) z.w = Math.max(0.6, Math.min(2.2, z.w * k)); else z.p = Math.max(0, Math.min(FOOT_MULT.length - 1, z.p + dir)) }
   else if (fl.tab === 'CVD') z.n = (z.n || 160) / k;
 }
-// the mouse on a picture: the wheel zooms, dragging scrolls back in time (and moves the price in HEAT), a double-click resets
 function zoomable(wrap, repaint){
   var wheelAt = 0;
   wrap.addEventListener('wheel', function(e){
     e.preventDefault();
-    if (fl.tab === 'FOOT' && !e.shiftKey && Date.now() - wheelAt < 180) return;   // one detail step per notch, not per pixel
+    if (fl.tab === 'FOOT' && !e.shiftKey && Date.now() - wheelAt < 180) return;
     wheelAt = Date.now(); zoomBy(e.deltaY < 0 ? 1 : -1, e.shiftKey); untip(); repaint();
   }, {passive: false});
   wrap.addEventListener('dblclick', function(e){ if (e.target.closest('.zctl')) return; fl.z[fl.tab] = zdef()[fl.tab]; repaint() });
-  // one finger or the mouse scrolls; two fingers pinch: apart — closer in, together — further out
-  // (a sideways pinch is time in HEAT and FOOT, an up-and-down one is price)
   var pts = {}, drag = null, pinch = null;
   function two(){ var k = Object.keys(pts); return k.length === 2 ? [pts[k[0]], pts[k[1]]] : null }
   wrap.addEventListener('pointerdown', function(e){
@@ -307,7 +273,6 @@ function zoomable(wrap, repaint){
     var p2 = two();
     if (p2) { drag = null; pinch = {d: Math.hypot(p2[0].x - p2[1].x, p2[0].y - p2[1].y), side: Math.abs(p2[0].x - p2[1].x) > Math.abs(p2[0].y - p2[1].y)}; return }
     var z = fl.z[fl.tab], H = wrap.clientHeight, W = wrap.clientWidth, m = M;
-    // how many seconds or bars one pixel is, and how much price
     drag = {x0: e.clientX, y0: e.clientY, off0: z.off, po0: z.po || 0,
       perX: fl.tab === 'HEAT' ? 1 / (1.5 * z.t) : fl.tab === 'FOOT' ? 1 / Math.round(96 * z.w) : (z.n || 160) / Math.max(1, W - 72),
       perY: fl.tab === 'HEAT' && m && m.cols.length ? 2 * m.cols[m.cols.length - 1].mid * 0.0035 / z.p / H : 0};
@@ -334,25 +299,20 @@ document.addEventListener('visibilitychange', function(){ if (!document.hidden &
 
 function waiting(wrap, g, W, H){ var K = C(); g.fillStyle = K.faint; g.fillText(M && M.synced ? TX('fl_collect') : TX('fl_connecting', fl.coin + 'USDT'), 12, 16) }
 
-// HEAT: time → right, price ↑; brightness = resting size; bubbles = trades
 function paintHeat(wrap){
   var c = canvasIn(wrap); if (!c) return;
   var g = c.g, W = c.W, H = c.H, K = C(), m = M;
   if (!m || !m.cols.length) return waiting(wrap, g, W, H);
   var R = 70, PR = 90, B = 18, cols = m.cols, cur = cols[cols.length - 1], hs = m.hstep, z = fl.z.HEAT, plotW = W - R - PR, plotH = H - B;
-  // time: cw px per column (half a second); by default 3 px a second — five minutes across a wide panel
   var cw = 1.5 * z.t, cap = Math.max(1, Math.floor(plotW / cw));
   z.off = Math.max(0, Math.min(Math.round(z.off), cols.length - Math.min(cap, cols.length)));
   var view = cols.slice(Math.max(0, cols.length - cap - z.off), cols.length - z.off), n = view.length, last = view[n - 1];
-  var X0 = plotW - n * cw;   // the newest column at the right edge; to the left, the trades only (the book is not known)
-  // price: ±0.35% by default; zooming in stops at ~10 grid steps on the screen
+  var X0 = plotW - n * cw;
   z.p = Math.max(0.5, Math.min(Math.max(1, cur.mid * 0.0035 / (5 * hs)), z.p));
   var mid = cur.mid + z.po, band = cur.mid * 0.0035 / z.p, lo = mid - band, hi = mid + band;
   var Y = function(p){ return (hi - p) / (hi - lo) * plotH };
-  // rows: as many grid steps per row as make a row at least 2 px tall
   var bin = Math.max(1, Math.ceil(2 / (hs / (hi - lo) * plotH))), bstep = hs * bin, rowH = bstep / (hi - lo) * plotH;
   var bLo = Math.floor(lo / bstep), bHi = Math.ceil(hi / bstep), nr = Math.max(1, bHi - bLo);
-  // the grid of values: one pixel per column and row (−1: outside what the book covered)
   var vals = new Float32Array(n * nr), sampleV = [];
   for (var i = 0; i < n; i++) {
     var col = view[i], q = col.q, base = col.k0;
@@ -363,7 +323,6 @@ function paintHeat(wrap){
       if (v > 0 && (i * nr + r) % 7 === 0) sampleV.push(v);
     }
   }
-  // brightness: the typical cell (median) is dark, the 99.5th percentile is white — so the walls stand out
   sampleV.sort(function(a, b){ return a - b });
   var med = sampleV[Math.floor(sampleV.length * 0.5)] || 1, top = Math.max(med * 4, sampleV[Math.floor(sampleV.length * 0.995)] || 1);
   var lt = Math.log(1 + top / med);
@@ -372,27 +331,24 @@ function paintHeat(wrap){
   var og = off.getContext('2d'), img = og.createImageData(Math.max(1, n), nr), d = img.data;
   for (var i2 = 0; i2 < n; i2++) for (var r2 = 0; r2 < nr; r2++) {
     var v2 = vals[i2 * nr + r2], o = ((nr - 1 - r2) * n + i2) * 4;
-    if (v2 < 0) { d[o] = 20; d[o + 1] = 22; d[o + 2] = 27; d[o + 3] = 255; continue }   // not known
+    if (v2 < 0) { d[o] = 20; d[o + 1] = 22; d[o + 2] = 27; d[o + 3] = 255; continue }
     var t = v2 > 0 ? Math.min(1, Math.log(1 + v2 / med) / lt) : 0, li = Math.round(Math.pow(t, 1.25) * 255) * 3;
     d[o] = LUT[li]; d[o + 1] = LUT[li + 1]; d[o + 2] = LUT[li + 2]; d[o + 3] = 255;
   }
   og.putImageData(img, 0, 0);
   g.fillStyle = 'rgb(13,16,22)'; g.fillRect(0, 0, plotW, plotH);
   if (n) { g.imageSmoothingEnabled = false; g.drawImage(off, 0, 0, n, nr, X0, Y(bHi * bstep), n * cw, nr * rowH); g.imageSmoothingEnabled = true }
-  // the price grid
   var dd = dg(mid), tickStep = niceStep((hi - lo) / 8), tdd = tickStep < 1 ? Math.max(dd, Math.ceil(-Math.log10(tickStep))) : Math.max(0, dd - 1);
   g.fillStyle = alpha(K.text, 0.05);
   for (var p = Math.ceil(lo / tickStep) * tickStep; p <= hi; p += tickStep) g.fillRect(0, px(Y(p)), plotW, 1);
-  // best bid and ask: step lines, as the book really moves
   ['bb', 'ba'].forEach(function(key){
     g.beginPath(); view.forEach(function(col, i){ var y = px(Y(col[key])) + 0.5; if (i) g.lineTo(X0 + i * cw, y); else g.moveTo(X0, y); g.lineTo(X0 + (i + 1) * cw, y) });
     g.strokeStyle = key === 'bb' ? K.up : K.down; g.lineWidth = 1.5; g.lineJoin = 'miter'; g.stroke(); g.lineWidth = 1;
   });
-  // trades over the whole width: where the book is not known yet (left), they show the price's path
   var t1 = last.t, tLeft = t1 - (plotW / cw) * SAMPLE_MS, mxq = 0, X = function(t){ return plotW - (t1 - t) / SAMPLE_MS * cw - cw / 2 };
   var tr = m.trades.filter(function(t){ return t.t >= tLeft && t.t <= t1 + SAMPLE_MS && t.p >= lo && t.p <= hi });
   tr.forEach(function(t){ if (t.q > mxq) mxq = t.q });
-  if (X0 > 4) {   // the price's path before the book's first column
+  if (X0 > 4) {
     g.beginPath(); var started = false;
     tr.forEach(function(t){ var x = X(t.t); if (x > X0) return; if (started) g.lineTo(x, Y(t.p)); else { g.moveTo(x, Y(t.p)); started = true } });
     g.strokeStyle = alpha(K.text, 0.35); g.lineWidth = 1; g.stroke();
@@ -404,18 +360,15 @@ function paintHeat(wrap){
     g.beginPath(); g.arc(x, Y(t.p), r, 0, 6.283); g.fillStyle = alpha(t.sell ? K.down : K.up, big ? 0.9 : 0.5); g.fill();
     if (big) { g.strokeStyle = 'rgba(255,255,255,.7)'; g.lineWidth = 1; g.stroke() }
   });
-  // the current book on the right, on the same rows as the picture
   var depthW = PR - 6, bx = plotW + 4, qmax = 0, rows = {};
   var addRow = function(q, p, side){ if (p < lo || p > hi) return; var b = Math.floor((p / hs + 0.5) / bin); var rr = rows[b] || (rows[b] = [0, 0]); rr[side] += q; if (rr[side] > qmax) qmax = rr[side] };
   m.bids.forEach(function(q, p){ addRow(q, p, 0) }); m.asks.forEach(function(q, p){ addRow(q, p, 1) });
   var rh = Math.max(1, Math.round(rowH) - (rowH >= 4 ? 1 : 0));
   for (var b in rows) { var y = px(Y((+b + 1) * bstep)); if (rows[b][0]) { g.fillStyle = alpha(K.up, 0.65); g.fillRect(bx, y, rows[b][0] / qmax * depthW, rh) } if (rows[b][1]) { g.fillStyle = alpha(K.down, 0.65); g.fillRect(bx, y, rows[b][1] / qmax * depthW, rh) } }
-  // the price axis
   g.fillStyle = K.faint;
   for (var p2 = Math.ceil(lo / tickStep) * tickStep; p2 <= hi; p2 += tickStep) { var ty = Y(p2); if (ty > 8 && ty < plotH - 8) g.fillText(fmt(p2, tdd), W - R + 6, ty) }
   var py = Math.max(8, Math.min(plotH - 8, Y(cur.mid)));
   g.fillStyle = K.text; g.fillRect(W - R + 2, py - 8, R - 4, 16); g.fillStyle = K.bg; g.fillText(fmt(cur.mid, dd), W - R + 6, py);
-  // the time axis: round seconds/minutes
   var steps = [5, 10, 15, 30, 60, 120, 300, 600], pxs = cw * 1000 / SAMPLE_MS, ts = steps.filter(function(s_){ return s_ * pxs >= 80 })[0] || 900;
   g.fillStyle = 'rgb(13,16,22)'; g.fillRect(0, plotH, plotW, B); g.fillStyle = K.faint; g.textAlign = 'center';
   for (var tt = Math.floor(t1 / (ts * 1000)) * ts * 1000; tt >= tLeft; tt -= ts * 1000) {
@@ -436,7 +389,6 @@ function paintHeat(wrap){
   c.cv.onmouseleave = untip;
 }
 
-// BOOK: the ladder (left) and the tape (right)
 function paintBook(wrap){
   var c = canvasIn(wrap); if (!c) return;
   var g = c.g, W = c.W, H = c.H, K = C(), m = M;
@@ -447,7 +399,6 @@ function paintBook(wrap){
   var B = levels(m.bids, 0), A = levels(m.asks, 1);
   var bk = Object.keys(B).map(Number).sort(function(a, b){ return b - a }).slice(0, n), ak = Object.keys(A).map(Number).sort(function(a, b){ return a - b }).slice(0, n);
   var qmax = Math.max.apply(null, bk.map(function(k){ return B[k] }).concat(ak.map(function(k){ return A[k] }))) || 1;
-  // traded volume at each price in the last 5 minutes
   var since = Date.now() - 300e3, tv = {}; m.trades.forEach(function(t){ if (t.t < since) return; var k = Math.round(t.p / grp) * grp; tv[k] = (tv[k] || 0) + t.q });
   var tvmax = Math.max.apply(null, Object.keys(tv).map(function(k){ return tv[k] }).concat([1]));
   var cy = 26 + n * rowH, colP = LW * 0.42, barW = LW * 0.36;
@@ -465,7 +416,6 @@ function paintBook(wrap){
   var spread = ba - bb, imb = (function(){ var b = 0, a = 0, lim = mid * 0.001; m.bids.forEach(function(q, p){ if (mid - p <= lim) b += q }); m.asks.forEach(function(q, p){ if (p - mid <= lim) a += q }); return b + a ? (b - a) / (b + a) * 100 : 0 })();
   g.fillText(TX('fl_spread') + ' ' + fmt(spread, dd + 1) + ' · ' + TX('fl_imb') + ' ' + pct(imb, 0), colP + 24, cy);
   g.textAlign = 'left';
-  // the tape
   var tx = LW + 10, rows2 = Math.floor((H - 20) / 15), list = m.trades.slice(-rows2).reverse();
   g.fillStyle = K.faint; g.fillText(TX('fl_tape'), tx, 10);
   list.forEach(function(t, i){
@@ -477,7 +427,6 @@ function paintBook(wrap){
   });
 }
 
-// FOOT: footprint candles, newest on the right
 function paintFoot(wrap){
   var c = canvasIn(wrap); if (!c) return;
   var g = c.g, W = c.W, H = c.H, K = C(), m = M;
@@ -486,7 +435,6 @@ function paintFoot(wrap){
   var z = fl.z.FOOT, R = 66, B = 34, colW = Math.round(96 * z.w), cap = Math.max(1, Math.floor((W - R) / colW));
   z.off = Math.max(0, Math.min(Math.round(z.off), keys.length - Math.min(cap, keys.length)));
   var sel = keys.slice(Math.max(0, keys.length - cap - z.off), keys.length - z.off), n = sel.length;
-  // each bar keeps every price step; here they are grouped by the zoom (20, 10, 5, 2 or 1 steps per row)
   var mult = FOOT_MULT[z.p], bars = sel.map(function(k){
     var b = m.foot[k], lv = {};
     Object.keys(b.lv).forEach(function(x){ var gi = Math.floor(+x / mult), c = lv[gi] || (lv[gi] = [0, 0]); c[0] += b.lv[x][0]; c[1] += b.lv[x][1] });
@@ -507,17 +455,14 @@ function paintFoot(wrap){
       var tot = s + a, dlt = tot ? (a - s) / tot : 0;
       g.fillStyle = dlt >= 0 ? alpha(K.up, 0.12 + 0.5 * Math.abs(dlt) * Math.min(1, tot / vmax * 2)) : alpha(K.down, 0.12 + 0.5 * Math.abs(dlt) * Math.min(1, tot / vmax * 2));
       g.fillRect(x + 6, y, colW - 10, h);
-      // a diagonal imbalance: buying at this price ≥ 3× selling one level lower (and the other way)
       var sb = below ? below[0] : 0;
       if (h >= 3 && a >= 3 * Math.max(sb, 1e-9) && a > vmax * 0.05) { g.strokeStyle = K.up; g.strokeRect(Math.round(x + colW / 2) + 0.5, y + 0.5, Math.round(colW / 2) - 5, h - 1) }
       if (li === poc) { g.strokeStyle = K.warm; g.strokeRect(x + 6.5, y + 0.5, colW - 11, Math.max(1, h - 1)) }
       if (showNums) { g.fillStyle = K.down; g.textAlign = 'right'; g.fillText(qty(s), x + colW / 2 - 4, y + h / 2); g.fillStyle = K.up; g.textAlign = 'left'; g.fillText(qty(a), x + colW / 2 + 4, y + h / 2) }
     });
-    // the candle body as a thin line on the left edge
     var up = b.c >= b.o; g.fillStyle = up ? K.up : K.down; g.fillRect(x + 2, YP(b.h), 1, Math.max(1, YP(b.l) - YP(b.h)));
     var by = YP(Math.max(b.o, b.c)); g.fillRect(x + 1, by, 3, Math.max(1, YP(Math.min(b.o, b.c)) - by));
     if (i) { g.fillStyle = alpha(K.text, 0.05); g.fillRect(x, 0, 1, H - B) }
-    // delta and time under the candle
     var dlt = b.buy - b.sell; g.textAlign = 'center'; g.fillStyle = dlt >= 0 ? K.up : K.down; g.fillText('Δ ' + (dlt >= 0 ? '+' : '−') + qty(Math.abs(dlt)), x + colW / 2, H - B + 10);
     g.fillStyle = K.faint; g.fillText(hm(b.t), x + colW / 2, H - B + 24); g.textAlign = 'left';
   });
@@ -533,18 +478,16 @@ function paintFoot(wrap){
   c.cv.onmouseleave = untip;
 }
 
-// CVD: price (top), cumulative delta (middle), bar delta (bottom); big trades on the price
 function paintCvd(wrap){
   var c = canvasIn(wrap); if (!c) return;
   var g = c.g, W = c.W, H = c.H, K = C(), m = M;
-  // the bars once; after a failure, again in 15 s (not four times a second: Binance limits how often one may ask)
   if (m && !m.kl && m.opened && !m.klLoading && !(Date.now() - (m.klFailAt || 0) < 15000)) {
     m.klLoading = true;
     klines(m).catch(function(e){ m.klFailAt = Date.now(); status(TX('fl_fail', e.message || e), true) }).then(function(){ m.klLoading = false });
   }
   if (!m || !m.kl || !m.kl.bars.length) return waiting(wrap, g, W, H);
   var z = fl.z.CVD, R = 66, L = 6, bars = m.kl.bars, fit = Math.min(bars.length, Math.floor((W - L - R) / 3));
-  if (!z.n) z.n = Math.min(bars.length, 160);   // about two and a half hours of 1-minute bars: candles you can read
+  if (!z.n) z.n = Math.min(bars.length, 160);
   z.n = Math.max(15, Math.min(fit, Math.round(z.n)));
   z.off = Math.max(0, Math.min(Math.round(z.off), bars.length - z.n));
   var v = bars.slice(bars.length - z.n - z.off, bars.length - z.off), n = v.length;
@@ -554,16 +497,13 @@ function paintCvd(wrap){
   var Y = function(p){ return 6 + (hi - p) / (hi - lo) * (h1 - 12) }, dd = dg(v[v.length - 1].c);
   var gs = niceStep((hi - lo) / 5);
   for (var p = Math.ceil(lo / gs) * gs; p <= hi; p += gs) { var gy = Math.round(Y(p)) + 0.5; if (gy > h1 - 8) continue; g.strokeStyle = alpha(K.text, 0.05); g.beginPath(); g.moveTo(L, gy); g.lineTo(W - R, gy); g.stroke(); g.fillStyle = K.faint; g.fillText(fmt(p, gs < 1 ? dd : Math.max(0, dd - 1)), W - R + 6, gy) }
-  // the last price on the axis
   var lc = v[n - 1].c, ly = Math.round(Y(lc)) + 0.5, lup = lc >= v[n - 1].o;
   g.setLineDash([2, 3]); g.strokeStyle = alpha(lup ? K.up : K.down, 0.6); g.beginPath(); g.moveTo(L, ly); g.lineTo(W - R, ly); g.stroke(); g.setLineDash([]);
   g.fillStyle = lup ? K.up : K.down; g.fillRect(W - R + 2, ly - 8, R - 4, 16); g.fillStyle = K.bg; g.fillText(fmt(lc, dd), W - R + 6, ly);
   v.forEach(function(b, i){ var up = b.c >= b.o, x = X(i); g.strokeStyle = up ? K.up : K.down; g.fillStyle = g.strokeStyle; g.beginPath(); g.moveTo(x, Y(b.h)); g.lineTo(x, Y(b.l)); g.stroke(); var y1 = Y(Math.max(b.o, b.c)), y2 = Y(Math.min(b.o, b.c)); var bwp = Math.max(1, 2 * Math.floor(bw * 0.35) + 1), yt = Math.round(y1); g.fillRect(x - 0.5 - (bwp - 1) / 2, yt, bwp, Math.max(1, Math.round(y2) - yt)) });
-  // big trades since the panel opened (and the backfilled minutes)
   var t0 = v[0].t, span = TF[m.kl.tf];
   m.big.forEach(function(t){ var i = (t.t - t0) / span; if (i < 0 || i > n) return; var r = Math.max(2.5, Math.min(12, Math.sqrt(t.q * t.p / 50000) * 2)); g.beginPath(); g.arc(X(Math.floor(i)), Y(t.p), r, 0, 6.283); g.strokeStyle = t.sell ? K.down : K.up; g.lineWidth = 1.5; g.stroke(); g.lineWidth = 1 });
   g.strokeStyle = alpha(K.text, 0.08); g.beginPath(); g.moveTo(L, Math.round(h1) + 0.5); g.lineTo(W - R, Math.round(h1) + 0.5); g.moveTo(L, Math.round(h1 + h2) + 0.5); g.lineTo(W - R, Math.round(h1 + h2) + 0.5); g.stroke();
-  // CVD
   var cum = 0, cv = v.map(function(b){ cum += b.d; return cum }), clo = Math.min.apply(null, cv.concat([0])), chi = Math.max.apply(null, cv.concat([0])), csp = (chi - clo) || 1;
   var Y2 = function(x){ return h1 + 6 + (chi - x) / csp * (h2 - 12) };
   g.strokeStyle = alpha(K.text, 0.12); g.beginPath(); g.moveTo(L, Y2(0)); g.lineTo(W - R, Y2(0)); g.stroke();
@@ -572,7 +512,6 @@ function paintCvd(wrap){
   g.beginPath(); cv.forEach(function(x, i){ i ? g.lineTo(X(i), Y2(x)) : g.moveTo(X(i), Y2(x)) }); g.strokeStyle = K.acc; g.lineWidth = 1.6; g.lineJoin = 'round'; g.stroke(); g.lineWidth = 1;
   label(g, 'CVD ' + (cum >= 0 ? '+' : '−') + qty(Math.abs(cum)) + ' ' + m.coin, L + 4, h1 + 12, K);
   g.fillStyle = K.faint; g.fillText(qty(chi), W - R + 6, Y2(chi)); g.fillText(qty(clo), W - R + 6, Y2(clo));
-  // bar delta
   var dmax = Math.max.apply(null, v.map(function(b){ return Math.abs(b.d) })) || 1, y0 = h1 + h2 + 4 + h3 / 2;
   y0 = Math.round(y0);
   v.forEach(function(b, i){ var hh = Math.round(b.d / dmax * (h3 / 2 - 2)), bwp = Math.max(1, 2 * Math.floor(bw * 0.35) + 1); g.fillStyle = b.d >= 0 ? alpha(K.up, 0.75) : alpha(K.down, 0.75); g.fillRect(X(i) - 0.5 - (bwp - 1) / 2, Math.min(y0, y0 - hh), bwp, Math.max(1, Math.abs(hh))) });
@@ -596,7 +535,6 @@ function open(tab, arg){
   T.show('p-flow'); render();
 }
 var Cm = T.CMDS;
-// HEAT alone stays the market map (IMAP); "HEAT BTC" is the order book heatmap
 var imapHeat = Cm.HEAT;
 Cm.HEAT = function(a){ var s = String(a || '').trim().toUpperCase(); if (s && (COINS.indexOf(s.replace(/USDT$/, '')) >= 0 || /USDT$/.test(s))) return open('HEAT', a); return imapHeat ? imapHeat(a) : open('HEAT', a) };
 Cm.OBH = function(a){ open('HEAT', a) }; Cm.BOOKMAP = Cm.OBH; Cm['СТАКАН'] = function(a){ open('BOOK', a) };

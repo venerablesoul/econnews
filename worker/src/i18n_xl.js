@@ -1,7 +1,4 @@
-// Chinese (simplified) and Arabic texts for the bot: the same keys as EN in i18n.js.
-// A key missing here falls back to English. Tickers, commands (/q, /alert …) and data codes stay Latin.
 
-// help lines shared by both languages
 const LANG_LINE = "English · Русский · 中文 · العربية";
 
 export const ZH = {
@@ -73,7 +70,6 @@ export const ZH = {
   stats_since: "自",
   no_name: "无名",
   updated: (t) => `\n<i>更新于莫斯科时间 ${t}</i>`,
-  // buttons
   btn_market: "📈 市场", btn_terminal: "🖥 终端", btn_menu: "☰ 主菜单", btn_in_terminal: "🖥 在终端中打开",
   btn_news: "📰 新闻", btn_markets: "📊 行情", btn_calendar: "📅 日历", btn_trades: "🏛 交易",
   btn_news_off: "🔕 关闭新闻推送", btn_news_on: "🔔 开启新闻推送", btn_lang: "🌐 语言",
@@ -87,7 +83,6 @@ export const ZH = {
   btn_t_watch: "🖥 终端中的自选", btn_t_port: "🖥 终端中的组合", btn_t_map: "🖥 热力图",
   btn_t_curves: "🖥 终端中的曲线", btn_t_eqs: "🖥 终端中的筛选器",
   nodata: "无数据", earn_eps: (v) => ` · EPS 预期 $${v}`, a_num: (id) => `#${id}`,
-  // news / markets / calendar / trades
   news_head: "📰 <b>今日要闻</b>",
   news_none: "过去 24 小时没有重要新闻。",
   read: "阅读 →",
@@ -102,12 +97,10 @@ export const ZH = {
   trd_insiders: "💼 <b>内部人士交易</b>",
   trd_more: "全部交易请见终端（TRD 命令）。",
   trd_traded: (d, d2) => `交易 ${d}，披露 ${d2}`,
-  // quotes
   need_symbol: (cmd) => `请加上股票代码，例如：/${cmd} AAPL`,
   q_usage: "输入代码，用空格分隔：/q AAPL MSFT BTC oil gold SBER",
   q_head: "📈 <b>报价</b> <i>（日涨跌幅）</i>",
   no_data_for: (s) => `${s}：无数据`,
-  // company
   des_moex_line: (type, isin) => `${type} · 莫斯科交易所 · ISIN ${isin}`,
   des_price: (px, ch) => `价格：<b>${px}</b> 今日 ${ch}`,
   des_lot: (n) => `每手：${n} 股`, des_issue: (n) => `发行股数：${n}`, des_list: (n) => `上市级别：${n}`,
@@ -150,7 +143,6 @@ export const ZH = {
   chart_usage: "例如：/chart AAPL 1y · /chart BTC 3m · /chart oil 6m · /chart SBER 1y",
   ranges: { "1d": "1 天", "5d": "5 天", "1m": "1 个月", "3m": "3 个月", "6m": "6 个月", ytd: "年初至今", "1y": "1 年", "2y": "2 年", "5y": "5 年" },
   chart_cap: (s, name, range, ch, now, lo, hi) => `📈 <b>${s}</b> ${name}\n${range}：${ch} · 现价 ${now} · 最低 ${lo} · 最高 ${hi}`,
-  // watchlist / portfolio / alerts
   w_added: "已添加：", w_removed: "已移除：", w_bad: "无法识别：", w_max: (n) => `自选最多可容纳 ${n} 个品种。`,
   w_empty: "⭐ 您的自选为空。\n添加：/watch AAPL NVDA BTC oil SBER",
   w_head: "⭐ <b>我的自选</b> <i>（日涨跌幅）</i>",
@@ -190,7 +182,6 @@ export const ZH = {
   fire_news: (kw) => `🔔 含关键词「${kw}」的新闻`,
   me_login: "请在与机器人的对话中点击「🖥 终端」按钮打开终端，这样自选、组合和提醒就会与机器人共享。",
   me_bad_alert: "没看懂这个提醒。示例：AAPL > 200 · BTC < 60000 · oil 5% · news Fed",
-  // screener / map / earnings / rates
   eqs_presets: { leaders: "🚀 涨幅榜", losers: "📉 跌幅榜", value: "💰 低市盈率", div: "🏦 派息股",
     growth: "📈 营收增长最快", big: "🏛 市值最大", year: "🏆 一年表现最佳", low52: "🧊 接近 52 周低点" },
   eqs_choose: "🔎 <b>美股筛选器</b>（约 100 家最大公司）\n请选择筛选方式：",
@@ -212,7 +203,6 @@ export const ZH = {
   wirp_row: (d, after, cum) => `<b>${d}</b>：预期利率 ${after}%（较当前 ${cum} 基点）`,
   wirp_probs: { hike50: "加息 0.5", hike: "加息", hold: "维持不变", cut: "降息", cut50: "降息 0.5" },
   wirp_note: "\n\n<i>根据联邦基金期货计算（CME FedWatch 方法）</i>",
-  // deep company data
   btn_ee: "EE 预测", btn_dvd: "DVD 股息", btn_omon: "OMON 期权", btn_rv: "RV 同业", btn_hds: "HDS 股东",
   btn_cf: "CF 文件", btn_mgmt: "MGMT 管理层", btn_si: "SI 空头",
   no_deep: (s) => `暂无 ${s} 的详细数据：仅覆盖约 100 家美国最大公司，每天更新两次。`,
@@ -357,7 +347,6 @@ export const AR = {
   stats_since: "منذ",
   no_name: "بلا اسم",
   updated: (t) => `\n<i>آخر تحديث ${t} بتوقيت موسكو</i>`,
-  // buttons
   btn_market: "📈 الأسواق", btn_terminal: "🖥 المنصة", btn_menu: "☰ القائمة الرئيسية", btn_in_terminal: "🖥 في المنصة",
   btn_news: "📰 الأخبار", btn_markets: "📊 الأسعار", btn_calendar: "📅 الأجندة", btn_trades: "🏛 الصفقات",
   btn_news_off: "🔕 إيقاف الأخبار", btn_news_on: "🔔 تشغيل الأخبار", btn_lang: "🌐 اللغة",
@@ -371,7 +360,6 @@ export const AR = {
   btn_t_watch: "🖥 قائمة المتابعة في المنصة", btn_t_port: "🖥 المحفظة في المنصة", btn_t_map: "🖥 الخريطة الحرارية",
   btn_t_curves: "🖥 المنحنيات في المنصة", btn_t_eqs: "🖥 الفرز في المنصة",
   nodata: "لا توجد بيانات", earn_eps: (v) => ` · تقدير EPS: $${v}`, a_num: (id) => `#${id}`,
-  // news / markets / calendar / trades
   news_head: "📰 <b>أهم أخبار اليوم</b>",
   news_none: "لا أخبار مهمة خلال الساعات الـ24 الماضية.",
   read: "اقرأ ←",
@@ -386,12 +374,10 @@ export const AR = {
   trd_insiders: "💼 <b>صفقات المطّلعين</b>",
   trd_more: "كل الصفقات في المنصة (الأمر TRD).",
   trd_traded: (d, d2) => `الصفقة ${d}، الإفصاح ${d2}`,
-  // quotes
   need_symbol: (cmd) => `أضف رمز السهم، مثلًا: /${cmd} AAPL`,
   q_usage: "اكتب الرموز مفصولة بمسافات: /q AAPL MSFT BTC oil gold SBER",
   q_head: "📈 <b>الأسعار</b> <i>(التغير اليومي)</i>",
   no_data_for: (s) => `${s}: لا توجد بيانات`,
-  // company
   des_moex_line: (type, isin) => `${type} · بورصة موسكو · ISIN ${isin}`,
   des_price: (px, ch) => `السعر: <b>${px}</b> ${ch} اليوم`,
   des_lot: (n) => `اللوت: ${n} سهم`, des_issue: (n) => `الأسهم المصدرة: ${n}`, des_list: (n) => `مستوى الإدراج: ${n}`,
@@ -434,7 +420,6 @@ export const AR = {
   chart_usage: "مثلًا: /chart AAPL 1y · /chart BTC 3m · /chart oil 6m · /chart SBER 1y",
   ranges: { "1d": "يوم", "5d": "5 أيام", "1m": "شهر", "3m": "3 أشهر", "6m": "6 أشهر", ytd: "منذ بداية العام", "1y": "سنة", "2y": "سنتان", "5y": "5 سنوات" },
   chart_cap: (s, name, range, ch, now, lo, hi) => `📈 <b>${s}</b> ${name}\n${range}: ${ch} · الآن ${now} · الأدنى ${lo} · الأعلى ${hi}`,
-  // watchlist / portfolio / alerts
   w_added: "تمت الإضافة: ", w_removed: "تمت الإزالة: ", w_bad: "لم أفهم: ", w_max: (n) => `تتسع قائمة المتابعة لـ ${n} أداة كحد أقصى.`,
   w_empty: "⭐ قائمة متابعتك فارغة.\nللإضافة: /watch AAPL NVDA BTC oil SBER",
   w_head: "⭐ <b>قائمة متابعتي</b> <i>(التغير اليومي)</i>",
@@ -474,7 +459,6 @@ export const AR = {
   fire_news: (kw) => `🔔 خبر يتضمن كلمة «${kw}»`,
   me_login: "افتح المنصة من زر «🖥 المنصة» في محادثة البوت، وعندها تصبح قائمة المتابعة والمحفظة والتنبيهات مشتركة مع البوت.",
   me_bad_alert: "لم أفهم التنبيه. أمثلة: AAPL > 200 · BTC < 60000 · oil 5% · news Fed",
-  // screener / map / earnings / rates
   eqs_presets: { leaders: "🚀 الأكثر ارتفاعًا", losers: "📉 الأكثر انخفاضًا", value: "💰 الأرخص حسب P/E", div: "🏦 الموزّعة للأرباح",
     growth: "📈 الأسرع نموًا في الإيرادات", big: "🏛 الأكبر", year: "🏆 الأفضل خلال سنة", low52: "🧊 قرب أدنى مستوى في 52 أسبوعًا" },
   eqs_choose: "🔎 <b>فرز الأسهم الأمريكية</b> (نحو 100 من أكبر الشركات)\nاختر طريقة الفرز:",
@@ -496,7 +480,6 @@ export const AR = {
   wirp_row: (d, after, cum) => `<b>${d}</b>: الفائدة المتوقعة ${after}% (${cum} نقطة أساس مقارنة بالحالية)`,
   wirp_probs: { hike50: "رفع 0.5", hike: "رفع", hold: "تثبيت", cut: "خفض", cut50: "خفض 0.5" },
   wirp_note: "\n\n<i>محسوبة من العقود الآجلة للأموال الفيدرالية (طريقة CME FedWatch)</i>",
-  // deep company data
   btn_ee: "EE التقديرات", btn_dvd: "DVD التوزيعات", btn_omon: "OMON الخيارات", btn_rv: "RV المنافسون", btn_hds: "HDS المساهمون",
   btn_cf: "CF الإفصاحات", btn_mgmt: "MGMT الإدارة", btn_si: "SI البيع على المكشوف",
   no_deep: (s) => `لا توجد بيانات تفصيلية لـ ${s} بعد: تغطي نحو 100 من أكبر الشركات الأمريكية وتُحدَّث مرتين يوميًا.`,
@@ -538,7 +521,7 @@ export const AR = {
   mgmt_row: (n, t, age, pay) => `<b>${n}</b>${age ? "، " + age + " عامًا" : ""}\n${t}${pay ? " · الأجر " + pay : ""}`,
   rv_head: (s, src) => `⚖️ <b>${s} مقارنة بالمنافسين</b> <i>(${src})</i>\n`,
   rv_src_peers: "نظراء Finnhub", rv_src_sector: "القطاع نفسه",
-  rv_cols: ["Ticker", "P/E", "P/S", "Rev%", "Net%", "1Y%"],   // a monospaced table: Latin headers keep the columns straight
+  rv_cols: ["Ticker", "P/E", "P/S", "Rev%", "Net%", "1Y%"],
   rv_median: "الوسيط",
   rv_none: (s) => `${s} ليس ضمن قائمة نحو 100 من أكبر الشركات الأمريكية، فلا مقارنة.`,
   omon_head: (s, px, iv, ivch) => `🎰 <b>خيارات ${s}</b> · $${px}\nIV30 <b>${iv}%</b> (${ivch})`,
@@ -572,7 +555,6 @@ export const AR = {
   bot_back: (m) => `✅ <b>عاد بوت الأخبار</b> بعد ${m} دقيقة دون تحديثات.`,
 };
 
-// names stored in English (sectors, news tags and sources, trade labels) shown in Chinese and Arabic
 export const SECTOR_XL = {
   zh: { "Technology": "科技", "Communication": "通信服务", "Consumer Discretionary": "可选消费", "Consumer Staples": "必需消费",
     "Health Care": "医疗保健", "Financials": "金融", "Industrials": "工业", "Energy": "能源", "Utilities": "公用事业",
@@ -581,7 +563,6 @@ export const SECTOR_XL = {
     "Health Care": "الرعاية الصحية", "Financials": "المالية", "Industrials": "الصناعة", "Energy": "الطاقة", "Utilities": "المرافق",
     "Real Estate": "العقارات", "Materials": "المواد الأساسية" },
 };
-// hashtags: letters, digits and "_" only
 export const TAG_XL = {
   zh: { Fed: "美联储", ECB: "欧洲央行", BankOfRussia: "俄罗斯央行", rates: "利率", inflation: "通胀", oil: "石油", gas: "天然气",
     gold: "黄金", ruble: "卢布", dollar: "美元", bonds: "债券", markets: "市场", China: "中国", tariffs: "关税",
@@ -596,7 +577,6 @@ export const SOURCE_XL = {
   ar: { "Fed": "الاحتياطي الفيدرالي", "US Labor Statistics (BLS)": "مكتب إحصاءات العمل الأمريكي (BLS)", "ECB": "البنك المركزي الأوروبي",
     "Bank of England": "بنك إنجلترا", "IMF": "صندوق النقد الدولي", "Bank of Russia": "البنك المركزي الروسي", "Kommersant": "كوميرسانت" },
 };
-// the same order as TRADE_EN_RU in i18n.js
 export const TRADE_LABEL_XL = {
   zh: ["众议院", "参议院", "（期权）", "等", "总法律顾问", "总裁", "董事长", "高管", "董事", "持股10%以上股东"],
   ar: ["مجلس النواب", "مجلس الشيوخ", " (خيار)", " وآخرون", "المستشار القانوني العام", "الرئيس", "رئيس مجلس الإدارة",
@@ -611,7 +591,6 @@ export const TRADE_OWNER_XL = {
   ar: { SP: "الزوج/الزوجة", JT: "ملكية مشتركة", DC: "الابن/الابنة", Spouse: "الزوج/الزوجة", Joint: "ملكية مشتركة", Child: "الابن/الابنة",
     "Dependent Child": "الابن/الابنة" },
 };
-// market rows and instruments (ids of MKT in market.js and of data.json)
 export const MKT_XL = {
   zh: { "S&P": "标普500指数", "Nasdaq": "纳斯达克指数", "DJI": "道琼斯指数", "RTY": "罗素2000指数", "VIX": "VIX恐慌指数",
     "SX5E": "欧洲斯托克50指数", "DAX": "德国DAX指数", "UKX": "英国富时100指数", "CAC": "法国CAC40指数", "NKY": "日经225指数",
@@ -629,7 +608,6 @@ export const MKT_XL = {
     "UST3M": "سندات الخزانة 3 أشهر", "UST5": "سندات الخزانة 5 سنوات", "UST10": "سندات الخزانة 10 سنوات", "UST30": "سندات الخزانة 30 سنة",
     "BTC": "بيتكوين" },
 };
-// IMF rows (macro.json "c"): countries and groups
 export const MACRO_XL = {
   zh: { WEOWORLD: "世界", ADVEC: "发达经济体", OEMDC: "新兴与发展中经济体", EURO: "欧元区", USA: "美国", CHN: "中国", DEU: "德国",
     JPN: "日本", IND: "印度", GBR: "英国", FRA: "法国", ITA: "意大利", CAN: "加拿大", BRA: "巴西", RUS: "俄罗斯", KOR: "韩国",
@@ -640,5 +618,4 @@ export const MACRO_XL = {
     BRA: "البرازيل", RUS: "روسيا", KOR: "كوريا الجنوبية", AUS: "أستراليا", ESP: "إسبانيا", MEX: "المكسيك", IDN: "إندونيسيا", TUR: "تركيا",
     SAU: "السعودية", CHE: "سويسرا", ZAF: "جنوب أفريقيا", KAZ: "كازاخستان" },
 };
-// month names for dates in Arabic (Chinese dates are written "11月13日")
 export const MON_AR = ["يناير", "فبراير", "مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"];

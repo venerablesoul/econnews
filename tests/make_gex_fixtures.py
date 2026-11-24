@@ -1,6 +1,3 @@
-"""Builds the option-analytics fixtures of the terminal tests (tests/fixtures/pages/gex/) with the real gex.py code:
-a made-up S&P 500 chain (a realistic shape of open interest and skew) and the Deribit sample saved from the live
-source (tests/fixtures/live). Run again after a change of gex.py: python3 tests/make_gex_fixtures.py"""
 import json
 import math
 import os
@@ -25,7 +22,7 @@ def spx_chain(now, S):
         d += timedelta(days=1)
         if d.weekday() < 5:
             exps.append(d)
-    for m in (1, 2, 3):   # three monthly expiries
+    for m in (1, 2, 3):
         exps.append((now + timedelta(days=30 * m)).date())
     for e in exps:
         T = (datetime(e.year, e.month, e.day, 21, tzinfo=timezone.utc) - now).total_seconds() / (365 * 86400)
@@ -47,7 +44,6 @@ def main():
         p = os.path.join(OUT, f)
         if os.path.exists(p):
             os.remove(p)
-    # three sessions of 15-minute snapshots for the interval map and a year of days
     S = 6700.0
     for day in range(3):
         for q in range(26):
@@ -66,7 +62,6 @@ def main():
                      "cw": round(px * 1.02 / 25) * 25, "pw": round(px * 0.97 / 25) * 25, "iv": rnd.uniform(0.12, 0.22), "em": 1.0})
     h["days"] = days + h["days"]
     gex.dump(os.path.join(OUT, "hist", "SPX.json"), h)
-    # bitcoin from the live Deribit sample
     fx = os.path.join(HERE, "fixtures", "live")
     book = json.load(open(os.path.join(fx, "deribit_btc_book.json")))["result"]
     S = json.load(open(os.path.join(fx, "deribit_btc_index.json")))["result"]["index_price"]

@@ -1,10 +1,3 @@
-/* Technical analysis and trading-day functions.
-   TECH / G / GPO / GPC / GIP / TA / IND — the terminal's own chart: candles, bars or a line; moving averages, Bollinger bands,
-     VWAP, volume, RSI, MACD, stochastic; trend lines, support and resistance, Fibonacci levels, candle and double top/bottom patterns
-   VAP  — volume at price (point of control, value area), TSM / AQR — the trading day by hour with VWAP, QR — time & sales
-   TRA  — total return of one security with dividends, TRAY — returns over many periods
-   Company tabs: GE — P/E over time, CACS — corporate action calendar, CRPR — credit rating news
-   Data: price history from the bot server (/api/history), crypto trades straight from Binance. */
 (function(){
 'use strict';
 var T = window.TERM, F = window.FN;
@@ -53,7 +46,6 @@ function atr(h, l, c, n){
   return out;
 }
 function vwap(h, l, c, v, t, intraday){
-  // intraday: restarts every trading day; otherwise over the whole period shown
   var out = [], pv = 0, vv = 0, day = null;
   for (var i = 0; i < c.length; i++) {
     var d = intraday ? new Date(t[i] * 1000).toISOString().slice(0, 10) : 'all';
@@ -74,7 +66,6 @@ function pivots(h, l, k){
   }
   return {hi: hi, lo: lo};
 }
-// support/resistance: pivot prices grouped within 1.5 %; the most touched levels nearest the price
 function levels(h, l, c, pv){
   var pts = pv.hi.map(function(i){ return h[i] }).concat(pv.lo.map(function(i){ return l[i] })), groups = [];
   pts.sort(function(a, b){ return a - b }).forEach(function(p){
@@ -86,7 +77,6 @@ function levels(h, l, c, pv){
   var res = groups.filter(function(g){ return g.avg > last && g.n >= 2 }).sort(function(a, b){ return a.avg - b.avg }).slice(0, 2);
   return {sup: sup.map(function(g){ return {p: g.avg, n: g.n} }), res: res.map(function(g){ return {p: g.avg, n: g.n} })};
 }
-// trend lines through the last two swing lows (support) and swing highs (resistance), extended to the right
 function trendLines(h, l, pv){
   var out = [], n = h.length;
   var pick = function(idx, arr, rising){
@@ -107,10 +97,9 @@ function trendLines(h, l, pv){
 function fibo(h, l){
   var hi = -Infinity, lo = Infinity, ih = 0, il = 0;
   h.forEach(function(x, i){ if (x > hi) { hi = x; ih = i } }); l.forEach(function(x, i){ if (x < lo) { lo = x; il = i } });
-  var up = il < ih;   // the move went up: levels are retracements from the high down
+  var up = il < ih;
   return {up: up, hi: hi, lo: lo, levels: [0, 0.236, 0.382, 0.5, 0.618, 0.786, 1].map(function(f){ return {f: f, p: up ? hi - (hi - lo) * f : lo + (hi - lo) * f} })};
 }
-// candle patterns; dir +1 bullish, −1 bearish
 function candles(o, h, l, c){
   var out = [], n = c.length;
   var body = function(i){ return Math.abs(c[i] - o[i]) }, range = function(i){ return h[i] - l[i] || 1e-9 };
@@ -241,14 +230,12 @@ function drawTech(box, h){
     var sym = tc.sym;
     OPTX.levels(sym).then(function(G){
       if (sym !== tc.sym || !document.body.contains(wrap)) return;
-      // a second guard against drawing another instrument's levels: the options price must be near the chart's
       var lastP = A.c[A.c.length - 1], far = !!(G && G.px && lastP && Math.abs(G.px / lastP - 1) > 0.06);
       if (!G || far) { var nt = box.querySelector('.tc-gexnote') || el('div', 'note tc-gexnote'); nt.textContent = far ? TX('ta_gex_far', G.sym) : TX('ta_gex_none', OPTX.ALL.filter(function(s){ return s !== 'NDX' }).join(', ')); box.appendChild(nt); return }
       A.gex = G; paintChart(wrap, h, A);
     });
   }
 }
-// LVL → "on the chart": the symbol with the option levels switched on (exported with the rest at the end)
 function showGex(sym){ tc.ta.gex = 1; openTech('TECH', sym, {range: tc.range === '1d' ? '5d' : tc.range}) }
 function analyse(h){
   var c = h.c, o = h.o.map(function(x, i){ return x == null ? c[i] : x }), hi = h.h.map(function(x, i){ return x == null ? c[i] : x }), lo = h.l.map(function(x, i){ return x == null ? c[i] : x });
@@ -272,7 +259,6 @@ function paintChart(wrap, h, A){
   var L = 6, R = 64, B = 18, TOP = 18, paneH = Math.max(48, Math.min(110, H * 0.16)), mainH = H - TOP - B - lower.length * paneH;
   if (mainH < 150) { lower = lower.slice(0, Math.max(0, Math.floor((H - TOP - B - 150) / paneH))); mainH = H - TOP - B - lower.length * paneH }
   var n = A.n, bw = (W - L - R) / n, X = function(i){ return L + (i + 0.5) * bw };
-  // price scale over the bars and the overlays shown
   var lo = Infinity, hi = -Infinity;
   for (var i = 0; i < n; i++) { if (A.l[i] < lo) lo = A.l[i]; if (A.h[i] > hi) hi = A.h[i] }
   if (tc.ind.boll) A.boll.up.forEach(function(v, i){ if (v != null) { hi = Math.max(hi, v); lo = Math.min(lo, A.boll.lo[i]) } });
@@ -280,20 +266,16 @@ function paintChart(wrap, h, A){
   var Y = function(v){ return TOP + (hi - v) / (hi - lo) * mainH };
   var font = getComputedStyle(document.body).fontFamily;
   g.font = '11px ' + font; g.textBaseline = 'middle';
-  // grid and the price axis
   var dgt = Math.abs(hi) >= 1000 ? 0 : Math.abs(hi) >= 10 ? 2 : 4;
   for (var k = 0; k <= 5; k++) { var v = lo + (hi - lo) * k / 5, y = Y(v); g.strokeStyle = 'rgba(255,255,255,0.05)'; g.beginPath(); g.moveTo(L, y); g.lineTo(W - R, y); g.stroke(); g.fillStyle = '#5d6778'; g.fillText(fmt(v, dgt), W - R + 6, y) }
-  // time axis
   var step = Math.max(1, Math.round(n / Math.max(2, Math.floor((W - L - R) / 90)))), longSpan = (h.t[n - 1] - h.t[0]) > 300 * 86400;
   g.fillStyle = '#5d6778'; g.textAlign = 'center';
   for (var j = step; j < n; j += step) { g.fillText(tlabel(h.t[j], A.intraday, longSpan), X(j), H - B / 2); g.strokeStyle = 'rgba(255,255,255,0.03)'; g.beginPath(); g.moveTo(X(j), TOP); g.lineTo(X(j), H - B); g.stroke() }
   g.textAlign = 'left';
-  // volume at the bottom of the price pane
   if (tc.ind.vol && A.v.length) {
     var vmax = Math.max.apply(null, A.v.map(function(x){ return x || 0 })) || 1;
     for (var vi = 0; vi < n; vi++) { var vh = (A.v[vi] || 0) / vmax * mainH * 0.2; g.fillStyle = A.c[vi] >= A.o[vi] ? 'rgba(47,191,113,0.28)' : 'rgba(239,83,80,0.28)'; g.fillRect(X(vi) - Math.max(0.5, bw * 0.35), TOP + mainH - vh, Math.max(1, bw * 0.7), vh) }
   }
-  // Bollinger band
   if (tc.ind.boll) {
     g.beginPath(); var started = false;
     A.boll.up.forEach(function(v, i){ if (v == null) return; if (!started) { g.moveTo(X(i), Y(v)); started = true } else g.lineTo(X(i), Y(v)) });
@@ -301,14 +283,12 @@ function paintChart(wrap, h, A){
     g.closePath(); g.fillStyle = 'rgba(139,149,167,0.08)'; g.fill();
     line(g, A.boll.up, X, Y, '#6b7585', 1); line(g, A.boll.lo, X, Y, '#6b7585', 1); line(g, A.boll.mid, X, Y, '#6b7585', 1, [3, 3]);
   }
-  // Fibonacci
   if (tc.ta.fib) {
     A.fib.levels.forEach(function(L_){
       var y = Y(L_.p); g.strokeStyle = 'rgba(167,139,250,0.45)'; g.setLineDash([2, 4]); g.beginPath(); g.moveTo(L, y); g.lineTo(W - R, y); g.stroke(); g.setLineDash([]);
       g.fillStyle = '#a78bfa'; g.fillText(fmt(L_.f * 100, 1) + '%  ' + fmt(L_.p, dgt), L + 4, y - 7);
     });
   }
-  // support and resistance
   if (tc.ta.sr) {
     A.lv.sup.concat(A.lv.res).forEach(function(s){
       var sup = A.lv.sup.indexOf(s) >= 0, y = Y(s.p);
@@ -316,7 +296,6 @@ function paintChart(wrap, h, A){
       g.fillStyle = sup ? '#2fbf71' : '#ef5350'; g.fillRect(W - R + 1, y - 7, R - 2, 14); g.fillStyle = '#000'; g.fillText(fmt(s.p, dgt), W - R + 5, y);
     });
   }
-  // option levels: the gamma flip, the call and put walls, ±1σ for a day (opt.js, the bot's gex files)
   if (tc.ta.gex && A.gex) {
     var G = A.gex, lastP = A.c[n - 1];
     [[G.zero, TX('gex_flip'), '#d9a441', [6, 4]], [G.cwall, TX('gex_cwall'), '#3fb68b', [2, 3]], [G.pwall, TX('gex_pwall'), '#e5534b', [2, 3]],
@@ -326,7 +305,6 @@ function paintChart(wrap, h, A){
       g.fillStyle = x[2]; g.fillText(x[1] + ' ' + fmt(x[0], dgt), L + 4, y - 7);
     });
   }
-  // price
   if (tc.style === 'line') {
     var up = A.c[n - 1] >= A.c[0];
     g.beginPath(); A.c.forEach(function(v, i){ i ? g.lineTo(X(i), Y(v)) : g.moveTo(X(i), Y(v)) }); g.strokeStyle = up ? '#2fbf71' : '#ef5350'; g.lineWidth = 1.6; g.stroke(); g.lineWidth = 1;
@@ -343,14 +321,11 @@ function paintChart(wrap, h, A){
       }
     }
   }
-  // moving averages and VWAP
   IND_LIST.forEach(function(x){ if (tc.ind[x[0]] && /^(sma|ema|vwap)/.test(x[0])) line(g, A[x[0]], X, Y, x[2], 1.3) });
-  // trend lines
   if (tc.ta.trend) A.tl.forEach(function(t){
     var y1 = Y(t.p1), y2 = Y(t.p1 + t.slope * (n - 1 - t.i1));
     g.strokeStyle = t.kind === 'sup' ? '#2fbf71' : '#ef5350'; g.lineWidth = 1.4; g.beginPath(); g.moveTo(X(t.i1), y1); g.lineTo(X(n - 1), y2); g.stroke(); g.lineWidth = 1;
   });
-  // patterns
   if (tc.ta.pat) {
     A.cdl.forEach(function(p){
       var x = X(p.i), up = p.dir > 0, y = up ? Y(A.l[p.i]) + 10 : Y(A.h[p.i]) - 10;
@@ -362,10 +337,8 @@ function paintChart(wrap, h, A){
       g.fillStyle = g.strokeStyle; g.fillText(TX('pat_' + d.k) + ' · ' + TX('neck') + ' ' + fmt(d.neck, dgt), X(d.i2) + 6, Y(d.p) + (d.dir > 0 ? 12 : -12));
     });
   }
-  // the last price
   var last = A.c[n - 1], ly = Y(last), lcol = last >= A.o[n - 1] ? '#2fbf71' : '#ef5350';
   g.fillStyle = lcol; g.fillRect(W - R + 1, ly - 8, R - 2, 16); g.fillStyle = '#000'; g.fillText(fmt(last, dgt), W - R + 5, ly);
-  // lower panes
   lower.forEach(function(k, pi){
     var top = TOP + mainH + pi * paneH + 4, ph = paneH - 6;
     g.strokeStyle = '#222a35'; g.beginPath(); g.moveTo(L, top - 2); g.lineTo(W - R, top - 2); g.stroke();
@@ -381,14 +354,12 @@ function paintChart(wrap, h, A){
     var lastV = vals[0][n - 1];
     g.fillStyle = '#8b95a7'; g.fillText(IND_LIST.filter(function(x){ return x[0] === k })[0][1] + (lastV != null ? '  ' + fmt(lastV, k === 'macd' ? (Math.abs(lastV) < 1 ? 3 : 2) : 1) : ''), L + 4, top + 7);
   });
-  // legend: name and change over the period
   var ch = (A.c[n - 1] / A.c[0] - 1) * 100;
   g.fillStyle = '#e6eaf0'; g.fillText((h.name || tc.sym) + '  ' + fmt(last, dgt), L + 4, 9);
   var tw = g.measureText((h.name || tc.sym) + '  ' + fmt(last, dgt) + '  ').width;
   g.fillStyle = ch >= 0 ? '#2fbf71' : '#ef5350'; g.fillText(pct(ch) + ' ' + tc.range.toUpperCase(), L + 4 + tw, 9);
   var lx = L + 4 + tw + g.measureText(pct(ch) + ' ' + tc.range.toUpperCase() + '   ').width;
   IND_LIST.forEach(function(x){ if (tc.ind[x[0]] && /^(sma|ema|vwap|boll)/.test(x[0])) { g.fillStyle = x[2]; g.fillText(x[1], lx, 9); lx += g.measureText(x[1] + '  ').width } });
-  // crosshair
   cv.onmousemove = function(e){
     var r = cv.getBoundingClientRect(), mx_ = e.clientX - r.left, my_ = e.clientY - r.top;
     var i2 = Math.max(0, Math.min(n - 1, Math.floor((mx_ - L) / bw)));
@@ -418,7 +389,6 @@ function paintCross(wrap, cv, g, dpr, h, A, i, x, y, TOP, mainH, Y, lo, hi, W, H
   var tx = r.left + x + 14, ty = r.top + y + 14; if (tx + tip.offsetWidth > window.innerWidth - 6) tx = r.left + x - tip.offsetWidth - 14; if (ty + tip.offsetHeight > window.innerHeight - 6) ty = r.top + y - tip.offsetHeight - 10;
   tip.style.left = tx + 'px'; tip.style.top = ty + 'px';
 }
-// the reading of the chart in words and numbers
 function summary(box, h, A){
   var n = A.n, c = A.c[n - 1], blk = el('div', 'tc-sum');
   var add = function(k, v, cl, title){ var d = el('div'); d.appendChild(el('span', null, k)); var b = el('b', cl || null, v); d.appendChild(b); if (title) d.title = title; blk.appendChild(d) };
@@ -438,7 +408,6 @@ function summary(box, h, A){
   A.tl.forEach(function(t){ var at_ = t.p1 + t.slope * (n - 1 - t.i1); add(TX(t.kind === 'sup' ? 'ts_tl_sup' : 'ts_tl_res'), fmt(at_, c >= 100 ? 2 : 4) + ' (' + pct((c / at_ - 1) * 100, 1) + ')', t.kind === 'sup' ? 'up' : 'down') });
   A.dbl.forEach(function(d){ add(TX('pat_' + d.k), TX('neck') + ' ' + fmt(d.neck, c >= 100 ? 2 : 4) + (d.broken ? ' · ' + TX('ts_broken') : ''), d.dir > 0 ? 'up' : 'down') });
   box.appendChild(blk);
-  // Fibonacci table and the latest candle patterns
   var wrap2 = el('div', 'tc-tabs2');
   if (tc.ta.fib) {
     var tb = table(cols(TX('fib_cols'), [0]));
@@ -471,7 +440,6 @@ function drawVap(box, h){
   });
   if (!tv) { box.appendChild(el('div', 'empty', TX('vap_novol'))); return }
   var poc = bins.reduce(function(a, x){ return x.v > a.v ? x : a }, bins[0]), pi = bins.indexOf(poc);
-  // value area: 70 % of the volume around the point of control
   var inA = poc.v, a1 = pi, a2 = pi;
   while (inA < tv * 0.7 && (a1 > 0 || a2 < NB - 1)) { var dn = a1 > 0 ? bins[a1 - 1].v : -1, up = a2 < NB - 1 ? bins[a2 + 1].v : -1; if (up >= dn) { a2++; inA += up } else { a1--; inA += dn } }
   var vw = pv / tv, last = c[c.length - 1], dgt = last >= 1000 ? 0 : last >= 10 ? 2 : 4;
@@ -532,7 +500,6 @@ function drawTsm(box, h){
 /* ======================= QR: time & sales ======================= */
 var qrTimer = null;
 function coinOf(sym){ var s = String(sym || '').toUpperCase().replace(/^BINANCE:/, '').replace(/USDT$/, ''); return T.COINS.some(function(c){ return c[0] === s }) ? s : null }
-// Binance's trades; its public market-data mirror answers where binance.com is closed (the US, some networks)
 function binanceTrades(coin){
   var q = '/api/v3/trades?symbol=' + coin + 'USDT&limit=80', hosts = ['https://api.binance.com', 'https://data-api.binance.vision'];
   var i = qrHost;
@@ -546,7 +513,7 @@ var qrHost = 0;
 function drawQr(box){
   clearTimeout(qrTimer);
   var coin = coinOf(tc.sym);
-  if (!coin || qrBars[coin]) {   // stocks and indices (and a coin without a trade feed): the day's 5-minute bars instead
+  if (!coin || qrBars[coin]) {
     return load('1d').then(function(h){
       clear(box); symForm(box);
       box.appendChild(el('div', 'note', TX(coin ? 'qr_nofeed_note' : 'qr_bars_note')));
@@ -575,7 +542,7 @@ function drawQr(box){
     qrTimer = setTimeout(function(){ if (tc.tab === 'QR' && F.visible('p-tech') && !document.hidden) drawQr(box) }, 4000);
   }).catch(function(){
     if (tc.tab !== 'QR' || coinOf(tc.sym) !== coin) return;
-    qrBars[coin] = 1; drawQr(box);   // no trade feed from here: the bars, like for stocks
+    qrBars[coin] = 1; drawQr(box);
   });
 }
 var qrBars = {};
@@ -591,7 +558,6 @@ function drawTra(box, h){
     note.remove();
     var t0 = h.t[0], c = h.c, n = c.length;
     var ev = divs.map(function(x){ return {t: Date.parse(x[0] + 'T00:00:00Z') / 1000, a: x[1]} }).filter(function(x){ return x.t > t0 && x.t <= h.t[n - 1] + 86400 }).sort(function(a, b){ return a.t - b.t });
-    // reinvest each dividend at the close of the day before the ex-date
     var units = 1, k = 0, tr = [], cash = 0;
     for (var i = 0; i < n; i++) {
       while (k < ev.length && ev[k].t <= h.t[i]) { var px = c[Math.max(0, i - 1)]; units += units * ev[k].a / px; cash += ev[k].a; k++ }
@@ -612,7 +578,6 @@ function drawTra(box, h){
 var TRAY_DEF = ['S&P', 'NASDAQ', 'DJI', 'DAX', 'FTSE', 'CAC', 'NIKKEI', 'HSI', 'SHCOMP', 'SENSEX', 'IMOEX', 'GOLD', 'BRENT', 'BTC'];
 var PERIODS = ['1d', '1w', 'mtd', '1m', 'qtd', '3m', '6m', 'ytd', '1y', '2y', '3y', '5y'];
 function returnsFrom(daily, weekly){
-  // daily: 1y of daily bars, weekly: 5y of weekly bars → {period: % (annualised past one year)}
   var out = {}, dt = daily.t, dc = daily.c, n = dt.length, last = dc[n - 1], now = new Date(dt[n - 1] * 1000);
   var at = function(series, ts){ var i = 0; while (i < series.t.length - 1 && series.t[i + 1] <= ts) i++; return series.t[i] <= ts ? series.c[i] : null };
   var back = function(days){ return dt[n - 1] - days * 86400 };
@@ -652,7 +617,6 @@ function drawTray(box){
     box.appendChild(el('div', 'note', TX('tray_note') + (bad.length ? ' ' + TX('not_loaded') + bad.join(', ') : '')));
   }).catch(function(e){ note.remove(); F.errBox(box, e) });
 }
-// returns of several instruments: the server's /api/perf (one request), or two histories per instrument from an older server
 function perf(syms){
   return F.api('/api/perf?s=' + encodeURIComponent(syms.join(',')), {ttl: 900, timeout: 45, allowError: true}).then(function(d){
     if (!d || !d.rows) throw new Error((d && d.error) || 'old server');
@@ -668,7 +632,6 @@ function perf(syms){
 /* ======================= company tabs: GE, CACS, CRPR ======================= */
 F.DES_TABS.GE = function(box, d){
   var fin = d.fin || {}, q = (fin.quarterly || []).slice().sort(function(a, b){ return a.end < b.end ? -1 : 1 }), an = (fin.annual || []).slice().sort(function(a, b){ return a.end < b.end ? -1 : 1 });
-  // trailing 12-month EPS: four quarters, and before that the yearly reports
   var ttm = [];
   an.forEach(function(r){ if (r.eps != null) ttm.push({d: r.end, eps: r.eps}) });
   for (var i = 3; i < q.length; i++) { var s = 0, ok = true; for (var j = i - 3; j <= i; j++) { if (q[j].eps == null) ok = false; else s += q[j].eps } if (ok) ttm.push({d: q[i].end, eps: s}) }
@@ -676,7 +639,7 @@ F.DES_TABS.GE = function(box, d){
   if (ttm.length < 2) { box.appendChild(el('div', 'empty', TX('ge_none'))); return }
   var note = el('div', 'loading', TX('loading')); box.appendChild(note);
   F.history(d.s, '5y').then(function(h){
-    if (!box.contains(note)) return;   // the tab was drawn again meanwhile (fresh company data): that drawing fills it
+    if (!box.contains(note)) return;
     note.remove();
     var pts = [];
     h.t.forEach(function(t, i){
@@ -741,7 +704,6 @@ F.DES_TABS.CRPR = function(box, d){
   box.appendChild(links);
 };
 
-// the hover card belongs to a chart, a map or a heat-map tile: elsewhere (the chart redrawn or gone) it hides
 document.addEventListener('pointermove', function(e){
   var tip = $('tm-tip'), t = e.target;
   if (tip && tip.style.display === 'block' && t && t.tagName !== 'CANVAS' && !(t.closest && t.closest('.tile,.tm-tip'))) tip.style.display = 'none';

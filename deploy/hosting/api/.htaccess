@@ -1,4 +1,3 @@
-# every /api/... address goes to index.php in this folder (Apache and LiteSpeed — Namecheap, Beget, Timeweb, REG.RU…)
 Options -Indexes
 DirectoryIndex index.php
 <IfModule mod_rewrite.c>

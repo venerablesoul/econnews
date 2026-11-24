@@ -1,11 +1,5 @@
 name: Bot server (Cloudflare)
 
-# Deploys the bot server (the worker/ folder) to Cloudflare Workers (free plan):
-# instant answers to /start and commands, subscribers and their languages, live quotes and company data
-# for the terminal with the API keys hidden on the server.
-# Runs by itself when worker/ changes, or by hand: Actions → Bot server (Cloudflare) → Run workflow.
-# One-time setup: the CLOUDFLARE_API_TOKEN secret (a token with the "Edit Cloudflare Workers" template).
-
 on:
   push:
     branches: [main]
@@ -13,7 +7,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write             # save the server address to docs/config.json
+  contents: write
 
 concurrency:
   group: bot-server
@@ -25,12 +19,12 @@ jobs:
     timeout-minutes: 15
     env:
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}   # optional: found automatically
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}             # the bot owner
-      FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}               # free key — for everyone
-      EODHD_API_KEY: ${{ secrets.EODHD_API_KEY }}                   # optional paid key — owner only (Yahoo is used for free otherwise)
-      TERMINAL_PASSWORD: ${{ secrets.TERMINAL_PASSWORD }}           # optional: owner sign-in to the terminal from a browser
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
+      EODHD_API_KEY: ${{ secrets.EODHD_API_KEY }}
+      TERMINAL_PASSWORD: ${{ secrets.TERMINAL_PASSWORD }}
     steps:
       - name: Check that Cloudflare is set up
         run: |

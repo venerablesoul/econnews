@@ -1,21 +1,3 @@
-"""
-Сделки политиков и инсайдеров США — для бота и терминала.
-
-Все источники официальные, бесплатные и без ключей:
-
-  Палата представителей — отчёты о сделках (Periodic Transaction Report)
-      disclosures-clerk.house.gov: индекс отчётов за год (ZIP) + PDF каждого отчёта.
-      Для чтения PDF нужен пакет pdfplumber (pip install pdfplumber).
-      Без него Палата пропускается, остальное работает.
-  Сенат — электронные отчёты о сделках на efdsearch.senate.gov (HTML-таблицы).
-  Инсайдеры — покупки и продажи акций директорами и топ-менеджерами компаний
-      на открытом рынке: форма 4 в SEC EDGAR (раскрывается за 2 рабочих дня).
-
-Политики раскрывают сделки с опозданием до 45 дней, поэтому у каждой сделки
-две даты: когда совершена и когда раскрыта.
-
-Состояние хранится в state.json в разделе "trades".
-"""
 from __future__ import annotations
 
 import gzip
@@ -42,15 +24,13 @@ SENATE_ROOT = "https://efdsearch.senate.gov"
 SEC_FEED = ("https://www.sec.gov/cgi-bin/browse-edgar?action=getcurrent&type=4&company=&dateb="
             "&owner=include&start=0&count=100&output=atom")
 SEC_TXT = "https://www.sec.gov/Archives/edgar/data/{cik}/{acc_nd}/{acc}.txt"
-# SEC wants "Name contact@domain"; set the SEC_USER_AGENT secret to your own contact to be polite
 SEC_UA_DEFAULT = "EconNews research bot econnews@example.com"
 
-WINDOW_DAYS = 14          # какие отчёты политиков смотрим (по дате подачи)
-KEEP_DAYS = 45            # сколько дней хранить сделки для терминала
-KEEP_MAX = 250            # и не больше стольких записей каждого вида
-DOCS_PER_CHECK = 25       # не больше стольких новых отчётов политиков за одну проверку
-SEC_PER_RUN = 40          # не больше стольких форм 4 за один запуск
-
+WINDOW_DAYS = 14
+KEEP_DAYS = 45
+KEEP_MAX = 250
+DOCS_PER_CHECK = 25
+SEC_PER_RUN = 40
 
 
 def _env_int(name, default):
@@ -73,9 +53,6 @@ def _get(url, headers=None, timeout=30, opener=None, data=None):
 
 
 def _sec_headers():
-    # SEC требует заголовки ровно по своему образцу: «Название контакт@домен», gzip, Host.
-    # Если SEC всё равно отвечает 403 — задайте секрет SEC_USER_AGENT, например «EconNews ваш@email.com».
-    # SEC rejects contacts at users.noreply.github.com (checked from GitHub runners) — use a plain one
     ua = os.environ.get("SEC_USER_AGENT", "").strip() or SEC_UA_DEFAULT
     return {"User-Agent": ua, "Accept-Encoding": "gzip, deflate", "Host": "www.sec.gov", "Accept": "*/*"}
 
@@ -85,7 +62,6 @@ def _id(*parts):
 
 
 def _date(s, fmt="%m/%d/%Y"):
-    """'09/24/2026' -> '2026-09-24' ('' если не разобрать)."""
     s = (s or "").strip()
     for f in (fmt, "%Y-%m-%d", "%m/%d/%y"):
         try:
@@ -96,7 +72,6 @@ def _date(s, fmt="%m/%d/%Y"):
 
 
 def parse_amount(s):
-    """'$1,001 - $15,000' -> (1001, 15000); 'Over $50,000,000' -> (50000001, None)."""
     nums = [int(x.replace(",", "")) for x in re.findall(r"\$\s*([\d,]+)", s or "") if x.replace(",", "")]
     if not nums:
         return None, None
@@ -122,7 +97,6 @@ def _ttype(s):
 # Палата представителей
 # ---------------------------------------------------------------------------
 def house_index(now):
-    """Отчёты о сделках (тип P) за последние WINDOW_DAYS дней из годового индекса."""
     years = {now.year} | ({now.year - 1} if now.month == 1 else set())
     since = (now - timedelta(days=WINDOW_DAYS)).strftime("%Y-%m-%d")
     out = []
@@ -153,9 +127,6 @@ DATE_CELL = re.compile(r"^\d{1,2}/\d{1,2}/\d{4}$")
 
 
 def house_rows_to_trades(rows, meta):
-    """Строки таблицы из PDF-отчёта -> сделки. Колонки ищем по содержимому,
-    а не по номеру: ID/владелец, актив «Название (ТИКЕР) [ST]», тип P/S/E,
-    дата сделки, дата уведомления, сумма «$1,001 - $15,000»."""
     out = []
     for row in rows:
         cells = [re.sub(r"\s+", " ", (c or "")).strip() for c in row]
@@ -167,7 +138,7 @@ def house_rows_to_trades(rows, meta):
             continue
         m = ASSET_RX.search(asset)
         ticker, kind = m.group(1), m.group(2)
-        if kind not in ("ST", "OP"):          # акции и опционы на акции; облигации и фонды пропускаем
+        if kind not in ("ST", "OP"):
             continue
         owner = next((c for c in cells if c in ("SP", "JT", "DC")), "")
         amin, amax = parse_amount(amount)
@@ -182,7 +153,6 @@ def house_rows_to_trades(rows, meta):
     return out
 
 
-# запасной разбор по строкам текста, если в PDF не нашлось таблицы
 LINE_RX = re.compile(r"^(?:(SP|JT|DC)\s+)?(.+?)\s+(P|S|S \(partial\)|E)\s+(\d{1,2}/\d{1,2}/\d{4})\s+"
                      r"(\d{1,2}/\d{1,2}/\d{4})\s+(\$[\d,]+(?:\s*-\s*(?:\$[\d,]+)?)?|Over \$[\d,]+)")
 
@@ -195,7 +165,6 @@ def house_text_to_trades(text, meta):
         if not m:
             continue
         owner, asset, tt, d1, d2, amount = m.groups()
-        # продолжение строки (перенос названия, тикера или суммы) — следующая строка, если это не новая сделка
         tail = lines[i + 1] if i + 1 < len(lines) and not LINE_RX.match(lines[i + 1]) else ""
         if amount.rstrip().endswith("-"):
             nxt = re.search(r"\$[\d,]+", tail)
@@ -224,7 +193,6 @@ def house_report(meta):
 # Сенат
 # ---------------------------------------------------------------------------
 class _Tables(HTMLParser):
-    """Собирает текст ячеек <td> из первого <tbody>."""
     def __init__(self):
         super().__init__()
         self.rows, self._row, self._cell, self._in_body, self._done = [], None, None, False, False
@@ -258,7 +226,6 @@ class _Tables(HTMLParser):
 
 
 def senate_rows_to_trades(rows, meta):
-    """Колонки отчёта Сената: #, дата сделки, владелец, тикер, актив, тип актива, тип сделки, сумма, комментарий."""
     out = []
     for c in rows:
         if len(c) < 8:
@@ -279,8 +246,6 @@ def senate_rows_to_trades(rows, meta):
 
 
 class Senate:
-    """Сайт Сената требует один раз согласиться с условиями (форма с CSRF-токеном),
-    после этого в той же сессии доступен поиск отчётов."""
     def __init__(self):
         self.jar = http.cookiejar.CookieJar()
         self.op = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(self.jar))
@@ -314,7 +279,7 @@ class Senate:
         for row in json.loads(raw).get("data", []):
             first, last, link_html, filed = row[0], row[1], row[3], row[4]
             m = re.search(r'href="([^"]+)"', link_html)
-            if not m or "/ptr/" not in m.group(1):   # бумажные отчёты (сканы) пропускаем
+            if not m or "/ptr/" not in m.group(1):
                 continue
             name = " ".join(x.strip().title() for x in (first, last) if x and x.strip())
             out.append({"doc": m.group(1).rstrip("/").rsplit("/", 1)[-1], "name": name,
@@ -332,13 +297,12 @@ class Senate:
 # Инсайдеры: форма 4 SEC
 # ---------------------------------------------------------------------------
 def sec_feed():
-    """Последние формы 4: [(accession, cik, ссылка, время)] без повторов."""
     root = ET.fromstring(_get(SEC_FEED, headers=_sec_headers()))
     ns = {"a": "http://www.w3.org/2005/Atom"}
     out, seen = [], set()
     for e in root.findall("a:entry", ns):
         title = (e.findtext("a:title", "", ns) or "").strip()
-        if not title.startswith("4 "):        # 4/A (исправления) пропускаем
+        if not title.startswith("4 "):
             continue
         link = (e.find("a:link", ns).get("href") if e.find("a:link", ns) is not None else "")
         m = re.search(r"/data/(\d+)/(\d{18})/([\d-]{20})-index", link)
@@ -373,7 +337,6 @@ def _role(rel, t):
 
 
 def parse_form4(xml_text, meta):
-    """Покупки (код P) и продажи (код S) на открытом рынке из формы 4."""
     root = ET.fromstring(xml_text.encode("utf-8") if isinstance(xml_text, str) else xml_text)
 
     def t(el, path):
@@ -396,7 +359,7 @@ def parse_form4(xml_text, meta):
     for o in owners:
         n = t(o, "reportingOwnerId/rptOwnerName")
         parts = n.split()
-        if person and 2 <= len(parts) <= 4:   # «COOK TIMOTHY D» -> «Timothy D Cook»
+        if person and 2 <= len(parts) <= 4:
             parts = parts[1:] + parts[:1]
         names.append(" ".join(p.capitalize() if p.isupper() or p.islower() else p for p in parts))
     who = names[0] + (" et al." if len(names) > 1 else "") if names else ""
@@ -458,8 +421,6 @@ def _insider_alert(t, min_buy, min_sell):
 
 
 def update(st, now, log=print):
-    """Проверяет источники и возвращает новые заметные сделки для Telegram:
-    {"congress": [...], "insiders": [...]}. Ошибки источников не прерывают работу."""
     tr = _state(st)
     new = {"congress": [], "insiders": []}
     every = _env_int("CONGRESS_EVERY_MIN", 60)
@@ -486,9 +447,8 @@ def update(st, now, log=print):
                     if meta["doc"] in tr["docs"] or meta["doc"] in queued:
                         continue
                     if src == "house" and not (len(meta["doc"]) == 8 and meta["doc"].startswith("2")):
-                        tr["docs"][meta["doc"]] = meta["filed"]   # скан бумажного отчёта — не читается
+                        tr["docs"][meta["doc"]] = meta["filed"]
                         continue
-                    # отчёты, найденные при первом запуске, показываем в терминале, но не присылаем
                     tr["queue"].append({**meta, "src": src, "silent": first})
                 tr["ready"][src] = True
                 tr["errors"].pop(src, None)
@@ -496,7 +456,6 @@ def update(st, now, log=print):
                 tr["errors"][src] = f"{type(e).__name__}: {e}"[:200]
                 log(f"  ! сделки ({src}): {tr['errors'][src]}")
 
-        # читаем отчёты из очереди (не больше DOCS_PER_CHECK за раз, остальные — в следующий раз)
         try:
             import pdfplumber  # noqa: F401
             has_pdf = True
@@ -505,7 +464,7 @@ def update(st, now, log=print):
             if any(q["src"] == "house" for q in tr["queue"]):
                 log("  ! сделки Палаты пропущены: нет пакета pdfplumber (pip install pdfplumber)")
         done, keep = 0, []
-        tr["queue"].sort(key=lambda q: (q["silent"], q["filed"]))   # сначала свежие отчёты
+        tr["queue"].sort(key=lambda q: (q["silent"], q["filed"]))
         for q in tr["queue"]:
             if done >= DOCS_PER_CHECK or (q["src"] == "house" and not has_pdf) or \
                     (q["src"] == "senate" and senate is None):
@@ -548,7 +507,7 @@ def update(st, now, log=print):
         for k, f in enumerate(fresh):
             if k >= SEC_PER_RUN:
                 if first:
-                    seen.add(f["acc"])   # при первом запуске старое не догоняем
+                    seen.add(f["acc"])
                 continue
             try:
                 items = sec_filing(f)
@@ -559,15 +518,13 @@ def update(st, now, log=print):
             for it in items:
                 if it["id"] in known:
                     continue
-                # в терминал — заметные сделки (покупки от $25 тыс., продажи от $500 тыс.)
                 if it["value"] < (25000 if it["type"] == "buy" else 500000):
                     continue
                 known.add(it["id"])
                 tr["insiders"].append(it)
                 if not first and _insider_alert(it, min_buy, min_sell):
                     new["insiders"].append(it)
-            time.sleep(0.15)   # правило SEC: не больше 10 запросов в секунду
-        # лента отдаёт ~100 последних форм; помнить нужно только их
+            time.sleep(0.15)
         in_feed = {f["acc"] for f in feed}
         tr["sec_seen"] = [a for a in seen if a in in_feed]
         tr["ready"]["sec"] = True
@@ -592,25 +549,22 @@ def _prune(tr, now):
 
 
 # ---------------------------------------------------------------------------
-# Formatting (English / Russian). Stored data is English; older records may be Russian.
 # ---------------------------------------------------------------------------
 import i18n  # noqa: E402
 
 _EN_RU = [("House", "Палата"), ("Senate", "Сенат"), (" (option)", " (опцион)"), (" et al.", " и др."),
           ("General Counsel", "главный юрист"), ("President", "президент"), ("Chair", "председатель совета директоров"),
           ("Officer", "топ-менеджер"), ("Director", "член совета директоров"), ("10% owner", "акционер 10%+")]
-# the same labels in Chinese and Arabic (same order as _EN_RU)
 _XL = {"zh": ["众议院", "参议院", "（期权）", "等", "总法律顾问", "总裁", "董事长", "高管", "董事", "持股10%以上股东"],
        "ar": ["مجلس النواب", "مجلس الشيوخ", " (خيار)", " وآخرون", "المستشار القانوني العام", "الرئيس",
               "رئيس مجلس الإدارة", "مسؤول تنفيذي", "عضو مجلس الإدارة", "مالك 10%+"]}
 
 
 def loc(text, lang):
-    """Shows a stored English label (House, Senate, roles…) in the reader's language."""
     text = text or ""
     lang = i18n.norm_lang(lang)
     for k, (en, ru) in enumerate(_EN_RU):
-        text = text.replace(ru, en)          # older records may be Russian
+        text = text.replace(ru, en)
         if lang == "ru":
             text = text.replace(en, ru)
         elif lang in _XL:
@@ -624,7 +578,6 @@ def _num(x, lang):
 
 
 def fmt_usd(v, lang="en"):
-    """$1.2B / $1,2 млрд / $12亿 / $1.2 مليار; below the smallest unit — whole dollars."""
     for size, word in i18n.units(lang):
         if v >= size:
             x = v / size
@@ -639,7 +592,6 @@ def fmt_range(amin, amax, lang="en"):
         return i18n.t(lang, "trd_over", v=fmt_usd(amin - 1, lang))
     if amax == amin:
         return fmt_usd(amin, lang)
-    # both ends in the unit that suits the upper one: $1–5M, $15–50K, $1.5–5万, $100–500万
     unit, word = next(((s, w) for s, w in i18n.units(lang) if amax >= s and s <= 1e6), (1, ""))
     return f"${_num(round(amin / unit, 1), lang)}–{_num(round(amax / unit, 1), lang)}{word}"
 
@@ -675,7 +627,6 @@ def fmt_insider(t, lang="en"):
 
 
 def messages(new, limit=12, lang="en"):
-    """Telegram message texts (empty list if there is nothing to send)."""
     out = []
     for key, head, note, fmt in (("congress", "trd_congress_head", "trd_congress_note", fmt_congress),
                                  ("insiders", "trd_insider_head", "trd_insider_note", fmt_insider)):
@@ -694,7 +645,6 @@ def messages(new, limit=12, lang="en"):
 
 
 def page_data(st):
-    """Раздел trades для docs/data.json (терминал)."""
     tr = st.get("trades") or {}
     keep_c = ("src", "who", "where", "owner", "ticker", "asset", "type", "amin", "amax", "date", "disclosed", "link")
     keep_i = ("ticker", "company", "who", "role", "type", "value", "shares", "price", "plan", "date", "disclosed", "link")

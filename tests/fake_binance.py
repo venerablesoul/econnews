@@ -1,4 +1,3 @@
-"""REST answers of Binance for browser tests (matching fakebinance.js: snapshot id 1000, price ~61,280)."""
 import json, random, time
 
 
@@ -39,7 +38,6 @@ def klines(interval="1m", limit=500):
 
 
 def answer(url):
-    """(status, json) for a Binance REST URL, or None if it is not one of ours."""
     from urllib.parse import urlparse, parse_qs
     u = urlparse(url)
     q = {k: v[0] for k, v in parse_qs(u.query).items()}
