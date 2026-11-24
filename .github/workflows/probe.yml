@@ -10,30 +10,20 @@ jobs:
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-      - run: pip install -q -r requirements.txt
       - run: |
-          python - <<'PY'
-          import json, news_bot as nb
-          heads = ["Huawei convicted in US trial that exposed corporate espionage and sanctions evasion",
-                   "JPMorgan Sets Below Consensus S&P 500 Target of 8,200 for 2027",
-                   "Bond Traders Rush to Hedge Risk of Fed Hikes Stalling Economy",
-                   "Escalation in Iran Appears As the Default",
-                   "Argentina expected to suffer technical recession in blow to Milei"]
-          for name in ("_google_batch", "_ms_batch"):
-              for lang in ("ru", "zh", "ar"):
-                  try:
-                      out = getattr(nb, name)(heads, "en", lang)
-                      print("PROBE", name, lang, "OK" if out and all(out) else "BAD", json.dumps(out, ensure_ascii=False))
-                  except Exception as e:
-                      print("PROBE", name, lang, "ERR", type(e).__name__, e)
-          try:
-              print("PROBE ru->en", nb._google_batch(["ЦБ сохранил ключевую ставку", "Путин оценил ситуацию на рынке нефтепродуктов"], "ru", "en"))
-          except Exception as e:
-              print("PROBE ru->en ERR", e)
-          items = [{"title": h, "lead": ""} for h in heads]
-          nb.translate_items(items, first=["ru"])
-          print("PROBE items", sum(bool(it.get("title_" + l)) for it in items for l in ("ru", "zh", "ar")), "of 15")
-          PY
+          W=$(python3 -c "import json;print(json.load(open('docs/config.json'))['api'])")
+          echo "PROBE worker $W"
+          for u in "https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=Oil%20prices%20jump" \
+                   "https://translate.google.com/translate_a/single?client=gtx&sl=en&tl=ru&dt=t&q=Oil%20prices%20jump" \
+                   "https://clients5.google.com/translate_a/t?client=dict-chrome-ex&sl=en&tl=ru&q=Oil%20prices%20jump" \
+                   "https://api.mymemory.translated.net/get?q=Oil%20prices%20jump&langpair=en|ru"; do
+            echo "PROBE $(curl -s -m 15 -o /tmp/o -w '%{http_code}' "$u") $(head -c 160 /tmp/o | tr '\n' ' ') <- ${u:0:60}"
+          done
+          for i in 1 2; do
+            curl -s -m 40 "$W/api/company?s=AAPL&parts=cn&lang=ru" -o /tmp/c.json
+            python3 -c "
+          import json; d=json.load(open('/tmp/c.json'))
+          cn=d.get('cn') or []
+          print('PROBE worker cn', len(cn), 'translated', sum(1 for n in cn if n.get('h')!=n.get('en')), 'errors', d.get('errors'))
+          print('PROBE worker sample', [n.get('h') for n in cn[:2]])"
+          done
