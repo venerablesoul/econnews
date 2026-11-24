@@ -262,6 +262,9 @@ def run():
         # ---------------- maps ----------------
         cmd(page, "MAP")
         page.wait_for_selector("#map-body .gm-wrap canvas:not(.gm-bg)")
+        # no tiles anywhere (NASA blocked, no copy on this site): the map draws its own land instead of a black picture
+        page.wait_for_function("getComputedStyle(document.querySelector('#map-body .gm-bg')).display === 'none'", timeout=10000)
+        check("MAP: without any satellite tiles the map draws its own land", True)
         page.wait_for_function("window.MAPS && window.MAPS.M.data.quakes && window.MAPS.M.data.choke && window.MAPS.M.data.storms && window.MAPS.M.data.exch", timeout=15000)
         side = page.inner_text("#map-body .gm-side")
         check("MAP: layers with counts", "Earthquakes" in side and "Shipping chokepoints" in side and "Stock markets today" in side, side[:400])

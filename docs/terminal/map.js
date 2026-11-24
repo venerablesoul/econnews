@@ -1116,7 +1116,7 @@ function build(){
   M.att = el('div', 'gm-att'); wrap.appendChild(M.att);
   box.appendChild(wrap);
   side = el('div', 'gm-side'); box.appendChild(side);
-  g = cv.getContext('2d'); bg = bgc.getContext('2d');
+  g = cv.getContext('2d'); bg = bgc.getContext('2d'); baseMeta();
   tip = $('tm-tip');
   bindInput();
   if (window.ResizeObserver) new ResizeObserver(function(){ resize() }).observe(wrap);
@@ -1171,24 +1171,42 @@ function setBase(b){
   if (wrap) wrap.querySelectorAll('.gm-base button').forEach(function(x){ x.classList.toggle('on', x.dataset.b === b) });
   redraw();
 }
-function tileUrl(src, z, x, y){ var s = TILESRC[src]; return s.urls[s.alt || 0].replace('{z}', z).replace('{y}', y).replace('{x}', x) }
+function tileUrl(src, z, x, y, local){ var s = TILESRC[src], u = local ? s.local : s.urls[s.alt || 0]; return u.replace('{z}', z).replace('{y}', y).replace('{x}', x) }
+// the overview zooms are copied to this site by the bot (basemap.py → ../base/): they come first, NASA after them;
+// its meta.json also says which NASA address works (the browser need not find out by failing)
+var baseMetaP = null;
+function baseMeta(){
+  if (!baseMetaP) baseMetaP = getJSON('../base/meta.json', 15000).then(function(m){
+    var L = (m && m.layers) || {};
+    Object.keys(L).forEach(function(name){
+      var s = TILESRC[name], l = L[name] || {}; if (!s || !/^(jpg|png)$/.test(l.ext || '') || !(l.max >= 0)) return;
+      s.local = '../base/' + name + '/{z}/{y}/{x}.' + l.ext; s.localMax = Math.min(8, l.max);
+      var i = s.urls.indexOf(l.url); if (i >= 0) { s.alt = i; s.good = true }
+      s.dead = false; s.fails = 0;
+    });
+    TILES.clear(); redraw();
+  }).catch(function(){});
+  return baseMetaP;
+}
 // one tile: an image that is loading, loaded or failed; at most ~600 kept (the oldest go first)
 function tile(src, z, x, y){
   var key = src + '/' + z + '/' + x + '/' + y, t = TILES.get(key);
   if (t) { TILES.delete(key); TILES.set(key, t); return t }   // the newest at the end
-  t = {img: new Image(), ok: false, bad: false};
+  var S_ = TILESRC[src];
+  t = {img: new Image(), ok: false, bad: false, local: !!(S_.local && z <= S_.localMax)};
   t.img.decoding = 'async'; t.img.referrerPolicy = 'no-referrer';
   t.img.onload = function(){ t.ok = true; redraw() };
   t.img.onerror = function(){
+    if (t.local) { t.local = false; t.img.src = tileUrl(src, z, x, y); return }   // not on this site: NASA's copy
     t.bad = true;
     // the first tiles of a source fail: its next address (some servers name the format .jpeg, some layers moved)
     var s = TILESRC[src]; s.fails = (s.fails || 0) + 1;
     if (!s.good && s.fails >= 4 && (s.alt || 0) < s.urls.length - 1) { s.alt = (s.alt || 0) + 1; s.fails = 0; TILES.forEach(function(v, k){ if (k.indexOf(src + '/') === 0 && v.bad) TILES.delete(k) }); redraw() }
     // every address failed (offline, or the service is down): the map draws its own land again
-    else if (!s.good && s.fails >= 4 && !s.dead) { s.dead = true; redraw() }
+    else if (!s.good && !s.any && s.fails >= 4 && !s.dead) { s.dead = true; redraw() }
   };
-  t.img.addEventListener('load', function(){ TILESRC[src].good = true });
-  t.img.src = tileUrl(src, z, x, y);
+  t.img.addEventListener('load', function(){ var s = TILESRC[src]; if (!t.local) s.good = true; s.any = true; s.dead = false });
+  t.img.src = tileUrl(src, z, x, y, t.local);
   TILES.set(key, t);
   if (TILES.size > 600) { var first = TILES.keys().next().value; TILES.delete(first) }
   return t;
@@ -1203,11 +1221,15 @@ function drawTiles(src, z, alphaV){
     var wx = ((tx % n) + n) % n, px_ = Math.floor(sx(tx / n)), py_ = Math.floor(sy(ty / n)), sz = Math.ceil(size) + 1;
     var t = tile(src, z, wx, ty);
     if (t.ok) { bg.drawImage(t.img, px_, py_, sz, sz); continue }
-    // the parent (or grandparent) tile, cut to this tile's quarter, until this one arrives
-    for (var up = 1; up <= 3 && z - up >= (TILESRC[src].min || 0); up++) {
+    // the nearest loaded ancestor tile, cut to this tile's part, until this one arrives (or when it never does:
+    // NASA out of reach — the site's own overview tiles, enlarged)
+    for (var up = 1; z - up >= (TILESRC[src].min || 0) && up <= 8; up++) {
       var f = Math.pow(2, up), pt = TILES.get(src + '/' + (z - up) + '/' + Math.floor(wx / f) + '/' + Math.floor(ty / f));
       if (pt && pt.ok) { var part = 256 / f; bg.drawImage(pt.img, (wx % f) * part, (ty % f) * part, part, part, px_, py_, sz, sz); break }
     }
+    // the site's own copy of the area, asked for once, so there is always something under a closer view
+    var S_ = TILESRC[src];
+    if (S_.local && z > S_.localMax) { var fl_ = Math.pow(2, z - S_.localMax); tile(src, S_.localMax, Math.floor(wx / fl_), Math.floor(ty / fl_)) }
   }
   bg.globalAlpha = 1;
 }
