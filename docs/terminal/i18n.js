@@ -507,11 +507,19 @@ var D = {
 
   // ---------- rates panel ----------
   wb_title: ['WORLD BOND MARKETS', 'ОБЛИГАЦИИ МИРА'],
-  wb_cols: [['Country', '2Y', '5Y', '10Y', '30Y', '10Y wk, bp', 'vs UST, bp', 'vs Bund, bp', '2s10s, bp', 'Date'], ['Страна', '2Y', '5Y', '10Y', '30Y', '10Y за нед., б.п.', 'к UST, б.п.', 'к Bund, б.п.', '2s10s, б.п.', 'Дата']],
+  wb_cols: [['Country', '2Y', '5Y', '10Y', '30Y', '10Y wk, bp', 'vs UST, bp', 'vs Bund, bp', '2s10s, bp', 'Date'], ['Страна', '2 года', '5 лет', '10 лет', '30 лет', '10 лет за нед., б.п.', 'к UST, б.п.', 'к Bund, б.п.', 'спред 2–10 лет, б.п.', 'Дата']],
   wb_bars: ['10-YEAR YIELDS', 'ДОХОДНОСТЬ 10 ЛЕТ'],
   wb_note: ['Yields from central banks and treasuries (as on the GC curves). * — monthly averages (ECB). A click opens the country (BTMM).', 'Доходности от центробанков и казначейств (как на кривых GC). * — среднемесячные (ЕЦБ). Нажатие открывает страну (BTMM).'],
+  ctry: function(c){ return RU && CTRY_RU[c] || c },
+  tenor: function(x){
+    var m = RU && /^(\d+)([MY])$/.exec(x || ''), n = m && +m[1];
+    if (!m) return x;
+    if (m[2] === 'M') return n + ' мес';
+    return n + (n % 10 === 1 && n % 100 !== 11 ? ' год' : n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 10 || n % 100 >= 20) ? ' года' : ' лет');
+  },
+  spread: function(x){ return RU && SPREAD_RU[x] || x },
   btmm_title: function(c){ return (RU ? 'СТАВКИ И ОБЛИГАЦИИ · ' : 'RATES & BONDS · ') + c }, btmm_cb: ['POLICY RATE', 'КЛЮЧЕВАЯ СТАВКА'], btmm_prev: ['Before', 'Предыдущая'],
-  btmm_since: ['Since', 'С'], btmm_next: ['Next FOMC', 'Следующее заседание ФРС'], btmm_implied: ['Futures imply', 'Фьючерсы закладывают'], btmm_mm: ['MONEY MARKET AND FX', 'ДЕНЕЖНЫЙ РЫНОК И ВАЛЮТА'],
+  btmm_since: ['Since', 'Действует с'], btmm_next: ['Next FOMC', 'Следующее заседание ФРС'], btmm_implied: ['Futures imply', 'Ожидания рынка'], btmm_mm: ['MONEY MARKET AND FX', 'ДЕНЕЖНЫЙ РЫНОК И ВАЛЮТА'],
   btmm_nomm: ['No overnight rate for this country.', 'Ставки овернайт по этой стране нет.'], btmm_curve: function(d){ return (RU ? 'КРИВАЯ НА ' : 'CURVE AS OF ') + d },
   btmm_curve_cols: [['Term', 'Yield', 'Wk, bp', 'Mo, bp'], ['Срок', 'Доходность', 'Нед., б.п.', 'Мес., б.п.']], btmm_nocurve: ['No yield curve for this country.', 'Кривой доходности по этой стране нет.'],
   btmm_eco: function(c){ return (RU ? 'КАЛЕНДАРЬ · ' : 'CALENDAR · ') + c }, btmm_noeco: ['No key releases in the coming days.', 'Важных публикаций в ближайшие дни нет.'],
@@ -852,7 +860,9 @@ var MKT_EN = {'S&P': 'S&P 500', 'Nasdaq': 'Nasdaq', 'DJI': 'Dow Jones', 'RTY': '
   'USDCHF': 'USD/CHF', 'USD/RUB': 'USD/RUB (CBR)', 'CNY/RUB': 'CNY/RUB (CBR)', 'Brent': 'Brent crude', 'WTI': 'WTI crude', 'Газ': 'Natural gas',
   'Золото': 'Gold', 'Серебро': 'Silver', 'Платина': 'Platinum', 'Медь': 'Copper', 'Пшеница': 'Wheat',
   'UST3M': 'UST 3M', 'UST5': 'UST 5Y', 'UST10': 'UST 10Y', 'UST30': 'UST 30Y', 'BTC': 'Bitcoin'};
-var MKT_RU = {'IMOEX': 'Индекс Мосбиржи', 'DXY': 'Индекс доллара DXY', 'SHCOMP': 'Шанхай Composite', 'SENSEX': 'Sensex (Индия)',
+var CTRY_RU = {US: 'США', EA: 'Еврозона', DE: 'Германия', UK: 'Британия', JP: 'Япония', RU: 'Россия', CA: 'Канада', AU: 'Австралия', CH: 'Швейцария'};
+var SPREAD_RU = {'2s10s': 'Спред 2–10 лет', '3m10y': 'Спред 3 мес – 10 лет', '5s30s': 'Спред 5–30 лет'};
+var MKT_RU = {'IMOEX': 'Индекс Мосбиржи', 'DXY': 'Индекс доллара DXY', 'SHCOMP': 'Шанхайский композитный', 'SENSEX': 'Sensex (Индия)',
   'USD/RUB': 'USD/RUB (ЦБ)', 'CNY/RUB': 'CNY/RUB (ЦБ)', 'Brent': 'Нефть Brent', 'WTI': 'Нефть WTI', 'Газ': 'Газ (Henry Hub)',
   'UST3M': 'UST 3 мес', 'UST5': 'UST 5 лет', 'UST10': 'UST 10 лет', 'UST30': 'UST 30 лет', 'BTC': 'Биткоин'};
 var UNIT = [{'DXY': 'pts', 'VIX': 'pts', 'EUR/USD': '$ per €', 'USDJPY': '¥ per $', 'GBPUSD': '$ per £', 'USDCNY': 'yuan per $', 'USDCHF': 'franc per $',
@@ -1070,6 +1080,7 @@ window.L10N = {
   tagKey: function(x){ return TAG_EN[x] || x },
   fng: function(x){ return RU ? FNG_RU[x] || x : xl('FNG', x) || x },
   dn: dn, country: country,
+  nstr: function(x){ return RU && x ? String(x).replace(/(\d)\.(\d)/g, '$1,$2') : x },
   ind: function(k, x){ return RU ? x.ru : xl('MACRO_IND', k) || x.en },
   mktXl: function(id){ return xl('MKT', id) },
   xlName: function(map, id){ return xl(map, id) },

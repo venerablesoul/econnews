@@ -1386,10 +1386,10 @@ function renderEco(){
     var imp = el('td', 'imp'); imp.appendChild(el('i', e.impact)); imp.title = TX(e.impact === 'High' ? 'imp_high' : 'imp_med'); tr.appendChild(imp);
     tr.appendChild(el('td', 't', hm(e.ts)));
     var td = el('td', 'ev'); td.appendChild(document.createTextNode((e.flag || e.country) + ' ' + I.dn(e, 'title')));
-    var fp = []; if (e.forecast) fp.push(TX('fcst') + e.forecast); if (e.previous) fp.push(TX('prev') + e.previous);
+    var fp = []; if (e.forecast) fp.push(TX('fcst') + I.nstr(e.forecast)); if (e.previous) fp.push(TX('prev') + I.nstr(e.previous));
     if (fp.length || e.actual) {
       var fd = el('div', 'fp');
-      if (e.actual) { var a = parseFloat(e.actual), f = parseFloat(e.forecast); fd.appendChild(el('b', 'act ' + (isNaN(a) || isNaN(f) || a === f ? '' : a > f ? 'up' : 'down'), TX('actual') + e.actual)); if (fp.length) fd.appendChild(document.createTextNode(' · ')) }
+      if (e.actual) { var a = parseFloat(e.actual), f = parseFloat(e.forecast); fd.appendChild(el('b', 'act ' + (isNaN(a) || isNaN(f) || a === f ? '' : a > f ? 'up' : 'down'), TX('actual') + I.nstr(e.actual))); if (fp.length) fd.appendChild(document.createTextNode(' · ')) }
       fd.appendChild(document.createTextNode(fp.join(' · '))); td.appendChild(fd);
     }
     tr.appendChild(td); t.appendChild(tr);

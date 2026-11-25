@@ -502,9 +502,9 @@ var gcArg = '';
 F.GC_TABS.BTMM = function(box, d){
   clear(box);
   var c = (gcArg || store('btmm_c') || 'US').toUpperCase(); if (c === 'GB') c = 'UK'; if (c === 'EU') c = 'EA';
-  $('gc-title').textContent = TX('btmm_title', c); $('gc-sub').textContent = d.updated ? TX('updated_at', T.hm(d.updated)) : '';
+  $('gc-title').textContent = TX('btmm_title', TX('ctry', c)); $('gc-sub').textContent = d.updated ? TX('updated_at', T.hm(d.updated)) : '';
   var t = el('div', 'gm-chips');
-  ['US', 'EA', 'DE', 'UK', 'JP', 'RU', 'CA', 'AU', 'CH'].forEach(function(k){ var b = el('button', 'chipbtn' + (c === k ? ' on' : ''), (CURVE_FLAG[k] || '') + ' ' + k); b.onclick = function(){ gcArg = k; store('btmm_c', k); F.GC_TABS.BTMM(box, d) }; t.appendChild(b) });
+  ['US', 'EA', 'DE', 'UK', 'JP', 'RU', 'CA', 'AU', 'CH'].forEach(function(k){ var b = el('button', 'chipbtn' + (c === k ? ' on' : ''), (CURVE_FLAG[k] || '') + ' ' + TX('ctry', k)); b.onclick = function(){ gcArg = k; store('btmm_c', k); F.GC_TABS.BTMM(box, d) }; t.appendChild(b) });
   box.appendChild(t);
   var blocks = el('div', 'mon-2'); box.appendChild(blocks);
   var cb = (d.cb || []).filter(function(x){ return x.c === (CB_OF[c] || c) })[0];
@@ -528,17 +528,17 @@ F.GC_TABS.BTMM = function(box, d){
   var cv = (d.curves || {})[c];
   if (cv) {
     var tb = table(cols(TX('btmm_curve_cols'), [0]));
-    cv.t.forEach(function(tn, i){ var tr = el('tr'); tr.appendChild(td(tn, 'l')); tr.appendChild(td(num(cv.y[i], 3) + '%', 'num')); tr.appendChild(bpTd(cv.w ? bp(cv.y[i], cv.w[i]) : null, true)); tr.appendChild(bpTd(cv.m ? bp(cv.y[i], cv.m[i]) : null, true)); tb.body.appendChild(tr) });
+    cv.t.forEach(function(tn, i){ var tr = el('tr'); tr.appendChild(td(TX('tenor', tn), 'l')); tr.appendChild(td(num(cv.y[i], 3) + '%', 'num')); tr.appendChild(bpTd(cv.w ? bp(cv.y[i], cv.w[i]) : null, true)); tr.appendChild(bpTd(cv.m ? bp(cv.y[i], cv.m[i]) : null, true)); tb.body.appendChild(tr) });
     var y2 = at(cv, '2Y'), y10 = at(cv, '10Y'), y3m = at(cv, '3M'), y30 = at(cv, '30Y'), y5 = at(cv, '5Y');
     var foot = el('tfoot');
-    [['2s10s', y2, y10], ['3m10y', y3m, y10], ['5s30s', y5, y30]].forEach(function(s){ if (!s[1] || !s[2]) return; var fr = el('tr'); fr.appendChild(td(s[0], 'l')); fr.appendChild(td(bp(s[2].y, s[1].y) + TX('bp'), 'num ' + (s[2].y < s[1].y ? 'down' : ''))); fr.appendChild(td('')); fr.appendChild(td('')); foot.appendChild(fr) });
+    [['2s10s', y2, y10], ['3m10y', y3m, y10], ['5s30s', y5, y30]].forEach(function(s){ if (!s[1] || !s[2]) return; var fr = el('tr'); fr.appendChild(td(TX('spread', s[0]), 'l')); fr.appendChild(td(bp(s[2].y, s[1].y) + TX('bp'), 'num ' + (s[2].y < s[1].y ? 'down' : ''))); fr.appendChild(td('')); fr.appendChild(td('')); foot.appendChild(fr) });
     tb.t.appendChild(foot);
     var b3 = F.h4(box, TX('btmm_curve', dmy(cv.date))); b3.appendChild(tb.t);
   } else box.appendChild(el('div', 'note', TX('btmm_nocurve')));
   var cur = CUR_OF[c], ev = ((T.data() && T.data().calendar) || []).filter(function(e){ return e.country === cur && new Date(e.ts) > Date.now() - 864e5 });
   var b4 = F.h4(box, TX('btmm_eco', cur || c));
   if (!ev.length) b4.appendChild(el('div', 'note', TX('btmm_noeco')));
-  else { var t4 = table(cols(TX('btmm_eco_cols'), [0, 1])); ev.forEach(function(e){ var tr = el('tr'); tr.appendChild(td(T.dayLabel(e.ts) + ' ' + T.hm(e.ts), 'l')); tr.appendChild(td(I.dn(e, 'title'), 'l')); tr.appendChild(td(e.actual || '—', 'num')); tr.appendChild(td(e.forecast || '—', 'num')); tr.appendChild(td(e.previous || '—', 'num')); t4.body.appendChild(tr) }); b4.appendChild(t4.t) }
+  else { var t4 = table(cols(TX('btmm_eco_cols'), [0, 1])); ev.forEach(function(e){ var tr = el('tr'); tr.appendChild(td(T.dayLabel(e.ts) + ' ' + T.hm(e.ts), 'l')); tr.appendChild(td(I.dn(e, 'title'), 'l')); tr.appendChild(td(I.nstr(e.actual) || '—', 'num')); tr.appendChild(td(I.nstr(e.forecast) || '—', 'num')); tr.appendChild(td(I.nstr(e.previous) || '—', 'num')); t4.body.appendChild(tr) }); b4.appendChild(t4.t) }
 };
 F.GC_TABS.MMR = function(box, d){
   clear(box);

@@ -720,6 +720,41 @@ class TranslationBatches(unittest.TestCase):
         self.assertEqual(len(mm), nb.TR_SINGLE, "and stays small")
 
 
+class CalendarNames(unittest.TestCase):
+    def test_events_missing_from_the_dictionary_get_a_machine_translation(self):
+        import news_bot as nb
+        for d in (nb._tr_cache, nb._tr_fail, nb._engine_off):
+            d.clear()
+        now = datetime(2026, 11, 25, 9, 0, tzinfo=timezone.utc)
+        ev = [{"title": "CB Consumer Confidence", "country": "USD", "impact": "High", "ts": "2026-11-25T15:00:00+00:00", "forecast": "92.4", "previous": "91.7"},
+              {"title": "CPI m/m", "country": "USD", "impact": "High", "ts": "2026-11-26T13:30:00+00:00", "forecast": "0.3%", "previous": "0.2%"}]
+        calls = []
+
+        def gc(text, src, lang):
+            calls.append((lang, text))
+            return "\n".join(f"[{lang}] {x}" for x in text.split("\n"))
+        gc.__name__ = "_gclient"
+        with mock.patch.object(nb, "_gclient", gc):
+            out = nb.page_calendar({"calendar": {"events": ev}}, now)
+            again = nb.page_calendar({"calendar": {"events": ev}}, now)
+        self.assertEqual(out[0]["title_ru"], "[ru] CB Consumer Confidence")
+        self.assertEqual(out[0]["title_zh"], "[zh] CB Consumer Confidence")
+        self.assertEqual(out[1]["title_ru"], "Инфляция (CPI), м/м", "the dictionary still comes first")
+        self.assertEqual(sorted(calls), [("ar", "CB Consumer Confidence"), ("ru", "CB Consumer Confidence"), ("zh", "CB Consumer Confidence")])
+        self.assertEqual(again, out, "the second time comes from memory")
+
+    def test_without_a_translator_the_english_name_stays(self):
+        import news_bot as nb
+        for d in (nb._tr_cache, nb._tr_fail, nb._engine_off):
+            d.clear()
+        now = datetime(2026, 11, 25, 9, 0, tzinfo=timezone.utc)
+        ev = [{"title": "BOC Gov Macklem Speaks", "country": "CAD", "impact": "Medium", "ts": "2026-11-25T15:00:00+00:00"}]
+        with mock.patch.object(nb, "prefetch", return_value=0):
+            out = nb.page_calendar({"calendar": {"events": ev}}, now)
+        self.assertEqual(out[0]["title_ru"], "BOC Gov Macklem Speaks")
+        self.assertNotIn("title_zh", out[0])
+
+
 class TranslationHold(unittest.TestCase):
     def setUp(self):
         import news_bot

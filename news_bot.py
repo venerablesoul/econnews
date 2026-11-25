@@ -1143,14 +1143,15 @@ def page_calendar(st, now):
     out = []
     try:
         import econ_calendar as cal
-        for e in events:
-            if e["impact"] not in ("High", "Medium") or not (lo <= e["ts"] <= hi):
-                continue
-            item = {**e, "title_ru": cal.ru_name(e), "flag": cal.FLAGS.get(e["country"], "")}
+        keep = [e for e in events if e["impact"] in ("High", "Medium") and lo <= e["ts"] <= hi]
+        for lang in ("ru", "zh", "ar"):
+            prefetch([e["title"] for e in keep if not cal.known_name(e, lang)], lang)
+        for e in keep:
+            names = {lang: cal.known_name(e, lang) or _tr_cache.get((e["title"], lang)) for lang in ("ru", "zh", "ar")}
+            item = {**e, "title_ru": names["ru"] or e["title"], "flag": cal.FLAGS.get(e["country"], "")}
             for lang in ("zh", "ar"):
-                name = cal.known_name(e, lang)
-                if name:
-                    item["title_" + lang] = name
+                if names[lang]:
+                    item["title_" + lang] = names[lang]
             act = (st.get("cal_actuals") or {}).get(cal.event_id(e))
             if act:
                 item["actual"] = act
